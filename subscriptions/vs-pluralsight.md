@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491287"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74707000"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -83,14 +83,14 @@ Odp.: nie wszystkie subskrypcje Visual Studio Enterprise obejmują korzyść Plu
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: czy mam dostęp do dowolnych dostosowanych list odtwarzania lub kanałów szkoleniowych?
 Odp.: tak, jako subskrybent programu Visual Studio uzyskujesz dostęp do kanałów ekspertów w ramach korzyści z szkolenia Pluralsight. Te kanały zostały specjalnie nadzorowane przez ekspertów firmy Microsoft i są przeznaczone do uczenia się w obszarach platformy .NET, platformy Azure, DevOps i mobilności. Aktywuj korzyść usługi Pluralsight za poorednictwem portalu subskrypcji programu Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , aby uzyskać dostęp do tych kanałów na stronie docelowej Pluralsight —
 
-• Scott Hanselmann (.NET, Azure) — [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+• Scott Hanselmann (.NET, Azure) — [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-• Donovan Brown (DevOps) — [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
+• Donovan Brown (DevOps) — [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-• Kuba Montemagno (mobilność) — [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+• Kuba Montemagno (mobilność) — [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: co się stanie, gdy subskrypcja usługi Pluralsight zostanie uruchomiona?
-Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić subskrypcję bezpośrednio z Pluralsight.  Aby uzyskać szczegółowe informacje, skontaktuj się z [Pluralsight](http://www.pluralsight.com) .
+Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić subskrypcję bezpośrednio z Pluralsight.  Aby uzyskać szczegółowe informacje, skontaktuj się z [Pluralsight](https://www.pluralsight.com) .
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - [Centrum pomocy Pluralsight](https://help.pluralsight.com/help) zapewnia pomoc dotyczącą opracowywania kursów Pluralsight lub korzystania z witryny sieci Web Pluralsight.
@@ -98,6 +98,6 @@ Odp.: na koniec bezpłatnej subskrypcji usługi Pluralsight możesz zakupić sub
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Po utworzeniu konta możesz zacząć uczenie się.  Odwiedź witrynę [https://www.pluralsight.com](http://www.pluralsight.com) i naciśnij pozycję **Zaloguj** się w prawym górnym rogu strony, aby rozpocząć nowy kurs, lub Wróć do kursu, który jest już w toku.
+Po utworzeniu konta możesz zacząć uczenie się.  Odwiedź witrynę [https://www.pluralsight.com](https://www.pluralsight.com) i naciśnij pozycję **Zaloguj** się w prawym górnym rogu strony, aby rozpocząć nowy kurs, lub Wróć do kursu, który jest już w toku.
 
 Skorzystaj z własnej piaskownicy programistycznej, aktywując swoje środki na korzystanie z [platformy Azure DevTest](vs-azure.md). 

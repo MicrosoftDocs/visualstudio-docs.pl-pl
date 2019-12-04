@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493355"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706970"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -25,26 +25,26 @@ Portal subskrypcje programu Visual Studio łączy wszystkie subskrypcje i progra
 
 Na stronie korzyści subskrypcja w użyciu będzie widoczna w kolorze niebieskim. Jest ona również wyświetlana w prawym górnym rogu strony.
 > [!div class="mx-imgBorder"]
-> ![Aktywna subskrypcja](_img/manage-vs-subscriptions/current-subscription-cropped.png)
+> ![aktywną subskrypcję](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Aby przełączać się między subskrypcjami, możesz:
 
 - Kliknij listę rozwijaną w prawym górnym rogu i wybierz subskrypcję z listy.
 - Kliknij kartę subskrypcje, a następnie kliknij żądaną subskrypcję.
   > [!div class="mx-imgBorder"]
-  > ![Przełączanie subskrypcji](_img/manage-vs-subscriptions/change-subscription-resized.png)
+  > ![przełączanie subskrypcji](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Jeśli Twoja subskrypcja nie jest widoczna...
 
 - Być może wygasła. W portalu subskrybenta są wyświetlane tylko aktywne subskrypcje.
-- Może być skojarzony z innym adresem e-mail. Jeśli na przykład zalogujesz się do subskrypcji Visual Studio Professional przy użyciu poczty e-mail i masz Visual Studio Dev Essentials członkostwo skojarzone z Twoim kontem Microsoft, zostanie wyświetlona tylko subskrypcja odpowiadająca Twojemu adresowi e-mail. służy do logowania się do portalu subskrybenta. Aby wyświetlić inną subskrypcję, musisz się wylogować, a następnie zalogować się przy użyciu innego adresu e-mail.
+- Może być skojarzony z innym adresem e-mail. Jeśli na przykład zalogujesz się do subskrypcji Visual Studio Professional przy użyciu poczty e-mail i masz Visual Studio Dev Essentials członkostwo skojarzone z Twoim kontem Microsoft, zostanie wyświetlona tylko subskrypcja odpowiadająca adresowi e-mail użytemu do zalogowania się do portalu subskrybenta. Aby wyświetlić inną subskrypcję, musisz się wylogować, a następnie zalogować się przy użyciu innego adresu e-mail.
 - Jeśli firma kupuje subskrypcje w ramach licencji zbiorczej, administrator może nie mieć przypisanej do Ciebie subskrypcji lub mógł ponownie przypisać subskrypcję do innego użytkownika.
 
 ## <a name="renewing-my-subscriptions"></a>Odnawianie moich subskrypcji
 
 **Subskrypcje standardowe**
-- Microsoft Store: Jeśli subskrypcja została zakupiona z poziomu [Microsoft Store](http://www.microsoft.com/store), możesz ją również odnowić.
-- Licencja zbiorcza:  Jeśli firma kupuje subskrypcje w ramach licencji zbiorczej, administrator powinien skontaktować się z odsprzedawcą w celu odnowienia subskrypcji.
+- Microsoft Store: Jeśli subskrypcja została zakupiona z poziomu [Microsoft Store](https://www.microsoft.com/store), możesz ją również odnowić.
+- Licencja zbiorcza: Jeśli firma kupuje subskrypcje w ramach licencji zbiorczej, administrator powinien skontaktować się z odsprzedawcą w celu odnowienia subskrypcji.
 
 **Subskrypcje chmury:**  Subskrypcje chmury nie muszą być odnawiane. Dopóki subskrypcja zostanie zapłacona, pozostanie aktywna.
 
@@ -75,10 +75,10 @@ Informacje o kontakcie i preferencje można łatwo zmienić w Twoim profilu.
 5. Kliknij przycisk **Wstecz** w przeglądarce, aby powrócić do strony korzyści.
 
 ### <a name="setting-communications-preferences"></a>Ustawianie preferencji komunikacji
-Jeśli chcesz otrzymywać okresowe aktualizacje dotyczące subskrypcji i korzyści, w tym biuletyn comiesięcznych subskrypcji programu Visual Studio, [zaktualizuj swoje preferencje](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) , zaznaczając pole wyboru subskrypcje programu Visual Studio w profilu programu Visual Studio. . Możesz zmienić te Preferencje i anulować subskrypcję w dowolnym momencie. 
+Jeśli chcesz otrzymywać okresowe aktualizacje dotyczące subskrypcji i korzyści, w tym biuletyn comiesięcznych subskrypcji programu Visual Studio, [zaktualizuj swoje preferencje](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) , zaznaczając pole wyboru subskrypcje programu Visual Studio w profilu programu Visual Studio. Możesz zmienić te Preferencje i anulować subskrypcję w dowolnym momencie. 
 
    > [!div class="mx-imgBorder"]
-   > ![Ustawianie preferencji](_img/manage-vs-subscriptions/change-prefs.png)
+   > Preferencje Ustawienia ![](_img/manage-vs-subscriptions/change-prefs.png)
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Łączenie subskrypcji z istniejącymi Azure DevOps Servicesami lub subskrypcjami platformy Azure
 Jeśli zalogujesz się do subskrypcji przy użyciu osobistego konto Microsoft (MSA) i masz subskrypcję obejmującą Azure DevOps Services lub Microsoft Azure przy użyciu konta służbowego zarządzanego przez platformę Azure, możesz połączyć te dwie subskrypcje. Jest to nazywane "alternatywnym kontem" i pozwala nadal korzystać z usługi MSA do logowania się do subskrypcji, gdy masz dostęp do istniejących zasobów platformy Azure, Azure DevOps Services lub IDE, które są skojarzone z kontami służbowymi.
@@ -96,10 +96,10 @@ Po dodaniu alternatywnego konta możesz je zaktualizować lub usunąć w dowolny
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>PYTANIA Jeśli nie odnowię subskrypcji, jak długo firma Microsoft będzie przechowywać moje dane?
-Odp.: W zależności od kanału zakupu firma Microsoft zachowuje dane klienta przez różne długości czasu.
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: Jeśli nie odnowię subskrypcji, jak długo firma Microsoft będzie utrzymywać moje dane?
+Odp.: w zależności od kanału zakupu firma Microsoft zachowuje dane klienta przez różne długości czasu.
 
-| Ukierunkowan                                                | Czas trwania (w dniach) |
+| Kanał                                                | Czas trwania (w dniach) |
 |--------------------------------------------------------|-----------------|
 |    Sprzedaż detaliczna (np. do Microsoft Store)               |    360          |
 |    Centrum usługi licencjonowania zbiorowego (VLSC)              |    180          |

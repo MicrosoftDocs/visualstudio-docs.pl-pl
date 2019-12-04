@@ -1,5 +1,5 @@
 ---
-title: Element metadanych w przetwarzaniu wsadowym zadań | Dokumentacja firmy Microsoft
+title: Metadane elementu w przetwarzaniu wsadowym zadań | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c80749080e4abc41412ed6c5df8421976054e68e
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996790"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706869"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość podzielić listy elementów na różnych kategorii lub serii, na podstawie metadanych elementu i uruchomić zadanie jeden raz z każdej partii. Może być mylące zrozumieć, dokładnie jakie elementy są przekazywany przy użyciu której usługi batch. W tym temacie omówiono następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementów i uruchamiania zadania jednokrotnie przy każdej partii. Może być myląca, aby dokładnie zrozumieć, jakie elementy są przesyłane, z których partiami. W tym temacie opisano następujące typowe scenariusze związane z przetwarzaniem wsadowym.
 
-- Podział listy elementów w partie
+- Dzielenie listy elementów na partie
 
-- Dzielenie kilka list elementów na partie
+- Dzielenie kilku list elementów na partie
 
-- Przetwarzanie wsadowe jeden element w czasie
+- Wsadowe pojedyncze elementy w czasie
 
-- Filtrowanie listy elementów
+- Filtrowanie list elementów
 
-Więcej informacji na temat przetwarzania wsadowego za pomocą [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).
+Aby uzyskać więcej informacji na temat tworzenia pakietów wsadowych za pomocą [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [Batching](../msbuild/msbuild-batching.md).
 
-## <a name="divide-an-item-list-into-batches"></a>Podziel listę elementów na partie
-Przetwarzanie wsadowe umożliwia podzielić listy elementów na różnych partii na podstawie metadanych elementu i przekazać każdej partii w zadanie oddzielnie. Jest to przydatne do tworzenia zestawów satelickich.
+## <a name="divide-an-item-list-into-batches"></a>Dzielenie listy elementów na partie
+Przetwarzanie wsadowe umożliwia dzielenie listy elementów na różne partie na podstawie metadanych elementów i przekazywanie poszczególnych partii do zadania oddzielnie. Jest to przydatne w przypadku tworzenia zestawów satelickich.
 
-Poniższy przykład pokazuje, jak podzielić listy elementów na partie na podstawie metadanych elementu. `ExampColl` Listy elementów jest podzielony na trzy partie na podstawie `Number` metadanych elementu. Obecność `%(ExampColl.Number)`w `Text` powiadamia atrybutu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , należy wykonać przetwarzanie wsadowe. `ExampColl` Listy elementów jest podzielony na trzy partie na podstawie `Number` metadanych i każdej partii jest przekazywana oddzielnie do zadania.
+Poniższy przykład pokazuje, jak podzielić listę elementów na partie na podstawie metadanych elementu. Lista elementów `ExampColl` jest dzielona na trzy partie na podstawie metadanych elementu `Number`. Obecność `%(ExampColl.Number)`w atrybucie `Text` powiadamia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] należy wykonać przetwarzanie wsadowe. Lista elementów `ExampColl` jest dzielona na trzy partie na podstawie metadanych `Number`, a każda partia jest przenoszona osobno do zadania podrzędnego.
 
 ```xml
 <Project
@@ -71,7 +71,7 @@ Poniższy przykład pokazuje, jak podzielić listy elementów na partie na podst
 </Project>
 ```
 
-[Komunikat — zadanie](../msbuild/message-task.md) zawiera następujące informacje:
+W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
 
 `Number: 1 -- Items in ExampColl: Item1;Item4`
 
@@ -79,13 +79,13 @@ Poniższy przykład pokazuje, jak podzielić listy elementów na partie na podst
 
 `Number: 3 -- Items in ExampColl: Item3;Item6`
 
-## <a name="divide-several-item-lists-into-batches"></a>Podziel kilka list elementów na partie
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można podzielić wiele list elementów na partie na podstawie tych samych metadanych. Dzięki temu można łatwo podzielić listy różnych elementów partii do tworzenia wielu zestawów. Na przykład można mieć listę elementów z *.cs* pliki podzielony na aplikacji usługi batch i batch zestawu i listy elementów plików zasobów jest podzielony na aplikacji usługi batch i batch zestawu. Przetwarzanie wsadowe można następnie użyć do przekazać te listy elementów do jednego zadania i tworzenie aplikacji i zestawu.
+## <a name="divide-several-item-lists-into-batches"></a>Dzielenie kilku list elementów na partie
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może podzielić wiele list elementów na partie na podstawie tych samych metadanych. Dzięki temu można łatwo podzielić różne listy elementów na partie, aby skompilować wiele zestawów. Na przykład można mieć listę elementów plików *CS* podzieloną na partię aplikacji i partię zestawu oraz listę elementów zasobów podzieloną na partię aplikacji i partię zestawu. Następnie można użyć usługi Batch, aby przekazać te listy elementów do jednego zadania i skompilować aplikację i zestaw.
 
 > [!NOTE]
-> Jeśli lista elementów, które są przekazywane do zadania nie zawiera elementów przy użyciu metadanych, której dotyczy odwołanie, każdy element na tej liście elementów jest przekazywany do każdej partii.
+> Jeśli lista elementów przenoszona do zadania nie zawiera żadnych elementów z metadanymi, do których się odwołuje, każdy element na liście elementów jest przesyłany do każdej partii.
 
-Poniższy przykład pokazuje, jak podzielić wielu listy elementów na partie na podstawie metadanych elementu. `ExampColl` i `ExampColl2` listy elementów każdego dzielą się na trzy partie na podstawie `Number` metadanych elementu. Obecność `%(Number)`w `Text` powiadamia atrybutu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , należy wykonać przetwarzanie wsadowe. `ExampColl` i `ExampColl2` listy elementów są podzielone na trzy partie na podstawie `Number` metadanych i każdej partii jest przekazywana oddzielnie do zadania.
+Poniższy przykład pokazuje, jak podzielić listę wielu elementów na partie na podstawie metadanych elementu. Listy elementów `ExampColl` i `ExampColl2` są podzielone na trzy partie na podstawie metadanych `Number` elementu. Obecność `%(Number)`w atrybucie `Text` powiadamia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] należy wykonać przetwarzanie wsadowe. Listy elementów `ExampColl` i `ExampColl2` są podzielone na trzy partie na podstawie metadanych `Number`, a każda partia jest przenoszona osobno do zadania.
 
 ```xml
 <Project
@@ -123,7 +123,7 @@ Poniższy przykład pokazuje, jak podzielić wielu listy elementów na partie na
 </Project>
 ```
 
-[Komunikat — zadanie](../msbuild/message-task.md) zawiera następujące informacje:
+W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
 
 `Number: 1 -- Items in ExampColl: Item1 ExampColl2: Item4`
 
@@ -131,10 +131,10 @@ Poniższy przykład pokazuje, jak podzielić wielu listy elementów na partie na
 
 `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`
 
-## <a name="batch-one-item-at-a-time"></a>Jeden element usługi Batch w czasie
-Przetwarzanie wsadowe można także wykonać na metadane dobrze znanego elementu, który jest przypisany do każdego elementu przy utworzeniu. Gwarantuje to, że każdy element w kolekcji mają niektóre metadane na potrzeby przetwarzania wsadowego. `Identity` Wartości metadanych jest unikatowy dla każdego elementu i jest przydatne w przypadku dzielenia każdy element na liście elementów do oddzielnej partii. Aby uzyskać pełną listę metadane dobrze znanego elementu, zobacz [metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md).
+## <a name="batch-one-item-at-a-time"></a>Wsadowe pojedyncze elementy
+Przetwarzanie wsadowe może również odbywać się w przypadku metadanych o dobrze znanych elementach, które są przypisywane do każdego elementu podczas tworzenia. Gwarantuje to, że każdy element w kolekcji będzie miał metadane do użycia na potrzeby przetwarzania wsadowego. Wartość metadanych `Identity` jest unikatowa dla każdego elementu i jest przydatna do dzielenia każdego elementu na liście elementów na osobną partię. Aby uzyskać pełną listę metadanych dobrze znanych elementów, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
 
-Poniższy przykład pokazuje, jak partii każdego elementu na liście elementów, jeden na raz. Ponieważ `Identity` wartość metadanych każdy element jest unikatowa, `ExampColl` listy elementów jest podzielony na partie sześć partie zawierające jeden element listy elementów. Obecność `%(Identity)`w `Text` powiadamia atrybutu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , należy wykonać przetwarzanie wsadowe.
+Poniższy przykład pokazuje, jak pojedynczo wsadowo poszczególne elementy z listy elementów. Ponieważ wartość metadanych `Identity` każdego elementu jest unikatowa, lista elementów `ExampColl` jest podzielona na sześć partii, każda partia zawierająca jeden element listy elementów. Obecność `%(Identity)`w atrybucie `Text` powiadamia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] należy wykonać przetwarzanie wsadowe.
 
 ```xml
 <Project
@@ -153,27 +153,27 @@ Poniższy przykład pokazuje, jak partii każdego elementu na liście elementów
 
     <Target Name="ShowMessage">
         <Message
-            Text = "Identity: "%(Identity)" -- Items in ExampColl: @(ExampColl)"/>
+            Text = "Identity: '%(Identity)' -- Items in ExampColl: @(ExampColl)"/>
     </Target>
 
 </Project>
 ```
 
-[Komunikat — zadanie](../msbuild/message-task.md) zawiera następujące informacje:
+W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
 
+```output
+Identity: 'Item1' -- Items in ExampColl: Item1
+Identity: 'Item2' -- Items in ExampColl: Item2
+Identity: 'Item3' -- Items in ExampColl: Item3
+Identity: 'Item4' -- Items in ExampColl: Item4
+Identity: 'Item5' -- Items in ExampColl: Item5
+Identity: 'Item6' -- Items in ExampColl: Item6
 ```
-Identity: "Item1" -- Items in ExampColl: Item1
-Identity: "Item2" -- Items in ExampColl: Item2
-Identity: "Item3" -- Items in ExampColl: Item3
-Identity: "Item4" -- Items in ExampColl: Item4
-Identity: "Item5" -- Items in ExampColl: Item5
-Identity: "Item6" -- Items in ExampColl: Item6
-```
 
-## <a name="filter-item-lists"></a>Filtruj element listy
-Przetwarzanie wsadowe może służyć do filtrowania niektórych elementów z listy elementów przed przekazaniem go do zadania. Na przykład filtrowanie `Extension` wartość metadane dobrze znanego elementu pozwala na uruchamianie zadania tylko plików z określonym rozszerzeniem.
+## <a name="filter-item-lists"></a>Filtruj listy elementów
+Przy użyciu operacji wsadowych można odfiltrować niektóre elementy z listy elementów przed przekazaniem jej do zadania. Na przykład filtrowanie wartości metadanych dobrze znanego elementu `Extension` umożliwia uruchamianie zadania tylko dla plików o określonym rozszerzeniu.
 
-Poniższy przykład pokazuje, jak podzielić listy elementów na podstawie metadanych elementu partii, a następnie filtrować te partie, gdy są przekazywane do zadania. `ExampColl` Listy elementów jest podzielony na trzy partie na podstawie `Number` metadanych elementu. `Condition` Atrybut zadanie określa, który tylko partii z `Number` wartość metadanych z elementu `2` zostanie przekazany do zadania
+Poniższy przykład pokazuje, jak podzielić listę elementów na partie na podstawie metadanych elementu, a następnie odfiltrować te partie, gdy są one przesyłane do zadania. Lista elementów `ExampColl` jest dzielona na trzy partie na podstawie metadanych elementu `Number`. Atrybut `Condition` zadania określa, że tylko partie z wartością metadanych elementu `Number` `2` zostaną przesłane do zadania
 
 ```xml
 <Project
@@ -211,7 +211,7 @@ Poniższy przykład pokazuje, jak podzielić listy elementów na podstawie metad
 </Project>
 ```
 
-[Komunikat — zadanie](../msbuild/message-task.md) zawiera następujące informacje:
+W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
 
 ```
 Items in ExampColl: Item2;Item5
@@ -220,7 +220,7 @@ Items in ExampColl: Item2;Item5
 ## <a name="see-also"></a>Zobacz także
 - [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)
 - [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
-- [Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [ItemMetadata —, element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

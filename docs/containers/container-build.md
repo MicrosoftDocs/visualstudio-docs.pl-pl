@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549956"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706793"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Kompilowanie i debugowanie aplikacji kontenerowych przy użyciu programu Visual Studio lub wiersza polecenia
+# <a name="how-visual-studio-builds-containerized-apps"></a>Jak program Visual Studio kompiluje aplikacje kontenera
 
-Niezależnie od tego, czy tworzysz z programu Visual Studio IDE, czy konfigurujesz kompilację w wierszu polecenia, musisz wiedzieć, jak kompilacja Visual Studio używa pliku dockerfile do kompilowania projektów.  Ze względu na wydajność program Visual Studio jest zgodny ze specjalnym procesem dla aplikacji kontenerowych. Zrozumienie sposobu, w jaki program Visual Studio kompiluje projekty, jest szczególnie istotny podczas dostosowywania procesu kompilacji przez zmodyfikowanie pliku dockerfile.
+Niezależnie od tego, czy tworzysz z programu Visual Studio IDE, czy konfigurujesz kompilację w wierszu polecenia, musisz wiedzieć, jak program Visual Studio używa pliku dockerfile do kompilowania projektów.  Ze względu na wydajność program Visual Studio jest zgodny ze specjalnym procesem dla aplikacji kontenerowych. Zrozumienie sposobu, w jaki program Visual Studio kompiluje projekty, jest szczególnie istotny podczas dostosowywania procesu kompilacji przez zmodyfikowanie pliku dockerfile.
 
 Gdy program Visual Studio kompiluje projekt, który nie używa kontenerów platformy Docker, wywołuje program MSBuild na maszynie lokalnej i generuje pliki wyjściowe w folderze (zwykle `bin`) w folderze rozwiązania lokalnego. Jednak w przypadku projektu kontenera proces kompilacji bierze pod uwagę instrukcje pliku dockerfile na potrzeby tworzenia kontenera aplikacji. Pliku dockerfile, które są używane przez program Visual Studio, jest podzielony na wiele etapów. Ten proces polega na funkcji *kompilacji potokach wieloetapowych* platformy Docker.
 
@@ -84,7 +84,7 @@ MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 
 Dane wyjściowe będą wyglądać podobnie jak w oknie **danych wyjściowych** podczas kompilowania rozwiązania z poziomu środowiska IDE programu Visual Studio. Zawsze używaj `/p:Configuration=Release`, ponieważ w przypadkach, gdy program Visual Studio używa optymalizacji kompilacji potokach wieloetapowych, wyniki podczas kompilowania konfiguracji **debugowania** mogą nie być zgodne z oczekiwaniami. Zobacz [debugowanie](#debugging).
 
-Jeśli używasz projektu Docker Compose, użyj polecenia, aby skompilować obrazy:
+Jeśli używasz projektu Docker Compose, użyj tego polecenia, aby skompilować obrazy:
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -99,7 +99,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 - Pobierz obrazy z pierwszego etapu pliku dockerfile (etap `base` w większości wieloetapowe dockerfile).  
 - Skompiluj pliku dockerfile i uruchom kontener.
 
-Rozgrzewania będzie działać tylko w trybie **szybkim** , dlatego uruchomiony kontener będzie miał zainstalowany wolumin folderu aplikacji i wszelkie zmiany w aplikacji nie powinny unieważniać kontenera. Dlatego zwiększa to wydajność debugowania znacznie i skraca czas oczekiwania na długotrwałe zadania, takie jak ściąganie dużych obrazów.
+Rozgrzewania będzie działać tylko w trybie **szybkim** , dlatego uruchomiony kontener będzie miał zainstalowany wolumin folderu aplikacji. Oznacza to, że wszelkie zmiany w aplikacji nie będą unieważniać kontenera. Dlatego zwiększa to wydajność debugowania znacznie i skraca czas oczekiwania na długotrwałe zadania, takie jak ściąganie dużych obrazów.
 
 ## <a name="volume-mapping"></a>Mapowanie woluminów
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161972"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706980"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej i korzystaj z niej w subskrypcjach programu Visual Studio
 Korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio służy do rozwiązywania problemów z uszkodzeniem w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie wsparcia podstawowego dla [cyklu](https://support.microsoft.com/lifecycle/search)pomocy technicznej. Visual Studio Enterprise standardowa i roczna subskrypcja chmury otrzymuje cztery incydenty, podczas Visual Studio Professional standardowa i roczna subskrypcja chmury odbiera dwa zdarzenia, przez maksymalnie 1 rok od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -54,7 +54,7 @@ Opisy poziomów produktów: rozwiń węzeł **niedostępne plany pomocy technicz
 > Aby aktywować konto pomocy technicznej w języku innym niż angielski, wybierz swój kraj z [tej listy](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Jak przesłać zdarzenie przy użyciu korzyści
-Po skonfigurowaniu identyfikatora **kontraktu** i **identyfikatora dostępu** można go użyć do przesłania zgłoszenia do pomocy technicznej w [trybie online](http://support.microsoft.com/oas/) (wymagane jest zalogowanie się) lub za pośrednictwem [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) lub przez wywołanie numeru pomocy technicznej dla Twojego kraju. Jeśli przesyłasz zdarzenie w trybie online, masz możliwość zadzwonienia do pomoc techniczna firmy Microsoft Professional.
+Po skonfigurowaniu identyfikatora **kontraktu** i **identyfikatora dostępu** można go użyć do przesłania zgłoszenia do pomocy technicznej w [trybie online](https://support.microsoft.com/oas/) (wymagane jest zalogowanie się) lub za pośrednictwem [Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) lub przez wywołanie numeru pomocy technicznej dla Twojego kraju. Jeśli przesyłasz zdarzenie w trybie online, masz możliwość zadzwonienia do pomoc techniczna firmy Microsoft Professional.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Masz już identyfikator kontraktu i identyfikator dostępu skojarzony z kontem używanym do logowania się w celu przesłania zgłoszenia do pomocy technicznej w trybie online?
 Podczas przesyłania zdarzenia w trybie online najpierw zostanie wyświetlony monit o zalogowanie się. Zaloguj się przy użyciu konta, które jest skojarzone z IDENTYFIKATORem kontraktu i IDENTYFIKATORem dostępu. Twoja istniejąca korzyść z planu pomocy technicznej skojarzona z kontem zostanie wyświetlona w kroku 3 w przepływie pracy pomocy technicznej. Po prostu wybierz ten plan i Kontynuuj przesyłanie sprawy. Można przesłać zdarzenia do limitu wskazanego w planie lub do daty wygaśnięcia planu, zależnie od tego, co nastąpi wcześniej. Po pozostałym zdarzeniu Pokaż wartość "0" lub jeśli plan wygaśnie, nie jest już aktywny.

@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie składników COM za pomocą technologii ClickOnce | Dokumentacja firmy Microsoft
+title: Wdrażanie składników COM za pomocą technologii ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,57 +19,57 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c83367881b7ed6a69fe10af8b7c68eb1692e3e6
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422771"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706894"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Wdrażanie składników COM za pomocą technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składniki potrzebne do zarejestrowania globalnie i ten sposób może spowodować niepożądane skutki uboczne między nakładającymi się aplikacje. Ta sytuacja zwykle nie jest to problem występujący w aplikacjach .NET Framework, ponieważ składniki są całkowicie odizolowane do aplikacji lub są zgodne z side-by-side. Program Visual Studio umożliwia wdrażanie izolowane składniki COM na wyższe system operacyjny lub Windows XP.  
+Wdrożenie starszych składników COM było tradycyjnie trudnym zadaniem. Składniki muszą być zarejestrowane globalnie i w ten sposób mogą spowodować niepożądane skutki uboczne między nakładającymi się aplikacjami. Ta sytuacja zazwyczaj nie jest problemem w aplikacjach .NET Framework, ponieważ składniki są całkowicie izolowane do aplikacji lub są zgodne ze sobą. Program Visual Studio umożliwia wdrażanie izolowanych składników COM w systemie operacyjnym Windows XP lub nowszym.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] udostępnia mechanizm łatwy i bezpieczny do wdrażania aplikacji .NET. Jednak jeśli aplikacje korzystają z starszych składników modelu COM, należy wykonać dodatkowe kroki dotyczące wdrażania ich. W tym temacie opisano sposób wdrażania izolowane składniki COM i odwołanie składnikami macierzystymi (na przykład z języka Visual C++ lub Visual Basic 6.0).  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zapewnia łatwy i bezpieczny mechanizm wdrażania aplikacji .NET. Jeśli jednak aplikacje korzystają ze starszych składników modelu COM, należy wykonać dodatkowe kroki w celu ich wdrożenia. W tym temacie opisano sposób wdrażania izolowanych składników COM i odwołań do natywnych składników (na przykład z Visual Basic 6,0 C++lub wizualizacji).  
   
- Aby uzyskać więcej informacji na temat wdrażania izolowane składniki COM, zobacz "Uprość wdrażanie aplikacji za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i rejestracji wolnego modelu COM" w [ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx).  
+ Aby uzyskać więcej informacji na temat wdrażania izolowanych składników COM, zobacz [uproszczenie wdrażania aplikacji za pomocą technologii ClickOnce i com bez rejestracji](/archive/msdn-magazine/2005/april/simplify-app-deployment-with-clickonce-and-registration-free-com).  
   
-## <a name="registration-free-com"></a>COM bez rejestrowania  
- COM bez rejestrowania się nowej technologii związanych z wdrażaniem i aktywowanie izolowane składniki COM. Działa przez umieszczenie biblioteki typów wszystkich składników i informacje o rejestracji, który jest zwykle instalowany w rejestrze systemu do pliku XML o nazwie manifestu, przechowywane w tym samym folderze co aplikacja.  
+## <a name="registration-free-com"></a>COM bez rejestracji  
+ COM bez rejestracji to nowa technologia wdrażania i aktywowania izolowanych składników COM. Działa przez umieszczenie wszystkich informacji o bibliotece typów składników i informacje o rejestracji, które są zazwyczaj instalowane w rejestrze systemu do pliku XML o nazwie Manifest, przechowywane w tym samym folderze, w którym znajduje się aplikacja.  
   
- Izolowanie składnika modelu COM wymaga on być zarejestrowany na komputerze dewelopera, ale nie musi być zarejestrowana na komputerze użytkownika końcowego. Aby wyizolować składnika modelu COM, ustawiono wszystko, czego potrzebujesz, aby wykonać swoje odwołanie **izolowany** właściwości **True**. Domyślnie wartość tej właściwości jest równa **False**, wskazujący, że powinny być traktowane jako odwołanie COM zarejestrowane. Jeśli ta właściwość jest **True**, spowoduje wygenerowanie manifestu do wygenerowania tego składnika w czasie kompilacji. Powoduje również odpowiadające im pliki będą kopiowane do folderu aplikacji podczas instalacji.  
+ Izolowanie składnika modelu COM wymaga, aby był on zarejestrowany na komputerze dewelopera, ale nie musi być zarejestrowany na komputerze użytkownika końcowego. Aby izolować składnik modelu COM, wystarczy ustawić właściwość **izolowany** odwołania na **wartość true**. Domyślnie ta właściwość ma wartość **false**, co oznacza, że powinna być traktowana jako zarejestrowane odwołanie com. Jeśli ta właściwość ma **wartość true**, powoduje to wygenerowanie manifestu dla tego składnika w czasie kompilacji. Powoduje również, że odpowiednie pliki zostaną skopiowane do folderu aplikacji podczas instalacji.  
   
- Gdy generator manifestu napotka odwołanie COM izolowany, wylicza wszystkie `CoClass` wpisów w bibliotece typów składnika, dopasowanie każdego wpisu z jego odpowiadające im dane rejestracji i generowanie manifestu definicji dla modelu COM klasy w pliku biblioteki typów.  
+ Gdy Generator manifestu napotyka odizolowane odwołanie COM, wylicza wszystkie `CoClass` wpisów w bibliotece typów składnika, dopasowuje każdy wpis z odpowiednimi danymi rejestracyjnymi i generuje definicje manifestu dla wszystkich klas COM w pliku biblioteki typów.  
   
-## <a name="deploying-registration-free-com-components-using-clickonce"></a>Wdrażanie składników COM bez rejestrowania za pomocą technologii ClickOnce  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] technologii wdrażania jest dobrze nadaje się do wdrożenia składników COM izolowany, ponieważ oba [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i rejestracji wolnego modelu COM wymagają, że składnik mieć manifestu w celu wdrożenia.  
+## <a name="deploying-registration-free-com-components-using-clickonce"></a>Wdrażanie składników COM bez rejestracji za pomocą technologii ClickOnce  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] technologia wdrażania jest odpowiednia do wdrażania izolowanych składników COM, ponieważ zarówno [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], jak i bezpłatna rejestracja COM wymagają, aby składnik miał manifest do wdrożenia.  
   
- Zazwyczaj autora składnika powinny dostarczyć manifestu. Jeśli nie, jednak program Visual Studio jest zdolny do generowania manifestu automatycznie składnika modelu COM. Generowanie manifestu jest wykonywane podczas [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] publikowania procesu; Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md). Ta funkcja umożliwia również wykorzystywać starszej wersji składników, które utworzone w starszych środowiskach programistycznych, takich jak Visual Basic 6.0.  
+ Zazwyczaj autor składnika powinien dostarczyć manifest. Jeśli nie, program Visual Studio może jednak automatycznie wygenerować manifest dla składnika modelu COM. Generowanie manifestu jest wykonywane podczas procesu publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Aby uzyskać więcej informacji, zobacz [publikowanie aplikacji ClickOnce](../deployment/publishing-clickonce-applications.md). Ta funkcja pozwala również wykorzystać starsze składniki, które zostały utworzone we wcześniejszych środowiskach programistycznych, takich jak Visual Basic 6,0.  
   
- Istnieją dwa sposoby, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdraża składniki COM:  
+ Istnieją dwa sposoby [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia składników COM:  
   
-- Wdrażanie składników COM; przy użyciu programu inicjującego to działa na wszystkich obsługiwanych platformach.  
+- Użyj programu inicjującego, aby wdrożyć składniki COM. działa to na wszystkich obsługiwanych platformach.  
   
-- Przy użyciu składnika macierzystego izolacji (znany także jako rejestracji wolnego modelu COM) wdrażania. Jednak ta opcja zadziała tylko w Windows XP lub nowszej systemu operacyjnego.  
+- Użyj natywnej izolacji składnika (nazywanej również niezależną rejestracją COM). Ta wartość będzie jednak działać tylko w systemie operacyjnym Windows XP lub nowszym.  
   
-### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Przykład izolowanie i wdrażania prostego składnika modelu COM  
- W celu przedstawienia wdrożenie składnika COM bez rejestrowania, w tym przykładzie zostanie tworzenie aplikacji z systemem Windows w języku Visual Basic, który odwołuje się do izolowanego składnika COM natywne utworzone przy użyciu języka Visual Basic 6.0 i wdróż je za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Przykład izolowania i wdrażania prostego składnika COM  
+ Aby zademonstrować wdrożenie składnika COM bez rejestracji, w tym przykładzie zostanie utworzona aplikacja oparta na systemie Windows w Visual Basic odwołująca się do izolowanego macierzystego składnika COM utworzonego przy użyciu Visual Basic 6,0 i wdrażania go przy użyciu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
- Najpierw należy utworzyć natywnych składnika modelu COM:  
+ Najpierw należy utworzyć natywny składnik COM:  
   
-##### <a name="to-create-a-native-com-component"></a>Do tworzenia natywnych składnika modelu COM  
+##### <a name="to-create-a-native-com-component"></a>Aby utworzyć natywny składnik COM  
   
-1. Za pomocą języka Visual Basic 6.0 z **pliku** menu, kliknij przycisk **New**, następnie **projektu**.  
+1. Korzystając z Visual Basic 6,0, w menu **plik** kliknij polecenie **Nowy**, a następnie pozycję **projekt**.  
   
-2. W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **ActiveX DLL** projektu. W **nazwa** wpisz `VB6Hello`.  
+2. W oknie dialogowym **Nowy projekt** wybierz węzeł **Visual Basic** i wybierz projekt **ActiveX DLL** . W polu **Nazwa** wpisz `VB6Hello`.  
   
     > [!NOTE]
-    > Obsługiwane są tylko typy projektu ActiveX biblioteki DLL i kontrolki ActiveX z COM bez rejestrowania; Typy projektu ActiveX EXE i dokumentu ActiveX nie są obsługiwane.  
+    > W przypadku modelu COM bez rejestracji są obsługiwane tylko typy projektów ActiveX DLL i ActiveX Control. Nie są obsługiwane typy projektów ActiveX EXE i dokumentów ActiveX.  
   
-3. W **Eksploratora rozwiązań**, kliknij dwukrotnie **Class1.vb** można otworzyć edytora tekstu.  
+3. W **Eksplorator rozwiązań**kliknij dwukrotnie pozycję **Class1. vb** , aby otworzyć Edytor tekstu.  
   
-4. W Class1.vb, Dodaj następujący kod po kod generowany dla `New` metody:  
+4. W Class1. vb Dodaj następujący kod po wygenerowaniu kodu dla metody `New`:  
   
     ```  
     Public Sub SayHello()  
@@ -77,32 +77,32 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
     End Sub  
     ```  
   
-5. Utwórz składnik. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+5. Kompiluj składnik. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.  
   
 > [!NOTE]
-> COM bez rejestrowania obsługuje tylko bibliotek DLL i COM kontroluje typów projektów. Nie można używać pliku exe z rejestracji wolnego modelu COM.  
+> Model COM bez rejestracji obsługuje tylko typy projektów DLL i COM Controls. Nie można używać exe z modelem COM bez rejestracji.  
   
- Teraz możesz utworzyć aplikację z systemem Windows i dodać odwołanie do składnika modelu COM do niego.  
+ Teraz można utworzyć aplikację opartą na systemie Windows i dodać do niej odwołanie do składnika COM.  
   
-##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Aby tworzyć aplikacje oparte na Windows za pomocą składnika modelu COM  
+##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>Aby utworzyć aplikację opartą na systemie Windows przy użyciu składnika COM  
   
-1. W języku Visual Basic z **pliku** menu, kliknij przycisk **New**, następnie **projektu**.  
+1. Korzystając z Visual Basic, w menu **plik** kliknij polecenie **Nowy**, a następnie **projekt**.  
   
-2. W **nowy projekt** okno dialogowe, wybierz opcję **języka Visual Basic** a następnie wybierz węzeł **aplikacji Windows**. W **nazwa** wpisz `RegFreeComDemo`.  
+2. W oknie dialogowym **Nowy projekt** wybierz węzeł **Visual Basic** i wybierz pozycję **aplikacja systemu Windows**. W polu **Nazwa** wpisz `RegFreeComDemo`.  
   
-3. W **Eksploratora rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki** przycisk, aby wyświetlić odwołania do projektu.  
+3. W **Eksplorator rozwiązań**kliknij przycisk **Pokaż wszystkie pliki** , aby wyświetlić odwołania do projektu.  
   
-4. Kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie** z menu kontekstowego.  
+4. Kliknij prawym przyciskiem myszy węzeł **odwołania** i wybierz polecenie **Dodaj odwołanie** z menu kontekstowego.  
   
-5. W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **Przeglądaj** kartę, przejdź do VB6Hello.dll, a następnie wybierz ją.  
+5. W oknie dialogowym **Dodaj odwołanie** kliknij kartę **Przeglądaj** , przejdź do VB6Hello. dll, a następnie wybierz ją.  
   
-    A **VB6Hello** odwołania, który pojawia się na liście odwołania.  
+    Odwołanie **VB6Hello** pojawia się na liście odwołań.  
   
-6. Wskaż **przybornika**, wybierz opcję **przycisk** sterowania, a następnie przeciągnij go **Form1** formularza.  
+6. Wskaż **Przybornik**, wybierz kontrolkę **przycisk** i przeciągnij ją do formularza **Form1** .  
   
-7. W **właściwości** okna, ustaw właściwość **tekstu** właściwości **Hello**.  
+7. W oknie **Właściwości** ustaw właściwość **Text** przycisku na **Hello**.  
   
-8. Kliknij dwukrotnie przycisk aby dodać kod procedury obsługi, a w pliku kodu, Dodaj kod, tak aby program obsługi o następującej treści:  
+8. Kliknij dwukrotnie przycisk, aby dodać kod procedury obsługi, a w pliku kodu Dodaj kod, tak aby program obsługi odczytuje w następujący sposób:  
   
    ```  
    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
@@ -111,68 +111,68 @@ Wdrażanie składników COM, starszy tradycyjnie było trudne zadanie. Składnik
    End Sub  
    ```  
   
-9. Uruchom aplikację. Z **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
+9. Uruchom aplikację. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.  
   
-   Następnie trzeba izolować formantu. Każdy składnik COM, używanych przez aplikację jest reprezentowana w projekcie jako odwołanie COM. Te odwołania są widoczne w obszarze **odwołania** w węźle **Eksploratora rozwiązań** okna. (Zwróć uwagę, że można dodawać odwołuje się bezpośrednio przy użyciu **Dodaj odwołanie** polecenie **projektu** menu lub pośrednio, przeciągając kontrolki ActiveX na formularzu.)  
+   Następnie musisz odizolować formant. Każdy składnik COM używany przez aplikację jest reprezentowany w projekcie jako odwołanie COM. Te odwołania są widoczne w węźle **odwołania** w oknie **Eksplorator rozwiązań** . (Należy zauważyć, że można dodać odwołania bezpośrednio przy użyciu polecenia **Dodaj odwołanie** w menu **projekt** lub pośrednio przeciągając kontrolkę ActiveX do formularza).  
   
-   Poniższe kroki pokazują jak izolowania składników COM i opublikować zaktualizowaną aplikację zawierająca formant izolowanym:  
+   Poniższe kroki pokazują, jak izolować składnik modelu COM i opublikować zaktualizowaną aplikację zawierającą wyizolowaną kontrolkę:  
   
-##### <a name="to-isolate-a-com-component"></a>Do izolowania składników COM  
+##### <a name="to-isolate-a-com-component"></a>Aby wyizolować składnik COM  
   
-1. W **Eksploratora rozwiązań**w **odwołania** węzeł **VB6Hello** odwołania.  
+1. W **Eksplorator rozwiązań**w węźle **odwołania** wybierz odwołanie **VB6Hello** .  
   
-2. W **właściwości** okna, zmień wartość właściwości **izolowany** właściwość **False** do **True**.  
+2. W oknie **Właściwości** Zmień wartość właściwości **izolowanej** z **false** na **true**.  
   
-3. Z **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+3. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.  
   
-   Teraz, po naciśnięciu klawisza F5, działa aplikacja, zgodnie z oczekiwaniami, ale teraz działa on w ramach rejestracji wolnego modelu COM. W celu potwierdzenia, spróbuj wyrejestrowywanie składników VB6Hello.dll i uruchomić RegFreeComDemo1.exe poza programem Visual Studio IDE. Tym razem po kliknięciu przycisku nadal działa. Jeśli zmienisz tymczasowo manifest aplikacji, ponownie powiedzie.  
+   Teraz, po naciśnięciu klawisza F5, aplikacja działa zgodnie z oczekiwaniami, ale jest teraz uruchomiona w obszarze COM bez rejestracji. Aby to potwierdzić, spróbuj wyrejestrować składnik VB6Hello. dll i uruchomić RegFreeComDemo1. exe poza środowiskiem IDE programu Visual Studio. Tym razem, gdy przycisk zostanie kliknięty, nadal działa. Jeśli tymczasowo zmienisz nazwę manifestu aplikacji, wystąpi błąd.  
   
 > [!NOTE]
-> Brak składnika modelu COM można symulować tymczasowo wyrejestrowując go. Otwórz wiersz polecenia, przejdź do folderu systemu, wpisując `cd /d %windir%\system32`, następnie należy wyrejestrować składnika, wpisując `regsvr32 /u VB6Hello.dll`. Można zarejestrować go ponownie, wpisując `regsvr32 VB6Hello.dll`.  
+> Istnieje możliwość symulowania nieobecności składnika COM przez tymczasowe Wyrejestrowanie. Otwórz wiersz polecenia, przejdź do folderu systemowego, wpisując `cd /d %windir%\system32`, a następnie Wyrejestruj składnik, wpisując `regsvr32 /u VB6Hello.dll`. Możesz zarejestrować go ponownie, wpisując `regsvr32 VB6Hello.dll`.  
   
- Ostatnim krokiem jest do publikowania aplikacji przy użyciu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
+ Ostatnim krokiem jest opublikowanie aplikacji przy użyciu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   
-##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Aby opublikować aktualizacje aplikacji przy użyciu izolowanego składnika modelu COM  
+##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Aby opublikować aktualizację aplikacji za pomocą izolowanego składnika COM  
   
-1. Z **kompilacji** menu, kliknij przycisk **publikowania RegFreeComDemo**.  
+1. W menu **kompilacja** kliknij pozycję **Publikuj RegFreeComDemo**.  
   
-    Pojawi się Kreator publikacji.  
+    Zostanie wyświetlony Kreator publikacji.  
   
-2. W Kreatorze publikowania należy określać lokalizacji na dysku komputera lokalnego, w którym dostęp i przejrzyj pliki opublikowane.  
+2. W Kreatorze publikowania Określ lokalizację na dysku komputera lokalnego, na którym możesz uzyskać dostęp do opublikowanych plików i je przeanalizować.  
   
-3. Kliknij przycisk **Zakończ** Aby opublikować aplikację.  
+3. Kliknij przycisk **Zakończ** , aby opublikować aplikację.  
   
-   Podczas badania opublikowane pliki, można zauważyć, czy plik sysmon.ocx jest dołączony. Kontrolka jest całkowicie odizolowane do tej aplikacji, co oznacza, że komputerze użytkownika końcowego jest inna aplikacja używa innej wersji kontrolki, nie może kolidować do za pomocą tej aplikacji.  
+   W przypadku badania opublikowanych plików należy zauważyć, że plik Sysmon. ocx jest dołączony. Formant jest całkowicie odizolowany od tej aplikacji, co oznacza, że jeśli komputer użytkownika końcowego ma inną aplikację przy użyciu innej wersji formantu, nie może zakłócać działania tej aplikacji.  
   
-## <a name="referencing-native-assemblies"></a>Odwoływanie się do zestawów natywnych  
- Program Visual Studio obsługuje odwołania do natywnego języka Visual Basic 6.0 lub zestawów języka C++; odwołania te są nazywane odwołania natywne. Można sprawdzić, czy odwołanie jest natywny, upewniając się, że jego **typ pliku** właściwość jest ustawiona na **natywnych** lub **ActiveX**.  
+## <a name="referencing-native-assemblies"></a>Odwołujące się do zestawów natywnych  
+ Program Visual Studio obsługuje odwołania do natywnych Visual Basic C++ 6,0 lub zestawów; takie odwołania są nazywane odwołaniami macierzystymi. Można sprawdzić, czy odwołanie jest natywne, sprawdzając, czy właściwość **typu pliku** jest ustawiona na **natywny** lub **ActiveX**.  
   
- Aby dodać odwołanie natywne, użyj **Dodaj odwołanie** polecenia, a następnie przejdź do manifestu. Niektóre składniki umieść manifest wewnątrz pliku DLL. W takich przypadkach można po prostu wybierz bibliotekę DLL, sama i programu Visual Studio doda go jako odwołanie natywne jeśli wykryje, że składnik zawiera manifest wbudowany. Program Visual Studio zawierają również automatycznie ani plików zależnych zestawów, wymienione w manifeście, jeśli są one w tym samym folderze co składnik odwołania.  
+ Aby dodać odwołanie natywne, użyj polecenia **Dodaj odwołanie** , a następnie przejdź do manifestu. Niektóre składniki umieszczają manifest wewnątrz biblioteki DLL. W takim przypadku można po prostu wybrać bibliotekę DLL, a program Visual Studio doda ją jako odwołanie natywne, jeśli wykryje, że składnik zawiera osadzony manifest. Program Visual Studio będzie również automatycznie obejmował wszystkie zależne pliki lub zestawy wymienione w manifeście, jeśli znajdują się w tym samym folderze co składnik, do którego się odwołuje.  
   
- COM formant izolację sprawia, że można łatwo wdrażać składniki COM, które nie zostały jeszcze manifestów. Jednak jeśli składnik jest dostarczany z manifestu, można się odwołać manifest bezpośrednio. W rzeczywistości należy zawsze używać manifestu, dostarczone przez autora składnika, tam gdzie to możliwe, zamiast używania **izolowany** właściwości.  
+ Izolacja formantów COM ułatwia wdrażanie składników COM, które nie mają jeszcze manifestów. Jeśli jednak składnik jest dostarczany z manifestem, można odwoływać się bezpośrednio do manifestu. W rzeczywistości należy zawsze używać manifestu dostarczonego przez autora składnika, wszędzie tam, gdzie jest to możliwe, zamiast używać **izolowanej** właściwości.  
   
-## <a name="limitations-of-registration-free-com-component-deployment"></a>Ograniczenia dotyczące wdrożenia bez rejestracji składników COM  
- COM bez rejestrowania zalety wyczyść za pośrednictwem techniki wdrażania tradycyjnych. Istnieją pewne ograniczenia i ostrzeżenia, które należy również wskazać. Największe ograniczenie polega na tym, że działa tylko w Windows XP lub nowszym. Implementacja COM bez rejestrowania wymagało wprowadzenia zmian do sposobu ładowania składników w podstawowego systemu operacyjnego. Niestety nie ma żadnych warstwę obsługi niskiego poziomu dla rejestracji wolnego modelu COM.  
+## <a name="limitations-of-registration-free-com-component-deployment"></a>Ograniczenia dotyczące wdrożenia składnika COM bez rejestracji  
+ Model COM bez rejestracji zapewnia wyraźne korzyści w porównaniu z tradycyjnymi technikami wdrażania. Istnieje jednak kilka ograniczeń i ostrzeżenia, które również należy wymusić. Największe ograniczenie polega na tym, że działa tylko w systemie Windows XP lub nowszym. Implementacja COM bez rejestracji wymaga zmian w sposób, w jaki składniki są ładowane w podstawowym systemie operacyjnym. Niestety, nie ma warstwy wsparcia niskiego poziomu dla modelu COM bez rejestracji.  
   
- Nie każdy składnik jest odpowiednia kandydatem do rejestracji wolnego modelu COM. Składnik nie jest odpowiedni w przypadku spełnienia dowolnego z następujących czynności:  
+ Nie każdy składnik jest odpowiednim kandydatem dla modelu COM bez rejestracji. Składnik nie jest odpowiedni, jeśli którykolwiek z następujących warunków jest spełniony:  
   
-- Składnik to serwer spoza procesu. Plik EXE serwery są nieobsługiwane. obsługiwane są tylko bibliotek DLL.  
+- Składnik jest serwerem poza procesem. Serwery EXE nie są obsługiwane; Obsługiwane są tylko biblioteki DLL.  
   
-- Składnik jest częścią systemu operacyjnego lub jest składnikiem systemu, takich jak XML, Internet Explorer lub Microsoft Data Access Components (MDAC). Należy przestrzegać zasad redystrybucji autora składnika; Skontaktuj się z dostawcą.  
+- Składnik jest częścią systemu operacyjnego lub jest składnikiem systemowym, takim jak XML, Internet Explorer lub Microsoft Data Access Components (MDAC). Należy postępować zgodnie z zasadami redystrybucji autora składnika; Skontaktuj się z dostawcą.  
   
-- Składnik jest częścią aplikacji, takich jak Microsoft Office. Na przykład nie należy podejmować izolowania modelu obiektów programu Microsoft Excel. To jest częścią pakietu Office i można używać tylko na komputerze przy użyciu pełnej pakietu Office.  
+- Składnik jest częścią aplikacji, takiej jak Microsoft Office. Na przykład nie należy próbować izolować modelu obiektów programu Microsoft Excel. Jest to część pakietu Office i może być używana tylko na komputerze z zainstalowanym pełnym produktem pakietu Office.  
   
-- Składnik jest przeznaczony do użytku jako dodatek lub przystawki, na przykład dodatku pakietu Office lub kontrolki w przeglądarce sieci Web. Takie składniki zwykle wymagają od pewnego rodzaju rejestracji schemat zdefiniowany przez środowisko hostingu, która wykracza poza zakres manifestu, sam.  
+- Składnik jest przeznaczony do użycia jako dodatek lub przystawka, na przykład dodatek pakietu Office lub kontrolka w przeglądarce sieci Web. Takie składniki wymagają zwykle pewnego rodzaju schematu rejestracji zdefiniowanego przez środowisko hostingu wykraczające poza zakres samego manifestu.  
   
-- Składnik zarządza urządzeniem fizycznym lub wirtualnym systemu, na przykład sterownik urządzenia Bufor wydruku.  
+- Składnik zarządza urządzeniem fizycznym lub wirtualnym dla systemu, na przykład sterownika urządzenia dla buforu wydruku.  
   
-- Składnik jest Data Access redistributable. Aplikacje obsługujące dane wymagają oddzielnych dostępu do danych do dystrybucji przed uruchomieniem przez nich. Nie należy próbować izolowania składników, takich jak formant danych ADO firmy Microsoft, Microsoft OLE DB lub Microsoft Data Access Components (MDAC). Zamiast tego Jeśli aplikacja używa programu MDAC lub SQL Server Express, należy ustawić je jako warunki wstępne; zobacz [jak: Instalowanie wymagań wstępnych przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Składnik to pakiet redystrybucyjny dostępu do danych. Aplikacje danych zazwyczaj wymagają osobnego pakietu redystrybucyjnego dostępu do danych, aby można go było uruchomić. Nie należy podejmować próby izolowania składników, takich jak Microsoft ADO Data Control, Microsoft OLE DB lub Microsoft Data Access Components (MDAC). Zamiast tego, jeśli aplikacja używa programu MDAC lub SQL Server Express, należy ustawić je jako wymagania wstępne; Zobacz [jak: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
-  W niektórych przypadkach może być możliwe dla dewelopera składnika przeprojektować go dla rejestracji wolnego modelu COM. Jeśli nie jest to możliwe, można nadal tworzyć i publikować aplikacje, które zależą od nich za pośrednictwem schemat standardowy rejestracji, za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).  
+  W niektórych przypadkach może być możliwe, aby deweloper składnika mógł go przeprojektować pod kątem COM bez rejestracji. Jeśli nie jest to możliwe, można nadal tworzyć i publikować aplikacje, które są od nich zależne za pośrednictwem standardowego planu rejestracji przy użyciu programu inicjującego. Aby uzyskać więcej informacji, zobacz [Tworzenie pakietów programu inicjującego](../deployment/creating-bootstrapper-packages.md).  
   
-  Składnik COM może być tylko raz izolowane, każdej aplikacji. Na przykład nie można odizolować tego samego składnika modelu COM z dwóch różnych **biblioteki klas** projektów, które są częścią tej samej aplikacji. To spowoduje ostrzeżenia kompilacji, a aplikacja nie będzie można załadować w czasie wykonywania. Aby uniknąć tego problemu, firma Microsoft zaleca hermetyzację składników COM w bibliotece pojedynczą klasę.  
+  Składnik COM może być odizolowany tylko raz dla każdej aplikacji. Na przykład nie można izolować tego samego składnika COM z dwóch różnych projektów **biblioteki klas** , które są częścią tej samej aplikacji. Wykonanie tej czynności spowoduje ostrzeżenie kompilacji, a aplikacja nie będzie mogła zostać załadowana w czasie wykonywania. Aby uniknąć tego problemu, firma Microsoft zaleca Hermetyzowanie składników modelu COM w jednej bibliotece klas.  
   
-  Istnieje kilka scenariuszy, w których COM na komputerze dewelopera, wymagana jest rejestracja, mimo, że wdrożenie aplikacji nie wymaga rejestracji. `Isolated` Właściwość wymaga można zarejestrować składnika COM na komputerze dewelopera w celu automatycznego generowania manifestu podczas kompilacji. Nie ma żadnych możliwości przechwytywania rejestracji, które wywołują rejestracji automatycznej podczas kompilacji. Ponadto wszystkie klasy, które nie zostały jawnie zdefiniowany w bibliotece typów nie zostaną odzwierciedlone w manifeście. Podczas używania składnika modelu COM z istniejącego manifestu, takich jak odwołanie natywne, składnik nie może być konieczne można zarejestrować w czasie projektowania. Jednak rejestracja jest wymagana, jeśli składnik to formant ActiveX i mają zostać uwzględnione w **przybornika** i projektanta Windows Forms.  
+  Istnieje kilka scenariuszy, w których rejestracja COM jest wymagana na komputerze dewelopera, nawet jeśli wdrożenie aplikacji nie wymaga rejestracji. Właściwość `Isolated` wymaga zarejestrowania składnika COM na komputerze dewelopera, aby automatycznie wygenerować manifest podczas kompilacji. Nie ma możliwości przechwytywania rejestracji, które wywołują rejestrację automatyczną podczas kompilacji. Ponadto wszelkie klasy, które nie są jawnie zdefiniowane w bibliotece typów, nie zostaną odzwierciedlone w manifeście. W przypadku korzystania ze składnika COM z istniejącym manifestem, takim jak odwołanie natywne, składnik może nie być zarejestrowany w czasie projektowania. Jednak rejestracja jest wymagana, jeśli składnik jest formantem ActiveX i chcesz go umieścić w **przyborniku** i projektancie Windows Forms.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)
