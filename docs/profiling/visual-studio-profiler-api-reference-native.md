@@ -11,20 +11,21 @@ ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822823"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778027"
 ---
-# <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio interfejsy API profilera (native)
-Profilera Visual Studio interfejsy API umożliwiają programowo kontroli ilości zbieranych danych i wstaw znaczniki zarówno sygnatura czasowa, jak i profilu podczas profilowania. Aby korzystać z natywnych interfejsów API, obejmują *VSPerf.h* nagłówka pliku i Dodaj *VSPerf.lib* w projekcie.
+# <a name="visual-studio-profiler-api-reference-native"></a>Dokumentacja interfejsu API programu Visual Studio profiler (natywna)
+Interfejsy API programu Visual Studio profiler umożliwiają programowe kontrolowanie ilości zbieranych danych oraz Wstawianie znaczników sygnatur czasowych i profilów podczas profilowania. Aby korzystać z natywnych interfejsów API, należy dołączyć plik nagłówka *VSPerf. h* i dodać *VSPerf. lib* do projektu.
 
 > [!NOTE]
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="in-this-section"></a>W tej sekcji
 [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
@@ -48,4 +49,4 @@ Profilera Visual Studio interfejsy API umożliwiają programowo kontroli ilości
 ## <a name="see-also"></a>Zobacz także
 
 - [Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)
-- [Przewodnik: Za pomocą interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)
+- [Przewodnik: korzystanie z interfejsów API profilera](../profiling/walkthrough-using-profiler-apis.md)

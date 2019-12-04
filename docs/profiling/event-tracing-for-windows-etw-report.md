@@ -1,5 +1,5 @@
 ---
-title: Śledzenie zdarzeń systemu Windows (ETW) raport | Dokumentacja firmy Microsoft
+title: Raport śledzenia zdarzeń systemu Windows (ETW) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,32 +9,33 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447253"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779301"
 ---
-# <a name="event-tracing-for-windows-etw-report"></a>Raport o zdarzeniach śledzenie Windows (ETW)
-Raport śledzenie zdarzeń dla Windows (ETW) zawiera listę zdarzeń ETW, które zostały zapisane w sesji pomiaru wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools. Dane funkcji ETW są zbierane w pliku binarnym (. *etl*) pliku.
+# <a name="event-tracing-for-windows-etw-report"></a>Raport śledzenia zdarzeń systemu Windows (ETW)
+Raport śledzenie zdarzeń systemu Windows (ETW) zawiera listę zdarzeń ETW, które zostały zarejestrowane w sesji wydajności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania. Dane ETW są zbierane w postaci binarnej (. *ETL*).
 
 > [!NOTE]
-> Nie można wyświetlić raporty ETW w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu.
+> Nie można wyświetlać raportów ETW w interfejsie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-- Aby uzyskać informacje dotyczące zbierania zdarzeń systemu Windows przy użyciu narzędzi profilowania z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu, zobacz [jak: Zbieraj dane zdarzenia śledzenia dla Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
+- Aby uzyskać informacje dotyczące sposobu zbierania funkcji ETW przy użyciu narzędzia profilowania z interfejsu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], zobacz [jak: zbierać dane śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
 
-- Aby uzyskać informacje dotyczące zbierania danych ETW przy użyciu [VSPerfCmd](../profiling/vsperfcmd.md) narzędzi wiersza polecenia, zobacz [zdarzenia](../profiling/events-vsperfcmd.md).
+- Informacje o sposobie zbierania danych ETW przy użyciu narzędzi wiersza polecenia [VSPerfCmd](../profiling/vsperfcmd.md) można znaleźć w temacie [Events (zdarzenia](../profiling/events-vsperfcmd.md)).
 
-- Generowanie raportu ETW za pomocą **VSReport / Summary: ETW** polecenia. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).
+- Raport ETW jest generowany przy użyciu polecenia **VSReport/Summary: ETW** . Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Znacznik czasu:**|Umożliwia określenie, kiedy wystąpiło zdarzenie.|
+|**Znacznik czasu**|Identyfikuje czas wystąpienia zdarzenia.|
 |**Identyfikator procesu**|Identyfikuje proces, który wygenerował zdarzenie.|
-|**Identyfikator wątku**|Identyfikuje wątku, który wygenerował zdarzenie.|
-|**Opis**|Określa dostawcę zdarzeń.|
-|**Typ**|Określa typ zdarzenia.|
-|**Właściwości**|Właściwości zdarzenia. Każde wydarzenie jest parą rozdzielonych przecinkami, nazwa wartość, która jest ujęty w nawiasy kwadratowe.|
+|**Identyfikator wątku**|Identyfikuje wątek, który wygenerował zdarzenie.|
+|**Opis**|Identyfikuje dostawcę zdarzeń.|
+|**Wprowadź**|Identyfikuje typ zdarzenia.|
+|**Właściwości**|Właściwości zdarzenia. Każde zdarzenie jest rozdzielaną przecinkami parą par nazwa-wartość, która jest ujęta w nawiasy klamrowe.|

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wybieranie zdarzeń próbkowania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Wybieranie zdarzeń próbkowania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,51 +16,52 @@ ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dac636beeab5188c7958232d46cf3fe4a4b5f32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439504"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779054"
 ---
 # <a name="how-to-choose-sampling-events"></a>Instrukcje: Wybieranie zdarzeń próbkowania
-Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools zbiera dane dotyczące wydajności w odstępach czasu, który jest określony jako liczba cykli procesora, które są używane przez profilowany proces. Domyślna liczba cykli interwału jest 10 000 000, czyli około 0,01 sekund na 1 komputerze GH. Można zmienić liczbę cykli w interwale, i możesz zmienić zdarzenie próbkowania. Dostępne są następujące przykładowe zdarzenia:
+Domyślnie narzędzia profilowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zbiera dane dotyczące wydajności w interwale określonym jako liczba cykli procesora, które są używane w profilowanym procesie. Domyślna liczba cykli w interwale wynosi 10 000 000, czyli około 0,01 sekund na 1% GH. Można zmienić liczbę cykli w interwale i można zmienić przykładowe zdarzenie. Dostępne są następujące przykładowe zdarzenia:
 
-- Cykle zegara — w przypadku problemów z Procesora CPU.
+- Cykle zegara — w przypadku problemów związanych z PROCESORem.
 
-- Błędy strony — w przypadku problemów związanych z pamięcią.
+- Błędy stron — w przypadku problemów związanych z pamięcią.
 
-- Wywołania systemowe — w przypadku problemów I dotyczących wejścia/wyjścia.
+- Wywołania systemowe — w przypadku problemów związanych z we/wy.
 
-- Licznik wydajności - liczniki procesora CPU dla problemów z wydajnością niskiego poziomu.
+- Licznik wydajności — liczniki procesora CPU w przypadku problemów z wydajnością niskiego poziomu.
 
 > [!IMPORTANT]
-> Przypadku zbierania danych pamięci .NET (alokacje czasów istnienia obiektów i/lub) przy użyciu metody próbkowania zdarzeń próbkowania wszystkie określone przez użytkownika są ignorowane i alokacje odpowiedniej ilości pamięci i/lub zdarzenia odzyskiwania pamięci, które są używane do zbierania danych.
+> Jeśli zbierasz dane pamięci .NET (alokacje lub okresy istnienia obiektów lub oba) przy użyciu metody próbkowania, wszystkie zdarzenia próbkowania określone przez użytkownika są ignorowane, a odpowiednie alokacje pamięci lub zdarzenia wyrzucania elementów bezużytecznych są używane do zbierania danych.
 
-### <a name="to-select-a-sample-event"></a>Aby wybrać zdarzenie próbkowania
+### <a name="to-select-a-sample-event"></a>Aby wybrać przykładowe zdarzenie
 
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. W **stron właściwości**, kliknij przycisk **próbkowania** właściwości.
+2. Na **stronie właściwości**kliknij właściwości **próbkowania** .
 
-3. Z **zdarzenie próbkowania** listy rozwijanej wybierz zdarzenie próbkowania, którego chcesz użyć do profilu aplikacji.
+3. Z listy rozwijanej **przykład zdarzenia** wybierz przykładowe zdarzenie, którego chcesz użyć do profilowania aplikacji.
 
     > [!NOTE]
-    > **Dostępnych liczników wydajności** są włączone tylko wtedy, gdy wybierzesz **licznika wydajności** z **zdarzenie próbkowania** listy rozwijanej.
+    > **Dostępne liczniki wydajności** są włączane tylko w przypadku wybrania **licznika wydajności** z listy rozwijanej **przykład zdarzenia** .
 
-4. Jeśli wybierzesz **licznika wydajności**, Wybieranie określonego licznika Procesora z **dostępnych liczników wydajności** kontrolki widoku drzewa.
+4. W przypadku wybrania **licznika wydajności**wybierz określony licznik procesora w obszarze dostępne kontrolki widoku drzewa **liczników wydajności** .
 
-    - Liczniki **zdarzenia przenośne** węzła są dostępne dla wszystkich typów procesorów.
+    - Liczniki w węźle **zdarzenia przenośne** są dostępne na wszystkich typach procesorów.
 
-    - Liczniki **zdarzenia platformy** węzeł specyficznych dla procesora na bieżącym komputerze i mogą nie być dostępne dla innych typów procesorów.
+    - Liczniki w węźle **zdarzenia platformy** są specyficzne dla procesora na bieżącym komputerze i mogą być niedostępne w przypadku innych typów procesorów.
 
-5. Po wybraniu zdarzenie próbkowania, domyślna wartość interwału próbkowania jest wyświetlana w **interwał próbkowania** pola tekstowego. Jeśli to konieczne, można wprowadzić wartość, która ma w polu tekstowym.
+5. Po wybraniu przykładowego zdarzenia w polu tekstowym **Interwał próbkowania** zostanie wyświetlona domyślna wartość interwału próbkowania. W razie potrzeby możesz wprowadzić wartość w polu tekstowym.
 
 ## <a name="see-also"></a>Zobacz także
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-- [Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+- [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
 - [Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)
-- [Informacje z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
-- [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [Omówienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
+- [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

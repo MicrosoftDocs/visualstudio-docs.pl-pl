@@ -1,5 +1,5 @@
 ---
-title: 'DA0002: Brakuje VSPerfCorProf.dll | Dokumentacja firmy Microsoft'
+title: 'DA0002: Brak pliku VSPerfCorProf. dll brakuje | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,30 +11,31 @@ ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aa263f6ceab515627fd33070517e3393aeec419d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f768a35e7c50ec55867ae49901718063ca39bd0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936736"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777754"
 ---
-# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: Brak biblioteki VSPerfCorProf.dll
+# <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: brakuje VSPerfCorProf.dll
 
 |||
 |-|-|
-|Identyfikator reguły|DA0002|
+|Identyfikator zasady|DA0002|
 |Kategoria|Użycie narzędzia profilowania|
-|Metod profilowania|Profilowanie przy użyciu narzędzia wiersza polecenia narzędzia VSPerfCmd i VSPerfASPNETCmd|
-|Komunikat|Wygląda na to, że plik został zebrany bez odpowiedniego ustawienia zmiennych środowiskowych poleceniem *VSPerfCLREnv.cmd*. Symbole dla zarządzanych danych binarnych mogą nie być rozpoznawane.|
-|Typ reguły|Informacje|
+|Metody profilowania|Profilowanie przy użyciu narzędzi wiersza polecenia VSPerfCmd i VSPerfASPNETCmd|
+|Komunikat|Wydaje się, że plik został zebrany bez prawidłowego ustawienia zmiennych środowiskowych za pomocą *VSPerfCLREnv. cmd*. Symbole dla zarządzanych plików binarnych mogą nie być rozpoznawane.|
+|Typ reguły|Informacje programu|
 
 ## <a name="cause"></a>Przyczyna
- Program profilujący nie może odnaleźć *VSPerfCorProf.dll* podczas uruchomienia profilowania. To ostrzeżenie występuje, gdy są używane narzędzia wiersza polecenia do zbierania danych profilera, bez używania *VSPerfCLREnv.cmd* narzędzia, aby zainicjować zmienne środowiskowe wymagane. Ostrzeżenie można również uruchamiają się, jeśli inny profiler jest uruchomiona, gdy start Profiling Tools.
+ Profiler nie mógł znaleźć *Brak pliku VSPerfCorProf. dll* podczas przebiegu profilowania. To ostrzeżenie występuje, gdy narzędzia wiersza polecenia dla kolekcji danych profilera są używane bez użycia narzędzia *VSPerfCLREnv. cmd* w celu zainicjowania niezbędnych zmiennych środowiskowych. Ostrzeżenie może również być wyzwalane, jeśli inny Profiler jest uruchomiony po rozpoczęciu narzędzia profilowania.
 
 ## <a name="rule-description"></a>Opis reguły
- Przed uruchomienie profilowania profiler można rozpoznać symboli w plikach binarnych w .NET Framework, należy ustawić określonych zmiennych środowiskowych. To ostrzeżenie wskazuje, żeby *VSPerfCLREnv.cmd* narzędzie nie zostało uruchomione, zanim został zebrany danych profilowania. Symbole dla zarządzanych danych binarnych nie może rozpoznać. Aby uzyskać więcej informacji o korzystaniu z narzędzi profilowania z wiersza polecenia, zobacz [profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ Określone zmienne środowiskowe muszą zostać ustawione przed uruchomieniem profilowania dla profilera w celu rozpoznania symboli w plikach binarnych .NET Framework. To ostrzeżenie sugeruje, że narzędzie *VSPerfCLREnv. cmd* nie zostało uruchomione przed zebraniem danych profilowania. Symbole dla zarządzanych plików binarnych mogą nie być rozpoznawane. Aby uzyskać więcej informacji na temat używania narzędzia profilowania z wiersza polecenia, zobacz [profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Jeśli profilowany zarządzanych aplikacji za pomocą narzędzia wiersza polecenia w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools, uruchom [VSPerfCLREnv](../profiling/vsperfclrenv.md) narzędzie wiersza polecenia, przed rozpoczęciem zbierania danych.
+ Podczas profilowania aplikacji zarządzanych przy użyciu narzędzi wiersza polecenia w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania Uruchom narzędzie wiersza polecenia [VSPerfCLREnv](../profiling/vsperfclrenv.md) przed rozpoczęciem zbierania danych.

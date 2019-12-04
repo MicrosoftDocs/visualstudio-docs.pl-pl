@@ -1,110 +1,111 @@
 ---
-title: 'Profiler wiersz poleceń: Instrumentacja statycznej aplikacji ASP.NET, pobieranie danych o chronometrażu'
+title: 'Wiersz polecenia profilera: ASP.NET statycznej aplikacji do instrumentacji, Pobierz dane chronometrażu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9e66eedf0de32e0af6f387a755b5e439a2b2e5e1
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 7d743dd854bd11449161c47cc896d0735849e1dd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032986"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778859"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Instrukcje: Instrument statycznie skompilowanej aplikacji sieci web ASP.NET i zbieranie szczegółowych danych o chronometrażu przy użyciu profilera przy użyciu wiersza polecenia
-W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji wstępnie skompilowanych [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] składników sieci web lub witryny sieci web i zbieranie szczegółowych danych o chronometrażu.
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Instrukcje: Instrumentacja statycznie skompilowanej aplikacji sieci Web ASP.NET i zbieranie szczegółowych danych o chronometrażu za pomocą profilera przy użyciu wiersza polecenia
+W tym artykule opisano, jak używać narzędzi wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania do Instrumentacji wstępnie skompilowanego składnika sieci Web programu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] lub witryny sieci Web i zbierania szczegółowych danych o chronometrażu.
 
 > [!NOTE]
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.
 >
-> Dodawanie danych interakcji do profilowania uruchomi wymaga określonych procedur z wiersza polecenia narzędzia profilowania. Zobacz [zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> Dodawanie danych interakcji między warstwami do uruchomienia profilowania wymaga określonych procedur z narzędzia profilowania wiersza polecenia. Zobacz [zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
- Aby zebrać szczegółowe dane czasowe z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] składnika sieci Web przy użyciu metody instrumentacji, należy użyć [VSInstr.exe](../profiling/vsinstr.md) narzędzie, aby wygenerować instrumentowaną wersję składnika. Na komputerze, który obsługuje składnik należy zamienić nieinstrumentowaną wersję składnika na wersję instrumentowaną. Następnie użyj [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzie, aby zainicjować zmienne środowiskowe globalnego profilowania i ponownie uruchom komputer-host. Następnie uruchamiasz profiler.
+ Aby zebrać szczegółowe dane o chronometrażu ze składnika sieci Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] przy użyciu metody instrumentacji, należy użyć narzędzia [VSInstr. exe](../profiling/vsinstr.md) do wygenerowania Instrumentacji wersji składnika. Na komputerze, który obsługuje składnik, należy zamienić nieinstrumentację wersji składnika na wersję z instrumentacją. Następnie użyj narzędzia [VSPerfCLREnv. cmd](../profiling/vsperfclrenv.md) , aby zainicjować globalne zmienne środowiskowe profilowania, i uruchom ponownie komputer hosta. Następnie uruchamiasz Profiler.
 
- Po wykonaniu instrumentowanego składnika, dane chronometrażu są automatycznie zbierane do pliku danych. Można wstrzymywać i wznawiać zbieranie danych podczas sesji profilowania.
+ Gdy składnik Instrumentacji jest wykonywany, dane chronometrażu są automatycznie zbierane do pliku danych. Podczas sesji profilowania można wstrzymywać i wznawiać zbieranie danych.
 
- Aby zakończyć sesję profilowania, Zamknij [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] proces roboczy obsługujący składnik i następnie jawnie Zamknij profiler. W większości przypadków zaleca się wyczyszczenie zmiennych środowiskowych profilowania na końcu sesji.
+ Aby zakończyć sesję profilowania, Zamknij proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], który hostuje składnik, a następnie jawnie wyłącz Profiler. W większości przypadków zaleca się wyczyszczenie zmiennych środowiskowych profilowania na końcu sesji.
 
-## <a name="start-to-profile"></a>Rozpocznij profilu
+## <a name="start-to-profile"></a>Rozpocznij profilowanie
 
-#### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>Aby instrumentować składnik sieci web ASP.NET i uruchomić profilowanie
+#### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>Aby instrumentować składnik sieci Web ASP.NET i rozpocząć profilowanie
 
 1. Otwórz okno wiersza polecenia.
 
-2. Użyj **VSInstr** narzędzie do generowania instrumentowanej wersji aplikacji docelowej. Jeśli to konieczne, Zastąp pliki binarne aplikacji na komputerze hosta ASP.NET instrumentowanymi plikami binarnymi.
+2. Użyj narzędzia **VSInstr** do wygenerowania Instrumentacji wersji aplikacji docelowej. W razie potrzeby Zastąp pliki binarne aplikacji na komputerze-hoście ASP.NET przy użyciu plików binarnych instrumentacji.
 
-3. Zainicjuj profilowanie zmiennych środowiskowych .NET. W oknie wiersza polecenia wpisz:
+3. Zainicjuj zmienne środowiskowe profilowania platformy .NET. W oknie wiersza polecenia wpisz:
 
-    **VSPerfClrEnv /globaltraceon**
+    **VSPerfClrEnv/globaltraceon**
 
 4. Uruchom ponownie komputer.
 
-5. Otwórz okno wiersza polecenia. Jeśli to konieczne, Ustaw ścieżkę narzędzi profilera.
+5. Otwórz okno wiersza polecenia. W razie potrzeby Ustaw ścieżkę narzędzi profilera.
 
-6. Uruchom program profiler. Wpisz:
+6. Uruchom Profiler. Wpisz:
 
-    **/ OUTPUT polecenia VSPerfCmd:** `OutputFile` [`Options`]
+    **VSPerfCmd/Start: Trace/Output:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md) **: śledzenia** opcja inicjuje profiler.
+   - Opcja [/Start](../profiling/start.md) **: Trace** inicjuje profiler.
 
-   - [/Output](../profiling/output.md) **:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
+   - Opcja [/Output](../profiling/output.md) **:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` określa nazwę i lokalizację pliku danych profilowania (. vsp).
 
-     Można użyć dowolnego z następujących opcji z **polecenia** opcji.
+     Można użyć dowolnej z następujących opcji z opcją **/Start: Trace** .
 
    > [!NOTE]
-   > **/User** i **/crosssession** opcje są zazwyczaj wymagane dla aplikacji ASP.NET.
+   > Opcje **/User** i **/CrossSession** są zwykle wymagane dla aplikacji ASP.NET.
 
    | Opcja | Opis |
    | - | - |
-   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem procesu roboczego ASP.NET. Ta opcja jest wymagana, jeśli proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w **nazwa_użytkownika** kolumny na **procesy** kartę w Menedżerze zadań Windows. |
-   | [/crosssession](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach logowania. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji, na **procesy** kartę w Menedżerze zadań Windows. **Skróconej/CS** może być określona jako skrót **/crosssession**. |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
-   | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
-   | [/globaloff](../profiling/globalon-and-globaloff.md) | Aby uruchomić profiler z kolekcją danych jest wstrzymany, należy dodać **/globaloff** opcję **/start** wiersza polecenia. Użyj **globalon** Aby wznowić profilowanie. |
+   | [/User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem procesu roboczego ASP.NET. Ta opcja jest wymagana, jeśli proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie **Nazwa użytkownika** na karcie **procesy** w Menedżerze zadań systemu Windows. |
+   | [/CrossSession](../profiling/crosssession.md) | Umożliwia profilowanie procesów w innych sesjach logowania. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji na karcie **procesy** w Menedżerze zadań systemu Windows. **/CS** można określić jako skrót dla **/CrossSession**. |
+   | [/WinCounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania. |
+   | [/AutoMark](../profiling/automark.md) **:** `Interval` | Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500 ms. |
+   | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *ETL*). |
+   | [/GlobalOff](../profiling/globalon-and-globaloff.md) | Aby uruchomić profiler z wstrzymanym zbieraniem danych, Dodaj opcję **/GlobalOff** do wiersza polecenia **/Start** . Aby wznowić profilowanie, użyj **/GlobalOn** . |
 
-7. Otwórz witrynę sieci Web, który zawiera składnik instrumentowany.
+7. Otwórz witrynę sieci Web zawierającą składnik objęty Instrumentacją.
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
- Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
+ Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą opcji *VSPerfCmd. exe* . Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takich jak uruchamianie lub zamykanie aplikacji.
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
-- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Poniższe pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w osobnym wierszu polecenia. Zbieranie danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje ( **/globaloff**) zbieranie danych dla wszystkich procesów.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/processon**) lub zatrzymuje ( **/processoff**) zbieranie danych dla procesu określonego przez identyfikator procesu (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia ( **/threadon**) lub zatrzymuje ( **/threadoff**) zbieranie danych dla wątku określonego przez identyfikator wątku (`TID`).|
+    |[/GlobalOn/GlobalOff](../profiling/globalon-and-globaloff.md)|Uruchamia ( **/GlobalOn**) lub przerywa ( **/GlobalOff**) zbieranie danych dla wszystkich procesów.|
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/ProcessOn**) lub zatrzymywanie ( **/ProcessOff**) zbieranie danych dla procesu określonego przez identyfikator procesu (`PID`).|
+    |[/ThreadOn](../profiling/threadon-and-threadoff.md) **:** `TID` [/ThreadOff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia ( **/ThreadOn**) lub kończy ( **/ThreadOff**) zbieranie danych dla wątku określonego przez identyfikator wątku (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
- Aby zakończyć sesję profilowania, Zamknij [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, a następnie użyj Internet Information Services (IIS) **IISReset** polecenie, aby zamknąć [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego. Wywołaj **VSPerfCmd** [/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.
+## <a name="end-the-profiling-session"></a>Zakończ sesję profilowania
+ Aby zakończyć sesję profilowania, zamknij aplikację sieci Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], a następnie użyj polecenia **IISReset** Internet Information Services (IIS), aby zamknąć proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Wywołaj opcję **VSPerfCmd** [/Shutdown](../profiling/shutdown.md) , aby wyłączyć profiler i zamknąć plik danych profilowania.
 
- **VSPerfClrEnv /globaloff** polecenie usuwa zmienne środowiskowe profilowania. Należy ponownie uruchomić komputer, aby nowe ustawienia środowiska, które mają być stosowane.
+ Polecenie **VSPerfCLREnv/GlobalOff** czyści zmienne środowiskowe profilowania. Aby zastosować nowe ustawienia środowiska, należy ponownie uruchomić komputer.
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1. Zamknij [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web.
+1. Zamknij aplikację sieci Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-2. Zamknij [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] procesu roboczego. Wpisz:
+2. Zamknij proces roboczy [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Wpisz:
 
-    **Polecenie IISReset/Stop**
+    **IISReset/Stop**
 
 3. Zamknij program profilujący. Wpisz:
 
-    **Narzędzia VSPerfCmd/shutdown**
+    **VSPerfCmd/shutdown**
 
 4. (Opcjonalnie). Wyczyść zmienne środowiskowe profilowania. Wpisz:
 
-    **Narzędzia VSPerfCmd /globaloff**
+    **VSPerfCmd/globaloff**
 
 5. Uruchom ponownie komputer.
 
 ## <a name="see-also"></a>Zobacz także
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)

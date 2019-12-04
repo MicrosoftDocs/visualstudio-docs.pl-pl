@@ -1,26 +1,27 @@
 ---
-title: GC (VSPerfCmd) | Dokumentacja firmy Microsoft
+title: GC (VSPerfCmd) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b2e269ec292aaf37b8d0c707fa27ff8268a1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969711"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776982"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
-**GC** opcja umożliwia zbieranie danych pamięci .NET Framework alokacji i obiekt okresu istnienia. **GC** opcji należy używać tylko z metoda profilowania próbkowanie i tylko **Uruchom** opcji.
+Opcja **GC** umożliwia zbieranie danych .NET Framework alokacji pamięci i okresu istnienia obiektu. Opcji **GC** można używać tylko z metodą profilowania próbkowania i tylko z opcją **uruchomienia** .
 
- Kiedy używasz **GC** opcji polecenia VSPerfClrEnv **/sampleon** polecenia nie jest wymagana.
+ W przypadku korzystania z opcji **GC** polecenie VSPerfCLREnv **/sampleon** nie jest wymagane.
 
- Jeśli nie określono żadnych parametrów lub **alokacji** parametr jest określony, są zbierane tylko .NET Framework dane alokacji pamięci. Jeśli **okres istnienia** parametr jest określony, alokacji pamięci .NET Framework i .NET Framework obiektu zbieranych danych o okresie istnienia.
+ Jeśli nie określono parametrów lub jeśli określono parametr **alokacji** , zbierane są tylko .NET Framework dane alokacji pamięci. Jeśli określono parametr **okresu istnienia** , zostaną zebrane dane dotyczące alokacji pamięci .NET Framework i .NET Framework okresu istnienia obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,17 +30,17 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- **Alokacja** domyślne. Zbiera dane alokacji pamięci .NET Framework.
+ **Alokacja** Wartooć. Zbiera .NET Framework dane alokacji pamięci.
 
- **Okres istnienia** zbiera dane alokacji pamięci .NET Framework i .NET Framework danych o okresie istnienia obiektu.
+ **Okres istnienia** Zbiera .NET Framework dane alokacji pamięci i .NET Framework dane okresu istnienia obiektu.
 
 ## <a name="required-options"></a>Wymagane opcje
- **GC** opcja może być używana tylko z **Uruchom** opcji.
+ Opcji **GC** można używać tylko z opcją **uruchamiania** .
 
- **Uruchom:** `AppName` Uruchamia określoną aplikację i rozpoczyna się profilowanie przy użyciu metody pobierania próbek.
+ **Uruchom:** `AppName` uruchamia określoną aplikację i rozpoczyna profilowanie przy użyciu metody próbkowania.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład spowoduje uruchomienie aplikacji i zbiera dane alokacji pamięci .NET Framework.
+ Poniższy przykład uruchamia aplikację i zbiera .NET Framework dane alokacji pamięci.
 
 ```cmd
 VSPerfCmd.exe /Launch:TestApp.exe /gc
@@ -47,6 +48,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /gc
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

@@ -6,19 +6,20 @@ ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8087f620f457f1e88ee6dc9ffff90f5c8747e50d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552817"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779457"
 ---
 # <a name="crosssession"></a>CrossSession
-*VSPerfCmd.exe* **CrossSession** opcja umożliwia profiler do zbierania danych z dowolnej sesji konsoli. **CrossSession** opcja musi być używany z **Start** opcji.
+*VSPerfCmd. exe* **CrossSession** umożliwia profilerowi zbieranie danych z dowolnych sesji konsoli. Opcja **CrossSession** musi być używana z opcją **Start** .
 
- Można używać skrótu **CS** zamiast **CrossSession**.
+ Można użyć skrótu **CS** zamiast **CrossSession**.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,16 +31,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  Brak
 
 ## <a name="valid-options"></a>Prawidłowe opcje
- Aby włączyć profilowanie w innej sesji **CrossSession** opcja musi być określona za pomocą **Start** opcji. **CrossSession** musi być także określona we wszystkich kolejnych **Dołącz narzędzia VSPerfCmd** i **Odłącz** poleceń.
+ Aby włączyć profilowanie w innej sesji, należy określić opcję **CrossSession** z opcją **Start** . **CrossSession** należy również określić we wszystkich kolejnych poleceniach **dołączania** i **odłączania** VSPerfCmd.
 
- **Początek:** `Method` **Start** opcja inicjuje profiler do określonej metody profilowania.
+ **Rozpoczęcie:** `Method` opcja **Start** inicjuje profiler do określonej metody profilowania.
 
- **Dołącz:** _Identyfikator PID_[**,**_PID_] Begins profilowania określonych procesów.
+ **Dołącz:** _Identyfikator PID_[ **,** _PID_] rozpoczyna profilowanie określonych procesów.
 
- **Odłącz**[**:**_PID_[,_PID_]] zatrzymuje profilowanie określonych procesów.
+ **Odłączenie**[ **:** _PID_[,_PID_]] powoduje zatrzymanie profilowania określonych procesów.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie **CrossSession** opcja służy do dołączania do aplikacji, która została uruchomiona w innej sesji konsoli.
+ W tym przykładzie opcja **CrossSession** jest używana w celu dołączenia do aplikacji, która została uruchomiona w innej sesji konsoli.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession
@@ -48,6 +49,6 @@ VSPerfCmd.exe /Attach:12345 /CS
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

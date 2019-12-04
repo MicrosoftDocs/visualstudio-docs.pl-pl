@@ -1,5 +1,5 @@
 ---
-title: Widok Kontencji zasobów — dane rywalizacji o zasoby | Dokumentacja firmy Microsoft
+title: Widok rywalizacji o zasoby — dane rywalizacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,50 +10,51 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797912"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778339"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Widok rywalizacji o zasoby — dane rywalizacji
-Widok rywalizacji o zasoby zawiera dane kontencji zasobów, które były źródłem zdarzeń rywalizacji o zasoby. Zdarzenia rywalizacji występuje, gdy funkcja w wątku musieli czekać na dostęp do zasobu, ponieważ funkcja w innym wątku uzyskał wyłączny dostęp do zasobu. Każdy zasób jest węzeł główny drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały zdarzenia rywalizacji.
+Widok rywalizacji o zasoby zawiera listę danych dotyczących zawartości dla zasobów, które były źródłem zdarzeń rywalizacji. Zdarzenie rywalizacji występuje, gdy funkcja w wątku jest zmuszona do oczekiwania na dostęp do zasobu, ponieważ funkcja w innym wątku uzyskała wyłączny dostęp do zasobu. Każdy zasób jest węzłem głównym drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały zdarzenia rywalizacji.
 
 ## <a name="data-values"></a>Wartości danych
 
 ### <a name="resource-values"></a>Wartości zasobów
- Dane w wierszu zasobów wyświetla całkowity czas, który został zablokowany dostęp do zasobu w danych profilowania i łączna liczba zdarzeń rywalizacji o zasoby, które wystąpiły z powodu konfliktu dostępu do tego zasobu. Wartości włączne i wyłączne zasobu są zawsze takie same.
+ Dane w wierszu zasobu przedstawiają łączny czas dostępu do zasobu w danych profilowania oraz łączną liczbę zdarzeń rywalizacji, które wystąpiły z powodu konfliktu dostępu do tego zasobu. Wartości włączne i wyłączne dla zasobu są zawsze takie same.
 
 ### <a name="function-values"></a>Wartości funkcji
- Wartości funkcji są oparte na wystąpieniach funkcji, które wystąpiły w ścieżce wykonywania reprezentowany w drzewie wywołań.
+ Wartości funkcji są oparte na wystąpieniach funkcji, które wystąpiły w ścieżce wykonywania reprezentowanej w drzewie wywołań.
 
-- Wyłączne wartości są oparte na zdarzeniach, które wystąpiły podczas wykonywania instrukcji funkcji w jego treści funkcji. Zdarzenia, które wystąpiły w funkcjach, które zostały wywołane przez funkcję nie są uwzględnione w wartości wyłączności.
+- Wartości wyłączne opierają się na zdarzeniach, które wystąpiły, gdy funkcja wykonywała instrukcje w jego treści funkcji. Zdarzenia, które wystąpiły w funkcjach, które zostały wywołane przez funkcję, nie są uwzględniane w wartościach wyłącznych.
 
-- Wartości włączne opierają się na zdarzenia, które wystąpiły podczas wykonywania funkcji i funkcji wywoływanych przez funkcję.
+- Wartości włączne bazują na zdarzeniach, które wystąpiły podczas wykonywania funkcji lub funkcji wywołanej przez funkcję.
 
 ### <a name="percentage-values"></a>Wartości procentowe
- Wartości procentowe są oparte na całkowita liczba zdarzeń w czasie lub rywalizacji o zasoby w danych profilowania. Jeśli zastosowano filtr raportu lub widoku uruchomienia profilowania, tylko czas blokowania i rywalizacji w odfiltrowane dane są używane jako wartość całkowita.
+ Wartości procentowe są zależne od łącznego czasu lub zdarzeń rywalizacji w danych profilowania. Jeśli raport lub widok przebiegu profilowania jest filtrowany, jako łączną wartość są używane tylko zablokowane czas i rywalizacje w odniesieniu do danych.
 
-## <a name="navigating-the-resource-allocation-view"></a>Nawigowanie w widoku alokacji zasobów
+## <a name="navigating-the-resource-allocation-view"></a>Nawigowanie w widoku alokacja zasobów
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|Nazwa zasobu lub funkcji.|
-|**Wyłączny czas blokowania**|— Dla zasobu całkowity czas tego dostępu do zasobu został zablokowany i spowodowane wątku oczekiwania.<br />— Dla funkcji, czas, który te wystąpienia funkcji był zablokowany dostęp do zasobu nadrzędnego, podczas wykonywania kodu funkcji w treści funkcji. Czas blokowania w funkcjach, które zostały wywołane przez funkcję nie jest włączony.|
-|**% Własnego czasu blokowania**|— Dla zasobu, procent wszystkich czas blokowania w danych profilowania, która została zablokowana czas tego zasobu<br />— Dla funkcji, wartość procentowa cały czas blokowania w danych profilowania, która była wyłączny czas blokowania tych wystąpień funkcji.|
-|**Rywalizacje wyłączne**|— Dla zasobu całkowita liczba prób uzyskania dostępu do zasobu został zablokowany i spowodowała wątku oczekiwania.<br />— Dla funkcji, ile razy tych wystąpień funkcji był zablokowany dostęp do zasobu nadrzędnego, podczas wykonywania kodu funkcji w treści funkcji. Nie uwzględniono zdarzeń blokujących w funkcjach, które zostały wywołane przez funkcję.|
-|**% Rywalizacji wyłącznych**|— Dla zasobu, wartość procentowa wszystkie zdarzenia rywalizacji o zasoby w danych profilowania, które były zdarzenia rywalizacji w celu uzyskania dostępu do tego zasobu.<br />— Dla funkcji, wartość procentowa wszystkie zdarzenia rywalizacji o zasoby w danych profilowania, które były zdarzenia rywalizacji wyłącznych funkcji tych wystąpień zasobu nadrzędnego.|
-|**Całkowity czas blokowania**|— Dla zasobu całkowity czas tego dostępu do zasobu został zablokowany i spowodowane wątku oczekiwania.<br />— Dla funkcji czas, który te wystąpienia, funkcja lub wszystkie funkcje wywoływane przez wystąpienia zostały zablokowane podczas wykonywania kodu funkcji w treści funkcji, dostęp do zasobu nadrzędnego.|
-|**% Całkowitego czasu blokowania**|— Dla zasobu, procent wszystkich czas blokowania w danych profilowania, która została zablokowana czas tego zasobu<br />— W przypadku funkcji procent wszystkich czas blokowania w profilowania, był całkowity czas blokowania tych wystąpień funkcji.|
-|**Rywalizacje włączne**|— Dla zasobu całkowita liczba prób uzyskania dostępu do zasobu został zablokowany i spowodowała wątku oczekiwania.<br />— Dla funkcji wartość procentowa wszystkie zdarzenia rywalizacji o zasoby w profilowania, były zdarzenia rywalizacji (włącznie) funkcji tych wystąpień zasobu nadrzędnego.|
-|**% Rywalizacji włącznych**|— Dla zasobu wszystkie zdarzenia rywalizacji o zasoby w profilowania, wartość procentowa były zdarzenia rywalizacji w celu uzyskania dostępu do tego zasobu.<br />— Dla funkcji, ile razy tych wystąpień funkcji był zablokowany dostęp do zasobu nadrzędnego, podczas wykonywania kodu funkcji w treści funkcji. Nie uwzględniono zdarzeń blokujących w funkcjach, które zostały wywołane przez funkcję.|
-|**Poziom**|Długość tej funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|
+|**Wyłączny czas blokowania**|-Dla zasobu łączny czas, w którym dostęp do zasobu został zablokowany i spowodował oczekiwanie wątku.<br />-Dla funkcji — czas, w którym te wystąpienia funkcji były blokowane dostęp do zasobu nadrzędnego, gdy funkcja wykonywała kod w treści funkcji. Zablokowany czas w funkcjach, które zostały wywołane przez funkcję, nie jest uwzględniany.|
+|**% Wyłącznego czasu blokowania**|-Dla zasobu procent całego zablokowanego czasu w danych profilowania, który miał zablokowany czas tego zasobu<br />-Dla funkcji, procent całego zablokowanego czasu w danych profilowania, który miał wyłączny czas blokowania tych wystąpień funkcji.|
+|**Rywalizacje wyłączne**|-Dla zasobu całkowita liczba przypadków, w których dostęp do zasobu został zablokowany i spowodował oczekiwanie wątku.<br />-Dla funkcji, liczba przypadków, w których te wystąpienia funkcji były blokowane dostęp do zasobu nadrzędnego, gdy funkcja wykonywała kod w treści funkcji. Blokowanie zdarzeń w funkcjach, które zostały wywołane przez funkcję, nie są uwzględniane.|
+|**Zawartość wyłącznych%**|-Dla zasobu procent wszystkich zdarzeń rywalizacji w danych profilowania, które były zdarzeniami rywalizacji o dostęp do tego zasobu.<br />-Dla funkcji, procent wszystkich zdarzeń rywalizacji w danych profilowania, które były zdarzeniami wyłącznych rywalizacji o te wystąpienia funkcji dla zasobu nadrzędnego.|
+|**Włączny czas blokowania**|-Dla zasobu łączny czas, w którym dostęp do zasobu został zablokowany i spowodował oczekiwanie wątku.<br />-Dla funkcji, czas, przez jaki wystąpienia funkcji lub wszelkich funkcji wywoływanych przez wystąpienia, miały zablokowany dostęp do zasobu nadrzędnego, gdy funkcja wykonywała kod w treści funkcji.|
+|**% Włącznego czasu blokowania**|-Dla zasobu procent całego zablokowanego czasu w danych profilowania, który miał zablokowany czas tego zasobu<br />-Dla funkcji — wartość procentowa całego zablokowanego czasu w przebiegu profilowania, która została włącznie z zablokowanym czasem blokowania tych wystąpień funkcji.|
+|**Rywalizacje włączne**|-Dla zasobu całkowita liczba przypadków, w których dostęp do zasobu został zablokowany i spowodował oczekiwanie wątku.<br />-Dla funkcji, procent wszystkich zdarzeń rywalizacji w przebiegu profilowania, które były włącznie zdarzenia rywalizacji o te wystąpienia funkcji dla zasobu nadrzędnego.|
+|**% Rywalizacji włącznych**|-Dla zasobu procent wszystkich zdarzeń rywalizacji w przebiegu profilowania, który miał zdarzenia rywalizacji o dostęp do tego zasobu.<br />-Dla funkcji, liczba przypadków, w których te wystąpienia funkcji były blokowane dostęp do zasobu nadrzędnego, gdy funkcja wykonywała kod w treści funkcji. Blokowanie zdarzeń w funkcjach, które zostały wywołane przez funkcję, nie są uwzględniane.|
+|**Poziomie**|Głębokość tej funkcji w drzewie wywołań. Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
-|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|
-|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|
-|**Identyfikator procesu**|Identyfikator procesu (PID) procesu, w którym wykonywania funkcji.|
+|**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|
+|**Identyfikator procesu**|Identyfikator procesu (PID) procesu, w którym uruchomiono funkcję.|
 |**Nazwa procesu**|Nazwa procesu.|
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|

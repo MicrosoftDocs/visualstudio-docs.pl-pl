@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636556"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777949"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji node. js i reagowanie w programie Visual Studio
 
@@ -66,15 +66,15 @@ Pakiet WebPack służy do łączenia plików JavaScript, dzięki czemu mogą by�
     Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **środowiska Node. js** , a następnie wybierz polecenie **Modyfikuj**.
 
-    ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
+    ![Obciążenie środowiska Node. js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
+* Musisz mieć zainstalowane środowisko uruchomieniowe Node. js.
 
     Ten samouczek został przetestowany przy użyciu wersji 10.16.0.
 
-    Jeśli nie jest ona zainstalowana, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
+    Jeśli go nie zainstalowano, Zainstaluj wersję LTS z witryny sieci Web [Node. js](https://nodejs.org/en/download/) . Ogólnie rzecz biorąc, program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node. js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Właściwości**).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
@@ -88,7 +88,7 @@ Najpierw utwórz projekt aplikacji sieci Web w języku Node. js.
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node. js**, a następnie wybierz **pustą aplikację sieci Web Node. js** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **pustą aplikację sieci Web Node. js**, wpisz nazwę **NodejsWebAppBlank**, a następnie wybierz **przycisk OK**.
+    Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **pustą aplikację sieci Web Node. js**, wpisz nazwę **NodejsWebAppBlank**, a następnie wybierz **przycisk OK**.
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **pustej aplikacji sieci Web Node. js** , musisz dodać obciążenie **programowania Node. js** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
@@ -98,7 +98,7 @@ Najpierw utwórz projekt aplikacji sieci Web w języku Node. js.
 
     (1) wyróżnione **czcionką pogrubioną** jest projektem, przy użyciu nazwy podanych w oknie dialogowym **Nowy projekt** . W systemie plików ten projekt jest reprezentowany przez plik *. njsproj* w folderze projektu. Aby ustawić właściwości i zmienne środowiskowe skojarzone z projektem, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**. Możesz wykonywać czynności okrężne przy użyciu innych narzędzi programistycznych, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle projektu Node. js.
 
-    (2) na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów.
+    (2) na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie reprezentowane przez plik *. sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
 
     (3) węzeł npm pokazuje wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w pliku *Package. JSON* , a następnie kliknąć prawym przyciskiem myszy opcje w węźle npm.
 
@@ -110,14 +110,14 @@ Najpierw utwórz projekt aplikacji sieci Web w języku Node. js.
 
 Ta aplikacja wymaga poprawnego działania wielu modułów npm.
 
-* react
+* biern
 * reagowanie — dom
 * Utwórz
 * ścieżka
-* ts-loader
+* TS-Loader
 * TypeScript
 * Pakiet WebPack
-* webpack-cli
+* WebPack — interfejs wiersza polecenia
 
 1. W Eksplorator rozwiązań (prawego okienka) kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Zainstaluj nowe pakiety npm**.
 
@@ -165,10 +165,10 @@ Ta aplikacja wymaga poprawnego działania wielu modułów npm.
 
 W tych krokach dodasz cztery nowe pliki do projektu.
 
-* *app.tsx*
-* *webpack-config.js*
-* *index.html*
-* *tsconfig.json*
+* *App. TSX*
+* *WebPack-config. js*
+* *index. html*
+* *tsconfig. JSON*
 
 W przypadku tej prostej aplikacji dodawane są nowe pliki projektu w katalogu głównym projektu. (W większości aplikacji zazwyczaj pliki są dodawane do podfolderów i dopasowują odpowiednio odwołania ścieżek względnych).
 
@@ -370,7 +370,7 @@ Począwszy od programu Visual Studio 2019, wymagany jest skrypt kompilacji. Zami
 
     ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu.
+    Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
 
 1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj** > **Rozpocznij debugowanie**).
 
@@ -400,6 +400,10 @@ W tym scenariuszu należy użyć programu Chrome.
    Inne wystąpienia przeglądarki mogą uniemożliwiać otwarcie przeglądarki z włączonym debugowaniem. (Mogą być uruchomione rozszerzenia przeglądarki i uniemożliwiać tryb pełnego debugowania, więc może być konieczne otwarcie Menedżera zadań w celu znalezienia nieoczekiwanych wystąpień programu Chrome).
 
    ::: moniker range=">=vs-2019"
+   Dla przeglądarki Microsoft Edge (chrom) Zamknij również wszystkie wystąpienia programu Chrome. Ponieważ obie przeglądarki korzystają z bazy kodu chromu, daje to najlepsze wyniki.
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
    Dla przeglądarki Microsoft Edge (chrom) Zamknij również wszystkie wystąpienia programu Chrome. Ponieważ obie przeglądarki używają bazy kodu chromu, daje to najlepsze wyniki.
    ::: moniker-end
 
@@ -414,7 +418,7 @@ W tym scenariuszu należy użyć programu Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Ewentualnie
+    oraz
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -451,7 +455,7 @@ W tym scenariuszu należy użyć programu Chrome.
     },
     ```
 
-    przy użyciu tego kodu:
+    z tym kodem:
 
     ```javascript
     output: {
@@ -478,7 +482,7 @@ W tym scenariuszu należy użyć programu Chrome.
 5. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
 
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 wybierz poprawny debuger dla przeglądarki docelowej, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
+    W programie Visual Studio 2019 wybierz poprawny debuger dla docelowej przeglądarki, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować Wyniki wyszukiwania.
     ::: moniker-end
     ::: moniker range="vs-2017"
     W programie Visual Studio 2017 wybierz pozycję **kod WebKit** w polu **Dołącz do** , wpisz **Chrome** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
@@ -513,7 +517,6 @@ W tym scenariuszu należy użyć programu Chrome.
       * Zamknięto wszystkie wystąpienia przeglądarki, w tym rozszerzenia programu Chrome (przy użyciu Menedżera zadań), dzięki czemu można uruchomić przeglądarkę w trybie debugowania. Upewnij się, że przeglądarka została uruchomiona w trybie debugowania.
 
       * Upewnij się, że plik mapy źródłowej zawiera odwołanie do *./app.TSX* , a nie *WebPack:///./app.TSX*, co uniemożliwia debugerowi programu Visual Studio lokalizowanie *aplikacji App. TSX*.
-
        Alternatywnie, jeśli trzeba podzielić na kod w *aplikacji App. TSX* i nie można tego zrobić, spróbuj użyć instrukcji `debugger;` w *App. TSX*lub ustawić punkty przerwania w narzędzia deweloperskie (lub F12 Tools for Microsoft Edge).
 
    * Jeśli konieczne jest zabicie do kodu w *App-Bundle. js* i nie można tego zrobić, usuń plik mapy źródłowej *App-Bundle. js. map*.
@@ -521,4 +524,4 @@ W tym scenariuszu należy użyć programu Chrome.
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Wdrażanie aplikacji do usługi App Service w systemie Linux](../javascript/publish-nodejs-app-azure.md)
+> [Wdrażanie aplikacji w systemie Linux App Service](../javascript/publish-nodejs-app-azure.md)

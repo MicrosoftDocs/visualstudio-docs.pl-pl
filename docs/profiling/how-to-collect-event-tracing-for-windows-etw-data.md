@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zbieranie zdarzeń śledzenia for Windows (ETW) — dane | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,29 +11,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9734c75f078380649009d10da13ed8c926e5e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2fa0547682351d1a7ba4efe4ce3b4350b906462c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973867"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779028"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Instrukcje: Zbieraj dane zdarzenia śledzenia dla Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)
 
-Śledzenie zdarzeń dla Windows (ETW) jest mechanizmem wydajne śledzenia na poziomie jądra, umożliwiającą jądra dziennika profilera lub zdarzeń zdefiniowanych przez aplikację. Dane, które są zbierane z Dostawca zdarzeń można wyświetlić tylko przy użyciu /**Summary: ETW** opcji [VSPerfReport](../profiling/vsperfreport.md) narzędzie wiersza polecenia. Ten raport służy do określenia, gdzie występują problemy z wydajnością w aplikacji.
+Śledzenie zdarzeń systemu Windows (ETW) to wydajna funkcja śledzenia na poziomie jądra, która umożliwia jądro dzienników profilera lub zdarzenia zdefiniowane przez aplikację. Dane zbierane od dostawcy zdarzeń mogą być wyświetlane tylko przy użyciu opcji/**Summary: ETW** w narzędziu wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) . Możesz użyć tego raportu, aby określić, gdzie występują problemy z wydajnością w aplikacji.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy UWP wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="to-enable-event-trace-providers"></a>Aby włączyć dostawców śledzenia zdarzeń
 
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. W **stron właściwości**, kliknij przycisk **zdarzeń Windows** właściwości.
+2. Na **stronie właściwości**kliknij pozycję właściwości **zdarzeń systemu Windows** .
 
-3. W **dostawca śledzenia zdarzeń wybierz opcję, aby zebrać dane z** wybierz dostawców zdarzeń, które chcesz użyć do profilu aplikacji.
+3. Z listy **Wybierz dostawcę śledzenia zdarzeń do zbierania danych z** wybierz dostawców zdarzeń, których chcesz użyć do profilowania aplikacji.
 
 ## <a name="see-also"></a>Zobacz także
 

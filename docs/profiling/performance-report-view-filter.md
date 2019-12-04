@@ -1,5 +1,5 @@
 ---
-title: Filtr widoku raportów wydajności | Dokumentacja firmy Microsoft
+title: Filtr widoku raportu wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,32 +9,33 @@ ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793984"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778457"
 ---
 # <a name="performance-report-view-filter"></a>Filtr widoku raportów wydajności
-**Filtr widoku raportów Profiler** okna znajduje się w górnej części **raport dotyczący wydajności** okna. Jeśli nie widzisz, kliknij pozycję **Pokaż filtr** przycisku.
+Okno **filtru profilera raportu profiler** znajduje się u góry okna **raport o wydajności** . Jeśli nie widzisz go, kliknij przycisk **Pokaż filtr** .
 
- Można zmodyfikować każdej klauzuli filtru, aby zawęzić wyniki. Następujące kolumny są dostępne w Konstruktorze filtru.
+ Każdą klauzulę filtru można zmodyfikować, aby uściślić wyniki. W konstruktorze filtrów są dostępne następujące kolumny:
 
-|Element filtra|Opis|
+|Element filtru|Opis|
 |-----------------|-----------------|
-|I/lub|Wybierz **i** Jeśli tę klauzulę i dalej klauzula musi mieć wartość true do Dopasuj wynik. Wybierz **lub** , jeśli ta klauzula lub klauzuli dalej może być wartość true, aby dopasować wynik.|
-|Pole|Wybierz pole, aby użyć w klauzuli filtru z listy pola danych, które są dostępne w bieżącym pliku raportu.|
-|Operator|Wybierz operator, który określa relację między pola i wartości.<br /><br /> = Równa się<br /><br /> <> Nie równa się<br /><br /> < Mniej niż<br /><br /> > Większa niż<br /><br /> < = mniejsza niż lub równe<br /><br /> > = większa niż lub równe|
-|Wartość|Wybierz lub wprowadź wartość do wyszukania. Niektóre pola listy dostępnych wartości dla pola.|
+|I/lub|Wybierz **i** czy klauzula i klauzula Next muszą mieć obie wartości prawda, aby dopasować wynik. Wybierz **lub** , jeśli ta klauzula lub Następna klauzula może mieć wartość true, aby dopasować wynik.|
+|Pole|Wybierz pole, które ma być używane w klauzuli Filter z listy pól danych, które są dostępne w bieżącym pliku raportu.|
+|Operator|Wybierz operator, który określa relację między polem a wartością.<br /><br /> = Równa się<br /><br /> < > nie równa się<br /><br /> < Mniejsze niż<br /><br /> > Większe niż<br /><br /> < = mniejsze niż lub równe<br /><br /> > = większe niż lub równe|
+|Wartość|Wybierz lub wprowadź wartość do wyszukania. Niektóre pola wyświetlają dostępne wartości dla pola.|
 
- Możesz dodać klauzul filtru, dopóki nie poczujesz się, że filtr zapewni najlepsze rezultaty. Kliknij przycisk **wykonaj filtr** Aby zastosować filtr do pliku danych.
+ Można dodać klauzule filtru do momentu, w którym filtr zapewni najlepsze wyniki. Kliknij przycisk **Wykonaj filtr** , aby zastosować filtr do pliku danych.
 
- Z **znaczniki** widoku raportu, można wygenerować klauzul filtru, aby ograniczyć ilość danych w widoku raportu, dane, które są zbierane pomiędzy dwoma znakami. Wybierz te znaczniki, które mają być początek i koniec raportu, dane, następnie kliknij prawym przyciskiem myszy i wybierz opcję **Dodaj filtr znaczników** lub **Dodaj filtr sygnatury czasowe**. Oba filtry ograniczają dane w bieżącym pliku danych do tego samego zakresu **Dodaj filtr znaczników** można stosować do innych plików Vsp.
+ W widoku raportu **znaczniki** można generować klauzule filtru, aby ograniczyć dane w widokach raportu do danych zbieranych między dwoma znakami. Wybierz znaczniki, które mają zostać uruchomione i końcowe dane raportu, a następnie kliknij prawym przyciskiem myszy i wybierz opcję **Dodaj filtr dla znaczników** lub **Dodaj filtr dla sygnatur czasowych**. Oba filtry ograniczają dane w bieżącym pliku danych do tego samego zakresu; **Dodaj filtr dla znaczników** można zastosować do innych plików. vsp.
 
- Aby zapisać filtr, kliknij przycisk **Eksportuj filtr** na **raport dotyczący wydajności** narzędzi a następnie określ lokalizację i nazwę pliku. *vspf* pliku. Aby załadować uprzednio zapisany filtr, kliknij przycisk **filtru importu** i zlokalizuj plik zapisany filtr. Filtr plików można również filtrować pliki danych na komputerach autonomicznych Profiling Tools zainstalowane. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).
+ Aby zapisać filtr, kliknij przycisk **Eksportuj filtr** na pasku narzędzi **raport wydajności** , a następnie określ lokalizację i nazwę pliku. plik *VSPF* . Aby załadować wcześniej zapisany filtr, kliknij przycisk **Importuj filtr** i Znajdź zapisany plik filtru. Pliki filtrów mogą również służyć do filtrowania plików danych na komputerach, na których zainstalowano autonomiczną narzędzia profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

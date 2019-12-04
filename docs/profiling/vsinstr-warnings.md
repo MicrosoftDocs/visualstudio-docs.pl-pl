@@ -12,14 +12,15 @@ ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f1a0cba29caeda01de1154430af7a0d94bcfc2a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189296"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779951"
 ---
 # <a name="vsinstr-warnings"></a>Ostrzeżenia VSInstr
 Poniższa tabela zawiera listę ostrzeżeń wydawanych przez narzędzie *VSInstr. exe* . Można użyć opcji nowarn wraz z numerami ostrzegawczymi, aby pominąć wyświetlane ostrzeżenie.
@@ -35,8 +36,8 @@ Poniższa tabela zawiera listę ostrzeżeń wydawanych przez narzędzie *VSInstr
 |**VSP2005**|Wewnętrzny błąd Instrumentacji \<tekstowym błędów ><br /><br /> To ostrzeżenie jest generowane, jeśli nie można wykonać Instrumentacji. Przejrzyj tekst błędu, aby ustalić, czy można go poprawić.|
 |**VSP2006**|Nie można zlokalizować pliku PDB dla nazwy \<<br /><br /> To ostrzeżenie występuje, jeśli plik PDB nie istnieje w ścieżce wyszukiwania lub nie jest zgodny z plikiem binarnym.|
 |**VSP2007**|\<filename > nie zawiera kodu Instrumentacji.<br /><br /> To ostrzeżenie jest generowane, jeśli wszystkie funkcje w pliku binarnym zostały wykluczone lub jeśli określony plik zawiera tylko zasoby.|
-|**VSP2008**|Nie można pobrać atrybutów zabezpieczeń z nazwy \<>. Kod błędu \<kod ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnienia READ_DAC. Podczas procesu instrumentacji profiler próbuje zachować oryginalną listę DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany nowym plikiem binarnym, lista DACL z oryginalnego pliku binarnego musi zostać skopiowana i zastosowana do nowego pliku binarnego. Może to zakończyć się niepowodzeniem, jeśli użytkownik nie ma dostępu READ_DAC do oryginalnego pliku binarnego.|
-|**VSP2009**|Nie można ustawić atrybutów zabezpieczeń na \<nazw >. Kod błędu \<numer błędu ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnienia WRITE_DAC. Podczas procesu instrumentacji profiler próbuje zachować oryginalną listę DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany nowym plikiem binarnym, lista DACL z oryginalnego pliku binarnego musi zostać skopiowana i zastosowana do nowego pliku binarnego. Może to zakończyć się niepowodzeniem, jeśli użytkownik nie ma dostępu WRITE_DAC do nowego pliku binarnego.|
+|**VSP2008**|Nie można pobrać atrybutów zabezpieczeń z nazwy \<>. Kod błędu \<kod ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnienia READ_DAC. Podczas procesu instrumentacji profiler próbuje zachować oryginalną listę DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany nowym plikiem binarnym, lista DACL z oryginalnego pliku binarnego musi zostać skopiowana i zastosowana do nowego pliku binarnego. Może to zakończyć się niepowodzeniem, jeśli użytkownik nie ma READ_DAC dostępu do oryginalnego pliku binarnego.|
+|**VSP2009**|Nie można ustawić atrybutów zabezpieczeń na \<nazw >. Kod błędu \<numer błędu ><br /><br /> To ostrzeżenie występuje, jeśli użytkownik nie ma uprawnienia WRITE_DAC. Podczas procesu instrumentacji profiler próbuje zachować oryginalną listę DACL dla pliku binarnego. Ponieważ oryginalny plik binarny jest zastępowany nowym plikiem binarnym, lista DACL z oryginalnego pliku binarnego musi zostać skopiowana i zastosowana do nowego pliku binarnego. Może to zakończyć się niepowodzeniem, jeśli użytkownik nie ma WRITE_DAC dostępu do nowego pliku binarnego.|
 |**VSP2010**|Nie wybrano żadnych funkcji dla Instrumentacji ze względu na opcje dołączania/wykluczania|
 |**VSP2011**|Nazwa dołączania/wykluczania funcspec \<> nie jest zgodna z żadną z funkcji|
 |**VSP2012**|Obraz nie zawiera żadnego kodu, który może być Instrumentacją dla pokrycia kodu.<br /><br /> Profiler nie ma Instrumentacji następującego typu kodu:<br /><br /> -Statyczne funkcje CRT<br />Metody zarządzane z atrybutem NonUserCodeAttribute<br />Metody zarządzane z atrybutem DebuggerHiddenAttribute<br />-MASM bloki<br /><br /> To ostrzeżenie jest generowane, jeśli po filtrowaniu nie ma pozostałego kodu.|

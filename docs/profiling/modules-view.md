@@ -1,5 +1,5 @@
 ---
-title: Widok modułów | Dokumentacja firmy Microsoft
+title: Widok modułów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,27 +12,28 @@ ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b3e7492e0f5155dd1c36f0140f6a1ad11db027
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829973"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778521"
 ---
 # <a name="modules-view"></a>Widok modułów
-Widok modułów zawiera listę modułów danych profilowania. Każdy moduł jest węzeł główny drzewa hierarchicznego. Profilowane funkcje modułu są wyświetlane poniżej tego węzła modułu. Jeśli zbierania danych profilowania przy użyciu metody próbkowania, informacje wiersza znajduje się poniżej tego węzła funkcji i danych wskaźnik instrukcji znajduje się poniżej tego węzła wiersza.
+Widok moduły wyświetla listę modułów danych profilowania. Każdy moduł jest węzłem głównym drzewa hierarchicznego. Profilowane funkcje modułu są wymienione pod węzłem modułu. Jeśli dane profilowania zostały zebrane przy użyciu metody próbkowania, informacje o wierszu są wyświetlane poniżej węzła funkcji i dane wskaźnika instrukcji znajdują się pod węzłem wiersza.
 
- Rozwiń lub Zwiń Nazwa modułu do wyświetlania lub zamknąć widok danych dotyczących wydajności modułu.
+ Rozwiń lub Zwiń nazwę modułu, aby wyświetlić lub zamknąć widok danych wydajności modułu.
 
- Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz **Dodaj/Usuń kolumny**. Dane można sortować, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
+ Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz polecenie **Dodaj/Usuń kolumny**. Dane można sortować, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [How to: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
 
- Kolumny, które są dostępne w widoku modułów zależą od metody profilowania (próbkowania i instrumentacji), który został użyty do zbierania danych i czy zebrano dane pamięci platformy .NET w profilowania działać.
+ Kolumny, które są dostępne w widoku moduły, zależą od metody profilowania (próbkowania lub Instrumentacji), która została użyta do zebrania danych i czy dane pamięci platformy .NET zostały zebrane w ramach uruchomienia profilowania.
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok modułów](../profiling/modules-view-sampling-data.md)
 - [Widok modułów](../profiling/modules-view-instrumentation-data.md)
-- [Widok modułów - Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Moduły View - próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Widok modułów-Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Widok modułów-próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Widok modułów](../profiling/modules-view-contention-data.md)

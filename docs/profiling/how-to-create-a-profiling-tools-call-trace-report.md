@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie raportu śledzenia wywołań narzędzi profilowania | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Tworzenie raportu śledzenia wywołań narzędzia profilowania | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,35 +9,36 @@ ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe32847a37453b6a24a58538b2642fba66e4971
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439128"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778989"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: Tworzenie raportu śledzenia wywołań narzędzi profilowania
-*Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools Wyświetla listę informacji chronometrażu dla każdego punktu wejścia i wyjścia do funkcji w aplikacji oraz dla każdego wywołania innych funkcji przez funkcję. Raporty śledzenia wywołań są dostępne dla danych profilowania, tylko wtedy, gdy zostały one pobrane metodą instrumentacji.
+*Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wyświetla informacje o chronometrażu dla każdego wpisu i punktu wyjścia do funkcji aplikacji oraz każde wywołanie funkcji przez funkcję. Raporty śledzenia wywołań są dostępne do profilowania danych tylko wtedy, gdy zostały zebrane przy użyciu metody instrumentacji.
 
 > [!NOTE]
-> Nie można wyświetlić raportów śledzenia wywołań w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Należy użyć **VSPerfReport** narzędzie wiersza polecenia do generowania wartości rozdzielanych przecinkami (. *CSV*) lub. *xml* pliku. Aby uzyskać więcej informacji o tym narzędziu, zobacz [VSPerfReport](../profiling/vsperfreport.md).
+> Nie można wyświetlić raportów śledzenia wywołań w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby wygenerować wartość rozdzieloną przecinkami, należy użyć narzędzia wiersza polecenia **VSPerfReport** . *CSV*) lub. plik *XML* . Aby uzyskać więcej informacji na temat tego narzędzia, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
 ### <a name="to-create-a-call-trace-report"></a>Aby utworzyć raport śledzenia wywołań
 
-1. Otwórz **polecenia** okna.
+1. Otwórz okno **wiersza polecenia** .
 
 2. W wierszu polecenia wpisz następujące polecenie:
 
-     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/XML]**
 
     |||
     |-|-|
-    |*ToolsPath*|Ścieżka narzędzi wiersza poleceń Profiling Tools. Aby uzyskać więcej informacji, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|Dane profilowania (. *Vsp* lub. *vsps*) pliku. Akceptowane są pełne i częściowe ścieżki.|
+    |*ToolsPath*|Ścieżka narzędzia profilowania narzędzi wiersza polecenia. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
+    |*VSPFile*|Dane profilowania (. *VSP* lub. *vsps*) rozszerzeniem. Akceptowane są pełne i częściowe ścieżki.|
     |Xml|Generuje raport w formacie XML.|
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Zbieraj dane zdarzenia śledzenia dla Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+- [Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)

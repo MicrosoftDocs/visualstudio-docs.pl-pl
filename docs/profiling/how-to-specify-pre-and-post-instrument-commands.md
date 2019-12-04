@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określ polecenia przed i po Instrumentacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Określanie poleceń przed i po Instrumentacji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,62 +12,63 @@ ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dec06f7f45666845dfcc7080ed4b18db8baba993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539074"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778716"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: Określanie poleceń przed i po instrumentacji
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Instrukcje: Określanie poleceń przed i po Instrumentacji
 
-Możesz określić polecenia, które są uruchamiane przed lub po są instrumentowane pliki binarne w sesji wydajności. Wszystkie polecenia, które mogą być wystawiane z wiersza polecenia można określić jako przed Instrumentacją lub zdarzenia po instrumentacji. Na przykład można określić poleceń, które automatyzują ponownego podpisywania zestawu za pomocą klucza silnej nazwy w pliku wsadowym, który jest wykonywany po są instrumentowane pliki binarne.
+Możesz określić polecenia, które są uruchamiane przed lub po wykonaniu plików binarnych w sesji wydajności. Każde polecenie, które może zostać wystawione z wiersza polecenia, można określić jako zdarzenie wstępne lub po nim. Na przykład można określić polecenia, które automatyzują ponowny podpisanie zestawu przy użyciu klucza silnej nazwy w pliku wsadowym, który jest wykonywany po Instrumentacji plików binarnych.
 
-Można określić poleceń dla instrumentowanych danych binarnych w trakcie uruchomienia profilowania, lub dla pojedynczych plików binarnych. Jednakże można określić tylko jedno polecenie przed Instrumentacją do uruchomienia przed i tylko jedno polecenie po Instrumentacji do uruchomienia po zakończeniu procesu instrumentacji. Nie można określić poleceń dla obu wszystkie pliki binarne i pojedynczych plików binarnych. Po określeniu polecenia dla wszystkich plików binarnych, polecenia są uruchamiane przed lub po Instrumentacji każdym pliku binarnego w sesji.
+Można określić polecenia dla wszystkich plików binarnych instrumentacji w przebiegu profilowania lub dla poszczególnych plików binarnych. Można jednak określić tylko jedno polecenie przedprodukcyjne do uruchomienia przed i tylko jedno polecenie, które zostanie uruchomione po zakończeniu procesu instrumentacji. Nie można określić poleceń dla wszystkich plików binarnych i dla pojedynczych plików binarnych. Po określeniu poleceń dla wszystkich plików binarnych polecenia są uruchamiane przed lub po Instrumentacji każdego pliku binarnego w sesji.
 
-Katalog roboczy, w którym są wykonywane polecenia zależy od systemu operacyjnego, na którym uruchomiony jest program [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] i na platformie docelowej profilowanej aplikacji.
+Katalog roboczy, w którym polecenia są wykonywane, zależy od systemu operacyjnego, w którym jest uruchomiony program [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] i na platformie docelowej profilowanej aplikacji.
 
-Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenie przed Instrumentacją
+## <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenia przed Instrumentacją
 
-1. Wykonaj jedną z następujących czynności:
+1. Wykonaj jeden z następujących kroków:
 
-    - Aby określić polecenia przed Instrumentacją dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.
+    - Aby określić polecenia przed Instrumentacją dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesja wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
-    - Aby określić polecenie przed Instrumentacją dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego w **cele** listę sesji wydajności, a następnie wybierz **właściwości**.
+    - Aby określić polecenia przed Instrumentacją dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **targets** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
 
-2. W **stron właściwości**, kliknij przycisk **Instrumentacji**.
+2. Na **stronie właściwości**kliknij pozycję **Instrumentacja**.
 
-3. Wpisz polecenie w **wiersza polecenia** polu tekstowym w obszarze **zdarzenia przed Instrumentacją**.
+3. Wpisz polecenie w polu tekstowym **wiersz polecenia** w obszarze **zdarzenia przed Instrumentacją**.
 
     > [!NOTE]
-    > Możesz kliknąć przycisk wielokropka **(...)**  która jest przyległa do **wiersza polecenia** pole, aby przejść do, a następnie wybierz odpowiedni plik .exe, cmd lub bat.
+    > Możesz kliknąć przycisk wielokropka **(...)** , który jest przyległy do pola **wiersza polecenia** , aby wyszukać i wybrać odpowiedni plik exe, cmd lub bat.
 
 4. Kliknij przycisk **OK**.
 
-     Aby wyłączyć polecenia uruchamiane bez usuwania go, wybierz **Wyklucz z Instrumentacji** pole wyboru. Aby zmodyfikować kompilatora lub konsolidatora, ustawienia, należy użyć strony właściwości projektu.
+     Aby wyłączyć uruchamianie polecenia bez usuwania, zaznacz pole wyboru **Wyklucz z Instrumentacji** . Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
 
-## <a name="to-specify-post-instrument-commands"></a>Aby określić polecenie po Instrumentacji
+## <a name="to-specify-post-instrument-commands"></a>Aby określić polecenia po Instrumentacji
 
-1. Wykonaj jedną z następujących czynności:
+1. Wykonaj jeden z następujących kroków:
 
-    - Aby określić polecenia po instrumentacji dla wszystkich plików binarnych w sesji wydajności, wybierz węzeł sesji wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.
+    - Aby określić polecenia dla wszystkich plików binarnych w sesji wydajności, zaznacz węzeł sesja wydajności w **Eksplorator wydajności**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Właściwości**.
 
-    - Aby określić polecenie po instrumentacji dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego w **cele** listę sesji wydajności, a następnie wybierz **właściwości**.
+    - Aby określić polecenia dla określonego pliku binarnego, kliknij prawym przyciskiem myszy nazwę pliku binarnego na liście **targets** sesji wydajności, a następnie wybierz polecenie **Właściwości**.
 
-2. W **stron właściwości**, kliknij przycisk **Instrumentacji**.
+2. Na **stronie właściwości**kliknij pozycję **Instrumentacja**.
 
-3. Wpisz polecenie w **wiersza polecenia** polu tekstowym w obszarze **zdarzenia po Instrumentacji**.
+3. Wpisz polecenie w polu tekstowym **wiersz polecenia** w obszarze **zdarzenia po Instrumentacji**.
 
     > [!NOTE]
-    > Możesz kliknąć przycisk wielokropka **(...)**  która jest przyległa do **wiersza polecenia** pole, aby przejść do, a następnie wybierz odpowiedni plik .exe, cmd lub bat.
+    > Możesz kliknąć przycisk wielokropka **(...)** , który jest przyległy do pola **wiersza polecenia** , aby wyszukać i wybrać odpowiedni plik exe, cmd lub bat.
 
 4. Kliknij przycisk **OK**.
 
-     Aby wyłączyć polecenia uruchamiane bez usuwania go, wybierz **Wyklucz z Instrumentacji** pole wyboru. Aby zmodyfikować kompilatora lub konsolidatora, ustawienia, należy użyć strony właściwości projektu.
+     Aby wyłączyć uruchamianie polecenia bez usuwania, zaznacz pole wyboru **Wyklucz z Instrumentacji** . Aby zmodyfikować ustawienia kompilatora lub konsolidatora, użyj stron właściwości projektu.
 
 ## <a name="see-also"></a>Zobacz także
 

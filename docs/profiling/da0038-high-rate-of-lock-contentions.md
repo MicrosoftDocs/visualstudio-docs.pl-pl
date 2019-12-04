@@ -10,24 +10,25 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b4ddedf68d082c8de50a38f759c5db0a594d00
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024679"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777505"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: wysoki współczynnik rywalizacji o blokadę
 
 |||
 |-|-|
-|Identyfikator reguły|DA0038|
+|Identyfikator zasady|DA0038|
 |Kategoria|Użycie .NET Framework|
 |Metoda profilowania|Sond<br /><br /> Oprzyrządowanie<br /><br /> Pamięć platformy .NET|
 |Komunikat|Występuje wysoki współczynnik rywalizacji o blokadę platformy .NET. Sprawdź przyczynę rywalizacji o blokadę, uruchamiając profil współbieżności.|
-|Typ reguły|Informacje|
+|Typ reguły|Informacje programu|
 
  Podczas profilowania przy użyciu metod próbkowania, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 25 próbek, aby wyzwolić tę regułę.
 

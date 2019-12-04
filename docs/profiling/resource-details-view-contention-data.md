@@ -10,19 +10,20 @@ ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924519"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771606"
 ---
 # <a name="resource-details-view---contention-data"></a>Widok szczegółów zasobów — dane rywalizacji
 Widok Szczegóły zasobu przedstawia wykres osi czasu dla zdarzeń blokowania, które były spowodowane przez rywalizacje dla wybranego zasobu. Zdarzenie blokujące występuje, gdy wątek jest zmuszony do wstrzymania wykonywania, ponieważ inny wątek zablokował dostęp do zasobu.
 
- Ten widok przedstawia oś czasu wykonywania każdego wątku jako poziomy pasek i reprezentuje każde zdarzenie blokujące jako pionowy pasek na osi czasu wątku. W razie potrzeby możesz powiększyć Sekcję osi czasu, aby wyświetlić poszczególne zdarzenia. Aby wyświetlić ścieżkę wykonywania (stos wywołań) funkcji, które doprowadziły do zdarzenia, kliknij pasek zdarzeń. Funkcje pojawiają się w oknie **stosu wywołań** . Gdy jest dostępny kod źródłowy funkcji, można kliknąć nazwę funkcji, aby edytować plik źródłowy w interfejsie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Ten widok przedstawia oś czasu wykonywania każdego wątku jako poziomy pasek i reprezentuje każde zdarzenie blokujące jako pionowy pasek na osi czasu wątku. W razie potrzeby możesz powiększyć Sekcję osi czasu, aby wyświetlić poszczególne zdarzenia. Aby wyświetlić ścieżkę wykonywania (stos wywołań) funkcji, które doprowadziły do zdarzenia, kliknij pasek zdarzeń. Funkcje pojawiają się w oknie **stosu wywołań** . Gdy jest dostępny kod źródłowy funkcji, można kliknąć nazwę funkcji, aby edytować plik źródłowy w interfejsie dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="procedures"></a>Procedury
 
@@ -34,9 +35,9 @@ Widok Szczegóły zasobu przedstawia wykres osi czasu dla zdarzeń blokowania, k
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Aby pomniejszyć na osi czasu
 
-- Wykonaj jedną z następujących czynności:
+- Wykonaj jeden z następujących kroków:
 
-  - Kliknij pozycję Powiększ, aby powrócić do poprzedniego poziomu powiększenia.
+  - Kliknij pozycję **Powiększ** , aby powrócić do poprzedniego poziomu powiększenia.
 
   - Kliknij pozycję **powiększenie Reset** , aby wyświetlić całą oś czasu w widoku.
 

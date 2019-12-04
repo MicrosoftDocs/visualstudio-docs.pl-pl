@@ -1,27 +1,28 @@
 ---
-title: Zbieranie dodatkowych danych o wydajności | Dokumentacja firmy Microsoft
+title: Zbieranie dodatkowych danych dotyczących wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c68ddbcf6d2284cc3cb2ec103fa9417a6e0338f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4201895fd93d3fa3a9ccb9072382432d6f6e02be
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777362"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779704"
 ---
 # <a name="collect-additional-performance-data"></a>Zbieranie dodatkowych danych o wydajności
 
-Oprócz danych, które są zbierane przy użyciu metody profilowania Visual Studio Profiling Tools umożliwiają rejestrowanie i wyświetlanie dodatkowych danych.
+Oprócz danych zbieranych przy użyciu metody profilowania program Visual Studio narzędzia profilowania umożliwia rejestrowanie i wyświetlanie dodatkowych danych.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
 |Zadanie|Zawartość pokrewna|
 |----------|---------------------|
-|**Zbieranie danych wydajności dla wywołań ADO.NET w Twojej aplikacji.** Dodawanie danych dotyczących wywołań współbieżnych wykonywanych przez aplikację do baz danych.|- [Zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md)|
-|**Zbieranie danych licznika wydajności Windows.** Dodawanie liczników wydajności systemu jako znaczników profilowania w danych profilowania. Znaczniki może służyć do filtrowania raportów.|- [Jak: Zbieranie danych licznika Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|**Zbieraj dane zdarzenia śledzenia dla Windows.** Zbieraj dane zdarzenia śledzenia dla Windows (ETW) do rejestrowania zdarzeń aplikacji i systemu do danych profilowania.|- [Jak: Zbieraj dane zdarzenia śledzenia dla Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|**Zbieranie danych wydajności dla wywołań ADO.NET w aplikacji.** Dodaj dane dotyczące wywołań synchronicznych wykonywanych przez aplikację w bazach danych.|- [Zbieraj dane interakcji warstwy](../profiling/collecting-tier-interaction-data.md)|
+|**Zbieranie danych licznika wydajności systemu Windows.** Dodawanie liczników wydajności systemu jako znaczników profilowania do danych profilowania. Znaczniki mogą służyć do filtrowania raportów.|- [jak zbierać dane liczników systemu Windows](../profiling/how-to-collect-windows-counter-data.md)|
+|**Zbiera śledzenie zdarzeń dla danych systemu Windows.** Zbieraj dane śledzenia zdarzeń systemu Windows (ETW), aby rejestrować zdarzenia aplikacji i systemu oprócz danych profilowania.|- [jak zbierać dane śledzenia zdarzeń systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|

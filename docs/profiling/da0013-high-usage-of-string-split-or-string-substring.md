@@ -1,5 +1,5 @@
 ---
-title: 'DA0013: Wykorzystanie funkcji String.Split i String.Substring | Dokumentacja firmy Microsoft'
+title: 'DA0013: wysokie użycie metody String. Split lub String. substring | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,32 +14,33 @@ ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ddc7462b703ef28a52b531aa379b46198516df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936473"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779411"
 ---
-# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie funkcji String.Split i String.Substring
+# <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie String.Split lub String.Substring
 
 |||
 |-|-|
-|Identyfikator reguły|DA0013|
-|Kategoria|.NET Framework Usage Guidance|
-|Metod profilowania|Próbkowania|
-|Komunikat|Należy rozważyć ograniczenie użycia funkcji String.Split i String.Substring.|
+|Identyfikator zasady|DA0013|
+|Kategoria|Wskazówki dotyczące .NET Framework|
+|Metody profilowania|Sond|
+|Komunikat|Rozważ ograniczenie użycia funkcji String. Split i String. substring.|
 |Typ reguły|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania metod System.String.Split lub System.String.Substring jest znaczna część danych profilowania. Należy rozważyć użycie System.String.IndexOf lub System.String.IndexOfAny, jeśli testujesz istnienie podciągów w ciągu.
+ Wywołania metody System. String. Split lub system. String. substring są istotną częścią danych profilowania. Rozważ użycie elementu System. String. IndexOf lub system. String. IndexOfAny, jeśli testujesz istnienie podciągu w ciągu.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda Podziel operuje na obiekt ciągu i zwraca nową tablicę ciągów, która przechowuje podciągów z oryginalnego. Funkcja przydziela pamięć dla obiektu zwróconej tablicy i przydziela nowy obiekt ciągu dla każdego elementu tablicy, które znajdzie. Podobnie SUBSTR — metoda operuje na obiekt ciągu i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciąg.
+ Metoda Split działa na obiekcie String i zwraca nową tablicę ciągów, która zawiera podciągi oryginału. Funkcja przydziela pamięć dla zwracanego obiektu array i przydziela nowy obiekt ciągu dla każdego elementu tablicy, który znajdzie. Podobnie Metoda substr działa na obiekcie String i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciągu.
 
- Jeśli zarządzanie alokacji pamięci ma kluczowe znaczenie dla aplikacji, należy rozważyć użycie alternatywy dla funkcji String.Split i String.Substr metod. Na przykład służy metoda IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.
+ Jeśli Zarządzanie alokacją pamięci ma krytyczne znaczenie dla aplikacji, należy rozważyć użycie alternatywnych metod String. Split i String. substr. Na przykład można użyć metody IndexOf lub IndexOfAny, aby zlokalizować konkretny podciąg w ciągu znaków bez tworzenia nowego wystąpienia klasy String.
 
-## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie
- Kliknij dwukrotnie komunikat w **lista błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych jej profilu. Sprawdź wywołania funkcji można znaleźć w sekcjach program najczęściej wykorzystać System.String.Split lub System.String.Substr metod. Jeśli to możliwe należy użyć metody IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.
+## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
+ Kliknij dwukrotnie komunikat w oknie **Lista błędów** , aby przejść do [widoku Szczegóły funkcji](../profiling/function-details-view.md) danych profilu próbkowania. Sprawdź funkcje wywołujące, aby znaleźć sekcje programu, które są najczęściej używane metody System. String. Split lub system. String. substr. Jeśli to możliwe, użyj metody IndexOf lub IndexOfAny, aby zlokalizować konkretny podciąg w ciągu znaków bez tworzenia nowego wystąpienia klasy String.

@@ -1,38 +1,39 @@
 ---
-title: Filtrowanie widoków raportów narzędzi profilowania do wyświetlenia tylko mój kod
+title: Filtrowanie widoków raportów narzędzi profilowania do wyświetlania Tylko mój kod
 ms.date: 02/15/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c65c249c8d744dd01ef67d4836f9aa7066370fa0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: db43caeb00ef8348eb1a7dd584c1b0b52001bc3f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778963"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Instrukcje: Filtrowanie widoków raportów narzędzi profilowania do wyświetlenia tylko mój kod
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Instrukcje: filtrowanie widoków raportów narzędzi profilowania do wyświetlania Tylko mój kod
 
-Program Visual Studio zapewnia filtrowanie raportów wydajności, tak że wyświetlają one kod, który został zaimplementowany. Domyślnie jest to funkcja, która nosi tylko mój kod. Są konfigurowane za pomocą **tylko mój kod** opcji **opcje** okno dialogowe.
+Program Visual Studio udostępnia filtrowanie raportów dotyczących wydajności, tak aby wyświetlały tylko kod, który został zaimplementowany. Ta funkcja, która nosi nazwę Tylko mój kod, jest domyślnie włączona. Jest ona konfigurowana za pomocą opcji **tylko mój kod** w oknie dialogowym **Opcje** .
 
-## <a name="to-enable-just-my-code"></a>Aby włączyć opcję tylko mój kod
+## <a name="to-enable-just-my-code"></a>Aby włączyć Tylko mój kod
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Narzędzia** kliknij pozycję **Opcje**.
 
-2. W **opcje** okna dialogowego rozwiń **narzędzia do oceny wydajności** , a następnie wybierz **ogólne** węzła.
+2. W oknie dialogowym **Opcje** rozwiń węzeł **Narzędzia wydajności** , a następnie wybierz węzeł **Ogólne** .
 
-3. W obszarze **ustawienia ogólne**, wybierz opcję **Włącz tylko mój kod** pole wyboru.
+3. W obszarze **Ustawienia ogólne**zaznacz pole wyboru **Włącz tylko mój kod** .
 
-## <a name="to-disable-just-my-code"></a>Aby wyłączyć opcję tylko mój kod
+## <a name="to-disable-just-my-code"></a>Aby wyłączyć Tylko mój kod
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Narzędzia** kliknij pozycję **Opcje**.
 
-2. W **opcje** okna dialogowego rozwiń **narzędzia do oceny wydajności** , a następnie wybierz **ogólne** węzła.
+2. W oknie dialogowym **Opcje** rozwiń węzeł **Narzędzia wydajności** , a następnie wybierz węzeł **Ogólne** .
 
-3. W obszarze **ustawienia ogólne**, wyczyść **Włącz tylko mój kod** pole wyboru.
+3. W obszarze **Ustawienia ogólne**Usuń zaznaczenie pola wyboru **Włącz tylko mój kod** .
 
 ## <a name="see-also"></a>Zobacz także
 

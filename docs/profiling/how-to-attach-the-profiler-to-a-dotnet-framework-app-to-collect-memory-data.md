@@ -1,114 +1,115 @@
 ---
-title: Dołącz profiler do aplikacji platformy .NET w celu zbierania danych pamięci
+title: Dołączanie profilera do aplikacji .NET w celu zbierania danych pamięci
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 459b495ea6f440a670c9a257566b19a1bc8756dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04dcf800074476b285a07e36db5a85fa3a366585
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439644"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779132"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
 
-W tym artykule opisano, jak używać narzędzi wiersza polecenia programu Visual Studio Profiling Tools do dołączenia programu profilującego do uruchomionej aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych pamięci.
+W tym artykule opisano sposób używania narzędzi wiersza polecenia programu Visual Studio narzędzia profilowania do dołączania profilera do uruchomionej .NET Framework aplikacji autonomicznej (klient) i zbierania danych pamięci.
 
 > [!NOTE]
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.
 
-Aby dołączyć do aplikacji .NET Framework i pamięci zbierania danych, należy użyć [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) narzędzia, aby zainicjować zmienne środowiskowe przed uruchomieniem aplikacji docelowej. Gdy profiler jest dołączony do aplikacji, możesz użyć *VSPerfCmd.exe* narzędzie, aby wstrzymywać i wznawiać zbieranie danych.
+Aby dołączyć do aplikacji .NET Framework i zebrać dane pamięci, należy użyć narzędzia [VSPerfCLREnv. cmd](../profiling/vsperfclrenv.md) , aby zainicjować odpowiednie zmienne środowiskowe przed uruchomieniem aplikacji docelowej. Gdy profiler jest dołączony do aplikacji, można użyć narzędzia *VSPerfCmd. exe* , aby wstrzymywać i wznawiać zbieranie danych.
 
-Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszystkich profilowanych procesów i program profilujący musi być jawnie zamknięty. W większości przypadków zaleca się wyczyszczenie zmiennych środowiskowych profilowania na końcu sesji.
+Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszystkich profilowanych procesów, a profiler musi być jawnie zamknięty. W większości przypadków zaleca się wyczyszczenie zmiennych środowiskowych profilowania na końcu sesji.
 
 ## <a name="attach-the-profiler"></a>Dołącz profiler
 
-### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Aby dołączyć profiler do działającej aplikacji .NET Framework
+### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Aby dołączyć Profiler do uruchomionej aplikacji .NET Framework
 
 1. Otwórz okno wiersza polecenia.
 
-2. Należy zainicjować zmienne środowiskowe profilowania. Wpisz:
+2. Zainicjuj zmienne środowiskowe profilowania. Wpisz:
 
-     **VSPerfClrEnv** {**/samplegc** &#124; **/samplegclife**} [**/samplelineoff**]
+     **VSPerfCLREnv** { **/samplegc** &#124; **/samplegclife**} [ **/samplelineoff**]
 
-    - **/Samplegc** i **/samplegclife** opcji można określić, czy do zbierania tylko dane alokacji pamięci lub zbierać zarówno alokacji pamięci, jak i danych o okresie istnienia obiektu. Należy określić jeden i tylko jedna opcja.
+    - Opcje **/samplegc** i **/samplegclife** określają, czy mają być zbierane tylko dane alokacji pamięci, czy mają być zbierane dane alokacji pamięci i okresu istnienia obiektu. Należy określić jedną i tylko jedną opcję.
 
         |Opcja|Opisy|
         |------------|------------------|
-        |**/samplegc**|Zbieraj tylko dane alokacji pamięci.|
-        |**/samplegclife**|Zbieranie alokacji pamięci oraz danych o okresie istnienia obiektu.|
+        |**/samplegc**|Zbiera tylko dane alokacji pamięci.|
+        |**/samplegclife**|Zbieraj dane alokacji pamięci i okresu istnienia obiektu.|
 
-    - **/Samplelineoff** opcja wyłącza kolekcję danych numeru wiersza kodu źródłowego.
+    - Opcja **/samplelineoff** wyłącza zbieranie danych numeru wiersza kodu źródłowego.
 
-3. Uruchom program profiler. Wpisz:
+3. Uruchom Profiler. Wpisz:
 
-     **/ OUTPUT /start:sample VSPerfCmd:** `OutputFile` [`Options`]
+     **VSPerfCmd/Start: przykład/Output:** `OutputFile` [`Options`]
 
-   - [/Start](../profiling/start.md)**: Przykładowe** opcja inicjuje profiler.
+   - Polecenie [/Start](../profiling/start.md) **: Sample** inicjuje profiler.
 
-   - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
+   - Opcja [/Output](../profiling/output.md) **:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` określa nazwę i lokalizację pliku danych profilowania (. vsp).
 
-     Można użyć dowolnego z następujących opcji z **/start:sample** opcji.
+     Można użyć dowolnej z następujących opcji z opcją **/Start: Sample** .
 
      | Opcja | Opis |
      | - | - |
-     | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań Windows. |
-     | [/ crosssession &#124; skróconej/CS](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań Windows. **Skróconej/CS** może być określona jako skrót **/crosssession**. |
-     | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
-     | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
+     | [/User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem profilowanego procesu. Ta opcja jest wymagana tylko wtedy, gdy proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie procesy w Menedżerze zadań systemu Windows. |
+     | [/CrossSession &#124; /CS](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji na karcie procesy w Menedżerze zadań systemu Windows. **/CS** można określić jako skrót dla **/CrossSession**. |
+     | [/WinCounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania. |
+     | [/AutoMark](../profiling/automark.md) **:** `Interval` | Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500 ms. |
 
-4. Jeśli to konieczne, uruchom aplikację docelową w typowy sposób.
+4. W razie potrzeby Uruchom aplikację docelową w typowy sposób.
 
 5. Dołącz profiler do aplikacji docelowej. Wpisz:
 
-     **Narzędzia VSPerfCmd**[/ dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
+     **VSPerfCmd**[/Attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
-    - `PID` Określa identyfikator procesu aplikacji docelowej. `ProcessName` Określa nazwę procesu. Należy pamiętać, że jeśli określisz `ProcessName` i działa wiele procesów, które mają taką samą nazwę, wyniki są nieprzewidywalne. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
+    - `PID` określa identyfikator procesu aplikacji docelowej. `ProcessName` określa nazwę procesu. Należy pamiętać, że jeśli określono `ProcessName` i wiele procesów, które mają taką samą nazwę, wyniki są nieprzewidywalne. Identyfikatory procesów wszystkich uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.
 
-    - **/ targetclr:** `Version` Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilu, gdy więcej niż jedna wersja środowiska wykonawczego jest załadowana w aplikacji. Opcjonalna.
+    - **/targetclr:** `Version` określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, gdy więcej niż jedna wersja środowiska uruchomieniowego jest załadowana w aplikacji. Opcjonalny.
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
 
-Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
+Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą opcji *VSPerfCmd. exe* . Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takich jak uruchamianie lub zamykanie aplikacji.
 
 ### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
-- Następujące pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Poniższe pary opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w osobnym wierszu polecenia. Zbieranie danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje (**/globaloff**) zbieranie danych dla wszystkich procesów.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu, który jest określony przez `PID`.|
-    |[/ Dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ Odłącz](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ Dołączanie** uruchamia zbieranie danych dla procesu, który jest określony przez `PID` lub nazwę procesu (ProcName). **/ Odłącz** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli nie określono określonego procesu.|
+    |[/GlobalOn/GlobalOff](../profiling/globalon-and-globaloff.md)|Uruchamia ( **/GlobalOn**) lub przerywa ( **/GlobalOff**) zbieranie danych dla wszystkich procesów.|
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/ProcessOn**) lub zatrzymywanie ( **/ProcessOff**) zbieranie danych dla procesu, który jest określony przez `PID`.|
+    |[/Attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/Detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/Attach** uruchamia zbieranie danych dla procesu, który jest określony przez `PID` lub nazwę procesu (ProcName). **/Detach** kończy zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli określony proces nie jest określony.|
 
-## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
+## <a name="end-the-profiling-session"></a>Zakończ sesję profilowania
 
-Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszystkich profilowanych procesów i program profilujący musi być jawnie zamknięty. Możesz odłączyć profiler od aplikacji, która była profilowana przy użyciu metody próbkowania przez zamknięcie aplikacji lub przez wywołanie **VSPerfCmd / Odłącz** opcji. Następnie wywołaj **VSPerfCmd/shutdown** opcję, aby wyłączyć profiler i zamknąć plik danych profilowania. **VSPerfClrEnv / off** polecenie usuwa zmienne środowiskowe profilowania.
+Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszystkich profilowanych procesów, a profiler musi być jawnie zamknięty. Można odłączyć Profiler od aplikacji, która została profilowana przy użyciu metody próbkowania przez zamknięcie aplikacji lub wywołanie opcji **VSPerfCmd/detach** . Następnie należy wywołać opcję **VSPerfCmd/shutdown** , aby wyłączyć profiler i zamknąć plik danych profilowania. Polecenie **VSPerfCLREnv/off** czyści zmienne środowiskowe profilowania.
 
 ### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1. Wykonaj jedną z następujących czynności, aby odłączyć profiler od aplikacji docelowej:
+1. Wykonaj jedną z następujących czynności, aby odłączyć Profiler od aplikacji docelowej:
 
-    - Typ **VSPerfCmd / Odłącz**
+    - Wpisz **VSPerfCmd/detach**
 
-         —lub—
+         lub
 
     - Zamknij aplikację docelową.
 
 2. Zamknij program profilujący. Wpisz:
 
-     **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
+     **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)
 
-3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
+3. Obowiązkowe Wyczyść zmienne środowiskowe profilowania. Wpisz:
 
-     **Narzędzia VSPerfCmd / off**
+     **VSPerfCmd/off**
 
 ## <a name="see-also"></a>Zobacz także
 
-[Profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+[Profile aplikacje](../profiling/command-line-profiling-of-stand-alone-applications.md) autonomiczne
 [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

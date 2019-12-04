@@ -8,17 +8,18 @@ ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ae8f5cfeb3e5bcaf223e84f25007ebea646da2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967849"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778235"
 ---
 # <a name="stopprofile"></a>StopProfile
-`StopProfile` Funkcja ustawia licznik na 0 (funkcja wyłączona) dla określonego poziomu profilowania.
+Funkcja `StopProfile` ustawia wartość 0 (off) dla określonego poziomu profilowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,46 +32,46 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 #### <a name="parameters"></a>Parametry
  `Level`
 
- Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** moduły wyliczające może służyć do wskazania jednego z trzech poziomów wydajności, które zbieranie danych można stosować:
+ Wskazuje poziom profilu, do którego można zastosować zbieranie danych wydajności. Poniższe moduły wyliczające **PROFILE_CONTROL_LEVEL** mogą służyć do wskazania jednego z trzech poziomów, do których można zastosować zbieranie danych o wydajności:
 
-|Moduł wyliczający|Opis|
+|Liczeni|Opis|
 |----------------|-----------------|
-|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomie ma wpływ na wszystkie procesy i wątki podczas uruchomienia profilowania.|
-|PROFILE_PROCESSLEVEL|Ustawienie poziomie proces wpływają na wszystkie wątki, które są dostępne w ramach określonego procesu.|
-|PROFILE_THREADLEVEL|Wątek ustawienie poziomie profilowania dotyczy określonego wątku.|
+|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomu ma wpływ na wszystkie procesy i wątki w przebiegu profilowania.|
+|PROFILE_PROCESSLEVEL|Ustawienie poziomu procesu wpływa na wszystkie wątki, które są częścią określonego procesu.|
+|PROFILE_THREADLEVEL|Ustawienie poziomu profilowania wątku ma wpływ na określony wątek.|
 
  `dwId`
 
- Proces lub wątek identyfikator generowany przez system.
+ Identyfikator procesu lub wątku generowany przez system.
 
-## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
- Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:
+## <a name="property-valuereturn-value"></a>Wartość właściwości/zwracana wartość
+ Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:
 
-|Moduł wyliczający|Opis|
+|Liczeni|Opis|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|Identyfikator elementu profilowania nie istnieje.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Określony poziom profilowania nie istnieje.|
-|PROFILE_ERROR_MODE_NEVER|W trybie profilowania zostało ustawione na nigdy nie w przypadku, gdy funkcja została wywołana.|
-|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Profilowania wywołanie funkcji, profilowania poziom lub kombinacji wywołania i poziom nie została jeszcze zaimplementowana.|
+|PROFILE_ERROR_MODE_NEVER|Tryb profilowania został ustawiony tak, aby nigdy nie był wywoływany przez funkcję.|
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Nie zaimplementowano jeszcze wywołania funkcji profilowania, poziomu profilowania lub kombinacji wywołania i poziomu.|
 |PROFILE_OK|Wywołanie zakończyło się pomyślnie.|
 
 ## <a name="remarks"></a>Uwagi
- StartProfile i StopProfile kontrolować stan uruchomień/zatrzymań poziomu profilowania. Wartość domyślna uruchomień/zatrzymań jest 1. Początkowa wartość można zmienić w rejestrze. Każde wywołanie StartProfile ustawia uruchomień/zatrzymań 1; Każde wywołanie StopProfile ustawia ją na 0.
+ StartProfile i StopProfile kontrolują stan uruchomienia/zatrzymania dla poziomu profilowania. Wartość domyślna uruchomienia/zatrzymania to 1. Wartość początkową można zmienić w rejestrze. Każde wywołanie StartProfile ustawia początek/zatrzymanie na 1; Każde wywołanie StopProfile ustawia wartość 0.
 
- Podczas uruchamiania/zatrzymywania jest większa niż 0, stan uruchomień/zatrzymań poziomu ma wartość ON. Gdy jest on mniejszy niż lub równa 0, stan uruchomień/zatrzymań został WYŁĄCZONY.
+ Gdy wartość Start/Stop jest większa od zera, stan uruchomienia/zatrzymania dla poziomu jest włączony. Gdy wartość jest mniejsza lub równa 0, stan uruchomienia/zatrzymania jest wyłączony.
 
- W przypadku uruchomień/zatrzymań stan i stan wstrzymań/wznowień zarówno na, stan profilowania dla poziomu ma wartość ON. Na wątek być profilowane, globalne, proces i poziomu stany wątku dla wątku musi być włączone.
+ Gdy stan uruchomienia/zatrzymania i wstrzymania/wznowienia jest włączony, stan profilowania dla poziomu jest włączony. W przypadku wątku, który ma zostać profilowany, Stany globalne, proces i poziom wątku dla wątku muszą być włączone.
 
-## <a name="net-framework-equivalent"></a>Równoważne z .NET framework
- Microsoft.VisualStudio.Profiler.dll
+## <a name="net-framework-equivalent"></a>.NET Framework równoważne
+ Microsoft. VisualStudio. Profiler. dll
 
 ## <a name="function-information"></a>Informacje o funkcji
- Nagłówek: Zadeklarowane w VSPerf.h
+ Nagłówek: zadeklarowany w VSPerf. h
 
- Biblioteka importów: VSPerf.lib
+ Biblioteka importowana: VSPerf. lib
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metodę StopProfile. W przykładzie założono, czy Wykonano wywołanie metody StartProfile dla tego samego wątku lub proces zidentyfikowany przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).
+ Poniższy przykład ilustruje metodę StopProfile. W przykładzie przyjęto założenie, że wywołanie metody StartProfile zostało wykonane dla tego samego wątku lub procesu identyfikowanego przez [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp
 void ExerciseStopProfile()
@@ -107,4 +108,4 @@ void ExerciseStopProfile()
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

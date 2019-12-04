@@ -6,19 +6,20 @@ ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 479f7e1cbd85c0421497020ae1fc108154ca639a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968317"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771609"
 ---
 # <a name="targetclr"></a>TargetCLR
-**TargetCLR** opcji określa wersję wspólnego języka środowiska wykonawczego (języka wspólnego CLR) do profilowania, gdy więcej niż jedna wersja środowiska CLR jest załadowana w aplikacji.
+Opcja **TargetCLR** określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, gdy więcej niż jedna wersja środowiska CLR jest załadowana w aplikacji.
 
- Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools docelowe pierwszą wersję środowiska CLR, który jest ładowany przez aplikację.
+ Domyślnie narzędzia profilowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dotyczy pierwszej wersji środowiska CLR, która jest ładowana przez aplikację.
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,17 +28,17 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `ClrVersion` Numer wersji środowiska CLR. Użyj formatu wersji **vN.N.NNNNN**.
+ `ClrVersion` numer wersji środowiska CLR. Użyj formatu wersji **vn. nnnnn**.
 
 ## <a name="required-options"></a>Wymagane opcje
- **TargetCLR** opcja może być używana tylko z **Uruchom** lub **Dołącz** opcje.
+ Opcji **TargetCLR** można użyć tylko z opcjami **uruchamiania** lub **dołączania** .
 
- **Uruchom:** `AppName` Uruchamia określoną aplikację i rozpoczyna się do profilu.
+ **Uruchom:** `AppName` uruchamia określoną aplikację i rozpoczyna profilowanie.
 
- **Dołącz:** `PID` Uruchamia profilowanie określonego procesu.
+ **Dołącz:** `PID` zaczyna profilować określony proces.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie opcja TargetCLR służy do upewnij się, że środowisko CLR w wersji 4.0.11003 jest profilowane.
+ W tym przykładzie opcja TargetCLR jest używana w celu upewnienia się, że środowisko CLR w wersji 4.0.11003 jest profilowane.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

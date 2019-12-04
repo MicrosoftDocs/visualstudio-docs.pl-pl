@@ -1,5 +1,5 @@
 ---
-title: Widok funkcji | Dokumentacja firmy Microsoft
+title: Widok funkcji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,26 +13,27 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc3721c00816d7cab9af3a4c14e427f4218d15d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969683"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779197"
 ---
 # <a name="functions-view"></a>Widok funkcji
 Widok funkcji zawiera listę funkcji, które są wywoływane podczas profilowania.
 
- Domyślnie funkcje są wyświetlane według nazwy. Aby wyświetlić funkcje przez moduł, kliknij prawym przyciskiem myszy w oknie Widok funkcji, a następnie wybierz pozycję **Pokaż w widoku modułu**. Spowoduje to wyświetlenie widoku modułu.
+ Domyślnie funkcje są wyświetlane według nazwy. Aby wyświetlić funkcje według modułu, kliknij prawym przyciskiem myszy w oknie widok funkcji, a następnie wybierz polecenie **Pokaż w widoku modułu**. Spowoduje to wyświetlenie widoku modułu.
 
- Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz pozycję **Dodaj/Usuń kolumny**. Ponadto możesz sortować dane, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
+ Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w oknie raportu, a następnie wybierz polecenie **Dodaj/Usuń kolumny**. Ponadto można sortować dane, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [How to: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
 
- Kolumny, które są dostępne w widoku funkcji zależą od metody profilowania (próbkowania i instrumentacji), który został użyty do zbierania danych i czy zebrano dane pamięci platformy .NET w profilowania działać.
+ Kolumny, które są dostępne w widoku funkcji, zależą od metody profilowania (próbkowania lub Instrumentacji), która została użyta do zbierania danych i czy dane pamięci platformy .NET zostały zebrane w ramach uruchomienia profilowania.
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok funkcji](../profiling/functions-view-sampling-data.md)
 - [Widok funkcji](../profiling/functions-view-instrumentation-data.md)
-- [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-- [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Widok funkcji-Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Widok funkcji — próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)

@@ -1,5 +1,5 @@
 ---
-title: Widok szczegółów wątku - dane Kontencji | Dokumentacja firmy Microsoft
+title: Widok szczegółów wątku — dane rywalizacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,52 +10,53 @@ ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968058"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778170"
 ---
 # <a name="thread-details-view---contention-data"></a>Widok szczegółów wątku — dane rywalizacji
-Widok szczegółów wątku przedstawia wykres osi czasu blokowania zdarzeń w wybranym wątku przebiegu profilowania, które były spowodowane przez rywalizacji nad zasobami. Blokowanie zdarzenie występuje, gdy wątek jest zmuszony do zawieszenia wykonania, ponieważ inny wątek został zablokowany dostęp do zasobu.
+Widok Szczegóły wątku przedstawia wykres osi czasu dla zdarzeń blokowania w wybranym wątku przebiegu profilowania, który został spowodowany przez rywalizację o zasoby. Zdarzenie blokujące występuje, gdy wątek jest zmuszony do wstrzymania wykonywania, ponieważ inny wątek zablokował dostęp do zasobu.
 
- Ten widok przedstawia oś czasu wykonywania zdarzeń blokujących jako pionowy pasek na osi poziomej dla wątku i wątku, jako poziomy pasek. Gdy jest to konieczne, można powiększyć części osi czasu, aby wyświetlić poszczególne zdarzenia. Aby wyświetlić ścieżki wykonywania funkcji, które doprowadziły do zdarzenia, kliknij pasek zdarzeń. Funkcje są wyświetlane w **stos wywołań** okna. Jeśli kod źródłowy dla funkcji jest dostępny, możesz kliknąć nazwę funkcji, aby edytować plik źródłowy w środowisku IDE programu Visual Studio.
+ Ten widok przedstawia oś czasu wykonywania wątku jako poziomy pasek i zdarzenia blokowania jako pionowy pasek na poziomej osi czasu wątku. W razie potrzeby możesz powiększyć Sekcję osi czasu, aby wyświetlić poszczególne zdarzenia. Aby wyświetlić ścieżkę wykonywania funkcji, które doprowadziły do zdarzenia, kliknij pasek zdarzeń. Funkcje pojawiają się w oknie **stosu wywołań** . Gdy jest dostępny kod źródłowy funkcji, można kliknąć nazwę funkcji, aby edytować plik źródłowy w środowisku IDE programu Visual Studio.
 
-## <a name="navigate-the-timeline"></a>Przejdź na osi czasu
+## <a name="navigate-the-timeline"></a>Nawigowanie po osi czasu
 
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Aby powiększyć segment osi czasu
 
 - Kliknij i przeciągnij wskaźnik myszy, aby wybrać obszar osi czasu.
 
-     Po zwolnieniu przycisku myszy widok powiększa do segmentu wybrana wartość czasu. Możesz powtórzyć proces powiększenia bardziej szczegółowo. Pole przewijania na pasku przewijania czas reprezentuje rozmiar względny, segmentu czas, który jest wyświetlany w widoku.
+     Po zwolnieniu przycisku myszy widok zostanie powiększony do wybranego segmentu czasu. Możesz powtórzyć proces, aby powiększyć szczegóły. Pole przewijania na pasku przewijania czasu reprezentuje względny rozmiar segmentu czasu, który jest wyświetlany w widoku.
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Aby pomniejszyć na osi czasu
 
-- Kliknij przycisk **Pomniejsz** aby powrócić do poprzedniego poziomu powiększenia.
+- Kliknij pozycję **Powiększ** , aby powrócić do poprzedniego poziomu powiększenia.
 
-- Kliknij przycisk **resetowania powiększenia** do wyświetlenia całego osi czasu w widoku.
+- Kliknij pozycję **powiększenie Reset** , aby wyświetlić całą oś czasu w widoku.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Aby wyświetlić stos wywołań zdarzenia
 
-- W wykres osi czasu kliknij pasek pionowy, który reprezentuje zdarzenie.
+- Na wykresie osi czasu kliknij pionowy pasek, który reprezentuje zdarzenie.
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Aby wyświetlić lub edytować kod źródłowy funkcji w stosie wywołań
 
-- W **stos wywołań** okna, kliknij nazwę funkcji.
+- W oknie **stos wywołań** kliknij nazwę funkcji.
 
   Kod źródłowy funkcji musi być częścią bieżącego projektu.
 
-#### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Aby wyświetlić wszystkie wątki podczas uruchomienia profilowania zdarzenia rywalizacji o zasób
+#### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Aby wyświetlić zdarzenia rywalizacji o zasób we wszystkich wątkach w przebiegu profilowania
 
 - Na wykresie osi czasu kliknij nazwę lub identyfikator zasobu.
 
-     [Widok szczegółów zasobów](../profiling/resource-details-view-contention-data.md) pojawia się dla wybranego zasobu.
+     Zostanie wyświetlony [Widok szczegóły zasobu](../profiling/resource-details-view-contention-data.md) dla wybranego zasobu.
 
-#### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Aby wyświetlić dane rywalizacji wątków w okno procesów
+#### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Aby wyświetlić dane rywalizacji wątku w oknie procesy
 
-- Wykres osi czasu, kliknij **całkowita**.
+- Na wykresie osi czasu kliknij pozycję **łącznie**.
 
-     [Widok procesu](../profiling/process-view-contention-data.md) pojawia się za pomocą wątku wybrane.
+     Zostanie wyświetlony [Widok procesu](../profiling/process-view-contention-data.md) z wybranym wątkiem.

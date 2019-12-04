@@ -1,5 +1,5 @@
 ---
-title: 'DA0026: Przetwarzanie w czasie jądra nadmiernego użycia Procesora | Dokumentacja firmy Microsoft'
+title: 'DA0026: nadmierne przetwarzanie czasu procesora CPU w jądrze | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,32 +10,33 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906d24513982917a455fb7fc59940446c89dae45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c8b4cb63eb4647ddab4220ed6729894fe8a456f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936387"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777492"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Nadmierne zużycie czasu procesora w trybie jądra
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Nadmierne przetwarzanie czasu procesora CPU w trybie jądra
 
 |||
 |-|-|
-|Identyfikator reguły|TODO|
+|Identyfikator zasady|CZYNNOŚĆ|
 |Kategoria|Użycie narzędzia profilowania|
-|Metoda profilowania|Próbkowania|
-|Komunikat|Został zmierzony stosunkowo dużej ilości czasu Procesora w trybie jądra. Należy rozważyć zbadanie kodu źródłowego z włączonym próbkowaniem SysCall.|
-|Typ reguły|Informacje|
+|Metoda profilowania|Sond|
+|Komunikat|Mierzona stosunkowo dużą ilość czasu procesora CPU w trybie jądra. Rozważ zbadanie źródła z włączonym próbką SysCall.|
+|Typ reguły|Informacje programu|
 
- Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="cause"></a>Przyczyna
- Czas procesora CPU udział, który został wykonany w trybie jądra przekracza ilość czasu spędzonego w trybie użytkownika. Należy wziąć pod uwagę profilowanie ponownie i próbkowanie liczba wywołań systemowych (syscalls) w celu ustalenia przyczyny od czasu wykonania trybu jądra wysoka.
+ Proporcjonalny czas procesora CPU wykonywany w trybie jądra przekroczył czas spędzony w trybie użytkownika. Rozważ ponowne utworzenie profilu i próbkowanie liczby wywołań systemowych (systemowe) w celu określenia przyczyny czasu wykonywania wysokiego trybu jądra.
 
 ## <a name="rule-description"></a>Opis reguły
- Stosunkowo dużą część czas potrzebny aplikacji do wykonywania w trybie jądra mogą uzasadniać dalszego badania. Aplikacja w trybie użytkownika przechodzi do trybu jądra do wykonywania operacji We/Wy, poczekaj, aż wątek lub procesu synchronizacji w nim elementów podstawowych lub wykonać wywołania systemowe. Można zbadać rodzaje wywołań systemowych sprawia, że aplikacja, i funkcje, które odpowiadają po wybraniu opcji, aby zebrać stosy wywołań przykładowe opartym na wywołania systemowe.
+ Stosunkowo długi czas, przez jaki aplikacja poświęcana na wykonywanie w trybie jądra może uzasadnić dalsze badanie. Aplikacja trybu użytkownika przechodzi do trybu jądra w celu wykonania operacji we/wy, oczekiwania na elementy pierwotne synchronizacji wątków lub procesów lub wywołania systemowe. Można zbadać rodzaje wywołań systemowych, które są używane przez aplikację i jakie funkcje są odpowiedzialne za nich przy wybraniu opcji zbierania przykładowych stosów wywołań na podstawie wywołań systemowych.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby zbadać rodzaje wywołań systemowych, wykonywanych przez aplikację, ponownie uruchom profil i wybierz opcję, aby zebrać przykładów, w oparciu o wywołania systemowe. Zobacz [jak: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md) w przypadku korzystania z narzędzi profilowania w IDE, aby uzyskać więcej informacji. Jeśli używasz narzędzi profilowania z wiersza polecenia, zobacz **przykładowe opcje interwału** części [VSPerfCmd](../profiling/vsperfcmd.md) artykułu w odwołaniu do narzędzia wiersza polecenia Profiling Tools.
+ Aby zbadać rodzaje wywołań systemowych wykonywanych przez aplikację, należy ponownie uruchomić profil i wybrać opcję zbierania próbek w oparciu o wywołania systemowe. Aby uzyskać więcej informacji, zobacz [jak: wybrać zdarzenia próbkowania](../profiling/how-to-choose-sampling-events.md) , jeśli są uruchamiane narzędzia profilowania w środowisku IDE. Jeśli uruchamiasz narzędzia profilowania z wiersza polecenia, zobacz sekcję **Opcje interwału próbkowania** artykułu [VSPerfCmd](../profiling/vsperfcmd.md) w dokumentacji narzędzi wiersza polecenia narzędzia profilowania.

@@ -11,20 +11,21 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5330ea0494636130f3bc28c28d0e46bfc524bfb8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024662"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777702"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Unikaj używania wyjątków do przepływu sterowania
 
 |||
 |-|-|
-|Identyfikator reguły|DA0007|
+|Identyfikator zasady|DA0007|
 |Kategoria|Użycie .NET Framework|
 |Metody profilowania|Wszystkie|
 |Komunikat|Często są zgłaszane duże liczby wyjątków. Rozważ zmniejszenie użycia wyjątków w logice programu.|
@@ -38,7 +39,7 @@ ms.locfileid: "73024662"
 ## <a name="rule-description"></a>Opis reguły
  Chociaż używanie obsługi wyjątków do przechwytywania błędów i innych zdarzeń, które zakłócają wykonywanie programu, jest dobrym sposobem, korzystanie z programu obsługi wyjątków jako części zwykłej logiki wykonywania programu może być kosztowne i powinno być nieuniknione. W większości przypadków wyjątki powinny być używane tylko w przypadku sytuacji, w których występują rzadko i nie są oczekiwane. Wyjątków nie należy używać do zwracania wartości jako części typowego przepływu programu. W wielu przypadkach można uniknąć wywoływania wyjątków przez sprawdzenie poprawności wartości i użycie logiki warunkowej do zatrzymania wykonywania instrukcji, które powodują wystąpienie problemu.
 
- Aby uzyskać więcej informacji, zobacz sekcję [Zarządzanie wyjątkami](/previous-versions/msp-n-p/ff647790(v=pandp.10)#exception-management) w **rozdziale 5 — Poprawianie wydajności kodu zarządzanego** w celu **zwiększenia wydajności aplikacji .NET i skalowalności** **wzorców i praktyk firmy Microsoft** Biblioteka w witrynie MSDN.
+ Aby uzyskać więcej informacji, zobacz sekcję [Zarządzanie wyjątkami](/previous-versions/msp-n-p/ff647790(v=pandp.10)#exception-management) w **rozdziale 5 — Poprawianie wydajności kodu zarządzanego** w artykule **Poprawianie wydajności i skalowalności aplikacji .NET** w bibliotece **wzorców i praktyk firmy Microsoft** w witrynie MSDN.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
  Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku znaczniki. Znajdź kolumnę zawierającą wyjątki środowiska **.NET CLR (@ProcessInstance)\\liczbę pomiarów w programie Excel/s** . Ustal, czy istnieją określone fazy wykonywania programu, w których obsługa wyjątków jest częściej niż inne. Przy użyciu profilu próbkowania spróbuj identyfikować instrukcje throw i bloki try/catch generujące częste wyjątki. W razie potrzeby Dodaj logikę do bloków catch, aby ułatwić zrozumienie, które wyjątki są najczęściej obsługiwane. Jeśli to możliwe, Zastąp często wykonywane instrukcje throw lub bloki catch z prostą logiką sterowania przepływem lub kodem walidacji.

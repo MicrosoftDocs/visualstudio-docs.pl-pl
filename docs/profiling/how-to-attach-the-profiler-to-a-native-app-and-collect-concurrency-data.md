@@ -1,5 +1,5 @@
 ---
-title: Dołącz profiler do aplikacji natywnej i zbieranie danych współbieżności
+title: Dołączanie profilera do aplikacji natywnej i zbieranie danych współbieżności
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -7,69 +7,70 @@ ms.assetid: 12d3e0f3-4b74-4e66-8fbf-8ac99bd4f91c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 180c520b3bec53610f539ecb8ac21f86b5c5aa38
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 367c91035f5d37bd8b0c20f1df84c7a2ee2d487a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261443"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776930"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Dołączanie profilera do autonomicznej aplikacji natywnej i zbieranie danych współbieżności przy użyciu wiersza polecenia
-W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza poleceń Profiling Tools do dołączenia programu profilującego do uruchomionej natywnej aplikacji autonomicznej (C/C++) i zbierania wątku dane rywalizacji o zasoby.
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: dołączanie profilera do natywnej aplikacji autonomicznej i zbieranie danych współbieżności przy użyciu wiersza polecenia
+W tym artykule opisano, jak używać narzędzi wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania do dołączania profilera do uruchomionej aplikacji autonomicznejC++(C/) i zbierania danych rywalizacji o wątki.
 
 > [!NOTE]
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.
 
- Gdy profiler jest dołączony do aplikacji, można wstrzymywać i wznawiać zbieranie danych. Aby zakończyć sesję profilowania, Profiler musi nie jest już dołączony do aplikacji, a Profiler musi być jawnie zamknięty.
+ Gdy profiler jest dołączony do aplikacji, można wstrzymywać i wznawiać zbieranie danych. Aby zakończyć sesję profilowania, profiler nie może być już dołączony do aplikacji, a profiler musi być jawnie zamknięty.
 
-## <a name="attach-the-profiler-to-a-running-native-application"></a>Dołączanie profilera do uruchomionej natywnej aplikacji
+## <a name="attach-the-profiler-to-a-running-native-application"></a>Dołącz profiler do uruchomionej aplikacji natywnej
 
-#### <a name="to-attach-the-profiler-to-a-running-native-application"></a>Aby dołączyć profiler do uruchomionej natywnej aplikacji
+#### <a name="to-attach-the-profiler-to-a-running-native-application"></a>Aby dołączyć Profiler do uruchomionej aplikacji natywnej
 
 1. W wierszu polecenia wpisz następujące polecenie:
 
-     [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
+     [VSPerfCmd](../profiling/vsperfcmd.md) **/Start: współbieżność**
 
-     Używasz opcje w poniższej tabeli z **/start:concurrency** opcji.
+     Można użyć dowolnej z opcji w poniższej tabeli z opcją **/Start: współbieżność** .
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`Username`|Określa opcjonalną domenę i nazwę użytkownika konta, aby uzyskać dostęp do programu profilującego.|
-    |[/crosssession](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesjach logowania.|
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności Windows mają być zbierane podczas profilowania.|
-    |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500.|
-    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w pliku oddzielne (ETL).|
+    |[/User](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`Username`|Określa opcjonalną nazwę domeny i użytkownika konta, z którym ma zostać udzielony dostęp do profilera.|
+    |[/CrossSession](../profiling/crosssession.md)|Umożliwia profilowanie procesów w innych sesjach logowania.|
+    |[/WinCounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania.|
+    |[/AutoMark](../profiling/automark.md) **:** `Interval`|Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500.|
+    |[/Events](../profiling/events-vsperfcmd.md) **:** `Config`|Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym pliku (. etl).|
 
 2. Dołącz profiler do aplikacji docelowej, wpisując następujące polecenie:
 
-     **Narzędzia VSPerfCmd**[/ dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}
+     **VSPerfCmd**[/Attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`}
 
-     `PID` Określa identyfikator procesu aplikacji docelowej. Można wyświetlić identyfikatory i nazwy wszystkich uruchomionych procesów w Menedżerze zadań Windows.
+     `PID` określa identyfikator procesu aplikacji docelowej. Identyfikatory procesów wszystkich uruchomionych procesów można wyświetlić w Menedżerze zadań systemu Windows.
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
- Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą *VSPerfCmd.exe* opcje. Przez kontrolowanie zbierania danych może zbierać dane dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
+ Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą opcji *VSPerfCmd. exe* . Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takich jak uruchamianie lub zamykanie aplikacji.
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
-- Pary opcji w poniższej tabeli uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Pary opcji w poniższej tabeli rozpoczynają i zatrzymują zbieranie danych. Określ każdą opcję w osobnym wierszu polecenia. Zbieranie danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje (**/globaloff**) zbieranie danych dla wszystkich procesów.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia (**/processon**) lub zatrzymuje (**/processoff**) zbieranie danych dla procesu, identyfikator procesu (`PID`) określa.|
-    |[/ Dołączanie](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/ Odłącz](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/ Dołączanie** uruchamia zbieranie danych dla procesu, identyfikator procesu (`PID`) lub nazwę procesu (*Nazwa_procedury*) określa. **/ Odłącz** zatrzymuje zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli jest określony żaden proces.|
+    |[/GlobalOn/GlobalOff](../profiling/globalon-and-globaloff.md)|Uruchamia ( **/GlobalOn**) lub przerywa ( **/GlobalOff**) zbieranie danych dla wszystkich procesów.|
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/ProcessOn**) lub zatrzymywanie ( **/ProcessOff**) zbieranie danych dla procesu, który określa identyfikator procesu (`PID`).|
+    |[/Attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/Detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/Attach** uruchamia zbieranie danych dla procesu, który określa identyfikator procesu (`PID`) lub nazwę procesu (*ProcName*). **/Detach** zatrzyma zbieranie danych dla określonego procesu lub dla wszystkich procesów, jeśli żaden proces nie zostanie określony.|
 
-## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
- Aby zakończyć sesję profilowania, profiler nie może zbierać dane. Możesz zatrzymać zbieranie danych z aplikacji, która jest profilowana przy użyciu metody próbkowania przez zamknięcie aplikacji lub wywołanie **VSPerfCmd / Odłącz** opcji. Następnie należy wywołać **VSPerfCmd/shutdown** opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.
+## <a name="end-the-profiling-session"></a>Zakończ sesję profilowania
+ Aby zakończyć sesję profilowania, profiler nie może zbierać danych. Możesz zatrzymać zbieranie danych z aplikacji, która jest profilowana przy użyciu metody próbkowania przez zamknięcie aplikacji lub wywołanie opcji **VSPerfCmd/detach** . Następnie należy wywołać opcję **VSPerfCmd/shutdown** , aby wyłączyć profiler i zamknąć plik danych profilowania.
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1. Odłącz profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie:
+1. Odłącz Profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie:
 
-     **Narzędzia VSPerfCmd / Odłącz**
+     **VSPerfCmd/detach**
 
-2. Zamknij program profilujący, wpisując następujące polecenie:
+2. Zamknij program Profiler, wpisując następujące polecenie:
 
-     **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
+     **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)

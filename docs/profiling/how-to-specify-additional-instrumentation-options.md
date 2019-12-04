@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określanie dodatkowych opcji Instrumentacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Określanie dodatkowych opcji instrumentacji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,31 +11,32 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778703"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Instrukcje: Określanie dodatkowych opcji instrumentacji
 
-Możliwe jest instrumentowanie plików binarnych z za pomocą środowiska IDE programu Visual Studio lub za pomocą narzędzia wiersza polecenia. Jeśli Instrumentacji danych binarnych z poziomu środowiska IDE, możesz kontrolować ilość danych zebranych podczas instrumentacji, przez określenie dodatkowych opcji Instrumentacji do [VSInstr](../profiling/vsinstr.md) narzędzia. Te opcje są dostępne na poziomie docelowego lub sesji. Na przykład aby dołączyć lub wykluczyć określone funkcje w procesie instrumentacji, opcja dodatkowe Instrumentacji na poziomie docelowej.
+Pliki binarne można instrumentować za pomocą środowiska IDE programu Visual Studio lub za pomocą narzędzi wiersza polecenia. W przypadku Instrumentacji pliku binarnego z poziomu IDE można kontrolować ilość danych zbieranych w ramach usługi Instrumentation, określając dodatkowe opcje Instrumentacji dla narzędzia [VSInstr](../profiling/vsinstr.md) . Te opcje są dostępne w sesji lub na poziomie docelowym. Na przykład aby dołączyć lub wykluczyć określone funkcje podczas procesu instrumentacji, użyj opcji dodatkowe Instrumentacja na poziomie docelowym.
 
 > [!IMPORTANT]
-> Każdy sondowania, który jest wstawiany modyfikuje zachowanie oryginalnej programu nieco. Ta modyfikacja spowoduje, że obciążenie w czasie analizy. Mimo że przybliżeniem to obciążenie jest odejmowany, nadal ma skutki subtelne chronometrażu dla aplikacji wielowątkowych. [VSInstr](../profiling/vsinstr.md) narzędzie Pomoc opcji sterowanie zbieraniem danych podczas profilowania.
+> Każda sonda, która jest wstawiana modyfikuje zachowanie oryginalnego programu. Ta modyfikacja powoduje obciążenie w czasie analizy. Nawet w przypadku odejmowania zbliżania się tego kosztu, nadal ma delikatne efekty chronometrażu w aplikacjach wielowątkowych. Opcje narzędzia [VSInstr](../profiling/vsinstr.md) ułatwiają kontrolowanie zbierania danych podczas profilowania.
 
-## <a name="to-specify-additional-instrumentation-option"></a>Aby określić opcję dodatkowe Instrumentacji
+## <a name="to-specify-additional-instrumentation-option"></a>Aby określić dodatkową instrumentację
 
-1. W **Eksplorator wydajności**, wybierz opcję **sesji wydajności** a następnie kliknij prawym przyciskiem myszy i wybierz **właściwości**.
+1. W **Eksplorator wydajności**wybierz **sesję wydajności** , a następnie kliknij prawym przyciskiem myszy i wybierz pozycję **Właściwości**.
 
-2. W **strony właściwości**, kliknij przycisk **zaawansowane** właściwości.
+2. Na **stronie właściwości**kliknij pozycję **Zaawansowane** właściwości.
 
-3. Wpisz opcje w **dodatkowych opcji Instrumentacji** pole.
+3. Wpisz opcje w polu **dodatkowe opcje Instrumentacji** .
 
-     Na przykład użyć /CONTROL:THREAD, aby określić poziom profilowania. Aby uzyskać pełną listę opcji, zobacz [VSInstr](../profiling/vsinstr.md).
+     Na przykład użyj/CONTROL: THREAD, aby określić poziom profilowania. Aby uzyskać pełną listę opcji, zobacz [VSInstr](../profiling/vsinstr.md).
 
 4. Kliknij przycisk **OK**.
 

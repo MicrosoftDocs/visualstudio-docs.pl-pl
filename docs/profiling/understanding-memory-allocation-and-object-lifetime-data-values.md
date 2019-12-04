@@ -1,5 +1,5 @@
 ---
-title: Omówienie pamięci alokacji & obiektów danych okresów istnienia
+title: Opis alokacji pamięci & wartości danych okresu istnienia obiektu
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,33 +8,34 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b652ac052b26054c85955a144d4414d4fe43c005
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 6eec0c4bc5fc27e07bc04a8445ca14ce538ac376
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263807"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780003"
 ---
-# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Omówienie pamięci alokacji i obiekt okresu istnienia wartości danych
+# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Opis alokacji pamięci i wartości danych okresu istnienia obiektu
 
-*Alokacji pamięci .NET* profilowanie metody [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools umożliwia zbieranie informacji dotyczących rozmiaru i liczby obiektów, które zostały utworzone w alokacji lub zniszczyć wyrzucania elementów bezużytecznych i dodatkowe informacje na temat funkcji *stos wywołań* wystąpienia zdarzenia. A *stos wywołań* jest dynamiczne struktury, która przechowuje informacje dotyczące funkcji, które są wykonywane na procesorze.
+Metoda profilowania *alokacji pamięci .net* [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania zbiera informacje o rozmiarze i liczbie obiektów, które zostały utworzone w alokacji lub zniszczone w wyrzucaniu elementów bezużytecznych, oraz dodatkowe informacje o *stosie wywołań* funkcji po wystąpieniu zdarzenia. *Stos wywołań* jest strukturą dynamiczną, która przechowuje informacje o funkcjach wykonywanych na procesorze.
 
-Profiler pamięci przerywa działanie procesora komputera na każdej alokacji obiekt .NET Framework w profilowanej aplikacji. Jeśli są zbierane również informacje o okresie istnienia obiektu, profiler przerywa działanie procesora po każdym zdarzeniu wyrzucania elementów bezużytecznych w środowisku .NET Framework. Dane są agregowane dla każdej funkcji profilowanych i dla poszczególnych typów obiektu.
+Profiler pamięci przerywa procesor komputera przy każdej alokacji obiektu .NET Framework w profilowanej aplikacji. Jeśli są zbierane również informacje o okresie istnienia obiektu, profiler przerywa działanie procesora po każdym zdarzeniu wyrzucania elementów bezużytecznych w środowisku .NET Framework. Dane są agregowane dla każdej profilowanej funkcji i dla każdego typu obiektu.
 
 ## <a name="allocation-data"></a>Dane alokacji
 
-Gdy wystąpi zdarzenie .memory, całkowitej liczby i rozmiarów obiekty przydzielone lub zniszczone pamięci są zwiększane.
+Gdy wystąpi zdarzenie. Memory, Łączna liczba i rozmiary przydzieloną lub zniszczonych obiektów pamięci są zwiększane.
 
-Gdy wystąpi zdarzenie alokacji .memory, program profilujący zwiększa liczby próbek dla każdej funkcji na stosie wywołań. Podczas zbierania danych tylko jednej funkcji — na stosie wywołań jest aktualnie wykonuje kod w jego treści funkcji. Innych funkcji na stosie są elementów nadrzędnych w hierarchii wywołań funkcji, które oczekują na funkcje, które jest wywoływana w celu zwrócenia.
+Gdy wystąpi zdarzenie alokacji pamięci, profiler zwiększa liczbę próbek dla każdej funkcji na stosie wywołań. Gdy dane są zbierane, tylko jedna funkcja na stosie wywołań wykonuje obecnie kod w jego treści funkcji. Inne funkcje na stosie są elementami nadrzędnymi w hierarchii wywołań funkcji, które oczekują na zwrócenie przez te funkcje.
 
-- Dla zdarzenia alokacji, zwiększa profiler *wyłączne* liczba funkcji, która jest w trakcie wykonywania instrukcji próbek. Ponieważ próbek wyłącznych wchodzi w skład całości (*włącznie*) przykłady funkcji liczność próbki włączne aktualnie aktywnych funkcji również jest zwiększany.
+- W przypadku zdarzenia alokacji Profiler zwiększa liczbę *wyłącznych* próbek funkcji, która wykonuje obecnie instrukcje. Ze względu na to, że próbka wyłączna jest również częścią łącznej (*włącznie*) próbek funkcji, jest również zwiększana liczba włączonych próbek dla obecnie aktywnej funkcji.
 
-- Program profilujący zwiększa liczność próbki włączne wszystkich funkcji w stosie wywołań.
+- Profiler zwiększa liczbę włączonych próbek wszystkich innych funkcji na stosie wywołań.
 
-## <a name="lifetime-data"></a>Danych o okresie istnienia
+## <a name="lifetime-data"></a>Dane okresu istnienia
 
-Moduł odśmiecania pamięci środowiska .NET Framework zarządza alokacją i zwolnieniem pamięci dla aplikacji. W celu zoptymalizowania wydajności moduł zbierający elementy bezużyteczne, zarządzanego stosu jest podzielony na trzy generacje: 0, 1 i 2. Moduł odśmiecania pamięci w czasie wykonywania zapisuje nowe obiekty w generacji 0. Obiekty, które przeżyły kolekcje są promowane i przechowywane w generacji 1 i 2.
+Moduł wyrzucania elementów bezużytecznych .NET Framework zarządza alokacją i ilością pamięci dla aplikacji. Aby zoptymalizować wydajność modułu wyrzucania elementów bezużytecznych, sterta zarządzana jest dzielona na trzy generacje: 0, 1 i 2. Moduł zbierający elementy bezużyteczne w czasie wykonywania przechowuje nowe obiekty w generacji 0. Obiekty, które przeżyły kolekcje, są promowane i przechowywane w generacjach 1 i 2.
 
-Moduł odśmiecania pamięci odzyskuje pamięć, cofnięcie przydziału całego generacji obiektów. Dla obiektów utworzonych w profilowanej aplikacji widok okresu istnienia obiektu przedstawia liczbę i rozmiar obiektów oraz jego generacji, kiedy są odzyskiwane.
+Moduł zbierający elementy bezużyteczne odzyskuje pamięć przez cofnięcie przydziału całej generacji obiektów. W przypadku obiektów tworzonych przez profilowaną aplikację widok okres istnienia obiektu wyświetla liczbę i rozmiar obiektów oraz generację, gdy są odzyskiwane.

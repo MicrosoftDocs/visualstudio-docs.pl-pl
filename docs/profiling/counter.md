@@ -1,28 +1,29 @@
 ---
-title: Counter | Microsoft Docs
+title: Licznik | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e21e364d05641089fb7400fbbfa9873510037d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553087"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779483"
 ---
 # <a name="counter"></a>Licznik
-**Licznika** opcji zbiera dane z liczników wydajności procesora (sprzęt).
+Opcja **licznik** zbiera dane z liczników wydajności procesora (sprzętu).
 
-- Gdy używana jest metoda profilowania próbkowanie **licznika** Określa licznik wydajności na układ i liczbę zdarzeń licznika do użycia jako interwał próbkowania. Można określić tylko jeden licznik, korzystając z próbkowania.
+- W przypadku korzystania z metody profilowania próbkowania **licznik** Określa licznik wydajności on-Chip i liczbę zdarzeń licznika, które mają być używane jako interwał próbkowania. Przy użyciu próbkowania można określić tylko jeden licznik.
 
-- Gdy używana jest metoda profilowania Instrumentacja, liczbę zdarzeń licznika, które wystąpiły w przedziale między zdarzeniami poprzedni i bieżącej kolekcji są wyświetlane jako oddzielne pola w raportach profilera. Wiele **licznika** opcji można określić, gdy używasz instrumentacji.
+- W przypadku korzystania z metody profilowania Instrumentacji liczba zdarzeń licznika, które wystąpiły w interwale między poprzednimi a bieżącymi zdarzeniami kolekcji, jest wyświetlana jako osobne pola w raportach profilera. W przypadku korzystania z Instrumentacji można określić wiele opcji **licznika** .
 
-  Każdy typ procesora ma swój własny zestaw liczników wydajności sprzętu. Program profilujący definiuje zestaw liczników ogólnych problemów z wydajnością, które są wspólne dla prawie wszystkich procesorów. Aby wyświetlić listę liczników ogólnych i specyficznych dla procesora na komputerze, należy użyć narzędzia VSPerfCmd **QueryCounters** polecenia.
+  Każdy typ procesora ma swój własny zestaw liczników wydajności sprzętu. Profiler definiuje zestaw ogólnych liczników wydajności, które są wspólne dla niemal wszystkich procesorów. Aby wyświetlić listę liczników ogólnych i specyficznych dla procesora na komputerze, użyj polecenia VSPerfCmd **QueryCounters** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,25 +36,25 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ```
 
 #### <a name="parameters"></a>Parametry
- `Name` Nazwa licznika. Użyj VSPerfCmd.exe **/querycounters** opcję, aby wyświetlić listę nazw dostępne liczniki na komputerze.
+ `Name` nazwę licznika. Użyj opcji **/QueryCounters** VSPerfCmd. exe, aby wyświetlić listę nazw dostępnych liczników na komputerze.
 
- `Reload` Liczba zdarzeń licznika w interwale próbkowania. Nie należy używać przy użyciu metody instrumentacji.
+ `Reload` liczbę zdarzeń licznika w interwale próbkowania. Nie należy używać z metodą Instrumentacji.
 
- `FriendlyName` (Opcjonalnie) Ciąg używany zamiast `Name` w nagłówkach kolumn widoków i raportów profilera.
+ `FriendlyName` (opcjonalnie) ciąg, który ma zostać użyty zamiast `Name` w nagłówkach kolumn w raportach i widokach profilera.
 
 ## <a name="required-options"></a>Wymagane opcje
- Opcja liczników należy używać tylko z jedną z następujących opcji:
+ Opcji Counter można używać tylko z jedną z następujących opcji:
 
- **Początek:** `Trace` Inicjuje profiler przy użyciu metody instrumentacji.
+ **Uruchom:** `Trace` inicjuje profiler, aby użyć metody instrumentacji.
 
- **Uruchom:** `AppName` Rozpoczyna się określonej aplikacji i programu profilującego. Program profilujący musi zostać zainicjowany przy użyciu metody pobierania próbek.
+ **Uruchom:** `AppName` uruchamia określoną aplikację i Profiler. Profiler musi być zainicjowany, aby można było używać metody próbkowania.
 
- **Dołącz:** `PID` Uruchamia program profilujący i dołącza je do procesu określonego przez identyfikator procesu. Program profilujący musi zostać zainicjowany przy użyciu metody pobierania próbek.
+ **Dołącz:** `PID` uruchamia Profiler i dołącza go do procesu określonego przez identyfikator procesu. Profiler musi być zainicjowany, aby można było używać metody próbkowania.
 
 ## <a name="example"></a>Przykład
- Przykład metody pobierania próbek demonstracja przykładowej aplikacji w każdym 1000 wystąpień, licznika ogólnego profiler NonHaltedCycles.
+ Przykładowa Metoda próbkowania demonstruje sposób próbkowania aplikacji w każdym 1000 wystąpieniach ogólnego licznika profilera NonHaltedCycles.
 
- Przykład metody Instrumentacji pokazuje, jak zainicjować profilera służąca do gromadzenia zdarzeń licznika L2InstructionFetches. Nazwa licznika L2InstructionFetches dotyczy procesora.
+ W przykładzie metody instrumentacji pokazano, jak zainicjować profiler, aby zbierać zdarzenia licznika L2InstructionFetches. Nazwa licznika L2InstructionFetches jest specyficzna dla procesora.
 
 ```cmd
 ; Sample Method Example
@@ -66,6 +67,6 @@ VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

@@ -6,19 +6,20 @@ ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995334"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774129"
 ---
 # <a name="lineoff"></a>LineOff
-Domyślnie profiler zbiera kodu wiersza numer i wierszu numer przesunięcia dane źródłowe, gdy używana jest metoda profilowania próbkowanie. Narzędzia VSPerfCmd **LineOff** opcji wyłącza kolekcję danych numeru linii, gdy narzędzie VSPerfCmd są używane do uruchamiania aplikacji. Danych profilowania zbieranych funkcji poziomie podczas **LineOff** jest określony.
+Domyślnie profiler zbiera numer wiersza kodu źródłowego i dane przesunięcia numerów wierszy przy użyciu metody profilowania próbkowania. Opcja VSPerfCmd **LineOff** wyłącza zbieranie danych o numerach wierszy, gdy do uruchomienia aplikacji jest używany VSPerfCmd. Dane profilowania są zbierane do poziomu funkcji po określeniu **LineOff** .
 
- Możesz użyć **LineOff** tylko w przypadku **Uruchom** opcji i tylko gdy program profilujący został zainicjowany do próbkowania przy użyciu **Start**:**przykładowe** opcji.
+ Opcji **LineOff** można użyć tylko w przypadku opcji **uruchamiania** i tylko wtedy, gdy profiler został zainicjowany do próbkowania przy użyciu polecenia **Start**:**Sample** .
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,12 +31,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
  Brak
 
 ## <a name="required-options"></a>Wymagane opcje
- **LineOff** opcja może być używana tylko w wierszu polecenia, który zawiera **Uruchom** opcji.
+ Opcji **LineOff** można użyć tylko w wierszu polecenia zawierającym opcję **uruchamiania** .
 
- **Uruchom:** `AppName` Uruchamia określoną aplikację i rozpoczyna się profilowanie przy użyciu metody pobierania próbek.
+ **Uruchom:** `AppName` uruchamia określoną aplikację i rozpoczyna profilowanie przy użyciu metody próbkowania.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie uruchamia aplikację i profiler i wyłączenie próbkowania na poziomie wiersza.
+ Ten przykład uruchamia aplikację i Profiler i wyłącza próbkowanie na poziomie wiersza.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
@@ -44,6 +45,6 @@ VSPerfCmd.exe /Launch:TestApp.exe /LineOff
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

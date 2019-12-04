@@ -1,5 +1,5 @@
 ---
-title: Widok procesu | Dokumentacja firmy Microsoft
+title: Widok procesu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,33 +14,34 @@ ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a68a2a9f0ca96b943c0b09da5c60268963bc6a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da3097c276557238e6f5b521f6f7d3231434cd10
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973672"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772179"
 ---
 # <a name="process-view"></a>Widok procesu
-Widok procesu wyświetla danych profilowania dla procesów i wątków, które zostały wykonane podczas uruchomienia profilowania.
+Widok procesu przedstawia dane profilowania procesów i wątków, które zostały wykonane podczas przebiegu profilowania.
 
- Procesy są wyświetlane według nazwy. Wątki są wyświetlane jako węzły podrzędne procesu, który je utworzył. Wątki są nazywane przez funkcję, która jest uruchomiona w wątku lub etykieta **[ntdll.dll]** Jeśli brak symboli są dostępne.
+ Procesy są wyświetlane według nazwy. Wątki są wyświetlane jako węzły podrzędne procesu, który je utworzył. Wątki są nazwane przez funkcję, która uruchomiła wątek lub przez etykietę **[ntdll. dll]** , jeśli nie są dostępne żadne symbole.
 
- Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w widoku, a następnie wybierz **Dodaj/Usuń kolumny**. Ponadto możesz sortować dane, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
+ Aby dodać lub usunąć kolumny, kliknij prawym przyciskiem myszy w widoku, a następnie wybierz polecenie **Dodaj/Usuń kolumny**. Ponadto można sortować dane, klikając nazwę kolumny. Aby uzyskać więcej informacji, zobacz [How to: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
 
- Kolumny w widoku procesu są takie same dla danych, który jest generowany przy użyciu metody próbkowania i instrumentacji i danych, która zawiera dane pamięci platformy .NET. W poniższej tabeli opisano wartości w kolumnach.
+ Kolumny widoku procesu są takie same dla danych, które są generowane przy użyciu metody próbkowania i Instrumentacji oraz dla danych, które zawierają dane pamięci platformy .NET. W poniższej tabeli opisano wartości kolumn.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Unikatowy identyfikator**|Identyfikator wygenerowany przez program profilujący jest unikatowy dla proces lub wątek.|
-|**Identyfikator**|Wygenerowana przez system identyfikator proces lub wątek.|
-|**Nazwa**|Nazwa proces lub wątek.|
-|**Czas rozpoczęcia**|Liczba milisekund, czyli cykli procesora od rozpoczęcia profilowania do początku proces lub wątek.|
-|**Godzina zakończenia**|Liczba milisekund, czyli cykli procesora od czasu rozpoczęcia profilowania do końca proces lub wątek.|
+|**Unikatowy identyfikator**|Wygenerowany przez profiler identyfikator, który jest unikatowy dla procesu lub wątku.|
+|**#C1**|Wygenerowany przez system identyfikator procesu lub wątku.|
+|**Nazwa**|Nazwa procesu lub wątku.|
+|**Godzina rozpoczęcia**|Liczba milisekund lub cykli procesora od początku profilowania do początku procesu lub wątku.|
+|**Czas zakończenia**|Liczba milisekund lub cykli procesora od początku profilowania do końca procesu lub wątku.|
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
-- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+- [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)

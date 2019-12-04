@@ -1,5 +1,5 @@
 ---
-title: Widok danych metody Instrumentacji | Dokumentacja firmy Microsoft
+title: Widoki danych metody instrumentacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,60 +9,61 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995370"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774166"
 ---
-# <a name="instrumentation-method-data-views"></a>Widok danych metody Instrumentacji
+# <a name="instrumentation-method-data-views"></a>Widoki danych metody instrumentacji
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Widok podsumowania](../profiling/summary-view-instrumentation-data.md)
 
- Wyświetla listę funkcji, które używane najwięcej czasu i funkcje, które były wykonywane najbardziej indywidualną pracę.
+ Wyświetla listę funkcji, które były zużywane z największą ilością czasu i funkcji, które były najbardziej indywidualnej pracy.
 
 - [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)
 
- Wyświetla ścieżki wykonywania funkcji w formie drzewa hierarchicznego.
+ Wyświetla ścieżki wykonywania funkcji w hierarchicznym drzewie.
 
 - [Widok modułów](../profiling/modules-view-instrumentation-data.md)
 
- Organizuje dane profilowania przez moduł i wyświetla listę danych profilowania dla funkcji w module.
+ Organizuje dane profilowania według modułu i wyświetla listę danych profilowania dla funkcji w module.
 
-- [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
 
- Wyświetla danych profilowania dla funkcji nadrzędnych i podrzędnych wybranych funkcji.
+ Wyświetla dane profilowania dla funkcji nadrzędnych i podrzędnych wybranej funkcji.
 
 - [Widok funkcji](../profiling/functions-view-instrumentation-data.md)
 
- Wyświetla listę danych profilowania posortowanych według funkcji.
+ Wyświetla listę danych profilowania według funkcji.
 
 ## <a name="reference"></a>Tematy pomocy
 - [Widok szczegółów funkcji](../profiling/function-details-view.md)
 
- Wyświetla graficzny wykres zależności między wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.
+ Przedstawia graficzny wykres relacji między wybraną funkcją a funkcjami, które zostały wywołane i zostały wywołane przez wybraną funkcję.
 
 - [Widok procesu](../profiling/process-view.md)
 
- Wyświetla czas rozpoczęcia, zakończenia i okresem istnienia procesu dla wszystkich procesów tego wer profilowania.
+ Wyświetla listę początkowych, końcowych i okresów istnienia procesu dla wszystkich procesów przetwarzanych przez program raportowanie błędów.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
 
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody pobierania próbek.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody próbkowania.
 
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.
 
-- [Widok danych kontencji zasobów](../profiling/resource-contention-data-views.md)
+- [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)
 
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody rywalizacji wątków.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody rywalizacji o wątki.
 
 ## <a name="see-also"></a>Zobacz także
 - [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)

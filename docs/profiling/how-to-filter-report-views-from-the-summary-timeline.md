@@ -1,27 +1,28 @@
 ---
-title: 'Instrukcje: Filtrowanie widoków raportu z podsumowania osi czasu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: filtrowanie widoków raportu na podstawie podsumowania osi czasu | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 57065a7b258e8f9a2491332250cb38919bcb7910
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973802"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778950"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Instrukcje: Filtrowanie widoków raportu z podsumowania osi czasu
-Można filtrować dane wyświetlane w raportach wydajności, określając segment czasu na wykresie widoku podsumowania osi czasu. Podczas filtrowania raportów, obejmujący segmentu czas, który określiłeś reanalyzed jest plik danych profilowania.
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Instrukcje: filtrowanie widoków raportu na podstawie podsumowania osi czasu
+Dane, które pojawiają się w raportach wydajności, można filtrować, określając segment czasu na wykresie osi czasu widoku podsumowania. W przypadku filtrowania raportów plik danych profilowania jest ponownie analizowany w celu uwzględnienia określonego segmentu czasu.
 
-### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Aby filtrować raport profilowania z podsumowania osi czasu wykresu
+### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Aby odfiltrować raport profilowania z grafu podsumowania osi czasu
 
-1. Na wykresie oś czasu widoku podsumowania kliknij punktu na osi czasu, a następnie przeciągnij myszą do innego punktu na osi czasu.
+1. Na wykresie z osią czasu widoku podsumowania kliknij punkt na osi czasu, a następnie przeciągnij myszą do innego punktu na osi czasu.
 
-     Region, który określiłeś, jest zacieniowany.
+     Określony region jest cieniowany.
 
-2. Kliknij przycisk **filtru według zaznaczenia**.
+2. Kliknij pozycję **Filtruj według wyboru**.

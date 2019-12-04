@@ -1,96 +1,97 @@
 ---
-title: 'Profiler wiersz poleceń: Instrumentacja usługi natywnej i Pobierz danych o chronometrażu'
+title: 'Wiersz polecenia profilera: usługa natywna instrumentacji, pobieranie danych chronometrażu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28ba7d36afa8ff100dfd928797fc634a13924790
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c738a5183a7708c967192cf201e38a4f9384710e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032012"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778872"
 ---
-# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrumentowanie usługi natywnej i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
-W tym artykule opisano sposób używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia narzędzi Profilujących do Instrumentacji macierzystej (C/C++) usługi i zbierania szczegółowych danych o chronometrażu.
+# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Instrukcje: Instrumentacja usługi natywnej i zbieranie szczegółowych danych o chronometrażu przy użyciu wiersza polecenia profilera
+W tym artykule opisano sposób korzystania z narzędzi wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania do Instrumentacji natywnej usługi (C++C/) i zbierania szczegółowych danych o chronometrażu.
 
 > [!NOTE]
-> Nie można profilować usługi za pomocą metody instrumentacji, jeśli usługa nie można uruchomić ponownie po uruchomieniu komputera, usługa, która jest uruchamiana tylko podczas uruchamiania systemu operacyjnego.
+> Nie można profilować usługi za pomocą metody instrumentacji, jeśli usługa nie może zostać uruchomiona ponownie po uruchomieniu komputera, taka usługa, która jest uruchamiana tylko podczas uruchamiania systemu operacyjnego.
 >
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.
 
- Aby zebrać szczegółowe dane czasowe z macierzystej usługi używając metody instrumentacji, należy użyć [VSInstr.exe](../profiling/vsinstr.md) narzędzie, aby wygenerować instrumentowaną wersję składnika. Można następnie zastąpić nieinstrumentowaną wersję usługi z oprzyrządowaną wersją upewniając się, że usługa jest skonfigurowana do uruchamiania ręcznego. Następnie uruchamiasz profiler.
+ Aby zebrać szczegółowe dane chronometrażu z usługi natywnej przy użyciu metody instrumentacji, należy użyć narzędzia [VSInstr. exe](../profiling/vsinstr.md) do wygenerowania Instrumentacji wersji składnika. Następnie należy zamienić nieinstrumentację wersję usługi na wersję instrumentacji, upewniając się, że usługa jest skonfigurowana do uruchamiania ręcznego. Następnie uruchamiasz Profiler.
 
- Gdy usługa jest uruchomiona, danych o chronometrażu są automatycznie zbierane do pliku danych. Można wstrzymywać i wznawiać zbieranie danych podczas sesji profilowania.
+ Po uruchomieniu usługi dane chronometrażu są automatycznie zbierane do pliku danych. Podczas sesji profilowania można wstrzymywać i wznawiać zbieranie danych.
 
- Aby zakończyć sesję profilowania, wyłącz usługę i następnie jawnie Zamknij profiler.
+ Aby zakończyć sesję profilowania, Wyłącz usługę, a następnie jawnie wyłącz Profiler.
 
-## <a name="start-the-application-with-the-profiler"></a>Uruchom aplikację za pomocą profilera
+## <a name="start-the-application-with-the-profiler"></a>Uruchamianie aplikacji przy użyciu profilera
 
-#### <a name="to-start-profiling-a-native-service"></a>Aby rozpocząć profilowanie usługi macierzystej
+#### <a name="to-start-profiling-a-native-service"></a>Aby rozpocząć profilowanie usługi natywnej
 
 1. Otwórz okno wiersza polecenia.
 
-2. Użyj **VSInstr** narzędzie do generowania instrumentowanej wersji pliku binarnego usługi.
+2. Użyj narzędzia **VSInstr** , aby wygenerować instrumentację wersji pliku binarnego usługi.
 
-3. Zastąp oryginalny plik binarny na wersję instrumentowaną. W Menedżerze sterowania usługami Windows upewnij się, że usługa typ uruchomienia ustawiono ręcznie.
+3. Zamień oryginalny plik binarny na wersję z instrumentacją. W Menedżerze sterowania usługami systemu Windows upewnij się, że typ uruchamiania usługi jest ustawiony na ręczny.
 
-4. Uruchom program profiler. Wpisz:
+4. Uruchom Profiler. Wpisz:
 
-    **Narzędzia VSPerfCmd** [/start](../profiling/start.md) **: śledzenia**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]
+    **VSPerfCmd** [/Start](../profiling/start.md) **: Trace**  [/Output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - **Polecenia** opcja inicjuje profiler.
+   - Opcja **/Start: Trace** inicjuje profiler.
 
-   - **/Output:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację danych profilowania (. *Vsp*) pliku.
+   - Opcja **/Output:** `OutputFile` jest wymagana w przypadku programu **/Start**. `OutputFile` określa nazwę i lokalizację danych profilowania (. *VSP*).
 
-     Można użyć dowolnego z następujących opcji z **polecenia** opcji.
+     Można użyć dowolnej z następujących opcji z opcją **/Start: Trace** .
 
    > [!NOTE]
-   > **/User** i **/crosssession** opcje są zazwyczaj wymagane dla aplikacji ASP.NET.
+   > Opcje **/User** i **/CrossSession** są zwykle wymagane dla aplikacji ASP.NET.
 
    | Opcja | Opis |
    | - | - |
-   | [/ User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem procesu roboczego ASP.NET. Ta opcja jest wymagana, jeśli proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w **nazwa_użytkownika** kolumny na **procesy** kartę w Menedżerze zadań Windows. |
-   | [/crosssession](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach logowania. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań Windows. **Skróconej/CS** może być określona jako skrót **/crosssession**. |
-   | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | Określa liczbę sekund oczekiwania na zainicjowanie przed zwróceniem błąd programu profiler. Jeśli `Interval` nie zostanie określony, program profiler oczekuje w nieskończoność. Domyślnie **/start** zwraca natychmiast. |
-   | [/globaloff](../profiling/globalon-and-globaloff.md) | Aby uruchomić profiler z kolekcją danych jest wstrzymany, należy dodać **/globaloff** opcję **/start** wiersza polecenia. Użyj **globalon** Aby wznowić profilowanie. |
-   | [/ Licznik](../profiling/counter.md) **:** `Config` | Zbiera informacje z wydajności procesora, licznik określone w konfiguracji. Informacje licznika są dodawane do danych zbieranych podczas każdego zdarzenia profilowania. |
-   | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
-   | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
-   | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenie zdarzeń dla Windows (ETW) mają być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *etl*) pliku. |
+   | [/User](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem procesu roboczego ASP.NET. Ta opcja jest wymagana, jeśli proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie **Nazwa użytkownika** na karcie **procesy** w Menedżerze zadań systemu Windows. |
+   | [/CrossSession](../profiling/crosssession.md) | Umożliwia profilowanie procesów w innych sesjach logowania. Ta opcja jest wymagana, jeśli aplikacja ASP.NET jest uruchomiona w innej sesji. Identyfikator sesji jest wyświetlany w kolumnie Identyfikator sesji na karcie procesy w Menedżerze zadań systemu Windows. **/CS** można określić jako skrót dla **/CrossSession**. |
+   | [/WaitStart](../profiling/waitstart.md)[ **:** `Interval`] | Określa liczbę sekund oczekiwania na zainicjowanie profilera przed zwróceniem błędu. Jeśli nie określono `Interval`, profiler czeka na czas nieokreślony. Domyślnie **/Start** zwraca natychmiast. |
+   | [/GlobalOff](../profiling/globalon-and-globaloff.md) | Aby uruchomić profiler z wstrzymanym zbieraniem danych, Dodaj opcję **/GlobalOff** do wiersza polecenia **/Start** . Aby wznowić profilowanie, użyj **/GlobalOn** . |
+   | [/Counter](../profiling/counter.md) **:** `Config` | Zbiera informacje z licznika wydajności procesora określonego w konfiguracji. Informacje o licznikach są dodawane do danych zbieranych przy każdym zdarzeniu profilowania. |
+   | [/WinCounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności systemu Windows, który ma być zbierany podczas profilowania. |
+   | [/AutoMark](../profiling/automark.md) **:** `Interval` | Używaj tylko z **/WinCounter** . Określa liczbę milisekund między zdarzeniami zbierania liczników wydajności systemu Windows. Wartość domyślna to 500 ms. |
+   | [/Events](../profiling/events-vsperfcmd.md) **:** `Config` | Określa zdarzenie śledzenia zdarzeń systemu Windows (ETW), które ma być zbierane podczas profilowania. Zdarzenia ETW są zbierane w osobnym (. *ETL*). |
 
-5. Uruchom usługę z Menedżera kontroli usług.
+5. Uruchom usługę z poziomu Menedżera kontroli usług.
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
- Gdy usługa jest uruchomiona, można użyć *VSPerfCmd.exe* umożliwiające uruchamianie i zatrzymywanie zapisywania danych do pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie usługi.
+ Gdy usługa jest uruchomiona, można użyć opcji *VSPerfCmd. exe* , aby uruchomić i zatrzymać zapisywanie danych w pliku danych profilera. Kontrolowanie zbierania danych umożliwia zbieranie danych dla określonej części wykonywania programu, takich jak uruchamianie lub zamykanie usługi.
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
-- Następujące pary **VSPerfCmd** opcji uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w oddzielnym wierszu poleceń. Włączenie funkcji zbierania danych można włączać i wyłączać wiele razy.
+- Poniższe pary opcji **VSPerfCmd** uruchamiają i zatrzymują zbieranie danych. Określ każdą opcję w osobnym wierszu polecenia. Zbieranie danych można włączać i wyłączać wiele razy.
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[globalon /globaloff](../profiling/globalon-and-globaloff.md)|Uruchamia (**globalon**) lub zatrzymuje ( **/globaloff**) zbieranie danych dla wszystkich procesów.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/processon**) lub zatrzymuje ( **/processoff**) zbieranie danych dla procesu określonego przez identyfikator procesu (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia ( **/threadon**) lub zatrzymuje ( **/threadoff**) zbieranie danych dla wątku określonego przez identyfikator wątku (`TID`).|
+    |[/GlobalOn/GlobalOff](../profiling/globalon-and-globaloff.md)|Uruchamia ( **/GlobalOn**) lub przerywa ( **/GlobalOff**) zbieranie danych dla wszystkich procesów.|
+    |[/ProcessOn](../profiling/processon-and-processoff.md) **:** `PID` [/ProcessOff](../profiling/processon-and-processoff.md) **:** `PID`|Uruchamia ( **/ProcessOn**) lub zatrzymywanie ( **/ProcessOff**) zbieranie danych dla procesu określonego przez identyfikator procesu (`PID`).|
+    |[/ThreadOn](../profiling/threadon-and-threadoff.md) **:** `TID` [/ThreadOff](../profiling/threadon-and-threadoff.md) **:** `TID`|Uruchamia ( **/ThreadOn**) lub kończy ( **/ThreadOff**) zbieranie danych dla wątku określonego przez identyfikator wątku (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
- Aby zakończyć sesję profilowania, Zatrzymaj usługę, w której działa składnik instrumentowany, a następnie wywołaj **VSPerfCmd**[/shutdown](../profiling/shutdown.md) opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.
+## <a name="end-the-profiling-session"></a>Zakończ sesję profilowania
+ Aby zakończyć sesję profilowania, Zatrzymaj usługę, na której działa składnik instrumentacji, a następnie Wywołaj opcję **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) , aby wyłączyć profiler i zamknąć plik danych profilowania.
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1. Zatrzymaj usługę z Menedżera kontroli usług.
+1. Zatrzymaj usługę z menedżera kontroli usług.
 
 2. Zamknij program profilujący. Wpisz:
 
-     **Narzędzia VSPerfCmd/shutdown**
+     **VSPerfCmd/shutdown**
 
-3. Zastąp moduł instrumentowany jego oryginałem. Jeśli to konieczne, ponownie skonfiguruj typ uruchomienia usługi.
+3. Zamień moduł z pakietem na oryginalny. W razie potrzeby skonfiguruj ponownie typ uruchomienia usługi.
 
 ## <a name="see-also"></a>Zobacz także
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
-- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)
+- [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)

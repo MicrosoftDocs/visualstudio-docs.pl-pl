@@ -6,57 +6,58 @@ ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: baea4215ac3424bbf8d9d2acc713aac80e273d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822875"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779938"
 ---
 # <a name="vsperf"></a>VSPerf
-Użyj **VsPerf** narzędzie wiersza polecenia do:
+Użyj narzędzia wiersza polecenia **VsPerf** , aby:
 
-1. Profilowanie aplikacji platformy uniwersalnej systemu Windows z poziomu wiersza polecenia, gdy program Visual Studio nie jest zainstalowany na urządzeniu.
+1. Profilowanie aplikacji platformy UWP z poziomu wiersza polecenia, gdy program Visual Studio nie jest zainstalowany na urządzeniu.
 
-2. Profile, aplikacje klasyczne systemu Windows 8 i aplikacji systemu Windows Server 2012 za pomocą metoda profilowania próbkowanie.
+2. Profilowanie aplikacji klasycznych systemu Windows 8 i aplikacji systemu Windows Server 2012 przy użyciu metody profilowania próbkowania.
 
-   Aby uzyskać więcej informacji na temat opcji profilowania, zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+   Aby uzyskać więcej informacji na temat opcji profilowania, zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="uwp-apps-only"></a>Tylko aplikacje platformy uniwersalnej systemu Windows
- Te opcje są stosowane tylko do aplikacji platformy uniwersalnej systemu Windows.
-
-|||
-|-|-|
-|**App: {AppName}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|
-|**/package:{PackageFullName}**|Uruchamia program profilujący i czeka, aż do określonej aplikacji, które mają zostać uruchomione z Start menu.<br /><br /> Uruchom `vsperf /listapps` Aby wyświetlić nazwę aplikacji i Pełna_nazwa_pakietu zainstalowanych aplikacji.|
-|**/js**|Wymagane na potrzeby profilowania aplikacji JavaScript.<br /><br /> Zbieranie danych wydajności z aplikacji JavaScript.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|
-|**/noclr**|Opcjonalna. Nie zbieraj danych CLR.<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.<br /><br /> Optymalizacja, symboli zarządzanych, nie zostanie rozwiązany.|
-|**/listapps**|Lista zainstalowanych aplikacji, nazwy i PackageFullNames.|
-
-## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Aplikacje klasyczne systemu Windows 8 i tylko w aplikacji systemu Windows Server 2012
- Te opcje nie działają w aplikacjach platformy uniwersalnej systemu Windows.
+## <a name="uwp-apps-only"></a>Tylko aplikacje platformy UWP
+ Te opcje mają zastosowanie tylko do aplikacji platformy UWP.
 
 |||
 |-|-|
-|**/ uruchomienia: {pliku wykonywalnego}**|Rozpoczyna się i rozpoczyna się profilowanie określony plik wykonywalny.|
-|**przełącznika/args: {ExecutableArguments}**|Określa argumenty wiersza polecenia do przekazania **/uruchamianie** docelowej.|
-|**/ Console**|Przebiegi **/uruchamianie** elementu docelowego w nowym oknie polecenia.|
+|**/App: {nazwa_aplikacji}**|Uruchamia Profiler i czeka na uruchomienie określonej aplikacji z menu Start.<br /><br /> Uruchom `vsperf /listapps`, aby wyświetlić nazwę aplikacji i PackageFullName zainstalowanych aplikacji.|
+|**/Package: {PackageFullName}**|Uruchamia Profiler i czeka na uruchomienie określonej aplikacji z menu Start.<br /><br /> Uruchom `vsperf /listapps`, aby wyświetlić nazwę aplikacji i PackageFullName zainstalowanych aplikacji.|
+|**/js**|Wymagane do profilowania aplikacji JavaScript.<br /><br /> Zbieranie danych dotyczących wydajności z aplikacji JavaScript.<br /><br /> Używaj tylko z/Package lub/Attach.|
+|**/noclr**|Opcjonalny. Nie Zbieraj danych CLR.<br /><br /> Używaj tylko z/Package lub/Attach.<br /><br /> Optymalizacja nie zostanie rozpoznana przez żadne zarządzane symbole.|
+|**/listapps**|Wyświetl listę zainstalowanych nazw aplikacji i PackageFullNames.|
+
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Aplikacje klasyczne systemu Windows 8 i aplikacje systemu Windows Server 2012
+ Te opcje nie działają w aplikacjach platformy UWP.
+
+|||
+|-|-|
+|**Przełącznik/Launch: {plik wykonywalny}**|Rozpoczyna i rozpoczyna profilowanie określonego pliku wykonywalnego.|
+|**/args: {ExecutableArguments}**|Określa argumenty wiersza polecenia do przekazania elementu docelowego **przełącznik/Launch** .|
+|**/Console**|Uruchamia element docelowy **przełącznik/Launch** w nowym oknie poleceń.|
 
 ## <a name="all-applications"></a>Wszystkie aplikacje
- Te opcje stosowania się do aplikacji systemu Windows 8 lub Windows Server 2012.
+ Ta opcja ma zastosowanie do dowolnej aplikacji systemu Windows 8 lub Windows Server 2012.
 
 |||
 |-|-|
-|**/ Dołącz: {identyfikator PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy działających aplikacji procesu.|
-|**/file:{ReportName}**|Opcjonalna. Określa plik wyjściowy (zastąpi istniejący plik).<br /><br /> Użyj tylko przy użyciu przełącznika/Package lub / dołączyć.|
-|**/ pause**|Wstrzymaj zbieranie danych.|
+|**/Attach: {PID&#124;ProcessName} [, PID&#124;ProcessName]...**|Zbiera dane z określonych procesów.<br /><br /> Użyj Menedżera zadań, aby wyświetlić identyfikator procesu (PID) i nazwy procesów uruchomionych aplikacji.|
+|**/File: {ReportName}**|Opcjonalny. Określa plik wyjściowy (Zastępuje istniejący plik).<br /><br /> Używaj tylko z/Package lub/Attach.|
+|**/Pause**|Wstrzymywanie zbierania danych.|
 |**/Resume**|Wznów zbieranie danych.|
-|**/ stop**|Zatrzymaj zbieranie danych, a następnie Zakończ działanie procesów docelowych.|
-|**/ Odłącz**|Zatrzymaj zbieranie danych, ale pozwól procesów docelowych, które będą nadal działać.|
-|**status**|Pokaż stan profilera.|
+|**/Stop**|Zatrzymaj zbieranie danych i kończenie procesów docelowych.|
+|**/detach**|Zatrzymaj zbieranie danych, ale pozwól, aby procesy docelowe nadal działały.|
+|**/status**|Pokaż stan profilera.|
 
 ## <a name="see-also"></a>Zobacz także
 - [Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)
-- [Profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

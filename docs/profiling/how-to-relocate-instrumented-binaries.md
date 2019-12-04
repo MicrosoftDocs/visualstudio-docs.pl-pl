@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Zmień lokalizację instrumentowanych danych binarnych | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Zmienianie położenia plików binarnych w Instrumentacji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,28 +12,29 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96faf382145d7c4541f1fe66f872ad3622f64631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539305"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774903"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Instrukcje: Zmienianie lokalizacji instrumentowanych danych binarnych
+# <a name="how-to-relocate-instrumented-binaries"></a>Instrukcje: Zmienianie położenia plików binarnych z instrumentacją
 
-Podczas Instrumentacji sondy są wstawiane do plików binarnych do pomiaru wydajności aplikacji. Wybierając Zmień lokalizację instrumentowanych danych binarnych kopię oryginalny plik binarny jest Instrumentacji i umieścić w określonej lokalizacji. Ta opcja jest przydatna, jeśli nie chcesz, aby program profilujący do zmiany nazwy oryginalny plik binarny. Jeśli plik binarny nie został przeniesiony, jest zastępowany oryginalną wersję pliku binarnego.
+Podczas Instrumentacji sondy są wstawiane do pliku binarnego w celu zmierzenia wydajności aplikacji. Po wybraniu przeniesienia pliku binarnego z instrumentacją kopia oryginalnego pliku binarnego zostaje przyprowadzona i umieszczona w określonej lokalizacji. Ta opcja jest przydatna, jeśli nie chcesz, aby Profiler zmienił nazwę oryginalnego pliku binarnego. Jeśli plik binarny nie zostanie przeniesiony, oryginalna wersja pliku binarnego zostanie nadpisywana.
 
-## <a name="to-relocate-instrumented-binary"></a>Aby zmienić lokalizację instrumentowanych danych binarnych
+## <a name="to-relocate-instrumented-binary"></a>Aby przenieść plik binarny z instrumentacją
 
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. W **stron właściwości**, kliknij przycisk **binarne** właściwości.
+2. Na **stronie właściwości**kliknij właściwości **binarne** .
 
-3. Wybierz **przemieszczanie instrumentowanych plików binarny** pole wyboru.
+3. Zaznacz pole wyboru **Przenieś instrumentację plików binarnych** .
 
-4. Określ lokalizację dla instrumentowanego pliku binarnego.
+4. Określ lokalizację pliku binarnego Instrumentacji.
 
 ## <a name="see-also"></a>Zobacz także
 

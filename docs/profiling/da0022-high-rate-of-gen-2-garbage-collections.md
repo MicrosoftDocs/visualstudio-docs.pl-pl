@@ -10,20 +10,21 @@ ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ba70e303c3164417890be51e834d86d8983526cf
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4e1fa46162f2aea74c5b3cb8396ad5e8d4c9a4cf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910533"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779379"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Wysoki stopień wyrzucania elementów bezużytecznych Gen 2
 
 |||
 |-|-|
-|Identyfikator reguły|DA0022|
+|Identyfikator zasady|DA0022|
 |Kategoria|Użycie .NET Framework|
 |Metoda profilowania|Wszystkie|
 |Komunikat|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 2. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|

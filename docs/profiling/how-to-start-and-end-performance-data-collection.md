@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Rozpoczęcia i zakończenia zbierania danych o wydajności | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: uruchamianie i kończenie zbierania danych wydajności | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,30 +13,31 @@ ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c570145c2a8eae887de691c2507683dddb93b2cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da75306018cf19855c7cb7f74ac3ffc4e84bcd9a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996112"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774514"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: Rozpoczynanie i zatrzymywanie zbierania danych o wydajności
-Docelowe dane binarne, które chcesz należy dodać do profilu do sesji wydajności przed rozpoczęciem profilowania. Aby dodać element docelowy, kliknij prawym przyciskiem myszy **obiektów docelowych** w **Eksplorator wydajności**, a następnie kliknij przycisk **Dodaj binarne docelowej**. W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Zostanie dodany nowy plik binarny.
+# <a name="how-to-start-and-end-performance-data-collection"></a>Instrukcje: uruchamianie i kończenie zbierania danych wydajności
+Należy dodać docelowy plik binarny, który ma być profilem sesji wydajności przed rozpoczęciem profilowania. Aby dodać obiekt docelowy, kliknij prawym przyciskiem myszy pozycję **obiekty docelowe** w **Eksplorator wydajności**, a następnie kliknij polecenie **Dodaj docelowy plik binarny**. W oknie dialogowym **Dodaj docelowy plik binarny** wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Zostanie dodany nowy plik binarny.
 
 ### <a name="to-start-profiling"></a>Aby rozpocząć profilowanie
 
-1. Kliknij prawym przyciskiem myszy nazwę sesji wydajności **Eksplorator wydajności** okna i wybierz jedną z następujących opcji:
+1. Kliknij prawym przyciskiem myszy nazwę sesji wydajności w oknie **Eksplorator wydajności** i wybierz jedną z następujących opcji:
 
-    - **Uruchamianie z profilowaniem** — uruchamia aplikację i natychmiast rozpoczyna się profilowanie.
+    - **Uruchom przy użyciu profilowania** — uruchamia aplikację i od razu rozpoczyna profilowanie.
 
-    - **Uruchamianie przy użyciu profilowania wstrzymana** — uruchamia aplikację, ale nie rozpoczyna się profilowanie. Możesz rozpocząć profilowania, wybierając **Wznów zbieranie** w **kontroli zbierania danych** okna. Aby uzyskać więcej informacji, zobacz [jak: Wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md).
+    - **Uruchamianie przy użyciu wstrzymania profilowania** — uruchamia aplikację, ale nie rozpoczyna profilowania. Profilowanie można uruchomić, wybierając pozycję **Wznów zbieranie** w oknie **kontroli zbierania danych** . Aby uzyskać więcej informacji, zobacz [jak: Wstrzymywanie i wznawianie zbierania danych wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md).
 
-### <a name="to-end-profiling"></a>Aby zakończyć profilowania
+### <a name="to-end-profiling"></a>Aby zakończyć profilowanie
 
-- Kończenie sesji profilowania preferowaną metodą jest zakończyć działanie aplikacji. Natychmiast zatrzymać profilowanie na **Eksplorator wydajności** narzędzi, kliknij przycisk **zatrzymać**.
+- Preferowaną metodą zakończenia sesji profilowania jest zamknięcie aplikacji. Aby natychmiast zatrzymać profilowanie, na pasku narzędzi **Eksplorator wydajności** kliknij przycisk **Zatrzymaj**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
-- [Instrukcje: Wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+- [Instrukcje: wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md)

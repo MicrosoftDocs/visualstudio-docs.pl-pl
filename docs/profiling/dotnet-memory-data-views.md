@@ -1,5 +1,5 @@
 ---
-title: Widoki danych pamięci .NET | Dokumentacja firmy Microsoft
+title: Widoki danych pamięci .NET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,89 +9,90 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a866ba73669caba0c8d96647a134123f4ae753
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970047"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779275"
 ---
 # <a name="net-memory-data-views"></a>Widoki danych pamięci .NET
-Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, który zawiera dane profilowania pamięci platformy .NET.
+Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zawierają dane profilowania pamięci platformy .NET.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Widok podsumowania](../profiling/summary-view-dotnet-memory-data.md)
 
- Wyświetla listę funkcji i typów, które przydzielane najwięcej pamięci.
+ Wyświetla listę funkcji i typów, które przydzieliły największą ilość pamięci.
 
 - [Widok alokacji](../profiling/dotnet-memory-allocations-view.md)
 
- Wyświetla listę typów, które zostały przydzielone uruchomienia profilowania i drzewa wywołań (ścieżki wykonywania), które spowodowały alokacji typu.
+ Wyświetla listę typów, które zostały przydzielone w ramach uruchomienia profilowania, i drzewa wywołań (ścieżki wykonywania), które spowodowały alokację typu.
 
 - [Widok okresu istnienia obiektu](../profiling/object-lifetime-view.md)
 
- Zawiera typy, które zostały przydzielone uruchomienia profilowania i numer wystąpienia, rozmiar w bajtach i generacjach wyrzucania typu.
+ Wyświetla listę typów, które zostały przydzieloną w przebiegu profilowania oraz liczbę wystąpień, rozmiar w bajtach i generowanie wyrzucania elementów bezużytecznych typu.
 
 - [Widok drzewa wywołań — Próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
- Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania i dane alokacji pamięci funkcji podczas uruchomienia profilowania.
+ Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania i dane alokacji pamięci funkcji w ramach przebiegu profilowania.
 
 - [Widok modułów — Próbkowanie](../profiling/modules-view-dotnet-memory-sampling-data.md)
 
- Organizuje dane alokacji pamięci .NET przez moduł i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które zostały wykonywania, gdy pamięć została alokowana.
+ Organizuje dane alokacji pamięci .NET według modułu i wyświetla listę funkcji, wierszy kodu źródłowego i instrukcji, które były wykonywane w przypadku przydzielenia pamięci.
 
-- [Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 
- Wyświetla dane alokacji pamięci dla wybranej funkcji, funkcje, które wywoływały wybranej funkcji i funkcji, które były wywoływane przez wybraną funkcję.
+ Wyświetla dane alokacji pamięci dla wybranej funkcji, funkcje, które wywołały wybraną funkcję, oraz funkcje, które zostały wywołane przez wybraną funkcję.
 
 - [Widok funkcji — Próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)
 
- Wyświetla dane alokacji pamięci dla funkcji w trakcie uruchomienia profilowania.
+ Wyświetla dane alokacji pamięci dla funkcji w przebiegu profilowania.
 
 - [Widok wierszy — Próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)
 
- Wyświetla dane alokacji pamięci dla wierszy kodu źródłowego funkcji w trakcie uruchomienia profilowania.
+ Wyświetla dane alokacji pamięci dla wierszy kodu źródłowego funkcji w przebiegu profilowania.
 
 - [Widok wskaźników instrukcji (IP) — Próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 
- Wyświetla dane alokacji pamięci, aby uzyskać instrukcje funkcji w trakcie uruchomienia profilowania.
+ Wyświetla dane alokacji pamięci dla instrukcji funkcji w przebiegu profilowania.
 
 - [Widok drzewa wywołań — Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 
- Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania, dane alokacji pamięci i szczegółowych danych o chronometrażu dla instrumentowanego funkcji podczas uruchomienia profilowania.
+ Wyświetla hierarchiczne drzewo, które reprezentuje ścieżki wykonywania, dane alokacji pamięci i szczegółowe dane chronometrażu dla funkcji instrumentacji w przebiegu profilowania.
 
 - [Widok modułów — Instrumentacja](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 
- Organizuje dane profilowania przez moduł, a następnie wyświetla listę funkcji, dane alokacji pamięci i szczegółowe informacje o czasach dla modułu.
+ Organizuje dane profilowania według modułu i wyświetla listę funkcji, dane alokacji pamięci i szczegółowe informacje o chronometrażu dla modułu.
 
-- [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji pamięci sieciowej](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 
- Wyświetla dane alokacji pamięci i szczegółowe informacje o czasach dla wybranej funkcji instrumentowanych, funkcje, które wywoływały wybranej funkcji i funkcji, które były wywoływane przez wybraną funkcję.
+ Wyświetla dane alokacji pamięci i szczegółowe informacje o chronometrażu dla wybranej funkcji instrumentacji, funkcje, które wywołały wybraną funkcję, oraz funkcje, które zostały wywołane przez wybraną funkcję.
 
 - [Widok funkcji — Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 
- Wyświetla dane alokacji pamięci dla instrumentowanego funkcji w trakcie uruchomienia profilowania.
+ Wyświetla dane alokacji pamięci dla funkcji instrumentacji w przebiegu profilowania.
 
 ## <a name="reference"></a>Tematy pomocy
 - [Widok szczegółów funkcji](../profiling/function-details-view.md)
 
- Wyświetla graficzny wykres zależności między wybranej funkcji i funkcji, o nazwie, które były wywoływane przez wybraną funkcję.
+ Przedstawia graficzny wykres relacji między wybraną funkcją a funkcjami, które zostały wywołane i zostały wywołane przez wybraną funkcję.
 
 - [Widok procesu](../profiling/process-view.md)
 
- Listy procesów i wątków godziny rozpoczęcia i zakończenia.
+ Wyświetla listę czasów rozpoczęcia i zakończenia procesu i wątku.
 
 - [Widok znaczników](../profiling/marks-view.md)
 
- Wyświetla zdarzenia, które zostały wstawione do pliku danych profilowania ETW i próbkowania.
+ Wyświetla listę zdarzeń ETW i próbkowania, które zostały wstawione do pliku danych profilowania.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
 - [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
 
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody pobierania próbek.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody próbkowania.
 
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
 
- Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.

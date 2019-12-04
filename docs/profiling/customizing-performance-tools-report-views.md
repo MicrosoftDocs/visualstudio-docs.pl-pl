@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie wydajności widoków raportów narzędzi | Dokumentacja firmy Microsoft
+title: Dostosowywanie widoków raportów narzędzi wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,28 +9,29 @@ ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb3b0e56351e9da0af799db40a29721df5df6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552830"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777767"
 ---
 # <a name="customize-performance-tools-report-views"></a>Dostosowywanie widoków raportów narzędzi wydajności
-W tej sekcji opisano, jak dostosować raporty, które są generowane przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools.
+W tej sekcji opisano sposób dostosowywania raportów, które są generowane przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Dodawanie, usuwanie i sortowanie według kolumny w widoku raportu:** Można określić kolumny, które mają być wyświetlane w widokach opartych na tabelach, a następnie można określić kolejność wyświetlania kolumn. Wiersze z tabeli raportu można również sortować według wartości w kolumnach.|-   [Jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)|
-|**Wyeliminuj małe funkcje z raportu:** Aby wyeliminować funkcje, które są mniejsze niż określony próg z raportów.|-   [Jak: Konfigurowanie redukcji szumu w widoku raportu](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
-|**Filtrowanie dat w widoku raportu**: Można ograniczyć dane, które są wyświetlane w raporcie do segmentu czas uruchomienia profilowania. Segment czasu można określić w wykres osi czasu w widoku podsumowania, lub segment czasu można określić w zapytaniu, które należy zdefiniować w filtr widoku raportów. Można również filtrować raporty, aby pokazać tylko te funkcje, które są zdefiniowane w plikach kodu.|-   [Filtrowanie widoków raportu](../profiling/filtering-report-views.md)<br />-   [Jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Jak: Filtrowanie widoków raportów narzędzi profilowania w celu wyświetlenia tylko mojego kodu](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtr widoku raportów wydajności](../profiling/performance-report-view-filter.md)|
+|**Dodaj, Usuń i Sortuj według kolumn w widoku raportu:** Można określić kolumny, które mają być wyświetlane w widokach opartych na tabelach, a także określić kolejność wyświetlania kolumn. Wiersze tabeli raportu można również sortować według wartości kolumn.|-   [How to: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)|
+|**Eliminowanie małych funkcji z raportu:** Możesz wyeliminować funkcje, które są mniejsze niż określony próg z raportów.|-   [instrukcje: Konfigurowanie redukcji szumu w widokach raportu](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
+|**Przefiltruj datę w widoku raportu**: można ograniczyć dane wyświetlane w raporcie do segmentu czasu przebiegu profilowania. Można określić segment czasu na wykresie osi czasu widoku Podsumowanie lub można określić segment czasu w zapytaniu, które można zdefiniować w filtr widoku raportu. Możesz również filtrować raporty, aby wyświetlić tylko funkcje, które są zdefiniowane w plikach kodu.|-   [widoki raportów filtru](../profiling/filtering-report-views.md)<br />-   [jak: filtrowanie widoków raportu na podstawie podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [jak: filtrowanie widoków raportów narzędzi profilowania w celu wyświetlenia tylko mojego kodu](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />[Filtr widoku raportu wydajności](../profiling/performance-report-view-filter.md) -   |
 
 ## <a name="related-sections"></a>Sekcje pokrewne
-- [Widoki raportu wydajności](../profiling/performance-report-views.md) zawiera opis widoków, które służą do analizowania danych profilowania.
+- [Widoki raportów wydajności](../profiling/performance-report-views.md) Opisuje widoki, których można użyć do analizowania danych profilowania.
 
 ## <a name="see-also"></a>Zobacz także
 - [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)

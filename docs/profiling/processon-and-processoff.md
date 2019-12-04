@@ -1,34 +1,35 @@
 ---
-title: ProcessOn i ProcessOff | Dokumentacja firmy Microsoft
+title: ProcessOn i ProcessOff | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972417"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778391"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn i ProcessOff
-VSPerfCmd.exe **ProcessOff** i **ProcessOn** podpoleceń polecenia wstrzymywanie i wznawianie profilowania dla określonego procesu w sesji profilowania z wiersza polecenia. **ProcessOff** zatrzymuje profilowanie procesu i **ProcessOn** uruchamia profilowanie procesu.
+Podpolecenia VSPerfCmd. exe **ProcessOff** i **ProcessOn** wstrzymują i wznawiają profilowanie określonego procesu w sesji profilowania wiersza polecenia. **ProcessOff** przerywa proces profilowania procesu, a **ProcessOn** uruchamia profilowanie procesu.
 
- W większości przypadków należy określić **ProcessOn** lub **ProcessOff** jako jedyną opcję w VSPerfCmd.exe wiersza polecenia, ale można również łączyć z **GlobalOn**, **GlobalOff**, **ThreadOn**, i **ThreadOff** podpoleceń polecenia.
+ W większości przypadków należy określić **ProcessOn** lub **ProcessOff** jako jedyną opcję w wierszu polecenia VSPerfCmd. exe, ale można je również łączyć z podpoleceniami **GlobalOn**, **GlobalOff**, **ThreadOn**i **ThreadOff** .
 
- **ProcessOn** i **ProcessOff** podpoleceń polecenia interakcji z **GlobalOn** i **GlobalOff** podpoleceń polecenia, które kontrolują danych zbieranie dla wszystkich procesów w sesji profilowania wiersza polecenia i **ThreadOn** i **ThreadOff** podpoleceń polecenia, które kontroluje zbierania danych dla określonego wątku.
+ Podpolecenia **ProcessOn** i **ProcessOff** współpracują z podpoleceniami **GlobalOn** i **GlobalOff** , które kontrolują zbieranie danych dla wszystkich procesów w sesji profilowania wiersza polecenia i polecenia **ThreadOn** i **ThreadOff** , które kontrolują zbieranie danych dla określonego wątku.
 
- **ProcessOff** i **ProcessOn** podpoleceń polecenia wpływa na liczbę procesu uruchamiania/zatrzymywania, który jest przetwarzany przez profiler interfejsu API funkcji.
+ Podpolecenia **ProcessOff** i **ProcessOn** wpływają również na licznik uruchomienia/zatrzymania procesu, który jest MANIPULOWANY przez funkcje interfejsu API profilera.
 
-- **ProcessOff** natychmiast Ustawia liczbę uruchomień/zatrzymań procesu 0 i w związku z tym wstrzymuje profilowania.
+- **ProcessOff** natychmiast ustawia liczbę uruchomień/zatrzymań procesu na 0, w związku z tym wstrzymuje profilowanie.
 
-- **ProcessOn** natychmiast Ustawia liczbę uruchomień/zatrzymań procesu 1 i w związku z tym wznawia profilowania.
+- **ProcessOn** natychmiast ustawia liczbę uruchomień/zatrzymań procesu na 1, w związku z tym wznawia profilowanie.
 
-  Aby uzyskać więcej informacji, zobacz [API narzędzi profilowania](../profiling/profiling-tools-apis.md).
+  Aby uzyskać więcej informacji, zobacz [narzędzia profilowania interfejsów API](../profiling/profiling-tools-apis.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,26 +39,26 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `PID` Liczba całkowita identyfikator procesu, aby rozpocząć lub zatrzymać. Identyfikatory procesów są wyświetlane na **procesu** kartę w Menedżerze zadań Windows.
+ `PID` identyfikator liczby całkowitej procesu, który ma zostać uruchomiony lub zatrzymany. Identyfikatory procesów są wyświetlane na karcie **proces** Menedżera zadań systemu Windows.
 
-## <a name="required-subcommands"></a>Wymagane podpoleceń polecenia.
+## <a name="required-subcommands"></a>Wymagane podpolecenia
  Brak
 
-## <a name="valid-subcommands"></a>Nieprawidłowa podpoleceń polecenia.
- **ProcessOn** i **ProcessOff** można określić w wierszach polecenia, które również zawierać następujących podpoleceń polecenia.
+## <a name="valid-subcommands"></a>Prawidłowe podpolecenia
+ **ProcessOn** i **ProcessOff** można określić w wierszach poleceń, które również zawierają następujące podpolecenia.
 
- **Początek:** `Method` Inicjuje sesję profilowania wiersza polecenia, a następnie ustawia określonej metody profilowania.
+ **Rozpoczęcie:** `Method` inicjuje sesję profilowania wiersza polecenia i ustawia określoną metodę profilowania.
 
- **Uruchom:** `AppName` Uruchamia określoną aplikację i rozpoczyna się profilowanie przy użyciu metody pobierania próbek.
+ **Uruchom:** `AppName` uruchamia określoną aplikację i rozpoczyna profilowanie przy użyciu metody próbkowania.
 
- **Dołącz:** `PID` Rozpoczyna się profilowanie określonego procesu.
+ **Attach:** `PID` rozpoczyna profilowanie określonego procesu.
 
- **GlobalOff**&#124;**GlobalOn** zatrzymaniu lub uruchomieniu profilowania dla wszystkich procesów w sesji profilowania z wiersza polecenia.
+ **GlobalOff**&#124;**GlobalOn** przerywa lub uruchamia profilowanie dla wszystkich procesów w sesji profilowania wiersza polecenia.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Zatrzymuje się lub uruchamia profilowanie dla określonego wątku (tylko w przypadku metody Instrumentacji).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` zatrzymanie lub uruchomienie profilowania dla określonego wątku (tylko Metoda Instrumentacji).
 
 ## <a name="example"></a>Przykład
- W tym przykładzie **ProcessOff** podpolecenia jest używany do zbierania danych profilowania dla uruchamiania aplikacji.
+ W tym przykładzie podpolecenie **ProcessOff** służy do zbierania danych profilowania do uruchamiania aplikacji.
 
 ```cmd
 ; Initialize the profiler.
@@ -73,6 +74,6 @@ VSPerfCmd /Shutdown
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

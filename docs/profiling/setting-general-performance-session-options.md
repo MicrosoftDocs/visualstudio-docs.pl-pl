@@ -1,5 +1,5 @@
 ---
-title: Opcje sesji wydajności ogólnej ustawienie | Dokumentacja firmy Microsoft
+title: Ustawianie ogólnych opcji sesji wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,42 +7,43 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 023681b263e6e70048ec7d82d2cee741672989ff
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979913"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773945"
 ---
 # <a name="set-general-performance-session-options"></a>Ustawianie opcji sesji wydajności ogólnej
 
-Można ustawić metod zbierania i profilowanie danych konwencje nazewnictwa dla sesji wydajności programu Visual Studio Profiling Tools **ogólne** strony okna dialogowego właściwości sesji wydajności. Aby otworzyć to okno dialogowe z **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
+Można ustawić metodę kolekcji i konwencje nazewnictwa danych dla sesji wydajności programu Visual Studio narzędzia profilowania na stronie **Ogólne** okna dialogowego właściwości dla sesji wydajności. Aby otworzyć to okno dialogowe z **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-## <a name="choosing-data-collection-methods"></a>Wybieranie metody zbierania danych
+## <a name="choosing-data-collection-methods"></a>Wybieranie metod zbierania danych
 
-Ustawianie metody podstawowej kolekcji, wybierając jedną z opcji w obszarze **kolekcja profilowania**. Opcje te są opisane, zgodnie z poniższą tabelą:
-
-|||
-|-|-|
-|**Próbkowanie**. Metoda pobierania próbek zbiera informacje dotyczące profilowania w regularnych odstępach czasu. Ta metoda jest przydatna do znajdowania problemy dotyczące użycia procesora i jest metodą sugerowane na uruchamianie większości badania wydajności.|- [Zbieranie statystyk wydajności za pomocą metody pobierania próbek](../profiling/collecting-performance-statistics-by-using-sampling.md)|
-|**Instrumentacja**. Metoda Instrumentacja wprowadza do kopii modułu profilowania kodu, który rejestruje każdego wpisu, zakończenia i wywołanie funkcji funkcje w module podczas uruchomienia profilowania. Ta metoda jest przydatne do zbierania informacji chronometrażu o sekcji kodu i zrozumienie wpływu na operacje wejścia i wyjścia na wydajność aplikacji.|- [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**Współbieżność**. Metody współbieżności zbiera dane dla każdego zdarzenia, że bloki wykonywania kodu, takie jak kiedy wątek czeka na zablokowany dostęp do zasobu aplikacji ma zostać zwolniony. Ta metoda jest przydatna do analizowania aplikacji wielowątkowych.|- [Zbieranie danych współbieżności procesu i wątku](../profiling/collecting-thread-and-process-concurrency-data.md)|
-
- Może zbierać dane pamięci platformy .NET przy użyciu metody próbkowania i instrumentacji. Wybierz typ danych w ramach **profilowania pamięci środowiska .NET**.
+Metodę kolekcji bazowej ustawia się, wybierając jedną z opcji w obszarze **Kolekcja profilowania**. Opcje są opisane w poniższej tabeli:
 
 |||
 |-|-|
-|**Zbierz informacje dotyczące alokacji obiektów platformy .NET**. Domyślnie dane obejmują liczbę i rozmiar istnienia przydzielonych obiektów. Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć zbieranie danych pamięci .NET. |- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
-|**Również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET**. Zaznacz to pole wyboru, aby dołączyć dane dotyczące generacje kolekcji wyrzucania elementów, które zostały użyte do odzyskania obiektów pamięci.|- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) |
+|**Próbkowanie**. Metoda próbkowania zbiera informacje profilowania w regularnych odstępach czasu. Ta metoda jest przydatna do znajdowania problemów z użyciem procesora i jest sugerowaną metodą uruchamiania większości badań wydajności.|- [zbieranie statystyk wydajności przy użyciu próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)|
+|**Instrumentacja**. Metoda Instrumentacji wprowadza do kopii kodu profilowania modułu, który rejestruje każde wejście, wyjście i wywołanie funkcji funkcji w module podczas przebiegu profilowania. Ta metoda jest przydatna do zbierania szczegółowych informacji o chronometrażu w sekcji kodu oraz do poznania wpływu operacji wejścia i wyjścia na wydajność aplikacji.|- [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
+|**Współbieżność**. Metoda współbieżności zbiera dane dla każdego zdarzenia, które blokuje wykonywanie kodu, na przykład gdy wątek oczekuje na zwolnienie zablokowanego dostępu do zasobu aplikacji. Ta metoda jest przydatna do analizowania aplikacji wielowątkowych.|- [zbieranie danych współbieżności wątku i procesu](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
- Stroną sesji profilowania pojawia się po uruchomieniu profil aplikacji, którym można wstrzymać, wznowić i zatrzymanie profilowania.
+ Dane pamięci platformy .NET można zbierać przy użyciu metody próbkowania lub Instrumentacji. Wybierasz typ danych w obszarze **profilowania pamięci platformy .NET**.
 
- ![Stronie sesji profilowania](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+|||
+|-|-|
+|**Zbierz informacje o alokacji obiektu .NET**. Domyślnie dane obejmują liczbę i rozmiar przydzielonego obiektu. Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć zbieranie danych pamięci platformy .NET. |- [zbieranie danych przydziału pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**Zbierz również informacje o okresie istnienia obiektu .NET**. Zaznacz to pole wyboru, aby uwzględnić dane dotyczące generacji wyrzucania elementów bezużytecznych, które były używane do odzyskiwania obiektów pamięci.|- [zbieranie danych przydziału pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) |
+
+ Po rozpoczęciu profilowania aplikacji zostanie wyświetlona strona sesji profilowania, w której można wstrzymywać, wznawiać i zatrzymywać profilowanie.
+
+ ![Strona sesji profilowania](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 ## <a name="set-profiling-data-file-options"></a>Ustawianie opcji pliku danych profilowania
 
 |||
 |-|-|
-|**Raport**. Domyślnie plik profilowania (.vsp) danych o nazwie profilowanej aplikacji i znajduje się w folderze rozwiązania lub projektu. Ciąg daty jest również dołączana do nazwy, a zwiększona liczba jest dodawany do plików danych, które w przeciwnym razie byłyby takich samych nazwach. Te opcje można zmienić.|- [Jak: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
+|**Raport**. Domyślnie plik danych profilowania (. vsp) otrzymuje nazwę profilowanej aplikacji i znajduje się w folderze rozwiązanie lub projekt. Ciąg daty jest również dołączany do nazwy, a przyrostowy numer jest dodawany do plików danych, które w przeciwnym razie byłyby zduplikowane nazwy. Można zmienić te opcje.|- [: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|

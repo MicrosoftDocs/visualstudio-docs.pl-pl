@@ -1,5 +1,5 @@
 ---
-title: Porównywanie plików danych dotyczących wydajności | Dokumentacja firmy Microsoft
+title: Porównywanie plików danych wydajności | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,29 +9,30 @@ ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9802bc92a857192ce144432114a8add2c1becba8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788522"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777860"
 ---
 # <a name="compare-performance-data-files"></a>Porównywanie plików danych dotyczących wydajności
 
-Funkcji porównywania plików danych narzędzi profilowania można wybrać dwa pliki raportów (. *Vsp* lub. *vsps*) plików i Generowanie raportu, który przedstawia różnice, największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego.
+Funkcja porównywania plików danych narzędzia profilowania umożliwia wybranie dwóch plików raportu (. */or VSP* . *vsps*) pliki i generują raport pokazujący różnice, regresje wydajności i ulepszenia, które wystąpiły z jednej sesji profilowania do drugiej.
 
-Raport porównawczy danych plików z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools porównanie wyników analizy w jeden plik danych profilowania, aby wyniki analizy linii bazowej w innym pliku danych. Oba pliki danych należy został wygenerowany przy użyciu tej samej metody profilowania. Raport analizy porównania jest zapisywany jako. *vsps* pliku.
+Raport porównania plików danych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania porównuje wyniki analizy w jednym pliku danych profilowania do wyników analizy linii bazowej w innym pliku danych. Oba pliki danych muszą zostać wygenerowane za pomocą tej samej metody profilowania. Raport porównania analizowane jest zapisywany jako. plik *vsps* .
 
-Widok raportu porównania przedstawia widok tabeli zmienionych danych. W tabeli przedstawiono, różnicowej lub zmiana z linii bazowej. Delta jest obliczana przez określenie różnicy starej wartości, wartość punktu odniesienia i wartość wyniku z nowego analizy.
+Widok raportu porównawczego przedstawia widok tabeli zmienionych danych. W tabeli przedstawiono różnice lub zmiany z linii bazowej. Różnica jest obliczana przez określenie różnicy między starą wartością, wartością bazową i wartością wyniku z nowej analizy.
 
-Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.
+Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.
 
-Profilowanie danych, który jest dostępny dla porównania zawiera informacje, które jest wyświetlane w kolumnach. Aby uzyskać definicje tych nazw kolumn, zobacz [widoki raportu wydajności](../profiling/performance-report-views.md).
+Profilowanie danych, które są dostępne do porównania, zawiera informacje, które są wyświetlane w kolumnach. Aby uzyskać definicje tych nazw kolumn, zobacz [widoki raportów wydajności](../profiling/performance-report-views.md).
 
-Próg można ustawić do zmniejszenia szumu i odfiltrować wszystkie dane w widoku tabeli porównanie wierszy, które nie uległy zmianie o określoną wartość.
+Próg można ustawić, aby zmniejszyć szum i odfiltrować dane w widoku tabeli porównawczej wierszy, które nie uległy zmianie o określoną wartość.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Instrukcje: Porównywanie plików danych dotyczących wydajności](../profiling/how-to-compare-performance-data-files.md)
+[Instrukcje: porównywanie plików danych dotyczących wydajności](../profiling/how-to-compare-performance-data-files.md)

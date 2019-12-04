@@ -1,5 +1,5 @@
 ---
-title: Widok podsumowania - dane Instrumentacji | Dokumentacja firmy Microsoft
+title: Widok podsumowania — dane Instrumentacji | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,42 +8,43 @@ ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d53eef12c1c2dc59d8c442a040f721af75e7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557053"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778222"
 ---
-# <a name="summary-view---instrumentation-data"></a>Widok podsumowania - dane Instrumentacji
-Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funkcji w przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [widok podsumowania](../profiling/summary-view.md).
+# <a name="summary-view---instrumentation-data"></a>Widok podsumowania — dane Instrumentacji
+Widok podsumowania zawiera informacje o najbardziej wydajnych funkcjach w przebiegu profilowania. Aby uzyskać więcej informacji, w tym opis linków powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
 
 ## <a name="timeline-graph"></a>Wykres osi czasu
- Wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) według profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania. Wykres osi czasu można użyć do filtrowania widoku, aby w wybranym okresie. Aby uzyskać więcej informacji, zobacz [jak: Filtrowanie widoków raportu z podsumowania osi czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Wykres osi czasu w widoku Podsumowanie przedstawia wykorzystanie procesora (CPU) przez profilowaną aplikację w czasie, w którym nastąpiło profilowanie. Możesz użyć wykresu osi czasu do filtrowania widoku do wybranego przedziału czasu. Aby uzyskać więcej informacji, zobacz [How to: Filter viewss Reports from a Summary oś czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
-## <a name="hot-path"></a>Ścieżka aktywna
- **Ścieżka aktywna** Wyświetla ścieżka wykonania, która używane najwięcej czasu. Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla tej funkcji. Aby wyświetlić inne widoki dotyczące funkcji kliknij prawym przyciskiem myszy funkcję, a następnie kliknij widok z listy.
+## <a name="hot-path"></a>Ścieżka gorąca
+ **Ścieżka gorąca** wyświetla ścieżkę wykonywania, która była używana przez najwięcej czasu. Możesz kliknąć funkcję, aby wyświetlić widok szczegółów funkcji dla funkcji. Aby wyświetlić inne widoki dla funkcji, kliknij ją prawym przyciskiem myszy, a następnie kliknij Widok z listy.
 
- **Ścieżka aktywna** zawiera następujące dane dotyczące każdej funkcji:
-
-|Kolumna|Opis|
-|------------|-----------------|
-|**Nazwa**|Nazwa funkcji.|
-|**% Całkowitego czasu, który upłynął**|Procent cały czas w danych profilowania, która funkcja poświęcony na wykonywanie kodu, w jego treści funkcji i funkcji, które je wywołuje.|
-|**% Wyłącznego czasu, który upłynął**|Procent cały czas w danych profilowania, że funkcja poświęcony na wykonywanie kodu w jego treści funkcji. Czas w funkcje, które wywołały funkcję nie jest włączony.|
-
-## <a name="functions-with-most-individual-work"></a>Funkcje z największą ilością indywidualnej pracy
- Lista funkcji, które używane większość czasu wykonywania kodu w treści funkcji, a nie w funkcje, które go wywołały.
-
- **Funkcje z najbardziej samodzielnej pracy** zawiera następujące dane dotyczące każdej funkcji:
+ **Ścieżka gorąca** zawiera następujące dane dla każdej funkcji:
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|Nazwa funkcji.|
-|**% Własnego czasu**|Procent cały czas w danych profilowania, że funkcja poświęcony na wykonywanie kodu w jego treści funkcji. Czas w funkcje, które wywołały funkcję nie jest włączony.|
+|**% Czasu włącznego, który upłynął**|Wartość procentowa całego czasu w danych profilowania, jaką funkcja poświęca na wykonywanie kodu w jego treści funkcji i w funkcjach, które wywołuje.|
+|**% Czasu wyłącznego, który upłynął**|Wartość procentowa całego czasu w danych profilowania, jaką funkcja poświęca na wykonywanie kodu w jego treści funkcji. Czas spędzony w funkcjach wywoływanych przez funkcję nie jest uwzględniony.|
+
+## <a name="functions-with-most-individual-work"></a>Funkcje z największą liczbą zadań indywidualnych
+ Lista funkcji, które zużywają najwięcej czasu wykonywania kodu w treści funkcji, a nie w funkcjach, które wywołuje.
+
+ Funkcja **z największą** ilością pracy obejmuje następujące dane dla każdej funkcji:
+
+|Kolumna|Opis|
+|------------|-----------------|
+|**Nazwa**|Nazwa funkcji.|
+|**% Czasu wyłącznego**|Wartość procentowa całego czasu w danych profilowania, jaką funkcja poświęca na wykonywanie kodu w jego treści funkcji. Czas spędzony w funkcjach wywoływanych przez funkcję nie jest uwzględniony.|
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
-- [Widok podsumowania - dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)
+- [Widok podsumowania — dane pamięci platformy .NET](../profiling/summary-view-dotnet-memory-data.md)

@@ -9,14 +9,15 @@ ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eacf41d20164e4526e4f7bf5c2493dde0a00a2b3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189366"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778924"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia autonomiczny profiler oparty na wierszu polecenia, który można uruchomić bez instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Taka sytuacja występuje, gdy komputer nie ma zainstalowanego środowiska deweloperskiego. Na przykład nie należy instalować środowiska deweloperskiego na produkcyjnym serwerze sieci Web.
@@ -28,7 +29,7 @@ ms.locfileid: "73189366"
 
 1. Pobierz [Narzędzia do oceny wydajności dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio).
 
-1. Zlokalizuj Instalatora profilu autonomicznego (*vs_standaloneprofiler. exe*), do którego pobrano narzędzia do oceny wydajności, i uruchom go.
+1. Zlokalizuj Instalatora profilu autonomicznego (*vs_standaloneprofiler. exe*), do którego pobrano narzędzia do oceny wydajności i uruchom go.
 
 2. Dodaj ścieżki dla *vsintr. exe* i *msdis150. dll* do ścieżki systemowej.
 
@@ -49,7 +50,7 @@ ms.locfileid: "73189366"
    > [!NOTE]
    > Aby uzyskać szczegółowe instrukcje dotyczące sposobu konfigurowania pakietu serwera symboli, zobacz [How to: Reference informacje o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
-6. Użyj narzędzia [VSPerfReport](../profiling/vsperfreport.md) , aby serializować symbole do pliku danych profilowania (. vsp). Użyj **VSPerfReport/Summary: wszystkie przełączniki/PACKSYMBOLS** . Jeśli nie masz symboli wstawionych do pliku danych, upewnij się, że jest ustawiona zmienna środowiskowa _NT_SYMBOL_PATH.
+6. Użyj narzędzia [VSPerfReport](../profiling/vsperfreport.md) , aby serializować symbole do pliku danych profilowania (. vsp). Użyj **VSPerfReport/Summary: wszystkie przełączniki/PACKSYMBOLS** . Jeśli nie masz symboli wstawionych do pliku danych, upewnij się, że masz ustawioną zmienną środowiskową _NT_SYMBOL_PATH.
 
 ## <a name="see-also"></a>Zobacz także
 - [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

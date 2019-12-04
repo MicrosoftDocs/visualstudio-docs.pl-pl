@@ -1,47 +1,48 @@
 ---
-title: 'Profiler wiersz poleceń: Aby uzyskać szczegółów chronometrażu usługi'
+title: 'Wiersz polecenia profilera: instrument umożliwiający uzyskanie szczegółowych informacji o chronometrażu usługi'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e9271974857da4fffa7d053afdb2b160fb72ede4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 915999dbad4cb24fe25fd182c093b8e83e11314e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033047"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779600"
 ---
-# <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody Instrumentacji z wiersza polecenia profilera
-W tej sekcji opisano procedury składowane i opcji zbierania wydajności szczegółowe dane dla usług Windows przy użyciu metody Instrumentacji z wiersza polecenia.
+# <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla usług przy użyciu metody instrumentacji z wiersza polecenia profilera
+W tej sekcji opisano procedury i opcje dotyczące zbierania szczegółowych danych wydajności dla usług systemu Windows przy użyciu metody instrumentacji z wiersza polecenia.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profilowanie usługi .NET**|-   [Jak: Instrumentacja usługi .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
-|**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**Profil usługi języka C/C++**|-   [Jak: Instrumentowanie usługi natywnej i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
+|**Profilowanie usługi .NET**|-   [: Instrumentacja usługi .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
+|**Dodawanie danych interakcji warstwy**|-   [Zbieraj dane interakcji warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Profilowanie usługi CC++ /**|-   [: Instrumentacja usługi natywnej i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
-### <a name="profile-windows-services"></a>Profil usługi Windows
+### <a name="profile-windows-services"></a>Profile usług systemu Windows
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profil przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
-|**Profile.NET pamięć alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
-|**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Profilowanie przy użyciu metody próbkowania**|-   [zbierać dane statystyczne aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|
+|**Profile.NET alokacji pamięci i wyrzucania elementów bezużytecznych**|-   [zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+|**Profilowanie zasobów i aktywność wątku**|-   [zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
-### <a name="profile-by-using-the-instrumentation-method"></a>Profil przy użyciu metody Instrumentacji
+### <a name="profile-by-using-the-instrumentation-method"></a>Profilowanie przy użyciu metody instrumentacji
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profil aplikacji autonomicznej (klienta)**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
-|**Profil aplikacji sieci Web ASP.NET**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
+|**Samodzielne Profilowanie aplikacji (klienta)**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**Profilowanie aplikacji sieci Web ASP.NET**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 
-### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie raportów i widoków danych Instrumentacji
-- [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)
+### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie widoków i raportów danych Instrumentacji
+- [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)

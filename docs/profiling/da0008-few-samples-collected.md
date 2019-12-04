@@ -1,5 +1,5 @@
 ---
-title: 'DA0008: Zebrano kilka próbek | Dokumentacja firmy Microsoft'
+title: 'DA0008: kilka próbek zebranych | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,30 +11,31 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936621"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779444"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008: Zebrano kilka próbek
+# <a name="da0008-few-samples-collected"></a>DA0008: Kilka zebranych przykładów
 
 |||
 |-|-|
-|Identyfikator reguły|DA0008|
+|Identyfikator zasady|DA0008|
 |Kategoria|Użycie narzędzia profilowania|
-|Metoda profilowania|Próbkowania|
-|Komunikat|Zebrano tylko kilka przykładów. Należy wziąć pod uwagę dłużej przebiegu lub zwiększenie częstotliwości próbkowania dla uzyskania bardziej znaczących wyników.|
-|Typ reguły|Informacje|
+|Metoda profilowania|Sond|
+|Komunikat|Zebrano tylko kilka przykładów. Należy rozważyć dłuższy przebieg lub szybszy współczynnik próbkowania, aby uzyskać bardziej znaczące wyniki.|
+|Typ reguły|Informacje programu|
 
 ## <a name="cause"></a>Przyczyna
- Kilka przykładów zostały zebrane podczas uruchomienia profilowania.
+ Tylko kilka przykładów zostało zebranych w przebiegu profilowania.
 
 ## <a name="rule-description"></a>Opis reguły
- Gdy używana jest metoda pobierania próbek, należy zbierać są statystycznie istotne liczba próbek, aby upewnić się, że dane reprezentują program rzeczywiste zachowanie. Aby zminimalizować błędy pobierania próbek, należy spróbować zbieranie co najmniej 1000 próbek zachowanie wykonania instrukcji programu. Jeśli nie zbieraj, wystarczająco dużo próbki, można możesz błąd podczas analizowania danych profilowania.
+ Gdy używana jest metoda próbkowania, należy zebrać statystycznie znaczącą liczbę próbek, aby upewnić się, że dane reprezentują rzeczywiste zachowanie programu. Aby zminimalizować błędy próbkowania, należy spróbować zebrać co najmniej 1000 próbek zachowań wykonywania instrukcji programu. Jeśli nie zbierasz wystarczającej ilości próbek, podczas analizowania danych profilowania możesz być w stanie wystąpić.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Należy wziąć pod uwagę profilowania już wykonywania aplikacji lub za pomocą próbkowania szybciej uzyskać wyniki są statystycznie istotne. Aby dowiedzieć się, jak zmienić częstotliwość próbkowania w środowisku IDE programu Visual Studio, zobacz [jak: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md). Aby uzyskać więcej informacji o tym, jak zmienić częstotliwość próbkowania, korzystając z wiersza polecenia Profiling Tools, zobacz [czasomierza](../profiling/timer.md) w [VSPerfCmd](../profiling/vsperfcmd.md) odwołania.
+ Należy rozważyć profilowanie dłuższego uruchomienia aplikacji lub użycie szybszej szybkości próbkowania w celu uzyskania statystycznie znaczących wyników. Aby uzyskać informacje o sposobie zmiany częstotliwości próbkowania w środowisku IDE programu Visual Studio, zobacz [How to: Choose Events próbking](../profiling/how-to-choose-sampling-events.md). Aby uzyskać więcej informacji o sposobie zmiany częstotliwości próbkowania podczas korzystania z wiersza polecenia narzędzia profilowania, zobacz [Timer](../profiling/timer.md) w [VSPerfCmd](../profiling/vsperfcmd.md) Reference.

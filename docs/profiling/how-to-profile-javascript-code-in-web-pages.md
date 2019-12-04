@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Profiluj kod JavaScript na stronach sieci Web | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: profilowanie kodu JavaScript na stronach sieci Web | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,66 +9,67 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07c628b3c1f0be1c7ecc615dcae44f7736aa884e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539376"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775309"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Instrukcje: Profiluj kod JavaScript na stronach sieci web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Instrukcje: profilowanie kodu JavaScript na stronach sieci Web
 
-Visual Studio Profiling Tools umożliwia zbieranie danych wydajności dla kodu JavaScript, która jest wykonywana w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, dowolnej strony sieci web lub aplikacji JavaScript przy użyciu Instrumentacji, metoda profilowania. Wymaga programu Internet Explorer 8 lub nowszy.
+Program Visual Studio narzędzia profilowania może zbierać dane dotyczące wydajności kodu JavaScript, który jest wykonywany w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci Web, dowolnej stronie sieci Web lub aplikacji JavaScript przy użyciu metody profilowania Instrumentacji. Wymaga programu Internet Explorer 8 lub nowszego.
 
 > [!WARNING]
-> Aby profilować kod JavaScript w aplikacjach platformy uniwersalnej systemu Windows, zobacz [pamięć języka JavaScript](../profiling/javascript-memory.md)
+> Aby profilować kod JavaScript w aplikacjach platformy UWP, zobacz [JavaScript Memory](../profiling/javascript-memory.md)
 
-Aby utworzyć sesję wydajności, można użyć Kreatora profilowania. Określ metody instrumentacji, a następnie określ JavaScript profilowania opcję na stronie Instrumentacji w oknie dialogowym właściwości sesji wydajności.
+Aby utworzyć sesję wydajności, można użyć Kreatora profilowania. Określ metodę instrumentacji, a następnie określ opcję profilowania JavaScript na stronie Instrumentacja okna dialogowego właściwości dla sesji wydajności.
 
-Po określeniu profilowanie plików JavaScript, kod JavaScript, który wykonuje w przeglądarce i [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kod, który jest wykonywany na serwerze są profilowane.
+Podczas określania profilowania JavaScript, zarówno kod JavaScript wykonywany w przeglądarce, jak i kod [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], który jest wykonywany na serwerze, są profilowane.
 
-- Aby uzyskać [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji sieci web, zarówno kod JavaScript, który jest wykonywany w przeglądarce i [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kod, który jest wykonywany na serwerze są profilowane.
+- W przypadku aplikacji sieci Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] zarówno kod JavaScript wykonywany w przeglądarce, jak i kod [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] wykonywany na serwerze są profilowane.
 
-- Dla dowolnej strony sieci web kod JavaScript, który jest wykonywany w przeglądarce jest profilowana.
+- W przypadku dowolnej strony sieci Web kod JavaScript wykonywany w przeglądarce jest profilowany.
 
-## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Aby profilować kod JavaScript w projekcie aplikacji sieci web platformy ASP.NET
+## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Aby profilować kod JavaScript w projekcie aplikacji sieci Web ASP.NET
 
-1. Otwórz [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] projektu sieci web w programie Visual Studio.
+1. Otwórz projekt sieci Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] w programie Visual Studio.
 
-2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.
+2. W menu **Analizuj** kliknij polecenie **Uruchom Kreatora wydajności**.
 
-3. Na pierwszej stronie kreatora wydajności, należy określić **Instrumentacji** metoda profilowania, a następnie kliknij przycisk **dalej**.
+3. Na pierwszej stronie Kreatora wydajności Określ metodę profilowania **Instrumentacji** , a następnie kliknij przycisk **dalej**.
 
-4. Na drugiej stronie kreatora, upewnij się, że bieżący projekt jest zaznaczony na liście elementów docelowych, a następnie kliknij przycisk **dalej.**
+4. Na drugiej stronie kreatora upewnij się, że na liście elementów docelowych wybrano bieżący projekt, a następnie kliknij przycisk **Dalej.**
 
-5. Na trzeciej stronie kreatora wybierz **Profiluj kod JavaScript** pole wyboru, a następnie kliknij przycisk **dalej**.
+5. Na trzeciej stronie kreatora zaznacz pole wyboru **profil JavaScript** , a następnie kliknij przycisk **dalej**.
 
-6. Na czwartej stronie kreatora kliknij **Zakończ** do uruchomienia aplikacji sieci web w przeglądarce.
+6. Na czwartej stronie kreatora kliknij przycisk **Zakończ** , aby uruchomić aplikację sieci Web w przeglądarce.
 
-7. Przetestuj funkcjonalność, która powinny być profilowane.
+7. Wykonuj funkcje, które chcesz profilować.
 
 8. Aby zakończyć sesję profilowania, zamknij przeglądarkę.
 
-### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Profilowanie kodu JavaScript w stronach sieci web lub aplikacji JavaScript
+### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Aby profilować kod JavaScript na poszczególnych stronach sieci Web lub w aplikacjach JavaScript
 
 1. Otwórz program Visual Studio.
 
-2. Na **analizy** menu, kliknij przycisk **Uruchom Kreatora wydajności**.
+2. W menu **Analizuj** kliknij polecenie **Uruchom Kreatora wydajności**.
 
-3. Na pierwszej stronie kreatora wydajności, należy określić **Instrumentacji** metoda profilowania, a następnie kliknij przycisk **dalej**.
+3. Na pierwszej stronie Kreatora wydajności Określ metodę profilowania **Instrumentacji** , a następnie kliknij przycisk **dalej**.
 
-4. Na drugiej stronie kreatora kliknij aplikację ASP.NET lub JavaScript, a następnie kliknij przycisk **dalej.**
+4. Na drugiej stronie kreatora kliknij aplikację ASP.NET lub JavaScript, a następnie kliknij przycisk **Dalej.**
 
 5. Na trzeciej stronie kreatora:
 
-    1. Wpisz adres URL strony w **jakim adresem URL lub ścieżką będzie działała aplikacja sieci** pole.
+    1. Wpisz adres URL strony w polu **adres URL lub ścieżka uruchomi aplikację** .
 
-    2. Wybierz **Profiluj kod JavaScript** pole wyboru, a następnie kliknij przycisk **dalej**.
+    2. Zaznacz pole wyboru **profil JavaScript** , a następnie kliknij przycisk **dalej**.
 
-6. Na czwartej stronie kreatora kliknij **Zakończ** można uruchomić strony sieci web w przeglądarce.
+6. Na czwartej stronie kreatora kliknij przycisk **Zakończ** , aby uruchomić stronę sieci Web w przeglądarce.
 
-7. Przetestuj funkcjonalność, która powinny być profilowane.
+7. Wykonuj funkcje, które chcesz profilować.
 
 8. Aby zakończyć sesję profilowania, zamknij przeglądarkę.

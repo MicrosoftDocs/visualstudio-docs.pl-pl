@@ -1,5 +1,5 @@
 ---
-title: Profiler wiersza polecenia, aby pobrać dane współbieżności w aplikacji autonomicznej
+title: Wiersz polecenia profilera do pobrania danych współbieżności aplikacji autonomicznych
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,47 +9,48 @@ ms.assetid: 0a2c6d8a-50b3-48aa-b617-9137b049d21e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 31355689927ed4a2c10411ec7fc76bf8281d356c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 6180d2f2e3ed655f378900d3d41691daa98a0354
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262995"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773260"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie danych współbieżności dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
-Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools umożliwia zbieranie danych kontencji zasobów i dane o aktywności wątku, który pokazuje wykorzystanie procesora CPU, rywalizacji wątków, migracji wątków, opóźnień synchronizacji, obszary nachodzące We/Wy i inne zdarzenia systemowe.
+Metoda współbieżności [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania pozwala zbierać dane rywalizacji o zasobach i dane aktywności wątków, które pokazują wykorzystanie procesora CPU, rywalizację wątków, migrację wątków, opóźnienia synchronizacji, obszary nakładających się operacji we/wy i inne zdarzenia systemowe.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
 |Zadanie|Zawartość pokrewna|
 |----------|---------------------|
-|**Rozpocznij danych współbieżności aplikacji i profilu .NET Framework**|-   [Jak: Uruchamianie aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
-|**Rozpocznij danych współbieżności aplikacji i profilu C/C++**|-   [Jak: Uruchamianie aplikacji natywnej do zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
-|**Dołączanie profilera do uruchomionej aplikacji .NET Framework**|-   [Jak: Dołączanie profilera do aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
-|**Dołączanie profilera do uruchomionej aplikacji C/C++**|-   [Jak: Dołącz profiler do aplikacji natywnej i zbieranie danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
+|**Uruchamianie .NET Framework aplikacji i danych współbieżności profilu**|-   [: uruchamianie aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
+|**Uruchamianie danych współbieżnościC++ i profilu aplikacji C/**|-   [: uruchamianie aplikacji natywnej w celu zbierania danych współbieżności](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
+|**Dołącz profiler do uruchomionej aplikacji .NET Framework**|-   [instrukcje: dołączanie profilera do aplikacji .NET Framework w celu zbierania danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
+|**Dołącz profiler do uruchomionej aplikacji C/C++**|-   [instrukcje: dołączanie profilera do natywnej aplikacji i zbieranie danych współbieżności](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
-### <a name="profile-stand-alone-applications"></a>Profil aplikacji autonomicznych
+### <a name="profile-stand-alone-applications"></a>Profile aplikacji autonomicznych
 
 |Zadanie|Zawartość pokrewna|
 |----------|---------------------|
-|**Profil przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
-|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
-|**Profilowanie pamięci .NET alokacji i odzyskiwanie pamięci**|-   [Zbieranie danych pamięci .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
-|**Dodawanie danych interakcji między warstwami**|-   [Zbieranie danych o interakcji między warstwami](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Profilowanie przy użyciu metody próbkowania**|-   [zbierać dane statystyczne aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**Profilowanie przy użyciu metody instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**Profilowanie alokacji pamięci .NET i wyrzucania elementów bezużytecznych**|-   [Zbieraj dane .NET Framework pamięci](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
+|**Dodawanie danych interakcji warstwy**|-   [Zbieraj dane interakcji warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
-### <a name="profile-concurrency-issues"></a>Problemy ze współbieżnością profilu
+### <a name="profile-concurrency-issues"></a>Problemy współbieżności profilu
 
 |Zadanie|Zawartość pokrewna|
 |----------|---------------------|
-|**Profil aplikacji ASP.NET**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
-|**Usługi profilowania**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+|**Profilowanie aplikacji ASP.NET**|-   [zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+|**Usługi profilu**|-   [zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
 
-### <a name="analyze-concurrency-data-views-and-reports"></a>Analizowanie współbieżność danych widoków i raportów
-- [Widok danych kontencji zasobów](../profiling/resource-contention-data-views.md)
+### <a name="analyze-concurrency-data-views-and-reports"></a>Analizowanie widoków danych współbieżności i raportów
+- [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)
 
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 

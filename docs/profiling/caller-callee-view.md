@@ -1,5 +1,5 @@
 ---
-title: Wyświetl wywołującego/wywoływanego | Dokumentacja firmy Microsoft
+title: Widok wywoływany przez obiekt wywołujący | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,33 +13,34 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa11abdc26805b6944878ea35edbe84d33e58aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bab816a0b71adef190a7d919b5ada7138a6a0e7c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777027"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779717"
 ---
 # <a name="callercallee-view"></a>Widok wywołujący/wywoływany
-Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki:
+Widok wywołujący/wywoływany wyświetla informacje profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki:
 
- **Bieżąca funkcja** jest wyświetlany w środkowy siatkę, a pokazuje profilowania informacje dotyczące wybranej funkcji. Wartości obejmują wszystkie wywołania do funkcji, które zostały zebrane podczas uruchomienia profilowania.
+ **Bieżąca funkcja** jest wyświetlana w środkowej siatce i zawiera informacje profilowania dla wybranej funkcji. Wartości obejmują wszystkie wywołania funkcji, które zostały zebrane w ramach uruchomienia profilowania.
 
- **Funkcje, które wywołały bieżącą funkcję** są wyświetlane w siatce górnym i pokazuje liczbę wartości wybranej funkcji (bieżącego), które zostały wygenerowane przez wywołania funkcji wywołującego (nadrzędnego).
+ **Funkcje, które wywołały bieżącą funkcję** , są wyświetlane w górnej siatce i pokazują liczbę wartości wybranej funkcji (bieżącej), która została wygenerowana przez wywołania z funkcji wywołującej (nadrzędnej).
 
- **Funkcje, które zostały wywołane przez bieżącą funkcję** jest wyświetlany w siatce dolnej i pokazuje profilowania informacji dla funkcji elementu wywoływanego (podrzędne) wybranej funkcji, gdy funkcja podrzędnych została wywołana przez bieżącą funkcję.
+ **Funkcje, które zostały wywołane przez bieżącą funkcję** , są wyświetlane w dolnej siatce i pokazują informacje profilowania dla funkcji wywoływanych (podrzędnych) wybranej funkcji, gdy funkcja podrzędna została wywołana przez bieżącą funkcję.
 
- Kolumny, które są dostępne w widok wywołujący/wywoływany zależą od metody profilowania (próbkowania i instrumentacji), który został użyty do zbierania danych i czy zebrano dane pamięci platformy .NET w profilowania działać.
+ Kolumny, które są dostępne w widoku wywołującego/wywoływanego, zależą od metody profilowania (próbkowania lub Instrumentacji), która została użyta do zebrania danych oraz od tego, czy dane pamięci platformy .NET zostały zebrane w ramach uruchomienia profilowania.
 
- Możesz wybrać inną funkcję do bieżącej funkcji w środkowej części widoku raportu, klikając dwukrotnie dowolny z funkcji, które są wymienione w dwóch częściach widoku. Widok raportu jest aktualizowana automatycznie w celu odzwierciedlenia zmian.
+ Możesz wybrać inną funkcję jako bieżącą funkcję w środkowej części widoku Raport, klikając dwukrotnie jedną z funkcji, które są wymienione w pozostałych dwóch częściach widoku. Widok raportu jest automatycznie aktualizowany w celu odzwierciedlenia zmian.
 
- Dane można sortować, klikając nazw kolumn. Widok wywołujący/wywoływany można dodać dodatkowe kolumny. Aby uzyskać więcej informacji, zobacz [jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
+ Dane można sortować, klikając pozycję nazwy kolumn. Dodatkowe kolumny można dodać do widoku wywołującego/wywoływanego. Aby uzyskać więcej informacji, zobacz [How to: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Widok wywołujący/wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
-- [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
-- [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Widok wywołujący/wywoływany - dane kontencji](../profiling/caller-callee-view-contention-data.md)
+- [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
+- [Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Widok wywołujący/wywoływany-dane rywalizacji](../profiling/caller-callee-view-contention-data.md)

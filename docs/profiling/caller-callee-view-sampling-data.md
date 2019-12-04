@@ -1,5 +1,5 @@
 ---
-title: Widok elementu wywołującego / / wywoływany - dane próbkowania | Dokumentacja firmy Microsoft
+title: Widok wywołujący-wywoływany — Dane próbkowania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,45 +9,46 @@ ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f1d0cd651eac9f6f05acccd233d1741e624f5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773273"
 ---
-# <a name="callercallee-view---sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania
-Widok wywołujący/wywoływany Wyświetla informacje dotyczące profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.
+# <a name="callercallee-view---sampling-data"></a>Widok wywołujący/wywoływany-Dane próbkowania
+Widok wywołujący/wywoływany wyświetla informacje profilowania dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.
 
- **Bieżąca funkcja** jest wyświetlany w środkowy siatkę, a pokazuje profilowania informacje dotyczące wybranej funkcji. Wartości obejmują wszystkie próbki wywołania funkcji.
+ **Bieżąca funkcja** jest wyświetlana w środkowej siatce i zawiera informacje profilowania dla wybranej funkcji. Wartości obejmują wszystkie przykładowe wywołania funkcji.
 
- **Funkcje, które wywołały bieżącą funkcję** są wyświetlane w siatce górnym i pokazuje poszczególne wkłady wywołującego (nadrzędnego) funkcji do wartości wybranej funkcji (bieżącego).
+ **Funkcje, które wywołały bieżącą funkcję** , są wyświetlane w górnej siatce i pokazują indywidualne udziały funkcji wywołujących (nadrzędnych) do wartości wybranej (bieżącej) funkcji.
 
- **Funkcje, które zostały wywołane przez bieżącą funkcję** jest wyświetlany w siatce dolnej i pokazuje profilowania informacji dla funkcji elementu wywoływanego (podrzędne) wybranej funkcji, gdy funkcja podrzędnych została wywołana przez bieżącą funkcję.
+ **Funkcje, które zostały wywołane przez bieżącą funkcję** , są wyświetlane w dolnej siatce i pokazują informacje profilowania dla funkcji wywoływanych (podrzędnych) wybranej funkcji, gdy funkcja podrzędna została wywołana przez bieżącą funkcję.
 
 > [!NOTE]
-> Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy uniwersalnej systemu Windows również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wymagały znaczących zmian w sposobie, w jaki program Visual Studio profiler zbiera dane na tych platformach. Aplikacje platformy UWP wymagają również nowych technik zbierania danych. Zobacz [Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|
 |**Nazwa procesu**|Nazwa procesu.|
-|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|
-|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|
+|**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
 |**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
 |**Adres funkcji**|Adres funkcji.|
-|**Typ**|Kontekst funkcji:<br /><br /> -   **0** -bieżącej funkcji<br />-   **1** — funkcji wywołującej bieżącą funkcję<br />-   **2** — funkcja, która jest wywoływana przez bieżącą funkcję|
-|**Nazwa głównej funkcji**|Nazwa bieżącej funkcji.|
-|**Próbki włączne**|– W przypadku bieżącej funkcji liczba próbek, które zostały zebrane, mimo że wykonywania tej funkcji lub jedna z jej funkcji podrzędnych.<br />— Aby funkcja obiekt wywołujący, liczba włącznych próbek bieżącej funkcji, które zostały zebrane, gdy ta funkcja jest wywoływana bieżącą funkcję.<br />— W przypadku funkcji / / wywoływany liczba włącznych próbek tej funkcji, które zostały zebrane, gdy bieżąca funkcja wywołuje tę funkcję.|
-|**% Włącznych próbek**|Wartość procentowa wszystkie przykłady w uruchomienia profilowania były włącznych próbek w tej funkcji.|
-|**Próbki wyłączne**|-Aby uzyskać bieżącą funkcję liczba próbek w profilowania, zostały zebrane podczas bezpośrednio wykonywania tej funkcji; oznacza to, gdy ta funkcja została w górnej części stosu wywołań. Przykłady, które są zbierane, gdy są wykonywane funkcje podrzędnych tej funkcji nie są uwzględniane w pozostałych.<br />— Aby funkcja obiekt wywołujący, liczba próbek wyłącznych bieżącej funkcji, które zostały zebrane, gdy ta funkcja jest wywoływana bieżącą funkcję.<br />— W przypadku funkcji / / wywoływany liczba próbek wyłącznych tej funkcji, które zostały zebrane, gdy bieżąca funkcja wywołuje tę funkcję.|
-|**% Wyłącznych próbek**|Wartość procentowa wszystkie przykłady w uruchomienia profilowania były wyłącznych próbek w tej funkcji.|
+|**Wprowadź**|Kontekst funkcji:<br /><br /> -   **0** — bieżąca funkcja<br />-   **1** — funkcja, która wywołuje bieżącą funkcję<br />-   **2** — funkcja, która jest wywoływana przez bieżącą funkcję|
+|**Nazwa funkcji głównej**|Nazwa bieżącej funkcji.|
+|**Próbki włączne**|— Dla bieżącej funkcji, liczbę próbek, które zostały zebrane pomimo wykonywania tej funkcji lub jednej z jej funkcji podrzędnych.<br />-Dla funkcji wywołującej liczba próbek włącznie bieżącej funkcji, które zostały zebrane, gdy ta funkcja nazywa bieżącą funkcję.<br />-Dla funkcji wywoływanej, liczba włączonych próbek tej funkcji, które zostały zebrane podczas bieżącej funkcji zwanej tą funkcją.|
+|**Próbki włączne%**|Procent wszystkich próbek w przebiegu profilowania, który był włączonych próbek tej funkcji.|
+|**Próbki wyłączne**|— Dla bieżącej funkcji liczba próbek w przebiegu profilowania, które zostały zebrane podczas bezpośredniego wykonywania tej funkcji; oznacza to, że w przypadku tej funkcji w górnej części stosu wywołań. Próbki, które są zbierane, gdy funkcje podrzędne tej funkcji są wykonywane, nie są zliczane jako liczby wyłączne.<br />— Dla funkcji wywołującej, liczba wyłącznych próbek bieżącej funkcji, które zostały zebrane, gdy ta funkcja nazywa bieżącą funkcję.<br />-Dla funkcji wywoływanej, liczba wyłącznych próbek tej funkcji, które zostały zebrane podczas bieżącej funkcji zwanej tą funkcją.|
+|**Wyłącznych próbek%**|Procent wszystkich próbek w przebiegu profilowania, które były wyłącznymi próbkami tej funkcji.|
 
 ## <a name="see-also"></a>Zobacz także
-- [Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
+- [Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

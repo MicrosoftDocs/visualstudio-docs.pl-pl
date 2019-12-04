@@ -1,5 +1,5 @@
 ---
-title: Widok drzewa wywołań | Dokumentacja firmy Microsoft
+title: Widok drzewa wywołań | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,42 +13,43 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440258"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773338"
 ---
 # <a name="call-tree-view"></a>Widok drzewa wywołań
-Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które zostały przesunięta w profilowanej aplikacji. Główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich funkcji, nazwę i dane wydajności dotyczące tych wywołań funkcji.
+W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich wywoływanych funkcji i danych wydajności dotyczących tych wywołań funkcji.
 
- Widok drzewa wywołania można również rozwijać i Podświetlenie ścieżki wykonywania funkcji, która użyte najwięcej czasu lub zostało pobrane najczęściej. Aby wyświetlić najbardziej wydajności — kosztowne ścieżkę, kliknij prawym przyciskiem myszy funkcję, a następnie kliknij przycisk **Rozwiń ścieżkę aktywną**.
+ Widok drzewa wywołań może również rozszerzać i wyróżniać ścieżkę wykonywania funkcji, która zużywa najwięcej czasu lub była najczęściej próbkowana. Aby wyświetlić najbardziej wydajną ścieżkę, kliknij ją prawym przyciskiem myszy, a następnie kliknij polecenie **Rozwiń ścieżkę gorącą**.
 
- Każdy proces, w trakcie uruchomienia profilowania jest wyświetlany jako węzeł główny. Możesz ustawić węzeł początkowy widoku drzewo wywołań prawym przyciskiem myszy węzeł, w której chcesz ustawić jako węzeł początkowy, a następnie wybierając **zestawu głównego**.
+ Każdy proces w przebiegu profilowania jest wyświetlany jako węzeł główny. Aby ustawić węzeł początkowy widoku drzewa wywołań, kliknij prawym przyciskiem myszy węzeł, który chcesz ustawić jako węzeł początkowy, a następnie wybierz polecenie **Ustaw katalog główny**.
 
- Po ustawieniu węzła głównego, można wyeliminować wszystkie wpisy z widoku, z wyjątkiem drzewo podrzędne wybranego węzła. Możesz zresetować węzła głównego do węzła, który był wyświetlany. W oknie Widok drzewa wywołań, kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **resetowania głównego**.
+ Po ustawieniu węzła głównego można wyeliminować wszystkie inne wpisy z widoku, z wyjątkiem poddrzewa wybranego węzła. Możesz zresetować węzeł główny z powrotem do węzła, który był oglądany. W oknie widok drzewa wywołań kliknij prawym przyciskiem myszy, a następnie wybierz polecenie **Zresetuj katalog główny**.
 
- Widok drzewa wywołania można dostosować w taki sposób, aby dodać lub usunąć kolumny. Kliknij prawym przyciskiem myszy **paska tytułu nazwę kolumny**, a następnie wybierz pozycję **Dodaj/Usuń kolumny**.
+ Widok drzewa wywołań można dostosować w celu dodania lub usunięcia kolumn. Kliknij prawym przyciskiem myszy **pasek tytułu nazw kolumn**, a następnie wybierz polecenie **Dodaj/Usuń kolumny**.
 
- Widok drzewa wywołania można skonfigurować dla obniżenia poziomu hałasu, ograniczając ilość danych, które są prezentowane. Za pomocą redukcji szumu, problemy z wydajnością, są lepiej widoczne w widoku. W przypadku łatwo odróżnić problemy z wydajnością analizy jest łatwiejsze. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie redukcji szumu w widokach raportu](../profiling/how-to-configure-noise-reduction-in-report-views.md).
+ Widok drzewa wywołań można skonfigurować pod kątem obniżenia poziomu hałasu przez ograniczenie ilości prezentowanych danych. Dzięki zmniejszeniu szumu problemy z wydajnością są bardziej widoczne w widoku. Gdy problemy z wydajnością można łatwo rozróżnić, analiza jest łatwiejsza. Aby uzyskać więcej informacji, zobacz [jak: Konfigurowanie redukcji szumu w widokach raportu](../profiling/how-to-configure-noise-reduction-in-report-views.md).
 
 > [!NOTE]
-> Jeśli redukcja szumów jest skonfigurowana do wyświetlania ostrzeżenia, gdy jest włączone, pasek informacji będą wyświetlane w raporcie.
+> W przypadku skonfigurowania obniżenia poziomu szumu w celu wyświetlenia ostrzeżenia po włączeniu tego raportu zostanie wyświetlony pasek informacji.
 
- Aby uzyskać więcej informacji o definicjach kolumn w widoku drzewa wywołań zobacz następujące tematy:
+ Aby uzyskać więcej informacji na temat definicji kolumn w widoku drzewa wywołań, zobacz następujące tematy:
 
 - [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
 
 - [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)
 
-- [Drzewo wywołań view - próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [Widok drzewa wywołań — próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
 - [Widok drzewa wywołań](../profiling/call-tree-view-contention-data.md)
 
 ## <a name="see-also"></a>Zobacz także
-- [Widoki raportu wydajności](../profiling/performance-report-views.md)
+- [Widoki raportów wydajności](../profiling/performance-report-views.md)
 - [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)
 - [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)

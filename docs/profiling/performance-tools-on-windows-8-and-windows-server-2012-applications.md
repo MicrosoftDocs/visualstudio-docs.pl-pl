@@ -5,14 +5,15 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bb5442d12899436076f6b60e8fd7e807b19e4f82
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189335"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778430"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach Windows 8 i Windows Server 2012
 
@@ -109,7 +110,7 @@ Należy dodać opcję zbierania danych interakcja warstwy do przebiegu profilowa
 
 **Zbieranie danych TIP na komputerze zdalnym**
 
-Aby zbierać dane interakcji warstwy na komputerze zdalnym, należy skopiować program **vs\_profiler\_** _\<Platform >_ **\_** _\<Language >_ **. exe** z *%VSInstallDir%\Team Folder Tools\Performance Tools\Setups* maszyny programu Visual Studio na komputerze zdalnym i zainstaluj go. Nie można używać narzędzi profilowania w pakiecie pobierania [debugowania zdalnego](../debugger/remote-debugging.md) .
+Aby zbierać dane dotyczące interakcji warstwy na komputerze zdalnym, należy skopiować program **vs\_profiler\_** _\<Platform >_ **\_** _\<Language >_ **. exe** z folderu *%VSInstallDir%\Team Tools\Performance Tools\Setups* maszyny programu Visual Studio na komputerze zdalnym i zainstalować go. Nie można używać narzędzi profilowania w pakiecie pobierania [debugowania zdalnego](../debugger/remote-debugging.md) .
 
 Aby zebrać dane profilowania, można użyć [VSPerfCmd](../profiling/vsperfcmd.md) lub [VSPerfASPNETCmd](../profiling/vsperfaspnetcmd.md) .
 

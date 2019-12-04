@@ -10,24 +10,25 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd4cf83315965d55b97ac19d4c7d88739f932c2
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 36350b59a3d70f8553fddc5f58bf5c79716fa3aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911969"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777663"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Wysoki stopień odzyskiwania pamięci Gen 1
 
 |||
 |-|-|
-|Identyfikator reguły|DA0021|
+|Identyfikator zasady|DA0021|
 |Kategoria|Użycie .NET Framework|
 |Metody profilowania|Wszystkie|
 |Komunikat|Występuje dość duża liczba wyrzucania elementów bezużytecznych generacji 1. W przypadku, gdy konstrukcja większość struktur danych programu jest alokowana i utrwalana przez dłuższy czas, nie jest to problem. Jeśli jednak takie zachowanie jest niezamierzone, aplikacja może przypinać obiekty. Jeśli nie masz pewności, możesz zebrać dane alokacji pamięci .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci używanej przez aplikację.|
-|Typ reguły|Informacje|
+|Typ reguły|Informacje programu|
 
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 

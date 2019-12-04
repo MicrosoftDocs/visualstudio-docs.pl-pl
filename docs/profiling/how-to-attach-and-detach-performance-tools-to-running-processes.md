@@ -1,5 +1,5 @@
 ---
-title: Dołącz narzędzia do oceny wydajności do uruchomionego procesu
+title: Dołączanie narzędzi wydajności do uruchomionych procesów
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,54 +15,55 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 181bcf665ce905bff20f98be19d4a789cfe530c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4ae54d6b90166de31c338a5e606eaf31ecd6cc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431572"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779171"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: Dołączanie narzędzi do oceny wydajności do uruchomionych procesów i ich odłączanie
-Program profilujący może służyć do dołączenia do lub odłączyć od uruchomionego procesu, aby ułatwić pobierania próbek i zbieranie danych wydajności. Ta metoda umożliwia profilować proces w przypadku, gdy chcesz uniknąć zbierania danych o czas ładowania aplikacji lub do monitorowania wydajności procesu po nim osiągnie określony stan.
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Instrukcje: dołączanie i odłączanie narzędzi wydajności do uruchomionych procesów
+Profiler może służyć do dołączania lub odłączania uruchomionego procesu, aby ułatwić próbkowanie i gromadzenie danych wydajności. Ta metoda służy do profilowania procesu, gdy chcesz uniknąć zbierania danych o czasie ładowania aplikacji lub monitorowania wydajności procesu po osiągnięciu określonego stanu.
 
 > [!NOTE]
-> Poniższe kroki dotyczą Dołączanie i odłączanie procesów z poziomu [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowane environmnent programowania (IDE). Aby uzyskać informacje o tym, jak używać narzędzi wiersza polecenia, zobacz [profilu z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Aby uzyskać informacji dotyczących usług profilu, zobacz [profilu usługi](../profiling/command-line-profiling-of-services.md).
+> Poniższe kroki mają zastosowanie do dołączania i odłączania procesów z poziomu [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zintegrowanych environmnent programistycznych (IDE). Informacje o sposobach korzystania z narzędzi wiersza polecenia znajdują się w temacie [profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md). Aby uzyskać informacje na temat sposobu profilowania usług, zobacz [Profiling Services](../profiling/command-line-profiling-of-services.md).
 
- Procesy, które są dostępne dla profilu zależą od uprawnień dostępu użytkowników, które są ustawiane przez administratora komputera. Konto użytkownika może na przykład mają uprawnienie do żadnego z następujących czynności:
+ Procesy dostępne do profilowania zależą od uprawnień dostępu użytkowników ustawionych przez administratora komputera. Konto użytkownika może na przykład mieć uprawnienia do następujących elementów:
 
-- Zaawansowane funkcje, profilowania, gdy administrator ustawił sterownik i uruchomienie usługi.
+- Zaawansowane funkcje profilowania, gdy administrator ustawił sterownik i usługę do uruchomienia.
 
-- Przykład profilowanie tylko (użytkowników domeny).
+- Przykładowe profilowania (Użytkownicy domeny).
 
-- Odmowa dostępu do profilowania, aby wszyscy.
+- Odmowa dostępu do profilowania do każdego.
 
-  Aby uzyskać więcej informacji, zobacz [zabezpieczeń profilowania i Windows Vista](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).
+  Aby uzyskać więcej informacji, zobacz [profilowanie i zabezpieczenia systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md) oraz opcje administratora w programie [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu
 
-1. Na **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **Dołącz**.
+1. W menu **debugowanie** wskaż polecenie **Profiler**, a następnie **Eksplorator wydajności**, a następnie kliknij pozycję **Dołącz**.
 
-     **Dołączyć Profiler do procesu** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dołącz profiler do procesu** .
 
-2. Kliknij nazwę, którą chcesz dołączyć do procesu.
+2. Kliknij nazwę procesu, do którego chcesz dołączyć.
 
-3. Kliknij przycisk **dołączyć**.
+3. Kliknij przycisk **Dołącz**.
 
-### <a name="to-detach-from-a-running-process"></a>Można odłączyć od uruchomionego procesu
+### <a name="to-detach-from-a-running-process"></a>Aby odłączyć od uruchomionego procesu
 
-1. n **debugowania** menu wskaż **Profiler**, następnie **Eksplorator wydajności**, a następnie kliknij przycisk **Odłącz**.
+1. w menu **Debuguj** wskaż polecenie **Profiler**, a następnie **Eksplorator wydajności**, a następnie kliknij polecenie **Odłącz**.
 
-     **Dołączyć Profiler do procesu** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dołącz profiler do procesu** .
 
 2. Kliknij nazwę obrazu, z którego chcesz odłączyć.
 
-3. Kliknij przycisk **odłączyć**.
+3. Kliknij przycisk **Odłącz**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
 - [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
-- [Instrukcje: Rozpoczęcia i zakończenia zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Instrukcje: rozpoczynanie i zatrzymywanie zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)
 - [Profilowanie i bezpieczeństwo systemu Windows Vista](../profiling/profiling-and-windows-vista-security.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

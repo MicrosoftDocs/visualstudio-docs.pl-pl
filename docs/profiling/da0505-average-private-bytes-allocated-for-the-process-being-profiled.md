@@ -10,24 +10,25 @@ ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cff41d3ff03efd70eb876531a2d7b8602d3f8796
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b905b0de69110f5f7cd684deb6fe6c5955bb4b0c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910169"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777406"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505: Średnie bajty prywatne przydzielone dla procesu poddawanego profilowaniu
 
 |||
 |-|-|
-|Identyfikator reguły|DA0505|
+|Identyfikator zasady|DA0505|
 |Kategoria|Zarządzanie zasobami|
 |Metoda profilowania|Wszystkie|
 |Komunikat|Te informacje zostały zebrane tylko w celu uzyskania informacji. Licznik bajtów prywatnych procesu mierzy pamięć wirtualną przydzieloną przez proces profilowania. Raportowana wartość to średnia obliczona dla wszystkich interwałów pomiarowych.|
-|Typ reguły|Informacje|
+|Typ reguły|Informacje programu|
 
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 

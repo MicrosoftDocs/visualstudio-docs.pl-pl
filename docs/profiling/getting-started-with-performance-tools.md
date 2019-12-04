@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do narzędzia do oceny wydajności | Dokumentacja firmy Microsoft
+title: Wprowadzenie do narzędzi wydajności | Microsoft Docs
 ms.date: 11/04/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,30 +9,31 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969670"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779210"
 ---
-# <a name="getting-started-with-performance-tools"></a>Wprowadzenie do narzędzia do oceny wydajności
+# <a name="getting-started-with-performance-tools"></a>Wprowadzenie do narzędzi wydajności
 
-Visual Studio oferuje kilka sposobów zbierania, wyświetlanie i analizowanie danych dotyczących wydajności kodu. W wielu przypadkach najlepszym sposobem, aby zacząć korzystać z narzędzia do oceny wydajności jest użycie ustawień domyślnych **kreatora wydajności**. Kreator służy do zbierania statystyk aplikacji, który może wskazywać na problemy z wydajnością w kodzie.
+Program Visual Studio oferuje kilka metod zbierania, wyświetlania i analizowania danych wydajności kodu. W wielu przypadkach najlepszym sposobem na rozpoczęcie pracy z narzędziami wydajności jest użycie ustawień domyślnych **Kreatora wydajności**. Kreator zbiera dane statystyczne aplikacji, które mogą wskazywać na problemy z wydajnością w kodzie.
 
-- Ostrzeżeń dotyczących wydajności, które powiadamiają użytkownika o typowych problemach kodowania są wyświetlane w programie Visual Studio **lista błędów** okna. Możesz przejść z ostrzeżeń do kodu źródłowego, a na szczegóły tematy pomocy, które ułatwiają pisanie kodu bardziej wydajne.
+- Ostrzeżenia o wydajności, które powiadamiają o typowych problemach z kodowaniem, są wyświetlane w oknie **Lista błędów** programu Visual Studio. Możesz nawigować od ostrzeżeń do kodu źródłowego i szczegółowe tematy pomocy ułatwiające pisanie bardziej wydajnego kodu.
 
-- Raporty dotyczące wydajności zawierają widoki różnych poziomów struktury aplikacji, wiersze kodu źródłowego i procesów. Raporty dotyczące wydajności pokazują danych wykonawczych aplikacji, od wywołania i nazywane funkcjami konkretnej funkcji w drzewie całej aplikacji.
+- Raporty wydajności zapewniają widoki na różnych poziomach struktury aplikacji, wierszach kodu źródłowego i procesach. Raporty wydajności zawierają dane dotyczące wykonywania aplikacji, od wywołujących i wywoływanych funkcji określonej funkcji, do drzewa wywołań całej aplikacji.
 
-Szybkie profilowanie projektu, aplikacji lub witryny sieci Web ASP.NET, wybierz **debugowania** > **Profiler wydajności**i wybierz **kreatora wydajności**. Aby uzyskać szczegółowe instrukcje, zobacz [początkujących przewodnik dotyczący profilowanie wydajności](../profiling/beginners-guide-to-cpu-sampling.md) i [jak: Zbieranie danych wydajności dotyczących witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Aby szybko profilować witrynę sieci Web, aplikację lub ASP.NET, wybierz kolejno opcje **debuguj** > narzędzie do **oceny wydajności**i **Kreator wydajności**. Aby uzyskać szczegółowe instrukcje, zobacz [początkując Przewodnik dotyczący profilowania wydajności](../profiling/beginners-guide-to-cpu-sampling.md) i instrukcje [: gromadzenie danych wydajności dla witryny sieci Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
-Aby ręcznie określić i skonfigurować sesję profilowania wydajności, wybierz **debugowania** > **Profiler** > **Eksplorator wydajności**. Użyj **cele** folder i **właściwości** stron w **Eksplorator wydajności** do skonfigurowania sesji. Aby uzyskać instrukcje, zobacz [jak: Ręczne tworzenie sesji wydajności](../profiling/how-to-manually-create-performance-sessions.md).
+Aby ręcznie określić i skonfigurować sesję profilowania wydajności, wybierz kolejno opcje **debuguj** > **Profiler** > **Eksplorator wydajności**. Użyj folderu **targets** i stron **Właściwości** w **Eksplorator wydajności** , aby skonfigurować sesje. Aby uzyskać instrukcje, zobacz [How to: ręczne tworzenie sesji wydajności](../profiling/how-to-manually-create-performance-sessions.md).
 
-**Zobacz też:**
+**Zobacz również:**
 
-- [Omówienie narzędzi wydajności](../profiling/overviews-performance-tools.md)
-- [Analizowanie danych dotyczących narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)
+- [Przeglądy narzędzi wydajności](../profiling/overviews-performance-tools.md)
+- [Analizowanie danych narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)
 - [Korzystanie z reguł wydajności do analizowania danych](../profiling/using-performance-rules-to-analyze-data.md)
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)

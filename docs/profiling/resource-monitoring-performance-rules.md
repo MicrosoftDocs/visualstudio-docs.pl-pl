@@ -1,28 +1,29 @@
 ---
-title: Reguły wydajności monitorowania zasobu | Dokumentacja firmy Microsoft
+title: Reguły wydajności monitorowania zasobów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6818bab45532aa44b8ed9ed73978df7c3a05a7bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2389c23b9089ebbdd96d337a3b47d5be9d576b4b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834067"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778326"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Reguły wydajności monitorowania zasobu
-Komunikaty wydajności w kategorii monitorowanie zasobów zawierają dodatkowe dane dotyczące wydajności aplikacji. Te dane można użyć do analizowania problemów z wydajnością. Te zasady są informacyjne i podać dla każdego uruchomienia profilowania.
+Komunikaty o wydajności w kategorii Monitorowanie zasobów zapewniają dodatkowe dane dotyczące wydajności aplikacji. Za pomocą tych danych można analizować problemy z wydajnością. Te reguły są informacyjne i raportowane dla każdego przebiegu profilowania.
 
 |||
 |-|-|
-|[DA0501: Średnie użycie procesora przez profilowany proces.](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md)|Ten komunikat raporty procent czasu procesor był zajęty, wykonując instrukcje z aplikacji. Wystąpienia wartości zgłoszonej jest średnią we wszystkich interwałach pomiarowych, w których była aktywna PROFILOWANEGO procesu.|
-|[DA0502: Maksymalne użycie procesora przez profilowany proces](../profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled.md)|Ten komunikat zgłasza maksymalny procent czasu procesor był zajęty, wykonując instrukcje z aplikacji. Wystąpienia wartości zgłoszonej jest maksymalną wartość zgłaszaną wśród wszystkich interwałów pomiarowych, w których był aktywny proces poddawany profilowaniu.|
-|[DA0503: Średni zestaw roboczy w bajtach dla profilowanego procesu](../profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled.md)|Ten komunikat raporty średniej ilości pamięci fizycznej w bajtach, przez proces używała podczas profilowania jest aktywny. Ta miara ilości pamięci fizycznej jest określany jako zestaw roboczy.|
-|[DA0504: Maksymalny zestaw roboczy w bajtach dla profilowanego procesu](../profiling/da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md)|Ten komunikat raporty maksymalną ilość pamięci fizycznej w bajtach, przez proces używała podczas profilowania jest aktywny.|
-|[DA0505: Średnia liczba bajtów prywatnych przydzielonych dla profilowanego procesu](../profiling/da0505-average-private-bytes-allocated-for-the-process-being-profiled.md)|Ten komunikat raporty średniej ilości pamięci wirtualnej wygasłych procesu przydzielone w bajtach podczas profilowania. Ta miara pamięci wirtualnej jest nazywany *Bajty prywatne*. Bajty prywatne reprezentuje lokalizacje pamięci wirtualnej, które zostały przydzielone przez proces, który może zostać oceniony jedynie przez działający proces wątki.|
-|[DA0506: Maksymalna liczba bajtów prywatnych przydzielonych dla profilowanego procesu](../profiling/da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md)|Ten komunikat raporty maksymalną ilość pamięci wirtualnej wygasłych procesu przydzielone w Bajty prywatne podczas profilowania.|
+|[DA0501: Średnie użycie procesora CPU przez profilowany proces](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md)|Ten komunikat przedstawia wartość procentową czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Raportowana wartość jest wartością średnią dla wszystkich interwałów pomiarowych, w przypadku których proces profilowany jest aktywny.|
+|[DA0502: Maksymalne użycie procesora CPU przez profilowany proces](../profiling/da0502-maximum-cpu-consumption-by-the-process-being-profiled.md)|Ten komunikat zgłasza maksymalny procent czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Raportowana wartość jest wartością maksymalną raportowaną we wszystkich interwałach pomiarowych, w których proces profilowany był aktywny.|
+|[DA0503: Średni zestaw roboczy w bajtach dla profilowanego procesu](../profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled.md)|Ten komunikat przedstawia średnią ilość pamięci fizycznej (w bajtach), z której korzysta proces podczas aktywności profilowania. Ta miara pamięci fizycznej jest znana jako zestaw roboczy.|
+|[DA0504: Maksymalny zestaw roboczy w bajtach dla profilowanego procesu](../profiling/da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md)|Ten komunikat przedstawia maksymalną ilość pamięci fizycznej (w bajtach), z której korzysta proces podczas aktywności profilowania.|
+|[DA0505: Średnia liczba bajtów prywatnych alokowanych dla profilowanego procesu](../profiling/da0505-average-private-bytes-allocated-for-the-process-being-profiled.md)|Ten komunikat przedstawia średnią ilość pamięci wirtualnej, którą proces przydzielił w bajtach, podczas gdy profilowanie było aktywne. Ta miara pamięci wirtualnej jest nazywana *bajtami prywatnymi*. Bajty prywatne reprezentują lokalizacje pamięci wirtualnej, które zostały przydzielone przez proces, do którego można uzyskać dostęp tylko przez wątki działające w procesie.|
+|[DA0506: Maksymalna liczba bajtów prywatnych alokowanych dla profilowanego procesu](../profiling/da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md)|Ten komunikat przedstawia maksymalną ilość pamięci wirtualnej przydzieloną przez proces w bajtach prywatnych podczas aktywności profilowania.|

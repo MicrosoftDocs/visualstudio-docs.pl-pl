@@ -10,24 +10,25 @@ ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f2f349c4ca2172ac2be6c22f3fe999ca0a3cff0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8c9d309d7bf10cee07cc30c4568d2dfa59d1be56
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910211"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777453"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Średni zestaw roboczy w bajtach dla profilowanego procesu
 
 |||
 |-|-|
-|Identyfikator reguły|DA0503|
+|Identyfikator zasady|DA0503|
 |Kategoria|Monitorowanie zasobów|
 |Metoda profilowania|Wszystkie|
 |Komunikat|Te informacje zostały zebrane tylko w celu uzyskania informacji. Licznik zestawu roboczego procesu mierzy użycie pamięci fizycznej przez proces profilowania. Raportowana wartość to średnia obliczona dla wszystkich interwałów pomiarowych.|
-|Typ reguły|Informacje|
+|Typ reguły|Informacje programu|
 
  Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 

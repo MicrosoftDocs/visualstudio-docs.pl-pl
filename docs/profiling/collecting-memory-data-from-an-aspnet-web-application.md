@@ -1,5 +1,5 @@
 ---
-title: Pobierz ASP.NET web app danych pamięci przy użyciu wiersza polecenia profilera
+title: Pobieranie danych pamięci aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,47 +9,48 @@ ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 9e8d9fde00a2390793ae8efe05b684e73caca321
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263540"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773062"
 ---
-# <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z aplikacji sieci web ASP.NET przy użyciu wiersza polecenia profilera
-W tej sekcji opisano procedury składowane i opcji zbierania danych pamięci alokacji i obiekt okresu istnienia dla aplikacji sieci Web platformy ASP.NET za pomocą **VSPerfCmd** narzędzie wiersza polecenia.
+# <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z aplikacji sieci Web ASP.NET przy użyciu wiersza polecenia profilera
+W tej sekcji opisano procedury i opcje zbierania danych alokacji pamięci i okresu istnienia obiektów dla aplikacji sieci Web ASP.NET za pomocą narzędzia wiersza polecenia **VSPerfCmd** .
 
 > [!NOTE]
-> **VSPerfCmd** narzędzie zapewnia pełny dostęp do funkcji narzędzi profilowania, między innymi wstrzymywanie i wznawianie profilowania i zbieranie dodatkowych danych z procesora i liczniki wydajności Windows. Można również użyć **VSPerfASPNETCmd** narzędzie wiersza polecenia, jeśli nie potrzebujesz tej funkcji. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia, żadne zmienne środowiskowe, które należy skonfigurować i ponowne uruchomienie komputera nie jest wymagane. Aby uzyskać więcej informacji, zobacz [profilowania szybkie witryn sieci web za pomocą polecenia VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+> Narzędzie **VSPerfCmd** zapewnia pełny dostęp do funkcji narzędzia profilowania, w tym Wstrzymywanie i wznawianie profilowania oraz gromadzenie dodatkowych danych z liczników wydajności procesora i systemu Windows. Możesz również użyć narzędzia wiersza polecenia **VSPerfASPNETCmd** , gdy ta funkcja nie jest potrzebna. W porównaniu z narzędziem wiersza polecenia [VSPerfCmd](../profiling/vsperfcmd.md) nie trzeba ustawiać żadnych zmiennych środowiskowych ani ponownie uruchamiać komputera. Aby uzyskać więcej informacji, zobacz [szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Dołącz profiler do działającej aplikacji platformy ASP.NET**|-   [Jak: Dołącz profiler do aplikacji sieci web ASP.NET do zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
-|**Instrument statycznie skompilowane pliki binarne**|-   [Jak: Instrumentacja statycznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|
-|**Instrument dynamicznie skompilowanych plików binarnych**|-   [Jak: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|
+|**Dołącz profiler do uruchomionej aplikacji ASP.NET**|-   [instrukcje: dołączanie profilera do aplikacji sieci web ASP.NET w celu zbierania danych pamięci](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
+|**Instrumentowo skompilowane pliki binarne w sposób statyczny**|-   [: Instrumentacja statycznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|
+|**Instrument dynamicznie skompilowane pliki binarne**|-   [: Instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
-### <a name="profile-aspnet-web-applications"></a>Aplikacje sieci web ASP.NET profilu
+### <a name="profile-aspnet-web-applications"></a>Profilowanie aplikacji sieci Web ASP.NET
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profil przy użyciu metody próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu metody próbkowania](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
-|**Profil przy użyciu metody Instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu metody Instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
-|**Profil działanie zasobu rywalizacji o zasoby i wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+|**Profilowanie przy użyciu metody próbkowania**|-   [zbierać dane statystyczne aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
+|**Profilowanie przy użyciu metody instrumentacji**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
+|**Profilowanie zasobów i aktywność wątku**|-   [zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
 
-### <a name="profile-net-framework-memory-data"></a>Profil danych pamięci .NET Framework
+### <a name="profile-net-framework-memory-data"></a>Profilowanie danych pamięci .NET Framework
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profil aplikacji autonomicznej (klienta)**|-   [Zbieranie danych pamięci .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
-|**Usługi profilowania**|-   [Zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
+|**Samodzielne Profilowanie aplikacji (klienta)**|-   [Zbieraj dane .NET Framework pamięci](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
+|**Usługi profilu**|-   [zbieranie danych pamięci .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|
 
-### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoki danych pamięci .NET i raporty
+### <a name="analyze-net-memory-data-views-and-reports"></a>Analizowanie widoków i raportów danych pamięci .NET
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
 ## <a name="reference"></a>Tematy pomocy

@@ -1,5 +1,5 @@
 ---
-title: 'DA0004: Wykorzystanie procesora | Dokumentacja firmy Microsoft'
+title: 'DA0004: duże użycie procesora | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,32 +11,33 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fcc468d3820e34db24edbbf311cbae17bda0732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936710"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777728"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: Znaczące użycie procesora
+# <a name="da0004-high-processor-usage"></a>DA0004: Znaczące wykorzystanie czasu procesora
 
 |||
 |-|-|
-|Identyfikator reguły|DA0004|
+|Identyfikator zasady|DA0004|
 |Kategoria|Użycie narzędzia profilowania|
-|Metod profilowania|Oprzyrządowanie<br /><br /> Próbkowania|
-|Komunikat|Użycie procesora jest stale powyżej 75%. Należy rozważyć użycie trybu próbkowania dla aplikacji zależne od Procesora CPU.|
-|Typ reguły|Informacje|
+|Metody profilowania|Oprzyrządowanie<br /><br /> Sond|
+|Komunikat|Użycie procesora jest spójne powyżej 75%. Rozważ użycie trybu próbkowania dla aplikacji powiązanych z PROCESORem.|
+|Typ reguły|Informacje programu|
 
- Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.
+ Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="cause"></a>Przyczyna
- Użycie procesora (CPU) był wysoko w danych, które zostały zebrane przy użyciu metody Instrumentacji profilowania. Należy wziąć pod uwagę przy użyciu metody próbkowania, metoda profilowania, gdy profilowanie Procesora powiązana aplikacja.
+ Użycie procesora (CPU) było wysokie w danych profilowania zebranych za pomocą metody instrumentacji. Rozważ użycie metody profilowania próbkowania podczas profilowania aplikacji powiązanej z PROCESORem.
 
 ## <a name="rule-description"></a>Opis reguły
- Podczas tego uruchomienia profilowania procesora (czy procesory) był zajęty, spójne. Wysokie wykorzystanie procesora CPU można wskazać aplikacji zależne od Procesora CPU. Instrumentowane profile nie są najbardziej efektywny sposób Badaj scenariusze użycia procesora CPU. Próbkowanie jest bardziej efektywne w przypadku profilowania aplikacji, które spędzają większość czasu wykonywania instrukcji na procesorze.
+ Podczas tego przebiegu profilowania procesor (lub procesory) był stale zajęty. Wysokie wykorzystanie procesora CPU może wskazywać na aplikację powiązaną z PROCESORem. Profile instrumentacji nie są najbardziej efektywne, aby zbadać scenariusze użycia procesora CPU. Próbkowanie jest wydajniejsze w przypadku profilowania aplikacji, które poświęcają wiele czasu na wykonywanie instrukcji dotyczących procesora.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Należy wziąć pod uwagę profilowania aplikację ponownie przy użyciu metody próbkowania zamiast metody instrumentacji, o ile nie wymagają funkcji chronometrażu lub interesuje Cię bardziej opis wejścia/wyjścia niż wąskich gardeł.
+ Rozważ ponowne profilowanie aplikacji przy użyciu metody próbkowania zamiast metody instrumentacji, chyba że wymagane są chronometraże funkcji lub jesteś bardziej interesujący w zrozumieniu danych wejściowych/wyjściowych niż wąskie gardła procesora.

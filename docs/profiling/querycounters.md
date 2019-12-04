@@ -6,19 +6,20 @@ ms.assetid: 8059d4b2-af61-4a47-a6c2-8da5c0741c74
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 501818d000b2db69b0744649d8e4a472cb87a55b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24379a720ccaa3405cbe5c127f3b8abaf12e49aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982590"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771912"
 ---
 # <a name="querycounters"></a>QueryCounters
-**QueryCounters** opcji Wyświetla liczniki wydajności procesora CPU (sprzęt), które są dostępne na komputerze.
+Opcja **QueryCounters** wyświetla listę liczników wydajności procesora CPU (sprzętu), które są dostępne na komputerze.
 
- **QueryCounters** musi być jedyną opcją, w wierszu polecenia.
+ **QueryCounters** musi być jedyną opcją w wierszu polecenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,12 +31,12 @@ VSPerfCmd.exe /QueryCounters
  Brak
 
 ## <a name="remarks"></a>Uwagi
- Korzystając z metody instrumentacji, program profilujący może zbierać wartości co najmniej jeden liczniki wydajności procesora CPU w poszczególnych zdarzeń zbierania danych. Gdy używana jest metoda profilowania próbkowanie, można określić jedno zdarzenie licznika i liczbę wystąpień zdarzeń ma być używany jako interwał próbkowania.
+ Gdy korzystasz z metody instrumentacji, profiler może zbierać wartości z co najmniej jednego licznika wydajności procesora CPU podczas każdego zdarzenia zbierania danych. W przypadku korzystania z metody profilowania próbkowania można określić jedno zdarzenie licznika oraz liczbę wystąpień zdarzeń, które mają być używane jako interwał próbkowania.
 
- Różnych procesorów ujawnić różne liczniki wydajności procesora CPU. Program profilujący definiuje zestaw ogólnych liczniki, które mogą być używane na prawie wszystkie procesory w systemie. **QueryCounters** opcja list zarówno nazwy liczników ogólny i nazwy liczników, które są specyficzne dla procesora.
+ Różne procesory uwidaczniają różne liczniki wydajności procesora CPU. Profiler definiuje zestaw liczników ogólnych, które mogą być używane na prawie wszystkich procesorach. Opcja **QueryCounters** wyświetla nazwy ogólnych liczników i nazwy liczników, które są specyficzne dla procesora.
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

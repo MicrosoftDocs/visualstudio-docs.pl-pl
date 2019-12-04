@@ -1,26 +1,27 @@
 ---
-title: Zamknięcie | Dokumentacja firmy Microsoft
+title: Zamknij | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89a08808387067b934bfd826feb2dcfbcf949aab
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979890"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778287"
 ---
 # <a name="shutdown"></a>Zamykanie
-**Zamknięcia** opcji oczekuje żadnego obecnie profilowane procesu, aby zakończyć lub odłączyć, a następnie wyłącza profilera i zamyka plik danych profilowania. **Zamknięcia** opcja musi być ostatnie polecenie uruchomienia profilowania.
+Opcja **zamykania** czeka na zakończenie lub odłączenie aktualnie profilowanego procesu, a następnie wyłącza Profiler i zamyka plik danych profilowania. Opcja **Shutdown** musi być ostatnim poleceniem przebiegu profilowania.
 
- Jeśli nie określono parametr limitu czasu, **zamknięcia** opcji w tym czasie czeka na czas nieokreślony. Jeśli określono parametr limitu czasu, opcja zwraca po określonej liczbie sekund bez konieczności wyłączania program profilujący lub zamykania pliku danych.
+ Jeśli parametr limitu czasu nie zostanie określony, opcja **zamykania** czeka na czas nieokreślony. Jeśli określono parametr limitu czasu, opcja wraca po określonej liczbie sekund bez wyłączania profilera lub zamykania pliku danych.
 
- **Zamknięcia** opcja musi być jedyną opcją, określone w wierszu polecenia.
+ Opcja **Shutdown** musi być jedyną opcją określoną w wierszu polecenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,10 +31,10 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 
 #### <a name="parameters"></a>Parametry
 `Timeout`
-- (Opcjonalnie) Jeśli zostanie określony, opcja zwraca po określonej liczbie sekund bez konieczności wyłączania program profilujący lub zamykania pliku danych profilowania.
+- Obowiązkowe Jeśli ta opcja jest określona, funkcja wraca po określonej liczbie sekund bez wyłączania profilera lub zamykania pliku danych profilowania.
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

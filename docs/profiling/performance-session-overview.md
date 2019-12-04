@@ -9,14 +9,15 @@ ms.assetid: 35752f95-a57a-4def-b64d-cf4899669e99
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189350"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778469"
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — omówienie
 W tym omówieniu wyjaśniono podstawowe informacje dotyczące profilowania. Deweloperzy, którzy są nowością w pracy, zobaczą, jak narzędzia profilowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mogą pomóc im szybko i zwiększyć wydajność kodu. Deweloperzy znający profilowanie mogą uzyskać przegląd określonych funkcji i procesów narzędzia profilowania.

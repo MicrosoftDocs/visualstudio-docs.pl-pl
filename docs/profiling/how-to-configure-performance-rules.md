@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Konfigurowanie zasad wydajności | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Konfigurowanie reguł wydajności | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,32 +8,33 @@ ms.assetid: a148b468-b849-4858-880a-808a6b47e596
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7387cc54e96aec4deea6a65875f693d704d51859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9bb9b07a0ae1fa19ae48408aa34a9dfb6577b6e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973971"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779015"
 ---
-# <a name="how-to-configure-performance-rules"></a>Instrukcje: Konfigurowanie zasad wydajności
-Ostrzeżeń dotyczących wydajności o tym Visual Studio Profiling Tools wskazują na problemy w profilowanej aplikacji, która może spowolnić działanie programu. Ostrzeżenia może również oznaczać, że konieczne może być zmiana metody kolekcji, aby zebrać więcej przydatnych danych. Ostrzeżenia wydajności są automatycznie generowane w sesji profilowania i są wyświetlane w **lista błędów** okna po otwarciu pliku danych profilowania w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Niektórych ostrzeżeń może nie mieć zastosowania do scenariuszy, że jesteś zainteresowany i ostrzeżenia, które może zostać wywołane niepoprawnie. Można skonfigurować ostrzeżeń dotyczących wydajności, aby pokazać lub ukryć szczególne ostrzeżenia.
+# <a name="how-to-configure-performance-rules"></a>Instrukcje: Konfigurowanie reguł wydajności
+Ostrzeżenia dotyczące wydajności programu Visual Studio narzędzia profilowania wskazują problemy w profilowanej aplikacji, która może spowalniać wykonywanie programu. Ostrzeżenia mogą również wskazywać, że może zajść potrzeba zmiany metod zbierania danych w celu zebrania bardziej użytecznych informacji. Ostrzeżenia o wydajności są generowane automatycznie w sesji profilowania i pojawiają się w oknie **Lista błędów** , gdy plik danych profilowania zostanie otwarty w [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Niektóre ostrzeżenia mogą nie dotyczyć interesujących Cię scenariuszy, a niektóre ostrzeżenia mogą być nieprawidłowo zgłaszane. Można skonfigurować ostrzeżenia wydajności, aby pokazać lub ukryć określone ostrzeżenia.
 
-### <a name="to-configure-profiler-performance-warnings"></a>Aby skonfigurować ostrzeżeń dotyczących wydajności programu profilującego
+### <a name="to-configure-profiler-performance-warnings"></a>Aby skonfigurować ostrzeżenia wydajności profilera
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Narzędzia** kliknij pozycję **Opcje**.
 
-2. Rozwiń **narzędzia do oceny wydajności**, a następnie kliknij przycisk **reguły**.
+2. Rozwiń węzeł **Narzędzia do oceny wydajności**, a następnie kliknij pozycję **reguły**.
 
-3. Aby włączyć lub wyłączyć ostrzeżenia, zaznacz lub wyczyść pole wyboru obok ostrzeżenie **identyfikator** i nazwę.
+3. Aby włączyć lub wyłączyć ostrzeżenie, zaznacz lub wyczyść pole wyboru obok **identyfikatora** ostrzeżenia i nazwy.
 
-4. Aby określić poziom warring regułę, kliknij przycisk **akcji** komórki obok reguły, a następnie kliknij przycisk poziom ostrzeżeń.
+4. Aby określić poziom Warring reguły, kliknij komórkę **Akcja** obok reguły, a następnie kliknij poziom ostrzeżenia.
 
-    - **Wyłączone** — wyłącza regułę (jest to taka sama jak wyczyścić pole wyboru obok identyfikator reguły).
+    - **Wyłączone** — wyłącza regułę (jest to takie samo jak wyczyszczenie pola wyboru obok identyfikatora reguły).
 
-    - **Ostrzeżenie** -Wyświetla reguły jako ostrzeżenie.
+    - **Ostrzeżenie** — wyświetla regułę jako ostrzeżenie.
 
-    - **Błąd** — zatrzymuje wykonywanie profilowania i wyświetla reguł jako błąd.
+    - **Błąd** — zatrzymuje wykonywanie profilowania i wyświetla regułę jako błąd.
 
-    - **Informacje o** -Wyświetla reguły jako tylko informacje.
+    - **Informacje** — wyświetla tylko regułę jako informacje.

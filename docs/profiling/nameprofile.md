@@ -9,19 +9,20 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403620"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778495"
 ---
 # <a name="nameprofile"></a>NameProfile
-`NameProfile` Funkcja przypisuje ciągu określonego procesu lub wątku.
+Funkcja `NameProfile` przypisuje ciąg do określonego procesu lub wątku.
 
- Interfejs API NameProfile jest dostępna tylko w przypadku profilowania instrumentacji. Interfejs API NameProfile nie jest obsługiwane dla pobierania próbek profilowania.
+ Interfejs API NameProfile jest dostępny tylko dla profilowania Instrumentacji. Interfejs API NameProfile nie jest obsługiwany w przypadku profilowania próbkowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,67 +36,67 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 #### <a name="parameters"></a>Parametry
  `pszName`
 
- Nazwa elementu profilowania. Nazwa jest nieprawidłowa, (co powoduje zwrotu NAME_ERROR_INVALID_NAME NameProfileA), jeśli:
+ Nazwa elementu profilowania. Nazwa jest nieprawidłowa (wynik NameProfileA zwraca NAME_ERROR_INVALID_NAME), jeśli:
 
-- Wskaźnik, który został przekazany do NameProfileA jest wartość NULL
+- Wskaźnik przesłany do NameProfileA jest wartością NULL
 
-- Dane ciągu pszName zaczyna się od numeru
+- Dane ciągu pszName rozpoczynają się od liczby
 
-- Dane ciągu pszName zawiera spację
+- Dane ciągu pszName zawierają spację
 
-- Dane ciągu pszName zawiera dowolny z następujących znaków:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>
+- Ciąg danych pszName zawiera jeden z następujących znaków:,;. "~! @ # $% ^ & * () = []{}&#124;\\?/< >
 
   `Level`
 
-  Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** wartości może służyć do wskazania jednego z trzech poziomów wydajności, które zbieranie danych można stosować:
+  Wskazuje poziom profilu, do którego można zastosować zbieranie danych wydajności. Poniższe wartości **PROFILE_CONTROL_LEVEL** mogą służyć do wskazania jednego z trzech poziomów, do których można zastosować zbieranie danych o wydajności:
 
-|Moduł wyliczający|Opis|
+|Liczeni|Opis|
 |----------------|-----------------|
-|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomie ma wpływ na wszystkie procesy i wątki podczas uruchomienia profilowania.|
-|PROFILE_PROCESSLEVEL|Ustawienie poziomie proces wpływają na wszystkie wątki, które są dostępne w ramach określonego procesu.|
-|PROFILE_THREADLEVEL|Wątek ustawienie poziomie profilowania dotyczy określonego wątku.|
+|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomu ma wpływ na wszystkie procesy i wątki w przebiegu profilowania.|
+|PROFILE_PROCESSLEVEL|Ustawienie poziomu procesu wpływa na wszystkie wątki, które są częścią określonego procesu.|
+|PROFILE_THREADLEVEL|Ustawienie poziomu profilowania wątku ma wpływ na określony wątek.|
 
  `dwId`
 
- Profilowanie identyfikator poziomu. Użyj proces lub wątek identyfikator, który jest generowany przez system.
+ Identyfikator poziomu profilowania. Użyj procesu lub identyfikatora wątku, który jest generowany przez system.
 
-## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość
- Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:
+## <a name="property-valuereturn-value"></a>Wartość właściwości/zwracana wartość
+ Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:
 
-|Moduł wyliczający|Opis|
+|Liczeni|Opis|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|Określony element profilowania nie istnieje.|
 |NAME_ERROR_INVALID_NAME|Nazwa jest nieprawidłowa.|
-|NAME_ERROR_LEVEL_NOEXIST|Poziom określony profil nie istnieje.|
+|NAME_ERROR_LEVEL_NOEXIST|Określony poziom profilu nie istnieje.|
 |NAME_ERROR_NO_SUPPORT|Określona operacja nie jest obsługiwana.|
-|NAME_ERROR_OUTOFMEMORY|Pamięć nie jest dostępny do rejestrowania zdarzenia.|
-|NAME_ERROR_REDEFINITION|Nazwa już została przypisana do elementu profilu. Nazwa tej funkcji jest ignorowana.|
-|NAME_ERROR_TEXTTRUNCATED|Tekst nazwa przekracza 32 znaków, łącznie ze znakiem null i dlatego została obcięta.|
+|NAME_ERROR_OUTOFMEMORY|Pamięć nie jest dostępna do rejestrowania zdarzenia.|
+|NAME_ERROR_REDEFINITION|Nazwa została już przypisana do elementu profilu. Nazwa w tej funkcji jest ignorowana.|
+|NAME_ERROR_TEXTTRUNCATED|Tekst nazwy przekracza 32 znaków, w tym znak null, a więc został obcięty.|
 |NAME_OK|Nazwa została pomyślnie zarejestrowana.|
 
 ## <a name="remarks"></a>Uwagi
- Tylko jedną nazwę można przypisać do każdego proces lub wątek. Po nazwie elementu profilowania kolejnych wywołań NameProfile dla tego elementu są ignorowane.
+ Do każdego procesu lub wątku można przypisać tylko jedną nazwę. Gdy element profilowania ma nazwę, kolejne wywołania NameProfile dla tego elementu zostaną zignorowane.
 
- Jeśli w tej samej nazwie znajduje się w różnych wątkach lub procesach, w raporcie zostaną uwzględnione dane ze wszystkich elementów na tym samym poziomie o tej nazwie.
+ Jeśli taka sama nazwa jest określona dla różnych wątków lub procesów, raport będzie zawierać dane ze wszystkich elementów na tym poziomie o tej nazwie.
 
- Jeśli określisz, proces lub wątek innego niż bieżący, upewnij się, że została zainicjowana i został uruchomiony przed nadaj mu nazwę. W przeciwnym razie metoda NameProfile kończy się niepowodzeniem.
+ Jeśli określisz proces lub wątek inny niż bieżący, musisz upewnić się, że został on zainicjowany i uruchomiony przed napisaniem nazwy. W przeciwnym razie metoda NameProfile kończy się niepowodzeniem.
 
 > [!IMPORTANT]
-> Funkcje CreateProcess() i CreateThread() interfejsu API może zwrócić przed wątku lub proces został zainicjowany.
+> Funkcje API CreateProcess () i onthread () mogą zwrócić przed zainicjowaniem wątku lub procesu.
 
-## <a name="net-framework-equivalent"></a>Równoważne z .NET framework
- *Microsoft.VisualStudio.Profiler.dll*
+## <a name="net-framework-equivalent"></a>.NET Framework równoważne
+ *Microsoft. VisualStudio. Profiler. dll*
 
 ## <a name="function-information"></a>Informacje o funkcji
 
 |||
 |-|-|
-|**Nagłówek**|Obejmują *VSPerf.h*|
-|**Biblioteka**|Use *VSPerf.lib*|
+|**Nagłówki**|Uwzględnij *VSPerf. h*|
+|**Biblioteki**|Użyj *VSPerf. lib*|
 |**Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|
 
 ## <a name="example"></a>Przykład
- Poniższy kod ilustruje NameProfile wywołania funkcji. W przykładzie założono użycie makra ciągu Win32 i ustawienia kompilatora standardu ANSI ustalić, czy kod wywołuje ANSI jest włączona funkcja.
+ Poniższy kod ilustruje wywołanie funkcji NameProfile. W przykładzie założono użycie makr ciągu Win32 i ustawień kompilatora dla ANSI, aby określić, czy kod wywołuje funkcję z obsługą ANSI.
 
 ```cpp
 void ExerciseNameProfile()
@@ -133,4 +134,4 @@ void ExerciseNameProfile()
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Visual Studio interfejsy API profilera (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,32 +1,33 @@
 ---
-title: ThreadOn i ThreadOff | Dokumentacja firmy Microsoft
+title: ThreadOn i ThreadOff | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965235"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778157"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn i ThreadOff
-*VSPerfCmd.exe* **ThreadOff** i **ThreadOn** podpoleceń polecenia są dostępne tylko w sesji profilowania wiersza polecenia, korzystających z metody instrumentacji. **ThreadOff** i **ThreadOn** wstrzymywanie i wznawianie profilowania dla określonego wątku. **ThreadOff** zatrzymuje profilowanie wątku i **ThreadOn** uruchamia profilowanie wątku.
+Podpolecenia *VSPerfCmd. exe* **ThreadOff** i **ThreadOn** są dostępne tylko w sesjach profilowania wiersza polecenia, które korzystają z metody instrumentacji. **ThreadOff** i **ThreadOn** Wstrzymywanie i wznawianie profilowania dla określonego wątku. **ThreadOff** przerywa Profilowanie wątku, a **ThreadOn** uruchamia Profilowanie wątku.
 
- W większości przypadków należy określić **ThreadOn** lub **ThreadOff** jako jedyną opcję w *VSPerfCmd.exe* wiersza polecenia, ale można również łączyć z  **GlobalOn**, **GlobalOff**, **ProcessOn**, i **ProcessOff** podpoleceń polecenia.
+ W większości przypadków należy określić **ThreadOn** lub **ThreadOff** jako jedyną opcję w wierszu polecenia *VSPerfCmd. exe* , ale można je również łączyć z podpoleceniami **GlobalOn**, **GlobalOff**, **ProcessOn**i **ProcessOff** .
 
- **ThreadOn** i **ThreadOff** podpoleceń polecenia interakcji z **GlobalOn** i **GlobalOff** podpoleceń polecenia, które kontrolują danych zbieranie dla wszystkich procesów w sesji profilowania wiersza polecenia i **ProcessOn** i **ProcessOff** podpoleceń polecenia, które kontrolują zbieranie danych dla określonego procesu.
+ Podpolecenia **ThreadOn** i **ThreadOff** współpracują z podpoleceniami **GlobalOn** i **GlobalOff** , które kontrolują zbieranie danych dla wszystkich procesów w sesji profilowania wiersza polecenia i polecenia **ProcessOn** i **ProcessOff** , które kontrolują zbieranie danych dla określonego procesu.
 
- **ThreadOff** i **ThreadOn** podpoleceń polecenia wpływa na liczbę wątków uruchomień/zatrzymań, który jest przetwarzany przez funkcje API profilera.
+ Podpolecenia **ThreadOff** i **ThreadOn** wpływają również na licznik uruchomienia/zatrzymania wątku, który jest MANIPULOWANY przez funkcje interfejsu API profilera.
 
-- **ThreadOff** natychmiast Ustawia liczbę uruchomień/zatrzymań wątek 0 i w związku z tym wstrzymuje profilowania.
+- **ThreadOff** natychmiast ustawia liczbę uruchomień/zatrzymań wątku na wartość 0, w związku z tym wstrzymuje profilowanie.
 
-- **ThreadOn** natychmiast Ustawia liczbę uruchomień/zatrzymań wątku 1 i w związku z tym wznawia profilowania.
+- **ThreadOn** natychmiast ustawia liczbę uruchomień/zatrzymań wątku na 1, w związku z tym wznawia profilowanie.
 
   Aby uzyskać więcej informacji, zobacz [interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md).
 
@@ -38,19 +39,19 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `TID` Identyfikator całkowitą wątku, aby rozpocząć lub zatrzymać.
+ `TID` identyfikator liczby całkowitej wątku, który ma zostać uruchomiony lub zatrzymany.
 
 ## <a name="valid-options"></a>Prawidłowe opcje
- **ThreadOn** i **ThreadOff** można określić w wierszach polecenia, które również zawierać następujących podpoleceń polecenia.
+ **ThreadOn** i **ThreadOff** można określić w wierszach poleceń, które również zawierają następujące podpolecenia.
 
- **Początek:** `Method` Inicjuje sesję profilowania wiersza polecenia, a następnie ustawia określonej metody profilowania.
+ **Rozpoczęcie:** `Method` inicjuje sesję profilowania wiersza polecenia i ustawia określoną metodę profilowania.
 
- **GlobalOff**&#124;**GlobalOn** zatrzymaniu lub uruchomieniu profilowania dla wszystkich procesów w sesji profilowania z wiersza polecenia.
+ **GlobalOff**&#124;**GlobalOn** przerywa lub uruchamia profilowanie dla wszystkich procesów w sesji profilowania wiersza polecenia.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID` Zatrzymuje się lub uruchamia profilowanie dla określonego procesu.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID` zatrzymanie lub uruchomienie profilowania dla określonego procesu.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie **ThreadOff** podpolecenia jest używany, aby zatrzymać zbieranie danych profilowania, dzięki czemu są zbierane tylko dane uruchamiania aplikacji.
+ W tym przykładzie podpolecenie **ThreadOff** służy do zatrzymania zbierania danych profilowania, tak że zbierane są tylko dane uruchamiania aplikacji.
 
 ```cmd
 ; Initialize the profiler.
@@ -66,6 +67,6 @@ VSPerfCmd /Shutdown
 
 ## <a name="see-also"></a>Zobacz także
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)
+- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilu](../profiling/command-line-profiling-of-services.md)

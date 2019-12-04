@@ -1,5 +1,5 @@
 ---
-title: Widok linii | Dokumentacja firmy Microsoft
+title: Widok wierszy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,37 +12,38 @@ ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000083"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773984"
 ---
 # <a name="lines-view"></a>Widok linii
-Widok linii jest dostępna tylko dla danych profilera, które zostały zebrane przy użyciu metody próbkowania. Widok nie jest dostępna dla danych, które zostały zebrane przy użyciu Instrumentacji.
+Widok linie jest dostępny tylko dla danych profilera, które zostały zebrane przy użyciu metody próbkowania. Widok nie jest dostępny dla danych, które zostały zebrane przy użyciu instrumentacji.
 
- Dla pobierania próbek danych profilowych, widok linii identyfikuje instrukcji w funkcji, która bezpośrednio był wykonywany, gdy zostały zebrane próbki. W przypadku danych pamięci .NET widok linii określa instrukcje, które przydzielić pamięci.
+ W przypadku danych profilu próbkowania widok wierszy identyfikuje instrukcję w funkcji, która była wykonywana bezpośrednio podczas zbierania próbki. W przypadku danych pamięci .NET Widok wiersze identyfikuje instrukcje, które przydzielą pamięć.
 
- W pliku źródłowym instrukcji może obejmować więcej tego wiersza w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.
+ W pliku źródłowym instrukcja może obejmować więcej niż jeden wiersz w pliku źródłowym, a pojedynczy wiersz może zawierać więcej niż jedną instrukcję.
 
- Instrukcja jest identyfikowane przez następujące elementy:
+ Instrukcja jest identyfikowana przez następujące elementy:
 
-- Plik źródłowy, który zawiera deklarację funkcji.
+- Plik źródłowy, który zawiera instrukcję Function.
 
 - Funkcja, która zawiera instrukcję.
 
-- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.
+- Wiersz źródłowy, w którym rozpocznie się wykonywanie instrukcji.
 
-- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.
+- Znak w wierszu źródłowym, w którym rozpocznie się wykonywanie instrukcji.
 
-- Wiersza źródłowego, w którym kończy się instrukcji.
+- Wiersz źródłowy, w którym zostanie zakończona instrukcja.
 
-- Znak w wierszu źródłowym, w którym kończy się instrukcji.
+- Znak w wierszu źródłowym, w którym następuje zakończenie instrukcji.
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok linii](../profiling/lines-view-sampling-data.md)
-- [Widok linii - próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Widok linii — próbkowanie](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Widok linii](../profiling/lines-view-contention-data.md)

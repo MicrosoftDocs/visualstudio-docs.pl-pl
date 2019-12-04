@@ -1,5 +1,5 @@
 ---
-title: Widok wskaźników instrukcji (IP) | Dokumentacja firmy Microsoft
+title: Widok wskaźników instrukcji (IP) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,25 +15,26 @@ ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9208a274c9dc50226452bbe9d2235d8dbf9b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995355"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778638"
 ---
 # <a name="instruction-pointers-ips-view"></a>Widok wskaźników instrukcji (IP)
-Widok wskaźników instrukcji umożliwia Zobacz szczegółowe instrukcje, które są wykonywane podczas pobierania próbek profilowania.
+Widok wskaźników instrukcji umożliwia wyświetlenie określonych instrukcji, które są wykonywane podczas profilowania próbkowania.
 
- Ten widok nie jest dostępna podczas profilowania instrumentacji.
+ Ten widok nie jest dostępny podczas profilowania Instrumentacji.
 
- Dla pobierania próbek danych profilowych, w widoku adresów IP identyfikuje zgodnie z instrukcjami w funkcję, która bezpośrednio był wykonywany, gdy zostały zebrane próbki.
+ W przypadku danych profilu próbkowania widok adresów IP identyfikuje instrukcje w funkcji, która była wykonywana bezpośrednio podczas zbierania próbki.
 
- W przypadku danych pamięci .NET widok linii określa instrukcje, które przydzielają pamięć.
+ W przypadku danych pamięci platformy .NET Widok wiersze identyfikuje instrukcje przydzielenia pamięci.
 
 ## <a name="see-also"></a>Zobacz także
 - [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
-- [Wskaźników instrukcji (IP) View - próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Widok wskaźników instrukcji (IP) — próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)

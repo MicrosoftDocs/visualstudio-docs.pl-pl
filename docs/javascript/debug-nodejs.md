@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912997"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777936"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji JavaScript lub TypeScript w programie Visual Studio
 
@@ -33,7 +33,7 @@ Program Visual Studio umożliwia debugowanie kodu JavaScript i języka TypeScrip
 
     Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
 
-1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj**  > **Rozpocznij debugowanie**).
+1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj** > **Rozpocznij debugowanie**).
 
     Debuger wstrzymuje się w ustawionym punkcie przerwania (Bieżąca instrukcja jest oznaczona kolorem żółtym). Teraz można sprawdzić stan aplikacji, umieszczając kursor na zmiennych, które znajdują się obecnie w zakresie, korzystając **z okien debugera** , takich jak **lokalne** i kontrolki okien.
 
@@ -111,7 +111,7 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
     Aby znaleźć konkretny kod w profilowanym pliku, użyj **klawiszy Ctrl**+**F** (**edytuj** > **Znajdź i Zamień** > **szybkie wyszukiwanie**).
 
-    W przypadku kodu po stronie klienta, aby napotkać punkt przerwania w pliku TypeScript lub plik JSX zazwyczaj wymaga użycia [map źródła](#generate_source_maps). Mapa źródłowa musi być poprawnie skonfigurowana do obsługi debugowania w programie Visual Studio.
+    W przypadku kodu po stronie klienta, aby napotkać punkt przerwania w pliku TypeScript, plik *. Vue*lub JSX zazwyczaj wymaga użycia [map źródeł](#generate_source_maps). Mapa źródłowa musi być poprawnie skonfigurowana do obsługi debugowania w programie Visual Studio.
 
 2. Wybierz docelową przeglądarkę jako element docelowy debugowania w programie Visual Studio, a następnie naciśnij klawisz **Ctrl**+**F5** (**Debuguj** > **Rozpocznij bez debugowania**), aby uruchomić aplikację w przeglądarce.
 
@@ -121,13 +121,12 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
     Aplikacja zostanie otwarta na nowej karcie przeglądarki.
 
-3. Wybierz  >  debugowania**dołączanie do procesu**.
+3. Wybierz > debugowania **dołączanie do procesu**.
 
     > [!TIP]
     > Począwszy od programu Visual Studio 2017, po dołączeniu do procesu po raz pierwszy, wykonując poniższe kroki, można szybko ponownie dołączyć do tego samego procesu, wybierając **debuguj** > **ponownie dołączyć do procesu**.
 
 4. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
-
     ::: moniker range=">=vs-2019"
     W programie Visual Studio 2019 wybierz poprawny debuger dla docelowej przeglądarki, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować Wyniki wyszukiwania.
     ::: moniker-end
@@ -268,7 +267,7 @@ Nie można jednak automatycznie trafiać punktów przerwania dla plików generow
    Dla programu Chrome przejdź do **Eksplorator rozwiązań > dokumenty skryptu > YourPageName**.
 
     > [!NOTE]
-    > W przypadku korzystania z programu Chrome może zostać wyświetlony komunikat nie można uzyskać **dostępu do tagów > \<script**. To OK, po prostu Kontynuuj debugowanie.
+    > W przypadku korzystania z programu Chrome może zostać wyświetlony komunikat nie można uzyskać **dostępu do tagów > skryptów \<** . To OK, po prostu Kontynuuj debugowanie.
 
    ::: moniker range=">=vs-2019"
    W przypadku programu Microsoft Edge (chrom) Użyj tej samej procedury jak Chrome.

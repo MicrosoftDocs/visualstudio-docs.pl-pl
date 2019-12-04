@@ -10,20 +10,21 @@ ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0d8fa6ec96c31ff78d037c97afdc2c093889dd
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f0dd45486f526954d7dfce45cd607ff6196eae00
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911953"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777650"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Wysokie wykorzystanie czasu GC CPU
 
 |||
 |-|-|
-|Identyfikator reguły|DA0023|
+|Identyfikator zasady|DA0023|
 |Kategoria|Użycie .NET Framework|
 |Metoda profilowania|Wszystkie|
 |Komunikat|Czas trwania operacji odzyskiwania pamięci (%) jest stosunkowo wysoki. Ten wskaźnik nadmiernej ilości wyrzucania elementów bezużytecznych może mieć wpływ na czas odpowiedzi aplikacji. Można zebrać dane alokacji pamięci platformy .NET i informacje o okresie istnienia obiektu, aby zrozumieć wzorzec alokacji pamięci, która jest stosowana przez aplikację.|

@@ -1,5 +1,5 @@
 ---
-title: Widok wywołującego/wywoływanego — dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
+title: Widok wywołujący-wywoływany — Dane próbkowania pamięci platformy .NET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,49 +8,50 @@ ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3e07510f38c18f7d8e4a52d788935400b5a9388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776747"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773312"
 ---
-# <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany - dane próbkowania pamięci platformy .NET
-Widok wywołujący/wywoływany wyświetla dane dla wybranej funkcji i jej funkcji nadrzędne i podrzędne profilowania pamięci .NET. Widok wywołujący/wywoływany zawiera trzy siatki.
+# <a name="callercallee-view---net-memory-sampling-data"></a>Widok wywołujący/wywoływany — Dane próbkowania pamięci platformy .NET
+Widok wywołujący/wywoływany wyświetla dane profilowania pamięci platformy .NET dla wybranej funkcji i jej funkcji nadrzędnych i podrzędnych. Widok wywołujący/wywoływany zawiera trzy siatki.
 
- **Bieżąca funkcja** są wyświetlane w siatce Środkowej i zawiera informacje na temat wybranej funkcji profilowania pamięci. Wartości obejmują wszystkie próbki wywołania funkcji.
+ **Bieżąca funkcja** jest wyświetlana w środkowej siatce i zawiera informacje profilowania pamięci dotyczące wybranej funkcji. Wartości obejmują wszystkie przykładowe wywołania funkcji.
 
- **Funkcje, które wywołały bieżącą funkcję** są wyświetlane w siatce górnym i przedstawia ilość wartość wybranej funkcji (bieżącego), który został wygenerowany przez wywołania funkcji wywołującego (nadrzędnego).
+ **Funkcje, które wywołały bieżącą funkcję** , są wyświetlane w górnej siatce i pokazują ilość wartości wybranej (bieżącej) funkcji wygenerowanej przez wywołania z funkcji wywołującej (nadrzędnej).
 
- **Funkcje, które zostały wywołane przez bieżącą funkcję** są wyświetlane w siatce dolnej i pokazuje dane dla funkcji elementu wywoływanego (podrzędne) wybranej funkcji profilowania, gdy funkcja podrzędnych została wywołana przez bieżącą funkcję pamięci.
+ **Funkcje, które zostały wywołane przez bieżącą funkcję** , są wyświetlane w dolnej siatce i wyświetlają dane profilowania pamięci dla funkcji wywoływanych (podrzędnych) wybranej funkcji, gdy funkcja podrzędna została wywołana przez bieżącą funkcję.
 
- Kliknij dwukrotnie wywołujący lub wywoływany funkcja wiersz się wiersz bieżącą funkcję.
+ Kliknij dwukrotnie obiekt wywołujący lub element wywoływanej funkcji, aby uczynić ten wiersz bieżącą funkcją.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|
+|**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|
 |**Nazwa procesu**|Nazwa procesu.|
-|**Nazwa modułu**|Nazwa modułu, która zawiera funkcję.|
-|**Ścieżka modułu**|Ścieżka modułu, która zawiera funkcję.|
+|**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
 |**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|
 |**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
 |**Adres funkcji**|Adres funkcji.|
-|**Typ**|Kontekst funkcji:<br /><br /> **0** -bieżącej funkcji<br /><br /> **1** — funkcji wywołującej bieżącą funkcję<br /><br /> **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|
-|**Poziom**|Głębokość funkcji w drzewie wywołań. Tylko w [VSPerfReport](../profiling/vsperfreport.md) raporty wiersza polecenia.|
-|**Przydziały włączne**|-Aby uzyskać bieżącą funkcję liczby obiektów przydzielonych za pomocą funkcji podczas uruchomienia profilowania. Liczba ta obejmuje obiekty, które zostały utworzone w funkcjach / / wywoływany.<br />— W przypadku funkcji wywołującego liczba przydziałów włącznych bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />— W przypadku funkcji / / wywoływany liczbę obiektów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba uwzględnia alokacji dokonanych przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|
-|**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały utworzone w profilowania, były przydziałów włącznych tej funkcji.|
-|**Przydziały wyłączne**|— W przypadku funkcji bieżącej liczby obiektów, które zostały utworzone podczas wykonywania funkcji kodu w treści funkcji (oznacza to, kiedy funkcja znajdowała się w górnej części stosu wywołań). Liczba nie obejmuje obiekty, które zostały utworzone w funkcjach, które zostały wywołane przez funkcję.<br />— W przypadku funkcji wywołującego liczba przydziałów wyłącznych bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />— W przypadku funkcji / / wywoływany liczbę obiektów, które zostały utworzone przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba nie obejmuje obiekty, które zostały utworzone przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|
-|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone w profilowania, były przydziałów włącznych tej funkcji.|
-|**Bajty włączne**|-Aby uzyskać bieżącą funkcję liczbę bajtów pamięci przydzielonych za pomocą funkcji podczas uruchomienia profilowania. Liczba uwzględnia pamięci, która została przydzielona w funkcjach, które zostały wywołane przez tę funkcję.<br />— Aby wywołujący funkcję liczba bajtów włącznych bieżącej funkcji, które zostały wygenerowane z wywołań przez funkcję obiekt wywołujący.<br />— W przypadku funkcji / / wywoływany liczba bajtów przydzielonych przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba uwzględnia bajtów przydzielonych przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|
-|**% Bajtów włącznych**|Procent wszystkich bajtów pamięci przydzielonych w uruchomienia profilowania były przydziałów włącznych tej funkcji.|
-|**Bajty wyłączne**|-Aby uzyskać bieżącą funkcję liczbę bajtów pamięci przydzielonych za pomocą funkcji podczas uruchomienia profilowania. Ta liczba nie obejmuje pamięci, która została przydzielona przez funkcje, które zostały wywołane przez bieżącą funkcję.<br />— Aby wywołujący funkcję liczbę bajtów wyłącznych bieżącej funkcji, które zostały wygenerowane przez wywołuje funkcję obiekt wywołujący.<br />— W przypadku funkcji / / wywoływany liczba bajtów przydzielonych przez wystąpień funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba nie obejmuje bajtów przydzielonych przez funkcje, które zostały wywołane przez funkcję / / wywoływany.|
-|**% Bajtów wyłącznych**|Procent wszystkich bajtów pamięci przydzielonych w uruchomienia profilowania były przydziałów wyłącznych tej funkcji.|
+|**Wprowadź**|Kontekst funkcji:<br /><br /> **0** — bieżąca funkcja<br /><br /> **1** — funkcja, która wywołuje bieżącą funkcję<br /><br /> **2** — funkcja, która jest wywoływana przez bieżącą funkcję<br /><br /> Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|
+|**Poziomie**|Głębokość funkcji w drzewie wywołań. Tylko w raportach wiersza polecenia [VSPerfReport](../profiling/vsperfreport.md) .|
+|**Przydziały włączne**|— Dla bieżącej funkcji liczba obiektów, które zostały przydzielone przez funkcję w przebiegu profilowania. Ta liczba obejmuje obiekty, które zostały utworzone w funkcjach wywoływanych.<br />-Dla funkcji wywołującej liczba przydziałów włącznie dla bieżącej funkcji, które zostały wygenerowane przez wywołania tej funkcji.<br />-Dla funkcji wywoływanej liczba obiektów przydzielonej przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba zawiera przydziały, które zostały wykonane przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
+|**% Przydziałów włącznych**|Procent wszystkich obiektów, które zostały utworzone w ramach uruchomienia profilowania, które były przydzielone do tej funkcji.|
+|**Alokacje wyłączne**|— Dla bieżącej funkcji — liczba obiektów, które zostały utworzone, gdy funkcja wykonywała kod treści funkcji (to oznacza, gdy funkcja była w górnej części stosu wywołań). Liczba nie obejmuje obiektów, które zostały utworzone w funkcjach, które zostały wywołane przez funkcję.<br />-Dla funkcji wywołującej liczba wyłącznych alokacji bieżącej funkcji, które zostały wygenerowane przez wywołania z tej funkcji.<br />-Dla funkcji wywoływanej, liczba obiektów utworzonych przez wystąpienia tej funkcji, które zostały wywołane przez bieżącą funkcję. Liczba nie obejmuje obiektów, które zostały utworzone przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
+|**% Przydziałów wyłącznych**|Procent wszystkich obiektów, które zostały utworzone w ramach uruchomienia profilowania, które były przydzielone do tej funkcji.|
+|**Bajty włączne**|— Dla bieżącej funkcji — liczba bajtów pamięci przydzielonej przez funkcję w ramach uruchomienia profilowania. Liczba zawiera pamięć, która została przypisana w funkcjach, które zostały wywołane przez tę funkcję.<br />-Dla funkcji wywołującej liczba bajtów (włącznie) bieżącej funkcji, które zostały wygenerowane na podstawie wywołań przez funkcję wywołującą.<br />-Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia tej funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba zawiera bajty, które zostały przydzielone przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
+|**% Bajtów włącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która obejmuje przydziały tej funkcji.|
+|**Bajty wyłączne**|— Dla bieżącej funkcji — liczba bajtów pamięci przydzielonej przez funkcję w ramach uruchomienia profilowania. Ta liczba nie obejmuje pamięci przydzielonej przez funkcje, które zostały wywołane przez bieżącą funkcję.<br />-Dla funkcji wywołującej liczba wyłącznych bajtów bieżącej funkcji, które zostały wygenerowane przez wywołania z funkcji wywołującej.<br />-Dla funkcji wywoływanej liczba bajtów, które zostały przydzielone przez wystąpienia funkcji, które zostały wygenerowane przez wywołania z bieżącej funkcji. Liczba nie obejmuje bajtów, które zostały przydzielone przez funkcje, które zostały wywołane przez wywoływaną funkcję.|
+|**% Bajtów wyłącznych**|Wartość procentowa wszystkich bajtów pamięci przydzielonych w ramach uruchomienia profilowania, która wystąpiła na wyłączność alokacji tej funkcji.|
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
-- [Widok wywołujący/wywoływany - dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Widok wywołujący/wywoływany - dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
-- [Widok wywołujący/wywoływany - dane Instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)
+- [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
+- [Widok elementu wywołującego/wywoływanego — dane Instrumentacji pamięci platformy .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Widok wywołujący/wywoływany-Dane próbkowania](../profiling/caller-callee-view-sampling-data.md)
+- [Widok wywołujący/wywoływany-Dane instrumentacji](../profiling/caller-callee-view-instrumentation-data.md)

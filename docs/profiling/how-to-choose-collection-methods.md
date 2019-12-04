@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wybieranie metod kolekcji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: wybieranie metod kolekcji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,88 +9,89 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744728"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776348"
 ---
-# <a name="how-to-choose-collection-methods"></a>Instrukcje: Wybieranie metod zbierania
+# <a name="how-to-choose-collection-methods"></a>Instrukcje: wybieranie metod zbierania
 
-Visual Studio Profiling Tools obsługują trzy metody zbieranie danych o wydajności: próbkowanie, Instrumentacja i współbieżności. Metoda próbkowania i instrumentacji umożliwia również zbieranie danych alokacji i okresie istnienia pamięci platformy .NET.
+Program Visual Studio narzędzia profilowania obsługuje trzy metody zbierania danych wydajności: próbkowanie, Instrumentacja i współbieżność. Można również użyć metody próbkowania lub Instrumentacji, aby zebrać dane alokacji pamięci .NET i okresu istnienia.
 
-Można użyć sesji wydajności **metoda** właściwości w celu określenia najbardziej odpowiedniej metody kolekcji dla aplikacji. Metoda kolekcji można ustawić za pomocą Kreatora wydajności, Eksplorator wydajności lub ze stron właściwości sesji wydajności. Jeśli używasz narzędzia wiersza polecenia, zobacz [profilowania z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md) Aby uzyskać więcej informacji.
+Aby określić najbardziej odpowiednią metodę kolekcji dla aplikacji, można użyć właściwości **Metoda** sesji wydajności. Można ustawić metodę kolekcji z Kreatora wydajności, Eksplorator wydajności lub ze stron właściwości sesji wydajności. Jeśli używasz narzędzi wiersza polecenia, zobacz [profilowanie z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md) , aby uzyskać więcej informacji.
 
 ## <a name="performance-wizard"></a>Kreator Wydajności
 
-### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>Aby wybrać metodę kolekcji za pomocą Kreatora wydajności
+### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>Aby wybrać metodę kolekcji przy użyciu Kreatora wydajności
 
 - Na pierwszej stronie kreatora wybierz jedną z następujących opcji:
 
 | Opcja | Opis |
 |----------------------------| - |
-| **Próbkowanie Procesora** | Zbieranie statystyk aplikacji, które są przydatne do analizy początkowej i analizować problemy wykorzystanie procesora CPU. |
-| **Instrumentacja** | Służy do zbierania danych o chronometrażu, które są przydatne na potrzeby ukierunkowanej analizy i analizowania problemów z wydajnością we/wy. |
-| **Alokacja pamięci platformy .NET** | Zbiera dane alokacji pamięci .NET Framework przy użyciu metoda profilowania próbkowanie. |
-| **Współbieżność** | Zbiera dane rywalizacji o zasób liczbowych. |
+| **Próbkowanie procesora** | Zbiera dane statystyczne dotyczące aplikacji, które są przydatne do analizy początkowej i analizowania problemów z użyciem procesora CPU. |
+| **WMI** | Gromadzi szczegółowe dane o chronometrażu przydatne do celów analizy ukierunkowanej i analizowania problemów z wydajnością wejścia/wyjścia. |
+| **Alokacja pamięci platformy .NET** | Zbiera .NET Framework dane alokacji pamięci za pomocą metody profilowania próbkowania. |
+| **Współbieżność** | Zbiera dane o liczbie zasobów. |
 
 ## <a name="performance-explorer"></a>Eksplorator wydajności
 
-### <a name="to-select-a-collection-method-using-performance-explorer"></a>Aby wybrać metodę kolekcji za pomocą Eksploratora wydajności
+### <a name="to-select-a-collection-method-using-performance-explorer"></a>Aby wybrać metodę kolekcji przy użyciu Eksplorator wydajności
 
-1. Na **Eksplorator wydajności** narzędzi, kliknij strzałkę obok pozycji **metoda** listy rozwijanej.
+1. Na pasku narzędzi **Eksplorator wydajności** kliknij strzałkę obok listy rozwijanej **Metoda** .
 
-2. Kliknij metodę kolekcji, którą użytkownik sobie tego życzy.
+2. Kliknij preferowaną metodę kolekcji.
 
 ## <a name="performance-session-property-pages"></a>Strony właściwości sesji wydajności
 
-### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>Aby wybrać metodę próbkowania i instrumentacji, przy użyciu właściwości sesji wydajności
+### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>Aby wybrać metodę próbkowania lub Instrumentacji przy użyciu właściwości sesji wydajności
 
-1. W **Eksplorator wydajności**, wybierz sesję wydajności.
+1. W **Eksplorator wydajności**wybierz sesję wydajności.
 
-     Zawiera nazwę pliku sesji wydajności. *psess* rozszerzenia.
+     Plik sesji wydajności ma nazwę. rozszerzenie *psess* .
 
-2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.
+2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-3. W **stron właściwości**, kliknij przycisk **ogólne**.
+3. Na **stronie właściwości**kliknij pozycję **Ogólne**.
 
-4. Kliknij metodę kolekcji, którą użytkownik sobie tego życzy.
+4. Kliknij preferowaną metodę kolekcji.
 
-    - Aby uzyskać informacje o innych opcjach, które są dostępne, gdy są zbierane dane z próbkowania, zobacz [zbieranie statystyk wydajności za pomocą próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)
+    - Aby uzyskać informacje o innych opcjach, które są dostępne podczas zbierania danych próbkowania, zobacz [zbieranie statystyk wydajności przy użyciu próbkowania](../profiling/collecting-performance-statistics-by-using-sampling.md)
 
-    - Aby uzyskać informacje o innych opcjach, które są dostępne, gdy są zbierane dane z próbkowania, zobacz [zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).
+    - Aby uzyskać informacje o innych opcjach, które są dostępne podczas zbierania danych próbkowania, zobacz [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).
 
 ### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbieranie danych pamięci .NET przy użyciu właściwości sesji wydajności
 
-1. W **Eksplorator wydajności**, wybierz sesję wydajności.
+1. W **Eksplorator wydajności**wybierz sesję wydajności.
 
-     Nazwa pliku sesji wydajności ma rozszerzenie .psess.
+     Nazwa pliku sesji wydajności ma rozszerzenie. psess.
 
-2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.
+2. Kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-3. W **stron właściwości**, kliknij przycisk **ogólne**.
+3. Na **stronie właściwości**kliknij pozycję **Ogólne**.
 
-4. Kliknij przycisk **próbkowania** lub **Instrumentacji**.
+4. Kliknij pozycję **próbkowanie** lub **Instrumentacja**.
 
-5. Kliknij przycisk **informacje dotyczące alokacji obiektów .NET zbieranie** do zbierania rozmiaru i liczby alokacji obiektów platformy .NET Framework.
+5. Kliknij pozycję **Zbierz informacje o alokacji obiektów .NET** , aby zebrać rozmiar i liczbę alokacji obiektów .NET Framework.
 
-6. (Opcjonalnie) Kliknij przycisk **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** do zbierania danych o generacje kolekcji wyrzucania elementów, w których pamięci obiektu zostało odzyskane.
+6. Obowiązkowe Kliknij **również pozycję Zbierz informacje o okresie istnienia obiektu .NET** , aby zebrać dane dotyczące generacji wyrzucania elementów bezużytecznych, w których odzyskuje się pamięć obiektu.
 
-     Aby uzyskać informacje o innych opcjach, które są dostępne podczas zbierania danych pamięci .NET, zobacz [.NET zbieranie danych alokacji i okresie istnienia pamięci](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
+     Aby uzyskać informacje o innych opcjach, które są dostępne podczas zbierania danych pamięci .NET, zobacz [zbieranie danych dotyczących przydziału pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).
 
-### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbierania danych współbieżności przy użyciu właściwości sesji wydajności
+### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Aby wybrać zbieranie danych współbieżności przy użyciu właściwości sesji wydajności
 
-1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
+1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. W **stron właściwości**, kliknij przycisk **ogólne**.
+2. Na **stronie właściwości**kliknij pozycję **Ogólne**.
 
-3. Kliknij przycisk **współbieżności**.
+3. Kliknij pozycję **współbieżność**.
 
 ## <a name="see-also"></a>Zobacz także
 
 [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-[zrozumieć z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
+[Poznaj wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
 [właściwości sesji wydajności](../profiling/performance-session-properties.md)

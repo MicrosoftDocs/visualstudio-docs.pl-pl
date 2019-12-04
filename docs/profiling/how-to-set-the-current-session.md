@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Ustawianie bieżącej sesji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: ustawienie bieżącej sesji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,30 +13,31 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823572"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778755"
 ---
-# <a name="how-to-set-the-current-session"></a>Instrukcje: Ustawianie bieżącej sesji
+# <a name="how-to-set-the-current-session"></a>Instrukcje: ustawienie bieżącej sesji
 
-Można otworzyć wiele sesji wydajności w **Eksplorator wydajności**, a następnie wybrać jeden z sesji wydajności widoczne, należy ustawić jako bieżącej sesji.
+W **Eksplorator wydajności**można otworzyć wiele sesji wydajności, a następnie wybrać jedną z widocznych sesji wydajności, która ma zostać ustawiona jako bieżąca sesja.
 
-Po ustawieniu sesji jako bieżącą sesję, klikając **Uruchom** na **Eksplorator wydajności** narzędzi zostanie uruchomione w bieżącej sesji profilowania.
+Po ustawieniu sesji jako bieżącej sesji, kliknięcie pozycji **Uruchom** na pasku narzędzi **Eksplorator wydajności** spowoduje rozpoczęcie profilowania bieżącej sesji.
 
 ## <a name="to-set-current-performance-session"></a>Aby ustawić bieżącą sesję wydajności
 
-- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **Ustaw jako bieżącą sesję**.
+- W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij pozycję **Ustaw jako bieżącą sesję**.
 
-     Nazwa sesji zostanie wyświetlony pogrubioną czcionką.
+     Nazwa sesji pojawia się pogrubioną czcionką.
 
 ## <a name="see-also"></a>Zobacz także
 
-[Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-[okno Eksploratora wydajności](../profiling/performance-explorer-window.md)
-[właściwości sesji wydajności](../profiling/performance-session-properties.md) 
- [ Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
+[Konfigurowanie](../profiling/configuring-performance-sessions.md) sesji wydajności
+[okna Eksplorator wydajności](../profiling/performance-explorer-window.md)
+[właściwości sesji wydajności](../profiling/performance-session-properties.md)
+[przegląd sesji wydajności](../profiling/performance-session-overview.md)
