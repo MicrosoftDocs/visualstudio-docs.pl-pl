@@ -1,5 +1,5 @@
 ---
-title: 'Przewodnik: Korzystanie z interfejsów API profilera | Microsoft Docs'
+title: 'Przewodnik: korzystanie z interfejsów API profilera | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +9,19 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870274"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779886"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Przewodnik: Korzystanie z interfejsów API profilera
+# <a name="walkthrough-using-profiler-apis"></a>Przewodnik: korzystanie z interfejsów API profilera
 
-W tym przewodniku C# użyto aplikacji do zademonstrowania sposobu używania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsów API narzędzia profilowania. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji.
+W tym przewodniku C# użyto aplikacji do zademonstrowania sposobu korzystania z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania interfejsów API. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zbieranych podczas profilowania Instrumentacji.
 
  Kroki opisane w tym instruktażu dotyczą zwykle aplikacji C/C++ . Dla każdego języka trzeba będzie odpowiednio skonfigurować środowisko kompilacji.
 
@@ -30,9 +31,6 @@ W tym przewodniku C# użyto aplikacji do zademonstrowania sposobu używania [!IN
 
  Program Visual Studio profiler umożliwia ograniczenie zbierania danych. Ten Instruktaż zawiera przykład sposobu ograniczania zbierania danych przy użyciu interfejsów API profilera. Profiler programu Visual Studio udostępnia interfejs API służący do kontrolowania zbierania danych z poziomu aplikacji.
 
- ::: moniker range=">=vs-2019"
- W przypadku kodu natywnego interfejsy API profilera programu Visual Studio znajdują się w *VSPerf. dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* .  W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*
- ::: moniker-end
  ::: moniker range="vs-2017"
  W przypadku kodu natywnego interfejsy API profilera programu Visual Studio znajdują się w *VSPerf. dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .  W przypadku aplikacji 64-bitowych folder jest w *programie Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
@@ -42,9 +40,9 @@ W tym przewodniku C# użyto aplikacji do zademonstrowania sposobu używania [!IN
 ## <a name="prerequisites"></a>Wymagania wstępne
  W tym instruktażu przyjęto założenie, że wybór środowiska programistycznego jest skonfigurowany do obsługi debugowania i próbkowania. W poniższych tematach omówiono wymagania wstępne:
 
-- [Instrukcje: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+- [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
 
-- [Instrukcje: Informacje o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
  Domyślnie po uruchomieniu profilera profiler zbiera dane na poziomie globalnym. Poniższy kod na początku programu powoduje wyłączenie profilowania globalnego.
 
@@ -126,11 +124,11 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Aby zbierać i wyświetlać dane w środowisku IDE programu Visual Studio
 
-1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Otwórz środowisko IDE. W menu **Analizuj** wskaż polecenie **Profiler**, a następnie wybierz pozycję **Nowa sesja wydajności**.
+1. Otwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. W menu **Analizuj** wskaż polecenie **Profiler**, a następnie wybierz pozycję **Nowa sesja wydajności**.
 
-2. Dodaj skompilowany plik binarny do listy targets w oknie **Eksplorator wydajności** . Kliknij prawym przyciskiem myszy element **docelowy**, a następnie wybierz polecenie **Dodaj docelowy plik binarny**. Zlokalizuj plik binarny w oknie dialogowym **Dodaj docelowy plik binarny** , a następnie kliknij przycisk **Otwórz**.
+2. Dodaj skompilowany plik binarny do listy **targets** w oknie **Eksplorator wydajności** . Kliknij prawym przyciskiem myszy element **docelowy**, a następnie wybierz polecenie **Dodaj docelowy plik binarny**. Zlokalizuj plik binarny w oknie dialogowym **Dodaj docelowy plik binarny** , a następnie kliknij przycisk **Otwórz**.
 
-3. Wybierz pozycję Instrumentacja z listy **Metoda** na pasku narzędzi **Eksplorator wydajności** .
+3. Wybierz pozycję **Instrumentacja** z listy **Metoda** na pasku narzędzi **Eksplorator wydajności** .
 
 4. Kliknij przycisk **Uruchom z profilem**.
 
@@ -154,15 +152,15 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv/TRACEON**
 
-3. Wpisz następujące polecenie: **VSInstr \<filename>.exe**
+3. Wpisz następujące polecenie: **VSInstr \<filename >. exe**
 
-4. Wpisz następujące polecenie: **VSPerfCmd/Start: Trace/Output:\<filename >. vsp**
+4. Wpisz następujące polecenie: **VSPerfCmd/Start: Trace/Output:\<nazwapliku >. vsp**
 
-5. Wpisz następujące polecenie: **Narzędzia VSPerfCmd /globaloff**
+5. Wpisz następujące polecenie: **VSPerfCmd/globaloff**
 
 6. Wykonaj swój program.
 
-7. Wpisz następujące polecenie: **Narzędzia VSPerfCmd/shutdown**
+7. Wpisz następujące polecenie: **VSPerfCmd/shutdown**
 
 8. Wpisz następujące polecenie: **VSPerfReport/calltrace:\<filename >. vsp**
 
