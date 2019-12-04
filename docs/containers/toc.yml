@@ -36,7 +36,7 @@
           href: container-tools-configure.md
     - name: Pojęcia
       items:
-        - name: Tworzenie aplikacji konteneryzowanych
+        - name: Jak program Visual Studio umożliwia tworzenie aplikacji konteneryzowanych
           href: container-build.md
     - name: Rozwiązywanie problemów
       href: troubleshooting-docker-errors.md
