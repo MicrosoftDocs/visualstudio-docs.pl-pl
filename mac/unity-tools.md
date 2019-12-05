@@ -3,14 +3,14 @@ title: Program Visual Studio dla komputerów Mac Tools for Unity
 description: Wprowadzenie do Visual Studio Tools for Unity rozszerzenia
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691868"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797244"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Program Visual Studio dla komputerów Mac Tools for Unity
 
@@ -21,7 +21,7 @@ Visual Studio dla komputerów Mac Tools for Unity to bezpłatne rozszerzenie pro
 Integracja aparatu Unity jest uwzględniona fabrycznie w programie Visual Studio dla komputerów Mac, a począwszy od Unity 2018.1, Visual Studio for Mac jest ustawieniem domyślnym C# środowisko IDE przeznaczone do projektów aparatu Unity.
 
 > [!NOTE]
-> Te informacje są dla programu Visual Studio dla komputerów Mac środowiska IDE. Dla programu Visual Studio Code, zobacz [tego przewodnika](https://code.visualstudio.com/docs/other/unity) Aby uzyskać więcej informacji.
+> Te informacje dotyczą Visual Studio dla komputerów Mac IDE. Aby uzyskać Visual Studio Code, zobacz [ten przewodnik](https://code.visualstudio.com/docs/other/unity) , aby uzyskać więcej informacji.
 
 ## <a name="overview"></a>Omówienie
 
@@ -47,6 +47,12 @@ Program Visual Studio dla komputerów Mac Tools for Unity obsługuje wszystkie [
 ### <a name="powerful-refactoring-and-context-actions"></a>Zaawansowane operacje refaktoryzacji i kontekstu
 
 Napisz więcej kodu można używać z menu szybkiego i skróty klawiaturowe dla [zmiana nazwy, refaktoryzacji i kontekstu akcji](refactoring.md).
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostyka Roslyn i szybkie poprawki dla aparatu Unity
+
+Napisz lepszy kod, który przechwytuje najlepsze rozwiązania w Visual Studio dla komputerów Mac głębokiego zrozumienia projektów środowiska Unity. 
+
+![Porównanie ciągów refaktoryzacji dla komputerów Mac z CompareTag](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>Przeglądanie i dodawanie nowych plików
 

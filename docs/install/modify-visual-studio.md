@@ -1,9 +1,9 @@
 ---
 title: Modyfikowanie programu Visual Studio
 titleSuffix: ''
-description: Dowiedz się, jak modyfikować program Visual Studio, krok po kroku.
+description: Dowiedz się, jak modyfikowanie programu Visual Studio krok po kroku.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 08/23/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74566998"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810051"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników
 
@@ -35,26 +35,26 @@ Można łatwo zmodyfikować program Visual Studio tak, aby zawierał tylko to, c
 
 ::: moniker range="vs-2017"
 
-Nie tylko Ułatwiamy Personalizowanie programu Visual Studio w celu dopasowania do zadań, które mają zostać wykonane, ale również Ułatwiamy dostosowanie programu Visual Studio. Aby to zrobić, uruchom nową Instalator programu Visual Studio i wprowadź odpowiednie zmiany.
+Nie tylko mieć ułatwiliśmy umożliwia personalizowanie programu Visual Studio, aby dopasować zadań, należy wykonać, została również ułatwiliśmy zbyt dostosować Visual Studio. Aby to zrobić, uruchom nowy Instalator programu Visual Studio i wprowadzić zmiany, które chcesz.
 
 ::: moniker-end
 
-Oto jak to zrobić.
+Poniżej przedstawiono sposób.
 
 >[!IMPORTANT]
->Aby zainstalować, zaktualizować lub zmodyfikować program Visual Studio, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).
+>Aby zainstalować, zaktualizować lub zmodyfikuj program Visual Studio, musisz zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Aby uzyskać więcej informacji, zobacz [uprawnienia użytkownika i program Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-## <a name="modify-workloads"></a>Modyfikuj obciążenia
+## <a name="modify-workloads"></a>Modyfikowanie obciążeń
 
 ::: moniker range="vs-2017"
 
- [Obciążenia](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) zawierają funkcje potrzebne dla używanego języka programowania lub platformy. Użyj obciążeń, aby zmodyfikować program Visual Studio, aby obsługiwał zadania, które chcesz wykonać, gdy chcesz to zrobić.
+ [Obciążenia](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) zawierają funkcje potrzebne dla używanego języka programowania lub platformy. Zmodyfikować programu Visual Studio, dzięki czemu obsługuje pracę, którą chcesz zrobić, jeśli chcesz to zrobić za pomocą obciążeń.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
- Obciążenia zawierają funkcje potrzebne dla używanego języka programowania lub platformy. Użyj obciążeń, aby zmodyfikować program Visual Studio, aby obsługiwał zadania, które chcesz wykonać, gdy chcesz to zrobić.
+ Obciążenia zawierają funkcje potrzebne dla używanego języka programowania lub platformy. Zmodyfikować programu Visual Studio, dzięki czemu obsługuje pracę, którą chcesz zrobić, jeśli chcesz to zrobić za pomocą obciążeń.
 
 ::: moniker-end
 
@@ -65,38 +65,38 @@ Oto jak to zrobić.
 
 ::: moniker range="vs-2017"
 
-1. Znajdź Instalator programu Visual Studio na komputerze.
+1. Znajdowanie Instalatora programu Visual Studio na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10, wybierz pozycję **Start**, a następnie przewiń do list **V**, w którym znajduje się w **Instalatora programu Visual Studio**.
 
-     ![Instalator programu Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Lokalizowanie Instalatora Microsoft Visual Studio")
+     ![Instalator programu Visual Studio](media/locate-the-visual-studio-installer.png "Lokalizowanie Instalatora Microsoft Visual Studio")
 
      >[!TIP]
-     >Na niektórych komputerach Instalator programu Visual Studio mogą być wyświetlane pod literą **"M"** jako **Instalator Microsoft Visual Studio**.<br/><br/> Alternatywnie można znaleźć Instalator programu Visual Studio w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     >Na niektórych komputerach Instalatora programu Visual Studio może zostać wyświetlony w obszarze list **"M"** jako **Instalator programu Microsoft Visual Studio**.<br/><br/> Alternatywnie można znaleźć Instalatora programu Visual Studio w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Kliknij lub naciśnij, aby uruchomić Instalatora, a następnie wybierz **Modyfikuj**.
+1. Kliknij lub naciśnij, aby uruchomić Instalatora a następnie wybierz **Modyfikuj**.
 
      ![Uruchamianie lub modyfikowanie programu Visual Studio](media/modify-visual-studio.png "Modyfikuj program Visual Studio 2017")
 
-     Jeśli masz oczekujące aktualizacje, przycisk Modyfikuj znajduje się w innym miejscu. W ten sposób można zmodyfikować program Visual Studio bez aktualizowania go, aby to zrobić. Kliknij pozycję **więcej**, a następnie wybierz polecenie **Modyfikuj**.
+     Jeśli masz oczekująca aktualizacja, przycisk Modyfikuj znajduje się w innym miejscu. Dzięki temu można zmodyfikować programu Visual Studio bez aktualizacji, należy wybrać w tym celu. Kliknij przycisk **więcej**, a następnie wybierz **Modyfikuj**.
 
      ![Aktualizowanie lub modyfikowanie programu Visual Studio](media/modify-or-update-visual-studio.png "Aktualizowanie lub modyfikowanie programu Visual Studio 2017")
 
-1. Na ekranie **obciążenia** zaznacz lub usuń zaznaczenie obciążeń, które chcesz zainstalować lub odinstalować.
+1. Z **obciążeń** ekranu, zaznacz lub odznacz opcję obciążeń, które chcesz zainstalować lub odinstalować.
 
-    ![Okno dialogowe Instalatora programu Visual Studio 2017](media/vs2017-modify-workloads.PNG "Wybieranie obciążenia w programie Visual Studio 2017")
+    ![Okno dialogowe Instalatora programu Visual Studio 2017](media/modify-workloads.png "Wybieranie obciążenia w programie Visual Studio 2017")
 
-1. Wybierz ponownie przycisk **Modyfikuj** .
+1. Wybierz **Modyfikuj** ponownie.
 
-1. Po zainstalowaniu nowych obciążeń i składników wybierz pozycję **Uruchom**.
+1. Po zainstalowaniu nowych obciążeń i składników, wybierz **Uruchom**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Znajdź Instalator programu Visual Studio na komputerze.
+1. Znajdowanie Instalatora programu Visual Studio na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10, wybierz pozycję **Start**, a następnie przewiń do list **V**, w którym znajduje się w **Instalatora programu Visual Studio**.
 
      ![Otwórz Instalator programu Visual Studio z systemu Windows](media/vs-2019/vs-installer-windows-start.png "Otwórz Instalator programu Visual Studio")
 
@@ -127,7 +127,7 @@ Oto jak to zrobić.
 
 ::: moniker-end
 
-## <a name="modify-individual-components"></a>Modyfikuj poszczególne składniki
+## <a name="modify-individual-components"></a>Zmodyfikować poszczególne składniki
 
 Jeśli nie chcesz instalować obciążeń w celu dostosowania instalacji programu Visual Studio, wybierz kartę **poszczególne składniki** na Instalator programu Visual Studio, wybierz, co chcesz zrobić, a następnie postępuj zgodnie z monitami.
 
@@ -139,5 +139,5 @@ Jeśli nie chcesz instalować obciążeń w celu dostosowania instalacji program
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizowanie programu Visual Studio w punkcie odniesienia obsługi](update-servicing-baseline.md)
-* [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
+* [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

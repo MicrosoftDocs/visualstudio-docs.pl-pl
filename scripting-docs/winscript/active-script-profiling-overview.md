@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3b85410af965fdb9fe4785efe2cf12051e19436e
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572732"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797355"
 ---
 # <a name="active-script-profiling-overview"></a>Przegląd profilowania aktywnego skryptu
 [Interfejsy profilera aktywnego skryptu](../winscript/reference/active-script-profiler-interfaces.md) umożliwiają profilowanie aparatu skryptów. Profilowanie aktywnego skryptu obejmuje następujące części:  
@@ -35,13 +35,13 @@ ms.locfileid: "72572732"
  Aparat języka implementuje [interfejs IActiveScriptProfilerControl](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
-> Środowisko uruchomieniowe języka [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sprawdza zmienną środowiskową JS_PROFILER przy tworzeniu, aby określić, czy profilowanie powinno być włączone. Jeśli ta zmienna jest ustawiona na identyfikator CLSID profilera, środowisko uruchomieniowe języka tworzy wystąpienie obiektu COM profilera przy użyciu wartości zmiennej, aby określić, który Profiler ma zostać utworzony.  
+> Środowisko uruchomieniowe języka [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sprawdza zmienną środowiskową JS_PROFILER podczas tworzenia, aby określić, czy profilowanie powinno być włączone. Jeśli ta zmienna jest ustawiona na identyfikator CLSID profilera, środowisko uruchomieniowe języka tworzy wystąpienie obiektu COM profilera przy użyciu wartości zmiennej, aby określić, który Profiler ma zostać utworzony.  
   
 ## <a name="host"></a>Host  
  Host tworzy aparat językowy i udostępnia Aparat języka ze skryptami do wykonania. Host inteligentny udostępnia również kontekst dokumentu, który może być używany przez debuger lub profiler w celu zapewnienia lepszych informacji podczas debugowania lub profilowania.  
   
 ## <a name="profiler"></a>Profiler  
- Profiler odbiera wywołania z aparatu języka w przypadku wystąpienia różnych zdarzeń. Profiler musi być zarejestrowany jako obiekt COM i musi implementować interfejs [interfejsu IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md) .  
+ Profiler odbiera wywołania z aparatu języka w przypadku wystąpienia różnych zdarzeń. Profiler musi być zarejestrowany jako obiekt COM i musi implementować [interfejs IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Interfejsy profilera aktywnego skryptu](../winscript/reference/active-script-profiler-interfaces.md)

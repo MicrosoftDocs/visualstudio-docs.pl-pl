@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983766"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810042"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek platformy Azure w sekcji Tools na stronie korzyści, a następnie kliknij pozycję **Aktywuj** link w dolnej części kafelka korzyści.
    > [!div class="mx-imgBorder"]
@@ -38,26 +38,26 @@ Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dod
 6. Tworzenie zakładek w [witrynie Azure Portal](https://portal.azure.com) w celu łatwego dostępu w przyszłości.
 
 
-## <a name="eligibility"></a>Kryteria
+## <a name="eligibility"></a>Uprawnienie
 |                 Poziom subskrypcji/program                 |           Korzyść           |                         Odnawialny?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     $150 — środki miesięczne     |                             Tak                             |
-|              Visual Studio Enterprise z usługą GitHub Enterprise               |     $150 — środki miesięczne     |                             Tak                             |
+|              Visual Studio Enterprise Standard               |     150 USD środków miesięcznie     |                             Tak                             |
+|              Visual Studio Enterprise z usługą GitHub Enterprise               |     150 USD środków miesięcznie     |                             Tak                             |
 |               Visual Studio Enterprise miesięcznie               |        Niedostępne        |                                                             |
-|             Visual Studio Professional Standard              |     $50 — środki miesięczne      |                             Tak
-|              Visual Studio Professional z usługą GitHub Enterprise              |     $150 — środki miesięczne     |                             Tak                             |
+|             Visual Studio Professional Standard              |     50 USD środków miesięcznie      |                             Tak
+|              Visual Studio Professional z usługą GitHub Enterprise              |     150 USD środków miesięcznie     |                             Tak                             |
 |              Visual Studio Professional miesięcznie              |        Niedostępne        |                                                             |
-|                    Visual Studio Test Pro                    |     $50 — środki miesięczne      |                             Tak                             |
-|                        Platformy MSDN                        |     $100 — środki miesięczne     |                             Tak                             |
-|               Visual Studio Enterprise — NFR\*               |     $150 — środki miesięczne     |                             Tak                             |
-|                Visual Studio Enterprise — równoważnik                |     $150 — środki miesięczne     |                             Tak                             |
-|     Visual Studio Enterprise — Microsoft Partner Network     |     $150 — środki miesięczne     |                             Tak                             |
+|                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Tak                             |
+|                        Platformy MSDN                        |     100 USD środków miesięcznie     |                             Tak                             |
+|               Visual Studio Enterprise — NFR\*               |     150 USD środków miesięcznie     |                             Tak                             |
+|                Visual Studio Enterprise - FTE                |     150 USD środków miesięcznie     |                             Tak                             |
+|     Visual Studio Enterprise — Microsoft Partner Network     |     150 USD środków miesięcznie     |                             Tak                             |
 |    Visual Studio Professional — Microsoft Partner Network    |        Niedostępne        |                                                             |
 |        Visual Studio Enterprise — Wyobraź sobie (standard)         |        Niedostępne        |                                                             |
 |         Visual Studio Enterprise — Wyobraź sobie (Premium)         |        Niedostępne        |                                                             |
-|             Visual Studio Enterprise — BizSpark              |     $150 — środki miesięczne     |                             Tak                             |
-|      Visual Studio Enterprise — MCT oprogramowania & Services      |     $100 — środki miesięczne     |                             Tak                             |
-| Visual Studio Enterprise — deweloper usług & oprogramowania MCT |     $150 — środki miesięczne     |                             Tak                             |
+|             Visual Studio Enterprise – BizSpark              |     150 USD środków miesięcznie     |                             Tak                             |
+|      Visual Studio Enterprise — MCT oprogramowania & Services      |     100 USD środków miesięcznie     |                             Tak                             |
+| Visual Studio Enterprise — deweloper usług & oprogramowania MCT |     150 USD środków miesięcznie     |                             Tak                             |
 
 \* Nie obejmuje odsprzedaży (NFR), najbardziej cennych profesjonalistów (MVP), regionalnej dyrektora (RD), Visual Studio Industry partner (VSIP)
 
@@ -74,6 +74,9 @@ Odp.: przesyłanie incydentu pomocy technicznej z Azure Portal jest procesem dwu
 3. Prześlij zdarzenie pomocy technicznej.
 
 Aby uzyskać szczegółowe informacje, zapoznaj się z dokumentacją [techniczną](vs-tech-support.md) .
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>P: w jaki sposób własność intelektualna jest tworzona przy użyciu funkcji My DevTest na platformie Azure?
+Odp.: własność intelektualna utworzona przez pracownika utworzonego w ramach zasobów dostarczonych przez firmę to własność intelektualna firmy dostarczającej zasób. W związku z tym, jeśli otrzymasz subskrypcję programu Visual Studio przez pracodawcę, zasady własności intelektualnej byłyby stosowane. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Pytanie: otrzymuję komunikat informujący o tym, że mój dostęp do platformy Azure wkrótce się zakończy.  Co mogę zrobić, aby kontynuować korzystanie z platformy Azure?
 Odp.: otrzymujesz tę wiadomość e-mail, ponieważ korzystasz z korzyści platformy Azure skojarzonej z subskrypcją programu Visual Studio, która wygasła lub została usunięta.  Aby nadal korzystać z platformy Azure, możesz skorzystać z kilku opcji:
@@ -101,7 +104,7 @@ Jeśli wolisz zrezygnować z tej subskrypcji programu Visual Studio Azure, może
 Jeśli uważasz, że ta wiadomość e-mail została odebrana z błędem, skontaktuj się z działem [pomocy technicznej platformy Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy dotyczącej platformy Azure?  Zapoznaj się z następującymi zasobami:
+- Potrzebujesz pomocy dla platformy Azure?  Zapoznaj się z tymi zasobami:
   - Pomoc techniczna: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Dokumentacja platformy Azure](/azure/)
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
