@@ -1,5 +1,5 @@
 ---
-title: zgłaszanie problemu
+title: 'Zgłoś problem: Stany i często zadawane pytania'
 description: Zawiera omówienie narzędzia Zgłoś problem i zawiera Stany i definicje problemów
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925980"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853506"
 ---
-# <a name="overview-report-a-problem"></a>Przegląd: Zgłaszanie problemu
+# <a name="report-a-problem-states-and-faq"></a>Zgłoś problem: Stany i często zadawane pytania
 
 Narzędzie Zgłoś problem umożliwia społeczności deweloperów programu Visual Studio przesyłanie problemów. Każdy z raportów o problemach zostanie elementem roboczym w naszym podstawowym systemie inżynieryjnym, dzięki czemu możesz bezpośrednio współpracować z naszymi zespołami produktów, aby pomóc nam identyfikować i rozwiązywać problemy. Twoja opinia złożona z rozbudowanymi informacjami diagnostycznymi ma kluczowe znaczenie dla usprawnienia rodziny produktów Visual Studio. Naprawdę doceniamy poświęcasz czas na zgłaszanie problemów.
 

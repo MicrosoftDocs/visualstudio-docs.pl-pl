@@ -1,5 +1,5 @@
 ---
-title: 'Samouczek: Debuguj kod Visual Basic'
+title: 'Samouczek: Debugowanie kodu Visual Basic'
 description: Dowiedz się, jak uruchomić debuger programu Visual Studio, Przechodź przez kod i sprawdzić dane.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 11/27/2018
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180194"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829987"
 ---
-# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugować kod Visual Basic za pomocą programu Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Samouczek: uczenie się debugowania kodu Visual Basic za pomocą programu Visual Studio
 
 W tym artykule przedstawiono funkcje debugera programu Visual Studio w przewodnik krok po kroku. Jeśli potrzebujesz widoku wyższego poziomu funkcji debugera, zobacz [pierwsze spojrzenie na debuger](../../debugger/debugger-feature-tour.md). Gdy użytkownik *debugowanie aplikacji*, zwykle oznacza to, że aplikacja jest uruchamiana w debugerze. Gdy to zrobisz, debuger zapewnia wiele sposobów, aby zobaczyć, co kod robi podczas jego uruchamiania. Można przejść przez kod i przyjrzyj się wartości przechowywane w zmiennych, można ustawić zegarki dla zmiennych, aby zobaczyć, kiedy zmienić wartości, można zbadać ścieżki wykonywania kodu, czy gałąź kodu nie jest uruchomiona, i tak dalej. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../../debugger/debugging-absolute-beginners.md) przed przejściem w tym artykule.
 
@@ -59,14 +59,14 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker-end
 
-Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, wybierz **Modyfikuj**.
+Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, wybierz **Modyfikuj**.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Visual Basic**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nowy projekt aplikacja konsoli (.NET Framework)** . W wyświetlonym oknie dialogowym wpisz nazwę, taką jak **Get-Started-Debug**, a następnie wybierz pozycję **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Visual Basic**, wybierz pozycję **Szablony**, a następnie wybierz opcję **Utwórz nowy projekt Aplikacja konsolowa (.NET Core)** lub **Utwórz nowy projekt aplikacja konsoli (.NET Framework)** . W wyświetlonym oknie dialogowym wpisz nazwę, taką jak **Get-Started-Debug**, a następnie wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual Basic**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)** . Następnie wpisz nazwę, taką jak **Get-Started-Debug** , i kliknij przycisk **OK**.
@@ -76,7 +76,7 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
     Program Visual Studio tworzy projekt.
 
-1. W *Module1. vb*Zastąp następujący kod
+1. W *Module1. vb*Zastąp cały kod domyślny
 
     ```vb
     Module Module1
@@ -197,7 +197,7 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
 ## <a name="start-the-debugger"></a>Uruchom debuger!
 
-1. Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub **Rozpocznij debugowanie** przycisk ![Rozpocznij debugowanie](../../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie ") na pasku narzędzi debugowania.
+1. Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania.
 
      **F5** uruchamia aplikacji za pomocą debugera dołączony do aplikacji, przetwarzania, ale teraz możemy jeszcze nie wykonano żadnych specjalnych badanie kodu. Dlatego właśnie ładowania aplikacji, a zostaną wyświetlone dane wyjściowe konsoli.
 
@@ -212,7 +212,7 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
      W tym samouczku utworzymy Przyjrzyj się bliżej aplikacji przy użyciu debugera i pobrać spojrzenie na debugera funkcji.
 
-2. Przerwij debugowanie, naciskając klawisz czerwony stop ![Zatrzymaj debugowanie](../../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") przycisku.
+2. Zatrzymaj debuger, naciskając czerwony przycisk Zatrzymaj ![debugowanie](../../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") przycisku.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomić debuger
 
@@ -222,7 +222,7 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
     Pojawi się czerwone kółko, gdzie ustawić punkt przerwania.
 
-    ![Ustawianie punktu przerwania](../visual-basic/media/get-started-set-breakpoint-vb.png)
+    ![Ustaw punkt przerwania](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
     Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu.
 
@@ -242,30 +242,30 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
 1. Podczas wstrzymania w `shape.Draw` metody wywołania w `Main` funkcji, naciśnij klawisz **F11** (lub wybierz **Debuguj > Step Into**) aby przejść do kodu, aby uzyskać `Rectangle` klasy.
 
-     ![Użyj F11, aby kod Step Into](../visual-basic/media/get-started-f11-vb.png "F11 Step Into")
+     ![Użyj klawisza F11, aby przejść do kodu](../visual-basic/media/get-started-f11-vb.png "F11 Wkrocz do")
 
-     Jest F11 **Step Into** poleceń i prowadzi aplikacji wykonanie jednej instrukcji w danym momencie. F11 jest dobrym sposobem na zbadanie przepływ wykonania w najbardziej szczegółowy. (Aby poruszać się szybciej za pomocą kodu, firma Microsoft dowiesz się także inne opcje również.) Domyślnie debuger pomija nad kodem niezwiązanych z użytkownikiem (Jeśli chcesz, aby uzyskać więcej informacji, zobacz [tylko mój kod](../../debugger/just-my-code.md)).
+     Jest F11 **Step Into** poleceń i prowadzi aplikacji wykonanie jednej instrukcji w danym momencie. F11 jest dobrym sposobem na zbadanie przepływ wykonania w najbardziej szczegółowy. (Aby szybciej przejść przez kod, pokazujemy inne opcje.) Domyślnie debuger pomija kod niebędący użytkownikiem (Aby uzyskać więcej szczegółów, zobacz [tylko mój kod](../../debugger/just-my-code.md)).
 
 2. Naciśnij klawisz **F10** (lub wybierz **Debuguj > Step Over**) kilka razy dopóki debuger zatrzymuje się na `MyBase.Draw` wywołania metody, a następnie klawisz **F10** jeszcze raz.
 
-     ![Użyj F10 kodowi Step Over](../visual-basic/media/get-started-step-over-vb.png "F10 Step Over")
+     ![Użyj klawisza F10, aby przekroczyć kod](../visual-basic/media/get-started-step-over-vb.png "F10 krok po kroku")
 
-     Zauważ teraz, że debuger nie wkracza w `Draw` metody klasy bazowej (`Shape`). **F10** wyjście z kodu bez przechodzenie krok po kroku do funkcji lub metody w kodzie aplikacji (nadal wykonuje kod). Przez naciśnięcie klawisza `MyBase.Draw` **F10** w wywołaniu metody (zamiast klawisza **F11**) pominięto kod implementacji dla `MyBase.Draw` (co może nie interesuje Cię teraz).
+     Zauważ teraz, że debuger nie wkracza w `Draw` metody klasy bazowej (`Shape`). **F10** wyjście z kodu bez przechodzenie krok po kroku do funkcji lub metody w kodzie aplikacji (nadal wykonuje kod). Naciskając klawisz **F10** w wywołaniu metody `MyBase.Draw` (zamiast **F11**), pominięto kod implementacji dla `MyBase.Draw` (co może nie interesuje Cię teraz).
 
 ## <a name="navigate-code-using-run-to-click"></a>Przechodzenie do kodu przy użyciu polecenia Uruchom do kliknięcia
 
-1. W edytorze kodu, przewiń w dół, umieść kursor nad `Console.WriteLine` method in Class metoda `Triangle` klasy do momentu zielony **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../../debugger/media/dbg-tour-run-to-click.png "RunToClick")pojawia się po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
+1. W edytorze kodu przewiń w dół i umieść kursor nad metodą `Console.WriteLine` w klasie `Triangle` do momentu, gdy zielony przycisk **Uruchom** do ![kliknięcia zostanie wyświetlony](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
 
-     ![Użyj Uruchom do kliknięcia funkcji](../visual-basic/media/get-started-run-to-click-vb.png "uruchamianie do kliknięcia")
+     ![Korzystanie z funkcji uruchamiania do kliknięcia](../visual-basic/media/get-started-run-to-click-vb.png "Uruchom do kliknięcia")
 
    > [!NOTE]
    > **Uruchamianie do kliknięcia** przycisk jest nowego w programie [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Jeśli nie widzisz przycisku zieloną strzałkę, użyj **F11** w tym przykładzie zamiast Aby awansować debugera we właściwym miejscu.
 
-2. Kliknij przycisk **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Kliknij przycisk **Uruchom, aby kliknąć** polecenie ![Uruchom, aby kliknąć](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Za pomocą tego przycisku jest podobna do ustawienia tymczasowy punkt przerwania. **Uruchamianie do kliknięcia** jest przydatna do poruszania się szybko w obrębie regionu widoczne dla kodu aplikacji (możesz kliknąć dowolny otwarty plik).
 
-    Przejście do debugera `Console.WriteLine` implementacji metody dla `Triangle` klasy.
+    Przejście do debugera `Console.WriteLine` implementacji metody dla `Triangle` klasy. (Jeśli debuger wstrzymuje się w pierwszej kolejności w punkcie przerwania, który został ustawiony wcześniej, należy ponownie **kliknąć polecenie Uruchom** , aby przejść do debugera, aby `Console.WriteLine`).
 
     Podczas wstrzymania, zauważysz błąd pisowni! Dane wyjściowe "Rysowanie trangle" jest błędnie wpisana. Będziemy mogli ją naprawić miejscu podczas uruchamiania aplikacji w debugerze.
 
@@ -286,11 +286,11 @@ Załóżmy, że wszystko będzie gotowe badanie `Draw` method in Class metoda `T
 
      To polecenie wznawia działanie aplikacji (i umożliwia przejście do) do momentu zwraca bieżącą funkcję.
 
-     Powinien nastąpić powrót `For Each` pętli w `Main` metody.
+     Powinien nastąpić powrót `For Each` pętli w `Main` metody. Jeśli nie, naciśnij klawisz **Shift** + **F11** po raz drugi.
 
 ## <a name="restart-your-app-quickly"></a>Szybko Uruchom ponownie swoją aplikację
 
-Kliknij przycisk **ponowne uruchomienie** ![ponowne uruchomienie aplikacji](../../debugger/media/dbg-tour-restart.png "RestartApp") przycisku na pasku narzędzi debugowania (**Ctrl** + **Shift**   +  **F5**).
+Kliknij przycisk **Uruchom** ![ponownie uruchom aplikację](../../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl** + **SHIFT** + **F5**).
 
 Po naciśnięciu klawisza **ponowne uruchomienie**, można zaoszczędzić czas i zatrzymywanie aplikacji oraz ponownego uruchamiania debugera. Debuger wstrzymuje na pierwszy punkt przerwania zostanie osiągnięty przez wykonywanie kodu.
 
@@ -300,13 +300,13 @@ Debuger zatrzymuje się ponownie w punkcie przerwania, możesz ustawić na `shap
 
 Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej przydatnych funkcjach debugera i istnieją różne sposoby, aby to zrobić. Często podczas próby debugowania problemu próbujesz sprawdzić, czy zmienne są przechowywane wartości, których można oczekiwać, aby użytkownicy posiadali w danym momencie.
 
-1. Gdy jest wstrzymana na `shape.Draw()` tej metodzie, umieść `shapes` kursor na obiekcie i zobaczysz jego wartość `Count` domyślną właściwości.
+1. Gdy jest wstrzymywana w metodzie `shape.Draw()`, umieść wskaźnik myszy nad obiektem `shapes` i zobaczysz jego wartość domyślną właściwości `Count`.
 
-1. Rozwiń obiekt, aby wyświetlić wszystkie jego właściwości, takie jak pierwszy indeks tablicy `[0]`, `Rectangle`który ma wartość. `shapes`
+1. Rozwiń obiekt `shapes`, aby wyświetlić wszystkie jego właściwości, takie jak pierwszy indeks `[0]`tablicy, który ma wartość `Rectangle`.
 
-     ![Wyświetl etykietki danych](../visual-basic/media/get-started-data-tip-vb.png "wyświetlanie etykietki danych")
+     ![Wyświetlanie etykietki danych](../visual-basic/media/get-started-data-tip-vb.png "Wyświetlanie etykietki danych")
 
-    Można dodatkowo rozwijać obiekty, aby wyświetlić ich właściwości, takie jak `Height` Właściwość prostokąta.
+    Można dodatkowo rozwijać obiekty, aby wyświetlić ich właściwości, takie jak Właściwość `Height` prostokąta.
 
     Często podczas debugowania, chcesz, aby szybko sprawdzić wartości właściwości obiektów i porady dotyczące danych są dobrym sposobem, aby to zrobić.
 
@@ -314,7 +314,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
 1. Przyjrzyj się **Autos** okna w dolnej części edytora kodu.
 
-     ![Sprawdzanie zmiennych w oknie Autos](../visual-basic/media/get-started-autos-window-vb.png "okno zmiennych automatycznych")
+     ![Sprawdź zmienne w oknie Autokorekty](../visual-basic/media/get-started-autos-window-vb.png "Okno Autokorekty")
 
     W **Autos** oknie zostanie wyświetlony, zmienne i ich bieżącą wartość. **Autos** okno pokazuje wszystkie zmienne używane w bieżącym wierszu lub poprzedni wiersz (zobacz dokumentację dla zachowania specyficzne dla języka).
 
@@ -336,7 +336,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
 2. Kliknij przycisk **F11** kilka razy, aż zostanie wyświetlony debugera wstrzymywania w `MyBase.Draw` metody `Rectangle` klasy w edytorze kodu. Przyjrzyj się **stos wywołań** okna.
 
-    ![Sprawdź stos wywołań](../visual-basic/media/get-started-call-stack-vb.png "ExamineCallStack")
+    ![Badanie stosu wywołań](../visual-basic/media/get-started-call-stack-vb.png "ExamineCallStack")
 
     **Stos wywołań** okno pokazuje kolejność, w którym są wprowadzenie wywoływane metody i funkcje. Górny wiersz zawiera bieżącą funkcję ( `Rectangle.Draw` metody w tej aplikacji). Drugi wiersz wskazuje, że `Rectangle.Draw` została wywołana z `Main` funkcji i tak dalej.
 
@@ -347,15 +347,15 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
     Możesz kliknąć dwukrotnie wiersz kodu, aby przyjrzeć się kodu źródłowego i zmienia także bieżący zakres kontrolowanym przez debuger. Ta akcja nie wcześniejsze debugera.
 
-    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okna, aby wykonywać inne czynności. Na przykład, wstawianie punktów przerwania do określonych funkcji, przejdź do debugera przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [jak: Zapoznaj się ze](../../debugger/how-to-use-the-call-stack-window.md)stosem wywołań.
+    Można również użyć menu kliknij prawym przyciskiem myszy **stos wywołań** okna, aby wykonywać inne czynności. Na przykład, wstawianie punktów przerwania do określonych funkcji, przejdź do debugera przy użyciu **Uruchom do kursora**i przejdź zbadanie kodu źródłowego. Aby uzyskać więcej informacji, zobacz [jak: Sprawdź stos wywołań](../../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Zmień przepływ wykonania
 
-1. Po wstrzymaniu debugera w `MyBase.Draw` wywołaniu `Rectangle` metody klasy, użyj myszy, aby uzyskać żółtą strzałkę (wskaźnik wykonywania) po lewej stronie, a następnie przesuń żółtą strzałkę w `Console.WriteLine` górę o jeden wiersz do wywołania metody.
+1. Gdy debuger został wstrzymany w wywołaniu metody `MyBase.Draw` klasy `Rectangle`, użyj myszy, aby uzyskać żółtą strzałkę (wskaźnik wykonywania) po lewej stronie, a następnie przesuń żółtą strzałkę w górę o jeden wiersz do wywołania metody `Console.WriteLine`.
 
 1. Naciśnij klawisz **F11**.
 
-    Debuger ponownie uruchamia `Console.WriteLine` metodę (w danych wyjściowych okna konsoli zobaczysz zduplikowane dane wyjściowe).
+    Debuger uruchamia ponownie metodę `Console.WriteLine` (w danych wyjściowych okna konsoli zobaczysz zduplikowane dane wyjściowe).
 
     Zmieniając przepływ wykonania, można wykonać czynności, jak przetestować różne ścieżki wykonywania lub uruchom ponownie kodu bez ponownego uruchamiania debugera.
 

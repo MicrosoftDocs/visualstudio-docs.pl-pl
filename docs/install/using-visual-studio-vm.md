@@ -2,7 +2,7 @@
 title: Za pomocą programu Visual Studio na maszynie wirtualnej platformy Azure
 titleSuffix: ''
 description: Dowiedz się, jak używać programu Visual Studio na maszynie wirtualnej platformy Azure
-ms.date: 09/24/2019
+ms.date: 12/04/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,14 +17,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 88e11bf7bd84fdac5d584c06042488c895b7aa09
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: c3020dda005f7042d98e64be85ca4a1d4029b898
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174139"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829966"
 ---
-# <a id="top"></a> Obrazy programu Visual Studio na platformie Azure
+# <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 
 Przy użyciu programu Visual Studio w wstępnie skonfigurowanych maszyn wirtualnych (VM) to szybki i łatwy sposób skalują się od pozycji środowisko projektowe w górę i uruchomiona. Obrazy systemu z różnymi konfiguracjami programu Visual Studio są dostępne w [portalu Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
 
@@ -36,7 +36,7 @@ Obrazy dla najnowszych wersji głównych, Visual Studio 2019, Visual Studio 2017
 
 | Wersja                                                                                                                                          | Wersje              |    Wersja produktu    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: Najnowsze (wersja 16,3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 16.3.9 wersja    |
+| [Visual Studio 2019: Najnowsze (wersja 16,4)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 16.4.0 wersja    |
 | [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 16.0.9 wersja    |
 | [Visual Studio 2017: Najnowsze (wersja 15,9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 15.9.17 wersja   |
 | [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 15.0.27 wersja   |
@@ -45,7 +45,7 @@ Obrazy dla najnowszych wersji głównych, Visual Studio 2019, Visual Studio 2017
 > [!NOTE]
 > Zgodnie z zasady obsługi firmy Microsoft pierwotnie (RTW) wersji programu Visual Studio 2015 zakończył się okres obsługi. Visual Studio 2015 Update 3 jest jedynie wersja pozostałe oferowana w przypadku linii produktów Visual Studio 2015.
 
-Aby uzyskać więcej informacji, zobacz [zasady obsługi programu Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
+Aby uzyskać więcej informacji, zobacz [Visual Studio obsługi zasad](/visualstudio/productinfo/vs-servicing-vs).
 
 ## <a name="what-features-are-installed"></a>Jakie funkcje są zainstalowane?
 
@@ -85,9 +85,9 @@ Platforma Azure oferuje szeroką gamę rozmiarów maszyn wirtualnych. Ponieważ 
 * Standard_D2S_v2
 * Maszyna wirtualna Standard_D3_v2
 
-Aby uzyskać więcej informacji na temat najnowszych rozmiarów maszyn, zobacz [rozmiary maszyn wirtualnych z systemem Windows na platformie Azure](/azure/virtual-machines/windows/sizes).
+Aby uzyskać więcej informacji na temat najnowszych rozmiarów maszyny, zobacz [rozmiary dla Windows maszyn wirtualnych na platformie Azure](/azure/virtual-machines/windows/sizes).
 
-Za pomocą platformy Azure można ponownie zrównoważyć początkowy wybór, zmieniając rozmiar maszyny Wirtualnej. Możesz aprowizować nową maszynę Wirtualną o rozmiarze bardziej odpowiednie lub zmienić rozmiar istniejącej maszyny Wirtualnej na inny sprzęt w podstawowej. Aby uzyskać więcej informacji, zobacz [Zmienianie rozmiaru maszyny wirtualnej z systemem Windows](/azure/virtual-machines/windows/resize-vm).
+Za pomocą platformy Azure można ponownie zrównoważyć początkowy wybór, zmieniając rozmiar maszyny Wirtualnej. Możesz aprowizować nową maszynę Wirtualną o rozmiarze bardziej odpowiednie lub zmienić rozmiar istniejącej maszyny Wirtualnej na inny sprzęt w podstawowej. Aby uzyskać więcej informacji, zobacz [zmienić rozmiar maszyny Wirtualnej z systemem Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Po uruchomieniu maszyny Wirtualnej, co przyniesie przyszłość?
 
@@ -95,19 +95,19 @@ Program Visual Studio następuje modelu "bring your own license" na platformie A
 - Zaloguj się przy użyciu konta Microsoft, która jest skojarzona z subskrypcji programu Visual Studio
 - Odblokuj programu Visual Studio za pomocą klucza produktu, dostarczone z Twojej początkowej kwoty zakupu
 
-Aby uzyskać więcej informacji, zobacz artykuł [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md) i [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
+Aby uzyskać więcej informacji, zobacz [Zaloguj się do programu Visual Studio](../ide/signing-in-to-visual-studio.md) i [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 ## <a name="how-do-i-save-the-development-vm-for-future-or-team-use"></a>Jak mogę zapisać deweloperskiej maszynie Wirtualnej w przyszłości lub zespołu używać?
 
 Spektrum środowisk deweloperskich jest bardzo duży i jest prawdziwy koszt związany z kompilowania bardziej złożonych środowiskach. Niezależnie od konfiguracji w danym środowisku można zapisać lub przechwycenia maszyny Wirtualnej skonfigurowanej jako "obrazu podstawowego" do użycia w przyszłości lub dla innych członków zespołu. Następnie podczas rozruchu nową maszynę Wirtualną, możesz aprowizować je z obrazu podstawowego zamiast obrazu z witryny Azure Marketplace.
 
-Szybkie podsumowanie: Użyj narzędzia do przygotowywania systemu (Sysprep) i Zamknij uruchomioną maszynę wirtualną, a następnie Przechwyć *(rysunek 1)* maszynę wirtualną jako obraz za pomocą interfejsu użytkownika w Azure Portal. Na platformie Azure jest zapisywany plik `.vhd`, który zawiera obraz na wybrane konto magazynu. Nowy obraz następnie wyświetlany jako zasób obrazu w Twojej subskrypcji listy zasobów.
+Krótkie podsumowanie: za pomocą narzędzia przygotowywania systemu (Sysprep) i Zamknij uruchomioną maszynę Wirtualną, a następnie przechwycić *(rysunek 1)* maszynę Wirtualną jako obraz przy użyciu interfejsu użytkownika w witrynie Azure portal. Zapisuje Azure `.vhd` pliku zawierającego obraz wybrane na koncie magazynu. Nowy obraz następnie wyświetlany jako zasób obrazu w Twojej subskrypcji listy zasobów.
 
 ![Przechwytywanie obrazu za pomocą interfejsu użytkownika Azure Portal](media/capture-vm.png)
 
 *(Rysunek 1) Przechwyć obraz za pomocą interfejsu użytkownika Azure Portal.*
 
-Aby uzyskać więcej informacji, zobacz [Tworzenie obrazu zarządzanego uogólnionej maszyny wirtualnej na platformie Azure](/azure/virtual-machines/windows/capture-image-resource).
+Aby uzyskać więcej informacji, zobacz [utworzenie obrazu zarządzanego uogólnionej maszyny wirtualnej na platformie Azure](/azure/virtual-machines/windows/capture-image-resource).
 
 > [!IMPORTANT]
 > Należy pamiętać przygotować maszynę Wirtualną przy użyciu narzędzia Sysprep. Jeśli pominiesz ten krok, Azure, nie można aprowizować Maszynę wirtualną z obrazu.
@@ -115,11 +115,11 @@ Aby uzyskać więcej informacji, zobacz [Tworzenie obrazu zarządzanego uogólni
 > [!NOTE]
 > Nadal naliczane pewien koszt związany z magazynu obrazów, ale rosnących kosztów można nieznaczące w porównaniu do kosztów ogólnych odbudować maszyny Wirtualnej od zera dla każdego członka zespołu, który musi mieć jeden. Na przykład koszty kilka dolarów, można utworzyć i zapisać obraz 127 GB na miesiąc, będącego wielokrotnego użytku przez całego zespołu. Jednak te koszty są nieistotne względem godzin, w których każdemu pracownikowi inwestuje do skompilowania i sprawdzanie poprawności pola dev prawidłowo skonfigurowane, do ich użytku osobistego.
 
-Ponadto zadania rozwoju lub technologii potrzebować więcej skali, takie jak różne typy konfiguracji rozwoju i wielu konfiguracji maszyny. Za pomocą Azure DevTest Labs można utworzyć _przepisy_ , które automatyzują Konstruowanie "złota obrazu". DevTest Labs umożliwia także zarządzanie zasadami dla Twojego zespołu działających maszyn wirtualnych. [Używanie Azure DevTest Labs dla deweloperów](/azure/devtest-lab/devtest-lab-developer-lab) jest najlepszym źródłem do uzyskania dodatkowych informacji na temat DevTest Labs.
+Ponadto zadania rozwoju lub technologii potrzebować więcej skali, takie jak różne typy konfiguracji rozwoju i wielu konfiguracji maszyny. Azure DevTest Labs umożliwia tworzenie _przepisy_ , automatyzacja konstrukcji swoje "złotego obrazu." DevTest Labs umożliwia także zarządzanie zasadami dla Twojego zespołu działających maszyn wirtualnych. [Dla deweloperów przy użyciu usługi Azure DevTest Labs](/azure/devtest-lab/devtest-lab-developer-lab) jest najlepsze źródło, aby uzyskać więcej informacji na temat usługi DevTest Labs.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Teraz, gdy wiesz o wstępnie skonfigurowanych obrazów programu Visual Studio, następnym krokiem jest do utworzenia nowej maszyny Wirtualnej:
 
-* [Tworzenie maszyny wirtualnej za pomocą Azure Portal](/azure/virtual-machines/windows/quick-create-portal)
-* [Przegląd Windows Virtual Machines](/azure/virtual-machines/windows/overview)
+* [Utwórz Maszynę wirtualną za pośrednictwem witryny Azure portal](/azure/virtual-machines/windows/quick-create-portal)
+* [Omówienie maszyn wirtualnych Windows](/azure/virtual-machines/windows/overview)

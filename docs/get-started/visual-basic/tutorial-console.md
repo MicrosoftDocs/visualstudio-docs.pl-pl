@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189000"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829993"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Samouczek: wprowadzenie do Visual Basic w programie Visual Studio
 
@@ -27,13 +27,13 @@ W tym samouczku dla Visual Basic (VB) będziesz używać programu Visual Studio 
 
 ::: moniker range="vs-2017"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
 
    ![Kliknij link Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../media/vs-open-visual-studio-installer-generic.png)
 
-1. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+1. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
    ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../media/tutorial-aspnet-workload.png)
 
@@ -69,16 +69,16 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
 
 1. Anuluj okno dialogowe **Nowy projekt** i z górnego paska menu, wybierz **Narzędzia** > **Pobierz narzędzia i funkcje**.
 
-1. Zostanie uruchomiona Instalator programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+1. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Niektóre zrzuty ekranu w tym samouczku używają ciemnego motywu. Jeśli nie używasz ciemnego motywu, ale chcesz, zobacz stronę [personalizowanie środowiska IDE i edytora programu Visual Studio](../../ide/quickstart-personalize-the-ide.md) , aby dowiedzieć się, jak.
+> Niektóre zrzuty ekranu w tym samouczku używają ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](../../ide/quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
 
-1. Otwórz program Visual Studio 2019.
+1. Open Visual Studio 2019.
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
@@ -111,7 +111,7 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
 
 ## <a name="create-a-what-is-your-name-application"></a>Tworzenie aplikacji "co to jest Twoja nazwa"
 
-Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a następnie wyświetli ją wraz z datą i godziną. Oto jak to zrobić:
+Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a następnie wyświetli ją wraz z datą i godziną. Zrobisz to w następujący sposób:
 
  ::: moniker range="vs-2017"
 
@@ -131,6 +131,8 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
     Ten kod zastępuje istniejące instrukcje <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>i <xref:System.Console.ReadKey%2A>.
 
    ![Okno kodu z informacjami o kodzie swojej nazwy](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Użyj zielonego przycisku **Start** lub naciśnij klawisz **F5** , aby skompilować i uruchomić swoją pierwszą aplikację.
 
 1. Po otwarciu okna konsoli wprowadź swoją nazwę. Okno konsoli powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
@@ -156,6 +158,8 @@ Utwórzmy aplikację, która wyświetli komunikat z prośbą o Twoją nazwę, a 
     Ten kod zastępuje istniejące instrukcje <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>i <xref:System.Console.ReadKey%2A>.
 
    ![Okno kodu z informacjami o kodzie swojej nazwy](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Użyj zielonego przycisku **Start** lub naciśnij klawisz **F5** , aby skompilować i uruchomić swoją pierwszą aplikację.
 
 1. Po otwarciu okna konsoli wprowadź swoją nazwę. Okno konsoli powinno wyglądać podobnie do poniższego zrzutu ekranu:
 
@@ -253,13 +257,13 @@ Program Visual Studio to zintegrowany pakiet programistyczny narzędzi do tworze
 
 Aplikacja konsolowa pobiera dane wejściowe i wyświetla dane wyjściowe w oknie wiersza polecenia, vel Konsola programu.
 
-### <a name="what-is-net-core"></a>Co to jest .NET Core?
+### <a name="what-is-net-core"></a>Co to jest platforma .NET Core?
 
 .NET Core to kolejny krok ewolucji .NET Framework. Gdy .NET Framework może udostępniać kod w różnych językach programowania, program .NET Core dodaje możliwość udostępniania kodu na różnych platformach. Jeszcze lepszym rozwiązaniem jest funkcja Open Source. (Zarówno .NET Framework, jak i .NET Core obejmują biblioteki wstępnie utworzonych funkcji, a także środowisko uruchomieniowe języka wspólnego (CLR), które działa jako maszyna wirtualna, w której ma być uruchamiany kod.)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy ukończenia tego samouczka. Aby dowiedzieć się więcej, zobacz poniższy samouczek.
+Gratulujemy wykonanie kroków tego samouczka! Aby dowiedzieć się więcej, zobacz poniższy samouczek.
 
 > [!div class="nextstepaction"]
 > [Kompilowanie biblioteki przy użyciu Visual Basic i zestaw .NET Core SDK w programie Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
