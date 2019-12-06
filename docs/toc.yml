@@ -1403,28 +1403,6 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Cykl życia pomocy technicznej i obsługi
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: Raporty dotyczące problemów
-      items:
-        - name: Jak zgłosić problem w programie Visual Studio
-          href: ide/how-to-report-a-problem-with-visual-studio.md
-        - name: Zgłaszanie problemu — stany i często zadawane pytania
-          displayName: Developer Community
-          href: ide/report-a-problem.md
-        - name: Zwiększanie prawdopodobieństwa naprawy problemu z wydajnością
-          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
-        - name: Tworzenie minizrzutów dla procesu programu Visual Studio przy użyciu wszystkich stosów wywołań
-          displayName: Create minidumps with call stacks
-          href: ide/report-a-problem-minidumps.md
-        - name: Tworzenie dzienników dotyczących problemów z programem MSBuild
-          displayName: Create logs for MSBuild problems
-          href: ide/msbuild-logs.md
-        - name: Zbieranie śladu ETL za pomocą narzędzia PerfView
-          displayName: ETL trace with PerfView
-          href: ide/report-a-problem-perfview.md
-    - name: Zaproponuj funkcję programu Visual Studio
-      href: ide/suggest-a-feature.md
-    - name: Prywatność danych w społeczności deweloperów
-      href: ide/developer-community-privacy.md
     - name: Program poprawy jakości obsługi klienta
       items:
         - name: Omówienie
@@ -1434,6 +1412,25 @@
           href: ide/diagnostic-data-collection.md
     - name: Zasoby dla rozwiązywania problemów z błędami środowiska IDE
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
-    - name: Opinia
-      displayName: Feedback
+- name: Przesyłanie opinii
+  items:
+    - name: Omówienie
       href: ide/feedback-options.md
+    - name: zgłaszanie problemu
+      items:
+        - name: Jak zgłosić problem
+          href: ide/how-to-report-a-problem-with-visual-studio.md
+        - name: Zgłaszanie problemu — stany i często zadawane pytania
+          href: ide/report-a-problem.md
+        - name: Szybsze rozwiązywanie problemów z wydajnością
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
+        - name: Tworzenie minizrzutów przy użyciu stosów wywołań
+          href: ide/report-a-problem-minidumps.md
+        - name: Tworzenie dzienników dotyczących problemów z programem MSBuild
+          href: ide/msbuild-logs.md
+        - name: Zbieranie śladu ETL za pomocą narzędzia PerfView
+          href: ide/report-a-problem-perfview.md
+    - name: proponowanie funkcji
+      href: ide/suggest-a-feature.md
+    - name: Prywatność danych w społeczności deweloperów
+      href: ide/developer-community-privacy.md
