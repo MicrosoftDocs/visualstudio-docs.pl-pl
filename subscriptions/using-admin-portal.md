@@ -6,14 +6,15 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490703"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879311"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Omówienie portalu administracyjnego subskrypcji programu Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
+
 Portal administrowania subskrypcjami programu Visual Studio udostępnia narzędzia do zarządzania subskrypcjami w jednym miejscu w organizacji. 
 
 ## <a name="important-considerations"></a>Ważne zagadnienia
@@ -38,14 +39,14 @@ Po przypisaniu subskrypcji karta Subskrybenci zawiera szczegółowe informacje d
 
 Po lewej stronie tej strony zobaczysz dodatkowe informacje o liczbie licencji subskrypcji zakupionych, przypisanych i nadal dostępnych w organizacji dla każdej umowy.
 > [!div class="mx-imgBorder"]
-> ![Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> Strona subskrybentów portalu administracyjnego subskrypcji programu Visual Studio ![](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>Strona szczegółów
 Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz kartę Szczegóły. Pokazuje stan umowy, konto zakupu, szczegóły organizacji, administratorów i inne odpowiednie informacje.
 > [!div class="mx-imgBorder"]
-> ![Strona szczegółów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
+> Strona szczegółów portalu administracyjnego ![subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
 - [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 - [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)

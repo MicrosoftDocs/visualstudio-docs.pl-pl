@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806766"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879285"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 Aby uniknąć błędów współbieżności w programie wielowątkowym, zawsze postępuj zgodnie z odpowiednią dyscypliną blokowania i korzystaj z adnotacji SAL.
@@ -66,20 +66,20 @@ Poniższa tabela zawiera listę adnotacji blokowania.
 
 |Adnotacja|Opis|
 |----------------|-----------------|
-|`_Acquires_exclusive_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja jest zwiększana o jedną z wyłącznej blokady obiektu blokady o nazwie `expr`.|
-|`_Acquires_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną liczbę blokad obiektu blokady o nazwie `expr`.|
-|`_Acquires_nonreentrant_lock_(expr)`|Zostanie wykorzystana blokada o nazwie `expr`.  Gdy blokada jest już utrzymywana, zgłaszany jest błąd.|
-|`_Acquires_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną współdzieloną liczbę blokad obiektu blokady o nazwie `expr`.|
+|`_Acquires_exclusive_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja jest zwiększana o jedną z wyłącznej blokady obiektu blokady o nazwie przez `expr`.|
+|`_Acquires_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną liczbę blokad obiektu blokady o nazwie przez `expr`.|
+|`_Acquires_nonreentrant_lock_(expr)`|Zostanie uzyskana blokada o nazwie `expr`.  Gdy blokada jest już utrzymywana, zgłaszany jest błąd.|
+|`_Acquires_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zwiększa się o jedną współdzieloną liczbę blokad obiektu blokady, który jest nazwany przez `expr`.|
 |`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` być poziomem blokady, aby mogła być używana w `_Has_Lock_level_` adnotacji i `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Adnotuj każdy obiekt, aby uściślić informacje o typie obiektu zasobu. Czasami typowy typ jest używany dla różnych rodzajów zasobów i przeciążony typ nie jest wystarczający do odróżnienia wymagań semantycznych między różnymi zasobami. Poniżej znajduje się lista wstępnie zdefiniowanych parametrów `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> Identyfikator typu blokady dla muteksów.<br /><br /> `_Lock_kind_event_`<br /> Identyfikator rodzaju blokady dla zdarzeń.<br /><br /> `_Lock_kind_semaphore_`<br /> Identyfikator rodzaju blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Identyfikator typu blokady dla blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Identyfikator rodzaju blokady dla sekcji krytycznych.|
 |`_Has_lock_level_(name)`|Adnotuj obiekt blokady i nadaje mu poziom blokady `name`.|
-|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2`.|
+|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2`.  Blokady, które mają `name1` poziomu muszą zostać pobrane przed blokadami, które mają poziom `name2`|
 |`_Post_same_lock_(expr1, expr2)`|Adnotuj funkcję i wskazuje, że w stanie post dwa blokady, `expr1` i `expr2`, są traktowane tak, jakby były tym samym obiektem blokady.|
-|`_Releases_exclusive_lock_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w stanie post funkcja zmniejsza się o jedną z wyłącznej blokady obiektu blokady o nazwie `expr`.|
-|`_Releases_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad obiektu blokady o nazwie `expr`.|
-|`_Releases_nonreentrant_lock_(expr)`|Blokada o nazwie `expr` jest wydawana. Jeśli blokada nie jest obecnie utrzymywana, zgłaszany jest błąd.|
-|`_Releases_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną współdzieloną liczbę blokad obiektu blokady o nazwie `expr`.|
-|`_Requires_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu, który jest nazwany `expr` to co najmniej jeden.|
+|`_Releases_exclusive_lock_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad na wyłączność obiektu blokady o nazwie `expr`.|
+|`_Releases_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad obiektu blokady o nazwie przez `expr`.|
+|`_Releases_nonreentrant_lock_(expr)`|Zostanie wydaną blokadę o nazwie `expr`. Jeśli blokada nie jest obecnie utrzymywana, zgłaszany jest błąd.|
+|`_Releases_shared_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną współdzieloną liczbę blokad obiektu blokady, który jest nazwany przez `expr`.|
+|`_Requires_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu, który jest nazwany przez `expr` jest co najmniej jeden.|
 |`_Requires_lock_not_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnym stanie liczba blokad obiektu o nazwie `expr` wynosi zero.|
 |`_Requires_no_locks_held_`|Adnotuj funkcję i wskazuje, że liczba blokad wszystkich blokad, które są znane do sprawdzania, wynosi zero.|
 |`_Requires_shared_lock_held_(expr)`|Adnotuj funkcję i wskazuje, że w wstępnej liczbie współużytkowanej liczby blokad obiektu o nazwie `expr` jest co najmniej jeden.|
@@ -112,9 +112,9 @@ Inteligentne blokady zwykle zawijają natywne blokady i zarządzają ich okresem
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Informuje Analizator, aby założyć, że inteligentna Blokada została pobrana. Ta adnotacja oczekuje typu blokady odwołania jako parametru.|
 |`_Analysis_assume_smart_lock_released_`|Nakazuje analizatorowi założenie, że inteligentna Blokada została wydana. Ta adnotacja oczekuje typu blokady odwołania jako parametru.|
-|`_Moves_lock_(target, source)`|Opisuje operację `move constructor`, która przenosi stan blokady z obiektu `source` do `target`. `target` jest traktowany jako nowo skonstruowany obiekt, dlatego każdy stanie musiał przed utratą i został zastąpiony przez stan `source`. `source` jest również resetowany do stanu czystego bez liczby blokad ani obiektu docelowego aliasu, ale aliasy wskazujące, pozostaną bez zmian.|
+|`_Moves_lock_(target, source)`|Opisuje `move constructor` operacji, która przenosi stan blokady z obiektu `source` do `target`. `target` jest traktowany jako nowo skonstruowany obiekt, dlatego każdy stanie musiał przed utratą i został zastąpiony przez stan `source`. `source` jest również resetowany do stanu czystego bez liczby blokad ani obiektu docelowego aliasu, ale aliasy wskazujące, pozostaną bez zmian.|
 |`_Replaces_lock_(target, source)`|Opisuje semantykę `move assignment operator`, w której wydano blokadę docelową przed przeniesieniem stanu ze źródła. Można to traktować jako kombinację `_Moves_lock_(target, source)` poprzedzonej `_Releases_lock_(target)`.|
-|`_Swaps_locks_(left, right)`|W tym artykule opisano zachowanie standardowego `swap`, które zakłada, że obiekty `left` i `right` wymieniają swój stan. Wymieniany stan obejmuje liczbę blokad i obiekt docelowy aliasu, jeśli jest obecny. Aliasy wskazujące na obiekty `left` i `right` pozostaną niezmienione.|
+|`_Swaps_locks_(left, right)`|Opisuje standardowe zachowanie `swap`, które zakłada, że obiekty `left` i `right` wymianę ich stanu. Wymieniany stan obejmuje liczbę blokad i obiekt docelowy aliasu, jeśli jest obecny. Aliasy wskazujące `left` i obiekty `right` pozostaną niezmienione.|
 |`_Detaches_lock_(detached, lock)`|Opisuje scenariusz, w którym typ otoki blokady zezwala na skojarzenie z zawartym w nim zasobem. Jest to podobne do sposobu, w jaki `std::unique_ptr` współpracuje ze swoim wskaźnikiem wewnętrznym: umożliwia programistom wyodrębnienie wskaźnika i pozostawienie jego kontenera inteligentnego wskaźnika w stanie czystym. Podobna logika jest obsługiwana przez `std::unique_lock` i może być implementowana w niestandardowych otokach blokady. Odłączona blokada zachowuje swój stan (liczba zablokowanych i obiekt docelowy aliasu, jeśli istnieje), podczas gdy otoka jest resetowana, aby zawierała liczbę blokad równą zero i bez obiektu docelowego aliasu, zachowując własne aliasy. Nie ma operacji dotyczących liczby blokad (zwalniania i pozyskiwania). Ta adnotacja zachowuje się dokładnie tak, jak `_Moves_lock_`, z tą różnicą, że odłączony argument powinien być `return`, a nie `this`.|
 
 ## <a name="see-also"></a>Zobacz także
