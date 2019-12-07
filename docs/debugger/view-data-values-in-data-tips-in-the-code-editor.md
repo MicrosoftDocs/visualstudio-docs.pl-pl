@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4674dec4b15f608eb25ffaf62c97efcc2363ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929969"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903890"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w DataTips w edytorze kodu
 
-DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych w programie podczas debugowania. DataTips działa tylko w trybie przerwania i tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania. Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) i [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md) przed przejściem w tym artykule.
+DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych w programie podczas debugowania. DataTips działa tylko w trybie przerwania i tylko w przypadku zmiennych, które znajdują się w bieżącym zakresie wykonywania. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
 ## <a name="work-with-datatips"></a>Praca z DataTips
 
@@ -46,7 +46,7 @@ Aby DataTip przezroczyste, aby wyświetlić kod, który znajduje się poniżej z
 
 Aby przypiąć etykietki danych pozostaje otwarty, wybierz pinezkę **Przypnij do źródła** ikony.
 
-![Przypnij DataTip](../debugger/media/dbg-tips-data-tips-pinned.png "przypiąć etykietki danych")
+![Przypinanie elementu etykietki danych](../debugger/media/dbg-tips-data-tips-pinned.png "Numer PIN etykietki danych")
 
 Możesz przenieść etykietki danych przypięte przez przeciągnięcie go w całym okna kodu. Ikona pinezki pojawia się na marginesie obok wiersza, który DataTip jest przypięta do.
 
@@ -84,7 +84,7 @@ Korzystanie z DataTips, aby rozwinąć tablica, struktury lub obiekt, aby wyświ
 
 Aby rozwinąć obiektu w poradzie dotyczącej danych, aby wyświetlić jego elementy, umieść kursor nad strzałki rozwiń przed nazwami elementów, aby wyświetlić elementy w formie drzewa. Etykietki danych przypięte, można wybrać **+** przed zmienna nazwy, a następnie rozwiń węzeł drzewa.
 
-![Rozwiń DataTip](../debugger/media/dbg-tour-data-tips.png "rozwiń etykietki danych")
+![Rozwiń element etykietki danych](../debugger/media/dbg-tour-data-tips.png "Rozwiń element etykietki danych")
 
 Można przenieść w górę i w dół w widoku rozszerzonym, można użyć myszy lub klawiszy strzałek na klawiaturze.
 
@@ -94,11 +94,26 @@ Możesz również przypiąć rozwiniętych elementów do przypiętych etykietka 
 
 Aby edytować wartość zmiennej lub elementu w poradzie dotyczącej danych, wybierz wartość, wpisz nową wartość i naciśnij klawisz **Enter**. Wybieranie jest wyłączone dla wartości tylko do odczytu.
 
+::: moniker range=">= vs-2019"
+
+## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>Przypnij właściwości w etykietkach danych (obsługiwane w programie Visual Studio 2019 w wersji 16,4 Preview 3 lub nowszej)
+
+> [!NOTE]
+> Ta funkcja jest obsługiwana w przypadku platformy .NET Core 3,0 lub nowszej.
+
+Możesz szybko sprawdzić obiekty według ich właściwości w etykietkach danych za pomocą narzędzia **Pinnable Properties** .  Aby użyć tego narzędzia, umieść kursor nad właściwością i wybierz ikonę pinezki, która jest wyświetlana, lub kliknij prawym przyciskiem myszy i wybierz opcję **Przypnij element członkowski jako ulubiony** w menu kontekstowym.  Powoduje to odfiltrowanie tej właściwości do górnej części listy właściwości obiektu, a nazwa właściwości i wartość są wyświetlane w prawej kolumnie etykietki danych.  Aby odpiąć właściwość, wybierz ponownie ikonę pinezki lub wybierz opcję **Odepnij członka jako ulubioną** w menu kontekstowym.
+
+![Przypinanie właściwości w etykietki danych](../debugger/media/basic-pin-datatip.gif "Przypinanie właściwości w etykietki danych")
+
+Można również przełączać nazwy właściwości i odfiltrować przypięte właściwości podczas wyświetlania listy właściwości obiektu w etykietki danych.  Możesz uzyskać dostęp do dowolnej opcji, klikając prawym przyciskiem myszy wiersz zawierający właściwość i wybierając pozycję **Pokaż tylko przypiętych członków** lub **Ukryj nazwy przypiętych elementów członkowskich w** opcjach wartości w menu kontekstowym.
+
+::: moniker-end
+
 ## <a name="visualize-complex-data-types"></a>Wizualizuj złożone typy danych
 
 Ikonę szkła powiększającego obok zmienna lub element DataTip oznacza, że jeden lub więcej [wizualizatorów](../debugger/create-custom-visualizers-of-data.md), takich jak [Wizualizator tekstu](../debugger/string-visualizer-dialog-box.md), są dostępne dla zmiennej. Wizualizatory wyświetlić informacje w sposób bardziej zrozumiały, czasami graficznego.
 
-Aby wyświetlić element za pomocą wizualizatora domyślna dla typu danych, wybierz ikonę lupy ![ikonę Wizualizator](../debugger/media/dbg-tips-visualizer-icon.png "ikonę Wizualizator"). Wybierz strzałkę obok ikony lupy dokonania wyboru z listy wizualizatorów typu danych.
+Aby wyświetlić element przy użyciu domyślnego wizualizatora dla typu danych, wybierz ikonę lupy ikona ![wizualizatora](../debugger/media/dbg-tips-visualizer-icon.png "Ikona wizualizatora"). Wybierz strzałkę obok ikony lupy dokonania wyboru z listy wizualizatorów typu danych.
 
 ## <a name="add-a-variable-to-a-watch-window"></a>Dodaj zmienną w oknie czujki
 
@@ -124,7 +139,7 @@ Możesz wyeksportować etykietek danych do pliku XML, który można udostępnia�
 
 ## <a name="see-also"></a>Zobacz także
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
-- [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
+- [Techniki i narzędzia debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)
 - [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)
 - [Okna wyrażeń kontrolnych i szybkich wyrażeń kontrolnych](../debugger/watch-and-quickwatch-windows.md)

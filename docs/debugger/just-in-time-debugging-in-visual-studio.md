@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911457"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903868"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera just in time
 
 Okno dialogowe debuger just in time może zostać otwarte w przypadku wystąpienia błędu w działającej aplikacji i uniemożliwić kontynuowanie działania aplikacji.
 
-Debuger just in Time umożliwia uruchamianie programu Visual Studio w celu debugowania błędu. Aby wyświetlić szczegółowe informacje o błędzie lub spróbować go debugować, musisz mieć zainstalowany [program Visual Studio](https://visualstudio.microsoft.com/) lub inny wybrany debuger.
+Debuger just in Time umożliwia uruchamianie programu Visual Studio w celu debugowania błędu. Aby wyświetlić szczegółowe informacje o błędzie lub spróbować go debugować, musisz mieć zainstalowany program Visual Studio lub inny wybrany debuger.
 
-Jeśli jesteś użytkownikiem programu Visual Studio i chcesz spróbować debugować błąd, zobacz [debugowanie przy użyciu debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie możesz naprawić błędu lub chcesz zachować debuger just in Time, możesz [wyłączyć debugowanie just in Time z programu Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Jeśli już jesteś użytkownikiem programu Visual Studio i chcesz spróbować debugować błąd, zobacz [debugowanie przy użyciu debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie możesz naprawić błędu lub chcesz zachować debuger just in Time, możesz [wyłączyć debugowanie just in Time z programu Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Jeśli program Visual Studio został zainstalowany, ale nie jest już potrzebny, może być konieczne [wyłączenie debugowania just in Time w rejestrze systemu Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929329"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74904053"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Obserwuj zmienne, za pomocą okna czujki i QuickWatch
 
@@ -30,7 +30,7 @@ Podczas debugowania, można użyć **Obejrzyj** systemu windows i **QuickWatch**
 
 **Obejrzyj** systemu windows można wyświetlić wiele zmiennych podczas debugowania. **QuickWatch** okno dialogowe Wyświetla pojedynczą zmienną w czasie i muszą zostać zamknięte przed kontynuowaniem debugowania.
 
-Jeśli po raz pierwszy, próbujących przeprowadzić debugowania kodu, warto przeczytać [debugowania dla początkujących](../debugger/debugging-absolute-beginners.md) i [debugowania, narzędzia i techniki](../debugger/write-better-code-with-visual-studio.md) przed przejściem w tym artykule.
+Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przeprowadzeniem tego artykułu warto przeczytać [debugowanie dla bezwzględnych](../debugger/debugging-absolute-beginners.md) [technik i narzędzi debugowania](../debugger/write-better-code-with-visual-studio.md) .
 
 ## <a name="observe-variables-with-a-watch-window"></a>Obserwuj zmienne okno czujki
 
@@ -84,24 +84,35 @@ Możesz obserwować dowolnym prawidłowym wyrażeniem rozpoznawanym przez debuge
 
 Na przykład w przypadku kodu w poprzedniej sekcji, wprowadzając można pobierać średnią z trzech wartości `(a + b + c) / 3` w **Obejrzyj** okna:
 
-![Wyrażenie czujki](../debugger/media/watchexpression.png "wyrażenie czujki")
+![Wyrażenie czujki](../debugger/media/watchexpression.png "Wyrażenie czujki")
 
 Reguły dotyczące oceny wyrażenia w **Obejrzyj** są generalnie takie same jak reguły dotyczące wyrażeń języka kodu. Jeśli wyrażenie zawiera błąd składniowy, oczekiwać, że ten sam błąd kompilatora, tak jak w edytorze kodu. Na przykład błąd pisowni w poprzednim wyrażeniu generuje ten błąd wystąpił w **Obejrzyj** okna:
 
-![Obejrzyj błąd wyrażenia](../debugger/media/watchexpressionerror.png "Obejrzyj błąd wyrażenia")
+![Błąd wyrażenia czujki](../debugger/media/watchexpressionerror.png "Błąd wyrażenia czujki")
 
 Koło z ikoną dwóch falistych linii może występować w **Obejrzyj** okna. Ta ikona oznacza, że debuger nie szacuje wyrażenia ze względu na potencjalne zależności między wątkami. Obliczenie kodu wymaga innych wątków w aplikacji do tymczasowego uruchomienia, ale ponieważ jesteś w trybie przerwania, zwykle zatrzymuje wszystkie wątki w swojej aplikacji. Zezwolenie tymczasowego uruchomienia innych wątków może mieć nieoczekiwane działanie dotyczące stanu aplikacji, a debuger może zignorować zdarzenia, takie jak punkty przerwania i wyjątków na te wątki.
 
 ::: moniker range=">= vs-2019" 
-## <a name="search-in-the-watch-window"></a>Wyszukiwanie w oknie czujki
+## <a name="search-in-the-watch-window"></a>Wyszukaj w okno wyrażeń kontrolnych
 
-Wyszukiwanie słów kluczowych w kolumnach nazwę, wartość i typ **Obejrzyj** okna, korzystając z paska wyszukiwania powyżej każdego okna. Naciśnij klawisz ENTER lub wybierz jedną z strzałki, aby wykonać wyszukiwanie. Aby anulować bieżące wyszukiwanie, wybierz ikonę "x" na pasku wyszukiwania.
+Słowa kluczowe można wyszukiwać w kolumnach Nazwa, wartość i typ okna **czujka** przy użyciu paska wyszukiwania powyżej każdego okna. Naciśnij klawisz ENTER lub wybierz jedną ze strzałek, aby wykonać wyszukiwanie. Aby anulować bieżące wyszukiwanie, wybierz ikonę "x" na pasku wyszukiwania.
 
-Użyj strzałek w lewo i w prawo (Shift + F3 i F3, odpowiednio) do przechodzenia między znaleziono dopasowania.
+Użyj strzałek w lewo i w prawo (odpowiednio Shift + F3 i F3), aby poruszać się między znalezionymi dopasowaniami.
 
-![Wyszukiwanie w oknie czujki](../debugger/media/ee-search-watch.png "wyszukiwania w oknie czujki")
+![Wyszukaj w oknie czujki](../debugger/media/ee-search-watch.png "Wyszukaj w oknie czujki")
 
-Aby wyszukiwanie więcej lub mniej dokładne, użyj **wyszukiwania bardziej** listy rozwijanej w górnej części **Obejrzyj** okno, aby wybrać, ile poziomów w głąb chcesz wyszukać w zagnieżdżonych obiektów. 
+Aby przeszukać więcej lub mniej szczegółowych informacji, Użyj listy rozwijanej **Szukaj z dokładniejszą** w górnej części okna **czujka** , aby wybrać liczbę poziomów, które mają być przeszukiwane w zagnieżdżonych obiektach. 
+
+## <a name="pin-properties-in-the-watch-window"></a>Przypnij właściwości w okno wyrażeń kontrolnych
+
+>[!NOTE]
+> Ta funkcja jest obsługiwana w programie .NET Core 3,0 lub nowszym.
+
+Możesz szybko sprawdzić obiekty według ich właściwości w okno wyrażeń kontrolnych za pomocą narzędzia **Pinnable Properties** .  Aby użyć tego narzędzia, umieść kursor nad właściwością i wybierz ikonę pinezki, która jest wyświetlana, lub kliknij prawym przyciskiem myszy i wybierz opcję **Przypnij element członkowski jako ulubiony** w menu kontekstowym.  Powoduje to **odfiltrowanie** tej właściwości do górnej części listy właściwości obiektu, a nazwa właściwości i wartość jest wyświetlana w kolumnie wartość.  Aby odpiąć właściwość, wybierz ponownie ikonę pinezki lub wybierz opcję **Odepnij członka jako ulubioną** w menu kontekstowym.
+
+![Przypnij właściwości w okno wyrażeń kontrolnych](../debugger/media/basic-pin-watch.gif "Przypnij właściwości w okno wyrażeń kontrolnych")
+
+Można również przełączać nazwy właściwości i odfiltrować przypięte właściwości podczas wyświetlania listy właściwości obiektu w okno wyrażeń kontrolnych.  Dostęp do obu opcji można uzyskać, wybierając przyciski na pasku narzędzi powyżej okna Czujka.
 
 ::: moniker-end
 
@@ -138,7 +149,7 @@ Aby zademonstrować, za pomocą ikony odświeżania:
 
 1. Rozpocznij debugowanie. **Obejrzyj** okno przedstawia podobny do następującego komunikatu:
 
-   ![Odśwież Obejrzyj](../debugger/media/refreshwatch.png "Odśwież wyrażenie kontrolne")
+   ![Odśwież czujkę](../debugger/media/refreshwatch.png "Odśwież czujkę")
 
 1. Aby odświeżyć wartości, wybierz ikonę odświeżania lub naciśnij klawisz spacji. Debuger reevaluates wyrażenia.
 
@@ -210,7 +221,7 @@ Aby dowiedzieć się, nazwa `Person` w `DoSomething()` metody, można dodać odw
 
 1. W **lokalne** okna, kliknij prawym przyciskiem myszy `Person` zmiennych i wybierz pozycję **wprowadzić identyfikator obiektu**.
 
-   Powinien zostać wyświetlony znak dolara (**$**) oraz liczbą **lokalne** okno, które jest identyfikatora obiektu.
+   Powinien zostać wyświetlony znak dolara ( **$** ) oraz liczbą **lokalne** okno, które jest identyfikatora obiektu.
 
 1. Dodaj identyfikator obiektu do **Obejrzyj** okna, kliknij prawym przyciskiem myszy identyfikator obiektu i wybierając **Dodaj czujkę**.
 
@@ -279,11 +290,11 @@ Aby obserwować `a` zmiennej
 
    **QuickWatch** zostanie wyświetlone okno dialogowe. `a` Zmiennej znajduje się w **wyrażenie** polu z **wartość** z **1**.
 
-   ![Zmienna QuickWatch](../debugger/media/quickwatchvariable.png "zmiennej QuickWatch")
+   ![Zmienna QuickWatch](../debugger/media/quickwatchvariable.png "Zmienna QuickWatch")
 
 1. Aby szacować wyrażenia za pomocą zmiennej, wpisz wyrażenie takich jak `a + b` w **wyrażenie** i zaznacz **to ponowne ocenienie**.
 
-   ![Wyrażenie w QuickWatch](../debugger/media/quickwatchexpression.png "wyrażenie w QuickWatch")
+   ![Wyrażenie QuickWatch](../debugger/media/quickwatchexpression.png "Wyrażenie QuickWatch")
 
 1. Aby dodać zmiennej lub wyrażenia z **QuickWatch** do **Obejrzyj** wybierz **Dodaj wyrażenie kontrolne**.
 
@@ -293,6 +304,6 @@ Aby obserwować `a` zmiennej
 
 ## <a name="see-also"></a>Zobacz także
 - [Co to jest debugowanie?](../debugger/what-is-debugging.md)
-- [Narzędzia i techniki debugowania](../debugger/write-better-code-with-visual-studio.md)
+- [Techniki i narzędzia debugowania](../debugger/write-better-code-with-visual-studio.md)
 - [Pierwsze spojrzenie na profilowanie](../debugger/debugger-feature-tour.md)
 - [Okna debugera](../debugger/debugger-windows.md)

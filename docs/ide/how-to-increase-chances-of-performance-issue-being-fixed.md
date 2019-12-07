@@ -5,18 +5,18 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528435"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903997"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
 Narzędzie "[Zgłoś problem](https://aka.ms/vs-rap)" jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania wielu problemów. Zespół programu Visual Studio plamuje trendy awarii i spowolnienia w zakresie opinii użytkowników i rozwiązuje problemy, które mają wpływ na rozległą Swath użytkowników. Im bardziej funkcjonalny jest konkretny bilet opinii, tym bardziej prawdopodobnie zostanie on zdiagnozowany i rozwiązany szybko przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania w zakresie zgłaszania problemów dotyczących awarii lub spowolnienia w celu zwiększenia możliwości podejmowania działań.
 
-## <a name="general-best-practices"></a>Ogólne najlepsze rozwiązania
+## <a name="general-best-practices"></a>Ogólne najlepsze praktyki
 
 Program Visual Studio to duża, złożona platforma, która obsługuje wiele języków, typów projektów, platform i nie tylko. Sposób działania jest funkcją, w której składniki są instalowane i aktywne w sesji, zainstalowane rozszerzenia, ustawienia programu Visual Studio, Konfiguracja komputera i na końcu kształtu edytowanego kodu. Mając na względzie liczbę zmiennych, trudno jest stwierdzić, czy raport o problemach z jednego użytkownika ma ten sam problem jako raport o problemie od innego użytkownika, chociaż widoczny objaw jest taki sam. Z tego względu niektóre najlepsze rozwiązania mają na celu zagwarantowanie, że konkretny raport o problemie ma większe prawdopodobieństwo zdiagnozowania.
 
@@ -116,9 +116,9 @@ Zgodnie z opisem w odpowiedniej sekcji dotyczącej awarii, w przypadku problemó
 **Nieznana nieodpowiadający czas**
 
 Jeśli manifesty nieodpowiadające są w sposób nieprzewidywalny, w następnym wystąpieniu Uruchom nowe wystąpienie programu Visual Studio i Zgłoś problem z tego wystąpienia.
-Na [ekranie "rekord"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)Pamiętaj, aby wybrać sesję programu Visual Studio, która zawiesiła się.
+Na [ekranie "rekord"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)upewnij się, że wybrano sesję programu Visual Studio, która nie odpowiada.
 
-Jeśli wystąpienie programu Visual Studio, które jest zawieszone, zostało uruchomione w trybie administratora, drugie wystąpienie należy również uruchomić w trybie administratora.
+Jeśli wystąpienie programu Visual Studio, które nie odpowiada, zostało uruchomione w trybie administratora, drugie wystąpienie należy również uruchomić w trybie administratora.
 
 >[!NOTE] 
 > **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zrzut sterty przechwytywany w czasie braku odpowiedzi.
