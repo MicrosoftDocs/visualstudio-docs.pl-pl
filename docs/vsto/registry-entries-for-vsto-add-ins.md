@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
+ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985649"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74945073"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   Podczas wdrażania dodatków VSTO utworzonych przy użyciu programu Visual Studio należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru zawierają informacje umożliwiające aplikacji Microsoft Office odnajdywania i ładowania dodatku VSTO.
@@ -40,36 +40,27 @@ ms.locfileid: "72985649"
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Zarejestruj Dodatki narzędzia VSTO dla bieżącego użytkownika a wszyscy użytkownicy
  Po zainstalowaniu dodatku VSTO można go zarejestrować na dwa sposoby:
 
-- Tylko dla bieżącego użytkownika (oznacza to, że jest dostępny tylko dla użytkownika, który jest zalogowany na komputerze po zainstalowaniu dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w kluczu **HKEY_CURRENT_USER**.
+- Tylko dla bieżącego użytkownika (oznacza to, że jest dostępny tylko dla użytkownika, który jest zalogowany na komputerze po zainstalowaniu dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w obszarze **HKEY_CURRENT_USER**.
 
-- Dla wszystkich użytkowników (oznacza to, że każdy Użytkownik logujący się na komputerze może korzystać z dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w **kluczu HKEY_LOCAL_MACHINE**.
+- Dla wszystkich użytkowników (oznacza to, że każdy Użytkownik logujący się na komputerze może korzystać z dodatku VSTO). W takim przypadku wpisy rejestru są tworzone w obszarze **HKEY_LOCAL_MACHINE**.
 
   Wszystkie dodatki narzędzi VSTO tworzone za pomocą programu Visual Studio mogą być zarejestrowane dla bieżącego użytkownika. Jednak dodatki narzędzi VSTO mogą być rejestrowane dla wszystkich użytkowników tylko w określonych scenariuszach. Te scenariusze zależą od wersji Microsoft Office na komputerze oraz sposobu wdrożenia dodatku VSTO.
 
-### <a name="microsoft-office-version"></a>Wersja Microsoft Office
- Aplikacje pakietu Office mogą ładować dodatki narzędzi VSTO zarejestrowane w obszarze **HKEY_LOCAL_MACHINE** lub **HKEY_CURRENT_USER**.
-
- Aby załadować dodatki narzędzi VSTO zarejestrowane w **kluczu HKEY_LOCAL_MACHINE**, na komputerach musi być zainstalowany pakiet aktualizacji 976477. Aby uzyskać więcej informacji, zobacz [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel).
-
 ### <a name="deployment-type"></a>Typ wdrożenia
- Jeśli używasz technologii ClickOnce do wdrożenia dodatku VSTO, dodatek VSTO może być zarejestrowany tylko dla bieżącego użytkownika. Dzieje się tak, ponieważ ClickOnce obsługuje tylko tworzenie kluczy w kluczu **HKEY_CURRENT_USER**. Jeśli chcesz zarejestrować dodatek Narzędzia VSTO dla wszystkich użytkowników na komputerze, musisz użyć Instalator Windows do wdrożenia dodatku VSTO. Aby uzyskać więcej informacji na temat tych typów wdrożeń, zobacz [wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) i [wdrażanie rozwiązania pakietu office przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
+ Jeśli używasz technologii ClickOnce do wdrożenia dodatku VSTO, dodatek VSTO może być zarejestrowany tylko dla bieżącego użytkownika. Dzieje się tak, ponieważ ClickOnce obsługuje tylko tworzenie kluczy w obszarze **HKEY_CURRENT_USER**. Jeśli chcesz zarejestrować dodatek Narzędzia VSTO dla wszystkich użytkowników na komputerze, musisz użyć Instalator Windows do wdrożenia dodatku VSTO. Aby uzyskać więcej informacji na temat tych typów wdrożeń, zobacz [wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) i [wdrażanie rozwiązania pakietu office przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Wpisy rejestru
- Wymagane wpisy rejestru dodatku VSTO znajdują się w następującym kluczu rejestru dla wszystkich aplikacji z wyjątkiem programu Visio, gdzie *root* to **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE**.
+ Wymagane wpisy rejestru dodatku VSTO znajdują się w następujących kluczach rejestru, w których *katalog główny* jest **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE** w zależności od tego, czy instalacja jest dla użytkownika, czy dla komputera.
 
- **Wszystkie aplikacje z wyjątkiem programu Visio**
+|Aplikacja pakietu Office|Ścieżka konfiguracyjna|
+|------------------|------------------|
+|Visio|*Główny*\Software\Microsoft\\\\*programu Visio*\Addins *Identyfikator dodatku*|
+|Wszystkie inne|*Główna*\Software\Microsoft\Office\\*Nazwa aplikacji pakietu Office*\Addins\\*Identyfikator dodatku*|
 
-|Wersja pakietu Office|Ścieżka konfiguracyjna|
-|--------------------|------------------------|
-|32-bitowa|*Nazwa aplikacji* *głównej*\SOFTWARE\MICROSOFT\OFFICE\\\Addins\\*Identyfikator dodatku*|
-|64-bitowy|*Nazwa aplikacji* *głównej*\SOFTWARE\WOW6432NODE\MICROSOFT\OFFICE\\\Addins\\*Identyfikator dodatku*|
-
- **?**
-
-|Wersja pakietu Office|Ścieżka konfiguracyjna|
-|--------------------|------------------------|
-|32-bitowa|*Identyfikator dodatku* *głównego*\Software\Microsoft\Visio\Addins\\|
-|64-bitowy|*Identyfikator dodatku* *głównego*\Software\Wow6432Node\Visio\Addins\\|
+> [!NOTE]
+> Jeśli Instalator ma należeć do 64-bitowego systemu Windows, powinien zawierać dwa wpisy rejestru — jeden w *katalogu głównym*\Software\Microsoft i jeden w obszarze *głównym*\Software\\**Wow6432Node**\Microsoft Hive.  Wynika to z faktu, że użytkownicy mogą korzystać z wersji pakietu Office 32-bitowej lub 64-bitowej na komputerze.
+>
+>Aby uzyskać więcej informacji [, zobacz 32-bitowe i 64-bitowe dane aplikacji w rejestrze](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
  Poniższa tabela zawiera listę wpisów w tym kluczu rejestru.
 
@@ -78,12 +69,12 @@ ms.locfileid: "72985649"
 |**Opis**|REG_SZ|Wymagany. Krótki opis dodatku narzędzi VSTO.<br /><br /> Ten opis jest wyświetlany, gdy użytkownik wybierze dodatek VSTO w okienku **dodatków** okna dialogowego **opcje** w aplikacji Microsoft Office.|
 |**FriendlyName**|REG_SZ|Wymagany. Opisowa nazwa dodatku VSTO, który jest wyświetlany w oknie dialogowym **dodatków COM** w aplikacji Microsoft Office. Wartość domyślna to identyfikator dodatku VSTO.|
 |**LoadBehavior**|REG_DWORD|Wymagany. Wartość określająca, kiedy aplikacja próbuje załadować dodatek narzędzi VSTO i bieżący stan dodatku VSTO (załadowany lub zwolniony).<br /><br /> Domyślnie ten wpis jest ustawiony na 3, co oznacza, że dodatek VSTO jest ładowany podczas uruchamiania. Aby uzyskać więcej informacji, zobacz [LoadBehavior wartości](#LoadBehavior). **Uwaga:**  Jeśli użytkownik wyłączy dodatek VSTO, ta akcja modyfikuje wartość **LoadBehavior** w gałęzi rejestru **HKEY_CURRENT_USER** . Dla każdego użytkownika wartość **LoadBehavior** w gałęzi HKEY_CURRENT_USER zastępuje domyślny **LoadBehavior** zdefiniowany w gałęzi **HKEY_LOCAL_MACHINE** .|
-|**Manifestu**|REG_SZ|Wymagany. Pełna ścieżka manifestu wdrożenia dla dodatku VSTO. Ścieżka może być lokalizacją na komputerze lokalnym, udziałem sieciowym (UNC) lub serwerem sieci Web (HTTP).<br /><br /> Jeśli używasz Instalator Windows do wdrożenia rozwiązania, musisz dodać prefiks **File:///** do ścieżki **manifestu** . Należy również dołączyć ciąg  **&#124;vstolocal** (czyli znak **&#124;** potoku, a następnie **vstolocal**) na końcu tej ścieżki. Dzięki temu Twoje rozwiązanie zostanie załadowane z folderu instalacji, a nie z pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Uwaga:**  Po utworzeniu dodatku narzędzi VSTO na komputerze deweloperskim program Visual Studio automatycznie dołącza ciąg  **&#124;vstolocal** do tego wpisu rejestru.|
+|**Manifest**|REG_SZ|Wymagany. Pełna ścieżka manifestu wdrożenia dla dodatku VSTO. Ścieżka może być lokalizacją na komputerze lokalnym, udziałem sieciowym (UNC) lub serwerem sieci Web (HTTP).<br /><br /> Jeśli używasz Instalator Windows do wdrożenia rozwiązania, musisz dodać prefiks **File:///** do ścieżki **manifestu** . Należy również dołączyć ciąg  **&#124;vstolocal** (czyli znak **&#124;** potoku, a następnie **vstolocal**) na końcu tej ścieżki. Dzięki temu Twoje rozwiązanie zostanie załadowane z folderu instalacji, a nie z pamięci podręcznej ClickOnce. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązania biurowego przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Uwaga:**  Po utworzeniu dodatku narzędzi VSTO na komputerze deweloperskim program Visual Studio automatycznie dołącza ciąg  **&#124;vstolocal** do tego wpisu rejestru.|
 
 ### <a name="OutlookEntries"></a>Wpisy rejestru dla regionów formularzy programu Outlook
- Jeśli utworzysz niestandardowy region formularza w dodatku VSTO dla programu Outlook, do zarejestrowania regionu formularza w programie Outlook są używane dodatkowe wpisy rejestru. Te wpisy są tworzone w innym kluczu rejestru dla każdej klasy komunikatów obsługiwanej przez region formularza. Te klucze rejestru znajdują się w następującej lokalizacji, gdzie *root* to **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE**.
+ Jeśli utworzysz niestandardowy region formularza w dodatku VSTO dla programu Outlook, do zarejestrowania regionu formularza w programie Outlook są używane dodatkowe wpisy rejestru. Te wpisy są tworzone w innym kluczu rejestru dla każdej klasy komunikatów obsługiwanej przez region formularza. Te klucze rejestru znajdują się w następującej lokalizacji, gdzie *root* jest **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE**.
 
- Klasa *głównego* *komunikatu* \Software\Microsoft\Office\Outlook\FormRegions\\
+ *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*
 
  Podobnie jak w przypadku innych wpisów rejestru udostępnionych przez wszystkie dodatki narzędzi VSTO, program Visual Studio tworzy wpisy rejestru regionów formularzy na komputerze deweloperskim podczas kompilowania projektu. Jeśli używasz technologii ClickOnce do wdrożenia dodatku VSTO, wpisy rejestru są tworzone automatycznie na komputerze użytkownika końcowego. Jeśli używasz Instalator Windows do wdrożenia dodatku VSTO, musisz skonfigurować projekt InstallShield Limited Edition, aby utworzyć wpisy rejestru na komputerze użytkownika końcowego.
 
