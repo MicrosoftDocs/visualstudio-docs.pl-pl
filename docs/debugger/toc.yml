@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: Rozwiązywanie problemów z punktami przerwania
           href: troubleshooting-breakpoints.md
+        - name: 'Rozwiązywanie problemów z punktami przerwania danych C#'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: Inspekcja danych
       items:
         - name: Inspekcja danych w oknach debugera
