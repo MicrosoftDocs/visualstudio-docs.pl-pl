@@ -1,41 +1,41 @@
 ---
-title: Program Visual Studio for Mac obciążeń
-description: W tym artykule opisano różne obciążenia, których można użyć w programie Visual Studio dla komputerów Mac, w tym aplikacje mobilne platformy Xamarin, ASP.NET Core i Unity dla gier.
-author: conceptdev
-ms.author: crdun
+title: Visual Studio dla komputerów Mac obciążeń
+description: W tym artykule opisano różne obciążenia, które mogą być używane w Visual Studio dla komputerów Mac, w tym aplikacje mobilne Xamarin, ASP.NET Core i Unity dla gier.
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985436"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985105"
 ---
-# <a name="visual-studio-for-mac-workloads"></a>Program Visual Studio for Mac obciążeń
+# <a name="visual-studio-for-mac-workloads"></a>Visual Studio dla komputerów Mac obciążeń
 
-Program Visual Studio for Mac jest wstępnie zainstalowany program obciążeń do tworzenia następujących rodzajów aplikacji:
+Visual Studio dla komputerów Mac jest wstępnie zainstalowany z obciążeniami do tworzenia następujących typów aplikacji:
 
-* Aplikacje mobilne dla wielu platform przy użyciu platformy .NET dla systemu Android, iOS, tvOS i watchOS za pomocą platformy Xamarin,
-* Aplikacji klasycznej dla komputerów Mac
-* Aplikacje programu .NET core
-* Aplikacje sieci Web platformy ASP.NET Core
-* Gry Unity dla wielu platform
+* Międzyplatformowe aplikacje mobilne z platformą .NET przy użyciu platformy Xamarin, dla systemów Android, iOS, systemu tvOS i systemu watchOS
+* Aplikacje klasyczne dla komputerów Mac
+* Aplikacje platformy .NET Core
+* ASP.NET Core aplikacje sieci Web
+* Wieloplatformowe gry Unity
 
-## <a name="mobile-applications-with-xamarin"></a>Aplikacje mobilne za pomocą platformy Xamarin
+## <a name="mobile-applications-with-xamarin"></a>Aplikacje mobilne przy użyciu platformy Xamarin
 
-Xamarin umożliwia tworzenie aplikacji mobilnych dla wielu platform przy użyciu platformy .NET dla systemów Android, iOS, systemu tvOS, watchOS i Mac aplikacji komputerowych.
+Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych za pomocą platformy .NET dla aplikacji dla systemów Android, iOS, systemu tvOS, systemu watchOS i Mac.
 
-Aby uzyskać informacje na temat korzystania z platformy Xamarin w programie Visual Studio dla komputerów Mac, zobacz [Centrum deweloperów środowiska Xamarin](https://developer.xamarin.com/) i zapoznaj się z aplikacji mobilnych [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started).
+Aby uzyskać informacje na temat korzystania z platformy Xamarin w Visual Studio dla komputerów Mac, zapoznaj się z [Centrum deweloperów platformy Xamarin](https://developer.xamarin.com/) i zapoznaj się [z obsługą aplikacji mobilnych](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started).
 
-## <a name="net-core-applications"></a>Aplikacje .NET core
+## <a name="net-core-applications"></a>Aplikacje platformy .NET Core
 
-Aby uzyskać więcej informacji na temat korzystania z platformy .NET Core, zobacz [dokumentacji](/dotnet/core/).
+Aby uzyskać więcej informacji na temat korzystania z platformy .NET Core, zapoznaj się z [dokumentacją](/dotnet/core/).
 
-## <a name="aspnet-core-web-applications"></a>Aplikacje sieci Web platformy ASP.NET Core
+## <a name="aspnet-core-web-applications"></a>ASP.NET Core aplikacji sieci Web
 
-Wprowadzenie przy użyciu platformy ASP.NET Core w programie Visual Studio dla komputerów Mac, można znaleźć informacje na temat pobierania [wprowadzenie do platformy ASP.NET Core](asp-net-core.md) przewodnika lub zapoznaj się z aplikacjami sieci web platformy ASP.NET Core [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+Aby uzyskać informacje na temat rozpoczynania pracy przy użyciu ASP.NET Core w Visual Studio dla komputerów Mac, zapoznaj się z tematem [wprowadzenie z](asp-net-core.md) przewodnikiem ASP.NET Core lub zapoznaj się z [laboratorium](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)ASP.NET Core aplikacje sieci Web.
 
 ## <a name="unity-game-development"></a>Projektowanie gier w środowisku Unity
 
-Aby rozpocząć tworzenie gry i aparat Unity, zobacz [strony Instalatora](setup-vsmac-tools-unity.md) i [przewodnik przy użyciu narzędzi Unity Tools](using-vsmac-tools-unity.md), lub zapoznaj się z aparatu Unity [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started).
+Aby rozpocząć tworzenie gier przy użyciu aparatu Unity, zobacz [stronę instalatora](setup-vsmac-tools-unity.md) oraz [Przewodnik po użyciu narzędzi Unity](using-vsmac-tools-unity.md)lub zapoznaj się z [laboratorium praktycznego](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started)środowiska Unity.

@@ -1,93 +1,93 @@
 ---
-title: Instalowanie i używanie programu Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
-description: Ten dokument zawiera listę hostów, które muszą być dozwolone w zaporze, aby zezwolić na program Visual Studio for Mac (i jego obciążeń, w tym Xamarin) do pracy w środowisku firmowym.
+title: Instalowanie i używanie Visual Studio dla komputerów Mac za zaporą lub serwerem proxy
+description: Ten dokument zawiera listę hostów, które muszą być dozwolone w zaporze, aby umożliwić działanie Visual Studio dla komputerów Mac (i jego obciążeń, w tym Xamarin), do pracy w środowisku firmowym.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 10/23/2018
-ms.openlocfilehash: 446baf89dacfe7b742e3da3307711435495c8da4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 738c5277ca6a669a834635f5c626e0cbabd7a7ef
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033188"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984941"
 ---
-# <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio dla komputerów Mac za serwerem zapory lub serwera proxy
+# <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie Visual Studio dla komputerów Mac za zaporą lub serwerem proxy
 
-Jeśli Twoja organizacja używa środki bezpieczeństwa, takie jak Zapora lub serwer proxy, a następnie istnieją, domen, może wystąpić konieczność dodania do "Zezwalaj na liście" i porty i protokoły, które może chcesz otworzyć, aby mieć najlepsze wyniki, podczas instalacji i używania Vis Usługa rejestrowania dostępu użytkowników Studio dla komputerów Mac i usług platformy Azure.
+Jeśli ty lub Twoja organizacja korzysta z środków bezpieczeństwa, takich jak zapora lub serwer proxy, istnieją domeny, które możesz chcieć dodać do listy "Lista dozwolonych" oraz portów i protokołów, które mogą być otwierane w celu uzyskania najlepszego środowiska podczas instalacji i używania rejestrowania dostępu użytkowników Studio for Mac i usługi platformy Azure.
 
-- [**Zainstaluj program Visual Studio dla komputerów Mac**](#install-visual-studio-for-mac): Te tabele zawierają domen, które muszą zezwalać na łączność, tak aby mieć dostęp do wszystkich funkcji i obciążeń programu Visual Studio dla komputerów Mac.
+- [**Zainstaluj Visual Studio dla komputerów Mac**](#install-visual-studio-for-mac): te tabele obejmują domeny, które muszą zezwalać na łączność, aby mieć dostęp do wszystkich funkcji i obciążeń Visual Studio dla komputerów Mac.
 
-- [**Użyj programu Visual Studio dla komputerów Mac**](#use-visual-studio-for-mac): Te tabele zawierają domen, które muszą zezwalać na łączność, tak aby mieć dostęp do powiązanych funkcji.
+- [**Użyj Visual Studio dla komputerów Mac**](#use-visual-studio-for-mac): te tabele obejmują domeny, które muszą zezwalać na łączność, aby mieć dostęp do pokrewnych funkcji.
 
-## <a name="install-visual-studio-for-mac"></a>Zainstaluj program Visual Studio dla komputerów Mac
+## <a name="install-visual-studio-for-mac"></a>Instalowanie programu Visual Studio dla komputerów Mac
 
-Ponieważ programu Visual Studio dla komputerów Mac, Instalator pobierze z różnych domen i pobrać serwerów, w tym miejscu są domenach i adresach URL, które chcesz dodać jako zaufany w konfiguracjach.
+Ponieważ Instalator Visual Studio dla komputerów Mac pobiera z różnych domen i pobiera serwery, poniżej znajdują się domeny i adresy URL, które mogą być dodawane jako zaufane w konfiguracjach.
 
 ### <a name="microsoft-domains"></a>Microsoft domains
 
-| Domain| Cel |
+| Domena| Cel |
 | ----------------------------------- |---------------------------|
-| *.live.com| Credential Management |
-| app.vssps.visualstudio.com| Instalator metadanych|
-| vortex.data.microsoft.com | O awariach i raportowanie błędów |
-| az667904.vo.msecnd.net| O awariach i raportowanie błędów |
-| xamarin.com | Instalator metadanych|
-| xampubdl.blob.core.windows.net| Pakiety instalacyjne|
-| download.visualstudio.microsoft.com | Pakiety instalacyjne|
-| xamarin.azureedge.net | Pakiety instalacyjne|
-| developer.xamarin.com | Pakiety instalacyjne|
+| *.live.com| Zarządzanie poświadczeniami |
+| app.vssps.visualstudio.com| Metadane Instalatora|
+| vortex.data.microsoft.com | Raportowanie awarii i błędów |
+| az667904.vo.msecnd.net| Raportowanie awarii i błędów |
+| xamarin.com | Metadane Instalatora|
+| xampubdl.blob.core.windows.net| Pakiety Instalatora|
+| download.visualstudio.microsoft.com | Pakiety Instalatora|
+| xamarin.azureedge.net | Pakiety Instalatora|
+| developer.xamarin.com | Pakiety Instalatora|
 | dc.services.visualstudio.com| Raporty o awariach |
 
-### <a name="third-party-domains"></a>Domeny innej firmy
+### <a name="third-party-domains"></a>Domeny innych firm
 
-| Domain| Cel |
+| Domena| Cel |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
-| download.oracle.com | Java SDK|
+| download.oracle.com | Zestaw Java SDK|
 | api.apple-cloudkit.com| Usługi zabezpieczeń firmy Apple |
 
-## <a name="use-visual-studio-for-mac"></a>Use Visual Studio for Mac
+## <a name="use-visual-studio-for-mac"></a>Użyj Visual Studio dla komputerów Mac
 
-Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne w programie Visual Studio dla komputerów Mac podczas używany serwer proxy lub zapora, zaleca się dodanie następujących domen i portów do listy dozwolone dostępu.
+Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne w Visual Studio dla komputerów Macj za serwerem proxy lub zaporą, zalecamy dodanie następujących domen i portów do listy dozwolonych dostępów.
 
 ### <a name="general"></a>Ogólne
 
-| Domain | Porty|Cel|
+| Domena | Porty|Cel|
 | ----------------------|------------------|------------------|
-| go.microsoft.com | 80/443|Rozpoznawanie adresu URL firmy Microsoft |
-| vsstartpage.blob.core.windows.net| 80/443| Rozpocznij strony danych|
-| software.xamarin.com |  80/443|Usługę aktualizacji|
-| addins.monodevelop.com | 80/443| Rozszerzenie usług |
-| visualstudio-devdiv-c2s.msedge.net | 80/443| Funkcja eksperymentalna i powiadomienia |
+| go.microsoft.com | 80/443|Rozpoznawanie adresów URL firmy Microsoft |
+| vsstartpage.blob.core.windows.net| 80/443| Dane strony początkowej|
+| software.xamarin.com |  80/443|Usługa Aktualizator|
+| addins.monodevelop.com | 80/443| Usługi rozszerzeń |
+| visualstudio-devdiv-c2s.msedge.net | 80/443| Eksperymentalna funkcja i powiadomienia |
 | targetednotifications.azurewebsites.net|  80/443| Używane do filtrowania globalną listę powiadomień do listy, która ma zastosowanie tylko do określonych rodzajów scenariusze maszyn/użycia|
 
 ### <a name="identity"></a>Tożsamość
 
-| Domain | Porty|Cel|
+| Domena | Porty|Cel|
 | ----------------------|------------------|------------------|
-| login.microsoftonline.com | 80/443| Dostawcy tożsamości|
-| secure.aadcdn.microsoftonline-p.com | 80/443|Dostawcy tożsamości|
+| login.microsoftonline.com | 80/443| Dostawca tożsamości|
+| secure.aadcdn.microsoftonline-p.com | 80/443|Dostawca tożsamości|
 | dc.services.visualstudio.com| 80/443|Raporty o awariach|
 | management.azure.com|80/443| Interfejs API usług platformy Azure |
 
 ### <a name="nuget"></a>NuGet
 
-| Domain | Porty|Cel|
+| Domena | Porty|Cel|
 | ----------------------|------------------|------------------|
-| api.nuget.org | 80/443|Interfejs API programu NuGet|
-| secure.aadcdn.microsoftonline-p.com |80/443| Dostawcy tożsamości|
+| api.nuget.org | 80/443|Interfejs API narzędzia NuGet|
+| secure.aadcdn.microsoftonline-p.com |80/443| Dostawca tożsamości|
 
-### <a name="android-projects"></a>Projekty systemu android
+### <a name="android-projects"></a>Projekty systemu Android
 
-| Domain| Cel|
+| Domena| Cel|
 | ------------------------------------|------------------------------------|
-| time.android.com| Serwer czasu dla emulatora systemu Android |
-| connectivitycheck.gstatic.com | Połączenia dla emulatora systemu Android|
-| cloudconfig.googleapis.com| Interfejsy API w emulatorze systemu Android|
+| time.android.com| Serwer czasu dla Emulator systemu Android |
+| connectivitycheck.gstatic.com | Łączność dla Emulator systemu Android|
+| cloudconfig.googleapis.com| Interfejsy API dla Emulator systemu Android|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instalowanie i używanie usług platformy Azure i programu Visual Studio 2017 za serwerem zapory lub serwera proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [Rozwiązywanie problemów z podobne problemy w Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [Instalowanie i używanie programu Visual Studio 2017 i usług platformy Azure za zaporą lub serwerem proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Rozwiązywanie podobnych problemów w systemie Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

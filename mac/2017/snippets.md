@@ -1,93 +1,93 @@
 ---
 title: Wstawki kodu
-description: Jak program wydajnie w programie Visual Studio dla komputerów Mac za pomocą fragmentów kodu
-author: conceptdev
-ms.author: crdun
+description: Jak skutecznie korzystać z fragmentów kodu w programie Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693014"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984811"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
-Fragmenty, często nazywane kodu _kodu szablonów_, są przydatne w przypadku wydajne programowanie, ponieważ umożliwiają one wstawiania i edytowanie wstępnie napisana bloków kodu. Za pomocą fragmentów kodu może być wygodne do szybkiego dodawania typowych wzorców, lub nawet w przypadku nauki nowych wzorców, gdy deweloper wiesz składni. Istnieją szablony przewidziane C#, F#, HTML, XML, Python i Razor.
+Fragmenty kodu, często nazywane _szablonami kodu_, są przydatne do wydajnego programowania, ponieważ umożliwiają wstawianie i edytowanie wstępnie pisanych bloków kodu. Używanie fragmentów kodu może być wygodne do szybkiego dodawania wspólnych wzorców, a nawet do uczenia się nowych wzorców, gdy Deweloper nie ma pewności składni. Dostępne są szablony dla C#języków, F#, HTML, XML, Python i Razor.
 
-W tej sekcji wyjaśniono, jak utworzyć, wstawić i używanie fragmentów kodu w kodzie.
+W tej sekcji wyjaśniono, jak tworzyć, wstawiać i używać fragmentów kodu.
 
 ## <a name="inserting-a-snippet"></a>Wstawianie fragmentu kodu
 
-Istnieje kilka różnych sposobów dodawanie fragmentów kodu, z których niektóre są opisane poniżej:
+Istnieją różne sposoby dodawania fragmentów kodu, z których niektóre zostały opisane poniżej:
 
-- **Karta rozszerzenia** &ndash; zacznij wpisywać nazwę szablonu, wybierz ją z listy i kliknij **kartę**, **kartę** go dodać:
+- **Rozszerzenie karty** &ndash; Rozpocznij wpisywanie nazwy szablonu, wybierz ją z listy i naciśnij klawisz **Tab**, **Aby** ją dodać:
 
-  ![Rozszerzenia karty w kodzie](media/source-editor-image13.png)
+  ![Rozszerzanie karty w kodzie](media/source-editor-image13.png)
 
-- **Przybornik** &ndash; wyświetlić listę wszystkich fragmentów kodu za pomocą konsoli do przybornika. Przeciągnij dowolny szablon z przybornika do właściwych miejscach w kodzie źródłowym:
+- **Przybornik** &ndash; użyć konsoli przybornika, aby wyświetlić listę wszystkich fragmentów kodu. Przeciągnij dowolny szablon z przybornika do poprawnego położenia w kodzie źródłowym:
 
-  [![Fragmenty kodu w przyborniku](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
+  [![fragmenty kodu w przyborniku](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Wstaw polecenie Szablony** &ndash; klucz nie istnieje obecnie domyślnego powiązania zestawu do wstawiania szablonu. Aby go utworzyć, przejdź do **programu Visual Studio > Preferencje > klucz powiązania** i wyszukaj `template`. Dzięki temu, dodając odpowiednią powiązanie klucza w polu Edytuj powiązania, kliknij przycisk **Zastosuj**:
+- **Polecenie INSERT templates** &ndash; nie ma obecnie domyślnego zestawu powiązań kluczy na potrzeby wstawiania szablonu. Aby go utworzyć, przejdź do **okna preferencji > programu Visual Studio > powiązania kluczy** i Wyszukaj `template`. Pozwala to na dodawanie odpowiedniego powiązania klucza do pola Edytuj powiązanie, a następnie kliknięcie przycisku **Zastosuj**:
 
-  ![Polecenie szablonu krawędziowe](media/source-editor-image15.png)
+  ![Powstawanie polecenia szablonu](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Tworzenie nowego szablonu
 
-Dostępnych jest wiele istniejących szablonów w różnych językach, których można używać i edytować, nowe szablony mogą być również dodawane, przechodząc do **programu Visual Studio > Preferencje > Edytor tekstu > fragmenty kodu**:
+Chociaż istnieje wiele istniejących szablonów w różnych językach, których można użyć i edytować, można również dodać nowe szablony, przechodząc do **> preferencji programu Visual Studio > edytorze tekstu > fragmenty kodu**:
 
-![Nowy szablon krawędziowe](media/source-editor-image12.png)
+![Wstawanie nowego szablonu](media/source-editor-image12.png)
 
-Naciśnij klawisz **Dodaj** lub **Edytuj** przyciski do tworzenia lub edytowania fragmentów kodu.
+Naciśnij przycisk **Dodaj** lub **Edytuj** , aby utworzyć lub edytować fragmenty kodu.
 
-## <a name="keywords-in-code-snippets"></a>Słowa kluczowe fragmenty kodu
+## <a name="keywords-in-code-snippets"></a>Słowa kluczowe w fragmentach kodu
 
-Po wstawieniu fragmentu kodu w edytorze, wszelkie słowa kluczowe zdefiniowane są zaznaczone i mogą być edytowane przez przełączania się między nimi. Słowa kluczowe zachowują się jak "Zmienna" we fragmencie kodu i są definiowane przez umieszczenie znak dolara `$` przed i po nazwie słowa kluczowego. 
+Po wstawieniu fragmentu kodu do edytora wszystkie zdefiniowane słowa kluczowe są wyróżniane i można je edytować przez tabulację między nimi. Słowa kluczowe zachowują się jak "zmienna" w fragmencie kodu i są definiowane przez umieszczenie znaku dolara `$` przed i po nazwie słowa kluczowego. 
 
-**Edytuj szablon** okna jest pokazany poniżej i edytowania wbudowanej `prop` fragmentu kodu. Fragment kodu zawiera dwa słowa kluczowe &ndash; `$type$` i `$name$` &ndash; która może zawierać więcej zbioru (np. domyślna wartość i etykietek narzędzi) po prawej stronie okna właściwości:
+Zostanie wyświetlone okno **Edytuj szablon** , edytując wbudowane fragmenty kodu `prop`. Fragment kodu zawiera dwa słowa kluczowe &ndash; `$type$` i `$name$` &ndash;, które mogą mieć ustawione dalsze właściwości (takie jak domyślna wartość i etykietka narzędzia) po prawej stronie okna:
 
-![Edytuj okno Szablon](media/source-editor-image12z.png)
+![Edytuj okno szablonu](media/source-editor-image12z.png)
 
-Następujące pola są używane do definiowania fragment kodu:
+Następujące pola są używane do definiowania fragmentu kodu:
 
-- **Skrót** &ndash; tekst użytkownik wpisuje do wstawiania fragmentu kodu.
-- **Grupa** &ndash; fragmenty są zgrupowane razem w menu zawartości fragmentu kodu przy użyciu tej wartości.
-- **Opis** &ndash; wyjaśnienie przeznaczenia ten fragment kodu.
-- **MIME** &ndash; kontroluje, jakie typy plików jest dostępna w tym fragmencie kodu.
-- **Szablon można rozwijać** &ndash; upewnij się, ta opcja zostanie zaznaczona, aby fragment można wstawić przy kursorze, wpisując skrótu.
-- **Otocz za pomocą szablonu jest** &ndash; zaznacz tę opcję, aby wyświetlić listę ten skrót **Otocz przez...**  menu zawartości w edytorze.
-- **Tekst szablonu** &ndash; rzeczywisty fragment kodu, który zostanie wstawiony do edytora. Symbole zastępcze — słowo kluczowe mogą być definiowane przez umieszczenie token z dolara, np. `$type$`.
-- **Panel właściwości — słowo kluczowe** &ndash; na stronie po prawej stronie okna, użyj listy rozwijanej w górnej wybrać słowo kluczowe (np `type`) i edytowanie właściwości, takie jak wartości domyślnej i etykietek narzędzi.
+- **Skrót** &ndash; tekst, który użytkownik wpisze do wstawienia fragmentu kodu.
+- Fragmenty kodu &ndash; **grupy** są pogrupowane w menu zawartości fragmentu kodu przy użyciu tej wartości.
+- **Opis** &ndash; wyjaśnienie celu fragmentu kodu.
+- Funkcja **Mime** &ndash; kontroluje, jakie typy plików są dostępne w fragmencie kodu.
+- **Jest rozwiniętym szablonem** &ndash; upewnij się, że jest zaznaczone, aby wstawić fragment kodu do kursora przez wpisanie skrótu.
+- **Jest otaczający szablonem** &ndash; zaznacz tę opcję, aby wyświetlić ten skrót w menu **przestrzenny z...** Content (zawartość) w edytorze.
+- **Tekst szablonu** &ndash; rzeczywistego fragmentu kodu, który zostanie wstawiony do edytora. Symbole zastępcze słów kluczowych można zdefiniować przez otoczenie tokenu ze znakami dolara. `$type$`.
+- **Panel właściwości słowa kluczowego** &ndash; po prawej stronie okna, Użyj listy rozwijanej u góry, aby wybrać słowo kluczowe (EG `type`) i edytować właściwości, takie jak wartość domyślna i etykietka narzędzia.
 
-## <a name="using-keywords-in-the-editor"></a>Przy użyciu słów kluczowych w edytorze
+## <a name="using-keywords-in-the-editor"></a>Używanie słów kluczowych w edytorze
 
-Za pomocą fragment słów kluczowych, takich jak ten zdefiniowany powyżej, wpisz skrót, a następnie naciśnij klawisz **kartę** dwa razy, i zawartość fragment kodu zostanie wstawiony na kursora:
+Aby użyć wstawki ze słowami kluczowymi, takimi jak zdefiniowane powyżej, wpisz skrót i naciśnij klawisz **Tab** dwa razy, a zawartość wstawki zostanie wstawiona przy kursorze:
 
-![Wstawiono fragment przedstawiający słów kluczowych](media/source-editor-image12a.png)
+![Wstawiono fragment kodu zawierający słowa kluczowe](media/source-editor-image12a.png)
 
-Naciśnij klawisz **kartę** klawisz, aby przejść między `object` i `MyProperty` dostosować fragment kodu dla swojej klasy.
+Naciśnij klawisz **Tab** , aby przejść między `object` i `MyProperty`, aby dostosować fragment kodu dla klasy.
 
-Słowo kluczowe, które można powtarzać we fragmencie, na przykład to `for` przykładzie należy zauważyć `$i$` — słowo kluczowe pojawia się 3 razy:
+Słowo kluczowe może być powtórzone w fragmencie kodu, takim jak `for` przykład, Zauważ, że `$i$` słowo kluczowe pojawia się 3 razy:
 
-![Szablon fragmentu kodu przy użyciu powtarzanych słów kluczowych](media/source-editor-image12b.png)
+![Szablon fragmentu ze powtarzalnymi słowami kluczowymi](media/source-editor-image12b.png)
 
-Gdy jest używana w edytorze **kartę** klucz będzie przełączać się między pierwszym `i` i `max`. Jeśli użytkownik zastępowania `i` pod inną nazwą zmiennej, wszystkie jego wystąpienia zostaną zaktualizowane:
+Gdy jest używany w edytorze, klawisz **Tab** przełączy się między pierwszym `i` i `max`. W przypadku zastępowania `i` z inną nazwą zmiennej wszystkie trzy wystąpienia zostaną zaktualizowane:
 
-![Wstawiono fragment przedstawiający wiele słów kluczowych](media/source-editor-image12c.png)
+![Wstawiono fragment kodu pokazujący wiele słów kluczowych](media/source-editor-image12c.png)
 
 ### <a name="reserved-keywords"></a>Zastrzeżone słowa kluczowe
 
-Istnieją dwa zastrzeżonych słów kluczowych, używanych w fragment:
+Istnieją dwa zastrzeżone słowa kluczowe, których można użyć w fragmencie kodu:
 
-- `$selected$` &ndash; Jeśli ten fragment kodu zawiera **jest Otocz za pomocą szablonu** opcja jest zaznaczona, to słowo kluczowe zostanie zastąpiony tekst, który został wyróżniony w edytorze, gdy wybrano fragmentu kodu.
-- `$end$` &ndash; Gdy użytkownik zakończył edycję słowa kluczowe fragmentu kodu, kursor zostanie umieszczona w lokalizacji `$end$` — słowo kluczowe.
+- `$selected$` &ndash;, jeśli fragment kodu **jest otoczony** zaznaczeniem szablonu, słowo kluczowe zostanie zastąpione tekstem, który został wyróżniony w edytorze po wybraniu fragmentu kodu.
+- `$end$` &ndash;, gdy użytkownik zakończył edytowanie słów kluczowych w fragmencie kodu, kursor zostanie umieszczony w lokalizacji słowa kluczowego `$end$`.
 
-`for` Fragment kodu w poprzedniej sekcji to przykład oba te zastrzeżonych słów kluczowych.
+Fragment kodu `for` w poprzedniej sekcji jest przykładem obu tych zarezerwowanych słów kluczowych.
 
-Zapoznaj się [dokumentacja fragmentów kodu programu Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords) Aby uzyskać więcej informacji.
+Aby uzyskać więcej informacji, zapoznaj się z tematem [Dokumentacja fragmentów kodu programu Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords) .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Fragmenty kodu (Visual Studio Windows)](/visualstudio/ide/code-snippets)
+- [Fragmenty kodu (Visual Studio w systemie Windows)](/visualstudio/ide/code-snippets)

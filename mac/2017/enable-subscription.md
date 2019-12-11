@@ -1,16 +1,16 @@
 ---
 title: Włączanie subskrypcji
 description: W tym artykule opisano sposób korzystania z konto Microsoft w celu włączenia funkcji subskrypcji i odblokowywania w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 7acef72e3e1768d0250e0dd7ff2b587277d133ec
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c3f8aef1b784b0261eeba6408a8cef0144e5fcac
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872314"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984990"
 ---
 # <a name="enable-subscription"></a>Włączanie subskrypcji
 
@@ -28,7 +28,7 @@ Aby rozpocząć korzystanie z subskrypcji, zaloguj się do Visual Studio dla kom
 
 Jeśli Twoja subskrypcja wygasła, masz dwie opcje:
 
-1. Odnów subskrypcję. Subskrypcję można odnowić, przechodząc do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)witryny.
+1. Odnów subskrypcję. Subskrypcję można odnowić, przechodząc do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
 
 2. Jeśli masz inne konto z aktywną subskrypcją, możesz je dodać do Visual Studio dla komputerów Mac zgodnie z opisem w artykule [Dodawanie wielu kont użytkowników](signing-in.md) . Visual Studio dla komputerów Mac wykryje najlepszą dostępną licencję ze wszystkich kont, które zostały dodane.
 

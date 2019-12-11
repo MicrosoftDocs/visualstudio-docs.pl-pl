@@ -1,17 +1,17 @@
 ---
-title: Kontrola wersji serwera Team Foundation (TFVC)
+title: Kontrola wersji Team Foundation (TFVC)
 description: Nawiązywanie połączenia z Visual Studio dla komputerów Mac Team Foundation Server/Azure DevOps z usługą Kontrola wersji serwera Team Foundation (TFVC).
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716121"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985199"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Kontrola wersji serwera Team Foundation
 
@@ -116,7 +116,7 @@ Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, mo
 
 W galerii rozszerzeń Visual Studio dla komputerów Mac istnieje rozszerzenie kontroli wersji programu Team Foundation, które oferuje ograniczoną obsługę połączenia z usługą TFVC. Rozszerzenie nie jest obsługiwane i zawiera kilka znanych problemów, dlatego środowisko może się różnić w przypadku korzystania z niego.
 
-Aby zainstalować rozszerzenie, uruchom Visual Studio dla komputerów Mac i wybierz menu **rozszerzenia Visual Studio >** . Na karcie **Galeria** wybierz pozycję **kontrola wersji > Kontrola wersji serwera Team Foundation dla TFS i Azure DevOps** , a następnie kliknij przycisk **Zainstaluj...** :
+Aby zainstalować rozszerzenie, uruchom Visual Studio dla komputerów Mac i wybierz menu **rozszerzenia Visual Studio >** . W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługi Azure DevOps** i kliknij przycisk **instalacji...** :
 
 ![Menedżer rozszerzeń](media/tfvc-install.png)
 
@@ -130,7 +130,7 @@ Naciśnij przycisk **Instaluj** w następnym oknie dialogowym, aby odinstalować
 
 ### <a name="using-the-extension"></a>Przy użyciu rozszerzenia
 
-Po zainstalowaniu rozszerzenia wybierz **kontrolę wersji > TFS/Azure DevOps > Otwórz z repozytorium zdalnego...** .
+Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium...** elementu menu.
 
 ![Element menu, aby otworzyć rozszerzenie](media/tfvc-source-control-explorer-devops.png)
 
@@ -236,7 +236,7 @@ Po skonfigurowaniu obszaru roboczego można go zmienić lub usunąć, klikając 
 
 Do uwierzytelniania za pomocą serwera można użyć następujących opcji:
 
-- OAuth
+- Oauth
 - Podstawowy
 - NTLM
 

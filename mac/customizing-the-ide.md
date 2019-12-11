@@ -2,16 +2,16 @@
 title: Dostosowywanie środowiska IDE
 description: Visual Studio dla komputerów Mac można dostosować na różne sposoby, umożliwiając użytkownikom opracowywanie aplikacji w środowisku, które spełniają zarówno ich wydajność, jak i estetyczne potrzeby. W tym artykule przedstawiono różne sposoby dostosowania Visual Studio dla komputerów Mac do własnych potrzeb.
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213743"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984196"
 ---
 # <a name="customizing-the-ide"></a>Dostosowywanie środowiska IDE
 
@@ -32,19 +32,19 @@ Visual Studio dla komputerów Mac jest lokalizowana w następujących 14 języka
 * Chiński — Chiny
 * Chiński — Tajwan
 * czeski
-* Francuski
+* francuski
 * niemiecki
-* Angielski
+* angielski
 * Włoski
-* Japoński
+* japoński
 * koreański
 * polski
 * Portugalski (Brazylia)
-* Rosyjski
+* rosyjski
 * Hiszpański
 * turecki
 
-Aby zmienić język wyświetlany przez Visual Studio dla komputerów Mac, przejdź do **okna preferencji > programu Visual Studio > środowisku > stylu wizualizacji** i wybierz żądany język z listy rozwijanej **język interfejsu użytkownika** , jak pokazano w poniższej tabeli. Image
+Aby zmienić język wyświetlany przez Visual Studio dla komputerów Mac, przejdź do **okna preferencji > programu Visual Studio > środowisku > stylu wizualizacji** i wybierz żądany język z listy rozwijanej **język interfejsu użytkownika** , jak pokazano na poniższej ilustracji:
 
 ![Wybór języka](media/customizing-the-ide-image11a.png)
 
@@ -76,7 +76,7 @@ Te powiązania można również ustawić podczas początkowej konfiguracji Visua
 
 ## <a name="workspace-layout"></a>Układ obszaru roboczego
 
-Obszar roboczy Visual Studio dla komputerów Mac składa się z głównego obszaru dokumentu (zwykle edytora, powierzchni projektanta lub pliku opcji), otoczone przez uzupełniające *konsole* zawierające przydatne informacje umożliwiające dostęp do plików aplikacji, testowanie i debugera.
+Obszar roboczy Visual Studio dla komputerów Mac składa się z głównego obszaru dokumentu (zwykle edytora, powierzchni projektanta lub pliku opcji), otoczone przez uzupełniające *konsole* , które zawierają przydatne informacje dotyczące uzyskiwania dostępu do plików aplikacji, testowania i debugowania oraz zarządzania nimi.
 
  ![Układ obszaru roboczego](media/customizing-the-ide-image1a.png)
 

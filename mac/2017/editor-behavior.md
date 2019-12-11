@@ -1,34 +1,34 @@
 ---
 title: Formatowanie kodu
-description: W tym artykule opisano różne opcje, które mogą służyć do modyfikowania zachowania edytora tekstu w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+description: W tym artykule opisano różne opcje, których można użyć w celu zmodyfikowania zachowania edytora tekstu w Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 042f7c74057de9a00ae59d5e08a77100c5f30e3c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: dca21119a73c03b63a273f7b4c22d70ecdb2a583
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824378"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984684"
 ---
 # <a name="editor-behavior"></a>Zachowanie edytora
 
-Edytor zachowania można ustawić uruchamianie kodu do sformatowania, jak jest pisany. Te akcje są ustawiane w obszarze **programu Visual Studio > Preferencje > Edytor tekstu > zachowanie**, a niektóre z najczęściej używanych funkcji zostały opisane poniżej:
+Zachowania edytora można ustawić tak, aby umożliwić formatowanie kodu podczas pisania. Te akcje są ustawiane w obszarze **Preferencje programu Visual Studio > > zachowanie > edytora tekstu**, a niektóre z bardziej często używanych funkcji opisano poniżej:
 
-![Opcje zachowanie edytora](media/source-editor-image9.png)
+![Opcje zachowania edytora](media/source-editor-image9.png)
 
-* Dopasowywanie zamykające nawiasy klamrowe mogą być dodawane automatycznie do kodu podczas tworzenia nowej klasy, metody lub właściwości. Gdy ta opcja jest zaznaczona, wpisując `{` automatycznie doda `}`.
-* Formatowanie kodu na bieżąco jest wyzwalana przez naciśnięcie znaków, takich jak rozdzielonych średnikami lub nawiasy klamrowe, które będą emulować preferencje formatowania, które są ustawione.
-* Możesz również format pliku, zapisując go, co umożliwia pisanie kodu, zgodnie z potrzebami i pozostawia odpowiedzialny za formatowanie kodu według stawki ustalonej przez preferencje istniejącego środowiska IDE.
-* Wcięcia można ustawić na wartość None, Auto, lub inteligentne. Te należy wykonać następujące czynności:
-  * Brak — ustawia karetkę do początku następnego wiersza
-  * Auto — ustawia karetkę do tej samej kolumny w następnym wierszu
-  * Blokada Smart - wcięcia w następującym wierszu na podstawie kodu
-* Zachowanie dzielącego wyrazy różni się od systemów operacyjnych, a do celów nawigacji, Edytor tekstu musi wiedzieć, gdzie słów rozpoczynać się ani kończyć. Formatowanie może być równa systemu Unix lub Windows.
+* Dopasowywanie zamykających nawiasów klamrowych może być automatycznie dodawane do kodu podczas tworzenia nowych klas, metod lub właściwości. Po wybraniu tej opcji, wpisanie `{` spowoduje automatyczne dodanie `}`.
+* Formatowanie kodu na bieżąco jest wyzwalane przez prasy znakowe, takie jak średnika lub nawiasy klamrowe, które będą emulować ustawione preferencje formatowania.
+* Możesz również wybrać formatowanie pliku podczas zapisywania go, co pozwala na pisanie kodu zgodnie z potrzebami i pozostawia środowisko IDE odpowiedzialne za formatowanie kodu zgodnie z istniejącymi preferencjami.
+* Wcięcia można ustawić na brak, automatyczne lub inteligentne. Wykonaj następujące czynności:
+  * Brak — ustawia karetkę na początek następnego wiersza.
+  * Autoustawianie karetki do tej samej kolumny w następnym wierszu
+  * Inteligentne wcięcia w następującym wierszu w oparciu o kod
+* Zachowanie dzielenia wyrazów różni się między systemów operacyjnych i w celach nawigacyjnych, Edytor tekstu musi wiedzieć, gdzie wyrazy zaczynają się lub kończą. Formatowanie można ustawić na system UNIX lub Windows.
 
-Można również ustawić reguły formatowania dla XML, CSS, HTML i JSON.
+Możesz również ustawić reguły formatowania dla plików XML, CSS, HTML i JSON.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Preferencji stylu kodu (Visual Studio Windows)](/visualstudio/ide/code-styles-and-quick-actions)
+- [Preferencje stylu kodu (Visual Studio w systemie Windows)](/visualstudio/ide/code-styles-and-quick-actions)

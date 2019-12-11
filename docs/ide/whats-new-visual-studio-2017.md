@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189599"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955039"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Co nowego w programie Visual Studio 2017
 
@@ -50,7 +50,7 @@ Oto ogólny podsumowanie zmian wprowadzonych od czasu poprzedniej wersji program
 
 Poniżej przedstawiono bardziej szczegółowe informacje na temat niektórych najbardziej istotnych ulepszeń i nowych funkcji w programie Visual Studio 2017.
 
-## <a name="redefined-fundamentals"></a>Definicje podstawowe
+## <a name="redefined-fundamentals"></a>Udoskonalone podstawy
 
 ### <a name="a-new-setup-experience"></a>Nowe środowisko instalacji
 
@@ -194,13 +194,13 @@ Aby uzyskać więcej informacji na temat nowych funkcji produktywności, zobacz 
 
 ### <a name="visual-c"></a>Visual C++
 
-Zobaczysz kilka ulepszeń w programie Visual Studio, takich jak dystrybuowanie C++ podstawowych wytycznych przy użyciu programu Visual Studio, aktualizowanie kompilatora przez dodanie rozszerzonej obsługi języka C++ c++ 11 i funkcji oraz dodawanie i aktualizowanie funkcji C++ w bibliotece. Ulepszono również wydajność C++ środowiska IDE, obciążeń instalacyjnych i nie tylko.
+Zobaczysz kilka ulepszeń programu Visual Studio, takich jak dystrybuowanie C++ podstawowych wytycznych w programie Visual Studio, aktualizowanie kompilatora przez dodanie rozszerzonej obsługi języka c++ 11 C++ i funkcji oraz dodawanie i aktualizowanie funkcji w C++ bibliotekach. Ulepszono również wydajność C++ środowiska IDE, obciążeń instalacyjnych i nie tylko.
 
 Ponadto Naprawiono ponad 250 usterek i zgłoszono problemy w kompilatorze i narzędziach, wiele przesłanych przez klientów przez [społeczność deweloperów dla C++programu ](https://developercommunity.visualstudio.com/spaces/62/index.html "Społeczność deweloperówC++").
 
 Aby uzyskać szczegółowe informacje, zobacz stronę [co nowego w wizualizacji C++ w programie Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) .
 
-### <a name="debugging-and-diagnostics"></a>Debugowanie i Diagnostyka
+### <a name="debugging-and-diagnostics"></a>Debugowanie i diagnostyka
 
 #### <a name="run-to-click"></a>Uruchom do kliknięcia
 
@@ -317,7 +317,7 @@ Aby uzyskać więcej informacji, zobacz [wprowadzenie App Center: kompilowanie, 
 
 ## <a name="cross-platform-development"></a>Tworzenie aplikacji wieloplatformowych
 
-### <a name="redgate-data-tools"></a>Narzędzia danych Redgate
+### <a name="redgate-data-tools"></a>Narzędzia do obsługi danych Redgate
 
 Aby zwiększyć możliwości DevOps na SQL Server potrzeby tworzenia baz danych, narzędzia danych Redgate są teraz dostępne w programie Visual Studio.
 
@@ -344,7 +344,7 @@ Teraz zawiera również obsługę platformy Docker.
 
 Aby uzyskać więcej informacji, zobacz stronę [przewodnika dotyczącego platformy .NET Core](/dotnet/core/index) .
 
-## <a name="games-development"></a>Programowanie gier
+## <a name="games-development"></a>Tworzenie gier
 
 ### <a name="visual-studio-tools-for-unity"></a>Narzędzia Visual Studio Tools for Unity
 
@@ -389,6 +389,6 @@ Czasami komunikat jest zbyt mały, aby przekazać pełny wpływ napotkanego prob
 * [Co nowego w zestawie Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Co nowego w wizualizacjiC++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co nowego w języku C#](/dotnet/csharp/whats-new)
-* [Co nowego w Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Co nowego w Team Foundation Server](/azure/devops/server/whats-new)
 * [Co nowego w Visual Studio dla komputerów Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Co nowego w programie Visual Studio 2019](whats-new-visual-studio-2019.md)

@@ -1,17 +1,17 @@
 ---
 title: Odinstaluj Visual Studio dla komputerów Mac
 description: Instrukcje dotyczące odinstalowywania Visual Studio dla komputerów Mac i narzędzi pokrewnych.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 7d86e5abbb25d8c348f550d28618aae614725471
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 58c4395e1569f6ca444a8b1fdcd2b8906d3fdb75
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211508"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984069"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie Visual Studio dla komputerów Mac
 
@@ -144,7 +144,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 Android SDK jest wymagana do tworzenia aplikacji dla systemu Android. Aby całkowicie usunąć wszystkie części Android SDK, Znajdź plik w lokalizacji **~/Library/Developer/Xamarin/** i przenieś go do **kosza**.
 
 > [!WARNING]
-> Należy pamiętać, że klucze podpisywania systemu Android, które są generowane przez Visual Studio dla komputerów Mac, znajdują się w `~/Library/Developer/Xamarin/Keystore`temacie. Upewnij się, że odpowiednie kopie zapasowe zostały odpowiednio wykonane, lub Unikaj usuwania tego katalogu, jeśli chcesz zachować Magazyn kluczy.
+> Należy pamiętać, że klucze podpisywania systemu Android, które są generowane przez Visual Studio dla komputerów Mac, znajdują się w `~/Library/Developer/Xamarin/Keystore`. Upewnij się, że odpowiednie kopie zapasowe zostały odpowiednio wykonane, lub Unikaj usuwania tego katalogu, jeśli chcesz zachować Magazyn kluczy.
 
 Zestawu Java SDK (JDK) nie trzeba odinstalowywać, ponieważ jest już wstępnie spakowany jako część Mac OS X/macOS.
 
@@ -199,10 +199,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 W przypadku starszych wersji należy ręcznie usunąć następujące artefakty:
 
-* Usuń aplikację skoroszyty pod adresem`"/Applications/Xamarin Workbooks.app"`
-* Usuń aplikację inspektora pod adresem`"Applications/Xamarin Inspector.app"`
-* Usuń dodatki: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` i`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Usuń inspektora i pliki pomocnicze `/Library/Frameworks/Xamarin.Interactive.framework` tutaj: i`/Library/Frameworks/Xamarin.Inspector.framework`
+* Usuń aplikację skoroszyty pod adresem `"/Applications/Xamarin Workbooks.app"`
+* Usuń aplikację inspektora pod adresem `"Applications/Xamarin Inspector.app"`
+* Usuń dodatki: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` i `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* Usuń Inspektor i pliki pomocnicze tutaj: `/Library/Frameworks/Xamarin.Interactive.framework` i `/Library/Frameworks/Xamarin.Inspector.framework`
 
 ## <a name="uninstall-the-xamarin-profiler"></a>Odinstaluj Xamarin Profiler
 

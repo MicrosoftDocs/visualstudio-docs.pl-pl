@@ -1,17 +1,17 @@
 ---
-title: Wprowadzenie do tworzenia gier za pomocą aparatu Unity
+title: Wprowadzenie do tworzenia gier za pomocą platformy Unity
 description: Wprowadzenie do aparatu Unity i Visual Studio dla komputerów Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: ff8fe1b2b4efe7ff91d3b363c58183be534a1441
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108428"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984797"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Wprowadzenie do tworzenia gier za pomocą aparatu Unity w Visual Studio dla komputerów Mac
 
@@ -27,13 +27,13 @@ Visual Studio dla komputerów Mac Tools for Unity to bezpłatne rozszerzenie ins
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - Visual Studio dla komputerów Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
-- Środowisko Unity 5.6.1 w wersji osobistej[https://store.unity.com](https://store.unity.com/)lub wyższej (wymaga konta Unity.com do uruchomienia)
+- Środowisko Unity 5.6.1 w wersji osobistej lub nowszej ([https://store.unity.com](https://store.unity.com/)wymaga konta Unity.com do uruchomienia)
 
-## <a name="intended-audience"></a>Zamierzone odbiorcy
+## <a name="intended-audience"></a>Docelowi odbiorcy
 
 To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż głębokie środowisko nie jest wymagane.
 
-## <a name="task-1-creating-a-basic-unity-project"></a>Zadanie 1. Tworzenie podstawowego projektu Unity
+## <a name="task-1-creating-a-basic-unity-project"></a>Zadanie 1. Tworzenie podstawowego projektu środowiska Unity
 
 1. Uruchom aparat **Unity**. Zaloguj się, jeśli jest to wymagane.
 
@@ -51,7 +51,7 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
 5. Dla deweloperów, którzy są nowym programem Unity, wszystko, co działa w aplikacji, będzie istniało w kontekście **sceny**. Plik sceny to pojedynczy plik, który zawiera wszystkie rodzaje metadanych dotyczące zasobów używanych w projekcie dla bieżącej sceny i jej właściwości. Gdy aplikacja zostanie spakowana na platformę, utworzona aplikacja zakończy się kolekcją co najmniej jednego sceny oraz dowolnego dodawanego kodu zależnego od platformy. Projekt może mieć dowolną liczbę scen.
 
-6. Nowa scena ma tylko aparat i światło kierunkowe. Scena wymaga, aby wszystkie elementy były widoczne, i **odbiornik audio** dla wszystkiego dźwiękowego. Te składniki są dołączone do **gry gameobject**.
+6. Nowa scena ma tylko aparat i światło kierunkowe. Scena **wymaga, aby** wszystkie elementy były widoczne, i **odbiornik audio** dla wszystkiego dźwiękowego. Te składniki są dołączone do **gry gameobject**.
 
 7. Wybierz obiekt **Main Camera** z okienka **Hierarchia** .
 
@@ -99,7 +99,7 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
     ![Zmień nazwę drugiego obiektu modułu](media/unity-image14.png)
 
-19. Oznacz również obiekt odtwarzacza **"Player"** (zobacz kontrolkę listy rozwijanej w polu Nazwa). Użyjemy tego w skrypcie Enemy, aby pomóc w znalezieniu obiektu gry odtwarzacza.
+19. Oznacz również obiekt odtwarzacza **"Player"** **(zobacz** kontrolkę listy rozwijanej w polu Nazwa). Użyjemy tego w skrypcie Enemy, aby pomóc w znalezieniu obiektu gry odtwarzacza.
 
     ![tagowanie obiektu odtwarzacza](media/unity-image15.png)
 
@@ -111,13 +111,13 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
     ![Przesuwanie jednego modułu wzdłuż osi](media/unity-image17.png)
 
-22. Teraz można dodać kod, aby uzyskać logikę Enemy, dzięki czemu będzie ona wykonywała gracz. Kliknij prawym przyciskiem myszy folder Assets w konsoli **projektu** i wybierz polecenie **Utwórz skrypt > C#** .
+22. Teraz można dodać kod, aby uzyskać logikę Enemy, dzięki czemu będzie ona wykonywała gracz. Kliknij prawym przyciskiem myszy folder **Assets** w konsoli **projektu** i wybierz polecenie  **C# Utwórz skrypt >** .
 
     ![C#Akcja kontekstu skryptu](media/unity-image18.png)
 
 23. Nazwij nowy C# skrypt **"EnemyAI"** .
 
-    ![C#napisy](media/unity-image19.png)
+    ![Skrypt języka C#](media/unity-image19.png)
 
 24. Aby dołączyć skrypty do obiektów gry, przeciągnij nowo utworzony skrypt do obiektu **Enemy** w okienku **Hierarchia** . Teraz obiekt będzie używać zachowań z tego skryptu.
 
@@ -125,7 +125,7 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
 25. Wybierz pozycję **plik > Zapisz sceny** , aby zapisać bieżącą scenę. Nadaj mu nazwę **"Moja scena"** .
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Zadanie 2. Praca z narzędziami Visual Studio dla komputerów Mac dla aparatu Unity
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Zadanie 2: Praca z narzędziami Visual Studio dla komputerów Mac dla aparatu Unity
 
 1. Najlepszym sposobem na edycję C# kodu jest użycie Visual Studio dla komputerów Mac. Środowisko Unity można skonfigurować tak, aby używało Visual Studio dla komputerów Mac jako domyślnej procedury obsługi. Wybierz pozycję **preferencje > aparatu Unity**.
 
@@ -185,11 +185,11 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
     }
     ```
 
-8. Zapoznaj się z prostym zachowaniem Enemy, które jest zdefiniowane w tym miejscu. W metodzie **Start** otrzymujemy odwołanie do obiektu odtwarzacza (przez jego tag), a także jego transformację. W metodzie **Update** , która jest nazywana każdą ramką, Enemy przejdzie do obiektu odtwarzacza. Słowa kluczowe i nazwy używają kodowania kolor, aby ułatwić zrozumienie bazy kodu w Visual Studio dla komputerów Mac.
+8. Zapoznaj się z prostym zachowaniem Enemy, które jest zdefiniowane w tym miejscu. W metodzie **Start** otrzymujemy odwołanie do obiektu odtwarzacza (przez jego tag), a także jego **transformację**. W metodzie **Update** , która jest nazywana każdą ramką, Enemy przejdzie do obiektu odtwarzacza. Słowa kluczowe i nazwy używają kodowania kolor, aby ułatwić zrozumienie bazy kodu w Visual Studio dla komputerów Mac.
 
 9. Zapisz zmiany w skrypcie Enemy w **Visual Studio dla komputerów Mac**.
 
-## <a name="task-3-debugging-the-unity-project"></a>Zadanie 3. Debugowanie projektu Unity
+## <a name="task-3-debugging-the-unity-project"></a>Zadanie 3. debugowanie projektu środowiska Unity
 
 1. Ustaw punkt przerwania w pierwszym wierszu kodu w metodzie **Start** . Możesz kliknąć margines edytora w wierszu docelowym lub umieścić kursor w wierszu i nacisnąć klawisz **F9**.
 
@@ -247,7 +247,7 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
     ![Zatrzymywanie sesji debugowania w Visual Studio dla komputerów Mac](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Zadanie 4: Eksplorowanie funkcji aparatu Unity w Visual Studio dla komputerów Mac
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Zadanie 4. Eksplorowanie funkcji aparatu Unity w Visual Studio dla komputerów Mac
 
 1. Visual Studio dla komputerów Mac zapewnia szybki dostęp do dokumentacji aparatu Unity w edytorze kodu. Umieść kursor w dowolnym miejscu w symbolu **Vector3** w metodzie **Update** i naciśnij pozycję **⌘ Command + '** .
 
@@ -269,13 +269,13 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
     ![Eksplorowanie przeciążeń w programie Visual Studio dla komputerów Mac](media/unity-image42.png)
 
-6. Visual Studio dla komputerów Mac umożliwia również łatwe zdefiniowanie nowych programów do cieniowania. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **zasoby** i wybierz polecenie **Dodaj > Nowy**program do cieniowania.
+6. Visual Studio dla komputerów Mac umożliwia również łatwe zdefiniowanie nowych programów do cieniowania. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **zasoby** i wybierz polecenie **Dodaj > nowy program do cieniowania**.
 
     ![Nowa akcja modułu cieniującego w programie Visual Studio dla komputerów Mac](media/unity-image43.png)
 
 7. Format pliku programu do cieniowania uzyskuje pełny kolor i czcionki, aby ułatwić ich odczytywanie i zrozumienie.
 
-    ![podświetlanie składni](media/unity-image44.png)
+    ![wyróżnianie składni](media/unity-image44.png)
 
 8. Wróć do **aparatu Unity**. Zobaczysz, że ponieważ Visual Studio dla komputerów Mac współpracuje z tym samym systemem projektu, zmiany wprowadzone w jednym miejscu są automatycznie synchronizowane z drugim. Teraz można łatwo korzystać z najlepszego narzędzia do wykonania zadania.
 

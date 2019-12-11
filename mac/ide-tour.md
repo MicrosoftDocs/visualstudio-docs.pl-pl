@@ -1,23 +1,23 @@
 ---
 title: Visual Studio for Mac Tour
 description: Visual Studio dla komputerów Mac zapewnia zintegrowane środowisko programistyczne do kompilowania aplikacji .NET w systemie macOS, w tym ASP.NET Core witryn sieci Web i projektów platformy Xamarin dla systemów iOS, Android, Mac i Xamarin. Forms.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213702"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984706"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Przewodnik po programie Visual Studio 2019 for Mac
 
 Visual Studio dla komputerów Mac to _zintegrowane środowisko deweloperskie_ platformy .NET na komputerze Mac, które może służyć do edytowania, debugowania i kompilowania kodu, a następnie publikowania aplikacji. Oprócz oczekiwanych funkcji, takich jak standardowy Edytor i debuger, Visual Studio dla komputerów Mac obejmuje kompilatory, narzędzia do uzupełniania kodu, graficzne projektantów i kontrolę źródła w celu ułatwienia procesu tworzenia oprogramowania.
 
-Visual Studio dla komputerów Mac obsługuje wiele takich samych typów plików jak odpowiedniki systemu Windows, takie jak `.csproj`, `.fsproj`lub `.sln` pliki, i obsługuje funkcje takie jak EditorConfig, co oznacza, że można użyć środowiska IDE, które najlepiej działa.
+Visual Studio dla komputerów Mac obsługuje wiele typów plików jako odpowiedniki systemu Windows, takie jak `.csproj`, `.fsproj`lub pliki `.sln`, i obsługuje funkcje takie jak EditorConfig, co oznacza, że można użyć środowiska IDE, które najlepiej działa.
 Tworzenie, otwieranie i opracowywanie aplikacji jest znanym doświadczeniem dla każdej osoby, która wcześniej korzystała z programu Visual Studio w systemie Windows. Ponadto Visual Studio dla komputerów Mac korzysta z wielu zaawansowanych narzędzi, które sprawiają, że system Windows ma odpowiedni, wydajny IDE. Platforma kompilatora Roslyn jest używana do refaktoryzacji i IntelliSense. Jego system projektu i aparat kompilacji używają programu MSBuild, a jego Edytor źródła używa tego samego podstaw, co program Visual Studio w systemie Windows. Używa tych samych aparatów debugera dla aplikacji Xamarin i .NET Core oraz tych samych projektantów dla Xamarin. iOS i Xamarin. Android.
 
 ## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Co mogę zrobić w Visual Studio dla komputerów Mac
@@ -119,9 +119,9 @@ Aby zapewnić widoczność kart przez cały czas, możesz skorzystać z przypię
 
 ## <a name="refactoring"></a>Refaktoryzacja
 
-Visual Studio dla komputerów Mac zapewnia dwa przydatne metody refaktoryzacji kodu: Akcje kontekstu i analiza źródła. Więcej informacji na ten temat można znaleźć w artykule [refaktoryzacji](/visualstudio/mac/refactoring) .
+Visual Studio dla komputerów Mac zapewnia dwa przydatne metody refaktoryzacji kodu: akcje kontekstu i analiza źródła. Więcej informacji na ten temat można znaleźć w artykule [refaktoryzacji](/visualstudio/mac/refactoring) .
 
-## <a name="debugging"></a>Debugowanie
+## <a name="debugging"></a>debugowanie
 
 Visual Studio dla komputerów Mac ma natywny debuger umożliwiający obsługę debugowania dla aplikacji Xamarin. iOS, Xamarin. Mac i Xamarin. Android. Visual Studio dla komputerów Mac używa debugera miękkiego mono, który jest implementowany w środowisku uruchomieniowym mono, umożliwiając IDE Debugowanie kodu zarządzanego na wszystkich platformach. Aby uzyskać dodatkowe informacje na temat debugowania, zapoznaj się z artykułem dotyczącym [debugowania](/visualstudio/mac/debugging) .
 

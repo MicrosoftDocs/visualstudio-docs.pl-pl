@@ -1,17 +1,17 @@
 ---
 title: Dołączanie pakietu NuGet do projektu
 description: W tym dokumencie opisano sposób dołączania pakietu NuGet do projektu platformy Xamarin. Przeprowadza on wyszukiwanie i pobieranie pakietu, a także przedstawia funkcje integracji IDE.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 154f779ee8b622c9ee66a753a23e9627f9d443c0
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 728a225f4a1d14af986039cae7cb2fc8a493ecc9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715167"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983303"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Dołącz pakiet NuGet do projektu
 

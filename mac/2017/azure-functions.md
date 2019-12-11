@@ -1,17 +1,17 @@
 ---
 title: Wprowadzenie do usługi Azure Functions
 description: Korzystanie z usługi Azure Functions w Visual Studio dla komputerów Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 85e66711c8bfe65319bf6af90ce0452478c4b7f8
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024702"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983466"
 ---
 # <a name="introduction-to-azure-functions"></a>Wprowadzenie do usługi Azure Functions
 
@@ -68,7 +68,7 @@ Dzięki obsłudze Azure Functions w Visual Studio dla komputerów Mac można tes
 
     Skopiuj adres URL z danych wyjściowych.
 
-3. Wklej adres URL żądania HTTP na pasku adresu przeglądarki. Dodaj ciąg zapytania `?name=<yourname>` na końcu adresu URL i wykonaj żądanie. Na poniższej ilustracji przedstawiono odpowiedź w przeglądarce do lokalnego żądania GET zwróconego przez funkcję:
+3. Wklej adres URL żądania HTTP w pasku adresu przeglądarki. Dodaj ciąg zapytania `?name=<yourname>` na końcu adresu URL i wykonaj żądanie. Na poniższej ilustracji przedstawiono odpowiedź w przeglądarce do lokalnego żądania GET zwróconego przez funkcję:
 
     ![żądanie HTTP w przeglądarce](media/azure-functions-httpreq.png)
 
@@ -98,18 +98,18 @@ Korzystając z powyższej procedury, można dodać więcej funkcji do projektu a
     |Ustawienie  |Opis  |
     |---------|---------|
     |**Nazwa App Service**|Globalnie unikatowa nazwa identyfikująca nową aplikację funkcji.|
-    |**Ramach**|Subskrypcja platformy Azure do użycia.|
+    |**Subskrypcja**|Subskrypcja platformy Azure, która ma być używana.|
     |**[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)**|Nazwa grupy zasobów, w której ma zostać utworzona aplikacja funkcji. Wybierz **+** , aby utworzyć nową grupę zasobów.|
     |**[Plan usługi](/azure/azure-functions/functions-scale)**|Wybierz istniejący plan lub Utwórz plan niestandardowy. Wybierz lokalizację w regionie blisko siebie lub w niemal innych usługach, do których dostęp ma funkcja.|
 
     > [!CAUTION]
     > Istnieje usterka w wersji 7,6 Visual Studio dla komputerów Mac, która spowoduje niepowodzenie publikowania w przypadku wystąpienia błędu aprowizacji w przypadku próby utworzenia niestandardowego planu usługi z **cennikiem** ustawionym na **użycie**. Ten problem zostanie rozwiązany w następnej wersji usługi.
 
-5. Kliknij przycisk **dalej** , aby utworzyć konto magazynu. Konto usługi Azure Storage jest wymagane przez środowisko uruchomieniowe funkcji. Kliknij pozycję **niestandardowy** , aby utworzyć konto magazynu ogólnego przeznaczenia, lub Użyj istniejącego:
+5. Kliknij przycisk **dalej** , aby utworzyć konto magazynu. Środowisko uruchomieniowe usługi Functions wymaga konta magazynu platformy Azure. Kliknij pozycję **niestandardowy** , aby utworzyć konto magazynu ogólnego przeznaczenia, lub Użyj istniejącego:
 
     ![Opcja menu Publikuj w systemie Azure](media/azure-functions-image8.png)
 
-6. Kliknij przycisk **Utwórz** , aby utworzyć aplikację funkcji i powiązane zasoby na platformie Azure z tymi ustawieniami i wdrożyć kod projektu funkcji.
+6. Kliknij przycisk **Utwórz**, aby utworzyć aplikację funkcji i powiązane zasoby na platformie Azure przy użyciu tych ustawień i wdrożyć kod projektu funkcji.
 
 7. Podczas publikowania może pojawić się okno dialogowe z informacją o tym, jak zaktualizować wersję funkcji na platformie Azure. Kliknij przycisk **tak**:
 
@@ -156,7 +156,7 @@ Jednym z ważnych ustawień może być konieczne ustawienie `FUNCTIONS_EXTENSION
 
 - **Ogólny element webhook** — prosta funkcja, która będzie uruchamiana za każdym razem, gdy odbierze żądanie od dowolnej usługi obsługującej elementy webhook. Aby uzyskać więcej informacji, zobacz [artykuł dotyczący usługi Azure Functions w ogólnych elementach webhook](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Aranżacja funkcji trwałych** — Durable Functions pozwala pisać funkcje stanowe w środowisku bezserwerowym. Rozszerzenie zarządza stanem, punktami kontrolnymi i ponownymi uruchomieniami. Aby uzyskać więcej informacji, zobacz Przewodniki usługi Azure Functions dotyczący [trwałych funkcji](/azure/azure-functions/durable-functions-overview).
+- **Aranżacja funkcji trwałych** — Durable Functions pozwala pisać funkcje stanowe w środowisku bezserwerowym. Rozszerzenie zarządza stanem, punktami kontrolnymi i ponownym uruchamianiem. Aby uzyskać więcej informacji, zobacz Przewodniki usługi Azure Functions dotyczący [trwałych funkcji](/azure/azure-functions/durable-functions-overview).
 
 - Wskaźnik **rozmiaru obrazu** — ta funkcja tworzy obrazy o zmienionym rozmiarze za każdym razem, gdy obiekt BLOB zostanie dodany do kontenera. Szablon przyjmuje ścieżkę i parametry połączenia dla wyzwalacza, niewielką wartość wyjściową obrazu oraz średnią wartość wyjściową obrazu.
 

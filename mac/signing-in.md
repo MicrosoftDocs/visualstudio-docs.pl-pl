@@ -1,16 +1,16 @@
 ---
 title: Logowanie do Visual Studio dla komputerów Mac
 description: Jak zalogować się do Visual Studio dla komputerów Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213663"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983659"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Zaloguj się do Visual Studio dla komputerów Mac
 

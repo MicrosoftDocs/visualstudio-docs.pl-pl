@@ -1,34 +1,34 @@
 ---
 title: Motywy edytora
-description: W tym artykule opisano sposób edycji motywu edytora lub dodać własne w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+description: W tym artykule opisano, jak edytować motyw edytora lub dodać własny w Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6aa4868f5e9c5fbaa4fb58258c70ce672edf2e30
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998452"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984818"
 ---
-# <a name="editor-themes"></a>Edytor motywów
+# <a name="editor-themes"></a>Motywy edytora
 
-Edytor motywów, można ją zmienić na żadnych schematów kolorów 10 zapewniany domyślnie w programie Visual Studio dla komputerów Mac za pomocą **programu Visual Studio > Preferencje > Edytor tekstu > motywy kolorów** opcje menu:
+Motywy edytora można zmienić na dowolne z 10 schematów kolorów udostępnionych domyślnie w Visual Studio dla komputerów Mac za pomocą **preferencji > programu Visual Studio > Edytor tekstu > Opcje menu Motywy kolorów** :
 
-![Kolor wybranego motywu](media/source-editor-image17.png)
+![Wybór motywu kolorów](media/source-editor-image17.png)
 
-## <a name="adding-new-themes"></a>Dodając nowe motywy
+## <a name="adding-new-themes"></a>Dodawanie nowych motywów
 
-Mogą być dodawane nowe motywy kolorów, pod warunkiem, że są one w jednym z obsługiwanych formatów:
+Nowe motywy kolorów można dodać, pod warunkiem, że znajdują się one w jednym z obsługiwanych formatów:
 
 * Visual Studio (`.vssettings`)
 * Xamarin Studio (`.json`)
-* TextMate (`.tmTheme`)
+* Textoficer (`.tmTheme`)
 
-Po znaleźć lub utworzyć nowy motyw i pobrany na komputer lokalny należy dodać go, wykonując następujące czynności:
+Po znalezieniu lub utworzeniu nowego motywu i pobraniu go na komputer lokalny, Dodaj go, wykonując następujące czynności:
 
-1. Wybierz **Dodaj** przycisk w oknie dialogowym opcji motywy kolorów:  ![Dodaj motyw kolorów](media/source-editor-image20.png)
-2. Przeglądanie w poszukiwaniu motyw na komputerze lokalnym i naciśnij klawisz **Otwórz**.
-3. Motyw jest dodawany do dolnej części listy wstępnie zainstalowane kompozycje. Aby wyświetlić podgląd motywu, wybierz ją: ![Kolor motywów w wersji zapoznawczej](media/source-editor-image21.png)
-4. Aby zastosować motyw, naciśnij **OK** przycisku.
+1. Wybierz przycisk **Dodaj** w oknie dialogowym opcji Motywy kolorów: ![motyw koloru Dodaj](media/source-editor-image20.png)
+2. Wyszukaj motyw na komputerze lokalnym i naciśnij pozycję **Otwórz**.
+3. Motyw zostanie dodany do dolnej części wstępnie zainstalowanej listy motywów. Aby wyświetlić podgląd motywu, zaznacz go: ![Podgląd motywu kolorów](media/source-editor-image21.png)
+4. Aby zastosować motyw, naciśnij przycisk **OK** .

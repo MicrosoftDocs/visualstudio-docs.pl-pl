@@ -1,17 +1,17 @@
 ---
 title: Debugowanie za pomocą platformy Xamarin
 description: Debugowanie jest powszechną i niezbędną częścią programowania. Jako dojrzały IDE Visual Studio dla komputerów Mac zawiera cały zestaw funkcji, które ułatwiają debugowanie. Z bezpiecznego debugowania do wizualizacji danych w tym artykule wyjaśniono, jak używać pełnego potencjału debugowania w Visual Studio dla komputerów Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 96474925c5411d76395cb60ab1ad4851c1cbfa19
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715952"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985014"
 ---
 # <a name="debugging-with-xamarin"></a>Debugowanie za pomocą platformy Xamarin
 
@@ -29,9 +29,9 @@ Mocne debugery, takie jak [LLDB](https://lldb.llvm.org/index.html) lub [GDB](htt
 
 Aby rozpocząć debugowanie aplikacji, zawsze upewnij się, że konfiguracja jest ustawiona na **Debuguj**. Konfiguracja debugowania oferuje przydatny zestaw narzędzi do obsługi debugowania, takich jak punkty przerwania, używanie wizualizatorów danych i wyświetlanie stosu wywołań:
 
-![Debuguj konfigurację](media/debugging-image_0.png)
+![Konfiguracja debugowania](media/debugging-image_0.png)
 
-## <a name="setting-a-breakpoint"></a>Ustawianie punktu przerwania
+## <a name="setting-a-breakpoint"></a>Ustawienie punktu przerwania
 
 Aby ustawić punkt przerwania w środowisku IDE, kliknij obszar marginesu w edytorze obok numeru wiersza kodu, w którym chcesz przerwać:
 

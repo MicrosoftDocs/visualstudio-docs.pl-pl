@@ -1,46 +1,46 @@
 ---
-title: Rozszerzanie programu Visual Studio dla komputerów Mac wskazówki
-author: conceptdev
-ms.author: crdun
+title: Rozszerzanie przewodnika Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984085"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983290"
 ---
-# <a name="extending-visual-studio-for-mac-walkthrough"></a>Rozszerzanie programu Visual Studio dla komputerów Mac wskazówki
+# <a name="extending-visual-studio-for-mac-walkthrough"></a>Rozszerzanie przewodnika Visual Studio dla komputerów Mac
 
-Ten temat przeprowadzi Cię przez tworzenie [pakietu proste rozszerzenie](https://github.com/mjh4/AddIns/tree/master/DateInserter). Pakiet rozszerzenia spowoduje utworzenie nowego polecenia w programie Visual Studio dla komputerów Mac menu Edycja, który umożliwia użytkownikowi Wstawianie dokument tekstowy Otwórz bieżącej daty i godziny.
+Ten temat przeprowadzi Cię przez proces tworzenia [prostego pakietu rozszerzenia](https://github.com/mjh4/AddIns/tree/master/DateInserter). Pakiet rozszerzenia utworzy nowe polecenie w menu edycji Visual Studio dla komputerów Mac, które umożliwi użytkownikowi wstawienie bieżącej daty i godziny do otwartego dokumentu tekstowego.
 
-W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego szablonu projektu i wypełnia wymaganych plików dla naszego pakietu rozszerzenia niestandardowego.
+W tym przykładzie jest użyty program dodatki. Producent dodatku tworzy nowy szablon projektu i wypełnia go przy użyciu plików wymaganych dla naszego niestandardowego pakietu rozszerzenia.
 
-1. Rozpocznij poprzez uruchomienie programu Visual Studio dla komputerów Mac, jeśli nie jest już otwarty:
+1. Zacznij od uruchomienia Visual Studio dla komputerów Mac, jeśli nie jest jeszcze otwarty:
 
-   ![Program Visual Studio for Mac zrzut ekranu](media/extending-visual-studio-mac-addin3.png)
+   ![Zrzut ekranu Visual Studio dla komputerów Mac](media/extending-visual-studio-mac-addin3.png)
 
-2. Zainstaluj _dodatku twórca pakietu rozszerzenia_ korzystanie z Menedżera rozszerzeń. Wybierz z menu programu Visual Studio **rozszerzeń...** :
+2. Zainstaluj _pakiet rozszerzenia programu Add-in Maker_ przy użyciu Menedżera rozszerzeń. Z menu programu Visual Studio wybierz pozycję **rozszerzenia...** :
 
-   ![Karta Menedżer dodatków](media/extending-visual-studio-mac-addin4.png)
+   ![Karta Menedżera dodatków](media/extending-visual-studio-mac-addin4.png)
 
-3. Przejdź na kartę Galeria i wpisz `Addin Maker` na pasku wyszukiwania w prawym górnym rogu. Wybierz dodatek Maker z kategorii rozwoju w dodatku, a następnie kliknij przycisk <kbd>zainstalować</kbd>. Jeśli nic nie zostaną wyświetlone, odświeżam i wyszukać ponownie:
+3. Przejdź do karty Galeria i wpisz `Addin Maker` w prawym górnym pasku wyszukiwania. Wybierz pozycję addin Maker z kategorii Programowanie dodatków, a następnie kliknij przycisk <kbd>Instaluj</kbd>. Jeśli nic nie zostanie wyświetlone, kliknij przycisk Odśwież i Wyszukaj ponownie:
 
    ![Menedżer dodatków](media/extending-visual-studio-mac-addin5.png)
 
-4. Teraz, gdy producent dodatek programu jest zainstalowany, możesz zacząć tworzyć pakietu rozszerzenia. Rozpocznij od utworzenia nowego rozwiązania.
+4. Teraz, gdy jest zainstalowany program addin Maker, możesz rozpocząć tworzenie pakietu rozszerzenia. Zacznij od utworzenia nowego rozwiązania.
 
-5. Z **nowe rozwiązanie w oknie dialogowym**, wybierz **innych > Różne > Ogólne > Xamarin Studio dodatek > C#** szablonu i na poniższym ekranie Nazwa nowego rozwiązania `DateInserter`:
+5. W **oknie dialogowym Nowe rozwiązanie**wybierz kolejno pozycje **inne > różne > Ogólne > Xamarin Studio C# dodatek >** szablon i na poniższym ekranie nazwę nowego rozwiązania `DateInserter`:
 
    ![Tworzenie nowego rozwiązania](media/extending-visual-studio-mac-addin7New.png)
 
-6. Program Visual Studio for Mac zostaną wyświetlone nowe rozwiązanie:
+6. Visual Studio dla komputerów Mac wypełni nowe rozwiązanie:
 
-   ![Wypełnione rozwiązania](media/extending-visual-studio-mac-addin8.png)
+   ![Wypełnione rozwiązanie](media/extending-visual-studio-mac-addin8.png)
 
-7. Usuń kod szablonu w `Manifest.addin.xml` i zastąp go następującym kodem:
+7. Usuń kod szablonu w `Manifest.addin.xml` i zastąp go następującym:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -57,11 +57,11 @@ W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego sz
       </ExtensionModel>
    ```
 
-8. Teraz musisz skonfigurować pliki, które będzie ostatecznie obsługiwać Wstawianie daty i godziny do edytora tekstu. Kliknij prawym przyciskiem myszy węzeł projektu i Dodaj nowy plik. Wybierz **ogólne > Pusta klasa** i nadaj nowemu plikowi *InsertDateHandler*:
+8. Teraz musisz skonfigurować pliki, które będą ostatecznie obsługiwać Wstawianie daty i godziny do edytora tekstu. Kliknij prawym przyciskiem myszy węzeł projektu i Dodaj nowy plik. Wybierz pozycję **ogólne > pustą klasę** i Nadaj nowemu plikowi nazwę *InsertDateHandler*:
 
-   ![Wstaw datę obsługi](media/extending-visual-studio-mac-addin9.png)
+   ![Wstaw procedurę obsługi daty](media/extending-visual-studio-mac-addin9.png)
 
-9. Kod szablonu z przewodnika usuńmy `InsertDateHandler.cs` i zastąp go następującym kodem:
+9. Usuńmy kod szablonu z `InsertDateHandler.cs` i zastąp go następującym kodem:
 
    ```cs
    using MonoDevelop.Components.Commands;
@@ -86,13 +86,13 @@ W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego sz
    }
    ```
 
-   Firma Microsoft będzie później rozszerzyć tych dwóch metod symbol zastępczy.
+   Te dwie metody zastępcze zostaną później rozwinięcia.
 
-10. Kliknij prawym przyciskiem myszy **DateInserter** projektu i wybierz pozycję **Dodaj > Nowy plik**. Wybierz **ogólne > puste wyliczenie**, a następnie nadaj nowemu plikowi *DateInserterCommands*:
+10. Kliknij prawym przyciskiem myszy projekt **DateInserter** i wybierz polecenie **Dodaj > nowy plik**. Wybierz pozycję **ogólne > puste Wyliczenie**, a następnie nadaj nazwę nowemu plikowi *DateInserterCommands*:
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
-11. Dodaj `InsertDate` polecenia jako nowe wyliczenie w `DateInserterCommands.cs` pliku:
+11. Dodaj `InsertDate` polecenie jako nowe Wyliczenie w pliku `DateInserterCommands.cs`:
 
     ``` cs
     using System;
@@ -106,13 +106,13 @@ W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego sz
     }
     ```
 
-12. W tym momencie powinien mieć pakiet rozszerzenia pracy. Zapisywanie pracy i działania aplikacji, można przetestować działanie. IDE spowoduje uruchomienie nowego wystąpienia programu Visual Studio dla komputerów Mac przy użyciu nowego pakietu rozszerzenia zainstalowane. Jeśli przejdziesz do **menu Edycja**, zobaczysz, że program Visual Studio for Mac ma nową opcję o nazwie **Wstaw datę**, jak pokazano na poniższym zrzucie ekranu:
+12. W tym momencie powinien istnieć pakiet rozszerzenia działającego. Możesz go przetestować, zapisując swoją służbę i uruchamiając aplikację. W środowisku IDE zostanie uruchomione nowe wystąpienie Visual Studio dla komputerów Mac z zainstalowanym nowym pakietem rozszerzeń. Jeśli przejdziesz do **menu Edycja**, zobaczysz, że Visual Studio dla komputerów Mac ma nową opcję o nazwie **Wstaw datę**, jak pokazano na poniższym zrzucie ekranu:
 
-    ![Wstaw datę, polecenie](media/extending-visual-studio-mac-addin11.png)
+    ![Wstaw datę — polecenie](media/extending-visual-studio-mac-addin11.png)
 
-    Należy pamiętać, że wybierając Wstaw datę z menu nie ma znaczenia, ponieważ bieżąca implementacja ma tylko metod symbol zastępczy.
+    Należy zauważyć, że wybranie opcji Wstaw datę z menu nie ma żadnego efektu, ponieważ bieżąca implementacja ma tylko metody symboli zastępczych.
 
-13. Struktura znajduje się w miejscu, aby pakiet rozszerzenia i nadszedł czas, aby napisać kod, który obsługuje wstawiania daty. Najpierw upewnij się, że **polecenia Insert data** jest włączona jedynie wtedy, gdy użytkownik ma tekstu, plik jest otwarty, zastępując `Update` method in Class metoda `InsertDateHandler.cs` następującym kodem:
+13. Platforma jest zainstalowana dla pakietu rozszerzenia i czas pisania kodu, który umożliwia wstawienie daty. Najpierw upewnij się, że **polecenie Wstaw datę** jest włączone tylko wtedy, gdy użytkownik ma otwarty plik tekstowy, zastępując metodę `Update` w `InsertDateHandler.cs` następującym kodem:
 
     ```cs
     protected override void Update(CommandInfo info)
@@ -121,7 +121,7 @@ W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego sz
     }
     ```
 
-14. Zaktualizuj polecenie `Run` metodę, aby wstawić datę i godzinę, z następującym kodem:
+14. Zaktualizuj metodę `Run` polecenia, aby wstawić datę i godzinę do następującego kodu:
 
     ``` cs
     protected override void Run () {
@@ -132,10 +132,10 @@ W tym przykładzie użyto twórcę dodatku. Twórca dodatku utworzenie nowego sz
     }
     ```
 
-15. Na koniec uruchom naszego pakietu rozszerzenia do testowania. W wystąpieniu programu Visual Studio dla komputerów Mac, wybierz **Edytuj > Wstaw datę**. Bieżącą datę i godzinę, zostanie wstawione w naszej daszka, jak pokazano na poniższym zrzucie ekranu:
+15. Na koniec Uruchom pakiet rozszerzenia, aby go przetestować. W nowym wystąpieniu Visual Studio dla komputerów Mac wybierz pozycję **edytuj > Wstaw datę**. Bieżąca data i godzina są wstawiane przy użyciu karetki, jak pokazano na poniższym zrzucie ekranu:
 
-    ![Wstaw datę zrzut ekranu](media/extending-visual-studio-mac-addin12.png)
+    ![Wstaw zrzut ekranu daty](media/extending-visual-studio-mac-addin12.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie pierwszego rozszerzenia (Visual Studio Windows)](/visualstudio/extensibility/extensibility-hello-world)
+- [Tworzenie pierwszego rozszerzenia (Visual Studio w systemie Windows)](/visualstudio/extensibility/extensibility-hello-world)

@@ -1,16 +1,16 @@
 ---
 title: Ułatwienia dostępu
 description: W tym artykule wprowadzono funkcje ułatwień dostępu w Visual Studio dla komputerów Mac oraz sposób ich włączania.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: c0f056643a8cea0c9a5eca9801d2bd008e0793a8
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714426"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984875"
 ---
 # <a name="accessibility"></a>Ułatwienia dostępu
 
@@ -18,8 +18,8 @@ Oprócz funkcji i narzędzi w programie macOS Visual Studio dla komputerów Mac 
 
 - Rozszerzenie tekstu w okienkach rozwiązania i edytora
 - Opcje rozmiaru tekstu w edytorach
-- Dostosowanie koloru w edytorach
-- Dostosowywanie skrótu klawiaturowego
+- Dostosowywanie kolorów w edytorach
+- Dostosowywanie skrótów klawiatury
 - Uzupełnianie kodu dla metod i parametrów
 
 Aby uzyskać więcej informacji na temat funkcji ułatwień dostępu w programie macOS, zobacz [witrynę sieci Web firmy Apple](https://www.apple.com/accessibility/mac/).

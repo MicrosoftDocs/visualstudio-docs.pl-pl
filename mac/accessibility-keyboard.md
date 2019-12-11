@@ -2,15 +2,15 @@
 title: Nawigacja przy użyciu klawiatury w Visual Studio dla komputerów Mac
 description: Używanie Visual Studio dla komputerów Mac z poleceniami klawiatury
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342345"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985097"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Nawigacja przy użyciu klawiatury w Visual Studio dla komputerów Mac
 
@@ -28,7 +28,7 @@ Visual Studio dla komputerów Mac ma szereg skrótów klawiaturowych dla różny
 
 1. Wybierz pozycję **Visual Studio (menu)**  > **Preferences (&#8984;,)** .
 
-1. Przejdź do **środowiska** > **kluczowe powiązania**.
+1. Przejdź do **środowiska** > **powiązania kluczy**.
 
 1. Przewiń listę lub Wyszukaj skrót lub polecenie.
 
@@ -43,7 +43,7 @@ Visual Studio dla komputerów Mac ma szereg skrótów klawiaturowych dla różny
 
 ## <a name="useful-keyboard-shortcuts"></a>Przydatne skróty klawiaturowe
 
-|Cecha         |Opis                                   |Skrót         |
+|Funkcja         |Opis                                   |Skrót         |
 |----------------|----------------------------------------------|-----------------|
 |Nawigowanie po interfejsie użytkownika   |Przechodzenie przez wszystkie elementy interfejsu użytkownika.               |**⇥**, **⇧ ⇥**    |
 |Interaktywne        |Zaznacz formant, który jest aktualnie fokusem.         |**␣**            |

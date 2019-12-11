@@ -3,31 +3,31 @@ title: Instalowanie i używanie Visual Studio dla komputerów Mac za zaporą lub
 description: Ten dokument zawiera listę hostów, które muszą być dozwolone w zaporze, aby umożliwić działanie Visual Studio dla komputerów Mac (i jego obciążeń, w tym Xamarin), do pracy w środowisku firmowym.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 3c5fce37b7cb26ef9aeceaba700e72e79e809d7d
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213635"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984032"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie Visual Studio dla komputerów Mac za zaporą lub serwerem proxy
 
 Jeśli ty lub Twoja organizacja korzysta z środków bezpieczeństwa, takich jak zapora lub serwer proxy, istnieją domeny, które możesz chcieć dodać do listy "Lista dozwolonych" oraz portów i protokołów, które mogą być otwierane w celu uzyskania najlepszego środowiska podczas instalacji i używania rejestrowania dostępu użytkowników Studio for Mac i usługi platformy Azure.
 
-- [**Visual Studio dla komputerów Mac instalacji**](#install-visual-studio-for-mac): Te tabele obejmują domeny, które muszą zezwalać na łączność, dzięki czemu masz dostęp do wszystkich funkcji i obciążeń Visual Studio dla komputerów Mac.
+- [**Zainstaluj Visual Studio dla komputerów Mac**](#install-visual-studio-for-mac): te tabele obejmują domeny, które muszą zezwalać na łączność, aby mieć dostęp do wszystkich funkcji i obciążeń Visual Studio dla komputerów Mac.
 
-- [**Użyj Visual Studio dla komputerów Mac**](#use-visual-studio-for-mac): Te tabele obejmują domeny, które muszą zezwalać na łączność, dzięki czemu masz dostęp do pokrewnych funkcji.
+- [**Użyj Visual Studio dla komputerów Mac**](#use-visual-studio-for-mac): te tabele obejmują domeny, które muszą zezwalać na łączność, aby mieć dostęp do pokrewnych funkcji.
 
-## <a name="install-visual-studio-for-mac"></a>Zainstaluj program Visual Studio dla komputerów Mac
+## <a name="install-visual-studio-for-mac"></a>Instalowanie programu Visual Studio dla komputerów Mac
 
 Ponieważ Instalator Visual Studio dla komputerów Mac pobiera z różnych domen i pobiera serwery, poniżej znajdują się domeny i adresy URL, które mogą być dodawane jako zaufane w konfiguracjach.
 
 ### <a name="microsoft-domains"></a>Microsoft domains
 
-| Domain| Cel |
+| Domena| Cel |
 | ----------------------------------- |---------------------------|
 | *.live.com| Zarządzanie poświadczeniami |
 | app.vssps.visualstudio.com| Metadane Instalatora|
@@ -40,11 +40,11 @@ Ponieważ Instalator Visual Studio dla komputerów Mac pobiera z różnych domen
 | developer.xamarin.com | Pakiety Instalatora|
 | static.xamarin.com | Pakiety Instalatora|
 | dl.xamarin.com | Pakiety Instalatora|
-| dc.services.visualstudio.com| Raportowanie awarii |
+| dc.services.visualstudio.com| Raporty o awariach |
 
 ### <a name="third-party-domains"></a>Domeny innych firm
 
-| Domain| Cel |
+| Domena| Cel |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
 | download.oracle.com | Zestaw Java SDK|
@@ -56,7 +56,7 @@ Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne 
 
 ### <a name="general"></a>Ogólne
 
-| Domain | Porty|Cel|
+| Domena | Porty|Cel|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Rozpoznawanie adresów URL firmy Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Dane strony początkowej|
@@ -67,23 +67,23 @@ Aby upewnić się, że masz dostęp do wszystkich funkcji, które są potrzebne 
 
 ### <a name="identity"></a>Tożsamość
 
-| Domain | Porty|Cel|
+| Domena | Porty|Cel|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Dostawca tożsamości|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Dostawca tożsamości|
-| dc.services.visualstudio.com| 80/443|Raportowanie awarii|
+| dc.services.visualstudio.com| 80/443|Raporty o awariach|
 | management.azure.com|80/443| Interfejs API usług platformy Azure |
 
 ### <a name="nuget"></a>NuGet
 
-| Domain | Porty|Cel|
+| Domena | Porty|Cel|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|Interfejs API narzędzia NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Dostawca tożsamości|
 
 ### <a name="android-projects"></a>Projekty systemu Android
 
-| Domain| Cel|
+| Domena| Cel|
 | ------------------------------------|------------------------------------|
 | time.android.com| Serwer czasu dla Emulator systemu Android |
 | connectivitycheck.gstatic.com | Łączność dla Emulator systemu Android|

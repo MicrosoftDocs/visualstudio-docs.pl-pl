@@ -1,17 +1,17 @@
 ---
-title: 'Instrukcje: Otwórz wiele rozwiązań'
+title: 'Instrukcje: otwieranie wielu rozwiązań'
 description: Dowiedz się, jak otworzyć więcej niż jedno rozwiązanie w Visual Studio dla komputerów Mac i jak otworzyć więcej niż jedno wystąpienie aplikacji.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 8fe8f8506bdd332553cffaed45951219c7904bc3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3568ab8dd68deb83d668c6e46f556516e29a81ae
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872278"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985001"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Otwórz wiele rozwiązań lub wystąpień Visual Studio dla komputerów Mac
 
@@ -45,7 +45,7 @@ Aby otworzyć drugie rozwiązanie obok pierwszego rozwiązania, wykonaj następu
 
 Alternatywnie, jeśli ostatnio otwarto rozwiązanie, można wykonać następujące czynności:
 
-1. Przejdź do **pliku** > **najnowsze rozwiązania**.
+1. Przejdź do **pliku** > **ostatnich rozwiązań**.
 
     ![Zrzut ekranu przedstawiający menu ostatnich rozwiązań](media/open-multiple-solutions-image2.png)
 

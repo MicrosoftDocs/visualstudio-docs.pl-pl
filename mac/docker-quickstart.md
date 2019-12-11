@@ -1,15 +1,15 @@
 ---
 title: Wprowadzenie do platformy Docker
 description: Dowiedz się, jak dodać platformę Docker do projektów w Visual Studio dla komputerów Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/17/2019
-ms.openlocfilehash: b456b3d285c167f97570c39d9eb6fd1abfc27e45
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2c6bdd7d0b2c939ed9db9be962e89d9ee423e1d4
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872181"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984117"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Wprowadzenie do platformy Docker w Visual Studio dla komputerów Mac
 
@@ -27,12 +27,12 @@ W przypadku instalacji platformy Docker Przejrzyj informacje i postępuj zgodnie
 ## <a name="creating-an-aspnet-core-web-application-and-adding-docker-support"></a>Tworzenie aplikacji sieci Web ASP.NET Core i Dodawanie obsługi platformy Docker
 
 1. Utwórz nowe rozwiązanie, przechodząc do **pliku > nowe rozwiązanie**.
-1. W obszarze **aplikacja .NET Core >** wybierz szablon **aplikacja sieci Web** : ![Tworzenie nowej aplikacji ASP.NET](media/docker-quickstart-1.png)
-1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 2,2: ![Ustaw platformę docelową](media/docker-quickstart-2.png)
-1. Wprowadź szczegóły projektu, takie jak nazwa ( _ w tym przykładzie). Utworzony projekt zawiera wszystkie podstawowe informacje niezbędne do kompilowania i uruchamiania witryny sieci Web ASP.NET Core.
-1. W okienko rozwiązania kliknij prawym przyciskiem myszy projekt DockerDemo i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker**: ![Dodaj obsługę platformy Docker](media/docker-quickstart-3.png)
+1. W obszarze **aplikacja .NET Core >** wybierz szablon **aplikacja sieci Web** : ![utwórz nową aplikację ASP.NET](media/docker-quickstart-1.png)
+1. Wybierz platformę docelową. W tym przykładzie będziemy używać platformy .NET Core 2,2: ![ustawić platformę docelową](media/docker-quickstart-2.png)
+1. Wprowadź szczegóły projektu, takie jak nazwa (_DockerDemo_ w tym przykładzie). Utworzony projekt zawiera wszystkie podstawowe informacje niezbędne do kompilowania i uruchamiania witryny sieci Web ASP.NET Core.
+1. W okienko rozwiązania kliknij prawym przyciskiem myszy projekt DockerDemo i wybierz polecenie **dodaj > Dodaj obsługę platformy Docker**: ![dodać obsługę platformy docker](media/docker-quickstart-3.png)
 
-Visual Studio dla komputerów Mac automatycznie doda nowy projekt do rozwiązania o nazwie Docker **-Zredaguj** i Dodaj **pliku dockerfile** do istniejącego projektu.
+Visual Studio dla komputerów Mac automatycznie doda nowy projekt do rozwiązania o nazwie **Docker-Zredaguj** i Dodaj **pliku dockerfile** do istniejącego projektu.
 
 ![Wygenerowane pliki obsługi platformy Docker](media/docker-quickstart-4.png)
 
@@ -65,14 +65,14 @@ ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 Poprzedni *pliku dockerfile* opiera się na obrazie [Microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) i zawiera instrukcje dotyczące modyfikowania obrazu podstawowego przez skompilowanie projektu i dodanie go do kontenera.
 
 > [!NOTE]
-> Domyślny pliku dockerfile utworzony przez Visual Studio dla komputerów Mac uwidacznia port 80 dla ruchu HTTP. Aby włączyć ruch https, Dodaj `Expose 443` do pliku dockerfile.
+> Domyślny pliku dockerfile utworzony przez Visual Studio dla komputerów Mac uwidacznia port 80 dla ruchu HTTP. Aby włączyć ruch HTTPS, Dodaj `Expose 443` do pliku dockerfile.
 
-## <a name="debugging"></a>Debugowanie
+## <a name="debugging"></a>debugowanie
 
-Wybierz projekt jako projekt startowy i Rozpocznij debugowanie (**Uruchom > Rozpocznij debugowanie**). `docker-compose` Spowoduje to skompilowanie, wdrożenie i uruchomienie projektu ASP.NET w kontenerze.
+Wybierz projekt `docker-compose` jako projekt startowy i Rozpocznij debugowanie (**uruchom > Rozpocznij debugowanie**). Spowoduje to skompilowanie, wdrożenie i uruchomienie projektu ASP.NET w kontenerze.
 
 > [!TIP]
-> Podczas pierwszego uruchomienia po zainstalowaniu programu Docker Desktop podczas próby debugowania może zostać wyświetlony następujący błąd:`Cannot start service dockerdemo: Mounts denied`
+> Podczas pierwszego uruchomienia po zainstalowaniu programu Docker Desktop podczas próby debugowania może zostać wyświetlony następujący błąd: `Cannot start service dockerdemo: Mounts denied`
 >
 > Dodaj `/usr/local/share/dotnet/sdk/NuGetFallbackFolder` do karty Udostępnianie plików w programie Docker Desktop:
 >
@@ -84,7 +84,7 @@ Po zakończeniu kompilacji aplikacja zostanie uruchomiona w przeglądarce Safari
 
 Należy zauważyć, że kontener nasłuchuje na porcie, `http://localhost:32768` na przykład, a ten port może się różnić.
 
-Aby wyświetlić listę uruchomionych kontenerów, użyj `docker ps` polecenia w terminalu.
+Aby wyświetlić listę uruchomionych kontenerów, użyj polecenia `docker ps` w terminalu.
 
 Zwróć uwagę na przekaźnik portów na poniższym zrzucie ekranu (w obszarze **porty**). Oznacza to, że kontener nasłuchuje na porcie znajdującym się w przeglądarce Safari powyżej i przekazuje żądania do wewnętrznego serwera WebServer przy użyciu portu 80 (zgodnie z definicją w pliku dockerfile). Z perspektywy aplikacji nasłuchuje na porcie 80:
 

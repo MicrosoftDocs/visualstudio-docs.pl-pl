@@ -1,18 +1,18 @@
 ---
 title: Zainstaluj program Visual Studio 2019 dla komputerów Mac
 description: Instrukcje dotyczące sposobu instalowania programu Visual Studio 2019 for Mac oraz dodatkowych składników wymaganych do tworzenia aplikacji na wiele platform.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dd6afc69c2a7e513358c69eafeacb49fcb06dd52
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716780"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983982"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Zainstaluj program Visual Studio 2019 dla komputerów Mac
 
@@ -53,14 +53,14 @@ Do kompilowania aplikacji platformy Xamarin dla systemu iOS lub macOS potrzebne 
    Jeśli nie chcesz instalować wszystkich platform, Skorzystaj z poniższego przewodnika, aby ułatwić podjęcie decyzji o tym, które platformy instalować:
 
 
-|Typ aplikacji  |Obiektów  |Wybór  |Uwagi  |
+|Typ aplikacji  |Docelowy  |Wybór  |Uwagi  |
 |---------|---------|---------|---------|
 |**Aplikacje korzystające z platformy Xamarin**| Xamarin.Forms|Wybierz platformy **Android** i **iOS** |Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/) |
-||tylko system iOS|Wybierz platformę **iOS**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
-||Tylko system Android|Wybierz platformę **Android**|Pamiętaj, że należy również wybrać odpowiednie zależności|
+||Tylko system iOS|Wybierz platformę **iOS**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
+||Tylko Android|Wybierz platformę **Android**|Pamiętaj, że należy również wybrać odpowiednie zależności|
 ||Tylko Mac|Wybierz platformę **macOS (kakao)**|Konieczne będzie zainstalowanie [ **Xcode**](https://developer.apple.com/xcode/)|
 |**Aplikacje platformy .NET Core**|         |Wybierz platformę **.NET Core** .|         |
-|**ASP.NET Core aplikacji sieci Web**|         |Wybierz platformę **.NET Core** .|         |
+|**Aplikacje internetowe ASP.NET Core**|         |Wybierz platformę **.NET Core** .|         |
 |**Azure Functions**|         |Wybierz platformę **.NET Core** .|         |
 |**Programowanie gier dla wielu platform w środowisku Unity**|         |Nie trzeba instalować dodatkowych platform poza Visual Studio dla komputerów Mac.| Aby uzyskać więcej informacji na temat instalowania rozszerzenia aparatu Unity, zapoznaj się z [przewodnikiem Instalatora aparatu Unity](/visualstudio/mac/setup-vsmac-tools-unity) .|
 

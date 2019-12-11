@@ -1,59 +1,59 @@
 ---
 title: Praca z podwersją
-description: Za pomocą rozwiązania Subversion w programie Visual Studio dla komputerów Mac.
-author: conceptdev
-ms.author: crdun
+description: Używanie Subversion w Visual Studio dla komputerów Mac.
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5a9dd8120dd312bfc3e1c8905a725a58cca0e92
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985572"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983525"
 ---
 # <a name="working-with-subversion"></a>Praca z podwersją
 
-Subversion to scentralizowany system kontroli wersji umożliwiający zapoznaj się z wzorca pojedynczej kopii danych, które scentralizowane. W przeciwieństwie do usługi Git wyewidencjonowywanie repozytorium Subversion nie sklonować całego repozytorium, jedynie tworzy migawkę w danym momencie.
+Subversion to scentralizowany system kontroli wersji, który umożliwia wyewidencjonowanie pojedynczej kopii głównej scentralizowanych danych. W przeciwieństwie do usługi git, wyewidencjonowanie repozytorium podwersji nie powoduje klonowania całego repozytorium, w tym momencie wykonuje jedynie migawkę.
 
-Subversion używa modelu kopiowanie i modyfikowanie scalania, aby użytkownicy mogą jednocześnie pracować na tym samym repozytorium. Oznacza to, że każdy użytkownik tworzy kopię scentralizowane dane, które działają na niezależne lokalnych lub działa. Zmiany użytkowników kopie robocze są scalane w sposób chronologicznym.
+Funkcja Subversion korzysta z modelu Copy-Modify-Merge, aby umożliwić użytkownikom jednoczesne działanie tego samego repozytorium. Oznacza to, że każdy użytkownik tworzy lokalną lub działającą kopię scentralizowanych danych, które działają niezależnie od siebie. Zmiany w kopiach roboczych użytkowników są scalane w sposób chronologiczny.
 
-Na przykład Wyobraź sobie, że użytkownik A i B użytkownika zapoznaj się z kopiowania z repozytorium zdalnym i poszczególnych plików Modyfikuj. Użytkownik A zakończy się zmian i zatwierdzeń je zdalnie. Zanim użytkownik B zatwierdzeń swoją pracę, należy zaktualizować ich kopia robocza, ze zmianami z lokalizacji zdalnej, scalanie zmian przez użytkownika A.
+Załóżmy na przykład, że użytkownik A i użytkownik B wyewidencjonuje kopię z repozytorium zdalnego i każdy z nich modyfikuje pliki. Użytkownik A kończy modyfikacje i zatwierdza je zdalnie. Zanim użytkownik B zatwierdzi swoją pracę, musi zaktualizować swoją kopię roboczą o zmiany ze zdalnego, scalając w zmianach użytkownika A.
 
-Poniższe sekcje Poznaj, jak Subversion może służyć do kontroli wersji w programie Visual Studio dla komputerów Mac.
+W poniższych sekcjach opisano, jak Podwersja może być używana do kontroli wersji w Visual Studio dla komputerów Mac.
 
-Na poniższym obrazie przedstawiono opcje dostarczane przez program Visual Studio dla komputerów Mac przez element menu kontroli wersji:
+Na poniższej ilustracji przedstawiono opcje dostępne Visual Studio dla komputerów Mac przez element menu kontroli wersji:
 
 ![Elementy menu kontroli wersji](media/version-control-svnVersionControlMenu.png)
 
-## <a name="checkout"></a>Wyewidencjonowanie...
+## <a name="checkout"></a>Wyewidencjonowywanie...
 
-Przed rozpoczęciem pracy zdalne repozytorium systemu Subversion, zapoznaj się z repozytorium tak, aby utworzyć funkcjonalną kopię tego katalogu na komputerze lokalnym.
+Przed rozpoczęciem korzystania ze zdalnego repozytorium podwersji Sprawdź repozytorium, aby utworzyć działającą kopię tego katalogu na komputerze lokalnym.
 
-Aby dowiedzieć się o używaniu **wyewidencjonowania** funkcji w programie Visual Studio dla komputerów Mac, należy wykonać czynności opisane w [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md) sekcji.
+Aby dowiedzieć się więcej o korzystaniu z funkcji **wyewidencjonowywania** w Visual Studio dla komputerów Mac, wykonaj kroki opisane w sekcji [Konfigurowanie repozytorium Subversion](set-up-subversion-repository.md) .
 
-## <a name="update-solution"></a>Aktualizowanie rozwiązania
+## <a name="update-solution"></a>Aktualizuj rozwiązanie
 
-Korzystając z repozytorium zdalnego, to należy pamiętać, że inni użytkownicy modyfikuje plików, tworzenie kopii roboczej przestarzałe. W oczekiwaniu konflikty zawsze zaleca się ściągnąć wszystkie zmiany z repozytorium w rozwiązaniu, przed rozpoczęciem pracy i przed zatwierdzeniem. Aby ściągnąć zmiany, wybierz pozycję **kontroli wersji > rozwiązania Update** elementu menu.
+W przypadku korzystania z repozytorium zdalnego należy pamiętać, że inni użytkownicy mogą modyfikować pliki, powodując nieaktualną kopię roboczą. W przewidywaniu konfliktów zawsze zaleca się ściąganie wszelkich zmian z repozytorium do rozwiązania przed rozpoczęciem pracy i przed zatwierdzeniem. Aby wykonać zmiany ściągnięcia, wybierz element menu **> aktualizacji kontroli wersji** .
 
 ## <a name="review-solution-and-commit"></a>Przejrzyj rozwiązanie i zatwierdź
 
-O przegląd zmian dokonanych w plikach, użyj zmiany, polecenia Blame, dziennika i scalić karty na poszczególnych dokumentów, jak pokazano na poniższej ilustracji:
+Aby przejrzeć zmiany w plikach, użyj kart zmiany, polecenia Blame, log i Merge w każdym dokumencie, jak pokazano na poniższej ilustracji:
 
-![Wersja kontrolki karty](media/version-control-vcTabs.png)
+![Karty kontroli wersji](media/version-control-vcTabs.png)
 
-Przejrzyj wszystkie zmiany w projekcie, przechodząc **kontroli wersji > Przejrzyj rozwiązanie i zatwierdź** element menu:
+Przejrzyj wszystkie zmiany w projekcie, przeglądając elementy menu **Kontrola wersji > Przejrzyj rozwiązanie i zatwierdź** :
 
 ![Przejrzyj rozwiązanie](media/version-control-vcStatus.png)
 
-To umożliwia wyświetlanie wszystkich zmian w każdym pliku projektu z możliwością przywrócenia, utworzyć poprawki, lub czy zatwierdzić.
+Umożliwia to wyświetlanie wszystkich zmian w każdym pliku projektu z opcją przywracania, tworzenia poprawek lub zatwierdzania.
 
-Aby przekazać plik do repozytorium zdalnego, naciśnij zatwierdzenia..., wprowadź wiadomość dotyczącą zatwierdzenia i upewnij się, za pomocą przycisku zatwierdzenia:
+Aby zatwierdzić plik do repozytorium zdalnego, naciśnij pozycję Zatwierdź..., Wprowadź wiadomość dotyczącą zatwierdzenia i Potwierdź przy użyciu przycisku zatwierdzania:
 
 ![Zatwierdzanie pliku](media/version-control-svnCommit.png)
 
-Spowoduje to wysłanie zmiany do repozytorium, gdzie tworzą nowa poprawka wprowadzonych zmian.
+Spowoduje to wysłanie zmian do repozytorium, w którym zostanie utworzona nowa poprawka wszystkich modyfikacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Konfigurowanie repozytorium podwersji](set-up-subversion-repository.md)
+- [Konfigurowanie repozytorium Subversion](set-up-subversion-repository.md)

@@ -2,15 +2,15 @@
 title: Korzystanie z opcji ułatwień dostępu macOS
 description: Korzystanie z opcji i funkcji ułatwień dostępu macOS, takich jak wysoki kontrast, Nawigacja po klawiaturze i VoiceOver
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 82d6d34c78efb425dfdb832cae3efd6c2bbcc425
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342467"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985085"
 ---
 # <a name="accessibility-features-of-macos"></a>Funkcje ułatwień dostępu w programie macOS
 
@@ -20,7 +20,7 @@ macOS to dostępny system operacyjny z szeregiem funkcji, które ułatwiają uż
 
 W Visual Studio dla komputerów Mac obsługa technologii pomocniczych jest domyślnie wyłączona. Aby włączyć obsługę ułatwień dostępu:
 
-1. Przejdź do **programu Visual Studio (menu)**  > **Preferencje** > **inne**i wybierz pozycję **ułatwienia dostępu**.
+1. Przejdź do **programu Visual Studio (menu)** , > **Preferencje** > **inne**, a następnie wybierz pozycję **ułatwienia dostępu**.
 
 1. Zaznacz pole wyboru **Włącz ułatwienia dostępu** .
 

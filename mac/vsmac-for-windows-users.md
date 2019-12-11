@@ -1,16 +1,16 @@
 ---
 title: Visual Studio dla komputerów Mac dla użytkowników systemu Windows
 description: Wprowadzenie funkcji ułatwień dostępu w Visual Studio dla komputerów Mac i sposobach ich włączenia.
-author: alclark
-ms.author: alcl
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/25/2019
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: 3306cdec93b501ad2006bbee2ceca3bf42514fe9
-ms.sourcegitcommit: 7739f36507b4762eea83c692102bdc5188460f28
+ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71314487"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984261"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio dla komputerów Mac dla użytkowników systemu Windows
 
@@ -20,9 +20,9 @@ Migracja z jednego systemu operacyjnego do innego może być zniechęcające. Cz
 
 Jako Deweloperzy, wiele z nich zostanie pozyskanych przy użyciu klawiatury do zadań i nawigacji. Niektóre klucze na klawiaturze są wspólne między komputerami Mac i komputerów z systemem Windows. Można Forgiven na przykład, że akcje klawiatury, takie jak kopiowanie i wklejanie, używają tych samych kombinacji klawiszy. Nie zawsze jest to przypadek. Na szczęście można zmienić kluczowe powiązania w Visual Studio dla komputerów Mac, aby dokładnie dopasować je do programu Visual Studio w systemie Windows.
 
-Przy pierwszym uruchomieniu Visual Studio dla komputerów Mac zobaczysz okno wyboru skrótów klawiaturowych: ![Okno powiązań klucza](media/ide-tour-2019-keyboard-shortcut.png)
+Przy pierwszym uruchomieniu Visual Studio dla komputerów Mac zobaczysz okno wyboru skrótów klawiaturowych: ![okno powiązań klucza](media/ide-tour-2019-keyboard-shortcut.png)
 
-Jeśli chcesz później zmienić powiązania klawiszy, możesz znaleźć ustawienie w preferencjach: ![Preferencje kluczowych powiązań](media/customizing-the-ide-image10a.png)
+Jeśli chcesz później zmienić powiązania klawiszy, możesz je znaleźć w preferencjach: ![kluczowe powiązania](media/customizing-the-ide-image10a.png)
 
 Należy pamiętać, że macOS używa różnych skrótów do systemu Windows. Zmiana preferencji powiązania klucza umożliwi korzystanie ze znanych skrótów systemu Windows w Visual Studio dla komputerów Mac. Jednak w innych obszarach macOS trzeba znać skróty macOS.
 
@@ -30,7 +30,7 @@ Klucz modyfikatora macOS Command (⌘) może zazwyczaj zastąpić klucz kontroln
 
 |Zadanie                   |Skrót systemu Windows         |Skrót macOS      |
 |-----------------------|-------------------------|--------------------|
-|Kopiuj                   |`Ctrl + C`               |`⌘ + C`             |
+|Kopiowanie                   |`Ctrl + C`               |`⌘ + C`             |
 |Wklej                  |`Ctrl + V`               |`⌘ + V`             |
 |Wytnij                    |`Ctrl + X`               |`⌘ + X`             |
 |Cofnij                   |`Ctrl + Z`               |`⌘ + Z`             |

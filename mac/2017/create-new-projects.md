@@ -1,43 +1,43 @@
 ---
 title: Tworzenie nowych projektów i rozwiązań
-description: W tym artykule opisano sposób tworzenia projektów i rozwiązań w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+description: W tym artykule opisano sposób tworzenia projektów i rozwiązań w Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692423"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983646"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Tworzenie nowych projektów i rozwiązań
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Tworzenie nowych projektów i rozwiązań z szablonu
 
-Można tworzyć rozwiązania w dowolnym momencie za pomocą wstępnie zdefiniowany szablon. Aby utworzyć rozwiązanie w ten sposób, przejdź do **Plik > nowe rozwiązanie**, wybierz wymagane platform, a następnie wymagany szablon:
+Rozwiązania można tworzyć w dowolnym momencie przy użyciu wstępnie zdefiniowanego szablonu. Aby utworzyć rozwiązanie w ten sposób, przejdź do **pliku > nowe rozwiązanie**, wybierz wymagane platformy, a następnie wymagany szablon:
 
-![Tworzenie nowych rozwiązań](media/projects-and-solutions-image0.png)
+![Utwórz nowe rozwiązania](media/projects-and-solutions-image0.png)
 
-Spowoduje to utworzenie rozwiązania, które mogą zawierać jeden lub wiele projektów, w zależności od typu wybranego szablonu.
+Spowoduje to utworzenie rozwiązania, które może zawierać jeden lub wiele projektów, w zależności od wybranego typu szablonu.
 
-Eksplorator rozwiązań można nawigować przy użyciu akcji kontekstu lub na pasku menu.
+Eksplorator rozwiązań można nawigować przy użyciu akcji kontekstu lub paska menu.
 
-Aby dodać nowy projekt do rozwiązania, kliknij prawym przyciskiem myszy nazwę rozwiązania, a następnie wybierz **Dodaj > Dodaj nowy projekt** Aby wyświetlić okno dialogowe nowego projektu:
+Aby dodać nowy projekt do rozwiązania, kliknij prawym przyciskiem myszy nazwę rozwiązania i wybierz polecenie **dodaj > Dodaj nowy projekt** , aby wyświetlić okno dialogowe Nowy projekt:
 
 ![Dodaj nowy projekt](media/projects-and-solutions-image4.png)
 
-Tej metody dodawania nowych projektów, można skorzystać z możliwości udostępniania kodu środowiska Xamarin. Dodawanie projektu udostępnionego lub szablonu przenośnej biblioteki do istniejącego rozwiązania zapewnia sposób zawierają wszelka logika dla wielu platform, które mogą być używane w innych projektów w rozwiązaniu. Aby uzyskać więcej informacji na temat tworzenia aplikacji dla wielu platform, zobacz [odpowiednim przewodniku](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Ta metoda dodawania nowych projektów może służyć do skorzystania z możliwości udostępniania kodu platformy Xamarin. Dodanie projektu udostępnionego lub szablonu biblioteki przenośnej do istniejącego rozwiązania zapewnia sposób zawierania logiki międzyplatformowej, która może być używana we wszystkich innych projektach w rozwiązaniu. Aby uzyskać więcej informacji na temat tworzenia aplikacji dla wielu platform, zapoznaj się z [odpowiednim przewodnikiem](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
 
-## <a name="opening-recent-solutions"></a>Otwieranie najnowsze rozwiązania.
+## <a name="opening-recent-solutions"></a>Otwieranie ostatnich rozwiązań.
 
-Strona docelowa programu Visual Studio Wyświetla listę ostatnich projektów, które odbywała się wcześniej praca na:
+Na stronie spocznik programu Visual Studio jest wyświetlana lista ostatnich projektów, nad którymi pracujesz:
 
-![Ostatnie sekcji rozwiązania strony powitalnej](media/create-new-projects-recent.png)
+![Sekcja ostatnich rozwiązań na stronie powitalnej](media/create-new-projects-recent.png)
 
-Można filtrować tę listę w polu filtru lub usunąć poszczególne elementy z listy.
+Tę listę można filtrować przy użyciu pola filtr lub usunąć poszczególne elementy z listy.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie rozwiązań i projektów (Visual Studio Windows)](/visualstudio/ide/creating-solutions-and-projects)
+- [Tworzenie rozwiązań i projektów (Visual Studio w systemie Windows)](/visualstudio/ide/creating-solutions-and-projects)

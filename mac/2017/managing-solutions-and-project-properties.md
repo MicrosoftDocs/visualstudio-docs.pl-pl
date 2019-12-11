@@ -1,51 +1,51 @@
 ---
 title: Zarządzanie właściwościami projektów i rozwiązań
-description: W tym artykule opisano, jak Zarządzanie właściwościami projektów i rozwiązań w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+description: W tym artykule opisano sposób zarządzania właściwościami projektów i rozwiązań w Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997259"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985265"
 ---
 # <a name="managing-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 
 ## <a name="project-options"></a>Opcje projektu
 
-Opcje projektu są specyficzne dla każdego projektu i wpływają na sposób uruchamiania, wbudowane i zapisywane projektu. To zachowanie różni się od programu Visual Studio Preferencje systemu Mac (która ustawia opcje użytkownika) i opcje rozwiązań, (które ustawić opcje dla całego rozwiązania). Opcje projektu są przechowywane w pliku projektu (.csproj), tak, aby skompilować i uruchomić projekt poprawnie innym deweloperom. Posiadanie opcje określonego projektu umożliwia wielu deweloperów pracowało nad tym samym dokumencie bez uszczerbku dla formatu pliku.
+Opcje projektu są specyficzne dla każdego projektu i wpływają na sposób pisania, kompilowania i uruchamiania projektu. Jest to kontrast z preferencjami Visual Studio dla komputerów Mac (które ustawiają opcje specyficzne dla użytkownika) i opcji rozwiązań (które ustawiają opcje dla całego rozwiązania). Opcje projektu są przechowywane w pliku projektu (. csproj), tak aby inni deweloperzy mogli poprawnie kompilować i uruchamiać projekt. Posiadanie określonych opcji projektu pozwala wielu deweloperom na działanie tego samego dokumentu bez naruszania formatowania pliku.
 
-Aby otworzyć Opcje projektu w programie Visual Studio dla komputerów Mac, kliknij dwukrotnie nazwę projektu, lub kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz **opcje**:
+Aby otworzyć Opcje projektu w Visual Studio dla komputerów Mac, kliknij dwukrotnie nazwę projektu lub kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz **Opcje**:
 
-![Opcja menu kontekstowego](media/projects-and-solutions-image2.png)
+![Opcja w menu kontekstowym](media/projects-and-solutions-image2.png)
 
-Można edytować opcje obejmują funkcje umożliwiające tworzenie, uruchamianie i ustawić kod i wersja kontroli źródła.
+Opcje edytowalne obejmują opcje kompilowania, uruchamiania i ustawiania kodu źródłowego i kontroli wersji.
 
-Opcje projektu są zorganizowane w pięciu różnych kategoriach:
+Opcje projektu są zorganizowane w pięć różnych kategorii:
 
-* **Ogólne** -projekt informacje, takie jak nazwa, opis i domyślne Namespace są ustawione w tym miejscu wraz z lokalizacją projektu.
-* **Tworzenie** — dzięki temu deweloperzy mogą ustawić lub zmienić PCL profilów dla biblioteki klas przenośnych. Umożliwia ona również poleceń niestandardowych, konfiguracji, można ustawić opcje kompilatora. Można również tutaj ustawić dane wyjściowe ścieżka i nazwa zestawu.
-* **Uruchom** — dzięki temu można tworzyć niestandardowe konfiguracje wykonywania na poszczególnych projektów.
-* **Kod źródłowy** — to pozwala na kontrolowanie formatowania wiele różnych typów plików i konwencje nazewnictwa. Można również ustawić zasady nazewnictwa i style nagłówków domyślne w tym miejscu w całym dokumencie.
-* **Kontrola wersji** — dzięki temu można edytować styl komunikatu dotyczącego zatwierdzenia w ramach kontroli wersji z projektem.
+* **Ogólne** — informacje o projekcie, takie jak nazwa, opis i domyślna przestrzeń nazw, są ustawiane w tym miejscu wraz z lokalizacją projektu.
+* **Kompilacja** — umożliwia deweloperom Ustawianie lub zmienianie profilów PCL dla przenośnych bibliotek klas. Umożliwia również niestandardowe polecenia, konfiguracje, opcje kompilatora, które mają być ustawione. W tym miejscu można również ustawić ścieżkę wyjściową i nazwę zestawu.
+* **Uruchom** — umożliwia tworzenie niestandardowych konfiguracji uruchamiania dla poszczególnych projektów.
+* **Kod źródłowy** — umożliwia sterowanie formatowaniem wielu różnych typów plików i konwencji nazewnictwa. W tym miejscu możesz również ustawić zasady nazewnictwa i domyślne style nagłówków.
+* **Kontrola wersji** — umożliwia edytowanie stylu komunikatu zatwierdzenia w przypadku używania kontroli wersji z projektem.
 
-Każdy projekt może zawierać opcje określonego projektu, w zależności od platformy. Na przykład projektu Xamarin.Android, jak pokazano na poniższej ilustracji, zawiera opcje związane z programu Android kompilacji (takich jak opcje do konsolidatora) i aplikacji (na przykład uprawnienia):
+Każdy projekt może zawierać konkretne opcje projektu, w zależności od platformy. Na przykład projekt Xamarin. Android, podobny do przedstawionego na poniższej ilustracji, zawiera opcje dotyczące kompilacji systemu Android (takie jak Opcje konsolidatora) i aplikacji (na przykład uprawnienia):
 
-![Opcje projektu dla systemu android](media/projects-and-solutions-image5.png)
+![Opcje projektu dla systemu Android](media/projects-and-solutions-image5.png)
 
-Xamarin.iOS zawiera opcje związane z do podpisania pakietu — takie jak wymagany profil inicjowania obsługi administracyjnej do użycia:
+Platforma Xamarin. iOS zawiera opcje związane z podpisywaniem pakietu — na przykład wymaganym profilem aprowizacji:
 
-![iOS Project Options](media/projects-and-solutions-image6.png)
+![Opcje projektu systemu iOS](media/projects-and-solutions-image6.png)
 
 ## <a name="solution-options"></a>Opcje rozwiązania
 
-Opcje rozwiązania są podobne do opcji projektu, ale obejmują zakres całego rozwiązania. Zapewniają one sposób, aby ustawić informacje o autorze, ustawienia i formatowanie style i kontroli wersji kodu kompilacji i umożliwiają one sposób przypisania projektem startowym w rozwiązaniu.  W oknie dialogowym Opcje rozwiązania są dostępne z **Projekt > Opcje rozwiązania** elementu menu z **opcje** rozwiązania, w konsoli rozwiązania lub przez dwukrotne kliknięcie w menu kontekstowym Rozwiązanie w konsoli rozwiązania:
+Opcje rozwiązania są podobne do opcji projektu, ale obejmują zakres wszystkich rozwiązań. Umożliwiają one Ustawianie informacji o autorze, ustawień kompilacji, stylów formatowania kodu i kontroli wersji oraz umożliwiają przypisanie projektu startowego w rozwiązaniu.  Do okna dialogowego Opcje rozwiązania można uzyskać dostęp z elementu menu **Opcje rozwiązania > projektu** , z elementu menu kontekstowego **opcji** w rozwiązaniu w konsoli rozwiązania lub klikając dwukrotnie rozwiązanie w okienko rozwiązania:
 
 ![Opcje rozwiązania](media/projects-and-solutions-image7.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Zarządzanie właściwościami projektów i rozwiązań (Visual Studio Windows)](/visualstudio/ide/managing-project-and-solution-properties)
+* [Zarządzanie właściwościami projektów i rozwiązań (Visual Studio w systemie Windows)](/visualstudio/ide/managing-project-and-solution-properties)

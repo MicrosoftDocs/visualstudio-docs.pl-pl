@@ -1,25 +1,25 @@
 ---
 title: Zaznaczenie blokowe
-description: W tym artykule wyjaśniono, jak korzystać z funkcji wyboru bloku w programie Visual Studio dla komputerów Mac
-author: conceptdev
-ms.author: crdun
+description: W tym artykule wyjaśniono, jak używać funkcji zaznaczania blokowego w Visual Studio dla komputerów Mac
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: 18f0faecc6f18c4915f0c44a838dfae80a1be3fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8369950b4bf6ac834cc736cffa3bc2a402a9c0d5
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933107"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983227"
 ---
-# <a name="block-selection"></a>Zablokuj zaznaczenie
+# <a name="block-selection"></a>Blokuj zaznaczenie
 
-Program Visual Studio for Mac sprawia, że prosta wybrać, wycinanie, kopiowanie i wklejanie sekcji kodu. Prostokątne bloki kodu może być wyróżniony i wybrany za pomocą **Option + przeciągnięcie** polecenia w bloku kodu. Formatowanie w ramach tego zaznaczenia bloku są przechowywane przy wklejaniu bloku.
+Visual Studio dla komputerów Mac umożliwia bezpośrednie Zaznaczanie, wycinanie, kopiowanie i wklejanie sekcji kodu. Prostokątne bloki kodu mogą być podświetlane i wybierane przy użyciu **opcji + Przeciągnij** polecenie w bloku kodu. Formatowanie w obrębie zaznaczenia bloku jest zachowywane podczas wklejania bloku.
 
-Blokuj wybrane opcje można edytować w taki sposób, aby zmodyfikować tekst w wielu wierszach na raz. Zaznaczeniem blokowym zerowej szerokości może służyć do umieszczenia karetki przed liczbę wierszy jednocześnie, a także umożliwia wpisywanie tekstu identyczne w wielu wierszach:
+Zaznaczenia bloku można również edytować, aby modyfikować tekst w wielu wierszach jednocześnie. Zaznaczenie bloku o zerowej szerokości może służyć do umieszczania karetki przed wieloma wierszami jednocześnie i umożliwia wpisywanie identycznego tekstu w wielu wierszach:
 
-![Zaznaczenie blokowe i dodawanie tekstu](media/source-editor-image16.png)
+![Blokuj zaznaczenie i Dodawanie tekstu](media/source-editor-image16.png)
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Wybierz wiele karetki dla programu Visual Studio (na Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)
+- [Wybór wieloznaczny dla programu Visual Studio (w systemie Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

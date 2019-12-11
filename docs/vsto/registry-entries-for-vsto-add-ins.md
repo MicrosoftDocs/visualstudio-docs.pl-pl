@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74945073"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955052"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   Podczas wdrażania dodatków VSTO utworzonych przy użyciu programu Visual Studio należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru zawierają informacje umożliwiające aplikacji Microsoft Office odnajdywania i ładowania dodatku VSTO.
@@ -50,7 +50,7 @@ ms.locfileid: "74945073"
  Jeśli używasz technologii ClickOnce do wdrożenia dodatku VSTO, dodatek VSTO może być zarejestrowany tylko dla bieżącego użytkownika. Dzieje się tak, ponieważ ClickOnce obsługuje tylko tworzenie kluczy w obszarze **HKEY_CURRENT_USER**. Jeśli chcesz zarejestrować dodatek Narzędzia VSTO dla wszystkich użytkowników na komputerze, musisz użyć Instalator Windows do wdrożenia dodatku VSTO. Aby uzyskać więcej informacji na temat tych typów wdrożeń, zobacz [wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) i [wdrażanie rozwiązania pakietu office przy użyciu Instalator Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Wpisy rejestru
- Wymagane wpisy rejestru dodatku VSTO znajdują się w następujących kluczach rejestru, w których *katalog główny* jest **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE** w zależności od tego, czy instalacja jest dla użytkownika, czy dla komputera.
+ Wymagane wpisy rejestru dodatku VSTO znajdują się w następujących kluczach rejestru, w których *katalog główny* jest **HKEY_CURRENT_USER** lub **HKEY_LOCAL_MACHINE** w zależności od tego, czy instalacja jest dla bieżącego użytkownika, czy dla wszystkich użytkowników.
 
 |Aplikacja pakietu Office|Ścieżka konfiguracyjna|
 |------------------|------------------|
@@ -58,7 +58,9 @@ ms.locfileid: "74945073"
 |Wszystkie inne|*Główna*\Software\Microsoft\Office\\*Nazwa aplikacji pakietu Office*\Addins\\*Identyfikator dodatku*|
 
 > [!NOTE]
-> Jeśli Instalator ma należeć do 64-bitowego systemu Windows, powinien zawierać dwa wpisy rejestru — jeden w *katalogu głównym*\Software\Microsoft i jeden w obszarze *głównym*\Software\\**Wow6432Node**\Microsoft Hive.  Wynika to z faktu, że użytkownicy mogą korzystać z wersji pakietu Office 32-bitowej lub 64-bitowej na komputerze.
+> Jeśli Instalator jest przeznaczony dla wszystkich użytkowników w systemie 64-bitowym, zaleca się, aby zawierał dwa wpisy rejestru, jeden pod HKEY_LOCAL_MACHINE \Software\Microsoft i jeden w HKEY_LOCAL_MACHINE \Software\\**Wow6432Node**\Microsoft. Wynika to z faktu, że użytkownicy mogą korzystać z wersji pakietu Office 32-bitowej lub 64-bitowej na komputerze.
+>
+>Jeśli Instalator jest przeznaczony dla bieżącego użytkownika, nie trzeba go instalować do WOW6432Node, ponieważ ścieżka \Software HKEY_CURRENT_USER jest udostępniona.
 >
 >Aby uzyskać więcej informacji [, zobacz 32-bitowe i 64-bitowe dane aplikacji w rejestrze](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 

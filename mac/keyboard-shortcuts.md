@@ -2,21 +2,21 @@
 title: Domyślne skróty klawiaturowe
 description: W tym artykule wymieniono domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 ms.date: 03/14/2019
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273318"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984563"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Domyślne skróty klawiaturowe w Visual Studio dla komputerów Mac
 
-Aby uzyskać informacje o ułatwieniach dostępu [do klawiatury, zobacz How to: Użyj nawigacji](~/accessibility-keyboard.md)klawiaturowej.
+Aby uzyskać informacje na temat ułatwień dostępu do klawiatury, zobacz [How to: use a Keyboard nawigacji](~/accessibility-keyboard.md).
 
-Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klucza **Visual Studio dla komputerów Mac** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia za pomocą elementu menu**preferencji** **Visual Studio dla komputerów Mac** > i wybierając opcję**powiązania klucza** **środowiska** > w oknie **preferencji** .
+Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów Mac przy użyciu odpowiedniego skrótu klawiaturowego. Ten dokument zawiera listę domyślnych skrótów dla schematu powiązania klucza **Visual Studio dla komputerów Mac** . Aby uzyskać więcej informacji na temat zmiany schematu powiązania kluczy, zobacz [Dostosowywanie środowiska IDE](~/customizing-the-ide.md#key-bindings). Możesz również dostosować skróty dla polecenia przy użyciu elementu menu **Visual Studio dla komputerów Mac** > **preferencji** i wybierając pozycję **środowisko** > **kluczowe powiązania** w oknie **preferencji** .
 
 > [!TIP]
 > Skróty klawiaturowe wyświetlane w tym dokumencie i preferencje dotyczące powiązań klawiszy w Visual Studio dla komputerów Mac są prezentowane przy użyciu symboli często używanych w macOS. Jeśli nie masz pewności co do symbolu, zapoznaj się z [tabelą macOS Key Symbols loopkup](#macos-key-symbols-lookup).
@@ -48,7 +48,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Przełącz punkt przerwania|**⌘\\** , **F9**|
 |Wyświetl punkty przerwania|**⌥⌘B**|
 
-## <a name="designer"></a>Projektant
+## <a name="designer"></a>Designer
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
@@ -59,9 +59,9 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Tryb edycji ograniczenia|**⌘ E**|
-|Kopiuj|**⌘C**|
+|Kopiowanie|**⌘C**|
 |Wytnij|**⌘ X**|
-|Usuwanie|**⌘⌫**|
+|Usuń|**⌘⌫**|
 |Formatuj dokument|**⌃ I**|
 |Zwiększ wcięcie zaznaczenia|**⌘]**|
 |Wklej|**⌘V**|
@@ -83,7 +83,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Wyczyść F# interaktywny|**⌃ ⌥ C**|
-|Interaktywny F#|**⌃⌥F**|
+|{1&gt;Interaktywny F#&lt;1}|**⌃⌥F**|
 |Uruchom F# ponownie interaktywny|**⌃⌥R**|
 |Wyślij wiersz do F# interaktywnego|**⌃⌥L**|
 |Wyślij odwołania do F# interaktywnego|**⌃ ⌥ P**|
@@ -99,10 +99,10 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Nowy plik|**⌘ N**|
 |Nowe rozwiązanie|**⇧ ⌘ N**|
 |Otwarcie|**⌘ O**|
-|Drukuj|**⌘ P**|
-|Spowoduje|**⌘ Q**|
-|Stan|**⌘ U**|
-|Zapisanie|**⌘S**|
+|Drukowanie|**⌘ P**|
+|Zakończ|**⌘ Q**|
+|Przywróć|**⌘ U**|
+|Zapisz|**⌘S**|
 |Zapisz wszystko|**⇧⌘S**|
 
 ## <a name="help"></a>Pomoc
@@ -117,17 +117,17 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Zaimplementuj komunikaty aparatu Unity|**⇧ ⌘ M**|
-|skontrol|**⌥ ⌘ I**|
+|Sprawdź|**⌥ ⌘ I**|
 
-## <a name="project"></a>Projekt
+## <a name="project"></a>{1&gt;Projekt&lt;1}
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
 |Dodaj pliki|**⌥ ⌘ A**|
-|Kompilacja|**⌘ K**, **⇧ F6**|
+|{1&gt;Kompilacja&lt;1}|**⌘ K**, **⇧ F6**|
 |Kompiluj wszystko|**⌘ B**, **F6**|
-|Czyst|**⇧ ⌘ K**|
-|Odtworzyć|**⌃ ⌘ K**|
+|Wyczyść|**⇧ ⌘ K**|
+|Ponowne kompilowanie|**⌃ ⌘ K**|
 |Kompiluj ponownie wszystko|**⌃⌘B**|
 |Rozpocznij debugowanie|**⌘ ⏎**, **F5**|
 |Uruchom bez debugowania|**⌥ ⌘ ⏎**, **⌃ F5**|
@@ -156,9 +156,9 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Przejdź do typu|**⇧⌘T**|
 |Przejdź do|**⌘.**|
 |Zastąp w plikach|**⌥⇧⌘F**|
-|Replace|**⌥ ⌘ F**|
+|Zastąp|**⌥ ⌘ F**|
 
-## <a name="text-editor"></a>Edytor tekstu
+## <a name="text-editor"></a>{1&gt;Edytor tekstu&lt;1}
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
@@ -192,7 +192,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Przejdź do początku wiersza|**⌘ ←**, **⌃**|
 |Przejdź na koniec dokumentu|**⌘↓**|
 |Przejdź do końca wiersza|**⌘ →**, **⌃ E**|
-|Przejdź do pasującego nawiasu klamrowego|**⇧⌘\\**|
+|Przejdź do pasującego nawiasu klamrowego|**⇧ ⌘\\**|
 |Przejdź do następnego wiersza|**⌃ N**|
 |Przejdź do następnego wyrazu|**⌥ →**|
 |Przejdź do poprzedniego wiersza|**⌃ P**|
@@ -207,9 +207,9 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Pokaż szybkie informacje|**⌘F1**|
 |Pokaż zakresy|**⌥ ⇧ ⌘ P**|
 |TRANSPONUJ znaki|**⌃T**|
-|Zawijaj &lt;przy użyciu DIV&gt;|**⌥ ⇧ W**|
+|Zawijaj przy użyciu &lt;DIV&gt;|**⌥ ⇧ W**|
 
-## <a name="view"></a>Widok
+## <a name="view"></a>Zobacz .
 
 |Polecenia|Skróty klawiaturowe|
 |-|-|
@@ -243,7 +243,7 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Aktywuj 9|**⌘9**|
 |Ukryj inne|**⌥ ⌘ H**|
 |Ukryj program Visual Studio|**⌘ H**|
-|Ogranicza|**⌘ M**|
+|Minimalizuj|**⌘ M**|
 |Następny dokument|**⌘}** , **⌘ F6**|
 |Poprzedni dokument|**⌘ {** , **⇧ ⌘ F6**|
 |Przełącz do następnego dokumentu|**⌃⇥**|
@@ -256,14 +256,14 @@ Możesz uzyskać dostęp do różnych poleceń w Visual Studio dla komputerów M
 |Symbol|Key|
 |-|-|
 |⌘|**Polecenie** (**cmd**)|
-|⌥|**Opcja** (**Alt**)|
+|⌥|**Option** (**Alt**)|
 |⇧|**Nocn**|
 |⌃|**Kontrolka** (**Ctrl**)
-|⇞|**Strona w górę** (**PG up**)|
+|⇞|**Strona w górę** (**PG**)|
 |⇟|**Strona w dół** (**PG DN**)|
 |⌫|**Usuń** (**Backspace**)|
 |⌦|**Usuwanie do przodu**|
-|❌|**Return**|
+|‎|**Return**|
 |←→↑↓|**Klawisze strzałek**|
 |↖|**Strona główna**|
 |↘|**End**|
