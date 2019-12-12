@@ -1,14 +1,14 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Przykłady Visual Studio dla komputerów Mac
+title: Visual Studio dla komputerów Mac — przykładowe aplikacje
 metadata:
-  description: 'Przykładowe aplikacje, które współpracują z Visual Studio dla komputerów Mac.'
-  author: asb3993
-  ms.author: amburns
+  description: Przykładowe aplikacje działające w programie Visual Studio dla komputerów Mac.
+  author: heiligerdankgesang
+  ms.author: dominicn
   ms.date: 07/31/2019
   ms.topic: sample
 abstract:
-  description: Przykładowe aplikacje i pokazy kodu platformy Xamarin ułatwiające rozpoczęcie kompilowania projektów przy użyciu Visual Studio dla komputerów Mac.
+  description: 'Przykładowe aplikacje i próbki kodu w środowisku Xamarin, dzięki którym dowiesz się, jak rozpocząć tworzenie projektów w programie Visual Studio dla komputerów Mac.'
 sections:
   - title: Xamarin.Forms
     items:
@@ -113,20 +113,20 @@ sections:
         className: cardsW
         items:
           - href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
-            html: Pełny zestaw przykładowych aplikacji i pokazów kodu platformy Xamarin.
+            html: Kompletny zestaw przykładowych aplikacji i próbek kodu w środowisku Xamarin.
             image:
               src: ../media/samples/sample-download.svg
               href: 'https://docs.microsoft.com/samples/browse/?products=xamarin'
             title: Wszystkie przykłady środowiska Xamarin
           - href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
-            html: Kompletny zestaw ASP.NET Core przykładowych aplikacji i pokazów kodu.
+            html: Kompletny zestaw przykładowych aplikacji i próbek kodu w środowisku ASP.NET Core.
             image:
               src: ../media/samples/sample-download.svg
               href: 'https://docs.microsoft.com/samples/browse/?products=aspnet-core'
-            title: Wszystkie przykłady ASP.NET Core
+            title: Wszystkie przykłady platformy ASP.NET Core
           - href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
-            html: 'Kompletny zestaw przykładowych aplikacji i pokazów kodu platformy .NET Core. Należy zauważyć, że niektóre z tych przykładów mają wymagania specyficzne dla systemu Windows i dlatego nie zostaną uruchomione na Visual Studio dla komputerów Mac'
+            html: Kompletny zestaw przykładowych aplikacji i próbek kodu w środowisku .NET Core. Niektóre z tych przykładów wymagają konkretnych funkcji systemu Windows i dlatego nie można ich uruchomić w programie Visual Studio dla komputerów Mac
             image:
               src: ../media/samples/sample-download.svg
               href: 'https://docs.microsoft.com/samples/browse/?products=dotnet-core'
-            title: Wszystkie przykłady dla platformy .NET Core
+            title: Wszystkie przykłady platformy .NET Core
