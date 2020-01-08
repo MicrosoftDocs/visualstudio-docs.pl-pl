@@ -25,6 +25,7 @@
 ## [Tworzenie nowych projektów](create-new-projects.md)
 ## [Dodawanie i usuwanie elementów projektu](add-and-remove-project-items.md)
 ## [Zarządzanie rozwiązaniami i właściwościami projektu](managing-solutions-and-project-properties.md)
+## [Wielowersyjność kodu](project-multitargeting.md)
 ## Zarządzanie odwołaniami w projekcie
 ### [Omówienie](managing-references-in-a-project.md)
 ### [Przewodnik: Dołączanie pakietu NuGet do projektu](nuget-walkthrough.md)
@@ -35,6 +36,8 @@
 ## [Funkcje edytora](source-editor.md)
 ## [Refaktoryzacja](refactoring.md)
 ## [Funkcja IntelliSense](intellisense.md)
+## [Wyświetlanie importowanych elementów](show-imports.md)
+## [Edytowanie przy użyciu wielokaretki](multi-caret-editing.md)
 ## [Komentarze](comments.md)
 ## [Zachowanie edytora](editor-behavior.md)
 ## [Komentarze do zadań](task-comments.md)
@@ -47,6 +50,7 @@
 # Debugowanie
 ## [Omówienie](debugging.md)
 ## [Wizualizacje danych](data-visualizations.md)
+## [Debugowanie pakietów NuGet za pomocą linku do źródła](source-link.md)
 
 # Kompilowanie i tworzenie
 ## [Omówienie](compiling-and-building.md)

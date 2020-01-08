@@ -3,7 +3,7 @@ title: Dotfuscator Community
 ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, społeczność Dotfuscator, z przetworami, rozwiązania do zastępujące, ochrona przed zami, ochrona, Edycja, wersja Community, mieszanie, .NET, bezpłatnie, Visual Studio 2019, Visual Studio 2017, Visual Studio
+keywords: Dotfuscator, Dotfuscator CE, Dotfuscator Community, PreEmptive, PreEmptive Solutions, PreEmptive Protection, ochrona, community edition, zaciemnianie, .NET, bezpłatne, Visual Studio 2019, Visual Studio 2017, Visual Studio
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -12,87 +12,87 @@ helpviewer_keywords:
 - Dotfuscator
 - obfuscation
 - protection
-description: Dowiedz się, jak chronić swoje aplikacje .NET za pomocą bezpłatnej kopii społeczności Dotfuscator zawartej w programie Visual Studio.
+description: Dowiedz się, jak chronić aplikacje platformy .NET za pomocą bezpłatnej kopii programu Dotfuscator Community zawartej w programie Visual Studio.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 18e2ee678e5cf71693d12d4ddeb6af51f55a870b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: 7db6a1d5e9b83e63c178b6881ed38fb655248f25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652425"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596830"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
-***Ochrona przed zmianami — Dotfuscator*** zapewnia kompleksową ochronę aplikacji platformy .NET, która jest łatwa w obsłużyniu bezpiecznego cyklu tworzenia oprogramowania.
-Umożliwia ona zabezpieczanie, ochronę i oczyszczanie aplikacji klasycznych, mobilnych, serwerowych i osadzonych w celu zapewnienia bezpieczeństwa tajemnic handlowych i innej własności intelektualnej, zmniejszenie piractwa i fałszowanie oraz ochronę przed manipulacjami i nieautoryzowanymi debugowaniem.
-Dotfuscator działa na skompilowanych zestawach bez konieczności dodatkowego programowania, a nawet uzyskiwania dostępu do kodu źródłowego.
+Program ***PreEmptive Protection — Dotfuscator*** zapewnia kompleksową ochronę aplikacji platformy .NET, którą można łatwo dopasować do cyklu życia tworzenia bezpiecznego oprogramowania.
+Umożliwia on wzmacnianie zabezpieczeń, ochronę oraz oczyszczanie aplikacji klasycznych, mobilnych, serwerowych i osadzonych, co pozwala chronić tajemnice handlowe i inną własność intelektualną, ograniczać piractwo i fałszowanie oraz zapewniać ochronę przed manipulacjami i nieautoryzowanym debugowaniem.
+Program Dotfuscator działa ze skompilowanymi zestawami bez konieczności dodatkowego programowania, a nawet uzyskiwania dostępu do kodu źródłowego.
 
-![Ochrona przed przewagęm — Dotfuscator](media/header.svg)
+![PreEmptive Protection — Dotfuscator](media/header.svg)
 
-## <a name="why-protection-matters"></a>Dlaczego ochrona
+## <a name="why-protection-matters"></a>Dlaczego ochrona jest ważna
 
-Ważne jest, aby **chronić własność intelektualną** (IP).
-Kod aplikacji zawiera szczegółowe informacje o projekcie i implementacji, które mogą być uznawane za adres IP.
-Jednak aplikacje skompilowane na .NET Framework [zawierają znaczące metadane i kod pośredni wysokiego poziomu][assemblies], dzięki czemu można je łatwo odtworzyć, a tylko przy użyciu jednego z wielu bezpłatnych, zautomatyzowanych narzędzi.
-Zakłócając i zatrzymując odwracanie, można zapobiec nieautoryzowanemu ujawnianiu adresów IP, a także udowodnić, że Twój kod zawiera tajemnice handlowe.
-Dotfuscator może [zasłaniać][obfuscation] zestawy .NET, aby utrudnić odtwarzanie na odwrót, zachowując oryginalne zachowanie aplikacji.
+**Ochrona własności intelektualnej** jest ważną kwestią.
+Kod aplikacji zawiera szczegółowe informacje o projekcie i implementacji, które można uznać za własność intelektualną.
+Jednak aplikacje opracowywane na platformie .NET Framework [zawierają istotne metadane i kod pośredni wysokiego poziomu][assemblies], co pozwala łatwo je odtwarzać — wystarczy użyć jednego z wielu bezpłatnych, zautomatyzowanych narzędzi.
+Zakłócając i blokując odtwarzanie, można zapobiec nieautoryzowanemu ujawnianiu własności intelektualnej, a także wskazać, że kod zawiera tajemnice handlowe.
+Program Dotfuscator może [zaciemniać][obfuscation] zestawy platformy .NET, aby utrudnić odtwarzanie, zachowując przy tym oryginalne działanie aplikacji.
 
-Ważne jest również, aby **chronić integralność aplikacji**.
-Niemniej poza odtwarzaniem, nieszkodliwe osoby mogą próbować zapirackie działanie aplikacji, zmienić zachowanie aplikacji w czasie wykonywania lub manipulować danymi.
-Dotfuscator może wstrzyknąć aplikację, umożliwiając [wykrywanie i reagowanie na nieautoryzowane użycie][checks], w tym manipulowanie, debugowanie innych firm i urządzenia z odblokowanym dostępem.
+Ważna jest też **ochrona integralności aplikacji**.
+Oprócz odtwarzania, osoby atakujące mogą próbować tworzyć pirackie wersje aplikacji, zmieniać jej zachowanie w czasie wykonywania lub manipulować danymi.
+Program Dotfuscator może dodać do aplikacji możliwość [wykrywania nieautoryzowanych zastosowań i reagowania na nie][checks], co obejmuje manipulowanie, debugowanie przez osoby trzecie oraz odblokowywanie dostępu do urządzeń.
 
-Aby uzyskać więcej informacji na temat sposobu, w jaki Dotfuscator mieści się w całym cyklu tworzenia oprogramowania, zobacz [stronę ochrony aplikacji SDL][sdl-protection]z rozwiązaniami
+Aby uzyskać więcej informacji o tym, jakie jest miejsce programu Dotfuscator w cyklu tworzenia bezpiecznego oprogramowania, zobacz [stronę firmy PreEmptive Solutions dotyczącą ochrony aplikacji w cyklu tworzenia oprogramowania][sdl-protection].
 
-## <a name="about-dotfuscator-community"></a>Społeczność Dotfuscator — informacje
+## <a name="about-dotfuscator-community"></a>Informacje o programie Dotfuscator Community
 
-Twoja kopia Microsoft Visual Studio obejmuje kopię ***Dotfuscator Community Protection***, bezpłatnie do użytku osobistego.
-(Ta bezpłatna wersja była wcześniej znana jako Dotfuscator Community Edition lub Dotfuscator CE). Aby uzyskać instrukcje dotyczące sposobu instalowania wersji Dotfuscator Community dołączonej do programu Visual Studio, zobacz [stronę instalacji][install].
+Twoja kopia programu Microsoft Visual Studio zawiera kopię ***programu PreEmptive Protection — Dotfuscator Community*** do bezpłatnego użytku osobistego.
+(Ta bezpłatna wersja była wcześniej nazywana Dotfuscator Community Edition lub Dotfuscator CE). Aby uzyskać instrukcje dotyczące sposobu instalowania programu Dotfuscator Community dołączonego do programu Visual Studio, zobacz [stronę instalacji][install].
 
-Społeczność Dotfuscator oferuje szereg usług [ochrony oprogramowania i ograniczania funkcjonalności][software-protection] dla deweloperów, architektów i testerów.
-Przykłady zaciemnienia [platformy .NET][obfuscation] i inne funkcje [ochrony aplikacji][app-protection] zawarte w Dotfuscator Community to:
+Program Dotfuscator Community oferuje szereg usług [ochrony oprogramowania i wzmacniania zabezpieczeń][software-protection] dla deweloperów, architektów i testerów.
+Oto przykłady funkcji [zaciemniania na platformie .NET][obfuscation] i innych funkcji [ochrony aplikacji][app-protection] za pomocą programu Dotfuscator Community:
 
-* *[Zmiana nazw][renaming]* identyfikatorów w celu łatwiejszego odtworzenia skompilowanych zestawów.
-* *[Ochrona przed fałszowaniem][tamper]* w celu wykrywania wykonywania naruszonych aplikacji oraz kończenia lub reagowania na naruszone sesje.
-* *[Program chroniący przed debugowaniem][debug]* , który wykrywa dołączenie debugera do uruchomionej aplikacji i kończy lub reaguje na debugowane sesje.
-* *[Urządzenie z certyfikatem][root]* z systemem, aby wykryć, czy aplikacja jest uruchomiona na urządzeniu z systemem Android, i zakończyć lub odpowiedzieć na sesje na tych urządzeniach.
-* *[Zachowania wygasania aplikacji][shelflife]* , które kodują datę "koniec okresu istnienia" i przerywają wygasłe sesje aplikacji.
+* *[Zmienianie nazw][renaming]* identyfikatorów w celu utrudnienia odtwarzania skompilowanych zestawów.
+* *[Ochrona przed manipulacją][tamper]* w celu wykrywania naruszonych aplikacji oraz kończenia naruszonych sesji lub reagowania na nie.
+* *[Ochrona przed debugowaniem][debug]* w celu wykrywania dołączania debugera do uruchomionej aplikacji oraz kończenia debugowanych sesji lub reagowania na nie.
+* *[Ochrona przed odblokowywaniem dostępu do urządzeń][root]* w celu wykrywania, czy aplikacja jest uruchomiona na urządzeniu z systemem Android z odblokowanym dostępem, oraz kończenia sesji na takich urządzeniach lub reagowania na nie.
+* *[Funkcje wygasania aplikacji][shelflife]* , które pozwalają kodować datę zakończenia użytkowania oraz kończyć wygasłe sesje aplikacji.
 
-Aby uzyskać szczegółowe informacje dotyczące tych funkcji, w tym ich dopasowania do strategii ochrony aplikacji, zobacz [stronę możliwości][capabilities].
+Aby uzyskać szczegółowe informacje o tych funkcjach, włącznie z ich miejscem w strategii ochrony aplikacji, zobacz [stronę dotyczącą możliwości][capabilities].
 
-Społeczność Dotfuscator oferuje podstawową ochronę.
-Jeszcze więcej miar ochrony aplikacji jest dostępnych dla zarejestrowanych użytkowników społeczności Dotfuscator oraz do użytkowników z prawami do przeprowadzenia ***ochrony Dotfuscator Professional***, wiodącego na świecie [środowiska platformy .NET][net-obfuscator].
-Informacje o ulepszaniu Dotfuscator można znaleźć na [stronie uaktualnienia][upgrades].
+Program Dotfuscator Community zawiera podstawowe funkcje ochrony gotowe do użycia.
+Jeszcze więcej metod ochrony aplikacji jest dostępnych dla zarejestrowanych użytkowników programu Dotfuscator Community oraz dla użytkowników programu ***PreEmptive Protection — Dotfuscator Professional***, który jest wiodącym na świecie [narzędziem do zaciemniania dla platformy .NET][net-obfuscator].
+Aby uzyskać informacje o rozszerzaniu programu Dotfuscator, zobacz [stronę dotyczącą uaktualnień][upgrades].
 
 ## <a name="getting-started"></a>Wprowadzenie
 
 ::: moniker range="vs-2019"
 
-Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visual Studio, wpisz `dotfuscator` w **polu wyszukiwania** (Ctrl + Q).
+Aby zacząć używać programu Dotfuscator Community z poziomu programu Visual Studio, wpisz `dotfuscator` w **polu wyszukiwania** (Ctrl+Q).
 
-* Jeśli społeczność Dotfuscator jest już zainstalowana, w **polu wyszukiwania** zostanie wyświetlona opcja rozpoczęcia Dotfuscator Community w nagłówku *menu* . Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenie podręcznika użytkownika Dotfuscator][get-started].
-* Jeśli społeczność Dotfuscator nie jest jeszcze zainstalowana, w **polu wyszukiwania** będzie wyświetlana wartość **Zainstaluj ponownie ochronę Dotfuscator** w ramach nagłówka *poszczególne składniki* . Aby uzyskać szczegółowe informacje, zobacz [stronę instalacji][install] .
+* Jeśli program Dotfuscator Community jest już zainstalowany, w **polu wyszukiwania** pojawi się opcja uruchomienia programu Dotfuscator Community w obszarze nagłówka *Menu*. Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenia w pełnym podręczniku użytkownika programu Dotfuscator Community][get-started].
+* Jeśli program Dotfuscator Community nie jest jeszcze zainstalowany, w **polu wyszukiwania** pojawi się pozycja **Zainstaluj program PreEmptive Protection — Dotfuscator** w obszarze nagłówka *Pojedyncze składniki*. Aby uzyskać szczegółowe informacje, zobacz [stronę dotyczącą instalacji][install].
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Aby rozpocząć korzystanie z społeczności Dotfuscator z poziomu programu Visual Studio, wpisz `dotfuscator` na pasku wyszukiwania **szybkiego uruchamiania** (Ctrl + Q).
+Aby zacząć używać programu Dotfuscator Community z poziomu programu Visual Studio, wpisz `dotfuscator` na pasku wyszukiwania **Szybkie uruchamianie** (Ctrl+Q).
 
-* Jeśli społeczność Dotfuscator jest już zainstalowana, **Szybkie uruchamianie** powoduje wyświetlenie opcji *menu* , aby uruchomić interfejs użytkownika społeczności Dotfuscator. Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenie podręcznika użytkownika Dotfuscator][get-started].
-* Jeśli społeczność Dotfuscator nie jest jeszcze zainstalowana, **Szybkie uruchamianie** powoduje wyświetlenie odpowiedniej opcji *instalacji* . Aby uzyskać szczegółowe informacje, zobacz [stronę instalacji][install] .
+* Jeśli program Dotfuscator Community jest już zainstalowany, na pasku **Szybkie uruchamianie** pojawi się opcja *Menu* umożliwiająca uruchomienie interfejsu użytkownika programu Dotfuscator Community. Aby uzyskać szczegółowe informacje, zobacz [stronę wprowadzenia w pełnym podręczniku użytkownika programu Dotfuscator Community][get-started].
+* Jeśli program Dotfuscator Community nie jest jeszcze zainstalowany, na pasku **Szybkie uruchamianie** pojawi się odpowiednia opcja *Zainstaluj*. Aby uzyskać szczegółowe informacje, zobacz [stronę dotyczącą instalacji][install].
 
 ::: moniker-end
 
-**Najnowszą wersję** społeczności Dotfuscator można także uzyskać ze [strony plików do pobrania Dotfuscator na PreEmptive.com][download].
+Możesz też uzyskać **najnowszą wersję** programu Dotfuscator Community ze [strony plików programu Dotfuscator do pobrania w witrynie preemptive.com][download].
 
 ## <a name="full-documentation"></a>Pełna dokumentacja
 
-Ta strona i jej podstrony zapewniają ogólne omówienie funkcji społeczności Dotfuscator oraz [instrukcje dotyczące instalowania narzędzia][install].
+Ta strona i jej podstrony zawierają ogólne omówienie funkcji programu Dotfuscator Community, a także [instrukcje dotyczące instalowania tego narzędzia][install].
 
-Aby uzyskać szczegółowe [instrukcje dotyczące użycia][get-started], zobacz [Dotfuscator Podręcznik użytkownika społeczności w witrynie PreEmptive.com][full] .
+Zobacz [pełny podręcznik użytkownika programu Dotfuscator w witrynie preemptive.com][full], aby uzyskać szczegółowe instrukcje dotyczące użytkowania, obejmujące [rozpoczynanie korzystania z interfejsu użytkownika programu Dotfuscator Community][get-started].
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
