@@ -2,17 +2,17 @@
 title: Eksportowanie i Zapisywanie map kodu
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991773953338e38331bad45bfa1149aeb27c748b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57989de2cca3582b3193a7b55b81d1d444dcf1c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591934"
 ---
 # <a name="share-code-maps"></a>Udostępnianie map kodu
 
@@ -22,9 +22,9 @@ Mapy kodu można zapisać jako część projektu programu Visual Studio, jako ob
 
 Użyj menu **plik** , aby zapisać mapę.
 
-—lub—
+lub
 
-Aby zapisać mapę jako część określonego projektu, na pasku narzędzi Mapa wybierz pozycję **udostępnij**  > **Przenieś \<CodeMapName >. dgml do**, a następnie wybierz projekt, w którym chcesz zapisać mapę.
+Aby zapisać mapę jako część określonego projektu, na pasku narzędzi Mapa wybierz pozycję **udostępnij** > **przenieś \<CodeMapName >. dgml do**, a następnie wybierz projekt, w którym chcesz zapisać mapę.
 
 ![Przenoszenie mapy do innego projektu](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +43,7 @@ Program Visual Studio zapisuje mapę jako plik *. dgml* , który można udostęp
 
 Podczas eksportowania mapy kodu jako obrazu można skopiować ją do innych aplikacji, takich jak Microsoft Word lub PowerPoint.
 
-1. Na pasku narzędzi Mapa kodu wybierz pozycję **udostępnij**  > **wiadomości e-mail jako obraz** lub **Kopiuj obraz**.
+1. Na pasku narzędzi Mapa kodu wybierz pozycję **udostępnij** > **wiadomości e-mail jako obraz** lub **Kopiuj obraz**.
 
 2. Wklej obraz do innej aplikacji.
 
@@ -51,7 +51,7 @@ Podczas eksportowania mapy kodu jako obrazu można skopiować ją do innych apli
 
 Podczas eksportowania mapy kodu jako pliku XPS można ją zobaczyć w przeglądarkach XML lub XAML, takich jak program Internet Explorer.
 
-1. Na pasku narzędzi Mapa kodu wybierz pozycję **udostępnij**  > **wiadomości e-mail jako przenośny plik XPS** lub **Zapisz jako przenośny plik XPS**.
+1. Na pasku narzędzi Mapa kodu wybierz pozycję **udostępnij** > **wiadomości e-mail jako przenośny plik XPS** lub **Zapisz jako przenośny plik XPS**.
 
 2. Przejdź do lokalizacji, w której chcesz zapisać plik.
 

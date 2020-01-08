@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648277"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586383"
 ---
 # <a name="n-tier-data-applications-overview"></a>N-warstwowe aplikacje dotyczące danych — omówienie
 *N-warstwowe* aplikacje danych to aplikacje danych, które są rozdzielone na wiele *warstw*. Ich inne nazwy to „aplikacje rozproszone” i „aplikacje wielowarstwowe”. Aplikacje n-warstwowe dzielą przetwarzanie na dyskretne warstwy, które są rozkładane między klienta i serwer. Podczas tworzenia aplikacji uzyskujących dostęp do danych należy jednoznacznie odseparować różne warstwy tworzące aplikację.
@@ -57,7 +57,7 @@ Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej przy użyciu o
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w środkowej warstwie aplikacji n-warstwowej.
 
-składniki warstwy ![Middle ](../data-tools/media/ntiermid.png) warstwy środkowej
+![składniki warstwy środkowej](../data-tools/media/ntiermid.png) warstwy środkowej
 
 Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połączenia danych. To połączenie danych jest zazwyczaj przechowywane w składniku dostępu do danych.
 
@@ -66,7 +66,7 @@ Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połącz
 
 Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w warstwie danych aplikacji n-warstwowej.
 
-składniki warstwy ![Data ](../data-tools/media/ntierdatatier.png) warstwy danych
+składniki warstwy danych ![](../data-tools/media/ntierdatatier.png) warstwy danych
 
 Warstwa danych nie może być dostępna bezpośrednio z klienta w warstwie prezentacji. Zamiast tego składnik dostępu do danych w warstwie środkowej obsługuje komunikację między warstwami prezentacji i danych.
 

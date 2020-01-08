@@ -3,17 +3,17 @@ title: Modyfikowanie stylu obiektów
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668827"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592953"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modyfikowanie stylu obiektów w Blend for Visual Studio
 
@@ -75,7 +75,7 @@ W oknie dialogowym **Tworzenie zasobu stylu** można nazwać styl lub szablon, a
 
 > [!NOTE]
 > Nie można tworzyć stylów ani szablonów dla każdego typu kontrolki. Jeśli kontrolka nie obsługuje tych funkcji, nie pojawi się nad obszarem kompozycji.
-> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![Return zakres do ikony ](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Aby powrócić do zakresu edycji dokumentu głównego, kliknij przycisk **Zwróć zakres do** ![zwrócić zakres do ikony](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Stosowanie stylu lub szablonu do kontrolki
 
@@ -85,7 +85,7 @@ W oknie [obiekty i oś czasu](../xaml-tools/creating-a-ui-by-using-blend-for-vis
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Przywracanie domyślnego stylu lub szablonu kontrolki
 
-Zaznacz kontrolkę, a następnie w oknie * * właściwości * * * * Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
+Zaznacz kontrolkę, a następnie w oknie **właściwości** ** Znajdź właściwość **styl** lub **szablon** . Wybierz **Opcje zaawansowane**, a następnie w menu skrótów kliknij polecenie **Zresetuj** .
 
 ## <a name="visual-states"></a>Stany wizualne
 
@@ -93,7 +93,7 @@ Stany wizualne umożliwiają zmianę wyglądu kontrolki na podstawie jej stanu. 
 
 ![Wskaźnik myszy nad stanem](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Obejrzyj krótkie wideo:** przycisk ![Play ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [zarządzania stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Obejrzyj krótkie wideo:** przycisk ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zarządzaj stanem formantów WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Zasoby: Tworzenie kolorów, stylów i szablonów oraz ponowne używanie ich w przyszłości
 

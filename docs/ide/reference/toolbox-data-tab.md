@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644613"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590257"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta dane
 
@@ -32,7 +32,7 @@ Aby przejść bezpośrednio do strony odniesienia platformy .NET dla składnika,
 
 |Nazwa|Opis|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Dodaje do formularza lub składnika wystąpienie zestawu danych typu lub z nieokreślonym typem. Po przeciągnięciu tego obiektu do projektanta wyświetla okno dialogowe, które umożliwia wybranie istniejącej klasy zestawu danych lub określenie, czy chcesz utworzyć nowy, pusty, nieokreślony zestaw danych. **Uwaga:**  Nie używasz obiektu <xref:System.Data.DataSet> w **przyborniku** , aby utworzyć nowy, typ schematu i klasę zestawu danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
+|<xref:System.Data.DataSet>|Dodaje do formularza lub składnika wystąpienie zestawu danych typu lub z nieokreślonym typem. Po przeciągnięciu tego obiektu do projektanta wyświetla okno dialogowe, które umożliwia wybranie istniejącej klasy zestawu danych lub określenie, czy chcesz utworzyć nowy, pusty, nieokreślony zestaw danych. **Uwaga:**  Nie używasz obiektu <xref:System.Data.DataSet> w **przyborniku** , aby utworzyć nowy, typ schematu i klasę zestawu danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Zapewnia zaawansowany i elastyczny sposób wyświetlania danych w formacie tabelarycznym.|
 |<xref:System.Windows.Forms.BindingSource>|Upraszcza proces kontroli powiązań z bazowym źródłem danych.|
 |<xref:System.Windows.Forms.BindingNavigator>|Reprezentuje interfejs użytkownika nawigacji i manipulowania dla kontrolek w formularzu, które są powiązane z danymi.|

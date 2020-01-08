@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba455730ddac9b2a02b8f0580711499d6a779f49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747536"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590231"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelowanie architektury&#39;aplikacji
 Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytkowników, możesz tworzyć modele w programie Visual Studio jako część opisu ogólnej struktury i zachowania systemu oprogramowania lub aplikacji. Korzystając z modeli, można również opisać wzorce, które są używane w całym projekcie. Te modele pomagają zrozumieć istniejącą architekturę, omawiać zmiany i informować o zamiarach jasno.
@@ -88,7 +88,7 @@ Aby zapewnić, że system oprogramowania lub aplikacja spełnia potrzeby użytko
 
  Wzorzec projektowy został opisany w dokumencie i zwykle zawiera te części:
 
-- Nazwij.
+- Nazwa.
 
 - Opis kontekstu, w którym ma zastosowanie. Jakie kryteria należy wziąć pod uwagę w przypadku zastosowania tego wzorca przez dewelopera?
 

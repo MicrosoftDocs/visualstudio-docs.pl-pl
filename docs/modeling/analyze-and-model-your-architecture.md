@@ -12,17 +12,17 @@ helpviewer_keywords:
 - application architecture
 - architecture [Visual Studio ALM], modeling
 - application modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f669b8e0b737aa945641d1e7a32c7c05bee3c711
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0c9bbb0e98fe717e696aa974f4af5ba29de498e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654341"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590582"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizowanie i modelowanie architektury
 

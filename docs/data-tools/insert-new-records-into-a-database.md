@@ -12,17 +12,17 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3a3830c9dd1921939ced3577b7bafa22772b49f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648313"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586422"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 
@@ -46,7 +46,7 @@ Jeśli aplikacja korzysta z zestawów danych w celu przechowywania, można po pr
 
 1. Dodaj nowe rekordy do żądanego <xref:System.Data.DataTable>, tworząc nowe <xref:System.Data.DataRow> i dodając je do kolekcji <xref:System.Data.DataTable.Rows%2A>.
 
-2. Po dodaniu nowych wierszy do <xref:System.Data.DataTable> Wywołaj metodę `TableAdapter.Update`. Ilość danych do zaktualizowania można kontrolować, przekazując cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub jeden <xref:System.Data.DataRow>.
+2. Po dodaniu nowych wierszy do <xref:System.Data.DataTable>Wywołaj metodę `TableAdapter.Update`. Ilość danych do zaktualizowania można kontrolować, przekazując cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub jeden <xref:System.Data.DataRow>.
 
    Poniższy kod pokazuje, jak dodać nowy rekord do <xref:System.Data.DataTable>, a następnie wywołać metodę `TableAdapter.Update`, aby zapisać nowy wiersz w bazie danych. (W tym przykładzie używa się tabeli `Region` w bazie danych Northwind).
 
@@ -73,7 +73,7 @@ Nowe rekordy można wstawiać bezpośrednio do bazy danych przy użyciu obiektó
 
 ### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Aby wstawić nowe rekordy do bazy danych za pomocą obiektów poleceń
 
-- Utwórz nowy obiekt polecenia, a następnie ustaw jego właściwości `Connection`, `CommandType` i `CommandText`.
+- Utwórz nowy obiekt polecenia, a następnie ustaw jego właściwości `Connection`, `CommandType`i `CommandText`.
 
 Poniższy przykład ilustruje wstawianie rekordów do bazy danych przy użyciu obiektu polecenia. Wstawia dane do tabeli `Region` w bazie danych Northwind.
 

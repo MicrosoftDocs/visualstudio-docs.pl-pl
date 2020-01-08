@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641380"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586331"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 
@@ -137,7 +137,7 @@ Interfejs użytkownika dla tej aplikacji składa się z następujących element�
 
 3. Ustaw następujące właściwości:
 
-    |formant|Właściwość|Ustawienie|
+    |Kontrolka|Właściwość|Ustawienie|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**Paski przewijania**|**Pionow**|
@@ -158,7 +158,7 @@ W tym kroku utworzysz nowy zestaw danych o nazwie `authors`. Aby uzyskać więce
 
      Do zasobnika składników zostanie dodany **pozycję DataSet1** .
 
-4. W oknie **Właściwości** Ustaw **nazwę** i <xref:System.Data.DataSet.DataSetName%2A> właściwości `AuthorsDataSet`.
+4. W oknie **Właściwości** Ustaw **nazwę** i <xref:System.Data.DataSet.DataSetName%2A> właściwości`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Utwórz procedurę obsługi zdarzeń, aby odczytać plik XML do zestawu danych
 
@@ -179,7 +179,7 @@ Przycisk **Odczytaj XML** odczytuje plik XML do zestawu danych. Następnie ustaw
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Utwórz procedurę obsługi zdarzeń, aby wyświetlić schemat w kontrolce TextBox
 
-Przycisk **Pokaż schemat** tworzy obiekt <xref:System.IO.StringWriter>, który jest wypełniony schematem i jest wyświetlany w <xref:System.Windows.Forms.TextBox>control.
+Przycisk **Pokaż schemat** tworzy obiekt <xref:System.IO.StringWriter>, który jest wypełniony schematem i jest wyświetlany w kontrolce <xref:System.Windows.Forms.TextBox>.
 
 1. W **Eksplorator rozwiązań**wybierz pozycję **Form1**, a następnie wybierz przycisk **Wyświetl projektanta** .
 
@@ -210,7 +210,7 @@ Teraz można testować formularz, aby upewnić się, że działa zgodnie z oczek
 
 W tym instruktażu przedstawiono podstawowe informacje dotyczące odczytywania pliku XML do zestawu danych, a także tworzenia schematu na podstawie zawartości pliku XML. Poniżej przedstawiono kilka zadań, które można wykonać w następnej kolejności:
 
-- Edytuj dane w zestawie danych i napisz je ponownie jako kod XML. Aby uzyskać więcej informacji, zobacz <xref:System.Data.DataSet.WriteXml%2A>.
+- Edytuj dane w zestawie danych i napisz je ponownie jako kod XML. Aby uzyskać więcej informacji, zobacz temat <xref:System.Data.DataSet.WriteXml%2A>.
 
 - Edytuj dane w zestawie danych i Zapisz je w bazie danych.
 

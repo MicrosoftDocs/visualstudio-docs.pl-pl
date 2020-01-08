@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648497"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586656"
 ---
 # <a name="edit-data-in-datasets"></a>Edytowanie danych w zestawach danych
 Dane można edytować w tabelach danych tak samo, jak w przypadku edytowania danych w tabeli w dowolnej bazie danych. Proces ten może obejmować Wstawianie, aktualizowanie i usuwanie rekordów w tabeli. W formularzu związanym z danymi można określić, które pola są edytowane przez użytkownika. W takich przypadkach infrastruktura powiązań danych obsługuje wszystkie śledzenia zmian, dzięki czemu zmiany mogą być wysyłane z powrotem do bazy danych później. Jeśli programowo wprowadzisz zmiany do danych i zamierzasz wysłać je z powrotem do bazy danych, musisz użyć obiektów i metod, które umożliwiają śledzenie zmian.
@@ -70,7 +70,7 @@ Gdy zmiany są wprowadzane do rekordów w zestawie danych, informacje o tych zmi
 
 Zmiany są śledzone dwa sposoby w każdym wierszu danych:
 
-- Każdy wiersz danych zawiera informacje dotyczące <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted> lub <xref:System.Data.DataRowState.Unchanged>).
+- Każdy wiersz danych zawiera informacje dotyczące <xref:System.Data.DataRow.RowState%2A> (na przykład <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>lub <xref:System.Data.DataRowState.Unchanged>).
 
 - Każdy zmieniony wiersz danych zawiera wiele wersji tego wiersza (<xref:System.Data.DataRowVersion>), oryginalną wersję (przed zmianami) i bieżącą wersję (po zmianach). W czasie oczekiwania na zmianę (czas, w którym można odpowiedzieć na zdarzenie <xref:System.Data.DataTable.RowChanging>), trzecia wersja — proponowana wersja — jest również dostępna.
 
@@ -98,7 +98,7 @@ Poniższy przykład pokazuje, jak sprawdzić zestaw danych o nazwie `NorthwindDa
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>Aby zlokalizować wiersze z błędami
-Podczas pracy z poszczególnymi kolumnami i wierszami danych mogą wystąpić błędy. Możesz sprawdzić Właściwość `HasErrors`, aby określić, czy błędy istnieją w <xref:System.Data.DataSet>, <xref:System.Data.DataTable> lub <xref:System.Data.DataRow>.
+Podczas pracy z poszczególnymi kolumnami i wierszami danych mogą wystąpić błędy. Możesz sprawdzić Właściwość `HasErrors`, aby określić, czy błędy istnieją w <xref:System.Data.DataSet>, <xref:System.Data.DataTable>lub <xref:System.Data.DataRow>.
 
 1. Sprawdź Właściwość `HasErrors`, aby sprawdzić, czy w zestawie danych występują błędy.
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886c31eb76a2cd440f1f8189aaacf592e43d34fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603456"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565126"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Opracowywanie aplikacji globalnych i zlokalizowanych
 
@@ -37,7 +37,7 @@ Za pomocą programu Visual Studio można tworzyć aplikacje, które prawidłowo 
 
 ### <a name="apps-that-support-bidirectional-languages"></a>Aplikacje obsługujące Języki dwukierunkowe
 
-- Aplikacje systemu Windows
+- Aplikacje dla systemu Windows
 
    Można tworzyć w pełni dwukierunkowe aplikacje, które obejmują obsługę tekstu dwukierunkowego, kolejność odczytywania od prawej do lewej i dublowanie (odwracanie układu okien, menu, okien dialogowych itd.). Z wyjątkiem dublowania te funkcje są dostępne domyślnie lub jako ustawienia właściwości. Dublowanie jest obsługiwane w sposób niezależny dla niektórych funkcji, takich jak okna komunikatów. Jednak w innych przypadkach należy zaimplementować dublowanie w kodzie. Aby uzyskać więcej informacji, zobacz [Obsługa dwukierunkowych aplikacji Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 

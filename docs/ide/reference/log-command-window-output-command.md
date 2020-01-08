@@ -8,17 +8,17 @@ helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2056cf335f2cf6024e6ebb4b5daff72e54dd9d50
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610431"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568662"
 ---
 # <a name="log-command-window-output-command"></a>Zapisuj dane wyjściowe okna Polecenie — Polecenie
 
@@ -40,7 +40,7 @@ Opcjonalny. Nazwa pliku dziennika. Domyślnie plik jest tworzony w folderze prof
 
 ## <a name="switches"></a>Przełączniki
 
-situ
+/on\
 Opcjonalny. Uruchamia dziennik dla okna **polecenia** w określonym pliku i dołącza plik do nowych informacji.
 
 /off
@@ -75,7 +75,7 @@ Ten przykład wznawia Rejestrowanie poleceń w poprzednio używanym pliku dzienn
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [okno Polecenie](../../ide/reference/command-window.md)
 - [Znajdź/pole polecenia](../../ide/find-command-box.md)
 - [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

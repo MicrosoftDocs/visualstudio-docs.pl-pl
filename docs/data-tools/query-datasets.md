@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648235"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586344"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 Aby wyszukać określone rekordy w zestawie danych, użyj metody `FindBy` w elemencie DataTable, napisz własną instrukcję foreach do pętli w kolekcji wierszy tabeli lub Użyj [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -53,7 +53,7 @@ Jednak uwzględnianie wielkości liter może być czynnikiem, w jaki dane są in
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Aby znaleźć wiersze na podstawie wartości w dowolnej kolumnie
 
-- Tabele danych są tworzone za pomocą metody <xref:System.Data.DataTable.Select%2A>, która zwraca tablicę <xref:System.Data.DataRow>s na podstawie wyrażenia przesłanego do metody <xref:System.Data.DataTable.Select%2A>. Aby uzyskać więcej informacji na temat tworzenia prawidłowych wyrażeń, zobacz sekcję "składnia wyrażenia" na stronie dotyczącej właściwości <xref:System.Data.DataColumn.Expression%2A>.
+- Tabele danych są tworzone za pomocą metody <xref:System.Data.DataTable.Select%2A>, która zwraca tablicę <xref:System.Data.DataRow>s w oparciu o wyrażenie przesłane do metody <xref:System.Data.DataTable.Select%2A>. Aby uzyskać więcej informacji na temat tworzenia prawidłowych wyrażeń, zobacz sekcję "składnia wyrażenia" na stronie dotyczącej właściwości <xref:System.Data.DataColumn.Expression%2A>.
 
      Poniższy przykład pokazuje, jak używać metody <xref:System.Data.DataTable.Select%2A> <xref:System.Data.DataTable> do lokalizowania określonych wierszy.
 
@@ -68,15 +68,15 @@ Aby zlokalizować powiązane rekordy, można użyć obiektu <xref:System.Data.Da
 Na tej stronie przedstawiono przykłady użycia wpisanych zestawów danych. Aby uzyskać informacje na temat nawigowania po relacjach w zestawach danych, zobacz [nawigowanie po relacjach](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
-> Jeśli pracujesz w aplikacji Windows Forms i używasz funkcji powiązania danych do wyświetlania danych, formularz wygenerowany przez projektanta może zapewnić odpowiednią funkcjonalność aplikacji. Aby uzyskać więcej informacji, zobacz [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Zapoznaj się [z tematem relacje w zestawach danych](relationships-in-datasets.md).
+> Jeśli pracujesz w aplikacji Windows Forms i używasz funkcji powiązania danych do wyświetlania danych, formularz wygenerowany przez projektanta może zapewnić odpowiednią funkcjonalność aplikacji. Aby uzyskać więcej informacji, zobacz [powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Zapoznaj się [z tematem relacje w zestawach danych](relationships-in-datasets.md).
 
-Poniższy przykład kodu pokazuje, jak nawigować w górę i w dół relacji w typach danych. Przykłady kodu używają wpisanych <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowanych metod FindBy*PrimaryKey* (`FindByCustomerID`), aby zlokalizować żądany wiersz i zwrócić powiązane rekordy. Przykłady kompilują i działają poprawnie tylko wtedy, gdy masz:
+Poniższy przykład kodu pokazuje, jak nawigować w górę i w dół relacji w typach danych. W przykładach kodu użyto wpisanych <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowanych metod FindBy*PrimaryKey* (`FindByCustomerID`), aby zlokalizować żądany wiersz i zwrócić powiązane rekordy. Przykłady kompilują i działają poprawnie tylko wtedy, gdy masz:
 
 - Wystąpienie zestawu danych o nazwie `NorthwindDataSet` z tabelą `Customers`.
 
 - Tabela `Orders`.
 
-- Relacja o nazwie `FK_Orders_Customers`relating dwie tabele.
+- Relacja o nazwie `FK_Orders_Customers`odnosząca się do dwóch tabel.
 
 Ponadto obie tabele muszą być wypełnione danymi dla wszystkich rekordów, które mają zostać zwrócone.
 

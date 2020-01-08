@@ -2,17 +2,17 @@
 title: Tworzenie struktury rozwiązania modelowania
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985224"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591947"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -72,7 +72,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Użyj oddzielnego pakietu dla każdej warstwy
 
-1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
+1. W rozwiązaniu dla każdej warstwy Dodaj projekt z modelem architektury. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, wskaż **Dodaj**, a następnie kliknij przycisk **istniejący projekt**. Dostęp do pojedynczego projektu modelowania można teraz uzyskać z każdego rozwiązania: projektu architektury i projektu deweloperskiego dla każdej warstwy.
 
 2. W modelu udostępnionym Utwórz pakiet dla każdej warstwy: w **Eksplorator rozwiązań**wybierz projekt modelowania. W **Eksploratorze modelu UML**kliknij prawym przyciskiem myszy węzeł główny modelu, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **pakiet**.
 
@@ -102,7 +102,7 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 
 4. Postępując zgodnie z instrukcjami wyświetlanymi w kreatorze, wybierz projekty, które chcesz uwzględnić w szablonie, podaj nazwę i opis szablonu, a następnie określ lokalizację wyjściową.
 
-## <a name="watch-a-video"></a>Obejrzyj wideo
+## <a name="watch-a-video"></a>Obejrzyj film
 
 [Organizowanie modeli i zarządzanie nimi](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 

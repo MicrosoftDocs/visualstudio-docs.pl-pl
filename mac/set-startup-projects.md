@@ -3,16 +3,16 @@ title: Ustawianie wielu projektów startowych
 description: W tym artykule opisano sposób ustawiania uruchamiania lub debugowania wielu projektów.
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 02/21/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 3c7c3e00615463ba657ad93022f60ca856e026d6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 46e6447e07d2ee8439fcd86f5d1519beaa1e4609
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872368"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406696"
 ---
 # <a name="set-multiple-startup-projects"></a>Ustawianie wielu projektów startowych
 
@@ -38,11 +38,11 @@ Visual Studio dla komputerów Mac pozwala określić, że więcej niż jeden pro
 
    ![Okno dialogowe Opcje rozwiązania z wybranymi projektami](media/sln-options-run-config-multi-projects-configured.png)
 
-6. Kliknij przycisk **OK**. Nowa konfiguracja przebiegu rozwiązania jest ustawiona jako aktywna Konfiguracja przebiegu:
+6. Wybierz **OK**. Nowa konfiguracja przebiegu rozwiązania jest ustawiona jako aktywna Konfiguracja przebiegu:
 
    ![Rozwiązanie z wieloma projektami skonfigurowanymi do uruchamiania podczas debugowania lub uruchamiania](media/startup-project-configured.png)
 
-   Można zobaczyć, że dwa projekty są skonfigurowane do uruchamiania, ponieważ oba projekty są pogrubione w okienko rozwiązania. Na pasku narzędzi Nowa konfiguracja przebiegu jest ustawiana jako Bieżąca konfiguracja przebiegu rozwiązania.
+   Można zobaczyć, że dwa projekty są skonfigurowane do uruchamiania, ponieważ oba projekty są **pogrubione** w okienko rozwiązania. Na pasku narzędzi Nowa konfiguracja przebiegu jest ustawiana jako Bieżąca konfiguracja przebiegu rozwiązania.
 
 ## <a name="next-steps"></a>Następne kroki
 

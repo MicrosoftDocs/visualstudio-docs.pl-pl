@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652379"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590621"
 ---
 # <a name="access-models-from-text-templates"></a>Dostęp do modeli z szablonów tekstowych
 
@@ -57,7 +57,7 @@ Here is a list of elements in the model:
 
 - Szablon ładuje plik modelu określony we właściwości `requires`.
 
-- Właściwość w `this` zawiera element główny. Z tego miejsca kod może przechodzić do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak Klasa domeny głównej DSL. W tym przykładzie jest `this.ExampleModel`.
+- Właściwość w `this` zawiera element główny. Z tego miejsca kod może przechodzić do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak Klasa domeny głównej DSL. W tym przykładzie jest to `this.ExampleModel`.
 
 - Mimo że język, w którym są zapisywane fragmenty kodu, C#jest możliwe wygenerowanie tekstu dowolnego rodzaju. Możesz Alternatywnie napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie `language="VB"` właściwości do dyrektywy `template`.
 
@@ -72,7 +72,7 @@ Here is a list of elements in the model:
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- Nazwa dyrektywy (`MyLanguage` w tym przykładzie) pochodzi od nazwy Twojego języka DSL. Wywołuje *procesor dyrektywy* , który jest generowany w ramach DSL. Kod źródłowy można znaleźć w **Dsl\GeneratedCode\DirectiveProcessor.cs**.
+ Nazwa dyrektywy (`MyLanguage`w tym przykładzie) pochodzi od nazwy Twojego języka DSL. Wywołuje *procesor dyrektywy* , który jest generowany w ramach DSL. Kod źródłowy można znaleźć w **Dsl\GeneratedCode\DirectiveProcessor.cs**.
 
  Procesor dyrektywy DSL wykonuje dwa podstawowe zadania:
 
@@ -138,9 +138,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Dynamiczne ładowanie modeli
  Jeśli chcesz określić w czasie wykonywania modele do załadowania, możesz załadować plik modelu dynamicznie w kodzie programu, zamiast używać dyrektywy specyficznej dla DSL.
 
- Jednak jedna z funkcji dyrektywy specyficznej dla DSL polega na zaimportowaniu przestrzeni nazw DSL, aby kod szablonu mógł używać klas domeny zdefiniowanych w tym DSL. Ponieważ nie używasz dyrektywy, musisz dodać **\<assembly >** i **\<import >** dyrektyw dla wszystkich modeli, które mogą zostać załadowane. Jest to proste, jeśli różne modele, które można załadować, to wszystkie wystąpienia tego samego DSL.
+ Jednak jedna z funkcji dyrektywy specyficznej dla DSL polega na zaimportowaniu przestrzeni nazw DSL, aby kod szablonu mógł używać klas domeny zdefiniowanych w tym DSL. Ponieważ nie używasz dyrektywy, musisz dodać **\<> zestawu** i **\<zaimportować dyrektywy >** dla wszystkich modeli, które mogą zostać załadowane. Jest to proste, jeśli różne modele, które można załadować, to wszystkie wystąpienia tego samego DSL.
 
- Aby załadować plik, najbardziej efektywna metoda polega na użyciu Visual Studio ModelBus. W typowym scenariuszu szablon tekstowy będzie używać dyrektywy specyficznej dla DSL do załadowania pierwszego modelu w zwykły sposób. Ten model będzie zawierać odwołania ModelBus do innego modelu. Możesz użyć ModelBus, aby otworzyć przywoływany model i uzyskać dostęp do określonego elementu. Aby uzyskać więcej informacji, zobacz [używanie Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Aby załadować plik, najbardziej efektywna metoda polega na użyciu Visual Studio ModelBus. W typowym scenariuszu szablon tekstowy będzie używać dyrektywy specyficznej dla DSL do załadowania pierwszego modelu w zwykły sposób. Ten model będzie zawierać odwołania ModelBus do innego modelu. Możesz użyć ModelBus, aby otworzyć przywoływany model i uzyskać dostęp do określonego elementu. Aby uzyskać więcej informacji, zobacz [przy użyciu programu Visual Studio ModelBus w szablonie tekstowym](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  W mniej typowym scenariuszu możesz chcieć otworzyć plik modelu, dla którego masz tylko nazwę pliku, a który może nie znajdować się w bieżącym projekcie programu Visual Studio. W takim przypadku można otworzyć plik przy użyciu techniki opisanej w artykule [jak: otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 

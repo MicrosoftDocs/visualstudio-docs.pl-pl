@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660048"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569442"
 ---
 # <a name="options-dialog-box-environment--general"></a>Opcje — okno dialogowe: środowisko \> ogólne
 
@@ -90,7 +90,7 @@ Wyświetla pasek stanu. Pasek stanu znajduje się u dołu okna IDE i wyświetla 
 
 **Przycisk zamykania ma wpływ tylko na aktywne okno narzędzi**
 
-Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokusem jest zamknięte, a nie wszystkie okna narzędzi w zestawie zadokowanym. Domyślnie ta opcja jest zaznaczona.
+Określa, że po kliknięciu przycisku **Zamknij** tylko okno narzędzia z fokusem jest zamknięte, a nie wszystkie okna narzędzi w zestawie zadokowanym. Ta opcja jest wybrana domyślnie.
 
 **Przycisk Autoukrywanie ma wpływ tylko na aktywne okno narzędzi**
 

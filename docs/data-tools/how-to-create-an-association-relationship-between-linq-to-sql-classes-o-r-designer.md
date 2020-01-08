@@ -3,17 +3,17 @@ title: Relacje między klasami LINQ to SQL (Projektant O/R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb81cf17de86a11d2373f6a545b3efc78e65ada9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641901"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586474"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Instrukcje: Tworzenie skojarzenia między klasami LINQ to SQL (Projektant O/R)
 Skojarzenia klas jednostek w [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] są analogiczne do relacji między tabelami w bazie danych. Skojarzenia klas jednostek można utworzyć przy użyciu okna dialogowego **Edytor skojarzeń** .
@@ -30,7 +30,7 @@ Po utworzeniu skojarzenia, gdy wybierzesz skojarzenie w **Projektancie O/R**, w 
 |--------------|-----------------|
 |**Kardynalności**|Określa, czy skojarzenie jest jedno-do-wielu, czy jeden-do-jednego.|
 |**Właściwość podrzędna**|Określa, czy ma zostać utworzona właściwość obiektu nadrzędnego, który jest kolekcją lub odwołaniem do rekordów podrzędnych po stronie klucza obcego skojarzenia. Na przykład w skojarzeniu między `Customer` i `Order`, jeśli **Właściwość podrzędna** ma wartość **true**, właściwość o nazwie `Orders` jest tworzona w klasie nadrzędnej.|
-|**Właściwość nadrzędna**|Właściwość klasy podrzędnej, która odwołuje się do skojarzonej klasy nadrzędnej. Na przykład w skojarzeniu między `Customer` i `Order` właściwość o nazwie `Customer` odwołująca się do skojarzonego klienta dla zamówienia jest tworzona na klasie `Order`.|
+|**Właściwość nadrzędna**|Właściwość klasy podrzędnej, która odwołuje się do skojarzonej klasy nadrzędnej. Na przykład w skojarzeniu między `Customer` i `Order`właściwość o nazwie `Customer` odwołująca się do skojarzonego klienta dla zamówienia jest tworzona na klasie `Order`.|
 |**Właściwości uczestniczące**|Wyświetla właściwości skojarzenia i zawiera przycisk **wielokropka** (...), który powoduje ponowne otwarcie okna dialogowego **Edytor skojarzeń** .|
 |**Unikatowy**|Określa, czy obce kolumny docelowe mają ograniczenie unikatowości.|
 

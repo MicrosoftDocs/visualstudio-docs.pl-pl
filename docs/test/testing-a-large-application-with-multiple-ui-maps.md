@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659904"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590296"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika
 
@@ -56,7 +56,7 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
 2. Kliknij prawym przyciskiem myszy folder `UIMaps`, wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
-    Zostanie wyświetlone okno dialogowe **Dodaj nowy element** .
+    **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
 
    > [!NOTE]
    > Aby dodać nową mapę kodowanego testu interfejsu użytkownika, musisz być w projekcie kodowanego testu interfejsu użytkownika.
@@ -65,7 +65,7 @@ Utwórz wiele map interfejsu użytkownika w każdym z następujących typów syt
 
     W polu **Nazwa** wprowadź nazwę nowej mapy interfejsu użytkownika. Użyj nazwy składnika lub strony, która będzie reprezentować mapa, na przykład `HomePageMap`.
 
-4. Wybierz pozycję **Dodaj**.
+4. Wybierz **Dodaj**.
 
     Okno programu Visual Studio minimalizuje i zostanie wyświetlone okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** .
 

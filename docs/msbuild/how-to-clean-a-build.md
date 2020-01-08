@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Czyszczenie kompilacji | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: czyszczenie kompilacji | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,54 +8,54 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977298"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585222"
 ---
-# <a name="how-to-clean-a-build"></a>Instrukcje: Czyszczenie kompilacji
-Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wynikowych, pozostawiając tylko pliki projektu, jak i składnika. W plikach projektu, jak i składnika nowych wystąpień pośrednich i pliki wyjściowe może następnie być skompilowana. Biblioteka typowych zadań, które jest dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje [Exec](../msbuild/exec-task.md) zadanie, które służy do uruchamiania poleceń systemowych. Aby uzyskać więcej informacji na temat biblioteki zadań, zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).
+# <a name="how-to-clean-a-build"></a>Instrukcje: czyszczenie kompilacji
+Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usunięte, pozostawiając tylko pliki projektu i składnika. Z plików projektu i składników można następnie skompilować nowe wystąpienia plików pośrednich i wyjściowych. Biblioteka typowych zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera zadanie [exec](../msbuild/exec-task.md) , za pomocą którego można uruchamiać polecenia systemowe. Aby uzyskać więcej informacji na temat biblioteki zadań, zobacz [Dokumentacja zadania](../msbuild/msbuild-task-reference.md).
 
-## <a name="create-a-directory-for-output-items"></a>Utwórz katalog dla danych wyjściowych elementów
- Domyślnie *.exe* plik, który jest tworzony podczas kompilowania projektu jest umieszczany w tym samym katalogu co pliki projektu i źródła. Zwykle jednak dane wyjściowe są tworzone elementy w oddzielnym katalogu.
+## <a name="create-a-directory-for-output-items"></a>Tworzenie katalogu dla elementów wyjściowych
+ Domyślnie plik *. exe* , który jest tworzony podczas kompilowania projektu, jest umieszczany w tym samym katalogu, w którym znajdują się pliki projektu i plików źródłowych. Zwykle jednak elementy wyjściowe są tworzone w osobnym katalogu.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Można utworzyć katalogu danych wyjściowych elementów
+#### <a name="to-create-a-directory-for-output-items"></a>Aby utworzyć katalog dla elementów wyjściowych
 
-1. Użyj `Property` elementu, aby zdefiniować lokalizację i nazwę katalogu. Na przykład można utworzyć katalog o nazwie *BuiltApp* w katalogu, który zawiera pliki projektu i źródła:
+1. Użyj elementu `Property`, aby zdefiniować lokalizację i nazwę katalogu. Na przykład Utwórz katalog o nazwie *BuiltApp* w katalogu zawierającym pliki projektu i źródła:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Użyj [MakeDir](../msbuild/makedir-task.md) zadania do utworzenia katalogu, jeśli katalog nie istnieje. Na przykład:
+2. Użyj zadania [MakeDir](../msbuild/makedir-task.md) , aby utworzyć katalog, jeśli katalog nie istnieje. Na przykład:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
       Condition = "!Exists('$(builtdir)')" />
      ```
 
-## <a name="remove-the-output-items"></a>Usuń elementy danych wyjściowych
- Przed utworzeniem nowych wystąpień plików pośrednich i wynikowych, warto wyczyścić wszystkie poprzednie wystąpień plików pośrednich i wynikowych. Użyj [removedir —](../msbuild/removedir-task.md) zadanie, aby usunąć katalog i wszystkie pliki i katalogi, które zawiera z dysku.
+## <a name="remove-the-output-items"></a>Usuń elementy wyjściowe
+ Przed utworzeniem nowych wystąpień plików pośrednich i wyjściowych warto wyczyścić wszystkie poprzednie wystąpienia plików pośrednich i wyjściowych. Użyj zadania [RemoveDir —](../msbuild/removedir-task.md) , aby usunąć katalog i wszystkie pliki i katalogi, które zawiera z dysku.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Aby usunąć katalog i wszystkie pliki znajdujące się w katalogu
 
-- Użyj `RemoveDir` zadań można usunąć katalogu. Na przykład:
+- Użyj zadania `RemoveDir`, aby usunąć katalog. Na przykład:
 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Przykład
- Poniższy kod przykładowy projekt zawiera nowy obiekt docelowy `Clean`, który używa `RemoveDir` zadanie, aby usunąć katalog i wszystkie pliki i katalogi, które zawiera. Również w tym przykładzie `Compile` docelowej tworzy oddzielny katalog dla elementów danych wyjściowych, które są usuwane, gdy kompilacja jest czyszczona.
+ Następujący przykładowy kod projektu zawiera nowy element docelowy `Clean`, który używa zadania `RemoveDir` do usuwania katalogu i wszystkich plików i katalogów, które zawiera. Ponadto w tym przykładzie `Compile` Target tworzy oddzielny katalog dla elementów wyjściowych, które są usuwane podczas czyszczenia kompilacji.
 
- `Compile` jest zdefiniowany jako domyślnego obiektu docelowego i w związku z tym jest używany automatycznie, chyba że określisz inną docelową lub miejsc docelowych. Możesz użyć przełącznika wiersza polecenia **-target** Aby określić inny element docelowy. Na przykład:
+ `Compile` jest zdefiniowany jako domyślny element docelowy i dlatego jest używany automatycznie, chyba że określono inny element docelowy lub docelowy. **Aby określić inny element docelowy,** należy użyć przełącznika wiersza polecenia. Na przykład:
 
  `msbuild <file name>.proj -target:Clean`
 
- **-Target** przełącznik może zostać skrócony do **-t** i można określić więcej niż jeden element docelowy. Na przykład użycie wartości docelowej `Clean` następnie element docelowy `Compile`, wpisz:
+ Przełącznik **-Target** może być skrócony do **-t** i może określać więcej niż jeden obiekt docelowy. Na przykład, aby użyć obiektu docelowego `Clean` następnie `Compile`docelowy, wpisz:
 
  `msbuild <file name>.proj -t:Clean;Compile`
 
@@ -101,7 +101,7 @@ Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wyniko
 
 ## <a name="see-also"></a>Zobacz także
 - [Exec — zadanie](../msbuild/exec-task.md)
-- [Makedir — zadanie](../msbuild/makedir-task.md)
-- [Removedir — zadanie](../msbuild/removedir-task.md)
+- [MakeDir, zadanie](../msbuild/makedir-task.md)
+- [RemoveDir —, zadanie](../msbuild/removedir-task.md)
 - [CSC — zadanie](../msbuild/csc-task.md)
 - [Docelowe elementy](../msbuild/msbuild-targets.md)

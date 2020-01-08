@@ -4,17 +4,17 @@ ms.date: 09/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dffc3773714336162b3b863fa03a6964b68a3673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 517a583c859870b979c89c4fe2f55cd3bc0fc913
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649582"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587618"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące analizatorów FxCop i FxCop
 
@@ -31,11 +31,11 @@ Analizatory FxCop są oparte na .NET Compiler Platform ("Roslyn"). Należy [je z
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Czy polecenie uruchomienia analizy kodu uruchamia analizatory FxCop?
 
-Nie. Po wybraniu opcji **analizuj**  > **Uruchom analizę kodu**zostanie wykonana Starsza analiza. **Analiza kodu uruchamiania** nie ma wpływu na analizatory oparte na Roslyn, w tym analizatory FxCop z Roslyn.
+Nie. Po wybraniu opcji **analizuj** > **Uruchom analizę kodu**zostanie wykonana Starsza analiza. **Analiza kodu uruchamiania** nie ma wpływu na analizatory oparte na Roslyn, w tym analizatory FxCop z Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>Czy właściwość projektu MSBuild RunCodeAnalysis jest uruchamiana analizatory?
 
-Nie. Właściwość **RunCodeAnalysis** w pliku projektu (na przykład *. csproj*) jest używana tylko do wykonywania starszych FxCop. Uruchamia zadanie programu MSBuild po kompilacji, które wywołuje **plik FxCopCmd. exe**. Jest to równoznaczne z wybraniem opcji **analizuj**  > **Uruchom analizę kodu** w programie Visual Studio.
+Nie. Właściwość **RunCodeAnalysis** w pliku projektu (na przykład *. csproj*) jest używana tylko do wykonywania starszych FxCop. Uruchamia zadanie programu MSBuild po kompilacji, które wywołuje **plik FxCopCmd. exe**. Jest to równoznaczne z wybraniem opcji **analizuj** > **Uruchom analizę kodu** w programie Visual Studio.
 
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>Jak uruchomić analizatory FxCop?
 
@@ -43,7 +43,7 @@ Aby uruchomić analizatory FxCop, najpierw [Zainstaluj dla nich pakiet NuGet](in
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Otrzymuję ostrzeżenie CA0507 nawet po zainstalowaniu pakietu NuGet analizatorów FxCop
 
-Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA0507 **"" Uruchomienie analizy kodu "zostało zaniechane na rzecz analizatorów FxCop, które są uruchamiane podczas kompilacji"** , może być konieczne ustawienie właściwości **RunCodeAnalysis** MSBuild w [projekcie plik](../ide/solutions-and-projects-in-visual-studio.md#project-file) na **wartość false**. W przeciwnym razie Starsza analiza zostanie wykonana po każdej kompilacji.
+Jeśli zainstalowano analizatory FxCop, ale nadal pojawia się ostrzeżenie CA0507 **"" Uruchomienie analizy kodu "zostało zaniechane na rzecz analizatorów FxCop, które są uruchamiane podczas kompilacji"** , może być konieczne ustawienie właściwości **RunCodeAnalysis** MSBuild w [pliku projektu](../ide/solutions-and-projects-in-visual-studio.md#project-file) na **false**. W przeciwnym razie Starsza analiza zostanie wykonana po każdej kompilacji.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

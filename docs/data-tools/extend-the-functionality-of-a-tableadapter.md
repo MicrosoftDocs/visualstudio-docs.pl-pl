@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Visual Studio], extending TableAdapters
 - TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e92b820b04913733095645d21ad682bff40acd84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34a5c1601071a36ca11005503e2f443a72ca3dfe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648491"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586643"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Rozszerzanie funkcjonalności adaptera TableAdapter
 
@@ -32,9 +32,9 @@ Klasy częściowe umożliwiają dzielenie kodu dla określonej klasy między wie
 
 ## <a name="locate-tableadapters-in-code"></a>Znajdź TableAdapters w kodzie
 
-Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, generowane klasy TableAdapter nie są zagnieżdżonymi klasami <xref:System.Data.DataSet>. TableAdapters znajdują się w przestrzeni nazw na podstawie nazwy skojarzonego zestawu danych TableAdapter. Na przykład jeśli aplikacja zawiera zestaw danych o nazwie `HRDataSet`, TableAdapters będzie znajdować się w przestrzeni nazw `HRDataSetTableAdapters`. (Konwencja nazewnictwa jest zgodna z tym wzorcem: *datasetname*  +  `TableAdapters`).
+Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, generowane klasy TableAdapter nie są zagnieżdżonymi klasami <xref:System.Data.DataSet>. TableAdapters znajdują się w przestrzeni nazw na podstawie nazwy skojarzonego zestawu danych TableAdapter. Na przykład jeśli aplikacja zawiera zestaw danych o nazwie `HRDataSet`, TableAdapters będzie znajdować się w przestrzeni nazw `HRDataSetTableAdapters`. (Konwencja nazewnictwa jest zgodna z tym wzorcem: *datasetname* + `TableAdapters`).
 
-W poniższym przykładzie założono TableAdapter o nazwie `CustomersTableAdapter`is w projekcie z `NorthwindDataSet`.
+W poniższym przykładzie założono, że TableAdapter o nazwie `CustomersTableAdapter`znajduje się w projekcie z `NorthwindDataSet`.
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Aby utworzyć klasę częściową dla elementu TableAdapter
 

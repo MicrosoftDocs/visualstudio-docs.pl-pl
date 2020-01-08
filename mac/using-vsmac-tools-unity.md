@@ -3,14 +3,14 @@ title: Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 description: Ten przewodnik opisuje jak używać programu Visual Studio dla komputerów Mac Tools for Unity rozszerzenia
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692220"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406671"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 
@@ -29,7 +29,7 @@ Alternatywnie program Visual Studio for Mac może być otwierany przez skrypt ni
 Visual Studio dla komputerów Mac Tools for Unity zawiera skrót do uzyskiwania dostępu do dokumentacji interfejsu API aparatu Unity. Aby uzyskać dostęp do dokumentacji interfejsu API aparatu Unity w programie Visual Studio dla komputerów Mac, umieść kursor nad interfejsu API aparatu Unity, aby poznać i naciśnij klawisz **⌘ polecenia + "** .
 
 ## <a name="intellisense-for-unity-messages"></a>Funkcja IntelliSense dla komunikatów Unity
-Aparat Unity emituje komunikaty do obiekt MonoBehaviour skryptów, dzięki czemu deweloperzy mogą pisać kod, który reaguje na komunikaty, takie jak OnMouseDown, OnTriggerEnter itp. Ponieważ nie są to wirtualne metody w klasie bazowej obiekt MonoBehaviour, niektórych środowisk IDE, takie jak narzędzia MonoDevelop nie mają funkcji uzupełniania kodu dla komunikatów Unity.
+Aparat Unity emituje komunikaty do skryptów bezskryptowych, co umożliwia deweloperom pisanie kodu, który reaguje na wiadomości, takie jak OnMouseDown, funkcja ontriggerenter itp. Ponieważ nie są to metody wirtualne w podstawowej klasie zachowań, niektóre środowisk IDE, takie jak narzędzie MonoDevelop, nie mają funkcji uzupełniania kodu dla komunikatów aparatu Unity.
 
 Jednak program Visual Studio dla komputerów Mac Tools for Unity rozszerza jej funkcji IntelliSense, aby komunikaty aparatu Unity. Łatwo Implementuj komunikaty aparatu Unity w skryptach obiekt MonoBehaviour i pomaga nauki interfejsu API aparatu Unity. Aby użyć funkcji IntelliSense dla komunikatów Unity:
 
@@ -61,7 +61,7 @@ Jednak program Visual Studio dla komputerów Mac Tools for Unity rozszerza jej f
 
 ## <a name="adding-new-unity-files-and-folders"></a>Dodawanie nowych plików Unity i folderów
 
-Chociaż można zawsze dodawaj nowe pliki do projektu środowiska Unity w programie Unity editor, Visual Studio for Mac umożliwia łatwe tworzenie nowych Unity skryptów, programów do cieniowania, struktury, wyliczenia i folderów z poziomu programu Visual Studio.
+Mimo że zawsze możesz dodawać nowe pliki do projektu Unity w edytorze Unity, Visual Studio dla komputerów Mac umożliwia łatwe tworzenie nowych skryptów aparatu Unity, programów do cieniowania, struktur, tekstów stałych i folderów w programie Visual Studio.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Dodaj nowy skrypt języka C# obiekt MonoBehaviour
 
@@ -105,9 +105,9 @@ Aby rozpocząć debugowanie:
 
 ### <a name="start-debugging-in-a-single-step"></a>Rozpocznij debugowanie w jednym kroku
 
-Począwszy od debugowania i odtwarzanie programu Unity editor zakończeniem w jednym kroku bezpośrednio z programu Visual Studio dla komputerów Mac, wybierając **Dołącz do aparatu Unity i Odtwórz** konfiguracji.
+Uruchamianie debugowania i odtwarzanie edytora Unity można wykonać w pojedynczym kroku bezpośrednio z Visual Studio dla komputerów Mac, wybierając opcję **Dołącz do aparatu Unity i Odtwórz** konfigurację.
 
-![Wybierz opcję Dołącz do aparatu Unity i Odtwórz](media/using-vsmac-tools-unity-image8.png)
+![Wybierz pozycję Dołącz do aparatu Unity i Odtwórz](media/using-vsmac-tools-unity-image8.png)
 
 ### <a name="stop-debugging"></a>Zatrzymaj debugowanie
 
@@ -118,6 +118,6 @@ Aby zatrzymać debugowanie:
    ![Kliknij przycisk Zatrzymaj w programie Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
 > [!NOTE]
-> Jeśli rozpoczęto debugowanie przy użyciu **Dołącz do aparatu Unity i Odtwórz** konfiguracji **zatrzymać** przycisku spowoduje również przerwanie aparatu Unity.
+> Po rozpoczęciu debugowania przy użyciu funkcji **dołączania do aparatu Unity i konfiguracji odtwarzania** przycisk **Zatrzymaj** również zatrzyma aparat Unity.
 
 Aby dowiedzieć się więcej o debugowaniu w programie Visual Studio dla komputerów Mac, zobacz [za pomocą debugera](debugging.md).

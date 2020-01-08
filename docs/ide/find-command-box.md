@@ -6,17 +6,17 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653732"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591531"
 ---
 # <a name="findcommand-box"></a>Find/Command — Pole
 
@@ -50,7 +50,7 @@ Znak daszka ( **^** ) w poleceniu oznacza, że znak bezpośrednio po nim jest in
 >Edit.Find ^^t /regex
 ```
 
-Daszek działa tak samo, niezależnie od tego, czy znajduje się wewnątrz, czy poza cudzysłowem. Jeśli karetka jest ostatnim znakiem w wierszu, zostanie zignorowana.
+Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany.
 
 ## <a name="see-also"></a>Zobacz także
 

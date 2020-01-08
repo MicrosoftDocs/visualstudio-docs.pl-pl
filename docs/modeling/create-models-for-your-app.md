@@ -16,27 +16,27 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984441"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590530"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 
-Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomysłów dotyczących kodu oraz wymagań użytkownika, które musi obsługiwać system oprogramowania.
+Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę Twojego kodu oraz wymagania użytkowników, jakie musi spełniać Twój system oprogramowania.
 
 Aby sprawdzić, które wersje programu Visual Studio obsługują poszczególne typy diagramów, zobacz temat [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następujące diagramy:
 
-|**4b**|**Pokazując**|
+|**Diagram**|**Pokazując**|
 |-|-|
 |[Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|
@@ -44,7 +44,7 @@ Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następu
 
 ## <a name="related-tasks"></a>Powiązane zadania
 
-|**Rozdziału**|**Zadaniem**|
+|**Temat**|**Zadanie**|
 |-|-|
 |[Tworzenie wizualizacji kodu](../modeling/visualize-code.md)|Twórz mapy kodu i diagramy zależności, aby lepiej zrozumieć nieznany kod.|
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używaj modeli, aby wyjaśnić potrzeby użytkowników.|

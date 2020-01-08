@@ -1,5 +1,5 @@
 ---
-title: Zadanie DownloadFile | Dokumentacja firmy Microsoft
+title: DownloadFile — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -17,42 +17,42 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821433"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590478"
 ---
-# <a name="downloadfile-task"></a>Zadanie DownloadFile
-Pobiera określone pliki przy użyciu Hyper tekstu Transfer Protocol (HTTP).
+# <a name="downloadfile-task"></a>DownloadFile, zadanie
+Pobiera określone pliki przy użyciu protokołu HTTP (Hyper-Text Transfer Protocol).
 
 >[!NOTE]
->Zadanie DownloadFile jest tylko dostępne w MSBuild 15.8 i powyżej.
+>Zadanie DownloadFile jest dostępne tylko w programie MSBuild 15,8 i nowszych wersjach.
 
 ## <a name="parameters"></a>Parametry
-W poniższej tabeli opisano parametry `DownloadFile` zadania.
+W poniższej tabeli opisano parametry zadania `DownloadFile`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`DestinationFileName`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru<br /><br /> Nazwa do użycia dla pobranego pliku.  Domyślnie, nazwa pliku jest tworzony na podstawie `SourceUrl` lub serwerze zdalnym.|
-|`DestinationFolder`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa folder docelowy, aby pobrać plik do.  Jeśli folder jest tworzony, jeśli nie istnieje.|
-|`DownloadedFile`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa plik, który został pobrany.|
-|`Retries`|Opcjonalnie `Int32` parametru.<br /><br /> Określa, ile razy, aby spróbować pobrać, jeśli wszystkie poprzednie próby się nie powiodły. Domyślnie przyjmuje wartość zero.|
-|`RetryDelayMilliseconds`|Opcjonalnie `Int32` parametru.<br /><br /> Określa opóźnienie (w milisekundach) między kolejnymi niezbędnymi ponownymi próbami. Wartość domyślna to 5000.|
-|`SkipUnchangedFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pomija pobieranie plików, które nie uległy zmianie. Wartość domyślna to `true`. `DownloadFile` Zadań uzna, że pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam Data ostatniej modyfikacji zgodnie z serwera zdalnego. <br /><br />**Uwaga:**  Nie wszystkie serwery HTTP wskazują, Data ostatniej modyfikacji plików spowoduje, że plik Aby ponownie pobrana.|
-|`SourceUrl`|Wymagane `String` parametru.<br /><br /> Określa adres URL do pobrania.|
+|`DestinationFileName`|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> Nazwa do użycia dla pobranego pliku.  Domyślnie nazwa pliku pochodzi od `SourceUrl` lub serwera zdalnego.|
+|`DestinationFolder`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa folder docelowy, do którego ma zostać pobrany plik.  Jeśli folder zostanie utworzony, jeśli nie istnieje.|
+|`DownloadedFile`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa plik, który został pobrany.|
+|`Retries`|Opcjonalny parametr `Int32`.<br /><br /> Określa, ile razy należy próbować pobrać, jeśli wszystkie poprzednie próby zakończyły się niepowodzeniem. Domyślnie przyjmuje wartość zero.|
+|`RetryDelayMilliseconds`|Opcjonalny parametr `Int32`.<br /><br /> Określa opóźnienie (w milisekundach) między dowolnymi niezbędnymi ponownymi próbami. Wartość domyślna to 5000.|
+|`SkipUnchangedFiles`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, pomija pobieranie niezmienionych plików. Wartość domyślna to `true`. Zadanie `DownloadFile` uznaje, że pliki mają być bez zmian, jeśli mają taki sam rozmiar i ten sam czas ostatniej modyfikacji, zgodnie z serwerem zdalnym. <br /><br />**Uwaga:**  Nie wszystkie serwery HTTP wskazują, że data ostatniej modyfikacji plików spowoduje ponowne pobranie pliku.|
+|`SourceUrl`|Wymagany `String` parametr.<br /><br /> Określa adres URL do pobrania.|
 
 ## <a name="remarks"></a>Uwagi
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pobiera plik i dołączenia go w `Content` elementy przed utworzeniem projektu.
+Poniższy przykład pobiera plik i dołącza go do `Content` elementów przed skompilowaniem projektu.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

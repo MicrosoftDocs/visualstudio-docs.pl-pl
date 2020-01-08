@@ -1,6 +1,6 @@
 ---
 title: Rozszerzenia automatycznie ładowane w sposób synchroniczny
-ms.date: 02/16/2019
+ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: madskristensen
@@ -8,48 +8,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316711"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406632"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Rozszerzenia automatycznie ładowane w sposób synchroniczny
 
-Synchronicznie rozszerzenia załadowany automatycznie mieć negatywny wpływ na wydajność programu Visual Studio i powinny być konwertowane na zamiast tego użyj Załaduj asynchronicznego. Począwszy od programu Visual Studio 2 2019 r (wersja zapoznawcza), użytkownicy są powiadamiani, gdy rozszerzenie jest synchronicznie załadowany automatycznie. Rozszerzenie zostanie obciążenia i działają w zwykły sposób.
+Synchronicznie ładowane rozszerzenia mają negatywny wpływ na wydajność programu Visual Studio i powinny być konwertowane, aby używały asynchronicznego ładowania automatyczne. Domyślnie program Visual Studio 2019 blokuje synchronicznie ładowane pakiety z dowolnego rozszerzenia i powiadamia użytkownika.
 
-![Ostrzeżenie dotyczące zgodności rozszerzenia](media/extension-compatibility-warning.png)
+![Ostrzeżenie o zgodności rozszerzenia](media/extension-compatibility-warning-16-1.png.png)
 
-Użytkownicy mogą:
+Można:
 
-- Kliknij pozycję **więcej** można uzyskać dostęp do tej strony informacji.
+- Kliknij opcję **Zezwalaj na synchroniczne automatyczne ładowanie** , aby zezwalać na automatyczne ładowanie rozszerzeń. Aby zmienić to ustawienie w opcjach programu Visual Studio, kliknij pozycję środowisko, a następnie kliknij pozycję rozszerzenia, a następnie zaznacz pole wyboru "Zezwalaj na synchroniczne automatyczne ładowanie rozszerzeń". 
 
-- Kliknij pozycję **zarządzanie wydajnością** otworzyć [okno dialogowe Menedżer wydajności](#performance-manager-dialog) pokazujący problemy z wydajnością za pomocą rozszerzenia i okna narzędzi.
+- Kliknij pozycję **Zarządzaj wydajnością** , aby otworzyć [okno dialogowe Menedżera wydajności](#performance-manager-dialog) , które pokazuje problemy z wydajnością za pomocą rozszerzeń i okien narzędzi.
 
-- Kliknij pozycję **nie pokazuj ponownie tego komunikatu** aby odrzucić powiadomienie. Wybranie tej opcji uniemożliwia również wszystkich kolejnych powiadomień z synchronicznie załadowany automatycznie rozszerzeń. Użytkownicy będą w dalszym ciągu otrzymywać powiadomienia o innych funkcjach programu Visual Studio.
+- Kliknij pozycję **nie pokazuj tego komunikatu dla bieżących rozszerzeń** , aby odrzucić powiadomienie i uniemożliwić przyszłe powiadomienia z istniejących zainstalowanych rozszerzeń. Jeśli dodasz nowe rozszerzenie, które ładuje się synchronicznie, to powiadomienie zostanie wyświetlone ponownie. Będziesz nadal otrzymywać powiadomienia o innych funkcjach programu Visual Studio.
 
-## <a name="performance-manager-dialog"></a>Okno dialogowe Menedżer wydajności
+## <a name="performance-manager-dialog"></a>Menedżer wydajności — okno dialogowe
 
-![okno dialogowe Menedżer wydajności](media/performance-manager.png)
+![Menedżer wydajności — okno dialogowe](media/performance-manager.png)
 
-Wszystkie rozszerzenia, które synchronicznie załadowane wszystkie pakiety w wszystkie sesje użytkowników są wyświetlane w **przestarzałe interfejsy API** kartę.
+Wszystkie rozszerzenia, które synchronicznie ładowały wszystkie pakiety w dowolnych sesjach użytkownika, są wyświetlane na karcie **przestarzałe interfejsy API** .
 
-* Użytkownicy będą mogli kliknąć na **więcej informacji o tym problemie** zebrać więcej informacji na temat przestarzałych API.
-* Użytkownicy mogą skontaktuj się z ich dostawcami rozszerzenia postęp migracji.
+* Kliknij **więcej informacji o tym problemie** , aby zebrać więcej informacji na temat przestarzałych interfejsów API.
+* Skontaktuj się z dostawcami rozszerzeń w celu uzyskania postępu migracji.
 
-Twórcy rozszerzeń można znaleźć instrukcje dotyczące migracji pakietów do asynchronicznego automatyczne ładowanie na [Przeprowadź migrację do AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Określanie ustawień synchronicznego ładowania automatyczne przy użyciu zasad grupy
 
-## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Określ ustawienia Załaduj synchronicznego przy użyciu zasad grupy
+Administratorzy mogą włączyć zasady grupy, aby umożliwić synchroniczne automatyczne ładowanie. Aby to zrobić, należy ustawić zasady opartych na rejestrze dla następującego klucza:
 
-Uruchamianie programu Visual Studio 2019 Update 1, domyślnie, załaduj synchroniczne bloki instalacji programu Visual Studio. Po włączeniu zasad grupy, można skonfigurować programu Visual Studio umożliwia synchroniczne automatyczne ładowanie na poszczególnych komputerach. Aby to zrobić, należy ustawić zasady opartych na rejestrze dla następującego klucza:
+**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
-
-Wpis = **dozwolone**
+Wpis = **dozwolony**
 
 Wartość = (DWORD)
-* **0** Załaduj synchroniczne nie jest dozwolona
-* **1** jest dozwolone Załaduj synchroniczne
+* **0** to synchroniczne automatyczne ładowanie nie jest dozwolone
+* **1** jest dozwolone synchroniczne automatyczne ładowanie
 
-Aby uzyskać więcej informacji na temat synchroniczne automatyczne ładowanie ustawień w Visual Studio 2019 Update 1, zobacz [synchroniczne zachowanie automatyczne ładowanie](https://aka.ms/AA52xzw) strony.
+## <a name="extension-authors"></a>Autorzy rozszerzeń
+Autorzy rozszerzeń mogą znaleźć instrukcje migrowania pakietów do asynchronicznego ładowania automatyczne podczas [migracji do AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="see-also"></a>Zobacz także
+Aby uzyskać więcej informacji na temat synchronicznych ustawień autoładowania w programie Visual Studio 2019, zobacz stronę [zachowanie synchronicznego ładowania automatyczne](https://aka.ms/AA52xzw) .

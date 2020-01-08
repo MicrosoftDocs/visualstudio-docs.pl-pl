@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: dd57ecafa0b4da56366faa83d52c39ca556e421a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653148"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591570"
 ---
 # <a name="static-helper-classes"></a>Statyczne klasy pomocy
 
@@ -95,7 +95,7 @@ Klasa **PexChoose** może działać w dwóch trybach:
 
 * Wygenerowany kod dla określonych przypadków testowych konfiguruje dostawcę wyboru w określony sposób, tak aby ponowne wykonanie takiego przypadku testowego powodowało wybór konkretnych opcji wyzwalania określonej ścieżki wykonania.
 
-**Wykorzystywani**
+**Sposób użycia**
 
 * Proste wywołanie **PexChoose. Value** w celu wygenerowania nowej wartości:
 
@@ -141,7 +141,7 @@ public partial class MathExTests {
 
 Klasa statyczna używana do ignorowania ograniczeń dotyczących parametrów oraz do drukowania informacji symbolicznych skojarzonych z wartościami.
 
-**Wykorzystywani**
+**Sposób użycia**
 
 Zwykle IntelliTest próbuje uwzględnić wszystkie ścieżki wykonywania kodu podczas wykonywania. Jednak szczególnie w przypadku obliczania warunków założeń i potwierdzeń nie należy eksplorować wszystkich możliwych przypadków.
 
@@ -170,6 +170,6 @@ public static void AreElementsNotNull<T>(T[] value)
 }
 ```
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Chcesz przekazać opinię?
 
 Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

@@ -9,19 +9,19 @@ helpviewer_keywords:
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75575929"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Instrukcje: Rozwiń proces kompilacji programu Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Porady: rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu kompilacji jest definiowany przez szereg [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* pliki, które są importowane w pliku projektu. Te zaimportowane pliki *Microsoft.Common.targets*, można rozszerzyć, aby możliwe było uruchamianie niestandardowych zadań w kilku miejscach w procesie kompilacji. W tym artykule opisano dwie metody, można użyć, aby rozszerzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] procesu kompilacji:
 
 - Zastępowanie określonych wstępnie zdefiniowanych elementów docelowych zdefiniowanych we wspólnych celach (*Microsoft. Common. targets* lub importowanych plikach).
@@ -32,7 +32,7 @@ ms.locfileid: "70913179"
 Wspólne obiekty docelowe zawierają zestaw wstępnie zdefiniowanych pustych obiektów docelowych, które są wywoływane przed i po niektórych głównych elementach docelowych w procesie kompilacji. Na przykład [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wywołania `BeforeBuild` docelowej przed funkcją main `CoreBuild` docelowego i `AfterBuild` docelowe po `CoreBuild` docelowej. Domyślnie puste elementy docelowe w wspólnych elementach docelowych nie wykonują żadnych operacji, ale można przesłonić swoje domyślne zachowanie przez zdefiniowanie obiektów docelowych w pliku projektu, który importuje wspólne elementy docelowe. Zastępowanie wstępnie zdefiniowanych obiektów docelowych, należy skorzystać z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadań daje większą kontrolę nad procesem kompilacji.
 
 > [!NOTE]
-> Projekty w stylu zestawu SDK mają niejawny import elementów docelowych *po ostatnim wierszu pliku projektu*. Oznacza to, że nie można zastąpić domyślnych obiektów docelowych, chyba że ręcznie określisz swoje [Importy zgodnie z opisem w temacie How to: Użyj zestawów SDK](how-to-use-project-sdk.md)projektu MSBuild.
+> Projekty w stylu zestawu SDK mają niejawny import elementów docelowych *po ostatnim wierszu pliku projektu*. Oznacza to, że nie można przesłonić domyślnych obiektów docelowych, chyba że ręcznie określisz swoje Importy zgodnie z opisem w artykule [jak: Użyj zestawów SDK projektu MSBuild](how-to-use-project-sdk.md).
 
 #### <a name="to-override-a-predefined-target"></a>Aby wstępnie zdefiniowany obiekt docelowy zastąpienia
 
@@ -56,10 +56,10 @@ Wspólne obiekty docelowe zawierają zestaw wstępnie zdefiniowanych pustych obi
 
 W poniższej tabeli przedstawiono wszystkie elementy docelowe, które można bezpiecznie przesłonić.
 
-|Nazwa obiektu docelowego|Opis|
+|Nazwa docelowa|Opis|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Zadania, które są wstawiane w jednym z następujących elementów docelowych uruchomienia przed lub po zakończeniu kompilacji core. Większość dostosowań są wykonywane tylko w jednym z następujących dwóch elementów docelowych.|
-|`BeforeBuild`, `AfterBuild`|Zadania, które są wstawiane w jednym z następujących elementów docelowych uruchomi się przed lub po wszystko inne w kompilacji. **Uwaga:**  Elementy `BeforeBuild` i`AfterBuild` są już zdefiniowane w komentarzach na końcu większości plików projektu, co pozwala łatwo dodawać zdarzenia przed i po kompilacji do pliku projektu.|
+|`BeforeBuild`, `AfterBuild`|Zadania, które są wstawiane w jednym z następujących elementów docelowych uruchomi się przed lub po wszystko inne w kompilacji. **Uwaga:** `BeforeBuild` i `AfterBuild` elementy docelowe zostały już zdefiniowane w komentarzach na końcu większość plików projektu, dzięki czemu możesz łatwo dodać zdarzenia przed i po kompilacji do pliku projektu.|
 |`BeforeRebuild`, `AfterRebuild`|Zadania, które są wstawiane w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe odbudować funkcji jest wywoływana. Kolejność wykonywania docelowego w *Microsoft.Common.targets* jest: `BeforeRebuild`, `Clean`, `Build`, a następnie `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Zadania, które są wstawiane w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe czysta funkcja jest wywoływana.|
 |`BeforePublish`, `AfterPublish`|Zadania, które są wstawiane w jednym z następujących elementów docelowych uruchomienia przed lub po podstawowe publikowanie funkcji jest wywoływana.|
@@ -69,7 +69,7 @@ W poniższej tabeli przedstawiono wszystkie elementy docelowe, które można bez
 ## <a name="override-dependson-properties"></a>Zastąpienie DependsOn właściwości
 Zastępowanie wstępnie zdefiniowanych obiektów docelowych to prosty sposób rozszerzyć proces kompilacji, ale, ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sekwencyjnie, ocenia definicji elementów docelowych nie istnieje sposób, aby zapobiec innego projektu, który importuje projektu z zastępowanie cele już zostały zastąpione. Tak, na przykład ostatniego `AfterBuild` docelowej zdefiniowane w pliku projektu po inne projekty zostały zaimportowane, będzie używany podczas kompilacji.
 
-Można zabezpieczyć przed niezamierzonymi zastąpieniami elementów docelowych, zastępując właściwości DependsOn, które są używane `DependsOnTargets` w atrybutach we wspólnych elementach docelowych. Na przykład `Build` docelowy zawiera `DependsOnTargets` wartość atrybutu `"$(BuildDependsOn)"`. Należy wziąć pod uwagę:
+Można chronić przed niezamierzonymi zastąpieniami docelowymi, zastępując właściwości DependsOn, które są używane w atrybutach `DependsOnTargets` w ramach wspólnych elementów docelowych. Na przykład `Build` docelowy zawiera `DependsOnTargets` wartość atrybutu `"$(BuildDependsOn)"`. Rozważ następujące kwestie:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>

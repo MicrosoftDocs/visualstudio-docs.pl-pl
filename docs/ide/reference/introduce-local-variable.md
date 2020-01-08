@@ -1,73 +1,73 @@
 ---
-title: Wprowadź zmienną lokalną
+title: Wprowadzanie zmiennej lokalnej
 description: Wygeneruj zmienną lokalną, aby zastąpić istniejące wyrażenie. Zaznacz wyrażenie, kliknij prawym przyciskiem myszy i wybierz menu szybkie akcje i refaktoryzacje, wybierz pozycję Wprowadź wartość lokalna dla (wszystkie wystąpienia) wyrażenia "Expression".
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668753"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568818"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 
-Ta generacja kodu ma zastosowanie do:
+Dotyczy to generowanie kodu:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
-**Co:** Umożliwia natychmiastowe wygenerowanie zmiennej lokalnej w celu zastąpienia istniejącego wyrażenia.
+**Co:** pozwala natychmiast wygenerować zmienną lokalną, aby zastąpić istniejące wyrażenia.
 
-**Kiedy:** Masz kod, który może być łatwo ponownie wykorzystany później, jeśli był w zmiennej lokalnej.
+**Kiedy:** masz kod, który można łatwo wykorzystać także później, jakby był w zmiennej lokalnej.
 
-**Dlaczego:** Można kopiować i wklejać kod wielokrotnie, aby używać go w różnych lokalizacjach, jednak lepszym rozwiązaniem jest wykonanie operacji raz, zapisanie wyniku w zmiennej lokalnej i użycie zmiennej lokalnej w całym.
+**Dlaczego:** możesz skopiować i wkleić kod wiele razy go używać w różnych miejscach, jednak byłoby lepiej wykonać tę operację jeszcze raz, przechowuje wynik w zmiennej lokalnej i użyć zmiennej lokalnej przez cały.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Zaznacz wyrażenie, które ma zostać przypisane do nowej zmiennej lokalnej.
+1. Zaznacz wyrażenie, które chcesz przypisać do zmiennej lokalnej.
 
    - C#:
 
-       ![Wyróżniony kodC#](media/local-highlight-cs.png)
+       ![Wyróżniony kod C#](media/local-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod VB](media/local-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/local-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
       - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z wyróżnionym wyrażeniem.
 
-   ![Wprowadź lokalną wersję zapoznawczą](media/local-preview-cs.png)
+   ![Wprowadzenie lokalnego (wersja zapoznawcza)](media/local-preview-cs.png)
 
 3. Wybierz pozycję **wprowadź lokalne dla (wszystkie wystąpienia)** z menu rozwijanego.
 
    > [!TIP]
-   > Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
+   > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
 
-   Zostanie utworzona zmienna lokalna z typem wywnioskowanym na podstawie jego użycia. Nadaj nowej nazwie nową zmienną lokalną.
+   Zmienna lokalna jest tworzony z typem wywnioskować na podstawie jej użycie. Nadaj nowej zmiennej lokalnej nową nazwę.
 
    - C#:
 
-       ![Zaimplementuj wynik interfejsuC#](media/local-result-cs.png)
+       ![Implementuj interfejs wynik C#](media/local-result-cs.png)
 
    - Visual Basic:
 
-       ![Implementuj wyniki interfejsu VB](media/local-result-vb.png)
+       ![Implementuj interfejs wynik VB](media/local-result-vb.png)
 
    > [!NOTE]
-   > Możesz użyć.. **. wszystkie wystąpienia...** opcja menu, aby zamienić każde wystąpienie wybranego wyrażenia, a nie tylko te, które zostały specjalnie wyróżnione.
+   > Możesz użyć **.. wyświetlacze wystąpień...**  opcję menu, aby zastąpić każde wystąpienie wybranego wyrażenia, a nie tylko jedną, specjalnie wyróżnioną pozycją.
 
 ## <a name="see-also"></a>Zobacz także
 

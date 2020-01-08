@@ -2,20 +2,20 @@
 title: Testowanie aplikacji platformy UWP przy użyciu kodowanego testu interfejsu użytkownika
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659968"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590361"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Tworzenie kodowanego testu interfejsu użytkownika w celu przetestowania aplikacji platformy UWP
 
@@ -57,13 +57,13 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
    Me.textBox.Text = Me.button.Name
    ```
 
-1. Naciśnij klawisz **Ctrl** , +**F5** , aby uruchomić aplikację. Powinien wyglądać podobnie do poniższego:
+1. Naciśnij klawisz **Ctrl** ,+**F5** , aby uruchomić aplikację. Powinna zostać wyświetlona zawartość podobna do tej:
 
    ![Aplikacja platformy UWP za pomocą przycisku i pola tekstowego](media/uwp-app.png)
 
 ## <a name="create-a-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika
 
-1. Aby dodać projekt testowy do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
+1. Aby dodać projekt testowy do rozwiązania, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
 
 1. Wyszukaj i wybierz szablon **projekt kodowanego testu interfejsu użytkownika (Uniwersalna aplikacja systemu Windows)** .
 
@@ -80,9 +80,9 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
 
    ![Generowanie kodu dla okna dialogowego kodowanego testu interfejsu użytkownika](../test/media/manually-edit-the-test.png)
 
-1. Jeśli aplikacja platformy UWP nie jest już uruchomiona, należy ją uruchomić, naciskając klawisz **Ctrl** +**F5**.
+1. Jeśli aplikacja platformy UWP nie jest już uruchomiona, należy ją uruchomić, naciskając klawisz **Ctrl**+**F5**.
 
-1. Otwórz okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** , umieszczając kursor w metodzie `CodedUITestMethod1`, a następnie wybierając **test**  > **generować kod dla kodowanego testu interfejsu** użytkownika  > **użyć konstruktora kodowanego testu interfejsu użytkownika**.
+1. Otwórz okno dialogowe **Konstruktor kodowanego testu interfejsu użytkownika** , umieszczając kursor w metodzie `CodedUITestMethod1`, a następnie wybierając **test** > **generować kod dla kodowanego testu interfejsu** użytkownika > **użyć konstruktora kodowanego testu interfejsu użytkownika**.
 
 1. Dodaj formanty do mapy formantów interfejsu użytkownika. Użyj narzędzia Cross-krzyżyk **konstruktora kodowanego testu interfejsu użytkownika** , aby wybrać kontrolkę przycisk w aplikacji platformy UWP. W oknie dialogowym **Dodawanie potwierdzeń** rozwiń okienko **mapy kontrolek interfejsu użytkownika** w razie potrzeby, a następnie wybierz pozycję **Dodaj formant do mapy formantów interfejsu użytkownika**.
 
@@ -90,7 +90,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
 
 1. Powtórz poprzedni krok, aby dodać kontrolkę TextBox do mapy formantów interfejsu użytkownika.
 
-1. W oknie dialogowym **Konstruktor kodowanego testu interfejsu użytkownika** wybierz pozycję **Generuj kod** lub naciśnij klawisz **Ctrl** +**G**. Następnie wybierz pozycję **Generuj** , aby utworzyć kod dla zmian mapy formantów interfejsu użytkownika.
+1. W oknie dialogowym **Konstruktor kodowanego testu interfejsu użytkownika** wybierz pozycję **Generuj kod** lub naciśnij klawisz **Ctrl**+**G**. Następnie wybierz pozycję **Generuj** , aby utworzyć kod dla zmian mapy formantów interfejsu użytkownika.
 
      ![Generuj kod dla mapy interfejsu użytkownika](../test/media/generate-code-dialog.png)
 
@@ -98,7 +98,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
 
      ![Kliknij formant przycisku, aby ustawić wartość TextBox](../test/media/uwp-app-button-textbox.png)
 
-1. Dodaj potwierdzenie, aby zweryfikować tekst w kontrolce TextBox. Użyj narzędzia krzyżyk, aby zaznaczyć formant TextBox, a następnie wybierz właściwość **Text** w oknie dialogowym **Dodawanie potwierdzeń** . Następnie wybierz pozycję **Dodaj potwierdzenie** lub naciśnij klawisz **Alt** +**A**. W oknie **komunikat w przypadku niepowodzenia potwierdzenia** wprowadź **wartość pola tekstowego.** a następnie wybierz przycisk **OK**.
+1. Dodaj potwierdzenie, aby zweryfikować tekst w kontrolce TextBox. Użyj narzędzia krzyżyk, aby zaznaczyć formant TextBox, a następnie wybierz właściwość **Text** w oknie dialogowym **Dodawanie potwierdzeń** . Następnie wybierz pozycję **Dodaj potwierdzenie** lub naciśnij klawisz **Alt**+**A**. W oknie **komunikat w przypadku niepowodzenia potwierdzenia** wprowadź **wartość pola tekstowego.** a następnie wybierz przycisk **OK**.
 
      ![Wybierz pole tekstowe z krzyżykiem i Dodaj potwierdzenie](../test/media/add-assertion-for-text.png)
 
@@ -137,7 +137,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
     End Sub
     ```
 
-1. Następnie musimy uzyskać **AutomationId** [aplikacji](#create-a-uwp-app-to-test) platformy UWP, która ma zostać przetestowana. Otwórz menu **Start** systemu Windows, aby wyświetlić kafelek aplikacji. Następnie przeciągnij narzędzie krzyżykowe ![Target ikonę ](media/target-icon.png) z okna dialogowego **Konstruktor kodowanego testu interfejsu użytkownika** do kafelka aplikacji. Gdy niebieskie pole otacza kafelka, zwolnij przycisk myszy.
+1. Następnie musimy uzyskać **AutomationId** [aplikacji](#create-a-uwp-app-to-test) platformy UWP, która ma zostać przetestowana. Otwórz menu **Start** systemu Windows, aby wyświetlić kafelek aplikacji. Następnie przeciągnij okno dialogowe Narzędzia do krzyżowego ![ikoną docelową](media/target-icon.png) z okna dialogowego **Konstruktor kodowanego testu interfejsu użytkownika** do kafelka aplikacji. Gdy niebieskie pole otacza kafelka, zwolnij przycisk myszy.
 
    ![Narzędzie krzyżykowe](media/cross-hair-tool.png)
 
@@ -145,7 +145,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
 
    ![AutomationID w oknie dialogowym Dodawanie potwierdzenia](../test/media/automation-id.png)
 
-1. Dodaj kod do metody testowej, aby uruchomić aplikację platformy UWP. W **Eksplorator rozwiązań**Otwórz *CodedUITest1.cs* lub *CodedUITest1. vb*. Powyżej wywołania `AssertMethod1` Dodaj kod, aby uruchomić aplikację platformy UWP:
+1. Dodaj kod do metody testowej, aby uruchomić aplikację platformy UWP. W **Eksplorator rozwiązań**Otwórz *CodedUITest1.cs* lub *CodedUITest1. vb*. Powyżej wywołania `AssertMethod1`Dodaj kod, aby uruchomić aplikację platformy UWP:
 
    ```csharp
    XamlWindow.Launch("af5ecd75-f252-45a1-9e7e-c6f1d8f054ff_0q1pp7qrjexbp!App")
@@ -160,7 +160,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
    > [!IMPORTANT]
    > Przytnij początek identyfikatora automatyzacji, aby usunąć znaki, takie jak **P ~** . Jeśli te znaki nie są przycinane, test zgłosi `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` podczas próby uruchomienia aplikacji.
 
-1. Następnie Dodaj kod do metody testowej, aby kliknąć przycisk. W wierszu po `XamlWindow.Launch` Dodaj gest, aby nacisnąć kontrolkę Button:
+1. Następnie Dodaj kod do metody testowej, aby kliknąć przycisk. W wierszu po `XamlWindow.Launch`Dodaj gest, aby nacisnąć kontrolkę Button:
 
    ```csharp
    Gesture.Tap(this.UIMap.UIUWPAppWindow.UIButtonButton);
@@ -202,7 +202,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
        End Sub
    ```
 
-1. Skompiluj projekt testowy, a następnie otwórz **Eksploratora testów** , wybierając pozycję **test**  > **Windows**  > **Eksplorator testów**.
+1. Skompiluj projekt testowy, a następnie otwórz **Eksploratora testów** , wybierając pozycję **test** > **Windows** > **Eksplorator testów**.
 
 1. Wybierz opcję **Uruchom wszystkie** , aby uruchomić test.
 
@@ -212,7 +212,7 @@ Pierwszym krokiem jest utworzenie prostej aplikacji platformy UWP do uruchomieni
 
    ![Testy zakończone w Eksploratorze testów](../test/media/test-explorer-coded-ui-test-passed.png)
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 ### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: Dlaczego nie widzę opcji rejestrowania kodowanego testu interfejsu użytkownika w oknie dialogowym generowanie kodu dla kodowanego testu interfejsu użytkownika?
 
@@ -222,9 +222,9 @@ Odp **.: opcja**rejestrowania nie jest obsługiwana w przypadku aplikacji platfo
 
 Odp **.: nie**, obsługiwane są tylko aplikacje oparte na języku XAML.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie mogę zmodyfikować kodu w pliku UIMap. Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?
 
-Odp **.: wszelkie**zmiany kodu wprowadzane w pliku *UIMapDesigner.cs* są zastępowane przy każdym wygenerowaniu kodu przy użyciu **konstruktora kodowanego testu interfejsu użytkownika**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj ją do pliku *UIMap.cs* i zmień jej nazwę. Plik *UIMap.cs* może służyć do przesłonięcia metod i właściwości w pliku *UIMapDesigner.cs* . Usuń odwołanie do oryginalnej metody w pliku *CodedUITest.cs* i zastąp je nazwą metody o zmienionej nazwie.
+Odp **.: wszelkie**zmiany kodu wprowadzane w pliku *UIMapDesigner.cs* są zastępowane przy każdym wygenerowaniu kodu przy użyciu **konstruktora kodowanego testu interfejsu użytkownika**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj ją do pliku *UIMap.cs* i zmień jej nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Usuń odwołanie do oryginalnej metody w pliku *CodedUITest.cs* i zastąp je nazwą metody o zmienionej nazwie.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660087"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591973"
 ---
 # <a name="security-of-text-templates"></a>Zabezpieczenia szablonów tekstowych
 Szablony tekstowe mają następujące kwestie dotyczące zabezpieczeń:
@@ -24,7 +24,7 @@ Szablony tekstowe mają następujące kwestie dotyczące zabezpieczeń:
 - Jeśli mechanizm wykorzystywany przez hosta do znajdowania procesora dyrektywy nie jest zabezpieczony, może zostać uruchomiony złośliwy procesor dyrektywy.
 
 ## <a name="arbitrary-code"></a>Dowolny kod
- Podczas pisania szablonu można umieścić dowolny kod w tagach > \< # #. Umożliwia to wykonywanie dowolnego kodu z poziomu szablonu tekstu.
+ Podczas pisania szablonu można umieścić dowolny kod w tagach > \<# #. Umożliwia to wykonywanie dowolnego kodu z poziomu szablonu tekstu.
 
  Upewnij się, że uzyskujesz szablony z zaufanych źródeł. Pamiętaj, aby ostrzec użytkowników końcowych aplikacji, aby nie wykonywały szablonów, które nie pochodzą z zaufanych źródeł.
 

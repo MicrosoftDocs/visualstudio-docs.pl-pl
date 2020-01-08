@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afb10d2fb5dcf99c63fb12ac624b904353d95b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647768"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591713"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu
 
@@ -31,7 +31,7 @@ W przypadku adaptacji lokalizacji plików do aplikacji należy wziąć pod uwag�
 
 - Znajdowanie dostępnej lokalizacji. Użytkownicy mogą nie mieć dostępu do folderu *Program Files* komputera, dlatego przechowywanie plików z plikami aplikacji może nie zadziałało.
 
-- Znajdowanie bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C: \\* ) nie jest bezpieczne. W przypadku danych aplikacji zalecamy użycie folderu *dane aplikacji* . W przypadku poszczególnych danych użytkownika aplikacja może utworzyć plik dla każdego użytkownika w folderze *dokumenty* .
+- Znajdowanie bezpiecznej lokalizacji. Przechowywanie plików w folderze głównym (*C:\\* ) nie jest bezpieczne. W przypadku danych aplikacji zalecamy użycie folderu *dane aplikacji* . W przypadku poszczególnych danych użytkownika aplikacja może utworzyć plik dla każdego użytkownika w folderze *dokumenty* .
 
 - Przy użyciu prawidłowej nazwy pliku. Możesz użyć formantów <xref:System.Windows.Forms.OpenFileDialog> i <xref:System.Windows.Forms.SaveFileDialog>, aby zmniejszyć prawdopodobieństwo nieprawidłowych nazw plików. Należy pamiętać, że od momentu, gdy użytkownik wybierze plik i gdy kod manipuluje plikiem, plik może zostać usunięty. Ponadto użytkownik może nie mieć uprawnień do zapisu w pliku.
 
@@ -45,7 +45,7 @@ Jak bezpieczny fragment kodu jest zależny od tego, gdzie jest używany w kodzie
 
 - Ochrona zasobów (takich jak dzienniki zdarzeń, rejestr)
 
-- Przechowywanie wpisów tajnych
+- Przechowywanie kluczy tajnych
 
 - Weryfikowanie danych wejściowych
 

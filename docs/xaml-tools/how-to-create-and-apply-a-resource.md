@@ -6,17 +6,17 @@ f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7648772c8ac1657f4c650b38d9f0fc22e8653022
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592967"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Tworzenie i stosowanie zasobów
 
@@ -24,7 +24,7 @@ Style i szablony dla elementów w projektant XAML są przechowywane w jednostkac
 
 Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu](xref:Windows.UI.Xaml.Style)lub [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate), okno dialogowe **Tworzenie zasobu** umożliwia definiowanie zasobów na poziomie aplikacji, na poziomie dokumentu lub na poziomie elementu. Te poziomy określają, gdzie można użyć zasobu. Na przykład, jeśli zdefiniujesz zasób na poziomie elementu, zasób może być stosowany tylko do elementu, w którym został utworzony. Możesz również zapisać zasób w [słowniku zasobów](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references), czyli osobnym pliku, którego można użyć ponownie w innym projekcie.
 
-## <a name="create-a-new-resource"></a>Utwórz nowy zasób
+## <a name="create-a-new-resource"></a>Tworzenie nowego zasobu
 
 1. Gdy plik XAML jest otwarty w projektant XAML, Utwórz element lub wybierz element w oknie konspektu dokumentu.
 
@@ -58,7 +58,7 @@ Za każdym razem, gdy tworzysz nowy zasób z istniejącej właściwości, [stylu
 
       Jeśli nie widzisz zasobu, który powinien być widoczny, może to być spowodowane faktem, że typ zasobu nie jest zgodny z typem właściwości.
 
-   - Zastosuj styl lub szablon kontrolki do kontrolki. Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy (menu kontekstowe) kontrolki w oknie Konspekt dokumentu, wybierz polecenie **Edytuj szablon** lub **Edytuj dodatkowe szablony**, wybierz polecenie **Zastosuj zasób**, a następnie wybierz nazwę szablonu formantu z listy, który się.
+   - Zastosuj styl lub szablon kontrolki do kontrolki. Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy (menu kontekstowe) kontrolki w oknie Konspekt dokumentu, wybierz polecenie **Edytuj szablon** lub **Edytuj dodatkowe szablony**, wybierz pozycję **Zastosuj zasób**, a następnie wybierz nazwę szablonu formantu z wyświetlonej listy.
 
      > [!NOTE]
      > **Edytuj szablon** stosuje szablony kontrolek. **Edycja dodatkowych szablonów** dotyczy innych typów szablonów.

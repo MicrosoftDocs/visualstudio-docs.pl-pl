@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653036"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591544"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing często zadawane pytania
 
@@ -25,7 +25,7 @@ Live Unit Testing współpracuje z trzema popularnymi platformami testowania jed
 
 |Struktury testowej  |Minimalna wersja programu Visual Studio karty  |Minimalna wersja Framework  |
 |---------|---------|---------|
-|xUnit.net |2\.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
+|{1&gt;{2&gt;xUnit.net&lt;2}&lt;1} |2\.2.0-beta3-build1187 wersji xunit.Runner.VisualStudio |xunit 1.9.2 |
 |Rozszerzenie NUnit |NUnit3TestAdapter wersja 3.7.0 |Wersja 3.5.0 NUnit |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |1\.0.5-preview rozwiązań MSTest.TestFramework |
 
@@ -33,7 +33,7 @@ Jeśli masz starsze projekty testowe bazujące na MSTestach odwołujące się `M
 
 W niektórych przypadkach może być konieczne jawne Przywracanie pakietów NuGet, odwołują się projekty w rozwiązaniu aby Live Unit Testing do pracy. Pakiety można przywrócić, wykonując jawną kompilację rozwiązania (wybierz opcję **kompiluj** > **Skompiluj ponownie rozwiązanie** z menu programu Visual Studio najwyższego poziomu) lub klikając rozwiązanie prawym przyciskiem myszy i wybierając pozycję **Przywróć pakiety NuGet** przed włączeniem testów jednostkowych.
 
-## <a name="net-core-support"></a>Obsługa platformy .NET Core
+## <a name="net-core-support"></a>Pomoc techniczna dotycząca programu .NET Core
 
 **Czy Live Unit Testing współpracuje z platformą .NET Core?**
 
@@ -85,15 +85,26 @@ Na przykład może istnieć obiekt docelowy, który tworzy pakiety NuGet podczas
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>Komunikaty o błędach z \<OutputPath > lub \<OutDir >
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Komunikaty o błędach z \<OutputPath >, \<OutDir > lub \<IntermediateOutputPath >
 
 **Dlaczego otrzymuję następujący błąd, gdy Live Unit Testing próbuje skompilować moje rozwiązanie: "... wydaje się, aby bezwarunkowo ustawić `<OutputPath>` lub `<OutDir>`. Live Unit Testing nie będzie wykonywać testów z zestawu wyjściowego "?**
 
-Ten błąd może wystąpić, jeśli proces kompilacji niewarunkowo zastępuje `<OutputPath>` lub `<OutDir>`, tak że nie jest podkatalogiem `<BaseOutputPath>`. W takich przypadkach Live Unit Testing nie będzie działał, ponieważ również zastępuje te wartości, aby upewnić się, że artefakty kompilacji są upuszczane do folderu w obszarze `<BaseOutputPath>`. Jeśli musisz zastąpić lokalizację, w której artefakty kompilacji mają zostać porzucone w regularnej kompilacji, przesłonić `<OutputPath>` warunkowo na podstawie `<BaseOutputPath>`.
+Ten błąd może wystąpić, jeśli proces kompilacji dla Twojego rozwiązania ma logikę niestandardową, która określa, gdzie powinny być generowane pliki binarne. Domyślnie lokalizacja plików binarnych zależy od `<OutputPath>`, `<OutDir>` lub `<IntermediateOutputPath>` oraz `<BaseOutputPath>` lub `<BaseIntermediateOutputPath>`.
 
-Na przykład jeśli kompilacja przesłania `<OutputPath>`, jak pokazano poniżej:
+Live Unit Testing zastępuje te zmienne, aby upewnić się, że artefakty kompilacji są upuszczane do folderu Live Unit Testing artefakty i zakończą się niepowodzeniem, jeśli proces kompilacji również zastępuje te zmienne.
 
-```xml 
+Istnieją dwa główne podejścia do pomyślnej kompilacji Live Unit Testing. Aby ułatwić konfigurację kompilacji, można oprzeć ścieżki wyjściowe na `<BaseIntermediateOutputPath>`. Aby uzyskać bardziej skomplikowane konfiguracje, można oprzeć ścieżki wyjściowe na `<LiveUnitTestingBuildRootPath>`.
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>Zastępowanie `<OutputPath>`/`<IntermediateOutputPath>` warunkowo na podstawie `<BaseOutputPath>`/ `<BaseIntermediateOutputPath>`.
+
+> [!NOTE]
+> Aby skorzystać z tej metody, każdy projekt musi być w stanie niezależny od siebie. Podczas kompilowania nie ma jednego artefaktu odwołania do projektu z innego projektu. Nie ma możliwości dynamicznego ładowania zestawów z innego projektu w czasie wykonywania (na przykład `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`wywołań).
+
+Podczas kompilacji Live Unit Testing automatycznie przesłania `<BaseOutputPath>``<BaseIntermediateOutputPath>` /zmiennych w celu kierowania do folderu Live Unit Testing artefaktów.
+
+Na przykład jeśli kompilacja przesłania <OutputPath>, jak pokazano poniżej:
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Na przykład jeśli kompilacja przesłania `<OutputPath>`, jak pokazano poniżej
 
 następnie można zastąpić go następującym kodem XML:
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ następnie można zastąpić go następującym kodem XML:
 Dzięki temu `<OutputPath>` znajduje się w `<BaseOutputPath>` folderze.
 
 Nie należy przesłaniać `<OutDir>` bezpośrednio w procesie kompilacji; Zamiast tego Przesłoń `<OutputPath>`, aby porzucić artefakty kompilacji do określonej lokalizacji.
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>Zastępowanie właściwości na podstawie właściwości `<LiveUnitTestingBuildRootPath>`.
+
+> [!NOTE]
+> W tym podejściu należy zachować ostrożność w przypadku plików dodanych w folderze artefaktów, które nie są generowane podczas kompilacji. W poniższym przykładzie pokazano, co należy zrobić podczas umieszczania folderu Packages w obszarze artefakty. Ponieważ zawartość tego folderu nie jest generowana podczas kompilacji, właściwość MSBuild **nie powinna być zmieniana**.
+
+Podczas kompilacji Live Unit Testing Właściwość `<LiveUnitTestingBuildRootPath>` jest ustawiana na lokalizację folderu Live Unit Testing artefaktów.
+
+Załóżmy na przykład, że w projekcie znajduje się struktura.
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Podczas kompilacji Live Unit Testing Właściwość `<LiveUnitTestingBuildRootPath>` jest ustawiona na pełną ścieżkę `.vs\...\lut\0\b`. Jeśli projekt definiuje `<ArtifactsRoot>` właściwość, która jest mapowana na katalog rozwiązania, można zaktualizować projekt MSBuild w następujący sposób:
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>Lokalizacja artefaktu kompilacji
 
@@ -133,8 +184,6 @@ Istnieje kilka różnic:
 - Live Unit Testing nie tworzy nowej domeny aplikacji do uruchamiania testów, ale testy są uruchamiane z okna **Eksplorator testów** Utwórz nową domenę aplikacji.
 
 - Live Unit Testing uruchamia testy w każdym zestawie testów po kolei. W **Eksploratorze testów**można wybrać uruchamianie wielu testów równolegle.
-
-- Odnajdywanie i wykonywanie testów w Live Unit Testing używa wersji 2 `TestPlatform`, podczas gdy okno **Eksplorator testów** używa wersji 1. Nie zauważysz różnicy w większości przypadków, chociaż.
 
 - **Eksplorator testów** uruchamia testy w jednowątkowym apartamentie (STA) domyślnie, a Live Unit Testing uruchamia testy w wielowątkowym apartamentie (MTA). Aby uruchomić testy MSTest w STA w Live Unit Testing, dekorować metodę testową lub klasy zawierającej z atrybutem `<STATestMethod>` lub `<STATestClass>`, który można znaleźć w pakiecie NuGet `MSTest.STAExtensions 1.0.3-beta`. Dla NUnit, dekorować metodę testową z atrybutem `<RequiresThread(ApartmentState.STA)>` i dla xUnit z atrybutem `<STAFact>`.
 

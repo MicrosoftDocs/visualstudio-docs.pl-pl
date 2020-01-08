@@ -2,17 +2,17 @@
 title: Dyrektywa T4 dotycząca zestawu
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748186"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591895"
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 
@@ -32,7 +32,7 @@ W szablonie tekstu czasu projektowania programu Visual Studio dyrektywa `assembl
 
  Nazwa zestawu powinna być jedną z następujących:
 
-- Silna nazwa zestawu w GAC, taka jak `System.Xml.dll`. Możesz również użyć długiej formy, takiej jak `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Aby uzyskać więcej informacji, zobacz <xref:System.Reflection.AssemblyName>.
+- Silna nazwa zestawu w GAC, taka jak `System.Xml.dll`. Możesz również użyć długiej formy, takiej jak `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Aby uzyskać więcej informacji, zobacz temat <xref:System.Reflection.AssemblyName>.
 
 - Bezwzględna ścieżka zestawu
 
@@ -42,7 +42,7 @@ W szablonie tekstu czasu projektowania programu Visual Studio dyrektywa `assembl
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- Dyrektywa zestawu nie ma wpływu na przetworzony wstępnie szablon tekstowy. Zamiast tego należy uwzględnić wymagane odwołania w sekcji **odwołania** projektu programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Dyrektywa zestawu nie ma wpływu na wstępnie przetworzony szablon tekstu. Zamiast tego należy uwzględnić wymagane odwołania w sekcji **odwołania** projektu programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Generowanie tekstu w czasie wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Standardowe zestawy
  Następujące zestawy są ładowane automatycznie, aby nie trzeba było pisać dla nich dyrektyw zestawu:

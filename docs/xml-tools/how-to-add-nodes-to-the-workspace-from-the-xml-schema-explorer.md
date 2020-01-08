@@ -3,17 +3,17 @@ title: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77e1890df09443e133f9e528905b76374f6070bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2049b8da1caa4e0af0afc52aec6e75f499d85b8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646038"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592818"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Instrukcje: Dodawanie węzłów do obszaru roboczego z Eksploratora schematu XML
 
@@ -38,7 +38,7 @@ W tym temacie opisano sposób dodawania węzłów do [obszaru roboczego projekta
 
 2. Kliknij prawym przyciskiem myszy węzeł `PurchaseOrderType` w **Eksploratorze schematu XML** i wybierz polecenie **Pokaż wszystkie odwołania**.
 
-     @No__t_0 węzeł jest wyróżniony.
+     `purchaseOrder` węzeł jest wyróżniony.
 
 3. Przeciągnij węzeł `purchaseOrder` do widoku wykresu.
 

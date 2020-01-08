@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc714a4663505fe2a40cc145e8c8ca3c7bf86a1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649672"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587683"
 ---
 # <a name="design-warnings"></a>Ostrzeżenia dotyczące projektu
 
@@ -31,10 +31,10 @@ Obsługa ostrzeżeń dotyczących projektu przestrzeganie [wytycznych dotyczący
 | - | - |
 | [CA1000: Nie deklaruj składowych statycznych w typach ogólnych](../code-quality/ca1000.md) | Po wywołaniu statycznego elementu członkowskiego typu ogólnego dla typu trzeba określić argument typu. Po wywołaniu wystąpienia ogólnego elementu członkowskiego, które nie obsługuje wnioskowania, dla elementu członkowskiego musi zostać określony argument typu. W tych dwóch przypadkach składnia określająca argument typu jest różna i łatwo o pomyłkę. |
 | [CA1001: Typy z polami możliwymi do likwidacji powinny być możliwe do likwidacji](../code-quality/ca1001.md) | Klasa deklaruje i implementuje pole wystąpienia, które jest typem system. IDisposable, a Klasa nie implementuje interfejsu IDisposable. Klasa, która deklaruje pole IDisposable, pośrednio posiada niezarządzany zasób i powinna implementować interfejs IDisposable. |
-| [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002.md) | Element System. Collections. Generic. list < (of \< (T >) >) to ogólna kolekcja, która została zaprojektowana pod kątem wydajności, a nie dziedziczenia. Dlatego też lista nie zawiera wirtualnych elementów członkowskich. Zamiast powyższych powinny zostać zastosowane kolekcje ogólne, zaprojektowane do obsługi dziedziczenia. |
+| [CA1002: Nie ujawniaj list ogólnych](../code-quality/ca1002.md) | System.Collections.Generic.List < (z \<(T >) >) jest kolekcją ogólną, która jest przeznaczona dla wydajności, nie o dziedziczeniu. Dlatego też lista nie zawiera wirtualnych elementów członkowskich. Zamiast powyższych powinny zostać zastosowane kolekcje ogólne, zaprojektowane do obsługi dziedziczenia. |
 | [CA1003: Użyj wystąpień ogólnej procedury obsługi zdarzeń](../code-quality/ca1003.md) | Typ zawiera delegata zwracającego wartość void, którego sygnatura zawiera dwa parametry (pierwszy obiekt i drugi typ, który można przypisać do EventArgs), oraz element docelowy zawierający zestaw .NET Framework 2,0. |
 | [CA1004: Metody ogólne powinny udostępniać parametr typu](../code-quality/ca1004.md) | Wnioskowanie to ustalenie argumentu typu metody ogólnej przez typ argumentu przekazanego do metody, zamiast użycia jawnej specyfikacji argumentu typu. Aby włączyć wnioskowanie, podpis parametru metody ogólnej musi zawierać parametr, który jest tego samego typu co parametr typu dla metody. W tym przypadku argument typu nie musi zostać określony. Jeśli używasz wnioskowania dla wszystkich parametrów typu, składnia wywołania metod ogólnych i nieogólnych jest taka sama; upraszcza to użyteczność metod ogólnych. |
-| [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005.md) | Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest to zazwyczaj oczywiste z jednym parametrem typu, jak na liście \<T >, a w niektórych przypadkach z dwoma parametrami typu, jak w słowniku \<TKey TValue >. Jeśli jednak istnieją więcej niż dwa parametry typu, poziom trudności staje się zbyt wysoki dla większości użytkowników. |
+| [CA1005: Unikaj nadużywania parametrów w typach ogólnych](../code-quality/ca1005.md) | Im więcej parametrów typu zawiera typ ogólny, tym trudniej poznać i zapamiętać, co reprezentuje każdy z nich. Jest to zazwyczaj oczywiste z jednym parametrem typu, jak na liście\<T >, a w niektórych przypadkach z dwoma parametrami typu, jak w słowniku\<TKey, TValue >. Jeśli jednak istnieją więcej niż dwa parametry typu, poziom trudności staje się zbyt wysoki dla większości użytkowników. |
 | [CA1006: Nie zagnieżdżaj typów ogólnych w sygnaturach składowych](../code-quality/ca1006.md) | Argument typu zagnieżdżonego jest argumentem typu, który jest również typem ogólnym. Aby wywołać element członkowski, którego podpis zawiera argument typu zagnieżdżonego, użytkownik musi zainicjować wystąpienie pierwszego typu ogólnego i przekazać go do konstruktora drugiego typu ogólnego. Wymagana procedura oraz składnia są złożone i należy ich unikać. |
 | [CA1007: Używaj typów ogólnych wszędzie tam, gdzie jest to odpowiednie](../code-quality/ca1007.md) | Metoda widoczna na zewnątrz zawiera parametr przekazany przez odwołanie do typu System.Object. Użycie metody ogólnej umożliwia przekazanie wszystkich typów podlegających ograniczeniom do metody, bez uprzedniego rzutowania typu do typu parametru przekazanego przez odwołanie. |
 | [CA1008: Wyliczenia powinny zawierać wartość zero](../code-quality/ca1008.md) | Wartość domyślna niezainicjowanego typu wyliczeniowego, podobnie jak inne typy wartości, wynosi zero. Wyliczenie atrybutów bez flag powinno definiować składową przy użyciu wartości zero, aby wartość domyślna była prawidłową wartością wyliczenia. Jeśli wyliczenie, w którym zastosowano atrybut FlagsAttribute, definiuje element członkowski o wartości zero, powinno być nazwane „Brak”, aby wskazać, że żadne wartości nie zostały ustawione w wyliczeniu. |
@@ -88,7 +88,7 @@ Obsługa ostrzeżeń dotyczących projektu przestrzeganie [wytycznych dotyczący
 | [CA1061: Nie ukrywaj metod klasy podstawowej](../code-quality/ca1061.md) | Metoda w typie podstawowym jest ukryta przez metodę o identycznej nazwie typu pochodnego, gdy sygnatura parametru metody pochodnej różni się tylko typami, które są słabiej dziedziczone niż odpowiadające typy w sygnaturze parametru metody podstawowej. |
 | [CA1062 Zweryfikuj argumenty metod publicznych](../code-quality/ca1062.md) | Wszystkie argumenty odwołania, które są przekazywane do metody widocznej na zewnątrz, powinny być sprawdzane pod kątem wartości null. |
 | [CA1063: Zaimplementuj poprawnie interfejs IDisposable](../code-quality/ca1063.md) | Wszystkie typy IDisposable powinny poprawnie implementować wzorzec Dispose. |
-| [CA1064: Wyjątki powinny być publiczne](../code-quality/ca1064.md) | Wyjątek wewnętrzny jest widoczny tylko wewnątrz własnego zakresu wewnętrznego. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wewnętrzny wyjątek jest Dziedziczony z <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName> lub <xref:System.ApplicationException?displayProperty=fullName>, kod zewnętrzny nie będzie miał wystarczających informacji, aby dowiedzieć się, co należy zrobić z wyjątkiem. |
+| [CA1064: Wyjątki powinny być publiczne](../code-quality/ca1064.md) | Wyjątek wewnętrzny jest widoczny tylko wewnątrz własnego zakresu wewnętrznego. W przypadku wystąpienia wyjątku poza zakresem wewnętrznym tylko wyjątek podstawowy może zostać użyty do jego przechwycenia. Jeśli wyjątek wewnętrzny jest dziedziczony z <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, lub <xref:System.ApplicationException?displayProperty=fullName>, kod zewnętrzny nie ma wystarczające informacje, aby wiedzieli, co należy zrobić z wyjątkiem. |
 | [CA1065: Nie zgłaszaj wyjątków w nieoczekiwanych lokalizacjach](../code-quality/ca1065.md) | Metoda, od której nie oczekiwano zgłaszania wyjątków, zgłasza wyjątek. |
 | [CA1068: parametry CancellationToken muszą pochodzić z ostatnich](../code-quality/ca1068.md) | Metoda ma parametr CancellationToken, który nie jest ostatnim parametrem. |
 | [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210.md) | Silna nazwa chroni klientów przed nieświadomym ładowaniem zestawu, który został zmieniony. Zestawy bez silnej nazwy nie powinny być wdrażane poza bardzo ograniczonymi scenariuszami. Jeśli użytkownik udostępnia lub dystrybuuje zestawy, które nie są poprawnie podpisane, zestaw może zostać zmieniony, środowisko uruchomieniowe języka wspólnego może nie załadować zestawu lub użytkownik będzie musiał wyłączyć weryfikację na swoim komputerze. |

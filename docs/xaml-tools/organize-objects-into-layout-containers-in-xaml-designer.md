@@ -3,21 +3,21 @@ title: Organizowanie obiektów w kontenery układów w projektancie XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bdda64792195ecac41affeb6ec8a7f4f383ac8a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668822"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592939"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizowanie obiektów w kontenery układów w projektancie XAML
 
 W tym artykule opisano panele i kontrolki układu dla projektant XAML.
 
-Załóżmy, że obiekty mają być wyświetlane na stronie &mdash;objects takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
+Załóżmy, że obiekty mają być wyświetlane na stronie&mdash;obiektów, takich jak obrazy, przyciski i wideo. Być może chcesz, aby były wyświetlane w wierszach i kolumnach, w jednym wierszu w pionie lub w poziomie lub w stałej pozycji.
 
 Po dodaniu szansy myślisz, jak może wyglądać Strona, wybierz Panel układu. Wszystkie strony zaczynają się od siebie, ponieważ potrzebujesz czegoś, do którego chcesz dodać obiekty. Domyślnie jest to **Siatka**, ale można ją zmienić.
 
@@ -71,7 +71,7 @@ Rozmieść obiekty w taki sposób, aby stały się one lub *zadokowane*, do jedn
 
 ![Panel układu DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Obejrzyj krótkie wideo:** przycisk ![Play ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Obejrzyj krótkie wideo:** przycisk ![Odtwórz](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Kontrolki układu
 

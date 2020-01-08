@@ -16,17 +16,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33ca9f91c9b1105af43af21a91f25be13e153aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586584"
 ---
 # <a name="hierarchical-update"></a>Aktualizacja hierarchiczna
 
@@ -52,13 +52,13 @@ Aby utworzyć nową relację między dwiema tabelami, w Projektant obiektów Dat
 
 Ważne jest, aby zrozumieć, jak ograniczenia FOREIGN KEY i zachowanie kaskadowe w bazie danych są tworzone w kodzie wygenerowanego zestawu danych.
 
-Domyślnie tabele danych w zestawie danych są generowane z relacjami (<xref:System.Data.DataRelation>), które pasują do relacji w bazie danych. Jednak relacja w zestawie danych nie jest generowana jako ograniczenie klucza obcego. @No__t_0 jest skonfigurowany jako **relacja tylko** bez <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> lub <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>.
+Domyślnie tabele danych w zestawie danych są generowane z relacjami (<xref:System.Data.DataRelation>), które pasują do relacji w bazie danych. Jednak relacja w zestawie danych nie jest generowana jako ograniczenie klucza obcego. <xref:System.Data.DataRelation> jest skonfigurowany jako **relacja tylko** bez <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> lub <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>.
 
 Domyślnie kaskadowe aktualizacje i usunięcia kaskadowe są wyłączane nawet wtedy, gdy relacja bazy danych jest ustawiona na aktualizacje kaskadowe i/lub kaskadowe usuwanie włączone. Na przykład utworzenie nowego klienta i nowego zamówienia, a następnie próba zapisania danych może spowodować konflikt z ograniczeniami FOREIGN KEY zdefiniowanymi w bazie danych. Aby uzyskać więcej informacji, zobacz Wyłączanie [ograniczeń podczas wypełniania zestawu danych](turn-off-constraints-while-filling-a-dataset.md).
 
 ## <a name="set-the-order-to-perform-updates"></a>Ustaw kolejność wykonywania aktualizacji
 
-Ustawienie kolejności wykonywania aktualizacji ustawia kolejność pojedynczych operacji wstawiania, aktualizacji i usuwania, które są wymagane do zapisania wszystkich zmodyfikowanych danych we wszystkich tabelach zestawu danych. Gdy włączona jest Hierarchiczna aktualizacja, wstawia są wykonywane najpierw, a następnie aktualizacje, a następnie usuwane. @No__t_0 zawiera właściwość `UpdateOrder`, która może być ustawiona do przeprowadzania aktualizacji jako pierwsza, a następnie zostanie wstawiona, a następnie usunięta.
+Ustawienie kolejności wykonywania aktualizacji ustawia kolejność pojedynczych operacji wstawiania, aktualizacji i usuwania, które są wymagane do zapisania wszystkich zmodyfikowanych danych we wszystkich tabelach zestawu danych. Gdy włączona jest Hierarchiczna aktualizacja, wstawia są wykonywane najpierw, a następnie aktualizacje, a następnie usuwane. `TableAdapterManager` zawiera właściwość `UpdateOrder`, która może być ustawiona do przeprowadzania aktualizacji jako pierwsza, a następnie zostanie wstawiona, a następnie usunięta.
 
 > [!NOTE]
 > Ważne jest, aby zrozumieć, że kolejność aktualizacji jest uwzględniana. Oznacza to, że po wykonaniu aktualizacji wstawiane i usuwane są wykonywane dla wszystkich tabel w zestawie danych.
@@ -80,7 +80,7 @@ Zapisz zmiany z tabel powiązanych danych w zestawie danych w bazie danych, wywo
 
 Po strąceniu elementów z okna **źródła danych** , kod jest automatycznie dodawany do zdarzenia `Form_Load`, aby wypełnić każdą tabelę (`TableAdapter.Fill` metody). Kod jest również dodawany do przycisku **zapisywania** kliknij zdarzenie <xref:System.Windows.Forms.BindingNavigator>, aby zapisać dane z zestawu danych z powrotem do bazy danych (Metoda `TableAdapterManager.UpdateAll`).
 
-Wygenerowany kod zapisu zawiera również wiersz kodu, który wywołuje metodę `CustomersBindingSource.EndEdit`. Dokładniej mówiąc, wywołuje metodę <xref:System.Windows.Forms.BindingSource.EndEdit%2A> pierwszego <xref:System.Windows.Forms.BindingSource>that, która została dodana do formularza. Innymi słowy, ten kod jest generowany tylko dla pierwszej tabeli, która została przeciągnięta z okna **źródła danych** na formularz. Wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> zatwierdza wszelkie zmiany, które są w toku w dowolnych kontrolkach powiązanych z danymi, które są obecnie edytowane. W związku z tym, Jeśli kontrolka powiązane z danymi nadal ma fokus, a klikniesz przycisk **Zapisz** , wszystkie oczekujące zmiany w tym formancie są zatwierdzane przed rzeczywistym zapisem (`TableAdapterManager.UpdateAll` metodzie).
+Wygenerowany kod zapisu zawiera również wiersz kodu, który wywołuje metodę `CustomersBindingSource.EndEdit`. Dokładniej mówiąc, wywołuje metodę <xref:System.Windows.Forms.BindingSource.EndEdit%2A> pierwszego <xref:System.Windows.Forms.BindingSource>, która jest dodawana do formularza. Innymi słowy, ten kod jest generowany tylko dla pierwszej tabeli, która została przeciągnięta z okna **źródła danych** na formularz. Wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> zatwierdza wszelkie zmiany, które są w toku w dowolnych kontrolkach powiązanych z danymi, które są obecnie edytowane. W związku z tym, Jeśli kontrolka powiązane z danymi nadal ma fokus, a klikniesz przycisk **Zapisz** , wszystkie oczekujące zmiany w tym formancie są zatwierdzane przed rzeczywistym zapisem (`TableAdapterManager.UpdateAll` metodzie).
 
 > [!NOTE]
 > **Projektant obiektów DataSet** dodaje tylko kod `BindingSource.EndEdit` dla pierwszej tabeli, która została porzucona w formularzu. W związku z tym należy dodać wiersz kodu, aby wywołać metodę `BindingSource.EndEdit` dla każdej powiązanej tabeli w formularzu. W tym instruktażu oznacza to, że trzeba dodać wywołanie do metody `OrdersBindingSource.EndEdit`.
@@ -120,7 +120,7 @@ Poniżej przedstawiono często używane metody i właściwości klasy `TableAdap
 
 |Element członkowski|Opis|
 |------------|-----------------|
-|`UpdateAll`, Metoda|Zapisuje wszystkie dane ze wszystkich tabel danych.|
+|Metoda `UpdateAll`|Zapisuje wszystkie dane ze wszystkich tabel danych.|
 |`BackUpDataSetBeforeUpdate` Właściwość|Określa, czy należy utworzyć kopię zapasową zestawu danych przed wykonaniem metody `TableAdapterManager.UpdateAll`. Typu.|
 |*tablename* `TableAdapter` Właściwość|Reprezentuje `TableAdapter`. Wygenerowany `TableAdapterManager` zawiera właściwość dla każdej `TableAdapter`, którą zarządza. Na przykład zestaw danych z tabelą Klienci i zamówienia jest generowany z `TableAdapterManager`, który zawiera właściwości `CustomersTableAdapter` i `OrdersTableAdapter`.|
 |`UpdateOrder` Właściwość|Kontroluje kolejność poszczególnych poleceń INSERT, Update i DELETE. Ustaw tę wartość na jedną z wartości w wyliczeniu `TableAdapterManager.UpdateOrderOption`.<br /><br /> Domyślnie `UpdateOrder` jest ustawiona na **InsertUpdateDelete**. Oznacza to, że operacje INSERT, then Update, a następnie usunięć są wykonywane dla wszystkich tabel w zestawie danych.|

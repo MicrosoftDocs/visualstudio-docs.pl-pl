@@ -3,17 +3,17 @@ title: Okna debugera XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646088"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592883"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 
@@ -33,7 +33,7 @@ Ta kolumna zawiera nazwy wszystkich zmiennych lokalnych w bieżącym zakresie. Z
 
 W tej kolumnie jest wyświetlana wartość zawartej w każdej zmiennej. W przypadku atrybutów, instrukcji przetwarzania, komentarzy, tekstu i CData wyświetlana jest wartość tekstowa węzła. Węzły przestrzeni nazw wyświetlają identyfikator URI przestrzeni nazw.
 
-**Wprowadź**
+**Typ**
 
 Ta kolumna określa typ danych każdej zmiennej wymienionej w kolumnie **Nazwa** .
 
@@ -64,7 +64,7 @@ W oknie punkty przerwania są wyświetlane wszystkie punkty przerwania ustawione
 
 Okno punktów przerwania powinno zachowywać się tak samo jak w przypadku innych debugerów programu Visual Studio.
 
-## <a name="watch-window"></a>okno czujki
+## <a name="watch-window"></a>Obserwuj okno
 
 Okno wyrażeń kontrolnych służy do obliczania zmiennych. Możesz również zmienić wartości zmiennych.
 

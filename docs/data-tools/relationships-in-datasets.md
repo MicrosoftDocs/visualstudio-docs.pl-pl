@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648254"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586318"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
 Zestawy danych, które zawierają tabele powiązane z danymi, używają <xref:System.Data.DataRelation> obiektów do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwracania powiązanych rekordów ze sobą. Dodawanie powiązanych tabel do zestawów danych za pomocą **Kreatora konfiguracji źródła danych**lub **Projektant obiektów DataSet**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiektu.
@@ -76,7 +76,7 @@ Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obi
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Aby utworzyć relację między dwiema tabelami danych
 
-1. Otwórz zestaw danych w **Projektant obiektów DataSet**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Przeciągnij obiekt **relacji** z przybornika **zestawu danych** na podrzędną tabelę danych w relacji.
 
@@ -92,15 +92,15 @@ Relacje między tabelami danych są wyświetlane jako wiersze w **Projektant obi
 
 7. Wybierz, czy chcesz utworzyć relację, ograniczenie, czy oba te elementy.
 
-8. Zaznacz lub usuń zaznaczenie pola **zagnieżdżonej relacji** . Wybranie tej opcji ustawia właściwość <xref:System.Data.DataRelation.Nested%2A> na `true` i powoduje, że wiersze podrzędne relacji mają być zagnieżdżone w kolumnie nadrzędnej, gdy te wiersze są zapisywane jako dane XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie relacji](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)danych.
+8. Zaznacz lub usuń zaznaczenie pola **zagnieżdżonej relacji** . Wybranie tej opcji ustawia właściwość <xref:System.Data.DataRelation.Nested%2A> na `true`i powoduje, że wiersze podrzędne relacji mają być zagnieżdżone w kolumnie nadrzędnej, gdy te wiersze są zapisywane jako dane XML lub synchronizowane z <xref:System.Xml.XmlDataDocument>. Aby uzyskać więcej informacji, zobacz [zagnieżdżanie relacji](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)danych.
 
-9. Ustaw reguły, które mają być wymuszane w przypadku wprowadzania zmian w rekordach w tych tabelach. Aby uzyskać więcej informacji, zobacz <xref:System.Data.Rule>.
+9. Ustaw reguły, które mają być wymuszane w przypadku wprowadzania zmian w rekordach w tych tabelach. Aby uzyskać więcej informacji, zobacz temat <xref:System.Data.Rule>.
 
 10. Kliknij przycisk **OK** , aby utworzyć relację. Linia relacji jest wyświetlana w projektancie między dwiema tabelami.
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Aby wyświetlić nazwę relacji w Projektant obiektów Dataset
 
-1. Otwórz zestaw danych w **Projektant obiektów DataSet**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Z menu **dane** wybierz polecenie **Pokaż etykiety relacji** , aby wyświetlić nazwę relacji. Wyczyść to polecenie, aby ukryć nazwę relacji.
 

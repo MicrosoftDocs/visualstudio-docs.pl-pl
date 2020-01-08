@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606005"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591765"
 ---
 # <a name="text-template-utility-methods"></a>Metody korzystania z szablonów tekstowych
 
@@ -128,7 +128,7 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Korzystanie z innego zestawu metod narzędzi
 
-W ramach procesu generowania tekstu plik szablonu jest przekształcany do klasy, która zawsze nosi nazwę `GeneratedTextTransformation`and dziedziczy po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Jeśli zamiast tego chcesz użyć innego zestawu metod, możesz napisać własną klasę i określić ją w dyrektywie Template. Klasa musi dziedziczyć po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+W ramach procesu generowania tekstu plik szablonu jest przekształcany do klasy, która zawsze nosi nazwę `GeneratedTextTransformation`i dziedziczy po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Jeśli zamiast tego chcesz użyć innego zestawu metod, możesz napisać własną klasę i określić ją w dyrektywie Template. Klasa musi dziedziczyć po <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 ```
 <#@ template inherits="MyUtilityClass" #>

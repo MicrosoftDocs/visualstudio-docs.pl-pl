@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610839"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587787"
 ---
 # <a name="code-analysis-application-errors"></a>Błędy aplikacji analizy kodu
 
@@ -33,7 +33,7 @@ Ta sekcja zawiera informacje o komunikatach o błędach, które są generowane p
 |[CA0052](ca0052.md)|Nie wybrano żadnych elementów docelowych do przeanalizowania.|
 |[CA0053](ca0053.md)|Nie można załadować zestawu reguł.|
 |[CA0054](ca0054.md)|Zestaw reguł niestandardowych ma nieprawidłowe zasoby XML.|
-|[CA0055](ca0055.md)|Nie można załadować pliku: \<path >|
+|[CA0055](ca0055.md)|Nie można załadować pliku:\<ścieżka >|
 |[CA0056](ca0056.md)|Plik projektu ma niepoprawną wersję narzędzia do analizy.|
 |[CA0057](ca0057.md)|Nie można zamapować naruszeń na bieżący zestaw elementów docelowych i reguł.|
 |[CA0058](ca0058.md)|Nie można załadować zestawów, do których się odwołuje.|

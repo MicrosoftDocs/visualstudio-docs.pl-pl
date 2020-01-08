@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659711"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590426"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -38,13 +38,13 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest. Console. exe* i krótkie
 |**/Parallel**|Określa, że testy są wykonywane równolegle. Domyślnie można użyć maksymalnie wszystkich dostępnych rdzeni na komputerze. Można skonfigurować liczbę rdzeni do użycia w pliku ustawień.|
 |**/Enablecodecoverage**|Włącza adapter diagnostyki danych CodeCoverage w przebiegu testu.<br />Ustawienia domyślne są używane, jeśli nie zostaną określone przy użyciu pliku ustawień.|
 |**/Inisolation.**|Uruchamia testy w procesie izolowanym.<br />Ta izolacja sprawia, że proces *VSTest. Console. exe* jest mniej prawdopodobnie zatrzymany w przypadku błędu w testach, ale testy mogą działać wolniej.|
-|**/UseVsixExtensions**|Ta opcja powoduje, że proces *VSTest. Console. exe* używa lub pomija zainstalowane rozszerzenia VSIX (jeśli istnieją) w przebiegu testu.<br />Ta opcja jest przestarzała. Począwszy od następnej wersji głównej programu Visual Studio, ta opcja może zostać usunięta. Przenieś do pakietu, który jest używany jako pakiet NuGet.<br />Przykład: `/UseVsixExtensions:true`|
-|**/TestAdapterPath: [*ścieżka*]**|Wymusza, aby proces *VSTest. Console. exe* używał niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieje) w przebiegu testu.<br />Przykład: `/TestAdapterPath:[pathToCustomAdapters]`|
+|**/UseVsixExtensions**|Ta opcja powoduje, że proces *VSTest. Console. exe* używa lub pomija zainstalowane rozszerzenia VSIX (jeśli istnieją) w przebiegu testu.<br />Ta opcja jest przestarzały. Począwszy od następnej wersji głównej programu Visual Studio, ta opcja może zostać usunięta. Przenieś do pakietu, który jest używany jako pakiet NuGet.<br />Przykład: `/UseVsixExtensions:true`|
+|**/TestAdapterPath:[*path*]**|Wymusza, aby proces *VSTest. Console. exe* używał niestandardowych adapterów testowych z określonej ścieżki (jeśli istnieje) w przebiegu testu.<br />Przykład: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform: [*Typ platformy*]**|Docelowa architektura platformy, która ma być używana na potrzeby wykonywania testów.<br />Prawidłowe wartości to x86, x64 i ARM.|
 |**/Framework: [*wersja platformy*]**|Docelowa wersja platformy .NET, która ma zostać użyta do wykonania testu.<br />Przykładowe wartości to `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Jeśli struktura docelowa jest określona jako **Framework35**, testy są uruchamiane w trybie compatibly CLR 4,0.<br />Przykład: `/Framework:framework40`|
-|**/TestCaseFilter: [*wyrażenie*]**|Uruchom testy zgodne z podanym wyrażeniem.<br />\> wyrażenia < ma format < Właściwość \> = < wartość \> [\| < wyrażenie \>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Opcji wiersza polecenia **/TestCaseFilter** nie można używać z opcją wiersza polecenia **/Tests** . <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [Filtr przypadku testowego](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*expression*]**|Uruchom testy zgodne z podanym wyrażeniem.<br />\> wyrażenia < ma format < Właściwość\>= < wartość\>[\|< wyrażenie\>].<br />Przykład: `/TestCaseFilter:"Priority=1"`<br />Przykład: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Opcji wiersza polecenia **/TestCaseFilter** nie można używać z opcją wiersza polecenia **/Tests** . <br />Aby uzyskać informacje na temat tworzenia i używania wyrażeń, zobacz [Filtr przypadku testowego](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Wyświetla informacje o użyciu.|
-|**/Logger: [*URI/FriendlyName*]**|Określ Rejestrator dla wyników testu.<br />Przykład: Aby rejestrować wyniki do pliku Wyniki testów programu Visual Studio (TRX), użyj **/Logger: TRX**.<br />Przykład: Aby opublikować wyniki testów do Team Foundation Server, użyj TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekcja = < URL projektu \>;**<br />**Kompilacjaname = < nazwa kompilacji \>;**<br />**TeamProject = < nazwa projektu \>;**<br />**[; Platforma = \<Defaults do "dowolnego procesora CPU" >]**<br />**[; Wersja = \<Defaults do "debug" >]**<br />**[; RunTitle = < tytuł \>]**|
+|**/Logger: [*URI/FriendlyName*]**|Określ Rejestrator dla wyników testu.<br />Przykład: Aby rejestrować wyniki do pliku Wyniki testów programu Visual Studio (TRX), użyj **/Logger: TRX**.<br />Przykład: Aby opublikować wyniki testów do Team Foundation Server, użyj TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Kolekcja = < URL projektu\>;**<br />**Kompilacjaname = < nazwa kompilacji\>;**<br />**TeamProject = < nazwa projektu\>;**<br />**[; Wartość platform =\<domyślna to "dowolny procesor CPU" >]**<br />**[; Wersja =\<domyślna to "debug" >]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests: [*Nazwa pliku*]**|Wyświetla listę odnalezionych testów z danego kontenera testowego.|
 |**/ListDiscoverers**|Wyświetla listę zainstalowanych odnajdywania testów.|
 |**/ListExecutors**|Wyświetla listę zainstalowanych programów wykonujących testy.|
@@ -53,8 +53,8 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest. Console. exe* i krótkie
 |**/Blame**|Śledzi testy w trakcie ich wykonywania, a jeśli proces hosta testowego ulega awarii, emituje nazwy testów w sekwencji wykonywania do i włącznie z konkretnym testem, który był uruchomiony w chwili awarii. Te dane wyjściowe ułatwiają odizolowanie badanego testu i dalsze zdiagnozowanie. [Więcej informacji](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag: [*Nazwa pliku*]**|Zapisuje dzienniki śledzenia diagnostycznego do określonego pliku.|
 |**/ResultsDirectory: [*ścieżka*]**|Katalog wyników testu zostanie utworzony w określonej ścieżce, jeśli nie istnieje.<br />Przykład: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ParentProcessId: [*ParentProcessId*]**|Identyfikator procesu nadrzędnego odpowiedzialny za uruchamianie bieżącego procesu.|
-|**/Port: [*port*]**|Port połączenia gniazda i otrzymywania komunikatów o zdarzeniach.|
+|**/ParentProcessId:[*parentProcessId*]**|Identyfikator procesu nadrzędnego odpowiedzialny za uruchamianie bieżącego procesu.|
+|**/Port:[*port*]**|Port połączenia gniazda i otrzymywania komunikatów o zdarzeniach.|
 |**/Collect: [*friendlyer datacollect*]**|Włącza moduł zbierający dane dla przebiegu testu. [Więcej informacji](https://aka.ms/vstest-collect).|
 
 > [!TIP]

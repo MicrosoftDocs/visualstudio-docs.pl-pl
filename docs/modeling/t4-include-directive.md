@@ -2,17 +2,17 @@
 title: Dyrektywa T4 Include
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591856"
 ---
 # <a name="t4-include-directive"></a>Dyrektywa T4 Include
 
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **Textplik1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **TextFile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771584"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406300"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Określanie ścieżki do narzędzi wiersza polecenia narzędzi profilowania
 
@@ -22,9 +22,7 @@ ms.locfileid: "74771584"
 
 ## <a name="32-bit-computers"></a>32-bitowe komputery
 
-::: moniker range="vs-2017"
- W przypadku kodu natywnego interfejsy API profilera programu Visual Studio znajdują się w *VSPerf. dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .
-::: moniker-end
+W przypadku kodu natywnego interfejsy API profilera programu Visual Studio znajdują się w *VSPerf. dll*. Plik nagłówkowy, *VSPerf. h*i Biblioteka Imports *VSPerf. lib*znajdują się w katalogu *programu Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* .
 
  W przypadku kodu zarządzanego interfejsy API profilera znajdują się w *pliku Microsoft. VisualStudio. Profiler. dll*. Ta biblioteka DLL znajduje się w katalogu *programu Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* .
 
@@ -32,12 +30,14 @@ ms.locfileid: "74771584"
 
 Na komputerach 64-bitowych określ ścieżkę zgodną z platformą docelową profilowanej aplikacji.
 
-::: moniker range="vs-2017"
 - W przypadku aplikacji 32-bitowych domyślnym katalogiem narzędzi profilera jest:
 
-     trybu *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (Managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     trybu *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     zarządzanych *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - W przypadku aplikacji 64-bitowych domyślnym katalogiem narzędzi profilera jest:
 
-     trybu *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (Managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     trybu *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     zarządzanych *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

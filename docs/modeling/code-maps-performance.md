@@ -2,17 +2,17 @@
 title: Mapy kodu są wolne
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8b3f889661cf0d1c775cd80dad61a92c3f5b60a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 28cb2c4fd74716aa876c57517bb440fda513de5d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654177"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590543"
 ---
 # <a name="improve-performance-for-code-maps"></a>Poprawianie wydajności map kodu
 
@@ -28,7 +28,7 @@ Po wygenerowaniu mapy po raz pierwszy, program Visual Studio indeksuje wszystkie
 
    ![Pomiń kompilację i Dołącz przyciski nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png)
 
-- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
 Utworzenie map lub dodanie elementów do mapy z **Eksplorator rozwiązań** może zająć więcej czasu, gdy właściwość **Kopiuj do katalogu wyjściowego** elementu projektu jest ustawiona na wartość **Kopiuj zawsze**. Aby zwiększyć wydajność, należy zmienić tę właściwość na **Kopiuj, jeśli nowszy** lub `PreserveNewest`. Zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
 

@@ -3,17 +3,17 @@ title: Użyj procedur składowanych w LINQ to SQL, aby zaktualizować dane (Proj
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 019bf6b115fc526e39a3bc65bd9d0607c1a976db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586552"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Instrukcje: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (Projektant O/R)
 
@@ -39,7 +39,7 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
 
 3. Przeciągnij procedurę składowaną do **projektanta O/R**.
 
-     Procedura składowana jest dodawana do okienka metod jako metoda <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md).
+     Procedura składowana jest dodawana do okienka metod jako metoda <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 4. Wybierz klasę jednostki, dla której chcesz użyć procedury składowanej do przeprowadzania aktualizacji.
 
@@ -47,7 +47,7 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
 
 6. Kliknij przycisk wielokropka (...) obok wyrazów **Użyj środowiska uruchomieniowego** , aby otworzyć okno dialogowe **Konfigurowanie zachowania** .
 
-7. Wybierz pozycję **Dostosuj**.
+7. Wybierz **dostosować**.
 
 8. Wybierz żądaną procedurę przechowywaną na liście **Dostosuj** .
 
@@ -56,12 +56,12 @@ Domyślnie logika do aktualizowania bazy danych (wstawia, aktualizuje i usuwa) z
     > [!NOTE]
     > Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Jeśli zmienione nazwy właściwości nie są już zgodne między tabelą a klasą jednostki, może być konieczne wybranie równoważnej właściwości klasy do zamapowania, jeśli projektant nie może określić poprawnego mapowania.
 
-10. Kliknij przycisk **OK** lub **Zastosuj**.
+10. Kliknij przycisk **OK** lub **się**.
 
     > [!NOTE]
     > Można nadal skonfigurować zachowanie dla każdej kombinacji klas i zachowań, o ile po wprowadzeniu każdej zmiany klikniesz przycisk **Zastosuj** . Jeśli zmienisz klasę lub zachowanie przed kliknięciem przycisku **Zastosuj**, pojawi się okno dialogowe ostrzeżenia z możliwością zastosowania zmian.
 
-Aby przywrócić użycie domyślnej logiki środowiska uruchomieniowego dla aktualizacji, kliknij przycisk wielokropka obok polecenia **Wstaw**, **zaktualizuj**lub **Usuń** w oknie **Właściwości** , a następnie wybierz pozycję **Użyj środowiska uruchomieniowego** w obszarze **Konfigurowanie zachowania** okno dialogowe.
+Aby przywrócić użycie domyślnej logiki środowiska uruchomieniowego dla aktualizacji, kliknij przycisk wielokropka obok polecenia **Wstaw**, **zaktualizuj**lub **Usuń** w oknie **Właściwości** , a następnie wybierz pozycję **Użyj środowiska uruchomieniowego** w oknie dialogowym **Konfigurowanie zachowania** .
 
 ## <a name="see-also"></a>Zobacz także
 

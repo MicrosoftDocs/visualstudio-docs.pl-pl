@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654199"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590556"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Wywołaj transformację tekstu w procesie kompilacji
 
@@ -51,7 +51,7 @@ Jeśli [serwer kompilacji](/azure/devops/pipelines/agents/agents) działa na kom
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
 
 > [!TIP]
-> Jeśli otrzymasz `MissingMethodException` dla metody Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład  *MSBuild. exe*).
+> Jeśli otrzymasz `MissingMethodException` dla metody Microsoft. CodeAnalysis podczas uruchamiania elementów docelowych kompilacji TextTemplating na serwerze kompilacji, upewnij się, że zestawy Roslyn znajdują się w katalogu o nazwie *Roslyn* , który znajduje się w tym samym katalogu, co plik wykonywalny kompilacji (na przykład *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Edytuj plik projektu
 
@@ -65,7 +65,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- lub-
+\- lub —
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -162,7 +162,7 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
   </Target>
 ```
 
-W `AfterTransform` można odwoływać się do list plików:
+W `AfterTransform`można odwoływać się do list plików:
 
 - GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpiły istniejące pliki tylko do odczytu, `%(GeneratedFiles.ReadOnlyFileOverwritten)` będą spełnione. Pliki te można wyewidencjonować z kontroli źródła.
 
@@ -283,7 +283,7 @@ Teraz możesz korzystać ze swojej właściwości projektu w dyrektywach zestawu
 
 Te dyrektywy pobierają wartości z T4parameterValues zarówno w hostach MSBuild, jak i Visual Studio.
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 **Dlaczego warto przetwarzać szablony na serwerze kompilacji? Zostały już przekształcone szablony w programie Visual Studio przed zapisaniem mojego kodu.**
 

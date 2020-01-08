@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658414"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590244"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 
@@ -48,7 +48,7 @@ Model wymagań zapewnia największą korzyść, jeśli jest używany do koncentr
 
 Można utworzyć kilka różnych widoków wymagań użytkowników.  Każdy widok zawiera informacje określonego typu.  Podczas tworzenia tych widoków najlepiej jest przebiegać często od jednego do drugiego. Możesz rozpocząć od dowolnego widoku.
 
-|Diagram lub dokument|Co opisano w modelu wymagań|Paragraf|
+|Diagram lub dokument|Co opisano w modelu wymagań|Sekcja|
 |-|-|-|
 |Diagram klasy koncepcyjnej|Słownik typów, które są używane do opisywania wymagań; typy widoczne w interfejsie systemu.||
 |Dodatkowe dokumenty lub elementy robocze|Kryteria wydajności, bezpieczeństwa, użyteczności i niezawodności.|[Opisywanie wymagań dotyczących jakości usług](#QoSRequirements)|
@@ -78,13 +78,13 @@ Dodatkowe informacje znajdują się w następujących tematach:
 
 ## <a name="QoSRequirements"></a>Opisywanie wymagań Quality of Service
 
-Istnieje kilka kategorii wymagań dotyczących jakości usług. Należą do nich następujące elementy:
+Istnieje kilka kategorii wymagań dotyczących jakości usług. Są to następujące nazwy:
 
 - Wydajność
 
 - Zabezpieczenia
 
-- Wykorzystania
+- Łatwość obsługi
 
 - Niezawodność
 

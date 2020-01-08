@@ -3,15 +3,15 @@ title: Praca z elementami w projektancie XAML
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668620"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592925"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Praca z elementami w projektancie XAML
 
@@ -19,7 +19,7 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
 
 ## <a name="add-an-element-to-a-layout"></a>Dodawanie elementu do układu
 
-*Układ* to proces ustalania rozmiarów i pozycjonowania elementów w interfejsie użytkownika. Aby ustawić położenie elementów wizualnych, należy umieścić je w [panelu](xref:Windows.UI.Xaml.Controls.Panel)układu. @No__t_0 ma właściwość podrzędną, która jest kolekcją typów [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) . Możesz użyć różnych elementów potomnych `Panel`, takich jak [Kanwa](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)i [Siatka](xref:Windows.UI.Xaml.Controls.Grid), aby służyć jako kontenery układu oraz do pozycjonowania i rozmieszczania elementów na stronie.
+*Układ* to proces ustalania rozmiarów i pozycjonowania elementów w interfejsie użytkownika. Aby ustawić położenie elementów wizualnych, należy umieścić je w [panelu](xref:Windows.UI.Xaml.Controls.Panel)układu. `Panel` ma właściwość podrzędną, która jest kolekcją typów [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) . Możesz użyć różnych `Panel` elementów podrzędnych, takich jak [Kanwa](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)i [Siatka](xref:Windows.UI.Xaml.Controls.Grid), aby służyć jako kontenery układu oraz umieścić i rozmieścić elementy na stronie.
 
 Domyślnie panel `Grid` jest używany jako kontener układu najwyższego poziomu w obrębie strony lub formularza. Możesz dodać panele układu, kontrolki lub inne elementy w układzie strony najwyższego poziomu.
 
@@ -67,7 +67,7 @@ Aby wyrównać dwa lub więcej elementów za pomocą poleceń menu:
 
 Aby wyrównać dwa lub więcej elementów za pomocą linii wyrównania, w projektant XAML, w układ, który zawiera co najmniej dwa elementy, przeciągnij lub Zmień rozmiar jednego z elementów, aby krawędź była wyrównana do innego elementu.
 
-Gdy krawędzie są wyrównane, zostanie wyświetlona *granica wyrównania* wskazująca wyrównanie. Granica wyrównania jest czerwoną linią kreskowaną. Granice wyrównania są wyświetlane tylko wtedy, gdy jest włączone **przyciąganie do linii wyrównania** . Ilustracja przedstawiająca obszar kompozycji, który pokazuje granicę wyrównania, znajduje się w temacie [Tworzenie interfejsu użytkownika przy użyciu Projektant XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+Gdy krawędzie są wyrównane, zostanie wyświetlona *granica wyrównania* wskazująca wyrównanie. Granica wyrównania jest czerwoną linią kreskowaną. Wyrównanie granice są wyświetlane tylko wtedy, gdy **przyciąganie do linii wyrównania** jest włączona. Ilustracja przedstawiająca obszar kompozycji, który pokazuje granicę wyrównania, znajduje się w temacie [Tworzenie interfejsu użytkownika przy użyciu Projektant XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
 ## <a name="change-an-elements-margins"></a>Zmień marginesy elementu
 
@@ -107,7 +107,7 @@ Aby rozgrupować elementy i usunąć układ, kliknij prawym przyciskiem myszy gr
 
 Można przywrócić wartości domyślne dla określonych właściwości układu elementu przy użyciu poleceń resetowania układu. Za pomocą tego polecenia można zresetować margines, wyrównanie, Szerokość, Wysokość i rozmiar elementu, pojedynczo lub zbiorczo.
 
-Aby zresetować układ elementu, kliknij prawym przyciskiem myszy element w oknie konspektu dokumentu lub obszarze kompozycji, a następnie wybierz polecenie **układ** > **Reset** *PropertyName*, gdzie *PropertyName* jest właściwością, która ma zostać zresetowana (lub wybierz polecenie **Układ** > **Zresetuj wszystko** , aby zresetować wszystkie właściwości układu dla elementu).
+Aby zresetować układ elementu, kliknij prawym przyciskiem myszy element w oknie konspektu dokumentu lub obszarze kompozycji, a następnie wybierz polecenie **układ** > **Zresetuj** *PropertyName*, gdzie *PropertyName* jest właściwością, którą chcesz zresetować (lub wybierz pozycję **Układ** > **Zresetuj wszystko** , aby zresetować wszystkie właściwości układu elementu).
 
 ## <a name="see-also"></a>Zobacz także
 

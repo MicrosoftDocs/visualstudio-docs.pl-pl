@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118966"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591752"
 ---
 # <a name="step-3-set-your-form-properties"></a>Krok 3. Ustawianie właściwości formularza
 
@@ -33,14 +33,14 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 1. Po wybraniu formularza Znajdź właściwość **tekst** w oknie **Właściwości** . W zależności od tego, jak lista jest sortowana, może być konieczne przewinięcie w dół. Wybierz **tekst**, wpisz **Podgląd obrazów**, a następnie wybierz **klawisz ENTER**.  Formularz powinien teraz mieć **obraz** tekstu na pasku tytułu, a okno **Właściwości** powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
     ![okno Właściwości](../ide/media/express_edittextproperty.png)<br>
-   ***Właściwości*** *okno*
+   *Okno* właściwości
 
    > [!NOTE]
    > Właściwości mogą być uporządkowane według **kategorii** lub widoku **alfabetycznego** . Można przełączać się między tymi dwoma widokami za pomocą przycisków w oknie **Właściwości** . W tym samouczku łatwiej jest znaleźć właściwości w widoku **alfabetycznym** .
 
 1. Wróć do **Projektant formularzy systemu Windows**. Wybierz prawy dolny uchwyt przeciągania, czyli mały biały kwadrat w prawym dolnym rogu formularza i pojawia się w następujący sposób.
 
-    ![Przeciągnij uchwyt](../ide/media/express_bottomrt_drag.png)<br>
+    ![uchwyt przeciągania](../ide/media/express_bottomrt_drag.png)<br>
    *Przeciągnij uchwyt*
 
     Przeciągnij uchwyt, aby zmienić rozmiar formularza, tak aby forma była szersza i nieco większa.
@@ -51,12 +51,12 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
    - Wybierz klawisz **F5** .
 
-   - Na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie**.
+   - Na pasku menu wybierz **debuguj** > **Rozpocznij debugowanie**.
 
    - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który pojawia się w następujący sposób.
 
-      ![Przycisk paska narzędzi Rozpocznij debugowanie](../ide/media/express_icondebug.png)<br>
-     ***Rozpocznij debugowanie*** *przycisk paska narzędzi*
+      przycisk paska narzędzi ![rozpoczęcia debugowania](../ide/media/express_icondebug.png)<br>
+     *Przycisk paska narzędzi* ***Rozpocznij debugowanie***
 
      Tak jak wcześniej, środowisko IDE kompiluje i uruchamia aplikację, a zostanie wyświetlone okno.
 
@@ -64,19 +64,19 @@ Następnie użyj okna **Właściwości** , aby zmienić wygląd formularza.
 
    - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie** .
 
-   - Na pasku menu wybierz **Debuguj** > **Zatrzymaj debugowanie**.
+   - Na pasku menu wybierz **debuguj** > **Zatrzymaj debugowanie**.
 
-   - Użyj klawiatury i naciśnij klawisz **SHIFT**+**F5**.
+   - Użyj klawiatury i naciśnij klawisz **Shift**+**F5**.
 
    - Wybierz przycisk **X** w górnym rogu okna **przeglądarki obrazów** .
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz  **[krok 4: Układ formularza przy użyciu formantu](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
+* Aby przejść do następnego kroku samouczka, zobacz **[krok 4. układ formularza przy użyciu formantu TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2: Uruchom aplikację](../ide/step-2-run-your-program.md)przeglądarka obrazów.
+* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 2. Uruchamianie aplikacji Przeglądarka obrazów](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Samouczek 2: Tworzenie quizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
-* [Samouczek 3: Tworzenie gry zgodnej](tutorial-3-create-a-matching-game.md)
+* [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
+* [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

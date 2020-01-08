@@ -10,22 +10,22 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569666"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 
 > [!NOTE]
-> **Lista błędów** wyświetla informacje o określonym komunikacie o błędzie. Możesz skopiować numer błędu lub tekst ciągu błędu z okna **danych wyjściowych** . Aby wyświetlić okno **dane wyjściowe** , naciśnij klawisz **Ctrl** +**Alt** +**O**. Zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).
+> **Lista błędów** wyświetla informacje o określonym komunikacie o błędzie. Możesz skopiować numer błędu lub tekst ciągu błędu z okna **danych wyjściowych** . Aby wyświetlić okno **dane wyjściowe** , naciśnij klawisz **Ctrl**+**Alt**+**O**. Zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).
 
 Okno **Lista błędów** umożliwia wykonywanie następujących zadań:
 
@@ -41,7 +41,7 @@ Okno **Lista błędów** umożliwia wykonywanie następujących zadań:
 
 - Wyszukaj określone terminy i zakres wyszukiwania tylko dla bieżącego projektu lub dokumentu.
 
-Aby wyświetlić **Lista błędów**, wybierz pozycję **Wyświetl**  > **Lista błędów**lub naciśnij **kombinację klawiszy CTRL** + **\\** +**E**.
+Aby wyświetlić **Lista błędów**, wybierz pozycję **Wyświetl** > **Lista błędów**lub naciśnij **kombinację klawiszy CTRL**+ **\\** +**E**.
 
 Możesz wybrać karty **Błędy**, **ostrzeżenia**i **komunikaty** , aby zobaczyć różne poziomy informacji.
 
@@ -70,7 +70,7 @@ Lista po prawej stronie paska narzędzi określa, czy mają być wyświetlane b�
 
 Użyj pola tekstowego **szukaj Lista błędów** po prawej stronie **Lista błędów** pasku narzędzi, aby znaleźć konkretne błędy na liście błędów. Możesz wyszukać dowolną widoczną kolumnę na liście błędów, a wyniki wyszukiwania są zawsze sortowane na podstawie kolumny, która ma priorytet sortowania zamiast zapytania lub zastosowany filtr. Jeśli wybierzesz klawisz **ESC** , gdy fokus znajduje się w **Lista błędów**, możesz wyczyścić wyszukiwany termin i wyniki wyszukiwania odfiltrowanego. Możesz również kliknąć **symbol X** po prawej stronie pola tekstowego, aby usunąć jego zaznaczenie.
 
-## <a name="save"></a>Zapisanie
+## <a name="save"></a>Zapisz
 
 Można skopiować listę błędów i zapisać ją w pliku. Wybierz błędy, które chcesz skopiować, a następnie kliknij prawym przyciskiem myszy zaznaczenie, a następnie w menu kontekstowym wybierz polecenie **Kopiuj**. Można następnie wkleić błędy do pliku. W przypadku wklejenia błędów do arkusza kalkulacyjnego programu Excel pola są wyświetlane jako różne kolumny.
 
@@ -88,7 +88,7 @@ Opis
 
 Wyświetla tekst wpisu.
 
-Projekt
+{1&gt;Projekt&lt;1}
 
 Wyświetla nazwę bieżącego projektu.
 

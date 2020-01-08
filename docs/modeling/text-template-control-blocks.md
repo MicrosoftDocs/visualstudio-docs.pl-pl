@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591791"
 ---
 # <a name="text-template-control-blocks"></a>Bloki formantów szablonów tekstowych
 Bloki sterujące umożliwiają pisanie kodu w szablonie tekstowym w celu zróżnicowania danych wyjściowych. Istnieją trzy rodzaje bloków sterowania, które są rozróżniane przez ich nawiasy otwierające:
@@ -145,7 +145,7 @@ Some text.
 
  Podczas używania bloków sterowania należy pamiętać o następujących kwestiach:
 
-- **Językowe.** Możesz użyć kodu C# lub Visual Basic w szablonie tekstowym. Językiem domyślnym jest C#, ale można określić Visual Basic z parametrem `language` dyrektywy `template`. (Aby uzyskać więcej informacji na temat dyrektywy `template`, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
+- **Język.** Możesz użyć kodu C# lub Visual Basic w szablonie tekstowym. Językiem domyślnym jest C#, ale można określić Visual Basic z parametrem `language` dyrektywy `template`. (Aby uzyskać więcej informacji na temat dyrektywy `template`, zobacz [dyrektywy dotyczące szablonów tekstowych T4](../modeling/t4-text-template-directives.md)).
 
      Język używany w blokach kontroli nie ma nic robić z językiem lub formatem tekstu wygenerowanego w szablonie tekstowym. Można generować C# przy użyciu kodu Visual Basic lub odwrotnie.
 

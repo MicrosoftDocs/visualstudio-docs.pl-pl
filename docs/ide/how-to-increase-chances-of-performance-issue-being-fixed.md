@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903997"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406103"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
@@ -39,6 +39,8 @@ Poniżej opisano problemy, które trudno zdiagnozować bez prawidłowych plików
 -   [Problemy z spowolnieniem:](#slowness-and-high-cpu-issues) Każda określona akcja w programie VS jest wolniejsza niż wymagana
 
 -   [Wysoki procesor CPU:](#slowness-and-high-cpu-issues) Rozszerzone okresy nieoczekiwanie wysokiego użycia procesora CPU
+
+-   [Problemy pozaprocesowe:](#out-of-process-issues) Problem spowodowany przez proces satelitarny programu Visual Studio
 
 ## <a name="crashes"></a>Stąp
 Awaria występuje, gdy proces (Visual Studio) kończy się nieoczekiwanie.
@@ -171,6 +173,23 @@ Nie dołączaj bezpośrednio śladów wydajności do istniejących elementów op
 **Zaawansowane dane śledzenia wydajności**
 
 Możliwości zbierania danych śledzenia w przypadku większości scenariuszy są wystarczające w odniesieniu do narzędzia raport-a-problem. Ale istnieją przypadki, w których wymagana jest większa kontrola nad zbieraniem danych śledzenia (na przykład śledzenie o większym rozmiarze buforu), w którym to przypadku narzędzia PerfView jest doskonałym narzędziem do użycia. Procedurę ręcznego rejestrowania śledzenia wydajności za pomocą narzędzia Narzędzia PerfView można znaleźć na stronie [rejestrowanie śladów wydajności ze narzędzia PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+
+## <a name="out-of-process-issues"></a>Problemy pozaprocesowe
+
+> [!NOTE]
+> Począwszy od programu Visual Studio 2019 w wersji 16,3, dzienniki pozaprocesowe są automatycznie dołączane do opinii przesłanych za pomocą narzędzia Zgłoś problem. Jeśli jednak problem jest bezpośrednio odtwarzalny, wykonanie poniższych kroków może pomóc w dodaniu dodatkowych informacji w celu lepszego zdiagnozowania problemu.
+
+Istnieje wiele procesów satelitarnych, które działają równolegle z programem Visual Studio i udostępniają różne funkcje spoza głównego procesu programu Visual Studio. Jeśli wystąpi błąd w jednym z tych procesów satelitarnych, zwykle jest on wyświetlany w programie Visual Studio po stronie "StreamJsonRpc. RemoteInvocationException" lub "StreamJsonRpc. ConnectionLostException".
+
+Co sprawia, że te typy problemów są najbardziej funkcjonalne, należy dostarczyć dodatkowe dzienniki, które mogą być zbierane, wykonując następujące czynności:
+
+1.  Jeśli ten problem jest bezpośrednio powtarzalny, Zacznij od usunięcia folderu **% temp%/servicehub/Logs** . Jeśli nie można odtworzyć tego problemu, pozostaw ten folder bez zmian i zignoruj następujące punktory:
+
+    -   Ustaw globalną zmienną środowiskową **ServiceHubTraceLevel** na **wszystkie**
+    -   Odtwórz problem.
+
+2.  Pobierz [Narzędzie do](https://aka.ms/vscollect)zbierania dzienników Microsoft Visual Studio i .NET Framework.
+3.  Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
 
 ## <a name="see-also"></a>Zobacz także
 

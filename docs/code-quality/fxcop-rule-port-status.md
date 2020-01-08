@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568814"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587592"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
@@ -342,7 +342,7 @@ Następujące reguły FxCop starszej wersji są przestarzałe i nie zostaną zai
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
 - [CA2233](ca2233.md)
-- [CA5122 deklaracje](ca5122.md)
+- [CA5122](ca5122.md)
 
 ## <a name="see-also"></a>Zobacz także
 

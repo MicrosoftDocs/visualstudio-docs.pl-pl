@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665052"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590309"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytuj wzorce obciążenia, aby modelować działania użytkownika wirtualnego
 
@@ -42,7 +42,7 @@ Wzorzec obciążenia stałego jest używany do uruchamiania tego samego obciąż
 
 Wzorzec obciążenia etapów służy do określania obciążenia użytkownikami, które zwiększa się wraz z czasem do zdefiniowanego maksymalnego obciążenia użytkownikami. W przypadku obciążeń krokowych należy określić **początkową liczbę użytkowników**, **maksymalną liczbę użytkowników**, **czas trwania kroku (sekundy)** i **liczbę kroków użytkownika**.
 
-Przykładowo obciążenie etapem z **początkową liczbą użytkowników** o wartości 1, **Maksymalna liczba użytkowników** wynoszącą 100, **czas trwania kroku (w sekundach)** o wartości 10, a **Liczba użytkowników** w ramach kroku wynoszący% tworzy wzorzec obciążenia użytkownika, który rozpoczyna się od 1, zwiększa się o 1 co 10 sekund do czasu osiągnie 100 użytkowników.
+Przykładowo obciążenie krokami z **początkową liczbą użytkowników** o wartości jeden, **Maksymalna liczba użytkowników** wynoszącą 100, **czas trwania kroku (w sekundach)** o wartości 10 i **Liczba użytkowników kroku** 1 powoduje utworzenie wzorca obciążenia użytkownika, który rozpoczyna się od 1, wzrasta o 1 co 10 sekund, aż osiągnie 100 użytkowników.
 
 > [!NOTE]
 > Jeśli łączny czas trwania testu jest krótszy niż czas wymagany do osiągnięcia maksymalnego obciążenia przez użytkownika, test zakończy się po upływie czasu trwania i nie osiągnie maksymalnej wartości docelowej **liczby użytkowników** .
@@ -79,10 +79,10 @@ Wzorzec obciążenia oparty na celach przypomina wzorzec kroku, ale dostosowuje 
 
   W poniższej tabeli przedstawiono przykład przedstawiający wzorzec oparty na celach o następujących ustawieniach właściwości:
 
-|Grupa właściwości|Właściwość|Wartość|
+|Grupa w łaściwości|Właściwość|Wartość|
 |-|--------------|-|
 |Licznik wydajności|Kategoria|Procesor|
-|Licznik wydajności|Komputerem|ContosoServer1|
+|Licznik wydajności|Computer|ContosoServer1|
 |Licznik wydajności|Licznik|Czas procesora (%)|
 |Licznik wydajności|Wystąpienie|_Total|
 |Zakres docelowy dla licznika wydajności|Duże zakończenie|90|
@@ -119,7 +119,7 @@ Jednym z rzeczy, które należy obserwować, jest to, że jakiś inny zasób ogr
 Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości wzorca obciążenia powiązane z scenariuszem na poziomy spełniające cele testów.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
 Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podczas testu obciążenia i szybkość dodawania nowych użytkowników. Można wybierać spośród trzech dostępnych wzorców: wzorzec kroku, stała i cel na podstawie. Aby uzyskać więcej informacji, zobacz [Określanie liczby wirtualnych użytkowników ze wzorcami obciążenia w scenariuszu testu obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
@@ -135,7 +135,7 @@ Wzorzec obciążenia określa liczbę wirtualnych użytkowników aktywnych podcz
     > [!NOTE]
     > Tekst węzła wzorca obciążenia, który jest wyświetlany w drzewie scenariuszy testu obciążenia, odzwierciedla profil obciążenia, który został wybrany podczas tworzenia testu obciążenia. Może to być **profil stałego ładowania** lub **krok ładowania**.
 
-3. Naciśnij klawisz **F4** , aby wyświetlić okno **Właściwości** .
+3. Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
      **Wzorzec obciążenia** i kategorie **parametrów** są wyświetlane w oknie **Właściwości** .
 

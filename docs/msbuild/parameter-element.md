@@ -1,5 +1,5 @@
 ---
-title: Parameter — Element | Dokumentacja firmy Microsoft
+title: Element parametru | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -12,22 +12,22 @@ helpviewer_keywords:
 - Parameter element [MSBuild]
 - <Parameter> element [MSBuild]
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc410948f3869de5ca3059cba703e5381f93d7eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d1351f47ec8acc5aa5a510ede9c2284ec97c248
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999677"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590465"
 ---
-# <a name="parameter-element"></a>Parameter — element
-Zawiera informacje dotyczące określonego parametru zadania, który jest generowany przez `UsingTask` `TaskFactory`.  Nazwa elementu jest nazwa parametru.  Aby uzyskać więcej informacji, zobacz [usingtask — element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+# <a name="parameter-element"></a>Element parametru
+Zawiera informacje dotyczące konkretnego parametru zadania generowanego przez `TaskFactory``UsingTask`.  Nazwa elementu jest nazwą parametru.  Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project > \<UsingTask > \<, > \<parametr >
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,13 +40,13 @@ Zawiera informacje dotyczące określonego parametru zadania, który jest genero
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`ParameterType`|Atrybut opcjonalny.<br /><br /> Typ architektury .NET parametru, na przykład `System.String`.|
-|`Output`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, ten parametr to parametr wyjściowy dla zadania. Domyślna wartość to `false`.|
-|`Required`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, ten parametr jest wymagany parametr dla zadania. Domyślna wartość to `false`.|
+|`ParameterType`|Atrybut opcjonalny.<br /><br /> Typ .NET parametru, na przykład `System.String`.|
+|`Output`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, ten parametr jest parametrem wyjściowym zadania. Domyślna wartość to `false`.|
+|`Required`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, ten parametr jest wymaganym parametrem zadania. Domyślna wartość to `false`.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -55,10 +55,10 @@ Zawiera informacje dotyczące określonego parametru zadania, który jest genero
 
 |Element|Opis|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Zawiera opcjonalną listę parametrów, które będą obecne na zadanie, które są generowane przez `UsingTask` `TaskFactory`.|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Zawiera opcjonalną listę parametrów, które będą obecne w zadaniu generowanym przez `UsingTask` `TaskFactory`.|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak używać `Parameter` elementu.
+ Poniższy przykład pokazuje, jak używać elementu `Parameter`.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">

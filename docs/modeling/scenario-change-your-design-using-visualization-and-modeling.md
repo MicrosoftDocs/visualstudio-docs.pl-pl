@@ -10,17 +10,17 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 371eadd1438d33601b90ebfae0432c20841c313c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986373"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591986"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -170,7 +170,7 @@ Kolacja teraz musi oszacować koszt zaspokajania nowego wymagania. Jest to zale�
 ### <a name="ValidatingCode"></a>Zachowaj spójność kodu z projektem
  Teraz należy upewnić się, że zaktualizowany kod pozostaje zgodny z projektem. Tworzą one diagramy zależności opisujące warstwy funkcji w systemie, określają dozwolone zależności między nimi i kojarzą artefakty rozwiązań z tymi warstwami.
 
-|**4b**|**Szczegół**|
+|**Diagram**|**Szczegół**|
 |-|-|
 |*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [utworzyć diagramy zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md)<br />- [sprawdzać poprawność kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram zależności organizuje i mapuje artefakty w rozwiązaniu programu Visual Studio do grup abstrakcyjnych nazywanych *warstwami*. Te warstwy identyfikują role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy zależności są przydatne do opisywania zamierzonego projektu systemu i weryfikowania rozwoju kodu względem tego projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksplorator rozwiązań, map kodu, Widok klasy i Przeglądarka obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu zależności, a następnie kliknij polecenie **Generuj zależności**. Aby określić zamierzone zależności, narysuj nowe zależności.|
 
@@ -310,7 +310,7 @@ Ta mapa pokazuje, że Klasa PaymentApprover znajduje się teraz w przestrzeni na
 
      Aby zapoznać się z krótkim omówieniem skompilowanego kodu, Utwórz pustą mapę kodu, a następnie przeciągnij pliki zestawu lub pliki binarne na powierzchnię mapy.
 
-- Aby poznać określony kod lub elementy rozwiązania, użyj Eksplorator rozwiązań, aby zaznaczyć elementy i relacje, które chcesz wizualizować. Następnie można wygenerować nową mapę lub dodać wybrane elementy do istniejącej mapy. Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+- Aby poznać określony kod lub elementy rozwiązania, użyj Eksplorator rozwiązań, aby zaznaczyć elementy i relacje, które chcesz wizualizować. Następnie można wygenerować nową mapę lub dodać wybrane elementy do istniejącej mapy. Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
 - Aby ułatwić Eksplorowanie mapy, należy zmienić układ tak, aby odpowiadał rodzajom zadań, które chcesz wykonać.
 
@@ -327,7 +327,7 @@ Ta mapa pokazuje, że Klasa PaymentApprover znajduje się teraz w przestrzeni na
 
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
-|**4b**|**Szczegół**|
+|**Diagram**|**Szczegół**|
 |-|-|
 |Diagram zależności|Logiczna architektura systemu. Użyj walidacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących zależności lub zamierzonych zależności, Utwórz mapę kodu i pogrupuj powiązane elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [utworzyć diagramy zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md)|
 |Diagram klas (oparty na kodzie)|Istniejące klasy w kodzie dla określonego projektu.<br /><br /> Aby wizualizować i modyfikować istniejącą klasę w kodzie, użyj Projektant klas.<br /><br /> Zobacz [jak: Dodawanie diagramów klas do projektów (Projektant klas)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
@@ -396,7 +396,7 @@ Jako punkt początkowy do eksplorowania i omawiania istniejących klas można u�
 
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
-|**4b**|**Opis**|
+|**Diagram**|**Opis**|
 |-|-|
 |Diagram zależności|Zdefiniuj architekturę logiczną systemu, która odnosi się do klas.<br /><br /> Użyj walidacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> - [utworzyć diagramy zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [diagramy zależności: wytyczne](../modeling/layer-diagrams-guidelines.md)<br />- [sprawdzać poprawność kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa kodu|Wizualizuj organizację i relacje w istniejącym kodzie.<br /><br /> Aby zidentyfikować klasy, ich relacje i ich metody, Utwórz mapę kodu, która pokazuje te elementy.<br /><br /> Zobacz:<br /><br /> - [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|
@@ -470,15 +470,15 @@ Diagramy zależności pomagają:
 
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
-|**4b**|**Opis**|
+|**Diagram**|**Opis**|
 |-|-|
 |Mapa kodu|Wizualizuj organizację i relacje w istniejącym kodzie.<br /><br /> Aby utworzyć warstwy, wygeneruj mapę kodu, a następnie Grupuj elementy na mapie jako potencjalną warstwę. Przeciągnij grupy z mapy do diagramu zależności.<br /><br /> Zobacz:<br /><br /> - [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />- [przeglądać i zmieniać rozmieszczenie map kodu](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |-|-|
-|**Dotyczące**|- [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Fora**|- [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
 ## <a name="see-also"></a>Zobacz także
 

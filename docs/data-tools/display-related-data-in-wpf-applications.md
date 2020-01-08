@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2079a7f539044b7aa322a2e71b949fabae97585
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ab1301e421f8326cf4cdda97556ecb19e394c29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586682"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Wyświetlanie pokrewnych danych w aplikacjach WPF
 
@@ -33,7 +33,7 @@ Można tworzyć kontrolki powiązane z danymi, które wyświetlają powiązane d
 
 1. W menu **dane** kliknij przycisk **Pokaż źródła danych** , aby otworzyć okno **źródła danych** .
 
-2. Kliknij przycisk **Dodaj nowe źródło danych**i Ukończ pracę kreatora **konfiguracji źródła danych** .
+2. Kliknij przycisk **Dodaj nowe źródło danych**i wykonaj **konfiguracji źródła danych** kreatora.
 
 3. Otwórz projektanta WPF i upewnij się, że projektant zawiera kontener, który jest prawidłowym obiektem docelowym upuszczania dla elementów w oknie **źródła danych** .
 
@@ -43,7 +43,7 @@ Można tworzyć kontrolki powiązane z danymi, które wyświetlają powiązane d
 
 5. Przeciągnij węzeł nadrzędny (lub dowolne poszczególne elementy w węźle nadrzędnym) z okna **źródła danych** na prawidłowy element docelowy upuszczania w projektancie.
 
-     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli nadrzędnej lub obiektu do zasobów obiektu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli nadrzędnej lub obiektu. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli nadrzędnej lub obiektu do zasobów obiektu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli nadrzędnej lub obiektu. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 6. W oknie **źródła danych** Znajdź powiązaną tabelę podrzędną lub obiekt. Powiązane tabele podrzędne i obiekty są wyświetlane jako węzły rozwijane w dolnej części listy danych węzła nadrzędnego.
 

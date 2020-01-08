@@ -12,17 +12,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641437"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586370"
 ---
 # <a name="pass-data-between-forms"></a>Przekazywanie danych między formularzami
 
@@ -37,7 +37,7 @@ Zadania przedstawione w tym instruktażu obejmują:
 
 - Tworzenie i Konfigurowanie zestawu danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
-- Wybieranie kontrolki, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Wybieranie kontrolki, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Tworzenie kontrolki powiązanej z danymi przez przeciąganie elementów z okna **źródła danych** na formularz.
 
@@ -61,7 +61,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -111,7 +111,7 @@ Można utworzyć siatkę powiązaną z danymi (formant <xref:System.Windows.Form
 
 - Przeciągnij główny węzeł **Customers** z okna **źródła danych** na **formularz Form1**.
 
-     @No__t_0 i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **formularzu Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **formularzu Form1**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ## <a name="create-the-second-form"></a>Tworzenie drugiego formularza
 
@@ -123,7 +123,7 @@ Utwórz drugi formularz, do którego mają zostać przekazane dane.
 
 3. Przeciągnij główny węzeł **zamówień** z okna **źródła danych** na **Form2**.
 
-     @No__t_0 i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawia się na **Form2**. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 4. Usuń **OrdersBindingNavigator** z paska składnika.
 
@@ -186,7 +186,7 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 ## <a name="run-the-app"></a>Uruchamianie aplikacji
 
-- Naciśnij klawisz **F5** , aby uruchomić aplikację.
+- Naciśnij klawisz **F5**, aby uruchomić aplikację.
 
 - Kliknij dwukrotnie rekord klienta w **formularzu Form1** , aby otworzyć **Form2** z zamówieniami tego klienta.
 
@@ -194,7 +194,7 @@ Dodaj zapytanie TableAdapter do Form2 w celu załadowania zamówień dla wybrane
 
 W zależności od wymagań aplikacji istnieje kilka kroków, które można wykonać po przekazaniu danych między formularzami. Niektóre udoskonalenia, których można dokonać w tym instruktażu obejmują:
 
-- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Dodawanie funkcji do zapisywania danych z powrotem w bazie danych. Aby uzyskać więcej informacji, zobacz [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md).
 

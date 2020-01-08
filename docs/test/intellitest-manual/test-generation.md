@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 3dbcbed0c336ff931971e0a4a6a939e681c6948b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653124"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591557"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
@@ -235,11 +235,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>Dalsze odczytywanie
+## <a name="further-reading"></a>Dalsze informacje
 
 * [Testuj do powiązania kodu](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [Jeden test do reguły dla nich](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Chcesz przekazać opinię?
 
 Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

@@ -3,24 +3,24 @@ title: Mapuj metody DataContext do sprocs i Functions (Projektant O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa392467024a38dc447e6a5077f855d3464103b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba4a53e81578a7b72c697e52fec923d8ecc1ecce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648370"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586487"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Instrukcje: Tworzenie metod DataContext mapowanych na procedury składowane i funkcje (Projektant O/R)
 
 Możesz dodać procedury składowane i funkcje do **projektanta O/R** jako metody <xref:System.Data.Linq.DataContext>. Wywołanie metody i przekazanie w wymaganych parametrach powoduje uruchomienie procedury składowanej lub funkcji w bazie danych i zwrócenie danych w zwracanym typie metody <xref:System.Data.Linq.DataContext>. Aby uzyskać szczegółowe informacje na temat metod <xref:System.Data.Linq.DataContext>, zobacz [metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
-> Można również użyć procedur składowanych, aby zastąpić domyślny [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowanie w czasie wykonywania, które wykonuje operacje wstawiania, aktualizacji i usuwania, gdy zmiany są zapisywane z klas jednostek do bazy danych. Aby uzyskać więcej informacji, zobacz [How to: assignd procedur składowanych do wykonywania aktualizacji, wstawianych i usuwanych (Projektant O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Można również użyć procedur składowanych, aby zastąpić domyślny [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowanie w czasie wykonywania, które wykonuje operacje wstawiania, aktualizacji i usuwania, gdy zmiany są zapisywane z klas jednostek do bazy danych. Aby uzyskać więcej informacji, zobacz [porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="create-datacontext-methods"></a>Tworzenie metod DataContext
 

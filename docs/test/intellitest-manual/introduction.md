@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653172"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591604"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Omówienie programu Microsoft IntelliTest
 
@@ -46,7 +46,7 @@ Jeśli chcesz przetestować:
 
 ## <a name="the-hello-world-of-intellitest"></a>Hello world IntelliTest
 
-IntelliTest znajduje dane wejściowe dotyczące przetestowanego programu, co oznacza, że można go użyć do wygenerowania sławę **Hello World!** parametry. przyjęto założenie, że utworzono C# projekt testu oparty na MSTest i dodano odwołanie do **Microsoft. Pex. Framework**. Jeśli używasz innego środowiska testowego, Utwórz bibliotekę C# klas i zapoznaj się z dokumentacją platformy testowej dotyczącą sposobu konfigurowania projektu.
+IntelliTest znajduje dane wejściowe dotyczące przetestowanego programu, co oznacza, że można go użyć do wygenerowania sławę **Hello World!** parametry. Przyjęto założenie, że utworzono C# projekt testu oparty na MSTest i dodano odwołanie do **Microsoft. Pex. Framework**. Jeśli używasz innego środowiska testowego, Utwórz bibliotekę C# klas i zapoznaj się z dokumentacją platformy testowej dotyczącą sposobu konfigurowania projektu.
 
 Poniższy przykład tworzy dwa ograniczenia dla parametru o nazwie **Value** , tak aby IntelliTest wygenerował wymagany ciąg:
 
@@ -70,13 +70,16 @@ public partial class HelloWorldTest {
 Po skompilowaniu i wykonaniu IntelliTest generuje zestaw testów, takich jak następujący zestaw:
 
 1. ""
-2. "\ 0 \ 0 \ 0 \ 0 \ 0"
-3. Hello
-4. "\ 0 \ 0 \ 0 \ 0 \ 0 \ 0"
+2. "\0\0\0\0\0"
+3. "Hello"
+4. "\0\0\0\0\0\0"
 5. "Hello\0"
 6. "Hello\0\0"
 7. "Hello\0World!"
 8. "Hello world!"
+
+> [!NOTE]
+> W przypadku problemów z kompilacją Spróbuj zastąpić element Microsoft. VisualStudio. TestPlatform. TestFramework i Microsoft. VisualStudio. TestPlatform. TestFramework. Extensions References, podając odwołanie do Microsoft. VisualStudio. QualityTools. UnitTestFramework.
 
 Odczytaj [Wygeneruj testy jednostkowe za pomocą IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) , aby zrozumieć, gdzie są zapisywane wygenerowane testy. Wygenerowany kod testu powinien zawierać test, taki jak następujący kod:
 
@@ -90,7 +93,7 @@ public void HelloWorldThrowsException167()
 }
 ```
 
-To bardzo proste!
+Jest tak proste!
 
 ## <a name="limitations"></a>Ograniczenia
 
@@ -99,7 +102,7 @@ W tej sekcji opisano ograniczenia IntelliTest:
 * [Nieustalenia](#nondeterminism)
 * [Współbieżność](#concurrency)
 * [Natywny kod platformy .NET](#native-code)
-* [Platformach](#platform)
+* [Platforma](#platform)
 * [Język](#language)
 * [Powód symboliczny](#symbolic-reasoning)
 * [Ślady stosu](#incorrect-stack-traces)
@@ -148,7 +151,7 @@ IntelliTest używa funkcji automatycznego [ograniczenia](input-generation.md#con
 
 Ponieważ IntelliTest przechwytuje i "rethrows" w każdej metodzie instrumentacji, numery wierszy w śladach stosu nie będą poprawne. Jest to ograniczenie według projektu instrukcji "Rethrow".
 
-## <a name="further-reading"></a>Dalsze odczytywanie
+## <a name="further-reading"></a>Dalsze informacje
 
 * [Wprowadza wpis w blogu](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
 * [Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
