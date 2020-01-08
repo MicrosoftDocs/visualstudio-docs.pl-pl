@@ -8,17 +8,17 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], after build
 - /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff5f79b2482c2e025957872892a585e08bbfa8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8eeb1a03e584b0b39030ec56ca6945a2d5ced78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661663"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570131"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 
@@ -40,7 +40,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
   Opcjonalny. Nazwa konfiguracji rozwiązania (na przykład `Debug` lub `Release`), która ma zostać użyta do skompilowania rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślony lub pusty ciąg (`""`), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project` *Projname*
+- `/Project` *ProjName*
 
   Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Możesz również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
@@ -62,7 +62,7 @@ Informacje podsumowujące dla kompilacji, w tym błędy, mogą być wyświetlane
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie wdrożono `CSharpWinApp` projektu przy użyciu konfiguracji kompilacji projektu `Release` w `MySolution`.
+W tym przykładzie wdrożono `CSharpWinApp`projektu przy użyciu konfiguracji kompilacji projektu `Release` w `MySolution`.
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release

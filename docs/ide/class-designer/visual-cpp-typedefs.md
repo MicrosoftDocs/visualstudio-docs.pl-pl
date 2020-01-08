@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], typedefs
 ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748009"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590699"
 ---
 # <a name="c-typedefs-in-class-designer"></a>C++definicje typów w Projektant klas
 
@@ -39,7 +39,7 @@ Następnie można użyć tego typu, aby zadeklarować wystąpienie:
 
 ## <a name="class-and-struct-shapes"></a>Kształty klas i struktur
 
-W **Projektant klas** C++ element typedef ma kształt typu określonego w elemencie typedef. Jeśli źródło deklaruje `typedef class`, kształt ma zaokrąglone rogi i **klasę**etykiet. W przypadku `typedef struct` kształt ma prostokąty kwadratowe i **strukturę**etykiet.
+W **Projektant klas** C++ element typedef ma kształt typu określonego w elemencie typedef. Jeśli źródło deklaruje `typedef class`, kształt ma zaokrąglone rogi i **klasę**etykiet. W przypadku `typedef struct`kształt ma prostokąty kwadratowe i **strukturę**etykiet.
 
 Klasy i struktury mogą mieć zagnieżdżone elementy typedef zadeklarowane w obrębie tych elementów. W **Projektant klas**kształty klas i struktur mogą wyświetlać zagnieżdżone deklaracje typedef jako zagnieżdżone kształty.
 

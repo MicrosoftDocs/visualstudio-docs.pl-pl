@@ -11,23 +11,23 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648596"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586760"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 
 Termin *tabela wyszukiwania* (nazywana czasem *powiązaniem wyszukiwania*) opisuje kontrolkę wyświetlającą informacje z jednej tabeli danych na podstawie wartości pola klucza obcego w innej tabeli. Tabelę odnośników można utworzyć, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w oknie **źródła danych** na kontrolkę, która jest już powiązana z kolumną lub właściwością w powiązanej tabeli podrzędnej.
 
-Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w tabeli `Orders` zawiera `CustomerID`, który wskazuje, który klient złożył zamówienie. @No__t_0 jest kluczem obcym wskazującym rekord klienta w tabeli `Customers`. Po wyświetleniu listy zamówień z tabeli `Orders` może być konieczne wyświetlenie rzeczywistej nazwy klienta zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w tabeli `Customers`, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa wartości `CustomerID` w rekordzie `Orders` do nawigowania po relacji i zwraca nazwę klienta.
+Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord w tabeli `Orders` zawiera `CustomerID`, który wskazuje, który klient złożył zamówienie. `CustomerID` jest kluczem obcym wskazującym rekord klienta w tabeli `Customers`. Po wyświetleniu listy zamówień z tabeli `Orders` może być konieczne wyświetlenie rzeczywistej nazwy klienta zamiast `CustomerID`. Ponieważ nazwa klienta znajduje się w tabeli `Customers`, należy utworzyć tabelę odnośników, aby wyświetlić nazwę klienta. Tabela wyszukiwania używa wartości `CustomerID` w rekordzie `Orders` do nawigowania po relacji i zwraca nazwę klienta.
 
 ## <a name="to-create-a-lookup-table"></a>Aby utworzyć tabelę odnośników
 
@@ -75,7 +75,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
 
 8. Przeciągnij węzeł podrzędny z okna **źródła danych** do kontenera w projektancie WPF. (W poprzednim przykładzie węzeł podrzędny jest węzłem **Orders** ).
 
-     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli podrzędnej lub obiektu do zasobów elementu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [Powiązywanie formantów WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+     Program Visual Studio generuje kod XAML, który tworzy nowe kontrolki powiązane z danymi dla każdego elementu, który przeciągniesz. KOD XAML dodaje również nowe <xref:System.Windows.Data.CollectionViewSource> dla tabeli podrzędnej lub obiektu do zasobów elementu docelowego upuszczania. W przypadku niektórych źródeł danych program Visual Studio generuje również kod umożliwiający załadowanie danych do tabeli lub obiektu. Aby uzyskać więcej informacji, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 9. Przeciągnij węzeł nadrzędny z okna **źródła danych** na utworzoną wcześniej kontrolkę powiązania wyszukiwania. (W poprzednim przykładzie węzeł nadrzędny jest węzłem **Customers** ).
 

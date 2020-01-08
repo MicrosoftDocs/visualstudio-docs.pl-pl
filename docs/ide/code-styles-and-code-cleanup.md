@@ -2,27 +2,27 @@
 title: Opcje stylu kodu i czyszczenie kodu
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d653898e6c6a8ab856a5b7763d12fd793708b9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631103"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585408"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
 Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pliku EditorConfig](#code-styles-in-editorconfig-files)lub dla całego kodu edytowanego w programie Visual Studio na [stronie **Opcje** ](#code-styles-in-the-options-dialog-box)edytora tekstu. W C# przypadku kodu można także skonfigurować program Visual Studio, aby stosował te preferencje stylu kodu za pomocą poleceń **czyszczenia kodu** (Visual Studio 2019) i **formatowania dokumentu** (Visual Studio 2017).
 
 > [!NOTE]
-> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="code-styles-in-editorconfig-files"></a>Style kodu w plikach EditorConfig
 
@@ -30,7 +30,7 @@ Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pl
 
 ::: moniker range=">=vs-2019"
 
-Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerować plik na podstawie ustawień stylu kodu, które zostały wybrane w oknie dialogowym **Opcje** programu Visual Studio. Ta strona opcji jest dostępna w obszarze **narzędzia**  > **Opcje**  > **edytora tekstów** >**C#** [lub **Basic**] > **stylu kodu**  > **Ogólne**. Kliknij pozycję **Generuj plik editorconfig z ustawień** , aby automatycznie wygenerować plik z kodowaniem style *. editorconfig* na podstawie ustawień na stronie **Opcje** .
+Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerować plik na podstawie ustawień stylu kodu, które zostały wybrane w oknie dialogowym **Opcje** programu Visual Studio. Ta strona opcji jest dostępna w obszarze **narzędzia** > **Opcje** > **edytora tekstów** >**C#** [lub **Basic**] > **stylu kodu** > **Ogólne**. Kliknij pozycję **Generuj plik editorconfig z ustawień** , aby automatycznie wygenerować plik z kodowaniem style *. editorconfig* na podstawie ustawień na stronie **Opcje** .
 
 ![Generuj plik editorconfig na podstawie ustawień w programie Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -38,9 +38,9 @@ Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerow
 
 ## <a name="code-styles-in-the-options-dialog-box"></a>Style kodu w oknie dialogowym Opcje
 
-Preferencje stylu kodu można ustawić dla wszystkich projektów C# i Visual Basic, otwierając okno dialogowe **Opcje** z menu **Narzędzia** . W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu** > [**C#** lub **Basic**] > **styl kodu**  > **Ogólne**.
+Preferencje stylu kodu można ustawić dla wszystkich projektów C# i Visual Basic, otwierając okno dialogowe **Opcje** z menu **Narzędzia** . W **opcje** okno dialogowe, wybierz opcję **edytora tekstów** > [**C#** lub **podstawowe**] > **styl kodu**  >  **Ogólne**.
 
-Każdy element na liście zawiera podgląd preferencji, gdy jest zaznaczone:
+Każdy element na liście pokazuje jego podgląd preferencji, w przypadku wybrania:
 
 ::: moniker range="vs-2017"
 
@@ -56,15 +56,15 @@ Każdy element na liście zawiera podgląd preferencji, gdy jest zaznaczone:
 
 Opcje ustawione w tym oknie dotyczą konta personalizacji programu Visual Studio i nie są skojarzone z określonym projektem lub bazą kodu. Ponadto nie są wymuszane w czasie kompilacji, w tym w kompilacjach ciągłej integracji (CI). Jeśli chcesz skojarzyć preferencje stylu kodu z projektem i mieć style wymuszane podczas kompilacji, określ preferencje w [pliku editorconfig](#code-styles-in-editorconfig-files) , który jest skojarzony z projektem.
 
-### <a name="preference-and-severity"></a>Preferencja i ważność
+### <a name="preference-and-severity"></a>Preferencji i ważność
 
-Dla każdego ustawienia stylu kodu na tej stronie można ustawić wartości **preferencji** i **ważności** przy użyciu list rozwijanych w każdym wierszu. Ważność można ustawić tylko do **refaktoryzacji**, **sugestii**, **ostrzeżenia**lub **błędu**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) dla stylu kodu, upewnij się, że ustawienie **ważności** ma wartość inne niż **tylko Refaktoryzacja**. Żarówka z **szybkimi akcjami** ![light żarówka ](media/light-bulb-dropdown.png), żarówki błędów ![error żarówki ](media/error-bulb.png), lub śrubokręt ![screwdriver ](media/screwdriver.png) pojawia się, gdy używany jest styl niepreferowany, i można wybrać opcję **szybkiego Lista akcji** , aby automatycznie ponownie napisać kod do preferowanego stylu.
+Dla każdego ustawienia stylu kodu na tej stronie można ustawić wartości **preferencji** i **ważności** przy użyciu list rozwijanych w każdym wierszu. Ważność można ustawić tylko do **refaktoryzacji**, **sugestii**, **ostrzeżenia**lub **błędu**. Jeśli chcesz włączyć [szybkie akcje](../ide/quick-actions.md) dla stylu kodu, upewnij się, że ustawienie **ważności** ma wartość inne niż **tylko Refaktoryzacja**. Żarówka **Quick Actions** , ![żarówka](media/light-bulb-dropdown.png), żarówka błędów ![błąd żarówki](media/error-bulb.png), lub śrubokręter ![śrubokręt](media/screwdriver.png) ikona jest wyświetlana, gdy używany jest styl niepreferowany, i można wybrać opcję na liście **szybkie akcje** , aby automatycznie napisać kod do preferowanego stylu.
 
 ## <a name="apply-code-styles"></a>Zastosuj style kodu
 
 ::: moniker range="vs-2017"
 
-Można skonfigurować polecenie **Formatuj dokument** (**Edytuj**  > **dokument formatu** **zaawansowanego**  > ), aby zastosować ustawienia stylu kodu (z EditorConfig pliku lub opcji **stylu kodu** ) wraz z regularnym formatowanie, które wykonuje (takie jak wcięcia). Jeśli plik *. editorconfig* istnieje dla projektu, te ustawienia mają pierwszeństwo.
+Można skonfigurować polecenie **Formatuj dokument** (**Edytuj** > **dokument formatu** **zaawansowanego** > ), aby zastosować ustawienia stylu kodu (z EditorConfig pliku lub opcji **stylu kodu** ) wraz z regularnym formatowaniem, które robi (na przykład wcięciem). Jeśli plik *. editorconfig* istnieje dla projektu, te ustawienia mają pierwszeństwo.
 
 > [!NOTE]
 > Stosowanie stylów kodu przy użyciu polecenia **Formatuj dokument** jest dostępne tylko dla C# plików kodu. Jest to funkcja eksperymentalna.
@@ -82,7 +82,7 @@ Przy pierwszym wyzwoleniu polecenia **formatowania dokumentu** żółty pasek in
 
 ::: moniker range=">=vs-2019"
 
-W C# przypadku plików kodu program Visual Studio 2019 ma przycisk **czyszczenia kodu** u dołu edytora (klawiatura: **ctrl** +**K**, **Ctrl** +**E**), aby zastosować style kodu z pliku EditorConfig lub z **stylu kodu** strona opcji. Jeśli plik *. editorconfig* istnieje dla projektu, są to ustawienia, które mają pierwszeństwo.
+W C# przypadku plików kodu program Visual Studio 2019 ma przycisk **czyszczenia kodu** u dołu edytora (klawiatura: **ctrl**+**K**, **Ctrl**+**E**), aby zastosować style kodu z pliku EditorConfig lub ze strony opcje **stylu kodu** . Jeśli plik *. editorconfig* istnieje dla projektu, są to ustawienia, które mają pierwszeństwo.
 
 ![Wykonaj czyszczenie kodu w programie Visual Studio 2019](media/execute-code-cleanup.png)
 
@@ -93,7 +93,7 @@ Najpierw skonfiguruj style kodu, które mają być stosowane (w jednym z dwóch 
 
 ![Konfigurowanie czyszczenia kodu w programie Visual Studio 2019](media/configure-code-cleanup.png)
 
-Po skonfigurowaniu czyszczenia kodu możesz kliknąć ikonę Broom lub nacisnąć **klawisze ctrl** +**K**, **Ctrl** +**E** , aby uruchomić oczyszczanie kodu. Możesz również uruchomić oczyszczanie kodu w całym projekcie lub rozwiązaniu. Kliknij prawym przyciskiem myszy nazwę projektu lub rozwiązania w **Eksplorator rozwiązań**, wybierz pozycję **Analizuj i wyczyść kod**, a następnie wybierz polecenie **Uruchom oczyszczanie kodu**.
+Po skonfigurowaniu czyszczenia kodu możesz kliknąć ikonę Broom lub nacisnąć **klawisze ctrl**+**K**, **Ctrl**+**E** , aby uruchomić oczyszczanie kodu. Możesz również uruchomić oczyszczanie kodu w całym projekcie lub rozwiązaniu. Kliknij prawym przyciskiem myszy nazwę projektu lub rozwiązania w **Eksplorator rozwiązań**, wybierz pozycję **Analizuj i wyczyść kod**, a następnie wybierz polecenie **Uruchom oczyszczanie kodu**.
 
 ![Uruchom oczyszczanie kodu w całym projekcie lub rozwiązaniu](media/run-code-cleanup-project-solution.png)
 
@@ -104,5 +104,5 @@ Jeśli chcesz, aby ustawienia stylu kodu były stosowane za każdym razem, gdy z
 ## <a name="see-also"></a>Zobacz także
 
 - [Szybkie akcje](../ide/quick-actions.md)
-- [Ustawienia konwencji kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET coding convention ustawienia dla wtyczki EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
 - [Zachowanie edytora (Visual Studio dla komputerów Mac)](/visualstudio/mac/editor-behavior)

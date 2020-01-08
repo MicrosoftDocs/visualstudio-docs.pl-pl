@@ -10,17 +10,17 @@ helpviewer_keywords:
 - LookupBindingPropertiesAttribute class, examples
 - user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2c6542ac89f82443cbe4245862473861c94da3cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642658"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586799"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej powiązanie danych wyszukiwania
 
@@ -68,7 +68,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -111,7 +111,7 @@ W przypadku formantów wyszukiwania obsługujących powiązanie danych można za
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
+3. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Tworzenie źródła danych na podstawie bazy danych
 
@@ -171,9 +171,9 @@ Aby skonfigurować powiązania wyszukiwania, wybierz węzeł główni **klienci*
 
 Spowoduje to skonfigurowanie powiązania danych w celu wyświetlenia `CompanyName` z tabeli `Customers` z zachowaniem `CustomerID` wartości z tabeli `Orders`.
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-- Naciśnij klawisz **F5** , aby uruchomić aplikację.
+- Naciśnij klawisz **F5**, aby uruchomić aplikację.
 
 - Przejdź przez niektóre rekordy i sprawdź, czy `CompanyName` pojawia się w kontrolce `LookupBox`.
 

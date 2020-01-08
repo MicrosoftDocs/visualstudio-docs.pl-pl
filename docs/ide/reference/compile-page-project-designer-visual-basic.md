@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe552db89da4cb4d2a9782a1b5d2c8468833baa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654570"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570276"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Strona kompilowania, Projektant projektu (Visual Basic)
 
@@ -45,7 +45,7 @@ Poniższe ustawienia umożliwiają wybranie konfiguracji i platformy do wyświet
 
 Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia są **debugowane** (ustawienie domyślne), **wydanie**lub **wszystkie konfiguracje**. Aby uzyskać więcej informacji, zobacz [Opis konfiguracji kompilacji](../../ide/understanding-build-configurations.md) i [instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md).
 
-**Platformach**
+**Platforma**
 
 Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Można określić **dowolny procesor** (wartość domyślna), **x64**lub **x86**.
 
@@ -55,7 +55,7 @@ Poniższe ustawienia umożliwiają ustawienie opcji konfiguracji kompilatora.
 
 **Ścieżka wyjściowa kompilacji**
 
-Określa lokalizację plików wyjściowych dla konfiguracji projektu. W tym polu wpisz ścieżkę do danych wyjściowych kompilacji lub kliknij przycisk **Przeglądaj** , aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug\ lub bin\Release \\.
+Określa lokalizację plików wyjściowych dla konfiguracji projektu. W tym polu wpisz ścieżkę do danych wyjściowych kompilacji lub kliknij przycisk **Przeglądaj** , aby wybrać ścieżkę. Należy zauważyć, że ścieżka jest względna; Jeśli wprowadzisz ścieżkę bezwzględną, zostanie ona zapisana jako względna. Ścieżka domyślna to bin\Debug\ lub bin\Release\\.
 
 W przypadku uproszczonych konfiguracji kompilacji system projektu określa, czy należy utworzyć wersję Debug lub Release. Polecenie **Build** z menu **Debuguj** (F5) umieści kompilację w lokalizacji debugowania niezależnie od określonej **ścieżki wyjściowej** . Jednak polecenie **Build** z menu **kompilacja** umieszcza je w określonej lokalizacji.
 
@@ -155,7 +155,7 @@ Domyślnie wszystkie ostrzeżenia kompilatora są dodawane do Lista zadań podcz
 
 **Wyłącz wszystkie ostrzeżenia**
 
-Określa, czy zezwolić kompilatorowi na wydawanie powiadomień zgodnie z opisem w tabeli **warunki i powiadomienia** opisane wcześniej w tym dokumencie. To pole wyboru jest domyślnie wyczyszczone. Zaznacz to pole wyboru, aby spowodować, że kompilator nie wystawia ostrzeżeń lub błędów.
+Określa, czy zezwolić kompilatorowi na wydawanie powiadomień zgodnie z opisem w tabeli **warunki i powiadomienia** opisane wcześniej w tym dokumencie. Domyślnie to pole wyboru jest wyczyszczone. Zaznacz to pole wyboru, aby spowodować, że kompilator nie wystawia ostrzeżeń lub błędów.
 
 To ustawienie odpowiada opcji kompilatora [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) .
 

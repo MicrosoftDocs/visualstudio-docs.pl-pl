@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654618"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570495"
 ---
 # <a name="code-snippet-picker"></a>Selektor wstawek kodu
 
@@ -44,7 +44,7 @@ Procedura wyświetlania **selektora fragmentów kodu** zależy od używanego ję
 
 W większości języków programistycznych programu Visual Studio można użyć **Menedżera fragmentów kodu** , aby dodać foldery do listy folderów, które **Selektor fragmentów kodu** skanuje pod kątem plików wstawka XML. Możesz również utworzyć własne fragmenty kodu, aby dodać je do listy. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie fragmentu kodu](../../ide/walkthrough-creating-a-code-snippet.md).
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu
 
 Nazwa elementu
 

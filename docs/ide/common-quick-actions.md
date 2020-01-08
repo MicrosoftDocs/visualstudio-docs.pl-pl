@@ -3,20 +3,20 @@ title: Typowe szybkie akcje
 description: Najpopularniejsze szybkie akcje dla C# i Visual Basic, w tym naprawianie błędnie napisanych słów kluczowych lub symboli, rozwiązywanie konfliktów scalania, usuwanie niezbędnych operacji importowania, generowanie typów, wprowadzenie zmiennych lokalnych itd.
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652249"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585525"
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -30,7 +30,7 @@ Szybkie akcje w tej sekcji rozwiązują błędy w kodzie, które mogłyby spowod
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Popraw błędny symbol lub słowo kluczowe
 
-Jeśli przypadkowo omyłkowo popełniasz typ lub słowo kluczowe w programie Visual Studio, Ta szybka akcja automatycznie poprawi ją. Te elementy będą widoczne w menu żarówki jako **"Zmień" \<misspelled word > "na" \<correct word > ""** . Na przykład:
+Jeśli przypadkowo omyłkowo popełniasz typ lub słowo kluczowe w programie Visual Studio, Ta szybka akcja automatycznie poprawi ją. Te elementy będą widoczne w menu żarówki jako **"Zmień"\<błędnie napisane słowo > "do"\<poprawić wyraz > ""** . Na przykład:
 
 ```csharp
 // Before
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C#7.1 + | Visual Studio 2017 w wersji 15,3 lub nowszej |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 w wersji 15,3 lub nowszej |
 
 ## <a name="actions-that-add-missing-code"></a>Akcje, które dodają brakujący kod
 
@@ -353,7 +353,7 @@ if (true)
 
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | Program Visual Studio 2017 lub nowszy |
+| IDE0011 | Język C# | Program Visual Studio 2017 lub nowszy |
 
 ### <a name="add-and-order-modifiers"></a>Modyfikatory dodawania i porządkowania
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0021 — 27 | C#6.0 + | Program Visual Studio 2017 lub nowszy |
+| IDE0021-27 | C# 6.0+ | Program Visual Studio 2017 lub nowszy |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Konwertuj funkcję anonimową na funkcję lokalną
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | Identyfikator diagnostyki | Odpowiednie języki | Obsługiwana wersja |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 w wersji 15,5 lub nowszej |
-| IDE0037 | C#7.1 + | Visual Studio 2017 w wersji 15,5 lub nowszej |
+| IDE0037 | Język C# | Visual Studio 2017 w wersji 15,5 lub nowszej |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 w wersji 15,5 lub nowszej |
 
 ### <a name="deconstruct-tuple-declaration"></a>Dekonstrukcja deklaracji krotki
 

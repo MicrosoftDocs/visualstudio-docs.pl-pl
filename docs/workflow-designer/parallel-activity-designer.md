@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650104"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593164"
 ---
 # <a name="parallel-activity-designer"></a>Parallel, projektant działań
 
@@ -39,11 +39,11 @@ Aby dodać działanie do kolekcji <xref:System.Activities.Statements.Parallel.Br
 
 W poniższej tabeli przedstawiono właściwości działania równoległego i opisano sposób ich użycia w projektancie.
 
-|Nazwa właściwości|Wymagane|Użycie|
+|Nazwa właściwości|Wymagane|Pomiar|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **Parallel**. Wartość można opcjonalnie edytować w siatce **Właściwości** lub bezpośrednio w nagłówku projektanta działań.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|Oznacza|Zawiera kolekcję działań podrzędnych do wykonania.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Oceniane po zakończeniu gałęzi. Jeśli wartość jest **równa true**, zaplanowane oczekujące gałęzie są anulowane. Jeśli ta właściwość nie jest ustawiona lub ma **wartość false**, działanie kończy się po zakończeniu wszystkich działań podrzędnych. Wartość domyślna to **null**.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa przyjazną nazwę wyświetlaną projektanta działań w nagłówku. Wartość domyślna to **Parallel**. Wartość można opcjonalnie edytować w siatce **Właściwości** lub bezpośrednio w nagłówku projektanta działań.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Prawda|Zawiera kolekcję działań podrzędnych do wykonania.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Fałsz|Oceniane po zakończeniu gałęzi. Jeśli wartość jest **równa true**, zaplanowane oczekujące gałęzie są anulowane. Jeśli ta właściwość nie jest ustawiona lub ma **wartość false**, działanie kończy się po zakończeniu wszystkich działań podrzędnych. Wartość domyślna to **null**.|
 
 ## <a name="see-also"></a>Zobacz także
 

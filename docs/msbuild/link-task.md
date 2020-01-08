@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (C++), Link task
 - Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911261"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592207"
 ---
 # <a name="link-task"></a>Link — Zadanie
 Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie konsolidatora łączy pliki i biblioteki obiektów Common Object Format (COFF), aby utworzyć plik wykonywalny (*exe*) lub bibliotekę dołączaną dynamicznie (dll). Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](/cpp/build/reference/linker-options).
@@ -71,7 +71,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Opcjonalny parametr **ciągu** .
 
-  Lista opcji konsolidatora określona w wierszu polecenia. Na przykład/\<option1 >/\<option2 >/\<option # >. Użyj tego parametru, aby określić Opcje konsolidatora, które nie są reprezentowane przez żaden inny parametr zadania **linku** .
+  Lista opcji konsolidatora określona w wierszu polecenia. Na przykład/\<opcja1 >/\<opcja2 >/\<opcji # >. Użyj tego parametru, aby określić Opcje konsolidatora, które nie są reprezentowane przez żaden inny parametr zadania **linku** .
 
   Aby uzyskać więcej informacji, zobacz [Opcje konsolidatora](/cpp/build/reference/linker-options).
 
@@ -111,7 +111,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Niejawny parametr **logiczny** .
 
-  Umożliwia dokładniejsze śledzenie plików, aby przechwycić zachowanie przyrostu łącza. Zawsze zwraca `true`.
+  Umożliwia dokładniejsze śledzenie plików, aby przechwycić zachowanie przyrostu łącza. Zawsze zwraca wartość `true`.
 
 - **BaseAddress**
 
@@ -137,13 +137,13 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **Domyślne**  *\<none  -  >*
+  - **Domyślne** -  *\<brak >*
 
-  - **ForceIJWImage**  -  **/CLRIMAGETYPE: IJW**
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**
 
-  - **ForcePureILImage**  -  **/CLRIMAGETYPE: czysty**
+  - **ForcePureILImage** -  **/CLRIMAGETYPE: czysty**
 
-  - **ForceSafeILImage**  -  **/CLRIMAGETYPE: Safe**
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**
 
   Aby uzyskać więcej informacji, zobacz [/CLRIMAGETYPE (Określ typ obrazu CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
@@ -155,11 +155,11 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **Włączone**  -  **/CLRSupportLastError**
+  - **Włączone** -  **/CLRSupportLastError**
 
-  - **Wyłączone**  -  **/CLRSupportLastError: nie**
+  - **Wyłączone** -  **/CLRSupportLastError: nie**
 
-  - **SystemDlls**  -  **/CLRSupportLastError: SYSTEMDLL**
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**
 
   Aby uzyskać więcej informacji, zobacz [/CLRSUPPORTLASTERROR (Zachowaj kod ostatniego błędu dla wywołań PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
@@ -171,11 +171,11 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **DefaultThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: brak**
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE: brak**
 
-  - **MTAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: MTA**
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE: MTA**
 
-  - **STAThreadingAttribute**  -  **/CLRTHREADATTRIBUTE: sta**
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE: sta**
 
   Aby uzyskać więcej informacji, zobacz [/CLRTHREADATTRIBUTE (ustaw atrybut wątku CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
@@ -195,13 +195,13 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, która odnosi się do opcji konsolidatora.
 
-  - **Włączone**  -  **/functionpadmin**
+  - **Enabled** -  **/FUNCTIONPADMIN**
 
-  - **X86Image**  -  **/functionpadmin: 5**
+  - **X86Image** -  **/FUNCTIONPADMIN:5**
 
-  - **X64Image**  -  **/functionpadmin: 6**
+  - **X64Image** -  **/FUNCTIONPADMIN:6**
 
-  - **ItaniumImage**  -  **/functionpadmin: 16**
+  - **ItaniumImage** -  **/functionpadmin: 16**
 
   Aby uzyskać więcej informacji, zobacz [/functionpadmin (Create możliwy do poprawiania Image)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
@@ -225,11 +225,11 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Opcjonalny parametr **logiczny** .
 
-  Jeśli `true`, częściowo podpisuje zestaw. Domyślnie wartość jest `false`.
+  Jeśli `true`, częściowo podpisuje zestaw. Domyślna wartość to `false`.
 
   Aby uzyskać więcej informacji, zobacz [/delaysign (częściowo podpisz zestaw)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
-- **Kierowc**
+- **Sterownik**
 
   Opcjonalny parametr **ciągu** .
 
@@ -237,13 +237,13 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.
 
-  - **NotSet**  -  *\<none >*
+  - **NotSet** -  *\<none>*
 
-  - ** - ** **sterownika sterowników**
+  - **Driver** -  **/Driver**
 
-  - **Tylko**  - object **: tylko** do
+  - **UpOnly** -  **/DRIVER:UPONLY**
 
-  - **Wdm**  -  **: WDM**
+  - **WDM** -  **/DRIVER:WDM**
 
   Aby uzyskać więcej informacji, zobacz [Sterownik systemu Windows NT — sterowniki trybu jądra](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
@@ -283,7 +283,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Opcjonalny parametr **logiczny** .
 
-  W przypadku `true` tworzy program lub plik DLL, który można załadować tylko przy użyciu preferowanego adresu podstawowego.
+  W przypadku `true`tworzy program lub plik DLL, który można załadować tylko przy użyciu preferowanego adresu podstawowego.
 
   Aby uzyskać więcej informacji, zobacz [/FIXED (stały adres podstawowy)](/cpp/build/reference/fixed-fixed-base-address).
 
@@ -295,11 +295,11 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Włączono**  -  **/Force**
+  - **Włączono** -  **/Force**
 
-  - **MultiplyDefinedSymbolOnly**  -  **/Force: wiele**
+  - **MultiplyDefinedSymbolOnly** -  **/Force: wiele**
 
-  - **UndefinedSymbolOnly**  -  **/Force: nierozwiązane**
+  - **UndefinedSymbolOnly** -  **/Force: nierozwiązane**
 
   Aby uzyskać więcej informacji, zobacz [/Force (Wymuś dane wyjściowe pliku)](/cpp/build/reference/force-force-file-output).
 
@@ -445,13 +445,13 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NoErrorReport**  -  **/errorReport: brak**
+  - **NoErrorReport** -  **/errorReport: brak**
 
-  - **Monituj bezzwłocznie**  -  **/errorReport: Prompt**
+  - **Monituj bezzwłocznie** -  **/errorReport: Prompt**
 
-  - **QueueForNextLogin**  -  **/errorReport: Queue**
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**
 
-  - **SendErrorReport**  -  **/errorReport: Send**
+  - **SendErrorReport** -  **/errorReport: Send**
 
   Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy konsolidatora)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
@@ -487,13 +487,13 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Domyślne**  *\<none  -  >*
+  - **Domyślne** -  *\<brak >*
 
-  - **UseLinkTimeCodeGeneration**  -  **/LTCG**
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**
 
-  - **PGInstrument**  -  **/LTCG: PGInstrument**
+  - **PGInstrument** -  **/LTCG:PGInstrument**
 
-  - **PGOptimization**  -  **/LTCG: PGOptimize**
+  - **PGOptimization** -  **/LTCG: PGOptimize**
 
   - **PGUpdate**
 
@@ -569,7 +569,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku szczątkowego systemu MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
-- **Noentrypoint**
+- **NoEntryPoint**
 
   Opcjonalny parametr **logiczny** .
 
@@ -591,7 +591,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Aby uzyskać więcej informacji, zobacz argument `REF` w [/opt (optymalizacje)](/cpp/build/reference/opt-optimizations).
 
-- **Plik_wyjściowy**
+- **OutputFile**
 
   Opcjonalny parametr **ciągu** .
 
@@ -603,7 +603,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Opcjonalny parametr **logiczny** .
 
-  Jeśli `true` i rejestrowanie danych wyjściowych jest włączone, wymusza przekierowanie zapisów rejestru do **klucza HKEY_CLASSES_ROOT** do **HKEY_CURRENT_USER**.
+  Jeśli `true` i rejestrowanie danych wyjściowych jest włączone, wymusza, aby zapisy rejestru **HKEY_CLASSES_ROOT** przekierowywać do **HKEY_CURRENT_USER**.
 
 - **PreprocessOutput**
 
@@ -619,7 +619,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki dll)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
-- **Profilu**
+- **Profil**
 
   Opcjonalny parametr **logiczny** .
 
@@ -665,7 +665,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Aby uzyskać więcej informacji, zobacz [/align (wyrównanie sekcji)](/cpp/build/reference/align-section-alignment).
 
-- **SetCheckSum —**
+- **SetChecksum**
 
   Opcjonalny parametr **logiczny** .
 
@@ -681,19 +681,19 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotSet**  -  *\<none >*
+  - **NotSet** -  *\<none>*
 
-  - **LinkVerbose**  -  **/verbose**
+  - **LinkVerbose** -  **/VERBOSE**
 
-  - **LinkVerboseLib**  -  **/verbose: lib**
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**
 
-  - **LinkVerboseICF**  -  **/verbose: ICF**
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**
 
-  - **LinkVerboseREF**  -  **/verbose: ref**
+  - **LinkVerboseREF** -  **/VERBOSE:REF**
 
-  - **LinkVerboseSAFESEH**  -  **/verbose: SAFESEH**
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**
 
-  - **LinkVerboseCLR**  -  **/verbose: CLR**
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**
 
   Aby uzyskać więcej informacji, zobacz [/verbose (drukowanie komunikatów o postępie)](/cpp/build/reference/verbose-print-progress-messages).
 
@@ -733,9 +733,9 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Tworzy drugi plik bazy danych programu (PDB), który pomija symbole, które nie mają być rozpowszechniane do klientów. Określ nazwę drugiego pliku PDB.
 
-  Aby uzyskać więcej informacji, zobacz [/PDBSTRIPPED (symbole prywatne)](/cpp/build/reference/pdbstripped-strip-private-symbols).
+  Aby uzyskać więcej informacji, zobacz [/pdbstripped (Usuń symboli prywatnych)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
-- **Wykonawc**
+- **SubSystem**
 
   Opcjonalny parametr **ciągu** .
 
@@ -743,13 +743,13 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotSet**  -  *\<none >*
+  - **NotSet** -  *\<none>*
 
-  - **Konsola**  -  **/SUBSYSTEM: Konsola**
+  - **Konsola** -  **/SUBSYSTEM: Konsola**
 
-  - **Windows**  -  **/SUBSYSTEM: Windows**
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**
 
-  - **Natywne**  -  **/SUBSYSTEM: natywne**
+  - **Native** -  **/SUBSYSTEM:NATIVE**
 
   - **Aplikacja EFI** -  **/SUBSYSTEM: EFI_APPLICATION**
 
@@ -757,11 +757,11 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   - **Interfejs EFI ROM** -  **/SUBSYSTEM: EFI_ROM**
 
-  - **Środowisko uruchomieniowe EFI** -  **/SUBSYSTEM: EFI_RUNTIME_DRIVER**
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-  - **WindowsCE**  -  **/SUBSYSTEM: WindowsCE**
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**
 
-  - **Posix**  -  **/SUBSYSTEM: POSIX**
+  - **POSIX** -  **/SUBSYSTEM:POSIX**
 
   Aby uzyskać więcej informacji, zobacz [/subsystem (Określanie podsystemu)](/cpp/build/reference/subsystem-specify-subsystem).
 
@@ -793,7 +793,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Opcjonalny parametr **logiczny** .
 
-  W przypadku `true` program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.
+  W przypadku `true`program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.
 
   Aby uzyskać więcej informacji, zobacz argument `CD` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz również parametr **SwapRunFromNET** .
 
@@ -801,7 +801,7 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Opcjonalny parametr **logiczny** .
 
-  W przypadku `true` program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.
+  W przypadku `true`program instruuje system operacyjny, aby najpierw skopiował dane wyjściowe konsolidatora do pliku wymiany, a następnie uruchomił obraz stamtąd.
 
   Aby uzyskać więcej informacji, zobacz argument `NET` [/SWAPRUN (ładowanie danych wyjściowych konsolidatora do pliku wymiany)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Zobacz również parametr **SwapRunFromCD** w tej tabeli.
 
@@ -813,29 +813,29 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotSet**  -  *\<none >*
+  - **NotSet** -  *\<none>*
 
-  - **MachineARM**  -  **/Machine: ARM**
+  - **MachineARM** -  **/Machine: ARM**
 
-  - **MachineEBC**  -  **/Machine: EBC**
+  - **MachineEBC** -  **/MACHINE:EBC**
 
-  - **MachineIA64**  -  **/Machine: IA64**
+  - **MachineIA64** -  **/MACHINE:IA64**
 
-  - **MachineMIPS**  -  **/Machine: MIPS**
+  - **MachineMIPS** -  **/MACHINE:MIPS**
 
-  - **MachineMIPS16**  -  **/Machine: MIPS16**
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**
 
-  - **MachineMIPSFPU**  -  **/Machine: MIPSFPU**
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**
 
-  - **MachineMIPSFPU16**  -  **/Machine: MIPSFPU16**
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**
 
-  - **MachineSH4**  -  **/Machine: sh4**
+  - **MachineSH4** -  **/MACHINE:SH4**
 
-  - **MachineTHUMB**  -  **/Machine: kciuk**
+  - **MachineTHUMB** -  **/Machine: kciuk**
 
-  - **MachineX64**  -  **/Machine: x64**
+  - **MachineX64** -  **/MACHINE:X64**
 
-  - **MachineX86**  -  **/Machine: x86**
+  - **MachineX86** -  **/MACHINE:X86**
 
   Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformę docelową)](/cpp/build/reference/machine-specify-target-platform).
 
@@ -893,11 +893,11 @@ Zawija narzędzia konsolidatora C++ firmy Microsoft, *link. exe*. Narzędzie kon
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Jako źródło**  -  `level='asInvoker'`
+  - **AsInvoker** - `level='asInvoker'`
 
-  - **Najwyższe dostępne**  -  `level='highestAvailable'`
+  - **HighestAvailable** - `level='highestAvailable'`
 
-  - **Wymaga administratora**  -  `level='requireAdministrator'`
+  - **RequireAdministrator** - `level='requireAdministrator'`
 
   Aby uzyskać więcej informacji, zobacz argument `level` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 

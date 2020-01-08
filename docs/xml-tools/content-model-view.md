@@ -3,21 +3,21 @@ title: Widok modelu zawartości projektanta schematu XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661526"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592916"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 
-Widok model zawartości zawiera graficzną reprezentację lokalnych i globalnych węzłów schematu oraz ich składników, w tym prostych i złożonych typów, elementów, grup modeli, atrybutów i grup atrybutów. Nie można wyświetlić komentarzy i instrukcji przetwarzania XML w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: Panel **obszaru roboczego** zawierający listę węzłów w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md)oraz powierzchnię projektu, w której można zobaczyć model zawartości węzłów schematu, które są wybrane w **obszarze roboczym** panel. Widok modelu zawartości obejmuje również pasek narzędzi projektanta schematu XML i pasek nawigacyjny.
+Widok model zawartości zawiera graficzną reprezentację lokalnych i globalnych węzłów schematu oraz ich składników, w tym prostych i złożonych typów, elementów, grup modeli, atrybutów i grup atrybutów. Nie można wyświetlić komentarzy i instrukcji przetwarzania XML w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: Panel **obszaru roboczego** zawierający listę węzłów w [obszarze roboczym Projektant schematu XML](../xml-tools/xml-schema-designer-workspace.md)oraz powierzchnię projektu, w której można zobaczyć model zawartości węzłów schematu, które są wybrane w panelu **obszaru roboczego** . Widok modelu zawartości obejmuje również pasek narzędzi projektanta schematu XML i pasek nawigacyjny.
 
 Na poniższej ilustracji panel **obszary robocze** zawiera sześć węzłów schematu. Węzeł `purchaseOrder` jest wybierany w panelu **obszaru roboczego** i wyświetlany na powierzchni projektowej.
 
@@ -81,9 +81,9 @@ Poniższe przyciski paska narzędzi projektanta XSD są włączone, gdy aktywny 
 
 |Opcja|Opis|
 |-|-----------------|
-|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** +**1**.|
-|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** +**2**.|
-|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl** +**3**.|
+|**Pokaż widok startowy**|Przełącza do [widoku Start](../xml-tools/start-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
+|**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
+|**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Dostęp do tego widoku można uzyskać za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|
 |**Wyczyść obszar roboczy**|Czyści obszar roboczy i powierzchnię projektu.|
 |**Usuń z obszaru roboczego**|Usuwa wybrane węzły z obszaru roboczego i powierzchni projektowej.|
 |**Usuń wszystko oprócz zaznaczenia z obszaru roboczego**|Usuwa węzły, które nie są wybrane z obszaru roboczego i powierzchni projektowej.|
@@ -93,7 +93,7 @@ Poniższe przyciski paska narzędzi projektanta XSD są włączone, gdy aktywny 
 
 Powierzchnię projektu można przesuwać przy użyciu pasków przewijania lub przez przytrzymanie klawisza **Ctrl** podczas klikania i przeciągania myszy. Gdy przesuwasz powierzchnię projektu przy użyciu przycisku kliknij i przeciągnij, kursor zmieni się na cztery przecinające się strzałki, wskazując cztery kierunki.
 
-## <a name="undoredo"></a>Cofnij/ponów
+## <a name="undoredo"></a>Cofnij/Ponów.
 
 Funkcja Cofnij/ponów jest włączona w widoku modelu zawartości dla następujących akcji:
 

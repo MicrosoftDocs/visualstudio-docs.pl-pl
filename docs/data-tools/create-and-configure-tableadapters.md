@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648604"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586786"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 
@@ -54,7 +54,7 @@ Jeśli przeciągniesz nowy TableAdapter z przybornika, gdy **Projektant obiektó
 Mapuj parametry z wybranej procedury przechowywanej do odpowiednich kolumn w tabeli danych. Na przykład jeśli procedura składowana akceptuje parametr o nazwie `@CompanyName`, który przechodzi do kolumny `CompanyName` w tabeli, należy ustawić **kolumnę źródłową** parametru `@CompanyName` na `CompanyName`.
 
 > [!NOTE]
-> Procedura składowana, która jest przypisana do polecenia SELECT, jest uruchamiana przez wywołanie metody TableAdapter, która została nazwana w następnym kroku kreatora. Metoda domyślna to `Fill`, więc kod, który jest zazwyczaj używany do uruchamiania procedury SELECT, jest `TableAdapter.Fill(tableName)`. W przypadku zmiany nazwy domyślnej z `Fill` należy zastąpić `Fill` nazwą przypisaną i zamienić wartość "TableAdapter" na rzeczywistą nazwę TableAdapter (na przykład `CustomersTableAdapter`).
+> Procedura składowana, która jest przypisana do polecenia SELECT, jest uruchamiana przez wywołanie metody TableAdapter, która została nazwana w następnym kroku kreatora. Metoda domyślna to `Fill`, więc kod, który jest zazwyczaj używany do uruchamiania procedury SELECT, jest `TableAdapter.Fill(tableName)`. W przypadku zmiany nazwy domyślnej z `Fill`należy zastąpić `Fill` nazwą przypisaną i zamienić wartość "TableAdapter" na rzeczywistą nazwę TableAdapter (na przykład `CustomersTableAdapter`).
 
 - Wybranie opcji **Utwórz metody, aby wysłać aktualizacje bezpośrednio do bazy danych,** jest równoznaczne z ustawieniem właściwości `GenerateDBDirectMethods` na true. Opcja jest niedostępna, gdy pierwotna instrukcja SQL nie dostarcza wystarczającej ilości informacji lub zapytanie nie jest aktualizowalnym zapytaniem. Taka sytuacja może wystąpić na przykład w kwerendach **sprzężenia** i zapytaniach zwracających pojedynczą wartość (skalarną).
 
@@ -80,9 +80,9 @@ Poniższy przykład pokazuje, jak wywołać dodatkowe zapytanie o nazwie `FillBy
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Aby uruchomić Kreatora konfiguracji zapytania TableAdapter z nowym zapytaniem
 
-1. Otwórz zestaw danych w **Projektant obiektów DataSet**.
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**.
 
-2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** na <xref:System.Data.DataTable> lub wybierz polecenie **Dodaj zapytanie** z menu skrótów TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet**, który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable>. Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
+2. W przypadku tworzenia nowego zapytania przeciągnij obiekt **zapytania** z karty **zestaw danych** **przybornika** na <xref:System.Data.DataTable>lub wybierz polecenie **Dodaj zapytanie** z menu skrótów TableAdapter. Możesz również przeciągnąć obiekt **zapytania** do pustego obszaru **Projektant obiektów DataSet**, który tworzy TableAdapter bez skojarzonego <xref:System.Data.DataTable>. Te zapytania mogą zwracać tylko pojedyncze (skalarne) wartości lub uruchamiać polecenia UPDATE, INSERT lub DELETE względem bazy danych.
 
 3. Na ekranie **Wybierz połączenie danych** wybierz lub Utwórz połączenie, które będzie używane przez zapytanie.
 

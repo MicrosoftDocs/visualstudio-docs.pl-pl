@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631118"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585434"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
@@ -104,11 +104,11 @@ Poniżej znajduje się struktura elementu kodu:
 
 Wartość tekstowa jest wymagana. Ten tekst Określa kod wraz z literałami i obiektami, których można użyć po wstawieniu tego fragmentu kodu do pliku kodu.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 Dla elementu Code dostępne są trzy atrybuty:
 
-- **Język**  - _wymaganego_ atrybutu, który określa język fragmentu kodu. Może to być jedna z następujących wartości:
+- **Język** - _wymaganego_ atrybutu, który określa język fragmentu kodu. Może to być jedna z następujących wartości:
 
    |Wartość|Opis|
    |-----|-----------|
@@ -121,7 +121,7 @@ Dla elementu Code dostępne są trzy atrybuty:
    |`SQL`|Identyfikuje fragment kodu języka SQL.|
    |`HTML`|Identyfikuje fragment kodu języka HTML.|
 
-- **Rodzajowy**  - _opcjonalny_ atrybut, który określa rodzaj kodu, który zawiera fragment. Może to być jedna z następujących wartości:
+- **Rodzajowy** - _opcjonalny_ atrybut, który określa rodzaj kodu, który zawiera fragment. Może to być jedna z następujących wartości:
 
    |Wartość|Opis|
    |-----|-----------|
@@ -131,7 +131,7 @@ Dla elementu Code dostępne są trzy atrybuty:
    |`file`|Określa, że fragment jest kompletnym plikiem kodu. Takie fragmenty kodu można wstawiać autonomicznie do pliku kodu albo do przestrzeni nazw.|
    |`any`|Określa, że fragment można wstawić w dowolnym miejscu. Ten tag jest używany we fragmentach kodu niezależnych od kontekstu, takich jak komentarze.|
 
-- **Ogranicznik**  - _opcjonalny_ atrybut, który określa ogranicznik używany do opisywania literałów i obiektów w kodzie. Domyślnie ogranicznik jest `$`.
+- **Ogranicznik** - _opcjonalny_ atrybut, który określa ogranicznik używany do opisywania literałów i obiektów w kodzie. Domyślnie ogranicznik jest `$`.
 
 ### <a name="parent-element"></a>Element nadrzędny
 
@@ -503,10 +503,10 @@ Grupuje poszczególne elementy `Reference`.
 
 ## <a name="shortcut-element"></a>Element skrótu
 
-Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa elementu `Shortcut` może zawierać tylko znaki alfanumeryczne, łączniki (-) i znaki podkreślenia (_).
+Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa elementu `Shortcut` może zawierać tylko znaki alfanumeryczne i podkreślenia (_).
 
 > [!CAUTION]
-> _ i-nie są obsługiwane w C++ skrótach fragmentu kodu.
+> Znaki podkreślenia (_) nie są obsługiwane w C++ skrótach do fragmentów kodu.
 
 ```xml
 <Shortcut>

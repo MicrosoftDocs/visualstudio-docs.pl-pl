@@ -6,17 +6,17 @@ f1_keywords:
 - vs.newproject
 helpviewer_keywords:
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35302e8f749563ab173e7be15e944f8462fdb18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652651"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585473"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Tworzenie nowego projektu w programie Visual Studio
 
@@ -24,18 +24,18 @@ ms.locfileid: "72652651"
 
 ## <a name="open-the-new-project-dialog"></a>Otwórz okno dialogowe Nowy projekt
 
-Istnieje wiele sposobów tworzenia nowego projektu w programie Visual Studio 2017. Na stronie startowej można wpisać nazwę szablonu projektu w polu **Wyszukaj szablony projektu** lub wybrać łącze **Utwórz nowy projekt** , aby otworzyć okno dialogowe **Nowy projekt** . Poza stroną początkową można również wybrać pozycję **plik**  > **Nowy**  > **projekt** na pasku menu lub kliknąć przycisk **Nowy projekt** na pasku narzędzi.
+Istnieje wiele sposobów tworzenia nowego projektu w programie Visual Studio 2017. Na stronie startowej można wpisać nazwę szablonu projektu w polu **Wyszukaj szablony projektu** lub wybrać łącze **Utwórz nowy projekt** , aby otworzyć okno dialogowe **Nowy projekt** . Poza stroną początkową można również wybrać pozycję **plik** > **Nowy** > **projekt** na pasku menu lub kliknąć przycisk **Nowy projekt** na pasku narzędzi.
 
 ![Strona początkowa i plik > nowego projektu >](./media/vside-newproject1.png)
 
 ## <a name="select-a-template-type"></a>Wybierz typ szablonu
 
-W oknie dialogowym **Nowy projekt** dostępne szablony projektu są wyświetlane na liście w kategorii **Szablony** . Szablony są zorganizowane według języka programowania i typu projektu, takich jak wizualizacja C#, JavaScript i Azure Data Lake.
+W **nowy projekt** okno dialogowe dostępnych szablonów projektu są wyświetlane na liście w obszarze **szablony** kategorii. Szablony są uporządkowane według programowania języka i projektu typu, na przykład Visual C#, JavaScript i Azure Data Lake.
 
-![Nowy projekt — okno dialogowe](./media/vside-newproject-templates-list.png)
+![Okno dialogowe Nowy projekt](./media/vside-newproject-templates-list.png)
 
 > [!NOTE]
-> Wyświetlana lista dostępnych języków i szablonów projektu zależy od używanej wersji programu Visual Studio i zainstalowanych obciążeń. Aby dowiedzieć się więcej o instalowaniu dodatkowych obciążeń, zobacz [modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników](../install/modify-visual-studio.md).
+> Wyświetlonej listy dostępnych języków i szablonów projektu zależy od wersji programu Visual Studio, które są uruchomione i obciążeń, które są zainstalowane. Aby dowiedzieć się więcej o instalowaniu dodatkowych obciążeń, zobacz [modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników](../install/modify-visual-studio.md).
 
 Aby wyświetlić listę szablonów dla języka programowania, którego chcesz użyć, kliknij trójkąt obok nazwy języka, a następnie wybierz kategorię projektu (na przykład Windows Desktop).
 
@@ -45,7 +45,7 @@ Na poniższej ilustracji przedstawiono szablony projektów dostępne dla projekt
 
 ## <a name="configure-your-project"></a>Konfigurowanie projektu
 
-Wprowadź nazwę nowego projektu w polu **Nazwa** . Projekt można zapisać w domyślnej lokalizacji na komputerze lub kliknąć przycisk **Przeglądaj** , aby znaleźć inną lokalizację. Możesz również wybrać nazwę rozwiązania lub dodać nowy projekt do repozytorium git (wybierając pozycję **Dodaj do kontroli źródła**).
+Wprowadź nazwę dla nowego projektu w **nazwa** pole. Projekt można zapisać w domyślnej lokalizacji na komputerze lub kliknąć przycisk **Przeglądaj** , aby znaleźć inną lokalizację. Możesz również wybrać nazwę rozwiązania lub dodać nowy projekt do repozytorium git (wybierając pozycję **Dodaj do kontroli źródła**).
 
 Kliknij przycisk **OK** , aby utworzyć rozwiązanie i projekt.
 
@@ -97,7 +97,7 @@ Kliknij przycisk **Utwórz** , aby utworzyć nowy projekt.
 
 ## <a name="add-additional-projects-to-a-solution"></a>Dodawanie kolejnych projektów do rozwiązania
 
-Jeśli chcesz dodać dodatkowy projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **Nowy projekt**.
+Jeśli chcesz dodać dodatkowy projekt do rozwiązania, kliknij prawym przyciskiem myszy węzeł rozwiązanie w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**.
 
 ## <a name="see-also"></a>Zobacz także
 

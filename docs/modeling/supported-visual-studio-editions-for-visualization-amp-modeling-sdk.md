@@ -5,49 +5,49 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efe452f059d7184e1f7c87fddd6bdc6c213ece8a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 127b45ae6a0ab28d7f83ee41449d7846858ee4a9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983727"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591908"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Obsługiwane wersje programu Visual Studio dla zestawu Visualization & Modeling SDK
 
-Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługiwane przez program [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] w środowiskach tworzenia i wdrażania. Aby uzyskać więcej informacji na temat tych wersji, zobacz [Centrum deweloperów](https://visualstudio.microsoft.com/)Microsoft Visual Studio.
+Poniżej przedstawiono listę wersji programu Visual Studio, które są obsługiwane w przypadku [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] w środowiskach tworzenia i wdrażania. Aby uzyskać więcej informacji o tych wersjach, zobacz programu Microsoft Visual Studio [Centrum deweloperów](https://visualstudio.microsoft.com/).
 
-## <a name="authoring-edition"></a>Wersja autorstwa
+## <a name="authoring-edition"></a>Tworzenie wersji
 
-Aby zdefiniować DSL, należy zainstalować następujące składniki:
+Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 |||
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
+|{1&gt;Visual Studio&lt;1}|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
 |Visual Studio SDK|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Visual Studio Wizualizacja i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
+|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[http://go.microsoft.com/fwlink/?LinkID=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>Wersje wdrożenia
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] obsługuje następujące konfiguracje wdrażania utworzonych języków specyficznych dla domeny:
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Wdrażanie języki specyficzne dla domeny, które tworzysz obsługuje następujące konfiguracje:
 
 - Visual Studio Enterprise
 
 - Visual Studio Professional
 
-- Pakiet redystrybucyjny pakietu redystrybucyjnego programu Visual Studio Shell (tryb zintegrowany)
+- Studio Shell (tryb zintegrowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
 
-- Pakiet redystrybucyjny pakietu redystrybucyjnego programu Visual Studio Shell (Tryb izolowany)
+- Studio Shell (tryb izolowany) pakiet redystrybucyjny pakiet redystrybucyjny programu Visual
 
 > [!NOTE]
-> Aby można było uruchomić interfejs DSL w produkcie powłoki, należy ustawić pole **obsługiwanego programu vs Edition** w manifeście rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+> Aby było uruchomić produkt powłoki języka DSL, należy ustawić **obsługiwanych wersji programu VS** pole manifestu rozszerzenia. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

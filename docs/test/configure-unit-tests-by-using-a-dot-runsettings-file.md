@@ -2,17 +2,17 @@
 title: Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771508"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593255"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *. runsettings*
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c8fa89b2cf6eb5afdf1d09a9b4de60cdc9ca11f2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648661"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586890"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Tworzenie bazy danych i Dodawanie tabel w programie Visual Studio
 
@@ -26,13 +26,13 @@ Możesz użyć programu Visual Studio do utworzenia i zaktualizowania lokalnego 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby ukończyć ten przewodnik, konieczne będzie zainstalowanie **aplikacji klasycznych platformy .NET** oraz obciążeń związanych z tworzeniem **i przetwarzaniem danych** w programie Visual Studio. Aby je zainstalować, Otwórz **Instalator programu Visual Studio** a następnie wybierz pozycję **Modyfikuj** (lub **więcej**  > **Modify**) obok wersji programu Visual Studio, którą chcesz zmodyfikować.
+Aby ukończyć ten przewodnik, konieczne będzie zainstalowanie **aplikacji klasycznych platformy .NET** oraz obciążeń związanych z tworzeniem **i przetwarzaniem danych** w programie Visual Studio. Aby je zainstalować, Otwórz **Instalator programu Visual Studio** a następnie wybierz pozycję **Modyfikuj** (lub **więcej** > **Modify**) obok wersji programu Visual Studio, którą chcesz zmodyfikować.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Tworzenie projektu i pliku lokalnej bazy danych
 
 1. Utwórz nowy projekt **aplikacji Windows Forms** i nadaj mu nazwę **SampleDatabaseWalkthrough**.
 
-2. Na pasku menu wybierz pozycję **projekt**  > **Dodaj nowy element**.
+2. Na pasku menu wybierz pozycję **projekt** > **Dodaj nowy element**.
 
 3. Na liście szablonów elementów przewiń w dół i wybierz pozycję **baza danych oparta na usłudze**.
 
@@ -42,7 +42,7 @@ Aby ukończyć ten przewodnik, konieczne będzie zainstalowanie **aplikacji klas
 
 ### <a name="add-a-data-source"></a>Dodawanie źródła danych
 
-1. Jeśli okno **źródła danych** nie jest otwarte, otwórz je, naciskając klawisz **Shift** +**Alt** +**D** lub wybierając pozycję **Widok**  > **innymi** **źródłami danych**  >  na pasku menu.
+1. Jeśli okno **źródła danych** nie jest otwarte, otwórz je, naciskając klawisz **Shift**+**Alt**+**D** lub wybierając pozycję **Widok** > **innymi** **źródłami danych** > na pasku menu.
 
 1. W oknie **źródła danych** wybierz pozycję **Dodaj nowe źródło danych**.
 
@@ -58,15 +58,15 @@ Aby ukończyć ten przewodnik, konieczne będzie zainstalowanie **aplikacji klas
 
 1. Na stronie **Zapisz parametry połączenia do pliku konfiguracji aplikacji** wybierz pozycję **dalej**.
 
-1. Na stronie **Wybierz obiekty bazy danych** zobaczysz komunikat informujący, że baza danych nie zawiera żadnych obiektów. Wybierz pozycję **Zakończ**.
+1. Na stronie **Wybierz obiekty bazy danych** zobaczysz komunikat informujący, że baza danych nie zawiera żadnych obiektów. Wybierz **Zakończ**.
 
 ### <a name="view-properties-of-the-data-connection"></a>Wyświetl właściwości połączenia danych
 
 Parametry połączenia dla pliku *SampleDatabase. mdf* można wyświetlić, otwierając okno właściwości połączenia danych:
 
-- Wybierz pozycję **wyświetl**  > **Eksplorator obiektów SQL Server** , aby otworzyć okno **Eksplorator obiektów SQL Server** . Rozwiń **(LocalDB) \MSSQLLocalDB**  > **bazy danych**, a następnie kliknij prawym przyciskiem myszy *SampleDatabase. mdf* i wybierz pozycję **Właściwości**.
+- Wybierz pozycję **wyświetl** > **Eksplorator obiektów SQL Server** , aby otworzyć okno **Eksplorator obiektów SQL Server** . Rozwiń **(LocalDB) \MSSQLLocalDB** > **bazy danych**, a następnie kliknij prawym przyciskiem myszy *SampleDatabase. mdf* i wybierz pozycję **Właściwości**.
 
-- Alternatywnie można wybrać opcję **wyświetl**  > **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno Właściwości, rozwijając węzeł **połączenia danych** , kliknij prawym przyciskiem myszy pozycję *SampleDatabase. mdf*, a następnie wybierz polecenie **Właściwości**.
+- Alternatywnie można wybrać opcję **wyświetl** > **Eksplorator serwera**, jeśli to okno nie jest jeszcze otwarte. Otwórz okno Właściwości, rozwijając węzeł **połączenia danych** , kliknij prawym przyciskiem myszy pozycję *SampleDatabase. mdf*, a następnie wybierz polecenie **Właściwości**.
 
   > [!TIP]
   > Jeśli nie można rozwinąć węzła połączenia danych lub nie ma na liście połączenia SampleDatabase. mdf, wybierz przycisk **Połącz z bazą danych** na pasku narzędzi Eksplorator serwera. W oknie dialogowym **Dodawanie połączenia** upewnij się, że w obszarze **Źródło danych**została wybrana opcja **Microsoft SQL Server plik bazy danych** , a następnie wyszukaj i wybierz plik SampleDatabase. mdf. Zakończ Dodawanie połączenia, wybierając **przycisk OK**.
@@ -104,7 +104,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
    CREATE TABLE [dbo].[Customers]
    ```
 
-   Powinieneś wyglądać następująco:
+   Efekt powinien być podobny do następującego:
 
    ![Projektant tabel](../data-tools/media/table-designer.png)
 
@@ -180,7 +180,7 @@ W tej sekcji utworzysz dwie tabele, klucz podstawowy w każdej tabeli i kilka wi
     > [!IMPORTANT]
     > Upewnij się, że wszystkie identyfikatory zamówień i ilości zamówień są liczbami całkowitymi i że każdy identyfikator klienta odpowiada wartości określonej w kolumnie **IDKlienta** tabeli Customers.
 
-7. Na pasku menu wybierz pozycję **plik**  > **Zapisz wszystko**.
+7. Na pasku menu wybierz pozycję **plik** > **Zapisz wszystko**.
 
 ## <a name="see-also"></a>Zobacz także
 

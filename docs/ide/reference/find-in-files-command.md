@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.FindInFiles command
 - find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25342f86c545752a263d295550222e14c2aa7866
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748771"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569585"
 ---
 # <a name="find-in-files-command"></a>Znajdź w plikach — Polecenie
 Wyszukiwanie plików przy użyciu podzestawu opcji dostępnych na karcie **Znajdź w plikach** okna **Znajdowanie i zamienianie** .
@@ -40,10 +40,10 @@ Wymagany. Tekst do dopasowania.
 /Case lub/c\
 Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokładnie pasują do znaków określonych w argumencie `findwhat`.
 
-/EXT: `extensions` \
+/EXT: `extensions`\
 Opcjonalny. Określa rozszerzenia plików, które mają być przeszukiwane. Jeśli nie zostanie określony, używane jest poprzednie rozszerzenie, jeśli zostało wcześniej wprowadzone.
 
-/lookin: `searchpath` \
+/lookin: `searchpath`\
 Opcjonalny. Katalog do przeszukania. Jeśli ścieżka zawiera spacje, ujmij całą ścieżkę w cudzysłów.
 
 /Names lub/n\
@@ -58,7 +58,7 @@ Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `fi
 /Reset lub/e\
 Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
-/Stop
+/Stop\
 Opcjonalny. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Jeśli określono `/stop`, wyszukiwanie ignoruje wszystkie pozostałe argumenty. Na przykład aby zatrzymać bieżące wyszukiwanie, należy wpisać następujące polecenie:
 
 ```cmd
@@ -66,7 +66,7 @@ Opcjonalny. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Je
 ```
 
 /Sub. lub/s\
-Opcjonalny. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin: `searchpath`.
+Opcjonalny. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin:`searchpath`.
 
 /Text2 lub/2 \
 Opcjonalny. Wyświetla wyniki wyszukiwania w oknie Znajdź wyniki 2.

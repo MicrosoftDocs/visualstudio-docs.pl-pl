@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642715"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586812"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 
@@ -57,7 +57,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -99,7 +99,7 @@ Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **
 
 2. Przeciągnij węzeł **Customers** z okna **źródła danych** do formularza.
 
-     W formularzu pojawiają się <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) służący do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     W formularzu pojawiają się <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) służący do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>Dodawanie parametryzacja (funkcji wyszukiwania) do zapytania
 
@@ -131,7 +131,7 @@ Można dodać klauzulę WHERE do oryginalnego zapytania przy użyciu okna dialog
 
 Uruchomienie aplikacji otwiera formularz i przygotowuje go do przejęcia parametru jako dane wejściowe:
 
-1. Naciśnij klawisz **F5** , aby uruchomić aplikację.
+1. Naciśnij klawisz **F5**, aby uruchomić aplikację.
 
 2. Wpisz **Londyn** w polu tekstowym **miasto** , a następnie kliknij pozycję **FillByCity**.
 
@@ -143,7 +143,7 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 - Dodawanie kontrolek, które wyświetlają powiązane dane. Aby uzyskać więcej informacji, zobacz [relacje w zestawach danych](relationships-in-datasets.md).
 
-- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [Tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Edytowanie zestawu danych w celu dodania lub usunięcia obiektów bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748781"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570352"
 ---
 # <a name="command-window"></a>Okno polecenia
 Okno **polecenia** służy do wykonywania poleceń lub aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE). Można wykonać Oba polecenia menu i polecenia, które nie są wyświetlane w żadnym menu. Aby wyświetlić okno **poleceń** , wybierz **inne okna** z menu **Widok** i wybierz **polecenie Okno**.
@@ -98,16 +98,16 @@ Niemal każdy przełącznik obsługiwany przez polecenie ma dwie formy: krótką
 Jeśli przełączniki krótkie są łączone w grupę i mają daną wartość, ta wartość ma zastosowanie do każdego przełącznika. Na przykład `/pgm:123` są równe `/p:123 /g:123 /m:123`. Błąd występuje, jeśli którykolwiek z przełączników w grupie nie akceptuje wartości.
 
 ## <a name="escape-characters"></a>Znaki ucieczki
-Znak daszka (^) w wierszu polecenia oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Można go użyć do osadzenia prostych cudzysłowów ("), spacji, ukośników wiodących, karetki lub innych znaków literału w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
+Znak daszka (^) w wierszu polecenia oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
 
 ```cmd
 >Edit.Find ^^t /regex
 ```
 
-Daszek działa tak samo, niezależnie od tego, czy znajduje się wewnątrz, czy poza cudzysłowem. Jeśli karetka jest ostatnim znakiem w wierszu, zostanie zignorowana. W poniższym przykładzie pokazano, jak wyszukać wzorzec "^ t".
+Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany. W poniższym przykładzie pokazano, jak wyszukać wzorzec "^ t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Używanie cudzysłowów dla nazw ścieżek ze spacjami
-Jeśli na przykład chcesz otworzyć plik, który ma ścieżkę zawierającą spacje, musisz umieścić podwójne cudzysłowy wokół segmentu ścieżki lub ścieżki zawierającej spacje: **C: \\ "Program Files"** lub **"C:\Program Files"** .
+Jeśli na przykład chcesz otworzyć plik, który ma ścieżkę zawierającą spacje, musisz umieścić podwójne cudzysłowy wokół segmentu ścieżki lub ścieżki zawierającej spacje: **C:\\"Program Files"** lub **"C:\Program Files"** .
 
 ## <a name="see-also"></a>Zobacz także
 

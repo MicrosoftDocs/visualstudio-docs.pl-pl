@@ -2,17 +2,17 @@
 title: Tworzenie kodowanego testu interfejsu użytkownika
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659648"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592064"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Przewodnik: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 
@@ -30,11 +30,11 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 3. W sekcji **wszystkie kontrolki WPF** przeciągnij **przycisk**, **pole wyboru** i formant **ProgressBar** na MainWindow na powierzchni projektowej.
 
-4. Wybierz kontrolkę **przycisk** . W oknie **Właściwości** Zmień wartość właściwości **Nazwa** z \<No nazwa > na Button1. Następnie zmień wartość właściwości **zawartość** z przycisku na Rozpocznij.
+4. Wybierz kontrolkę **przycisk** . W oknie **Właściwości** Zmień wartość właściwości **Nazwa** z \<nie > nazwy na Button1. Następnie zmień wartość właściwości **zawartość** z przycisku na Rozpocznij.
 
-5. Wybierz formant **ProgressBar** . W oknie **Właściwości** Zmień wartość właściwości **Nazwa** z \<No nazwa > na ProgressBar1. Następnie zmień wartość właściwości **Maximum** z **100** na **10000**.
+5. Wybierz formant **ProgressBar** . W oknie **Właściwości** Zmień wartość właściwości **Nazwa** z \<nie > nazwy na ProgressBar1. Następnie zmień wartość właściwości **Maximum** z **100** na **10000**.
 
-6. Zaznacz kontrolkę **pola wyboru** . W oknie **Właściwości** Zmień wartość właściwości **Nazwa** z \<No nazwa > na checkBox1 i wyczyść Właściwość **IsEnabled** .
+6. Zaznacz kontrolkę **pola wyboru** . W oknie **Właściwości** Zmień wartość właściwości **Nazwa** z \<nie > nazwy na checkBox1 i wyczyść Właściwość **IsEnabled** .
 
      ![Prosta aplikacja WPF](../test/media/codedui_wpfapp.png)
 
@@ -106,12 +106,12 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>Tworzenie kodowanego testu interfejsu użytkownika dla SimpleWPFApp
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  > **Nowy projekt**.
+1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
 
 2. Wyszukaj i wybierz szablon projektu **kodowanego testu interfejsu użytkownika** , a następnie wykonaj kroki do momentu utworzenia projektu.
 
    > [!NOTE]
-   > Jeśli szablon **projektu kodowanego testu interfejsu użytkownika** nie jest widoczny, należy [zainstalować składnik KODOWANEGO testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Jeśli nie widzisz **projekt testu kodowanego interfejsu użytkownika** szablonu, trzeba [instalacji składnika należy kodowanego testu interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      Nowy projekt kodowanego testu interfejsu użytkownika o nazwie **CodedUITestProject1** jest dodawany do rozwiązania i zostanie wyświetlone okno dialogowe **generowanie kodu dla KODOWANEGO testu interfejsu użytkownika** .
 
@@ -123,7 +123,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 1. Wybierz pozycję **Rozpocznij nagrywanie** w oknie dialogowym **Konstruktor KODOWANEGO testu interfejsu użytkownika UIMap** .
 
-     ![Rozpocznij nagrywanie](../test/media/cuit_builder_record.png)
+     ![Zacznij nagrywanie](../test/media/cuit_builder_record.png)
 
      Możesz wstrzymać nagrywanie, jeśli jest to konieczne, na przykład w przypadku konieczności zajmowania się pocztą przychodzącą.
 
@@ -154,11 +154,11 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 1. Zapisz projekt.
 
-### <a name="run-the-test"></a>Uruchom test
+### <a name="run-the-test"></a>Uruchamianie testu
 
 1. Z menu **test** wybierz pozycję **Windows** , a następnie wybierz **Eksplorator testów**.
 
-2. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
+2. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 3. W pliku *CodedUITest1.cs* Znajdź metodę **metodę CodedUITestMethod** , kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom testy**lub Uruchom test z **Eksploratora testów**.
 
@@ -178,7 +178,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 3. Aby rozwiązać ten problem, można wykonać kodowane testy interfejsu użytkownika, aby zaczekać na włączenie kontrolki CheckBox przed kontynuowaniem tego wiersza przy użyciu metody `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > Nie należy modyfikować pliku *UIMap.Designer.cs* . Wszelkie wprowadzone zmiany kodu zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą **konstruktora kodowanego testu interfejsu użytkownika UIMap**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj ją do pliku *UIMap.cs* i zmień jej nazwę. Plik *UIMap.cs* może służyć do przesłonięcia metod i właściwości w pliku *UIMapDesigner.cs* . Musisz usunąć odwołanie do oryginalnej metody w pliku *CodedUITest.cs* i zastąpić ją nazwą metody o zmienionej nazwie.
+    > Nie należy modyfikować pliku *UIMap.Designer.cs* . Wszelkie wprowadzone zmiany kodu zostaną nadpisywane przy każdym wygenerowaniu kodu za pomocą **konstruktora kodowanego testu interfejsu użytkownika UIMap**. Jeśli trzeba zmodyfikować nagraną metodę, skopiuj ją do pliku *UIMap.cs* i zmień jej nazwę. *UIMap.cs* pliku może służyć do zastępowania metod i właściwości w *UIMapDesigner.cs* pliku. Musisz usunąć odwołanie do oryginalnej metody w pliku *CodedUITest.cs* i zastąpić ją nazwą metody o zmienionej nazwie.
 
 4. W **Eksplorator rozwiązań**Zlokalizuj *UIMap. UITest* w projekcie kodowanego testu interfejsu użytkownika.
 
@@ -190,7 +190,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 7. Wybierz przycisk **Przenieś kod** na pasku narzędzi **edytora KODOWANEGO testu interfejsu użytkownika** .
 
-8. Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku *UIMap. UITest* do pliku *UIMap.cs* i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz opcję **tak**.
+8. Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku *UIMap. UITest* do pliku *UIMap.cs* i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
 
      Metoda testowa jest usuwana z pliku *UIMap. UITest* i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować przeniesiony plik testowy, Otwórz plik *UIMap.cs* z **Eksplorator rozwiązań**.
 
@@ -331,7 +331,7 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 
 ## <a name="videos"></a>Wideo
 
-![link wideo ](../data-tools/media/playvideo.gif) [wprowadzenie do kodowanych testów interfejsu użytkownika](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
+![link do wideo](../data-tools/media/playvideo.gif) [wprowadzenie do kodowanych testów interfejsu użytkownika](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 
@@ -340,5 +340,5 @@ W tym instruktażu dowiesz się, jak tworzyć, edytować i obsługiwać kodowane
 ## <a name="see-also"></a>Zobacz także
 
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
-- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

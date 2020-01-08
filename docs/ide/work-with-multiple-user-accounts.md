@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647078"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590660"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -33,7 +33,7 @@ Zaloguj się do programu Visual Studio przy użyciu konto Microsoft lub konta or
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Uzyskaj dostęp do konta platformy Azure w Eksplorator serwera
 
-Aby otworzyć Eksplorator serwera, wybierz pozycję **wyświetl**  > **Eksplorator serwera** (lub, jeśli używasz [ustawień środowiska](../ide/environment-settings.md)"ogólne", naciśnij **klawisze CTRL** +**Alt** +**S**). Rozwiń węzeł **platformy Azure** i zwróć uwagę, że zawiera on zasoby dostępne na koncie platformy Azure skojarzonym z kontem używanym do logowania się w programie Visual Studio. Wygląda podobnie do poniższej ilustracji:
+Aby otworzyć Eksplorator serwera, wybierz pozycję **wyświetl** > **Eksplorator serwera** (lub, jeśli używasz [ustawień środowiska](../ide/environment-settings.md)"ogólne", naciśnij **klawisze CTRL**+**Alt**+**S**). Rozwiń węzeł **platformy Azure** i zwróć uwagę, że zawiera on zasoby dostępne na koncie platformy Azure skojarzonym z kontem używanym do logowania się w programie Visual Studio. Wygląda podobnie do poniższej ilustracji:
 
 ![Eksplorator serwera z rozwiniętym węzłem platformy Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -47,7 +47,7 @@ Przy następnym otwarciu **Eksplorator serwera**zostaną wyświetlone zasoby dla
 
 1. Otwórz istniejący projekt lub Utwórz nowy projekt.
 
-1. Wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj**  > **połączonej usługi**.
+1. Wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj** > **połączonej usługi**.
 
    Zostanie wyświetlony Kreator **dodawania usługi połączonej** z listą usług na koncie platformy Azure skojarzonym z Twoim kontem personalizacji programu Visual Studio. Nie musisz logować się osobno na platformie Azure. Należy jednak zalogować się do innych kont przy pierwszej próbie uzyskania dostępu do zasobów z innego komputera.
 
@@ -75,7 +75,7 @@ Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w 
 
 ### <a name="access-your-azure-devops-organization"></a>Dostęp do organizacji usługi Azure DevOps
 
-Z menu głównego wybierz kolejno pozycje **zespół**  > **Zarządzanie połączeniami** , aby otworzyć okno **Team Explorer-Connect** . Wybierz pozycję **Zarządzaj połączeniami** **,  >  połączyć**się z projektem. W oknie dialogowym **Połącz z projektem** wybierz projekt z listy (lub wybierz pozycję **Dodaj serwer TFS** i wprowadź adres URL serwera). Po wybraniu adresu URL użytkownik jest zalogowany bez konieczności ponownego wprowadzania poświadczeń.
+Z menu głównego wybierz kolejno pozycje **zespół** > **Zarządzanie połączeniami** , aby otworzyć okno **Team Explorer-Connect** . Wybierz pozycję **Zarządzaj połączeniami** **, > połączyć**się z projektem. W oknie dialogowym **Połącz z projektem** wybierz projekt z listy (lub wybierz pozycję **Dodaj serwer TFS** i wprowadź adres URL serwera). Po wybraniu adresu URL użytkownik jest zalogowany bez konieczności ponownego wprowadzania poświadczeń.
 
 Aby uzyskać więcej informacji, zobacz [nawiązywanie połączenia z projektami w Team Explorer](connect-team-project.md).
 
@@ -83,23 +83,23 @@ Aby uzyskać więcej informacji, zobacz [nawiązywanie połączenia z projektami
 
 Aby dodać dodatkowe konto do programu Visual Studio:
 
-1. Wybierz pozycję plik**Ustawienia konta** > .
+1. Wybierz pozycję plik **Ustawienia konta** > .
 
 1. W obszarze **wszystkie konta**wybierz pozycję **Dodaj konto**.
 
 1. Na stronie **Logowanie do konta** wybierz konto lub wybierz pozycję **Użyj innego konta**. Postępuj zgodnie z monitami, aby wprowadzić nowe poświadczenia konta.
 
-Obowiązkowe Teraz możesz przejść do **Eksplorator serwera** i wyświetlić usługi platformy Azure skojarzone z właśnie dodanym kontem. W **Eksplorator serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w **Eksplorator serwera**. Powinny zostać wyświetlone wszystkie usługi skojarzone z określoną subskrypcją. Mimo że użytkownik nie jest obecnie zalogowany do programu Visual Studio przy użyciu drugiego konta, loguje się do usług i zasobów tego konta. Ta sama wartość dotyczy **projektu**  > **Dodaj podłączoną usługę** i **zespół**  > **Połącz się z Team Foundation Server**.
+Obowiązkowe Teraz możesz przejść do **Eksplorator serwera** i wyświetlić usługi platformy Azure skojarzone z właśnie dodanym kontem. W **Eksplorator serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w **Eksplorator serwera**. Powinny zostać wyświetlone wszystkie usługi skojarzone z określoną subskrypcją. Mimo że użytkownik nie jest obecnie zalogowany do programu Visual Studio przy użyciu drugiego konta, loguje się do usług i zasobów tego konta. Ta sama wartość dotyczy **projektu** > **Dodaj podłączoną usługę** i **zespół** > **Połącz się z Team Foundation Server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Dodawanie konta przy użyciu przepływu kodu urządzenia
 
-W niektórych przypadkach nie można zalogować się lub dodać konta w zwykły sposób. Taka sytuacja może wystąpić, jeśli program Internet Explorer jest blokowany z jakiegoś powodu lub jeśli sieć znajduje się za zaporą. Aby obejść ten proces, można włączyć *przepływ kodu urządzenia* , aby dodać konto lub ponownie uwierzytelnić Twoje konto. Przepływ kodu urządzenia umożliwia zalogowanie się przy użyciu innej przeglądarki lub innej maszyny &mdash;either fizycznej lub wirtualnej (VM).
+W niektórych przypadkach nie można zalogować się lub dodać konta w zwykły sposób. Taka sytuacja może wystąpić, jeśli program Internet Explorer jest blokowany z jakiegoś powodu lub jeśli sieć znajduje się za zaporą. Aby obejść ten proces, można włączyć *przepływ kodu urządzenia* , aby dodać konto lub ponownie uwierzytelnić Twoje konto. Przepływ kodu urządzenia umożliwia zalogowanie się przy użyciu innej przeglądarki lub na innej maszynie&mdash;fizycznej lub wirtualnej (VM).
 
 Aby zalogować się za pomocą przepływu kodu urządzenia:
 
-1. Otwórz stronę [**konta**](reference/accounts-environment-options-dialog-box.md) w obszarze **narzędzia**  > **Opcje**  > **środowisku**, a następnie wybierz pozycję **Włącz przepływ kodu urządzenia podczas dodawania lub ponownego uwierzytelniania konta**. Wybierz **przycisk OK** , aby zamknąć strony Opcje.
+1. Otwórz stronę [**konta**](reference/accounts-environment-options-dialog-box.md) w obszarze **narzędzia** > **Opcje** > **środowisku**, a następnie wybierz pozycję **Włącz przepływ kodu urządzenia podczas dodawania lub ponownego uwierzytelniania konta**. Wybierz **przycisk OK** , aby zamknąć strony Opcje.
 
-1. Wybierz pozycję plik**Ustawienia konta**  > , aby otworzyć stronę Zarządzanie kontem.
+1. Wybierz pozycję plik **Ustawienia konta** > , aby otworzyć stronę Zarządzanie kontem.
 
 1. Wybierz pozycję **Dodaj konto** w obszarze **wszystkie konta**.
 
@@ -107,7 +107,7 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
    ![Adres URL i kod przepływu kodu urządzenia](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. Naciśnij klawisz **Ctrl** +**C** , aby skopiować tekst okna dialogowego, a następnie wybierz **przycisk OK** , aby zamknąć okno dialogowe. Wklej skopiowany tekst do edytora tekstu, takiego jak Notatnik. Ułatwia to skopiowanie kodu w następnym kroku.
+1. Naciśnij klawisz **Ctrl**+**C** , aby skopiować tekst okna dialogowego, a następnie wybierz **przycisk OK** , aby zamknąć okno dialogowe. Wklej skopiowany tekst do edytora tekstu, takiego jak Notatnik. Ułatwia to skopiowanie kodu w następnym kroku.
 
 1. Przejdź do adresu URL logowania do urządzenia na komputerze lub w przeglądarce sieci Web, którego chcesz użyć do zalogowania się do programu Visual Studio, a następnie wklej lub wprowadź kod skopiowany do pola, w którym znajduje się **kod**.
 
@@ -123,7 +123,7 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
    ![Ukończono logowanie w programie Visual Studio za poorednictwem przeglądarki](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
 
-1. Wróć do strony zarządzania kontami w programie Visual Studio, a nowo dodane konto zostanie wyświetlone w obszarze **wszystkie konta**. Wybierz pozycję **Zamknij**.
+1. Wróć do strony zarządzania kontami w programie Visual Studio, a nowo dodane konto zostanie wyświetlone w obszarze **wszystkie konta**. Wybierz **Zamknij**.
 
 ## <a name="see-also"></a>Zobacz także
 

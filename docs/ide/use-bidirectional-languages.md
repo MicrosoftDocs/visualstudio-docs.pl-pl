@@ -7,17 +7,17 @@ helpviewer_keywords:
 - bidirectional language support
 - Arabic, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa91a1f3342039821dc1e0a2ea89c8b0e25f224
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647371"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591999"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Obsługa języków dwukierunkowych w programie Visual Studio
 
@@ -58,7 +58,7 @@ Następujące elementy mogą być nazwane przy użyciu języka arabskiego lub he
 
 - Wartości właściwości.
 
-   Możesz użyć tekstu arabskiego lub hebrajskiego w oknie **Właściwości** . Okno pozwala przełączać się między kolejnością czytania od prawej do lewej i od lewej do prawej przy użyciu standardowych naciśnięć klawiszy systemu Windows (**Ctrl** +**RightShift** dla kierunku od prawej do lewej i **Ctrl** +**LeftShift** w przypadku opcji od lewej do prawej).
+   Możesz użyć tekstu arabskiego lub hebrajskiego w oknie **Właściwości** . Okno pozwala przełączać się między kolejnością czytania od prawej do lewej i od lewej do prawej przy użyciu standardowych naciśnięć klawiszy systemu Windows (**Ctrl**+**RightShift** dla kierunku od prawej do lewej i **Ctrl**+**LeftShift** w przypadku opcji od lewej do prawej).
 
 - Kod i tekst literału.
 
@@ -78,7 +78,7 @@ Możesz zapisywać i otwierać pliki z kodowaniem specyficznym dla języka lub U
 
 ## <a name="right-to-left-reading-order"></a>Kolejność odczytywania od prawej do lewej
 
-Program Visual Studio ma ograniczoną obsługę kolejności odczytywania od prawej do lewej. Domyślnie formanty wprowadzania tekstu w programie Visual Studio używają kolejności czytania od lewej do prawej. W większości przypadków można użyć standardowych gestów systemu Windows, aby przełączyć kolejność odczytywania. Na przykład możesz nacisnąć klawisz **Ctrl** +**RightShift** , aby przełączyć okno **Właściwości** do obsługi kolejności odczytywania od prawej do lewej dla wartości właściwości.
+Program Visual Studio ma ograniczoną obsługę kolejności odczytywania od prawej do lewej. Domyślnie formanty wprowadzania tekstu w programie Visual Studio używają kolejności czytania od lewej do prawej. W większości przypadków można użyć standardowych gestów systemu Windows, aby przełączyć kolejność odczytywania. Na przykład możesz nacisnąć klawisz **Ctrl**+**RightShift** , aby przełączyć okno **Właściwości** do obsługi kolejności odczytywania od prawej do lewej dla wartości właściwości.
 
 Kolejność odczytywania od prawej do lewej nie jest obsługiwana w następujących miejscach w programie Visual Studio:
 

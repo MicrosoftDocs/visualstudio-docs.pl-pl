@@ -2,19 +2,19 @@
 title: Kod refaktoryzacji do konwersji pętli for na instrukcję foreach
 ms.date: 05/10/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d35897bd928166410ffd950534277cfac2c06b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654553"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570248"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refaktoryzacja do konwersji między pętlą for i instrukcją foreach
 
@@ -26,7 +26,7 @@ Jeśli masz pętlę [for](/dotnet/csharp/language-reference/keywords/for) w kodz
 
 Ta Refaktoryzacja mają zastosowanie do:
 
-- C#
+- Język C#
 
 > [!NOTE]
 > Refaktoryzacja operacji **konwersji do trybu foreach** jest dostępna tylko [dla pętli,](/dotnet/csharp/language-reference/keywords/for) które zawierają wszystkie trzy części: inicjator, warunek i iterator.
@@ -55,9 +55,9 @@ Jeśli masz element [foreach (C#)](/dotnet/csharp/language-reference/keywords/fo
 
 Ta Refaktoryzacja mają zastosowanie do:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
 ### <a name="why-convert"></a>Dlaczego warto skonwertować
 

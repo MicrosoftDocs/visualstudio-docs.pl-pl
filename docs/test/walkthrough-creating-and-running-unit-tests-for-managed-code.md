@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659657"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590712"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Przewodnik: tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
 
@@ -32,7 +32,7 @@ Ten artykuł przeprowadzi Cię przez proces tworzenia, uruchamiania i dostosowyw
 
 2. W menu **plik** wybierz pozycję **Nowy** **projekt**>.
 
-   Pojawi się okno dialogowe **Nowy projekt** .
+   **Nowy projekt** pojawi się okno dialogowe.
 
 3. W kategorii **Visual C#**  > **.NET Core** wybierz szablon projektu **aplikacja konsoli (.NET Core)** .
 
@@ -134,16 +134,16 @@ Ten artykuł przeprowadzi Cię przez proces tworzenia, uruchamiania i dostosowyw
 
 6. Zmień nazwę pliku na *BankAccount.cs* , klikając prawym przyciskiem myszy i wybierając polecenie **zmień nazwę** w **Eksplorator rozwiązań**.
 
-7. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 Masz teraz projekt z metodami, które możesz przetestować. W tym artykule testy koncentrują się na metodzie `Debit`. Metoda `Debit` jest wywoływana w przypadku wycofania pieniędzy z konta.
 
 ## <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
-1. W menu **plik** wybierz pozycję **Dodaj**  > **Nowy projekt**.
+1. W menu **plik** wybierz pozycję **Dodaj** > **Nowy projekt**.
 
    > [!TIP]
-   > Możesz również kliknąć prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybrać polecenie **Dodaj**  > **Nowy projekt**.
+   > Możesz również kliknąć prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań** i wybrać polecenie **Dodaj** > **Nowy projekt**.
 
 ::: moniker range="vs-2017"
 
@@ -175,7 +175,7 @@ Masz teraz projekt z metodami, które możesz przetestować. W tym artykule test
 
 6. W oknie dialogowym **Menedżer odwołań** rozwiń węzeł **projekty**, wybierz pozycję **rozwiązanie**, a następnie sprawdź element **Bank** .
 
-7. Wybierz **przycisk OK**.
+7. Wybierz **OK**.
 
 ## <a name="create-the-test-class"></a>Tworzenie klasy testowej
 
@@ -217,7 +217,7 @@ namespace BankTests
 
 ### <a name="add-a-using-statement"></a>Dodaj instrukcję using
 
-Dodaj [instrukcję `using`](/dotnet/csharp/language-reference/keywords/using-statement) do klasy testowej, aby umożliwić wywoływanie w badanym projekcie bez używania w pełni kwalifikowanych nazw. W górnej części pliku klasy Dodaj:
+Dodaj [instrukcję`using`](/dotnet/csharp/language-reference/keywords/using-statement) do klasy testowej, aby umożliwić wywoływanie w badanym projekcie bez używania w pełni kwalifikowanych nazw. W górnej części pliku klasy Dodaj:
 
 ```csharp
 using BankAccountNS;
@@ -287,7 +287,7 @@ Metoda testowa musi spełniać następujące wymagania:
 
 1. W menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
 
-2. Jeśli **Eksplorator testów** nie jest otwarty, otwórz go, wybierając kolejno pozycje **testuj**  > **Windows**  > **Eksplorator testów** z górnego paska menu.
+2. Jeśli **Eksplorator testów** nie jest otwarty, otwórz go, wybierając kolejno pozycje **testuj** > **Windows** > **Eksplorator testów** z górnego paska menu.
 
 3. Wybierz **Uruchom wszystkie** , aby uruchomić test.
 
@@ -311,7 +311,7 @@ Aby poprawić błąd, w pliku *BankAccount.cs* Zastąp wiersz:
 m_balance += amount;
 ```
 
-się
+tym:
 
 ```csharp
 m_balance -= amount;
@@ -352,7 +352,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-Użyj metody <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A>, aby uzyskać potwierdzenie, że został zgłoszony poprawny wyjątek. Ta metoda powoduje niepowodzenie testu, chyba że zostanie zgłoszony <xref:System.ArgumentOutOfRangeException>. W przypadku tymczasowej modyfikacji testowanej metody w celu wygenerowania bardziej ogólnego <xref:System.ApplicationException>, gdy kwota debetu jest mniejsza od zera, test zadziała prawidłowo &mdash;that to nie powiedzie się.
+Użyj metody <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A>, aby uzyskać potwierdzenie, że został zgłoszony poprawny wyjątek. Ta metoda powoduje niepowodzenie testu, chyba że zostanie zgłoszony <xref:System.ArgumentOutOfRangeException>. W przypadku tymczasowej modyfikacji testowanej metody w celu wygenerowania bardziej ogólnego <xref:System.ApplicationException>, gdy kwota debetu jest mniejsza od zera, test zachowuje się prawidłowo,&mdash;to nie powiedzie się.
 
 Aby przetestować przypadek, gdy wycofana ilość jest większa niż saldo, wykonaj następujące czynności:
 
@@ -465,7 +465,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 Ulepszenia kodu testowego doprowadziły do bardziej niezawodnych i informacyjnych metod testowych. Ale co ważniejsze, poprawiły się także kod testowy.
 
 > [!TIP]
-> W tym przewodniku zastosowano środowisko testów jednostkowych firmy Microsoft dla kodu zarządzanego. **Eksplorator testów** może również uruchamiać testy z platform testów jednostkowych innych firm, które mają karty w **Eksploratorze testów**. Aby uzyskać więcej informacji, zobacz [Instalowanie platform testów jednostkowych](../test/install-third-party-unit-test-frameworks.md)innych firm.
+> W tym przewodniku zastosowano środowisko testów jednostkowych firmy Microsoft dla kodu zarządzanego. **Eksplorator testów** może również uruchamiać testy z platform testów jednostkowych innych firm, które mają karty w **Eksploratorze testów**. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="see-also"></a>Zobacz także
 

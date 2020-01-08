@@ -5,33 +5,33 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3955d494d4c04e85eba0541c0cf09749e8ab4de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649718"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593009"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Przegląd Blend for Visual Studio
 
-Blend for Visual Studio ułatwia projektowanie aplikacji sieci Web opartych na języku XAML. Zapewnia to takie samo podstawowe środowisko projektowe XAML jak program Visual Studio i dodaje projektantów wizualizacji do zaawansowanych zadań, takich jak animacje i zachowania. Aby uzyskać porównanie między programem Blend i programem Visual Studio, zobacz [Designing XAML in Visual Studio i Blend for Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
+Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows i aplikacji sieci Web. Zapewnia takie samo środowisko projektowania podstawowe XAML w co program Visual Studio i dodaje projektantów wizualnych dotyczące zaawansowanych zadań, takich jak animacjom i zachowaniom. Dla porównania między programami Blend i Visual Studio, zobacz [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
 
-Blend for Visual Studio jest składnikiem programu Visual Studio. Aby zainstalować program Blend, w **Instalator programu Visual Studio** wybierz **platforma uniwersalna systemu Windows programowanie** lub Programowanie na **platformie .NET** . Oba te obciążenia obejmują składnik Blend for Visual Studio.
+Program Blend for Visual Studio jest składnikiem programu Visual Studio. Aby zainstalować program Blend, w **Instalatora programu Visual Studio** wybierają **programowania na platformę uniwersalną Windows** lub **programowanie aplikacji klasycznych dla platformy .NET** obciążenia. Oba te obciążenia obejmują program Blend for Visual Studio składnika.
 
-![Składniki obciążenia platformy UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Składniki obciążeń programu .NET Desktop Development](media/installer-dotnet-desktop.png)
+![Składniki obciążenia platformy UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Składniki obciążenie programowanie aplikacji klasycznych dla platformy .NET](media/installer-dotnet-desktop.png)
 
-Jeśli dopiero zaczynasz Blend for Visual Studio, poświęć chwilę na zapoznanie się z unikatowymi funkcjami obszaru roboczego. Ten temat obejmuje Krótki przewodnik.
+Jeśli jesteś nowym użytkownikiem programu Blend for Visual Studio, Poświęć chwilę na zapoznanie się z unikatowych funkcji obszaru roboczego. W tym temacie przejmuje krótkiego przewodnika.
 
 ## <a name="tools-panel"></a>Panel narzędzi
 
-Panel **Narzędzia** w Blend for Visual Studio służy do tworzenia i modyfikowania obiektów w aplikacji. Panel **Narzędzia** pojawia się po lewej stronie projektanta XAML, gdy plik *XAML* jest otwarty.
+Możesz użyć **narzędzia** panel w programie Blend for Visual Studio do tworzenia i modyfikowania obiektów w aplikacji. Panel **Narzędzia** pojawia się po lewej stronie projektanta XAML, gdy plik *XAML* jest otwarty.
 
-Obiekty są tworzone przez wybranie narzędzia i rysowanie w obszarze kompozycji za pomocą myszy.
+Możesz utworzyć obiekty, wybierając narzędzie i rysowanie w obszarze kompozycji przy użyciu myszy.
 
 ![Panel narzędzia w Blend for Visual Studio](media/blend-tools-panel.png)
 
@@ -42,17 +42,17 @@ Obiekty są tworzone przez wybranie narzędzia i rysowanie w obszarze kompozycji
 
 ### <a name="selection-tools"></a>Narzędzia wyboru
 
-Wybierz obiekty i ścieżki. Użyj narzędzia **wybór bezpośredni** , aby zaznaczyć zagnieżdżone obiekty i segmenty ścieżki.
+Wybierz obiekty i ścieżki. Użyj **Zaznaczanie bezpośrednie** narzędzie do wybierania obiektów zagnieżdżonych i segmentów ścieżki.
 
-### <a name="view-tools"></a>Narzędzia widoku
+### <a name="view-tools"></a>Wyświetl narzędzia
 
 Dostosuj widok obszaru kompozycji, taki jak przesuwanie i powiększanie.
 
-### <a name="brush-tools"></a>Narzędzia pędzla
+### <a name="brush-tools"></a>Pędzel
 
 Pracuj z atrybutami wizualizacji obiektu, takimi jak Przekształcanie pędzla lub stosowanie gradientu.
 
-### <a name="object-tools"></a>Narzędzia obiektów
+### <a name="object-tools"></a>Obiekt narzędzia
 
 Rysowanie najpopularniejszych obiektów w obszarze kompozycji, takich jak ścieżki, kształty, panele układu, tekst i kontrolki.
 
@@ -62,7 +62,7 @@ Uzyskaj dostęp do okna składniki i Pokaż ostatnio używany element zawartośc
 
 ## <a name="assets-window"></a>Okno zasobów
 
-Okno **składniki** zawiera wszystkie dostępne kontrolki podobne do **przybornika** w programie Visual Studio. Oprócz formantów znajdziesz wszystkie elementy, które można dodać do obszaru kompozycji, w oknie **zasoby** , w tym style, multimedia, zachowania i efekty. Aby otworzyć okno **zasoby** , wybierz polecenie **Wyświetl** > **Assets** lub naciśnij **klawisze CTRL**+**Alt**+**X**.
+Okno **składniki** zawiera wszystkie dostępne kontrolki podobne do **przybornika** w programie Visual Studio. Oprócz formantów znajdziesz wszystkie elementy, które można dodać do obszaru kompozycji, w oknie **zasoby** , w tym style, multimedia, zachowania i efekty. Aby otworzyć okno **zasoby** , wybierz pozycję **wyświetl** **okno składniki** > lub naciśnij **klawisze CTRL**+**Alt**+**X**.
 
 ![Okno elementów zawartości w Blend for Visual Studio](media/blend-assets-window.png)
 
@@ -71,7 +71,7 @@ Okno **składniki** zawiera wszystkie dostępne kontrolki podobne do **przyborni
 
 ## <a name="objects-and-timeline-window"></a>Okno Obiekty i oś czasu
 
-To okno służy do organizowania obiektów w obszarze kompozycji i, jeśli chcesz, animowania ich. Aby otworzyć okno **obiekty i oś czasu** , wybierz pozycję **wyświetl** **Konspekt dokumentu** > . Poza funkcjami dostępnymi w [oknie Konspekt dokumentu](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) w programie Visual Studio, okno Obiekty i oś czasu w Blend for Visual Studio ma obszar kompozycji osi czasu po prawej stronie. Użyj osi czasu podczas tworzenia i edytowania animacji.
+To okno służy do organizowania obiektów w obszarze kompozycji i, jeśli chcesz, animowania ich. Aby otworzyć okno **obiekty i oś czasu** , wybierz pozycję **Wyświetl** > **Konspekt dokumentu**. Poza funkcjami dostępnymi w [oknie Konspekt dokumentu](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) w programie Visual Studio, okno Obiekty i oś czasu w Blend for Visual Studio ma obszar kompozycji osi czasu po prawej stronie. Użyj osi czasu podczas tworzenia i edytowania animacji.
 
 ![Okno obiektu i osi czasu w trybie animacji](media/storyboard-timeline.png)
 

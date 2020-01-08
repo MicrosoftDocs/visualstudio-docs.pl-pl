@@ -10,17 +10,17 @@ helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca3d54a7e2643baebe44e0f2756d6ae65eb228d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565607"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 
@@ -28,7 +28,7 @@ Za pomocą strony **odwołania** **projektanta projektu** można zarządzać odw
 
 Aby uzyskać dostęp do strony **odwołań** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz **projekt**, **Właściwości** na pasku menu. Gdy pojawi się Projektant projektu, kliknij kartę **odwołania** .
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu
 
 Poniższe opcje umożliwiają Zaznaczanie lub usuwanie odwołań i zaimportowanych przestrzeni nazw w projekcie.
 
@@ -48,7 +48,7 @@ Kliknij ten przycisk, aby uzyskać dostęp do okna dialogowego **ścieżki odwo�
 
 Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.
 
- **Add**
+ **Dodaj**
 
 Kliknij ten przycisk, aby dodać odwołanie lub odwołanie sieci Web do listy **odwołań** .
 
@@ -68,7 +68,7 @@ Wybierz odwołanie sieci Web na liście **odwołań** i kliknij ten przycisk, ab
 
 W tym polu można wpisać własną przestrzeń nazw, a następnie kliknąć pozycję **Dodaj Import użytkowników** , aby dodać go do listy przestrzeni nazw.
 
-Można tworzyć aliasy dla przestrzeni nazw zaimportowanych przez użytkownika. W tym celu wprowadź alias i przestrzeń nazw w formacie *alias* =*przestrzeni nazw*. Jest to przydatne, jeśli używasz długich przestrzeni nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Można tworzyć aliasy dla przestrzeni nazw zaimportowanych przez użytkownika. W tym celu wprowadź alias i przestrzeń nazw w formacie *alias*=*przestrzeni nazw*. Jest to przydatne, jeśli używasz długich przestrzeni nazw, na przykład: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Dodaj Import użytkownika**
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523ec566e19614951169c184b4796834c4ab0838
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603587"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592038"
 ---
 # <a name="find-references-in-your-code"></a>Znajdowanie odwołań w kodzie
 
@@ -40,7 +40,7 @@ Aby przejść do odwołań w oknie **odwołania** , można użyć następującyc
 - Naciśnij klawisz **F8** , aby przejść do następnego odwołania, lub **klawisze Shift + F8** , aby przejść do poprzedniego odwołania.
 - Naciśnij klawisz **Enter** , aby uzyskać odwołanie, lub kliknij go dwukrotnie, aby przejść do niego w kodzie.
 - W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) odwołania wybierz polecenie **Przejdź do poprzedniej lokalizacji** lub **Przejdź do następnej lokalizacji** polecenia.
-- Wybierz klawisze **Strzałka w górę** i **Strzałka w dół** (jeśli są włączone w oknie dialogowym **Opcje** ). Aby włączyć tę funkcję, na pasku menu wybierz kolejno pozycje **narzędzia**  > **Opcje**  >   > **środowiska** i**Podgląd** **systemu  >  Windows** , a następnie wybierz pozycję **Zezwalaj na otwieranie nowych plików w wersji zapoznawczej Karta** i **Podgląd zaznaczonych plików w polu Wyszukaj wyniki** .
+- Wybierz klawisze **Strzałka w górę** i **Strzałka w dół** (jeśli są włączone w oknie dialogowym **Opcje** ). Aby włączyć tę funkcję, na pasku menu wybierz kolejno **pozycje narzędzia** > **Opcje** >  > **środowiska** i **Podgląd** **systemu > Windows** , a następnie zaznacz pole wyboru Zezwalaj na **otwieranie nowych plików na karcie Podgląd** i **Wyświetl podgląd wybranych plików w polu Wyniki wyszukiwania** .
 
 ## <a name="change-reference-groupings"></a>Zmień grupowanie odwołań
 Domyślnie odwołania są pogrupowane według projektu, a następnie według definicji. Można jednak zmienić tę kolejność grupowania, zmieniając ustawienie w polu listy rozwijanej **Grupuj według:** na pasku narzędzi. Można na przykład zmienić to ustawienie z domyślnego ustawienia **projekt, a następnie definicja** na projekt, **a**także inne ustawienia.

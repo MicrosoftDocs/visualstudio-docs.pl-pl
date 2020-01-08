@@ -24,34 +24,34 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647757"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590413"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Utwórz i skonfiguruj elementy członkowskie typu w Projektant klas
 
 Można dodać tych członków do typów na diagramie klasy i skonfigurować te elementy członkowskie w oknie **Szczegóły klasy** :
 
-|**Wprowadź**|**Elementy członkowskie, które mogą zawierać**|
+|**Typ**|**Elementy członkowskie, które mogą zawierać**|
 |--------------| - |
-|Class|metoda, właściwość (w języku C# i Visual Basic), pole, zdarzenie (w języku C# i Visual Basic), konstruktor (metoda), destruktor (metoda), stała|
-|Wyliczenie|członek|
-|Interface|metoda, właściwość, zdarzenie (w języku C# i Visual Basic)|
+|Klasa|metoda, właściwość (w języku C# i Visual Basic), pole, zdarzenie (w języku C# i Visual Basic), konstruktor (metoda), destruktor (metoda), stała|
+|Wyliczenie|element członkowski|
+|Interfejs|metoda, właściwość, zdarzenie (w języku C# i Visual Basic)|
 |Klasa abstrakcyjna|metoda, właściwość (w języku C# i Visual Basic), pole, zdarzenie (w języku C# i Visual Basic), konstruktor (metoda), destruktor (metoda), stała|
 |Struktura (konstrukcja Struct w języku C#)|metoda, właściwość (w języku C# i Visual Basic), pole, zdarzenie (w języku C# i Visual Basic), konstruktor (metoda), stała|
 |Delegate|parametr|
 |Moduł (tylko w języku VB)|metoda, właściwość, pole, zdarzenie, konstruktor, stała|
 
 > [!NOTE]
-> Utwórz bardziej zwartą deklarację właściwości, gdy akcesory właściwości get i set nie potrzebują dodatkowej logiki, za pomocą automatycznie wdrożonych właściwości (tylko C#). Aby wyświetlić pełną sygnaturę, w menu **Diagram klas** wybierz **Zmień Format elementów członkowskich**  > **wyświetlić pełny podpis**. Aby uzyskać więcej informacji na temat właściwości, które są implementowane, zobacz [zaimplementowane właściwości](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
+> Utwórz bardziej zwartą deklarację właściwości, gdy akcesory właściwości get i set nie potrzebują dodatkowej logiki, za pomocą automatycznie wdrożonych właściwości (tylko C#). Aby wyświetlić pełną sygnaturę, w menu **Diagram klas** wybierz **Zmień Format elementów członkowskich** > **wyświetlić pełny podpis**. Aby uzyskać więcej informacji na temat właściwości, które są implementowane, zobacz [zaimplementowane właściwości](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
@@ -66,7 +66,7 @@ Domyślnie okno **Szczegóły klasy** pojawia się automatycznie po otwarciu now
 
 - Kliknij prawym przyciskiem myszy dowolną klasę na diagramie, aby wyświetlić menu kontekstowe, a następnie wybierz pozycję **Szczegóły klasy**.
 
-- Wybierz pozycję **wyświetl**  >  inne**Szczegóły klasy**  > **systemu Windows** z paska menu.
+- Wybierz pozycję **wyświetl** > inne **Szczegóły klasy** > **systemu Windows** z paska menu.
 
 ## <a name="create-members"></a>Utwórz członków
 
@@ -98,7 +98,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w oknie **Szczegóły klasy** .
 
-2. Na pasku narzędzi okna **Szczegóły klasy** Kliknij górną ikonę i wybierz pozycję **Nowy \<member >** z listy rozwijanej.
+2. Na pasku narzędzi okna **Szczegóły klasy** Kliknij górną ikonę i wybierz pozycję **nowy \<członek >** z listy rozwijanej.
 
      Kursor zostanie przeniesiony do pola **Nazwa** w wierszu dla rodzaju elementu członkowskiego, który chcesz dodać. Jeśli na przykład klikniesz pozycję **Nowa właściwość**, kursor przejdzie do nowego wiersza w sekcji **Właściwości** okna **Szczegóły klasy** .
 
@@ -114,7 +114,7 @@ Można utworzyć element członkowski, używając dowolnego z następujących na
 
      Typ uzyskuje fokus i jego zawartość jest wyświetlana w oknie **Szczegóły klasy** .
 
-2. W oknie **Szczegóły klasy** , w sekcji zawierającej rodzaj elementu członkowskiego, który chcesz dodać, kliknij **\<add > członka**. Na przykład, jeśli chcesz dodać pole, kliknij **\<add pole >** .
+2. W oknie **Szczegóły klasy** , w sekcji zawierającej rodzaj elementu członkowskiego, który chcesz dodać, kliknij przycisk **\<Dodaj > członka**. Na przykład, jeśli chcesz dodać pole, kliknij **\<dodać pole >** .
 
 3. Wpisz nazwę elementu członkowskiego, który chcesz utworzyć, a następnie naciśnij klawisz Enter.
 
@@ -151,11 +151,11 @@ Każdy wiersz elementu członkowskiego zawiera następujące elementy:
 
 - **Modyfikator elementu członkowskiego**
 
-     Zmień modyfikator widoczności elementu członkowskiego na `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) lub 0.
+     Zmień modyfikator widoczności elementu członkowskiego na `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) lub `Default`.
 
-- **\<add składową >**
+- **\<dodać członka >**
 
-     Ostatni wiersz w oknie **Szczegóły klasy** zawiera tekst **\<add składowej >** w komórce **Nazwa** . Po kliknięciu tej komórki, można utworzyć nowy element członkowski. Aby uzyskać więcej informacji, zobacz [Tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members).
+     Ostatni wiersz w oknie **Szczegóły klasy** zawiera tekst **\<Dodaj członka >** w komórce **Nazwa** . Po kliknięciu tej komórki, można utworzyć nowy element członkowski. Aby uzyskać więcej informacji, zobacz [Tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members).
 
 - **Właściwości elementu członkowskiego w okno Właściwości**
 
@@ -192,7 +192,7 @@ Wiersze parametrów zawierają następujące elementy:
 
      Wskazanie nazwy parametru wyświetla nazwę parametru, jeśli kolumna **Nazwa** jest zbyt wąska, aby wyświetlić całą nazwę.
 
-- **Wprowadź**
+- **Typ**
 
      Komórka **typu parametru** korzysta z technologii IntelliSense, która umożliwia wybór z listy wszystkich typów dostępnych w bieżącym projekcie lub projektach, do których istnieją odwołania.
 
@@ -204,9 +204,9 @@ Wiersze parametrów zawierają następujące elementy:
 
      Komórka **podsumowania** w wierszu parametru umożliwia wprowadzanie komentarzy do kodu, które pojawiają się w IntelliSense podczas wprowadzania parametru do edytora kodu.
 
-- **\<add parametr >**
+- **\<Dodaj parametr >**
 
-     Ostatni wiersz parametru elementu członkowskiego zawiera tekst **< Dodaj parametr \>** w komórce **Nazwa** . Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Ostatni wiersz parametru elementu członkowskiego zawiera tekst **< Dodaj parametr\>** w komórce **Nazwa** . Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 W oknie **Właściwości** są wyświetlane te same właściwości parametrów, które są wyświetlane w oknie **Szczegóły klasy** : **Nazwa**, **Typ**, **modyfikator**, **Podsumowanie**, a także **Opcjonalna Właściwość domyślna** . Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.
 
@@ -224,9 +224,9 @@ W oknie **Właściwości** są wyświetlane te same właściwości parametrów, 
 
 2. W oknie **Szczegóły klasy** Rozwiń wiersz metody, do której chcesz dodać parametr.
 
-     Pojawia się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i słowa **\<add parametr >.**
+     Zostanie wyświetlony wiersz z wcięciem z wcięciami zawierający tylko parę nawiasów i słowa **\<Dodaj parametr >.**
 
-3. Kliknij **\<add parametr >** , wpisz nazwę nowego parametru i naciśnij klawisz **Enter**.
+3. Kliknij przycisk **\<dodać parametr >** , wpisz nazwę nowego parametru i naciśnij klawisz **Enter**.
 
      Nowy parametr zostanie dodany do metody i kodu metody. Jest on wyświetlany w oknie **Szczegóły klasy** i okno właściwości.
 
@@ -240,9 +240,9 @@ W oknie **Właściwości** są wyświetlane te same właściwości parametrów, 
 
 2. W oknie **Szczegóły klasy** Rozwiń wiersz metody, do której chcesz dodać opcjonalny parametr.
 
-     Pojawia się wiersz parametru z wcięciem, zawierający tylko parę nawiasów i słowa **\<add parametr >.**
+     Zostanie wyświetlony wiersz z wcięciem z wcięciami zawierający tylko parę nawiasów i słowa **\<Dodaj parametr >.**
 
-3. Kliknij **\<add parametr >** , wpisz nazwę nowego parametru i naciśnij klawisz **Enter**.
+3. Kliknij przycisk **\<dodać parametr >** , wpisz nazwę nowego parametru i naciśnij klawisz **Enter**.
 
      Nowy parametr zostanie dodany do metody i kodu metody. Jest on wyświetlany w oknie **Szczegóły klasy** i okno właściwości.
 

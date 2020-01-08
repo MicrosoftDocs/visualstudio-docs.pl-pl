@@ -1,33 +1,33 @@
 ---
-title: Przetwarzanie wsadowe MSBuild | Dokumentacja firmy Microsoft
+title: Tworzenie wsadowe MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d62e1824d72933d8cb5c3c345ed8788435a6f20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931517"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592103"
 ---
-# <a name="msbuild-batching"></a>Przetwarzanie wsadowe programu MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość podzielić listy elementów na różnych kategorii lub serii, na podstawie metadanych elementu i uruchom docelowego lub zadanie jeden raz z każdej partii.
+# <a name="msbuild-batching"></a>Tworzenie wsadowe programu MSBuild
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementów i uruchamiania obiektu docelowego lub zadania jednokrotnie przy każdej partii.
 
-## <a name="task-batching"></a>Przetwarzanie wsadowe zadań
-Przetwarzanie wsadowe zadań umożliwia uproszczenie plików projektu, umożliwiając podzielić listy elementów na różnych partii i przekazanie każdego wskaźnika tych partii w zadanie oddzielnie. Oznacza to, że plik projektu tylko trzeba zadania i jego atrybutów zadeklarowany raz, nawet kilka razy może zostać uruchomione.
+## <a name="task-batching"></a>Tworzenie partii zadań
+Tworzenie wsadowe zadań pozwala uprościć pliki projektu, zapewniając sposób dzielenia list elementów na różne partie i przekazywanie poszczególnych partii do zadania oddzielnie. Oznacza to, że plik projektu musi mieć tylko jedno zadanie i jego atrybuty, nawet jeśli można wykonać kilka razy.
 
-Określ, czy program [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania przetwarzania wsadowego za pomocą zadania przy użyciu %(\<ItemMetaDataName >) Notacja w jeden z atrybutów zadania. Poniższy przykład dzieli `Example` na podstawie listy elementów w partie `Color` wartość metadanych elementu i przekazuje partii do `MyTask` zadań oddzielnie.
+Należy określić, że chcesz, aby [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykonać operację wsadową z zadaniem przy użyciu notacji%(\<ItemMetaDataName >) w jednym z atrybutów zadania. Poniższy przykład dzieli listę elementów `Example` na partie na podstawie wartości metadanych `Color` elementów i przekazuje poszczególne partie do zadania `MyTask` oddzielnie.
 
 > [!NOTE]
-> Jeśli użytkownik nie odwołują się do listy elementów w innym miejscu w atrybutach zadania lub nazwa metadanych może być niejednoznaczna, możesz użyć %(\<ItemCollection.ItemMetaDataName >) Notacja do pełnej kwalifikacji wartość elementu metadanych na potrzeby przetwarzania wsadowego.
+> Jeśli nie odwołujesz się do listy elementów w innym miejscu atrybutów zadania lub nazwa metadanych może być niejednoznaczna, można użyć notacji%(\<obiekt ItemCollection. ItemMetaDataName >), aby w pełni zakwalifikować wartość metadanych elementu do użycia na potrzeby przetwarzania wsadowego.
 
 ```xml
 <Project
@@ -51,12 +51,12 @@ Określ, czy program [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 </Project>
 ```
 
-Aby uzyskać bardziej szczegółowe przykłady przetwarzania wsadowego, zobacz [metadane elementu w przetwarzaniu wsadowym zadań](../msbuild/item-metadata-in-task-batching.md).
+Aby zapoznać się z bardziej szczegółowymi przykładami wsadowymi, zobacz [metadane elementu w partii zadań](../msbuild/item-metadata-in-task-batching.md).
 
-## <a name="target-batching"></a>Przetwarzaniu wsadowym obiektów docelowych
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sprawdza, jeśli dane wejściowe i wyjściowe, obiektu docelowego są aktualne przed uruchomieniem element docelowy. Jeśli zarówno dane wejściowe i wyjściowe są aktualne, element docelowy jest pomijany. Jeśli zadanie w celu korzysta z dzielenia na partie, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] potrzebuje do ustalenia, czy dane wejściowe i wyjściowe dla każdego zestawu elementów jest aktualny. W przeciwnym razie element docelowy jest wykonywane za każdym razem, gdy jego osiągnięciu.
+## <a name="target-batching"></a>Przetwarzanie wsadowe docelowe
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sprawdza, czy dane wejściowe i wyjściowe elementu docelowego są aktualne przed uruchomieniem obiektu docelowego. Jeśli dane wejściowe i wyjściowe są aktualne, element docelowy jest pomijany. Jeśli zadanie wewnątrz elementu docelowego używa usługi Batch, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi określić, czy dane wejściowe i wyjściowe dla każdej partii elementów są aktualne. W przeciwnym razie obiekt docelowy jest wykonywany za każdym razem, gdy zostanie osiągnięty.
 
-W poniższym przykładzie przedstawiono `Target` element, który zawiera `Outputs` atrybutem %(\<ItemMetaDataName >) notacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Dzieli `Example` na podstawie listy elementów w partie `Color` elementu metadanych i analizowanie znacznikami czasu plików wyjściowych dla każdej partii. Jeśli dane wyjściowe z usługi batch nie są aktualne, element docelowy zostanie uruchomiony. W przeciwnym razie element docelowy jest pomijany.
+Poniższy przykład pokazuje `Target` element, który zawiera atrybut `Outputs` z notacją%(\<ItemMetaDataName >). [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] będzie dzielić listę elementów `Example` na partie na podstawie metadanych `Color` elementów i analizować sygnatury czasowe plików wyjściowych dla każdej partii. Jeśli dane wyjściowe z partii nie są aktualne, obiekt docelowy jest uruchamiany. W przeciwnym razie element docelowy zostanie pominięty.
 
 ```xml
 <Project
@@ -82,25 +82,25 @@ W poniższym przykładzie przedstawiono `Target` element, który zawiera `Output
 </Project>
 ```
 
-Aby uzyskać inny przykład przetwarzaniu wsadowym obiektów docelowych, zobacz [metadane elementu w przetwarzaniu wsadowym obiektów docelowych](../msbuild/item-metadata-in-target-batching.md).
+Aby uzyskać inny przykład tworzenia wsadowych obiektów docelowych, zobacz [metadane elementu w przetwarzaniu wsadowym](../msbuild/item-metadata-in-target-batching.md).
 
-## <a name="property-functions-using-metadata"></a>Funkcje właściwości przy użyciu metadanych
-Przetwarzanie wsadowe mogą być kontrolowane przez funkcje właściwości, które zawierają metadane. Na przykład
+## <a name="property-functions-using-metadata"></a>Funkcje właściwości korzystające z metadanych
+Przetwarzanie wsadowe może być kontrolowane przez funkcje właściwości, które obejmują metadane. Na przykład
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
-używa <xref:System.IO.Path.Combine%2A> połączyć ścieżka do folderu głównego, przy użyciu ścieżki elementu kompilacji.
+używa <xref:System.IO.Path.Combine%2A> do łączenia ścieżki folderu głównego z ścieżką kompilowania elementu.
 
-Funkcje właściwości nie może występować w wartości metadanych. Na przykład
+Funkcje właściwości mogą nie występować w obrębie wartości metadanych. Na przykład
 
 `%(Compile.FullPath.Substring(0,3))`
 
 nie jest dozwolone.
 
-Aby uzyskać więcej informacji na temat funkcji właściwości, zobacz [funkcji właściwości](../msbuild/property-functions.md).
+Aby uzyskać więcej informacji na temat funkcji właściwości, zobacz [funkcje właściwości](../msbuild/property-functions.md).
 
 ## <a name="see-also"></a>Zobacz także
-- [Itemmetadata — element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [ItemMetadata —, element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

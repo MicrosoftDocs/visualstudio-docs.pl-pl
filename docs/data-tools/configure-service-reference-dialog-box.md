@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642858"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586929"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Konfiguruj odwołanie do usługi — Okno dialogowe
 
@@ -39,11 +39,11 @@ Aby uzyskać dostęp do okna dialogowego **Konfigurowanie odwołania do usługi*
 
 - Aby określić typy kolekcji list lub słowników dla klienta WCF, wybierz typy z listy **Typ kolekcji** i **Typ kolekcji słownika** .
 
-- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru zestawów, do których się odwołuje, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach**i wybierz odpowiednie odwołania w **odwołaniach Lista zestawów**.
+- Aby wyłączyć udostępnianie typów, wyczyść pole wyboru **Użyj ponownie typów w przywoływanych zestawach** . Aby włączyć udostępnianie typu dla podzbioru przywoływanych zestawów, zaznacz pole wyboru **Użyj ponownie typów w przywoływanych zestawach** , wybierz pozycję **Użyj ponownie typów w określonych przywoływanych zestawach**i wybierz odpowiednie odwołania na **liście przywoływanych zestawów**.
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
-**Ulica**
+**Adres**
 
 Aktualizuje adres sieci Web, w którym odwołanie do usługi poszukuje usługi. Na przykład podczas opracowywania usługa może być hostowana na serwerze deweloperskim, a następnie przeniesiona na serwer produkcyjny, co wymaga zmiany adresu.
 
@@ -83,7 +83,7 @@ Określa, czy klient WCF próbuje ponownie użyć tego, co już istnieje w przyw
 
 **Użyj ponownie typów we wszystkich przywoływanych zestawach**
 
-W przypadku wybrania tej listy wszystkie typy na **liście przywoływanych zestawów** są ponownie używane, jeśli jest to możliwe. Domyślnie ta opcja jest zaznaczona.
+W przypadku wybrania tej listy wszystkie typy na **liście przywoływanych zestawów** są ponownie używane, jeśli jest to możliwe. Ta opcja jest wybrana domyślnie.
 
 **Użyj ponownie typów w określonych przywoływanych zestawach**
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding, user controls
 - data binding, complex
 - user controls [Visual Studio], complex data binding
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8da3485ac28d1d4f3ad77f3aa0ba381e0350dae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648656"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586851"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej złożone powiązanie danych
 
@@ -65,7 +65,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     1. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    1. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    1. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -98,7 +98,7 @@ W przypadku złożonych formantów, które obsługują powiązanie danych, możn
     [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
     [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]
 
-1. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
+1. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Tworzenie źródła danych na podstawie bazy danych
 
@@ -144,9 +144,9 @@ W oknie **źródła danych** można ustawić kontrolkę, która ma zostać utwor
 
 Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **źródła danych** na formularz. Przeciągnij główny węzeł **Customers** z okna **źródła danych** na formularz. Sprawdź, czy kontrolka **ComplexDataGridView** jest używana do wyświetlania danych tabeli.
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-Naciśnij klawisz **F5** , aby uruchomić aplikację.
+Naciśnij klawisz **F5**, aby uruchomić aplikację.
 
 ## <a name="next-steps"></a>Następne kroki
 

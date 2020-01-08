@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 98e1ee8a279933cc2cc59abe70b6ea8af4850676
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586747"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 
@@ -40,7 +40,7 @@ W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania Tab
 
 - Utwórz nowy TableAdapter, dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL. Aby uzyskać więcej informacji, zobacz [Tworzenie i Konfigurowanie TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     —lub—
+     lub
 
 - Dodaj zapytanie do istniejącego TableAdapter, dodając klauzulę WHERE z odpowiednimi parametrami do instrukcji SQL.
 
@@ -65,13 +65,13 @@ W **Projektant obiektów DataSet**można tworzyć sparametryzowane zapytania Tab
 
 4. Wpisz nazwę w polu **Nowa nazwa zapytania** , jeśli tworzysz nowe zapytanie.
 
-     —lub—
+     lub
 
      W polu **Nazwa istniejącej kwerendy** wybierz zapytanie.
 
 5. W polu **tekstowym zapytanie** Wpisz zapytanie, które pobiera parametry.
 
-6. Wybierz **przycisk OK**.
+6. Wybierz **OK**.
 
      Kontrolka do wprowadzania parametru i przycisk **ładowania** są dodawane do formularza w kontrolce <xref:System.Windows.Forms.ToolStrip>.
 

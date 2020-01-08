@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Find and Replace, Options dialog box
 - Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c9d1f75eef2b785c8fa96bd721144480e134fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654384"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569572"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 
 Ta strona okna dialogowego **Opcje** służy do kontrolowania pól komunikatów i innych aspektów operacji znajdowania i zamieniania. Możesz uzyskać dostęp do tego okna dialogowego z menu **Narzędzia** , klikając **Opcje**, rozwijając **środowisko**, a następnie klikając przycisk **Znajdź i Zamień**. Jeśli ta strona nie jest wyświetlana na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu
 
 **Wyświetl komunikaty informacyjne**
 
@@ -40,7 +40,7 @@ Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** na niektórych, ale nie 
 
 **Wyświetlanie komunikatów ostrzegawczych**
 
-Wybierz tę opcję, aby wyświetlić wszystkie ostrzeżenia dotyczące znajdowania i zamieniania, które mają opcję **Zawsze pokazuj tę wiadomość** . Jeśli na przykład nie zostanie wyświetlony komunikat **Zamień wszystkie** ostrzeżenia, który pojawia się podczas próby przeprowadzenia zamian w plikach, które nie są aktualnie otwarte do edycji, wybranie tej opcji spowoduje, że ten komunikat ostrzegawczy zostanie wyświetlony ponownie podczas próby Zamień wszystko.
+Wybierz tę opcję, aby wyświetlić wszystkie ostrzeżenia dotyczące znajdowania i zamieniania, które mają opcję **Zawsze pokazuj tę wiadomość** . Jeśli na przykład nie zostanie wyświetlony komunikat **Zamień wszystkie** ostrzeżenia, który pojawia się podczas próby przeprowadzenia zamian w plikach, które nie są aktualnie otwarte do edycji, wybranie tej opcji spowoduje, że ten komunikat ostrzegawczy zostanie wyświetlony ponownie podczas próby zamiany wszystkich.
 
 Jeśli nie chcesz wyświetlać żadnych komunikatów ostrzegawczych dotyczących znajdowania i zastępowania, usuń zaznaczenie tej opcji.
 

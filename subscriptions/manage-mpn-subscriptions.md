@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych w przypadku partnerów MPN.
-ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
+ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605452"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492908"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzaj subskrypcjami programu Visual Studio oferowanymi za pomocą Microsoft Partner Network (MPN)
 Partnerzy, którzy uzyskają kompetencje lub kupują Action Pack w MPN, mogą korzystać z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane dla poszczególnych użytkowników i są prawidłowe tylko wtedy, gdy są przypisane do określonego użytkownika nazwanego, który działa dla firmy partnerskiej.
@@ -26,15 +26,15 @@ Subskrybent programu Microsoft Action Pack i subskrypcje programu Visual Studio
 4. Wybierz pierwszy, drugi lub trzeci **kontakt techniczny** i **Zapisz**
 5. Wybierz **wymagania & zasobów**
 6. Wybieranie **uprawnień**
-7. Wybierz **subskrypcje programu Visual Studio** (Uwaga: Oczekująca aktualizacja subskrypcji programu Visual Studio)
+7. Wybierz **subskrypcje programu Visual Studio** (Uwaga: oczekująca aktualizacja subskrypcji programu Visual Studio)
 8. Wybierz żądaną **osobę**
-9. Kliknij przycisk **Prześlij**
+9. Kliknij przycisk **Prześlij**.
 10. Osoba otrzyma wiadomość e-mail
-11. Przypisana osoba będzie mieć [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) dostęp do logowania
+11. Przypisana osoba będzie mieć dostęp do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) logowania
 12. Może zostać wyświetlona strona profilu programu Visual Studio, w tym:
     - Imię
     - Nazwisko
-    - Kontaktowy adres E-mail
+    - Kontaktowy adres e-mail
 13. Logowanie zostało zakończone i subskrybent powinien mieć dostęp do korzyści
 
 ## <a name="competency-partners"></a>Partnerzy z kompetencjami
@@ -42,18 +42,18 @@ Subskrybent programu Microsoft Action Pack i subskrypcje programu Visual Studio
 2. Wybieranie **uprawnień**
 3. Wybieranie **subskrypcji MSDN** (Uwaga: wkrótce zostanie oznaczona etykieta "subskrypcje programu Visual Studio")
 4. Znajdź żądaną **osobę**
-5. Kliknij przycisk **Prześlij**
+5. Kliknij przycisk **Prześlij**.
 6. Osoba otrzyma wiadomość e-mail
-7. Przypisana osoba będzie mieć [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) dostęp do logowania
+7. Przypisana osoba będzie mieć dostęp do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) logowania
 8. Może zostać wyświetlona strona profilu programu Visual Studio
     - Imię
     - Nazwisko
-    - Kontaktowy adres E-mail
+    - Kontaktowy adres e-mail
 9. Logowanie zostało zakończone i subskrybent powinien mieć dostęp do korzyści
 
 ## <a name="resources-and-references"></a>Zasoby i odwołania
 - Szczegóły dotyczące Microsoft Partner Network [subskrypcji programu Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions)
-- Microsoft Partner Network [Przewodnik administratora programu dotyczącego oprogramowania i usług online](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
+- Microsoft Partner Network [Przewodnik administratora programu dotyczącego oprogramowania i usług online](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits)
   - PG 6 — Przypisywanie ról kontaktu i subskrypcji programu Visual Studio dla Action Pack
   > [!NOTE]
   > Rola kontaktu technicznego jest wymagana dla subskrypcji programu Visual Studio
@@ -61,3 +61,5 @@ Subskrybent programu Microsoft Action Pack i subskrypcje programu Visual Studio
 
 ## <a name="next-steps"></a>Następne kroki
 Subskrybenci i Administratorzy programów powinni współpracować bezpośrednio z zespołem pomocy technicznej Microsoft Partner Network, aby rozwiązać wszelkie problemy z dostępem do subskrypcji przez subskrybentów. Aby uzyskać pomoc, odwiedź stronę [pomocy technicznej dla partnerów](https://partner.microsoft.com/support) . (Poświadczenia logowania do MPN będą wymagane).
+
+https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.; _ylu = X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV = 2/RE = 1577405628/RO = 10/RU = https %3 a %2 f %2 f assetsprod. Microsoft. com% 2fmpn% 2fProgram-administrator-przewodnik-to-Software-and-Online-Services-korzyści/RK = 2/RS = xsA5OL. 9t6QqJlvFYZ3OPnZkC_k-

@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653185"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591607"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generowanie danych wejściowych przy użyciu dynamicznego wykonywania symbolicznego
 
@@ -24,7 +24,7 @@ Kroki pętli to:
 
 1. IntelliTest określa dane wejściowe `i` takich, które `q(i)=false` przy użyciu [funkcji ograniczenia](#constraint-solver). W trakcie tworzenia `i` wejściowy wykona ścieżkę wykonywania. Początkowo oznacza to, że `i` mogą być dowolnymi danymi wejściowymi, ponieważ nie odnaleziono jeszcze ścieżki wykonywania.
 
-1. IntelliTest wykonuje test z wybranym `i` wejściowym i monitoruje wykonywanie testu i testowanego programu.
+1. IntelliTest wykonuje test z wybranym `i`wejściowym i monitoruje wykonywanie testu i testowanego programu.
 
 1. Podczas wykonywania program pobiera konkretną ścieżkę, która jest określana przez wszystkie uwarunkowane gałęzie programu. Zestaw wszystkich warunków określających wykonanie jest nazywany *warunkiem ścieżki*, zapisanym jako predykat `p: I -> {true, false}` przez formalne parametry wejściowe. IntelliTest oblicza reprezentację tego predykatu.
 
@@ -54,7 +54,7 @@ IntelliTest używa funkcji ograniczenia [Z3](https://github.com/Z3Prover/z3/wiki
 Jako efekt uboczny monitorowania środowiska uruchomieniowego IntelliTest zbiera dane dynamicznego pokrycia kodu.
 Ta metoda jest nazywana *dynamiczną* , ponieważ IntelliTest wie tylko o kodzie, który został wykonany, dlatego nie może dawać wartości bezwzględnych dla pokrycia w taki sam sposób jak w przypadku innych narzędzi pokrycia.
 
-Na przykład gdy IntelliTest zgłasza dynamiczne pokrycie jako bloki podstawowe 5/10, oznacza to, że zostały omówione pięć bloków z dziesięciu, gdzie łączna liczba bloków we wszystkich metodach, które zostały osiągnięte do tej pory przez analizę (w przeciwieństwie do wszystkich metod, które istnieją w ssembly pod testem) to dziesięć.
+Na przykład gdy IntelliTest zgłasza dynamiczne pokrycie jako bloki podstawowe 5/10, oznacza to, że pięć bloków z dziesięciu zostało pokrytych, gdzie łączna liczba bloków we wszystkich metodach, które zostały osiągnięte do tej pory przez analizę (w przeciwieństwie do wszystkich metod, które istnieją w badanym zestawie) to dziesięć.
 W dalszej części analizy, jak bardziej osiągalne metody są odnajdywane, może wzrosnąć zarówno licznik (5 w tym przykładzie), jak i mianownik (10).
 
 ## <a name="integers-and-floats"></a>Liczby całkowite i zmiennoprzecinkowe
@@ -129,10 +129,10 @@ IntelliTest podejmuje próbę zminimalizowania rozmiaru tablic i ciągów wymaga
 
 Klasa statyczna [PexChoose](static-helper-classes.md#pexchoose) może służyć do uzyskania dodatkowych wejść do testu i może służyć do implementowania [makiet sparametryzowanych](#parameterized-mocks).
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Chcesz przekazać opinię?
 
 Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Dalsze odczytywanie
+## <a name="further-reading"></a>Dalsze informacje
 
 * [Jak to działa?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

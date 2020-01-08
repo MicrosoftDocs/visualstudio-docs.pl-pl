@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911252"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592155"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *MIDL. exe*. Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
@@ -51,7 +51,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Opcjonalny parametr **ciągu** .
 
-     Lista opcji wiersza polecenia. Na przykład/\<option1 >/\<option2 >/\<option # >. Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania MIDL.
+     Lista opcji wiersza polecenia. Na przykład/\<opcja1 >/\<opcja2 >/\<opcji # >. Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania MIDL.
 
      Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -61,7 +61,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program pozwala używać niektórych słów kluczowych ACF w pliku IDL.
 
-     Aby uzyskać więcej informacji, zobacz **/app_config** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcję **/app_config** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ClientStubFile**
 
@@ -77,7 +77,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Określa opcje do przekazania do języka C/C++ preprocesora. Określ rozdzielaną spacją listę opcji preprocesora.
 
-     Aby uzyskać więcej informacji, zobacz **/cpp_opt** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcję **/cpp_opt** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **DefaultCharType**
 
@@ -91,7 +91,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |-----------|--------------------------|
     |**Opatrzon**|**/char podpisany**|
     |**Bajt**|**/char bez znaku**|
-    |**ASCII**|**/char ascii7**|
+    |**Ascii**|**/char ascii7**|
 
      Aby uzyskać więcej informacji, zobacz **/char** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -113,9 +113,9 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**Dawaj**|**/Error brak**|
+    |**Brak**|**/Error brak**|
     |**EnableCustom**|**/Error**|
-    |**Całą**|**/Error wszystko**|
+    |**Wszystkie**|**/Error wszystko**|
 
      Aby uzyskać więcej informacji, zobacz **/Error** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -133,7 +133,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, sprawdza rozmiar zgodnych i zróżnicowanych tablic względem specyfikacji długości transmisji.
 
-     Aby uzyskać więcej informacji, zobacz **/Error bounds_check** Option w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/error bounds_check** opcja w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ErrorCheckEnumRange**
 
@@ -157,7 +157,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, generuje procedurę pośredniczącą, która przechwytuje wyjątki po stronie serwera i propaguje je z powrotem do klienta.
 
-     Aby uzyskać więcej informacji, zobacz **/Error stub_data** Option w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz **/error stub_data** opcja w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateClientFiles**
 
@@ -169,8 +169,8 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**Dawaj**|**/Client brak**|
-    |**Szkieletu**|**/Client**|
+    |**Brak**|**/Client brak**|
+    |**Stub**|**/Client**|
 
      Aby uzyskać więcej informacji, zobacz **/Client** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -184,8 +184,8 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**Dawaj**|**/Server brak**|
-    |**Szkieletu**|**/Server — stub**|
+    |**Brak**|**/Server brak**|
+    |**Stub**|**/Server — stub**|
 
      Aby uzyskać więcej informacji, zobacz opcja **/Server** w [MIDL w wierszu polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -193,7 +193,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Opcjonalny parametr **logiczny** .
 
-     W przypadku `true` program generuje w pełni interpretowane klasy zastępcze z niepośredniczącymi serwerami proxy dla interfejsów obiektów.
+     W przypadku `true`program generuje w pełni interpretowane klasy zastępcze z niepośredniczącymi serwerami proxy dla interfejsów obiektów.
 
      Aby uzyskać więcej informacji, zobacz **/Oicf** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -219,7 +219,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, zadanie MIDL przeszukuje tylko katalogi określone za pomocą przełącznika **AdditionalIncludeDirectories** i ignoruje bieżący katalog i katalogi określone przez zmienną środowiskową INCLUDE.
 
-     Aby uzyskać więcej informacji, zobacz **/no_def_idir** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcję **/no_def_idir** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **InterfaceIdentifierFileName**
 
@@ -285,7 +285,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Aby uzyskać więcej informacji, zobacz **/sstub** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **ClientStubFile** w tej tabeli.
 
-- **Zewnętrz**
+- **Element źródłowy**
 
      Wymagany `ITaskItem[]` parametr.
 
@@ -301,11 +301,11 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**NotSet**|*\<none >*|
-    |**jedno**|**/ZP1**|
-    |**dwóch**|**/Zp2**|
-    |**czwart**|**/Zp4**|
-    |**0,8**|**/ZP8**|
+    |**NotSet**|*\<brak >*|
+    |**1**|**/Zp1**|
+    |**2**|**/Zp2**|
+    |**4**|**/Zp4**|
+    |**8**|**/Zp8**|
 
      Aby uzyskać więcej informacji, zobacz **/ZP** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .
 
@@ -315,7 +315,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Jeśli `true`, program pomija komunikaty ostrzegawcze z zadania MIDL.
 
-     Aby uzyskać więcej informacji, zobacz **/no_warn** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz opcję **/no_warn** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **SuppressStartupBanner**
 
@@ -335,10 +335,10 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**NotSet**|*\<none >*|
-    |**System**|**/ENV Win32**|
+    |**NotSet**|*\<brak >*|
+    |**Win32**|**/ENV Win32**|
     |**Itanium**|**/ENV ia64**|
-    |**Procesorów**|**/ENV x64**|
+    |**X64**|**/ENV x64**|
 
      Aby uzyskać więcej informacji, zobacz **/ENV** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -383,9 +383,9 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Opcjonalny parametr `Boolean`.
 
-     Jeśli `true`, program generuje dodatkowe informacje o sprawdzaniu błędów, które są używane do przeprowadzania sprawdzania integralności w czasie wykonywania. W przypadku `false` nie są generowane informacje o sprawdzaniu błędów.
+     Jeśli `true`, program generuje dodatkowe informacje o sprawdzaniu błędów, które są używane do przeprowadzania sprawdzania integralności w czasie wykonywania. W przypadku `false`nie są generowane informacje o sprawdzaniu błędów.
 
-     Aby uzyskać więcej informacji, zobacz Opcje **/Robust** i **/no_robust** w [dokumentacji wiersza polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
+     Aby uzyskać więcej informacji, zobacz Opcje **/Robust** i **/no_robust** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **Warnaserror —**
 
@@ -408,10 +408,10 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
     |**0**|**/W0**|
-    |**jedno**|**/W1**|
-    |**dwóch**|**/W2**|
-    |**r.3**|**/W3**|
-    |**czwart**|**/W4**|
+    |**1**|**/W1**|
+    |**2**|**/W2**|
+    |**3**|**/W3**|
+    |**4**|**/W4**|
 
      Aby uzyskać więcej informacji, zobacz opcja **/w** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **warnaserror —** w tej tabeli.
 

@@ -4,21 +4,21 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655700"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565724"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Opcje — okno dialogowe: projekty i rozwiązania \> lokalizacje
 
-Ta strona służy do ustawiania domyślnych lokalizacji projektów, szablonów projektów i szablonów elementów. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia**  > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **lokalizacje**.
+Ta strona służy do ustawiania domyślnych lokalizacji projektów, szablonów projektów i szablonów elementów. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia** > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **lokalizacje**.
 
 Poniższe opcje są dostępne na stronie **lokalizacje** .
 

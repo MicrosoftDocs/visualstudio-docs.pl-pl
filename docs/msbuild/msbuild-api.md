@@ -1,21 +1,21 @@
 ---
-title: Program MSBuild interfejsu API | Dokumentacja firmy Microsoft
+title: Interfejs API programu MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dba169357f24af147f6efd244de842563bc43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c04a349b606671cb5ca536468b4d7b6fe0d05a9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817289"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592116"
 ---
-# <a name="use-the-msbuild-api"></a>Użyj programu MSBuild API
+# <a name="use-the-msbuild-api"></a>Korzystanie z interfejsu API programu MSBuild
 
-MSBuild udostępnia publiczne powierzchni interfejsu API, aby program mógł wykonywać kompilacje i sprawdzić projektów.
+MSBuild oferuje publiczną powierzchnię interfejsu API, dzięki czemu program może wykonywać kompilacje i sprawdzać projekty.
 
-Dokumentacja interfejsu API programu MSBuild znajduje się w temacie [przestrzenie nazw Microsoft.Build](https://msdn.microsoft.com/library/mt476050(v=vs.110).aspx).
+Dokumentację interfejsu API programu MSBuild można znaleźć pod adresem [Microsoft. Build przestrzenie nazw](https://msdn.microsoft.com/library/mt476050(v=vs.110).aspx).

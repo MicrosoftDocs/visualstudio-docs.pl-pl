@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, specifying the defalut target
 - MSBuild, DefaultTargets attribute
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a567ca32a78eb6a78aad3702a68a6e08ed122db8
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316510"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574631"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Instrukcje: Określanie pierwszego obiektu docelowego do skompilowania
 Plik projektu może zawierać jeden lub więcej elementów `Target`, które definiują sposób kompilowania projektu. Silnik [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) kompiluje pierwszy znaleziony projekt i wszelkie zależności, chyba że plik projektu zawiera atrybut `DefaultTargets`, atrybut `InitialTargets` lub element docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-Target** .

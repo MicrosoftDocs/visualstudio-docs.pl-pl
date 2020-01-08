@@ -1,5 +1,5 @@
 ---
-title: Getassemblyidentity — zadanie | Dokumentacja firmy Microsoft
+title: GetAssemblyIdentity — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,36 +13,36 @@ helpviewer_keywords:
 - MSBuild, GetAssemblyIdentity task
 - GetAssemblyIdentity task [MSBuild]
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2d81701ae121b4666a10b6ce15fd8ae71e8920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7aaa963da3f17265da6ebeaed4d30cfe75aa533c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979926"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593268"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity — zadanie
-Pobiera tożsamość zestawu z określonych plików i wyświetla informacje o tożsamości.
+Pobiera tożsamości zestawu z określonych plików i wyświetla informacje o tożsamości.
 
 ## <a name="task-parameters"></a>Parametry zadania
-W poniższej tabeli opisano parametry `GetAssemblyIdentity` zadania.
+W poniższej tabeli opisano parametry zadania `GetAssemblyIdentity`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Assemblies`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera tożsamości zestawu pobrane.|
-|`AssemblyFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do pobrania tożsamości z.|
+|`Assemblies`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera pobraną tożsamość zestawu.|
+|`AssemblyFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki, z których mają zostać pobrane tożsamości.|
 
 ## <a name="remarks"></a>Uwagi
-Elementy danych wyjściowych przez `Assemblies` parametr zawiera wpisy metadanych elementu o nazwie `Version`, `PublicKeyToken`, i `Culture`.
+Elementy wyjściowe przez parametr `Assemblies` zawierają wpisy metadanych elementu o nazwach `Version`, `PublicKeyToken`i `Culture`.
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pobiera tożsamość pliki określone w `MyAssemblies` element i zapisuje je do `MyAssemblyIdentities` elementu.
+Poniższy przykład pobiera tożsamość plików określonych w elemencie `MyAssemblies` i wyprowadza je do `MyAssemblyIdentities` elementu.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

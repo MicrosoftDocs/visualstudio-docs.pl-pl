@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586903"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji do obsługi danych za pomocą platform WPF i Entity Framework 6
 
@@ -36,7 +36,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -46,7 +46,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
 1. W programie Visual Studio Utwórz nowy C# projekt **aplikacji WPF** .
 
-2. Dodaj pakiet NuGet dla Entity Framework 6. W **Eksplorator rozwiązań**wybierz węzeł projektu. W menu głównym wybierz **projekt**  > **Zarządzanie pakietami NuGet**.
+2. Dodaj pakiet NuGet dla Entity Framework 6. W **Eksplorator rozwiązań**wybierz węzeł projektu. W menu głównym wybierz **projekt** > **Zarządzanie pakietami NuGet**.
 
      ![Element menu Zarządzaj pakietami NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,7 +58,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
 ## <a name="create-the-model"></a>Tworzenie modelu
 
-1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj**  > **nowy element**. W lewym okienku w C# węźle wybierz pozycję **dane** , a następnie w środkowym okienku wybierz pozycję **ADO.NET Entity Data Model**.
+1. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **nowy element**. W lewym okienku w C# węźle wybierz pozycję **dane** , a następnie w środkowym okienku wybierz pozycję **ADO.NET Entity Data Model**.
 
    ![Nowy element modelu Entity Framework](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -78,7 +78,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
     Powierzchnia projektanta dla pliku *. edmx* umożliwia modyfikowanie niektórych właściwości i relacji w modelu. Nie będziemy używać projektanta w tym instruktażu.
 
-6. Pliki *. tt* są ogólnego przeznaczenia i należy dostosować jeden z nich do pracy z danymi DataBinding WPF, które wymagają ObservableCollections. W **Eksplorator rozwiązań**rozwiń węzeł Northwind_model, dopóki nie znajdziesz *Northwind_model. tt*. (Upewnij się, że nie jesteś w *. Plik Context.tt* , który znajduje się bezpośrednio poniżej pliku *. edmx* .
+6. Pliki *. tt* są ogólnego przeznaczenia i należy dostosować jeden z nich do pracy z danymi DataBinding WPF, które wymagają ObservableCollections. W **Eksplorator rozwiązań**rozwiń węzeł Northwind_model do momentu znalezienia *Northwind_model. tt*. (Upewnij się, że nie jesteś w *. Plik Context.tt* , który znajduje się bezpośrednio poniżej pliku *. edmx* .
 
    - Zastąp dwa wystąpienia <xref:System.Collections.ICollection> z <xref:System.Collections.ObjectModel.ObservableCollection%601>.
 
@@ -86,7 +86,7 @@ Ten przykład używa SQL Server Express LocalDB i przykładowej bazy danych Nort
 
    - Zamień tylko wystąpienie <xref:System.Collections.Generic> (wokół wiersza 431) z <xref:System.Collections.ObjectModel>.
 
-7. Naciśnij **klawisze Ctrl**+**SHIFT**+**B** , aby skompilować projekt. Po zakończeniu kompilacji klasy modelu są widoczne dla Kreatora źródeł danych.
+7. Naciśnij klawisz **Ctrl**+**SHIFT**+**B** , aby skompilować projekt. Po zakończeniu kompilacji klasy modelu są widoczne dla Kreatora źródeł danych.
 
 Teraz możesz przystąpić do przyłączania tego modelu do strony XAML, aby można było wyświetlać, nawigować i modyfikować dane.
 
@@ -94,7 +94,7 @@ Teraz możesz przystąpić do przyłączania tego modelu do strony XAML, aby mo�
 
 Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej jest pozwolić programowi Visual Studio.
 
-1. Z menu głównego wybierz kolejno opcje **projekt**  > **Dodaj nowe źródło danych** , aby wyświetlić **Kreatora konfiguracji źródła danych**. Wybierz **obiekt** , ponieważ tworzysz powiązania z klasami modelu, a nie z bazą danych:
+1. Z menu głównego wybierz kolejno opcje **projekt** > **Dodaj nowe źródło danych** , aby wyświetlić **Kreatora konfiguracji źródła danych**. Wybierz **obiekt** , ponieważ tworzysz powiązania z klasami modelu, a nie z bazą danych:
 
      ![Kreator konfiguracji źródła danych z obiektem źródłowym](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ Istnieje możliwość napisania własnego kodu wiązania, ale znacznie łatwiej 
         </Grid.RowDefinitions>
     ```
 
-5. Teraz otwórz plik *MainWindow. XAML* , aby wyświetlić go w projektancie. Powoduje to wyświetlenie okna **źródła danych** jako opcji w marginesie okna programu Visual Studio obok **przybornika**. Kliknij kartę, aby otworzyć okno, lub naciśnij klawisz **Shift** +**Alt** +**D** lub wybierz pozycję **Widok**  >  inne**źródła danych** > **systemu Windows** . Będziemy wyświetlać każdą właściwość w klasie Customers we własnym polu tekstowym. Najpierw kliknij strzałkę w polu kombi **klienci** i wybierz pozycję **szczegóły**. Następnie przeciągnij węzeł do środkowej części powierzchni projektowej, aby Projektant wiedział, że chce go umieścić w środkowym wierszu. Jeśli go umieścisz, możesz określić wiersz ręcznie później w kodzie XAML. Domyślnie formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można je rozmieścić w formularzu. Na przykład może być zrozumiałe umieszczenie pola tekstowego **Nazwa** na górze, nad adresem. Przykładowa aplikacja w tym artykule zmienia kolejność pól i rozmieszcza je w dwóch kolumnach.
+5. Teraz otwórz plik *MainWindow. XAML* , aby wyświetlić go w projektancie. Powoduje to wyświetlenie okna **źródła danych** jako opcji w marginesie okna programu Visual Studio obok **przybornika**. Kliknij kartę, aby otworzyć okno, lub naciśnij klawisz **Shift**+**Alt**+**D** lub wybierz pozycję **Widok** > inne **źródła danych** > **systemu Windows** . Będziemy wyświetlać każdą właściwość w klasie Customers we własnym polu tekstowym. Najpierw kliknij strzałkę w polu kombi **klienci** i wybierz pozycję **szczegóły**. Następnie przeciągnij węzeł do środkowej części powierzchni projektowej, aby Projektant wiedział, że chce go umieścić w środkowym wierszu. Jeśli go umieścisz, możesz określić wiersz ręcznie później w kodzie XAML. Domyślnie formanty są umieszczane w pionie w elemencie siatki, ale w tym momencie można je rozmieścić w formularzu. Na przykład może być zrozumiałe umieszczenie pola tekstowego **Nazwa** na górze, nad adresem. Przykładowa aplikacja w tym artykule zmienia kolejność pól i rozmieszcza je w dwóch kolumnach.
 
      ![Powiązanie źródła danych klientów z indywidualnymi kontrolkami](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -417,13 +417,13 @@ Istnieją cztery części do logiki poleceń: (1) polecenia, (2) powiązania, (3
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>Dodawanie programów obsługi poleceń do klasy MainWindow
 
-Kod źródłowy jest minimalny z wyjątkiem metod dodawania i usuwania. Nawigacja jest wykonywana przez wywoływanie metod we właściwości widoku CollectionViewSource. W `DeleteOrderCommandHandler` pokazano, jak wykonać kaskadowe usuwanie w kolejności. Musimy najpierw usunąć Order_Details, które są z nim skojarzone. @No__t_0 dodaje nowego klienta lub zamówienie do kolekcji lub po prostu aktualizuje istniejącego klienta lub zamówienie ze zmianami wprowadzonymi przez użytkownika w polach tekstowych.
+Kod źródłowy jest minimalny z wyjątkiem metod dodawania i usuwania. Nawigacja jest wykonywana przez wywoływanie metod we właściwości widoku CollectionViewSource. W `DeleteOrderCommandHandler` pokazano, jak wykonać kaskadowe usuwanie w kolejności. Musimy najpierw usunąć Order_Details, które są z nim skojarzone. `UpdateCommandHandler` dodaje nowego klienta lub zamówienie do kolekcji lub po prostu aktualizuje istniejącego klienta lub zamówienie ze zmianami wprowadzonymi przez użytkownika w polach tekstowych.
 
 Dodaj te metody obsługi do klasy MainWindow w *MainWindow.XAML.cs*. Jeśli CollectionViewSource dla tabeli Customers ma inną nazwę, należy dostosować nazwę w każdej z tych metod:
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Powinny pojawić się dane klienta i zamówienia wypełnione w siatce, a przyciski nawigacji powinny funkcjonować zgodnie z oczekiwaniami. Kliknij przycisk **Zatwierdź** , aby dodać nowego klienta lub zamówienie do modelu po wprowadzeniu danych. Kliknij przycisk **Anuluj** , aby wycofać się z nowego klienta lub formularza nowego zamówienia bez zapisywania danych. Można wprowadzać zmiany w istniejących klientach i zamówieniach bezpośrednio w polach tekstowych i są one automatycznie zapisywane w modelu.
 

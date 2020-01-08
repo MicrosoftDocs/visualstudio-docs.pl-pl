@@ -1,5 +1,5 @@
 ---
-title: MOVE — zadanie | Dokumentacja firmy Microsoft
+title: Przenieś zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,38 +11,38 @@ helpviewer_keywords:
 - MSBuild, Move task
 - Move task [MSBuild]
 ms.assetid: d1405347-1309-4f18-b565-905408093d59
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2e11a1466f359cebb60505f498c0df3ae6c45b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8adfa75964959e2cce61779914a52f03319ed314
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817525"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592142"
 ---
 # <a name="move-task"></a>Move — Zadanie
 Przenosi pliki do nowej lokalizacji.
 
 ## <a name="parameters"></a>Parametry
- W następujących tabeli przedstawiono parametry `Move` zadania.
+ W tabeli następujące kwestie opisano parametry zadania `Move`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`DestinationFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa listę plików, aby przenieść pliki źródłowe do. Ta lista powinna być zmapowana do listy, który jest określony w `SourceFiles` parametru. Oznacza to, że pierwszy plik określony w `SourceFiles` zostaną przeniesione do pierwszej lokalizacji określonej w `DestinationFiles`, i tak dalej.|
-|`DestinationFolder`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa katalog, do której chcesz umieścić pliki.|
-|`MovedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera elementy, które zostały prawidłowo przeniesione.|
-|`OverwriteReadOnlyFiles`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zastępuje pliki, nawet wtedy, gdy są one oznaczone jako pliki tylko do odczytu.|
-|`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki, aby przenieść.|
+|`DestinationFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Określa listę plików, do których mają zostać przeniesione pliki źródłowe. Ta lista powinna być mapowaniem jeden-do-jednego do listy określonej w parametrze `SourceFiles`. Oznacza to, że pierwszy plik określony w `SourceFiles` zostanie przeniesiony do pierwszej lokalizacji określonej w `DestinationFiles`i tak dalej.|
+|`DestinationFolder`|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa katalog, do którego chcesz przenieść pliki.|
+|`MovedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera elementy, które zostały pomyślnie przeniesione.|
+|`OverwriteReadOnlyFiles`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, zastępuje pliki, nawet jeśli są oznaczone jako pliki tylko do odczytu.|
+|`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do przeniesienia.|
 
 ## <a name="remarks"></a>Uwagi
- Albo `DestinationFolder` parametru lub `DestinationFiles` parametr musi być określony, ale nie oba. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
+ Należy określić parametr `DestinationFolder` lub parametr `DestinationFiles`, ale nie oba jednocześnie. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
 
- `Move` Zadanie tworzy foldery zgodnie z wymaganiami dla docelowej lokalizacji plików.
+ Zadanie `Move` tworzy foldery wymagane dla żądanych plików docelowych.
 
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Zadania](../msbuild/msbuild-tasks.md)

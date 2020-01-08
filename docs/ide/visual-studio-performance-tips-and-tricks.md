@@ -2,17 +2,17 @@
 title: Porady dotyczące poprawy wydajności
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647149"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590673"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Porady i wskazówki dotyczące wydajności programu Visual Studio
 
@@ -33,17 +33,17 @@ Program Visual Studio automatycznie ponownie otwiera dokumenty, które zostały 
 
 Program Visual Studio powiadamia Cię na żółtym pasku, gdy automatyczne przywracanie dokumentów powoduje znacznie wolniejsze ładowanie rozwiązania. Automatyczne ponowne otwieranie plików można wyłączyć, wykonując następujące czynności:
 
-1. Wybierz pozycję **narzędzia**  > **Opcje** , aby otworzyć okno dialogowe **Opcje** .
+1. Wybierz pozycję **narzędzia** > **Opcje** , aby otworzyć okno dialogowe **Opcje** .
 
-1. Na stronie**Ogólne** **projekty i rozwiązanie**  >  Usuń zaznaczenie opcji **Otwórz ponownie dokumenty po załadowaniu rozwiązania**.
+1. Na stronie **Ogólne** **projekty i rozwiązanie** > Usuń zaznaczenie opcji **Otwórz ponownie dokumenty po załadowaniu rozwiązania**.
 
 Jeśli wyłączysz automatyczne przywracanie plików, możesz szybko przejść do plików, które chcesz otworzyć, za pomocą jednego z poleceń [Przejdź do](../ide/go-to.md) :
 
-- **Aby uzyskać ogólne funkcje** , wybierz opcję **Edytuj**  > **Przejdź do**  > **przejdź do wszystkich**lub naciśnij klawisz **Ctrl** +**t**.
+- **Aby uzyskać ogólne funkcje** , wybierz opcję **Edytuj** > **Przejdź do** > **przejdź do wszystkich**lub naciśnij klawisz **Ctrl**+**t**.
 
-- Przejdź do ostatnio edytowanej lokalizacji w rozwiązaniu za pomocą polecenia **edytuj**  > **Przejdź do**  > **Przejdź do ostatniej lokalizacji edycji**lub naciskając **klawisz Ctrl** +**SHIFT** +**Backspace**.
+- Przejdź do ostatnio edytowanej lokalizacji w rozwiązaniu za pomocą polecenia **edytuj** > **Przejdź do** > **Przejdź do ostatniej lokalizacji edycji**lub naciskając **klawisz Ctrl**+**SHIFT**+**Backspace**.
 
-- Użyj **Przejdź do ostatniego pliku** , aby wyświetlić listę ostatnio odwiedzonych plików w rozwiązaniu. Wybierz pozycję **edytuj**  > **przejdź do** pozycji  > **Przejdź do ostatniego pliku**lub **naciśnij klawisze CTRL** +**1**, **Ctrl** +**R**.
+- Użyj **Przejdź do ostatniego pliku** , aby wyświetlić listę ostatnio odwiedzonych plików w rozwiązaniu. Wybierz pozycję **edytuj** > **przejdź do** pozycji > **Przejdź do ostatniego pliku**lub **naciśnij klawisze CTRL**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurowanie opcji debugowania
 
@@ -53,15 +53,15 @@ Jeśli zwykle zaczyna brakować wolnej pamięci podczas debugowania sesji, możn
 
     Najprostsza Optymalizacja polega na włączeniu funkcji **tylko mój kod** , która ładuje tylko symbole dla projektu. Włączenie tej funkcji może spowodować znaczny zapis pamięci na potrzeby debugowania aplikacji zarządzanych (.NET). Ta opcja jest już włączona domyślnie w niektórych typach projektów.
 
-    Aby włączyć **tylko mój kod**, wybierz pozycję **narzędzia**  > **Opcje**  > **debugowanie**  > **Ogólne**, a następnie wybierz pozycję **Włącz tylko mój kod**.
+    Aby włączyć **tylko mój kod**, wybierz pozycję **narzędzia** > **Opcje** > **debugowanie** > **Ogólne**, a następnie wybierz pozycję **Włącz tylko mój kod**.
 
 - **Określ symbole do załadowania**
 
     W przypadku debugowania natywnego ładowanie plików symboli ( *. pdb*) jest kosztowne w odniesieniu do zasobów pamięci. Można skonfigurować ustawienia symboli debugera, aby zaoszczędzić pamięć. Zazwyczaj można skonfigurować rozwiązanie do ładowania tylko modułów z projektu.
 
-    Aby określić ładowanie symboli, wybierz pozycję **narzędzia**  > **opcje**  > **debugowanie**  > **symbole**.
+    Aby określić ładowanie symboli, wybierz pozycję **narzędzia** > **opcje** > **debugowanie** > **symbole**.
 
-    Ustaw dla opcji **tylko określone moduły** , a nie **wszystkie moduły** , a następnie określ moduły, które chcesz załadować. Podczas debugowania można również kliknąć prawym przyciskiem myszy określone moduły w oknie **moduły** , aby jawnie dołączyć moduł do ładowania symboli. (Aby otworzyć okno podczas debugowania, wybierz **debuguj**  > **modułów** > **systemu Windows** ).
+    Ustaw dla opcji **tylko określone moduły** , a nie **wszystkie moduły** , a następnie określ moduły, które chcesz załadować. Podczas debugowania można również kliknąć prawym przyciskiem myszy określone moduły w oknie **moduły** , aby jawnie dołączyć moduł do ładowania symboli. (Aby otworzyć okno podczas debugowania, wybierz **debuguj** > **modułów** > **systemu Windows** ).
 
     Aby uzyskać więcej informacji, zobacz [Opis plików symboli](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
@@ -69,7 +69,7 @@ Jeśli zwykle zaczyna brakować wolnej pamięci podczas debugowania sesji, możn
 
     Zaleca się wyłączenie profilowania procesora CPU po użyciu. Ta funkcja może zużywać duże ilości zasobów. Po włączeniu profilowania procesora CPU ten stan jest utrwalany w kolejnych sesjach debugowania, więc warto jawnie wyłączyć go po zakończeniu. Niektóre zasoby można zapisać, wyłączając narzędzia diagnostyczne podczas debugowania, jeśli nie są potrzebne podane funkcje.
 
-    Aby wyłączyć **Narzędzia diagnostyczne**, Rozpocznij sesję debugowania, wybierz pozycję **narzędzia**  > **Opcje**  > **Włącz narzędzia diagnostyczne**i usuń zaznaczenie opcji.
+    Aby wyłączyć **Narzędzia diagnostyczne**, Rozpocznij sesję debugowania, wybierz pozycję **narzędzia** > **Opcje** > **Włącz narzędzia diagnostyczne**i usuń zaznaczenie opcji.
 
     Aby uzyskać więcej informacji, zobacz [narzędzia profilowania](../profiling/profiling-feature-tour.md).
 
@@ -88,13 +88,13 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
     Program Visual Studio wykonuje analizę całego rozwiązania, aby zapewnić rozbudowane środowisko o błędach przed wywołaniem kompilacji. Ta funkcja jest przydatna do identyfikowania błędów tak szybko, jak to możliwe. Jednak w przypadku dużych rozwiązań ta funkcja może zużywać znaczną ilość zasobów pamięci. Jeśli występują problemy z ilością pamięci lub podobnymi problemami, możesz wyłączyć to środowisko, aby zwolnić te zasoby. Domyślnie ta opcja jest włączona dla Visual Basic i wyłączone dla programu C#.
 
-    Aby wyłączyć **pełną analizę rozwiązań**, wybierz pozycję **narzędzia**  > **Opcje**  > **edytorze tekstów**, a następnie wybierz opcję **C#** **Visual Basic** lub. Wybierz pozycję **Zaawansowane** i usuń zaznaczenie opcji **Włącz pełną analizę rozwiązania**.
+    Aby wyłączyć **pełną analizę rozwiązań**, wybierz pozycję **narzędzia** > **Opcje** > **edytorze tekstów**, a następnie wybierz opcję **C#** **Visual Basic** lub. Wybierz pozycję **Zaawansowane** i usuń zaznaczenie opcji **Włącz pełną analizę rozwiązania**.
 
 - **Wyłącz CodeLens**
 
     Program Visual Studio wykonuje zadanie **Znajdź wszystkie odwołania** dla każdej metody w miarę wyświetlania. CodeLens udostępnia funkcje, takie jak wbudowane wyświetlanie liczby odwołań. Prace są wykonywane w osobnym procesie, takim jak *zadanie servicehub. RoslynCodeAnalysisService32*. W dużych rozwiązaniach lub w systemach z ograniczeniami zasobów ta funkcja może mieć znaczący wpływ na wydajność. Jeśli występują problemy z pamięcią, na przykład podczas ładowania dużego rozwiązania na komputerze 4-GB lub dużego użycia procesora CPU dla tego procesu, można wyłączyć CodeLens w celu zwolnienia zasobów.
 
-    Aby wyłączyć **CodeLens**, wybierz pozycję **narzędzia**  > **Opcje**  > **Edytor tekstu**  > **wszystkie języki**  > **CodeLens**i usuń zaznaczenie tej funkcji.
+    Aby wyłączyć **CodeLens**, wybierz pozycję **narzędzia** > **Opcje** > **Edytor tekstu** > **wszystkie języki** > **CodeLens**i usuń zaznaczenie tej funkcji.
 
     > [!NOTE]
     > CodeLens jest dostępny w wersjach Professional i Enterprise programu Visual Studio.
@@ -121,7 +121,7 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
     Projektant XAML jest domyślnie włączony, ale tylko wtedy, gdy otworzysz plik *. XAML* . Jeśli pracujesz z plikami XAML, ale nie chcesz korzystać z funkcjonalności projektanta, wyłącz tę funkcję, aby zwolnić część pamięci.
 
-    Aby wyłączyć **Projektant XAML**, przejdź do pozycji **narzędzia**  > **opcje**  > **Projektant XAML**  > **Włącz Projektant XAML**i usuń zaznaczenie opcji.
+    Aby wyłączyć **Projektant XAML**, przejdź do pozycji **narzędzia** > **opcje** > **Projektant XAML** > **Włącz Projektant XAML**i usuń zaznaczenie opcji.
 
 - **Usuń obciążenia**
 
@@ -131,7 +131,7 @@ Aby uzyskać informacje dotyczące wydajności .NET Compiler Platform ("Roslyn")
 
 Środowisko CLR używa systemu zarządzania pamięcią do wyrzucania elementów bezużytecznych. W tym systemie czasami pamięć jest używana przez obiekty, które nie są już potrzebne. Ten stan jest tymczasowy; Moduł wyrzucania elementów bezużytecznych zwolni tę pamięć na podstawie jej heurystyki wydajności i użycia zasobów. Można wymusić zebranie przez środowisko CLR dowolnej nieużywanej pamięci przy użyciu klawisza skrótu w programie Visual Studio. Jeśli istnieje znacząca ilość elementów bezużytecznych oczekujących na zbieranie i wymuszenie wyrzucania elementów bezużytecznych, należy zobaczyć użycie pamięci przez listę rozwijaną procesów *devenv. exe* w **Menedżerze zadań**. Nie trzeba używać tej metody. Jednak po ukończeniu kosztownej operacji (np. pełnej kompilacji, sesji debugowania lub otwartego zdarzenia rozwiązania) może pomóc określić, ile pamięci jest rzeczywiście używane przez proces. Ponieważ program Visual Studio jest mieszany (zarządzany & Native), czasami istnieje możliwość, że natywny Alokator i moduł wyrzucania elementów bezużytecznych konkurują o ograniczonych zasobach pamięci. W warunkach dużego użycia pamięci może być pomocne, aby wymusić uruchomienie modułu wyrzucania elementów bezużytecznych.
 
-Aby wymusić wyrzucanie elementów bezużytecznych, użyj klawisza skrótu: **ctrl** +**alt** +**shift** +**F12**, **Ctrl** +**Alt** 0**SHIFT** 2**F12** (naciśnij dwukrotnie przycisk).
+Aby wymusić wyrzucanie elementów bezużytecznych, użyj klawisza skrótu: **ctrl**+**alt**+**shift**+**F12**, **Ctrl**+**Alt**+**SHIFT**+**F12** (naciśnij dwukrotnie przycisk).
 
 Jeśli wymuszenie nieniezawodnego wyrzucania elementów bezużytecznych sprawia, że Twój scenariusz działa, należy zgłosić raport za pomocą narzędzia opinii programu Visual Studio, ponieważ takie zachowanie może być przyczyną błędu.
 
@@ -139,5 +139,5 @@ Aby uzyskać szczegółowy opis modułu zbierającego elementy bezużyteczne śr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Optymalizowanie wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Optymalizacja wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Szybsze ładowanie rozwiązań (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

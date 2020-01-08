@@ -2,25 +2,25 @@
 title: Generuj szybką akcję konstruktora
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41bb9a0e3921495629a10d6783432e8b4999a117
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661738"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569507"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
-Ta generacja kodu ma zastosowanie do:
+Dotyczy to generowanie kodu:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
 **Co:** Umożliwia natychmiastowe wygenerowanie kodu dla nowego konstruktora w klasie.
 
@@ -44,10 +44,10 @@ Ta generacja kodu ma zastosowanie do:
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
       - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w pustym wierszu w klasie.
 
    ![Generuj Podgląd konstruktora](media/constructor1-preview-cs.png)
@@ -56,7 +56,7 @@ Ta generacja kodu ma zastosowanie do:
 
    Zostanie otwarte okno dialogowe **Wybierz członków** .
 
-1. Wybierz elementy członkowskie, które mają być dołączane jako parametry konstruktora. Można je zamówić przy użyciu strzałek w górę i w dół. Wybierz **przycisk OK**.
+1. Wybierz elementy członkowskie, które mają być dołączane jako parametry konstruktora. Można je zamówić przy użyciu strzałek w górę i w dół. Wybierz **OK**.
 
    ![Okno dialogowe wyboru członków](media/constructor1-dialog-cs.png)
 
@@ -75,10 +75,10 @@ Ta generacja kodu ma zastosowanie do:
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
       - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z zaznaczeniem.
 
       ![Generuj Podgląd konstruktora](media/constructor2-preview-cs.png)
@@ -91,41 +91,41 @@ Ta generacja kodu ma zastosowanie do:
 
 ## <a id="usage"></a>Generuj Konstruktor na podstawie nowego użyciaC# (i Visual Basic)
 
-1. Umieść kursor w wierszu, w którym znajduje się czerwona zygzakowata. Czerwona zygzakowata wskazuje wywołanie konstruktora, który jeszcze nie istnieje.
+1. Umieść kursor w wierszu gdzie znajduje się czerwona fala. Czerwona zygzakowata wskazuje wywołanie konstruktora, który jeszcze nie istnieje.
 
    - C#:
 
-       ![Wyróżniony kodC#](media/constructor-highlight-cs.png)
+       ![Wyróżniony kod C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod VB](media/constructor-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/constructor-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
-      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
       ![Generuj Podgląd konstruktora](media/constructor-preview-cs.png)
 
 3. Wybierz pozycję **Generuj Konstruktor w elemencie "*TypeName*"** z menu rozwijanego.
 
    > [!TIP]
-   > Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
+   > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
 
    Konstruktor jest tworzony, z dowolnego parametru wywnioskowanego z jego użycia.
 
    - C#:
 
-       ![Generowanie wyniku metodyC#](media/constructor-result-cs.png)
+       ![Generowanie metody powodują C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-       ![Generuj wynik metody VB](media/constructor-result-vb.png)
+       ![Generowanie metody powodują VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a>Dodaj parametr do istniejącego konstruktora (C# tylko)
 
@@ -137,12 +137,12 @@ Ta generacja kodu ma zastosowanie do:
 
 3. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
-      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
       ![Generuj Podgląd konstruktora](media/constructor4-preview-cs.png)
 
@@ -164,10 +164,10 @@ Możesz również dodać parametr do istniejącej metody. Aby uzyskać więcej i
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
       - Kliknij ikonę ![śrubokręt](media/screwdriver.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z dodanym parametrem.
 
    ![Generuj Podgląd konstruktora](media/constructor5-preview-cs.png)

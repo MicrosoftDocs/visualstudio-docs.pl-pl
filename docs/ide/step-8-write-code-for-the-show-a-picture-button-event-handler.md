@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314056"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591726"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Pokaż obraz
 
@@ -36,14 +36,14 @@ Funkcja IntelliSense próbuje określić, co chcesz zrobić dalej, i automatyczn
 
 1. Przejdź do **Projektant formularzy systemu Windows** i kliknij dwukrotnie przycisk **Pokaż obraz** . IDE natychmiast przechodzi do projektanta kodu i przenosi kursor tak, aby znajdował się w `showButton_Click()` (Alternatywnie `ShowButton_Click()`) metody, która została dodana wcześniej.
 
-1. Wpisz `i` w pustym wierszu między `{ }` dwa nawiasy klamrowe. (W Visual Basic wpisz pusty wiersz między `Private Sub...` i `End Sub`.) Zostanie otwarte okno **IntelliSense** , jak pokazano na poniższej ilustracji.
+1. Wpisz `i` w pustym wierszu między `{ }`dwa nawiasy klamrowe. (W Visual Basic wpisz pusty wiersz między `Private Sub...` i `End Sub`.) Zostanie otwarte okno **IntelliSense** , jak pokazano na poniższej ilustracji.
 
     ![Technologia IntelliSense z kodem&#35; Visual C](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
     > Kod może nie wyświetlać programów obsługi zdarzeń w przypadku liter "camelCase".
 
-1. W oknie **IntelliSense** należy podświetlić słowo `if`. (Jeśli nie, wprowadź małe litery `f` i będzie to możliwe). Zwróć uwagę, jak pole *etykietki narzędzia* obok okna **IntelliSense** pojawia się z opisem, **fragment kodu dla instrukcji if**. (W Visual Basic, etykietka narzędzia wskazuje również, że jest to fragment, ale nieco inny wyraz). Chcesz użyć tego fragmentu kodu, więc wybierz klawisz **Tab** , aby wstawić `if` do kodu. Następnie ponownie wybierz klawisz **Tab** , aby użyć fragmentu kodu `if`. (W przypadku wybrania w innym miejscu okna funkcji **IntelliSense** znikają spacje nad `i` i ponownie je wpiszą, a okno **IntelliSense** zostanie otwarte).
+1. W oknie **IntelliSense** należy podświetlić słowo `if`. (Jeśli nie, wprowadź małe litery `f`i będzie to możliwe). Zwróć uwagę, jak pole *etykietki narzędzia* obok okna **IntelliSense** pojawia się z opisem, **fragment kodu dla instrukcji if**. (W Visual Basic, etykietka narzędzia wskazuje również, że jest to fragment, ale nieco inny wyraz). Chcesz użyć tego fragmentu kodu, więc wybierz klawisz **Tab** , aby wstawić `if` do kodu. Następnie ponownie wybierz klawisz **Tab** , aby użyć fragmentu kodu `if`. (W przypadku wybrania w innym miejscu okna funkcji **IntelliSense** znikają spacje nad `i` i ponownie je wpiszą, a okno **IntelliSense** zostanie otwarte).
 
     ![Kod języka&#35; Visual C](../ide/media/express_highlighttrue.png)
 
@@ -60,7 +60,7 @@ Następnie użyj funkcji IntelliSense, aby wprowadzić więcej kodu, aby otworzy
  1. Wpisz kropkę (`.`) (wiele programistów wywołuje to kropkę). Ponieważ wpisano kropkę bezpośrednio po **openFileDialog1**, zostanie otwarte okno **IntelliSense** z właściwościami i metodami składnika **OpenFileDialog** . Są to te same właściwości, które pojawiają się w oknie **Właściwości** w przypadku wybrania go w **Projektant formularzy systemu Windows**. Możesz również wybrać metody, które poinformują składnik, aby wykonali czynności (na przykład otwierając okno dialogowe).
 
     > [!NOTE]
-    > W oknie **IntelliSense** można wyświetlić właściwości i metody. Aby określić, co jest wyświetlane, przyjrzyj się ikonie po lewej stronie każdego elementu w oknie **IntelliSense** . Zobaczysz obraz bloku obok każdej metody, a obraz klucza (lub kolei) obok każdej właściwości. Obok każdego zdarzenia znajduje się również ikona błyskawicy. <br><br>Oto ikony, które są wyświetlane:<br><br>![Method ikonę ](../ide/media/express_iconmethod.png)<br>![Property ikonę ](../ide/media/express_iconproperty.png)<br>![Event ikonę ](../ide/media/express_iconevent.png)
+    > W oknie **IntelliSense** można wyświetlić właściwości i metody. Aby określić, co jest wyświetlane, przyjrzyj się ikonie po lewej stronie każdego elementu w oknie **IntelliSense** . Zobaczysz obraz bloku obok każdej metody, a obraz klucza (lub kolei) obok każdej właściwości. Obok każdego zdarzenia znajduje się również ikona błyskawicy. <br><br>Oto ikony, które są wyświetlane:<br><br>![ikona metody](../ide/media/express_iconmethod.png)<br>ikona właściwości ![](../ide/media/express_iconproperty.png)<br>ikona zdarzenia ![](../ide/media/express_iconevent.png)
 
  1. Zacznij wpisywać `ShowDialog` (kapitalizacja jest nieważna dla IntelliSense). Metoda `ShowDialog()` wyświetli okno dialogowe **Otwórz plik** . Gdy okno zostanie wyróżnione **ShowDialog**, wybierz klawisz **Tab** . Możesz również wyróżnić "ShowDialog" i wybrać klawisz **F1** , aby uzyskać pomoc dotyczącą tego.
 

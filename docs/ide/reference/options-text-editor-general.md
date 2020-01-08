@@ -28,17 +28,17 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666209"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568415"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Opcje — okno dialogowe: Edytor tekstu \> ogólne
 
@@ -54,7 +54,7 @@ Gdy ta opcja jest zaznaczona, umożliwia przeniesienie tekstu, zaznaczając go i
 
 Gdy jest zaznaczone, znaki ogranicznika oddzielające parametry lub pary element-wartość, a także pasujące nawiasy klamrowe, są wyróżnione.
 
-### <a name="track-changes"></a>Śledź zmiany
+### <a name="track-changes"></a>Śledzenie zmian
 
 Po wybraniu edytora kodu w marginesie zaznaczenia zostanie wyświetlona pionowa żółta linia, aby oznaczyć kod zmieniony od czasu ostatniego zapisania pliku. Po zapisaniu zmian linie pionowe stają się kolorem zielonym.
 
@@ -68,7 +68,7 @@ Po wybraniu zasady kodowania określone dla projektu zastępują wszelkie konwen
 
 ### <a name="enable-mouse-click-to-perform-go-to-definition"></a>Włącz kliknięcie myszą, aby wykonać operację przejdź do definicji
 
-Po zaznaczeniu można nacisnąć klawisz **Ctrl** i umieścić kursor nad elementem, a następnie klikając myszą. Wykonanie tej operacji spowoduje przejście do definicji wybranego elementu. Możesz również wybrać opcję **Alt** lub **Ctrl**  + **Alt** z listy rozwijanej **Użyj klawisza modyfikującego** .
+Po zaznaczeniu można nacisnąć klawisz **Ctrl** i umieścić kursor nad elementem, a następnie klikając myszą. Wykonanie tej operacji spowoduje przejście do definicji wybranego elementu. Możesz również wybrać opcję **Alt** lub **Ctrl** + **Alt** z listy rozwijanej **Użyj klawisza modyfikującego** .
 
 Zaznacz pole wyboru **Otwórz definicję w widoku wglądu** , aby wyświetlić definicję elementu w oknie bez nawigowania do bieżącej lokalizacji w edytorze kodu.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924518"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586864"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Łączenie z danymi w bazie danych programu Access
 
@@ -33,7 +33,7 @@ Nawiąż połączenie z bazami danych utworzonymi przy użyciu pakietu Office 36
 
 1. Otwórz projekt aplikacji Windows Forms lub WPF w programie Visual Studio.
 
-2. Aby otworzyć okno **źródła danych** , w menu **widok** wybierz **inne  >  Windows** **źródła danych**.
+2. Aby otworzyć okno **źródła danych** , w menu **widok** wybierz **inne > Windows** **źródła danych**.
 
    ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Połącz się z bazami danych utworzonymi przy użyciu programu Access 2000-2003
 
 1. Otwórz projekt aplikacji Windows Forms lub WPF w programie Visual Studio.
 
-2. W menu **Widok** wybierz inne**źródła danych** **systemu Windows**  > .
+2. W menu **Widok** wybierz inne **źródła danych** **systemu Windows** > .
 
    ![Wyświetl inne źródła danych systemu Windows](../data-tools/media/viewdatasources.png)
 

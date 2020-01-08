@@ -26,21 +26,21 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff1b5e83d9aaca0181699e3cc7effcc973ef2349
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570066"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Opcje — okno dialogowe: \> środowiska dokumenty
 
-Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie wybierając **środowisko**  > **dokumenty**.
+Za pomocą tej strony okna dialogowego **Opcje** można sterować wyświetlaniem dokumentów w zintegrowanym środowisku programistycznym (IDE) i zarządzać zmianami zewnętrznymi do dokumentów i plików. Możesz uzyskać dostęp do tego okna dialogowego, klikając opcję **Opcje** w menu **Narzędzia** , a następnie wybierając **środowisko** > **dokumenty**.
 
 **Wykryj, kiedy plik zostanie zmieniony poza środowiskiem**
 

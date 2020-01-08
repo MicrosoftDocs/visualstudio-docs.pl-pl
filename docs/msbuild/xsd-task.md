@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XSD task (MSBuild (C++))
 - MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748010"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565789"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki schematu lub klasy ze źródła.
@@ -40,7 +40,7 @@ Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki sch
 
      Opcjonalny parametr **ciągu** .
 
-     Lista opcji określona w wierszu polecenia. Na przykład/\<option1 >/\<option2 >/\<option # >. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez żaden inny parametr zadania **XSD** .
+     Lista opcji określona w wierszu polecenia. Na przykład/\<opcja1 >/\<opcja2 >/\<opcji # >. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez żaden inny parametr zadania **XSD** .
 
 - **GenerateFromSchema**
 
@@ -50,9 +50,9 @@ Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki sch
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
 
-  - **klasy**  -  **/Classes**
+  - **classes** -  **/classes**
 
-  - **zestaw danych**  -  **/DataSet**
+  - **dataset** -  **/dataset**
 
 - **Język**
 
@@ -62,7 +62,7 @@ Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki sch
 
      Wybierz pozycję z firmyC#cs (czyli domyślnej), **VB** (Visual Basic) lub **js** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.
 
-- **Obszaru**
+- **Namespace**
 
      Opcjonalny parametr **ciągu** .
 

@@ -1,66 +1,66 @@
 ---
-title: Zastąp zmienną tymczasową wartością
+title: Zamień na wartość Zmienna tymczasowa
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661012"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568870"
 ---
-# <a name="inline-a-temporary-variable-refactoring"></a>Wewnętrznie Refaktoryzacja zmiennej tymczasowej
+# <a name="inline-a-temporary-variable-refactoring"></a>Wbudowanej zmiennej tymczasowej refaktoryzacji
 
-To Refaktoryzacja dotyczy:
+Ta Refaktoryzacja mają zastosowanie do:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
-**Co:** Umożliwia usunięcie zmiennej tymczasowej i zastąpienie jej wartością.
+**Co:** pozwala usunąć zmienną tymczasową i zamienić ją na jej wartość.
 
-**Kiedy:** Użycie zmiennej tymczasowej sprawia, że kod jest trudniejszy do zrozumienia.
+**Kiedy:** wykorzystanie zmiennej tymczasowej sprawia, że kod jest trudniejsze do zrozumienia.
 
-**Dlaczego:** Usunięcie zmiennej tymczasowej może ułatwić odczytywanie kodu.
+**Dlaczego:** usuwanie zmiennej tymczasowej może poprawić czytelność kodu.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Zaznacz lub umieść kursor tekstowy wewnątrz zmiennej tymczasowej, która ma zostać zakreślona:
+1. Zaznacz lub umieść kursor tekstu w zmiennej tymczasowej, aby był śródwierszowy:
 
    - C#:
 
-       ![Wyróżniony kod —C#](media/inline-highlight-cs.png)
+       ![Wyróżniony kod-C#](media/inline-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod — Visual Basic](media/inline-highlight-vb.png)
+       ![Wyróżniony kod - języka Visual Basic](media/inline-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy kod i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy ten kod, a następnie wybierz pozycję **szybkie akcje i Refaktoryzacje** menu.
 
-3. W menu podręcznym okna podglądu wybierz pozycję **wbudowana zmienna tymczasowa** .
+3. Wybierz **wstawiona zmienna tymczasowa** z menu podręcznego okna podglądu.
 
-   Zmienna jest usuwana, a jej zastosowania zostały zastąpione przez wartość zmiennej.
+   Zmienna zostanie usunięty, a jego użycia zastępuje wartość zmiennej.
 
    - C#:
 
-      ![Wynik wbudowany —C#](media/inline-result-cs.png)
+      ![Wynik wbudowane-C#](media/inline-result-cs.png)
 
    - Visual Basic:
 
-      ![Wynik wbudowany — Visual Basic](media/inline-result-vb.png)
+      ![Wynik wbudowane - Visual Basic](media/inline-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

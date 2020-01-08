@@ -7,17 +7,17 @@ helpviewer_keywords:
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2bf2f8a45618e8b1f7540479a02c1a5f91b9bf
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 949ec0622dd19ef906d4c3a40a2ddadac2b75065
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75575903"
 ---
 # <a name="how-to-build-incrementally"></a>Instrukcje: kompilowanie przyrostowe
 Podczas kompilowania dużego projektu ważne jest, aby wcześniej skompilowane składniki, które są nadal aktualne, nie zostały odbudowane. Jeśli wszystkie elementy docelowe są tworzone za każdym razem, ukończenie każdej kompilacji potrwa dużo czasu. Aby włączyć Kompilacje przyrostowe (kompilacje, w których tylko te elementy docelowe, które nie zostały skompilowane przed lub celem, które są nieaktualne, są ponownie kompilowane), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) mogą porównać sygnatury czasowe plików wejściowych z sygnaturami czasowymi plików wyjściowych i określić, czy pominąć, skompilować lub częściowo ponownie skompilować element docelowy. Jednak musi istnieć mapowanie jeden do jednego między danymi wejściowymi i wyjściowymi. Można użyć transformacji, aby umożliwić obiektom docelowym zidentyfikowanie tego bezpośredniego mapowania. Aby uzyskać więcej informacji na temat transformacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).
@@ -106,4 +106,4 @@ Ten plik projektu zawiera zarówno elementy docelowe `Convert`, jak i `Build`. `
 - [Target — element (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Przekształcenia](../msbuild/msbuild-transforms.md)
 - [CSC — zadanie](../msbuild/csc-task.md)
-- [VBC, zadanie](../msbuild/vbc-task.md)
+- [Vbc — zadanie](../msbuild/vbc-task.md)

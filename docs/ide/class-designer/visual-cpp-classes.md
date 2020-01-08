@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748925"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590738"
 ---
 # <a name="c-classes-in-class-designer"></a>C++klasy w Projektant klas
 
@@ -69,7 +69,7 @@ int main()
 }
 ```
 
-Nie można jednak utworzyć wystąpienia klasy `Swimmer` jako pojedynczych obiektów. Można jedynie utworzyć inne typy klas zwierzęcia, na przykład `Penguin`, `Whale` i `Fish`. W takim przypadku należy zadeklarować klasę `Swimmer` jako abstrakcyjną klasę bazową.
+Nie można jednak utworzyć wystąpienia klasy `Swimmer` jako pojedynczych obiektów. Można jedynie utworzyć inne typy klas zwierzęcia, na przykład `Penguin`, `Whale`i `Fish`. W takim przypadku należy zadeklarować klasę `Swimmer` jako abstrakcyjną klasę bazową.
 
 Aby zadeklarować klasę jako abstrakcyjną, można użyć słowa kluczowego `abstract`. Elementy członkowskie oznaczone jako abstrakcyjne lub zawarte w klasie abstrakcyjnej są wirtualne i muszą być zaimplementowane przez klasy pochodne od klasy abstrakcyjnej.
 
@@ -149,28 +149,28 @@ W poniższej tabeli przedstawiono kilka przykładów dziedziczenia w częściowe
 
 |Element Code|Widok Projektant klas|
 |------------------| - |
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Klasa szablonu<br /><br /> `B`<br /><br /> Class<br /><br /> (wskazuje klasę A)<br /><br /> `C`<br /><br /> Class<br /><br /> (wskazuje klasę A)|
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Klasa szablonu<br /><br /> `B`<br /><br /> Klasa<br /><br /> (wskazuje klasę A)<br /><br /> `C`<br /><br /> Klasa<br /><br /> (wskazuje klasę A)|
 
 W poniższej tabeli przedstawiono kilka przykładów funkcji szablonu częściowej specjalizacji.
 
 |Element Code|Widok Projektant klas|
 |------------------| - |
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U > (przeciążanie + 1)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func\<T, U > (+ 1 Przeciążenie)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Klasa szablonu<br /><br /> `B<T2>`<br /><br /> Klasa szablonu<br /><br /> (B jest zawarty w klasie A w **zagnieżdżonych typach**)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C \<int ><br /><br /> `C<T>`<br /><br /> Klasa szablonu|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Klasa<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Klasa szablonu|
 
 W poniższej tabeli przedstawiono kilka przykładów dziedziczenia szablonów.
 
 |Element Code|Widok Projektant klas|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> -> B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B jest zawarty w klasie C w **zagnieżdżonych typach**)<br /><br /> `C<T>`<br /><br /> Klasa szablonu|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Klasa<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Klasa<br /><br /> (B jest zawarty w klasie C w **zagnieżdżonych typach**)<br /><br /> `C<T>`<br /><br /> Klasa szablonu|
 
 W poniższej tabeli przedstawiono kilka przykładów kanonicznych, wyspecjalizowanych połączeń klas.
 
 |Element Code|Widok Projektant klas|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> -> C \<int ><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Class<br /><br /> -> C \<float >|
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> Minimalna \<T >|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasa<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Klasa<br /><br /> `C<T>`<br /><br /> Klasa szablonu<br /><br /> `D`<br /><br /> Klasa<br /><br /> -> C\<zmiennoprzecinkowe >|
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T >|
 
 ## <a name="see-also"></a>Zobacz także
 

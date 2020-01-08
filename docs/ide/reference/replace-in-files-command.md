@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fccfe696da2d38ff03ffb2f9b91de481e924a514
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748669"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565477"
 ---
 # <a name="replace-in-files-command"></a>Zastąp w plikach — Polecenie
 Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych na karcie **Zamień na pliki w** oknie **Znajdź i Zamień** .
@@ -74,7 +74,7 @@ Opcjonalny. Używa wstępnie zdefiniowanych znaków specjalnych w argumencie `fi
 
 Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwania.
 
-/Stop
+/stop
 
 Opcjonalny. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Zastąp ignoruje wszystkie inne argumenty w przypadku określenia `/stop`. Na przykład aby zatrzymać bieżącą zamianę, należy wprowadzić następujące polecenie:
 
@@ -84,7 +84,7 @@ Opcjonalny. Zatrzymuje bieżącą operację wyszukiwania, jeśli jest w toku. Za
 
 /Sub. lub/s
 
-Opcjonalny. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin: `searchpath`.
+Opcjonalny. Przeszukuje podfoldery w katalogu określonym w argumencie/lookin:`searchpath`.
 
 /Text2 lub/2
 

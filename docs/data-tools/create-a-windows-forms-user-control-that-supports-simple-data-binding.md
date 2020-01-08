@@ -9,17 +9,17 @@ helpviewer_keywords:
 - custom controls [Visual Studio], Data Sources Window
 - Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 296f1a9ca076e9728c65d240bab5a81f80669783
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648616"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586827"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującej proste powiązanie danych
 
@@ -67,7 +67,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -116,7 +116,7 @@ W przypadku prostych formantów, które obsługują wiązania z danymi, zaimplem
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3. Z menu **kompilacja** wybierz polecenie **Kompiluj rozwiązanie**.
+3. Z **kompilacji** menu, wybierz **Kompiluj rozwiązanie**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Tworzenie źródła danych na podstawie bazy danych
 
@@ -166,11 +166,11 @@ Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **
 
 Aby utworzyć formanty powiązane z danymi w formularzu, przeciągnij główny węzeł **klienci** z okna **źródła danych** na formularz i sprawdź, czy kontrolka **PhoneNumberBox** jest używana do wyświetlania danych w kolumnie **telefon** .
 
-Formanty powiązane z danymi z opisowymi etykietami są wyświetlane w formularzu wraz z paskiem narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+Formanty powiązane z danymi z opisowymi etykietami są wyświetlane w formularzu wraz z paskiem narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-Naciśnij klawisz **F5** , aby uruchomić aplikację.
+Naciśnij klawisz **F5**, aby uruchomić aplikację.
 
 ## <a name="next-steps"></a>Następne kroki
 

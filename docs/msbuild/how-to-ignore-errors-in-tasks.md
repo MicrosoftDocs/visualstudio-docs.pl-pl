@@ -6,15 +6,15 @@ helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: d84292592183d11e5d9ee4fc2febac6679e2a73b
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: be8b4a6845e8fd14a0649f4134bcc26d8e1ad08e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797213"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574954"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Instrukcje: ignorowanie błędów w zadaniach
 Czasami, gdy kompilacja ma być odporna na błędy w niektórych zadaniach. Jeśli te zadania niekrytyczne zakończą się niepowodzeniem, chcesz, aby kompilacja kontynuowała działanie, ponieważ nadal może generować wymagane dane wyjściowe. Na przykład, jeśli projekt używa zadania `SendMail` do wysłania wiadomości e-mail po skompilowaniu każdego składnika, można rozważyć zaakceptowanie, że kompilacja będzie kontynuowała pracę, nawet jeśli serwery poczty są niedostępne i nie można wysłać komunikatów o stanie. Jeśli na przykład pliki pośrednie są zazwyczaj usuwane podczas kompilacji, można rozważyć zaakceptowanie, aby kompilacja kontynuowała wykonywanie nawet wtedy, gdy te pliki nie mogą zostać usunięte.
