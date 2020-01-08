@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747784"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596687"
 ---
 # <a name="replace-command"></a>Zastąp — Polecenie
 Zamienia tekst w plikach za pomocą podzestawu opcji dostępnych na karcie **Zamień na pliki w** oknie **Znajdź i Zamień** .
@@ -51,7 +51,7 @@ Opcjonalny. Dopasowań występuje tylko wtedy, gdy wielkie i małe litery dokła
 
 /doc lub/d
 
-Opcjonalny. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
+Opcjonalny. Przeszukuje tylko bieżący dokument. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open`lub `/sel`.
 
 /Hidden lub/h
 
@@ -59,7 +59,7 @@ Opcjonalny. Wyszukuje tekst ukryty i zwinięty, taki jak metadane kontrolki czas
 
 /Open lub/o
 
-Opcjonalny. Przeszukuje wszystkie otwarte dokumenty, tak jakby były one jednym dokumentem. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
+Opcjonalny. Przeszukuje wszystkie otwarte dokumenty, tak jakby były one jednym dokumentem. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open`lub `/sel`.
 
 /Options lub/t
 
@@ -67,7 +67,7 @@ Opcjonalny. Wyświetla listę bieżących ustawień opcji Znajdź i nie wykonuje
 
 /proc lub/p
 
-Opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
+Opcjonalny. Przeszukuje tylko bieżącą procedurę. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open`lub `/sel`.
 
 /Regex lub/r
 
@@ -79,7 +79,7 @@ Opcjonalny. Zwraca ustawienia domyślne opcji Znajdź i nie wykonuje wyszukiwani
 
 /SEL lub/s
 
-Opcjonalny. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open` lub `/sel`.
+Opcjonalny. Przeszukuje tylko bieżące zaznaczenie. Określ tylko jeden z dostępnych zakresów wyszukiwania, `/doc`, `/proc`, `/open`lub `/sel`.
 
 /up lub/u
 

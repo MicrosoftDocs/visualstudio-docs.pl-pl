@@ -11,21 +11,21 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666238"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596219"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
-Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla C#programu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**, a następnie wybierz**C#** pozycję **Edytor tekstu**  >   > **IntelliSense**.
+Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla C#programu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia** > **Opcje**, a następnie wybierz **C#** pozycję **Edytor tekstu** >  > **IntelliSense**.
 
 Strona Opcje **IntelliSense** zawiera następujące opcje:
 
@@ -33,7 +33,7 @@ Strona Opcje **IntelliSense** zawiera następujące opcje:
 
 - Pokaż listę uzupełniania po wpisaniu znaku *
 
-   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie IntelliSense jest nadal dostępne z menu **IntelliSense** lub naciskając klawisz **Ctrl** +**miejsce**.
+   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie IntelliSense jest nadal dostępne z menu **IntelliSense** lub naciskając klawisz **Ctrl**+**miejsce**.
 
 - Pokaż listę uzupełniania po usunięciu znaku
 
@@ -53,7 +53,7 @@ Strona Opcje **IntelliSense** zawiera następujące opcje:
 
 - Dołącz fragmenty kodu, gdy?-Tab jest wpisana po identyfikatorze
 
-   Po wybraniu tej opcji technologia IntelliSense dodaje aliasy C# dla fragmentów kodu do listy uzupełniania po naciśnięciu klawisza**Tab** **+ po** identyfikatorze
+   Po wybraniu tej opcji technologia IntelliSense dodaje aliasy C# dla fragmentów kodu do listy uzupełniania po naciśnięciu klawisza **Tab** **+po** identyfikatorze
 
 ## <a name="enter-key-behavior"></a>Zachowanie klawisza ENTER
 

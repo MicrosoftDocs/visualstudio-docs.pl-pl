@@ -5,26 +5,26 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416851"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593658"
 ---
 # <a name="msbuild-inline-tasks"></a>Zadania wbudowane programu MSBuild
-Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która <xref:Microsoft.Build.Framework.ITask> implementuje interfejs. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
+Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy implementującej interfejs <xref:Microsoft.Build.Framework.ITask>. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
  Począwszy od .NET Framework w wersji 4, można tworzyć zadania wbudowane w pliku projektu. Nie trzeba tworzyć oddzielnego zestawu, aby hostować zadanie. Ułatwia to śledzenie kodu źródłowego i ułatwia wdrażanie zadania. Kod źródłowy jest zintegrowany ze skryptem.
 
  W programie MSBuild 15,8 został dodany [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) , który może tworzyć .NET Standard zadania wbudowane na wiele platform.  Jeśli musisz używać wbudowanych zadań w programie .NET Core, musisz użyć RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Struktura zadania wbudowanego
- Zadanie śródwierszowe jest zawarte w elemencie [UsingTask](../msbuild/usingtask-element-msbuild.md) . Zadanie śródwierszowe i `UsingTask` element, który go zawiera, są zwykle zawarte w pliku *. targets* i importowane do innych plików projektu zgodnie z wymaganiami. Oto podstawowe zadanie wbudowane. Należy zauważyć, że nic nie robi.
+ Zadanie śródwierszowe jest zawarte w elemencie [UsingTask](../msbuild/usingtask-element-msbuild.md) . Zadanie śródwierszowe i element `UsingTask`, który go zawiera, są zwykle zawarte w pliku *. targets* i importowane do innych plików projektu zgodnie z wymaganiami. Oto podstawowe zadanie wbudowane. Należy zauważyć, że nic nie robi.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -44,51 +44,51 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która <
 </Project>
 ```
 
- `UsingTask` Element w przykładzie ma trzy atrybuty opisujące zadanie i wbudowaną fabrykę zadań, która kompiluje go.
+ Element `UsingTask` w przykładzie ma trzy atrybuty opisujące zadanie i wbudowaną fabrykę zadań, która kompiluje go.
 
-- Atrybut Nazwa zadania, w tym `DoNothing`przypadku. `TaskName`
+- `TaskName` atrybutu nazywa zadanie, w tym przypadku `DoNothing`.
 
-- `TaskFactory` Atrybut określa nazwę klasy, która implementuje wbudowaną fabrykę zadań.
+- Atrybut `TaskFactory` nazywa klasę implementującą wewnętrzną fabrykę zadań.
 
-- Ten `AssemblyFile` atrybut zawiera lokalizację wewnętrznej fabryki zadań. Alternatywnie można użyć `AssemblyName` atrybutu, aby określić w pełni kwalifikowaną nazwę wbudowanej klasy fabryki zadań, która zwykle znajduje się w globalnej pamięci podręcznej zestawów (GAC).
+- Atrybut `AssemblyFile` zawiera lokalizację wewnętrznej fabryki zadań. Alternatywnie, można użyć atrybutu `AssemblyName`, aby określić w pełni kwalifikowaną nazwę wbudowanej klasy fabryki zadań, która zwykle znajduje się w globalnej pamięci podręcznej zestawów (GAC).
 
-Pozostałe elementy `DoNothing` zadania są puste i są dostarczane w celu zilustrowania kolejności i struktury zadania wbudowanego. Bardziej niezawodny przykład został przedstawiony w dalszej części tego tematu.
+Pozostałe elementy zadania `DoNothing` są puste i są dostarczane w celu zilustrowania kolejności i struktury zadania wbudowanego. Bardziej niezawodny przykład został przedstawiony w dalszej części tego tematu.
 
-- `ParameterGroup` Element jest opcjonalny. Gdy jest określony, deklaruje parametry zadania. Aby uzyskać więcej informacji na temat parametrów wejściowych i wyjściowych, zobacz [Parametry wejściowe i wyjściowe](#input-and-output-parameters) w dalszej części tego tematu.
+- Element `ParameterGroup` jest opcjonalny. Gdy jest określony, deklaruje parametry zadania. Aby uzyskać więcej informacji na temat parametrów wejściowych i wyjściowych, zobacz [Parametry wejściowe i wyjściowe](#input-and-output-parameters) w dalszej części tego tematu.
 
-- `Task` Element opisuje i zawiera kod źródłowy zadania.
+- Element `Task` opisuje i zawiera kod źródłowy zadania.
 
-- `Reference` Element określa odwołania do zestawów .NET, które są używane w kodzie. Jest to równoznaczne z dodaniem odwołania do projektu w programie Visual Studio. Ten `Include` atrybut określa ścieżkę do przywoływanego zestawu.
+- Element `Reference` określa odwołania do zestawów .NET, które są używane w kodzie. Jest to równoznaczne z dodaniem odwołania do projektu w programie Visual Studio. Atrybut `Include` określa ścieżkę do przywoływanego zestawu.
 
-- `Using` Element zawiera listę przestrzeni nazw, do których chcesz uzyskać dostęp. Jest to podobne do `Using` instrukcji w wizualizacji. C# `Namespace` Atrybut określa przestrzeń nazw do uwzględnienia.
+- Element `Using` wyświetla listę przestrzeni nazw, do których chcesz uzyskać dostęp. Jest to podobne do instrukcji `Using` w wizualizacji C#. Atrybut `Namespace` określa przestrzeń nazw do uwzględnienia.
 
-`Reference`i `Using` są elementami języka niezależny od. Zadania wbudowane można napisać w jednym z obsługiwanych języków języka .NET CodeDom, na przykład Visual Basic lub wizualizacji C#.
+elementy `Reference` i `Using` to Language-niezależny od. Zadania wbudowane można napisać w jednym z obsługiwanych języków języka .NET CodeDom, na przykład Visual Basic lub wizualizacji C#.
 
 > [!NOTE]
-> Elementy zawarte `Task` w elemencie są specyficzne dla fabryki zadań, w tym przypadku fabryki zadań Code.
+> Elementy zawarte w elemencie `Task` są specyficzne dla fabryki zadań, w tym przypadku w fabryce zadań Code.
 
 ### <a name="code-element"></a>Element Code
- Ostatni element podrzędny, który ma być wyświetlany `Task` w elemencie, `Code` jest elementem. `Code` Element zawiera lub lokalizuje kod, który chcesz skompilować do zadania. Elementy, które umieszczasz `Code` w elemencie, zależą od tego, jak chcesz napisać zadanie.
+ Ostatni element podrzędny, który ma być wyświetlany w elemencie `Task`, to `Code` elementu. Element `Code` zawiera lub lokalizuje kod, który chcesz skompilować do zadania. Elementy `Code` są zależne od tego, jak chcesz napisać zadanie.
 
- Ten `Language` atrybut określa język, w którym napisano kod. Dopuszczalne wartości to `cs` `vb` dla C#Visual Basic.
+ Atrybut `Language` określa język, w którym napisano kod. Dopuszczalne wartości to `cs` dla C#`vb` Visual Basic.
 
- Ten `Type` atrybut określa typ kodu, który znajduje się `Code` w elemencie.
+ Atrybut `Type` określa typ kodu, który znajduje się w elemencie `Code`.
 
-- Jeśli wartość `Type` to `Class`, `Code` element zawiera<xref:Microsoft.Build.Framework.ITask> kod dla klasy, która dziedziczy z interfejsu.
+- Jeśli wartość `Type` jest `Class`, element `Code` zawiera kod dla klasy, która pochodzi od interfejsu <xref:Microsoft.Build.Framework.ITask>.
 
-- Jeśli wartość `Type` jest `Method`, wówczas kod `Execute` definiuje przesłonięcie metody <xref:Microsoft.Build.Framework.ITask> interfejsu.
+- Jeśli wartość `Type` jest `Method`, kod definiuje przesłonięcie metody `Execute` interfejsu <xref:Microsoft.Build.Framework.ITask>.
 
-- Jeśli wartość `Type` jest `Fragment`, wówczas kod `Execute` definiuje zawartość `return` metody, ale nie sygnaturę lub instrukcję.
+- Jeśli wartość `Type` jest `Fragment`, kod definiuje zawartość metody `Execute`, ale nie sygnaturę lub `return` instrukcji.
 
-Sam kod jest zwykle wyświetlany między `<![CDATA[` znacznikiem `]]>` a znacznikiem. Ponieważ kod znajduje się w sekcji CDATA, nie trzeba martwić się o znak ucieczki, na przykład "\<" lub ">".
+Sam kod jest zwykle wyświetlany między znacznikiem `<![CDATA[` i znacznikiem `]]>`. Ponieważ kod znajduje się w sekcji CDATA, nie trzeba martwić się o znak ucieczki, na przykład "\<" lub ">".
 
-Alternatywnie, można użyć `Source` atrybutu `Code` elementu, aby określić lokalizację pliku, który zawiera kod zadania. Kod w pliku źródłowym musi być typu, który jest określony przez `Type` atrybut. Jeśli atrybut jest obecny, `Type` wartość domyślna to `Class`. `Source` Jeśli `Source` nie istnieje, wartość domyślna to `Fragment`.
+Alternatywnie, można użyć atrybutu `Source` elementu `Code`, aby określić lokalizację pliku zawierającego kod zadania. Kod w pliku źródłowym musi być typu, który jest określony przez atrybut `Type`. Jeśli atrybut `Source` jest obecny, wartość domyślna `Type` jest `Class`. Jeśli `Source` nie istnieje, wartość domyślna to `Fragment`.
 
 > [!NOTE]
-> Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy musi zgadzać się z `TaskName` atrybutem odpowiadającego elementu [UsingTask](../msbuild/usingtask-element-msbuild.md) .
+> Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy musi zgadzać się z atrybutem `TaskName` odpowiadającego elementu [UsingTask](../msbuild/usingtask-element-msbuild.md) .
 
 ## <a name="helloworld"></a>HelloWorld
- Oto bardziej niezawodne zadanie wbudowane. Zadanie HelloWorld wyświetla "Hello, World!" na domyślnym urządzeniu rejestrowania błędów, które jest zazwyczaj konsolą systemową lub oknem **danych wyjściowych** programu Visual Studio. `Reference` Element w przykładzie jest dołączony tylko do ilustracji.
+ Oto bardziej niezawodne zadanie wbudowane. Zadanie HelloWorld wyświetla "Hello, World!" na domyślnym urządzeniu rejestrowania błędów, które jest zazwyczaj konsolą systemową lub oknem **danych wyjściowych** programu Visual Studio. Element `Reference` w przykładzie jest uwzględniany tylko w przypadku ilustracji.
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -125,7 +125,7 @@ Log.LogError("Hello, world!");
 ```
 
 ## <a name="input-and-output-parameters"></a>Parametry wejściowe i wyjściowe
- Wbudowane parametry zadań są elementami `ParameterGroup` podrzędnymi elementu. Każdy parametr przyjmuje nazwę elementu, który go definiuje. Poniższy kod definiuje parametr `Text`.
+ Wbudowane parametry zadania są elementami podrzędnymi elementu `ParameterGroup`. Każdy parametr przyjmuje nazwę elementu, który go definiuje. Poniższy kod definiuje `Text`parametru.
 
 ```xml
 <ParameterGroup>
@@ -135,11 +135,11 @@ Log.LogError("Hello, world!");
 
  Parametry mogą mieć jeden lub więcej z następujących atrybutów:
 
-- `Required`jest opcjonalnym atrybutem, `false` który jest domyślnie. Jeśli `true`parametr jest wymagany i musi mieć określoną wartość przed wywołaniem zadania.
+- `Required` jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true`, to parametr jest wymagany i musi mieć określoną wartość przed wywołaniem zadania.
 
-- `ParameterType`jest opcjonalnym atrybutem, `System.String` który jest domyślnie. Może być ustawiony na dowolny w pełni kwalifikowany typ, który jest elementem lub wartością, którą można przekonwertować na i z ciągu przy użyciu System. Convert. ChangeType. (Innymi słowy każdy typ, który może być przekazywać do i z zewnętrznego zadania).
+- `ParameterType` jest opcjonalnym atrybutem, który jest `System.String` domyślnie. Może być ustawiony na dowolny w pełni kwalifikowany typ, który jest elementem lub wartością, którą można przekonwertować na i z ciągu przy użyciu System. Convert. ChangeType. (Innymi słowy każdy typ, który może być przekazywać do i z zewnętrznego zadania).
 
-- `Output`jest opcjonalnym atrybutem, `false` który jest domyślnie. Jeśli `true`, wówczas parametr musi mieć wartość przed powrotem z metody Execute.
+- `Output` jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true`, wówczas parametr musi mieć wartość przed powrotem z metody Execute.
 
 Na przykład
 
@@ -153,13 +153,13 @@ Na przykład
 
 definiuje te trzy parametry:
 
-- `Expression`jest wymaganym parametrem wejściowym typu System. String.
+- `Expression` jest wymaganym parametrem wejściowym typu System. String.
 
-- `Files`jest parametrem wejściowym listy wymaganych elementów.
+- `Files` jest parametrem wejściowym listy wymaganych elementów.
 
-- `Tally`jest parametrem wyjściowym typu System. Int32.
+- `Tally` jest parametrem wyjściowym typu System. Int32.
 
-`Code` Jeśli element `Type` ma atrybut `Fragment` lub ,wówczaswłaściwościsątworzoneautomatyczniedlakażdegoparametru.`Method` W przeciwnym razie właściwości muszą być jawnie zadeklarowane w kodzie źródłowym zadania i muszą dokładnie pasować do ich definicji parametrów.
+Jeśli element `Code` ma atrybut `Type` `Fragment` lub `Method`, wówczas właściwości są tworzone automatycznie dla każdego parametru. W przeciwnym razie właściwości muszą być jawnie zadeklarowane w kodzie źródłowym zadania i muszą dokładnie pasować do ich definicji parametrów.
 
 ## <a name="example"></a>Przykład
  Następujące zadanie wbudowane zastępuje każde wystąpienie tokenu w danym pliku podaną wartością.

@@ -2,17 +2,17 @@
 title: Rozszerzanie DSL za pomocą MEF
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657512"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596609"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozszerzanie DSL za pomocą MEF
 
@@ -129,21 +129,21 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    - Ten zestaw ma zwykle nazwę kończącą się ciągiem ". DSL. dll ".
 
-   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w katalogu **\\bin DSL \\ \***
+   - Jeśli masz dostęp do projektu DSL, możesz znaleźć plik zestawu w katalogu **\\bin dsl\\\***
 
    - Jeśli masz dostęp do pliku VSIX DSL, możesz znaleźć zestaw, zmieniając rozszerzenie nazwy pliku VSIX na ". zip". Dekompresowanie pliku zip.
 
 3. Dodaj odwołania do następujących zestawów .NET:
 
-   - Microsoft. VisualStudio. Modeling. Sdk. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Shell. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
-   - System. Windows. Forms. dll
+   - System.Windows.Forms.dll
 
 4. Utwórz nowy projekt **projektu VSIX** .
 
@@ -157,7 +157,7 @@ Jeśli masz dostęp do MEF DSL utworzonego przez siebie lub inną osobę, możes
 
    1. W polu **source. Extension. vsixmanifest**kliknij pozycję **Dodaj odwołanie** .
 
-   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL, w **DslPackage \\bin \\ \*** .
+   2. W oknie dialogowym kliknij pozycję **Dodaj ładunek** , a następnie Znajdź plik VSIX DSL. Plik VSIX jest skompilowany w rozwiązaniu DSL, w **DslPackage\\bin\\\*** .
 
        Dzięki temu użytkownicy mogą instalować jednocześnie DSL i Twoje rozszerzenie. Jeśli użytkownik zainstalował już modem DSL, zostanie zainstalowane tylko rozszerzenie.
 
@@ -175,7 +175,7 @@ Można pisać rozszerzenia w projekcie kodu zestawu oddzielnego rozwiązania do 
 
 ### <a name="menu-commands"></a>Polecenia menu
 
-Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl* `CommandExtension`. Można napisać więcej niż jedną klasę poleceń menu.
+Aby napisać polecenie menu, zdefiniuj klasę implementującą <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> i prefiks klasy z atrybutem, który jest zdefiniowany w DSL o nazwie *YourDsl*`CommandExtension`. Można napisać więcej niż jedną klasę poleceń menu.
 
 `QueryStatus()` jest wywoływana za każdym razem, gdy użytkownik kliknie prawym przyciskiem myszy diagram. Powinien on sprawdzić bieżące zaznaczenie i ustawić `command.Enabled`, aby wskazać, kiedy polecenie ma zastosowanie.
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 6548b86f075e5da51bea7835c93e5604f2177397
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576281"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588775"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Krok 2. Dodawanie losowego obiektu i listy ikon
 
@@ -36,13 +36,13 @@ W tym kroku utworzysz zestaw pasujących symboli dla gry. Każdy symbol jest dod
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
       > [!IMPORTANT]
-      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka ![Programming dla Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka programowania ![dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
       Jeśli używasz programu C#, upewnij się, że kod został umieszczony po otwierającym nawiasie klamrowym i tuż po deklaracji klasy (`public partial class Form1 : Form`). Jeśli używasz Visual Basic, umieść kod bezpośrednio po deklaracji klasy (`Public Class Form1`).
 
 3. Podczas dodawania obiektu list należy zauważyć, że zostanie otwarte okno **IntelliSense** . Poniżej znajduje się C# przykład, ale podobny tekst pojawia się po dodaniu listy w Visual Basic.
 
-     okno ![Properties pokazujące zdarzenie kliknięcia ](../ide/media/express_listintellisense.png)<br/>*Okno **IntelliSense***
+     ![okno Właściwości wyświetlania zdarzenia kliknięcia](../ide/media/express_listintellisense.png)<br/>*Okno **IntelliSense***
 
     > [!NOTE]
     > Okno IntelliSense pojawia się tylko wtedy, gdy ręcznie wprowadzasz kod. Nie pojawia się, jeśli kopiujesz i wklejasz kod.

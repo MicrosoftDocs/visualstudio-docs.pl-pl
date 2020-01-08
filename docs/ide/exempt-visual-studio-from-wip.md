@@ -2,17 +2,17 @@
 title: Wykluczony z Information Protection systemu Windows
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab08ea1f3a4c66c026de781f2d39a0bc9d08af96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b4eb454f641b5bef7273464d605fb194f650790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650867"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588567"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurowanie programu Visual Studio jako aplikacji z wykluczeniem PWT
 
@@ -32,7 +32,7 @@ Ponieważ program Visual Studio zawiera wiele plików binarnych, [Utwórz plik z
 
 ## <a name="add-appcompat-to-the-enterprise-cloud-resource-policy"></a>Dodawanie AppCompat do zasad zasobów w chmurze przedsiębiorstwa
 
-Aby określić, gdzie program Visual Studio może uzyskać dostęp do danych przedsiębiorstwa w sieci, wykonaj następujące [kroki, aby określić, gdzie chronione aplikacje mogą znajdować i wysyłać dane przedsiębiorstwa](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Aby uniemożliwić systemowi Windows blokowanie połączeń z zasobami w chmurze za pomocą adresu IP, pamiętaj, aby dodać do ustawienia/\*AppCompat \*/ciąg.
+Aby określić, gdzie program Visual Studio może uzyskać dostęp do danych przedsiębiorstwa w sieci, wykonaj następujące [kroki, aby określić, gdzie chronione aplikacje mogą znajdować i wysyłać dane przedsiębiorstwa](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#choose-where-apps-can-access-enterprise-data). Aby uniemożliwić systemowi Windows blokowanie połączeń z zasobami w chmurze za pomocą adresu IP, pamiętaj, aby dodać do ustawienia/\*AppCompat\*/ciąg.
 
 ## <a name="see-also"></a>Zobacz także
 

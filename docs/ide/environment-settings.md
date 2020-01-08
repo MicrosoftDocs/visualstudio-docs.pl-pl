@@ -2,17 +2,17 @@
 title: Ustawienia środowiska
 ms.date: 11/21/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb535a301ec7e6045a44b910cecc21f2306b94bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650882"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588580"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
@@ -22,17 +22,17 @@ Dostępne są następujące kolekcje ustawień:
 
 - Ogólne
 - JavaScript
-- Visual Basic
+- Język Visual Basic
 - Visual C#
 - Visual C++
-- Programowanie dla sieci Web
+- Opracowywanie rozwiązań internetowych
 - Programowanie dla sieci Web (tylko kod)
 
 ## <a name="reset-settings"></a>Resetuj ustawienia
 
 Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po raz pierwszy, wykonaj następujące kroki:
 
-1. Wybierz pozycję **narzędzia**  > **Importuj i Eksportuj ustawienia** z paska menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
+1. Wybierz pozycję **narzędzia** > **Importuj i Eksportuj ustawienia** z paska menu, aby otworzyć **Kreatora importowania i eksportowania ustawień**.
 
 1. W **Kreatorze importowania i eksportowania ustawień**wybierz opcję **Zresetuj wszystkie ustawienia**, a następnie wybierz przycisk **dalej**.
 

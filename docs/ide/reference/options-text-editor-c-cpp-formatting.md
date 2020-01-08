@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Text Editor Options dialog box, formatting
 - ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596258"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opcje, edytor tekstu, C/C++, formatowanie
 
@@ -44,7 +44,7 @@ Ta strona zawiera opcje formatowania instrukcji i bloków podczas wpisywania.
 
 ::: moniker-end
 
-Na stronie znajdują się również opcje konfigurowania obsługi [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) w wersji 5,0. ClangFormat to narzędzie ułatwiające Stylowanie i formatowanie kodu na podstawie zestawu reguł, które można skonfigurować w formacie. Clang lub _clang.
+Na stronie znajdują się również opcje konfigurowania obsługi [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) w wersji 5,0. ClangFormat to narzędzie ułatwiające Stylowanie i formatowanie kodu na podstawie zestawu reguł, które można skonfigurować w formacie. Clang lub _clang pliku.
 
 ### <a name="configuring-clangformat-options"></a>Konfigurowanie opcji ClangFormat
 
@@ -54,7 +54,7 @@ Na stronie znajdują się również opcje konfigurowania obsługi [ClangFormat](
 
 ::: moniker-end
 
-Obsługa ClangFormat jest domyślnie włączona. Możesz wybrać, które z tych typowych Konwencji formatowania mają być stosowane do wszystkich projektów: LLVM, Google, chrom, Mozilla lub WebKit. Możesz również utworzyć niestandardową definicję formatu plik Clang-format lub _clang. Jeśli taki plik znajduje się w folderze projektu, program Visual Studio używa go do formatowania wszystkich plików kodu źródłowego w tym folderze i jego podfolderach.
+Obsługa ClangFormat jest domyślnie włączona. Możesz wybrać, które z tych typowych Konwencji formatowania mają być stosowane do wszystkich projektów: LLVM, Google, chrom, Mozilla lub WebKit. Można również utworzyć niestandardową definicję formatu. Clang-format pliku lub plik _clang. Jeśli taki plik znajduje się w folderze projektu, program Visual Studio używa go do formatowania wszystkich plików kodu źródłowego w tym folderze i jego podfolderach.
 
 Domyślnie program Visual Studio uruchamia clangformat. exe w tle stosuje formatowanie podczas pisania. Można również określić, aby uruchomić ją tylko dla ręcznie wywoływanych poleceń formatowania **dokumentu (Ctrl + k, CTRL + D)** lub **formatowania (Ctrl + k, Ctrl + F)** .
 

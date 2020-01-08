@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668701"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595023"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (wartość logiczna)|Zapisuje dokumenty jako Unicode, gdy nie można zapisać danych na stronie kodowej.|
 |DontShowGlobalUndoChangeLossDialog|Get/Set (wartość logiczna)|Wyświetla ostrzeżenie, gdy globalne cofnięcie zmodyfikuje inne edytowane pliki.|
 |AllowEditingReadOnlyFiles|Get/Set (wartość logiczna)|Umożliwia edytowanie plików tylko do odczytu, ale w przypadku próby ich zapisania należy podać ostrzeżenie.|
-|DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>., Umieść na karcie, w której ma zostać wstawiony otwarty dokument.|
+|DocumentDockPreference|Get/Set (Wyliczenie)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Umieść na karcie, w której ma zostać wstawiony otwarty dokument.|
 
 ## <a name="extension-manager"></a>Menedżer rozszerzeń
  `DTE.Properties("Environment", "ExtensionManager")`
@@ -130,12 +130,12 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |DefaultBehaviorForStartupProjects|Get/set (ciąg)||
 |MSBuildOutputVerbosity|Get/set (ciąg)|Określa poziom szczegółowości danych wyjściowych kompilacji.|
 
-## <a name="startup"></a>Folderze
+## <a name="startup"></a>Uruchamianie
  `DTE.Properties("Environment", "Startup")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
 |------------------------|-----------|-----------------|
-|OnStart|Get/Set (Wyliczenie)|Akcja do podjęcia przy uruchamianiu, z <xref:EnvDTE.vsStartUp>, z wartościami 0 – 5:<br /><br /> -0: Otwórz stronę główną<br />-1: Załaduj ostatnio załadowane rozwiązanie<br />-2: Pokaż okno dialogowe **Otwieranie projektu**<br />-3: Pokaż **Nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: Pokaż stronę początkową|
+|OnStartUp|Get/Set (Wyliczenie)|Akcja do podjęcia przy uruchamianiu, z <xref:EnvDTE.vsStartUp>, z wartościami 0 – 5:<br /><br /> -0: Otwórz stronę główną<br />-1: Załaduj ostatnio załadowane rozwiązanie<br />-2: Pokaż okno dialogowe **Otwieranie projektu**<br />-3: Pokaż **Nowy projekt** okno dialogowe<br />-4: Pokaż puste środowisko<br />-5: Pokaż stronę początkową|
 |StartPageRSSUrl|Get/set (ciąg)|Adres URL źródła danych RSS, które jest używane podczas uruchamiania.|
 |StartPageRefreshDownloadedContent|Get/Set (wartość logiczna)|Odświeża stronę początkową po każdym przejściu interwału określonego w StartPageRefreshInterval.|
 |StartPageRefreshInterval|Pobierz/ustaw (krótki)|Interwał odświeżania strony początkowej (w minutach).|
@@ -150,7 +150,7 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |DontShowFilePaths|Get/Set (wartość logiczna)|Określa, czy mają być pokazywane pełne ścieżki plików w Lista zadań.|
 |CommentTokens|SafeArray|Zwraca element SafeArray wartości tokenów komentarzy. Każdy z nich zawiera pola, `Name` (ciąg) i `Priority` (<xref:EnvDTE.vsTaskPriority>, wysoki, średni lub niski).|
 
-## <a name="web-browser"></a>Przeglądarka sieci Web
+## <a name="web-browser"></a>Przeglądarki sieci Web
  `DTE.Properties("Environment", "WebBrowser")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
@@ -161,4 +161,9 @@ W tym dokumencie opisano strony (lub kolekcje właściwości), które są skojar
 |ViewSourceExternalProgram|Get/set (ciąg)|Ścieżka zewnętrznej przeglądarki źródła.|
 
 ## <a name="see-also"></a>Zobacz też
- [Kontrolowanie ustawień opcji](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [określających nazwy elementów właściwości na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) stronie Opcje strony opcji [, czcionki i kolory](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Strona Opcje właściwości węzła Edytor tekstu,](../../ide/reference/options-page-text-editor-node-properties.md) okno [dialogowe Opcje środowiska](../../ide/reference/environment-options-dialog-box.md)
+
+- [Ustawienia opcji sterowania](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Określanie nazw elementów właściwości na stronach opcji](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Strona opcji, czcionki i kolory — Właściwości węzła](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [Strona opcji, edytor tekstu — Właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)

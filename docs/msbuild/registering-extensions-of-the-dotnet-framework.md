@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie rozszerzeń środowiska .NET Framework | Dokumentacja firmy Microsoft
+title: Rejestrowanie rozszerzeń .NET Framework | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - MSBuild, registering extensions of the .NET Framework
 - .NET Framework extensions, registering
 ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1957bae45504e5654b3ed63c9fa0821a7f4c8758
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445809"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596765"
 ---
-# <a name="register-extensions-of-the-net-framework"></a>Rejestrowanie rozszerzeń środowiska .NET Framework
-Można opracować zestaw, który rozszerza określonej wersji programu .NET Framework. Aby włączyć zestawu są wyświetlane w programie Visual Studio **Add References** okno dialogowe, należy dodać folder, który zawiera go do rejestru systemowego.
+# <a name="register-extensions-of-the-net-framework"></a>Rejestrowanie rozszerzeń .NET Framework
+Można opracować zestaw, który rozszerza określoną wersję .NET Framework. Aby włączyć zestaw, aby pojawił się w oknie dialogowym **Dodaj odwołania** programu Visual Studio, należy dodać folder zawierający go do rejestru systemowego.
 
- Na przykład załóżmy, że firma Trey Research przygotowała bibliotekę, która rozszerza programu .NET Framework 4 i chce zestawy bibliotek, które pojawią się w **Add References** okno dialogowe, jeśli projekt jest przeznaczony dla .NET Framework 4. Również założono, że zestawów 32-bitowych uruchomiony na komputerze 32-bitowy lub 64-bitowych zestawów uruchomionego na komputerze 64-bitowe są zestawy i że zostaną zainstalowane w *C:\TreyResearch\Extensions4\\*  folderu.
+ Załóżmy na przykład, że firma Trey Research opracowała bibliotekę, która rozszerza .NET Framework 4 i chce, aby zestawy bibliotek były wyświetlane w oknie dialogowym **Dodaj odwołania** , gdy projekt jest przeznaczony dla .NET Framework 4. Załóżmy również, że zestawy są 32-bitowe zestawy działające na komputerze 32-bitowym lub 64-bitowe zestawy uruchomione na komputerze 64-bitowym, a następnie zostaną zainstalowane w folderze *C:\TreyResearch\Extensions4\\* .
 
- Przy użyciu tego klucza, należy zarejestrować tego folderu: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**. Należy podać klucz to wartość domyślna: **C:\TreyResearch\Extensions4**.
+ Zarejestruj ten folder przy użyciu tego klucza: **HKEY_LOCAL_MACHINE \software\microsoft\\. NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\** . Nadaj kluczowi tę wartość domyślną: **C:\TreyResearch\Extensions4**.
 
 > [!NOTE]
-> Numer kompilacji programu .NET Framework w wersji może się różnić.
+> Numer kompilacji .NET Framework może być różny.
 
- Aby zarejestrować zestaw 32-bitowego na komputerze 64-bitowym, za pomocą węzła Wow6432, na przykład: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.
+ Aby zarejestrować zestaw 32-bitowy na komputerze 64-bitowym, Użyj węzła Wow6432, na przykład: **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\\. NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\** .
 
 ### <a name="see-also"></a>Zobacz także
 - [Integracja z programem Visual Studio](../msbuild/visual-studio-integration-msbuild.md)

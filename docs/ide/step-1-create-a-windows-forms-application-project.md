@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516696"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588788"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
@@ -23,24 +23,24 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
 ::: moniker range="vs-2017"
 
-## <a name="open-visual-studio-2017"></a>Otwórz program Visual Studio 2017
+## <a name="open-visual-studio-2017"></a>Open Visual Studio 2017
 
-1. Na pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
-     ![New okna dialogowego projektu ](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt*** — okno *dialogowe*
+     okno dialogowe ![nowego projektu](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt*** — okno *dialogowe*
 
 2. Po lewej stronie okna dialogowego **Nowy projekt** wybierz pozycję **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz pozycję **Windows Desktop**.
 
 3. Na liście szablony projektu wybierz pozycję **aplikacja Windows Forms (.NET Framework)** . Nazwij nowy formularz *PictureViewer*, a następnie wybierz przycisk **OK** .
 
     >[!NOTE]
-    >Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![ obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio ](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
+    >Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-## <a name="open-visual-studio-2019"></a>Otwórz program Visual Studio 2019
+## <a name="open-visual-studio-2019"></a>Open Visual Studio 2019
 
 1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
@@ -59,7 +59,7 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
    >
    > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
    >
-   > ![Obciążenie .NET Core w Instalator programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
    > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
 
@@ -73,9 +73,9 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
 
 1. Środowisko deweloperskie zawiera trzy okna: okno główne, **Eksplorator rozwiązań**i okno **Właściwości** .
 
-     Jeśli brakuje któregoś z tych okienek, możesz przywrócić domyślny układ okna. Na pasku menu wybierz **okno**  > **Resetowanie układu okna**.
+     Jeśli brakuje któregoś z tych okienek, możesz przywrócić domyślny układ okna. Na pasku menu wybierz **okno** > **Resetowanie układu okna**.
 
-     Możesz również wyświetlić okna przy użyciu poleceń menu. Na pasku menu wybierz polecenie **wyświetl**  > **okno właściwości** lub **Eksplorator rozwiązań**.
+     Możesz również wyświetlić okna przy użyciu poleceń menu. Na pasku menu wybierz polecenie **wyświetl** > **okno właściwości** lub **Eksplorator rozwiązań**.
 
      Jeśli jakiekolwiek inne okna są otwarte, zamknij je, wybierając przycisk **Zamknij** (x) w prawym górnym rogu.
 
@@ -100,11 +100,11 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
       > [!NOTE]
       > W górnym wierszu **Eksplorator rozwiązań** przedstawiono **rozwiązanie "PictureViewer" (1 projekt)** , co oznacza, że program Visual Studio utworzył rozwiązanie. Rozwiązanie może zawierać więcej niż jeden projekt, ale teraz będzie można korzystać z rozwiązań, które zawierają tylko jeden projekt.
 
-1. Na pasku menu wybierz kolejno opcje **plik**  > **Zapisz wszystko**.
+1. Na pasku menu wybierz kolejno opcje **plik** > **Zapisz wszystko**.
 
      Alternatywnie wybierz na pasku narzędzi przycisk **Zapisz wszystko** , który zostanie wyświetlony na poniższym obrazie.
 
-     ![Save wszystkie przyciski paska narzędzi ](../ide/media/express_iconsaveall.png)<br/>
+     przycisk ![Zapisz cały pasek narzędzi](../ide/media/express_iconsaveall.png)<br/>
      Przycisk ***Zapisz wszystkie*** *paski narzędzi*
 
      Program Visual Studio automatycznie wypełnia nazwę folderu i nazwę projektu, a następnie zapisuje projekt w folderze projektów.

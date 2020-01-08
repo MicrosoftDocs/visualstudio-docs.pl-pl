@@ -18,21 +18,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416425"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596531"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Twórz i czyść projekty i rozwiązania w programie Visual Studio
 
-Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby zapoznać się z samouczkiem krok po kroku, [zobacz Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).
+Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby zapoznać się z samouczkiem krok po kroku, zobacz [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Tworzenie i czyszczenie projektów oraz rozwiązań w programie Visual Studio dla komputerów Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -71,21 +71,21 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
 
 2. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzła, a następnie wybierz **kompilowanie i uruchamianie** strony.
 
-     Zostanie otwarte okno dialogowe**Opcje** **kompilowania i uruchamiania** > **projektów i rozwiązań** > .
+     Zostanie otwarte okno dialogowe **Opcje** **tworzenia i uruchamiania** > **projekty i rozwiązania** > .
 
 3. Wybierz **tylko tworzyć projekty startowe i zależności przy uruchomieniu** pole wyboru.
 
      Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednej z następujących czynności:
 
-    - Na pasku menu wybierz **Debuguj** > **Start** (**F5**).
+    - Na pasku menu wybierz **debuguj** > **Start** (**F5**).
 
-    - Na pasku menu wybierz kolejno opcje **Kompiluj** > kompilacje**rozwiązanie** (**Ctrl**+**SHIFT**+**B**).
+    - Na pasku menu wybierz kolejno opcje **kompiluj** > **Kompiluj rozwiązanie** (**Ctrl**+**SHIFT**+**B**).
 
     Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązania są tworzone po uruchomieniu dowolnego z powyższych poleceń. Domyślnie to pole wyboru jest wyczyszczone.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Można tworzyć tylko dla wybranego projektu Visual C++
 
-Wybierz projekt, a następnie na pasku menu wybierz kolejno opcje **Kompiluj** > projekt i jedno z następujących poleceń: [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]
+Wybierz projekt [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], a następnie na pasku menu wybierz kolejno opcje **kompiluj** > **Project**i jedno z następujących poleceń:
 
 - **Tylko kompilacja** *ProjectName*
 
@@ -107,17 +107,17 @@ Jeśli pliki mają zależności, pliki zostanie skompilowany w kolejności wg za
 
 Wykonaj jedną z następujących czynności:
 
-- Na pasku menu wybierz opcję **Kompiluj** > **Anuluj**.
+- Na pasku menu wybierz pozycję **kompilacja** > **Anuluj**.
 
 - Naciśnij klawisz **Ctrl**+**Break**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Kompilowanie i kompilowanie](../ide/compiling-and-building-in-visual-studio.md)
 - [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
-- [Instrukcje: Ustawianie konfiguracji debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Instrukcje: ustawienia konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Dokumentacja CC++ /Building](/cpp/build/reference/c-cpp-building-reference)
 - [Przełączniki wiersza polecenia devenv](../ide/reference/devenv-command-line-switches.md)
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)

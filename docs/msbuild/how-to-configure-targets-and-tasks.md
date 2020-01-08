@@ -1,34 +1,34 @@
 ---
-title: 'Instrukcje: Konfigurowanie obiektów docelowych i zadań | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Konfigurowanie obiektów docelowych i zadań | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946667"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596349"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Instrukcje: Konfigurowanie obiektów docelowych i zadań
-Można ustawić wybranych zadań programu MSBuild do uruchamiania w środowisku, docelowych, niezależnie od środowiska na komputerze deweloperskim. Na przykład gdy używasz 64-bitowy komputer do tworzenia aplikacji w danej architekturze celów 32-bitowa wybranych zadań są uruchamiane w procesie 32-bitowym.
+Wybrane zadania programu MSBuild można ustawić tak, aby były uruchamiane w środowisku, w którym są docelowe, niezależnie od środowiska komputera deweloperskiego. Na przykład w przypadku używania komputera 64-bitowego do kompilowania aplikacji, która jest przeznaczona dla architektury 32-bitowej, wybrane zadania są uruchamiane w procesie 32-bitowym.
 
 > [!NOTE]
-> Jeśli zadanie kompilacji są zapisywane w języku .NET, takich jak Visual C# lub Visual Basic, a nie korzysta z zasobów natywnych ani narzędzia, a następnie uruchomi się w dowolnym kontekście docelowej bez dostosowania.
+> Jeśli zadanie kompilacji jest zapisywana w języku .NET, takim jak Visual C# lub Visual Basic, i nie używa natywnych zasobów lub narzędzi, zostanie uruchomione w dowolnym kontekście docelowym bez dostosowania.
 
-## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask atrybuty i parametry zadania
-Następujące `UsingTask` atrybuty mają wpływ na wszystkie operacje zadań w procesie konkretnej kompilacji:
+## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask atrybutów i parametrów zadań
+Następujące atrybuty `UsingTask` wpływają na wszystkie operacje zadania w konkretnym procesie kompilacji:
 
-- `Runtime` Atrybutu, jeśli jest obecny, ustawia typowe wersję środowiska uruchomieniowego języka (wspólnego CLR) i można wykonać dowolną z następujących wartości: `CLR2`, `CLR4`, `CurrentRuntime`, lub `*` (wszystkie środowiska wykonawczego).
+- Atrybut `Runtime`, jeśli jest obecny, ustawia wersję środowiska uruchomieniowego języka wspólnego (CLR) i może przyjmować jedną z następujących wartości: `CLR2`, `CLR4`, `CurrentRuntime`lub `*` (dowolne środowisko uruchomieniowe).
 
-- `Architecture` Atrybutu, jeśli jest obecny, ustawia platformy i liczbę bitów i może mieć jedną z następujących wartości: `x86`, `x64`, `CurrentArchitecture`, lub `*` (dowolnej architekturze).
+- Atrybut `Architecture`, jeśli jest obecny, ustawia platformę i bitową i może przyjmować jedną z następujących wartości: `x86`, `x64`, `CurrentArchitecture`lub `*` (dowolna architektura).
 
-- `TaskFactory` Atrybut, jeśli jest obecny, ustawia fabryki zadań, które tworzy i uruchamia wystąpienie zadania i przyjmuje tylko wartość `TaskHostFactory`. Aby uzyskać więcej informacji, zobacz [fabryki zadań](#task-factories) w dalszej części tego dokumentu.
+- Atrybut `TaskFactory`, jeśli jest obecny, ustawia fabrykę zadań, która tworzy i uruchamia wystąpienie zadania i pobiera tylko wartość `TaskHostFactory`. Aby uzyskać więcej informacji, zobacz [fabryki zadań](#task-factories) w dalszej części tego dokumentu.
 
 ```xml
 <UsingTask TaskName="SimpleTask"
@@ -37,7 +37,7 @@ Następujące `UsingTask` atrybuty mają wpływ na wszystkie operacje zadań w p
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v3.5.dll" />
 ```
 
-Można również użyć `MSBuildRuntime` i `MSBuildArchitecture` parametry, aby ustawić kontekst docelowy pojedynczego zadania.
+Można również użyć parametrów `MSBuildRuntime` i `MSBuildArchitecture`, aby ustawić kontekst docelowy pojedynczego zadania.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -47,12 +47,12 @@ Można również użyć `MSBuildRuntime` i `MSBuildArchitecture` parametry, aby 
 </Project>
 ```
 
-Zanim program MSBuild uruchamia zadanie, szuka pasujący obiekt typu `UsingTask` ma ten sam kontekst docelowego. Parametry, które są określone w `UsingTask` , ale w odpowiedniego zadania nie są traktowane jako do dopasowania. Parametry, które są określone w zadaniu, ale nie znajduje się w odpowiednich `UsingTask` również pełnią funkcję do dopasowania. Jeśli nie określono wartości parametrów albo `UsingTask` lub zadania, wartości domyślne, aby `*` (żadnych parametrów).
+Przed uruchomieniem zadania przez program MSBuild szuka pasującego `UsingTask`, które ma ten sam kontekst docelowy. Parametry, które są określone w `UsingTask` ale nie w odpowiadającym mu zadaniu, są uważane za dopasowane. Parametry określone w zadaniu, ale nie w odpowiadającym mu `UsingTask` są również uznawane za dopasowane. Jeśli wartości parametrów nie są określone w `UsingTask` lub zadaniu, wartości domyślne to `*` (dowolny parametr).
 
 > [!WARNING]
-> Jeśli istnieje więcej niż jedna `UsingTask` istnieje i wszystkie dopasowania `TaskName`, `Runtime`, i `Architecture` atrybutów, ostatni z nich ma zostać obliczone zastępuje inne.
+> Jeśli istnieje więcej niż jeden `UsingTask` i wszystkie mają zgodne atrybuty `TaskName`, `Runtime`i `Architecture`, ostatni z nich do obliczenia zastępuje pozostałe.
 
- Jeśli parametry są skonfigurowane na zadanie, program MSBuild próbuje znaleźć `UsingTask` , który pasuje do tych parametrów lub, co najmniej jest nie konflikcie z nich. Więcej niż jeden `UsingTask` można określić kontekstu docelowych tego samego zadania. Na przykład zadanie, które ma różne pliki wykonywalne w środowiskach inny element docelowy może wyglądać to:
+ Jeśli w zadaniu określono parametry, MSBuild próbuje znaleźć `UsingTask` pasujące do tych parametrów lub, co najmniej, nie jest w konflikcie z nimi. Więcej niż jeden `UsingTask` może określać kontekst docelowy tego samego zadania. Na przykład zadanie, które ma inne pliki wykonywalne dla różnych środowisk docelowych może wyglądać następująco:
 
 ```xml
 <UsingTask TaskName="MyTool"
@@ -74,7 +74,7 @@ Zanim program MSBuild uruchamia zadanie, szuka pasujący obiekt typu `UsingTask`
 ```
 
 ## <a name="task-factories"></a>Fabryki zadań
-Przed uruchomieniem zadania, program MSBuild sprawdza, czy jest wyznaczone do uruchamiania w bieżącym kontekście oprogramowania. Jeśli wyznaczona zadanie MSBuild przekazuje go do AssemblyTaskFactory, który uruchamia go w bieżącym procesie; w przeciwnym razie program MSBuild przekazuje TaskHostFactory, który uruchamia zadanie w procesie, który pasuje do kontekstu docelowego zadania. Nawet wtedy, gdy bieżący kontekst i kontekst docelowej są zgodne, możesz wymusić uruchomienie zadania poza procesem (w przypadku izolacji, zabezpieczeń lub innych powodów), ustawiając `TaskFactory` do `TaskHostFactory`.
+Przed uruchomieniem zadania program MSBuild sprawdza, czy jest on przeznaczony do uruchomienia w bieżącym kontekście oprogramowania. Jeśli zadanie jest oznaczone, MSBuild przekazuje go do AssemblyTaskFactory, który uruchamia go w bieżącym procesie; w przeciwnym razie MSBuild przekazuje zadanie do TaskHostFactory, które uruchamia zadanie w procesie, który jest zgodny z kontekstem docelowym. Nawet jeśli bieżący kontekst i dopasowanie kontekstu docelowego, można wymusić uruchamianie pozaprocesowe zadania (na potrzeby izolacji, zabezpieczeń lub innych przyczyn) przez ustawienie `TaskFactory` na `TaskHostFactory`.
 
 ```xml
 <UsingTask TaskName="MisbehavingTask"
@@ -83,8 +83,8 @@ Przed uruchomieniem zadania, program MSBuild sprawdza, czy jest wyznaczone do ur
 </UsingTask>
 ```
 
-## <a name="phantom-task-parameters"></a>Parametry zadania fantomu
-Wszystkie inne parametry zadania, takie jak `MSBuildRuntime` i `MSBuildArchitecture` można ustawić właściwości kompilacji.
+## <a name="phantom-task-parameters"></a>Fantom — parametry zadania
+Podobnie jak w przypadku wszystkich innych parametrów zadań, `MSBuildRuntime` i `MSBuildArchitecture` można ustawić na podstawie właściwości kompilacji.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -97,15 +97,15 @@ Wszystkie inne parametry zadania, takie jak `MSBuildRuntime` i `MSBuildArchitect
 </Project>
 ```
 
-W przeciwieństwie do innych parametrów zadania `MSBuildRuntime` i `MSBuildArchitecture` nie są widoczne dla samo zadanie. Aby napisać zadanie, które ma informacje o kontekście, w której jest uruchamiany, musisz przetestować kontekst przez wywołanie metody .NET Framework lub przekazać informacje o kontekście za pośrednictwem innych parametrów zadania przy użyciu właściwości kompilacji.
+W przeciwieństwie do innych parametrów zadań, `MSBuildRuntime` i `MSBuildArchitecture` nie są widoczne dla samego zadania. Aby napisać zadanie, które jest świadome kontekstu, w którym działa, należy przetestować kontekst przez wywołanie .NET Framework lub użyć właściwości kompilacji, aby przekazać informacje kontekstowe za pomocą innych parametrów zadań.
 
 > [!NOTE]
-> `UsingTask` atrybuty mogą zostać ustawione przy użyciu właściwości zestawu narzędzi i środowiska.
+> atrybuty `UsingTask` można ustawić na podstawie właściwości zestawu narzędzi i środowiska.
 
-`MSBuildRuntime` i `MSBuildArchitecture` parametry zawierają najbardziej elastyczny sposób, aby ustawić kontekst target, ale także najbardziej ograniczone w zakresie. Z jednej strony ponieważ są ustawione na samego wystąpienia zadania i nie są sprawdzane, dopóki zadanie zostanie uruchomiony, można uzyskać wartości z pełnego zakresu właściwości dostępne w czasie kompilacji i czas oceny. Z drugiej strony parametry te dotyczą tylko konkretne wystąpienie zadania w określonej lokalizacji docelowej.
+Parametry `MSBuildRuntime` i `MSBuildArchitecture` zapewniają największą elastyczność sposobu ustawiania kontekstu docelowego, ale również z największą ograniczoną zakresem. Z jednej strony, ponieważ są one ustawiane w wystąpieniu zadania i nie są oceniane do momentu uruchomienia zadania, mogą uzyskać wartość z pełnego zakresu właściwości dostępnych zarówno w czasie oceny, jak i w czasie kompilacji. Z drugiej strony te parametry dotyczą tylko określonego wystąpienia zadania w konkretnym miejscu docelowym.
 
 > [!NOTE]
-> Parametry zadania są oceniane w kontekście węzła nadrzędnego, a nie w kontekście hosta zadań. Zmienne środowiskowe, które są zależne środowiska uruchomieniowego lub architektura (takie jak *Program Files* lokalizacji) będą oceniać na wartość, która pasuje do węzła nadrzędnego. Jednak jeśli ten sam zmienna środowiskowa jest odczytywana bezpośrednio przez zadanie, zostanie prawidłowo ono ocenione w ramach hosta zadań.
+> Parametry zadań są oceniane w kontekście węzła nadrzędnego, a nie w kontekście hosta zadania. Zmienne środowiskowe, które są zależne od architektury (takie jak lokalizacja *plików programu* ), będą oceniane do wartości zgodnej z węzłem nadrzędnym. Jeśli jednak ta sama zmienna środowiskowa jest odczytywana bezpośrednio przez zadanie, zostanie ona prawidłowo oceniona w kontekście hosta zadania.
 
 ## <a name="see-also"></a>Zobacz także
 - [Konfigurowanie obiektów docelowych i zadań](../msbuild/configuring-targets-and-tasks.md)

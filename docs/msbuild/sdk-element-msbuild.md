@@ -1,5 +1,5 @@
 ---
-title: Zestaw SDK, Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Element zestawu SDK (MSBuild) | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,20 @@ dev_langs:
 helpviewer_keywords:
 - Sdk element [MSBuild]
 - <Sdk> element [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b155af29d2d81a43eb0270e776e40df335a4bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c65bafd9183c97efa7595c10d7bdb3641c5f75f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595140"
 ---
-# <a name="sdk-element-msbuild"></a>Zestaw SDK, element (MSBuild)
-Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt zestawu SDK.
+# <a name="sdk-element-msbuild"></a>Element zestawu SDK (MSBuild)
+Odwołuje się do zestawu SDK projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
  \<Project> \<Sdk>
 
@@ -39,7 +39,7 @@ Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -53,9 +53,9 @@ Odwołania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
+| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Odwołanie do zestawu SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Instrukcje: odwoływanie się do zestawu SDK projektu programu MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

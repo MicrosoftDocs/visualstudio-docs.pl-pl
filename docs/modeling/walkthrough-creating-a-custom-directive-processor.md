@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666981"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596492"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Przewodnik: tworzenie niestandardowego procesora dyrektywy
 
@@ -84,9 +84,9 @@ End Property
 
 2. Dodaj odwołania do tych zestawów:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
 3. Zastąp kod w **Class1** następującym kodem. Ten kod definiuje klasę CustomDirectiveProcessor, która dziedziczy z klasy <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> i implementuje wymagane metody.
 
@@ -601,13 +601,13 @@ End Property
 
 4. W przypadku tylko Visual Basic Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomDP**. Na karcie **aplikacja** w **obszarze główny obszar nazw**usuń wartość domyślną `CustomDP`.
 
-5. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+5. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
-6. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+6. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ### <a name="build-the-project"></a>Kompilacja projektu
 
-Skompiluj projekt. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+Skompiluj projekt. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="register-the-directive-processor"></a>Zarejestruj procesor dyrektywy
 
@@ -637,9 +637,9 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
 
 1. Uruchom `regedit` polecenie przy użyciu menu Start lub wiersza polecenia.
 
-2. Przejdź do lokalizacji **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* 0 \ TextTemplating\DirectiveProcessors**i kliknij węzeł.
+2. Przejdź do lokalizacji **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*0 \ TextTemplating\DirectiveProcessors**i kliknij węzeł.
 
-   W systemach 64-bitowych należy używać **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+   W systemach 64-bitowych należy używać **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**
 
 3. Dodaj nowy klucz o nazwie CustomDirectiveProcessor.
 
@@ -657,15 +657,15 @@ W tej sekcji dodajesz klucz dla niestandardowego procesora dyrektywy do rejestru
    | Nazwa | Typ | Dane |
    |-|-|-|
    | (Domyślnie) | REG_SZ | (wartość nieustawiona) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Path rozwiązania ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | Klasa | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<ścieżkę do rozwiązania ></strong> CustomDP\bin\Debug\CustomDP.dll |
 
      Jeśli zestaw znajduje się w pamięci podręcznej GAC, wartości powinny wyglądać tak:
 
    | Nazwa | Typ | Dane |
    |-|-|-|
    | (Domyślnie) | REG_SZ | (wartość nieustawiona) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Klasa | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Zestaw | REG_SZ | CustomDP.dll |
 
 6. Uruchom ponownie program Visual Studio.
@@ -877,7 +877,7 @@ Po przetestowaniu niestandardowego procesora dyrektywy możesz dodać kod HTML d
 1. Zastąp kod w *TestDP.tt* następującym. Kod HTML jest podświetlony. Pamiętaj, aby zastąpić ciąg `YOUR PATH` ścieżką do pliku *Docfile. XML* .
 
     > [!NOTE]
-    > Dodatkowe tagi Open \< # i Close # > oddzielają kod instrukcji od tagów HTML.
+    > Dodatkowe tagi Open \<# i Close # > oddzielają kod instrukcji od tagów HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656513"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593762"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Instrukcje: używanie fragmentów kodu w cudzysłowie
 
@@ -27,7 +27,7 @@ W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu
 
 1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
 
-1. Wpisz **ctrl** +**K**, **Ctrl** +**S**.
+1. Wpisz **ctrl**+**K**, **Ctrl**+**S**.
 
 1. Wybierz fragment kodu z listy fragmentów kodu przy użyciu myszy lub wpisz nazwę fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
 

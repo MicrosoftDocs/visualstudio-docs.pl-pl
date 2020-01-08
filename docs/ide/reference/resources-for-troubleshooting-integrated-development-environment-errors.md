@@ -88,24 +88,24 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593619"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zasoby do rozwiązywania błędów zintegrowanego środowiska programistycznego
 
 Nie wszystkie komunikaty o błędach mają określony skojarzony temat pomocy. Jeśli informacje w komunikacie o błędzie nie pomogą rozwiązać problemu, możesz zapoznać się z innymi zasobami, takimi jak artykuły bazy wiedzy, fora lub pomoc techniczna.
 
 > [!NOTE]
-> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Rozwiązywanie problemów z Visual Studio dla komputerów Mac](/visualstudio/mac/troubleshooting).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Rozwiązywanie problemów z Visual Studio dla komputerów Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Artykuły bazy wiedzy
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 46c445c8fa5b1b4c9b2e4a45025b161223bfa6de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314106"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588736"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Krok 3. Dodawanie czasomierza odliczania
 
@@ -109,7 +109,7 @@ W trzeciej części tego samouczka dodasz czasomierz odliczania, aby śledzić l
 
      Czasomierz zaczyna liczyć w dół. Po uruchomieniu quizu zostanie zakończona i zostanie wyświetlona odpowiedź. Na poniższej ilustracji przedstawiono Quiz w toku.
 
-     trwa ![Math Quiz ](../ide/media/express_addcountdown.png)<br/>
+     trwa ![Quiz matematyczny](../ide/media/express_addcountdown.png)<br/>
 *Quiz matematyczny w toku*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć

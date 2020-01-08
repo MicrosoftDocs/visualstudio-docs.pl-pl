@@ -23,21 +23,21 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919059"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596518"
 ---
 # <a name="class-designer-errors"></a>Błędy Projektanta klas
 
-**Projektant klas** nie śledzi lokalizacji plików źródłowych, dlatego zmodyfikowanie struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że **Projektant klas** utratę śledzenia typu, na przykład, że często modyfikujesz typ źródła typedef, klasy bazowe i typy skojarzeń. Może zostać wyświetlony błąd, taki jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać ten problem, przeciągnij zmodyfikowany lub ponownie zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
+**Projektant klas** nie śledzi lokalizacji plików źródłowych, dlatego zmodyfikowanie struktury projektu lub przeniesienie plików źródłowych w projekcie może spowodować, że **Projektant klas** utraci śledzenie typu, na przykład, często modyfikuje typ źródła typedef, klas bazowych i typów skojarzeń. Może zostać wyświetlony błąd, taki jak **Projektant klas nie może wyświetlić tego typu**. Aby rozwiązać ten problem, przeciągnij zmodyfikowany lub ponownie zlokalizowany kod źródłowy do diagramu klas, aby go wyświetlić.
 
 ## <a name="resources"></a>Resources
 

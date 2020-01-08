@@ -1,5 +1,5 @@
 ---
-title: Interfejs API testu obciążenia
+title: Interfejs API testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,61 +7,61 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d949b8c73bb155b2e6fe4900c54c6d5314d26c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588814"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Instrukcje: korzystanie z interfejsu API testu obciążenia
+# <a name="how-to-use-the-load-test-api"></a>Porady: Korzystanie z API testu obciążenia
 
-Program Visual Studio obsługuje wtyczki testów obciążenia, które mogą kontrolować lub ulepszać test obciążenia. Wtyczki testów obciążenia są klasami zdefiniowanymi przez użytkownika, które implementują interfejs <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> znaleziony w przestrzeni nazw <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Wtyczki testów obciążenia zezwalają na niestandardową kontrolkę testu obciążenia, na przykład przerywanie testu obciążenia, gdy zostanie spełniony licznik lub próg błędu. Właściwości w klasie <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> umożliwiają pobieranie lub Ustawianie parametrów testu obciążenia z kodu zdefiniowanego przez użytkownika. Użyj zdarzeń z klasy <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest>, aby dołączyć delegatów do powiadomień, gdy test obciążenia jest uruchomiony.
+Program Visual Studio obsługuje obciążenia wtyczki testu które mogą kontrolować lub zwiększ testu obciążeniowego. Wtyczki testu obciążenia są zdefiniowane przez użytkownika klas które implementują <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> interfejsu znaleziony w <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw. Wtyczki testu obciążenia umożliwiają kontrolę testu obciążenia niestandardowe, takie jak przerywanie testu obciążeniowego, po osiągnięciu progu licznika lub błąd. Użyj właściwości na <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> klasy, aby pobrać lub ustawić parametry testu obciążenia użytkownika zdefiniowane kodu. Używanie zdarzeń na <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> klasy, aby dołączyć delegatów dla powiadomień, gdy uruchomiony jest test obciążeniowy.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
-> Użyj przeglądarki obiektów, aby przeanalizować <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw. Edytory wizualizacji C# i Visual Basic oferują obsługę funkcji IntelliSense do kodowania z klasami w przestrzeni nazw.
+> Używanie przeglądarki obiektów do zbadania <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw. Edytory zarówno Visual C# i Visual Basic oferuje obsługę funkcji IntelliSense na kodowanie przy użyciu klas w przestrzeni nazw.
 
-Możesz również utworzyć wtyczki dla testów wydajności sieci Web. Aby uzyskać więcej informacji, zobacz [jak: tworzenie wtyczki testu wydajności sieci Web](../test/how-to-create-a-web-performance-test-plug-in.md) i [instrukcje: tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md).
+Można również utworzyć wtyczek dla testów wydajności sieci web. Aby uzyskać więcej informacji, zobacz [porady: tworzenie wtyczki testu wydajności sieci web](../test/how-to-create-a-web-performance-test-plug-in.md) i [porady: tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md).
 
-## <a name="to-use-the-loadtesting-namespace"></a>Aby użyć przestrzeni nazw LoadTesting
+## <a name="to-use-the-loadtesting-namespace"></a>Użycie tej przestrzeni nazw LoadTesting
 
-1. Otwórz projekt testu wydajności i obciążenia sieci Web, który zawiera test obciążenia.
+1. Otwórz test obciążenia, który zawiera test obciążenia i wydajności sieci web.
 
-2. Dodaj projekt biblioteki C# klas wizualizacji lub Visual Basic do rozwiązania testowego.
+2. Dodaj Visual C# lub projekt biblioteki klas języka Visual Basic do rozwiązania testu.
 
-3. Dodaj odwołanie w projekcie testu wydajności i obciążenia sieci Web do projektu biblioteki klas.
+3. Dodaj odwołanie w projekcie testu wydajności i obciążenia sieci web do projektu biblioteki klas.
 
-4. Dodaj odwołanie do biblioteki DLL Microsoft. VisualStudio. QualityTools. LoadTestFramework w projekcie biblioteki klas.
+4. Dodaj odwołanie do biblioteki DLL Microsoft.VisualStudio.QualityTools.LoadTestFramework w projekcie biblioteki klas.
 
-5. W pliku klasy, który znajduje się w projekcie biblioteki klas, Dodaj instrukcję `using` dla przestrzeni nazw <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
+5. Plik klasy znajduje się w projekcie biblioteki klas, Dodaj `using` poufności informacji dotyczące <xref:Microsoft.VisualStudio.TestTools.LoadTesting> przestrzeni nazw.
 
-6. Utwórz klasę publiczną, która implementuje interfejs <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+6. Utwórz klasę publicznej, która implementuje <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> interfejsu.
 
 7. Skompiluj projekt.
 
-8. Dodaj nową wtyczkę testu obciążenia przy użyciu Edytor testu obciążeniowego:
+8. Dodaj nowy test obciążeniowy wtyczki, za pomocą edytora testu obciążenia:
 
-    1. Kliknij prawym przyciskiem myszy węzeł główny testu obciążenia, a następnie wybierz polecenie **Dodaj wtyczkę testu obciążenia**.
+    1. Kliknij prawym przyciskiem myszy węzeł główny testu obciążeniowego, a następnie wybierz **Dodaj wtyczkę testu obciążeniowego**.
 
-    2. Zostanie wyświetlone okno dialogowe **Dodaj wtyczkę testu obciążenia** .
+    2. **Dodaj wtyczkę testu obciążenia** zostanie wyświetlone okno dialogowe.
 
-    3. We **właściwościach wybranego okienka wtyczek** Ustaw początkowe wartości dla wtyczki, które mają być używane w czasie wykonywania.
+    3. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
 
         > [!NOTE]
-        > Można uwidocznić dowolną liczbę właściwości z wtyczek. Po prostu ustaw je jako publiczne, settable i typu podstawowego, takie jak Integer, Boolean lub String. Właściwości wtyczki testu obciążenia można również edytować później przy użyciu okna **Właściwości** .
+        > Można uwidocznić dowolną liczbę właściwości z wtyczek. Po prostu ustaw je jako publiczne, settable i typu podstawowego, takie jak Integer, Boolean lub String. Można również edytować właściwości wtyczki testu obciążenia później za pomocą **właściwości** okna.
 
 9. Uruchom test obciążenia.
 
-     Aby uzyskać implementację <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, zobacz [How to: Create a test Load plug-in](../test/how-to-create-a-load-test-plug-in.md).
+     Dla implementacji <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, zobacz [porady: tworzenie wtyczki testu obciążeniowego](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Instrukcje: korzystanie z interfejsu API testów wydajności sieci Web](../test/how-to-use-the-web-performance-test-api.md)
-- [Instrukcje: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
+- [Porady: Korzystanie z API testu wydajności sieci web](../test/how-to-use-the-web-performance-test-api.md)
+- [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)

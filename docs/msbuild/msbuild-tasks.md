@@ -1,41 +1,41 @@
 ---
-title: Zadania programu MSBuild | Dokumentacja firmy Microsoft
+title: Zadania programu MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90b6731cf75a1825139aba57fe8491cd7cb0253f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a6bc01ee1f692a4da0cf1921de757236651a177
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004558"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593811"
 ---
 # <a name="msbuild-tasks"></a>zadania programu MSBuild
-Platforma kompilacji musi mieć możliwość wykonywania dowolną liczbę akcji podczas procesu kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa *zadania* wykonywać te akcje. Zadanie jest jednostką kodu wykonywalnego, używana przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania niepodzielnych operacji kompilacji.
+Platforma kompilacji musi mieć możliwość wykonywania dowolnej liczby akcji w procesie kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa *zadań* do wykonania tych działań. Zadanie jest jednostką kodu wykonywalnego używaną przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania niepodzielnych operacji kompilacji.
 
-## <a name="task-logic"></a>Logika zadania
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Formatu pliku projektu XML pełni nie można wykonać operacji na własną, logiki zadań muszą zostać wykonane poza plik projektu kompilacji.
+## <a name="task-logic"></a>Logika zadań
+ Format pliku projektu XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nie może w pełni wykonywać operacji kompilacji, więc logika zadań musi być implementowana poza plikiem projektu.
 
- Logika wykonania zadania jest implementowany jako klasa .NET, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejs, który jest zdefiniowany w <xref:Microsoft.Build.Framework> przestrzeni nazw.
+ Logika wykonywania zadania jest implementowana jako Klasa platformy .NET implementująca interfejs <xref:Microsoft.Build.Framework.ITask>, który jest zdefiniowany w przestrzeni nazw <xref:Microsoft.Build.Framework>.
 
- Task — klasa definiuje również parametry wejściowe i wyjściowe, które muszą być dostępne do zadania w pliku projektu. Wszystkie publiczne można ustawić niestatycznych nieabstrakcyjnej właściwości udostępnianych przez klasy zadania można uzyskiwać w pliku projektu, umieszczając odpowiedni atrybut o tej samej nazwie na [zadań](../msbuild/task-element-msbuild.md) elementu.
+ Klasa Task definiuje również parametry wejściowe i wyjściowe dostępne dla zadania w pliku projektu. Wszystkie publiczne, niestatyczne właściwości nieabstrakcyjne uwidocznione przez klasę zadania mogą być dostępne w pliku projektu przez umieszczenie odpowiedniego atrybutu o tej samej nazwie w elemencie [Task](../msbuild/task-element-msbuild.md) .
 
- Można napisać własne zadanie, tworząc klasy zarządzanej, która implementuje <xref:Microsoft.Build.Framework.ITask> interfejsu. Aby uzyskać więcej informacji, zobacz [zadań zapisywanie](../msbuild/task-writing.md).
+ Można napisać własne zadanie, tworząc zarządzaną klasę, która implementuje interfejs <xref:Microsoft.Build.Framework.ITask>. Aby uzyskać więcej informacji, zobacz [Zapisywanie zadań](../msbuild/task-writing.md).
 
-## <a name="execute-a-task-from-a-project-file"></a>Uruchom zadanie w pliku projektu
- Przed wykonaniem zadania w pliku projektu, przed pierwszym mapowaniem typu w zestawie, który implementuje zadania, nazwę zadania za pomocą [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu. Dzięki temu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wiedzieć, gdzie szukać logika wykonania zadania, gdy znajdzie w pliku projektu.
+## <a name="execute-a-task-from-a-project-file"></a>Wykonywanie zadania z pliku projektu
+ Przed wykonaniem zadania w pliku projektu należy najpierw zmapować typ w zestawie, który implementuje zadanie do nazwy zadania z elementem [UsingTask](../msbuild/usingtask-element-msbuild.md) . Pozwala to [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wiedzieć, gdzie szukać logiki wykonywania zadania po jego znalezieniu w pliku projektu.
 
- Aby wykonać zadania w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu, Utwórz element o nazwę zadania jako element podrzędny elementu `Target` elementu. Jeśli zadanie akceptuje parametry, te są przekazywane jako atrybuty elementu.
+ Aby wykonać zadanie w pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], Utwórz element o nazwie zadania jako element podrzędny elementu `Target`. Jeśli zadanie przyjmuje parametry, są one przenoszone jako atrybuty elementu.
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] listy i właściwości można go używać jako parametrów. Na przykład, poniższy kod wywoła `MakeDir` zadań i ustawia wartość `Directories` właściwość `MakeDir` równa wartości obiektu `BuildDir` właściwości zadeklarowanych w poprzednim przykładzie.
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] listy elementów i właściwości mogą być używane jako parametry. Na przykład poniższy kod wywołuje zadanie `MakeDir` i ustawia wartość właściwości `Directories` obiektu `MakeDir` równą wartości właściwości `BuildDir` zadeklarowanej w poprzednim przykładzie.
 
 ```xml
 <Target Name="MakeBuildDirectory">
@@ -44,7 +44,7 @@ Platforma kompilacji musi mieć możliwość wykonywania dowolną liczbę akcji 
 </Target>
 ```
 
- Zadania może również zwracać informacje do pliku projektu, które mogą być przechowywane w elementach lub właściwości w celu późniejszego użycia. Na przykład, poniższy kod wywoła `Copy` zadań i przechowują informacje od `CopiedFiles` danych wyjściowych właściwość `SuccessfullyCopiedFiles` listy elementów.
+ Zadania mogą także zwracać informacje do pliku projektu, które mogą być przechowywane w elementach lub właściwościach w celu późniejszego użycia. Na przykład poniższy kod wywołuje zadanie `Copy` i zapisuje informacje z właściwości dane wyjściowe `CopiedFiles` na liście `SuccessfullyCopiedFiles` elementów.
 
 ```xml
 <Target Name="CopyFiles">
@@ -58,14 +58,14 @@ Platforma kompilacji musi mieć możliwość wykonywania dowolną liczbę akcji 
 </Target>
 ```
 
-## <a name="included-tasks"></a>Dołączone zadania
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest dostarczany z wielu zadań, takich jak [kopiowania](../msbuild/copy-task.md), który kopiuje pliki, [MakeDir](../msbuild/makedir-task.md), który tworzy katalogi, i [Csc](../msbuild/csc-task.md), który kompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pliki kodów źródłowych. Aby uzyskać pełną listę dostępnych zadań i informacje o użyciu, zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).
+## <a name="included-tasks"></a>Uwzględnione zadania
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest dostarczany z wieloma zadaniami, takimi jak [kopia](../msbuild/copy-task.md), która kopiuje pliki, [MakeDir](../msbuild/makedir-task.md), tworzące katalogi i [Csc](../msbuild/csc-task.md), które kompilują [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pliki kodu źródłowego. Aby uzyskać pełną listę dostępnych zadań i informacji o użyciu, zobacz [Dokumentacja zadania](../msbuild/msbuild-task-reference.md).
 
 ## <a name="overridden-tasks"></a>Zastąpione zadania
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Wyszukuje zadania w kilku lokalizacjach. Pierwszy znajduje się w plikach z rozszerzeniem *. OverrideTasks* przechowywanych w katalogach platformy .NET Framework. Zadania w tych plikach zastąpienie innych zadań, za pomocą tych samych nazw, w tym zadania w pliku projektu. Druga lokalizacja znajduje się w plikach z rozszerzeniem *. Zadania* w katalogach platformy .NET Framework. Jeśli zadanie nie zostanie znaleziony w jednej z tych lokalizacji, zadania w pliku projektu jest używany.
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] szuka zadań w kilku lokalizacjach. Pierwsza lokalizacja znajduje się w plikach z rozszerzeniem *. OverrideTasks* przechowywanych w katalogach .NET Framework. Zadania w tych plikach zastępują wszystkie inne zadania o tych samych nazwach, w tym zadania w pliku projektu. Druga lokalizacja znajduje się w plikach z rozszerzeniem *. Zadania* w katalogach .NET Framework. Jeśli zadanie nie zostanie odnalezione w żadnej z tych lokalizacji, zostanie użyte zadanie w pliku projektu.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Wpisywanie zadania](../msbuild/task-writing.md)
+- [Pisanie zadania](../msbuild/task-writing.md)
 - [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e58883e671dea242e0c69aee0ce6cf8b911371
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747584"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596661"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 Aby ułatwić organizowanie testów systemu i jego składników, można użyć wymagań i modeli architektonicznych. Dzięki temu można sprawdzić wymagania, które są ważne dla użytkowników i innych uczestników projektu, oraz ułatwić szybkie aktualizowanie testów w przypadku zmiany wymagań. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], możesz również zachować linki między modelami i testami.
@@ -57,7 +57,7 @@ Aby ułatwić organizowanie testów systemu i jego składników, można użyć w
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy z przypadkiem użycia
 
-1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] Utwórz wymaganie i podstawowy zestaw testów.
+1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]Utwórz wymaganie i podstawowy zestaw testów.
 
     To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
@@ -145,7 +145,7 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy z elementem modelu lub relacją
 
-1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] Utwórz wymaganie i podstawowy zestaw testów.
+1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]Utwórz wymaganie i podstawowy zestaw testów.
 
     To wymaganie tworzone jest elementem roboczym w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może to być scenariusz użytkownika, wymaganie lub element roboczy przypadku użycia, w zależności od szablonu procesu używanego przez projekt z programem Team Foundation. Aby uzyskać więcej informacji, zobacz [Informacje o narzędziach Agile i zarządzaniu projektami Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 

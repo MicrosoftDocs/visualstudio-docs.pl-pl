@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed46bdb9b5562b38f37129d69e7f075e425588b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644782"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596440"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 
@@ -30,11 +30,11 @@ Aby utworzyć wystąpienie narzędzia na karcie **HTML** , kliknij dwukrotnie na
 
 Następujące narzędzia są dostępne domyślnie na karcie HTML.
 
-**Przytrzymaj**
+**Pointer**
 
 ![ASP.NET Mobile Designer — wskaźnik HTMLpage](../../ide/reference/media/vxpointer.gif)
 
-To narzędzie jest domyślnie zaznaczone, gdy zostanie otwarta jakakolwiek karta przybornika. Nie można go usunąć. Wskaźnik umożliwia przeciąganie obiektów na widok Projekt powierzchni, zmianę ich rozmiaru i zmiana ich położenia na stronie lub w formularzu. Aby uzyskać więcej informacji, zobacz [Przybornik](../../ide/reference/toolbox.md).
+To narzędzie jest domyślnie zaznaczone, gdy zostanie otwarta jakakolwiek karta przybornika. Nie można go usunąć. Wskaźnik umożliwia przeciąganie obiektów na widok Projekt powierzchni, zmianę ich rozmiaru i zmiana ich położenia na stronie lub w formularzu. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
 
 **Dane wejściowe (przycisk)**
 
@@ -218,7 +218,7 @@ Po przeciągnięciu **reguły poziomej** na powierzchnię widok projekt do dokum
 <hr width="100%" size=1>
 ```
 
-**Służąc**
+**Div**
 
 ![Etykieta strony HTML](../../ide/reference/media/vxlabel.gif)
 

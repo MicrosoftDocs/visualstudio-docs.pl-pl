@@ -1,5 +1,5 @@
 ---
-title: Kodowanie i znaki podziału wiersza
+title: Kodowanie i wiersz znaków podziału
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd37547d8107cf35991aab684313dbff37adda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650895"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588593"
 ---
-# <a name="encodings-and-line-endings"></a>Kodowania i końce wierszy
+# <a name="encodings-and-line-endings"></a>Końce kodowania i wiersza
 
 Następujące znaki są interpretowane jako podziały wierszy w programie Visual Studio:
 
-- CR LF: karetka + Return, znaki Unicode 000D + 000A
+- CR-LF: Znak powrotu karetki i wiersz źródła danych, 000 D + 000A znaki Unicode
 
-- LF: wiersz wysuwu wiersza, 000A znaków Unicode
+- LF: Znak nowego wiersza, Unicode 000A
 
-- NEL: Następny wiersz, znak Unicode 0085
+- Ustaw: Następny wiersz znaków Unicode 0085
 
-- LS: separator wiersza, znak Unicode 2028
+- LS: Separator wiersza, znaków Unicode 2028
 
-- PS: Separator akapitu, znak Unicode 2029
+- PS: Separator akapitu, znaków Unicode 2029
 
-Tekst skopiowany z innych aplikacji zachowuje pierwotne kodowanie i znaki podziału wiersza. Na przykład podczas kopiowania tekstu z programu Notepad i wklejania go do pliku tekstowego w programie Visual Studio, tekst ma te same ustawienia, które miały w Notatniku.
+Tekst, który jest kopiowany z innych aplikacji zachowuje oryginalne kodowanie i znaki podziału wiersza. Na przykład po Kopiuj tekst ze Schowka i wklej go do pliku tekstowego w programie Visual Studio tekst ma tych samych ustawień, których go w Notatniku.
 
-Po otwarciu pliku, który ma różne znaki podziału wiersza, może pojawić się okno dialogowe z pytaniem, czy niespójne znaki podziału wiersza powinny być znormalizowane, oraz jaki typ podziałów wierszy ma zostać wybrany.
+Po otwarciu pliku, który zawiera znaki podziału wiersza w innej, zobaczysz okno dialogowe z pytaniem, czy powinny być znormalizowane znaki podziału wiersza niespójna, jakiego typu wiersza podziały wierszy i wybrać.
 
 ## <a name="advanced-save-options"></a>Zaawansowane opcje zapisywania
 
-Możesz **użyć okna dialogowego** **zaawansowana opcja zapisywania**  > , aby określić typ znaków podziału wiersza. Możesz również zmienić kodowanie pliku przy użyciu tych samych ustawień.
+Możesz użyć **pliku** > **zaawansowane opcje zapisywania** okno dialogowe, aby określić typ ma znaki podziału wiersza. Można również zmienić kodowanie pliku przy użyciu tych samych ustawień.
 
-![Zaawansowane opcje zapisywania — okno dialogowe](media/line_endings.png)
+![Okno dialogowe Zaawansowane opcje zapisywania](media/line_endings.png)
 
 > [!NOTE]
-> Jeśli nie widzisz **opcji Zaawansowane zapisywanie** w menu **plik** , możesz je dodać. Wybierz **Narzędzia**, **Dostosuj**, a następnie wybierz kartę **polecenia** . Z listy rozwijanej **pasek menu** wybierz **plik**, a następnie wybierz przycisk **polecenie Dodaj** . W oknie dialogowym **Dodawanie polecenia** w obszarze **Kategorie**wybierz pozycję **plik**, a następnie na liście **polecenia** wybierz pozycję **Zaawansowane opcje zapisywania**. Wybierz **OK** , a następnie kliknij przycisk **Przenieś w dół** , aby przenieść polecenie do dowolnego miejsca w menu. Wybierz przycisk **Zamknij** , aby zamknąć okno dialogowe **Dostosowywanie** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Jeśli nie widzisz **zaawansowane opcje zapisywania** na **pliku** menu, można go dodać. Wybierz **Narzędzia**, **Dostosuj**, a następnie wybierz kartę **polecenia** . Z listy rozwijanej **pasek menu** wybierz **plik**, a następnie wybierz przycisk **polecenie Dodaj** . W **Dodaj polecenie** okno dialogowe, w obszarze **kategorie**, wybierz **pliku**, a następnie w polu **polecenia** wybierz  **Zaawansowane opcje zapisywania**. Wybierz **OK** , a następnie wybierz **Przenieś w dół** przycisk, aby przenieść polecenia do dowolnego miejsca, w menu. Wybierz **Zamknij** zamknąć **Dostosuj** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Dostosowywanie menu i pasków zadań](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Alternatywnie możesz uzyskać dostęp do okna dialogowego **Zaawansowane opcje zapisywania** , wybierając pozycję **plik**  > **Zapisz \<file \> jako**. W oknie dialogowym **Zapisz plik jako** wybierz Trójkąt listy rozwijanej obok przycisku **Zapisz** , a następnie wybierz pozycję **Zapisz z kodowaniem**.
+> Alternatywnie, możesz uzyskać dostęp **zaawansowane opcje zapisywania** okno dialogowe, wybierając **pliku** > **Zapisz \<pliku\> jako**. W **Zapisz plik jako** okna dialogowego Wybierz trójkąt listy rozwijanej obok **Zapisz** przycisk, a następnie wybierz **Zapisz z kodowaniem**.
 
 ## <a name="see-also"></a>Zobacz także
 

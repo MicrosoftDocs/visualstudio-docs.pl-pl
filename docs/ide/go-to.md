@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654639"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593788"
 ---
 # <a name="find-code-using-go-to-commands"></a>Znajdowanie kodu za pomocą poleceń Przejdź do
 
@@ -27,8 +27,8 @@ Program Visual Studio **Przejdź do poleceń umożliwia** skoncentrowane wyszuki
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Naciśnij klawisz **ctrl** +**t** lub **Ctrl** + **,**
-**Wskaźnik** | Wybierz pozycję **edytuj**  > **Przejdź do**  > **Przejdź do wszystkiego**
+**Keyboard** | Naciśnij klawisz **ctrl**+**t** lub **Ctrl**+ **,**
+**Myszy** | Wybierz pozycję **edytuj** > **Przejdź do** > **Przejdź do wszystkiego**
 
 Małe okno jest wyświetlane w prawym górnym rogu edytora kodu.
 
@@ -52,14 +52,14 @@ Domyślnie określony element jest wyszukiwany we wszystkich elementach rozwiąz
 
 Aby zawęzić wyszukiwanie do określonego typu elementu kodu, można określić prefiks w polu wyszukiwania lub wybrać jedną z pięciu ikon filtru:
 
-prefiks | Ikona | Skrót | Opis
+Prefiks | Ikona | Skrót | Opis
 :-: | - | - | -
 :| ![Ikona linii](media/gotoall-line-icon.png) | **Ctrl**+**G** | Przejdź do określonego numeru wiersza
-N| ![Ikona plików](media/gotoall-files-icon.png) | **Ctrl** +**1**, **Ctrl** +**F** | Przejdź do określonego pliku
-®| ![Ikona ostatnich plików](media/gotoall-recent-files-icon.png) | **Ctrl** +**1**, **Ctrl** +**R** | Przejdź do określonego, ostatnio odwiedzonego pliku
-t| ![Ikona typów](media/gotoall-types-icon.png) | **Ctrl** +**1**, **Ctrl** +**t** | Przejdź do określonego typu
-m| ![Ikona członków](media/gotoall-members-icon.png) | **Ctrl** +**1**, **Ctrl** +**M** | Przejdź do określonego elementu członkowskiego
-\#| ![Ikona symboli](media/gotoall-symbols-icon.png) | **Ctrl** +**1**, **Ctrl** +**S** | Przejdź do podanego symbolu
+f| ![Ikona plików](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Przejdź do określonego pliku
+r| ![Ikona ostatnich plików](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Przejdź do określonego, ostatnio odwiedzonego pliku
+t| ![Ikona typów](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Przejdź do określonego typu
+m| ![Ikona członków](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Przejdź do określonego elementu członkowskiego
+\#| ![Ikona symboli](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Przejdź do podanego symbolu
 
 ### <a name="filter-to-a-specific-location"></a>Filtrowanie do określonej lokalizacji
 
@@ -88,6 +88,6 @@ Wyśrodkuj okno | Przenieś to okno do najwyższego środka edytora kodu zamiast
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Nawiguj po kodzie](../ide/navigating-code.md)
+- [Przechodzenie do kodu](../ide/navigating-code.md)
 - [Przejdź do wiersza — okno dialogowe](../ide/reference/go-to-line.md)
 - [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)

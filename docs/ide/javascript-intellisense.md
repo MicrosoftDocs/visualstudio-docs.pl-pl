@@ -20,46 +20,46 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538177"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593723"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-Program Visual Studio zapewnia zaawansowane środowisko gotową do edytowania plików JavaScript. Usługa języka TypeScript, na podstawie, Visual Studio zapewnia ulepszoną funkcję IntelliSense, obsługę nowoczesnych funkcji JavaScript, oraz funkcji zwiększania wydajności, takie jak Przejdź do definicji, Refaktoryzacja i nie tylko.
+Program Visual Studio zapewnia zaawansowane środowisko edycji języka JavaScript, które jest od razu dostępne. Obsługiwane przez usługę języka TypeScript, Visual Studio oferuje bogatszą funkcję IntelliSense, obsługę nowoczesnych funkcji języka JavaScript oraz udoskonalone funkcje produktywności, takie jak przejście do definicji, refaktoryzacja i inne.
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2017 roku usługa języka JavaScript używa nowego aparatu usługi języka (o nazwie "Salsa"). Szczegółowe informacje znajdują się w tym artykule i możesz również przeczytać ten tekst [wpis w blogu](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Nowe środowisko edytowania dotyczy również przede wszystkim od programu Visual Studio Code. Zobacz [dokumentacja programu VS Code](https://code.visualstudio.com/docs/languages/javascript) Aby uzyskać więcej informacji.
+> Począwszy od programu Visual Studio 2017, usługa języka JavaScript używa nowego aparatu dla usługi językowej (o nazwie "Salsa"). Szczegółowe informacje znajdują się w tym artykule i można także przeczytać ten [wpis w blogu](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Nowe środowisko edycji ma również zastosowanie do Visual Studio Code. Więcej informacji można znaleźć w dokumentacji [vs Code](https://code.visualstudio.com/docs/languages/javascript) .
 
-Aby uzyskać więcej informacji na temat ogólnych funkcji IntelliSense programu Visual Studio, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).
+Aby uzyskać więcej informacji na temat ogólnej funkcji IntelliSense programu Visual Studio, zobacz [Używanie technologii IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>What's new in usługa języka JavaScript w programie Visual Studio 2017
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Co nowego w usłudze języka JavaScript w programie Visual Studio 2017
 
-Począwszy od programu Visual Studio 2017 JavaScript IntelliSense wyświetla informacje o wiele więcej list parametrów i elementów członkowskich. To nowe informacje są udostępniane przez usługę języka TypeScript, która używa analiza statyczna w tle, aby lepiej zrozumieć swój kod.
+Począwszy od programu Visual Studio 2017, język JavaScript IntelliSense wyświetla więcej informacji na temat list parametrów i elementów członkowskich. Nowe informacje są dostarczane przez usługę języka TypeScript, która używa analizy statycznej w tle, aby lepiej zrozumieć swój kod.
 
-TypeScript korzysta z wielu źródeł do utworzenia tych informacji:
+Program TypeScript używa kilku źródeł do tworzenia tych informacji:
 
-- [Funkcja IntelliSense, oparte na wnioskowanie o typie](#TypeInference)
-- [Funkcja IntelliSense, oparte na danych JSDoc](#JsDoc)
-- [Funkcja IntelliSense, na podstawie plików deklaracji TypeScript](#TsDeclFiles)
-- [Automatyczne nabycia definicje typów](#Auto)
+- [Technologia IntelliSense oparta na wnioskach o typie](#TypeInference)
+- [Technologia IntelliSense oparta na JSDoc](#JsDoc)
+- [Technologia IntelliSense oparta na plikach deklaracji TypeScript](#TsDeclFiles)
+- [Automatyczne pobieranie definicji typu](#Auto)
 
 <a name="TypeInference"></a>
 
-### <a name="intellisense-based-on-type-inference"></a>Funkcja IntelliSense, oparte na wnioskowanie o typie
+### <a name="intellisense-based-on-type-inference"></a>Technologia IntelliSense oparta na wnioskach o typie
 
-W języku JavaScript w większości przypadków nie ma żadnych jawnego typu informacji dostępna. Na szczęście zazwyczaj przyczyną jest dość proste ustalenie typu, biorąc pod uwagę otaczającego kontekst kodu.
-Ten proces jest nazywany wnioskowanie o typie.
+W języku JavaScript większość niepełnych informacji o typie nie jest dostępna. Na szczęście, jest to zwykle dość łatwe do ustalenia typu z otaczającym kontekstem kodu.
+Ten proces jest nazywany wnioskami o typie.
 
-Dla zmiennej lub właściwości Typ jest zazwyczaj typ wartości używane do zainicjowania jego lub najnowszych przypisanie wartości.
+Dla zmiennej lub właściwości Typ jest zazwyczaj typem wartości użytej do zainicjowania go lub ostatniego przypisania wartości.
 
 ```js
 var nextItem = 10;
@@ -69,14 +69,14 @@ nextItem = "box";
 nextItem; // now we know nextItem is a string
 ```
 
-Dla funkcji można wywnioskować zwracanego typu na podstawie instrukcji return.
+Dla funkcji zwracanego typu można wywnioskować na podstawie instrukcji return.
 
-Dla parametrów funkcji nie ma żadnych wnioskowania, ale istnieją sposoby obejścia tego problemu za pomocą JSDoc lub TypeScript *. d.ts* plików (zobacz w kolejnych sekcjach).
+W przypadku parametrów funkcji nie ma obecnie żadnych wniosków, ale istnieją sposoby obejścia tego problemu przy użyciu plików JSDoc lub TypeScript *. d. TS* (zobacz sekcję w dalszej części).
 
-Ponadto ma specjalne wnioskowania dla następujących elementów:
+Dodatkowo istnieją specjalne wnioskowanie dotyczące następujących:
 
-- Klasy "ES3-style" określony za pomocą funkcji konstruktora i przypisania do właściwości prototypu.
-- Wzorce modułu CommonJS stylu, określony jako przypisania właściwości na `exports` obiektu lub przypisania do `module.exports` właściwości.
+- Klasy "ES3-Style", określone przy użyciu funkcji konstruktora i przypisań do właściwości prototypu.
+- Wzorce modułu CommonJS, określone jako przypisania właściwości w obiekcie `exports` lub przypisania do właściwości `module.exports`.
 
 ```js
 function Foo(param1) {
@@ -92,9 +92,9 @@ exports.Foo = Foo;
 
 <a name="JsDoc"></a>
 
-### <a name="intellisense-based-on-jsdoc"></a>Funkcja IntelliSense, oparte na danych JSDoc
+### <a name="intellisense-based-on-jsdoc"></a>Technologia IntelliSense oparta na JSDoc
 
-Gdzie wnioskowanie o typie nie dostarcza informacji żądanego typu (lub do obsługi dokumentacji), informacje o typie może zostać jawnie dostarczone za pośrednictwem adnotacji JSDoc.  Na przykład, aby dać częściowo deklarowanego obiektu określonego typu, można użyć `@type` tag, jak pokazano poniżej:
+Gdzie wnioskowanie typu nie zapewnia informacji o żądanym typie (lub do obsługi dokumentacji), informacje o typie mogą być udostępniane jawnie za pośrednictwem adnotacji JSDoc.  Na przykład, aby nadać częściowo zadeklarowany obiekt określonego typu, można użyć tagu `@type`, jak pokazano poniżej:
 
 ```js
 /**
@@ -105,7 +105,7 @@ x.b = false;
 x. // <- "x" is shown as having properties a, b, and c of the types specified
 ```
 
-Jak wspomniano wcześniej, parametry funkcji nigdy nie są wnioskowane. Jednak przy użyciu JSDoc `@param` tagu, można dodać typy do parametrów funkcji, jak również.
+Jak wspomniano, parametry funkcji nigdy nie są wywnioskowane. Jednak za pomocą tagu `@param` JSDoc można także dodawać typy do parametrów funkcji.
 
 ```js
 /**
@@ -116,30 +116,30 @@ function Foo(param1) {
 }
 ```
 
-Zobacz [Obsługa formatu JSDoc w języku JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) dla adnotacji JsDoc obecnie obsługiwane.
+Zobacz [obsługę JSDoc w języku JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) dla obecnie obsługiwanych adnotacji JSDoc.
 
 <a name="TsDeclFiles"></a>
-### <a name="intellisense-based-on-typescript-declaration-files"></a>Funkcja IntelliSense, na podstawie plików deklaracji TypeScript
+### <a name="intellisense-based-on-typescript-declaration-files"></a>Technologia IntelliSense oparta na plikach deklaracji TypeScript
 
-Ponieważ JavaScript i TypeScript, teraz są oparte na tej samej usługi w języka, będą mogli wchodzić w interakcje w sposób bardziej zaawansowane. Na przykład można podać JavaScript IntelliSense dla wartości zadeklarowanych w *. d.ts* pliku (zobacz [dokumentacji TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), i typów, takich jak interfejsy i klasy zadeklarowanej w TypeScript dostępne do użycia jako typów w komentarzy JsDoc.
+Ponieważ skrypty JavaScript i TypeScript są teraz oparte na tej samej usłudze językowej, są w stanie korzystać z bogatszego sposobu działania. Na przykład można udostępnić kod JavaScript IntelliSense dla wartości zadeklarowanych w pliku *d. TS* (zobacz dokumentację języka [TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), a typy takie jak interfejsy i klasy zadeklarowane w języku TypeScript są dostępne do użycia jako typy w komentarzach JsDoc.
 
-Poniżej przedstawiono prosty przykład pliku definicji TypeScript, podając takie informacje o typie (za pośrednictwem interfejsu) do pliku JavaScript, w tym samym projekcie (przy użyciu `JsDoc` tagu).
+Poniżej przedstawiono prosty przykład pliku definicji TypeScript, który udostępnia takie informacje o typie (za pośrednictwem interfejsu) do pliku JavaScript w tym samym projekcie (przy użyciu tagu `JsDoc`).
 
 ![Plik definicji TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
-### <a name="automatic-acquisition-of-type-definitions"></a>Automatyczne nabycia definicje typów
+### <a name="automatic-acquisition-of-type-definitions"></a>Automatyczne pobieranie definicji typu
 
-W świecie TypeScript najbardziej popularne biblioteki JavaScript mają swoje interfejsy API opisanego przez *. d.ts* plików i najbardziej typowe repozytorium takie definicje znajduje się na [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
+W środowisku TypeScript, najpopularniejsze biblioteki JavaScript mają swoje interfejsy API opisane przez pliki *d. TS* , a najpopularniejsze repozytorium dla takich definicji znajduje się w [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-Domyślnie usługa języka Salsa podejmie próbę wykrycia biblioteki JavaScript, które są w użyciu i automatycznie, pobieranie i odpowiednie odwołania *. d.ts* pliku, który opisuje biblioteki w celu zapewnienia bardziej zaawansowane Funkcja IntelliSense. Pliki są pobierane do pamięci podręcznej znajduje się w folderze użytkownika na *%LOCALAPPDATA%\Microsoft\TypeScript*.
+Domyślnie usługa języka Salsa podejmie próbę wykrycia, które biblioteki JavaScript są używane, i automatycznie pobrać i odwołać się do odpowiedniego pliku *d. TS* , który opisuje bibliotekę w celu zapewnienia bogatszej technologii IntelliSense. Pliki są pobierane do pamięci podręcznej znajdującej się w folderze użytkownika pod adresem *%LocalAppData%\Microsoft\TypeScript*.
 
 > [!NOTE]
-> Ta funkcja jest **wyłączone** domyślnie, jeśli za pomocą *tsconfig.json* konfiguracji pliku, ale mogą zostać ustawione w pozycji włączone jako dalsze schemat poniżej.
+> Ta funkcja jest domyślnie **wyłączona** , jeśli jest używany plik konfiguracji *tsconfig. JSON* , ale może być ustawiony na wartość włączone, jak opisano poniżej.
 
-Automatyczne wykrywanie działa obecnie zależności pobrany z poziomu narzędzia npm (, zapoznając się *package.json* pliku), Bower (, zapoznając się *bower.json* pliku) oraz luźne pliki w projekcie, które odpowiadają liście z grubsza pierwszych 400 najbardziej popularne biblioteki JavaScript. Na przykład, jeśli masz *jquery 1.10.min.js* w projekcie, plik *jquery.d.ts* zostaną pobrane i załadowane w celu zapewnienia lepszej edytowania. To *. d.ts* pliku nie będzie mieć wpływu na projekt.
+Obecnie Autowykrywanie działa w przypadku zależności pobranych z npm (przez odczytywanie pliku *Package. JSON* ), Bower (przez odczytanie pliku *Bower. JSON* ) oraz dla luźnych plików w projekcie, które pasują do listy najbardziej popularnych bibliotek JavaScript w najwyższej 400. Na przykład jeśli w projekcie jest *jQuery-1.10. min. js* , plik *jQuery. d. TS* zostanie pobrany i załadowany w celu zapewnienia lepszego środowiska edycji. Ten plik *. d. TS* nie będzie miał wpływu na Twój projekt.
 
-Jeśli nie chcesz używać automatycznego pozyskiwania, należy ją wyłączyć, dodając plik konfiguracji, tak jak pokazano poniżej. Możesz nadal umieścić pliki definicji do użycia bezpośrednio w obrębie projektu ręcznie.
+Jeśli nie chcesz używać autopozyskiwania, wyłącz je, dodając plik konfiguracyjny opisany poniżej. Można nadal ręcznie umieszczać pliki definicji do użycia bezpośrednio w projekcie.
 
 ## <a name="see-also"></a>Zobacz także
 

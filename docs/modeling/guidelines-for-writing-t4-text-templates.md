@@ -2,17 +2,17 @@
 title: Zalecenia dotyczące pisania szablonów tekstowych T4
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667287"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596544"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 
@@ -115,7 +115,7 @@ W **MyReportText-Methods.cs**:
 
 Zezwalaj na kod niestandardowy: Podaj punkty rozszerzenia.
 
-Należy rozważyć generowanie metod wirtualnych w \< # + bloki funkcji klasy # >. Pozwala to na użycie jednego szablonu w wielu kontekstach bez modyfikacji. Zamiast modyfikować szablon, można utworzyć klasę pochodną, która dostarcza minimalną dodatkową logikę. Klasa pochodna może być zwykłym kodem lub szablonem czasu wykonywania.
+Należy rozważyć generowanie metod wirtualnych w \<# + bloki funkcji klasy # >. Pozwala to na użycie jednego szablonu w wielu kontekstach bez modyfikacji. Zamiast modyfikować szablon, można utworzyć klasę pochodną, która dostarcza minimalną dodatkową logikę. Klasa pochodna może być zwykłym kodem lub szablonem czasu wykonywania.
 
 Na przykład w MyStandardRunTimeTemplate.tt:
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Oddzielne zbieranie danych z generacji tekstu.
 
-Staraj się unikać mieszania obliczeń i bloków tekstowych. W każdym szablonie tekstu użyj pierwszej \< # # Code # >, aby ustawić zmienne i wykonywać złożone obliczenia. Od pierwszego bloku tekstu do końca szablonu lub pierwszej \< # + blok funkcji klasy # >, unikania długich wyrażeń i unikania pętli i warunkowych, chyba że zawierają bloki tekstu. To rozwiązanie ułatwia odczytywanie i konserwowanie szablonu.
+Staraj się unikać mieszania obliczeń i bloków tekstowych. W każdym szablonie tekstu użyj pierwszej \<# # Code # >, aby ustawić zmienne i wykonywać złożone obliczenia. Od pierwszego bloku tekstu do końca szablonu lub pierwszej \<# + blok funkcji klasy # >, unikania długich wyrażeń i unikania pętli i warunkowych, chyba że zawierają bloki tekstu. To rozwiązanie ułatwia odczytywanie i konserwowanie szablonu.
 
 Nie używaj `.tt` w przypadku plików dołączanych.
 

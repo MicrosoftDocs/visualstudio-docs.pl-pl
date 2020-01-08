@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83edb231819a47c3c8a6f7a1943ae9086e06467d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653886"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596674"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 
@@ -52,9 +52,9 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
     1. W edytorze manifestu VSIX na karcie **zasoby** wybierz pozycję **Nowy** i ustaw właściwości nowego elementu:
 
-         **Typ zawartości**  = **pakietu VSPackage**
+         **Typ zawartości** = **pakietu VSPackage**
 
-         **Projekt źródłowy**  =  \<*bieżącym projekcie* >
+         **Projekt źródłowy** = \<*bieżącym projekcie*>
 
     2. Kliknij pozycję **wybrane wersje** i Sprawdź typy instalacji, na których ma być możliwe użycie procesora dyrektywy.
 
@@ -66,11 +66,11 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
     2. Wybierz go w oknie Eksploratora rozwiązań i ustaw jego właściwości w następujący sposób:
 
-         **Akcja kompilacji**  = **zawartość**
+         **Akcja kompilacji** = **Zawartość**
 
-         **Kopiuj do katalogu wyjściowego**  = **Kopiuj zawsze**
+         **Kopiuj do katalogu wyjściowego** = **Kopiuj zawsze**
 
-         **Uwzględnij w VSIX**  = **true**
+         **Uwzględnij w VSIX** = **true**
 
     3. Ustaw nazwę VSIX i upewnij się, że identyfikator jest unikatowy.
 
@@ -85,15 +85,15 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
     "CodeBase"="$PackageFolder$\AssemblyName.dll"
     ```
 
-     Zastąp następujące nazwy własnymi nazwami: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName` `AssemblyName`.
+     Zastąp następujące nazwy własnymi nazwami: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName``AssemblyName`.
 
 5. Dodaj następujące odwołania do projektu:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. VSHost. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6. Dodaj niestandardową klasę procesora dyrektywy do projektu.
 
@@ -124,7 +124,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 - Metoda `IsDirectiveSupported` musi zwrócić `true`, gdy zostanie przeniesiona nazwa `CustomDirective`.
 
-- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie zezwoli na jego instalację, Usuń rozszerzenie z **%localappdata%\Microsoft\VisualStudio \\ \* 0 \ Extensions \\** .
+- Jeśli nie widzisz rozszerzenia w Menedżerze rozszerzeń, ale system nie zezwoli na jego instalację, Usuń rozszerzenie z **%localappdata%\Microsoft\VisualStudio\\\*0 \ Extensions\\** .
 
 - Otwórz plik .vsix i sprawdź jego zawartość. Aby go otworzyć, zmień rozszerzenie nazwy pliku na .zip. Sprawdź, czy zawiera on pliki .dll, .pkgdef i extension.vsixmanifest. Plik extension.vsixmanifest powinien zawierać odpowiednią listę w węźle SupportedProducts i powinien też zawierać węzeł VsPackage w węźle Content:
 
@@ -160,11 +160,11 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Aby zarejestrować procesor dyrektywy przez ustawienie klucza rejestru
 
-1. Uruchom `regedit`.
+1. Uruchom polecenie `regedit`.
 
 2. W edytorze regedit przejdź do
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
     Jeśli chcesz zainstalować procesor dyrektywy w eksperymentalnej wersji programu Visual Studio, Wstaw "EXP" po "11,0".
 
@@ -185,16 +185,16 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 |Nazwa|Typ|Dane|
 |-|-|-|
 |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
-|Class|REG_SZ|**> nazwy \<Namespace. Nazwa \<Class >**|
-|CodeBase|REG_SZ|**Ścieżka \<Your > \\ < nazwą zestawu \>**|
+|Klasa|REG_SZ|**> \<nazwy przestrzeni nazw. Nazwa klasy\<**|
+|CodeBase|REG_SZ|**\<ścieżkę >\\< nazwą zestawu\>**|
 
  W przypadku zestawu w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:
 
 |Nazwa|Typ|Dane|
 |-|-|-|
 |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
-|Class|REG_SZ|\< w**pełni kwalifikowaną nazwę klasy** >|
-|Zestaw|REG_SZ|\<**nazwę zestawu w pamięci PODręcznej GAC** >|
+|Klasa|REG_SZ|\<w **pełni kwalifikowaną nazwę klasy**>|
+|Zestaw|REG_SZ|\<**nazwę zestawu w pamięci PODręcznej GAC**>|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593710"
 ---
 # <a name="manage-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 
@@ -26,7 +26,7 @@ Ustawienia aplikacji zastępują właściwości dynamiczne używane we wcześnie
 
 Każde ustawienie aplikacji musi mieć unikatową nazwę. Nazwa może być dowolną kombinacją liter, cyfr lub znaku podkreślenia, który nie zaczyna się od cyfry i nie może zawierać spacji. Nazwa zostanie zmieniona za pomocą właściwości `Name`.
 
-Ustawienia aplikacji mogą być przechowywane jako dowolny typ danych, który jest serializowany do kodu XML lub ma `TypeConverter` implementujące `ToString` / `FromString`. Najczęściej używane typy to `String`, `Integer` i `Boolean`, ale można również przechowywać wartości jako <xref:System.Drawing.Color>, <xref:System.Object> lub jako parametry połączenia.
+Ustawienia aplikacji mogą być przechowywane jako dowolny typ danych, który jest serializowany do kodu XML lub ma `TypeConverter` implementujące `ToString`/`FromString`. Najczęściej używane typy to `String`, `Integer`i `Boolean`, ale można również przechowywać wartości jako <xref:System.Drawing.Color>, <xref:System.Object>lub jako parametry połączenia.
 
 Ustawienia aplikacji również przechowują wartość. Wartość jest ustawiana za pomocą właściwości **Value** i musi być zgodna z typem danych ustawienia.
 
@@ -76,7 +76,7 @@ Na przykład można dodać do projektu plik, taki jak *SpecialSettings. Settings
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Dostęp lub zmiana ustawień aplikacji w czasie wykonywania w Visual Basic
 
-W projektach Visual Basic można uzyskać dostęp do ustawień aplikacji w czasie wykonywania przy użyciu obiektu `My.Settings`. Na stronie **Ustawienia** kliknij przycisk **Wyświetl kod** , aby wyświetlić plik *Settings. vb* . *Settings. vb* definiuje klasę `Settings`, która umożliwia obsługę tych zdarzeń w klasie Settings: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> i <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Należy zauważyć, że Klasa `Settings` w obszarze *Settings. vb* jest klasą częściową, która wyświetla tylko kod należący do użytkownika, a nie całą wygenerowaną klasę. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do ustawień aplikacji za pomocą obiektu `My.Settings`, zobacz [dostęp do ustawień aplikacji (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
+W projektach Visual Basic można uzyskać dostęp do ustawień aplikacji w czasie wykonywania przy użyciu obiektu `My.Settings`. Na stronie **Ustawienia** kliknij przycisk **Wyświetl kod** , aby wyświetlić plik *Settings. vb* . *Settings. vb* definiuje klasę `Settings`, która umożliwia obsługę tych zdarzeń w klasie Settings: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>i <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Należy zauważyć, że Klasa `Settings` w obszarze *Settings. vb* jest klasą częściową, która wyświetla tylko kod należący do użytkownika, a nie całą wygenerowaną klasę. Aby uzyskać więcej informacji na temat uzyskiwania dostępu do ustawień aplikacji za pomocą obiektu `My.Settings`, zobacz [dostęp do ustawień aplikacji (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
 
 Wartości wszelkich ustawień o zakresie użytkownika, które użytkownik zmienia w czasie wykonywania (na przykład pozycja formularza), są przechowywane w pliku *User. config* . Zwróć uwagę, że wartości domyślne są nadal zapisane w *pliku App. config*.
 

@@ -1,5 +1,5 @@
 ---
-title: TrackedVCToolTask Class | Microsoft Docs
+title: Klasa TrackedVCToolTask | Microsoft Docs
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -7,46 +7,46 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938872"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594932"
 ---
 # <a name="trackedvctooltask-base-class"></a>Klasa bazowa TrackedVCToolTask
 
-Wiele zadań, ale ostatecznie dziedziczyć <xref:Microsoft.Build.Utilities.Task> klasy i [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) klasy. Ta klasa dodaje kilka parametrów do zadań, które wynikają z [VCToolTask](../msbuild/vctooltask-base-class.md). Te parametry są wymienione w niniejszym dokumencie.
+Wiele zadań ostatecznie dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task> i klasy [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) . Ta klasa dodaje kilka parametrów do zadań, które pochodzą od [VCToolTask](../msbuild/vctooltask-base-class.md). Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry **TrackedVCToolTask** klasy bazowej.
+W poniższej tabeli opisano parametry klasy bazowej **TrackedVCToolTask** .
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**DeleteOutputOnExecute**|Opcjonalnie **bool** parametru.|
-|**EnableExecuteTool**|Opcjonalnie **bool** parametru.|
-|**ExcludedInputPaths**|Opcjonalnie **[] ITaskItem** parametru.|
-|**MinimalRebuildFromTracking**|Opcjonalnie **bool** parametru.|
-|**PathOverride**|Opcjonalnie **ciąg** parametru.|
-|**PostBuildTrackingCleanup**|Opcjonalnie **bool** parametru.|
-|**RootSource**|Opcjonalnie **ciąg** parametru.|
-|**SkippedExecution**|Opcjonalnie **bool** parametr wyjściowy.|
-|**SourcesCompiled**|Opcjonalnie **[] ITaskItem** parametr wyjściowy.|
-|**TLogCommandFile**|Opcjonalnie **ITaskItem** parametru.|
-|**TLogReadFiles**|Opcjonalnie **[] ITaskItem** parametru.|
-|**TLogWriteFiles**|Opcjonalnie **[] ITaskItem** parametru.|
-|**ToolArchitecture**|Opcjonalnie **ciąg** parametru.|
-|**TrackCommandLines**|Opcjonalnie **bool** parametru.|
-|**TrackFileAccess**|Opcjonalnie **bool** parametru.|
-|**TrackedInputFilesToIgnore**|Opcjonalnie **[] ITaskItem** parametru.|
-|**TrackedOutputFilesToIgnore**|Opcjonalnie **[] ITaskItem** parametru.|
-|**TrackerFrameworkPath**|Opcjonalnie **ciąg** parametru.|
-|**TrackerSdkPath**|Opcjonalnie **ciąg** parametru.|
+|**DeleteOutputOnExecute**|Opcjonalny parametr **bool** .|
+|**EnableExecuteTool**|Opcjonalny parametr **bool** .|
+|**ExcludedInputPaths**|Opcjonalny parametr **ITaskItem []** .|
+|**MinimalRebuildFromTracking**|Opcjonalny parametr **bool** .|
+|**PathOverride**|Opcjonalny parametr **ciągu** .|
+|**PostBuildTrackingCleanup**|Opcjonalny parametr **bool** .|
+|**RootSource**|Opcjonalny parametr **ciągu** .|
+|**SkippedExecution**|Opcjonalny parametr wyjściowy **bool** .|
+|**SourcesCompiled**|Opcjonalny parametr wyjściowy **ITaskItem []** .|
+|**TLogCommandFile**|Opcjonalny parametr **ITaskItem** .|
+|**TLogReadFiles**|Opcjonalny parametr **ITaskItem []** .|
+|**TLogWriteFiles**|Opcjonalny parametr **ITaskItem []** .|
+|**ToolArchitecture**|Opcjonalny parametr **ciągu** .|
+|**TrackCommandLines**|Opcjonalny parametr **bool** .|
+|**TrackFileAccess**|Opcjonalny parametr **bool** .|
+|**TrackedInputFilesToIgnore**|Opcjonalny parametr **ITaskItem []** .|
+|**TrackedOutputFilesToIgnore**|Opcjonalny parametr **ITaskItem []** .|
+|**TrackerFrameworkPath**|Opcjonalny parametr **ciągu** .|
+|**TrackerSdkPath**|Opcjonalny parametr **ciągu** .|
 
 ## <a name="see-also"></a>Zobacz także
 

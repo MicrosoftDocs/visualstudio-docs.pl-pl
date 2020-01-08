@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f55d4d3c4470d32d9779f7adf06934f10ac618e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd20d3c40a4fbe80ac1578275ccd8614eb018d7a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657481"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596596"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu
 
@@ -32,15 +32,15 @@ Uruchamiaj analizatory na mapach kodu, aby ułatwić identyfikację kodu, który
 
 ## <a name="analyze-code-maps"></a>Analizuj mapy kodu
 
-Na pasku narzędzi mapy wybierz kolejno pozycje **układ**  >  analizatory, a następnie**przycisk, który**chcesz uruchomić:
+Na pasku narzędzi mapy wybierz kolejno pozycje **układ** > analizatory, a następnie **przycisk, który**chcesz uruchomić:
 
-|**Analizator**|**Aby zidentyfikować węzły, które**|
+|**Analyzer**|**Aby zidentyfikować węzły, które**|
 |-|-|
 |**Analizator odwołań cyklicznych**|Mają zależności cykliczne względem siebie. **Uwaga:**  Zależności cykliczne, które znajdują się w grupie **generycznej** , nie są wyświetlane na mapie po rozszerzeniu grupy.|
 |**Znajdź Analizator centrów**|Znajdują się w pierwszych 25% węzłów o wysokim stopniu połączenia<br /><br /> **Aby ukryć wszystkie inne węzły na mapie**<br /><br /> -Otwórz menu skrótów dla mapy, wybierz **Zaawansowane**, **zaznacz**, **Ukryj niezaznaczone**.<br />     Mapa ukrywa niewybrane węzły, a Analizator identyfikuje nowe węzły jako centra.|
 |**Analizator węzłów, do których nie istnieją odwołania**|Nie ma odwołań z innych węzłów. **Przestroga:**  Sprawdź wszystkie te przypadki przed założeniem, że kod nie jest używany. Niektóre zależności, takie jak zależności XAML i zależności w czasie wykonywania, nie mogą być statycznie w kodzie.|
 
-Po zastosowaniu analizatory mapy kodu będą nadal działać. Jeśli zmienisz mapę, wszelkie zastosowane analizatory automatycznie przetworzyją zaktualizowaną mapę. Aby zatrzymać działanie analizatora, na pasku narzędzi Mapa wybierz pozycję **układ**  > **analizatory**. Wyłącz wybrany Analizator.
+Po zastosowaniu analizatory mapy kodu będą nadal działać. Jeśli zmienisz mapę, wszelkie zastosowane analizatory automatycznie przetworzyją zaktualizowaną mapę. Aby zatrzymać działanie analizatora, na pasku narzędzi Mapa wybierz pozycję **układ** > **analizatory**. Wyłącz wybrany Analizator.
 
 > [!TIP]
 > W przypadku bardzo dużej mapy uruchomienie analizatora może spowodować wyjątek braku pamięci. W takim przypadku należy zmodyfikować mapę, aby zmniejszyć jej zakres lub wygenerować mniejszą, a następnie uruchomić Analizator.

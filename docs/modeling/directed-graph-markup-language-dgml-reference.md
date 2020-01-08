@@ -2,17 +2,17 @@
 title: Dokumentacja języka DGML (Directed Graph Markup Language)
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983673"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596639"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 
@@ -37,7 +37,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
    `BackgroundImage` — lokalizacja pliku obrazu do użycia jako tło w formie mapy.
 
-   `GraphDirection` — gdy mapa jest ustawiona na układ drzewa (`Sugiyama`), Rozmieść węzły tak, aby większość przepływów linków w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight` lub `RightToLeft`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection` — gdy mapa jest ustawiona na układ drzewa (`Sugiyama`), Rozmieść węzły tak, aby większość przepływów linków w określonym kierunku: `TopToBottom`, `BottomToTop`, `LeftToRight`lub `RightToLeft`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    `Layout` — Ustaw mapę dla następujących układów: `None`, `Sugiyama` (układ drzewa), `ForceDirected` (szybkie klastry) lub `DependencyMatrix`. Zobacz [Zmiana układu mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
@@ -96,7 +96,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
    `Label` — nazwa wyświetlana węzła.
 
-   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
@@ -104,7 +104,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
    `Group` — Jeśli węzeł zawiera inne węzły, ustaw ten atrybut na `Expanded` lub `Collapsed`, aby pokazać lub ukryć jego zawartość. Musi istnieć element `<Link/>`, który zawiera atrybut `Category="Contains"` i określa węzeł nadrzędny jako węzeł źródłowy i węzeł podrzędny jako węzeł docelowy. Zobacz [elementy kodu grupy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` — Ustaw ten atrybut na `Visible`, `Hidden` lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [ukrywanie lub pokazywanie węzłów i linków](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` — Ustaw ten atrybut na `Visible`, `Hidden`lub `Collapsed`. Używa `System.Windows.Visibility`. Zobacz [ukrywanie lub pokazywanie węzłów i linków](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
    `Reference` — Ustaw ten atrybut na link do dokumentu lub adresu URL. Zobacz [łączenie dokumentów lub adresów URL z elementami kodu i łączami](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
@@ -161,7 +161,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
    `Label` — wyświetlana nazwa linku
 
-   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
@@ -218,7 +218,7 @@ W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
 
    W przykładzie dla tego elementu Kategoria `FailedTest` dziedziczy atrybut `Stroke` z kategorii `PassedTest`. Zobacz "aby utworzyć kategorie hierarchiczne" w temacie [Dostosowywanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Przykład:
 

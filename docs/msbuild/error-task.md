@@ -1,5 +1,5 @@
 ---
-title: Error — zadanie | Dokumentacja firmy Microsoft
+title: Błąd — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,40 +13,40 @@ helpviewer_keywords:
 - Error task [MSBuild]
 - MSBuild, Error task
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821138"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596362"
 ---
 # <a name="error-task"></a>Error — Zadanie
-Zatrzymuje kompilację i rejestruje błąd oparte na ocenianą instrukcji warunkowej.
+Kończy kompilację i rejestruje błąd na podstawie ocenianej instrukcji warunkowej.
 
 ## <a name="parameters"></a>Parametry
-W poniższej tabeli opisano parametry `Error` zadania.
+W poniższej tabeli opisano parametry zadania `Error`.
 
 | Parametr | Opis |
 |---------------| - |
-| `Code` | Opcjonalnie `String` parametru.<br /><br /> Kod błędu do skojarzenia z powodu błędu. |
-| `File` | Opcjonalnie `String` parametru.<br /><br /> Nazwa pliku który zawiera błąd. Jeśli nazwa pliku nie zostanie podany, plik zawierający błąd zadania będą używane. |
-| `HelpKeyword` | Opcjonalnie `String` parametru.<br /><br /> Słowo kluczowe pomocy do skojarzenia z powodu błędu. |
-| `Text` | Opcjonalnie `String` parametru.<br /><br /> Tekst błędu, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestruje Jeśli `Condition` daje w wyniku parametru `true`. |
+| `Code` | Opcjonalny parametr `String`.<br /><br /> Kod błędu, który ma zostać skojarzony z błędem. |
+| `File` | Opcjonalny parametr `String`.<br /><br /> Nazwa pliku, który zawiera błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie błędu. |
+| `HelpKeyword` | Opcjonalny parametr `String`.<br /><br /> Słowo kluczowe pomocy do skojarzenia z błędem. |
+| `Text` | Opcjonalny parametr `String`.<br /><br /> Tekst błędu, który [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dzienniki, jeśli parametr `Condition` zostanie oszacowany jako `true`. |
 
 ## <a name="remarks"></a>Uwagi
-`Error` Zadanie pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów, aby wystawić rejestratorów tekst błędu i Zatrzymaj tworzenie wykonywania.
+Zadanie `Error` pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty do wydawania tekstu błędów dla rejestratorów i zatrzymania wykonywania kompilacji.
 
-Jeśli `Condition` daje w wyniku parametru `true`, kompilacja zostanie zatrzymana i zostanie zarejestrowany błąd. Jeśli `Condition` parametr nie istnieje, błąd jest rejestrowane i zatrzymuje wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [dzienniki kompilacji uzyskiwanie](../msbuild/obtaining-build-logs-with-msbuild.md).
+Jeśli `Condition` parametr oblicza `true`, kompilacja zostanie zatrzymana i zostanie zarejestrowany błąd. Jeśli parametr `Condition` nie istnieje, zostanie zarejestrowany błąd i zostanie zatrzymane wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ustawione. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość `Text` parametru `Error` zadania.
+Poniższy przykład kodu sprawdza, czy są ustawione wszystkie wymagane właściwości. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość parametru `Text` zadania `Error`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

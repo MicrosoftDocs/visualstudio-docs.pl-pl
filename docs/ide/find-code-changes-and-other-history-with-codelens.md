@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538955"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588658"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -71,7 +71,7 @@ Aby wyświetlić relacje między kodem i jego odwołaniami, [Utwórz mapę kodu]
 
 Sprawdź historię kodu, aby dowiedzieć się, co się stało z kodem. Możesz też przejrzeć zmiany przed ich scaleniem z kodem, aby lepiej zrozumieć, jak zmiany w innych gałęziach mogą wpłynąć na kod.
 
-Potrzebujesz:
+Potrzebne elementy:
 
 - Visual Studio Enterprise lub wersja Professional
 
@@ -120,7 +120,7 @@ Znajdź zmiany dla całego pliku w wskaźnikach poziomu plików w dolnej częśc
 
 Aby uzyskać więcej szczegółowych informacji na temat zmiany, kliknij prawym przyciskiem myszy ten element. W zależności od tego, czy korzystasz z usługi TFVC, czy git, dostępne są opcje porównywania wersji pliku, wyświetlania szczegółów i śledzenia zestawu zmian, pobierania wybranej wersji pliku i wysyłania wiadomości e-mail do autora tej zmiany. Niektóre z tych szczegółów są wyświetlane w **Team Explorer**.
 
-Możesz również zobaczyć, kto zmienił swój kod w czasie. Może to pomóc znaleźć wzorce w zmianach zespołu i ocenić ich wpływ.
+Możesz również zobaczyć, kto zmienił swój kod w czasie. Może to pomóc Ci znaleźć wzorce w zmiany swojego zespołu i ocena ich skutków.
 
 ![CodeLens: Zobacz historię zmian kodu jako Graf](../ide/media/codelens.png)
 
@@ -246,7 +246,7 @@ Aby wybrać wskaźniki przy użyciu klawiatury, naciśnij i przytrzymaj klawisz 
 > [!NOTE]
 > Aby wybrać wskaźnik **przeglądów** , przytrzymaj wciśnięty klawisz **Alt** przy użyciu klawiszy strzałek w lewo i w prawo, aby przejść.
 
-## <a name="q--a"></a>p & A
+## <a name="q--a"></a>Pytania i odpowiedzi
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Jak mogę wyłączyć lub włączyć CodeLens lub wybrać wskaźniki, które mają być wyświetlane?
 
@@ -348,7 +348,7 @@ Odp **.:** Strzałka **wersja lokalna** wskazuje najnowszą grupę zmian w lokal
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: Czy mogę zarządzać sposobem, w jaki CodeLens przetwarza kod, aby pokazać historię i połączone elementy?
 
-Odp **.:** Opcję. Jeśli Twój kod znajduje się w programie TFS, użyj [polecenia CodeIndex](../ide/codeindex-command.md) z [poleceniem TFS config](/azure/devops/server/command-line/tfsconfig-cmd).
+**Odpowiedź:** tak. Jeśli Twój kod znajduje się w programie TFS, użyj [polecenia CodeIndex](../ide/codeindex-command.md) z [poleceniem TFS config](/azure/devops/server/command-line/tfsconfig-cmd).
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>P: moje CodeLens wskaźniki testowe nie pojawiają się już w moim pliku po pierwszym otwarciu rozwiązania. Jak można je załadować?
 

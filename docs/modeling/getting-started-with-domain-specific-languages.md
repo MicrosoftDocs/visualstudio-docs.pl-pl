@@ -2,17 +2,17 @@
 title: Wprowadzenie do języków specyficznych dla domeny
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596570"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -39,11 +39,11 @@ Pozostała część tego omówienia to przewodnik, w którym wprowadzono podstaw
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby zdefiniować DSL, należy zainstalować następujące składniki:
+Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| {1&gt;Visual Studio&lt;1} | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | Modeling SDK dla programu Visual Studio | |
 
@@ -119,7 +119,7 @@ Rozwiązanie DSL można uruchomić zaraz po jego utworzeniu. Później można zm
 
 3. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik modelu o nazwie **test** z **Eksplorator rozwiązań**.
 
-     \- lub-
+     \- lub —
 
      Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **element**. W oknie dialogowym **Dodaj element** wybierz typ pliku DSL.
 
@@ -147,7 +147,7 @@ Definicja DSL pozwala określić, jak model pojawia się na diagramie. Można wy
 
 Model można wyświetlić jako drzewo w widoku **Eksploratora** podczas edytowania modelu. Podczas dodawania kształtów do diagramu elementy modelu są również wyświetlane w Eksploratorze. Eksploratora można używać nawet wtedy, gdy nie ma diagramu.
 
-Jeśli nie widzisz Eksploratora w wystąpieniu debugowania programu Visual Studio, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij polecenie **Eksplorator** *> \<Your* .
+Jeśli nie widzisz Eksploratora w wystąpieniu debugowania programu Visual Studio, w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij *\<* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>Interfejs API DSL
 
@@ -171,7 +171,7 @@ Po zmianie pliku modelu zobaczysz odpowiednie zmiany w wygenerowanych plikach po
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-     \- lub-
+     \- lub —
 
      Kliknij prawym przyciskiem myszy szablony, które chcesz wygenerować ponownie, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
@@ -209,7 +209,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
     2. Otwórz okno Właściwości i umieść go tak, aby można było zobaczyć w tym samym czasie Eksploratora i właściwości DSL.
 
-    3. W Eksploratorze DSL rozwiń węzeł **Edytor**, **karty PRZYBORNIK**, *\<your DSL >* , a następnie **Narzędzia**.
+    3. W Eksploratorze DSL rozwiń węzeł **Edytor**, **karty przybornika**, *\<> DSL*, a następnie **Narzędzia**.
 
     4. Kliknij przycisk **example**. Jest to element przybornika, który służy do tworzenia elementów.
 
@@ -333,7 +333,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
     1. W **Eksploratorze DSL**rozwiń węzeł **Edytor** , a następnie **kartę Przybornik**.
 
-    2. Kliknij prawym przyciskiem myszy *\<your DSL >* a następnie kliknij polecenie **Dodaj nowy element**.
+    2. Kliknij prawym przyciskiem myszy *\<> DSL* , a następnie kliknij polecenie **Dodaj nowy element**.
 
     3. Ustaw właściwość **name** nowego narzędzia i ustaw jej właściwość **Class** na miejscowość.
 
@@ -341,7 +341,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
 7. Utwórz narzędzie łącznika do tworzenia linku między miastami i osobami.
 
-    1. Kliknij prawym przyciskiem myszy *\<your DSL >* a następnie kliknij polecenie **Dodaj nowe łączniki**.
+    1. Kliknij prawym przyciskiem myszy *\<> DSL* , a następnie kliknij polecenie **Dodaj nowe łączniki**.
 
     2. Ustaw właściwość Name nowego narzędzia.
 
@@ -392,7 +392,7 @@ Zmień nazwy istniejących klas i relacji domeny. Na przykład rozpoczynając od
 
  Możesz użyć tej samej procedury, aby zainstalować DSL na własnym komputerze, aby nie trzeba było korzystać z eksperymentalnego wystąpienia programu Visual Studio.
 
- Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a>Usuwanie starej eksperymentalnej językami DSL
  Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera przez zresetowanie wystąpienia eksperymentalnego programu Visual Studio.

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 9e8e306aea1615649223c96f0c5a7041574f844d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588853"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza
 
@@ -39,7 +39,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
     Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![ obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio ](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
+   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
    >
    > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
    >
-   > ![Obciążenie .NET Core w Instalator programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
    > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
 
@@ -130,9 +130,9 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
 7. Ustaw właściwość **(Name)** na **plusLeftLabel**.
 
-8. Wybierz etykietę **plusLeftLabel** , a następnie wybierz klawisze **Ctrl** +**C** lub **Kopiuj** w menu **Edycja** .
+8. Wybierz etykietę **plusLeftLabel** , a następnie wybierz klawisze **Ctrl**+**C** lub **Kopiuj** w menu **Edycja** .
 
-9. Wklej etykietę trzy razy, wybierając klawisze **Ctrl** +**V** lub **Wklej** w menu **Edycja** .
+9. Wklej etykietę trzy razy, wybierając klawisze **Ctrl**+**V** lub **Wklej** w menu **Edycja** .
 
 10. Rozmieść trzy nowe etykiety tak, aby znajdowały się w wierszu z prawej strony etykiety **plusLeftLabel** .
 
@@ -198,7 +198,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 6. Ustaw wartość właściwości **TabIndex** dla formantu **startButton** na **1**.
 
     > [!NOTE]
-    > Właściwość **TabIndex** ustawia kolejność formantów, gdy wybierany jest klawisz **Tab** . Aby zobaczyć, jak to działa, Otwórz dowolne okno dialogowe (na przykład na pasku menu wybierz **plik**  > **Otwórz**), a następnie wybierz klawisz **Tab** kilka razy. Obejrzyj, jak kursor przemieszcza się z kontrolki, aby kontrolować każde wybranie klawisza **Tab** . Programista zdecydował o kolejności podczas tworzenia tego formularza.
+    > Właściwość **TabIndex** ustawia kolejność formantów, gdy wybierany jest klawisz **Tab** . Aby zobaczyć, jak to działa, Otwórz dowolne okno dialogowe (na przykład na pasku menu wybierz **plik** > **Otwórz**), a następnie wybierz klawisz **Tab** kilka razy. Obejrzyj, jak kursor przemieszcza się z kontrolki, aby kontrolować każde wybranie klawisza **Tab** . Programista zdecydował o kolejności podczas tworzenia tego formularza.
 
 7. Ustaw wartość właściwości **TabIndex** dla kontrolki sum NumericUpDown na **2**, dla kontrolki różnica na **3**, dla kontrolki produktu na **4**, a dla kontrolki ilorazu wartość **5**.
 
@@ -206,7 +206,7 @@ Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet
 
      ![Początkowy formularz quizu matematycznego](../ide/media/express_formlaidout.png)
 
-8. Aby sprawdzić, czy właściwość **TabIndex** działa zgodnie z oczekiwaniami, Zapisz i uruchom program, wybierając klawisz **F5** lub wybierając pozycję **Debuguj**  > **Rozpocznij debugowanie** na pasku menu, a następnie wybierz klawisz **Tab** kilka razy.
+8. Aby sprawdzić, czy właściwość **TabIndex** działa zgodnie z oczekiwaniami, Zapisz i uruchom program, wybierając klawisz **F5** lub wybierając pozycję **Debuguj** > **Rozpocznij debugowanie** na pasku menu, a następnie wybierz klawisz **Tab** kilka razy.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

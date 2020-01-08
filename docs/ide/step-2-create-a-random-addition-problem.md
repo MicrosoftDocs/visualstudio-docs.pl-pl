@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3100ed6951a0130824f4643086cff88a45c40ef8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576292"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588762"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Krok 2. Tworzenie losowego problemu dodawania
 
@@ -33,7 +33,7 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
 1. W projektancie formularzy wybierz formularz (**Form1**).
 
-2. Na pasku menu wybierz polecenie **wyświetl**  > **kod**.
+2. Na pasku menu wybierz polecenie **wyświetl** > **kod**.
 
      *Form1.cs* lub *Form1. vb* pojawia się w zależności od używanego języka programowania, aby można było wyświetlić kod związany z formularzem.
 
@@ -67,7 +67,7 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
      Należy zauważyć, że po wprowadzeniu kropki (.) po `randomizer` w kodzie zostanie otwarte okno IntelliSense z wszystkimi metodami losowych obiektów, które można wywołać. Na przykład technologia IntelliSense wyświetla `Next()` metody w następujący sposób.
 
-     ](../ide/media/express_randomwhite.png) metody ![Next<br/>
+     ![następnej metody](../ide/media/express_randomwhite.png)<br/>
 *Next — Metoda*
 
      Po wprowadzeniu kropki po obiekcie funkcja IntelliSense wyświetla listę elementów członkowskich obiektu, takich jak właściwości, metody i zdarzenia.
@@ -97,7 +97,7 @@ W drugiej części tego samouczka nastąpi wyzwanie quizu poprzez dodanie proble
 
      Pojawia się losowy błąd dodawania, jak pokazano na poniższym zrzucie ekranu.
 
-     problem z dodaniem ![Random ](../ide/media/express_additionproblem.png)<br/>
+     ![losowy błąd dodawania](../ide/media/express_additionproblem.png)<br/>
 *Problem losowego dodawania*
 
      W następnym kroku samouczka dodasz sumę.
