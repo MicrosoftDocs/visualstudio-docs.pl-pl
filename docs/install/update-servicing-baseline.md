@@ -5,19 +5,19 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: doughall
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888581"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590959"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
 
@@ -35,7 +35,7 @@ Opcja linia bazowa obsługi zapewnia deweloperom i administratorom większą ela
 Aby zacząć korzystać z linii bazowej obsługi, Pobierz stały program inicjujący Instalatora programu Visual Studio z [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0). Program inicjujący ma linki do konfiguracji produktu, obciążeń i składników dla tej konkretnej wersji.
 
 > [!NOTE]
-> Należy zachować ostrożność w odróżnieniu od programu inicjującego o stałej wersji i standardowych programów inicjujących. Standardowe programy inicjujące są skonfigurowane do korzystania z najnowszej dostępnej wersji programu Visual Studio. Standardowa boostrappers ma numer w nazwie pliku (na przykład vs_enterprise__123456789-123456789. exe), gdy są pobierane z usługi My.VisualStudio.com.
+> Należy zachować ostrożność w odróżnieniu od programu inicjującego o stałej wersji i standardowych programów inicjujących. Standardowe programy inicjujące są skonfigurowane do korzystania z najnowszej dostępnej wersji programu Visual Studio. Standardowa boostrappers ma numer w nazwie pliku (na przykład vs_enterprise__123456789 -123456789. exe), gdy są pobierane z usługi My.VisualStudio.com.
 
 Podczas instalacji Administratorzy przedsiębiorstwa muszą skonfigurować swoich klientów, aby uniemożliwić aktualizowanie ich przez klientów do najnowszej wersji. Można to zrobić na kilka sposobów:
 - [Zmień ustawienie `channelUri` w pliku konfiguracji odpowiedzi](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) , aby użyć manifestu kanału w układzie lub folderze lokalnym.
@@ -83,9 +83,9 @@ W przypadku instalacji internetowej Uruchom nowy program inicjujący stałej wer
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie programu Visual Studio](install-visual-studio.md)
-* [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](tools-for-managing-visual-studio-instances.md)
 * [Jak zdefiniować ustawienia w pliku odpowiedzi](automated-installation-with-response-file.md)
-* [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
+* [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

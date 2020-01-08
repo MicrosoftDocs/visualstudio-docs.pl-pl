@@ -2,17 +2,17 @@
 title: Korzystanie z formantów HTML5 w kodowanych testach interfejsu użytkownika
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659777"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585590"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -36,14 +36,14 @@ Kodowane testy interfejsu użytkownika obejmują obsługę niektórych formantó
 
 ![Formant audio HTML5](../test/media/codedui_html5_audio.png)
 
-|Akcja|Zapisywanie|Wygenerowany kod|
+|Akcja|Nagrywanie|Wygenerowany kod|
 |-|---------------|-|
-|**Odtwórz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Odtwórz \<name > audio z 00:00:00|HtmlAudio. Play (TimeSpan)|
-|**Przeszukiwanie określonego czasu w dźwięku**|Szukaj \<name > audio do 00:01:48|HtmlAudio. seek (TimeSpan)|
-|**Wstrzymaj dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wstrzymywanie \<name > audio w 00:01:53|HtmlAudio. Pause (TimeSpan)|
-|**Wycisz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wycisz \<name > audio|HtmlAudio. Wycisz ()|
-|**Wycisz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wyłącz wyciszenie \<name > audio|HtmlAudio. unwyciszony ()|
-|**Zmień głośność dźwięku**|Ustaw głośność \<name > audio na 79%|HtmlAudio. SetVolume (float)|
+|**Odtwórz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Odtwórz nazwę \<> dźwięk z 00:00:00|HtmlAudio.Play(TimeSpan)|
+|**Przeszukiwanie określonego czasu w dźwięku**|Wyszukaj nazwę \<> dźwięk do 00:01:48|HtmlAudio.Seek(TimeSpan)|
+|**Wstrzymaj dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wstrzymaj \<nazwę > audio w 00:01:53|HtmlAudio.Pause(TimeSpan)|
+|**Wycisz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wycisz \<nazwę > audio|HtmlAudio.Mute()|
+|**Wycisz dźwięk**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wyłącz wyciszenie nazwy \<> audio|HtmlAudio.Unmute()|
+|**Zmień głośność dźwięku**|Ustaw wartość \<nazwy > audio na 79%|HtmlAudio.SetVolume(float)|
 
 Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) , aby uzyskać listę właściwości, na których można dodać potwierdzenie.
 
@@ -59,14 +59,14 @@ Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 ![Formant wideo HTML5](../test/media/codedui_html5_video.png)
 
-|Akcja|Zapisywanie|Wygenerowany kod|
+|Akcja|Nagrywanie|Wygenerowany kod|
 |-|---------------|-|
-|**Odtwórz wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Odtwórz \<name > wideo z 00:00:00|HtmlVideo. Play (TimeSpan)|
-|**Przeszukaj do określonego czasu w filmie wideo**|Szukaj \<name > wideo do 00:01:48|HtmlVideo. seek (TimeSpan)|
-|**Wstrzymaj wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wstrzymywanie \<name > wideo o godzinie 00:01:53|HtmlVideo. Pause (TimeSpan)|
-|**Wycisz wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wycisz \<name > wideo|HtmlVideo. Wycisz ()|
-|**Odcisz wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wyciszenie \<name > wideo|HtmlVideo. unwyciszony ()|
-|**Zmień ilość wideo**|Ustaw głośność \<name > wideo na 79%||
+|**Odtwórz wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Odtwórz nazwę \<> wideo z 00:00:00|HtmlVideo.Play(TimeSpan)|
+|**Przeszukaj do określonego czasu w filmie wideo**|Wyszukaj nazwę \<> wideo do 00:01:48|HtmlVideo.Seek(TimeSpan)|
+|**Wstrzymaj wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wstrzymaj \<nazwę > wideo o godzinie 00:01:53|HtmlVideo.Pause(TimeSpan)|
+|**Wycisz wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wycisz \<nazwę > wideo|HtmlVideo.Mute()|
+|**Odcisz wideo**<br /><br /> Bezpośrednio z kontrolki lub menu po kliknięciu prawym przyciskiem myszy.|Wycisz \<nazwę > wideo|HtmlVideo.Unmute()|
+|**Zmień ilość wideo**|Ustaw wartość \<nazwy > wideo na 79%||
 
 Zobacz [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) , aby uzyskać listę właściwości, na których można dodać potwierdzenie.
 
@@ -87,4 +87,4 @@ Zobacz [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/vi
 - [Elementy HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
-- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

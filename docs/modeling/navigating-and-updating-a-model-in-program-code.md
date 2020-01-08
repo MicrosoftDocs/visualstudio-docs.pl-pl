@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658364"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566179"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Nawigowanie po modelu i aktualizowanie go w kodzie programu
 
@@ -55,7 +55,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiać ich wła�
 
  `henry.Name = "Henry VIII";`
 
- Jeśli w definicji DSL jest **obliczana**wartość **rodzaju** właściwości, nie można jej ustawić. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).
+ Jeśli w definicji DSL jest **obliczana**wartość **rodzaju** właściwości, nie można jej ustawić. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relacje
  Relacje domeny zdefiniowane w definicji DSL stają się parami właściwości, jeden w klasie na każdym końcu relacji. Nazwy właściwości są wyświetlane na diagramie DslDefinition jako etykiety na rolach na każdej stronie relacji. W zależności od liczebności roli typ właściwości jest albo klasą na drugim końcu relacji, albo kolekcją tej klasy.
@@ -129,7 +129,7 @@ Można napisać kod, aby tworzyć i usuwać elementy modelu, ustawiać ich wła�
 - ElementLink — wszystkie relacje są ElementLinks
 
 ## <a name="transaction"></a>Wykonaj zmiany wewnątrz transakcji
- Za każdym razem, gdy kod programu zmienia się w sklepie, musi to zrobić w ramach transakcji. Dotyczy to wszystkich elementów modelu, relacji, kształtów, diagramów i ich właściwości. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Modeling.Transaction>.
+ Za każdym razem, gdy kod programu zmienia się w sklepie, musi to zrobić w ramach transakcji. Dotyczy to wszystkich elementów modelu, relacji, kształtów, diagramów i ich właściwości. Aby uzyskać więcej informacji, zobacz temat <xref:Microsoft.VisualStudio.Modeling.Transaction>.
 
  Najbardziej wygodną metodą zarządzania transakcjami jest wyrażenie `using` ujęte w instrukcji `try...catch`:
 
@@ -262,7 +262,7 @@ W niektórych przypadkach usuwanie jest uniemożliwione przez istnienie blokady,
 
  Wszystkie te trzy metody mają ten sam efekt. Wystarczy użyć jednego z nich.
 
- Jeśli rola ma wartość 0.. 1 lub 1.. 1 liczebność, można ustawić ją na `null` lub inną wartość:
+ Jeśli rola ma wartość 0.. 1 lub 1.. 1 liczebność, można ustawić ją na `null`lub inną wartość:
 
  `edward.FamilyTreeModel = null;`//lub:
 

@@ -1,18 +1,18 @@
 ---
-title: Kod wizualizacji C# testów jednostkowych
+title: Testowanie jednostek kodu języka Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659844"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590868"
 ---
 # <a name="unit-test-c-code"></a>Test jednostkowy kodu w języku C#
 
@@ -22,21 +22,21 @@ Klasa **Rooter** , która jest klasą testowa, implementuje funkcję, która obl
 
 W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu najpierw napiszesz test, który weryfikuje określone zachowanie w systemie, który jest testowany, a następnie napisze kod, który przeszedł test.
 
-## <a name="create-the-solution-and-the-unit-test-project"></a>Utwórz rozwiązanie i projekt testu jednostkowego
+## <a name="create-the-solution-and-the-unit-test-project"></a>Tworzenie rozwiązania i projektu testu jednostkowego
 
-1. W menu **plik** wybierz **Nowy** **projekt** > .
+1. Na **pliku** menu, wybierz **New** > **projektu**.
 
 2. Wyszukaj i wybierz szablon projektu **pusta aplikacja (uniwersalna systemu Windows)** .
 
 3. Nazwij projekt **matematyczny**.
 
-4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj**  > **Nowy projekt**.
+4. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
 
 5. Wyszukaj i wybierz szablon projektu **aplikacja testów jednostkowych (uniwersalna systemu Windows)** .
 
 6. Nazwij projekt testowy **RooterTests**.
 
-## <a name="verify-that-the-tests-run-in-test-explorer"></a>Sprawdź, czy testy są uruchamiane w Eksploratorze testów
+## <a name="verify-that-the-tests-run-in-test-explorer"></a>Sprawdź, czy testy zostaną wykonane w Eksploratorze testów
 
 1. Wstaw kod testu do **TestMethod1** w pliku *UnitTest.cs* :
 
@@ -62,13 +62,13 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 ::: moniker-end
 
-   Projekt testowy zostanie skompilowany i uruchomiony. Poczekaj, ponieważ może to trochę potrwać. Zostanie wyświetlone okno **Eksplorator testów** , a test zostanie wyświetlony na liście **zakończonych testów**. Okienko **Podsumowanie** u dołu okna zawiera dodatkowe szczegółowe informacje o wybranym teście.
+   Projekt testowy skompilowane i uruchomione. Poczekaj, ponieważ może to trochę potrwać. **Eksploratora testów** zostanie wyświetlone okno i test znajduje się w obszarze **testy zakończone powodzeniem**. **Podsumowanie** okienku u dołu okna udostępnia dodatkowe szczegóły dotyczące wybranego testu.
 
-## <a name="add-the-rooter-class-to-the-maths-project"></a>Dodawanie klasy Rooter do projektu Maths
+## <a name="add-the-rooter-class-to-the-maths-project"></a>Dodaj klasę Rooter do projektu matematycznych
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **matematyczny** , a następnie wybierz polecenie **Dodaj** **klasę** > .
 
-2. Nazwij plik klasy *Rooter.cs*.
+2. Nazwa pliku klasy *Rooter.cs*.
 
 3. Dodaj następujący kod do pliku *Rooter.Cser* klasy **root** :
 
@@ -96,17 +96,17 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 1. Dodaj odwołanie z projektu RooterTests do aplikacji Maths.
 
-    1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **RooterTests** , a następnie wybierz polecenie **Dodaj**  > **odwołanie**.
+    1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **RooterTests** , a następnie wybierz polecenie **Dodaj** > **odwołanie**.
 
-    2. W oknie dialogowym **Dodawanie odwołania — RooterTests** rozwiń węzeł **rozwiązanie** i wybierz pozycję **projekty**. Wybierz projekt **Maths** .
+    2. W **Dodaj odwołanie - RooterTests** okna dialogowego rozwiń **rozwiązania** i wybierz polecenie **projektów**. Wybierz projekt **Maths** .
 
-        ![Dodaj odwołanie do projektu Maths](../test/media/ute_cs_windows_addreference.png)
+        ![Dodaj odwołanie do projektu matematycznych](../test/media/ute_cs_windows_addreference.png)
 
 2. Dodaj instrukcję `using` do pliku *UnitTest.cs* :
 
     1. Otwórz *UnitTest.cs*.
 
-    2. Dodaj następujący kod poniżej wiersza `using Microsoft.VisualStudio.TestTools.UnitTesting;`:
+    2. Dodaj następujący kod poniżej `using Microsoft.VisualStudio.TestTools.UnitTesting;` wiersza:
 
        ```csharp
        using Maths;
@@ -126,13 +126,13 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
    }
    ```
 
-   Nowy test zostanie wyświetlony w **Eksploratorze testów** w węźle **nie uruchomiono testy** .
+   Nowy test jest wyświetlany w **Eksploratora testów** w **testy nieuruchamiane** węzła.
 
 4. Aby uniknąć "ładunek zawiera co najmniej dwa pliki z tą samą ścieżką docelową", w **Eksplorator rozwiązań**rozwiń węzeł **Właściwości** w projekcie **Maths** , a następnie usuń plik *default. Rd. XML* .
 
 ::: moniker range="vs-2017"
 
-6. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+6. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
    Rozwiązanie zostanie skompilowane i testy są uruchamiane i przekazywane.
 
@@ -150,9 +150,9 @@ W tym artykule przedstawiono *Programowanie oparte na testach*. W tym podejściu
 
 ::: moniker-end
 
-Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można uruchomić testy, które wywołują funkcje w projekcie aplikacji. Teraz możesz zacząć pisać prawdziwe testy i kod.
+Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można uruchomić testy, które wywołują funkcje w projekcie aplikacji. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Iteracyjnie rozszerza testy i przekazują je
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Iteracyjne Udoskonal testy i nadawać im przekazać
 
 1. Dodaj nowy test o nazwie **RangeTest**:
 
@@ -172,16 +172,16 @@ Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można
    ```
 
    > [!TIP]
-   > Zalecamy, aby nie zmieniać testów, które zostały zakończone. Zamiast tego Dodaj nowy test.
+   > Firma Microsoft zaleca, nie należy zmieniać testy, które zostały przekazane. Zamiast tego Dodaj nowy test.
 
 2. Uruchom test **RangeTest** i sprawdź, czy ten błąd nie powiódł się.
 
    ![RangeTest kończy się niepowodzeniem](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > Natychmiast po napisaniu testu należy go uruchomić, aby sprawdzić, czy ten błąd nie powiódł się. Dzięki temu można uniknąć łatwego błędu podczas pisania testu, który nigdy nie powiedzie się.
+   > Natychmiast po napisaniu testu należy go uruchomić, aby sprawdzić, czy ten błąd nie powiódł się. Dzięki temu można uniknąć łatwe Błąd zapisywania testu, który nigdy nie zakończy się niepowodzeniem.
 
-3. Podnieś poziom testowanego kodu, tak aby nowe testy zostały przekazane. Zmień funkcję **SquareRoot** w *Rooter.cs* na:
+3. Tak, aby nowy test zakończy się pomyślnie, należy zwiększyć testowany kod. Zmień funkcję **SquareRoot** w *Rooter.cs* na:
 
    ```csharp
    public double SquareRoot(double x)
@@ -200,7 +200,7 @@ Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można
 
 ::: moniker range="vs-2017"
 
-4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+4. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
 ::: moniker-end
 
@@ -210,10 +210,10 @@ Zostały skonfigurowane projekty testów i aplikacji oraz sprawdzono, że można
 
 ::: moniker-end
 
-   Wszystkie trzy testy są teraz przekazywane.
+   Teraz kod przechodzi wszystkie trzy testy.
 
 > [!TIP]
-> Opracowuj kod przez dodanie testów pojedynczo. Upewnij się, że wszystkie testy są zakończone po każdej iteracji.
+> Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.
 
 ## <a name="refactor-the-code"></a>Refaktoryzacja kodu
 
@@ -234,7 +234,7 @@ W tej sekcji Refaktoryzacja dotyczy zarówno aplikacji, jak i kodu testowego, a 
 2. Uruchom wszystkie testy, aby upewnić się, że regresja nie została wprowadzona. Wszystkie te powinny być przekazywane.
 
 > [!TIP]
-> Stabilny zestaw dobrych testów jednostkowych daje pewność, że podczas zmiany kodu nie wprowadzono usterek.
+> Stabilne zestawy testów jednostkowych dobre daje pewność, że użytkownik nie wprowadzają błędów po zmianie kodu.
 
 ### <a name="eliminate-duplicated-code"></a>Eliminowanie duplikatu kodu
 

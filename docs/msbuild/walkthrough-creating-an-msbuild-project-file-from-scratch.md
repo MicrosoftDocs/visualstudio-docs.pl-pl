@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565984"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od podstaw
 Języki programowania, które są przeznaczone dla .NET Framework używają plików projektu MSBuild do opisywania i kontrolowania procesu kompilacji aplikacji. W przypadku tworzenia pliku projektu programu MSBuild przy użyciu programu Visual Studio odpowiedni kod XML zostanie automatycznie dodany do pliku. Warto jednak zapoznać się z tematem sposobu organizowania kodu XML i sposobu jego zmiany w celu sterowania kompilacją.
@@ -145,7 +145,7 @@ Minimalny plik projektu powinien wyglądać podobnie do następującego:
 </Project>
 ```
 
-Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przypadku zadanie`Csc`kompilatorem wizualnym C# jest jedynym zadaniem. Oczekuje ono listy plików źródłowych do skompilowania, a następnie jest określona przez wartość `Compile` elementu. Element `Compile` odwołuje się tylko do jednego pliku źródłowego, *HelloWorld.cs*.
+Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przypadku zadanie `Csc` kompilatorem wizualnym C# jest jedynym zadaniem. Oczekuje ono listy plików źródłowych do skompilowania, a następnie jest określona przez wartość `Compile` elementu. Element `Compile` odwołuje się tylko do jednego pliku źródłowego, *HelloWorld.cs*.
 
 > [!NOTE]
 > W elemencie Item można użyć symbolu wieloznacznego gwiazdki (\*), aby odwołać się do wszystkich plików mających rozszerzenie nazwy pliku *. cs* w następujący sposób:
@@ -219,7 +219,7 @@ Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przy
     <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />
     ```
 
-     Powoduje C# to wygenerowanie zestawu, który jest nazwany przez właściwość`AssemblyName`i umieszczenie go w folderze o nazwie właściwości`OutputPath`.
+     Powoduje C# to wygenerowanie zestawu, który jest nazwany przez właściwość `AssemblyName` i umieszczenie go w folderze o nazwie właściwości `OutputPath`.
 
 5. Zapisz zmiany.
 
@@ -242,7 +242,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 ```
 
 > [!NOTE]
-> Zalecamy dodanie ogranicznika ścieżki odwrotnej kreski ułamkowej (\\) na końcu nazwy folderu, gdy zostanie on określony w elemencie `OutputPath`, zamiast dodawać go w atrybucie `OutputAssembly` zadania `Csc`. Powodu
+> Zalecamy dodanie ogranicznika ścieżki odwrotnej kreski ułamkowej (\\) na końcu nazwy folderu, gdy zostanie on określony w elemencie `OutputPath`, zamiast dodawać go w atrybucie `OutputAssembly` zadania `Csc`. Zatem
 >
 > `<OutputPath>Bin\</OutputPath>`
 >

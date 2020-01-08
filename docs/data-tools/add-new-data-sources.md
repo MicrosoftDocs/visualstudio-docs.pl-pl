@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648898"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587059"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 
@@ -37,7 +37,7 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *Źródło 
 > [!NOTE]
 > Jeśli nie korzystasz z funkcji, zestawów danych, Entity Framework, LINQ to SQL, WCF ani programu SharePoint, pojęcie "Źródło danych" nie ma zastosowania. Po prostu Połącz się bezpośrednio z bazą danych przy użyciu obiektów SqlCommand i Komunikuj się bezpośrednio z bazą danych.
 
-Źródła danych można tworzyć i edytować za pomocą **Kreatora konfiguracji źródła danych** w aplikacji Windows Forms lub Windows Presentation Foundation. Aby uzyskać Entity Framework, najpierw utwórz klasy jednostek, a następnie uruchom kreatora, wybierając pozycję **Project**  > **Dodaj nowe źródło danych** (opisane w dalszej części tego artykułu).
+Źródła danych można tworzyć i edytować za pomocą **Kreatora konfiguracji źródła danych** w aplikacji Windows Forms lub Windows Presentation Foundation. Aby uzyskać Entity Framework, najpierw utwórz klasy jednostek, a następnie uruchom kreatora, wybierając pozycję **Project** > **Dodaj nowe źródło danych** (opisane w dalszej części tego artykułu).
 
 ![Kreator konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -46,7 +46,7 @@ W kontekście narzędzi danych .NET w programie Visual Studio termin *Źródło 
 Po utworzeniu źródła danych pojawia się ono w oknie narzędzia **źródła danych** .
 
 > [!TIP]
-> Aby otworzyć okno **źródła danych** , upewnij się, że projekt jest otwarty, a następnie naciśnij klawisz **Shift** +**Alt** +**D** lub wybierz pozycję **Widok**  >  inne**źródła danych** > **systemu Windows** .
+> Aby otworzyć okno **źródła danych** , upewnij się, że projekt jest otwarty, a następnie naciśnij klawisz **Shift**+**Alt**+**D** lub wybierz pozycję **Widok** > inne **źródła danych** > **systemu Windows** .
 
 Możesz przeciągnąć źródło danych z okna **źródła danych** na powierzchnię lub kontrolkę projektu formularza. Powoduje to wygenerowanie kodu standardowego, który wyświetla dane z magazynu danych.
 
@@ -60,13 +60,13 @@ Można utworzyć zestaw danych lub model Entity Framework, który będzie używa
 
 ### <a name="dataset"></a>Zestaw danych
 
-Aby utworzyć zestaw danych jako źródło danych, uruchom **Kreatora konfiguracji źródła danych** , wybierając pozycję **Project**  > **Dodaj nowe źródło danych**. Wybierz typ **źródła danych,** a następnie postępuj zgodnie z monitami, aby określić nowe lub istniejące połączenie z bazą danych albo plik bazy danych.
+Aby utworzyć zestaw danych jako źródło danych, uruchom **Kreatora konfiguracji źródła danych** , wybierając pozycję **Project** > **Dodaj nowe źródło danych**. Wybierz typ **źródła danych,** a następnie postępuj zgodnie z monitami, aby określić nowe lub istniejące połączenie z bazą danych albo plik bazy danych.
 
 ### <a name="entity-classes"></a>Klasy jednostek
 
 Aby utworzyć model Entity Framework jako źródło danych:
 
-1. Uruchom **kreatora Entity Data Model** , aby utworzyć klasy jednostek. Wybierz pozycję **projekt**  > **dodaj nowy element**  > **ADO.NET Entity Data Model**.
+1. Uruchom **kreatora Entity Data Model** , aby utworzyć klasy jednostek. Wybierz pozycję **projekt** > **dodaj nowy element** > **ADO.NET Entity Data Model**.
 
    ![Nowy element projektu Entity Framework modelu](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 

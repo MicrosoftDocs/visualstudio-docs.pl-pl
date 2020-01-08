@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Call Stack window, show on code map
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a918cc94cd242c74b672ff65c3d5093f111a25f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985037"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593307"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Metody mapowania dla stosu wywołań podczas debugowania w programie Visual Studio.
 
@@ -41,7 +41,7 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
  ![Debugowanie za pomocą stosów wywołań na mapach kodu](../debugger/media/debuggermap_overview.png)
 
- Będziesz potrzebować:
+ Będą potrzebne:
 
  ::: moniker range="vs-2017"
 
@@ -55,150 +55,150 @@ Utwórz mapę kodu, aby wizualnie śledzić stos wywołań podczas debugowania. 
 
 ::: moniker-end
 
-- Kod, który możesz debugować, taki jak Visual C#, Visual Basic, C++, JavaScript lub X + +
+- Kod, który można debugować, taki jak Visual C#, Visual Basic, C++, JavaScript lub X ++
 
   Zobacz:
 
-- [Wideo: Debuguj wizualnie dzięki integracji z debugerem mapy kodu (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
+- [Wideo: Debugowanie wizualne za pomocą integracji debugera mapy kodu (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
-- [Mapowanie stosu wywołań](#MapStack)
+- [Mapuj stos wywołań](#MapStack)
 
-- [Utwórz notatki dotyczące kodu](#MakeNotes)
+- [Robienie notatek dotyczących kodu](#MakeNotes)
 
-- [Aktualizowanie mapy za pomocą następnego stosu wywołań](#UpdateMap)
+- [Aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap)
 
-- [Dodaj kod pokrewny do mapy](#AddRelatedCode)
+- [Dodawanie kodu pokrewnego do mapy](#AddRelatedCode)
 
-- [Znajdowanie usterek przy użyciu mapy](#FindBugs)
+- [Znajdowanie błędów za pomocą mapy](#FindBugs)
 
-- [p & A](#QA)
+- [PYTANIA I ODPOWIEDZI](#QA)
 
-  Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można używać podczas pracy z mapami kodu, zobacz [przeglądanie i zmiana rozmieszczenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
+  Szczegóły poleceń i akcji, można użyć podczas pracy z mapami kodu można znaleźć [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
 
-## <a name="MapStack"></a>Mapowanie stosu wywołań
+## <a name="MapStack"></a> Mapuj stos wywołań
 
 1. Rozpocznij debugowanie. (Klawiatura: **F5**)
 
-2. Gdy aplikacja przejdzie w tryb przerwania lub przejdziesz do funkcji, wybierz pozycję **Mapa kodu**. (Klawiatura: **Ctrl**  + **SHIFT**  +  **`** )
+2. Po skopiowaniu aplikacja przejdzie do trybu podziału lub wkroczysz do funkcji, wybierz **mapy kodu**. (Klawiatura: **Ctrl** + **Shift** +  **`** )
 
-     ![Wybierz pozycję Mapa kodu, aby rozpocząć mapowanie stosu wywołań](../debugger/media/debuggermap_choosecodemap.png)
+     ![Wybierz mapę kodu, aby rozpocząć mapowanie stosu wywołań](../debugger/media/debuggermap_choosecodemap.png)
 
      Bieżący stos wywołań jest wyświetlany w kolorze pomarańczowym na nowej mapie kodu:
 
      ![Zobacz stos wywołań na mapie kodu](../debugger/media/debuggermap_seeundocallstack.png)
 
-     Mapa zostanie automatycznie zaktualizowana podczas kontynuowania debugowania. Zobacz [Aktualizowanie mapy za pomocą następnego stosu wywołań](#UpdateMap).
+     Mapa automatycznie zaktualizuje przerywając debugowania. Zobacz [aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap).
 
-## <a name="MakeNotes"></a>Utwórz notatki dotyczące kodu
+## <a name="MakeNotes"></a> Robienie notatek dotyczących kodu
 
- Dodaj komentarze, aby śledzić, co się dzieje w kodzie. Aby dodać nowy wiersz w komentarzu, naciśnij klawisze **Shift + Return**.
+ Dodaj komentarze, aby śledzić, co się dzieje w kodzie. Aby dodać nowy wiersz w komentarzu, naciśnij **Shift + Return**.
 
  ![Dodaj komentarz do stosu wywołań na mapie kodu](../debugger/media/debuggermap_addcomment.png)
 
-## <a name="UpdateMap"></a>Aktualizowanie mapy za pomocą następnego stosu wywołań
+## <a name="UpdateMap"></a> Aktualizacja mapy za pomocą następnego stosu wywołań
 
  Uruchom aplikację do następnego punktu przerwania lub wejścia do funkcji. Mapa dodaje nowy stos wywołań.
 
- ![Aktualizowanie mapy kodu przy użyciu następnego stosu wywołań](../debugger/media/debuggermap_addclearcallstack.png)
+ ![Aktualizuj mapę kodu za pomocą następnego stosu wywołań](../debugger/media/debuggermap_addclearcallstack.png)
 
-## <a name="AddRelatedCode"></a>Dodaj kod pokrewny do mapy
+## <a name="AddRelatedCode"></a> Dodawanie kodu pokrewnego do mapy
 
- Teraz masz mapę — co dalej? Jeśli pracujesz z programem C# lub Visual Basic, Dodaj elementy, takie jak pola, właściwości i inne metody, aby śledzić, co się dzieje w kodzie.
+ Teraz masz mapę — co dalej? Jeśli pracujesz w języku C# lub Visual Basic, należy dodać elementy, takie jak pola, właściwości i innych metod, aby śledzić, co się dzieje w kodzie.
 
- Kliknij dwukrotnie metodę, aby zobaczyć jej definicję kodu, lub użyj menu skrótów dla metody. (Klawiatura: Wybierz metodę na mapie, a następnie naciśnij klawisz **F12**)
+ Kliknij dwukrotnie metodę, aby zobaczyć jej definicję kodu lub użyć menu skrótów dla metody. (Klawiatura: Wybierz metodę na mapie i naciśnij klawisz **F12**)
 
  ![Przejdź do definicji kodu dla metody na mapie kodu](../debugger/media/debuggermap_gotocodedefinition.png)
 
  Dodaj elementy, które chcesz śledzić na mapie.
 
- ![Pokaż pola w metodzie na mapie kodu stosu wywołań](../debugger/media/debuggermap_showfields.png)
+ ![Pokazywanie pól w metodzie na mapie kodu stosu wywołań](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
-> Domyślnie Dodawanie elementów do mapy powoduje również dodanie węzłów grupy nadrzędnej, takich jak Klasa, przestrzeń nazw i zestaw. Chociaż jest to przydatne, można zachować mapę prostą, wyłączając tę funkcję przy użyciu przycisku **Dołącz rodziców** na pasku narzędzi mapy lub naciskając klawisz **Ctrl** podczas dodawania elementów.
+> Domyślnie Dodawanie elementów do mapy dodaje również węzły nadrzędne grupy, takie jak klasy, przestrzeni nazw i zestawu. Gdy jest to przydatne, można zachować mapy prostego przez wyłączenie tej funkcji przy użyciu **obejmują elementy nadrzędne** przycisk na pasku narzędzi Mapa lub naciskając **CTRL** podczas dodawania elementów.
 
- ![Pola związane z metodą na mapie kodu stosu wywołań](../debugger/media/debuggermap_showedfields.png)
+ ![Pola powiązane z metodę na mapie kodu stosu wywołań](../debugger/media/debuggermap_showedfields.png)
 
  W tym miejscu można łatwo zobaczyć, które metody wykorzystują te same pola. Ostatnio dodane elementy są wyświetlane w kolorze zielonym.
 
  Kontynuuj tworzenie mapy, aby zobaczyć więcej kodu.
 
- ![Zobacz metody, które używają pola: Mapa kodu stosu wywołań](../debugger/media/debuggermap_findallreferences.png)
+ ![Zobacz metody, które używają pola: mapy kodu stosu wywołań](../debugger/media/debuggermap_findallreferences.png)
 
- ![Metody używające pola na mapie kodu stosu wywołań](../debugger/media/debuggermap_foundallreferences.png)
+ ![Metody używające pole na mapie kodu stosu wywołań](../debugger/media/debuggermap_foundallreferences.png)
 
-## <a name="FindBugs"></a>Znajdowanie usterek przy użyciu mapy
+## <a name="FindBugs"></a> Znajdowanie błędów za pomocą mapy
 
- Wizualizacja kodu pomoże w szybszym znalezieniu błędów. Załóżmy na przykład, że badasz usterkę w programie do rysowania. Po narysowaniu linii, w przypadku próby cofnięcia nic się nie dzieje, aż do rysowania kolejnej linii.
+ Wizualizacja kodu pomoże w szybszym znalezieniu błędów. Na przykład załóżmy, że analizujesz błąd w programie rysunkowym. Po narysowaniu linii, w przypadku próby cofnięcia nic się nie dzieje, aż do rysowania kolejnej linii.
 
- Dlatego należy ustawić punkty przerwania w metodach `clear`, `undo` i `Repaint`, rozpocząć debugowanie i utworzyć mapę podobną do tej:
+ Aby ustawić punkty przerwania `clear`, `undo`, i `Repaint` metod, rozpocząć debugowanie i utworzyć mapę podobną do tego:
 
- ![Dodawanie kolejnego stosu wywołań do mapy kodu](../debugger/media/debuggermap_addpaintobjectcallstack.png)
+ ![Dodaj inny stos wywołań do mapy kodu](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
- Zauważ, że wszystkie gesty użytkownika na mapie `Repaint`, z wyjątkiem `undo`. To może wyjaśnić, dlaczego `undo` nie działa natychmiast.
+ Należy zauważyć, że wszystkie gesty użytkownika na mapie wywołują `Repaint`, z wyjątkiem `undo`. To może wyjaśnić, dlaczego `undo` nie działa natychmiast.
 
- Po naprawieniu błędu i kontynuacji działania programu, Mapa dodaje nowe wywołanie z `undo` do `Repaint`:
+ Po naprawieniu błędu i kontynuacji działania programu, mapa dodaje nowe wywołanie z `undo` do `Repaint`:
 
- ![Dodaj nowe wywołanie metody do stosu wywołań na mapie kodu](../debugger/media/debuggermap_addnewcallforrepaint.png)
+ ![Dodaj nowy stos wywołań do wywołania metody na mapie kodu](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="QA"></a>p & A
+## <a name="QA"></a> PYTANIA I ODPOWIEDZI
 
 - **Nie wszystkie wywołania są wyświetlane na mapie. Zalet?**
 
-   Domyślnie tylko własny kod jest wyświetlany na mapie. Aby wyświetlić kod zewnętrzny, włącz go w oknie **stosu wywołań** :
+   Domyślnie tylko Twój własny kod pojawia się na mapie. Aby wyświetlić kod zewnętrzny, włącz go w **stos wywołań** okna:
 
-   ![Wyświetlanie kodu zewnętrznego przy użyciu okna stosu wywołań](../debugger/media/debuggermap_callstackmenu.png)
+   ![Wyświetlić kod zewnętrzny, w oknie stosu wywołań](../debugger/media/debuggermap_callstackmenu.png)
 
-   lub wyłącz opcję **włącz tylko mój kod** w opcjach debugowania programu Visual Studio:
+   lub wyłącz **Włącz tylko mój kod** w opcjach debugowania Visual Studio:
 
-   ![Pokaż kod zewnętrzny przy użyciu okna dialogowego opcji](../debugger/media/debuggermap_debugoptions.png)
+   ![Pokaż kod zewnętrzny, za pomocą okna dialogowego Opcje](../debugger/media/debuggermap_debugoptions.png)
 
-- **Czy zmiana mapy ma wpływ na kod?**
+- **Zmiana mapy wpływa na kod?**
 
-   Zmiana mapy nie ma wpływu na kod. Możesz dowolnie zmienić nazwę, przenieść lub usunąć elementy na mapie.
+   Zmiana na mapie nie ma wpływu na kod w dowolny sposób. Możesz dowolnie zmienić nazwę, przenieść lub usunąć elementy na mapie.
 
 - **Co oznacza komunikat: "diagram może opierać się na starszej wersji kodu"?**
 
    Kod mógł ulec zmianie po ostatniej aktualizacji mapy. Na przykład wywołanie mapy może już nie istnieć w kodzie. Zamknij komunikat, a następnie spróbuj odbudować rozwiązanie przed ponowną aktualizacją mapy.
 
-- **Jak mogę kontrolować układ mapy?**
+- **Jak kontrolować układ mapy?**
 
-   Otwórz menu **Układ** na pasku narzędzi Mapa:
+   Otwórz **układ** menu na pasku narzędzi Mapa:
 
   - Zmiana układu domyślnego.
 
-  - Aby zatrzymać automatyczne rozmieszczanie mapy, należy wyłączyć **Automatyczne układ podczas debugowania**.
+  - Aby zatrzymać automatyczne rozmieszczanie na mapie, należy wyłączyć opcję **automatycznie rozmieszczaj podczas debugowania**.
 
-  - Aby zmienić rozmieszczenie mapy możliwie najbliżej podczas dodawania elementów, należy wyłączyć opcję **Układ przyrostowy**.
+  - Aby zmienić kolejność możliwie mapy, podczas dodawania elementów, należy wyłączyć opcję **układ Przyrostowy**.
 
-- **Czy mogę udostępnić mapę innym osobom?**
+- **Czy można dzielić się mapami w innym osobom?**
 
-   Możesz wyeksportować mapę, wysłać ją do innych osób, jeśli masz program Microsoft Outlook lub zapisać ją w rozwiązaniu, aby można było ją sprawdzić w kontroli źródła.
+   Można eksportować mapę, wysyłania do innych osób, jeśli program Microsoft Outlook lub zapisać go do rozwiązania, dzięki czemu można je było zaewidencjonować w kontroli źródła.
 
-   ![Udostępnianie mapy kodu stosu wywołań innym osobom](../debugger/media/debuggermap_sharewithothers.png)
+   ![Mapy kodu stosu wywołań udostępniania innym osobom](../debugger/media/debuggermap_sharewithothers.png)
 
-- **Jak mogę zatrzymać automatyczne dodawanie nowych stosów wywołań przez mapę?**
+- **Jak zatrzymać automatyczne dodawanie nowych stosów wywołań do mapy?**
 
-   Wybierz przycisk &#45; ![Pokaż stos wywołań na mapie kodu automatycznie](../debugger/media/debuggermap_automaticupdateicon.gif)na pasku narzędzi Mapa. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij **klawisze Ctrl**  + **SHIFT**  +  **`** .
+   Wybierz ![przycisk &#45; Pokaż automatycznie umieszczane na mapie kodu](../debugger/media/debuggermap_automaticupdateicon.gif) na pasku narzędzi mapy. Aby ręcznie dodać bieżący stos wywołań do mapy, naciśnij klawisz **Ctrl** + **Shift** +  **`** .
 
-   Mapa będzie nadal wyróżniać istniejące stosy wywołań na mapie podczas debugowania.
+   Mapa nadal będzie wyróżniać istniejące stosy wywołań na mapie, którą debugujesz.
 
-- **Co oznaczają ikony elementów i strzałki?**
+- **Co ikony elementów i strzałki oznaczają?**
 
-   Aby uzyskać więcej informacji na temat elementu, przesuń wskaźnik myszy nad nim i poszukaj etykietki narzędzia elementu. Możesz również przyjrzeć się **legendzie** , aby dowiedzieć się, co oznacza każda ikona.
+   Aby uzyskać więcej informacji na temat elementu, umieść kursor myszy nad nią i przyjrzyj się etykietka narzędzia elementu. Można również przeglądać **legendy** Aby dowiedzieć się, co oznacza każda ikona.
 
-   ![Co oznaczają ikony na mapie kodu stosu wywołań?](../debugger/media/debuggermap_showlegend.png)
+   ![Co oznaczają ikony na mapie kodu stosu wywołań](../debugger/media/debuggermap_showlegend.png)
 
   Zobacz:
 
-- [Mapowanie stosu wywołań](#MapStack)
+- [Mapuj stos wywołań](#MapStack)
 
-- [Utwórz notatki dotyczące kodu](#MakeNotes)
+- [Robienie notatek dotyczących kodu](#MakeNotes)
 
-- [Aktualizowanie mapy za pomocą następnego stosu wywołań](#UpdateMap)
+- [Aktualizacja mapy za pomocą następnego stosu wywołań](#UpdateMap)
 
-- [Dodaj kod pokrewny do mapy](#AddRelatedCode)
+- [Dodawanie kodu pokrewnego do mapy](#AddRelatedCode)
 
-- [Znajdowanie usterek przy użyciu mapy](#FindBugs)
+- [Znajdowanie błędów za pomocą mapy](#FindBugs)
 
 ## <a name="see-also"></a>Zobacz także
 

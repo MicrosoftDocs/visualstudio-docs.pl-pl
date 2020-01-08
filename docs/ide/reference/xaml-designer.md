@@ -5,24 +5,24 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 - VS.ToolsOptionsPages.XAML_Designer.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6a08358e8e82abf00a133edab876dc45626bf500
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621896"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585616"
 ---
 # <a name="xaml-designer-options-page"></a>Strona opcji projektant XAML
 
 Na stronie opcje **Projektant XAML** można określić sposób formatowania elementów i atrybutów w dokumentach XAML. Aby otworzyć tę stronę, wybierz menu **Narzędzia** , a następnie wybierz polecenie **Opcje**. Aby uzyskać dostęp do strony właściwości **Projektant XAML** , wybierz węzeł **Projektant XAML** . Ustawienia dla projektant XAML są stosowane po otwarciu dokumentu. Dlatego jeśli wprowadzisz zmiany w ustawieniach, musisz zamknąć i ponownie otworzyć program Visual Studio, aby zobaczyć zmiany.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>Włącz projektant XAML
 

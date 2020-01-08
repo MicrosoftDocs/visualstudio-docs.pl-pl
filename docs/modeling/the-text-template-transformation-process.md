@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605807"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565867"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformacji szablonu tekstowego
 Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania Visual Basic lub C# kodu lub można wygenerować raport HTML.
@@ -27,7 +27,7 @@ Proces przekształcania szablonu tekstu pobiera plik szablonu tekstu jako dane w
 
 |Składnik|Opis|Dostosowywalne (tak/nie)|
 |-|-|-|
-|Wyszukiwarce|Składnik silnika kontroluje proces transformacji szablonu tekstu|Nie.|
+|Aparat|Składnik silnika kontroluje proces transformacji szablonu tekstu|Nie.|
 |Host|Host jest interfejsem między aparatem i środowiskiem użytkownika. Program Visual Studio jest hostem procesu transformacji tekstu.|Tak. Można napisać hosta niestandardowego.|
 |Procesory dyrektywy|Procesory dyrektywy to klasy, które obsługują dyrektywy w szablonach tekstowych. Możesz użyć dyrektyw, aby dostarczyć dane do szablonu tekstu ze źródła danych wejściowych.|Tak. Możesz pisać niestandardowe procesory dyrektywy|
 

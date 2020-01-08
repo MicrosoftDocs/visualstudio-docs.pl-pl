@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585603"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 
@@ -28,7 +28,7 @@ Pokrycie kodu jest opcją w przypadku uruchamiania metod testowych przy użyciu 
 
 ::: moniker range="vs-2017"
 
-![Wyniki pokrycia kodu z kolorami](../test/media/codecoverage1.png)
+![Wyniki pokrycia kodu za pomocą kolorowania](../test/media/codecoverage1.png)
 
 ::: moniker-end
 
@@ -54,10 +54,10 @@ Funkcja pokrycia kodu jest dostępna tylko w wersji Visual Studio Enterprise.
 
 ::: moniker-end
 
-2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, ![Show wybierz ikonę kolorowanie pokrycia kodu, ](../test/media/codecoverage-showcoloringicon.png) **Pokaż kolorowanie pokrycia** kodu w oknie **wyników pokrycia** kodu. Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
+2. Po uruchomieniu testów, aby zobaczyć, które wiersze zostały uruchomione, wybierz pozycję ![Pokaż ikonę kolorowania pokrycia kodu](../test/media/codecoverage-showcoloringicon.png) **Pokaż kolorowanie pokrycia kodu** w oknie **wyników pokrycia** kodu. Domyślnie kod, który jest objęty testami, jest wyróżniony w jasnoniebieskim kolorze.
 
    > [!TIP]
-   > Aby zmienić kolory lub użyć pogrubienia, wybierz pozycję **narzędzia**  > **opcje**  > **środowisko**  > **czcionki i kolory**  > **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
+   > Aby zmienić kolory lub użyć pogrubienia, wybierz pozycję **narzędzia** > **opcje** > **środowisko** > **czcionki i kolory** > **Pokaż ustawienia dla: Edytor tekstu**. W obszarze **Wyświetl elementy**Dostosuj ustawienia dla elementów "pokrycie", na przykład **nienaruszony obszar pokrycia**.
    >
    > ![Czcionki i kolory pokrycia kodu](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -105,7 +105,7 @@ W niektórych sytuacjach, w zależności od danych testowych, używane będą r�
 
 Można na przykład założyć, że po uruchomieniu testu z wpisem „2” okaże się, że pokryto 50% określonej funkcji. Gdy uruchamiasz test po raz drugi z danymi wejściowymi "-2", zobaczysz w widoku kolorowanie pokrycia, że podano pozostałe 50% funkcji. Teraz należy scalić wyniki z dwóch przebiegów testów, a raport i widok kolorowania pokrycia pokaże 100% pokrycia funkcji.
 
-Użyj ![Icon dla przycisku scalania w ](../test/media/codecoverage-mergeicon.png) oknie pokrycie kodu, aby w tym celu **scalić wyniki pokrycia kodu** . Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
+Aby to zrobić, użyj ikony ![przycisku Scal w](../test/media/codecoverage-mergeicon.png) oknie pokrycie kodu. w tym celu należy **scalić wyniki pokrycia kodu** . Można wybrać dowolną kombinację ostatnich uruchomień lub zaimportowanych wyników. Aby połączyć wyeksportowane wyniki, należy je najpierw zaimportować.
 
 Użyj **Eksportuj wyniki pokrycia kodu** , aby zapisać wyniki operacji scalania.
 
@@ -245,7 +245,7 @@ Użyj następujących makr:
 
 `ExcludeFromCodeCoverage(` *wykluczenianame* `, L"` *funkcjaname* `");`
 
-`ExcludeSourceFromCodeCoverage(` *wykluczenia* `, L"` *sourcefilepath* `");`
+`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
 - *Wykluczname* jest dowolną unikatową nazwą.
 
@@ -308,4 +308,4 @@ Jeśli nie widzisz wyników pokrycia kodu, artykuł [Rozwiązywanie problemów z
 
 - [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md)
 - [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md)
-- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)

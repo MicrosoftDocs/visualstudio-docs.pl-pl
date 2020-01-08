@@ -9,33 +9,33 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7ce288ead0af3d6a9879cab2216ffd6247d
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593281"
 ---
 # <a name="diagnosing-task-failures"></a>Diagnozowanie błędów zadań
 
-`MSB6006` jest emitowane, gdy Klasa pochodna <xref:Microsoft.Build.Utilities.ToolTask> — uruchamia proces narzędzia, który zwraca niezerowy kod zakończenia, jeśli zadanie nie zarejestrował bardziej szczegółowego błędu.
+`MSB6006` jest emitowany, gdy Klasa pochodna <xref:Microsoft.Build.Utilities.ToolTask>— uruchamia proces narzędzia, który zwraca niezerowy kod zakończenia, jeśli zadanie nie zarejestrował bardziej szczegółowego błędu.
 
 ## <a name="identifying-the-failing-task"></a>Identyfikowanie zadania, które kończy się niepowodzeniem
 
 Gdy napotkasz błąd zadania, pierwszym krokiem jest zidentyfikowanie zadania, które kończy się niepowodzeniem.
 
-Tekst błędu określa nazwę narzędzia (przyjazną nazwę dostarczoną przez implementację zadania <xref:Microsoft.Build.Utilities.ToolTask.ToolName> lub nazwę pliku wykonywalnego) i liczbowy kod zakończenia. Na przykład w
+Tekst błędu określa nazwę narzędzia (przyjazną nazwę dostarczoną przez implementację zadania <xref:Microsoft.Build.Utilities.ToolTask.ToolName> lub nazwę pliku wykonywalnego) i liczbowy kod zakończenia. Na przykład w systemie
 
 ```text
 error MSB6006: "custom tool" exited with code 1.
 ```
 
-Nazwa narzędzia to `custom tool`, a kod zakończenia to `1`.
+Nazwa narzędzia jest `custom tool`, a kod zakończenia jest `1`.
 
 ### <a name="command-line-builds"></a>Kompilacje w wierszu polecenia
 
@@ -49,11 +49,11 @@ Build FAILED.
   S:\MSB6006_demo\MSB6006_demo.csproj(19,5): error MSB6006: "custom tool" exited with code 1.
 ```
 
-Ten wynik wskazuje, że błąd wystąpił w zadaniu zdefiniowanym w wierszu 19 pliku `S:\MSB6006_demo\MSB6006_demo.csproj` w obiekcie docelowym o nazwie `InvokeToolTask` w projekcie `S:\MSB6006_demo\MSB6006_demo.csproj`.
+Ten wynik wskazuje, że błąd wystąpił w zadaniu zdefiniowanym w wierszu 19 `S:\MSB6006_demo\MSB6006_demo.csproj`pliku, w obiekcie docelowym o nazwie `InvokeToolTask`w `S:\MSB6006_demo\MSB6006_demo.csproj`projektu.
 
 ### <a name="in-visual-studio"></a>W programie Visual Studio
 
-Te same informacje są dostępne na liście błędów programu Visual Studio w kolumnach `Project`, `File` i `Line`.
+Te same informacje są dostępne na liście błędów programu Visual Studio w kolumnach `Project`, `File`i `Line`.
 
 ## <a name="finding-more-failure-information"></a>Znajdowanie dalszych informacji o niepowodzeniu
 

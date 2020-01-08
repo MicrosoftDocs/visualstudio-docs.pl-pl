@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747359"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593359"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy pliki wykonywalne ( *. exe*), pliki bibliotek dołączanych dynamicznie (*dll*) lub moduły kodu ( *. module*). Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options).
@@ -46,7 +46,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Opcjonalny parametr ciągu.
 
-   Lista opcji wiersza polecenia. Na przykład "/\<option1 >/\<option2 >/\<option # >". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania.
+   Lista opcji wiersza polecenia. Na przykład "/\<opcja1 >/\<opcja2 >/\<opcji # >". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania.
 
    Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options).
 
@@ -78,15 +78,15 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Nolisting**  -  *\<none >*
+  - **Nolisting** - *nie\<brak >*
 
-  - **AssemblyCode**  -  **/FA**
+  - **AssemblyCode** -  **/FA**
 
-  - **AssemblyAndMachineCode**  -  **/FAc**
+  - **AssemblyAndMachineCode** -  **/FAc**
 
-  - **AssemblyAndSourceCode**  -  **/FAS**
+  - **AssemblyAndSourceCode** -  **/FAs**
 
-  - **Wszystkie**  -  **/FACS**
+  - **Wszystkie** -  **/FACS**
 
     Aby uzyskać więcej informacji, zobacz Opcje **/Fa**, **/FAc**, **/FAS**i **/FACS** w [/FA,/FA (lista plików)](/cpp/build/reference/fa-fa-listing-file).
 
@@ -94,17 +94,17 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Opcjonalny parametr ciągu.
 
-   Włącza i wyłącza funkcję sprawdzania błędów czasu wykonywania, w połączeniu z [runtime_checks](/cpp/preprocessor/runtime-checks) pragma.
+   Włącza i wyłącza funkcję sprawdzania błędów czasu wykonywania w połączeniu z [runtime_checks](/cpp/preprocessor/runtime-checks) pragma.
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Domyślne**  *\<none  -                           >*
+  - **Domyślne** -                           *\<brak >*
 
-  - **StackFrameRuntimeCheck**  -  **/RTCs**
+  - **StackFrameRuntimeCheck** -  **/RTCs**
 
-  - **UninitializedLocalUsageCheck**  -  **/RTCu**
+  - **UninitializedLocalUsageCheck** -  **/RTCu**
 
-  - **EnableFastChecks**  -                           **/RTC1**
+  - **EnableFastChecks** -                           **/RTC1**
 
     Aby uzyskać więcej informacji, zobacz [/RTC (sprawdzanie błędów czasu wykonywania)](/cpp/build/reference/rtc-run-time-error-checks).
 
@@ -146,11 +146,11 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Cdecl**  -  **/GD**
+  - **Cdecl** -  **/GD**
 
-  - **FastCall**  -                           **/gr**
+  - **FastCall** -                           **/Gr**
 
-  - **StdCall**  -                           **/GZ**
+  - **StdCall** -                           **/Gz**
 
     Aby uzyskać więcej informacji, zobacz [/GD,/gr,/GV,/GZ (Konwencja wywoływania)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
@@ -162,11 +162,11 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Domyślne**  *\<none  -  >*
+  - **Domyślne** -  *\<brak >*
 
-  - **CompileAsC**  -  **/TC**
+  - **CompileAsC** -  **/TC**
 
-  - **CompileAsCpp**  -  **/TP**
+  - **CompileAsCpp** -  **/TP**
 
     Aby uzyskać więcej informacji, zobacz [/TC,/TP,/TC,/TP (Określ typ pliku źródłowego)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
 
@@ -178,15 +178,15 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **fałsz**  -  *\<none >*
+  - **wartość false** - *nie\<*
 
-  - **prawda**  -  **/CLR**
+  - **true** -  **/clr**
 
-  - **Czysty**  -  **/CLR: Pure**
+  - **Czysty** -  **/CLR: Pure**
 
-  - **Bezpieczny**  -  **/CLR: Safe**
+  - **Safe** -  **/clr:safe**
 
-  - **OldSyntax**  -  **/CLR: oldSyntax**
+  - **OldSyntax** -  **/clr:oldSyntax**
 
     Aby uzyskać więcej informacji, zobacz [/CLR (Kompilacja środowiska uruchomieniowego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -206,11 +206,11 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **OldStyle**  -  **/Z7**
+  - **OldStyle** -  **/Z7**
 
-  - **ProgramDatabase**  -  **/Zi**
+  - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue**  -  **/Zi**
+  - **EditAndContinue** -  **/ZI**
 
     Aby uzyskać więcej informacji, zobacz [/Z7,/Zi,/ZI (format informacji o debugowaniu)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 
@@ -238,9 +238,9 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **StreamingSIMDExtensions**  -  **/arch: SSE**
+  - **StreamingSIMDExtensions** -  **/arch: SSE**
 
-  - **StreamingSIMDExtensions2**  -  **/arch: SSE2**
+  - **StreamingSIMDExtensions2** -  **/arch: SSE2**
 
     Aby uzyskać więcej informacji, zobacz [/arch (x86)](/cpp/build/reference/arch-x86).
 
@@ -268,13 +268,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Brak**  -  **/errorReport: brak**
+  - **Brak** -  **/errorReport: brak**
 
-  - **Monituj**  -  **/errorReport: Prompt**
+  - **Monituj** -  **/errorReport: Prompt**
 
-  - **Kolejka**  -  **/errorReport: Queue**
+  - **Queue** -  **/errorReport:queue**
 
-  - **Wyślij**  -  **/errorReport: Send**
+  - **Wyślij** -  **/errorReport: Send**
 
     Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy kompilatora)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
 
@@ -286,13 +286,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **fałsz**  -  *\<none >*
+  - **wartość false** - *nie\<*
 
-  - **/EHa** **Async**  - 
+  - **Async** -  **/EHa**
 
-  - **Synchronizuj**  -  **/EHsc**
+  - **Sync** -  **/EHsc**
 
-  - **SyncCThrow**  -  **/EHS**
+  - **SyncCThrow** -  **/EHs**
 
     Aby uzyskać więcej informacji, zobacz [/EH (model obsługi wyjątków)](/cpp/build/reference/eh-exception-handling-model).
 
@@ -312,11 +312,11 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Nie**  -  *\<none >*
+  - **Nie** -  *\<brak >*
 
-  - **Rozmiar**  -  **/OS**
+  - **Rozmiar** -  **/OS**
 
-  - **Szybkość**  -  **/OT**
+  - **Szybkość** -  **/OT**
 
     Aby uzyskać więcej informacji, zobacz [/OS,/OT (Preferuj mały kod, Preferuj szybki kod)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
 
@@ -336,11 +336,11 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Precyzyjne**  -  **/FP: precyzyjne**
+  - **Precyzyjne** -  **/FP: precyzyjne**
 
-  - **Strict**  -  **/FP: Strict**
+  - **Strict** -  **/FP: Strict**
 
-  - **Szybka**  -  **/FP: szybka**
+  - **Fast** -  **/fp:fast**
 
     Aby uzyskać więcej informacji, zobacz [/FP (Określ zachowanie zmiennoprzecinkowe)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
@@ -400,13 +400,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Domyślne**  *\<none  -  >*
+  - **Domyślne** -  *\<brak >*
 
-  - **Wyłączone**  -  **/Ob0**
+  - **Wyłączone** -  **/Ob0**
 
-  - **OnlyExplicitInline**  -  **/OB1**
+  - **OnlyExplicitInline** -  **/Ob1**
 
-  - **AnySuitable**  -  **/Ob2**
+  - **AnySuitable** -  **/Ob2**
 
     Aby uzyskać więcej informacji, zobacz [/ob (rozszerzenie funkcji wbudowanej)](/cpp/build/reference/ob-inline-function-expansion).
 
@@ -480,13 +480,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Wyłączone**  -  **/od**
+  - **Wyłączone** -  **/od**
 
-  - **MinSpace**  -  **/O1**
+  - **MinSpace** -  **/O1**
 
-  - **MaxSpeed**  -  **/O2**
+  - **MaxSpeed** -  **/O2**
 
-  - **Pełny**  -  **/OX**
+  - **Full** -  **/Ox**
 
     Aby uzyskać więcej informacji, zobacz [/O opcje (Optymalizuj kod)](/cpp/build/reference/o-options-optimize-code).
 
@@ -498,11 +498,11 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **NotUsing**  -  *\<none >*
+  - **NotUsing** -  *\<brak >*
 
-  - **Utwórz**  -  **/YC**
+  - **Utwórz** -  **/YC**
 
-  - **Użyj**  -  **/Yu**
+  - **Użyj** -  **/Yu**
 
     Aby uzyskać więcej informacji, zobacz [/YC (Create prekompilowany plik nagłówkowy)](/cpp/build/reference/yc-create-precompiled-header-file) i [/Yu (Użyj prekompilowanego pliku nagłówkowego)](/cpp/build/reference/yu-use-precompiled-header-file). Zobacz również parametry **PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** w tej tabeli.
 
@@ -556,7 +556,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Opcjonalny parametr `Boolean`.
 
-   W przypadku `true` program wstępnie przetwarza pliki C C++ i Source oraz kopiuje wstępnie przetworzone pliki na standardowe urządzenie wyjściowe.
+   W przypadku `true`program wstępnie przetwarza pliki C C++ i Source oraz kopiuje wstępnie przetworzone pliki na standardowe urządzenie wyjściowe.
 
    Aby uzyskać więcej informacji, zobacz [/EP (wstępnie przetwórz do stdout bez dyrektyw #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
 
@@ -564,7 +564,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Opcjonalny parametr `Boolean`.
 
-   W przypadku `true` program wstępnie przetwarza pliki C C++ i Source oraz zapisuje wstępnie przetworzone dane wyjściowe do pliku.
+   W przypadku `true`program wstępnie przetwarza pliki C C++ i Source oraz zapisuje wstępnie przetworzone dane wyjściowe do pliku.
 
    Aby uzyskać więcej informacji, zobacz [/p (Przetwarzaj wstępnie do pliku)](/cpp/build/reference/p-preprocess-to-a-file).
 
@@ -590,13 +590,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Wielowątkowe**  -  **/MT**
+  - **MultiThreaded** -  **/MT**
 
-  - **MultiThreadedDebug**  -  **/MTD**
+  - **MultiThreadedDebug** -  **/MTd**
 
-  - **MultiThreadedDLL**  -  **/MD**
+  - **MultiThreadedDLL** -  **/MD**
 
-  - **MultiThreadedDebugDLL**  -  **/MDD**
+  - **MultiThreadedDebugDLL** -  **/MDd**
 
     Aby uzyskać więcej informacji, zobacz [/MD,/MT,/LD (Korzystanie z biblioteki wykonawczej)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
@@ -646,17 +646,17 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Domyślne**  -  **/ZP1**
+  - **Default** -  **/Zp1**
 
-  - **1Byte**  -  **/ZP1**
+  - **1Byte** -  **/Zp1**
 
-  - **2Bytes**  -  **/Zp2**
+  - **2Bytes** -  **/Zp2**
 
-  - **4Bytes**  -  **/Zp4**
+  - **4Bytes** -  **/Zp4**
 
-  - **8Bytes**  -  **/ZP8**
+  - **8Bytes** -  **/Zp8**
 
-  - **16Bytes**  -  **/Zp16**
+  - **16Bytes** -  **/Zp16**
 
     Aby uzyskać więcej informacji, zobacz [/ZP (wyrównanie składowej struktury)](/cpp/build/reference/zp-struct-member-alignment).
 
@@ -682,7 +682,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Traktuje określoną listę ostrzeżeń kompilatora jako błędy.
 
-   Aby uzyskać więcej informacji, zobacz opcja **/we** `n` w elemencie [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżenia)](/cpp/build/reference/compiler-option-warning-level).
+   Aby uzyskać więcej informacji, zobacz opcja **/we**`n` w elemencie [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżenia)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWarningAsError**
 
@@ -740,17 +740,17 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **TurnOffAllWarnings**  -  **/W0**
+  - **TurnOffAllWarnings** -  **/W0**
 
-  - **Level1**  -  **/W1**
+  - **Level1** -  **/W1**
 
-  - **Level2**  -  **/W2**
+  - **Level2** -  **/W2**
 
-  - **Level3**  -  **/W3**
+  - **Level3** -  **/W3**
 
-  - **Level4**  -  **/W4**
+  - **Level4** -  **/W4**
 
-  - **Włącz wszystkie ostrzeżenia**  -  **/Wall**
+  - **Włącz wszystkie ostrzeżenia** -  **/Wall**
 
     Aby uzyskać więcej informacji, zobacz sekcję **/w**_n_ w opcjach [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](/cpp/build/reference/compiler-option-warning-level).
 

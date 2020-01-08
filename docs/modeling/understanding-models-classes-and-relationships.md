@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748219"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565906"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, wraz z dowolnym niestandardowym kodem programu, który można napisać. Większość kodu programu w rozwiązaniu DSL jest generowana z tego pliku.
@@ -22,7 +22,7 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
  W tym temacie objaśniono centralne funkcje definicji DSL.
 
 ## <a name="the-dsl-definition"></a>Definicja DSL
- Po otwarciu `Dsl\DslDefinition.dsl` okno programu Visual Studio będzie wyglądać podobnie do poniższej ilustracji.
+ Po otwarciu `Dsl\DslDefinition.dsl`okno programu Visual Studio będzie wyglądać podobnie do poniższej ilustracji.
 
  ![Projektant DSL](../modeling/media/dsl_designer.png)
 
@@ -116,7 +116,7 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
 
  W reprezentacji XML modelu łącze odwołania między dwoma elementami jest reprezentowane przy użyciu *monikerów.* Oznacza to, że monikery są nazwami, które jednoznacznie identyfikują każdy element w modelu. Węzeł XML dla każdego elementu modelu zawiera węzeł, który określa nazwę relacji i moniker drugiego elementu.
 
-## <a name="roles"></a>Pełnione
+## <a name="roles"></a>Role
  Każda relacja domeny ma dwie role, rolę źródłową i rolę docelową.
 
  Na poniższej ilustracji wiersz między klasą domeny **wydawcy** a relacją domeny **PublisherCatalog** jest rolą źródłową. Wiersz między relacją domeny a klasą domeny **albumu** jest rolą docelową.
@@ -128,7 +128,7 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
  Podczas tworzenia relacji w definicji DSL, nazwy właściwości i relacji są określone wartościami domyślnymi. Można jednak je zmienić.
 
 ## <a name="multiplicities"></a>Liczebnościami
- Liczebność określają, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie ustawienie liczebności zero-do-wielu (0.. \*) w roli **katalogu** określa, że każde wystąpienie klasy domeny **wydawcy** może mieć dowolną liczbę linków relacji **PublisherCatalog** , które chcesz nadać.
+ Liczebność określają, ile elementów może mieć tę samą rolę w relacji domeny. W tym przykładzie ustawienie liczebności zero-do-wielu (0..\*) w roli **katalogu** określa, że każde wystąpienie klasy domeny **wydawcy** może mieć dowolną liczbę linków relacji **PublisherCatalog** , które chcesz nadać.
 
  Skonfiguruj liczebność roli, wpisując ją na diagramie lub modyfikując właściwość `Multiplicity` w oknie **Właściwości** . W poniższej tabeli opisano ustawienia dla tej właściwości.
 
@@ -150,4 +150,4 @@ Język specyficzny dla domeny (DSL) jest zdefiniowany przez plik definicji DSL, 
 
 ## <a name="see-also"></a>Zobacz także
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

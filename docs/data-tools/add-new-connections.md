@@ -2,17 +2,17 @@
 title: Dodawanie nowych połączeń
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0abce148194b2d88a39f6c651e6f32d0ae7b6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648909"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587072"
 ---
 # <a name="add-new-connections"></a>Dodawanie nowych połączeń
 

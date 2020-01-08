@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924546"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586981"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -42,7 +42,7 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express, które ma dołączoną przykładową bazę danych AdventureWorks Light (AdventureWorksLT). Bazę danych AdventureWorksLT można pobrać z [archiwum CodePlex](https://archive.codeplex.com/?p=awlt2008dbscript).
 
@@ -86,7 +86,7 @@ Utwórz nowy projekt WPF do wyświetlania rekordów produktów.
 
 Aby można było tworzyć kontrolki powiązane z danymi, należy zdefiniować model danych dla aplikacji i dodać go do okna **źródła danych** . W tym instruktażu utworzysz zestaw danych, który będzie używany jako model danych.
 
-1. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
    Zostanie otwarte okno **źródła danych** .
 
@@ -172,9 +172,9 @@ Utwórz kontrolki, które wyświetlają rekordy klientów, przeciągając tabel�
 
     - ThumbnailPhotoFileName
 
-    - danej
+    - ROWGUID
 
-    - ModifiedDate
+    - Data modyfikacji
 
 4. Kliknij menu rozwijane obok węzła **ThumbNailPhoto** i wybierz pozycję **obraz**.
 
@@ -236,7 +236,7 @@ Skompiluj i uruchom aplikację. Sprawdź, czy można wyświetlać i aktualizowa�
 
 1. Naciśnij klawisz **F5**.
 
-     Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące kwestie:
+     Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące informacje:
 
     - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą**().
 

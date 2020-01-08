@@ -12,26 +12,26 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24c3549cf98e49f3419ef0e7387a6c236c15e9e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 244829edb30bbd43384ba445852f0a9ceafafb3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648842"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587020"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio
 
-Dane można wyświetlić użytkownikom aplikacji przez powiązanie danych z Windows Forms. Aby utworzyć te kontrolki powiązane z danymi, przeciągnij elementy z okna **źródła danych** na Projektant formularzy systemu Windows w programie Visual Studio.
+Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do formularzy Windows Forms. Aby utworzyć te kontrolki powiązane z danymi, przeciągnij elementy z okna **źródła danych** na Projektant formularzy systemu Windows w programie Visual Studio.
 
 ![Operacja przeciągania źródła danych](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Jeśli okno **źródła danych** nie jest widoczne, można je otworzyć, wybierając opcję **Wyświetl**  >  inne**źródła danych** > **systemu Windows** lub naciskając klawisz **SHIFT** +**Alt** +**D**. Aby wyświetlić okno **źródła danych** , musisz mieć otwarty projekt w programie Visual Studio.
+> Jeśli okno **źródła danych** nie jest widoczne, można je otworzyć, wybierając opcję **Wyświetl** > inne **źródła danych** > **systemu Windows** lub naciskając klawisz **SHIFT**+**Alt**+**D**. Aby wyświetlić okno **źródła danych** , musisz mieć otwarty projekt w programie Visual Studio.
 
 Przed przeciągnięciem elementów można ustawić typ kontrolki, z którą ma zostać utworzone powiązanie. Różne wartości są wyświetlane w zależności od tego, czy wybrano tabelę lub pojedynczą kolumnę.  Możesz również ustawić wartości niestandardowe. W przypadku tabeli **szczegóły** oznacza, że każda kolumna jest powiązana z oddzielnym formantem.
 
@@ -39,9 +39,9 @@ Przed przeciągnięciem elementów można ustawić typ kontrolki, z którą ma z
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>Formanty BindingSource i BindingNavigator
 
-Składnik <xref:System.Windows.Forms.BindingSource> służy do dwóch celów. Po pierwsze zapewnia warstwę abstrakcji podczas wiązania kontrolek z danymi. Kontrolki w formularzu są powiązane ze składnikiem <xref:System.Windows.Forms.BindingSource>, a nie bezpośrednio ze źródłem danych. Następnie może zarządzać kolekcją obiektów. Dodanie typu do <xref:System.Windows.Forms.BindingSource> powoduje utworzenie listy tego typu.
+<xref:System.Windows.Forms.BindingSource> Składnika służy do dwóch celów. Po pierwsze zapewnia warstwę abstrakcji podczas wiązania kontrolek z danymi. Kontrolki w formularzu są powiązane ze składnikiem <xref:System.Windows.Forms.BindingSource>, a nie bezpośrednio ze źródłem danych. Po drugie może zarządzać kolekcji obiektów. Dodawanie typu <xref:System.Windows.Forms.BindingSource> tworzy listę tego typu.
 
-Aby uzyskać więcej informacji na temat składnika <xref:System.Windows.Forms.BindingSource>, zobacz:
+Aby uzyskać więcej informacji na temat <xref:System.Windows.Forms.BindingSource> składników, zobacz:
 
 - [BindingSource — składnik](/dotnet/framework/winforms/controls/bindingsource-component)
 
@@ -53,7 +53,7 @@ Aby uzyskać więcej informacji na temat składnika <xref:System.Windows.Forms.B
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Powiąż z danymi w formancie DataGridView
 
-W przypadku [kontrolki DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)cała tabela jest powiązana z tą samą kontrolką. Po przeciągnięciu **formantu DataGridView** do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika. Na poniższej ilustracji jest również dodawana [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) , ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania **formantu DataGridView** znajduje się w obsłudze zdarzeń `Form_Load`. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w obsłudze zdarzeń `Save` dla elementu **BindingNavigator**. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
+W przypadku [kontrolki DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)cała tabela jest powiązana z tą samą kontrolką. Po przeciągnięciu **formantu DataGridView** do formularza pojawia się również pasek narzędzi dla nawigowania po rekordach (<xref:System.Windows.Forms.BindingNavigator>). [Zestaw danych](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika. Na poniższej ilustracji jest również dodawana [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) , ponieważ tabela Customers zawiera relację z tabelą Orders. Te zmienne są zadeklarowane w automatycznie generowanym kodzie jako prywatne elementy członkowskie w klasie Form. Wygenerowany automatycznie kod służący do wypełniania **formantu DataGridView** znajduje się w obsłudze zdarzeń `Form_Load`. Kod służący do zapisywania danych w celu zaktualizowania bazy danych znajduje się w obsłudze zdarzeń `Save` dla elementu **BindingNavigator**. Ten kod można przenieść lub zmodyfikować zgodnie z wymaganiami.
 
 ![GridView z parametrem BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 

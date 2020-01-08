@@ -6,26 +6,26 @@ helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647856"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592233"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Instrukcje: Tworzenie typu dopuszczającego wartość null w Projektant klas
 
 Niektóre typy wartości nie zawsze mają określoną wartość (lub potrzebują). Jest to typowa sytuacja w bazach danych, w których niektóre pola mogą nie mieć przypisanej żadnej wartości. Na przykład możesz przypisać wartość null do pola bazy danych, aby oznaczać, że nie została jeszcze przypisana wartość.
 
-*Typ dopuszczający wartość null* jest typem wartości, który można rozciągnąć, tak aby miał typowy zakres wartości dla tego typu, a także wartość null. Na przykład wartość null dla `Int32`, również oznaczona jako wartość null \<Int32 >, może mieć przypisanych wartości od-2147483648 do 2147483647 lub może być przypisana wartość null. > @No__t_0bool dopuszczające wartość null można przypisać do wartości `True`, `False` lub null (bez wartości).
+*Typ dopuszczający wartość null* jest typem wartości, który można rozciągnąć, tak aby miał typowy zakres wartości dla tego typu, a także wartość null. Na przykład wartość null dla `Int32`, również oznaczona jako Nullable\<Int32 >, może być przypisana dowolnej wartości od-2147483648 do 2147483647 lub może być przypisana wartość null. > Bool\<wartość null można przypisać do wartości `True`, `False`lub null (bez żadnej wartości).
 
 Typy dopuszczające wartości null są wystąpieniami struktury <xref:System.Nullable%601>. Każde wystąpienie typu dopuszczającego wartość null ma dwie publiczne właściwości tylko do odczytu, `HasValue` i `Value`:
 
@@ -45,11 +45,11 @@ Aby uzyskać więcej informacji na temat typów C#dopuszczających wartości nul
 
 1. Na diagramie klasy rozwiń istniejącą klasę lub Utwórz nową klasę.
 
-2. Aby dodać klasę do projektu, w menu **Diagram klas** kliknij polecenie **Dodaj**  > **Dodaj klasę**.
+2. Aby dodać klasę do projektu, w menu **Diagram klas** kliknij polecenie **Dodaj** > **Dodaj klasę**.
 
 3. Aby rozwinąć kształt klasy, w menu **Diagram klas** kliknij przycisk **Rozwiń**.
 
-4. Wybierz kształt klasy. W menu **Diagram klas** kliknij**pole** **Dodaj**  > . Nowe pole, które ma **pole** nazwa domyślna, pojawi się w kształcie klasy, a także w oknie **Szczegóły klasy** .
+4. Wybierz kształt klasy. W menu **Diagram klas** kliknij **pole** **Dodaj** > . Nowe pole, które ma **pole** nazwa domyślna, pojawi się w kształcie klasy, a także w oknie **Szczegóły klasy** .
 
 5. W kolumnie **Nazwa** okna **Szczegóły klasy** (lub samego kształtu klasy) Zmień nazwę nowego pola na prawidłową i zrozumiałą nazwę.
 

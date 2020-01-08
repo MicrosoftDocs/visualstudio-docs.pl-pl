@@ -12,27 +12,27 @@ helpviewer_keywords:
 - saving files, automatically
 - files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865cf2ec43071a01a333961e118beab14abab82b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 81493379cf847251124d2ab4fd0a978abd96af8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651901"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585668"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Autoodzyskiwanie, środowisko, Opcje — okno dialogowe
 
 Użyj tej strony w oknie dialogowym **Opcje** , aby określić, czy automatycznie tworzyć kopie zapasowe plików, czy nie. Możesz również określić, czy chcesz przywrócić zmodyfikowane pliki, jeśli program Visual Studio nieoczekiwanie się zamknie.
 
-Uzyskaj dostęp do tego okna dialogowego, wybierając menu **Narzędzia** , wybierając **Opcje**, a następnie wybierając **środowisko**  > **Autoodzyskiwanie**. Jeśli ta strona nie zostanie wyświetlona na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
+Uzyskaj dostęp do tego okna dialogowego, wybierając menu **Narzędzia** , wybierając **Opcje**, a następnie wybierając **środowisko** > **Autoodzyskiwanie**. Jeśli ta strona nie zostanie wyświetlona na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
 
 **Zapisuj informacje Autoodzyskiwania co [n] min**
 
-Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików kopia pliku jest zapisywana w *%USERPROFILE%\Documents\Visual Studio \\ [wersja] \backup pliki \\ [ProjectName]* . Jeśli plik jest nowy i jeszcze go nie zapisano, plik zostanie automatycznie zapisany przy użyciu losowo wygenerowanej nazwy pliku.
+Użyj tej opcji, aby dostosować częstotliwość automatycznego zapisywania pliku w edytorze. W przypadku wcześniej zapisanych plików kopia pliku jest zapisywana w *%USERPROFILE%\Documents\Visual Studio\\[wersja] \backup pliki\\[ProjectName]* . Jeśli plik jest nowy i jeszcze go nie zapisano, plik zostanie automatycznie zapisany przy użyciu losowo wygenerowanej nazwy pliku.
 
 **Zachowaj informacje Autoodzyskiwania dla [n] dni**
 

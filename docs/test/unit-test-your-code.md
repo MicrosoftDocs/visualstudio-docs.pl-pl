@@ -6,35 +6,35 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659847"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565997"
 ---
-# <a name="unit-test-your-code"></a>Testowanie jednostkowe kodu
+# <a name="unit-test-your-code"></a>Kod testu jednostkowego
 
-Testy jednostkowe umożliwiają deweloperom i testerom szybkie wyszukiwanie błędów logicznych w metodach klas w C#, Visual Basic i C++ projektach.
+Testy jednostkowe pozwalają deweloperom i testerom w szybki sposób sprawdzić występowanie błędów logicznych w metodach klas w projektach C#, Visual Basic i C++.
 
 Narzędzia do testów jednostkowych obejmują:
 
-* **Eksplorator testów** &mdash;Run testy jednostkowe i Zobacz wyniki w **Eksploratorze testów**. Można użyć dowolnego środowiska testów jednostkowych, w tym struktury innej firmy, która ma adapter dla **Eksploratora testów**.
+* **Eksplorator testów**&mdash;uruchomić testy jednostkowe i zobaczyć wyniki w **Eksploratorze testów**. Możesz użyć dowolnego środowiska testów jednostkowych, w tym środowiska innych producentów, które posiadają adapter dla **Eksploratora testów**.
 
-* **Środowisko testów jednostkowych firmy Microsoft dla kodu zarządzanego** &mdash;The Framework testów jednostkowych firmy Microsoft dla kodu zarządzanego jest instalowane z programem Visual Studio i zapewnia platformę do testowania kodu platformy .NET.
+* **Środowisko testów jednostkowych Microsoft dla kodu zarządzanego**&mdash;środowiska testów jednostkowych Microsoft dla kodu zarządzanego jest instalowane z Visual Studio i zapewnia platformę do testowania kodu środowiska .NET.
 
-* **Środowisko testów jednostkowych firmy C++ Microsoft dla** &mdash;The Framework testów jednostkowych Microsoft dla C++ programu jest instalowane w ramach **opracowywania aplikacji C++ klasycznych** . Zapewnia ona platformę do testowania kodu natywnego. Dostępne są również Google Test, usprawnienia i struktury narzędzia ctest, a także karty innych firm dla dodatkowych platform testowych. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dlaC++języka C/](../test/writing-unit-tests-for-c-cpp.md).
+* **Środowisko testów jednostkowych Microsoft dla języka C++** &mdash;środowisko testów jednostkowych Microsoft dla języka C++ jest instalowane jako część **programowanie aplikacji klasycznych w języku C++** obciążenia. Zapewnia platformę do testowania kodu natywnego. Narzędzia CTest, Google Test i Boost.Test platform dostępne są również i karty innej firmy są dostępne dla środowisk testowych dodatkowe. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](../test/writing-unit-tests-for-c-cpp.md).
 
-* **Narzędzia pokrycia kodu** &mdash;You mogą określić ilość kodu produktu, który test jednostkowy wykonuje z jednego polecenia w Eksploratorze testów.
+* **Narzędzia pokrycia kodu**&mdash;można określić ilość kodu produktu, z jaką bada test jednostkowy jednym poleceniem w Eksploratorze testów.
 
-* **Struktura izolacji sztucznej firmy microsoft** &mdash;The struktura izolacji firmy Microsoft sztuczna może tworzyć zastępcze klasy i metody dla kodu produkcyjnego i systemowego, który tworzy zależności w testowanym kodzie. Poprzez implementowanie fałszywych delegatów dla funkcji kontroluje się zachowanie i dane wyjściowe obiektu zależności.
+* **Środowiska izolacji Microsoft Fakes**&mdash;można utworzyć środowiska izolacji substytutów Microsoft zastępcze klasy i metody dla kodu produkcyjnego i systemowego, który tworzy zależności w testowanym kodzie. Poprzez implementowanie fałszywych delegatów dla funkcji kontroluje się zachowanie i dane wyjściowe obiektu zależności.
 
-Możesz również użyć [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) do eksplorowania kodu .NET, aby generować dane testowe i zestaw testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, które spowodują wykonanie tej instrukcji. Analiza przypadku jest wykonywana dla każdego rozgałęzienia warunkowego w kodzie.
+Można również użyć [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) aby eksplorować kod .NET w celu wygenerowania danych testu i pakietów testów jednostkowych. Dla każdej instrukcji w kodzie są generowane dane wejściowe testu, którymi instrukcja zostanie wykonana. W przypadku każdego rozgałęzienia warunkowego w kodzie jest wykonywana analiza przypadku.
 
 ## <a name="key-tasks"></a>Główne zadania
 
@@ -42,19 +42,19 @@ Skorzystaj z poniższych artykułów, aby zrozumieć i utworzyć testy jednostko
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
-|**Przewodniki Szybki Start i wskazówki:** Poznaj testy jednostkowe w programie Visual Studio z przykładów kodu.|[przewodnik - : Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Szybki Start: Programowanie sterowane testami za pomocą Eksploratora testów](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [: Dodawanie testów jednostkowych do C++ aplikacji](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Testy jednostkowe w Eksploratorze testów:** Dowiedz się, jak Eksplorator testów może pomóc w tworzeniu bardziej wydajnych i wydajnych testów jednostkowych.|[podstawowe informacje o teście jednostkowym](../test/unit-test-basics.md) - <br />- [utworzyć projekt testu jednostkowego](../test/create-a-unit-test-project.md)<br />- [uruchomić testy jednostkowe za pomocą Eksploratora testów](../test/run-unit-tests-with-test-explorer.md)<br />- [zainstalować platformy testów jednostkowych](../test/install-third-party-unit-test-frameworks.md) innych firm|
+|**Przewodniki Szybki Start i wskazówki:** Poznaj testy jednostkowe w programie Visual Studio z przykładów kodu.|[przewodnik - : Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Szybki Start: Test-driven development za pomocą narzędzia Eksplorator testów](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [: Dodawanie testów jednostkowych do C++ aplikacji](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Testowanie jednostek za pomocą narzędzia Eksplorator testów:** Dowiedz się, jak Eksplorator testów może pomóc w tworzeniu bardziej wydajnych i efektywnych testów jednostkowych.|- [O teście jednostkowym](../test/unit-test-basics.md)<br />- [Tworzenie projektu testu jednostkowego](../test/create-a-unit-test-project.md)<br />- [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md)<br />- [Instalowanie platform testów jednostkowych innych firm](../test/install-third-party-unit-test-frameworks.md)|
 |**Kod testu C++ jednostkowego**|- [pisać testy jednostkowe dla CC++ /](../test/writing-unit-tests-for-c-cpp.md)|
-|**Izolowanie testów jednostkowych**|- [Izolowanie testowanego kodu za pomocą](../test/isolating-code-under-test-with-microsoft-fakes.md) elementów sztucznych firmy Microsoft|
-|**Użyj pokrycia kodu, aby określić, jaka część kodu projektu jest testowana:** Dowiedz się więcej o funkcji pokrycia kodu narzędzi testowych programu Visual Studio.|- [użyć pokrycia kodu, aby określić, ile kodu jest testowany](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Wykonaj analizę obciążeniową i wydajnością, używając testów obciążeniowych:** Dowiedz się, jak tworzyć testy obciążeniowe, aby ułatwić odizolowanie problemów z wydajnością i obciążeniem w aplikacji.|- [Szybki Start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md)<br />- [testowanie obciążenia (Azure test Plans i TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Ustawianie bram jakości:** Dowiedz się, jak utworzyć bramy jakości, aby wymusić, że testy są uruchamiane przed zaewidencjonowaćm lub scaleniem kodu.|[zasady ewidencjonowania -  (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Izolowanie testów jednostkowych**|- [Izolowanie testowanego kodu za pomocą Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Użycie pokrycia kodu do identyfikacji, jaka część kodu projektu jest testowana:** więcej informacji na temat funkcjonalności pokrycia kodu w programie Visual Studio, narzędzia do testowania.|- [Użycie pokrycia kodu, aby ustalić, ile kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Wykonaj analizę obciążeniową i wydajnością, używając testów obciążeniowych:** Dowiedz się, jak tworzyć testy obciążeniowe, aby ułatwić odizolowanie problemów z wydajnością i obciążeniem w aplikacji.|- [Szybki Start: Tworzenie projektu testu obciążenia](../test/quickstart-create-a-load-test-project.md)<br />- [Ładowanie testowania (Azure planów testów i TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Ustawianie bram jakości:** Dowiedz się, jak utworzyć bramy jakości, aby wymusić, że testy są uruchamiane przed zaewidencjonowaćm lub scaleniem kodu.|- [Zasady ewidencjonowania (Azure repozytoriów TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Ustawianie opcji testowania:** Dowiedz się, jak skonfigurować opcje testu, na przykład, gdzie są przechowywane wyniki testów.|[Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Dokumentacja interfejsu API
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> opisuje przestrzeń nazw UnitTesting, która udostępnia atrybuty, wyjątki, potwierdzenia i inne klasy, które obsługują testy jednostkowe.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> opisuje przestrzeń nazw UnitTesting. Web, która rozszerza przestrzeń nazw UnitTesting przez zapewnienie wsparcia dla ASP.NET i testów jednostkowych usług sieci Web.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> w tym artykule opisano przestrzeń nazw UnitTesting, który zawiera atrybuty, wyjątki, potwierdzenia i inne klasy, które obsługują testy jednostkowe.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> w tym artykule opisano przestrzeń unittesting.Web środowiska przestrzeń nazw, która rozszerza przestrzeń nazw UnitTesting przez zapewnienie obsługi dla testów jednostkowych usług sieci web i platformy ASP.NET.
 
 ## <a name="see-also"></a>Zobacz także
 

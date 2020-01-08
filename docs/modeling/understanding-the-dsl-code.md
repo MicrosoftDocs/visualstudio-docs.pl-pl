@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189447"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565945"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 
@@ -60,7 +60,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  *YourDsl* `Schema.xsd`
 
- Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Schemat dla plików, które zawierają wystąpienia elementu DSL. Ten plik jest kopiowany do katalogu kompilacji (**bin**). Podczas instalowania programu DSL można skopiować ten plik do **folderu \Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** , aby umożliwić zweryfikowanie plików modelu. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
  W przypadku dostosowania serializacji przez ustawienie opcji w Eksploratorze DSL schemat zostanie odpowiednio zmieniony. Jednak jeśli piszesz własny kod serializacji, ten plik może już nie reprezentować rzeczywistego schematu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie serializacji File Storage i XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
@@ -70,7 +70,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  (W przykładowym rozwiązaniu składnika jeden z konstruktorów połączeń nosi nazwę elemencie ConnectionBuilder, jest to współdziałanie, ponieważ relacja domeny nosi nazwę połączenie).
 
- Relacja jest tworzona w metodzie `Builder.Connect()` *relacji* . Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
+ Relacja jest tworzona w metodzie`Builder.Connect()` *relacji* . Wersja domyślna sprawdza, czy źródłowe i docelowe elementy modelu są akceptowalne, a następnie tworzy wystąpienie relacji. Na przykład:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -116,13 +116,13 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
 - Właściwości metody dostępu dla relacji, w których uczestniczy Ta klasa domeny. (Nie istnieje Klasa zagnieżdżona dla właściwości roli.)
 
-   W przykładzie DSL Klasa `Comment` ma metody dostępu, które uzyskują dostęp do modelu nadrzędnego za pomocą `ComponentModelHasComments` relacji osadzania.
+   W przykładzie DSL Klasa `Comment` ma metody dostępu, które uzyskują dostęp do modelu nadrzędnego za pomocą `ComponentModelHasComments`relacji osadzania.
 
 - Konstruktor. Jeśli chcesz przesłonić te ustawienia, zestaw **ma konstruktora niestandardowego** dla klasy domeny.
 
 - Metody obsługi prototypu grupy elementów (EGP). Są one niezbędne, jeśli użytkownik może *scalić* (dodać) inny element w wystąpieniach tej klasy. Zazwyczaj użytkownik robi to poprzez przeciąganie z narzędzia elementu lub innego kształtu lub przez wklejenie.
 
-   W przykładzie DSL port wejściowy lub port wyjściowy można scalić ze składnikiem. Ponadto składniki i Komentarze można scalać z modelem. Program
+   W przykładzie DSL port wejściowy lub port wyjściowy można scalić ze składnikiem. Ponadto składniki i Komentarze można scalać z modelem. Microsoft®
 
    Metody obsługi EGP w klasie składnika umożliwiają składnikowi akceptowanie portów, ale nie komentarzy. Procedura obsługi EGP w klasie modelu głównego akceptuje Komentarze i składniki, ale nie porty.
 
@@ -139,7 +139,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  Zawiera ona ciągi takie jak opisy klas domen i właściwości, nazwy właściwości, etykiety przybornika, standardowe komunikaty o błędach i inne ciągi, które mogą być wyświetlane użytkownikowi. Zawiera również ikony narzędzi i obrazy dla kształtów obrazów.
 
- Ten plik jest powiązany z skompilowanym zestawem i zawiera wartości domyślne tych zasobów. Możesz lokalizować DSL, tworząc zestaw satelicki zawierający zlokalizowaną wersję zasobów. Ta wersja zostanie użyta, gdy program DSL zostanie zainstalowany w kulturze zgodnej z zlokalizowanymi zasobami. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Ten plik jest powiązany z skompilowanym zestawem i zawiera wartości domyślne tych zasobów. Możesz lokalizować DSL, tworząc zestaw satelicki zawierający zlokalizowaną wersję zasobów. Ta wersja zostanie użyta, gdy program DSL zostanie zainstalowany w kulturze zgodnej z zlokalizowanymi zasobami. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
  `DomainRelationships.cs`
 
@@ -196,7 +196,7 @@ Naciśnij klawisz **F5** i Eksperymentuj, jeśli nie znasz tego szablonu rozwią
 
  `Constants.cs`
 
- Identyfikatory GUID.
+ GUIDs.
 
  `DocData.cs`
 
@@ -342,7 +342,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 > Jeśli edytujesz plik TT w celu uwzględnienia zasobów, takich jak ikony lub obrazy, upewnij się, że zasób jest uwzględniony w kompilacji VSIX. W Eksplorator rozwiązań wybierz plik i upewnij się, że właściwość **include in VSIX** jest `True`.
 
- Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+ Ten plik kontroluje sposób pakowania DSL do rozszerzenia integracji z programem Visual Studio (VSIX). Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Zobacz także
 

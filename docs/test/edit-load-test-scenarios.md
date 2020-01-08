@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665044"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593242"
 ---
 # <a name="edit-load-test-scenarios"></a>Edytowanie scenariuszy testu obciążenia
 
@@ -49,7 +49,7 @@ Scenariusz ma kilka innych właściwości, które można edytować za pomocą **
 |-|-----------------------|
 |**W scenariuszu należy dodać sztuczną interakcję człowieka:** Czasy reakcji służą do symulowania zachowań ludzi, które powodują, że osoby czekają na interakcję z witryną sieci Web. Czasy reakcji występują między żądaniami w teście wydajności sieci Web i między iteracjami testu w scenariuszu testu obciążenia. Użycie czasów reakcji w teście obciążenia może być przydatne podczas tworzenia bardziej precyzyjnych symulacji obciążenia.|-   [Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Określ liczbę wirtualnych użytkowników w danym scenariuszu:** Można skonfigurować właściwości wzorca obciążenia, aby określić sposób, w jaki symulowane obciążenie użytkownika jest dostosowywane podczas testu obciążenia. Uzyskasz trzy wbudowane wzorce obciążeń: stałe, krok i oparty na celach. Wybór wzorca obciążenia i dostosowanie właściwości do odpowiednich poziomów dla celów testów obciążenia.|-   [Edytuj wzorce obciążenia, aby modelować aktywność użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
-|**Skonfiguruj prawdopodobieństwo uruchomienia przez użytkownika wirtualnego testu w scenariuszu:** Możesz użyć testu mieszanego, który określa prawdopodobieństwo, że użytkownik wirtualny uruchamia dany test w scenariuszu testu obciążenia. Pozwala to bardziej realistycznie symulować obciążenie. Zamiast mieć tylko jeden przepływ pracy za pomocą aplikacji, można korzystać z kilku przepływów pracy, co jest bliższe przybliżenie, w jaki sposób użytkownicy końcowi współpracują z aplikacjami.|-   [edytować modele mieszane](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
+|**Skonfiguruj prawdopodobieństwo uruchomienia przez użytkownika wirtualnego testu w scenariuszu:** Możesz użyć testu mieszanego, który określa prawdopodobieństwo, że użytkownik wirtualny uruchamia dany test w scenariuszu testu obciążenia. Dzięki temu można bardziej realistycznie symulowanie obciążenia. Zamiast tylko jedego przepływu pracy za pośrednictwem aplikacji, może mieć wiele przepływów pracy, który jest większym zbliżeniem tego jak użytkownicy końcowi są wzajemne powiązani ze swoimi aplikacjami.|-   [edytować modele mieszane](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
 |**Dodaj lub Usuń test wydajności sieci Web lub testów jednostkowych ze scenariusza testu obciążenia:** Możesz dodać lub usunąć test wydajności sieci Web lub testów jednostkowych z testu obciążenia w scenariuszu. Test obciążenia zawiera jeden lub więcej scenariuszy, z których każdy zawiera co najmniej jeden test wydajności sieci Web lub testy jednostkowe.|-   [edytować test mieszany](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Skonfiguruj żądany miks sieci dla danego scenariusza:** W przypadku korzystania z sieci mieszanej można bardziej realistycznie symulować obciążenie sieci w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu heterogenicznej mieszanki typów sieci zamiast jednego typu sieci. Należy utworzyć bliższe przybliżenie, w jaki sposób użytkownicy końcowi współpracują z aplikacjami. Model mieszany sieci powinien odzwierciedlać cele tego scenariusza.|-   [Określ typy sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md)|
 |**Wybierz odpowiedni miks przeglądarki internetowej dla danego scenariusza:** Korzystając z przeglądarki mieszanej, można bardziej realistycznie symulować obciążenia sieci Web w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu heterogenicznej kombinacji przeglądarek zamiast jednej przeglądarki. Tworzysz bliższe przybliżenie przeglądarek, które będą używane z aplikacjami.|-   [określić typów przeglądarek sieci Web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
@@ -60,4 +60,4 @@ Scenariusz ma kilka innych właściwości, które można edytować za pomocą **
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytuj testy obciążenia](../test/edit-load-tests.md)
-- [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)
+- [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

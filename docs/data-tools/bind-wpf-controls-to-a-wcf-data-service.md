@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924557"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586968"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -44,7 +44,7 @@ W instruktażu przedstawiono następujące zagadnienia:
 
 Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://archive.codeplex.com/?p=SqlServerSamples).
 
@@ -125,11 +125,11 @@ Aby wyświetlić dane z usługi danych programu WCF, Utwórz nową aplikację WP
 
 3. Wybierz szablon projektu **aplikacji WPF** .
 
-4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor` i kliknij przycisk **OK**.
+4. W polu **Nazwa** wpisz `AdventureWorksSalesEditor`i kliknij przycisk **OK**.
 
    Program Visual Studio dodaje projekt `AdventureWorksSalesEditor` do rozwiązania.
 
-5. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+5. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
    Zostanie otwarte okno **źródła danych** .
 
@@ -265,7 +265,7 @@ Skompiluj i uruchom aplikację, aby sprawdzić, czy można wyświetlać i aktual
 
 1. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**. Sprawdź, czy rozwiązanie nie ma błędów.
 
-2. Naciśnij klawisz **Ctrl** +**F5**.
+2. Naciśnij klawisz **Ctrl**+**F5**.
 
      Program Visual Studio uruchamia projekt **AdventureWorksService** bez jego debugowania.
 
@@ -273,7 +273,7 @@ Skompiluj i uruchom aplikację, aby sprawdzić, czy można wyświetlać i aktual
 
 4. W menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) w obszarze **debugowanie**kliknij polecenie **Uruchom nowe wystąpienie**.
 
-     Aplikacja zostanie uruchomiona. Sprawdź następujące kwestie:
+     Aplikacja zostanie uruchomiona. Sprawdź następujące informacje:
 
     - Pola tekstowe wyświetlają różne pola danych z pierwszego rekordu sprzedaży, który ma numer zamówienia sprzedaży **71774**.
 

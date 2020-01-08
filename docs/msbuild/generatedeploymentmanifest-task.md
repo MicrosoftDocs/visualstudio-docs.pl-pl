@@ -1,5 +1,5 @@
 ---
-title: Generatedeploymentmanifest — zadanie | Dokumentacja firmy Microsoft
+title: GenerateDeploymentManifest — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,61 +12,61 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc953298241ec7c48bbf5ea87c902aa28b349ce0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003347"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588307"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest — zadanie
 
-Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest wdrożenia w tym artykule opisano wdrażanie aplikacji przez określenie unikatowej tożsamości wdrożenia, identyfikujące cech wdrażania, takie jak instalowanie lub tryb online, określenie aplikacji zaktualizuj ustawienia i lokalizacje, aktualizacji i wskazanie odpowiedniego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji.
+Generuje manifest wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Manifest wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] opisuje wdrożenie aplikacji przez zdefiniowanie unikatowej tożsamości dla wdrożenia, zidentyfikowanie cech wdrożenia, takich jak instalacja lub tryb online, określanie ustawień aktualizacji aplikacji i lokalizacji aktualizacji oraz wskazanie odpowiedniego manifestu aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry `GenerateDeploymentManifest` zadania.
+W poniższej tabeli opisano parametry zadania `GenerateDeploymentManifest`.
 
 | Parametr | Opis |
 |--------------------------| - |
-| `AssemblyName` | Opcjonalnie `String` parametru.<br /><br /> Określa `Name` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, nazwa wynika z `EntryPoint` lub `InputManifest` parametrów. Jeśli nazwa nie można wywnioskować, zadanie wyrzuca błąd. |
-| `AssemblyVersion` | Opcjonalnie `String` parametru.<br /><br /> Określa `Version` pole tożsamości zestawu wygenerowanego manifestu. Jeśli nie określono tego parametru, zadanie używa wartości "1.0.0.0". |
-| `CreateDesktopShortcut` | Opcjonalnie `Boolean` parametru.<br /><br /> W przypadku opcji true, tworzona jest ikona na pulpicie podczas instalacji aplikacji ClickOnce. |
-| `DeploymentUrl` | Opcjonalnie `String` parametru.<br /><br /> Określa lokalizację aktualizacji dla aplikacji. Jeśli ten parametr nie jest określony, lokalizacja aktualizacji nie jest zdefiniowana dla aplikacji. Jednak jeśli `UpdateEnabled` parametr jest `true`, należy określić zaktualizowaną lokalizację. Określona wartość powinna być w pełni kwalifikowany adres URL lub ścieżką UNC. |
-| `Description` | Opcjonalnie `String` parametru.<br /><br /> Określa opcjonalny opis dla aplikacji. |
-| `DisallowUrlActivation` | Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja powinna zostać uruchomiona automatycznie po otwarciu go przy użyciu adresu URL. Jeśli ten parametr jest `true`, aplikację można uruchomić tylko z **Start** menu. Wartość domyślna tego parametru to `false`. Wejście to stosuje się tylko wtedy, gdy `Install` wartość parametru jest `true`. |
-| `EntryPoint` | Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Wskazuje punkt wejścia dla wygenerowanego zestawu manifestu. Aby uzyskać [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu wdrażania, dane wejściowe określają [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikacji.<br /><br />Jeśli `EntryPoint` parametr zadania nie jest określony, `<customHostSpecified>` tag jest wstawiany jako element podrzędny elementu `<entryPoint>` tagu, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Za pomocą poniższej procedury, można dodać zależności DLL do manifestu aplikacji:<br /><br /> 1.  Rozpoznaj odwołania zestawu z wywołaniem <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Przekazać dane wyjściowe poprzedniego zadania i samego montażu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Przekazać zależności za pomocą `Dependencies` parametr <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
-| `ErrorReportUrl` | Opcjonalnie <xref:System.String?displayProperty=fullName> parametru.<br /><br /> Określa adres URL strony sieci web, która jest wyświetlana w oknach dialogowych podczas instalacji ClickOnce. |
-| `InputManifest` | Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Wskazuje dokument danych wejściowych XML, która będzie służyć jako podstawa do generatora manifestu. Dzięki temu dane strukturalnych, takich jak niestandardowe definicje manifestu są odzwierciedlane w manifeście danych wyjściowych. Element główny dokumentu XML musi być zbiorem węzła trustinfo w obszarze nazw asmv1. |
-| `Install` | Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy aplikacja jest zainstalowaną aplikacją lub aplikacją tylko w trybie online. Jeśli ten parametr jest `true`, aplikacja zostanie zainstalowana na użytkownika **Start** menu i można go usunąć za pomocą **apletu Dodaj lub usuń programy** okno dialogowe. Jeśli ten parametr jest `false`, aplikacja jest przeznaczona do użytku online ze strony sieci web. Wartość domyślna tego parametru to `true`. |
-| `MapFileExtensions` | Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy *.deploy* mapowanie rozszerzenia nazwy pliku jest używana. Jeśli ten parametr jest `true`, każdy plik programu jest publikowany razem z *.deploy* rozszerzenie nazwy pliku. Ta opcja jest przydatna dla zabezpieczeń serwera sieci web ograniczyć liczbę rozszerzeń nazw plików, które muszą być odblokowane, żeby umożliwić [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji. Wartość domyślna tego parametru to `false`. |
-| `MaxTargetPath` | Opcjonalnie `String` parametru.<br /><br /> Określa maksymalną dozwoloną długość ścieżki pliku w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia aplikacji. Jeśli ten parametr jest określony, długość każdej ścieżki pliku w aplikacji jest sprawdzana względem tego limitu. Wszystkie elementy, które przekraczają limit spowodują ostrzeżenia kompilacji. Jeśli wejście to nie jest określona lub jest równe zeru, żadne sprawdzanie nie jest przeprowadzane. |
-| `MinimumRequiredVersion` | Opcjonalnie `String` parametru.<br /><br /> Określa, czy użytkownik może pominąć tę aktualizację. Jeśli użytkownik ma wersję, która jest mniejsza niż minimalna wymagana, nie będzie on możliwość pominąć tę aktualizację. Te dane wejściowe ma zastosowanie tylko jeśli wartość `Install` parametr `true`. |
-| `OutputManifest` | Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa nazwę utworzonego wyjściowego pliku manifestu. Jeśli ten parametr nie jest określony, nazwa pliku wyjściowego wynika z tożsamości wygenerowanego manifestu. |
-| `Platform` | Opcjonalnie `String` parametru.<br /><br /> Określa platformę docelową aplikacji. Ten parametr może mieć następujące wartości:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Wartość domyślna to `AnyCPU`. |
-| `Product` | Opcjonalnie `String` parametru.<br /><br /> Określa nazwę aplikacji. Jeśli ten parametr nie jest określony, nazwa wynika z tożsamości wygenerowanego manifestu. Ta nazwa jest używaną nazwą skrótu w **Start** menu i jest częścią nazwy, która jest wyświetlana w **apletu Dodaj lub usuń programy** okno dialogowe. |
-| `Publisher` | Opcjonalnie `String` parametru.<br /><br /> Określa wydawcę aplikacji. Jeśli ten parametr nie jest określony, nazwa wynika z zarejestrowanego użytkownika lub tożsamości wygenerowanego manifestu. Ta nazwa jest używana nazwa folderu na **Start** menu i jest częścią nazwy, która jest wyświetlana w **apletu Dodaj lub usuń programy** okno dialogowe. |
-| `SuiteNamel` | Opcjonalnie `String` parametru.<br /><br /> Określa nazwę folderu na **Start** menu, w którym znajduje się aplikacja po wdrażania ClickOnce. |
-| `SupportUrl` | Opcjonalnie `String` parametru.<br /><br /> Umożliwia określenie łącza, który pojawia się w **apletu Dodaj lub usuń programy** okno dialogowe dla aplikacji. Określona wartość powinna być w pełni kwalifikowany adres URL lub ścieżką UNC. |
-| `TargetCulture` | Opcjonalnie `String` parametru.<br /><br /> Identyfikuje kulturę aplikacji i określa `Language` pole tożsamości zestawu wygenerowanego manifestu. Jeśli ten parametr nie jest określony, zakłada się, że aplikacja jest kulturowo niezmienna. |
-| `TrustUrlParameters` | Opcjonalnie `Boolean` parametru.<br /><br /> Określa, czy parametry ciągu zapytania URL powinny być udostępnione do aplikacji. Wartość domyślna tego parametru to `false`, co oznacza, że parametry nie będą dostępne dla aplikacji. |
-| `UpdateEnabled` | Opcjonalnie `Boolean` parametru.<br /><br /> Wskazuje, czy aplikacja jest włączona dla aktualizacji. Wartość domyślna tego parametru to `false`. Ten parametr ma zastosowanie tylko jeśli wartość `Install` parametr `true`. |
-| `UpdateInterval` | Opcjonalnie `Int32` parametru.<br /><br /> Określa interwał aktualizacji dla aplikacji. Wartość domyślna tego parametru to zero. Ten parametr ma zastosowanie tylko jeśli wartości `Install` i `UpdateEnabled` parametry są zarówno `true`. |
-| `UpdateMode` | Opcjonalnie `String` parametru.<br /><br /> Określa, czy aktualizacje powinny być sprawdzane na pierwszym planie, zanim aplikacja jest uruchomiona lub jest uruchomiona w tle jako aplikacja. Ten parametr może mieć następujące wartości:<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> Wartość domyślna tego parametru to `Background`. Ten parametr ma zastosowanie tylko jeśli wartości `Install` i `UpdateEnabled` parametry są zarówno `true`. |
-| `UpdateUnit` | Opcjonalnie `String` parametru.<br /><br /> Określa jednostki dla `UpdateInterval` parametru. Ten parametr może mieć następujące wartości:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Ten parametr ma zastosowanie tylko jeśli wartości `Install` i `UpdateEnabled` parametry są zarówno `true`. |
+| `AssemblyName` | Opcjonalny parametr `String`.<br /><br /> Określa pole `Name` tożsamości zestawu dla wygenerowanego manifestu. Jeśli ten parametr nie jest określony, nazwa jest wywnioskowana na podstawie parametrów `EntryPoint` lub `InputManifest`. Jeśli nie można wywnioskować nazwy, zadanie zgłosi błąd. |
+| `AssemblyVersion` | Opcjonalny parametr `String`.<br /><br /> Określa pole `Version` tożsamości zestawu dla wygenerowanego manifestu. Jeśli ten parametr nie jest określony, zadanie używa wartości "1.0.0.0". |
+| `CreateDesktopShortcut` | Opcjonalny parametr `Boolean`.<br /><br /> W przypadku wartości true na pulpicie zostanie utworzona ikona podczas instalacji aplikacji ClickOnce. |
+| `DeploymentUrl` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację aktualizacji aplikacji. Jeśli ten parametr nie jest określony, nie zdefiniowano lokalizacji aktualizacji dla aplikacji. Jeśli jednak parametr `UpdateEnabled` jest `true`, należy określić lokalizację aktualizacji. Określona wartość powinna być w pełni kwalifikowanym adresem URL lub ścieżką UNC. |
+| `Description` | Opcjonalny parametr `String`.<br /><br /> Określa opcjonalny opis aplikacji. |
+| `DisallowUrlActivation` | Opcjonalny parametr `Boolean`.<br /><br /> Określa, czy aplikacja powinna być uruchamiana automatycznie podczas otwierania przy użyciu adresu URL. Jeśli ten parametr jest `true`, aplikacja może zostać uruchomiona tylko z menu **Start** . Wartość domyślna tego parametru to `false`. Dane wejściowe są stosowane tylko wtedy, gdy wartość parametru `Install` jest `true`. |
+| `EntryPoint` | Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Wskazuje punkt wejścia dla wygenerowanego zestawu manifestu. W przypadku manifestu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dane wejściowe określają [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji.<br /><br />Jeśli `EntryPoint` parametr zadania nie zostanie określony, tag `<customHostSpecified>` zostanie wstawiony jako element podrzędny tagu `<entryPoint>`, na przykład:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Zależności bibliotek DLL można dodać do manifestu aplikacji, wykonując następujące czynności:<br /><br /> 1. Rozwiąż odwołania do zestawów za pomocą wywołania do <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2. Przekaż dane wyjściowe poprzedniego zadania i samego zestawu do <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3. Przekaż zależności przy użyciu parametru `Dependencies`, aby <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
+| `ErrorReportUrl` | Opcjonalny parametr <xref:System.String?displayProperty=fullName>.<br /><br /> Określa adres URL strony sieci Web, która jest wyświetlana w oknach dialogowych podczas instalacji ClickOnce. |
+| `InputManifest` | Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Wskazuje wejściowy dokument XML, który ma stanowić podstawę dla generatora manifestów. Dzięki temu dane strukturalne, takie jak niestandardowe definicje manifestu, zostaną odzwierciedlone w manifeście danych wyjściowych. Element główny w dokumencie XML musi być węzłem zestawu w przestrzeni nazw asmv1. |
+| `Install` | Opcjonalny parametr `Boolean`.<br /><br /> Określa, czy aplikacja jest zainstalowaną aplikacją, czy tylko w trybie online. Jeśli ten parametr jest `true`, aplikacja zostanie zainstalowana w menu **Start** użytkownika i będzie można ją usunąć za pomocą okna dialogowego **Dodawanie lub usuwanie programów** . Jeśli ten parametr jest `false`, aplikacja jest przeznaczona do użycia w trybie online ze strony sieci Web. Wartość domyślna tego parametru to `true`. |
+| `MapFileExtensions` | Opcjonalny parametr `Boolean`.<br /><br /> Określa, czy jest używane Mapowanie rozszerzenia nazwy pliku *. deploy* . Jeśli ten parametr jest `true`, każdy plik programu jest publikowany z rozszerzeniem nazwy pliku *. deploy* . Ta opcja jest przydatna do zabezpieczenia serwera sieci Web, aby ograniczyć liczbę rozszerzeń nazw plików, które muszą zostać odblokowane, aby umożliwić wdrożenie aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Wartość domyślna tego parametru to `false`. |
+| `MaxTargetPath` | Opcjonalny parametr `String`.<br /><br /> Określa maksymalną dozwoloną długość ścieżki pliku w ramach wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Jeśli ten parametr jest określony, długość każdej ścieżki pliku w aplikacji jest sprawdzana względem tego limitu. Wszystkie elementy, które przekraczają limit, spowodują ostrzeżenie dotyczące kompilacji. Jeśli nie określono tego parametru wejściowego lub wartość jest równa zero, sprawdzanie nie jest wykonywane. |
+| `MinimumRequiredVersion` | Opcjonalny parametr `String`.<br /><br /> Określa, czy użytkownik może pominąć aktualizację. Jeśli użytkownik ma wersję, która jest mniejsza niż wymagana minimum, nie będzie mieć opcji pomijania aktualizacji. Te dane wejściowe są stosowane tylko wtedy, gdy wartość parametru `Install` jest `true`. |
+| `OutputManifest` | Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa nazwę wygenerowanego pliku manifestu wyjściowego. Jeśli ten parametr nie jest określony, nazwa pliku wyjściowego jest wywnioskowana z tożsamości wygenerowanego manifestu. |
+| `Platform` | Opcjonalny parametr `String`.<br /><br /> Określa platformę docelową aplikacji. Ten parametr może mieć następujące wartości:<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Wartość domyślna to `AnyCPU`. |
+| `Product` | Opcjonalny parametr `String`.<br /><br /> Określa nazwę aplikacji. Jeśli ten parametr nie jest określony, nazwa jest wywnioskowana z tożsamości wygenerowanego manifestu. Ta nazwa jest używana jako nazwa skrótu w menu **Start** i jest częścią nazwy, która pojawia się w oknie dialogowym **Dodaj lub usuń programy** . |
+| `Publisher` | Opcjonalny parametr `String`.<br /><br /> Określa wydawcę aplikacji. Jeśli ten parametr nie jest określony, nazwa zostanie wywnioskowana z zarejestrowanego użytkownika lub tożsamość wygenerowanego manifestu. Ta nazwa jest używana jako nazwa folderu w menu **Start** i jest częścią nazwy, która pojawia się w oknie dialogowym **Dodaj lub usuń programy** . |
+| `SuiteNamel` | Opcjonalny parametr `String`.<br /><br /> Określa nazwę folderu w menu **Start** , w którym znajduje się aplikacja po wdrożeniu ClickOnce. |
+| `SupportUrl` | Opcjonalny parametr `String`.<br /><br /> Określa łącze, które pojawia się w oknie dialogowym **Dodaj lub usuń programy** dla aplikacji. Określona wartość powinna być w pełni kwalifikowanym adresem URL lub ścieżką UNC. |
+| `TargetCulture` | Opcjonalny parametr `String`.<br /><br /> Identyfikuje kulturę aplikacji i określa pole `Language` tożsamości zestawu dla wygenerowanego manifestu. Jeśli ten parametr nie jest określony, zakłada się, że aplikacja ma niezmienną kulturę. |
+| `TrustUrlParameters` | Opcjonalny parametr `Boolean`.<br /><br /> Określa, czy parametry ciągu zapytania URL mają być dostępne dla aplikacji. Wartość domyślna tego parametru to `false`, co oznacza, że parametry nie będą dostępne dla aplikacji. |
+| `UpdateEnabled` | Opcjonalny parametr `Boolean`.<br /><br /> Wskazuje, czy aplikacja jest włączona dla aktualizacji. Wartość domyślna tego parametru to `false`. Ten parametr ma zastosowanie tylko wtedy, gdy wartość parametru `Install` jest `true`. |
+| `UpdateInterval` | Opcjonalny parametr `Int32`.<br /><br /> Określa interwał aktualizacji aplikacji. Wartość domyślna tego parametru to zero. Ten parametr ma zastosowanie tylko wtedy, gdy wartości `Install` i `UpdateEnabled` parametrów są `true`. |
+| `UpdateMode` | Opcjonalny parametr `String`.<br /><br /> Określa, czy aktualizacje mają być sprawdzane na pierwszym planie przed uruchomieniem aplikacji, czy w tle, gdy aplikacja jest uruchomiona. Ten parametr może mieć następujące wartości:<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> Wartość domyślna tego parametru to `Background`. Ten parametr ma zastosowanie tylko wtedy, gdy wartości `Install` i `UpdateEnabled` parametrów są `true`. |
+| `UpdateUnit` | Opcjonalny parametr `String`.<br /><br /> Określa jednostki dla parametru `UpdateInterval`. Ten parametr może mieć następujące wartości:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Ten parametr ma zastosowanie tylko wtedy, gdy wartości `Install` i `UpdateEnabled` parametrów są `true`. |
 
 ## <a name="remarks"></a>Uwagi
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.GenerateManifestBase> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę parametrów klasy zadanie, zobacz [zadań klasy bazowej](../msbuild/task-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.GenerateManifestBase>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą parametrów klasy Task, zobacz [Klasa bazowa zadania](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Zadania](../msbuild/msbuild-tasks.md)
-- [Generateapplicationmanifest — zadanie](../msbuild/generateapplicationmanifest-task.md)
-- [Signfile — zadanie](../msbuild/signfile-task.md)
+- [GenerateApplicationManifest —, zadanie](../msbuild/generateapplicationmanifest-task.md)
+- [SignFile —, zadanie](../msbuild/signfile-task.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

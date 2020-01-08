@@ -1,5 +1,5 @@
 ---
-title: Xmlpeek — zadanie | Dokumentacja firmy Microsoft
+title: Xmlwgląd — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,34 +11,34 @@ helpviewer_keywords:
 - XmlPeek task [MSBuild]
 - MSBuild, XmlPeek task
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19b8273617955092519bf16f0aa5b3fbea86218a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e10cf26ad23e6fe4c881f68ad87bc80d04f2cf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777824"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590972"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek — zadanie
-Zwraca wartości określonych przez zapytanie XPath z pliku XML.
+Zwraca wartości określone przez zapytanie XPath z pliku XML.
 
 ## <a name="parameters"></a>Parametry
- W poniższej tabeli opisano parametry `XmlPeek` zadania.
+ W poniższej tabeli opisano parametry zadania `XmlPeek`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Namespaces`|Opcjonalnie `String` parametru.<br /><br /> Określa obszary nazw w przypadku prefiksów kwerendy XPath.|
-|`Query`|Opcjonalnie `String` parametru.<br /><br /> Określa zapytanie XPath.|
-|`Result`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera wyniki, które są zwracane przez to zadanie.|
-|`XmlContent`|Opcjonalnie `String` parametru.<br /><br /> Określa dane wejściowe XML jako ciąg.|
-|`XmlInputPath`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa dane wejściowe XML jako ścieżkę do pliku.|
+|`Namespaces`|Opcjonalny parametr `String`.<br /><br /> Określa przestrzenie nazw dla prefiksów zapytania XPath.|
+|`Query`|Opcjonalny parametr `String`.<br /><br /> Określa zapytanie XPath.|
+|`Result`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera wyniki, które są zwracane przez to zadanie.|
+|`XmlContent`|Opcjonalny parametr `String`.<br /><br /> Określa dane wejściowe w formacie XML jako ciąg.|
+|`XmlInputPath`|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa dane wejściowe w formacie XML jako ścieżkę pliku.|
 
 ## <a name="remarks"></a>Uwagi
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Zadania](../msbuild/msbuild-tasks.md)

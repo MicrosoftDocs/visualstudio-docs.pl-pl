@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565958"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie rozwiązywania problemów z kontrolerami testów i agentami testowymi w testach obciążenia
 
@@ -84,7 +84,7 @@ Dotyczy to kontrolera testów, usługi agenta testowego i procesu agenta testowe
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Powiąż kontroler testów z kartą sieciową
 
-Podczas próby skonfigurowania agenta testowego może zostać wyświetlony następujący błąd:
+Podczas konfigurowania agenta testowego, może pojawić się następujący błąd:
 
 **Błąd 8110. Nie można nawiązać połączenia z określonym komputerem kontrolera lub uzyskać dostępu do obiektu kontrolera.**
 
@@ -107,7 +107,7 @@ Aby naprawić ten błąd, należy powiązać kontroler testów z jedną z kart s
 
 3. Wpisz `ipconfig /all`.
 
-     Wyświetlane są adresy IP kart sieciowych. Zapisz adres IP karty sieciowej, z którą chcesz powiązać kontroler.
+     Adresy IP dla karty sieciowe są wyświetlane. Zapisz adres IP karty sieciowej, którą chcesz powiązać kontroler.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>Aby powiązać kontroler testów z kartą sieciową
 
@@ -131,13 +131,13 @@ Aby naprawić ten błąd, należy powiązać kontroler testów z jedną z kart s
 
 4. Zapisz plik.
 
-5. Uruchom usługę kontrolera testów. W wierszu polecenia wpisz `net start vsttcontroller`.
+5. Uruchom usługę kontrolera testu. W wierszu polecenia wpisz `net start vsttcontroller`.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Aby połączyć agenta testowego z kontrolerem powiązanym
 
 - Uruchom ponownie instalację agenta testowego. Tym razem Określ adres IP dla kontrolera testów, a nie nazwę kontrolera testów.
 
-Dotyczy to kontrolera testów, usługi agenta testowego i procesu agenta testowego. Właściwość `BindTo` musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedura ustawiania właściwości `BindTo` jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomy rejestrowania dla usługi agenta testowego i procesu agenta testowego, należy użyć plików konfiguracji, które są wymienione na liście [Ustaw poziom rejestrowania na komputerze kontrolera testów](#set-the-logging-level-on-a-test-controller-computer).
+Dotyczy to kontrolera testów, usługi agenta testowego i procesu agenta testowego. `BindTo` Właściwość musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedura ustawiania właściwości `BindTo` jest taka sama dla wszystkich trzech procesów, jak określono wcześniej dla kontrolera testów. Aby ustawić poziomy rejestrowania dla usługi agenta testowego i procesu agenta testowego, należy użyć plików konfiguracji, które są wymienione na liście [Ustaw poziom rejestrowania na komputerze kontrolera testów](#set-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Zobacz także
 
