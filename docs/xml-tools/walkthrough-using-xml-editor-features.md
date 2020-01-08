@@ -3,17 +3,17 @@ title: 'Wskazówki: korzystanie z funkcji edytora XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604449"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592467"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Przewodnik: korzystanie z funkcji edytora XML
 
@@ -64,7 +64,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 3. Wpisz w **testowym pliku XML**.
 
-4. W nowym wierszu wpisz `<` i wybierz pozycję **Pracownik** z listy członków.
+4. W nowym wierszu wpisz `<`i wybierz pozycję **Pracownik** z listy członków.
 
      Edytor dodaje początek elementu XML, `<employee`. W tym momencie można dodać atrybuty do elementu lub zamknąć tag początkowy, wpisując `>`.
 
@@ -74,7 +74,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 7. Wpisz `<` i wybierz **Identyfikator** z listy elementów członkowskich. Następnie wpisz `>`.
 
-     Edytor dodaje element XML, `<ID></ID>` i położenie kursora po tagu początkowym ID.
+     Edytor dodaje element XML, `<ID></ID>`i położenie kursora po tagu początkowym ID.
 
 8. Wpisz **ABC**.
 
@@ -90,13 +90,13 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 11. Umieść kursor po tagu End ID, wpisz `<`, wybierz pozycję **Zatrudnij** z listy członków, a następnie wpisz `>`.
 
-     Edytor dodaje element XML, `<hire-date></hire-date>` i położenie kursora po tagu początkowym zatrudnienia.
+     Edytor dodaje element XML, `<hire-date></hire-date>`i położenie kursora po tagu początkowym zatrudnienia.
 
 12. Wpisz wartość **2003-01-10** dla wartości daty zatrudnienia.
 
 ## <a name="to-format-the-xml-document"></a>Aby sformatować dokument XML
 
-- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL** +**E**,**D**.
+- Wybierz przycisk **Formatuj dokument** na pasku narzędzi edytora XML lub naciśnij **klawisze CTRL**+**E**,**D**.
 
    ![Przycisk formatowania dokumentu XML w programie Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ Kroki opisane w tym instruktażu pokazują, jak utworzyć nowy dokument XML. Prz
 
 ## <a name="to-save-the-xml-document"></a>Aby zapisać dokument XML
 
-1. Z menu **plik** wybierz polecenie **Zapisz jako**.
+1. Z menu **Plik** wybierz pozycję **Zapisz jako**.
 
      Zostanie wyświetlone okno dialogowe **Zapisywanie pliku jako** . Domyślną nazwą pliku jest *"xmlplik1"* .
 

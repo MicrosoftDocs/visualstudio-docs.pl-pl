@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07645597846bd85f3152da866a253b079bc3963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 11a069e17e615199e367683273adb85e771f1d9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666343"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584520"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opcje, Edytor tekstu, podstawowe (Visual Basic), zaawansowane
 Strona **właściwości specyficzne dla języka vb** w folderze **podstawowa** folderu **Edytor tekstu** okna dialogowego **Opcje** (menu**Narzędzia** ) zawiera następujące właściwości:
@@ -55,7 +55,7 @@ Strona **właściwości specyficzne dla języka vb** w folderze **podstawowa** f
 
  **Włącz podświetlanie odwołań i słów kluczowych**
 
-Edytor tekstu może wyróżnić wszystkie wystąpienia symbolu lub wszystkie słowa kluczowe w klauzuli, takie jak `If..Then`, `While...End While` lub `Try...Catch...Finally`. Możesz nawigować między wyróżnionymi odwołaniami i słowami kluczowymi, naciskając klawisz **Ctrl**  + **SHIFT**  + **strzałkę w dół** lub **Ctrl**  + **SHIFT**  + **strzałkę w górę**.
+Edytor tekstu może wyróżnić wszystkie wystąpienia symbolu lub wszystkie słowa kluczowe w klauzuli, takie jak `If..Then`, `While...End While`lub `Try...Catch...Finally`. Możesz nawigować między wyróżnionymi odwołaniami i słowami kluczowymi, naciskając klawisz **Ctrl** + **SHIFT** + **strzałkę w dół** lub **Ctrl** + **SHIFT** + **strzałkę w górę**.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
@@ -97,7 +97,7 @@ Po wybraniu linie pionowe pojawiają się w edytorze, który jest wierszem ze st
 
 **Automatyczne wstawianie konstrukcji końcowych**
 
-Gdy wpiszesz — na przykład pierwszy wiersz deklaracji procedury, `Sub Main` — i naciśnij klawisz **Enter**, Edytor tekstu dodaje pasujący wiersz `End Sub`. Podobnie, jeśli dodasz pętlę [for](/dotnet/visual-basic/language-reference/statements/for-next-statement) , Edytor tekstu dodaje pasującą instrukcję `Next`. Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie dodaje końcową konstrukcję.
+Gdy wpiszesz — na przykład pierwszy wiersz deklaracji procedury, `Sub Main`— i naciśnij klawisz **Enter**, Edytor tekstu dodaje pasujący wiersz `End Sub`. Podobnie, jeśli dodasz pętlę [for](/dotnet/visual-basic/language-reference/statements/for-next-statement) , Edytor tekstu dodaje pasującą instrukcję `Next`. Gdy ta opcja jest zaznaczona, Edytor kodu automatycznie dodaje końcową konstrukcję.
 
 **Automatyczne wstawianie elementów członkowskich interfejsu i MustOverride**
 

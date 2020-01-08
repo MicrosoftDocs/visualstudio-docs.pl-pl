@@ -3,17 +3,17 @@ title: Właściwości dokumentu XML, Właściwości, okno
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604158"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592428"
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, okno Właściwości
 
@@ -22,13 +22,13 @@ Okno **Właściwości** zawiera podstawowe informacje o dokumencie aktywnym w ed
 > [!NOTE]
 > Wszystkie właściwości dokumentu XML są zapisywane w rozwiązaniu. W związku z tym nie trzeba ponownie wprowadzać tych wartości przy następnym otwarciu rozwiązania.
 
-**Kody**
+**Kodowanie**
 
 Kodowanie znaków dla pliku. Zmiana tej właściwości powoduje także zmianę atrybutu kodowania w deklaracji XML i odwrotnie. Nowe kodowanie jest używane do kodowania pliku podczas zapisywania pliku.
 
 **Dane wejściowe**
 
-Dokument wejściowy skojarzony z arkuszem stylów XSLT. Jest on używany przez polecenia **Uruchom XSLT** , na przykład, **XML**  > **uruchomić XSLT bez debugowania**. Dokument można wybrać za pomocą przycisku Przeglądaj (.. **.** ).
+Dokument wejściowy skojarzony z arkuszem stylów XSLT. Jest on używany przez polecenia **Uruchom XSLT** , na przykład, **XML** > **uruchomić XSLT bez debugowania**. Dokument można wybrać za pomocą przycisku Przeglądaj (.. **.** ).
 
 Ta właściwość jest widoczna tylko wtedy, gdy plik XSLT jest otwarty w edytorze.
 

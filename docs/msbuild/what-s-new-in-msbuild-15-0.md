@@ -3,18 +3,18 @@ title: Co&#39;nowego w programie MSBuild 15 | Microsoft Docs
 ms.date: 03/01/2017
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: cd3e86e3cbaaf9c368f848cbd0136c0473932490
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913099"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567283"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co nowego w programie MSBuild 15
 
@@ -30,26 +30,26 @@ Program MSBuild jest teraz dostępny jako część [zestaw .NET Core SDK](https:
 
  Następujące właściwości programu MSBuild zostały zaktualizowane z powodu nowego numeru wersji.
 
-- `MSBuildToolsVersion`dla tej wersji narzędzi jest 15,0. Wersja zestawu to 15.1.0.0.
+- `MSBuildToolsVersion` tej wersji narzędzi to 15,0. Wersja zestawu to 15.1.0.0.
 
-- `MSBuildToolsPath`nie ma już stałej lokalizacji. Domyślnie znajduje się on w folderze *MSBuild\15.0\bin* względem lokalizacji instalacji programu Visual Studio, ale lokalizację instalacji programu Visual Studio można zmienić w czasie instalacji.
+- `MSBuildToolsPath` nie ma już stałej lokalizacji. Domyślnie znajduje się on w folderze *MSBuild\15.0\bin* względem lokalizacji instalacji programu Visual Studio, ale lokalizację instalacji programu Visual Studio można zmienić w czasie instalacji.
 
-- `ToolsVersion`wartości nie są już ustawione w rejestrze.
+- wartości `ToolsVersion` nie są już ustawione w rejestrze.
 
-- Właściwości `SDK35ToolsPath` i`SDK40ToolsPath` wskazują zestawowi .NET Framework SDK, który jest spakowany z tą wersją programu Visual Studio (na przykład 10.0 a dla narzędzi 4. X).
+- Właściwości `SDK35ToolsPath` i `SDK40ToolsPath` wskazują zestaw .NET Framework SDK, który jest opakowany z tą wersją programu Visual Studio (na przykład 10.0 A dla narzędzi 4. X).
 
 ## <a name="updates"></a>Aktualizacje
-- [Element projektu](../msbuild/project-element-msbuild.md) ma nowy `SDK` atrybut. `Xmlns` Ponadto atrybut jest teraz opcjonalny. Aby uzyskać więcej informacji na `SDK` temat atrybutu, [zobacz How to: Użyj zestawów SDK](../msbuild/how-to-use-project-sdk.md)projektów programu MSBuild, [pakietów, elementów i struktur](/dotnet/core/packages) oraz [dodatków do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj).
-- [Element Item](../msbuild/item-element-msbuild.md) poza elementami docelowymi ma `Update` nowy atrybut. Ponadto ograniczenie dla `Remove` atrybutu zostało wyeliminowane.
-- *Directory. Build. props* to plik zdefiniowany przez użytkownika, który udostępnia dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft. Common. props* , chyba że `ImportDirectoryBuildTargets` właściwość ma wartość **false**. *Katalog. Build. targets* został zaimportowany przez element *Microsoft. Common. targets*.
+- [Element projektu](../msbuild/project-element-msbuild.md) ma nowy atrybut `SDK`. Ponadto atrybut `Xmlns` jest teraz opcjonalny. Aby uzyskać więcej informacji o atrybucie `SDK`, zobacz [How to: use Project SDK](../msbuild/how-to-use-project-sdk.md), [Packages, webpackages i platforms](/dotnet/core/packages) i [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj).
+- [Element Item](../msbuild/item-element-msbuild.md) poza elementami docelowymi ma nowy atrybut `Update`. Ponadto ograniczenie `Remove` atrybutu zostało wyeliminowane.
+- *Directory. Build. props* to plik zdefiniowany przez użytkownika, który udostępnia dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft. Common. props* , chyba że właściwość `ImportDirectoryBuildTargets` jest ustawiona na **false**. *Katalog. Build. targets* został zaimportowany przez element *Microsoft. Common. targets*.
 - Wszystkie metadane o nazwie, która nie powoduje konfliktu z bieżącą listą atrybutów, mogą być opcjonalnie wyrażone jako atrybut. Aby uzyskać więcej informacji, zobacz element [Item](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nowe funkcje właściwości
 
-- `EnsureTrailingSlash`dodaje końcowy ukośnik do ścieżki, jeśli jeszcze nie istnieje.
-- `NormalizePath`łączy elementy ścieżki i zapewnia, że ciąg wyjściowy ma poprawne znaki separatora katalogu dla bieżącego systemu operacyjnego.
-- `NormalizeDirectory`łączy elementy ścieżki, zapewnia końcowy ukośnik i zapewnia, że ciąg wyjściowy ma poprawne znaki separatora katalogu dla bieżącego systemu operacyjnego.
-- `GetPathOfFileAbove`zwraca ścieżkę pliku bezpośrednio poprzedzającego ten plik. Jest funkcjonalnym odpowiednikiem wywołania `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
+- `EnsureTrailingSlash` dodaje końcowy ukośnik do ścieżki, jeśli jeszcze nie istnieje.
+- `NormalizePath` łączy elementy ścieżki i zapewnia, że ciąg wyjściowy ma poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.
+- `NormalizeDirectory` łączy elementy ścieżki, zapewnia końcowy ukośnik i zapewnia, że ciąg wyjściowy ma poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.
+- `GetPathOfFileAbove` zwraca ścieżkę pliku bezpośrednio poprzedzającego ten plik. Jest funkcjonalnym odpowiednikiem wywołania `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
 ## <a name="see-also"></a>Zobacz także
 - [MSBuild](../msbuild/msbuild.md)

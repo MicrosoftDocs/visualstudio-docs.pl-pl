@@ -3,17 +3,17 @@ title: Oceń wyrażenie XPath podczas debugowania
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2e0b6c84fa9447dc38aa7976fa59bb5aa67d5c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654274"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592727"
 ---
 # <a name="evaluate-xpath-expressions"></a>Oceń wyrażenia XPath
 
@@ -34,7 +34,7 @@ Poniższa procedura korzysta z plików *below-Average. xsl* i *Books. XML* z [pr
 
 1. Wstaw punkt przerwania w tagu początkowym `xsl:if`.
 
-2. Aby rozpocząć debugowanie, wybierz pozycję **XML**  > **Rozpocznij debugowanie XSLT** na pasku menu (lub naciśnij klawisz **Alt** +**F5**).
+2. Aby rozpocząć debugowanie, wybierz pozycję **XML** > **Rozpocznij debugowanie XSLT** na pasku menu (lub naciśnij klawisz **Alt**+**F5**).
 
    Debuger rozpocznie działanie i przerwie w tagu `xsl:if`.
 

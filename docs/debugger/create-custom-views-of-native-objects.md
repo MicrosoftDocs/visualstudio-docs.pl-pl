@@ -13,18 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061078"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405212"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze przy użyciu struktury Natvis
 
 Struktura programu Visual Studio *Natvis* dostosowuje sposób, w jaki typy natywne są wyświetlane w oknach zmiennych debugera, takich jak **Ustawienia regionalne** i okna **czujki** , oraz w **etykietkach**danych. Wizualizacje Natvis mogą pomóc w tworzeniu typów, które można wyświetlić podczas debugowania.
 
 Natvis zastępuje plik *autoexp. dat* we wcześniejszych wersjach programu Visual Studio z SKŁADNIĄ języka XML, lepszą diagnostyką, przechowywaniem wersji i obsługą wielu plików.
+
+> [!NOTE]
+> Dostosowania Natvis współpracują z klasami i strukturami, ale nie z typedef.
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Wizualizacje Natvis
 
@@ -69,9 +72,9 @@ Plik *. Natvis* można dodać do dowolnego C++ projektu.
 
 **Aby dodać nowy plik *Natvis* :**
 
-1. Wybierz węzeł C++ projektu w **Eksplorator rozwiązań**i wybierz pozycję **projekt**  > **Dodaj nowy element**lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj**  > **nowy element**.
+1. Wybierz węzeł C++ projektu w **Eksplorator rozwiązań**i wybierz pozycję **projekt** > **Dodaj nowy element**lub kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj** > **nowy element**.
 
-1. W oknie dialogowym **Dodaj nowy element** wybierz opcję**Narzędzie**  **C++ Visual**  >   > **plik wizualizacji debugera (. Natvis)** .
+1. W oknie dialogowym **Dodaj nowy element** wybierz opcję **Narzędzie**  **C++ Visual** >  > **plik wizualizacji debugera (. Natvis)** .
 
 1. Nazwij plik, a następnie wybierz pozycję **Dodaj**.
 
@@ -164,7 +167,7 @@ Gdy debuger napotyka błędy w wpisie wizualizacji, ignoruje je. Wyświetla typ 
 
 **Aby włączyć diagnostykę programu Natvis:**
 
-- W **obszarze narzędzia**  > **Opcje** (lub **Debuguj**  > **Opcje**) > **debugowanie**  > **okno dane wyjściowe**, Ustawianie **komunikatów diagnostycznychC++ Natvis (tylko)** do **błędu**, **Ostrzeżenie** , lub **verbose**, a następnie wybierz przycisk **OK**.
+- W **obszarze narzędzia** > **Opcje** ( **lub Debuguj** > **Opcje**) > **debugowanie** > **okno dane wyjściowe**, ustaw **komunikaty diagnostyczne NatvisC++ (tylko)** na **błąd**, **Ostrzeżenie**lub **pełne**, a następnie wybierz przycisk **OK**.
 
 Błędy pojawiają się w oknie **danych wyjściowych** .
 
@@ -207,7 +210,7 @@ Podstawowa `Type` wygląda następująco:
 #### <a name="templated-classes"></a>Klasy z szablonami
 Atrybut `Name` elementu `Type` akceptuje gwiazdki `*` jako symbol wieloznaczny, który może być używany dla nazw klas z szablonami.
 
-W poniższym przykładzie jest używana ta sama Wizualizacja, niezależnie od tego, czy obiekt jest `CAtlArray<int>`, czy `CAtlArray<float>`. Jeśli dla `CAtlArray<float>` istnieje konkretny wpis wizualizacji, ma on pierwszeństwo przed ogólnym.
+W poniższym przykładzie jest używana ta sama Wizualizacja, niezależnie od tego, czy obiekt jest `CAtlArray<int>`, czy `CAtlArray<float>`. Jeśli dla `CAtlArray<float>`istnieje konkretny wpis wizualizacji, ma on pierwszeństwo przed ogólnym.
 
 ```xml
 <Type Name="ATL::CAtlArray&lt;*&gt;">
@@ -233,7 +236,7 @@ W poniższym przykładzie Wizualizacja dotyczy tylko typu `BaseClass`:
 
 #### <a name="priority-attribute"></a>Priorytet — atrybut
 
-Opcjonalny atrybut `Priority` określa kolejność, w której mają być używane definicje alternatywne, jeśli nie można przeanalizować definicji. Możliwe wartości `Priority` to: `Low`, `MediumLow`, `Medium`, `MediumHigh` i `High`. Wartość domyślna to `Medium`. Atrybut `Priority` odróżnia tylko między priorytetami w tym samym pliku *. Natvis* .
+Opcjonalny atrybut `Priority` określa kolejność, w której mają być używane definicje alternatywne, jeśli nie można przeanalizować definicji. Możliwe wartości `Priority` to: `Low`, `MediumLow`,`Medium`, `MediumHigh`i `High`. Wartość domyślna to `Medium`. Atrybut `Priority` odróżnia tylko między priorytetami w tym samym pliku *. Natvis* .
 
 Poniższy przykład najpierw analizuje wpis pasujący do 2015 STL. Jeśli przeanalizowanie nie powiedzie się, używa alternatywnego wpisu dla wersji 2013 biblioteki STL:
 
@@ -269,7 +272,7 @@ Atrybut `Optional` można umieścić w dowolnym węźle. Jeśli Podwyrażenie w 
 
 ### <a name="BKMK_Condition_attribute"></a>Atrybut warunku
 
-Opcjonalny atrybut `Condition` jest dostępny dla wielu elementów wizualizacji i określa, kiedy używać reguły wizualizacji. Jeśli wyrażenie wewnątrz atrybutu warunku jest rozpoznawane jako `false`, reguła wizualizacji nie ma zastosowania. Jeśli zostanie wyznaczona wartość `true` lub nie ma atrybutu `Condition`, zostanie zastosowana Wizualizacja. Tego atrybutu można użyć dla logiki if-else w wpisach wizualizacji.
+Opcjonalny atrybut `Condition` jest dostępny dla wielu elementów wizualizacji i określa, kiedy używać reguły wizualizacji. Jeśli wyrażenie wewnątrz atrybutu warunku jest rozpoznawane jako `false`, reguła wizualizacji nie ma zastosowania. Jeśli zostanie wyznaczona wartość `true`lub nie ma atrybutu `Condition`, zostanie zastosowana Wizualizacja. Tego atrybutu można użyć dla logiki if-else w wpisach wizualizacji.
 
 Na przykład następująca Wizualizacja ma dwa elementy `DisplayString` dla typu inteligentnego wskaźnika. Gdy element członkowski `_Myptr` jest pusty, warunek pierwszego elementu `DisplayString` jest rozpoznawany jako `true`, tak że formularz zostanie wyświetlony. Gdy członek `_Myptr` nie jest pusty, warunek szacuje się na `false`, a drugi `DisplayString` element zostanie wyświetlony.
 
@@ -365,7 +368,7 @@ Dodanie elementu `StringView` informuje debuger, że może wyświetlić wartoś�
 </Type>
 ```
 
-Podczas debugowania można wybrać ikonę lupy obok zmiennej, a następnie wybrać **wizualizator tekstu** , aby wyświetlić ciąg, do którego wskazuje **m_pszData** .
+Podczas debugowania można wybrać ikonę lupy obok zmiennej, a następnie wybrać **wizualizator tekstu** , aby wyświetlić ciąg, do którego **m_pszData** wskazuje.
 
  ![CStringT danych za pomocą wizualizatora StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "CStringT danych za pomocą wizualizatora StringView")
 
@@ -381,7 +384,7 @@ Opcjonalny węzeł `Expand` dostosowuje elementy podrzędne typu wizualizacji po
 
 #### <a name="BKMK_Item_expansion"></a>Rozszerzenie elementu
 
- Element `Item` jest najbardziej podstawowym i typowym elementem w węźle `Expand`. `Item` definiuje pojedynczy element podrzędny. Na przykład Klasa `CRect` z polami `top`, `left`, `right` i `bottom` zawiera następujący wpis wizualizacji:
+ Element `Item` jest najbardziej podstawowym i typowym elementem w węźle `Expand`. `Item` definiuje pojedynczy element podrzędny. Na przykład Klasa `CRect` z polami `top`, `left`, `right`i `bottom` zawiera następujący wpis wizualizacji:
 
 ```xml
 <Type Name="CRect">
@@ -508,7 +511,7 @@ Debuger oblicza wyrażenia `NextPointer` i `ValueNode` w kontekście `LinkedList
 `ValueNode` można pozostawić puste lub użyć `this`, aby odwołać się do węzła `LinkedListItems`.
 
 #### <a name="customlistitems-expansion"></a>Rozwinięcie CustomListItems
-Rozwinięcie `CustomListItems` pozwala pisać logikę niestandardową do przechodzenia ze strukturą danych, taką jak Hashtable. Użyj `CustomListItems` do wizualizacji struktur danych, które mogą C++ używać wyrażeń dla wszystkiego, czego potrzebujesz do obliczenia, ale nie pasują do mold dla `ArrayItems`, `IndexListItems` lub `LinkedListItems`.
+Rozwinięcie `CustomListItems` pozwala pisać logikę niestandardową do przechodzenia ze strukturą danych, taką jak Hashtable. Użyj `CustomListItems` do wizualizacji struktur danych, które mogą C++ używać wyrażeń dla wszystkiego, czego potrzebujesz do obliczenia, ale nie pasują do mold dla `ArrayItems`, `IndexListItems`lub `LinkedListItems`.
 
 Poniższy wizualizator dla `CAtlMap` to doskonały przykład, w którym `CustomListItems` jest odpowiedni.
 
@@ -546,7 +549,7 @@ Za pomocą `Exec` można wykonać kod wewnątrz `CustomListItems` rozwinięcia p
 `CustomListItems` obsługuje następujące funkcje wewnętrzne:
 
 - `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, 0, 1, 2
+- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
 - `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
 - `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
 - `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
@@ -579,7 +582,7 @@ Za pomocą `Exec` można wykonać kod wewnątrz `CustomListItems` rozwinięcia p
 </Type>
 ```
 
-Składnia jest podobna do węzła `LinkedListItems`. `LeftPointer`, `RightPointer` i `ValueNode` są oceniane w kontekście klasy węzła drzewa. `ValueNode` można pozostawić puste lub użyć `this`, aby odwołać się do węzła `TreeItems`.
+Składnia jest podobna do węzła `LinkedListItems`. `LeftPointer`, `RightPointer`i `ValueNode` są oceniane w kontekście klasy węzła drzewa. `ValueNode` można pozostawić puste lub użyć `this`, aby odwołać się do węzła `TreeItems`.
 
 #### <a name="BKMK_ExpandedItem_expansion"></a>Rozwinięcie ExpandedItem
  Element `ExpandedItem` generuje Zagregowany widok podrzędny przez wyświetlanie właściwości klas bazowych lub składowych danych, tak jakby były elementami podrzędnymi typu wizualizacji. Debuger oblicza określone wyrażenie i dołącza podrzędne węzły wyniku do podrzędnej listy wizualizacji typu.
@@ -686,4 +689,4 @@ Każdy typ zdefiniowany w pliku *Natvis* musi jawnie zawierać wszystkie WIZUALI
 
 Jest to znacznie większa ilość pracy, która pozwala napisać wizualizację niestandardową niż definicja pliku Natvis XML, ale nie jest to ograniczenie dotyczące tego, co plik Natvis działa lub nie obsługuje. Wizualizacje niestandardowe mają dostęp do pełnego zestawu interfejsów API rozszerzalności debugera, które mogą wysyłać zapytania i modyfikować proces debugowanego obiektu lub komunikować się z innymi częściami programu Visual Studio.
 
- Można użyć atrybutów `Condition`, `IncludeView` i `ExcludeView` dla elementów `CustomVisualizer`.
+ Można użyć atrybutów `Condition`, `IncludeView`i `ExcludeView` dla elementów `CustomVisualizer`.

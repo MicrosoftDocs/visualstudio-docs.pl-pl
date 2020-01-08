@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568842"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587475"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Instrukcje: generowanie danych metryk kodu
 
@@ -265,5 +265,5 @@ Inne metryki, takie jak `CyclomaticComplexity` i `MaintainabilityIndex` używaj�
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Korzystanie z okna wyników metryk kodu](../code-quality/working-with-code-metrics-data.md)
+- [Korzystanie z okna wyników metryk kodów](../code-quality/working-with-code-metrics-data.md)
 - [Wartości metryk kodu](../code-quality/code-metrics-values.md)

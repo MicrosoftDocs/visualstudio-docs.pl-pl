@@ -8,23 +8,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Indentation
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e57470c1afa0fad97265bdcebff4fd9a2a0a43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666662"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568272"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opcje, Edytor tekstu, U-SQL, formatowanie
 
-Na stronie opcje **formatowania** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia**  > **Opcje**. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu**  >  formatowanie**U-SQL**  > .
+Na stronie opcje **formatowania** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia** > **Opcje**. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu** > formatowanie **U-SQL** > .
 
-## <a name="general-page"></a>Strona ogólna
+## <a name="general-page"></a>Strona Ogólne
 
 ### <a name="general-settings"></a>Ustawienia ogólne
 
@@ -51,4 +51,4 @@ Opcje wcięć na stronach **kart** dla każdego języka określają, gdzie Edyto
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Ogólne, środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Okno dialogowe Ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md)

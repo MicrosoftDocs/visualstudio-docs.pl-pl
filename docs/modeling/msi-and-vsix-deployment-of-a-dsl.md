@@ -2,17 +2,17 @@
 title: Wdrażanie pakietów MSI i VSIX języka DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590192"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
 Język specyficzny dla domeny można zainstalować na własnym komputerze lub na innych komputerach. Program Visual Studio musi być już zainstalowany na komputerze docelowym.
@@ -35,7 +35,7 @@ Gdy linia DSL jest instalowana przez tę metodę, użytkownik może otworzyć pl
 
    1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt **DslPackage** , a następnie kliknij polecenie **Otwórz folder w Eksploratorze plików**.
 
-   2. Znajdź **\\ bin pliku \* \\** _YourProject_ **. DslPackage. vsix**
+   2. Znajdź **\\bin pliku \*\\** _YourProject_ **. DslPackage. vsix**
 
 2. Skopiuj plik **. vsix** do komputera docelowego, na którym chcesz zainstalować DSL. Może to być własny komputer lub inny.
 
@@ -74,7 +74,7 @@ Gdy linia DSL jest instalowana przez tę metodę, użytkownik może otworzyć pl
 
 1. Ustaw `InstalledByMsi` w manifeście rozszerzenia. Zapobiega to instalowaniu i odinstalowywaniu VSX z wyjątkiem MSI. Jest to ważne, jeśli w pliku MSI zostaną uwzględnione inne składniki.
 
-   1. Otwórz DslPackage\source.extension.tt
+   1. Open DslPackage\source.extension.tt
 
    2. Wstaw następujący wiersz przed `<SupportedProducts>`:
 
@@ -102,11 +102,11 @@ Gdy linia DSL jest instalowana przez tę metodę, użytkownik może otworzyć pl
 
     Program Visual Studio utworzy plik o nazwie **CreateMsiSetupProject. VDPROJ**.
 
-6. W Eksploratorze Windows skopiuj pozycję DSL \\ *. VDPROJ do nowego folderu o nazwie Setup.
+6. W Eksploratorze Windows skopiuj pozycję DSL\\*. VDPROJ do nowego folderu o nazwie Setup.
 
     (Jeśli chcesz, możesz teraz wykluczyć CreateMsiSetupProject.tt z projektu DSL).
 
-7. W **Eksplorator rozwiązań**należy dodać **Instalatora \\ \*. VDPROJ** jako istniejący projekt.
+7. W **Eksplorator rozwiązań**należy dodać **Instalatora\\\*. VDPROJ** jako istniejący projekt.
 
 8. W menu **projekt** kliknij pozycję **zależności projektu**.
 

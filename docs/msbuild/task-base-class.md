@@ -1,5 +1,5 @@
 ---
-title: Task — klasa podstawowa | Dokumentacja firmy Microsoft
+title: Klasa bazowa zadania | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -8,31 +8,31 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9662a504232c70662e40db54e3eda27aa4abe835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938995"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566400"
 ---
-# <a name="task-base-class"></a>Klasa podstawowa zadania
-Wiele zadań, ale ostatecznie dziedziczyć <xref:Microsoft.Build.Utilities.Task> klasy. Ta klasa dodaje kilka parametrów do zadań, które wynikają z nich. Te parametry są wymienione w niniejszym dokumencie.
+# <a name="task-base-class"></a>Klasa bazowa zadania
+Wiele zadań ostatecznie dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Ta klasa dodaje kilka parametrów do zadań, które pochodzą z nich. Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
  W poniższej tabeli opisano parametry tej klasy bazowej.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Opcjonalnie <xref:Microsoft.Build.Framework.IBuildEngine> parametru.<br /><br /> Określa dostępne dla zadań interfejsu aparatu kompilacji. Aparat kompilacji automatycznie ustawia tego parametru, aby zezwolić na wywołania zwrotnego do niego zadań.|
-|<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Opcjonalnie <xref:Microsoft.Build.Framework.IBuildEngine2> parametru.<br /><br /> Określa dostępne dla zadań interfejsu aparatu kompilacji. Aparat kompilacji automatycznie ustawia tego parametru, aby zezwolić na wywołania zwrotnego do niego zadań.<br /><br /> Jest to właściwość wygody, tak aby autorzy zadań dziedziczenie z tej klasy będą musieli rzutować wartości z `IBuildEngine` do `IBuildEngine2`.|
-|<xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A>|Opcjonalnie <xref:Microsoft.Build.Framework.IBuildEngine3> parametru.<br /><br /> Określa interfejs aparat kompilacji, które są udostępniane przez hosta.|
-|<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskHost> parametru.<br /><br /> Określa wystąpienie obiektu hosta (może być null). Aparat kompilacji ustawia tę właściwość, jeśli host IDE skojarzył obiekt hosta tego konkretnego zadania.|
-|<xref:Microsoft.Build.Utilities.Task.Log%2A>|Opcjonalnie <xref:Microsoft.Build.Utilities.TaskLoggingHelper> parametru tylko do odczytu.<br /><br /> Obiekt pomocnika rejestrowania...|
+|<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Opcjonalny parametr <xref:Microsoft.Build.Framework.IBuildEngine>.<br /><br /> Określa interfejs aparatu kompilacji dostępny dla zadań. Aparat kompilacji automatycznie ustawia ten parametr, aby zezwolić na wywoływanie zadań z powrotem.|
+|<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Opcjonalny parametr <xref:Microsoft.Build.Framework.IBuildEngine2>.<br /><br /> Określa interfejs aparatu kompilacji dostępny dla zadań. Aparat kompilacji automatycznie ustawia ten parametr, aby zezwolić na wywoływanie zadań z powrotem.<br /><br /> Jest to wygodna właściwość, dzięki czemu autorzy zadań dziedziczą z tej klasy nie muszą rzutować wartości z `IBuildEngine` na `IBuildEngine2`.|
+|<xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A>|Opcjonalny parametr <xref:Microsoft.Build.Framework.IBuildEngine3>.<br /><br /> Określa interfejs aparatu kompilacji dostarczony przez hosta.|
+|<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskHost>.<br /><br /> Określa wystąpienie obiektu hosta (może mieć wartość null). Aparat kompilacji ustawia tę właściwość, jeśli IDE hosta skojarzył obiekt hosta z tym konkretnym zadaniem.|
+|<xref:Microsoft.Build.Utilities.Task.Log%2A>|Opcjonalny <xref:Microsoft.Build.Utilities.TaskLoggingHelper> parametr tylko do odczytu.<br /><br /> Obiekt pomocnika rejestrowania...|
 
 ## <a name="see-also"></a>Zobacz także
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

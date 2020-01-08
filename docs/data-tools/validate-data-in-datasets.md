@@ -16,26 +16,26 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f370e55c600baa3f017f6bbb58feab38c23e51ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed115e851e9c2291dfc9d00f4bb36f670a7f3e00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648110"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586071"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 Sprawdzanie poprawności danych jest procesem potwierdzającym, że wartości wprowadzane do obiektów danych są zgodne z ograniczeniami w schemacie zestawu danych. Proces weryfikacji potwierdza również, że te wartości są przestrzegane w regułach, które zostały określone dla danej aplikacji. Dobrym sposobem jest zweryfikowanie danych przed wysłaniem aktualizacji do źródłowej bazy danych. Pozwala to zmniejszyć liczbę błędów, a także potencjalne liczby operacji rundy między aplikacją a bazą danych.
 
 Można potwierdzić, że dane, które są zapisywane w zestawie danych, są prawidłowe przez skompilowanie kontroli walidacji do samego zestawu danych. Zestaw danych może sprawdzić dane niezależnie od sposobu wykonywania aktualizacji — bezpośrednio przez kontrolki w formularzu, w składniku lub w inny sposób. Ponieważ zestaw danych jest częścią aplikacji (w przeciwieństwie do zaplecza bazy danych), jest to miejsce logiczne do kompilowania sprawdzania poprawności specyficznej dla aplikacji.
 
-Najlepszym miejscem na dodanie walidacji do aplikacji jest plik klasy częściowej zestawu danych. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Otwórz **Projektant obiektów DataSet** i kliknij dwukrotnie kolumnę lub tabelę, dla której chcesz utworzyć walidację. Ta akcja powoduje automatyczne utworzenie programu obsługi zdarzeń <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging>.
+Najlepszym miejscem na dodanie walidacji do aplikacji jest plik klasy częściowej zestawu danych. W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] lub [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Otwórz **Projektant obiektów DataSet** i kliknij dwukrotnie kolumnę lub tabelę, dla której chcesz utworzyć walidację. Ta akcja powoduje automatyczne utworzenie programu obsługi zdarzeń <xref:System.Data.DataTable.ColumnChanging> lub <xref:System.Data.DataTable.RowChanging>.
 
-## <a name="validate-data"></a>Weryfikuj dane
+## <a name="validate-data"></a>Sprawdzanie poprawności danych
 Walidacja w zestawie danych jest realizowana w następujący sposób:
 
 - Tworząc własne sprawdzanie poprawności specyficzne dla aplikacji, które mogą sprawdzać wartości w poszczególnych kolumnach danych podczas wprowadzania zmian. Aby uzyskać więcej informacji, zobacz [jak: sprawdzanie poprawności danych podczas wprowadzania zmian w kolumnie](validate-data-in-datasets.md).
@@ -44,12 +44,12 @@ Walidacja w zestawie danych jest realizowana w następujący sposób:
 
 - Tworząc klucze, unikatowe ograniczenia i tak dalej, jako część rzeczywistej definicji schematu zestawu danych.
 
-- Przez ustawienie właściwości obiektu <xref:System.Data.DataColumn>, takich jak <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A> i <xref:System.Data.DataColumn.Unique%2A>.
+- Przez ustawienie właściwości obiektu <xref:System.Data.DataColumn>, takich jak <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>i <xref:System.Data.DataColumn.Unique%2A>.
 
 Obiekt <xref:System.Data.DataTable> zgłasza kilka zdarzeń, gdy w rekordzie występuje zmiana:
 
 - Zdarzenia <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> są wywoływane podczas i po każdej zmianie w pojedynczej kolumnie. Zdarzenie <xref:System.Data.DataTable.ColumnChanging> jest przydatne, gdy chcesz sprawdzić poprawność zmian w określonych kolumnach. Informacje o proponowanej zmianie są przesyłane jako argument ze zdarzeniem.
-- Zdarzenia <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> są wywoływane podczas i po każdej zmianie w wierszu. @No__t_0 zdarzenie jest bardziej ogólne. Wskazuje, że w wierszu występuje zmiana, ale nie wiesz, która kolumna została zmieniona.
+- Zdarzenia <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> są wywoływane podczas i po każdej zmianie w wierszu. <xref:System.Data.DataTable.RowChanging> zdarzenie jest bardziej ogólne. Wskazuje, że w wierszu występuje zmiana, ale nie wiesz, która kolumna została zmieniona.
 
 Domyślnie każda zmiana w kolumnie powoduje wypróbowanie czterech zdarzeń. Pierwszy to <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia dla konkretnej kolumny, która jest zmieniana. Poniżej znajdują się zdarzenia <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged>. W przypadku wprowadzenia wielu zmian w wierszu zdarzenia zostaną wygenerowane dla każdej zmiany.
 
@@ -60,7 +60,7 @@ Wybrane zdarzenie zależy od tego, jak Szczegółowa ma być Walidacja. Jeśli w
 
 Gdy rekordy są aktualizowane, obiekt <xref:System.Data.DataTable> zgłasza zdarzenia, na które można odpowiedzieć, ponieważ zmiany są wykonywane i po wprowadzeniu zmian.
 
-Jeśli aplikacja używa określonego zestawu danych, można utworzyć obsługę zdarzeń o jednoznacznie określonym typie. Spowoduje to dodanie czterech dodatkowych zdarzeń z określonym typem, dla których można tworzyć programy obsługi: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting` i `dataTableNameRowDeleted`. Te typy programów obsługi zdarzeń przekazują argument, który zawiera nazwy kolumn tabeli, które ułatwiają zapisywanie i odczytywanie kodu.
+Jeśli aplikacja używa określonego zestawu danych, można utworzyć obsługę zdarzeń o jednoznacznie określonym typie. Spowoduje to dodanie czterech dodatkowych zdarzeń z określonym typem, dla których można tworzyć programy obsługi: `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`i `dataTableNameRowDeleted`. Te typy programów obsługi zdarzeń przekazują argument, który zawiera nazwy kolumn tabeli, które ułatwiają zapisywanie i odczytywanie kodu.
 
 ## <a name="data-update-events"></a>Zdarzenia aktualizacji danych
 
@@ -73,7 +73,7 @@ Jeśli aplikacja używa określonego zestawu danych, można utworzyć obsługę 
 |<xref:System.Data.DataTable.RowDeleting>|Trwa usuwanie wiersza. Zdarzenie przekazuje wiersz wraz z wartością wskazującą, jaki typ akcji (usuwania) jest wykonywany.|
 |<xref:System.Data.DataTable.RowDeleted>|Wiersz został usunięty. Zdarzenie przekazuje wiersz wraz z wartością wskazującą, jaki typ akcji (usuwania) jest wykonywany.|
 
-Zdarzenia <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowDeleting> są wywoływane podczas procesu aktualizacji. Możesz użyć tych zdarzeń do walidacji danych lub wykonywania innych typów przetwarzania. Ponieważ aktualizacja jest w toku podczas tych zdarzeń, można ją anulować, zgłaszając wyjątek, co uniemożliwia zakończenie aktualizacji.
+Zdarzenia <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>i <xref:System.Data.DataTable.RowDeleting> są wywoływane podczas procesu aktualizacji. Możesz użyć tych zdarzeń do walidacji danych lub wykonywania innych typów przetwarzania. Ponieważ aktualizacja jest w toku podczas tych zdarzeń, można ją anulować, zgłaszając wyjątek, co uniemożliwia zakończenie aktualizacji.
 
 Zdarzenia <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> i <xref:System.Data.DataTable.RowDeleted> są zdarzeniami powiadomień, które są zgłaszane po pomyślnym zakończeniu aktualizacji. Te zdarzenia są przydatne, gdy chcesz podejmować dalsze działania w oparciu o pomyślną aktualizację.
 
@@ -82,7 +82,7 @@ Zdarzenia <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTabl
 > [!NOTE]
 > **Projektant obiektów DataSet** tworzy klasę częściową, w której logika walidacji może zostać dodana do zestawu danych. Wygenerowany przez projektanta zestaw danych nie usuwa ani nie zmienia żadnego kodu w klasie częściowej.
 
-Możesz sprawdzić poprawność danych, gdy wartość w kolumnie danych ulegnie zmianie, reagując na zdarzenie <xref:System.Data.DataTable.ColumnChanging>. Gdy zostanie zgłoszone, to zdarzenie przekazuje argument zdarzenia (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), który zawiera wartość proponowaną dla bieżącej kolumny. Na podstawie zawartości `e.ProposedValue` można:
+Możesz sprawdzić poprawność danych, gdy wartość w kolumnie danych ulegnie zmianie, reagując na zdarzenie <xref:System.Data.DataTable.ColumnChanging>. Gdy zostanie zgłoszone, to zdarzenie przekazuje argument zdarzenia (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>), który zawiera wartość proponowaną dla bieżącej kolumny. Na podstawie zawartości `e.ProposedValue`można:
 
 - Zaakceptuj proponowaną wartość, nie rób żadnej operacji.
 
@@ -97,7 +97,7 @@ Można napisać kod, aby sprawdzić, czy każda kolumna, która ma zostać zwery
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Aby sprawdzić poprawność danych po zmianie wiersza (Visual Basic)
 
-1. Otwórz zestaw danych w **Projektant obiektów DataSet**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje automatyczne utworzenie procedury obsługi zdarzeń <xref:System.Data.DataTable.RowChanging> <xref:System.Data.DataTable> w pliku częściowej klasy zestawu danych.
 
@@ -108,7 +108,7 @@ Można napisać kod, aby sprawdzić, czy każda kolumna, która ma zostać zwery
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Aby sprawdzić poprawność danych po zmianieC#wiersza ()
 
-1. Otwórz zestaw danych w **Projektant obiektów DataSet**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Otwórz swój zestaw danych w **Projektanta obiektów Dataset**. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie zestawu danych w Projektant obiektów DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Kliknij dwukrotnie pasek tytułu tabeli, którą chcesz zweryfikować. Ta akcja powoduje utworzenie pliku częściowej klasy dla <xref:System.Data.DataTable>.
 

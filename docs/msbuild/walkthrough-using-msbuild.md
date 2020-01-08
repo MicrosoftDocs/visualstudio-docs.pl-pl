@@ -1,117 +1,117 @@
 ---
-title: 'Przewodnik: Korzystanie z programu MSBuild | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: korzystanie z programu MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445296"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567297"
 ---
-# <a name="walkthrough-use-msbuild"></a>Przewodnik: Użyj programu MSBuild
+# <a name="walkthrough-use-msbuild"></a>Przewodnik: korzystanie z programu MSBuild
 
-Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Studio. Ten przewodnik stanowi wprowadzenie do bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild. Uzyskasz informacje na temat:
+MSBuild to platforma kompilacji dla programu Microsoft i programu Visual Studio. Ten Instruktaż wprowadza do bloków konstrukcyjnych programu MSBuild i pokazuje, jak pisać, manipulować i debugować projekty MSBuild. Dowiesz się więcej na temat:
 
-- Tworzenie i manipulowanie pliku projektu.
+- Tworzenie pliku projektu i manipulowanie nim.
 
-- Jak korzystać z właściwości kompilacji
+- Jak używać właściwości kompilacji
 
 - Jak używać elementów kompilacji.
 
-Można uruchomić program MSBuild z programu Visual Studio lub **okna polecenia**. W tym instruktażu utworzysz plik projektu programu MSBuild, za pomocą programu Visual Studio. Edytuj plik projektu w programie Visual Studio i użyj **okna polecenia** do skompilowania projektu i sprawdź wyniki.
+Program MSBuild można uruchomić z programu Visual Studio lub z **okna poleceń**. W tym instruktażu utworzysz plik projektu MSBuild przy użyciu programu Visual Studio. Można edytować plik projektu w programie Visual Studio i użyć **okna polecenia** do skompilowania projektu i przeanalizowania wyników.
 
-## <a name="create-an-msbuild-project"></a>Tworzenie projektu programu MSBuild
+## <a name="create-an-msbuild-project"></a>Tworzenie projektu MSBuild
 
- System projektu programu Visual Studio zależy od programu MSBuild. Dzięki temu można łatwo utworzyć nowy plik projektu programu Visual Studio. W tej sekcji utworzysz plik projektu języka Visual C#. Można zamiast tego utworzyć plik projektu w języku Visual Basic. W kontekście tego przewodnika różnica między plikami dwóch projektów jest niewielki.
+ System projektu programu Visual Studio jest oparty na programie MSBuild. Dzięki temu można łatwo utworzyć nowy plik projektu przy użyciu programu Visual Studio. W tej sekcji utworzysz plik projektu wizualizacji C# . Zamiast tego można utworzyć plik projektu Visual Basic. W kontekście tego instruktażu różnica między dwoma plikami projektu jest niewielka.
 
 **Aby utworzyć plik projektu**
 
 1. Otwórz program Visual Studio i Utwórz projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **winforms**, następnie wybierz **Tworzenie nowej aplikacji Windows Forms (.NET Framework)**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **WinForms**, a następnie wybierz pozycję **utwórz nową aplikację Windows Forms (.NET Framework)** . W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
 
-    W **nazwa** wpisz `BuildApp`. Wprowadź **lokalizacji** dla rozwiązania, na przykład *D:\\*. Zaakceptuj wartości domyślne **rozwiązania**, **Nazwa rozwiązania** (**BuildApp**), a **Framework**.
+    W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D:\\* . Zaakceptuj wartości domyślne dla **rozwiązania**, **nazwy rozwiązania** (**BuildApp**) i **struktury**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku **nowy projekt** okna dialogowego rozwiń **Visual C#**   >  **pulpitu Windows**, następnie wybierz **Windows Forms App (. Program .NET Framework)**. Następnie wybierz **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual C#**  > **Windows Desktop**, a następnie wybierz pozycję **Windows Forms App (.NET Framework)** . Następnie wybierz przycisk **OK**.
 
-    W **nazwa** wpisz `BuildApp`. Wprowadź **lokalizacji** dla rozwiązania, na przykład *D:\\*. Zaakceptuj wartości domyślne **Utwórz katalog rozwiązania** (zaznaczone), **Dodaj do kontroli źródła** (nie jest zaznaczone), a **Nazwa rozwiązania** (**BuildApp**).
+    W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D:\\* . Zaakceptuj wartości domyślne dla opcji **Utwórz katalog dla rozwiązania** (wybrane), **Dodaj do kontroli źródła** (nie wybrano) i **nazwę rozwiązania** (**BuildApp**).
     ::: moniker-end
 
-1. Kliknij przycisk **OK** lub **Utwórz** do tworzenia pliku projektu.
+1. Kliknij przycisk **OK** lub **Utwórz** , aby utworzyć plik projektu.
 
-## <a name="examine-the-project-file"></a>Zapoznaj się z plikiem projektu
+## <a name="examine-the-project-file"></a>Badanie pliku projektu
 
- Aby utworzyć plik projektu języka Visual C# w poprzedniej sekcji użyto programu Visual Studio. Plik projektu jest reprezentowana w **Eksploratora rozwiązań** przez węzeł projektu o nazwie BuildApp. Edytor kodu programu Visual Studio można użyć do sprawdzenia pliku projektu.
+ W poprzedniej sekcji użyto programu Visual Studio do utworzenia pliku projektu wizualnego C# . Plik projektu jest reprezentowany w **Eksplorator rozwiązań** przez węzeł projektu o nazwie BuildApp. Aby przejrzeć plik projektu, można użyć edytora kodu programu Visual Studio.
 
-**Aby zbadać pliku projektu**
+**Aby przejrzeć plik projektu**
 
-1. W **Eksploratora rozwiązań**, kliknij węzeł projektu **BuildApp**.
+1. W **Eksplorator rozwiązań**kliknij węzeł projektu **BuildApp**.
 
-2. W **właściwości** przeglądarki, zwróć uwagę, że **pliku projektu** właściwość *BuildApp.csproj*. Wszystkie pliki projektu są nazywane z sufiksem *proj*. Jeśli została utworzona projekt języka Visual Basic, nazwa pliku projektu będzie *BuildApp.vbproj*.
+2. W przeglądarce **Właściwości** należy zauważyć, że właściwość **pliku projektu** to *BuildApp. csproj*. Wszystkie pliki projektu mają nazwę z elementem *proj*. Jeśli utworzono projekt Visual Basic, nazwa pliku projektu byłaby *BuildApp. vbproj*.
 
-3. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Zwolnij projekt**.
+3. Kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Zwolnij projekt**.
 
-4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij przycisk **Edytuj BuildApp.csproj**.
+4. Ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie kliknij polecenie **Edytuj BuildApp. csproj**.
 
-     Plik projektu zostanie wyświetlony w edytorze kodu.
+     Plik projektu pojawi się w edytorze kodu.
 
-## <a name="targets-and-tasks"></a>Elementy docelowe i zadania
+## <a name="targets-and-tasks"></a>Cele i zadania
 
-Pliki projektu są pliki w formacie XML z węzłem głównym [projektu](../msbuild/project-element-msbuild.md).
+Pliki projektu są plikami w formacie XML z [projektem](../msbuild/project-element-msbuild.md)węzła głównego.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
-Należy określić przestrzeni nazw xmlns w elemencie projektu. Jeśli `ToolsVersion` znajduje się w nowym projekcie, musi być "15.0".
+Należy określić przestrzeń nazw xmlns w elemencie projektu. Jeśli `ToolsVersion` jest obecny w nowym projekcie, musi to być "15,0".
 
-Pracy tworzenia aplikacji odbywa się za pomocą [docelowej](../msbuild/target-element-msbuild.md) i [zadań](../msbuild/task-element-msbuild.md) elementów.
+Prace nad tworzeniem aplikacji są wykonywane z elementami [docelowymi](../msbuild/target-element-msbuild.md) i [zadaniami](../msbuild/task-element-msbuild.md) .
 
-- Zadanie jest najmniejsza jednostka pracy, innymi słowy, "atom" kompilacji. Zadania są niezależne wykonywalnego składniki, które mogą mieć dane wejściowe i wyjściowe. Nie ma żadnych zadań, lub obecnie odwołuje się określona w pliku projektu. Dodaj zadania do pliku projektu, w poniższych sekcjach. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md) tematu.
+- Zadanie jest najmniejszą jednostką pracy, innymi słowy, "atom" kompilacji. Zadania są niezależnymi składnikami wykonywalnymi, które mogą mieć dane wejściowe i wyjściowe. W pliku projektu nie ma aktualnie przywoływanych zadań ani ich nie zdefiniowano. Do pliku projektu można dodać zadania w poniższych sekcjach. Aby uzyskać więcej informacji, zobacz temat [zadania](../msbuild/msbuild-tasks.md) .
 
-- Obiekt docelowy jest nazwane sekwencji zadań. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md) tematu.
+- Obiekt docelowy jest nazwaną sekwencją zadań. Aby uzyskać więcej informacji, zobacz temat [targets](../msbuild/msbuild-targets.md) .
 
-Domyślny element docelowy nie jest zdefiniowany w pliku projektu. Zamiast tego jest określona w projektach zaimportowane. [Importu](../msbuild/import-element-msbuild.md) element określa importowany projektów. Na przykład w projekcie języka C#, domyślny element docelowy jest importowany z pliku *Microsoft.CSharp.targets*.
+Domyślny element docelowy nie jest zdefiniowany w pliku projektu. Zamiast tego jest określony w importowanych projektach. Element [Import](../msbuild/import-element-msbuild.md) określa importowane projekty. Na przykład w C# projekcie domyślny element docelowy jest importowany z pliku *Microsoft. CSharp. targets*.
 
 ```xml
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
-Zaimportowane pliki skutecznie są wstawiane do pliku projektu, wszędzie tam, gdzie występuje do nich.
+Importowane pliki są efektywnie umieszczane w pliku projektu wszędzie tam, gdzie się znajdują.
 
 > [!NOTE]
-> Niektórych typach projektów, takich jak .NET Core, użyj uproszczonego schematu z `Sdk` atrybutu zamiast `ToolsVersion`. Te projekty mają niejawnego importu i różne domyślne wartości atrybutów.
+> Niektóre typy projektów, takie jak .NET Core, wykorzystują uproszczony schemat z atrybutem `Sdk`, a nie `ToolsVersion`. Te projekty mają niejawne Importy i różne wartości atrybutów domyślnych.
 
-Program MSBuild śledzi obiekty docelowe kompilacji i gwarantuje, że każdego obiektu docelowego jest stworzone z nie więcej niż raz.
+Program MSBuild śledzi elementy docelowe kompilacji i gwarantuje, że każdy element docelowy nie jest zbudowany więcej niż raz.
 
-## <a name="add-a-target-and-a-task"></a>Dodaj obiekt docelowy i zadania
+## <a name="add-a-target-and-a-task"></a>Dodawanie obiektu docelowego i zadania
 
- Dodanie elementu docelowego w pliku projektu. Dodaj zadanie do docelowego, który wyświetla komunikat.
+ Dodaj element docelowy do pliku projektu. Dodaj zadanie do obiektu docelowego, które drukuje komunikat.
 
-**Aby dodać element docelowy i zadania**
+**Aby dodać obiekt docelowy i zadanie**
 
-1. Dodaj następujące wiersze do pliku projektu, zaraz po instrukcję importu:
+1. Dodaj te wiersze do pliku projektu zaraz po instrukcji import:
 
     ```xml
     <Target Name="HelloWorld">
     </Target>
     ```
 
-     Spowoduje to utworzenie obiektu docelowego o nazwie HelloWorld. Należy zauważyć, że masz obsługę funkcji IntelliSense podczas edycji pliku projektu.
+     Spowoduje to utworzenie obiektu docelowego o nazwie HelloWorld. Należy zauważyć, że obsługa IntelliSense jest obsługiwana podczas edytowania pliku projektu.
 
-2. Dodaj wiersze do docelowego HelloWorld tak, aby wynikową sekcję wygląda następująco:
+2. Dodaj wiersze do elementu docelowego HelloWorld, aby sekcja wynikowa wyglądała następująco:
 
     ```xml
     <Target Name="HelloWorld">
@@ -121,34 +121,34 @@ Program MSBuild śledzi obiekty docelowe kompilacji i gwarantuje, że każdego o
 
 3. Zapisz plik projektu.
 
-Zadanie komunikatu jest jednym z wielu zadań, które jest dostarczany za pomocą narzędzia MSBuild. Aby uzyskać pełną listę dostępnych zadań i informacje o użyciu, zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).
+Zadanie jest jednym z wielu zadań, które są dostarczane z programem MSBuild. Aby uzyskać pełną listę dostępnych zadań i informacji o użyciu, zobacz [Dokumentacja zadania](../msbuild/msbuild-task-reference.md).
 
-Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejściowych i wyświetla je na urządzeniu wyjściowym. Docelowy HelloWorld wykonuje zadanie komunikatu dwa razy: najpierw po to, aby wyświetlić "Hello", a następnie, aby wyświetlić "World".
+Zadanie Message przyjmuje wartość ciągu atrybutu Text jako dane wejściowe i wyświetla go na urządzeniu wyjściowym. Obiekt docelowy HelloWorld wykonuje zadanie komunikatu dwa razy: najpierw, aby wyświetlić "Hello", a następnie wyświetlić "World".
 
-## <a name="build-the-target"></a>Tworzenie obiektu docelowego
+## <a name="build-the-target"></a>Kompilowanie elementu docelowego
 
- Uruchom program MSBuild z **wiersz polecenia dla deweloperów** dla programu Visual Studio do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj - docelowego lub -t przełącznik wiersza polecenia do wybierz docelową.
+ Uruchom program MSBuild z **wiersz polecenia dla deweloperów** programu Visual Studio, aby utworzyć element docelowy HelloWorld zdefiniowany powyżej. Użyj przełącznika-Target lub-t wiersza polecenia, aby wybrać element docelowy.
 
 > [!NOTE]
-> Będziemy nazywać **wiersz polecenia dla deweloperów** jako **okna polecenia** w poniższych sekcjach.
+> Odwołujemy się do **wiersz polecenia dla deweloperów** jako **okna poleceń** w poniższych sekcjach.
 
-**Aby zbudować obiekt docelowy**
+**Aby skompilować element docelowy**
 
-1. Otwórz **okna polecenia**.
+1. Otwórz **okno wiersza polecenia**.
 
-   (System Windows 10) W polu wyszukiwania na pasku zadań, należy uruchomić, wpisując nazwę narzędzia, takie jak `dev` lub `developer command prompt`. Wyświetlenie listy zainstalowanych aplikacji spełniających kryteria wyszukiwania.
+   (System Windows 10) W polu wyszukiwania na pasku zadań Zacznij wpisywać nazwę narzędzia, na przykład `dev` lub `developer command prompt`. Spowoduje to wyświetlenie listy zainstalowanych aplikacji, które pasują do Twojego wzorca wyszukiwania.
 
-   Jeśli potrzebujesz ręcznie znaleźć, plik jest *LaunchDevCmd.bat* w *< folder instalacji programu Visual Studio\>\<wersji > \Common7\Tools* folderu.
+   Jeśli chcesz je znaleźć ręcznie, plik jest *LaunchDevCmd. bat* w *folderze instalacyjnym visualstudio <\>\<wersja > \Common7\Tools* folder.
 
 2. W oknie polecenia przejdź do folderu zawierającego plik projektu, w tym przypadku *D:\BuildApp\BuildApp*.
 
-3. Msbuild wykonywania za pomocą polecenia przełącznika - t: HelloWorld. Wybiera i tworzy element docelowy HelloWorld:
+3. Uruchamianie programu MSBuild przy użyciu przełącznika polecenia — t:HelloWorld. Spowoduje to wybranie i kompilację elementu docelowego HelloWorld:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Sprawdź dane wyjściowe w **okna polecenia**. Powinny zostać wyświetlone dwa wiersze "Hello" i "World":
+4. Przejrzyj dane wyjściowe w **okno polecenie**. Powinny być widoczne dwie linie "Hello" i "World":
 
     ```
     Hello
@@ -156,13 +156,13 @@ Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejśc
     ```
 
 > [!NOTE]
-> Jeśli zamiast tego zostanie wyświetlony `The target "HelloWorld" does not exist in the project` , a następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
+> Jeśli zamiast tego zobaczysz `The target "HelloWorld" does not exist in the project`, prawdopodobnie zapomniano zapisać plik projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
 
- Przez przełączanie między Edytorem kodu a oknie wiersza polecenia, można zmienić w pliku projektu i szybko wyświetlić wyniki.
+ Przez przemienne między edytorem kodu a oknem polecenia można zmienić plik projektu i szybko zobaczyć wyniki.
 
 ## <a name="build-properties"></a>Właściwości kompilacji
 
- Właściwości kompilacji są pary nazwa wartość, które przeprowadzą kompilacji. Kilka właściwości kompilacji są już zdefiniowane w górnej części pliku projektu:
+ Właściwości kompilacji to pary nazwa-wartość, które kierują kompilację. Kilka właściwości kompilacji jest już zdefiniowanych u góry pliku projektu:
 
 ```xml
 <PropertyGroup>
@@ -175,34 +175,34 @@ Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejśc
 </PropertyGroup>
 ```
 
- Wszystkie właściwości są elementami podrzędnymi PropertyGroup elementów. Nazwa właściwości jest nazwą elementu podrzędnego, a wartość właściwości jest elementem tekstu elementu podrzędnego. Na przykład
+ Wszystkie właściwości są elementami podrzędnymi elementów właściwości. Nazwa właściwości jest nazwą elementu podrzędnego, a wartość właściwości jest element tekstowy elementu podrzędnego. Na przykład
 
 ```xml
 <TargetFrameworkVersion>v15.0</TargetFrameworkVersion>
 ```
 
- Definiuje właściwość o nazwie TargetFrameworkVersion, nadając mu wartość ciągu "15.0".
+ definiuje właściwość o nazwie TargetFrameworkVersion, podając ją jako wartość ciągu "v 15.0".
 
- Tworzenie właściwości mogą być zmieniane w dowolnym momencie. IF
+ Właściwości kompilacji można ponownie zdefiniować w dowolnym momencie. Jeśli węzeł
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 ```
 
- pojawi się później w pliku projektu lub w pliku później zaimportowane w pliku projektu, a następnie TargetFrameworkVersion pobiera nową wartość "3.5".
+ pojawia się w dalszej części pliku projektu lub w pliku zaimportowanego później w pliku projektu, a następnie TargetFrameworkVersion przyjmuje nową wartość "v 3.5".
 
-## <a name="examine-a-property-value"></a>Sprawdź wartość właściwości
- Aby uzyskać wartość właściwości, należy użyć następującej składni, gdzie PropertyName jest nazwa właściwości:
+## <a name="examine-a-property-value"></a>Sprawdzanie wartości właściwości
+ Aby uzyskać wartość właściwości, należy użyć następującej składni, gdzie PropertyName jest nazwą właściwości:
 
 ```xml
 $(PropertyName)
 ```
 
- Aby sprawdzić niektóre właściwości w pliku projektu, należy użyć następującej składni.
+ Użyj tej składni do sprawdzenia niektórych właściwości w pliku projektu.
 
-**Aby sprawdzić wartość właściwości**
+**Aby przejrzeć wartość właściwości**
 
-1. W edytorze kodu Zastąp element docelowy HelloWorld ten kod:
+1. W edytorze kodu Zastąp element docelowy HelloWorld tym kodem:
 
     ```xml
     <Target Name="HelloWorld">
@@ -213,13 +213,13 @@ $(PropertyName)
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące dwa wiersze (.NET Framework w wersji mogą się różnić):
+4. Sprawdź dane wyjściowe. Powinny być widoczne te dwie linie (wersja .NET Framework może się różnić):
 
     ::: moniker range=">=vs-2019"
 
@@ -239,57 +239,57 @@ $(PropertyName)
     ::: moniker-end
 
 > [!NOTE]
-> Jeśli nie widzisz te wiersze następnie prawdopodobnie, że nie można zapisać pliku projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
+> Jeśli te wiersze nie są widoczne, prawdopodobnie zapomniano zapisać plik projektu w edytorze kodu. Zapisz plik i spróbuj ponownie.
 
-### <a name="conditional-properties"></a>Właściwości warunkowych
+### <a name="conditional-properties"></a>Właściwości warunkowe
 
- Zdefiniowano wiele właściwości, takich jak konfiguracja warunkowo, oznacza to, że atrybut warunku pojawia się w elemencie właściwości. Warunkowe właściwości są zdefiniowane lub zdefiniować jej ponownie tylko wtedy, gdy wyrażenie zwróci wartość "true". Należy pamiętać, że podane są niezdefiniowanymi właściwościami domyślna wartość pustego ciągu. Na przykład
+ Wiele właściwości, takich jak konfiguracja, jest zdefiniowana warunkowo, to oznacza, że atrybut Condition jest wyświetlany w elemencie właściwości. Właściwości warunkowe są zdefiniowane lub definiowane ponownie tylko wtedy, gdy warunek ma wartość "true". Należy zauważyć, że niezdefiniowane właściwości otrzymują wartość domyślną pustego ciągu. Na przykład
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 ```
 
- oznacza, że "Jeśli nie została jeszcze zdefiniowana właściwość konfiguracji, zdefiniuj go i nadaj mu wartość"Debugowanie"".
+ oznacza "Jeśli nie zdefiniowano jeszcze właściwości konfiguracji, zdefiniuj ją i nadaj jej wartość" debug ".
 
- Niemal wszystkie elementy programu MSBuild może mieć atrybutu warunku. Aby uzyskać więcej dyskusję na temat przy użyciu atrybutu warunku, zobacz [warunki](../msbuild/msbuild-conditions.md).
+ Prawie wszystkie elementy MSBuild mogą mieć atrybut Condition. Aby uzyskać więcej informacji na temat używania atrybutu Condition, zobacz [warunki](../msbuild/msbuild-conditions.md).
 
 ### <a name="reserved-properties"></a>Właściwości zastrzeżone
 
- Program MSBuild rezerwuje niektóre nazwy właściwości do przechowywania informacji o pliku projektu oraz pliki binarne programu MSBuild. MSBuildToolsPath znajduje się przykład właściwości zastrzeżonych. Właściwości zastrzeżone są przywoływane przy użyciu notacji $, podobnie jak inne właściwości. Aby uzyskać więcej informacji, zobacz [jak: Odwołanie do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) i [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ Program MSBuild rezerwuje nazwy właściwości w celu przechowywania informacji o pliku projektu i plikach binarnych programu MSBuild. MSBuildToolsPath jest przykładem zastrzeżonej właściwości. Właściwości zastrzeżone są przywoływane w notacji $, podobnie jak każda inna właściwość. Aby uzyskać więcej informacji, zobacz [jak: odwoływanie się do nazwy lub lokalizacji pliku projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) oraz [Właściwości zastrzeżonych i dobrze znanych programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Zmienne środowiskowe
 
- Możesz odwoływać się zmiennych środowiskowych w plikach projektu taki sam sposób, jak właściwości kompilacji. Na przykład aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jako zmienną środowiskową, właściwość w projekcie zastępuje wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [jak: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Można odwoływać się do zmiennych środowiskowych w plikach projektu w taki sam sposób, jak właściwości kompilacji. Na przykład, aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć $ (Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jak zmienna środowiskowa, właściwość w projekcie przesłania wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [jak: używać zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
-## <a name="set-properties-from-the-command-line"></a>Ustawianie właściwości w wierszu polecenia
+## <a name="set-properties-from-the-command-line"></a>Ustawianie właściwości z wiersza polecenia
 
- Właściwości mogą być określone w wierszu polecenia za pomocą - lub -p właściwości przełącznik wiersza polecenia. Wartości właściwości odebranych w wierszu polecenia zastępują wartości właściwości ustawione w projekcie plików i zmiennymi środowiskowymi.
+ Właściwości można definiować w wierszu polecenia przy użyciu przełącznika wiersza polecenia-property lub-p. Wartości właściwości odebrane z wartości właściwości Zastąp wiersz polecenia ustawionymi w pliku projektu i zmiennych środowiskowych.
 
 **Aby ustawić wartość właściwości z wiersza polecenia**
 
-1. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+1. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
+2. Sprawdź dane wyjściowe. Powinien zostać wyświetlony następujący wiersz:
 
     ```
     Configuration is Release.
     ```
 
-Program MSBuild tworzy właściwość konfiguracji i nadaje mu wartość "Wersja".
+Program MSBuild tworzy właściwość Configuration i nadaje jej wartość "Release".
 
 ## <a name="special-characters"></a>Znaki specjalne
 
- Niektóre znaki mają specjalne znaczenie w plikach projektu programu MSBuild. Przykłady te znaki średnikami (;) i gwiazdki (*). Aby można było używać tych znaków specjalnych jako literały w pliku projektu, muszą one być określone za pomocą składni %\<xx >, gdzie \<xx > reprezentuje wartości szesnastkowej znaku ASCII.
+ Niektóre znaki mają specjalne znaczenie w plikach projektu MSBuild. Przykłady tych znaków obejmują średniki (;) i gwiazdki (*). Aby można było używać tych znaków specjalnych jako literałów w pliku projektu, muszą one być określone przy użyciu składni%\<XX >, gdzie \<XX > reprezentuje wartość szesnastkową ASCII znaku.
 
- Zmień zadanie komunikatu, aby wyświetlić wartość właściwości konfiguracji przy użyciu znaków specjalnych, aby był bardziej czytelny.
+ Zmień zadanie, aby wyświetlić wartość właściwości Configuration ze znakami specjalnymi, aby zwiększyć czytelność.
 
-**Aby użyć znaków specjalnych w zadaniu wiadomości**
+**Aby użyć znaków specjalnych w zadaniu komunikatu**
 
-1. W edytorze kodu Zastąp zarówno do zadań komunikat ten wiersz:
+1. W edytorze kodu Zastąp oba zadania komunikatów tym wierszem:
 
     ```xml
     <Message Text="%24(Configuration) is %22$(Configuration)%22" />
@@ -297,25 +297,25 @@ Program MSBuild tworzy właściwość konfiguracji i nadaje mu wartość "Wersja
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
+4. Sprawdź dane wyjściowe. Powinien zostać wyświetlony następujący wiersz:
 
     ```
     $(Configuration) is "Debug"
     ```
 
-Aby uzyskać więcej informacji, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).
+Aby uzyskać więcej informacji, zobacz [znaki specjalne programu MSBuild](../msbuild/msbuild-special-characters.md).
 
-## <a name="build-items"></a>Tworzenie elementów
+## <a name="build-items"></a>Kompiluj elementy
 
- Element to fragment informacji, zwykle nazwę pliku, który jest używany jako dane wejściowe do systemu kompilacji. Na przykład kolekcję elementów reprezentujących pliki źródłowe mogą być przekazywane do zadania o nazwie kompilacji, aby skompilować je do zestawu.
+ Element jest częścią informacji, zazwyczaj nazwą pliku, która jest używana jako dane wejściowe systemu kompilacji. Na przykład Kolekcja elementów reprezentujących pliki źródłowe może zostać przeniesiona do zadania o nazwie Kompiluj, aby skompilować je do zestawu.
 
- Wszystkie elementy są elementami podrzędnymi ItemGroup elementów. Nazwa elementu jest nazwą elementu podrzędnego, a wartość elementu jest wartością atrybutu Uwzględnij elementu podrzędnego. Wartości elementów o takiej samej nazwie są zbierane w typy elementów o takiej nazwie.  Na przykład
+ Wszystkie elementy są elementami podrzędnymi elementów Item. Nazwa elementu jest nazwą elementu podrzędnego, a wartość elementu jest wartością atrybutu Include elementu podrzędnego. Wartości elementów o tej samej nazwie są zbierane w typach elementów o tej samej nazwie.  Na przykład
 
 ```xml
 <ItemGroup>
@@ -324,9 +324,9 @@ Aby uzyskać więcej informacji, zobacz [znaki specjalne MSBuild](../msbuild/msb
 </ItemGroup>
 ```
 
- Definiuje grupy elementów zawierających dwa elementy. Typ elementu kompilacji ma dwie wartości: *Plik program.cs* i *Properties\AssemblyInfo.cs*.
+ definiuje grupę elementów zawierającą dwa elementy. Kompilacja typu elementu ma dwie wartości: *program.cs* i *Properties\AssemblyInfo.cs*.
 
- Poniższy kod tworzy tego samego typu elementu, deklarując oba pliki w jednym atrybucie Include, rozdzielając je średnikiem.
+ Poniższy kod tworzy ten sam typ elementu przez zadeklarowanie obu plików w jednym atrybucie include, rozdzielone średnikami.
 
 ```xml
 <ItemGroup>
@@ -334,24 +334,24 @@ Aby uzyskać więcej informacji, zobacz [znaki specjalne MSBuild](../msbuild/msb
 </ItemGroup>
 ```
 
-Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).
+Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
 
 > [!NOTE]
-> Ścieżki plików są względne wobec folderu zawierającego plik projektu programu MSBuild.
+> Ścieżki plików są względne wobec folderu zawierającego plik projektu MSBuild.
 
-## <a name="examine-item-type-values"></a>Sprawdź wartości typu elementu
+## <a name="examine-item-type-values"></a>Badanie wartości typu elementu
 
- Aby uzyskać wartości typu elementu, należy użyć następującej składni, gdzie ItemType to nazwa typu elementu:
+ Aby uzyskać wartości typu elementu, użyj następującej składni, gdzie ItemType jest nazwą typu elementu:
 
 ```xml
 @(ItemType)
 ```
 
- Użyj następującej składni, aby sprawdzić typ elementu kompilacji w pliku projektu.
+ Użyj tej składni, aby przeanalizować typ elementu kompilacji w pliku projektu.
 
-**Aby sprawdzić wartości typu elementu**
+**Aby przeanalizować wartości typu elementu**
 
-1. W edytorze kodu Zastąp zadanie docelowe HelloWorld ten kod:
+1. W edytorze kodu Zastąp zadanie docelowe HelloWorld tym kodem:
 
     ```xml
     <Target Name="HelloWorld">
@@ -361,31 +361,31 @@ Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten długi wiersz:
+4. Sprawdź dane wyjściowe. Powinna zostać wyświetlona linia długa:
 
     ```
     Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
     ```
 
-Wartości typu elementu są oddzielone średnikami domyślne.
+Wartości typu elementu są domyślnie oddzielone średnikami.
 
-Aby zmienić separator typ elementu, użyj następującej składni, gdzie ItemType jest typ elementu, a separatorem jest co najmniej jeden znak oddzielający ciąg:
+Aby zmienić separator typu elementu, użyj następującej składni, gdzie ItemType jest typem elementu, a separatorem jest ciąg składający się z co najmniej jednego rozdzielającego znaku:
 
 ```xml
 @(ItemType, Separator)
 ```
 
-Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła danych (% 0A %0 D) aby wyświetlić kompilacji elementów, jeden na wiersz.
+Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyświetlić elementy kompilacji jeden na wiersz.
 
-**Aby wyświetlić typ elementu wartości jeden na wiersz**
+**Aby wyświetlić wartości typu elementu jeden na wiersz**
 
-1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
+1. W edytorze kodu Zastąp zadanie komunikatu tym wierszem:
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
@@ -393,13 +393,13 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
+4. Sprawdź dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
 
     ```
     Compile item type contains Form1.cs
@@ -410,60 +410,60 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
     Properties\Settings.Designer.cs
     ```
 
-### <a name="include-exclude-and-wildcards"></a>Obejmują wykluczania i symboli wieloznacznych
- Można używać symboli wieloznacznych "*","\*\*", i "?" za pomocą atrybutu Include, aby dodać elementy do typu elementu. Na przykład
+### <a name="include-exclude-and-wildcards"></a>Include, Exclude i symboli wieloznacznych
+ Możesz użyć symboli wieloznacznych "*", "\*\*" i "?" z atrybutem include, aby dodać elementy do typu elementu. Na przykład
 
 ```xml
 <Photos Include="images\*.jpeg" />
 ```
 
- dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w *obrazów* folderu do typu elementu zdjęcia, podczas gdy
+ dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w folderze *obrazy* do typu elementu zdjęcia, podczas gdy
 
 ```xml
 <Photos Include="images\**\*.jpeg" />
 ```
 
- dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w *obrazów* folder i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak: Wybieranie plików do kompilacji](../msbuild/how-to-select-the-files-to-build.md).
+ dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w folderze *obrazy* i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak to zrobić: Wybierz pliki do skompilowania](../msbuild/how-to-select-the-files-to-build.md).
 
- Należy zauważyć, że podaną elementów dodanych do typu elementu. Na przykład
+ Zwróć uwagę, że jako że elementy są deklarowane, są dodawane do typu elementu. Na przykład
 
 ```xml
 <Photos Include="images\*.jpeg" />
 <Photos Include="images\*.gif" />
 ```
 
- Tworzy typ elementu o nazwie zdjęcie zawierający wszystkie pliki w *obrazów* folder z rozszerzeniem pliku albo *JPEG* lub *.gif*. Jest to równoważne następujący wiersz:
+ Tworzy typ elementu o nazwie Photo zawierający wszystkie pliki w folderze *images* z rozszerzeniem pliku *JPEG* lub *GIF*. Jest to równoznaczne z następującym wierszem:
 
 ```xml
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- Element można wykluczyć z typem elementu z atrybutem wykluczania. Na przykład
+ Można wykluczyć element z typu elementu z atrybutem Exclude. Na przykład
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- dodaje wszystkie pliki z rozszerzeniem pliku *.cs* kompilacji typu elementu, z wyjątkiem plików których nazwy zawierają ciąg *projektanta*. Aby uzyskać więcej przykładów, zobacz [jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
+ dodaje wszystkie pliki z rozszerzeniem pliku *CS* do typu elementu kompilacji, z wyjątkiem plików, których nazwy zawierają *projektanta*ciągów. Aby uzyskać więcej przykładów, zobacz [How to: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
 
-Ten atrybut wykluczania dotyczy tylko elementy dodane przez atrybut Include w pozycji elementu, który zawiera oba te. Na przykład
+Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w elemencie Item, który je zawiera. Na przykład
 
 ```xml
 <Compile Include="*.cs" />
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
-nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji elementu.
+nie wykluczają *Form1.cs*pliku, który został dodany w poprzednim elemencie elementu.
 
-**Do dołączania i wykluczania elementów**
+**Aby uwzględnić i wykluczyć elementy**
 
-1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
+1. W edytorze kodu Zastąp zadanie komunikatu tym wierszem:
 
     ```xml
     <Message Text="XFiles item type contains @(XFiles)" />
     ```
 
-2. Dodaj tę grupę elementu zaraz po Import element:
+2. Dodaj tę grupę elementów tuż po elemencie import:
 
     ```xml
     <ItemGroup>
@@ -473,22 +473,22 @@ nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji eleme
 
 3. Zapisz plik projektu.
 
-4. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+4. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-5. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
+5. Sprawdź dane wyjściowe. Powinien zostać wyświetlony następujący wiersz:
 
     ```
     XFiles item type contains Form1.cs;Program.cs;Properties/Resources.resx
     ```
 
 ## <a name="item-metadata"></a>Metadane elementu
- Elementy może zawierać metadane oraz informacje zebrane z atrybutów dołączania i wykluczania. Te metadane może służyć przez zadania, które wymagają więcej informacji na temat elementów niż tylko wartości elementu.
+ Elementy mogą zawierać metadane oprócz informacji zebranych z atrybutów dołączania i wykluczania. Te metadane mogą być używane przez zadania, które wymagają więcej informacji o elementach niż tylko wartość elementu.
 
- Metadane elementu jest zadeklarowany w pliku projektu poprzez utworzenie elementu o nazwie metadanych jako element podrzędny elementu. Element może mieć zero lub więcej wartości metadanych. Na przykład następujący element CSFile ma metadane kultury z wartością "Fr":
+ Metadane elementu są zadeklarowane w pliku projektu przez utworzenie elementu o nazwie metadanych jako elementu podrzędnego elementu. Element może mieć zero lub więcej wartości metadanych. Na przykład następujący element CSFile ma metadane kultury o wartości "fr":
 
 ```xml
 <ItemGroup>
@@ -498,15 +498,15 @@ nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji eleme
 </ItemGroup>
 ```
 
- Aby uzyskać wartości metadanych typu elementu, użyj następującej składni, gdzie ItemType jest nazwa typu elementu, a MetaDataName to nazwa metadanych:
+ Aby uzyskać wartość metadanych typu elementu, należy użyć następującej składni, gdzie ItemType jest nazwą typu elementu, a metadataname jest nazwą metadanych:
 
 ```xml
 %(ItemType.MetaDataName)
 ```
 
-**Aby zbadać metadane elementu**
+**Aby przeanalizować metadane elementu**
 
-1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
+1. W edytorze kodu Zastąp zadanie komunikatu tym wierszem:
 
     ```xml
     <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />
@@ -514,13 +514,13 @@ nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji eleme
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
+4. Sprawdź dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
 
     ```
     Compile.DependentUpon:
@@ -529,15 +529,15 @@ nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji eleme
     Compile.DependentUpon: Settings.settings
     ```
 
-Zwróć uwagę, jak frazę "Compile.DependentUpon" pojawia się wiele razy. Użycie metadanych za pomocą następującej składni w elemencie docelowym powoduje, że "przetwarzanie wsadowe". Przetwarzanie wsadowe oznacza, że w ciągu docelowym wykonywane są zadania raz dla każdej wartości unikatowe metadane. To jest odpowiednikiem skryptu MSBuild typowe "dla pętli" konstrukcji programowania. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).
+Zwróć uwagę, jak fraza "Kompiluj. DependentUpon" występuje kilka razy. Użycie metadanych o tej składni w elemencie docelowym powoduje wystąpienie "wsadowe". Przetwarzanie wsadowe oznacza, że zadania w ramach elementu docelowego są wykonywane raz dla każdej unikatowej wartości metadanych. Jest to odpowiednik skryptu programu MSBuild w typowej konstrukcji programowania "pętla for". Aby uzyskać więcej informacji, zobacz Tworzenie [pakietów wsadowych](../msbuild/msbuild-batching.md).
 
-### <a name="well-known-metadata"></a>metadane dobrze znanego
+### <a name="well-known-metadata"></a>Dobrze znane metadane
 
- Gdy element zostanie dodany do listy elementów, ten element jest przypisywany niektóre metadane dobrze znanego. Na przykład %(Filename) zwraca nazwę pliku dowolnego elementu. Aby uzyskać pełną listę znanych metadanych, zobacz [metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md).
+ Za każdym razem, gdy element zostanie dodany do listy elementów, do tego elementu są przypisane pewne dobrze znane metadane. Na przykład,% (filename) zwraca nazwę pliku dowolnego elementu. Aby uzyskać pełną listę dobrze znanych metadanych, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
 
-**Aby zbadać dobrze znanych metadanych**
+**Aby sprawdzać dobrze znane metadane**
 
-1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
+1. W edytorze kodu Zastąp zadanie komunikatu tym wierszem:
 
     ```xml
     <Message Text="Compile Filename: %(Compile.Filename)" />
@@ -545,13 +545,13 @@ Zwróć uwagę, jak frazę "Compile.DependentUpon" pojawia się wiele razy. Uży
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
+4. Sprawdź dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
 
     ```
     Compile Filename: Form1
@@ -562,21 +562,21 @@ Zwróć uwagę, jak frazę "Compile.DependentUpon" pojawia się wiele razy. Uży
     Compile Filename: Settings.Designer
     ```
 
-Przez porównanie dwóch przykładach, można zobaczyć, że chociaż nie każdy element w typie elementu kompilacji ma DependentUpon metadanych, wszystkie elementy mają dobrze znane nazwy pliku metadanych.
+Porównując dwa przykłady powyżej, można zobaczyć, że chociaż nie każdy element w typie elementu kompilacji ma metadane DependentUpon, wszystkie elementy mają dobrze znane metadane filename.
 
 ### <a name="metadata-transformations"></a>Przekształcenia metadanych
 
- Element listy może zostać zamieniony na nowy element listy. Przekształcanie listy elementów, należy użyć następującej składni, gdzie \<ItemType > jest nazwą typu elementu i \<MetadataName > jest nazwą metadanych:
+ Listy elementów mogą być przekształcane na listy nowych elementów. Aby przekształcić listę elementów, użyj następującej składni, gdzie \<ItemType > jest nazwą typu elementu, a \<metadataname > to nazwa metadanych:
 
 ```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
-Na przykład element lista plików źródłowych mogą zostać przekształcone na kolekcję plików obiektów za pomocą wyrażenia takie jak `@(SourceFiles -> '%(Filename).obj')`. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md).
+Na przykład lista elementów plików źródłowych może być przekształcana do kolekcji plików obiektów przy użyciu wyrażenia, takiego jak `@(SourceFiles -> '%(Filename).obj')`. Aby uzyskać więcej informacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).
 
 **Aby przekształcić elementy przy użyciu metadanych**
 
-1. W edytorze kodu Zastąp zadanie komunikatu ten wiersz:
+1. W edytorze kodu Zastąp zadanie komunikatu tym wierszem:
 
     ```xml
     <Message Text="Backup files: @(Compile->'%(filename).bak')" />
@@ -584,25 +584,25 @@ Na przykład element lista plików źródłowych mogą zostać przekształcone n
 
 2. Zapisz plik projektu.
 
-3. Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
+3. W **oknie polecenia**wpisz i wykonaj ten wiersz:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4. Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
+4. Sprawdź dane wyjściowe. Powinien zostać wyświetlony następujący wiersz:
 
     ```
     Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak
     ```
 
-Zwróć uwagę, że metadane wyrażone w tej składni nie powoduje, że przetwarzanie wsadowe.
+Zwróć uwagę, że metadane wyrażone w tej składni nie powodują przetwarzania wsadowego.
 
 ## <a name="whats-next"></a>Co dalej?
 
- Informacje na temat tworzenia pliku prostego projektu w jednym kroku w danym momencie, wypróbuj [instruktażu: Tworzenie pliku projektu MSBuild od zera](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Aby dowiedzieć się, jak utworzyć prosty plik projektu w jednym kroku, wypróbuj [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przegląd MSBuild](../msbuild/msbuild.md)
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Omówienie programu MSBuild](../msbuild/msbuild.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

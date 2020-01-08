@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649511"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587553"
 ---
 # <a name="customize-a-rule-set"></a>Dostosowywanie zestawu reguł
 
@@ -24,7 +24,7 @@ Można utworzyć niestandardowy zestaw reguł, który spełnia wymagania projekt
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Tworzenie niestandardowego zestawu reguł na podstawie istniejącego zestawu reguł
 
-Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca możesz dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona &mdash;for przykład, Pokaż ostrzeżenie lub błąd.
+Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw reguł w **edytorze zestawu reguł**. Z tego miejsca możesz dodawać lub usuwać określone reguły, a także zmienić akcję, która występuje, gdy reguła zostanie naruszona&mdash;na przykład Pokaż ostrzeżenie lub błąd.
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie wybierz polecenie **Właściwości**.
 
@@ -44,9 +44,9 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
    - Wybierz zestaw reguł, który chcesz dostosować.
 
-     \- lub-
+     \- lub —
 
-   - Wybierz pozycję **\<Browse >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
+   - Wybierz pozycję **\<przeglądaj >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
@@ -57,7 +57,7 @@ Aby utworzyć niestandardowy zestaw reguł, można otworzyć Wbudowany zestaw re
 
 Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy plik** :
 
-1. Wybierz pozycję **plik**  > **Nowy** **plik** >  lub naciśnij **klawisze CTRL** +**N**.
+1. Wybierz pozycję **plik** > **Nowy** **plik** > lub naciśnij **klawisze CTRL**+**N**.
 
 2. W oknie dialogowym **nowy plik** wybierz kategorię **Ogólne** po lewej stronie, a następnie wybierz pozycję **zestaw reguł analizy kodu**.
 
@@ -76,13 +76,13 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ::: moniker range="vs-2017"
 
-3. Wybierz **\<Choose wiele zestawów reguł >** z **uruchamiania tego zestawu reguł**.
+3. Wybierz pozycję **\<wybierz wiele zestawów reguł >** z **uruchamiania tego zestawu reguł**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Wybierz **\<Choose wiele zestawów reguł >** z **aktywnych reguł**.
+3. Wybierz pozycję **\<wybierz wiele zestawów reguł >** z **aktywnych reguł**.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 - Jeśli ta sama reguła zostanie wyświetlona co najmniej dwa razy w zestawie reguł o *takiej samej* ważności, w **Lista błędów**mogą pojawić się następujące ostrzeżenie:
 
-   **CA0063: nie można załadować pliku zestawu reguł "\[your]. zestaw reguł" lub jeden z jego zależnych plików zestawu reguł. Plik jest niezgodny ze schematem zestawu reguł.**
+   **CA0063: nie powiodło się załadowanie pliku zestawu reguł "\[swój]. zestaw reguł" lub jeden z jego plików zależnych od tego zestawu. Plik jest niezgodny ze schematem zestawu reguł.**
 
 - Jeśli zestaw reguł zawiera regułę podrzędną ustawioną przy użyciu znacznika **include** , a reguła podrzędna i nadrzędna ustawiją tę samą regułę, ale z różnymi serwerami, pierwszeństwo ma ważność w zestawie reguł nadrzędnych. Na przykład:
 
@@ -136,7 +136,7 @@ Nowy plik zestawu reguł można utworzyć przy użyciu okna dialogowego **nowy p
 
 ## <a name="name-and-description"></a>Nazwa i opis
 
-Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając pozycję **Wyświetl** > **Właściwości okna** na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
+Aby zmienić nazwę wyświetlaną zestawu reguł, który jest otwarty w edytorze, Otwórz okno **Właściwości** , wybierając pozycję **Wyświetl** > **Właściwości** na pasku menu. Wprowadź nazwę wyświetlaną w polu **Nazwa** . Możesz również wprowadzić opis zestawu reguł.
 
 ## <a name="next-steps"></a>Następne kroki
 

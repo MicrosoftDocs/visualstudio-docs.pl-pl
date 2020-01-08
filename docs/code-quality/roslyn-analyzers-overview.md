@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649135"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587280"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Przegląd analizatorów kodu źródłowego
 
@@ -40,7 +40,7 @@ Wiele reguł analizatorów lub *diagnostyki*ma jedną lub więcej skojarzonych *
 
 Analiza źródła przez analizatory Roslyn zastępuje [starszą analizę](../code-quality/code-analysis-for-managed-code-overview.md) dla kodu zarządzanego. Wiele starszych reguł analizy zostało już zapisaną jako analizatory kodu Roslyn. W przypadku nowszych szablonów projektów, takich jak .NET Core i projekty .NET Standard, Starsza analiza nie jest jeszcze dostępna.
 
-Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#rule-severity) reguły. Na poniższej ilustracji przedstawiono trzy naruszenia &mdash;one czerwony, jeden zielony i jeden szary:
+Podobnie jak w przypadku starszych naruszeń reguł analizy, naruszenia analizy kodu źródłowego są wyświetlane w oknie Lista błędów w programie Visual Studio. Ponadto naruszenia analizy kodu *źródłowego są również* wyświetlane w edytorze kodu jako zygzaky w kodzie błędu. Kolor zygzaka zależy od [Ustawienia ważności](../code-quality/use-roslyn-analyzers.md#rule-severity) reguły. Na poniższej ilustracji przedstawiono trzy naruszenia&mdash;jedną czerwoną, jedną zieloną i jedną szarą:
 
 ![Zygzaky w edytorze kodu w programie Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -52,7 +52,7 @@ Analizatory kodu sprawdzają kod w czasie kompilacji, na przykład w starszej an
 Tylko analizatory kodu Roslyn raportują te same typy problemów, które są używane w starszej analizie, ale ułatwiają rozwiązanie jednego lub wszystkich wystąpień naruszenia w pliku lub projekcie. Te akcje są nazywane *poprawkami kodu*. Poprawki kodu są specyficzne dla środowiska IDE; w programie Visual Studio są one implementowane jako [szybkie akcje](../ide/quick-actions.md). Nie cała Diagnostyka analizatora ma skojarzoną poprawkę kodu.
 
 > [!NOTE]
-> Opcja **analizuj**  > **Uruchom analizę kodu** ma zastosowanie tylko do starszej analizy.
+> Opcja **analizuj** > **Uruchom analizę kodu** ma zastosowanie tylko do starszej analizy.
 
 Aby rozróżnić naruszenia od analizatorów kodu i starszej analizy w Lista błędów, należy zapoznać się z kolumną **Narzędzia** . Jeśli wartość narzędzia pasuje do jednego z zestawów analizatorów w **Eksplorator rozwiązań**, na przykład **Microsoft. CodeQuality. analizatory**, naruszenie pochodzi z analizatora kodu. W przeciwnym razie naruszenie pochodzi ze starszej wersji analizy.
 

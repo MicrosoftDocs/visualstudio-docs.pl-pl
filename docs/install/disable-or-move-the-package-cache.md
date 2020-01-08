@@ -11,24 +11,24 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 276eff442891f70b9eea76e9167b07f798af2d6a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591466"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Wyłączanie lub przenoszenie pamięci podręcznej pakietów
 
-Pamięć podręczną pakietów zapewnia źródło pakietów zainstalowanych, w przypadku, gdy zajdzie potrzeba naprawy programu Visual Studio lub inne powiązane produkty w przypadkach, gdy mają Brak połączenia internetowego. W przypadku niektórych dysków lub system ustawiać ups, jednak możesz nie chcieć zachować te pakiety wokół.
-Instalator pobierze je w razie potrzeby, dlatego jeśli chcesz zapisać lub odzyskać miejsce na dysku, można wyłączyć lub przenoszenie pamięci podręcznej pakietu.
+Pamięć podręczną pakietów zapewnia źródło pakietów zainstalowanych, w przypadku, gdy zajdzie potrzeba naprawy programu Visual Studio lub inne powiązane produkty w przypadkach, gdy mają Brak połączenia internetowego. Niemniej jednak w przypadku niektórych dysków lub zestawu systemowego może nie być konieczne zachowywanie wszystkich pakietów.
+Instalator pobierze je w razie potrzeby, więc jeśli chcesz zapisać lub odzyskać miejsce na dysku, możesz wyłączyć lub przenieść pamięć podręczną pakietu.
 
 ## <a name="disable-the-package-cache"></a>Wyłącz pamięć podręczną pakietów
 
@@ -40,7 +40,7 @@ Przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio lub inny
 
 Wszelkich operacji wykonywanych na dowolny produkt usunie wszystkie istniejące pakiety dla tego produktu i zapobiegnie zapisywania wszelkich pakietów, które po ich zainstalowaniu. Jeśli zmodyfikujesz lub naprawy programu Visual Studio i pakiety są wymagane, ich zostanie pobrana automatycznie i usunięte po ich zainstalowaniu.
 
-Jeśli chcesz ponownie włączyć pamięć podręczną, należy przekazać `--cache` zamiast tego. Tylko pakiety, które są wymagane będą buforowane, więc należy przywrócić wszystkie pakiety, należy naprawić program Visual Studio przed odłączeniem z sieci.
+Jeśli chcesz ponownie włączyć pamięć podręczną, należy przekazać `--cache` zamiast tego. Tylko wymagane pakiety będą przechowywane w pamięci podręcznej, więc jeśli trzeba przywrócić wszystkie pakiety, należy naprawić program Visual Studio przed rozłączeniem z siecią.
 
 ```cmd
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
@@ -50,9 +50,9 @@ Można również ustawić `KeepDownloadedPayloads` [zasad rejestru](set-defaults
 
 ## <a name="move-the-package-cache"></a>Przenieś pamięć podręczną pakietów
 
-Typowa konfiguracja systemu jest zapewnienie Windows zainstalowana na dysk SSD o większych dysku twardego (lub więcej) do tworzenia aplikacji musi, takie jak kod źródłowy, pliki binarne programu i nie tylko. Jeśli użytkownik chce pracować w trybie offline, możesz przenieść pamięci podręcznej pakietu.
+Typowa konfiguracja systemu jest zapewnienie Windows zainstalowana na dysk SSD o większych dysku twardego (lub więcej) do tworzenia aplikacji musi, takie jak kod źródłowy, pliki binarne programu i nie tylko. Jeśli chcesz, aby działał w trybie offline, możesz zamiast tego przenieść pamięć podręczną pakietu.
 
-Obecnie można to zrobić tylko wtedy, gdy ustawisz `CachePath` [zasad rejestru](set-defaults-for-enterprise-deployments.md) przed zainstalowaniem, modyfikowania lub naprawy programu Visual Studio.
+Obecnie można to zrobić tylko w przypadku ustawienia [zasad rejestru](set-defaults-for-enterprise-deployments.md) `CachePath` przed instalacją, modyfikacją lub naprawą programu Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

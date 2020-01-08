@@ -1,7 +1,7 @@
 ---
 title: Zwiększ swoją produktywność na potrzeby programowania na platformie .NET
 description: Przegląd nawigacji, analizy kodu, testowania jednostkowego i innych funkcji, które ułatwiają szybsze pisanie lepszego kodu platformy .NET.
-author: mikadumont
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/21/2019
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491646"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567505"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Przewodnik dotyczący wydajności programu C# Visual Studio dla deweloperów
 
@@ -43,7 +43,7 @@ Poniżej przedstawiono popularne skróty programu Visual Studio:
 
 | Skrót (wszystkie profile) | Polecenie | Opis |
 |-|-|-|
-| **Ctrl**+**t** | Przejdź do wszystkiego | Przejdź do dowolnego pliku, typu, składowej lub deklaracji symbolu |
+| **CTRL**+**T** | Przejdź do wszystkiego | Przejdź do dowolnego pliku, typu, składowej lub deklaracji symbolu |
 | **F12** (również **Ctrl**+**kliknij**) | Przejdź do definicji | Przejdź do miejsca, w którym zdefiniowano symbol |
 | **Ctrl**+**F12** | Przejdź do implementacji | Nawigacja z typu podstawowego lub składowej do różnych implementacji |
 | **Shift**+**F12** | Znajdź wszystkie odwołania | Zobacz wszystkie odwołania do symboli lub literałów |
@@ -52,12 +52,12 @@ Poniżej przedstawiono popularne skróty programu Visual Studio:
 | **Ctrl**+**D** | Duplikuj wiersz | Duplikuje wiersz kodu, w którym znajduje się kursor (dostępny w programie **Visual Studio 2017 w wersji 15,6** lub nowszej) |
 | **Shift**+**Alt**+ **+** / **-** | Rozwiń/Zwiń zaznaczenie | Rozwija lub kontraktuje bieżące zaznaczenie w edytorze (dostępne w programie **Visual Studio 2017 w wersji 15,5** i nowszych) |
 | **Shift** + **Alt** +  **.** | Wstaw następny pasujący karetkę | Dodaje zaznaczenie i karetkę w następnej lokalizacji pasującej do bieżącego zaznaczenia (dostępne w programie **Visual Studio 2017 w wersji 15,8** i nowszych) |
-| **Ctrl**+**Q** | Wyszukaj | Przeszukaj wszystkie ustawienia programu Visual Studio |
+| **CTRL**+**funkcji pytania i odpowiedzi** | Wyszukaj | Przeszukaj wszystkie ustawienia programu Visual Studio |
 | **F5** | Rozpocznij debugowanie | Rozpocznij debugowanie aplikacji |
 | **Ctrl**+**F5** | Uruchom bez debugowania | Uruchamianie aplikacji lokalnie bez debugowania |
 | **Ctrl**+**K**,**D** (profil domyślny) lub **Ctrl**+**E**,**d** (C# profil) | Formatuj dokument | Czyści naruszenia formatowania pliku na podstawie nowego wiersza, odstępów i ustawień wcięć |
 | **Ctrl**+ **\\** ,**Ctrl**+**E** (profil domyślny) lub **Ctrl**+**w**,**E** (C# profil) | Wyświetl Lista błędów | Zobacz wszystkie błędy w dokumencie, projekcie lub rozwiązaniu |
-| **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego problemu | Przejdź do poprzedniego/następnego błędu, ostrzeżenia i sugestii w dokumencie (dostępne w programie **Visual Studio 2017 w wersji 15,8** lub nowszej) |
+| **Alt** + **PgUp/PgDn** | Przejdź do następnego/poprzedniego wydania | Przejdź do poprzedniego/następnego błędu, ostrzeżenia i sugestii w dokumencie (dostępne w programie **Visual Studio 2017 w wersji 15,8** lub nowszej) |
 | **Ctrl**+**K**, **/** | Przełącz Komentarz jednowierszowy/Usuń komentarz | To polecenie dodaje lub usuwa Komentarz jednowierszowy w zależności od tego, czy zaznaczenie jest już komentarzem |
 | **Ctrl**+**SHIFT**+ **/** | Przełącz komentarz bloku/Usuń komentarz | To polecenie dodaje lub usuwa komentarze bloku w zależności od wybranych elementów |
 
@@ -159,7 +159,7 @@ Program Visual Studio ma wiele funkcji ułatwiających wyszukiwanie i [nawigowan
 | Znajdź wszystkie odwołania | **Shift**+**F12**| Wyniki są kolorowe i mogą być pogrupowane według projektu, definicji i typu referencyjnego, takich jak Odczyt lub zapis. Możesz również "zablokować" wyniki. |
 | Przejdź do implementacji | **Ctrl**+**F12** | Aby przejść do przesłoniętego elementu członkowskiego, można użyć słowa kluczowego przejdź do definicji `override`. |
 | Przejdź do definicji | Naciśnij **klawisz F12** lub **Ctrl**+**kliknij**| Naciśnij klawisz **Ctrl** podczas klikania, aby przejść do definicji |
-| Definicja wglądu | **Alt**+**F12** | Wbudowany widok definicji |
+| Zobacz definicję | **ALT**+**F12** | Wbudowany widok definicji |
 | Wizualizator struktury | Szare, kropkowane linie między nawiasami klamrowymi | Umieść wskaźnik myszy, aby zobaczyć strukturę kodu |
 | Nawigacja do dekompilowanych zestawów | Naciśnij **klawisz F12** lub **Ctrl**+**kliknij** | Przejdź do zewnętrznego źródła (dekompilowanego za pomocą ILSpy), włączając funkcję: **narzędzia** > **Opcje** > **edytorze tekstów** > **C#**  > **Advanced** > **Włącz nawigację do dekompilowanych źródeł**. |
 
@@ -233,5 +233,5 @@ Poniżej znajduje się lista funkcji edytora i produktywności, które umożliwi
 | Włączanie pełnej analizy rozwiązania | Zobacz wszystkie błędy w rozwiązaniu w **Lista błędów** | **Narzędzia** > **Opcje** > **edytora tekstów** > **C#**  > **Advanced** > **Włącz pełną analizę rozwiązania** |
 | Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji typów/członków ze źródeł zewnętrznych i używanie ILSpy dekompilator — informacje do wyświetlania treści metod | **Narzędzia** > **Opcje** > **edytora tekstów** > **C#**  > **Advanced** > **Włącz nawigację do dekompilowanych źródeł** |
 | Tryb uzupełniania/sugestii | Zmienia zachowanie uzupełniania w IntelliSense. Deweloperzy z tłem IntelliJą używają tutaj ustawienia innego niż domyślne. | **Menu** > **edytuj** > **IntelliSense** > **Przełącz tryb uzupełniania** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla informacje o odwołaniach do kodu i historię zmian w edytorze. (Wskaźniki CodeLens kontroli źródła nie są dostępne w programie Visual Studio Community Edition). | **Narzędzia** > **Opcje** > **edytora tekstów** > **wszystkie języki** > **CodeLens** |
+| [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla informacje o odwołaniach do kodu i historię zmian w edytorze. (Wskaźniki CodeLens kontroli źródła nie są dostępne w programie Visual Studio Community Edition). | **Narzędzia** > **Opcje** > **edytora tekstów** > **wszystkie języki** > **CodeLens** |
 | [Fragmenty kodu](../ide/visual-csharp-code-snippets.md) | Pomoc w wypełnieniu wspólnego kodu standardowego | Wpisz nazwę fragmentu i naciśnij dwukrotnie klawisz **Tab** . |

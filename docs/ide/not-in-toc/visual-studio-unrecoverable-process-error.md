@@ -5,17 +5,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
 - error, process
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fae832cf62b2cfc6302289352bc5a2f2afb9f13
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 206fcddca51f8e770e013ff67de6ae3d5562f633
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667052"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585798"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Błąd niemożliwy do odzyskania procesu programu Visual Studio
 
@@ -31,18 +31,18 @@ Jeśli zobaczysz ten komunikat, Zapisz swoją służbę, a następnie zamknij i 
 
 Poniżej znajduje się lista procesów pozaprocesowych używanych przez program Visual Studio. Ta lista obejmuje procesy, które są uruchamiane w określonych przepływach pracy lub scenariuszach i dlatego w większości przypadków nie są wykonywane w tym samym czasie.
 
-- Microsoft. Alm. Shared. Komunikacja zdalna. RemoteContainer. dll
-- Microsoft. CodeAnalysis. LiveUnitTesting. EntryPoint
+- Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
+- Microsoft.CodeAnalysis.LiveUnitTesting.EntryPoint
 - Program perfwatson2. exe
-- Zadanie servicehub. host. Node. x86. exe
-- Zadanie servicehub. IdentityHost. exe
-- Zadanie servicehub. VSDetouredHost. exe
-- Zadanie servicehub. SettingsHost. exe
-- Zadanie servicehub. host. CLR. x86. exe
-- Zadanie servicehub. RoslynCodeAnalysisService32. exe
-- Zadanie servicehub. RoslynCodeAnalysisService. exe
-- WindowsAzureGuestAgent. exe
-- WindowsAzureTelemetryService. exe
-- WaAppAgent. exe
+- ServiceHub.Host.Node.x86.exe
+- ServiceHub.IdentityHost.exe
+- ServiceHub.VSDetouredHost.exe
+- ServiceHub.SettingsHost.exe
+- ServiceHub.Host.CLR.x86.exe
+- ServiceHub.RoslynCodeAnalysisService32.exe
+- ServiceHub.RoslynCodeAnalysisService.exe
+- WindowsAzureGuestAgent.exe
+- WindowsAzureTelemetryService.exe
+- WaAppAgent.exe
 
 Jeśli którykolwiek z tych procesów zakończy się nieoczekiwanie, niektóre funkcje w programie Visual Studio przestaną działać. W przypadku niektórych procesów utrata funkcjonalności może być nieistotna. Dla innych użytkowników ma to na celu stabilność programu Visual Studio i zostanie wyświetlony komunikat o błędzie.

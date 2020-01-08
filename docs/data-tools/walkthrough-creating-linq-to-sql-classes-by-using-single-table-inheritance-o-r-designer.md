@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648053"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585980"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: tworzenie klas LINQ to SQL przy użyciu dziedziczenia pojedynczej tabeli (Projektant O/R)
 [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługują dziedziczenie pojedynczej tabeli, ponieważ są one zazwyczaj zaimplementowane w systemach relacyjnych. Ten Instruktaż rozszerza się po ogólnych krokach przedstawionych w temacie [How to: Configure dziedziczenie przy użyciu projektanta o/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) i zawiera pewne prawdziwe dane, które pokazują, jak używać dziedziczenia w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -51,11 +51,11 @@ Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabe
 
     |Nazwa kolumny|Typ danych|Zezwalaj na wartości null|
     |-----------------|---------------|-----------------|
-    |**#C1**|**int**|**False**|
-    |**Wprowadź**|**int**|**Oznacza**|
-    |**Imię**|**nvarchar (200)**|**False**|
-    |**Nazwisko**|**nvarchar (200)**|**False**|
-    |**Menedżera**|**int**|**Oznacza**|
+    |**Identyfikator**|**int**|**False**|
+    |**Typ**|**int**|**True**|
+    |**Imię**|**nvarchar(200)**|**False**|
+    |**Nazwisko**|**nvarchar(200)**|**False**|
+    |**Manager**|**int**|**True**|
 
 3. Ustaw wartość kolumny ID jako klucz podstawowy.
 
@@ -72,19 +72,19 @@ Aby można było sprawdzić, czy dziedziczenie jest prawidłowo skonfigurowane, 
 
     ||||||
     |-|-|-|-|-|
-    |**#C1**|**Wprowadź**|**Imię**|**Nazwisko**|**Menedżera**|
-    |**jedno**|**jedno**|**Anne**|**Wallace**|**NULL**|
-    |**dwóch**|**jedno**|**Carlos**|**Grilo**|**NULL**|
-    |**r.3**|**jedno**|**Yael**|**Peled**|**NULL**|
-    |**czwart**|**dwóch**|**Gatis**|**Ozolins**|**jedno**|
-    |**5000**|**dwóch**|**Panu**|**Hauser**|**jedno**|
-    |**ust**|**dwóch**|**Tiffany**|**Phuvasate**|**jedno**|
-    |**7**|**dwóch**|**Alexey**|**Orekhov**|**dwóch**|
-    |**0,8**|**dwóch**|**Michał**|**Poliszkiewicz**|**dwóch**|
-    |**9**|**dwóch**|**Pism**|**Yee**|**dwóch**|
-    |**dziesięć**|**dwóch**|**Fabricio**|**Noriega**|**r.3**|
-    |**11**|**dwóch**|**Mindy**|**Martin**|**r.3**|
-    |**dwunastomiesięcznych**|**dwóch**|**Krzysztof**|**Kwok**|**r.3**|
+    |**Identyfikator**|**Typ**|**Imię**|**Nazwisko**|**Manager**|
+    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
+    |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
+    |**3**|**1**|**Yael**|**Peled**|**NULL**|
+    |**4**|**2**|**Gatis**|**Ozolins**|**1**|
+    |**5**|**2**|**Panu**|**Hauser**|**1**|
+    |**6**|**2**|**Tiffany**|**Phuvasate**|**1**|
+    |**7**|**2**|**Alexey**|**Orekhov**|**2**|
+    |**8**|**2**|**Michał**|**Poliszkiewicz**|**2**|
+    |**9**|**2**|**Pism**|**Yee**|**2**|
+    |**10**|**2**|**Fabricio**|**Noriega**|**3**|
+    |**11**|**2**|**Mindy**|**Martin**|**3**|
+    |**12**|**2**|**Krzysztof**|**Kwok**|**3**|
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 Po utworzeniu tabeli Utwórz nowy projekt, aby zademonstrować Konfigurowanie dziedziczenia.

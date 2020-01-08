@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 02/21/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: ce6e98e2d068cd569247c4c4ea869c4280101d47
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179838"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75399753"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 
@@ -28,11 +28,12 @@ W tym samouczku dowiesz się, jak zarządzać więcej niż jednym kontenerem i k
 * [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** i/lub **oprogramowania .NET Core dla wielu platform**
 * [Narzędzia programistyczne programu .net core 2,2](https://dotnet.microsoft.com/download/dotnet-core/2.2) do programowania przy użyciu programu .net Core 2,2
+* [Narzędzia programistyczne programu .NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.1) na potrzeby programowania przy użyciu programu .net Core 3,1.
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>Tworzenie projektu aplikacji sieci Web
 
-W programie Visual Studio Utwórz projekt **ASP.NET Core aplikacji sieci Web** o nazwie `WebFrontEnd`. Wybierz pozycję **aplikacja sieci Web** , aby utworzyć aplikację sieci Web przy użyciu stron Razor. 
+W programie Visual Studio Utwórz projekt **aplikacji sieci Web ASP.NET Core** o nazwie `WebFrontEnd`. Wybierz pozycję **aplikacja sieci Web** , aby utworzyć aplikację sieci Web przy użyciu stron Razor. 
   
 ::: moniker range="vs-2017"
 
@@ -54,7 +55,7 @@ Nie wybieraj opcji **Włącz obsługę platformy Docker**. Później dodasz obs�
 
 ## <a name="create-a-web-api-project"></a>Tworzenie projektu interfejsu API sieci Web
 
-Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozycję **interfejs API** jako typ projektu i usuń zaznaczenie pola wyboru **Konfiguruj dla protokołu HTTPS**. W tym projekcie korzystamy z protokołu SSL do komunikacji z klientem, a nie do komunikacji między kontenerami w tej samej aplikacji sieci Web. Wymaga `WebFrontEnd` tylko protokołu HTTPS.
+Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozycję **interfejs API** jako typ projektu i usuń zaznaczenie pola wyboru **Konfiguruj dla protokołu HTTPS**. W tym projekcie korzystamy z protokołu SSL do komunikacji z klientem, a nie do komunikacji między kontenerami w tej samej aplikacji sieci Web. Tylko `WebFrontEnd` wymaga protokołu HTTPS, a w przykładach założono, że pole wyboru zostało wyczyszczone.
 
 ::: moniker range="vs-2017"
    ![Zrzut ekranu przedstawiający tworzenie projektu interfejsu API sieci Web](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
@@ -65,7 +66,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
 ## <a name="add-code-to-call-the-web-api"></a>Dodawanie kodu do wywoływania interfejsu API sieci Web
 
-1. W projekcie Otwórz plik *index.cshtml.cs* i Zastąp `OnGet` metodę poniższym kodem. `WebFrontEnd`
+1. W projekcie `WebFrontEnd` Otwórz plik *index.cshtml.cs* i Zastąp metodę `OnGet` poniższym kodem.
 
    ```csharp
     public async Task OnGet()
@@ -76,14 +77,17 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
        {
           // Call *mywebapi*, and display its response in the page
           var request = new System.Net.Http.HttpRequestMessage();
-          request.RequestUri = new Uri("http://mywebapi/api/values/1");
+          // request.RequestUri = new Uri("http://mywebapi/WeatherForecast"); // ASP.NET 3 (VS 2019 only)
+          request.RequestUri = new Uri("http://mywebapi/api/values/1"); // ASP.NET 2.x
           var response = await client.SendAsync(request);
           ViewData["Message"] += " and " + await response.Content.ReadAsStringAsync();
        }
     }
    ```
 
-1. W pliku *index. cshtml* Dodaj wiersz do wyświetlenia `ViewData["Message"]` , aby plik wyglądał jak poniższy kod:
+   W przypadku platformy .NET Core 3,1 w programie Visual Studio 2019 lub nowszym szablon internetowego interfejsu API używa interfejsu API WeatherForecast, więc Usuń komentarz tego wiersza i Skomentuj wiersz dla ASP.NET 2. x.
+
+1. W pliku *index. cshtml* Dodaj wiersz, aby wyświetlić `ViewData["Message"]`, tak aby plik wyglądał jak poniższy kod:
     
       ```cshtml
       @page
@@ -99,7 +103,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
       </div>
       ```
 
-1. Teraz w projekcie interfejsu API sieci Web Dodaj kod do kontrolera wartości, aby dostosować komunikat zwracany przez interfejs API dla wywołania, które zostało dodane zelementu webfrontonu.
+1. (Tylko ASP.NET 2. x) Teraz w projekcie interfejsu API sieci Web Dodaj kod do kontrolera wartości, aby dostosować komunikat zwracany przez interfejs API dla wywołania, które zostało dodane z elementu *webfrontonu*.
     
       ```csharp
         // GET api/values/5
@@ -110,7 +114,13 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
         }
       ```
 
-1. W projekcie wybierz pozycję **Dodaj > kontener usługi Orchestrator support.** `WebFrontEnd` Zostanie wyświetlone okno dialogowe **Opcje obsługi platformy Docker** .
+    W przypadku platformy .NET Core 3,1 nie jest to potrzebne, ponieważ można użyć interfejsu API WeatherForecast, który już istnieje. Należy jednak dodać komentarz do wywołania `UseHttpsRedirections` w metodzie `Configure` w *Startup.cs*, ponieważ ten kod używa protokołu HTTP nie HTTPS do wywoływania internetowego interfejsu API.
+
+    ```csharp
+                //app.UseHttpsRedirection();
+    ```
+
+1. W projekcie `WebFrontEnd` wybierz pozycję **dodaj > obsługa Orchestrator kontenera**. Zostanie wyświetlone okno dialogowe **Opcje obsługi platformy Docker** .
 
 1. Wybierz **Docker Compose**.
 
@@ -139,7 +149,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
    Aby uzyskać szczegółowe informacje na temat wykonywanych poleceń, zapoznaj się z sekcją **Narzędzia kontenera** w okienku danych wyjściowych.  Aby skonfigurować i utworzyć kontenery środowiska uruchomieniowego, można zobaczyć narzędzie wiersza polecenia Docker-Zredaguj.
 
-1. W projekcie interfejsu API sieci Web ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **Dodaj** > **obsługę programu Orchestrator kontenera**. Wybierz **Docker Compose**, a następnie wybierz ten sam docelowy system operacyjny.  
+1. W projekcie interfejsu API sieci Web ponownie kliknij prawym przyciskiem myszy węzeł projektu, a następnie wybierz polecenie **dodaj** > **kontener Orchestrator support**. Wybierz **Docker Compose**, a następnie wybierz ten sam docelowy system operacyjny.  
 
     > [!NOTE]
     > W tym kroku program Visual Studio będzie oferować pliku dockerfile. Jeśli wykonasz tę czynność w projekcie, który ma już obsługę platformy Docker, zostanie wyświetlony monit z pytaniem, czy chcesz zastąpić istniejące pliku dockerfile. Jeśli wprowadzono zmiany w pliku dockerfile, które chcesz zachować, wybierz pozycję nie.
@@ -163,15 +173,17 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
           dockerfile: MyWebAPI/Dockerfile
     ```
 
-1. Uruchom witrynę lokalnie teraz (F5 lub CTRL + F5), aby sprawdzić, czy działa zgodnie z oczekiwaniami. Jeśli wszystko jest prawidłowo skonfigurowane, zobaczysz komunikat "Hello z webfrontonu i WebAPI (z wartością 1)".
+1. Uruchom witrynę lokalnie teraz (F5 lub CTRL + F5), aby sprawdzić, czy działa zgodnie z oczekiwaniami. Jeśli wszystko jest poprawnie skonfigurowane w wersji .NET Core 2. x, zobaczysz komunikat "Hello z webfrontonu i WebAPI (z wartością 1)".  W przypadku platformy .NET Core 3 widoczne są dane prognozy pogody.
 
    Pierwszy projekt używany podczas dodawania aranżacji kontenera jest ustawiany do uruchamiania lub debugowania. Akcję uruchamiania można skonfigurować we **właściwościach projektu** dla projektu Docker-Zredaguj.  W węźle Docker-redagowanie projektu kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe, a następnie wybierz polecenie **Właściwości**lub użyj klawiszy Alt + Enter.  Poniższy zrzut ekranu przedstawia właściwości, które mają być używane w tym miejscu.  Na przykład można zmienić stronę, która jest ładowana, dostosowując Właściwość **adresu URL usługi** .
 
    ![Zrzut ekranu przedstawiający właściwości projektu platformy Docker](media/tutorial-multicontainer/launch-action.png)
 
-   Oto co widzisz po uruchomieniu:
+   Oto co widać po uruchomieniu programu (wersja programu .NET Core 2. x):
 
    ![Zrzut ekranu przedstawiający uruchomioną aplikację sieci Web](media/tutorial-multicontainer/webfrontend.png)
+
+   Aplikacja sieci Web dla programu .NET 3,1 pokazuje dane pogodowe w formacie JSON.
 
 ## <a name="next-steps"></a>Następne kroki
 

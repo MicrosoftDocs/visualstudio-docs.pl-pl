@@ -15,17 +15,17 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc8b8640f73bc89b43a9ef80d6762e8b2a67c96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8bb4b2860d40828a96e25ec6e6c73d947dd60c0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655733"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567661"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -43,7 +43,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
 
-- {`/Build` | `/Clean` | `/Deploy` | `/Rebuild`}
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
 
   Wymagany. [Kompiluje](build-devenv-exe.md), [czyści](clean-devenv-exe.md), [wdraża](deploy-devenv-exe.md)lub ponownie [kompiluje](rebuild-devenv-exe.md) projekt.
 
@@ -51,7 +51,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
   Opcjonalny. Nazwa konfiguracji rozwiązania (na przykład `Debug` lub `Release`), która ma zostać zastosowana do rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślony lub pusty ciąg (`""`), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project` *Projname*
+- `/Project` *ProjName*
 
   Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Możesz również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
@@ -65,7 +65,7 @@ devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project P
 
 ## <a name="remarks"></a>Uwagi
 
-Przełącznik `/ProjectConfig` musi być używany z przełącznikiem `/Project` w ramach polecenia `/Build`,/`Clean`, `/Deploy` lub `/Rebuild`.
+Przełącznik `/ProjectConfig` musi być używany z przełącznikiem `/Project` w ramach polecenia `/Build`,/`Clean`, `/Deploy`lub `/Rebuild`.
 
 Ujmij ciągi, które zawierają spacje w podwójnych cudzysłowach.
 
@@ -73,7 +73,7 @@ Informacje podsumowujące dla kompilacji, w tym błędy, mogą być wyświetlane
 
 ## <a name="example"></a>Przykład
 
-Następujące polecenie kompiluje `CSharpWinApp` projektu przy użyciu konfiguracji kompilacji projektu `Debug` w `MySolution`:
+Następujące polecenie kompiluje `CSharpWinApp`projektu przy użyciu konfiguracji kompilacji projektu `Debug` w `MySolution`:
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug

@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e8e9fc3a9ecbadc47c3390d2d4a9b504a316658
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747605"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589724"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 
@@ -69,7 +69,7 @@ Właściwość **konstruktora połączeń** narzędzia połączenia odwołuje si
 
 3. Ustaw właściwość **ikona przybornika** , aby odwołać się do mapy bitowej 16x16.
 
-     Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksplorator rozwiązań w folderze **Dsl\Resources** . Plik powinien mieć następujące wartości właściwości: **Akcja kompilacji**  = **zawartość**; **Kopiuj do katalogu wyjściowego**  = **nie Kopiuj**.
+     Jeśli chcesz zdefiniować nową ikonę, Utwórz plik mapy bitowej w Eksplorator rozwiązań w folderze **Dsl\Resources** . Plik powinien mieć następujące wartości właściwości: **Akcja kompilacji** = **zawartość**; **Kopiuj do katalogu wyjściowego** = **nie Kopiuj**.
 
 4. **Dla narzędzia elementu:** Ustaw właściwość **Class** narzędzia, aby odwoływać się do konkretnej klasy domeny, która jest zmapowana do kształtu.
 
@@ -77,7 +77,7 @@ Właściwość **konstruktora połączeń** narzędzia połączenia odwołuje si
 
 5. Aby przetestować DSL, naciśnij klawisz F5 lub CTRL + F5 i w eksperymentalnym wystąpieniu programu Visual Studio Otwórz przykładowy plik modelu. Nowe narzędzie powinno pojawić się w przyborniku. Przeciągnij go na diagram, aby sprawdzić, czy tworzy nowy element.
 
-     Jeśli narzędzie nie jest wyświetlane, Zatrzymaj eksperymentalny program Visual Studio. W menu **Start** systemu Windows uruchom polecenie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**. Następnie ponownie przetestuj DSL.
+     Jeśli narzędzie nie jest wyświetlane, Zatrzymaj eksperymentalny program Visual Studio. W menu **Start** systemu Windows uruchom polecenie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. Następnie ponownie przetestuj DSL.
 
 ## <a name="customizing"></a>Dostosowywanie narzędzi elementów
  Domyślnie Narzędzie utworzy pojedyncze wystąpienie określonej klasy, ale można to zmienić na dwa sposoby:
@@ -154,12 +154,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Konstruktory połączeń zawierają co najmniej jedną dyrektywę łączenia linków, która określa relację domeny i elementy źródłowe i docelowe. Na przykład w szablonie rozwiązania przepływu zadań można zobaczyć **CommentReferencesSubjectsBuilder** w **Eksploratorze DSL**. Ten Konstruktor połączeń zawiera jedną dyrektywę Connect link o nazwie **CommentReferencesSubjects**, która jest mapowana na relację domeny **CommentReferencesSubjects**. Ta dyrektywa łączenia linków zawiera dyrektywę z rolą źródłową, która wskazuje na klasę domeny `Comment` i dyrektywę docelową, która wskazuje na klasę `FlowElement` domeny.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Używanie konstruktorów połączeń do ograniczania ról źródłowych i docelowych
- Można użyć konstruktorów połączeń, aby ograniczyć wystąpienia niektórych klas w roli źródłowej lub roli docelowej danej relacji domeny. Na przykład może istnieć podstawowa klasa domeny, która ma relację domeny z inną klasą domeny, ale nie wszystkie klasy pochodne klasy bazowej mogą mieć te same role w tej relacji. W rozwiązaniu przepływu zadań istnieją cztery konkretne klasy domeny (**StartPoint**, **Endpoint**, **MergeBranch**i **Synchronization**), które dziedziczą bezpośrednio ze abstrakcyjnej klasy " **FlowElement**" i dwie konkretne klasy domeny (**Task** i **ObjectInState**) dziedziczące pośrednio od niej. Istnieje również relacja odwołania do **przepływu** , która przyjmuje klasy domeny **FlowElement** zarówno w roli źródłowej, jak i roli docelowej. Niemniej jednak wystąpienie klasy domeny **punktu końcowego** nie powinno być źródłem wystąpienia relacji **przepływu** ani nie powinno być wystąpienie klasy **StartPoint** jako obiekt docelowy wystąpienia relacji **przepływu** . Konstruktor **połączeń FlowBuilder** ma dyrektywę Connect link o nazwie **Flow** , która określa, które klasy domeny mogą odtwarzać rolę źródłową (**Task**, **MergeBranch**, **StartPoint**i **Synchronization**), a które może odtworzyć rolę docelową (**MergeBranch**, **punkt końcowy**i **Synchronizacja**).
+ Można użyć konstruktorów połączeń, aby ograniczyć wystąpienia niektórych klas w roli źródłowej lub roli docelowej danej relacji domeny. Na przykład może istnieć podstawowa klasa domeny, która ma relację domeny z inną klasą domeny, ale nie wszystkie klasy pochodne klasy bazowej mogą mieć te same role w tej relacji. W rozwiązaniu przepływu zadań istnieją cztery konkretne klasy domeny (**StartPoint**, **Endpoint**, **MergeBranch**i **Synchronization**), które dziedziczą bezpośrednio z abstrakcyjnej klasy domeny, i dwie klasy konkretnej domeny (**Task** i **ObjectInState**), które dziedziczą pośrednio od niej. Istnieje również relacja odwołania do **przepływu** , która przyjmuje klasy domeny **FlowElement** zarówno w roli źródłowej, jak i roli docelowej. Niemniej jednak wystąpienie klasy domeny **punktu końcowego** nie powinno być źródłem wystąpienia relacji **przepływu** ani nie powinno być wystąpienie klasy **StartPoint** jako obiekt docelowy wystąpienia relacji **przepływu** . Konstruktor połączeń **FlowBuilder** ma dyrektywę Connect link o nazwie **Flow** , która określa, które klasy domeny mogą odgrywać rolę źródłową (**zadanie**, **MergeBranch**, **StartPoint**i **Synchronizacja**), które mogą odtwarzać rolę docelową (**MergeBranch**, **punkt końcowy**i **Synchronizacja**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Konstruktory połączeń z wieloma dyrektywami łączenia linków
  Do konstruktora połączeń można dodać więcej niż jedną dyrektywę łączenia linku. Może to pomóc w ukryciu niektórych złożoności modelu domeny od użytkowników i uniemożliwić zbyt bałaganie **przybornika** . Można dodać dyrektywy łączenia linków dla kilku różnych relacji domeny do konstruktora jednego połączenia. Należy jednak połączyć relacje domeny, gdy wykonują one w przybliżeniu tę samą funkcję.
 
- W rozwiązaniu przepływu zadań narzędzie połączenia **Flow** służy do rysowania wystąpień zarówno **przepływu** , jak i relacji domeny **ObjectFlow** . Konstruktor połączeń **FlowBuilder** ma oprócz dyrektywy **Flow** link Connect opisanej wcześniej dwie dyrektywy łączenia linków o nazwie **ObjectFlow**. Te dyrektywy określają, że wystąpienie relacji **ObjectFlow** może być rysowane między wystąpieniami klasy domeny **ObjectInState** lub z wystąpienia **ObjectInState** do wystąpienia **zadania**, ale nie między dwoma wystąpienia **zadania**lub z wystąpienia **zadania** do wystąpienia elementu **ObjectInState**. Jednak wystąpienie relacji **przepływu** może być rysowane między dwoma wystąpieniami **zadania**. W przypadku kompilowania i uruchamiania rozwiązania przepływu zadań można zobaczyć, że narysowanie **przepływu** z wystąpienia **ObjectInState** do wystąpienia **zadania** tworzy wystąpienie elementu **ObjectFlow**, ale narysowanie **przepływu** między dwoma wystąpieniami **zadania** tworzy wystąpienie **przepływu**.
+ W rozwiązaniu przepływu zadań narzędzie połączenia **Flow** służy do rysowania wystąpień zarówno **przepływu** , jak i relacji domeny **ObjectFlow** . Konstruktor połączeń **FlowBuilder** ma oprócz dyrektywy **Flow** link Connect opisanej wcześniej dwie dyrektywy łączenia linków o nazwie **ObjectFlow**. Te dyrektywy określają, że wystąpienie relacji **ObjectFlow** może być rysowane między wystąpieniami klasy domeny **ObjectInState** , lub z wystąpienia **ObjectInState** do wystąpienia **zadania**, ale nie między dwoma wystąpieniami **zadania**lub z wystąpienia **zadania** do wystąpienia klasy **ObjectInState**. Jednak wystąpienie relacji **przepływu** może być rysowane między dwoma wystąpieniami **zadania**. W przypadku kompilowania i uruchamiania rozwiązania przepływu zadań można zobaczyć, że rysowanie **przepływu** z wystąpienia **ObjectInState** do wystąpienia **zadania** tworzy wystąpienie elementu **ObjectFlow**, ale narysowanie **przepływu** między dwoma wystąpieniami **zadania** powoduje utworzenie wystąpienia **przepływu**.
 
 ### <a name="custom-code-for-connection-builders"></a>Niestandardowy kod dla konstruktorów połączeń
  W interfejsie użytkownika są cztery pola wyboru, które definiują różne typy dostosowań konstruktorów połączeń:

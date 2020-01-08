@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11743756ffd8f59520448d2687dbada6d4eaca40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608037"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592337"
 ---
 # <a name="xml-schemas-dialog-box"></a>Schematy XML, okno dialogowe
 
@@ -23,13 +23,13 @@ Okno dialogowe **schematy XML** służy do wybierania schematu definicji języka
 
 Możesz uzyskać dostęp do okna dialogowego **schematy XML** , klikając przycisk **schematy** w oknie właściwości dokumentu lub wybierając **schematy** z menu **XML** .
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu
 
-**Używanych**
+**Korzystanie**
 
 Wybierz, jak schemat XML ma być używany.
 
-- **Automatyczne**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny do automatycznego kojarzenia. Jeśli dokument XML deklaruje przestrzeń nazw pasującą do `targetNamespace` tego schematu, schemat zostanie automatycznie skojarzony i zostanie uwzględniony w zestawie schematów.
+- **Automatyczny**. Ten schemat nie jest używany przez bieżący dokument, ale jest dostępny do automatycznego kojarzenia. Jeśli dokument XML deklaruje przestrzeń nazw pasującą do `targetNamespace` tego schematu, schemat zostanie automatycznie skojarzony i zostanie uwzględniony w zestawie schematów.
 
 - **Użyj tego schematu**. Ten schemat jest używany przez bieżący dokument. Użytkownik jawnie zażądał użycia tego schematu przez kliknięcie tej kolumny lub schemat został automatycznie skojarzony na podstawie pasującego `targetNamespace`.
 
@@ -43,7 +43,7 @@ Wyświetla docelową przestrzeń nazw skojarzoną ze schematem XML.
 
 Wyświetla nazwę pliku schematu XML.
 
-**Add**
+**Dodaj**
 
 Otwiera okno dialogowe **otwieranie schematu XSD** , które umożliwia wybranie dodatkowych schematów do dodania do zestawu schematów. Po dodaniu schematu do zestawu schematów wartość **opcji Użyj** kolumny jest ustawiana na **Użyj tego schematu**.
 

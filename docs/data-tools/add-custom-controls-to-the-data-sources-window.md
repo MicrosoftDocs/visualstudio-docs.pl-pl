@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648914"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587111"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
 
@@ -39,7 +39,7 @@ Aby dodać lub usunąć kontrolki z listy dostępnych kontrolek dla elementów w
 2. W oknie **źródła danych** kliknij element, który jest częścią źródła danych, które zostało dodane do okna, a następnie kliknij menu rozwijane dla elementu.
 
    > [!TIP]
-   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **wyświetl**  >  inne  > **źródła danych** **systemu Windows** .
+   > Jeśli okno źródła danych nie jest otwarte, otwórz je, wybierając opcję **wyświetl** > inne > **źródła danych** **systemu Windows** .
 
 3. W menu rozwijanym kliknij opcję **Dostosuj**. Zostanie otwarte jedno z następujących okien dialogowych:
 

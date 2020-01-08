@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635054"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589932"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -30,10 +30,10 @@ Projektant programu do **cieniowania** obsługuje następujące formaty programu
 
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (wyświetlanie, edytowanie i eksportowanie)|
 |-----------------| - | - |
-|Język ukierunkowanego modułu cieniującego wykresów|*. dgsl*|Wyświetl, edytuj|
-|Program do cieniowania HLSL (kod źródłowy)|*. HLSL*|Wywozu|
-|Program do cieniowania HLSL (kod bajtowy)|*. CSO*|Wywozu|
-|C++Header (tablica kodu bajtowego HLSL)|*. h*|Wywozu|
+|Język ukierunkowanego modułu cieniującego wykresów|*.dgsl*|Wyświetl, edytuj|
+|Program do cieniowania HLSL (kod źródłowy)|*. HLSL*|Eksportowanie|
+|Program do cieniowania HLSL (kod bajtowy)|*.cso*|Eksportowanie|
+|C++Header (tablica kodu bajtowego HLSL)|*.h*|Eksportowanie|
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -46,11 +46,11 @@ W tej sekcji opisano sposób dodawania cieniowania DGSL do projektu programu Vis
 
 1. Upewnij się, że masz zainstalowany wymagany składnik programu Visual Studio, który jest potrzebny do pracy z grafiką. Składnik jest nazywany **edytorami obrazów i modeli 3W**.
 
-   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **narzędzia**  > **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w obszarze  **Kategoria gry i grafika** , a następnie wybierz polecenie **Modyfikuj**.
+   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **narzędzia** > **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w kategorii **gry i grafika** , a następnie wybierz polecenie **Modyfikuj**.
 
    ![Składnik edytorów obrazów i modeli 3W](media/image-3d-model-editors-component.png)
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla C++ projektu, do którego chcesz dodać cieniowanie, a następnie wybierz **Dodaj**  > **nowy element**.
+2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla C++ projektu, do którego chcesz dodać cieniowanie, a następnie wybierz **Dodaj** > **nowy element**.
 
 3. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane**wybierz pozycję **grafika**, a następnie wybierz pozycję **Wykres cieniowania wizualizacji (. dgsl)** .
 
@@ -59,7 +59,7 @@ W tej sekcji opisano sposób dodawania cieniowania DGSL do projektu programu Vis
 
 4. Określ **nazwę** pliku programu do cieniowania i **lokalizację** , w której ma zostać utworzona.
 
-5. Wybierz przycisk **Dodaj** .
+5. Wybierz **Dodaj** przycisku.
 
 ### <a name="the-default-shader"></a>Domyślne cieniowanie
 
@@ -85,7 +85,7 @@ W tej tabeli opisano elementy na pasku narzędzi **tryb projektanta cieniowania*
 |------------------|-----------------|
 |**Wybór**|Umożliwia interakcję z węzłami i krawędziami na wykresie. W tym trybie można wybrać węzły i przenieść je lub usunąć. można również ustalić krawędzie lub je podzielić.|
 |**Przesuwanie**|Włącza przenoszenie grafu cieniowania względem ramki okna. Aby przesunąć, wybierz punkt na powierzchni projektowej i przenieś go wokół siebie.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby tymczasowo aktywować tryb **przesuwania** .|
-|**Zmieniać**|Umożliwia wyświetlanie większej lub mniejszej liczby szczegółów grafu cieniowania względem ramki okna. W trybie **powiększenia** wybierz punkt na powierzchni projektowej, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby powiększyć lub pomniejszyć, używając kółka myszy.|
+|**Zoom**|Umożliwia wyświetlanie większej lub mniejszej liczby szczegółów grafu cieniowania względem ramki okna. W trybie **powiększenia** wybierz punkt na powierzchni projektowej, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby powiększyć lub pomniejszyć, używając kółka myszy.|
 |**Dopasuj do rozmiaru**|Wyświetla wykres pełnego modułu cieniującego w ramce okna.|
 |**Tryb renderowania w czasie rzeczywistym**|Po włączeniu renderowania w czasie rzeczywistym program Visual Studio ponownie rysuje powierzchnię projektu, nawet jeśli nie jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|
 |**Podgląd przy użyciu sfery**|Po włączeniu Model sfery jest używany do podglądu cieniowania. Można włączyć tylko jeden kształt podglądu w danym momencie.|
@@ -107,7 +107,7 @@ Użyj trybu **SELECT** , aby dodawać, usuwać, zmieniać położenie, łączyć
 
 #### <a name="to-perform-basic-operations-in-select-mode"></a>Aby wykonać operacje podstawowe w trybie wyboru
 
-- Oto jak to zrobić:
+- Zrobisz to w następujący sposób:
 
   - Aby dodać węzeł do wykresu, wybierz go w **przyborniku** , a następnie przenieś do powierzchni projektowej.
 
@@ -145,7 +145,7 @@ W poniższej tabeli przedstawiono parametry programu do cieniowania, które moż
 
 |Parametr|Właściwości|
 |---------------|----------------|
-|**Tekstura 1**  - **Texture 8**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Nazwa pliku**: pełna ścieżka pliku tekstury skojarzonego z tym rejestrem tekstury.|
+|**Tekstura 1** - **Texture 8**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Nazwa pliku**: pełna ścieżka pliku tekstury skojarzonego z tym rejestrem tekstury.|
 |**Otoczenie materiału**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor rozpraszania bieżącego piksela ze względu na pośrednie lub oświetlenie otoczenia.|
 |**Rozpraszanie materiału**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: kolor opisujący sposób rozpraszania przez bieżący piksel oświetlenia bezpośredniego.|
 |**Emisyjny materiału**|**Dostęp**: **publiczny** , aby zezwalać na ustawienie właściwości z edytora modelu; w przeciwnym razie **prywatny**.<br /><br /> **Wartość**: udział koloru bieżącego piksela ze względu na własne oświetlenie.|
@@ -176,26 +176,26 @@ Aby uzyskać więcej informacji o sposobach eksportowania programów do cieniowa
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełącz do trybu **wyboru**|**Ctrl** +**G**, **Ctrl** +**Q**<br /><br /> **Wolumin**|
-|Przełącz do trybu **powiększenia**|**Ctrl** +**G**, **Ctrl** +**Z**<br /><br /> **Porządku**|
-|Przełącz do trybu **kadrowania**|**Ctrl** +**G**, **Ctrl** +**P**<br /><br /> **K**|
+|Przełącz do trybu **wyboru**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Przełącz do trybu **powiększenia**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Przełącz do trybu **kadrowania**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**Escape** (**ESC**)|
-|Powiększanie|**Ctrl** +**kółkiem myszy do przodu**<br /><br /> Znak plus ( **+** )|
-|Pomniejszanie|**Ctrl** +**kółkiem myszy do tyłu**<br /><br /> Znak minusa ( **-** )|
+|Powiększanie|**Ctrl**+**kółkiem myszy do przodu**<br /><br /> Znak plus ( **+** )|
+|Pomniejszanie|**Ctrl**+**kółkiem myszy do tyłu**<br /><br /> Znak minusa ( **-** )|
 |Przesuń powierzchnię projektu w górę|**Kółko myszy do tyłu**<br /><br /> **PageDown**|
 |Przesuń powierzchnię projektu w dół|**Kółko myszy do przodu**<br /><br /> **PageUp**|
-|Przesuń powierzchnię projektu w lewo|**Shift** +**kółkiem myszy do tyłu**<br /><br /> **Kółko myszy w lewo**<br /><br /> **Shift** +**PageDown**|
-|Przesuń powierzchnię projektu w prawo|**Przesuń** +**kółkiem myszy do przodu**<br /><br /> **Kółko myszy w prawo**<br /><br /> **Shift** +**PageUp**|
+|Przesuń powierzchnię projektu w lewo|**Shift**+**kółkiem myszy do tyłu**<br /><br /> **Kółko myszy w lewo**<br /><br /> **Shift**+**PageDown**|
+|Przesuń powierzchnię projektu w prawo|**Przesuń**+**kółkiem myszy do przodu**<br /><br /> **Kółko myszy w prawo**<br /><br /> **Shift**+**PageUp**|
 |Przesuwanie fokusu klawiatury do innego węzła|Klawisze **strzałek**|
-|Wybierz węzeł, który ma fokus klawiatury (dodaje węzeł do grupy wyboru)|**Shift** +**spacja**|
-|Przełącz zaznaczenie węzła, który ma fokus klawiatury|**Ctrl** +**spacja**|
+|Wybierz węzeł, który ma fokus klawiatury (dodaje węzeł do grupy wyboru)|**Shift**+**spacja**|
+|Przełącz zaznaczenie węzła, który ma fokus klawiatury|**Ctrl**+**spacja**|
 |Przełącz bieżące zaznaczenie (jeśli nie wybrano żadnych węzłów, zaznacz węzeł z fokusem klawiatury)|**Spacja**|
-|Przenieś bieżące zaznaczenie w górę|**Shift** +**strzałkę w górę**|
-|Przenieś bieżące zaznaczenie w dół|**Shift** +**strzałkę w dół**|
-|Przenieś bieżące zaznaczenie w lewo|**Shift** +**Strzałka w lewo**|
-|Przenieś bieżące zaznaczenie w prawo|**Shift** +**strzałkę w prawo**.|
+|Przenieś bieżące zaznaczenie w górę|**Shift**+**strzałkę w górę**|
+|Przenieś bieżące zaznaczenie w dół|**Shift**+**strzałkę w dół**|
+|Przenieś bieżące zaznaczenie w lewo|**Shift**+**Strzałka w lewo**|
+|Przenieś bieżące zaznaczenie w prawo|**Shift**+**strzałkę w prawo**.|
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

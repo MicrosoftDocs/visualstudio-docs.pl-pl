@@ -1,5 +1,5 @@
 ---
-title: Usuń zadanie | Dokumentacja firmy Microsoft
+title: Usuń zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,35 +13,35 @@ helpviewer_keywords:
 - Delete task [MSBuild]
 - MSBuild, Delete task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821107"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567466"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
 Usuwa określone pliki.
 
 ## <a name="parameters"></a>Parametry
-W poniższej tabeli opisano parametry `Delete` zadania.
+W poniższej tabeli opisano parametry zadania `Delete`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`DeletedFiles`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Określa pliki, które zostały pomyślnie usunięte.|
+|`DeletedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Określa pliki, które zostały pomyślnie usunięte.|
 |`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do usunięcia.|
-|`TreatErrorsAsWarnings`|Opcjonalnie `Boolean` parametru<br /><br /> Jeśli `true`, błędy są rejestrowane jako ostrzeżenia. Wartość domyślna to `false`.|
+|`TreatErrorsAsWarnings`|Opcjonalny parametr `Boolean`<br /><br /> Jeśli `true`, błędy są rejestrowane jako ostrzeżenia. Wartość domyślna to `false`.|
 
 ## <a name="remarks"></a>Uwagi
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład usuwa plik *MyApp.pdb*.
+Poniższy przykład usuwa plik *MojaApl. pdb*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

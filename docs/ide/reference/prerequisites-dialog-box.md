@@ -7,17 +7,17 @@ f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533387"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567908"
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
@@ -25,20 +25,20 @@ W oknie dialogowym **wymagania wstępne** określono, które wstępnie wymagane 
 
 ![Okno dialogowe wymagania wstępne w programie Visual Studio](media/prerequisites-dialog-box.png)
 
-Aby uzyskać dostęp do okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz**Właściwości** **projektu** > . Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **Publikowanie** , a następnie wybierz pozycję **wymagania wstępne**. W przypadku projektów instalacyjnych w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się okno dialogowe **strony właściwości** , kliknij pozycję **wymagania wstępne**.
+Aby uzyskać dostęp do okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz pozycję **Project** > **Właściwości**. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **Publikowanie** , a następnie wybierz pozycję **wymagania wstępne**. W przypadku projektów instalacyjnych w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się okno dialogowe **strony właściwości** , kliknij pozycję **wymagania wstępne**.
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
 |Element|Opis|
 |-------------|-----------------|
-|**Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki**|Obejmuje składniki wymagane wstępnie w programie instalacyjnym aplikacji (*Setup. exe*), dzięki czemu zostaną one zainstalowane przed aplikacją w kolejności zależności. Domyślnie ta opcja jest zaznaczona. Jeśli nie jest zaznaczone, *plik Setup. exe* nie zostanie utworzony.|
+|**Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki**|Obejmuje składniki wymagane wstępnie w programie instalacyjnym aplikacji (*Setup. exe*), dzięki czemu zostaną one zainstalowane przed aplikacją w kolejności zależności. Ta opcja jest wybrana domyślnie. Jeśli nie jest zaznaczone, *plik Setup. exe* nie zostanie utworzony.|
 |**Wybierz wymagania wstępne do zainstalowania**|Określa, czy zainstalować składniki, takie jak .NET Framework C++ i biblioteki środowiska uruchomieniowego.<br /><br />Na przykład, zaznaczając pole wyboru obok **SQL Server 2012 Express**, należy określić, że program instalacyjny musi sprawdzić, czy ten składnik jest zainstalowany na komputerze docelowym, i zainstalować go, jeśli nie.<br /><br />Aby uzyskać szczegółowe informacje na temat każdego wstępnie wymaganego pakietu, zobacz [Informacje o wymaganiach wstępnych](#prerequisites-information).|
-|**Pobierz wstępnie wymagane składniki z witryny sieci Web dostawcy składników**|Określa, że wstępnie wymagane składniki mają być instalowane z witryny sieci Web dostawcy. Jest to opcja domyślna.|
+|**Pobierz wstępnie wymagane składniki z witryny sieci Web dostawcy składników**|Określa, że wstępnie wymagane składniki mają być instalowane z witryny sieci Web dostawcy. Jest to domyślne ustawienie opcji.|
 |**Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**|Określa, że wstępnie wymagane składniki mają być instalowane z tej samej lokalizacji, w której znajduje się aplikacja. Spowoduje to skopiowanie wszystkich wstępnie wymaganych pakietów do lokalizacji publikowania. Aby opcja działała, składniki muszą się znajdować na komputerze deweloperskim.|
 |**Pobierz wstępnie wymagane składniki z następującej lokalizacji**|Określa, że wstępnie wymagane składniki mają być instalowane z wprowadzonej lokalizacji. Możesz użyć przycisku **Przeglądaj** , aby wybrać lokalizację.|
 
 > [!NOTE]
-> Aby uzyskać informacje na temat miejsca, w którym należy wprowadzić wymagania wstępne, zobacz [Tworzenie pakietów](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages)programu inicjującego.
+> Aby uzyskać informacje na temat miejsca, w którym należy wprowadzić wymagania wstępne, zobacz [Tworzenie pakietów programu inicjującego](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages).
 
 ## <a name="prerequisites-information"></a>Informacje o wymaganiach wstępnych
 
@@ -46,7 +46,7 @@ Wstępnie wymagane składniki, które pojawiają się w oknie dialogowym **wymag
 
 |Element|Opis|
 |-------------|-----------------|
-|**.NET Framework 3,5 z dodatkiem SP1**|Ten pakiet instaluje następujące elementy:<br /><br /> -.NET Framework wersje 2,0, 3,0 i 3,5.<br />-Obsługa wszystkich wersji .NET Framework w systemach operacyjnych 32-bitowych (x86) i 64-bitowych (x64).<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest zainstalowana z pakietem.<br />— Dodatki Service Pack dla .NET Framework 2,0 i 3,0.<br /><br /> .NET Framework 3,0 jest dołączony do systemu Windows Vista, a .NET Framework 3,5 jest dołączony do programu Visual Studio. .NET Framework 3,5 jest wymagana dla wszystkich Visual Basic i C# projektów, które są kompilowane dla 32-bitowych systemów operacyjnych i dla których platforma docelowa jest ustawiona na **.NET Framework 3,5**, a dla C# Visual Basic i projektów skompilowanych dla 64-bitowego systemy operacyjne. (IA64 nie jest obsługiwana). Należy pamiętać, że C# Visual Basic i projekty są kompilowane domyślnie dla dowolnej architektury procesora. Aby uzyskać więcej informacji, zobacz temat [Omówienie określania elementów docelowych](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wymagań wstępnych dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3,5 z dodatkiem SP1**|Ten pakiet instaluje następujące elementy:<br /><br /> -.NET Framework wersje 2,0, 3,0 i 3,5.<br />-Obsługa wszystkich wersji .NET Framework w systemach operacyjnych 32-bitowych (x86) i 64-bitowych (x64).<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest zainstalowana z pakietem.<br />— Dodatki Service Pack dla .NET Framework 2,0 i 3,0.<br /><br /> .NET Framework 3,0 jest dołączony do systemu Windows Vista, a .NET Framework 3,5 jest dołączony do programu Visual Studio. .NET Framework 3,5 jest wymagana dla wszystkich Visual Basic i C# projektów, które są kompilowane dla 32-bitowych systemów operacyjnych i dla których platforma docelowa jest ustawiona na **.NET Framework 3,5**oraz dla Visual Basic C# i projektów skompilowanych dla systemów 64-bitowych. (IA64 nie jest obsługiwana). Należy pamiętać, że C# Visual Basic i projekty są kompilowane domyślnie dla dowolnej architektury procesora. Aby uzyskać więcej informacji, zobacz temat [Omówienie określania elementów docelowych](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wymagań wstępnych dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ten pakiet instaluje .NET Framework 4. x dla platform x86 i x64.|
 |**Typy Microsoft System CLR dla SQL Server 2014 (x64 i x86)**|Ten pakiet instaluje typy Microsoft System CLR dla SQL Server 2014 dla x64 lub x86.|
 |**SQL Server 2008 R2 Express**|Ten pakiet instaluje Microsoft SQL Server 2008 R2 Express, bezpłatną wersję Microsoft SQL Server 2008 R2, idealną bazę danych dla małych aplikacji sieci Web, serwerów i komputerów. Może służyć bezpłatnie na potrzeby programowania i produkcji.|

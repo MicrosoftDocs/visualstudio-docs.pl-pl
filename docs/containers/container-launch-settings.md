@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e039e862040036f3d96729c3bdf48caafe092136
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158389"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75400865"
 ---
 # <a name="container-tools-launch-settings"></a>Ustawienia uruchamiania narzędzi kontenera
 
@@ -49,21 +49,37 @@ W folderze *Właściwości* w projekcie ASP.NET Core można znaleźć plik profi
 Ustawienie CommandName wskazuje, że ta sekcja dotyczy narzędzi kontenerów. W poniższej tabeli przedstawiono właściwości, które można ustawić w tej sekcji:
 
 ::: moniker range="vs-2017"
-|Nazwa ustawienia|Przykład|Opis|
+
+|Nazwa ustawienia|Wersja|Przykład|Opis|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.|
-|launchUrl|Visual Studio 2017|"launchUrl": "\<schemat >://\<ServiceHost >:\<serviceport >"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   \<Schemat > — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.<br>   \<> ServiceHost — zwykle zastępowane "localhost". W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.<br>   \<serviceport > — zazwyczaj jest zastępowany sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.  W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80", w zależności od tego, czy jest używany protokół SSL.|
+|launchUrl|Visual Studio 2017|"launchUrl": "schemat\<>://\<ServiceHost >:\<serviceport >"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   Schemat \<> — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.<br>   \<ServiceHost > — zwykle zastępowane "localhost". W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.<br>   \<Port > — zwykle zastępowany przez sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.  W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80", w zależności od tego, czy jest używany protokół SSL.|
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-|Nazwa ustawienia|Przykład|Opis|
-|------------|-------|-------|---------------|
-|CommandLineArgs —|"CommandLineArgs —": "--Setting wartość"|Te argumenty wiersza polecenia są używane podczas uruchamiania projektu w kontenerze.|
-|environmentVariables|"environmentVariables": {<br>    "ASPNETCORE_URLS": "https://+:443; http://+:80",<br>    "ASPNETCORE_HTTPS_PORT": "44381"<br>}|Te wartości zmiennych środowiskowych są przesyłane do procesu, gdy jest on uruchamiany w kontenerze.|
-|httpPort|"httpPort": 24051|Ten port na hoście jest mapowany na port 80 kontenera podczas uruchamiania kontenera.  Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.|
-|launchBrowser|"launchBrowser": true|Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.|
-|launchUrl|"launchUrl": "\<schemat >://\<ServiceHost >:\<serviceport >"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   \<Schemat > — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.<br>   \<> ServiceHost — zwykle zastępowane "localhost". W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.<br>   \<serviceport > — zazwyczaj jest zastępowany sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.  W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80", w zależności od tego, czy jest używany protokół SSL.|
-|sslPort|"sslPort": 44381|Ten port na hoście jest mapowany na port 443 kontenera podczas uruchamiania kontenera.  Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.|
-|useSSL|"useSSL": true|Wskazuje, czy podczas uruchamiania projektu ma być używany protokół SSL.  Jeśli nie określono useSSL, protokół SSL jest używany, gdy sslPort > 0.
+
+| Nazwa ustawienia         | Przykład                                               | Opis                                                                                                             |
+| -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| CommandLineArgs —      | "CommandLineArgs —": "--Setting wartość"              | Te argumenty wiersza polecenia są używane podczas uruchamiania projektu w kontenerze.                                     |
+| environmentVariables | "environmentVariables": {                             | Te wartości zmiennych środowiskowych są przesyłane do procesu, gdy jest on uruchamiany w kontenerze.                       |
+|                      | "ASPNETCORE_URLS": "https://+:443; http://+:80",       |                                                                                                                         |
+|                      | "ASPNETCORE_HTTPS_PORT": "44381"                      |                                                                                                                         |
+|                      | }                                                     |                                                                                                                         |
+| httpPort             | "httpPort": 24051                                     | Ten port na hoście jest mapowany na port 80 kontenera podczas uruchamiania kontenera.                                |
+|                      |                                                       | Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.                                                          |
+| launchBrowser        | "launchBrowser": true                                 | Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.                                       |
+| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | Ten adres URL jest używany podczas uruchamiania przeglądarki. Obsługiwane tokeny zastępcze dla tego ciągu to:                          |
+|                      |                                                       | - <scheme> — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.                                   |
+|                      |                                                       | - <serviceHost> — zwykle zastępowane "localhost".                                                                    |
+|                      |                                                       | W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.           |
+|                      |                                                       | - <servicePort> — zwykle zastępowane sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.                   |
+|                      |                                                       | W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80".         |
+|                      |                                                       | w zależności od tego, czy jest używany protokół SSL.                                                                                       |
+| sslPort              | "sslPort": 44381                                      | Ten port na hoście jest mapowany na port 443 kontenera podczas uruchamiania kontenera.                               |
+|                      |                                                       | Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.                                                          |
+| useSSL               | "useSSL": true                                        | Wskazuje, czy podczas uruchamiania projektu ma być używany protokół SSL. Jeśli nie określono useSSL, protokół SSL jest używany, gdy sslPort > 0. |
+
 ::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki

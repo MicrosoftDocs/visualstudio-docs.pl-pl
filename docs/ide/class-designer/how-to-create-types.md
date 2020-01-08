@@ -12,17 +12,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631752"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590179"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Instrukcje: Tworzenie typów za pomocą Projektant klas
 
@@ -58,12 +58,12 @@ Aby zaprojektować nowe C# typy dla projektów i Visual Basic, utwórz je na dia
 
     |||
     |-|-|
-    |**Dla**|**Add**|
+    |**Dla**|**Dodaj**|
     |Klasy, klasy abstrakcyjne, struktury i obiekty struct|Metody, właściwości, pola, zdarzenia, konstruktory (metoda), destruktory (metoda) i stałe, które określają typ|
     |Wyliczenia|Wartości pól, które tworzą wyliczenie|
     |Interfejsy|Metody, właściwości i zdarzenia, które tworzą interfejs|
     |Delegate|Parametry, które definiują obiekt delegowany|
-    |Moduł|Metody, właściwości, pola, zdarzenia, konstruktory (metoda) i stałe, które określają moduł|
+    |Module|Metody, właściwości, pola, zdarzenia, konstruktory (metoda) i stałe, które określają moduł|
 
      Zobacz [Tworzenie elementów członkowskich](creating-and-configuring-type-members.md#create-members).
 

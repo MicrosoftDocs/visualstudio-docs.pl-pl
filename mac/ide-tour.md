@@ -3,15 +3,15 @@ title: Visual Studio for Mac Tour
 description: Visual Studio dla komputerów Mac zapewnia zintegrowane środowisko programistyczne do kompilowania aplikacji .NET w systemie macOS, w tym ASP.NET Core witryn sieci Web i projektów platformy Xamarin dla systemów iOS, Android, Mac i Xamarin. Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984706"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405819"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Przewodnik po programie Visual Studio 2019 for Mac
 
@@ -123,7 +123,7 @@ Visual Studio dla komputerów Mac zapewnia dwa przydatne metody refaktoryzacji k
 
 ## <a name="debugging"></a>debugowanie
 
-Visual Studio dla komputerów Mac ma natywny debuger umożliwiający obsługę debugowania dla aplikacji Xamarin. iOS, Xamarin. Mac i Xamarin. Android. Visual Studio dla komputerów Mac używa debugera miękkiego mono, który jest implementowany w środowisku uruchomieniowym mono, umożliwiając IDE Debugowanie kodu zarządzanego na wszystkich platformach. Aby uzyskać dodatkowe informacje na temat debugowania, zapoznaj się z artykułem dotyczącym [debugowania](/visualstudio/mac/debugging) .
+Visual Studio dla komputerów Mac ma debugery obsługujące projekty platformy .NET Core, .NET Framework, Unity i Xamarin. Visual Studio dla komputerów Mac używa debugera .NET Core i programu mono Soft Debugger, umożliwiając IDE Debugowanie kodu zarządzanego na wszystkich platformach. Aby uzyskać dodatkowe informacje na temat debugowania, zapoznaj się z artykułem dotyczącym [debugowania](/visualstudio/mac/debugging) .
 
 Debuger zawiera rozbudowane Wizualizatory dla typów specjalnych, takich jak ciągi, kolory, adresy URL, a także rozmiary, współrzędne i krzywe Beziera.
 

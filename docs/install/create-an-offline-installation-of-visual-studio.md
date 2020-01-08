@@ -1,6 +1,6 @@
 ---
 title: Tworzenie instalacji w trybie offline
-description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy masz zawodne połączenie internetowe lub niska przepustowość.
+description: Dowiedz się, jak zainstalować program Visual Studio w trybie offline, gdy zawodne połączenie z Internetem lub niskiej przepustowości.
 ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
@@ -9,46 +9,46 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: fd47e464eec0fc9bdbd20c854432f5954f8fbcb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789983"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591492"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Tworzenie instalacji w trybie offline programu Visual Studio
 
 ::: moniker range="vs-2017"
 
-Program Visual Studio 2017 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Mimo że zalecamy wypróbowanie [Instalatora sieci Web programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads) &mdash;which jest to mały plik i pozwala na bieżące korzystanie ze wszystkich najnowszych poprawek i funkcji &mdash;we zrozumienia, że może być niemożliwe.
+Został zaprojektowany programu Visual Studio 2017 działają poprawnie w kilku różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Program Visual Studio 2019 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Mimo że zalecamy wypróbowanie [Instalatora sieci Web programu Visual Studio](https://visualstudio.microsoft.com/downloads) &mdash;which jest to mały plik i pozwala na bieżące korzystanie ze wszystkich najnowszych poprawek i funkcji &mdash;we zrozumienia, że może być niemożliwe.
+Program Visual Studio 2019 został zaprojektowany tak, aby działał prawidłowo w różnych konfiguracjach sieci i komputerów. Chociaż zaleca się, że próbujesz [Instalator sieci web programu Visual Studio](https://visualstudio.microsoft.com/downloads)&mdash;który to mały plik i pozwala na bieżąco ze wszystkimi najnowsze poprawki i funkcje&mdash;rozumiemy, że użytkownik może okazać się niemożliwe.
 
 ::: moniker-end
 
-Na przykład może istnieć zawodne połączenie internetowe lub z niską przepustowością. Jeśli tak, masz kilka opcji: możesz użyć nowej funkcji "Pobierz wszystko, a następnie zainstaluj", aby pobrać pliki przed zainstalowaniem programu, lub możesz użyć wiersza polecenia, aby utworzyć lokalną pamięć podręczną plików.
+Na przykład może być zawodne połączenia internetowego lub taki, który ma o niskiej przepustowości. Jeśli tak, możesz skorzystać z kilku opcji: można użyć nowej "Pobierz wszystko, a następnie zainstaluj" funkcję, aby pobrać pliki, przed zainstalowaniem lub wiersza polecenia można użyć do utworzenia lokalnej pamięci podręcznej plików.
 
 > [!NOTE]
-> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio w sieci stacji roboczych klienta, które są chronione przez Internet, zobacz artykuł [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md) i [Instalowanie certyfikatów wymagane dla stron instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md) .
+> Jeśli jesteś administratorem przedsiębiorstwa, który chce wykonać wdrożenie programu Visual Studio w sieci stacji roboczych klienta, które są chronione przez Internet, zapoznaj się z artykułem [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md) i [Instalowanie certyfikatów wymaganych dla stron instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md) .
 
-## <a name="use-the-download-all-then-install-feature"></a>Użyj funkcji "Pobierz wszystko, a następnie zainstaluj"
+## <a name="use-the-download-all-then-install-feature"></a>Użyj "Pobierz wszystko, a następnie zainstaluj" funkcji
 
 ::: moniker range="vs-2017"
 
 [**Nowość w wersji 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): po pobraniu Instalatora sieci Web wybierz opcję Nowy **Pobierz wszystko, a następnie zainstaluj** z Instalator programu Visual Studio. Następnie kontynuuj instalację.
 
-   ![Opcja "Pobierz wszystko, a następnie zainstaluj"](media/download-all-then-install.png)
+   !["Pobierz wszystko, a następnie zainstaluj" opcja](media/download-all-then-install.png)
 
 ::: moniker-end
 
@@ -56,49 +56,49 @@ Na przykład może istnieć zawodne połączenie internetowe lub z niską przepu
 
 Po pobraniu Instalatora sieci Web wybierz opcję Nowy **Pobierz wszystko, a następnie zainstaluj** z Instalator programu Visual Studio. Następnie kontynuuj instalację.
 
-   ![Opcja "Pobierz wszystko, a następnie zainstaluj"](media/vs-2019/download-all-then-install-from-installer.png)
+   !["Pobierz wszystko, a następnie zainstaluj" opcja](media/vs-2019/download-all-then-install-from-installer.png)
 
 ::: moniker-end
 
 Zaprojektowano funkcję "Pobierz wszystko, a następnie zainstaluj", aby można było pobrać program Visual Studio jako pojedynczą instalację dla tego samego komputera, na którym został pobrany. Dzięki temu można bezpiecznie rozłączyć się z siecią Web przed zainstalowaniem programu Visual Studio.
 
 > [!IMPORTANT]
-> Nie należy używać funkcji "Pobierz wszystko, a następnie zainstaluj", aby utworzyć pamięć podręczną w trybie offline, która ma zostać przetransferowana na inny komputer. Nie została zaprojektowana do pracy w ten sposób. <br><br>Jeśli chcesz utworzyć pamięć podręczną w trybie offline, aby zainstalować program Visual Studio na innym komputerze, zapoznaj się z sekcją [Korzystanie z wiersza polecenia w celu utworzenia lokalnej pamięci podręcznej](#use-the-command-line-to-create-a-local-cache) tej strony, aby uzyskać informacje na temat sposobu tworzenia lokalnej pamięci podręcznej lub [tworzenia instalacji sieciowej programu Visual ](../install/create-a-network-installation-of-visual-studio.md)Na stronie Studio znajduje się więcej informacji na temat tworzenia pamięci podręcznej sieci.
+> Nie należy używać funkcji "Pobierz wszystko, a następnie zainstaluj", aby utworzyć pamięć podręczną w trybie offline, która ma zostać przetransferowana na inny komputer. Nie została zaprojektowana do pracy w ten sposób. <br><br>Jeśli chcesz utworzyć pamięć podręczną w trybie offline, aby zainstalować program Visual Studio na innym komputerze, zapoznaj się z sekcją [Korzystanie z wiersza polecenia w celu utworzenia lokalnej pamięci podręcznej](#use-the-command-line-to-create-a-local-cache) na tej stronie, aby uzyskać informacje na temat sposobu tworzenia pamięci podręcznej [sieci.](../install/create-a-network-installation-of-visual-studio.md)
 
-## <a name="use-the-command-line-to-create-a-local-cache"></a>Tworzenie lokalnej pamięci podręcznej przy użyciu wiersza polecenia
+## <a name="use-the-command-line-to-create-a-local-cache"></a>Użyj wiersza polecenia, aby utworzyć lokalną pamięć podręczną
 
-Po pobraniu małego programu inicjującego należy użyć wiersza polecenia w celu utworzenia lokalnej pamięci podręcznej. Następnie użyj lokalnej pamięci podręcznej, aby zainstalować program Visual Studio. (Ten proces zastępuje pliki ISO, które były dostępne dla poprzednich wersji).
+Po pobraniu mały program inicjujący, należy użyć wiersza polecenia, aby utworzyć lokalną pamięć podręczną. Następnie należy użyć lokalnej pamięci podręcznej, aby zainstalować program Visual Studio. (Ten proces zastępuje pliki ISO, które były dostępne dla wcześniejszych wersji).
 
-Oto jak to zrobić.
+Poniżej przedstawiono sposób.
 
-### <a name="step-1---download-the-visual-studio-bootstrapper"></a>Krok 1. Pobieranie programu inicjującego programu Visual Studio
+### <a name="step-1---download-the-visual-studio-bootstrapper"></a>Krok 1 — pobieranie program inicjujący programu Visual Studio
 
-Aby ukończyć ten krok, musisz mieć połączenie z Internetem.
+Musi mieć połączenie internetowe, aby ukończyć ten krok.
 
 ::: moniker range="vs-2017"
 
 Aby uzyskać program inicjujący dla programu Visual Studio 2017, zobacz stronę pobierania [poprzednich wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) , aby uzyskać szczegółowe informacje o tym, jak to zrobić.
 
-Plik wykonywalny instalatora &mdash;or bardziej szczegółowy, &mdash;should pliku programu inicjującego jest zgodny z jedną z następujących czynności:
+Plik wykonywalny instalatora&mdash;lub być bardziej specyficzny,&mdash;pliku programu inicjującego powinien być zgodny z jedną z następujących czynności:
 
 | Wersja | Nazwa pliku |
 |-------------|-----------------------|
-|Visual Studio Community | vs_community. exe |
+|Visual Studio Community | vs_community.exe |
 |Visual Studio Professional | vs_professional.exe |
-|Visual Studio Enterprise | vs_enterprise. exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
 |Visual Studio Build Tools   | vs_buildtools. exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Zacznij od pobrania programu inicjującego Visual Studio dla wybranej wersji programu Visual Studio. Plik Instalatora &mdash;or program inicjujący &mdash;will jest zgodny z jedną z następujących czynności:
+Rozpocznij, pobierając program inicjujący Instalatora programu Visual Studio dla Twojej wybranej wersji programu Visual Studio. Plik Instalatora&mdash;lub program inicjujący&mdash;dopasować, lub być podobne do jednej z następujących czynności.
 
 | Wersja                    | Plik                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
-| Visual Studio Community    | [vs_community. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
-| Visual Studio Professional | [vs_professional. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
-| Visual Studio Enterprise   | [vs_enterprise. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 | Visual Studio Build Tools   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
@@ -106,37 +106,37 @@ Zacznij od pobrania programu inicjującego Visual Studio dla wybranej wersji pro
 >[!TIP]
 >Jeśli wcześniej pobrano plik inicjujący i chcesz sprawdzić jego wersję, poniżej przedstawiono sposób. W systemie Windows otwórz Eksploratora plików, kliknij prawym przyciskiem myszy plik programu inicjującego, wybierz polecenie **Właściwości**, wybierz kartę **szczegóły** , a następnie Wyświetl numer **wersji produktu** . Aby dopasować tę liczbę do wersji programu Visual Studio, zobacz stronę [numery kompilacji i daty wydania programu Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
-### <a name="step-2---create-a-local-install-cache"></a>Krok 2. Tworzenie lokalnej pamięci podręcznej instalacji
+### <a name="step-2---create-a-local-install-cache"></a>Krok 2 — Tworzenie instalacji lokalnej pamięci podręcznej
 
-Aby ukończyć ten krok, musisz mieć połączenie z Internetem.
+Musi mieć połączenie internetowe, aby ukończyć ten krok.
 
 > [!IMPORTANT]
-> W przypadku instalowania programu Visual Studio Community należy aktywować go w ciągu 30 dni od instalacji. Wymaga to połączenia z Internetem.
+> W przypadku instalowania programu Visual Studio Community należy aktywować go w ciągu 30 dni od instalacji. Wymaga to dostępu do Internetu.
 
-Otwórz wiersz polecenia i użyj jednego z poleceń z poniższych przykładów. Przykłady wymienione w tym artykule założono, że korzystasz z wersji Community programu Visual Studio; Dostosuj polecenie zgodnie z potrzebami tej wersji.
+Otwórz wiersz polecenia i użyj jednego z poleceń w poniższych przykładach. Przykłady, które są wymienione w tym miejscu przyjęto założenie, że korzystasz z wersji Community programu Visual Studio; Dostosuj polecenia odpowiednie dla posiadanej wersji.
 
 > [!TIP]
 > Aby zapobiec wystąpieniu błędu, upewnij się, że pełna ścieżka instalacji jest krótsza niż 80 znaków.
 
-- W przypadku programu .NET Web i .NET Desktop Development Uruchom polecenie:
+- Dla sieci web platformy .NET i programowanie aplikacji klasycznych dla platformy .NET Uruchom polecenie:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
-- W przypadku programu .NET Desktop i Office Development Uruchom polecenie:
+- .NET — aplikacje klasyczne i rozwoju pakietu Office Uruchom polecenie:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
-- W C++ przypadku aplikacji klasycznych Uruchom polecenie:
+- Do tworzenia klasycznych aplikacji języka C++ Uruchom polecenie:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- Aby utworzyć pełny układ lokalny ze wszystkimi funkcjami (trwa to długo &mdash;we ma _wiele_ funkcji!), uruchom następujące polecenie:
+- Aby utworzyć pełną układ lokalnych ze wszystkich funkcji (spowoduje to przejście przez długi czas&mdash;mamy _wiele_ funkcji!), uruchom:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --lang en-US
@@ -156,12 +156,12 @@ Otwórz wiersz polecenia i użyj jednego z poleceń z poniższych przykładów. 
 
 ::: moniker-end
 
-Jeśli chcesz zainstalować język inny niż angielski, Zmień wartość `en-US` na ustawienia regionalne z listy ustawień regionalnych [języka](#list-of-language-locales). Następnie użyj [listy dostępnych składników i obciążeń](workload-and-component-ids.md) , aby dodatkowo dostosować pamięć podręczną instalacji.
+Jeśli chcesz zainstalować język inny niż angielski, zmień `en-US` regionalne z [listę ustawień regionalnych języka](#list-of-language-locales). Następnie należy użyć [listą składników i dostępności obciążeń](workload-and-component-ids.md) dodatkowo dostosować pamięci podręcznej instalacji.
 
-### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Krok 3. Instalowanie programu Visual Studio z lokalnej pamięci podręcznej
+### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Krok 3 — Instalowanie programu Visual Studio z lokalnej pamięci podręcznej
 
 > [!TIP]
-> Po uruchomieniu z lokalnej pamięci podręcznej instalacji Instalator używa lokalnych wersji każdego z tych plików. Ale w przypadku wybrania składników podczas instalacji, które nie znajdują się w pamięci podręcznej, Instalator próbuje pobrać je z Internetu.
+> Po uruchomieniu z pamięci podręcznej lokalnej instalacji, Instalator używa lokalnej wersji każdej z tych plików. Jednak jeśli zostanie wybrana podczas instalacji składników, które nie znajdują się w pamięci podręcznej, Instalator podejmuje próbę pobrania ich z Internetu.
 
 ::: moniker range="vs-2019"
 > [!IMPORTANT]
@@ -169,7 +169,7 @@ Jeśli chcesz zainstalować język inny niż angielski, Zmień wartość `en-US`
 >
 ::: moniker-end
 
-Aby upewnić się, że instalujesz tylko pobrane pliki, Użyj tych samych opcji wiersza polecenia, które zostały użyte do utworzenia pamięci podręcznej układu. Na przykład jeśli utworzono pamięć podręczną układu przy użyciu następującego polecenia:
+Aby upewnić się, instalowania tylko te pliki, które zostały wcześniej pobrane, należy użyć tych samych opcji wiersza polecenia, które zostało użyte do utworzenia pamięci podręcznej układu. Na przykład, jeśli utworzono układ pamięci podręcznej za pomocą następującego polecenia:
 
 ```cmd
 vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
@@ -184,24 +184,24 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 Aby uzyskać więcej przykładów użycia [parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md), zobacz [przykłady parametrów wiersza polecenia dla strony instalacji programu Visual Studio](command-line-parameter-examples.md) . 
 
 > [!NOTE]
-> Jeśli zostanie wyświetlony komunikat o błędzie z nieprawidłowym podpisem, należy zainstalować zaktualizowane certyfikaty. Otwórz folder certyfikaty w pamięci podręcznej offline. Kliknij dwukrotnie każdy plik certyfikatu, a następnie kliknij przycisk za pomocą kreatora Menedżera certyfikatów. Jeśli zostanie wyświetlony monit o podanie hasła, pozostaw to pole puste.
+> Jeśli wystąpi błąd, że podpis jest nieprawidłowy, należy zainstalować zaktualizowane certyfikaty. Otwórz folder certyfikatów w pamięci podręcznej w trybie offline. Kliknij dwukrotnie plik certyfikatu, a następnie kliknij za pomocą Kreatora Menedżera certyfikatów. Jeśli zostanie wyświetlony monit o podanie hasła, pozostaw to pole puste.
 
-### <a name="list-of-language-locales"></a>Lista ustawień regionalnych języka
+### <a name="list-of-language-locales"></a>Listę ustawień regionalnych języka
 
-| **Język — ustawienia regionalne** | **Język** |
+| **Ustawienia regionalne na język** | **Język** |
 | ----------------------- | --------------- |
-| CS — CZ | czeski |
-| de-DE | niemiecki |
-| pl-US | angielski |
+| cs-CZ | czeski |
+| de-DE. | niemiecki |
+| pl-pl | angielski |
 | es-ES | Hiszpański |
-| fr — FR | francuski |
-| IT | Włoski |
+| fr-FR | francuski |
+| IT-IT | Włoski |
 | ja-JP | japoński |
-| Ko — KR | koreański |
+| ko-KR | koreański |
 | pl-PL | polski |
 | pt-BR | Portugalski (Brazylia) |
-| ru — RU | rosyjski |
-| TR-TR | turecki |
+| ru-RU | rosyjski |
+| tr-TR | turecki |
 | zh-CN | Chiński (uproszczony) |
 | zh-TW | Chiński (tradycyjny) |
 
@@ -211,6 +211,6 @@ Aby uzyskać więcej przykładów użycia [parametrów wiersza polecenia](use-co
 
 - [Tworzenie instalacji sieciowej programu Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
-- [Zainstaluj certyfikaty wymagane do instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
+- [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
 - [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

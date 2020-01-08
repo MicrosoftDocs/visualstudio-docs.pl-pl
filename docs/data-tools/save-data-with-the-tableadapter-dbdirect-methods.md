@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641158"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586214"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 
-Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instrukcji SQL bezpośrednio w bazie danych przy użyciu metod DBDirect klasy TableAdapter. Metody DBDirect TableAdapter zapewniają poziom kontroli nad aktualizacjami bazy danych. Można ich używać do uruchamiania określonych instrukcji SQL i procedur składowanych przez wywołanie poszczególnych `Insert`, `Update` i `Delete` metod, w zależności od potrzeb aplikacji (w przeciwieństwie do przeciążonej metody `Update`, która wykonuje aktualizację, Wstaw i Usuń instrukcje wszystkie w jednym wywołaniu).
+Ten Instruktaż zawiera szczegółowe instrukcje dotyczące uruchamiania instrukcji SQL bezpośrednio w bazie danych przy użyciu metod DBDirect klasy TableAdapter. Metody DBDirect TableAdapter zapewniają poziom kontroli nad aktualizacjami bazy danych. Można ich używać do uruchamiania określonych instrukcji SQL i procedur składowanych przez wywołanie poszczególnych `Insert`, `Update`i `Delete` metod, w zależności od potrzeb aplikacji (w przeciwieństwie do przeciążonej metody `Update`, która wykonuje wszystkie instrukcje UPDATE, INSERT i DELETE w jednym wywołaniu).
 
 W tym instruktażu dowiesz się, jak:
 
@@ -33,7 +33,7 @@ W tym instruktażu dowiesz się, jak:
 
 - Utwórz i skonfiguruj zestaw danych za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
-- Wybierz kontrolkę, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Wybierz kontrolkę, która ma zostać utworzona w formularzu podczas przeciągania elementów z okna **źródła danych** . Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Utwórz formularz powiązany z danymi, przeciągając elementy z okna **źródła danych** na formularz.
 
@@ -53,7 +53,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -77,7 +77,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
 
-1. W menu **dane** wybierz pozycję **Pokaż źródła danych**.
+1. Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
 
    Zostanie otwarte okno **źródła danych** .
 
@@ -89,7 +89,7 @@ Ten krok powoduje użycie **Kreatora konfiguracji źródła danych** w celu utwo
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-         —lub—
+         lub
 
     - Wybierz pozycję **nowe połączenie** , aby uruchomić okno dialogowe **Dodawanie/modyfikowanie połączenia** .
 
@@ -109,7 +109,7 @@ Utwórz formanty powiązane z danymi, przeciągając elementy z okna **źródła
 
 Aby utworzyć formanty powiązane z danymi w formularzu systemu Windows, przeciągnij węzeł **region** główny z okna **źródła danych** na formularz.
 
-Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Aby dodać przyciski, które będą wywoływały poszczególne metody TableAdapter DBDirect
 
@@ -119,7 +119,7 @@ Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:Syst
 
     |Nazwa|Tekst|
     |----------|----------|
-    |`InsertButton`|**Wstawienia**|
+    |`InsertButton`|**Wstaw**|
     |`UpdateButton`|**Aktualizacja**|
     |`DeleteButton`|**Delete**|
 
@@ -150,7 +150,7 @@ Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:Syst
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 - Wybierz klawisz **F5** , aby uruchomić aplikację.
 

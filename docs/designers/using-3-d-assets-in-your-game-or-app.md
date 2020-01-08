@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888504"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589828"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Instrukcje: korzystanie z zasobów 3D w grach lub aplikacjach
 
@@ -34,7 +34,7 @@ Aby można było wdrożyć zasoby 3W w ramach kompilacji, program Visual Studio 
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Aby dodać dostosowania kompilacji do projektu
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **kompilacja zależności**  > **dostosowania kompilacji**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz pozycję **kompilacja zależności** > **dostosowania kompilacji**.
 
    Zostanie wyświetlone okno dialogowe **pliki dostosowania kompilacji wizualizacji C++**  .
 
@@ -43,10 +43,10 @@ Aby można było wdrożyć zasoby 3W w ramach kompilacji, program Visual Studio 
     |Typ elementu zawartości|Nazwa dostosowania kompilacji|
     |----------------| - |
     |Tekstury i obrazy|**ImageContentTask (. targets,. props)**|
-    |Modele 3W|**MeshContentTask (. targets,. props)**|
+    |Modele 3D|**MeshContentTask (. targets,. props)**|
     |Programy do cieniowania|**ShaderGraphContentTask (. targets,. props)**|
 
-3. Wybierz przycisk **OK** .
+3. Wybierz **OK** przycisku.
 
 ## <a name="include-assets-in-your-build"></a>Uwzględnij zasoby w kompilacji
 
@@ -65,13 +65,13 @@ Teraz, gdy Twój projekt wie o różnych typach zasobów 3W, które mają być u
     > [!IMPORTANT]
     > Domyślnie program Visual Studio zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w program Visual Studio. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli 3D i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
 
-4. Wybierz przycisk **OK** .
+4. Wybierz **OK** przycisku.
 
 Poniżej przedstawiono trzy typy elementów potoku zawartości i skojarzone z nimi typy plików źródłowych i wyjściowych.
 
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|
 |---------------| - | - |
-|**Potok zawartości obrazów**|Portable Network Graphics ( *. png*)<br /><br /> JPEG ( *. jpg*, *. jpeg*, *. jpe*, *. JFIF*)<br /><br /> Bezpośrednie rysowanie powierzchni ( *. DDS*)<br /><br /> Graphics Interchange Format ( *. gif*)<br /><br /> Mapa bitowa ( *. bmp*, *. dib*)<br /><br /> Tagged Image File Format ( *. tif*, *. TIFF*)<br /><br /> Targa ( *. tga*)|Powierzchnia DirectDraw ( *. DDS*)|
+|**Potok zawartości obrazów**|Portable Network Graphics ( *. png*)<br /><br /> JPEG ( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Bezpośrednie rysowanie powierzchni ( *. DDS*)<br /><br /> Graphics Interchange Format ( *. gif*)<br /><br /> Mapa bitowa ( *. bmp*, *. dib*)<br /><br /> Tagged Image File Format ( *. tif*, *. TIFF*)<br /><br /> Targa ( *. tga*)|Powierzchnia DirectDraw ( *. DDS*)|
 |**Potok zawartości siatki**|Plik FBX Interchange ( *. FBX*)<br /><br /> Plik DAE formacie Collada ( *. DAE*)<br /><br /> Plik OBJ plik Wavefront ( *. obj*)|plik siatki 3D ( *. marketingu*)|
 |**Potok zawartości programu do cieniowania**|Graf cieniowania wizualnego ( *. dgsl*)|Skompilowane dane wyjściowe modułu cieniującego ( *. CSO*)|
 
@@ -89,7 +89,7 @@ Można ustawić właściwości potoku zawartości dla każdego pliku zasobów, a
 
 3. W obszarze **Właściwości konfiguracji**wybierz węzeł potoku zawartości (na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu), a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak**.
 
-4. Wybierz przycisk **OK** .
+4. Wybierz **OK** przycisku.
 
 ### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazu
 
@@ -97,7 +97,7 @@ Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów teks
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **bez kompresji**<br />-   **kompresję BC1_UNORM**<br />-   **kompresję BC1_UNORM_SRGB**<br />-   **kompresję BC2_UNORM**<br />-   **kompresję BC2_UNORM_SRGB**<br />-   **kompresję BC3_UNORM**<br />-   **kompresję BC3_UNORM_SRGB**<br />-   **kompresję BC4_UNORM**<br />-   **kompresję BC4_SNORM**<br />-   **kompresję BC5_UNORM**<br />-   **kompresję BC5_SNORM**<br />-   **kompresję BC6H_UF16**<br />-   **kompresję BC6H_SF16**<br />-   **kompresję BC7_UNORM**<br />-   **kompresję BC7_UNORM_SRGB**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
+|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje:<br /><br /> -   **bez kompresji**<br />-   **BC1_UNORM kompresji**<br />-   **BC1_UNORM_SRGB kompresji**<br />-   **BC2_UNORM kompresji**<br />-   **BC2_UNORM_SRGB kompresji**<br />-   **BC3_UNORM kompresji**<br />-   **BC3_UNORM_SRGB kompresji**<br />-   **BC4_UNORM kompresji**<br />-   **BC4_SNORM kompresji**<br />-   **BC5_UNORM kompresji**<br />-   **BC5_SNORM kompresji**<br />-   **BC6H_UF16 kompresji**<br />-   **BC6H_SF16 kompresji**<br />-   **BC7_UNORM kompresji**<br />-   **BC7_UNORM_SRGB kompresji**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
 |**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
 |**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|

@@ -2,17 +2,17 @@
 title: Tryb mapy paska przewijania i tryb paska
 ms.date: 09/25/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 997f44fede7b31fe44b1e2ea28186ad52d39f443
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22436c221813ec4c3701d208fc74a96b403fff9c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656581"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591401"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Instrukcje: Dostosowywanie paska przewijania
 
@@ -22,7 +22,7 @@ Podczas pracy z długimi plikami kodu może być trudno śledzić, gdzie wszystk
 
 Możesz wybrać, czy pasek przewijania ma wyświetlać adnotacje, takie jak zmiany kodu, punkty przerwania, zakładki, błędy i położenie karetki.
 
-   1. Otwórz stronę opcji **paski przewijania** , wybierając pozycję **narzędzia**  > **Opcje**  > **Edytor tekstu**  > **wszystkie języki**  > **paski przewijania**.
+   1. Otwórz stronę opcji **paski przewijania** , wybierając pozycję **narzędzia** > **Opcje** > **Edytor tekstu** > **wszystkie języki** > **paski przewijania**.
 
    2. Wybierz pozycję **Pokaż adnotacje na pionowym pasku przewijania**, a następnie wybierz Adnotacje, które chcesz zobaczyć. Dostępne adnotacje to:
 

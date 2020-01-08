@@ -7,39 +7,39 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645826"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591011"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Instruktaż: Ręczne tworzenie szablonów sieci Web
+# <a name="how-to-manually-create-web-templates"></a>Porady: ręczne tworzenie szablonów sieci web
 
-Tworzenie szablonu sieci Web różni się od tworzenia innych rodzajów szablonów. Ponieważ szablony projektu sieci Web pojawiają się w oknie dialogowym **Dodaj nową witrynę sieci Web** , a elementy projektu sieci Web są klasyfikowane według języka programowania, plik *vstemplate* musi określać szablon jako szablon sieci Web i identyfikować język programowania.
+Tworzenie szablonu sieci web jest inny niż tworzenie innych rodzajów szablonów. Ponieważ szablony projektów internetowych są wyświetlane w **Dodaj nową witrynę sieci Web** okno dialogowe, a projekt sieci web, które elementy są pogrupowane według języka programowania, *vstemplate* pliku należy określić szablon jako szablon sieci web i zidentyfikować języka programowania.
 
 > [!NOTE]
-> Szablony sieci Web muszą zawierać pusty plik *. webproj* i musi być przywoływany w pliku *vstemplate* w atrybucie `File` elementu `Project`. Chociaż projekty sieci Web nie wymagają pliku projektu *. proj* , należy utworzyć ten plik szczątkowy, aby szablon sieci Web działał poprawnie.
+> Szablony sieci Web mogą zawierać pustą *.webproj* pliku który musi odwoływać się do *vstemplate* w pliku `File` atrybutu `Project` elementu. Chociaż projekty sieci web nie wymagają *.proj* plik projektu jest niezbędne do utworzenia tego pliku klasy zastępczej dla szablonu sieci web, aby działać poprawnie.
 
-## <a name="to-manually-create-a-web-template"></a>Aby ręcznie utworzyć szablon sieci Web
+## <a name="to-manually-create-a-web-template"></a>Aby ręcznie utworzyć szablon sieci web
 
-1. Utwórz projekt sieci Web.
+1. Utwórz projekt sieci web.
 
-2. Zmodyfikuj lub Usuń pliki w projekcie lub Dodaj nowe pliki do projektu.
+2. Modyfikować lub usuwać pliki w projekcie lub dodać nowe pliki do projektu.
 
-3. Utwórz plik XML i Zapisz go z rozszerzeniem nazwy pliku *vstemplate* w tym samym katalogu, w którym znajduje się projekt. Nie należy dodawać go do projektu w programie Visual Studio.
+3. Utwórz plik XML i zapisz go z *vstemplate* plikiem, w tym samym katalogu co projekt. Nie należy dodawać go do projektu w programie Visual Studio.
 
-4. Edytuj plik XML *vstemplate* , aby dostarczyć metadane szablonu projektu. Aby uzyskać więcej informacji, zobacz [Poniższy przykład](#example).
+4. Edytuj *vstemplate* plik XML do udostępnienia metadanych szablonu projektu. Aby uzyskać więcej informacji, zobacz [poniższym przykładzie](#example).
 
-5. Znajdź `ProjectType` element w pliku *vstemplate* i ustaw wartość tekstową na `Web`.
+5. Znajdź `ProjectType` element *vstemplate* pliku i ustaw wartość tekstową na `Web`.
 
-6. Po elemencie `ProjectType` Dodaj element `ProjectSubType` i ustaw wartość tekstową na język programowania szablonu. Język programowania może być jedną z następujących wartości:
+6. Następujące `ProjectType` elementu Dodawanie `ProjectSubType` element i ustaw wartość tekstowa do język programowania szablonu. Język programowania może być jednym z następujących wartości:
 
    - CSharp
-   - VisualBasic
+   - Języka Visual Basic
 
      Na przykład:
 
@@ -52,13 +52,13 @@ Tworzenie szablonu sieci Web różni się od tworzenia innych rodzajów szablon�
      </TemplateData>
      ```
 
-7. Wybierz pliki z szablonu (w tym plik *vstemplate* ), kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz polecenie **Wyślij do**  > **skompresowanego folderu (zip)** . Pliki są kompresowane do pliku *zip* .
+7. Wybierz pliki do szablonu (w tym *vstemplate* pliku), kliknij prawym przyciskiem myszy zaznaczenie, a wybierz **wysyłać** > **skompresowany folder (zip)** . Pliki są kompresowane do *zip* pliku.
 
-8. Umieść plik *zip* Template w katalogu szablonów projektu programu Visual Studio. Domyślnie ten katalog to *%USERPROFILE%\Documents\Visual Studio \<Version \> \projecttemplates*.
+8. Umieść *zip* pliku szablonu w katalogu szablonu projektu programu Visual Studio. Domyślnie ten katalog jest *%USERPROFILE%\Documents\Visual Studio \<wersji\>\ProjectTemplates*.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia podstawowy plik *vstemplate* szablonu projektu sieci Web:
+Poniższy przykład przedstawia podstawowe *vstemplate* w pliku szablonu projektu sieci web:
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Project"
@@ -84,4 +84,4 @@ Poniższy przykład przedstawia podstawowy plik *vstemplate* szablonu projektu s
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwołanie do schematu szablonu programu Visual Studio (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)
+- [Visual Studio odwołanie do schematu szablonu (rozszerzalność)](../extensibility/visual-studio-template-schema-reference.md)

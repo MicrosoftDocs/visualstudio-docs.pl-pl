@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777760"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587150"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 
@@ -22,7 +22,7 @@ Korzystając z platforma uniwersalna systemu Windows i naszego systemu Windows C
 
 ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Uruchom aplikację na telefonie z systemem Windows 10, Windows 10 Desktop lub Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem pojedynczego, ujednoliconego rdzeń systemu Windows 10 jeden pakiet aplikacji może być uruchamiany na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestaw SDK rozszerzenia dla urządzeń przenośnych obsługuje naciśnięcie przycisku Wstecz w systemie Windows Phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
+Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. Jest to ten sam pakiet aplikacji. Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Kilka platform zawiera zestawy SDK rozszerzeń, które można dodać do aplikacji, aby korzystać z zachowań specyficznych dla platformy. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz się do zestawu SDK rozszerzenia w projekcie, po prostu Dodaj testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. Oznacza to, że możesz mieć ten sam pakiet aplikacji dla każdej platformy.
 
 **Co to jest rdzeń systemu Windows?**
 
@@ -42,7 +42,7 @@ Poniżej znajduje się lista programów, które są potrzebne:
 
 - [System Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Program Visual Studio 2017 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/productinfo/vs2017-system-requirements-vs) [platformy](/visualstudio/productinfo/vs2017-compatibility-vs) programu Visual Studio i system.
 
-- [Program Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
+- Program [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
 
      ![Obciążenie platformy UWP](media/uwp_workload.png)
 
@@ -52,7 +52,7 @@ Poniżej znajduje się lista programów, które są potrzebne:
 
 - [System Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). Program Visual Studio 2019 obsługuje programowanie platformy UWP tylko w systemie Windows 10. Aby uzyskać więcej informacji, zobacz [wymagania systemowe dotyczące](/visualstudio/releases/2019/system-requirements/) [platformy](/visualstudio/releases/2019/compatibility/) programu Visual Studio i system.
 
-- [Program Visual Studio](https://visualstudio.microsoft.com/downloads). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
+- Program [Visual Studio](https://visualstudio.microsoft.com/downloads). Wymagane jest również opcjonalne platforma uniwersalna systemu Windows obciążenie pracą programistyczną.
 
      ![Obciążenie platformy UWP](media/uwp_workload.png)
 

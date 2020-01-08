@@ -11,17 +11,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28ff14f10cd6ad5612551bb65b7b17f0280358f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639601"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586123"
 ---
 # <a name="troubleshoot-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 
@@ -29,7 +29,7 @@ W tym temacie wymieniono typowe problemy, które mogą wystąpić podczas pracy 
 
 ## <a name="error-returning-data-from-a-service"></a>Błąd podczas zwracania danych z usługi
 
-Po powrocie `DataSet` lub `DataTable` z usługi może zostać wyświetlony wyjątek "maksymalny przydział rozmiaru dla komunikatów przychodzących został przekroczony". Domyślnie właściwość `MaxReceivedMessageSize` niektórych powiązań jest ustawiona na stosunkowo niewielką wartość, aby ograniczyć narażenie na ataki typu "odmowa usługi". Można zwiększyć tę wartość, aby zapobiec wyjątku. Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Po powrocie `DataSet` lub `DataTable` z usługi może zostać wyświetlony wyjątek "maksymalny przydział rozmiaru dla komunikatów przychodzących został przekroczony". Domyślnie właściwość `MaxReceivedMessageSize` niektórych powiązań jest ustawiona na stosunkowo niewielką wartość, aby ograniczyć narażenie na ataki typu "odmowa usługi". Można zwiększyć tę wartość, aby zapobiec wyjątku. Aby uzyskać więcej informacji, zobacz temat <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
 Aby naprawić ten błąd:
 
@@ -74,7 +74,7 @@ Jeśli projekt usługi zostanie usunięty z rozwiązania, ta jawna zależność 
 
 Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi:
 
-1. W menu **Narzędzia** kliknij pozycję **Opcje**.
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.
 
 2. W oknie dialogowym **Opcje** rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
 
@@ -82,7 +82,7 @@ Aby naprawić ten błąd, należy ręcznie skompilować ponownie projekt usługi
 
 4. Załaduj projekt usługi WCF.
 
-5. W oknie dialogowym **Configuration Manager** Ustaw **aktywną konfigurację rozwiązania** na **debugowanie**. Aby uzyskać więcej informacji, zobacz [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md).
+5. W oknie dialogowym **Configuration Manager** Ustaw **aktywną konfigurację rozwiązania** na **debugowanie**. Aby uzyskać więcej informacji, zobacz [porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md).
 
 6. W **Eksplorator rozwiązań**wybierz projekt usługi WCF.
 

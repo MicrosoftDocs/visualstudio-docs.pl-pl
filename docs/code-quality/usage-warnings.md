@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649057"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587189"
 ---
 # <a name="usage-warnings"></a>Wykorzystanie — Ostrzeżenia
 
@@ -31,7 +31,7 @@ Ostrzeżenia dotyczące użycia obsługują poprawne użycie platformy .NET.
 |----------|-----------------|
 |[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801.md)|Podpis metody zawiera parametr, który nie jest używany w jej treści.|
 |[CA1806: Nie ignoruj wyników metod](../code-quality/ca1806.md)|Nowy obiekt jest tworzony, ale nigdy nie jest używany; albo metoda, która tworzy i zwraca nowy ciąg, jest wywoływana, ale nowy ciąg nigdy nie jest używany; albo metody COM lub P/Invoke zwracają HRESULT lub kod błędu, który nigdy nie jest używany.|
-|[CA1816: Wywołaj poprawnie metodę GC.SuppressFinalize](../code-quality/ca1816.md)|Metoda, która jest implementacją Dispose, nie wywołuje GC. SuppressFinalize lub metoda, która nie jest implementacją operacji Dispose. SuppressFinalize lub metoda wywołuje metodę GC. SuppressFinalize i przekazuje coś innego niż to (mi w Visual Basic).|
+|[CA1816: Wywołaj poprawnie metodę GC.SuppressFinalize](../code-quality/ca1816.md)|Metoda, która jest implementacją Dispose, nie wywołuje GC. SuppressFinalize; lub metody, która nie jest implementacją Dispose, wywołuje GC. SuppressFinalize; lub metoda wywołuje metodę GC. SuppressFinalize i przekazuje na coś innego niż to (Me w języku Visual Basic).|
 |[CA2200: Zgłoś ponownie wyjątek, aby zachować szczegóły stosu](../code-quality/ca2200.md)|Wyjątek jest zgłaszany ponownie i jest on jawnie określony w instrukcji „throw”. Jeśli wyjątek jest zgłaszany ponownie przez określenie wyjątku w instrukcji „throw”, lista wywołań metod między pierwotną metodą, która zgłosiła wyjątek, a bieżącą zostanie utracona.|
 |[CA2201: Nie wywołuj zastrzeżonych typów wyjątku](../code-quality/ca2201.md)|Powoduje to, że oryginalny błąd trudno wykryć i debugować.|
 |[CA2202: Nie likwiduj obiektów wiele razy](../code-quality/ca2202.md)|Implementacja metody zawiera ścieżki kodu, które powodują wielokrotne wywołania do System.IDisposable.Dispose lub równoważnika (na przykład użycie metody Close() na niektórych typach) dla tego samego obiektu.|

@@ -1,5 +1,5 @@
 ---
-title: Warning — zadanie | Dokumentacja firmy Microsoft
+title: Zadanie ostrzegawcze | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,40 +13,40 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779094"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567141"
 ---
 # <a name="warning-task"></a>Warning — Zadanie
-Dzienniki ostrzeżenie podczas kompilacji w oparciu ocenianą instrukcji warunkowej.
+Rejestruje ostrzeżenie podczas kompilacji oparte na obliczanej instrukcji warunkowej.
 
 ## <a name="parameters"></a>Parametry
- W poniższej tabeli opisano parametry `Warning` zadania.
+ W poniższej tabeli opisano parametry zadania `Warning`.
 
 | Parametr | Opis |
 |---------------| - |
-| `Code` | Opcjonalnie `String` parametru.<br /><br /> Kod ostrzegawczy do skojarzenia z ostrzeżeniem. |
-| `File` | Opcjonalnie `String` parametru.<br /><br /> Określa odpowiedni plik, jeśli istnieje. Jeśli plik nie zostanie podana, zostanie użyty plik zawierający ostrzeżenie zadanie. |
-| `HelpKeyword` | Opcjonalnie `String` parametru.<br /><br /> Słowo kluczowe pomocy do skojarzenia z ostrzeżeniem. |
-| `Text` | Opcjonalnie `String` parametru.<br /><br /> Tekst ostrzeżenia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestruje Jeśli `Condition` daje w wyniku parametru `true`. |
+| `Code` | Opcjonalny parametr `String`.<br /><br /> Kod ostrzeżenia do skojarzenia z ostrzeżeniem. |
+| `File` | Opcjonalny parametr `String`.<br /><br /> Określa odpowiedni plik, jeśli istnieje. Jeśli plik nie zostanie podany, zostanie użyty plik zawierający zadanie ostrzegawcze. |
+| `HelpKeyword` | Opcjonalny parametr `String`.<br /><br /> Słowo kluczowe pomocy do skojarzenia z ostrzeżeniem. |
+| `Text` | Opcjonalny parametr `String`.<br /><br /> Tekst ostrzegawczy, który [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dzienniki, jeśli parametr `Condition` zostanie oszacowany jako `true`. |
 
 ## <a name="remarks"></a>Uwagi
- `Warning` Zadanie pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] krok kompilacji projektów pod kątem obecności wymaganej konfiguracji lub właściwości przed przejściem dalej.
+ Zadanie `Warning` pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty sprawdzają obecność wymaganej konfiguracji lub właściwości przed przejściem do kolejnego kroku kompilacji.
 
- Jeśli `Condition` parametru `Warning` daje w wyniku zadania `true`, wartość `Text` parametru jest rejestrowana i kontynuuje wykonywanie kompilacji. Jeśli `Condition` parametr nie istnieje, tekst ostrzeżenia jest rejestrowane. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [dzienniki kompilacji Uzyskaj](../msbuild/obtaining-build-logs-with-msbuild.md).
+ Jeśli parametr `Condition` zadania `Warning` zostanie oszacowany `true`, wartość parametru `Text` jest rejestrowana i kompilacja będzie nadal wykonywana. Jeśli parametr `Condition` nie istnieje, jest rejestrowany tekst ostrzegawczy. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [pobieranie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu sprawdza właściwości, które są ustawiane w wierszu polecenia. W przypadku nie ustawiono właściwości projektu wywołuje zdarzenie ostrzegawcze i rejestruje wartość `Text` parametru `Warning` zadania.
+ Poniższy przykład kodu sprawdza właściwości, które są ustawiane w wierszu polecenia. Jeśli nie ma ustawionych właściwości, projekt zgłasza zdarzenie ostrzeżenia i rejestruje wartość parametru `Text` zadania `Warning`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

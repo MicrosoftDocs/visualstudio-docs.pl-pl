@@ -1,75 +1,75 @@
 ---
-title: Dodaj parametry kontekstu do ustawienia przebiegu testu obciążenia
+title: Dodawanie parametrów kontekstu do ustawień uruchomienia testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664860"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584481"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Instrukcje: Dodawanie parametrów kontekstu do ustawienia przebiegu testu obciążenia
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele.
+Po utworzeniu testu obciążenia przy użyciu **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Aby zapoznać się z pełną listą właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
+> Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
 
-Można utworzyć parametry kontekstu do użycia w ustawieniu przebiegu testu obciążenia przy użyciu Edytor testu obciążeniowego. Parametry kontekstu umożliwiają Sparametryzuj ciągu.
+Można utworzyć parametrów kontekstu do użycia w teście obciążeniowym, ustawienia uruchamiania za pomocą edytora testu obciążenia. Parametry kontekstu umożliwiają definiowanie parametrów ciągu.
 
-Załóżmy, że test obciążenia zawiera test wydajności sieci Web, który używa już sparametryzowanego adresu URL serwera sieci Web przy użyciu parametru kontekstowego. Można dodać parametr kontekstowy do ustawienia przebiegu testu obciążenia, który używa tej samej wartości nazwy co ta, która jest używana w teście wydajności sieci Web. Spowoduje to zamapowanie testu wydajności sieci Web na inny serwer podczas uruchamiania testu obciążenia. Na przykład jeśli test obciążenia zawiera test wydajności sieci Web, który używa parametru kontekstu o nazwie webserwer1 dla nazwy serwera sieci Web w adresie URL. Jeśli następnie określisz parametr kontekstowy w ustawieniu przebiegu testu obciążenia o nazwie webserwer1, test obciążenia użyje parametru kontekstowego, który został przypisany w ustawieniu przebiegu testu obciążenia. Aby wyjaśnić, jeśli test wydajności sieci Web w teście obciążenia używa tej samej nazwy parametru kontekstu jak parametr kontekstowy w teście obciążenia, parametr kontekstowy w teście obciążenia przesłoni parametr kontekstowy, który jest używany w teście wydajności sieci Web.
+Załóżmy, że test obciążenia zawiera test wydajności sieci web, który używa już sparametryzowane internetowy adres URL serwera za pomocą parametru kontekstu. Możesz dodać parametr kontekstu do testu obciążenia uruchomieniowy, który używa tej samej wartości Nazwa, która jest używana podczas testów wydajności sieci web. Będzie to mapować testu wydajności sieci web na innym serwerze, po uruchomieniu testu obciążenia. Na przykład jeśli test obciążenia zawiera test wydajności sieci web, który używa parametru kontekstu o nazwie Serwer_sieci_web_1 dla nazwy serwera sieci web w adresie URL. Jeśli następnie możesz określić parametr kontekstowy w teście obciążenia uruchomieniowy, który jest również określany Serwer_sieci_web_1, test obciążeniowy użyje parametru kontekstowego, który można przypisać w uruchomieniowych testu obciążeniowego. Wyjaśnienie, jeśli test wydajności sieci web w teście obciążeniowym używa tego samego Nazwa parametru kontekstu jako parametru kontekstu w teście obciążeniowym, parametru kontekstowego w teście obciążenia spowoduje zastąpienie parametru kontekstowego, który jest używany podczas testu wydajności sieci web.
 
 > [!WARNING]
-> Należy zachować ostrożność, aby nie przesłonić parametru kontekstowego testu wydajności sieci Web w przypadku używania parametrów kontekstu w ustawieniach uruchamiania. Należy unikać używania tych samych nazw parametrów kontekstu, chyba że jest to celowe.
+> Uważaj, aby nie przypadkowo zastąpienia parametru kontekstu testu wydajności sieci web, korzystając z parametrów kontekstu w ustawieniach testu. Należy unikać używania tych samych nazw parametrów kontekstu, chyba że w tym celowo.
 
-Jeśli przypiszesz wartość parametru kontekstowego webserwer1 do `http://CorporateStagingWebServer`, możesz użyć `WebServer1` w trakcie testu obciążenia, a tym samym łatwo zmienić wartość na inny serwer sieci Web w dowolnym momencie.
+Jeśli przypisujesz wartość parametru kontekstowego serwer_sieci_Web_1 do `http://CorporateStagingWebServer`, można użyć `WebServer1` w całym obciążenia testu i dzięki temu łatwo zmienić wartości do różnych serwerów sieci web w dowolnym momencie.
 
-Ponadto, przypisując różne wartości do parametru kontekstowego za pomocą tej samej nazwy w różnych ustawieniach przebiegu testu obciążenia, można uruchomić test obciążenia przy użyciu różnych środowisk:
+Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej samej nazwie w uruchomieniowych testu obciążeniowego różnych, można uruchomić testu obciążeniowego za pomocą różnych środowiskach:
 
-- Ustawienie uruchamiania serwera sieci Web w firmie: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
+- Firmowy serwer sieci Web przemieszczania uruchomieniowy: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
 
-- Ustawienie uruchomieniowe serwera sieci Web firmowego: parametr kontekstu o nazwie `WebServer1=http://CorporateProductionWebServer`
+- Firmowy serwer sieci Web w środowisku produkcyjnym uruchomieniowy: parametr kontekstu, który nosi nazwę `WebServer1=http://CorporateProductionWebServer`
 
-  **Zmiana ustawienia uruchomieniowego z wiersza polecenia**
+  **Zmienianie ustawień wykonywania w wierszu polecenia**
 
-  Jeśli chcesz użyć różnych parametrów uruchomieniowych z wiersza polecenia, aby skorzystać z strategii parametru kontekstowego, użyj następujących poleceń:
+  Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następujących poleceń:
 
-  **Ustaw test. UseRunSetting = CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
-  lub
+  \- i -
 
-  **MSTest/testcontainer: LoadTest1. LoadTest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Aby dodać parametr kontekstowy do ustawienia przebiegu
+## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Aby dodać parametr kontekstu do ustawień
 
 1. Otwórz test obciążenia.
 
-2. Rozwiń folder **Parametry uruchomieniowe** w drzewie testu obciążenia w Edytor testu obciążeniowego.
+2. Rozwiń **parametrów uruchomieniowych** folderów w drzewie testu obciążenia w edytorze testu obciążeniowego.
 
-3. Kliknij prawym przyciskiem myszy konkretne ustawienie uruchomieniowe, do którego chcesz dodać parametr kontekstowy, a następnie wybierz polecenie **Dodaj parametr kontekstowy**.
+3. Kliknij prawym przyciskiem myszy konkretne ustawienia uruchamiania, do której chcesz dodać parametr kontekstu, a następnie wybierz **dodać parametr kontekstu**.
 
-     Nowy parametr kontekstowy jest dodawany do folderu **Parametry kontekstu** w folderze **Run Settings** w drzewie testu obciążenia.
+     Dodano nowy parametr kontekstu do **parametrów kontekstu** folderu w **parametrów uruchomieniowych** folderu w drzewie testu obciążenia.
 
-     —lub—
+     lub
 
-     Jeśli ustawienie run zawiera już folder **parametrów kontekstu** , kliknij go prawym przyciskiem myszy, a następnie wybierz polecenie **Dodaj parametr kontekstowy**.
+     Jeśli działanie ustawienie już zawiera **parametrów kontekstu** folderu, możesz go prawym przyciskiem myszy i wybierz **dodać parametr kontekstu**.
 
-4. W oknie **Właściwości** Zmień wartość w polu **Nazwa** na odpowiednie (na przykład webserwer1). W oknie **Właściwości** Zmień **wartość** na parametr, który ma być używany (na przykład `http://CorporateStagingWebServer`).
+4. W **właściwości** okna, zmień wartość **nazwa** odpowiednio (na przykład Serwer_sieci_web_1). W **właściwości** oknie zmiany **wartość** do parametru, którego chcesz używać (na przykład `http://CorporateStagingWebServer`).
 
-5. Obowiązkowe Powtórz kroki od 3 do 5 i użyj innego ciągu dla właściwości **Value** (na przykład `http://CorporateProductionWebServer`).
+5. (Opcjonalnie) Powtórz kroki od 3 do 5 i używać różnych ciąg **wartość** właściwości (na przykład `http://CorporateProductionWebServer`).
 
-6. Wybierz Parametry uruchomieniowe, które mają być aktywne. Otwórz menu skrótów na stronie Parametry uruchomieniowe i wybierz polecenie **Ustaw jako aktywne**.
+6. Wybierz opcję uruchamiania ustawień, które mają być aktywne. Otwórz menu skrótów dotyczące wykonywania ustawień, a następnie wybierz **Ustaw jako aktywny**.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)

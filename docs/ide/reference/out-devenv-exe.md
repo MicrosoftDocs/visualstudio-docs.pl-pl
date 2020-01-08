@@ -13,17 +13,17 @@ helpviewer_keywords:
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a073b4815a01696c546dc2a9dd1132e3605281e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655786"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568014"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -37,7 +37,7 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>Argumenty
 
-- *Nazwa pliku*
+- *FileName*
 
   Wymagany. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
 
@@ -49,7 +49,7 @@ Błędy kompilacji w wierszu polecenia są wyświetlane w oknie **poleceń** i w
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie uruchomiono `MySolution` i zapisuje błędy w `MyErrorLog.txt` pliku.
+W tym przykładzie uruchomiono `MySolution` i zapisuje błędy w `MyErrorLog.txt`pliku.
 
 ```shell
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"

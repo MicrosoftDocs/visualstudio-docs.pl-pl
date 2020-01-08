@@ -4,17 +4,17 @@ ms.date: 08/03/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9791e2dbb6d4a82a49539216eda53d217140bd52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 06362bcf00bc35fdef701e26fe03694b038e88b1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649337"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587462"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Zainstaluj analizatory FxCop w programie Visual Studio
 
@@ -72,13 +72,13 @@ Skorzystaj z poniższych wskazówek, aby określić, która wersja pakietu anali
 
 | Wersja programu Visual Studio | Wersja pakietu analizatora FxCop |
 | - | - |
-| Visual Studio 2019 (wszystkie wersje)<br />Visual Studio 2017 w wersji 15,8 lub nowszej | [Ostatnia](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (wszystkie wersje)<br />Visual Studio 2017 w wersji 15,8 lub nowszej | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Program Visual Studio 2017 w wersji 15,5 do 15,7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Program Visual Studio 2017 w wersji 15,3 do 15,4 | [2.3.0 — beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Program Visual Studio 2017 w wersji 15,0 do 15,2 | [2.0.0 — beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
 | Visual Studio 2015 Update 2 i 3 | [1.2.0 — beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
 | Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
-| RTW programu Visual Studio 2015 | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
+| Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
 ## <a name="vsix"></a>VSIX
 
@@ -120,7 +120,7 @@ Rozszerzenie [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com
 
 ::: moniker-end
 
-4. Wybierz pozycję **Pobierz**.
+4. Wybierz przycisk **Download** (Pobierz).
 
    Rozszerzenie jest pobierane.
 

@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717268"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398280"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Kompilowanie aplikacji ASP.NET Core w Visual Studio dla komputerów Mac
 
@@ -21,7 +21,7 @@ W tym laboratorium utworzysz i eksplorujesz aplikację ASP.NET Core przy użyciu
 ## <a name="objectives"></a>Cele
 
 > [!div class="checklist"]
-> * Tworzenie aplikacji sieci Web ASP.NET Core
+> * Tworzenie aplikacji internetowej ASP.NET Core
 > * Poznaj ASP.NET Core hosting, konfigurację i model oprogramowania pośredniczącego
 > * Debugowanie ASP.NET Core aplikacji sieci Web
 
@@ -29,7 +29,7 @@ W tym laboratorium utworzysz i eksplorujesz aplikację ASP.NET Core przy użyciu
 
 - [Visual Studio dla komputerów Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Zamierzone odbiorcy
+## <a name="intended-audience"></a>Docelowi odbiorcy
 
 To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż głębokie środowisko nie jest wymagane.
 
@@ -73,9 +73,9 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
     ![](media/netcore-image8.png)
 
-7. Istnieją również różne pliki konfiguracji, które służą do zarządzania projektem, jego pakietami i aplikacją w środowisku uruchomieniowym. Na przykład domyślna [Konfiguracja](/aspnet/core/fundamentals/configuration) aplikacji jest przechowywana w pliku **appSettings. JSON**. Można jednak zastąpić niektóre/wszystkie te ustawienia dla poszczególnych środowisk, na przykład przez udostępnienie **appSettings. Plik Development. JSON** dla środowiska **deweloperskiego** .
+7. Istnieją również różne pliki konfiguracji, które służą do zarządzania projektem, jego pakietami i aplikacją w środowisku uruchomieniowym. Na przykład domyślna [Konfiguracja](/aspnet/core/fundamentals/configuration) aplikacji jest przechowywana w pliku **appSettings. JSON**. Zagnieżdżony poniżej pliku appSettings. JSON jest to **appSettings. Plik Development. JSON** . W tym miejscu można zastąpić niektóre/wszystkie te ustawienia dla poszczególnych środowisk. Visual Studio dla komputerów Mac będzie zagnieżdżać pliki w ten sam sposób przy użyciu tej samej logiki, co program Visual Studio dla systemu Windows, dzięki czemu pliki, do których trzeba uzyskać dostęp częściej, znajdują się w programie Forefront. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Zadanie 3: zrozumienie, w jaki sposób aplikacja jest hostowana
 
@@ -107,7 +107,7 @@ To laboratorium jest przeznaczone dla deweloperów C#, którzy znają, chociaż 
 
     ![](media/netcore-image16.png)
 
-8. Gdy klasy **IWebHost** są wymagane do zaimplementowania **uruchamiania**bez blokowania, ASP.NET Core projekty mają metodę rozszerzającą o nazwie **Run** , która **zawija się od** kodu blokującego, aby nie trzeba było ręcznie uniemożliwiać metody z natychmiastowe wyjście.
+8. Gdy klasy **IWebHost** są wymagane do zaimplementowania **uruchamiania**bez blokowania, ASP.NET Core projekty mają metodę rozszerzającą o nazwie **Run** , która zawija **się od kodu** blokującego, więc nie trzeba ręcznie blokować metody od razu.
 
     ![](media/netcore-image17.png)
 

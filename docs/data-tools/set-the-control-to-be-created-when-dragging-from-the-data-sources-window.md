@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641038"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586188"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 
@@ -37,7 +37,7 @@ W tym kontekście *obiekt* Term odnosi się do niestandardowego obiektu biznesow
 2. W oknie **źródła danych** wybierz element reprezentujący tabelę danych lub obiekt, który ma zostać ustawiony.
 
    > [!TIP]
-   > Jeśli okno **źródła danych** nie jest otwarte, możesz je otworzyć, wybierając opcję **wyświetl**  >  inne  > **źródła danych** **systemu Windows** .
+   > Jeśli okno **źródła danych** nie jest otwarte, możesz je otworzyć, wybierając opcję **wyświetl** > inne > **źródła danych** **systemu Windows** .
 
 3. Kliknij menu rozwijane dla elementu, a następnie kliknij jeden z następujących elementów w menu:
 

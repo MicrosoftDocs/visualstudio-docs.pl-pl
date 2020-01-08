@@ -3,8 +3,8 @@ title: Program Visual Studio Test Controller obciążenia i identyfikatory skła
 titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia można rozprowadzać zautomatyzowane testy na wielu komputerach
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e401cffd1dd9e94684742f51103873d3c570ba9c
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 95a2fde886f910b1b4500c131842c10d4c9c781c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797346"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584598"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Katalog składników programu Visual Studio Test Controller
 

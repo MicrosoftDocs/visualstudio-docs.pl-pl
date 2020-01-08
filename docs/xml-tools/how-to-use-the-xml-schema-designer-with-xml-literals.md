@@ -3,19 +3,19 @@ title: 'Instrukcje: korzystanie z projektanta schematu XML z literałami XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4001e705cc69e07242abeeef5919573b264c5e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601852"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592662"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Instrukcje: korzystanie z projektanta schematu XML z literałami XML
 

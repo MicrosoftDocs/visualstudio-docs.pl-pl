@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: c3c6eed20fc1f2b76c02865c2a5f6b21cde1ae51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562574"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589997"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
 W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, jak wykonywać następujące zadania:
@@ -61,12 +61,12 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
 
      Można wywołać metodę `Next()` klasy losowej o nazwie "Randomer" wcześniej w tym samouczku, na wiele sposobów. Metody, które można wywołać w więcej niż jednym sposobie, są określane jako przeciążone i można użyć funkcji IntelliSense, aby poznać ją. Ponownie Obejrzyj etykietkę narzędzia okna IntelliSense dla metody `Next()`.
 
-     ![IntelliSense etykietki narzędzia okna ](../ide/media/express_overloads.png)<br/>
+     ![etykietki narzędzia okna IntelliSense](../ide/media/express_overloads.png)<br/>
 *Etykietka narzędzia okna* IntelliSense
 
      Etykietka narzędzia pokazuje **(+ 2 przeciążenia**), co oznacza, że można wywołać metodę `Next()` na dwa inne sposoby. Przeciążenia zawierają różne liczby lub typy argumentów, dzięki czemu działają nieco inaczej od siebie. Na przykład metoda może przyjmować jeden argument Integer, a jedno z jego przeciążeń może przyjmować liczbę całkowitą i ciąg. Należy wybrać poprawne Przeciążenie w zależności od tego, co ma być wykonywane. Po dodaniu kodu do metody `StartTheQuiz()` więcej informacji pojawia się w oknie IntelliSense, gdy tylko wprowadzisz pozycję `randomizer.Next(`. Aby przechodzić przez przeciążenia, wybierz klawisze **Strzałka w górę** i **Strzałka w dół** , jak pokazano na poniższej ilustracji:
 
-     ![Overload dla następnej&#40; &#41; metody IntelliSense ](../ide/media/express_nextoverload.png)<br/>
+     ![Przeciążenie dla następnej&#40; &#41; metody IntelliSense](../ide/media/express_nextoverload.png)<br/>
 *Przeciążenie* metody ***Next ()*** *w* ***technologii IntelliSense***
 
      W takim przypadku należy wybrać ostatnie Przeciążenie, ponieważ można określić wartości minimalne i maksymalne.
@@ -87,7 +87,7 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
 
      Program zawiera problem odejmowania, jak pokazano na poniższej ilustracji:
 
-     ![Math Quiz z problemem odejmowania ](../ide/media/express_addsubtract.png)<br/>
+     ![Quiz matematyczny z problemem odejmowania](../ide/media/express_addsubtract.png)<br/>
 ***Quiz matematyczny*** *z problemem odejmowania*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć

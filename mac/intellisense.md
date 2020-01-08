@@ -4,12 +4,12 @@ description: Informacje o korzystaniu z technologii IntelliSense w Visual Studio
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026958"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405807"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -27,31 +27,21 @@ Okno uzupełniania oferuje również obsługę filtrowania uwzględnionych uzupe
 | -----------------------------|---------------| -----------|--------|
 | ![Ikona klas](media/classes-icon.png)  | class         | `class`    |  ⌥ C
 | ![Ikona stałej](media/constant-icon.png) | — stała      | `const`    |  ⌥ O
-| ![Ikona delegata](media/delegate-icon.png) | delegate      | `delegate` |  ⌥ D
+| ![Ikona delegata](media/delegate-icon.png) | delegat      | `delegate` |  ⌥ D
 | ![Ikona wyliczenia](media/enums-icon.png)    | enum          | `enum`     |  ⌥ E
 | ![Ikona zdarzenia](media/event-icon.png)    | zdarzenie         |            |  ⌥ V
 | ![Ikona pola](media/fields-icon.png)   | pole         |            |  ⌥ F
-| ![Ikona interfejsu](media/interface-icon.png)| interface     | `interface`|  ⌥ I
+| ![Ikona interfejsu](media/interface-icon.png)| interfejs     | `interface`|  ⌥ I
 | ![Ikona słowa kluczowego](media/keyword-icon.png)  | kodu       |            |  ⌥ K
-| ![Ikona metody](media/method-icon.png)   | — metoda        |            |  ⌥ M
-| ![Ikona przestrzeni nazw](media/namespace-icon.png)| — przestrzeń nazw     | `namespace`|  ⌥ N
-| ![Ikona właściwości](media/props-icon.png)    | property      |            |  ⌥ P
+| ![Ikona metody](media/method-icon.png)   | metoda        |            |  ⌥ M
+| ![Ikona przestrzeni nazw](media/namespace-icon.png)| {1&gt; — przestrzeń nazw&lt;1}     | `namespace`|  ⌥ N
+| ![Ikona właściwości](media/props-icon.png)    | właściwość      |            |  ⌥ P
 | ![Ikona fragmentu kodu](media/snippet-icon.png)  | fragment kodu       | `class`    |  ⌥ S
-| ![Ikona struktury](media/struct-icon.png)   | — struktura     | `struct`   |  ⌥ S
+| ![Ikona struktury](media/struct-icon.png)   | struktura     | `struct`   |  ⌥ S
 
 Kliknięcie dowolnej ikony lub naciśnięcie odpowiednich klawiszy skrótu spowoduje ograniczenie listy uzupełniania tylko do typów zgodnie z definicją zestawu filtrów.  
 
 ![Filtrowanie typów IntelliSense](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Pokaż elementy importu
-
-Domyślnie funkcja IntelliSense będzie wyświetlać tylko uzupełniania z bibliotek, które zostały zaimportowane do projektu. Na przykład, jeśli nie `System.Collections.Generic` zaimportowano go za pośrednictwem `using` tego elementu, `List<>`nie można wykonać operacji. Aby wyświetlić uzupełniania z bibliotek, które nie zostały zaimportowane, należy włączyć opcję **Pokaż elementy importu** w preferencjach dla Visual Studio dla komputerów Mac. To ustawienie można znaleźć w obszarze **preferencje > Edytor tekstu > IntelliSense**:
-
-![IntelliSense — Pokaż elementy importu](media/intellisense-showimport.png)
-
-Po włączeniu **pozycji Importuj elementy** zostaną uwzględnione zakończenia, które nie zostały jeszcze zaimportowane. Po wybraniu elementu, który odnosi się do niezadeklarowanej biblioteki `using` , instrukcja dla tej biblioteki zostanie automatycznie dodana do nagłówka pliku kodu. Nazwa biblioteki, do której należy uzupełnienie, jest również wyświetlana wraz z samą ukończeniem.
-
-![Pokaż listę elementów importu](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Okno parametrów
 

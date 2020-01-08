@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b6c91e6074e34a8207325e25f4a48b94dd037ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639442"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586032"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Przewodnik: Tworzenie zestawu danych za pomocą Projektant obiektów Dataset
 
@@ -38,7 +38,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy wykonywanie i zostanie utworzona baza danych Northwind.
 
@@ -58,7 +58,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
 1. W menu **projekt** wybierz polecenie **Dodaj nowy element**.
 
-     Pojawi się okno dialogowe **Dodaj nowy element** .
+     **Dodaj nowy element** pojawi się okno dialogowe.
 
 2. W okienku po lewej stronie wybierz pozycję **dane**, a następnie wybierz pozycję **zestaw danych** w środkowym okienku.
 

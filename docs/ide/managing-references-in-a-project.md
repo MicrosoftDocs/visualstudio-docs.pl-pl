@@ -16,23 +16,23 @@ helpviewer_keywords:
 - namespaces [Visual Studio], referencing
 - COM components, referencing
 - objects [Visual Studio], referencing
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06235439fdff952225fe3aafea9f5354a27cb0a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9623e8ffb6a315851d26cd06defb62899e429f44
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658418"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591258"
 ---
 # <a name="manage-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
 Przed napisaniem kodu w składniku zewnętrznym lub połączonej usłudze, projekt musi zawierać odwołanie do niego. Odwołanie jest zasadniczo wpisem w pliku projektu, który zawiera informacje, które program Visual Studio musi zlokalizować składnik lub usługę.
 
-Aby dodać odwołanie, kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **dodaj**  > **odwołanie**. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Aby dodać odwołanie, kliknij prawym przyciskiem myszy węzeł **odwołania** lub **zależności** w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj odwołanie**. Możesz również kliknąć prawym przyciskiem myszy węzeł projektu i wybrać polecenie **dodaj** > **odwołanie**. Aby uzyskać więcej informacji, zobacz [jak: Dodawanie lub usuwanie odwołań](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
 ![Dodaj odwołanie w Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
@@ -72,7 +72,7 @@ Jeśli określisz, że zestaw SDK, do którego odwołuje się aplikacja, nie jes
     > Jednym ze sposobów ustalenia, czy rozszerzenie SDK ma zależności od innych zestawów SDK rozszerzeń, jest wyszukiwanie w **Menedżerze odwołań**. Uruchom ponownie program Visual Studio, Utwórz C# nowy projekt aplikacji platformy UWP, a następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj odwołanie**. Przejdź do karty **Windows** , a następnie podkartę **rozszerzenia** i wybierz zestaw SDK rozszerzenia. Poszukaj w prawym okienku w **Menedżerze odwołań**. Jeśli ma zależności, zostaną one wyświetlone.
 
     > [!IMPORTANT]
-    > Jeśli projekt jest przeznaczony dla systemu Windows 10, a rozszerzenie SDK zainstalowane w poprzednim kroku jest zależne od pakietu Microsoft Visual C++ Runtime, wersja pakietu Microsoft Visual C++ Runtime, która jest zgodna z systemem Windows 10, to v 14.0, i jest instalowany z programem Visual Studio.
+    > Jeśli projekt jest przeznaczony dla systemu Windows 10, a zestaw SDK, który został zainstalowany w poprzednim kroku, ma zależność od pakietu C++ Microsoft Visual Runtime, wersja pakietu Microsoft Visual C++ Runtime, która jest zgodna z systemem Windows 10, to v 14.0 i jest instalowana z programem Visual Studio.
 
 1. Jeśli zestaw SDK rozszerzenia zainstalowany w poprzednim kroku ma zależności od innych zestawów SDK rozszerzeń, przejdź do witryn dostawców, którzy są właścicielami zależności, i zainstaluj wersje tych zależności, które są zgodne z wersją platformy, dla której projekt jest docelowej.
 

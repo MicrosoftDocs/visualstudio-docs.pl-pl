@@ -7,108 +7,108 @@ f1_keywords:
 - vs.code.analysis.browsefortfsruleset
 - vs.code.analysis.policyeditor
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c45453af0e7736a10cba8b5bb98ef75429427e2a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9386d89ce995131bdb89f94201fa8475058ddba0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649324"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587397"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementowanie niestandardowych zasad zaewidencjonowania analizy kodu dla kodu zarządzanego
 
-Zasady ewidencjonowania analizy kodu określają zestaw reguł, które członkowie projektu usługi Azure DevOps muszą uruchomić w kodzie źródłowym, zanim zostaną zaewidencjonowane do kontroli wersji. Firma Microsoft udostępnia zestaw standardowych *zestawów reguł* , które grupują reguły analizy kodu w obszary funkcjonalne. *Niestandardowe zestawy reguł ewidencjonowania* określają zestaw reguł analizy kodu, które są specyficzne dla projektu. Zestaw reguł jest przechowywany w pliku. reguł.
+Zasady analizy kodu ewidencjonowania określa zestaw reguł, które elementy członkowskie projektu DevOps platformy Azure należy uruchomić na kod źródłowy, przed jego zaewidencjonowaniem do systemu kontroli wersji. Firma Microsoft udostępnia zestaw standardu *zestawów reguł* reguł analizy kodu w tej grupie, do obszarów funkcjonalnych. *Zestawy reguł niestandardowych zasad ewidencjonowania* określić zbiór reguł analizy kodu, które są specyficzne dla projektu. Zestaw reguł są przechowywane w plik .ruleset.
 
-Zasady ewidencjonowania są ustawiane na poziomie projektu usługi Azure DevOps i określane przez lokalizację pliku. zestawu reguł w drzewie kontroli wersji. Nie ma żadnych ograniczeń dotyczących lokalizacji kontroli wersji zestawu reguł niestandardowych zasad zespołu.
+Zasady ewidencjonowania są ustawiane na poziomie projektu DevOps platformy Azure i określone przez lokalizację pliku .ruleset w drzewie kontroli wersji. Nie istnieją żadne ograniczenia dotyczące lokalizacji kontroli wersji team zasad niestandardowego zestawu reguł.
 
-Analiza kodu jest konfigurowana dla poszczególnych projektów kodu w oknie właściwości dla każdego projektu. Niestandardowy zestaw reguł dla projektu kodu jest określany na podstawie fizycznej lokalizacji pliku. reguł na komputerze lokalnym. Gdy określony jest plik. zestawu reguł, który znajduje się na tym samym dysku co projekt kodu, program Visual Studio używa ścieżki względnej do pliku w konfiguracji projektu.
+Analiza kodu jest skonfigurowana dla poszczególnych projektów kodu w oknie dialogowym właściwości dla każdego projektu. Niestandardowy zbiór reguł dla projektu kodu jest określony przez fizyczną lokalizację pliku .ruleset na komputerze lokalnym. Po określeniu plik .ruleset, który znajduje się na tym samym dysku, projekt kodu programu Visual Studio używa ścieżki względnej do pliku w konfiguracji projektu.
 
-Sugerowana metoda tworzenia zestawu reguł niestandardowych projektu usługi Azure DevOps polega na przechowywaniu pliku zasad ewidencjonowania w specjalnym folderze, który nie jest częścią żadnego projektu kodu. Jeśli plik jest przechowywany w dedykowanym folderze, można zastosować uprawnienia, które ograniczają, kto może edytować plik reguły, i można łatwo przenieść strukturę katalogów, która zawiera projekt do innego katalogu lub komputera.
+Sugerowane rozwiązanie do tworzenia DevOps platformy Azure, w projekcie niestandardowego zestawu reguł jest przechowywany plik .ruleset zasady ewidencjonowania w folderze specjalnym, który nie jest częścią żadnego projektu kodu. Jeśli plik jest przechowywany w folderze dedykowanej, możesz zastosować uprawnienia, które ograniczają, którzy mogą edytować pliku reguł i można łatwo przenosić struktury katalogów, która zawiera projekt do innego komputera lub katalogu.
 
-## <a name="create-the-project-custom-check-in-rule-set"></a>Tworzenie niestandardowego zestawu reguł ewidencjonowania projektu
+## <a name="create-the-project-custom-check-in-rule-set"></a>Tworzenie zestawu niestandardowa reguła wyboru projektu
 
-Aby utworzyć niestandardowy zestaw reguł dla projektu usługi Azure DevOps, należy najpierw utworzyć specjalny folder dla reguły zasad ewidencjonowania w **Eksploator kontroli źródła**. Następnie utworzysz plik zestawu reguł i dodajesz go do kontroli wersji. Na koniec należy określić regułę ustawioną jako zasady ewidencjonowania analizy kodu dla projektu.
+Aby utworzyć niestandardowy zestaw reguł dla projektu DevOps platformy Azure, należy najpierw utworzyć specjalny folder zestaw reguł zasad ewidencjonowania **Eksploratora kontroli źródła**. Następnie utworzysz pliku zestawu reguł i dodaj go do kontroli wersji. Na koniec należy określić regułę, Ustaw jako zasady analizy kodu zaewidencjonowania dla projektu.
 
 > [!NOTE]
-> Aby utworzyć folder w projekcie usługi Azure DevOps, należy najpierw zmapować katalog główny projektu do lokalizacji na komputerze lokalnym.
+> Aby utworzyć folder projektu DevOps platformy Azure, najpierw należy zamapować katalog główny projektu do lokalizacji na komputerze lokalnym.
 
-### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zaewidencjonowania
+### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Aby utworzyć folder kontroli wersji dla zestawu reguł zasad ewidencjonowania
 
-1. W Team Explorer rozwiń węzeł projektu, a następnie kliknij pozycję **Kontrola źródła**.
+1. W programie Team Explorer, rozwiń węzeł projektu, a następnie kliknij przycisk **kontroli źródła**.
 
-2. W okienku **foldery** kliknij prawym przyciskiem myszy projekt, a następnie kliknij pozycję **Nowy folder**.
+2. W **folderów** okienku kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **nowy Folder**.
 
-3. W głównym okienku kontroli źródła kliknij prawym przyciskiem myszy pozycję **Nowy folder**, kliknij polecenie **Zmień nazwę**i wpisz nazwę folderu zestawu reguł.
+3. W okienku głównym kontroli źródła, kliknij prawym przyciskiem myszy **nowy Folder**, kliknij przycisk **Zmień nazwę**, a następnie wpisz nazwę dla folderu zestawu reguł.
 
-### <a name="to-create-the-check-in-policy-rule-set"></a>Aby utworzyć zestaw reguł ewidencjonowania
+### <a name="to-create-the-check-in-policy-rule-set"></a>Aby utworzyć zestaw reguł zasad ewidencjonowania
 
-1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij polecenie **plik**.
+1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **pliku**.
 
-2. Na liście **Kategorie** kliknij pozycję **Ogólne**.
+2. W **kategorie** kliknij **ogólne**.
 
-3. Na liście **Szablony** kliknij dwukrotnie **zestaw reguł Analiza kodu**.
+3. W **szablony** listy, kliknij dwukrotnie **zestawu reguł analizy kodu**.
 
-4. [Określ reguły](../code-quality/how-to-create-a-custom-rule-set.md) do uwzględnienia w zestawie reguł, a następnie Zapisz plik zestawu reguł w utworzonym folderze zestawu reguł.
+4. [Określ reguły](../code-quality/how-to-create-a-custom-rule-set.md) do uwzględnienia w zestawie reguł, a następnie zapisać reguły Ustaw plik do folderu zestawu reguł, który został utworzony.
 
-### <a name="to-add-the-rule-set-file-to-version-control"></a>Aby dodać plik zestawu reguł do kontroli wersji
+### <a name="to-add-the-rule-set-file-to-version-control"></a>Można dodać reguły zestawu plików do kontroli wersji
 
-1. W **Eksploator kontroli źródła**kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij polecenie **Dodaj elementy do folderu**.
+1. W **Eksploratora kontroli źródła**, kliknij prawym przyciskiem myszy nowy folder, a następnie kliknij przycisk **Dodaj elementy do folderu**.
 
-     Aby uzyskać więcej informacji, zobacz [git i Azure Repos](/azure/devops/repos/git/overview?view=vsts).
+     Aby uzyskać więcej informacji, zobacz [Git i repozytoriów platformy Azure](/azure/devops/repos/git/overview?view=vsts).
 
-2. Kliknij utworzony plik zestawu reguł, a następnie kliknij przycisk **Zakończ**.
+2. Kliknij plik, który został utworzony zestaw reguł, a następnie kliknij **Zakończ**.
 
      Plik zostanie dodany do kontroli źródła i wyewidencjonowany dla Ciebie.
 
-3. W oknie Szczegóły **Eksploator kontroli źródła** kliknij prawym przyciskiem myszy nazwę pliku, a następnie kliknij polecenie **Zaewidencjonuj oczekujące zmiany**.
+3. W **Eksploratora kontroli źródła** okno Szczegóły, kliknij prawym przyciskiem myszy nazwę pliku, a następnie kliknij przycisk **Zaewidencjonuj oczekujące zmiany**.
 
-4. W oknie dialogowym **zaewidencjonowania** możesz dodać komentarz, a następnie kliknąć przycisk **Zaewidencjonuj**.
+4. W **ewidencjonowania** okno dialogowe, masz opcję, aby dodać komentarz, a następnie kliknij przycisk **Zaewidencjonuj**.
 
     > [!NOTE]
-    > Jeśli skonfigurowano już zasady ewidencjonowania analizy kodu dla projektu usługi Azure DevOps, a zaznaczono opcję **Wymuszaj tylko pliki będące częścią bieżącego rozwiązania**, zostanie wyzwolone ostrzeżenie dotyczące błędu zasad. W oknie dialogowym niepowodzenie zasad wybierz opcję **Zastąp błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagany komentarz, a następnie kliknij przycisk **OK**.
+    > Jeśli już skonfigurowano zasad analizy kodu ewidencjonowania projektu DevOps platformy Azure, jeśli wybrano **wymusić zaewidencjonowanie obejmowało tylko pliki, które są częścią bieżącego rozwiązania**, spowoduje wyzwolenie ostrzeżenie o niepowodzeniu zasady. W oknie dialogowym błędu zasad, wybierz **Przesłoń błąd zasad i Kontynuuj ewidencjonowanie**. Dodaj wymagane komentarz, a następnie kliknij przycisk **OK**.
 
-### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Aby określić plik zestawu reguł jako zasady ewidencjonowania
+### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Aby określić regułę Ustaw plik jako zasady ewidencjonowania
 
-1. W menu **zespół** wskaż pozycję **Ustawienia projektu**, a następnie kliknij pozycję **Kontrola źródła**.
+1. Na **zespołu** menu wskaż **ustawienia projektu**, a następnie kliknij przycisk **kontroli źródła**.
 
-2. Kliknij pozycję **zasady ewidencjonowania**, a następnie kliknij przycisk **Dodaj**.
+2. Kliknij przycisk **zasad ewidencjonowania**, a następnie kliknij przycisk **Dodaj**.
 
-3. Na liście **zasad ewidencjonowania** kliknij dwukrotnie pozycję **Analiza kodu**i upewnij się, że jest zaznaczone pole wyboru **Wymuszaj analizę kodu dla kodu zarządzanego** .
+3. W **zasad ewidencjonowania** listy, kliknij dwukrotnie **analizy kodu**i upewnij się, że **wymusić analizy kodu dla zarządzanego kodu** pole wyboru jest zaznaczone.
 
-4. Na liście **Uruchom ten zestaw reguł** kliknij **\<Select zestaw reguł z kontroli źródła >** .
+4. W **Uruchom ten zestaw reguł** kliknij  **\<z kontroli źródła wybierz zestaw reguł >** .
 
-5. Wpisz ścieżkę pliku zestawu reguł ewidencjonowania w kontroli wersji.
+5. Wpisz ścieżkę pliku zestawu reguł zasad zaewidencjonowania w kontroli wersji.
 
-     Ścieżka musi być zgodna z następującą składnią:
+     Ścieżka musi być zgodna z następującej składni:
 
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Ścieżkę można skopiować za pomocą jednej z następujących procedur w **Eksploator kontroli źródła**:
+    > Możesz skopiować ścieżkę przy użyciu jednej z poniższych procedur w programie **Eksploratora kontroli źródła**:
 
-    - W okienku **foldery** kliknij folder zawierający plik zestawu reguł. Skopiuj ścieżkę kontroli wersji folderu, który pojawia się w polu **Źródło** , i ręcznie wpisz nazwę pliku zestawu reguł.
+    - W **folderów** okienku, kliknij folder zawierający plik zestawu reguł. Kopiuj ścieżkę kontroli wersji, folderu, który pojawia się w **źródła** polu, a następnie wpisz nazwę pliku zestawu reguł ręcznie.
 
-    - W oknie Szczegóły kliknij prawym przyciskiem myszy plik zestawu reguł, a następnie kliknij polecenie **Właściwości**. Na karcie **Ogólne** skopiuj wartość w polu **Nazwa serwera**.
+    - W okienku szczegółów kliknij prawym przyciskiem myszy pliku zestawu reguł, a następnie kliknij przycisk **właściwości**. Na **ogólne** kartę, skopiuj wartość w **nazwy serwera**.
 
-## <a name="synchronize-code-projects-to-the-check-in-policy-rule-set"></a>Synchronizuj projekty kodu z zestawem reguł zaewidencjonowania
+## <a name="synchronize-code-projects-to-the-check-in-policy-rule-set"></a>Synchronizacja projektów kodu z zestawu reguł zasad ewidencjonowania
 
-Należy określić regułę zasad ewidencjonowania projektu jako zestaw reguł analizy kodu w konfiguracji projektu kodu w oknie dialogowym właściwości projektu kodu. Jeśli zestaw reguł znajduje się na tym samym dysku co projekt kodu, ścieżka względna jest używana do określenia zestawu reguł, gdy ścieżka jest zaznaczona z okna dialogowego plik. Ścieżka względna umożliwia przenośnie ustawień właściwości projektu do innych komputerów, które używają podobnych struktur kontroli wersji lokalnej.
+Należy określić zestaw reguł zasad ewidencjonowania w projekcie jako zestaw reguł analizy kodu w konfiguracji projektu kodu w oknie dialogowym właściwości projektu kodu. Jeśli zestaw reguł znajduje się na tym samym dysku, projekt kodu, ścieżka względna jest używana do określania zestawu reguł, gdy ścieżka jest zaznaczona w oknie dialogowym pliku. Ścieżka względna umożliwia ustawienia właściwości projektu, który będzie działał w innych komputerów, które używają podobnych lokalnej wersji kontrolowanie struktury.
 
-### <a name="to-specify-a-project-rule-set-as-the-rule-set-of-a-code-project"></a>Aby określić zestaw reguł projektu jako zestaw reguł projektu kodu
+### <a name="to-specify-a-project-rule-set-as-the-rule-set-of-a-code-project"></a>Aby określić regułę projektu należy ustawić jako zestaw reguł projektu kodu
 
-1. W razie potrzeby Pobierz folder i plik zestawu reguł ewidencjonowania z kontroli wersji.
+1. Jeśli to konieczne, należy pobrać folderu zestawu reguł zasad ewidencjonowania i plików z kontroli wersji.
 
-   Ten krok można wykonać w **Eksploator kontroli źródła** , klikając prawym przyciskiem myszy folder zestawu reguł, a następnie klikając polecenie **Pobierz najnowszą wersję**.
+   Można wykonać tego kroku w **Eksploratora kontroli źródła** przez kliknięcie prawym przyciskiem myszy folder, a następnie klikając polecenie zestawu reguł **Pobierz najnowszą wersję**.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij polecenie **Właściwości**.
+2. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt kodu, a następnie kliknij przycisk **właściwości**.
 
-3. **Kliknij pozycję Analiza kodu**.
+3. **Kliknij przycisk Analiza kodu**.
 
-4. W razie potrzeby kliknij odpowiednie opcje na listach **konfiguracji** i **platformy** .
+4. Jeśli to konieczne, kliknij odpowiednie opcje w **konfiguracji** i **platformy** listy.
 
 ::: moniker range="vs-2017"
 
@@ -122,6 +122,6 @@ Należy określić regułę zasad ewidencjonowania projektu jako zestaw reguł a
 
 ::: moniker-end
 
-6. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Browse >** .
+6. Na liście **Uruchom ten zestaw reguł** kliknij pozycję **\<Przeglądaj >** .
 
 8. Wybierz lokalną wersję pliku zestawu reguł ewidencjonowania.

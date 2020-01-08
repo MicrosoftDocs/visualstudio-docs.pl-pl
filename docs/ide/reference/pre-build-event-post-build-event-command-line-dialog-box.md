@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461318"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567921"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Zdarzenie przed kompilacją/wiersz polecenia zdarzenia po kompilacji
 
@@ -55,7 +55,7 @@ Możesz wpisać zdarzenia przed lub po kompilacji dla [strony zdarzenia kompilac
 Zawiera zdarzenia do uruchomienia na potrzeby wstępnej kompilacji lub po kompilacji.
 
 > [!NOTE]
-> `call` Dodaj instrukcję przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki. bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Dodaj instrukcję `call` przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki. bat. Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Utworze**
 

@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879285"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402035"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 Aby uniknąć błędów współbieżności w programie wielowątkowym, zawsze postępuj zgodnie z odpowiednią dyscypliną blokowania i korzystaj z adnotacji SAL.
@@ -73,7 +73,7 @@ Poniższa tabela zawiera listę adnotacji blokowania.
 |`_Create_lock_level_(name)`|Instrukcja, która deklaruje symbol `name` być poziomem blokady, aby mogła być używana w `_Has_Lock_level_` adnotacji i `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Adnotuj każdy obiekt, aby uściślić informacje o typie obiektu zasobu. Czasami typowy typ jest używany dla różnych rodzajów zasobów i przeciążony typ nie jest wystarczający do odróżnienia wymagań semantycznych między różnymi zasobami. Poniżej znajduje się lista wstępnie zdefiniowanych parametrów `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> Identyfikator typu blokady dla muteksów.<br /><br /> `_Lock_kind_event_`<br /> Identyfikator rodzaju blokady dla zdarzeń.<br /><br /> `_Lock_kind_semaphore_`<br /> Identyfikator rodzaju blokady dla semaforów.<br /><br /> `_Lock_kind_spin_lock_`<br /> Identyfikator typu blokady dla blokad pokrętła.<br /><br /> `_Lock_kind_critical_section_`<br /> Identyfikator rodzaju blokady dla sekcji krytycznych.|
 |`_Has_lock_level_(name)`|Adnotuj obiekt blokady i nadaje mu poziom blokady `name`.|
-|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2`.  Blokady, które mają `name1` poziomu muszą zostać pobrane przed blokadami, które mają poziom `name2`|
+|`_Lock_level_order_(name1, name2)`|Instrukcja, która zapewnia kolejność blokowania między `name1` i `name2`.  Blokady, które mają `name1` poziomu muszą zostać pobrane przed blokadami, które mają `name2`poziomu.|
 |`_Post_same_lock_(expr1, expr2)`|Adnotuj funkcję i wskazuje, że w stanie post dwa blokady, `expr1` i `expr2`, są traktowane tak, jakby były tym samym obiektem blokady.|
 |`_Releases_exclusive_lock_(expr)`|Umożliwia dodawanie adnotacji do funkcji i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad na wyłączność obiektu blokady o nazwie `expr`.|
 |`_Releases_lock_(expr)`|Adnotuj funkcję i wskazuje, że w stanie post funkcja zmniejsza się o jedną liczbę blokad obiektu blokady o nazwie przez `expr`.|

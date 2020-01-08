@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665303"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591193"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Przypisywanie ról do kontrolera testów i agenta testowego
 
@@ -35,21 +35,21 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy pozycję **elementy rozwiązania,** wskaż polecenie **Dodaj**, a następnie wybierz polecenie **nowy element**.
 
-     Pojawi się okno dialogowe **Dodaj nowy element** .
+     **Dodaj nowy element** pojawi się okno dialogowe.
 
-2. W okienku **zainstalowane szablony** wybierz pozycję **Ustawienia testu**.
+2. W **zainstalowane szablony** okienku wybierz **ustawienia testu**.
 
 3. W polu **Nazwa** wpisz **TestSettingDistributedTestWalkthrough**.
 
-4. Wybierz pozycję **Dodaj**.
+4. Wybierz **Dodaj**.
 
      Nowy plik testu *TestSettingDistributedTestWalkthrough. testsettings* pojawia się w **Eksplorator rozwiązań**w folderze **elementy rozwiązania** .
 
-     Zostanie wyświetlone okno dialogowe **Ustawienia testu** . Wybrana jest strona **Ogólne** .
+     **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
 
-     Możesz teraz edytować i zapisywać wartości ustawień testu.
+     Można teraz edytować i zapisać wartości ustawień testu.
 
-5. W polu **Nazwa**wpisz nazwę dla ustawień testu.
+5. W obszarze **nazwa**, wpisz nazwę ustawień testu.
 
 6. W obszarze **Opis**wpisz **Ustawienia testu rozproszonego**.
 
@@ -59,14 +59,14 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 1. Wybierz **role**.
 
-     Zostanie wyświetlona strona **role** .
+     **Role** zostanie wyświetlona strona.
 
 2. Aby zdalnie uruchomić test, Użyj listy rozwijanej **Metoda wykonania testu** i wybierz **wykonanie zdalne**.
 
 3. Z listy rozwijanej **kontroler** wpisz nazwę komputera [kontrolera testów](../test/lab-management/install-configure-test-agents.md).
 
     > [!NOTE]
-    > Jeśli po raz pierwszy dodajesz kontrolera, nie ma kontrolerów wymienionych na liście rozwijanej. Lista jest wypełniana przez wcześniejsze kontrolery, które określono w innych ustawieniach testu.
+    > Jeśli po raz pierwszy dodajesz kontrolera, nie ma kontrolerów wymienionych na liście rozwijanej. Lista jest wypełniana przez wcześniejsze kontrolery, które określono w innych ustawieniach testowych.
 
 4. W obszarze **role**wybierz pozycję **Dodaj**.
 
@@ -76,7 +76,7 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 1. Wybierz **dane i Diagnostyka**.
 
-     Zostanie wyświetlona strona **dane i Diagnostyka** .
+     **Dane i Diagnostyka** zostanie wyświetlona strona.
 
 2. W obszarze **rola**Sprawdź, czy jest zaznaczona rola **test rozproszona** .
 
@@ -86,14 +86,14 @@ W tym artykule przedstawiono sposób tworzenia i konfigurowania ustawienia testu
 
 4. Wybierz pozycję **hosty**.
 
-5. Obowiązkowe Jeśli maszyna działa w 64-bitowej wersji systemu Microsoft Windows i został skompilowany test przy użyciu **dowolnej konfiguracji procesora** , Użyj listy rozwijanej **Uruchom test w programie 32 bit lub 64 bit** i wybierz pozycję **Uruchom testy w procesie 64-bitowym na 64-bitowym Maszyna**.
+5. Obowiązkowe Jeśli maszyna działa w 64-bitowej wersji systemu Microsoft Windows i został skompilowany test przy użyciu **dowolnej konfiguracji procesora** , Użyj listy rozwijanej **Uruchom test w programie 32 bit lub 64 bit** i wybierz pozycję **Uruchom testy w procesie 64-bitowym na komputerze z systemem 64-bitowym**.
 
     > [!TIP]
-    > Aby zapewnić maksymalną elastyczność, należy skompilować projekty testowe z dowolną konfiguracją **procesora CPU** . Następnie można uruchomić zarówno na 32-bitowym, jak i 64-bitowym agencie. Nie ma możliwości kompilowania projektów testowych z konfiguracją **64-bitową** .
+    > Aby zapewnić maksymalną elastyczność, należy skompilować projekty testowe z dowolną konfiguracją **procesora CPU** . Następnie można uruchomić zarówno 32-bitowych i 64-bitowych agentów. Nie ma możliwości kompilowania projektów testowych z konfiguracją **64-bitową** .
 
 6. Aby zapisać nowe ustawienia testu, wybierz pozycję **Zastosuj**.
 
-7. Wybierz pozycję **Zamknij**.
+7. Wybierz **Zamknij**.
 
 ::: moniker range="vs-2017"
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: mikadumont
-ms.author: midumont
+author: TerryGLee
+ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316464"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585824"
 ---
 # <a name="navigate-code"></a>Nawiguj po kodzie
 
@@ -31,13 +31,13 @@ Program Visual Studio zapewnia wiele sposobów nawigowania po kodzie w edytorze.
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Polecenia „Nawiguj wstecz” i „Nawiguj do przodu”
 
-Możesz użyć przycisków **Nawiguj wstecz** (**Ctrl**+ **-** ) i **przejdź do przodu** (**Ctrl**+**SHIFT**+ **-** ) na pasku narzędzi, aby przenieść punkt wstawiania do poprzednich lokalizacji lub powrócić do nowszej lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnich 20 lokalizacji. Te polecenia są również dostępne w menu **Widok** , w obszarze **Nawigacja wstecz** i **Przejdź do przodu**.
+Możesz użyć przycisków **Nawiguj wstecz** (**Ctrl**+ **-** ) i **Nawiguj do przodu** ( **CTRL**+**Shift**+ **-** ) na pasku narzędzi, aby przesunąć punkt wstawiania do poprzednich lokalizacji lub powrócić do ostatniej lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnich 20 lokalizacji. Polecenia te są również dostępne w menu **Widok** jako **Nawiguj wstecz** i **Nawiguj do przodu**.
 
 ![Przyciski nawigacji do przodu i do tyłu](../ide/media/vs2017_nav_buttons.png)
 
 ## <a name="navigation-bar"></a>Pasek nawigacyjny
 
-Możesz użyć **paska nawigacyjnego** (pola rozwijane w górnej części okna kod), aby przejść do kodu w kodzie bazowym. Po wybraniu typu lub elementu członkowskiego można przejść bezpośrednio do niego. Pasek nawigacyjny pojawia się, gdy edytujesz kod w bazie kodu Visual Basic, C# lub C++. W przypadku klasy częściowej elementy członkowskie zdefiniowane poza bieżącym plikiem kodu mogą być wyłączone (są wtedy wyświetlane na szaro).
+Za pomocą **paska nawigacyjnego** (rozwijanych pól u góry okna kodu) można przejść do kodu w bazie kodu. Po wybraniu typu lub elementu członkowskiego można przejść bezpośrednio do niego. Pasek nawigacyjny pojawia się, gdy edytujesz kod w bazie kodu Visual Basic, C# lub C++. W przypadku klasy częściowej elementy członkowskie zdefiniowane poza bieżącym plikiem kodu mogą być wyłączone (są wtedy wyświetlane na szaro).
 
 ![Pasek nawigacyjny kodu](../ide/media/vside_navigation_bar.png)
 
@@ -65,8 +65,8 @@ Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu. Można go u�
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Shift**+**F12**
-**Wskaźnik** | Wybierz pozycję **Znajdź wszystkie odwołania z menu dostępnego** po kliknięciu prawym przyciskiem myszy
+**Keyboard** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Shift**+**F12**
+**Myszy** | Wybierz pozycję **Znajdź wszystkie odwołania z menu dostępnego** po kliknięciu prawym przyciskiem myszy
 
 ## <a name="reference-highlighting"></a>Wyróżnianie odwołań
 
@@ -104,8 +104,8 @@ Przejdź do definicji przeprowadzi Cię do definicji wybranego elementu. Aby uzy
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **F12**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do definicji** lub naciśnij klawisz **Ctrl** i kliknij nazwę typu
+**Keyboard** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **F12**
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do definicji** lub naciśnij klawisz **Ctrl** i kliknij nazwę typu
 
 ## <a name="peek-definition"></a>Zobacz definicję
 
@@ -113,8 +113,8 @@ Funkcja wglądu definicja wyświetla definicję wybranego elementu w oknie bez n
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Alt**+**F12**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz opcję **wgląd do definicji** lub naciśnij klawisz **Ctrl** i kliknij nazwę typu (Jeśli zaznaczono opcję **Otwórz definicję w widoku wglądu** )
+**Keyboard** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Alt**+**F12**
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz opcję **wgląd do definicji** lub naciśnij klawisz **Ctrl** i kliknij nazwę typu (Jeśli zaznaczono opcję **Otwórz definicję w widoku wglądu** )
 
 ## <a name="go-to-implementation"></a>Przejdź do implementacji
 
@@ -122,8 +122,8 @@ Korzystając z funkcji przejdź do implementacji, można nawigować z klasy bazo
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Ctrl**+**F12**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do implementacji**
+**Keyboard** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisz **Ctrl**+**F12**
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do implementacji**
 
 ## <a name="go-to-base"></a>Przejdź do bazy
 
@@ -131,8 +131,8 @@ Korzystając z funkcji przejdź do bazy, można nawigować po łańcuchu dziedzi
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisze **Alt**+**Home**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do podstawy**
+**Keyboard** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij klawisze **Alt**+**Home**
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu i wybierz pozycję **Przejdź do podstawy**
 
 ## <a name="call-hierarchy"></a>Hierarchia wywołań
 
@@ -140,8 +140,8 @@ Można wyświetlić wywołania do i z metody w [oknie hierarchia wywołań](../i
 
 Dane wejściowe | Funkcja
 ------------ | ---
-**Klawiatury** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij **klawisze ctrl**+**K**, **Ctrl**+**t**
-**Wskaźnik** | Kliknij prawym przyciskiem myszy nazwę elementu członkowskiego i wybierz pozycję **Wyświetl hierarchię wywołań**
+**Keyboard** | Umieść kursor tekstowy w miejscu wewnątrz nazwy typu, a następnie naciśnij **klawisze ctrl**+**K**, **Ctrl**+**t**
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę elementu członkowskiego i wybierz pozycję **Wyświetl hierarchię wywołań**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Polecenia Next i Previous metody (Visual Basic)
 

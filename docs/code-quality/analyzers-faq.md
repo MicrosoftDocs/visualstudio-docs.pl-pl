@@ -4,17 +4,17 @@ ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc30d0299e83423474c673b9d32e019885c2d52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 680d52ff04553d399b6abeb53919d8aafd4fa792
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603876"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573251"
 ---
 # <a name="code-analysis-faq"></a>Analiza kodu — często zadawane pytania
 
@@ -47,7 +47,7 @@ Oprócz zestawów reguł i plików EditorConfig Niektóre analizatory są konfig
 
 **P**: czy analiza kodu oparta na .NET compiler platform jest zgodna z kompilacjami ciągłej integracji (ci)?
 
-Odp **.: tak**. W przypadku analizatorów instalowanych z pakietu NuGet te reguły są [wymuszane w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym w trakcie kompilacji elementu konfiguracji. Analizatory używane w kompilacjach CI respektują konfigurację reguły z obu zestawów reguł i plików EditorConfig. Obecnie analizatory kodu, które są wbudowane w program Visual Studio, nie są dostępne jako pakiet NuGet, dlatego te reguły nie są wymuszane w kompilacji CI.
+**Odpowiedź:** Tak. W przypadku analizatorów instalowanych z pakietu NuGet te reguły są [wymuszane w czasie kompilacji](roslyn-analyzers-overview.md#build-errors), w tym w trakcie kompilacji elementu konfiguracji. Analizatory używane w kompilacjach CI respektują konfigurację reguły z obu zestawów reguł i plików EditorConfig. Obecnie analizatory kodu, które są wbudowane w program Visual Studio, nie są dostępne jako pakiet NuGet, dlatego te reguły nie są wymuszane w kompilacji CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analizatory IDE a StyleCop
 
@@ -91,4 +91,4 @@ Odp **.: aby**zapobiec potraktowaniu ostrzeżeń analizy kodu jako błędów, wy
 ## <a name="see-also"></a>Zobacz także
 
 - [Przegląd analizatorów](roslyn-analyzers-overview.md)
-- [Ustawienia konwencji kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [.NET coding convention ustawienia dla wtyczki EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

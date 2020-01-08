@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eff5e0d2f13bfe462ff19d6cfb4e8a32a15a6064
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639639"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586110"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typizowane i nietypizowane zestawy danych
 Określony zestaw danych jest zestawem danych, który najpierw pochodzi od klasy bazowej <xref:System.Data.DataSet>, a następnie używa informacji z **Projektant obiektów DataSet**, który jest przechowywany w pliku XSD, aby wygenerować nową, silnie wpisaną klasę zestawu danych. Informacje ze schematu (tabele, kolumny i tak dalej) są generowane i kompilowane w tej nowej klasie DataSet jako zestaw obiektów i właściwości pierwszej klasy. Ponieważ typ DataSet dziedziczy z klasy podstawowej <xref:System.Data.DataSet>, Klasa Type przyjmuje wszystkie funkcje klasy <xref:System.Data.DataSet> i może być używana z metodami, które pobierają wystąpienie klasy <xref:System.Data.DataSet> jako parametr.

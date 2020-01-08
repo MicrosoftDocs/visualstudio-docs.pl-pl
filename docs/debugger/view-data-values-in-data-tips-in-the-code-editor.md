@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903890"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404279"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Podgląd wartości danych w DataTips w edytorze kodu
 
@@ -96,7 +96,7 @@ Aby edytować wartość zmiennej lub elementu w poradzie dotyczącej danych, wyb
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>Przypnij właściwości w etykietkach danych (obsługiwane w programie Visual Studio 2019 w wersji 16,4 Preview 3 lub nowszej)
+## <a name="pin-properties-in-datatips"></a>Przypnij właściwości w etykietach danych
 
 > [!NOTE]
 > Ta funkcja jest obsługiwana w przypadku platformy .NET Core 3,0 lub nowszej.

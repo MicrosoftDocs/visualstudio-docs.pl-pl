@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589698"
 ---
 # <a name="customize-the-properties-window"></a>Dostosowywanie okno Właściwości
 
@@ -40,7 +40,7 @@ Niektóre funkcje dynamiczne elementów graficznych mogą być reprezentowane lu
 
 Kliknij prawym przyciskiem myszy klasę Shape w definicji DSL, wskaż polecenie **Dodaj uwidocznione**, a następnie wybierz funkcję.
 
-Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić **kolor** `,` właściwości**TextColor**, **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
+Na kształtach można uwidocznić właściwości **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** i **FillGradientMode** . Na łącznikach można uwidocznić **kolor**`,`właściwości **TextColor**, **DashStyle**i **grubość** . Na diagramach można uwidocznić właściwości **FillColor** i **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Przekazywanie: właściwości wyświetlania powiązanych elementów
 
@@ -62,7 +62,7 @@ Gdy użytkownik wybierze kształt lub łącznik lub element w Eksploratorze, w o
 
 ### <a name="add-property-forwarding"></a>Dodaj przekazywanie właściwości
 
-Aby przesłać dalej właściwość, należy zdefiniować deskryptor typu domeny. Jeśli istnieje relacja domeny między dwiema klasami domeny, można użyć deskryptora typu domeny, aby ustawić właściwość domeny w pierwszej klasie na wartość właściwości domeny w drugiej klasie domeny. Na przykład, jeśli istnieje relacja między klasą **domeny i** klasą **autora** , można użyć deskryptora typu domeny, aby właściwość **Nazwa** **autora** książki była wyświetlana w okno właściwości, gdy użytkownik wybiera książkę.
+Aby przesłać dalej właściwość, należy zdefiniować deskryptor typu domeny. Jeśli istnieje relacja domeny między dwiema klasami domeny, można użyć deskryptora typu domeny, aby ustawić właściwość domeny w pierwszej klasie na wartość właściwości domeny w drugiej klasie domeny. Na przykład, jeśli istnieje relacja między klasą **domeny i** klasą **autora** , można użyć deskryptora typu domeny, aby właściwość **Nazwa** **autora** książki była wyświetlana w okno właściwości, gdy użytkownik wybierze książkę.
 
 > [!NOTE]
 > Przekazywanie właściwości ma wpływ tylko na okno Właściwości, gdy użytkownik edytuje model. Nie definiuje właściwości domeny dla klasy odbiorczej. Jeśli chcesz uzyskać dostęp do właściwości domeny przekazanej w innych częściach definicji DSL lub w kodzie programu, musisz uzyskać dostęp do elementu przekazującego.
@@ -146,7 +146,7 @@ Dodaj atrybut CLR do właściwości Domain w następującej postaci:
 
 Można ustawić atrybut dla właściwości przy użyciu wpisu **atrybutu niestandardowego** w okno właściwości.
 
-Typ `AnEditor` musi pochodzić od typu określonego w drugim parametrze. Drugi parametr powinien mieć wartość <xref:System.Drawing.Design.UITypeEditor> lub <xref:System.ComponentModel.ComponentEditor>. Aby uzyskać więcej informacji, zobacz <xref:System.ComponentModel.EditorAttribute>.
+Typ `AnEditor` musi pochodzić od typu określonego w drugim parametrze. Drugi parametr powinien mieć wartość <xref:System.Drawing.Design.UITypeEditor> lub <xref:System.ComponentModel.ComponentEditor>. Aby uzyskać więcej informacji, zobacz temat <xref:System.ComponentModel.EditorAttribute>.
 
 Możesz określić własny edytor lub Edytor .NET, taki jak <xref:System.Windows.Forms.Design.FileNameEditor> lub <xref:System.Drawing.Design.ImageEditor>. Na przykład użyj poniższej procedury, aby określić właściwość, w której użytkownik może wprowadzić nazwę pliku.
 
@@ -183,7 +183,7 @@ Należy zdefiniować edytor, pisząc klasę, która jest pochodną <xref:System.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, aby określić, czy edytor ma otworzyć okno dialogowe, czy udostępnić menu rozwijane.
 
-Możesz również dostarczyć graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. W tym celu Zastąp `GetPaintValueSupported` i `PaintValue`.  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
+Możesz również dostarczyć graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. W tym celu Zastąp `GetPaintValueSupported`i `PaintValue`.  Aby uzyskać więcej informacji, zobacz temat <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Dodaj kod w osobnym pliku kodu w projekcie **DSL** .
@@ -210,7 +210,7 @@ Aby użyć tego edytora, należy ustawić **atrybut niestandardowy** właściwo�
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
+Aby uzyskać więcej informacji, zobacz temat <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Podaj listę rozwijaną wartości
 

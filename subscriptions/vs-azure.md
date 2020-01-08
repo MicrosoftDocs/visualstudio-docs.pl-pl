@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować usługę Azure DevTest z korzyściami z tytułu skorzystania z subskrypcji programu Visual Studio.
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810042"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405311"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Używanie Microsoft Azure w subskrypcjach programu Visual Studio
 Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dodatkowych opłat.  W przypadku comiesięcznych środków na korzystanie z [platformy Azure DevTest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), platforma Azure jest osobistą piaskownicą na potrzeby tworzenia i testowania.  Możesz udostępniać maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytowe różnią się w zależności od poziomu subskrypcji.
@@ -23,19 +23,23 @@ Jako subskrybent programu Visual Studio możesz używać Microsoft Azure bez dod
    > [!div class="mx-imgBorder"]
    > ![kafelków platformy Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure, kliknij pole wyboru w celu zaakceptowania warunków & warunki i kliknij przycisk **Utwórz konto**:
+3. Jeśli nie masz istniejącej subskrypcji platformy Azure, zostanie wyświetlony monit o wypełnienie wymaganych informacji w celu utworzenia subskrypcji platformy Azure.  Pierwszym krokiem jest podanie informacji osobistych, a następnie kliknięcie **przycisku Dalej**.
    > [!div class="mx-imgBorder"]
-   > ![](_img/vs-azure/vs-azure-sign-up-cropped.png) rejestracji w usłudze Azure, jeśli masz istniejącą subskrypcję, kliknij pole wyboru, aby zaakceptować umowę, a następnie kliknij przycisk **Utwórz konto**.
+   > ![](_img/vs-azure/vs-azure-about-you.png) rejestracji na platformie Azure
 
-4. Gdy Twoje konto jest gotowe, będziesz mieć możliwość wybrania planu pomocy technicznej platformy Azure (sprzedawanego osobno) lub rozpoczęcia pracy z subskrypcją platformy Azure.
+4. Następnie musisz zweryfikować swoją tożsamość przy użyciu prostego kodu weryfikacyjnego. Podaj numer telefonu, a następnie wybierz, czy chcesz otrzymać kod za pomocą tekstu, czy telefonu.  Wprowadź otrzymany kod, a następnie kliknij przycisk **Weryfikuj kod**.   
    > [!div class="mx-imgBorder"]
-   > ![platformy Azure — przygotowanie](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![platformy Azure — przygotowanie](_img/vs-azure/vs-azure-identity.png)
 
-5. Zostanie załadowana centrum szybkiego startu pulpitu nawigacyjnego platformy Azure.  
+5. W przypadku kroku końcowego kliknij pole wyboru, aby zaakceptować warunki, a następnie kliknij pozycję **Utwórz konto**.  To wszystko.
    > [!div class="mx-imgBorder"]
-   > ![pulpit nawigacyjny platformy Azure](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![platformy Azure — przygotowanie](_img/vs-azure/vs-azure-agreement.png)
 
-6. Tworzenie zakładek w [witrynie Azure Portal](https://portal.azure.com) w celu łatwego dostępu w przyszłości.
+0. Zostanie załadowana centrum szybkiego startu pulpitu nawigacyjnego platformy Azure.  
+   > [!div class="mx-imgBorder"]
+   > ![pulpit nawigacyjny platformy Azure](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. Tworzenie zakładek [Azure Portal](https://portal.azure.com) w celu łatwego dostępu w przyszłości.
 
 
 ## <a name="eligibility"></a>Uprawnienie

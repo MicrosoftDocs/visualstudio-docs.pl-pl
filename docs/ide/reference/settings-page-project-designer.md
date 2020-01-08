@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645262"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566777"
 ---
 # <a name="settings-page-project-designer"></a>Strona Ustawienia, Projektant projektu
 
 Użyj strony **Ustawienia** projektanta projektu, aby określić ustawienia aplikacji projektu. Ustawienia aplikacji umożliwiają dynamiczne przechowywanie i pobieranie ustawień właściwości oraz innych informacji dotyczących aplikacji. Umożliwiają one również obsługę niestandardowych preferencji aplikacji i użytkowników na komputerze klienckim. Aby uzyskać więcej informacji, zobacz [Zarządzanie ustawieniami aplikacji](../managing-application-settings-dotnet.md).
 
-Aby uzyskać dostęp do strony **Ustawienia** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz pozycję **Project**  > **Właściwości**. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **Ustawienia** .
+Aby uzyskać dostęp do strony **Ustawienia** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz pozycję **Project** > **Właściwości**. Gdy zostanie wyświetlony Projektant projektu, wybierz kartę **Ustawienia** .
 
 ## <a name="header-bar"></a>Pasek nagłówka
 
@@ -69,7 +69,7 @@ Aby uzyskać więcej informacji na temat klas pomocnika ustawień, zobacz [Zarz�
 
 Wprowadź nazwę ustawienia aplikacji w tym polu.
 
-**Wprowadź**
+**Typ**
 
 Użyj listy rozwijanej, aby wybrać typ ustawienia. Najczęściej używane typy pojawiają się na liście rozwijanej, na przykład **ciąg**, **(ciąg połączenia)** i **System. Drawing. Font**. Możesz wybrać inny typ, wybierając pozycję **Przeglądaj** na końcu listy, a następnie wybierając typ z okna dialogowego **Wybierz typ** . Po wybraniu typu zostanie on dodany do typów wspólnych na liście rozwijanej (tylko dla bieżącego rozwiązania).
 

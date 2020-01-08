@@ -4,21 +4,21 @@ ms.date: 10/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - automated testing, lab management, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 223e494181eed4e137e096f13127c450e41c8db5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bd6e9b2d9ea408e451b7032a00c3c96fb0ef2b58
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566829"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Użyj Azure Test Plans zamiast Lab Management do testowania automatycznego
 
-Jeśli używasz Microsoft Test Manager i Lab Management do testowania automatycznego lub dla automatyzacji Kompilacja-Wdrażanie-test, w tym temacie wyjaśniono, jak można osiągnąć te same cele przy użyciu funkcji [kompilowania i](/azure/devops/pipelines/index?view=vsts) wydawania w Azure Pipelines i Team Foundation Server (TFS) .
+Jeśli używasz Microsoft Test Manager i Lab Management do testowania automatycznego lub dla automatyzacji Kompilacja-Wdrażanie-test, w tym temacie wyjaśniono, jak można osiągnąć te same cele przy użyciu funkcji [kompilowania i](/azure/devops/pipelines/index?view=vsts) wydawania w Azure Pipelines i Team Foundation Server (TFS).
 
 ## <a name="build-deploy-test-automation"></a>Kompilacja-Wdrażanie-test Automation
 
@@ -32,14 +32,14 @@ Microsoft Test Manager i Lab Management polegają na definicji kompilacji XAML w
 
 W tym scenariuszu niektóre korzyści wynikające z używania Azure Pipelines lub TFS są następujące:
 
-* Kontroler kompilacji lub kontroler testów nie jest potrzebny.
-* Agent testowy jest instalowany za pomocą zadania w ramach kompilacji lub wydania.
-* Można łatwo dostosować kroki wdrażania. Nie można już używać pojedynczego skryptu. Możesz również skorzystać z wielu zadań dostępnych w produkcie, jak również w Visual Studio Marketplace.
-* Nie musisz obsługiwać zestawów testów. Można bezpośrednio uruchamiać testy z plików binarnych.
+* Nie trzeba kontrolera kompilacji lub kontrolera testów.
+* Agent testowy jest zainstalowany za pomocą zadania jako część kompilacji lub wydania.
+* To można łatwo dostosować procedury wdrażania. Nie jesteś już ograniczone do korzystania z jednego skryptu. Możesz również korzystać z zalet wiele zadań, które są dostępne w ramach produktu, a także jak Visual Studio Marketplace.
+* Nie musisz obsługiwać zestawów testów. Można bezpośrednio uruchomić testy z plików binarnych.
 * Uzyskasz bogatsze wbudowane środowisko raportowania dla testów, które zostały uruchomione w ramach każdej kompilacji lub wydania.
-* Można śledzić, które zasoby (wydanie, kompilacja, elementy robocze, zatwierdzenia) są obecnie wdrażane i testowane w każdym środowisku.
-* Możesz dostosować i zwiększyć automatyzację, aby łatwo wdrożyć ją w wielu środowiskach testowych, a nawet w środowisku produkcyjnym.
-* Można zaplanować, aby Automatyzacja zaplanował się zawsze, gdy istnieje Zaewidencjonuj lub Zatwierdź lub w określonym czasie każdego dnia.
+* Trwałe, które można śledzić (wydania, tworzenie elementów roboczych, zatwierdzeń) są obecnie wdrożone i przetestowane w każdym środowisku.
+* Można dostosować i rozszerzyć automatyzację, aby łatwo wdrożyć do wielu środowisk testowych, a nawet do środowiska produkcyjnego.
+* Można zaplanować automatyzacji, który ma być wykonywana zawsze, gdy występuje lub ewidencjonowania zatwierdzenia lub codziennie o określonej godzinie.
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Samoobsługowe zarządzanie środowiskami SCVMM
 

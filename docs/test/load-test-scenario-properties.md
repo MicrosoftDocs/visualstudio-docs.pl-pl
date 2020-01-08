@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652968"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584442"
 ---
 # <a name="load-test-scenario-properties"></a>Właściwości scenariusza testu obciążenia
 
@@ -41,12 +41,12 @@ Zmień ustawienia właściwości scenariusza testu obciążenia w programie Visu
 
 |Właściwość|Definicja|
 |-|----------------|
-|**Agenci do użycia**|Określa agentów, których scenariusz ma używać w przypadku zdalnego uruchamiania testu obciążenia. Na przykład można określić konkretny zestaw agentów, aby zachować spójność podczas analizowania trendów wydajności. Agenci mogą być również rozproszeni geograficznie, tak aby istniała koligacja między skryptami wykonywanymi przez agentów a lokalizacją agentów.<br /><br />Agenci muszą być oddzielone przecinkami, na przykład "**agenta 1, agenta 2, agenta 3**". Niewypełnienie tej właściwości oznacza, że scenariusz powinien wykorzystywać wszystkich dostępnych agentów.<br /><br />Aby uzyskać więcej informacji, zobacz [How to: Określ agentów testowych do użycia](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Agenci do użycia**|Określa agentów, których scenariusz ma używać w przypadku zdalnego uruchamiania testu obciążenia. Na przykład można określić konkretny zestaw agentów, aby zachować spójność podczas analizowania trendów wydajności. Agenci mogą być również rozproszeni geograficznie, tak aby istniała koligacja między skryptami wykonywanymi przez agentów a lokalizacją agentów.<br /><br />Agenci muszą być rozdzielone przecinkami, na przykład "**agenta agenta 1, agenta 2, 3**". Niewypełnienie tej właściwości oznacza, że scenariusz powinien wykorzystywać wszystkich dostępnych agentów.<br /><br />Aby uzyskać więcej informacji, zobacz [How to: Określ agentów testowych do użycia](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Zastosuj rozkład do opóźnienia tempem**|Wartość logiczna, która jest używana do określenia, czy chcesz zastosować typowe opóźnienia dystrybucji w modelu mieszanym testu tempem użytkownika. Ta właściwość ma zastosowanie tylko wtedy, gdy właściwość **test mix Type** ma ustawioną wartość na **podstawie tempa użytkownika**.<br /><br />Aby uzyskać więcej informacji, zobacz [jak: stosowanie dystrybucji do opóźnienia tempem](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
-|**Przełączanie adresów IP**|Wartość logiczna, która jest używana do określenia, czy jest używane Przełączanie adresów IP.<br /><br />Przełączenie IP pozwala agentowi testowemu wysyłać żądania do serwera przy użyciu różnych adresów IP. Symuluje to wywołania pochodzące z różnych komputerów klienckich. Przełączanie IP jest ważne w przypadku testowania względem kolektywu serwerów sieci Web z równoważeniem obciążenia. Większość modułów równoważenia obciążenia ustanawia koligację między klientem a określonym serwerem sieci Web przy użyciu adresu IP klienta. Jeśli wszystkie żądania wyglądają jak pochodzą z jednego klienta, moduł równoważenia obciążenia nie będzie zrównoważyć obciążenia. Aby uzyskać dobre Równoważenie obciążenia w kolektywie serwerów sieci Web, należy pamiętać, że żądania pochodzą z zakresu adresów IP.<br /><br />Funkcja przełączania adresów IP jest dostępna w przypadku używania agenta testowego.|
+|**Przełączanie adresów IP**|Wartość logiczna, która jest używana do określenia, czy jest używane Przełączanie adresów IP.<br /><br />Przełączenie IP pozwala agentowi testowemu wysyłać żądania do serwera przy użyciu różnych adresów IP. Symuluje to wywołania, które pochodzą z różnych komputerów klienckich. Przełączanie IP jest ważne w przypadku testowania względem kolektywu serwerów sieci Web z równoważeniem obciążenia. Większość modułów równoważenia obciążenia ustanawia koligację między klientem a określonym serwerem sieci Web przy użyciu adresu IP klienta. Jeśli wszystkie żądania wydają się przychodzić od jednego klienta, moduł równoważenia obciążenia nie zrównoważy obciążenia. Aby uzyskać dobre Równoważenie obciążenia w kolektywie serwerów sieci Web, należy pamiętać, że żądania pochodzą z zakresu adresów IP.<br /><br />Funkcja przełączania adresów IP jest dostępna w przypadku używania agenta testowego.|
 |**Maksymalna liczba iteracji testu**|Wartość liczbowa służąca do określenia maksymalnej liczby testów, jakie mają zostać wykonane w scenariuszu. Wartość 0 oznacza brak maksimum.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie iteracji testowych dla scenariuszy](../test/configure-test-iterations-in-a-load-test-scenario.md).|
 |**Procent nowych użytkowników**|Wartość liczbowa określająca procent nowych użytkowników lub gości w scenariuszu.<br /><br />Aby uzyskać więcej informacji, zobacz [How to: Określanie procentu użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
-|**Profil myśli**|Określa, czy scenariusz będzie używać **rozkładu normalnego**, czy też profil myśli jest **włączony** czy **wyłączony**.<br /><br />Aby uzyskać więcej informacji, zobacz [Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web](../test/edit-think-times-in-load-test-scenarios.md).|
+|**Profil myśli**|Określa, czy scenariusz będzie używać **rozkładu normalnego**, czy też profil myśli jest **włączony** czy **wyłączony**.<br /><br />Aby uzyskać więcej informacji, zobacz [reakcji edycji razy do symulacji witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Chronometraż
 
@@ -54,7 +54,7 @@ Zmień ustawienia właściwości scenariusza testu obciążenia w programie Visu
 |-|----------------|
 |**Opóźnienie godziny rozpoczęcia**|Wartość czasu, która wskazuje, ile godzin, minut i sekund ma trwać opóźnienie rozpoczęcia scenariusza po rozpoczęciu testu obciążeniowego. Jeśli właściwość **disable podczas rozgrzewania** ma wartość **true**, czas oczekiwania będzie obowiązywać po zakończeniu okresu rozgrzewania.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie opóźnień uruchamiania scenariusza](../test/configure-scenario-start-delays.md).|
 |**Wyłącz podczas rozgrzewania**|Wartość logiczna, która jest używana do określenia, czy scenariusz ma być uruchamiany, czy nie w wartości czasu właściwości czas **trwania rozgrzewania** określonej w ustawieniu przebiegu testu obciążenia.<br /><br />Aby uzyskać więcej informacji na temat właściwości ustawienia przebiegu testu obciążenia, zobacz [właściwości ustawień przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie opóźnień uruchamiania scenariusza](../test/configure-scenario-start-delays.md).|
-|**Czasy reakcji między iteracjami testu**|Wartość liczbowa służąca do określenia czasu oczekiwania (w sekundach) między iteracjami testu.<br /><br />Aby uzyskać więcej informacji, zobacz [Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web](../test/edit-think-times-in-load-test-scenarios.md).|
+|**Czasy reakcji między iteracjami testu**|Wartość liczbowa służąca do określenia czasu oczekiwania (w sekundach) między iteracjami testu.<br /><br />Aby uzyskać więcej informacji, zobacz [reakcji edycji razy do symulacji witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="see-also"></a>Zobacz także
 

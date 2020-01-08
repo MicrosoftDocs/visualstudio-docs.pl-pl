@@ -3,17 +3,17 @@ title: 'Przykładowy plik XSD: prosty schemat'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b6681e47ba33d16cd48f5f34389a5d113fc36ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651163"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592545"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Przykładowy plik XSD: prosty schemat
 

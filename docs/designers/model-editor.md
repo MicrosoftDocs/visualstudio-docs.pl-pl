@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7adee409ff6bb5721724b9acc2e76a11d32a4f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635033"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589854"
 ---
 # <a name="model-editor"></a>Edytor modelu
 
@@ -30,9 +30,9 @@ Korzystając z **Edytora modelu** , można tworzyć podstawowe modele 3W od pods
 
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj, Utwórz)|
 |-----------------| - | - |
-|Plik wymiany AutoDesk FBX|*. FBX*|Wyświetl, edytuj, utwórz|
-|Plik w formacie Collada DAE|*. DAE*|Wyświetl, edytuj (modyfikacje plików Collada DAE są zapisywane przy użyciu formatu FBX).|
-|OBJ|*. obj*|Wyświetl, edytuj (modyfikacje plików OBJ są zapisywane przy użyciu formatu FBX).|
+|Plik wymiany AutoDesk FBX|*.fbx*|Wyświetl, edytuj, utwórz|
+|Plik w formacie Collada DAE|*.dae*|Wyświetl, edytuj (modyfikacje plików Collada DAE są zapisywane przy użyciu formatu FBX).|
+|OBJ|*.obj*|Wyświetl, edytuj (modyfikacje plików OBJ są zapisywane przy użyciu formatu FBX).|
 
 ## <a name="get-started"></a>Wprowadzenie
 
@@ -45,13 +45,13 @@ W tej sekcji opisano, jak dodać model 3D do projektu programu Visual C++ Studio
 
 1. Upewnij się, że masz zainstalowany wymagany składnik programu Visual Studio, który jest potrzebny do pracy z grafiką. Składnik jest nazywany **edytorami obrazów i modeli 3W**.
 
-   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **narzędzia**  > **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w obszarze  **Kategoria gry i grafika** , a następnie wybierz polecenie **Modyfikuj**.
+   Aby go zainstalować, Otwórz Instalator programu Visual Studio, wybierając pozycję **narzędzia** > **Pobierz narzędzia i funkcje** z paska menu, a następnie wybierz kartę **poszczególne składniki** . Wybierz składnik **obrazy i edytory modelu 3W** w kategorii **gry i grafika** , a następnie wybierz polecenie **Modyfikuj**.
 
    ![Składnik edytorów obrazów i modeli 3W](media/image-3d-model-editors-component.png)
 
    Składnik zostanie uruchomiony.
 
-2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla C++ projektu, do którego chcesz dodać obraz, a następnie wybierz polecenie **Dodaj**  > **nowy element**.
+2. W **Eksplorator rozwiązań**Otwórz menu skrótów dla C++ projektu, do którego chcesz dodać obraz, a następnie wybierz polecenie **Dodaj** > **nowy element**.
 
 3. W oknie dialogowym **Dodaj nowy element** w obszarze Kategoria **grafiki** wybierz pozycję **scena 3D (. FBX)** .
 
@@ -90,7 +90,7 @@ W tej tabeli opisano elementy na pasku narzędzi **Tryb edytora modelu** , któr
 |------------------|-----------------|
 |**Wybór**|Umożliwia wybór punktów, krawędzi, powierzchni lub obiektów w scenie, w zależności od aktywnego trybu zaznaczenia.|
 |**Przesuwanie**|Umożliwia przenoszenie sceny 3D względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby tymczasowo aktywować tryb **przesuwania** .|
-|**Zmieniać**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W trybie **powiększenia** wybierz punkt w scenie, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **wyboru** można powiększać i pomniejszać przy użyciu kółka myszy podczas naciskania i przytrzymania klawisza **Ctrl**.|
+|**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W trybie **powiększenia** wybierz punkt w scenie, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **wyboru** można powiększać i pomniejszać przy użyciu kółka myszy podczas naciskania i przytrzymania klawisza **Ctrl**.|
 |**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:**  Ten tryb nie działa, gdy jest włączone rzutowanie **ortogonalne** .|
 |**Świat lokalny**|Po włączeniu tego elementu przekształcenia wybranego obiektu występują w przestrzeni kuli ziemskiej. W przeciwnym razie przekształcenia na zaznaczonym obiekcie występują w przestrzeni lokalnej.|
 |**Tryb przestawny**|Gdy ten element jest włączony, przekształcenia wpływają na położenie i orientację *punktu obrotu* wybranego obiektu (punkt obrotu definiuje centrum operacji tłumaczenia, skalowania i rotacji). W przeciwnym razie przekształcenia wpływają na położenie i orientację geometrii obiektu względem punktu obrotu.|
@@ -98,7 +98,7 @@ W tej tabeli opisano elementy na pasku narzędzi **Tryb edytora modelu** , któr
 |**Zablokuj oś Y**|Ogranicza możliwość manipulacji obiektem tylko do osi y. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Zablokuj oś Z**|Ogranicza możliwość manipulacji obiektem tylko do osi z. Stosuje się tylko w przypadku użycia środkowej części widżetu manipulatora.|
 |**Frame — obiekt**|Umieszcza zaznaczony obiekt w ramce, tak aby znajdował się w środku widoku.|
-|**Widokiem**|Ustawienie orientacji widoku. Oto dostępne orientacje:<br /><br /> **FSB**<br /> Umieszcza widok przed sceną.<br /><br /> **Wstecz**<br /> Umieszcza widok za sceną.<br /><br /> **Lewym**<br /> Umieszcza widok z lewej strony sceny.<br /><br /> **Kliknij**<br /> Umieszcza widok z prawej strony sceny.<br /><br /> **Do góry**<br /> Umieszcza widok nad sceną.<br /><br /> **Stop**<br /> Umieszcza widok pod sceną. **Uwaga:**  Jest to jedyny sposób zmiany kierunku widoku, gdy jest włączone rzutowanie **ortogonalne** .|
+|**Widok**|Ustawienie orientacji widoku. Oto dostępne orientacje:<br /><br /> **FSB**<br /> Umieszcza widok przed sceną.<br /><br /> **Wstecz**<br /> Umieszcza widok za sceną.<br /><br /> **po lewej stronie**<br /> Umieszcza widok z lewej strony sceny.<br /><br /> **Kliknij**<br /> Umieszcza widok z prawej strony sceny.<br /><br /> **Do góry**<br /> Umieszcza widok nad sceną.<br /><br /> **Stop**<br /> Umieszcza widok pod sceną. **Uwaga:**  Jest to jedyny sposób zmiany kierunku widoku, gdy jest włączone rzutowanie **ortogonalne** .|
 |**Projekcja**|Określa rodzaj rzutowania, który służy do rysowania sceny. Oto dostępne rzuty:<br /><br /> **Perspektywy**<br /> W rzutowaniu perspektywicznym obiekty, które są oddalone od punktu obserwacji, wyglądają na mniejsze, i ostatecznie zbiegają się do jednego punktu w odległości.<br /><br /> **Rzut**<br /> W rzutowaniu prostopadłym obiekty wydają się mieć taki sam rozmiar, niezależnie od ich odległości od punktu obserwacji. Nie są wyświetlane żadne zbieżności. Gdy rzutowanie **ortogonalne** jest włączone, nie można użyć trybu **Orbita** do położenia widoku.|
 |**Styl rysowania**|Określa sposób renderowania obiektów w scenie. Oto dostępne style:<br /><br /> **Ramka druciana**<br /> Po włączeniu obiekty są renderowane jako szkieletowe.<br /><br /> **Odświeżanie**<br /> Po włączeniu obiekty są renderowane przy użyciu mieszania sumującego. Umożliwia to wizualizację ilości overdrawingu pojawiającego się w scenie.<br /><br /> **Płaskie cieniowanie**<br /> Po włączeniu obiekty są renderowane przy użyciu podstawowego, płaskiego zacieniowanego modelu oświetlenia. Umożliwia to łatwiejsze obejrzenie powierzchni obiektu.<br /><br /> Jeśli żadna z tych opcji nie jest włączona, każdy obiekt jest renderowany przy użyciu materiału, który jest do niego stosowany.|
 |**Tryb renderowania w czasie rzeczywistym**|Po włączeniu renderowania w czasie rzeczywistym program Visual Studio ponownie rysuje powierzchnię projektu, nawet jeśli nie jest wykonywana żadna akcja użytkownika. Ten tryb jest przydatny podczas pracy z cieniowaniami zmieniającymi się w czasie.|
@@ -106,7 +106,7 @@ W tej tabeli opisano elementy na pasku narzędzi **Tryb edytora modelu** , któr
 |**Przybornik**|Alternatywnie pokazuje lub ukrywa **Przybornik**.|
 |**Konspekt dokumentu**|Alternatywnie pokazuje lub ukrywa okno **konspektu dokumentu** .|
 |**Właściwości**|Alternatywnie pokazuje lub ukrywa okno **Właściwości** .|
-|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie przy użyciu D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Renderowanie przy użyciu D3D11WARP**<br /> Używa platformy WARP (Windows Advanced Rasterization Platform) programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Zarządzanie sceną**<br /><br /> **Importujuj**<br /> Importuje obiekty z innego pliku modelu 3D do bieżącej sceny.<br /><br /> **Dołącz do elementu nadrzędnego**<br /> Ustanawia pierwszy z wielu zaznaczonych obiektów jako nadrzędny dla pozostałych zaznaczonych obiektów.<br /><br /> **Odłącz od elementu nadrzędnego**<br /> Odłącza zaznaczony obiekt od jego obiektu nadrzędnego. Wybrany obiekt zostaje *obiektem głównym* w scenie. Obiekt główny nie ma obiektu nadrzędnego.<br /><br /> **Utwórz grupę**<br /> Grupuje zaznaczone obiekty jako obiekty równorzędne.<br /><br /> **Scal obiekty**<br /> Łączy zaznaczone obiekty w jeden obiekt.<br /><br /> **Utwórz nowy obiekt z zaznaczenia wielokątnego**<br /> Usuwa z bieżącego obiektu wybrane powierzchnie i dodaje do sceny nowy obiekt zawierający te powierzchnie.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć uzwojenie wielokątne**<br /> Przerzuca wybrane wielokąty, tak że kolejność ich wierzchołków i normalnych powierzchni jest odwrócona.<br /><br /> **Usuń wszystkie animacje**<br /> Usuwa dane animacji z obiektów.<br /><br /> **Wyznacz triangulacją**<br /> Konwertuje zaznaczony obiekt na trójkąty.<br /><br /> **Widokiem**<br /><br /> Odrzucanie tylnych ścian<br /> Włącza lub wyłącza odrzucanie tylnych ścian.<br /><br /> **Szybkość klatek**<br /> Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.<br /><br /> Ta opcja jest przydatna po włączeniu opcji **tryb renderowania w czasie rzeczywistym** .<br /><br /> **Pokaż wszystko**<br /> Pokazuje wszystkie obiekty w scenie. Spowoduje to zresetowanie **ukrytej** właściwości każdego obiektu do **wartości false**.<br /><br /> **Pokaż normalne wyglądy**<br /> Pokazuje normalną każdej powierzchni.<br /><br /> **Pokaż brakujące materiały**<br /> Wyświetla specjalną teksturę na obiektach, które nie mają przypisanych materiałów.<br /><br /> **Pokaż przestawkę**<br /> Włącza lub wyłącza wyświetlanie znacznika osi 3W w punkcie obrotu aktywnego zaznaczenia.<br /><br /> **Pokaż węzły zastępcze**<br /> Pokazuje węzły zastępcze. Węzeł zastępczy jest tworzony podczas grupowania obiektów.<br /><br /> **Pokaż normalne wierzchołki**<br /> Pokazuje normalną każdego wierzchołka. **Porada:**  Możesz wybrać przycisk **skrypty** , aby ponownie uruchomić ostatni skrypt.|
+|**Zaawansowane**|Zawiera zaawansowane polecenia i opcje.<br /><br /> **Aparaty grafiki**<br /><br /> **Renderowanie przy użyciu D3D11**<br /> Używa programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Renderowanie przy użyciu D3D11WARP**<br /> Używa platformy WARP (Windows Advanced Rasterization Platform) programu Direct3D 11 do renderowania powierzchni projektowania Edytora modelu.<br /><br /> **Zarządzanie sceną**<br /><br /> **Importujuj**<br /> Importuje obiekty z innego pliku modelu 3D do bieżącej sceny.<br /><br /> **Dołącz do elementu nadrzędnego**<br /> Ustanawia pierwszy z wielu zaznaczonych obiektów jako nadrzędny dla pozostałych zaznaczonych obiektów.<br /><br /> **Odłącz od elementu nadrzędnego**<br /> Odłącza zaznaczony obiekt od jego obiektu nadrzędnego. Wybrany obiekt zostaje *obiektem głównym* w scenie. Obiekt główny nie ma obiektu nadrzędnego.<br /><br /> **Tworzenie grupy**<br /> Grupuje zaznaczone obiekty jako obiekty równorzędne.<br /><br /> **Scal obiekty**<br /> Łączy zaznaczone obiekty w jeden obiekt.<br /><br /> **Utwórz nowy obiekt z zaznaczenia wielokątnego**<br /> Usuwa z bieżącego obiektu wybrane powierzchnie i dodaje do sceny nowy obiekt zawierający te powierzchnie.<br /><br /> **Narzędzia**<br /><br /> **Przerzuć uzwojenie wielokątne**<br /> Przerzuca wybrane wielokąty, tak że kolejność ich wierzchołków i normalnych powierzchni jest odwrócona.<br /><br /> **Usuń wszystkie animacje**<br /> Usuwa dane animacji z obiektów.<br /><br /> **Wyznacz triangulacją**<br /> Konwertuje zaznaczony obiekt na trójkąty.<br /><br /> **Widok**<br /><br /> Odrzucanie tylnych ścian<br /> Włącza lub wyłącza odrzucanie tylnych ścian.<br /><br /> **Szybkość klatek**<br /> Wyświetla szybkość klatek w prawym górnym rogu powierzchni projektowej. Szybkość odtwarzania to liczba ramek wyświetlanych na sekundę.<br /><br /> Ta opcja jest przydatna po włączeniu opcji **tryb renderowania w czasie rzeczywistym** .<br /><br /> **Pokaż wszystko**<br /> Pokazuje wszystkie obiekty w scenie. Spowoduje to zresetowanie **ukrytej** właściwości każdego obiektu do **wartości false**.<br /><br /> **Pokaż normalne wyglądy**<br /> Pokazuje normalną każdej powierzchni.<br /><br /> **Pokaż brakujące materiały**<br /> Wyświetla specjalną teksturę na obiektach, które nie mają przypisanych materiałów.<br /><br /> **Pokaż przestawkę**<br /> Włącza lub wyłącza wyświetlanie znacznika osi 3W w punkcie obrotu aktywnego zaznaczenia.<br /><br /> **Pokaż węzły zastępcze**<br /> Pokazuje węzły zastępcze. Węzeł zastępczy jest tworzony podczas grupowania obiektów.<br /><br /> **Pokaż normalne wierzchołki**<br /> Pokazuje normalną każdego wierzchołka. **Porada:**  Możesz wybrać przycisk **skrypty** , aby ponownie uruchomić ostatni skrypt.|
 
 Oto pasek narzędzi **Edytora modelu** :
 
@@ -116,8 +116,8 @@ W następnej tabeli opisano elementy na pasku narzędzi **Edytora modelu** , kt�
 
 |Element paska narzędzi|Opis|
 |------------------|-----------------|
-|**Przetłumacz**|Przenosi zaznaczenie.|
-|**Zasięgu**|Zmienia rozmiar zaznaczenia.|
+|**Translate**|Przenosi zaznaczenie.|
+|**Skalowanie**|Zmienia rozmiar zaznaczenia.|
 |**Obróceni**|Obraca zaznaczenie.|
 |**Wybierz punkt**|Ustawia **tryb wyboru** w celu wybrania poszczególnych punktów w obiekcie.|
 |**Wybierz krawędź**|Ustawia **tryb wyboru** , aby wybrać krawędź (linię między dwoma wierzchołkami) obiektu.|
@@ -135,7 +135,7 @@ W poniższej tabeli opisano formanty widoku podstawowego.
 |Formant widoku|Opis|
 |------------------|-----------------|
 |**Przesuwanie**|Umożliwia przenoszenie sceny 3D względem ramki okna. Aby panoramować, wybierz punkt na scenie i przesuwaj go.<br /><br /> W trybie **Wybierz** możesz nacisnąć i przytrzymać klawisz **Ctrl** , aby tymczasowo aktywować tryb **przesuwania** .|
-|**Zmieniać**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W trybie **powiększenia** wybierz punkt w scenie, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **wyboru** można powiększać i pomniejszać przy użyciu kółka myszy podczas naciskania i przytrzymania klawisza **Ctrl**.|
+|**Zoom**|Umożliwia wyświetlanie większej lub mniejszej ilości szczegółów sceny względem ramki okna. W trybie **powiększenia** wybierz punkt w scenie, a następnie przenieś go w prawo lub w dół, aby powiększyć, lub w lewo lub w górę, aby pomniejszyć.<br /><br /> W trybie **wyboru** można powiększać i pomniejszać przy użyciu kółka myszy podczas naciskania i przytrzymania klawisza **Ctrl**.|
 |**Orbita**|Pozycjonuje wyświetlanie na kolistej ścieżce wokół zaznaczonego obiektu. Jeśli żaden obiekt nie jest zaznaczony, ścieżka zostanie wyśrodkowana na punkt źródłowy sceny. **Uwaga:**  Ten tryb nie działa, gdy jest włączone rzutowanie **ortogonalne** .|
 |**Frame — obiekt**|Umieszcza zaznaczony obiekt w ramce, tak aby znajdował się w środku widoku.|
 
@@ -150,13 +150,13 @@ Przydatne może być wyświetlenie sceny 3D od znanego położenia i kąta, na p
 
 ### <a name="view-additional-geometry-details"></a>Wyświetl dodatkowe szczegóły geometrii
 
-Aby lepiej zrozumieć obiekt lub scenę 3D, można wyświetlić dodatkowe szczegóły geometryczne, takie jak normalne dla wierzchołków, normalne wartości, punkty obrotu aktywnego zaznaczenia oraz inne szczegóły. Aby je włączyć lub wyłączyć, na pasku narzędzi **Edytor modelu** wybierz opcję **skrypty**  > **Widok**, a następnie wybierz odpowiedni.
+Aby lepiej zrozumieć obiekt lub scenę 3D, można wyświetlić dodatkowe szczegóły geometryczne, takie jak normalne dla wierzchołków, normalne wartości, punkty obrotu aktywnego zaznaczenia oraz inne szczegóły. Aby je włączyć lub wyłączyć, na pasku narzędzi **Edytor modelu** wybierz opcję **skrypty** > **Widok**, a następnie wybierz odpowiedni.
 
 ### Tworzenie i Importowanie obiektów 3D<a name="Adding3DObjects"></a>
 
 Aby dodać wstępnie zdefiniowany kształt 3W do sceny, w **przyborniku**wybierz jeden z nich, a następnie przenieś go do powierzchni projektowej. Nowe kształty są umieszczane w źródle sceny. Edytor modelu zawiera siedem kształtów: **stożek**, **Cube**, **walcowy**, **Disc**, **płaszczyzna**, **kula**i **czajniczek**.
 
-Aby zaimportować obiekt 3W z pliku, na pasku narzędzi **Edytor modelu** wybierz pozycję **Zaawansowane**  > **zarządzanie sceną**  > **zaimportować** > a następnie określ plik, który chcesz zaimportować.
+Aby zaimportować obiekt 3W z pliku, na pasku narzędzi **Edytor modelu** wybierz pozycję **Zaawansowane** > **zarządzanie sceną** > **zaimportować** > a następnie określ plik, który chcesz zaimportować.
 
 ### <a name="transform-objects"></a>obiekty przekształceń
 
@@ -183,7 +183,7 @@ Można przekształcić obiekt za pomocą narzędzi do modelowania lub przez usta
 
 Za pomocą narzędzi modelowania, przekształcenia można tworzyć szybko, ale nie precyzyjnie. Za pomocą ustawiania właściwości obiektu przekształcenia można określić precyzyjnie, ale nie szybko. Zalecane jest używanie narzędzi do modelowania, aby uzyskać „wystarczająco bliskie” przekształcenia, a następnie dostosować wartości właściwości.
 
-Jeśli nie chcesz używać manipulatorów, można włączyć tryb dowolnego kształtu. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Narzędzia**  > **manipulowanie formularzem bezpłatna** , aby włączyć (lub wyłączyć) tryb dowolnego formularza. W trybie dowolnego kształtu można rozpocząć manipulowanie w dowolnym punkcie powierzchni projektowej zamiast w punkcie na manipulatorze. W trybie dowolnego kształtu możesz ograniczyć zmiany do niektórych osi, blokując te, których nie chcesz zmienić. Na pasku narzędzi **Tryb edytora modelu** wybierz dowolną kombinację przycisków **blokady X**, **Zablokuj Y**i **Zablokuj z** .
+Jeśli nie chcesz używać manipulatorów, można włączyć tryb dowolnego kształtu. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Narzędzia** > **manipulowanie formularzem bezpłatna** , aby włączyć (lub wyłączyć) tryb dowolnego formularza. W trybie dowolnego kształtu można rozpocząć manipulowanie w dowolnym punkcie powierzchni projektowej zamiast w punkcie na manipulatorze. W trybie dowolnego kształtu możesz ograniczyć zmiany do niektórych osi, blokując te, których nie chcesz zmienić. Na pasku narzędzi **Tryb edytora modelu** wybierz dowolną kombinację przycisków **blokady X**, **Zablokuj Y**i **Zablokuj z** .
 
 Może się to okazać przydatne w pracy z obiektami za pomocą przyciągania do siatki. Na pasku narzędzi **Tryb edytora modelu** wybierz pozycję **Przyciągaj** , aby włączyć (lub wyłączyć) przyciąganie do siatki. Po włączeniu przyciągania do siatki, przekształcenia przesunięcia, obrotu i skalowania są ograniczone do wstępnie zdefiniowanych przyrostów.
 
@@ -207,13 +207,13 @@ Dodatkowe wierzchołki można utworzyć za pomocą wyciągnięcia lub podpodzia�
 
 1. W trybie zaznaczania powierzchni zaznacz powierzchnię, którą chcesz wyciągnąć.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Narzędzia**  > **wyciągnięcie**.
+2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Narzędzia** > **wyciągnięcie**.
 
 #### <a name="to-subdivide-faces"></a>Aby podpodzielić twarze
 
 1. W trybie zaznaczania powierzchni zaznacz powierzchnie, które chcesz podzielić na mniejsze. Ponieważ podpodział tworzy nowe dane krawędzi, podpodział jednocześnie wszystkich powierzchni zapewnia bardziej spójne wyniki, gdy powierzchnie sąsiadują.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Narzędzia** ** >  Podziel**.
+2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Narzędzia** ** > Podziel**.
 
 Można również przeprowadzać triangulację powierzchni, scalać obiekty i konwertować wielokątne zaznaczenia na nowe obiekty. Triangulacja tworzy dodatkowe krawędzie, w taki sposób, że powierzchnia nietrójkątna jest konwertowana na optymalną liczbę trójkątów; jednak nie zapewnia to dodatkowych szczegółów geometrycznych. Scalanie łączy zaznaczone obiekty w jeden obiekt. Nowe obiekty można tworzyć z zaznaczenia wielokątnego.
 
@@ -221,19 +221,19 @@ Można również przeprowadzać triangulację powierzchni, scalać obiekty i kon
 
 1. W trybie zaznaczania powierzchni zaznacz powierzchnię, dla której chcesz dokonać triangulacji.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Narzędzia**  > **triangulacja**.
+2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Narzędzia** > **triangulacja**.
 
 #### <a name="merge-objects"></a>Scal obiekty
 
 1. W trybie zaznaczania obiektów zaznacz obiekty, które chcesz scalić.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Narzędzia**  > **Scal obiekty**.
+2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Narzędzia** > **Scal obiekty**.
 
 #### <a name="create-an-object-from-a-polygon-selection"></a>Utwórz obiekt na podstawie zaznaczenia wielokątnego
 
 1. W trybie zaznaczania powierzchni zaznacz powierzchnie, z których chcesz utworzyć nowy obiekt.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz opcję **skrypty**  > **Narzędzia**  > **Utwórz nowy obiekt z zaznaczenia Wielokąt**.
+2. Na pasku narzędzi **Edytor modelu** wybierz opcję **skrypty** > **Narzędzia** > **Utwórz nowy obiekt z zaznaczenia Wielokąt**.
 
 ### <a name="work-with-materials-and-shaders"></a>Pracuj z materiałami i cieniami
 
@@ -259,9 +259,9 @@ Aby zmodyfikować sposób reakcji określonego obiektu na różne źródła świ
 |**Odblasków**|Opisuje odbijanie światła kierunkowego i punktowego przez powierzchnię.|
 |**Odblasków**|Opisuje szerokość i natężenie odbitego światła.|
 
-W zależności od tego, co obsługuje materiał, można zmienić jego właściwości oświetlenia, tekstury i inne dane. W obszarze tryb **wyboru** zaznacz obiekt, którego materiał chcesz zmienić, a następnie w oknie **Właściwości** Zmień **MaterialAmbient**, **MaterialDiffuse**, **MaterialEmissive**, **MaterialSpecular**,  **MaterialSpecularPower**lub inna dostępna właściwość. Materiał może uwidaczniać maksymalnie osiem tekstur, których właściwości są nazywane sekwencyjnie od **texture1** do **Texture8**.
+W zależności od tego, co obsługuje materiał, można zmienić jego właściwości oświetlenia, tekstury i inne dane. W obszarze tryb **wyboru** zaznacz obiekt, którego materiał chcesz zmienić, a następnie w oknie **Właściwości** Zmień wartość **MaterialAmbient**, **MaterialDiffuse**, **MaterialEmissive**, **MaterialSpecular**, **MaterialSpecularPower**lub inną dostępną właściwość. Materiał może uwidaczniać maksymalnie osiem tekstur, których właściwości są nazywane sekwencyjnie od **texture1** do **Texture8**.
 
-Aby usunąć wszystkie materiały z obiektu, na pasku narzędzi **Edytor modelu** wybierz pozycję **skrypty**  > **materiały**  > **Usuń materiały**.
+Aby usunąć wszystkie materiały z obiektu, na pasku narzędzi **Edytor modelu** wybierz pozycję **skrypty** > **materiały** > **Usuń materiały**.
 
 Można użyć **projektanta** programu do tworzenia niestandardowych materiałów programu do cieniowania, które można zastosować do obiektów w scenie 3D. Informacje o sposobach tworzenia niestandardowych materiałów programu do cieniowania można znaleźć w temacie [Shader Designer](../designers/shader-designer.md). Aby uzyskać informacje dotyczące sposobu zastosowania niestandardowego materiału do cieniowania do obiektu, zobacz [How to: Apply a Shader to a model 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
@@ -277,60 +277,60 @@ Hierarchię obiektów można utworzyć albo poprzez określenie jednego z nich j
 
 1. W obszarze tryb **wyboru** wybierz co najmniej dwa obiekty. Pierwszy wybrany będzie obiektem nadrzędnym.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Zarządzanie sceną**  > **Dołącz do elementu nadrzędnego**.
+2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Zarządzanie sceną** > **Dołącz do elementu nadrzędnego**.
 
 #### <a name="create-a-hierarchy-of-sibling-objects"></a>Tworzenie hierarchii obiektów równorzędnych
 
 1. W obszarze tryb **wyboru** wybierz co najmniej dwa obiekty. Obiekt zastępczy jest tworzony i staje się ich obiektem nadrzędnym.
 
-2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty**  > **Zarządzanie sceną**  > **Utwórz grupę**.
+2. Na pasku narzędzi **Edytor modelu** wybierz kolejno pozycje **skrypty** > **Zarządzanie sceną** > **Utwórz grupę**.
 
-Edytor modelu używa białego szkieletu do identyfikacji pierwszego wybranego obiektu, który staje się nadrzędny. Inne obiekty w zaznaczeniu mają niebieski szkielet. Domyślnie węzły zastępcze nie są wyświetlane. Aby wyświetlić węzły zastępcze, na pasku narzędzi **Edytor modelu** wybierz opcję **skrypty**  > **Zarządzanie sceną**  > **Pokaż węzły zastępcze**. Z węzłami zastępczymi można pracować tak samo, jak z obiektami bez obiektu zastępczego.
+Edytor modelu używa białego szkieletu do identyfikacji pierwszego wybranego obiektu, który staje się nadrzędny. Inne obiekty w zaznaczeniu mają niebieski szkielet. Domyślnie węzły zastępcze nie są wyświetlane. Aby wyświetlić węzły zastępcze, na pasku narzędzi **Edytor modelu** wybierz opcję **skrypty** > **Zarządzanie sceną** > **Pokaż węzły zastępcze**. Z węzłami zastępczymi można pracować tak samo, jak z obiektami bez obiektu zastępczego.
 
-Aby usunąć skojarzenie nadrzędny-podrzędny między dwoma obiektami, zaznacz obiekt podrzędny, a następnie na pasku narzędzi **Edytor modelu** wybierz pozycję **skrypty**  > **Zarządzanie sceną**  > **Odłącz od elementu nadrzędnego**. Po odłączeniu elementu nadrzędnego od obiektu podrzędnego obiekt podrzędny staje się obiektem głównym w scenie.
+Aby usunąć skojarzenie nadrzędny-podrzędny między dwoma obiektami, zaznacz obiekt podrzędny, a następnie na pasku narzędzi **Edytor modelu** wybierz pozycję **skrypty** > **Zarządzanie sceną** > **Odłącz od elementu nadrzędnego**. Po odłączeniu elementu nadrzędnego od obiektu podrzędnego obiekt podrzędny staje się obiektem głównym w scenie.
 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 |Polecenie|Skróty klawiaturowe|
 |-------------| - |
-|Przełącz do trybu **wyboru**|**Ctrl** +**G**, **Ctrl** +**Q**<br /><br /> **Wolumin**|
-|Przełącz do trybu **powiększenia**|**Ctrl** +**G**, **Ctrl** +**Z**<br /><br /> **Porządku**|
-|Przełącz do trybu **kadrowania**|**Ctrl** +**G**, **Ctrl** +**P**<br /><br /> **K**|
+|Przełącz do trybu **wyboru**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Przełącz do trybu **powiększenia**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Przełącz do trybu **kadrowania**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Zaznacz wszystkie|**Ctrl**+**A**|
 |Usuń bieżące zaznaczenie|**Delete**|
 |Anuluj bieżące zaznaczenie|**Escape** (**ESC**)|
-|Powiększanie|**Kółko myszy do przodu**<br /><br /> **Ctrl** +**kółkiem myszy do przodu**<br /><br /> **Przesuń** +**kółkiem myszy do przodu**<br /><br /> **Ctrl** +**PageUp**<br /><br /> Znak plus ( **+** )|
-|Pomniejszanie|**Kółko myszy do tyłu**<br /><br /> **Ctrl** +**kółkiem myszy do tyłu**<br /><br /> **Shift** +**kółkiem myszy do tyłu**<br /><br /> **Ctrl** +**PageDown**<br /><br /> Znak minusa ( **-** )|
+|Powiększanie|**Kółko myszy do przodu**<br /><br /> **Ctrl**+**kółkiem myszy do przodu**<br /><br /> **Przesuń**+**kółkiem myszy do przodu**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Znak plus ( **+** )|
+|Pomniejszanie|**Kółko myszy do tyłu**<br /><br /> **Ctrl**+**kółkiem myszy do tyłu**<br /><br /> **Shift**+**kółkiem myszy do tyłu**<br /><br /> **Ctrl**+**PageDown**<br /><br /> Znak minusa ( **-** )|
 |Przesunięcie kamery do góry|**PageDown**|
 |Przesunięcie kamery w dół|**PageUp**|
-|Przesunięcie kamery w lewo|**Kółko myszy w lewo**<br /><br /> **Ctrl** +**PageDown**|
-|Przesunięcie kamery w prawo|**Kółko myszy w prawo**<br /><br /> **Ctrl** +**PageDown**|
-|Widok góry modelu|**Ctrl** +**L**, **Ctrl** +**t**<br /><br /> **&**|
-|Widok dołu modelu|**Ctrl** +**L**, **Ctrl** +**U**|
-|Widok lewej strony modelu|**Ctrl** +**l**, **Ctrl** +**L**|
-|Widok prawej strony modelu|**Ctrl** +**L**, **Ctrl** +**R**|
-|Widok przodu modelu|**Ctrl** +**L**, **Ctrl** +**F**|
-|Widok tyłu modelu|**Ctrl** +**L**, **Ctrl** +**B**|
-|Umieść obiekt w ramce w oknie|**N**|
-|Przełącz tryb szkieletowy|**Ctrl** +**L**, **Ctrl** +**W**|
-|Przełącz przyciąganie do siatki|**Ctrl** +**G**, **Ctrl** +**N**|
-|Przełącz tryb obracania|**Ctrl** +**G**, **Ctrl** +**V**|
-|Przełącz ograniczenie osi x|**Ctrl** +**L**, **Ctrl** +**X**|
-|Przełącz ograniczenie osi y|**Ctrl** +**L**, **Ctrl** +**Y**|
-|Przełącz ograniczenie osi z|**Ctrl** +**L**, **Ctrl** +**Z**|
-|Przełącz do trybu przesunięcia|**Ctrl** +**G**, **Ctrl** +**W**<br /><br /> **K**|
-|Przełącz do trybu skalowania|**Ctrl** +**G**, **Ctrl** +**E**<br /><br /> **Adres**|
-|Przełącz do trybu obrotu|**Ctrl** +**G**, **Ctrl** +**R**<br /><br /> **R**|
-|Przełącz do trybu zaznaczania punktu|**Ctrl** +**L**, **Ctrl** +**1**|
-|Przełącz do trybu zaznaczania krawędzi|**Ctrl** +**L**, **Ctrl** +**2**|
-|Przełącz do trybu zaznaczania powierzchni|**Ctrl** +**L**, **Ctrl** +**3**|
-|Przełącz do trybu zaznaczania obiektu|**Ctrl** +**L**, **Ctrl** +**4**|
-|Przełącz do trybu orbity (kamery)|**Ctrl** +**G**, **Ctrl** +**O**|
-|Wybierz następny obiekt w scenie|**Tabulator**|
-|Wybierz poprzedni obiekt w scenie|**Karta** + **SHIFT**|
+|Przesunięcie kamery w lewo|**Kółko myszy w lewo**<br /><br /> **Ctrl**+**PageDown**|
+|Przesunięcie kamery w prawo|**Kółko myszy w prawo**<br /><br /> **Ctrl**+**PageDown**|
+|Widok góry modelu|**Ctrl**+**L**, **Ctrl**+**t**<br /><br /> **T**|
+|Widok dołu modelu|**Ctrl**+**L**, **Ctrl**+**U**|
+|Widok lewej strony modelu|**Ctrl**+**l**, **Ctrl**+**L**|
+|Widok prawej strony modelu|**Ctrl**+**L**, **Ctrl**+**R**|
+|Widok przodu modelu|**Ctrl**+**L**, **Ctrl**+**F**|
+|Widok tyłu modelu|**Ctrl**+**L**, **Ctrl**+**B**|
+|Umieść obiekt w ramce w oknie|**F**|
+|Przełącz tryb szkieletowy|**Ctrl**+**L**, **Ctrl**+**W**|
+|Przełącz przyciąganie do siatki|**Ctrl**+**G**, **Ctrl**+**N**|
+|Przełącz tryb obracania|**Ctrl**+**G**, **Ctrl**+**V**|
+|Przełącz ograniczenie osi x|**Ctrl**+**L**, **Ctrl**+**X**|
+|Przełącz ograniczenie osi y|**Ctrl**+**L**, **Ctrl**+**Y**|
+|Przełącz ograniczenie osi z|**Ctrl**+**L**, **Ctrl**+**Z**|
+|Przełącz do trybu przesunięcia|**Ctrl**+**G**, **Ctrl**+**W**<br /><br /> **W**|
+|Przełącz do trybu skalowania|**Ctrl**+**G**, **Ctrl**+**E**<br /><br /> **E**|
+|Przełącz do trybu obrotu|**Ctrl**+**G**, **Ctrl**+**R**<br /><br /> **R**|
+|Przełącz do trybu zaznaczania punktu|**Ctrl**+**L**, **Ctrl**+**1**|
+|Przełącz do trybu zaznaczania krawędzi|**Ctrl**+**L**, **Ctrl**+**2**|
+|Przełącz do trybu zaznaczania powierzchni|**Ctrl**+**L**, **Ctrl**+**3**|
+|Przełącz do trybu zaznaczania obiektu|**Ctrl**+**L**, **Ctrl**+**4**|
+|Przełącz do trybu orbity (kamery)|**Ctrl**+**G**, **Ctrl**+**O**|
+|Wybierz następny obiekt w scenie|**Karta**|
+|Wybierz poprzedni obiekt w scenie|**Karta**+**SHIFT**|
 |Manipuluj zaznaczonym obiektem za pomocą bieżącego narzędzia.|Klawisze **strzałek**|
 |Dezaktywuj bieżący manipulator|**Pytania**|
-|Obracanie kamery|**Alt** +**przeciągnij** z lewym przyciskiem myszy|
+|Obracanie kamery|**Alt**+**przeciągnij** z lewym przyciskiem myszy|
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

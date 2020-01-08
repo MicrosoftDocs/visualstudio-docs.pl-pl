@@ -3,17 +3,17 @@ title: Eksplorator schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608093"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592350"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 
@@ -54,7 +54,7 @@ W **Eksploratorze schematu XML** są wyświetlane wstępnie skompilowane informa
 
 - Trzeci poziom zawiera pliki.
 
-- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i instrukcje `include`, `import` i `redefine`.
+- Czwarty poziom zawiera węzły globalne. Może to obejmować elementy, grupy, typy złożone, typy proste, atrybuty, grupy atrybutów i instrukcje `include`, `import`i `redefine`.
 
 Oto przykład struktury drzewa:
 

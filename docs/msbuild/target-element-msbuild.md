@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491617"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566426"
 ---
 # <a name="target-element-msbuild"></a>Target — element (MSBuild)
 Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -62,7 +62,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 |`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe w tym miejscu docelowym. Wiele plików jest oddzielonych średnikami. Sygnatury czasowe plików będą porównywane z sygnaturami czasowymi plików w `Outputs`, aby określić, czy `Target` jest aktualna. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md), [instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)i [transformacje](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wyjściowe w tym miejscu docelowym. Wiele plików jest oddzielonych średnikami. Sygnatury czasowe plików będą porównywane z sygnaturami czasowymi plików w `Inputs`, aby określić, czy `Target` jest aktualna. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md), [instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)i [transformacje](../msbuild/msbuild-transforms.md).|
 |`Returns`|Atrybut opcjonalny.<br /><br /> Zestaw elementów, które zostaną udostępnione dla zadań, które wywołują ten element docelowy, na przykład zadania programu MSBuild. Wiele obiektów docelowych jest oddzielonych średnikami. Jeśli obiekty docelowe w pliku nie mają atrybutów `Returns`, zamiast tego są używane atrybuty danych wyjściowych.|
-|`KeepDuplicateOutputs`|Opcjonalny atrybut Boolean.<br /><br /> Jeśli `true`, rejestrowane są wiele odwołań do tego samego elementu w zwracanych wartościach docelowych.  Domyślnie ten atrybut jest `false`.|
+|`KeepDuplicateOutputs`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, rejestrowane są wiele odwołań do tego samego elementu w zwracanych wartościach docelowych.  Domyślnie ten atrybut jest `false`.|
 |`BeforeTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych.  Gdy ta wartość jest określona, wskazuje, że ten element docelowy powinien zostać uruchomiony przed określonym elementem docelowym lub celem. Pozwala to autorowi projektu na rozszerać istniejący zestaw elementów docelowych bez konieczności ich bezpośredniego modyfikowania. Aby uzyskać więcej informacji, zobacz [Target Order Build](../msbuild/target-build-order.md).|
 |`AfterTargets`|Atrybut opcjonalny.<br /><br /> Rozdzielana średnikami lista nazw docelowych. Jeśli ta wartość jest określona, wskazuje, że ten element docelowy powinien zostać uruchomiony po określonym elemencie docelowym lub Target. Pozwala to autorowi projektu na rozszerać istniejący zestaw elementów docelowych bez konieczności ich bezpośredniego modyfikowania. Aby uzyskać więcej informacji, zobacz [Target Order Build](../msbuild/target-build-order.md).|
 |`DependsOnTargets`|Atrybut opcjonalny.<br /><br /> Elementy docelowe, które muszą zostać wykonane, zanim będzie można wykonać tę wartość docelową lub mogą wystąpić analizy zależności najwyższego poziomu. Wiele obiektów docelowych jest oddzielonych średnikami.|
@@ -72,7 +72,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 
 | Element | Opis |
 | - | - |
-| [Zadaniem](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. W elemencie docelowym mogą istnieć co najmniej zero zadań. |
+| [Zadanie](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. W elemencie docelowym mogą istnieć co najmniej zero zadań. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Zawiera zestaw elementów `Property` zdefiniowanych przez użytkownika. Począwszy od .NET Framework 3,5, element `Target` może zawierać `PropertyGroup` elementów. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Zawiera zestaw elementów `Item` zdefiniowanych przez użytkownika. Począwszy od .NET Framework 3,5, element `Target` może zawierać `ItemGroup` elementów. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md). |
 | [OnError](../msbuild/onerror-element-msbuild.md) | Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut `ContinueOnError` jest ErrorAndStop (lub `false`) dla zadania zakończonego niepowodzeniem. Element docelowy może mieć co najmniej zero elementów `OnError`. Jeśli elementy `OnError` są obecne, muszą one być ostatnimi elementami elementu `Target`.<br /><br /> Aby uzyskać informacje o atrybucie `ContinueOnError`, zobacz [element Task (MSBuild)](../msbuild/task-element-msbuild.md). |
@@ -81,7 +81,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 
 | Element | Opis |
 | - | - |
-| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="remarks"></a>Uwagi
  Pierwszy cel do wykonania jest określony w czasie wykonywania. Elementy docelowe mogą mieć zależności od innych elementów docelowych. Na przykład element docelowy wdrożenia zależy od elementu docelowego kompilacji. Aparat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykonuje zależności w kolejności, w jakiej występują w atrybucie `DependsOnTargets`, od lewej do prawej. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md).

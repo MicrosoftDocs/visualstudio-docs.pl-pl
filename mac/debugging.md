@@ -1,29 +1,31 @@
 ---
-title: Debugowanie za pomocą platformy Xamarin
+title: Debugowanie za pomocą Visual Studio dla komputerów Mac
 description: Debugowanie jest powszechną i niezbędną częścią programowania. Jako dojrzały IDE Visual Studio dla komputerów Mac zawiera cały zestaw funkcji, które ułatwiają debugowanie. Z bezpiecznego debugowania do wizualizacji danych w tym artykule wyjaśniono, jak używać pełnego potencjału debugowania w Visual Studio dla komputerów Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716966"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397914"
 ---
-# <a name="debugging-with-xamarin"></a>Debugowanie za pomocą platformy Xamarin
+# <a name="debugging-with-visual-studio-for-mac"></a>Debugowanie za pomocą Visual Studio dla komputerów Mac
 
-Visual Studio dla komputerów Mac ma natywny debuger umożliwiający obsługę debugowania dla aplikacji Xamarin. iOS, Xamarin. Mac i Xamarin. Android.
+Visual Studio dla komputerów Mac ma debugery z obsługą aplikacji .Net Core, .NET Framework, Unity i Xamarin.
 
 Visual Studio dla komputerów Mac używa [*debugera miękkiego mono*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), który jest implementowany w środowisku uruchomieniowym mono, umożliwiając Visual Studio dla komputerów Mac Debugowanie kodu zarządzanego na wszystkich platformach.
 
 ## <a name="the-debugger"></a>Debuger
 
-Visual Studio dla komputerów Mac używa debugera miękkiego mono do debugowania zarządzanego koduC# ( F#lub) we wszystkich aplikacjach platformy Xamarin. Program mono Soft Debugger różni się od zwykłych debugerów, ponieważ jest to współpracujący debuger, który jest wbudowany w środowisko uruchomieniowe mono. wygenerowany kod i środowisko uruchomieniowe mono współdziałają z IDE w celu zapewnienia środowiska debugowania. Środowisko uruchomieniowe mono udostępnia funkcje debugowania za pomocą protokołu przewodowego, który można dowiedzieć [się więcej na temat dokumentacji programu mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio dla komputerów Mac używa debugera miękkiego mono do debugowania zarządzanego koduC# ( F#lub) we wszystkich aplikacjach platformy Xamarin. Program mono Soft Debugger różni się od zwykłych debugerów, ponieważ jest to wspólny debuger, który jest wbudowany w środowisko uruchomieniowe mono. wygenerowany kod i środowisko uruchomieniowe mono współpracują z IDE w celu zapewnienia środowiska debugowania. Środowisko uruchomieniowe mono udostępnia funkcje debugowania za pomocą protokołu przewodowego, który można dowiedzieć [się więcej na temat dokumentacji programu mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Mocne debugery, takie jak [LLDB]( http://lldb.llvm.org/index.html) lub [GDB]( https://www.gnu.org/software/gdb/), kontrolują program bez wiedzy ani współpracy z debugowanego programu, ale nadal mogą być przydatne podczas debugowania aplikacji platformy Xamarin w przypadku, gdy wymagane jest debugowanie natywnego kodu dla systemu iOS lub Android.
+
+W przypadku aplikacji .NET Core i ASP.NET Core, Visual Studio dla komputerów Mac używa debugera platformy .NET Core. Ten debuger jest również wspólnym debugerem i współpracuje z środowiskiem uruchomieniowym platformy .NET.
 
 ## <a name="using-the-debugger"></a>Korzystanie z debugera
 
@@ -31,7 +33,7 @@ Aby rozpocząć debugowanie aplikacji, zawsze upewnij się, że konfiguracja jes
 
 ![Debuguj konfigurację](media/debugging-image_0.png)
 
-## <a name="setting-a-breakpoint"></a>Ustawianie punktu przerwania
+## <a name="setting-a-breakpoint"></a>Ustawienie punktu przerwania
 
 Aby ustawić punkt przerwania w środowisku IDE, kliknij obszar marginesu w edytorze obok numeru wiersza kodu, w którym chcesz przerwać:
 
@@ -43,9 +45,10 @@ Wszystkie punkty przerwania, które zostały ustawione w kodzie, można wyświet
 
 ## <a name="start-debugging"></a>Rozpocznij debugowanie
 
-Aby rozpocząć debugowanie, wybierz urządzenie docelowe lub podobną/emulator w środowisku IDE:
+Aby rozpocząć debugowanie, wybierz docelową przeglądarkę, urządzenie lub symulator/emulator:
 
-![Wybierz urządzenie docelowe](media/debugging-image1.png)
+![](media/debugging-image_0.png)
+konfiguracji debugowania ![wybierz urządzenie docelowe](media/debugging-image1.png)
 
 Następnie wdróż aplikację, naciskając przycisk **Odtwórz** lub **polecenie cmd + Return**. Po trafieniu punktu przerwania kod zostanie wyróżniony żółty:
 
@@ -90,9 +93,9 @@ Produkty platformy Xamarin są dostarczane z kodem źródłowym dla bibliotek kl
 
 Ponieważ ta funkcja zużywa więcej pamięci podczas debugowania, jest domyślnie wyłączona.
 
-Aby włączyć tę funkcję, przejdź do **Visual Studio dla komputerów Mac > preferencji > debugerze** i upewnij się, że "**Debugowanie kodu projektu; nie wkraczaj do kodu struktury ".** opcja jest **niezaznaczona**, jak pokazano poniżej:
+Aby włączyć tę funkcję, przejdź do **Visual Studio dla komputerów Mac > preferencji > debuger** i upewnij się, że **wybrano**opcję "**Wkrocz do kodu zewnętrznego**", jak pokazano poniżej:
 
-![Nie wkraczaj do kodu struktury — opcja](media/debugging-image8.png)
+![Opcja do kodu zewnętrznego](media/debugging-image8.png)
 
 ## <a name="see-also"></a>Zobacz także
 

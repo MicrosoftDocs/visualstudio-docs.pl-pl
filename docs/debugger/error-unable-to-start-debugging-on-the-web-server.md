@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736704"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404356"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 
@@ -52,6 +52,7 @@ Komunikat `Unable to start debugging on the Web server` jest ogólny. Zwykle w c
 - [Nie można rozpocząć debugowania ASP.NET](#aspnet)
 - [Debuger nie może nawiązać połączenia z komputerem zdalnym](#cannot_connect)
 - [Zobacz pomoc dotyczącą typowych błędów konfiguracji. Uruchomienie strony sieci Web poza debugerem może dostarczyć więcej informacji.](#see_help)
+- [Operacja nie jest obsługiwana. Nieznany błąd: *ErrorNumber*](#operation_not_supported)
 
 ## <a name="IISlist"></a>Usługi IIS nie wyświetlają witryny sieci Web zgodnej z adresem URL uruchamiania
 
@@ -76,14 +77,14 @@ Komunikat `Unable to start debugging on the Web server` jest ogólny. Zwykle w c
 ## <a name="msvsmon"></a>Monitor zdalnego debugowania programu Microsoft Visual Studio (msvsmon. exe) prawdopodobnie nie jest uruchomiony na komputerze zdalnym
 
 - W przypadku debugowania na maszynie zdalnej upewnij się, że [zainstalowano i uruchomiono zdalny debuger](../debugger/remote-debugging.md). Jeśli komunikat zawiera informacje o zaporze, upewnij się, że [w zaporze są otwarte odpowiednie porty](../debugger/remote-debugger-port-assignments.md) , zwłaszcza jeśli używasz zapory innej firmy.
-- Jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfigurowany. Na przykład jeśli debugowanie przy użyciu klawisza **F5** (zamiast **dołączania do procesu**), plik hosts musi zawierać taki sam adres URL projektu jak we właściwościach projektu, **Właściwości > > sieci Web** lub **Właściwości > Debugowanie**, w zależności od Typ projektu.
+- Jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfigurowany. Na przykład jeśli debugowanie przy użyciu klawisza **F5** (zamiast **dołączania do procesu**), plik hosts musi zawierać ten sam adres URL projektu, co we właściwościach projektu, **Właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie**, w zależności od typu projektu.
 
 ## <a name="server_error"></a>Serwer zdalny zwrócił błąd
 
 Sprawdź, czy w [pliku dziennika usług IIS zarejestrowano](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) błędy i dodatkowe informacje oraz wpis w [blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)usług IIS 7.
 
 Ponadto poniżej przedstawiono niektóre typowe kody błędów i kilka sugestii.
-- (403) — dostęp zabroniony. Istnieje wiele możliwych przyczyn tego błędu, dlatego sprawdź plik dziennika oraz ustawienia zabezpieczeń usług IIS dla witryny sieci Web. Upewnij się, że plik Web. config serwera zawiera `debug=true` w elemencie compilation. Upewnij się, że folder aplikacji sieci Web ma odpowiednie uprawnienia i że konfiguracja puli aplikacji jest poprawna (hasło mogło ulec zmianie). Zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck). Jeśli te ustawienia są już poprawne i debugowanie jest wykonywane lokalnie, należy również sprawdzić, czy łączysz się z prawidłowym typem serwera i adresem URL (w obszarze **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie**, w zależności od typu projektu).
+- (403) Zabronione. Istnieje wiele możliwych przyczyn tego błędu, dlatego sprawdź plik dziennika oraz ustawienia zabezpieczeń usług IIS dla witryny sieci Web. Upewnij się, że plik Web. config serwera zawiera `debug=true` w elemencie compilation. Upewnij się, że folder aplikacji sieci Web ma odpowiednie uprawnienia i że konfiguracja puli aplikacji jest poprawna (hasło mogło ulec zmianie). Zobacz [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck). Jeśli te ustawienia są już poprawne i debugowanie jest wykonywane lokalnie, należy również sprawdzić, czy łączysz się z prawidłowym typem serwera i adresem URL (w obszarze **właściwości > serwery > sieci Web** lub **Właściwości > Debugowanie**, w zależności od typu projektu).
 - (503) serwer jest niedostępny. Pula aplikacji mogła zostać zatrzymana z powodu błędu lub zmiany konfiguracji. Ponownie uruchom pulę aplikacji.
 - nie znaleziono (404). Upewnij się, że Pula aplikacji została skonfigurowana pod kątem poprawnej wersji ASP.NET.
 
@@ -106,6 +107,10 @@ Ponadto, jeśli używasz pliku HOSTs, upewnij się, że jest prawidłowo skonfig
 
 - Jeśli to nie zadziała lub debugujesz zdalnie, wykonaj kroki opisane w sekcji [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
 
+## <a name="operation_not_supported"></a>Operacja nie jest obsługiwana. Nieznany błąd: *ErrorNumber*
+
+Jeśli wykonujesz ponowne zapisywanie adresów URL, przetestuj podstawową sieć Web. config bez ponownego zapisywania adresów URL. Zapoznaj **się z informacjami na** temat modułu ponowne zapisywanie adresów URL w temacie [Sprawdzanie konfiguracji usług IIS](#vxtbshttpservererrorsthingstocheck).
+
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>Sprawdź konfigurację usług IIS
 
 Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem próby debugowania należy zresetować usługi IIS. Możesz to zrobić, otwierając wiersz polecenia z podwyższonym poziomem uprawnień i wpisując `iisreset`.
@@ -125,7 +130,7 @@ Po pomyślnym wykonaniu kroków w celu rozwiązania problemu i przed ponowieniem
 
 * Sprawdź, czy folder aplikacji sieci Web ma odpowiednie uprawnienia.
 
-    Upewnij się, że podajesz IIS_IUSRS, IUSR lub określony użytkownik skojarzony z [pulą aplikacji](/iis/manage/configuring-security/application-pool-identities) uprawnienia do odczytu i wykonywania dla folderu aplikacji sieci Web. Usuń problem i ponownie uruchom pulę aplikacji.
+    Upewnij się, że nadajesz IIS_IUSRS, IUSR lub określony użytkownik skojarzony z [pulą aplikacji](/iis/manage/configuring-security/application-pool-identities) uprawnienia do odczytu i wykonywania dla folderu aplikacji sieci Web. Usuń problem i ponownie uruchom pulę aplikacji.
 
 * Upewnij się, że w usługach IIS została zainstalowana poprawna wersja programu ASP.NET.
 

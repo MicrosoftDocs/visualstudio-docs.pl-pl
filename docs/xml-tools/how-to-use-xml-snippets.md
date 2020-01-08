@@ -3,17 +3,17 @@ title: Jak używać fragmentów kodu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: decc565eca9b7299761405e06c0cecf82f63319d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601793"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592610"
 ---
 # <a name="how-to-use-xml-snippets"></a>Instrukcje: używanie fragmentów kodu XML
 
@@ -26,7 +26,7 @@ Po dodaniu fragmentu kodu XML do edytora wszystkie pola edytowalne w fragmencie 
 W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Wstaw fragment kodu** .
 
 > [!NOTE]
-> Polecenie **Wstaw fragment kodu** jest również dostępne za pomocą skrótu klawiaturowego (**Ctrl** +**K**, a następnie **Ctrl** +**X**).
+> Polecenie **Wstaw fragment kodu** jest również dostępne za pomocą skrótu klawiaturowego (**Ctrl**+**K**, a następnie **Ctrl**+**X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Aby wstawić fragmenty kodu z menu skrótów
 
@@ -52,7 +52,7 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Ws
 
 1. Umieść kursor w miejscu, w którym chcesz wstawić fragment kodu XML.
 
-2. Rozpocznij wpisywanie fragmentu kodu XML, który chcesz dodać do pliku. Jeśli automatyczne uzupełnianie jest włączone, zostanie wyświetlona lista wyrazów uzupełniających IntelliSense. Jeśli nie jest wyświetlany, naciśnij klawisz **Ctrl** +**miejsce** , aby go uaktywnić.
+2. Rozpocznij wpisywanie fragmentu kodu XML, który chcesz dodać do pliku. Jeśli automatyczne uzupełnianie jest włączone, zostanie wyświetlona lista wyrazów uzupełniających IntelliSense. Jeśli nie jest wyświetlany, naciśnij klawisz **Ctrl**+**miejsce** , aby go uaktywnić.
 
 3. Wybierz fragment kodu XML z listy kompletny wyraz.
 
@@ -71,12 +71,12 @@ W poniższych procedurach opisano sposób uzyskiwania dostępu do polecenia **Ws
 
 4. Wpisz nazwę skrótu wstawki, a następnie naciśnij klawisz **Tab** , aby wywołać fragment kodu XML.
 
-## <a name="surround-with"></a>Otocz za pomocą
+## <a name="surround-with"></a>Otocz przez
 
 W poniższych procedurach opisano, jak uzyskać dostęp do polecenia **przestrzenny z** poleceniem.
 
 > [!NOTE]
-> Polecenie **Otocz za pomocą** polecenia jest również dostępne za pomocą skrótu klawiaturowego (**Ctrl** +**K**, a następnie **Ctrl** +**S**).
+> Polecenie **Otocz za pomocą** polecenia jest również dostępne za pomocą skrótu klawiaturowego (**Ctrl**+**K**, a następnie **Ctrl**+**S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Aby użyć funkcji Otocz z z menu kontekstowego
 
@@ -102,7 +102,7 @@ W poniższych procedurach opisano, jak uzyskać dostęp do polecenia **przestrze
 
 Po wybraniu fragmentu kodu XML tekst wstawki zostanie automatycznie wstawiony w pozycji kursora. Wszystkie pola edytowalne w fragmencie kodu są wyróżnione i pierwsze pole można edytować automatycznie. Aktualnie wybrane pole jest opakowane.
 
-Gdy pole jest zaznaczone, można wpisać nową wartość pola. Naciskanie **tabulatorów** za pomocą pól edytowalnych fragmentu kodu; naciśnięcie klawisza **Shift** + przełączanie**tabulatorów** w odwrotnej kolejności. Kliknięcie pola powoduje umieszczenie kursora w polu, a następnie dwukrotne kliknięcie pola. Gdy pole zostanie wyróżnione, może zostać wyświetlona etykietka narzędzia zawierająca opis pola.
+Gdy pole jest zaznaczone, można wpisać nową wartość pola. Naciskanie **tabulatorów** za pomocą pól edytowalnych fragmentu kodu; naciśnięcie klawisza **Shift**+przełączanie **tabulatorów** w odwrotnej kolejności. Kliknięcie pola powoduje umieszczenie kursora w polu, a następnie dwukrotne kliknięcie pola. Gdy pole zostanie wyróżnione, może zostać wyświetlona etykietka narzędzia zawierająca opis pola.
 
 Tylko pierwsze wystąpienie danego pola jest edytowalne. W przypadku zaznaczenia tego pola są podane inne wystąpienia tego pola. Gdy zmienisz wartość pola edytowalnego, to pole jest zmieniane wszędzie tam, gdzie jest używane w fragmencie kodu.
 

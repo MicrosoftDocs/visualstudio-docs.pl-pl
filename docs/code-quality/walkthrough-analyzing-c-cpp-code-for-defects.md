@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018341"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401017"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Wskazówki: analizowanie kodu C++ pod względem wad
 
@@ -67,9 +67,9 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
      Ostrzeżenie C6230: niejawne rzutowanie między różnymi semantycznie typami: użycie HRESULT w kontekście Boolean.
 
-     W edytorze kodu jest wyświetlany wiersz, który spowodował ostrzeżenie w `bool ProcessDomain()`funkcji. To ostrzeżenie wskazuje, że wynik HRESULT jest używany w instrukcji "If", gdzie oczekiwano wyniku logicznego.
+     W edytorze kodu jest wyświetlany wiersz, który spowodował ostrzeżenie w `bool ProcessDomain()`funkcji. To ostrzeżenie wskazuje, że `HRESULT` jest używana w instrukcji "If", gdzie oczekiwano wyniku logicznego.  Zwykle jest to błąd, ponieważ w przypadku zwrócenia `S_OK` HRESULT z funkcji IT wskazuje powodzenie, ale po przekonwertowaniu na wartość logiczną, która ma być `false`.
 
-3. Popraw to ostrzeżenie przy użyciu pomyślnego makra. Kod powinien wyglądać podobnie do następującego kodu:
+3. Popraw to ostrzeżenie przy użyciu makra `SUCCEEDED`, które jest konwertowane na `true`, gdy wartość zwracana `HRESULT` wskazuje na powodzenie. Kod powinien wyglądać podobnie do następującego kodu:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -128,11 +128,11 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 8. Aby poprawić to ostrzeżenie, należy użyć instrukcji "If" do przetestowania wartości zwracanej. Kod powinien wyglądać podobnie do następującego kodu:
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
 ### <a name="to-use-source-code-annotation"></a>Aby użyć adnotacji kodu źródłowego
 
-1. Dodawanie adnotacji do parametrów formalnych i zwracanej wartości funkcji `AddTail` przy użyciu warunków wstępnych i post, jak pokazano w tym przykładzie:
+1. Adnotuj parametry formalne i wartość zwracaną funkcji `AddTail`, aby wskazać, że wartości wskaźnika mogą mieć wartość null:
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Kompiluj ponownie projekt adnotacji.
@@ -160,21 +156,18 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
      To ostrzeżenie wskazuje, że węzeł przekazano do funkcji może mieć wartość null i wskazuje numer wiersza, w którym zostało zgłoszone ostrzeżenie.
 
-4. Aby poprawić to ostrzeżenie, należy użyć instrukcji "If" do przetestowania wartości zwracanej. Kod powinien wyglądać podobnie do następującego kodu:
+4. Aby poprawić to ostrzeżenie, należy użyć instrukcji "If" na początku funkcji, aby przetestować przekazaną wartość. Kod powinien wyglądać podobnie do następującego kodu:
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Kompiluj ponownie projekt adnotacji.
 
-     Projekt kompiluje się bez żadnych ostrzeżeń lub błędów.
+     Projekt teraz kompiluje się bez żadnych ostrzeżeń lub błędów.
 
 ## <a name="see-also"></a>Zobacz także
 

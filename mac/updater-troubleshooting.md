@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984405"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405477"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Rozwiązywanie problemów: Aktualizator zawiera błędy podczas pobierania informacji
 
@@ -24,4 +24,5 @@ W rzadkich przypadkach może zostać wyświetlony komunikat o błędzie "błąd 
 - Jeśli ten komunikat o błędzie będzie nadal wyświetlany, możesz również spróbować zaktualizować za pomocą Instalatora, jeśli **dmg** jest nadal na komputerze lub można go pobrać z witryny [VisualStudio.com](https://visualstudio.microsoft.com/vs/mac/)
   - Instalator zaktualizuje wszystkie zainstalowane składniki na komputerze.
   - Po ponownym uruchomieniu Instalatora można także zainstalować brakujące składniki, które nie zostały wcześniej zainstalowane.
-- Możesz również spróbować wyczyścić buforowane pliki do pobrania, usuwając plik znajdujący się w `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.
+- Możesz również spróbować wyczyścić buforowane pliki do pobrania, usuwając plik znajdujący się w `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
+- W przypadku korzystania ze starszej wersji programu Visual Studio dla komputerów Mac w katalogu `VisualStudio` mogą znajdować się inne numery wersji. Usuń również plik `index.xml` w tych ścieżkach.

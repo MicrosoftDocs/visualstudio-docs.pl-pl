@@ -3,17 +3,17 @@ title: 'Przykładowy plik XSD: relacje'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5342bece15fff25ba970270456aed96c5dc7f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601750"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592558"
 ---
 # <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: relacje
 
@@ -65,4 +65,4 @@ Następujący plik XSD jest używany w różnych przykładach w dokumentacji pro
 ```
 
 > [!NOTE]
-> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w tym dokumencie są fikcyjne. Żadne powiązania z rzeczywistymi firmami, organizacjami, produktami, nazwami domen, adresami e-mail, logo, osobami, miejscami lub zdarzeniami nie są zamierzone ani wywnioskowane.
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w tym dokumencie są fikcyjne. Żaden związek z jakąkolwiek rzeczywistą firmą, organizacją, produktem, nazwą domeny, adresem e-mail, logo, osobą, miejscami lub wydarzeniami nie był zamierzony i nie należy go zakładać.

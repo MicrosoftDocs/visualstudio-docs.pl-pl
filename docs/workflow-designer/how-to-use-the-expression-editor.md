@@ -5,23 +5,23 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc76139d6989421b49c8c80ef325b51a6934cb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aff5654214809cf2f57767005153ba557df487c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584546"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Instrukcje: korzystanie z edytora wyrażeń
 
 Edytor wyrażeń jest formantem Projektant przepływu pracy, który jest używany w wielu działaniach przepływu pracy do wprowadzania i obliczania wyrażeń. Edytor wyrażeń zawiera dopracowane środowisko edycji środowiska IDE, w tym funkcje IntelliSense, kolorowanie, ParamInfo, zygzaki błędów, między innymi. Kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlona ikona błędu. Edytor można także otworzyć jako okno dialogowe **Edytor wyrażeń** .
 
-Wyrażenia są wartościami literałów lub Visual Basic kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (na przykład zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("=" zamiast "= ="), operatory logiczne są słowami "i" i "lub" zamiast symboli "& &" i "| |" i **nic** nie jest używane zamiast **wartości null** . Aby uzyskać więcej informacji na temat wyrażeń i operatorów w Visual Basic i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+Wyrażenia są wartościami literałów lub Visual Basic kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (na przykład zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("=" zamiast "= ="), operatory logiczne są słowami "i" i "lub" zamiast symboli "& &" i "| |" i **nic** nie jest używane zamiast **wartości null**. Aby uzyskać więcej informacji na temat wyrażeń i operatorów w Visual Basic i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
 **Edytor wyrażeń** zachowuje się w następujący sposób:
 
@@ -45,7 +45,7 @@ Wyrażenia są wartościami literałów lub Visual Basic kodzie związanym z arg
 
 3. Kliknij Edytor wyrażeń lewy w projektancie działań dla działania <xref:System.Activities.Statements.Assign>.
 
-     Ciągi szarego znaku wodnego **\<To >** i **\<Enter wyrażeniem VB >** są domyślnymi ciągami tekstowymi dla edytorów wyrażeń w działaniu <xref:System.Activities.Statements.Assign>.
+     Ciągi szarego znaku wodnego **\<do >** i **\<wprowadzić wyrażenie VB >** są domyślnymi ciągami tekstowymi dla edytorów wyrażeń w działaniu <xref:System.Activities.Statements.Assign>.
 
 4. Wprowadź wyrażenie. Jeśli wprowadzisz ciąg, upewnij się, że zostały umieszczone cudzysłowy wokół ciągu. Jeśli wybierzesz powiązanie argumentu wyrażenia z zmienną, pozostaw cudzysłowy.
 

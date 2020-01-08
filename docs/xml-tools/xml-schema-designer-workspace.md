@@ -3,17 +3,17 @@ title: Obszar roboczy projektanta schematu XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608260"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592376"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Widoki obszarów roboczych projektanta schematu XML
 
@@ -37,7 +37,7 @@ Węzły można dodać do obszaru roboczego w następujący sposób:
 
 - Wykonaj wyszukiwanie w Eksploratorze XSD i kliknij przycisk **Dodaj wyróżnione węzły do obszaru roboczego** w okienku wyników podsumowania. Aby uzyskać więcej informacji, zobacz [Wyszukiwanie zestawu schematów](../xml-tools/searching-the-schema-set.md).
 
-## <a name="switch-views"></a>Przełącz widoki
+## <a name="switch-views"></a>Przełączanie widoków
 
 Aby przełączyć widoki, użyj jednego z następujących elementów:
 
@@ -47,4 +47,4 @@ Aby przełączyć widoki, użyj jednego z następujących elementów:
 
 - Znaki wodne na stronie widok początkowy lub znak wodny w widoku pusty model zawartości lub widok wykresu.
 
-- Klawisze skrótu: **ctrl** +**1** dla widoku Start, **Ctrl** +**2** dla widoku wykresu i **Ctrl** +**3** dla widoku modelu zawartości.
+- Klawisze skrótu: **ctrl**+**1** dla widoku Start, **Ctrl**+**2** dla widoku wykresu i **Ctrl**+**3** dla widoku modelu zawartości.

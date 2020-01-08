@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6cd4d5517dae889387ec632df57c90485bd366b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c24164f31ca444d17035f145a1783c69dfb2585b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649055"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587202"
 ---
 # <a name="use-code-analyzers"></a>Korzystanie z analizatorów kodu
 
@@ -28,7 +28,7 @@ Można wykonać wiele czynności dostosowywania diagnostyki analizatora **Eksplo
 
 ![Węzeł analizatorów w Eksplorator rozwiązań](media/analyzers-expanded-in-solution-explorer.png)
 
-Właściwości diagnostyki, w tym jej opis i domyślną ważność, można wyświetlić w oknie **Właściwości** . Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy regułę i wybierz pozycję **Właściwości**lub wybierz regułę, a następnie naciśnij klawisz **Alt** +**Enter**.
+Właściwości diagnostyki, w tym jej opis i domyślną ważność, można wyświetlić w oknie **Właściwości** . Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy regułę i wybierz pozycję **Właściwości**lub wybierz regułę, a następnie naciśnij klawisz **Alt**+**Enter**.
 
 ![Właściwości diagnostyczne w okno Właściwości](media/analyzer-diagnostic-properties.png)
 
@@ -64,7 +64,7 @@ W poniższej tabeli przedstawiono różne opcje ważności:
 |-|-|-|
 | Błąd | `error` | Naruszenia są wyświetlane jako *Błędy* w Lista błędów i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.| Kod powodujący problemy jest podkreślony czerwoną czerwoną ramką na pasku przewijania. |
 | Ostrzeżenie | `warning` | Naruszenia są wyświetlane jako *ostrzeżenia* w Lista błędów i w danych wyjściowych kompilacji wiersza polecenia, ale nie powodują awarii kompilacji. | Kod powodujący problemy jest podkreślony zieloną, zieloną ramką na pasku przewijania. |
-| Informacje o | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
+| Informacje | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
 | Hidden | `silent` | Niewidoczny dla użytkownika. | Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE. |
 | Brak | `none` | Całkowicie pomijane. | Całkowicie pomijane. |
 | Domyślny | `default` | Odnosi się do domyślnej wagi reguły. Aby określić, jaka jest wartość domyślna dla reguły, należy poszukać w okno Właściwości. | Odnosi się do domyślnej wagi reguły. |
@@ -107,9 +107,9 @@ Ustawienie ważności reguły w pliku EditorConfig ma pierwszeństwo przed ważn
 
 Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły z menu żarówki [szybkich działań](../ide/quick-actions.md) .
 
-1. Po wystąpieniu naruszenia, umieść wskaźnik myszy nad naruszeniem w edytorze i otwórz menu żarówki. Lub umieść kursor w wierszu i naciśnij klawisz **Ctrl** + **.** (kropka).
+1. Po wystąpieniu naruszenia, umieść wskaźnik myszy nad naruszeniem w edytorze i otwórz menu żarówki. Lub umieść kursor w wierszu i naciśnij klawisz **Ctrl**+ **.** (kropka).
 
-2. W menu żarówki wybierz pozycję **Konfiguruj lub Pomiń problemy** > **skonfiguruj \<rule identyfikator > ważność**.
+2. W menu żarówki wybierz pozycję **Konfiguruj lub Pomiń problemy** > **Skonfiguruj \<Identyfikator reguły > ważność**.
 
    ![Skonfiguruj ważność reguły z poziomu menu żarówki w programie Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Ustaw ważność reguły na podstawie Eksplorator rozwiązań
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołania**  > **analizatory** (lub **zależności**  > **analizatory** dla projektów .NET Core).
+1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołania** > **analizatory** (lub **zależności** > **analizatory** dla projektów .NET Core).
 
 1. Rozwiń zestaw, który zawiera regułę, dla której chcesz ustawić ważność.
 
@@ -138,7 +138,7 @@ Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły
 
 ![Plik zestawu reguł w Eksplorator rozwiązań](media/ruleset-in-solution-explorer.png)
 
-1. Otwórz plik aktywnego zestawu reguł, klikając go dwukrotnie w **Eksplorator rozwiązań**, wybierając pozycję **Otwórz aktywny zestaw reguł** w menu rozwijanym prawym przyciskiem myszy węzła **odwołania**  > **analizatory** , lub wybierając pozycję **Otwórz** w kodzie.Strona właściwości analizy dla projektu.
+1. Otwórz plik aktywnego zestawu reguł, klikając go dwukrotnie w **Eksplorator rozwiązań**, wybierając pozycję **Otwórz aktywny zestaw reguł** w menu rozwijanym prawym przyciskiem myszy węzła **odwołania** > **analizatory** , lub wybierając pozycję **Otwórz** na stronie właściwości **analizy kodu** dla projektu.
 
    Jeśli po raz pierwszy edytujesz zestaw reguł, program Visual Studio tworzy kopię domyślnego pliku zestawu reguł, nazywa ją *\<projectname >. regułą*i dodaje ją do projektu. Ten niestandardowy zestaw reguł jest również aktywnym zestawem reguł dla projektu.
 
@@ -163,7 +163,7 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 - Z menu **Analizuj**
 
-  Wybierz pozycję **analizuj**  > **Kompiluj i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
+  Wybierz pozycję **analizuj** > **Kompiluj i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 - Z menu **Analizuj**
 
-  Wybierz pozycję **analizuj**  > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
+  Wybierz pozycję **analizuj** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
 
 ::: moniker-end
 
@@ -185,13 +185,13 @@ Istnieje wiele sposobów pomijania naruszeń reguł:
 
 - Z **edytora kodu**
 
-  Umieść kursor w wierszu kodu z naruszeniem, a następnie naciśnij klawisz **Ctrl** +**kropki (.)** , aby otworzyć menu **szybkie akcje** . Wybierz opcję **Pomijaj CAXXXX**  > **w pliku źródłowym/in**.
+  Umieść kursor w wierszu kodu z naruszeniem, a następnie naciśnij klawisz **Ctrl**+**kropki (.)** , aby otworzyć menu **szybkie akcje** . Wybierz opcję **Pomijaj CAXXXX** > **w pliku źródłowym/in**.
 
   ![Pomiń diagnostykę z menu szybkich akcji](media/suppress-diagnostic-from-editor.png)
 
 - Z **Lista błędów**
 
-  Wybierz reguły, które chcesz pominąć, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **pomiń**  > **w polu Źródło/w pliku**pominięć.
+  Wybierz reguły, które chcesz pominąć, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **pomiń** > **w polu Źródło/w pliku**pominięć.
 
   - W przypadku pominięcia **w źródle**zostanie otwarte okno dialogowe **Podgląd zmian** z podglądem C# [#pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic #Disable dyrektywie [ostrzegawczej](/dotnet/visual-basic/language-reference/directives/directives) , która jest dodawana do kodu źródłowego.
 

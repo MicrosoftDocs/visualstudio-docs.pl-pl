@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648215"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586266"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 
@@ -33,11 +33,11 @@ Domyślnie metody `DBDirect` są tworzone w TableAdapter, które mogą być uruc
 > [!NOTE]
 > Podczas konfigurowania TableAdapter, zapytanie główne musi dostarczyć wystarczające informacje na potrzeby tworzenia metod `DBDirect`. Na przykład jeśli TableAdapter jest skonfigurowany do wykonywania zapytań dotyczących danych z tabeli, która nie ma zdefiniowanej kolumny klucza podstawowego, nie generują `DBDirect` metod.
 
-|TableAdapter DBDirect — Metoda|Opis|
+|TableAdapter dbdirect — metody|Opis|
 | - |-----------------|
 |`TableAdapter.Insert`|Dodaje nowe rekordy do bazy danych i umożliwia przekazywanie wartości poszczególnych kolumn jako parametrów metody.|
-|`TableAdapter.Update`|Aktualizuje istniejące rekordy w bazie danych. Metoda `Update` przyjmuje wartości początkowe i nowe kolumny jako parametry metody. Oryginalne wartości są używane do lokalizowania oryginalnego rekordu, a nowe wartości są używane do aktualizowania tego rekordu.<br /><br /> Metoda `TableAdapter.Update` służy również do uzgadniania zmian w zestawie danych z powrotem do bazy danych, pobierając <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> lub tablicę <xref:System.Data.DataRow>s jako parametry metody.|
-|`TableAdapter.Delete`|Usuwa istniejące rekordy z bazy danych na podstawie wartości pierwotnej kolumny przekazaną jako parametry metody.|
+|`TableAdapter.Update`|Aktualizuje istniejące rekordy w bazie danych. Metoda `Update` przyjmuje wartości początkowe i nowe kolumny jako parametry metody. Oryginalne wartości są używane do lokalizowania oryginalnego rekordu, a nowe wartości są używane na zaktualizowanie rekordu.<br /><br /> Metoda `TableAdapter.Update` służy również do uzgadniania zmian w zestawie danych z powrotem do bazy danych, pobierając <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>lub tablicę <xref:System.Data.DataRow>, jako parametry metody.|
+|`TableAdapter.Delete`|Usuwa istniejące rekordy z bazy danych oparte na oryginalnych wartości kolumny przekazanych jako parametry metody.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Aby zapisać nowe rekordy z obiektu w bazie danych
 
@@ -74,7 +74,7 @@ Domyślnie metody `DBDirect` są tworzone w TableAdapter, które mogą być uruc
 
 ## <a name="net-security"></a>Zabezpieczenia platformy .NET
 
-Musisz mieć uprawnienia do wykonywania wybranych `INSERT`, `UPDATE` lub `DELETE` w tabeli w bazie danych.
+Musisz mieć uprawnienia do wykonywania wybranych `INSERT`, `UPDATE`lub `DELETE` w tabeli w bazie danych.
 
 ## <a name="see-also"></a>Zobacz także
 

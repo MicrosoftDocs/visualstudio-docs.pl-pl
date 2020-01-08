@@ -1,5 +1,5 @@
 ---
-title: Task — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Task — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - Task element [MSBuild]
 - <Task> element [MSBuild]
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3e966521f77716b999203523e1620fd327b631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939147"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566361"
 ---
 # <a name="task-element-msbuild"></a>Task — element (MSBuild)
-Tworzy i uruchamia wystąpienie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. Nazwa elementu jest określana przez nazwę zadania, tworzona.
+Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Nazwa elementu jest określana na podstawie nazwy tworzonego zadania.
 
- \<Project> \<Target>
+ \<projekt > \<docelowy >
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,33 +41,33 @@ Tworzy i uruchamia wystąpienie [!INCLUDE[vstecmsbuild](../extensibility/interna
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny. Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
-|`ContinueOnError`|Atrybut opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Jeśli zadanie nie powiedzie się, kolejne zadania w [docelowej](../msbuild/target-element-msbuild.md) elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Jeśli zadanie nie powiedzie się, kolejne zadania w `Target` elementu i kompilacja będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (ustawienie domyślne). Jeśli zadanie nie powiedzie się, kolejnych zadań na `Target` elementu i kompilacja nie są wykonywane i całą `Target` elementu i kompilacja jest uważany za nie powiodło się.<br /><br /> Wersje programu .NET Framework przed 4.5 obsługiwane tylko `true` i `false` wartości.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: Ignorowanie błędów w zadaniach](../msbuild/how-to-ignore-errors-in-tasks.md).|
-|`Parameter`|Wymagane, jeśli klasa zadania zawiera jeden lub więcej właściwości z etykietą `[Required]` atrybutu.<br /><br /> Parametr zadania zdefiniowane przez użytkownika, który zawiera wartość parametru jako jego wartość. Może to być dowolna liczba parametrów w `Task` elementu z każdy jest mapowany na właściwość platformy .NET w klasie zadania.|
+|`Condition`|Atrybut opcjonalny. Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`ContinueOnError`|Atrybut opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Gdy zadanie się nie powiedzie, kolejne zadania w elemencie [Target](../msbuild/target-element-msbuild.md) i Build są nadal wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Gdy zadanie nie powiedzie się, kolejne zadania w elemencie `Target` i kompilacja nadal będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (wartość domyślna). Gdy zadanie nie powiedzie się, pozostałe zadania w elemencie `Target` i kompilacja nie są wykonywane, a cały element `Target` i kompilacja są uznawane za niepowodzenie.<br /><br /> Wersje .NET Framework przed 4,5 są obsługiwane tylko przez wartości `true` i `false`.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: ignore Errors in Tasks](../msbuild/how-to-ignore-errors-in-tasks.md).|
+|`Parameter`|Wymagane, jeśli Klasa zadania zawiera jedną lub więcej właściwości z etykietą `[Required]` atrybutu.<br /><br /> Zdefiniowany przez użytkownika parametr zadania, który zawiera wartość parametru jako wartość. W elemencie `Task` może być dowolna liczba parametrów z każdym mapowaniem atrybutu na Właściwość platformy .NET w klasie zadań.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Output](../msbuild/output-element-msbuild.md)|Magazyny danych wyjściowych z zadania w pliku projektu. Może wynosić zero lub więcej `Output` elementów w zadaniu.|
+|[Output](../msbuild/output-element-msbuild.md)|Przechowuje dane wyjściowe z zadania w pliku projektu. W zadaniu może istnieć co najmniej zero elementów `Output`.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Docelowy](../msbuild/target-element-msbuild.md) | Element kontenera służy do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. |
+| [Cel](../msbuild/target-element-msbuild.md) | Element kontenera dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadań. |
 
 ## <a name="remarks"></a>Uwagi
- A `Task` element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu tworzy wystąpienie zadania, ustawia właściwości i uruchamia go. `Output` Element parametry wyjściowe są przechowywane we właściwościach lub elementy, które ma być używany w innym miejscu w pliku projektu.
+ Element `Task` w pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tworzy wystąpienie zadania, ustawia jego właściwości i wykonuje je. Element `Output` przechowuje parametry wyjściowe we właściwościach lub elementach, które mają być używane w innym miejscu w pliku projektu.
 
- Czy istnieją jakieś [OnError](../msbuild/onerror-element-msbuild.md) elementów w obiekcie nadrzędnym `Target` element zadania, są nadal będą brane w razie niepowodzenia zadania i `ContinueOnError` ma wartość `false`. Aby uzyskać więcej informacji na temat zadań, zobacz [zadania](../msbuild/msbuild-tasks.md).
+ Jeśli w elemencie nadrzędnym `Target` zadania znajdują się jakiekolwiek elementy z [błędami](../msbuild/onerror-element-msbuild.md) , będą one nadal oceniane, jeśli zadanie zakończy się niepowodzeniem, a `ContinueOnError` ma wartość `false`. Aby uzyskać więcej informacji o zadaniach, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 ## <a name="example"></a>Przykład
- Poniższy przykład kodu tworzy wystąpienie [CSC — zadanie](../msbuild/csc-task.md) klasy, ustawia sześć właściwości, a następnie wykonuje zadanie. Po wykonaniu wartość `OutputAssembly` właściwość obiektu, jest umieszczana w listę elementów o nazwie `FinalAssemblyName`.
+ Poniższy przykład kodu tworzy wystąpienie klasy [zadania CSC](../msbuild/csc-task.md) , ustawia sześć właściwości i wykonuje zadanie. Po wykonaniu wartość właściwości `OutputAssembly` obiektu jest umieszczana w liście elementów o nazwie `FinalAssemblyName`.
 
 ```xml
 <Target Name="Compile" DependsOnTarget="Resources" >

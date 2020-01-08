@@ -2,17 +2,17 @@
 title: Analiza dzienników zakodowanych testów interfejsu użytkownika
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665323"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591219"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych testów interfejsu użytkownika
 
@@ -26,9 +26,9 @@ W zależności od scenariusza należy użyć jednej z następujących metod, aby
 
 - Jeśli w projekcie testowym nie istnieje plik *App. config* :
 
-   1. Określ, który proces *QTAgent \*. exe* jest uruchamiany po uruchomieniu testu. Jednym ze sposobów jest Obejrzyj kartę **szczegóły** w **Menedżerze zadań**systemu Windows.
+   1. Określ, który proces *QTAgent\*. exe* jest uruchamiany po uruchomieniu testu. Jednym ze sposobów jest Obejrzyj kartę **szczegóły** w **Menedżerze zadań**systemu Windows.
 
-   2. Otwórz odpowiedni plik *. config* z folderu *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version > \\* \<edition, > \Common7\IDE. Na przykład, jeśli uruchomiony proces to *QTAgent_40. exe*, Otwórz *QTAgent_40. exe. config*.
+   2. Otwórz odpowiedni plik *. config* z folderu *% ProgramFiles (x86)% \ Microsoft Visual Studio\\\<version >\\\<Edition > \Common7\IDE* . Na przykład jeśli uruchomiony proces ma *QTAgent_40. exe*, otwórz plik *QTAgent_40. exe. config*.
 
    2. Zmodyfikuj wartość **EqtTraceLevel** na żądany poziom dziennika.
 
@@ -60,7 +60,7 @@ W zależności od scenariusza należy użyć jednej z następujących metod, aby
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2. Uruchamianie kodowanego testu interfejsu użytkownika i Wyświetlanie dziennika
 
-Po uruchomieniu kodowanego testu interfejsu użytkownika z modyfikacjami w pliku *QTAgent \*. exe. config* na miejscu w wynikach programu **Test Explorer** zostanie wyświetlony link danych wyjściowych. Pliki dzienników są tworzone nie tylko wtedy, gdy test zakończy się niepowodzeniem, ale również dla testów zakończonych powodzeniem, gdy poziom śledzenia ma wartość **pełne**.
+Po uruchomieniu kodowanego testu interfejsu użytkownika z modyfikacjami w pliku *QTAgent\*. exe. config* na miejscu w wynikach programu **Test Explorer** zostanie wyświetlony link danych wyjściowych. Pliki dzienników są tworzone nie tylko wtedy, gdy test zakończy się niepowodzeniem, ale również dla testów zakończonych powodzeniem, gdy poziom śledzenia ma wartość **pełne**.
 
 1. Z menu **test** wybierz pozycję **Windows** , a następnie wybierz pozycję **Eksplorator testów**.
 
@@ -71,7 +71,7 @@ Po uruchomieniu kodowanego testu interfejsu użytkownika z modyfikacjami w pliku
      Testy automatyczne są uruchamiane i wskazują, czy zakończyły się powodzeniem, czy nie.
 
     > [!TIP]
-    > Aby wyświetlić **Eksplorator testów**, wybierz **test**  > **Windows**, a następnie wybierz **Eksplorator testów**.
+    > Aby wyświetlić **Eksplorator testów**, wybierz **test** > **Windows**, a następnie wybierz **Eksplorator testów**.
 
 4. Wybierz łącze **dane wyjściowe** w wynikach programu **Test Explorer** .
 

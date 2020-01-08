@@ -1,8 +1,8 @@
 ---
-title: Instalowanie programu Visual Studio
+title: Zainstaluj program Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,21 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018852"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590127"
 ---
-# <a name="install-visual-studio"></a>Instalacja programu Visual Studio
+# <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -131,7 +131,7 @@ Uruchom plik programu inicjującego, aby zainstalować Instalator programu Visua
 
 2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Wybierz **nadal**.
 
-   ![Licencja warunki i zasady zachowania poufności informacji](media/privacy-and-license-terms.png "postanowienia licencyjne firmy Microsoft oraz zasady zachowania poufności informacji")
+   ![Postanowienia licencyjne i zasady zachowania poufności informacji](media/privacy-and-license-terms.png "Postanowienia licencyjne i zasady zachowania poufności informacji firmy Microsoft")
 
 ## <a name="step-4---choose-workloads"></a>Krok 4. Wybieranie obciążeń
 
@@ -139,7 +139,7 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
  ::: moniker range="vs-2017"
 
-1. Znajdź obciążenie w **Instalowanie programu Visual Studio** ekranu.
+1. Znajdź żądane obciążenie w **Instalator programu Visual Studio**.
 
    ![Visual Studio 2017: Instalowanie obciążenia](../install/media/vs-installer-installing-workloads.png)
 
@@ -153,7 +153,7 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
 ::: moniker range="vs-2019"
 
-1. Po zainstalowaniu nowych obciążeń i składników, wybierz **Uruchom**.
+1. Znajdź żądane obciążenie w **Instalator programu Visual Studio**.
 
    ![Visual Studio 2019: Instalowanie obciążenia](../install/media/vs-2019/vs-installer-workloads.png)
 
@@ -170,17 +170,17 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
 ## <a name="step-5---choose-individual-components-optional"></a>Krok 5. Wybierz poszczególne składniki (opcjonalnie)
 
-Jeśli nie chcesz używać funkcji obciążeń do dostosowywania instalacji programu Visual Studio lub chcesz dodać więcej składników niż w przypadku instalacji obciążeń, możesz to zrobić, instalując lub dodając poszczególne składniki z karty **poszczególne składniki** . Wybierz, co chcesz zrobić, a następnie postępuj zgodnie z monitami.
+Jeśli nie chcesz używać funkcji obciążeń do dostosowywania instalacji programu Visual Studio lub chcesz dodać więcej składników niż w przypadku instalacji obciążeń, możesz to zrobić, instalując lub dodając poszczególne składniki z karty **poszczególne składniki** . Wybierz, co chcesz zrobić, a następnie postępuj zgodnie z instrukcjami.
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 — instalowanie poszczególne składniki](media/vs-installer-installing-components.png "poszczególne składniki Zainstaluj program Visual Studio")
+  ![Visual Studio 2017 — Zainstaluj poszczególne składniki](media/vs-installer-installing-components.png "Zainstaluj poszczególne składniki programu Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual studio 2019 — Zainstaluj poszczególne składniki](media/vs-2019/vs-installer-individual-components.png "Zainstaluj poszczególne składniki programu Visual Studio")
+  ![Visual Studio 2019 — Zainstaluj poszczególne składniki](media/vs-2019/vs-installer-individual-components.png "Zainstaluj poszczególne składniki programu Visual Studio")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacy
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 — instalowanie pakietów językowych](media/vs-installer-installing-language-packs.png "pakiety językowe Zainstaluj program Visual Studio")
+  ![Visual Studio 2017 — Zainstaluj pakiety językowe](media/vs-installer-installing-language-packs.png "Zainstaluj pakiety językowe programu Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual studio 2019 — Zainstaluj pakiety językowe](media/vs-2019/vs-installer-language-packs.png "Zainstaluj pakiety językowe programu Visual Studio")
+  ![Visual Studio 2019 — Zainstaluj pakiety językowe](media/vs-2019/vs-installer-language-packs.png "Zainstaluj pakiety językowe programu Visual Studio")
 
 ::: moniker-end
 
@@ -208,9 +208,9 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 ::: moniker range="vs-2017"
 
-**Nowość w 15,7**: Teraz można zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
+**Nowość w wersji 15.7**: mogą teraz zmniejszać miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2017 — Zmienianie lokalizacji instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
+  ![Visual Studio 2017 — Zmień lokalizacje instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z
 
 Możesz zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
-  ![Visual Studio 2019 — Wybierz lokalizacje instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji")
+  ![Visual Studio 2019 — Wybieranie lokalizacji instalacji](media/vs-2019/vs-installer-installation-locations.png "Wybierz lokalizację instalacji")
 
 ::: moniker-end
 

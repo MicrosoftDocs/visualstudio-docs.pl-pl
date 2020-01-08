@@ -3,17 +3,17 @@ title: Funkcje IntelliSense edytora XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603961"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592389"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 
@@ -87,7 +87,7 @@ Jeśli na przykład wybierzesz element `e:Book` z listy IntelliSense, w której 
 
 ## <a name="brace-matching"></a>Dopasowywanie nawiasów klamrowych
 
-Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego (**Ctrl** + **]** ), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
+Edytor XML zawiera wyróżnione nawiasy klamrowe w celu uzyskania natychmiastowej opinii na temat elementów, które właśnie zostały zamknięte. Możesz również użyć skrótu klawiaturowego (**Ctrl**+ **]** ), aby przeskoczyć z jednego nawiasu klamrowego do pasującego nawiasu klamrowego.
 
 Edytor XML wykonuje tę czynności dla następujących elementów:
 
@@ -107,7 +107,7 @@ Edytor XML wykonuje tę czynności dla następujących elementów:
 
 ## <a name="modify-the-intellisense-options"></a>Modyfikowanie opcji IntelliSense
 
-Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Można to jednak zmienić, modyfikując **narzędzia**  >  ustawienia**opcji** .
+Funkcje IntelliSense i automatycznego uzupełniania są domyślnie włączone. Można to jednak zmienić, modyfikując **narzędzia** > ustawienia **opcji** .
 
 Sekcja **autoinsert** na stronie **różnej** kontroluje następujące zachowanie:
 
@@ -119,7 +119,7 @@ Sekcja **autoinsert** na stronie **różnej** kontroluje następujące zachowani
 
 ### <a name="to-change-the-auto-completion-behavior"></a>Aby zmienić zachowanie automatycznego uzupełniania
 
-1. Wybierz **Opcje** z menu **Narzędzia** .
+1. Wybierz **opcje** z **narzędzia** menu.
 
 2. Rozwiń węzeł **Edytor tekstu**, rozwiń pozycję **XML**i wybierz pozycję **różne**.
 

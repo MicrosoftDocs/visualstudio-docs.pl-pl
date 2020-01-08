@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1757c687ea48ee1f2770fa320a18da5662f43e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665308"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591206"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
 
@@ -31,9 +31,9 @@ W przypadku tworzenia kodowanego testu interfejsu użytkownika **Konstruktor kod
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sekcja deklaracji](#UIMapDesignerFile)<br /><br /> [Klasa UIMap](#UIMapClass) (częściowa, wygenerowana automatycznie)<br /><br /> [Metody](#UIMapMethods)<br /><br /> [Właściwości](#UIMapProperties)|Nie|
 |[UIMap.cs](#UIMapCS)|[Klasa UIMap](#UIMapCS) (częściowa)|Tak|
 |[CodedUITest1.cs](#CodedUITestCS)|[Klasa CodedUITest1](#CodedUITestCS)<br /><br /> [Metody](#CodedUITestMethods)<br /><br /> [Właściwości](#CodedUITestProperties)|Tak|
-|[UIMap. UITest](#UIMapuitest)|Mapa XML interfejsu użytkownika dla testu.|Nie|
+|[UIMap.uitest](#UIMapuitest)|Mapa XML interfejsu użytkownika dla testu.|Nie|
 
-### <a name="UIMapDesignerFile"></a>UIMap.Designer.cs
+### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 Ten plik zawiera kod, który jest automatycznie tworzony przez **konstruktora kodowanego testu interfejsu użytkownika** podczas tworzenia testu. Ten plik jest ponownie tworzony za każdym razem, gdy test ulegnie zmianie, tak że nie jest to plik, w którym można dodać lub zmodyfikować kod.
 
 #### <a name="declarations-section"></a>Sekcja deklaracji
@@ -183,7 +183,7 @@ public class AddItemsParams
 
 Podobnie jak w przypadku wszystkich klas w pliku *UIMap.cs* , ta klasa rozpoczyna się od <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. W tej małej klasie jest `Fields` region, który definiuje ciągi do użycia jako parametry metody <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>, która jest używana w metodzie `UIMap.AddItems()`, która została omówiona wcześniej. Można napisać kod, aby zastąpić wartości w tych polach ciągów przed zastosowaniem metody, w której te parametry są używane.
 
-### <a name="UIMapCS"></a>UIMap.cs
+### <a name="UIMapCS"></a> UIMap.cs
 Domyślnie ten plik zawiera częściową klasę `UIMap`, która nie ma metod lub właściwości.
 
 #### <a name="uimap-class"></a>Klasa UIMap
@@ -261,7 +261,7 @@ Do metody `MyTestInitialize()` zastosowano <xref:Microsoft.VisualStudio.TestTool
 
 Jeśli dodasz więcej metod do tej klasy przy użyciu [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)), Platforma testowa wywołuje każdą metodę jako część testu.
 
-### <a name="UIMapuitest"></a>UIMap. UITest
+### <a name="UIMapuitest"></a> UIMap.uitest
 Jest to plik XML, który reprezentuje strukturę rejestrowania kodowanego testu interfejsu użytkownika i jego części. Obejmują one akcje i klasy, a także metody i właściwości tych klas. Plik [UIMap.Designer.cs](#UIMapDesignerFile) zawiera kod generowany przez kodowany Konstruktor interfejsu użytkownika do odtwarzania struktury testu i zapewnia połączenie z platformą testowania.
 
 Plik *UIMap. UITest* nie jest bezpośrednio edytowalny. Można jednak użyć kodowanego konstruktora interfejsu użytkownika, aby zmodyfikować test, który automatycznie modyfikuje plik *UIMap. UITest* i plik [*UIMap.Designer.cs*](#UIMapDesignerFile) .
@@ -282,4 +282,4 @@ Plik *UIMap. UITest* nie jest bezpośrednio edytowalny. Można jednak użyć kod
 - [Tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md)
 - [Najlepsze praktyki dotyczące kodowanych testów interfejsu użytkownika](../test/best-practices-for-coded-ui-tests.md)
 - [Testowanie dużej aplikacji przy użyciu wielu map interfejsu użytkownika](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Obsługiwane konfiguracje oraz platformy zakodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

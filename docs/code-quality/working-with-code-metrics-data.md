@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648996"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587085"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Korzystanie z okna wyników metryk kodu
 
@@ -30,9 +30,9 @@ Okno **wyników metryki kodu** jest wyświetlane automatycznie podczas generowan
 
 Można wyświetlić okno wyników metryk kodu przy użyciu jednej z następujących sekwencji menu:
 
-- W menu **Analizuj** wybierz pozycję**wyniki metryk kodu**dla **systemu Windows** > .
+- W menu **Analizuj** wybierz pozycję **Windows** > **wyniki metryki kodu**.
 
-- W menu **Widok** wybierz inne**wyniki metryk kodu**dla **systemu Windows** > .
+- W menu **Widok** wybierz kolejno pozycje **inne okna** > **wyniki metryki kodu**.
 
 Zostanie otwarte okno **wyników metryki kodu** , nawet jeśli nie zawiera żadnych wyników.
 
@@ -109,4 +109,4 @@ Aby uzyskać więcej informacji na temat Azure Boards elementów roboczych, zoba
 ## <a name="see-also"></a>Zobacz także
 
 - [Wartości metryk kodu](../code-quality/code-metrics-values.md)
-- [Instrukcje: generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Porady: generowanie danych metryk kodu](../code-quality/how-to-generate-code-metrics-data.md)

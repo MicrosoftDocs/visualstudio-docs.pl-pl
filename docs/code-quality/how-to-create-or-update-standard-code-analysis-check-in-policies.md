@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649475"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587540"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
@@ -61,7 +61,7 @@ Z listy **Uruchom ten zestaw reguł** Użyj jednej z następujących metod:
 
 - Wybierz standardowy zestaw reguł firmy Microsoft.
 
-- Wybierz zestaw reguł niestandardowych, klikając **\<Select zestaw reguł z kontroli źródła... >** . Następnie wpisz ścieżkę kontroli wersji zestawu reguł w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
+- Wybierz zestaw reguł niestandardowych, klikając **\<wybierz zestaw reguł z kontroli źródła... >** . Następnie wpisz ścieżkę kontroli wersji zestawu reguł w przeglądarce kontroli źródła. Składnia ścieżki kontroli wersji jest następująca:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ Aby uzyskać więcej informacji na temat sposobu tworzenia i implementowania nie
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Tworzenie zasad zaewidencjonowania analizy kodu i korzystanie z nich](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Implementowanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

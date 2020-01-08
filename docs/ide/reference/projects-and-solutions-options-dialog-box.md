@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655722"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567648"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Opcje — okno dialogowe: projekty i rozwiązania \> ogólne
 
-Ta strona służy do definiowania zachowań programu Visual Studio związanych z projektami i rozwiązaniami. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia**  > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
+Ta strona służy do definiowania zachowań programu Visual Studio związanych z projektami i rozwiązaniami. Aby uzyskać dostęp do tych opcji, wybierz pozycję **narzędzia** > **Opcje**, rozwiń węzeł **projekty i rozwiązania**, a następnie wybierz pozycję **Ogólne**.
 
 Poniższe opcje są dostępne na stronie **Ogólne** .
 
@@ -36,9 +36,9 @@ Po wybraniu **Eksplorator rozwiązań** automatycznie otwierane, a aktywny eleme
 
 ## <a name="show-advanced-build-configurations"></a>Pokaż zaawansowane konfiguracje kompilacji
 
-Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcje konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla Visual Basic i C# projektów, które zawierają jedną konfigurację lub dwie konfiguracje Debugowanie i wydanie. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
+Po wybraniu opcji konfiguracji kompilacji są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** . Po wyczyszczeniu opcji konfiguracji kompilacji nie są wyświetlane w oknie dialogowym **strony właściwości projektu** i w oknie dialogowym **strony właściwości rozwiązania** dla Visual Basic i C# projektów, które zawierają jedną konfigurację lub dwie konfiguracje debugowanie i wydanie. Jeśli projekt zawiera konfigurację zdefiniowaną przez użytkownika, są wyświetlane opcje konfiguracji kompilacji.
 
-Po zaznaczeniu tej opcji polecenia w menu **kompilacja** , takie jak **Kompilowanie rozwiązania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Start Debugowanie** i **Uruchamianie bez debugowania**jest wykonywane w konfiguracji debugowania.
+W przypadku usunięcia zaznaczenia polecenia w menu **kompilacja** , takie jak **rozwiązanie do kompilowania**, ponowne **Kompilowanie rozwiązania**i **czyste rozwiązanie**, są wykonywane w konfiguracji wydania i polecenia w menu **Debuguj** , takie jak **Rozpocznij debugowanie** i **Uruchom bez debugowania**, są wykonywane w konfiguracji debugowania.
 
 ## <a name="always-show-solution"></a>Zawsze pokazuj rozwiązanie
 

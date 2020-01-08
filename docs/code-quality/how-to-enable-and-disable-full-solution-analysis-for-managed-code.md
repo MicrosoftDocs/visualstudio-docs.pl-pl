@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649443"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587514"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
 
@@ -44,4 +44,4 @@ Na poniższej ilustracji przedstawiono wyniki z tego samego rozwiązania po wył
 
 Jeśli program Visual Studio wykryje, że dostępna jest 200 MB lub mniej pamięci systemowej, program automatycznie wyłączy pełną analizę rozwiązań (i inne funkcje), jeśli jest włączona. W takim przypadku zostanie wyświetlony alert informujący o tym, że program Visual Studio wyłączył niektóre funkcje. Przycisk umożliwia ponownie włączyć pełną analizę rozwiązania, jeśli chcesz.
 
-![Tekst alertu wstrzymywanie pełnej analizy rozwiązania](../code-quality/media/fsa_alert.png)
+![Tekst alertu zawieszanie pełnej analizy rozwiązania](../code-quality/media/fsa_alert.png)

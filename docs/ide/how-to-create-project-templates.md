@@ -6,50 +6,50 @@ f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
 - project templates [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f21c20880263a00d36c2fd21097bf8ee8c621d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4caebfdc4e61b683e0f1407d1522f6da2328fcf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656096"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591076"
 ---
-# <a name="how-to-create-project-templates"></a>Instrukcje: Tworzenie szablonów projektu
+# <a name="how-to-create-project-templates"></a>Porady: Tworzenie szablonów projektów
 
-W tym temacie pokazano, jak utworzyć szablon przy użyciu **Kreatora eksportu szablonów**, który pakuje szablon w pliku *zip* .
+W tym temacie pokazano, jak utworzyć szablon przy użyciu **Kreatora eksportowania szablonu**, które pakiety szablonu w *zip* pliku.
 
 ## <a name="use-the-export-template-wizard"></a>Korzystanie z Kreatora eksportu szablonów
 
 1. Utwórz projekt.
 
     > [!NOTE]
-    > Używaj tylko prawidłowych znaków identyfikatora podczas nadawania nazwy projektowi, który będzie źródłem szablonu. W przeciwnym razie błędy kompilacji mogą wystąpić w projektach, które są tworzone na podstawie szablonu. Aby uzyskać więcej informacji na temat prawidłowych znaków identyfikatora, zobacz [zadeklarowane nazwy elementów (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names) lub [identyfikatoryC++()](/cpp/cpp/identifiers-cpp). Alternatywnie możesz użyć [parametrów szablonu](../ide/template-parameters.md) , aby użyć "bezpiecznych" nazw dla klas i przestrzeni nazw.
+    > Gdy nazwy projektu, który będzie źródło szablonu, należy używać tylko znaków prawidłowego identyfikatora. W przeciwnym razie błędy kompilacji mogą występować w projektach, które są tworzone na podstawie szablonu. Aby uzyskać więcej informacji na temat prawidłowego identyfikatora znaków zobacz [zadeklarowane nazwy elementów (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names) lub [identyfikatory (C++)](/cpp/cpp/identifiers-cpp). Alternatywnie, można użyć [parametry szablonu](../ide/template-parameters.md) używać nazwy "bezpieczne" dla klas i przestrzeni nazw.
 
-2. Edytuj projekt, dopóki nie będzie gotowy do eksportowania jako szablon. Na przykład możesz chcieć edytować pliki kodu, aby wskazać, gdzie ma zostać zamieniony parametr. Zobacz [jak: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
+2. Edytuj projekt, dopóki nie jest gotowy do wyeksportowania jako szablon. Na przykład możesz edytować pliki kodu, aby wskazać, gdzie wymiany parametru powinny zostać wykonane. Zobacz [instrukcje: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md).
 
-3. W menu **projekt** wybierz polecenie **Eksportuj szablon**.
+3. Na **projektu** menu, wybierz **Eksportuj szablon**.
 
-   Zostanie otwarty **Kreator eksportu szablonu** .
+   **Kreatora eksportowania szablonu** zostanie otwarty.
 
-4. Na stronie **Wybieranie typu szablonu** wybierz **szablon projektu**. Wybierz projekt, który chcesz wyeksportować do szablonu, a następnie wybierz przycisk **dalej**.
+4. Na **wybierz typ szablonu** wybierz opcję **szablonu projektu**. Wybierz projekt, którego chcesz wyeksportować do szablonu, a następnie wybierz **dalej**.
 
 ::: moniker range="vs-2017"
 
-5. Na stronie **Wybieranie opcji szablonu** wprowadź nazwę i opcjonalny opis, ikonę i obraz podglądu szablonu. Te elementy będą wyświetlane w oknie dialogowym **Nowy projekt** . Wybierz pozycję **Zakończ**.
+5. Na **wybierz opcje szablonu** strony, wprowadź nazwę i opcjonalny opis, ikona i obrazu podglądu dla szablonu. Te elementy pojawią się w **nowy projekt** okno dialogowe. Wybierz **Zakończ**.
 
-   Projekt zostanie wyeksportowany do pliku *zip* i umieszczony w określonej lokalizacji wyjściowej, a w przypadku wybrania zaimportowany do programu Visual Studio.
+   Projekt jest eksportowana do *zip* pliku umieszczane w lokalizacji określonym produktem wyjściowym i, jeśli zaznaczone, zaimportowane do programu Visual Studio.
 
-Aby znaleźć szablon w oknie dialogowym **Nowy projekt** , rozwiń węzeł **zainstalowane** , a następnie rozwiń kategorię odpowiadającą elementowi `ProjectType` w pliku *vstemplate* . Na przykład plik *. vstemplate* , który zawiera `<ProjectType>CSharp</ProjectType>` jest domyślnie wyświetlany w obszarze **zainstalowane**  > **C#wizualizacji**. Szablon można organizować w podkatalogu typu projektu po prostu przez utworzenie folderu w tym katalogu i umieszczenie w nim pliku *zip* szablonu. Aby uzyskać więcej informacji, zobacz [How to: Lokalizowanie i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Można znaleźć szablonu w **nowy projekt** okna dialogowego rozwiń **zainstalowane** a następnie rozwiń kategorię, która odnosi się do `ProjectType` element *.vstemplate*pliku. Na przykład *.vstemplate* pliku, który zawiera `<ProjectType>CSharp</ProjectType>` pojawia się w obszarze **zainstalowane** > **Visual C#** , domyślnie. Szablonu można organizować w podkatalogu typu projektu, po prostu przez utworzenie folderu w katalogu i wprowadzenie do usługi szablonu *zip* plik. Aby uzyskać więcej informacji, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Na stronie **Wybieranie opcji szablonu** wprowadź nazwę i opcjonalny opis, ikonę i obraz podglądu szablonu. Te elementy będą wyświetlane w oknie dialogowym, w którym tworzysz nowy projekt. Wybierz pozycję **Zakończ**.
+5. Na **wybierz opcje szablonu** strony, wprowadź nazwę i opcjonalny opis, ikona i obrazu podglądu dla szablonu. Te elementy będą wyświetlane w oknie dialogowym, w którym tworzysz nowy projekt. Wybierz **Zakończ**.
 
-   Projekt zostanie wyeksportowany do pliku *zip* i umieszczony w określonej lokalizacji wyjściowej, a w przypadku wybrania zaimportowany do programu Visual Studio.
+   Projekt jest eksportowana do *zip* pliku umieszczane w lokalizacji określonym produktem wyjściowym i, jeśli zaznaczone, zaimportowane do programu Visual Studio.
 
 Aby znaleźć szablon w oknie dialogowym, w którym tworzysz nowy projekt, wyszukaj go według nazwy lub przewiń listę. (Filtrowanie na podstawie języka lub typu projektu nie jest obecnie możliwe dla szablonów użytkowników).
 
@@ -57,12 +57,12 @@ Aby znaleźć szablon w oknie dialogowym, w którym tworzysz nowy projekt, wyszu
 
 ## <a name="other-ways-to-create-project-templates"></a>Inne sposoby tworzenia szablonów projektu
 
-Szablony projektów można tworzyć ręcznie, zbierając pliki stanowiące projekt do folderu i tworząc plik XML *. vstemplate* z odpowiednimi metadanymi. Aby uzyskać więcej informacji, zobacz [How to: Manual Create Web templates](../ide/how-to-manually-create-web-templates.md).
+Szablony projektów można tworzyć ręcznie, zbierając pliki stanowiące projekt do folderu i tworząc plik XML *. vstemplate* z odpowiednimi metadanymi. Aby uzyskać więcej informacji, zobacz [porady: ręczne tworzenie szablonów sieci web](../ide/how-to-manually-create-web-templates.md).
 
-Jeśli masz zainstalowany zestaw Visual Studio SDK, możesz otoczyć gotowy szablon w pliku VSIX do wdrożenia przy użyciu szablonu **projektu VSIX** . Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z szablonem projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
+W przypadku programu Visual Studio SDK zainstalowany ukończony szablon można opakować w pliku VSIX do wdrożenia przy użyciu **projekt VSIX** szablonu. Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z szablonem projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
-- [Wprowadzenie do szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- [Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
+- [Rozpoczynanie pracy przy użyciu szablonu projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

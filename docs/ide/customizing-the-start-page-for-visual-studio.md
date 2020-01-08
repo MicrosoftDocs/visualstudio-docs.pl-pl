@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start Page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a415c8a61e360ed1bcc323214d4144b2875cc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652550"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567219"
 ---
 # <a name="customize-startup"></a>Dostosowywanie uruchamiania
 
@@ -32,13 +32,13 @@ Można także pokazać niestandardową stronę początkową, czyli stronę XAML 
 
 ## <a name="to-change-the-startup-item"></a>Aby zmienić element startowy
 
-1. Na pasku menu wybierz polecenie **narzędzia**  > **Opcje**.
+1. Na pasku menu wybierz **narzędzia** > **opcje**.
 
-2. Rozwiń węzeł **środowisko**, a następnie wybierz polecenie **Uruchamianie**.
+2. Rozwiń **środowiska**, a następnie wybierz **uruchamiania**.
 
 ::: moniker range="vs-2017"
 
-3. Z listy podczas **uruchamiania** wybierz element, który ma być wyświetlany po uruchomieniu programu Visual Studio.
+3. W **przy uruchamianiu** listy, wybierz element który będzie wyświetlany po uruchomieniu programu Visual Studio.
 
 ::: moniker-end
 
@@ -50,22 +50,22 @@ Można także pokazać niestandardową stronę początkową, czyli stronę XAML 
 
 ::: moniker range="vs-2017"
 
-## <a name="to-show-a-custom-start-page"></a>Aby wyświetlić niestandardową stronę początkową
+## <a name="to-show-a-custom-start-page"></a>Aby pokazać niestandardową stronę początkową
 
-Możesz [utworzyć własną niestandardową stronę początkową](../extensibility/creating-a-custom-start-page.md) przy użyciu zestawu Visual Studio SDK lub użyć, która została już utworzona przez kogoś innego. Na przykład możesz znaleźć niestandardowe strony początkowe na [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
+Możesz [utworzyć własną niestandardową stronę początkową](../extensibility/creating-a-custom-start-page.md) przy użyciu zestawu SDK programu Visual Studio lub użyj jednego z nich, że ktoś już został utworzony. Na przykład można znaleźć niestandardowych stron początkowych w [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads).
 
-Aby zainstalować niestandardową stronę początkową, Otwórz plik *. vsix* lub skopiuj i Wklej pliki strony początkowej do folderu *%USERPROFILE%\Documents\Visual Studio 2017 \ restartpages* na komputerze.
+Aby zainstalować niestandardową stronę początkową, otwórz *.vsix* pliku, lub skopiuj i Wklej pliki strony początkowe do *%USERPROFILE%\Documents\Visual Studio 2017\StartPages* folderu na komputerze.
 
-### <a name="to-select-which-custom-start-page-to-display"></a>Aby wybrać niestandardową stronę początkową do wyświetlenia
+### <a name="to-select-which-custom-start-page-to-display"></a>Aby wybrać, które niestandardową stronę początkową do wyświetlenia
 
 1. Na pasku menu wybierz polecenie **narzędzia** > **Opcje**.
 
-1. Rozwiń węzeł **środowisko**, a następnie wybierz polecenie **Uruchamianie**.
+1. Rozwiń **środowiska**, a następnie wybierz **uruchamiania**.
 
-1. Na liście **Dostosuj stronę początkową** wybierz żądaną stronę.
+1. W **Dostosuj stronę początkową** listy, wybierz stronę, która ma.
 
 > [!TIP]
-> Jeśli błąd na niestandardowej stronie początkowej powoduje awarię programu Visual Studio, można otworzyć program Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby korzystał z domyślnej strony początkowej. Zobacz [/safemode (devenv. exe)](../ide/reference/safemode-devenv-exe.md).
+> Jeśli błąd na niestandardowej stronie początkowej powoduje awarię programu Visual Studio, można otworzyć program Visual Studio w trybie awaryjnym, a następnie ustawić go tak, aby korzystał z domyślnej strony początkowej. Zobacz [/safemode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Zobacz także
 

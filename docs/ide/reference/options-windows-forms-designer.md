@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Windows Forms Designer options
 - Options dialog box, Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 16dfd7aed9e3a3586d32f3a4456451b96d8b9f09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568064"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>Opcje — okno dialogowe: Projektant formularzy systemu Windows
 
@@ -23,39 +23,39 @@ Strona Opcje Projektant formularzy systemu Windows umożliwia ustawianie prefere
 
 ## <a name="code-generation-settings"></a>Ustawienia generowania kodu
 
-**Zoptymalizowane generowanie kodu** \
+**Zoptymalizowane generowanie kodu**\
 Włącza zoptymalizowane generowanie kodu. Niektóre kontrolki mogą nie być zgodne z tym trybem. Aby ta zmiana zaczęła obowiązywać, program Visual Studio musi być zamknięty i ponownie otwarty.
 
 ## <a name="high-dpi-support"></a>Obsługa wysokiej rozdzielczości DPI
 
-**Powiadomienia skalowania DPI** \
+**Powiadomienia skalowania DPI**\
 Pokaż komunikat w projektancie formularzy systemu Windows, który może ponownie uruchomić program Visual Studio z skalowaniem do 100%. Aby uzyskać więcej informacji, zobacz [wyłączanie rozpoznawania dpi w programie Visual Studio](/dotnet/framework/winforms/disable-dpi-awareness-visual-studio).
 
 ## <a name="layout-settings"></a>Ustawienia układu
 
-**Domyślny rozmiar komórki siatki** \
+**Domyślny rozmiar komórki siatki**\
 Ustawia odstępy (w pikselach) między poziomymi i pionowymi liniami siatki w projektancie. Domyślny rozmiar to 8, 8. Maksymalny rozmiar to 200, 200.
 
-**Tryb układu** \
+**Tryb układu**\
 Określa system wyrównania, który ma być używany na potrzeby układu. Można wybrać opcję SnapToGrid lub linii wyrównania.
 
-**Pokaż \ siatki**
+**Pokaż\ siatki**
 Określa, czy projektanci mają wyświetlać siatkę wielkości. Domyślnie siatka jest włączona.
 
-**Przyciągaj do \ siatki**
+**Przyciągaj do\ siatki**
 Określa, czy projektanci będą przyciągać obiekty i kontrolki do siatki. Innymi słowy, zmiany rozmiarów i przenoszenia elementów projektanta są ograniczone do przyrostu GridSize, gdy ta funkcja jest włączona. Włączenie SnapToGrid ułatwia precyzyjne rozróżnienie różnych aspektów interfejsu użytkownika, ale ogranicza swobodę, z którą może umieścić formanty. Domyślnie SnapToGrid jest włączona.
 
 ## <a name="object-bound-smart-tag-settings"></a>Ustawienia tagów inteligentnych powiązane z obiektem
 
-**Automatycznie otwieraj Tagi inteligentne** \
+**Automatycznie otwieraj Tagi inteligentne**\
 Określa, czy formanty i składniki wyświetlają Tagi inteligentne. Nie wszystkie formanty i składniki obsługują Tagi inteligentne.
 
 ## <a name="refactoring"></a>Refaktoryzacja
 
-**Włącz refaktoryzację przy zmianie nazwy** \
+**Włącz refaktoryzację przy zmianie nazwy**\
 Po ustawieniu na `true`, operacja refaktoryzacji zmiany nazwy jest wykonywana po zmianie nazwy składnika z okna okno Właściwości lub konspektu dokumentu.
 
 ## <a name="toolbox"></a>Przybornik
 
-**Automatycznie Wypełnij przybornik** \
+**Automatycznie Wypełnij przybornik**\
 Określa, czy okno przybornika jest wypełniane automatycznie ze składnikami i kontrolkami skompilowanymi przez projekt.

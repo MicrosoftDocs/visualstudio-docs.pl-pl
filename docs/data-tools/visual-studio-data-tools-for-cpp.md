@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639502"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586058"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia do obsługi danych programu Visual Studio dla języka C++
 
@@ -41,7 +41,7 @@ Aby skorzystać z funkcji niestandardowych w SQL Server 2005 i nowszych, użyj [
 
 4. Pobierz przykład ODBC Windows SDK i rozpakuj go do nowej lokalizacji. Ten przykład pokazuje podstawowe polecenia ODBC, które są używane do łączenia się z bazą danych i wysyłania zapytań i poleceń. Więcej informacji na temat tych funkcji można znaleźć w [witrynie Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Po pierwszym załadowaniu rozwiązania (znajdującego się w C++ folderze) program Visual Studio będzie oferować uaktualnienie rozwiązania do bieżącej wersji programu Visual Studio. Kliknij przycisk **Tak**.
 
-5. Aby można było korzystać z klienta natywnego, potrzebny jest plik *nagłówkowy* i plik *lib* . Te pliki zawierają funkcje i definicje charakterystyczne dla SQL Server, poza funkcjami ODBC zdefiniowanymi w pliku SQL. h. We**właściwościach**  >  **projektu**  > **katalogów VC + +** Dodaj następujący katalog dołączania:
+5. Aby można było korzystać z klienta natywnego, potrzebny jest plik *nagłówkowy* i plik *lib* . Te pliki zawierają funkcje i definicje charakterystyczne dla SQL Server, poza funkcjami ODBC zdefiniowanymi w pliku SQL. h. We **właściwościach** > **projektu** > **katalogów VC + +** Dodaj następujący katalog dołączania:
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,13 +58,13 @@ Aby skorzystać z funkcji niestandardowych w SQL Server 2005 i nowszych, użyj [
 
     Należy zauważyć, że w przykładzie nie jest faktycznie używana żadna z natywnych funkcji klienta, dlatego poprzednie kroki nie są niezbędne do skompilowania i uruchomienia. Ale projekt jest teraz skonfigurowany do korzystania z tej funkcji. Aby uzyskać więcej informacji, zobacz [programowanie SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Określ, który sterownik ma być używany w podsystemie ODBC. Przykład przekazuje atrybut parametrów połączenia sterownika w jako argument wiersza polecenia. W oknie**właściwości**  >  **projektu**  > **debugowanie**Dodaj następujący argument polecenia:
+7. Określ, który sterownik ma być używany w podsystemie ODBC. Przykład przekazuje atrybut parametrów połączenia sterownika w jako argument wiersza polecenia. W oknie **właściwości** > **projektu** > **debugowanie**Dodaj następujący argument polecenia:
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Naciśnij klawisz **F5** , aby skompilować i uruchomić aplikację. Powinno zostać wyświetlone okno dialogowe ze sterownika, które wyświetla komunikat z prośbą o wprowadzenie bazy danych. Wprowadź `(localdb)\MSSQLLocalDB` i zaznacz pole wyboru **Użyj zaufanego połączenia**. Naciśnij przycisk **OK**. Powinna zostać wyświetlona konsola z komunikatami informującymi o pomyślnym nawiązaniu połączenia. Należy również wyświetlić wiersz polecenia, w którym można wpisać instrukcję języka SQL. Na poniższym ekranie przedstawiono przykładowe zapytanie i wyniki:
+8. Naciśnij klawisz **F5** , aby skompilować i uruchomić aplikację. Powinno zostać wyświetlone okno dialogowe ze sterownika, które wyświetla komunikat z prośbą o wprowadzenie bazy danych. Wprowadź `(localdb)\MSSQLLocalDB`i zaznacz pole wyboru **Użyj zaufanego połączenia**. Naciśnij klawisz **OK**. Powinna zostać wyświetlona konsola z komunikatami informującymi o pomyślnym nawiązaniu połączenia. Należy również wyświetlić wiersz polecenia, w którym można wpisać instrukcję języka SQL. Na poniższym ekranie przedstawiono przykładowe zapytanie i wyniki:
 
    ![Przykładowe dane wyjściowe zapytania ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 

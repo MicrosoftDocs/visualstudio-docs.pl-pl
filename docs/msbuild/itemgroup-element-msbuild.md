@@ -1,5 +1,5 @@
 ---
-title: Itemgroup — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: Item, element (MSBuild) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,22 +13,22 @@ helpviewer_keywords:
 - ItemGroup element [MSBuild]
 - <ItemGroup> element [MSBuild]
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64667ef01d1b21cce8303e2f72be3f252ec4245e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001206"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573459"
 ---
-# <a name="itemgroup-element-msbuild"></a>Itemgroup — element (MSBuild)
-Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Każdy element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny elementu `ItemGroup` elementu.
+# <a name="itemgroup-element-msbuild"></a>Item, element (MSBuild)
+Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Każdy element użyty w projekcie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi być określony jako element podrzędny elementu `ItemGroup`.
 
-\<Project> \<ItemGroup>
+\<Project > \<Items >
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,27 +42,27 @@ Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-elem
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
 W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny. Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`Condition`|Atrybut opcjonalny. Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Element](../msbuild/item-element-msbuild.md)|Definiuje dane wejściowe dla procesu kompilacji. Może wynosić zero lub więcej `Item` elementów w `ItemGroup`.|
+|[Element](../msbuild/item-element-msbuild.md)|Definiuje dane wejściowe dla procesu kompilacji. W `ItemGroup`mogą znajdować się co najmniej zero elementów `Item`.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
-| [Docelowy](../msbuild/target-element-msbuild.md) | Począwszy od programu .NET Framework 3.5, `ItemGroup` element może znajdować się wewnątrz `Target` elementu. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md). |
+| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Cel](../msbuild/target-element-msbuild.md) | Począwszy od .NET Framework 3,5, element `ItemGroup` może znajdować się wewnątrz elementu `Target`. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Przykład
-Poniższy przykład kodu pokazuje kolekcji elementów zdefiniowanych przez użytkownika `Res` i `CodeFiles` zadeklarowane wewnątrz `ItemGroup` elementu. Każdy z elementów w `Res` elementu Kolekcja zawiera element podrzędny zdefiniowanych przez użytkownika [itemmetadata —](../msbuild/itemmetadata-element-msbuild.md) elementu.
+Poniższy przykład kodu przedstawia zdefiniowane przez użytkownika kolekcje elementów `Res` i `CodeFiles` zadeklarowane wewnątrz elementu `ItemGroup`. Każdy element w kolekcji `Res` elementów zawiera zdefiniowany przez użytkownika element podrzędny [ItemMetadata —](../msbuild/itemmetadata-element-msbuild.md) .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -84,4 +84,4 @@ Poniższy przykład kodu pokazuje kolekcji elementów zdefiniowanych przez użyt
 ## <a name="see-also"></a>Zobacz także
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)
-- [Wspólne elementy projektów MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)

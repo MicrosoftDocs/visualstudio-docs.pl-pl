@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313968"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589984"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadaj nazwę kontrolkom przycisków
 
-W formularzu istnieje tylko jedna <xref:System.Windows.Forms.PictureBox>. Po dodaniu, IDE automatycznie nazywa go **PictureBox1**. Istnieje tylko jeden <xref:System.Windows.Forms.CheckBox> o nazwie **checkBox1**. Wkrótce napiszesz kod i ten kod będzie się odnosił do pola CheckBox i PictureBox. Ponieważ istnieje tylko jedna z tych kontrolek, wiadomo, co oznacza, gdy zobaczysz **PictureBox1** lub **checkBox1** w kodzie.
+W formularzu istnieje tylko jedna <xref:System.Windows.Forms.PictureBox>. Po dodaniu, IDE automatycznie nazywa go **PictureBox1**. Istnieje tylko jeden <xref:System.Windows.Forms.CheckBox>o nazwie **checkBox1**. Wkrótce napiszesz kod i ten kod będzie się odnosił do pola CheckBox i PictureBox. Ponieważ istnieje tylko jedna z tych kontrolek, wiadomo, co oznacza, gdy zobaczysz **PictureBox1** lub **checkBox1** w kodzie.
 
 > [!TIP]
 > W Visual Basic domyślną pierwszą literą każdej nazwy kontrolki jest Inicjał, więc nazwy to **PictureBox1**, **checkBox1**i tak dalej.
@@ -33,7 +33,7 @@ W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Bu
 
 1. W formularzu wybierz przycisk **Zamknij** . (Jeśli nadal masz zaznaczone wszystkie przyciski, wybierz klawisz **ESC** , aby anulować wybór). Przewiń w oknie **Właściwości** do momentu wyświetlenia właściwości **(Name)** . (Właściwość **(Name)** znajduje się najbliżej góry, gdy właściwości są alfabetyczne.) Zmień nazwę na **CloseButton**, jak pokazano na poniższym zrzucie ekranu.
 
-    okno ![Properties z nazwą closeButton ](../ide/media/express_setnameproperty.png)<br>Okno ***Właściwości*** *o* *nazwie* CloseButton
+    ![okno Właściwości z closeButton nazwą](../ide/media/express_setnameproperty.png)<br>Okno ***Właściwości*** *o* *nazwie* CloseButton
 
     > [!NOTE]
     > Spróbuj zmienić nazwę przycisku na **przycisk Zamknij**, spację między wyrazami "Zamknij" i "przycisk". Gdy to zrobisz, IDE wyświetli komunikat o błędzie: "wartość właściwości jest nieprawidłowa." Spacje (i kilka innych znaków) nie są dozwolone w nazwach kontrolek.
@@ -45,7 +45,7 @@ Nazwy można sprawdzić, wybierając listę rozwijaną selektor formantów w okn
 
    Na tej karcie jest wyświetlany plik kodu znajdujący się za formularzem, jak pokazano na poniższym zrzucie ekranu.
 
-    Karta ![Form1. cs z kodem Visual&#35; C ](../ide/media/express_showbuttoncode.png)<br>
+    Karta ![Form1.cs z kodem języka&#35; Visual C](../ide/media/express_showbuttoncode.png)<br>
 Karta ***Form1.cs*** *z C# kodem*
 
     > [!NOTE]
@@ -74,7 +74,7 @@ Karta ***Form1.cs*** *z C# kodem*
 1. Aby dodać jeszcze jedną metodę, Otwórz plik kodu dla kontrolki **CheckBox** w **Projektant formularzy systemu Windows** , aby środowisko IDE dodać metodę `checkBox1_CheckedChanged()`. Ta metoda jest wywoływana za każdym razem, gdy użytkownik zaznaczy lub wyczyści to pole wyboru.
 
    > [!TIP]
-   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby otworzyć **Projektant formularzy systemu Windows** przez dwukrotne kliknięcie C# *Form1.cs* w lub *Form1. vb* w Visual Basic lub na pasku menu wybierz **Widok**  > **projektanta**.
+   > Podczas pracy nad aplikacją często przechodzą między edytorem kodu a **Projektant formularzy systemu Windows**. Środowisko IDE ułatwia nawigowanie w projekcie. Użyj **Eksplorator rozwiązań** , aby otworzyć **Projektant formularzy systemu Windows** przez dwukrotne kliknięcie C# *Form1.cs* w lub *Form1. vb* w Visual Basic lub na pasku menu wybierz **Widok** > **projektanta**.
 
     Poniżej przedstawiono nowy kod widoczny w edytorze kodu.
 
@@ -95,7 +95,7 @@ Karta ***Form1.cs*** *z C# kodem*
 
     Na przykład zdarzenie kliknięcia dla przycisku o nazwie **showButton** nosi nazwę metody obsługi zdarzeń `showButton_Click()` (Alternatywnie `ShowButton_Click()`). Ponadto nawiasy otwierające i zamykające `()` są zwykle dodawane po nazwie metody, aby wskazać, że metody są omawiane.
 
-    Jeśli zdecydujesz się zmienić nazwę zmiennej kodu, kliknij prawym przyciskiem myszy zmienną w kodzie, a następnie wybierz pozycję **refaktoryzacja**  > **Zmień nazwę**. Nazwy wszystkich wystąpień tej zmiennej w kodzie. Aby uzyskać więcej informacji, zobacz [Refaktoryzacja zmiany nazwy](../ide/reference/rename.md).
+    Jeśli zdecydujesz się zmienić nazwę zmiennej kodu, kliknij prawym przyciskiem myszy zmienną w kodzie, a następnie wybierz pozycję **refaktoryzacja** > **Zmień nazwę**. Nazwy wszystkich wystąpień tej zmiennej w kodzie. Aby uzyskać więcej informacji, zobacz [Refaktoryzacja zmiany nazwy](../ide/reference/rename.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

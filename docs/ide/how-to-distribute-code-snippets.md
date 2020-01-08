@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23e77658b2b09f643af18a3f136f5428828cfb5c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656064"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591063"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Instrukcje: dystrybuowanie fragmentów kodu
 
@@ -67,19 +67,19 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
 
 2. Przenieś plik *fragmentu kodu* do folderu *HelloWorldVB* .
 
-3. Wybierz plik *fragmentu kodu* w **Eksplorator rozwiązań**, a w oknie **Właściwości** upewnij się, że **Akcja kompilacji** jest ustawiona **na zawartość**, **Kopiuj do katalogu wyjściowego** jest ustawiona na wartość **Kopiuj zawsze**i **Dołącz do VSIX** ma wartość **true**.
+3. Wybierz plik *fragmentu kodu* w **Eksplorator rozwiązań**, a w oknie **Właściwości** upewnij się, **że akcja kompilacji** jest ustawiona na **zawartość**, w polu **Kopiuj do katalogu wyjściowego** jest ustawiona wartość **Kopiuj zawsze**, a **w polu VSIX** wybierz pozycję **prawda**.
 
 ### <a name="add-the-pkgdef-file"></a>Dodaj plik. pkgdef
 
 ::: moniker range="vs-2017"
 
-1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do klucza **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** .
+1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER klucza \software\microsoft\visualstudio\15.0\languages\codeexpansions\basic** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do klucza **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** .
+1. Dodaj plik tekstowy do folderu *HelloWorldVB* i nadaj mu nazwę *HelloWorldVB. pkgdef*. Ten plik jest używany do dodawania niektórych kluczy do rejestru. W takim przypadku dodaje nowy podklucz do **HKEY_CURRENT_USER klucza \software\microsoft\visualstudio\16.0\languages\codeexpansions\basic** .
 
 ::: moniker-end
 
@@ -107,11 +107,11 @@ Ta procedura spowoduje użycie tego samego fragmentu kodu Hello world, który zo
 
 1. Teraz można upewnić się, że fragment kodu działa w eksperymentalnym wystąpieniu programu Visual Studio. Eksperymentalne wystąpienie to druga kopia programu Visual Studio, która jest oddzielona od użytego do pisania kodu. Umożliwia pracę nad rozszerzeniem bez wpływu na środowisko deweloperskie.
 
-2. Skompiluj projekt i Rozpocznij debugowanie.
+2. Skompiluj projekt, a następnie rozpocząć debugowanie.
 
    Zostanie wyświetlone drugie wystąpienie programu Visual Studio.
 
-3. W eksperymentalnym wystąpieniu przejdź do pozycji **narzędzia**  >  programu**fragmenty kodu** i ustaw **Język** na **podstawowy**. Powinien być widoczny *HelloWorldVB* jako jeden z folderów i można rozwinąć folder, aby wyświetlić fragment kodu *HelloWorldVB* .
+3. W eksperymentalnym wystąpieniu przejdź do pozycji **narzędzia** > programu **fragmenty kodu** i ustaw **Język** na **podstawowy**. Powinien być widoczny *HelloWorldVB* jako jeden z folderów i można rozwinąć folder, aby wyświetlić fragment kodu *HelloWorldVB* .
 
 4. Przetestuj fragment kodu. W eksperymentalnym wystąpieniu Otwórz projekt Visual Basic i otwórz jeden z plików kodu. Umieść kursor w dowolnym miejscu w kodzie, kliknij prawym przyciskiem myszy, a następnie w menu kontekstowym wybierz **Wstaw fragment**kodu.
 

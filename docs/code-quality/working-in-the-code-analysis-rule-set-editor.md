@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649009"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587137"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Korzystanie z edytora zestawu reguł analizy kodu
 
@@ -27,7 +27,7 @@ W poniższej tabeli przedstawiono opcje ważności:
 |-|-|
 |Ostrzeżenie|Generuje ostrzeżenie w **Lista błędów** a także w czasie kompilacji.|
 |Błąd|Generuje błąd w **Lista błędów** a także w czasie kompilacji.|
-|Informacje o|Generuje komunikat w **Lista błędów**.|
+|Informacje|Generuje komunikat w **Lista błędów**.|
 |Hidden|Naruszenie nie jest widoczne dla użytkownika. Środowisko IDE jest powiadamiane jednak o naruszeniu.|
 |Brak|Reguła jest pomijana. Zachowanie jest takie samo, jak w przypadku usunięcia reguły z zestawu reguł.|
 
@@ -52,7 +52,7 @@ W poniższej tabeli opisano kontrolki na pasku narzędzi edytora zestawu reguł.
 |---------------------|-----------------|
 |**Rozwiń wszystko**|Pokazuje reguły we wszystkich grupach.|
 |**Zwiń wszystko**|Ukrywa reguły we wszystkich grupach.|
-|**Grupuj według**|Określa pole, według którego są grupowane reguły. Kliknij **\<None >** , aby wyświetlić reguły bez grup.|
+|**Group By**|Określa pole, według którego są grupowane reguły. Kliknij pozycję **\<brak >** , aby wyświetlić reguły bez grup.|
 |**Opcje kolumn**|Określa pola reguły do wyświetlenia.|
 |**Ukryj reguły, które nie mają zastosowania do bieżącego rozwiązania**|Pokazuje lub ukrywa reguły, które nie są tego samego typu docelowego co rozwiązanie.|
 |**Pokaż reguły, które mogą generować błędy analizy kodu**|Pokazuje lub ukrywa reguły, do których przypisano akcję błędu.|
@@ -69,12 +69,12 @@ W poniższej tabeli opisano pola zestawu reguł:
 
 |Pole|Opis|
 |-----------|-----------------|
-|**#C1**|Identyfikator reguły.|
-|**Kategorii**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [ostrzeżenia analizy kodu](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**Identyfikator**|Identyfikator reguły.|
+|**Kategoria**|Oprócz ich przynależności do zestawów reguł reguły analizy kodu są również pogrupowane według kategorii. Aby uzyskać więcej informacji, zobacz [ostrzeżenia analizy kodu](../code-quality/code-analysis-for-managed-code-warnings.md).|
 |**Nazwa**|Tytuł reguły.|
-|**Obszaru**|Przestrzeń nazw reguły.|
+|**Namespace**|Przestrzeń nazw reguły.|
 |**Typ docelowy**|Wskazuje, czy reguła dotyczy kodu natywnego, zarządzanego lub bazy danych.|
-|**Transakcji**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu. Można edytować pole **akcji** .|
+|**Akcja**|Akcja podejmowana, gdy reguła jest naruszana w przebiegu analizy kodu. Można edytować pole **akcji** .|
 |**Źródłowe zestawy reguł**|Zestaw reguł, który zawiera regułę.|
 
 ## <a name="sort-and-filter-rule-sets"></a>Sortowanie i filtrowanie zestawów reguł

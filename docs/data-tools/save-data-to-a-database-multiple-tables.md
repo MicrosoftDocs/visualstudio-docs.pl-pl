@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648194"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586253"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 
@@ -33,7 +33,7 @@ Zadania przedstawione w tym instruktażu obejmują:
 
 - Tworzenie i Konfigurowanie źródła danych w aplikacji za pomocą [Kreatora konfiguracji źródła danych](../data-tools/media/data-source-configuration-wizard.png).
 
-- Ustawianie kontrolek elementów w [oknie źródła danych](add-new-data-sources.md#data-sources-window). Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Ustawianie kontrolek elementów w [oknie źródła danych](add-new-data-sources.md#data-sources-window). Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Tworzenie kontrolek powiązanych z danymi przez przeciąganie elementów z okna **źródła danych** na formularz.
 
@@ -55,7 +55,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -67,7 +67,7 @@ Utwórz nowy projekt **aplikacji Windows Forms** dla obu C# lub Visual Basic. Na
 
 Ten krok powoduje utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Aby utworzyć połączenie, musisz mieć dostęp do przykładowej bazy danych Northwind. Aby uzyskać informacje o konfigurowaniu przykładowej bazy danych Northwind, zobacz [How to: Install Sample Bases](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1. W menu **dane** wybierz pozycję **Pokaż źródła danych**.
+1. Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
 
    Zostanie otwarte okno **źródła danych** .
 
@@ -79,7 +79,7 @@ Ten krok powoduje utworzenie źródła danych z bazy danych Northwind przy użyc
 
     - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-         —lub—
+         lub
 
     - Wybierz pozycję **nowe połączenie** , aby otworzyć okno dialogowe **Dodawanie/modyfikowanie połączenia** .
 
@@ -101,7 +101,7 @@ W tym instruktażu dane w tabeli `Customers` znajdują się w układzie **szczeg
 
 1. W oknie **źródła danych** rozwiń węzeł **klienci** .
 
-2. W węźle **klienci** wybierz pozycję **szczegóły** z listy kontrolki, aby zmienić formant tabeli **Customers** na poszczególne kontrolki. Aby uzyskać więcej informacji, zobacz [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródła danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+2. W węźle **klienci** wybierz pozycję **szczegóły** z listy kontrolki, aby zmienić formant tabeli **Customers** na poszczególne kontrolki. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Tworzenie formularza powiązanego z danymi
 
@@ -109,18 +109,18 @@ Można utworzyć formanty powiązane z danymi, przeciągając elementy z okna **
 
 1. Przeciągnij główny węzeł **Customers** z okna **źródła danych** na **formularz Form1**.
 
-     Formanty powiązane z danymi z opisowymi etykietami są wyświetlane w formularzu wraz z paskiem narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
+     Formanty powiązane z danymi z opisowymi etykietami są wyświetlane w formularzu wraz z paskiem narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>i <xref:System.Windows.Forms.BindingNavigator> pojawiają się na pasku składnika.
 
 2. Przeciągnij węzeł powiązane **zamówienia** z okna **źródła danych** na **formularz Form1**.
 
     > [!NOTE]
     > Węzeł powiązane **zamówienia** znajduje się poniżej kolumny **faks** i jest węzłem podrzędnym węzła **Customers** .
 
-     Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. @No__t_0 i <xref:System.Windows.Forms.BindingSource> pojawiają się na pasku składnika.
+     Kontrolka <xref:System.Windows.Forms.DataGridView> i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania po rekordach pojawiają się w formularzu. `OrdersTableAdapter` i <xref:System.Windows.Forms.BindingSource> pojawiają się na pasku składnika.
 
 ## <a name="add-code-to-update-the-database"></a>Dodawanie kodu w celu zaktualizowania bazy danych
 
-Bazę danych można zaktualizować, wywołując metody `Update` **klientów** i **zamówień** TableAdapters. Domyślnie program obsługi zdarzeń dla przycisku **zapisz** <xref:System.Windows.Forms.BindingNavigator> jest dodawany do kodu formularza w celu wysłania aktualizacji do bazy danych programu. Ta procedura modyfikuje kod w celu wysłania aktualizacji w odpowiedniej kolejności. Eliminuje to możliwość podnoszenia błędów integralności referencyjnej. Kod implementuje również obsługę błędów przez zawijanie wywołania aktualizacji w bloku try-catch. Możesz zmodyfikować kod, aby spełniał wymagania aplikacji.
+Bazę danych można zaktualizować, wywołując metody `Update` **klientów** i **zamówień** TableAdapters. Domyślnie program obsługi zdarzeń dla przycisku **zapisz**<xref:System.Windows.Forms.BindingNavigator> jest dodawany do kodu formularza w celu wysłania aktualizacji do bazy danych programu. Ta procedura modyfikuje kod w celu wysłania aktualizacji w odpowiedniej kolejności. Eliminuje to możliwość podnoszenia błędów integralności referencyjnej. Kod implementuje również obsługę błędów przez zawijanie wywołania aktualizacji w bloku try-catch. Możesz zmodyfikować kod, aby spełniał wymagania aplikacji.
 
 > [!NOTE]
 > Dla jasności ten przewodnik nie korzysta z transakcji. Jeśli jednak aktualizujesz dwie lub więcej powiązanych tabel, Uwzględnij całą logikę aktualizacji w ramach transakcji. Transakcja to proces, który gwarantuje, że wszystkie powiązane zmiany w bazie danych zakończą się pomyślnie przed zatwierdzeniem jakichkolwiek zmian. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](/dotnet/framework/data/adonet/transactions-and-concurrency).
@@ -129,7 +129,7 @@ Bazę danych można zaktualizować, wywołując metody `Update` **klientów** i 
 
 1. Wybierz przycisk **Zapisz** na <xref:System.Windows.Forms.BindingNavigator>. Spowoduje to otwarcie edytora kodu dla programu obsługi zdarzeń `bindingNavigatorSaveItem_Click`.
 
-2. Zastąp kod w obsłudze zdarzeń, aby wywołać metody `Update` powiązanej TableAdapters. Poniższy kod najpierw tworzy trzy tymczasowe tabele danych do przechowywania zaktualizowanych informacji dla poszczególnych <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added> i <xref:System.Data.DataRowState.Modified>). Aktualizacje są wykonywane w odpowiedniej kolejności. Kod powinien wyglądać następująco:
+2. Zastąp kod w obsłudze zdarzeń, aby wywołać metody `Update` powiązanej TableAdapters. Poniższy kod najpierw tworzy trzy tymczasowe tabele danych do przechowywania zaktualizowanych informacji dla poszczególnych <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added>i <xref:System.Data.DataRowState.Modified>). Aktualizacje są wykonywane w odpowiedniej kolejności. Kod powinien wyglądać następująco:
 
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
@@ -140,7 +140,7 @@ Bazę danych można zaktualizować, wywołując metody `Update` **klientów** i 
 
 2. Wprowadź pewne zmiany w danych co najmniej jednego rekordu w każdej tabeli.
 
-3. Wybierz przycisk **Zapisz** .
+3. Wybierz ikonę **Zapisz**.
 
 4. Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.
 

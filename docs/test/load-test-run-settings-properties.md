@@ -5,15 +5,15 @@ ms.topic: reference
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bea257e45b557fd157d68baf9e0229a602a7a6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652971"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584468"
 ---
 # <a name="load-test-run-settings-properties"></a>Właściwości ustawień przebiegu testu obciążenia
 
@@ -52,7 +52,7 @@ Aby uzyskać więcej informacji, zobacz [Modyfikowanie ustawień rejestrowania t
 |Właściwość|Definicja|
 |-|----------------|
 |**Typ magazynu**|Sposób przechowywania liczników wydajności uzyskanych w teście obciążenia. Dostępne są następujące opcje:<br /><br /> -   **Database** — wymaga bazy danych SQL, która ma **Magazyn wyniki testów ładowania**.<br />-   **Brak**.|
-|**Magazyn szczegółów czasu**|Służy do określania, które szczegóły będą przechowywane w **magazynie ładowania wyniki testów**. Dostępne są trzy wartości:<br /><br /> -   **AllIndividualDetails** — zbieranie i przechowywanie poszczególnych wartości chronometrażu dla każdego testu, transakcji i strony, która została uruchomiona lub wystawiona podczas testu obciążenia w **magazynie wyniki testów obciążenia**. Jest to wymagane, jeśli zamierzasz używać **wykresu wirtualnego aktywności użytkownika** w **analizatorze testu obciążenia**.<br />     Aby uzyskać więcej informacji, zobacz [Analizowanie aktywności wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **none** — nie Zbieraj żadnych indywidualnych wartości chronometrażu. Jest to wartość domyślna dla Visual Studio 2013 Update 4 i nowszych wersji.<br />-   **StatisticsOnly** — zbieranie i przechowywanie tylko statystyk zamiast przechowywania poszczególnych wartości chronometrażu dla każdego testu, transakcji i strony, która została wykonana lub wystawiona podczas testu obciążenia w **magazynie wyniki testów obciążenia**.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: Określ właściwość Storage Details](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Magazyn szczegółów czasu**|Służy do określania, które szczegóły będą przechowywane w **magazynie ładowania wyniki testów**. Dostępne są trzy wartości:<br /><br /> -   **AllIndividualDetails** — zbieranie i przechowywanie poszczególnych wartości chronometrażu dla każdego testu, transakcji i strony, która została uruchomiona lub wystawiona podczas testu obciążenia w **magazynie wyniki testów obciążenia**. Jest to wymagane, jeśli zamierzasz używać **wykresu wirtualnego aktywności użytkownika** w **analizatorze testu obciążenia**.<br />     Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego użytkownika w widoku szczegółów](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **none** — nie Zbieraj żadnych indywidualnych wartości chronometrażu. Jest to wartość domyślna dla Visual Studio 2013 Update 4 i nowszych wersji.<br />-   **StatisticsOnly** — zbieranie i przechowywanie tylko statystyk zamiast przechowywania poszczególnych wartości chronometrażu dla każdego testu, transakcji i strony, która została wykonana lub wystawiona podczas testu obciążenia w **magazynie wyniki testów obciążenia**.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Właściwości śledzenia SQL
 
@@ -78,7 +78,7 @@ Aby uzyskać więcej informacji, zobacz [How to: Określanie liczby iteracji tes
 |-|----------------|
 |**Czas chłodzenia**|Czas trwania okresu chłodzenia testu wyrażony w formacie gg: mm: SS. Poszczególne testy w ramach testu obciążenia mogą nadal działać po zakończeniu testu obciążenia. W okresie chłodzenia te testy mogą być kontynuowane do momentu zakończenia lub osiągnięcia końca okresu chłodzenia. Domyślnie nie ma okresu chłodzenia, a poszczególne testy są przerywane po zakończeniu testu obciążenia na podstawie ustawienia czasu trwania przebiegu.|
 |**Czas trwania przebiegu**|Długość testu, w formacie gg: mm: SS.|
-|**Częstotliwość próbkowania**|Interwał przechwytywania wartości licznika wydajności w formacie gg: mm: SS.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: określ częstotliwość próbkowania](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Częstotliwość próbkowania**|Interwał przechwytywania wartości licznika wydajności w formacie gg: mm: SS.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: określanie wielkości próbki](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Czas trwania rozgrzewania**|Okres między rozpoczęciem testu a rozpoczęciem rejestrowania próbek danych w formacie gg: mm: SS. Jest to często używane do kroku ładowania wirtualnych użytkowników w celu uzyskania dostępu do określonego poziomu obciążenia przed zarejestrowaniem przykładowych wartości. Przykładowe wartości, które są przechwytywane przed zakończeniem okresu rozgrzewania, są wyświetlane w **analizatorze testu obciążenia**.|
 
 ## <a name="webtest-connections-properties"></a>Właściwości połączeń WebTest
@@ -96,15 +96,15 @@ Aby zmienić Parametry uruchomieniowe:
 
 1. Otwórz test obciążenia.
 
-2. Rozwiń folder **Parametry uruchomieniowe** .
+2. Rozwiń **parametrów uruchomieniowych** folderu.
 
 3. Wybierz węzeł **Parametry uruchomieniowe** .
 
-4. W menu **Widok** wybierz **okno właściwości**.
+4. Na **widoku** menu, wybierz **okno właściwości**.
 
      Zostanie wyświetlone **okno właściwości** , w którym są wyświetlane właściwości wybranego ustawienia uruchomieniowego.
 
-5. Użyj **okna właściwości** , aby zmienić ustawienia uruchomieniowe. Na przykład zmień czas trwania przebiegu na **00:05:00** , aby uruchomić test przez pięć minut.
+5. Użyj **okna właściwości** , aby zmienić ustawienia uruchomieniowe. Na przykład zmienić czas trwania testu na **00:05:00** Aby uruchomić test na pięć minut.
 
     > [!NOTE]
     > Aby uzyskać pełną listę właściwości parametrów uruchomieniowych i ich opisów, zobacz [właściwości ustawienia przebiegu testu obciążenia](../test/load-test-run-settings-properties.md).
@@ -112,8 +112,8 @@ Aby zmienić Parametry uruchomieniowe:
 6. Po zakończeniu zmiany właściwości Zapisz test obciążenia. W menu **plik** wybierz polecenie **Zapisz**.
 
 > [!NOTE]
-> Mapowania zestawu liczników są również częścią parametrów uruchomieniowych. Aby uzyskać więcej informacji, zobacz [Określanie zestawów liczników i reguł progowych dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+> Mapowania zestawu liczników są również częścią parametrów uruchomieniowych. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639474"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586019"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Przewodnik: tworzenie prostej usługi WCF w Windows Forms
 
@@ -39,7 +39,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
 3. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Visual Basic** lub **element wizualny C#**  , a następnie wybierz opcję **WCF**, a następnie pozycję **Biblioteka usług WCF**.
 
-4. Kliknij przycisk **OK** , aby utworzyć projekt.
+4. Kliknij przycisk **OK**, aby utworzyć projekt.
 
    ![Projekt biblioteki usługi WCF](../data-tools/media/wcf1.png)
 
@@ -139,7 +139,7 @@ W tym instruktażu pokazano, jak utworzyć prostą usługę Windows Communicatio
 
      ![Dodawanie kontrolek do formularza](../data-tools/media/wcf9.png)
 
-3. Kliknij dwukrotnie `Button` i Dodaj następujący kod do programu obsługi zdarzeń `Click`:
+3. Kliknij dwukrotnie `Button`i Dodaj następujący kod do programu obsługi zdarzeń `Click`:
 
      [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
      [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]

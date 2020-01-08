@@ -2,23 +2,23 @@
 title: Wskazówki dotyczące programowania opartego na testach
 ms.date: 07/24/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d62989ffe5444f94cf3b062cde16399c08322b16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646666"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566283"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Przewodnik: Programowanie sterowane testami za pomocą Eksploratora testów
 
-Utwórz testy jednostkowe, aby zapewnić prawidłowe działanie kodu przez przyrostowe zmiany kodu. Istnieje kilka struktur, za pomocą których można pisać testy jednostkowe, w tym niektóre opracowane przez strony trzecie. Niektóre środowiska testowe są wyspecjalizowane do testowania w różnych językach lub platformach. Eksplorator testów udostępnia jeden interfejs dla testów jednostkowych w dowolnej z tych platform. Aby uzyskać więcej informacji na temat programu **Test Explorer**, zobacz [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md) i [Eksploratora testów — często zadawane pytania](test-explorer-faq.md).
+Utwórz testy jednostkowe, aby zapewnić prawidłowe działanie kodu przez przyrostowe zmiany kodu. Istnieje kilka środowisk, których można użyć do pisania testów jednostkowych, łącznie z niektórymi opracowanymi przez osoby trzecie. Niektóre środowiska testowe są wyspecjalizowane do testowania w różnych językach lub platformach. Eksplorator testów udostępnia jeden interfejs do testów jednostkowych w dowolnym z tych środowisk. Aby uzyskać więcej informacji na temat programu **Test Explorer**, zobacz [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md) i [Eksploratora testów — często zadawane pytania](test-explorer-faq.md).
 
-W tym instruktażu przedstawiono sposób tworzenia przetestowanej C# metody w programie przy użyciu programu Microsoft Test Framework (MSTest). Można łatwo dostosować ją do innych języków lub innych platform testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [Instalowanie platform testów jednostkowych](install-third-party-unit-test-frameworks.md)innych firm.
+W tym instruktażu przedstawiono sposób tworzenia przetestowanej C# metody w programie przy użyciu programu Microsoft Test Framework (MSTest). Można łatwo dostosować ją do innych języków lub innych platform testowych, takich jak NUnit. Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
 
 ## <a name="create-a-test-and-generate-code"></a>Tworzenie testu i generowanie kodu
 
@@ -26,7 +26,7 @@ W tym instruktażu przedstawiono sposób tworzenia przetestowanej C# metody w pr
 
 2. W tym samym rozwiązaniu Dodaj nowy projekt **projektu testowego MSTest (.NET Core)** . Nazwij projekt testowy **MathTests**.
 
-   ![Nowy kod i projekty testowe](../test/media/test-driven-development-ide.png)
+   ![Nowe projekty kodu i testowanie](../test/media/test-driven-development-ide.png)
 
 3. Napisz prostą metodę testową, która weryfikuje wynik uzyskany dla konkretnego danych wejściowych. Dodaj następujący kod do klasy `UnitTest1`:
 
@@ -60,7 +60,7 @@ W tym instruktażu przedstawiono sposób tworzenia przetestowanej C# metody w pr
 
 6. Uruchom test jednostkowy.
 
-   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz pozycję **Windows**  > **Test Explorer**.
+   1. Aby otworzyć **Eksploratora testów**, w menu **test** wybierz pozycję **Windows** > **Test Explorer**.
 
    2. W **Eksploratorze testów**wybierz przycisk **Uruchom wszystko** , aby uruchomić test.
 
@@ -87,7 +87,7 @@ W tym momencie utworzono test i element zastępczy, który można zmodyfikować 
     }
     ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
    Rozwiązanie zostanie skompilowane, a testy są wykonywane i przekazywane.
 
@@ -98,7 +98,7 @@ W tym momencie utworzono test i element zastępczy, który można zmodyfikować 
 Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać testy, które próbują uzyskać szerszy zakres wartości wejściowych.
 
 > [!TIP]
-> Należy unikać zmiany istniejących testów, które przechodzą pomyślnie. Zamiast tego Dodaj nowe testy. Zmień istniejące testy tylko wtedy, gdy wymagania dotyczące użytkownika zostały zmienione. Te zasady pomagają upewnić się, że nie utracisz istniejących funkcji podczas pracy w celu poszerzenia kodu.
+> Unikaj zmieniania istniejących testów, które przekazują. Zamiast tego Dodaj nowe testy. Zmieniaj istniejące testy tylko wtedy, gdy zmienią się wymagania użytkownika. Te zasady ułatwiają upewnij się, że nie tracisz istniejących funkcji podczas pracy nad rozszerzeniem kodu.
 
 1. W klasie testowej Dodaj następujący test, który próbuje wykonać zakres wartości wejściowych:
 
@@ -124,11 +124,11 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
     }
     ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
    Nowy test zakończy się niepowodzeniem (mimo że pierwszy test nadal przebiega). Aby znaleźć punkt awarii, wybierz test zakończony niepowodzeniem, a następnie sprawdź szczegóły w okienku **podsumowania szczegółów testu** .
 
-3. Zbadaj badaną metodę, aby zobaczyć, co może być błędne. Zmień kod `SquareRoot` w następujący sposób:
+3. Sprawdź testowaną metodę test, aby zobaczyć, co może być źle. Zmień kod `SquareRoot` w następujący sposób:
 
     ```csharp
     public double SquareRoot(double input)
@@ -144,11 +144,11 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
     }
     ```
 
-4. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+4. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
-   Oba testy są teraz przekazywane.
+   Teraz kod przechodzi oba testy.
 
-## <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów do wyjątkowych przypadków
+## <a name="add-tests-for-exceptional-cases"></a>Dodawanie testów wyjątkowych przypadków
 
 1. Dodaj nowy test dla negatywnych danych wejściowych:
 
@@ -169,7 +169,7 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
     }
     ```
 
-2. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+2. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
    Metoda testowa pętle i musi być anulowana ręcznie.
 
@@ -189,18 +189,18 @@ Aby poprawić wiarygodność kodu we wszystkich przypadkach, należy dodać test
         ...
     ```
 
-5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
+5. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
-   Wszystkie testy zostały zakończone pomyślnie.
+   Kod przechodzi wszystkie testy.
 
 ## <a name="refactor-the-code-under-test"></a>Refaktoryzacja testowanego kodu
 
 Refaktoryzacja kodu, ale nie zmieniaj testów.
 
 > [!TIP]
-> *Refaktoryzacja* to zmiana, która jest przeznaczona do lepszego lub łatwiejszego zrozumienia kodu. Nie jest przeznaczone do zmiany zachowania kodu, dlatego testy nie są zmieniane.
+> *Refaktoryzacja* to zmiana, która jest przeznaczona do lepszego lub łatwiejszego zrozumienia kodu. Nie jest przeznaczone do zmiany zachowania kodu, a w związku z tym testy nie są zmieniane.
 >
-> Zalecamy wykonanie czynności refaktoryzacji niezależnie od kroków rozszerzających funkcjonalność. Pozostawienie niezmienionych testów daje pewność, że podczas refaktoryzacji nie wprowadzono przypadkowo błędów.
+> Firma Microsoft zaleca, aby wykonać kroki refaktoryzacji oddzielnie od kroków, które rozszerzają funkcjonalność. Utrzymywanie testów w niezmienionej postaci daje pewność, że możesz mieć nie zostaną przypadkowo wprowadzone usterki podczas refaktoryzacji.
 
 1. Zmień wiersz, który oblicza `result` w metodzie `SquareRoot` w następujący sposób:
 

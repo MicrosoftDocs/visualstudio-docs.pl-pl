@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634130"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589841"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Przewodnik: wprowadzenie do Projektant formularzy systemu Windows
 
@@ -55,7 +55,7 @@ Kontrolka DemoCalculator zawiera kilka kontrolek Windows Forms. Ta procedura pol
 
 2. W **przyborniku**wybierz węzeł **kontenery** , aby go otworzyć. Wybierz formant **SplitContainer** i przeciągnij go na powierzchnię projektanta.
 
-   @No__t_0 jest umieszczana na powierzchni projektanta formantu DemoCalculator.
+   `SplitContainer` jest umieszczana na powierzchni projektanta formantu DemoCalculator.
 
     > [!TIP]
     > Kontrolka `SplitContainer` dopasowuje się do rozmiaru formantu DemoCalculator. Sprawdź okno **Właściwości** , aby wyświetlić ustawienia właściwości kontrolki `SplitContainer`. Znajdź Właściwość <xref:System.Windows.Forms.SplitContainer.Dock%2A>. Jego wartość to [dockname. Fill](xref:System.Windows.Forms.DockStyle.Fill), co oznacza, że kontrolka `SplitContainer` będzie zawsze sama zmieniać rozmiar do granic formantu DemoCalculator. Zmień rozmiar kontrolki DemoCalculator, aby sprawdzić to zachowanie.
@@ -64,7 +64,7 @@ Kontrolka DemoCalculator zawiera kilka kontrolek Windows Forms. Ta procedura pol
 
     Kontrolka `SplitContainer` zmniejsza rozmiar do rozmiaru domyślnego i nie jest już zgodna z rozmiarem formantu DemoCalculator.
 
-4. Wybierz symbol tagu inteligentnego (![Smart symbol tagu ](media/smart-tag-glyph.gif)) w prawym górnym rogu kontrolki `SplitContainer`. Wybierz pozycję **Zadokuj w kontenerze nadrzędnym** , aby ustawić właściwość `Dock` na `Fill`.
+4. Wybierz symbol tagu inteligentnego (![symbol taga inteligentnego](media/smart-tag-glyph.gif)) w prawym górnym rogu kontrolki `SplitContainer`. Wybierz pozycję **Zadokuj w kontenerze nadrzędnym** , aby ustawić właściwość `Dock` na `Fill`.
 
     Kontrolka `SplitContainer` jest zadokowana do granic formantu DemoCalculator.
 
@@ -73,7 +73,7 @@ Kontrolka DemoCalculator zawiera kilka kontrolek Windows Forms. Ta procedura pol
 
 5. Wybierz obramowanie pionowe między panelami i przeciągnij je w prawo, tak aby większość miejsca została wykonana przez lewy panel.
 
-    @No__t_0 dzieli kontrolkę DemoCalculator na dwa panele, oddzielając je ruchomą ramkę. Panel po lewej stronie będzie zawierał przyciski kalkulatora i wyświetlacz, a panel po prawej stronie wyświetli rekord operacji arytmetycznych wykonywanych przez użytkownika.
+    `SplitContainer` dzieli kontrolkę DemoCalculator na dwa panele, oddzielając je ruchomą ramkę. Panel po lewej stronie będzie zawierał przyciski kalkulatora i wyświetlacz, a panel po prawej stronie wyświetli rekord operacji arytmetycznych wykonywanych przez użytkownika.
 
 6. W oknie **Właściwości** Zmień wartość właściwości `BorderStyle` na `Fixed3D`.
 
@@ -135,9 +135,9 @@ Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoC
 
 8. W **przyborniku**kliknij dwukrotnie ikonę `Button` cztery razy, aby wypełnić drugi wiersz kontrolki `TableLayoutPanel`.
 
-9. Zaznacz wszystkie pięć `Button` kontrolki, zaznaczając je, przytrzymując klawisz **SHIFT** . Naciśnij klawisz **Ctrl** +**C** , aby skopiować kontrolki `Button` do Schowka.
+9. Zaznacz wszystkie pięć `Button` kontrolki, zaznaczając je, przytrzymując klawisz **SHIFT** . Naciśnij klawisz **Ctrl**+**C** , aby skopiować kontrolki `Button` do Schowka.
 
-10. Naciśnij klawisz **Ctrl** +**V** trzy razy, aby wkleić kopie `Button` formantów do pozostałych wierszy kontrolki `TableLayoutPanel`.
+10. Naciśnij klawisz **Ctrl**+**V** trzy razy, aby wkleić kopie `Button` formantów do pozostałych wierszy kontrolki `TableLayoutPanel`.
 
 11. Zaznacz wszystkie 20 `Button` kontrolki, zaznaczając je, przytrzymując klawisz **SHIFT** .
 
@@ -157,7 +157,7 @@ Teraz, gdy układ kontrolki jest skonfigurowany, można wypełnić formant DemoC
 
 Gdy kontrolka lub formularz zostanie wypełniony kilkoma kontrolkami, łatwiej jest nawigować po stronie układu przy użyciu okna konspektu dokumentu.
 
-1. Na pasku menu wybierz **widok**  >  inne  > **Konspekt dokumentu** **systemu Windows** .
+1. Na pasku menu wybierz **widok** > inne > **Konspekt dokumentu** **systemu Windows** .
 
    Okno Konspekt dokumentu zawiera widok drzewa formantu DemoCalculator i jego kontrolki składowe. Kontrolki kontenerów, takie jak `SplitContainer`, pokazują ich formanty podrzędne jako podwęzły w drzewie. Możesz również zmienić nazwy kontrolek w miejscu przy użyciu okna Konspekt dokumentu.
 
@@ -235,7 +235,7 @@ Gdy kontrolka lub formularz zostanie wypełniony kilkoma kontrolkami, łatwiej j
 
    - Zmień właściwość Text formantu changeSignButton na **+/-**
 
-   - Zmień właściwość Text formantu decimalButton na **.** czasu
+   - Zmień właściwość Text formantu decimalButton na **.** (kropka)
 
    - Zmień właściwość Text formantu additionButton na **+** (znak plus)
 
@@ -261,7 +261,7 @@ Ponieważ formant DemoCalculator dziedziczy z klasy <xref:System.Windows.Forms.U
 
 1. Naciśnij klawisz **F5** , aby skompilować i uruchomić kontrolkę DemoCalculator w **kontenerze Test UserControl**.
 
-2. Zaznacz obramowanie między panelami `SplitContainer` i przeciągnij je w lewo i w prawo. @No__t_0 i wszystkie jego elementy podrzędne zmienią rozmiar w celu dopasowania do dostępnego miejsca.
+2. Zaznacz obramowanie między panelami `SplitContainer` i przeciągnij je w lewo i w prawo. `TableLayoutPanel` i wszystkie jego elementy podrzędne zmienią rozmiar w celu dopasowania do dostępnego miejsca.
 
 3. Po zakończeniu testowania kontrolki wybierz pozycję **Zamknij**.
 

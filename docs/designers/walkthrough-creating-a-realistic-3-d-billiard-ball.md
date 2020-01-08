@@ -3,17 +3,17 @@ title: 'Przewodnik: tworzenie realistycznej kulki 3W bilardowej'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634541"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589919"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Przewodnik: tworzenie realistycznej kuli bilardowej w 3D
 
@@ -161,15 +161,15 @@ Pierwszym krokiem jest utworzenie tekstury mapy modułu. W wielu rodzajach aplik
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Aby złożyć mapę modułu za pomocą narzędzia DirectX Texture
 
-1. W narzędziu DirectX Texture w menu głównym wybierz pozycję **plik**  > **Nowa tekstura**. Zostanie wyświetlone okno dialogowe **Nowa tekstura** .
+1. W narzędziu DirectX Texture w menu głównym wybierz pozycję **plik** > **Nowa tekstura**. Zostanie wyświetlone okno dialogowe **Nowa tekstura** .
 
 2. W grupie **Typ tekstury** wybierz opcję **tekstura mapy sześciennej**.
 
 3. W grupie **Wymiary** Wprowadź poprawną wartość w **polach Szerokość** i **wysokość**, a następnie wybierz przycisk **OK**. Zostanie wyświetlony nowy dokument tekstury. Domyślnie tekstura najpierw pokazywana w dokumencie tekstury odnosi się do zera modułu **dodatnie X** .
 
-4. Załaduj teksturę utworzoną dla boku modułu tekstury na powierzchnię modułu. W menu głównym wybierz pozycję **plik**  > **Otwórz na tej mapy sześciennej**, wybierz teksturę utworzoną dla strony modułu, a następnie wybierz polecenie **Otwórz**.
+4. Załaduj teksturę utworzoną dla boku modułu tekstury na powierzchnię modułu. W menu głównym wybierz pozycję **plik** > **Otwórz na tej mapy sześciennej**, wybierz teksturę utworzoną dla strony modułu, a następnie wybierz polecenie **Otwórz**.
 
-5. Powtórz krok 4 dla powierzchni modułu **minus X**, **pozytywne Z**i **ujemne z** . Aby to zrobić, należy wyświetlić miarę, która ma zostać załadowana. Aby wyświetlić inną fasadę mapy modułu, w menu głównym wybierz pozycję **widok**  > **kroju mapy modułu**, a następnie wybierz miarę, którą chcesz wyświetlić.
+5. Powtórz krok 4 dla powierzchni modułu **minus X**, **pozytywne Z**i **ujemne z** . Aby to zrobić, należy wyświetlić miarę, która ma zostać załadowana. Aby wyświetlić inną fasadę mapy modułu, w menu głównym wybierz pozycję **widok** > **kroju mapy modułu**, a następnie wybierz miarę, którą chcesz wyświetlić.
 
 6. Dla czołowej **osi Y** Załaduj teksturę utworzoną dla górnej części modułu tekstury.
 

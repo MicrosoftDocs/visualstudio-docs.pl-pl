@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648223"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586292"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 
@@ -70,24 +70,24 @@ Możesz zaktualizować zawartość zestawu danych, *scalając* go z innym zestaw
 
 Podczas scalania zestawów danych można przekazać argument logiczny (`preserveChanges`), który nakazuje <xref:System.Data.DataSet.Merge%2A> metody, czy zachować istniejące modyfikacje w docelowym zestawie danych. Ponieważ zestawy danych obsługują wiele wersji rekordów, ważne jest, aby pamiętać, że jest scalanych więcej niż jedna wersja rekordów. W poniższej tabeli przedstawiono sposób scalania rekordu w dwóch zestawach danych:
 
-|DataRowVersion|Docelowy zestaw danych|Źródłowy zestaw danych|
+|DataRowVersion|Docelowy zestaw danych|Zestaw danych źródłowych|
 | - | - | - |
 |Oryginał|Kuba Wilson|Kuba C. Wilson|
-|Obecne|Jim Wilson|Kuba C. Wilson|
+|Bieżący|Jim Wilson|Kuba C. Wilson|
 
 Wywołanie metody <xref:System.Data.DataSet.Merge%2A> w poprzedniej tabeli z `preserveChanges=false targetDataset.Merge(sourceDataset)` powoduje następujące dane:
 
-|DataRowVersion|Docelowy zestaw danych|Źródłowy zestaw danych|
+|DataRowVersion|Docelowy zestaw danych|Zestaw danych źródłowych|
 | - | - | - |
 |Oryginał|Kuba C. Wilson|Kuba C. Wilson|
-|Obecne|Kuba C. Wilson|Kuba C. Wilson|
+|Bieżący|Kuba C. Wilson|Kuba C. Wilson|
 
 Wywołanie metody <xref:System.Data.DataSet.Merge%2A> z `preserveChanges = true targetDataset.Merge(sourceDataset, true)` powoduje następujące dane:
 
-|DataRowVersion|Docelowy zestaw danych|Źródłowy zestaw danych|
+|DataRowVersion|Docelowy zestaw danych|Zestaw danych źródłowych|
 | - | - | - |
 |Oryginał|Kuba C. Wilson|Kuba C. Wilson|
-|Obecne|Jim Wilson|Kuba C. Wilson|
+|Bieżący|Jim Wilson|Kuba C. Wilson|
 
 > [!CAUTION]
 > W scenariuszu `preserveChanges = true`, jeśli metoda <xref:System.Data.DataSet.RejectChanges%2A> jest wywoływana dla rekordu w docelowym zestawie danych, przywraca oryginalne dane ze *źródłowego* zestawu danych. Oznacza to, że w przypadku próby zaktualizowania oryginalnego źródła danych za pomocą docelowego zestawu danych może nie być możliwe znalezienie oryginalnego wiersza do zaktualizowania. Można zapobiec naruszeniu współbieżności, wypełniając inny zestaw danych ze zaktualizowanymi rekordami ze źródła danych, a następnie wykonując scalanie, aby zapobiec naruszeniu współbieżności. (Naruszenie współbieżności występuje, gdy inny użytkownik modyfikuje rekord w źródle danych po wypełnieniu zestawu danych).
@@ -103,7 +103,7 @@ Aby zapobiec naruszeniu niedojrzałych ograniczeń, można tymczasowo zawiesić 
 - Uniemożliwia to wywoływanie niektórych zdarzeń aktualizacji (zdarzenia, które są często używane do walidacji).
 
 > [!NOTE]
-> W Windows Forms architektura powiązania danych, która jest wbudowana w element DataGrid, zawiesza sprawdzanie ograniczeń, dopóki fokus nie zostanie przeniesiony poza wiersz i nie trzeba jawnie wywoływać <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> lub <xref:System.Data.DataRow.CancelEdit%2A> metod.
+> W Windows Forms architektura powiązania danych, która jest wbudowana w element DataGrid, zawiesza sprawdzanie ograniczeń, dopóki fokus nie zostanie przeniesiony poza wiersz i nie trzeba jawnie wywoływać <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>lub <xref:System.Data.DataRow.CancelEdit%2A> metod.
 
 Ograniczenia są automatycznie wyłączane, gdy metoda <xref:System.Data.DataSet.Merge%2A> jest wywoływana na zestawie danych. Gdy Scalanie zostanie ukończone, jeśli istnieją jakiekolwiek ograniczenia dotyczące zestawu danych, którego nie można włączyć, zostanie zgłoszony <xref:System.Data.ConstraintException>. W tej sytuacji Właściwość <xref:System.Data.DataSet.EnforceConstraints%2A> jest ustawiona na `false,` i wszystkie naruszenia ograniczenia muszą zostać rozwiązane przed zresetowaniem właściwości <xref:System.Data.DataSet.EnforceConstraints%2A> do `true`.
 
@@ -211,7 +211,7 @@ W poniższej tabeli opisano, które zmiany są zatwierdzane na podstawie obiektu
 
 Pokrewna Metoda, <xref:System.Data.DataSet.RejectChanges%2A>, cofa efekt zmian przez skopiowanie wersji <xref:System.Data.DataRowVersion.Original> z powrotem do <xref:System.Data.DataRowVersion.Current> wersji rekordów. Ustawia również <xref:System.Data.DataRow.RowState%2A> każdego rekordu z powrotem do <xref:System.Data.DataRowState.Unchanged>.
 
-## <a name="data-validation"></a>Sprawdzanie poprawności danych
+## <a name="data-validation"></a>Weryfikacja danych
 
 Aby upewnić się, że dane w aplikacji spełniają wymagania dotyczące procesów, do których jest przenoszona, często trzeba dodać weryfikację. Może to oznaczać, że wpis użytkownika w formularzu jest poprawny, sprawdzanie poprawności danych wysyłanych do aplikacji przez inną aplikację, a nawet sprawdzanie, czy informacje obliczane w składniku są objęte ograniczeniami źródła danych i wymagania aplikacji.
 
@@ -259,7 +259,7 @@ Jednak w drugim wierszu Metoda `Update` automatycznie wywołuje poprawne polecen
    > [!NOTE]
    > Jeśli właściwość `UpdateCommand` TableAdapter została ustawiona na nazwę procedury składowanej, karta nie konstruuje instrukcji SQL. Zamiast tego wywołuje procedurę przechowywaną z odpowiednimi parametrami.
 
-## <a name="pass-parameters"></a>Parametry przekazywania
+## <a name="pass-parameters"></a>Przekazywanie parametrów
 
 Zwykle parametry są używane do przekazywania wartości dla rekordów, które mają zostać zaktualizowane w bazie danych. Gdy metoda `Update` TableAdapter uruchamia instrukcję UPDATE, musi wypełnić wartości parametrów. Pobiera te wartości z kolekcji `Parameters` dla odpowiednich poleceń danych — w tym przypadku `UpdateCommand` obiekt w TableAdapter.
 

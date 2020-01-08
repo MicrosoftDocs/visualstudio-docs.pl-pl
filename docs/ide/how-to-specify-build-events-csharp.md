@@ -10,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24f64cdaa52b923e288d704a10cb7a7438b028b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591440"
 ---
 # <a name="how-to-specify-build-events-c"></a>Instrukcje: Określanie zdarzeń kompilacji (C#)
 
@@ -148,7 +148,7 @@ Następnie Wywołaj to polecenie w zdarzeniu po kompilacji, aby zmodyfikować ma
 
 4. Opublikuj projekt, klikając pozycję **Opublikuj teraz**.
 
-   Plik manifestu został skompilowany i zapisany w *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Aby wyświetlić manifest, kliknij plik prawym przyciskiem myszy, kliknij polecenie **Otwórz za pomocą**, wybierz **z listy opcję Wybierz program**, a następnie kliknij przycisk **Notatnik**.
+   Plik manifestu został skompilowany i zapisany w *lokalizacji c:\temp\ CSWinApp_1_0_0_0 \cswinapp.exe.manifest*. Aby wyświetlić manifest, kliknij plik prawym przyciskiem myszy, kliknij polecenie **Otwórz za pomocą**, wybierz **z listy opcję Wybierz program**, a następnie kliknij przycisk **Notatnik**.
 
    Wyszukaj w pliku `<osVersionInfo>` elementu. Na przykład wersja może być:
 

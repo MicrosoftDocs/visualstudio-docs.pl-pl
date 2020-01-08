@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738355"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404658"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak i __debugbreak
-Można wywołać funkcję Win32 DebugBreak lub wewnętrzną [__debugbreak](/cpp/intrinsics/debugbreak) w dowolnym momencie w kodzie. `DebugBreak` i `__debugbreak` mają ten sam efekt, co ustawienie punktu przerwania w tej lokalizacji.
+Można wywołać [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) funkcję Win32 lub [__debugbreak](/cpp/intrinsics/debugbreak) wewnętrznie w dowolnym momencie w kodzie. `DebugBreak` i `__debugbreak` mają ten sam efekt, co ustawienie punktu przerwania w tej lokalizacji.
 
  Ponieważ `DebugBreak` jest wywołaniem funkcji systemowej, należy zainstalować symbole debugowania systemu, aby upewnić się, że po przerwaniu są wyświetlane poprawne informacje stosu wywołań. W przeciwnym razie informacje stosu wywołań wyświetlane przez debuger mogą być wyłączone przez jedną klatkę. Jeśli używasz `__debugbreak`, symbole nie są wymagane.
 

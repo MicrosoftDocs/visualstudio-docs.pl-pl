@@ -27,21 +27,21 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668708"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592311"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Narzędzia XML w Visual Studio
 
-*XML (XML)* jest językiem znaczników, który zapewnia format do opisywania danych. KOD XML oddziela dane i swoją prezentację przy użyciu skojarzonych arkuszy stylów, takich jak Extensible Stylesheet Language (XSL) i kaskadowych arkuszy stylów (CSS). Program Visual Studio zawiera narzędzia i funkcje, które ułatwiają pracę z schematami XML, XSLT i XML.
+*Język XML (Extensible Markup)* jest językiem znaczników, zapewniający format opisu danych. KOD XML oddziela dane i swoją prezentację przy użyciu skojarzonych arkuszy stylów, takich jak Extensible Stylesheet Language (XSL) i kaskadowych arkuszy stylów (CSS). Program Visual Studio zawiera narzędzia i funkcje, które ułatwiają pracę z schematami XML, XSLT i XML.
 
 ## <a name="xml-editor"></a>Edytor XML
 

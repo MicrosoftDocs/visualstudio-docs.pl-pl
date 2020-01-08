@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, adding delays
 - load tests, changing think times
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 661a31411a561f15809a10fb15fd71a29e6a64fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672952"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590036"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Edytowanie czasów reakcji w celu symulowania opóźnień interakcji z witryną sieci Web w scenariuszach testów obciążenia
 
@@ -29,11 +29,11 @@ Opcje **profilu myśli** są opisane na poniższej liście:
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Logowanie**
+**Off**
 
 Czasy reakcji są ignorowane. Użyj tego ustawienia, jeśli chcesz wygenerować maksymalne obciążenie na potrzeby intensywnej obciążeniu serwera sieci Web. Nie należy używać go podczas próby utworzenia bardziej realistycznych interakcji użytkownika z serwerem sieci Web.
 
-**Z**
+**On**
 
 Czasy reakcji są używane dokładnie tak, jak zostały zarejestrowane w teście wydajności sieci Web. Symuluje wielu użytkowników, którzy uruchamiają testy wydajności sieci Web dokładnie tak samo jak zarejestrowane. Ponieważ test obciążenia symuluje wielu użytkowników, przy użyciu tego samego czasu reakcji może stworzyć nienaturalny wzorzec obciążenia synchronizowanych użytkowników wirtualnych.
 
@@ -42,7 +42,7 @@ Czasy reakcji są używane dokładnie tak, jak zostały zarejestrowane w teście
 Czasy reakcji są używane, ale różnią się w stosunku do normalnej krzywej. Zapewnia bardziej realistyczną symulację wirtualnych użytkowników, nieco zmieniając czas reakcji między żądaniami.
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
 ## <a name="change-the-think-profile"></a>Zmiana profilu myśli
 
@@ -50,7 +50,7 @@ Czasy reakcji są używane, ale różnią się w stosunku do normalnej krzywej. 
 
 1. Z projektu test wydajności i obciążenia sieci Web Otwórz test obciążenia.
 
-2. W **Edytor testu obciążeniowego**wybierz węzeł scenariusza, w którym chcesz zmienić **profil myśli**. **Profil myśli** jest wyświetlany w oknie **Właściwości** . Naciśnij klawisz **F4** , aby wyświetlić okno **Właściwości** .
+2. W **Edytor testu obciążeniowego**wybierz węzeł scenariusza, w którym chcesz zmienić **profil myśli**. **Profil myśli** jest wyświetlany w oknie **Właściwości** . Naciśnij klawisz **F4** do wyświetlenia **właściwości** okna.
 
 3. Zmień właściwość **profil myśli** w oknie **Właściwości** .
 

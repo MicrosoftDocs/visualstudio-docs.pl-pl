@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652393"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591297"
 ---
 # <a name="manage-external-tools"></a>Zarządzanie narzędziami zewnętrznymi
 
@@ -47,7 +47,7 @@ Menu **Narzędzia** zawiera kilka wbudowanych poleceń, takich jak:
 
 Możesz dodać zewnętrzne narzędzie, które ma być wyświetlane w menu **Narzędzia** .
 
-1. Otwórz okno dialogowe **narzędzia zewnętrzne** , wybierając pozycję **Narzędzia**  > **narzędzia zewnętrzne**.
+1. Otwórz okno dialogowe **narzędzia zewnętrzne** , wybierając pozycję **Narzędzia** > **narzędzia zewnętrzne**.
 
 1. Kliknij przycisk **Dodaj**, a następnie Wypełnij informacje. Na przykład poniższy wpis powoduje otwarcie **Eksploratora Windows** w katalogu pliku, który jest aktualnie otwarty w programie Visual Studio:
 
@@ -72,13 +72,13 @@ Poniżej znajduje się pełna lista argumentów, których można użyć podczas 
 |Bieżący tekst|$ (CurText)|Zaznaczony tekst.|
 |Ścieżka docelowa|$ (TargetPath)|Pełna nazwa pliku elementu do skompilowania (dysk + ścieżka + nazwa pliku).|
 |Katalog docelowy|$ (TargetDir)|Katalog elementu do skompilowania.|
-|Nazwa obiektu docelowego|$ (TargetName)|Nazwa pliku elementu do skompilowania.|
+|Nazwa docelowa|$ (TargetName)|Nazwa pliku elementu do skompilowania.|
 |Rozszerzenie docelowe|$ (TargetExt)|Rozszerzenie nazwy pliku do skompilowania.|
 |Katalog binarny|$ (BinDir)|Końcowa lokalizacja tworzonego pliku binarnego (zdefiniowana jako dysk + ścieżka).|
 |Katalog projektu|$ (ProjectDir)|Katalog bieżącego projektu (dysk + ścieżka).|
-|Nazwa pliku projektu|$ (ProjectFileName)|Nazwa pliku bieżącego projektu (dysk + ścieżka + nazwa pliku).|
+|Nazwa pliku projektu|$(ProjectFileName)|Nazwa pliku bieżącego projektu (dysk + ścieżka + nazwa pliku).|
 |Katalog rozwiązania|$ (SolutionDir)|Katalog bieżącego rozwiązania (dysk + ścieżka).|
-|Nazwa pliku rozwiązania|$ (SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk + ścieżka + nazwa pliku).|
+|Nazwa pliku rozwiązania|$(SolutionFileName)|Nazwa pliku bieżącego rozwiązania (dysk + ścieżka + nazwa pliku).|
 
 > [!NOTE]
 > Pasek stanu IDE wyświetla **bieżący wiersz** i bieżące zmienne **kolumn** , aby wskazać, gdzie punkt wstawiania znajduje się w aktywnym **edytorze kodu**. **Bieżąca zmienna tekstowa** zwraca tekst lub kod wybrany w tej lokalizacji.

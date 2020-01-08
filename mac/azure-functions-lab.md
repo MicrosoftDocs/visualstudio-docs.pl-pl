@@ -6,14 +6,14 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108143"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398175"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: Wprowadzenie do Azure Functions
+# <a name="tutorial-getting-started-with-azure-functions"></a>Samouczek: wprowadzenie do Azure Functions
 
 W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy użyciu Visual Studio dla komputerów Mac. Ponadto integrujesz się z tabelami usługi Azure Storage, które reprezentują jeden z wielu rodzajów powiązań i wyzwalaczy dostępnych dla deweloperów Azure Functions.
 
@@ -27,7 +27,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 ## <a name="requirements"></a>Wymagania
 
 - Visual Studio dla komputerów Mac 7,5 lub wyższy.
-- Subskrypcja platformy Azure (dostępna bezpłatnie z [https://azure.com/free](https://azure.com/free)systemu).
+- Subskrypcja platformy Azure (dostępna bezpłatnie z [https://azure.com/free](https://azure.com/free?ref=visualstudio)).
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Ćwiczenie 1: Tworzenie projektu Azure Functions
 
@@ -52,9 +52,9 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
     ![Konsola rozwiązań wyświetlająca plik Local. Settings. JSON](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Ćwiczenie 2: Tworzenie konta usługi Azure Storage
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Ćwiczenie 2. Tworzenie konta usługi Azure Storage
 
-1. Zaloguj się do konta platformy Azure pod [https://portal.azure.com](https://portal.azure.com)adresem.
+1. Zaloguj się do konta platformy Azure w [https://portal.azure.com](https://portal.azure.com).
 
 1. W sekcji **Ulubione** znajdującej się po lewej stronie ekranu wybierz pozycję **konta magazynu**:
 
@@ -104,7 +104,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
     using Microsoft.WindowsAzure.Storage.Table;
     ```
 
-1. Usuń istniejącą `Run` metodę i Dodaj metodę poniżej do klasy jako funkcji platformy Azure:
+1. Usuń istniejącą metodę `Run` i Dodaj metodę poniżej do klasy jako funkcji platformy Azure:
 
     ```csharp
     [FunctionName("Add")]
@@ -126,7 +126,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
     ![Nowa metoda run z wyróżnionym atrybutem FunctionName](media/azure-functions-lab-image13.png)
 
-1. Następnie metoda jest oznaczona jako publiczna Metoda **statyczna** , która jest wymagana. Zauważ również, że wartość zwracana jest liczbą całkowitą. O ile nie określono inaczej przy użyciu atrybutów metody, każda wartość zwracana przez inną niż void funkcja platformy Azure jest zwracana do klienta jako tekst. Domyślnie jest on zwracany jako **XML**, ale można go zmienić na **Format JSON**, który można później wykonać w laboratorium.
+1. Następnie metoda jest oznaczona jako **publiczna metoda statyczna** , która jest wymagana. Zauważ również, że wartość zwracana jest liczbą **całkowitą.** O ile nie określono inaczej przy użyciu atrybutów metody, każda wartość zwracana przez inną niż void funkcja platformy Azure jest zwracana do klienta jako tekst. Domyślnie jest on zwracany jako **XML**, ale można go zmienić na **Format JSON**, który można później wykonać w laboratorium.
 
     ![Nowa metoda run z wyróżnioną inicjalizacją metody](media/azure-functions-lab-image14.png)
 
@@ -184,7 +184,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
 1. Uruchom aplikację.
 
-1. Wróć do okna przeglądarki i dołącz ciąg `/?x=2&y=3` do adresu URL. Cały adres URL powinien być `http://localhost:7071/api/Add?x=2&y=3`teraz. Przejdź do nowego adresu URL.
+1. Wróć do okna przeglądarki i dołącz ciąg `/?x=2&y=3` do adresu URL. Cały adres URL powinien być teraz `http://localhost:7071/api/Add?x=2&y=3`. Przejdź do nowego adresu URL.
 
 1. Tym razem wynik powinien odzwierciedlać nowe parametry. Możesz uruchamiać projekt z różnymi wartościami. Należy zauważyć, że nie ma żadnego sprawdzenia błędów, więc nieprawidłowe lub brakujące parametry spowodują zgłoszenie błędu.
 
@@ -204,7 +204,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
     ![plik Function. JSON jest otwierany w programie Visual Studio dla komputerów Mac](media/azure-functions-lab-image25.png)
 
-1. W **okienko rozwiązania**kliknij prawym przyciskiem myszy węzeł projektu **AzureFunctionsLab** i wybierz polecenie **Dodaj > nowy folder**. Nazwij nowy folder. Domyślnie nazwa tego folderu definiuje ścieżkę do interfejsu API, na przykład **API/** dodające.
+1. W **okienko rozwiązania**kliknij prawym przyciskiem myszy węzeł projektu **AzureFunctionsLab** i wybierz polecenie **Dodaj > nowy folder**. Nazwij **Nowy folder.** Domyślnie nazwa tego folderu definiuje ścieżkę do interfejsu API, na przykład **API/** dodające.
 
     ![Opcja nowy folder](media/azure-functions-lab-image26.png)
 
@@ -279,7 +279,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
     ![Opcje właściwości dla pliku JSON](media/azure-functions-lab-image30.png)
 
-1. W **Add.cs**Zastąp `Run` metodę (łącznie z atrybutem) następującą metodą, aby spełnić oczekiwaną funkcję. Jest to bardzo podobne do `Run`, z tą różnicą, że nie używa żadnych atrybutów i ma jawne parametry dla **x** i **y**.
+1. W **Add.cs**Zastąp metodę `Run` (łącznie z atrybutem) następującą metodą, aby spełnić oczekiwaną funkcję. Jest to bardzo podobne do `Run`, z tą różnicą, że nie używa żadnych atrybutów i ma jawne parametry dla **x** i **y**.
 
     ```csharp
     public static int Add2(
@@ -304,7 +304,7 @@ W tym laboratorium dowiesz się, jak rozpocząć tworzenie Azure Functions przy 
 
 1. Wróć do **Visual Studio dla komputerów Mac** i Zakończ sesję debugowania.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Ćwiczenia 5: Praca z tabelami usługi Azure Storage
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Ćwiczenie 5: Praca z tabelami usługi Azure Storage
 
 Często tworzona usługa może być dużo bardziej złożona, niż to, co zostało już zrobione i wymaga znacznej ilości czasu i/lub infrastruktury do wykonania. W takim przypadku może wystąpić potrzeba zaakceptowania żądań, które znajdują się w kolejce do przetworzenia, gdy zasoby staną się dostępne, co Azure Functions zapewnia pomoc techniczną dla programu. W innych przypadkach można przechowywać dane centralnie. Tabele usługi Azure Storage umożliwiają szybkie wykonywanie tych czynności.
 
@@ -380,11 +380,11 @@ Często tworzona usługa może być dużo bardziej złożona, niż to, co zosta�
 
 1. Naciśnij klawisz **F5** , aby skompilować i uruchomić projekt.
 
-1. Na karcie Przeglądarka Odśwież adres URL pod adresem **http://localhost:7071/api/Process/4/6** . Ponieważ wiersz tabeli dla tego rekordu istnieje, powinien zostać zwrócony natychmiast i bez błędu. Ponieważ nie ma danych wyjściowych protokołu HTTP, można zobaczyć dane wyjściowe w terminalu.
+1. Na karcie Przeglądarka Odśwież adres URL w **http://localhost:7071/api/Process/4/6** . Ponieważ wiersz tabeli dla tego rekordu istnieje, powinien zostać zwrócony natychmiast i bez błędu. Ponieważ nie ma danych wyjściowych protokołu HTTP, można zobaczyć dane wyjściowe w terminalu.
 
     ![Dane wyjściowe terminalu pokazujące wiersz tabeli już istnieje](media/azure-functions-lab-image33.png)
 
-1. Zaktualizuj adres URL, aby odzwierciedlić kombinację, która nie została **http://localhost:7071/api/Process/5/7** jeszcze przetestowana, np. Zanotuj komunikat w terminalu, który wskazuje, że nie można odnaleźć wiersza tabeli (zgodnie z oczekiwaniami).
+1. Zaktualizuj adres URL, aby odzwierciedlić kombinację, która nie została jeszcze przetestowana, np. **http://localhost:7071/api/Process/5/7** . Zanotuj komunikat w terminalu, który wskazuje, że nie można odnaleźć wiersza tabeli (zgodnie z oczekiwaniami).
 
     ![Dane wyjściowe terminalu pokazujące nowy proces](media/azure-functions-lab-image34.png)
 

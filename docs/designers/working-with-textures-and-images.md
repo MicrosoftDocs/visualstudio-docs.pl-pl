@@ -3,17 +3,17 @@ title: Praca z obrazami i teksturami
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d59b7c2c52cc0fe230a6e9c5c7c89db56d065aff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633699"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589867"
 ---
 # <a name="work-with-textures-and-images"></a>Praca z teksturami i obrazami
 
@@ -46,7 +46,7 @@ Mapy wysokości zawierają dane pól wysokości. Są one używane do zapewnienia
 
 ### <a name="cube-maps"></a>Mapy modułów
 
-Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska*— lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż warstwy podstawowe, dwuwymiarowe tekstury mogą oferować.
+Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska*— lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż w przypadku warstw podstawowych.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

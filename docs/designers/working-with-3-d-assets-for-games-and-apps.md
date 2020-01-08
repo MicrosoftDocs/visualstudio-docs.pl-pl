@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888477"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589802"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Praca z zasobami 3D dla gier i aplikacji
 
@@ -23,7 +23,7 @@ W tym artykule opisano narzędzia programu Visual Studio, których można użyć
 
 ## <a name="directx-app-development-in-visual-studio"></a>Programowanie aplikacji DirectX w programie Visual Studio
 
-Aplikacja DirectX zazwyczaj łączy logikę programistyczną, interfejs API programu DirectX i programy HLSL (High Level Cieniing Language) wraz z graficznymi zasobami audio i 3W, aby przedstawić bogate, interaktywne środowisko multimedialne. Program Visual Studio zawiera narzędzia, których można użyć do pracy z obrazami i teksturami, modelami 3W i cieniami bez opuszczania środowiska IDE do korzystania z innego narzędzia. Narzędzia programu Visual Studio są szczególnie przydatne do tworzenia *zastępczych* elementów zawartości, których można użyć do testowania kodu lub prototypów kompilacji przed rozpoczęciem pracy z zasobami gotowymi do produkcji oraz do badania i modyfikowania zasobów gotowych do produkcji. Debugowanie aplikacji.
+Aplikacja DirectX zazwyczaj łączy logikę programistyczną, interfejs API programu DirectX i programy HLSL (High Level Cieniing Language) wraz z graficznymi zasobami audio i 3W, aby przedstawić bogate, interaktywne środowisko multimedialne. Program Visual Studio zawiera narzędzia, których można użyć do pracy z obrazami i teksturami, modelami 3W i cieniami bez opuszczania środowiska IDE do korzystania z innego narzędzia. Narzędzia programu Visual Studio są szczególnie odpowiednie do tworzenia *zastępczych* elementów zawartości, których można użyć do testowania kodu lub prototypów kompilacji przed rozpoczęciem pracy z zasobami gotowymi do produkcji oraz do inspekcji i modyfikowania zasobów gotowych do produkcji w przypadku debugowania aplikacji.
 
 Poniżej znajduje się więcej informacji na temat rodzajów zasobów, z którymi można korzystać w programie Visual Studio.
 

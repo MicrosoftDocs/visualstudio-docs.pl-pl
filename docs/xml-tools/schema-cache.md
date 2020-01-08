@@ -3,17 +3,17 @@ title: Pamięć podręczna schematu edytora XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aae5749d57dd1c9aaca8748ed02bdbb5587cade6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668743"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592493"
 ---
 # <a name="schema-cache"></a>Pamięć podręczna schematów
 
@@ -25,23 +25,23 @@ W poniższej tabeli opisano schematy, które są instalowane z edytorem XML.
 
 | Nazwa pliku | Opis |
 |-| - |
-| *Catalog. xsd* | Schemat dla plików wykazu schematu edytora XML. Aby uzyskać informacje na temat wykazów schematu, zobacz poniżej. |
-| *Żaden plik DotNetConfig. xsd* | Schemat dla plików Web. config, "<http://schemas.microsoft.com/.NETConfiguration/v2.0>". |
-| *MSBuild. xsd* | Schemat programu MSBuild Make plików "<http://schemas.microsoft.com/developer/msbuild/2003>". |
-| *msdata. xsd* | Schemat adnotacji XSD dodanych przez klasę <xref:System.Data.DataSet> "urn: schematys-Microsoft-com: XML-msdata". |
-| *msxsl. xsd* | Schemat dla rozszerzeń bloku skryptu Microsoft XSLT, urn: schematy — Microsoft-com: XSLT. |
-| *SnippetFormat. xsd* | Schemat dla plików XML fragmentów kodu. Aby zapoznać się z przykładami, zobacz *% VSInstallDir%VC#\ \Expansions*. |
-| *SOAP 1.1. xsd* | Schemat dla Simple Object Access Protocol (SOAP) 1,1, http://schemas.xmlsoap.org/soap/envelope/. |
+| *catalog.xsd* | Schemat dla plików wykazu schematu edytora XML. Aby uzyskać informacje na temat wykazów schematu, zobacz poniżej. |
+| *DotNetConfig.xsd* | Schemat dla plików Web. config, `http://schemas.microsoft.com/.NETConfiguration/v2.0`. |
+| *msbuild.xsd* | Schemat programu MSBuild Make plików `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| *msdata.xsd* | Schemat adnotacji XSD dodanych przez klasę <xref:System.Data.DataSet> "urn: schematys-Microsoft-com: XML-msdata". |
+| *msxsl.xsd* | Schemat dla rozszerzeń bloku skryptu Microsoft XSLT, urn: schematy — Microsoft-com: XSLT. |
+| *SnippetFormat.xsd* | Schemat dla plików XML fragmentów kodu. Aby zapoznać się z przykładami, zobacz *% VSInstallDir%VC#\ \Expansions*. |
+| *SOAP 1.1. xsd* | Schemat dla Simple Object Access Protocol (SOAP) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`. |
 | *SOAP 1.2. xsd* | Schemat dla Simple Object Access Protocol 1,2. |
-| *SiteMapSchema. xsd* | Schemat dla pliku XML mapy ASP.NET sitemap "<http://schemas.microsoft.com/AspNet/SiteMap-File-1.0>". |
-| *WSDL. xsd* | Schemat opisu usługi sieci Web, http://schemas.xmlsoap.org/wsdl/. |
-| *xenc. xsd* | Schemat szyfrowania XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XHTML. xsd* | Schemat dla http://www.w3.org/1999/xhtml XHTML. |
-| *XLink. xsd* | Schemat dla XLink 1.0, http://www.w3.org/1999/xlink. |
-| *XML. xsd* | Schemat opisujący atrybuty XML: Space i XML: lang, http://www.w3.org/XML/1998/namespace. |
-| *xmlsig. xsd* | Schemat dla podpisów cyfrowych XML, http://www.w3.org/2000/09/xmldsig#. |
-| *XSDSchema. xsd* | Schemat opisujący sam XSD, http://www.w3.org/2001/XMLSchema. |
-| *XSLT. xsd* | Schemat transformacje XML, http://www.w3.org/1999/XSL/Transform. |
+| *SiteMapSchema.xsd* | Schemat dla pliku XML mapy ASP.NET Sitemap, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`. |
+| *wsdl.xsd* | Schemat opisu usługi sieci Web, `http://schemas.xmlsoap.org/wsdl/`. |
+| *xenc. xsd* | Schemat szyfrowania XML, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xhtml.xsd* | Schemat dla `http://www.w3.org/1999/xhtml`XHTML. |
+| *xlink.xsd* | Schemat dla XLink 1.0, `http://www.w3.org/1999/xlink`. |
+| *xml.xsd* | Schemat opisujący atrybuty XML: Space i XML: lang, `http://www.w3.org/XML/1998/namespace`. |
+| *xmlsig.xsd* | Schemat dla podpisów cyfrowych XML, `http://www.w3.org/2000/09/xmldsig#`. |
+| *xsdschema.xsd* | Schemat opisujący sam XSD, `http://www.w3.org/2001/XMLSchema`. |
+| *xslt.xsd* | Schemat transformacje XML, `http://www.w3.org/1999/XSL/Transform`. |
 
 ## <a name="update-schemas-in-the-cache"></a>Aktualizowanie schematów w pamięci podręcznej
 
@@ -76,7 +76,7 @@ Atrybutem `href` może być dowolna ścieżka pliku lub adres URL http wskazują
 
 - CommonApplicationData
 
-- ISTNIEJĄCYCH
+- LCID
 
 Dokument wykazu może zawierać element `Catalog`, który wskazuje na inne wykazy. Można użyć elementu `Catalog`, aby wskazać centralny katalog współużytkowany przez zespół lub firmę lub katalog online udostępniony partnerom biznesowym. Atrybut `href` jest ścieżką pliku lub adresem URL protokołu HTTP dla innych wykazów. Poniżej przedstawiono przykład elementu `Catalog`:
 

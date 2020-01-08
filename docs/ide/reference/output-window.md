@@ -11,21 +11,21 @@ helpviewer_keywords:
 - Output window
 - Toolbox, removing controls
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 442cac32e0a7103dc573cad707b53ced936c9907
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655770"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567986"
 ---
 # <a name="output-window"></a>Okno wyniku
 
-W oknie **dane wyjściowe** są wyświetlane komunikaty o stanie dla różnych funkcji w zintegrowanym środowisku programistycznym (IDE). Aby otworzyć okno **dane wyjściowe** , na pasku menu wybierz polecenie **Wyświetl**  > **dane wyjściowe**lub naciśnij **klawisze CTRL** +**Alt** +**O**.
+W oknie **dane wyjściowe** są wyświetlane komunikaty o stanie dla różnych funkcji w zintegrowanym środowisku programistycznym (IDE). Aby otworzyć okno **dane wyjściowe** , na pasku menu wybierz polecenie **Wyświetl** > **dane wyjściowe**lub naciśnij **klawisze CTRL**+**Alt**+**O**.
 
 ## <a name="toolbar"></a>Pasek narzędzi
 
@@ -51,7 +51,7 @@ Zmienia fokus w oknie **danych wyjściowych** na następny błąd kompilacji i p
 
 Czyści cały tekst w okienku **danych wyjściowych** .
 
-### <a name="toggle-word-wrap"></a>Przełącz Zawijanie wierszy
+### <a name="toggle-word-wrap"></a>Przełącz zawijanie wierszy
 
 Włącza i wyłącza funkcję zawijania wyrazów w okienku **danych wyjściowych** . Gdy zawijanie wyrazów jest włączone, tekst w dłuższych wpisach wykraczających poza obszar wyświetlania jest wyświetlany w następującym wierszu.
 
@@ -61,7 +61,7 @@ W okienku **dane** wyjściowe wybrane na liście **Pokaż dane wyjściowe z** ws
 
 ## <a name="route-messages-to-the-output-window"></a>Kierowanie komunikatów do okna danych wyjściowych
 
-Aby wyświetlić okno **danych wyjściowych** za każdym razem, gdy kompilujesz projekt, w oknie dialogowym **Opcje** na stronie**Ogólne** **projekty i rozwiązania**  >  wybierz opcję **Pokaż okno dane wyjściowe po rozpoczęciu kompilacji**. Następnie przy otwartym pliku kodu do edycji wybierz pozycję **Przejdź do następnej wiadomości** i **Przejdź do poprzedniej wiadomości** na pasku narzędzi okna **danych wyjściowych** , aby wybrać pozycje w okienku **dane wyjściowe** . W takim przypadku punkt wstawiania w edytorze kodu przechodzi do wiersza kodu, w którym występuje wybrany problem.
+Aby wyświetlić okno **danych wyjściowych** za każdym razem, gdy kompilujesz projekt, w oknie dialogowym **Opcje** na stronie **Ogólne** **projekty i rozwiązania** > wybierz opcję **Pokaż okno dane wyjściowe po rozpoczęciu kompilacji**. Następnie przy otwartym pliku kodu do edycji wybierz pozycję **Przejdź do następnej wiadomości** i **Przejdź do poprzedniej wiadomości** na pasku narzędzi okna **danych wyjściowych** , aby wybrać pozycje w okienku **dane wyjściowe** . W takim przypadku punkt wstawiania w edytorze kodu przechodzi do wiersza kodu, w którym występuje wybrany problem.
 
 Niektóre funkcje i polecenia środowiska IDE wywoływane w [okno polecenie](../../ide/reference/command-window.md) dostarczają dane wyjściowe do okna **danych wyjściowych** . Dane wyjściowe z zewnętrznych narzędzi, takich jak pliki *bat* i *. com* , które są zwykle wyświetlane w oknie poleceń, są kierowane do okienka **danych wyjściowych** po wybraniu opcji **Użyj okno dane wyjściowe** w obszarze [Zarządzaj narzędziami zewnętrznymi](../../ide/managing-external-tools.md). Wiele innych rodzajów komunikatów można również wyświetlać w okienkach **danych wyjściowych** . Na przykład, gdy składnia Transact-SQL w procedurze składowanej jest sprawdzana względem docelowej bazy danych, wyniki są wyświetlane w oknie **dane wyjściowe** .
 
@@ -71,12 +71,12 @@ W C++programie można tworzyć niestandardowe kroki kompilacji i zdarzenia kompi
 
 ## <a name="scroll-behavior"></a>Zachowanie przewijania
 
-Jeśli używasz autoprzewijania w oknie **danych wyjściowych** , a następnie nawiguj za pomocą klawiszy myszy lub strzałek, Autoprzewijanie zostanie zatrzymane. Aby wznowić Autoprzewijanie, naciśnij klawisz **Ctrl** +**End**.
+Jeśli używasz autoprzewijania w oknie **danych wyjściowych** , a następnie nawiguj za pomocą klawiszy myszy lub strzałek, Autoprzewijanie zostanie zatrzymane. Aby wznowić Autoprzewijanie, naciśnij klawisz **Ctrl**+**End**.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Komunikaty diagnostyczne w oknie danych wyjściowych](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Instrukcje: kontrolowanie okna danych wyjściowych](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Kompilowanie i tworzenie kompilacji](../../ide/compiling-and-building-in-visual-studio.md)
-- [Informacje o konfiguracjach kompilacji](../../ide/understanding-build-configurations.md)
+- [O konfiguracjach kompilacji](../../ide/understanding-build-configurations.md)
 - [Przegląd biblioteki klas](/dotnet/standard/class-library-overview)

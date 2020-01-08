@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639576"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586097"
 ---
 # <a name="upgrade-mdf-files"></a>Uaktualnianie plików mdf
 
@@ -63,7 +63,7 @@ Przed uaktualnieniem bazy danych należy wziąć pod uwagę następujące kryter
 
     - **Źródło danych**: `Microsoft SQL Server (SqlClient)`
 
-    - **Nazwa serwera**:
+    - **Server Name** (Nazwa serwera):
 
         - Aby użyć domyślnej wersji: `(localdb)\MSSQLLocalDB`.  Spowoduje to określenie opcji ProjectV12 lub ProjectV13, w zależności od zainstalowanej wersji programu Visual Studio i utworzenia pierwszego wystąpienia LocalDB. Węzeł **MSSQLLocalDB** w **Eksplorator obiektów SQL Server** wskazuje, która wersja wskazuje.
 
@@ -73,7 +73,7 @@ Przed uaktualnieniem bazy danych należy wziąć pod uwagę następujące kryter
 
     - **Nazwa logiczna**: nazwa, która ma być używana z plikiem.
 
-3. Wybierz przycisk **OK** .
+3. Wybierz przycisk **OK**.
 
 4. Po wyświetleniu monitu wybierz przycisk **tak** , aby uaktualnić plik.
 
@@ -101,13 +101,13 @@ Możesz również zmodyfikować połączenie SQL Server Express, aby użyć Loca
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Aby SQL Server Express domyślnego aparatu bazy danych
 
-1. Na pasku menu wybierz pozycję **narzędzia**  > **Opcje**.
+1. Na pasku menu wybierz pozycję **narzędzia** > **Opcje**.
 
 2. W oknie dialogowym **Opcje** Rozwiń opcje **narzędzi bazy danych** , a następnie wybierz pozycję **połączenia danych**.
 
 3. W polu tekstowym **Nazwa wystąpienia SQL Server** Określ nazwę wystąpienia SQL Server Express lub LocalDB, którego chcesz użyć. Jeśli wystąpienie nie ma nazwy, określ `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`.
 
-4. Wybierz przycisk **OK** .
+4. Wybierz przycisk **OK**.
 
     SQL Server Express będzie domyślnym aparatem bazy danych aplikacji.
 

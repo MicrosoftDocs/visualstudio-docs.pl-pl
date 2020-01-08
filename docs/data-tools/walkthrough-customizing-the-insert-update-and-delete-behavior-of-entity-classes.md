@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639170"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585954"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Przewodnik: Dostosowywanie zachowania INSERT, Update i DELETE klas jednostek
 
 [Narzędzia LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferują wizualną powierzchnię projektową do tworzenia i edytowania klas LINQ to SQL (klasy jednostek), które są oparte na obiektach w bazie danych. Korzystając z [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), można używać technologii LINQ do uzyskiwania dostępu do baz danych SQL. Aby uzyskać więcej informacji, zobacz [LINQ (zapytanie zintegrowane z językiem)](/dotnet/csharp/linq/).
 
-Domyślnie logika do wykonywania aktualizacji jest zapewniana przez środowisko uruchomieniowe LINQ to SQL. Środowisko uruchomieniowe tworzy domyślne instrukcje `Insert`, `Update` i `Delete` w oparciu o schemat tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz używać zachowania domyślnego, możesz skonfigurować zachowanie aktualizacji i wyznaczyć określone procedury składowane do wykonywania niezbędnych operacji wstawiania, aktualizacji i usuwania wymaganych do pracy z danymi w bazie danych. Można to również zrobić, gdy domyślne zachowanie nie jest generowane, na przykład gdy klasy jednostek mapują się na widoki. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabeli za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacji za pomocą procedur składowanych](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Domyślnie logika do wykonywania aktualizacji jest zapewniana przez środowisko uruchomieniowe LINQ to SQL. Środowisko uruchomieniowe tworzy domyślne instrukcje `Insert`, `Update`i `Delete` w oparciu o schemat tabeli (definicje kolumn i informacje o kluczu podstawowym). Jeśli nie chcesz używać zachowania domyślnego, możesz skonfigurować zachowanie aktualizacji i wyznaczyć określone procedury składowane do wykonywania niezbędnych operacji wstawiania, aktualizacji i usuwania wymaganych do pracy z danymi w bazie danych. Można to również zrobić, gdy domyślne zachowanie nie jest generowane, na przykład gdy klasy jednostek mapują się na widoki. Ponadto można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabeli za pomocą procedur składowanych. Aby uzyskać więcej informacji, zobacz [Dostosowywanie operacji za pomocą procedur składowanych](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Ten Instruktaż wymaga dostępności procedur składowanych **InsertCustomer**, **UpdateCustomer**i **DeleteCustomer** dla bazy danych Northwind.
@@ -59,7 +59,7 @@ W tym instruktażu jest stosowana SQL Server Express LocalDB i Przykładowa baza
 
     2. Skopiuj [skrypt języka Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do Schowka. Ten skrypt T-SQL tworzy bazę danych Northwind od podstaw i wypełnia ją danymi.
 
-    3. Wklej skrypt T-SQL do edytora zapytań, a następnie wybierz przycisk Execute ( **Wykonaj** ).
+    3. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
        Po krótkim czasie zapytanie kończy działanie i zostanie utworzona baza danych Northwind.
 
@@ -189,7 +189,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 3. Przeciągnij wszystkie trzy procedury składowane na **projektanta o/R**.
 
-     Procedury składowane są dodawane do okienka metody jako metody <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [metody DataContext (Projektant O/R)](../data-tools/datacontext-methods-o-r-designer.md).
+     Procedury składowane są dodawane do okienka metody jako metody <xref:System.Data.Linq.DataContext>. Aby uzyskać więcej informacji, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 4. Wybierz klasę jednostki **klienta** w **projektancie o/R**.
 
@@ -197,7 +197,7 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 6. Kliknij przycisk wielokropka ( **...** ) obok pozycji **Użyj środowiska uruchomieniowego** , aby otworzyć okno dialogowe **Konfigurowanie zachowania** .
 
-7. Wybierz pozycję **Dostosuj**.
+7. Wybierz **dostosować**.
 
 8. Wybierz metodę **InsertCustomers** na liście **Dostosuj** .
 
@@ -208,13 +208,13 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 10. Na liście **zachowanie** wybierz pozycję **Aktualizuj** .
 
-11. Wybierz pozycję **Dostosuj**.
+11. Wybierz **dostosować**.
 
 12. Wybierz metodę **UpdateCustomers** na liście **Dostosuj** .
 
      Sprawdź listę **argumentów metod** i **właściwości klasy** oraz Zwróć uwagę na to, że istnieją dwa **argumenty metody** i dwie **właściwości klasy** dla niektórych kolumn w tabeli. Ułatwia to śledzenie zmian i Tworzenie instrukcji, które sprawdzają naruszenia współbieżności.
 
-13. Mapuj argument metody **Original_CustomerID** na właściwość klasy **CustomerID (oryginalna)** .
+13. Mapuj argument **Original_CustomerID** metody na właściwość klasy **CustomerID (oryginalna)** .
 
     > [!NOTE]
     > Domyślnie argumenty metody są mapowane na właściwości klasy, gdy nazwy są zgodne. Jeśli nazwy właściwości są zmieniane i nie są już zgodne między tabelą a klasą jednostki, może być konieczne wybranie równoważnej właściwości klasy do zamapowania, jeśli **Projektant o/R** nie może określić poprawnego mapowania. Ponadto jeśli argumenty metody nie mają prawidłowych właściwości klasy do zamapowania, można ustawić wartość **właściwości klasy** na **(brak)** .
@@ -223,11 +223,11 @@ Domyślnie przycisk Zapisz nie jest włączony i funkcja zapisywania nie jest za
 
 15. Na liście **zachowanie** wybierz pozycję **Usuń** .
 
-16. Wybierz pozycję **Dostosuj**.
+16. Wybierz **dostosować**.
 
 17. Wybierz metodę **DeleteCustomers** na liście **Dostosuj** .
 
-18. Mapuj argument metody **Original_CustomerID** na właściwość klasy **CustomerID (oryginalna)** .
+18. Mapuj argument **Original_CustomerID** metody na właściwość klasy **CustomerID (oryginalna)** .
 
 19. Kliknij przycisk **OK**.
 

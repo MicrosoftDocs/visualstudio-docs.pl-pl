@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913316"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405003"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie z ASP.NET Core
 
@@ -42,13 +42,13 @@ Wybierz **ASP.NET Core pustą aplikację sieci Web** i naciśnij przycisk **dale
 
 ![Nowy ASP.NET Core pusty widok projektu](media/asp-net-core-2019-empty-project.png)
 
-ASP.NET Core pusty szablon tworzy aplikację sieci Web z dwoma domyślnymi plikami: **Program.cs** i **Startup.cs**, które opisano poniżej. Tworzy również folder zależności, który zawiera zależności pakietu NuGet projektu, takie jak ASP.NET Core, .NET Core Framework i obiekty docelowe programu MSBuild, które kompilują projekt:
+ASP.NET Core pusty szablon tworzy aplikację sieci Web z dwoma domyślnymi plikami: **program.cs** i **Startup.cs**, które opisano poniżej. Tworzy również folder zależności, który zawiera zależności pakietu NuGet projektu, takie jak ASP.NET Core, .NET Core Framework i obiekty docelowe programu MSBuild, które kompilują projekt:
 
 ![okienko rozwiązania wyświetlania zależności](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
-Otwórz i sprawdź plik **program.cs** w projekcie. Zwróć uwagę, że w `Main` metodzie występuje kilka rzeczy — wpis do aplikacji:
+Otwórz i sprawdź plik **program.cs** w projekcie. Zwróć uwagę, że w metodzie `Main` występuje kilka rzeczy — wpis do aplikacji:
 
 ```csharp
     public class Program
@@ -70,13 +70,13 @@ Aplikacja ASP.NET Core tworzy serwer sieci Web w swojej metodzie głównej przez
 
 Można jednak również dodać dodatkowe konfiguracje, takie jak:
 
-* `UseKestrel`: Określa serwer Kestrel, który będzie używany przez aplikację
-* `UseContentRoot(Directory.GetCurrentDirectory())`: Używa folderu głównego projektu sieci Web jako katalogu głównego zawartości aplikacji, gdy aplikacja zostanie uruchomiona z tego folderu
-* `.UseIISIntegration()`: Określa, że aplikacja powinna współpracować z usługami IIS. Aby można było używać usług IIS `UseKestrel` z `UseIISIntegration` ASP.NET Coreami i należy je określić.
+* `UseKestrel`: określa, że serwer Kestrel będzie używany przez aplikację
+* `UseContentRoot(Directory.GetCurrentDirectory())`: używa folderu głównego projektu sieci Web jako katalogu głównego zawartości aplikacji, gdy aplikacja zostanie uruchomiona z tego folderu
+* `.UseIISIntegration()`: określa, że aplikacja powinna współpracować z usługami IIS. Aby można było użyć usług IIS z ASP.NET Core `UseKestrel` i `UseIISIntegration` należy określić.
 
 ### <a name="startupcs"></a>Startup.cs
 
-Klasa uruchamiania dla aplikacji jest określona w `UseStartup()` metodzie `CreateWebHostBuilder`w. W tej klasie należy określić potok obsługi żądań i skonfigurować usługi.
+Klasa uruchamiania dla aplikacji jest określona w metodzie `UseStartup()` na `CreateWebHostBuilder`. W tej klasie należy określić potok obsługi żądań i skonfigurować usługi.
 
 Otwórz i sprawdź plik **Startup.cs** w projekcie:
 
@@ -108,25 +108,25 @@ Otwórz i sprawdź plik **Startup.cs** w projekcie:
 Ta klasa startowa musi zawsze być zgodna z następującymi regułami:
 
 - Musi być zawsze publiczny
-- Musi zawierać dwie metody publiczne: `ConfigureServices` i`Configure`
+- Musi on zawierać dwie metody publiczne: `ConfigureServices` i `Configure`
 
-`ConfigureServices` Metoda definiuje usługi, które będą używane przez aplikację.
+Metoda `ConfigureServices` definiuje usługi, które będą używane przez aplikację.
 
-Umożliwia tworzenie potoku żądania przy użyciu [oprogramowania pośredniczącego.](/aspnet/core/fundamentals/middleware) `Configure` Są to składniki używane w potoku aplikacji ASP.NET do obsługi żądań i odpowiedzi. Potok HTTP składa się z szeregu delegatów żądań wywoływanych w sekwencji. Każdy delegat może wybrać albo obsłużyć żądanie lub przekazać go do następnego delegata.
+`Configure` pozwala na redagowanie potoku żądania przy użyciu [oprogramowania pośredniczącego](/aspnet/core/fundamentals/middleware). Są to składniki używane w potoku aplikacji ASP.NET do obsługi żądań i odpowiedzi. Potok HTTP składa się z szeregu delegatów żądań wywoływanych w sekwencji. Każdy delegat może wybrać albo obsłużyć żądanie lub przekazać go do następnego delegata.
 
-Można skonfigurować delegatów `Run`przy użyciu metod,`Map`, i `Use` w `IApplicationBuilder`, ale `Run` Metoda nigdy nie wywoła następnego delegata i zawsze powinna być używana na końcu potoku.
+Można skonfigurować delegatów przy użyciu metod `Run`,`Map`i `Use` na `IApplicationBuilder`, ale metoda `Run` nigdy nie wywoła następnego delegata i zawsze powinna być używana na końcu potoku.
 
-`Configure` Metoda wstępnie skompilowanego szablonu została skompilowana w celu wykonania kilku czynności. Najpierw konfiguruje stronę obsługi wyjątków do użycia podczas opracowywania. Następnie wysyła odpowiedź do strony żądającej sieci Web z prostym "Hello world".
+Metoda `Configure` wstępnie skompilowanego szablonu została skompilowana w celu wykonania kilku czynności. Najpierw konfiguruje stronę obsługi wyjątków do użycia podczas opracowywania. Następnie wysyła odpowiedź do strony żądającej sieci Web z prostym "Hello world".
 
-Ta prosta Witaj, projekt światowy może działać teraz bez dodawania dodatkowego kodu. Aby uruchomić aplikację i wyświetlić ją w przeglądarce, naciśnij przycisk Odtwórz (trójkątny) na pasku narzędzi:
+Ta prosta Witaj, projekt światowy może działać teraz bez dodawania dodatkowego kodu. Aby uruchomić aplikację, możesz wybrać przeglądarkę, w której chcesz uruchomić aplikację, za pomocą listy rozwijanej po prawej stronie przycisku Odtwórz lub po prostu nacisnąć przycisk Odtwórz (trójkątny), aby użyć domyślnej przeglądarki:
 
-![Uruchom aplikację](media/asp-net-core-2019-run-debug.png)
+![Uruchomienie przeglądarki](media/asp-net-web-picker.png)
 
 Do uruchomienia projektu sieci Web Visual Studio dla komputerów Mac jest używany port losowy. Aby dowiedzieć się, jaki jest ten port, Otwórz dane wyjściowe aplikacji, która jest wyświetlana w obszarze **wyświetl > konsole**. Powinny znajdować się dane wyjściowe podobne do pokazanego poniżej:
 
 ![Dane wyjściowe aplikacji wyświetlające port nasłuchujący](media/asp-net-core-image6.png)
 
-Po uruchomieniu projektu należy uruchomić domyślną przeglądarkę sieci Web, a następnie połączyć się z adresem URL wymienionym w danych wyjściowych aplikacji. Alternatywnie możesz otworzyć dowolną dowolnie wybraną przeglądarkę i wprowadzić `http://localhost:5000/`, zastępując ją `5000` portem, który program Visual Studio wyprowadza w danych wyjściowych aplikacji. Powinien zostać wyświetlony tekst `Hello World!`:
+Po uruchomieniu projektu należy uruchomić domyślną przeglądarkę sieci Web, a następnie połączyć się z adresem URL wymienionym w danych wyjściowych aplikacji. Alternatywnie możesz otworzyć dowolnie wybraną przeglądarkę i wprowadzić `http://localhost:5000/`, zastępując `5000` z portem, który program Visual Studio wyprowadza w danych wyjściowych aplikacji. Powinien zostać wyświetlony tekst `Hello World!`:
 
 ![tekst wyświetlany w przeglądarce](media/asp-net-core-image7.png)
 
@@ -135,7 +135,7 @@ Po uruchomieniu projektu należy uruchomić domyślną przeglądarkę sieci Web,
 Aplikacje ASP.NET Core korzystają ze wzorca projektowego Model-View-Controller (MVC), aby zapewnić logiczne Rozdzielenie obowiązków dla każdej części aplikacji. MVC składa się z następujących elementów:
 
 - **Model**: Klasa, która reprezentuje dane aplikacji.
-- **Widok**: Wyświetla interfejs użytkownika aplikacji (który jest często danymi modelu).
+- **Widok**: wyświetla interfejs użytkownika aplikacji (który jest często danymi modelu).
 - **Kontroler**: Klasa, która obsługuje żądania przeglądarki, reaguje na dane wejściowe i interakcje użytkownika.
 
 Aby uzyskać więcej informacji na temat korzystania z MVC, zobacz Omówienie podręcznika [ASP.NET Core MVC](/aspnet/core/mvc/overview) .
@@ -169,13 +169,13 @@ Aby dodać kontroler, wykonaj następujące czynności:
     }
     ```
 
-3. Aby dodać zależność do projektu, kliknij prawym przyciskiem myszy folder zależności i wybierz polecenie **Dodaj pakiet....** `Microsoft.AspNetCore.Mvc`
+3. Dodaj zależność `Microsoft.AspNetCore.Mvc` do projektu, klikając prawym przyciskiem myszy folder **zależności** i wybierając polecenie **Dodaj pakiet...** .
 
-4. Użyj pola wyszukiwania, aby przejrzeć bibliotekę NuGet dla programu `Microsoft.AspNetCore.Mvc`, a następnie wybierz pozycję **Dodaj pakiet**. Instalacja może potrwać kilka minut, a użytkownik może zostać poproszony o zaakceptowanie różnych licencji dla wymaganych zależności:
+4. Użyj pola wyszukiwania, aby przejrzeć bibliotekę NuGet dla `Microsoft.AspNetCore.Mvc`, a następnie wybierz pozycję **Dodaj pakiet**. Instalacja może potrwać kilka minut, a użytkownik może zostać poproszony o zaakceptowanie różnych licencji dla wymaganych zależności:
 
     ![Dodaj NuGet](media/asp-net-core-image9.png)
 
-5. W klasie startowej Usuń `app.Run` wyrażenie lambda i ustaw logikę routingu adresów URL używaną przez MVC do określenia, który kod powinien zostać wywołany w następujący sposób:
+5. W klasie startowej Usuń `app.Run` lambda i ustaw logikę routingu adresów URL używaną przez MVC do określenia, który kod powinien zostać wywołany w następujący sposób:
 
     ```csharp
     app.UseMvc(routes =>
@@ -186,15 +186,15 @@ Aby dodać kontroler, wykonaj następujące czynności:
     });
     ```
 
-    Upewnij się, że usunięto `app.Run` wyrażenie lambda, ponieważ spowoduje to zastąpienie logiki routingu.
+    Upewnij się, że usunięto `app.Run` lambda, ponieważ spowoduje to zastąpienie logiki routingu.
 
     Aby określić kod do uruchomienia, MVC korzysta z następującego formatu:
 
     `/[Controller]/[ActionName]/[Parameters]`
 
-    Po dodaniu powyższego fragmentu kodu zostanie wyszukana aplikacja domyślna dla `HelloWorld` kontrolera `Index` i metoda działania.
+    Po dodaniu powyższego fragmentu kodu zostanie wyświetlony komunikat domyślny kontroler `HelloWorld` i `Index` Metoda akcji.
 
-6. `services.AddMvc();` Dodaj wywołanie`ConfigureServices` do metody, jak pokazano poniżej:
+6. Dodaj wywołanie `services.AddMvc();` do metody `ConfigureServices`, jak pokazano poniżej:
 
     ```csharp
     public void ConfigureServices(IServiceCollection services)
@@ -218,7 +218,7 @@ Aby dodać kontroler, wykonaj następujące czynności:
 
     ![Uruchamianie aplikacji w przeglądarce](media/asp-net-core-image13.png)
 
-9. Spróbuj przejść do ( `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` zastępowanie `xxxx` prawidłowym portem), aby zobaczyć następujące elementy:
+9. Spróbuj przejść do `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (Zastąp `xxxx` prawidłowym portem), aby zobaczyć następujące elementy:
 
     ![Uruchamianie aplikacji w przeglądarce z argumentami](media/asp-net-core-image10.png)
 
