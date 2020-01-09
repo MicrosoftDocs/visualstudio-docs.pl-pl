@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b023ad4b14d6c890c14726f645a2ebf3c99f6f7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3711a87d84e25fd6f790cee62ecb71b2b046d0be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666267"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596206"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 
@@ -38,7 +38,7 @@ Wpisz rozszerzenie pliku, którego środowisko edycji ma być zdefiniowane w IDE
 
 Wybierz Edytor IDE lub projektanta, w którym będą otwierane dokumenty z tym rozszerzeniem pliku. Po wybraniu opcji "with ncoding" zostanie wyświetlone okno dialogowe, które umożliwia wybranie schematu kodowania.
 
-**Add**
+**Dodaj**
 
 Dodaje wpis zawierający określone **rozszerzenie** i **środowisko edycji** do listy rozszerzeń.
 
