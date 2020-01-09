@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653427"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588970"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Instrukcje: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
 
@@ -36,31 +36,31 @@ Poniższa procedura umożliwia skonfigurowanie wszystkich agentów przypisanych 
 
 ## <a name="to-set-up-an-agent-to-run-as-a-process"></a>Aby skonfigurować agenta do uruchamiania jako proces
 
-1. Aby skonfigurować agenta testowego, który został zainstalowany do uruchamiania jako proces, przejdź do **menu Start**  > **Narzędzia konfiguracji agenta testowego**.
+1. Aby skonfigurować agenta testowego, który został zainstalowany do uruchamiania jako proces, przejdź do **menu Start** > **Narzędzia konfiguracji agenta testowego**.
 
-   Zostanie wyświetlone okno dialogowe **Konfiguruj agenta testowego** .
+   **Konfigurowanie agenta testowego** zostanie wyświetlone okno dialogowe.
 
    ![Konfiguruj agenta testowego dla programu Visual Studio](media/configure-test-agent.png)
 
-2. Wybierz pozycję **proces interaktywny**. Agent testowy zostanie uruchomiony jako proces, a nie jako usługa. Wybierz pozycję **dalej**.
+2. Wybierz pozycję **proces interaktywny**. Agent testowy zostanie uruchomiony jako proces, a nie jako usługa. Wybierz **dalej**.
 
 3. Wprowadź nazwę użytkownika i hasło dla użytkownika, który uruchomi proces agenta testowego.
 
    > [!NOTE]
    > - Użytkownik dodawany do uruchomienia procesu musi również zostać dodany jako członek grupy TeamTestAgentService na komputerze dla kontrolera testów dla tego agenta. Jeśli ten użytkownik jest bieżącym użytkownikiem, gdy ten użytkownik zostanie dodany do komputera kontrolera testów, musisz się wylogować lub uruchomić ponownie.
-   > - Hasła o wartości null nie są obsługiwane dla kont użytkowników.
+   > - Hasła puste nie są obsługiwane dla kont użytkowników.
    > - Jeśli chcesz użyć IntelliTrace lub danych emulacji sieci i karty diagnostycznej, konto użytkownika musi być członkiem grupy Administratorzy. Jeśli na komputerze z uruchomionym agentem testowym jest uruchomiony system operacyjny z najniższymi uprawnieniami konta użytkownika, należy uruchomić go jako administrator (podwyższony poziom). Jeśli nazwa użytkownika agenta nie znajduje się w usłudze agenta, spróbuje ją dodać, co wymaga uprawnień do kontrolera testów.
    > - Użytkownik próbujący użyć kontrolera testów musi znajdować się na koncie użytkownika kontrolera testów lub nie będzie mógł uruchamiać testów dla kontrolera.
 
-4. Aby upewnić się, że komputer z agentem testowym może uruchamiać testy po ponownym uruchomieniu, można skonfigurować komputer do automatycznego logowania jako użytkownik agenta testowego. Wybierz pozycję **Zaloguj automatycznie**. Spowoduje to zapisanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
+4. Aby upewnić się, że komputer z agentem testowym może uruchamiać testy po ponownym uruchomieniu, można skonfigurować komputer do automatycznego logowania jako użytkownik agenta testowego. Wybierz **automatycznego logowania**. Spowoduje to przechowywanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
 
    > [!NOTE]
    > Po nawiązaniu połączenia ze środowiskiem laboratoryjnym przy użyciu pulpitu zdalnego lub z połączeniem opartym na gościu może wystąpić częste, nieoczekiwane rozłączenia. Jedną z możliwych przyczyn utraty połączenia jest to, że komputer jest skonfigurowany do automatycznego logowania do sieci.
 
-5. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to zakłócać wszystkie testy automatyczne, które muszą współdziałać z pulpitem, wybierz pozycję **upewnij się, że wygaszacz ekranu jest wyłączony**.
+5. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować ze zautomatyzowanymi testami, które muszą współdziałać z pulpitem, wybierz **upewnij się, że wygaszacz ekranu jest wyłączony**.
 
    > [!WARNING]
-   > Jeśli logujesz się automatycznie lub wyłączysz wygaszacz ekranu, występują zagrożenia bezpieczeństwa. Włączenie automatycznego logowania umożliwia innym użytkownikom uruchamianie tego komputera i korzystanie z konta, które automatycznie loguje się. Jeśli wyłączysz wygaszacz ekranu, komputer może nie monitować użytkownika o zalogowanie się w celu odblokowania komputera. Dzięki temu każdy użytkownik może uzyskać dostęp do komputera, jeśli ma fizyczny dostęp do komputera. Jeśli te funkcje są włączone na komputerze, należy upewnić się, że te komputery są fizycznie bezpieczne. Na przykład te komputery znajdują się w fizycznie zabezpieczonym laboratorium. Jeśli wyczyścisz opcję **upewnij się, że wygaszacz ekranu jest wyłączony**, nie spowoduje to włączenia wygaszacza ekranu.
+   > Istnieją zagrożenia bezpieczeństwa, jeśli logujesz się automatycznie lub wyłączysz wygaszacz ekranu. Po włączeniu automatycznego logowania na, umożliwiasz innym użytkownikom, aby uruchomić ten komputer, a aby można było korzystać z konta, które loguje się automatycznie. Po wyłączeniu wygaszacza ekranu komputer może nie monitować użytkownika do logowania się do odblokowania komputera. Dzięki temu każdy użytkownik może uzyskać dostęp do komputera, jeśli ma fizyczny dostęp do komputera. Po włączeniu tych funkcji na komputerze, należy pamiętać, że te komputery są zabezpieczony fizycznie. Na przykład komputery te znajdują się w fizycznie bezpiecznych laboratorium. Jeśli wyczyścisz opcję **upewnij się, że wygaszacz ekranu jest wyłączony**, nie spowoduje to włączenia wygaszacza ekranu.
 
    Aby zmienić agenta z powrotem do uruchamiania jako usługa, możesz użyć tego narzędzia i wybrać pozycję **Usługa**.
 
@@ -71,7 +71,7 @@ Poniższa procedura umożliwia skonfigurowanie wszystkich agentów przypisanych 
 7. Aby zamknąć okno dialogowe **Podsumowanie konfiguracji** , wybierz przycisk **Zamknij**. Następnie wybierz ponownie przycisk **Zamknij** , aby zamknąć **Narzędzie konfiguracji agenta testowego**.
 
    > [!NOTE]
-   > Istnieje ikona obszaru powiadomień, która jest uruchamiana na komputerze dla agenta testowego, który działa jako proces. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces korzystający z tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz **start**  > **Visual Studio**  > **Microsoft Visual Studio Test Agent**.
+   > Istnieje ikona obszaru powiadomień, która jest uruchamiana na komputerze dla agenta testowego, który działa jako proces. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz **start** > **Visual Studio** > **Microsoft Visual Studio Test Agent**.
 
    Jeśli kontroler testów dla tego agenta testowego jest zarejestrowany w Team Foundation Server, stan agenta testowego, który działa jako proces interaktywny, zostanie wyświetlony w widoku **Kontrolery** w **Centrum laboratoryjnym** dla Microsoft Test Manager. Jest on wyświetlany z poprzednim symbolem gwiazdki, aby zauważyć, że jest uruchomiony jako proces interaktywny. Aby ponownie uruchomić tego agenta testowego, należy użyć narzędzia uruchomionego na komputerze dla agenta testowego, a nie widoku **Kontrolery** .
 

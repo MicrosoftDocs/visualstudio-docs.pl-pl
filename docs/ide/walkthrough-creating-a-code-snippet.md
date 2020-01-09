@@ -10,19 +10,19 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb76fd61cb06b2877ebe0cd1714610b25845ebc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647117"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597298"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 
@@ -86,7 +86,7 @@ Poniższy kod XML jest podstawowym szablonem fragmentu kodu:
 
 1. Można zaimportować fragment kodu do instalacji programu Visual Studio za pomocą **Menedżera fragmentów kodów**. Otwórz ją, wybierając pozycję **narzędzia** > **Menedżer fragmentów kodu**.
 
-2. Kliknij przycisk **Importuj**.
+2. Kliknij przycisk **Importuj** .
 
 3. Przejdź do lokalizacji, w której zapisano fragment kodu w poprzedniej procedurze, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 

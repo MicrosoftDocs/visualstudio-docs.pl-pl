@@ -1,24 +1,24 @@
 ---
-title: 'Instrukcje: Zmiana katalogu wyjściowego kompilacji'
+title: 'Instrukcje: zmiana katalogu wyjściowego kompilacji'
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 732e48bf5cbea8534cc5c90ac5af80df0cc93e7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238186"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594386"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Instrukcje: Zmiana katalogu wyjściowego kompilacji
+# <a name="how-to-change-the-build-output-directory"></a>Instrukcje: zmiana katalogu wyjściowego kompilacji
 
 Możesz określić lokalizację danych wyjściowych generowanych przez projekt na podstawie konfiguracji (na potrzeby debugowania, wydania lub obu).
 
@@ -34,7 +34,7 @@ Możesz określić lokalizację danych wyjściowych generowanych przez projekt n
 
 3. Na liście rozwijanej konfiguracja w górnej części wybierz konfigurację, której lokalizację pliku wyjściowego chcesz zmienić (**debugowanie**, **wydanie**lub **wszystkie konfiguracje**).
 
-4. Znajdź wpis ścieżki wyjściowej na stronie&mdash;, która różni się w zależności od typu projektu:
+4. Znajdź wpis ścieżki wyjściowej na stronie,&mdash;różni się w zależności od typu projektu:
 
    - **Ścieżka wyjściowa** C# i projekty JavaScript
    - **Ścieżka wyjściowa kompilacji** dla projektów Visual Basic

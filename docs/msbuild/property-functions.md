@@ -1,73 +1,73 @@
 ---
-title: Funkcje właściwości | Dokumentacja firmy Microsoft
+title: Funkcje właściwości | Microsoft Docs
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694948"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597389"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 
-W wersjach programu .NET Framework 4 i 4.5 funkcji właściwości może służyć do oceny, skryptów programu MSBuild. Funkcje właściwości może służyć wszędzie tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań funkcji właściwości mogą być używane poza celów i są sprawdzane przed wszystkie przebiegi docelowego.
+W .NET Framework wersjach 4 i 4,5 funkcja właściwości może służyć do oceniania skryptów programu MSBuild. Funkcji właściwości można używać wszędzie tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań, funkcji właściwości można używać poza obiektami docelowymi i są oceniane przed dowolnymi uruchomieniami docelowym.
 
- Bez używania zadań programu MSBuild, może odczytywanie godziny systemowej, porównywanie ciągów, porównywanie wyrażeń regularnych i wykonywać inne czynności w skrypcie kompilacji. Program MSBuild podejmie próbę konwertowanie ciągu na liczbę i liczbę na ciąg i innych konwersji zgodnie z potrzebami.
+ Bez używania zadań programu MSBuild można odczytać czas systemowy, porównać ciągi, dopasować wyrażenia regularne i wykonać inne akcje w skrypcie kompilacji. Program MSBuild podejmie próbę przekonwertowania ciągu na liczbę i liczbę na ciąg, a następnie wprowadzi inne konwersje zgodnie z wymaganiami.
  
-Ciąg wartości zwracane przez funkcje właściwości mają [znaki specjalne](msbuild-special-characters.md) poprzedzone znakiem zmiany znaczenia. Jeśli wartość, które ma być traktowany tak, jakby został umieszczony bezpośrednio w pliku projektu, użyj `$([MSBuild]::Unescape())` do unescape znaków specjalnych.
+Wartości ciągu zwracane z funkcji właściwości mają [znaki specjalne](msbuild-special-characters.md) . Jeśli wartość ma być traktowana tak, jakby została umieszczona bezpośrednio w pliku projektu, użyj `$([MSBuild]::Unescape())`, aby wypróbować znaki specjalne.
 
 ## <a name="property-function-syntax"></a>Składnia funkcji właściwości
 
-Oto trzy rodzaje funkcji właściwości; Każda funkcja ma inną składnię:
+Są to trzy rodzaje funkcji właściwości; Każda funkcja ma inną składnię:
 
-- Funkcje właściwości ciągów (tekstowych wystąpień)
-- Funkcje statyczne właściwości
+- Funkcje właściwości String (Instance)
+- Statyczne funkcje właściwości
 - Funkcje właściwości programu MSBuild
 
 ### <a name="string-property-functions"></a>Funkcje właściwości ciągu
 
-Wszystkie wartości właściwości kompilacji są tylko ciągi. Za pomocą metod ciągów (tekstowych wystąpień) do działania na dowolnych wartościach właściwości. Na przykład można wyodrębnić nazwy dysku (pierwsze trzy znaki) z właściwości kompilacji, który reprezentuje pełną ścieżkę przy użyciu tego kodu:
+Wszystkie wartości właściwości kompilacji są tylko wartościami ciągu. Można użyć metod String (Instance) do działania na dowolnej wartości właściwości. Na przykład można wyodrębnić nazwę dysku (pierwsze trzy znaki) z właściwości build, która reprezentuje pełną ścieżkę przy użyciu tego kodu:
 
 ```fundamental
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
-### <a name="static-property-functions"></a>Funkcje statyczne właściwości
+### <a name="static-property-functions"></a>Statyczne funkcje właściwości
 
-W skrypcie kompilacji można uzyskać dostęp do właściwości i metod statycznych wielu klas systemowych. Można pobrać wartości właściwości statycznej, należy użyć następującej składni, gdzie \<klasy > jest nazwą klasa systemu i \<właściwości > jest nazwą właściwości.
+W skrypcie kompilacji można uzyskać dostęp do właściwości statycznych i metod wielu klas systemowych. Aby uzyskać wartość właściwości statycznej, użyj następującej składni, gdzie \<klasie > jest nazwą klasy systemowej, a właściwość \<> jest nazwą właściwości.
 
 ```fundamental
 $([Class]::Property)
 ```
 
-Na przykład można użyć poniższego kodu do ustawiania właściwości kompilacji do bieżącej daty i godziny.
+Na przykład można użyć poniższego kodu, aby ustawić właściwość kompilacji na bieżącą datę i godzinę.
 
 ```xml
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Wywołać statyczną metodę, należy użyć następującej składni, gdzie \<klasy > jest nazwą klasa systemu \<metody > to nazwa metody, i (\<parametrów >) jest lista parametrów dla metody:
+Aby wywołać metodę statyczną, należy użyć następującej składni, gdzie \<klasie > jest nazwą klasy systemowej, \<Metoda > jest nazwą metody i (\<parametry >) jest listą parametrów dla metody:
 
 ```fundamental
 $([Class]::Method(Parameters))
 ```
 
-Na przykład aby ustawić właściwości kompilacji nowego identyfikatora GUID, służy ten skrypt:
+Na przykład, aby ustawić właściwość kompilacja na nowy identyfikator GUID, można użyć tego skryptu:
 
 ```xml
 <NewGuid>$([System.Guid]::NewGuid())</NewGuid>
 ```
 
-W funkcji właściwość statyczna można użyć dowolnej metody statycznej właściwości tych klas systemowych:
+W funkcjach właściwości statycznych można użyć dowolnej statycznej metody lub właściwości tych klas systemu:
 
 - System.Byte
 - System.Char
@@ -99,8 +99,8 @@ W funkcji właściwość statyczna można użyć dowolnej metody statycznej wła
 
 Ponadto można użyć następujących metod statycznych i właściwości:
 
-- System.Environment::CommandLine
-- System.Environment::ExpandEnvironmentVariables
+- System. Environment:: CommandLine
+- System. Environment:: ExpandEnvironmentVariables
 - System.Environment::GetEnvironmentVariable
 - System.Environment::GetEnvironmentVariables
 - System.Environment::GetFolderPath
@@ -117,17 +117,17 @@ Ponadto można użyć następujących metod statycznych i właściwości:
 - System.IO.File::GetLastWriteTime
 - System.IO.File::ReadAllText
 
-### <a name="calling-instance-methods-on-static-properties"></a>Wywołanie metody wystąpienia w statycznej właściwości
+### <a name="calling-instance-methods-on-static-properties"></a>Wywoływanie metod wystąpienia właściwości statycznych
 
-Jeśli uzyskujesz dostęp do właściwości statycznej, która zwraca wystąpienie obiektu, można wywołać metody wystąpienia tego obiektu. Wywołania metody wystąpienia, należy użyć następującej składni, gdzie \<klasy > jest nazwą klasa systemu \<właściwości > jest nazwą właściwości \<— metoda > to nazwa metody, i (\<parametrów >) jest lista parametrów dla metody:
+Jeśli uzyskujesz dostęp do właściwości statycznej, która zwraca wystąpienie obiektu, można wywołać metody instancji tego obiektu. Aby wywołać metodę wystąpienia, użyj następującej składni, gdzie \<klasie > jest nazwą klasy systemowej, \<Właściwość > jest nazwą właściwości, \<Metoda > jest nazwą metody, a (\<parametry >) jest listą parametrów dla metody:
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
 ```
 
-Nazwa klasy musi być w pełni kwalifikowaną nazwą zawierającą przestrzeń nazw.
+Nazwa klasy musi być w pełni kwalifikowana z przestrzenią nazw.
 
-Na przykład można użyć poniższego kodu do ustawiania właściwości kompilacji do bieżącej daty już dziś.
+Na przykład można użyć poniższego kodu, aby ustawić właściwość kompilacja na bieżącą datę dzisiejszą.
 
 ```xml
 <Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
@@ -135,75 +135,75 @@ Na przykład można użyć poniższego kodu do ustawiania właściwości kompila
 
 ### <a name="msbuild-property-functions"></a>Funkcje właściwości programu MSBuild
 
-Kilka metod statycznych w kompilacji możliwy jest zapewnienie operacje arytmetyczne, bitowe logicznej i obsługi znaków ucieczki. Możesz uzyskać dostęp do tych metod przy użyciu następującej składni, gdzie \<metody > jest nazwą metody i (\<parametrów >) jest lista parametrów dla metody.
+Można uzyskać dostęp do kilku metod statycznych w kompilacji, aby zapewnić obsługę znaków arytmetycznych, koniunkcji logicznej i ucieczki. Dostęp do tych metod uzyskuje się za pomocą następującej składni, gdzie \<Metoda > jest nazwą metody i (\<parametry >) jest listą parametrów dla metody.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
 ```
 
-Na przykład aby dodać ze sobą dwie właściwości, które mają wartości liczbowe, należy użyć następującego kodu.
+Aby na przykład dodać dwa właściwości, które mają wartości liczbowe, użyj poniższego kodu.
 
 ```fundamental
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
-Poniżej przedstawiono listę funkcji właściwości programu MSBuild:
+Poniżej znajduje się lista funkcji właściwości programu MSBuild:
 
 |Sygnatura funkcji|Opis|
 |------------------------|-----------------|
-|dwukrotnie Dodaj (double, podwójne b)|Dodaj dwie wartości podwójnej precyzji.|
-|czas dodawania (long, długie b)|Dodaj dwa wyroby długie.|
-|Double odejmowania (double, podwójne b)|Odjąć dwie wartości podwójnej precyzji.|
-|długi odejmowania (long, długie b)|Odejmij dwóch wyroby długie.|
-|Double mnożenie (double, podwójne b)|Mnożenie dwóch wartości podwójnej precyzji.|
-|długi mnożenie (long, długi b)|Mnożenie dwóch wyroby długie.|
-|Podziel Double (double, podwójne b)|Dzieli dwie wartości podwójnej precyzji.|
-|czas podzielić (long, długi b)|Dzielenie dwóch wyroby długie.|
-|podwójne Modulo (double, podwójne b)|Modulo dwie wartości podwójnej precyzji.|
-|długi Modulo (long, długi b)|Modulo dwóch wyroby długie.|
-|ciąg Escape(string unescaped)|Znak ucieczki ciągu zgodnie z regułami ucieczki w MSBuild.|
-|ciąg (string, poprzedzone znakiem zmiany znaczenia) Unescape|Unescape — ciągu zgodnie z regułami ucieczki w MSBuild.|
-|int BitwiseOr (int, int pierwszego, drugiego)|Wykonania bitowej `OR` pierwszego i drugiego (pierwszy &#124; drugiego).|
-|int BitwiseAnd (int, int pierwszego, drugiego)|Wykonania bitowej `AND` na pierwszym i drugim (pierwszy i drugi).|
-|int BitwiseXor (int, int pierwszego, drugiego)|Wykonania bitowej `XOR` pierwszego i drugiego (pierwszy ^ drugiego).|
-|int BitwiseNot(int first)|Wykonaj bitowej `NOT` (~ pierwszy).|
-|wartość logiczna IsOsPlatform (platformString ciągu)|Określ, czy bieżąca Platforma systemu operacyjnego jest `platformString`. `platformString` Musisz być członkiem <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike()|Wartość true, jeśli bieżący system operacyjny jest systemu Unix.|
-|ciąg NormalizePath (ścieżka params ciąg [])|Pobiera pełną ścieżkę postaci kanonicznej podana ścieżka i gwarantuje, że zawiera ona znaki separatora katalogu poprawny w bieżącym systemie operacyjnym.|
-|ciąg NormalizeDirectory (ścieżka params ciąg [])|Pobiera pełną ścieżkę postaci kanonicznej podany katalog i zapewnia zawiera znaki separatora katalogu poprawny dla bieżącego systemu operacyjnego, przy jednoczesnym zapewnieniu jej posiada na końcu ukośnik.|
-|ciąg EnsureTrailingSlash(string path)|Jeśli w podanej ścieżce nie ma ukośnika, dodać go. Jeśli ścieżka jest ciągiem pustym, nie powoduje modyfikacji go.|
-|ciąg GetPathOfFileAbove (plik ciąg, ciąg startingDirectory)|Wyszukiwanie plików na podstawie pliku kompilacji bieżącego lokalizacji lub na podstawie `startingDirectory`, jeśli określony.|
-|GetDirectoryNameOfFileAbove (string startingDirectory, string, nazwa_pliku)|Lokalizuje plik w katalogu wskazanym lub lokalizacji w strukturze katalogów powyżej tego katalogu.|
-|ciąg MakeRelative (basePath ciąg, ciąg ścieżki)|Sprawia, że `path` względem `basePath`. `basePath` musi być bezwzględna katalogu. Jeśli `path` nie mogą być wprowadzane względną, jest zwracana verbatim. Podobnie jak `Uri.MakeRelativeUri`.|
-|ciąg ValueOrDefault (conditionValue ciąg, ciąg defaultValue)|Zwraca ciąg w parametrze "defaultValue" tylko wtedy, gdy parametr "conditionValue" jest pusta, w przeciwnym razie, zwraca conditionValue wartość.|
+|podwójne dodanie (podwójne a, podwójne b)|Dodaj dwa podwojone.|
+|długie dodanie (Long a, Long b)|Dodaj dwa długie.|
+|podwójne odejmowanie (podwójne a, podwójne b)|Odejmij dwa podwójnej precyzji.|
+|Długa odejmowanie (Long a, Long b)|Odejmij dwie długości.|
+|Podwójna pomnóż (podwójna a, Double b)|Pomnóż dwa podwojone.|
+|Long pomnóż (Long a, Long b)|Pomnóż dwie długości.|
+|podwójne dzielenie (podwójne a, podwójne b)|Podziel dwa podwojone.|
+|Długa dzielenie (Long a, Long b)|Podziel dwie długości.|
+|podwójne modulo (Double a, Double b)|Dwukrotne dzielenie modulo.|
+|długie modulo (Long a, Long b)|Modulo dwa długie.|
+|ciąg ucieczki (ciąg niezmieniony)|Wypróbowanie ciągu zgodnie z regułami ucieczki MSBuild.|
+|ciąg Unescape (ciąg ucieczki)|Usuń znak ucieczki, zgodnie z regułami ucieczki MSBuild.|
+|int bitowego (int First, int Second)|Wykonaj `OR` bitowe w pierwszej i drugiej (pierwszej &#124; sekund).|
+|int BitwiseAnd (int First, int Second)|Wykonaj `AND` bitowe w pierwszej i drugiej (pierwszy & sekunda).|
+|int BitwiseXor (int First, int Second)|Wykonaj `XOR` bitowe w pierwszej i drugiej (pierwszy ^ s).|
+|int BitwiseNot (najpierw int)|Wykonaj `NOT` bitową (najpierw ~).|
+|bool IsOsPlatform (ciąg platformString)|Określ, czy bieżąca platforma systemu operacyjnego jest `platformString`. `platformString` musi być członkiem <xref:System.Runtime.InteropServices.OSPlatform>.|
+|bool IsOSUnixLike ()|Ma wartość true, jeśli bieżący system operacyjny jest systemem UNIX.|
+|String NormalizePath (ciąg parametrów [] ścieżka)|Pobiera kanoniczną pełną ścieżkę podanej ścieżki i zapewnia, że zawiera poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.|
+|String NormalizeDirectory (ciąg parametrów [] ścieżka)|Pobiera kanoniczną pełną ścieżkę do podanego katalogu i zapewnia, że zawiera poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego, przy zapewnieniu, że ma końcowy ukośnik.|
+|ciąg EnsureTrailingSlash (ścieżka ciągu)|Jeśli dana ścieżka nie ma końcowego ukośnika, Dodaj ją. Jeśli ścieżka jest pustym ciągiem, nie modyfikuje go.|
+|ciąg GetPathOfFileAbove (plik String, ciąg startingDirectory)|Wyszukuje plik na podstawie lokalizacji bieżącego pliku kompilacji lub na podstawie `startingDirectory`, jeśli zostanie określony.|
+|GetDirectoryNameOfFileAbove (ciąg startingDirectory, ciąg fileName)|Znajdź plik w katalogu określonym lub lokalizacji w strukturze katalogów powyżej tego katalogu.|
+|String MakeRelative (ciąg basePath, ścieżka ciągu)|Powoduje, że `path` względne `basePath`. `basePath` musi być katalogiem bezwzględnym. Jeśli nie można nawiązać `path`, zostanie zwrócony Verbatim. Podobne do `Uri.MakeRelativeUri`.|
+|String ValueOrDefault (ciąg conditionValue, String DefaultValue)|Zwróć ciąg w parametrze "DefaultValue" tylko wtedy, gdy parametr "conditionValue" jest pusty, w przeciwnym razie Zwróć wartość conditionValue.|
 
-## <a name="nested-property-functions"></a>Funkcje zagnieżdżonych właściwości
+## <a name="nested-property-functions"></a>Funkcje właściwości zagnieżdżonych
 
-Można łączyć funkcje właściwości formularza bardziej złożone funkcje, co ilustruje poniższy przykład.
+Można połączyć funkcje właściwości, aby tworzyć bardziej złożone funkcje, jak pokazano w poniższym przykładzie.
 
 ```fundamental
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
-W tym przykładzie zwraca wartość <xref:System.IO.FileAttributes> `Archive` bitowych (32 lub 0) plik, na podstawie przez ścieżkę `tempFile`. Należy zauważyć, że wartości wyliczenia danych nie może występować według nazwy w obrębie funkcji właściwości. Zamiast tego należy użyć wartości liczbowej (32).
+Ten przykład zwraca wartość <xref:System.IO.FileAttributes>`Archive` bit (32 lub 0) pliku podanym przez `tempFile`ścieżki. Zauważ, że wartości wyliczane danych nie mogą występować według nazwy w ramach funkcji właściwości. Zamiast tego należy użyć wartości liczbowej (32).
 
-Metadane mogą również zostać wyświetlony w funkcjach zagnieżdżonych właściwości. Aby uzyskać więcej informacji, zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).
+Metadane mogą być również wyświetlane w zagnieżdżonych funkcjach właściwości. Aby uzyskać więcej informacji, zobacz Tworzenie [pakietów wsadowych](../msbuild/msbuild-batching.md).
 
-## <a name="msbuild-doestaskhostexist"></a>MSBuild DoesTaskHostExist
+## <a name="msbuild-doestaskhostexist"></a>DoesTaskHostExist MSBuild
 
-`DoesTaskHostExist` Właściwości w programie MSBuild:: gettotalsize() zwróciło czy hosta zadań jest obecnie zainstalowany dla określonych wartości środowiska uruchomieniowego i architektura.
+Funkcja właściwości `DoesTaskHostExist` w programie MSBuild zwraca, czy host zadania jest aktualnie zainstalowany dla określonych wartości środowiska uruchomieniowego i architektury.
 
-Funkcja ta właściwość ma następującą składnię:
+Ta funkcja właściwości ma następującą składnię:
 
 ```fundamental
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
-## <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash
+## <a name="msbuild-ensuretrailingslash"></a>EnsureTrailingSlash MSBuild
 
-`EnsureTrailingSlash` Funkcja właściwości w programie MSBuild dodaje znaku ukośnika na końcu, jeśli jeszcze nie istnieje.
+Funkcja właściwości `EnsureTrailingSlash` w programie MSBuild dodaje końcowy ukośnik, jeśli jeszcze nie istnieje.
 
-Funkcja ta właściwość ma następującą składnię:
+Ta funkcja właściwości ma następującą składnię:
 
 ```fundamental
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
@@ -211,9 +211,9 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 
 ## <a name="msbuild-getdirectorynameoffileabove"></a>MSBuild GetDirectoryNameOfFileAbove
 
-MSBuild `GetDirectoryNameOfFileAbove` funkcji właściwości szuka plików w katalogach powyżej bieżącego katalogu w ścieżce.
+Funkcja właściwości `GetDirectoryNameOfFileAbove` MSBuild szuka pliku w katalogach znajdujących się powyżej bieżącego katalogu w ścieżce.
 
- Funkcja ta właściwość ma następującą składnię:
+ Ta funkcja właściwości ma następującą składnię:
 
 ```fundamental
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
@@ -227,21 +227,21 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-`GetPathOfFileAbove` Właściwości w programie MSBuild:: gettotalsize() zwróciło ścieżkę do pliku bezpośrednio po tym. Jest funkcjonalnym odpowiednikiem wywołania
+Funkcja właściwości `GetPathOfFileAbove` w programie MSBuild zwraca ścieżkę do pliku bezpośrednio poprzedzającego ten plik. Jest on funkcjonalnie równoważny z wywołaniem
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
 ```
 
-Funkcja ta właściwość ma następującą składnię:
+Ta funkcja właściwości ma następującą składnię:
 
 ```fundamental
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
-## <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue
+## <a name="msbuild-getregistryvalue"></a>GetRegistryValue MSBuild
 
-MSBuild `GetRegistryValue` właściwość:: gettotalsize() zwróciło wartość klucza rejestru. Ta funkcja przyjmuje dwa argumenty, nazwę klucza i nazwę wartości i zwraca wartość z rejestru. Jeśli nie określisz nazwy wartości jest zwracana wartość domyślna.
+Funkcja właściwości `GetRegistryValue` MSBuild zwraca wartość klucza rejestru. Ta funkcja przyjmuje dwa argumenty, nazwę klucza i nazwę wartości oraz zwraca wartość z rejestru. Jeśli nie określisz nazwy wartości, zwracana jest wartość domyślna.
 
 W poniższych przykładach pokazano, jak ta funkcja jest używana:
 
@@ -253,39 +253,39 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
 
-MSBuild `GetRegistryValueFromView` właściwość funkcja pobiera dane rejestru systemu podanej w kluczu rejestru, wartości oraz jeden lub więcej uporządkowane widoków rejestru. Klucz i wartość są przeszukiwane w każdym widoku rejestru w kolejności dopóki nie zostały znalezione.
+Funkcja właściwości `GetRegistryValueFromView` MSBuild pobiera dane rejestru systemowego, uwzględniając klucz rejestru, wartość i co najmniej jeden uporządkowany widok rejestru. Klucz i wartość są przeszukiwane w każdym widoku rejestru w kolejności, aż zostaną znalezione.
 
-Składnia dla tej funkcji właściwości jest następująca:
+Składnia tej funkcji właściwości to:
 
 ```fundamental
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Windows 64-bitowy system operacyjny obsługuje **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** klucz rejestru, który przedstawia **HKEY_LOCAL_MACHINE\SOFTWARE** widok rejestru dla aplikacji 32-bitowych.
+System operacyjny Windows 64-bitowy HKEY_LOCAL_MACHINE obsługuje klucz rejestru **\software\wow6432node** , który przedstawia HKEY_LOCAL_MACHINE widok rejestru **\software** dla aplikacji 32-bitowych.
 
-Domyślnie 32-bitowej aplikacji uruchomionych na WOW64 uzyskuje dostęp do widoku 32-bitowego rejestru, a aplikacją 64-bitową uzyskuje dostęp do widoku 64-bitowego rejestru.
+Domyślnie aplikacja 32-bitowa działająca w emulatorze WOW64 uzyskuje dostęp do widoku rejestru 32-bitowego, a aplikacja 64-bit uzyskuje dostęp do widoku rejestru 64-bitowego.
 
 Dostępne są następujące widoki rejestru:
 
 |Widok rejestru|Definicja|
 |-------------------|----------------|
-|RegistryView.Registry32|Widok rejestru 32-bitowej aplikacji.|
-|RegistryView.Registry64|Widok rejestru 64-bitowych aplikacji.|
-|RegistryView.Default|Widok rejestru, który pasuje do procesu, który aplikacja jest uruchomiona na.|
+|RegistryView.Registry32|Widok rejestru aplikacji 32-bitowych.|
+|RegistryView.Registry64|Widok rejestru aplikacji 64-bitowych.|
+|RegistryView.Default|Widok rejestru, który jest zgodny z procesem, w którym działa aplikacja.|
 
-Oto przykład.
+Poniżej przedstawiono przykład.
 
  ```fundamental
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-pobiera **SLRuntimeInstallPath** danych **ReferenceAssemblies** klucza wyszukiwania pierwsze, w widoku 64-bitowego rejestru, a następnie w widoku rejestrów 32-bitowych.
+Pobiera dane **SLRuntimeInstallPath** klucza **ReferenceAssemblies** , najpierw szukając w widoku rejestru 64-bitowego, a następnie w widoku rejestru 32-bitowego.
 
-## <a name="msbuild-makerelative"></a>MSBuild MakeRelative
+## <a name="msbuild-makerelative"></a>MakeRelative MSBuild
 
-MSBuild `MakeRelative` właściwość funkcja zwraca ścieżkę względną ścieżkę drugiego względem ścieżki pierwszego. Każda ścieżka może być pliku lub folderu.
+Funkcja właściwości `MakeRelative` MSBuild zwraca ścieżkę względną drugiej ścieżki względem pierwszej ścieżki. Każda ścieżka może być plikiem lub folderem.
 
-Funkcja ta właściwość ma następującą składnię:
+Ta funkcja właściwości ma następującą składnię:
 
 ```fundamental
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
@@ -311,9 +311,9 @@ Output:
 -->
 ```
 
-## <a name="msbuild-valueordefault"></a>MSBuild ValueOrDefault
+## <a name="msbuild-valueordefault"></a>ValueOrDefault MSBuild
 
-MSBuild `ValueOrDefault` właściwość funkcja zwraca pierwszy argument, chyba że jest to wartość null lub jest pusty. Jeśli pierwszy argument ma wartość null lub pusty, funkcja zwraca wartość drugiego argumentu.
+Funkcja właściwości `ValueOrDefault` MSBuild zwraca pierwszy argument, chyba że jest to wartość zerowa lub pusta. Jeśli pierwszy argument ma wartość null lub jest pusty, funkcja zwraca drugi argument.
 
 Poniższy przykład pokazuje, jak ta funkcja jest używana.
 
@@ -342,4 +342,4 @@ Output:
 
 - [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 
-- [Przegląd MSBuild](../msbuild/msbuild.md)
+- [Omówienie programu MSBuild](../msbuild/msbuild.md)

@@ -2,17 +2,17 @@
 title: Wyświetlanie zależności między C++ plikami źródłowymi i plikami nagłówkowymi
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597246"
 ---
 # <a name="code-maps-for-c-projects"></a>Mapy kodu dla C++ projektów
 
@@ -20,7 +20,7 @@ Jeśli chcesz utworzyć dokładniejsze mapy dla C++ projektów, ustaw dla tych p
 
 Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie może nie być możliwe utworzenie map kodu dla plików nagłówkowych ( *. h* lub `#include`), dopóki nie zakończy się aktualizowanie bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
 
-- Aby wyświetlić zależności między wszystkimi plikami źródłowymi i plikami nagłówkowymi w rozwiązaniu, wybierz pozycję **architektura**  > **Generuj Graf plików dołączanych**.
+- Aby wyświetlić zależności między wszystkimi plikami źródłowymi i plikami nagłówkowymi w rozwiązaniu, wybierz pozycję **architektura** > **Generuj Graf plików dołączanych**.
 
    ![Wykres zależności dla kodu natywnego](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -38,7 +38,7 @@ Te elementy nie są obsługiwane w języku C++ C i kodzie:
 
 Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu:
 
-|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
+|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |-|-|-|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
 |Program Visual Studio przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|

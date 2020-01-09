@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów z błędami sieci lub serwera proxy
-description: Znajdź rozwiązania błędów związanych z siecią lub serwerem proxy, które mogą wystąpić podczas instalowania programu Visual Studio lub korzystania z niego za zaporą lub serwerem proxy.
+description: Rozwiązania związane z siecią lub serwer proxy błędy, które można napotkać podczas instalowania lub użyć programu Visual Studio za zaporą lub serwerem proxy.
 ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -10,55 +10,55 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 44f18e64db08efa848c498f8956d61a79c24846d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594464"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego
 
-Mamy rozwiązania typowych błędów związanych z siecią lub serwerem proxy, które mogą wystąpić podczas instalowania programu Visual Studio lub korzystania z niego za zaporą lub serwerem proxy.
+Mamy rozwiązań dla najbardziej typowe błędy związane z siecią lub serwera proxy, które można napotkać podczas instalowania lub używania programu Visual Studio za zaporą lub serwerem proxy.
 
-## <a name="error-proxy-authorization-required"></a>Błąd: "wymagane autoryzacja serwera proxy"
+## <a name="error-proxy-authorization-required"></a>Błąd: "serwer Proxy wymaga autoryzacji"
 
-Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem za pomocą serwera proxy, a serwer proxy blokuje wywołania, które program Visual Studio wprowadza do niektórych zasobów sieciowych.
+Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem za pośrednictwem serwera proxy i serwer proxy blokuje wywołania, które program Visual Studio sprawia, że do niektórych zasobów sieciowych.
 
 ### <a name="to-fix-this-proxy-error"></a>Aby naprawić ten błąd serwera proxy
 
-- Uruchom ponownie program Visual Studio. Powinno zostać wyświetlone okno dialogowe uwierzytelnianie serwera proxy. Wprowadź swoje poświadczenia po wyświetleniu monitu w oknie dialogowym.
+- Uruchom ponownie program Visual Studio. Powinna zostać wyświetlona okno dialogowe uwierzytelniania serwera proxy. Wprowadź swoje poświadczenia, po wyświetleniu monitu w oknie dialogowym.
 
 - Jeśli ponowne uruchomienie programu Visual Studio nie rozwiąże problemu, może to oznaczać, że serwer proxy nie wyświetli monitu o&#47;&#47;podanie poświadczeń dla adresów http: &#42;go.Microsoft.com, ale jest to dla adresów visualStudio.Microsoft.com. W przypadku tych serwerów rozważ dodanie następujących adresów URL do listy dozwolonych, aby odblokować wszystkie scenariusze logowania w programie Visual Studio:
 
-  - &#42;. windows.net
+  - &#42;.windows.net
 
-  - &#42;. microsoftonline.com
+  - &#42;.microsoftonline.com
 
-  - &#42;. visualstudio.microsoft.com
+  - &#42;.visualstudio.microsoft.com
 
-  - &#42;. microsoft.com
+  - &#42;.microsoft.com
 
-  - &#42;. live.com
+  - &#42;.live.com
 
-- Można w przeciwnym razie usunąć adres http&#47;&#47;: go.Microsoft.com z listy dozwolonych, tak aby w oknie dialogowym uwierzytelniania serwera proxy pojawia się zarówno adres&#47;&#47;http: go.Microsoft.com, jak i punkty końcowe serwera, gdy program Visual Studio jest uruchomieniu.
+- Można w przeciwnym razie usunąć adres http&#47;&#47;: go.Microsoft.com z listy dozwolonych, tak aby w oknie dialogowym uwierzytelniania serwera proxy pojawia się zarówno adres&#47;&#47;http: go.Microsoft.com, jak i punkty końcowe serwera po ponownym uruchomieniu programu Visual Studio.
 
-  Oraz
+  -LUB-
 
-- Jeśli chcesz użyć domyślnych poświadczeń z serwerem proxy, możesz wykonać następujące czynności:
+- Jeśli chcesz używać Twoich poświadczeń domyślne na serwerze proxy, należy wykonać następujące czynności:
 
 ::: moniker range="vs-2017"
 
-  1. Znajdź **devenv. exe. config** (plik konfiguracyjny devenv. exe) w: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** lub **% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
+  1. Znajdź **devenv.exe.config** (plik devenv.exe w konfiguracji) w: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** lub **% ProgramFiles (x86) %\Microsoft Wizualne Studio\2017\Enterprise\Common7\IDE**.
 
-  2. W pliku konfiguracji Znajdź blok `<system.net>`, a następnie Dodaj następujący kod:
+  2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj ten kod:
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
@@ -66,7 +66,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
       </defaultProxy>
       ```
 
-      Należy wstawić prawidłowy adres serwera proxy dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
+      Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
      > Aby uzyskać więcej informacji, zobacz [&lt;defaultProxy&gt; elementu (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [&lt;elementu&gt; proxy (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
@@ -77,7 +77,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
   1. Znajdź **devenv. exe. config** (plik konfiguracyjny devenv. exe) w: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** lub **% ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
 
-  2. W pliku konfiguracji Znajdź blok `<system.net>`, a następnie Dodaj następujący kod:
+  2. Plik konfiguracyjny zawiera `<system.net>` zablokować, a następnie dodaj ten kod:
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
@@ -85,7 +85,7 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
       </defaultProxy>
       ```
 
-      Należy wstawić prawidłowy adres serwera proxy dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
+      Adres serwera proxy poprawne należy wstawić dla sieci w `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
      > Aby uzyskać więcej informacji, zobacz [&lt;defaultProxy&gt; elementu (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) i [&lt;elementu&gt; proxy (Ustawienia sieci)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
@@ -94,44 +94,44 @@ Ten błąd występuje zazwyczaj, gdy użytkownicy są połączeni z Internetem z
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Błąd: "Połączenie podstawowe zostało zamknięte"
 
-Jeśli używasz programu Visual Studio w sieci prywatnej, która ma zaporę, program Visual Studio może nie być w stanie połączyć się z niektórymi zasobami sieciowymi. Te zasoby mogą obejmować Azure DevOps Services logowania i licencjonowania, NuGet i usług platformy Azure. Jeśli program Visual Studio nie może nawiązać połączenia z jednym z tych zasobów, może zostać wyświetlony następujący komunikat o błędzie:
+Jeśli używasz programu Visual Studio w sieci prywatnej z zaporą, Visual Studio nie można nawiązać połączenia z niektórych zasobów sieciowych. Te zasoby mogą obejmować usługom DevOps platformy Azure do logowania i licencjonowania NuGet i usług platformy Azure. Visual Studio nie może połączyć się z tych zasobów, może zostać wyświetlony następujący komunikat o błędzie:
 
   **Połączenie podstawowe zostało zamknięte: Wystąpił nieoczekiwany błąd podczas wysyłania**
 
-Program Visual Studio używa protokołu Transport Layer Security (TLS) 1,2 do nawiązywania połączenia z zasobami sieciowymi. Urządzenia zabezpieczeń w niektórych sieciach prywatnych blokują niektóre połączenia z serwerem, gdy program Visual Studio używa protokołu TLS 1,2.
+Visual Studio używa protokołu Transport Layer Security (TLS) 1.2, połączyć się z zasobami sieciowymi. Gdy program Visual Studio używa protokołu TLS 1.2, urządzenia zabezpieczeń w prywatnych sieciach zablokować niektóre połączenia z serwerem.
 
 ### <a name="to-fix-this-connection-error"></a>Aby naprawić ten błąd połączenia
 
 Włącz połączenia dla następujących adresów URL:
 
-- https:&#47;&#47;Management.Core.Windows.NET
+- https:&#47;&#47;management.core.windows.net
 
-- https:&#47;&#47;App.vssps.VisualStudio.com
+- https:&#47;&#47;app.vssps.visualstudio.com
 
 - https:&#47;&#47;login.microsoftonline.com
 
-- https:&#47;&#47;login.Live.com
+- https:&#47;&#47;login.live.com
 
-- https:&#47;&#47;go.Microsoft.com
+- https:&#47;&#47;go.microsoft.com
 
-- https:&#47;&#47;Graph.Windows.NET
+- https:&#47;&#47;graph.windows.net
 
-- https:&#47;&#47;App.vsspsext.VisualStudio.com
+- https:&#47;&#47;app.vsspsext.visualstudio.com
 
-- &#42;. azurewebsites.net (dla połączeń platformy Azure)
+- &#42;. azurewebsites.net (dla połączenia platformy Azure)
 
-- &#42;. visualstudio.microsoft.com
+- &#42;.visualstudio.microsoft.com
 
-- cdn.vsassets.io (hosty usługi Content Delivery Network lub sieci CDN, zawartość)
+- CDN.vsassets.IO (hosty usługa content delivery network lub sieci CDN, zawartości)
 
-- &#42;. gallerycdn.vsassets.io (hostuje rozszerzenia Azure DevOps Services)
+- &#42;. gallerycdn.vsassets.io (hosty rozszerzenia usługom DevOps platformy Azure)
 
-- static2.sharepointonline.com (hostuje zasoby używane przez program Visual Studio w zestawie Office UI Fabric Kit, takie jak czcionki)
+- static2.sharepointonline.com (hosty zasobów używanych przez program Visual Studio w zestawie danych sieci szkieletowej interfejsu użytkownika pakietu Office, takie jak czcionki)
 
-- &#42;. nuget.org (dla połączeń NuGet)
+- &#42;. nuget.org (w przypadku połączenia narzędzia NuGet)
 
   > [!NOTE]
-  > Adresy URL serwera NuGet należące do użytkownika mogą nie być uwzględnione na tej liście. Możesz sprawdzić, czy serwery NuGet są używane w%APPData%\Nuget\NuGet.Config.
+  > Prywatnego, że adresy URL serwerów NuGet mogą nie zostać zawarte na tej liście. Możesz sprawdzić, czy dla serwerów NuGet, które korzystasz z % APPData%\Nuget\NuGet.Config.
 
 ## <a name="error-failed-to-parse-id-from-parent-process"></a>Błąd: "nie można przeanalizować identyfikatora z procesu nadrzędnego"
 
@@ -151,5 +151,5 @@ Możesz użyć polecenia `net use` lub zmienić ustawienia funkcji Kontrola kont
 ## <a name="see-also"></a>Zobacz także
 
 * [Instalowanie i używanie programu Visual Studio za zaporą lub serwerem proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
 * [Instalowanie programu Visual Studio](install-visual-studio.md)

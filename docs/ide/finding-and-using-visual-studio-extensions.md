@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654210"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594412"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Zarządzanie rozszerzeniami dla programu Visual Studio
 
@@ -31,7 +31,7 @@ Aby uzyskać informacje na temat tworzenia rozszerzeń programu Visual Studio, z
 
 ## <a name="extensions-and-updates-dialog-box"></a>Okno dialogowe rozszerzenia i aktualizacje
 
-Za pomocą okna dialogowego **rozszerzenia i aktualizacje** można zainstalować rozszerzenia programu Visual Studio i zarządzać nimi. Aby otworzyć okno **dialogowe rozszerzenia i aktualizacje** , wybierz **pozycję Narzędzia**  > **rozszerzenia i aktualizacje**lub wpisz **rozszerzenia** w polu wyszukiwania **szybkiego uruchamiania** .
+Za pomocą okna dialogowego **rozszerzenia i aktualizacje** można zainstalować rozszerzenia programu Visual Studio i zarządzać nimi. Aby otworzyć okno **dialogowe rozszerzenia i aktualizacje** , wybierz **pozycję Narzędzia** > **rozszerzenia i aktualizacje**lub wpisz **rozszerzenia** w polu wyszukiwania **szybkiego uruchamiania** .
 
 ::: moniker-end
 
@@ -39,7 +39,7 @@ Za pomocą okna dialogowego **rozszerzenia i aktualizacje** można zainstalować
 
 ## <a name="manage-extensions-dialog-box"></a>Okno dialogowe Zarządzanie rozszerzeniami
 
-Za pomocą okna dialogowego **Zarządzanie rozszerzeniami** można instalować rozszerzenia programu Visual Studio i zarządzać nimi. Aby otworzyć okno dialogowe **Zarządzanie rozszerzeniami** , wybierz **rozszerzenia**  > **Zarządzanie rozszerzeniami**. Lub wpisz **rozszerzenia** w polu wyszukiwania i wybierz pozycję **Zarządzaj rozszerzeniami**.
+Za pomocą okna dialogowego **Zarządzanie rozszerzeniami** można instalować rozszerzenia programu Visual Studio i zarządzać nimi. Aby otworzyć okno dialogowe **Zarządzanie rozszerzeniami** , wybierz **rozszerzenia** > **Zarządzanie rozszerzeniami**. Lub wpisz **rozszerzenia** w polu wyszukiwania i wybierz pozycję **Zarządzaj rozszerzeniami**.
 
 ::: moniker-end
 
@@ -55,17 +55,17 @@ Rozszerzenia można zainstalować z [Visual Studio Marketplace](https://marketpl
 
 Aby zainstalować rozszerzenia z poziomu programu Visual Studio:
 
-1. Na stronie **narzędzia**  > **rozszerzenia i aktualizacje**Znajdź rozszerzenie, które chcesz zainstalować. Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukać w oknie **wyszukiwania** .
+1. Na stronie **narzędzia** > **rozszerzenia i aktualizacje**Znajdź rozszerzenie, które chcesz zainstalować. Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukać w oknie **wyszukiwania** .
 
-2. Wybierz pozycję **Pobierz**.
+2. Wybierz przycisk **Download** (Pobierz).
 
    Zaplanowano zainstalowanie rozszerzenia. Rozszerzenie zostanie zainstalowane po zamknięciu wszystkich wystąpień programu Visual Studio.
 
-Podczas próby instalacji rozszerzenia, które ma zależności, instalator sprawdza, czy są one już zainstalowane. Jeśli nie są zainstalowane, okno dialogowe **rozszerzenia i aktualizacje** zawiera listę zależności, które należy zainstalować przed zainstalowaniem rozszerzenia.
+Podczas próby instalacji rozszerzenia, które ma zależności, instalator sprawdza, czy są one już zainstalowane. Jeśli nie są zainstalowane, **rozszerzenia i aktualizacje** okno dialogowe zawiera listę zależności, które muszą być zainstalowane, zanim będzie można zainstalować rozszerzenia.
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Zainstaluj bez korzystania z okna dialogowego rozszerzenia i aktualizacje
 
-Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. Okna dialogowego **narzędzia**  > **rozszerzenia i aktualizacje** nie mogą wykryć tych plików, ale plik *. vsix* można zainstalować przez dwukrotne kliknięcie pliku lub wybranie pliku, a następnie naciśnięcie klawisza **Enter**. Następnie postępuj zgodnie z instrukcjami. Po zainstalowaniu rozszerzenia można użyć okna dialogowego **rozszerzenia i aktualizacje** , aby je włączyć, wyłączyć lub odinstalować.
+Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. Okna dialogowego **narzędzia** > **rozszerzenia i aktualizacje** nie mogą wykryć tych plików, ale plik *. vsix* można zainstalować przez dwukrotne kliknięcie pliku lub wybranie pliku, a następnie naciśnięcie klawisza **Enter**. Następnie postępuj zgodnie z instrukcjami. Jeśli rozszerzenie jest zainstalowane, możesz użyć **rozszerzenia i aktualizacje** okno dialogowe, aby ją włączyć, wyłączyć lub odinstaluj je.
 
 > [!NOTE]
 > - Visual Studio Marketplace zawiera rozszerzenia VSIX i MSI. Okna dialogowe rozszerzenia i aktualizacje nie mogą włączać ani wyłączać rozszerzeń MSI.
@@ -79,9 +79,9 @@ Rozszerzenia można zainstalować z [Visual Studio Marketplace](https://marketpl
 
 Aby zainstalować rozszerzenia z poziomu programu Visual Studio:
 
-1. Na stronie **rozszerzenia**  > **Zarządzanie rozszerzeniami**Znajdź rozszerzenie, które chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukać w oknie **wyszukiwania** ).
+1. Na stronie **rozszerzenia** > **Zarządzanie rozszerzeniami**Znajdź rozszerzenie, które chcesz zainstalować. (Jeśli znasz nazwę lub część nazwy rozszerzenia, możesz wyszukiwać w **wyszukiwania** okna.)
 
-2. Wybierz pozycję **Pobierz**.
+2. Wybierz przycisk **Download** (Pobierz).
 
    Zaplanowano zainstalowanie rozszerzenia. Rozszerzenie zostanie zainstalowane po zamknięciu wszystkich wystąpień programu Visual Studio.
 
@@ -89,7 +89,7 @@ Podczas próby instalacji rozszerzenia, które ma zależności, instalator spraw
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Zainstaluj bez korzystania z okna dialogowego Zarządzanie rozszerzeniami
 
-Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. Okno dialogowe **rozszerzenia**  > **Zarządzanie rozszerzeniami** nie może wykryć tych plików, ale można zainstalować plik *. vsix* , klikając dwukrotnie plik lub wybierając plik i naciskając klawisz **Enter**. Następnie postępuj zgodnie z instrukcjami. Po zainstalowaniu rozszerzenia można użyć okna dialogowego **Zarządzanie rozszerzeniami** , aby je włączyć, wyłączyć lub odinstalować.
+Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępne w lokalizacjach innych niż Visual Studio Marketplace. Okno dialogowe **rozszerzenia** > **Zarządzanie rozszerzeniami** nie może wykryć tych plików, ale można zainstalować plik *. vsix* , klikając dwukrotnie plik lub wybierając plik i naciskając klawisz **Enter**. Następnie postępuj zgodnie z instrukcjami. Po zainstalowaniu rozszerzenia można użyć okna dialogowego **Zarządzanie rozszerzeniami** , aby je włączyć, wyłączyć lub odinstalować.
 
 > [!NOTE]
 > - Visual Studio Marketplace zawiera rozszerzenia VSIX i MSI. Okno dialogowe Zarządzanie rozszerzeniami nie może włączać ani wyłączać rozszerzeń MSI.
@@ -99,26 +99,26 @@ Rozszerzenia, które zostały spakowane w plikach *. vsix* , mogą być dostępn
 
 ## <a name="uninstall-or-disable-an-extension"></a>Odinstaluj lub Wyłącz rozszerzenie
 
-Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lub odinstalować. Wyłączone rozszerzenie jest wciąż zainstalowane, ale nie jest załadowane. Znajdź rozszerzenie, a następnie kliknij przycisk **Odinstaluj** lub **Wyłącz**. Uruchom ponownie program Visual Studio, aby zwolnić wyłączone rozszerzenie.
+Jeśli nie chcesz już dłużej używać rozszerzenia, możesz je wyłączyć lub odinstalować. Wyłączone rozszerzenie jest wciąż zainstalowane, ale nie jest załadowane. Znaleźć rozszerzenia, a następnie kliknij przycisk **Odinstaluj** lub **wyłączyć**. Uruchom ponownie program Visual Studio, aby zwolnić wyłączone rozszerzenie.
 
 > [!NOTE]
 > Rozszerzenia VSIX można wyłączyć, ale nie rozszerzenia, które zostały zainstalowane przy użyciu pliku MSI. Rozszerzenia zainstalowane w pliku MSI można odinstalować tylko.
 
-## <a name="per-user-and-administrative-extensions"></a>Rozszerzenia dla poszczególnych użytkowników i administratorów
+## <a name="per-user-and-administrative-extensions"></a>Rozszerzenia administracyjne i dla poszczególnych użytkowników
 
-Większość rozszerzeń jest dla poszczególnych użytkowników i są instalowane w *%LocalAppData%\Microsoft\VisualStudio \\ < programu Visual Studio w wersji \> \extensions \\* . Niektóre rozszerzenia są rozszerzeniami administracyjnymi i są instalowane w *folderze instalacyjnym programu \<Visual Studio > \Common7\IDE\Extensions \\* .
+Większość rozszerzeń jest dla poszczególnych użytkowników i są instalowane w *%LocalAppData%\Microsoft\VisualStudio\\< programu Visual Studio w wersji\>\Extensions\\* . Niektóre rozszerzenia są rozszerzeniami administracyjnymi i są instalowane w *folderze\<instalacyjnym programu Visual Studio > \Common7\IDE\Extensions\\* folder.
 
-Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników tylko wtedy, gdy program Visual Studio jest uruchamiany z normalnymi uprawnieniami użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone po uruchomieniu programu Visual Studio z podniesionymi uprawnieniami.
+Aby chronić system przed rozszerzeniami, które mogą zawierać błędy lub złośliwy kod, można ograniczyć rozszerzenia dla poszczególnych użytkowników można załadować tylko wtedy, gdy program Visual Studio jest uruchamiany z uprawnieniami zwykłego użytkownika. Oznacza to, że rozszerzenia dla poszczególnych użytkowników są wyłączone po uruchomieniu programu Visual Studio z podniesionymi uprawnieniami.
 
 Aby ograniczyć czas ładowania rozszerzeń dla poszczególnych użytkowników:
 
-1. Otwórz stronę opcje rozszerzeń (**narzędzia**  > **opcje**  > **rozszerzenia** > **środowiska** ).
+1. Otwórz stronę opcje rozszerzeń (**narzędzia** > **opcje** > **rozszerzenia** > **środowiska** ).
 
 2. Wyczyść pole wyboru **Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator** .
 
 3. Uruchom ponownie program Visual Studio.
 
-## <a name="automatic-extension-updates"></a>Automatyczne aktualizacje rozszerzeń
+## <a name="automatic-extension-updates"></a>Aktualizacje automatyczne rozszerzenia
 
 Rozszerzenia są aktualizowane automatycznie, gdy nowa wersja jest dostępna w Visual Studio Marketplace. Nowa wersja rozszerzenia zostanie wykryta i zainstalowana w tle. Przy następnym otwarciu programu Visual Studio zostanie uruchomiona nowa wersja rozszerzenia.
 
@@ -126,15 +126,15 @@ Jeśli chcesz wyłączyć aktualizacje automatyczne, możesz wyłączyć tę fun
 
 ::: moniker range="vs-2017"
 
-- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, wybierz link **Zmień ustawienia rozszerzeń i aktualizacji** w oknie dialogowym **Narzędzia**  > **rozszerzenia i aktualizacje** . W oknie dialogowym **Opcje** Usuń zaznaczenie pola wyboru **automatycznie Aktualizuj rozszerzenia**.
+- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, wybierz link **Zmień ustawienia rozszerzeń i aktualizacji** w oknie dialogowym **Narzędzia** > **rozszerzenia i aktualizacje** . W oknie dialogowym **Opcje** Usuń zaznaczenie pola wyboru **automatycznie Aktualizuj rozszerzenia**.
 
-- Aby wyłączyć aktualizacje automatyczne dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** w okienku szczegółów rozszerzenia po prawej stronie okna dialogowego **rozszerzenia i aktualizacje** .
+- Aby wyłączyć automatyczne aktualizacje dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** opcji w okienku szczegółów rozszerzenia na prawej krawędzi **rozszerzenia i aktualizacje** okna dialogowego.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, należy wybrać łącze **Zmień ustawienia dla rozszerzeń** w oknie dialogowym **rozszerzenia**  > **Zarządzanie rozszerzeniami** . W oknie dialogowym **Opcje** Usuń zaznaczenie pola wyboru **automatycznie Aktualizuj rozszerzenia**.
+- Aby wyłączyć aktualizacje automatyczne dla wszystkich rozszerzeń, należy wybrać łącze **Zmień ustawienia dla rozszerzeń** w oknie dialogowym **rozszerzenia** > **Zarządzanie rozszerzeniami** . W oknie dialogowym **Opcje** Usuń zaznaczenie pola wyboru **automatycznie Aktualizuj rozszerzenia**.
 
 - Aby wyłączyć aktualizacje automatyczne dla określonego rozszerzenia, usuń zaznaczenie pola wyboru **automatycznie Aktualizuj to rozszerzenie** w okienku szczegółów rozszerzenia po prawej stronie okna dialogowego **Zarządzanie rozszerzeniami** .
 
@@ -142,7 +142,7 @@ Jeśli chcesz wyłączyć aktualizacje automatyczne, możesz wyłączyć tę fun
 
 ## <a name="crash-and-unresponsiveness-notifications"></a>Powiadomienia o awarii i braku odpowiedzi
 
-Program Visual Studio powiadamia użytkownika, jeśli podejrzewa, że rozszerzenie dotyczyło awarii podczas poprzedniej sesji. Gdy program Visual Studio ulega awarii, przechowuje stos wyjątków. Przy następnym uruchomieniu programu Visual Studio sprawdzi on stos, rozpoczynając od liścia i przechodząc do bazy. Jeśli program Visual Studio ustali, że ramka należy do modułu, który jest częścią zainstalowanego i włączonego rozszerzenia, wyświetla powiadomienie.
+Program Visual Studio powiadamia użytkownika, jeśli podejrzewa, że rozszerzenie dotyczyło awarii podczas poprzedniej sesji. Visual Studio ulega awarii, są przechowywane stosu wyjątków. Przy następnym uruchomieniu programu Visual Studio sprawdza, czy stosu, rozpoczynając od typu liść i działa na bazie. Jeśli program Visual Studio okaże się, że ramki należy do modułu, który jest częścią rozszerzenia zainstalowane i włączone, wyświetlane jest powiadomienie.
 
 Program Visual Studio powiadamia również o tym, czy podejrzewa, że rozszerzenie jest przyczyną braku odpowiedzi interfejsu użytkownika.
 
@@ -150,27 +150,27 @@ Gdy te powiadomienia są wyświetlane, można zignorować powiadomienie lub wyko
 
 ::: moniker range="vs-2017"
 
-- Wybierz opcję **Wyłącz to rozszerzenie**. Program Visual Studio wyłącza rozszerzenie i pozwala sprawdzić, czy konieczne jest ponowne uruchomienie systemu, aby wyłączenie zaczęło obowiązywać. W razie potrzeby można ponownie włączyć rozszerzenie w oknie dialogowym **narzędzia**  > **rozszerzenia i aktualizacje** .
+- Wybierz **Wyłącz to rozszerzenie**. Visual Studio wyłącza rozszerzenia i informuje o tym, czy należy ponownie uruchomić system wyłączenie zaczęły obowiązywać. W razie potrzeby można ponownie włączyć rozszerzenie w oknie dialogowym **narzędzia** > **rozszerzenia i aktualizacje** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Wybierz opcję **Wyłącz to rozszerzenie**. Program Visual Studio wyłącza rozszerzenie i pozwala sprawdzić, czy konieczne jest ponowne uruchomienie systemu, aby wyłączenie zaczęło obowiązywać. W razie potrzeby można ponownie włączyć rozszerzenie w oknie dialogowym **rozszerzenia**  > **Zarządzanie rozszerzeniami** .
+- Wybierz **Wyłącz to rozszerzenie**. Visual Studio wyłącza rozszerzenia i informuje o tym, czy należy ponownie uruchomić system wyłączenie zaczęły obowiązywać. W razie potrzeby można ponownie włączyć rozszerzenie w oknie dialogowym **rozszerzenia** > **Zarządzanie rozszerzeniami** .
 
 ::: moniker-end
 
 - Wybierz **nigdy nie pokazuj tego komunikatu ponownie**.
 
-  - Jeśli powiadomienie dotyczy awarii w poprzedniej sesji, program Visual Studio nie wyświetla powiadomienia, gdy wystąpi awaria skojarzona z tym rozszerzeniem. Program Visual Studio będzie nadal wyświetlał powiadomienia, gdy nie można skojarzyć z tym rozszerzeniem lub w przypadku awarii lub braku odpowiedzi, które mogą być skojarzone z innymi rozszerzeniami.
+  - Jeśli powiadomienie dotyczy awarii w poprzedniej sesji, program Visual Studio nie wyświetla powiadomienia, gdy wystąpi awaria skojarzona z tym rozszerzeniem. Program Visual Studio w dalszym ciągu będzie powiadomienia w przypadku braku odpowiedzi może być skojarzony z tym rozszerzeniem lub awarie lub braku odpowiedzi, które mogą być skojarzone z innymi rozszerzeniami.
   - Jeśli powiadomienie dotyczy braku odpowiedzi, zintegrowane środowisko programistyczne (IDE) nie pokazuje już powiadomienia, gdy to rozszerzenie jest skojarzone z nieodpowiedzią. Program Visual Studio będzie nadal wyświetlał powiadomienia dotyczące awarii dla tego rozszerzenia oraz powiadomienia dotyczące awarii i nieodpowiedzi dla innych rozszerzeń.
 
 - Wybierz pozycję **Dowiedz się więcej** , aby przejść do tej strony.
 
-- Wybierz przycisk **X** na końcu powiadomienia, aby odrzucić powiadomienie. Nowe powiadomienie pojawi się w przyszłych wystąpieniach rozszerzenia skojarzonego z awarią lub nieodpowiedzią interfejsu użytkownika.
+- Wybierz **X** przycisk na końcu powiadomienie, aby odrzucić powiadomienie. Nowe powiadomienie pojawi się dla przyszłych wystąpień rozszerzenia są skojarzone z awarię lub brak reakcji interfejsu użytkownika.
 
 > [!NOTE]
-> Nieodpowiadający interfejs użytkownika lub powiadomienie o awarii oznacza tylko, że jeden z modułów rozszerzenia znajdował się na stosie, gdy interfejs użytkownika nie odpowiada lub wystąpił błąd. Nie musi to oznaczać, że rozszerzenie było przyczyna. Istnieje możliwość, że rozszerzenie wywołuje kod, który jest częścią programu Visual Studio, co z kolei spowodowało nieodpowiadający interfejs użytkownika lub awarię. Jednak powiadomienie może być nadal przydatne, jeśli rozszerzenie, które doprowadziło do nieodpowiedzi interfejsu użytkownika lub awarii, nie jest ważne dla użytkownika. W takim przypadku wyłączenie rozszerzenia pozwala uniknąć braku odpowiedzi interfejsu użytkownika lub awarii w przyszłości bez wywierania wpływu na wydajność.
+> Powiadomienie sek lub awarii interfejsu użytkownika oznacza tylko, że jeden z modułów rozszerzenia znajdowała się na stosie podczas odpowiadać interfejsu użytkownika lub w przypadku wystąpienia awarii. Nie musi to oznaczać, że rozszerzenia, sama jest przyczyna nadmiernego. Istnieje możliwość, że rozszerzenie wywołuje kod, który jest częścią programu Visual Studio, co z kolei spowodowało nieodpowiadający interfejs użytkownika lub awarię. Jednak powiadomienia nadal może być przydatne, jeśli rozszerzenie, które doprowadziły do awarii lub brak reakcji interfejsu użytkownika nie jest dla Ciebie ważne. W tym przypadku wyłączenie rozszerzenia pozwala uniknąć braku odpowiedzi interfejsu użytkownika lub awaria w przyszłości, bez wywierania wpływu na wydajność.
 
 ## <a name="samples"></a>Przykłady
 
@@ -202,9 +202,9 @@ Za pomocą okna dialogowego **rozszerzenia** > **Zarządzanie rozszerzeniami** m
 
 - Wyświetlanie powiadomień o aktualizacjach, gdy zostaną opublikowane zmiany kodu źródłowego dla zainstalowanych przykładów.
 
-- Zaktualizuj główną kopię zainstalowanego przykładu w przypadku powiadomienia o aktualizacji.
+- Aktualizowanie kopii głównej zainstalowanego przykładu, po powiadomienie o aktualizacji.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com)
+- [Witryna Visual Studio Marketplace](https://marketplace.visualstudio.com)
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)

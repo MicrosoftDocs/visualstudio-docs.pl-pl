@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984267"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597168"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Dostosowywanie i poszerzanie języka specyficznego dla domeny
 
@@ -41,7 +41,7 @@ Zestaw SDK programu Visual Studio Modeling and wizualizacji (VMSDK) udostępnia 
 |Ustaw obraz tła na dowolnym kształcie|Zastąp InitializeInstanceResources (), aby dodać kotwicę ImageField.|
 |Zagnieżdżanie kształtów do dowolnej głębokości|Skonfiguruj cykliczne drzewo osadzania. Zdefiniuj BoundsRules — tak, aby zawierały kształty.|
 |Dołącz łączniki dla stałych punktów na granicy elementu.|Zdefiniuj osadzone elementy terminalu reprezentowane przez małe porty na diagramie. Użyj BoundsRules —, aby naprawić porty w miejscu. Zobacz przykład diagramu obwodowego w temacie [Wizualizacja i modelowanie SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
-|Pole tekstowe wyświetla wartość pochodną od innych wartości.|Zamapuj tekst dekoratora na Właściwość obliczeniową lub niestandardową domeny magazynu. Aby uzyskać więcej informacji, zobacz [właściwości magazynu obliczeniowego i niestandardowego](../modeling/calculated-and-custom-storage-properties.md).|
+|Pole tekstowe wyświetla wartość pochodną od innych wartości.|Zamapuj tekst dekoratora na Właściwość obliczeniową lub niestandardową domeny magazynu. Aby uzyskać więcej informacji, zobacz [obliczeniowe i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagowanie zmian między elementami modelu lub między kształtami|Zobacz [Walidacja w języku specyficznym dla domeny](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagowanie zmian do zasobów, takich jak inne rozszerzenia programu Visual Studio, poza sklepem.|Zobacz [programy obsługi zdarzeń propagują zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |W oknie właściwości są wyświetlane właściwości powiązanego elementu.|Skonfiguruj przekazywanie właściwości. Zobacz [Dostosowywanie okna właściwości](../modeling/customizing-the-properties-window.md).|
@@ -53,7 +53,7 @@ Zestaw SDK programu Visual Studio Modeling and wizualizacji (VMSDK) udostępnia 
 |Usuń, Zmień element nadrzędny lub Połącz ponownie powiązane elementy po usunięciu elementu.|Ustaw wartość opcji **Usuń propagacje** roli relacji. W przypadku bardziej złożonych efektów Zastąp metody `ShouldVisitRelationship` i `ShouldVisitRolePlayer` w klasie `MyDslDeleteClosure` zdefiniowanej w **DomainModel.cs**.|
 |Zachowanie układu kształtu i wyglądu przy kopiowaniu i przeciąganiu.|Dodaj kształty i łączniki do skopiowanego `ElementGroupPrototype`. Najbardziej wygodną metodą przesłonięcia jest `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
 |Wklej kształty w wybranej lokalizacji, na przykład w bieżącym położeniu kursora.|Zastąp `ClipboardCommandSet.ProcessOnCopy()`, aby użyć wersji `ElementOperations.Merge().` określonej dla lokalizacji, zobacz [Dostosowywanie zachowania kopiowania](../modeling/customizing-copy-behavior.md).|
-|Utwórz dodatkowe linki przy wklejaniu|Zastąp ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Utwórz dodatkowe linki przy wklejaniu|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Włącz przeciąganie i upuszczanie z tego diagramu, inne językami DSL i elementy systemu Windows|Zobacz [jak: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Umożliwia przeciągnięcie kształtu lub narzędzia do kształtu podrzędnego, takiego jak port, tak jakby był przeciągany do elementu nadrzędnego.|Zdefiniuj dyrektywę scalania elementów w klasie obiektu docelowego, aby przesłać do przodu usunięty obiekt do elementu nadrzędnego. Zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).|
 |Umożliwia przeciągnięcie kształtu lub narzędzia do kształtu i dodanie dodatkowych linków lub obiektów. Na przykład, aby zezwolić na porzucenie komentarza do elementu, do którego ma być ono połączone.|Zdefiniuj dyrektywę scalenia elementów w klasie domeny docelowej i zdefiniuj linki do wygenerowania. W złożonych przypadkach można dodać kod niestandardowy. Zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).|

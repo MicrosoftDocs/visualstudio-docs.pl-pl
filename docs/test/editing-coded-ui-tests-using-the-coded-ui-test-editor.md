@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664998"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589659"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika
 
@@ -27,7 +27,7 @@ Edytor kodowanego testu interfejsu użytkownika pozwala łatwo modyfikować kodo
 **Requirements**
 
 - Visual Studio Enterprise
-- Składnik kodowanego testu interfejsu użytkownika
+- Kodowane składnik testu interfejsu użytkownika
 
 ## <a name="features-of-the-coded-ui-test-editor"></a>Funkcje edytora kodowanego testu interfejsu użytkownika
 
@@ -88,7 +88,7 @@ Po zakończeniu modyfikacji Zapisz zmiany w pliku *UIMap. Designer* , wybierają
 
 - Jeśli okno **Właściwości** nie jest wyświetlane, naciśnij i przytrzymaj klawisz **Alt** podczas naciskania klawisza **Enter**lub naciśnij klawisz **F4**.
 
-- Aby cofnąć wprowadzone zmiany właściwości, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl** +**Z**.
+- Aby cofnąć wprowadzone zmiany właściwości, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl**+**Z**.
 
 - Aby otworzyć narzędzie **Znajdź i Zamień** w programie Visual Studio, można użyć przycisku **Znajdź** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika. Następnie można użyć kontrolki **Znajdź** , aby zlokalizować akcję interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. Na przykład możesz spróbować znaleźć przycisk "kliknij" Login' ". Może to być przydatne w przypadku dużych testów. Nie można użyć funkcji Replace w narzędziu **Znajdź i Zamień** w edytorze kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz Znajdowanie formantów w [Znajdowanie i zamienianie tekstu](../ide/finding-and-replacing-text.md).
 
@@ -117,19 +117,19 @@ W okienku **Akcja interfejsu użytkownika** rozwiń metodę testową, która ma 
 Po zakończeniu dzielenia metody Zapisz zmiany w pliku *UIMap. Designer* , wybierając pozycję **Zapisz** na pasku narzędzi programu Visual Studio.
 
 > [!WARNING]
-> W przypadku podziału metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, która ma zostać utworzona, jeśli nadal chcesz, aby te akcje interfejsu użytkownika zostały uwzględnione. Podczas dzielenia metody zostanie wyświetlone okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że musisz zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, którą chcesz utworzyć. Wybierz opcję **tak**.
+> W przypadku podziału metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, która ma zostać utworzona, jeśli nadal chcesz, aby te akcje interfejsu użytkownika zostały uwzględnione. Podczas dzielenia metody zostanie wyświetlone okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że musisz zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, którą chcesz utworzyć. Wybierz **tak**.
 
 ### <a name="tips"></a>Porady
 
-- Aby cofnąć podział, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl** +**Z**.
+- Aby cofnąć podział, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl**+**Z**.
 
 - Nową metodę można zmienić. Wybierz go w okienku **akcje interfejsu użytkownika** i wybierz przycisk **Zmień nazwę** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.
 
-   —lub—
+   lub
 
    Otwórz menu skrótów dla nowej metody testowej i wybierz polecenie **Zmień nazwę**.
 
-   Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że należy zmodyfikować kod odwołujący się do tej metody. Wybierz opcję **tak**.
+   Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że należy zmodyfikować kod odwołujący się do tej metody. Wybierz **tak**.
 
 ## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a>Przenieś metodę testową do pliku UIMap, aby ułatwić dostosowanie
 
@@ -140,11 +140,11 @@ W okienku **Akcja interfejsu użytkownika** wybierz metodę testową, która ma 
 Po zakończeniu przeniesienia metody Zapisz zmiany w pliku *UIMap. Designer* , wybierając pozycję **Zapisz** na pasku narzędzi programu Visual Studio.
 
 > [!WARNING]
-> Po przeniesieniu metody nie można już jej edytować za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Podczas przenoszenia metody wyświetlane jest okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku *UIMap. UITest* do pliku *UIMap.cs* lub *UIMap. vb* i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz opcję **tak**.
+> Po przeniesieniu metody nie można już jej edytować za pomocą edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Podczas przenoszenia metody wyświetlane jest okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku *UIMap. UITest* do pliku *UIMap.cs* lub *UIMap. vb* i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
 
 ### <a name="tips"></a>Porady
 
-Aby cofnąć przeniesienie, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl** +**Z**. Należy jednak ręcznie usunąć kod z pliku *UIMap.cs* lub *UIMap. vb* .
+Aby cofnąć przeniesienie, wybierz polecenie **Cofnij** z menu **Edycja** lub naciśnij klawisz **Ctrl**+**Z**. Należy jednak ręcznie usunąć kod z pliku *UIMap.cs* lub *UIMap. vb* .
 
 ## <a name="locate-a-ui-control-in-the-application-under-test"></a>Lokalizowanie kontrolki interfejsu użytkownika w testowanej aplikacji
 

@@ -1,32 +1,32 @@
 ---
-title: Instalowanie Visual Studio Build Tools w kontenerze
+title: Instalowanie narzędzia Visual Studio Build Tools do kontenera
 titleSuffix: ''
-description: Dowiedz się, jak zainstalować Visual Studio Build Tools w kontenerze systemu Windows, aby obsługiwać przepływy pracy ciągłej integracji i ciągłego dostarczania (CI/CD).
+description: Dowiedz się, jak zainstalować narzędzia Visual Studio Build Tools w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD).
 ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d7c7ada277d9b9f7259b8ab07d93c48294b252c
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: cdec0c6059775f4542e7b012709e20ad45c249cc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549964"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595972"
 ---
-# <a name="install-build-tools-into-a-container"></a>Instalowanie narzędzi kompilacji do kontenera
+# <a name="install-build-tools-into-a-container"></a>Zainstaluj narzędzia kompilacji do kontenera
 
-Visual Studio Build Tools można zainstalować w kontenerze systemu Windows w celu obsługi przepływów pracy ciągłej integracji i ciągłego dostarczania (CI/CD). W tym artykule opisano, jakie zmiany w konfiguracji platformy Docker są wymagane, a także jakie [obciążenia i składniki](workload-component-id-vs-build-tools.md) można zainstalować w kontenerze.
+Visual Studio Build Tools można zainstalować w kontenerze Windows do obsługi ciągłej integracji i przepływów pracy ciągłego dostarczania (CI/CD). Ten artykuł przeprowadzi Cię przez jakie zmiany konfiguracji platformy Docker są wymagane, a także co [obciążenia i składniki](workload-component-id-vs-build-tools.md) można zainstalować w kontenerze.
 
-[Kontenery](https://www.docker.com/what-container) są doskonałym sposobem na spakowanie spójnego systemu kompilacji, którego można użyć nie tylko w środowisku serwera ciągłej integracji/ciągłego wdrażania, ale również w środowiskach deweloperskich. Można na przykład zainstalować kod źródłowy w kontenerze, który ma zostać skompilowany przez dostosowane środowisko, podczas gdy nadal używasz programu Visual Studio lub innych narzędzi do pisania kodu. Jeśli przepływ pracy CI/CD korzysta z tego samego obrazu kontenera, możesz zapewnić spójność kodu. Kontenerów można również użyć do zapewnienia spójności środowiska uruchomieniowego, która jest powszechna dla mikrousług korzystających z wielu kontenerów z systemem aranżacji. jednak wykracza poza zakres tego artykułu.
+[Kontenery](https://www.docker.com/what-container) to doskonały sposób do pakietu przez system kompilacji spójne, można użyć nie tylko w środowisku serwera ciągłej integracji/ciągłego wdrażania, ale również w środowiskach programowania. Na przykład można zainstalować kod źródłowy w kontenerze, który ma zostać utworzony przez dostosowane środowisko, gdy będziesz nadal używać programu Visual Studio lub innych narzędzi, należy napisać kod. Jeśli przepływ pracy ciągłej integracji/ciągłego wdrażania korzysta z tego samego obrazu kontenera, możesz mieć pewność, Twój kod się kompiluje spójne. Możesz używać kontenerów środowiska uruchomieniowego sprawdzania spójności, która jest często mikrousługi przy użyciu wielu kontenerów z systemem aranżacji; jednak wykracza poza zakres tego artykułu.
 
-Jeśli Visual Studio Build Tools nie ma potrzebnych do skompilowania kodu źródłowego, te same kroki mogą być używane dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery systemu Windows nie obsługują interaktywnego interfejsu użytkownika, więc wszystkie polecenia muszą być zautomatyzowane.
+Jeśli program Visual Studio Build Tools nie ma wymagane do kompilowania swojego kodu źródłowego, można te same kroki dla innych produktów Visual Studio. Należy jednak pamiętać, że kontenery Windows nie obsługują interaktywny interfejs użytkownika, więc wszystkie polecenia, które muszą być zautomatyzowane.
 
 ## <a name="before-you-begin"></a>Przed rozpoczęciem
 
@@ -34,9 +34,9 @@ Poniżej założono pewną znajomość [platformy Docker](https://www.docker.com
 
 Poniższy obraz podstawowy jest przykładem i może nie zadziałać w systemie. Przeczytaj temat [zgodność wersji kontenera systemu Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) , aby określić, który obraz podstawowy ma być używany w danym środowisku.
 
-## <a name="create-and-build-the-dockerfile"></a>Tworzenie i Kompilowanie pliku dockerfile
+## <a name="create-and-build-the-dockerfile"></a>Utwórz i skompiluj plik Dockerfile
 
-Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli plik ma nazwę "pliku dockerfile", jest rozpoznawany domyślnie.
+Zapisz poniższy plik Dockerfile do nowego pliku na dysku. Jeśli plik nosi po prostu plik Dockerfile"", który jest rozpoznawany przez domyślny.
 
 > [!WARNING]
 > Ten przykład pliku dockerfile wyklucza tylko starsze zestawy Windows SDK, których nie można zainstalować w kontenerach. Wcześniejsze wersje powodują niepowodzenie polecenia kompilacji.
@@ -49,13 +49,13 @@ Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli pli
    mkdir C:\BuildTools
    ```
 
-1. Zmień katalogi na ten nowy katalog:
+1. Zmień katalogi do tego nowego katalogu:
 
    ```shell
    cd C:\BuildTools
    ```
 
-1. Zapisz poniższą zawartość w usłudze C:\BuildTools\Dockerfile.
+1. Zapisz C:\BuildTools\Dockerfile następującą zawartością.
  
    ::: moniker range="vs-2017"
 
@@ -138,7 +138,7 @@ Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli pli
    > [!NOTE]
    > Kod błędu `3010` jest używany do wskazania sukcesu z wymaganym ponownym uruchomieniem. zobacz [komunikaty o błędach msiexec. exe](/windows/win32/msi/error-codes) , aby uzyskać więcej informacji.
 
-1. Uruchom następujące polecenie w tym katalogu.
+1. Uruchom następujące polecenie, w tym katalogu.
 
    ::: moniker range="vs-2017"
 
@@ -146,9 +146,9 @@ Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli pli
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   To polecenie kompiluje pliku dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Domyślnie 1 GB nie wystarcza w przypadku zainstalowania niektórych obciążeń; Jednak może być możliwe skompilowanie tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
+   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Domyślnie 1 GB nie wystarcza w przypadku zainstalowania niektórych obciążeń; Jednak może być możliwe skompilowanie tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
 
-   Obraz końcowy jest oznaczony jako "buildtools2017: Najnowsza", więc można go łatwo uruchomić w kontenerze jako "buildtools2017", ponieważ tag "Najnowsza" jest wartością domyślną, jeśli nie określono tagu. Jeśli chcesz użyć określonej wersji Visual Studio Build Tools 2017 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), możesz zamiast tego oznaczyć kontener z konkretnym numerem kompilacji programu Visual Studio, a także "najnowszy", aby kontenery mogły korzystać z określonej wersji.
+   Finalnego obrazu jest oznakowany "buildtools2017:latest", aby można było łatwo uruchomić go w kontenerze jako "buildtools2017" od "najnowsza" tag jest domyślnie, jeśli jest określony żaden tag. Jeśli chcesz użyć określonej wersji programu Visual Studio kompilacji 2017 narzędzia w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), może być zamiast tego tagu kontener za pomocą określonego programu Visual Studio kompilacji numer, a także "najnowsza", więc kontenerów można użyć określonego Wersja spójne.
 
    ::: moniker-end
 
@@ -158,19 +158,19 @@ Zapisz Poniższy przykład pliku dockerfile do nowego pliku na dysku. Jeśli pli
    docker build -t buildtools2019:latest -m 2GB .
    ```
 
-   To polecenie kompiluje pliku dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Domyślnie 1 GB nie wystarcza w przypadku zainstalowania niektórych obciążeń; Jednak może być możliwe skompilowanie tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
+   To polecenie tworzy plik Dockerfile w bieżącym katalogu przy użyciu 2 GB pamięci. Domyślnie 1 GB nie wystarcza w przypadku zainstalowania niektórych obciążeń; Jednak może być możliwe skompilowanie tylko 1 GB pamięci, w zależności od wymagań dotyczących kompilacji.
 
    Obraz końcowy jest oznaczony jako "buildtools2019: Najnowsza", więc można go łatwo uruchomić w kontenerze jako "buildtools2019", ponieważ tag "Najnowsza" jest wartością domyślną, jeśli nie określono tagu. Jeśli chcesz użyć określonej wersji Visual Studio Build Tools 2019 w bardziej [zaawansowanym scenariuszu](advanced-build-tools-container.md), możesz zamiast tego oznaczyć kontener z konkretnym numerem kompilacji programu Visual Studio, a także "najnowszy", aby kontenery mogły korzystać z określonej wersji.
 
    ::: moniker-end
 
-## <a name="using-the-built-image"></a>Korzystanie z skompilowanego obrazu
+## <a name="using-the-built-image"></a>Przy użyciu wbudowanego obrazu
 
-Teraz, po utworzeniu obrazu, można go uruchomić w kontenerze, aby wykonać kompilacje interaktywne i zautomatyzowane. W przykładzie zastosowano wiersz polecenia dla deweloperów, więc ścieżka i inne zmienne środowiskowe są już skonfigurowane.
+Teraz, po utworzeniu obrazu, możesz ją uruchomić w kontenerze celu zarówno interaktywny, jak i automatyczne kompilacje. W przykładzie użyto wiersza polecenia dewelopera, więc zmiennej PATH i inne zmienne środowiskowe są już skonfigurowane.
 
 1. Otwórz wiersz polecenia.
 
-1. Uruchom kontener, aby uruchomić środowisko PowerShell ze wszystkimi ustawionymi zmiennymi środowiskowymi dla deweloperów:
+1. Uruchom kontener, aby rozpoczynać Środowisko PowerShell dla wszystkich deweloperów zmiennych środowiskowych ustawionych:
 
    ::: moniker range="vs-2017"
 

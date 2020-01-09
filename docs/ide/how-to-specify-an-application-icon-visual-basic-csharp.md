@@ -6,17 +6,17 @@ helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656604"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596141"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)
 
@@ -31,13 +31,13 @@ Do właściwości `Icon` można uzyskać dostęp w okienku **aplikacji** **proje
 
 1. W **Eksplorator rozwiązań**wybierz węzeł projektu (nie węzeł **rozwiązania** ).
 
-1. Na pasku menu wybierz kolejno opcje **projekt** > **Właściwości**.
+1. Na pasku menu wybierz **projekt** > **Właściwości**.
 
 1. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
 
-1. **(Visual Basic)** &mdash;In listy **ikon** , wybierz plik ikony ( *. ico*).
+1. **(Visual Basic)** &mdash;na liście **ikon** wybierz plik ikony ( *. ico*).
 
-    **C#** &mdash;Near liście **ikon** wybierz **\<Browse... >** przycisk, a następnie przejdź do lokalizacji pliku ikony, który chcesz.
+    **C#** &mdash;obok listy **ikon** wybierz pozycję **\<Przeglądaj... >** przycisk, a następnie przejdź do lokalizacji pliku ikony, który chcesz.
 
 ## <a name="see-also"></a>Zobacz także
 

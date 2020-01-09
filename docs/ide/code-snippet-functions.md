@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647541"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594243"
 ---
 # <a name="code-snippet-functions"></a>Funkcje fragmentów kodu
 
@@ -29,9 +29,9 @@ W poniższej tabeli opisano funkcje dostępne do użycia z elementem `Function` 
 
 |Funkcja|Opis|Język|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(EnumerationLiteral)`|Generuje instrukcję Switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określonego przez parametr `EnumerationLiteral`. Parametr `EnumerationLiteral` musi być odwołaniem do literału wyliczenia lub typem wyliczenia.|C#|
-|`ClassName()`|Zwraca nazwę klasy zawierającej wstawiony fragment kodu.|C#|
-|`SimpleTypeName(TypeName)`|Zmniejsza parametr *TypeName* do najprostszej postaci w kontekście, w którym został wywołany fragment kodu.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Generuje instrukcję Switch i zestaw instrukcji case dla elementów członkowskich wyliczenia określonego przez parametr `EnumerationLiteral`. Parametr `EnumerationLiteral` musi być odwołaniem do literału wyliczenia lub typem wyliczenia.|Język C#|
+|`ClassName()`|Zwraca nazwę klasy zawierającej wstawiony fragment kodu.|Język C#|
+|`SimpleTypeName(TypeName)`|Zmniejsza parametr *TypeName* do najprostszej postaci w kontekście, w którym został wywołany fragment kodu.|Język C#|
 
 ## <a name="generateswitchcases-example"></a>Przykład GenerateSwitchCases
 

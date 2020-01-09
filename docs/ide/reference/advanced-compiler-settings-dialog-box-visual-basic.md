@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919359"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596934"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 
@@ -30,7 +30,7 @@ Za pomocą okna dialogowego **Ustawienia AdvancedCompiler** **projektanta projek
 
 2. W menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **kompilacja** .
 
-3. Na [stronie kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)wybierz **konfigurację** i platformę. W uproszczonych konfiguracjach kompilacji listy **konfiguracji** i **platformy** nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [jak: Ustawianie konfiguracji](../../debugger/how-to-set-debug-and-release-configurations.md)debugowania i wydania.
+3. Na [stronie kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)wybierz **konfigurację** i **platformę**. W uproszczonych konfiguracjach kompilacji listy **konfiguracji** i **platformy** nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4. Kliknij pozycję **Zaawansowane opcje kompilacji**.
 
@@ -44,7 +44,7 @@ Poniższe opcje określają optymalizacje, które w niektórych przypadkach spra
 
 To pole wyboru jest domyślnie wyczyszczone, aby włączyć sprawdzanie przepełnienia liczby całkowitej. Zaznacz to pole wyboru, aby usunąć sprawdzanie przepełnienia liczby całkowitej. Jeśli zaznaczysz to pole wyboru, obliczenia liczby całkowitej mogą być szybsze. Jeśli jednak usuniesz sprawdzanie przeciążenia i przepełnienie pojemności typu danych, nieprawidłowe wyniki mogą być przechowywane bez zgłaszania błędu.
 
-Jeśli sprawdzane są warunki przepełnienia, a operacja całkowita przekracza przepływ <xref:System.OverflowException> , zostanie zgłoszony wyjątek. Jeśli warunki przepełnienia nie są zaznaczone, operacje typu Integer przekraczają wyjątek.
+Jeśli sprawdzane są warunki przepełnienia, a operacja całkowita przekracza przepływ, zostanie zgłoszony wyjątek <xref:System.OverflowException>. Jeśli warunki przepełnienia nie są zaznaczone, operacje typu Integer przekraczają wyjątek.
 
 **Włącz optymalizacje**
 
@@ -72,13 +72,13 @@ To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała
 
  **Stałe niestandardowe**
 
-Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tego formularza: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
+Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tej formy: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
 
 ## <a name="other-settings"></a>Inne ustawienia
 
 **Generuj zestawy serializacji**
 
-To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli użyto tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to auto. **Automatycznie** określa, że zestawy serializacji mają być generowane tylko wtedy, <xref:System.Xml.Serialization.XmlSerializer> gdy zostały użyte do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to <xref:System.Xml.Serialization.XmlSerializer>, czy kod używa. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
+To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania <xref:System.Xml.Serialization.XmlSerializer>, jeśli użyto tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to **Auto.** **Automatycznie** określa, że zestawy serializacji mają być generowane tylko wtedy, gdy użyto <xref:System.Xml.Serialization.XmlSerializer> do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to, czy kod używa <xref:System.Xml.Serialization.XmlSerializer>. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
 
 ## <a name="see-also"></a>Zobacz także
 

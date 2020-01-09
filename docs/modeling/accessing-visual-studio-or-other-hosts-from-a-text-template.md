@@ -3,32 +3,32 @@ title: Dostęp do Visual Studio lub innych hostów z szablonu tekstowego
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752b9d9e69eee26f267927f03c4b83c68740100b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd69ae5864df9cbddd204c45975736fc4aae49e5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652365"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597259"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Dostęp do programu Visual Studio lub innych hostów z szablonu tekstowego
 
-W szablonie tekstowym można użyć metod i właściwości, które są dostępne dla hosta, który wykonuje szablon. Visual Studio to przykład hosta.
+W szablonie tekstu można użyć metod i właściwości, które są udostępniane przez hosta, który jest wykonywany szablonu. Program Visual Studio jest przykładem hosta.
 
 > [!NOTE]
-> Metod hosta i właściwości można użyć w zwykłych szablonach tekstowych, ale nie w szablonach *wstępnie przetworzonych* tekstu.
+> W szablonach zwykły tekst, ale nie można użyć właściwości i metod hosta *wstępnie przetworzony* szablonów tekstowych.
 
 ## <a name="obtain-access-to-the-host"></a>Uzyskaj dostęp do hosta
 
-Aby uzyskać dostęp do hosta, ustaw `hostspecific="true"` w dyrektywie `template`. Teraz można użyć `this.Host`, który ma typ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Typ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) zawiera elementy członkowskie, których można użyć do rozpoznawania nazw plików i błędów dzienników, na przykład.
+Aby uzyskać dostęp do hosta, należy ustawić `hostspecific="true"` w `template` dyrektywy. Teraz można użyć `this.Host`, który ma typ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Typ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) zawiera elementy członkowskie, których można użyć do rozpoznawania nazw plików i błędów dzienników, na przykład.
 
 ### <a name="resolve-file-names"></a>Rozpoznawanie nazw plików
 
-Aby znaleźć pełną ścieżkę pliku względem szablonu tekstu, użyj `this.Host.ResolvePath()`.
+Aby znaleźć pełnej ścieżki pliku względem szablonu tekstu, należy użyć `this.Host.ResolvePath()`.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -42,9 +42,9 @@ Content of myFile is:
 <#= myFile #>
 ```
 
-### <a name="display-error-messages"></a>Wyświetl komunikaty o błędach
+### <a name="display-error-messages"></a>Wyświetlane komunikaty o błędach
 
-Ten przykład rejestruje komunikaty podczas przekształcania szablonu. Jeśli hostem jest program Visual Studio, błędy są dodawane do **Lista błędów**.
+W tym przykładzie powoduje rejestrowanie komunikatów podczas przekształcania szablonu. Jeśli host znajduje się program Visual Studio, błędy są dodawane do **lista błędów**.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -60,13 +60,13 @@ Ten przykład rejestruje komunikaty podczas przekształcania szablonu. Jeśli ho
 #>
 ```
 
-## <a name="use-the-visual-studio-api"></a>Korzystanie z interfejsu API programu Visual Studio
+## <a name="use-the-visual-studio-api"></a>Za pomocą programu Visual Studio interfejsu API
 
-Jeśli wykonujesz szablon tekstowy w programie Visual Studio, możesz użyć `this.Host`, aby uzyskać dostęp do usług oferowanych przez program Visual Studio i wszystkich załadowanych pakietów lub rozszerzeń.
+Jeśli wykonujesz szablonu tekstu w programie Visual Studio, możesz użyć `this.Host` dostęp do usług świadczonych przez program Visual Studio i wszystkie pakiety lub rozszerzenia, które są ładowane.
 
-Ustaw hostspecific = "true" i Cast `this.Host`, aby <xref:System.IServiceProvider>.
+Ustaw hostspecific = "true" i rzutowane `this.Host` do <xref:System.IServiceProvider>.
 
-Ten przykład pobiera interfejs API programu Visual Studio, <xref:EnvDTE.DTE>, jako usługę:
+W tym przykładzie pobiera do API Visual Studio <xref:EnvDTE.DTE>, jako usługi:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -80,6 +80,6 @@ Ten przykład pobiera interfejs API programu Visual Studio, <xref:EnvDTE.DTE>, j
 Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
-## <a name="use-hostspecific-with-template-inheritance"></a>Korzystanie z hostSpecific z dziedziczeniem szablonów
+## <a name="use-hostspecific-with-template-inheritance"></a>HostSpecific za pomocą szablonu dziedziczenia
 
-Określ `hostspecific="trueFromBase"`, jeśli używasz również atrybutu `inherits`, i jeśli dziedziczysz z szablonu, który określa `hostspecific="true"`. Jeśli tego nie zrobisz, możesz uzyskać Ostrzeżenie kompilatora, że właściwość `Host` została zadeklarowana dwukrotnie.
+Określ `hostspecific="trueFromBase"` , gdy również użyć `inherits` atrybutu, a jeśli dziedziczyć szablon, który określa `hostspecific="true"`. Jeśli nie masz, możesz otrzymać kompilatora ostrzeżenie, że właściwość `Host` zadeklarowano dwa razy.

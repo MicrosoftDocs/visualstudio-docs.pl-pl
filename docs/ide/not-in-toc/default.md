@@ -7,14 +7,14 @@ f1_keywords:
 - vs.texteditor
 - vs.ambient
 manager: jillfra
-author: jillre
-ms.author: jillfra
-ms.openlocfilehash: a1d398d18e9be9bdb5f9bf3b30dc3ff1316b5ddb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.author: tglee
+ms.openlocfilehash: 48c93cf8abeb573a3a75e6825a8400355c133f2b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662039"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597012"
 ---
 # <a name="f1-help"></a>F1 — Pomoc
 
@@ -24,7 +24,7 @@ Wygląda na to, że nie udało nam się znaleźć tego, czego szukasz, i Przepra
 
 Jeśli szukasz pomocy F1 dla słowa kluczowego lub nazwy interfejsu API, upewnij się, że kursor jest umieszczony wewnątrz lub po prawej stronie słowa przed naciśnięciem klawisza **F1**. Jeśli to nie zadziała, wybierz pozycję z listy [przydatne linki](#useful-links) lub przeszukaj https://docs.microsoft.com.
 
-## <a name="useful-links"></a>Przydatne linki
+## <a name="useful-links"></a>Przydatne łącza
 
 - Wyszukaj dokumentację referencyjną w [przeglądarce interfejsów API platformy .NET](/dotnet/api/).
 - Aby C# uzyskać pomoc, zobacz [ C# Przewodnik](/dotnet/csharp/index).

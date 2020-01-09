@@ -5,55 +5,55 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c190115836972f86590233e331f172422efbd6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595413"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 
-Po otwarciu modelu w wersji programu Visual Studio, która nie obsługuje tworzenia modelu, model zostanie otwarty w trybie tylko do odczytu. W tym trybie można zmienić układ diagramów, ale nie można zmienić modelu.
+Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworzenia modelu modelu zostanie otwarty w trybie tylko do odczytu. W tym trybie można zmienić układ diagramy, ale nie można zmienić modelu.
 
-Aby sprawdzić, które wersje programu Visual Studio obsługują tworzenie modelu, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Aby dowiedzieć się, które wersje programu Visual Studio obsługują tworzenie modelu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="obtaining-access-to-a-model-and-diagrams"></a>Uzyskiwanie dostępu do modelu i diagramów
+## <a name="obtaining-access-to-a-model-and-diagrams"></a>Uzyskiwanie dostępu do modeli i diagramów
 
-Aby odczytać diagram zależności, należy najpierw użyć programu Visual Studio, aby otworzyć projekt modelowania, a następnie otworzyć go w obrębie tego diagramu.
+Do odczytywania diagram zależności, należy najpierw przy użyciu programu Visual Studio Otwórz projekt modelowania, a następnie Otwórz diagram znajdujący się w nim.
 
-Z tego powodu, jeśli chcesz odczytać diagram zależności, musisz również mieć dostęp do projektu modelowania, w którym został utworzony. Można to zrobić przez uzyskanie dostępu do projektu z kontroli źródła lub uzyskanie kopii plików projektu.
+Z tego powodu jeśli chcesz odczytać diagram zależności, należy również masz dostęp do projektu modelowania, w której został utworzony. Można to zrobisz, uzyskując dostęp do projektu z kontroli źródła lub przez uzyskanie kopii plików projektu.
 
 > [!NOTE]
-> Nie dotyczy to map kodu i diagramów klas .NET generowanych na podstawie kodu. Te diagramy mogą być wyświetlane niezależnie od projektu modelowania.
+> To nie ma zastosowania do kodu mapy i .NET klasy diagramy wygenerowane z kodu. Można wyświetlić tych diagramów, niezależnie od projektu modelowania.
 
-Aby odczytać diagram zależności, minimalny zestaw wymaganych plików jest następujący:
+Aby uzyskać diagram zależności, minimalny zestaw plików, które są potrzebne jest następująca:
 
-- Dwa pliki diagramu dla diagramu, który ma zostać odczytany, na przykład, **Webdiagrams. classdiagram i webdiagram. classdiagram. layout**.
+- Dwa pliki dla diagramu, który chcesz, aby dowiedzieć się, na przykład diagramu **MyDiagram.classdiagram i MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
-    > W przypadku diagramów zależności należy również mieć plik o nazwie Moje _Diagram_ **. layerdiagram. pominięcia**.
+    > Dla diagramów zależności powinien również mieć plik o nazwie _MyDiagram_ **. layerdiagram.suppressions**.
 
-- Plik projektu modelowania (**WebMode. modelproj**)
+- Pliku projektu modelowania (**MyModel.modelproj**)
 
-- Plik modelu głównego (**ModelDefinition\MyModel.UML**)
+- Plik modelu głównym (**ModelDefinition\MyModel.uml**)
 
-- Pliki pakietu dla dowolnego pakietu, do którego odwołuje się Diagram (**ModelDefinition\MyPackage.UML**)
+- Pliki pakietu dla dowolnego pakietu, do którego odwołuje się na diagramie (**ModelDefinition\MyPackage.uml**)
 
-## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany, które można wprowadzić w trybie tylko do odczytu
+## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany wprowadzone w trybie tylko do odczytu
 
-Jeśli otworzysz model i jego diagramy w wersji programu Visual Studio, która nie obsługuje tworzenia modelu, nie możesz zmienić modelu. Oznacza to, że nie można zmienić elementów i relacji, które są wyświetlane na diagramach lub w Eksploratorze modelu. Można jednak wprowadzić pewne zmiany w układzie diagramów:
+Jeśli otworzysz modelu i jego diagramy w wersjach programu Visual Studio, który nie obsługuje tworzenia modelu, nie można zmienić modelu. Oznacza to, że nie można zmienić elementów i relacji, które są wyświetlane na diagramach lub w Eksploratorze modelu. Można jednak wprowadzić pewne zmiany, układu tych diagramów:
 
-- Zmień rozmieszczenie kształtów i łączników na diagramie.
+- Rozmieszczanie kształtów i łączników na diagramie.
 
 - Rozwijanie i zwijanie kształtów.
 
-Można zapisać te zmiany. Jeśli chcesz, aby zmiany były widoczne dla innych użytkowników, musisz mieć co najmniej wysłanie zaktualizowanych plików **układu** .
+Możesz zapisać te zmiany. Jeśli chcesz zmiany były widoczne dla innych użytkowników, co najmniej trzeba wysłać zaktualizowany **.layout** plików.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -20,21 +20,21 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667017"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595621"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 
-Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, klikając pozycję **narzędzia**  > **Opcje**, a następnie wybierając pozycję **środowisko**  > **czcionki i kolory**.
+Na stronie **czcionki i kolory** okna dialogowego **Opcje** można utworzyć niestandardową czcionkę i schemat kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). Możesz uzyskać dostęp do tego okna dialogowego, klikając pozycję **narzędzia** > **Opcje**, a następnie wybierając pozycję **środowisko** > **czcionki i kolory**.
 
 Zmiany schematu kolorów nie są stosowane podczas sesji, w której zostały wprowadzone. Zmiany kolorów można oszacować, otwierając inne wystąpienie programu Visual Studio i podając warunki, w których zmiany mają być stosowane.
 
@@ -86,7 +86,7 @@ Resetuje czcionkę i wartości koloru elementu listy wybrane w obszarze **Pokaż
 
 Wyświetla wszystkie czcionki zainstalowane w systemie. Po pierwszym wyświetleniu menu rozwijanego zostanie wyróżniona bieżąca czcionka elementu wybranego w polu **Pokaż ustawienia dla** pola. Stałe czcionki — które są łatwiejsze do dopasowania w edytorze — są wyświetlane pogrubione.
 
-**Zmienia**
+**Rozmiar**
 
 Wyświetla listę dostępnych rozmiarów punktów dla zaznaczonej czcionki. Zmiana rozmiaru czcionki ma wpływ na wszystkie **elementy wyświetlane** dla wybranych **ustawień** .
 
@@ -110,7 +110,7 @@ Do niektórych elementów wyświetlanych należą:
 |**Zakładka**|Linie z zakładkami. **Zakładka** jest widoczna tylko wtedy, gdy margines wskaźnika jest wyłączony.|
 |**Dopasowywanie nawiasów klamrowych (wyróżnianie)**|Wyróżnianie, które jest zwykle pogrubione dla pasujących nawiasów klamrowych.|
 |**Dopasowywanie nawiasów klamrowych (prostokąt)**|Wyróżnianie zwykle szarego prostokąta w tle.|
-|**Punkt przerwania (wyłączony)**|Nie używany.|
+|**Punkt przerwania (wyłączony)**|Nie jest używany.|
 |**Punkt przerwania (włączony)**|Określa kolor wyróżniania dla instrukcji lub linii zawierających proste punkty przerwania. Ta opcja ma zastosowanie tylko wtedy, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt przerwania (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty przerwania, które są w stanie błędu. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt przerwania (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty przerwania, które są w stanie ostrzegawczym. Dotyczy tylko sytuacji, gdy punkty przerwania na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródła dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
@@ -132,7 +132,7 @@ Do niektórych elementów wyświetlanych należą:
 |**Obszar nieobjęty pokryciem**|Kod, który nie został objęty testem jednostkowym.|
 |**Obszar pokrycia częściowo naruszony**|Kod, który został częściowo objęty testem jednostkowym.|
 |**Obszar objęty pokryciem**|Kod, który został całkowicie objęty testem jednostkowym.|
-|**Komentarz CSS**|Komentarz w kaskadowe arkusze stylów. Na przykład:<br /><br /> /* \* komentarza /|
+|**Komentarz CSS**|Komentarz w kaskadowe arkusze stylów. Na przykład:<br /><br /> /* \*komentarza /|
 |**Słowo kluczowe CSS**|Słowa kluczowe w kaskadowym arkuszu stylów.|
 |**Nazwa właściwości CSS**|Nazwa właściwości, na przykład tło.|
 |**Wartość właściwości CSS**|Wartość przypisana do właściwości, takiej jak niebieska.|
@@ -149,13 +149,13 @@ Do niektórych elementów wyświetlanych należą:
 |**Rozmontaż tekstu**|Kolor tekstu służący do wyświetlania wartości op-Code i danych w oknie **demontażu** .|
 |**Wykluczony kod**|Kod, który nie jest kompilowany, na warunkową dyrektywę preprocesora, taką jak `#if`.|
 |**Identyfikatora**|Identyfikatory w kodzie, takie jak nazwy klas, metody nazw i nazwy zmiennych.|
-|**Kodu**|Słowa kluczowe dla danego języka, które są zarezerwowane. Na przykład: Klasa i przestrzeń nazw.|
+|**Keyword**|Słowa kluczowe dla danego języka, które są zarezerwowane. Na przykład: Klasa i przestrzeń nazw.|
 |**Adres pamięci**|Kolor tekstu używanego do wyświetlania kolumny Address w oknie **pamięci** .|
 |**Pamięć zmieniła się**|Kolor tekstu używanego do wyświetlania zmienionych danych w oknie **pamięci** .|
 |**Dane pamięci**|Kolor tekstu używanego do wyświetlania danych w oknie **pamięci** .|
 |**Pamięć nieczytelna**|Kolor tekstu służący do wyświetlania nieczytelnych obszarów pamięci w oknie **pamięci** .|
 |**Liczba**|Liczba w kodzie, która reprezentuje rzeczywistą wartość liczbową.|
-|**Zakład**|Operatory, takie jak +,-i! =.|
+|**Operator**|Operatory, takie jak +,-i! =.|
 |**Inny błąd**|Inne typy błędów, które nie są objęte innymi zygzakami błędów. Obecnie obejmuje to edycję prosta w obszarze Edytuj i Kontynuuj.|
 |**Preprocesor — słowo kluczowe**|Słowa kluczowe używane przez preprocesor, takie jak #include.|
 |**Region tylko do odczytu**|Kod, którego nie można edytować. Przykład kodu wyświetlanego w oknie widoku definicji kodu lub w kodzie, którego nie można modyfikować podczas Edytuj i Kontynuuj.|
@@ -171,7 +171,7 @@ Do niektórych elementów wyświetlanych należą:
 |**Ciąg (C# @ Verbatim)**|Literały ciągu w C# , które są interpretowane Verbatim. Na przykład:<br /><br /> @"x"|
 |**Błąd składniowy**|Analizuj błędy.|
 |**Skrót Lista zadań**|Jeśli do wiersza zostanie dodany skrót **Lista zadań** , a margines wskaźnika jest wyłączony, wiersz zostanie wyróżniony.|
-|**Punkt śledzenia (wyłączone)**|Nie używany.|
+|**Punkt śledzenia (wyłączone)**|Nie jest używany.|
 |**Punkt śledzenia (włączone)**|Określa kolor wyróżnienia dla instrukcji lub linii zawierających prostą punkty śledzenia. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt śledzenia (błąd)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia, które są w stanie błędu. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
 |**Punkt śledzenia (ostrzeżenie)**|Określa kolor wyróżnienia dla instrukcji lub wierszy zawierających punkty śledzenia, które są w stanie ostrzegawczym. Ta opcja ma zastosowanie tylko wtedy, gdy punkty śledzenia na poziomie instrukcji są aktywne lub opcja **Wyróżnij cały wiersz źródłowy dla punktów przerwania lub bieżącej instrukcji** jest zaznaczona w [oknie dialogowym ogólne, debugowanie, opcje](../../debugger/general-debugging-options-dialog-box.md).|
@@ -191,17 +191,17 @@ Do niektórych elementów wyświetlanych należą:
 |**Typy użytkowników (interfejsy)**|Kolor typu dla interfejsów.|
 |**Typy użytkowników (typy wartości)**|Kolor typu dla typów wartości, takich jak struktury w C#.|
 |**Visual Basic znacznik tylko do odczytu**|Znacznik charakterystyczny dla Visual Basic używany do wyznaczania elementu EnC, takiego jak regiony wyjątków, definicja metody i ramki wywołania innego niż liść.|
-|**Wyświetlania**|Ostrzeżenia kompilatora.|
+|**Ostrzeżenie**|Ostrzeżenia kompilatora.|
 |**Ścieżka linii ostrzeżeń**|Używane dla linii ostrzeżeń analizy statycznej.|
 |**Atrybut XML**|Nazwy atrybutów.|
 |**Cudzysłowy atrybutu XML**|Znaki cudzysłowu dla atrybutów XML.|
 |**Wartość atrybutu XML**|Zawartość atrybutów XML.|
-|**Sekcja CDATA XML**|Zawartość \<! [CDATA [...]] >.|
+|**Sekcja CDATA XML**|Zawartość \<![CDATA[...]]>.|
 |**Komentarz XML**|Zawartość \<!---->.|
-|**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!--,-->,? \>, \<! [, ]] > i [,].|
+|**Ogranicznik XML**|Ograniczniki składni XML, w tym <, <?, <!, \<!--,-->,?\>, \<! [, ]] > i [,].|
 |**Atrybut XML doc**|Wartość atrybutu dokumentacji XML, taka jak \<param Name = "I" >, gdzie "I" jest kolorem.|
 |**Komentarz dokumentacji XML**|Komentarze ujęte w komentarzach dokumentacji XML.|
-|**Tag doc XML**|Tagi w komentarzach doc XML, takie jak<br /><br /> ///  \<summary >.|
+|**Tag doc XML**|Tagi w komentarzach doc XML, takie jak<br /><br /> /// \<podsumowanie >.|
 |**Słowo kluczowe XML**|Słowa kluczowe DTD, takie jak CDATA, IDREF i nnazwa.|
 |**Nazwa XML**|Nazwy elementów i instrukcje przetwarzania nazwy docelowej.|
 |**Instrukcja przetwarzania XML**|Zawartość instrukcji przetwarzania, bez uwzględnienia nazwy docelowej.|
@@ -243,11 +243,11 @@ Kolor wyświetlany dla elementu przy pierwszym otwarciu programu Visual Studio. 
 
 Wyświetla okno dialogowe Kolor umożliwiające ustawienie niestandardowego koloru dla elementu zaznaczonego na liście elementy wyświetlania.
 
-**Zapis**
+**Bold**
 
 Zaznacz tę opcję, aby wyświetlić tekst wybranych **elementów wyświetlanych** w postaci pogrubionego tekstu. Tekst pogrubiony jest łatwiejszy do zidentyfikowania w edytorze.
 
-**Northwind**
+**Przykład**
 
 Wyświetla przykładowy styl czcionki, rozmiar i schemat kolorów dla wybranych elementów **Pokaż ustawienia dla** i **wyświetlania** . To pole służy do wyświetlania podglądu wyników podczas eksperymentu z różnymi opcjami formatowania.
 

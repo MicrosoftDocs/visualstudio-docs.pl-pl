@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40b35960b1dda30e1151e242380147ac58a77ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651929"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595816"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 
 Użyj strony **aplikacji** projektanta projektu, aby określić ustawienia i właściwości aplikacji projektu.
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project**  > **Właściwości** na pasku menu. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
+Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project** > **Właściwości** na pasku menu. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **aplikacja** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -86,7 +86,7 @@ Określa formularz startowy lub punkt wejścia aplikacji.
 
 Jeśli wybrano opcję **Włącz platformę aplikacji** (domyślnie), ta lista jest zatytułowana **formularz startowy** i pokazuje tylko formularze, ponieważ struktura aplikacji obsługuje tylko formularze uruchamiania, a nie obiekty.
 
-Jeśli projekt jest aplikacją przeglądarki WPF, na liście jest **uruchamiany początkowy identyfikator URI**, a wartością domyślną jest **Strona1. XAML**. Lista **początkowy identyfikator URI** umożliwia określenie zasobu interfejsu użytkownika (elementu XAML), który będzie wyświetlany podczas uruchamiania aplikacji. Aby uzyskać więcej informacji, zobacz <xref:System.Windows.Application.StartupUri%2A>.
+Jeśli projekt jest aplikacją przeglądarki WPF, na liście jest **uruchamiany początkowy identyfikator URI**, a wartością domyślną jest **Strona1. XAML**. Lista **początkowy identyfikator URI** umożliwia określenie zasobu interfejsu użytkownika (elementu XAML), który będzie wyświetlany podczas uruchamiania aplikacji. Aby uzyskać więcej informacji, zobacz temat <xref:System.Windows.Application.StartupUri%2A>.
 
 Jeśli opcja **Włącz platformę aplikacji** jest wyczyszczona, ta lista będzie **obiektem startowym** i pokazuje formularze oraz klasy lub moduły z `Sub Main`.
 
@@ -94,7 +94,7 @@ Jeśli opcja **Włącz platformę aplikacji** jest wyczyszczona, ta lista będzi
 
 ### <a name="icon"></a>Ikona
 
-Ustawia plik ICO, który ma być używany jako ikona programu. Wybierz **\<Browse... >** przeglądać istniejącej grafiki. Aby uzyskać więcej informacji, zobacz [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (lub [/Win32icon (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Ustawia plik ICO, który ma być używany jako ikona programu. Wybierz pozycję **\<Przeglądaj... >** przeglądać istniejącej grafiki. Aby uzyskać więcej informacji, zobacz [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (lub [/Win32icon (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informacje o zestawie
 
@@ -102,7 +102,7 @@ Kliknij ten przycisk, aby wyświetlić okno [dialogowe informacje o zestawie](..
 
 ### <a name="enable-application-framework"></a>Włącz platformę aplikacji
 
-Określa, czy projekt będzie używać struktury aplikacji. Ustawienie tej opcji ma wpływ na opcje dostępne w **formularzu startowym** /**obiekcie startowym**.
+Określa, czy projekt będzie używać struktury aplikacji. Ustawienie tej opcji ma wpływ na opcje dostępne w **formularzu startowym**/**obiekcie startowym**.
 
 Jeśli to pole wyboru jest zaznaczone, aplikacja używa standardowej `Sub Main`. Zaznaczenie tego pola wyboru włącza funkcje w sekcji **Właściwości platformy aplikacji systemu Windows** , a także wymaga wybrania formularza startowego.
 

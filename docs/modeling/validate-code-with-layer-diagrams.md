@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981134"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594022"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Weryfikacja kodu przy użyciu diagramów zależności
 
@@ -44,7 +44,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
 **Requirements**
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
   Aby utworzyć diagram zależności dla projektu .NET Core, musisz mieć program Visual Studio 2019 w wersji 16,2 lub nowszej.
 
@@ -57,7 +57,7 @@ Kod można zweryfikować ręcznie z otwartego diagramu zależności w programie 
 > [!IMPORTANT]
 > Aby uruchomić walidację warstwy przy użyciu Team Foundation Server (TFS), należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
 
-## <a name="live-dependency-validation"></a>Walidacja aktywnej zależności
+## <a name="live-dependency-validation"></a>Weryfikacja zależności na żywo
 
 Walidacja zależności występuje w czasie rzeczywistym, a błędy są wyświetlane natychmiast w **Lista błędów**.
 
@@ -122,7 +122,7 @@ Jeśli masz otwarty diagram zależności, który jest połączony z elementami r
        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
        ```
 
-     - oraz
+     - lub —
 
        Przejdź do folderu, który zawiera plik projektu modelowania (. modelproj) i diagram zależności, a następnie uruchom program MSBuild z następującą właściwością niestandardową:
 
@@ -136,7 +136,7 @@ Jeśli masz otwarty diagram zależności, który jest połączony z elementami r
        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
        ```
 
-     - oraz
+     - lub —
 
        Przejdź do folderu rozwiązania, który musi zawierać projekt modelowania zawierający diagram zależności, a następnie uruchom program MSBuild z następującą właściwością niestandardową:
 
@@ -161,7 +161,7 @@ Podczas procesu projektowania możesz pominąć niektóre konflikty zgłoszone p
 
 Te zadania umożliwiają zarządzanie błędami walidacji w oknie **Lista błędów** :
 
-|**Do**|**Wykonaj następujące kroki**|
+|**To**|**Wykonaj następujące kroki**|
 |-|-|
 |Pomijanie wybranych błędów podczas walidacji|Kliknij prawym przyciskiem myszy jeden lub wiele wybranych błędów, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pomiń błędy**.<br /><br /> Pominięte błędy są wyświetlane jako przekreślone. Przy następnym uruchomieniu walidacji te błędy nie pojawią się.<br /><br /> Pominięte błędy są śledzone w pliku. pominięć dla odpowiedniego pliku diagramu zależności.|
 |Zaprzestanie pomijania wybranych błędów|Kliknij prawym przyciskiem myszy wybrany pominięty błąd lub błędy, wskaż polecenie **Zarządzaj błędami walidacji**, a następnie kliknij przycisk **Zatrzymaj pomijanie błędów**.<br /><br /> Wybrane pominięte błędy pojawią się przy następnym uruchomieniu walidacji.|
@@ -180,7 +180,7 @@ Użyj edytora tekstów, aby otworzyć plik projektu modelowania (.modelproj), a 
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
-\- lub-
+\- lub —
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt modelowania zawierający diagram zależności lub diagramy, a następnie kliknij polecenie **Właściwości**.
 
@@ -200,7 +200,7 @@ Aby zarządzać błędami w oknie Lista błędów, zobacz [Rozwiązywanie błęd
 
 W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji o tych błędach, zobacz [Rozwiązywanie problemów z walidacją warstwy](#troubleshoot-layer-validation-issues).
 
-|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
+|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |-|-|-|
 |Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach zależności, które są kopiowane z innych diagramów zależności w Eksplorator rozwiązań i które znajdują się w tym samym projekcie modelowania. Diagramy zależności, które są kopiowane w ten sposób, zawierają te same odwołania, jak oryginalny diagram zależności.|Dodaj nowy diagram zależności do projektu modelowania.<br /><br /> Skopiuj elementy z diagramu zależności źródłowej do nowego diagramu.|
 
@@ -216,7 +216,7 @@ Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać si�
 
 W poniższej sekcji opisano składnię, która jest używana w tych błędach, wyjaśniono znaczenie tych błędów i zasugerowano, co można zrobić, aby je rozwiązać lub zarządzać nimi.
 
-|**Obowiązuje**|**Opis**|
+|**Składnia**|**Opis**|
 |-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* to artefakt, który jest skojarzony z warstwą na diagramie zależności.<br /><br /> *ArtifactTypeN* jest typem *ArtifactN*, takim jak **Klasa** lub **Metoda**, na przykład:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metoda)|
 |*NamespaceNameN*|Nazwa przestrzeni nazw.|
@@ -229,6 +229,8 @@ W poniższej sekcji opisano składnię, która jest używana w tych błędach, w
 | DV1001: **Nieprawidłowa nazwa przestrzeni nazw** | Ten problem jest raportowany w elemencie kodu skojarzonym z warstwą, której właściwość "dozwolone nazwy przestrzeni nazw" nie zawiera przestrzeni nazw, w której jest zdefiniowany ten element kodu. Jest to naruszenie ograniczenia nazw. Należy zauważyć, że składnia "dozwolonych nazw przestrzeni nazw" ma być listą rozdzielaną średnikami przestrzeni nazw, w których elementy kodu skojarzone z to warstwy mogą być zdefiniowane. |
 | DV1002: **zależność od przestrzeni nazw bez odwołania** | Ten problem jest raportowany dla elementu kodu skojarzonego z warstwą i odwołującego się do innego elementu kodu zdefiniowanego w przestrzeni nazw, który jest zdefiniowany w właściwości "Przestrzeń nazw", która nie jest do odwołania. Jest to naruszenie ograniczenia nazw. Należy zauważyć, że właściwość "przestrzenie nazw, których nie można odwołać" jest zdefiniowana jako rozdzielana średnikami lista przestrzeni nazw, do których nie należy odwoływać się w elementach kodu skojarzonych z tą warstwą. |
 | DV1003: **niedozwolona nazwa przestrzeni nazw** | Ten problem jest raportowany w elemencie kodu skojarzonym z warstwą, której właściwość "niedozwolone nazwy przestrzeni nazw" zawiera przestrzeń nazw, w której jest zdefiniowany ten element kodu. Jest to naruszenie ograniczenia nazw. Należy zauważyć, że właściwość "niedozwolone nazwy przestrzeni nazw" jest definiowana jako rozdzielana średnikami lista przestrzeni nazw, w których nie należy definiować elementów kodu skojarzonych z tą warstwą. |
+| DV2001: **obecność diagramu warstwowego** | Ten problem jest raportowany w projekcie, który nie zawiera pliku diagramu zależności, ale odwołuje się do analizatorów walidacji zależności. Jeśli walidacja zależności nie została użyta, można usunąć "Microsoft. DependencyValidation. analizatory" bezpośrednio z Eksplorator rozwiązań lub pominąć to ostrzeżenie. Aby dodać diagram zależności, zobacz [Tworzenie diagramów zależności na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md). |
+| DV2002: **Niemapowane typy podstawowe** | Ten problem jest raportowany, gdy element kodu nie jest zamapowany na żadną warstwę. |
 | DV3001: **Brak linku** | Warstwa "*LayerName*" łączy się z "*artefaktem*", którego nie można znaleźć. Czy nie brakuje odwołania do zestawu? |
 | DV9001: **Analiza architektury znalazła błędy wewnętrzne** | Wyniki mogą być niepełne. Aby uzyskać więcej informacji, zobacz szczegółowy dziennik zdarzeń kompilacji lub okno danych wyjściowych. |
 

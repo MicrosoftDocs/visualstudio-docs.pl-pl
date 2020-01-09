@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b5443599e5e84cab1693aca4281c882c082162
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645336"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595907"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Konta, środowisko, Opcje — okno dialogowe
 
@@ -29,7 +29,7 @@ Użyj tej opcji, aby określić, czy synchronizować ustawienia na wielu maszyna
 
 ### <a name="enable-device-code-flow"></a>Włącz przepływ kodu urządzenia
 
-Po wybraniu tej opcji zachowanie programu Visual Studio zmienia się, gdy wybierzesz pozycję **Dodaj konto** na stronie**ustawień konta**  >  **pliku** . Zamiast wyświetlania strony **logowania do konta** zostanie wyświetlone okno dialogowe z adresem URL i kodem do wklejenia do przeglądarki sieci Web w celu zalogowania się. Ta opcja jest przydatna w przypadkach, gdy nie można zalogować się do programu Visual Studio w zwykły sposób, na przykład jeśli używasz starszej wersji programu Internet Explorer lub Zapora ogranicza dostęp. Aby uzyskać więcej informacji, zobacz [pracy z wieloma kontami użytkowników](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
+Po wybraniu tej opcji zachowanie programu Visual Studio zmienia się, gdy wybierzesz pozycję **Dodaj konto** na stronie **ustawień konta** > **pliku** . Zamiast wyświetlania strony **logowania do konta** zostanie wyświetlone okno dialogowe z adresem URL i kodem do wklejenia do przeglądarki sieci Web w celu zalogowania się. Ta opcja jest przydatna w przypadkach, gdy nie można zalogować się do programu Visual Studio w zwykły sposób, na przykład jeśli używasz starszej wersji programu Internet Explorer lub Zapora ogranicza dostęp. Aby uzyskać więcej informacji, zobacz [Praca z wieloma kontami użytkownika](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow).
 
 ## <a name="registered-azure-clouds"></a>Zarejestrowane chmury platformy Azure
 

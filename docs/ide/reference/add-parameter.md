@@ -2,25 +2,25 @@
 title: Dodawanie parametru do szybkiej akcji metody
 ms.date: 09/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595868"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Dodawanie parametru do metody przy użyciu szybkiej akcji
 
-Ta generacja kodu ma zastosowanie do:
+Dotyczy to generowanie kodu:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
 **Co:** Umożliwia automatyczne dodanie parametru do metody na podstawie użycia.
 
@@ -39,7 +39,7 @@ Ta generacja kodu ma zastosowanie do:
    ![Dodawanie parametru do szybkiej akcji metody w programie Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > Możesz również uzyskać dostęp do menu szybkie akcje, umieszczając kursor w wierszu wywołania metody, a następnie naciskając klawisz **Ctrl** + **.** (kropka) lub wybierz ikonę żarówki w marginesie pliku.
+   > Możesz również uzyskać dostęp do menu szybkie akcje, umieszczając kursor w wierszu wywołania metody, a następnie naciskając klawisz **Ctrl**+ **.** (kropka) lub wybierz ikonę żarówki w marginesie pliku.
 
    Program Visual Studio dodaje nowy parametr do deklaracji metody.
 

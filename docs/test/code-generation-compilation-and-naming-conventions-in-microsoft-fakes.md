@@ -2,23 +2,23 @@
 title: 'Sztuczne firmy Microsoft: generowanie kodu kompilacji & Konwencje nazewnictwa'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665248"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589334"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Konwencje dotyczące generowania, kompilowania i nazywania w Microsoft Fakes
 
 W tym artykule omówiono opcje i kwestie w substytuty Generowanie i kompilacja kodu i opisano konwencje nazewnictwa dla typów, elementów członkowskich i parametrów pozornie wygenerowanych.
 
-**Wymagania**
+**Requirements**
 
 - Visual Studio Enterprise
 - Projekt programu .NET Framework

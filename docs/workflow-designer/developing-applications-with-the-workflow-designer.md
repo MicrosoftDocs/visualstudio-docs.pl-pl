@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650532"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597090"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Programowanie aplikacji za pomocą Projektanta przepływu pracy
 
@@ -31,7 +31,7 @@ Projektant przepływu pracy to wizualny Projektant i debuger służący do grafi
 
 Aby użyć szablonów projektów przepływu pracy w programie Visual Studio, najpierw Zainstaluj składnik **Windows Workflow Foundation** .
 
-1. Otwórz Instalator programu Visual Studio. Aby szybko otworzyć tę funkcję, wybierz pozycję **narzędzia**  > **Pobierz narzędzia i funkcje** w programie Visual Studio.
+1. Otwórz Instalator programu Visual Studio. Aby szybko otworzyć tę funkcję, wybierz pozycję **narzędzia** > **Pobierz narzędzia i funkcje** w programie Visual Studio.
 
 1. W Instalator programu Visual Studio wybierz kartę **poszczególne składniki** .
 

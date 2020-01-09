@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985127"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594737"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Instrukcje: Dodawanie polecenia do menu skrótów
 
@@ -220,9 +220,9 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 Następujące fragmenty są często przydatne w metodach OnStatus:
 
-- `this.CurrentSelection`., Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
+- `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
-- `this.IsDiagramSelected()`  -  `true`, jeśli użytkownik kliknął pustą część diagramu.
+- `this.IsDiagramSelected()` - `true`, jeśli użytkownik kliknął pustą część diagramu.
 
 - `this.IsCurrentDiagramEmpty()`
 
@@ -241,7 +241,7 @@ Metoda OnStatus nie powinna zmieniać stanu magazynu.
 
  W przypadku wprowadzania zmian do elementów modelu należy to zrobić wewnątrz transakcji. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
- W tym przykładzie `ClassShape`, `ModelClass` i `Comment` są typami, które są zdefiniowane w DSL, które pochodzą z szablonu klasy diagramu DSL.
+ W tym przykładzie `ClassShape`, `ModelClass`i `Comment` są typami, które są zdefiniowane w DSL, które pochodzą z szablonu klasy diagramu DSL.
 
 ```csharp
 private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
@@ -333,7 +333,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **Polecenie nie jest wyświetlane w menu:**
 
-- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](msi-and-vsix-deployment-of-a-dsl.md).
+- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Upewnij się, że próbka eksperymentalna ma poprawne rozszerzenie nazwy pliku dla tego języka DSL. Aby sprawdzić rozszerzenie nazwy pliku, Otwórz DslDefinition. DSL w głównym wystąpieniu programu Visual Studio. Następnie w Eksploratorze DSL kliknij prawym przyciskiem myszy węzeł Edytor, a następnie kliknij polecenie Właściwości. W okno Właściwości, zapoznaj się z właściwością FileExtension.
 

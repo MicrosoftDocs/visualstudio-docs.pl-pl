@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a8ea7977f73be2a38a8ac7a417c6794b567e600
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189113"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594867"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Witamy w programie Visual Studio IDE |\# C
 
@@ -26,7 +26,7 @@ ms.locfileid: "73189113"
 
 Skonfigurujmy program Visual Studio tak, aby korzystał z ustawień C# środowiska, które są dostosowane do deweloperów.
 
-1. Na pasku menu wybierz kolejno opcje **narzędzia**  > **Importuj i Eksportuj ustawienia**.
+1. Na pasku menu wybierz **narzędzia** > **Import i eksport ustawień**.
 
 2. W **Kreatorze importowania i eksportowania ustawień**wybierz pozycję **Zresetuj wszystkie ustawienia** na pierwszej stronie, a następnie wybierz przycisk **dalej**.
 
@@ -36,20 +36,20 @@ Skonfigurujmy program Visual Studio tak, aby korzystał z ustawień C# środowis
 
 5. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
-Aby dowiedzieć się więcej na temat innych sposobów personalizowania środowiska IDE, zobacz [Personalizowanie programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+Aby dowiedzieć się więcej o innych metodach, które można spersonalizować środowisko IDE, zobacz [Personalizowanie programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-Poznanie programu Visual Studio w następujący sposób wraz z jednym z następujących artykułów wprowadzających:
+Zapoznaj się dodatkowo program Visual Studio, wykonując wraz z jednym niniejsze artykuły wprowadzające zawierają:
 
 > [!div class="nextstepaction"]
 > [Dowiedz się, jak używać edytora kodu](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Informacje o projektach i rozwiązaniach](../tutorial-projects-solutions.md)
+> [Dowiedz się więcej o projekty i rozwiązania](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Zobacz także
 
 - Odkryj [więcej funkcji programu Visual Studio](../../ide/advanced-feature-overview.md)
-- Odwiedź witrynę [VisualStudio.Microsoft.com](https://visualstudio.microsoft.com/vs/)
-- Przeczytaj [Blog programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- Odwiedź stronę [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- Odczyt [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/)

@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f54485a4dd47b0aec4401f6cdfb39072e9f8cf
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461407"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595725"
 ---
 # <a name="debug-page-project-designer"></a>Strona debugowania, Projektant projektu
 
 Strona **Debuguj** **projektanta projektu** służy do ustawiania właściwości zachowania debugowania w Visual Basic lub C# projekcie.
 
-Aby uzyskać dostęp do strony **debugowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**. W menu **projekt** wybierz pozycję  **\<ProjectName > Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **debugowanie** .
+Aby uzyskać dostęp do strony **debugowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**. W menu **projekt** wybierz **\<ProjectName > Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **debugowanie** .
 
 > [!NOTE]
 > W tym temacie nie ma zastosowania do aplikacji platformy uniwersalnej systemu Windows. Zobacz [Rozpoczynanie sesji debugowania (VB, C# C++ i XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) dla aplikacji platformy UWP.
@@ -38,13 +38,13 @@ Poniższe opcje pozwalają wybrać konfigurację i platformę do wyświetlenia l
 
 Określa ustawienia konfiguracji do wyświetlenia lub zmodyfikowania. Ustawienia mogą być **debugowane** (ustawienie domyślne), **wydanie**lub **wszystkie konfiguracje**.
 
-**Platformach**
+**Platforma**
 
 Określa ustawienia platformy do wyświetlenia lub zmodyfikowania. Dostępne opcje to: **dowolny procesor** (domyślny), **x64**i **x86**.
 
 ## <a name="start-action"></a>Uruchom akcję
 
-**Akcja uruchamiania** wskazuje element, który ma zostać uruchomiony podczas debugowania aplikacji: projekt, program niestandardowy, adres URL lub wartość Nothing. Domyślnie ta opcja jest ustawiona na **Uruchom projekt**. Ustawienie **akcji Rozpocznij** na stronie **Debuguj** określa `StartAction` wartość właściwości.
+**Akcja uruchamiania** wskazuje element, który ma zostać uruchomiony podczas debugowania aplikacji: projekt, program niestandardowy, adres URL lub wartość Nothing. Domyślnie ta opcja jest ustawiona na **Uruchom projekt**. Ustawienie **akcji Rozpocznij** na stronie **Debuguj** określa wartość właściwości `StartAction`.
 
 **Uruchom projekt**
 
@@ -87,5 +87,5 @@ Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć debugowanie
 - [Pierwsze spojrzenie na debugera](../../debugger/debugger-feature-tour.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Instrukcje: Debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Instrukcje: debugowanie aplikacji ClickOnce przy użyciu ograniczonych uprawnień](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../../ide/how-to-create-and-edit-configurations.md)

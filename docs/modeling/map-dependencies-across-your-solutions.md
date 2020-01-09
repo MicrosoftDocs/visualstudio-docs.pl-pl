@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fb9b1a08dc54257f24f469d3a717b82faccf45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a6e4efbc0cf950781c84eadf974ea87943d9828c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661543"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594581"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapowanie zależności za pomocą map kodu
 
@@ -49,7 +49,7 @@ Można mapować zależności dla kodu w następujących językach:
 
 Aby utworzyć mapę kodu w programie Visual Studio, najpierw zainstaluj składniki **Mapa kodu** i **Walidacja aktywnej zależności** :
 
-1. Otwórz **Instalator programu Visual Studio**. Możesz otworzyć ją z menu Start systemu Windows lub w programie Visual Studio, wybierając pozycję **narzędzia**  > **Pobierz narzędzia i funkcje**.
+1. Otwórz **Instalator programu Visual Studio**. Możesz otworzyć ją z menu Start systemu Windows lub w programie Visual Studio, wybierając pozycję **narzędzia** > **Pobierz narzędzia i funkcje**.
 
 1. Wybierz kartę **poszczególne składniki** .
 
@@ -67,7 +67,7 @@ Można utworzyć pustą mapę kodu i przeciągnąć do niej elementy, takie jak 
 
 Aby dodać pustą mapę kodu:
 
-1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązania najwyższego poziomu. Wybierz pozycję **dodaj**  > **nowy element**.
+1. W **Eksplorator rozwiązań**Otwórz menu skrótów dla węzła rozwiązania najwyższego poziomu. Wybierz pozycję **dodaj** > **nowy element**.
 
 2. W oknie dialogowym **Dodaj nowy element** w obszarze **zainstalowane**wybierz kategorię **Ogólne** .
 
@@ -78,13 +78,13 @@ Aby dodać pustą mapę kodu:
 
    Pusta mapa zostanie wyświetlona w folderze **elementów rozwiązania** rozwiązania.
 
-Podobnie można utworzyć nowy plik mapy kodu bez dodawania go do rozwiązania, wybierając pozycję **architektura**  > **nową mapę kodu** lub **plik**  > **nowym** ** > .**
+Podobnie można utworzyć nowy plik mapy kodu bez dodawania go do rozwiązania, wybierając pozycję **architektura** > **nową mapę kodu** lub **plik** > **nowym** ** > .**
 
 ## <a name="generate-a-code-map-for-your-solution"></a>Generuj mapę kodu dla rozwiązania
 
 Aby wyświetlić wszystkie zależności w rozwiązaniu:
 
-1. Na pasku menu wybierz pozycję **architektura**  > **Generuj mapę kodu dla rozwiązania**. Jeśli Twój kod nie zmienił się od czasu ostatniego skompilowania, możesz wybrać **architekturę**  > **wygenerować mapę kodu dla rozwiązania bez kompilowania** .
+1. Na pasku menu wybierz pozycję **architektura** > **Generuj mapę kodu dla rozwiązania**. Jeśli Twój kod nie zmienił się od czasu ostatniego skompilowania, możesz wybrać **architekturę** > **wygenerować mapę kodu dla rozwiązania bez kompilowania** .
 
    ![Generowanie polecenia mapy kodu](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -146,7 +146,7 @@ Aby wyświetlić wszystkie zależności w rozwiązaniu:
 
     ![Wybierz elementy, aby wyświetlić relacje](../modeling/media/codemapsviewnewrelationships.png)
 
-Zobacz również:
+Zobacz też:
 
 - [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)
 - [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
@@ -162,7 +162,7 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
 
    ![Wybierz elementy, które chcesz zmapować](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. Na pasku narzędzi **Eksplorator rozwiązań** wybierz przycisk **Pokaż na mapie kodu** ![Create nowy wykres z wybranych węzłów ](../modeling/media/createnewgraphfromselectedbutton.gif). Lub Otwórz menu skrótów dla jednej lub grupy elementów i wybierz **Pokaż na mapie kodu**.
+1. Na pasku narzędzi **Eksplorator rozwiązań** wybierz pozycję **Pokaż na mapie kodu** ![przycisk Utwórz nowy wykres z wybranych węzłów](../modeling/media/createnewgraphfromselectedbutton.gif). Lub Otwórz menu skrótów dla jednej lub grupy elementów i wybierz **Pokaż na mapie kodu**.
 
    Możesz również przeciągać elementy z **Eksplorator rozwiązań**, **Widok klasy**lub **Przeglądarka obiektów**do [nowej](#add-a-code-map) lub istniejącej mapy kodu. Aby uwzględnić hierarchię nadrzędną dla elementów, naciśnij i przytrzymaj klawisz **Ctrl** podczas przeciągania elementów lub użyj przycisku **Dołącz obiekty nadrzędne** na pasku narzędzi Mapa kodu, aby określić akcję domyślną. Możesz również przeciągać pliki zestawu spoza programu Visual Studio, na przykład z **Eksploratora Windows**.
 
@@ -177,13 +177,13 @@ Załóżmy, że masz przegląd kodu do wykonania w niektórych plikach z oczekuj
 
    ![Rozszerzanie węzła na mapie kodu](../modeling/media/dependencygraph_containment.png)
 
-   Aby rozwinąć wszystkie elementy, zaznacz je za pomocą **klawisza Ctrl** +**A**, a następnie otwórz menu skrótów dla mapy i wybierz **grupę**  > **Rozwiń**. Jednak ta opcja jest niedostępna, jeśli rozszerzanie wszystkich grup tworzy niezdatną mapę lub problemy z pamięcią.
+   Aby rozwinąć wszystkie elementy, zaznacz je za pomocą **klawisza Ctrl**+**A**, a następnie otwórz menu skrótów dla mapy i wybierz **grupę** > **Rozwiń**. Jednak ta opcja jest niedostępna, jeśli rozszerzanie wszystkich grup tworzy niezdatną mapę lub problemy z pamięcią.
 
 5. Kontynuuj rozwijanie interesujących Cię elementów, a jeśli to konieczne, na poziomie klasy i elementu członkowskiego.
 
    ![Rozwiń grupy do poziomu klasy i elementu członkowskiego](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Aby wyświetlić elementy członkowskie, które znajdują się w kodzie, ale nie są wyświetlane na mapie, kliknij ikonę ponownie **Pobierz elementy podrzędne** ![Refetch ikonie elementów podrzędnych ](../modeling/media/dependencygraph_deletednodesicon.png) w lewym górnym rogu grupy.
+   Aby wyświetlić elementy członkowskie, które znajdują się w kodzie, ale nie są wyświetlane na mapie, kliknij ikonę ponownie **Pobierz elementy podrzędne** , ![ikonę ponownie Pobierz elementy podrzędne](../modeling/media/dependencygraph_deletednodesicon.png) w lewym górnym rogu grupy.
 
 6. Aby wyświetlić więcej elementów związanych z tymi elementami na mapie, wybierz jeden z nich i wybierz **Pokaż powiązane** z paskiem narzędzi Mapa kodu, a następnie wybierz typ powiązanych elementów do dodania do mapy. Alternatywnie wybierz co najmniej jeden element, otwórz menu skrótów, a następnie wybierz opcję **Pokaż** dla typu elementów pokrewnych, które mają zostać dodane do mapy. Na przykład:
 

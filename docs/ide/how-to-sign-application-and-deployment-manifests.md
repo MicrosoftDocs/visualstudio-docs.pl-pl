@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji'
+title: 'Instrukcje: podpisywanie aplikacji i manifestów wdrożenia'
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079367"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596167"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Instrukcje: podpisywanie aplikacji i manifestów wdrożenia
 
 Jeśli chcesz opublikować aplikację przy użyciu wdrożenia ClickOnce, manifesty aplikacji i wdrożenia muszą być podpisane za pomocą pary kluczy publiczny/prywatny i podpisane przy użyciu technologii Authenticode. Można podpisać manifesty przy użyciu certyfikatu z magazynu certyfikatów systemu Windows lub pliku klucza.
 
@@ -33,7 +33,7 @@ Aby uzyskać więcej informacji na temat wdrażania ClickOnce, zobacz [zabezpiec
 
 Podpisywanie manifestów ClickOnce jest opcjonalne dla aplikacji opartych na programie *. exe*. Aby uzyskać więcej informacji, zobacz sekcję "Generowanie nieoznaczonych manifestów" w tym dokumencie.
 
-Aby uzyskać informacje na temat tworzenia plików kluczy [, zobacz How to: Utwórz parę](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)kluczy publiczny-prywatny.
+Aby uzyskać informacje na temat tworzenia plików kluczy, zobacz [How to: Create a Public-Private Key pair](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Program Visual Studio obsługuje tylko pliki kluczy wymiany informacji osobistych (PFX), które mają rozszerzenie *PFX* . Można jednak wybrać inne typy certyfikatów z magazynu certyfikatów systemu Windows bieżącego użytkownika, klikając **pozycję Wybierz ze sklepu** na stronie **podpisywanie** właściwości projektu.
@@ -71,7 +71,7 @@ Aby uzyskać informacje na temat tworzenia plików kluczy [, zobacz How to: Utw�
 4. Wprowadź hasło, aby uzyskać dostęp do pliku klucza, a następnie wybierz klawisz **Enter**.
 
 > [!NOTE]
-> Plik *PFX* nie może zawierać informacji o łańcuchu certyfikatów. Jeśli tak się dzieje, wystąpi następujący błąd importowania: **Nie można znaleźć certyfikatu i klucza prywatnego do odszyfrowania**. Aby usunąć informacje o łańcuchu certyfikatów, można użyć *certmgr. msc* i [wyłączyć opcję](/previous-versions/aa730868(v=vs.80)) **uwzględniania wszystkich certyfikatów** podczas eksportowania pliku *. pfx.
+> Plik *PFX* nie może zawierać informacji o łańcuchu certyfikatów. Jeśli tak się dzieje, wystąpi następujący błąd importowania: **nie można odnaleźć certyfikatu i klucza prywatnego do odszyfrowania**. Aby usunąć informacje o łańcuchu certyfikatów, można użyć *certmgr. msc* i [wyłączyć opcję](/previous-versions/aa730868(v=vs.80)) **uwzględniania wszystkich certyfikatów** podczas eksportowania pliku *. pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Podpisywanie przy użyciu certyfikatu testowego
 
@@ -96,7 +96,7 @@ Domyślnie ClickOnce automatycznie generuje podpisane manifesty, chyba że co na
 
 2. Na stronie **podpisywanie** wyczyść pole wyboru **Podpisz manifesty ClickOnce** .
 
-3. Zresetuj wersję publikacji tak, aby była dostępna tylko jedna wersja aplikacji. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikacji przy każdym publikowaniu aplikacji. Aby uzyskać więcej informacji, zobacz [jak: Ustaw wersję](../deployment/how-to-set-the-clickonce-publish-version.md)publikacji ClickOnce.
+3. Zresetuj wersję publikacji tak, aby była dostępna tylko jedna wersja aplikacji. Domyślnie program Visual Studio automatycznie zwiększa numer wersji publikacji przy każdym publikowaniu aplikacji. Aby uzyskać więcej informacji, zobacz [How to: Set The ClickOnce Publish Version](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Opublikuj aplikację.
 

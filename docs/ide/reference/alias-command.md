@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596908"
 ---
 # <a name="alias-command"></a>Alias — Polecenie
 Tworzy nowy alias dla kompletnego polecenia, kompletne polecenie i argumenty lub inny alias.
@@ -46,7 +46,7 @@ Opcjonalny. Pełna nazwa polecenia lub istniejący alias oraz wszystkie parametr
 /DELETE lub/del lub/d\
 Opcjonalny. Usuwa określony alias, usuwając go z autouzupełniania.
 
-/Reset
+/Reset\
 Opcjonalny. Resetuje listę wstępnie zdefiniowanych aliasów do jej oryginalnych ustawień. Oznacza to, że przywraca wszystkie wstępnie zdefiniowane aliasy i usuwa wszystkie aliasy zdefiniowane przez użytkownika.
 
 ## <a name="remarks"></a>Uwagi
@@ -57,7 +57,7 @@ Po wydaniu tego polecenia, należy uwzględnić przełączniki natychmiast po po
 Przełącznik `/reset` prosi o potwierdzenie przed przywróceniem aliasów. Nie ma żadnej krótkiej formy `/reset`.
 
 ## <a name="examples"></a>Przykłady
-W tym przykładzie tworzony jest nowy alias, `upper` w celu wykonania polecenia Edit. MakeUpperCase.
+W tym przykładzie tworzony jest nowy alias, `upper`w celu wykonania polecenia Edit. MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase

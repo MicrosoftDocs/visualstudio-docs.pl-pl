@@ -15,33 +15,33 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461291"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597337"
 ---
 # <a name="signing-page-project-designer"></a>Strona podpisywania, Projektant projektu
 
-Na stronie  podpisywanie **projektanta projektu** można podpisać aplikacje i manifesty wdrażania, a także podpisać zestaw (podpisywanie silnej nazwy).
+Na stronie **podpisywanie** **projektanta projektu** można podpisać aplikacje i manifesty wdrażania, a także podpisać zestaw (podpisywanie silnej nazwy).
 
 Należy zauważyć, że podpisywanie aplikacji i manifestów wdrożenia jest procesem odrębnym od podpisywania zestawu, chociaż oba zadania są wykonywane na stronie **podpisywania** .
 
 Ponadto przechowywanie informacji o plikach klucza różni się w przypadku podpisywania manifestu i podpisywania zestawu. W przypadku podpisywania manifestu informacje o kluczu są przechowywane w bazie danych magazynu kryptograficznego komputera i w magazynie certyfikatów systemu Windows bieżącego użytkownika. W przypadku podpisywania zestawu kluczowe informacje są przechowywane tylko w bazie danych magazynu kryptograficznego komputera.
 
-Aby uzyskać dostęp do strony **podpisywania** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę  podpisywanie.
+Aby uzyskać dostęp do strony **podpisywania** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **podpisywanie** .
 
 ## <a name="application-and-deployment-manifest-signing"></a>Podpisywanie manifestu aplikacji i wdrożenia
 
 Pole wyboru **Podpisz manifesty ClickOnce**
 
-Zaznacz to pole wyboru, aby podpisać aplikacje i manifesty wdrożenia za pomocą pary kluczy publicznych/prywatnych. Aby uzyskać więcej informacji o tym, jak to zrobić [, zobacz How to: Podpisywanie aplikacji i manifestów](../../ide/how-to-sign-application-and-deployment-manifests.md)wdrożenia.
+Zaznacz to pole wyboru, aby podpisać aplikacje i manifesty wdrożenia za pomocą pary kluczy publicznych/prywatnych. Aby uzyskać więcej informacji o tym, jak to zrobić, zobacz [How to: Signing Application and Deployment Manifests](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
 Przycisk **Wybierz z magazynu**
 
@@ -63,7 +63,7 @@ Przycisk **tworzenia certyfikatu testowego**
 
 Umożliwia utworzenie certyfikatu do testowania. Certyfikat testowy jest używany do podpisywania aplikacji ClickOnce i manifestów wdrożenia.
 
-Kliknięcie przycisku **Utwórz certyfikat testowy** otwiera okno dialogowe **Tworzenie certyfikatu testowego** , w którym można wpisać hasło dla pliku klucza o silnej nazwie dla certyfikatu testowego. Plik ma nazwę *ProjectName*_TemporaryKey. pfx. Jeśli klikniesz przycisk **OK** bez wpisywania hasła, plik PFX nie jest szyfrowany hasłem.
+Kliknięcie przycisku **Utwórz certyfikat testowy** otwiera okno dialogowe **Tworzenie certyfikatu testowego** , w którym można wpisać hasło dla pliku klucza o silnej nazwie dla certyfikatu testowego. Plik ma nazwę *projectname*_TemporaryKey. pfx. Jeśli klikniesz przycisk **OK** bez wpisywania hasła, plik PFX nie jest szyfrowany hasłem.
 
 Pole **adresu URL serwera znacznika czasowego**
 
@@ -73,15 +73,15 @@ Określa adres serwera, który sygnatura czasowa sygnatury. Po podaniu certyfika
 
 Pole wyboru **podpisz zestaw**
 
-Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu**, zobacz [How to: Podpisz zestaw (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Zaznacz to pole wyboru, aby podpisać zestaw i utworzyć silnie nazwany plik klucza. Aby uzyskać więcej informacji na temat podpisywania zestawu przy użyciu **projektanta projektu**, zobacz [How to: Sign a Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
-Ta opcja używa narzędzia Al. exe dostarczonego przez zestaw Windows Software Development Kit (SDK) do podpisywania zestawu. Aby uzyskać więcej informacji na temat programu Al. [exe, zobacz How to: Podpisz zestaw silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Ta opcja używa narzędzia Al. exe dostarczonego przez zestaw Windows Software Development Kit (SDK) do podpisywania zestawu. Aby uzyskać więcej informacji na temat Al. exe, zobacz [How to: Sign a Assembly with silnej nazwy](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
 **Wybierz listę plików klucza o silnej nazwie**
 
-Umożliwia określenie nowego lub istniejącego silnego pliku klucza, który jest używany do podpisywania zestawu. Wybierz pozycję  **\<Przeglądaj... >** wybrać istniejący plik klucza.
+Umożliwia określenie nowego lub istniejącego silnego pliku klucza, który jest używany do podpisywania zestawu. Wybierz pozycję **\<Przeglądaj... >** wybrać istniejący plik klucza.
 
-Wybierz pozycję  **\<nowy... >** utworzyć nowy plik klucza, za pomocą którego ma zostać podpisywany zestaw. Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** , za pomocą którego można określić nazwę pliku klucza i chronić plik klucza hasłem. Hasło musi mieć długość co najmniej 6 znaków. Jeśli określisz hasło, zostanie utworzony plik wymiany informacji osobistych (pfx). Jeśli nie określisz hasła, zostanie utworzony plik o silnej nazwie (. snk).
+Wybierz **\<nowy... >** utworzyć nowy plik klucza, za pomocą którego ma zostać podpisywany zestaw. Zostanie wyświetlone okno dialogowe **Tworzenie klucza silnej nazwy** , za pomocą którego można określić nazwę pliku klucza i chronić plik klucza hasłem. Hasło musi mieć długość co najmniej 6 znaków. Jeśli określisz hasło, zostanie utworzony plik wymiany informacji osobistych (pfx). Jeśli nie określisz hasła, zostanie utworzony plik o silnej nazwie (. snk).
 
 Przycisk **zmiany hasła**
 
@@ -93,16 +93,16 @@ Pole wyboru **Opóźnij tylko znakowanie**
 
 Zaznacz to pole wyboru, aby włączyć podpisywanie opóźnienia.
 
-Należy zauważyć, że podpisany z opóźnieniem projekt nie zostanie uruchomiony i nie będzie można go debugować. Można jednak użyć programu [SN. exe (Narzędzie silnej nazwy)](/dotnet/framework/tools/sn-exe-strong-name-tool) z `-Vr` opcją pominięcia weryfikacji podczas opracowywania.
+Należy zauważyć, że podpisany z opóźnieniem projekt nie zostanie uruchomiony i nie będzie można go debugować. Można jednak użyć programu [SN. exe (Narzędzie silnej nazwy)](/dotnet/framework/tools/sn-exe-strong-name-tool) z opcją `-Vr`, aby pominąć weryfikację podczas opracowywania.
 
 > [!NOTE]
-> Po podpisaniu zestawu użytkownik może nie mieć zawsze dostępu do klucza prywatnego. Na przykład organizacja może mieć silnie chronioną parę kluczy, dla których deweloperzy nie mają dostępu codziennie. Klucz publiczny może być dostępny, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć opóźnionego lub  częściowego *podpisywania* , aby podać klucz publiczny, odwołując dodanie klucza prywatnego do momentu, gdy zestaw nie zostanie przekazany.
+> Po podpisaniu zestawu użytkownik może nie mieć zawsze dostępu do klucza prywatnego. Na przykład organizacja może mieć silnie chronioną parę kluczy, dla których deweloperzy nie mają dostępu codziennie. Klucz publiczny może być dostępny, ale dostęp do klucza prywatnego jest ograniczony do kilku osób. W takim przypadku można użyć *opóźnionego* lub *częściowego podpisywania* , aby podać klucz publiczny, odwołując dodanie klucza prywatnego do momentu, gdy zestaw nie zostanie przekazany.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Odwołanie do właściwości projektu](../../ide/reference/project-properties-reference.md)
 - [Zarządzanie podpisywaniem zestawu i manifestu](../../ide/managing-assembly-and-manifest-signing.md)
-- [Instrukcje: Podpisywanie manifestów wdrożenia i aplikacji](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [Instrukcje: Podpisz zestaw (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Instrukcje: Podpisz zestaw silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Instrukcje: Podpisywanie aplikacji i manifestów wdrożenia](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Instrukcje: podpisywanie zestawu (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Instrukcje: podpisywanie zestawu silną nazwą](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Zestawy o silnych nazwach](/dotnet/framework/app-domains/strong-named-assemblies)

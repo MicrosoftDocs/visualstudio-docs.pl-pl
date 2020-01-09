@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655485"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593567"
 ---
 # <a name="services-page-project-designer"></a>Strona usług, Projektant projektu
 
@@ -31,13 +31,13 @@ Aby uzyskać dostęp do strony **usługi** , wybierz węzeł projektu w **Eksplo
 
 [Instrukcje: konfigurowanie usług aplikacji klienckich](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu
 
  **Konfiguracja**
 
 Ta kontrolka nie jest edytowalna na tej stronie. Aby uzyskać opis tego formantu, zobacz [stronę Kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) lub [stronę kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
- **Platformach**
+ **Platforma**
 
 Ta kontrolka nie jest edytowalna na tej stronie. Aby uzyskać opis tego formantu, zobacz [stronę Kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) lub [stronę kompilacji, Projektant projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
@@ -59,7 +59,7 @@ Używany tylko z uwierzytelnianiem formularzy. Określa lokalizację usługi uwi
 
  **Opcjonalne: Dostawca poświadczeń**
 
-Używany tylko z uwierzytelnianiem formularzy. Wskazuje implementację <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, która będzie używana przez usługę uwierzytelniania do wyświetlania okna dialogowego logowania, gdy aplikacja wywołuje metodę `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> i przekazuje puste ciągi lub `null` parametrów. Jeśli to pole pozostanie puste, należy przekazać prawidłową nazwę użytkownika i hasło do metody <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Należy określić dostawcę poświadczeń jako nazwę typu kwalifikowanego dla zestawu. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawów](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa typu kwalifikowana dla zestawu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
+Używany tylko z uwierzytelnianiem formularzy. Wskazuje implementację <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider>, która będzie używana przez usługę uwierzytelniania do wyświetlania okna dialogowego logowania, gdy aplikacja wywołuje metodę `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> i przekazuje puste ciągi lub `null` parametrów. Jeśli to pole pozostanie puste, należy przekazać prawidłową nazwę użytkownika i hasło do metody <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Należy określić dostawcę poświadczeń jako nazwę typu kwalifikowanego dla zestawu. Aby uzyskać więcej informacji, zobacz <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> i [nazwy zestawów](/dotnet/framework/app-domains/assembly-names). W najprostszej postaci nazwa typu kwalifikowana dla zestawu wygląda podobnie do poniższego przykładu: `MyNamespace.MyLoginClass, MyAssembly`
 
  **Lokalizacja usługi ról**
 

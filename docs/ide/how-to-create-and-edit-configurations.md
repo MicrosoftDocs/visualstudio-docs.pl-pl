@@ -14,17 +14,17 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bb47a1b136f4f1e584b9b1b6f99fde7008ecc902
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925759"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595296"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Instrukcje: Tworzenie i edytowanie konfiguracji
 
@@ -40,7 +40,7 @@ Można użyć okna dialogowego **Configuration Manager** , aby wybrać lub zmody
 Aby otworzyć okno dialogowe **Configuration Manager** , w **Eksplorator rozwiązań**Otwórz menu skrótów dla rozwiązania, a następnie wybierz **Configuration Manager**.
 
 > [!NOTE]
-> Jeśli polecenie **Configuration Manager** nie pojawia się w menu skrótów, poszukaj w menu **kompilacja** na pasku menu. Jeśli nie pojawia się on na pasku menu, wybierz**Opcje** **Narzędzia** > , a następnie w lewym okienku okna dialogowego **Opcje** rozwiń węzeł **projekty i rozwiązania** > **Ogólne**, a następnie w prawej Zaznacz pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** .
+> Jeśli polecenie **Configuration Manager** nie pojawia się w menu skrótów, poszukaj w menu **kompilacja** na pasku menu. Jeśli nie pojawia się na pasku menu, wybierz pozycję **narzędzia** > **Opcje**, a następnie w lewym okienku okna dialogowego **Opcje** rozwiń węzeł **projekty i rozwiązania** > **Ogólne**, a następnie w okienku po prawej stronie zaznacz pole wyboru **Pokaż zaawansowane konfiguracje kompilacji** .
 
 W oknie dialogowym **Configuration Manager** można użyć listy rozwijanej **aktywna Konfiguracja rozwiązania** , aby wybrać konfigurację kompilacji obejmującą całe rozwiązanie, zmodyfikować istniejącą lub utworzyć nową konfigurację. Możesz użyć listy rozwijanej **Active Solution platform** , aby wybrać platformę, do której należy konfiguracja, zmodyfikować istniejącą lub dodać nową platformę. W okienku **konteksty projektu** wyświetlane są projekty w rozwiązaniu. Dla każdego projektu można wybrać konfigurację i platformę specyficzną dla projektu, zmodyfikować istniejące lub utworzyć nową konfigurację lub dodać nową platformę. Możesz również zaznaczyć pola wyboru wskazujące, czy każdy projekt jest uwzględniany w przypadku używania konfiguracji całego rozwiązania do kompilowania lub wdrażania rozwiązania.
 
@@ -48,7 +48,7 @@ Po skonfigurowaniu żądanych konfiguracji można ustawić właściwości projek
 
 ### <a name="set-properties-based-on-configurations"></a>Ustawianie właściwości na podstawie konfiguracji
 
-Aby ustawić właściwości na podstawie konfiguracji, w **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz **Właściwości**. Można ustawić właściwości dla konfiguracji. Na przykład w przypadku konfiguracji wydania można określić, że kod jest zoptymalizowany, gdy rozwiązanie jest skompilowane, a w przypadku konfiguracji debugowania można określić, że `DEBUG` jest włączony symbol kompilacji warunkowej.
+Aby ustawić właściwości na podstawie konfiguracji, w **Eksplorator rozwiązań**Otwórz menu skrótów dla projektu, a następnie wybierz **Właściwości**. Można ustawić właściwości dla konfiguracji. Na przykład w przypadku konfiguracji wydania można określić, że kod jest zoptymalizowany, gdy rozwiązanie jest skompilowane, a w przypadku konfiguracji debugowania można określić, że `DEBUG` symbol kompilacji warunkowej jest włączony.
 
 Aby uzyskać więcej informacji na temat ustawień strony właściwości, zobacz [Zarządzanie właściwościami projektu i rozwiązania](../ide/managing-project-and-solution-properties.md).
 

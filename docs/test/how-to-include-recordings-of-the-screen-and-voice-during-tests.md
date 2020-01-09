@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, recording desktop video
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 572b3132056ebed1d26c983fdc4024d2ddc51a82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94d8fdc2765b3a073ca481d09bc38dfbc9b38f2c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653519"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589022"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Instrukcje: uwzględnianie nagrań ekranu i głosu podczas testów przy użyciu ustawień testu
 
@@ -56,14 +56,14 @@ Rejestrator ekranu i głosu może być używany z testami ręcznymi lub zautomat
 
     3. **Jakość (1 – 100):** Możesz określić jakość nagrywania ekranu i głosu, wybierając zakres z zakresu od 1 do 100. Wartość domyślna to 50 (średni zakres).
 
-7. Wybierz **przycisk OK**. Ustawienia modułu zbierającego dane śledzenia diagnostyki zostały teraz skonfigurowane i zapisane dla ustawień testu.
+7. Wybierz **OK**. Ustawienia modułu zbierającego dane śledzenia diagnostyki zostały teraz skonfigurowane i zapisane dla ustawień testu.
 
     > [!TIP]
     > Aby zresetować konfigurację tego adaptera danych diagnostycznych, wybierz pozycję **Zresetuj do konfiguracji domyślnej** dla programu Visual Studio i **Przywróć wartość domyślną** dla Microsoft Test Manager.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zbieraj dane diagnostyczne podczas testowania (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Zbieranie danych diagnostycznych w testach ręcznych (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Zbieranie informacji diagnostycznych za pomocą ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Uruchom testy ręczne (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)
+- [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Uruchamianie testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/run-manual-tests?view=vsts)

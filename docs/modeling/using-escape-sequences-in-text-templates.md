@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662916"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594048"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Korzystanie z sekwencji ucieczki w szablonach tekstowych
 
@@ -32,7 +32,7 @@ Jeśli blok tekstu zawiera ciągi używane do ucieczki tagów szablonu tekstu, m
 
 - Jeśli tag szablonu tekstu jest poprzedzony parzystą liczbą znaków ucieczki (\\), Analizator szablonu będzie zawierał połowę znaków ucieczki i dołączył sekwencję jako tag szablonu tekstu. Na przykład jeśli w szablonie tekstowym istnieją cztery znaki ucieczki, w wygenerowanym pliku będą znajdować się dwa znaki "\\".
 
-- Jeśli tag szablonu tekstu jest poprzedzony nieparzystą liczbą znaków ucieczki (\\), Analizator szablonu będzie zawierał połowę znaków "\\" i sam tag (\< # lub # >). Tag nie jest traktowany jako tag szablonu tekstu.
+- Jeśli tag szablonu tekstu jest poprzedzony nieparzystą liczbą znaków ucieczki (\\), Analizator szablonu będzie zawierał połowę znaków "\\" i sam tag (\<# lub # >). Tag nie jest traktowany jako tag szablonu tekstu.
 
 - Jeśli znak ucieczki (\\) pojawia się w dowolnym miejscu w dowolnej innej kolejności niż w przypadku ucieczki znaku kontrolnego lub cudzysłowu C# (tylko w przypadku), znak będzie wyprowadzany bezpośrednio.
 

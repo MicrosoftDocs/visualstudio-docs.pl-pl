@@ -5,21 +5,21 @@ ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f35348e6704ffa822ba5dee93ad930f209004e1
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: ce4a118d57c20cad9556ecb3b44127ed10ae96b0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586869"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597285"
 ---
-# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykładowe parametry wiersza polecenia do zainstalowania programu Visual Studio
+# <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykłady parametrów wiersza polecenia dla instalacji programu Visual Studio
 
 Aby zilustrować, jak [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md), poniżej przedstawiono kilka przykładów, które można dostosować do potrzeb.
 
@@ -31,7 +31,7 @@ W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_communit
 > [!NOTE]
 > Możesz użyć `^` znak na końcu wiersza polecenia do łączenia wielu wierszy w pojedynczym poleceniu. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednik to początkowych (`` ` ``) znaków.
 
-Aby uzyskać listę obciążeń i składników, które można zainstalować przy użyciu wiersza polecenia, zobacz [identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md) strony.
+Listę obciążeń i składników, które można zainstalować przy użyciu wiersza polecenia, znajdują się na stronie [obciążenia i identyfikatory składników programu Visual Studio](workload-and-component-ids.md) .
 
 ## <a name="using---installpath"></a>Przy użyciu opcji--installPath
 
@@ -62,9 +62,9 @@ Aby uzyskać listę obciążeń i składników, które można zainstalować przy
    --includeRecommended --quiet --wait
   ```
 
-## <a name="using---wait"></a>Przy użyciu opcji--oczekiwania
+## <a name="using---wait"></a>Użycie--czekaj
 
-* Umożliwia w plikach wsadowych lub skrypty poczekaj, aż Instalator programu Visual Studio w taki sposób, aby ukończyć przed wykonaniem polecenia dalej. W przypadku plików usługi batch `%ERRORLEVEL%` zmienna środowiskowa będzie zawierać wartość zwracaną przez polecenie, zgodnie z opisem w [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony. Niektóre narzędzia polecenia wymaga dodatkowych parametrów, aby czekać na zakończenie i w celu uzyskania wartości zwracanej przez Instalator. Oto przykład dodatkowe parametry, które są używane z polecenia skryptu programu PowerShell "Procesu uruchamiania":
+* Użyj w plikach wsadowych lub w skryptach, aby poczekać na ukończenie Instalatora programu Visual Studio przed wykonaniem następnego polecenia. W przypadku plików wsadowych zmienna środowiskowa `%ERRORLEVEL%` będzie zawierać wartość zwracaną polecenia, zgodnie z opisem w [parametrach wiersza polecenia Użyj, aby zainstalować stronę programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) . Niektóre narzędzia poleceń wymagają dodatkowych parametrów oczekiwania na ukończenie i pobrania wartości zwracanej przez Instalatora. Poniżej znajduje się przykład dodatkowych parametrów używanych z poleceniem skryptu programu PowerShell "Start-Process":
 
    ```cmd
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
@@ -87,7 +87,7 @@ Aby uzyskać listę obciążeń i składników, które można zainstalować przy
     $process.WaitForExit()
    ```
 
-* Pierwszy "--oczekiwania" jest używany przez Instalatora programu Visual Studio, a drugi "-oczekiwania" jest używany przez "Procesu uruchamiania" czekać na zakończenie. "-PassThru" parametr jest używany przez "Procesu uruchamiania" na potrzeby Instalatora kod zakończenia jego zwracanej wartości.
+* Pierwszy "--Wait" jest używany przez Instalator programu Visual Studio, a drugi "-Wait" jest używany przez element "Start-Process", aby poczekać na zakończenie. Parametr "-PassThru" jest używany przez "Start-Process", aby użyć kodu zakończenia Instalatora dla jego wartości zwracanej.
 
 ## <a name="using---layout"></a>Przy użyciu opcji--układu
 
@@ -110,9 +110,9 @@ Aby uzyskać listę obciążeń i składników, które można zainstalować przy
    --includeRecommended
   ```
 
-## <a name="using---all"></a>Przy użyciu opcji--wszystko
+## <a name="using---all"></a>Użycie — wszystkie
 
-* Rozpocznij instalacji interakcyjnej wszystkich obciążeń i składników, które są dostępne w programie Visual Studio Enterprise:
+* Rozpocznij instalację interaktywną wszystkich obciążeń i składników, które są dostępne w wersji Visual Studio Enterprise:
 
    ```cmd
    vs_enterprise.exe --all
@@ -120,7 +120,7 @@ Aby uzyskać listę obciążeń i składników, które można zainstalować przy
 
 ## <a name="using---includerecommended"></a>Za pomocą--includeRecommended
 
-* Zainstalować drugie wystąpienie nazwane programu Visual Studio Professional na komputerze z zainstalowanym, obsługę tworzenia aplikacji Node.js w wersji programu Visual Studio Community:
+* Zainstaluj drugie nazwane wystąpienie Visual Studio Professional na komputerze z zainstalowanym już programem Visual Studio Community Edition z obsługą programowania Node. js:
 
    ```cmd
    vs_professional.exe --installPath C:\VSforNode ^

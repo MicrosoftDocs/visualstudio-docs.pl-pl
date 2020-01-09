@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild (C++), CPPClean task
 - CPPClean task (MSBuild (C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6e893dcf289c5060f519523b18b53b701f8055
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748125"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596076"
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
 Usuwa pliki tymczasowe, które program MSBuild tworzy po C++ skompilowaniu projektu. Proces usuwania plików kompilacji jest znany jako *czyszczenie*.
@@ -35,7 +35,7 @@ Usuwa pliki tymczasowe, które program MSBuild tworzy po C++ skompilowaniu proje
 |Parametr|Opis|
 |---------------|-----------------|
 |**DeletedFiles**|Opcjonalny `ITaskItem[]` parametr wyjściowy.<br /><br /> Definiuje tablicę elementów plików wyjściowych programu MSBuild, które mogą być używane i emitowane przez zadania.|
-|**DoDelete**|Opcjonalny parametr **logiczny** .<br /><br /> W przypadku `true` Wyczyść pliki tymczasowej kompilacji.|
+|**DoDelete**|Opcjonalny parametr **logiczny** .<br /><br /> W przypadku `true`Wyczyść pliki tymczasowej kompilacji.|
 |**FilePatternsToDeleteOnClean**|Wymagany `String` parametr.<br /><br /> Określa rozdzielaną średnikami listę rozszerzeń plików, które mają zostać oczyszczone.|
 |**FilesExcludedFromClean**|Opcjonalny parametr `String`.<br /><br /> Określa rozdzielaną średnikami listę plików, które nie są czyste.|
 |**FoldersToClean**|Wymagany `String` parametr.<br /><br /> Określa rozdzielaną średnikami listę katalogów do oczyszczenia. Można określić pełną lub względną ścieżkę, a ścieżka może zawierać symbol wieloznaczny (*).|

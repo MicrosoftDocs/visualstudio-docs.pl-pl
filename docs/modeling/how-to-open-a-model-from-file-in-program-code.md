@@ -2,17 +2,17 @@
 title: 'Porady: otwieranie modelu z pliku w kodzie programu'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594620"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
 
@@ -41,7 +41,7 @@ Dodaj te odwołania do projektu aplikacji Visual Studio:
 
   - Jeśli ta opcja nie jest widoczna na karcie **.NET** w oknie dialogowym **Dodaj odwołania** , kliknij kartę **Przeglądaj** i przejdź do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
-- Zestaw DSL, który będzie znajdował się w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *YourCompany*. *YourProject* `.Dsl.dll`.
+- Zestaw DSL, który będzie znajdował się w folderze bin projektu DSL. Jego nazwa ma zwykle postać: *YourCompany*. *YourProject*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Ważne klasy w DSL
 

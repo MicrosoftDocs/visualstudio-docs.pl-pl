@@ -2,17 +2,17 @@
 title: Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: ea58dc703c5ad860683017c39d9d37d9b5cccd04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: feb7785678be4b6f2c26bbcff93bf7d3e6632116
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664949"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589620"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek
 
@@ -66,7 +66,7 @@ Zaimplementuj ułatwienia dostępu dla kontrolki zgodnie z poniższą procedurą
 
 3. Zaimplementuj inny obiekt ułatwień dostępu dla formantu podrzędnego i Przesłoń Właściwość <xref:System.Windows.Forms.Control.AccessibilityObject%2A> formantu podrzędnego, aby zwrócić obiekt ułatwień dostępu.
 
-4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości oraz metody dla obiektu ułatwienia dostępu formantu podrzędnego.
+4. Zastąp <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A>i <xref:System.Windows.Forms.AccessibleObject.Select%2A> właściwości oraz metody dla obiektu ułatwienia dostępu formantu podrzędnego.
 
 > [!NOTE]
 > Ten temat rozpoczyna się od przykładu dostępności w <xref:System.Windows.Forms.AccessibleObject>, a następnie kompiluje ten przykład w pozostałych procedurach. Jeśli chcesz utworzyć działającą wersję przykładu dostępności, Utwórz aplikację konsolową, a następnie zastąp kod w *program.cs* z przykładowym kodem. Dodaj odwołania do funkcji ułatwień dostępu, system. Drawing i system. Windows. Forms. Aby wyeliminować ostrzeżenie kompilacji, należy zmienić **typy międzyoperacyjności osadzania** dla ułatwienia dostępu na **wartość false** . Można zmienić typ danych wyjściowych projektu z **aplikacji konsolowej** na **aplikację systemu Windows** , aby okno konsoli nie było wyświetlane podczas uruchamiania aplikacji.
@@ -147,7 +147,7 @@ Jeśli dostawca właściwości został wdrożony w celu zapewnienia dostępu do 
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Aby dodać wyspecjalizowaną klasę do uzyskiwania dostępu do kontrolki
 
-![CUIT&#95;codegen](../test/media/cuit_codegen.png)
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. Zaimplementuj klasę, która jest pochodną <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> i Dodaj typ kontrolki do kolekcji właściwości wyszukiwania w konstruktorze.
 

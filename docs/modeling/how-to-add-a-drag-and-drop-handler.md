@@ -2,17 +2,17 @@
 title: 'Porady: dodawanie obsługi przeciągania i upuszczania'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc0124df648dbc5ecfbcf60ce0cca2fdc974e7e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985094"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594698"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 
@@ -22,7 +22,7 @@ W tym temacie omówiono gesty przeciągania i upuszczania, które pochodzą z in
 
 ## <a name="defining-gesture-handlers-by-overriding-shapeelement-methods"></a>Definiowanie obsługi gestów przez zastąpienie metod ShapeElement
 
-`OnDragDrop`, `OnDoubleClick`, `OnDragOver` i innych metod można przesłonić.
+`OnDragDrop`, `OnDoubleClick`, `OnDragOver`i innych metod można przesłonić.
 
 Dodaj nowy plik kodu do projektu DSL. Dla programu obsługi gestu zazwyczaj muszą istnieć co najmniej następujące dyrektywy `using`:
 
@@ -124,7 +124,7 @@ Gdy użytkownik przeciągnie element na diagram lub z jednej części diagramu d
 
 Aby poznać formaty, w których dostępne są informacje źródłowe przeciągania, uruchom kod w trybie debugowania, ustawiając punkt przerwania w pozycji do `OnDragOver()` lub `CanDragDrop()`. Sprawdź wartości parametru `DiagramDragEventArgs`. Informacje są dostępne w dwóch formach:
 
-- <xref:System.Windows.Forms.IDataObject> `Data` — ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
+- <xref:System.Windows.Forms.IDataObject>`Data` — ta właściwość przenosi serializowane wersje obiektów źródłowych, zwykle w więcej niż jednym formacie. Najbardziej przydatne funkcje to:
 
   - diagramEventArgs. Data. GetDataFormats () — wyświetla listę formatów, w których można zdekodować przeciągany obiekt. Na przykład jeśli użytkownik przeciągnie plik z pulpitu, dostępne są następujące formaty: nazwa pliku ("`FileNameW`").
 
@@ -160,7 +160,7 @@ Właściwości `Data` i `Prototype` argumentów zdarzenia zawierają tylko odwo�
 
 Udostępnij dostęp do źródła DSL przez magistralę modelu programu Visual Studio:
 
-1. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij pozycję **Włącz ModelBus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
+1. Otwórz plik definicji DSL źródła DSL w projektant DSL. Kliknij prawym przyciskiem myszy powierzchnię projektu, a następnie kliknij przycisk **Włącz Modelbus**. W oknie dialogowym wybierz jedną lub obie opcje.  Kliknij przycisk **OK**. Do rozwiązania DSL zostanie dodany nowy projekt "ModelBus".
 
 2. Kliknij kolejno pozycje **Przekształć wszystkie szablony** i Skompiluj ponownie rozwiązanie.
 

@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666971"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593541"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Przewodnik: tworzenie niestandardowego hosta szablonu tekstowego
 
@@ -51,7 +51,7 @@ W tym przewodniku utworzysz niestandardowego hosta w wykonywalnej aplikacji, kt�
 
 2. Dodaj odwołania do następujących zestawów:
 
-   - **Microsoft. VisualStudio. TextTemplating. \*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
    - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 i nowsze wersje**
 
@@ -716,9 +716,9 @@ W tym przewodniku utworzysz niestandardowego hosta w wykonywalnej aplikacji, kt�
 
 4. W przypadku tylko [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Otwórz menu **projekt** , a następnie kliknij pozycję **Właściwości CustomHost**. Na liście **obiekt uruchomieniowy** kliknij pozycję **CustomHost. program**.
 
-5. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+5. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
-6. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+6. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="test-the-custom-host"></a>Testowanie hosta niestandardowego
 

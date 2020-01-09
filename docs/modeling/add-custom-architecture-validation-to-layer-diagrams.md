@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd85d7b7e60c64244fb1753ffb2a903dff03455
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748555"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597233"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów zależności
 
@@ -87,11 +87,11 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
     2. W oknie dialogowym **Dodaj nowy zasób** Ustaw:
 
-         **Wpisz**  = **Microsoft. VisualStudio. MefComponent**
+         **Type** = **Microsoft.VisualStudio.MefComponent**
 
-         **Źródło**  = **projektu w bieżącym rozwiązaniu**
+         **Źródło** = **projektu w bieżącym rozwiązaniu**
 
-         **Projekt**  =  projektu*modułu sprawdzania poprawności*
+         **Projekt** = projektu *modułu sprawdzania poprawności*
 
 5. Należy również dodać go jako walidację warstwy:
 
@@ -99,22 +99,22 @@ Jeśli chcesz utworzyć jeden VSIX, który zawiera moduły walidacji warstwy, po
 
     2. W oknie dialogowym **Dodaj nowy zasób** Ustaw:
 
-         **Wpisz**  = **Microsoft. VisualStudio. ArchitectureTools. Layer. walidator**. Nie jest to jedna z opcji na liście rozwijanej. Musisz wprowadzić ją z klawiatury.
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Nie jest to jedna z opcji na liście rozwijanej. Musisz wprowadzić ją z klawiatury.
 
-         **Źródło**  = **projektu w bieżącym rozwiązaniu**
+         **Źródło** = **projektu w bieżącym rozwiązaniu**
 
-         **Projekt**  =  projektu*modułu sprawdzania poprawności*
+         **Projekt** = projektu *modułu sprawdzania poprawności*
 
 6. Wróć do projektu walidacji warstwy i Dodaj następujące odwołania do projektu:
 
     |**Tematy pomocy**|**Co można zrobić**|
     |-|-|
-    |Microsoft. VisualStudio. GraphModel. dll|Odczytywanie wykresu architektury|
-    |Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. CodeSchema. dll|Odczytaj kod DOM skojarzony z warstwami|
-    |Microsoft. VisualStudio. ArchitectureTools. rozszerzalność. Layer. dll|Odczytaj model warstwy|
-    |Microsoft. VisualStudio. ArchitectureTools. rozszerzalność|Odczytuj i Aktualizuj kształty i diagramy.|
-    |System. ComponentModel. kompozycji|Zdefiniuj składnik walidacji przy użyciu Managed Extensibility Framework (MEF)|
-    |Microsoft. VisualStudio. Modeling. Sdk. nowszym|Definiowanie rozszerzeń modelowania|
+    |Microsoft.VisualStudio.GraphModel.dll|Odczytywanie wykresu architektury|
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Odczytaj kod DOM skojarzony z warstwami|
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Odczytaj model warstwy|
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Odczytuj i Aktualizuj kształty i diagramy.|
+    |System.ComponentModel.Composition|Zdefiniuj składnik walidacji przy użyciu Managed Extensibility Framework (MEF)|
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definiowanie rozszerzeń modelowania|
 
 7. Skopiuj przykładowy kod na końcu tego tematu do pliku klasy w projekcie biblioteki modułu sprawdzania poprawności, aby zawierał kod do walidacji. Aby uzyskać więcej informacji, zobacz [Walidacja programowania](#programming).
 
@@ -174,9 +174,9 @@ Model grafu jest zdefiniowany w <xref:Microsoft.VisualStudio.GraphModel>. Klasy 
 
 Każdy węzeł i każde łącze ma jedną lub więcej kategorii, które określają typ elementu lub relacji, które reprezentuje. Węzły typowego wykresu mają następujące kategorie:
 
-- DSL. LayerModel
+- Dsl.LayerModel
 
-- DSL. Layer
+- Dsl.Layer
 
 - DSL. Reference
 

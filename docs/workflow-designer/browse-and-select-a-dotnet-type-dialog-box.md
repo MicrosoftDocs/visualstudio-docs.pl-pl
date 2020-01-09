@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597116"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 
-W oknie **Właściwości** , oknach dialogowych lub projektantach, takich jak projektant zmiennych, po wybraniu opcji **Przeglądaj w poszukiwaniu typów** z listy typów danych jest okno dialogowe **Przeglądaj i wybierz typ platformy .NET** (określane jako "typ" w skrócie). Przeglądarka "). W tym oknie dialogowym można wybrać typ z widoku drzewa zespołów i projektów.
+W oknie **Właściwości** , oknach dialogowych lub projektantach, takich jak projektant zmiennych, w przypadku wybrania opcji **Przeglądaj w poszukiwaniu typów** z listy typów danych jest okno dialogowe **Przeglądaj i wybierz typ platformy .NET** (nazywane "przeglądarką typu"). W tym oknie dialogowym można wybrać typ z widoku drzewa zespołów i projektów.
 
 To okno dialogowe jest stosowane w wielu scenariuszach użytkowników, w tym:
 

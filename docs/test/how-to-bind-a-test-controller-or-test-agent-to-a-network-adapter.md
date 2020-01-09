@@ -1,5 +1,5 @@
 ---
-title: Powiąż Test Controller lub agenta testowego z kartą sieciową
+title: Powiąż kontroler testów lub agenta testowego z kartą sieciową
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,56 +8,56 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643778"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594789"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Instrukcje: powiązanie kontrolera testów lub agenta testowego z kartą sieciową
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Porady: powiązywanie testów kontrolera lub agenta testowego z kartą sieciową
 
-Jeśli komputer, na którym jest zainstalowany kontroler testów lub oprogramowanie agenta testowego, ma wiele kart sieciowych, należy określić adres IP zamiast nazwy komputera, aby zidentyfikować kontrolera testów lub agenta testowego.
+Jeśli komputer zawierający kontroler testów lub zainstalowane oprogramowanie agenta testowego ma kilka kart sieciowych, należy określić adres IP zamiast nazwy komputera w celu identyfikacji tego testu kontrolera lub agenta testowego.
 
 > [!WARNING]
-> Podczas próby skonfigurowania agenta testowego może zostać wyświetlony następujący błąd:
+> Podczas konfigurowania agenta testowego, może pojawić się następujący błąd:
 >
 > **Błąd 8110. Nie można nawiązać połączenia z określonym komputerem kontrolera lub uzyskać dostępu do obiektu kontrolera**
 >
-> Ten błąd może być spowodowany przez zainstalowanie kontrolera testów na komputerze, który ma więcej niż jedną kartę sieciową. Istnieje również możliwość pomyślnego zainstalowania agentów i niezobaczenia tego problemu, dopóki nie zostanie podjęta próba uruchomienia testu.
+> Ten błąd może być spowodowany przez zainstalowanie kontrolera testów na komputerze, który ma więcej niż jedną kartę sieciową. Jest również możliwe, aby pomyślnie zainstalować agentów i nie widzieć tego problemu, dopóki nie zostanie podjęta próba uruchomienia testu.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Powiąż kontroler testów z konkretną kartą sieciową
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Kontroler testów należy powiązać z konkretnym adapterem sieciowym
 
-### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Aby uzyskać adresy IP kart sieciowych
+### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Do uzyskiwania adresów IP kart sieciowych
 
-1. W systemie Microsoft Windows, wybierz **Start**, wybierz w polu **Rozpocznij wyszukiwanie** , wpisz **cmd**, a następnie wybierz **Enter**.
+1. Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **cmd**, a następnie wybierz **Enter**.
 
-2. Wpisz **polecenie ipconfig/all**.
+2. Typ **ipconfig/all**.
 
-     Wyświetlane są adresy IP kart sieciowych. Zapisz adres IP karty sieciowej, z którą chcesz powiązać kontroler.
+     Adresy IP dla karty sieciowe są wyświetlane. Zapisz adres IP karty sieciowej, którą chcesz powiązać kontroler.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Aby powiązać kartę sieciową z kontrolerem testów
 
-1. W systemie Microsoft Windows wybierz polecenie **Start**, wybierz w polu **Rozpocznij wyszukiwanie** , wpisz polecenie **Services. msc**, a następnie wybierz **klawisz ENTER**.
+1. Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **services.msc**, a następnie wybierz **Enter**.
 
-     Zostanie wyświetlone okno dialogowe **usługi** .
+     **Usług** zostanie wyświetlone okno dialogowe.
 
-2. W okienku wyników w kolumnie **Nazwa** kliknij prawym przyciskiem myszy usługę **Test Controller Visual Studio** , a następnie wybierz polecenie **Zatrzymaj**.
+2. W okienku wyników w obszarze **nazwa** kolumny, kliknij prawym przyciskiem myszy **Visual Studio Test Controller** usługi, a następnie wybierz **zatrzymać**.
 
-     —lub—
+     lub
 
-     Otwórz wiersz polecenia z podwyższonym poziomem uprawnień i uruchom następujące polecenie przy użyciu polecenia:
+     Otwórz wiersz polecenia z podwyższonym poziomem uprawnień i uruchom następujące polecenie w poleceniu:
 
      `net stop vsttcontroller`
 
-3. Otwórz plik konfiguracyjny XML *QTCcontroller. exe. config* znajdujący się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017 \\ \<edition > \Common7\IDE*.
+3. Otwórz plik konfiguracyjny XML *QTCcontroller. exe. config* znajdujący się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\\\<Edition > \Common7\IDE*.
 
-4. Zlokalizuj tag `<appSettings>`.
+4. Znajdź `<appSettings>` tagu.
 
     ```xml
     <appSettings>
@@ -71,39 +71,39 @@ Jeśli komputer, na którym jest zainstalowany kontroler testów lub oprogramowa
     </appSettings>
     ```
 
-5. Dodaj klucz `BindTo`, aby określić, która karta sieciowa ma być używana w sekcji `<appSettings>`.
+5. Dodaj `BindTo` klawisz, aby określić kartę sieciową, której można używać w `<appSettings>` sekcji.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6. Uruchom usługę kontrolera testów. Aby to zrobić, uruchom następujące polecenie w wierszu polecenia:
+6. Uruchom usługę kontrolera testu. Aby to zrobić, uruchom następujące polecenie w wierszu polecenia:
 
     `net start vsttcontroller`
 
     > [!WARNING]
-    > Aby połączyć agenta testowego z kontrolerem, należy ponownie uruchomić instalację agenta testowego. Tym razem Określ adres IP kontrolera, a nie nazwę kontrolera.
+    > Należy uruchomić instalację agenta testowego, ponownie, aby połączyć agenta testowego z kontrolerem. Tym razem, określ adres IP dla kontrolera a nie nazwę kontrolera.
 
-     Dotyczy to kontrolera, usługi agenta i procesu agenta. Właściwość `BindTo` musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedura ustawiania właściwości `BindTo` jest taka sama dla wszystkich trzech procesów, jak określono wcześniej w tym temacie dla kontrolera testów.
+     Dotyczy to kontrolera, usługi agenta i procesu agenta. `BindTo` Właściwość musi być ustawiona dla każdego procesu, który jest uruchomiony na komputerze, który ma więcej niż jedną kartę sieciową. Procedury ustanawiania `BindTo` właściwości jest taka sama dla wszystkich trzech procesów, jak określono wcześniej w tym temacie przeznaczonym dla kontrolera testów.
 
-### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Aby powiązać kartę sieciową z agentem testowym
+### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Aby powiązać kartę interfejsu sieciowego z agenta testowego
 
-1. W systemie Microsoft Windows wybierz polecenie **Start**, wybierz w polu **Rozpocznij wyszukiwanie** , wpisz polecenie **Services. msc**, a następnie wybierz **klawisz ENTER**.
+1. Z Microsoft Windows, wybierz **Start**, wybierz **Rozpocznij wyszukiwanie** wpisz **services.msc**, a następnie wybierz **Enter**.
 
-    Zostanie wyświetlone okno dialogowe **usługi** .
+    **Usług** zostanie wyświetlone okno dialogowe.
 
-2. W okienku wyników w kolumnie **Nazwa** kliknij prawym przyciskiem myszy usługę **agenta testowego programu Visual Studio** , a następnie wybierz polecenie **Zatrzymaj**.
+2. W okienku wyników w obszarze **nazwa** kolumny, kliknij prawym przyciskiem myszy **Visual Studio Test Agent** usługi, a następnie wybierz **zatrzymać**.
 
-     —lub—
+     lub
 
-     Otwórz wiersz polecenia z podwyższonym poziomem uprawnień i uruchom następujące polecenie przy użyciu polecenia:
+     Otwórz wiersz polecenia z podwyższonym poziomem uprawnień i uruchom następujące polecenie w poleceniu:
 
      **polecenie net stop vsttagent**
 
-3. Otwórz plik konfiguracyjny XML *QTAgentService. exe. config* znajdujący się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017 \\ \<edition > \Common7\IDE*.
+3. Otwórz plik konfiguracyjny XML *QTAgentService. exe. config* znajdujący się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\\\<Edition > \Common7\IDE*.
 
-4. Zlokalizuj tag `<appSettings>`.
+4. Znajdź `<appSettings>` tagu.
 
     ```xml
     <appSettings>
@@ -117,7 +117,7 @@ Jeśli komputer, na którym jest zainstalowany kontroler testów lub oprogramowa
     </appSettings>  </appSettings>
     ```
 
-5. Dodaj klucz `BindTo`, aby określić, która karta sieciowa ma być używana w sekcji `<appSettings>`.
+5. Dodaj `BindTo` klawisz, aby określić kartę sieciową, której można używać w `<appSettings>` sekcji.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
@@ -131,6 +131,6 @@ Jeśli komputer, na którym jest zainstalowany kontroler testów lub oprogramowa
 ## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
-- [Modyfikowanie ustawień rejestrowania testu obciążenia](../test/modify-load-test-logging-settings.md)
+- [Modyfikowanie ustawień rejestrowania testu obciążeniowego](../test/modify-load-test-logging-settings.md)
 - [Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Instrukcje: Określanie okresów limitu czasu dla kontrolerów testów i agentów testowych](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

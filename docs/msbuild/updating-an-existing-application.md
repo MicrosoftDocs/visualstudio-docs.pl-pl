@@ -2,17 +2,17 @@
 title: Aktualizowanie istniejącej aplikacji do programu MSBuild 15 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8d4e7d84768307964b495e8c5e97e7731b0622a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912033"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597142"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejącej aplikacji dla programu MSBuild 15
 
@@ -69,7 +69,7 @@ Odwołuje się do pakietu Microsoft. Build. Locator, aby upewnić się, że apli
 
 ### <a name="ensure-output-is-clean"></a>Upewnij się, że dane wyjściowe są czyste
 
-Skompiluj projekt i Sprawdź katalog wyjściowy, aby upewnić się, że nie zawiera on zestawów *Microsoft. Build.\*. dll* innych niż *Microsoft. Build. Locator. dll*, które dodano w następnym kroku.
+Kompilowanie projektu i Sprawdź katalog wyjściowy, aby upewnić się, że nie zawiera żadnego *Microsoft.Build.\* Biblioteka DLL* zestawów innych niż *Microsoft.Build.Locator.dll*dodano w następnym kroku.
 
 ### <a name="add-package-reference-for-microsoftbuildlocator"></a>Dodawanie odwołania do pakietu dla elementu Microsoft. Build. Locator
 

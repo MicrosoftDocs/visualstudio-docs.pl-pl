@@ -7,23 +7,23 @@ f1_keywords:
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7aace70ce773c9051367bf88bea1d798eb069bcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1abe14c443432d0da0ab0c53b33f9321034228be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668625"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592932"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Przewodnik: wiązanie z danymi w projektancie XAML
 
-W projektant XAML można ustawić właściwości powiązania danych przy użyciu obszaru kompozycji i okno Właściwości. W przykładzie w tym instruktażu pokazano, jak powiązać dane z kontrolką. W tym przewodniku pokazano, jak utworzyć prostą klasę koszyka, która ma element [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) o nazwie `ItemCount`, a następnie powiązać Właściwość `ItemCount` z właściwością **Text** formantu [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock) .
+W projektant XAML można ustawić właściwości powiązania danych przy użyciu obszaru kompozycji i okno Właściwości. W przykładzie w tym instruktażu pokazano, jak powiązać dane z kontrolką. W tym przewodniku pokazano, jak utworzyć prostą klasę koszyka zakupów o nazwie [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) `ItemCount`, a następnie powiązać Właściwość `ItemCount` z właściwością **Text** formantu [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock) .
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Aby utworzyć klasę, która ma być używana jako źródło danych
 
-1. W menu **plik** wybierz **Nowy** **projekt** > .
+1. Na **pliku** menu, wybierz **New** > **projektu**.
 
 1. W oknie **dialogowym Nowy projekt** wybierz węzeł **Wizualizacja C#**  lub **Visual Basic** , rozwiń węzeł **pulpit systemu Windows** , a następnie wybierz szablon **Aplikacja WPF** .
 
@@ -83,7 +83,7 @@ W projektant XAML można ustawić właściwości powiązania danych przy użyciu
 
 1. W **przyborniku**Wybierz kontrolkę `TextBlock`, aby dodać ją do formularza.
 
-1. Po wybraniu kontrolki `TextBlock` w okno Właściwości wybierz znacznik właściwości z prawej strony właściwości **Text** , a następnie wybierz pozycję **Utwórz powiązanie danych**. (Znacznik właściwości wygląda jak małe pole).
+1. Po wybraniu kontrolki `TextBlock`, w okno Właściwości wybierz znacznik właściwości z prawej strony właściwości **Text** , a następnie wybierz pozycję **Utwórz powiązanie danych**. (Znacznik właściwości wygląda jak małe pole).
 
 1. W oknie dialogowym Tworzenie powiązania danych w polu **ścieżka** wybierz właściwość **ItemCount: (Int32)** , a następnie wybierz przycisk **OK** .
 

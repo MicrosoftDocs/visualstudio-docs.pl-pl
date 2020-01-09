@@ -6,17 +6,17 @@ helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647182"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594126"
 ---
 # <a name="framework-targeting-overview"></a>Omówienie określania celu platformy
 
@@ -27,11 +27,11 @@ Rozwiązanie programu Visual Studio może zawierać projekty przeznaczone dla r�
 Aby uzyskać więcej informacji na temat platform docelowych, zobacz [Platformy docelowe](/dotnet/standard/frameworks).
 
 > [!TIP]
-> Możesz również docelować aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz wiele [obiektów docelowych](../msbuild/msbuild-multitargeting-overview.md).
+> Można również przeznaczać aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="framework-targeting-features"></a>Funkcje docelowej struktury
+## <a name="framework-targeting-features"></a>Framework przeznaczonych dla funkcji
 
-Funkcja określania wartości docelowej platformy obejmuje następujące funkcje:
+Adresowanie obejmuje następujące funkcje:
 
 - Po otwarciu projektu, który jest przeznaczony dla starszej wersji platformy, program Visual Studio może automatycznie uaktualnić projekt lub pozostawić element docelowy jako-is.
 
@@ -47,9 +47,9 @@ Funkcja określania wartości docelowej platformy obejmuje następujące funkcje
 
 Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji platformy, program Visual Studio dynamicznie zmienia środowisko programistyczne w następujący sposób:
 
-- Filtruje elementy w oknie dialogowym **Dodaj nowy element** , okno dialogowe **Dodaj nowe odwołanie** i okno dialogowe **Dodaj odwołanie do usługi** , aby pominąć opcje, które nie są dostępne w wersji dostosowanej.
+- Filtruje elementy w **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć wybory, które nie są dostępne w Docelowa wersja.
 
-- Filtruje niestandardowe kontrolki w **przyborniku** , aby usunąć te, które nie są dostępne w wersji dostosowanej, i wyświetlić tylko najbardziej aktualne kontrolki, gdy dostępnych jest wiele kontrolek.
+- Filtruje niestandardowe formanty w **przybornika** Aby usunąć te, które nie są dostępne w wersji docelowej i pokazać tylko najbardziej aktualne formanty, gdy będzie dostępnych jest kilka formantów.
 
 - Filtruje funkcję **IntelliSense** , aby pominąć funkcje języka, które nie są dostępne w wersji dostosowanej.
 
@@ -57,15 +57,15 @@ Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji platfo
 
 - Filtruje opcje menu, aby pominąć opcje, które nie są dostępne w wersji dostosowanej.
 
-- W przypadku kompilacji używa wersji kompilatora i opcji kompilatora, które są odpowiednie dla wersji dostosowanej.
+- W przypadku kompilacji wykorzystuje wersję kompilatora i opcje kompilatora, które są odpowiednie dla wersji docelowej.
 
 > [!NOTE]
-> - Określanie wartości docelowej platformy nie gwarantuje, że aplikacja będzie działać poprawnie. Należy przetestować aplikację, aby upewnić się, że jest ona uruchamiana w porównaniu z wersją dodaną.
+> - Adresowanie nie gwarantuje, że Twoja aplikacja będzie działać poprawnie. Należy przetestować aplikację w taki sposób, aby upewnić się, że jest uruchamiana w wersji docelowej.
 > - Nie można kierować wersji platformy poniżej .NET Framework 2,0.
 
-## <a name="select-a-target-framework-version"></a>Wybierz docelową wersję platformy
+## <a name="select-a-target-framework-version"></a>Wybieranie wersji platformy docelowej
 
-Podczas tworzenia projektu .NET Framework można wybrać docelową wersję .NET Framework, po wybraniu szablonu projektu. Lista dostępnych platform obejmuje zainstalowane wersje Framework, które mają zastosowanie do wybranego typu szablonu. Dla szablonów projektów platformy non-.NET Framework, na przykład szablony platformy .NET Core, lista rozwijana **struktury** nie jest wyświetlana.
+Podczas tworzenia projektu .NET Framework można wybrać docelową wersję .NET Framework, po wybraniu szablonu projektu. Lista dostępnych platform obejmuje wersje zainstalowanych framework, które mają zastosowanie do typu wybranego szablonu. Dla szablonów projektów platformy non-.NET Framework, na przykład szablony platformy .NET Core, lista rozwijana **struktury** nie jest wyświetlana.
 
 ::: moniker range="vs-2017"
 
@@ -85,16 +85,16 @@ W istniejącym Visual Basic, C#, lub F# projektu, należy zmienić docelową wer
 
 1. W **Eksplorator rozwiązań**Otwórz menu dostępne po kliknięciu prawym przyciskiem myszy dla projektu, który chcesz zmienić, a następnie wybierz polecenie **Właściwości**.
 
-1. W lewej kolumnie okna **Właściwości** wybierz kartę **aplikacja** .
+1. W lewej kolumnie **właściwości** oknie Wybierz **aplikacji** kartę.
 
    ![Karta aplikacji właściwości projektu](../ide/media/vs_slnexplorer_properties_applicationtab.png)
 
    > [!NOTE]
    > Po utworzeniu aplikacji platformy UWP nie można zmienić dostosowanej wersji systemu Windows lub .NET.
 
-1. Z listy **platforma docelowa** wybierz żądaną wersję.
+1. W **platformę docelową** wybierz wersję, która ma.
 
-1. W wyświetlonym oknie dialogowym weryfikacji wybierz przycisk **tak** .
+1. W oknie dialogowym weryfikacji wybierz **tak** przycisku.
 
    Projekt zostaje wyładowany Po ponownym załadowaniu jest on przeznaczony dla wybranej wersji platformy .NET.
 
@@ -108,20 +108,20 @@ W istniejącym Visual Basic, C#, lub F# projektu, należy zmienić docelową wer
 > - W przypadku aplikacji .NET Standard: `<TargetFramework>netstandard2.0</TargetFramework>`
 > - W przypadku aplikacji .NET Framework: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
-## <a name="resolve-system-and-user-assembly-references"></a>Rozpoznaj odwołania do zestawów systemu i użytkownika
+## <a name="resolve-system-and-user-assembly-references"></a>Rozwiązać odwołania do zestawów systemu i użytkownika
 
 Aby określić wersję docelową platformy .NET, należy najpierw zainstalować odpowiednie odwołania do zestawu. Pakiety deweloperskie dla różnych wersji platformy .NET można pobrać na stronie [pliki do pobrania platformy .NET](https://www.microsoft.com/net/download/windows) .
 
 W przypadku projektów .NET Framework okno dialogowe **Dodawanie odwołania** wyłącza Zestawy systemowe, które nie odnoszą się do wersji .NET Framework docelowej, tak że nie mogą zostać przypadkowo dodane do projektu. (Zestawy systemowe to pliki *dll* , które znajdują się w wersji .NET Frameworkej). Odwołania należące do wersji platformy, która jest wyższa niż wersja dostosowanej, nie zostaną rozpoznane i nie można dodać kontrolek, które zależą od tego odwołania. Jeśli chcesz włączyć takie odwołanie, zresetuj element docelowy .NET Framework projektu na taki, który zawiera odwołanie.
 
-Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz temat [Rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
+Aby uzyskać więcej informacji na temat odwołań do zestawów, zobacz [rozwiązywanie zestawów w czasie projektowania](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enable-linq"></a>Włącz LINQ
+## <a name="enable-linq"></a>Włączenia zapytań LINQ
 
-Jeśli obiektem docelowym jest .NET Framework 3,5 lub nowszy, odwołanie do **System. Core** i import na poziomie projektu dla <xref:System.Linq> (tylko w Visual Basic) są dodawane automatycznie. Jeśli chcesz korzystać z funkcji LINQ, należy również włączyć `Option Infer` (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie w przypadku zmiany celu na wcześniejszą wersję .NET Framework. Aby uzyskać więcej informacji, zobacz [Work with LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Jeśli platformą docelową jest program .NET Framework 3.5 lub nowszy, odniesienie do **System.Core** i importu poziomu projektu, aby uzyskać <xref:System.Linq> (tylko w Visual Basic) są automatycznie dodawane. Jeśli chcesz korzystać z funkcji LINQ, należy również włączyć `Option Infer` na (tylko w Visual Basic). Odwołanie i import są usuwane automatycznie, jeśli zmienisz element docelowy do wcześniejszej wersji systemu .NET Framework. Aby uzyskać więcej informacji, zobacz [pracować z LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Platformy docelowe](/dotnet/standard/frameworks)
-- [Wieloelementowe (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Wielowersyjność (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
+- [Porady: modyfikowanie docelowego framework i zestaw narzędzi platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

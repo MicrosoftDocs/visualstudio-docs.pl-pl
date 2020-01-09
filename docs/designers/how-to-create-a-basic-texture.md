@@ -3,17 +3,17 @@ title: 'Porady: tworzenie tekstury podstawowej'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635864"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589461"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Instrukcje: Tworzenie tekstury podstawowej
 
@@ -64,22 +64,22 @@ Przed rozpoczęciem upewnij się, że wyświetlane jest okno **Właściwości** 
 
 10. Upewnij się, że wygładzanie jest włączone. Upewnij się, że właściwość **Anti-alias** jest ustawiona w oknie **Właściwości** w grupie właściwości **wygląd** .
 
-11. Używając narzędzia **Elipsa** , narysuj okrąg od współrzędnych pikseli `(3, 3)` do `(508, 508)` współrzędnej piksela. Aby łatwiej rysować okrąg, możesz nacisnąć i przytrzymać klawisz **SHIFT** podczas rysowania.
+11. Używając narzędzia **Elipsa** , narysuj okrąg od współrzędnych pikseli `(3, 3)` do `(508, 508)`współrzędnej piksela. Aby łatwiej rysować okrąg, możesz nacisnąć i przytrzymać klawisz **SHIFT** podczas rysowania.
 
     > [!NOTE]
     > Współrzędne pikseli bieżącej lokalizacji wskaźnika są wyświetlane na pasku stanu programu Visual Studio.
 
-12. Zmień kolor tła. Ustaw wartość **R** na `44`, **G** do `165`, **B** `211` i **a** do `255`.
+12. Zmień kolor tła. Ustaw wartość **R** na `44`, **G** do `165`, **B** `211`i **a** do `255`.
 
-13. Narysuj inny okrąg od współrzędnych pikseli `(64, 64)` do `(448, 448)` współrzędnych pikseli.
+13. Narysuj inny okrąg od współrzędnych pikseli `(64, 64)` do `(448, 448)`współrzędnych pikseli.
 
 14. Zmień kolor tła z powrotem na całkowicie nieprzezroczysty biały. Ustaw wartości **R**, **G**, **B**i **a na `255`** .
 
-15. Narysuj inny okrąg od współrzędnych pikseli `(128, 128)` do `(384, 384)` współrzędnych pikseli.
+15. Narysuj inny okrąg od współrzędnych pikseli `(128, 128)` do `(384, 384)`współrzędnych pikseli.
 
-16. Zmień kolor tła. Ustaw wartość **R** na `255`, **G** i **B** na **`64` i `255`** .
+16. Zmień kolor tła. Ustaw wartość **R** na `255`, **G** i **B** na **`64`i `255`** .
 
-17. Narysuj inny okrąg od współrzędnych pikseli `(192, 192)` do `(320, 320)` współrzędnych pikseli.
+17. Narysuj inny okrąg od współrzędnych pikseli `(192, 192)` do `(320, 320)`współrzędnych pikseli.
 
 Tekstura docelowa "Bullseye" została zakończona. Poniżej znajduje się obraz przedstawiający przezroczystość.
 

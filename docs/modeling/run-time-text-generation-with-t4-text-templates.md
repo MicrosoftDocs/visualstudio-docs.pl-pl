@@ -10,17 +10,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660309"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595374"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 
@@ -53,16 +53,16 @@ Użycie szablonu w aplikacji sprawia, że można łatwiej zobaczyć ostateczną 
 
 ### <a name="to-create-a-run-time-text-template"></a>Aby utworzyć szablon tekstu czasu wykonywania
 
-1. W Eksplorator rozwiązań, w menu skrótów projektu, wybierz **dodaj**  > **nowy element**.
+1. W Eksplorator rozwiązań, w menu skrótów projektu, wybierz **dodaj** > **nowy element**.
 
-2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **szablon tekstu środowiska uruchomieniowego**. (W Visual Basic poszukaj w obszarze **wspólne elementy**  > **Ogólne**).
+2. W oknie dialogowym **Dodaj nowy element** wybierz pozycję **szablon tekstu środowiska uruchomieniowego**. (W Visual Basic poszukaj w obszarze **wspólne elementy** > **Ogólne**).
 
 3. Wpisz nazwę pliku szablonu.
 
     > [!NOTE]
     > Nazwa pliku szablonu zostanie użyta jako nazwa klasy w wygenerowanym kodzie. W związku z tym nie powinna zawierać spacji ani znaków interpunkcyjnych.
 
-4. Wybierz pozycję **Dodaj**.
+4. Wybierz **Dodaj**.
 
     Tworzony jest nowy plik z rozszerzeniem **TT**. Właściwość **niestandardowego narzędzia** jest ustawiona na **TextTemplatingFilePreprocessor**. Zawiera następujące wiersze:
 
@@ -80,7 +80,7 @@ Dobrym sposobem na utworzenie szablonu jest przekonwertowanie istniejącego przy
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Aby skonwertować istniejący plik tekstowy na szablon czasu wykonywania
 
-1. Dołącz plik do projektu programu Visual Studio. W Eksplorator rozwiązań, w menu skrótów projektu, wybierz **dodaj**  > **istniejący element**.
+1. Dołącz plik do projektu programu Visual Studio. W Eksplorator rozwiązań, w menu skrótów projektu, wybierz **dodaj** > **istniejący element**.
 
 2. Ustaw właściwość **niestandardowych narzędzi** pliku na **TextTemplatingFilePreprocessor**. W Eksplorator rozwiązań, w menu skrótów pliku, wybierz **Właściwości**.
 

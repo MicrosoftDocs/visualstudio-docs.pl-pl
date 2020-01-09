@@ -8,23 +8,23 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644594"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597311"
 ---
 # <a name="toolbox-components-tab"></a>Przybornik, karta składniki
 
 Wyświetla składniki, które można dodać do Visual Basic C# i projektantów dla Windows Forms. Oprócz składników programu .NET, które są dołączone do programu Visual Studio, takich jak składniki <xref:System.Messaging.MessageQueue> i <xref:System.Diagnostics.EventLog>, możesz dodać własne składniki programu lub innych firm do tej karty.
 
-Aby wyświetlić tę kartę, Otwórz projektanta Windows Forms. Wybierz pozycję **wyświetl**  > **Przybornik**. W **przyborniku**wybierz kartę **składniki** .
+Aby wyświetlić tę kartę, Otwórz projektanta Windows Forms. Wybierz pozycję **wyświetl** > **Przybornik**. W **przyborniku**wybierz kartę **składniki** .
 
 ## <a name="components"></a>Składniki
 
@@ -32,7 +32,7 @@ Aby wyświetlić tę kartę, Otwórz projektanta Windows Forms. Wybierz pozycję
 
 Tworzy wystąpienie składnika <xref:System.ComponentModel.BackgroundWorker>, które może uruchamiać operację w oddzielnym, dedykowanym wątku. Aby uzyskać więcej informacji, zobacz [składnik BackgroundWorker](/dotnet/framework/winforms/controls/backgroundworker-component).
 
-**Elementu**
+**DirectoryEntry**
 
 Tworzy wystąpienie składnika <xref:System.DirectoryServices.DirectoryEntry>, które hermetyzuje węzeł lub obiekt w hierarchii Active Directory i może służyć do współpracy z dostawcami usług Active Directory.
 
@@ -44,7 +44,7 @@ Tworzy wystąpienie składnika <xref:System.DirectoryServices.DirectorySearcher>
 
 Tworzy wystąpienie składnika <xref:System.Windows.Forms.ErrorProvider>, które wskazuje użytkownikowi końcowemu, że formant w formularzu ma skojarzony z nim błąd. Aby uzyskać więcej informacji, zobacz [składnik ErrorProvider](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms).
 
-**Elemencie**
+**EventLog**
 
 Tworzy wystąpienie składnika <xref:System.Diagnostics.EventLog>, którego można użyć do współpracy z systemem i dziennikami zdarzeń niestandardowych, w tym zapisywania zdarzeń w dzienniku i odczytywania danych dziennika.
 
@@ -52,11 +52,11 @@ Tworzy wystąpienie składnika <xref:System.Diagnostics.EventLog>, którego moż
 
 Tworzy wystąpienie składnika <xref:System.IO.FileSystemWatcher>, którego można użyć do monitorowania zmian w dowolnym katalogu lub pliku, do którego masz dostęp.
 
-**HelpProvider —**
+**HelpProvider**
 
 Tworzy wystąpienie składnika <xref:System.Windows.Forms.HelpProvider>, które zapewnia podręczną lub pomoc online dla kontrolek. Aby uzyskać więcej informacji, zobacz [składnik HelpProvider —](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
-**Obrazów**
+**ImageList**
 
 Tworzy wystąpienie składnika <xref:System.Windows.Forms.ImageList>, które udostępnia metody zarządzania kolekcją obiektów <xref:System.Drawing.Image>. Aby uzyskać więcej informacji, zobacz [składnik ImageList](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
@@ -72,7 +72,7 @@ Tworzy wystąpienie składnika <xref:System.Diagnostics.PerformanceCounter>, kt�
 
 Tworzy wystąpienie składnika <xref:System.Diagnostics.Process>, za pomocą którego można zatrzymywać i uruchamiać dane skojarzone z procesami w systemie oraz manipulować nimi.
 
-**Klasy SerialPort**
+**SerialPort**
 
 Tworzy wystąpienie składnika <xref:System.IO.Ports.SerialPort>, które zapewnia synchroniczną, opartą na zdarzeniach we/wy, dostęp do numerów PIN i stan przerwania oraz dostęp do właściwości sterownika szeregowego.
 
@@ -90,5 +90,5 @@ Tworzy wystąpienie składnika <xref:System.Windows.Forms.Timer>, którego możn
 ## <a name="see-also"></a>Zobacz także
 
 - [Kontrolki do użycia na Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
-- [Wybierz elementy przybornika, składniki WPF](choose-toolbox-items-wpf-components.md)
+- [Wybierz elementy paska narzędzi, składniki WPF](choose-toolbox-items-wpf-components.md)
 - [Przybornik](../../ide/reference/toolbox.md)

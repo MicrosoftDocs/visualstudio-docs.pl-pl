@@ -9,45 +9,45 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643479"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589191"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Instrukcje: Tworzenie testu jednostkowego opartego na danych
 
-Możesz użyć struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego, aby skonfigurować metodę testową jednostkową w celu pobrania wartości ze źródła danych. Metoda jest uruchamiana kolejno dla każdego wiersza w źródle danych, co ułatwia przetestowanie różnych danych wejściowych przy użyciu pojedynczej metody.
+Możesz użyć struktury testów jednostkowych firmy Microsoft dla kodu zarządzanego, aby skonfigurować metodę testową jednostkową w celu pobrania wartości ze źródła danych. Metoda jest uruchamiane kolejno dla każdego wiersza w źródle danych, dzięki czemu można łatwo przetestować różne dane wejściowe, korzystając z jednej metody.
 
-Tworzenie testu jednostkowego opartego na danych obejmuje następujące kroki:
+Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:
 
-1. Utwórz źródło danych zawierające wartości, które są używane w metodzie testowej. Źródło danych może być dowolnego typu, który jest zarejestrowany na komputerze, na którym jest uruchamiany test.
+1. Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.
 
-2. Dodaj prywatne pole <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> i publiczną właściwość `TestContext` do klasy testowej.
+2. Dodaj prywatnej <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> pola i publiczny `TestContext` właściwości klasy testowej.
 
-3. Utwórz metodę testową jednostkową i Dodaj do niej atrybut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
+3. Utwórz metodę testu jednostkowego i Dodaj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> atrybutu do niego.
 
-4. Użyj właściwości <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> Indexer, aby pobrać wartości, które są używane w teście.
+4. Użyj <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> właściwość indeksatora można pobrać wartości, których używasz w teście.
 
 ## <a name="the-method-under-test"></a>Testowana Metoda
 
-Załóżmy na przykład, że masz:
+Na przykład załóżmy, że masz:
 
-1. Rozwiązanie o nazwie `MyBank`, które akceptuje i przetwarza transakcje dla różnych typów kont.
+1. To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.
 
-2. Projekt w `MyBank` nazywany `BankDb`, który zarządza transakcjami dla kont.
+2. Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.
 
-3. Klasa o nazwie `Maths` w projekcie `BankDb`, która wykonuje funkcje matematyczne w celu zapewnienia, że każda transakcja jest korzystna dla banku.
+3. Klasa o nazwie `Maths` w `BankDb` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.
 
-4. Projekt testu jednostkowego o nazwie `BankDbTests`, aby przetestować zachowanie składnika `BankDb`.
+4. To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.
 
-5. Klasa testów jednostkowych o nazwie `MathsTests`, aby zweryfikować zachowanie klasy `Maths`.
+5. To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.
 
 Będziemy testować metodę w `Maths`, która dodaje dwie liczby całkowite przy użyciu pętli:
 
@@ -63,19 +63,19 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="create-a-data-source"></a>Tworzenie źródła danych
+## <a name="create-a-data-source"></a>Utwórz źródło danych
 
-Aby przetestować metodę `AddIntegers`, Utwórz źródło danych określające zakres wartości parametrów i sumę, która ma zostać zwrócona. W tym przykładzie utworzymy bazę danych SQL Compact o nazwie `MathsData` i tabelę o nazwie `AddIntegersData`, która zawiera następujące nazwy kolumn i wartości
+Aby przetestować `AddIntegers` metody, Utwórz źródło danych, która określa zakres wartości dla parametrów i sum, którzy mają być zwracane. W tym przykładzie utworzymy o nazwie bazy danych Sql Compact `MathsData` i tabelę o nazwie `AddIntegersData` zawierający następujące kolumny nazwy i wartości
 
-|Pierwszaliczba|Drugaliczba|Należności|
+|Pierwszaliczba|SecondNumber|Suma|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|
 
-## <a name="add-a-testcontext-to-the-test-class"></a>Dodawanie TestContext do klasy testowej
+## <a name="add-a-testcontext-to-the-test-class"></a>Dodaj TestContext do klasy testowej
 
-Struktura testów jednostkowych tworzy obiekt `TestContext` do przechowywania informacji o źródle danych dla testu opartego na danych. Następnie struktura ustawia ten obiekt jako wartość właściwości `TestContext`, która została utworzona.
+Tworzy środowiska testów jednostkowych `TestContext` obiekt, aby zapisać informacje o źródle danych dla testów opartych na danych. Następnie ustawia ten obiekt jako wartość w ramach `TestContext` właściwość, którą tworzysz.
 
 ```csharp
 private TestContext testContextInstance;
@@ -86,14 +86,14 @@ public TestContext TestContext
 }
 ```
 
-W metodzie testowej dostęp do danych odbywa się za pomocą właściwości `DataRow` Indexer `TestContext`.
+W metodzie testowej, uzyskujesz dostęp do danych za pośrednictwem `DataRow` właściwości indeksatora `TestContext`.
 
 > [!NOTE]
-> Platforma .NET Core nie obsługuje atrybutu [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) . Jeśli spróbujesz uzyskać dostęp do danych testowych w ten sposób w projekcie testów jednostkowych .NET Core lub platformy UWP, zobaczysz błąd podobny do **"TestContext" nie zawiera definicji dla elementu "DataRow" i żadna dostępna metoda rozszerzająca "DataRow" nie akceptuje pierwszego argumentu typu " TestContext "można znaleźć (brak dyrektywy using lub odwołania do zestawu?)"** .
+> Platforma .NET Core nie obsługuje atrybutu [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) . Jeśli spróbujesz uzyskać dostęp do danych testowych w ten sposób w projekcie testów jednostkowych .NET Core lub platformy UWP, zobaczysz błąd podobny do **"TestContext" nie zawiera definicji dla elementu "DataRow" i nie można znaleźć dostępnej metody rozszerzającej "DataRow" akceptującej pierwszy argument typu "TestContext" (czy nie brakuje dyrektywy using lub odwołania do zestawu?) "** .
 
-## <a name="write-the-test-method"></a>Napisz metodę testową
+## <a name="write-the-test-method"></a>Pisanie metody testowej
 
-Metoda testowa dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych Wywołaj `AddIntegers` z wartościami kolumn **pierwszaliczba** i **drugaliczba** jako parametry, a następnie sprawdź wartość zwracaną względem wartości kolumny **sum** :
+Metodę testową dla `AddIntegers` jest dość prosta. Dla każdego wiersza w źródle danych, należy wywołać `AddIntegers` z **Pierwszaliczba** i **Drugaliczba** kolumny wartości jako parametry i sprawdź wartość zwracaną względem **suma** wartość kolumny:
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -113,33 +113,33 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-Metoda `Assert` zawiera komunikat, który wyświetla `x` i `y` wartości iteracji zakończonych niepowodzeniem. Domyślnie potwierdzone wartości-`expected` i `actual` — są już zawarte w szczegółach testu zakończonego niepowodzeniem.
+`Assert` Metoda zawiera komunikat, który wyświetla `x` i `y` wartości iteracji nie powiodło się. Domyślnie potwierdzone wartości-`expected` i `actual` — są już zawarte w szczegółach testu zakończonego niepowodzeniem.
 
 ### <a name="specify-the-datasourceattribute"></a>Określ wartość DataSourceAttribute
 
-Atrybut `DataSource` określa parametry połączenia dla źródła danych oraz nazwę tabeli, która jest używana w metodzie testowej. Dokładne informacje w parametrach połączenia różnią się w zależności od rodzaju źródła danych, z którego korzystasz. W tym przykładzie użyto bazy danych SqlServerCe.
+`DataSource` Atrybut określa parametry połączenia dla źródła danych i nazwę tabeli, którego używasz w metodzie testowej. Konkretne informacje w parametrach połączenia różni się w zależności od tego, jakiego rodzaju źródła danych, którego używasz. W tym przykładzie użyliśmy SqlServerCe bazy danych.
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
-Atrybut DataSource ma trzy konstruktory.
+Atrybut źródła danych ma trzy konstruktory.
 
 ```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
-Konstruktor z jednym parametrem używa informacji o połączeniu, które są przechowywane w pliku *App. config* dla rozwiązania. *DataSourceSettingsName* jest nazwą elementu XML w pliku konfiguracji, który określa informacje o połączeniu.
+Konstruktor z jednym parametrem używa informacji o połączeniu, która jest przechowywana w *app.config* pliku rozwiązania. *DataSourceSettingsName* jest nazwa elementu Xml w pliku konfiguracji, który określa informacje o połączeniu.
 
-Użycie pliku *App. config* pozwala zmienić lokalizację źródła danych bez wprowadzania zmian do samego testu jednostkowego. Aby uzyskać informacje na temat tworzenia i używania pliku *App. config* , zobacz [Przewodnik: używanie pliku konfiguracji do definiowania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+Za pomocą *app.config* plików umożliwia zmianę lokalizacji źródła danych bez wprowadzania zmian w same testy jednostek. Aby uzyskać informacje dotyczące tworzenia i używania *app.config* plików, zobacz [wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]
 ```
 
-Konstruktor `DataSource` z dwoma parametrami określa parametry połączenia dla źródła danych i nazwę tabeli, która zawiera dane dla metody testowej.
+`DataSource` Konstruktor z dwoma parametrami określa parametry połączenia dla źródła danych i nazwę tabeli, która zawiera dane dla metody testowej.
 
-Parametry połączenia zależą od typu źródła danych, ale powinny zawierać element dostawcy, który określa niezmienną nazwę dostawcy danych.
+Parametry połączenia są zależne od rodzaju typu źródła danych, ale musi on zawierać element dostawcy, który określa nazwę niezmienną dostawcy danych.
 
 ```csharp
 [DataSource(
@@ -152,24 +152,24 @@ Parametry połączenia zależą od typu źródła danych, ale powinny zawierać 
 
 ### <a name="use-testcontextdatarow-to-access-the-data"></a>Używanie TestContext. DataRow do uzyskiwania dostępu do danych
 
-Aby uzyskać dostęp do danych w tabeli `AddIntegersData`, użyj indeksatora `TestContext.DataRow`. `DataRow` jest obiektem <xref:System.Data.DataRow>, więc pobiera wartości kolumn według nazw indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, przekonwertuj je na odpowiedni typ:
+Aby uzyskać dostęp do danych `AddIntegersData` tabeli, użyj `TestContext.DataRow` indeksatora. `DataRow` jest <xref:System.Data.DataRow> obiektów, więc pobrać wartości w kolumnie według nazwy indeksu lub kolumn. Ponieważ wartości są zwracane jako obiekty, należy przekonwertować je na odpowiedni typ:
 
 ```csharp
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
-## <a name="run-the-test-and-view-results"></a>Uruchom test i Wyświetl wyniki
+## <a name="run-the-test-and-view-results"></a>Uruchom test, aby wyświetlić wyniki
 
-Po zakończeniu pisania metody testowej Skompiluj projekt testowy. Metoda testowa pojawia się w **Eksploratorze testów** w grupie **nie uruchomiono testów** . Podczas uruchamiania, zapisywania i ponownego uruchamiania testów program **Test Explorer** wyświetla wyniki w grupach **testów zakończonych niepowodzeniem**, **testy zakończone pomyślnie**i **nie uruchamiają testów**. Możesz wybrać opcję **Uruchom wszystkie** , aby uruchomić wszystkie testy, lub wybrać polecenie **Uruchom** , aby wybrać podzbiór testów do uruchomienia.
+Po zakończeniu pisania metody testowej Skompiluj projekt testowy. Metoda testowa pojawia się w **Eksploratorze testów** w grupie **nie uruchomiono testów** . Jak uruchomić, zapisać i ponownie uruchomić testy, **Eksplorator testów** wyświetla wyniki w grupach **testy zakończone niepomyślnie**, **testy zakończone powodzeniem**, i **testy nieuruchamiane**. Możesz wybrać **Uruchom wszystkie** Aby uruchomić wszystkie testy, lub wybierz **Uruchom** wybranie podzestawu testów do uruchomienia.
 
-Pasek wyników testu w górnej części **Eksploratora testów** jest animowany w miarę przebiegu testu. Na końcu przebiegu testu pasek będzie zielony, jeśli wszystkie testy przebiegły lub czerwona, jeśli którykolwiek z testów zakończył się niepowodzeniem. Podsumowanie przebiegu testu pojawia się w okienku szczegółów u dołu okna **Eksplorator testów** . Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
+Pasek wyników testu w górnej części **Eksploratora testów** jest animowany w miarę przebiegu testu. Na końcu przebiegu testowego pasek będzie zielony, jeśli wszystkie testy zostały przekazane lub czerwony Jeśli którykolwiek z testów nie powiodło się. Podsumowanie przebiegu testu jest wyświetlana w okienku szczegółów u dołu **Eksploratora testów** okna. Wybierz test, aby wyświetlić szczegóły tego testu w dolnym okienku.
 
 > [!NOTE]
 > Istnieje wynik dla każdego wiersza danych, a także jeden wynik podsumowania. Jeśli test przeszedł na każdy wiersz danych, przebieg podsumowania jest wyświetlany jako **zakończony**. Jeśli test nie powiódł się w żadnym wierszu danych, przebieg podsumowania jest wyświetlany jako **Niepowodzenie**.
 
-Jeśli w naszym przykładzie uruchomiono metodę `AddIntegers_FromDataSourceTest`, pasek wyników zmieni kolor na czerwony, a metoda testowa jest przenoszona do **testów zakończonych niepowodzeniem**. Test oparty na danych kończy się niepowodzeniem, jeśli którykolwiek z iteracji metod ze źródła danych zakończy się niepowodzeniem. Po wybraniu w oknie **Eksplorator testów** zakończonego niepowodzeniem testu opartego na danych, w okienku szczegółów zostaną wyświetlone wyniki każdej iteracji identyfikowanej przez indeks wiersza danych. W naszym przykładzie wydaje się, że algorytm `AddIntegers` nie obsługuje poprawnych wartości ujemnych.
+Po przeprowadzeniu `AddIntegers_FromDataSourceTest` metody w naszym przykładzie paski wyników zmieni kolor na czerwony, i metoda testowa jest przenoszona do **testy zakończone niepomyślnie**. Test opartych na danych zakończy się niepowodzeniem, jeśli iterowany metod ze źródła danych nie powiedzie się. Po wybraniu nieudanego testu opartego na danych w **Eksploratora testów** okna, w okienku szczegółów są wyświetlane wyniki każdej iteracji, która jest identyfikowana przez indeks wiersza danych. W tym przykładzie wydaje się, że `AddIntegers` algorytm poprawnie nie obsługuje wartości ujemnych.
 
-Gdy testowana Metoda jest korygowana, a test zostanie uruchomiony ponownie, pasek wyników zmieni kolor na zielony, a metoda testowa zostanie przeniesiona do grupy **testów zakończonych** .
+Po poprawieniu testowaną metodę test, uruchom ponownie, paski wyników zmieni kolor na zielony i metoda testowa jest przenoszona do **przekazywane Test** grupy.
 
 ## <a name="see-also"></a>Zobacz także
 
@@ -177,6 +177,6 @@ Gdy testowana Metoda jest korygowana, a test zostanie uruchomiony ponownie, pase
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
-- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 - [Napisz testy jednostkowe dla platformy .NET za pomocą struktury testów jednostkowych firmy Microsoft](../test/unit-test-your-code.md)

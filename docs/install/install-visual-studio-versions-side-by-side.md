@@ -8,15 +8,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 62acf1c5e8cab960d4b670f7a05481644e9ffc1e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888685"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594087"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie obok siebie różnych wersji programu Visual Studio
 
@@ -44,21 +44,21 @@ Przed zainstalowaniem wersji obok siebie zapoznaj się z następującymi warunka
 
 * W przypadku odinstalowania wersji programu Visual Studio na komputerze, na którym jest zainstalowana więcej niż jedna wersja, skojarzenia plików dla programu Visual Studio zostaną usunięte dla wszystkich wersji.
 
-* Program Visual Studio nie uaktualnia automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub wydawcy oprogramowania.
+* Program Visual Studio nie aktualizuje automatycznie rozszerzeń, ponieważ nie wszystkie rozszerzenia są zgodne. Należy ponownie zainstalować rozszerzenia z [Visual Studio Marketplace](https://marketplace.visualstudio.com/) lub od wydawcy oprogramowania.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje .NET Framework i instalacje równoczesne
 
-Projekty Visual Basic, C#wizualizacji i F# wizualizacji używają opcji **platformy docelowej** w **projektancie projektu** , aby określić, która wersja .NET Framework jest używana przez projekt. W przypadku C++ projektu można ręcznie zmienić platformę docelową, modyfikując plik. vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji na stronie .NET Framework](/dotnet/framework/migration-guide/version-compatibility) .
+Projekty Visual Basic, C#wizualizacji i F# wizualizacji używają opcji **platformy docelowej** w **projektancie projektu** , aby określić, która wersja .NET Framework jest używana przez projekt. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji na stronie .NET Framework](/dotnet/framework/migration-guide/version-compatibility) .
 
-Podczas tworzenia projektu można określić, która wersja .NET Framework obiektów docelowych projektu na liście **.NET Framework** w oknie dialogowym **Nowy projekt** .
+Podczas tworzenia projektu można określić, która wersja programu .NET Framework jest przeznaczony projekt **.NET Framework** listy w **nowy projekt** okno dialogowe.
 
-Aby uzyskać informacje dotyczące języka, zobacz odpowiedni temat w poniższej tabeli.
+Aby uzyskać informacje specyficzne dla języka zobacz odpowiedni temat w poniższej tabeli.
 
 ::: moniker range="vs-2017"
 
 | Język | Temat |
 |--------------|-----------|
-| Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Język Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Programowanie za pomocą F# wizualizacji w Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
 |C++ | [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
@@ -77,7 +77,7 @@ Aby uzyskać informacje dotyczące języka, zobacz odpowiedni temat w poniższej
 
 | Język | Temat |
 |--------------|-----------|
-| Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Język Visual Basic | [Strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Programowanie za pomocą F# wizualizacji w Visual Studio](../ide/fsharp-visual-studio.md) |
 | C++ | [Instrukcje: modyfikowanie platformy docelowej i zestawu narzędzi platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |

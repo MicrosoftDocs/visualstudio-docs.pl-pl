@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018830"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594074"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -38,7 +38,7 @@ Istnieją trzy opcje instalowania lub aktualizowania certyfikatów w środowisku
 
 Podczas tworzenia układu sieci wymagane certyfikaty zostaną pobrane do folderu certyfikatów. Następnie może ręcznie instalować certyfikaty dwukrotne kliknięcie każdego z plików certyfikatów, a następnie klikając polecenie za pomocą Kreatora Menedżera certyfikatów. Jeśli pojawi się pytanie o hasło, pozostaw to pole puste.
 
-**Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej można ręcznie zainstalować certyfikaty, klikając prawym przyciskiem myszy każdy z plików certyfikatów, wybierając pozycję Zainstaluj certyfikat, a następnie klikając kreatora Menedżera certyfikatów.
+**Aktualizacja**: Visual Studio 2017 w wersji 15.8 w wersji Preview 2 lub nowszej, możesz ręcznie zainstalować certyfikaty klikając prawym przyciskiem myszy każdy plik certyfikatu, wybierając Zainstaluj certyfikat, a następnie klikając polecenie za pomocą Kreatora Menedżera certyfikatów.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Utwórz plik wsadowy przy użyciu następujących poleceń:
+   **Aktualizacja**: dla programu Visual Studio 2017 w wersji Preview należy zachować 15,8 2 lub nowszego, utworzyć plik wsadowy za pomocą następujących poleceń:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -102,7 +102,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
 
 ::: moniker range="vs-2019"
 
-1. Skopiuj [narzędzie Menedżer certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr. exe) do udziału instalacyjnego (na przykład \\server \ Share \ vs2019). Certmgr.exe nie jest częścią Windows, ale jest dostępny jako część [zestawu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Skopiuj [narzędzie Menedżer certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr. exe) do udziału instalacyjnego (na przykład \\server\share\vs2019). Certmgr.exe nie jest częścią Windows, ale jest dostępny jako część [zestawu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Utwórz plik wsadowy za pomocą następujących poleceń:
 
@@ -135,35 +135,35 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
 3\. Pliki p12, w tym folderze każdego zawierają pośredniego certyfikatu i certyfikatu głównego. Certyfikaty zainstalowane zostały większości systemów, które są aktualne z usługą Windows Update.
 
 * **ManifestSignCertificates.p12** zawiera:
-  * Certyfikat pośredni: **Podpisywanie kodu firmy Microsoft — PPW z 2011**
+  * Certyfikat pośredniego: **2011 UPW podpisywania kodu firmy Microsoft**
     * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2011**
+  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2011**
     * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **ManifestCounterSignCertificates.p12** zawiera:
-  * Certyfikat pośredni: **Microsoft Time-Stamp PCA 2010**
+  * Certyfikat pośredniego: **2010 UPW sygnaturę czasową firmy Microsoft**
     * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2010**
+  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2010**
     * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **Vs_installer_opc. SignCertificates.p12** zawiera:
-  * Certyfikat pośredni: **Podpisywanie kodu firmy Microsoft — Asystent zgodności**
+  * Certyfikat pośredniego: **UPW podpisywania kodu firmy Microsoft**
     * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
-  * Certyfikat główny: **Urząd certyfikacji głównej firmy Microsoft**
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji**
     * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
-**Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15,8 Preview 2 lub nowszej Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
+**Aktualizacja**: dla programu Visual Studio 2017 w wersji Preview należy zachować 15,8 2 lub nowszego, Instalator programu Visual Studio wymaga tylko główny certyfikaty do zainstalowania w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates. cer** zawiera:
-  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2011**
+  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2011**
     * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **ManifestCounterSignCertificates. cer** zawiera:
-  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2010**
+  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2010**
     * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
 * **Vs_installer_opc. SignCertificates. cer** zawiera:
-  * Certyfikat główny: **Urząd certyfikacji głównej firmy Microsoft**
+  * Certyfikat główny: **Microsoft główny urząd certyfikacji**
     * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
 
 Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie.
@@ -197,7 +197,7 @@ Jest jednym ze sposobów, aby sprawdzić instalację systemu wykonaj następują
 
 Jeśli nazwy certyfikatów nie były w **wystawiony dla** kolumn muszą być zainstalowane.  Jeśli pośredniego certyfikatu tylko w **bieżącego użytkownika** certyfikat pośredniego przechowywania, a następnie jest dostępna tylko dla użytkownika, który jest zalogowany. Użytkownik może być konieczne zainstalowanie go innym użytkownikom.
 
-## <a name="install-visual-studio"></a>Instalowanie programu Visual Studio
+## <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
 
 Po zainstalowaniu certyfikatów, za pomocą instrukcji z kontynuacją wdrożenia programu Visual Studio [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) części "Tworzenie instalacji sieciowej programu Visual Studio".
 

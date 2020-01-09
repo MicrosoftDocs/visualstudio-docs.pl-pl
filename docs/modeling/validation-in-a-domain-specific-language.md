@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748167"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594009"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Jako autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika ma znaczenie. Jeśli na przykład linia DSL umożliwia użytkownikom rysowanie drzewa rodzin osób i ich przodków, można napisać ograniczenie, które zapewnia, że dzieci mają daty urodzenia po nadrzędnych.
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  Zwróć uwagę na następujące kwestie dotyczące tego kodu:
 
-- Metody sprawdzania poprawności można dodać do klas domen lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain \*. cs**.
+- Metody sprawdzania poprawności można dodać do klas domen lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain\*. cs**.
 
 - Każda metoda sprawdzania poprawności jest stosowana do każdego wystąpienia klasy i jego podklas. W przypadku relacji domeny każde wystąpienie jest łączem między dwoma elementami modelu.
 
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Jeśli ustawisz liczebność roli relacji domeny na 1.. * lub 1.. 1, ale użytkownik nie utworzy linku do tej relacji, zostanie wyświetlony komunikat o błędzie walidacji.
 
- Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1.. \\** * w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
+ Jeśli na przykład DSL ma klasy Person i miasto, a relacja PersonLivesInTown z relacją **1..\\** * w roli miasto, a następnie dla każdej osoby, która nie ma miejscowości, zostanie wyświetlony komunikat o błędzie.
 
 ## <a name="running-validation-from-program-code"></a>Uruchamianie walidacji z kodu programu
  Można uruchomić walidację, uzyskując dostęp do lub tworząc ValidationController. Jeśli chcesz, aby błędy były wyświetlane użytkownikowi w oknie błędu, użyj ValidationController, który jest dołączony do DocData diagramu. Na przykład, jeśli piszesz polecenie menu, `CurrentDocData.ValidationController` jest dostępny w klasie zestawu poleceń:
@@ -329,7 +329,7 @@ validationController.ValidateCustom
 
  **Dostosuj zmianę, aby przywrócić prawidłowość modelu.** Na przykład jeśli użytkownik ustawi właściwość powyżej dozwolone maksimum, można zresetować właściwość do wartości maksymalnej. Aby to zrobić, zdefiniuj regułę. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Wycofaj transakcję, Jeśli podjęto próbę nieprawidłowej zmiany.** Dla tego celu można również zdefiniować regułę, ale w niektórych przypadkach można przesłonić procedurę obsługi właściwości **OnValueChanging ()** lub zastąpić metodę, taką jak `OnDeleted().`, aby wycofać transakcję, użyj `this.Store.TransactionManager.CurrentTransaction.Rollback().`, aby uzyskać więcej informacji, zobacz [właściwość domeny Obsługa zmian wartości](../modeling/domain-property-value-change-handlers.md).
+ **Wycofaj transakcję, Jeśli podjęto próbę nieprawidłowej zmiany.** Dla tego celu można również zdefiniować regułę, ale w niektórych przypadkach można przesłonić procedurę obsługi właściwości **OnValueChanging ()** lub zastąpić metodę, taką jak `OnDeleted().`, aby wycofać transakcję, aby uzyskać więcej informacji, użyj `this.Store.TransactionManager.CurrentTransaction.Rollback().`, zobacz temat [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Upewnij się, że użytkownik wie, że zmiana została skorygowana lub wycofana. Na przykład użyj `System.Windows.Forms.MessageBox.Show("message").`

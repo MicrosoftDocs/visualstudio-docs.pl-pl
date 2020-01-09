@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658334"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595894"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Przesłoń i rozwiń wygenerowane klasy
 
@@ -76,7 +76,7 @@ Oflagowany punkt rozszerzenia to miejsce w definicji DSL, w którym można ustaw
 
 W każdym przypadku, gdy ustawisz flagę i wygenerujesz ponownie kod, zostanie zwrócony błąd kompilacji. Kliknij dwukrotnie błąd, aby wyświetlić komentarz wyjaśniający, co należy podać.
 
-### <a name="rules"></a>Przepisy
+### <a name="rules"></a>Reguły
 
 Menedżer transakcji umożliwia definiowanie reguł, które są uruchamiane przed końcem transakcji, w której wystąpiło określone zdarzenie, takie jak zmiana właściwości. Reguły są zwykle używane do obsługi synchronism między różnymi elementami w sklepie. Na przykład reguły są używane do upewnienia się, że na diagramie jest wyświetlany bieżący stan modelu.
 

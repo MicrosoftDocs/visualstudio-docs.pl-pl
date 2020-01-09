@@ -1,5 +1,5 @@
 ---
-title: Converttoabsolutepath — zadanie | Dokumentacja firmy Microsoft
+title: ConvertToAbsolutePath — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,31 +13,31 @@ helpviewer_keywords:
 - ConvertToAbsolutePath task [MSBuild]
 - MSBuild, ConvertToAbsolutePath task
 ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14695cbfddc2f469d48bf78ee002f0582ef7f4bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e37c57119f74b9ab5f3157c6b88f9405799a2e82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834080"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596102"
 ---
 # <a name="converttoabsolutepath-task"></a>ConvertToAbsolutePath — zadanie
-Konwertuje ścieżka względna lub odwołania, na ścieżkę bezwzględną.
+Konwertuje ścieżkę względną lub odwołanie do ścieżki bezwzględnej.
 
 ## <a name="task-parameters"></a>Parametry zadania
- W poniższej tabeli opisano parametry `ConvertToAbsolutePath` zadania.
+ W poniższej tabeli opisano parametry zadania `ConvertToAbsolutePath`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista ścieżki względne do przekonwertowania na ścieżek bezwzględnych.|
-|`AbsolutePaths`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Lista ścieżek bezwzględnych dla elementów, które zostały przekazane.|
+|`Paths`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Lista ścieżek względnych do przekonwertowania na ścieżki bezwzględne.|
+|`AbsolutePaths`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Lista ścieżek bezwzględnych dla elementów, które zostały przesłane.|
 
 ## <a name="remarks"></a>Uwagi
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz także
 - [Zadania](../msbuild/msbuild-tasks.md)

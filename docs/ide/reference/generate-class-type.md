@@ -1,9 +1,9 @@
 ---
-title: Generuj klasę lub typ
+title: Generowanie klasy lub typu
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,81 +12,81 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595634"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generowanie klasy lub typu w programie Visual Studio
 
-Ta generacja kodu ma zastosowanie do:
+Dotyczy to generowanie kodu:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
-**Co:** Umożliwia natychmiastowe wygenerowanie kodu dla klasy lub typu.
+**Co:** pozwala natychmiast generowania kodu dla klasy lub typu.
 
-**Kiedy:** Wprowadzasz nową klasę lub typ i chcesz prawidłowo zadeklarować ją automatycznie.
+**Kiedy:** wprowadzenie nowej klasy lub typu i aby poprawnie Zadeklaruj go, automatycznie.
 
-**Dlaczego:** Można zadeklarować klasę lub typ przed użyciem, jednak ta funkcja spowoduje automatyczne wygenerowanie klasy lub typu.
+**Dlaczego:** można zadeklarować klasy lub typu przed użyciem, ale ta funkcja zostanie wygenerowana klasa lub wpisz automatycznie.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w wierszu, w którym znajduje się czerwona zygzakowata. Czerwona zygzakowata wskazuje klasę, która jeszcze nie istnieje.
+1. Umieść kursor w wierszu gdzie znajduje się czerwona fala. Czerwona fala wskazuje klasę, która jeszcze nie istnieje.
 
    - C#:
 
-       ![Wyróżniony kodC#](media/class-highlight-cs.png)
+       ![Wyróżniony kod C#](media/class-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod VB](media/class-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/class-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
-      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
-      ![Generuj Podgląd klasy](media/class-preview-cs.png)
+      ![Generowanie klasy (wersja zapoznawcza)](media/class-preview-cs.png)
 
-3. Wybierz jedną z opcji z menu rozwijanego:
+3. Z menu rozwijanego wybierz jedną z opcji:
 
-   - Generuj klasę "*TypeName*" w nowym pliku &mdash;Creates klasy o nazwie *TypeName* w pliku o nazwie *TypeName*. cs/. vb
-   - Generuj klasę "*TypeName*" &mdash;Creates klasy o nazwie *TypeName* w bieżącym pliku.
-   - Generuj zagnieżdżoną klasę "*TypeName*" &mdash;Creates klasę o nazwie *TypeName* zagnieżdżoną w bieżącej klasie.
-   - Generuj nowy typ... &mdash;Creates nową klasę lub strukturę ze wszystkimi określonymi właściwościami.
+   - Generowanie klasy*TypeName*"w nowym pliku&mdash;tworzy klasę o nazwie *TypeName* w pliku o nazwie *TypeName*.cs/.vb
+   - Generowanie klasy*TypeName*"&mdash;tworzy klasę o nazwie *TypeName* w bieżącym pliku.
+   - Generowanie klasy zagnieżdżonej*TypeName*"&mdash;tworzy klasę o nazwie *TypeName* zagnieżdżonych w bieżącej klasie.
+   - Generuj nowy typ... &mdash;Tworzy nowe klasy lub struktury, ze wszystkimi właściwościami, można określić.
 
    > [!TIP]
-   > Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
+   > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
 
-4. W przypadku wybrania pozycji **Generuj nowy typ** zostanie otwarte okno dialogowe **generowanie typu** . Skonfiguruj ułatwienia dostępu, rodzaj i lokalizację nowego typu.
+4. W przypadku wybrania **Generuj nowy typ** elementu **Generowanie typu** zostanie otwarte okno dialogowe. Skonfiguruj dostępność, rodzaj i lokalizację nowego typu.
 
    ![Generuj typ](media/class-newtype-cs.png)
 
    Wybór | Opis
    --- | ---
-   Access | Ustaw typ na *domyślny*, *wewnętrzny* lub *publiczny* .
-   Natur | Tę wartość można ustawić jako *klasę* lub *strukturę*.
-   Nazwa | Nie można jej zmienić i będzie to nazwa, która została już wpisana.
-   Projekt | Jeśli w rozwiązaniu istnieje wiele projektów, możesz wybrać miejsce, w którym ma się pojawić Klasa/struktura.
-   Nazwa pliku | Można utworzyć nowy plik lub dodać typ do istniejącego pliku.
+   Dostęp | Ustaw typ mieć *domyślne*, *wewnętrzne* lub *publicznych* dostępu.
+   rodzaj | To może być ustawiona jako *klasy* lub *struktury*.
+   Nazwa | Nie można zmienić i będzie można już wpisana nazwa.
+   {1&gt;Projekt&lt;1} | W przypadku wielu projektów w rozwiązaniu, wybierz polecenie, w której chcesz klasie/strukturze na żywo.
+   Nazwa pliku | Można utworzyć nowy plik, lub typu można dodać do istniejącego pliku.
 
-Tworzona jest Klasa lub struktura. Dla C#, tworzony jest również Konstruktor.
+Klasy lub struktury jest tworzony. Aby uzyskać C#, tworzona jest również konstruktora.
 
-- C#
+- Język C#
 
-   ![Generuj wynik klasyC#](media/class-result-cs.png)
+   ![Generowanie klasy wynikC#](media/class-result-cs.png)
 
-- Visual Basic
+- Język Visual Basic
 
-   ![Generuj wynik klasy VB](media/class-result-vb.png)
+   ![Generowanie klasy wynik VB](media/class-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

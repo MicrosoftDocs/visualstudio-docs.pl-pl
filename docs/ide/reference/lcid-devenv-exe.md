@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LCID devenv switch
 - /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991886289ac2c2ee06e37476169dff6d2354a52e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659981"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595530"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -43,16 +43,16 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="remarks"></a>Uwagi
 
-Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest utrwalana między sesjami, a środowisko IDE pokazuje tę zmianę w obszarze **narzędzia**  > **opcje**  > **środowisku**  > **Ustawienia międzynarodowe**  > **języka** .
+Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest utrwalana między sesjami, a środowisko IDE pokazuje tę zmianę w obszarze **narzędzia** > **opcje** > **środowisku** > **Ustawienia międzynarodowe** > **języka** .
 
 Jeśli określony język nie jest dostępny w systemie, przełącznik `/LCID` jest ignorowany.
 
 W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych przez program Visual Studio.
 
-|Język|ISTNIEJĄCYCH|
+|Język|LCID|
 |--------------|----------|
 |Chiński uproszczony|2052|
-|Chiński (tradycyjny)|1028|
+|Chiński tradycyjny|1028|
 |angielski|1033|
 |francuski|1036|
 |niemiecki|1031|

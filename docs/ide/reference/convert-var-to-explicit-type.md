@@ -2,27 +2,27 @@
 title: Kod refaktoryzacji do zamiany var z typem jawnym
 ms.date: 05/15/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 566d064ac0ac1b9c48ee8e75697cef39b2ec4ee1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661689"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595777"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refaktoryzacja w celu zastąpienia wariancji typem jawnym
 
 Użyj tego refaktoryzacji, aby zastąpić [wariancję](/dotnet/csharp/language-reference/keywords/var) w deklaracji zmiennej lokalnej z typem jawnym.
 
-To Refaktoryzacja dotyczy:
+Ta Refaktoryzacja mają zastosowanie do:
 
-- C#
+- Język C#
 
 ## <a name="why-to-use-an-explicit-type"></a>Dlaczego należy używać typu jawnego
 
@@ -38,7 +38,7 @@ Należy jednak użyć funkcji [var](/dotnet/csharp/language-reference/keywords/v
 
 1. Umieść karetkę dla słowa kluczowego `var`.
 
-1. Naciśnij klawisz **Ctrl** + **.** lub kliknij ikonę śrubokrętu ![screwdriver ikonę ](../media/screwdriver-icon.png) na marginesie pliku kodu.
+1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij ikonę śrubokrętu ![ikonę śrubokrętu](../media/screwdriver-icon.png) na marginesie pliku kodu.
 
    ![Użyj jawnego menu szybkie akcje typu](media/use-explicit-type.png)
 

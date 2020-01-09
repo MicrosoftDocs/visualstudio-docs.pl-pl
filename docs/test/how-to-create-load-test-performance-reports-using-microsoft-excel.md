@@ -1,153 +1,153 @@
 ---
-title: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
+title: Tworzenie raportów wydajności testu obciążenia za pomocą programu Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8134d2652c1654a65ac303838bd1209a5d061bd0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653565"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589074"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Instrukcje: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia
 
-Można generować raporty testów obciążenia programu Microsoft Excel, które są oparte na dwóch lub większej liczbie wyników testów.
+Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Dostępne są dwa typy raportów testów obciążenia:
 
-- **Wykonaj porównanie** Spowoduje to utworzenie zestawu raportów porównujących dane z dwóch wyników testów obciążenia przy użyciu tabel i wykresów słupkowych.
+- **Uruchom porównanie** tworzy zestaw raportów, który porównuje dane z dwóch wyniki testu obciążenia za pomocą tabel i wykresów słupkowych.
 
-- **Trend** Można wygenerować analizę trendu na dwóch lub większej liczbie wyników testu obciążenia. Wyniki są wyświetlane przy użyciu wykresów liniowych, ale dane są dostępne w tabelach przestawnych.
+- **Trend** możesz wygenerować analizy trendu na podstawie dwóch lub więcej wyników testu obciążenia. Wyniki są wyświetlane przy użyciu wykresów liniowych, ale dane są dostępne w raportach tabeli przestawnej.
 
 > [!TIP]
-> Możesz również ręcznie tworzyć raporty programu Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania, widoku wykresów i widoku tabele. Zobacz [jak: ręcznie utworzyć raport wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Można również ręcznie utworzyć raporty w programie Microsoft Word przez kopiowanie i wklejanie danych z widoku podsumowania, widoku wykresów i widoku tabel. Zobacz [porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
-Raport może służyć do współdzielenia danych wydajności z udziałowcami i przekazywania informacji o tym, czy ogólna wydajność i kondycja systemu jest lepsza i gorsza.
+Raport może służyć do udostępniania danych dotyczących wydajności zainteresowanym osobom i przekazywania, czy ogólna wydajność i kondycja systemu jest coraz lepsza czy gorsza.
 
-Definicje raportów są przechowywane w bazie danych testu obciążenia. Gdy raport jest zapisywany, definicja raportu jest zapisywana w bazie danych i może zostać ponownie użyta później.
+Definicje raportów są przechowywane w bazie danych testu obciążenia. Po zapisaniu raportu definicja raportu jest zapisywany w bazie danych i może być ponownie wykorzystana później.
 
-Skoroszyt programu Excel można również udostępnić uczestnikom projektu, tak aby uczestnicy projektu nie musieli łączyć się z bazą danych, aby wyświetlić raport.
+Ponadto skoroszytu programu Excel mogą być udostępniane zainteresowane strony, aby nie trzeba połączyć z bazą danych, aby wyświetlić raport zainteresowanych stron.
 
 > [!NOTE]
-> Skoroszyt programu Excel można udostępnić. jednak tylko użytkownicy, którzy mają program Visual Studio zainstalowany na swojej maszynie, będą mogli modyfikować dowolne arkusze kalkulacyjne. Inni użytkownicy nie będą widzieć opcji **raport o teście obciążenia** na Wstążce **pakietu Office** , ale będą mogli wyświetlać skoroszyt.
+> Możesz udostępnić skoroszyt programu Excel; jednak tylko w przypadku użytkowników, którzy mają zainstalowany na swoim komputerze program Visual Studio będą mogli modyfikować arkusze kalkulacyjne. Inni użytkownicy nie zobaczą **raport z testu obciążenia** opcji **Office** wstążki, ale będą mogli przeglądać skoroszyt.
 
-Na poniższej ilustracji przedstawiono przykładowy raport, który zawiera korelację między szybkością odrzucania transakcji (koszyka aktualizacji) a wygenerowaniem licznika (% procesor). Wskazuje to na potencjalny problem w kodzie aplikacji, a nie w bazie danych lub sieci, a także jest dobrym kandydatem do diagnozowania przy użyciu profilera ASP.NET.
+Na poniższej ilustracji przedstawiono przykładowy raport, który pokazuje związek między spadkiem szybkości transakcji (Aktualizuj koszyk) a zwyrodnieniem licznika (% procesora). To wskazuje na potencjalny problem w kodzie aplikacji, a nie bazy danych lub w sieci i jest dobrym kandydatem do diagnozowania przy użyciu Profiler platformy ASP.NET.
 
 ![Potencjalny problem w kodzie aplikacji](../test/media/lt_excel.png)
 
-Raporty programu Excel można generować w **analizatorze testu obciążenia**, korzystając z przycisku **Utwórz raport programu Excel** na pasku narzędzi lub z programu Excel przy użyciu opcji Raport z **testu obciążenia** na karcie **test obciążenia** wstążki **pakietu Office** .
+Raporty programu Excel można albo wygenerować w **analizatora testu obciążenia**, za pomocą **Utwórz raport programu Excel** przycisk na pasku narzędzi lub z programu Excel przy użyciu **raport z testu obciążenia** opcji **testu obciążeniowego** karcie **Office** wstążki.
 
 > [!NOTE]
-> W przypadku dodania komentarzy do testu obciążenia pojawiają się one w raporcie programu Excel.
+> Po dodaniu komentarzy do testu obciążenia są wyświetlane w raporcie programu Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Aby wygenerować raporty porównania testów obciążenia za pomocą programu Excel
 
-1. Przed wygenerowaniem raportu należy najpierw uruchomić test obciążenia.
+1. Przed wygenerowaniem raportu, należy najpierw uruchomić test obciążenia.
 
-2. Raporty dotyczące testów obciążenia programu Excel można tworzyć na dwa sposoby:
+2. Można utworzyć raporty testu obciążenia programu Excel na dwa sposoby:
 
-   - Po zakończeniu testu obciążenia na stronie **ładowanie wyniki testów** wybierz przycisk **Utwórz raport programu Excel** na pasku narzędzi.
+   - Po zakończeniu testu obciążenia w **wyników testu obciążeniowego** wybierz **Utwórz raport programu Excel** przycisku na pasku narzędzi.
 
       > [!NOTE]
-      > Jeśli przycisk **Utwórz raport programu Excel** jest wyłączony na pasku narzędzi **podglądu wydajności sieci Web wyniki testów** , może być konieczne uruchomienie programu Microsoft Excel jeden raz przed jego włączeniem. Po zainstalowaniu Visual Studio Enterprise dodatek testu obciążenia Visual Studio Enterprise zostanie skopiowany na komputer dla programu Microsoft Excel; Jednak aby zakończyć proces instalacji dodatku, należy uruchomić program Microsoft Excel.
+      > Jeśli **Utwórz raport programu Excel** przycisk jest niedostępny w **podglądu wyników testu wydajności sieci Web** narzędzi może być konieczne uruchomienie programu Microsoft Excel jeden raz przed jego włączeniem. Po zainstalowaniu programu Visual Studio Enterprise programu Visual Studio Enterprise load test dodatek programu jest kopiowany do komputera dla programu Microsoft Excel; jednak należy uruchomić programu Microsoft Excel, aby ukończyć proces instalacji dodatku.
 
-      Program Microsoft Excel zostanie otwarty z **kreatorem Generuj raport z testu obciążenia**.
+      Microsoft Excel otwiera się przy użyciu **Generowanie kreatora raportu testu obciążenia**.
 
-   **ORAZ**
+   **OR**
 
-   1. Otwórz program Microsoft Excel, wybierz kartę **test obciążenia** na Wstążce **pakietu Office** , a następnie wybierz pozycję **Raport z testu obciążenia**.
+   1. Otwórz program Microsoft Excel, zaznacz **testu obciążeniowego** karcie **Office** wstążki, a następnie wybierz **raport z testu obciążenia**.
 
-       Zostanie wyświetlony **Kreator Generuj raport z testu obciążenia** .
+       **Generowanie kreatora raportu testu obciążenia** pojawia się.
 
-   2. Na stronie **Wybierz bazę danych zawierającą testy obciążenia** w obszarze **Nazwa serwera**wpisz nazwę serwera zawierającego wyniki testu obciążenia.
+   2. W **wybierz bazę danych zawierającą testy obciążeniowe** w obszarze **nazwy serwera**, wpisz nazwę serwera zawierającego wyniki testu obciążenia.
 
    3. Z listy rozwijanej **Nazwa bazy danych** wybierz bazę danych zawierającą wyniki testu obciążenia.
 
-3. Na stronie **jak chcesz wygenerować raport** upewnij się, że jest zaznaczona opcja **Utwórz raport** , a następnie wybierz przycisk **dalej**.
+3. W **jak chcesz wygenerować raport** Sprawdź, czy **utworzyć raport** jest zaznaczone, a następnie wybierz **dalej**.
 
-4. Na stronie **jaki typ raportu chcesz wygenerować** upewnij się, że wybrano opcję **Uruchom porównanie** , a następnie wybierz przycisk **dalej**.
+4. W **jaki typ raportu chcesz wygenerować** Sprawdź, czy **Uruchom porównanie** jest zaznaczone, a następnie wybierz **dalej**.
 
-5. Na stronie **Wprowadź szczegóły raportu testu obciążenia** wpisz nazwę raportu w polu **Nazwa raportu**.
+5. W **szczegóły raportu testu obciążeniowego Enter** strony, wpisz nazwę dla raportu w **Nazwa raportu**.
 
-6. Wybierz test obciążenia, dla którego chcesz wygenerować raport, a następnie wybierz przycisk **dalej**.
+6. Zaznacz test obciążeniowy, aby wygenerować raport i wybierz polecenie **dalej**.
 
-7. Na stronie **Wybierz przebiegi dla raportu** w obszarze **Wybierz co najmniej jeden przebieg do dodania do raportu**wybierz dwa wyniki testów obciążenia, które chcesz porównać w raporcie, i wybierz przycisk **dalej**.
+7. W **wybierz przebiegi do raportu** w obszarze **wybierz co najmniej jeden przebieg do dodania do raportu**wybierz dwa wyniki testów, które chcesz porównać w raporcie, a następnie wybierz obciążenia **dalej**.
 
    > [!NOTE]
-   > Raport porównawczy można generować tylko dla dwóch wyników testu obciążenia. Jeśli wybierzesz jeden wynik testu obciążenia lub więcej niż dwa wyniki testów obciążenia, zostanie wyświetlony komunikat ostrzegawczy.
+   > Możesz tylko wygenerować raport porównawczy dla wyników dwóch testów obciążenia. Jeśli wybierzesz albo jeden wynik testu obciążenia lub więcej niż dwa wyniki testów obciążenia, pojawi się komunikat ostrzegawczy.
 
-8. Na stronie **Wybierz liczniki dla raportu** w obszarze **Wybierz co najmniej jeden licznik, który ma zostać dodany do raportu można dodać** listę liczników, aby dostosować raport. Wybierz liczniki, które chcesz porównać z dwóch wybranych przebiegów testowych w raporcie, a następnie wybierz przycisk **Zakończ**.
+8. W **Wybierz liczniki do raportu** w obszarze **wybierz co najmniej jeden licznik do dodania do raportu** rozwijana lista liczników jest dostępna w celu dostosowywania raportu. Wybierz liczniki, które chcesz porównać dwie wybrane uruchomienia testu w raporcie, a następnie wybierz **Zakończ**.
 
-9. Raport skoroszytu programu Excel jest generowany przy użyciu następujących kart arkusza kalkulacyjnego:
+9. Z następującymi kartami arkusza kalkulacyjnego jest generowany raport skoroszytu programu Excel:
 
-   - **Spis treści** — wyświetla nazwę raportu testu obciążenia i zawiera spis treści z linkami do różnych kart w raporcie.
+   - **Spis treści** — Wyświetla nazwę raportu testu obciążenia oraz spis treści z łączami do różnych kart w raporcie.
 
-   - **Uruchomienia —** Zawiera szczegółowe informacje na temat tego, które dwa przebiegi są porównywane w raporcie.
+   - **Uruchamia -** zawiera szczegółowe informacje, na które dwa przebiegi są porównywane w raporcie.
 
-   - **Porównanie testów —** Zawiera szczegóły wykresu słupkowego dotyczące regresji wydajności i ulepszeń między dwoma różnymi przebiegami.
+   - **Porównanie testów -** zawiera wykresu słupkowego szczegóły dotyczące regresji wydajności i ulepszeń między dwoma porównywanymi przebiegami.
 
-   - **Porównanie stron —** Zawiera wykres słupkowy i procentowe dane porównania wydajności między dwoma przebiegami na różnych stronach w przebiegach testów.
+   - **Porównanie stron —** zawiera wykres słupkowy i wydajności procent dane porównania między dwoma przebiegami na różnych stronach w przebiegu testowym.
 
-   - **Porównanie maszyn —** Zawiera dane porównania między dwoma przebiegami zależnymi od użytych maszyn.
+   - **Porównanie - komputerów** zawiera dane porównawcze między dwoma przebiegami na podstawie maszyn, które były używane.
 
-   - **Porównanie błędów —** Porównuje typy błędów napotkane między dwoma przebiegami i liczbą wystąpień.
+   - **Porównanie błędów —** porównuje typy błędów napotkanych między dwoma uruchomieniami i liczbę wystąpień.
 
      > [!TIP]
-     > W celu uzyskania lepszych raportów niektóre właściwości są dostępne w testach obciążenia i testach wydajności sieci Web, które umożliwiają bogatsze raporty. Żądanie strony ma dwie właściwości, które są prezentowane w raportach: cel i nazwa raportowania. Czasy odpowiedzi stron będą raportowane względem celu, a zamiast adresu URL w raportach zostanie użyta nazwa raportowania. W obszarze Ustawienia przebiegu testu obciążenia w obszarze Zarządzanie zbiorami liczników Właściwość Tagi komputera jest wyświetlana na liście nazwy maszyn raportu. Jest to bardzo przydatne w przypadku opisywania roli konkretnego komputera w raporcie.
+     > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
 
-## <a name="to-generate-load-test-trend-reports-using-excel"></a>Aby wygenerować raporty trendów testu obciążenia za pomocą programu Excel
+## <a name="to-generate-load-test-trend-reports-using-excel"></a>Aby wygenerować raporty trendów testów obciążenia za pomocą programu Excel
 
 1. Przed wygenerowaniem raportu, należy uruchomić test obciążenia.
 
-2. Raporty dotyczące testów obciążenia programu Excel można tworzyć na dwa sposoby:
+2. Można utworzyć raporty testu obciążenia programu Excel na dwa sposoby:
 
-   - Po zakończeniu testu obciążenia na stronie **ładowanie wyniki testów** wybierz przycisk **Utwórz raport programu Excel** na pasku narzędzi.
+   - Po zakończeniu testu obciążenia w **wyników testu obciążeniowego** wybierz **Utwórz raport programu Excel** przycisku na pasku narzędzi.
 
       > [!NOTE]
-      > Jeśli przycisk **Utwórz raport programu Excel** jest wyłączony na pasku narzędzi **podglądu wydajności sieci Web wyniki testów** , może być konieczne uruchomienie programu Microsoft Excel jeden raz przed jego włączeniem. Po zainstalowaniu Visual Studio Enterprise dodatek testu obciążenia Visual Studio Enterprise zostanie skopiowany na komputer dla programu Microsoft Excel; Jednak aby zakończyć proces instalacji dodatku, należy uruchomić program Microsoft Excel.
+      > Jeśli **Utwórz raport programu Excel** przycisk jest niedostępny w **podglądu wyników testu wydajności sieci Web** narzędzi może być konieczne uruchomienie programu Microsoft Excel jeden raz przed jego włączeniem. Po zainstalowaniu programu Visual Studio Enterprise programu Visual Studio Enterprise load test dodatek programu jest kopiowany do komputera dla programu Microsoft Excel; jednak należy uruchomić programu Microsoft Excel, aby ukończyć proces instalacji dodatku.
 
-      Program Microsoft Excel zostanie otwarty z **kreatorem Generuj raport z testu obciążenia**.
+      Microsoft Excel otwiera się przy użyciu **Generowanie kreatora raportu testu obciążenia**.
 
-   **ORAZ**
+   **OR**
 
-   1. Otwórz program Microsoft Excel, wybierz kartę **test obciążenia** na Wstążce **pakietu Office** , a następnie wybierz pozycję **Raport z testu obciążenia**.
+   1. Otwórz program Microsoft Excel, zaznacz **testu obciążeniowego** karcie **Office** wstążki, a następnie wybierz **raport z testu obciążenia**.
 
-       Zostanie wyświetlony **Kreator Generuj raport z testu obciążenia** .
+       **Generowanie kreatora raportu testu obciążenia** pojawia się.
 
-   2. Na stronie **Wybierz bazę danych zawierającą testy obciążenia** w obszarze **Nazwa serwera**wpisz nazwę serwera zawierającego wyniki testu obciążenia.
+   2. W **wybierz bazę danych zawierającą testy obciążeniowe** w obszarze **nazwy serwera**, wpisz nazwę serwera zawierającego wyniki testu obciążenia.
 
    3. Z listy rozwijanej **Nazwa bazy danych** wybierz bazę danych zawierającą wyniki testu obciążenia.
 
-3. Na stronie **jak chcesz wygenerować raport** upewnij się, że jest zaznaczona opcja **Utwórz raport** , a następnie wybierz przycisk **dalej**.
+3. W **jak chcesz wygenerować raport** Sprawdź, czy **utworzyć raport** jest zaznaczone, a następnie wybierz **dalej**.
 
-4. Na stronie **jaki typ raportu chcesz wygenerować** upewnij się, że jest zaznaczona opcja **trend** i wybierz polecenie **dalej**.
+4. W **jaki typ raportu chcesz wygenerować** Sprawdź, czy **Trend** jest zaznaczone, a następnie wybierz **dalej**.
 
-5. Na stronie **Wprowadź szczegóły raportu testu obciążenia** wpisz nazwę raportu w polu **Nazwa raportu**.
+5. W **szczegóły raportu testu obciążeniowego Enter** strony, wpisz nazwę dla raportu w **Nazwa raportu**.
 
-6. Wybierz test obciążenia, dla którego chcesz wygenerować raport, a następnie wybierz przycisk **dalej**.
+6. Zaznacz test obciążeniowy, aby wygenerować raport i wybierz polecenie **dalej**.
 
-7. Na stronie **Wybierz przebiegi dla raportu** w obszarze **Wybierz co najmniej jeden przebieg do dodania do raportu**wybierz wyniki testów obciążenia, które chcesz porównać w raporcie, i wybierz przycisk **dalej**.
+7. W **wybierz przebiegi do raportu** w obszarze **wybierz co najmniej jeden przebieg do dodania do raportu**, zaznacz wyniki testów obciążenia, które chcesz porównać w raporcie, a następnie wybierz **dalej**.
 
-8. Na stronie **Wybierz liczniki dla raportu** w obszarze **Wybierz co najmniej jeden licznik, który ma zostać dodany do raportu**, można rozwinąć listę liczników, aby dostosować raport. Wybierz liczniki, które chcesz porównać na potrzeby analizy trendów, a następnie wybierz pozycję **Zakończ**.
+8. W **Wybierz liczniki do raportu** w obszarze **wybierz co najmniej jeden licznik do dodania do raportu**, rozwijana lista liczników jest dostępna w celu dostosowywania raportu. Wybierz liczniki, które chcesz porównać dla analizy trendu i wybierz przycisk **Zakończ**.
 
-9. Raport jest generowany z spisem treści zawierającym linki do różnych kart skoroszytów programu Excel, które zostały wygenerowane w raporcie. Linki są oparte na licznikach wybranych dla raportu trendu. Na przykład jeśli pozostawiłeś liczniki domyślne wybrane w kroku 7, raport wygeneruje dane, które są prezentowane w oddzielnych kartach w programie Excel dla każdego licznika wymienionego w kroku 7. Dane generowane dla każdego licznika są prezentowane na wykresach w stylu trendu.
+9. Raport jest generowany ze spisem treści, zawierającym łącza do różnych kart skoroszytu programu Excel generowanych w raporcie. Łącza są oparte na licznikach wybranych dla raportu trendu. Na przykład jeśli domyślne liczniki wybrane w kroku 7, następnie raport wygeneruje dane, które są przedstawiane na osobnych kartach w programie Excel dla każdego licznika wymienionego w kroku 7. Dane, który jest generowany dla każdego licznika są przedstawione w wykresów trend styl.
 
    > [!TIP]
-   > W celu uzyskania lepszych raportów niektóre właściwości są dostępne w testach obciążenia i testach wydajności sieci Web, które umożliwiają bogatsze raporty. Żądanie strony ma dwie właściwości, które są prezentowane w raportach: cel i nazwa raportowania. Czasy odpowiedzi stron będą raportowane względem celu, a zamiast adresu URL w raportach zostanie użyta nazwa raportowania. W obszarze Ustawienia przebiegu testu obciążenia w obszarze Zarządzanie zbiorami liczników Właściwość Tagi komputera jest wyświetlana na liście nazwy maszyn raportu. Jest to bardzo przydatne w przypadku opisywania roli konkretnego komputera w raporcie.
+   > Aby uzyskać lepsze raporty kilka właściwości są dostępne w testach obciążenia i testy wydajności sieci web, które umożliwiają bardziej rozbudowane raporty. Żądanie strony ma dwie właściwości, które są wyświetlane w raportach: cel i nazwa raportowania. Czasy reakcji stron będą raportowane względem celu, a nazwa raportowania będzie używana zamiast adresu URL w raportach. W teście obciążeniowym parametrów uruchomieniowych, w obszarze Zarządzaj zbiorem liczników właściwość znaczniki komputerów jest przedstawiona w nazwach komputerów raportów. Jest to bardzo przydatne do opisywania roli danej maszyny w raporcie.
 
 ## <a name="net-security"></a>Zabezpieczenia platformy .NET
 
-Wyniki testów obciążenia i raporty zawierają potencjalnie poufne informacje, które mogą być używane do tworzenia ataku na komputer lub w sieci. Wyniki testów obciążenia i raporty zawierają nazwy komputerów i parametry połączenia. Należy pamiętać o tym, gdy udostępniasz raporty testów obciążenia innym osobom.
+Wyniki testu obciążenia i raporty zawierają potencjalnie poufne informacje, które mogą być używane do zorganizowania ataku na komputer użytkownika lub sieci. Wyniki testu obciążenia i raporty zawierają nazwy komputerów i parametry połączenia. Należy pamiętać o tym kiedy raportów testów obciążenia są udostępniane innym osobom.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zgłoś wyniki testów obciążenia dla porównania testów lub analizy trendów](../test/compare-load-test-results.md)
+- [Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów](../test/compare-load-test-results.md)

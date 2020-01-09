@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1ddb1f1d39255c14e03d114891145c8f2dece5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 305b0398550a64722f6029a3d50082e6397643cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594529"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Ustawianie wartości domyślnych dla wdrożeń programu Visual Studio w przedsiębiorstwie
 
@@ -58,7 +58,7 @@ Można ustawić następujące wartości rejestru:
 | `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | Zapobiegaj automatycznym pobieraniu aktualizacji przez Instalatora dla wszystkich zainstalowanych produktów programu Visual Studio. Możesz zmienić wartość dowolnym czasie. |
 
 > [!IMPORTANT]
-> W `CachePath` przypadku zmiany zasad rejestru po dowolnych instalacjach należy przenieść istniejącą pamięć podręczną pakietu do nowej lokalizacji i upewnić się, że jest zabezpieczona `SYSTEM` , `Administrators` tak aby miała pełną kontrolę `Everyone` i ma dostęp do odczytu.
+> W przypadku zmiany zasad rejestru `CachePath` po dowolnych instalacjach należy przenieść istniejącą pamięć podręczną pakietu do nowej lokalizacji i upewnić się, że jest zabezpieczona, tak aby `SYSTEM` i `Administrators` mieć pełną kontrolę, a `Everyone` ma dostęp do odczytu.
 > Niepowodzenie przenoszenia istniejącej pamięci podręcznej lub jej zabezpieczenia może spowodować problemy z przyszłymi instalacjami.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]

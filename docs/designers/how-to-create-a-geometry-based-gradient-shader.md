@@ -1,21 +1,21 @@
 ---
-title: 'Instruktaż: Tworzenie cieniowania gradientu geometrycznego'
+title: 'Porady: tworzenie modułu cieniującego gradientu geometrycznego'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d51177e392b46c655c857b7015011818a888
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 96326910a04294e30c410cc96bf9c600bfb3f17c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635638"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589460"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instruktaż: Tworzenie cieniowania gradientu geometrycznego
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Instrukcje: Tworzenie cieniowania gradientowego opartego na geometrii
 
 W tym artykule pokazano, jak używać projektanta programu do cieniowania i języka ukierunkowanego modułu cieniującego Graph do tworzenia cieniowania gradientowego opartego na geometrii. Ten program do cieniowania skaluje stałą wartość koloru RGB o wysokości każdego punktu obiektu w przestrzeni światowej.
 
@@ -52,17 +52,17 @@ Na poniższej ilustracji przedstawiono ukończony wykres modułu cieniującego i
 
 Niektóre kształty mogą zapewniać lepszy Podgląd niektórych programów do cieniowania. Aby uzyskać informacje o tym, jak wyświetlić podgląd programów do cieniowania w projektancie cieniowania, zobacz **Podgląd** programów do cieniowania w [projektancie cieniowania](../designers/shader-designer.md).
 
-Na poniższej ilustracji przedstawiono program do cieniowania opisany w tym dokumencie dotyczący sceny 3W, która jest przedstawiona w [How: Modelowanie terenów 3W ](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokość punktu na świecie.
+Na poniższej ilustracji przedstawiono program do cieniowania opisany w tym dokumencie, który został zastosowany do sceny 3W, która została pokazana w temacie [How to: Modeling The 3D](../designers/how-to-model-3-d-terrain.md). Intensywność koloru zwiększa się o wysokość punktu na świecie.
 
 ![Efekt gradientu stosowany do modelu&#45;terenowego 3 D](../designers/media/digit-gradient-effect-result.png)
 
-Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3D, zobacz [How: Zastosuj cieniowanie do modelu 3W ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Aby uzyskać więcej informacji na temat sposobu stosowania cieniowania do modelu 3D, zobacz [How to: Apply a Shader to a model 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Instrukcje: Zastosuj cieniowanie do modelu 3W ](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Instrukcje: Eksportowanie ](../designers/how-to-export-a-shader.md) cieniowania
-- [Instrukcje: Modelowanie terenów 3W ](../designers/how-to-model-3-d-terrain.md)
-- [Instrukcje: Tworzenie cieniowania tekstury w skali szarości ](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Instrukcje: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Instrukcje: eksportowanie cieniowania](../designers/how-to-export-a-shader.md)
+- [Instrukcje: modelowanie terenu 3D](../designers/how-to-model-3-d-terrain.md)
+- [Instrukcje: tworzenie cieniowania tekstury skali szarości](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Projektant cieniowania](../designers/shader-designer.md)
 - [Węzły projektanta cieniowania](../designers/shader-designer-nodes.md)

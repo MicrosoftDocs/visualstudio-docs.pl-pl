@@ -2,75 +2,75 @@
 title: Implementowanie interfejsu
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658915"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595556"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementowanie interfejsu w programie Visual Studio
 
-Ta generacja kodu ma zastosowanie do:
+Dotyczy to generowanie kodu:
 
-- C#
+- Język C#
 
-- Visual Basic
+- Język Visual Basic
 
-**Co:** Umożliwia natychmiastowe wygenerowanie kodu wymaganego do zaimplementowania interfejsu.
+**Co:** umożliwia natychmiastowe wygenerowanie kodu wymaganego do implementacji interfejsu.
 
-**Kiedy:** Chcesz dziedziczyć z interfejsu.
+**Kiedy:** chcesz dziedziczyć z interfejsu.
 
-**Dlaczego:** Można ręcznie zaimplementować wszystkie interfejsy jeden po sobie, jednak ta funkcja będzie automatycznie generować wszystkie podpisy metod.
+**Dlaczego:** ręcznie można zaimplementować interfejsu wszystkich jeden po drugim, jednak ta funkcja będzie generowana automatycznie wszystkich podpisów metody.
 
 ## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w wierszu, w którym znajduje się czerwony zygzak wskazujący, że odwołuje się do interfejsu, ale nie zaimplementowano wszystkich wymaganych członków.
+1. Umieść kursor w wierszu gdzie znajduje się czerwona fala wskazującą ma odwołanie do interfejsu, ale nie zaimplementowano wszystkich wymaganych elementów członkowskich.
 
    - C#:
 
-       ![Wyróżniony kodC#](media/interface-highlight-cs.png)
+       ![Wyróżniony kod C#](media/interface-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod VB](media/interface-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/interface-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Klawiatury**
-      - Naciśnij klawisz **Ctrl** + **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-   - **Wskaźnik**
-      - Kliknij prawym przyciskiem myszy i wybierz menu **szybkie akcje i operacje refaktoryzacji** .
-      - Umieść kursor na czerwono, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) zostanie wyświetlona ikona.
-      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) ikona wyświetlana na lewym marginesie, jeśli kursor tekstu znajduje się już w wierszu z czerwonym obramowaniem.
+   - **Keyboard**
+      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - **Myszy**
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana.
+      - Kliknij ikonę ![Żarówka błędów](media/error-bulb.png) Ikona wyświetlana na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
-3. Z menu rozwijanego wybierz pozycję **Implementuj interfejs** .
+3. Wybierz **implementuj interfejs** z menu rozwijanego.
 
-   ![Implementuj wersję zapoznawczą interfejsu](media/interface-preview-cs.png)
+   ![Implementuj interfejs w wersji zapoznawczej](media/interface-preview-cs.png)
 
    > [!TIP]
-   > - Użyj linku **Podgląd zmian** w dolnej części okna Podgląd, [Aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) , które zostaną wprowadzone przed dokonaniem wyboru.
-   > - Użyj linków **dokumentu**, **projektu**i **rozwiązania** w dolnej części okna Podgląd, aby utworzyć odpowiednie sygnatury metod dla wielu klas, które implementują interfejs.
+   > - Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
+   > - Użyj **dokumentu**, **projektu**, i **rozwiązania** linki na dole okna (wersja zapoznawcza) do tworzenia podpisów właściwej metody w wielu klas, które implementują interfejs.
 
-   Sygnatury metod interfejsu są tworzone i gotowe do zaimplementowania.
+   Podpisy metod interfejsu jest tworzony i jest gotowa do zaimplementowania.
 
    - C#:
 
-       ![Zaimplementuj wynik interfejsuC#](media/interface-result-cs.png)
+       ![Implementuj interfejs wynik C#](media/interface-result-cs.png)
 
    - Visual Basic:
 
-       ![Implementuj wyniki interfejsu VB](media/interface-result-vb.png)
+       ![Implementuj interfejs wynik VB](media/interface-result-vb.png)
 
    > [!TIP]
-   > (C# tylko) Użyj opcji **Zaimplementuj interfejs jawnie** , aby przede wszystkim wygenerowanej metody uzyskać nazwę interfejsu, aby uniknąć kolizji nazw.
+   > (C# tylko) Użyj **implementuj interfejs jawnie** opcję, aby każdy poprzedzony wygenerowanej metody o nazwie interfejsu, aby uniknąć konfliktów nazw.
    >
-   > ![Zaimplementuj interfejs jawnie](media/interface-explicitresult-cs.png);
+   > ![Implementuj interfejs jawnie wyniku.](media/interface-explicitresult-cs.png);
 
 ## <a name="see-also"></a>Zobacz także
 

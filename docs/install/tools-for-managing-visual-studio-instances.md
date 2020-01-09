@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e90eb90f79d717e45e558fe5151d9e27534bee95
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935415"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594503"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
@@ -31,15 +31,15 @@ Istnieje kilka narzędzi, których można użyć do wykrywania instalacji progra
 
 Wprowadziliśmy kilka narzędzi, które pomogą Ci wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio na maszynach klienckich:
 
-* [vswhere](https://github.com/microsoft/vswhere): plik wykonywalny, wbudowanego w program Visual Studio lub będą dostępne dla oddzielnych dystrybucji, która pomoże Ci znaleźć lokalizacji wszystkich wystąpień programu Visual Studio na danym komputerze.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Skrypty programu PowerShell, które identyfikują zainstalowanych wystąpień programu Visual Studio za pomocą interfejsu API konfiguracji instalacji.
-* [VS-Instalator Samples](https://github.com/microsoft/vs-setup-samples): C#i przykłady w języku C++, które pokazują, jak zapytania istniejącą instalację za pomocą interfejsu API konfiguracji instalacji.
+* [vswhere](https://github.com/microsoft/vswhere): plik wykonywalny wbudowany w program Visual Studio lub dostępny w oddzielnym dystrybucji, który ułatwia znalezienie lokalizacji wszystkich wystąpień programu Visual Studio na konkretnym komputerze.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): skrypty programu PowerShell, które identyfikują zainstalowanych wystąpień programu Visual Studio za pomocą interfejsu API konfiguracji instalacji.
+* [VS-Instalator-Samples](https://github.com/microsoft/vs-setup-samples): przykłady C# i C++, które pokazują, jak zapytania istniejącą instalację za pomocą interfejsu API konfiguracji instalacji.
 
 Ponadto [interfejs API konfiguracji instalacji](<xref:Microsoft.VisualStudio.Setup.Configuration>) udostępnia interfejsy dla deweloperów, którzy chcą tworzyć swoje własne narzędzia do przeszukiwania wystąpieniami programu Visual Studio.
 
 ## <a name="using-vswhereexe"></a>Za pomocą vswhere.exe
 
-`vswhere.exe` jest automatycznie uwzględnione w programie Visual Studio (począwszy od programu Visual Studio 2017 wersja 15.2 i nowsze wersje), lub możesz ją pobrać z [strony z wersjami vswhere](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` Aby uzyskać informacje o tym narzędziu. Na przykład to polecenie przedstawia wszystkie wersje programu Visual Studio, w tym wcześniejsze wersje produktu i wersje i zapisuje wyniki w formacie JSON:
+`vswhere.exe` jest automatycznie dołączany do programu Visual Studio (począwszy od programu Visual Studio 2017 w wersji 15,2 lub nowszej) lub można go pobrać ze [strony wersji vswhere](https://github.com/Microsoft/vswhere/releases). Użyj `vswhere -?` Aby uzyskać informacje o tym narzędziu. Na przykład to polecenie wyświetla wszystkie wersje programu Visual Studio, w tym wcześniejsze wersje produktu i wersji wstępnej, i wyświetla wyniki w formacie JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -48,23 +48,23 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Aby uzyskać więcej informacji na temat instalacji programu Visual Studio 2017 zobacz [Visual Studio Instalator archiwa](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> Aby uzyskać więcej informacji na temat instalacji programu Visual Studio 2017, zobacz [archiwa Instalatora programu Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>Edytowanie rejestru dla wystąpienia programu Visual Studio
 
-W programie Visual Studio ustawienia rejestru są przechowywane w lokalizacji prywatnej, co umożliwia wielu wystąpień side-by-side tę samą wersję programu Visual Studio na tym samym komputerze.
+W programie Visual Studio ustawienia rejestru są przechowywane w lokalizacji prywatnej, co umożliwia używanie wielu wystąpień równoległych tej samej wersji programu Visual Studio na tym samym komputerze.
 
 Ponieważ te wpisy nie są przechowywane w rejestrze globalnego, istnieją specjalne instrukcje dotyczące używania Edytora rejestru, aby wprowadzić zmiany do ustawień rejestru:
 
-1. Jeśli masz otwarte wystąpienia programu Visual Studio, należy go zamknąć.
+1. Jeśli masz otwarte wystąpienie programu Visual Studio, zamknij je.
 
 1. Rozpocznij `regedit.exe`.
 
 1. Wybierz `HKEY_LOCAL_MACHINE` węzła.
 
-1. Wybierz z menu głównego Regedit **pliku** > **Załaduj gałąź rejestru...**  a następnie wybierz plik rejestru prywatnego, który jest przechowywany w **AppData\Local** folderu. Na przykład:
+1. Z menu głównego programu regedit wybierz kolejno pozycje **plik** > **Załaduj gałąź rejestru...** , a następnie wybierz plik rejestru prywatnego, który jest przechowywany w folderze **AppData\Local** . Na przykład:
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -76,7 +76,7 @@ Ponieważ te wpisy nie są przechowywane w rejestrze globalnego, istnieją specj
 Zostanie wyświetlony monit podaj nazwę gałęzi, która stanie się nazwą swojej gałęzi izolowanym. Po wykonaniu tej czynności powinno być możliwe do przeglądania w rejestrze w izolowanej hive, który został utworzony.
 
 > [!IMPORTANT]
-> Przed ponownym uruchomieniu programu Visual Studio musi zwolnić izolowane hive, który został utworzony. Aby to zrobić, wybierz **pliku** > **Zwolnij gałąź rejestru** z menu głównego Regedit. (Jeśli jest to, następnie plik jest zablokowany i Visual Studio nie będzie możliwe jej uruchomienie.)
+> Przed ponownym uruchomieniu programu Visual Studio musi zwolnić izolowane hive, który został utworzony. W tym celu wybierz pozycję **plik** > **Zwolnij gałąź** z menu głównego programu regedit. (Jeśli jest to, następnie plik jest zablokowany i Visual Studio nie będzie możliwe jej uruchomienie.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

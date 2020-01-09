@@ -5,28 +5,28 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653348"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588918"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Instrukcje: Określanie właściwości czasu rampy kroku dla wzorca obciążenia krok po kroku
 
-Po utworzeniu testu obciążenia przy użyciu **nowego Kreator testu obciążeniowego**można użyć **Edytor testu obciążeniowego** , aby zmienić właściwości scenariuszy, aby spełniały potrzeby testowania i cele. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisów, zobacz [właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
 
-Właściwość **czas rampy kroku** jest ustawiana w oknie **Właściwości** . Edytujesz właściwości scenariusza testu obciążenia w **Edytor testu obciążeniowego**.
+Właściwość **czas rampy kroku** jest ustawiana w oknie **Właściwości** . Edytuj właściwości scenariusza testów obciążenia w **edytora testu obciążenia**.
 
-Właściwość **czas pochylni kroku** jest używana tylko z wzorcem ładowania kroku. Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców ładowania do modelu aktywności użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Właściwość **czas pochylni kroku** jest używana tylko z wzorcem ładowania kroku. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 Wzorzec obciążenia kroków służy do zwiększania obciążenia serwera lub serwerów w miarę przebiegu testu obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się w miarę wzrostu obciążenia użytkownika. Na przykład, aby zobaczyć, jak serwer lub serwery działają w miarę wzrostu obciążenia użytkownika 2 000 użytkowników, można uruchomić 10-godzinny test obciążenia, korzystając ze wzorca ładowania kroków o następujących właściwościach:
 
@@ -51,26 +51,26 @@ Właściwość **czas rampy kroku** pozwala zwiększyć się od jednego kroku do
 
 1. Otwórz test obciążenia.
 
-     Zostanie wyświetlona **Edytor testu obciążeniowego** . Zostanie wyświetlone drzewo testu obciążenia.
+     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
 2. W folderze **scenariusze** dla drzew testów obciążenia Otwórz węzeł scenariusza, dla którego chcesz określić czas przyrastania kroku.
 
 3. Wybierz węzeł **wzorzec obciążenia krok po kroku** .
 
     > [!NOTE]
-    > Wzorzec obciążenia dla scenariusza musi być wzorcem obciążenia etapem. Jeśli tak nie jest, wzorzec obciążenia będzie wyświetlał typ wzorca obciążenia, który jest aktualnie skojarzony z scenariuszem. Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców ładowania do modelu aktywności użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+    > Wzorzec obciążenia dla scenariusza musi być wzorcem obciążenia etapem. Jeśli tak nie jest, wzorzec obciążenia będzie wyświetlał typ wzorca obciążenia, który jest aktualnie skojarzony z scenariuszem. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4. W menu **Widok** wybierz polecenie **okno właściwości**.
+4. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-     Kategorie i właściwości scenariusza są wyświetlane w oknie **Właściwości** .
+     Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
 
 5. Ustaw wartość właściwości czas narastania **kroku** , wprowadzając liczbę dla sekund podejmowanych w każdym kroku w celu stopniowego dodawania użytkowników określonych przez właściwość **Liczba użytkowników kroków** .
 
-6. Po zakończeniu zmiany właściwości wybierz pozycję **Zapisz** w menu **plik** . Następnie możesz uruchomić test obciążenia, korzystając z nowej wartości **czasu pochylenia kroku** .
+6. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia, korzystając z nowej wartości **czasu pochylenia kroku** .
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)
-- [Edytuj wzorce obciążenia, aby modelować działania użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
+- [Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)

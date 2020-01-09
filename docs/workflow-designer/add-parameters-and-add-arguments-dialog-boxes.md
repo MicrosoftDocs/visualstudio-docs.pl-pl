@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650752"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597129"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dodawanie parametrów i Dodawanie argumentów, okna dialogowe
 
@@ -23,8 +23,8 @@ W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowe
 
 |||
 |-|-|
-|**Wskazywa**|Określa, czy parametr reprezentuje przepływ danych do metody, z metody, czy obu.|
-|**Wprowadź**|Nazwa typu nowego parametru.|
+|**Kierunek**|Określa, czy parametr reprezentuje przepływ danych do metody, z metody, czy obu.|
+|**Typ**|Nazwa typu nowego parametru.|
 |**Wartość**|Wyrażenie Visual Basic, które jest używane do przypisywania wartości domyślnej do nowego parametru|
 
 W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowego **Dodawanie argumentów** , które są używane przez projektanta <xref:System.Activities.Statements.InvokeDelegate>:
@@ -32,6 +32,6 @@ W poniższej tabeli opisano elementy interfejsu użytkownika (UI) okna dialogowe
 |||
 |-|-|
 |**Nazwa**|Nazwa argumentu.|
-|**Wskazywa**|Określa, czy argument reprezentuje przepływ danych do delegata, z delegata, czy z obu tych elementów.|
-|**Wprowadź**|Nazwa typu nowego argumentu.|
+|**Kierunek**|Określa, czy argument reprezentuje przepływ danych do delegata, z delegata, czy z obu tych elementów.|
+|**Typ**|Nazwa typu nowego argumentu.|
 |**Wartość**|Wartość, która ma być używana dla tego wystąpienia argumentu delegata.|

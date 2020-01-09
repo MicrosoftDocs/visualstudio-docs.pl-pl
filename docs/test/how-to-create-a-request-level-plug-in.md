@@ -1,89 +1,89 @@
 ---
-title: Tworzenie wtyczki na poziomie żądania dla testów wydajności sieci Web
+title: Tworzenie wtyczki dla testów wydajności sieci web na poziomie żądania
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653623"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589160"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Instrukcje: tworzenie wtyczki na poziomie żądania
+# <a name="how-to-create-a-request-level-plug-in"></a>Porady: tworzenie wtyczki na poziomie żądania
 
-*Żądania* to instrukcje deklaracyjne, które stanowią testy wydajności sieci Web. Wtyczki testów wydajności sieci Web umożliwiają izolowanie i ponowne użycie kodu poza głównymi instrukcjami deklaracyjne w teście wydajności sieci Web. Można utworzyć wtyczki i dodać je do indywidualnego żądania, a także do testu wydajności sieci Web, który go zawiera. Dostosowana *wtyczka żądania* oferuje sposób wywoływania kodu, ponieważ określone żądanie jest uruchamiane w teście wydajności sieci Web.
+*Żądania* są deklaratywne instrukcje, które stanowią testów wydajności sieci web. Wtyczki sieci Web wydajności testów umożliwiają izolowanie i ponowne użycie kodu poza głównym deklaracyjne oświadczeń do testu wydajności sieci web. Można tworzyć dodatki plug-in i dodać je do pojedynczego żądania także do testu wydajności sieci web, która go zawiera. Dostosowany *wtyczkę żądania* umożliwia wywoływanie kodu podczas uruchamiania poszczególnych żądań w teście wydajności sieci web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Każda wtyczka żądania testu wydajności sieci Web ma metodę preżądaną i metodę PostRequest. Po dołączeniu wtyczki żądania do określonego żądania HTTP przed odebraniem żądania zdarzenie wstępne zostanie wyzwolone i PostRequest zostanie wyzwolone po otrzymaniu odpowiedzi.
+Wtyczka każde żądanie testu wydajności sieci web ma PreRequest metody i PostRequest metody. Po dołączeniu wtyczki obsługi żądań do żądania http określonej PreRequest zdarzenie zostanie wyzwolone przed wystawić żądania i PostRequest uruchamiane po otrzymaniu odpowiedzi.
 
-Możesz utworzyć dostosowaną wtyczkę żądania testu wydajności sieci Web, wprowadzając własną klasę z klasy bazowej <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+Można utworzyć żądanie testu wydajności sieci web dostosowane wtyczki wyprowadzanie klasy z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> klasy bazowej.
 
-Możesz użyć niestandardowych wtyczek do testowania wydajności sieci Web przy użyciu zarejestrowanych testów wydajności sieci Web. Niestandardowe wtyczki żądań testów wydajności sieci Web umożliwiają pisanie minimalnej ilości kodu w celu uzyskania wyższego poziomu kontroli nad testami wydajności sieci Web. Można ich również używać z kodowanymi testami wydajności sieci Web. Zobacz [generowanie i uruchamianie kodowanego testu wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md).
+Za pomocą dostosowanych web wydajności żądania wtyczki testu za pomocą testów wydajności sieci web, które zostały zarejestrowane. Niestandardowe sieci web wydajności żądania wtyczki testu umożliwiają minimalnej ilości kodu, aby osiągnąć większy poziom kontroli nad testy wydajności sieci web. Jednak umożliwia także je z kodowanego testu wydajności www. Zobacz [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md).
 
-## <a name="to-create-a-request-level-plug-in"></a>Aby utworzyć wtyczkę na poziomie żądania
+## <a name="to-create-a-request-level-plug-in"></a>Do tworzenie wtyczki na poziomie żądania
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj** , a następnie wybierz pozycję **Nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz **Dodaj** , a następnie wybierz **nowy projekt**.
 
 2. Utwórz nowy projekt **biblioteki klas** .
 
-3. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy folder **odwołania** w nowej bibliotece klas i wybierz polecenie **Dodaj odwołanie**.
+3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** folderu w nową bibliotekę klas i wybierz pozycję **Dodaj odwołanie**.
 
-     Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
+     **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
 
-4. Wybierz kartę **.NET** , przewiń w dół, wybierz pozycję **Microsoft. VisualStudio. QualityTools. WebTestFramework** , a następnie wybierz przycisk **OK** .
+4. Wybierz **.NET** , przewiń w dół, a następnie wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**
 
-     Odwołanie do **Microsoft. VisualStudio. QualityTools. WebTestFramework** jest dodawane do folderu **Reference** w **Eksplorator rozwiązań**.
+     Odwołanie do **Microsoft.VisualStudio.QualityTools.WebTestFramework** jest dodawany do **odwołania** folderu w **Eksploratora rozwiązań**.
 
-5. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy górny węzeł projektu testu wydajności i obciążenia sieci Web, który zawiera test obciążenia, do którego chcesz dodać wtyczkę testową żądania testu wydajności sieci Web. Wybierz pozycję **Dodaj odwołanie**.
+5. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy górny węzeł wydajności sieci web i załadować projekt testowy, który zawiera test obciążeniowy, do którego chcesz dodać wydajności testu żądania wtyczkę testu sieci web. Wybierz **Dodaj odwołanie**.
 
-     **Zostanie wyświetlone okno dialogowe Dodawanie odwołania**.
+     **Zostanie wyświetlone okno dialogowe Dodaj odwołanie**.
 
-6. Wybierz kartę **projekty** , wybierz **projekt Biblioteka klas** , a następnie wybierz przycisk **OK** .
+6. Wybierz **projektów** zaznacz **projekt biblioteki klas** , a następnie wybierz **OK** .
 
-7. W **edytorze kodu**Napisz kod wtyczki. Najpierw utwórz nową klasę publiczną, która pochodzi od <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+7. W **Edytor kodu**, wpisać kod wtyczkę. Najpierw utwórz nową klasę publiczną, która pochodzi od klasy <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
-8. Zaimplementuj kod wewnątrz jednego lub obu programów <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
+8. Implementowanie kod wewnątrz co najmniej jeden z <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> procedury obsługi zdarzeń. Przykładową implementację przedstawiono w następującej sekcji Przykład.
 
 9. Po napisaniu kodu skompiluj nowy projekt.
 
-10. Otwórz test wydajności sieci Web, do którego chcesz dodać wtyczkę żądania.
+10. Otwórz test wydajności sieci web, do której chcesz dodać wtyczkę żądania.
 
-11. Kliknij prawym przyciskiem myszy żądanie, do którego chcesz dodać wtyczkę żądania, a następnie wybierz pozycję **Dodaj wtyczkę żądania**.
+11. Kliknij prawym przyciskiem myszy żądanie, do którego chcesz dodać żądania wtyczki i wybierz pozycję **Dodaj wtyczkę żądania**.
 
-     Zostanie wyświetlone okno dialogowe **Dodaj wtyczkę żądania testu sieci Web** .
+     **Dodaj wtyczkę żądania testu sieci Web** zostanie wyświetlone okno dialogowe.
 
-12. W obszarze **wybierz wtyczkę**wybierz nową wtyczkę.
+12. W obszarze **Wybierz wtyczkę**, wybierz nową wtyczkę.
 
-13. We **właściwościach wybranego okienka wtyczek** Ustaw początkowe wartości dla wtyczki, które mają być używane w czasie wykonywania.
+13. W **właściwości wybranych wtyczek** okienko, ustaw wartości początkowe dla wtyczki do użycia w czasie wykonywania.
 
     > [!NOTE]
-    > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Możesz również zmienić właściwości wtyczki testu wydajności sieci Web później za pomocą okno Właściwości.
+    > Można udostępnić dowolną liczbę właściwości każdej wtyczki. Wystarczy tylko ustawić je jako publiczne, możliwe do konfigurowania i mające typ podstawowy, np. Integer, Boolean lub String. Właściwości wtyczki testu wydajności sieci web można również zmienić później, przy użyciu okna właściwości.
 
-14. Wybierz **przycisk OK**.
+14. Wybierz **OK**.
 
-     Wtyczka jest dodawana do folderu **wtyczki żądania** , który jest folderem podrzędnym żądania HTTP.
+     Wtyczka zostanie dodana do **wtyczki żądania** folder, który jest folder podrzędny żądania HTTP.
 
     > [!WARNING]
-    > Po uruchomieniu testu wydajności sieci Web lub testu obciążenia, który korzysta z wtyczki, może zostać wyświetlony błąd podobny do poniższego:
+    > Możesz otrzymać błąd podobny do następującego po uruchomieniu testu wydajności sieci web lub testu obciążenia, który korzysta z Twojej wtyczki:
     >
-    > **Żądanie nie powiodło się: wyjątek w zdarzeniu > \<plug: nie można załadować pliku lub zestawu "\<" nazwy wtyczki ". dll >, Version = \<n. n. n. n >, Culture = neutral, PublicKeyToken = null" lub jedną z jej zależności. System nie może znaleźć określonego pliku.**
+    > **Żądanie nie powiodło się: wyjątek w \<>go zdarzenia wtyczki: nie można załadować pliku lub zestawu "\<" nazwy wtyczki ". dll >, Version =\<n. n. n. n >, Culture = neutral, PublicKeyToken = null" lub jedną z jej zależności. System nie może znaleźć określonego pliku.**
     >
-    > Jest to spowodowane wprowadzeniem zmian w kodzie w dowolnych wtyczkach i utworzenie nowej wersji biblioteki DLL **(Version = 0.0.0.0)** , ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
+    > Dzieje się tak Jeśli wprowadzasz zmiany kodu do dowolnego typu plug-ins i utworzyć nową wersję biblioteki DLL **(wersja = 0.0.0.0)** , ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
-    > 1. W projekcie testu wydajności i obciążenia sieci Web zobaczysz ostrzeżenie w odwołaniach. Usuń i Dodaj odwołanie do biblioteki DLL wtyczki.
-    > 2. Usuń wtyczkę z testu lub odpowiedniej lokalizacji, a następnie dodaj ją ponownie.
+    > 1. W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
+    > 2. Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
 
 ## <a name="example"></a>Przykład
 
-Można użyć poniższego kodu, aby utworzyć dostosowaną wtyczkę testu wydajności sieci Web, która wyświetla dwa okna dialogowe. Jedno okno dialogowe wyświetla adres URL, który jest skojarzony z żądaniem, do którego dołączono dodatek żądania. Drugie okno dialogowe wyświetla nazwę komputera agenta.
+Poniższy kod służy do tworzenia dostosowanych wydajności wtyczkę testu sieci web wyświetlający dwóch okien dialogowych. Jeden okno dialogowe wyświetla adres URL, który jest skojarzony z tym żądaniem, do którego dołączyć dodatku żądania. Drugie okno dialogowe wyświetla nazwę komputera agenta.
 
 > [!NOTE]
 > Poniższy kod wymaga, aby dodać odwołanie do przestrzeni nazw System.Windows.Forms.
@@ -114,7 +114,7 @@ namespace RequestPluginNamespace
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Kod reguły wyodrębniania niestandardowego dla testu wydajności sieci Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Kod reguły niestandardowego sprawdzania poprawności dla testu wydajności sieci Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Instrukcje: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
-- [Generowanie i uruchamianie kodowanego testu wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md)
+- [Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Kod niestandardowej reguły walidacji dla testów wydajności sieci web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
+- [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md)

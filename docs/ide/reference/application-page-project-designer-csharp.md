@@ -8,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc28c4b6585c52bca084234b8d21f211b4209b87
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651971"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595829"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 
 Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia i właściwości aplikacji projektu.
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project**  > **Właściwości** na pasku menu. Gdy pojawi się **Projektant projektu** , kliknij kartę **aplikacja** .
+Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu (nie węzeł **rozwiązania** ) w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project** > **Właściwości** na pasku menu. Gdy pojawi się **Projektant projektu** , kliknij kartę **aplikacja** .
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -83,7 +83,7 @@ Aby uzyskać więcej informacji na temat przekierowania, zobacz Przekierowywanie
 
 Definiuje punkt wejścia, który ma być wywoływany, gdy aplikacja jest ładowana. Zwykle jest to ustawiane jako główny formularz w aplikacji lub do procedury `Main`, która powinna być uruchamiana podczas uruchamiania aplikacji. Ponieważ biblioteki klas nie mają punktu wejścia, ich jedyną opcją dla tej właściwości jest **(nie ustawiono)** .
 
-Domyślnie w projekcie aplikacji WPF ta opcja jest ustawiona na **(nie ustawiono)** . Druga opcja to \[projectname]. app. W projekcie WPF należy ustawić początkowy identyfikator URI, aby załadować zasób interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, Otwórz plik *Application. XAML* w projekcie i ustaw właściwość `StartupUri` na plik *. XAML* w projekcie, na przykład *window1. XAML*. Aby uzyskać listę dopuszczalnych elementów głównych, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy również zdefiniować metodę `public static void Main()` w klasie w projekcie. Ta klasa będzie wyświetlana na liście **obiektów uruchamiania** jako *ProjectName. ClassName*. Następnie można wybrać klasę jako obiekt startowy.
+Domyślnie w projekcie aplikacji WPF ta opcja jest ustawiona na **(nie ustawiono)** . Druga opcja to \[ProjectName]. app. W projekcie WPF należy ustawić początkowy identyfikator URI, aby załadować zasób interfejsu użytkownika podczas uruchamiania aplikacji. Aby to zrobić, Otwórz plik *Application. XAML* w projekcie i ustaw właściwość `StartupUri` na plik *. XAML* w projekcie, na przykład *window1. XAML*. Aby uzyskać listę dopuszczalnych elementów głównych, zobacz <xref:System.Windows.Application.StartupUri%2A>. Należy również zdefiniować metodę `public static void Main()` w klasie w projekcie. Ta klasa będzie wyświetlana na liście **obiektów uruchamiania** jako *ProjectName. ClassName*. Następnie można wybrać klasę jako obiekt startowy.
 
 Aby uzyskać więcej informacji, zobacz [/Main (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option) . Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -107,11 +107,11 @@ Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.P
 
 Aby uzyskać informacje na temat tworzenia ikony, zobacz [Edytor obrazów dla ikon](/cpp/windows/image-editor-for-icons).
 
-**Manifestu**
+**Manifest**
 
 Wybiera opcję generowania manifestu, gdy aplikacja jest uruchamiana w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:
 
-- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, czyli osadzać informacje o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` być `AsInvoker`. Jest to opcja domyślna.
+- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, czyli osadzać informacje o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` być `AsInvoker`. Jest to domyślne ustawienie opcji.
 
 - **Utwórz aplikację bez manifestu**. Ta metoda jest znana jako *Wirtualizacja*. Użyj tej opcji, aby zapewnić zgodność ze starszymi aplikacjami.
 

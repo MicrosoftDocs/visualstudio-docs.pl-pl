@@ -7,32 +7,32 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644355"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594339"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Instrukcje: Dodawanie liczników do zestawów liczników przy użyciu Edytor testu obciążeniowego
 
-Podczas tworzenia testu obciążenia przy użyciu **Kreator testu obciążeniowego**należy dodać początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [Określanie zestawów liczników i reguł progowych dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Podczas tworzenia testu obciążenia przy użyciu **Kreator testu obciążeniowego**należy dodać początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji na temat korzystania z maszyn zdalnych w teście obciążenia, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
+> Jeśli testy obciążeniowe są rozmieszczone na komputerach zdalnych, liczniki kontrolera i agenta są mapowane na zbiory liczników kontrolera i agenta. Aby uzyskać więcej informacji o sposobie używania komputerów zdalnych w teście obciążenia, zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
 
-Zarządzasz licznikami w **Edytor testu obciążeniowego**. Zestawy liczników, które zostały już dodane do testu, są widoczne w węźle **zestawy liczników** testu obciążenia. Po utworzeniu testu obciążenia można dodać nowe liczniki do istniejących zestawów liczników.
+Zarządzasz licznikami w **edytora testu obciążenia**. Zbiory liczników, które zostały już dodane do testu są widoczne w **zestawów liczników** węzeł testu obciążeniowego. Po utworzeniu testu obciążenia można dodać nowe liczniki do istniejących zestawów liczników.
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Aby dodać liczniki do zestawu liczników
 
 1. Otwórz test obciążenia.
 
-2. Rozwiń węzeł **zestawy liczników** . Wszystkie zbiory liczników, które zostały dodane do testu obciążeniowego są widoczne.
+2. Rozwiń **zbiorów liczników** węzła. Wszystkie zbiory liczników, które zostały dodane do testu obciążeniowego są widoczne.
 
     > [!NOTE]
     > Drzewo hierarchii testów obciążenia zawiera również węzeł **Parametry uruchomieniowe** . Ten węzeł zawiera węzeł **mapowania zestawów liczników** , który pokazuje wszystkie komputery i zestawy liczników, które są mapowane na te komputery.
@@ -53,16 +53,16 @@ Zarządzasz licznikami w **Edytor testu obciążeniowego**. Zestawy liczników, 
 
 6. Wybierz licznik i wystąpienie, które mają zostać dodane do niestandardowego zestawu liczników.
 
-     \- lub-
+     \- lub —
 
      Wybierz przycisk radiowy **wszystkie liczniki** , aby wybrać wszystkie dostępne liczniki.
 
-7. Wybierz **przycisk OK**.
+7. Wybierz **OK**.
 
     > [!NOTE]
     > Istnieje również możliwość dodania liczników do zestawu liczników przez wybranie istniejącej kategorii licznika lub licznika, wybranie opcji Kopiuj, a następnie wklejenie do innego węzła zestawu liczników. Dodatkowe liczniki, które są kopiowane, ale nie są potrzebne, mogą zostać usunięte.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Określ zestawy liczników i reguły progowe dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Skonfiguruj ustawienia przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)

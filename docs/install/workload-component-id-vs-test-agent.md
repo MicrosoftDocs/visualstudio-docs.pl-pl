@@ -3,8 +3,8 @@ title: Obciążenie agenta testowego programu Visual Studio i identyfikatory sk�
 titleSuffix: ''
 description: Użyj obciążenia programu Visual Studio i identyfikatory składników do uruchamiania testów automatycznych i testy obciążeniowe zdalnie
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2f82487ee45b171f9150057416678fb64b4207f9
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 23e835c3165af848179147a7e145d995ea0e07b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594451"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Katalog składnika agenta testowego programu Visual Studio
 

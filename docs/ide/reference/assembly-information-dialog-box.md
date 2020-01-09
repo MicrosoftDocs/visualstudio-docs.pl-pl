@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Assembly Information dialog box
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d86c077cf129632c78d6266e7c8146325b78fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651904"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595790"
 ---
 # <a name="assembly-information-dialog-box"></a>Informacje o zestawie — Okno dialogowe
 
@@ -27,39 +27,39 @@ Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksp
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
-@No__t_1 **tytułu**
+\ **tytułu**
 Określa tytuł manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyTitleAttribute>.
 
-@No__t_1 **opisu**
+\ **opisu**
 Określa opcjonalny opis manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
-@No__t_1 **firmy**
+\ **firmy**
 Określa nazwę firmy dla manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCompanyAttribute>.
 
-Możesz ustawić lub zmienić wartość domyślną dla firmy w rejestrze. Wyszukaj wartość **RegisteredOrganization** w obszarze **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** lub **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion** klucz, w zależności od używanej wersji systemu Windows.
+Możesz ustawić lub zmienić wartość domyślną dla firmy w rejestrze. W zależności od używanej wersji systemu Windows poszukaj wartości **RegisteredOrganization** w kluczu **Computer \ HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows NT\CurrentVersion** lub **Computer \ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows NT\CurrentVersion** .
 
-@No__t_1 **produktu**
+\ **produktu**
 Określa nazwę produktu dla manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyProductAttribute>.
 
-**Prawa autorskie** \
+**Prawa autorskie**\
 Określa informacje o prawach autorskich dla manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyCopyrightAttribute>.
 
-**Znak towarowy** \
+**Znak towarowy**\
 Określa znak towarowy dla manifestu zestawu. Odnosi się do <xref:System.Reflection.AssemblyTrademarkAttribute>.
 
-@No__t_1 **wersji zestawu**
+\ **wersji zestawu**
 Określa numer wersji zestawu. Odnosi się do <xref:System.Reflection.AssemblyVersionAttribute>.
 
-**Wersja pliku** \
+**Wersja pliku**\
 Określa numer wersji, który instruuje kompilator, aby używał określonej wersji dla zasobu wersji plików Win32. Odnosi się do <xref:System.Reflection.AssemblyFileVersionAttribute>.
 
-**Identyfikator GUID** \
+**Identyfikator GUID**\
 Unikatowy identyfikator GUID, który identyfikuje zestaw. Podczas tworzenia projektu program Visual Studio generuje identyfikator GUID dla zestawu. Odnosi się do <xref:System.Guid>.
 
-@No__t_1 **języka neutralnego**
+\ **języka neutralnego**
 Określa kulturę obsługiwaną przez zestaw. Odnosi się do <xref:System.Resources.NeutralResourcesLanguageAttribute>. Wartość domyślna to **(brak)** .
 
-**Ustaw \ widoczny dla zestawu com**
+**Ustaw\ widoczny dla zestawu com**
 Określa, czy typy w zestawie będą dostępne dla modelu COM. Odnosi się do <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 > [!NOTE]

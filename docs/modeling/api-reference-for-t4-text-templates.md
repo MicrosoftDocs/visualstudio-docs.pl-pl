@@ -2,23 +2,23 @@
 title: Wykaz interfejsów API dla szablonów tekstowych T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea5bb78951b144c60b76677f399f74bea4ab51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654314"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597218"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Wykaz interfejsów API dla szablonów tekstowych T4
 
 Interfejs API tworzenia szablonów tekstu umożliwia wywoływanie i dostosowanie transformacji [szablonów tekstowych](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="namespaces"></a>Namespaces
+## <a name="namespaces"></a>{1&gt;Przestrzenie nazw&lt;1}
 
 |Przestrzeń nazw|Cel|
 |-|-|

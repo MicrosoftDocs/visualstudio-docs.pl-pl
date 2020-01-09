@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516782"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597402"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza
 
@@ -34,7 +34,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
     Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![ obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio ](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
+   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
    >
    > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
    >
-   > ![Obciążenie .NET Core w Instalator programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
    > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
 
@@ -117,14 +117,14 @@ Pierwszym krokiem w tworzeniu gry w dopasowanie jest stworzenie projektu i dodan
        > [!NOTE]
        > Czcionka Webdings to czcionka ikon, która jest dostarczana z systemem operacyjnym Windows. W grze w dopasowywanie, gracz musi dopasować pary ikon, więc ta czcionka jest używana do wyświetlania dopasowywanych ikon. Zamiast umieszczać **c** we właściwości **Text** , spróbuj wprowadzić różne litery, aby zobaczyć, jakie ikony są wyświetlane. Znak wykrzyknika to pająk, wielkie N to oko, a przecinek to papryczka chili.
 
-5. Wybierz kontrolkę etykieta i skopiuj ją do następnej komórki w TableLayoutPanel. (Wybierz klawisze **Ctrl** +**C** lub na pasku menu wybierz **Edytuj**  > **Kopiuj**). Następnie wklej go. (Wybierz klawisze **Ctrl** +**V** lub na pasku menu wybierz polecenie **Edytuj**  > **Wklej**). Kopia pierwszej etykiety pojawia się w drugiej komórce TableLayoutPanel. Wklej ją ponownie, a w trzeciej komórce pojawi się inna etykieta. Kontynuuj wklejanie kontrolek etykiet do momentu wypełnienia wszystkich komórek.
+5. Wybierz kontrolkę etykieta i skopiuj ją do następnej komórki w TableLayoutPanel. (Wybierz klawisze **Ctrl**+**C** lub na pasku menu wybierz **Edytuj** > **Kopiuj**). Następnie wklej go. (Wybierz klawisze **Ctrl**+**V** lub na pasku menu wybierz polecenie **Edytuj** > **Wklej**). Kopia pierwszej etykiety pojawia się w drugiej komórce TableLayoutPanel. Wklej ją ponownie, a w trzeciej komórce pojawi się inna etykieta. Kontynuuj wklejanie kontrolek etykiet do momentu wypełnienia wszystkich komórek.
 
    > [!NOTE]
-   > Jeśli wkleisz zbyt wiele razy, IDE dodaje nowy wiersz do TableLayoutPanel, tak aby miał miejsce dodać nową kontrolkę etykieta. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz klawisze **Ctrl** +**Z** lub na pasku menu wybierz polecenie **Edytuj**  > **Cofnij**.
+   > Jeśli wkleisz zbyt wiele razy, IDE dodaje nowy wiersz do TableLayoutPanel, tak aby miał miejsce dodać nową kontrolkę etykieta. Można cofnąć tę operację. Aby usunąć nową komórkę, wybierz klawisze **Ctrl**+**Z** lub na pasku menu wybierz polecenie **Edytuj** > **Cofnij**.
 
     Teraz formularz został rozłożony. Powinien wyglądać podobnie do poniższej ilustracji.
 
-    ![Initial pasujący formularz gry ](../ide/media/express_tut4step1.png)<br/>*Początkowy pasujący formularz gry*
+    ![](../ide/media/express_tut4step1.png) początkowej pasującej do formularza gry<br/>*Początkowy pasujący formularz gry*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

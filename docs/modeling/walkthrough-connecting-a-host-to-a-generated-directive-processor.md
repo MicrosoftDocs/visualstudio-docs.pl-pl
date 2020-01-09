@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d474de7da459e9639e8ec9f29f34e59267388b50
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984421"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593983"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Przewodnik: łączenie hosta z wygenerowanym procesorem dyrektywy
 
@@ -39,13 +39,13 @@ Ten instruktaż zawiera następujące zagadnienia:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby zdefiniować DSL, należy zainstalować następujące składniki:
+Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| {1&gt;Visual Studio&lt;1} | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
-| Visual Studio Wizualizacja i Modeling SDK | |
+| {1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1} | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -67,12 +67,12 @@ W tym instruktażu użyjesz kreatora projektant języka specyficznego dla domeny
 
    Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
    > [!IMPORTANT]
    > Ten krok powoduje wygenerowanie procesora dyrektywy i dodanie klucza do niego w rejestrze.
 
-3. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
+3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
     Zostanie otwarte drugie wystąpienie programu Visual Studio.
 
@@ -96,17 +96,17 @@ Po wygenerowaniu procesora dyrektywy należy podłączyć procesor dyrektywy i h
 
 3. Dodaj następujące odwołania:
 
-    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. W górnej części Program.cs lub Module1. vb Dodaj następujący wiersz kodu:
 
@@ -118,7 +118,7 @@ Po wygenerowaniu procesora dyrektywy należy podłączyć procesor dyrektywy i h
     Imports Microsoft.Win32
     ```
 
-5. Znajdź kod właściwości `StandardAssemblyReferences` i zastąp go następującym kodem:
+5. Znajdź kod właściwości `StandardAssemblyReferences`i zastąp go następującym kodem:
 
     > [!NOTE]
     > W tym kroku dodasz odwołania do zestawów, które są wymagane przez wygenerowany procesor dyrektywy, który będzie obsługiwany przez hosta.
@@ -154,7 +154,7 @@ Po wygenerowaniu procesora dyrektywy należy podłączyć procesor dyrektywy i h
     }
     ```
 
-6. Znajdź kod dla funkcji `ResolveDirectiveProcessor` i zastąp go następującym kodem:
+6. Znajdź kod dla funkcji `ResolveDirectiveProcessor`i zastąp go następującym kodem:
 
     > [!IMPORTANT]
     > Ten kod zawiera zakodowane odwołania do nazwy wygenerowanego procesora dyrektywy, z którym chcesz się połączyć. Można to łatwo zrobić, a w tym przypadku sprawdza wszystkie procesory dyrektywy wymienione w rejestrze i próbuje znaleźć dopasowanie. W takim przypadku host będzie działał z dowolnym wygenerowanym procesorem dyrektywy.
@@ -228,9 +228,9 @@ Po wygenerowaniu procesora dyrektywy należy podłączyć procesor dyrektywy i h
             }
     ```
 
-7. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
-8. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>Testowanie hosta niestandardowego z procesorem dyrektywy
 
@@ -312,7 +312,7 @@ Aby przetestować hosta niestandardowego tekstu, najpierw należy napisać szabl
     #>
     ```
 
-3. W kodzie Zastąp \<YOUR PATH > ścieżką pliku Sample. min w języku specyficznym dla projektu, który został utworzony w pierwszej procedurze.
+3. W kodzie Zastąp \<ścieżkę > ścieżką pliku Sample. min z języka specyficznego dla projektu utworzonego w pierwszej procedurze.
 
 4. Zapisz i zamknij plik.
 

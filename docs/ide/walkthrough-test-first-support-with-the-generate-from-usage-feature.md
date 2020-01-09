@@ -8,17 +8,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647160"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596895"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Przewodnik: testowanie pierwszego środowiska przy użyciu funkcji generowania na podstawie użycia
 
@@ -36,7 +36,7 @@ Funkcja **generowania z użycia** może być używana z platformami testów, kt�
 
 1. W C# programie lub Visual Basic Utwórz nowy projekt **biblioteki klas systemu Windows** . Nadaj mu nazwę `GFUDemo_VB` lub `GFUDemo_CS`, w zależności od języka, którego używasz.
 
-2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy ikonę rozwiązania u góry, a następnie wybierz polecenie **Dodaj**  > **Nowy projekt**.
+2. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy ikonę rozwiązania u góry, a następnie wybierz polecenie **Dodaj** > **Nowy projekt**.
 
 3. Utwórz nowy projekt **testu jednostkowego (.NET Framework)** .
 
@@ -65,7 +65,7 @@ Funkcja **generowania z użycia** może być używana z platformami testów, kt�
 2. Znajdź deklarację dla klasy `UnitTest1` i zmień jej nazwę na `AutomobileTest`.
 
    > [!NOTE]
-   > Technologia IntelliSense oferuje teraz dwa alternatywy dla uzupełniania instrukcji IntelliSense: *Tryb uzupełniania* i *tryb sugestii*. Tryb sugestii służy do sytuacji, w których klasy i składowe są używane przed zdefiniowaniem. Gdy okno **IntelliSense** jest otwarte, możesz nacisnąć klawisz **Ctrl** +**Alt** +**miejsce** , aby przełączać się między trybem ukończenia i trybem sugestii. Aby uzyskać więcej informacji, zobacz [Używanie technologii IntelliSense](../ide/using-intellisense.md) . Tryb sugestii pomoże, gdy wpisujesz `Automobile` w następnym kroku.
+   > Technologia IntelliSense oferuje teraz dwa alternatywy dla uzupełniania instrukcji IntelliSense: *Tryb uzupełniania* i *tryb sugestii*. Tryb sugestii służy do sytuacji, w których klasy i składowe są używane przed zdefiniowaniem. Gdy okno **IntelliSense** jest otwarte, możesz nacisnąć klawisz **Ctrl**+**Alt**+**miejsce** , aby przełączać się między trybem ukończenia i trybem sugestii. Aby uzyskać więcej informacji, zobacz [Używanie technologii IntelliSense](../ide/using-intellisense.md) . Tryb sugestii pomoże, gdy wpisujesz `Automobile` w następnym kroku.
 
 3. Znajdź metodę `TestMethod1()` i zmień jej nazwę na `DefaultAutomobileIsInitializedCorrectly()`. Wewnątrz tej metody Utwórz nowe wystąpienie klasy o nazwie `Automobile`, jak pokazano na poniższych zrzutach ekranu. Zostanie wyświetlone faliste podkreślenie, które wskazuje na błąd w czasie kompilacji, a żarówka błędu [szybkie akcje](../ide/quick-actions.md) pojawia się na lewym marginesie lub bezpośrednio poniżej, gdy umieścisz na niej wskaźnik myszy.
 
@@ -77,13 +77,13 @@ Funkcja **generowania z użycia** może być używana z platformami testów, kt�
 
 5. Kliknij przycisk **Generuj nowy typ** , aby otworzyć okno dialogowe **generowanie typu** . To okno dialogowe zawiera opcje, które obejmują generowanie typu w innym projekcie.
 
-6. Na liście **projekt** kliknij pozycję **GFUDemo \_VB** lub **GFUDemo_CS** , aby nakazać programowi Visual Studio dodanie pliku do projektu biblioteki klas zamiast projektu testowego. Jeśli nie została jeszcze wybrana, wybierz opcję **Utwórz nowy plik** i nadaj mu nazwę *automobile.cs* lub *automobile. vb*.
+6. Na liście **projekt** kliknij pozycję **GFUDemo\_VB** lub **GFUDemo_CS** , aby nakazać programowi Visual Studio dodanie pliku do projektu biblioteki klas zamiast projektu testowego. Jeśli nie została jeszcze wybrana, wybierz opcję **Utwórz nowy plik** i nadaj mu nazwę *automobile.cs* lub *automobile. vb*.
 
      ![Okno dialogowe generowanie nowego typu](../ide/media/genotherdialog.png)
 
 7. Kliknij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowy plik.
 
-8. W **Eksplorator rozwiązań**, poszukaj w węźle projektu **GFUDemo_VB** lub **GFUDemo_CS** , aby sprawdzić, czy jest tam nowy plik *automobile. vb* lub *automobile.cs* . W edytorze kodu fokus jest nadal w `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, co umożliwia dalsze pisanie testu z minimalnym przerwaniem.
+8. W **Eksplorator rozwiązań**, poszukaj w węźle projektu **GFUDemo_VB** lub **GFUDemo_CS** , aby upewnić się, że nowy plik *automobile. vb* lub *automobile.cs* znajduje się w tym miejscu. W edytorze kodu fokus jest nadal w `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, co umożliwia dalsze pisanie testu z minimalnym przerwaniem.
 
 ### <a name="generate-a-property-stub"></a>Generowanie właściwości zastępczej
 Załóżmy, że Specyfikacja produktu stwierdza, że Klasa `Automobile` ma dwie właściwości publiczne o nazwie `Model` i `TopSpeed`. Te właściwości muszą zostać zainicjowane z wartościami domyślnymi `"Not specified"` i `-1` przez konstruktora domyślnego. Poniższy test jednostkowy sprawdzi, czy domyślny Konstruktor ustawi odpowiednie wartości domyślne.
@@ -93,7 +93,7 @@ Załóżmy, że Specyfikacja produktu stwierdza, że Klasa `Automobile` ma dwie 
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Ponieważ kod odwołuje się do dwóch niezdefiniowanych właściwości w `Automobile`, w obszarze `Model` i `TopSpeed` pojawia się falista podkreślenie. Zatrzymaj wskaźnik myszy nad `Model` i wybierz żarówkę błędu **szybkie akcje** , a następnie wybierz polecenie **Generuj Właściwość "samochód Mobile. model"** .
+2. Ponieważ kod odwołuje się do dwóch niezdefiniowanych właściwości w `Automobile`, w obszarze `Model` i `TopSpeed`pojawia się falista podkreślenie. Zatrzymaj wskaźnik myszy nad `Model` i wybierz żarówkę błędu **szybkie akcje** , a następnie wybierz polecenie **Generuj Właściwość "samochód Mobile. model"** .
 
 3. Wygeneruj Właściwość zastępczą dla właściwości `TopSpeed` w ten sam sposób.
 
@@ -109,7 +109,7 @@ Teraz utworzysz metodę testową, która spowoduje wygenerowanie klasy zastępcz
 
 2. Kliknij żarówkę błędu **szybkie akcje** w czerwonej części, a następnie kliknij pozycję **Generuj Konstruktor w "Automobile"** .
 
-     W pliku klasy `Automobile` Zwróć uwagę, że nowy Konstruktor zbadał nazwy zmiennych lokalnych, które są używane w wywołaniu konstruktora, znaleziono właściwości, które mają takie same nazwy w klasie `Automobile`, i dostarczony kod w treści konstruktora do przechowywania wartości argumentów we właściwościach `Model` i `TopSpeed`.
+     W pliku klasy `Automobile` Zwróć uwagę, że nowy Konstruktor zbadał nazwy zmiennych lokalnych, które są używane w wywołaniu konstruktora, znaleziono właściwości, które mają takie same nazwy w klasie `Automobile`, i dostarczony kod w treści konstruktora do przechowywania wartości argumentów w `Model` i `TopSpeed` właściwości.
 
 3. Po wygenerowaniu nowego konstruktora faliste podkreślenie pojawia się pod wywołaniem konstruktora domyślnego w `DefaultAutomobileIsInitializedCorrectly`. Komunikat o błędzie stwierdza, że Klasa `Automobile` nie ma konstruktora, który przyjmuje zero argumentów. Aby wygenerować jawny Konstruktor domyślny, który nie ma parametrów, kliknij żarówkę błędu **szybkie akcje** , a następnie kliknij pozycję **Generuj Konstruktor w elemencie "samochód Mobile"** .
 
@@ -129,9 +129,9 @@ Załóżmy, że Specyfikacja stwierdza, że nowe `Automobile` mogą być umieszc
 
 ### <a name="run-the-tests"></a>Uruchom testy
 
-1. W menu **test** wybierz polecenie **Uruchom**  > **wszystkie testy**.
+1. W menu **test** wybierz polecenie **Uruchom** > **wszystkie testy**.
 
-     Polecenie **uruchom**  > **wszystkie testy** uruchamia wszystkie testy w ramach wszystkich platform testowych, które są zapisywane dla bieżącego rozwiązania. W takim przypadku istnieją dwa testy i w oczekiwany sposób kończą się niepowodzeniem. Test `DefaultAutomobileIsInitializedCorrectly` nie powiedzie się, ponieważ warunek `Assert.IsTrue` zwraca `False`. Test `AutomobileWithModelNameCanStart` nie powiedzie się, ponieważ metoda `Start` w klasie `Automobile` zgłasza wyjątek.
+     Polecenie **uruchom** > **wszystkie testy** uruchamia wszystkie testy w ramach wszystkich platform testowych, które są zapisywane dla bieżącego rozwiązania. W takim przypadku istnieją dwa testy i w oczekiwany sposób kończą się niepowodzeniem. Test `DefaultAutomobileIsInitializedCorrectly` nie powiedzie się, ponieważ warunek `Assert.IsTrue` zwraca `False`. Test `AutomobileWithModelNameCanStart` nie powiedzie się, ponieważ metoda `Start` w klasie `Automobile` zgłasza wyjątek.
 
      Okno **wyniki testów** jest pokazane na poniższej ilustracji.
 
@@ -141,7 +141,7 @@ Załóżmy, że Specyfikacja stwierdza, że nowe `Automobile` mogą być umieszc
 
 ### <a name="implement-the-source-code"></a>Zaimplementuj kod źródłowy
 
-1. Dodaj następujący kod do domyślnego konstruktora, tak aby właściwości `Model`, `TopSpeed` i `IsRunning` zostały zainicjowane do ich prawidłowych wartości domyślnych `"Not specified"`, `-1` i `False` (lub `false` dla C#).
+1. Dodaj następujący kod do domyślnego konstruktora, tak aby właściwości `Model`, `TopSpeed` i `IsRunning` zostały zainicjowane do ich prawidłowych wartości domyślnych `"Not specified"`, `-1`i `False` (lub `false` dla C#).
 
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
      [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
@@ -164,5 +164,5 @@ Załóżmy, że Specyfikacja stwierdza, że nowe `Automobile` mogą być umieszc
 - [Generuj na podstawie użycia](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
-- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
+- [Kod testu jednostkowego](../test/unit-test-your-code.md)
 - [Szybkie akcje](../ide/quick-actions.md)

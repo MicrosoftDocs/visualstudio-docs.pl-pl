@@ -4,40 +4,40 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: dce8d33f876ee34e18812cb744d7d3d6f53a5506
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653230"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594308"
 ---
 # <a name="attribute-glossary"></a>Słownik atrybutów
 
 ## <a name="attributes-by-namespace"></a>Atrybuty według przestrzeni nazw
 
-* **Microsoft. Pex. Framework**
+* **Microsoft.Pex.Framework**
   * [PexAssumeNotNull](#pexassumenotnull)
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
     * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
-* **Microsoft. Pex. Framework. Settings**
+* **Microsoft.Pex.Framework.Settings**
   * [PexAssemblySettings](#pexassemblysettings)
 
-* **Microsoft. Pex. Framework. Instrumentation**
+* **Microsoft.Pex.Framework.Instrumentation**
   * [PexAssemblyUnderTest](#pexassemblyundertest)
   * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)
 
-* **Microsoft. Pex. Framework. using**
+* **Microsoft.Pex.Framework.Using**
   * [PexUseType](#pexusetype)
 
-* **Microsoft. Pex. Framework. Validation**
+* **Microsoft.Pex.Framework.Validation**
   * [PexAllowedException](#pexallowedexception)
   * [PexAllowedExceptionFromAssembly](#pexallowedexceptionfromassembly)
   * [PexAllowedExceptionFromType](#pexallowedexceptionfromtype)
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [Więcej informacji](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Chcesz przekazać opinię?
 
 Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

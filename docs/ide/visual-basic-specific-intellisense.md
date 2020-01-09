@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa21939375956024a0ca16cadd99160d142a1d5d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647268"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594191"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Funkcja IntelliSense dla plików kodu Visual Basic
 
 Edytor kodu źródłowego Visual Basic oferuje następujące funkcje IntelliSense:
 
-## <a name="syntax-tips"></a>Wskazówki dotyczące składni
+## <a name="syntax-tips"></a>Porady dotyczące składni
 
 Wskazówki dotyczące składni wyświetlają składnię wpisywanej instrukcji. Jest to przydatne w przypadku instrukcji, takich jak [DECLARE](/dotnet/visual-basic/language-reference/statements/declare-statement).
 
@@ -31,7 +31,7 @@ Wskazówki dotyczące składni wyświetlają składnię wpisywanej instrukcji. J
 
 - Uzupełnianie dla różnych słów kluczowych
 
-     Na przykład po wpisaniu `goto` i spacji funkcja IntelliSense wyświetla listę zdefiniowanych etykiet w menu rozwijanym. Inne obsługiwane słowa kluczowe obejmują `Exit`, `Implements`, `Option` i `Declare`.
+     Na przykład po wpisaniu `goto` i spacji funkcja IntelliSense wyświetla listę zdefiniowanych etykiet w menu rozwijanym. Inne obsługiwane słowa kluczowe obejmują `Exit`, `Implements`, `Option`i `Declare`.
 
 - Kończenie `Enum` i `Boolean`
 
@@ -39,7 +39,7 @@ Wskazówki dotyczące składni wyświetlają składnię wpisywanej instrukcji. J
 
 Zakończenie można wyłączyć domyślnie, usuwając zaznaczenie pozycji **autolista członków** z **ogólnej** strony właściwości w folderze **Visual Basic** .
 
-Można ręcznie wywołać uzupełnianie, wywołując członków listy, kompletny wyraz lub **Alt** + strzałkę w**prawo**. Aby uzyskać więcej informacji, zobacz [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md).
+Można ręcznie wywołać uzupełnianie, wywołując członków listy, kompletny wyraz lub **Alt**+strzałkę w **prawo**. Aby uzyskać więcej informacji, zobacz [IntelliSense użyj](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>Technologia IntelliSense w strefie
 

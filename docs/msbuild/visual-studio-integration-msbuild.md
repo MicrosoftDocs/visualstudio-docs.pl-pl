@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913284"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594425"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja programu Visual Studio (MSBuild)
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.
@@ -66,7 +66,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > Niektóre nazwy typu elementu są charakterystyczne dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ale nie są wymienione na tej liście rozwijanej.
 
 ## <a name="in-process-compilers"></a>Wewnątrz – procesowe
- Jeśli to możliwe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spróbuje użyć wewnątrzprocesowej wersji z [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora w celu zwiększenia wydajności. (Nie dotyczy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Aby to działało poprawnie muszą być spełnione następujące warunki:
+ Jeśli to możliwe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spróbuje użyć wewnątrzprocesowej wersji z [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora w celu zwiększenia wydajności. (Nie dotyczy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Aby to działanie działało prawidłowo, muszą zostać spełnione następujące warunki:
 
 - W obiekcie docelowym projektu musi być zadanie o nazwie `Vbc` dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektów.
 
@@ -120,7 +120,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Wyrażenia warunkowe do elementów są zawsze ignorowane dla celów decydowania, czy element powinien być wyświetlany w **Eksploratora rozwiązań**.
 
-## <a name="debugging"></a>Debugowanie
+## <a name="debugging"></a>debugowanie
  Aby znaleźć i uruchomić zestaw danych wyjściowych i dołączyć debuger, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wymaga właściwości `OutputPath`, `AssemblyName`, i `OutputType` poprawnie zdefiniowane. Debuger się nie dołączy, jeśli proces kompilacji nie spowodował, że kompilator, aby wygenerować *.pdb* pliku.
 
 ## <a name="design-time-target-execution"></a>Wykonanie docelowego czasu projektowania
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.
 
-  - `ResolvedFrom`Ustaw na wartość "{TargetFrameworkDirectory}", jeśli został on rozwiązany z katalogu .NET Framework.
+  - `ResolvedFrom`ustaw na "{TargetFrameworkDirectory}", jeśli został on rozwiązany z poziomu katalogu .NET Framework.
 
 - Odniesienia modelu COM:
 
@@ -176,12 +176,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveNativeReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `NativeReferenceFile`. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z nowym fragmentem metadanych o nazwie `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.
 
 ## <a name="performance-shortcuts"></a>Skróty wydajności
- Jeśli używasz środowiska IDE programu Visual Studio, aby rozpocząć debugowanie (wybierając klawisz F5 lub wybierając **Debuguj** > **Rozpocznij debugowanie** na pasku menu) lub w celu skompilowania > projektu (na przykład**rozwiązanie** kompilacji kompilacji ) proces kompilacji używa szybkiej kontroli aktualizacji w celu zwiększenia wydajności. W niektórych przypadkach, gdzie niestandardowe kompilacje tworzą pliki, które z kolei kompilowane szybkie sprawdzenie aktualizacji niepoprawnie identyfikuje zmienione pliki. Projekty, które wymagają bardziej szczegółowego sprawdzania aktualizacji można wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1`. Alternatywnie projekty mogą ją ustawiać jako właściwość narzędzia MSBuild w projekcie lub w pliku, który projekt importuje.
+ Jeśli używasz środowiska IDE programu Visual Studio, aby rozpocząć debugowanie (wybierając klawisz F5 lub wybierając pozycję **debuguj** > **Rozpocznij debugowanie** na pasku menu) lub Kompilowanie projektu (na przykład **Build** > **Build Solution**), proces kompilacji używa szybkiej kontroli aktualizacji w celu zwiększenia wydajności. W niektórych przypadkach, gdzie niestandardowe kompilacje tworzą pliki, które z kolei kompilowane szybkie sprawdzenie aktualizacji niepoprawnie identyfikuje zmienione pliki. Projekty, które wymagają bardziej szczegółowego sprawdzania aktualizacji można wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1`. Alternatywnie projekty mogą ją ustawiać jako właściwość narzędzia MSBuild w projekcie lub w pliku, który projekt importuje.
 
  Do regularnych kompilacji w programie Visual Studio nie ma zastosowania szybkie sprawdzenie aktualizacji, a projekt zostanie skompilowany po wywołaniu kompilacji w wierszu polecenia.
 
 ## <a name="see-also"></a>Zobacz także
-- [Instrukcje: Rozwiń proces kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+- [Instrukcje: zwiększanie procesu kompilacji programu Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Rozpocznij kompilację z poziomu środowiska IDE](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Rejestrowanie rozszerzeń .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

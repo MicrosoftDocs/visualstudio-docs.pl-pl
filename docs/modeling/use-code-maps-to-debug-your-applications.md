@@ -11,17 +11,17 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748272"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594113"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 
@@ -31,7 +31,7 @@ Mapy kodu mogą pomóc uniknąć utraty w dużych bazach kodu, nieznanego kodu l
 
 **Zielona strzałka pokazuje, gdzie znajduje się kursor w edytorze**
 
-Aby uzyskać szczegółowe informacje o poleceniach i akcjach, których można używać podczas pracy z mapami kodu, zobacz [przeglądanie i zmiana rozmieszczenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
+Szczegóły poleceń i akcji, można użyć podczas pracy z mapami kodu można znaleźć [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).
 
 > [!NOTE]
 > Do tworzenia i edytowania map kodu potrzebna jest wersja Visual Studio Enterprise. W programie Visual Studio Community i wersje Professional można otwierać diagramy, które zostały wygenerowane w wersji Enterprise, ale nie można ich edytować.

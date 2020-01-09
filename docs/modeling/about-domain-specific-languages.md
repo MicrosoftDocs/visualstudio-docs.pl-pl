@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660c93c5e1ee6b41369ebbfc9f43c4c047042589
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652399"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597272"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 
@@ -62,7 +62,7 @@ Programowanie specyficzne dla domeny to proces identyfikowania części aplikacj
 
 Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
-- Służąc
+- Notacja
 
 - Model domeny
 
@@ -72,11 +72,11 @@ Graficzny język specyficzny dla domeny musi zawierać następujące funkcje:
 
 - Integracja z programem Visual Studio
 
-### <a name="notation"></a>Służąc
+### <a name="notation"></a>Notacja
 
-Język specyficzny dla domeny musi mieć dostatecznie mały zestaw elementów, który można łatwo definiować i rozszerzać w celu reprezentowania konstrukcji specyficznych dla domeny. Notacja składa się z kształtów, które reprezentują elementy i łączniki, które reprezentują relacje między elementami na graficznym diagramie. W [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] kształty mogą być rozszerzane i udoskonalane, aby reprezentować elementy języka specyficznego dla domeny.
+Język specyficzny dla domeny musi mieć dostatecznie mały zestaw elementów, który można łatwo definiować i rozszerzać w celu reprezentowania konstrukcji specyficznych dla domeny. Notacja składa się z kształtów, które reprezentują elementy i łączniki, które reprezentują relacje między elementami na graficznym diagramie. W [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]kształty mogą być rozszerzane i udoskonalane, aby reprezentować elementy języka specyficznego dla domeny.
 
-### <a name="domain-model"></a>Model domeny
+### <a name="domain-model"></a>Domain Model
 
 Język specyficzny dla domeny musi łączyć zestaw elementów i relacje między nimi w spójną gramatykę. Należy również określić, czy kombinacje elementów i relacji są prawidłowe. Na przykład języki programowania zazwyczaj uniemożliwiają Dziedziczenie cykliczne, w którym jedna klasa jest pochodną drugiej klasy, a druga Klasa pochodzi od pierwszej klasy. Ograniczenia mogą również służyć do wyrażenia logiki biznesowej, na przykład jedna osoba nie może być zależna od siebie. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] używa ograniczeń do wyrażania rodzajów ograniczeń, których wymagają większość języków specyficznych dla domeny.
 

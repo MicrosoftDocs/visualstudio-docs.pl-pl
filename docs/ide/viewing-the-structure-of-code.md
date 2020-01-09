@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647303"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594204"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
 
@@ -119,7 +119,7 @@ Menu skrótów w oknie **Hierarchia wywołań** zawiera następujące polecenia:
 |**Przejdź do definicji**|Przechodzi do oryginalnej definicji metody.|
 |**Znajdź wszystkie odwołania**|Znajduje w projekcie wszystkie odwołania do wybranej metody.|
 |**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzły podrzędne).|
-|**Odowieżenie**|Odświeża informacje.|
+|**Odśwież**|Odświeża informacje.|
 
 ## <a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
 
@@ -200,9 +200,9 @@ Menu skrótów (lub kliknij prawym przyciskiem myszy) w oknie **definicji kodu**
 |||
 |-|-|
 |**Szybkie akcje i refaktoryzacje**||
-|**Zmiana nazwy**||
+|**Zmienianie nazwy**||
 |**Generowanie grafu plików dołączanych**||
-|**Definicja wglądu**||
+|**Zobacz definicję**||
 |**Przejdź do definicji**|Znajduje definicję (lub definicje, dla klas częściowych) i wyświetla je w oknie **Znajdź wyniki** .|
 |**Przejdź do deklaracji**||
 |**Znajdź wszystkie odwołania**|Znajduje odwołania do typu lub elementu członkowskiego w rozwiązaniu.|

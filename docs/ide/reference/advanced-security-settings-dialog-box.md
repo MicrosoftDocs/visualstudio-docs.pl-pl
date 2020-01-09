@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1fcc3d09e43fc5358cbe507c5045c16cc9f8cf9
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 033c8d9c97d54b972a7bf30e9e1e04171e5b505e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461862"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595842"
 ---
-# <a name="advanced-security-settings-dialog-box"></a>Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
+# <a name="advanced-security-settings-dialog-box"></a>Okno dialogowe Zaawansowane ustawienia zabezpieczeń
 
 To okno dialogowe umożliwia określenie ustawień zabezpieczeń związanych z debugowaniem w strefie.
 
@@ -32,11 +32,11 @@ Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksp
 
 **Przyznaj aplikacji dostęp do jej lokalizacji pochodzenia**
 
-Jeśli zaznaczysz to pole wyboru, aplikacja będzie mogła uzyskać dostęp do witryny sieci Web lub udziału serwera, na którym została opublikowana. Domyślnie ta opcja jest zaznaczona.
+Jeśli zaznaczysz to pole wyboru, aplikacja będzie mogła uzyskać dostęp do witryny sieci Web lub udziału serwera, na którym została opublikowana. Ta opcja jest wybrana domyślnie.
 
 **Debuguj tę aplikację tak, jakby była pobrana z następującego adresu URL**
 
-Jeśli musisz zezwolić aplikacji na dostęp do witryny sieci Web lub udziału serwera odpowiadającego adresowi **URL instalacji** określonym na stronie **publikowania** , wprowadź tutaj ten adres URL. Ta opcja jest dostępna tylko w przypadku wybrania opcji **Udziel dostępu aplikacji do jej lokalizacji pochodzenia** .
+Jeśli musisz zezwolić aplikacji na dostęp do witryny sieci Web lub udziału serwera odpowiadającego **adresowi URL instalacji** określonym na stronie **publikowania** , wprowadź tutaj ten adres URL. Ta opcja jest dostępna tylko w przypadku wybrania opcji **Udziel dostępu aplikacji do jej lokalizacji pochodzenia** .
 
 ## <a name="see-also"></a>Zobacz także
 

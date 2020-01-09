@@ -1,5 +1,5 @@
 ---
-title: Limity czasu dla kontrolerów testów i agentów testowych
+title: Limitów czasu dla kontrolerów testów i agentów testowych
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,47 +8,47 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653324"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594763"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Instrukcje: Określanie okresów limitu czasu dla kontrolerów testów i agentów testowych
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych
 
-Kontroler testów i agent testowy mają kilka ustawień limitu czasu, które określają, jak długo powinny czekać na odpowiedzi ze sobą lub ze źródła danych przed błędem. W pewnych okolicznościach może być konieczne Edytowanie wartości limitu czasu w celu spełnienia wymagań topologii lub innych problemów ze środowiskiem. Aby edytować wartości limitu czasu, edytuj plik konfiguracyjny XML, który jest skojarzony z kontrolerem testów lub agentem testowym, zgodnie z poniższymi procedurami.
+Kontroler testów i agenta testowego ma kilka ustawień limitu czasu, które określają, jak długo należy czekać na odpowiedzi od siebie lub ze źródła danych, zakończy się niepowodzeniem z powodu błędu. W pewnych okolicznościach może być konieczne edytowanie wartości limitu czasu, aby zaspokoić potrzeby topologii lub inne problemy środowiska. Aby edytować wartości limitu czasu, Edytuj plik konfiguracyjny XML, który jest skojarzony z kontrolerem testów lub agenta testowego, zgodnie z opisem w poniższych procedur.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testowego, należy zmodyfikować następujące pliki konfiguracji przy użyciu nazw kluczy i wartości w tabelach:
+Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testowego, zmodyfikuj następujące pliki konfiguracji, za pomocą nazw kluczy i wartości w tabelach:
 
-- Kontroler testów: *QTController. exe. config*
-
-    |Nazwa klucza|Opis|Wartość|
-    |-|-----------------|-|
-    |AgentConnectionTimeoutInSeconds|Liczba sekund oczekiwania na żądanie ping agenta przed utratą połączenia.|"n" s.|
-    |AgentSyncTimeoutInSeconds|Po uruchomieniu synchronizacji przebiegu testowego, liczba sekund oczekiwania na synchronizację wszystkich agentów przed przerwaniem przebiegu.|"n" s.|
-    |AgentInitializeTimeout|Liczba sekund oczekiwania na zainicjowanie wszystkich agentów i ich modułów zbierających dane na początku przebiegu testowego, przed przerwaniem przebiegu testu. Ta wartość powinna być odpowiednio duża, jeśli są używane moduły zbierające dane.|"n" s. Wartość domyślna: "120" (dwie minuty).|
-    |AgentCleanupTimeout|Liczba sekund oczekiwania na oczyszczenie wszystkich agentów i ich modułów zbierających dane przed ukończeniem przebiegu testu. Ta wartość powinna być odpowiednio duża, jeśli są używane moduły zbierające dane.|"n" s. Wartość domyślna: "120" (dwie minuty).|
-
-- Agent testowy: *QTAgentService. exe. config*
+- Kontroler testów: *QTController.exe.config*
 
     |Nazwa klucza|Opis|Wartość|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|Liczba sekund między próbami połączenia z kontrolerem.|"n" s. Wartość domyślna: "30" (trzydzieści sekund).|
-    |RemotingTimeoutSeconds|Maksymalny czas, przez jaki połączenie zdalne może trwać w kilka sekund.|"n" s. Wartość domyślna: "600" (dziesięć minut).|
-    |StopTestRunCallTimeoutInSeconds|Liczba sekund oczekiwania na wywołanie zatrzymania przebiegu testowego.|"n" s. Wartość domyślna: "120" (dwie minuty).|
-    |GetCollectorDataTimeout|Liczba sekund oczekiwania na moduł zbierający dane.|"n" s. Wartość domyślna: "300" (pięć minut).|
+    |AgentConnectionTimeoutInSeconds|Liczba sekund oczekiwania na żądanie ping do agenta przed połączenie jest uznawane za utracone.|"n" Liczba sekund.|
+    |AgentSyncTimeoutInSeconds|Podczas uruchamiania synchronizacji testu, liczba sekund oczekiwania na wszystkich agentów do synchronizacji przed przerwaniem.|"n" Liczba sekund.|
+    |AgentInitializeTimeout|Liczba sekund oczekiwania dla wszystkich agentów i ich modułów zbierających dane, aby zainicjować na początku testu uruchomić przed przerwaniem przebiegu testu. Ta wartość powinna być umiarkowanie duża, jeśli za pomocą modułów zbierających dane.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|
+    |AgentCleanupTimeout|Liczba sekund oczekiwania dla wszystkich agentów i ich modułów zbierających dane, aby wyczyścić, przed wykonaniem testów przebieg. Ta wartość powinna być umiarkowanie duża, jeśli za pomocą modułów zbierających dane.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|
+
+- Agent testowy: *QTAgentService.exe.config*
+
+    |Nazwa klucza|Opis|Wartość|
+    |-|-----------------|-|
+    |ControllerConnectionPeriodInSeconds|Liczba sekund między próbami nawiązania połączenia z kontrolerem.|"n" Liczba sekund. Wartość domyślna: "30" (trzydzieści sekund).|
+    |RemotingTimeoutSeconds|Maksymalny czas wywołanie komunikacji zdalnej może trwać w sekundach.|"n" Liczba sekund. Wartość domyślna: "600" (dziesięć minut).|
+    |StopTestRunCallTimeoutInSeconds|Liczba sekund oczekiwania, aż wywołanie zatrzyma przebieg testu.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|
+    |GetCollectorDataTimeout|Liczba sekund oczekiwania na moduł zbierający dane.|"n" Liczba sekund. Wartość domyślna: "300" (pięć minut).|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Aby określić opcje limitu czasu agenta dla kontrolera testów
 
-1. Otwórz plik konfiguracyjny XML *QTCcontroller. exe. config* znajdujący się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Otwórz *QTCcontroller.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. Zlokalizuj tag `<appSettings>`.
+2. Znajdź `<appSettings>` tagu.
 
     ```xml
     <appSettings>
@@ -68,9 +68,9 @@ Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testo
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    —lub—
+    lub
 
-    Dodaj dodatkowy klucz i określ wartość limitu czasu. Na przykład można dodać klucz `AgentInitializeTimeout` w sekcji `<appSettings>` i określić wartość pięć minut:
+    Dodaj dodatkowy klucz i określ wartość limitu czasu. Na przykład można dodać `AgentInitializeTimeout` w `<appSettings>` sekcji, a następnie określić wartość pięciu minut:
 
     ```xml
     <appSettings>
@@ -80,9 +80,9 @@ Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testo
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Aby określić opcje limitu czasu agenta dla agenta testowego
 
-1. Otwórz plik konfiguracyjny XML *QTAgentService. exe. config* znajdujący się w lokalizacji *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+1. Otwórz *QTAgentService.exe.config* plik konfiguracyjny XML znajdujący się w *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. Zlokalizuj tag `<appSettings>`.
+2. Znajdź `<appSettings>` tagu.
 
     ```xml
     <appSettings>
@@ -96,15 +96,15 @@ Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testo
     </appSettings>  </appSettings>
     ```
 
-3. Edytuj istniejącą wartość dla jednego z kluczy limitu czasu agenta testowego. Na przykład można zmienić wartość domyślną dla klucza `ControllerConnectionPeriodInSeconds` od 30 sekund do jednej minuty:
+3. Edytuj istniejącą wartość dla jednego z kluczy limitu czasu agenta testowego. Na przykład można zmienić wartość domyślną dla klucza `ControllerConnectionPeriodInSeconds` z trzydziestu sekund na jedną minutę:
 
     ```xml
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    —lub—
+    lub
 
-    Dodaj dodatkowy klucz i określ wartość limitu czasu. Na przykład można dodać klucz `RemotingTimeoutSeconds` w sekcji `<appSettings>` i określić wartość 15 minut:
+    Dodaj dodatkowy klucz i określ wartość limitu czasu. Na przykład można dodać `RemotingTimeoutSeconds` w `<appSettings>` sekcji, a następnie określić wartość piętnastu minut:
 
     ```xml
     <appSettings>
@@ -115,6 +115,6 @@ Aby edytować kontroler testów lub różne ustawienia limitu czasu agenta testo
 ## <a name="see-also"></a>Zobacz także
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)
-- [Modyfikowanie ustawień rejestrowania testu obciążenia](../test/modify-load-test-logging-settings.md)
+- [Modyfikowanie ustawień rejestrowania testu obciążeniowego](../test/modify-load-test-logging-settings.md)
 - [Konfigurowanie portów dla kontrolerów testów i agentów testowych](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Instrukcje: powiązanie kontrolera testów lub agenta testowego z kartą sieciową](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Porady: powiązywanie testów kontrolera lub agenta testowego z kartą sieciową](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13a3c16adca29128be275495fe8921895aa84250
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647228"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594178"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -80,7 +80,7 @@ Technologia IntelliSense usuwa zbędnych członków z listy uzupełniania, używ
 
 Technologia IntelliSense zapamiętuje członków, którzy zostali ostatnio wybrani w polu [Członkowie listy](../ide/using-intellisense.md) podręcznej, aby automatycznie uzupełniać nazwy obiektów. Przy następnym użyciu **listy składowych**, ostatnio używane elementy członkowskie są wyświetlane u góry. Historia ostatnio używanych elementów członkowskich jest czyszczona między poszczególnymi sesjami programu Visual Studio.
 
-### <a name="override"></a>override
+### <a name="override"></a>zastąpienie
 
 Po wpisaniu [przesłonięcia](/dotnet/csharp/language-reference/keywords/override) , a **następnie naciśnięciu**klawisza, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisywanie zwracanego typu metody po `override` monituje IntelliSense o metody, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, wyświetla wszystkie elementy członkowskie klasy bazowej.
 
@@ -124,7 +124,7 @@ Czerwone faliste podkreślenie pojawia się pod każdym niezdefiniowanym identyf
 
 - Kliknij Niezdefiniowany identyfikator. W obszarze identyfikatora zostanie wyświetlona żarówka o błędzie **Quick Actions** . Kliknij żarówkę błędów.
 
-- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl** + **.** (**Ctrl** + kropka).
+- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisz **Ctrl**+ **.** (**Ctrl** + kropka).
 
 - Kliknij prawym przyciskiem myszy Niezdefiniowany identyfikator, a następnie kliknij pozycję **szybkie akcje i refaktoryzacje**.
 
@@ -158,7 +158,7 @@ Po naciśnięciu klawisza **Tab**funkcja IntelliSense automatycznie kończy inst
 Po naciśnięciu klawisza **Tab**funkcja IntelliSense odtworzy metodę o poprawnym podpisie i umieści kursor w treści programu obsługi zdarzeń.
 
 > [!NOTE]
-> Użyj polecenia **Nawiguj wstecz** w menu **widok** (**Ctrl** + **-** ), aby wrócić do instrukcji Event podłączenie.
+> Użyj polecenia **Nawiguj wstecz** w menu **widok** (**Ctrl**+ **-** ), aby wrócić do instrukcji Event podłączenie.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595855"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji — okno dialogoweC#()
 
@@ -50,7 +50,7 @@ Określa, czy raportować błędy kompilatora do firmy Microsoft. Jeśli zostani
 
 **Sprawdź, czy jest przepełnienie arytmetyczne/nadmiarowy**
 
-Określa, czy instrukcja arytmetyczna liczb całkowitych, która nie znajduje się w zakresie [zaznaczonych](/dotnet/csharp/language-reference/keywords/checked) lub [niesprawdzonych](/dotnet/csharp/language-reference/keywords/unchecked) słów kluczowych i powoduje, że wartość spoza zakresu typu danych spowoduje wystąpienie wyjątku czasu wykonywania. Aby uzyskać więcej informacji, zobacz [/CheckedC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Określa, czy instrukcja arytmetyczna liczb całkowitych, która nie znajduje się [sprawdzone](/dotnet/csharp/language-reference/keywords/checked) w [niepowstrzymany](/dotnet/csharp/language-reference/keywords/unchecked) zakresie zaznaczonych lub niesprawdzonych słów kluczowych i powoduje, że wartość spoza zakresu typu danych spowoduje wystąpienie wyjątku czasu wykonywania. Aby uzyskać więcej informacji, zobacz [/CheckedC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
 **Nie Odwołuj się do biblioteki mscorlib. dll**
 
@@ -68,7 +68,7 @@ Określa typ informacji o debugowaniu generowanych przez kompilator. Informacje 
 
    Określa, że nie będą generowane żadne informacje o debugowaniu.
 
-- **szczegółowe**
+- **full**
 
    Umożliwia dołączenie debugera do działającego programu.
 

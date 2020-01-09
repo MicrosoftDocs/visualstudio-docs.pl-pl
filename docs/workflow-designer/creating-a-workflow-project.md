@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f793e6ff468bdec6df499c5e5eb6b8524e9e4d5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650574"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597077"
 ---
 # <a name="workflow-project-templates"></a>Szablony projektów przepływu pracy
 
@@ -36,14 +36,14 @@ Program Visual Studio udostępnia cztery różne szablony projektów przepływu 
 
 Aby uzyskać dostęp do tych szablonów, najpierw Zainstaluj składnik **Windows Workflow Foundation** programu Visual Studio. Aby uzyskać szczegółowe instrukcje, zobacz [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Po zainstalowaniu składnika **Windows Workflow Foundation** wybierz pozycję **plik**  > **Nowy**  > **Project**.
+1. Po zainstalowaniu składnika **Windows Workflow Foundation** wybierz pozycję **plik** > **Nowy** > **Project**.
 
 1. Wyszukaj i wybierz szablon projektu przepływu pracy, na przykład szablon **aplikacji konsoli przepływu pracy** .
 
 1. Kontynuuj, aby utworzyć projekt.
 
    > [!NOTE]
-   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, Otwórz to rozwiązanie w programie Visual Studio, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**i wybierz polecenie **Dodaj**  > **Nowy projekt**.
+   > Jeśli chcesz dodać nowy projekt do istniejącego rozwiązania, Otwórz to rozwiązanie w programie Visual Studio, kliknij prawym przyciskiem myszy rozwiązanie w **Eksplorator rozwiązań**i wybierz polecenie **Dodaj** > **Nowy projekt**.
 
 ## <a name="workflow-console-app"></a>Aplikacja konsolowa przepływu pracy
 

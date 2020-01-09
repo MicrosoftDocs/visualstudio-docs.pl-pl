@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test mix
 - load tests, removing tests
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2c882d912cb46e4f61bd03b9949aaf9fd135d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665009"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595933"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Edytuj mieszany test, aby określić, które testy wydajności sieci Web, jednostki i kodowanego interfejsu użytkownika mają być uwzględnione w scenariuszu testu obciążenia
 
@@ -53,7 +53,7 @@ Aby dowiedzieć się więcej o wydajności sieci Web i testach jednostkowych, mo
 
      Testy są dodawane do testu mieszanego. Nowa dystrybucja jest automatycznie przypisywana do testów w teście mieszanym.
 
-5. Obowiązkowe Dostosuj kontrolkę mieszanie, aby określić dystrybucję testu. Aby uzyskać więcej informacji, zobacz [Informacje o kontrolce mieszanej](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ## <a name="remove-tests-from-a-scenario"></a>Usuwanie testów z scenariusza
 ![Usuwanie testu z istniejącego testu obciążenia](../test/media/ltest_removetest.png)
@@ -62,7 +62,7 @@ Aby dowiedzieć się więcej o wydajności sieci Web i testach jednostkowych, mo
 
 1. Otwórz test obciążenia.
 
-2. W **Edytor testu obciążeniowego**w drzewie testu obciążenia kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć test, a następnie wybierz pozycję **Edytuj test mieszany**. Zostanie wyświetlone okno dialogowe **Edytowanie testu mieszanego** .
+2. W **Edytor testu obciążeniowego**w drzewie testu obciążenia kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć test, a następnie wybierz pozycję **Edytuj test mieszany**. **Edytuj Test mieszany** zostanie wyświetlone okno dialogowe.
 
 3. Wybierz test wydajność sieci Web, jednostkę lub kodowany interfejs użytkownika w siatce, a następnie wybierz **Usuń**.
 
@@ -72,21 +72,21 @@ Aby dowiedzieć się więcej o wydajności sieci Web i testach jednostkowych, mo
 4. Po zakończeniu usuwania testów wybierz **przycisk OK**.
 
 ## <a name="EditingTestMixAboutMixControl"></a>Informacje o kontrolce mieszanej
-Formant mieszany umożliwia dostosowanie wartości procentowej obciążenia, które jest dystrybuowane między testami, typami przeglądarek lub typami sieci w scenariuszu testu obciążenia. Wartości procentowe można dostosować przez przeniesienie suwaków. Dostosowanie mieszanki dla testów określa prawdopodobieństwo, że użytkownik wirtualny uruchamia konkretny test w scenariuszu testu obciążenia.
+Sterowanie mieszany umożliwia dostosowanie procent obciążenia, który jest rozproszona w ramach testów, typy przeglądarek i typy sieci w scenariuszu testu obciążenia. Wartości procentowe można dostosować, przenosząc suwaki. Dostosowanie mieszanki dla testów określa prawdopodobieństwo, że użytkownik wirtualny uruchamia konkretny test w scenariuszu testu obciążenia.
 
-Przesunięcie suwaka powoduje zmianę wartości procentowej wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, ilość dodawana lub usunięta jest dystrybuowana równomiernie między innymi elementami. Istnieje możliwość zastąpienia tego zachowania. W przypadku zaznaczenia pola wyboru w kolumnie blokada dla określonego elementu należy zablokować określoną wartość procentową tego elementu. Następnie po przesunięciu suwaka ilość dodawana lub usuwana jest stosowana tylko do wszystkich pozostałych odblokowanych elementów.
+Podczas przesuwania suwaka, zmień wartości procentowe wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, kwota, dodawanie lub usuwanie jest rozłożona równomiernie innych elementów. Istnieje możliwość zastąpienia tego zachowania. Jeśli zaznaczysz pole wyboru w kolumnie blokady dla określonego elementu, można zablokować określoną wartość procentową wartość dla tego elementu. Następnie podczas przesuwania suwaka, kwota, dodawanie lub usuwanie są stosowane tylko do wszystkie pozostałe elementy odblokowane.
 
-Przycisk **Dystrybuuj** służy do przydzielania wartości procentowych równomiernie między wszystkimi elementami. Na przykład jeśli masz trzy elementy, wybranie opcji **Dystrybuuj** ustawia wartości procentowe na 34, 33 i 33.
+Przycisk **Dystrybuuj** służy do przydzielania wartości procentowych równomiernie między wszystkimi elementami. Na przykład, jeśli masz trzy elementy, wybierając **dystrybucji** ustawia wartości procentowe 34, 33 i 33.
 
 > [!WARNING]
-> Przycisk **Dystrybuuj** zastępuje wszystkie elementy, które są zablokowane.
+> **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
 
-Można również wpisać wartości procentowe bezpośrednio w kolumnie **%** , zamiast używać suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, pozostałe elementy nie zostaną dostosowane automatycznie.
+Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny, a nie za pomocą suwaków. Jeśli bezpośrednio wprowadzasz wartość procentową, inne elementy nie skoryguje automatycznie.
 
 > [!NOTE]
-> Suwaki są wyłączone, gdy suma nie dodaje do 100%, lub gdy wartości procentowe wprowadzone do kolumny **%** są miejscami dziesiętnymi.
+> Suwaki są wyłączone, gdy łączny nie powoduje dodania do 100% lub wartości procentowe są wprowadzane do **%** kolumny są liczbę miejsc dziesiętnych.
 
-Po ręcznym wprowadzeniu wartości procentowych należy upewnić się, że suma wszystkich elementów wynosi 100%. W przypadku zapisania mieszanki, jeśli suma nie jest równa 100%, zostanie wyświetlony monit o zaakceptowanie wartości procentowych w miarę ich lub przywrócenia i dostosowania. Jeśli zdecydujesz się na ich zaakceptowanie, zostanie nadana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy i ręcznie ustawisz je na 80% i 40%, pierwszy element zostanie ustawiony na 66,67% (80 podzielony przez 120), a drugi element zostanie ustawiony na 33,33% (40 podzielony przez 120).
+Po wprowadzeniu wartości procentowe ręcznie, należy pamiętać, że sumę wszystkich elementów wynosi 100%. Podczas zapisywania mieszany, jeśli suma nie jest w 100%, możesz zostanie wyświetlony monit o zaakceptowanie wartości procentowe są one, lub przejdź wstecz i zmieniaj je tak. Jeśli zdecydujesz się je zaakceptować, ponieważ są one, będzie naliczana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy, a następnie ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawione na % 66,67 (80 podzielona przez 120), a drugi element zostanie ustawione na % 33,33 (40 podzielona przez 120).
 
 ## <a name="see-also"></a>Zobacz także
 

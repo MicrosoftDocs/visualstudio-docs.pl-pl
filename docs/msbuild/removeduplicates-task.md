@@ -1,5 +1,5 @@
 ---
-title: RemoveDuplicates Task | Microsoft Docs
+title: RemoveDuplicates — — zadanie | Microsoft Docs
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -13,36 +13,36 @@ helpviewer_keywords:
 - MSBuild, RemoveDuplicates task
 - RemoveDuplicates task [MSBuild]
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811618"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596011"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — zadanie
-Usuwa zduplikowane elementy z kolekcji określonego elementu.
+Usuwa zduplikowane elementy z określonej kolekcji elementów.
 
 ## <a name="parameters"></a>Parametry
- W poniższej tabeli opisano parametry `RemoveDuplicates` zadania.
+ W poniższej tabeli opisano parametry zadania `RemoveDuplicates`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Filtered`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów z elementami wszystkie zduplikowane usunięte. To zachowanie kolejności elementów wejściowych, utrzymywanie pierwszego wystąpienia każdej zduplikowanego elementu.|
-|`Inputs`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametru.<br /><br /> Kolekcja elementów, aby usunąć zduplikowane elementy z.|
+|`Filtered`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów z usuniętymi wszystkimi zduplikowanymi elementami. Kolejność elementów wejściowych jest zachowywana, zachowując pierwsze wystąpienie każdego zduplikowanego elementu.|
+|`Inputs`|Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Kolekcja elementów, z której mają zostać usunięte zduplikowane elementy.|
 
 ## <a name="remarks"></a>Uwagi
- To zadanie jest uwzględniana wielkość liter i nie porównuje metadanych elementu, określając duplikaty.
+ To zadanie uwzględnia wielkość liter i nie porównuje metadanych elementów podczas określania duplikatów.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie użyto `RemoveDuplicates` zadanie, aby usunąć zduplikowane elementy z `MyItems` elementu kolekcji. Po zakończeniu zadania `FilteredItems` kolekcji elementów zawiera jeden element.
+ W poniższym przykładzie użyto zadania `RemoveDuplicates`, aby usunąć zduplikowane elementy z kolekcji elementów `MyItems`. Po zakończeniu zadania kolekcja `FilteredItems` elementów zawiera jeden element.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -66,7 +66,7 @@ Usuwa zduplikowane elementy z kolekcji określonego elementu.
 </Project>
 ```
 
- Poniższy przykład pokazuje, że `RemoveDuplicates` zadań zachowuje ich kolejność danych wejściowych. Po zakończeniu zadania `FilteredItems` kolekcji elementów zawiera elementy *MyFile2.cs*, *MyFile1.cs*, i *MyFile3.cs* w tej kolejności.
+ Poniższy przykład pokazuje, że zadanie `RemoveDuplicates` zachowuje swoją kolejność wprowadzania danych. Po zakończeniu zadania kolekcja `FilteredItems` elementów zawiera elementy *MyFile2.cs*, *MyFile1.cs*i *MyFile3.cs* w tej kolejności.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

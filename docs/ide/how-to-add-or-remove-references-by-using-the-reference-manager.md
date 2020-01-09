@@ -16,17 +16,17 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654823"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595313"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Instrukcje: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -176,7 +176,7 @@ Na karcie **com** znajduje się lista wszystkich składników com, które są do
 
 Jeśli typ projektu nie obsługuje modelu COM, karta nie jest wyświetlana w oknie dialogowym Menadżer odwołań.
 
-## <a name="browse"></a>Przycisku
+## <a name="browse"></a>Przeglądaj
 
 Możesz użyć przycisku **Przeglądaj** , aby wyszukać składnik w systemie plików.
 
@@ -201,7 +201,7 @@ W przypadku odwoływania się do pliku WinMD, oczekiwany układ polega na tym, �
     > [!NOTE]
     > Jeśli dodasz właściwość, kompilacja może być wolniejsza.
 
-## <a name="recent"></a>Najnowsze
+## <a name="recent"></a>Ostatnie
 
 **Zespoły**, **com**, **Windows**i **Przeglądaj** każdy obsługują **ostatnią** kartę, która wylicza listę składników, które zostały ostatnio dodane do projektów.
 

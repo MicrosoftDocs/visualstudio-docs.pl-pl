@@ -3,17 +3,17 @@ title: 'Przewodnik: kompilowanie aplikacji'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647174"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594152"
 ---
 # <a name="walkthrough-build-an-application"></a>Przewodnik: kompilowanie aplikacji
 
@@ -35,25 +35,25 @@ Ustawienia konfiguracji i platformy można zmienić lub utworzyć przy użyciu o
 
    ![Menu Kompilacja, Configuration Manager polecenie](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Na liście **Konfiguracja rozwiązania aktywnego** wybierz pozycję **\<New... \>** .
+1. Na liście **Konfiguracja rozwiązania aktywnego** wybierz pozycję **\<nowy...\>** .
 
 1. W oknie dialogowym **Nowa konfiguracja rozwiązania** Nazwij nową konfigurację `Test`, skopiuj ustawienia z istniejącej konfiguracji **debugowania** , a następnie wybierz przycisk **OK** .
 
    ![Okno dialogowe Nowa konfiguracja rozwiązania](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Na liście **aktywnych platform rozwiązań** wybierz **\<New... \>** .
+1. Na liście **Active Solution platform** wybierz pozycję **\<New...\>** .
 
 1. W oknie dialogowym **Nowa platforma rozwiązania** wybierz pozycję **x64**i nie Kopiuj ustawień z platformy x86.
 
    ![Okno dialogowe Nowa platforma rozwiązania](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Wybierz przycisk **OK** .
+1. Wybierz **OK** przycisku.
 
    Aktywna Konfiguracja rozwiązania została zmieniona na **test** z aktywną platformą rozwiązania ustawioną na x64.
 
    ![Configuration Manager z konfiguracją testu](../ide/media/buildwalk_configmanagertestconfig.png)
 
-1. Wybierz pozycję **Zamknij**.
+1. Wybierz **Zamknij**.
 
 Możesz szybko sprawdzić lub zmienić aktywną konfigurację rozwiązania, korzystając z listy **konfiguracje rozwiązania** na pasku narzędzi **Standardowy** .
 
@@ -65,7 +65,7 @@ Następnie można skompilować rozwiązanie przy użyciu konfiguracji kompilacji
 
 ### <a name="build-the-solution"></a>Kompilowanie rozwiązania
 
-- Na pasku menu wybierz **kompiluj**  > **Kompiluj rozwiązanie**lub naciśnij **klawisze CTRL** +**SHIFT** +**B**.
+- Na pasku menu wybierz **kompiluj** > **Kompiluj rozwiązanie**lub naciśnij **klawisze CTRL**+**SHIFT**+**B**.
 
     W oknie **danych wyjściowych** zostaną wyświetlone wyniki kompilacji. Kompilacja powiodła się.
 
@@ -93,7 +93,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
 1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
 
-1. Na pasku menu wybierz pozycję **wyświetl**  > **strony właściwości**.
+1. Na pasku menu wybierz **widoku** > **stron właściwości**.
 
      Zostanie otwarty **Projektant projektu** .
 
@@ -113,7 +113,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
 1. W **Eksplorator rozwiązań**wybierz węzeł najwyższego poziomu projektu.
 
-2. Na pasku menu wybierz pozycję **wyświetl**  > **strony właściwości**.
+2. Na pasku menu wybierz **widoku** > **stron właściwości**.
 
      Zostanie otwarty **Projektant projektu** .
 
@@ -121,7 +121,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji, a
 
      ![Strona kompilowania, Projektant projektu](../ide/media/buildwalk_vbsuppresswarnings.png)
 
-     Aby uzyskać więcej informacji, zobacz [Konfigurowanie ostrzeżeń w Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
+     Aby uzyskać więcej informacji, zobacz [Konfigurowanie ostrzeżeń w języku Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
 4. Skompiluj rozwiązanie.
 
@@ -148,18 +148,18 @@ W oknie **dane wyjściowe** można zmienić ilość informacji o procesie kompil
 
 1. Na liście **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** wybierz pozycję **normalne**, a następnie wybierz przycisk **OK** .
 
-1. Na pasku menu wybierz **kompiluj**  > **czyste rozwiązanie**.
+1. Na pasku menu wybierz **kompiluj** > **czyste rozwiązanie**.
 
 1. Skompiluj rozwiązanie, a następnie przejrzyj informacje w oknie **danych wyjściowych** .
 
      Informacje o kompilacji obejmują czas rozpoczęcia kompilacji (znajdujący się na początku) oraz kolejność przetwarzania plików. Te informacje obejmują również rzeczywistą składnię kompilatora, którą program Visual Studio uruchamia podczas kompilacji.
 
-     Na przykład w C# kompilacji opcja [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) wyświetla kod ostrzegawczy, **1762**, określony wcześniej w tym temacie, wraz z trzema innymi ostrzeżeniami.
+     Na przykład w C# kompilacji opcja [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) wyświetla kod ostrzegawczy, **0168**, określony wcześniej w tym temacie, wraz z trzema innymi ostrzeżeniami.
 
      W kompilacji Visual Basic [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) nie zawiera określonych ostrzeżeń do wykluczenia, więc nie są wyświetlane żadne ostrzeżenia.
 
     > [!TIP]
-    > Możesz przeszukać zawartość okna **danych wyjściowych** , jeśli zostanie wyświetlone okno dialogowe **Znajdź** , wybierając klawisze **Ctrl** +**F** .
+    > Możesz przeszukać zawartość okna **danych wyjściowych** , jeśli zostanie wyświetlone okno dialogowe **Znajdź** , wybierając klawisze **Ctrl**+**F** .
 
 Aby uzyskać więcej informacji, zobacz [jak: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -192,13 +192,13 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
      ![Kompiluj polecenie rozwiązania w menu Kompilacja](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Określ kompilację wydania dla języka C \#
+### <a name="specify-a-release-build-for-c"></a>Określ kompilację wydania dla języka C\#
 
 1. Otwórz **projektanta projektu**.
 
      ![Menu Widok, polecenie strony właściwości](../ide/media/buildwalk_viewpropertypages.png)
 
-1. Wybierz stronę **kompilacja** .
+1. Wybierz **kompilacji** strony.
 
 1. Na liście **Konfiguracja** wybierz pozycję **Zwolnij**.
 
@@ -219,7 +219,7 @@ Aby uzyskać więcej informacji, zobacz [How to: zmiana katalogu wyjściowego ko
 
    Plik wykonywalny jest kopiowany do określonej ścieżki sieciowej. Jego ścieżka zostanie `\\myserver\builds\\FileName.exe`.
 
-Nabycia! Przewodnik został pomyślnie ukończony.
+Gratulacje! Przewodnik został pomyślnie ukończony.
 
 ## <a name="see-also"></a>Zobacz także
 

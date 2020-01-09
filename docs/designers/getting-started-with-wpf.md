@@ -1,19 +1,19 @@
 ---
-title: Co to jest WPF?
+title: Co to jest platforma WPF?
 ms.date: 04/16/2018
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187131"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589542"
 ---
 # <a name="get-started-with-wpf"></a>Rozpoczynanie pracy z aparatem WPF
 
@@ -21,9 +21,9 @@ Windows Presentation Foundation (WPF) to struktura interfejsu użytkownika, któ
 
 Ta sekcja zawiera tematy, które wprowadzają i ułatwiają rozpoczęcie pracy z programem WPF.
 
-## <a name="where-should-i-start"></a>Gdzie należy zacząć?
+## <a name="where-should-i-start"></a>Gdzie mam zacząć?
 
-|Temat|Artykułu|
+|Subject|Articles|
 |-|-|
 |Chcę przeskoczyć do prawej strony...|[Przewodnik: moja pierwsza aplikacja klasyczna WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Chcę porównać narzędzia do projektowania XAML...|[Projektuj kod XAML w programie Visual Studio i Blend for Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|

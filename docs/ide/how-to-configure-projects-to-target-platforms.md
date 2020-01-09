@@ -13,21 +13,21 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ba79bb199bba6c606ac603816cadc2dd2042057
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188951"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595322"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Instrukcje: Konfigurowanie projektów na platformach docelowych
 
-Program Visual Studio umożliwia konfigurowanie aplikacji przeznaczonych dla różnych platform, w tym na platformach 64-bitowych. Aby uzyskać więcej informacji o obsłudze platformy 64-bitowego w programie Visual Studio, zobacz [64-bitowe aplikacje](/dotnet/framework/64-bit-apps).
+Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na temat obsługi platform 64-bitowych w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps).
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>Docelowa platforma z Configuration Manager
 
@@ -35,7 +35,7 @@ Program Visual Studio umożliwia konfigurowanie aplikacji przeznaczonych dla ró
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt jako docelowy dla platformy 64-bitowej
 
-1. Na pasku menu wybierz kolejno opcje **kompiluj**  > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **kompiluj** > **Configuration Manager**.
 
 2. Na liście **Active platformę rozwiązania** Wybierz platformę 64-bitową dla rozwiązania, które ma być celem, a następnie wybierz przycisk **Zamknij** .
 
@@ -54,7 +54,7 @@ Wszystkie projekty przeznaczone dla platformy 64-bitowej są aktualizowane, a na
 
 ## <a name="target-platforms-in-the-project-designer"></a>Platformy docelowe w projektancie projektu
 
-**Projektant projektu** umożliwia również ukierunkowanie na różne platformy dla projektu. W przypadku wybrania jednej z platform znajdujących się na liście w **nowej platformie rozwiązania** okno dialogowe nie działa w przypadku Twojego rozwiązania, można utworzyć niestandardową nazwę konfiguracji i zmodyfikować ustawienia w **projektancie projektu** , aby wskazać odpowiednią platformę. .
+**Projektant projektu** umożliwia również ukierunkowanie na różne platformy dla projektu. W przypadku wybrania jednej z platform znajdujących się na liście w **nowej platformie rozwiązania** okno dialogowe nie działa dla danego rozwiązania, można utworzyć niestandardową nazwę konfiguracji i zmodyfikować ustawienia w **projektancie projektu** , aby wskazać odpowiednią platformę.
 
 Wykonywanie tego zadania różni się w zależności od języka programowania, którego używasz. Aby uzyskać więcej informacji, zobacz następujące linki:
 
@@ -116,7 +116,7 @@ Aby uzyskać więcej informacji na temat pliku projektu, zobacz [Dokumentacja sc
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Informacje o platformach kompilacji](../ide/understanding-build-platforms.md)
+- [Omówienie platformy kompilacji](../ide/understanding-build-platforms.md)
 - [/platform (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [64-bitowe aplikacje](/dotnet/framework/64-bit-apps)
 - [Obsługa programu Visual Studio IDE 64-bit](../ide/visual-studio-ide-64-bit-support.md)
