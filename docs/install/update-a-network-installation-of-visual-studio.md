@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: MT
+ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018815"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594438"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aktualizowanie instalacji sieciowej programu Visual Studio
 
@@ -28,11 +28,11 @@ Jego jest to możliwe, aby zaktualizować układu instalacji sieciowej programu 
 
 ## <a name="how-to-update-a-network-layout"></a>Jak zaktualizować układ sieci
 
-Aby odświeżyć udział instalacji sieci, aby zawierał najnowsze aktualizacje, uruchom polecenie `--layout` w celu przyrostowego pobrania zaktualizowanych pakietów.
+Aby odświeżyć udział instalacji sieci, aby zawierał najnowsze aktualizacje, uruchom polecenie `--layout`, aby przyrostowo pobrać zaktualizowane pakiety.
 
 ::: moniker range="vs-2017"
 
-**Nowość w 15,3**: Jeśli wybrano opcję częściowej układu podczas pierwszego utworzenia układu sieci, te ustawienia są zapisywane. Dowolne polecenia przyszłych układu użyć poprzednie opcje, a także nowe opcje, które określisz. Ale jeśli używasz układu starszej wersji, należy używać tych samych parametrów wiersza polecenia, które były używane podczas pierwszego tworzenia układu instalacji sieci (innymi słowy, tych samych obciążeń i języków) w celu zaktualizowania zawartości.
+**Nowość w 15,3: w**przypadku wybrania układu częściowego podczas pierwszego tworzenia układu sieciowego te ustawienia są zapisywane. Dowolne polecenia przyszłych układu użyć poprzednie opcje, a także nowe opcje, które określisz. Ale jeśli używasz układu starszej wersji, należy używać tych samych parametrów wiersza polecenia, które były używane podczas pierwszego tworzenia układu instalacji sieci (innymi słowy, tych samych obciążeń i języków) w celu zaktualizowania zawartości.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Jeśli wybrano opcję częściowej układu podczas pierwszego utworzenia układu
 
 ::: moniker-end
 
-W przypadku hostowania układu w udziale plików należy zaktualizować prywatną kopię układu (na przykład c:\VSLayout), a następnie po pobraniu całej zaktualizowanej zawartości skopiować ją do udziału plików (na przykład \\server \ produkty \ VS). Jeśli nie możesz tego zrobić, istnieje duże prawdopodobieństwo, że użytkownicy, którzy uruchom Instalatora, podczas gdy aktualizujesz układ może nie można pobrać całą zawartość z układu, ponieważ to nie jest jeszcze całkowicie aktualizowany.
+W przypadku hostowania układu w udziale plików należy zaktualizować prywatną kopię układu (na przykład c:\VSLayout), a następnie po pobraniu całej zaktualizowanej zawartości skopiować ją do udziału plików (na przykład \\server\products\VS). Jeśli nie możesz tego zrobić, istnieje duże prawdopodobieństwo, że użytkownicy, którzy uruchom Instalatora, podczas gdy aktualizujesz układ może nie można pobrać całą zawartość z układu, ponieważ to nie jest jeszcze całkowicie aktualizowany.
 
 Zapoznaj się z kilkoma przykładami tworzenia i aktualizowania układu:
 
@@ -64,7 +64,7 @@ Zapoznaj się z kilkoma przykładami tworzenia i aktualizowania układu:
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* Poniżej przedstawiono sposób dodać dodatkowe obciążenie i język zlokalizowanego.  (To polecenie dodaje obciążenie *Programowanie na platformie Azure* ).  Teraz zarządzane pulpitu i platformy Azure znajdują się w tym układzie.  Zasoby języka na język angielski i niemiecki dostępne są również dla tych obciążeń.  I układ zostanie zaktualizowany do najnowszej dostępnej wersji.
+* Poniżej przedstawiono sposób dodać dodatkowe obciążenie i język zlokalizowanego.  (To polecenie dodaje obciążenie *Programowanie na platformie Azure* ).  Teraz w tym układzie uwzględniono zarówno pulpit zarządzany, jak i platformę Azure.  Zasoby języka na język angielski i niemiecki dostępne są również dla tych obciążeń.  I układ zostanie zaktualizowany do najnowszej dostępnej wersji.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
@@ -73,7 +73,7 @@ Zapoznaj się z kilkoma przykładami tworzenia i aktualizowania układu:
     > [!IMPORTANT]
     > Operacja aktualizacji nie instaluje nowo dodanych składników opcjonalnych, nawet jeśli te składniki zostały uwzględnione w sekcji "Add" [pliku odpowiedzi](automated-installation-with-response-file.md). Dzieje się tak, ponieważ operacja dodawania nie jest używana podczas aktualizacji.
     >
-    > **Obejście problemu**: Uruchom oddzielną operację modyfikacji po uaktualnieniu, aby zainstalować brakujące składniki.
+    > **Obejście**: Uruchom oddzielną operację modyfikacji po uaktualnieniu, aby zainstalować brakujące składniki.
 
 * A na koniec, Oto jak dodać dodatkowe obciążenie i język zlokalizowanego bez aktualizowania wersji. (To polecenie dodaje obciążenie *ASP.NET i programowanie dla sieci Web* ).  Teraz w tym układzie są zawarte następujące obciążenia programu Managed Desktop, Azure i ASP.NET & Web Development. Zasoby języka na język angielski, niemiecki i francuski dostępne są również dla tych obciążeń.  Układ nie został jednak zaktualizowany do najnowszej dostępnej wersji podczas uruchomienia tego polecenia. Pozostaje w istniejącą wersję.
 
@@ -131,7 +131,7 @@ Microsoft jest dostarczany aktualizacje programu Visual Studio okresowo, aby now
 
 ## <a name="how-to-fix-a-layout"></a>Jak naprawić układu
 
-Użyj `--fix` do wykonania tych samych weryfikacji jako `--verify` i również spróbować naprawić zidentyfikowanych problemów. Proces `--fix` wymaga połączenia internetowego, dlatego upewnij się, że komputer jest połączony z Internetem przed wywołaniem `--fix`.
+Użyj `--fix` do wykonania tych samych weryfikacji jako `--verify` i również spróbować naprawić zidentyfikowanych problemów. Proces `--fix` wymaga połączenia internetowego, dlatego przed wywołaniem `--fix`upewnij się, że komputer jest połączony z Internetem.
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --fix

@@ -1,22 +1,22 @@
 ---
-title: Tworzenie projektu testu wydajności i obciążenia sieci Web
+title: Utwórz projekt testu wydajności i obciążenia sieci web
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646685"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566413"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Szybki start: tworzenie projektu testu obciążeniowego
 
-W tym 10-minutowym samouczku szybki start dowiesz się, jak utworzyć i uruchomić projekt testów wydajności i obciążenia sieci Web w programie Visual Studio. Testy obciążenia wykonują wydajność sieci Web lub testy jednostkowe, aby symulować wielu użytkowników uzyskujących dostęp do serwera w tym samym czasie.
+W tym 10-minutowy Przewodnik Szybki Start dowiesz się, jak utworzyć i uruchomić projekt testu obciążenia i wydajności sieci web w programie Visual Studio. Testy obciążenia wykonać wydajności sieci web lub testów jednostkowych, aby symulować wielu użytkownikom dostęp do serwera, w tym samym czasie.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -24,23 +24,23 @@ W tym 10-minutowym samouczku szybki start dowiesz się, jak utworzyć i uruchomi
 
 Projekty testów wydajności i obciążenia sieci Web są dostępne tylko w **wersji Enterprise** programu Visual Studio.
 
-## <a name="install-the-load-testing-component"></a>Zainstaluj składnik testowania obciążenia
+## <a name="install-the-load-testing-component"></a>Instalowanie składnika testowania obciążenia
 
-Jeśli składnik narzędzi testowania wydajności sieci Web i obciążenia nie został jeszcze zainstalowany, należy zainstalować go za pomocą Instalator programu Visual Studio.
+Jeśli nie masz już wydajności sieci web ale zainstalowany składnik narzędzia do testowania obciążenia, należy go zainstalować za pomocą Instalatora programu Visual Studio.
 
-1. Otwórz **Instalator programu Visual Studio** z menu **Start** systemu Windows. Możesz również uzyskać do niego dostęp w programie Visual Studio z okna dialogowego Nowy projekt lub wybierając **narzędzia**  > **Pobierz narzędzia i funkcje** z paska menu.
+1. Otwórz **Instalatora programu Visual Studio** z **Start** menu systemu Windows. Możesz również uzyskać do niego dostęp w programie Visual Studio z okna dialogowego Nowy projekt lub wybierając **narzędzia** > **Pobierz narzędzia i funkcje** z paska menu.
 
-1. W **Instalator programu Visual Studio**wybierz kartę **poszczególne składniki** i przewiń w dół do sekcji **debugowanie i testowanie** . Wybierz pozycję **Narzędzia do testowania obciążenia i wydajności sieci Web**.
+1. W **Instalatora programu Visual Studio**, wybierz **poszczególne składniki** , a następnie przewiń w dół do **debugowanie i testowanie** sekcji. Wybierz **wydajności sieci Web i narzędzia do testowania obciążenia**.
 
-   ![Składnik narzędzi do testowania wydajności sieci Web i testów obciążenia](media/web-perf-load-testing-tools-component.png)
+   ![Składnik narzędzia do testowania obciążenia i wydajności sieci Web](media/web-perf-load-testing-tools-component.png)
 
-1. Wybierz przycisk **Modyfikuj** .
+1. Wybierz **Modyfikuj** przycisku.
 
-   Składnik narzędzi do testowania wydajności sieci Web i testu obciążenia jest zainstalowany.
+   Zainstalowano wydajności sieci web i składnik narzędzia do testowania obciążenia.
 
 ## <a name="create-a-load-test-project"></a>Tworzenie projektu testu obciążeniowego
 
-W tej sekcji utworzymy projekt testu C# obciążenia. Możesz również utworzyć projekt testu obciążenia Visual Basic, jeśli wolisz.
+W tej sekcji utworzymy projektu testu obciążeniowego języka C#. Można również utworzyć projekt testowy obciążenia Visual Basic, jeśli użytkownik sobie tego życzy.
 
 ::: moniker range="vs-2017"
 
@@ -48,13 +48,13 @@ W tej sekcji utworzymy projekt testu C# obciążenia. Możesz również utworzy�
 
 2. Wybierz pozycję **plik** > **Nowy** > **projekt** na pasku menu.
 
-   Zostanie otwarte okno dialogowe **Nowy projekt** .
+   **Nowy projekt** zostanie otwarte okno dialogowe.
 
-3. W oknie dialogowym **Nowy projekt** rozwiń pozycję **zainstalowane** i **wizualizacje C#** , a następnie wybierz kategorię **test** . Wybierz szablon **projektu test wydajności i obciążenia sieci Web** .
+3. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** i **Visual C#** , a następnie wybierz pozycję **testu** kategorii. Wybierz **projekt testu obciążenia i wydajności sieci Web** szablonu.
 
-   ![Szablon projektu testu wydajności i obciążenia sieci Web](media/web-perf-load-test-project-template.png)
+   ![Szablon projektu testu wydajności sieci Web i obciążenia](media/web-perf-load-test-project-template.png)
 
-4. Wprowadź nazwę projektu, jeśli nie chcesz używać nazwy domyślnej, a następnie wybierz **przycisk OK**.
+4. Wprowadź nazwę dla projektu, jeśli nie chcesz użyć nazwy domyślnej, a następnie wybierz **OK**.
 
 ::: moniker-end
 
@@ -64,51 +64,51 @@ W tej sekcji utworzymy projekt testu C# obciążenia. Możesz również utworzy�
 
 2. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-3. Na stronie **Tworzenie nowego projektu** wpisz **test sieci Web** w polu wyszukiwania, a następnie wybierz szablon **\[Deprecated wydajności i obciążenia sieci Web** dla C#programu. Wybierz pozycję **dalej**.
+3. Na stronie **Tworzenie nowego projektu** wpisz **test sieci Web** w polu wyszukiwania, a następnie wybierz **projekt test wydajności i obciążenia sieci Web \[przestarzałe]** szablon dla C#. Wybierz **dalej**.
 
 4. Wprowadź nazwę projektu, jeśli nie chcesz używać nazwy domyślnej, a następnie wybierz pozycję **Utwórz**.
 
 ::: moniker-end
 
-   Program Visual Studio tworzy projekt i wyświetla pliki w **Eksplorator rozwiązań**. Projekt początkowo zawiera jeden plik testu sieci Web o nazwie *WebTest1. webtest*.
+   Program Visual Studio tworzy projekt i wyświetla pliki w **Eksplorator rozwiązań**. Projekt zawiera początkowo jednego pliku testu sieci web o nazwie *WebTest1.webtest*.
 
 ## <a name="add-a-load-test-to-the-project"></a>Dodaj test obciążenia do projektu
 
-1. Z menu po kliknięciu prawym przyciskiem myszy lub menu kontekstowego węzła projektu w **Eksplorator rozwiązań**wybierz pozycję **Dodaj**  > **test obciążenia**.
+1. Z menu kliknij prawym przyciskiem myszy lub z menu kontekstowe węzła projektu w **Eksploratora rozwiązań**, wybierz **Dodaj** > **testu obciążeniowego**.
 
-   Zostanie otwarty **nowy Kreator testu obciążeniowego** .
+   **Nowego kreatora testu obciążenia** zostanie otwarty.
 
-1. Wybierz opcję **lokalny test obciążenia** , a następnie wybierz przycisk **dalej**. Więcej informacji na temat testowania obciążenia opartego na chmurze można znaleźć [tutaj](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+1. Wybierz **testu obciążenia w środowisku lokalnym** opcji, a następnie wybierz **dalej**. Dowiedz się więcej na temat testowania obciążenia opartego na chmurze [tutaj](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
-   ![Kreator nowego testu obciążenia — Pierwsza Strona](media/load-test-wizard-page-1.png)
+   ![Nowy Kreator testu obciążenia — pierwsza strona](media/load-test-wizard-page-1.png)
 
-1. Wybierz pozycję **dalej** , aby przejść przez kreatora do momentu, aż osiągniesz **scenariusz Dodawanie testów do scenariusza testu obciążenia i edytujesz stronę testu mieszanego** . Wybierz przycisk **Dodaj** .
+1. Wybierz **dalej** przechodzić przez kreatora aż **Dodaj testy do scenariusza testu obciążeniowego i Edytuj test mieszany** strony. Wybierz **Dodaj** przycisku.
 
-   Zostanie otwarte okno dialogowe **Dodawanie testów** .
+   **Dodaj testy** zostanie otwarte okno dialogowe.
 
-1. W obszarze **dostępne testy**wybierz pozycję **WebTest1**, a następnie wybierz strzałkę w prawo, aby przenieść ją do pola **Wybrane testy** . Wybierz przycisk **OK** .
+1. W obszarze **dostępne testy**, wybierz opcję **WebTest1**, a następnie wybierz strzałkę w prawo, aby przenieść go do **wybrane testy** pole. Wybierz **OK** przycisku.
 
-   ![Okno dialogowe Dodawanie testów](media/add-tests-dialog-box.png)
+   ![Dodawanie testów, okno dialogowe](media/add-tests-dialog-box.png)
 
-1. W **nowej Kreator testu obciążeniowego**kliknij przycisk **Zakończ** .
+1. Ponownie **nowego kreatora testu obciążenia**, wybierz **Zakończ** przycisku.
 
-   Test obciążenia zostanie dodany do projektu, a plik testu obciążenia zostanie otwarty w oknie edytora.
+   Test obciążeniowy zostanie dodany do projektu, a plik testu obciążeniowego, który zostanie otwarty w oknie edytora.
 
 ## <a name="run-the-load-test"></a>Uruchom test obciążenia
 
-Utworzyliśmy test obciążenia, który nie jest bardzo dużo, ale Uruchommy go mimo to.
+Utworzyliśmy test obciążenia, który nie należy zrobić bardzo wiele, ale teraz Uruchom mimo to.
 
-Z menu po kliknięciu prawym przyciskiem myszy lub menu kontekstowego testu obciążenia, który jest otwarty w edytorze, wybierz polecenie **Uruchom test obciążenia**.
+Wybierz z menu kliknij prawym przyciskiem myszy lub menu kontekstowego testu obciążenia, który jest otwarty w edytorze **Uruchom Test obciążenia**.
 
-![Uruchom menu testu obciążenia](media/run-load-test.png)
+![Uruchom w menu Test obciążeniowy](media/run-load-test.png)
 
-Test obciążenia rozpocznie działanie. Okno **wyniki testów** pokazuje, że test jest w toku, a Analizator testu obciążenia jest wyświetlany w oknie edytora. Po zakończeniu testu, który powinien być pięć minut, jeśli wartości domyślne zostały zaakceptowane, w edytorze zostanie wyświetlony podsumowanie. Możesz wybrać **wykresy**, **tabele**lub **szczegóły** , aby uzyskać różne informacje dotyczące wyników testu obciążenia.
+Test obciążeniowy zostanie uruchomiony. **Wyników testu** okno pokazuje, że test jest w toku i analizatora testu obciążenia jest wyświetlana w oknie edytora. Po zakończeniu testu, która powinna być pięć minut, jeśli możesz zaakceptować wartości domyślne, podsumowania jest wyświetlany w edytorze. Możesz wybrać **wykresów**, **tabel**, lub **szczegółów** uzyskać różne informacje o wynikach testu obciążenia.
 
-![Okno analizatora testu obciążenia](media/load-test-analyzer.png)
+![Okno analizator testu obciążenia](media/load-test-analyzer.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po utworzeniu projektu prostego testu obciążenia następnym krokiem jest skonfigurowanie scenariuszy, zestawów liczników i parametrów uruchomieniowych.
+Teraz, po utworzeniu projektu testu obciążenia prosty, następnym krokiem jest konfiguracji scenariuszy, zbiorów liczników i parametrów uruchomieniowych.
 
 > [!div class="nextstepaction"]
 > [Edytuj ustawienia testu](edit-load-tests.md)

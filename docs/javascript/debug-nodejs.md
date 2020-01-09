@@ -11,27 +11,27 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777936"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678977"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debugowanie aplikacji JavaScript lub TypeScript w programie Visual Studio
 
 Program Visual Studio umożliwia debugowanie kodu JavaScript i języka TypeScript. Można ustawiać i trafiać punkty przerwania, dołączać debuger, sprawdzać zmienne, wyświetlać stos wywołań i korzystać z innych funkcji debugowania.
 
 > [!TIP]
-> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie. W zależności od typu opracowywanej aplikacji może być konieczne zainstalowanie **obciążenia programowania Node. js** w programie Visual Studio.
+> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/) strony, aby zainstalować go za darmo. W zależności od typu opracowywanej aplikacji może być konieczne zainstalowanie **obciążenia programowania Node. js** w programie Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Debugowanie skryptu po stronie serwera
 
 1. Gdy projekt jest otwarty w programie Visual Studio, Otwórz plik JavaScript po stronie serwera (na przykład *Server. js*), kliknij przycisk odstępu w lewym marginesie, aby ustawić punkt przerwania:
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Ustaw punkt przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    Punkty przerwania są najbardziej podstawową i istotną funkcją niezawodnego debugowania. Punkt przerwania wskazuje, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana.
+    Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu.
 
 1. Aby uruchomić aplikację, naciśnij klawisz **F5** (**Debuguj** > **Rozpocznij debugowanie**).
 
@@ -44,7 +44,7 @@ Program Visual Studio umożliwia debugowanie kodu JavaScript i języka TypeScrip
 ## <a name="debug-client-side-script"></a>Debugowanie skryptu po stronie klienta
 
 ::: moniker range=">=vs-2019"
-Program Visual Studio zapewnia obsługę debugowania po stronie klienta dla przeglądarki Chrome i programu Microsoft Edge (chrom). W niektórych scenariuszach debuger automatycznie trafi punkty przerwania w języku JavaScript i kodzie TypeScript oraz w osadzonych skryptach w plikach HTML. Aby debugować skrypt po stronie klienta w aplikacjach ASP.NET, zobacz wpis w blogu [debugowanie JavaScript w przeglądarce Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) i ten [wpis dla Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+Program Visual Studio zapewnia obsługę debugowania po stronie klienta dla przeglądarki Chrome i programu Microsoft Edge (chrom). W niektórych scenariuszach debuger automatycznie trafi punkty przerwania w języku JavaScript i kodzie TypeScript oraz w osadzonych skryptach w plikach HTML. Aby debugować skrypt po stronie klienta w aplikacjach ASP.NET, zobacz wpis w blogu [debugowanie JavaScript w przeglądarce Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) i ten [wpis dla Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). Aby debugować język TypeScript w ASP.NET Core, zobacz też [Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 Program Visual Studio zapewnia obsługę debugowania po stronie klienta dla przeglądarki Chrome i programu Internet Explorer. W niektórych scenariuszach debuger automatycznie trafi punkty przerwania w języku JavaScript i kodzie TypeScript oraz w osadzonych skryptach w plikach HTML. Debugowanie skryptu po stronie klienta w aplikacjach ASP.NET można znaleźć w blogu [debugowanie po stronie klienta projektów ASP.NET w Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
@@ -86,7 +86,7 @@ W tym scenariuszu należy użyć programu Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    oraz
+    Ewentualnie
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -107,7 +107,7 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
 1. Przejdź do programu Visual Studio, a następnie ustaw punkt przerwania w kodzie źródłowym, który może być plikiem JavaScript, plikiem TypeScript lub plikiem JSX. (Ustaw punkt przerwania w wierszu kodu, który umożliwia używanie punktów przerwania, takich jak instrukcja return lub Deklaracja wariancji).
 
-    ![Ustawianie punktu przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Ustaw punkt przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Aby znaleźć konkretny kod w profilowanym pliku, użyj **klawiszy Ctrl**+**F** (**edytuj** > **Znajdź i Zamień** > **szybkie wyszukiwanie**).
 
@@ -128,7 +128,7 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
 
 4. W oknie dialogowym **Dołącz do procesu** Pobierz przefiltrowaną listę wystąpień przeglądarki, do których można dołączać.
     ::: moniker range=">=vs-2019"
-    W programie Visual Studio 2019 wybierz poprawny debuger dla docelowej przeglądarki, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować Wyniki wyszukiwania.
+    W programie Visual Studio 2019 wybierz poprawny debuger dla przeglądarki docelowej, **JavaScript (Chrome)** lub **JavaScript (Microsoft Edge-chrom)** w polu **Dołącz do** wpisz **Chrome** lub **Edge** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
     ::: moniker-end
     ::: moniker range="vs-2017"
     W programie Visual Studio 2017 wybierz pozycję **kod WebKit** w polu **Dołącz do** , wpisz **Chrome** w polu Filtr, aby odfiltrować wyniki wyszukiwania.
@@ -141,10 +141,10 @@ Aby dołączyć debuger z programu Visual Studio i trafić punkty przerwania w k
     ::: moniker range=">=vs-2019"
     Poniższy przykład pokazuje, jak wygląda wyszukiwanie w przeglądarce Microsoft Edge (chrom).
 
-    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ![Dołącz do procesu.](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
+    ![Dołącz do procesu.](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
     Wiadomo, że debuger został prawidłowo dołączony, gdy DOM Explorer i konsola JavaScript zostanie otwarta w programie Visual Studio. Te narzędzia debugowania są podobne do narzędzi Chrome Narzędzia deweloperskie i F12 dla przeglądarki Microsoft Edge.
     ::: moniker-end
@@ -187,7 +187,7 @@ Program Visual Studio oferuje możliwość używania i generowania map źródeł
 
 Aby skonfigurować ustawienia zaawansowane dla map źródeł, Użyj ustawień *tsconfig. JSON* lub projektu w projekcie TypeScript, ale nie obu.
 
-Aby włączyć debugowanie przy użyciu programu Visual Studio, należy się upewnić, że odwołania do pliku źródłowego na wygenerowanej mapie źródłowej są poprawne (może to wymagać testowania). Na przykład jeśli używasz pakietu WebPack, odwołania w pliku mapy źródłowej zawierają prefiks *WebPack:///* , co uniemożliwia programowi Visual Studio znalezienie pliku źródłowego TYPESCRIPT lub JSX. W związku z tym, gdy poprawisz ten element do celów debugowania, odwołanie do pliku źródłowego (na przykład *App. TSX*) musi zostać zmienione z dowolnego elementu, takiego jak *WebPack:///./app.TSX* *./app.TSX*, co umożliwia debugowanie ( ścieżka jest względna dla pliku źródłowego. Poniższy przykład pokazuje, jak można skonfigurować mapy źródłowe w pakiecie WebPack, który jest jednym z najbardziej popularnych pakietów, dzięki czemu współpracują z programem Visual Studio.
+Aby włączyć debugowanie przy użyciu programu Visual Studio, należy się upewnić, że odwołania do pliku źródłowego na wygenerowanej mapie źródłowej są poprawne (może to wymagać testowania). Na przykład jeśli używasz pakietu WebPack, odwołania w pliku mapy źródłowej zawierają prefiks *WebPack:///* , co uniemożliwia programowi Visual Studio znalezienie pliku źródłowego TYPESCRIPT lub JSX. W związku z tym, gdy poprawisz ten element do celów debugowania, odwołanie do pliku źródłowego (na przykład *App. TSX*) musi zostać zmienione z dowolnego elementu, takiego jak *WebPack:///./app.TSX* , na coś, na przykład *./app.TSX*, które umożliwia debugowanie (ścieżka jest względna do pliku źródłowego). Poniższy przykład pokazuje, jak można skonfigurować mapy źródłowe w pakiecie WebPack, który jest jednym z najbardziej popularnych pakietów, dzięki czemu współpracują z programem Visual Studio.
 
 (Tylko pakiet WebPack) Jeśli ustawiasz punkt przerwania w pliku JSX (a nie w pliku JavaScript), musisz zaktualizować konfigurację pakietu WebPack. Na przykład w *WebPack-config. js*może zajść potrzeba zastąpienia następującego kodu:
 
@@ -197,7 +197,7 @@ Aby włączyć debugowanie przy użyciu programu Visual Studio, należy się upe
   },
 ```
 
-z tym kodem:
+przy użyciu tego kodu:
 
 ```javascript
   output: {

@@ -3,8 +3,8 @@ title: Program Visual Studio Team Explorer obciążenia i identyfikatory składn
 titleSuffix: ''
 description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia podanie zintegrowane narzędzia do testowania generalist testerów
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a7667c5ad4a1b6de7427d00ef6a9591dc84c04f3
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: d76c419db16d511bdc99adf7e3a56980c1d33255
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797325"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588411"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Katalog składników programu Visual Studio Team Explorer
 

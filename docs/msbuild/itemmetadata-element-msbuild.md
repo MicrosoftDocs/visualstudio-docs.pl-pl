@@ -1,5 +1,5 @@
 ---
-title: Itemmetadata — Element (MSBuild) | Dokumentacja firmy Microsoft
+title: ItemMetadata — — element (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - ItemMetadata Element [MSBuild]
 - <ItemMetadata> Element [MSBuild]
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817674"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589373"
 ---
-# <a name="itemmetadata-element-msbuild"></a>Itemmetadata — element (MSBuild)
-Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz wartość metadanych.
+# <a name="itemmetadata-element-msbuild"></a>ItemMetadata —, element (MSBuild)
+Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz-wartość metadanych.
 
- \<Projekt > \<ItemGroup > \<element >
+ \<Project > \<Itemmanager > \<
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,11 +37,11 @@ Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawi
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>Atrybuty
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać obliczone. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -55,10 +55,10 @@ Zawiera klucz metadanych zdefiniowanych przez użytkownika elementu, który zawi
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest opcjonalna.
 
- Ten tekst Określa wartość elementu metadanych, które mogą być tekstem lub XML.
+ Ten tekst Określa wartość metadanych elementu, która może być tekstem lub XML.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie kodu przedstawiono sposób dodawania `Culture` metadanych z wartością `fr` do elementu `CSFile`.
+ Poniższy przykład kodu pokazuje, jak dodać `Culture` metadanych z wartością `fr` do `CSFile`elementu.
 
 ```xml
 <ItemGroup>

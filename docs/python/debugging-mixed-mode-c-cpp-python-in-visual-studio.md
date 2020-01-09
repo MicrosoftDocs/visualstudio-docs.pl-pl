@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962803"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75679003"
 ---
 # <a name="debug-python-and-c-together"></a>Debugowanie języka Python i C++ razem
 
@@ -38,7 +38,7 @@ Funkcje debugowania trybu mieszanego zawierają następujące informacje, jak wy
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Wprowadzenie do tworzenia, testowania i debugowania natywnych modułów języka C z programem Visual Studio, zobacz [szczegółowe informacje: Tworzenie modułów macierzystych](https://youtu.be/D9RlT06a1EI) (witrynie youtube.com, 9 m 09s). Plik wideo ma zastosowanie do programu Visual Studio 2015 i 2017. |
+| ![ikona aparatu filmu wideo](../install/media/video-icon.png "Obejrzyj film") | Wprowadzenie do tworzenia, testowania i debugowania natywnych modułów języka C z programem Visual Studio, zobacz [szczegółowe omówienie: Tworzenie modułów macierzystych](https://youtu.be/D9RlT06a1EI) (witrynie youtube.com, 9 m 09s). Plik wideo ma zastosowanie do programu Visual Studio 2015 i 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Włącz debugowanie w trybie mieszanym w projekcie języka Python
 
@@ -57,18 +57,21 @@ Funkcje debugowania trybu mieszanego zawierają następujące informacje, jak wy
 
     Można wybrać inne typy kodu, oprócz lub zamiast **natywnych**. Na przykład, jeśli zarządzanej aplikacji obsługuje CPython, z kolei są używane moduły natywne rozszerzenia, a chcesz debugować wszystkie trzy, można sprawdzić **Python**, **natywnych**, i **zarządzane**ze sobą w celu ujednolicone środowisko debugowania m.in. stosy wywołań połączone i Krokowe przechodzenie między wszystkie trzy środowisk uruchomieniowych.
 
-1. Po rozpoczęciu debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego (zobacz [symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Musisz zainstalować symbole tylko raz dla dowolnego danego środowiska Python. Symbole są automatycznie dołączane, po zainstalowaniu obsługi języka Python za pomocą Instalatora programu Visual Studio (Visual Studio 2017 i nowsze).
+1. Po rozpoczęciu debugowania w trybie mieszanym po raz pierwszy, może zostać wyświetlony **wymagane symbole Python** okna dialogowego (zobacz [symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Musisz zainstalować symbole tylko raz dla dowolnego danego środowiska Python. Symbole są automatycznie dołączane, jeśli zainstalowano obsługę języka Python za pomocą Instalatora programu Visual Studio (Visual Studio 2017 i nowsze).
 
 1. Aby udostępnić kod źródłowy dla standardowego języka Python, sama podczas debugowania, odwiedź stronę [ https://www.python.org/downloads/source/ ](https://www.python.org/downloads/source/), Pobierz archiwum odpowiednie dla posiadanej wersji i Wyodrębnij jego zawartość do folderu. Możesz następnie punktu programu Visual Studio do określonych plików w tym folderze na dowolnie punkt wyświetli monit.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Włącz debugowanie w trybie mieszanym w projekcie języka C/C++
 
-Visual Studio (2017 w wersji 15.5 lub nowszej) obsługuje trybu mieszanego debugowanie z projektu języka C/C++ (na przykład, gdy [osadzania języka Python w innej aplikacji, zgodnie z opisem w witrynie python.org](https://docs.python.org/3/extending/embedding.html)). Aby włączyć debugowanie w trybie mieszanym, należy skonfigurować projekt języka C/C++ do uruchomienia **debugowania języka Python/środowiska macierzystego**:
+Program Visual Studio (2017 w wersji 15,5 lub nowszej) obsługuje debugowanie w trybie mieszanym zC++ projektu C/(na przykład podczas [osadzania języka Python w innej aplikacji zgodnie z opisem w Python.org](https://docs.python.org/3/extending/embedding.html)). Aby włączyć debugowanie w trybie mieszanym, należy skonfigurować projekt języka C/C++ do uruchomienia **debugowania języka Python/środowiska macierzystego**:
 
 1. Kliknij prawym przyciskiem myszy projekt języka C/C++ w **Eksploratora rozwiązań** i wybierz **właściwości**.
 1. Wybierz **debugowanie** zaznacz **debugowania języka Python/środowiska macierzystego** z **debuger do uruchomienia**i wybierz **OK**.
 
     ![Wybieranie debugera języka Python/środowiska macierzystego w projekcie języka C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> Jeśli nie masz możliwości wybrania debugowania języka **Python/natywnego** , musisz najpierw zainstalować **natywne narzędzia programistyczne języka Python** przy użyciu Instalatora programu vs. Można go znaleźć jako opcję w ramach obciążenia programowania w języku Python. Aby uzyskać dodatkowe informacje, zobacz [temat jak zainstalować obsługę języka Python w programie Visual Studio w systemie Windows](installing-python-support-in-visual-studio.md).
 
 Za pomocą tej metody należy pamiętać, że nie można debugować *py.exe* uruchamiania, ponieważ jej spowoduje utworzenie elementu podrzędnego *python.exe* nie można dołączyć debuger do procesu. Jeśli chcesz uruchomić *python.exe* bezpośrednio z argumentami, zmień **polecenia** opcji **debugowania języka Python/środowiska macierzystego** właściwości (pokazane na poprzedniej ilustracji) Wprowadź pełną ścieżkę do *python.exe*, następnie określ argumentów **argumenty wiersza polecenia**.
 
@@ -168,9 +171,9 @@ Debuger trybu mieszanego różni się od [standardowa debugera języka Python](d
 
 - Nieobsługiwane funkcje: warunkowe punkty przerwania, **debugowanie interakcyjne** okno i zdalne debugowanie dla wielu platform.
 - **Natychmiastowe** okna: dostępne ale ograniczonym podzbiorem jego działanie, w tym wszelkie ograniczenia znajduje się w tym miejscu.
-- Obsługiwane wersje języka Python: CPython 2.7 i 3.3 + tylko.
-- Visual Studio Shell: Po za pomocą języka Python za pomocą programu Visual Studio Shell (na przykład, jeśli został zainstalowany przy użyciu zintegrowanego Instalatora), program Visual Studio nie można otworzyć projektów w języku C++ i środowisko edytowania plików języka C++ jest to edytor tekstu podstawowego. Jednak debugowania języka C/C++ i debugowanie w trybie mieszanym są w pełni obsługiwane w powłoce z kodem źródłowym, przechodzenie do kodu macierzystego i C++ oceny wyrażenia w oknach debugera.
-- Wyświetlanie i rozwijanie obiektów: Podczas przeglądania obiektów języka Python w **lokalne** i **Obejrzyj** debugera okien narzędzi debugowania trybu mieszanego pokazuje tylko strukturę obiektów. Go nie automatycznie ocenić właściwości lub Pokaż atrybuty obliczane. Dla kolekcji, pokazywane są tylko elementy kolekcji wbudowanych typów (`tuple`, `list`, `dict`, `set`). Niestandardowe typy kolekcji nie są odzwierciedlane wiernie jako kolekcje, chyba że są one dziedziczone z pewnego typu kolekcji wbudowanych.
+- Obsługiwane wersje języka Python: CPython i w wersji 2.7 3.3 + tylko.
+- Visual Studio Shell: Po przy użyciu języka Python za pomocą programu Visual Studio Shell (na przykład, jeśli został zainstalowany przy użyciu zintegrowanego Instalatora), program Visual Studio nie można otworzyć projektów w języku C++ i środowisko edytowania plików języka C++ jest to edytor tekstu podstawowego. Jednak debugowania języka C/C++ i debugowanie w trybie mieszanym są w pełni obsługiwane w powłoce z kodem źródłowym, przechodzenie do kodu macierzystego i C++ oceny wyrażenia w oknach debugera.
+- Wyświetlanie i rozwijanie obiektów: podczas przeglądania obiektów języka Python w **lokalne** i **Obejrzyj** debugera okien narzędzi debugowania trybu mieszanego pokazuje tylko strukturę obiektów. Go nie automatycznie ocenić właściwości lub Pokaż atrybuty obliczane. Dla kolekcji, pokazywane są tylko elementy kolekcji wbudowanych typów (`tuple`, `list`, `dict`, `set`). Niestandardowe typy kolekcji nie są odzwierciedlane wiernie jako kolekcje, chyba że są one dziedziczone z pewnego typu kolekcji wbudowanych.
 - Obliczanie wyrażenia: patrz poniżej.
 
 ### <a name="expression-evaluation"></a>Szacowanie wyrażeń

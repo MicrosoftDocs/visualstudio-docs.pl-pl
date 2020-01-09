@@ -1,47 +1,47 @@
 ---
-title: 'Instrukcje: Użycie znaków zarezerwowanych XML w plikach projektu | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: użycie znaków zarezerwowanych XML w plikach projektu | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, using reserved XML characters
 - MSBuild, reserved XML characters
 ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840385"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574330"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Instrukcje: Użycie znaków zarezerwowanych XML w plikach projektu
-Podczas tworzenia plików projektu, może być konieczne użycie zarezerwowanych znaków XML w przypadku, na przykład w wartości właściwości lub wartości parametrów zadania. Jednak niektóre zastrzeżone znaki muszą zostać zastąpione nazwanych jednostek, dzięki czemu można przeanalizować pliku projektu.
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Instrukcje: użycie znaków zarezerwowanych XML w plikach projektu
+Podczas tworzenia plików projektu może być konieczne użycie znaków zarezerwowanych XML, na przykład w wartościach właściwości lub w wartościach parametrów zadania. Jednak niektóre zastrzeżone znaki muszą zostać zastąpione przez nazwaną jednostkę, aby można było analizować plik projektu.
 
-## <a name="use-reserved-characters"></a>Zastrzeżone znaki
- W poniższej tabeli opisano zarezerwowanych znaków XML, które muszą zostać zastąpione odpowiednia jednostka o nazwie, dzięki czemu można przeanalizować pliku projektu.
+## <a name="use-reserved-characters"></a>Użyj znaków zarezerwowanych
+ W poniższej tabeli opisano zastrzeżone znaki XML, które muszą zostać zastąpione przez odpowiadającą mu nazwę jednostki, aby można było analizować plik projektu.
 
-|Zastrzeżonego znaku|Nazwanych jednostek|
+|Znak zarezerwowany|Nazwana jednostka|
 |------------------------|------------------|
 |\<|&amp;lt;|
 |>|&amp;gt;|
 |&|&amp;amp;|
 |"|&amp;quot;|
-|'|&amp;APOS;|
+|'|&amp;.|
 
-#### <a name="to-use-double-quotes-in-a-project-file"></a>Aby używać cudzysłowów w pliku projektu
+#### <a name="to-use-double-quotes-in-a-project-file"></a>Aby użyć podwójnych cudzysłowów w pliku projektu
 
-- Zamień podwójnych cudzysłowów odpowiadającą nazwie podmiotu, &amp;quot;. Na przykład, aby umieścić podwójnego cudzysłowu wokół `EXEFile` listy elementów, wpisz:
+- Zamień podwójne cudzysłowy na odpowiadającą nazwaną jednostkę, &amp;quot;. Na przykład, aby umieścić podwójne cudzysłowy wokół listy elementów `EXEFile`, wpisz:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
     ```
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie kodu podwójne cudzysłowy są używane do zaznacz nazwę pliku na komunikat, który jest wysyłany przy użyciu pliku projektu.
+ W poniższym przykładzie kodu podwójne cudzysłowy są używane do wyróżnienia nazwy pliku w wiadomości wyjściowej przez plik projektu.
 
 ```xml
 <Project DefaultTargets="Compile"
@@ -71,5 +71,5 @@ Podczas tworzenia plików projektu, może być konieczne użycie zarezerwowanych
 ```
 
 ## <a name="see-also"></a>Zobacz także
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

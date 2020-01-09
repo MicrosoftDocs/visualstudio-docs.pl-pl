@@ -1,5 +1,5 @@
 ---
-title: Xmlpoke — zadanie | Dokumentacja firmy Microsoft
+title: XmlPoke — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -11,40 +11,40 @@ helpviewer_keywords:
 - XmlPoke task [MSBuild]
 - MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777619"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588385"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — zadanie
 
-Ustawia wartości określonych przez zapytanie XPath do pliku XML.
+Ustawia wartości określone przez zapytanie XPath w pliku XML.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry `XmlPoke` zadania.
+ W poniższej tabeli opisano parametry zadania `XmlPoke`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Namespaces`|Opcjonalnie `String` parametru.<br /><br /> Określa obszary nazw w przypadku prefiksów kwerendy XPath. `Namespaces` jest składający się z fragmentu kodu XML `Namespace` elementy z atrybutami `Prefix` i `Uri`. Ten atrybut `Prefix` Określa prefiks do skojarzenia z przestrzeni nazw określonej w `Uri` atrybutu. Nie używaj pustego `Prefix`.|
-|`Query`|Opcjonalnie `String` parametru.<br /><br /> Określa zapytanie XPath.|
-|`Value`|Wymagane <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa wartość do wstawienia do określonej ścieżki.|
-|`XmlInputPath`|Opcjonalnie <xref:Microsoft.Build.Framework.ITaskItem> parametru.<br /><br /> Określa dane wejściowe XML jako ścieżkę do pliku.|
+|`Namespaces`|Opcjonalny parametr `String`.<br /><br /> Określa przestrzenie nazw dla prefiksów zapytania XPath. `Namespaces` to fragment kodu XML składający się z `Namespace` elementów z atrybutami `Prefix` i `Uri`. Atrybut `Prefix` Określa prefiks do skojarzenia z przestrzenią nazw określoną w atrybucie `Uri`. Nie należy używać pustej `Prefix`.|
+|`Query`|Opcjonalny parametr `String`.<br /><br /> Określa zapytanie XPath.|
+|`Value`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa wartość, która ma zostać wstawiona do określonej ścieżki.|
+|`XmlInputPath`|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa dane wejściowe w formacie XML jako ścieżkę pliku.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Oto sample.xml, aby zmodyfikować:
+Oto przykład. XML do zmodyfikowania:
 
 ```xml
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
@@ -55,7 +55,7 @@ Oto sample.xml, aby zmodyfikować:
 </Package>
 ```
 
-W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/PhonePublisherId`, następnie za pomocą
+W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/PhonePublisherId`, użyj
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -77,7 +77,7 @@ W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/Phone
 </Project>
 ```
 
-`dn` w tym miejscu służy jako prefiks sztuczne przestrzeni nazw dla domyślny obszar nazw.
+`dn` jest używany jako prefiks sztucznej przestrzeni nazw dla domyślnej przestrzeni nazw.
 
 ## <a name="see-also"></a>Zobacz także
 
