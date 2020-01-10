@@ -20,6 +20,8 @@
       href: tutorial-nodejs.md
     - name: Tworzenie aplikacji Node.js za pomocą platformy React
       href: tutorial-nodejs-with-react-and-jsx.md
+    - name: Tworzenie aplikacji ASP.NET Core w języku TypeScript
+      href: tutorial-aspnet-with-typescript.md
     - name: Publikowanie aplikacji Node.js w usłudze App Service w systemie Linux
       href: publish-nodejs-app-azure.md
 - name: Przewodniki z instrukcjami

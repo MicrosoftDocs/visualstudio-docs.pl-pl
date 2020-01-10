@@ -1,20 +1,20 @@
 ### YamlMime:Landing
 title: Samouczki programu Visual Studio | JavaScript i TypeScript
-summary: Tworzenie aplikacji JavaScript i TypeScript przy użyciu programu Visual Studio
+summary: Tworzenie aplikacji JavaScript i TypeScript w programie Visual Studio
 metadata:
   title: JavaScript i TypeScript w programie Visual Studio
-  description: Dowiedz się, jak tworzyć aplikacje JavaScript i TypeScript przy użyciu programu Visual Studio.
+  description: Dowiedz się, jak używać programu Visual Studio do tworzenia aplikacji JavaScript i TypeScript.
   ms.topic: landing-page
   author: mikejo5000
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
-  ms.translationtype: MT
+  ms.openlocfilehash: 9f81043622a48bbda93e52216a3ce2a6cd9a01b2
+  ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72517117"
+  ms.lasthandoff: 01/06/2020
+  ms.locfileid: "75678951"
 landingContent:
 - title: Wprowadzenie
   linkLists:
@@ -28,18 +28,20 @@ landingContent:
       url: ../install/install-visual-studio.md
   - linkListType: get-started
     links:
-    - text: Rozpocznij Przewodnik
+    - text: Uruchom przewodnik
       url: quickstart-ide-orientation-js.md
 - title: Tworzenie aplikacji JavaScript i TypeScript
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Tworzenie aplikacji sieci Web przy użyciu środowiska Node. js i języka Express
+    - text: Tworzenie aplikacji internetowej za pomocą środowiska Node. js i platformy Express
       url: tutorial-nodejs.md
-    - text: Tworzenie aplikacji sieci Web przy użyciu środowiska Node. js i reagowanie na nie
+    - text: Tworzenie aplikacji internetowej za pomocą środowiska Node. js i platformy React
       url: tutorial-nodejs-with-react-and-jsx.md
-    - text: Tworzenie aplikacji sieci Web przy użyciu środowiska Node. js i Vue. js
+    - text: Tworzenie aplikacji internetowej za pomocą środowiska Node. js i platformy Vue.js
       url: quickstart-vuejs-with-nodejs.md
+    - text: Tworzenie aplikacji ASP.NET Core w języku TypeScript
+      url: tutorial-aspnet-with-typescript.md
 - title: Poznawanie programu Visual Studio
   linkLists:
   - linkListType: how-to-guide
@@ -52,7 +54,7 @@ landingContent:
       url: nodejs-interactive-repl.md
     - text: Debugowanie kodu
       url: debug-nodejs.md
-    - text: Opracowywanie kodu bez projektów i rozwiązań
+    - text: Tworzenie kodu bez projektów ani rozwiązań
       url: develop-javascript-code-without-solutions-projects.md
-    - text: Zapisz i uruchom testy jednostkowe
+    - text: Tworzenie i uruchamianie testów jednostkowych
       url: unit-testing-javascript-with-visual-studio.md
