@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cafdfacec24e906569d0f2b0d1a334511a75e30a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96647f362566f0687cb04b7da4459331ac56b031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300716"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851901"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Zestaw SDK Podglądu Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Ten artykuł zawiera następujące zadania dla integratorów podglądu pomocy pr
 
 - Dodawanie pomocy do programu Visual Studio Shell (zintegrowany lub izolowany)
 
-- Dodatkowe zasoby
+- Dodatkowe materiały
 
 ### <a name="creating-a-topic-f1-support"></a>Tworzenie tematu (obsługa F1)
  Ta sekcja zawiera omówienie składników przedstawianego tematu, wymagania dotyczące tematu, Krótki opis sposobu tworzenia tematu (w tym wymagania dotyczące obsługi F1), a wreszcie — przykładowy temat z renderowanym wynikiem.
@@ -49,7 +49,7 @@ Ten artykuł zawiera następujące zadania dla integratorów podglądu pomocy pr
 
   Kontrolki obsługiwane przez pakiet znaków programu Visual Studio:
 
-- Linki
+- Łącza
 
 - CodeSnippet
 
@@ -312,13 +312,13 @@ some F# code
 
    - W przypadku 32-bitowych systemów operacyjnych:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< przestrzeni nazw\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "lokalizacja" = "offline"
 
    - W przypadku 64-bitowych systemów operacyjnych:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< przestrzeni nazw\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
 
       "lokalizacja" = "offline"
 
@@ -356,16 +356,16 @@ some F# code
 |\< meta Name = "Microsoft. help. TopicLocale" Content = "[kod języka]"/>|Ustawia ustawienia regionalne dla tego tematu, gdy są również używane inne ustawienia lokalne. Jeśli ten tag jest używany w temacie, musi być używany tylko raz. Ten tag jest używany, gdy katalog zawiera zawartość w więcej niż jednym języku. Wiele tematów w wykazie może mieć ten sam identyfikator, ale każdy z nich musi określać unikatowy TopicLocale. Temat, który określa TopicLocale, który odpowiada ustawieniom regionalnym wykazu, jest tematem, który jest wyświetlany w spisie treści. Jednak wszystkie wersje językowe tematu są wyświetlane w wynikach wyszukiwania.|
 |\< tytuł > [tytuł]\</title >|Określa tytuł tego tematu. Ten tag jest wymagany i musi być używany tylko raz w temacie. Jeśli treść tematu nie zawiera tytułu \<div > sekcja, ten tytuł zostanie wyświetlony w temacie i w spisie treści.|
 |\< meta Name = "Microsoft. help. Keywords" Content = "[aKeywordPhrase]"/>|Określa tekst łącza, które jest wyświetlane w okienku indeks podglądu pomocy. Po kliknięciu linku jest wyświetlany temat. Można określić wiele słów kluczowych indeksu dla tematu lub pominąć ten tag, jeśli nie chcesz, aby linki do tego tematu pojawiły się w indeksie. Słowa kluczowe "K" z wcześniejszych wersji pomocy można przekonwertować na tę właściwość.|
-|\< meta Name = "Microsoft. help. ID" Content = "[TopicID]"/>|Ustawia identyfikator dla tego tematu. Ten tag jest wymagany i musi być używany tylko raz w temacie. Identyfikator musi być unikatowy wśród tematów w wykazie, które mają takie same ustawienia regionalne. W innym temacie można utworzyć link do tego tematu za pomocą tego identyfikatora.|
-|\< meta Name = "Microsoft. help. F1" Content = "[System. Windows. Controls. Prymityws. IRecyclingItemContainerGenerator]"/>|Określa słowo kluczowe F1 dla tego tematu. Możesz określić wiele słów kluczowych F1 dla tematu lub pominąć ten tag, jeśli nie chcesz, aby ten temat był wyświetlany, gdy użytkownik naciśnie klawisz F1. Zwykle dla tematu określono tylko jedno słowo kluczowe F1. Słowa kluczowe "F" z wcześniejszych wersji pomocy można przekonwertować na tę właściwość.|
+|\< meta name="Microsoft.Help.Id" content="[TopicID]"/>|Ustawia identyfikator dla tego tematu. Ten tag jest wymagany i musi być używany tylko raz w temacie. Identyfikator musi być unikatowy wśród tematów w wykazie, które mają takie same ustawienia regionalne. W innym temacie można utworzyć link do tego tematu za pomocą tego identyfikatora.|
+|\< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/>|Określa słowo kluczowe F1 dla tego tematu. Możesz określić wiele słów kluczowych F1 dla tematu lub pominąć ten tag, jeśli nie chcesz, aby ten temat był wyświetlany, gdy użytkownik naciśnie klawisz F1. Zwykle dla tematu określono tylko jedno słowo kluczowe F1. Słowa kluczowe "F" z wcześniejszych wersji pomocy można przekonwertować na tę właściwość.|
 |\< meta Name = "Description" Content = "[opis tematu]"/>|Zawiera krótkie podsumowanie zawartości w tym temacie. Jeśli ten tag jest używany w temacie, musi być używany tylko raz. Ta właściwość jest dostępna bezpośrednio przez bibliotekę zapytań. nie jest on przechowywany w pliku indeksu.|
  meta name="Microsoft.Help.TocParent" content="[parent_Id]"/>|Określa temat nadrzędny tego tematu w spisie treści. Ten tag jest wymagany i musi być używany tylko raz w temacie. Wartość jest Microsoft.Help.Id elementu nadrzędnego. Temat może mieć tylko jedną lokalizację w spisie treści. wartość "-1" jest traktowana jako identyfikator tematu dla katalogu głównego spisu treści. W [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]Strona główna podglądu pomocy. Jest to taka sama przyczyna, w przypadku której w celu zagwarantowania, że są one wyświetlane na najwyższym poziomie, TocParent =-1. Strona główna podglądu pomocy jest stroną systemową i nie jest do ponownego przemieszczenia. Jeśli VSP próbuje dodać stronę o IDENTYFIKATORze-1, może ona zostać dodana do zestawu zawartości, ale podgląd pomocy zawsze będzie używać strony systemowej — Strona główna podglądu pomocy|
-|\< meta Name = "Microsoft. help. TocOrder" Content = "[dodatnia liczba całkowita]"/>|Określa, gdzie znajduje się w spisie treści, względem tematów dotyczących elementów równorzędnych. Ten tag jest wymagany i musi być używany tylko raz w temacie. Wartość jest liczbą całkowitą. Temat, który określa liczbę całkowitą o niższej wartości pojawia się powyżej tematu, który określa wartość całkowitą o wyższej wartości.|
-|\< meta Name = "Microsoft. help. Product" Content = "[kod produktu]"/>|Określa produkt opisany w tym temacie. Jeśli ten tag jest używany w temacie, musi być używany tylko raz. Te informacje można również podać jako parametr przekazywany do indeksatora pomocy.|
+|\< meta name="Microsoft.Help.TocOrder" content="[positive integer]"/>|Określa, gdzie znajduje się w spisie treści, względem tematów dotyczących elementów równorzędnych. Ten tag jest wymagany i musi być używany tylko raz w temacie. Wartość jest liczbą całkowitą. Temat, który określa liczbę całkowitą o niższej wartości pojawia się powyżej tematu, który określa wartość całkowitą o wyższej wartości.|
+|\< meta name="Microsoft.Help.Product" content="[product code]"/>|Określa produkt opisany w tym temacie. Jeśli ten tag jest używany w temacie, musi być używany tylko raz. Te informacje można również podać jako parametr przekazywany do indeksatora pomocy.|
 |\< meta Name = "Microsoft. help. ProductVersion" Content = "[numer wersji]"/>|Określa wersję produktu, który opisano w tym temacie. Jeśli ten tag jest używany w temacie, musi być używany tylko raz. Te informacje można również podać jako parametr przekazywany do indeksatora pomocy.|
 |\< meta Name = "Microsoft. help. Category" Content = "[ciąg]"/>|Używane przez produkty do identyfikowania podsekcji zawartości. Można zidentyfikować wiele podsekcji tematu lub pominąć ten tag, jeśli nie chcesz, aby linki identyfikować podsekcje. Ten tag jest używany do przechowywania atrybutów dla TargetOS i TargetFrameworkMoniker, gdy temat zostanie przekonwertowany ze starszej wersji pomocy. Format zawartości to AttributeName: atrybutu AttributeValue.|
 |\< meta Name = "Microsoft. help. TopicVersion Content =" [numer wersji tematu] "/>|Określa tę wersję tematu, gdy w wykazie istnieją różne wersje. Ponieważ Microsoft.Help.Id nie jest gwarancją unikatowości, ten tag jest wymagany, gdy więcej niż jedna wersja tematu istnieje w wykazie, na przykład gdy wykaz zawiera temat dla .NET Framework 3,5 i tematu dla .NET Framework 4 i obie mają tę samą mikro rezerwacje. Help.Id.|
-|\< meta Name = "SelfBranded" Content = "[TRUE lub FALSE]"/>|Określa, czy w tym temacie jest stosowany pakiet znakowania programu Help Library Manager lub pakiet znakowania charakterystyczny dla tematu. Ten tag musi mieć wartość TRUE lub FALSE. Jeśli wartość jest równa TRUE, pakiet oznakowania dla skojarzonego tematu przesłania pakiet oznakowania, który jest ustawiany podczas uruchamiania programu Help Library Manager, tak aby temat był renderowany jako zamierzony, nawet jeśli różni się od renderowania innej zawartości. Jeśli ma wartość FALSE, bieżący temat jest renderowany zgodnie z pakietem znakowania ustawionym podczas uruchamiania programu Help Library Manager. Domyślnie program Help Library Manager przyjmuje, że sama znakowanie ma wartość false, chyba że zmienna SelfBranded jest zadeklarowana jako TRUE; w związku z tym nie trzeba deklarować \<meta Name = "SelfBranded" Content = "FALSE"/>.|
+|\< meta name="SelfBranded" content="[TRUE or FALSE]"/>|Określa, czy w tym temacie jest stosowany pakiet znakowania programu Help Library Manager lub pakiet znakowania charakterystyczny dla tematu. Ten tag musi mieć wartość TRUE lub FALSE. Jeśli wartość jest równa TRUE, pakiet oznakowania dla skojarzonego tematu przesłania pakiet oznakowania, który jest ustawiany podczas uruchamiania programu Help Library Manager, tak aby temat był renderowany jako zamierzony, nawet jeśli różni się od renderowania innej zawartości. Jeśli ma wartość FALSE, bieżący temat jest renderowany zgodnie z pakietem znakowania ustawionym podczas uruchamiania programu Help Library Manager. Domyślnie program Help Library Manager przyjmuje, że sama znakowanie ma wartość false, chyba że zmienna SelfBranded jest zadeklarowana jako TRUE; w związku z tym nie trzeba deklarować \<meta Name = "SelfBranded" Content = "FALSE"/>.|
 
 ### <a name="creating-a-branding-package"></a>Tworzenie pakietu znakowania
  Wersja programu Visual Studio obejmuje wiele różnych produktów Visual Studio, w tym izolowane i zintegrowane powłoki dla partnerów programu Visual Studio.  Każdy z tych produktów wymaga pewnego stopnia pomocy technicznej oznakowania treści pomocy, która jest unikatowa dla produktu.  Na przykład tematy programu Visual Studio muszą mieć spójną prezentację markową, natomiast program SQL Studio, który otacza powłokę ISO, wymaga własnej unikatowego znakowania zawartości pomocy dla każdego tematu.  Zintegrowany partner powłoki może chcieć, aby tematy pomocy były zawarte w zawartości pomocy produktu Visual Studio nadrzędnego przy zachowaniu własnych oznaczeń.
@@ -439,8 +439,8 @@ some F# code
 |Funkcja:|**CollapsibleArea**|
 |Używanych|Rozwiń Zwiń tekst kontrolki zawartości|
 |**Element**|**Wartość**|
-|ExpandText|Expand|
-|CollapseText|Zespolon|
+|ExpandText|Rozwiń|
+|CollapseText|Zwiń|
 |Funkcja:|**CodeSnippet**|
 |Używanych|Tekst kontrolki fragmentu kodu.  Uwaga: zawartość fragmentu kodu z rozrywanym miejscem zostanie zmieniona na spacja.|
 |**Element**|**Wartość**|
@@ -448,7 +448,7 @@ some F# code
 |ViewColorizedText|Wyświetl kolory|
 |CombinedVBTabDisplayLanguage|Visual Basic (przykład)|
 |VBDeclaration|Oświadczeń|
-|VBUsage|Sposób użycia|
+|VBUsage|Pomiar|
 |Funkcja:|**Opinie, stopki i logo**|
 |Używanych|Podaj kontrolę opinii dla klienta, aby przesłać opinię na temat bieżącego tematu za pośrednictwem poczty e-mail.  Tekst praw autorskich dla zawartości.  Definicja logo.|
 |**Element**|**Wartość (te ciągi mogą być modyfikowane w celu spełnienia wymagań dotyczących przyjmowanego przez zawartość).**|
@@ -467,13 +467,13 @@ some F# code
 |MT_QualityNonEditable|Ten artykuł został przetłumaczony ręcznie. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie.|
 |MT_BetaContents|Ten artykuł został przetłumaczony maszynowo dla wstępnej wersji. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie.|
 |MT_BetaRecycledContents|Ten artykuł został przetłumaczony ręcznie w wersji wstępnej. Jeśli masz połączenie z Internetem, wybierz pozycję "Wyświetl ten temat online", aby wyświetlić tę stronę w trybie edycji razem z pierwotną zawartością w języku angielskim w tym samym czasie.|
-|Funkcja:|**Połącz z**|
+|Funkcja:|**LinkTable**|
 |Używanych|Obsługa linków tematów online|
 |**Element**|**Wartość**|
 |LinkTableTitle|Tabela łączy|
 |TopicEnuLinkText|Zapoznaj się z wersją angielskojęzyczna\</a > tego tematu, który jest dostępny na komputerze.|
 |TopicOnlineLinkText|Wyświetl ten temat \<a href = "{0}" {1}> online\</a >|
-|OnlineText|Sieci|
+|OnlineText|Online|
 |Funkcja:|**Kontrolka audio wideo**|
 |Używanych|Wyświetlanie elementów i tekstu dla zawartości wideo|
 |**Element**|**Wartość**|
@@ -510,21 +510,21 @@ some F# code
 |HomePageNoBooksInstalled|Nie znaleziono zawartości na komputerze.|
 |HomePageHelpSettings|Ustawienia zawartości pomocy|
 |HomePageHelpSettingsText|\<p > bieżące ustawienie to pomoc lokalna. Podgląd pomocy wyświetla zawartość zainstalowaną na komputerze.\<br/> Aby zmienić źródło zawartości pomocy, na pasku menu programu Visual Studio wybierz \<zakres Style = "{0}" > Pomoc, ustaw preferencję pomocy\</span >.\<br/>\</p >|
-|Megabajt|MEGABIT|
+|Megabajt|MB|
 
- **Znakowanie. js**
+ **branding.js**
 
  Plik znakowania. js zawiera kod JavaScript używany przez elementy oznakowania podglądu pomocy programu Visual Studio.  Poniżej znajduje się lista elementów znakowania i obsługa języka JavaScript.  Wszystkie ciągi do zlokalizowania dla tego pliku są zdefiniowane w sekcji "lokalizowalne ciągi" w górnej części tego pliku.  Plik ICL został utworzony dla ciągów Loc w pliku marking. js.
 
 ||||
 |-|-|-|
 |**Funkcja znakowania**|**JavaScript — funkcja**|**Opis**|
-|Var...||Definiuj zmienne|
+|Var...||Definiowanie zmiennych|
 |Pobieranie języka kodu użytkownika|setUserPreferenceLang|mapuje indeks # do języka kodu|
 |Ustawianie i pobieranie wartości cookie|getcookas, setcookas||
 |Dziedziczony element członkowski|changeMembersLabel|Rozwiń/Zwiń Dziedziczony element członkowski|
 |When SelfBranded=False|onLoad|Odczytaj ciąg zapytania, aby sprawdzić, czy jest to żądanie drukowania.  Ustaw wszystkie codesnippets, aby skoncentrować się na karcie preferowane przez użytkownika.  Jeśli jest to żądanie drukowania, ustaw dla isPrinterFriendly wartość true. Sprawdź tryb dużego kontrastu.|
-|Fragment kodu|addSpecificTextLanguageTagSet||
+|Wstawka kodu|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
 ||setCodesnippetLang||
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Rozszerzeniem**|**Używanych**|**Wyświetlone źródło zawartości**|
+|**Plik**|**Korzystanie**|**Wyświetlone źródło zawartości**|
 |homepage.htm|Jest to strona wyświetlająca aktualnie zainstalowaną zawartość oraz wszelkie inne komunikaty, które są odpowiednie dla użytkownika dotyczące ich zawartości.  Ten plik ma dodatkowy atrybut metadanych "Microsoft.Help.Id" Content = "-1", który umieszcza tę zawartość w górnej części lokalnego SPISu treści zawartości.||
 ||< META_HOME_PAGE_TITLE_ADD/>|Marking. XML, tag \<HomePageTitle >|
 ||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Marking. XML, tag \<HomePageIntroduction >|
@@ -590,10 +590,10 @@ some F# code
 
 ||||
 |-|-|-|
-|**Rozszerzeniem**|**Używanych**|**Przykłady**|
+|**Plik**|**Korzystanie**|**Przykłady**|
 |Clear. gif|Używane do renderowania zwijanego obszaru||
 |footer_slice. gif|Prezentacja stopki||
-|info_icon. gif|Używane podczas wyświetlania informacji|Zastrzeżenie|
+|info_icon. gif|Używane podczas wyświetlania informacji|Zrzeczenie odpowiedzialności|
 |online_icon. gif|Ta ikona ma być skojarzona z linkami online||
 |tabLeftBD.gif|Używane do renderowania kontenera fragmentów kodu||
 |tabRightBD. gif|Używane do renderowania kontenera fragmentów kodu||
@@ -818,10 +818,10 @@ some F# code
 
 19. W środowisku IDE firmy Contoso wybierz klawisz F1, aby przetestować funkcję F1.
 
-### <a name="additional-resources"></a>Dodatkowe zasoby
+### <a name="additional-resources"></a>Dodatkowe materiały
 
 Aby uzyskać interfejs API środowiska uruchomieniowego, zobacz [interfejs API pomocy systemu Windows](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
 
 Aby uzyskać więcej informacji na temat korzystania z interfejsu API pomocy, zobacz [przykłady kodu podglądu pomocy](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-Aby uzyskać aktualizacje dotyczące rozwiązywania problemów, zobacz [plik Readme podglądu pomocy](https://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409).
+Aby uzyskać aktualizacje dotyczące rozwiązywania problemów, zobacz [plik Readme podglądu pomocy](https://go.microsoft.com/fwlink/?LinkId=255960).

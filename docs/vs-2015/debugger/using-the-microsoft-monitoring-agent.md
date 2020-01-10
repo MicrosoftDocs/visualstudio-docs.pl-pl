@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d92fd478e4106afd9b61a15146a68f279a358fb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a4297cfee592977cd09ba9c0abe36e12f7986181
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297108"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845610"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     - Wszystkie wcześniejsze wersje Microsoft Monitoring Agent zostały odinstalowane.  
   
-2. [Pobierz bezpłatną Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384), czyli 32-bitową wersję **MMASetup-i386. exe** lub 64-bitową w wersji **MMASetup-AMD64. exe**, z centrum pobierania firmy Microsoft do serwera sieci Web.  
+2. [Pobierz bezpłatną Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771), czyli 32-bitową wersję **MMASetup-i386. exe** lub 64-bitową w wersji **MMASetup-AMD64. exe**, z centrum pobierania firmy Microsoft do serwera sieci Web.  
   
 3. Uruchom pobrany plik wykonywalny, aby uruchomić Kreatora instalacji.  
   
@@ -92,7 +92,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    —lub—  
+    lub  
   
 - Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):  
   
@@ -106,18 +106,18 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
   5. W polu **Wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji aplikacji sieci Web lub aplikacji programu SharePoint.  
   
-  6. Wybierz **Sprawdź nazwy** , aby rozpoznać nazwę. Wybierz **przycisk OK**.  
+  6. Wybierz **Sprawdź nazwy** , aby rozpoznać nazwę. Wybierz **OK**.  
   
   7. Upewnij się, że Pula aplikacji ma uprawnienia do **wykonywania &** .  
   
 ## <a name="MonitorEvents"></a>Krok 2. rozpoczęcie monitorowania aplikacji  
- Aby rozpocząć monitorowanie aplikacji, użyj polecenia [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) środowiska Windows PowerShell. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
+ Aby rozpocząć monitorowanie aplikacji, użyj polecenia [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) środowiska Windows PowerShell. W przypadku korzystania z programu System Center 2012 zobacz [monitorowanie aplikacji sieci Web za pomocą Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. Na serwerze sieci Web otwórz okno **programu Windows PowerShell** lub **Windows PowerShell ISE** oknie wiersza polecenia jako administrator.  
   
      ![Otwórz program Windows PowerShell jako administrator](../debugger/media/ffr-powershellrunadmin.png "FFR_PowerShellRunAdmin")  
   
-2. Uruchom polecenie [Start-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313686) , aby rozpocząć monitorowanie aplikacji. Spowoduje to ponowne uruchomienie wszystkich aplikacji sieci Web na serwerze sieci Web.  
+2. Uruchom polecenie [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) , aby rozpocząć monitorowanie aplikacji. Spowoduje to ponowne uruchomienie wszystkich aplikacji sieci Web na serwerze sieci Web.  
   
      Oto krótka Składnia:  
   
@@ -137,15 +137,15 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     |||  
     |-|-|  
-    |*"\<nazwa_aplikacji >"*|Określ ścieżkę do witryny sieci Web i nazwy aplikacji sieci Web w usługach IIS. Jeśli wolisz, możesz również uwzględnić ścieżkę IIS.<br /><br /> *"\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> —lub—<br /><br /> **"IIS: \ lokacje** *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci Web i aplikacji sieci Web usług IIS](../debugger/media/ffr-iismanager.png "FFR_IISManager ")<br /><br /> Możesz również użyć poleceń [Get-Web](https://technet.microsoft.com/library/ee807832.aspx) i [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*"\<appName>"*|Określ ścieżkę do witryny sieci Web i nazwy aplikacji sieci Web w usługach IIS. Jeśli wolisz, możesz również uwzględnić ścieżkę IIS.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> lub<br /><br /> **"IIS: \ lokacje** *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Tę ścieżkę można znaleźć w Menedżerze usług IIS. Na przykład:<br /><br /> ![Ścieżka do witryny sieci Web i aplikacji sieci Web usług IIS](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> Możesz również użyć poleceń [Get-Web](https://technet.microsoft.com/library/ee807832.aspx) i [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<> monitorowania*|Określ tryb monitorowania:<br /><br /> <ul><li>**Monitoruj**: rejestruje minimalne szczegóły dotyczące zdarzeń wyjątków i zdarzeń wydajności. Ten tryb używa domyślnego planu kolekcji.</li><li>**Śledzenie**: rejestrowanie szczegółów poziomu funkcji lub monitorowanie aplikacji SharePoint 2010 i SharePoint 2013 przy użyciu określonego planu kolekcji. Ten tryb może sprawiać, że aplikacja będzie działać wolniej.<br /><br /> <ul><li>[P: Jak mogę skonfigurować uprawnienia dla puli aplikacji?](#FullPermissionsITLog)</li><li>[P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing)</li></ul><br />     Ten przykład rejestruje zdarzenia dla aplikacji programu SharePoint hostowanej w witrynie programu SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp", śledzenie "C:\Program Files\Microsoft monitoring Agent\Agent\IntelliTraceCollector\ collection_plan. ASP. NET. default. xml" "C:\IntelliTraceLogs"**</li><li>**Niestandardowe**: rejestruje szczegóły niestandardowe przy użyciu określonego niestandardowego planu kolekcji. Należy ponownie uruchomić monitorowanie, jeśli po zakończeniu monitorowania już zostanie przeprowadzone Edytowanie planu zbierania danych.</li></ul>|  
     |*"\<outputPath >"*|Określ pełną ścieżkę katalogu do przechowywania dzienników IntelliTrace. Przed rozpoczęciem monitorowania upewnij się, że ten katalog został utworzony.|  
     |*\<UInt32 >*|Określ maksymalny rozmiar dziennika IntelliTrace. Domyślny maksymalny rozmiar dziennika IntelliTrace to 250 MB.<br /><br /> Gdy dziennik osiągnie ten limit, Agent zastępuje najwcześniejsze wpisy, aby miejsce na więcej wpisów. Aby zmienić ten limit, należy użyć opcji **-wartość właściwości maximumfilesizeinmegabytes** lub edytować atrybut `MaximumLogFileSize` w planie kolekcji.|  
-    |*"\<collectionPlanPathAndFileName >"*|Określ pełną ścieżkę lub ścieżkę względną oraz nazwę pliku planu kolekcji. Ten plan jest plikiem XML, który konfiguruje ustawienia dla agenta.<br /><br /> Te plany są dołączone do agenta i działają z aplikacjami sieci Web i aplikacjami programu SharePoint:<br /><br /> -   **collection_plan. ASP. NET. default. XML**<br />     Zbiera tylko zdarzenia, takie jak wyjątki, zdarzenia wydajności, wywołania bazy danych i żądania serwera sieci Web.<br />-   **collection_plan. ASP. NET. Trace. XML**<br />     Zbiera wywołania na poziomie funkcji i wszystkie dane z domyślnego planu kolekcji. Ten plan jest dobry dla szczegółowej analizy, ale może spowolnić aplikację.<br /><br /> Zlokalizowane wersje tych planów można znaleźć w podfolderach agenta. Możesz również [dostosować te plany lub utworzyć własne plany](https://go.microsoft.com/fwlink/?LinkId=227871) , aby uniknąć spowolnienia działania aplikacji. Wszystkie plany niestandardowe należy umieścić w tej samej bezpiecznej lokalizacji co Agent.<br /><br /> [P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing)|  
+    |*"\<collectionPlanPathAndFileName>"*|Określ pełną ścieżkę lub ścieżkę względną oraz nazwę pliku planu kolekcji. Ten plan jest plikiem XML, który konfiguruje ustawienia dla agenta.<br /><br /> Te plany są dołączone do agenta i działają z aplikacjami sieci Web i aplikacjami programu SharePoint:<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     Zbiera tylko zdarzenia, takie jak wyjątki, zdarzenia wydajności, wywołania bazy danych i żądania serwera sieci Web.<br />-   **collection_plan.ASP.NET.trace.xml**<br />     Zbiera wywołania na poziomie funkcji i wszystkie dane z domyślnego planu kolekcji. Ten plan jest dobry dla szczegółowej analizy, ale może spowolnić aplikację.<br /><br /> Zlokalizowane wersje tych planów można znaleźć w podfolderach agenta. Możesz również [dostosować te plany lub utworzyć własne plany](https://blogs.msdn.com/b/visualstudioalm/archive/2011/09/15/modifying-an-intellitrace-collection-plan-for-the-stand-alone-collector.aspx) , aby uniknąć spowolnienia działania aplikacji. Wszystkie plany niestandardowe należy umieścić w tej samej bezpiecznej lokalizacji co Agent.<br /><br /> [P: Jak mogę uzyskać najwięcej danych bez spowalniania mojej aplikacji?](#Minimizing)|  
   
      Aby uzyskać więcej informacji na temat pełnej składni i innych przykładów, uruchom polecenie **Get-Help Start-WebApplicationMonitoring – Szczegółowa** lub polecenie **Get-Help Start-WebApplicationMonitoring – przykłady** .  
   
-3. Aby sprawdzić stan wszystkich monitorowanych aplikacji sieci Web, uruchom polecenie [Get-WebApplicationMonitoringStatus](https://go.microsoft.com/fwlink/?LinkID=313685) .  
+3. Aby sprawdzić stan wszystkich monitorowanych aplikacji sieci Web, uruchom polecenie [Get-WebApplicationMonitoringStatus](https://technet.microsoft.com/library/dn472751(v=sc.20).aspx) .  
   
 ### <a name="q--a"></a>Pytania i odpowiedzi  
   
@@ -238,11 +238,11 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
 1. Na serwerze sieci Web otwórz okno wiersza polecenia programu Windows PowerShell jako administrator.  
   
-2. Uruchom polecenie [Checkpoint-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313684) , aby zapisać migawkę dziennika IntelliTrace:  
+2. Uruchom polecenie [Checkpoint-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472750(v=sc.20).aspx) , aby zapisać migawkę dziennika IntelliTrace:  
   
     **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-    \- lub-  
+    \- lub —  
   
     **Checkpoint-WebApplicationMonitoring "IIS: \ lokacje** *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -250,7 +250,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    —lub—  
+    lub  
   
     **PS C: > Checkpoint-WebApplicationMonitoring "IIS: sitesFabrikamFabrikamFiber. Web"**  
   
@@ -268,11 +268,11 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
 1. Na serwerze sieci Web otwórz okno wiersza polecenia programu Windows PowerShell jako administrator.  
   
-2. Uruchom polecenie [Stop-WebApplicationMonitoring](https://go.microsoft.com/fwlink/?LinkID=313687) , aby utworzyć dziennik IntelliTrace i zatrzymać monitorowanie określonej aplikacji sieci Web:  
+2. Uruchom polecenie [Stop-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472753(v=sc.20).aspx) , aby utworzyć dziennik IntelliTrace i zatrzymać monitorowanie określonej aplikacji sieci Web:  
   
     **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-    \- lub-  
+    \- lub —  
   
     **Stop-WebApplicationMonitoring "IIS: \ lokacje** *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -284,7 +284,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
   
     **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-    \- lub-  
+    \- lub —  
   
     **PS C:\\> Stop-WebApplicationMonitoring "IIS: \ sites\Fabrikam\FabrikamFiber.Web"**  
   
@@ -301,7 +301,7 @@ Można monitorować lokalnie aplikacje sieci Web ASP.NET hostowane przez usługi
 #### <a name="blogs"></a>Blogi  
  [Wprowadzenie Microsoft Monitoring Agent](https://devblogs.microsoft.com/devops/introducing-microsoft-monitoring-agent-2/)  
   
- [Optymalizacja kolekcji IntelliTrace na serwerach produkcyjnych](https://go.microsoft.com/fwlink/?LinkId=255233)  
+ [Optymalizacja kolekcji IntelliTrace na serwerach produkcyjnych](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/18/optimizing-intellitrace-collection-on-production-server.aspx)  
   
 #### <a name="forums"></a>Fora  
- [Diagnostyka programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnostyka programu Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)

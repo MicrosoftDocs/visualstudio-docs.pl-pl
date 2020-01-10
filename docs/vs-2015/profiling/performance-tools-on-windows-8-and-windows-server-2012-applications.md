@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299660"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847998"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach systemów Windows 8 i Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
 > [!NOTE]
 > Narzędzia do oceny wydajności dla innych obsługiwanych wersji systemu Windows (Windows 7, Windows Server 2008 R2) nie zostały zmienione.  
   
-## <a name="BKMK_In_this_topic"></a>W tym temacie  
+## <a name="BKMK_In_this_topic"></a> W tym temacie  
  [Zbieranie danych w aplikacjach ze sklepu Windows z programu Visual Studio IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Zbieranie danych w aplikacjach uruchamianych na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 z programu Visual Studio IDE](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -100,7 +100,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
   
  Aby profilować aplikacje na urządzeniach, na których nie zainstalowano programu Visual Studio, wykonaj jedną z następujących czynności:  
   
-- Pobierz narzędzia jako część Remote Tools for Visual Studio z [witryny MSDN w sieci Web](https://go.microsoft.com/fwlink/?LinkID=219549).  
+- Pobierz narzędzia jako część Remote Tools for Visual Studio z [witryny MSDN w sieci Web](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
 - Skopiuj i uruchom program instalacyjny autonomicznych narzędzi profilera z komputera programu Visual Studio. Programy instalacyjne znajdują się w folderze *% VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Wybierz program instalacyjny systemu operacyjnego (x86/x64) komputera zdalnego.  
   
@@ -118,7 +118,7 @@ Ulepszone funkcje zabezpieczeń w systemach Windows 8 i Windows Server 2012 wyma
 ## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a>Zbieranie danych o interakcji warstwy (TIP)  
  Profilowanie interakcji między warstwami zawiera dodatkowe informacje o czasach wykonywania funkcji aplikacji wielowarstwowych, które komunikują się z bazami danych za pomocą usług ADO.NET Services. Dane są zbierane tylko dla wywołań funkcji synchronicznych.  
   
- **Wersje programu Visual Studio**  
+ **Visual Studio editions**  
   
  Dane profilowania interakcji między warstwami można zbierać przy użyciu [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]lub [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Jednak dane profilowania interakcji między warstwami mogą być wyświetlane tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] i [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   

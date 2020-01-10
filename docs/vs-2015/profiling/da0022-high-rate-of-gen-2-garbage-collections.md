@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 067544e6b97e2709ed217ae0232771e833800e52
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0dcfa4d3522d88b58e971c0a4ff3f27649c2d21b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300118"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844627"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Wysoki stopień wyrzucania elementów bezużytecznych Gen 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,4 +50,4 @@ Identyfikator reguły | DA0022 |
   
  Aby zrozumieć wzorzec zastosowania pamięci zarządzanej, należy go ponownie uruchomić przy użyciu profilu alokacji pamięci a.NET i wybrać opcję profilowania okresu istnienia obiektu.  
   
- Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](https://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](https://go.microsoft.com/fwlink/?LinkId=177836).
+ Aby uzyskać informacje na temat zwiększania wydajności odzyskiwania pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](https://msdn2.microsoft.com/library/ms973837.aspx) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje o obciążeniu automatycznego odzyskiwania pamięci, zapoznaj się z [pokrytym stertą dużego obiektu](https://msdn.microsoft.com/magazine/cc534993.aspx).

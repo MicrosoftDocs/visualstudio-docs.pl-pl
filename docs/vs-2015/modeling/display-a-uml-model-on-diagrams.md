@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b43d4353e325bb81a29fe39106ac13e1ddcf96a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296004"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849482"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Wyświetlanie modelu UML na diagramach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ W tym temacie:
 ## <a name="Display"></a>Aby wyświetlić element na diagramie
  Podczas tworzenia elementu, takiego jak przypadek użycia lub Akcja, użytkownik może zobaczyć go w Eksploratorze modelu UML, ale nie zawsze jest automatycznie wyświetlany na diagramie. W niektórych przypadkach należy napisać kod, aby go wyświetlić. W poniższej tabeli zestawiono alternatywy.
 
-|Typ elementu|Na przykład:|Aby wyświetlić ten kod, należy|
+|Typ elementu|Na przykład|Aby wyświetlić ten kod, należy|
 |---------------------|-----------------|-------------------------------------|
 |Klasyfikator|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Utwórz skojarzone kształty na określonych diagramach. Dla każdego klasyfikatora można utworzyć dowolną liczbę kształtów.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Ustaw `parentShape` na `null` dla kształtu na najwyższym poziomie diagramu.<br /><br /> Aby wyświetlić jeden kształt w innym:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Uwaga:** w przypadku przeprowadzania wyświetlania wewnątrz transakcji **ILinkedUndo** metoda czasami nie zwraca `IShape`. Ale kształt jest prawidłowo tworzony i jest dostępny przy użyciu `IElement.Shapes().`|
 |Element podrzędny klasyfikatora|Atrybut, operacja,<br /><br /> Część, port|Automatyczny — żaden kod nie jest wymagany.<br /><br /> Jest on wyświetlany jako część elementu nadrzędnego.|
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [, przejdź do przykładowego modelu UML](../modeling/navigate-the-uml-model.md) [: Wyrównaj kształty na diagramie przykład polecenia](https://go.microsoft.com/fwlink/?LinkId=213809) [: Tworzenie elementów, kształtów i stereotypów](https://go.microsoft.com/fwlink/?LinkId=213811)
+ [Rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [, przejdź do przykładowego modelu UML](../modeling/navigate-the-uml-model.md) [: Wyrównaj kształty na diagramie przykład polecenia](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [: Tworzenie elementów, kształtów i stereotypów](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

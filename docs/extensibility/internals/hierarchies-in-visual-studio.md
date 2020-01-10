@@ -1,5 +1,5 @@
 ---
-title: Hierarchie w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Hierarchie w programie Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29eb35e807c467b64a89f48705c555d4083ceef7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08005b69a1af16b07212cb29547875fad89e1d6a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328846"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848942"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarchie w programie Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) Wyświetla projektu jako *hierarchii*. W środowisku IDE programu hierarchii jest drzewo węzłów, w którym każdy węzeł ma zbiór skojarzonych z nimi właściwości. A *projektu hierarchii* to kontener, który zawiera elementy projektu, relacje elementów i skojarzonych z nimi właściwości elementów i polecenia.
 
  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], zarządzanie hierarchiami projektu przy użyciu interfejsu hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Interfejsu przekierowuje wywołania z elementów projektu do okna odpowiedniej hierarchii zamiast programu obsługi poleceń standardowych poleceń.
 
-## <a name="project-hierarchies"></a>Projekt hierarchii
+## <a name="project-hierarchies"></a>Hierarchie projektu
  Każda hierarchia projektu zawiera elementy, które mogą wyświetlać i edytować. Te elementy różnią się w zależności od typu projektu. Na przykład projekt bazy danych może zawierać procedury składowane, widoki bazy danych i tabel bazy danych. Projekt język programowania, z drugiej strony, będzie prawdopodobnie zawierać pliki źródłowe i pliki zasobów dla mapy bitowe i w oknach dialogowych. Hierarchie mogą być zagnieżdżane, które zapewnia pewne dodatkową elastyczność podczas tworzenia hierarchii projektu.
 
  Gdy tworzysz nowy typ projektu, typ projektu określa kompletny zestaw elementów, które mogą być edytowane w nim. Jednak projekty mogą zawierać elementy, dla których nie mają edycję. Na przykład projektów Visual C++ może zawierać pliki HTML, mimo że Visual C++ nie zapewnia żadnych niestandardowy edytor dla typu pliku HTML.
@@ -34,5 +34,5 @@ ms.locfileid: "66328846"
 
 ## <a name="see-also"></a>Zobacz także
 - [Typy projektów](../../extensibility/internals/project-types.md)
-- [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Przykłady VSSDK](https://aka.ms/vs2015sdksamples)
+- [Wybór i waluta w IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [Przykłady VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

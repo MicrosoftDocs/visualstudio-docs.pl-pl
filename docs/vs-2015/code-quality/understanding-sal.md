@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291878"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848465"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Język adnotacji kodu źródłowego firmy Microsoft (SAL) zawiera zestaw adnotacji, za pomocą których można opisać, w jaki sposób funkcja używa jej parametrów, przyjętych przez niego założeń i gwarantuje, że po zakończeniu. Adnotacje są zdefiniowane w pliku nagłówkowym `<sal.h>`. Program Visual Studio Code Analysis C++ for używa adnotacji sal do modyfikowania jej analizy funkcji. Aby uzyskać więcej informacji na temat SAL 2,0 dla opracowywania sterowników systemu Windows, zobacz [Adnotacje sal 2,0 dla sterowników systemu Windows](https://go.microsoft.com/fwlink/?LinkId=250979).  
+Język adnotacji kodu źródłowego firmy Microsoft (SAL) zawiera zestaw adnotacji, za pomocą których można opisać, w jaki sposób funkcja używa jej parametrów, przyjętych przez niego założeń i gwarantuje, że po zakończeniu. Adnotacje są zdefiniowane w pliku nagłówkowym `<sal.h>`. Program Visual Studio Code Analysis C++ for używa adnotacji sal do modyfikowania jej analizy funkcji. Aby uzyskać więcej informacji na temat SAL 2,0 dla opracowywania sterowników systemu Windows, zobacz [Adnotacje sal 2,0 dla sterowników systemu Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
  Natywnie, C i C++ zapewniają tylko ograniczone sposoby, aby deweloperzy mogli stale wyznaczać intencje i niewariancje. Za pomocą adnotacji SAL można opisać funkcje bardziej szczegółowo, aby deweloperzy korzystający z nich mogli lepiej zrozumieć, jak ich używać.  
   
@@ -409,7 +409,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   Można też dodać adnotacje do wszystkich parametrów, aby upewnić się, że zamierzenie jest jasne w całej i aby ułatwić sprawdzenie, czy adnotacje zostały wykonane.  
   
 ## <a name="related-resources"></a>Powiązane zasoby  
- [Blog zespołu ds. analizy kodu](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Blog zespołu ds. analizy kodu](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z adnotacji sal w celuC++ zmniejszenia wad kodu C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

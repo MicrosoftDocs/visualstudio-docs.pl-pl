@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd722e6b8690ef5ff059b69db1fbc467eec7ca3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650931"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592988"
 ---
 # <a name="draw-shapes-and-paths"></a>Rysowanie kształtów i ścieżek
 
@@ -88,10 +88,10 @@ Użyj narzędzia **Zaznaczanie** , aby wybrać ścieżkę. Za pomocą narzędzia
 
 Aby zmodyfikować kształt w taki sam sposób, jak w przypadku modyfikacji ścieżki, Przekształć kształt na ścieżkę. Zaznacz kształt, a następnie wybierz pozycję **Format** > **ścieżka** > **Konwersja do ścieżki**.
 
-**Obejrzyj krótkie wideo:** ![Configure zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy z ścieżkami: Przekształć kształt na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Przekształć kształt na ścieżkę](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
-> **Konwersja do ścieżki** nie jest obecnie dostępna dla aplikacji platformy UWP o minimalnym `TargetPlatformVersion` z 10.0.16299.0 lub nowszym.
+> **Konwersja do ścieżki** nie jest obecnie dostępna dla aplikacji platformy UWP o minimalnej `TargetPlatformVersion` 10.0.16299.0 lub nowszej.
 
 ## <a name="combine-paths"></a>Połącz ścieżki
 
@@ -101,11 +101,11 @@ Aby zmodyfikować kształt w taki sam sposób, jak w przypadku modyfikacji ście
 
 |||||
 |-|-|-|-|
-|![Dwa kształty przed połączeniem](../designers/media/b1_1.png)|Dwa kształty przed połączeniem|![Wspólnej](../designers/media/b1_4.png)|Wspólnej|
+|![Dwa kształty przed połączeniem](../designers/media/b1_1.png)|Dwa kształty przed połączeniem|![wspólnej](../designers/media/b1_4.png)|wspólnej|
 |![Jednostka](../designers/media/b1_2.png)|Jednostka|![Wyklucz nakładanie](../designers/media/b1_5.png)|Wyklucz nakładanie|
-|![Mieszczon](../designers/media/b1_3.png)|Mieszczon|![Odjęt](../designers/media/b1_6.png)|Odjęt|
+|![Mieszczon](../designers/media/b1_3.png)|Mieszczon|![Odejmij](../designers/media/b1_6.png)|Odejmij|
 
-**Obejrzyj krótkie wideo:** ![Configure zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: łączenie ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: łączenie ścieżek](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ## <a name="create-a-compound-path"></a>Utwórz ścieżkę złożoną
 
@@ -115,7 +115,7 @@ Po utworzeniu ścieżki złożonej wszystkie przecinające się części ścież
 
 ![Przerwij ścieżkę złożoną](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**Obejrzyj krótkie wideo:** ![Configure zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Utwórz ścieżkę złożoną](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ## <a name="create-a-clipping-path"></a>Utwórz ścieżkę przycinającą
 
@@ -123,4 +123,4 @@ Po utworzeniu ścieżki złożonej wszystkie przecinające się części ścież
 
 ![Ścieżka przycinająca](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**Obejrzyj krótkie wideo:** ![Configure zainstalowanych funkcji ](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Utwórz ścieżkę przycinającą](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+**Obejrzyj krótkie wideo:** ![skonfigurować zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [pracy ze ścieżkami: Utwórz ścieżkę przycinającą](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).

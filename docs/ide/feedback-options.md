@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853493"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847459"
 ---
 # <a name="visual-studio-feedback-options"></a>Opcje opinii programu Visual Studio
 
@@ -73,14 +73,14 @@ Istnieją dwa sposoby, aby pomóc nam ulepszyć dokumentację:
 * Użyj narzędzia **czy ta strona jest pomocna?** w prawym górnym rogu dowolnej strony dokumentacji.
 * Użyj swojego konta w usłudze GitHub, aby przekazać opinię na temat dowolnej strony programu Visual Studio w witrynie [docs.Microsoft.com](/visualstudio/). Aby to zrobić, wybierz przycisk **Prześlij opinię na temat** > **tej stronie** u dołu dowolnej strony dokumentacji.
 
-## <a name="contact-microsoft-support"></a>Skontaktuj się z pomocą techniczną firmy Microsoft
+## <a name="contact-microsoft-support"></a>Kontaktowanie się z pomocą techniczną firmy Microsoft
 
-Informacje o pomocy technicznej programu Visual Studio można znaleźć na stronie [obsługi cyklu życia produktu &](/visualstudio/releases/2019/servicing/) . Aby uzyskać inne produkty i usługi firmy Microsoft, zobacz Pomoc [techniczna firmy Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) dla pomocy online.
+Informacje o pomocy technicznej programu Visual Studio można znaleźć na stronie [obsługi cyklu życia produktu &](/visualstudio/releases/2019/servicing/) . Aby uzyskać inne produkty i usługi firmy Microsoft, zobacz Pomoc [techniczna firmy Microsoft](https://support.microsoft.com/) dla pomocy online.
 
 > [!NOTE]
 > Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [Microsoft Worldwide sites](https://www.microsoft.com/worldwide/).
 
-W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft, umowy są dostępne za pośrednictwem różnych ofert pomocy technicznej dla przedsiębiorstw. Aby uzyskać więcej informacji, zobacz [Microsoft Enterprise Support Solutions](https://go.microsoft.com/fwlink/?LinkId=258223).
+W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej bezpośrednio od firmy Microsoft, umowy są dostępne za pośrednictwem różnych ofert pomocy technicznej dla przedsiębiorstw. Aby uzyskać więcej informacji, zobacz [Microsoft Enterprise Support Solutions](https://www.microsoft.com/industry/services/support).
 
 Jeżeli produkt jest preinstalowany na nowym komputerze lub urządzeniu, producent sprzętu zapewnia pomoc i obsługę techniczną dla tego oprogramowania. Skontaktuj się bezpośrednio z producentem, aby uzyskać wsparcie.
 

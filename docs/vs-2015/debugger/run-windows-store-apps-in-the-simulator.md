@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: d072f54dfe351d54e3e115dca7a91bec77fbb9e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144777"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844930"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie aplikacji ze Sklepu Windows w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
  Orientację urządzenia można zmienić między pionową i poziomą, obracając symulatora o 90 stopni w dowolnym kierunku.  
   
 > [!NOTE]
-> Symulator nie szanuje właściwości [DisplayProperties. AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) projektu. Na przykład jeśli projekt Ustawia orientację na `Landscape`, a następnie przeniesiesz symulator do orientacji pionowej, obraz ekranu wyświetlania symulatora zostanie również obrócony i zmieniony. Przetestuj te ustawienia na rzeczywistym urządzeniu.  
+> Symulator nie szanuje właściwości [DisplayProperties. AutoRotationPreferences](https://msdn.microsoft.com/library/windows/apps/windows.graphics.display.displayproperties.autorotationpreferences.aspx) projektu. Na przykład jeśli projekt Ustawia orientację na `Landscape`, a następnie przeniesiesz symulator do orientacji pionowej, obraz ekranu wyświetlania symulatora zostanie również obrócony i zmieniony. Przetestuj te ustawienia na rzeczywistym urządzeniu.  
   
 > [!NOTE]
 > W przypadku obrócenia symulatora tak, aby jedna krawędź symulatora była większa niż ekran, na którym jest wyświetlana, symulator zostanie automatycznie zmieniony w celu dopasowania do ekranu. Zmiany rozmiaru symulatora nie są zmieniane na oryginalny rozmiar, jeśli zostanie on ponownie obrócony.  
@@ -142,7 +142,7 @@ Symulator programu Visual Studio dla aplikacji ze sklepu Windows to aplikacja kl
   
    [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
     
-   [Windows. Networking. Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [Reagowanie na zdarzenia systemowe z zadaniami w tle](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   

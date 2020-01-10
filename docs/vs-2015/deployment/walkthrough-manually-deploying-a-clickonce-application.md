@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294675"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844942"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Wskazówki: ręczne wdrażanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLU
   
 - Zainstaluj program Mage. exe i MageUI. exe.  
   
-     Program Mage. exe i MageUI. exe jest częścią [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Musisz mieć zainstalowany [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] lub wersję [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] dołączonej do programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=158044) w witrynie MSDN.  
+     Program Mage. exe i MageUI. exe jest częścią [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Musisz mieć zainstalowany [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] lub wersję [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] dołączonej do programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Windows SDK](https://msdn.microsoft.com/windowsserver/bb980924.aspx) w witrynie MSDN.  
   
 - Podaj aplikację do wdrożenia.  
   
@@ -61,7 +61,7 @@ Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLU
   
 - Upewnij się, że aplikacja nie ma manifestu z informacjami o funkcji Kontrola konta użytkownika.  
   
-     Należy określić, czy aplikacja zawiera manifest z informacjami o kontroli konta użytkownika (UAC), takimi jak `<dependentAssembly>` elementu. Aby przejrzeć manifest aplikacji, można użyć narzędzia Windows Sysinternals [sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) .  
+     Należy określić, czy aplikacja zawiera manifest z informacjami o kontroli konta użytkownika (UAC), takimi jak `<dependentAssembly>` elementu. Aby przejrzeć manifest aplikacji, można użyć narzędzia Windows Sysinternals [sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx) .  
   
      Jeśli aplikacja zawiera manifest ze szczegółami funkcji Kontrola konta użytkownika, należy ją ponownie skompilować bez informacji o kontroli konta użytkownika. W przypadku C# projektu w programie Visual Studio Otwórz właściwości projektu i wybierz kartę aplikacja. Z listy rozwijanej **manifest** wybierz pozycję **Utwórz aplikację bez manifestu**. W przypadku projektu Visual Basic w programie Visual Studio Otwórz właściwości projektu, wybierz kartę aplikacja, a następnie kliknij pozycję **Wyświetl ustawienia kontroli konta użytkownika**. W otwartym pliku manifestu Usuń wszystkie elementy w ramach jednego `<asmv1:assembly>` elementu.  
   
@@ -125,7 +125,7 @@ Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLU
   
 10. Skopiuj wszystkie pliki z katalogu wdrożenia do lokalizacji docelowej lub nośnika wdrożenia. Może to być folder w witrynie sieci Web lub w witrynie FTP, udziale plików lub dysku CD-ROM.  
   
-11. Zapewnij użytkownikom adresy URL, UNC lub nośniki fizyczne wymagane do zainstalowania aplikacji. Jeśli podano adres URL lub UNC, należy nadać użytkownikom pełną ścieżkę do manifestu wdrożenia. Na przykład jeśli AppToDeploy został wdrożony w http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL zostanie http://webserver01/AppToDeploy/AppToDeploy.applicationa.  
+11. Zapewnij użytkownikom adresy URL, UNC lub nośniki fizyczne wymagane do zainstalowania aplikacji. Jeśli podano adres URL lub UNC, należy nadać użytkownikom pełną ścieżkę do manifestu wdrożenia. Na przykład jeśli AppToDeploy został wdrożony w http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL zostanie http://webserver01/AppToDeploy/AppToDeploy.application a.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Aby wdrożyć aplikację za pomocą narzędzia graficznego MageUI. exe  
   
@@ -162,7 +162,7 @@ Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLU
   
 13. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj opcji **Podpisz przy użyciu pliku certyfikatu** , a następnie wybierz certyfikat z systemu plików przy użyciu przycisku wielokropka ( **...** ). Następnie wpisz hasło certyfikatu.  
   
-     —lub—  
+     lub  
   
      Jeśli certyfikat jest przechowywany w magazynie certyfikatów dostępnym z komputera, wybierz opcję **Podpisz z przechowywanym certyfikatem** i wybierz certyfikat z podanej listy.  
   
@@ -190,7 +190,7 @@ Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLU
   
 25. Jeśli masz certyfikat przechowywany jako plik w systemie plików, użyj opcji **Podpisz przy użyciu pliku certyfikatu** , a następnie wybierz certyfikat z systemu plików przy użyciu przycisku wielokropka ( **...** ). Następnie wpisz hasło certyfikatu.  
   
-     —lub—  
+     lub  
   
      Jeśli certyfikat jest przechowywany w magazynie certyfikatów dostępnym z komputera, wybierz opcję **Podpisz z przechowywanym certyfikatem** i wybierz certyfikat z podanej listy.  
   
@@ -200,7 +200,7 @@ Jeśli nie możesz użyć programu Visual Studio do wdrożenia aplikacji [!INCLU
   
 28. Skopiuj wszystkie pliki z katalogu wdrożenia do lokalizacji docelowej lub nośnika wdrożenia. Może to być folder w witrynie sieci Web lub w witrynie FTP, udziale plików lub dysku CD-ROM.  
   
-29. Zapewnij użytkownikom adresy URL, UNC lub nośniki fizyczne wymagane do zainstalowania aplikacji. W przypadku podania adresu URL lub UNC należy nadać użytkownikom pełną ścieżkę manifestu wdrożenia. Na przykład jeśli AppToDeploy został wdrożony w http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL zostanie http://webserver01/AppToDeploy/AppToDeploy.applicationa.  
+29. Zapewnij użytkownikom adresy URL, UNC lub nośniki fizyczne wymagane do zainstalowania aplikacji. W przypadku podania adresu URL lub UNC należy nadać użytkownikom pełną ścieżkę manifestu wdrożenia. Na przykład jeśli AppToDeploy został wdrożony w http://webserver01/ w katalogu AppToDeploy, pełna ścieżka adresu URL zostanie http://webserver01/AppToDeploy/AppToDeploy.application a.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Jeśli musisz wdrożyć nową wersję aplikacji, Utwórz nowy katalog o nazwie po nowej wersji — na przykład 1.0.0.1 — i skopiuj nowe pliki aplikacji do nowego katalogu. Następnie należy wykonać kroki opisane w poprzednich krokach, aby utworzyć i podpisać nowy manifest aplikacji oraz zaktualizować i podpisać manifest wdrożenia. Należy zachować ostrożność, aby określić tę samą nowszą wersję w ramach wywołań programu Mage. exe `-New` i `–Update`, ponieważ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tylko aktualizacje wyższej wersji z największą liczbą całkowitą z lewej strony. Jeśli użyto MageUI. exe, możesz zaktualizować manifest wdrożenia, otwierając go, wybierając kartę **odwołanie do aplikacji** , klikając przycisk **Wybierz manifest** , a następnie wybierając zaktualizowany manifest aplikacji.  

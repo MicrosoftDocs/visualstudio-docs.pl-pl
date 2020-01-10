@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: bce4fa8c824b6a4f1332145c1383131eb6488b6c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406103"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847383"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
-Narzędzie "[Zgłoś problem](https://aka.ms/vs-rap)" jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania wielu problemów. Zespół programu Visual Studio plamuje trendy awarii i spowolnienia w zakresie opinii użytkowników i rozwiązuje problemy, które mają wpływ na rozległą Swath użytkowników. Im bardziej funkcjonalny jest konkretny bilet opinii, tym bardziej prawdopodobnie zostanie on zdiagnozowany i rozwiązany szybko przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania w zakresie zgłaszania problemów dotyczących awarii lub spowolnienia w celu zwiększenia możliwości podejmowania działań.
+Narzędzie "[Zgłoś problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania wielu problemów. Zespół programu Visual Studio plamuje trendy awarii i spowolnienia w zakresie opinii użytkowników i rozwiązuje problemy, które mają wpływ na rozległą Swath użytkowników. Im bardziej funkcjonalny jest konkretny bilet opinii, tym bardziej prawdopodobnie zostanie on zdiagnozowany i rozwiązany szybko przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania w zakresie zgłaszania problemów dotyczących awarii lub spowolnienia w celu zwiększenia możliwości podejmowania działań.
 
 ## <a name="general-best-practices"></a>Ogólne najlepsze praktyki
 
@@ -188,7 +188,7 @@ Co sprawia, że te typy problemów są najbardziej funkcjonalne, należy dostarc
     -   Ustaw globalną zmienną środowiskową **ServiceHubTraceLevel** na **wszystkie**
     -   Odtwórz problem.
 
-2.  Pobierz [Narzędzie do](https://aka.ms/vscollect)zbierania dzienników Microsoft Visual Studio i .NET Framework.
+2.  Pobierz [Narzędzie do](https://www.microsoft.com/download/details.aspx?id=12493)zbierania dzienników Microsoft Visual Studio i .NET Framework.
 3.  Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
 
 ## <a name="see-also"></a>Zobacz także

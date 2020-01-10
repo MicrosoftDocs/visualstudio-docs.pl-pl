@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34ceb2ec7cc923f6642977cf4c70fbfae07bf523
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429716"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848425"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 
@@ -46,13 +46,13 @@ Menu kontekstowe **środowiska Python** węzła zawiera także dodatkowe polecen
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Zmień środowisko dla projektu, kliknij prawym przyciskiem myszy **środowiska Python** a następnie wybierz węzeł **Dodaj środowisko**, lub wybierz **Dodaj środowisko** ze środowiska listy rozwijanej na pasku narzędzi języka Python.
+Aby zmienić środowisko dla projektu, kliknij prawym przyciskiem myszy węzeł **środowiska Python** i wybierz polecenie **Dodaj środowisko**lub wybierz pozycję **Dodaj środowisko** z listy rozwijanej środowisko na pasku narzędzi języka Python.
 
-Jeden raz w **Dodaj środowisko** okno dialogowe, wybierz opcję **istniejące środowiska** kartę, a następnie wybierz nowe środowisko z **środowiska** listy rozwijanej:
+W oknie dialogowym **Dodawanie środowiska** wybierz kartę **istniejące środowisko** , a następnie wybierz nowe środowisko z listy rozwijanej **środowisko** :
 
-![Wybierając środowisko projektu w oknie dialogowym Dodawanie środowisk](media/environments/environments-project-2019.png)
+![Wybieranie środowiska projektu w oknie dialogowym Dodaj środowiska](media/environments/environments-project-2019.png)
 
-Środowisko inna niż domyślna globalnego jest już dodany do projektu, może być konieczne aktywować nowo dodanych środowiska. Kliknij prawym przyciskiem myszy tego środowiska, w obszarze **środowiska Python** a następnie wybierz węzeł **aktywować środowisko**. Aby usunąć środowisko z projektu, wybierz **Usuń**.
+Jeśli do projektu zostało już dodane środowisko inne niż globalne, może być konieczne aktywowanie nowo dodanego środowiska. Kliknij prawym przyciskiem myszy środowisko w węźle **środowiska Python** i wybierz polecenie **Aktywuj środowisko**. Aby usunąć środowisko z projektu, wybierz pozycję **Usuń**.
 
 ![Aktywowanie i usuwanie środowiska projektu](media/environments/environments-project-add-remove-2019.png)
 ::: moniker-end
@@ -61,7 +61,7 @@ Jeden raz w **Dodaj środowisko** okno dialogowe, wybierz opcję **istniejące �
 
 Środowisko wirtualne ma unikatową kombinację określonych interpreter języka Python i określony zbiór bibliotek, który różni się od innych środowisk globalnych i conda. Środowisko wirtualne jest specyficzne dla projektu i są przechowywane w folderze projektu. Ten folder zawiera środowisko biblioteki zainstalowane wraz z *pyvenv.cfg* pliku, który określa ścieżkę w środowisku *podstawowy interpreter* innym miejscu w systemie plików. (Oznacza to, że środowisko wirtualne nie zawiera kopię interpretera tylko łącza do niego).
 
-Korzyścią z używania środowiska wirtualnego jest, że podczas tworzenia projektu wraz z upływem czasu, środowisko wirtualne zawsze odzwierciedla dokładnie zależności projektu. (Globalny środowisku współdzielonym, z drugiej strony, zawiera dowolnej liczby bibliotek czy będziesz ich używać w projekcie lub nie). Następnie można łatwo utworzyć *requirements.txt* pliku ze środowiska wirtualnego, który jest następnie używany do ponownej instalacji tych zależności na innym komputerze programowania lub produkcji. Aby uzyskać więcej informacji, zobacz [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](managing-required-packages-with-requirements-txt.md).
+Korzyścią z używania środowiska wirtualnego jest, że podczas tworzenia projektu wraz z upływem czasu, środowisko wirtualne zawsze odzwierciedla dokładnie zależności projektu. (Udostępnione środowisko globalne, z drugiej strony, zawiera dowolną liczbę bibliotek, niezależnie od tego, czy są one używane w projekcie, czy nie). Następnie można łatwo utworzyć plik *Requirements. txt* w środowisku wirtualnym, który jest następnie używany do ponownej instalacji tych zależności na innym komputerze deweloperskim lub produkcyjnym. Aby uzyskać więcej informacji, zobacz [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](managing-required-packages-with-requirements-txt.md).
 
 Po otwarciu projektu w programie Visual Studio, który zawiera *requirements.txt* plików, programu Visual Studio automatycznie udostępnia opcję do odtworzenia w środowisku wirtualnym. Komputery, na którym nie zainstalowano programu Visual Studio, można użyć `pip install -r requirements.txt` próbie przywrócenia pakietów.
 
@@ -84,7 +84,7 @@ Nowe środowisko wirtualne można utworzyć bezpośrednio w programie Visual Stu
 
 1. W **lokalizacji środowiska wirtualnego** pola, określ ścieżkę dla środowiska wirtualnego. Jeśli określisz tylko nazwę, środowisko wirtualne jest tworzony w ramach bieżącego projektu w podfolderze o tej nazwie.
 
-1. Wybierz środowisko jako podstawowy interpreter, a następnie wybierz pozycję **Utwórz**. Visual Studio Wyświetla pasek postępu, gdy go skonfiguruje środowiska i pobierze wszystkie niezbędne pakiety. Po zakończeniu środowiska wirtualnego jest wyświetlana w **środowiska Python** okno zawierające projekt.
+1. Wybierz środowisko jako podstawowy interpreter, a następnie wybierz pozycję **Utwórz**. Visual Studio Wyświetla pasek postępu, gdy go skonfiguruje środowiska i pobierze wszystkie niezbędne pakiety. Po zakończeniu środowisko wirtualne jest wyświetlane w oknie **środowiska języka Python** dla projektu zawierającego.
 
 1. Środowisko wirtualne nie została aktywowana domyślnie. Aby go uaktywnić dla projektu, kliknij go prawym przyciskiem myszy i wybierz **aktywować środowisko**.
 
@@ -113,28 +113,28 @@ Jeśli już utworzono wirtualnego środowiska w innym miejscu, możesz to zrobi�
 
 Nowe środowisko wirtualne można utworzyć bezpośrednio w programie Visual Studio w następujący sposób:
 
-1. Kliknij prawym przyciskiem myszy **środowiska Python** w **Eksploratora rozwiązań** i wybierz **Dodaj środowisko**, lub wybierz **Dodaj środowisko** z środowisk lista rozwijana lista, na pasku narzędzi języka Python. W **Dodaj środowisko** wyświetlonym oknie dialogowym wybierz **środowiska wirtualnego** karty:
+1. Kliknij prawym przyciskiem myszy **środowisko Python** w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj środowisko**lub wybierz pozycję **Dodaj środowisko** z listy rozwijanej środowiska na pasku narzędzi języka Python. W wyświetlonym oknie dialogowym **Dodawanie środowiska** wybierz kartę **środowisko wirtualne** :
 
-    ![Środowisko wirtualne karty w oknie dialogowym Dodaj środowisko](media/environments/environments-add-virtual-1-2019.png)
+    ![Karta środowisko wirtualne okna dialogowego Dodawanie środowiska](media/environments/environments-add-virtual-1-2019.png)
 
-1. Określ nazwę środowiska wirtualnego, a następnie wybierz interpreter podstawowy i sprawdź jego lokalizację. W obszarze **zainstalować pakiety z pliku**, podaj ścieżkę do *requirements.txt* pliku, w razie potrzeby.
+1. Określ nazwę środowiska wirtualnego, wybierz interpreter podstawowy i sprawdź jego lokalizację. W obszarze **Instaluj pakiety z pliku**podaj ścieżkę do pliku *Requirements. txt* w razie potrzeby.
 
 1. Zapoznaj się z innymi opcjami w oknie dialogowym:
 
     | Opcja | Opis |
     | --- | --- |
-    | Ustaw jako bieżącego środowiska | Aktywuje nowe środowisko w wybranym projekcie, po utworzeniu środowiska. |
-    | Ustaw jako domyślne środowisko dla nowych projektów | Automatycznie ustawia i aktywuje środowiska wirtualnego w wszelkie nowe projekty utworzone w programie Visual Studio. Przy użyciu tej opcji, dostęp do środowiska wirtualnego będzie umieszczona w lokalizacji poza określonego projektu.  |
-    | Wyświetlanie w oknie środowiska Python | Określa, czy można otworzyć **środowiska Python** okna po utworzeniu środowiska. |
-    | Udostępnij to środowisko w globalnie | Określa, czy środowisko wirtualne działa również jako globalne środowiska. Przy użyciu tej opcji, dostęp do środowiska wirtualnego będzie umieszczona w lokalizacji poza określonego projektu. |
+    | Ustaw jako bieżące środowisko | Aktywuje nowe środowisko w wybranym projekcie po utworzeniu środowiska. |
+    | Ustaw jako domyślne środowisko dla nowych projektów | Automatycznie ustawia i aktywuje środowisko wirtualne w nowych projektach utworzonych w programie Visual Studio. W przypadku korzystania z tej opcji środowisko wirtualne należy umieścić w lokalizacji poza określonym projektem.  |
+    | Wyświetl w oknie środowiska języka Python | Określa, czy okno **środowiska języka Python** ma być otwierane po utworzeniu środowiska. |
+    | Udostępnij to środowisko globalnie | Określa, czy środowisko wirtualne działa również jako środowisko globalne. W przypadku korzystania z tej opcji środowisko wirtualne należy umieścić w lokalizacji poza określonym projektem. |
 
-1. Wybierz **Utwórz** Aby sfinalizować środowiska wirtualnego. Visual Studio Wyświetla pasek postępu, gdy go skonfiguruje środowiska i pobierze wszystkie niezbędne pakiety. Po zakończeniu środowisko wirtualne jest aktywowana i pojawia się w **środowiska Python** w węźle **Eksploratora rozwiązań** i **środowiska Python** okno projekt zawierający.
+1. Wybierz pozycję **Utwórz** , aby zakończyć środowisko wirtualne. Visual Studio Wyświetla pasek postępu, gdy go skonfiguruje środowiska i pobierze wszystkie niezbędne pakiety. Po zakończeniu środowisko wirtualne jest uaktywniane i pojawia się w węźle **środowiska Python** w **Eksplorator rozwiązań** oraz w oknie **środowiska Python** dla projektu zawierającego.
 
 ### <a name="activate-an-existing-virtual-environment"></a>Aktywuj istniejącego środowiska wirtualnego
 
 Jeśli już utworzono wirtualnego środowiska w innym miejscu, możesz to zrobić dla projektu w następujący sposób:
 
-1. Kliknij prawym przyciskiem myszy **środowiska Python** w **Eksploratora rozwiązań** i wybierz **Dodaj środowisko**.
+1. Kliknij prawym przyciskiem myszy **środowisko Python** w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj środowisko**.
 
 1. W **Przeglądaj** wyświetlonym oknie dialogowym Przejdź do i wybierz folder, który zawiera środowiska wirtualnego, a wybierz **OK**. Jeśli program Visual Studio wykryje *requirements.txt* pliku w tym środowisku go zapyta, czy zainstalować te pakiety.
 
@@ -154,22 +154,22 @@ W Eksploratorze rozwiązań rozwiń węzeł w danym środowisku, aby szybko wyś
 ![Pakiety języka Python dla środowiska w Eksploratorze rozwiązań](media/environments/environments-installed-packages.png)
 
 ::: moniker range="vs-2017"
-Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowiska, a następnie wybierz **zainstaluj pakiet języka Python** Aby przełączyć się do odpowiedniego **pakietów** karcie **środowiska Python** okno. Wprowadź wyszukiwania termin (zazwyczaj nazwa pakietu) i Visual Studio Wyświetla zgodnych pakietów.
+Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowisko i wybierz polecenie **Zainstaluj pakiet języka Python** , aby przełączyć się na kartę odpowiednie **pakiety** w oknie **środowiska języka Python** . Wprowadź wyszukiwania termin (zazwyczaj nazwa pakietu) i Visual Studio Wyświetla zgodnych pakietów.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowiska, a następnie wybierz **Zarządzanie pakietami języka Python** (lub użyj przycisku pakietu narzędzi języka Python) aby przełączyć się do odpowiedniego **pakietów** karcie **Środowiska Python** okna. Jeden raz w **pakietów** wprowadź wyszukiwania termin (zazwyczaj nazwa pakietu) i Visual Studio Wyświetla zgodnych pakietów.
+Aby zainstalować nowe pakiety, kliknij prawym przyciskiem myszy środowisko i wybierz polecenie **Zarządzaj pakietami języka Python** (lub użyj przycisku pakiet na pasku narzędzi Python), aby przełączyć się na kartę odpowiednie **pakiety** w oknie **środowiska języka Python** . Na karcie **pakiety** wprowadź wyszukiwany termin (zazwyczaj nazwę pakietu), a program Visual Studio Wyświetla pasujące pakiety.
 ::: moniker-end
 
-W programie Visual Studio, pakietów (i zależności) dla większości środowisk są pobierane z [indeksu pakietów języka Python (PyPI)](https://pypi.org), gdzie możesz również wyszukać dostępnych pakietów. Pasek stanu programu Visual Studio i okno dane wyjściowe zawierają informacje o instalacji. Aby odinstalować pakiet, kliknij go prawym przyciskiem myszy i wybierz **Usuń**.
+W programie Visual Studio pakiety (i zależności) dla większości środowisk są pobierane z [indeksu pakietów języka Python (PyPI)](https://pypi.org), gdzie można również wyszukiwać dostępne pakiety. Pasek stanu programu Visual Studio i okno dane wyjściowe zawierają informacje o instalacji. Aby odinstalować pakiet, kliknij go prawym przyciskiem myszy i wybierz **Usuń**.
 
-Zwykle korzysta z Menedżera pakietów conda `https://repo.continuum.io/pkgs/` jako domyślnego kanału, ale inne kanały są dostępne. Aby uzyskać więcej informacji, zobacz [kanały Zarządzaj](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) (docs.conda.io).
+Menedżer pakietów Conda ogólnie używa `https://repo.continuum.io/pkgs/` jako domyślnego kanału, ale dostępne są inne kanały. Aby uzyskać więcej informacji, zobacz [Manage Channels](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) (docs.Conda.IO).
 
 Należy pamiętać, że wyświetlane wpisy nie zawsze są dokładne i instalowania i odinstalowywania może nie być niezawodne lub są dostępne. Program Visual Studio korzysta z Menedżera pakietów pip, jeśli to możliwe i pobiera i instaluje je, gdy jest to wymagane. Program Visual Studio umożliwia również easy_install Menedżera pakietów. Zainstalowane pakiety przy użyciu `pip` lub `easy_install` z wiersza polecenia są również wyświetlane.
 
 Też pamiętać, że program Visual Studio nie obecnie obsługuje `conda` zainstalować pakiety do środowiska conda. Użyj `conda` polecenia zamiast tego wiersza.
 
 > [!Tip]
-> Typowe sytuacji, w którym pip kończy się niepowodzeniem do zainstalowania pakietu jest, gdy pakiet zawiera kod źródłowy składnikami macierzystymi w  *\*.pyd* plików. Bez wymaganą wersję zainstalowanego programu Visual Studio narzędzia pip, nie można skompilować tych składników. Komunikat o błędzie wyświetlany w takiej sytuacji **błąd: Nie można odnaleźć vcvarsall.bat**. `easy_install` często jest w stanie pobrać wstępnie skompilowanych plików binarnych, możesz również pobrać odpowiedni kompilatora dla starszych wersji języka Python z [ https://aka.ms/VCPython27 ](https://aka.ms/VCPython27). Aby uzyskać więcej informacji, zobacz [radzenia sobie z problemów z "nie można odnaleźć vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) na Python tools blog zespołu.
+> Typowe sytuacji, w którym pip kończy się niepowodzeniem do zainstalowania pakietu jest, gdy pakiet zawiera kod źródłowy składnikami macierzystymi w  *\*.pyd* plików. Bez wymaganą wersję zainstalowanego programu Visual Studio narzędzia pip, nie można skompilować tych składników. Komunikat o błędzie wyświetlany w takiej sytuacji **błąd: nie można odnaleźć vcvarsall.bat**. `easy_install` często jest w stanie pobrać wstępnie skompilowanych plików binarnych, możesz również pobrać odpowiedni kompilatora dla starszych wersji języka Python z [ https://www.microsoft.com/download/details.aspx?id=44266 ](https://www.microsoft.com/download/details.aspx?id=44266). Aby uzyskać więcej informacji, zobacz [radzenia sobie z problemów z "nie można odnaleźć vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) na Python tools blog zespołu.
 
 ## <a name="see-also"></a>Zobacz także
 

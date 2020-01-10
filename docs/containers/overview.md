@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: d785ed9416959484f9829e12e1cd20cd2924adb8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127193"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846755"
 ---
 # <a name="container-tools-in-visual-studio"></a>Narzędzia kontenerów w programie Visual Studio
 
@@ -23,7 +23,7 @@ Narzędzia dostępne w programie Visual Studio do programowania przy użyciu kon
 
 * [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** i/lub **oprogramowania .NET Core dla wielu platform**
-* Do opublikowania w usłudze Azure Container Registry, subskrypcji platformy Azure. [Zarejestruj się, aby skorzystać z bezpłatnej wersji próbnej](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Do opublikowania w usłudze Azure Container Registry, subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="docker-support-in-visual-studio"></a>Obsługa platformy Docker w programie Visual Studio
 
@@ -31,7 +31,7 @@ Obsługa platformy Docker jest dostępna dla projektów ASP.NET, projektów ASP.
 
 Obsługa platformy Docker w programie Visual Studio została zmieniona na wiele wydań w odpowiedzi na potrzeby klientów. Istnieją dwa poziomy obsługi platformy Docker, które można dodać do projektu, a obsługiwane opcje różnią się w zależności od typu projektu i wersji programu Visual Studio. W przypadku niektórych obsługiwanych typów projektów, jeśli chcesz tylko kontener dla pojedynczego projektu, bez korzystania z aranżacji, możesz to zrobić, dodając obsługę platformy Docker.  Następnym poziomem jest obsługa aranżacji kontenerów, która dodaje odpowiednie pliki obsługi dla wybranego koordynatora.  
 
-Program Visual Studio 2017 umożliwia używanie Docker Compose i Service Fabric jako usług aranżacji kontenerów.  W przypadku instalowania [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools)można również użyć Kubernetes.
+Program Visual Studio 2017 umożliwia używanie Docker Compose i Service Fabric jako usług aranżacji kontenerów.  W przypadku instalowania [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)można również użyć Kubernetes.
 
 > [!NOTE]
 > Jeśli używasz wersji programu Visual Studio 2017 wcześniejszej niż 15,8, lub używasz szablonu projektu .NET Framework (nie platformy .NET Core), podczas dodawania obsługi platformy Docker, obsługa aranżacji przy użyciu Docker Compose jest automatycznie dodawana. Obsługa aranżacji kontenerów za pośrednictwem Docker Compose jest automatycznie dodawana w programie Visual Studio 2017 w wersji 15,0 do 15,7 i dla projektów .NET Framework.
@@ -45,7 +45,7 @@ Program Visual Studio 2017 umożliwia używanie Docker Compose i Service Fabric 
 * [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** i/lub **oprogramowania .NET Core dla wielu platform**
 * [Narzędzia programistyczne programu .net core 2,2](https://dotnet.microsoft.com/download/dotnet-core/2.2) do programowania przy użyciu programu .net Core 2,2
-* Do opublikowania w usłudze Azure Container Registry, subskrypcji platformy Azure. [Zarejestruj się, aby skorzystać z bezpłatnej wersji próbnej](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* Do opublikowania w usłudze Azure Container Registry, subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="docker-support-in-visual-studio"></a>Obsługa platformy Docker w programie Visual Studio
 
@@ -76,7 +76,7 @@ Obsługę platformy Docker można włączyć podczas tworzenia projektu, wybiera
 > [!NOTE]
 > W przypadku projektów .NET Framework (nie .NET Core) dostępne są tylko kontenery systemu Windows.
 
-Obsługę platformy Docker można dodać do istniejącego projektu, wybierając pozycję **dodaj** > **obsługę platformy docker** w **Eksplorator rozwiązań**. Polecenia **dodaj > Docker support** i **Dodawanie > kontenerów pomocy technicznej programu Orchestrator** znajdują się w menu rozwijanym prawym przyciskiem myszy (lub w menu kontekstowym) węzła projektu dla projektu ASP.NET Core w **Eksplorator rozwiązań**, jak pokazano w poniższym przykładzie zrzut ekranu
+Obsługę platformy Docker można dodać do istniejącego projektu, wybierając pozycję **dodaj** > **obsługę platformy docker** w **Eksplorator rozwiązań**. Polecenia **dodaj > Docker support** i **Dodawanie > kontenerów pomocy technicznej programu Orchestrator** znajdują się w menu rozwijanym prawym przyciskiem myszy (lub w menu kontekstowym) węzła projektu dla projektu ASP.NET Core w **Eksplorator rozwiązań**, jak pokazano na poniższym zrzucie ekranu:
 
 ![Opcja menu Dodaj obsługę platformy Docker w programie Visual Studio](./media/overview/add-docker-support-menu.png)
 
@@ -116,10 +116,10 @@ Powtórz ten proces z innymi projektami, które chcesz kontrolować przy użyciu
 ## <a name="kubernetes-support"></a>Obsługa Kubernetes
 
 ::: moniker range="vs-2017"
-Aby dodać obsługę Kubernetes, zainstaluj [Visual Studio Tools for Kubernetes](https://aka.ms/get-vsk8stools).
+Aby dodać obsługę Kubernetes, zainstaluj [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Dzięki obsłudze Kubernetes można włączyć połączenie między projektem lokalnym i klastrem Kubernetes działającym w [usłudze Azure Kubernetes Service (AKS)](/azure/aks), a tym samym zmodyfikować i debugować usługi działające w programie AKS przy użyciu programu Visual Studio.  Ta usługa jest świadczona przez [Azure dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces pozwala także skonfigurować oddzielne gałęzie usług Kubernetes o nazwie *Spaces* dla celów programistycznych, dzięki czemu możesz efektywnie izolować usługi produkcyjne od wersji roboczych do opracowania i zachować unikatowe modyfikacje oddzielone od siebie.
+Dzięki obsłudze Kubernetes można włączyć połączenie między projektem lokalnym i klastrem Kubernetes działającym w [usłudze Azure Kubernetes Service (AKS)](/azure/aks), a tym samym zmodyfikować i debugować usługi działające w programie AKS przy użyciu programu Visual Studio.  Ta usługa jest świadczona przez [Azure dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces pozwala także skonfigurować oddzielne gałęzie usług Kubernetes o nazwie *Spaces* dla celów programistycznych, dzięki czemu możesz efektywnie izolować usługi produkcyjne od wersji roboczych w fazie projektowania i zachować odrębne modyfikacje oddzielone od siebie.
 
 Aby dodać obsługę Kubernetes do projektów, wybierz pozycję **Kubernetes/Helm** , gdy zostanie dodana obsługa aranżacji kontenera. Do projektu dodawane są kilka plików, w tym *azds. YAML*, które konfiguruje wykresy Azure dev Spaces i Helm, które opisują strukturę usług Kubernetes.
 

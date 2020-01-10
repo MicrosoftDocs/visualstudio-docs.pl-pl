@@ -12,12 +12,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 454cb3617bb918b67784ebd2a3388ac6ee9f3826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0a2cc0464d643fdf6f17da045b3d56ccc678fb9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818373"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846681"
 ---
 # <a name="program-with-unity-and-azure"></a>Programowanie za pomocą aparatu Unity i platformy Azure
 
@@ -30,12 +30,12 @@ System Azure oferuje skalowalne rozwiązanie do przechowywania danych telemetryc
 
 Odwiedź stronę [piaskownicy](/sandbox/) próby następujące eksperymentalne SDK platformy Azure przy użyciu aparatu Unity:
 
-* [Usługa Azure Storage SDK for Unity](https://aka.ms/azstoragegamedev)
-* [Usługi Azure Event Hubs zestawu SDK dla platformy Unity](https://aka.ms/azeventhubsgamedev)
-* [Azure SDK aplikacji mobilnych, dla aparatu Unity](https://aka.ms/azmobileappsgamedev)
+* [Usługa Azure Storage SDK for Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity?wt.mc_id=azgamedev-sandbox-brpeek)
+* [Usługi Azure Event Hubs zestawu SDK dla platformy Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-event-hubs-unity?WT.mc_id=azgamedev-sandbox-brpeek)
+* [Azure SDK aplikacji mobilnych, dla aparatu Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-mobile-apps-unity?WT.mc_id=azgamedev-sandbox-brpeek)
 
 ## <a name="azure-sdk-sample"></a>Przykładowy zestaw SDK Azure
 
-Istnieje również [proste przykładowej gry](https://aka.ms/azmobileappsracer) przy użyciu zestawu SDK usługi Azure łatwe tabele i Unity. Magazyn danych łatwych tabel Azure gier używa do śledzenia Najwyższa ocena Liderzy przechowywania danych telemetrycznych w grze i jest dostępna dla [pobrać z witryny GitHub](https://aka.ms/azsamples-unity).
+Istnieje również [proste przykładowej gry](https://docs.microsoft.com/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer) przy użyciu zestawu SDK usługi Azure łatwe tabele i Unity. Magazyn danych łatwych tabel Azure gier używa do śledzenia Najwyższa ocena Liderzy przechowywania danych telemetrycznych w grze i jest dostępna dla [pobrać z witryny GitHub](https://github.com/BrianPeek/AzureSamples-Unity).
 
 ![Gry zrzut ekranu przykładu](media/vstu_azure-test-sample-game-image2.png)

@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289716"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847697"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Porady: dodawanie zaufanego wydawcy do komputera klienckiego dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
   
 1. Uzyskaj certyfikat cyfrowy od urzędu certyfikacji.  
   
-2. Wyeksportuj certyfikat do formatu Base64 X. 509 (. cer). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Wyeksportuj certyfikat do formatu Base64 X. 509 (. cer). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:  
   
@@ -51,7 +51,7 @@ Dzięki wdrożeniu zaufanej aplikacji można skonfigurować komputery klienckie 
   
 1. Uzyskaj certyfikat cyfrowy od urzędu certyfikacji.  
   
-2. Wyeksportuj certyfikat do formatu Base64 X. 509 (. cer). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Wyeksportuj certyfikat do formatu Base64 X. 509 (. cer). Aby uzyskać więcej informacji na temat formatów certyfikatów, zobacz [Eksportowanie certyfikatu](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. W wierszu polecenia na komputerach klienckich Uruchom następujące polecenie:  
   

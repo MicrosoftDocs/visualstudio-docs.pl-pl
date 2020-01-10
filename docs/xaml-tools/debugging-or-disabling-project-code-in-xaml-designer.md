@@ -3,15 +3,15 @@ title: Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e6426479012ba950f261286323b166da695e9cc5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592995"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
@@ -61,7 +61,7 @@ Gdy kod projektu jest wyłączony, Visual Studio Wyświetla symbole zastępcze. 
 
      Jest to proces projektanta XAML w pierwszym wystąpieniu programu Visual Studio.
 
-8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz kolejno opcje **debuguj** > **Rozpocznij debugowanie**.
+8. W pierwszym wystąpieniu programu Visual Studio na pasku menu wybierz **debuguj** > **Rozpocznij debugowanie**.
 
      Teraz możesz przejść do kodu działającego w projektancie.
 

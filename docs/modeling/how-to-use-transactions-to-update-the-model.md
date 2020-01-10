@@ -2,17 +2,17 @@
 title: 'Porady: użycie transakcji do aktualizacji modelu'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a08ea67477f42008c35b6f141351beaeee03d27b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661134"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594607"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Porady: użycie transakcji do aktualizacji modelu
 W przypadku transakcji upewnij się, że zmiany wprowadzone w sklepie są traktowane jako Grupa. Zmiany pogrupowane mogą być zatwierdzane lub wycofywane jako pojedyncza jednostka.

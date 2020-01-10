@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296904"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847812"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Możesz użyć Diagnostyka grafiki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)],
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Przygotowywanie komputera do korzystania z funkcji przechwytywania programistycznego  
  Interfejs API przechwycenia programistycznego używa zdalnych narzędzi do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby zapewnić funkcje przechwytywania. Na komputerze, na którym zostanie uruchomiona aplikacja, muszą być zainstalowane narzędzia zdalne, nawet jeśli używasz funkcji przechwytywania programowego na komputerze lokalnym. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie musi być uruchomiona podczas przeprowadzania funkcji przechwytywania programowego na komputerze lokalnym.  
   
- Aby korzystać z interfejsów API przechwytywania zdalnego w aplikacji uruchomionej na komputerze, należy najpierw zainstalować na tym komputerze zdalne narzędzia dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Różne wersje narzędzi zdalnych obsługują różne platformy sprzętowe. Aby uzyskać informacje na temat sposobu instalowania narzędzi zdalnych, zobacz [stronę pobierania narzędzi zdalnych](https://go.microsoft.com/fwlink/p/?LinkId=246691) w witrynie internetowej pobierania firmy Microsoft.  
+ Aby korzystać z interfejsów API przechwytywania zdalnego w aplikacji uruchomionej na komputerze, należy najpierw zainstalować na tym komputerze zdalne narzędzia dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Różne wersje narzędzi zdalnych obsługują różne platformy sprzętowe. Aby uzyskać informacje na temat sposobu instalowania narzędzi zdalnych, zobacz [stronę pobierania narzędzi zdalnych](https://visualstudio.microsoft.com/downloads#remote-tools) w witrynie internetowej pobierania firmy Microsoft.  
   
  Alternatywnie, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instaluje składniki niezbędne do przeprowadzenia zdalnego przechwytywania dla aplikacji 32-bitowych.  
   

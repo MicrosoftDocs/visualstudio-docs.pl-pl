@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 96a113e21fe2e2e11da0e156ba9578c632e648ae
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 9a9cf7871684e0951f66e0f20dcf156b3e625b45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983659"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844263"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Zaloguj się do Visual Studio dla komputerów Mac
 
 Zalogowanie się do Visual Studio dla komputerów Mac polega na [tym, jak aktywować subskrypcję](enable-subscription.md). Po pobraniu Visual Studio dla komputerów Mac zawsze domyślnie otrzymujesz wersję Community. Jeśli masz [licencję Professional lub Enterprise](https://visualstudio.microsoft.com/vs/compare/), należy najpierw zalogować się w celu odblokowania dodatkowych funkcji. Ponadto uzyskasz również następujące czynności:
 
-* **Dostęp do programu Visual Studio Dev Essentials** — ten program obejmuje bezpłatne oferty oprogramowania, szkolenia, pomoc techniczną i inne. Zobacz [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) Aby uzyskać więcej informacji.
+* **Dostęp do programu Visual Studio Dev Essentials** — ten program obejmuje bezpłatne oferty oprogramowania, szkolenia, pomoc techniczną i inne. Zobacz [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) Aby uzyskać więcej informacji.
 
 * **Automatycznie łącz się z platformą Azure** w środowisku IDE bez monitowania o poświadczenia dla tego samego konta.
 

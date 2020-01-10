@@ -14,36 +14,36 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254548"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846807"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 ::: moniker range=">=vs-2019"
 
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Gdzie jest Grupuj według cech w programie Visual Studio 2019?
-Ta grupa cech została przeniesiona jako kolumna. W przypadku hierarchii z obsługą wielowarstwową i dostosowywalną w programie Visual Studio 2019 w wersji 16,2, firma Microsoft uważa, że cechy takie jak tworzenie grup nie wymagały złożoności wizualnej. Oczekujemy na opinię na temat tego projektu. [https://doi.org/10.13012/J8PN93H8](https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html )
+Ta grupa cech została przeniesiona jako kolumna. W przypadku hierarchii z obsługą wielowarstwową i dostosowywalną w programie Visual Studio 2019 w wersji 16,2, firma Microsoft uważa, że cechy takie jak tworzenie grup nie wymagały złożoności wizualnej. Oczekujemy na opinię na temat tego projektu. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
 Na razie możesz kliknąć prawym przyciskiem myszy kolumnę w Eksploratorze testów i wybrać kolumny. Sprawdź kolumnę cech i pojawi się w Eksploratorze testów. Teraz można filtrować tę kolumnę według interesujących Cię cech.
 
-![Wyświetlenie filtru kolumny](media/vs-2019/trait-column.png)
-![cech kolumny cech](media/vs-2019/trait-column-filter.png)
+![wyświetlić](media/vs-2019/trait-column.png)
+kolumny cech ![filtrowanie kolumny cech](media/vs-2019/trait-column-filter.png)
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Odnajdywanie testów dynamiczne
 
-**Eksplorator testów nie odnajduje moich testów, które są definiowane dynamicznie. (Na przykład teorii, niestandardowych kart, niestandardowe cech, #ifdefs itp.) Jak odnajdywanie, te testy?**
+**Eksplorator testów nie odnajduje moich testów, które są definiowane dynamicznie. (Na przykład teorie, niestandardowe karty, cechy niestandardowe, #ifdefs itd.) Jak można odnaleźć te testy?**
 
 ::: moniker range=">=vs-2019"
 Skompiluj projekt, aby uruchomić odnajdywanie oparte na zestawie.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone w **test** **Options** > **Tools** > .
+Skompiluj projekt i upewnij się, że odnajdywanie oparte na zestawie jest włączone w **narzędziu** > **Opcje** > **test**.
 ::: moniker-end
-[Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) jest odnajdywanie testów opartych na źródle. Nie można wykryć testów, które używają teorie, niestandardowych kart, cech niestandardowych, `#ifdef` instrukcji i innych, ponieważ są one zdefiniowane w czasie wykonywania. Kompilacja jest wymagana dla tych testów, aby znaleźć dokładnie. W programie Visual Studio 2017 w wersji 15.6 i nowszych opartych na zestawie odnajdywania (wykrywacz tradycyjnych) działa tylko po kompilacji. To ustawienie znajduje odnajdywania testów w czasie rzeczywistym oznacza dowolną liczbę testów, jak to możliwe, podczas edytowania i odnajdywanie na podstawie zestawu umożliwia dynamicznie definiowane testów są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym zwiększa czas odpowiedzi, ale nadal umożliwia uzyskanie pełnych i precyzyjnych wyników po kompilacji.
+[Wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) jest odnajdywanie testów opartych na źródle. Nie mogą odnajdywać testów korzystających z teorie, niestandardowych kart sieciowych, cech niestandardowych, instrukcji `#ifdef` i innych, ponieważ są one zdefiniowane w czasie wykonywania. Kompilacja jest wymagana dla tych testów, aby znaleźć dokładnie. W programie Visual Studio 2017 w wersji 15.6 i nowszych opartych na zestawie odnajdywania (wykrywacz tradycyjnych) działa tylko po kompilacji. To ustawienie znajduje odnajdywania testów w czasie rzeczywistym oznacza dowolną liczbę testów, jak to możliwe, podczas edytowania i odnajdywanie na podstawie zestawu umożliwia dynamicznie definiowane testów są wyświetlane po kompilacji. Wykrywanie testów w czasie rzeczywistym zwiększa czas odpowiedzi, ale nadal umożliwia uzyskanie pełnych i precyzyjnych wyników po kompilacji.
 
 ## <a name="test-explorer--plus-symbol"></a>Eksplorator testów "+" (plus) symbol
 
@@ -56,24 +56,24 @@ Symbol "+" (plus) wskazuje, że więcej testów może zostać odnalezione po kom
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Odnajdywanie na podstawie zestawu
 
-**Odnajdywanie na podstawie zestawu już nie działa dla mojego projektu. Jak włączyć go ponownie?**
+**Odnajdywanie oparte na zestawie nie działa już w projekcie. Jak mogę włączyć ją ponownie?**
 
-Przejdź do pozycji **Narzędzia** > **Opcje** > **test** i zaznacz pole wyboru **Odnajdź testy od skompilowanych zestawów po kompilacji.**
+Przejdź do pozycji **narzędzia** > **Opcje** > **Testuj** i zaznacz pole wyboru, aby **dodatkowo wykrywać testy z skompilowanych zestawów po kompilacji.**
 
 ![Na podstawie zestawu opcji](media/testex-toolsoptions.png)
 ::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Wykrywanie testów w czasie rzeczywistym
 
-**Testy są wyświetlane w Eksploratorze testów podczas pisania, bez konieczności tworzenia projektu. Co się zmieniło?**
+**Testy są teraz wyświetlane w Eksploratorze testów podczas wpisywania, bez konieczności kompilowania projektu. Co się zmieniło?**
 
-Ta funkcja jest nazywana [wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824). Użyto analizatora Roslyn można znaleźć testy i wypełnić Eksplorator testów w czasie rzeczywistym bez konieczności kompilowania projektu. Aby uzyskać więcej informacji na temat zachowania odnajdywania testów dla dynamicznie zdefiniowanych testów, takich jak teorie lub cechy niestandardowe, zobacz [odnajdywanie testów dynamicznych](#dynamic-test-discovery).
+Ta funkcja jest nazywana [wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Użyto analizatora Roslyn można znaleźć testy i wypełnić Eksplorator testów w czasie rzeczywistym bez konieczności kompilowania projektu. Aby uzyskać więcej informacji na temat zachowania odnajdywania testów dla dynamicznie zdefiniowanych testów, takich jak teorie lub cechy niestandardowe, zobacz [odnajdywanie testów dynamicznych](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Zgodność odnajdywania testów w czasie rzeczywistym
 
 **Jakich języków i środowisk testowych można użyć odnajdywaniem testów w czasie rzeczywistym?**
 
-[Wykrywanie testów w czasie rzeczywistym](https://go.microsoft.com/fwlink/?linkid=862824) działa tylko w przypadku języków zarządzanych (C# i Visual Basic), ponieważ jest zbudowany za pomocą kompilatora Roslyn. Na razie wykrywanie testów w czasie rzeczywistym działa tylko w przypadku xUnit, NUnit oraz MSTest struktur.
+[Wykrywanie testów w czasie rzeczywistym](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) działa tylko w przypadku języków zarządzanych (C# i Visual Basic), ponieważ jest zbudowany za pomocą kompilatora Roslyn. Na razie wykrywanie testów w czasie rzeczywistym działa tylko w przypadku xUnit, NUnit oraz MSTest struktur.
 
 ## <a name="test-explorer-logs"></a>Dzienniki narzędzia Eksplorator testów
 
@@ -97,7 +97,7 @@ Widok hierarchii sortowania testy alfabetycznie w przeciwieństwie do wyników. 
 
 ## <a name="test-explorer-hierarchy-view"></a>Widok hierarchii Eksploratora testów
 
-**W widoku hierarchia są wyświetlane ikony "zakończone niepowodzeniem, pominięte" i nie są uruchamiane obok grup węzłów nadrzędnych. Co oznaczają ikony**
+**W widoku hierarchia są wyświetlane ikony "zakończone niepowodzeniem, pominięte" i nie są uruchamiane obok grup węzłów nadrzędnych. Co oznaczają te ikony?**
 
 Ikony obok projektu, Namespace i klasa grupowania wyświetlić stan testów w ramach tej grupy. Zobacz poniższą tabelę.
 
@@ -111,7 +111,7 @@ Filtr ścieżka pliku w polu wyszukiwania programu **Test Explorer** został usu
 
 ## <a name="remove-undocumented-interfaces"></a>Usuń nieudokumentowane interfejsy
 
-**Niektóre interfejsy API związane z testów nie są już dostępne w programie Visual Studio 2019 r. Co się zmieniło?**
+**Niektóre interfejsy API związane z testami nie są już obecne w programie Visual Studio 2019. Co się zmieniło?**
 
 W programie Visual Studio 2019 r niektóre okna testów interfejsów API, które wcześniej zostały oznaczone jako publiczne, ale nigdy nie jest oficjalnie zostały udokumentowane zostaną usunięte. Zostały one oznaczone jako "przestarzałe" w programie Visual Studio 2017 pozwala maintainers rozszerzenia wczesnego ostrzegania. Do naszej wiedzy bardzo mało rozszerzenia ma znaleźć tych interfejsów API i wykonywanych zależności na nich. Obejmują one `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken`, i `SearchFilterTokenType`. Daj nam znać, jeśli ta zmiana ma wpływ na Twoje rozszerzenie, wypełniając usterki na [społeczności deweloperów](https://developercommunity.visualstudio.com).
 
@@ -121,7 +121,7 @@ W programie Visual Studio 2019 r niektóre okna testów interfejsów API, które
 
 Wszystkie projekty testowe mogą zawierać adapter testowy ich .NET NuGet odwołania w pliku csproj. Jeśli nie, jeśli odnajdywania przez rozszerzenie adaptera testowego jest rozpoczęła się po kompilacji, lub jeśli użytkownik próbuje uruchomić wybranych testów w projekcie pojawia się następujące dane wyjściowe testu:
 
-**Projekt testowy {} nie odwołuje się do dowolnej karty NuGet programu .NET. Odnajdywanie lub wykonywanie testów może nie działać w przypadku tego projektu. Zaleca się odwołań NuGet adapterów testowych w każdym projekcie testów platformy .NET w rozwiązaniu.**
+**{} projektu testowego nie odwołuje się do żadnej karty NuGet programu .NET. Odnajdywanie lub wykonywanie testów może nie zadziałało dla tego projektu. Zalecane jest odwoływanie się do adapterów testowych NuGet w każdym projekcie testowym .NET w rozwiązaniu.**
 
 Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do korzystania z pakietów NuGet adaptera testowego. Wymaganie to znacznie zwiększa wydajność i powoduje, że mniej problemów dzięki ciągłej integracji. Przeczytaj więcej na temat rozszerzenia Adapter testu .NET jest przestarzała w [informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
@@ -138,7 +138,7 @@ Zamiast korzystać z rozszerzeń adaptera testowego, projekty są wymagane do ko
 
 Ostatnie projekty testowe platformy uniwersalnej systemu Windows, określ właściwość kompilacji platformy testu, która pozwala zwiększyć wydajność do identyfikowania aplikacje testowe. W przypadku projektu testowego platformy uniwersalnej systemu Windows, który został zainicjowany przed Visual Studio w wersji 15.7 może zostać wyświetlony ten błąd wystąpił w **dane wyjściowe** > **testy**:
 
-**System.AggregateException: Wystąpił co najmniej jeden błąd. ---> System. InvalidOperationException: Nie znaleziono {} następującego testcontainer w firmie Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync > d__61. MoveNext ()**
+**System. AggregateException: wystąpił co najmniej jeden błąd. ---> System. InvalidOperationException: nie znaleziono następującego TestContaineru {} w firmie Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync > d__61. MoveNext ()**
 
 Aby naprawić ten błąd:
 

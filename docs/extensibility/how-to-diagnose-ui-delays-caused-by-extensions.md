@@ -1,82 +1,82 @@
 ---
-title: Rozszerzenia interfejsu użytkownika diagnozowanie opóźnień w programie Visual Studio | Dokumentacja firmy Microsoft
+title: Diagnozowanie opóźnień interfejsu użytkownika w programie Visual Studio | Microsoft Docs
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912079"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849151"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Instrukcje: Diagnozowanie opóźnień w interfejsie użytkownika powodowanych przez rozszerzenia
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Instrukcje: diagnozowanie opóźnień interfejsu użytkownika spowodowanych przez rozszerzenia
 
-Gdy interfejs użytkownika przestanie odpowiadać, Visual Studio sprawdza, czy stos wywołań wątku interfejsu użytkownika, począwszy od typu liść i pracą z nimi na podstawie. Jeśli program Visual Studio okaże się, że ramka stosu wywołań należy do modułu, który jest częścią rozszerzenia zainstalowane i włączone, wyświetlane jest powiadomienie.
+Gdy interfejs użytkownika przestanie odpowiadać, program Visual Studio sprawdzi stos wywołań wątku interfejsu użytkownika, rozpoczynając od liścia i pracując nad bazą. Jeśli program Visual Studio określi, że ramka stosu wywołań należy do modułu, który jest częścią zainstalowanego i włączonego rozszerzenia, pokazuje powiadomienie.
 
-![Opóźnienie reakcji interfejsu użytkownika (sek) powiadomień](media/ui-delay-notification-in-vs.png)
+![Powiadomienie dotyczące opóźnień interfejsu użytkownika (nieodpowiadania)](media/ui-delay-notification-in-vs.png)
 
-Powiadomienia informuje użytkownika, że opóźnienie reakcji interfejsu użytkownika (oznacza to problem z brakiem odpowiedzi w interfejsie użytkownika) mogły być wynikiem kodu z rozszerzeniem. Zapewnia również użytkowników z opcjami, aby wyłączyć rozszerzenie lub kolejnych powiadomień dotyczących tego rozszerzenia.
+Powiadomienie informuje użytkownika o tym, że opóźnienie interfejsu użytkownika (czyli czas braku odpowiedzi w interfejsie użytkownika) mogło być wynikiem kodu z rozszerzenia. Udostępnia także użytkownikowi opcje umożliwiające wyłączenie rozszerzenia lub przyszłe powiadomienia dla tego rozszerzenia.
 
-W tym dokumencie opisano, jak diagnozować, co w kodzie rozszerzenia powoduje powiadomienia dotyczące opóźnienia interfejsu użytkownika.
+W tym dokumencie opisano, jak można zdiagnozować, co w kodzie rozszerzenia powoduje, że powiadomienia o opóźnieniu interfejsu użytkownika.
 
 > [!NOTE]
-> Nie należy używać wystąpienie eksperymentalne programu Visual Studio do diagnozowania występują opóźnienia interfejsu użytkownika. Niektóre części analiz stos wywołań, wymaganych w celu powiadomienia dotyczące opóźnienia interfejsu użytkownika są wyłączone, gdy jest używane wystąpienie eksperymentalne, co oznacza, że powiadomienia dotyczące opóźnienia interfejsu użytkownika mogą nie być wyświetlane.
+> Nie używaj eksperymentalnego wystąpienia programu Visual Studio, aby zdiagnozować opóźnienia interfejsu użytkownika. Niektóre części analizy stosu wywołań wymagane przez funkcję powiadomień opóźnienia interfejsu użytkownika są wyłączone podczas korzystania z wystąpienia eksperymentalnego, co oznacza, że powiadomienia o opóźnieniu interfejsu użytkownika mogą nie być wyświetlane.
 
-Omówienie procesu diagnostycznych jest następująca:
-1. Identyfikowanie scenariusza wyzwalacza.
-2. Za pomocą działania logowania, należy ponownie uruchomić program VS.
-3. Uruchom śledzenie zdarzeń systemu Windows.
-4. Wyzwalanie powiadomienie, aby ponownie wyświetlone.
-5. Zatrzymaj śledzenie.
-6. Sprawdź dziennik aktywności, aby uzyskać identyfikator opóźnienia.
-7. Analizuj śledzenie zdarzeń systemu Windows przy użyciu Identyfikatora opóźnienia w kroku 6.
+Przegląd procesu diagnostycznego jest następujący:
+1. Zidentyfikuj scenariusz wyzwalacza.
+2. Uruchom ponownie program VS z rejestrowaniem aktywności.
+3. Uruchom śledzenie ETW.
+4. Wyzwól powiadomienie, aby pojawiło się ponownie.
+5. Zatrzymaj śledzenie ETW.
+6. Przejrzyj dziennik aktywności, aby uzyskać identyfikator opóźnienia.
+7. Analizowanie śledzenia ETW przy użyciu identyfikatora opóźnienia z kroku 6.
 
-W poniższych sekcjach opiszemy kroki opisane w bardziej szczegółowo.
+W poniższych sekcjach opisano te kroki bardziej szczegółowo.
 
 ## <a name="identify-the-trigger-scenario"></a>Identyfikowanie scenariusza wyzwalacza
 
-Aby zdiagnozować opóźnienie reakcji interfejsu użytkownika, należy najpierw zidentyfikować jakie (sekwencję akcji) powoduje, że Visual Studio wyświetlić powiadomienie. Jest to w celu uzyskania, aby było możliwe jego wyzwalać powiadomienie później za pomocą funkcji rejestrowania włączona.
+Aby zdiagnozować opóźnienie interfejsu użytkownika, należy najpierw określić, co (sekwencja akcji) powoduje, że program Visual Studio wyświetli powiadomienie. Jest to możliwe, aby móc wyzwolić powiadomienie później z włączonym logowaniem.
 
-## <a name="restart-vs-with-activity-logging-on"></a>Uruchom ponownie program VS za pomocą działania logowania
+## <a name="restart-vs-with-activity-logging-on"></a>Uruchom ponownie program VS z rejestrowaniem aktywności
 
-Program Visual Studio można wygenerować "Dziennik aktywności" który informacje pomocne przy debugowaniu problemu. Aby włączyć funkcję rejestrowania w programie Visual Studio aktywności, Otwórz program Visual Studio za pomocą `/log` opcji wiersza polecenia. Po uruchomieniu programu Visual Studio, w dzienniku aktywności są przechowywane w następującej lokalizacji:
+Program Visual Studio może generować "Dziennik aktywności", który zapewnia informacje pomocne podczas debugowania problemu. Aby włączyć rejestrowanie aktywności w programie Visual Studio, Otwórz program Visual Studio z opcją wiersza polecenia `/log`. Po uruchomieniu programu Visual Studio Dziennik aktywności jest przechowywany w następującej lokalizacji:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
 ```
 
-Aby dowiedzieć się więcej na temat sposobu można znaleźć usługi VS identyfikator wystąpienia, zobacz [narzędzia do wykrywania i Zarządzanie wystąpieniami programu Visual Studio](../install/tools-for-managing-visual-studio-instances.md). Firma Microsoft użyje tego dziennika aktywności później Aby dowiedzieć się więcej informacji na temat występują opóźnienia interfejsu użytkownika i związanych z nią powiadomień.
+Aby dowiedzieć się więcej o tym, jak można znaleźć identyfikator wystąpienia programu VS, zobacz [Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi](../install/tools-for-managing-visual-studio-instances.md). Ten dziennik aktywności zostanie użyty później, aby uzyskać więcej informacji na temat opóźnień interfejsu użytkownika i powiązanych powiadomień.
 
-## <a name="starting-etw-tracing"></a>Począwszy od śledzenia zdarzeń systemu Windows
+## <a name="starting-etw-tracing"></a>Uruchamianie śledzenia ETW
 
-Możesz użyć [narzędzia PerfView](https://github.com/Microsoft/perfview/) zbierać ETW śledzenia. Narzędzia PerfView zapewnia łatwy w użyciu interfejs zarówno zbieranie, śledzenie zdarzeń systemu Windows oraz je analizować. Aby zbierać dane śledzenia, należy użyć następującego polecenia:
+Za pomocą [Narzędzia PerfView](https://github.com/Microsoft/perfview/) można zbierać dane śledzenia ETW. Narzędzia PerfView zapewnia łatwy w użyciu interfejs do zbierania śledzenia ETW i analizowania go. Użyj następującego polecenia, aby zebrać ślad:
 
 ```DOS
 Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:true -Providers:*Microsoft-VisualStudio:@StacksEnabled=true -NoV2Rundown /kernelEvents=default+FileIOInit+ContextSwitch+Dispatcher
 ```
 
-Dzięki temu dostawcy "Microsoft VisualStudio", który jest dostawcą, używanych przez program Visual Studio dla zdarzeń związanych z powiadomienia dotyczące opóźnienia interfejsu użytkownika. Określa również słowo kluczowe dostawcy jądra, który można użyć narzędzia PerfView, aby wygenerować **wątku stosów czasu** widoku.
+Umożliwia to dostawcy "Microsoft-VisualStudio", który jest dostawcą używanym przez program Visual Studio do zdarzeń związanych z powiadomieniami o opóźnieniu interfejsu użytkownika. Określa także słowo kluczowe dla dostawcy jądra, którego narzędzia PerfView może użyć do wygenerowania widoku **stosów czasu wątku** .
 
-## <a name="trigger-the-notification-to-appear-again"></a>Powiadomienie, aby ponownie wyzwalacz
+## <a name="trigger-the-notification-to-appear-again"></a>Wyzwól powiadomienie, aby pojawiło się ponownie
 
-Po rozpoczęciu zbierania śladu narzędzia PerfView umożliwia sekwencję akcji wyzwalacza (z kroku 1), powiadomienia pojawiają się ponownie. Gdy zostanie wyświetlone powiadomienie, można zatrzymać śledzenia kolekcji dla narzędzia PerfView do przetwarzania i wygenerowanie pliku danych wyjściowych śledzenia.
+Po rozpoczęciu zbierania śladów przez narzędzia PerfView można użyć sekwencji akcji wyzwalacza (z kroku 1), aby powiadomienie pojawiało się ponownie. Po wyświetleniu powiadomienia można zatrzymać zbieranie danych śledzenia dla narzędzia PerfView, aby przetwarzać i generować wyjściowy plik śledzenia.
 
-## <a name="stop-etw-tracing"></a>Zatrzymaj śledzenie
+## <a name="stop-etw-tracing"></a>Zatrzymaj śledzenie ETW
 
-Aby zatrzymać zbieranie śledzenia, po prostu użyć **Zatrzymaj Kolekcjonowanie** przycisk w oknie narzędzia PerfView. Po zatrzymaniu zbierania śladu narzędzia PerfView będzie automatycznie przetwarzać zdarzenia ETW i generuje dane wyjściowe pliku śledzenia.
+Aby zatrzymać zbieranie śladów, po prostu Użyj przycisku **Zatrzymaj zbieranie** w oknie narzędzia PerfView. Po zatrzymaniu zbierania danych śledzenia program narzędzia PerfView automatycznie przetworzy zdarzenia ETW i wygeneruje wyjściowy plik śledzenia.
 
-## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Sprawdź dziennik aktywności, aby uzyskać identyfikator opóźnienia
+## <a name="examine-the-activity-log-to-get-the-delay-id"></a>Badanie dziennika aktywności w celu uzyskania identyfikatora opóźnienia
 
-Jak wspomniano wcześniej, można znaleźć dziennika aktywności w *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id > \ActivityLog.XML*. Za każdym razem, gdy program Visual Studio wykryje rozszerzenie opóźnienie reakcji interfejsu użytkownika, zapisuje węzła do dziennika aktywności przy użyciu `UIDelayNotifications` jako źródło. Ten węzeł zawiera cztery fragmentów informacji dotyczących opóźnienie reakcji interfejsu użytkownika:
+Jak wspomniano wcześniej, można znaleźć dziennik aktywności w *%APPDATA%\Microsoft\VisualStudio\<vs_instance_id > \ActivityLog.XML*. Za każdym razem, gdy program Visual Studio wykrywa opóźnienie interfejsu użytkownika rozszerzenia, zapisuje węzeł do dziennika aktywności z `UIDelayNotifications` jako źródło. Ten węzeł zawiera cztery informacje o opóźnieniu interfejsu użytkownika:
 
-- Identyfikator opóźnienia interfejsu użytkownika, a kolejny numer, który unikatowo identyfikuje opóźnienie reakcji interfejsu użytkownika w sesji programu VS
-- Identyfikator sesji, który unikatowo identyfikuje sesję programu Visual Studio od początku, aby zamknąć
-- Określa, czy powiadomienia wyświetleniem opóźnienia interfejsu użytkownika
-- Rozszerzenie, które prawdopodobnie spowodowało opóźnienie reakcji interfejsu użytkownika
+- Identyfikator opóźnienia interfejsu użytkownika, numer sekwencyjny, który jednoznacznie identyfikuje opóźnienie interfejsu użytkownika w sesji programu VS
+- Identyfikator sesji, który jednoznacznie identyfikuje sesję programu Visual Studio od początku do zamknięcia
+- Niezależnie od tego, czy pokazywane jest powiadomienie dotyczące opóźnień interfejsu użytkownika
+- Rozszerzenie, które prawdopodobnie spowodowało opóźnienie interfejsu użytkownika
 
 ```xml
 <entry>
@@ -89,71 +89,71 @@ Jak wspomniano wcześniej, można znaleźć dziennika aktywności w *%APPDATA%\M
 ```
 
 > [!NOTE]
-> Nie wszystkie występują opóźnienia interfejsu użytkownika powoduje powiadomienie. W związku z tym, należy zawsze sprawdzić **powiadomień wyświetlane?** wartość, aby prawidłowo identyfikować odpowiednie opóźnienie reakcji interfejsu użytkownika.
+> Nie wszystkie opóźnienia interfejsu użytkownika powodują powiadomienie. W związku z tym należy zawsze sprawdzać **pokazane powiadomienia?** wartość, aby prawidłowo identyfikować odpowiednie opóźnienie interfejsu użytkownika.
 
-Po znalezieniu poprawne opóźnienie reakcji interfejsu użytkownika w dzienniku aktywności Zanotuj identyfikator opóźnienia interfejsu użytkownika, określona w węźle. Identyfikator użyjemy do wyszukania odpowiadające zdarzenie ETW w następnym kroku.
+Po znalezieniu prawidłowego opóźnienia interfejsu użytkownika w dzienniku aktywności Zapisz identyfikator opóźnienia interfejsu użytkownika określony w węźle. Użyj identyfikatora, aby wyszukać odpowiednie zdarzenie ETW w następnym kroku.
 
-## <a name="analyze-the-etw-trace"></a>Analizowanie śledzenie zdarzeń systemu Windows
+## <a name="analyze-the-etw-trace"></a>Analizowanie śledzenia ETW
 
-Następnie otwórz plik śledzenia. Można to zrobić przy użyciu tego samego wystąpienia narzędzia PerfView lub uruchamia nowe wystąpienie i ustawiając bieżącą ścieżkę folderu w górnym lewym rogu okna do lokalizacji pliku śledzenia.
+Następnie otwórz plik śledzenia. Można to zrobić przy użyciu tego samego wystąpienia narzędzia PerfView lub przez uruchomienie nowego wystąpienia i ustawienie bieżącej ścieżki folderu w lewym górnym rogu okna do lokalizacji pliku śledzenia.
 
-![Ustawienie w ścieżce folderu w Perfview](media/perfview-set-path.png)
+![Ustawianie ścieżki folderu w narzędzia PerfView](media/perfview-set-path.png)
 
-Następnie wybierz plik śledzenia w okienku po lewej stronie i otwórz go, wybierając **Otwórz** w menu kliknij prawym przyciskiem myszy lub kontekstu.
-
-> [!NOTE]
-> Domyślnie narzędzia PerfView generuje archiwum Zip. Po otwarciu *trace.zip*, automatycznie dekompresuje archiwum i otwiera śledzenia. Możesz to pominąć, usuwając zaznaczenie pola **Zip** pola podczas zbierania śladu. Jednak jeśli planowane jest transferu i używanie śledzenia na różnych komputerach, zdecydowanie zalecamy względem usuwając zaznaczenie pola wyboru **Zip** pole. Bez tej opcji wymagane pliki PDB dla zestawów Ngen nie będzie towarzyszyć śledzenia i dlatego symbole z Ngen zestawów, nie będą rozpoznawane na komputerze docelowym. (Zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) Aby uzyskać więcej informacji na temat plików PDB dla zestawów Ngen.)
-
-Może potrwać kilka minut, zanim programu PerfView do przetwarzania i Otwórz śledzenie. Po otwarciu śledzenia listę różnych "widoków" pojawiają się w nim.
-
-![Widok podsumowania ślad narzędzia PerfView](media/perfview-summary-view-events-selected.png)
-
-Firma Microsoft w pierwszej kolejności używają **zdarzenia** widok, aby uzyskać przedział czasu opóźnienie reakcji interfejsu użytkownika:
-
-1. Otwórz **zdarzenia** widoku, wybierając `Events` węźle śledzenia i wybierając pozycję **Otwórz** w menu kliknij prawym przyciskiem myszy lub kontekstu.
-2. Wybierz pozycję "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`" w okienku po lewej stronie.
-3. Naciśnij klawisz Enter
-
-Zaznaczenie jest stosowana i wszystkich `ExtensionUIUnresponsiveness` zdarzenia są wyświetlane w okienku po prawej stronie.
-
-![Wybierając zdarzenia w widoku zdarzeń](media/perfview-event-selection.png)
-
-Każdy wiersz w okienku po prawej stronie odnosi się do opóźnienia interfejsu użytkownika. Zdarzenie zawiera wartość "Opóźnienie ID elementu", który powinien być zgodny z Identyfikatorem opóźnienia w dzienniku aktywności w kroku 6. Ponieważ `ExtensionUIUnresponsiveness` jest wywoływane na końcu opóźnienie reakcji interfejsu użytkownika, sygnatura czasowa zdarzenia (w przybliżeniu) znaki czas zakończenia opóźnienie reakcji interfejsu użytkownika. Zdarzenie zawiera także czas trwania zwłoki. Firma Microsoft jest przypisany typ czasu trwania z końcowa sygnatura czasowa w celu uzyskania sygnatury czasowej podczas uruchamiania opóźnienie reakcji interfejsu użytkownika.
-
-![Obliczanie opóźnienia interfejsu użytkownika w zakres czasu](media/ui-delay-time-range.png)
-
-Na poprzednim zrzucie ekranu na przykład sygnatura czasowa zdarzenia jest 12,125.679 i czas trwania opóźnienia jest 6,143.085 (ms). Tak więc,
-* Opóźnienie rozpoczęcia jest 12,125.679 6,143.085 = 5,982.594.
-* Zakres czasu opóźnienia interfejsu użytkownika jest 5,982.594 do 12,125.679.
-
-Gdy będziemy już mieć zakres czasu, możemy zamknąć poza **zdarzenia** Wyświetl i Otwórz **stosy wątków czasu (z działaniami StartStop)** widoku. Ten widok jest szczególnie przydatne, ponieważ często tych rozszerzeń, które blokują wątek interfejsu użytkownika nie tylko oczekuje na innych wątków lub operacji I/O-powiązane z. W efekcie **stosu Procesora** widoku, który jest idealną opcję w większości przypadków, nie mogą przechwytywać czasu wątku korzystało z blokowaniem, ponieważ w tym czasie nie używa procesora CPU. **Wątku stosów czasu** rozwiązuje ten problem, prawidłowo czas wyświetlania zablokowanych.
-
-![Węzeł stosów czasu (z działaniami StartStop) wątku w widoku podsumowania narzędzia PerfView](media/perfview-thread-time-with-startstop-activities-stacks.png)
-
-Podczas otwierania **wątku stosów czasu** wyświetlić, wybierz **devenv** procesu można rozpocząć analizy.
-
-![Widok stosów czasu dla analiza opóźnienia interfejsu użytkownika wątku](media/ui-delay-thread-time-stacks.png)
-
-W **wątku stosów czasu** wyświetlić, w górnym lewym rogu strony, można ustawić przedział czasu do wartości, firma Microsoft obliczona w poprzednim kroku, a następnie naciśnij klawisz **Enter** tak stosy są dostosowywane do tego zakresu czasu.
+Następnie wybierz plik śledzenia w okienku po lewej stronie i otwórz go, wybierając pozycję **Otwórz** w menu kontekstowym lub prawym przyciskiem myszy.
 
 > [!NOTE]
-> Określanie, który wątek będzie interfejs użytkownika wątku (startowych) może być nielogiczna, jeśli zbierania śladu jest uruchomione, gdy program Visual Studio jest już otwarty. Jednak pierwszych elementów na stosie wątku interfejsu użytkownika (startowych) są najbardziej prawdopodobną zawsze bibliotek DLL systemu operacyjnego (*ntdll.dll* i *kernel32.dll*) następuje `devenv!?` i następnie `msenv!?` . Ta sekwencja może być pomocny w zidentyfikowaniu wątku interfejsu użytkownika.
+> Domyślnie narzędzia PerfView wyprowadza archiwum zip. Po otwarciu pliku *Trace. zip*automatycznie dekompresuje archiwum i otwiera śledzenie. Możesz to pominąć, usuwając zaznaczenie pola **zip** podczas zbierania śladu. Jeśli jednak planujesz transfer i używanie śladów na różnych komputerach, zdecydowanie zalecamy, aby nie sprawdzać pola **zip** . Bez tej opcji wymagane plików PDB dla zestawów NGen nie towarzyszy śledzeniu i w rezultacie symbole z zestawów NGen nie zostaną rozwiązane na maszynie docelowej. (Zobacz [ten wpis w blogu](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) , aby uzyskać więcej informacji na temat plików PDB dla zestawów NGen).
 
- ![Identyfikowanie uruchamiania wątku](media/ui-delay-startup-thread.png)
+Przetworzenie i otwieranie śledzenia przez narzędzia PerfView może potrwać kilka minut. Po otwarciu śledzenia zostanie wyświetlona lista różnych "widoków".
 
-W tym widoku można również filtrować według tylko tym stosów, które zawierają moduły z pakietu.
+![Widok podsumowania śledzenia narzędzia PerfView](media/perfview-summary-view-events-selected.png)
 
-* Ustaw **GroupPats** na pusty tekst, aby usunąć wszelkie grupowanie dodawany domyślnie.
-* Ustaw **IncPats** obejmujący część Twoja nazwa zestawu, oprócz istniejącego filtru procesu. W tym przypadku powinien być **devenv; UIDelayR2**.
+Najpierw będziemy używać widoku **zdarzeń** , aby uzyskać zakres czasu opóźnienia interfejsu użytkownika:
 
-![Ustawianie GroupPath i IncPath w widoku wątków stosów czasu](media/perfview-tts-group-path-inc-path.png)
+1. Otwórz widok **zdarzenia** , wybierając węzeł `Events` w obszarze śledzenia i wybierz polecenie **Otwórz** w menu kontekstowym lub prawym przyciskiem myszy.
+2. W lewym okienku wybierz pozycję "`Microsoft-VisualStudio/ExtensionUIUnresponsiveness`".
+3. Naciśnij klawisz ENTER
 
-Narzędzia PerfView zawiera szczegółowe wskazówki, w obszarze **pomocy** menu, który służy do identyfikowania wąskich gardeł wydajności w kodzie. Ponadto poniższe linki zawierają dodatkowe informacje na temat Korzystanie z programu Visual Studio wątkowości interfejsy API w celu optymalizacji kodu:
+Wybór zostanie zastosowany, a wszystkie zdarzenia `ExtensionUIUnresponsiveness` są wyświetlane w okienku po prawej stronie.
 
-* [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
-* [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+![Wybieranie zdarzeń w widoku zdarzeń](media/perfview-event-selection.png)
 
-Umożliwia także nowe analizatory statyczne programu Visual Studio dla rozszerzeń (pakiet NuGet [tutaj](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), który wytyczne dotyczące najlepszych rozwiązań do tworzenia rozszerzenia wydajne. Wyświetlenie listy [analizatory zestawu SDK](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) i [wątkowości analizatory](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
+Każdy wiersz w prawym okienku odnosi się do opóźnienia interfejsu użytkownika. Zdarzenie zawiera wartość "Delay ID", która powinna być zgodna z IDENTYFIKATORem opóźnienia w dzienniku aktywności z kroku 6. Ponieważ `ExtensionUIUnresponsiveness` jest uruchamiany na końcu opóźnienia interfejsu użytkownika, sygnatura czasowa zdarzenia (w przybliżeniu) oznacza godzinę zakończenia opóźnienia interfejsu użytkownika. Zdarzenie zawiera również czas trwania opóźnienia. Aby uzyskać sygnaturę czasową uruchomienia opóźnienia interfejsu użytkownika, można odjąć czas trwania od sygnatury czasowej końca.
+
+![Obliczanie czasu opóźnienia interfejsu użytkownika](media/ui-delay-time-range.png)
+
+Na przykład na poprzednim zrzucie ekranu sygnatura czasowa zdarzenia to 12 125,679, a czas opóźnienia wynosi 6 143,085 (MS). Tak więc,
+* Opóźnienie zaczyna się od 12 125,679-6 143,085 = 5 982,594.
+* Zakres czasu opóźnienia interfejsu użytkownika to 5 982,594 do 12 125,679.
+
+Po określeniu zakresu czasu można zamknąć widok **zdarzenia** i otworzyć widok **stosy czasu wątku (z działaniami StartStop)** . Ten widok jest szczególnie przydatny, ponieważ często rozszerzenia blokujące wątek interfejsu użytkownika są tylko oczekujące na inne wątki lub operacje we/wy. W związku z tym widok **stosu procesora CPU** , który jest opcjami do wykonania w większości przypadków, może nie przechwycić czasu, przez który wątek zablokuje, ponieważ nie używa procesora CPU w tym czasie. **Stosy czasu wątku** rozwiązują ten problem, prawidłowo pokazując zablokowany czas.
+
+![Węzeł Stacks (z działaniami StartStop) w widoku podsumowania narzędzia PerfView](media/perfview-thread-time-with-startstop-activities-stacks.png)
+
+Podczas otwierania widoku **stosów czasu wątku** wybierz proces **devenv** , aby rozpocząć analizę.
+
+![Widok stosów czasu wątku dla analizy opóźnień interfejsu użytkownika](media/ui-delay-thread-time-stacks.png)
+
+W widoku **stosy czasu wątku** w lewym górnym rogu strony możesz ustawić zakres czasu na wartości, które są obliczane w poprzednim kroku, a następnie naciśnij klawisz **Enter** , aby stosy zostały dostosowane do tego zakresu czasu.
 
 > [!NOTE]
-> Jeśli nie możesz rozwiązać problem z brakiem odpowiedzi z powodu zależności nie masz kontrolę nad (na przykład, jeśli ma rozszerzenie do wywołania synchroniczne usług VS w wątku interfejsu użytkownika), chcemy o tym wiedzieć. Jeśli jesteś członkiem programu naszych partnerów programu Visual Studio, użytkownik może się z nami, przesyłając żądanie pomocy technicznej developer. W przeciwnym razie użyj narzędzia "Zgłoś Problem" Prześlij opinię i dołączenie `"Extension UI Delay Notifications"` w tytule. Uwzględnij również szczegółowy opis analizy.
+> Określanie wątku jest wątkiem interfejsu użytkownika (uruchamiania) można nielogiczna, jeśli zbieranie śladów zostało rozpoczęte po otwarciu programu Visual Studio. Jednak pierwsze elementy na stosie wątku interfejsu użytkownika (Startup) najprawdopodobniej zawsze są bibliotekami DLL systemu operacyjnego (*ntdll. dll* i *Kernel32. dll*), po których następuje `devenv!?`, a następnie `msenv!?`. Ta sekwencja może pomóc w identyfikacji wątku interfejsu użytkownika.
+
+ ![Identyfikowanie wątku startowego](media/ui-delay-startup-thread.png)
+
+Możesz również dodatkowo filtrować ten widok, dołączając tylko stosy zawierające moduły z pakietu.
+
+* Ustaw **GroupPats** na pusty tekst, aby usunąć wszystkie grupowanie dodane domyślnie.
+* Ustaw **IncPats** , aby uwzględnić część nazwy zestawu oprócz istniejącego filtru procesów. W takim przypadku powinna być **devenv; UIDelayR2**.
+
+![Ustawianie GroupPath i IncPath w widoku stosów czasu wątku](media/perfview-tts-group-path-inc-path.png)
+
+Narzędzia PerfView zawiera szczegółowe wskazówki w menu **Pomoc** , których można użyć do identyfikowania wąskich gardeł wydajności w kodzie. Ponadto poniższe linki zawierają więcej informacji na temat sposobu korzystania z interfejsów API tworzenia wątków programu Visual Studio w celu optymalizacji kodu:
+
+* [https://github.com/Microsoft/vs-threading/blob/master/doc/index.md](https://github.com/Microsoft/vs-threading/blob/master/doc/index.md)
+* [https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md)
+
+Możesz również użyć nowych analizatorów statycznych programu Visual Studio dla rozszerzeń (pakiet NuGet [tutaj](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), które zapewniają wskazówki dotyczące najlepszych rozwiązań dotyczących pisania wydajnych rozszerzeń. Zobacz listę [analizatorów zestawu SDK vs](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) i [analizatorów wątków](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
+
+> [!NOTE]
+> Jeśli nie możesz rozwiązać odpowiedzi z powodu zależności, na które nie masz kontroli (na przykład jeśli Twoje rozszerzenie ma wywoływać synchroniczne usługi VS w wątku interfejsu użytkownika), chcielibyśmy wiedzieć o tym. Jeśli jesteś członkiem naszego programu partnerskiego Visual Studio, możesz skontaktować się z nami, przesyłając żądanie pomocy technicznej dla deweloperów. W przeciwnym razie użyj narzędzia Zgłoś problem w celu przesłania opinii i uwzględnienia `"Extension UI Delay Notifications"` w tytule. Zapoznaj się również z szczegółowym opisem analizy.

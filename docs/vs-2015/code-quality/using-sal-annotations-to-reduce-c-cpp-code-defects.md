@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291889"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848312"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ SAL to język adnotacji kodu źródłowego firmy Microsoft. Przy użyciu adnotac
      Zawiera przykłady, które pokazują, jak używać adnotacji SAL. Wyjaśniono również typowe pułapek.  
   
 ## <a name="related-resources"></a>Powiązane zasoby  
- [Blog zespołu ds. analizy kodu](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog zespołu ds. analizy kodu](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Adnotacje SAL 2,0 dla sterowników systemu Windows](https://go.microsoft.com/fwlink/?LinkId=250979)
+ [Adnotacje SAL 2,0 dla sterowników systemu Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx)

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299615"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844274"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Przewodnik: Tworzenie usługi danych programu WCF przy użyciu WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](..
 
 - Przykładowa bazy danych Northwind.
 
-     Jeśli nie masz tej bazy danych na komputerze deweloperskim, możesz ją pobrać z [Centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Aby uzyskać instrukcje, zobacz [Pobieranie przykładowych baz danych](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Jeśli nie masz tej bazy danych na komputerze deweloperskim, możesz ją pobrać z [Centrum pobierania Microsoft](https://www.microsoft.com/downloads). Aby uzyskać instrukcje, zobacz [Pobieranie przykładowych baz danych](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Tworzenie usługi
  Aby utworzyć [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], należy dodać projekt sieci Web, utworzyć [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], a następnie utworzyć usługę z modelu.
@@ -82,7 +82,7 @@ W tym instruktażu pokazano, jak utworzyć prostą [!INCLUDE[ss_data_service](..
 
    - Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.
 
-        —lub—
+        lub
 
    - Wybierz przycisk **nowe połączenie** , aby skonfigurować nowe połączenie danych. Aby uzyskać więcej informacji, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 

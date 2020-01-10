@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300728"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845519"
 ---
 # <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,4 +128,4 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  Okno [dialogowe wymagania wstępne](../ide/reference/prerequisites-dialog-box.md)   
  [Odwołanie do schematu produktu i pakietu](../deployment/product-and-package-schema-reference.md)   
- [Aby rozpocząć instalację, użyj programu inicjującego Visual Studio 2005](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [Aby rozpocząć instalację, użyj programu inicjującego Visual Studio 2005](https://msdn.microsoft.com/magazine/cc163899.aspx)

@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73bacf2c5d1650da91093c92c67e6b67bbbc73a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0dee8364ac16becc538fa6fc8c6f90d955c078
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633502"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848138"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Tworzenie podstawowego systemu projektu, część 1
 W programie Visual Studio projekty są kontenerami używanymi przez deweloperów do organizowania plików kodu źródłowego i innych zasobów. Projekty są wyświetlane jako elementy podrzędne rozwiązań w **Eksplorator rozwiązań**. Projekty pozwalają organizować, kompilować, debugować i wdrażać kod źródłowy oraz tworzyć odwołania do usług sieci Web, baz danych i innych zasobów.
@@ -35,7 +35,7 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
  W tym instruktażu pokazano, jak utworzyć typ projektu, który ma rozszerzenie nazwy pliku projektu *. proj*. Ten Instruktaż zażyczy sobie z istniejącego C# systemu Visual Project.
 
 > [!NOTE]
-> Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [VSSDK Samples](https://aka.ms/vs2015sdksamples).
+> Aby uzyskać więcej przykładów projektów rozszerzeń, zobacz [VSSDK Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
  W tym instruktażu przedstawiono sposób wykonywania następujących zadań:
 
@@ -56,12 +56,12 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
 - Zaimplementuj Podstawienie parametru podstawowego szablonu.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
  Należy również pobrać kod źródłowy dla [struktury zarządzanego pakietu dla projektów](https://github.com/tunnelvisionlabs/MPFProj10). Wyodrębnij plik do lokalizacji dostępnej dla rozwiązania, które chcesz utworzyć.
 
 ## <a name="create-a-basic-project-type"></a>Tworzenie podstawowego typu projektu
- Utwórz projekt C# VSIX o nazwie **SimpleProject**. (**Plik**  > **Nowy**  > **projekt** , a **następnie C# Visual**  > **rozszerzalność**  > **Project VSIX**). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  > **nowy element**, a następnie przejdź do opcji **rozszerzalność**  > **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
+ Utwórz projekt C# VSIX o nazwie **SimpleProject**. (**Plik** > **Nowy** > **projekt** , a **następnie C# Visual** > **rozszerzalność** > **Project VSIX**). Dodaj szablon elementu projektu pakietu programu Visual Studio (na **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **nowy element**, a następnie przejdź do opcji **rozszerzalność** > **pakiet Visual Studio**). Nazwij plik *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Tworzenie podstawowego szablonu projektu
  Teraz możesz zmodyfikować ten podstawowy pakietu VSPackage, aby zaimplementować nowy typ projektu *. proj* . Aby utworzyć projekt oparty na typie projektu *. proj* , program Visual Studio musi wiedzieć, które pliki, zasoby i odwołania, które mają zostać dodane do nowego projektu. Aby podać te informacje, Umieść pliki projektu w folderze szablonu projektu. Gdy użytkownik używa projektu *. proj* do tworzenia projektu, pliki są kopiowane do nowego projektu.
@@ -154,7 +154,7 @@ W programie Visual Studio projekty są kontenerami używanymi przez deweloperów
 
 11. Zapisz plik.
 
-12. W oknie **Właściwości** Ustaw **akcję kompilacja** z *AssemblyInfo.cs*, *program.cs*, *SimpleProject. ico*i *SimpleProject. webproj* na **zawartość**, a następnie ustaw właściwość **include na** właściwościach VSIX. na **wartość true**.
+12. W oknie **Właściwości** Ustaw **akcję kompilacja** z *AssemblyInfo.cs*, *program.cs*, *SimpleProject. ico*i *SimpleProject. webproj* na **zawartość**, a następnie ustaw dla nich opcję **include** na **wartość true**.
 
     Ten szablon projektu opisuje podstawowy projekt wizualny C# , który ma zarówno konfigurację debugowania, jak i konfigurację wydania. Projekt zawiera dwa pliki źródłowe, *AssemblyInfo.cs* i *program.cs*oraz kilka odwołań do zestawów. Po utworzeniu projektu na podstawie szablonu wartość ProjectGuid jest automatycznie zastępowana przez nowy identyfikator GUID.
 
@@ -244,7 +244,7 @@ Templates
 
     1. Zwolnij projekt SimpleProject (w **Eksplorator rozwiązań**wybierz węzeł projektu, a następnie w menu kontekstowym kliknij polecenie **Zwolnij projekt**.) i Otwórz plik projektu w edytorze XML.
 
-    2. Dodaj następujące bloki do pliku projektu (tuż powyżej bloków > \<Import). Ustaw `ProjectBasePath` na lokalizację pliku *ProjectBase. Files* w pobranym kodzie struktury pakietu zarządzanego. Może być konieczne dodanie ukośnika odwrotnego do nazwy ścieżki. W przeciwnym razie projekt może nie znaleźć kodu źródłowego struktury pakietu zarządzanego.
+    2. Dodaj następujące bloki do pliku projektu (tuż powyżej \<Importuj bloki >). Ustaw `ProjectBasePath` na lokalizację pliku *ProjectBase. Files* w pobranym kodzie struktury pakietu zarządzanego. Może być konieczne dodanie ukośnika odwrotnego do nazwy ścieżki. W przeciwnym razie projekt może nie znaleźć kodu źródłowego struktury pakietu zarządzanego.
 
         ```
         <PropertyGroup>
@@ -441,11 +441,11 @@ Templates
 
 ### <a name="to-test-the-projectnode-class"></a>Aby przetestować klasę ProjectNode
 
-1. Naciśnij klawisz **F5** , aby rozpocząć debugowanie. W eksperymentalnym wystąpieniu Utwórz nowy SimpleProject.
+1. Naciśnij klawisz **F5** można rozpocząć debugowania. W eksperymentalnym wystąpieniu Utwórz nowy SimpleProject.
 
 2. Program Visual Studio powinien wywołać fabrykę projektu, aby utworzyć projekt.
 
-3. Zamknij wystąpienie eksperymentalne programu Visual Studio.
+3. Zamknij wystąpienie doświadczalne programu Visual Studio.
 
 ## <a name="add-a-custom-project-node-icon"></a>Dodaj niestandardową ikonę węzła projektu
  Ikona węzła projektu w poprzedniej sekcji jest domyślną ikoną. Można ją zmienić na ikonę niestandardową.
@@ -506,19 +506,19 @@ Templates
 
    Podczas konstruowania statycznego `SimpleProjectNode` pobiera mapę bitową węzła projektu z zasobów manifestu zestawu i buforuje ją w prywatnym polu do późniejszego użycia. Zwróć uwagę na składnię ścieżki obrazu <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>. Aby wyświetlić nazwy zasobów manifestu osadzone w zestawie, użyj metody <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>. Gdy ta metoda jest stosowana do zestawu `SimpleProject`, wyniki powinny być następujące:
 
-- *SimpleProject. resources. resources*
+- *SimpleProject.Resources.resources*
 
-- *VisualStudio. Project. resources*
+- *VisualStudio.Project.resources*
 
-- *SimpleProject. pakietu VSPackage. resources*
+- *SimpleProject.VSPackage.resources*
 
 - *Resources. imagelis. bmp*
 
-- *Microsoft. VisualStudio. Project. DontShowAgainDialog. resources*
+- *Microsoft.VisualStudio.Project.DontShowAgainDialog.resources*
 
-- *Microsoft. VisualStudio. Project. SecurityWarningDialog. resources*
+- *Microsoft.VisualStudio.Project.SecurityWarningDialog.resources*
 
-- *SimpleProject. resources. SimpleProjectNode. bmp*
+- *SimpleProject.Resources.SimpleProjectNode.bmp*
 
   Podczas konstruowania wystąpienia Klasa bazowa `ProjectNode` ładuje *zasoby. imagelis. bmp*, w których są osadzone powszechnie używane 16 x 16 map bitowych z *Resources\imagelis.bmp*. Ta lista mapy bitowej jest udostępniona do `SimpleProjectNode` jako `ImageHandler.ImageList`. `SimpleProjectNode` dołącza mapę bitową węzła projektu do listy. Przesunięcie mapy bitowej węzła projektu na liście obrazów jest buforowane do późniejszego użycia jako wartość właściwości publicznej `ImageIndex`. Program Visual Studio używa tej właściwości, aby określić, która mapa bitowa ma być wyświetlana jako ikona węzła projektu.
 
@@ -533,7 +533,7 @@ Templates
 
      ![Prosty węzeł projektu nowego projektu](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
-3. Otwórz *program.cs* w edytorze kodu. Powinien zostać wyświetlony kod źródłowy podobny do następującego kodu.
+3. Otwórz plik *Program.cs* w edytorze kodu. Powinien zostać wyświetlony kod źródłowy podobny do następującego kodu.
 
     ```csharp
     using System;
@@ -609,7 +609,7 @@ Templates
 
     Program Visual Studio powinien zakończyć tworzenie projektu.
 
-5. Otwórz *program.cs* w edytorze kodu. Powinien zostać wyświetlony kod źródłowy podobny do następującego kodu.
+5. Otwórz plik *Program.cs* w edytorze kodu. Powinien zostać wyświetlony kod źródłowy podobny do następującego kodu.
 
    ```csharp
    using System;
@@ -636,4 +636,4 @@ Templates
 
     ![Proste polecenie projektu](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   Nabycia! Wdrożono podstawowy zarządzany system projektów.
+   Gratulacje! Wdrożono podstawowy zarządzany system projektów.

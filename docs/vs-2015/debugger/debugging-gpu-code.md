@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28ea84e4de92ae2cd3bad8b6fea4f9036fd65014
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5092a2d2a823db6b101ee73d9d5c5dddef5c4526
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298283"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843984"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
 - W **Eksplorator rozwiązań**, w menu skrótów dla projektu, wybierz **Właściwości**. W oknie dialogowym **strony właściwości** wybierz pozycję **debugowanie**, a następnie na liście **Typ debugera** wybierz pozycję **GPU** .  
   
 ## <a name="launching-and-attaching-to-applications"></a>Uruchamianie i dołączanie do aplikacji  
- Możesz użyć poleceń debugowania programu Visual Studio, aby uruchomić i zatrzymać debugowanie procesora GPU. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md). Debuger GPU można także dołączyć do uruchomionego procesu, ale tylko wtedy, gdy ten proces wykonuje kod procesora GPU. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Możesz użyć poleceń debugowania programu Visual Studio, aby uruchomić i zatrzymać debugowanie procesora GPU. Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md). Debuger GPU można także dołączyć do uruchomionego procesu, ale tylko wtedy, gdy ten proces wykonuje kod procesora GPU. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Uruchom bieżący kafelek do kursora i uruchom do kursora  
  Podczas debugowania na procesorze GPU dostępne są dwie opcje uruchamiania do lokalizacji kursora. Polecenia dla obu opcji są dostępne w menu skrótów edytora kodu.  
@@ -74,15 +74,15 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
  Warunkowe punkty przerwania w kodzie GPU są obsługiwane, ale nie każde wyrażenie może być oceniane na urządzeniu. Gdy nie można obliczyć wyrażenia na urządzeniu, jest ono oceniane w debugerze. Debuger może działać wolniej niż urządzenie.  
   
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Błąd: Wystąpił problem z konfiguracją z wybranym typem akceleratora debugowania.  
- Ten błąd występuje w przypadku niespójności między ustawieniami projektu i konfiguracją komputera, na którym odbywa się debugowanie. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Ten błąd występuje w przypadku niespójności między ustawieniami projektu i konfiguracją komputera, na którym odbywa się debugowanie. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Błąd: Sterownik debugowania dla wybranego typu akceleratora debugowania nie jest zainstalowany na maszynie docelowej.  
  Ten błąd występuje w przypadku debugowania na komputerze zdalnym. Debuger nie może ustalić czasu uruchomienia sterowników na komputerze zdalnym. Sterowniki są dostępne od producenta karty graficznej.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Błąd: wykrywanie limitu czasu i odzyskiwanie (TDR) musi być wyłączone w lokacji zdalnej.  
- Istnieje możliwość, że C++ obliczenia amp przekroczą domyślny interwał czasu ustawiony przez proces wykrywania i odzyskiwania limitu czasu systemu Windows. W takim przypadku Obliczanie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz temat [Obsługa C++ TDRs w amp](https://go.microsoft.com/fwlink/p/?LinkId=249154).  
+ Istnieje możliwość, że C++ obliczenia amp przekroczą domyślny interwał czasu ustawiony przez proces wykrywania i odzyskiwania limitu czasu systemu Windows. W takim przypadku Obliczanie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz temat [Obsługa C++ TDRs w amp](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: debugowanie aplikacji C++ amp](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
- [Ustawienia projektu dla konfiguracji C++ debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Rozpocznij debugowanie procesora GPU w programie Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=255381)
+ [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Rozpocznij debugowanie procesora GPU w programie Visual Studio](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/17/start-gpu-debugging-in-visual-studio-11.aspx)

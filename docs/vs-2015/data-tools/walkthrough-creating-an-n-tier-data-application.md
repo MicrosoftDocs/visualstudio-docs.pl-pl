@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299587"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844200"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 - Napisz kod, aby wypełnić tabele danych.
 
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [wideo How to: Tworzenie wielowarstwowej aplikacji do obsługi danych](https://go.microsoft.com/fwlink/?LinkId=115188).
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [wideo How to: Tworzenie wielowarstwowej aplikacji do obsługi danych](https://msdn2.microsoft.com/library/cc178916.aspx).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Aby ukończyć ten przewodnik, potrzebne są:
@@ -108,7 +108,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 1. Kliknij pozycję DataAccessTier w **Eksplorator rozwiązań**.
 
-2. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+2. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
 3. W oknie **źródła danych** kliknij przycisk **Dodaj nowe źródło danych** , aby uruchomić **Kreatora konfiguracji źródła danych**.
 
@@ -118,7 +118,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
      Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, kliknij ją.
 
-     —lub—
+     lub
 
      Kliknij pozycję **nowe połączenie** , aby otworzyć okno dialogowe **Dodawanie połączenia** .
 
@@ -148,7 +148,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 4. Na liście **projekt zestawu danych** kliknij pozycję **DataEntityTier**.
 
-5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
    Zestaw danych i TableAdapters są rozdzielone na dwa projekty biblioteki klas. Projekt, który pierwotnie zawierał cały zestaw danych (DataAccessTier), zawiera teraz tylko TableAdapters. Projekt określony we właściwości **projektu DataSet** (DataEntityTier) zawiera zestaw danych o określonym typie: NorthwindDataSet. DataSet. Designer. vb (lub NorthwindDataSet.DataSet.Designer.cs).
 
@@ -201,7 +201,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
 
 6. Kliknij przycisk **Zakończ**.
 
-7. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Dodawanie odwołania do jednostek danych i warstw dostępu do danych do usługi danych
  Ponieważ usługa danych wymaga informacji z zestawu danych i TableAdapters, Dodaj odwołania do projektów DataEntityTier i DataAccessTier.
@@ -280,7 +280,7 @@ N-warstwowa * aplikacje danych to aplikacje, które uzyskują dostęp do danych 
     }
     ```
 
-5. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Tworzenie warstwy prezentacji do wyświetlania danych z usługi danych
  Teraz, gdy rozwiązanie zawiera usługę danych, która ma metody, które wywołują do warstwy dostępu do danych, należy utworzyć kolejny projekt, który będzie wywoływał usługę danych i przedstawić dane użytkownikom. W tym instruktażu Utwórz aplikację Windows Formsową. to jest warstwa prezentacji aplikacji n-warstwowej.

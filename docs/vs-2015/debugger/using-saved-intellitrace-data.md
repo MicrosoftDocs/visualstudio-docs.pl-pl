@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297127"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845656"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
   
 - Plik. iTrace z jednego z następujących źródeł:  
   
-    |**Zewnętrz**|**Wyświetlania**|  
+    |**Element źródłowy**|**Wyświetlania**|  
     |----------------|-------------|  
     |Sesja IntelliTrace w Visual Studio Enterprise (ale nie wersji Professional lub Community)|[Funkcje IntelliTrace](../debugger/intellitrace-features.md)|  
     |Sesja testowa w Microsoft Test Manager. Spowoduje to dołączenie pliku. iTrace do Team Foundation Server elementu pracy.|[Zbieraj więcej danych diagnostycznych w testach ręcznych](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Microsoft Monitoring Agent, samodzielne lub z programem System Center 2012 R2 Operations Manager, dla aplikacji internetowych ASP.NET i aplikacji programu SharePoint działających we wdrożeniu|-   [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [co nowego w programie System Center 2012 R2 Operations Manager](https://technet.microsoft.com/library/dn249700.aspx)|  
+    |Microsoft Monitoring Agent, samodzielne lub z programem System Center 2012 R2 Operations Manager, dla aplikacji internetowych ASP.NET i aplikacji programu SharePoint działających we wdrożeniu|-   [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co nowego w programie System Center 2012 R2 Operations Manager](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a>Co chcesz zrobić?  
   
@@ -55,13 +55,13 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
   
 - Kliknij dwukrotnie plik. iTrace poza programem Visual Studio lub Otwórz plik w programie Visual Studio.  
   
-     \- lub-  
+     \- lub —  
   
 - Jeśli plik. iTrace jest dołączony do Team Foundation Server elementu pracy, wykonaj następujące kroki w elemencie roboczym:  
   
   - W obszarze **wszystkie linki**Znajdź plik. iTrace. Otwórz go.  
 
-    \- lub-  
+    \- lub —  
 
   - W obszarze **Odtwórz kroki**wybierz łącze **IntelliTrace** .  
   
@@ -71,7 +71,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 ## <a name="Understand"></a>Opis dziennika IntelliTrace  
  Niektóre z poniższych sekcji w pliku. iTrace są wyświetlane tylko w przypadku zebrania danych z konkretnego źródła, na przykład z poziomu Test Manager lub aplikacji programu SharePoint.  
   
-|**Paragraf**|**Wyświetlana**|**Źródło kolekcji**|  
+|**Sekcja**|**Contains**|**Źródło kolekcji**|  
 |-----------------|------------------|---------------------------|  
 |[Naruszenia wydajności](#Performance)|Zdarzenia wydajności z wywołaniami funkcji przekraczającymi skonfigurowany próg|Microsoft Monitoring Agent, samodzielne lub z programem System Center 2012 R2 Operations Manager dla aplikacji sieci Web ASP.NET hostowanych w usługach IIS|  
 |[Dane wyjątku](#ExceptionData)|Wyjątki, w tym pełny stos wywołań dla każdego wyjątku|Wszystkie źródła|  
@@ -141,9 +141,9 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
   
      Teraz można przejrzeć inne zarejestrowane wartości, stos wywołań lub użyć okna **IntelliTrace** do [przenoszenia do tyłu lub do przodu "w czasie" między innymi zarejestrowanymi zdarzeniami](../debugger/intellitrace.md), kodem pokrewnym i wartościami zarejestrowanymi w tych punktach w czasie.  
   
-    |**Kolumna**|**Pokazuje**|  
+    |**Kolumny**|**Pokazuje**|  
     |----------------|-------------------|  
-    |**Wprowadź**|Typ wyjątku dla platformy .NET|  
+    |**Typ**|Typ wyjątku dla platformy .NET|  
     |**Najnowszy komunikat** dla pogrupowanych wyjątków lub **komunikatów** dla wyjątków niepogrupowanych|Komunikat dostarczony przez wyjątek|  
     |**Liczba** zgrupowanych wyjątków|Liczba zgłoszonych wyjątków|  
     |**Identyfikator wątku** dla wyjątków niezgrupowane|Identyfikator wątku, który wywołał wyjątek|  
@@ -189,11 +189,11 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
   
     |**Pole IntelliTrace**|**Pole ULS programu SharePoint**|  
     |----------------------------|------------------------------|  
-    |**#**|**EventID**|  
-    |**Poziomie**|**Poziomie**|  
+    |**Identyfikator**|**EventID**|  
+    |**Poziom**|**Poziom**|  
     |**Identyfikator kategorii**|**Identyfikator kategorii**|  
-    |**Kategorii**|**Kategorii**|  
-    |**Stref**|**Iloczyn**|  
+    |**Kategoria**|**Kategoria**|  
+    |**Obszar**|**Iloczyn**|  
     |**Output**|**Komunikat**|  
     |**Identyfikator korelacji**|**Identyfikator korelacji**|  
   
@@ -222,9 +222,9 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
   
    Dane wątku tworzone przez użytkownika mogą być bardziej przydatne niż wątki tworzone przez serwer i zarządzane dla aplikacji sieci Web hostowanych przez usługi IIS.  
   
-|**Kolumna**|**Pokazuje**|  
+|**Kolumny**|**Pokazuje**|  
 |----------------|-------------------|  
-|**#**|Numer IDENTYFIKACYJNy wątku|  
+|**Identyfikator**|Numer IDENTYFIKACYJNy wątku|  
 |**Nazwa**|Nazwa wątku. Wątki nienazwane są wyświetlane jako "\<Brak nazwy >".|  
 |**Godzina rozpoczęcia**|Czas utworzenia wątku|  
 |**Czas zakończenia**|Czas ukończenia wątku|  
@@ -242,7 +242,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
   
      Gdy istnieją dane testowe, IntelliTrace próbuje rozwiązać skojarzoną kompilację Team Foundation Server, która została użyta do przeprowadzenia przebiegu testu. Jeśli kompilacja zostanie znaleziona, skojarzone symbole aplikacji są rozwiązywane automatycznie.  
   
-|**Polami**|**Pokazuje**|  
+|**Pole**|**Pokazuje**|  
 |---------------|-------------------|  
 |**Sesja testowa**|Zarejestrowane sesje testowe. Zazwyczaj istnieje tylko jeden. Ta lista jest pusta, jeśli dane testowe zostały utworzone przy użyciu testu ręcznego.|  
 |**Przypadek testowy**|Przypadki testowe z wybranej sesji testowej. Ta lista jest pusta, jeśli dane testowe zostały utworzone przy użyciu testu ręcznego.|  
@@ -254,7 +254,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
 ### <a name="Modules"></a>Moduły  
  W tej sekcji przedstawiono moduły, które zostały załadowane przez proces docelowy. Moduły są wyświetlane w kolejności, w jakiej zostały załadowane.  
   
-|**Kolumna**|**Pokazuje**|  
+|**Kolumny**|**Pokazuje**|  
 |----------------|-------------------|  
 |**Nazwa modułu**|Nazwa pliku modułu|  
 |**Ścieżka modułu**|Lokalizacja dysku, na którym moduł został załadowany|  
@@ -270,7 +270,7 @@ Przejdź do określonych punktów w wykonaniu aplikacji po rozpoczęciu debugowa
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Fora  
- [Debuger programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Visual Studio Debugger](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
 #### <a name="guidance"></a>Wskazówki  
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 6: Przybornik testowy](https://go.microsoft.com/fwlink/?LinkID=255203)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 6: Przybornik testowy](https://msdn.microsoft.com/library/jj159337.aspx)

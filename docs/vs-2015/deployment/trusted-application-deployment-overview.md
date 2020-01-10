@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294698"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847704"
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Ten temat zawiera omówienie sposobu wdrażania aplikacji [!INCLUDE[ndptecclick]
 |Menedżer zaufania|Podsystem w środowisku uruchomieniowym języka wspólnego (CLR) odpowiedzialny za Wymuszanie zabezpieczeń aplikacji klienta.|  
 |publisher|Jednostka, która zapisuje i utrzymuje aplikację.|  
 |narzędzia wdrażania|Jednostka, która pakuje i dystrybuuje aplikację dla użytkowników.|  
-|certyfikat|Sygnatura kryptograficzna, która składa się z klucza publicznego i prywatnego; Ogólnie wystawiony przez urząd certyfikacji (CA), który może zaręczyć za jego autentyczność.|  
+|certificate|Sygnatura kryptograficzna, która składa się z klucza publicznego i prywatnego; Ogólnie wystawiony przez urząd certyfikacji (CA), który może zaręczyć za jego autentyczność.|  
 |Certyfikat Authenticode|Certyfikat z osadzonymi metadanymi opisującymi, między innymi, zastosowania, dla których można zastosować certyfikat.|  
 |Urząd certyfikacji|Organizacja, która weryfikuje tożsamość wydawców i wystawia certyfikaty z certyfikatem osadzonym w metadanych wydawcy.|  
 |urząd główny|Urząd certyfikacji, który autoryzuje inne urzędy certyfikacji do wystawiania certyfikatów.|  
@@ -74,7 +74,7 @@ Ten temat zawiera omówienie sposobu wdrażania aplikacji [!INCLUDE[ndptecclick]
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Dodawanie wydawcy do magazynu zaufanych wydawców  
  Aby aplikacja [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mogła uzyskać wyższy poziom zaufania, należy dodać certyfikat jako zaufany wydawca do każdego komputera klienckiego, na którym będzie uruchamiana aplikacja. Wykonanie tego zadania jest konfiguracją jednorazową. Po zakończeniu można wdrożyć dowolną liczbę [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji podpisanych za pomocą certyfikatu wydawcy zgodnie z potrzebami, a wszystkie będą uruchamiane z wysokim zaufaniem.  
   
- Jeśli aplikacja jest wdrażana w środowisku pulpitu zarządzanego; na przykład firmowy intranet działający w systemie operacyjnym Windows; zaufanych wydawców można dodać do magazynu klienta, tworząc nową listę zaufania certyfikatów (CTL) za pomocą zasady grupy. Aby uzyskać więcej informacji, zobacz [Tworzenie listy zaufania certyfikatów dla obiektu zasady grupy](https://go.microsoft.com/fwlink/?LinkId=102576).  
+ Jeśli aplikacja jest wdrażana w środowisku pulpitu zarządzanego; na przykład firmowy intranet działający w systemie operacyjnym Windows; zaufanych wydawców można dodać do magazynu klienta, tworząc nową listę zaufania certyfikatów (CTL) za pomocą zasady grupy. Aby uzyskać więcej informacji, zobacz [Tworzenie listy zaufania certyfikatów dla obiektu zasady grupy](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7).  
   
  Jeśli aplikacja nie jest wdrażana w środowisku zarządzanym, dostępne są następujące opcje dodawania certyfikatu do magazynu zaufanych wydawców:  
   

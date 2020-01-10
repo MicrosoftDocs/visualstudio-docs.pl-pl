@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299794"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844330"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
  [Zainstaluj narzędzia dla systemu iOS](#InstallForiOS)   
  [Ręczne instalowanie lub aktualizowanie zależności](#ThirdParty)  
   
-## <a name="Requirements"></a>Wymagania  
+## <a name="Requirements"></a> Wymagania  
   
 - Wymagania dotyczące instalacji znajdują się w temacie [wymagania systemowe programu Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -40,12 +40,12 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
   
 - Windows Phone emulatory i Microsoft Visual Studio Emulator for Android wymagają komputera z uruchomioną funkcją Hyper-V. Funkcja Hyper-V w systemie Windows musi być włączona, aby można było instalować i uruchamiać emulatory. Aby uzyskać więcej informacji, zobacz [wymagania systemowe](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)emulatora.  
   
-- Emulatory x86 systemu Android, które są dostarczane z Android SDK działają najlepiej na komputerach, na których można uruchomić sterownik Intel HAXM. Ten sterownik wymaga procesora Intel x64 z emulatorem VT-x i wykonywaniem obsługi bitów wyłączania. Aby uzyskać więcej informacji, zobacz [instrukcje dotyczące instalacji dla technologii Intel® Hardware Accelerated Execution Manager — Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Emulatory x86 systemu Android, które są dostarczane z Android SDK działają najlepiej na komputerach, na których można uruchomić sterownik Intel HAXM. Ten sterownik wymaga procesora Intel x64 z emulatorem VT-x i wykonywaniem obsługi bitów wyłączania. Aby uzyskać więcej informacji, zobacz [instrukcje dotyczące instalacji dla technologii Intel® Hardware Accelerated Execution Manager — Microsoft Windows](https://github.com/intel/haxm).  
   
 - Kompilowanie kodu dla systemu iOS wymaga identyfikatora Apple ID, konta programu dla deweloperów systemu iOS i komputera Mac, na którym można uruchomić [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) lub nowszą wersję systemu operacyjnego X Mavericks lub nowszego. Aby zapoznać się z prostymi krokami instalacji, zobacz [Instalowanie narzędzi dla systemu iOS](#InstallForiOS).  
   
 ## <a name="GetTheTools"></a>Pobierz narzędzia  
- Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych to składnik, który można zainstalować w programie Visual Studio Community, wersje Professional i Enterprise. Aby uzyskać program Visual Studio, przejdź do strony [plików do pobrania programu Visual studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) i Pobierz program visual Studio 2015 z aktualizacją Update 2 lub nowszą.  
+ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych to składnik, który można zainstalować w programie Visual Studio Community, wersje Professional i Enterprise. Aby uzyskać program Visual Studio, przejdź do strony [plików do pobrania programu Visual studio 2015](https://visualstudio.microsoft.com/downloads/) i Pobierz program visual Studio 2015 z aktualizacją Update 2 lub nowszą.  
   
 ## <a name="InstallTheTools"></a>Instalowanie narzędzi  
  Instalator programu Visual Studio 2015 zawiera opcję instalacji wizualizacji C++ na potrzeby tworzenia aplikacji mobilnych na wiele platform. Spowoduje to zainstalowanie wymaganych C++ narzędzi języka, szablonów i składników dla programu Visual Studio, zestawów narzędzi w zatoce i Clang, które są potrzebne do kompilowania i debugowania systemu Android, oraz składniki do komunikowania się z komputerem Mac na potrzeby tworzenia aplikacji dla systemu iOS. Instaluje także wszystkie narzędzia innych firm i zestawy SDK, które są wymagane do obsługi projektowania aplikacji dla systemów iOS i Android. Większość tych narzędzi innych firm to oprogramowanie typu open source wymagane do obsługi platformy Android.  
@@ -68,7 +68,7 @@ Wizualizacja C++ dla wieloplatformowego opracowywania aplikacji mobilnych (https
   
      Aby skompilować aplikacje uniwersalne systemu Windows i udostępnić kod między nimi a projektami z systemami Android i iOS, w obszarze **Wybierz funkcje**rozwiń pozycję **Programowanie dla systemu Windows i sieci Web** i sprawdź **Narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows**. Jeśli nie planujesz kompilowania aplikacji uniwersalnych systemu Windows, możesz pominąć tę opcję.  
   
-     Wybierz pozycję **dalej** , aby kontynuować.  
+     Wybierz pozycję **Dalej**, aby kontynuować.  
   
 3. Składniki innych firm mają własne postanowienia licencyjne. Postanowień licencyjnych można wyświetlić, wybierając link **postanowienia licencyjne** obok każdego składnika. Wybierz pozycję **Zainstaluj** , aby dodać składniki i zainstalować program Visual Studio C++ i wizualizację dla wieloplatformowego opracowywania aplikacji mobilnych.  
   

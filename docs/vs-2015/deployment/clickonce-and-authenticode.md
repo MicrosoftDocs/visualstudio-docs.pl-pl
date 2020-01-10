@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06edf9954134a6110f9285fc744c87c2696b19d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2e48039a618f7e8eef7f2c6e9f097da87e37d0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298268"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847790"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Authenticode * to technologia firmy Microsoft, która używa kryptografii standa
 ## <a name="authenticode-and-code-signing"></a>Authenticode i podpisywanie kodu  
  *Certyfikat cyfrowy* to plik, który zawiera kryptograficzną parę kluczy publiczny/prywatny wraz z metadanymi opisującymi wydawcy, dla których certyfikat został wystawiony, oraz Agencję, która wystawił certyfikat.  
   
- Istnieją różne typy certyfikatów Authenticode. Każdy z nich jest skonfigurowany do różnych typów podpisywania. W przypadku aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] należy mieć certyfikat Authenticode, który jest prawidłowy w przypadku podpisywania kodu. Próba podpisania aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] przy użyciu innego typu certyfikatu, na przykład cyfrowego certyfikatu poczty e-mail, nie będzie działała. Aby uzyskać więcej informacji, zobacz [wprowadzenie do podpisywania kodu](https://go.microsoft.com/fwlink/?LinkId=179452).  
+ Istnieją różne typy certyfikatów Authenticode. Każdy z nich jest skonfigurowany do różnych typów podpisywania. W przypadku aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] należy mieć certyfikat Authenticode, który jest prawidłowy w przypadku podpisywania kodu. Próba podpisania aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] przy użyciu innego typu certyfikatu, na przykład cyfrowego certyfikatu poczty e-mail, nie będzie działała. Aby uzyskać więcej informacji, zobacz [Wprowadzenie do podpisywania kodu](https://msdn.microsoft.com/library/ms537361.aspx).  
   
  Certyfikat do podpisywania kodu można uzyskać na jeden z trzech sposobów:  
   
@@ -53,7 +53,7 @@ Authenticode * to technologia firmy Microsoft, która używa kryptografii standa
   
  Aby uzyskać więcej informacji na temat generowania certyfikatów samoobsługowych, zobacz [Makecert. exe (narzędzie tworzenia certyfikatów)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
-### <a name="timestamps"></a>Sygnatury czasowe  
+### <a name="timestamps"></a>Znaczniki czasu  
  Certyfikaty używane do podpisywania aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wygasają po upływie określonego czasu, zwykle dwanaście miesięcy. Aby usunąć konieczność ciągłego ponownego podpisywania aplikacji przy użyciu nowych certyfikatów, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] obsługuje sygnaturę czasową. Gdy aplikacja jest podpisana sygnaturą czasową, jej certyfikat będzie nadal akceptowany nawet po wygaśnięciu, pod warunkiem, że sygnatura czasowa jest prawidłowa. Pozwala to [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacjom z wygasłymi certyfikatami, ale prawidłowymi sygnaturami czasowymi, aby pobierać i uruchamiać. Umożliwia także zainstalowanie aplikacji z wygasłymi certyfikatami, aby kontynuować pobieranie i instalowanie aktualizacji.  
   
  Aby dołączyć sygnaturę czasową na serwerze aplikacji, musi być dostępny serwer sygnatur czasowych. Aby uzyskać informacje o sposobach wybierania serwera znacznika czasu, zobacz [How to: Signing Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).  
@@ -65,7 +65,7 @@ Authenticode * to technologia firmy Microsoft, która używa kryptografii standa
   
 - Odinstaluj aplikację i ponownie zainstaluj nową wersję z prawidłowym certyfikatem.  
   
-- Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Informacje krok po kroku dotyczące tego procesu można znaleźć w [artykule pomoc techniczna firmy Microsoft artykułu 925521](https://go.microsoft.com/fwlink/?LinkId=179454).  
+- Utwórz zestaw wiersza polecenia, który aktualizuje certyfikat. Informacje krok po kroku dotyczące tego procesu można znaleźć w [artykule pomoc techniczna firmy Microsoft artykułu 925521](https://support.microsoft.com/kb/925521).  
   
 ### <a name="storing-certificates"></a>Przechowywanie certyfikatów  
   

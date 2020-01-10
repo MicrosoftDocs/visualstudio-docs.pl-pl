@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 5949a651c99c0ce45f963b5f2042cdfe6cb40b87
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568834"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848575"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub integrowanie nowych funkcji w programie Visual Studio. Rozszerzenia można dystrybuować do innych użytkowników, a także do Visual Studio Marketplace. Poniżej przedstawiono kilka sposobów, w których można rozciągnąć program Visual Studio:
@@ -41,7 +41,7 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
   Jeśli jeszcze nie zapisano rozszerzenia programu Visual Studio, należy znaleźć więcej informacji na temat tych funkcji i w momencie [rozpoczęcia tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
 ## <a name="install-the-visual-studio-sdk"></a>Instalowanie zestawu Visual Studio SDK
- Visual Studio SDK to opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Visual Studio SDK to opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="whats-new-in-the-visual-studio-2017-sdk"></a>Co nowego w zestawie SDK programu Visual Studio 2017
  Zestaw Visual Studio SDK zawiera nowe funkcje, takie jak format VSIX v3, a także istotne zmiany, które mogą wymagać aktualizacji rozszerzenia. Aby uzyskać więcej informacji, zobacz [co nowego w zestawie SDK programu Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md).
@@ -60,7 +60,7 @@ Zestaw Visual Studio SDK ułatwia poszerzanie funkcji programu Visual Studio lub
  Informacje o interfejsie API zestawu SDK programu Visual Studio można znaleźć w [dokumentacji programu Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK — przykłady
- Przykłady rozszerzeń typu "open source" w witrynie GitHub można znaleźć w przykładach [programu Visual Studio](https://aka.ms/vs2015sdksamples). To repozytorium GitHub zawiera przykłady ilustrujące różne rozszerzalne funkcje w programie Visual Studio.
+ Przykłady rozszerzeń typu "open source" w witrynie GitHub można znaleźć w przykładach [programu Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). To repozytorium GitHub zawiera przykłady ilustrujące różne rozszerzalne funkcje w programie Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Inne zasoby programu Visual Studio SDK
  Jeśli masz pytania dotyczące VSSDK lub chcesz udostępnić swoje środowiska opracowywania rozszerzeń, możesz użyć [forum rozszerzeń programu Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) lub [ExtendVS warunkom chatroom](https://gitter.im/Microsoft/extendvs).

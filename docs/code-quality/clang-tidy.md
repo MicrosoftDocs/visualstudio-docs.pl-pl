@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 25320da07249abee0ab0cddd48662585a7a809dd
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745990"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846746"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Korzystanie z Clang-uporządkowanego w programie Visual Studio
 
@@ -28,7 +28,7 @@ Clang-uporządkowanego jest uruchamiany po pomyślnej kompilacji; może być kon
 
 ## <a name="msbuild"></a>MSBuild
 
-Można skonfigurować Clang-uporządkowanego do uruchamiania w ramach analizy kodu i kompilowania na stronie**ogólne**  >  **analizy kodu** w okno właściwości projektu. Opcje konfigurowania narzędzia znajdują się w podmenu Clang-uporządkowanego.
+Można skonfigurować Clang-uporządkowanego do uruchamiania w ramach analizy kodu i kompilowania na stronie **ogólne** > **analizy kodu** w okno właściwości projektu. Opcje konfigurowania narzędzia znajdują się w podmenu Clang-uporządkowanego.
 
 Aby uzyskać więcej informacji, zobacz [How to: Set Code Analysis Properties for CC++ /projects](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
@@ -44,7 +44,7 @@ Jeśli żadna z opcji "Włącz" nie zostanie określona, program Visual Studio w
 
 ## <a name="warning-display"></a>Wyświetlanie ostrzeżeń
 
-Uruchomienia Clang-uporządkowanego powodują ostrzeżenia wyświetlane w Lista błędów, a jak w edytorze. Użyj kolumny "Kategoria" w Lista błędów, aby sortować i organizować ostrzeżenia Clang-uporządkowanego. Ostrzeżenia w edytorze można skonfigurować przez przełączenie ustawienia "Wyłącz Zawijanie analizy kodu" w obszarze **narzędzia**  > **Opcje**.
+Uruchomienia Clang-uporządkowanego powodują ostrzeżenia wyświetlane w Lista błędów, a jak w edytorze. Użyj kolumny "Kategoria" w Lista błędów, aby sortować i organizować ostrzeżenia Clang-uporządkowanego. Ostrzeżenia w edytorze można skonfigurować przez przełączenie ustawienia "Wyłącz Zawijanie analizy kodu" w obszarze **narzędzia** > **Opcje**.
 
 ## <a name="clang-tidy-configuration"></a>Clang — konfiguracja uporządkowanego
 
@@ -52,5 +52,5 @@ Można skonfigurować sprawdzanie, czy Clang-uporządkowanego działa w programi
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Obsługa Clang/LLVM dla projektów MSBuild](https://aka.ms/cpp/clangmsbuild)
-- [Obsługa Clang/LLVM dla projektów CMake](https://aka.ms/cpp/clangcmake)
+- [Obsługa Clang/LLVM dla projektów MSBuild](https://devblogs.microsoft.com/cppblog/clang-llvm-support-for-msbuild-projects/)
+- [Obsługa Clang/LLVM dla projektów CMake](https://devblogs.microsoft.com/cppblog/visual-studio-cmake-support-clang-llvm-cmake-3-14-vcpkg-and-performance-improvements/)

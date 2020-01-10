@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d40cefc3dd47f7f4ad7e8255d8bdc06bc5f1651
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300939"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849233"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Instrukcje: korzystanie z edytora wyrażeń
 Edytor wyrażeń jest formantem [!INCLUDE[wfd1](../includes/wfd1-md.md)], który jest używany w wielu działaniach przepływu pracy jako sposób wprowadzania i oceniania tych wyrażeń. Edytor wyrażeń zawiera dopracowane środowisko edycji środowiska IDE, w tym funkcje IntelliSense, kolorowanie, ParamInfo, zygzaki błędów, między innymi. Kompilator sprawdza poprawność wyrażenia po jego wprowadzeniu. Jeśli wyrażenie jest nieprawidłowe, zostanie wyświetlona ikona błędu. Edytor można także otworzyć jako okno dialogowe **Edytor wyrażeń** .
 
- Wyrażenia są wartościami literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("=") zamiast ("= ="), operatory logiczne to słowa "i" i "lub" zamiast symboli "& &"&#124;&#124;i "", a **niczego** nie są używane zamiast **wartości null**. Aby uzyskać więcej informacji na temat wyrażeń i operatorów w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](https://go.microsoft.com/fwlink/?LinkId=186818).
+ Wyrażenia są wartościami literałów lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kodzie związanym z argumentami lub właściwościami. Zawierają one elementy wartości (np. zmienne, stałe, literały, właściwości), które są łączone z operacjami w celu uzyskania nowej wartości. Wyrażenia są zapisywane przy użyciu składni VB.NET, nawet jeśli aplikacja znajduje się w programie C#przy użyciu. Oznacza to, że nie ma znaczenia, porównanie jest wykonywane przy użyciu pojedynczego znaku równości ("=") zamiast ("= ="), operatory logiczne to słowa "i" i "lub" zamiast symboli "& &"&#124;&#124;i "", a **niczego** nie są używane zamiast **wartości null**. Aby uzyskać więcej informacji na temat wyrażeń i operatorów w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i dla niektórych przykładów, zobacz [Operatory i wyrażenia w Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  **Edytor wyrażeń** zachowuje się w następujący sposób:
 

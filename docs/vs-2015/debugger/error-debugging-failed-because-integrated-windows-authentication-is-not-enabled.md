@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299789"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851919"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Błąd: debugowanie nie powiodło się ponieważ zintegrowane uwierzytelnianie systemu Windows nie jest włączone
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
   
 10. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **metody uwierzytelniania** .  
   
-11. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Właściwości**.  
+11. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Właściwości** .  
   
 12. Zamknij okno **Internet Information Services** .  
   
@@ -119,5 +119,5 @@ Błąd uwierzytelniania uniemożliwił uwierzytelnienie użytkownika, który za�
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
-   [uwierzytelniania Microsoft Digest](https://go.microsoft.com/fwlink/?LinkId=77938)  
+   [uwierzytelniania Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)  
  [Uruchamianie aplikacji sieci Web w systemie Windows Vista przy użyciu usług IIS 7,0 i programu Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

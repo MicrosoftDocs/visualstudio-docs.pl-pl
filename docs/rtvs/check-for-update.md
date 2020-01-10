@@ -1,6 +1,6 @@
 ---
-title: Bieżąca wersja narzędzia języka R
-description: Jak sprawdzić wersję narzędzia R Tools for Visual Studio i zainstaluj aktualizacje.
+title: Bieżąca wersja narzędzi R Tools
+description: Jak sprawdzić wersję R Tools for Visual Studio i zainstalować aktualizacje.
 ms.date: 07/23/2018
 ms.topic: conceptual
 author: kraigb
@@ -8,23 +8,23 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423989"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843746"
 ---
-# <a name="rtvs-current-version"></a>Bieżąca wersja RTVS
+# <a name="rtvs-current-version"></a>RTVS bieżącą wersję
 
-Wersję można sprawdzić, przechodząc do **pomocy** > **o** w programie Visual Studio i przewijając w dół do **R Tools for Visual Studio** wpis:
+Możesz sprawdzić swoją wersję, przechodząc do > w **programie Visual** Studio i przewinięcie **do pozycji** **R Tools for Visual Studio** :
 
-![Badanie RTVS wersji w programie Visual Studio (VS2017)](media/current-version.png)
+![Badanie wersji RTVS w programie Visual Studio (program VS2017)](media/current-version.png)
 
-Aby zaktualizować wersję RTVS w programie Visual Studio 2017, przejdź do Instalatora programu Visual Studio, a następnie wybierz **aktualizacji** przycisku.
+Aby zaktualizować wersję programu RTVS w programie Visual Studio 2017, przejdź do Instalatora programu Visual Studio i wybierz przycisk **Aktualizuj** .
 
-Dla programu Visual Studio 2015, jest dostępne z najbardziej aktualną Instalatora [aka.ms/rtvs — bieżąca](https://aka.ms/rtvs-current) (pobieranie bezpośrednie).
+W przypadku programu Visual Studio 2015 najnowszy Instalator jest dostępny z [aka.MS/RTVS-Current](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) (Pobieranie bezpośrednie).
 
-Zobacz [instalacji](installing-r-tools-for-visual-studio.md) wymaganiami dotyczącymi programu Visual Studio i Windows.
+Zobacz [Instalacja](installing-r-tools-for-visual-studio.md) programu Visual Studio i wymagania dotyczące systemu Windows.
 
-Aktualizacje programu Microsoft R Open i serwer Microsoft Machine Learning (dawniej Microsoft R Server) zobacz: [Produkty Microsoft R.](https://aka.ms/rtvs-msft-r)
+Aby uzyskać aktualizacje dotyczące otwartych i Microsoft Machine Learning Server oprogramowania Microsoft R (dawniej Microsoft R Server), zobacz: [produkty Microsoft r.](https://azure.microsoft.com/?ocid=cloudplat_hp)

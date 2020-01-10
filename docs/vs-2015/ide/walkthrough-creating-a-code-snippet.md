@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296827"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845578"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Wskazówki: tworzenie wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "74296827"
 Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utworzyć plik XML, wypełnić odpowiednie elementy i dodać do niego swój kod. Możesz również dodawać odwołania i parametry zastępujące do kodu. Można dodać fragment kodu do instalacji programu Visual Studio za pomocą przycisku Importuj w Menedżerze fragmentów kodów (**Narzędzia/program fragmentów kodu**).
 
 > [!TIP]
-> Aby uzyskać więcej informacji o tym, jak łatwiej pisać fragmenty kodu, Wyszukaj witrynę sieci Web CodePlex dla narzędzi społecznościowych, takich jak [Edytor wstawek](https://go.microsoft.com/fwlink/?LinkId=251033).
+> Aby uzyskać więcej informacji o tym, jak łatwiej pisać fragmenty kodu, Wyszukaj witrynę sieci Web CodePlex dla narzędzi społecznościowych, takich jak [Edytor wstawek](https://snippeteditor.codeplex.com/).
 
 ## <a name="snippet-template"></a>Szablon fragmentu kodu
  Oto podstawowy szablon fragmentu kodu:
@@ -75,7 +75,7 @@ Można utworzyć fragment kodu zawierający tylko kilka kroków. Wystarczy utwor
 
 1. Możesz dodać własne fragmenty kodu do instalacji programu Visual Studio za pomocą Menedżera fragmentów kodów. Otwórz Menedżera fragmentów kodu (**Tools/Code wstaweks Manager**).
 
-2. Kliknij przycisk **Importuj**.
+2. Kliknij przycisk **Importuj** .
 
 3. Przejdź do lokalizacji, w której zapisano fragment kodu w poprzedniej procedurze, zaznacz go, a następnie kliknij przycisk **Otwórz**.
 

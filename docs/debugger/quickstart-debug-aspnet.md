@@ -1,6 +1,6 @@
 ---
-title: Debug ASP.NET
-description: Debugowanie aplikacji ASP.NET przy użyciu debugera programu Visual Studio
+title: Debuguj ASP.NET Core
+description: Debugowanie ASP.NET Core za pomocą debugera programu Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,37 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679257"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847873"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Szybki start: Debugowanie projektów platformy ASP.NET za pomocą debugera programu Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Szybki Start: debugowanie ASP.NET Core za pomocą debugera programu Visual Studio
 
-Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
+Debuger programu Visual Studio udostępnia wiele zaawansowanych funkcji ułatwiających debugowanie aplikacji. Ten temat zawiera szybki sposób poznania niektórych podstawowych funkcji.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **asp.net**, wybierz **szablony**, następnie wybierz **tworzenie Nowa aplikacja internetowa ASP.NET Core**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz ASP.NET**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nową ASP.NET Core aplikacji sieci Web**. W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **Web**, a następnie w środkowym okienku wybierz **sieci Web platformy ASP.NET Core Aplikacja**. Wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Wizualizacja C#** wybierz pozycję **Sieć Web**, a następnie w środkowym okienku wybierz **ASP.NET Core aplikacji sieci Web**. Wpisz nazwę, taką jak **MyDbgApp** , i kliknij przycisk **OK**.
 
-    W oknie dialogowym wybierz **aplikacji sieci Web** w środkowym okienku, a następnie kliknij przycisk **OK**.
+    W oknie dialogowym, które się pojawi, wybierz pozycję **aplikacja sieci Web** w środkowym okienku, a następnie kliknij przycisk **OK**.
 
     ![Wybierz aplikację sieci Web](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
     ::: moniker-end
 
-    Jeśli nie widzisz **aplikacji sieci Web programu ASP.NET Core** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **ASP.NET i tworzenie aplikacji internetowych** obciążenia, wybierz **Modyfikuj**.
+    Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **ASP.NET i projektowanie sieci Web** , a następnie wybierz **Modyfikuj**.
 
     Program Visual Studio tworzy projekt.
 
-1. W Eksploratorze rozwiązań Otwórz About.cshtml.cs (w obszarze Pages/About.cshtml), a następnie zastąp następujący kod
+1. W Eksplorator rozwiązań otwórz About.cshtml.cs (w obszarze Pages/about. cshtml) i Zastąp następujący kod
 
     ```csharp
     public void OnGet()
@@ -76,62 +76,62 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
 
 ## <a name="set-a-breakpoint"></a>Ustaw punkt przerwania
 
-A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studio należy wstrzymać działającego kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy nie jest wprowadzenie uruchamiane gałęzi kodu. Jest najbardziej podstawowa funkcja podczas debugowania.
+*Punkt przerwania* jest znacznikiem wskazującym, gdzie program Visual Studio powinien zawiesić uruchomiony kod, aby można było przyjrzeć się wartościom zmiennych lub działaniu pamięci lub niezależnie od tego, czy gałąź kodu jest uruchamiana. Jest to najbardziej podstawowa funkcja debugowania.
 
-1. Aby ustawić punkt przerwania, kliknij na marginesie po lewej stronie `doWork` — funkcja (lub wybierz linii kodu i naciśnij klawisz **F9**).
+1. Aby ustawić punkt przerwania, kliknij na oprawę po lewej stronie funkcji `doWork` (lub zaznacz wiersz kodu i naciśnij klawisz **F9**).
 
     ![Ustaw punkt przerwania](../debugger/media/dbg-qs-set-breakpoint-aspnet.png)
 
-    Punkt przerwania jest ustawiony do lewego nawiasu otwierającego (`{`).
+    Punkt przerwania jest ustawiany z lewej strony otwierającego nawiasu klamrowego (`{`).
 
-1. Teraz naciśnij **F5** (lub wybierz **Debuguj > Rozpocznij debugowanie**).
+1. Teraz naciśnij klawisz **F5** (lub wybierz **Debuguj > Rozpocznij debugowanie**).
 
-1. Podczas ładowania strony sieci web, kliknij przycisk **o** link u góry strony sieci web.
+1. Po załadowaniu strony sieci Web kliknij link **informacje** w górnej części strony sieci Web.
 
-    Wstrzymuje działanie debugera, gdzie ustawić punkt przerwania. Żółta strzałka wskazuje instrukcji, w której zostało wstrzymane wykonanie debugera i aplikacji. Wiersz z otwierający nawias klamrowy (`{`) po `doWork` deklaracji funkcji nie zostało jeszcze wykonane.
+    Debuger wstrzymuje miejsce, w którym ustawiono punkt przerwania. Instrukcja, w której debuger i wykonywanie aplikacji jest wstrzymana, jest wskazywana przez żółtą strzałkę. Wiersz ze otwierającym nawiasem klamrowym (`{`) po deklaracji funkcji `doWork` nie został jeszcze wykonany.
 
-    ![Trafiony punkt przerwania](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
+    ![Trafienie punktu przerwania](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > Jeśli punkt przerwania w pętli lub rekursji, lub jeśli masz wiele punktów przerwania, które często krokach, użyj [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że Twój kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. To pozwala zaoszczędzić czas i może również ułatwić debugowanie problemów, które są trudne do odtworzenia.
+    > Jeśli masz punkt przerwania w pętli lub rekursji lub jeśli masz wiele punktów przerwania, które są często wykonywane, użyj [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) , aby upewnić się, że kod jest zawieszony tylko wtedy, gdy spełnione są określone warunki. Pozwala to zaoszczędzić czas i ułatwia debugowanie problemów, które są trudne do odtworzenia.
 
-## <a name="navigate-code"></a>Przechodzenie do kodu
+## <a name="navigate-code"></a>Nawiguj po kodzie
 
-Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, która jest dostępna, począwszy od programu Visual Studio 2017.
+Istnieją różne polecenia, aby polecić debugerowi kontynuowanie. Wyświetlamy przydatne polecenie nawigacji kodu, które jest dostępne w programie Visual Studio 2017.
 
-Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `return c2` aż zielony **Uruchom do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png) pojawia się, a następnie naciśnij klawisz **Uruchom do kliknięcia** przycisk.
+Gdy punkt przerwania jest wstrzymany, umieść kursor nad instrukcją `return c2` do momentu, gdy zostanie wyświetlony **![przycisk "** Uruchom](../debugger/media/dbg-tour-run-to-click.png) do" w celu kliknięcia przyciskiem myszy, a następnie naciśnij przycisk **Uruchom do kliknięcia** .
 
 ![Uruchom do kliknięcia](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-Aplikacja kontynuuje wykonywanie i wstrzymuje w wierszu kodu, gdy kliknięto przycisk.
+Aplikacja kontynuuje wykonywanie i zatrzymuje się w wierszu kodu, w którym kliknięto przycisk.
 
-Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
+Typowe polecenia klawiatury używane do przechodzenia przez kod obejmują **F10** i **F11**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w datatip
+## <a name="inspect-variables-in-a-datatip"></a>Inspekcja zmiennych w etykietki danych
 
-1. W bieżącym wierszu kodu (oznaczonych przez wskaźnik wykonania żółty), umieść kursor nad `c2` obiektu myszą, aby pokazać poradzie dotyczącej danych.
+1. W bieżącym wierszu kodu (oznaczonym przez żółty wskaźnik wykonania) Umieść wskaźnik myszy nad obiektem `c2`, aby wyświetlić etykietki danych.
 
     ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Datatip pokazuje bieżącą wartość `c2` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu.
+    Etykietki danych pokazuje bieżącą wartość zmiennej `c2` i pozwala na kontrolowanie jej właściwości. W przypadku debugowania, Jeśli zobaczysz nieoczekiwaną wartość, prawdopodobnie masz usterkę w powyższym lub wywoływanym wierszu kodu.
 
-2. Rozwiń etykietka danych, aby wyświetlić bieżące wartości właściwości `c2` obiektu.
+2. Rozwiń etykietki danych, aby sprawdzić bieżącą wartość właściwości obiektu `c2`.
 
-3. Jeśli chcesz przypiąć datatip, dzięki czemu możesz zobaczyć wartość `c2` podczas wykonywania kodu, kliknij ikonę pinezki małe. (W dogodnym miejscu może przechodzić przypiętych etykietki danych).
+3. Jeśli chcesz przypiąć etykietki danych, tak aby można było nadal zobaczyć wartość `c2` podczas wykonywania kodu, kliknij ikonę małego numeru PIN. (Można przenieść przypiętą etykietki danych do wygodnej lokalizacji).
 
 ## <a name="edit-code-and-continue-debugging"></a>Edytowanie kodu i kontynuowanie debugowania
 
-Po zidentyfikowaniu zmianę, która ma zostać przetestowana w kodzie, gdy w trakcie sesji debugowania, możesz to zrobić, zbyt.
+Jeśli określisz zmianę, która ma zostać przetestowana w kodzie w trakcie sesji debugowania, możesz to zrobić.
 
-1. W `OnGet` metody, kliknij pozycję drugiego wystąpienia `result.First.Value` i zmień `result.First.Value` do `result.Last.Value`.
+1. W metodzie `OnGet` kliknij drugie wystąpienie `result.First.Value` i Zmień `result.First.Value` na `result.Last.Value`.
 
-1. Naciśnij klawisz **F10** (lub **Debuguj > Step Over**) kilka razy, aby poszerzyć debugera i wykonywanie edycji kodu.
+1. Naciśnij klawisz **F10** (lub **Debuguj > Krok powyżej**) kilka razy, aby przejść do debugera i wykonać edytowany kod.
 
-    ![Edytuj i Kontynuuj](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Edytuj i Kontynuuj")
+    ![Edytuj i Kontynuuj](../debugger/media/dbg-qs-edit-and-continue-aspnet.png "Edytowanie i kontynuowanie")
 
-    **F10** prowadzi instrukcja debugger jeden w danym momencie, ale kroki za pośrednictwem funkcji zamiast przechodzenie krok po kroku do nich (nadal wykonuje kod, który zostanie pominięta).
+    **F10** zastąpi debuger jedną instrukcją w tym samym czasie, ale nie trzeba przechodzić do tych funkcji, zamiast przechodzić do nich (kod, który pominie nadal wykonywany).
 
-Aby uzyskać więcej informacji na temat korzystania z edit-and-continue i ograniczenia dotyczące funkcji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
+Aby uzyskać więcej informacji na temat używania funkcji Edit-and-Continue i on Features, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

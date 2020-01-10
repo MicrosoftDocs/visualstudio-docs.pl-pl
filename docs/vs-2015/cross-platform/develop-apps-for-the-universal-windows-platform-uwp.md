@@ -9,19 +9,19 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299845"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844366"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruchamianie tę samą aplikację na dowolnym urządzeniu z systemem Windows 10 z telefonów do komputerów stacjonarnych. Tworzenie aplikacji Windows Universal za pomocą programu Visual Studio 2015 i narzędzi Universal Windows App Development.
 
- ![platforma uniwersalna systemu Windows](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
+ ![Platforma uniwersalna systemu Windows](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
  Uruchom aplikację na telefonie z systemem Windows 10, system Windows 10 desktop lub konsoli Xbox. To ten sam pakiet aplikacji! Wraz z wprowadzeniem core systemu Windows 10 w pojedynczą, jednolitą jednego pakietu aplikacji można uruchamiać na wszystkich platformach. Różnych platform mają zestawów SDK rozszerzeń, które można dodać do aplikacji, aby skorzystać z zachowań określonych platform. Na przykład zestawu SDK rozszerzenia dla urządzeń przenośnych obsługuje przycisku Wstecz naciśniętym na urządzeniu z systemem Windows phone. Jeśli odwołujesz rozszerzenie SDK w projekcie, wystarczy dodać testy środowiska uruchomieniowego, aby sprawdzić, czy ten zestaw SDK jest dostępny na tej platformie. To, jak może mieć ten sam pakiet aplikacji dla każdej platformy.
 
@@ -40,7 +40,7 @@ Uniwersalnej platformy Windows i naszych jednego rdzenia Windows umożliwia uruc
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Program Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Upewnij się, że na liście funkcje opcjonalne są wybrane narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows. Bez tych narzędzi nie będziesz mieć możliwości tworzenia aplikacji uniwersalnych.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Upewnij się, że na liście funkcje opcjonalne są wybrane narzędzia programistyczne dla aplikacji uniwersalnych systemu Windows. Bez tych narzędzi nie będziesz mieć możliwości tworzenia aplikacji uniwersalnych.
 
   Po zainstalowaniu tego oprogramowania musisz [włączyć urządzenie z systemem Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) na potrzeby programowania. (W przypadku każdego urządzenia z systemem Windows 10 nie jest już wymagana licencja dewelopera).
 

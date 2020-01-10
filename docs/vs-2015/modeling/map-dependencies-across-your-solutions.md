@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296333"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847631"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
  **Oto kilka filmów wideo**:
 
-- [Poznanie zależności kodu za poorednictwem wizualizacji](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [Poznanie zależności kodu za poorednictwem wizualizacji](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [Wizualizuj wpływ zmiany](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [Wizualizuj wpływ zmiany](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [Zrozumienie złożonego kodu za pomocą map kodu](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [Zrozumienie złożonego kodu za pomocą map kodu](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a>Wprowadzenie do map kodu
  **Aby korzystać z map kodu, musisz wykonać**następujące:
@@ -105,7 +105,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 1. Otwórz menu **Architektura** i wybierz pozycję **Nowa mapa kodu**.
 
-     \- lub-
+     \- lub —
 
 2. Otwórz menu **plik** i wybierz polecenie **Nowy** , a następnie wybierz **plik**.
 
@@ -181,7 +181,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
      ![Wybierz elementy, aby wyświetlić relacje](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")
 
-    Zobacz również:
+    Patrz również:
 
 - [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)
 
@@ -286,7 +286,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 ## <a name="SeeSourceHeader"></a>Zobacz zależności między plikami C C++ i Source a plikami nagłówkowymi
  Jeśli chcesz utworzyć dokładniejsze mapy dla C++ projektów, ustaw dla tych projektów opcję **/fr**(przeglądanie informacji kompilatora). Zobacz [/fr,/fr (Create. Plik SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, spowoduje to ustawienie opcji tylko dla bieżącej mapy. Możesz wybrać opcję ukrycia komunikatu dla wszystkich późniejszych map. Jeśli ten komunikat zostanie ukryty, można go ponownie wyświetlić. Ustaw następujący klucz rejestru, aby `0` lub usunąć klucz:
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**
 
  Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie może nie być możliwe utworzenie map kodu dla plików nagłówkowych (. h lub `#include`), dopóki nie zakończy się aktualizowanie bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio. Aby rozwiązać problemy lub komunikaty wyświetlane z powodu wyłączenia niektórych ustawień IntelliSense, zobacz artykuł [Rozwiązywanie problemów z mapami C++ dla języka C i kodu](#Troubleshooting).
 
@@ -307,7 +307,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
   Te problemy mogą wystąpić podczas tworzenia map kodu dla języka C i C++ kodu:
 
-|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
+|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |---------------|------------------------|--------------------|
 |Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie Wygeneruj mapę.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przestaje odpowiadać przy próbie wygenerowania mapy kodu z menu **architektury** .|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
@@ -329,7 +329,7 @@ Aby zrozumieć zależności w kodzie, wizualizuj je poprzez tworzenie map kodu. 
 
 - Wyłącz automatyczne dodawanie elementów nadrzędnych za pomocą przycisku **Dołącz rodziców** na pasku narzędzi mapy kodu.
 
-- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edytuj plik mapy kodu bezpośrednio, aby usunąć węzły i linki, które nie są potrzebne. Zmiana mapy nie ma wpływu na kod źródłowy. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Pomiń kompilację i Dołącz przyciski nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 

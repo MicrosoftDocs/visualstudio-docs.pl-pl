@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8c70b3c1b8282f87c8eb5aff5d8dde769c613d4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954834"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848567"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -43,7 +43,7 @@ Wszystkie **puste \<framework > Projekt sieci Web** szablony tworzenia projektu 
 | --- | --- |
 | **Projekt sieci Web Bottle puste** | Generuje minimalną aplikację w *app.py* ze stroną główną dla `/` i `/hello/<name>` strona, która zwraca `<name>` przy użyciu szablonu stronę wbudowanych bardzo krótki. |
 | **Projekt puste Django sieci Web** | Generuje projekt Django przy użyciu struktury lokacji Django core, ale nie ma aplikacji Django. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, Django, krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Projekt sieci Web Flask puste** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: Tworzenie pierwszej aplikacji sieci web języka Python przy użyciu programu Visual Studio](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Projekt sieci Web Flask puste** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" stronie `/`. Ta aplikacja jest podobne do wyniku następującego szczegółowy opis kroków [Szybki Start: używanie programu Visual Studio do utworzenia pierwszej aplikacji sieci web Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [Dowiedz się, Flask kroku 1](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Grupa aplikacji sieci Web
 
@@ -75,11 +75,11 @@ Podczas tworzenia projektu z szablonu określonej platformy, aby zainstalować w
 
 Jeśli używasz kontroli źródła, zwykle pominięto folderu środowisko wirtualne zgodnie z tym środowisku można odtworzyć za pomocą tylko *requirements.txt*. Najlepszym sposobem, aby wykluczyć folder jest najpierw wybierz **I zainstaluje je samodzielnie** w wierszu powyżej, następnie wyłącz automatyczne zatwierdzenie przed utworzeniem środowiska wirtualnego. Aby uzyskać więcej informacji, zobacz [Dowiedz się, samouczek Django — kroki 1 – 2 i 1 – 3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) i [Dowiedz się, samouczek Flask — kroki 1 – 2 i 1 – 3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-W przypadku wdrażania w usłudze Microsoft Azure App Service, wybierz wersję języka Python jako [rozszerzenie witryny](https://aka.ms/PythonOnAppService) i ręcznie zainstalować pakiety. Ponadto ponieważ usługi Azure App Service jest **nie** automatycznie zainstalować pakiety z *requirements.txt* podczas wdrażania w programie Visual Studio, wykonaj szczegóły konfiguracji [aka.ms/ PythonOnAppService](https://aka.ms/PythonOnAppService).
+W przypadku wdrażania w usłudze Microsoft Azure App Service, wybierz wersję języka Python jako [rozszerzenie witryny](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) i ręcznie zainstalować pakiety. Ponadto ponieważ usługi Azure App Service jest **nie** automatycznie zainstalować pakiety z *requirements.txt* podczas wdrażania w programie Visual Studio, wykonaj szczegóły konfiguracji [aka.ms/ PythonOnAppService](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019).
 
 Microsoft Azure Cloud Services *jest* obsługuje *requirements.txt* pliku. Zobacz [projektów usług w chmurze Azure](python-azure-cloud-service-project-template.md) Aby uzyskać szczegółowe informacje.
 
-## <a name="debugging"></a>Debugowanie
+## <a name="debugging"></a>debugowanie
 
 Po rozpoczęciu debugowania projektu sieci web programu Visual Studio uruchamia lokalny serwer internetowy na losowy port i otwiera domyślna przeglądarka, w tym adres i port. Aby określić dodatkowe opcje, kliknij prawym przyciskiem myszy projekt, wybierz **właściwości**i wybierz **uruchamiania Web** karty:
 
@@ -93,7 +93,7 @@ W **debugowania** grupy:
 
 Właściwości w **polecenia Uruchom serwer** i **polecenia Debug serwera** grup (nie jest poniżej przedstawiono na ilustracji) określić, jak serwer sieci web jest uruchamiana. Ponieważ wiele struktur wymaga użycia skryptu poza bieżący projekt, w tym miejscu można skonfigurować skrypt i nazwa modułu uruchamiania może być przekazywany jako parametr.
 
-- **Polecenie**: mogą być skryptami języka Python (*\*PY* pliku), nazwa modułu (na przykład `python.exe -m module_name`), lub jednego wiersza kodu (na przykład `python.exe -c "code"`). Wartość w polu listy rozwijanej wskazuje, który z tych typów jest przeznaczony.
+- **Polecenie**: mogą być skryptami języka Python ( *\*PY* pliku), nazwa modułu (na przykład `python.exe -m module_name`), lub jednego wiersza kodu (na przykład `python.exe -c "code"`). Wartość w polu listy rozwijanej wskazuje, który z tych typów jest przeznaczony.
 - **Argumenty**: te argumenty są przekazywane w wierszu polecenia następujące polecenie.
 - **Środowisko**: listę rozdzielonych znakami nowego wiersza \<NAME > =\<wartość > pary Określanie zmiennych środowiskowych. Te zmienne są ustawiane po wszystkich właściwości, które mogą być modyfikowane w środowisku, na przykład portu ścieżki numer i wyszukiwania, a więc może spowodować zastąpienie tych wartości.
 

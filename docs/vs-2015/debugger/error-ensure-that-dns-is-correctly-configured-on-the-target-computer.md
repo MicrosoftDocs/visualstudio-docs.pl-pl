@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6815e21d0fe7af3a24f2fc36a4f448ec420c89de
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 35c258a018bec8bd38f8b43690c18b37ee9d6c39
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299752"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851933"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Błąd: upewnij się, że DNS jest prawidłowo skonfigurowany na komputerze docelowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,6 +36,6 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 - Aby uzyskać informacje o wyświetlaniu ustawienia DNS w Windows 8.1, Vista, Windows 7, Windows Server 2012, Windows Server 2008 lub Windows Server 2008 R2, wykonaj następujące czynności: w menu **Start** wybierz polecenie **Pomoc i obsługa techniczna**, a następnie wyszukaj pozycję **Zmień ustawienia protokołu TCP/IP**.  
   
-- Aby uzyskać więcej informacji, przejdź do [witryny sieci Web systemu Microsoft Windows](https://go.microsoft.com/fwlink/?LinkId=252720) i Wyszukaj pozycję **Zmień ustawienia protokołu TCP/IP**.  
+- Aby uzyskać więcej informacji, przejdź do [witryny sieci Web systemu Microsoft Windows](https://windows.microsoft.com/) i Wyszukaj pozycję **Zmień ustawienia protokołu TCP/IP**.  
   
   Jeśli nie możesz rozwiązać problemu z usługą DNS, możesz spróbować uruchomić zdalny debuger przy użyciu innego konta. Ten błąd występuje tylko w przypadku uruchamiania zdalnego debugera w ramach konta System lokalny lub usługa sieciowa. W przypadku uruchomienia zdalnego debugera w ramach innego konta może on korzystać z uwierzytelniania NTLM, które nie wymaga usługi DNS. . Aby uzyskać procedurę, zobacz [błąd: usługa zdalny debuger programu Visual Studio na komputerze docelowym nie może nawiązać połączenia z powrotem z tym komputerem](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).

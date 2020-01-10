@@ -9,19 +9,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c562d6f750db7096e37b863c46d6330eb484912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588827"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844317"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Utwórz klasy zastępcze metody testów jednostkowych za pomocą polecenia Utwórz testy jednostkowe
 
 Polecenie **Utwórz testy jednostkowe** powoduje utworzenie wycinków metody testów jednostkowych. Ta funkcja pozwala na łatwą konfigurację projektu testowego, klasy testowej i częściowej metody testowej.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Polecenie **Utwórz testy jednostkowe** jest dostępne tylko dla kodu zarządzanego, który jest przeznaczony dla .NET Framework (ale nie do programu .NET Core).
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Polecenie **Utwórz testy jednostkowe** jest dostępne tylko dla kodu zarządzanego.
+::: moniker-end
 
 Polecenie menu **Utwórz testy jednostkowe** jest rozszerzalne i może służyć do generowania testów dla MSTest, MSTest v2, nunit i xUnit.
 

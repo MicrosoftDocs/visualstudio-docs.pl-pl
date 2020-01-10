@@ -10,12 +10,12 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: d89762511e88e296a51c781c6a403c2dd227ed4f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89d6662a1da987f927951937d04426b5e0b8cfa9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293254"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846577"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
 Za pomocą emulatora Express można testować i debugować usługę w chmurze bez uruchamiania programu Visual Studio jako administrator. Ustawienia projektu można ustawić tak, aby używały emulatora Express lub pełnego emulatora, w zależności od wymagań usługi w chmurze. Aby uzyskać więcej informacji na temat pełnego emulatora, zobacz [Uruchamianie aplikacji platformy Azure w emulatorze obliczeniowym](/azure/storage/common/storage-use-emulator).
@@ -25,7 +25,7 @@ Podczas tworzenia projektu platformy Azure w zestawie Azure SDK 2,3 lub nowszym 
 
 1. Utwórz lub Otwórz projekt usługi w chmurze platformy Azure w programie Visual Studio.
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt, a następnie z menu kontekstowego wybierz polecenie **Właściwości**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz z menu kontekstowego **właściwości**.
 
 1. Na stronie właściwości projektu wybierz kartę **Sieć Web** .
 
@@ -47,7 +47,7 @@ Następujące problemy są znanymi ograniczeniami emulatora Express:
 - Emulator Express nie jest zgodny z serwerem sieci Web usług IIS.
 - Usługa w chmurze może zawierać wiele ról, ale każda rola jest ograniczona do jednego wystąpienia.
 - Nie można uzyskać dostępu do numerów portów poniżej 1000. Jeśli używasz dostawcy uwierzytelniania, który zwykle korzysta z portu poniżej 1000, może zajść potrzeba zmiany tej wartości na numer portu, który znajduje się powyżej 1000.
-- Wszelkie ograniczenia dotyczące emulatora obliczeń platformy Azure mają zastosowanie również do emulatora Express. Na przykład nie można mieć więcej niż 50 wystąpień ról na wdrożenie. Aby uzyskać więcej informacji na temat emulatora obliczeń platformy Azure, zobacz [Uruchamianie aplikacji platformy Azure w emulatorze obliczeniowym](https://go.microsoft.com/fwlink/p/?LinkId=623050).
+- Wszelkie ograniczenia dotyczące emulatora obliczeń platformy Azure mają zastosowanie również do emulatora Express. Na przykład nie można mieć więcej niż 50 wystąpień ról na wdrożenie. Aby uzyskać więcej informacji na temat emulatora obliczeń platformy Azure, zobacz [Uruchamianie aplikacji platformy Azure w emulatorze obliczeniowym](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-performance-profiling-cloud-services?view=vs-2019).
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 [Debugowanie usług Azure Cloud Services](vs-azure-tools-debugging-cloud-services-overview.md)
