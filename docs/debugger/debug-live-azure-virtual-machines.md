@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415776"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776120"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Debuguj aplikacje Live ASP.NET na maszynach wirtualnych platformy Azure i w zestawach skalowania maszyn wirtualnych platformy Azure przy użyciu Snapshot Debugger
 
@@ -35,13 +35,16 @@ W tym samouczku wykonasz następujące czynności:
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Snapshot Debugger dla Virtual Machines platformy Azure i Virtual Machine Scale Sets platformy Azure są dostępne tylko dla programu Visual Studio 2019 Enterprise lub nowszego z **obciążeniem programowania na platformie Azure**. (Na karcie **poszczególne składniki** znajduje się w obszarze **debugowanie i testowanie** > **debugera migawek**).
+* Snapshot Debugger dla Virtual Machines platformy Azure i Virtual Machine Scale Sets platformy Azure są dostępne tylko dla programu Visual Studio 2019 Enterprise lub nowszego z **obciążeniem programowania na platformie Azure**. (Na karcie **poszczególne składniki** znajduje się w obszarze **debugowanie i testowanie** > **debuger migawek**).
 
     Jeśli nie jest jeszcze zainstalowana, zainstaluj [program Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * Kolekcja migawek jest dostępna dla następujących aplikacji sieci Web usługi Azure Virtual Machines\Virtual Machine Scale:
   * Aplikacji ASP.NET uruchomionych w programie .NET Framework 4.6.1 lub nowszej.
   * Aplikacje platformy ASP.NET Core uruchomiony w programie .NET Core 2.0 lub nowszych na Windows.
+
+  > [!NOTE]
+  >  Visual Studio Enterprise uruchomiony w 32-bitowej wersji systemu Windows nie będzie mógł wyświetlać migawek.
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Otwórz swój projekt i uruchomić rozszerzenia Snapshot Debugger
 

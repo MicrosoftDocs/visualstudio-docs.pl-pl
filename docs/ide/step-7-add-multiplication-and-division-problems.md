@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 773768c3329ae32edc0b8c24052dcf328b480d3d
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647471"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776147"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7. Dodawanie problemów mnożenia i dzielenia
 
 W siódmej części tego samouczka dodasz problemy mnożenia i dzielenia, ale najpierw zauważasz, jak wprowadzić tę zmianę. Rozważmy Etap początkowy, który obejmuje przechowywanie wartości.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem.
-> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Aby dodać problemy mnożenia i dzielenia
 
@@ -59,7 +57,7 @@ W siódmej części tego samouczka dodasz problemy mnożenia i dzielenia, ale na
 
      Aby ukończyć quiz, uczestnikom quiz musi odpowiedzieć na cztery problemy, jak pokazano na poniższej ilustracji.
 
-     ![Math Quiz zawierający cztery problemy ](../ide/media/express_finishedquiz.png)<br/>
+     ![Quiz matematyczny z czterema problemami](../ide/media/express_finishedquiz.png)<br/>
 ***Quiz matematyczny*** *z czterema problemami*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8d733c41e2833eeca2a8bf8c68f5e329f0af723c
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.openlocfilehash: 40011b035afdf4a04eb760d13c001e39d9c578c4
+ms.sourcegitcommit: 91a054beb6b3a16ed5140f9f829239ec31bbbec8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75685308"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75810586"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Samouczek: Tworzenie aplikacji ASP.NET Core przy użyciu języka TypeScript w programie Visual Studio
 
@@ -68,7 +68,7 @@ W tym samouczku rozpocznie się Tworzenie prostego projektu zawierającego kod d
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **ASP.NET**, a następnie wybierz **ASP.NET Core aplikacji C#sieci Web —** . W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz pozycję **ASP.NET Core aplikacja C#sieci Web** , a następnie wybierz przycisk **OK**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń pozycję **C#Wizualizacja**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **ASP.NET Core aplikacja C#sieci Web** , a następnie wybierz przycisk **OK**.
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **ASP.NET Core aplikacji sieci Web** , musisz dodać obciążenie **ASP.NET i programowanie dla sieci Web** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 

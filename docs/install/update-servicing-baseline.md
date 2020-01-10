@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590959"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776183"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi
 
@@ -62,7 +62,7 @@ Inna opcja kontrolowania aktualizacji na kliencie polega na wyłączeniu [powiad
 
 Gdy dostępna jest aktualizacja linii bazowej obsługi, pliki programu inicjującego z ustalonymi wersjami są udostępniane dla aktualizacji obsługi w witrynie [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-W przypadku administratorów, którzy wdrażają program przy użyciu instalacji układu sieciowego, administrator powinien zaktualizować [lokalizację układu](update-a-network-installation-of-visual-studio.md). Klienci instalowani z lokalizacji otrzymają powiadomienia o aktualizacji. Jeśli aktualizacja musi zostać wdrożona na klientach, wykonaj [te instrukcje](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Po zmodyfikowaniu pliku Response. JSON dla aktualizacji nie należy dodawać dodatkowych obciążeń, składników ani języków. Zarządzanie tymi ustawieniami musi odbywać się w ramach wdrożenia "Modify" po aktualizacji produktu.
+W przypadku administratorów, którzy wdrażają program przy użyciu instalacji układu sieciowego, administrator powinien zaktualizować [lokalizację układu](update-a-network-installation-of-visual-studio.md). Klienci instalowani z lokalizacji otrzymają powiadomienia o aktualizacji. Jeśli aktualizacja musi zostać wdrożona na klientach, wykonaj [te instrukcje](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Po zmodyfikowaniu pliku Response. JSON dla aktualizacji nie należy dodawać dodatkowych obciążeń, składników ani języków. Zarządzanie tymi ustawieniami musi odbywać się w ramach wdrożenia "Modify" po aktualizacji produktu.
 
 W przypadku instalacji internetowej Uruchom nowy program inicjujący stałej wersji z parametrem `--channelUri` wskazującym na nieistniejący manifest kanału na komputerze klienckim. Jeśli aktualizacja została wdrożona w trybie cichym lub pasywnym, użyj dwóch oddzielnych poleceń:
 

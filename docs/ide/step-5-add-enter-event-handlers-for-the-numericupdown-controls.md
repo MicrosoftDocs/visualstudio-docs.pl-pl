@@ -13,21 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 0d9bc44cb945b8df3ca444ce09b1b5c39795d3bc
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314119"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776082"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5. Dodawanie obsługi zdarzeń Enter dla kontrolek NumericUpDown
 
 W piątej części tego samouczka dodasz obsługę zdarzeń <xref:System.Windows.Forms.Control.Enter>, aby wprowadzić odpowiedzi na problemy z quizem nieco łatwiejszy. Ten kod zostanie wybrany i wyczyści bieżącą wartość w każdej kontrolce <xref:System.Windows.Forms.NumericUpDown>, gdy tylko wybierze ją, a następnie zacznie wprowadzić inną wartość.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem.
-> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-the-default-behavior"></a>Aby sprawdzić zachowanie domyślne
 
@@ -55,7 +53,7 @@ W piątej części tego samouczka dodasz obsługę zdarzeń <xref:System.Windows
 
    ![Wprowadź nazwę metody programu obsługi zdarzeń](media/enter-event.png)
 
-   Właśnie dodano procedurę obsługi zdarzeń Enter dla kontrolki sum NumericUpDown, a nazwa procedury obsługi **answer_Enter**.
+   Właśnie dodano procedurę obsługi zdarzeń Enter dla kontrolki sum NumericUpDown, a nazwa programu obsługi została określona jako **answer_Enter**.
 
 3. W metodzie dla programu obsługi zdarzeń **answer_Enter** Dodaj następujący kod:
 

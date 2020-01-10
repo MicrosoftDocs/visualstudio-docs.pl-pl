@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596271"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775896"
 ---
 # <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
@@ -81,7 +81,7 @@ Jeśli **Zgłoś problem** w programie Visual Studio, zbieramy co najmniej jeden
   - Plik zrzutu
 
 > [!NOTE]
-> Pliki dziennika, zrzuty ekranu i dane rejestrowania są wysyłane do firmy Microsoft tylko wtedy, gdy podajesz uprawnienia, przesyłając raport o problemie, za pomocą którego zostały uwzględnione. Możesz zobaczyć, które pliki są zawarte w kroku "Summary" okna "Zgłoś problem" (Zobacz zrzut ekranu zawarty w tej notatce). Zebrane dzienniki i pliki są przechowywane w folderze% temp% i są czyszczone regularnie i po każdym przekazaniu. Jeśli nie chcesz dołączać dziennika do raportu o problemie, usuń plik z folderu% temp% przed przesłaniem raportu.
+> Pliki dziennika, zrzuty ekranu i nagrania przesyłane dane mogą znacząco zwiększyć czytelność firmy Microsoft i reagować na nie.  Zalecamy uwzględnienie ich. Aby chronić prywatność, wszelkie dołączone pliki dziennika, zrzuty ekranu i dane rejestrowania są wysyłane do firmy Microsoft tylko wtedy, gdy podajesz uprawnienia, przesyłając raport o problemie, za pomocą którego zostały uwzględnione. Przed przesłaniem raportu można zobaczyć, które pliki są zawarte w kroku "Podsumowanie" okna "Zgłoś problem". Pliki dziennika systemowego można wykluczać z raportu, usuwając zaznaczenie pola wyboru Dołącz dzienniki systemowe w kroku "Podsumowanie". Aby uzyskać informacje na ten temat, zobacz poniższy zrzut ekranu. 
   > ![zgłosić problem — podsumowanie dzienników zebranych](media/report-a-problem-logs-collected.png)
 
 

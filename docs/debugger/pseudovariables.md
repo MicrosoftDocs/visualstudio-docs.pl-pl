@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e328e85f58e69ef1d579fd979f629c59b90caf3e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730520"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776088"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudozmiennych pokazanych w debugerze programu Visual Studio
 Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych informacji w oknie zmiennych lub oknie dialogowym **QuickWatch** . Możesz wprowadzić pseudozmienna w taki sam sposób, jak w przypadku wprowadzenia zmiennej normalnej. Pseudozmiennych pokazanych nie są zmienne, ale nie odpowiadają nazwom zmiennych w programie.
@@ -47,7 +47,7 @@ Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych inf
 |`$clk`|Wyświetla godzinę w cyklach zegara.|
 |`$user`|Przedstawia strukturę z informacjami o koncie dla konta, na którym działa aplikacja. Ze względów bezpieczeństwa informacje o haśle nie są wyświetlane.|
 |`$exceptionstack`|Wyświetla ślad stosu bieżącego wyjątku środowisko wykonawcze systemu Windows. `$ exceptionstack` działa tylko w aplikacjach platformy UWP. `$ exceptionstack` nie jest obsługiwana w C++ przypadku wyjątków i SEH|
-|`$returnvalue`|Wyświetla wartość zwracaną przez metodę .NET.|
+|`$returnvalue`|Wyświetla wartość zwracaną przez metodę.|
 
  W C# programie można użyć pseudozmiennych pokazanych pokazanego w poniższej tabeli:
 
@@ -62,8 +62,8 @@ Pseudozmiennych pokazanych są terminami używanymi do wyświetlania pewnych inf
 |Pseudozmienna|Funkcja|
 |--------------------|--------------|
 |`$exception`|Wyświetla informacje o ostatnim wyjątku. Jeśli nie wystąpił żaden wyjątek, Ocena `$exception` wyświetla komunikat o błędzie.|
-|`$delete` lub `$$delete`|Usuwa zmienną niejawną, która została utworzona w oknie **bezpośrednim** . Składnia jest `$delete,` *zmienna* lub `$delete,` *zmienna* `.`|
-|`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest *wyrażeniem* `$objectid,` lub *wyrażeniem* `$listobjectids,` `.`|
+|`$delete` lub `$$delete`|Usuwa zmienną niejawną, która została utworzona w oknie **bezpośrednim** . Składnia jest `$delete,` *zmienna* lub`$delete,` *zmienna*`.`|
+|`$objectids` lub `$listobjectids`|Wyświetla wszystkie aktywne identyfikatory obiektów jako elementy podrzędne określonego wyrażenia. Składnia jest *wyrażeniem* `$objectid,` lub *wyrażeniem*`$listobjectids,``.`|
 |`$` *N* `#`|Wyświetla obiekt z IDENTYFIKATORem obiektu równy *N*.|
 |`$dynamic`|Wyświetla specjalny węzeł **widoku dynamicznego** dla obiektu, który implementuje `IDynamicMetaObjectProvider`. Interfejsu. Składnia jest `$dynamic,` *obiektu*. Ta funkcja ma zastosowanie tylko do kodu, który używa .NET Framework w wersji 4 lub nowszej.|
 

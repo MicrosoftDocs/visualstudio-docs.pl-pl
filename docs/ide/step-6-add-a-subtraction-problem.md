@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c6eed20fc1f2b76c02865c2a5f6b21cde1ae51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 611df946b97f97832b7debfac3d11c5b7972cdae
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589997"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776101"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6. Dodawanie problemu odejmowania
 W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, jak wykonywać następujące zadania:
@@ -32,9 +32,7 @@ W szóstej części tego samouczka dodasz problem odejmowania i dowiesz się, ja
 - Zaktualizuj <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń czasomierza, tak aby program obsługi zdarzeń wypełniał poprawną odpowiedź, gdy zostanie przekroczony czas.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem.
-> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-subtraction-problem"></a>Aby dodać problem odejmowania
 

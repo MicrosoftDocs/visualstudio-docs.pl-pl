@@ -10,21 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e8e306aea1615649223c96f0c5a7041574f844d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c0fa7afc7262a1a78b356104f8cc206e8898f22e
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588853"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776130"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza
 
 Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet, przycisku i innych kontrolek do formularza. Należy również ustawić właściwości dla każdej dodawanej kontrolki. Projekt będzie zawierać formularz, formanty i (w dalszej części samouczka). Przycisk uruchamia quiz, etykiety pokazują problemy z quizem, a inne kontrolki wyświetlają odpowiedzi quizu i czas, który pozostanie do końca quizu.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. 
-> - Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md). 
-> - Aby pobrać kompletną wersję kodu, zobacz [kompletny przykładowy samouczek quizu Matematycznego](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-for-a-form"></a>Aby utworzyć projekt dla formularza
 
