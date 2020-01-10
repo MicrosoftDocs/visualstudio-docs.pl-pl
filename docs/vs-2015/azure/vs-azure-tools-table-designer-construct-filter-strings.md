@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: f1cf5634985683fc86a738d93a6cfa352b52bd24
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c76113f014d8be3bd706ef02ec1135a84cbcae82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290994"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849956"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
-## <a name="overview"></a>Przegląd
-Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](https://go.microsoft.com/fwlink/p/?LinkId=400447).
+## <a name="overview"></a>Omówienie
+Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](https://msdn.microsoft.com/library/dd179355.aspx).
 
-Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://go.microsoft.com/fwlink/p/?LinkId=214806).
+Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operatory porównania
 Następujące operatory logiczne są obsługiwane dla wszystkich typów właściwości:
@@ -35,15 +35,15 @@ Następujące operatory logiczne są obsługiwane dla wszystkich typów właści
 | lt |Mniejsze niż |Cena lt 20 |
 | urządzeń |Mniejsze niż lub równe |Cena Le 100 |
 | ne |Nie równa się |Miasto (Londyn) |
-| i |Oraz |Cena Le 200 i cena gt 3,5 |
+| and |Oraz |Cena Le 200 i cena gt 3,5 |
 | lub |Lub |Cena Le 3,5 lub cena gt 200 |
 | not |nie |nie IsAvailable |
 
 Podczas konstruowania ciągu filtru ważne są następujące reguły:
 
 * Operatory logiczne służą do porównywania właściwości z wartością. Należy pamiętać, że nie można porównać właściwości z wartością dynamiczną; jedna ze stron wyrażenia musi być stałą.
-* W przypadku wszystkich części ciągu filtru rozróżniana jest wielkość liter.
-* Wartość stała musi być tego samego typu danych co właściwość, aby filtr zwracał prawidłowe wyniki. Aby uzyskać więcej informacji na temat obsługiwanych typów właściwości, zobacz [Opis modelu danych usługi Table Service](https://go.microsoft.com/fwlink/p/?LinkId=400448).
+* We wszystkich częściach ciągu filtru jest rozróżniana wielkość liter.
+* Wartość stała musi mieć ten sam typ danych co właściwość, aby filtr zwracał prawidłowe wyniki. Aby uzyskać szczegółowe informacje na temat obsługiwanych typów właściwości, zobacz [Omówienie modelu danych usługi Table service](https://msdn.microsoft.com/library/dd179338.aspx).
 
 ## <a name="filtering-on-string-properties"></a>Filtrowanie właściwości ciągu
 W przypadku filtrowania według właściwości ciągu ujmij ciąg w znaki pojedynczego cudzysłowu.
@@ -103,7 +103,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrowanie właściwości DateTime
-Aby odfiltrować wartość daty i godziny, określ słowo kluczowe **DateTime** , po którym następuje stała Data/godzina w pojedynczym cudzysłowie. Stała Data/godzina musi być w formacie połączonym UTC, zgodnie z opisem w temacie [Formatowanie wartości właściwości DateTime](https://go.microsoft.com/fwlink/p/?LinkId=400449).
+Aby odfiltrować wartość daty i godziny, określ słowo kluczowe **DateTime** , po którym następuje stała Data/godzina w pojedynczym cudzysłowie. Stała Data/godzina musi być w formacie połączonym UTC, zgodnie z opisem w temacie [Formatowanie wartości właściwości DateTime](https://msdn.microsoft.com/library/azure/dd894027.aspx).
 
 Poniższy przykład zwraca jednostki, w których właściwość CustomerSince jest równa 10 lipca 2008:
 

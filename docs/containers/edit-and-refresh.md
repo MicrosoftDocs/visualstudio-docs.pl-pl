@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: b04f0e7dad4847e654560139f9a3978a4d85685b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846919"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Debugowanie aplikacji w lokalnym kontenerze platformy Docker
 
@@ -138,6 +138,6 @@ Aby uzyskać więcej informacji, Przeczytaj, w [jaki sposób program Visual Stud
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Więcej informacji na temat platformy Docker z programem Visual Studio, systemem Windows i platformą Azure
 
 * Dowiedz się więcej o [projektowaniu kontenerów za pomocą programu Visual Studio](/visualstudio/containers).
-* Aby skompilować i wdrożyć kontener platformy Docker, zobacz [integracja platformy Docker dla Azure Pipelines](https://aka.ms/dockertoolsforvsts).
-* Indeks artykułów systemu Windows Server i nano Server można znaleźć w temacie [Informacje o kontenerach systemu Windows](https://aka.ms/containers).
+* Aby skompilować i wdrożyć kontener platformy Docker, zobacz [integracja platformy Docker dla Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
+* Indeks artykułów systemu Windows Server i nano Server można znaleźć w temacie [Informacje o kontenerach systemu Windows](https://docs.microsoft.com/virtualization/windowscontainers/).
 * Dowiedz się więcej o [usłudze Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) i zapoznaj się z [dokumentacją usługi Azure Kubernetes](/azure/aks).

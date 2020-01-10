@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299553"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850701"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na podstawie szablonu. Kluczową częścią rozwiązania jest diagram definicji DSL, który jest przechowywany w DslDefinition. DSL. Definicja DSL definiuje klasy i kształty DSL. Po zmodyfikowaniu i dodaniu tych elementów możesz dodać kod programu, aby dostosować DSL w bardziej szczegółowy sposób.
 
- Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="templates"></a>Wybieranie rozwiązania szablonu
  Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualisation i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  Aby utworzyć nowy język specyficzny dla domeny, należy utworzyć nowe rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przy użyciu szablonu projektu języka specyficznego dla domeny.
 
@@ -105,7 +105,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
  Eksperymentuj z narzędziami. Utwórz elementy i połącz je.
 
- Zamknij eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Zamknij wystąpienie doświadczalne programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 > [!NOTE]
 > Po zmodyfikowaniu DSL nie będzie już można zobaczyć kształtów w przykładowym pliku testowym. Jednak będzie można tworzyć nowe elementy.
@@ -417,7 +417,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
 
  W najprostszym metodzie osiągnięcia tego efektu w definicji DSL należy zdefiniować jedną klasę domeny dla kontenera i jedną klasę domeny dla każdej z nich. Klasa kontenera jest zamapowana na kształt przedziału.
 
- ![Mapa kształtów](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![Mapowanie kształtów](../modeling/media/music-mapcomp.png "Music_MapComp")
 
  Aby uzyskać więcej informacji, zobacz [Właściwości kształtów przedziału](../modeling/properties-of-compartment-shapes.md).
 
@@ -609,7 +609,7 @@ Aby zdefiniować język specyficzny dla domeny (DSL), należy utworzyć rozwiąz
  Zobacz również [: zmienianie przestrzeni nazw języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Rozwiązywanie problemów z
- W poniższej tabeli wymieniono najbardziej typowe problemy, które można napotkać podczas projektowania DSL, wraz z sugestiami dotyczącymi rozwiązania. Więcej porad można znaleźć na [forum narzędzi wizualizacji Extensibililty](https://go.microsoft.com/fwlink/?LinkId=186074).
+ W poniższej tabeli wymieniono najbardziej typowe problemy, które można napotkać podczas projektowania DSL, wraz z sugestiami dotyczącymi rozwiązania. Więcej porad można znaleźć na [forum narzędzi wizualizacji Extensibililty](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 |Problem|Sugestia|
 |-------------|----------------|

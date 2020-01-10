@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299933"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851066"
 ---
 # <a name="talk-to-us"></a>Porozmawiaj z nami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Jesteśmy zainteresowani pomysłami dotyczącymi ulepszania naszej dokumentacji.
  Wersje wstępne programu Visual Studio mają **wskaźnik tego** elementu menu produktu, który umożliwia przesyłanie opinii na temat jakości uruchomionej kompilacji. Nie zobaczysz tego w wydanych wersjach produktu.
 
 ## <a name="i-need-help"></a>Potrzebuję pomocy.
- Zobacz [Pomoc techniczna firmy Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) , aby uzyskać pomoc w trybie online.
+ Zobacz [Pomoc techniczna firmy Microsoft](https://support.microsoft.com/) , aby uzyskać pomoc w trybie online.
 
  Pomoc techniczna poza terenem Stanów Zjednoczonych i Kanady może się różnić. Aby uzyskać listę kontaktów regionalnych, zobacz [Microsoft Worldwide sites](https://www.microsoft.com/worldwide/).
 
  Aby uzyskać więcej informacji, zobacz [Omówienie obsługi](https://visualstudio.microsoft.com/support/).
 
- W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej udzielanej bezpośrednio przez firmę Microsoft, dostępne są umowy w ramach różnych ofert pomocy technicznej klasy Premier. Aby uzyskać więcej informacji, zobacz [Pomoc techniczna Premier usług firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
+ W przypadku większych organizacji, które wymagają zarządzanej pomocy technicznej udzielanej bezpośrednio przez firmę Microsoft, dostępne są umowy w ramach różnych ofert pomocy technicznej klasy Premier. Aby uzyskać więcej informacji, zobacz [Pomoc techniczna Premier usług firmy Microsoft](https://www.microsoft.com/industry/services/support).
 
  Jeżeli produkt jest preinstalowany na nowym komputerze lub urządzeniu, producent sprzętu zapewnia pomoc i obsługę techniczną dla tego oprogramowania. Skontaktuj się bezpośrednio z producentem, aby uzyskać wsparcie.
 

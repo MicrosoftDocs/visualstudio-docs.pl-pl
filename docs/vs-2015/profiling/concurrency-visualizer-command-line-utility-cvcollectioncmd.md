@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9b08035deec65c8c42fe875d380d9cc3d15533a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300651"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850271"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVColl
  Aby pobrać i zainstalować narzędzie wiersza polecenia, przejdź do narzędzia do [zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie program CVCollectionCmd. exe jest instalowany w narzędziach kolekcji%ProgramFiles%\Microsoft concurrency wizualizatora \ (% ProgramFiles (x86)% \ narzędzia kolekcji Microsoft Concurrency Visualizer \ na komputerach x64.  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierz ślad z CVCollectionCmd  
- Można zbierać ślady, uruchamiając aplikację z CVCollectionCmd lub dołączając do niej. Zapoznaj się z poleceniem poniżej, aby poznać odpowiednie opcje. Na przykład:  
+ Można zbierać ślady, uruchamiając aplikację z CVCollectionCmd lub dołączając do niej. Zapoznaj się z poleceniem poniżej, aby poznać odpowiednie opcje. Na przykład  
   
 ```  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
@@ -50,7 +50,7 @@ Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVColl
 |Analiza|Analizuje określony ślad.|Pełna ścieżka pliku CVTrace.|0, jeśli analiza powiodła się.<br /><br /> 1 Jeśli nie można rozpocząć analizy, ponieważ określony ślad dotyczył całego systemu, ale żaden proces docelowy nie został określony.<br /><br /> 2 Jeśli nie można rozpocząć analizy, ponieważ ślad nie był na poziomie systemu i został określony proces.<br /><br /> 3 Jeśli analiza nie powiodła się, ponieważ określony proces jest nieprawidłowy.<br /><br /> 4 Jeśli analiza nie powiodła się, ponieważ określony plik CVTrace jest nieprawidłowy.|  
 |LaunchArgs|Określa docelowe argumenty pliku wykonywalnego. Ta opcja ma zastosowanie tylko do polecenia Uruchom.|Argumenty wiersza polecenia do aplikacji.|Brak.|  
 |OutDir|Określa katalog, w którym mają zostać zapisane pliki śledzenia. Dotyczy poleceń uruchamiania i dołączania.|Ścieżka katalogu lub ścieżka względna.|Brak.|  
-|Process|Określa proces dołączania po wykonaniu polecenia Attach lub proces w śladach do analizy podczas wykonywania polecenia Analizuj. Dotyczy poleceń Attach i Analizuj.|Identyfikator PID lub nazwa procesu.|Brak.|  
+|Proces|Określa proces dołączania po wykonaniu polecenia Attach lub proces w śladach do analizy podczas wykonywania polecenia Analizuj. Dotyczy poleceń Attach i Analizuj.|Identyfikator PID lub nazwa procesu.|Brak.|  
 |Konfiguracja|Określa ścieżkę pliku konfiguracji, jeśli chcesz, aby ustawienia kolekcji były inne niż domyślne.   Dotyczy poleceń uruchamiania, dołączania i analizowania.|Ścieżka katalogu lub względna ścieżka pliku konfiguracyjnego XML.|Brak.|  
   
 ## <a name="customizing-configuration-settings"></a>Dostosowywanie ustawień konfiguracji  
@@ -71,11 +71,11 @@ Za pomocą narzędzia wiersza polecenia wizualizatora współbieżności (CVColl
 |MinorVersion|Określa wersję pomocniczą pliku konfiguracyjnego.|Dla projektów [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] należy mieć wartość 0. Jeśli nie jest równa 0, narzędzie nie będzie działało.|  
 |IncludeEnvSymbolPath|Ustawia wartość określającą, czy jest używana ścieżka symboli środowiska (_NT_SYMBOL_PATH).|-True<br />-FAŁSZ|  
 |DeleteEtlsAfterAnalysis|Ustawia wartość określającą, czy pliki ETL zostaną usunięte po zakończeniu analizy.|-True<br />-FAŁSZ|  
-|SymbolPath —|Określa ścieżkę serwera symboli. Aby uzyskać więcej informacji, zobacz [Korzystanie z serwera symboli firmy Microsoft w celu uzyskania plików symboli debugowania](https://go.microsoft.com/fwlink/?LinkID=149389).|Nazwa lub adres URL katalogu.|  
-|Wyświetla|Zawiera listę dostawców znaczników.|Może zawierać zero lub więcej elementów MarkerProvider.|  
+|SymbolPath —|Określa ścieżkę serwera symboli. Aby uzyskać więcej informacji, zobacz [Korzystanie z serwera symboli firmy Microsoft w celu uzyskania plików symboli debugowania](https://support.microsoft.com/kb/311503).|Nazwa lub adres URL katalogu.|  
+|Znaczniki|Zawiera listę dostawców znaczników.|Może zawierać zero lub więcej elementów MarkerProvider.|  
 |MarkerProvider|Określa dostawcę pojedynczego znacznika.|Musi zawierać następujące elementy:<br /><br /> -Poziom<br />-Identyfikator GUID<br />-Nazwa<br /><br /> Może zawierać następujące elementy:<br /><br /> -Kategorie<br />-IsEnabled|  
 |Poziom|Ustawia poziom ważności MarkerProvider.|— Niska<br />-Normalny<br />— Wysoka<br />-Krytyczny<br />— Wszystko|  
-|Identyfikator GUID|Unikatowy identyfikator globalny dostawcy znaczników ETW.|IDENTYFIKATOR GUID.|  
+|Guid|Unikatowy identyfikator globalny dostawcy znaczników ETW.|IDENTYFIKATOR GUID.|  
 |Nazwa|Określa opis dostawcy znaczników.|Ciąg.|  
 |Kategorie|Określa kategorie zebrane dla dostawcy znaczników.|Rozdzielany przecinkami ciąg liczb lub zakresów liczb.|  
 |isEnabled|Ustawia wartość określającą, czy dostawca znacznika jest włączony dla kolekcji.|-True<br />-FAŁSZ|  

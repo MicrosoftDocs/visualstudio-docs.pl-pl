@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1e98a5902495528082a8328befe724c91f01a3d0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292649"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852400"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
 ## <a name="creating-the-dsl-project"></a>Tworzenie projektu DSL
  Utwórz projekt dla języka specyficznego dla domeny.
 
 #### <a name="to-create-the-project"></a>Aby utworzyć projekt
 
-1. Utwórz projekt projektant języka specyficznego dla domeny. Nadaj mu nazwę `TrackingPropertyDSL`.
+1. Utwórz projekt projektant języka specyficznego dla domeny. Nadaj jej nazwę `TrackingPropertyDSL`.
 
 2. W **kreatorze Projektant języka specyficznego dla domeny**ustaw następujące opcje:
 
@@ -722,9 +722,9 @@ W tym instruktażu pokazano, jak dodać właściwość śledzenia do modelu dome
 
 #### <a name="to-exercise-the-language"></a>Aby skorzystać z języka
 
-1. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**.
+1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-2. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
+2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
      Eksperymentalna kompilacja [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] otwiera rozwiązanie **debugowania** , które zawiera pusty plik testowy.
 

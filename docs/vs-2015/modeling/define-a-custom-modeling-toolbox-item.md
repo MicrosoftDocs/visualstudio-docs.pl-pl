@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299288"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851518"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definiowanie niestandardowego elementu przybornika modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 - Jak pokazano w przykładzie, `<bmp fileName="…"/>` dla ikony przybornika i `<value>string</value>` dla innych elementów.
 
-  \- lub-
+  \- lub —
 
 - `<resource fileName="Resources.dll"`
 
@@ -125,11 +125,11 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
   Węzły w pliku **. tbxinfo** są następujące. Dla każdego węzła istnieje wartość domyślna.
 
-|Nazwa węzła|definiuje|
+|Nazwa węzła|Definiuje|
 |---------------|-------------|
 |displayName|Nazwa elementu przybornika.|
 |tabName|Karta przybornika, w której element powinien zostać wyświetlony. Możesz określić nazwę zwykłej karty dla tego typu diagramu lub oddzielną nazwę.|
-|image|Lokalizacja pliku mapy bitowej ( **. bmp**), która musi mieć wysokość i szerokość 16 oraz głębi koloru 24 bity.|
+|obraz|Lokalizacja pliku mapy bitowej ( **. bmp**), która musi mieć wysokość i szerokość 16 oraz głębi koloru 24 bity.|
 |f1Keyword|Słowo kluczowe, które lokalizuje temat pomocy.|
 |wyowietlon|Etykieta narzędzia dla tego narzędzia.|
 
@@ -139,7 +139,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 > Jeśli zaczniesz korzystać z pliku. tbxinfo po eksperymentie przy użyciu plików diagramu, może się okazać, że Przybornik zawiera zarówno starą, jak i nową wersję elementu przybornika. Może to również wystąpić, jeśli nazwa pliku diagramu została wpisana w pliku tbxinfo. W takim przypadku w menu skrótów przybornika wybierz pozycję **Zresetuj Przybornik**. Niestandardowe elementy przybornika znikną. Uruchom ponownie program Visual Studio, a zostaną wyświetlone poprawne elementy niestandardowe.
 
 ## <a name="Extension"></a>Jak dystrybuować elementy przybornika w rozszerzeniu programu Visual Studio
- Elementy przybornika można dystrybuować do innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkowników, pakując je do rozszerzenia programu Visual Studio (VSIX). Można spakować polecenia, profile i inne rozszerzenia do tego samego pliku VSIX. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Elementy przybornika można dystrybuować do innych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użytkowników, pakując je do rozszerzenia programu Visual Studio (VSIX). Można spakować polecenia, profile i inne rozszerzenia do tego samego pliku VSIX. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  Typowym sposobem tworzenia rozszerzenia programu Visual Studio jest użycie szablonu projektu VSIX. Aby to zrobić, musisz mieć zainstalowany [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -151,7 +151,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 3. Otwórz istniejący projekt rozszerzenia programu Visual Studio.
 
-     \- lub-
+     \- lub —
 
      Zdefiniuj nowy projekt rozszerzenia programu Visual Studio.
 
@@ -170,7 +170,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
      **Kopiuj do katalogu wyjściowego** = **Kopiuj zawsze**
 
-     **Akcja kompilacji** = **zawartość**
+     **Akcja kompilacji** = **Zawartość**
 
      **Uwzględnij w VSIX** = **true**
 
@@ -220,7 +220,7 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorcem, który
 
 3. Umieść każdy dodatkowy zestaw w folderze, którego nazwa jest kodem kultury dla danego języka. Na przykład Umieść wersję francuską zestawu w folderze o nazwie **fr**.
 
-4. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), która zawiera kompletną listę kodów kultur.
+4. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), która zawiera kompletną listę kodów kultur.
 
 5. Kompiluj rozszerzenie programu Visual Studio i Rozpowszechnij go.
 

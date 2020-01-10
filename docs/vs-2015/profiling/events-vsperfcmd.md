@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265dc7f84fbd1ec19b520e2e30d3554e2c66683b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d24fc7a01a8eebe356f37704c1a821332f5dca1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302140"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850764"
 ---
 # <a name="events-vsperfcmd"></a>Zdarzenia (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametry  
- &#124;**Wyłączone**  
+ **On**&#124;**Off**  
  Uruchamia lub kończy zbieranie danych zdarzeń.  
   
  `Guid`  
@@ -48,18 +48,18 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  Opcja **Events** umożliwia zrozumienie następujących słów kluczowych jądra jako nazw dostawców:  
   
  **Podstawowych**  
- Zdarzenia procesu  
+ Przetwarzanie zdarzeń  
   
- **Nici**  
+ **Wątek**  
  Zdarzenia wątku  
   
  **Obraz**  
  Ładowanie i zwalnianie obrazów  
   
- **3,5**  
+ **Dysk**  
  Zdarzenia we/wy dysku  
   
- **Rozszerzeniem**  
+ **Plik**  
  Zdarzenia we/wy pliku  
   
  **Hardfault**  
@@ -68,10 +68,10 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Pagefault**  
  Słabe błędy stron  
   
- **NFS**  
+ **Sieci**  
  Zdarzenia sieciowe  
   
- **Secret**  
+ **Registry**  
  Zdarzenia dostępu do rejestru  
   
  Należy pamiętać, że dostawca jądra może być tylko włączony. Nie można go wyłączyć ani zmienić jego flag, dopóki monitor nie zostanie zamknięty.  
@@ -86,7 +86,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> Jeśli zdarzenia uruchamiania nie zostaną wykluczone, ponieważ te zdarzenia nie są wymienione w pliku Managed Object Format (MOF), są one wyświetlane jako identyfikatory GUID w raporcie. Aby uzyskać więcej informacji, zobacz Tę stronę w witrynie sieci Web firmy Microsoft: [przykładowy plik Managed Object Format (MOF)](https://go.microsoft.com/fwlink/?linkid=37118).  
+> Jeśli zdarzenia uruchamiania nie zostaną wykluczone, ponieważ te zdarzenia nie są wymienione w pliku Managed Object Format (MOF), są one wyświetlane jako identyfikatory GUID w raporcie. Aby uzyskać więcej informacji, zobacz Tę stronę w witrynie sieci Web firmy Microsoft: [przykładowy plik Managed Object Format (MOF)](https://msdn.microsoft.com/library/default.aspx).  
   
 ## <a name="see-also"></a>Zobacz też  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

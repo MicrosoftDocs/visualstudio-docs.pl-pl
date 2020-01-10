@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297959"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851221"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
 
 - ![Porada](../test/media/tip.png "{1&gt;Porada&lt;1}") Dane wyjściowe można skonfigurować tak, aby obejmowały zrzuty ekranu w kodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:
 
-   **C:\Program Files (x86) \Microsoft Visual Studio 11.0 \ Common7\IDE**
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
    Ustaw następujące wartości:
 
@@ -139,17 +139,17 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  [Rozwiązywanie problemów z niepowodzeniem testów między przeglądarkami](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Często zadawane pytania
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Najczęściej zadawane pytania
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym kodowany interfejs użytkownika)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym kodowany interfejs użytkownika)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Zobacz też
  [Używanie automatyzacji interfejsu użytkownika do testowania](../test/use-ui-automation-to-test-your-code.md) [konfiguracji i platform obsługiwanych przez kod dla KODOWANYCH testów interfejsu użytkownika oraz nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Analizowanie kodowanych testów interfejsu użytkownika za pomocą dzienników kodowanych](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md) testów interfejsu użytkownika

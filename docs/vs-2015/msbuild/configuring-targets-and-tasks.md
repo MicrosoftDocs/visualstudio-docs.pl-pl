@@ -9,22 +9,22 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d2e067b70256bd86a1f7598033689d6a498af60
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 892e9615599a8881e219c00f748a0cc1567d996d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298344"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850034"
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurowanie obiektów docelowych i zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można skonfigurować elementy docelowe i zadania programu MSBuild do uruchamiania poza procesem przy użyciu programu MSBuild, aby można było dowiedzieć się, jakie są inne niż te, z których korzystasz. Na przykład można określić 32-bitową .NET Framework 2,0 aplikacji, gdy na komputerze deweloperskim jest uruchomiony system operacyjny 64 .NET Framework 4,5. Można również kierować komputery z systemem z .NET Framework 4 lub wcześniejszym. Kombinacja 32-lub 64-bitową i konkretnej wersji .NET Framework jest znana jako *kontekst docelowy*.  
   
-## <a name="installation"></a>Instalacja  
+## <a name="installation"></a>Instalacja programu  
  .NET Framework 4,5 i 4.5.1 zastępują środowisko uruchomieniowe języka wspólnego (CLR), cele, zadania i narzędzia dla .NET Framework 4 bez zmiany ich nazw. .NET Framework 4.5.1 jest instalowany jako część [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
- Jeśli chcesz zainstalować program MSBuild niezależnie od programu Visual Studio, możesz pobrać pakiet instalacyjny z programu [MSBuild Download](https://go.microsoft.com/fwlink/?LinkId=309745). Należy również zainstalować wersje .NET Framework, których chcesz użyć.  
+ Jeśli chcesz zainstalować program MSBuild niezależnie od programu Visual Studio, możesz pobrać pakiet instalacyjny z programu [MSBuild Download](https://www.microsoft.com/download/details.aspx?id=40760). Należy również zainstalować wersje .NET Framework, których chcesz użyć.  
   
 ## <a name="targets-and-tasks"></a>Cele i zadania  
  Program MSBuild uruchamia niektóre zadania kompilacji, aby określić większy zestaw kontekstów.  Na przykład 32-bitowy program MSBuild może uruchomić zadanie kompilacji w procesie 64-bitowym, aby wskazać komputer z 64-bitowym. Jest to kontrolowane przez `UsingTask` argumenty i `Task` parametrów. Elementy docelowe zainstalowane przez .NET Framework 4,5 ustawiają te argumenty i parametry, a żadne zmiany nie są wymagane do kompilowania aplikacji dla różnych kontekstów docelowych.  

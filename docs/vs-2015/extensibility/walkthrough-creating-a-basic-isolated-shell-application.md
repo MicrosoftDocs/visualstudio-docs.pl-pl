@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291265"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850346"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Przewodnik: Tworzenie podstawowej aplikacji powłoki izolowanej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "74291265"
 W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dostosować okno Pomoc na temat narzędzia i utworzyć program instalacyjny, który zainstaluje izolowaną powłokę.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Aby wdrożyć powłokę izolowaną, należy również użyć pakietu redystrybucyjnego programu Visual Studio Shell (izolowany).  
+ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md). Aby wdrożyć powłokę izolowaną, należy również użyć pakietu redystrybucyjnego programu Visual Studio Shell (izolowany).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Tworzenie rozwiązania izolowanej powłoki  
  W tej sekcji pokazano, jak utworzyć rozizolowane rozwiązanie powłoki przy użyciu szablonu projektu izolowanego programu Visual Studio Shell. Rozwiązanie zawiera następujące projekty:  
@@ -163,7 +163,7 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
 6. Skompiluj ponownie rozwiązanie i Rozpocznij debugowanie izolowanej powłoki. Pole pomoc/informacje powinno mieć wartość około kwadratu.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Przed wdrożeniem aplikacji izolowanej powłoki  
- Izolowaną aplikację powłoki można zainstalować na dowolnym komputerze, na którym znajduje się pakiet redystrybucyjny programu Visual Studio Shell (izolowany). Aby uzyskać więcej informacji na temat pakietu redystrybucyjnego, zobacz witrynę sieci Web [do pobrania rozszerzalności programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Izolowaną aplikację powłoki można zainstalować na dowolnym komputerze, na którym znajduje się pakiet redystrybucyjny programu Visual Studio Shell (izolowany). Aby uzyskać więcej informacji na temat pakietu redystrybucyjnego, zobacz witrynę sieci Web [do pobrania rozszerzalności programu Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Wdrażanie aplikacji izolowanej powłoki  
  Aplikację powłoki izolowanej należy wdrożyć na komputerze docelowym przez utworzenie projektu Instalatora. Należy określić następujące elementy:  

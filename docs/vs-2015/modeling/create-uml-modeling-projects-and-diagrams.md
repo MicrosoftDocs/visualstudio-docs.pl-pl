@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301001"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852021"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Tworzenie projektów i diagramów modelowania UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
  Diagramy modelowania UML i Diagramy warstw mogą istnieć tylko wewnątrz projektu modelowania. Każdy projekt modelowania zawiera współużytkowany model UML i kilka diagramów UML. Każdy diagram jest częściowym widokiem modelu. Model UML zawiera wszystkie elementy na diagramach UML i można go wyświetlić za pomocą Eksploratora modelu UML. Aby uzyskać informacje o modelach i ich relacji z diagramami, zobacz [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md). Aby uzyskać informacje na temat modelowania projektów w ramach kontroli wersji, zobacz [Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md) i tworzenie [struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)
 
 > [!NOTE]
-> Istnieje inny rodzaj diagramu — Diagram klas .NET, który służy do wizualizacji kodu programu. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Istnieje inny rodzaj diagramu — Diagram klas .NET, który służy do wizualizacji kodu programu. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="CreatingModelingDiagrams"></a>Tworzenie diagramu w projekcie modelowania
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -59,7 +59,7 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
    - Wybierz projekt modelowania, który już istnieje w rozwiązaniu, a następnie kliknij przycisk **OK**.
 
-     \- lub-
+     \- lub —
 
    1. Wybierz pozycję **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.
 
@@ -143,17 +143,17 @@ Modele UML pomagają zrozumieć, omówić i projektować systemy oprogramowania.
 
 - Diagramy klas, które są tworzone jako widoki kodu źródłowego. Nie są one powiązane z diagramami klas UML. Aby uzyskać więcej informacji, zobacz [projektowanie i wyświetlanie klas i typów](../ide/designing-and-viewing-classes-and-types.md).
 
-- Mapy kodu. Zobacz [zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
+- Mapy kodu. Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md).
 
 - Diagramy, które nie są diagramami UML ani diagramami warstw, takich jak języki specyficzne dla domeny.
 
 ## <a name="TroubleshootingModelingProjects"></a>Rozwiązywanie problemów z projektami i diagramami modelowania
  W poniższej tabeli opisano problemy, które mogą wystąpić w przypadku modelowania projektów lub diagramów oraz sposoby ich rozwiązywania:
 
-|**Wykonaj**|**Dodatek**|**Tłumaczenia**|
+|**Problem**|**Dodatek**|**Rozdzielczość**|
 |---------------|----------------|--------------------|
 |Projekt modelowania nie może zostać otwarty ani załadowany do rozwiązania.<br /><br /> Zostanie wyświetlony następujący komunikat:<br /><br /> "Co najmniej jeden projekt w rozwiązaniu nie został poprawnie załadowany. Aby uzyskać szczegółowe informacje, zobacz Okno Dane wyjściowe ".<br /><br /> W oknie dane wyjściowe zostanie wyświetlony następujący komunikat:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: błąd: nierozpoznany format identyfikatora GUID".|Projekt modelowania zawiera odwołania do projektów, które mają taką samą nazwę i znajdują się w tym samym rozwiązaniu.<br /><br /> Na przykład warstwa jest połączona z projektami o tej samej nazwie i znajdują się w tym samym rozwiązaniu.|Za pomocą edytora tekstów Otwórz plik projektu modelowania, Usuń odwołania, a następnie spróbuj ponownie otworzyć projekt modelowania.<br /><br /> Aby uniknąć tego problemu, nie należy dodawać odwołań do projektów, które mają taką samą nazwę. Upewnij się, że projekty mają unikatowe nazwy.|
-|Brak elementów w diagramach, które są dodawane, kopiowane lub przeciągnięte do innych projektów modelowania lub do innych lokalizacji w rozwiązaniu.<br /><br /> oraz<br /><br /> Podczas próby otwarcia diagramu wyświetlane są następujące komunikaty:<br /><br /> -Brak niektórych kształtów lub łączników na diagramie, ponieważ ich definicje nie istnieją w tym projekcie. Definicje zostały usunięte z modelu, podczas gdy diagram został zamknięty lub diagram został skopiowany do innego projektu, który nie zawiera tych definicji. "<br /><br /> oraz<br /><br /> -"Ten dokument jest otwarty przez inny projekt".|Plik diagramu został dodany, przeciągnięty lub skopiowany z projektu modelowania do innego projektu modelowania lub do innej lokalizacji w rozwiązaniu.|Aby skopiować plik diagramu, Utwórz nowy diagram, a następnie skopiuj elementy z diagramu źródłowego do nowego diagramu.|
+|Brak elementów w diagramach, które są dodawane, kopiowane lub przeciągnięte do innych projektów modelowania lub do innych lokalizacji w rozwiązaniu.<br /><br /> — lub —<br /><br /> Podczas próby otwarcia diagramu wyświetlane są następujące komunikaty:<br /><br /> -Brak niektórych kształtów lub łączników na diagramie, ponieważ ich definicje nie istnieją w tym projekcie. Definicje zostały usunięte z modelu, podczas gdy diagram został zamknięty lub diagram został skopiowany do innego projektu, który nie zawiera tych definicji. "<br /><br /> — lub —<br /><br /> -"Ten dokument jest otwarty przez inny projekt".|Plik diagramu został dodany, przeciągnięty lub skopiowany z projektu modelowania do innego projektu modelowania lub do innej lokalizacji w rozwiązaniu.|Aby skopiować plik diagramu, Utwórz nowy diagram, a następnie skopiuj elementy z diagramu źródłowego do nowego diagramu.|
 
 ## <a name="see-also"></a>Zobacz też
  [Edycja modeli UML i diagramów](../modeling/edit-uml-models-and-diagrams.md) [struktury rozwiązania do modelowania](../modeling/structure-your-modeling-solution.md)

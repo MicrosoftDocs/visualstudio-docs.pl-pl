@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e590af12e8979d16a946339cae530fd5ccc1b08d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301116"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850736"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Załaduj plik jako model nawigacji**. Bardziej zaawansowaną metodą jest odczyt danych jako modelu, po którym może się poruszać kod źródłowy szablonu tekstu. Na przykład można wczytać plik XML i nawigować po nim przy użyciu wyrażeń XPath. Można również użyć [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765) , aby utworzyć zestaw klas, za pomocą których można odczytywać dane XML.
+ **Załaduj plik jako model nawigacji**. Bardziej zaawansowaną metodą jest odczyt danych jako modelu, po którym może się poruszać kod źródłowy szablonu tekstu. Na przykład można wczytać plik XML i nawigować po nim przy użyciu wyrażeń XPath. Można również użyć [XSD. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) , aby utworzyć zestaw klas, za pomocą których można odczytywać dane XML.
 
  **Edytuj plik modelu w diagramie lub formularzu.** [!INCLUDE[dsl](../includes/dsl-md.md)] udostępnia narzędzia, które pozwalają edytować model jako diagram lub formularz systemu Windows. Ułatwia to przedyskutowanie modelu z użytkownikami wygenerowanej aplikacji. [!INCLUDE[dsl](../includes/dsl-md.md)] tworzy również zestaw klas o jednoznacznie określonym typie, które odzwierciedlają strukturę modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md).
 

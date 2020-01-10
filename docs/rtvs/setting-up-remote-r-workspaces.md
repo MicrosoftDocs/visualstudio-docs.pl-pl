@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888543"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850067"
 ---
 # <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnych obszarów roboczych
 
@@ -143,7 +143,7 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć zainstalowany interpret
 
      Obie funkcje mają identyczną funkcjonalność, ale korzyści z używania oprogramowania Microsoft R Open są dostępne na podstawie dodatkowych, przyspieszonego sprzętu algebry bibliotek, które dają dostęp do [biblioteki jądra matematycznej Intel](https://software.intel.com/intel-mkl).
 
-2. Uruchom [instalatora usług R](https://aka.ms/rtvs-services) i uruchom ponownie po wyświetleniu monitu. Instalator wykonuje następujące czynności:
+2. Uruchom [instalatora usług R](https://github.com/Microsoft/RTVS/blob/master/doc/rtvsd/rtvs-remote-downloads.md) i uruchom ponownie po wyświetleniu monitu. Instalator wykonuje następujące czynności:
 
     - Utwórz folder w *narzędziach%PROGRAMFILES%\r Tools for Visual Studio\1.0\\* i skopiuj wszystkie wymagane pliki binarne.
     - Zainstaluj `RHostBrokerService` i `RUserProfileService` i skonfiguruj do automatycznego uruchamiania.
@@ -184,7 +184,7 @@ Przy użyciu usługi R Services uruchomionej na komputerze zdalnym należy równ
 
     Jeśli jednak instalujesz certyfikat na serwerze dostępnym z Internetu (na przykład na maszynie wirtualnej platformy Azure), użyj w pełni kwalifikowanej nazwy domeny (FQDN) serwera, ponieważ nazwa FQDN serwera internetowego nie jest taka sama jak nazwa NETBIOS.
 
-    Aby użyć nazwy FQDN, przejdź do lokalizacji, w której usługi R Services są zainstalowane (domyślnie: *% Program Files%\r Remote Service for Visual Studio\1.0* ), Otwórz plik *Microsoft. R. host. Broker. config. JSON* w edytorze tekstów i Zastąp jego zawartość następującym poleceniem: przypisanie nazwy POSPOLITej do dowolnego z nazw FQDN serwera, takich jak `foo.westus.cloudapp.azure.com`:
+    Aby użyć nazwy FQDN, przejdź do lokalizacji, w której usługi R Services są zainstalowane (domyślnie: *% Program Files%\r Remote Service for Visual Studio\1.0* ), Otwórz plik *Microsoft. R. host. Broker. config. JSON* w edytorze tekstów i Zastąp jego zawartość następującym kodem, przypisując do dowolnej nazwy FQDN serwera, na przykład `foo.westus.cloudapp.azure.com`:
 
     ```json
     {

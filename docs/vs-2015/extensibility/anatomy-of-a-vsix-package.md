@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295649"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852288"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +59,4 @@ Pakiet VSIX to plik. vsix, który zawiera co najmniej jedno rozszerzenie program
 ## <a name="content_typesxml"></a>[Content_Types]. XML  
  Plik [Content_Types]. XML identyfikuje typy plików w rozwiniętym pliku VSIX. Program Visual Studio używa tego pliku podczas instalacji pakietu, ale nie instaluje samego pliku. Aby uzyskać więcej informacji na temat tego pliku, zapoznaj [się ze strukturą pliku Content_types\]. XML](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Plik [Content_Types]. XML jest wymagany przez Standard OPC (Open pakowanie Conventions). Aby uzyskać więcej informacji na temat OPC, zobacz [OPC: A New Standard for pakowanie danych](https://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.
+ Plik [Content_Types]. XML jest wymagany przez Standard OPC (Open pakowanie Conventions). Aby uzyskać więcej informacji na temat OPC, zobacz [OPC: A New Standard for pakowanie danych](https://msdn.microsoft.com/magazine/cc163372.aspx) w witrynie MSDN w sieci Web.

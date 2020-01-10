@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299580"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850239"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].,
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
@@ -94,7 +94,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
    - Jeśli połączenie danych z przykładową bazą danych AdventureWorksLT jest dostępne na liście rozwijanej, wybierz ją.
 
-      —lub—
+      lub
 
    - Kliknij pozycję **nowe połączenie** i Utwórz połączenie z bazą danych AdventureWorksLT.
 
@@ -194,7 +194,7 @@ W tym instruktażu utworzysz aplikację WPF, która będzie wyświetlać dane z 
 
 1. Naciśnij klawisz **F5**.
 
-     Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące kwestie:
+     Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące informacje:
 
     - Pole kombi **Identyfikator zamówienia sprzedaży** zawiera **71774**. Jest to pierwszy identyfikator zamówienia w jednostce.
 

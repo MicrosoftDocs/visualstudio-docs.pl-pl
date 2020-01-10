@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297777"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851659"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku 
  Aby uzyskać więcej informacji, zobacz kontrolki [danych wejściowych HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [HtmlInputPassword Server Control — składnia deklaratywna](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [instrukcje: Ustawianie kontrolki serwera sieci Web dla wpisu hasła](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)oraz [Przewodnik: sprawdzanie poprawności danych wejściowych użytkownika na stronie formularzy sieci Web](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała SSL (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz "Zabezpieczanie połączeń przy użyciu protokołu SSL" w [Przewodniku obsługi usług IIS](https://go.microsoft.com/fwlink/?linkid=47856). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika na stronach sieci Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała SSL (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz "Zabezpieczanie połączeń przy użyciu protokołu SSL" w [Przewodniku obsługi usług IIS](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika na stronach sieci Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Wejściowy (pole wyboru)** pole ![wyboru przybornika strony HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
 

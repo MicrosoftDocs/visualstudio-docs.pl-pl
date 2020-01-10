@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298124"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846553"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skrypt programu Windows PowerShell)
 ## <a name="syntax"></a>Składnia
@@ -32,7 +32,7 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Konfigurowanie
+## <a name="configuration"></a>Konfiguracja
 Ścieżka do pliku konfiguracji JSON opisującego Szczegóły wdrożenia.
 
 | Parametr | Wartość domyślna |
@@ -41,8 +41,8 @@ Publish-WebApplicationWebSite
 | Wymagany? |true |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
+| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web.
@@ -50,23 +50,23 @@ Nazwa subskrypcji platformy Azure, w której chcesz utworzyć witrynę sieci Web
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
+| Wymagany? |{1&gt;false&lt;1} |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
+| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Ścieżka do pakietu wdrożeniowego sieci Web do opublikowania w witrynie sieci Web. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z usługą Azure Cloud Services i ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
+Ścieżka do pakietu wdrożeniowego sieci Web do opublikowania w witrynie sieci Web. Ten pakiet można utworzyć przy użyciu Kreatora publikacji w sieci Web w programie Visual Studio. Aby uzyskać więcej informacji, zobacz Rozpoczynanie [pracy z usługą Azure Cloud Services i ASP.NET](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019).
 
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
+| Wymagany? |{1&gt;false&lt;1} |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
+| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
@@ -74,11 +74,11 @@ Nazwa użytkownika i hasło do bazy danych SQL na platformie Azure.
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
+| Wymagany? |{1&gt;false&lt;1} |
 | Pozycja |nazwane |
 | Wartość domyślna |brak |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
+| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia wyjściowego.
@@ -86,11 +86,11 @@ Jeśli wartość jest równa true, Wydrukuj komunikaty ze skryptu do strumienia 
 | Parametr | Wartość domyślna |
 | --- | --- |
 | Aliasy |brak |
-| Wymagany? |false |
+| Wymagany? |{1&gt;false&lt;1} |
 | Pozycja |nazwane |
-| Wartość domyślna |false |
-| Akceptujesz dane wejściowe potoku? |false |
-| Akceptować symbole wieloznaczne? |false |
+| Wartość domyślna |{1&gt;false&lt;1} |
+| Akceptujesz dane wejściowe potoku? |{1&gt;false&lt;1} |
+| Akceptować symbole wieloznaczne? |{1&gt;false&lt;1} |
 
 ## <a name="remarks"></a>Uwagi
 Aby uzyskać pełne wyjaśnienie, jak używać skryptu do tworzenia środowisk deweloperskich i testowych, zobacz [Używanie skryptów programu Windows PowerShell do publikowania w środowiskach deweloperskich i testowych](vs-azure-tools-publishing-using-powershell-scripts.md).
@@ -123,5 +123,5 @@ Plik konfiguracji JSON określa szczegóły dotyczące tego, co ma zostać wdro�
 
 Plik konfiguracji JSON można edytować w celu zmiany wdrożenia. Sekcja witryny sieci Web jest wymagana, ale sekcja bazy danych jest opcjonalna.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby uzyskać więcej informacji, zobacz [Publish-WebApplicationVM (skrypt programu Windows PowerShell).](vs-azure-tools-publish-webapplicationvm.md)

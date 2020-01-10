@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299321"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850982"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własnej strony początkowej
 Możesz utworzyć niestandardową stronę początkową przy użyciu szablonu projektu strony początkowej lub przez utworzenie pustej strony początkowej.  
@@ -28,7 +28,7 @@ Możesz utworzyć niestandardową stronę początkową przy użyciu szablonu pro
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Aby utworzyć niestandardową stronę początkową przy użyciu szablonu projektu Strona początkowa  
   
-1. Pobierz i zainstaluj [szablon projektu strony początkowej](https://go.microsoft.com/fwlink/?LinkId=186204) z galerii programu Visual Studio.  
+1. Pobierz i zainstaluj [szablon projektu strony początkowej](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) z galerii programu Visual Studio.  
   
     > [!WARNING]
     > W tym momencie szablon projektu strony początkowej programu Visual Studio 2010 nie został uaktualniony. Informacje o sposobie uaktualniania tego szablonu znajdują się w temacie [How to: Upgrade the Custom Start niestandardowej strony programu Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  

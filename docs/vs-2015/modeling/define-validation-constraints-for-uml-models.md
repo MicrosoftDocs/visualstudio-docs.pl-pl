@@ -11,17 +11,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295840"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849741"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełnia określony warunek. Na przykład można zdefiniować ograniczenie, aby upewnić się, że użytkownik nie tworzy pętli relacji dziedziczenia. To ograniczenie jest wywoływane, gdy użytkownik próbuje otworzyć lub zapisać model i może być również wywoływana ręcznie. Jeśli ograniczenie nie powiedzie się, zostanie dodany komunikat o błędzie do okna błędu. Można spakować te ograniczenia do rozszerzenia integracji programu Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) i rozpowszechnić je innym użytkownikom programu Visual Studio.
+Można zdefiniować ograniczenia walidacji, które sprawdzają, czy model spełnia określony warunek. Na przykład można zdefiniować ograniczenie, aby upewnić się, że użytkownik nie tworzy pętli relacji dziedziczenia. To ograniczenie jest wywoływane, gdy użytkownik próbuje otworzyć lub zapisać model i może być również wywoływana ręcznie. Jeśli ograniczenie nie powiedzie się, zostanie dodany komunikat o błędzie do okna błędu. Można spakować te ograniczenia do rozszerzenia integracji programu Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) i rozpowszechnić je innym użytkownikom programu Visual Studio.
 
  Można także definiować ograniczenia, które weryfikują model względem zasobów zewnętrznych, takich jak bazy danych. Jeśli chcesz sprawdzić poprawność kodu programu na diagramie warstwowym, zobacz [Dodawanie niestandardowej weryfikacji architektury do diagramów warstwowych](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 

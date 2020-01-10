@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297828"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851812"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "74297828"
 
  **Debuger do uruchomienia** Określa domyślnego hosta dla debugera.
 
-- Wybierz pozycję **komputer lokalny** , aby uruchomić aplikację na komputerze hosta programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji na komputerze lokalnym](https://go.microsoft.com/fwlink/?LinkId=234912).
+- Wybierz pozycję **komputer lokalny** , aby uruchomić aplikację na komputerze hosta programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji na komputerze lokalnym](https://msdn.microsoft.com/library/windows/apps/hh441483(v=VS.85).aspx).
 
-- Wybierz **symulator** , aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji w symulatorze](https://go.microsoft.com/fwlink/?LinkId=234913).
+- Wybierz **symulator** , aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [Uruchamianie aplikacji w symulatorze](https://msdn.microsoft.com/library/windows/apps/hh441475(v=VS.85).aspx).
 
-- Wybierz pozycję **maszyna zdalna** , aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [Uruchamianie aplikacji na komputerze zdalnym](https://go.microsoft.com/fwlink/?LinkId=234914).
+- Wybierz pozycję **maszyna zdalna** , aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [Uruchamianie aplikacji na komputerze zdalnym](https://msdn.microsoft.com/library/windows/apps/hh441469(v=VS.85).aspx).
 
   **Uruchom aplikację** Określa, czy uruchomić aplikację po naciśnięciu klawisza F5 lub kliknięciu przycisku **Debuguj**, **Rozpocznij debugowanie**. Wybierz pozycję **tak** , aby uruchomić aplikację. w przeciwnym razie wybierz pozycję **nie**. Jeśli wybierzesz opcję **nie**, nadal możesz debugować aplikację, jeśli używasz innej metody do jej uruchamiania.
 

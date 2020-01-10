@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5770fb604c1c700919f2e738a00ee07cc969b355
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297740"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850119"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Język specyficzny dla domeny można zainstalować na własnym komputerze lub na
 ## <a name="which"></a>Wybieranie między wdrożeniem VSIX i MSI
  Istnieją dwie metody wdrażania języka specyficznego dla domeny:
 
-|Metoda|Korzyści|
+|Metoda|Zalety|
 |------------|--------------|
 |VSX (rozszerzenie[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])|Bardzo łatwe do wdrożenia: Skopiuj i wykonaj plik **. vsix** z projektu DslPackage.<br /><br /> Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie DSL przy użyciu VSX](#Installing).|
 |MSI (plik Instalatora)|-Zezwala użytkownikowi na otwieranie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przez dwukrotne kliknięcie pliku DSL.<br />— Kojarzy ikonę z typem pliku DSL na komputerze docelowym.<br />— Kojarzy XSD (schemat XML) z typem pliku DSL. Pozwala to uniknąć ostrzeżeń, gdy plik jest ładowany do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Aby utworzyć plik MSI, należy dodać do swojego rozwiązania projekt instalacyjny.<br /><br /> Aby uzyskać więcej informacji, zobacz [wdrażanie DSL przy użyciu pliku MSI](#msi).|
@@ -71,7 +71,7 @@ Język specyficzny dla domeny można zainstalować na własnym komputerze lub na
 
  Aby uzyskać więcej informacji o plikach MSI i innych opcjach wdrażania, zobacz [wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md).
 
- Aby skompilować plik MSI, należy dodać projekt konfiguracji do rozwiązania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Najprostszą metodą tworzenia projektu Instalatora jest użycie szablonu CreateMsiSetupProject.tt, który można pobrać z [witryny VMSDK](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Aby skompilować plik MSI, należy dodać projekt konfiguracji do rozwiązania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Najprostszą metodą tworzenia projektu Instalatora jest użycie szablonu CreateMsiSetupProject.tt, który można pobrać z [witryny VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Aby wdrożyć język DSL w pliku MSI
 
@@ -99,7 +99,7 @@ Język specyficzny dla domeny można zainstalować na własnym komputerze lub na
 
    - W menu **kompilacja** Otwórz **Configuration Manager**i wybierz konfigurację, którą chcesz skompilować, taką jak **wersja** lub **Debuguj**.
 
-4. Przejdź do [strony głównej wizualizacji i modelowania SDK](https://go.microsoft.com/fwlink/?LinkID=186128), a następnie na karcie **pliki do** pobrania Pobierz **CreateMsiSetupProject.tt**.
+4. Przejdź do [strony głównej wizualizacji i modelowania SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples), a następnie na karcie **pliki do** pobrania Pobierz **CreateMsiSetupProject.tt**.
 
 5. Dodaj **CreateMsiSetupProject.tt** do projektu DSL.
 
@@ -129,7 +129,7 @@ Język specyficzny dla domeny można zainstalować na własnym komputerze lub na
 
     - Po dwukrotnym kliknięciu pliku [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamiany i otwiera plik DSL w edytorze DSL.
 
-    Jeśli wolisz, możesz utworzyć projekt instalacyjny ręcznie, zamiast używać szablonu tekstu. Aby zapoznać się z przewodnikiem zawierającym tę procedurę, zobacz rozdział 5 [laboratorium SDK wizualizacji i modelowania](https://go.microsoft.com/fwlink/?LinkId=208878).
+    Jeśli wolisz, możesz utworzyć projekt instalacyjny ręcznie, zamiast używać szablonu tekstu. Aby zapoznać się z przewodnikiem zawierającym tę procedurę, zobacz rozdział 5 [laboratorium SDK wizualizacji i modelowania](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Aby odinstalować DSL, które zostały zainstalowane z pliku MSI
 

@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298389"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850076"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debugowanie układu przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Na karcie **układ** dom Explorer jest wyświetlany [model pola CSS](https://go.microsoft.com/fwlink/?LinkID=238778) dla wybranego elementu w aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplikacja do sklepu Windows Phone lub aplikacja utworzona przy użyciu Visual Studio Tools dla Apache Cordova. Ta reprezentacja wizualna modelu Box służy do identyfikowania i modyfikowania wartości związanych z układem, które wpływają na wygląd elementów.  
+ Na karcie **układ** dom Explorer jest wyświetlany [model pola CSS](https://www.w3.org/TR/CSS2/box.html) dla wybranego elementu w aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplikacja do sklepu Windows Phone lub aplikacja utworzona przy użyciu Visual Studio Tools dla Apache Cordova. Ta reprezentacja wizualna modelu Box służy do identyfikowania i modyfikowania wartości związanych z układem, które wpływają na wygląd elementów.  
   
 > [!TIP]
 > Zmiany wprowadzane na karcie **Układ** nie są trwałe. Możesz wprowadzać trwałe zmiany w kodzie źródłowym, a następnie odświeżyć aplikację przy użyciu przycisku **Odśwież aplikację systemu** Windows (tylko aplikacje Sklepu windows i Windows Phone sklepu) na pasku narzędzi Debugowanie. W ten sposób można uniknąć ponownego uruchomienia debugera.  
@@ -120,7 +120,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 12. Na karcie **Układ** wybierz pozycję **66,66** lub **146,66**, która zostanie wyświetlona w polu **margines** po lewej stronie pola.  
   
-13. Wpisz `0` i naciśnij klawisz ENTER. (Możesz również zmienić wartość za pomocą klawiszy Strzałka w górę i Strzałka w dół).  
+13. Wpisz polecenie `0` i naciśnij klawisz Enter. (Możesz również zmienić wartość za pomocą klawiszy Strzałka w górę i Strzałka w dół).  
   
 14. Wybierz inne \<IMG > elementy w DOM Explorer i zmień wartości marginesów z lewej strony na 0.  
   

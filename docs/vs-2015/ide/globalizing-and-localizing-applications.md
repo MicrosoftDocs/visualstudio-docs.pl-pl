@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1121058d38d129b417cbd79b685e5bd549353a7c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290315"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845254"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizacja i lokalizacja aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ Jeśli planujesz dystrybucję aplikacji do odbiorców międzynarodowych, musisz 
  [Aplikacje globalizacji](../ide/globalizing-applications.md) Zawiera łącza do stron dotyczących tworzenia aplikacji, które obsługują wiele kultur.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
- [Globalizacja aplikacji (aplikacje do sklepu Windows przy użyciu języka JavaScript i HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Zawiera tematy z instrukcjami i wskazówki ułatwiające globalizację i lokalizowanie aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] utworzonej przy użyciu języka JavaScript i języka HTML.
+ [Globalizacja aplikacji (aplikacje do sklepu Windows przy użyciu języka JavaScript i HTML)](https://msdn.microsoft.com/library/windows/apps/hh465006.aspx) Zawiera tematy z instrukcjami i wskazówki ułatwiające globalizację i lokalizowanie aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] utworzonej przy użyciu języka JavaScript i języka HTML.
 
- [Globalizacja aplikacji (aplikacje ze sklepu Windows przy C#użyciuC++ /VB/i języka XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) zawiera tematy i wskazówki ułatwiające globalizację i lokalizowanie aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] utworzonej przy użyciu języka XAML i wizualizacji C#, Visual Basic lub wizualizacji C++.
+ [Globalizacja aplikacji (aplikacje ze sklepu Windows przy C#użyciuC++ /VB/i języka XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/Hh965328(v=win.10).aspx) zawiera tematy i wskazówki ułatwiające globalizację i lokalizowanie aplikacji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] utworzonej przy użyciu języka XAML i wizualizacji C#, Visual Basic lub wizualizacji C++.
 
  [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do użytku na całym świecie](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Zawiera ogólne informacje na temat programowania dla użytkowników międzynarodowych.
 

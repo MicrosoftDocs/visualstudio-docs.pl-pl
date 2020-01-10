@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e404d569776eef1cd2146ed636177be30151aaab
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5b1b4846bcceba2325da1c835b59a48e651190a1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299730"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852121"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Obsługa zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ Dostępne są różne opcje pomocy technicznej dla klientów z pytaniami dotycz�
 ## <a name="free-support"></a>Bezpłatna pomoc techniczna  
   
 ### <a name="msdn-development-center"></a>Centrum deweloperskie MSDN  
- [Centrum deweloperów rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=84381) w witrynie MSDN zawiera zasoby, które pomagają odpowiedzieć na pytania dotyczące sposobu rozszerzania programu Visual Studio. Na przykład istnieje kilka linków do blogów dla deweloperów VSIP.  
+ [Centrum deweloperów rozszerzeń programu Visual Studio](https://msdn.microsoft.com/vstudio/default.aspx) w witrynie MSDN zawiera zasoby, które pomagają odpowiedzieć na pytania dotyczące sposobu rozszerzania programu Visual Studio. Na przykład istnieje kilka linków do blogów dla deweloperów VSIP.  
   
 ### <a name="microsoft-newsgroups"></a>Grupy dyskusyjne firmy Microsoft  
  Członkowie zespołu deweloperów programu Visual Studio i inni deweloperzy, którzy rozszerzają program Visual Studio często uczestniczą w grupie dyskusyjnej Microsoft. Public. vstudio. rozszerzalności. Ta grupa dyskusyjna jest zarządzaną grupą dyskusyjną. Jeśli jesteś uniwersalnym subskrybentem MSDN, upewnij się, że rejestrujesz alias bez spamu, aby umożliwić firmie Microsoft odpowiadanie.  
   
 ### <a name="msdn-forums"></a>Fora MSDN  
- [Fora MSDN](https://go.microsoft.com/fwlink/?LinkID=76632) zapewniają inny sposób rozmowy z użytkownikami i ekspertami. Graficzny interfejs użytkownika (UI) forów jest zaprojektowany, aby ułatwić korzystanie z nich poza grupami dyskusyjnymi. [Forum rozszerzalności programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=121964) jest dobrym miejscem umożliwiającym rozpoczęcie wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Zawsze wyszukuj przed zapytaniem pytania, ponieważ ktoś inny mógł już zadać to pytanie.  
+ [Fora MSDN](https://social.msdn.microsoft.com/forums/categories/) zapewniają inny sposób rozmowy z użytkownikami i ekspertami. Graficzny interfejs użytkownika (UI) forów jest zaprojektowany, aby ułatwić korzystanie z nich poza grupami dyskusyjnymi. [Forum rozszerzalności programu Visual Studio](https://msdn.microsoft.com/vsx/default.aspx) jest dobrym miejscem umożliwiającym rozpoczęcie wyszukiwania odpowiedzi na pytania dotyczące rozszerzalności. Zawsze wyszukuj przed zapytaniem pytania, ponieważ ktoś inny mógł już zadać to pytanie.  
   
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
  [Visual Studio Marketplace](https://marketplace.visualstudio.com/) jest miejscem, w którym są rozszerzenia i przykładowy kod. Możesz znaleźć narzędzia, które zwiększają produktywność i środowisko użytkownika w programie Visual Studio, przykładowe aplikacje, które pokazują, jak używać pakietów VSPackage oraz Managed Extensibility Framework (MEF) i innych rodzajów przykładów.  
   
 ### <a name="codeplex"></a>Codeplex  
- [CodePlex](https://go.microsoft.com/fwlink/?LinkId=76627) to witryna sieci Web programu Microsoft Open Source do obsługi projektów. Możesz użyć CodePlex, aby tworzyć i udostępniać nowe projekty, współtworzyć istniejące projekty lub korzystać z aplikacji w witrynie oraz dostarczać Opinie. Wszystkie PowerToys (i ich dokumentacja), które zostały dołączone do wcześniejszych wersji [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], są teraz dostępne w witrynie CodePlex.  
+ [CodePlex](https://www.codeplex.com/) to witryna sieci Web programu Microsoft Open Source do obsługi projektów. Możesz użyć CodePlex, aby tworzyć i udostępniać nowe projekty, współtworzyć istniejące projekty lub korzystać z aplikacji w witrynie oraz dostarczać Opinie. Wszystkie PowerToys (i ich dokumentacja), które zostały dołączone do wcześniejszych wersji [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], są teraz dostępne w witrynie CodePlex.  
   
 ## <a name="included-support"></a>Uwzględniona pomoc techniczna  
   
@@ -63,7 +63,7 @@ Dostępne są różne opcje pomocy technicznej dla klientów z pytaniami dotycz�
   
  Pytania dotyczące ofert pomoc techniczna Premier w połączeniu z programem VSIP można wysyłać do [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Pytania dotyczące nowego programu wykorzystującego zalety partnerów mogą być wysyłane do [advantg@microsoft.com](mailto:advantg@microsoft.com).  
   
- Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](https://go.microsoft.com/fwlink/?LinkID=82385).  
+ Informacje o poszczególnych żądaniach pomocy technicznej można znaleźć w [poszczególnych żądaniach pomocy technicznej](https://support.microsoft.com/oas/default.aspx?gprid=3040).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porozmawiaj z nami](../ide/talk-to-us.md)

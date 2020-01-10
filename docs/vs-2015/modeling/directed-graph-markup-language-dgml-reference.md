@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16a51c7fc05d51b551884f70dc514e8939962818
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c676c57d6e6e6008611133235df8d525752f16b5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296041"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849503"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Dokumentacja języka DGML (Directed Graph Markup Language)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
  Należy pamiętać, że niektóre wersje programu Visual Studio obsługują tylko podzbiór funkcji DGML, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasy Colors](https://go.microsoft.com/fwlink/?LinkId=182345).
+> Podczas edycji pliku .dgml technologia IntelliSense pomaga identyfikować atrybuty, które są dostępne dla każdego elementu i ich wartości. Aby określić kolor w atrybucie, użyj nazw dla pospolitych kolorów, takich jak „Niebieski” lub wartości szesnastkowych ARGB, takich jak „#ffa0b1c3”. DGML używa małego podzbioru formatów definicji koloru Windows Presentation Foundation (WPF). Aby uzyskać więcej informacji, zobacz [klasy Colors](https://msdn.microsoft.com/library/system.windows.media.colors.aspx).
 
 ## <a name="DGML"></a>Składnia DGML
  W poniższej tabeli opisano rodzaje elementów, które są używane w DGML:
@@ -98,7 +98,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    `Label` — nazwa wyświetlana węzła.
 
-   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
@@ -163,7 +163,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    `Label` — wyświetlana nazwa linku
 
-   Atrybuty stylu. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atrybuty stylu. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` — nazwa kategorii, która identyfikuje elementy, które współużytkują ten atrybut. Aby uzyskać więcej informacji, zobacz `<Category/>` elementu.
 
@@ -220,7 +220,7 @@ Program Direct Graph Markup Language (DGML) opisuje informacje używane do wizua
 
    W przykładzie dla tego elementu Kategoria `FailedTest` dziedziczy atrybut `Stroke` z kategorii `PassedTest`. Zobacz "aby utworzyć kategorie hierarchiczne" w temacie [Dostosowywanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Aby dowiedzieć [się, jak dostosować mapy kodu, edytuj pliki DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Kategorie zapewniają również podstawowe zachowanie szablonów, które kontroluje wygląd węzłów i łączy, gdy są wyświetlane na mapie. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Przykład:
 

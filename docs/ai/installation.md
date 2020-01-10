@@ -9,14 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777469"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845075"
 ---
-# <a name="installation"></a>Instalacja
+# <a name="installation"></a>Instalacja programu
 
 Visual Studio Tools for AI można zainstalować w systemach operacyjnych Windows 64-bitowych.
 
@@ -24,9 +24,9 @@ Visual Studio Tools for AI można zainstalować w systemach operacyjnych Windows
 
 To rozszerzenie współpracuje z programem Visual Studio 2015 i Visual Studio 2017, wersja Community lub nowsza.
 
-Narzędzia można pobrać z [Visual Studio Marketplace](https://aka.ms/vstoolsforai)lub z poziomu programu Visual Studio:
+Narzędzia można pobrać z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017)lub z poziomu programu Visual Studio:
 
-1. Wybierz pozycję **narzędzia**  > **rozszerzenia i aktualizacje**.
+1. Wybierz pozycję **narzędzia** > **rozszerzenia i aktualizacje**.
 
    ![Menu rozszerzenia i aktualizacje w programie Visual Studio](media/installation/extensions.png)
 
@@ -66,7 +66,7 @@ Aby zainstalować cuDNN:
 
 - Odwiedź stronę [NVIDIA Developer](https://developer.nvidia.com/rdp/cudnn-download) , aby pobrać i zainstalować najnowszy pakiet.
 - Upewnij się, że dodano katalog zawierający plik binarny cuDNN do zmiennej środowiskowej% PATH% lub $Path.
-- W systemie Windows można skopiować cudnn64_6. dll do lokalizacji "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin".
+- W systemie Windows można skopiować plik cudnn64_6. dll do lokalizacji "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin".
 
 > [!NOTE]
 > Wcześniejsze platformy uczenia głębokiego, takie jak CNTK 2,0 i TensorFlow 1.2.1, potrzebują cuDNN v 5.1. Można jednak zainstalować wiele wersji cuDNN.
@@ -82,7 +82,7 @@ Język Python jest głównym języku programowania aplikacji do uczenia głębok
 
 Platformy uczenia głębokiego są zależne od PIP na potrzeby własnej instalacji.
 
-![Instalowanie języka Python w systemie Windows](media/installation/install_python_win.png)
+![Instalowanie języka Python w Windows](media/installation/install_python_win.png)
 
 Następnie musimy sprawdzić, czy środowisko Python 3,5 zostało poprawnie zainstalowane, a następnie Uaktualnij program PIP do najnowszej wersji, wykonując następujące polecenia w terminalu:
 
@@ -172,7 +172,7 @@ Aby zainstalować MXNet, uruchom następujące polecenie w terminalu:
   pip3.5 install mxnet==0.12.0
   ```
 
-### <a name="keras"></a>Keras
+### <a name="keras"></a>Biblioteki Keras
 
 [Keras](https://keras.io/) to interfejs API sieci neuronowych wysokiego poziomu, zapisany w języku Python, który może działać w oparciu o CNTK, TensorFlow lub Theano. Został zaprojektowany z myślą o umożliwieniu szybkiego eksperymentowania. Możliwość przechodzenia z pomysłu w celu uzyskania najmniejszego możliwego opóźnienia jest kluczem do wykonywania dobrych badań.
 
@@ -222,7 +222,7 @@ Aby zainstalować PyTorch, uruchom następujące polecenie w terminalu:
   > [!NOTE]
   > pliki binarne macOS nie obsługują CUDA, Instaluj ze źródła, jeśli jest potrzebny CUDA
 
-- **System**
+- **Linux**
 
   ```bash
   pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl

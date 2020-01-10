@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c65b9da1e8273b7e765d45c3d965e26b11d26632
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590426"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850278"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -55,7 +55,7 @@ W poniższej tabeli wymieniono wszystkie opcje *VSTest. Console. exe* i krótkie
 |**/ResultsDirectory: [*ścieżka*]**|Katalog wyników testu zostanie utworzony w określonej ścieżce, jeśli nie istnieje.<br />Przykład: `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*parentProcessId*]**|Identyfikator procesu nadrzędnego odpowiedzialny za uruchamianie bieżącego procesu.|
 |**/Port:[*port*]**|Port połączenia gniazda i otrzymywania komunikatów o zdarzeniach.|
-|**/Collect: [*friendlyer datacollect*]**|Włącza moduł zbierający dane dla przebiegu testu. [Więcej informacji](https://aka.ms/vstest-collect).|
+|**/Collect: [*friendlyer datacollect*]**|Włącza moduł zbierający dane dla przebiegu testu. [Więcej informacji](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > W opcjach i wartościach nie jest rozróżniana wielkość liter.

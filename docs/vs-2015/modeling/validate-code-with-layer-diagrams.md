@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301353"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845429"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Weryfikacja kodu przy użyciu diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
   Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Możesz walidować kod ręcznie z otwartego diagramu warstwowego w Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu diagramów warstwowych](https://go.microsoft.com/fwlink/?LinkID=252073).
+  Możesz walidować kod ręcznie z otwartego diagramu warstwowego w Visual Studio lub z wiersza polecenia. Kod możesz również walidować automatycznie podczas uruchamiania lokalnych kompilacji lub programu Team Foundation Build. Zobacz [wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu diagramów warstwowych](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Aby uruchomić walidację warstwy w programie Team Foundation Build, należy również zainstalować tę samą wersję programu Visual Studio na serwerze kompilacji.
@@ -153,7 +153,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
   Te zadania umożliwiają zarządzanie błędami walidacji w oknie **Lista błędów** :
 
-|**Do**|**Wykonaj następujące kroki**|
+|**To**|**Wykonaj następujące kroki**|
 |------------|----------------------------|
 |Pomijanie wybranych błędów podczas walidacji|Kliknij prawym przyciskiem myszy jeden lub wiele wybranych błędów, wskaż **zarządzanie błędami walidacji**, a następnie kliknij przycisk **Pomiń błędy**.<br /><br /> Pominięte błędy są wyświetlane jako przekreślone. Przy następnym uruchomieniu walidacji te błędy nie pojawią się.<br /><br /> Pominięte błędy są śledzone w pliku .suppressions związanym z odpowiadającym im plikiem diagramu warstwowego.|
 |Zaprzestanie pomijania wybranych błędów|Kliknij prawym przyciskiem myszy wybrany pominięty błąd lub błędy, wskaż polecenie **Zarządzaj błędami walidacji**, a następnie kliknij przycisk **Zatrzymaj pomijanie błędów**.<br /><br /> Wybrane pominięte błędy pojawią się przy następnym uruchomieniu walidacji.|
@@ -171,7 +171,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- lub-
+ \- lub —
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy projekt modelowania zawierający diagram lub diagram warstwy, a następnie kliknij polecenie **Właściwości**.
 
@@ -197,7 +197,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
    Aby uzyskać więcej informacji o błędach walidacji, zobacz [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors). Aby uzyskać więcej informacji na temat [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], zobacz:
 
-- [Kompilowanie aplikacji](/azure/devops/pipelines/index)
+- [Kompiluj aplikację](/azure/devops/pipelines/index)
 
 - [Użyj szablonu domyślnego dla procesu kompilacji](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)
 
@@ -210,7 +210,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 ## <a name="TroubleshootingValidation"></a>Rozwiązywanie problemów z walidacją warstwy
  W poniższej tabeli opisano problemy związane z walidacją warstwy i ich rozwiązania. Problemy te różnią się od błędów, które wynikają z konfliktów między kodem i projektem. Aby uzyskać więcej informacji o tych błędach, zobacz [Omówienie i rozwiązywanie błędów walidacji warstwy](#UnderstandingValidationErrors).
 
-|**Wykonaj**|**Możliwa przyczyna**|**Tłumaczenia**|
+|**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
 |---------------|------------------------|--------------------|
 |Błędy walidacji nie występują w oczekiwany sposób.|Walidacja nie działa na diagramach warstwowych, które są kopiowane z innych diagramów warstwowych w Eksploratorze rozwiązań i które są w tym samym projekcie modelowania. Diagramy warstwowe kopiowane w ten sposób zawierają te same odwołania, co oryginalny diagram warstwowe.|Dodaj nowy diagram warstwowy do projektu modelowania.<br /><br /> Skopiuj elementy ze źródłowego diagramu warstwowego do nowego diagramu.|
 
@@ -225,7 +225,7 @@ Aby upewnić się, że kod nie powoduje konfliktu z projektem, zweryfikuj swój 
 
   W poniższej sekcji opisano składnię, która jest używana w tych błędach, wyjaśniono znaczenie tych błędów i zasugerowano, co można zrobić, aby je rozwiązać lub zarządzać nimi.
 
-|**Obowiązuje**|**Opis**|
+|**Składnia**|**Opis**|
 |----------------|---------------------|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN* to artefakt, który jest skojarzony z warstwą na diagramie warstwowym.<br /><br /> *ArtifactTypeN* jest typem *ArtifactN*, takim jak **Klasa** lub **Metoda**, na przykład:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metoda)|
 |*NamespaceNameN*|Nazwa przestrzeni nazw.|

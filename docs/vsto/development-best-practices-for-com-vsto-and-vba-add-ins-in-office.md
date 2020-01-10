@@ -1,5 +1,5 @@
 ---
-title: 'Najlepsze rozwiązania dotyczące programowania: COM, VSTO, & Dodatki VBA w pakiecie Office'
+title: 'Najlepsze rozwiązania programistyczne: COM, VSTO, & Dodatki VBA w pakiecie Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254645"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846361"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania w zakresie programowania dla dodatków COM, VSTO i VBA w pakiecie Office
   Jeśli tworzysz Dodatki COM, VSTO lub VBA dla pakietu Office, postępuj zgodnie z najlepszymi rozwiązaniami programistycznymi opisanymi w tym artykule.   Dzięki temu:
@@ -25,13 +25,13 @@ ms.locfileid: "71254645"
 - Zmniejszona złożoność wdrożenia dodatku dla użytkowników i administratorów IT.
 - Nieoczekiwane instalacje lub błędy środowiska uruchomieniowego dodatku nie występują.
 
->Uwaga: Korzystanie z [mostka programu Desktop](/windows/uwp/porting/desktop-to-uwp-root) do przygotowywania modelu COM, programu VSTO lub dodatku VBA dla Sklepu Windows nie jest obsługiwane. Nie można dystrybuować dodatków COM, VSTO i VBA w Sklepie Windows lub sklepie Office.
+>Uwaga: używanie [mostka programu Desktop](/windows/uwp/porting/desktop-to-uwp-root) do przygotowywania modelu COM, programu VSTO lub dodatku VBA dla Sklepu Windows nie jest obsługiwane. Nie można dystrybuować dodatków COM, VSTO i VBA w Sklepie Windows lub sklepie Office.
 
 ## <a name="do-not-check-for-office-during-installation"></a>Nie sprawdzaj pakietu Office podczas instalacji
  Nie zalecamy, aby dodatek wykrył, czy pakiet Office został zainstalowany podczas procesu instalacji dodatku. Jeśli pakiet Office nie jest zainstalowany, można zainstalować dodatek, a użytkownik będzie mógł uzyskać do niego dostęp po zainstalowaniu pakietu Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Użyj osadzonych typów międzyoperacyjnych (NoPIA)
-Jeśli rozwiązanie używa programu .NET 4,0 lub nowszego, użyj osadzonych typów międzyoperacyjnych (NoPIA), a nie w zależności od pakietu redystrybucyjnego podstawowych elementów międzyoperacyjnych (PIA). Użycie osadzania typów zmniejsza rozmiar instalacji rozwiązania i zapewnia przyszłą zgodność. Pakiet Office 2010 to Ostatnia wersja pakietu Office, która dostarczyła pakiet redystrybucyjny PIA. Aby uzyskać więcej informacji, [zobacz Przewodnik: Osadzanie informacji o typie z zestawów](https://msdn.microsoft.com/library/ee317478.aspx) Microsoft Office i [równoważności typów i osadzonych typów międzyoperacyjnych](/windows/uwp/porting/desktop-to-uwp-root).
+Jeśli rozwiązanie używa programu .NET 4,0 lub nowszego, użyj osadzonych typów międzyoperacyjnych (NoPIA), a nie w zależności od pakietu redystrybucyjnego podstawowych elementów międzyoperacyjnych (PIA). Użycie osadzania typów zmniejsza rozmiar instalacji rozwiązania i zapewnia przyszłą zgodność. Pakiet Office 2010 to Ostatnia wersja pakietu Office, która dostarczyła pakiet redystrybucyjny PIA. Aby uzyskać więcej informacji, zobacz [Przewodnik: osadzanie informacji o typie z zestawów Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) i [równoważność typów i osadzonych typów międzyoperacyjnych](/windows/uwp/porting/desktop-to-uwp-root).
 
 Jeśli Twoje rozwiązanie korzysta ze starszej wersji programu .NET, Zalecamy zaktualizowanie rozwiązania do korzystania z programu .NET 4,0 lub nowszego. Program .NET 4,0 lub nowszy zmniejsza wymagania wstępne środowiska uruchomieniowego w nowszych wersjach systemu Windows.
 
@@ -46,7 +46,7 @@ Podczas pisania kodu VBA Użyj 64-bitowych bezpiecznych instrukcji DECLARE i Kon
 ## <a name="support-restricted-environments"></a>Obsługa środowisk z ograniczeniami
 Twoje rozwiązanie nie powinno wymagać podniesienia uprawnień konta użytkownika ani uprawnień administratora. Ponadto rozwiązanie nie powinno zależeć od ustawienia lub zmiany:
 
-- Bieżący katalog roboczy.
+- Bieżący katalog roboczy
 - Katalogi ładowania biblioteki DLL.
 - Zmienna PATH.
 
@@ -61,7 +61,7 @@ Klienci otrzymują pytania dla niezależnych dostawców oprogramowania, aby zape
 
 Aby zapewnić instrukcje pomocy technicznej dla aplikacji klienckich pakietu Office (na przykład Word lub Excel), należy najpierw sprawdzić, czy dodatki działają w bieżącej wersji pakietu Office, a następnie zatwierdzić w celu udostępnienia aktualizacji, jeśli dodatek zostanie podzielony w przyszłej wersji. Nie ma potrzeby testowania dodatków, gdy firma Microsoft publikuje nową kompilację lub aktualizację pakietu Office. Firma Microsoft rzadko zmienia platformę COM, VSTO i VBA na platformie rozszerzalności w pakiecie Office, a te zmiany będą dobrze udokumentowane.
 
->Ważne: Firma Microsoft obsługuje listę obsługiwanych dodatków do raportów o gotowości i informacje kontaktowe niezależnego dostawcy oprogramowania. Aby zapoznać się z listą, zobacz [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Ważne: Firma Microsoft przechowuje listę obsługiwanych dodatków do raportów o gotowości i informacje kontaktowe niezależnego dostawcy oprogramowania. Aby uzyskać wymienione dodatki, zobacz [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Użyj Monitora procesów, aby pomóc w debugowaniu instalacji lub ładowania problemów
 Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub ładowania, mogą one być związane z problemami z dostępem do plików lub rejestru. Użyj [monitora procesów](/sysinternals/downloads/procmon) lub podobnego narzędzia do debugowania, aby rejestrować i porównywać zachowanie w środowisku roboczym w celu ułatwienia zidentyfikowania problemu.

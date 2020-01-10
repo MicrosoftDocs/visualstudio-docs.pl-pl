@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dla subskrypcji chmury.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491263"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851408"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Subskrypcje dotyczące rozliczeń w ramach subskrypcji programu Visual Studio Cloud
 [PORÓWNAJ korzyści z subskrypcji chmury i ceny](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardami programu Visual Studio, szczegółowymi dotyczącymi korzyści dla subskrybentów i innymi.
@@ -37,7 +37,7 @@ Odp.: najprostszym podejściem do ustalenia, czy masz odpowiednie uprawnienia, j
 Musisz wybrać subskrypcję platformy Azure (czyli konto rozliczeniowe) z wyświetlonej listy subskrypcji platformy Azure, które są obecnie połączone z logowaniem.
 Ponieważ nazwa usługi Azure Subscription jest domyślna dla typu konta rozliczeniowego ("płatność zgodnie z rzeczywistym użyciem", "Umowa Enterprise" itp.), często jest jasne, jeśli subskrypcja platformy Azure jest częścią Umowa Enterprise.
 
-Innym rozwiązaniem jest próba odwiedzenia [Enterprise Portal platformy Azure](https://ea.azure.com).  Jeśli możesz się z nią skontaktować, masz już rolę administratora przedsiębiorstwa lub właściciela konta. Tylko właściciele konta mogą konfigurować nowe konta rozliczeń platformy Azure w Umowa Enterprise. Jeśli nie możesz uzyskać dostępu do usługi Azure Enterprise Portal, skontaktuj się z pomocą techniczną w organizacji, aby dowiedzieć się, kto jest administratorem przedsiębiorstwa, i poproś o dodanie Cię jako właściciela konta w ramach usługi Azure Enterprise Portal.  Jeśli nie możesz znaleźć tej osoby, możesz [przesłać bilet pomocy technicznej](https://aka.ms/AzureEntSupport) i zażądać informacji kontaktowych.  W przypadku biletu pomocy technicznej potrzebna jest nazwa organizacji i numer rejestracji Umowa Enterprise.
+Innym rozwiązaniem jest próba odwiedzenia [Enterprise Portal platformy Azure](https://ea.azure.com).  Jeśli możesz się z nią skontaktować, masz już rolę administratora przedsiębiorstwa lub właściciela konta. Tylko właściciele konta mogą konfigurować nowe konta rozliczeń platformy Azure w Umowa Enterprise. Jeśli nie możesz uzyskać dostępu do usługi Azure Enterprise Portal, skontaktuj się z pomocą techniczną w organizacji, aby dowiedzieć się, kto jest administratorem przedsiębiorstwa, i poproś o dodanie Cię jako właściciela konta w ramach usługi Azure Enterprise Portal.  Jeśli nie możesz znaleźć tej osoby, możesz [przesłać bilet pomocy technicznej](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) i zażądać informacji kontaktowych.  W przypadku biletu pomocy technicznej potrzebna jest nazwa organizacji i numer rejestracji Umowa Enterprise.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Czy mogę użyć funduszy zobowiązania pieniężnego platformy Azure z mojej Umowa Enterprise, aby kupić subskrypcje programu Visual Studio w chmurze?
 Odp.: nie, te przedpłacone środki nie kwalifikują się do zakupu subskrypcji programu Visual Studio w chmurze. Po wybraniu subskrypcji platformy Azure, która została utworzona dla umowy EA w celu zakupienia subskrypcji w chmurze programu Visual Studio, opłaty będą naliczane po następnej fakturze "nadwyżkowe". Zwykle odbywa się to co miesiąc, ale ze względu na reguły historyczne dla niektórych klientów z umowami EA, faktura nadwyżki nie może zostać wystawiona przez kilka miesięcy. Zapoznaj się z specjalistą ds. licencjonowania w ramach umowy EA, jeśli chcesz wiedzieć, jaka ilość dodatkowych zakupów (zakupów, które nie kwalifikują się do funduszy związanych z zobowiązaniami pieniężnymi platformy Azure), spowoduje wyzwolenie faktury nadwyżkowej.
@@ -66,7 +66,7 @@ Odp.: otrzymujesz 5% rabatu na szóste i wszystkie kolejne subskrypcje *w ramach
 * Visual Studio Professional miesięcznie
 * Visual Studio Professional rocznie
 * Visual Studio Enterprise miesięcznie
-* Visual Studio Enterprise rocznie
+* Visual Studio Enterprise annual
 
 Jeśli na przykład kupisz 6 Visual Studio Professional subskrypcje miesięczne i 5 Visual Studio Enterprise miesięcznych subskrypcji, będziesz mieć zwykłą cenę za 5 Professional, uzyskaj 5% rabat w szóstym Professional i płatność Zwykła cena za wszystkie 5 przedsiębiorstw opłaty.
 
@@ -90,7 +90,7 @@ Odp.: tak. Po udostępnieniu nowych wersji można je pobrać i uruchomić. Ponad
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>P: Czy mogę zakupić subskrypcje programu Visual Studio w chmurze od odsprzedawcy oprogramowania?
 Odp.: tak, możesz, jeśli odsprzedawca uczestniczy w programie w programie Cloud Solution Provider (CSP). Po prostu zadawaj je.
 
-## <a name="related-resources"></a>Powiązane zasoby
+## <a name="related-resources"></a>Zasoby pokrewne
 - [Portal administracyjny subskrypcji programu Visual Studio](https://manage.visualstudio.com/)
 - [Obsługa subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Kupowanie subskrypcji w chmurze programu Visual Studio dla dostawców CSP](vscloud-csp.md)

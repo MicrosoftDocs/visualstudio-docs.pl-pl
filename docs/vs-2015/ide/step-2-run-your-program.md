@@ -9,19 +9,19 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef28781252181dbf765db52dbe6fed1b286516b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295776"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851569"
 ---
 # <a name="step-2-run-your-program"></a>Krok 2. Uruchomienie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po utworzeniu nowego rozwiązania jest tworzony program, który jest uruchamiany. Jeszcze nie działa — po prostu wyświetla puste okno, które wyświetla **formularz Form1** na pasku tytułu. Jest to jednak uruchamiane, ponieważ wkrótce się znajdziesz.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](https://go.microsoft.com/fwlink/?LinkId=205209) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-run-your-program"></a>Aby uruchomić program
 

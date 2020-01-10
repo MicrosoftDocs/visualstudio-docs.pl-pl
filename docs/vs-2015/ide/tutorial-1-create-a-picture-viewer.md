@@ -9,17 +9,17 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 66988fa88ae347a2db08bf2f6d1b79ba3bcd80b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299909"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851323"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie podglądu obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i bezproblemowo zmieniać rozmiar formularza za pomocą kontenerów. Zacznij również pisać kod. Omawiane kwestie:
+W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i bezproblemowo zmieniać rozmiar formularza za pomocą kontenerów. Zacznij również pisać kod. Dowiesz się, jak:
 
 - Utwórz nowy projekt.
 
@@ -39,7 +39,7 @@ W tym samouczku utworzysz program, który ładuje obraz z pliku i wyświetla go 
 
   ![Obraz utworzony w tym samouczku](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Obraz utworzony w tym samouczku
 
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [How to: Create a Picture Viewer in Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) lub [How to: Create a Picture Viewer in C#?](https://go.microsoft.com/fwlink/?LinkId=205198).
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [How to: Create a Picture Viewer in Visual Basic?](https://msdn.microsoft.com/vstudio/gg315352) lub [How to: Create a Picture Viewer in C#?](https://msdn.microsoft.com/vcsharp/gg278960.aspx).
 
 > [!NOTE]
 > Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio. Wizualizacje C# i Visual Basic zostały omówione w tym samouczku, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.

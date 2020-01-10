@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298725"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850448"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można definiować rozszerzenia do diagramów modelowania. W ten sposób można dostosować diagramy i modele do własnych potrzeb. Można na przykład definiować polecenia menu, profile UML, ograniczenia walidacji i elementy przybornika. W jednym rozszerzeniu można zdefiniować kilka składników. Możesz również dystrybuować te rozszerzenia do innych użytkowników programu Visual Studio w postaci [rozszerzenia integracji z programem Visual Studio (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780). Można utworzyć VSIX przy użyciu projektu VSIX w programie Visual Studio.
+W programie Visual Studio można definiować rozszerzenia do diagramów modelowania. W ten sposób można dostosować diagramy i modele do własnych potrzeb. Można na przykład definiować polecenia menu, profile UML, ograniczenia walidacji i elementy przybornika. W jednym rozszerzeniu można zdefiniować kilka składników. Możesz również dystrybuować te rozszerzenia do innych użytkowników programu Visual Studio w postaci [rozszerzenia integracji z programem Visual Studio (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx). Można utworzyć VSIX przy użyciu projektu VSIX w programie Visual Studio.
 
 ## <a name="requirements"></a>Wymagania
  Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -76,7 +76,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
         |-|-|
         |**Typ** =|**Microsoft. VisualStudio. MefComponent**|
         | = **źródłowa**|**Projekt w bieżącym rozwiązaniu**|
-        | = **projektu**|*Projekt biblioteki klas*|
+        |**Project** =|*Projekt biblioteki klas*|
         |**Osadź w tym folderze** =|*ciągiem*|
 
          W przypadku innych typów składników zapoznaj się z linkami w następnej sekcji.
@@ -130,7 +130,7 @@ W programie Visual Studio można definiować rozszerzenia do diagramów modelowa
 
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie
 
-1. W menu **Narzędzia** kliknij pozycję **rozszerzenia i aktualizacje**.
+1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
 2. Rozwiń **zainstalowane rozszerzenia**.
 

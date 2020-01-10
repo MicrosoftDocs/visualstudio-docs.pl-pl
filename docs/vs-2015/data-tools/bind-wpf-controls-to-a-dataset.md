@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299427"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852159"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
@@ -57,7 +57,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz temat [powiązanie danych — omówienie](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
-## <a name="create-the-project"></a>Tworzenie projektu
+## <a name="create-the-project"></a>Utwórz projekt
  Utwórz nowy projekt WPF. Projekt będzie wyświetlał rekordy produktów.
 
 #### <a name="to-create-the-project"></a>Aby utworzyć projekt
@@ -79,7 +79,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 #### <a name="to-create-a-dataset"></a>Aby utworzyć zestaw danych
 
-1. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+1. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 
@@ -235,7 +235,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 1. Naciśnij klawisz **F5**.
 
-     Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące kwestie:
+     Aplikacja zostanie skompilowana i uruchomiona. Sprawdź następujące informacje:
 
     - Pola tekstowe wyświetlają dane z pierwszego rekordu produktu, który ma zdjęcie. Ten produkt ma identyfikator produktu 713, a nazwa w **logo z długą cyfrą**().
 

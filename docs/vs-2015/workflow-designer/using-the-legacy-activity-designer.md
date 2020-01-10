@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a13aeeb3394ee6b8896376c0e7d520b90fb56fa6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302822"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846151"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Używanie starszej wersji projektanta działań
 W tym temacie opisano, jak używać projektanta działań w starszej [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego projektanta podczas określania [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -49,12 +49,12 @@ W tym temacie opisano, jak używać projektanta działań w starszej [!INCLUDE[w
 |Właściwość|Komentarze|
 |--------------|--------------|
 |**Nazwa**|Nazwa działania.|
-|**Klasa bazowa**|Klasa bazowa, z której pochodzi działanie. Domyślną klasą bazową jest [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). W oknie **Właściwości** kliknij wielokropek **klasy bazowej** **[...]** , aby wybrać inną klasę bazową w oknie [dialogowym Przeglądaj i wybierz typ platformy .NET (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
+|**Klasa bazowa**|Klasa bazowa, z której pochodzi działanie. Domyślną klasą bazową jest [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). W oknie **Właściwości** kliknij wielokropek **klasy bazowej** **[...]** , aby wybrać inną klasę bazową w oknie [dialogowym Przeglądaj i wybierz typ platformy .NET (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Opis**|Opis działania zdefiniowany przez użytkownika.|
-|**Dostępny**|Domyślnie Ustaw **wartość true** , aby włączyć wykonywanie i sprawdzanie poprawności działania. Ustaw **wartość false** , aby wyłączyć wykonywanie i sprawdzanie poprawności działania. Informacje o wykonywaniu i walidacji działania znajdują się w temacie [opracowywanie działań przepływu pracy](https://go.microsoft.com/fwlink?LinkID=65024).|
+|**Włączono**|Domyślnie Ustaw **wartość true** , aby włączyć wykonywanie i sprawdzanie poprawności działania. Ustaw **wartość false** , aby wyłączyć wykonywanie i sprawdzanie poprawności działania. Informacje o wykonywaniu i walidacji działania znajdują się w temacie [opracowywanie działań przepływu pracy](https://msdn2.microsoft.com/library/ms734413.aspx).|
 
 ## <a name="adding-child-activities"></a>Dodawanie działań podrzędnych
  Możesz przeciągać działania podrzędne z przybornika do projektowanego działania. Następnie można skonfigurować każde działanie podrzędne przy użyciu przeglądarki właściwości.
 
 ## <a name="see-also"></a>Zobacz też
- [Opracowywanie działań przepływu pracy](https://go.microsoft.com/fwlink?LinkID=65024) [Tworzenie działań niestandardowych](https://go.microsoft.com/fwlink?LinkID=65021) [starsze działania przepływów pracy](../workflow-designer/legacy-workflow-activities.md) — [przykłady czynności](https://go.microsoft.com/fwlink?LinkID=65022) [: Tworzenie biblioteki działań przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [przy użyciu starszej wersji Projektant przepływu pracy](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Opracowywanie działań przepływu pracy](https://msdn2.microsoft.com/library/ms734413.aspx) [Tworzenie działań niestandardowych](https://msdn2.microsoft.com/library/bb675228.aspx) [starsze działania przepływów pracy](../workflow-designer/legacy-workflow-activities.md) — [przykłady czynności](https://msdn2.microsoft.com/library/bb472471.aspx) [: Tworzenie biblioteki działań przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md) [przy użyciu starszej wersji Projektant przepływu pracy](../workflow-designer/using-the-legacy-workflow-designer.md)

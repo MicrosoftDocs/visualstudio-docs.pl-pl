@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae18d4cb69de5faa4289a99cbb53b273443b494a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300987"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852363"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę equals typami wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Identyfikator reguły | DA0006 |
 ## <a name="rule-description"></a>Opis reguły  
  W przypadku typów wartości dziedziczone implementacje Equals używa biblioteki <xref:System.Reflection> i porównuje zawartość wszystkich pól w typie. Odbicie jest obliczeniowo kosztowne, a porównanie równości każdego pola może być niepotrzebne. Jeśli oczekujesz, że użytkownicy porównują lub sortują wystąpienia lub używają ich jako kluczy tabeli skrótów, typ wartości powinien implementować równą się. Jeśli język programowania obsługuje przeciążanie operatora, należy również podać implementację operatorów równości i nierówności.  
   
- Aby uzyskać więcej informacji o sposobie przesłonięcia równości i operatory równości, zobacz [wytyczne dotyczące implementowania równości i operatora równości (= =)](https://go.microsoft.com/fwlink/?LinkId=177818).  
+ Aby uzyskać więcej informacji o sposobie przesłonięcia równości i operatory równości, zobacz [wytyczne dotyczące implementowania równości i operatora równości (= =)](https://msdn.microsoft.com/library/7h9bszxx.aspx).  
   
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie  
  Aby zapoznać się z przykładem implementowania operatorów równości i równości, zobacz reguła analizy kodu [CA1815: override Equals i operator Equals dla typów wartości](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300641"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851009"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Concurrency Visualizer SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](https://go.microsoft.com/fwlink/?LinkId=235405).
+Możesz instrumentować kod źródłowy przy użyciu zestawu SDK wizualizatora współbieżności, aby wyświetlić dodatkowe informacje w wizualizatorze współbieżności. Możesz skojarzyć dodatkowe dane z fazami i zdarzeniami w kodzie. Te dodatkowe wizualizacje są znane jako *znaczniki*.  Aby zapoznać się z przewodnikiem wprowadzającym, zobacz [wprowadzenie do zestawu SDK wizualizatora współbieżności](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx).
 
 ## <a name="properties"></a>Właściwości
  Flagi, zakresy i komunikaty mają dwie właściwości: Category i ważności. W oknie dialogowym [Ustawienia zaawansowane](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) można użyć tych właściwości do filtrowania zestawu znaczników, które są wyświetlane. Ponadto te właściwości wpływają na wizualną reprezentację znaczników. Na przykład rozmiar flag jest używany do reprezentowania znaczenia. Dodatkowo kolor jest używany do wskazania kategorii.
@@ -104,7 +104,7 @@ W C#języku Visual Basic i innym zarządzanym kodzie Użyj domyślnego dostawcy,
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Aby użyć serii znaczników w C++ projekcie
 
-1. Utwórz obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.
+1. Tworzy obiekt `marker_series`.  Można generować zdarzenia z tej nowej serii.
 
     ```scr
     marker_series series;

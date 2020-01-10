@@ -13,17 +13,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9dcb6edf8ce69d48805c3ad8c3c25ef9cc0ed591
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301318"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851345"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu można wizualnie dowiedzieć się, jak zmiany mogą wpływać na kod i pomóc w ocenie pracy i zagrożeń wynikających z tych zmian. Na przykład:
+Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają zapoznanie się z istniejącym kodem i opisywanie aplikacji. Dzięki temu możesz wzrokowo sprawdzić, jak wprowadzane zmiany mogą wpłynąć na kod, i ocenić nakład pracy oraz zagrożenia związane z tymi zmianami. Na przykład:
 
 - Aby zrozumieć relacje w kodzie, zamapuj je wizualnie.
 
@@ -48,11 +48,11 @@ Narzędzia do wizualizacji i modelowania w programie Visual Studio ułatwiają z
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artykuły techniczne i dzienniki**|[Forum architektury MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Artykuły techniczne i dzienniki**|[Forum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Zobacz też
  [Scenariusz: zmiana projektu przy użyciu wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) modelowanie [i architektura](../modeling/analyze-and-model-your-architecture.md) modelowanie [Tworzenie modeli dla](../modeling/create-models-for-your-app.md) modelu [wymagań użytkowników](../modeling/model-user-requirements.md) modelu aplikacji [Używanie modeli w procesie tworzenia](../modeling/use-models-in-your-development-process.md) [aplikacji](../modeling/model-your-app-s-architecture.md)

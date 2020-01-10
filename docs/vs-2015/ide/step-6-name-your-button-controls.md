@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295712"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851132"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadawanie nazw kontrolkom przycisków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ W formularzu istnieje tylko jeden element PictureBox. Po dodaniu, IDE automatycz
 
  W formularzu znajdują się cztery przyciski i IDE o nazwie im **Button1**, **Button2**, **button3**i **button4**. Po prostu patrząc na swoje bieżące nazwy nie wiesz, który przycisk jest przyciskiem **Close** i który jest przyciskiem **Pokaż obraz** . Z tego względu, jeśli przycisk steruje bardziej informacyjnymi nazwami, pomocne są.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 3](https://go.microsoft.com/fwlink/?LinkId=205213) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 3](https://go.microsoft.com/fwlink/?LinkId=205202). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Aby nazwać kontrolki przycisku
 

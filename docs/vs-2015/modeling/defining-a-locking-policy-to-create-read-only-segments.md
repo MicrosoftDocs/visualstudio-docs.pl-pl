@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295813"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849572"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Interfejs [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API niezmienności wizual
 > [!NOTE]
 > Zasady blokowania można obejść przy użyciu odbicia. Zapewnia jasne ograniczenie dla deweloperów innych firm, ale nie zapewnia silnych zabezpieczeń.
 
- Więcej informacji i przykładów można znaleźć w witrynie internetowej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [wizualizacji i modelowania SDK](https://go.microsoft.com/fwlink/?LinkId=186128) .
+ Więcej informacji i przykładów można znaleźć w witrynie internetowej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [wizualizacji i modelowania SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
 
 ## <a name="setting-and-getting-locks"></a>Ustawianie i pobieranie blokad
  Można ustawić blokadę dla magazynu, partycji lub pojedynczego elementu. Na przykład ta instrukcja uniemożliwi usunięcie elementu modelu i uniemożliwi zmianę jego właściwości:
@@ -82,9 +82,9 @@ partition.SetLocks(Locks.Delete);
 |Brak|Brak ograniczeń.|
 |Właściwość|Nie można zmienić właściwości domeny elementów. Nie dotyczy to właściwości, które są generowane przez rolę klasy domeny w relacji.|
 |Dodaj|Nie można utworzyć nowych elementów i linków w partycji lub magazynie.<br /><br /> Nie ma zastosowania do `ModelElement`.|
-|Przenieś|Nie można przenieść elementu między partycjami, jeśli `element.IsLocked(Move)` ma wartość true lub jeśli `targetPartition.IsLocked(Move)` ma wartość true.|
+|Move|Nie można przenieść elementu między partycjami, jeśli `element.IsLocked(Move)` ma wartość true lub jeśli `targetPartition.IsLocked(Move)` ma wartość true.|
 |Usuń|Nie można usunąć elementu, jeśli ta blokada została ustawiona w samym elemencie lub na dowolnym z elementów, do których zostanie ono propagowane, takich jak osadzone elementy i kształty.<br /><br /> Za pomocą `element.CanDelete()` można stwierdzić, czy element może zostać usunięty.|
-|Zmienić kolejność|Nie można zmienić kolejności linków w RolePlayer.|
+|Zmień kolejność|Nie można zmienić kolejności linków w RolePlayer.|
 |RolePlayer|Nie można zmienić zestawu linków, które są źródłem w tym elemencie. Na przykład nowe elementy nie mogą być osadzone w tym elemencie. Nie ma to wpływu na linki, dla których ten element jest elementem docelowym.<br /><br /> Jeśli ten element jest łączem, jego źródło i cel nie są modyfikowane.|
 |Wszystkie|Wartości bitowe lub inne.|
 

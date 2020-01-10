@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300909"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847193"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używaniem języka specyficznego dla domeny (DSL) utworzonego przy użyciu zestawu SDK modelowania dla programu Visual Studio.
 
- Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Jeśli dopiero zaczynasz korzystać z programu językami DSL, zalecamy przechodzenie przez **laboratorium narzędzi DSL**, które można znaleźć w tej witrynie: [Visualizaton i Modeling SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co można zrobić przy użyciu języka specyficznego dla domeny?
  Język specyficzny dla domeny jest zapisem, zwykle graficznym, który jest przeznaczony do użycia w konkretnym celu. Z kolei, języki takie jak UML są ogólnego przeznaczenia. W DSL można zdefiniować typy elementów modelu i ich relacji oraz sposób ich wyświetlania na ekranie.
@@ -41,8 +41,8 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |Modeling SDK dla programu Visual Studio|[Pobierz MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Tworzenie rozwiązania DSL
@@ -114,7 +114,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 3. W eksperymentalnym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Otwórz plik modelu o nazwie **test** z **Eksplorator rozwiązań**.
 
-    \- lub-
+    \- lub —
 
     Kliknij prawym przyciskiem myszy projekt debugowanie, wskaż polecenie **Dodaj**, a następnie kliknij pozycję **element**. W oknie dialogowym **Dodaj element** wybierz typ pliku DSL.
 
@@ -141,7 +141,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
  Model można wyświetlić jako drzewo w widoku **Eksploratora** podczas edytowania modelu. Podczas dodawania kształtów do diagramu elementy modelu są również wyświetlane w Eksploratorze. Eksploratora można używać nawet wtedy, gdy nie ma diagramu.
 
- Jeśli Eksplorator nie jest widoczny w wystąpieniu debugowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij *\<>* **Explorer**.
+ Jeśli Eksplorator nie jest widoczny w wystąpieniu debugowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], w menu **Widok** wskaż polecenie **inne okna**, a następnie kliknij *\<* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>Interfejs API DSL
  DSL generuje interfejs API, który umożliwia odczytywanie i aktualizowanie modeli, które są wystąpieniami DSL. Jedną z aplikacji interfejsu API jest generowanie plików tekstowych z modelu. Aby uzyskać więcej informacji, zobacz [generowanie kodu w czasie projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
@@ -164,7 +164,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-    \- lub-
+    \- lub —
 
     Kliknij prawym przyciskiem myszy szablony, które chcesz wygenerować ponownie, a następnie kliknij polecenie **Uruchom narzędzie niestandardowe**.
 
@@ -383,7 +383,7 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 
  Możesz użyć tej samej procedury, aby zainstalować DSL na własnym komputerze, aby nie trzeba było korzystać z eksperymentalnego wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
- Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
+ Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="Reset"></a>Usuwanie starej eksperymentalnej językami DSL
  Jeśli utworzono eksperymentalne językami DSL, które nie są już potrzebne, możesz je usunąć z komputera, resetowanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne.
@@ -399,4 +399,4 @@ W tym temacie objaśniono podstawowe pojęcia związane z definiowaniem i używa
 2. Kompiluj wszystkie eksperymentalne językami DSL lub inne eksperymentalne rozszerzenia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które nadal mają być używane.
 
 ## <a name="see-also"></a>Zobacz też
- [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md) [dotyczących definiowania Visualizaton języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md) [i zestawu SDK modelowania](https://go.microsoft.com/fwlink/?LinkID=186128)
+ [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md) [dotyczących definiowania Visualizaton języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md) [i zestawu SDK modelowania](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

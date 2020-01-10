@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300482"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850233"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (izolowany lub zintegrowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz utworzyć własną aplikację opartą na programie Visual Studio w trybie zintegrowanym lub izolowanym. W trybie zintegrowanym oprócz aplikacji dostępne są wiele funkcji programu Visual Studio. W trybie izolowanym wybierasz podzbiór funkcji programu Visual Studio, które chcesz dystrybuować wraz z własnymi rozszerzeniami.  
+Możesz utworzyć własną aplikację opartą na programie Visual Studio w trybie zintegrowanym lub izolowanym. W trybie zintegrowanym wiele funkcji programu Visual Studio jest dostępnych dodatkowo oprócz używanej aplikacji. W trybie izolowanym wybierasz podzbiór funkcji programu Visual Studio, które chcesz rozpowszechnić razem ze swoim rozszerzeniem.  
   
 ## <a name="integrated-mode"></a>Tryb zintegrowany  
  Tryb zintegrowany umożliwia użytkownikom używanie standardowych funkcji programu Visual Studio wraz z narzędziami niestandardowymi. Zintegrowana powłoka jest przeznaczona głównie do obsługi języków programowania i narzędzi programistycznych oprogramowania.  
@@ -54,8 +54,8 @@ Możesz utworzyć własną aplikację opartą na programie Visual Studio w trybi
 > - Umowa licencyjna użytkownika oprogramowania w ramach licencji aplikacji  
 > - Twoja własna Umowa licencyjna użytkownika, która wymaga od klientów zgody na warunki chroniące powłokę programu Visual Studio Integrated lub izolowany, co najmniej tak samo, jak postanowienia licencyjne użytkowników końcowych firmy Microsoft dotyczące oprogramowania powłoki  
   
-## <a name="additional-resources"></a>Dodatkowe zasoby  
- Aby uzyskać więcej informacji na temat pakietów redystrybucyjnych, zobacz witrynę sieci Web [do pobrania rozszerzalności programu Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+## <a name="additional-resources"></a>Dodatkowe materiały  
+ Aby uzyskać więcej informacji na temat pakietów redystrybucyjnych, zobacz witrynę sieci Web [do pobrania rozszerzalności programu Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

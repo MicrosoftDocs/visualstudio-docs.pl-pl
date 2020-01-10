@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291204"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849880"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analiza jakości aplikacji za pomocą narzędzi analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ W tej sekcji [Analiza zarządzanego](../code-quality/analyzing-managed-code-qual
 
  [Analizowanie jakości sterowników przy użyciu narzędzi do analizy kodu](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) Analiza kodu dla sterowników to narzędzie do weryfikacji statycznej w czasie kompilacji, które wykrywa podstawowe błędy kodowania w C++ języku C i programy oraz zawiera wyspecjalizowany moduł, który jest przeznaczony do wykrywania błędów w (przede wszystkim) kodu sterownika trybu jądra. Analizator sterownika statycznego (SDV) to statyczne narzędzie weryfikacyjne, które systematycznie analizuje kod źródłowy sterowników trybu jądra systemu Windows. SDV określa, czy sterownik prawidłowo współdziała z jądrem systemu operacyjnego Windows.
 
- [Analiza kodu dla ostrzeżeń dotyczących sterowników](https://go.microsoft.com/fwlink/?LinkId=225920) Opisuje ostrzeżenia, które są raportowane przez analizę kodu dla sterowników, gdy wykryje możliwy błąd w kodzie sterownika.
+ [Analiza kodu dla ostrzeżeń dotyczących sterowników](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Opisuje ostrzeżenia, które są raportowane przez analizę kodu dla sterowników, gdy wykryje możliwy błąd w kodzie sterownika.
 
 ## <a name="related-tasks"></a>Powiązane zadania
  [Mierzenie złożoności i łatwość utrzymania w kodzie zarządzanym](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Tutaj Wstaw opis.

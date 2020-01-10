@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 9a95cd84ede6befded37f9d875535f39846de50a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291057"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849944"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
 
@@ -24,7 +24,7 @@ Jeśli masz maszyny wirtualne hostowane przez platformę Azure, możesz uzyskać
 
 1. W programie Cloud Explorer wybierz maszynę wirtualną, a następnie wybierz klawisz F4, aby wyświetlić okno właściwości.
 
-    W poniższej tabeli przedstawiono właściwości dostępne, ale są one tylko do odczytu. Aby je zmienić, użyj [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040).
+    W poniższej tabeli przedstawiono właściwości dostępne, ale są one tylko do odczytu. Aby je zmienić, użyj [Azure Portal](https://portal.azure.com/).
 
    | Właściwość | Opis |
    | --- | --- |
@@ -32,10 +32,10 @@ Jeśli masz maszyny wirtualne hostowane przez platformę Azure, możesz uzyskać
    | Środowisko |Dla maszyny wirtualnej wartość tej właściwości jest zawsze produkcja. |
    | Nazwa |Nazwa maszyny wirtualnej. |
    | Rozmiar |Rozmiar maszyny wirtualnej, który odzwierciedla ilość dostępnej pamięci i miejsca na dysku. Aby uzyskać więcej informacji, zobacz [rozmiary maszyn wirtualnych](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
-   | Stan |Wartości obejmują uruchamianie, uruchamianie, zatrzymywanie, zatrzymanie i pobieranie stanu. Jeśli zostanie wyświetlony stan pobieranie, bieżący stan jest nieznany. Wartości tej właściwości różnią się od wartości, które są używane w [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). |
-   | Identyfikator |Identyfikator subskrypcji Twojego konta platformy Azure. Te informacje można wyświetlić na [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) , wyświetlając właściwości subskrypcji. |
+   | Stan |Wartości obejmują uruchamianie, uruchamianie, zatrzymywanie, zatrzymanie i pobieranie stanu. Jeśli zostanie wyświetlony stan pobieranie, bieżący stan jest nieznany. Wartości tej właściwości różnią się od wartości, które są używane w [Azure Portal](https://portal.azure.com/). |
+   | Identyfikator |Identyfikator subskrypcji Twojego konta platformy Azure. Te informacje można wyświetlić na [Azure Portal](https://portal.azure.com/) , wyświetlając właściwości subskrypcji. |
 2. Wybierz węzeł punktu końcowego, a następnie Wyświetl okno **Właściwości** .
-3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, użyj [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. W poniższej tabeli opisano dostępne właściwości punktów końcowych, ale są one tylko do odczytu. Aby dodać lub edytować punkty końcowe dla maszyny wirtualnej, użyj [Azure Portal](https://portal.azure.com/). 
 
    | Właściwość | Opis |
    | --- | --- |

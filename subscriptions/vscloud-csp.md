@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze dotyczące zakupu subskrypcji programu Visual Studio Cloud i zarządzania nimi dla klientów.
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787744"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851400"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kup subskrypcje w chmurze programu Visual Studio dla klientów i zarządzaj nimi
 Partnerzy w programie [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) mogą kupować Visual Studio Enterprise i Visual Studio Professional subskrypcje w chmurze dla swoich klientów.
@@ -19,7 +19,7 @@ Partnerzy w programie [Cloud Solution Provider (CSP)](https://partner.microsoft.
 [Porównaj opcje subskrypcji chmury](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) nowych klientów do przeglądania różnych opcji zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 Musisz najpierw skonfigurować dzierżawcę klienta w centrum partnerskim i utworzyć subskrypcję platformy Azure dla tej dzierżawy.
@@ -27,7 +27,7 @@ Musisz najpierw skonfigurować dzierżawcę klienta w centrum partnerskim i utwo
 [Dowiedz się więcej](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Kto może kupować subskrypcje programu Visual Studio?
-Każda osoba z [dostępem właściciela lub](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) współautora do subskrypcji platformy Azure może zakupić subskrypcje programu Visual Studio.
+Każda osoba z [dostępem właściciela lub współautora](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) do subskrypcji platformy Azure może zakupić subskrypcje programu Visual Studio.
 
 ## <a name="how-to-buy"></a>Jak kupić
 
@@ -68,28 +68,28 @@ Aby wyświetlić Cennik programu Visual Studio dla partnerów CSP, zaloguj się 
 
 Oto jak interpretować zawartość wyświetlaną w tym arkuszu kalkulacyjnym:
 
-| Kategoria miernika    |   Nazwa                 |  Uczestnictwa                                |           Co to jest                          |
+| Kategoria miernika    |   Nazwa                 |  Jednostki                                |           Co to jest                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Subscription                         | Visual Studio Enterprise Subskrypcja miesięczna   |
-| Visual Studio     | Professional Edition           |  Subscription                         | Visual Studio Professional Subskrypcja miesięczna |
+| {1&gt;Visual Studio&lt;1}     | Enterprise             |  Subskrypcja usługi                         | Visual Studio Enterprise Subskrypcja miesięczna   |
+| {1&gt;Visual Studio&lt;1}     | Professional           |  Subskrypcja usługi                         | Visual Studio Professional Subskrypcja miesięczna |
 
 Oferujemy 5% rabatu na szóstą jednostkę, którą kupujesz (dla danego klienta) co miesiąc każdej subskrypcji programu Visual Studio. Dlatego widzisz dwa wiersze dla każdej opcji subskrypcji. Jeden wiersz zawiera "wartość minimalną" równą 0, która powinna być interpretowana jako podstawowa cena jednostek 1 – 5. W drugim wierszu jest wyświetlana wartość minimalna równa 5, więc jest to 5% cena rabatu odnosząca się do jednostek 6 i nowszych.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>PYTANIA Jak są przetwarzane miesięczne opłaty za subskrypcję w chmurze?
-Odp.: Przy pierwszym zakupie obciążamy proporcjonalną ilość, aby pokryć pozostałe dni w bieżącym miesiącu. Na przykład w przypadku zakupu 10 Visual Studio Professional comiesięcznych subskrypcji w chmurze w dniu 15 kwietnia firma Microsoft będzie obciążana 5 jednostkami, ponieważ w ciągu 30-dniowego miesiąca pozostały 15 dni lub 50%, a opłaty są naliczane według stawki za 50%. W pierwszej kolejności i w każdym miesiącu, po upływie którego zostanie anulowana, zostanie naliczona pełna 10 jednostek.
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: w jaki sposób są naliczane **miesięczne** opłaty za subskrypcję w chmurze?
+Odp.: przy pierwszym zakupie opłata jest naliczana proporcjonalnie do pozostałej liczby dni w bieżącym miesiącu. Na przykład w przypadku zakupu 10 Visual Studio Professional comiesięcznych subskrypcji w chmurze w dniu 15 kwietnia firma Microsoft będzie obciążana 5 jednostkami, ponieważ w ciągu 30-dniowego miesiąca pozostały 15 dni lub 50%, a opłaty są naliczane według stawki za 50%. W pierwszej kolejności i w każdym miesiącu, po upływie którego zostanie anulowana, zostanie naliczona pełna 10 jednostek.
 
 Po zwiększeniu ilości płatnej później Oceńmy również zwiększenie liczby jednostek, aby pokryć pozostałe dni w bieżącym miesiącu. Jeśli więc zakupiono 1 więcej Visual Studio Professional comiesięczną subskrypcję chmury w dniu 10 maja, będziemy rozliczać około 0,677 jednostek (21 dni pozostałej w dniu 31-dniowego miesiąca).
 
-### <a name="q-how-do-cancellations-work"></a>PYTANIA Jak działają anulowania?
-Odp.: Po anulowaniu subskrypcji programu Visual Studio w chmurze zostanie anulowane automatyczne odnawianie. Subskrypcja jest kontynuowana do momentu normalnego odnowienia, a następnie po prostu wygaśnie. Po wygaśnięciu subskrybent programu Visual Studio nie może już korzystać z programu Visual Studio ani żadnych innych korzyści z subskrypcji.
+### <a name="q-how-do-cancellations-work"></a>P: jak działają anulowania?
+Odp.: po anulowaniu subskrypcji programu Visual Studio w chmurze anulujesz automatyczne odnawianie. Subskrypcja jest kontynuowana do momentu normalnego odnowienia, a następnie po prostu wygaśnie. Po wygaśnięciu subskrybent programu Visual Studio nie może już korzystać z programu Visual Studio ani żadnych innych korzyści z subskrypcji.
 
 W przypadku comiesięcznych subskrypcji w chmurze anulowania są wykonywane pierwszego dnia następnego miesiąca. Jeśli anulujesz tylko niektóre miesięczne subskrypcje w chmurze klienta, pamiętaj, aby usunąć użytkowników z pierwszego miesiąca, aby upewnić się, że odpowiednie osoby nadal mają przypisane aktywne subskrypcje.
 
 W przypadku rocznych subskrypcji w chmurze anulowania odnoszą się pierwszy dzień miesiąca po 12 miesiącach od oryginalnego zakupu lub 12 miesięcy od ostatniej rocznej opłaty za odnowienie. Na przykład jeśli zakupiono Visual Studio Enterprise roczną subskrypcję w chmurze w dniu 3 stycznia 2018, zostanie ona uaktywniona do 1 lutego 2019, gdy zostanie automatycznie przedłużona przez kolejne lata. Jeśli anulujesz w dowolnym momencie między then i 1 lutego 2020, subskrypcja wygaśnie 1 lutego 2020. Nie ma rabatu do anulowania w ramach roku subskrypcji z rocznymi subskrypcjami chmury.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>PYTANIA Jakiego rodzaju rabaty woluminu są dostępne dla subskrypcji programu Visual Studio?
-Odp.:  Na szóste i wszystkie kolejne subskrypcje *w ramach poszczególnych typów* subskrypcji uzyskasz 5% rabatu:
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: jakiego rodzaju rabaty na woluminy są dostępne dla subskrypcji programu Visual Studio?
+Odp.: otrzymujesz 5% rabatu na szóste i wszystkie kolejne subskrypcje *w ramach każdego typu* subskrypcji:
 - Visual Studio Professional miesięcznie
 - Visual Studio Enterprise miesięcznie
 
@@ -99,9 +99,9 @@ Ponadto Rabat dotyczy opłat w danym miesięcznym okresie rozliczeniowym. Jeśli
 
 Rabaty te są uwzględniane w danych cennika w [centrum partnerskim](https://partnercenter.microsoft.com).
 
-### <a name="q-are-there-renewal-discounts"></a>PYTANIA Czy istnieją rabaty na odnowienie?
-Odp.:  Nie, ceny za subskrypcje programu Visual Studio są płaskie. Ta sama cena jest oferowana w przypadku nowych subskrypcji i kontynuacji subskrypcji.
+### <a name="q-are-there-renewal-discounts"></a>P: czy istnieją rabaty na odnowienie?
+Odp.: nie, ceny za subskrypcje programu Visual Studio są płaskie. Ta sama cena jest oferowana w przypadku nowych subskrypcji i kontynuacji subskrypcji.
 
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>PYTANIA Czy są dostępne opcje cen usługi Azure Dev/Test dla dostawców CSP?
-Odp.: Nie w tej chwili. Klienci mogą korzystać z cen na potrzeby tworzenia [i testowania platformy Azure](https://aka.ms/azuredevtestpricing), ale nie mamy żadnych szczególnych rozwiązań dla dostawców usług.
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: czy są dostępne opcje cen usługi Azure Dev/Test dla dostawców CSP?
+Odp.: w tej chwili nie. Klienci mogą korzystać z cen na potrzeby tworzenia [i testowania platformy Azure](https://azure.microsoft.com/pricing/dev-test/), ale nie mamy żadnych szczególnych rozwiązań dla dostawców usług.
 

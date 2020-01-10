@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299384"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850835"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Strona aplikacji, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Użyj strony **aplikacji** projektanta projektu, aby określić ustawienia i wł
 
  Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
 
- W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Możesz użyć opcji **pliku winmd** dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
+ W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Możesz użyć opcji **pliku winmd** dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](https://msdn.microsoft.com/library/windows/apps/br230301(v=VS.85).aspx).
 
 > [!NOTE]
 > Środowisko wykonawcze systemu Windows można projektować typów, tak aby były one widoczne jako obiekty natywne w zależności od używanego języka. Na przykład aplikacje JavaScript, które współpracują z środowisko wykonawcze systemu Windows używają go jako zestawu obiektów JavaScript, a C# aplikacje używają biblioteki jako kolekcji obiektów .NET. Przez pakowanie danych wyjściowych projektu jako pliku WinMD można skorzystać z tej samej technologii, która środowisko wykonawcze systemu Windows używa.
@@ -112,7 +112,7 @@ Użyj strony **aplikacji** projektanta projektu, aby określić ustawienia i wł
 
  Wybierz pozycję **przy jawnym zamknięciu** , aby określić, że aplikacja kończy działanie, gdy jawnie wywołasz `Shutdown`.
 
- Wybierz pozycję **przy ostatnim oknie Zamknij** , aby określić, że aplikacja kończy się po zamknięciu ostatniego okna lub w przypadku jawnego wywołania `Shutdown`. Jest to ustawienie domyślne.
+ Wybierz pozycję **przy ostatnim oknie Zamknij** , aby określić, że aplikacja kończy się po zamknięciu ostatniego okna lub w przypadku jawnego wywołania `Shutdown`. To jest ustawienie domyślne.
 
  Wybierz pozycję **w oknie głównym Zamknij** , aby określić, że aplikacja kończy się po zamknięciu okna głównego lub w przypadku jawnego wywołania `Shutdown`.
 
@@ -127,7 +127,7 @@ Użyj strony **aplikacji** projektanta projektu, aby określić ustawienia i wł
 
  Wybierz pozycję **przy jawnym zamknięciu** , aby określić, że aplikacja kończy działanie, gdy jawnie wywołasz <xref:System.Windows.Application.Shutdown%2A>.
 
- Wybierz pozycję **przy ostatnim oknie Zamknij** , aby określić, że aplikacja kończy się po zamknięciu ostatniego okna lub w przypadku jawnego wywołania <xref:System.Windows.Application.Shutdown%2A>. Jest to ustawienie domyślne.
+ Wybierz pozycję **przy ostatnim oknie Zamknij** , aby określić, że aplikacja kończy się po zamknięciu ostatniego okna lub w przypadku jawnego wywołania <xref:System.Windows.Application.Shutdown%2A>. To jest ustawienie domyślne.
 
  Wybierz pozycję **w oknie głównym Zamknij** , aby określić, że aplikacja kończy się po zamknięciu okna głównego lub w przypadku jawnego wywołania <xref:System.Windows.Application.Shutdown%2A>.
 

@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298924"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847210"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 |||  
 |-|-|  
-|**Obsługiwał**|-Visual Basic i aplikacje C# wizualne używające .NET Framework 2,0 lub nowszych wersji.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Obsługiwane**|-Visual Basic i aplikacje C# wizualne używające .NET Framework 2,0 lub nowszych wersji.<br />     Można debugować większość aplikacji, w tym ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 i 64-bitowe aplikacje.<br />     Aby debugować aplikacje programu SharePoint za pomocą IntelliTrace, zobacz [Przewodnik: debugowanie aplikacji SharePoint przy użyciu IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Aby debugować Microsoft Azure aplikacje za pomocą IntelliTrace, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą usługi IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
 |**Ograniczona pomoc techniczna**|- F# aplikacje na zasadzie eksperymentalnej<br />— Aplikacje ze sklepu Windows obsługiwane tylko dla zdarzeń|  
 |**Nieobsługiwane**|- C++, inne języki i skrypt<br />— Usługi systemu Windows, Silverlight, Xbox lub [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikacje|  
   
@@ -95,7 +95,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 - Wystąpił błąd lub awaria w wdrożonej aplikacji.  
   
-   W przypadku aplikacji opartych na Microsoft Azure można skonfigurować zbieranie danych IntelliTrace przed opublikowaniem aplikacji. Gdy aplikacja jest uruchomiona, IntelliTrace zapisuje dane w pliku. iTrace. Zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).  
+   W przypadku aplikacji opartych na Microsoft Azure można skonfigurować zbieranie danych IntelliTrace przed opublikowaniem aplikacji. Gdy aplikacja jest uruchomiona, IntelliTrace zapisuje dane w pliku. iTrace. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).  
   
    W przypadku aplikacji internetowych ASP.NET obsługiwanych przez usługi IIS 7.0, 7.5 i 8.0 oraz aplikacji SharePoint 2010 lub SharePoint 2013 możesz używać programu Microsoft Monitoring Agent, samego lub w połączeniu z System Center 2012, aby zapisywać dane IntelliTrace w pliku iTrace.  
   
@@ -136,7 +136,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
   
 - **Zdarzenia aplikacji SharePoint 2010 i SharePoint 2013**  
   
-   Można zapisać zdarzenia dotyczące profili użytkowników i zdarzenia w podzbiorze Unified Logging System (ULS) do aplikacji SharePoint 2010 i 2013 działających poza programem Visual Studio. Zdarzenia te można zapisać w pliku iTrace. Wymaga Visual Studio Enterprise 2015, wcześniejszej wersji Visual Studio Ultimate lub [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) uruchomione w trybie **śledzenia** .  
+   Można zapisać zdarzenia dotyczące profili użytkowników i zdarzenia w podzbiorze Unified Logging System (ULS) do aplikacji SharePoint 2010 i 2013 działających poza programem Visual Studio. Zdarzenia te można zapisać w pliku iTrace. Wymaga Visual Studio Enterprise 2015, wcześniejszej wersji Visual Studio Ultimate lub [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkID=309771) uruchomione w trybie **śledzenia** .  
   
    Po otwarciu pliku iTrace wprowadź identyfikator korelacji programu SharePoint, aby znaleźć odpowiadające mu żądanie sieci Web, zobaczyć zarejestrowane zdarzenia i rozpocząć debugowanie od określonego zdarzenia. Jeśli plik zawiera nieobsłużone wyjątki, można wybrać identyfikator korelacji, aby uruchomić debugowanie wyjątku.  
   
@@ -186,7 +186,7 @@ Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliT
  [Korzystanie z zapisanych danych funkcji IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogi  
- [Visual Studio ALM i Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>Fora  
- [Diagnostyka programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnostyka programu Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)

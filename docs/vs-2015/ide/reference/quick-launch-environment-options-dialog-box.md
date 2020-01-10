@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297801"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851632"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Szybkie uruchamianie, środowisko, opcje — okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Funkcja **szybkiego uruchamiania** umożliwia szybkie wyszukiwanie i wykonywanie
 ## <a name="show-previous-results"></a>Pokaż poprzednie wyniki
  Wprowadzony termin wyszukiwania nie jest domyślnie utrwalany między sesjami wyszukiwania. Ciąg wyszukiwania jest wyczyszczony, jeśli szukasz terminu, Przenieś kursor poza obszar **szybkiego uruchamiania** , a następnie wróć. Aby zachować wyniki wyszukiwania, przejdź do okna dialogowego **Opcje** , wybierz pozycję **Szybkie uruchamianie**, a następnie wybierz pozycję **Pokaż wyniki wyszukiwania z poprzedniego wyszukiwania, gdy szybkie uruchamianie jest aktywowane.** . Przy następnym przeszukiwaniu pozostaw obszar szybkie uruchamianie i Wróć, szybkie uruchamianie spowoduje zachowanie ostatniego użytego terminu wyszukiwania, a także wyświetlenie wyników wyszukiwania.
 
- Najnowsze porady i wskazówki dotyczące korzystania z funkcji **szybkiego uruchamiania**można znaleźć [na blogu programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
+ Najnowsze porady i wskazówki dotyczące korzystania z funkcji **szybkiego uruchamiania**można znaleźć [na blogu programu Visual Studio](https://blogs.msdn.com/b/visualstudio/).
 
 ## <a name="see-also"></a>Zobacz też
  [Ogólne elementy interfejsu użytkownika (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) — okno [dialogowe Opcje środowiska](../../ide/reference/environment-options-dialog-box.md)

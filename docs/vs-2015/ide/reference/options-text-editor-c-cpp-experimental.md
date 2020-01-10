@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297854"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851703"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstów, C/C++, eksperymentalne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
  Te funkcje są dostępne w instalacji programu Visual Studio 2015 Update 1 RC.
 
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień programistycznych w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="browsingnavigation"></a>Przeglądanie/Nawigacja
  **Włącz nowy aparat bazy danych** Powinno to spowodować automatyczną przyspieszenie wypełniania bazy danych i szybsze wykonywanie wszystkich operacji w bazie danych (bez dokładności) dla operacji takich jak **Przejdź do definicji** i **Znajdź wszystkie odwołania**. (Po prostu Zamknij i ponownie otwórz rozwiązanie, aby zastosować zmiany; nie musisz ponownie uruchamiać programu Visual Studio).
@@ -41,12 +41,12 @@ Zmieniając te opcje, można zmienić zachowanie związane z technologią Intell
 
  **Włącz zmianę sygnatury** Dodawanie, zmienianie kolejności i usuwanie parametrów funkcji i propagowanie zmian do wszystkich witryn wywołań. Aby uzyskać dostęp do tej funkcji, kliknij prawym przyciskiem myszy dowolne użycie funkcji i wybierz polecenie **szybkie akcje**lub po prostu naciśnij skrót domyślny Ctrl + kropka [Ctrl +.].
 
-## <a name="text-editor"></a>Edytor tekstu
+## <a name="text-editor"></a>{1&gt;Edytor tekstu&lt;1}
  **Włącz rozwijanie zakresów** Jeśli ta funkcja jest włączona, można ująć zaznaczony tekst za pomocą nawiasów klamrowych, wpisując "{" w edytorze tekstu.
 
  **Włącz pierwszeństwo rozwijania** Jeśli ta funkcja jest włączona, można ująć zaznaczony tekst za pomocą nawiasów, wpisując znak "(" w edytorze tekstu.
 
- Aby uzyskać dodatkowe funkcje edytora tekstu w galerii programu Visual Studio, zapoznaj się z listą [tutaj](https://go.microsoft.com/fwlink/?LinkId=692016). Przykładem są [ C++ szybkie poprawki](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), które obsługują następujące rozwiązania:
+ Aby uzyskać dodatkowe funkcje edytora tekstu w galerii programu Visual Studio, zapoznaj się z listą [tutaj](https://marketplace.visualstudio.com/). Przykładem są [ C++ szybkie poprawki](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), które obsługują następujące rozwiązania:
 
 - **Dodaj brakujące #include** -proponuje odpowiednie #include dla nieznanych symboli w kodzie
 

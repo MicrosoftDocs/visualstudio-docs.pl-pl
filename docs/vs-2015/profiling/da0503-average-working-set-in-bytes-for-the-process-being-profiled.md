@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 31d36a89473cd0c6a0b55e484fee2ce1d7045b15
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300059"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850895"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Średni rozmiar zestawu roboczego w bajtach dla procesu poddawanego profilowaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Rule Id|DA0503|
   
  Rozmiar zestawu roboczego procesu odzwierciedla ilość pamięci wirtualnej, która jest aktywnie używana przez proces. Ma także wpływ na ilość pamięci fizycznej (lub pamięci RAM), która jest dostępna do uruchamiania aplikacji i rywalizacji dla tej pamięci fizycznej z innych uruchomionych procesów. Jeśli pamięć fizyczna jest ograniczona, wartość zestawu roboczego procesu to APT, tak aby system operacyjny próbował zrównoważyć użycie pamięci przez aktywne procesy przez okresowe przycinanie dość nieaktywnych stron z procesów zestawów roboczych.  
   
- Aby uzyskać więcej informacji na temat procesów zestawów roboczych, zobacz [zestaw roboczy](https://go.microsoft.com/fwlink/?LinkId=177830) w dokumentacji zarządzania pamięcią systemu Windows w witrynie MSDN.  
+ Aby uzyskać więcej informacji na temat procesów zestawów roboczych, zobacz [zestaw roboczy](https://msdn.microsoft.com/library/cc441804.aspx) w dokumentacji zarządzania pamięcią systemu Windows w witrynie MSDN.  
   
 ## <a name="how-to-use-rule-data"></a>Jak używać danych reguł  
  Wartość reguły służy do porównywania wydajności różnych wersji lub kompilacji programu lub do zrozumienia wydajności aplikacji w różnych scenariuszach profilowania.  

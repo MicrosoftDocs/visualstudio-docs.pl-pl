@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300313"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849818"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze wsp
  Ścieżki plików exe i dll są przechowywane w pliku śledzenia podczas zbierania śladu.  Zmiana tego ustawienia nie dotyczy żadnych wcześniej zebranych śladów.  
   
 ## <a name="buffering"></a>Buforowania  
- Narzędzie Concurrency Visualizer używa śledzenia zdarzeń systemu Windows (ETW) podczas zbierania śladu.  Funkcja ETW używa różnych buforów, ponieważ przechowuje zdarzenia.  Domyślne ustawienia buforu ETW mogą nie być optymalne we wszystkich przypadkach, a w niektórych przypadkach mogą powodować problemy, takie jak utracone zdarzenia.  Karta buforowanie służy do konfigurowania ustawień buforu funkcji ETW. Aby uzyskać więcej informacji, zobacz [Śledzenie zdarzeń](https://go.microsoft.com/fwlink/?LinkId=234579) i [Struktura EVENT_TRACE_PROPERTIES](https://go.microsoft.com/fwlink/?LinkId=234580).  
+ Narzędzie Concurrency Visualizer używa śledzenia zdarzeń systemu Windows (ETW) podczas zbierania śladu.  Funkcja ETW używa różnych buforów, ponieważ przechowuje zdarzenia.  Domyślne ustawienia buforu ETW mogą nie być optymalne we wszystkich przypadkach, a w niektórych przypadkach mogą powodować problemy, takie jak utracone zdarzenia.  Karta buforowanie służy do konfigurowania ustawień buforu funkcji ETW. Aby uzyskać więcej informacji, zobacz [Śledzenie zdarzeń](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) i [Struktura EVENT_TRACE_PROPERTIES](https://msdn.microsoft.com/library/aa363784(VS.85).aspx).  
   
 ## <a name="filter"></a>Filtr  
  Na karcie filtr można wybrać zestaw zdarzeń zbieranych przez Wizualizator współbieżności. Wybranie podzestawu zdarzeń ogranicza typy danych, które są wyświetlane w raportach, zmniejsza rozmiar każdego śledzenia i skraca czas wymagany do przetworzenia śladów.  
@@ -55,7 +55,7 @@ Korzystając z okna dialogowego **Ustawienia zaawansowane** w wizualizatorze wsp
 ### <a name="file-io-events"></a>Zdarzenia we/wy pliku  
  Zdarzenia we/wy pliku reprezentują dostęp do dysku w imieniu bieżącego procesu.  Jeśli wyłączysz zdarzenia we/wy pliku, rozmiar śledzenia zostanie zmniejszony, ale widok wątki nie będzie zgłaszać żadnych informacji na temat kanałów dyskowych ani operacji dyskowych.  
   
-## <a name="markers"></a>Wyświetla  
+## <a name="markers"></a>Znaczniki  
  Na karcie Znaczniki można skonfigurować zestaw dostawców ETW, które są wyświetlane jako znaczniki w wizualizatorze współbieżności.  Można również filtrować kolekcję znaczników na podstawie poziomu ważności i kategorii ETW.  Jeśli używasz [zestawu SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md) i korzystasz z własnego dostawcy znaczników, możesz zarejestrować go w tym miejscu, aby pojawił się w widoku wątki.  
   
 ### <a name="adding-a-new-provider"></a>Dodawanie nowego dostawcy  

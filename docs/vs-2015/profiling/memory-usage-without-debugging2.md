@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295694"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850821"
 ---
 # <a name="memory-usage-without-debugging"></a>Użycie pamięci bez debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -207,4 +207,4 @@ Aby wykonać następujące czynności, można użyć narzędzia **użycie pamię
  [Analizowanie  wydajności aplikacji](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
  [Uruchom narzędzia do oceny wydajności i diagnostyki](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Najlepsze rozwiązania w zakresie wydajności dla aplikacji ze C++sklepu C#Windows przy użyciu, i Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnozowanie problemów z pamięcią za pomocą nowego narzędzia użycie pamięci w programie Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Diagnozowanie problemów z pamięcią za pomocą nowego narzędzia użycie pamięci w programie Visual Studio](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)

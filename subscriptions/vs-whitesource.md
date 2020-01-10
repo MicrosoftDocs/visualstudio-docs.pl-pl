@@ -3,19 +3,19 @@ title: Korzyść WhiteSource Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 11/18/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję usługi WhiteSource w ramach subskrypcji programu Visual Studio.
-ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 8db777135e9f78321ccbc7cc9d40bf657da97589
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174130"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75866166"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource w subskrypcjach programu Visual Studio
 
-Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksowe raporty spisu i licencji dla wszystkich składników typu "open source" w kompilacji. 
+Znajduj i usuwaj luki w zabezpieczeniach oprogramowania open source, a także generuj kompleksowe raporty zawierające spis wszystkich składników open source w kompilacjach oraz ich licencje. 
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 
@@ -37,16 +37,37 @@ Znajdź i napraw luki w zabezpieczeniach typu "open source" i Generuj kompleksow
 8. Po pomyślnym zainstalowaniu WhiteSource, Wróć do [strony aktywacja](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate)i Obejrzyj film wideo, aby zobaczyć, jak go skonfigurować. 
 9. Aby uzyskać więcej informacji, odwiedź [stronę często zadawanych pytań](https://bolt.whitesourcesoftware.com/azure/faq/)WhiteSource. 
 
-## <a name="eligibility"></a>Kryteria
-[WhiteSource](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) jest teraz dostępny bezpłatnie w [Visual Studio Marketplace. 
+## <a name="eligibility"></a>Uprawnienie
+
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Tak       |
+| Visual Studio Enterprise z usługą GitHub Enterprise | Licencja | 6 miesięcy       |  Tak       |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                           |Nie dotyczy         |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Niedostępne                                                           |Nie dotyczy         |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                                           |Nie dotyczy         |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
+||
+
+<sup>1</sup>  *zawiera: Microsoft Partner Network (Enterprise).  Wyklucza: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), pełnego etatu, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD).  MCT & usług.*
+
+> [!NOTE]
+> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 - Potrzebujesz pomocy z WhiteSourceem?  Czat z WhiteSourceem na żywo w https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
+
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)

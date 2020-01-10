@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5af4fc76fa20148495ca44cc7e9b74d4b95ecb7c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6d6611c8ce8bdb09023794b5eca029b6b972afb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298106"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849986"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
@@ -26,13 +26,13 @@ Korzystając z tych skryptów, można zarezerwować dostosowane wersje (znane r�
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Zestaw Azure SDK 2,3 lub nowszy. Zobacz [pliki do pobrania w programie Visual Studio](https://go.microsoft.com/fwlink/?LinkID=624384). (Zestaw Azure SDK nie jest potrzebny do generowania skryptów dla projektów sieci Web. Ta funkcja jest przeznaczony dla projektów sieci Web, a nie ról sieci Web w usługach Cloud Services.
-* Azure PowerShell 0.7.4 lub nowszy. Zobacz [jak zainstalować i skonfigurować Azure PowerShell](/powershell/azure/overview).
+* Zestaw Azure SDK 2,3 lub nowszy. Zobacz [pliki do pobrania w programie Visual Studio](https://visualstudio.microsoft.com/downloads/). (Zestaw Azure SDK nie jest potrzebny do generowania skryptów dla projektów sieci Web. Ta funkcja jest przeznaczony dla projektów sieci Web, a nie ról sieci Web w usługach Cloud Services.
+* Azure PowerShell 0.7.4 lub nowszy. Zobacz artykuł [Instalowanie i konfigurowanie programu Azure PowerShell](/powershell/azure/overview).
 * Program [Windows PowerShell 3,0](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) lub nowszy.
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 
-Dostępne są dodatkowe narzędzia i zasoby umożliwiające pracę z programem PowerShell w programie Visual Studio dla deweloperów platformy Azure. Zobacz [PowerShell Tools for Visual Studio](https://go.microsoft.com/fwlink/?LinkId=404012).
+Dostępne są dodatkowe narzędzia i zasoby umożliwiające pracę z programem PowerShell w programie Visual Studio dla deweloperów platformy Azure. Zobacz [PowerShell Tools for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597).
 
 ## <a name="generating-the-publish-scripts"></a>Generowanie skryptów publikowania
 
@@ -48,7 +48,7 @@ Skrypt publikacji zawiera określone kroki publikowania dotyczące wdrażania w 
 
 ### <a name="windows-powershell-module"></a>Moduł programu Windows PowerShell
 
-Moduł programu Windows PowerShell generowany przez program Visual Studio zawiera funkcje, które są używane przez skrypt publikacji. Te Azure PowerShell funkcje nie są przeznaczone do zmodyfikowania. Zobacz [jak zainstalować i skonfigurować Azure PowerShell](/powershell/azure/overview).
+Moduł programu Windows PowerShell generowany przez program Visual Studio zawiera funkcje, które są używane przez skrypt publikacji. Te Azure PowerShell funkcje nie są przeznaczone do zmodyfikowania. Zobacz artykuł [Instalowanie i konfigurowanie programu Azure PowerShell](/powershell/azure/overview).
 
 ### <a name="json-configuration-file"></a>Plik konfiguracji JSON
 
@@ -173,7 +173,7 @@ Jeśli wcześniej nie uruchomiono skryptu środowiska Windows PowerShell, należ
 
     Po wyświetleniu monitu podaj nazwę użytkownika i hasło.
 
-    Należy pamiętać, że w przypadku automatyzowania skryptu ta metoda udostępniania poświadczeń platformy Azure nie działa. Zamiast tego należy użyć pliku `.publishsettings`, aby podać poświadczenia. Tylko jednorazowo Użyj polecenia **Get-AzurePublishSettingsFile** , aby pobrać plik z platformy Azure, a następnie zaimportuj plik przy użyciu pliku **Import-AzurePublishSettingsFile** . Szczegółowe instrukcje znajdują się w temacie [How to Install and configure Azure PowerShell](/powershell/azure/overview).
+    Należy pamiętać, że w przypadku automatyzowania skryptu ta metoda udostępniania poświadczeń platformy Azure nie działa. Zamiast tego należy użyć pliku `.publishsettings`, aby podać poświadczenia. Tylko jednorazowo Użyj polecenia **Get-AzurePublishSettingsFile** , aby pobrać plik z platformy Azure, a następnie zaimportuj plik przy użyciu pliku **Import-AzurePublishSettingsFile** . Aby uzyskać szczegółowe informacje, zobacz [How to install and configure Azure PowerShell (Jak zainstalować i skonfigurować program Azure PowerShell)](/powershell/azure/overview).
 
 1. Obowiązkowe Jeśli chcesz utworzyć zasoby platformy Azure, takie jak maszyna wirtualna, baza danych i witryna internetowa bez publikowania aplikacji sieci Web, użyj polecenia **Publish-WebApplication. ps1** z argumentem **-Configuration** ustawionym na plik konfiguracji JSON. Ten wiersz polecenia używa pliku konfiguracji JSON do określenia zasobów do utworzenia. Ponieważ używa ustawień domyślnych dla innych argumentów wiersza polecenia, tworzy zasoby, ale nie publikuje aplikacji sieci Web. Opcja – verbose zawiera więcej informacji na temat tego, co się dzieje.
 
@@ -252,7 +252,7 @@ Aby zautomatyzować Kompilowanie projektu, Dodaj kod wywołujący MSBuild do `Ne
         #Write a function to build and package your web application
     ```
 
-    Aby skompilować aplikację sieci Web, użyj programu MsBuild. exe. Aby uzyskać pomoc, zobacz informacje w wierszu polecenia programu MSBuild w: [http://go.microsoft.com/fwlink/?LinkId=391339](https://go.microsoft.com/fwlink/?LinkId=391339)
+    Aby skompilować aplikację sieci Web, użyj programu MsBuild. exe. Aby uzyskać pomoc, zobacz informacje w wierszu polecenia programu MSBuild w: [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -339,7 +339,7 @@ Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecen
 | Write-HostWithTime |Zapisuje komunikat do programu hosta (**write-host**) poprzedzonego bieżącą godziną. Efekt zapisu w programie hosta jest różny. Większość programów, które obsługują program Windows PowerShell, zapisuj te komunikaty w standardowym wyjściu. |
 | Write-VerboseWithTime |Zapisuje pełny komunikat poprzedzony bieżącą godziną. Ponieważ wywołuje metodę **Write-verbose**, komunikat jest wyświetlany tylko wtedy, gdy skrypt jest uruchamiany z parametrem **verbose** lub gdy preferencja **VerbosePreference** jest ustawiona na **Kontynuuj**. |
 
-**Publikowanie — aplikacja**
+**Publish-WebApplication**
 
 | Nazwa funkcji | Opis |
 | --- | --- |
@@ -349,5 +349,5 @@ Aby uzyskać pomoc dotyczącą funkcji, których można użyć w wierszu polecen
 | Publish-WebApplication |Tworzy i wdraża Web Apps, maszyny wirtualne, bazy danych SQL i konta magazynu dla projektu sieci Web programu Visual Studio. |
 | Test-WebApplication |Ta funkcja nie jest zaimplementowana. Aby przetestować aplikację, możesz dodać polecenia w tej funkcji. |
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o skryptach programu PowerShell, odczytując [skrypty za pomocą programu Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) i Zobacz inne skrypty Azure PowerShell w [Centrum skryptów](https://azure.microsoft.com/documentation/scripts/).

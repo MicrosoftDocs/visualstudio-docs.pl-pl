@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0839c69a95df4419781ece2a163071ae0e3e6930
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293689"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851454"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 W przypadku konieczności rozwiązywania problemów z usługą w chmurze lub maszyną wirtualną platformy Azure można użyć programu Visual Studio, aby łatwiej skonfigurować Diagnostyka Azure. Diagnostyka przechwytuje dane systemowe i rejestruje dane na maszynach wirtualnych i wystąpieniach maszyn wirtualnych, na których działa usługa w chmurze. Dane diagnostyczne są przesyłane do wybranego konta magazynu. Aby uzyskać więcej informacji na temat rejestrowania diagnostycznego na platformie Azure, zobacz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -38,7 +38,7 @@ Parametry połączenia działają inaczej w niektórych kluczowych sposobach zes
 * W zestawie Azure SDK 2,4 i starszych parametry połączenia są używane jako środowisko uruchomieniowe przez wtyczkę diagnostyki w celu uzyskania informacji o koncie magazynu na potrzeby przesyłania dzienników diagnostycznych.
 * W zestawie Azure SDK 2,6 i nowszych program Visual Studio używa parametrów połączenia diagnostyki do konfigurowania rozszerzenia Diagnostyka Azure z odpowiednimi informacjami o koncie magazynu podczas publikowania. Parametry połączenia służą do definiowania różnych kont magazynu dla różnych konfiguracji usługi używanych przez program Visual Studio podczas publikowania. Jednak ponieważ wtyczka diagnostyki nie jest dostępna po zestawie Azure SDK 2,5, plik. cscfg przez samego siebie nie może skonfigurować rozszerzenia diagnostyki. Rozszerzenie należy skonfigurować oddzielnie przy użyciu narzędzi, takich jak Visual Studio lub PowerShell.
 * Aby uprościć proces konfigurowania rozszerzenia diagnostyki przy użyciu programu PowerShell, dane wyjściowe pakietu z programu Visual Studio obejmują plik XML konfiguracji publicznej dla rozszerzenia diagnostyki dla każdej roli. Program Visual Studio używa parametrów połączenia diagnostyki, aby wypełnić informacje o koncie magazynu w konfiguracji publicznej. Pliki konfiguracji publicznej są tworzone w folderze rozszerzenia. Pliki konfiguracji publicznej używają wzorca nazewnictwa PaaSDiagnostics.&lt;\>nazwy roli. PubConfig. XML. Wszystkie wdrożenia oparte na programie PowerShell mogą używać tego wzorca do mapowania każdej konfiguracji do roli.
-* [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040) używa parametrów połączenia w pliku cscfg w celu uzyskania dostępu do danych diagnostycznych. Dane są wyświetlane na karcie **monitorowanie** . Aby skonfigurować usługę do wyświetlania pełnych danych monitorowania w portalu, wymagane są parametry połączenia.
+* [Azure Portal](https://portal.azure.com/) używa parametrów połączenia w pliku cscfg w celu uzyskania dostępu do danych diagnostycznych. Dane są wyświetlane na karcie **monitorowanie** . Aby skonfigurować usługę do wyświetlania pełnych danych monitorowania w portalu, wymagane są parametry połączenia.
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>Migrowanie projektów do zestawu Azure SDK 2,6 i nowszego
 W przypadku migrowania z zestawu Azure SDK 2,5 do zestawu Azure SDK 2,6 lub nowszego, jeśli w pliku wadcfgx określono konto magazynu diagnostyki, konto magazynu pozostaje w tym pliku. Aby skorzystać z elastyczności korzystania z różnych kont magazynu dla różnych konfiguracji magazynu, należy ręcznie dodać parametry połączenia do projektu. W przypadku migrowania projektu z zestawu Azure SDK 2,4 lub starszego do zestawu Azure SDK 2,6 parametry połączenia diagnostyki są zachowywane. Należy jednak pamiętać o zmianach sposobu traktowania parametrów połączenia w zestawie Azure SDK 2,6, opisanym w poprzedniej sekcji.
@@ -69,7 +69,7 @@ W programie Visual Studio można zbierać dane diagnostyczne dla ról działają
 ### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>Aby włączyć diagnostykę w programie Visual Studio przed wdrożeniem
 
 1. W menu skrótów dla roli wybierz pozycję **Właściwości**. W oknie dialogowym **Właściwości** roli wybierz kartę **Konfiguracja** .
-2. W sekcji **Diagnostyka** upewnij się, że zaznaczone jest pole wyboru **Włącz diagnostykę** .
+2. W **diagnostyki** sekcji, upewnij się, że **Włącz diagnostykę** pole wyboru jest zaznaczone.
 
     ![Dostęp do opcji Włącz diagnostykę](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Aby określić konto magazynu dla danych diagnostycznych, wybierz przycisk wielokropka (...).
@@ -218,7 +218,7 @@ Po zebraniu danych diagnostycznych dla usługi w chmurze lub maszyny wirtualnej 
     W programie Cloud Explorer lub Eksplorator serwera Otwórz konto magazynu skojarzone ze wdrożeniem.
 3. Otwórz tabele diagnostyki w przeglądarce tabel, a następnie przejrzyj zebrane dane. W przypadku dzienników usług IIS i dzienników niestandardowych można otworzyć kontener obiektów BLOB. W poniższej tabeli wymieniono tabele lub kontenery obiektów blob zawierające dane dla różnych plików dziennika. Oprócz danych dla tego pliku dziennika, wpisy tabeli zawierają **EventTickCount**, **DeploymentId**, **role**i **RoleInstance**, aby ułatwić identyfikację, która maszyna wirtualna i rola wygenerowała dane oraz kiedy.
 
-   | Dane diagnostyczne | Opis | Location |
+   | Dane diagnostyczne | Opis | Lokalizacja |
    | --- | --- | --- |
    | Dzienniki aplikacji |Rejestruje kod generowany przez wywołanie metod klasy **System. Diagnostics. Trace** . |WADLogsTable |
    | Dzienniki zdarzeń |Dane z dzienników zdarzeń systemu Windows na maszynach wirtualnych. System Windows przechowuje informacje w tych dziennikach, ale aplikacje i usługi również używają dzienników do raportowania błędów lub informacji dziennika. |WADWindowsEventLogsTable |
@@ -303,5 +303,5 @@ Metody **RoleEntryPoint** są wywoływane w kontekście WAIISHost. exe, a nie w 
 
 W oknie **Właściwości** ustaw wartość właściwości **Kopiuj do katalogu wyjściowego** na **zawsze Kopiuj**.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby dowiedzieć się więcej o rejestrowaniu diagnostyki na platformie Azure, zobacz [Włączanie diagnostyki na platformie azure Cloud Services i maszynach wirtualnych](/azure/cloud-services/cloud-services-dotnet-diagnostics) oraz [Włączanie rejestrowania diagnostyki dla Web Apps w Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594061"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845811"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji
 
@@ -54,7 +54,7 @@ Obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkow
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | Nieobsługiwane. |
 | Chrome<br /><br /> Firefox | Rejestrowanie czynności nie jest obsługiwane. Zakodowane testy interfejsu użytkownika mogą być odtwarzane w przeglądarkach Chrome i Firefox z programu Visual Studio 2012 aktualizacja 4 lub nowsza. Aby uzyskać więcej informacji, przejdź [tutaj](using-different-web-browsers-with-coded-ui-tests.md). |
 | Opera<br /><br /> Safari | Nieobsługiwane. |
-| Silverlight | Nieobsługiwane.<br /><br /> W przypadku programu Visual Studo 2013 można jednak pobrać [wtyczkę kodowanego testu interfejsu użytkownika Microsoft Visual Studio 2013 dla programu Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) z galerii programu Visual Studio. |
+| Silverlight | Nieobsługiwane.<br /><br /> W przypadku programu Visual Studo 2013 można jednak pobrać [wtyczkę kodowanego testu interfejsu użytkownika Microsoft Visual Studio 2013 dla programu Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) z galerii programu Visual Studio. |
 | Flash/Java | Nieobsługiwane. |
 | Windows Forms 2.0 i nowsze wersje | W pełni obsługiwane. **Uwaga:**  Formanty NetFx są w pełni obsługiwane, ale nie wszystkie formanty innych firm są obsługiwane. |
 | WPF 3.5 i nowsze wersje | W pełni obsługiwane.<br /><br /> **Uwaga** Formanty NetFx są w pełni obsługiwane, ale nie wszystkie formanty innych firm są obsługiwane. |

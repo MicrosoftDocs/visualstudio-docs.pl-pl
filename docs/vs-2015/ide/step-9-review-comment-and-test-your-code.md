@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 090aeb83f6d0480c511acd808498953ae6c01940
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299969"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851104"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. Przejrzenie, komentowanie i testowanie kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Następnie Dodaj komentarz do kodu. Komentarz to Uwaga, która nie zmienia sposo
 
    Instrukcje sprawiają, że programy działają w programie. W wizualizacji C#, instrukcja zawsze jest zakończona średnikiem. Na Visual Basic końcem wiersza jest koniec instrukcji. (Nie jest wymagany średnik w Visual Basic). Poprzednia instrukcja nakazuje formantowi `PictureBox` załadować plik, który użytkownik wybrał ze składnika **OpenFileDialog** .
 
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](https://go.microsoft.com/fwlink/?LinkId=205216) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 5](https://go.microsoft.com/fwlink/?LinkId=205206). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-add-comments"></a>Aby dodać komentarze
 

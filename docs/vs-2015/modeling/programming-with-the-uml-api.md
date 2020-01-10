@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bdf1111198c7f874d03596382372fe25851e37d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296065"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852130"
 ---
 # <a name="programming-with-the-uml-api"></a>Programowanie za pomocą API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Interfejs API UML programu Visual Studio umożliwia pisanie kodu umożliwiające
 
 |Temat|Przykładowe typy i metody opisane|Opisane funkcje|
 |-----------|-----------------------------------------|------------------------|
-|[Nawigowanie po relacjach za pomocą interfejsu API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementy UML i ich właściwości i skojarzenia. Na przykład IElement i jego elementy podrzędne, w tym: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|W programie Visual Studio modele UML są zgodne ze specyfikacją języka UML w wersji 2.1.2, którą można uzyskać na [stronie zasobów UML](https://go.microsoft.com/fwlink/?LinkId=160796). Każdy typ jest interfejsem, który ma taką samą nazwę jak typ UML, poprzedzony prefiksem "I".|
+|[Nawigowanie po relacjach za pomocą interfejsu API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementy UML i ich właściwości i skojarzenia. Na przykład IElement i jego elementy podrzędne, w tym: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|W programie Visual Studio modele UML są zgodne ze specyfikacją języka UML w wersji 2.1.2, którą można uzyskać na [stronie zasobów UML](https://www.uml.org/). Każdy typ jest interfejsem, który ma taką samą nazwę jak typ UML, poprzedzony prefiksem "I".|
 |[Tworzenie elementów i relacji w modelach UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Każdy typ elementu ma metody do tworzenia elementów podrzędnych.|
 |[Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Każdy element w modelu może być reprezentowany jako kształt na diagramie. W niektórych przypadkach można utworzyć nowe kształty dla każdego obiektu. Można przenosić, zmieniać rozmiar, kolorować i zwijać lub rozwijać te kształty.|
 |[Nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Magazyn modeli przechowuje model.<br /><br /> Kontekst diagramu zapewnia dostęp do bieżącego diagramu i magazynu.|

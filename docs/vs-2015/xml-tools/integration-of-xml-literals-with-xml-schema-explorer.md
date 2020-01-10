@@ -9,17 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d808fce2783d444071ea1a7976d26e3c5bf02eed
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a15767454c83604de2844e4c0a9f2e121a9a1a4f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297459"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846120"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integracja literałów XML z eksploratorem schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic obsługuje literały XML, co oznacza, że można dołączyć fragmenty XML bezpośrednio do kodu Visual Basic. Aby uzyskać więcej informacji, zobacz [literały XML — Omówienie](https://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic obsługuje literały XML, co oznacza, że można dołączyć fragmenty XML bezpośrednio do kodu Visual Basic. Aby uzyskać więcej informacji, zobacz [literały XML — Omówienie](https://msdn.microsoft.com/library/bb384629.aspx).
 
  Jeśli plik XSD w projekcie Visual Basic zawiera literał XML, można wyświetlić zestaw schematu XML w Eksploratorze schematu XML. Aby wyświetlić zestaw schematu skojarzony z literałem XML, kliknij prawym przyciskiem myszy węzeł XML w literale XML lub Importuj przestrzeń nazw XML i wybierz **Pokaż w Eksploratorze schematu**.
 

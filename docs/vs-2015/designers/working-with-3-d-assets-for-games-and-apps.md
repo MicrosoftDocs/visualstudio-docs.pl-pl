@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cc4f8038906de89afd86fd666fbb011e974362d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e181500beefd32dffb9c0e8a7572a198cc9ff1f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298089"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852195"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Praca z obiektami 3-D do gier i aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ W tym dokumencie opisano narzędzia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
  Do tworzenia niestandardowych efektów wizualnych bez znajomości programowania HLSL można [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] użyć projektanta cieniowania, który jest oparty na grafie narzędziem do projektowania cieniowania.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji na temat rozpoczynania pracy z programowaniem DirectX, zobacz [DirectX](https://go.microsoft.com/fwlink/p/?LinkId=224633). Aby uzyskać więcej informacji na temat debugowania aplikacji opartych na technologii DirectX, zobacz [Diagnostyka grafiki (Debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+> Aby uzyskać więcej informacji na temat rozpoczynania pracy z programowaniem DirectX, zobacz [DirectX](https://msdn.microsoft.com/library/ee663274(VS.85).aspx). Aby uzyskać więcej informacji na temat debugowania aplikacji opartych na technologii DirectX, zobacz [Diagnostyka grafiki (Debugowanie grafiki DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Zgodność wersji programu DirectX
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa programu DirectX do renderowania zasobów 2-D i 3-D. Można wybrać moduł renderujący programu DirectX 11 lub program Windows Advanced rasteryzacji platform (Wypaczenie). Moduł renderowania DirectX 11 zapewnia wysoką wydajność, przyspieszanie sprzętowe w przypadku procesorów DirectX 11 i DirectX 10. Moduł renderowania ZNIEKSZTAŁCAnia pomaga upewnić się, że zasoby współpracują z szeroką gamą komputerów — dotyczy to również komputerów, które nie mają nowoczesnego sprzętu graficznego i komputerów z zintegrowanym sprzętem grafiki. Aby uzyskać więcej informacji na temat wypaczania, zobacz [Przewodnik dotyczący platformy Windows Advanced rasteryzacji](https://go.microsoft.com/fwlink/p/?LinkId=224634).
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] używa programu DirectX do renderowania zasobów 2-D i 3-D. Można wybrać moduł renderujący programu DirectX 11 lub program Windows Advanced rasteryzacji platform (Wypaczenie). Moduł renderowania DirectX 11 zapewnia wysoką wydajność, przyspieszanie sprzętowe w przypadku procesorów DirectX 11 i DirectX 10. Moduł renderowania ZNIEKSZTAŁCAnia pomaga upewnić się, że zasoby współpracują z szeroką gamą komputerów — dotyczy to również komputerów, które nie mają nowoczesnego sprzętu graficznego i komputerów z zintegrowanym sprzętem grafiki. Aby uzyskać więcej informacji na temat wypaczania, zobacz [Przewodnik dotyczący platformy Windows Advanced rasteryzacji](https://msdn.microsoft.com/library/gg615082(VS.85).aspx).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Praca z obrazami i teksturami](../designers/working-with-textures-and-images.md)|Opisuje, w jaki sposób używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do pracy z obrazami i teksturami.|
 |[Praca z modelami 3-D](../designers/working-with-3-d-models.md)|Opisuje, w jaki sposób używać [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do pracy z modelami 3-D.|

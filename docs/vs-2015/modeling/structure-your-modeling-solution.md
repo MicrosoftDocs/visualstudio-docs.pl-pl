@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298168"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850808"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 
@@ -34,7 +34,7 @@ W średnim lub dużym projekcie struktura zespołu opiera się na strukturze apl
 
 #### <a name="to-divide-an-application-into-layers"></a>Aby podzielić aplikację na warstwy
 
-1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Podstawowe struktury rozwiązań na podstawie struktury aplikacji, takiej jak aplikacja sieci Web, aplikacja usługi lub aplikacja klasyczna. Wiele typowych architektur omówiono w temacie [Application Archetypes w przewodniku po architekturze aplikacji firmy Microsoft](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
 
 2. Utwórz rozwiązanie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które wywoła rozwiązanie architektury. To rozwiązanie zostanie użyte do utworzenia ogólnego projektu systemu. Będzie zawierać modele, ale nie kod.
 
@@ -100,7 +100,7 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 
 #### <a name="to-create-a-solution-template"></a>Aby utworzyć szablon rozwiązania
 
-1. [Pobierz i zainstaluj Kreatora eksportu szablonów](https://go.microsoft.com/fwlink/?LinkId=196686), jeśli jeszcze tego nie zrobiono.
+1. [Pobierz i zainstaluj Kreatora eksportu szablonów](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard), jeśli jeszcze tego nie zrobiono.
 
 2. Utwórz strukturę rozwiązania, która ma być używana jako punkt wyjścia dla przyszłych projektów.
 
@@ -109,7 +109,7 @@ Jeśli na przykład często używasz rozwiązań z warstwami prezentacji, firmow
 4. Postępując zgodnie z instrukcjami wyświetlanymi w kreatorze, wybierz projekty, które chcesz uwzględnić w szablonie, podaj nazwę i opis szablonu, a następnie określ lokalizację wyjściową.
 
 > [!NOTE]
-> Materiał przedstawiony w tym temacie jest abstrakcyjny i paraphrased ze wskazówkami dotyczącymi narzędzi architektury programu Visual Studio, które są napisywane przez zakresy ALM programu Visual Studio, które są współdziałaniem między profesjonalistami (MVP), usługami firmy Microsoft i programem Visual Studio zespół produktu i autorzy. [Kliknij tutaj, aby pobrać kompletny pakiet wskazówek.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> Materiał przedstawiony w tym temacie jest abstrakcyjny i paraphrased ze wskazówkami dotyczącymi narzędzi architektury programu Visual Studio, które są napisywane przez zakresy ALM programu Visual Studio, które są współdziałaniem między profesjonalistami (MVP), usługami firmy Microsoft i programem Visual Studio zespół produktu i autorzy. [Kliknij tutaj, aby pobrać kompletny pakiet wskazówek.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Powiązane materiały
 

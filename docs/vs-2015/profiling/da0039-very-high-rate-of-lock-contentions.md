@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f96747e688e9981d356253b8cb0f0cce1d84f191
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab61faa8664cf84950cd872233e3c49fa3271c73
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300069"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850921"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Bardzo wysoka liczba rywalizacji blokad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0039: ba
 |-|-|  
 |Identyfikator zasady|DA0039|  
 |Kategoria|Użycie .NET Framework|  
-|Metody profilowania|Sond<br /><br /> Oprzyrządowanie<br /><br /> Pamięć platformy .NET|  
+|Metody profilowania|Próbkowanie<br /><br /> Oprzyrządowanie<br /><br /> Pamięć platformy .NET|  
 |Komunikat|Występuje bardzo wysoki współczynnik rywalizacji o blokadę platformy .NET. Sprawdź przyczynę rywalizacji o blokadę, uruchamiając profil współbieżności.|  
 |Typ reguły|Ostrzeżenie|  
   
@@ -39,9 +39,9 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0039: ba
  Dane wydajności systemu zbierane z danymi profilowania wskazują, że zbyt wysoka liczba rywalizacji blokad podczas wykonywania aplikacji. Rozważ ponowne przeprowadzenie profilowania przy użyciu metody profilowania współbieżności, aby znaleźć przyczynę rywalizacji.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Blokady są używane do ochrony krytycznych sekcji kodu, które muszą być wykonywane sekwencyjnie przez jeden wątek na raz w aplikacji wielowątkowej. Microsoft .NET Common Language Run-Time (CLR) zawiera pełny zestaw synchronizacji i blokowania elementów podstawowych. Na przykład C# język obsługuje instrukcję Lock (SyncLock w Visual Basic). Aplikacja zarządzana może wywoływać metody `Monitor.Enter` i `Monitor.Exit` w przestrzeni nazw System. Threading, aby bezpośrednio uzyskać i zwolnić blokadę. .NET Framework obsługuje dodatkowe synchronizacje i blokowanie elementów pierwotnych, w tym klas, które obsługują muteksy, ReaderWriterLocks i semafory. Aby uzyskać więcej informacji, zobacz [Omówienie elementów pierwotnych synchronizacji](https://go.microsoft.com/fwlink/?LinkId=177867) w podręczniku .NET Framework dewelopera w witrynie MSDN w sieci Web. Klasy .NET Framework są przydzielone warstwami za pośrednictwem usług synchronizacji niższego poziomu wbudowanych w system operacyjny Windows. Obejmują one krytyczne obiekty sekcji i wiele różnych funkcji oczekiwania i sygnalizacji zdarzeń. Aby uzyskać więcej informacji, zobacz sekcję [Synchronizacja](https://go.microsoft.com/fwlink/?LinkId=177869) w temacie programowanie Win32 i com w bibliotece MSDN.  
+ Blokady są używane do ochrony krytycznych sekcji kodu, które muszą być wykonywane sekwencyjnie przez jeden wątek na raz w aplikacji wielowątkowej. Microsoft .NET Common Language Run-Time (CLR) zawiera pełny zestaw synchronizacji i blokowania elementów podstawowych. Na przykład C# język obsługuje instrukcję Lock (SyncLock w Visual Basic). Aplikacja zarządzana może wywoływać metody `Monitor.Enter` i `Monitor.Exit` w przestrzeni nazw System. Threading, aby bezpośrednio uzyskać i zwolnić blokadę. .NET Framework obsługuje dodatkowe synchronizacje i blokowanie elementów pierwotnych, w tym klas, które obsługują muteksy, ReaderWriterLocks i semafory. Aby uzyskać więcej informacji, zobacz [Omówienie elementów pierwotnych synchronizacji](https://msdn.microsoft.com/library/ms228964.aspx) w podręczniku .NET Framework dewelopera w witrynie MSDN w sieci Web. Klasy .NET Framework są przydzielone warstwami za pośrednictwem usług synchronizacji niższego poziomu wbudowanych w system operacyjny Windows. Obejmują one krytyczne obiekty sekcji i wiele różnych funkcji oczekiwania i sygnalizacji zdarzeń. Aby uzyskać więcej informacji, zobacz sekcję [Synchronizacja](https://msdn.microsoft.com/library/ms686353.aspx) w temacie programowanie Win32 i com w bibliotece MSDN.  
   
- Podstawową klasą .NET Framework i natywnych obiektów systemu Windows, które są używane na potrzeby synchronizacji i blokowania, są lokalizacje pamięci udostępnionej, które należy zmienić przy użyciu operacji zablokowanych. Operacje wykonywane w sposób nieblokowany wykorzystują instrukcje specyficzne dla sprzętu, które działają w lokalizacjach udostępnionych pamięci, aby zmienić ich stan przy użyciu operacji niepodzielnych. Operacje niepodzielne są gwarantowane dla wszystkich procesorów na komputerze. Blokady i elementy WaitHandle są obiektami .NET, które automatycznie używają operacji zablokowanych, gdy są one ustawione lub resetowane. W aplikacji mogą istnieć inne struktury danych pamięci współdzielonej, które wymagają, aby można było je aktualizować w sposób bezpieczny dla wątków. Aby uzyskać więcej informacji, zobacz sekcję [operacje zablokowane](https://go.microsoft.com/fwlink/?LinkId=177870) w sekcji .NET Framework biblioteki MSND  
+ Podstawową klasą .NET Framework i natywnych obiektów systemu Windows, które są używane na potrzeby synchronizacji i blokowania, są lokalizacje pamięci udostępnionej, które należy zmienić przy użyciu operacji zablokowanych. Operacje wykonywane w sposób nieblokowany wykorzystują instrukcje specyficzne dla sprzętu, które działają w lokalizacjach udostępnionych pamięci, aby zmienić ich stan przy użyciu operacji niepodzielnych. Operacje niepodzielne są gwarantowane dla wszystkich procesorów na komputerze. Blokady i elementy WaitHandle są obiektami .NET, które automatycznie używają operacji zablokowanych, gdy są one ustawione lub resetowane. W aplikacji mogą istnieć inne struktury danych pamięci współdzielonej, które wymagają, aby można było je aktualizować w sposób bezpieczny dla wątków. Aby uzyskać więcej informacji, zobacz sekcję [operacje zablokowane](https://msdn.microsoft.com/library/sbhbke0y.aspx) w sekcji .NET Framework biblioteki MSND  
   
  Synchronizacja i blokowanie to mechanizmy stosowane w celu zapewnienia poprawnego wykonywania aplikacji wielowątkowych. Każdy wątek aplikacji wielowątkowej jest niezależną jednostką wykonywania zaplanowaną niezależnie od systemu operacyjnego. Rywalizacja o blokady występuje zawsze, gdy wątek próbujący uzyskać blokadę jest opóźniony, ponieważ inny wątek utrzymuje blokadę.  
   

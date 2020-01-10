@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295506"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849933"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Wskazówki: generowanie kodu przy użyciu szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Generowanie kodu pozwala utworzyć kod programu, który jest silnie określony, 
  W tym przykładowym projekcie szablon odczytuje przykładowy plik XML i generuje klasy odpowiadające każdemu typowi węzła. W kodzie ręcznym można użyć tych klas do nawigowania w pliku XML. Możesz również uruchomić aplikację na innych plikach, które używają tych samych typów węzłów. Przykładowy plik XML ma dostarczyć przykłady wszystkich typów węzłów, z którymi aplikacja ma się zająć.
 
 > [!NOTE]
-> Aplikacja [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765), która jest dołączona do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może generować klasy z jednoznacznie określonymi typami z plików XML. Szablon przedstawiony tutaj jest podany jako przykład.
+> Aplikacja [XSD. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), która jest dołączona do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], może generować klasy z jednoznacznie określonymi typami z plików XML. Szablon przedstawiony tutaj jest podany jako przykład.
 
  Oto przykładowy plik:
 

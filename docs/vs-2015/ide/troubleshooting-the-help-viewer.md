@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299890"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851081"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Rozwiązywanie problemów z Podglądem Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ W tym temacie omówiono problemy, które mogą wystąpić w programie Podgląd p
 
 #### <a name="to-activate-windows-search-service"></a>Aby aktywować usługę wyszukiwania systemu Windows
 
-1. Rozpocznij Menedżer serwera.
+1. Uruchom Menedżera serwera.
 
 2. W okienku nawigacji po lewej stronie wybierz pozycję **role**.
 
@@ -45,9 +45,9 @@ W tym temacie omówiono problemy, które mogą wystąpić w programie Podgląd p
 ## <a name="additional-resources"></a>Dodatkowe materiały
  Aby uzyskać więcej informacji i przekazać opinię na temat pomocy, możesz skorzystać z następujących zasobów:
 
-- Aby przekazać opinię, zobacz [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail do [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Aby przekazać opinię, zobacz [Microsoft Connect](https://connect.microsoft.com/) w witrynie internetowej firmy Microsoft lub Wyślij wiadomość e-mail do [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją dla deweloperów i forum systemu pomocy](https://go.microsoft.com/fwlink/?LinkId=232741) oraz blog [pomocy Guy](https://go.microsoft.com/fwlink/?LinkId=232743) .
+- Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją dla deweloperów i forum systemu pomocy](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) oraz blog [pomocy Guy](https://blogs.msdn.com/b/thehelpguy/) .
 
 ## <a name="see-also"></a>Zobacz też
- [Podręcznik administratora programu Help Viewer 2,1](https://go.microsoft.com/fwlink/?LinkId=243985)
+ [Podręcznik administratora programu Help Viewer 2,1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

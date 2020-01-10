@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299020"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851370"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -57,7 +57,7 @@ Domyślnie Diagnostyka jest włączona dla roli sieci Web. Projekt usługi w chm
 
 ## <a name="settings-page"></a>Strona Ustawienia
 
-Na stronie **Ustawienia** można dodać ustawienia do konfiguracji jako pary nazwa-wartość. Kod uruchomiony w roli może odczytywać wartości ustawień konfiguracji w czasie wykonywania przy użyciu klas dostarczonych przez [bibliotekę zarządzaną platformy Azure](https://go.microsoft.com/fwlink?LinkID=171026), w tym metodę [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+Na stronie **Ustawienia** można dodać ustawienia do konfiguracji jako pary nazwa-wartość. Kod uruchomiony w roli może odczytywać wartości ustawień konfiguracji w czasie wykonywania przy użyciu klas dostarczonych przez [bibliotekę zarządzaną platformy Azure](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx), w tym metodę [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Konfigurowanie parametrów połączenia dla konta magazynu
 
@@ -95,7 +95,7 @@ Rola sieci Web zazwyczaj ma jeden punkt końcowy HTTP na porcie 80. Rola procesu
 
 Korzystając ze strony właściwości **magazynu lokalnego** , można zarezerwować jeden lub więcej zasobów magazynu lokalnego dla roli. Lokalny zasób magazynu jest katalogiem zastrzeżonym w systemie plików maszyny wirtualnej platformy Azure, w którym jest uruchomiona wystąpienie roli.
 
-## <a name="certificates-page"></a>Strona certyfikaty
+## <a name="certificates-page"></a>Strona Certyfikaty
 
 Strona właściwości **Certyfikaty** umożliwia dodanie informacji o certyfikatach do konfiguracji usługi. Należy pamiętać, że certyfikaty nie są pakowane z usługą; certyfikaty należy przekazać osobno na platformę Azure za pomocą [Azure Portal](https://portal.azure.com).
 

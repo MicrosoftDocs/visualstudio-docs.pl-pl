@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588871"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846908"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzi do kompilowania przy użyciu systemu iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS
 
-Możesz użyć programu Visual Studio z **programowaniem aplikacji mobilnych C++**  na wiele platform z narzędziami do edytowania, debugowania i wdrażania kodu systemu iOS w symulatorze systemu iOS lub na urządzeniu z systemem iOS. Jednak ze względu na ograniczenia licencjonowania kod musi być skompilowany i uruchamiany zdalnie na komputerze Mac. Aby kompilować i uruchamiać aplikacje dla systemu iOS przy użyciu programu Visual Studio, należy skonfigurować i skonfigurować agenta zdalnego, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)na komputerze Mac. Agent zdalny obsługuje żądania kompilacji z programu Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączonym do komputera Mac lub w symulatorze systemu iOS na komputerze Mac.
+Możesz użyć programu Visual Studio z **programowaniem aplikacji mobilnych C++**  na wiele platform z narzędziami do edytowania, debugowania i wdrażania kodu systemu iOS w symulatorze systemu iOS lub na urządzeniu z systemem iOS. Jednak ze względu na ograniczenia licencjonowania kod musi być skompilowany i uruchamiany zdalnie na komputerze Mac. Aby kompilować i uruchamiać aplikacje dla systemu iOS przy użyciu programu Visual Studio, należy skonfigurować i skonfigurować agenta zdalnego, [vcremote](https://www.npmjs.com/package/vcremote)na komputerze Mac. Agent zdalny obsługuje żądania kompilacji z programu Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączonym do komputera Mac lub w symulatorze systemu iOS na komputerze Mac.
 
 > [!NOTE]
 > Aby uzyskać informacje na temat korzystania z usług Mac hostowanych w chmurze zamiast komputerów Mac, zobacz [Konfigurowanie programu Visual Studio do nawiązywania połączenia z hostowanym komputerem Mac w chmurze](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Instrukcje służą do kompilowania przy użyciu Visual Studio Tools Apache Cordova. Aby użyć instrukcji do kompilowania przy C++użyciu programu, należy zastąpić `vcremote` `remotebuild`.
@@ -64,11 +64,11 @@ Aby zainstalować i użyć agenta zdalnego do opracowania kodu dla systemu iOS, 
 
 - [Node. js](https://nodejs.org/) w wersji 8.11.3 i npm w wersji 5.6.0
 
-   Zainstaluj wersję 8.11.3 środowiska Node. js na komputerze Mac. Jeśli instalujesz pakiet Node. js, powinien on mieć npm w wersji 5.6.0. Inne wersje środowiska Node. js i npm mogą nie obsługiwać niektórych modułów używanych w `vcremote` agenta zdalnego, co może spowodować niepowodzenie instalacji `vcremote`.
+   Zainstaluj wersję 8.11.3 środowiska Node. js na komputerze Mac. Jeśli instalujesz pakiet Node. js, powinien on mieć npm w wersji 5.6.0. Inne wersje środowiska Node. js i npm mogą nie obsługiwać niektórych modułów używanych w `vcremote`agenta zdalnego, co może spowodować niepowodzenie instalacji `vcremote`.
 
 ## <a name="Install"></a>Zainstaluj agenta zdalnego dla systemu iOS
 
-Po zainstalowaniu opracowywania aplikacji mobilnych przy C++ użyciu obciążenia program Visual Studio może komunikować się z [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), zdalnym agentem uruchomionym na komputerze Mac w celu transferu plików, kompilowania i uruchamiania aplikacji dla systemu iOS oraz wysyłania poleceń debugowania.
+Po zainstalowaniu opracowywania aplikacji mobilnych przy C++ użyciu obciążenia program Visual Studio może komunikować się z [vcremote](https://www.npmjs.com/package/vcremote), zdalnym agentem uruchomionym na komputerze Mac w celu transferu plików, kompilowania i uruchamiania aplikacji dla systemu iOS oraz wysyłania poleceń debugowania.
 
 Przed zainstalowaniem agenta zdalnego upewnij się, że spełniono [wymagania wstępne](#prerequisites) i wykonano kroki instalacji w temacie [Instalowanie aplikacji mobilnych dla wielu platform za C++pomocą ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)programu.
 
@@ -125,7 +125,7 @@ Po uruchomieniu zdalnego agenta można go użyć z programu Visual Studio, dopó
 
 #### <a name="to-stop-the-remote-agent"></a>Aby zatrzymać agenta zdalnego
 
-- W oknie terminalu `vcremote` jest uruchomiony program, wprowadź **Control** +**C**.
+- W oknie terminalu `vcremote` jest uruchomiony program, wprowadź **Control**+**C**.
 
 ## <a name="ConfigureVS"></a>Konfigurowanie agenta zdalnego w programie Visual Studio
 

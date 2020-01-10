@@ -11,23 +11,23 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: f6ccc19ccc21b7cabcd553e9d040d20a89ed6ccb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 64d60c3a18338956d4d34b0406fff061970d2974
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298076"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850010"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
 W programie Cloud Explorer można wyświetlać zasoby platformy Azure i grupy zasobów, sprawdzać ich właściwości oraz wykonywać kluczowe akcje diagnostyki deweloperów w programie Visual Studio.
 
-Podobnie jak [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040), Eksplorator chmury jest oparty na stosie Azure Resource Manager. W związku z tym program Cloud Explorer rozumie zasoby, takie jak grupy zasobów platformy Azure i usługi platformy Azure, takie jak aplikacje logiki i aplikacje API Apps, a także obsługuje [kontrolę dostępu opartą na rolach](/azure/role-based-access-control/role-assignments-portal) (RBAC).
+Podobnie jak [Azure Portal](https://portal.azure.com/), Eksplorator chmury jest oparty na stosie Azure Resource Manager. W związku z tym program Cloud Explorer rozumie zasoby, takie jak grupy zasobów platformy Azure i usługi platformy Azure, takie jak aplikacje logiki i aplikacje API Apps, a także obsługuje [kontrolę dostępu opartą na rolach](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 * Program Visual Studio 2015 z [Zestaw Microsoft Azure SDK dla platformy .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
-* Konto Microsoft Azure — Jeśli nie masz konta, możesz [zarejestrować się w celu uzyskania bezpłatnej wersji próbnej](https://go.microsoft.com/fwlink/?LinkId=623901) lub [aktywować korzyści dla subskrybentów programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=623901).
+* Konto Microsoft Azure — Jeśli nie masz konta, możesz [zarejestrować się w celu uzyskania bezpłatnej wersji próbnej](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) lub [aktywować korzyści dla subskrybentów programu Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
 
 > [!NOTE]
 > Aby wyświetlić program Cloud Explorer, wybierz pozycję **wyświetl** > **Cloud Explorer** na pasku menu.
@@ -78,7 +78,7 @@ Aby wyświetlić zasoby platformy Azure, możesz wybrać opcję **typy zasobów*
 
 1. Z menu kontekstowego wybierz odpowiedni widok:
 
-   * Widok **typów zasobów** — typowy widok używany na [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040), pokazuje zasoby platformy Azure pogrupowane według ich typu, takich jak aplikacje sieci Web, konta magazynu i maszyny wirtualne.
+   * Widok **typów zasobów** — typowy widok używany na [Azure Portal](https://portal.azure.com/), pokazuje zasoby platformy Azure pogrupowane według ich typu, takich jak aplikacje sieci Web, konta magazynu i maszyny wirtualne.
    * Widok **grup zasobów** — umożliwia kategoryzowanie zasobów platformy Azure według grupy zasobów platformy Azure, z którą są skojarzone. Grupa zasobów to pakiet zasobów platformy Azure, zwykle używany przez określoną aplikację. Aby dowiedzieć się więcej na temat grup zasobów platformy Azure, zobacz [Azure Resource Manager przegląd](/azure/azure-resource-manager/resource-group-overview).
 
    Na poniższej ilustracji przedstawiono porównanie dwóch widoków zasobów:
@@ -97,7 +97,7 @@ Na poniższej ilustracji przedstawiono przykładowe porównanie zawartości wido
 
   ![Zrzut ekranu programu Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-Każdy zasób ma **otwartą akcję w portalu**. Po wybraniu tej akcji w programie Cloud Explorer zostanie wyświetlony wybrany zasób z [Azure Portal](https://go.microsoft.com/fwlink/p/?LinkID=525040). Funkcja **Otwórz w portalu** jest przydatna do przechodzenia do głęboko zagnieżdżonych zasobów.
+Każdy zasób ma **otwartą akcję w portalu**. Po wybraniu tej akcji w programie Cloud Explorer zostanie wyświetlony wybrany zasób z [Azure Portal](https://portal.azure.com/). Funkcja **Otwórz w portalu** jest przydatna do przechodzenia do głęboko zagnieżdżonych zasobów.
 
 Dodatkowe akcje i wartości właściwości mogą być również wyświetlane na podstawie zasobu platformy Azure. Na przykład aplikacje sieci Web i Aplikacje logiki również mają otwarte akcje **w przeglądarce** i **Dołącz debuger** oprócz **otwartych w portalu**. Akcje otwierania edytorów są wyświetlane po wybraniu obiektu BLOB, kolejki lub tabeli konta magazynu. Aplikacje platformy Azure mają właściwości **adresu URL** i **stanu** , natomiast zasoby magazynu mają właściwości klucza i parametrów połączenia.
 

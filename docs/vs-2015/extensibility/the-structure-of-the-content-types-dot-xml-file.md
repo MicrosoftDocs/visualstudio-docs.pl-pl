@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9b1fd98b3812fbeca2597534a7177ba2f81ab138
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3185b70f74478a9a55c4fb918c1535c86d154c76
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301235"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846370"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struktura pliku [Content_types].xml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "74301235"
 Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio używa pliku XML [Content_Types] do zainstalowania pakietu, ale nie instaluje samego pliku.  
   
 > [!NOTE]
-> Chociaż ten temat dotyczy tylko plików [Content_Type]. XML, które są używane w pakietach VSIX, typ pliku [Content_Types]. XML jest częścią standardu *Open Package Conventions (OPC)* . Aby uzyskać więcej informacji, zobacz [OPC: A New Standard for pakowanie danych](https://go.microsoft.com/fwlink/?LinkID=148207) w witrynie MSDN w sieci Web.  
+> Chociaż ten temat dotyczy tylko plików [Content_Type]. XML, które są używane w pakietach VSIX, typ pliku [Content_Types]. XML jest częścią standardu *Open Package Conventions (OPC)* . Aby uzyskać więcej informacji, zobacz [OPC: A New Standard for pakowanie danych](https://msdn.microsoft.com/magazine/cc163372.aspx) w witrynie MSDN w sieci Web.  
   
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy  
  W poniższych sekcjach opisano element główny oraz jego atrybuty i elementy podrzędne.  
@@ -37,7 +37,7 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 |-------------|-----------------|  
 |`Types`|Zawiera elementy podrzędne, które wyliczają typy plików w pakiecie VSIX.|  
   
-### <a name="attributes"></a>Atrybuty  
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -56,7 +56,7 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 |-------------|-----------------|  
 |`Default`|Opisuje typ zawartości w pakiecie VSIX. Każdy typ pliku w pakiecie musi mieć własny `Default` elementu.|  
   
-### <a name="attributes"></a>Atrybuty  
+### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
@@ -66,22 +66,22 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 ### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Przypisane  
  Program Visual Studio rozpoznaje następujące wartości `ContentType` dla skojarzonych typów `Extension`.  
   
-|Wewnętrzny|ContentType|  
+|Rozszerzenie|contentType|  
 |---------------|-----------------|  
-|zawierającego|tekst/zwykły|  
-|pkgdef|tekst/zwykły|  
+|zawierającego|text/plain|  
+|pkgdef|text/plain|  
 |xml|tekst/XML|  
 |vsixmanifest|tekst/XML|  
-|htm lub HTML|tekst/HTML|  
+|htm lub HTML|text/html|  
 |RTF|Aplikacja/RTF|  
-|formatach|Aplikacja/plik PDF|  
-|GIF|obraz/GIF|  
+|pdf|Aplikacja/plik PDF|  
+|gif|obraz/GIF|  
 |jpg lub JPEG|obraz/jpg|  
-|TIFF|obraz/TIFF|  
+|tiff|obraz/TIFF|  
 |vsix|Aplikacja/zip|  
 |kodu|Aplikacja/zip|  
-|bibliotece|Aplikacja/oktet — strumień|  
-|wszystkie inne typy plików|Aplikacja/oktet — strumień|  
+|bibliotece|application/octet-stream|  
+|wszystkie inne typy plików|application/octet-stream|  
   
 ## <a name="example"></a>Przykład  
   
@@ -104,4 +104,4 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 ## <a name="see-also"></a>Zobacz też  
  [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Odwołanie do schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC: nowy standard tworzenia pakietów danych](https://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC: nowy standard tworzenia pakietów danych](https://msdn.microsoft.com/magazine/cc163372.aspx)

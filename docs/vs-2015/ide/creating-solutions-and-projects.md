@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300598"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850570"
 ---
 # <a name="creating-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "74300598"
 Projekty to logiczne kontenery dla wszystkich elementów, które są potrzebne do skompilowania aplikacji. Podczas tworzenia projektu, wybierając pozycję  **&#124; plik nowy &#124; projekt** z menu głównego, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy rozwiązanie, które je zawiera. W razie potrzeby możesz dodać nowe lub istniejące projekty do rozwiązania. Można tworzyć projekty z istniejących plików kodu, a także tworzyć projekty tymczasowe (tylko platforma .NET), które zostaną usunięte po wykonaniu tych czynności.
 
 > [!NOTE]
-> Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić ustawienia, wybierz **Importuj i Eksportuj ustawienia** w menu **Narzędzia** . Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień deweloperskich w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Opisy w tym temacie są oparte na wersji programu Visual Studio Community. Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień lub wersji programu Visual Studio. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="create-a-project-from-an-installed-project-template"></a>Tworzenie projektu na podstawie zainstalowanego szablonu projektu
  **Plik &#124; nowy &#124; projekt** z menu głównego, aby wyświetlić okno dialogowe Nowy projekt. W okienku po lewej stronie w obszarze  **&#124; szablony z niewyższym** wybieraniem języka programowania i platformy lub technologii, a następnie wybierz spośród dostępnych szablonów w środkowym okienku.
@@ -53,7 +53,7 @@ Projekty to logiczne kontenery dla wszystkich elementów, które są potrzebne d
  Aby uzyskać dostęp do wersji Framework wcześniejszych niż 4,0, w systemie musi być zainstalowany .NET Framework 3,5.
 
 ## <a name="downloading-sample-solutions"></a>Pobieranie przykładowych rozwiązań
- Możesz użyć programu Visual Studio do pobrania i zainstalowania przykładowych rozwiązań z [galerii kodu MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
+ Możesz użyć programu Visual Studio do pobrania i zainstalowania przykładowych rozwiązań z [galerii kodu MSDN](https://code.msdn.microsoft.com/).
 
  Możesz pobrać przykłady osobno lub pobrać pakiet przykładowy zawierający powiązane przykłady, które udostępniają technologię lub temat. Otrzymasz powiadomienie, gdy zostaną opublikowane zmiany kodu źródłowego dla pobranych próbek.
 

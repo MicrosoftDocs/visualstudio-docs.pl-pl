@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299459"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850633"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy warstwowe* w programie Visual Studio. Upewnij się, że kod pozostaje spójny z tym projektem, sprawdzając poprawność kodu przy użyciu diagramu warstwowego. Możesz również uwzględnić walidację warstwy w procesie kompilacji. Zobacz [wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu diagramów warstwowych](https://go.microsoft.com/fwlink/?LinkID=252073).
+Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy warstwowe* w programie Visual Studio. Upewnij się, że kod pozostaje spójny z tym projektem, sprawdzając poprawność kodu przy użyciu diagramu warstwowego. Możesz również uwzględnić walidację warstwy w procesie kompilacji. Zobacz [wideo Channel 9: projektowanie i weryfikowanie architektury przy użyciu diagramów warstwowych](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -66,7 +66,7 @@ Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy warstwowe*
 ## <a name="CreateLayers"></a>Definiowanie warstw do reprezentowania obszarów funkcjonalnych lub składników
  Warstwy reprezentują logiczne grupy *artefaktów*, takie jak projekty, pliki kodu, przestrzenie nazw, klasy i metody. Możesz tworzyć warstwy z artefaktów z Visual C# .net i Visual Basic projekty .NET. Możesz też dołączyć specyfikacje lub plany do warstwy, łącząc dokumenty, takie jak pliki programu Word lub prezentacje programu PowerPoint. Każda warstwa jest wyświetlana jako prostokąt na diagramie i pokazuje liczbę artefaktów, które są z nią połączone. Warstwa może zawierać zagnieżdżone warstwy, które opisują bardziej szczegółowe zadania.
 
- Ogólną wytyczną jest nazwa warstw, zgodnie z ich funkcją, na przykład "prezentacja" lub "usługi". Jeśli artefakty są blisko siebie zależne, umieść je w tej samej warstwie. Jeśli artefakty mogą być aktualizowane oddzielnie lub używane w oddzielnych aplikacjach, umieść je w różnych warstwach. Aby dowiedzieć się więcej o wzorcach warstwowych, odwiedź witrynę & Practices w [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794).
+ Ogólną wytyczną jest nazwa warstw, zgodnie z ich funkcją, na przykład "prezentacja" lub "usługi". Jeśli artefakty są blisko siebie zależne, umieść je w tej samej warstwie. Jeśli artefakty mogą być aktualizowane oddzielnie lub używane w oddzielnych aplikacjach, umieść je w różnych warstwach. Aby dowiedzieć się więcej o wzorcach warstwowych, odwiedź witrynę & Practices w [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 > [!TIP]
 > Istnieją pewne typy artefaktów, które można połączyć z warstwami, ale nie obsługują walidacji na diagramie warstwowym. Aby sprawdzić, czy artefakt obsługuje walidację, Otwórz **Eksploratora warstw** , aby sprawdzić Właściwość **obsługuje walidację** łącza artefaktu. Zobacz sekcję [odnajdywanie istniejących zależności między warstwami](#Generate).
@@ -96,7 +96,7 @@ Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy warstwowe*
 ## <a name="EditArchitecture"></a>Edycja warstw i zależności w celu pokazania zamierzonego projektu
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, wykonaj następujące kroki, aby edytować diagram warstwy. Można również rozważyć wprowadzenie zmian refaktoryzacji w celu poprawy struktury kodu przed jego rozszerzeniem. Zobacz [ulepszanie struktury kodu](#Improving).
 
-|**Do**|**Wykonaj następujące kroki**|
+|**To**|**Wykonaj następujące kroki**|
 |------------|-----------------------------|
 |Usuń zależność, która nie powinna istnieć|Kliknij zależność, a następnie naciśnij klawisz **delete**.|
 |Zmień lub ogranicz kierunek zależności|Ustaw jej właściwość **Direction** .|
@@ -115,7 +115,7 @@ Opisz architekturę aplikacji na wysokim poziomie, tworząc *diagramy warstwowe*
 ## <a name="NewAreas"></a>Projektuj nowe obszary aplikacji
  Po rozpoczęciu opracowywania nowego projektu lub nowego obszaru w nowym projekcie można rysować warstwy i zależności, aby pomóc w zidentyfikowaniu głównych składników przed rozpoczęciem opracowywania kodu.
 
-- **Pokaż możliwe do zidentyfikowania wzorce architektury** na diagramach warstw, jeśli to możliwe. Na przykład diagram warstwowy opisujący aplikację klasyczną może obejmować takie warstwy jak prezentacja, Logika domeny i magazyn danych. Diagram warstwowy, który obejmuje pojedynczą funkcję w aplikacji, może mieć takie warstwy, jak model, widok i kontroler. Aby uzyskać więcej informacji na temat takich wzorców, zobacz [wzorce & praktyki: Architektura aplikacji](https://go.microsoft.com/fwlink/?LinkId=145794).
+- **Pokaż możliwe do zidentyfikowania wzorce architektury** na diagramach warstw, jeśli to możliwe. Na przykład diagram warstwowy opisujący aplikację klasyczną może obejmować takie warstwy jak prezentacja, Logika domeny i magazyn danych. Diagram warstwowy, który obejmuje pojedynczą funkcję w aplikacji, może mieć takie warstwy, jak model, widok i kontroler. Aby uzyskać więcej informacji na temat takich wzorców, zobacz [wzorce & praktyki: Architektura aplikacji](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
      Jeśli często tworzysz podobne wzorce, Utwórz niestandardowe narzędzie. Zobacz [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md).
 

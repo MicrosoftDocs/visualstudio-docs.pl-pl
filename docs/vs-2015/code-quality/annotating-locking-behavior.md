@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295833"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850168"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,4 +117,4 @@ Aby uniknąć błędów współbieżności w programie wielowątkowym, zawsze po
  [Określanie, kiedy i gdzie ma być stosowana adnotacja](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
  [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)   
- [Blog zespołu ds. analizy kodu](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Blog zespołu ds. analizy kodu](https://blogs.msdn.com/b/codeanalysis/)

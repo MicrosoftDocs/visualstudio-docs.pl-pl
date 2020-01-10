@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299413"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850142"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Dostęp do uruchomionego wystąpienia SQL Server lub SQL Server Express z dołączoną przykładową bazą danych AdventureWorksLT. Bazę danych AdventureWorksLT można pobrać z [witryny sieci Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   Wcześniejsza znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończenia przewodnika:
 
@@ -151,7 +151,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
      Program Visual Studio dodaje projekt `AdventureWorksSalesEditor` do rozwiązania.
 
-5. W menu **dane** kliknij przycisk **Pokaż źródła danych**.
+5. Na **danych** menu, kliknij przycisk **Pokaż źródła danych**.
 
      Zostanie otwarte okno **źródła danych** .
 
@@ -301,7 +301,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera kontrolki powiązane
 
 4. W menu kontekstowym w obszarze **debugowanie**kliknij polecenie **Uruchom nowe wystąpienie**.
 
-     Aplikacja zostanie uruchomiona. Sprawdź następujące kwestie:
+     Aplikacja zostanie uruchomiona. Sprawdź następujące informacje:
 
     - Pola tekstowe wyświetlają różne pola danych z pierwszego rekordu sprzedaży, który ma numer zamówienia sprzedaży **71774**.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300805"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850158"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Skróty klawiaturowe i klawisze modyfikujące w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Skróty klawiaturowe umożliwiają przyspieszenie pracy przez zredukowanie akcji
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Klawisze skrótów, które pojawiają się obok elementów menu, które mają skróty
 
-  Aby uzyskać więcej informacji na temat ułatwień dostępu i funkcji, zobacz [ułatwienia dostępu w firmie Microsoft](https://go.microsoft.com/fwlink/?LinkId=75069).
+  Aby uzyskać więcej informacji na temat ułatwień dostępu i funkcji, zobacz [ułatwienia dostępu w firmie Microsoft](https://www.microsoft.com/enable).
 
 ## <a name="modifier-keys"></a>Klawisze modyfikujące
  Niektóre skróty klawiaturowe nie mają skojarzonych elementów menu, co oznacza, że nie można użyć interfejsu użytkownika [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] do ich odnalezienia. W poniższych tematach znajdują się skróty, które modyfikują zachowanie narzędzi lub modyfikują akcję, taką jak zmiana rozmiarów obiektu:

@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcd9b9d5e336bfa0595ddd6d70032f7ba7fe780a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299393"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852002"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia 
 
  Dla projektu aplikacji sieci Web należy określić **bibliotekę klas**.
 
- W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Tę opcję można określić dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
+ W przypadku określenia opcji **pliku winmd** typy mogą być rzutowane na dowolny język programowania środowisko wykonawcze systemu Windows. Przez pakowanie danych wyjściowych projektu jako pliku WinMD, można zakodować aplikację w wielu językach i współdziałać z kodem, tak jakby były one napisane w tym samym języku. Tę opcję można określić dla rozwiązań przeznaczonych dla bibliotek środowisko wykonawcze systemu Windows, w tym [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] aplikacji. Aby uzyskać więcej informacji, zobacz [Tworzenie składników Środowisko wykonawcze systemu Windows C# w i Visual Basic](https://msdn.microsoft.com/library/windows/apps/br230301(v=VS.85).aspx).
 
 > [!NOTE]
 > Środowisko wykonawcze systemu Windows można projektować typów, tak aby były one widoczne jako obiekty natywne w zależności od używanego języka. Na przykład aplikacje JavaScript, które współpracują z środowisko wykonawcze systemu Windows używają go jako zestawu obiektów JavaScript, a C# aplikacje używają biblioteki jako kolekcji obiektów .NET. Przez pakowanie danych wyjściowych projektu jako pliku WinMD można skorzystać z tej samej technologii, która środowisko wykonawcze systemu Windows używa.
@@ -70,7 +70,7 @@ Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia 
 
  Aby uzyskać więcej informacji, zobacz [/Main (C# opcje kompilatora)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) . Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
  Poniższe opcje umożliwiają skonfigurowanie ustawień ogólnych dla aplikacji.
 
  **Ikona i manifest** Domyślnie ten przycisk radiowy jest zaznaczony, a **ikona** i opcje **manifestu** są włączone. Dzięki temu można wybrać własną ikonę lub wybrać różne opcje generowania manifestu. Ten przycisk radiowy należy pozostawić, chyba że podajesz plik zasobów dla projektu.
@@ -79,7 +79,7 @@ Użyj strony **aplikacji** **projektanta projektu** , aby określić ustawienia 
 
  **Manifest** Wybiera opcję generowania manifestu, gdy aplikacja jest uruchamiana w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:
 
-- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, czyli osadzać informacje o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` być `AsInvoker`. Jest to opcja domyślna.
+- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w jaki program Visual Studio działa w systemie Windows Vista, czyli osadzać informacje o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` być `AsInvoker`. Jest to domyślne ustawienie opcji.
 
 - **Utwórz aplikację bez manifestu**. Ta metoda jest znana jako *Wirtualizacja*. Użyj tej opcji, aby zapewnić zgodność ze starszymi aplikacjami.
 

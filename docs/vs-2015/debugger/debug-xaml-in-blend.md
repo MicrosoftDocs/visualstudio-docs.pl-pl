@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298321"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850519"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-
   
 - Element XAML istnieje w lokalizacji, w której jest niedozwolony.  
   
-  Aby uzyskać więcej informacji na temat typowej składni języka XAML, zobacz [podstawowy przewodnik po SKŁADNI XAML](https://go.microsoft.com/fwlink/?LinkId=329942).  
+  Aby uzyskać więcej informacji na temat typowej składni języka XAML, zobacz [podstawowy przewodnik po SKŁADNI XAML](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx).  
   
   Można również identyfikować i rozwiązywać proste błędy składni związane z kodem, błędy kompilacji i błędy czasu wykonywania w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Błędy związane z kodem mogą jednak ułatwić identyfikowanie i rozwiązywanie problemów w programie Visual Studio.  
   
@@ -123,7 +123,7 @@ Korzystając z narzędzi dostępnych w [!INCLUDE[blend_first](../includes/blend-
 ## <a name="debugging-in-visual-studio"></a>Debugowanie w Visual Studio  
  Możesz otworzyć [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] projekty w programie Visual Studio, aby łatwiej debugować kod w aplikacji. Aby otworzyć projekt [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] w programie Visual Studio, kliknij prawym przyciskiem myszy projekt w panelu **projekty** , a następnie kliknij polecenie **Edytuj w programie Visual Studio**. Po zakończeniu sesji debugowania w programie Visual Studio naciśnij kombinację klawiszy Ctrl + Shift + S, aby zapisać wszystkie zmiany, a następnie przełącz się z powrotem do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Zostanie wyświetlony monit o ponowne załadowanie projektu. Kliknij przycisk **tak, aby** kontynuować pracę w [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji ze sklepu Windows w programie Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji ze sklepu Windows w programie Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Uzyskiwanie pomocy  
- Jeśli potrzebujesz więcej pomocy w debugowaniu aplikacji [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], możesz przeszukać [fora społecznościowe aplikacji ze sklepu Windows](https://go.microsoft.com/fwlink/?LinkId=280308) pod kątem ogłoszeń związanych z Twoim problemem lub zamieszczania pytania.
+ Jeśli potrzebujesz więcej pomocy w debugowaniu aplikacji [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], możesz przeszukać [fora społecznościowe aplikacji ze sklepu Windows](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) pod kątem ogłoszeń związanych z Twoim problemem lub zamieszczania pytania.

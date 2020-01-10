@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299482"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850205"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Tworzenie niestandardowych widoków obiektów natywnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Struktura programu Visual Studio Natvis pozwala dostosować sposób, w jaki prog
 ## <a name="BKMK_Why_create_visualizations_"></a>Dlaczego warto tworzyć wizualizacje Natvis?  
  Możesz użyć struktury Natvis do tworzenia reguł wizualizacji dla tworzonych typów, aby deweloperzy mogli je łatwo widzieć podczas debugowania.  
 
- Na przykład na poniższym obrazie przedstawiono zmienną typu [Windows:: UI:: XAML:: Controls:: TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) , która jest wyświetlana w debugerze bez zastosowanych niestandardowych wizualizacji.  
+ Na przykład na poniższym obrazie przedstawiono zmienną typu [Windows:: UI:: XAML:: Controls:: TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) , która jest wyświetlana w debugerze bez zastosowanych niestandardowych wizualizacji.  
 
  ![Wizualizacja domyślna TextBox](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 

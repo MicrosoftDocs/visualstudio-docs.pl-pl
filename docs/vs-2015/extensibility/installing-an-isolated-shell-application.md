@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a077173a0d095ee10cc1fa16da3db1f3744dafa8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301155"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851712"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji w programie Shell (izolowanym)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
 - Utwórz program inicjujący Instalatora.  
   
-  Cały przykładowy kod w tym dokumencie pochodzi z [przykładu wdrożenia powłoki](https://go.microsoft.com/fwlink/?LinkId=262245), który można pobrać z galerii kodu w witrynie MSDN. Przykład pokazuje wyniki wykonywania każdego z tych kroków.  
+  Cały przykładowy kod w tym dokumencie pochodzi z [przykładu wdrożenia powłoki](https://code.msdn.microsoft.com/Sample-setup-program-for-81ca73f7), który można pobrać z galerii kodu w witrynie MSDN. Przykład pokazuje wyniki wykonywania każdego z tych kroków.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać procedury opisane w tym temacie, należy zainstalować na komputerze następujące narzędzia.  
   
-- Zestaw Visual Studio SDK  
+- Visual Studio SDK  
   
-- Zestaw [narzędzi Instalator Windows XML](https://go.microsoft.com/fwlink/?LinkId=82720) w wersji 3,6  
+- Zestaw [narzędzi Instalator Windows XML](http://wix.sourceforge.net/) w wersji 3,6  
   
   Przykład wymaga również wizualizacji i modelowania zestawu SDK firmy Microsoft, które nie są wymagane przez wszystkie powłoki.  
   
@@ -54,7 +54,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
 2. Dla każdego projektu, który zawiera manifest VSIX, Edytuj zadania kompilacji w celu wygenerowania zawartości do lokalizacji, z której zostanie zainstalowany plik MSI. Uwzględnij manifest VSIX w danych wyjściowych kompilacji, ale nie Kompiluj pliku. VSIX.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Tworzenie pliku MSI dla powłoki  
- Aby skompilować pakiet MSI, zalecamy użycie zestawu [narzędzi Instalator Windows XML](https://go.microsoft.com/fwlink/?LinkId=82720) , ponieważ zapewnia większą elastyczność niż standardowy projekt konfiguracji.  
+ Aby skompilować pakiet MSI, zalecamy użycie zestawu [narzędzi Instalator Windows XML](http://wix.sourceforge.net/) , ponieważ zapewnia większą elastyczność niż standardowy projekt konfiguracji.  
   
  W pliku Product. WXS Ustaw bloki wykrywania i układ składników powłoki.  
   
@@ -178,8 +178,8 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
     |*ProjectName*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE"|\<RegistryKey ID = "DteClsidRegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "$ (var. ShortProductName) obiekt DTE "/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey ID = "DteLocSrv32RegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) \LocalServer32 "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "[INSTALLDIR] $ (var. ShortProductName). exe "/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE"|\<RegistryKey ID = "DteClsidRegKey" root = "HKCR" Key = "$ (var. DteClsidRegKey) "Action =" createAndRemoveOnUninstall "><br /><br /> \<RegistryValue Type = "String" name = "@" value = "$ (var. ShortProductName) obiekt DTE "/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @ = "$RootFolder $ \PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type = "String" name = "@" value = "[INSTALLDIR] $ (var. ShortProductName). exe "/><br /><br /> \</RegistryKey >|  
   
      W tym przykładzie var. DteClsidRegKey jest rozpoznawany jako klucz rejestru w górnym wierszu. Var. ShortProductName jest rozpoznawana jako `PhotoStudio`.  
   
@@ -237,7 +237,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>Deszyfrowanie wartości zwracanych  
  W niektórych systemach operacyjnych instalacja programu Visual Studio Shell (izolowana) będzie wymagała ponownego uruchomienia. Ten stan może być określony przez kod powrotu wywołania do `ExecCmd`.  
   
-|Wartość zwracana|Opis|  
+|Wartość zwrócona|Opis|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Instalacja została ukończona. Teraz można zainstalować aplikację.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Instalacja została ukończona. Po ponownym uruchomieniu komputera można zainstalować aplikację.|  

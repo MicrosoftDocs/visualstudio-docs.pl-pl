@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297987"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851268"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
     Otwórz UIMap. UITest. Ten plik zostanie otwarty w edytorze kodowanego testu interfejsu użytkownika, w którym można edytować dowolną sekwencję zarejestrowanych akcji, a także edytować potwierdzenia.
 
-    ![Edytor kodowanego testu interfejsu użytkownika](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
+    ![Edytor testu kodowanego interfejsu użytkownika](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")
 
     Aby uzyskać więcej informacji, zobacz [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
@@ -161,7 +161,7 @@ Testy automatyczne, które obsługują aplikację za poorednictwem interfejsu u�
 
 - ![Prerequsite](../test/media/prereq.png "Ignoruj") Jeśli nie chcesz rejestrować akcji do uruchamiania testowanej aplikacji, musisz uruchomić aplikację przed wybraniem ikony **rekordu** .
 
-- ![Prerequsite](../test/media/prereq.png "Ignoruj") Na końcu testu proces, w którym są kończone przebiegi testowe. Jeśli aplikacja została uruchomiona w teście, aplikacja zwykle zostanie zamknięta.  Jeśli nie chcesz, aby test zamykał aplikację po jej zakończeniu, musisz dodać plik. runsettings do rozwiązania i użyć opcji `KeepExecutorAliveAfterLegacyRun`. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku. runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+- ![Prerequsite](../test/media/prereq.png "Ignoruj") Na końcu testu proces, w którym są kończone przebiegi testowe. Jeśli aplikacja została uruchomiona w teście, aplikacja zwykle zostanie zamknięta.  Jeśli nie chcesz, aby test zamykał aplikację po jej zakończeniu, musisz dodać plik. runsettings do rozwiązania i użyć opcji `KeepExecutorAliveAfterLegacyRun`. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
 - ![Prerequsite](../test/media/prereq.png "Ignoruj") Można dodać metodę inicjowania testu, identyfikowaną przez atrybut [TestInitialize], który uruchamia kod na początku każdej metody testowej. Na przykład można uruchomić aplikację z metody TestInitialize.
 
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Kodowane testy interfejsu użytkownika są często używane do automatyzowania ręcznych testów. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemu](https://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;&#93; wycofywanie tworzenia ręcznych przypadków testowych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat zautomatyzowanych testów systemowych, zobacz [Tworzenie testów automatycznych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Kodowane testy interfejsu użytkownika są często używane do automatyzowania ręcznych testów. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemu](https://msdn.microsoft.com/library/jj159335.aspx). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;&#93; wycofywanie tworzenia ręcznych przypadków testowych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat zautomatyzowanych testów systemowych, zobacz [Tworzenie testów automatycznych przy użyciu Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
-- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
+- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Często zadawane pytania
-- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Najczęściej zadawane pytania
+- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
-- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Zobacz także
 

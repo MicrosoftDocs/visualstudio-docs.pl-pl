@@ -11,17 +11,17 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299266"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850458"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definiowanie polecenia menu w diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skrótów diagramu UML. Można kontrolować, czy polecenie menu pojawia się i jest włączone w menu skrótów dowolnego elementu na diagramie, i można napisać kod, który jest uruchamiany, gdy użytkownik wybierze element menu. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) i przekazać je do innych użytkowników programu Visual Studio.
+W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skrótów diagramu UML. Można kontrolować, czy polecenie menu pojawia się i jest włączone w menu skrótów dowolnego elementu na diagramie, i można napisać kod, który jest uruchamiany, gdy użytkownik wybierze element menu. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) i przekazać je do innych użytkowników programu Visual Studio.
 
 ## <a name="requirements"></a>Wymagania
  Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -182,7 +182,7 @@ W programie Visual Studio można zdefiniować dodatkowe elementy menu w menu skr
 [Import] public IDiagramContext DiagramContext { get; set; }
 ```
 
- Przyciski ...
+ ...
 
  Deklaracja `IDiagramContext` umożliwia pisanie kodu w metodach, które uzyskują dostęp do diagramu, bieżącego wyboru i modelu:
 
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Definiowanie i Instalowanie rozszerzenia modelowania](../modeling/define-and-install-a-modeling-extension.md) [Rozszerzanie modeli UML i diagramów](../modeling/extend-uml-models-and-diagrams.md) [Definiowanie obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md) [Definiowanie ograniczeń WALIDACJi dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md) [Edytowanie diagramów sekwencji UML przy użyciu programowania interfejsu API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML z przykładowym [interfejsem API UML](../modeling/programming-with-the-uml-api.md) [: polecenie do wyrównywania kształtów na diagramie UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+ [Definiowanie i Instalowanie rozszerzenia modelowania](../modeling/define-and-install-a-modeling-extension.md) [Rozszerzanie modeli UML i diagramów](../modeling/extend-uml-models-and-diagrams.md) [Definiowanie obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Definiowanie niestandardowego elementu przybornika modelowania](../modeling/define-a-custom-modeling-toolbox-item.md) [Definiowanie ograniczeń WALIDACJi dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md) [Edytowanie diagramów sekwencji UML przy użyciu programowania interfejsu API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML z przykładowym [interfejsem API UML](../modeling/programming-with-the-uml-api.md) [: polecenie do wyrównywania kształtów na diagramie UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

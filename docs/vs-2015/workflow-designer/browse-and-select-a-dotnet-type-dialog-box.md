@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297620"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851423"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Wyszukiwanie i wybieranie typu .NET, okno dialogowe
 W oknie **Właściwości** , oknach dialogowych lub projektantach, takich jak projektant zmiennych, po wybraniu opcji **Przeglądaj w poszukiwaniu typów...** z listy typów danych jest okno dialogowe **Przeglądaj i wybierz typ platformy .NET** (w skrócie jako "przeglądarka typów"). W tym oknie dialogowym można wybrać typ z widoku drzewa zespołów i projektów.
@@ -31,7 +31,7 @@ W oknie **Właściwości** , oknach dialogowych lub projektantach, takich jak pr
 - Podczas dodawania catch dla działania <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> Przeglądarka typów może wyświetlać Visual Basic nieregularne typy tablic, ale nie wielowymiarowe typy tablicowe. Zobacz [tablice nieregularne](https://go.microsoft.com/fwlink/?LinkId=195226) i [tablice wielowymiarowe](https://go.microsoft.com/fwlink/?LinkId=195227) , aby uzyskać szczegółowe informacje.
+> Przeglądarka typów może wyświetlać Visual Basic nieregularne typy tablic, ale nie wielowymiarowe typy tablicowe. Zobacz [tablice nieregularne](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx) i [tablice wielowymiarowe](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx) , aby uzyskać szczegółowe informacje.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Wybieranie typu wartości lub odwołania z przeglądarki typów
 

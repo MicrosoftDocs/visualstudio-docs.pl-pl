@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Zapoznaj się z odpowiedzialnością administratorów, aby zarządzać subskrypcjami dla dużych zespołów, a także zewnętrznych wykonawców.
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491695"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850048"
 ---
 # <a name="large-teams-and-external-contractors"></a>Duże zespoły i zewnętrzni wykonawcy
 Administratorzy subskrypcji programu Visual Studio są odpowiedzialni za zapewnienie, że każdy użytkownik, który współdziała z programem Visual Studio — licencjonowanym oprogramowaniem, ma odpowiednie licencje z własną subskrypcją programu Visual Studio.
@@ -29,7 +29,7 @@ Każda organizacja jest różna, ale typową listą zespołów zajmujących się
 Zewnętrzni wykonawcy mogą przystąpić licencje do środowiska z licencjonowanym programem Visual Studio. Certyfikowani partnerzy firmy Microsoft mogą otrzymać kilka bezpłatnych subskrypcji programu Visual Studio do użytku wewnętrznego. Jednak te subskrypcje nie obejmują działań generujących przychody, takich jak opracowywanie oprogramowania niestandardowego dla klienta. Poproszenie partnerów o przesłanie certyfikatu z certyfikatem, który objaśnia, jakie licencje są udostępniane, i które wymagają od Ciebie zakupu.
 
 ## <a name="resources"></a>Resources
-- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
+- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b1d8bdeb4497af57c385e73ff0dcd34041a2097
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297328"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845046"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
   
 |Kolejka Direct3D|Kolor|  
 |-----------------------|-----------|  
-|Kolejka renderowania|Znacznika|  
-|Kolejka obliczeń|Kryje|  
-|Kopiuj kolejkę|Pomarańcz|  
+|Kolejka renderowania|Zielony|  
+|Kolejka obliczeń|Żółty|  
+|Kopiuj kolejkę|Pomarańczowy|  
   
  Program Direct3D 11 nie uwidacznia wielu kolejek, dlatego zdarzenia nie są kodowane na liście zdarzeń podczas pracy z funkcją przechwytywania aplikacji Direct3D 11.  
   
@@ -93,7 +93,7 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Zdarzenia zdefiniowane przez użytkownika w programie Direct3D 11 i starszych wersjach  
  Aby utworzyć grupy i znaczniki w programie Direct3D 11 lub starszym, Użyj interfejsów API opisanych w tej sekcji. Poniższa tabela zawiera podsumowanie interfejsów API, których można użyć dla różnych wersji programu Direct3D 11 i starszych wersji programu Direct3D.  
   
-|Opis interfejsu API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11,2)|[ID3DUserDefinedAnnotation](https://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11,1)|Rodzina interfejsów API D3DPerf_ (Direct3D 11,0 i starsze)|  
+|Opis interfejsu API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11,2)|[ID3DUserDefinedAnnotation](https://msdn.microsoft.com/library/windows/desktop/hh446881(v=vs.85).aspx) (Direct3D 11,1)|Rodzina interfejsów API D3DPerf_ (Direct3D 11,0 i starsze)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Rozpocznij pracę grupy zdarzeń|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |Zakończ grupę zdarzeń|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  

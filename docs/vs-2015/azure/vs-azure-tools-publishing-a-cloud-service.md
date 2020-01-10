@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f382226ab20053a57b10326853f16e27f641b3be
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298113"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846515"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikowanie usługi w chmurze za pomocą programu Visual Studio
 
@@ -47,7 +47,7 @@ Po opublikowaniu aplikacji platformy Azure można wykonać jedną z następując
 
    b. W oknie dialogowym **pakowanie aplikacji platformy Azure** wybierz konfigurację usługi, dla której chcesz utworzyć pakiet, a następnie wybierz konfigurację kompilacji.
 
-   c. Obowiązkowe Aby włączyć Pulpit zdalny dla usługi w chmurze po jej opublikowaniu, wybierz pozycję **włącz pulpit zdalny dla wszystkich ról**, a następnie wybierz pozycję **Ustawienia** , aby skonfigurować pulpit zdalny poświadczenia. Aby uzyskać więcej informacji, zobacz [włączanie Podłączanie pulpitu zdalnego dla roli na platformie Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+   c. Obowiązkowe Aby włączyć Pulpit zdalny dla usługi w chmurze po jej opublikowaniu, wybierz pozycję **włącz pulpit zdalny dla wszystkich ról**, a następnie wybierz pozycję **Ustawienia** , aby skonfigurować pulpit zdalny poświadczenia. Aby uzyskać więcej informacji, zobacz [Włącz Podłączanie pulpitu zdalnego dla roli w usługach Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
       Jeśli chcesz debugować usługę w chmurze po jej opublikowaniu, Włącz debugowanie zdalne, wybierając opcję **Włącz debuger zdalny dla wszystkich ról**.
 
@@ -92,7 +92,7 @@ W poniższej procedurze przyjęto założenie, że używasz kreatora **publikacj
     Usługa w chmurze jest publikowana. Utworzona maszyna wirtualna ma włączone połączenia zdalne dla usług IIS, dzięki czemu Web Deploy może służyć do aktualizowania ról sieci Web bez konieczności ich ponownego publikowania.
 
    > [!NOTE]
-   > Jeśli masz więcej niż jedno wystąpienie skonfigurowane dla roli sieci Web, zostanie wyświetlony komunikat ostrzegawczy z informacją o tym, że każda rola sieci Web jest ograniczona do jednego wystąpienia tylko w pakiecie utworzonym w celu opublikowania aplikacji. Wybierz **przycisk OK** , aby kontynuować. Zgodnie z opisem w sekcji wymagania można mieć więcej niż jedną rolę sieci Web, ale tylko jedno wystąpienie każdej roli.
+   > Jeśli masz więcej niż jedno wystąpienie skonfigurowane dla roli sieci Web, zostanie wyświetlony komunikat ostrzegawczy z informacją o tym, że każda rola sieci Web jest ograniczona do jednego wystąpienia tylko w pakiecie utworzonym w celu opublikowania aplikacji. Kliknij przycisk **OK**, aby kontynuować. Zgodnie z opisem w sekcji wymagania można mieć więcej niż jedną rolę sieci Web, ale tylko jedno wystąpienie każdej roli.
 
 ### <a name="update-your-web-role-by-using-web-deploy"></a>Aktualizowanie roli sieci Web przy użyciu Web Deploy
 
@@ -122,7 +122,7 @@ W poniższej procedurze przyjęto założenie, że używasz kreatora **publikacj
 
    a. Aby nawiązać połączenie z maszyną wirtualną, na której działa rola sieci Web, wybierz wystąpienie roli sieci Web w programie **Cloud Explorer** lub **Eksplorator serwera**, a następnie wybierz polecenie **Połącz przy użyciu pulpit zdalny** . Aby uzyskać szczegółowe instrukcje dotyczące nawiązywania połączenia z maszyną wirtualną, zobacz [włączanie Podłączanie pulpitu zdalnego dla roli na platformie Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). W przeglądarce zostanie wyświetlony komunikat z prośbą o pobranie pliku `.rdp`.
 
-   b. Aby dodać certyfikat SSL, Otwórz usługę zarządzania w Menedżerze usług IIS. W Menedżerze usług IIS Włącz protokół SSL, otwierając link **powiązania** w okienku **Akcja** . Zostanie wyświetlone okno dialogowe **Dodawanie powiązania witryny** . Wybierz pozycję **Dodaj**, a następnie na liście rozwijanej **Typ** wybierz pozycję https. Z listy **certyfikat SSL** wybierz certyfikat SSL, który został podpisany przez urząd certyfikacji i przekazany do Azure Portal. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień połączenia dla usługi zarządzania](https://go.microsoft.com/fwlink/?LinkId=215824).
+   b. Aby dodać certyfikat SSL, Otwórz usługę zarządzania w Menedżerze usług IIS. W Menedżerze usług IIS Włącz protokół SSL, otwierając link **powiązania** w okienku **Akcja** . Zostanie wyświetlone okno dialogowe **Dodawanie powiązania witryny** . Wybierz pozycję **Dodaj**, a następnie na liście rozwijanej **Typ** wybierz pozycję https. Z listy **certyfikat SSL** wybierz certyfikat SSL, który został podpisany przez urząd certyfikacji i przekazany do Azure Portal. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień połączenia dla usługi zarządzania](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
 
       > [!NOTE]
       > W przypadku dodania zaufanego certyfikatu SSL żółty trójkąt ostrzegawczy nie pojawia się już w **Kreatorze publikacji**.
@@ -155,6 +155,6 @@ Może być konieczne uwzględnienie określonych plików w pakiecie usługi, aby
 
 1. Aby uwzględnić pliki w pakiecie usługi, które zostały dodane do projektu roli procesu roboczego, otwórz menu skrótów dla tego pliku, a następnie wybierz polecenie **Właściwości**. W oknie **Właściwości** w polu listy **Kopiuj do katalogu wyjściowego** wybierz opcję **Kopiuj** .
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby dowiedzieć się więcej o publikowaniu na platformie Azure z programu Visual Studio, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md).

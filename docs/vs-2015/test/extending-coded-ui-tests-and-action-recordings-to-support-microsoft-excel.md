@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302566"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851766"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Struktura testowania dla kodowanych testów interfejsu użytkownika i nagrań ak
 
 - SampleTestProject
 
-  Pobierz przykład z tego [wpisu w blogu](https://go.microsoft.com/fwlink/?LinkID=185592).
+  Pobierz przykład z tego [wpisu w blogu](https://blogs.msdn.com/b/gautamg/archive/2010/01/05/3-introducing-sample-excel-extension.aspx).
 
 > [!NOTE]
 > Przykład jest przeznaczony do użycia z programem Microsoft Excel 2010. Przykład może współdziałać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwany.

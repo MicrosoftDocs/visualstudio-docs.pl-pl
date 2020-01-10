@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295675"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850483"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definiowanie profilu w celu rozszerzenia kodu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 6. Wyślij plik rozszerzenia do innych użytkowników programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aby zainstalować je na swoich komputerach.
 
 ## <a name="AddProfile"></a>Jak dodać profil do rozszerzenia programu Visual Studio
- Aby zainstalować profil i umożliwić wysyłanie go do innych użytkowników, należy dodać profil do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Aby zainstalować profil i umożliwić wysyłanie go do innych użytkowników, należy dodać profil do rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Wdrażanie rozszerzeń programu Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Aby zdefiniować profil w nowym rozszerzeniu programu Visual Studio
 
@@ -105,7 +105,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 
 5. Na stronie **zasoby** Dodaj wiersz opisujący profil:
 
-   - Kliknij pozycję **Nowy**. Ustaw pola w oknie dialogowym **Dodaj nowe zasoby** w następujący sposób.
+   - Kliknij przycisk **Nowy**. Ustaw pola w oknie dialogowym **Dodaj nowe zasoby** w następujący sposób.
 
    - Ustaw **Typ** na `Microsoft.VisualStudio.UmlProfile`
 
@@ -196,7 +196,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
     > [!NOTE]
     > Jeśli tworzysz rozszerzenie przy użyciu projektu rozszerzenia programu Visual Studio, użyj Eksplorator rozwiązań, aby dodać nowy folder do projektu.
 
-3. Zmień nazwę nowego katalogu na krótki kod ISO dla zlokalizowanej kultury, np. `bg` dla Bułgarii lub `fr` dla języka francuskiego. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://go.microsoft.com/fwlink/?LinkId=160782), która zawiera kompletną listę kodów kultur.
+3. Zmień nazwę nowego katalogu na krótki kod ISO dla zlokalizowanej kultury, np. `bg` dla Bułgarii lub `fr` dla języka francuskiego. Należy używać neutralnego kodu kulturowego, zwykle dwóch liter, a nie określonej kultury, takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultur, zobacz [Metoda CultureInfo. GetCultures](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), która zawiera kompletną listę kodów kultur.
 
 4. Dodaj kopię domyślnego profilu do nowego katalogu. Nie zmieniaj nazwy pliku.
 
@@ -220,7 +220,7 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 7. Kompiluj rozszerzenie programu Visual Studio, tworząc projekt rozszerzenia lub kompresując wszystkie pliki, zgodnie z opisem w poprzednich sekcjach.
 
 ## <a name="Schema"></a>Struktura profilu
- Plik XSD dla profilów UML można znaleźć w następującym przykładzie: [ustawienie stereotypów i profili XSD](https://go.microsoft.com/fwlink/?LinkID=213811). Aby ułatwić edytowanie plików profilów, Zainstaluj plik `.xsd` w programie:
+ Plik XSD dla profilów UML można znaleźć w następującym przykładzie: [ustawienie stereotypów i profili XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Aby ułatwić edytowanie plików profilów, Zainstaluj plik `.xsd` w programie:
 
  **%ProgramFiles%\Microsoft Visual Studio [wersja] \Xml\Schemas**
 
@@ -349,7 +349,7 @@ Musisz wybrać swój profil w pakiecie lub modelu. Stereotypy będą wyświetlan
 
 3. Upewnij się, że składnia jest opisana tutaj, i jak pokazano na _dysku_ **: \Program Files\Microsoft Visual Studio [wersja] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
 
-4. Odinstaluj błędne rozszerzenie. W menu **Narzędzia** kliknij pozycję **rozszerzenia i aktualizacje**.
+4. Odinstaluj błędne rozszerzenie. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
 
    - Jeśli rozszerzenie nie pojawia się, zobacz następny element.
 
@@ -365,4 +365,4 @@ Musisz wybrać swój profil w pakiecie lub modelu. Stereotypy będą wyświetlan
 6. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Zobacz też
- [Dodaj stereotypy do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [standardowych stereotypów dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md) [przykład: kolorowe elementy UML według](https://go.microsoft.com/fwlink/?LinkID=213841) [przykładowego stereotypu: Ustawienie stereotypów, XSD profile](https://go.microsoft.com/fwlink/?LinkID=213811)
+ [Dodaj stereotypy do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [standardowych stereotypów dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md) [przykład: kolorowe elementy UML według](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [przykładowego stereotypu: Ustawienie stereotypów, XSD profile](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

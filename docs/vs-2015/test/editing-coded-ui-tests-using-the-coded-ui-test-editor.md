@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab2651767e36abd8e85efff0dadea8071fc7db5b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302643"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851842"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Edycja zakodowanych testów interfejsu użytkownika za pomocą edytora kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Edytor kodowanego testu interfejsu użytkownika pozwala łatwo modyfikować kodo
 
 9. [Znajdź wszystkie](#CodedUITestEditor_LocateDecendants) ułatwia sprawdzenie właściwości kontrolki i znaczących zmian w kontrolkach aplikacji.
 
-## <a name="how-do-i-do-this"></a>Jak mogę to zrobić?
+## <a name="how-do-i-do-this"></a>Jak mam to zrobić?
  W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]otwarcie pliku UIMap. UITest powiązanego z kodowanym testem interfejsu użytkownika w projekcie kodowanego testu interfejsu użytkownika spowoduje automatyczne wyświetlenie kodowanego testu interfejsu użytkownika w edytorze kodowanego testu interfejsu użytkownika. W poniższych procedurach opisano sposób lokalizowania i edytowania metod testowych oraz właściwości akcji interfejsu użytkownika oraz kontrolek przy użyciu paska narzędzi edytora i menu skrótów.
 
 ## <a name="open-a-coded-ui-test"></a>Otwieranie kodowanego testu interfejsu użytkownika
@@ -65,7 +65,7 @@ Edytor kodowanego testu interfejsu użytkownika pozwala łatwo modyfikować kodo
 > Po wybraniu akcji interfejsu użytkownika, która znajduje się w metodzie w okienku **akcje interfejsu użytkownika** , odpowiadający jej formant zostanie wyróżniony. Możesz również zmodyfikować akcję interfejsu użytkownika lub właściwości kontrolek.
 
  Edytor kodowanego testu interfejsu użytkownika *nie jest widoczny* .
-Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edytor kodowanego testu interfejsu użytkownika był również dostępny w programie Visual Studio 2010 Feature Pack 2 z subskrypcją MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119).
+Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edytor kodowanego testu interfejsu użytkownika był również dostępny w programie Visual Studio 2010 Feature Pack 2 z subskrypcją MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://msdn.microsoft.com/library/gg269474.aspx).
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a>Modyfikuj właściwości akcji interfejsu użytkownika i odpowiadające im właściwości kontrolki
  Za pomocą edytora kodowanego testu interfejsu użytkownika można szybko zlokalizować i wyświetlić wszystkie akcje interfejsu użytkownika w metodach testowych. Po wybraniu akcji interfejsu użytkownika w edytorze, odpowiadający jej formant zostanie automatycznie wyróżniony. Analogicznie, jeśli wybierzesz kontrolkę, skojarzone akcje interfejsu użytkownika zostaną wyróżnione. Po wybraniu akcji interfejsu użytkownika lub kontrolki, można łatwo użyć okno Właściwości, aby zmodyfikować właściwości, które odpowiadają.
@@ -118,7 +118,7 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
  *Co jeszcze mam wiedzieć?*
  **Ważne problemy**
 
-- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** w przypadku podziału metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, która ma zostać utworzona, jeśli nadal chcesz, aby te akcje interfejsu użytkownika zostały uwzględnione. Podczas dzielenia metody zostanie wyświetlone okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że musisz zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, którą chcesz utworzyć. Wybierz opcję **tak**.
+- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** w przypadku podziału metody należy zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, która ma zostać utworzona, jeśli nadal chcesz, aby te akcje interfejsu użytkownika zostały uwzględnione. Podczas dzielenia metody zostanie wyświetlone okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że musisz zmodyfikować każdy kod, który wywołuje istniejącą metodę, aby również wywołać nową metodę, którą chcesz utworzyć. Wybierz **tak**.
 
   **Pomoc**
 
@@ -130,7 +130,7 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
 
    Otwórz menu skrótów dla nowej metody testowej i wybierz polecenie **Zmień nazwę**.
 
-   Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że należy zmodyfikować kod odwołujący się do tej metody. Wybierz opcję **tak**.
+   Pojawi się okno dialogowe programu Microsoft Visual Studio. Ostrzega o tym, że należy zmodyfikować kod odwołujący się do tej metody. Wybierz **tak**.
 
 ## <a name="CodedUITestEditor_MoveMethods"></a>Przenieś metodę testową do pliku UIMap, aby ułatwić dostosowanie
  Jeśli określisz, że jedna z metod testowych w kodowanym teście interfejsu użytkownika wymaga kodu niestandardowego, musisz przenieść ją do pliku UIMap.cs lub UIMap. vb. W przeciwnym razie kod zostanie nadpisany po każdym ponownym skompilowaniu kodowanego testu interfejsu użytkownika. Jeśli nie przeniesiesz metody, kod niestandardowy zostanie nadpisany za każdym razem, gdy test zostanie ponownie skompilowany.
@@ -142,7 +142,7 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
  *Co jeszcze mam wiedzieć?*
  **Ważne problemy**
 
-- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** po przeniesieniu metody nie można już edytować jej przy użyciu edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Podczas przenoszenia metody wyświetlane jest okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku UIMap. UITest do pliku UIMap.cs lub UIMap. vb i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz opcję **tak**.
+- Ostrzeżenie ![ikony](../test/media/caution.gif "Ostrzeżenie") **ostrzeżenia:** po przeniesieniu metody nie można już edytować jej przy użyciu edytora kodowanego testu interfejsu użytkownika. Należy dodać niestandardowy kod i obsługiwać go za pomocą Edytora kodu. Podczas przenoszenia metody wyświetlane jest okno dialogowe Microsoft Visual Studio. Ostrzega o tym, że metoda zostanie przeniesiona z pliku UIMap. UITest do pliku UIMap.cs lub UIMap. vb i nie będzie już można edytować metody przy użyciu edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
 
   **Pomoc**
 
@@ -203,15 +203,15 @@ Może być używana wersja Visual Studio Enterprise wcześniejsza niż 2012. Edy
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://msdn.microsoft.com/library/jj159340.aspx)
 
-### <a name="faq"></a>Często zadawane pytania
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Najczęściej zadawane pytania
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Zobacz też
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [Tworzenie KODOWANYch testów interfejsu](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) użytkownika tworzenie kodowanego [testu interfejsu użytkownika](../test/creating-a-data-driven-coded-ui-test.md) , [generującego kodowany test interfejsu użytkownika z istniejącego przewodnika rejestrowania akcji](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [: Tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

@@ -9,23 +9,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295788"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851611"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1. Utworzenie projektu aplikacji Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie projektu aplikacji Windows Forms.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](https://go.microsoft.com/fwlink/?LinkId=205209) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Aby utworzyć projekt aplikacji Windows Forms
 
-1. Na pasku menu wybierz **plik**, **Nowy**, **projekt**. Okno dialogowe powinno wyglądać następująco.
+1. Na pasku menu wybierz **pliku**, **New**, **projektu**. Okno dialogowe powinno wyglądać następująco.
 
      ![Okno dialogowe Nowy projekt](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") Nowy projekt — okno dialogowe
 

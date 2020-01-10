@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: b0b461fa812d6fff8c4d6a258cb9dabf8b04f6db
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778924"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852294"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Instrukcje: Instalowanie autonomicznego profilera
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] udostępnia autonomiczny profiler oparty na wierszu polecenia, który można uruchomić bez instalowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Taka sytuacja występuje, gdy komputer nie ma zainstalowanego środowiska deweloperskiego. Na przykład nie należy instalować środowiska deweloperskiego na produkcyjnym serwerze sieci Web.
@@ -31,17 +31,17 @@ ms.locfileid: "74778924"
 
 1. Zlokalizuj Instalatora profilu autonomicznego (*vs_standaloneprofiler. exe*), do którego pobrano narzędzia do oceny wydajności i uruchom go.
 
-2. Dodaj ścieżki dla *vsintr. exe* i *msdis150. dll* do ścieżki systemowej.
+2. Dodaj ścieżkę do pliku *VSInstr. exe* do ścieżki systemowej.
 
    > [!NOTE]
-   > Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowych są dostępne zarówno 64-bitowe, jak i 32-bitowe wersje narzędzi. Aby użyć narzędzi wiersza polecenia profilera, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do samego polecenia.
+   > Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 
 3. W wierszu polecenia wpisz **VSInstr**.
 
    > [!NOTE]
    > Jeśli zostanie wyświetlone informacje o użyciu programu VSInstr. exe, wszystko jest poprawnie skonfigurowane. Jeśli zostanie wyświetlony komunikat o błędzie z informacją, że nie można odnaleźć VSInstr. exe lub jednej z jego zależności, upewnij się, że ścieżki zostały skonfigurowane prawidłowo, zgodnie z opisem w sekcji Krok 2.
 
-4. Skonfiguruj serwer symboli, ustawiając zmienną **_NT_SYMBOL_PATH** na **symsrv\*symsrv. dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**
+4. Skonfiguruj serwer symboli, ustawiając zmienną **_NT_SYMBOL_PATH** na **symsrv\*symsrv. dll\*c:\localcache\*https://msdl.microsoft.com/download/symbols**
 
 5. Po skonfigurowaniu serwera symboli przy użyciu zmiennych środowiskowych systemu Uruchom narzędzia profilera wiersza polecenia w nowym wierszu polecenia. Pozwala to zastosować nowe zmienne środowiskowe. W oknie wiersza polecenia wpisz następujące polecenie:
 

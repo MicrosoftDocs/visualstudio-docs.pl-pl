@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300669"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852166"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Narzędzie Concurrency Visualizer pomaga deweloperom wizualizować zachowanie ap
   
  Jak pokazano na poniższej ilustracji, Wizualizator współbieżności może również uwidocznić ten objaw w widoku wykorzystania procesora CPU, gdzie mimo obecności wielu wątków aplikacja korzysta tylko z jednego rdzenia logicznego.  
   
- Aby uzyskać więcej informacji, zobacz "wzorzec wydajności 1: Identyfikowanie rywalizacji o blokadę" w blogu Hazim Shafi [Parallel Performance Tools for Windows](https://go.microsoft.com/fwlink/?LinkID=160569) w blogu MSDN w witrynie sieci Web.  
+ Aby uzyskać więcej informacji, zobacz "wzorzec wydajności 1: Identyfikowanie rywalizacji o blokadę" w blogu Hazim Shafi [Parallel Performance Tools for Windows](https://blogs.msdn.com/hshafi) w blogu MSDN w witrynie sieci Web.  
   
  ![Zablokuj rywalizację](../profiling/media/lockcontention-2.png "LockContention_2")  
   

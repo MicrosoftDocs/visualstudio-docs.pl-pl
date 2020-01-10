@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295851"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852394"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -493,7 +493,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów fu
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Powiązane zasoby  
- [Blog zespołu ds. analizy kodu](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog zespołu ds. analizy kodu](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z adnotacji sal w celuC++ zmniejszenia wad kodu C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

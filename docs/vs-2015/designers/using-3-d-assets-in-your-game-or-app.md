@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6d838b7519b40d47b644a53befb91391fa30a664
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f290c68933a71f40899ce454eb6ba788ef31a56f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293142"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846501"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
     |Modele 3-D|**MeshContentTask (. targets,. props)**|
     |Programy do cieniowania|**ShaderGraphContentTask (. targets,. props)**|
 
-3. Wybierz przycisk **OK** .
+3. Wybierz **OK** przycisku.
 
 ## <a name="including-assets-in-your-build"></a>Uwzględnianie zasobów w kompilacji
  Teraz, gdy Twój projekt wie o różnych typach zasobów 3-D, których chcesz użyć, następnym krokiem jest poinformowanie o tym, które pliki są zasobami 3-D i jakie są ich zasoby.
@@ -61,7 +61,7 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
    > [!IMPORTANT]
    > Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zakłada, że wiele rodzajów plików obrazów należy klasyfikować przy użyciu typu elementu **obrazu** wbudowanego w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym należy zmienić właściwość **typu elementu** dla każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy plików źródłowych potoku zawartości dla modeli trójwymiarowych i grafiki programu Visual Shader są domyślne dla poprawnego **typu elementu**.
 
-4. Wybierz przycisk **OK** .
+4. Wybierz **OK** przycisku.
 
    Oto trzy typy elementów potoku zawartości i skojarzone z nimi typy plików źródłowych i wyjściowych.
 
@@ -82,14 +82,14 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 
 3. W obszarze **Właściwości konfiguracji**wybierz węzeł potoku zawartości — na przykład **potok zawartości obrazu** dla tekstury i zasobów obrazu — a następnie w siatce właściwości ustaw odpowiednie wartości właściwości. Na przykład, aby wygenerować mipmapy dla elementu zawartości tekstury w czasie kompilacji, należy ustawić właściwość **Generuj MIPS** na **wartość tak**.
 
-4. Wybierz przycisk **OK** .
+4. Wybierz **OK** przycisku.
 
 ### <a name="image-content-pipeline-configuration"></a>Konfiguracja potoku zawartości obrazu
  Korzystając z narzędzia potoku zawartości obrazów do tworzenia zasobów tekstury, można skompresować teksturę na różne sposoby, wskazać, czy poziomy MIP mają być generowane w czasie kompilacji, i zmienić nazwę pliku wyjściowego.
 
 |Właściwość|Opis|
 |--------------|-----------------|
-|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje to:<br /><br /> -   **bez kompresji**<br />-   **BC1_UNORM kompresji**<br />-   **BC1_UNORM_SRGB kompresji**<br />-   **BC2_UNORM kompresji**<br />-   **BC2_UNORM_SRGB kompresji**<br />-   **BC3_UNORM kompresji**<br />-   **BC3_UNORM_SRGB kompresji**<br />-   **BC4_UNORM kompresji**<br />-   **BC4_SNORM kompresji**<br />-   **BC5_UNORM kompresji**<br />-   **BC5_SNORM kompresji**<br />-   **BC6H_UF16 kompresji**<br />-   **BC6H_SF16 kompresji**<br />-   **BC7_UNORM kompresji**<br />-   **BC7_UNORM_SRGB kompresji**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](https://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Kompresuj**|Określa typ kompresji, który jest używany dla pliku wyjściowego.<br /><br /> Dostępne opcje:<br /><br /> -   **bez kompresji**<br />-   **BC1_UNORM kompresji**<br />-   **BC1_UNORM_SRGB kompresji**<br />-   **BC2_UNORM kompresji**<br />-   **BC2_UNORM_SRGB kompresji**<br />-   **BC3_UNORM kompresji**<br />-   **BC3_UNORM_SRGB kompresji**<br />-   **BC4_UNORM kompresji**<br />-   **BC4_SNORM kompresji**<br />-   **BC5_UNORM kompresji**<br />-   **BC5_SNORM kompresji**<br />-   **BC6H_UF16 kompresji**<br />-   **BC6H_SF16 kompresji**<br />-   **BC7_UNORM kompresji**<br />-   **BC7_UNORM_SRGB kompresji**<br /><br /> Aby uzyskać informacje o tym, które formaty kompresji są obsługiwane w różnych wersjach programu DirectX, zobacz [Przewodnik programowania dla infrastruktury dxgi](https://msdn.microsoft.com/library/windows/desktop/bb219822(v=vs.85).aspx).|
 |Konwertuj na wstępnie przemnożony format alfa|**Tak** , aby przekonwertować obraz na wstępnie przemnożony format alfa w pliku wyjściowym; w przeciwnym razie **nie**. Tylko plik wyjściowy zostanie zmieniony, obraz źródłowy nie zmieni się.|
 |**Generuj MIPS**|**Wartość tak** powoduje wygenerowanie pełnego łańcucha MIP w czasie kompilacji i uwzględnienie go w pliku wyjściowym; w przeciwnym razie **nie**. Jeśli **nie**, a plik źródłowy zawiera już łańcuch mipmappingu, plik wyjściowy będzie miał łańcuch MCI; w przeciwnym razie plik wyjściowy nie będzie miał łańcucha MIP.|
 |**Dane wyjściowe zawartości**|Określa nazwę pliku wyjściowego. **Ważne:**  Zmiana rozszerzenia nazwy pliku wyjściowego nie ma wpływu na jego format pliku.|
@@ -111,13 +111,13 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Ładowanie i używanie zasobów 3-D w czasie wykonywania
 
 ### <a name="using-textures-and-images"></a>Używanie tekstur i obrazów
- Direct3D oferuje funkcje do tworzenia zasobów tekstury. W programie Direct3D 11 biblioteka narzędzi D3DX11 udostępnia dodatkowe funkcje do tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazów. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w programie Direct3D 11, zobacz [tekstury](https://go.microsoft.com/fwlink/p/?LinkID=246267). Aby uzyskać więcej informacji na temat używania biblioteki D3DX11 do tworzenia zasobów tekstury lub widoku zasobów na podstawie pliku obrazu, zobacz [How to: Initialize a Texture from a File](https://go.microsoft.com/fwlink/p/?LinkId=246268).
+ Direct3D oferuje funkcje do tworzenia zasobów tekstury. W programie Direct3D 11 biblioteka narzędzi D3DX11 udostępnia dodatkowe funkcje do tworzenia zasobów tekstury i widoków zasobów bezpośrednio z plików obrazów. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu tekstury w programie Direct3D 11, zobacz [tekstury](https://msdn.microsoft.com/library/windows/desktop/ff476902(v=vs.85).aspx). Aby uzyskać więcej informacji na temat używania biblioteki D3DX11 do tworzenia zasobów tekstury lub widoku zasobów na podstawie pliku obrazu, zobacz [How to: Initialize a Texture from a File](https://msdn.microsoft.com/library/windows/desktop/ff476904(v=vs.85).aspx).
 
 ### <a name="using-3-d-models"></a>Używanie modeli trójwymiarowych
  Program Direct3D 11 nie udostępnia funkcji tworzenia zasobów z modeli trójwymiarowych. Zamiast tego należy napisać kod, który odczytuje plik modelu 3-D i tworzy Bufory wierzchołków i indeksów, które reprezentują model 3-D i wszystkie zasoby wymagane przez model — na przykład tekstury lub cieniowania.
 
 ### <a name="using-shaders"></a>Używanie programów do cieniowania
- Direct3D oferuje funkcje do tworzenia zasobów programu do cieniowania i wiązania ich z programowalnym potokiem grafiki. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu modułu cieniującego w programie Direct3D i powiązania go z potokiem, zobacz [Przewodnik programowania dla HLSL](https://go.microsoft.com/fwlink/p/?LinkID=261521).
+ Direct3D oferuje funkcje do tworzenia zasobów programu do cieniowania i wiązania ich z programowalnym potokiem grafiki. Aby uzyskać więcej informacji na temat sposobu tworzenia zasobu modułu cieniującego w programie Direct3D i powiązania go z potokiem, zobacz [Przewodnik programowania dla HLSL](https://msdn.microsoft.com/library/windows/desktop/bb509635(v=vs.85).aspx).
 
  W przypadku programowalnego potoku grafiki każdy etap potoku musi przydzielić do następnego etapu potoku wynik sformatowany w sposób, który może zrozumieć. Ponieważ projektant programu do cieniowania może tworzyć tylko cieniowanie pikseli, oznacza to, że jest to aplikacja, aby upewnić się, że odebrane dane są w oczekiwanym formacie. Kilka programowalnych etapów modułu cieniującego występuje przed cieniowanie pikseli i wykonywanie transformacji geometrycznych — cieniowania wierzchołków, cieniowania kadłuba, cieniowania domeny i cieniowania geometrycznego. Nieprogramowalny etap mozaikowania również występuje przed cieniowanie pikseli. Niezależnie od tego, który z tych etapów bezpośrednio poprzedza cieniowanie pikseli, musi podać swój wynik w tym formacie:
 
@@ -200,7 +200,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-|Stanowisko|Opis|
+|Tytuł|Opis|
 |-----------|-----------------|
 |[Instrukcje: eksportowanie tekstury zawierającej mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie obliczony mipmapy.|
 |[Instrukcje: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Opisuje sposób użycia potoku zawartości obrazu do wyeksportowania tekstury zawierającej wstępnie przemnożone wartości alfa.|

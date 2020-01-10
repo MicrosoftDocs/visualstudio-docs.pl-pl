@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297928"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850712"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ W pliku .vbproj lub .csproj znajdź taki wiersz:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- lub-
+\- lub —
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -284,5 +284,5 @@ Jeżeli zaktualizujesz dołączony plik lub inny plik odczytany przez szablon, V
 Dobrą wskazówkę znajdziesz w szablonie T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md)
-- [Visual Studio Wizualizacja i Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579)
+- [Visual Studio Wizualizacja i Modeling SDK](https://www.visualstudio.com/)
 - [Oleg Sych: zrozumienie aparatu T4: integracja z programem MSBuild](https://github.com/olegsych/T4Toolbox)

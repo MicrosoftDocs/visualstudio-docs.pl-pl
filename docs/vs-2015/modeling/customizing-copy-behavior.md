@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301190"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845286"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Ustaw właściwość **propagowania kopii** roli w celu **propagowania kopii do 
  **Szybkie duplikowanie elementów przez kopiowanie i wklejanie.** Normalnie skopiowany element jest nadal zaznaczony i nie można wkleić tego samego typu elementu.
 Dodaj dyrektywę scalenia elementów do klasy domeny i ustaw ją na przekazanie do niej scalenia z klasą nadrzędną. Będzie to miało ten sam wpływ na operacje przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
- \- lub-
+ \- lub —
 
  Przed wklejeniem elementów wybierz diagram, zastępując `ClipboardCommandSet.ProcessOnPasteCommand()`. Dodaj ten kod do pliku niestandardowego w projekcie DslPackage:
 
@@ -80,7 +80,7 @@ partial class MyDslClipboardCommandSet
  **Utwórz dodatkowe linki, gdy użytkownik wklei się w wybranym miejscu docelowym.** Na przykład po wklejeniu pola komentarza do elementu zostanie nawiązane połączenie między nimi.
 Dodaj dyrektywę scalenia elementów do klasy domena docelowa i ustaw ją, aby przetworzyć Scalanie przez dodanie linków. Będzie to miało ten sam wpływ na operacje przeciągania. Aby uzyskać więcej informacji, zobacz [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md).
 
- \- lub-
+ \- lub —
 
  Przesłoń `ClipboardCommandSet.ProcessOnPasteCommand()`, aby utworzyć dodatkowe linki po wywołaniu metody podstawowej.
 
@@ -91,7 +91,7 @@ Zastąp`ClipboardCommandSet.ProcessOnMenuCopyCommand()` *MyDsl* w projekcie DslP
 Zastąp`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *MyDsl* w projekcie DslPackage.
 
  **Zachowaj układ kształtu przez kopiowanie i wklejanie.**
-Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://go.microsoft.com/fwlink/?LinkId=213879).
+Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Aby osiągnąć ten efekt, Dodaj kształty i łączniki do skopiowanego ElementGroupPrototype. Najbardziej wygodną metodą przesłonięcia jest ElementOperations. CreateElementGroupPrototype (). Aby to zrobić, Dodaj następujący kod do projektu DSL:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Wklej kształty w wybranej lokalizacji, na przykład w bieżącym położeniu kursora.**
-Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://go.microsoft.com/fwlink/?LinkId=213879).
+Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Aby osiągnąć ten efekt, Zastąp `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, aby użyć wersji `ElementOperations.Merge()`specyficznej dla lokalizacji. Aby to zrobić, Dodaj następujący kod w projekcie DslPackage:
 
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md) [: Dodawanie obsługi przeciągania i upuszczania w celu](../modeling/how-to-add-a-drag-and-drop-handler.md) [dostosowania przykładowego zachowania usuwania](../modeling/customizing-deletion-behavior.md) [: diagramy obwodów VMSDK przykład](https://go.microsoft.com/fwlink/?LinkId=213879)
+ [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md) [: Dodawanie obsługi przeciągania i upuszczania w celu](../modeling/how-to-add-a-drag-and-drop-handler.md) [dostosowania przykładowego zachowania usuwania](../modeling/customizing-deletion-behavior.md) [: diagramy obwodów VMSDK przykład](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

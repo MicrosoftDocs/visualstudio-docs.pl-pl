@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850663"
 ---
 # <a name="install-a-uml-profile"></a>Instalowanie profilu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Program Visual Studio można rozszerzyć przy użyciu profilu UML. Profil umożl
 
  Jeśli zostanie wyświetlony model UML, który został utworzony za pomocą profilów, niektóre właściwości nie będą wyświetlane, chyba że zostaną zainstalowane te same profile.
 
- Profil jest dystrybuowany wewnątrz rozszerzenia programu Visual Studio. Rozszerzenie może również zawierać inne funkcje, takie jak polecenia menu. Aby uzyskać więcej informacji, zobacz [Zarządzanie rozszerzeniami programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160728).
+ Profil jest dystrybuowany wewnątrz rozszerzenia programu Visual Studio. Rozszerzenie może również zawierać inne funkcje, takie jak polecenia menu. Aby uzyskać więcej informacji, zobacz [Zarządzanie rozszerzeniami programu Visual Studio](https://msdn.microsoft.com/library/dd293638(VS.100).aspx).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Aby zainstalować profil UML na komputerze
 

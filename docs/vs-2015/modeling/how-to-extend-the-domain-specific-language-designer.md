@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300901"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850681"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozszerzeń, które można wykonać, obejmują dodawanie poleceń menu, Dodawanie programów obsługi dla gestów przeciągania i podwójnego kliknięcia oraz reguły wyzwalane po zmianie określonych typów wartości lub relacji. Rozszerzenia mogą być spakowane jako rozszerzenie integracji programu Visual Studio (VSIX) i dystrybuowane do innych użytkowników.
 
- Aby uzyskać przykładowy kod i więcej informacji na temat tej funkcji, zobacz [witrynę sieci Web Visual Studio Wizualizacja i Modeling SDK (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Aby uzyskać przykładowy kod i więcej informacji na temat tej funkcji, zobacz [witrynę sieci Web Visual Studio Wizualizacja i Modeling SDK (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Konfigurowanie rozwiązania
  Skonfiguruj projekt zawierający kod rozszerzenia oraz projekt VSIX, który eksportuje projekt. Twoje rozwiązanie może zawierać inne projekty, które są włączone do tego samego VSIX.
@@ -71,7 +71,7 @@ Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozs
 
  Aby wdrożyć rozszerzenia w głównej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]i na innych komputerach, wykonaj następujące kroki:
 
-1. Znajdź plik instalacji VSIX w projekcie VSIX w\\bin *\\\*. vsix
+1. Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix
 
 2. Skopiuj ten plik na komputer docelowy, a następnie kliknij go dwukrotnie w Eksploratorze Windows (lub Eksploratorze plików).
 

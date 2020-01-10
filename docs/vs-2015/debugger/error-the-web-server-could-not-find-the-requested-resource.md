@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 904d628b09c7add48460273ecaff7d8ac288cbc3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297426"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845118"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Błąd: serwer sieci Web nie mógł znaleźć żądanego zasobu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ze względu na zabezpieczenia usługi IIS zwróciły błąd ogólny.
   
  Istnieje wiele możliwych przyczyn tego błędu. Niektóre z najczęstszych przyczyn obejmują problem z instalacją lub konfiguracją usług IIS, konfiguracją witryny sieci Web lub uprawnieniami w systemie plików. Możesz spróbować uzyskać dostęp do zasobu za pomocą przeglądarki. W zależności od konfiguracji usług IIS może być konieczne użycie przeglądarki lokalnej na serwerze lub sprawdzenie dziennika błędów usług IIS w celu uzyskania szczegółowego komunikatu o błędzie.  
   
- Aby uzyskać więcej informacji na temat rozwiązywania problemów z usługami IIS, zobacz [Zarządzanie usługami IIS i administrowanie](https://go.microsoft.com/fwlink/?LinkId=255872)nimi.  
+ Aby uzyskać więcej informacji na temat rozwiązywania problemów z usługami IIS, zobacz [Zarządzanie usługami IIS i administrowanie](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration)nimi.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Narzędzie URLScan Security](/iis/extensions/working-with-urlscan/urlscan-3-reference)   

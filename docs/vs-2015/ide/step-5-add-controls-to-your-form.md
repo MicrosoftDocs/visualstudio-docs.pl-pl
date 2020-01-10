@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295720"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851530"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie formantów do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku dodasz kontrolki, takie jak kontrolka `PictureBox` i kontrolka `CheckBox` do formularza. Następnie Dodaj do formularza przyciski.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](https://go.microsoft.com/fwlink/?LinkId=205211) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Aby dodać kontrolki do formularza
 

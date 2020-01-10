@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300154"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852089"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: dodawanie i usuwanie odwołań za pomocą Menedżera odwołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
 - Przeglądaj z podgrupą Ostatnie.
 
 ## <a name="assemblies-tab"></a>Karta Zestawy
- Na karcie **zestawy** są wyświetlane wszystkie zestawy .NET Framework, które są dostępne do odwołania. Karta **zestawy** nie wyświetla żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska wykonawczego. W przypadku wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w GAC, zestaw nie zostanie wdrożony ani skopiowany z aplikacją, bez względu na wartość ustawienia Kopiuj lokalnie. Aby uzyskać więcej informacji, zobacz [odwołania do projektu](https://go.microsoft.com/fwlink/?LinkId=238512).
+ Na karcie **zestawy** są wyświetlane wszystkie zestawy .NET Framework, które są dostępne do odwołania. Karta **zestawy** nie wyświetla żadnych zestawów z globalnej pamięci podręcznej zestawów (GAC), ponieważ zestawy w pamięci GAC są częścią środowiska wykonawczego. W przypadku wdrażania lub kopiowania aplikacji zawierającej odwołanie do zestawu, który jest zarejestrowany w GAC, zestaw nie zostanie wdrożony ani skopiowany z aplikacją, bez względu na wartość ustawienia Kopiuj lokalnie. Aby uzyskać więcej informacji, zobacz [odwołania do projektu](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Podczas ręcznego dodawania odwołania do dowolnych przestrzeni nazw EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a lub EnvDTE100), ustaw właściwość Osadź typy współdziałania na wartość False w oknie dialogowym Właściwości. Ustawienie tej właściwości na True może spowodować problemy z kompilacją ze względu na pewne właściwości EnvDTE, które nie mogą być osadzone.
 
@@ -109,19 +109,19 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
 
   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć za pomocą karty **projekty** ).
 
-    \- lub-
+    \- lub —
 
 - Ustaw klucz rejestru określający lokalizację zestawów do wyświetlenia:
 
    W przypadku 32-bitowego systemu operacyjnego należy dodać jeden z następujących kluczy rejestru.
 
-  - [HKEY_CURRENT_USER \SOFTWARE\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-  - [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
     W przypadku 64-bitowego systemu operacyjnego należy dodać jeden z następujących kluczy rejestru w gałęzi rejestru 32-bitowego.
 
-  - [HKEY_CURRENT_USER \SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
   - [HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies] @ = "*AssemblyLocation*"
 
@@ -209,7 +209,7 @@ Za pomocą okna dialogowego **Menedżer odwołań** można dodawać odwołania d
     > [!NOTE]
     > Jeśli dodasz właściwość, kompilacja może być wolniejsza.
 
-## <a name="recent"></a>Najnowsze
+## <a name="recent"></a>Ostatnie
  Każda z kart Zestawy, COM, Windows i Przeglądaj obsługuje kartę Najnowsze, która wylicza listę składników ostatnio dodanych do projektów.
 
 ## <a name="search"></a>Wyszukaj

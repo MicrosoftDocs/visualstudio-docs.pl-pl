@@ -12,17 +12,17 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299300"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850496"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-W programie Visual Studio można definiować polecenia, które są wykonywane, gdy użytkownik kliknie dwukrotnie lub przeciągnie elementy na diagram UML. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) i przekazać je do innych użytkowników programu Visual Studio.
+W programie Visual Studio można definiować polecenia, które są wykonywane, gdy użytkownik kliknie dwukrotnie lub przeciągnie elementy na diagram UML. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) i przekazać je do innych użytkowników programu Visual Studio.
 
  Jeśli istnieje już wbudowane zachowanie dla typu diagramu i typu elementu, który chcesz przeciągnąć, możesz nie być w stanie dodać lub zastąpić to zachowanie.
 
@@ -280,7 +280,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
 
  Parametry tych metod są następujące:
 
-- `ShapeElement target`., Kształt lub diagram, na którym użytkownik przełączył coś.
+- `ShapeElement target`. Kształt lub diagram, na którym użytkownik przełączył coś.
 
     `ShapeElement` jest klasą w implementacji, która opiera się na narzędziach modelowania UML. Aby zmniejszyć ryzyko umieszczenia modelu UML i diagramów w niespójnym stanie, zalecamy, aby nie używać metod tej klasy bezpośrednio. Zamiast tego zawiń element w `IShape`, a następnie użyj metod opisanych w temacie [Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md).
 
@@ -311,7 +311,7 @@ W programie Visual Studio można definiować polecenia, które są wykonywane, g
       target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE
       ```
 
-- `DiagramDragEventArgs eventArgs`., Ten parametr przenosi Zserializowany formularz obiektu źródłowego operacji przeciągania:
+- `DiagramDragEventArgs eventArgs`. Ten parametr przenosi Zserializowany formularz obiektu źródłowego operacji przeciągania:
 
     ```
     System.Windows.Forms.IDataObject data = eventArgs.Data;

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594490"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849590"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio
 
@@ -127,11 +127,11 @@ Aby uzyskać więcej informacji na temat rozwiązywania problemów z [instalacj�
 
 Dzienniki instalacji są wymagane do większości rozwiązywania problemów z instalacją. Gdy Prześlij problem za pomocą [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio.md) w Instalatorze programu Visual Studio, te dzienniki są automatycznie uwzględniane w raporcie.
 
-Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://aka.ms/vscollect). Narzędzie do zbierania dzienników zbiera dzienniki instalacji ze wszystkich składników instalowanych przez program Visual Studio, w tym .NET Framework, Windows SDK i SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
+Jeśli zamierzasz zgłosić Support firmy Microsoft, może być konieczne dostarczenie tych dzienników instalacji przy użyciu [Microsoft Visual Studio i narzędzia do zbierania dzienników platformy .NET Framework](https://www.microsoft.com/download/details.aspx?id=12493). Narzędzie do zbierania dzienników zbiera dzienniki instalacji ze wszystkich składników instalowanych przez program Visual Studio, w tym .NET Framework, Windows SDK i SQL Server. Zbiera także informacje o komputerze, spis dla Instalatora Windows i Windows informacje dziennika zdarzeń dla Instalatora programu Visual Studio, Instalator Windows i przywracanie systemu.
 
 Aby zebrać dzienniki:
 
-1. [Pobierz narzędzie](https://aka.ms/vscollect).
+1. [Pobierz narzędzie](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Otwórz administracyjny wiersz polecenia.
 3. Uruchom `Collect.exe` z katalogu, w którym to narzędzie zostało zapisane.
 4. Znajdź wartość wynikowa `vslogs.zip` plików w Twojej `%TEMP%` katalogu, na przykład `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`.

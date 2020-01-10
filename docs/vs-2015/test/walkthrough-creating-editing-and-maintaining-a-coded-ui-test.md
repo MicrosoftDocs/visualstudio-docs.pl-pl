@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302063"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851231"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 1. W menu **plik** wskaż polecenie **Nowy**, a następnie wybierz pozycję **projekt**.
 
-     Pojawi się okno dialogowe **Nowy projekt** .
+     **Nowy projekt** pojawi się okno dialogowe.
 
 2. W okienku **zainstalowane** rozwiń pozycję **Wizualizacja C#** , a następnie wybierz pozycję **pulpit systemu Windows**.
 
@@ -41,7 +41,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 6. Wybierz folder, w którym zapiszesz projekt. W polu tekstowym **Lokalizacja** wpisz nazwę folderu.
 
-7. Wybierz **przycisk OK**.
+7. Wybierz **OK**.
 
      Zostanie otwarty program The WPF Designer for Visual Studio i pojawi się główne okno projektu.
 
@@ -133,7 +133,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 5. W środkowym okienku wybierz szablon **projektu kodowanego testu interfejsu użytkownika** .
 
-6. Wybierz **przycisk OK**.
+6. Wybierz **OK**.
 
      W Eksplorator rozwiązań nowy projekt kodowanego testu interfejsu użytkownika o nazwie **CodedUITestProject1** jest dodawany do rozwiązania.
 
@@ -215,7 +215,7 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 
 7. Wybierz przycisk **Przenieś kod** na pasku narzędzi edytora kodowanego testu interfejsu użytkownika.
 
-8. Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ta ma zostać przeniesiona z pliku UIMap.uitest do pliku UIMap.cs i nie będzie już można edytować metody za pomocą Edytora kodowanego testu interfejsu użytkownika. Wybierz opcję **tak**.
+8. Pojawi się okno dialogowe programu Microsoft Visual Studio. Zawiera ono ostrzeżenie, że metoda ta ma zostać przeniesiona z pliku UIMap.uitest do pliku UIMap.cs i nie będzie już można edytować metody za pomocą Edytora kodowanego testu interfejsu użytkownika. Wybierz **tak**.
 
      Metoda testu jest usuwana z pliku UIMap.uitest i nie jest już wyświetlana w okienku Akcje interfejsu użytkownika. Aby edytować przeniesiony plik testowy, otwórz plik UIMap.cs w Eksploratorze rozwiązań.
 
@@ -369,22 +369,22 @@ Podręcznik pozwala utworzyć prostą aplikację Windows Presentation Foundation
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="videos"></a>Wideo
- ![link do](../data-tools/media/playvideo.gif "PlayVideo") [KODOWANYCH testów interfejsu użytkownika wideo — {-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![link do](../data-tools/media/playvideo.gif "PlayVideo") [KODOWANYCH testów interfejsu użytkownika wideo — {-Episode1-GettingStarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![link do](../data-tools/media/playvideo.gif "PlayVideo") [KODOWANYCH testów interfejsu użytkownika wideo — {-Episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![link do](../data-tools/media/playvideo.gif "PlayVideo") [KODOWANYCH testów interfejsu użytkownika wideo — {-Episode2-MaintainenceAndDebugging](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![link do](../data-tools/media/playvideo.gif "PlayVideo") [KODOWANYCH testów interfejsu użytkownika wideo — {-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![link do](../data-tools/media/playvideo.gif "PlayVideo") [KODOWANYCH testów interfejsu użytkownika wideo — {-Episode3-HandCoding](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Ćwiczenia praktyczne
- [MSDN Virtual Lab: wprowadzenie do tworzenia kodowanych testów interfejsu użytkownika w programie Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [MSDN Virtual Lab: wprowadzenie do tworzenia kodowanych testów interfejsu użytkownika w programie Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
-### <a name="faq"></a>Często zadawane pytania
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Najczęściej zadawane pytania
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Kodowane testy interfejsu użytkownika — często zadawane pytania — 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Testowanie automatyzacji interfejsu użytkownika programu Visual Studio (w tym CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Zobacz też
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [wprowadzenie przy użyciu](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [obsługiwanych konfiguracji i platform programu WPF Designer dla kodowanych testów interfejsu użytkownika i rejestrowania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Edytowanie kodowanych testów interfejsu użytkownika za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

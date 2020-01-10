@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Dowiedz się, jak zacząć zarządzać subskrypcjami programu Visual Studio w organizacji za pomocą portalu administratora subskrypcji.
-ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879311"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850541"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
@@ -47,7 +47,7 @@ Aby uzyskać więcej informacji na temat umowy, którą przeglądasz, wybierz ka
 > Strona szczegółów portalu administracyjnego ![subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Resources
-- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
+- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 - [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)

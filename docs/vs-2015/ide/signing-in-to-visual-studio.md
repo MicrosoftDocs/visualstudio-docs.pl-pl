@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301220"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851620"
 ---
 # <a name="signing-in-to-visual-studio"></a>Visual Studio — logowanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,40 +25,40 @@ Możesz spersonalizować i poprawić komfort programowania w programie Visual St
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Dlaczego powinienem się zarejestrować w usłudze Visual Studio?
  Po zalogowaniu do programu Visual Studio uzyskasz następujące korzyści:
 
-- **Przyznaje dostęp do szerokiego zakresu korzyści** z programu Visual Studio Dev Essentials, w tym bezpłatnego oprogramowania, szkoleń, pomocy technicznej i innych. Aby uzyskać więcej informacji, zobacz [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Nieograniczony dostęp do szerokiej gamy korzyści** z programu Visual Studio Dev Essentials, łącznie z bezpłatnego oprogramowania, szkoleń, pomocy technicznej i nie tylko. Zobacz [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) Aby uzyskać więcej informacji.
 
-- **Synchronizuje ustawienia programu Visual Studio** — ustawienia, które można dostosować, takie jak powiązania kluczy, układ okna i motyw kolorów, są stosowane natychmiast po zalogowaniu się do programu Visual Studio na dowolnym urządzeniu. Zobacz [Ustawienia zsynchronizowane w programie Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchronizuje ustawienia programu Visual Studio** — ustawienia dostosować, takie jak powiązania kluczy, układ okna, a kolor motywu, obowiązują natychmiast po zalogowaniu do programu Visual Studio na dowolnym urządzeniu. Zobacz [zsynchronizowane ustawienia w programie Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
-- **Trwale odblokowuje Visual Studio Express Edition** — możesz użyć dowolnej wersji Visual Studio Express do czasu, gdy będzie to miało miejsce, zamiast ograniczyć do 30-dniowego okresu próbnego.
+- **Trwale odblokowuje Visual Studio Express Edition** — można użyć dowolnej wersji programu Visual Studio Express for, tak długo, jak chcesz, a nie być ograniczonym do okresu próbnego 30 dni.
 
-- Umożliwia **odblokowanie programu Visual Studio Community Edition,** a nie ograniczonego do okresu próbnego 30 dni.
+- **Odblokowuje Visual Studio Community Edition** nie ma ograniczenia 30-dniowego okresu próbnego.
 
-- **Rozszerza okres próbny programu Visual Studio** — możesz użyć Visual Studio Professional lub Visual Studio Enterprise przez dodatkowe 90 dni, a nie ograniczyć się do okresu próbnego 30 dni.
+- **Przedłuża okres próbny programu Visual Studio** — można użyć programu Visual Studio Professional lub Visual Studio Enterprise, które znajdują się dodatkowe 90 dni, a nie być ograniczonym do okresu próbnego 30 dni.
 
-- **Odblokowuje program Visual Studio, jeśli używasz konta skojarzonego z subskrypcją MSDN lub VSO**. Zobacz [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Umożliwia odblokowanie programu Visual Studio, jeśli używasz konta, które jest skojarzone z subskrypcją MSDN lub VSO**. Zobacz [jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
-- **Automatycznie łączy się z usługami takimi jak Azure i Visual Studio Team Services** w środowisku IDE bez monitowania o poświadczenia dla tego samego konta.
+- **Automatycznie łączy się z usługami, takimi jak Azure i programu Visual Studio Team Services** w środowisku IDE bez monitowania użytkownika o podanie poświadczeń dla tego samego konta ponownie.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Jak zalogować się do programu Visual Studio
- Po uruchomieniu programu Visual studio po raz pierwszy, pojawi się prośba loguje się WE i podanie pewnych informacji podstawowych rejestracji. Należy wybrać konto Microsoft lub konta służbowego lub szkolnego, że najlepiej reprezentuje użytkownik. Jeśli nie masz żadnego z tych kont, możesz utworzyć konto Microsoft bezpłatnie. Zobacz [Jak mogę utworzyć konto konto Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
+ Po uruchomieniu programu Visual studio po raz pierwszy, pojawi się prośba loguje się WE i podanie pewnych informacji podstawowych rejestracji. Należy wybrać konto Microsoft lub konta służbowego lub szkolnego, że najlepiej reprezentuje użytkownik. Jeśli nie masz żadnego z tych kont, możesz utworzyć konto Microsoft bezpłatnie. Zobacz [jak mogę założyć konto Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
- Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Visual Studio zapamiętuje te ustawienia i synchronizuje je we wszystkich środowiskach programu Visual Studio, który zarejestrowano w celu. Aby zapoznać się z listą synchronizowanych ustawień, zobacz [Ustawienia zsynchronizowane](../ide/synchronized-settings-in-visual-studio.md). Możesz zmienić ustawienia później, jeśli otworzysz menu **Opcje narzędzi &#124;**  w programie Visual Studio.
+ Następnie wybierz ustawienia interfejsu użytkownika i kompozycję kolorów, których chcesz używać w programie Visual Studio. Visual Studio zapamiętuje te ustawienia i synchronizuje je we wszystkich środowiskach programu Visual Studio, który zarejestrowano w celu. Aby uzyskać listę ustawień, które są synchronizowane, zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md). Można zmienić ustawienia później, po otwarciu **narzędzia &#124; opcje** menu w programie Visual Studio.
 
  Po podaniu ustawień program Visual Studio uruchomi się, zaloguje cię i umożliwi rozpoczęcie pracy. Aby sprawdzić, czy użytkownik jest zalogowany, poszukaj nazwy komputera w prawym górnym rogu środowiska Visual Studio.
 
  ![Zalogowany użytkownik Currentlly](../ide/media/vs2015-username.png "VS2015_UserName")
 
- O ile się nie wylogujesz, zostaniesz automatycznie zalogowany w programie w programie Visual Studio przy każdym jego uruchomieniu, a zmiany w zsynchronizowanych ustawieniach będą automatycznie stosowane. Aby się wylogować, wybierz strzałkę w dół obok nazwy profilu w środowisku programu Visual Studio, wybierz polecenie **Ustawienia konta** , a następnie wybierz link **Wyloguj się** . Aby zalogować się ponownie, wybierz polecenie **Zaloguj** się w prawym górnym rogu środowiska programu Visual Studio.
+ O ile się nie wylogujesz, zostaniesz automatycznie zalogowany w programie w programie Visual Studio przy każdym jego uruchomieniu, a zmiany w zsynchronizowanych ustawieniach będą automatycznie stosowane. Aby się wylogować, wybierz strzałkę w dół obok nazwy profilu w środowisku Visual Studio, wybierz **ustawienia konta** polecenia, a następnie wybierz **Wyloguj** łącza. Aby zalogować się ponownie, wybierz opcję **Zaloguj** polecenia w prawym górnym rogu środowiska Visual Studio.
 
 ## <a name="to-change-your-profile-information"></a>Aby zmienić informacje w profilu
- W **obszarze &#124; ustawienia konta plików** można zobaczyć i zaktualizować informacje o Twoim profilu i licencji programu Visual Studio. Aby edytować informacje o profilu, takie jak nazwa konta, Obraz awatara lub adres e-mail:
+ W **pliku &#124; ustawienia konta** można wyświetlić i zaktualizować informacje o profilu programu Visual Studio i licencji. Aby edytować informacje o profilu, takie jak nazwa konta, Obraz awatara lub adres e-mail:
 
-1. Przejdź do **pozycji &#124; ustawienia konta pliku**.
+1. Przejdź do **pliku &#124; ustawienia konta**.
 
-2. W oknie dialogowym **Ustawienia konta** Zarządzaj linkiem **profilu programu Visual Studio** .
+2. W **ustawienia konta** okno dialogowe **profil zarządzania Visual Studio** łącza.
 
-3. Na stronie **moje informacje firmy Microsoft** w przeglądarce wybierz przycisk **Edytuj informacje** .
+3. Na **Moje informacje Microsoft** strony w przeglądarce, wybierz polecenie **Edycja informacji** przycisku.
 
 4. Zmień żądane ustawienia.
 
-5. Gdy skończysz, wybierz przycisk **Zapisz zmiany** .
+5. Gdy wszystko będzie gotowe, wybierz pozycję **Zapisz zmiany** przycisku.

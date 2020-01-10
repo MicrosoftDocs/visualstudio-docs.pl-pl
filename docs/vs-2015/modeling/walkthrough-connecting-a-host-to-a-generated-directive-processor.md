@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 47e1b1f11fd885afbb5e84e1530a171442938af0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301272"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851294"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Wskazówki: łączenie hosta z generowanym procesorem dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualisation i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  Ponadto musisz mieć niestandardowe przekształcenia szablonu tekstu utworzonego w [przewodniku: Tworzenie niestandardowego hosta szablonu tekstu](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -65,12 +65,12 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
 
      Aby uzyskać więcej informacji na temat tworzenia rozwiązania dotyczącego języka specyficznego dla domeny, zobacz [How to: Create a specyficzne dla domeny rozwiązanie językowe](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
    > [!IMPORTANT]
    > Ten krok powoduje wygenerowanie procesora dyrektywy i dodanie klucza do niego w rejestrze.
 
-3. W menu **debugowanie** kliknij **Rozpocznij debugowanie**.
+3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
     Zostanie otwarte drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -227,9 +227,9 @@ Można napisać własnego hosta, który przetwarza szablony tekstowe. Podstawowy
             }
     ```
 
-7. W menu **plik** kliknij polecenie **Zapisz wszystko**.
+7. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.
 
-8. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+8. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testowanie hosta niestandardowego z procesorem dyrektywy
  Aby przetestować hosta niestandardowego tekstu, najpierw należy napisać szablon tekstu, który wywołuje wygenerowany procesor dyrektywy. Następnie uruchom hosta niestandardowego, przekaż go do nazwy szablonu tekstu i sprawdź, czy dyrektywa została przetworzona prawidłowo.

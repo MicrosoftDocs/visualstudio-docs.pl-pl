@@ -11,15 +11,15 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: bcc290bfd9d646355479c2a9fe83a48f43dfa432
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298041"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849997"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 Po opublikowaniu usługi w chmurze program Visual Studio przechowuje informacje o konfiguracji w dwóch rodzajach plików konfiguracji: konfiguracje i profile usługi. Konfiguracje usług (pliki. cscfg) przechowują ustawienia dla środowisk wdrażania dla usługi w chmurze platformy Azure. Platforma Azure używa tych plików konfiguracji, gdy zarządza usługami w chmurze. Z drugiej strony profile (pliki azurePubxml) przechowują ustawienia publikowania usług Cloud Services. Te ustawienia są rekordem wybranych opcji podczas korzystania z Kreatora publikacji i są używane lokalnie przez program Visual Studio. W tym temacie wyjaśniono, jak korzystać z obu typów plików konfiguracji.
 
 ## <a name="service-configurations"></a>Konfiguracje usług
@@ -80,7 +80,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
    
     Nowy profil zostanie wyświetlony na liście profil docelowy.
 6. Z listy **profil docelowy** wybierz właśnie utworzony profil. Ustawienia Kreatora publikacji są wypełniane przy użyciu opcji wybranych w wybranym profilu.
-7. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie dostosuj ustawienia dla tego profilu. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
+7. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie dostosuj ustawienia dla tego profilu. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
 8. Po zakończeniu dostosowywania ustawień wybierz pozycję **dalej** , aby wrócić do strony ustawień. Profil jest zapisywany podczas publikowania usługi przy użyciu tych ustawień lub po wybraniu pozycji **Zapisz** obok listy profilów.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Aby zmienić nazwę profilu lub usunąć go
@@ -88,14 +88,14 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 2. Na liście **profil docelowy** wybierz pozycję **Zarządzaj**.
 3. W oknie dialogowym **Zarządzanie profilami** wybierz profil, który chcesz usunąć, a następnie wybierz pozycję **Usuń**.
 4. W wyświetlonym oknie dialogowym potwierdzenia wybierz pozycję **OK**.
-5. Wybierz pozycję **Zamknij**.
+5. Wybierz opcję **Zamknij**.
 
 ### <a name="to-change-a-profile"></a>Aby zmienić profil
 1. Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Publikuj**.
 2. Z listy **profil docelowy** wybierz profil, który chcesz zmienić.
-3. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie zmień żądane ustawienia. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
+3. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie zmień żądane ustawienia. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
 4. Po zmianie ustawień wybierz pozycję **dalej** , aby wrócić do strony **ustawień** .
 5. (Opcjonalnie) wybierz pozycję **Publikuj** , aby opublikować usługę w chmurze przy użyciu nowych ustawień. Jeśli nie chcesz publikować usługi w chmurze w tym momencie, a Kreator publikacji zostanie zamknięty, program Visual Studio wyświetli monit z pytaniem, czy chcesz zapisać zmiany w profilu.
 
-## <a name="next-steps"></a>Kolejne kroki
-Aby dowiedzieć się więcej o konfigurowaniu innych części projektu platformy Azure z poziomu programu Visual Studio, zobacz [Konfigurowanie projektu platformy Azure](https://go.microsoft.com/fwlink/p/?LinkID=623075)
+## <a name="next-steps"></a>Następne kroki
+Aby dowiedzieć się więcej o konfigurowaniu innych części projektu platformy Azure z poziomu programu Visual Studio, zobacz [Konfigurowanie projektu platformy Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)

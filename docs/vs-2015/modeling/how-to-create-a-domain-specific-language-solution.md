@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f4c5bd99c47517156f1ec89de9da1a163223b99a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301404"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850437"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualisation i Modeling SDK|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|{1&gt;{2&gt;Visual Studio Visualisation i Modeling SDK&lt;2}&lt;1}|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania dotyczącego języka specyficznego dla domeny
 
@@ -44,7 +44,7 @@ Język specyficzny dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowaneg
 
    1. W menu **plik** wskaż polecenie **Nowy**, a następnie kliknij pozycję **projekt**.
 
-   2. Pojawi się okno dialogowe **Nowy projekt** .
+   2. **Nowy projekt** pojawi się okno dialogowe.
 
    3. W obszarze **typy projektów**rozwiń węzeł **Inne typy projektów** , a następnie kliknij pozycję **rozszerzalność**.
 
@@ -100,11 +100,11 @@ Wpisz nowe rozszerzenie pliku.
 
 - Wpisz inne rozszerzenie pliku.
 
-     \- lub-
+     \- lub —
 
 - Zresetuj [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wystąpienie eksperymentalne. Spowoduje to Wyrejestrowanie wszystkich utworzonych wcześniej językami DSL. W menu **Start** kliknij pozycję **wszystkie programy**, **Microsoft Visual Studio zestaw SDK 2010**, **Narzędzia**, a następnie **Zresetuj wystąpienie eksperymentalne Microsoft Visual Studio 2010**. Możesz ponownie skompilować wszystkie inne językami DSL, których chcesz użyć.
 
-     \- lub-
+     \- lub —
 
 - Jeśli rozszerzenie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], które używa tego rozszerzenia pliku, zostało w pełni zainstalowane na komputerze, odinstaluj je. W menu **Narzędzia** kliknij pozycję **Menedżer rozszerzeń**.
 
@@ -127,7 +127,7 @@ Ta wartość domyślna to nazwa składająca się z nazwy firmy i produktów.
 
  **Użyj istniejącego klucza silnej nazwy** Użyj tej opcji, jeśli chcesz zintegrować DSL z innym zestawem.
 
- Aby uzyskać więcej informacji na temat silnego nazewnictwa, zobacz [Tworzenie i używanie zestawów o silnej nazwie](https://go.microsoft.com/fwlink/?LinkId=186073).
+ Aby uzyskać więcej informacji na temat silnego nazewnictwa, zobacz [Tworzenie i używanie zestawów o silnej nazwie](https://docs.microsoft.com/dotnet/standard/assembly/create-use-strong-named?redirectedfrom=MSDN).
 
 ## <a name="see-also"></a>Zobacz też
  Jak zdefiniować [słownik narzędzia języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [w języku specyficznym dla domeny](../modeling/how-to-define-a-domain-specific-language.md)

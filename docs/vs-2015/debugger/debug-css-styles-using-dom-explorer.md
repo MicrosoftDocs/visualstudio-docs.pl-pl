@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299498"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852424"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Debugowanie stylów CSS przy użyciu eksploratora modelu DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
     > [!TIP]
     > Gdy aplikacja zostanie wyświetlona w symulatorze, umieść okno symulatora obok okna programu Visual Studio, co umożliwi natychmiastowe zobaczenie wyników wybrania opcji wprowadzenia zmian w stylach CSS.  
   
-6. Przejdź do programu Visual Studio, a następnie kliknij pozycję **Wybierz element** w Dom Explorer (lub naciśnij klawisze CTRL + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu. Oto przycisk **Wybierz element** . ![Przycisk wyboru elementu w DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
+6. Przejdź do programu Visual Studio, a następnie kliknij pozycję **Wybierz element** w Dom Explorer (lub naciśnij klawisze CTRL + B). Spowoduje to zmianę trybu zaznaczania, dzięki czemu będzie można zaznaczyć element, klikając go, i przenieść aplikację na pierwszy plan. Jednym kliknięciem można powrócić do poprzedniego trybu. Oto przycisk **Wybierz element** . ![Przycisk wyboru elementu w DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > Elementy HTML można także zaznaczać bezpośrednio w Eksploratorze DOM. Aby uzyskać więcej informacji na temat wybierania elementów, zobacz [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -160,4 +160,4 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
  [Szybki Start: Debugowanie kodu HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debugowanie układu przy użyciu DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
  [Wyświetl odbiorniki zdarzeń DOM](../debugger/view-dom-event-listeners.md)   
- [Pomoc techniczna i ułatwienia dostępu](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [Pomoc techniczna i ułatwienia dostępu](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

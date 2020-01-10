@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0865e06c5abb5faccce51a2bc38bb223f7fa3eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299284"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850970"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Edycja i kontynuowanie przy błędach i ostrzeżeniach (C#)
 Dokonano edycji w sekcji kodu, która nie jest dozwolona w programie Visual C# Edit i Kontynuuj.  
@@ -75,7 +75,7 @@ Dokonano edycji w sekcji kodu, która nie jest dozwolona w programie Visual C# E
   
  Deklaratywne zmiany kodu, które mają wpływ na strukturę publiczną klasy, są ogólnie zabronione, a niektóre zmiany, które mogą zostać wprowadzone do metody, treści właściwości lub deklaracji prywatnych w klasie, są niedozwolone. Jeśli to możliwe, Edytuj i Kontynuuj oznacza kod, którego nie można edytować w kolorze szarym i wyświetla komunikat o błędzie.  
   
- Aby uzyskać więcej informacji na temat obsługiwanych edycji w obszarze Edytuj i Kontynuuj dla [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], zobacz [obsługiwaneC#zmiany kodu ()](../debugger/supported-code-changes-csharp.md). Jeśli potrzebujesz więcej informacji na temat konkretnego błędu lub ostrzeżenia, możesz wyszukiwać lub publikować na forum MSDN [Visual C# IDE](https://go.microsoft.com/fwlink/?LinkId=214693).  
+ Aby uzyskać więcej informacji na temat obsługiwanych edycji w obszarze Edytuj i Kontynuuj dla [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], zobacz [obsługiwaneC#zmiany kodu ()](../debugger/supported-code-changes-csharp.md). Jeśli potrzebujesz więcej informacji na temat konkretnego błędu lub ostrzeżenia, możesz wyszukiwać lub publikować na forum MSDN [Visual C# IDE](https://social.msdn.microsoft.com/Forums/en-US/csharpide/threads).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   

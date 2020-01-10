@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297286"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850185"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
  Aby sprawdzić, które wersje programu Visual Studio obsługują tę funkcję, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Ten temat dotyczy diagramów klas UML. Istnieje inny rodzaj diagramów klas, które można tworzyć i używać w celu wizualizacji kodu programu. Zobacz [projektowanie i wyświetlanie klas i typów](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="Using"></a>Korzystanie z diagramów klas UML
  Można używać diagramu klas UML do różnych celów:
@@ -194,7 +194,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 
  `[1]`
 
- Jedną z wartości danego typu. Domyślnie włączone.
+ Jedną z wartości danego typu. Jest to domyślne ustawienie.
 
  `[0..1]`
 
@@ -256,7 +256,7 @@ W programie Visual Studio można użyć *diagramu klas UML* do opisywania typów
 visibility attribute-name : Type
 ```
 
- \- lub-
+ \- lub —
 
 ```
 visibility operation-name (parameter1 : Type1, ...) : Type
@@ -367,7 +367,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
 - Relacja *generalizacji* między typem wyspecjalizowanym a typem ogólnym
 
-   \- lub-
+   \- lub —
 
 - Relacja *realizacji* między klasą i interfejsem, który implementuje.
 
@@ -422,7 +422,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
     Zostanie wyświetlone okno dialogowe **Edytor kolekcji parametrów szablonu** .
 
-4. Wybierz pozycję **Dodaj**.
+4. Wybierz **Dodaj**.
 
 5. Ustaw właściwość Nazwa na nazwę parametru dla typu szablonu, na przykład `Key`.
 

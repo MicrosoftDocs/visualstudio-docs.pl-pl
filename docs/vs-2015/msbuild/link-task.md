@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295883"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850999"
 ---
 # <a name="link-task"></a>Połącz — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określa atrybuty, które zostaną umieszczone w sekcji `dependency` pliku manifestu.  
   
-   Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Zobacz również sekcję "pliki konfiguracji wydawcy" w witrynie [MSDN](https://go.microsoft.com/fwlink/?LinkId=737) w sieci Web.  
+   Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Zobacz również sekcję "pliki konfiguracji wydawcy" w witrynie [MSDN](https://msdn.microsoft.com/) w sieci Web.  
   
 - **AdditionalOptions**  
   
@@ -114,7 +114,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Niejawny parametr **logiczny** .  
   
-   Umożliwia dokładniejsze śledzenie plików, aby przechwycić zachowanie przyrostu łącza. Zawsze zwraca `true`.  
+   Umożliwia dokładniejsze śledzenie plików, aby przechwycić zachowanie przyrostu łącza. Zawsze zwraca wartość `true`.  
   
 - **BaseAddress**  
   
@@ -142,11 +142,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
   - **Domyślne** -  *\<brak >*  
   
-  - **ForceIJWImage** -  **/CLRIMAGETYPE: IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
   - **ForcePureILImage** -  **/CLRIMAGETYPE: czysty**  
   
-  - **ForceSafeILImage** -  **/CLRIMAGETYPE: Safe**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
     Aby uzyskać więcej informacji, zobacz [/CLRIMAGETYPE (Określ typ obrazu CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
@@ -162,7 +162,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
   - **Wyłączone** -  **/CLRSupportLastError: nie**  
   
-  - **SystemDlls** -  **/CLRSupportLastError: SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     Aby uzyskać więcej informacji, zobacz [/CLRSUPPORTLASTERROR (Zachowaj kod ostatniego błędu dla wywołań PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
@@ -198,11 +198,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, która odnosi się do opcji konsolidatora.  
   
-  - **Włączone** -  **/functionpadmin**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** -  **/functionpadmin: 5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** -  **/functionpadmin: 6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
   - **ItaniumImage** -  **/functionpadmin: 16**  
   
@@ -228,11 +228,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Opcjonalny parametr **logiczny** .  
   
-   Jeśli `true`, częściowo podpisuje zestaw. Domyślnie wartość jest `false`.  
+   Jeśli `true`, częściowo podpisuje zestaw. Domyślna wartość to `false`.  
   
    Aby uzyskać więcej informacji, zobacz [/delaysign (częściowo podpisz zestaw)](https://msdn.microsoft.com/library/15244d30-3ecb-492f-a408-ffe81f38de20).  
   
-- **Kierowc**  
+- **Sterownik**  
   
    Opcjonalny parametr **ciągu** .  
   
@@ -240,13 +240,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji konsolidatora.  
   
-  - Wartość **NotSet** - *nie\<brak >*  
+  - **NotSet** -  *\<none>*  
   
-  - ** - ** **sterownika sterowników**  
+  - **Driver** -  **/Driver**  
   
-  - **Tylko** - object **: tylko** do  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **Wdm** -  **: WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
     Aby uzyskać więcej informacji, zobacz [Sterownik systemu Windows NT — sterowniki trybu jądra](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
@@ -344,7 +344,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Jeśli `true`, program tworzy *plik mapy*. Rozszerzenie nazwy pliku mapy to. map.  
   
-   Aby uzyskać więcej informacji, zobacz [/map (Generate Mapfile)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
+   Aby uzyskać więcej informacji, zobacz [/map (Generuj plik mapy)](https://msdn.microsoft.com/library/9ccce53d-4e36-43da-87b0-7603ddfdea63).  
   
 - **HeapCommitSize**  
   
@@ -452,7 +452,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
   - **Monituj bezzwłocznie** -  **/errorReport: Prompt**  
   
-  - **QueueForNextLogin** -  **/errorReport: Queue**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
   - **SendErrorReport** -  **/errorReport: Send**  
   
@@ -494,7 +494,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
   - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** -  **/LTCG: PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
   - **PGOptimization** -  **/LTCG: PGOptimize**  
   
@@ -572,7 +572,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/stub (nazwa pliku szczątkowego systemu MS-DOS)](https://msdn.microsoft.com/library/65221ffe-4f9a-4a14-ac69-3cfb79b40b5f).  
   
-- **Noentrypoint**  
+- **NoEntryPoint**  
   
    Opcjonalny parametr **logiczny** .  
   
@@ -594,7 +594,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz argument `REF` w [/opt (optymalizacje)](https://msdn.microsoft.com/library/8f229863-5f53-48a8-9478-243a647093ac).  
   
-- **Plik_wyjściowy**  
+- **OutputFile**  
   
    Opcjonalny parametr **ciągu** .  
   
@@ -622,7 +622,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/ALLOWBIND (Zapobiegaj powiązaniu biblioteki dll)](https://msdn.microsoft.com/library/30e37e24-12e4-407e-988a-39d357403598).  
   
-- **Profilu**  
+- **Profil**  
   
    Opcjonalny parametr **logiczny** .  
   
@@ -668,7 +668,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/align (wyrównanie sekcji)](https://msdn.microsoft.com/library/f2f8ac24-e90e-4bea-8205-f2960a3b1740).  
   
-- **SetCheckSum —**  
+- **SetChecksum**  
   
    Opcjonalny parametr **logiczny** .  
   
@@ -684,19 +684,19 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - Wartość **NotSet** - *nie\<brak >*  
+  - **NotSet** -  *\<none>*  
   
-  - **LinkVerbose** -  **/verbose**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** -  **/verbose: lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** -  **/verbose: ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** -  **/verbose: ref**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** -  **/verbose: SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** -  **/verbose: CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
     Aby uzyskać więcej informacji, zobacz [/verbose (drukowanie komunikatów o postępie)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
@@ -738,7 +738,7 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Aby uzyskać więcej informacji, zobacz [/PDBSTRIPPED (symbole prywatne)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).  
   
-- **Wykonawc**  
+- **SubSystem**  
   
    Opcjonalny parametr **ciągu** .  
   
@@ -746,13 +746,13 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - Wartość **NotSet** - *nie\<brak >*  
+  - **NotSet** -  *\<none>*  
   
   - **Konsola** -  **/SUBSYSTEM: Konsola**  
   
-  - **Windows** -  **/SUBSYSTEM: Windows**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **Natywne** -  **/SUBSYSTEM: natywne**  
+  - **Native** -  **/SUBSYSTEM:NATIVE**  
   
   - **Aplikacja EFI** -  **/SUBSYSTEM: EFI_APPLICATION**  
   
@@ -760,11 +760,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
   - **Interfejs EFI ROM** -  **/SUBSYSTEM: EFI_ROM**  
   
-  - **Środowisko uruchomieniowe EFI** -  **/SUBSYSTEM: EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** -  **/SUBSYSTEM: WindowsCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **Posix** -  **/SUBSYSTEM: POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
     Aby uzyskać więcej informacji, zobacz [/subsystem (Określanie podsystemu)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
@@ -816,29 +816,29 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - Wartość **NotSet** - *nie\<brak >*  
+  - **NotSet** -  *\<none>*  
   
   - **MachineARM** -  **/Machine: ARM**  
   
-  - **MachineEBC** -  **/Machine: EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** -  **/Machine: IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** -  **/Machine: MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** -  **/Machine: MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** -  **/Machine: MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** -  **/Machine: MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** -  **/Machine: sh4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
   - **MachineTHUMB** -  **/Machine: kciuk**  
   
-  - **MachineX64** -  **/Machine: x64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** -  **/Machine: x86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     Aby uzyskać więcej informacji, zobacz [/Machine (Określ platformę docelową)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
@@ -896,11 +896,11 @@ Zawija narzędzia konsolidatora C++ wizualnego link. exe. Narzędzie konsolidato
   
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.  
   
-  - **Jako źródło** - `level='asInvoker'`  
+  - **AsInvoker** - `level='asInvoker'`  
   
-  - **Najwyższe dostępne** - `level='highestAvailable'`  
+  - **HighestAvailable** - `level='highestAvailable'`  
   
-  - **Wymaga administratora** - `level='requireAdministrator'`  
+  - **RequireAdministrator** - `level='requireAdministrator'`  
   
     Aby uzyskać więcej informacji, zobacz argument `level` [/MANIFESTUAC (osadza informacje funkcji kontroli konta użytkownika w manifeście)](https://msdn.microsoft.com/library/2d243c39-fa13-493c-b56f-d0d972a1603a).  
   

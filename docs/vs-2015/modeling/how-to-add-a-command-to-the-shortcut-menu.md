@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300891"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850418"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Porady: dodawanie polecenia do menu skrótów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Polecenia menu można dodać do języka specyficznego dla domeny (DSL), aby uży
 
 3. [Metody zapisu w klasie element CommandSet](#CommandSet) , aby wyświetlić polecenie i zdefiniować, co ma być wykonywane w poleceniu.
 
-   Aby zapoznać się z przykładami, zobacz [witrynę internetową zestawu SDK wizualizacji i modelowania](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Aby zapoznać się z przykładami, zobacz [witrynę internetową zestawu SDK wizualizacji i modelowania](https://www.visualstudio.com/).
 
 > [!NOTE]
 > Możesz również zmodyfikować zachowanie niektórych istniejących poleceń, takich jak Wytnij, wklej, zaznacz wszystko i Drukuj przez zastępowanie metod w CommandSet.cs. Aby uzyskać więcej informacji, zobacz [How to: Modify a standardowe polecenie menu](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -223,7 +223,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Następujące fragmenty są często przydatne w metodach OnStatus:
 
-- `this.CurrentSelection`., Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
+- `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy, jest zawsze uwzględniony na tej liście. Jeśli użytkownik kliknie pustą część diagramu, diagram jest jedyną składową listy.
 
 - `this.IsDiagramSelected()` - `true`, jeśli użytkownik kliknął pustą część diagramu.
 
@@ -335,7 +335,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
  **Polecenie nie jest wyświetlane w menu:**
 
-- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażanie rozwiązań językowych właściwych dla domeny](../modeling/deploying-domain-specific-language-solutions.md).
+- Polecenie będzie wyświetlane tylko w przypadku debugowania wystąpień programu Visual Studio, dopóki nie zostanie zainstalowany pakiet DSL. Aby uzyskać więcej informacji, zobacz [wdrażania rozwiązań języka dotyczącego określonej domeny](../modeling/deploying-domain-specific-language-solutions.md).
 
 - Upewnij się, że próbka eksperymentalna ma poprawne rozszerzenie nazwy pliku dla tego języka DSL. Aby sprawdzić rozszerzenie nazwy pliku, Otwórz DslDefinition. DSL w głównym wystąpieniu programu Visual Studio. Następnie w Eksploratorze DSL kliknij prawym przyciskiem myszy węzeł Edytor, a następnie kliknij polecenie Właściwości. W okno Właściwości, zapoznaj się z właściwością FileExtension.
 

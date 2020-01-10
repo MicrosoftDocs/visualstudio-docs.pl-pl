@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3de5cb1cc62d159567eee804c1aadef865e500a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301342"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845395"
 ---
 # <a name="validate-your-system-during-development"></a>Weryfikacja systemu w czasie opracowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Program Visual Studio może pomóc zapewnić zgodność oprogramowania z wymagan
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Filmy wideo**|![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug siedem: zrozumienie kodu i projekt systemu przy użyciu programu Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: projektowanie aplikacji przy użyciu diagramu warstwowego](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak to zrobić, w jaki sposób można sprawdzić poprawność kodu przy użyciu diagramów warstw](https://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|-   [Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Filmy wideo**|![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug siedem: zrozumienie kodu i projekt systemu przy użyciu programu Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: projektowanie aplikacji przy użyciu diagramu warstwowego](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-5-Architecting-an-Application)<br /><br /> ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak to zrobić, w jaki sposób można sprawdzić poprawność kodu przy użyciu diagramów warstw](https://msdn.microsoft.com/vstudio/gg501755)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogi**|-   [Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Zobacz też
  [Testowanie aplikacji](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [rozszerzając modele UML i diagramy](../modeling/extend-uml-models-and-diagrams.md) [model wymagania użytkownika](../modeling/model-user-requirements.md) [analizowanie i architektura modelowania](../modeling/analyze-and-model-your-architecture.md)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 76360c9843d82350a2b9929b8debfdb4aa4cde82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491723"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852342"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Śledzenie liczby przypisanych subskrypcji przy użyciu funkcji maksymalnego użycia
 Nowa funkcja portalu administracyjnego subskrypcji programu Visual Studio pomaga śledzić liczbę subskrybowanych i przypisanych subskrypcji oraz określać szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i w całej czas trwania umów. 
@@ -42,7 +42,7 @@ Na przykład w powyższej tabeli można zobaczyć, że w dniu 12/13/2018 wystąp
 Odp.: informacje w omówieniu przedstawiają *bieżące* przypisania i dostępne subskrypcje dla poszczególnych poziomów subskrypcji.  Może to być bardzo różne od maksymalnej liczby subskrypcji przypisanych do umowy w bieżącym roku lub w okresie obowiązywania umowy.  Funkcja maksymalnego użycia pozwala zobaczyć, kiedy zostały osiągnięte maksymalne poziomy przypisania i jakie są poziomy.  Jest to ważne rozróżnienie, ponieważ opłaty za subskrypcje są naliczane na podstawie maksymalnej liczby subskrypcji przypisanych w dowolnym momencie w roku. 
 
 ## <a name="resources"></a>Resources
-- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://aka.ms/vslicensing)
+- [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

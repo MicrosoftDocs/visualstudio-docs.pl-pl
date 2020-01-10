@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8c407475f72684360551cd97852c1a1bfde5088f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: becaa70d2eed862d77f4c666b0a408054eaf5926
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300608"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850948"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ UWAGA]
   
  Możesz użyć wizualizatora współbieżności, aby zobaczyć, jak działa aplikacja wielowątkowa. Widoki w wizualizatorze współbieżności zapewniają dane graficzne, tabelaryczne i tekstowe, które pokazują relacje czasowe między wątkami w programie i systemem jako całością. Można użyć wizualizatora współbieżności do lokalizowania wąskich gardeł wydajności, niedostatecznego wykorzystania procesora, rywalizacji wątków, migracji wątków międzyrdzeniowych, opóźnień synchronizacji, aktywności DirectX, obszarów nakładających się operacji we/wy i innych informacji. Widoki zawierają dane, które można wykonywać, łącząc ich graficzne dane wyjściowe z stosami wywołań i kodem źródłowym.  
   
- Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla systemu Windows](https://go.microsoft.com/fwlink/?LinkId=234579) .  
+ Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla systemu Windows](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) .  
   
 > [!NOTE]
 > Wizualizator współbieżności nie obsługuje projektów sieci Web.  
@@ -49,7 +49,7 @@ UWAGA]
 |[Widok wątków](../profiling/threads-view-parallel-performance.md)|Opisuje sposób analizowania interakcji między wątkami w programie.|  
 |[Widok rdzeni](../profiling/cores-view.md)|Opisuje sposób analizowania migracji wątków między rdzeniami.|  
 |[Typowe wzorce dla nieprawidłowo działających aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Opisuje kilka typowych wzorców i pokazuje, jak pojawiają się one w wizualizatorze współbieżności.|  
-|[Programowanie równoległe w blogu programu Visual Studio](https://go.microsoft.com/fwlink/?LinkId=235385)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|  
+|[Programowanie równoległe w blogu programu Visual Studio](https://blogs.msdn.com/b/visualizeparallel)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|  
 |[Widoki raportu wydajności](../profiling/performance-report-views.md)|Zawiera informacje referencyjne dotyczące raportów i widoków narzędzia profilowania programu Visual Studio.|  
 |[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|Opisuje sposób Instrumentacji kodu źródłowego do wyświetlania dodatkowych informacji w wizualizatorze współbieżności.|  
 |[Narzędzie wiersza polecenia narzędzia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Opisuje, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd. exe) do zbierania i przetwarzania śladów na maszynach, które nie mają programu Visual Studio.|  

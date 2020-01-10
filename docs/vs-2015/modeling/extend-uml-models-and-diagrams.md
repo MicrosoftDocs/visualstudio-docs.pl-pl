@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301046"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849806"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Zespół narzędzi firmy Fabrikam wprowadza szereg ulepszeń, które ułatwiają zespołom programistycznym. W poniższych sekcjach opisano różne rodzaje rozszerzeń, które można zdefiniować. Niektóre z tych technik można połączyć w jedno rozszerzenie programu Visual Studio.
 
- Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](https://go.microsoft.com/fwlink/?LinkId=214467).
+ Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a>Wymagania
+## <a name="Requirements"></a> Wymagania
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 - [Modeling SDK dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
-## <a name="profiles"></a>Profil
+## <a name="profiles"></a>Profile
  Profile umożliwiają definiowanie stereotypów i dodatkowych właściwości elementów UML.
 
  Deweloperzy narzędzi firmy Fabrikam definiują stereotypy obiektów w węzłach diagramów aktywności, takich jak «taśma przenośnika» i «punkt zaewidencjonowania. Gdy członek zespołu tworzy schemat obsługi bagażu przy użyciu diagramu aktywności, można teraz ustawić stereotypy, aby wskazać typ wyposażenia reprezentowanego przez każdy węzeł. Deweloperzy narzędzi definiują dodatkowe właściwości niektórych stereotypów, dzięki czemu użytkownicy mogą rejestrować wartości, takie jak pojemność taśmy przenośnika i skrętności.
@@ -85,7 +85,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Aby uzyskać więcej informacji, zobacz [integrowanie modeli UML z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Generacji
+## <a name="generation"></a>Generowanie
  Z modelu można generować kod programu, skrypty, konfiguracje, dokumenty, nowe modele lub inne artefakty.
 
  W systemach bagażowych, które są projektami firmy Fabrikam, większość kodu programu jest taka sama z jednego projektu do następnego. Aspekt zmiennej głównej to plan przepływu bagażu wokół lotniska. Gdy zespół projektowy osiągnął doświadczenie z kilku pierwszych projektów, deweloperzy narzędzi tworzą szablon generujący, w modelu przepływu bagażu, większość kodu programu zmiennej i innych plików, takich jak dokumenty użytkownika. Znacznie skraca to czas projektowania i częstotliwość błędów dla każdego nowego projektu.
@@ -111,12 +111,12 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Zobacz też
  [Utwórz modele dla](../modeling/create-models-for-your-app.md) [dokumentacji interfejsu API aplikacji dla ROZSZERZALNości modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

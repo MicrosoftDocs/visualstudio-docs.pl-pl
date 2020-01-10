@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302555"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851771"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Wstrzymywanie kodowanych testów użytkownika dla określonych zdarzeń podczas odtwarzania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ W przypadku odtwarzania kodowanego testu interfejsu użytkownika można nakazać
 > [!TIP]
 > Możesz również dodać opóźnienia przed akcjami przy użyciu edytora kodowanego testu interfejsu użytkownika. Aby uzyskać więcej informacji, zobacz [jak: Wstawianie opóźnienia przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu interfejsu użytkownika](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
 
- **Metody UITestControl. WaitForControlXXX ()**
+ **UITestControl.WaitForControlXXX() Methods**
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **Wskazówki**
 
- Aby uzyskać dodatkowe informacje, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://go.microsoft.com/fwlink/?LinkID=255196)
+ Aby uzyskać dodatkowe informacje, zobacz [testowanie ciągłego dostarczania przy użyciu programu Visual Studio 2012 — Rozdział 5: Automatyzowanie testów systemowych](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="see-also"></a>Zobacz też
  [Korzystanie z automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md) [Tworzenie KODOWANYCH testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [Przewodnik: Tworzenie, edytowanie i konserwowanie kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) w przypadku kodowanych [testów interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md) [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrań akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [: Wstawianie opóźnienia przed akcją interfejsu użytkownika przy użyciu edytora kodowanego testu](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

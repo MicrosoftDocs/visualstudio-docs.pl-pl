@@ -11,25 +11,25 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300433"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850322"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Instrukcje: Tworzenie kontrolki przybornika korzystającej z Windows Forms
 Szablon kontrolki przybornika Windows Forms, który jest zawarty w [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] umożliwia tworzenie formantów Windows Forms, które są automatycznie dodawane do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak za pomocą szablonu utworzyć formant **przybornika** , który można dystrybuować do innych użytkowników.  
   
 > [!NOTE]
-> Aby dowiedzieć się, jak pobrać zestaw Visual Studio SDK, zobacz [Centrum deweloperów rozszerzeń programu Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) w witrynie MSDN w sieci Web.  
+> Aby dowiedzieć się, jak pobrać zestaw Visual Studio SDK, zobacz [Centrum deweloperów rozszerzeń programu Visual Studio](https://msdn.microsoft.com/vsx/default.aspx) w witrynie MSDN w sieci Web.  
   
 ## <a name="creating-a-toolbox-control"></a>Tworzenie kontrolki przybornika  
  Użyj szablonu kontrolki przybornika Windows Forms, aby utworzyć projekt, a następnie Skompiluj interfejs użytkownika w projektancie.  
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Aby utworzyć projekt kontrolki przybornika Windows Forms  
   
-1. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.  
+1. W menu **Plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **Projekt**.  
   
 2. W oknie dialogowym **Nowy projekt** w obszarze **zainstalowane szablony**kliknij węzeł preferowanego języka programowania, a następnie kliknij pozycję **rozszerzalność**. Na liście typów projektów wybierz pozycję **formant przybornika Windows Forms**.  
   

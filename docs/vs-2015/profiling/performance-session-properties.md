@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290113"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848162"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "74290113"
   
  Aby uzyskać więcej informacji, zobacz [How to: Określ plik binarny do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)  
   
-## <a name="sampling"></a>Sond  
+## <a name="sampling"></a>Próbkowanie  
  Te ustawienia umożliwiają wybranie przykładowego zdarzenia i interwału próbkowania, gdy próbkowanie jest używane jako metoda profilowania. Przykładowe zdarzenie służy do zbierania danych profilowania w określonym interwale. Na przykład jeśli przykładowe zdarzenie to cykle zegara, a interwał próbkowania jest ustawiony na 10 000 000, dane profilowania są zbierane po każdym cyklu 10 000 000 cykli zegara. Dostępne są następujące cztery typy przykładowych zdarzeń:  
   
 - Cykle zegara — w przypadku problemów związanych z procesorem CPU  
@@ -66,7 +66,7 @@ ms.locfileid: "74290113"
   
   Aby uzyskać więcej informacji, zobacz [How to: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)  
   
-## <a name="binary"></a>Binarny  
+## <a name="binary"></a>plików binarnych  
  Te ustawienia umożliwiają określenie, czy chcesz przenieść plik binarny instrumentacji do innej lokalizacji. Na przykład, jeśli profiluje moją bibliotekę DLL i nie można przenieść pliku binarnego z instrumentacją, tworzona jest kopia zapasowa my. dll o nazwie My. orig. dll. Następnie plik my. DLL jest modyfikowany przez wstawianie sond do zbierania danych. Jeśli zdecydujesz się przenieść plik binarny z instrumentacją, oryginalny plik binarny nie jest zmieniany, a plik binarny Instrumentacji jest kopiowany do określonej lokalizacji do użycia podczas Instrumentacji.  
   
  Aby uzyskać więcej informacji, zobacz [How to: Określ plik binarny do uruchomienia](../profiling/how-to-specify-the-binary-to-start.md)  
@@ -89,7 +89,7 @@ ms.locfileid: "74290113"
  Aby uzyskać więcej informacji, zobacz [jak: zbierać dane licznika procesora CPU](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## <a name="windows-events"></a>Zdarzenia systemu Windows  
- Podczas profilowania można zbierać dane od dostawców śledzenia zdarzeń. Dane można wyświetlić przy użyciu opcji `/calltrace` narzędzia wiersza polecenia VSPerfReport. exe. Aby uzyskać więcej informacji na temat śledzenia zdarzeń systemu Windows (ETW), zobacz [Informacje o śledzeniu zdarzeń](https://go.microsoft.com/fwlink/?linkid=90752).  
+ Podczas profilowania można zbierać dane od dostawców śledzenia zdarzeń. Dane można wyświetlić przy użyciu opcji `/calltrace` narzędzia wiersza polecenia VSPerfReport. exe. Aby uzyskać więcej informacji na temat śledzenia zdarzeń systemu Windows (ETW), zobacz [Informacje o śledzeniu zdarzeń](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
  Aby uzyskać więcej informacji, zobacz:  
   

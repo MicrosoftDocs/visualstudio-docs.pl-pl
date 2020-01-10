@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296216"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851312"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Projektant klas wyświetla wizualną powierzchnię projektową o nazwie *Diagram
 
 - Struct
 
-- Enum
+- Wyliczenie
 
 - Makro (wyświetla widok po przetworzeniu makra)
 
@@ -82,7 +82,7 @@ Projektant klas wyświetla wizualną powierzchnię projektową o nazwie *Diagram
 - Upewnij się, że typ znajduje się w poprawnym zakresie, aby można było go zlokalizować Projektant klas. Upewnij się, że w kodzie nie brakuje instrukcji `using`, `imports`lub `#include`. Upewnij się również, że typ (lub powiązany Typ) nie został przeniesiony poza przestrzeń nazw, w której pierwotnie znajdowały się.
 
 ### <a name="troubleshooting-other-error-messages"></a>Rozwiązywanie problemów z innymi komunikatami o błędach
- Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w publicznych forach Microsoft Developer Network (MSDN). Zobacz [Forum programu Visual Studio Projektant klas](https://go.microsoft.com/fwlink/?linkid=160754).
+ Pomoc dotyczącą rozwiązywania problemów i ostrzeżeń można znaleźć w publicznych forach Microsoft Developer Network (MSDN). Zobacz [Forum programu Visual Studio Projektant klas](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1).
 
 ## <a name="limitations"></a>Ograniczenia dotyczące C++ elementów kodu
 

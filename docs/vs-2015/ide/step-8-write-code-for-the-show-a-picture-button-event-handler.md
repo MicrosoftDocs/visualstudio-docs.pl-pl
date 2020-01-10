@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c1b09d88de938ee4bc93b69b50d53c0d39006f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f5d58533f6f2207d1b07883ab741eb900cdfbbf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300001"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851112"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Wpisywanie kodu dla obsługi zdarzeń pokazywania przycisków obrazowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ W tym kroku zostanie wykonane działanie przycisku **Pokaż obraz** w następuj�
 
   Środowisko IDE ma zaawansowane narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu. Podczas wprowadzania kodu środowisko IDE otwiera okno z sugerowanymi uzupełnianiem dla wprowadzanych słów częściowych. Próbuje określić, co chcesz zrobić dalej, i automatycznie przechodzi do ostatniego wybranego elementu z listy. Możesz użyć strzałek w górę lub w dół, aby przenieść się na listę, lub wpisać litery, aby zawęzić wybór. Gdy zobaczysz wybór, wybierz klawisz TAB, aby go zaznaczyć. Lub możesz zignorować sugestie, jeśli nie jest to konieczne.
 
-  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 4](https://go.microsoft.com/fwlink/?LinkId=205215) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 4](https://go.microsoft.com/fwlink/?LinkId=205203). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+  ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 4](https://msdn.microsoft.com/vbasic/gg315355.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# wideo 4](https://msdn.microsoft.com/vcsharp/gg278412.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Aby napisać kod dla programu obsługi zdarzeń przycisku Pokaż obraz
 

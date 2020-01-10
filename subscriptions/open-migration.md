@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Dowiedz się, jak partnerzy zarządzają subskrypcjami programu Visual Studio dla swoich klientów.
-ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
+ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000899"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850558"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partnerzy zarządzający subskrypcjami w imieniu klientów
 Aby zarządzać subskrypcjami w [portalu administracyjnym subskrypcji](https://manage.visualstudio.com)programu Visual Studio, należy wykonać kilka kroków. Proces będzie:
@@ -42,15 +42,15 @@ Dotyczy to nowych partnerów umieszczających nowe otwarte zamówienia licencji,
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nowi partnerzy odwiedzają Portal administratora subskrypcji programu Visual Studio bezpośrednio
 Ten scenariusz ma zastosowanie do nowych partnerów, którzy już umieścili nowe otwarte zamówienia licencji, ale którzy nie zostali zarejestrowani w [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) i przejdź bezpośrednio do [portalu administracyjnego subskrypcji programu Visual Studio](https://manage.visualstudio.com).  Wykonaj następujące kroki:
-- Odwiedź https://manage.visualstudio.com stronę.
+- Odwiedź https://manage.visualstudio.com.
 - Zostanie wyświetlony komunikat o błędzie, że nie jesteś rozpoznanym użytkownikiem.
 - Wybierz opcję rejestracji **partnerów OLP** i wprowadź numer autoryzacji, numer licencji, adres e-mail klienta używany w zamówieniu, zaznacz pole wyboru i kliknij przycisk **Prześlij**.
 
 > [!NOTE]
 > Klient otrzyma wiadomość e-mail z powiadomieniem informującą o tym, że partner został dodany do licencji Open. Mogą oni wybrać opcję usunięcia dostępu partnera.
 
-## <a name="resources"></a>Zasoby
-- [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://aka.ms/vslicensing)
+## <a name="resources"></a>Resources
+- [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Warunki licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

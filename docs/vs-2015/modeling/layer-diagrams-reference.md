@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301616"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850619"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy warstw: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ W programie Visual Studio można użyć *diagramu warstwowego* w celu wizualizow
 
 - Zapoznaj się z zamierzoną architekturą podczas opracowywania i konserwowania kodu przez uwzględnienie walidacji operacji ewidencjonowania i kompilowania.
 
-  W tym temacie opisano elementy, których można użyć na diagramie warstwowym. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów warstwowych, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
+  W tym temacie opisano elementy, których można użyć na diagramie warstwowym. Aby uzyskać szczegółowe informacje na temat tworzenia i rysowania diagramów warstwowych, zobacz [diagramy warstwowe: wytyczne](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowych, odwiedź [witrynę wzorców & Practices](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 ## <a name="reading-layer-diagrams"></a>Odczytywanie diagramów warstwy
  ![Elementy na diagramach warstw](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")

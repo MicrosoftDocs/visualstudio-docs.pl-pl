@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297972"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851238"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,7 +223,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  `ExcludeFromCodeCoverage(` *wykluczenianame* `, L"` *funkcjaname* `");`
 
- `ExcludeSourceFromCodeCoverage(` *wykluczenia* `, L"` *sourcefilepath* `");`
+ `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
 - *Wykluczname* jest dowolną unikatową nazwą.
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 ### <a name="guidance"></a>Wskazówki
- [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testowanie w celu ciągłego dostarczania za pomocą programu Visual Studio 2012 — Rozdział 2: testowanie jednostkowe: testowanie wewnątrz](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Zobacz też
  [Dostosowywanie analizy pokrycia kodu](../test/customizing-code-coverage-analysis.md) [Rozwiązywanie problemów z](../test/troubleshooting-code-coverage.md) [jednostką pokrycia kodu testowanie kodu](../test/unit-test-your-code.md)

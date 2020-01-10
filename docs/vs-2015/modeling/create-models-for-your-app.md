@@ -37,23 +37,23 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300252"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852005"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomysłów dotyczących kodu oraz wymagań użytkownika, które musi obsługiwać system oprogramowania. Na przykład aby opisać i przekazać wymagania dotyczące użytkowników, można użyć UML (UML) diagramów przypadków użycia, działań, klas i sekwencji. Do opisywania i przekazywania funkcjonalności systemu można użyć diagramów składnika UML, klasy, działania i sekwencji.
+Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę Twojego kodu oraz wymagania użytkowników, jakie musi spełniać Twój system oprogramowania. Na przykład aby opisać i przekazać wymagania dotyczące użytkowników, można użyć UML (UML) diagramów przypadków użycia, działań, klas i sekwencji. Do opisywania i przedstawiania funkcji Twojego systemu możesz używać diagramów UML typu Składnik, Klasa, Działanie i Sekwencja.
 
- Zobacz [wideo Channel 9: ulepszanie architektury za pośrednictwem modelowania](https://go.microsoft.com/fwlink/?LinkID=252078).
+ Zobacz [wideo Channel 9: ulepszanie architektury za pośrednictwem modelowania](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  W tej wersji można utworzyć następujące diagramy UML:
 
-|**4b**|**Pokazując**|
+|**Diagram**|**Pokazując**|
 |-----------------|---------------|
 |[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestnikami w procesie biznesowym|
 |[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, porty i relacje|
@@ -65,7 +65,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
  Aby wizualizować architekturę systemu lub istniejącego kodu, Utwórz następujące diagramy:
 
-|**4b**|**Pokazując**|
+|**Diagram**|**Pokazując**|
 |-----------------|---------------|
 |[Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|
@@ -73,7 +73,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
 ## <a name="common-tasks"></a>Typowe zadania
 
-|**Rozdziału**|**Zadaniem**|
+|**Temat**|**Zadanie**|
 |---------------|--------------|
 |[Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Tworzenie modeli** i Dodawanie diagramów.|
 |[Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)|**Rysuj diagramy** , aby edytować model.|
@@ -85,7 +85,7 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
 ## <a name="related-tasks"></a>Powiązane zadania
 
-|**Rozdziału**|**Zadaniem**|
+|**Temat**|**Zadanie**|
 |---------------|--------------|
 |[Tworzenie wizualizacji kodu](../modeling/visualize-code.md)|Tworzenie map kodu i diagramów warstwowych w celu lepszego zrozumienia nieznanego kodu.|
 |[Wymagania modelu użytkownika](../modeling/model-user-requirements.md)|Używaj modeli, aby wyjaśnić potrzeby użytkowników.|
@@ -96,6 +96,6 @@ Diagramy modelowania ułatwiają zrozumienie, wyjaśnienie i komunikowanie pomys
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
-|**Kategorii**|**Linki**|
+|**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Dotyczące**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c23dc511f0dd45a9d62715ed74bc6e2a05afa9a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e24152bf2e6acfcb1ed20b75a5c817e0336cdd4c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295805"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851594"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Zapisywanie kodu dla dodatkowych przycisków i pola wyboru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Teraz wszystko jest gotowe do wykonania innych czterech metod. Możesz skopiowa�
 
  Ten kod dodaje funkcję do przycisków, które zostały dodane wcześniej. Bez tego kodu przyciski nie wykonują żadnych czynności. Przyciski używają kodu w swoich zdarzeniach `Click` (i pole wyboru używa zdarzenia `CheckChanged`) do wykonywania różnych czynności podczas aktywowania kontrolek. Na przykład zdarzenie `clearButton_Click`, które aktywuje się po wybraniu przycisku **Wyczyść obraz** , powoduje wymazanie bieżącego obrazu przez ustawienie jego właściwości `Image` na `null` (lub `nothing`). Każde zdarzenie w kodzie zawiera komentarze objaśniające, jak działa kod.
 
- ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](https://go.microsoft.com/fwlink/?LinkId=205216) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 5](https://go.microsoft.com/fwlink/?LinkId=205206). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
+ ![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") Aby uzyskać wersję wideo tego tematu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów w Visual Basic — wideo 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) lub [Samouczek 1: Tworzenie przeglądarki obrazów w C# pliku wideo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Te filmy wideo korzystają ze starszej wersji programu Visual Studio, więc istnieją niewielkie różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednak koncepcje i procedury działają podobnie w bieżącej wersji programu Visual Studio.
 
 > [!NOTE]
 > Najlepszym rozwiązaniem jest zawsze Dodawanie komentarzy do kodu. Komentarze są informacjami dla osoby, które mają być odczytane, i warto pamiętać o tym, aby kod był zrozumiały. Wszystkie elementy w wierszu komentarza są ignorowane przez program. W wizualizacji C#możesz dodać komentarz do wiersza, wpisując dwa ukośniki do przodu (//), a w Visual Basic skomentować linię, zaczynając od pojedynczego cudzysłowu (').
