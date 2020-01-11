@@ -9,16 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f273294d9da0c0cf71f96ae3bde8e5e0457259c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592974"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886455"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Wyświetlanie danych w Blend for Visual Studio
 
 Przykładowe dane można wyświetlić w projektancie w miarę dostosowywania układu stron. Przykładowe dane można generować od podstaw lub przy użyciu istniejącej klasy. Możesz również nawiązać połączenie z *danymi na żywo* , które pojawiają się w aplikacji po jej uruchomieniu.
+
+> [!NOTE]
+> Panel **dane** w programie Blend jest obsługiwany tylko w przypadku projektów przeznaczonych do .NET Framework. Nie jest obsługiwana w przypadku projektów platformy UWP i projektów przeznaczonych dla platformy .NET Core. 
 
 ## <a name="generate-sample-data"></a>Generowanie danych przykładowych
 

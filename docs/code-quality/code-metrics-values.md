@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6caf63b2d1fb6b9206fe43da5c7a63818fd299f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ece5c08ca3aa4a9f5e5329dbf6d5fd6c9087d085
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587706"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886412"
 ---
 # <a name="code-metrics-values"></a>Wartości metryk kodów
 
@@ -36,10 +36,19 @@ Na poniższej liście przedstawiono kod wyników metryk, które oblicza programu
 
 - **Klasa sprzężenia** -mierzy sprzężenia unikatowy klasy za pomocą parametrów, zmienne lokalne, zwracanych typów, wywołania metody, wystąpień generyczny lub szablonu, klas bazowych, implementacji interfejsu, pól zdefiniowanych dla typów zewnętrznych i Atrybut dekoracji. Projektowania oprogramowania dobre nakazują, typów i metod powinni mieć wysoką spójność i mało sprzężenia. Sprzężenie wysoki wskazuje projekt, który jest trudny do ponownego użycia i utrzymywać ze względu na jej wielu współzależności na inne typy. Aby uzyskać więcej informacji, zobacz wpis na blogu dotyczący [sprzęgania klas](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
 
+::: moniker range=">=vs-2019"
+
+- **Wiersze kodu źródłowego** — wskazuje dokładną liczbę wierszy kodu źródłowego, które znajdują się w pliku źródłowym, w tym puste wiersze. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. metics (2.9.5).
+
+- **Wiersze kodu wykonywalnego** — wskazuje przybliżoną liczbę wierszy lub operacji kodu wykonywalnego. Jest to liczba operacji w kodzie wykonywalnym. Ta Metryka jest dostępna w programie Visual Studio 2019 w wersji 16,4 i Microsoft. CodeAnalysis. metics (2.9.5). Wartość jest zwykle blisko zbliżonej do poprzedniej metryki, **wierszy kodu**, która jest metryką opartą na instrukcji MSIL używaną w trybie starszym.
+::: moniker-end
+::: moniker range="vs-2017"
+
 - **Wiersze kodu** — Wskazuje przybliżoną liczbę wierszy w kodzie. Liczba zależy od kodu IL i dlatego nie dokładną liczbę wierszy w pliku kodu źródłowego. Duża liczba może wskazywać, że typ lub metoda próbuje wykonać zbyt dużo pracy i należy ją podzielić. Może również wskazywać, że typ lub metoda może być trudne do utrzymania.
 
    > [!NOTE]
    > [Wersji wiersza polecenia](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) kodu narzędzie metryki liczby rzeczywiste wiersze kodu, ponieważ analizuje ona kodu źródłowego, zamiast IL.
+::: moniker-end
 
 ## <a name="anonymous-methods"></a>Metody anonimowe
 
