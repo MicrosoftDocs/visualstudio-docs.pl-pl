@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748467"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590517"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 
@@ -43,7 +43,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 2. Aby skonwertować element kodu na grupę, Znajdź element `<Node/>` dla tego elementu kodu.
 
-    \- lub-
+    \- lub —
 
     Aby dodać nową grupę, Znajdź sekcję `<Nodes>`. Dodaj nowy element `<Node/>`.
 
@@ -58,11 +58,11 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
 4. W sekcji `<Links>` upewnij się, że element `<Link/>` o następujących atrybutach istnieje dla każdej relacji między elementem kodu grupy a jego podrzędnymi elementami kodu:
 
-   - @No__t_0 atrybut, który określa element kodu grupy
+   - `Source` atrybut, który określa element kodu grupy
 
-   - @No__t_0 atrybut, który określa podrzędny element kodu
+   - `Target` atrybut, który określa podrzędny element kodu
 
-   - @No__t_0 atrybut, który określa relację `Contains` między elementem kodu grupy a jego podrzędnym elementem kodu
+   - `Category` atrybut, który określa relację `Contains` między elementem kodu grupy a jego podrzędnym elementem kodu
 
      Na przykład:
 
@@ -187,7 +187,7 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
     Style="Glass"
     ```
 
-     - oraz
+     - lub —
 
     ```xml
     Style="Plain"
@@ -272,13 +272,13 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
    <Condition Expression="MyCategory"/>
    ```
 
-    - oraz
+    - lub —
 
    ```xml
    <Condition Expression="MyCategory > 100"/>
    ```
 
-    - oraz
+    - lub —
 
    ```xml
    <Condition Expression="HasCategory('MyCategory')"/>
@@ -286,33 +286,33 @@ Edytuj plik. dgml mapy kodu w edytorze tekstu lub XML. Jeśli mapa jest części
 
     Wyrażenie to używa następującej składni notacji Backusa-Naura (BNF):
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings &#124; &#124; > \<Literal > 1Number >
+    \<expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<expression > ")" &#124; \<MemberBindings > &#124; \<Literal &#124; > \<Number >
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression >:: = \<wyrażenie > \<operatora > \<wyrażenie >
 
-    \<UnaryExpression >:: = "!"  \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
+    \<UnaryExpression >:: = "!" \<wyrażenie > &#124; "+" \<wyrażenie > &#124; "-" \<wyrażenie >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "lub" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<operator >:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "lub" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "."  \<MemberBinding >
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<memberbinding > "." \<memberbinding >
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
+    \<MemberBinding >:: = \<MethodCall > &#124; \<propertyget — >
 
-    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
+    \<MethodCall >:: = \<identyfikator > "(" \<MethodArgs > ")"
 
-    \<PropertyGet >:: = Identyfikator
+    \<Propertyget — >:: = Identyfikator
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," \<MethodArgs &#124; > \<empty >
+    \<MethodArgs >:: = \<wyrażenie > &#124; \<expression > "," \<MethodArgs > &#124; \<puste >
 
-    \<Identifier >:: = [^. ]*
+    Identyfikator \<>:: = [^. ]*
 
-    \<Literal >:: = literał ciągu z pojedynczym lub podwójnym cudzysłowem
+    Literał \<>:: = literał ciągu z pojedynczym lub podwójnym cudzysłowem
 
     \<Number >:: = ciąg cyfr z opcjonalnym punktem dziesiętnym
 
     Można określić wiele elementów `<Condition/>`, które muszą być spełnione, aby zastosować styl.
 
-3. W następnym wierszu po elemencie `<Condition/>` Dodaj jeden lub wiele `<Setter/>` elementów, aby określić atrybut `Property` i stały atrybut `Value` lub obliczany atrybut `Expression` do zastosowania do mapy, elementów kodu lub linki, które spełniają warunek.
+3. W następnym wierszu po elemencie `<Condition/>` Dodaj jeden lub wiele `<Setter/>` elementów, aby określić atrybut `Property` i stały atrybut `Value` lub obliczany atrybut `Expression` do zastosowania do mapy, elementów kodu lub linków, które spełniają warunek.
 
     Na przykład:
 

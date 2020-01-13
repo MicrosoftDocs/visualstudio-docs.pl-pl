@@ -2,17 +2,17 @@
 title: Dyrektywa T4 dotycząca parametru
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a9ea9d3c1f80c669ec52936969ae38342e6343
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606184"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591804"
 ---
 # <a name="t4-parameter-directive"></a>Dyrektywa T4 dotycząca parametru
 
@@ -26,7 +26,7 @@ W szablonie tekstu programu Visual Studio dyrektywa `parameter` deklaruje właś
 
  Dyrektywa `parameter` deklaruje właściwości w kodzie szablonu, które są inicjowane z wartości przekazywania z zewnętrznego kontekstu. Możesz ustawić te wartości, jeśli piszesz kod, który wywołuje transformację tekstu. Wartości mogą być przesyłane w słowniku `Session` lub w <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Można zadeklarować parametry dowolnego typu zdalnego. Oznacza to, że typ musi być zadeklarowany za pomocą <xref:System.SerializableAttribute> lub musi pochodzić od <xref:System.MarshalByRefObject>. Pozwala to na przekazywanie wartości parametrów do domeny AppDomain, w której szablon jest przetwarzany.
+ Można zadeklarować parametry dowolnego typu zdalnego. Oznacza to, że typ musi być zadeklarowany za pomocą <xref:System.SerializableAttribute>lub musi pochodzić od <xref:System.MarshalByRefObject>. Pozwala to na przekazywanie wartości parametrów do domeny AppDomain, w której szablon jest przetwarzany.
 
  Można na przykład napisać szablon tekstowy z następującą zawartością:
 

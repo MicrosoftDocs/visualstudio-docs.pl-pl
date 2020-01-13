@@ -1,6 +1,6 @@
 ---
-title: R przykładowych projektów
-description: Indeks kolekcji przykładów, aby rozpocząć pracę z języków R i programu Visual Studio.
+title: Przykładowe projekty języka R
+description: Indeks kolekcji próbek, aby rozpocząć pracę z językiem R i programem Visual Studio.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -8,81 +8,81 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef3316d929b00203815918a656568f75571e954e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950476"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843821"
 ---
-# <a name="r-tools-for-visual-studio-sample-projects"></a>Narzędzia języka R dla programu Visual Studio przykładowych projektów
+# <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools for Visual Studio przykładowe projekty
 
-Ta kolekcja przykładów ułatwia rozpoczęcie pracy na R, R Tools for Visual Studio (RTVS), a serwer Microsoft Machine Learning:
+Ta kolekcja przykładów pozwala rozpocząć pracę w języku R, R Tools for Visual Studio (RTVS) i Microsoft Machine Learning Server:
 
-1. Pobierz [plik zip przykłady](https://github.com/Microsoft/RTVS-docs/archive/master.zip) i Wyodrębnij zawartość do wybranego folderu.
-1. Otwórz `examples/Examples.sln` się dwa foldery w projekcie:
+1. Pobierz [plik zip Samples](https://github.com/Microsoft/RTVS-docs/archive/master.zip) i wyodrębnij go do wybranego folderu.
+1. Otwórz `examples/Examples.sln`, aby wyświetlić dwa foldery w projekcie:
 
-    - *Pierwsze spojrzenie na R* zawiera wprowadzenie delikatnie nowym do języka R.
-    - *PANI i usługi Machine Learning* zawiera przykłady dotyczące używania języka R i serwer Microsoft Machine Learning do uczenia maszynowego.
+    - *Pierwsze spojrzenie na r* daje łagodne wprowadzenie do języka r.
+    - *Pani i Machine Learning* zawiera przykłady użycia języka R i Microsoft Machine Learning Server do uczenia maszynowego.
 
 ## <a name="a-first-look-at-r"></a>Pierwsze spojrzenie na R
 
-W tym przykładzie zapewnia szczegółowe wprowadzenie do języka R za pośrednictwem liczne komentarze w dwóch plikach źródłowych. Najlepsze środowisko, umieść kursor na początku pliku i naciśnij klawisze Ctrl + Enter, aby wysłać kod wiersza przez-znajdują się na **interaktywne R** okna. (Wiersze, które instalowanie pakietów może zająć minutę lub dwie do ukończenia).
+Ten przykład zawiera szczegółowe wprowadzenie do języka R poprzez obszerne komentarze w dwóch plikach źródłowych. Aby uzyskać najlepsze doświadczenia, umieść kursor w górnej części pliku, a następnie naciśnij klawisze CTRL + ENTER, aby wysłać kod w wierszu do okna **R Interactive** . (Wiersze instalujące pakiety mogą potrwać minutę lub dwa.)
 
-- `1-Getting Started with R.R` obejmuje wiele podstawy języka R, w tym za pomocą pakietów, ładowania i analizowania danych i wykreślania.
+- `1-Getting Started with R.R` obejmuje wiele podstawowych podstaw języka R, w tym używanie pakietów, ładowanie i analizowanie danych oraz Wykreślanie.
 
-    ![Przykładowe dane wyjściowe z uruchomiono wprowadzenie 1 R.R próbki](media/samples-getting-started-output.png)
+    ![Przykładowe dane wyjściowe z 1-Wprowadzenie z przykładem R.R](media/samples-getting-started-output.png)
 
-- `2-Introduction to ggplot2.R` wprowadza pakietu grafiki ggplot2 znana jej atrakcyjność powierzchni i prostą składnię. W tym przykładzie wizualizuje dane Fidżi trzęsienie ziemi.
+- `2-Introduction to ggplot2.R` wprowadza pakiet graficzny ggplot2 znany na potrzeby wizualnie atrakcyjnych wykresów i prostej składni. Ten przykład wizualizuje dane trzęsienia ziemi od Fidżi.
 
-    ![Przykład danych wyjściowych z 2 — wprowadzenie do ggplot2. Przykładowy języka R](media/samples-ggplot-output.png)
+    ![Przykładowe dane wyjściowe z 2-Wprowadzenie do ggplot2. Przykład R](media/samples-ggplot-output.png)
 
-## <a name="microsoft-machine-learning-server-and-machine-learning"></a>Serwer Microsoft Machine Learning i usługi Machine Learning
+## <a name="microsoft-machine-learning-server-and-machine-learning"></a>Microsoft Machine Learning Server i Machine Learning
 
-Ta kolekcja przykładów przedstawia sposób użycia języka R, do tworzenia modeli uczenia maszynowego i korzystać z zalet [serwer Microsoft Machine Learning](/machine-learning-server/what-is-machine-learning-server).
+W tej kolekcji przykładów pokazano, jak za pomocą języka R tworzyć modele uczenia maszynowego i korzystać z [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server).
 
-Zgodnie z przykładami dla wszystkich, otwórz plik, umieść kursor na początku, a następnie przejść przez kod wiersz po wierszu za pomocą **Ctrl**+**Enter**. Pliki markdown w każdy folder zawierają również dodatkowe szczegóły.
+Podobnie jak w przypadku wszystkich przykładów, należy otworzyć plik, umieścić kursor u góry, a następnie przejść przez wiersz kodu, naciskając **klawisz Ctrl**+**Enter**. Pliki promocji w poszczególnych folderach zawierają również dodatkowe szczegóły.
 
-- `Benchmarks` Uruchamia szereg mocy obliczeniowej, równoległe algebry liniowej obliczeń, aby wyświetlić wydajność uzyska, które są możliwe przy użyciu programu Microsoft R Open wraz z Intel matematyczne jądra biblioteki (MKL). Z symulowanymi danymi wzorców specjalnie Porównaj macierzach w jednym wątku, a dwa.
+- `Benchmarks` uruchamia wiele intensywnych, równoległych obliczeń liniowych algebry, aby pokazać zyski wydajności, które można wykonać za pomocą programu Microsoft R Open i biblioteki jądra matematycznej Intel (MKL). W przypadku symulowanych danych testy porównawcze dokładnie porównują obliczenia macierzy w jednym wątku.
 
-    ![Przykład testu porównawczego wykres](media/samples-mro-benchmark-plot.png)
+    ![Przykładowy Wykres porównawczy](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` Tworzy model prognozowania popytu wypożyczenia rowerów, na podstawie zestawu danych historycznych, przy użyciu Microsoft ML Server.
+- `Bike_Rental_Estimation_with_MRS` tworzy model prognozowania popytu dla wypożyczalni roweru na podstawie historycznego zestawu danych przy użyciu programu Microsoft ML Server.
 
 - `Data_Exploration` zawiera trzy skrypty:
 
-  - `Import Data from URL.R` Pokazuje, jak załadować plik danych identyfikowane przez adres URL do języka R.
-  - `Import Data from URL to xdf.R` Pokazuje, jak załadować plik danych identyfikowane przez adres URL do Microsoft ML Server jako xdf.
-  - `Using ggplot2.R` to rozszerzenie `A First Look at R/2-Introduction to ggplot2.R` próbki, zapewniając bardziej rozległe Przewodnik po przykładzie funkcje ggplot2 firmy, w tym interaktywne wykreślania 3D.
+  - `Import Data from URL.R` pokazuje, jak załadować plik danych identyfikowany przez adres URL do języka R.
+  - `Import Data from URL to xdf.R` przedstawiono sposób ładowania pliku danych identyfikowanego przez adres URL do programu Microsoft ML Server jako XDF.
+  - `Using ggplot2.R` jest rozszerzeniem przykładu `A First Look at R/2-Introduction to ggplot2.R`, oferując bardziej obszerny przewodnik po funkcjach ggplot2's, w tym interaktywne Wykreślanie 3W.
 
-      ![Dane wyjściowe przy użyciu ggplot2. Przykład języka R](media/samples-3d-interactive.png)
+      ![Dane wyjściowe polecenia using ggplot2. Przykład R](media/samples-3d-interactive.png)
 
-- `Datasets` zawiera trzy *CSV* pliki używane przez inne przykłady
-- `Flight_Delays_Prediction_with_R` i `Flight_Delays_Prediction_with_MRS` pokazuje, jak do prognozowania opóźnień lotów przy użyciu języka R, usługi machine learning i historycznych punktualności lotów oraz danych o pogodzie.
-- `Machine learning` zawiera trzy próbki do nauki do prognozowania opóźnień lotów, ceny obudowy i wypożyczenia rowerów. Razem te przykłady pokazują zastosowanie języków R i Microsoft ML Server do rzeczywistych problemów. Mogą również pokazują, jak używać modele uczenia maszynowego popularne w kilku i wdrażanie ich jako usługi sieci Web platformy Azure przy użyciu [usługi Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) obszaru roboczego.
+- `Datasets` zawiera trzy pliki *CSV* używane przez inne przykłady
+- `Flight_Delays_Prediction_with_R` i `Flight_Delays_Prediction_with_MRS` pokazują, jak przewidzieć opóźnienia lotu przy użyciu języka R, uczenia maszynowego i historyczne dane o wydajności i pogoda.
+- `Machine learning` zawiera trzy przykłady do uczenia się w celu przewidywania opóźnień lotów, cen mieszkaniowych i wynajmu rowerów. We wszystkich tych przykładach przedstawiono sposób działania programów R i Microsoft ML Server na rzeczywiste problemy. Pokazano również, jak używać kilku popularnych modeli uczenia maszynowego i wdrażać je jako usługę sieci Web platformy Azure przy użyciu obszaru roboczego [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) .
 
-- `R_MRO_MRS_Comparison` to porównanie sześcioczęściowej, który pokazuje podobieństw i różnic języka R, Microsoft R Open i Microsoft ML Server za pomocą poleceń, składni, konstrukcje i wydajności.
+- `R_MRO_MRS_Comparison` to porównanie sześć części, które pokazuje podobieństwa i różnice w języku R, Microsoft R Open i Microsoft ML Server z poleceniami, składnią, konstrukcjami i wydajnością.
 
-## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Co to jest specjalne dotyczące programu Microsoft R Open wraz z Microsoft ML Server?
+## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Co to jest specjalna funkcja Microsoft R Open i Microsoft ML Server?
 
-[Microsoft R Open](https://aka.ms/rtvs-r-open), dystrybucja firmy Microsoft języka r, różni się od [CRAN języka R](https://cran.r-project.org/) na dwa istotne sposoby:
+[Microsoft r Open](https://mran.revolutionanalytics.com/download/), dystrybucja w języku r firmy Microsoft jest różna od [Cran r](https://cran.r-project.org/) na dwa ważne sposoby:
 
-1. [Lepsza wydajność obliczeń](https://mran.revolutionanalytics.com/rro/#intelmkl1) gdy jest używane z [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl). Biblioteki są dostępne bezpłatnie do pobrania firmy Microsoft do użytku z programem Microsoft R Open.
+1. [Lepsza wydajność obliczeń](https://mran.revolutionanalytics.com/rro/#intelmkl1) w przypadku korzystania z [bibliotek jądra matematycznych firmy Intel](https://software.intel.com/intel-mkl). Biblioteki są dostępne bezpłatnie do pobrania od firmy Microsoft do użycia z programem Microsoft R Open.
 
-1. [Zestaw narzędzi do odtworzenia R](https://mran.revolutionanalytics.com/rro/#reproducibility) gwarantuje, że bibliotek używanych do tworzenia programu R są zawsze dostępne dla innych użytkowników, których chcesz odtworzyć swoją pracę.
+1. [Odtwarzalny zestaw narzędzi języka r](https://mran.revolutionanalytics.com/rro/#reproducibility) zapewnia, że biblioteki użyte do skompilowania programu r są zawsze dostępne dla innych osób, które chcą odtworzyć swoją służbę.
 
-[Microsoft ML Server (MLS)](/machine-learning-server/what-is-machine-learning-server) jest rozszerzeniem języka R, umożliwiające obsługę większej ilości danych i szybciej go obsłużyć. Przekazuje R dwa zaawansowane możliwości:
+[Microsoft ml Server (MLS)](/machine-learning-server/what-is-machine-learning-server) to rozszerzenie języka R, które pozwala na obsługę większej ilości danych i szybsze obsłudze. Zapewnia to w języku R dwie zaawansowane możliwości:
 
-1. Większe zestawy danych bez ograniczeń pamięci RAM. ML Server może przetwarzać dane braku pamięci z różnych źródeł, w tym klastrów Hadoop, baz danych i magazyny danych.
+1. Większe zestawy danych bez ograniczeń pamięci RAM. ML Server może przetwarzać dane spoza pamięci z różnych źródeł, w tym klastrów Hadoop, baz danych i magazynów danych.
 
-1. Przetwarzanie równoległe, wielordzeniowych. MLS mogą efektywnie rozproszenia obliczeń wszystkich zasobów obliczeniowych jest dostępna. Na osobistych stacji roboczej lub w klastrze zdalnym MLS pobiera odpowiedź szybciej.
+1. Równoległe przetwarzanie wielordzeniowe. MLS może efektywnie dystrybuować obliczenia we wszystkich dostępnych zasobach obliczeniowych. Na osobistej stacji roboczej lub zdalnym klastrze MLS szybciej otrzymuje odpowiedź.
 
-Poniższe porównanie pokazuje, że MLS oraz MRO z MKL ma znacznie lepszą wydajność obliczeń związanych z niektórych obliczeń macierzy niż języków R i MRO bez MKL. W tych obliczeniach są używane symulowane dane:
+Poniższe porównanie pokazuje, że MLS i MRO z MKL mają znacznie lepszą wydajność obliczeniową związaną z pewnymi obliczeniami macierzy niż R i MRO bez MKL. W tym obliczaniu są używane symulowane dane:
 
-![Porównanie MLS i MRO z MKL r i MRO bez MKL](media/samples-speed-comparison.png)
+![Porównanie MLS i MRO z MKL do R i MRO bez MKL](media/samples-speed-comparison.png)
 
-Techniczne porównanie R MRO i MLS, zapoznaj się z [Lixun Zhang szczegółowe omówienie](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) tematu.
+Aby poznać techniczne porównanie R z MRO i MLS, zapoznaj się z informacjami na temat [szczegółowej dyskusji](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) na temat programu Lixun Zhang w temacie.
 
-Poniższa ilustracja następnie porównuje czas w sekundach stosowanego w budynku, modele regresji logistycznej do prognozowania opóźnień lotów więcej niż 15 minut.  Upłynęło czasu używany w języku R z sieci CRAN gwałtowny wzrost podczas zwiększenie niewielką liczbę wierszy, podczas gdy MLS zwiększa tylko przez około dwa razy. Aby uzyskać szczegółowe informacje o tym testów porównawczych, zapoznaj się *testy porównawcze/rxGlm_benchmark. R* przykład.
+Poniższy rysunek porównał czas w sekundach używany podczas tworzenia modeli regresji logistycznej w celu przewidywania opóźnień lotów dłuższych niż 15 minut.  Czas, który upłynął w CRAN R, rośnie znacznie podczas zwiększania niewielkiej liczby wierszy, podczas gdy MLS zwiększa się tylko o około dwa razy. Aby uzyskać szczegółowe informacje na temat tego testu porównawczego, zapoznaj się z wynikami *testów porównawczych/rxGlm_benchmark. Przykład R* .
 
-![Test porównawczy rxGlm](media/samples-rxGLM-benchmark.png)
+![wzorzec rxGlm](media/samples-rxGLM-benchmark.png)

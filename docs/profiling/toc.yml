@@ -30,6 +30,8 @@
       items:
         - name: Analizowanie użycia pamięci
           href: analyze-memory-usage.md
+        - name: Analizowanie użycia pamięci dla obiektów .NET
+          href: dotnet-alloc-tool.md
         - name: Niestandardowe zdarzenia ETW sterty natywnej
           href: custom-native-etw-heap-events.md
         - name: Użycie pamięci bez debugera
