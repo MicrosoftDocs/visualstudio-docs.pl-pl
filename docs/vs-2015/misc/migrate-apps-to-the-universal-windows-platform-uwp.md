@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60951091914474f07f19672799fb59c8b2d0aa56
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299481"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919142"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migracja aplikacji na platformę uniwersalną systemu Windows
 Wprowadź niezbędne zmiany ręczne do istniejących plików projektu dla aplikacji ze sklepu Windows 8,1, aplikacji Windows Phone 8,1 lub uniwersalnych aplikacji systemu Windows utworzonych przy użyciu programu Visual Studio 2015 RC, aby mogły być używane w programie Visual Studio 2015 RTM. (Jeśli masz aplikację uniwersalną Windows 8.1 z projektem aplikacji systemu Windows i projektem Windows Phone, musisz postępować zgodnie z instrukcjami, aby zmigrować każdy projekt).
@@ -691,7 +691,7 @@ Wprowadź niezbędne zmiany ręczne do istniejących plików projektu dla aplika
 
    ```
 
-8. Znajdź element \<Item >, który ma \<odwołanie > elementów podrzędnych do pakietów NuGet. Zwróć uwagę na pakiety NuGet, do których istnieją odwołania, ponieważ te informacje będą potrzebne do przyszłego kroku. Istotna różnica między formatem projektu systemu Windows 10 między programami Visual Studio 2015 RC i Visual Studio 2015 RTM polega na tym, że format RTM używa [NuGet](https://docs.microsoft.com/nuget/) w wersji 3.
+8. Znajdź element \<Item >, który ma \<odwołanie > elementów podrzędnych do pakietów NuGet. Zwróć uwagę na pakiety NuGet, do których istnieją odwołania, ponieważ te informacje będą potrzebne do przyszłego kroku. Istotna różnica między formatem projektu systemu Windows 10 między programami Visual Studio 2015 RC i Visual Studio 2015 RTM polega na tym, że format RTM używa [NuGet](/nuget/) w wersji 3.
 
     Usuń element \<Item > i jego wszystkie elementy podrzędne. Na przykład projekt platformy UWP utworzony za pomocą programu Visual Studio RC będzie miał następujące pakiety NuGet, które muszą zostać usunięte:
 
@@ -739,7 +739,7 @@ Wprowadź niezbędne zmiany ręczne do istniejących plików projektu dla aplika
 
     2. Zapisz zmiany.
 
-14. Za pomocą Menedżera NuGet Dodaj pakiety usunięte we wcześniejszym kroku. Istotna różnica między formatem projektu systemu Windows 10 między programami Visual Studio 2015 RC i Visual Studio 2015 RTM polega na tym, że format RTM używa [NuGet](https://docs.microsoft.com/nuget/) w wersji 3.
+14. Za pomocą Menedżera NuGet Dodaj pakiety usunięte we wcześniejszym kroku. Istotna różnica między formatem projektu systemu Windows 10 między programami Visual Studio 2015 RC i Visual Studio 2015 RTM polega na tym, że format RTM używa [NuGet](/nuget/) w wersji 3.
 
     Teraz można kod, skompilować i debugować aplikację.
 

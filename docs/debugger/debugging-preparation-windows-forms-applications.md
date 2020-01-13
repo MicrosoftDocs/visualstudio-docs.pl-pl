@@ -1,5 +1,5 @@
 ---
-title: Przygotowywanie do debugowania aplikacji Windows Forms | Microsoft Docs
+title: Przygotowywanie do debugowania aplikacji Windows Forms | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,47 +20,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff927e5b917834341e442afa00e4acad4af2d2f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738095"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916392"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: aplikacje Windows Forms
-Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest proste. Aby uzyskać więcej informacji, zobacz [Tworzenie projektu aplikacji systemu Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest bardzo proste. Aby uzyskać więcej informacji, zobacz [Tworzenie projektu aplikacji Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
- Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia. Te ustawienia można zmienić w oknie dialogowym **\<project nazwa > strony właściwości** (**mój projekt** w Visual Basic).
+ Po utworzeniu projektu Windows Forms przy użyciu szablonu projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia konfiguracji Debug i Release. Jeśli to konieczne, możesz zmienić te ustawienia. Te ustawienia można zmienić w programie  **\<Nazwa projektu > Właściwości strony** okno dialogowe (**mój projekt** w języku Visual Basic).
 
  Aby uzyskać więcej informacji, zobacz [zalecane ustawienia właściwości](../debugger/managed-debugging-recommended-property-settings.md).
 
- W poniższej tabeli przedstawiono jedno dodatkowe zalecane ustawienie właściwości.
+ Poniższa tabela zawiera jedno dodatkowe właściwości zalecane ustawienie.
 
-### <a name="configuration-properties-in-debug-tab"></a>Właściwości konfiguracji na karcie debugowanie
+### <a name="configuration-properties-in-debug-tab"></a>Właściwości konfiguracji na karcie debugowania
 
-|**Nazwa właściwości**|**Konfigurowania**|
+|**Nazwa właściwości**|**Ustawienie**|
 |-----------------------|-----------------|
-|**Uruchom akcję**|-Ustaw **, aby uruchomić projekt,** w większości czasu. Ustaw, aby **uruchomić program zewnętrzny** , jeśli chcesz uruchomić inny plik wykonywalny po rozpoczęciu debugowania (zwykle dla debugowania bibliotek DLL).|
+|**Akcja uruchamiania**|-Ustaw **spustit projekt** większość czasu. Ustaw **uruchomienia programu zewnętrznego** jeśli ma być uruchamiany z innego pliku wykonywalnego po rozpoczęciu debugowania (zwykle na potrzeby debugowania bibliotek DLL).|
 
- Można debugować Windows Forms aplikacje wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lub przez dołączenie do już uruchomionej aplikacji. Aby uzyskać więcej informacji na temat dołączania, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Można debugować aplikacje Windows Forms z wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], lub przez dołączenie do już uruchomionego aplikacji. Aby uzyskać więcej informacji na temat dołączania, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Aby debugować Windows Forms C#aplikacji F#, lub Visual Basic
+### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Aby debugować C#, F#, lub aplikacji Visual Basic Windows Forms
 
 1. Otwórz projekt w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-2. Utwórz punkty przerwania w razie konieczności.
+2. Utwórz punkty przerwania, zgodnie z potrzebami.
 
-    Ponieważ Windows Forms aplikacje są sterowane zdarzeniami, punkty przerwania przechodzą w kod procedury obsługi zdarzeń lub do metod wywoływanych przez kod programu obsługi zdarzeń. Typowe zdarzenia, w których należy umieścić punkty przerwania, to m.in.:
+    Ponieważ aplikacje Windows Forms są oparte na zdarzeniach, punktów przerwania przejdzie do kod procedury obsługi zdarzeń, lub metody wywoływane przez kod obsługi zdarzeń. Do typowych zdarzeń, w której chcesz umieścić punkty przerwania, obejmują:
 
-   1. Zdarzenia skojarzone z kontrolką, takie jak kliknięcie, wprowadzanie itd.
+   1. Zdarzenia związane z kontrolki, na przykład kliknij przycisk Enter, itp.
 
-   2. Zdarzenia skojarzone z uruchamianiem i zamykaniem aplikacji, takie jak ładowanie, aktywowane itd.
+   2. Zdarzenia związane z aplikacji uruchamiania i zamykania, takich jak obciążenia, aktywowano itp.
 
-   3. Zdarzenia fokusu i walidacji.
+   3. Fokus i zdarzenia sprawdzania poprawności.
 
-      Aby uzyskać więcej informacji, zobacz [Tworzenie programów obsługi zdarzeń w Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).
+      Aby uzyskać więcej informacji, zobacz [tworzenie obsługi zdarzeń w formularzach Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).
 
-3. W menu **debugowanie** kliknij przycisk **Uruchom**.
+3. Na **debugowania** menu, kliknij przycisk **Start**.
 
 4. Debuguj przy użyciu technik omówionych w [pierwszej kolejności w debugerze](../debugger/debugger-feature-tour.md).
 

@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586669"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916736"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools w programie Visual Studio
 
@@ -43,7 +43,7 @@ Poniżej przedstawiono określonych narzędziach, które tworzą Entity Framewor
 
 Narzędzia Generowanie lub modyfikowanie *edmx* pliku. To *edmx* plik zawiera informacje opisujące modelu koncepcyjnego, model magazynu i mapowania między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](/ef/ef6/).
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) pomagają Ci tworzyć aplikacje, które używają modelu Entity Data Model. Narzędzia zasilania można Generowanie modelu koncepcyjnego, sprawdzania poprawności istniejącego modelu, generuje pliki kodu źródłowego, które zawierają klas obiektów opartych na modelu koncepcyjnego i tworzenia plików kodu źródłowego, które zawierają widoki, które generuje modelu. Aby uzyskać szczegółowe informacje, zobacz [Pre-Generated mapowanie widoków](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) pomagają Ci tworzyć aplikacje, które używają modelu Entity Data Model. Narzędzia zasilania można Generowanie modelu koncepcyjnego, sprawdzania poprawności istniejącego modelu, generuje pliki kodu źródłowego, które zawierają klas obiektów opartych na modelu koncepcyjnego i tworzenia plików kodu źródłowego, które zawierają widoki, które generuje modelu. Aby uzyskać szczegółowe informacje, zobacz [Pre-Generated mapowanie widoków](/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 

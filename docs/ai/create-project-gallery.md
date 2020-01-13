@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f84051e4450926136064b9af7f3c09e2e91a2f9
-ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+ms.openlocfilehash: d5e73757e10eec5e7e8c290772822f49129fd1e5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188574"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915900"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Tworzenie projektu AI z Galerii Azure Machine Learning w programie Visual Studio
 
@@ -23,7 +23,7 @@ Azure Machine Learning jest zintegrowana z Visual Studio Tools for AI. Można je
 Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo utworzyć nowy projekt w języku Python przy użyciu wstępnych przepisów w galerii przykładów Azure Machine Learning.
 
 > [!NOTE]
-> Należy zainstalować Azure Machine Learning Workbench. Aby go zainstalować, zobacz [instalacja Azure Machine Learning — szybki start](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)
+> Należy zainstalować Azure Machine Learning Workbench. Aby go zainstalować, zobacz [instalacja Azure Machine Learning — szybki start](/azure/machine-learning/preview/quickstart-installation)
 
 1. Uruchom program Visual Studio. Otwórz **Eksplorator serwera** , otwierając menu **narzędzia AI** i wybierając **pozycję Wybierz klaster** .
 
@@ -31,7 +31,7 @@ Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo utw
 
 2. Zaloguj się do swojej subskrypcji Azure Machine Learning, klikając prawym przyciskiem myszy węzeł **Azure Machine Learning** w Eksplorator serwera następnie wybierz pozycję **Zaloguj** i postępuj zgodnie z instrukcjami.
 
-    ![identyfikatorów](media/create-project-gallery/azureml-login.png)
+    ![Nazwa logowania](media/create-project-gallery/azureml-login.png)
 
 3. Wybierz pozycję **narzędzia AI > Azure Machine Learning galerii przykładów**.
 

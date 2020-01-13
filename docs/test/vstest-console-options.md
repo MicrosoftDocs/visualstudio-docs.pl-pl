@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56e6fdb6d841f32a056fc77f4928b09d386e036
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886431"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919022"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opcje wiersza poleceń narzędzia VSTest.Console.exe
 
@@ -25,6 +25,8 @@ ms.locfileid: "75886431"
 > Adapter MSTest w programie Visual Studio działa również we starszej wersji (równoważnej uruchamianiu testów z *MSTest. exe*) w celu zapewnienia zgodności. W trybie starszym nie można korzystać z funkcji TestCaseFilter. Karta może przełączać się do trybu starszego, gdy jest określony plik *testsettings* , **forcelegacymode** jest ustawiona na **wartość true** w pliku *runsettings* lub przy użyciu atrybutów takich jak **HostType**.
 >
 > Aby uruchomić testy automatyczne na komputerze opartym na architekturze ARM, należy użyć *VSTest. Console. exe*.
+
+Otwórz [wiersz polecenia dla deweloperów](/dotnet/framework/tools/developer-command-prompt-for-vs) , aby użyć narzędzia wiersza polecenia, lub narzędzie można znaleźć w *pliku% Program Files (x86)% \ Microsoft Visual Studio\\< wersji\>\\< edition\>\Common7\ide\CommonExtensions\\< platformę | Microsoft >* .
 
 ## <a name="general-command-line-options"></a>Ogólne opcje wiersza polecenia
 

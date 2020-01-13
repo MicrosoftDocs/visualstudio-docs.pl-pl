@@ -1,5 +1,5 @@
 ---
-title: Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android | Dokumentacja firmy Microsoft
+title: Wymagania systemowe dla emulatora programu Visual Studio dla systemu Android | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815481"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916806"
 ---
-# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
+# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dla emulatora programu Visual Studio dla systemu Android
 
 Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-v, technologia wirtualizacji systemu Windows 8 i nowszych. Aby uruchomić emulator, komputer musi spełniać wymagania do uruchomienia funkcji Hyper-V, zgodnie z opisem w tym temacie.
 
@@ -26,7 +26,7 @@ Program instalacyjny próbuje dyskretnie konfigurowanie wymagań wstępnych dla 
 > [!IMPORTANT]
 > Program instalacyjny dla emulatora sprawdza wymagania wstępne dotyczące uruchamiania programu Visual Studio Emulator dla systemu Android. Wyświetla ostrzeżenia, jeśli wymagania wstępne nie są obecne, ale go nie wymaga.
 
-## <a name="Checklist"></a> Szybka lista kontrolna
+## <a name="Checklist"></a>Szybka lista kontrolna
 
 Poniżej przedstawiono listę kontrolną szybkiego wymagań dotyczących uruchamiania emulatora programu Visual Studio dla systemu Android. Aby uzyskać więcej szczegółowych informacji zobacz kolejnych sekcjach tego tematu.
 
@@ -83,7 +83,7 @@ Sieć musi spełniać następujące wymagania:
 
 - Automatycznie skonfigurowana DNS i ustawień bramy
 
-   Nie jest możliwe do skonfigurowania ustawień DNS i bramę ręcznie dla emulatora.
+   Nie można skonfigurować ustawień DNS i bramy ręcznie dla emulatora.
 
   Aby rozwiązać problemy z siecią w emulatorze, zobacz następujące tematy:
 
@@ -93,7 +93,7 @@ Sieć musi spełniać następujące wymagania:
 
 Wymagania funkcji Hyper-V w systemie BIOS
 
-System BIOS komputera musi obsługiwać następujące wymagania i należy je włączyć:
+System BIOS komputera musi obsługiwać poniższe wymagania i musi być włączony:
 
 - Wirtualizacja sprzętowa
 
@@ -107,7 +107,7 @@ Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane d
 
 |Wymaganie|Jak sprawdzić i włączyć to wymaganie|
 |-----------------|----------------------------------------------|
-|Musi być zainstalowana funkcja Hyper-V|Postępuj zgodnie z instrukcjami w tym samym umożliwia [Włączanie funkcji Hyper-V na emulator Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Sprawdź stan **zarządzania maszynami wirtualnymi funkcji Hyper-V** usługi w przystawce usługi.|
+|Musi być zainstalowana funkcja Hyper-V|Postępuj zgodnie z instrukcjami w tym samym umożliwia [Włączanie funkcji Hyper-V na emulator Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Sprawdź stan **zarządzania maszynami wirtualnymi funkcji Hyper-V** usługi w przystawce usługi.|
 |Musi być uruchomiona funkcja Hyper-V.|Aby uzyskać więcej informacji na temat zarządzania usługami zobacz następujące tematy:<br /><br /> -   [Uruchom, Zatrzymaj, Wstrzymaj, Wznów lub ponownego uruchomienia usługi](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Konfigurowanie sposobu uruchamiania usługi](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Musisz być członkiem lokalnej grupy Administratorzy funkcji Hyper-V.
@@ -119,16 +119,16 @@ Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane d
 > [!IMPORTANT]
 > Po dołączeniu do grupy, wyloguj się lub ponowne uruchomienie, aby zmiany zaczęły obowiązywać.
 
- ![Łączenie Hyper&#45;grupy zabezpieczeń Administratorzy V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Przyłączanie&#45;do grupy zabezpieczeń Administratorzy funkcji Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Aby samodzielnie ręcznie dodać do grupy, otwórz lokalni użytkownicy i grupy w przystawce.
 
-## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Uruchamianie emulatora z rozruchowego dysku VHD nie jest obsługiwana.
- W przypadku uruchamiania aplikacji w Visual Studio Emulator dla systemu Android, gdy używasz Windows rozruchowego dysku VHD emulator zazwyczaj trwa kilka minut, aby uruchomić lub nie została uruchomiona. Gdy emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: Wdrażanie aplikacji nie powiodło się. Spróbuj ponownie.
+## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Uruchamianie emulatora z rozruchowego dysku VHD nie jest obsługiwane
+ W przypadku uruchamiania aplikacji w Visual Studio Emulator dla systemu Android, gdy używasz Windows rozruchowego dysku VHD emulator zazwyczaj trwa kilka minut, aby uruchomić lub nie została uruchomiona. Jeśli emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: Wdrażanie aplikacji nie powiodło się. Spróbuj ponownie.
 
- Ta konfiguracja nie jest obsługiwana. Aby uzyskać informacji na temat problemów, zobacz [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
+ Ta konfiguracja nie jest obsługiwana. Aby uzyskać informacje dotyczące problemów pokrewnych, zobacz [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>Funkcji Hyper-V wymaga bez kompresji i szyfrowania plików
+## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>Funkcja Hyper-V wymaga nieskompresowanych i nieszyfrowanych plików
  Na dysku twardym skonfigurowane przy użyciu systemu plików NTFS pliki wirtualnych dysków twardych, używany przez funkcję Hyper-V muszą nieskompresowany i bez szyfrowania. Upewnij się, że nie skompresowane lub zaszyfrowane następujących katalogów:
 
 - %localappdata%\Microsoft\XDE
@@ -141,7 +141,7 @@ Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane d
 
 W systemie plików ReFS pliki wirtualnego dysku twardego nie może mieć zestaw integralności bit.
 
-## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Grafika sprzętu przekazywania wymagania (Obsługa OpenGL ES)
+## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Wymagania dotyczące sprzętowego przekazywania grafiki (Obsługa technologii OpenGL ES)
 
 Emulatora do emulowania wywołania do procesora GPU, takich jak używane przez OpenGL ES komputer musi mieć zgodną jednostkę GPU DirectX przy użyciu odpowiednich sterowników DirectX zainstalowane.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845286"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918917"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Zastąp`ClipboardCommandSet.ProcessOnMenuCopyCommand()` *MyDsl* w projekcie DslP
 Zastąp`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` *MyDsl* w projekcie DslPackage.
 
  **Zachowaj układ kształtu przez kopiowanie i wklejanie.**
-Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. 
 
  Aby osiągnąć ten efekt, Dodaj kształty i łączniki do skopiowanego ElementGroupPrototype. Najbardziej wygodną metodą przesłonięcia jest ElementOperations. CreateElementGroupPrototype (). Aby to zrobić, Dodaj następujący kod do projektu DSL:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Wklej kształty w wybranej lokalizacji, na przykład w bieżącym położeniu kursora.**
-Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania. Ta technika jest przedstawiona przez przykład na [VMSDK: diagramy obwodów](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Gdy użytkownik kopiuje wiele kształtów, można zachować ich względne położenie podczas wklejania.
 
  Aby osiągnąć ten efekt, Zastąp `ClipboardCommandSet.ProcessOnMenuPasteCommand()`, aby użyć wersji `ElementOperations.Merge()`specyficznej dla lokalizacji. Aby to zrobić, Dodaj następujący kod w projekcie DslPackage:
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Zobacz też
- [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md) [: Dodawanie obsługi przeciągania i upuszczania w celu](../modeling/how-to-add-a-drag-and-drop-handler.md) [dostosowania przykładowego zachowania usuwania](../modeling/customizing-deletion-behavior.md) [: diagramy obwodów VMSDK przykład](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Dostosowywanie tworzenia i przenoszenia elementów](../modeling/customizing-element-creation-and-movement.md) [: Dodawanie obsługi przeciągania i upuszczania w celu](../modeling/how-to-add-a-drag-and-drop-handler.md) [dostosowania zachowania usuwania](../modeling/customizing-deletion-behavior.md)
+ 

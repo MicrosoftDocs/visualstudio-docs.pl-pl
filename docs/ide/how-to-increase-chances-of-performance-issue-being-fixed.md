@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: bce4fa8c824b6a4f1332145c1383131eb6488b6c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847383"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918160"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
 
-Narzędzie "[Zgłoś problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania wielu problemów. Zespół programu Visual Studio plamuje trendy awarii i spowolnienia w zakresie opinii użytkowników i rozwiązuje problemy, które mają wpływ na rozległą Swath użytkowników. Im bardziej funkcjonalny jest konkretny bilet opinii, tym bardziej prawdopodobnie zostanie on zdiagnozowany i rozwiązany szybko przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania w zakresie zgłaszania problemów dotyczących awarii lub spowolnienia w celu zwiększenia możliwości podejmowania działań.
+Narzędzie "[Zgłoś problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania wielu problemów. Zespół programu Visual Studio plamuje trendy awarii i spowolnienia w zakresie opinii użytkowników i rozwiązuje problemy, które mają wpływ na rozległą Swath użytkowników. Im bardziej funkcjonalny jest konkretny bilet opinii, tym bardziej prawdopodobnie zostanie on zdiagnozowany i rozwiązany szybko przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania w zakresie zgłaszania problemów dotyczących awarii lub spowolnienia w celu zwiększenia możliwości podejmowania działań.
 
 ## <a name="general-best-practices"></a>Ogólne najlepsze praktyki
 
@@ -55,7 +55,7 @@ Bezpośrednie odtwarzalne awarie to przypadki, które mają wszystkie następuj�
 
 - Może być odtwarzany w przykładowym kodzie lub w projekcie, który może być połączony lub udostępniony jako część opinii (Jeśli kroki obejmują Otwieranie projektu lub dokumentu)
 
-Aby uzyskać te problemy, wykonaj kroki opisane w temacie "[Jak zgłosić problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i pamiętaj, aby uwzględnić następujące informacje:
+Aby uzyskać te problemy, wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i pamiętaj, aby uwzględnić następujące informacje:
 
 -   Kroki prowadzące do odtworzenia problemu
 
@@ -87,7 +87,7 @@ reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
 Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 ```
 
-Dostosuj liczbę zrzutów i folder zrzutów odpowiednio do potrzeb. Więcej informacji na temat tych ustawień znajduje się w [tym miejscu](https://docs.microsoft.com/windows/win32/wer/collecting-user-mode-dumps?redirectedfrom=MSDN).
+Dostosuj liczbę zrzutów i folder zrzutów odpowiednio do potrzeb. Więcej informacji na temat tych ustawień znajduje się w [tym miejscu](/windows/win32/wer/collecting-user-mode-dumps).
 
 > [!NOTE]
 > Zrzuty przechwycone przy użyciu Menedżera zadań mogą mieć nieprawidłową liczbę bitów, co sprawia, że są one mniej użyteczne. Opisana powyżej procedura jest preferowanym sposobem przechwytywania zrzutu sterty. Jeśli chcesz użyć Menedżera zadań, Zamknij ten, który jest aktualnie uruchomiony, uruchom Menedżera zadań 32-bitowe (% windir%\\syswow64\\polecenia taskmgr. exe) i zbierz z niego zrzut sterty.
@@ -103,7 +103,7 @@ Następnie użyj programu Visual Studio "Zgłoś problem..." ona. Umożliwi to d
 
 2.  Jeśli to możliwe, należy pliku zip (\*. zip), aby zmniejszyć jego rozmiar przed przesłaniem opinii
 
-3.  Wykonaj kroki opisane w temacie "[Jak zgłosić problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i Dołącz zrzut sterty do nowego elementu opinii.
+3.  Wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i Dołącz zrzut sterty do nowego elementu opinii.
 
 > [!NOTE] 
 > **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zrzut sterty przechwytywany w chwili awarii.
@@ -118,7 +118,7 @@ Zgodnie z opisem w odpowiedniej sekcji dotyczącej awarii, w przypadku problemó
 **Nieznana nieodpowiadający czas**
 
 Jeśli manifesty nieodpowiadające są w sposób nieprzewidywalny, w następnym wystąpieniu Uruchom nowe wystąpienie programu Visual Studio i Zgłoś problem z tego wystąpienia.
-Na [ekranie "rekord"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)upewnij się, że wybrano sesję programu Visual Studio, która nie odpowiada.
+Na [ekranie "rekord"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)upewnij się, że wybrano sesję programu Visual Studio, która nie odpowiada.
 
 Jeśli wystąpienie programu Visual Studio, które nie odpowiada, zostało uruchomione w trybie administratora, drugie wystąpienie należy również uruchomić w trybie administratora.
 
@@ -145,7 +145,7 @@ Aby uzyskać najlepsze wyniki przechwytywania wydajności, wykonaj następujące
 
 3.  W nowej kopii programu Visual Studio Otwórz narzędzie **Zgłoś problem**
 
-4.  Postępuj zgodnie z instrukcjami w temacie [Jak zgłosić problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) do momentu osiągnięcia kroku "Podaj ślad i zrzut sterty (opcjonalnie)".
+4.  Postępuj zgodnie z instrukcjami w temacie [Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) do momentu osiągnięcia kroku "Podaj ślad i zrzut sterty (opcjonalnie)".
 
 5.  Wybierz, aby zarejestrować pierwszą kopię programu Visual Studio (jeden napotkany problem z wydajnością) i Rozpocznij nagrywanie.
 
@@ -165,7 +165,7 @@ Aby uzyskać najlepsze wyniki przechwytywania wydajności, wykonaj następujące
 
 Podczas rejestrowania śladu wydajności, jeśli zbyt niska operacja lub wysoki procesor CPU jest na końcu, natychmiast zatrzymać nagranie. W przypadku zebrania zbyt dużej ilości informacji najstarsze informacje są zastępowane. Jeśli śledzenie nie zostanie wkrótce zatrzymane (w ciągu kilku sekund) po interesującej operacji, przydatne dane śledzenia zostaną nadpisywane.
 
-Nie dołączaj bezpośrednio śladów wydajności do istniejących elementów opinii w witrynie internetowej społeczności deweloperów. Żądanie/podanie dodatkowych informacji to obsługiwany przepływ pracy w wbudowanym raporcie programu Visual Studio — narzędzie problemu. Jeśli śledzenie wydajności jest wymagane, aby można było rozwiązać poprzedni element opinii, ustawimy stan elementu opinii na "potrzebne więcej informacji", co może być odpowiedziane w taki sam sposób jak Zgłaszanie nowego problemu. Aby uzyskać szczegółowe instrukcje, zapoznaj się z [sekcją "potrzebujesz więcej informacji"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) w dokumencie Zgłoś narzędzie problemu.
+Nie dołączaj bezpośrednio śladów wydajności do istniejących elementów opinii w witrynie internetowej społeczności deweloperów. Żądanie/podanie dodatkowych informacji to obsługiwany przepływ pracy w wbudowanym raporcie programu Visual Studio — narzędzie problemu. Jeśli śledzenie wydajności jest wymagane, aby można było rozwiązać poprzedni element opinii, ustawimy stan elementu opinii na "potrzebne więcej informacji", co może być odpowiedziane w taki sam sposób jak Zgłaszanie nowego problemu. Aby uzyskać szczegółowe instrukcje, zapoznaj się z [sekcją "potrzebujesz więcej informacji"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) w dokumencie Zgłoś narzędzie problemu.
 
 > [!NOTE] 
 > **Najbardziej cenna opinia:** W przypadku niemal wszystkich problemów z niską ilością zasobów procesora, najbardziej cenną opinią jest ogólny opis tego, co próbujesz zrobić, wraz z śladem wydajności (\*. etl. zip), który przechwytuje zachowanie w tym czasie.

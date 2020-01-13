@@ -10,12 +10,12 @@ ms.date: 03/18/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 0a07be18af7f38beb44ec18f04470bc739e0a0b6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: df0322b26768ad5d325fc0fd07585f805fc96825
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850019"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919151"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Informacje dotyczące różnych sposobów debugowania usługi w chmurze platformy Azure
 Ten artykuł zawiera linki do różnych sposobów debugowania usługi w chmurze platformy Azure. 
@@ -24,7 +24,7 @@ Ten artykuł zawiera linki do różnych sposobów debugowania usługi w chmurze 
 Możesz zaoszczędzić czas i pieniądze za pomocą usługi Azure compute emulatora do debugowania na maszynie lokalnej usługi w chmurze. Debugowanie usługi lokalnie przed przystąpieniem do wdrażania, może zwiększyć niezawodność i wydajność bez konieczności płacenia za czas obliczeń. Niektóre błędy mogą jednak wystąpić tylko w przypadku uruchomienia usługi w chmurze na platformie Azure. Błędy występujące tylko w przypadku uruchomienia usługi w chmurze na platformie Azure mogą być debugowane przez włączenie debugowania zdalnego podczas publikowania usługi, a następnie dołączenie debugera do wystąpienia roli. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na komputerze lokalnym](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-your-cloud-service-on-your-local-computer).
 
 ## <a name="using-intellitrace"></a>Używanie funkcji IntelliTrace 
-Jeśli używasz Visual Studio Enterprise do zapisywania ról przeznaczonych dla .NET Framework 4,5, możesz włączyć IntelliTrace w czasie wdrażania usługi w chmurze platformy Azure z poziomu programu Visual Studio. IntelliTrace zawiera dziennik, którego można użyć w programie Visual Studio do debugowania aplikacji tak, jakby była uruchomiona na platformie Azure. Aby uzyskać więcej informacji, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+Jeśli używasz Visual Studio Enterprise do zapisywania ról przeznaczonych dla .NET Framework 4,5, możesz włączyć IntelliTrace w czasie wdrażania usługi w chmurze platformy Azure z poziomu programu Visual Studio. IntelliTrace zawiera dziennik, którego można użyć w programie Visual Studio do debugowania aplikacji tak, jakby była uruchomiona na platformie Azure. Aby uzyskać więcej informacji, zobacz [debugowanie opublikowanej usługi w chmurze za pomocą IntelliTrace i programu Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 ## <a name="remote-debugging"></a>Debugowanie zdalne 
 Podczas wdrażania usługi w chmurze z poziomu programu Visual Studio można włączyć debugowanie zdalne w usługach w chmurze. W przypadku wybrania opcji włączenia debugowania zdalnego dla wdrożenia usługi zdalnego debugowania są instalowane na maszynach wirtualnych, na których działa każde wystąpienie roli. Te usługi, takie jak `msvsmon.exe` — nie wpływają na wydajność ani nie powodują dodatkowych kosztów. Aby uzyskać więcej informacji, zobacz [debugowanie usługi w chmurze na platformie Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure).

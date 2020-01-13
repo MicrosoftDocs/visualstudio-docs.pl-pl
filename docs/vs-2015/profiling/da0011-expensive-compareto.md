@@ -1,5 +1,5 @@
 ---
-title: 'DA0011: Kosztowna funkcja CompareTo | Dokumentacja firmy Microsoft'
+title: 'DA0011: drogie CompareTo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,31 +14,31 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ed433612498a6b7d4b87291311d7fd6efcb0974
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158647"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918385"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011: Kosztowna funkcja CompareTo
+# <a name="da0011-expensive-compareto"></a>DA0011: Expensive CompareTo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0011: Kosztowna funkcja CompareTo](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto).  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0011: kosztowne CompareTo](/visualstudio/profiling/da0011-expensive-compareto).  
   
 |||  
 |-|-|  
-|Identyfikator reguły|DA0011|  
-|Kategoria|Sposób użycia programu .NET framework|  
-|Metod profilowania|Próbkowania<br /><br /> Pamięć .NET|  
-|Message|Funkcje CompareTo powinny być tanie i nie przydzielić wszystkie pamięci. Mniejsza złożoność funkcji CompareTo, jeśli jest to możliwe.|  
+|Identyfikator zasady|DA0011|  
+|Kategoria|Użycie .NET Framework|  
+|Metody profilowania|Próbkowanie<br /><br /> Pamięć platformy .NET|  
+|Komunikat|Funkcje CompareTo powinny być tanie i nie mogą przydzielać żadnej pamięci. Zmniejsz złożoność funkcji CompareTo, jeśli jest to możliwe.|  
 |Typ reguły|Ostrzeżenie|  
   
 ## <a name="cause"></a>Przyczyna  
- CompareTo — metoda tego typu jest kosztowne lub przydziela pamięć.  
+ Metoda CompareTo typu jest kosztowna lub przydziela pamięć.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Metody CompareTo powinny być skuteczne i nie należy przydzielić pamięci.  
+ Metody CompareTo powinny być wydajne i nie powinny przydzielić pamięci.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
- Zmniejsz złożoność CompareTo — metoda.
+ Zmniejsz złożoność metody CompareTo.

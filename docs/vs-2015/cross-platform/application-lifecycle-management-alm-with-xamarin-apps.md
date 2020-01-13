@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1a0ea4f611c5312331fa0e2f2f467b4189778f30
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37c855f7940cbed847dcb7d5c6414be436cee993
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300031"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918371"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
   
  W poniższych tabelach przedstawiono funkcje programu Visual Studio ALM, które mogą być dobrze współdziałać z projektem Xamarin i które mają ograniczenia. Zapoznaj się z połączoną dokumentacją, aby uzyskać szczegółowe informacje na temat tych funkcji.  
   
-## <a name="agile-tools"></a>Narzędzia Agile  
+## <a name="agile-tools"></a>Narzędzia metodyki zwinnej  
  Link odwołania: **[pracy](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (przy użyciu Visual Studio Team Services lub TFS, w tym Team Explorer Everywhere)  
   
  Komentarz ogólny: wszystkie funkcje planowania i śledzenia są niezależne od typu projektu i języków kodowania.  
@@ -54,7 +54,7 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 |Projektant klas|Tak||  
 |Eksplorator architektury|Tak||  
 |Diagramy UML (przypadek użycia, działanie, Klasa, składnik, sekwencja i DSL)|Tak||  
-|Diagramy warstw|Tak||  
+|Diagramy warstwowe|Tak||  
 |Sprawdzanie poprawności warstwy|Tak||  
   
 ## <a name="code"></a>Kod  
@@ -67,12 +67,12 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 |[Znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md)|Tak|Poza granicami specyficznymi dla platformy, w których implementacja nie jest rozpoznawana do czasu uruchomienia.|  
 |[Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)|Tak||  
   
-## <a name="build"></a>Kompilacja  
+## <a name="build"></a>{1&gt;Kompilacja&lt;1}  
  Link odwołania:  **[kompilacja](/azure/devops/pipelines/index)**  
   
 |Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  
 |-------------|----------------------------|-------------------------|  
-|Lokalny serwer TFS|Tak|Maszyny kompilacji muszą mieć zainstalowany program Xamarin i mogą być połączone z komputerem OSX w celu kompilowania aplikacji dla systemu iOS. Zobacz [Konfigurowanie programu TFS dla platformy Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (witryna sieci Web platformy Xamarin)|  
+|Lokalny serwer TFS|Tak|Maszyny kompilacji muszą mieć zainstalowany program Xamarin i mogą być połączone z komputerem OSX w celu kompilowania aplikacji dla systemu iOS. Zobacz [Konfigurowanie programu TFS dla platformy Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (witryna sieci Web platformy Xamarin)|  
 |Lokalny serwer kompilacji połączony z Visual Studio Team Services|Tak|Aby uzyskać instrukcje, zobacz [serwer kompilacji](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) .|  
 |Usługa hostowanego kontrolera Visual Studio Team Services|Tak|Zobacz [Kompilowanie aplikacji platformy Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Kompiluj definicje ze skryptami wstępnymi i po skrypcie|Tak||  
@@ -86,8 +86,8 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 |Planowanie testów, tworzenie przypadków testowych i organizowanie zestawów testów|Tak||  
 |Testowanie ręczne|Tak||  
 |Test Manager (testy rejestrowania i odtwarzania)|Tak|Urządzenia z systemem Windows i emulatory systemu Android tylko z programu Visual Studio. Nagrywanie dla wszystkich urządzeń jest możliwe przy użyciu [rejestratora testów platformy Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
-|Pokrycie kodu|Nie dotyczy||  
-|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Tak|W przypadku urządzeń docelowych z systemami Windows i Android można używać wbudowanych narzędzi MSTest. Aby uruchomić testy jednostkowe w systemach Windows, Android i iOS, zalecamy NUnit. Zobacz [Konfigurowanie programu TFS dla platformy Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (witryna sieci Web platformy Xamarin).|  
+|Pokrycie kodu|n/d||  
+|[Testowanie jednostek kodu](../test/unit-test-your-code.md)|Tak|W przypadku urządzeń docelowych z systemami Windows i Android można używać wbudowanych narzędzi MSTest. Aby uruchomić testy jednostkowe w systemach Windows, Android i iOS, zalecamy NUnit. Zobacz [Konfigurowanie programu TFS dla platformy Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (witryna sieci Web platformy Xamarin).|  
 |[Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)|Tylko Windows|Rejestrator testu interfejsu użytkownika programu Visual Studio jest tylko w systemie Windows. Dla wszystkich platform zobacz [Xamarin test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Poprawianie jakości kodu  
@@ -98,10 +98,10 @@ Platforma Xamarin umożliwia tworzenie wieloplatformowych aplikacji mobilnych pr
 |[Analiza jakości zarządzanego kodu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Tak||  
 |[Znajdowanie duplikatu kodu przy użyciu funkcji wykrywania klonowania kodu](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Tak||  
 |[Mierzenie złożoności i poziomu łatwości konserwacji kodu zarządzanego](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Tak||  
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Zamiast tego użyj [Xamarin Profiler](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/) przez Xamarin Studio. Należy zauważyć, że Xamarin Profiler jest obecnie w wersji zapoznawczej i nie działa jeszcze w przypadku obiektów docelowych systemu Windows.|  
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|Nie|Zamiast tego użyj [Xamarin Profiler](/xamarin/cross-platform/deploy-test/) przez Xamarin Studio. Należy zauważyć, że Xamarin Profiler jest obecnie w wersji zapoznawczej i nie działa jeszcze w przypadku obiektów docelowych systemu Windows.|  
 |[Analizuj problemy związane z pamięcią .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Nie|Narzędzia Visual Studio Tools nie są podłączane do platformy mono na potrzeby profilowania.|  
   
-## <a name="release-management"></a>Program Release management  
+## <a name="release-management"></a>Release Management  
  Link odwołania:  **[Automatyzowanie wdrożeń przy użyciu Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Funkcja|Obsługiwane przez platformę Xamarin|Dodatkowe komentarze|  

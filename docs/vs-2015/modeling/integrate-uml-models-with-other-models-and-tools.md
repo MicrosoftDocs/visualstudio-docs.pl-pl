@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d7742c988e0193c8175621a08478b6225c8670
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850642"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918356"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrowanie modeli UML z innymi modelami i narzędziami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,11 @@ W elemencie UML można przechowywać linki do innych elementów UML, plików lub
 
    Aby uzyskać więcej informacji, zobacz [Definiowanie profilu do rozszerania UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   W przypadku przykładowego projektu, w którym profil jest wdrażany wraz z poleceniami menu i programami obsługi gestów, zobacz [przykład: profile UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
 - **Wołują.** Możesz dołączyć zestaw ciągów do dowolnego elementu UML. Można napisać kod przechowujący informacje, takie jak nazwa pliku lub identyfikator GUID innego elementu. Można to zrobić bez podawania dodatkowych definicji. Odwołania nie są bezpośrednio widoczne dla użytkownika.
 
-   Aby uzyskać więcej informacji, zobacz [dołączanie ciągów odwołania do elementów modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Aby uzyskać przykład, zobacz [łączenie elementów UML z diagramami lub innymi plikami](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
-  Istnieją dwa sposoby kodowania odwołań do elementów modelu:
+Istnieją dwa sposoby kodowania odwołań do elementów modelu:
 
 - **Identyfikator GUID i nazwa pliku** docelowego elementu modelu oraz model, który go zawiera, lub określony diagram, który go wyświetla.
-
-   Aby zapoznać się z przykładem, zobacz [łączenie elementów UML z diagramami lub innymi plikami](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 - **Odwołania ModelBus.** ModelBus to struktura służąca do tworzenia i rozwiązywania odwołań między modelami. Zawiera selektor ModelBus, który umożliwia użytkownikowi wybranie elementu w modelu. Pomaga również użytkownikowi w rozwiązywaniu odwołań, które zostały utracone ze względu na zmiany w modelu docelowym.
 
@@ -61,8 +55,6 @@ W elemencie UML można przechowywać linki do innych elementów UML, plików lub
 
 1. **Reguły VMSDK** mogą służyć do propagowania zmian w tym samym modelu.
 
-    Aby zapoznać się z przykładem, zobacz [łączenie elementów UML z diagramami lub innymi plikami](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
 2. **Zdarzenia VMSDK** mogą służyć do propagowania zmian poza modelem — na przykład w celu zmiany nazwy pliku połączonego dokumentu lub zmiany elementu w innym modelu.
 
    Aby uzyskać informacje o obu tych mechanizmach, zobacz [How to: reagować na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).
@@ -71,30 +63,5 @@ W elemencie UML można przechowywać linki do innych elementów UML, plików lub
 
    Aby uzyskać więcej informacji, zobacz [Definiowanie obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) i [instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>Przykłady
- Zobacz przykładowy kod [Połącz elementy UML z diagramami lub innymi plikami](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Przykład umożliwia użytkownikom przeciąganie pliku do dowolnego elementu UML, a następnie otwarcie pliku przez dwukrotne kliknięcie elementu. Można na przykład połączyć diagram aktywności z elementem przypadku użycia. Ikona pokazuje, które elementy mają linki.
-
- Ten przykładowy kod demonstruje następujące techniki:
-
-- [Dołączanie ciągów odwołania do elementów modelu UML](../modeling/attach-reference-strings-to-uml-model-elements.md)
-
-   Przykładowy kod przechowuje ścieżki plików i identyfikatory GUID elementów w ciągach odwołań, które są skojarzone z elementem.
-
-- Jak dodać dekoratory do elementów UML. Aby uzyskać ogólne informacje na temat dekoratory, zobacz [Dostosowywanie pól tekstowych i obrazów](../modeling/customizing-text-and-image-fields.md).
-
-   Przykład dodaje dekoratora obrazu do kształtów UML.
-
-- [Instrukcje: reagowanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)
-
-   W przykładzie pokazano, jak zdefiniować regułę, która reaguje na nowe kształty pojawiające się na diagramie.
-
-- [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-- [Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-   Przykład ilustruje sposób obsługi elementów przeciąganych z Eksploratora Windows (lub Eksploratora plików), Eksplorator rozwiązań i innych elementów UML.
-
-  Przykład, w którym model UML jest odczytywany przez DSL, zobacz [How to: Add a-and-drop Handler](../modeling/how-to-add-a-drag-and-drop-handler.md).
-
 ## <a name="see-also"></a>Zobacz też
- [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md) [jak: reagowanie na zmiany w przykładzie modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [: profile UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [łączą elementy UML z diagramami lub innymi plikami](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [Definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [instrukcje: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-to-add-a-drag-and-drop-handler.md) [jak: reagowanie na zmiany w modelu UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)

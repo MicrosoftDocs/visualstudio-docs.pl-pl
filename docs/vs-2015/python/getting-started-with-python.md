@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298195"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918778"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Aby dowiedzieć się więcej o języku, Zacznij od języka [Python dla początku
 
 Aby zainstalować język Python, odwiedź stronę [https://www.python.org/download/](https://www.python.org/download/).
 
-## <a name="python-tools-for-visual-studio"></a>Narzędzia języka Python dla programu Visual Studio
+## <a name="python-tools-for-visual-studio"></a>{1&gt;{2&gt;Python Tools for Visual Studio&lt;2}&lt;1}
   
 Python Tools for Visual Studio, którą można zainstalować z [VisualStudio.com](https://www.visualstudio.com/explore/python-vs), zapewniają następujące funkcje:  
   
@@ -60,7 +60,7 @@ Następujące zasoby pomogą Ci rozpocząć pracę:
 
 - [Przewodnik instalacji](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Krótkie wideo z wprowadzeniem i głębokim szczegółowe](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Demonstracja instalacji i funkcji (27 min)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- (Instalacja i funkcje wersji demonstracyjnej (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentacja](https://github.com/Microsoft/PTVS/wiki)  
 
 Należy pamiętać, że program Visual Studio nie udostępnia teraz metody tworzenia autonomicznego pliku wykonywalnego przy użyciu języka Python, który zasadniczo oznacza program z osadzonym interpreterem języka Python. Jednak w ramach społeczności języka Python istnieją różne metody, które zostały opisane w artykule [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython obsługuje również osadzanie w aplikacji natywnej, zgodnie z opisem w wpisie w blogu, [przy użyciu pliku zip](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)z możliwością osadzenia CPython.
@@ -73,13 +73,13 @@ Główną ofertą kompilowania interfejsu użytkownika przy użyciu języka Pyth
   
 Zestaw Azure SDK dla języka Python, który obsługuje systemy Windows, Mac i Linux, ułatwia korzystanie z usług Microsoft Azure i zarządzanie nimi. Aby uzyskać szczegółowe informacje, zobacz następujące zasoby: 
 
-- Aby zainstalować zestaw SDK, użyj [indeksu pakietu języka Python](https://pypi.python.org/pypi/azure) lub [Zainstaluj Język Python i zestaw SDK](https://docs.microsoft.com/azure/python/python-sdk-azure-install) w dokumentacji platformy Azure. 
+- Aby zainstalować zestaw SDK, użyj [indeksu pakietu języka Python](https://pypi.python.org/pypi/azure) lub [Zainstaluj Język Python i zestaw SDK](/azure/python/python-sdk-azure-install) w dokumentacji platformy Azure. 
 - [Zestaw Azure SDK dla Centrum deweloperów języka Python](https://azure.microsoft.com/develop/python/) zawiera wiele pomocy od instalacji do dokumentacji z samouczkami.  Poniżej przedstawiono niektóre najważniejsze elementy:  
 - Przewodniki z instrukcjami:
   - [Obiekt blob magazynu](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  
   - [Kolejka magazynu](https://azure.microsoft.com/develop/python/how-to-guides/queue-service/)  
   - [Tabela magazynu](https://azure.microsoft.com/develop/python/how-to-guides/table-service/)  
-  - [Kolejki Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
+  - [Kolejki usługi Service Bus](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-queues/)
   - [Tematy Service Bus/subskrypcje](https://azure.microsoft.com/develop/python/how-to-guides/service-bus-topics/) 
   - [Zarządzanie usługami](https://azure.microsoft.com/develop/python/how-to-guides/service-management/)  
 

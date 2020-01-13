@@ -6,12 +6,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 430c54527ad0a4647bb750c505942242688aaa17
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbdeeab49da1a63562bb9a4188a264a8d3d99da2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297720"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917048"
 ---
 # <a name="setup-and-install"></a>Instalator i instalacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,8 +97,8 @@ Jeśli masz problemy z używaniem platformy Xamarin po wykonaniu tej instalacji 
   
 2. Pobierz i zainstaluj Xcode z [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)i Dodaj identyfikator Apple ID zgodnie z opisem w temacie [Dodawanie konta do usługi Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (Apple.com).  
   
-3. Pobierz i zainstaluj platformę Xamarin, postępując zgodnie z instrukcjami dotyczącymi [instalowania i konfigurowania platformy Xamarin. iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (Xamarin.com).  
+3. Pobierz i zainstaluj platformę Xamarin, postępując zgodnie z instrukcjami dotyczącymi [instalowania i konfigurowania platformy Xamarin. iOS](/xamarin/ios/get-started/installation/mac) (Xamarin.com).  
   
-4. Po zakończeniu instalowania platformy Xamarin na komputerach z systemem Windows i komputerów Mac postępuj zgodnie z instrukcjami dotyczącymi [łączenia się z komputerem Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Xamarin.com), aby móc korzystać z systemu iOS i Mac z programu Visual Studio na komputerze z systemem Windows.  
+4. Po zakończeniu instalowania platformy Xamarin na komputerach z systemem Windows i komputerów Mac postępuj zgodnie z instrukcjami dotyczącymi [łączenia się z komputerem Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Xamarin.com), aby móc korzystać z systemu iOS i Mac z programu Visual Studio na komputerze z systemem Windows.  
   
      Należy pamiętać, że oba komputery muszą znajdować się w tej samej sieci lokalnej.

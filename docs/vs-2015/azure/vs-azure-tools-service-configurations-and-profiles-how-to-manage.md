@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849997"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917357"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
 ## <a name="overview"></a>Omówienie
@@ -80,7 +80,7 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
    
     Nowy profil zostanie wyświetlony na liście profil docelowy.
 6. Z listy **profil docelowy** wybierz właśnie utworzony profil. Ustawienia Kreatora publikacji są wypełniane przy użyciu opcji wybranych w wybranym profilu.
-7. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie dostosuj ustawienia dla tego profilu. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+7. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie dostosuj ustawienia dla tego profilu. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Po zakończeniu dostosowywania ustawień wybierz pozycję **dalej** , aby wrócić do strony ustawień. Profil jest zapisywany podczas publikowania usługi przy użyciu tych ustawień lub po wybraniu pozycji **Zapisz** obok listy profilów.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Aby zmienić nazwę profilu lub usunąć go
@@ -93,9 +93,9 @@ Po pierwszym uruchomieniu kreatora zostanie utworzony profil domyślny. Program 
 ### <a name="to-change-a-profile"></a>Aby zmienić profil
 1. Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz pozycję **Publikuj**.
 2. Z listy **profil docelowy** wybierz profil, który chcesz zmienić.
-3. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie zmień żądane ustawienia. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+3. Wybierz przyciski **poprzednie** i **następne** , aby wyświetlić każdą stronę Kreatora publikacji, a następnie zmień żądane ustawienia. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Po zmianie ustawień wybierz pozycję **dalej** , aby wrócić do strony **ustawień** .
 5. (Opcjonalnie) wybierz pozycję **Publikuj** , aby opublikować usługę w chmurze przy użyciu nowych ustawień. Jeśli nie chcesz publikować usługi w chmurze w tym momencie, a Kreator publikacji zostanie zamknięty, program Visual Studio wyświetli monit z pytaniem, czy chcesz zapisać zmiany w profilu.
 
 ## <a name="next-steps"></a>Następne kroki
-Aby dowiedzieć się więcej o konfigurowaniu innych części projektu platformy Azure z poziomu programu Visual Studio, zobacz [Konfigurowanie projektu platformy Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Aby dowiedzieć się więcej o konfigurowaniu innych części projektu platformy Azure z poziomu programu Visual Studio, zobacz [Konfigurowanie projektu platformy Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

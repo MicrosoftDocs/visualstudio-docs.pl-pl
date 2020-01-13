@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8c70b3c1b8282f87c8eb5aff5d8dde769c613d4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848567"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917384"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -75,7 +75,7 @@ Podczas tworzenia projektu z szablonu określonej platformy, aby zainstalować w
 
 Jeśli używasz kontroli źródła, zwykle pominięto folderu środowisko wirtualne zgodnie z tym środowisku można odtworzyć za pomocą tylko *requirements.txt*. Najlepszym sposobem, aby wykluczyć folder jest najpierw wybierz **I zainstaluje je samodzielnie** w wierszu powyżej, następnie wyłącz automatyczne zatwierdzenie przed utworzeniem środowiska wirtualnego. Aby uzyskać więcej informacji, zobacz [Dowiedz się, samouczek Django — kroki 1 – 2 i 1 – 3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) i [Dowiedz się, samouczek Flask — kroki 1 – 2 i 1 – 3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-W przypadku wdrażania w usłudze Microsoft Azure App Service, wybierz wersję języka Python jako [rozszerzenie witryny](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) i ręcznie zainstalować pakiety. Ponadto ponieważ usługi Azure App Service jest **nie** automatycznie zainstalować pakiety z *requirements.txt* podczas wdrażania w programie Visual Studio, wykonaj szczegóły konfiguracji [aka.ms/ PythonOnAppService](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019).
+W przypadku wdrażania w usłudze Microsoft Azure App Service, wybierz wersję języka Python jako [rozszerzenie witryny](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) i ręcznie zainstalować pakiety. Ponadto ponieważ usługi Azure App Service jest **nie** automatycznie zainstalować pakiety z *requirements.txt* podczas wdrażania w programie Visual Studio, wykonaj szczegóły konfiguracji [aka.ms/ PythonOnAppService](managing-python-on-azure-app-service.md).
 
 Microsoft Azure Cloud Services *jest* obsługuje *requirements.txt* pliku. Zobacz [projektów usług w chmurze Azure](python-azure-cloud-service-project-template.md) Aby uzyskać szczegółowe informacje.
 

@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072722"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916933"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
 
-Oprócz właściwości kontrolujących poszczególne projekty platformy Docker, opisanych we [właściwościach kompilacji narzędzi kontenera](container-msbuild-properties.md), można również dostosować sposób, w jaki program Visual Studio kompiluje projekty Docker Compose przez ustawienie właściwości Docker Compose, które MSBuild używa do kompilowania rozwiązania. Możesz również kontrolować sposób, w jaki debuger programu Visual Studio uruchamia Docker Compose aplikacje przez ustawienie etykiet plików w Docker Compose pliki konfiguracji.
+Oprócz właściwości kontrolujących poszczególne projekty platformy Docker, opisanych we [właściwościach kompilacji narzędzi kontenera](container-msbuild-properties.md), można również dostosować sposób, w jaki program Visual Studio kompiluje projekty Docker Compose przez ustawienie właściwości Docker Compose używanych przez MSBuild do kompilowania rozwiązania. Możesz również kontrolować sposób, w jaki debuger programu Visual Studio uruchamia Docker Compose aplikacje przez ustawienie etykiet plików w Docker Compose pliki konfiguracji.
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Jak ustawić właściwości programu MSBuild
 
@@ -29,20 +29,20 @@ Aby ustawić wartość właściwości, edytuj plik projektu. W przypadku właśc
 
 Możesz dodać ustawienie właściwości do istniejącego elementu `PropertyGroup` lub jeśli nie istnieje, Utwórz nowy element `PropertyGroup`.
 
-## <a name="docker-compose-msbuild-properties"></a>Docker Compose właściwości programu MSBuild
+## <a name="docker-compose-msbuild-properties"></a>Właściwości narzędzia Docker Compose w programie MSBuild
 
 W poniższej tabeli przedstawiono właściwości programu MSBuild dostępne dla projektów Docker Compose.
 
 | Nazwa właściwości | Lokalizacja | Opis | Wartość domyślna  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielanej średnikami do wysłania do Docker-Compose. exe dla wszystkich poleceń. Ścieżki względne z pliku projektu platformy Docker (dcproj) są dozwolone.|-|
+|AdditionalComposeFilePaths|dcproj|Określa dodatkowe pliki redagowania na liście rozdzielanej średnikami do wysłania do Docker-Compose. exe dla wszystkich poleceń. Ścieżki względne z pliku projektu platformy Docker (dcproj) są dozwolone.|-|
 |DockerComposeBaseFilePath|dcproj|Określa pierwszą część nazw plików w plikach do redagowania platformy Docker bez rozszerzenia *. yml* . Na przykład: <br>1. DockerComposeBaseFilePath = null/undefined: Użyj podstawowej ścieżki pliku *Docker-Zredaguj*, a pliki będą nazwane *Docker-Compose. yml* i *Docker-Compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: pliki będą nazwane *mydockercompose. yml* i *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: pliki będą mieć jeden poziom. |Docker-Compose|
 |DockerComposeBuildArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do polecenia `docker-compose build`. Na przykład:`--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do polecenia `docker-compose down`. Na przykład:`--timeout 500`|-|  
 |DockerComposeProjectPath|CSPROJ lub vbproj|Ścieżka względna do pliku platformy Docker-redagowanie projektu (dcproj). Ustaw tę właściwość podczas publikowania projektu usługi, aby znaleźć skojarzone ustawienia kompilacji obrazu przechowywane w pliku Docker-Compose. yml.|-|
 |DockerComposeUpArguments|dcproj|Określa dodatkowe parametry, które mają zostać przekazane do polecenia `docker-compose up`. Na przykład:`--timeout 500`|-|
 |DockerLaunchAction| dcproj | Określa akcję uruchamiania do wykonania na F5 lub CTRL + F5.  Dozwolone wartości to None, LaunchBrowser i LaunchWCFTestClient|Brak|
-|DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | False |
+|DockerLaunchBrowser| dcproj | Wskazuje, czy ma zostać uruchomiona przeglądarka. Ignorowany, jeśli określono DockerLaunchAction. | Fałsz |
 |DockerServiceName| dcproj|Jeśli określono DockerLaunchAction lub DockerLaunchBrowser, DockerServiceName jest nazwą usługi, która powinna zostać uruchomiona.  Użyj tej właściwości, aby określić, który z potencjalnie wielu projektów, do których może się odwoływać plik platformy Docker, zostanie uruchomiony.|-|
 |DockerServiceUrl| dcproj | Adres URL, który ma być używany podczas uruchamiania przeglądarki.  Prawidłowe tokeny zastępcze to "{serviceipaddress}", "{serviceport}" i "{Schema}".  Na przykład: {Schema}://{ServiceIPAddress}: {serviceport}|-|
 |DockerTargetOS| dcproj | Docelowy system operacyjny używany podczas kompilowania obrazu platformy Docker.|-|
@@ -92,7 +92,7 @@ services:
 
 ## <a name="docker-compose-file-labels"></a>Docker Compose etykiety plików
 
-Niektóre ustawienia można również przesłonić, umieszczając plik o nazwie *Docker-Compose. vs. Debug. yml* (dla konfiguracji **debugowania** ) lub *Docker-Compose. vs. release. yml* (dla konfiguracji **wydania** ) w tym samym katalogu, w którym znajduje *się plik Docker-Compose. yml* .  W tym pliku można określić następujące ustawienia:
+Niektóre ustawienia można również przesłonić, umieszczając plik o nazwie *Docker-Compose. vs. Debug. yml* (dla konfiguracji **debugowania** ) lub *Docker-Compose. vs. release. yml* (dla konfiguracji **wydania** ) w tym samym katalogu, w którym znajduje się plik *Docker-Compose. yml* .  W tym pliku można określić następujące ustawienia:
 
 ```yml
 services:

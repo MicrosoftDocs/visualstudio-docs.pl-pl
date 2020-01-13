@@ -11,26 +11,26 @@ ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: b1617ab8bd61857b29d78dc800ca70e26a7c8ff2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852269"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915612"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debugowanie opublikowanej usługi w chmurze platformy Azure za pomocą programu Visual Studio i funkcji IntelliTrace
 Po uruchomieniu na platformie Azure przy użyciu funkcji IntelliTrace, możesz rejestrować wyczerpujące informacje debugowania dla wystąpienia roli. Jeśli potrzebujesz znaleźć przyczynę problemu, można użyć dzienników IntelliTrace do kroku przez kod z programu Visual Studio, tak jakby były uruchamiane na platformie Azure. W efekcie funkcja IntelliTrace ma rejestrować klucza wykonywania kodu i środowisko danych aplikacji platformy Azure działa jako usługa w chmurze na platformie Azure, gdy pozwala odtwarzać zapisane dane z programu Visual Studio. 
 
 Można użyć funkcji IntelliTrace, jeśli masz program Visual Studio Enterprise i usługi Azure application obiektów docelowych programu .NET Framework 4 lub nowszej. IntelliTrace zbiera informacje dotyczące poszczególnych ról platformy Azure. Maszyny wirtualne dla tych ról są zawsze uruchamiane w 64-bitowych systemach operacyjnych.
 
-Alternatywnie, można użyć [zdalne debugowanie](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debugging-cloud-services-overview?view=vs-2019) można dołączyć bezpośrednio do usługi w chmurze, która działa na platformie Azure.
+Alternatywnie, można użyć [zdalne debugowanie](vs-azure-tools-debugging-cloud-services-overview.md) można dołączyć bezpośrednio do usługi w chmurze, która działa na platformie Azure.
 
 > [!IMPORTANT]
 > Funkcja IntelliTrace jest przeznaczona dla scenariuszy debugowania tylko, a nie powinny być używane w przypadku wdrożenia produkcyjnego.
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Konfigurowanie aplikacji platformy Azure dla funkcji IntelliTrace
-Aby włączyć funkcji IntelliTrace dla aplikacji platformy Azure, musi tworzenie i publikowanie aplikacji z projektu programu Visual Studio na platformie Azure. Należy skonfigurować IntelliTrace dla aplikacji systemu Azure, przed opublikowaniem jej na platformie Azure. Jeśli publikujesz aplikację bez konieczności konfigurowania funkcji IntelliTrace, musisz ponownie opublikować projekt. Aby uzyskać więcej informacji, zobacz [publikowania usługi Azure cloud services projektów przy użyciu programu Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
+Aby włączyć funkcji IntelliTrace dla aplikacji platformy Azure, musi tworzenie i publikowanie aplikacji z projektu programu Visual Studio na platformie Azure. Należy skonfigurować IntelliTrace dla aplikacji systemu Azure, przed opublikowaniem jej na platformie Azure. Jeśli publikujesz aplikację bez konieczności konfigurowania funkcji IntelliTrace, musisz ponownie opublikować projekt. Aby uzyskać więcej informacji, zobacz [publikowania usługi Azure cloud services projektów przy użyciu programu Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 1. Gdy wszystko jest gotowe do wdrożenia aplikacji platformy Azure, sprawdź, czy projekt jest ukierunkowany kompilacji są ustawione na **debugowania**.
 

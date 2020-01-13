@@ -22,17 +22,17 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b8c0a4269dcc2b7e647effb10432a984396f395d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847210"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918004"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu można znaleźć pod adresem [IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/intellitrace) .  
+Najnowszą wersję tego tematu można znaleźć pod adresem [IntelliTrace](/visualstudio/debugger/intellitrace) .  
   
 Możesz poświęcać mniej czasu na Debugowanie aplikacji, gdy używasz IntelliTrace do rejestrowania i śledzenia historii wykonywania kodu. Błędy można łatwo znaleźć, ponieważ IntelliTrace umożliwia:  
   

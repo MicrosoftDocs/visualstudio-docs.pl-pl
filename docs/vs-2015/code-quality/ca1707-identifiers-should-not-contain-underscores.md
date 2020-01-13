@@ -15,23 +15,23 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 526f0333cc4a233996c00576e3439bac4593c29f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669213"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919178"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identyfikatory nie powinny zawierać podkreśleń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1707: identyfikatory nie powinny zawierać podkreśleń](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1707: identyfikatory nie powinny zawierać podkreśleń](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Kategoria|Microsoft. nazewnictwo|
+|Kategoria|Microsoft.Naming|
 |Zmiana kluczowa|Przerywanie — gdy są wywoływane w zestawach<br /><br /> Rozdzielenie — gdy zostanie wywołane w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna

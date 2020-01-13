@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911753"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915955"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikowanie usługi w chmurze za pomocą programu Visual Studio
 
@@ -45,17 +45,17 @@ Po opublikowaniu aplikacji platformy Azure można wykonać jedną z następując
 
    b. W oknie dialogowym **pakowanie aplikacji platformy Azure** wybierz konfigurację usługi, dla której chcesz utworzyć pakiet, a następnie wybierz konfigurację kompilacji.
 
-   s. Obowiązkowe Aby włączyć Pulpit zdalny dla usługi w chmurze po jej opublikowaniu, wybierz pozycję **włącz pulpit zdalny dla wszystkich ról**, a następnie wybierz pozycję **Ustawienia** , aby skonfigurować pulpit zdalny poświadczenia. Aby uzyskać więcej informacji, zobacz [włączanie Podłączanie pulpitu zdalnego dla roli na platformie Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+   c. Obowiązkowe Aby włączyć Pulpit zdalny dla usługi w chmurze po jej opublikowaniu, wybierz pozycję **włącz pulpit zdalny dla wszystkich ról**, a następnie wybierz pozycję **Ustawienia** , aby skonfigurować pulpit zdalny poświadczenia. Aby uzyskać więcej informacji, zobacz [Włącz Podłączanie pulpitu zdalnego dla roli w usługach Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
       Jeśli chcesz debugować usługę w chmurze po jej opublikowaniu, Włącz debugowanie zdalne, wybierając opcję **Włącz debuger zdalny dla wszystkich ról**.
 
-   Wykres. Aby utworzyć pakiet, wybierz link **pakiet** .
+   d. Aby utworzyć pakiet, wybierz link **pakiet** .
 
       Eksplorator plików pokazuje lokalizację pliku nowo utworzonego pakietu. Możesz skopiować tę lokalizację, aby można było jej używać z poziomu Azure Portal.
 
-   Adres. Aby opublikować ten pakiet w środowisku wdrażania, należy użyć tej lokalizacji jako lokalizacji pakietu podczas tworzenia usługi w chmurze i wdrożyć ten pakiet w środowisku z Azure Portal.
+   e. Aby opublikować ten pakiet w środowisku wdrażania, należy użyć tej lokalizacji jako lokalizacji pakietu podczas tworzenia usługi w chmurze i wdrożyć ten pakiet w środowisku z Azure Portal.
 
-1. Obowiązkowe Aby anulować proces wdrażania, w menu skrótów dla elementu wiersza w dzienniku aktywności wybierz polecenie **Anuluj i Usuń**. To polecenie powoduje zatrzymanie procesu wdrażania i usunięcie środowiska wdrażania z platformy Azure. Aby usunąć środowisko po wdrożeniu, użyj Azure Portal.
+1. Obowiązkowe Aby anulować proces wdrażania, w menu skrótów dla elementu wiersza w dzienniku aktywności wybierz polecenie **Anuluj i Usuń**. To polecenie powoduje zatrzymanie procesu wdrażania i usuwa środowisko wdrażania na platformie Azure. Aby usunąć środowisko po wdrożeniu, użyj Azure Portal.
 
 1. Obowiązkowe Po rozpoczęciu wystąpień roli program Visual Studio automatycznie wyświetli środowisko wdrożenia w węźle **Cloud Services** w Eksplorator serwera. W tym miejscu można zobaczyć stan poszczególnych wystąpień ról. Zobacz [Zarządzanie zasobami platformy Azure za pomocą programu Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md). Na poniższej ilustracji przedstawiono wystąpienia roli, podczas gdy nadal są w stanie inicjowania:
 
@@ -90,7 +90,7 @@ W poniższej procedurze przyjęto założenie, że używasz kreatora **publikacj
     Usługa w chmurze jest publikowana. Utworzona maszyna wirtualna ma włączone połączenia zdalne dla usług IIS, dzięki czemu Web Deploy może służyć do aktualizowania ról sieci Web bez konieczności ich ponownego publikowania.
 
    > [!NOTE]
-   > Jeśli masz więcej niż jedno wystąpienie skonfigurowane dla roli sieci Web, zostanie wyświetlony komunikat ostrzegawczy z informacją o tym, że każda rola sieci Web jest ograniczona do jednego wystąpienia tylko w pakiecie utworzonym w celu opublikowania aplikacji. Wybierz **przycisk OK** , aby kontynuować. Zgodnie z opisem w sekcji wymagania można mieć więcej niż jedną rolę sieci Web, ale tylko jedno wystąpienie każdej roli.
+   > Jeśli masz więcej niż jedno wystąpienie skonfigurowane dla roli sieci Web, zostanie wyświetlony komunikat ostrzegawczy z informacją o tym, że każda rola sieci Web jest ograniczona do jednego wystąpienia tylko w pakiecie utworzonym w celu opublikowania aplikacji. Kliknij przycisk **OK**, aby kontynuować. Zgodnie z opisem w sekcji wymagania można mieć więcej niż jedną rolę sieci Web, ale tylko jedno wystąpienie każdej roli.
 
 ### <a name="update-your-web-role-by-using-web-deploy"></a>Aktualizowanie roli sieci Web przy użyciu Web Deploy
 
@@ -104,7 +104,7 @@ W poniższej procedurze przyjęto założenie, że używasz kreatora **publikacj
 
    b. W polu **hasło**wprowadź hasło.
 
-   s. Obowiązkowe Jeśli chcesz zapisać to hasło w tym profilu, wybierz pozycję **Zapisz hasło**.
+   c. Obowiązkowe Jeśli chcesz zapisać to hasło w tym profilu, wybierz pozycję **Zapisz hasło**.
 
 1. Aby opublikować zmiany w roli sieci Web, wybierz pozycję **Publikuj**.
 
@@ -120,7 +120,7 @@ W poniższej procedurze przyjęto założenie, że używasz kreatora **publikacj
 
    a. Aby nawiązać połączenie z maszyną wirtualną, na której działa rola sieci Web, wybierz wystąpienie roli sieci Web w programie **Cloud Explorer** lub **Eksplorator serwera**, a następnie wybierz polecenie **Połącz przy użyciu pulpit zdalny** . Aby uzyskać szczegółowe instrukcje dotyczące nawiązywania połączenia z maszyną wirtualną, zobacz [włączanie Podłączanie pulpitu zdalnego dla roli na platformie Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). W przeglądarce zostanie wyświetlony komunikat z prośbą o pobranie pliku `.rdp`.
 
-   b. Aby dodać certyfikat SSL, Otwórz usługę zarządzania w Menedżerze usług IIS. W Menedżerze usług IIS Włącz protokół SSL, otwierając link **powiązania** w okienku **Akcja** . Zostanie wyświetlone okno dialogowe **Dodawanie powiązania witryny** . Wybierz pozycję **Dodaj**, a następnie na liście rozwijanej **Typ** wybierz pozycję https. Z listy **certyfikat SSL** wybierz certyfikat SSL, który został podpisany przez urząd certyfikacji i przekazany do Azure Portal. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień połączenia dla usługi zarządzania](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Aby dodać certyfikat SSL, Otwórz usługę zarządzania w Menedżerze usług IIS. W Menedżerze usług IIS Włącz protokół SSL, otwierając link **powiązania** w okienku **Akcja** . Zostanie wyświetlone okno dialogowe **Dodawanie powiązania witryny** . Wybierz pozycję **Dodaj**, a następnie na liście rozwijanej **Typ** wybierz pozycję https. Z listy **certyfikat SSL** wybierz certyfikat SSL, który został podpisany przez urząd certyfikacji i przekazany do Azure Portal. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień połączenia dla usługi zarządzania](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > W przypadku dodania zaufanego certyfikatu SSL żółty trójkąt ostrzegawczy nie pojawia się już w **Kreatorze publikacji**.
@@ -133,8 +133,8 @@ Może być konieczne uwzględnienie określonych plików w pakiecie usługi, aby
 
    a. W **Eksplorator rozwiązań**Otwórz węzeł projektu dla projektu, w którym brakuje zestawu, którego dotyczy odwołanie.
    b. Aby dodać zestaw do projektu, otwórz menu skrótów dla folderu **References** , a następnie wybierz **Dodaj odwołanie**. Zostanie wyświetlone okno dialogowe Dodawanie odwołania.
-   s. Wybierz odwołanie, które chcesz dodać, a następnie wybierz przycisk **OK**. Odwołanie jest dodawane do listy w folderze **References** .
-   Wykres. Otwórz menu skrótów dla dodanego zestawu i wybierz polecenie **Właściwości**. Zostanie wyświetlone okno **Właściwości** .
+   c. Wybierz odwołanie, które chcesz dodać, a następnie wybierz przycisk **OK**. Odwołanie jest dodawane do listy w folderze **References** .
+   d. Otwórz menu skrótów dla dodanego zestawu i wybierz polecenie **Właściwości**. Zostanie wyświetlone okno **Właściwości** .
 
       Aby dołączyć ten zestaw do pakietu usługi, na **liście Kopiuj lokalne** wybierz **wartość PRAWDA**.
 1. W **Eksplorator rozwiązań** Otwórz węzeł projektu dla projektu, w którym brakuje zestawu, którego dotyczy odwołanie.

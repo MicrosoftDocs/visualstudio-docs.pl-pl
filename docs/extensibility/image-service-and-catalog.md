@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848917"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917614"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i wykaz
 Ten Cookbook zawiera wskazówki i najlepsze rozwiązania dotyczące wdrażania usługi obrazów programu Visual Studio i katalogu obrazów wprowadzonego w programie Visual Studio 2015.
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Zaktualizuj swój kod, aby użyć usługi Image Service do żądania monikery za pośrednictwem zaktualizowanego mapowania. (Może to oznaczać, że aktualizacja **CrispImages** dla kodu zarządzanego lub żądanie HBITMAPs lub HICONs z usługi obrazów i przekazanie ich na kod natywny).
 
 ## <a name="testing-your-images"></a>Testowanie obrazów
- Możesz użyć narzędzia Podgląd biblioteki obrazów do testowania manifestów obrazów, aby upewnić się, że wszystko jest poprawnie utworzone. Narzędzie można znaleźć w [zestawie SDK programu Visual Studio 2015](visual-studio-sdk.md). Dokumentacja tego narzędzia i innych można znaleźć [tutaj](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).
+ Możesz użyć narzędzia Podgląd biblioteki obrazów do testowania manifestów obrazów, aby upewnić się, że wszystko jest poprawnie utworzone. Narzędzie można znaleźć w [zestawie SDK programu Visual Studio 2015](visual-studio-sdk.md). Dokumentacja tego narzędzia i innych można znaleźć [tutaj](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

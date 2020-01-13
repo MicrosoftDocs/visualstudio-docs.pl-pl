@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850387"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919205"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (izolowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Izolowana powłoka programu Visual Studio umożliwia tworzenie autonomicznych ap
   
  Aby można było korzystać z odizolowanego projektu powłoki, należy zainstalować Visual Studio SDK. Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Aby utworzyć izolowaną aplikację powłoki, Zacznij od projektu programu Visual Studio Shell izolowanego. Ten projekt zawiera wszystko, czego potrzebujesz do opracowania i przetestowania własnej aplikacji powłoki izolowanej. Gdy wszystko jest gotowe do napisania programu instalacyjnego, który wdraża aplikację, należy uzyskać pakiet redystrybucyjny izolowanej powłoki z [Microsoft Visual Studio Shell (izolowany) pakietu redystrybucyjnego](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ Aby utworzyć izolowaną aplikację powłoki, Zacznij od projektu programu Visual Studio Shell izolowanego. Ten projekt zawiera wszystko, czego potrzebujesz do opracowania i przetestowania własnej aplikacji powłoki izolowanej. Gdy wszystko jest gotowe do napisania programu instalacyjnego, który wdraża aplikację, należy uzyskać pakiet redystrybucyjny izolowanej powłoki z [Microsoft Visual Studio Shell (izolowany) pakietu redystrybucyjnego](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
 > Przed uzyskaniem dostępu do pakietu redystrybucyjnego izolowanej powłoki zostanie wyświetlony monit o wypełnienie krótkiej ankiety klienta.  Po wypełnieniu ankiety nastąpi przekierowanie do strony Visual Studio Connect, zawierającej łącza pobierania pakietów redystrybucyjnych.  Linki do pobrania można znaleźć w kolejnych odwiedzinach w witrynie programu Visual Studio Connect w obszarze **programy &#124; Visual Studio 2015 Integrated i izolowana powłoka** .  

@@ -1,7 +1,7 @@
 ---
 title: Debugowanie w czasie projektowania | Dokumentacja firmy Microsoft
-ms.custom: seodec18
-ms.date: 11/21/2018
+ms.custom: ''
+ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,24 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901062"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916141"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie w czasie projektowania w programie Visual Studio (C#, C++, Visual Basic F#)
+# <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Debugowanie w czasie projektowania w programie Visual StudioC#( C++,/CLI, Visual Basic F#,)
 
 Debugowanie kodu w czasie projektowania, a nie podczas aplikacja jest uruchomiona, można użyć **bezpośrednie** okna.
 
-Aby debugować kod XAML związany z aplikacji przy użyciu projektanta XAML, takich jak kod powiązania danych, można użyć **debugowania** > **dołączyć do procesu**.
+Aby debugować kod XAML za aplikacją z projektanta XAML, takich jak scenariusze powiązań danych deklaratywnych, można użyć > **debugowania** **dołączania do procesu**.
 
 ## <a name="use-the-immediate-window"></a>Użyj okna bezpośredniego
 
 Możesz użyć programu Visual Studio **bezpośrednie** okna do wykonania funkcji lub podprocedury bez uruchamiania aplikacji. Jeśli funkcja lub podprocedura zawiera punkt przerwania, program Visual Studio spowoduje przerwanie w punkcie przerwania. Można następnie użyć okien debugera do sprawdzenia stanu programu. Ta funkcja jest nazywana *debugowanie w czasie projektowania*.
 
-Poniższy przykład jest w języku Visual Basic. Można również użyć **bezpośrednie** okna w czasie projektowania w C#, F#oraz aplikacje w języku C++.
+Poniższy przykład jest w języku Visual Basic. Możesz również użyć okna **bezpośredniego** w czasie projektowania w C#aplikacjach, F#i C++/CLI.
 
 1. Wklej następujący kod do pustej aplikacji konsoli języka Visual Basic:
 
@@ -75,35 +75,37 @@ Poniższy przykład jest w języku Visual Basic. Można również użyć **bezpo
 
 1. Aby wyczyścić zawartość **bezpośrednie** okna, kliknij prawym przyciskiem myszy w oknie i wybierz **Wyczyść wszystko**.
 
-## <a name="attach-to-an-app-from-the-xaml-designer"></a>Dołącz do aplikacji przy użyciu projektanta XAML
+## <a name="debug-a-custom-xaml-control-at-design-time-by-attaching-to-xaml-designer"></a>Debuguj niestandardową kontrolkę XAML w czasie projektowania przez dołączenie do projektanta XAML
 
-W niektórych scenariuszach powiązania dane deklaratywne może pomóc debugowania kodzie w Projektancie XAML.
+1. Otwórz rozwiązanie lub projekt w programie Visual Studio.
 
-1. W projekcie programu Visual Studio Dodaj nową stronę XAML, takich jak *temp.xaml*. Nowa strona XAML należy pozostawić pusty.
+1. Kompiluj rozwiązanie/projekt.
 
-1. Skompiluj rozwiązanie.
+1. Otwórz stronę XAML zawierającą kontrolkę niestandardową, którą chcesz debugować.
 
-1. Otwórz *temp.xaml*, który ładuje projektanta XAML *XDesProc.exe*, lub *UwpSurface.exe* w aplikacji platformy uniwersalnej systemu Windows.
+   W przypadku projektów platformy UWP przeznaczonych dla kompilacji systemu Windows 16299 lub nowszego ten krok spowoduje uruchomienie procesu *UwpSurface. exe* . W przypadku wersji WPF lub platformy UWP starszych niż kompilacja systemu Windows 16299 w tym kroku zostanie uruchomiony proces *XDesProc. exe* .
 
-1. Otwórz nowe wystąpienie programu Visual Studio. W nowym wystąpieniu wybierz **debugowania** > **dołączyć do procesu**.
+1. Otwórz drugie wystąpienie programu Visual Studio. Nie otwieraj rozwiązania lub projektu w drugim wystąpieniu.
 
-1. W **dołączyć do procesu** okno dialogowe, wybierz opcję projektanta proces z **dostępne procesy** listy.
+1. W drugim wystąpieniu programu Visual Studio Otwórz menu **Debuguj** i wybierz polecenie **Dołącz do procesu...** .
 
-   Dla platformy UWP projekty przeznaczone dla Windows kompilacji 16299 lub nowszego, proces projektanta *UwpSurface.exe*. WPF lub platforma UWP wersji wcześniejszych niż 16299, proces projektanta jest *XDesProc.exe*.
+1. W zależności od typu projektu (zobacz poprzednie kroki) wybierz z listy dostępnych procesów pozycję *UwpSurface. exe* lub proces *XDesProc. exe* .
 
-1. Upewnij się, że **dołączyć do** pole jest ustawione na wpisz poprawny kod dla używanej wersji platformy .NET, takich jak **kodu zarządzanego (CoreCLR)**.
+1. W polu **Dołącz do** w oknie dialogowym **Dołącz do procesu** wybierz odpowiedni typ kodu dla kontrolki niestandardowej, która ma być debugowana.
 
-1. Wybierz **dołączyć**.
+   Jeśli kontrolka niestandardowa została zapisywana w języku .NET, wybierz odpowiedni typ kodu platformy .NET, taki jak **Managed (CoreCLR)** . Jeśli kontrolka niestandardowa została zapisywana C++, wybierz opcję **natywny**.
 
-1. Gdy dołączony do procesu, przełącz się do innego wystąpienia programu Visual Studio, a następnie ustawić punkty przerwania, w którym chcesz debugować kod związany z Twojej aplikacji.
+1. Dołącz drugie wystąpienie programu Visual Studio, klikając przycisk **Dołącz** .
 
-   Na przykład można ustawić punkt przerwania w kodzie konwerter typu dla następujących XAML, który wiąże TextBlock w czasie projektowania.
+1. W drugim wystąpieniu programu Visual Studio Otwórz pliki kodu skojarzone z kontrolką niestandardową, którą chcesz debugować. Pamiętaj, aby po prostu otworzyć pliki, a nie całe rozwiązanie lub projekt.
 
-    ```xaml
-    <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
-    ```
+1. Umieść niezbędne punkty przerwania w poprzednio otwartych plikach.
 
-   Po załadowaniu strony zostanie osiągnięty punkt przerwania.
+1. W pierwszym wystąpieniu programu Visual Studio Zamknij stronę XAML zawierającą kontrolkę niestandardową, którą chcesz debugować (ta sama strona została otwarta w poprzednich krokach).
+
+1. W pierwszym wystąpieniu programu Visual Studio Otwórz stronę XAML zamkniętą w poprzednim kroku. Spowoduje to zatrzymanie debugera z pierwszego punktu przerwania ustawionego w drugim wystąpieniu programu Visual Studio.
+
+1. Debuguj kod w drugim wystąpieniu programu Visual Studio.
 
 ## <a name="see-also"></a>Zobacz także
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

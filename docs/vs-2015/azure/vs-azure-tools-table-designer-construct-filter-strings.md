@@ -11,16 +11,16 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: c76113f014d8be3bd706ef02ec1135a84cbcae82
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849956"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917603"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
-Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](https://msdn.microsoft.com/library/dd179355.aspx).
+Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w **Projektancie tabel**programu Visual Studio, należy utworzyć ciąg filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowana przez Usługi danych programu WCF i jest podobna do klauzuli SQL WHERE, ale jest wysyłana do Table service za pośrednictwem żądania HTTP. **Projektant tabel** obsługuje odpowiednie kodowanie, dlatego w celu filtrowania według żądanej wartości właściwości należy wprowadzić tylko nazwę właściwości, operator porównania, wartość kryteriów i opcjonalnie operator logiczny w polu filtru. Nie trzeba dołączać opcji zapytania $filter tak samo, jak w przypadku konstruowania adresu URL w celu zbadania tabeli za pośrednictwem [dokumentacji interfejsu API REST usług Storage](/rest/api/storageservices).
 
 Usługi danych programu WCF opierają się na [protokole Open Data Protocol](https://www.odata.org/) (OData). Aby uzyskać szczegółowe informacje na temat opcji filtrowania systemu kwerend ( **$Filter**), zobacz [specyfikację identyfikatorów URI usługi OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
@@ -43,7 +43,7 @@ Podczas konstruowania ciągu filtru ważne są następujące reguły:
 
 * Operatory logiczne służą do porównywania właściwości z wartością. Należy pamiętać, że nie można porównać właściwości z wartością dynamiczną; jedna ze stron wyrażenia musi być stałą.
 * We wszystkich częściach ciągu filtru jest rozróżniana wielkość liter.
-* Wartość stała musi mieć ten sam typ danych co właściwość, aby filtr zwracał prawidłowe wyniki. Aby uzyskać szczegółowe informacje na temat obsługiwanych typów właściwości, zobacz [Omówienie modelu danych usługi Table service](https://msdn.microsoft.com/library/dd179338.aspx).
+* Wartość stała musi mieć ten sam typ danych co właściwość, aby filtr zwracał prawidłowe wyniki. Aby uzyskać szczegółowe informacje na temat obsługiwanych typów właściwości, zobacz [Omówienie modelu danych usługi Table service](/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 ## <a name="filtering-on-string-properties"></a>Filtrowanie właściwości ciągu
 W przypadku filtrowania według właściwości ciągu ujmij ciąg w znaki pojedynczego cudzysłowu.
@@ -103,7 +103,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrowanie właściwości DateTime
-Aby odfiltrować wartość daty i godziny, określ słowo kluczowe **DateTime** , po którym następuje stała Data/godzina w pojedynczym cudzysłowie. Stała Data/godzina musi być w formacie połączonym UTC, zgodnie z opisem w temacie [Formatowanie wartości właściwości DateTime](https://msdn.microsoft.com/library/azure/dd894027.aspx).
+Aby odfiltrować wartość daty i godziny, określ słowo kluczowe **DateTime** , po którym następuje stała Data/godzina w pojedynczym cudzysłowie. Stała Data/godzina musi być w formacie połączonym UTC, zgodnie z opisem w temacie [Formatowanie wartości właściwości DateTime](/rest/api/storageservices/Formatting-DateTime-Property-Values).
 
 Poniższy przykład zwraca jednostki, w których właściwość CustomerSince jest równa 10 lipca 2008:
 

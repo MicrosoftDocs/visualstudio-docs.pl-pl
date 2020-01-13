@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846734"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916479"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalowanie środowiska opracowywania aplikacji mobilnych na wiele platform w języku C++
 
@@ -98,7 +98,7 @@ Jeśli użytkownik zdecyduje się nie instalować co najmniej jednej zależnośc
 
 Możesz ponownie uruchomić aplikację Menedżer zestawów SDK w katalogu Android SDK, aby zaktualizować zestaw SDK i zainstalować opcjonalne narzędzia i dodatkowe poziomy interfejsu API. Instalacja aktualizacji może się nie powieść, jeśli nie zostanie użyta funkcja **Uruchom jako administrator** do uruchomienia aplikacji Menedżera zestawów SDK. Jeśli masz problemy z tworzeniem aplikacji dla systemu Android, zapoznaj się z menedżerem zestawu SDK, aby uzyskać aktualizacje zainstalowanych zestawów SDK.
 
-Aby korzystać z niektórych emulatorów systemu Android, które są dostarczane z Android SDK, może być konieczne skonfigurowanie przyspieszania sprzętowego. Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe dla wydajności emulatora (Hyper-V & HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+Aby korzystać z niektórych emulatorów systemu Android, które są dostarczane z Android SDK, może być konieczne skonfigurowanie przyspieszania sprzętowego. Aby uzyskać więcej informacji, zobacz [przyspieszanie sprzętowe dla wydajności emulatora (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 W większości przypadków program Visual Studio może wykryć konfiguracje zainstalowanego oprogramowania innej firmy i zachować ścieżki instalacyjne w wewnętrznych zmiennych środowiskowych. Można zastąpić domyślne ścieżki tych narzędzi programistycznych dla wielu platform w środowisku IDE programu Visual Studio.
 

@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851893"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915603"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testowanie wydajności usługi w chmurze
 ## <a name="overview"></a>Omówienie
 Należy przetestować wydajność usługi w chmurze, w następujący sposób:
 
-* Zbieranie informacji na temat połączeń i żądań i przejrzyj statystyki witryny, które pokazują, jak działa usługa z perspektywy klienta, należy użyć usługi Azure Diagnostics. Aby rozpocząć, zobacz [Konfigurowanie diagnostyki dla usług Azure Cloud Services i Virtual Machines](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019).
+* Zbieranie informacji na temat połączeń i żądań i przejrzyj statystyki witryny, które pokazują, jak działa usługa z perspektywy klienta, należy użyć usługi Azure Diagnostics. Aby rozpocząć, zobacz [Konfigurowanie diagnostyki dla usług Azure Cloud Services i Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 * Użyj programu Visual Studio profiler, aby uzyskać szczegółowe analizy obliczeniowe aspektami działania usługi. Zgodnie z opisem w tym temacie, można użyć programu profilującego do pomiaru wydajności, ponieważ usługa działa na platformie Azure. Aby uzyskać informacje o sposobie używania programu profilującego do pomiaru wydajności, ponieważ usługa jest uruchamiany lokalnie w emulatorze obliczeń, zobacz [testowanie wydajności usługi Azure Cloud Service lokalnie na obliczenia Emulator za pomocą Profiler usługi Visual Studio](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Wybieranie metody testowania wydajnościowego
@@ -84,7 +84,7 @@ Na poniższej ilustracji pokazano, jak skonfigurować ustawienia profilowania w 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Aby skonfigurować ustawienia profilowania
-1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz **Publikuj**. Aby uzyskać szczegółowe instrukcje dotyczące publikowania usługi w chmurze, zobacz [publikowania usługi w chmurze przy użyciu narzędzi Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
+1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu platformy Azure, a następnie wybierz **Publikuj**. Aby uzyskać szczegółowe instrukcje dotyczące publikowania usługi w chmurze, zobacz [publikowania usługi w chmurze przy użyciu narzędzi Azure](vs-azure-tools-publishing-a-cloud-service.md).
 2. W **publikowanie aplikacji platformy Azure** okno dialogowe, wybierz **Zaawansowane ustawienia** kartę.
 3. Aby włączyć profilowanie, zaznacz **Włącz profilowanie** pole wyboru.
 4. Aby skonfigurować ustawienia profilowania, wybierz **ustawienia** hiperłącze. Zostanie wyświetlone okno dialogowe Ustawienia profilowania.

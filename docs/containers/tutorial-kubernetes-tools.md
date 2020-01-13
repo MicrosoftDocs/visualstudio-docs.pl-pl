@@ -8,18 +8,18 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 7556bf2e8568b8685cb92209bb1ae6bbfb3d211e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847096"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916952"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Wprowadzenie do narzędzi Visual Studio Kubernetes Tools
 
 Narzędzia Kubernetes programu Visual Studio pomagają usprawnić opracowywanie aplikacji kontenerowych ukierunkowanych na Kubernetes. Program Visual Studio może automatycznie tworzyć pliki konfiguracji jako kod, które są konieczne do obsługi wdrażania Kubernetes, takie jak wykresy wieloetapowe dockerfile i Helm. Możesz debugować kod w klastrze usługi Azure Kubernetes Service (AKS) przy użyciu Azure Dev Spaces lub publikować bezpośrednio w klastrze AKS z poziomu programu Visual Studio.
 
-Ten samouczek obejmuje użycie programu Visual Studio w celu dodania obsługi Kubernetes do projektu i opublikowania w AKS. Jeśli zamierzasz głównie używać [Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) do debugowania i testowania projektu działającego w AKS, możesz przejść do [samouczka Azure dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio) .
+Ten samouczek obejmuje użycie programu Visual Studio w celu dodania obsługi Kubernetes do projektu i opublikowania w AKS. Jeśli zamierzasz głównie używać [Azure dev Spaces](/azure/dev-spaces/) do debugowania i testowania projektu działającego w AKS, możesz przejść do [samouczka Azure dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio) .
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -121,13 +121,13 @@ Dodane pliki to:
 
 - Wykres Helm i folder *wykresów* . Te pliki YAML tworzą wykres Helm dla aplikacji, którego można użyć do wdrożenia jej w usłudze Kubernetes. Aby uzyskać więcej informacji na temat Helm, zobacz [https://www.helm.sh](https://www.helm.sh).
 
-- *azds.yaml*. Zawiera ustawienia Azure Dev Spaces, które zapewniają szybkie i iteracyjne środowisko debugowania w usłudze Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [dokumentację Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
+- *azds.yaml*. Zawiera ustawienia Azure Dev Spaces, które zapewniają szybkie i iteracyjne środowisko debugowania w usłudze Azure Kubernetes Service. Aby uzyskać więcej informacji, zobacz [dokumentację Azure dev Spaces](/azure/dev-spaces/azure-dev-spaces).
 
 ::: moniker range="vs-2017"
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publikowanie w usłudze Azure Kubernetes Service (AKS)
 
-W przypadku wszystkich tych plików można użyć środowiska IDE programu Visual Studio do pisania i debugowania kodu aplikacji, tak jak zawsze. Możesz również użyć [Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) , aby szybko uruchomić i debugować swój kod działający w klastrze AKS. Aby uzyskać więcej informacji, zapoznaj się z [samouczkiem Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+W przypadku wszystkich tych plików można użyć środowiska IDE programu Visual Studio do pisania i debugowania kodu aplikacji, tak jak zawsze. Możesz również użyć [Azure dev Spaces](/azure/dev-spaces/) , aby szybko uruchomić i debugować swój kod działający w klastrze AKS. Aby uzyskać więcej informacji, zapoznaj się z [samouczkiem Azure dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio)
 
 Gdy Twój kod będzie działać zgodnie z oczekiwaniami, możesz publikować bezpośrednio z programu Visual Studio do klastra AKS.
 
@@ -171,4 +171,4 @@ Gratulacje! Możesz teraz używać pełnych możliwości programu Visual Studio 
 
 Dowiedz się więcej o programowaniu Kubernetes na platformie Azure, odczytując [dokumentację AKS](/azure/aks).
 
-Dowiedz się więcej na temat Azure Dev Spaces, odczytując [dokumentację Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/)
+Dowiedz się więcej na temat Azure Dev Spaces, odczytując [dokumentację Azure dev Spaces](/azure/dev-spaces/)

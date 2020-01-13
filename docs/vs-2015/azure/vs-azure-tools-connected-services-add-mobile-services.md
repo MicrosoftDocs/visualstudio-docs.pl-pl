@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 83f908876b2e0de774443084d830f20d121e33d0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0a8f6fab3c8f30834a467e2ad98843b16a9245b4
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844848"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916708"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Dodawanie usługi Mobile Services za pomocą programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio 2015, możesz nawiązać połączenie przy użyciu usług Azure Mobile Services **Dodaj podłączoną usługę** okna dialogowego. Możesz połączyć się z dowolnej aplikacji klienckiej języka C#, dowolnej aplikacji JavaScript lub aplikacji Cordova dla wielu platform. Po nawiązaniu połączenia, można utworzyć i uzyskać dostęp do danych, tworzenie niestandardowych interfejsów API i zaplanowane zadania lub dodawać obsługę powiadomień wypychanych.  Operacja usług połączonych dodaje wszystkie odpowiednie odwołania i kod połączenia. Możesz również korzystać z zalet wbudowanej obsługi uwierzytelniania przy użyciu różnych popularnych schematów tożsamości, takiego jak Azure AD, Facebook, Twitter i Accounts firmy Microsoft.
@@ -63,9 +63,6 @@ Nawiązać połączenia z usług Azure Mobile Services w poniższych typów proj
    5. Nowej usługi mobilnej powinny pojawić się na liście usług na **usług Azure Mobile Services** okno dialogowe. Wybierz nowej usługi mobilnej na liście, a następnie wybierz **Dodaj** przycisk, aby dodać usługę do projektu.
 5. Przejrzyj pobierania z wyświetloną stronę wprowadzenia i Dowiedz się, jak Twój projekt został zmodyfikowany. Strona wprowadzenie jest wyświetlana w przeglądarce, po każdym dodaniu usługi połączonej. Możesz przejrzeć proponowane następne kroki i przykłady kodu lub przejdź do strony co się stało, aby zobaczyć, jakie odwołania zostały dodane do projektu, i jak zostały zmodyfikowane pliki kodu i konfiguracji.
 6. Używając przykładów kodu jako wskazówki, zacznij pisanie kodu w celu uzyskania dostępu do usługi mobilnej!
-
-## <a name="how-your-project-is-modified"></a>Jak jest modyfikowana projektu
-Jak program Visual Studio modyfikuje projekt zależy od typu projektu. Dla języka C# w aplikacjach klienckich, zobacz [co się stało — projekty języka C#](https://docs.microsoft.com/azure/). Dla aplikacji klienckich dla języka JavaScript, zobacz [co się stało — projekty języka JavaScript](https://docs.microsoft.com/azure/). W przypadku aplikacji Cordova zobacz [co się stało — projektów Cordova](https://docs.microsoft.com/azure/).
 
 ## <a name="next-steps"></a>Następne kroki
 Zadawanie pytań i uzyskiwanie pomocy:

@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844912"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918271"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
 |Elementy na diagramie klasy koncepcyjnej|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|
 |Jak opracowywać kod z klas koncepcyjnych|[Modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md)|
 
- Na diagramie klasy koncepcyjnej zazwyczaj nie jest przydatne umieszczenie strzałek na skojarzeniach, aby reprezentować kierunek nawigacji. Dzieje się tak, ponieważ diagram nie reprezentuje implementacji. Skojarzenia reprezentują relacje między obiektami rzeczywistymi. Następujące [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzają strzałki niekierunkowe domyślnie: [przykład: funkcje modelowania domeny UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+ Na diagramie klasy koncepcyjnej zazwyczaj nie jest przydatne umieszczenie strzałek na skojarzeniach, aby reprezentować kierunek nawigacji. Dzieje się tak, ponieważ diagram nie reprezentuje implementacji. Skojarzenia reprezentują relacje między obiektami rzeczywistymi.
 
 ## <a name="BusinessRules"></a>Wyświetlanie reguł firmy
  Reguła biznesowa jest wymagana, która nie jest skojarzona z konkretnym przypadkiem użycia i powinna być zastosowana w całym systemie.
@@ -239,4 +239,4 @@ Program Visual Studio pomaga zrozumieć, omówić i komunikować się z potrzeba
   Sprawdzając relacje między widokami, które udostępniają różne diagramy, możesz szybko zrozumieć główne koncepcje, z którymi pracują użytkownicy, i pomóc im zrozumieć, czego potrzebują z systemu. Możesz również lepiej zrozumieć, jakie wymagania uczestnicy projektu są na nich określone. Można zaplanować tworzenie tych funkcji, co najmniej w uproszczonej formie, na wczesnym etapie projektu, dzięki czemu użytkownicy mogą eksperymentować z nimi.
 
 ## <a name="see-also"></a>Zobacz też
- [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie testów z modelu korzystanie z](../modeling/develop-tests-from-a-model.md) [modeli w modelu procesów PROGRAMISTYCZNych](../modeling/use-models-in-your-development-process.md) [](../modeling/model-your-app-s-architecture.md) [PRZYKŁADowa aplikacja VS Extension: funkcje modelowania domeny UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) przykład [rozszerzenia vs: Koloruj elementy UML według](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [przykładowego rozszerzenia programu vs: Dołączanie elementów UML do diagramów, plików i innych elementów](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [przykładowe rozszerzenie programu vs Extension: wyrównywanie kształtów na diagramie UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [: Modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md) [Tworzenie testów z modelu](../modeling/develop-tests-from-a-model.md) [Używanie modeli w modelu procesów programistycznych](../modeling/use-models-in-your-development-process.md) film wideo dotyczący [architektury aplikacji](../modeling/model-your-app-s-architecture.md) [: Modelowanie domeny biznesowej](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

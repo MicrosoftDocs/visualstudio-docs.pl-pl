@@ -1,7 +1,7 @@
 ---
-title: Prześlij zadanie uczenia modelu w usłudze Azure Batch AI
-description: uczenie modelu chmury
-keywords: sztuczna inteligencja, program visual studio, train model chmury
+title: Prześlij zadanie do uczenia modelu w Azure Batch AI
+description: uczenie modelu w chmurze
+keywords: AI, Visual Studio, model uczenia, Chmura
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -9,51 +9,51 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f69d978f7257398e1518828cd0bbe7ed1ff0e66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dec70c9e9aeb9c916b511241a74b550354aff175
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563886"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915773"
 ---
-# <a name="train-ai-models-in-azure-batch-ai"></a>Trenowanie modeli sztucznej Inteligencji w usłudze Azure Batch AI
+# <a name="train-ai-models-in-azure-batch-ai"></a>Uczenie modeli AI w Azure Batch AI
 
-Usługa Batch AI to zarządzana usługa, która umożliwia analitykom danych i badaczom SI trenowanie SI i innych modeli uczenia maszynowego w klastrach maszyn wirtualnych platformy Azure, łącznie z maszynami wirtualnymi z obsługą procesorów GPU. Opisuje wymagania dotyczące zadania, aby znaleźć dane wejściowe i przechowywania danych wyjściowych, a usługa Batch AI obsługuje pozostałe. [Dowiedz się więcej na temat usługi Azure Batch AI](https://docs.microsoft.com/azure/batch-ai/overview)
+Batch AI to zarządzana usługa umożliwiająca analitykom danych i badaczom SI trenowanie SI i innych modeli uczenia maszynowego w klastrach maszyn wirtualnych platformy Azure łącznie z maszynami wirtualnymi i wsparciem procesora GPU. Użytkownik opisuje wymagania dotyczące zadania, miejsce wyszukiwania danych wejściowych oraz miejsce przechowywania danych wyjściowych, a usługa Batch AI zajmuje się resztą. [Dowiedz się więcej o Azure Batch AI](/azure/batch-ai/overview)
 
-Jest zintegrowany z Visual Studio Tools dla sztucznej Inteligencji, dzięki czemu można dynamicznie skalować w poziomie szkolenie modeli na platformie Azure.  Po [zainstalowany program Visual Studio Tools for AI](installation.md), ułatwia utworzenie nowego projektu języka Python za pomocą wstępnie przygotowanych przepisy w galerii przykładów usługi Azure Machine Learning.
+Jest ona zintegrowana z Visual Studio Tools for AI, dzięki czemu można dynamicznie skalować modele szkoleniowe na platformie Azure.  Po [zainstalowaniu Visual Studio Tools for AI](installation.md)można łatwo utworzyć nowy projekt w języku Python przy użyciu wstępnych przepisów w galerii przykładów Azure Machine Learning.
 
-1. Uruchom program Visual Studio. Otwórz **Eksploratora serwera** , otwierając **narzędzia si** menu i wybierając pozycję **wybierz klastra**
+1. Uruchom program Visual Studio. Otwórz **Eksplorator serwera** , otwierając menu **narzędzia AI** i wybierając **pozycję Wybierz klaster** .
 
-    ![Selektor klastra](media/train-model/select-cluster.png)
+    ![Wybór klastra](media/train-model/select-cluster.png)
 
-2. Rozwiń **narzędzia si**. Wszystkie zasoby usługi Batch AI, w których masz będzie można automatycznie wykryte i są wyświetlane w Eksploratorze serwera.
+2. Rozwiń węzeł **narzędzia AI**. Wszystkie Batch AI zasoby będą wykrywane i wyświetlane w Eksplorator serwera.
 
     ![Galeria przykładów](media/train-model/batchai.png)
 
-3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub DevOps platformy Azure lub klonowanie repozytorium.
+3. Wybierz pozycję **wyświetl > Team Explorer...** , aby otworzyć okno **Team Explorer** , w którym można nawiązać połączenie z usługą GitHub lub Azure DevOps lub sklonować repozytorium.
 
-    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media/train-model/team-explorer-devops.png)
+    ![Okno programu Team Explorer pokazujące platformę Azure DevOps, GitHub i klonowanie repozytorium](media/train-model/team-explorer-devops.png)
 
-4. W polu adres URL w taki sposób, w obszarze **lokalne repozytoria Git**, wprowadź `https://github.com/Microsoft/samples-for-ai`, wprowadź folderu na sklonowane pliki i wybierz **klonowania**.
+4. W polu adres URL w obszarze **lokalne repozytoria Git**wprowadź `https://github.com/Microsoft/samples-for-ai`, wprowadź folder dla sklonowanych plików, a następnie wybierz pozycję **Klonuj**.
 
     > [!Tip]
-    > Folder, który określisz w programie Team Explorer jest dany folder do odbierania sklonowane pliki. W odróżnieniu od `git clone` polecenia Tworzenie własnego klonu w programie Team Explorer nie tworzy automatycznie podfolder o nazwie repozytorium.
+    > Folder określony w Team Explorer jest folderem, w którym mają zostać odebrane sklonowane pliki. W przeciwieństwie do polecenia `git clone`, utworzenie klonu w Team Explorer nie powoduje automatycznego utworzenia podfolderu o nazwie repozytorium.
 
-5. Po ukończeniu klonowania kliknij **Plik > Otwórz rozwiązanie > Projekt / rozwiązanie**
+5. Po zakończeniu klonowania kliknij pozycję **plik > Otwórz rozwiązanie > projektu/rozwiązania**
 
     ![Galeria przykładów](media/train-model/open-solution.png)
 
-6. Otwórz **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** w katalogu sklonowane repozytorium
+6. Otwórz **Samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** w katalogu sklonowanym repozytorium
 
     ![Galeria przykładów](media/train-model/tensorflowexamples.png)
 
-7. Zestaw mnist ręcznie ZAPISANYCH projektu jako **projekt startowy**
+7. Ustaw projekt MNIST ręcznie jako **projekt startowy**
 
     ![Galeria przykładów](media/train-model/mnist-startup.png)
 
-8. <strong>Kliknij prawym przyciskiem myszy **projektu mnist ręcznie ZAPISANYCH** **Prześlij zadanie**</strong>
+8. <strong>Kliknij prawym przyciskiem myszy **projekt mnist ręcznie,** **Prześlij zadanie**</strong>
 
     ![Galeria przykładów](media/train-model/submit-job.png)
-9. Wybierz swoje **usługi Azure Batch AI** klastra, a następnie kliknij przycisk **importu**. Wybierz `AzureBatchAI_TF_MNIST.json` plik, aby szybko wypełnić niektóre wartości domyślnych, takich jak obraz platformy Docker do użycia. Następnie kliknij przycisk **przesyłania**
+9. Wybierz klaster **Azure Batch AI** , a następnie kliknij przycisk **Importuj**. Wybierz plik `AzureBatchAI_TF_MNIST.json`, aby szybko wypełnić niektóre wartości domyślne, takie jak obraz platformy Docker, który ma być używany. Następnie kliknij przycisk **Prześlij**
 
     ![Galeria przykładów](media/train-model/submit-batch.png)

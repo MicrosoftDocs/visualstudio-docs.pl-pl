@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573316"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916021"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
@@ -26,7 +26,7 @@ Korzystając z tych skryptów, można zarezerwować dostosowane wersje (znane r�
 
 * Program Visual Studio 2015 lub nowszy z zainstalowanym **obciążeniem platformy Azure** , Visual Studio 2013 i Azure SDK 2,3 lub nowszym. Zobacz [pliki do pobrania w programie Visual Studio](https://visualstudio.microsoft.com/downloads). (Zestaw Azure SDK nie jest potrzebny do generowania skryptów dla projektów sieci Web. Ta funkcja jest przeznaczony dla projektów sieci Web, a nie ról sieci Web w usługach Cloud Services.
 * Azure PowerShell 0.7.4 lub nowszy. Zobacz artykuł [Instalowanie i konfigurowanie programu Azure PowerShell](/powershell/azure/overview).
-* Program [Windows PowerShell 3,0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) lub nowszy.
+* Program [Windows PowerShell 3,0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) lub nowszy.
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 

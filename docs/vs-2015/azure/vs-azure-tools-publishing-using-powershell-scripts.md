@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: a6d6611c8ce8bdb09023794b5eca029b6b972afb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 264647dbb22e90d722bc8a80a5b05c08d6e8366b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849986"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917491"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
@@ -28,7 +28,7 @@ Korzystając z tych skryptów, można zarezerwować dostosowane wersje (znane r�
 
 * Zestaw Azure SDK 2,3 lub nowszy. Zobacz [pliki do pobrania w programie Visual Studio](https://visualstudio.microsoft.com/downloads/). (Zestaw Azure SDK nie jest potrzebny do generowania skryptów dla projektów sieci Web. Ta funkcja jest przeznaczony dla projektów sieci Web, a nie ról sieci Web w usługach Cloud Services.
 * Azure PowerShell 0.7.4 lub nowszy. Zobacz artykuł [Instalowanie i konfigurowanie programu Azure PowerShell](/powershell/azure/overview).
-* Program [Windows PowerShell 3,0](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) lub nowszy.
+* Program [Windows PowerShell 3,0](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) lub nowszy.
 
 ## <a name="additional-tools"></a>Dodatkowe narzędzia
 

@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0954a38a2667331c537487a706d1d2d13a07f6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 70cc3c81c426ec55d0afb36360155786ec97d937
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850911"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918981"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,7 +363,7 @@ Upewnij się, że system oprogramowania spełnia potrzeby użytkowników, korzys
 
 - [Weryfikacja systemu w czasie opracowywania](../modeling/validate-your-system-during-development.md)
 
-- [Użyj kontroli wersji](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [Użyj kontroli wersji](/azure/devops/repos/tfvc/overview?view=azure-devops)
 
 - [Kompiluj aplikację](/azure/devops/pipelines/index)
 

@@ -1,5 +1,5 @@
 ---
-title: Przygotowywanie do C++ debugowania projektów | Microsoft Docs
+title: Przygotowywanie do debugowania projektów w języku C++ | Dokumentacja firmy Microsoft
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,93 +19,93 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738111"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916322"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Przygotowanie debugowania: C++ typy projektów
-W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] szablonów projektu.
+W tej sekcji opisano sposób debugowania projektu podstawowych typów utworzonych przez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] szablony projektów.
 
- Należy zauważyć, że te typy projektów, które tworzą biblioteki DLL jako dane wyjściowe, zostały pogrupowane w celu [debugowania projektów DLL](../debugger/debugging-dll-projects.md) ze względu na typowe funkcje, które udostępniają.
+ Należy zauważyć, że tych typów projektów, które tworzenia bibliotek DLL jako dane wyjściowe, zostały zgrupowane jako [debugowanie projektów DLL](../debugger/debugging-dll-projects.md) z powodu typowe funkcje, które współużytkują one.
 
-## <a name="BKMK_In_this_topic"></a>W tym temacie
+## <a name="BKMK_In_this_topic"></a> W tym temacie
  [Zalecane ustawienia właściwości](#BKMK_Recommended_Property_Settings)
 
  [Projekty Win32](#BKMK_Win32_Projects)
 
 - [Aby debugować aplikację C lub C++ Win32](#BKMK_To_debug_a_C_or_C___Win32_application)
 
-- [Aby ręcznie ustawić konfigurację debugowania](#BKMK_To_manually_set_a_Debug_configuration)
+- [Aby ręcznie ustawić konfiguracji debugowania](#BKMK_To_manually_set_a_Debug_configuration)
 
   [Aplikacje Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
-## <a name="BKMK_Recommended_Property_Settings"></a>Zalecane ustawienia właściwości
- Niektóre właściwości powinny być ustawiane w taki sam sposób dla wszystkich niezarządzanych scenariuszy debugowania. W poniższych tabelach są wyświetlane zalecane ustawienia właściwości. Ustawienia niewymienione w tym miejscu mogą się różnić w różnych niezarządzanych typach projektów. Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+## <a name="BKMK_Recommended_Property_Settings"></a> Zalecane ustawienia właściwości
+ Taki sam sposób dla wszystkich niezarządzanych scenariuszy debugowania można ustawić niektórych właściwości. Poniższe tabele zawierają zalecane ustawienia właściwości. Ustawienia niewymienione w tym miejscu mogą się różnić między typami inny projekt niezarządzanych. Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Właściwości &#124; konfiguracji — węzełC++ &#124; C/Optymalizacja
-
-|Nazwa właściwości|Ustawienie|
-|-------------------|-------------|
-|**Optymalizacja**|Ustawienie **wyłączone (/0D).** Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio na kod źródłowy. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod wyświetlany w oknie **demontażu** jest generowany na podstawie zoptymalizowanego źródła, które może być niezgodne z danymi wyświetlanymi w oknach źródłowych. Inne funkcje, takie jak Krokowe, mogą nie zachowywać się zgodnie z oczekiwaniami.|
-
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Właściwości &#124; konfiguracji węzeł &#124; debugowania konsolidatora
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Właściwości konfiguracji &#124; C/C++ &#124; węzła optymalizacji
 
 |Nazwa właściwości|Ustawienie|
 |-------------------|-------------|
-|**Generuj informacje o debugowaniu**|Zawsze należy ustawić tę opcję na **wartość tak (/Debug)** , aby utworzyć symbole debugowania i pliki potrzebne do debugowania. Gdy aplikacja przechodzi do środowiska produkcyjnego, można ustawić ją na off.|
+|**Optymalizacja**|Ustaw **wyłączony (/ 0 d).** Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma błąd, który pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod w **dezasemblacji** okna jest generowany na podstawie zoptymalizowane źródła, które może nie odpowiadać, zostanie wyświetlony w źródle dla systemu Windows. Inne funkcje, takie jak przechodzenie krok po kroku, mogą nie zachowywać się zgodnie z oczekiwaniami.|
+
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Właściwości konfiguracji &#124; konsolidatora &#124; debugowanie węzła
+
+|Nazwa właściwości|Ustawienie|
+|-------------------|-------------|
+|**Generuj informacje debugowania**|Zawsze należy ustawić tę opcję, **tak (/ DEBUG)** do tworzenia, debugowania symboli i plików potrzebnych do debugowania. Gdy aplikacja przejdzie do środowiska produkcyjnego, można ustawić go na wyłączone.|
 
  [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="BKMK_Win32_Projects"></a>Projekty Win32
- Aplikacje Win32 są tradycyjnymi programami systemu Windows, które C++są zapisywane w języku C lub. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest proste.
+## <a name="BKMK_Win32_Projects"></a> Projekty Win32
+ Win32 — aplikacje są tradycyjne programy Windows w języku C lub C++. Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest bardzo proste.
 
- Aplikacje Win32 zawierają aplikacje MFC i projekty ATL. Korzystają one z interfejsów API systemu Windows i mogą korzystać z MFC lub ATL, ale nie używają środowiska uruchomieniowego języka wspólnego (CLR). Mogą jednak wywołać kod zarządzany, który używa środowiska CLR.
+ Win32 — aplikacje obejmują aplikacje MFC i ATL projektów. Korzystanie z interfejsów API Windows i może używać MFC i ATL, ale nie należy używać środowisko uruchomieniowe języka wspólnego (CLR). Jednakże wywołując ich kodu zarządzanego, który używa środowiska CLR.
 
- Poniższa procedura wyjaśnia, jak debugować projekt Win32 z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Innym sposobem debugowania aplikacji Win32 jest uruchomienie aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączenie do niej. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Poniższa procedura wyjaśnia, jak można debugować projekt systemu Win32, z poziomu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Innym sposobem debugowania aplikacji systemu Win32 jest uruchomienie aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączyć do niego. Aby uzyskać więcej informacji, zobacz [dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>Aby debugować aplikację C lub C++ Win32
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Aby debugować aplikację C lub C++ Win32
 
 1. Otwórz projekt w programie Visual Studio.
 
-2. W menu **debugowanie** wybierz polecenie **Uruchom**.
+2. Na **debugowania** menu, wybierz **Start**.
 
 3. Debuguj przy użyciu technik omówionych w [pierwszej kolejności w debugerze](../debugger/debugger-feature-tour.md).
 
-### <a name="BKMK_To_manually_set_a_Debug_configuration"></a>Aby ręcznie ustawić konfigurację debugowania
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Aby ręcznie ustawić konfiguracji debugowania
 
-1. W menu **Widok** kliknij polecenie **strony właściwości**.
+1. Na **widoku** menu, kliknij przycisk **stron właściwości**.
 
-2. Kliknij węzeł **Właściwości konfiguracji** , aby go otworzyć, jeśli nie jest jeszcze
+2. Kliknij przycisk **właściwości konfiguracji** węzeł, aby go otworzyć, jeśli nie jest jeszcze
 
-3. Wybierz pozycję **Ogólne**i ustaw wartość wiersza **danych wyjściowych** na **Debuguj**.
+3. Wybierz **ogólne**i ustaw wartość **dane wyjściowe** wiersz do **debugowania**.
 
-4. Otwórz węzeł **C/C++**  , a następnie wybierz pozycję **Ogólne**.
+4. Otwórz **C/C++** , a następnie wybierz węzeł **ogólne**.
 
-    W wierszu **debugowania** należy określić typ informacji o debugowaniu, które mają być generowane przez kompilator. Wartości, które można wybrać, zawierają **bazę danych programu (/ZI)** lub **bazę danych programu do edycji & Kontynuuj (/ZI)** .
+    W **debugowania** wiersza, określ typ debugowania generowanych przez kompilator informacji. Można wybrać wartości obejmują **bazy danych programu (/Zi)** lub **bazy danych programu dla Edytuj i Kontynuuj (/ZI)** .
 
-5. Wybierz opcję **Optymalizacja**, a w wierszu **Optymalizacja** wybierz pozycję **wyłączone (/0D)** z listy rozwijanej.
+5. Wybierz **optymalizacji**, a następnie w **optymalizacji** wiersz, wybierz opcję **wyłączony (/ 0d)** z listy rozwijanej.
 
-    Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio na kod źródłowy. Jeśli okaże się, że program ma usterkę, która pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod wyświetlany w oknie demontażu jest generowany na podstawie zoptymalizowanego źródła, które może nie odpowiadać temu, co widzisz w oknach źródłowych. Funkcje, takie jak Krokowe, mogą pokazywać nieprawidłowe punkty przerwania i punkt wykonania.
+    Zoptymalizowany kod jest trudniejszy do debugowania, ponieważ wygenerowane instrukcje nie odpowiadają bezpośrednio kodowi źródłowemu. Jeśli okaże się, że program ma błąd, który pojawia się tylko w zoptymalizowanym kodzie, można włączyć to ustawienie, ale należy pamiętać, że kod przedstawiony w oknie demontażu jest generowany na podstawie zoptymalizowane źródła, które może nie odpowiadać, zostanie wyświetlony w oknach źródłowych. Funkcje, takie jak przechodzenie krok po kroku prawdopodobnie pokazać, że punkty przerwania i wykonywania punktu niepoprawnie.
 
-6. Otwórz węzeł **konsolidatora** i wybierz pozycję **debugowanie**. W pierwszym **wygenerowanym** wierszu wybierz pozycję **tak (/Debug)** z listy rozwijanej. Zawsze ustawiaj ją podczas debugowania.
+6. Otwórz **konsolidatora** , a następnie wybierz węzeł **debugowanie**. W pierwszym **Generuj** wiersz, wybierz opcję **tak (/ DEBUG)** z listy rozwijanej. Zawsze ustawiaj podczas debugowania.
 
-   Aby uzyskać więcej informacji, zobacz[Ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+   Aby uzyskać więcej informacji, zobacz[ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
    [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="BKMK_Windows_Forms_Applications___NET_"></a>Aplikacje Windows Forms (.NET)
- Szablon **aplikacji Windows Forms (.NET)** tworzy [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikacji Windows Forms. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie projektu aplikacji systemu Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikacje Windows Forms (.NET)
+ **Windows Forms aplikacji (.NET)** szablon umożliwia utworzenie [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikacji Windows Forms. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie projektu aplikacji Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
- Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest podobne do programu w zarządzanych Windows Forms aplikacjach.
+ Debugowanie tego typu aplikacji w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest podobny, jak w zarządzanych aplikacjach Windows Forms.
 
- Podczas tworzenia projektu Windows Forms przy użyciu szablonu projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia dla konfiguracji debugowania i wydania. W razie potrzeby możesz zmienić te ustawienia w oknie dialogowym **\<project nazwa > strony właściwości** . Aby uzyskać więcej informacji, zobacz [debugowanie i wydawanie konfiguracji](../debugger/how-to-set-debug-and-release-configurations.md).
+ Po utworzeniu projektu Windows Forms przy użyciu szablonu projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie tworzy wymagane ustawienia konfiguracji Debug i Release. Jeśli to konieczne, możesz zmienić te ustawienia w  **\<Nazwa projektu > Właściwości strony** okno dialogowe. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
- Aby uzyskać więcej informacji, zobacz [Ustawienia projektu dla C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Aby uzyskać więcej informacji, zobacz [ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
- Innym sposobem na Debugowanie aplikacji Windows Forms jest uruchomienie aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączenie do niej. Aby uzyskać więcej informacji, zobacz [dołączanie do działającego programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+ Innym sposobem debugowania aplikacji Windows Forms jest uruchomienie aplikacji poza [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i dołączyć do niego. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchamiania programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
  [W tym temacie](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
@@ -114,4 +114,4 @@ W tej sekcji opisano sposób debugowania podstawowych typów projektów utworzon
 - [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Dołączanie do uruchomionego programu lub wielu programów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Konfiguracje debugowania i wydania](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Instrukcje: Tworzenie projektu aplikacji systemu Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [Porady: Tworzenie projektu aplikacji Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

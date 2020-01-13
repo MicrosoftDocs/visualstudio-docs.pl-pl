@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295558"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915981"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Oto jak uaktualnić rozszerzenie.
   
 2. Usuń zestawy odwołań programu VS SDK z projektu, zaznaczając je, prawym przyciskiem myszy i **Usuń**.  
   
-3. Dodaj wersje NuGet zestawów odwołań programu VS SDK.  Gdy nadal znajduje się w węźle **Eksplorator rozwiązań References** , Otwórz **pakiety NuGet...** okno dialogowe.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [Zarządzanie pakietami NuGet przy użyciu okna dialogowego](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio). Zestawy odwołań programu VS SDK są publikowane w witrynie [NuGet.org](https://www.nuget.org/) przez [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Dodaj wersje NuGet zestawów odwołań programu VS SDK.  Gdy nadal znajduje się w węźle **Eksplorator rozwiązań References** , Otwórz **pakiety NuGet...** okno dialogowe.  Jeśli chcesz dowiedzieć się więcej na temat tego okna dialogowego, zobacz [Zarządzanie pakietami NuGet przy użyciu okna dialogowego](/nuget/consume-packages/install-use-packages-visual-studio). Zestawy odwołań programu VS SDK są publikowane w witrynie [NuGet.org](https://www.nuget.org/) przez [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4. Używając **NuGet.org** jako **źródła pakietu**, wyszukaj nazwę pakietu NuGet zgodną z żądanym zestawem odwołania (na przykład: Microsoft. VisualStudio. Shell. 14.0) i zainstaluj go w projekcie.  Pakiet NuGet może dodać wiele zestawów referencyjnych w celu spełnienia zależności zestawu początkowego.  
   

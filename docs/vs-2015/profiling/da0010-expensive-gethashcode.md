@@ -1,5 +1,5 @@
 ---
-title: 'DA0010: Kosztowna funkcja GetHashCode | Dokumentacja firmy Microsoft'
+title: 'DA0010: drogie GetHashCode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,31 +14,31 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0a2947f0bd6758de62a4a11d78390d38a503271
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158662"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919031"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: Kosztowna funkcja GetHashCode
+# <a name="da0010-expensive-gethashcode"></a>DA0010: Expensive GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0010: Kosztowna funkcja GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode).  
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [DA0010: kosztowne GetHashCode](/visualstudio/profiling/da0010-expensive-gethashcode).  
 
 |||  
 |-|-|  
-|Identyfikator reguły|DA0010|  
-|Kategoria|Sposób użycia programu .NET framework|  
-|Metod profilowania|Próbkowania<br /><br /> Pamięć .NET|  
-|Message|Funkcje GetHashCode powinny być tanie i nie alokować wszystkie pamięci. Mniejsza złożoność funkcji wartości skrótu, jeśli jest to możliwe.|  
-|Typ komunikatu|Ostrzeżenie|  
+|Identyfikator zasady|DA0010|  
+|Kategoria|Użycie .NET Framework|  
+|Metody profilowania|Próbkowanie<br /><br /> Pamięć platformy .NET|  
+|Komunikat|Funkcje GetHashCode powinny być tanie i nie mogą przydzielać żadnej pamięci. Zmniejsz złożoność funkcji kodu skrótu, jeśli jest to możliwe.|  
+|Typ wiadomości|Ostrzeżenie|  
   
 ## <a name="cause"></a>Przyczyna  
- Wywołania metody GetHashCode tego typu są znaczna część danych profilowania, lub metoda przydziela pamięć.  
+ Wywołania metody GetHashCode typu są znaczną częścią danych profilowania lub metoda przydziela pamięć.  
   
 ## <a name="rule-description"></a>Opis reguły  
- Wyznaczania wartości skrótu jest techniką, szybko lokalizowania określonego elementu w dużych kolekcji. Ponieważ tabele skrótów mogą być bardzo duże i musi obsługiwać wysokie wskaźniki dotyczące dostępu, tabele zbędnych danych powinna być bardzo wydajne. Domniemanie to wymaganie jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł odśmiecania pamięci i udostępnia metody do potencjalnych opóźnienia, jeśli okaże się niezbędne do uruchomienia wyrzucania elementów bezużytecznych w wyniku żądania alokacji.  
+ Mieszanie jest techniką szybkiego lokalizowania określonego elementu w dużej kolekcji. Ponieważ tabele skrótów mogą być bardzo duże i muszą obsługiwać wysokie stawki dostępu, tabele skrótów powinny być niezwykle wydajne. Implikacje tego wymagania polega na tym, że metody GetHashCode w .NET Framework nie powinny przydzielić pamięci. Alokacja pamięci zwiększa obciążenie w module wyrzucania elementów bezużytecznych i uwidacznia metodę do potencjalnych opóźnień, jeśli konieczne jest uruchomienie wyrzucania elementów bezużytecznych w wyniku żądania alokacji.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Zmniejsz złożoność metody.

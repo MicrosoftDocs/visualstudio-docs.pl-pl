@@ -12,19 +12,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9cdc597bcbdb79c7040f040084493fe015ee1c08
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852231"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917344"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Różnice pomiędzy dodawaniem odwołań za pomocą NuGet a Extension SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz udostępnić pakiet do użycia w projektach programu Visual Studio, używając rozszerzenia NuGet do programu Visual Studio lub zestawu SDK (Software Development Kit). Opisując podobieństwa i różnice między tymi dwoma mechanizmami, ten temat może pomóc wybrać najlepszy dla zadania.
 
-- NuGet to system zarządzania pakietami typu open source, który upraszcza proces dołączania bibliotek do rozwiązania projektu. Aby uzyskać więcej informacji, zobacz [Omówienie narzędzia NuGet](https://docs.microsoft.com/nuget/what-is-nuget).
+- NuGet to system zarządzania pakietami typu open source, który upraszcza proces dołączania bibliotek do rozwiązania projektu. Aby uzyskać więcej informacji, zobacz [Omówienie narzędzia NuGet](/nuget/what-is-nuget).
 
 - Zestaw SDK to zbiór plików, które program Visual Studio traktuje jako pojedynczy element odniesienia. W oknie dialogowym **Menedżer odwołań** są wyświetlane wszystkie zestawy SDK, które są istotne dla projektu, który jest otwarty podczas wyświetlania tego okna dialogowego. Po dodaniu zestawu SDK do projektu możesz uzyskać dostęp do całej zawartości tego zestawu SDK za pomocą funkcji IntelliSense, **przybornika**, projektantów, **Przeglądarka obiektów**, MSBuild, wdrażania, debugowania i pakowania. Aby uzyskać więcej informacji na temat zestawów SDK, zobacz [Tworzenie zestawu Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 

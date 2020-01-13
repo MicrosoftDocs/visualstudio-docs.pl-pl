@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 246ffa914ba21b9b2813abca1bae063162576486
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: cc3a18fe1ce76b6214766ba45fc5441e80c56cef
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852145"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918486"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Wyłączenia dotyczące zasad korzystania z oprogramowania Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Program Visual Studio obejmuje zestaw kompilatorów, języków i środowisk, w t
 |[Program Exchange 2013](https://support.microsoft.com/kb/2902020)|Exchange Web Services|  
 |[OWIN firmy Microsoft](https://support.microsoft.com/kb/2902020)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](https://support.microsoft.com/kb/2902020)|Microsoft Web Developer Tools 2013|  
-|Aktualizacje tych składników są rozpowszechniane za pośrednictwem pakietu NuGet i nie podlegają standardowym zasadom cyklu życia produktów firmy Microsoft.  Aby uzyskać więcej informacji, zobacz [http://docs.nuget.org/](https://docs.microsoft.com/nuget/).|Procedura obsługi tokenów sieci Web JSON dla Microsoft .NET Framework 4,5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Struktura optymalizacji sieci Web<br /><br /> WebGrease|  
+|Aktualizacje tych składników są rozpowszechniane za pośrednictwem pakietu NuGet i nie podlegają standardowym zasadom cyklu życia produktów firmy Microsoft.  Aby uzyskać więcej informacji, zobacz [http://docs.nuget.org/](/nuget/).|Procedura obsługi tokenów sieci Web JSON dla Microsoft .NET Framework 4,5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Struktura optymalizacji sieci Web<br /><br /> WebGrease|  
 |[ODataLib](https://support.microsoft.com/kb/2902020)|ODataLib|  
 |[Office 2013](https://support.microsoft.com/lifecycle/search/?p1=16674)|Zestaw SDK Open XML|  
 |[Zasady usług online](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy)|Zestaw SDK usługi Microsoft Ads|  

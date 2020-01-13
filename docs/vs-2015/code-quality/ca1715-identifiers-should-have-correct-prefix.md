@@ -15,29 +15,29 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669118"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919191"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identyfikatory powinny mieć poprawny prefiks
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1715: Identyfikatory powinny mieć poprawny prefiks](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1715: Identyfikatory powinny mieć poprawny prefiks](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Kategoria|Microsoft. nazewnictwo|
+|Kategoria|Microsoft.Naming|
 |Zmiana kluczowa|Przerywanie — gdy jest uruchamiany w interfejsach.<br /><br /> Rozdzielenie — gdy zostanie zgłoszone w parametrach typu ogólnego.|
 
 ## <a name="cause"></a>Przyczyna
  Nazwa widocznego na zewnątrz interfejsu nie zaczyna się od wielkiej litery "I".
 
- —lub—
+ lub
 
  Nazwa parametru typu ogólnego w widocznym na zewnątrz typie lub metodzie nie zaczyna się od wielkiej litery.
 

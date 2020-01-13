@@ -16,23 +16,23 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671533"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918170"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Przejrzyj nieużywane parametry
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1801: przegląd nieużywanych parametrów](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1801: przegląd nieużywanych parametrów](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
 |||
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Kategoria|Microsoft. Usage|
+|Kategoria|Microsoft.Usage|
 |Zmiana kluczowa|Rozdzielenie — Jeśli element członkowski nie jest widoczny poza zestawem, niezależnie od wprowadzonej zmiany.<br /><br /> Nieprzerwanie — Jeśli zmienisz element członkowski tak, aby używał parametru w jego treści.<br /><br /> Przerywanie — Jeśli parametr zostanie usunięty i będzie widoczny poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna

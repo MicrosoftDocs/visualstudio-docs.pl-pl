@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850483"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918881"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definiowanie profilu w celu rozszerzenia kodu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ Można zdefiniować *profil UML* , aby dostosować standardowe elementy modelu d
 7. Kompiluj rozszerzenie programu Visual Studio, tworząc projekt rozszerzenia lub kompresując wszystkie pliki, zgodnie z opisem w poprzednich sekcjach.
 
 ## <a name="Schema"></a>Struktura profilu
- Plik XSD dla profilów UML można znaleźć w następującym przykładzie: [ustawienie stereotypów i profili XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Aby ułatwić edytowanie plików profilów, Zainstaluj plik `.xsd` w programie:
+
+ Aby ułatwić edytowanie plików profilów, Zainstaluj plik `.xsd` w programie:
 
  **%ProgramFiles%\Microsoft Visual Studio [wersja] \Xml\Schemas**
 
@@ -365,4 +366,5 @@ Musisz wybrać swój profil w pakiecie lub modelu. Stereotypy będą wyświetlan
 6. Uruchom ponownie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Zobacz też
- [Dodaj stereotypy do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [standardowych stereotypów dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md) [przykład: kolorowe elementy UML według](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [przykładowego stereotypu: Ustawienie stereotypów, XSD profile](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Dodaj stereotypy do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Dostosowywanie modelu za pomocą profilów i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [standardowych stereotypów dla modeli UML](../modeling/standard-stereotypes-for-uml-models.md)
+ 

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 840ea8f701bbc602292bd7c0cf602a24944ed74a
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594074"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918532"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
 
@@ -50,7 +50,7 @@ Podczas tworzenia układu sieci wymagane certyfikaty zostaną pobrane do folderu
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opcja 2 — rozpowszechniania zaufanych głównych certyfikatów w środowisku przedsiębiorstwa
 
-Dla przedsiębiorstw mających maszyny w trybie offline, które nie mają najnowsze certyfikaty główne, administrator może użyć instrukcji na [Konfigurowanie zaufanych certyfikatów głównych i niedopuszczalne certyfikaty](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) strony, aby je zaktualizować.
+Dla przedsiębiorstw mających maszyny w trybie offline, które nie mają najnowsze certyfikaty główne, administrator może użyć instrukcji na [Konfigurowanie zaufanych certyfikatów głównych i niedopuszczalne certyfikaty](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) strony, aby je zaktualizować.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Opcja 3 — certyfikaty Zainstaluj jako część inicjowanych przez skrypty wdrażania programu Visual Studio
 

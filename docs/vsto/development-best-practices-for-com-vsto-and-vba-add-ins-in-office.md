@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846361"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918625"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Najlepsze rozwiązania w zakresie programowania dla dodatków COM, VSTO i VBA w pakiecie Office
   Jeśli tworzysz Dodatki COM, VSTO lub VBA dla pakietu Office, postępuj zgodnie z najlepszymi rozwiązaniami programistycznymi opisanymi w tym artykule.   Dzięki temu:
@@ -61,7 +61,7 @@ Klienci otrzymują pytania dla niezależnych dostawców oprogramowania, aby zape
 
 Aby zapewnić instrukcje pomocy technicznej dla aplikacji klienckich pakietu Office (na przykład Word lub Excel), należy najpierw sprawdzić, czy dodatki działają w bieżącej wersji pakietu Office, a następnie zatwierdzić w celu udostępnienia aktualizacji, jeśli dodatek zostanie podzielony w przyszłej wersji. Nie ma potrzeby testowania dodatków, gdy firma Microsoft publikuje nową kompilację lub aktualizację pakietu Office. Firma Microsoft rzadko zmienia platformę COM, VSTO i VBA na platformie rozszerzalności w pakiecie Office, a te zmiany będą dobrze udokumentowane.
 
->Ważne: Firma Microsoft przechowuje listę obsługiwanych dodatków do raportów o gotowości i informacje kontaktowe niezależnego dostawcy oprogramowania. Aby uzyskać wymienione dodatki, zobacz [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
+>Ważne: Firma Microsoft przechowuje listę obsługiwanych dodatków do raportów o gotowości i informacje kontaktowe niezależnego dostawcy oprogramowania. Aby skorzystać z dodatku, zobacz [/ConfigMgr/Desktop-Analytics/Ready-for-Windows](/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Użyj Monitora procesów, aby pomóc w debugowaniu instalacji lub ładowania problemów
 Jeśli dodatek ma problemy ze zgodnością podczas instalacji lub ładowania, mogą one być związane z problemami z dostępem do plików lub rejestru. Użyj [monitora procesów](/sysinternals/downloads/procmon) lub podobnego narzędzia do debugowania, aby rejestrować i porównywać zachowanie w środowisku roboczym w celu ułatwienia zidentyfikowania problemu.

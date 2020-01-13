@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850398"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919166"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debugowanie usługi w chmurze platformy Azure lub maszynie wirtualnej w programie Visual Studio
 
@@ -50,7 +50,7 @@ Aby debugować usługę w chmurze z komputera zdalnego, należy włączyć tę f
 Po włączeniu funkcji debugowania zdalnego dla usługi w chmurze, go nie wykazują pogorszenie wydajności lub naliczone dodatkowe opłaty za. Nie należy używać zdalnego debugowania na usługę produkcyjną, ponieważ klienci, którzy korzystają z usługi może to mieć niekorzystny wpływ.
 
 > [!NOTE]
-> Podczas publikowania usługi w chmurze w programie Visual Studio, aby umożliwić **IntelliTrace** wszystkich ról w tej usłudze, których platformą docelową jest program .NET Framework 4 lub .NET Framework 4.5. Za pomocą **IntelliTrace**, można zbadać zdarzenia, które wystąpiły w wystąpieniu roli w przeszłości i odtworzenia kontekstu po tym czasie. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) i [przy użyciu funkcji IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Podczas publikowania usługi w chmurze w programie Visual Studio, aby umożliwić **IntelliTrace** wszystkich ról w tej usłudze, których platformą docelową jest program .NET Framework 4 lub .NET Framework 4.5. Za pomocą **IntelliTrace**, można zbadać zdarzenia, które wystąpiły w wystąpieniu roli w przeszłości i odtworzenia kontekstu po tym czasie. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md) i [przy użyciu funkcji IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Aby włączyć zdalne debugowanie dla usługi w chmurze
 
@@ -150,7 +150,7 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
     > [!NOTE]
     > Użytkownik zostanie poproszony o zalogowanie się do konta platformy Azure, jeśli jeszcze nie jest zalogowany.
 
-3. Wybierz różne ustawienia dla maszyny wirtualnej, a następnie wybierz pozycję **OK**. Zobacz [maszyn wirtualnych](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) Aby uzyskać więcej informacji.
+3. Wybierz różne ustawienia dla maszyny wirtualnej, a następnie wybierz pozycję **OK**. Zobacz [maszyn wirtualnych](/previous-versions/azure/jj156003(v=azure.100)) Aby uzyskać więcej informacji.
 
     Nazwa wprowadzona dla nazwy DNS będzie nazwa maszyny wirtualnej.
 
@@ -188,6 +188,6 @@ Projekty języka Visual Studio ASP.NET oferuje opcję, aby utworzyć maszynę wi
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Użyj **IntelliTrace** , aby zebrać dziennik wywołań i zdarzeń z serwera wersji. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Użyj **IntelliTrace** , aby zebrać dziennik wywołań i zdarzeń z serwera wersji. Zobacz [debugowanie opublikowanych usług w chmurze za pomocą IntelliTrace i programu Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Użyj **diagnostyki Azure** się szczegółowe informacje na uruchamianie kodu w ramach ról, czy role są uruchomione w środowisku deweloperskim lub na platformie Azure. Zobacz [zbieranie danych rejestrowania przy użyciu usługi Azure Diagnostics](https://msdn.microsoft.com/library/gg433048.aspx).

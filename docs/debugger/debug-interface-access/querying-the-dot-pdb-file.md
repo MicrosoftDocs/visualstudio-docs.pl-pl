@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738578"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917103"
 ---
 # <a name="querying-the-pdb-file"></a>Używanie zapytań dotyczących pliku .Pdb
-Plik bazy danych programu (rozszerzenie. pdb) to plik binarny, który zawiera informacje o typie i symbolicznym debugowaniu zebrane w trakcie kompilowania i łączenia projektu. Plik PDB jest tworzony podczas kompilowania w języku C/C++ programu z **/Zi** lub **/ZI** lub programem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] z opcją **/Debug** . Pliki obiektów zawierają odwołania do pliku. pdb na potrzeby debugowania informacji. Aby uzyskać więcej informacji na temat plików PDB, zobacz [pliki PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Aplikacja DIA może użyć następujących ogólnych kroków, aby uzyskać szczegółowe informacje dotyczące różnych symboli, obiektów i elementów danych w obrazie wykonywalnym.
+Plik bazy danych programu (rozszerzenie. pdb) to plik binarny, który zawiera informacje o typie i symbolicznym debugowaniu zebrane w trakcie kompilowania i łączenia projektu. Plik PDB jest tworzony podczas kompilowania w języku C/C++ programu z **/Zi** lub **/ZI** lub programem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]lub [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] z opcją **/Debug** . Pliki obiektów zawierają odwołania do pliku. pdb na potrzeby debugowania informacji. Aby uzyskać więcej informacji na temat plików PDB, zobacz [pliki PDB](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Aplikacja DIA może użyć następujących ogólnych kroków, aby uzyskać szczegółowe informacje dotyczące różnych symboli, obiektów i elementów danych w obrazie wykonywalnym.
 
 ### <a name="to-query-the-pdb-file"></a>Aby wysłać zapytanie do pliku. pdb
 

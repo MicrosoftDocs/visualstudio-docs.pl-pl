@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301095"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918959"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Zarządzanie wyjątkami za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,14 +150,14 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
   
 3. To ustawienie można zmienić dla konkretnego wyjątku (wybierz wyjątek, kliknij prawym przyciskiem myszy, a następnie wybierz/Usuń zaznaczenie opcji **Kontynuuj w przypadku braku obsługi w kodzie użytkownika**) lub dla całej kategorii wyjątków (na przykład wszystkie wyjątki środowiska uruchomieniowego języka wspólnego).  
   
-   Na przykład ASP.NET aplikacje sieci Web obsługują wyjątki poprzez konwersję ich do kodu stanu HTTP 500 ([Obsługa wyjątków w interfejsie API ASP.NET](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), co może nie pomóc w ustaleniu źródła wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()`, które zgłasza <xref:System.FormatException>. Wykonanie przerywa w następujący sposób:  
+   Na przykład ASP.NET aplikacje sieci Web obsługują wyjątki poprzez konwersję ich do kodu stanu HTTP 500 ([Obsługa wyjątków w interfejsie API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), co może nie pomóc w ustaleniu źródła wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()` która zgłasza <xref:System.FormatException>. Wykonanie przerywa w następujący sposób:  
   
    ![przerwy w unhanlded&#45;użytkownika — wyjątek](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Dodawanie i usuwanie wyjątków  
  Można dodawać i usuwać wyjątki. Każdy typ wyjątku można usunąć z dowolnej kategorii, wybierając wyjątek, a następnie klikając przycisk **Usuń** (znak minus) na pasku narzędzi **Ustawienia wyjątku** lub klikając prawym przyciskiem myszy wyjątek i wybierając polecenie **Usuń** z menu kontekstowego. Usuwanie wyjątku ma ten sam skutek, co w przypadku niezaznaczania wyjątku, co oznacza, że debuger nie będzie przerywany w momencie jego zgłoszenia.  
   
- Aby dodać wyjątek: w oknie **Ustawienia wyjątku** wybierz jedną z kategorii wyjątków (na przykład **środowisko uruchomieniowe języka wspólnego**), a następnie kliknij przycisk **Dodaj** . Wpisz nazwę wyjątku (na przykład. **System. UriTemplateMatchException**). Wyjątek jest dodawany do listy (w kolejności alfabetycznej) i jest automatycznie sprawdzany.  
+ Aby dodać wyjątek: w oknie **Ustawienia wyjątku** wybierz jedną z kategorii wyjątków (na przykład **środowisko uruchomieniowe języka wspólnego**), a następnie kliknij przycisk **Dodaj** . Wpisz nazwę wyjątku (na przykład. **System.UriTemplateMatchException**). Wyjątek jest dodawany do listy (w kolejności alfabetycznej) i jest automatycznie sprawdzany.  
   
  Jeśli chcesz dodać wyjątek do wyjątków dostępu do pamięci procesora GPU, wyjątków środowiska uruchomieniowego języka JavaScript lub kategorii wyjątków Win32, musisz dołączyć kod błędu, a także opis.  
   
@@ -166,7 +166,7 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
   
  Ustawienia wyjątków są utrwalane w pliku. suo rozwiązania, dlatego mają zastosowanie do określonego rozwiązania. Nie można ponownie użyć określonych ustawień wyjątków w różnych rozwiązaniach. W tym momencie tylko dodane wyjątki są utrwalane; usunięte wyjątki nie są. Innymi słowy, można dodać wyjątek, zamknąć i ponownie otworzyć rozwiązanie, a w dalszym ciągu będą nadal dostępne. Ale jeśli usuniesz wyjątek, a Zamknij i otwórz ponownie rozwiązanie, pojawi się wyjątek.  
   
- Okno **Ustawienia wyjątku** obsługuje typy wyjątków ogólnych w programie C# , ale nie w Visual Basic. Aby przerwać wyjątki, takie jak `MyNamespace.GenericException<T>`, należy dodać wyjątek jako **przestrzeń nazw. generycznexception ' 1**. Oznacza to, że jeśli utworzono wyjątek podobny do tego:  
+ **Ustawienia wyjątków** okna obsługuje typów wyjątków ogólnych w języku C#, ale nie w języku Visual Basic. Przerwanie przy wyjątkach, takich jak `MyNamespace.GenericException<T>`, należy dodać wyjątek jako **MyNamespace.GenericException'1**. Oznacza to, że jeśli utworzono wyjątek podobny do tego:  
   
 ```csharp  
 public class GenericException<T> : Exception  

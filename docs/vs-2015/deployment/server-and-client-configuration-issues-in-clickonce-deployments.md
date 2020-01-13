@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844987"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918814"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
  Za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]można wykonać pobieranie, które używają kompresji HTTP, technologii serwera sieci Web, która używa algorytmu GZIP do kompresowania strumienia danych przed wysłaniem strumienia do klienta. Klient — w tym przypadku [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]— dekompresuje strumień przed odczytaniem plików.  
   
  W przypadku korzystania z usług IIS można łatwo włączyć kompresję HTTP. Jednak włączenie kompresji HTTP jest możliwe tylko dla niektórych typów plików — czyli plików HTML i tekstowych. Aby włączyć kompresję zestawów (. dll), XML (XML), manifestów wdrożenia (aplikacji) i manifestów aplikacji (. manifest), należy dodać te typy plików do listy typów dla usług IIS do skompresowania. Do momentu dodania typów plików do wdrożenia zostaną skompresowane tylko pliki tekstowe i HTML.  
-  
- Aby uzyskać szczegółowe instrukcje dotyczące usług IIS, zobacz [jak określić dodatkowe typy dokumentów dla kompresji http](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z wdrożeniami ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777460"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915970"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Narzędzia Visual Studio Tools for AI
 
 Visual Studio Tools for AI to rozszerzenie do kompilowania, testowania i wdrażania rozwiązań do uczenia głębokiego/AI. Bezproblemowo integruje się z Azure Machine Learning w celu zapewnienia niezawodnego eksperymentu, w tym między innymi przesyłania zadań związanych z przygotowaniem i modelem do różnych elementów docelowych obliczeniowych. Ponadto zapewnia ona obsługę niestandardowych metryk i śledzi śledzenie historii oraz umożliwia odtwarzalność i inspekcję danych. Gotowa do współpracy w przedsiębiorstwie, umożliwia bezpieczną współpracę nad projektem z innymi osobami.
 
-Zacznij już korzystać z uczenia głębokiego za pomocą [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org)lub innych platform głębokiego uczenia.
+Zacznij już korzystać z uczenia głębokiego za pomocą [Microsoft Cognitive Toolkit (CNTK)](/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org)lub innych platform głębokiego uczenia.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Opracowywanie, debugowanie i wdrażanie modeli uczenia głębokiego oraz rozwiązań AI
 Korzystaj z funkcji produktywności programu Visual Studio, aby przyspieszyć innowacje AI. Korzystaj z wbudowanych funkcji edytora kodu, takich jak wyróżnianie składni, IntelliSense i formatowanie tekstu. Interaktywnie Przetestuj aplikację do uczenia głębokiego w środowisku lokalnym, używając debugowania krok po kroku na temat zmiennych lokalnych i modeli.

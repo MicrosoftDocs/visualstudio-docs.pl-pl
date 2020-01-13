@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 81bb9bcecf37d2ed3fca29a4edc57738732de1a5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850610"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917278"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ W tym temacie wymieniono następujące typowe błędy, które mogą wystąpić p
  Jeśli publikujesz przy użyciu adresu URL, upewnij się, że na komputerze docelowym włączono rozszerzenia FrontPage Server Extensions włączony.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Komunikat o błędzie: nie można utworzyć witryny sieci Web "\<witryny >". Składniki do komunikacji z rozszerzenia FrontPage Server Extensions nie są zainstalowane.  
- Upewnij się, że składnik Web Authoring Microsoft Visual Studio jest zainstalowany na komputerze, na którym jest publikowany. W przypadku użytkowników programu Express ten składnik nie jest instalowany domyślnie. Aby uzyskać więcej informacji, zobacz [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us).  
+ Upewnij się, że składnik Web Authoring Microsoft Visual Studio jest zainstalowany na komputerze, na którym jest publikowany. W przypadku użytkowników programu Express ten składnik nie jest instalowany domyślnie.  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Komunikat o błędzie: Nie można odnaleźć pliku "Microsoft.Windows.Common — formanty, wersja = 6.0.0.0, Culture =\*, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, typ = win32"  
  Ten komunikat o błędzie pojawia się podczas próby opublikowania aplikacji WPF z włączonymi stylami wizualizacji. Aby rozwiązać ten problem, zobacz [jak: publikowanie aplikacji WPF przy użyciu stylów wizualnych](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  

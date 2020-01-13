@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706793"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916938"
 ---
-# <a name="how-visual-studio-builds-containerized-apps"></a>Jak program Visual Studio kompiluje aplikacje kontenera
+# <a name="how-visual-studio-builds-containerized-apps"></a>Jak program Visual Studio umożliwia tworzenie aplikacji konteneryzowanych
 
 Niezależnie od tego, czy tworzysz z programu Visual Studio IDE, czy konfigurujesz kompilację w wierszu polecenia, musisz wiedzieć, jak program Visual Studio używa pliku dockerfile do kompilowania projektów.  Ze względu na wydajność program Visual Studio jest zgodny ze specjalnym procesem dla aplikacji kontenerowych. Zrozumienie sposobu, w jaki program Visual Studio kompiluje projekty, jest szczególnie istotny podczas dostosowywania procesu kompilacji przez zmodyfikowanie pliku dockerfile.
 
@@ -64,7 +64,7 @@ Końcowy etap zostanie uruchomiony ponownie z `base`i zawiera `COPY --from=publi
 
 Jeśli chcesz skompilować poza programem Visual Studio, możesz użyć `docker build` lub `MSBuild` do kompilowania z poziomu wiersza polecenia.
 
-### <a name="docker-build"></a>Kompilacja platformy Docker
+### <a name="docker-build"></a>docker build
 
 Aby skompilować rozwiązanie z kontenerem z wiersza polecenia, można zwykle użyć `docker build <context>` polecenia dla każdego projektu w rozwiązaniu. Podajesz argument *kontekstu kompilacji* . *Kontekst kompilacji* dla pliku dockerfile to folder na komputerze lokalnym, który jest używany jako folder roboczy do generowania obrazu. Na przykład jest to folder, z którego kopiowane są pliki podczas kopiowania do kontenera.  W projektach .NET Core Użyj folderu zawierającego plik rozwiązania (. sln).  W postaci ścieżki względnej ten argument jest zwykle ".." dla pliku dockerfile w folderze projektu i pliku rozwiązania w folderze nadrzędnym.  W przypadku projektów .NET Framework, kontekst kompilacji jest folderem projektu, a nie folderem rozwiązania.
 
@@ -103,7 +103,7 @@ Rozgrzewania będzie działać tylko w trybie **szybkim** , dlatego uruchomiony 
 
 ## <a name="volume-mapping"></a>Mapowanie woluminów
 
-Aby debugowanie działało w kontenerach, program Visual Studio używa mapowania woluminów do mapowania debugera i folderów NuGet z komputera hosta. Poniżej przedstawiono woluminy, które są zainstalowane w kontenerze:
+Aby debugowanie działało w kontenerach, program Visual Studio używa mapowania woluminów do mapowania debugera i folderów NuGet z komputera hosta. Mapowanie woluminów zostało opisane w dokumentacji platformy Docker [tutaj](https://docs.docker.com/storage/volumes/). Poniżej przedstawiono woluminy, które są zainstalowane w kontenerze:
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ W przypadku aplikacji sieci Web ASP.NET Core mogą istnieć dwa dodatkowe folder
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>Aplikacje ASP.NET Core obsługujące protokół SSL
 
-Narzędzia kontenerów w programie Visual Studio obsługują debugowanie aplikacji ASP.NET Core z obsługą protokołu SSL przy użyciu certyfikatu deweloperskiego, tak samo jak w przypadku, gdy oczekujesz, że będzie on działał bez kontenerów. W takim przypadku program Visual Studio dodaje kilka kroków w celu wyeksportowania certyfikatu i udostępnienia go dla kontenera. Oto przepływ:
+Narzędzia kontenerów w programie Visual Studio obsługują debugowanie aplikacji ASP.NET Core z obsługą protokołu SSL przy użyciu certyfikatu deweloperskiego, tak samo jak w przypadku, gdy oczekujesz, że będzie on działał bez kontenerów. W takim przypadku program Visual Studio dodaje kilka kroków w celu wyeksportowania certyfikatu i udostępnienia go dla kontenera. Oto przepływ, którego program Visual Studio obsługuje podczas debugowania w kontenerze:
 
-1. Upewnij się, że lokalny certyfikat programistyczny jest obecny i zaufany na maszynie hosta za pomocą narzędzia `dev-certs`.
-2. Wyeksportuj certyfikat do%APPDATA%\ASP.NET\Https przy użyciu bezpiecznego hasła przechowywanego w magazynie kluczy tajnych użytkownika dla tej konkretnej aplikacji.
-3. Wolumin zainstaluje następujące katalogi:
+1. Zapewnia, że lokalny certyfikat programistyczny jest obecny i zaufany na maszynie hosta za pomocą narzędzia `dev-certs`.
+2. Eksportuje certyfikat do%APPDATA%\ASP.NET\Https przy użyciu bezpiecznego hasła przechowywanego w magazynie kluczy tajnych użytkownika dla tej konkretnej aplikacji.
+3. Wolumin — instaluje następujące katalogi:
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core szuka certyfikatu zgodnego z nazwą zestawu w folderze *https* , co
 }
 ```
 
-Aby uzyskać więcej informacji na temat używania protokołu SSL z aplikacjami ASP.NET Core w kontenerach, zobacz [hostowanie ASP.NET Core obrazów przy użyciu platformy Docker za pośrednictwem protokołu HTTPS](https://docs.microsoft.com/aspnet/core/security/docker-https).
+Jeśli konfiguracja obsługuje zarówno kompilacje kontenerów, jak i niekontenerowe, należy używać zmiennych środowiskowych, ponieważ ścieżki są specyficzne dla środowiska kontenera.
+
+Aby uzyskać więcej informacji na temat używania protokołu SSL z aplikacjami ASP.NET Core w kontenerach, zobacz [hostowanie ASP.NET Core obrazów przy użyciu protokołu Docker over https](/aspnet/core/security/docker-https)).
 
 ## <a name="debugging"></a>debugowanie
 
@@ -179,7 +181,7 @@ Program Visual Studio używa niestandardowego punktu wejścia kontenera w zależ
 |||
 |-|-|
 | **Kontenery systemu Linux** | Punkt wejścia to `tail -f /dev/null`, co jest nieskończone oczekiwanie na utrzymanie kontenera. Gdy aplikacja jest uruchamiana za pomocą debugera, jest to debuger, który jest odpowiedzialny za uruchamianie aplikacji (czyli `dotnet webapp.dll`). W przypadku uruchomienia bez debugowania narzędzie uruchamia `docker exec -i {containerId} dotnet webapp.dll`, aby uruchomić aplikację.|
-| **Kontenery systemu Windows**| Punkt wejścia jest podobny do `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, w którym działa debuger, więc nasłuchuje połączeń. Ta sama zasada dotyczy, że debuger uruchamia aplikację, a `docker exec` polecenie podczas uruchamiania bez debugowania. W przypadku .NET Framework aplikacji sieci Web punkt wejścia jest nieco inny, gdzie `ServiceMonitor` jest dodawany do polecenia.|
+| **Kontenery Windows**| Punkt wejścia jest podobny do `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, w którym działa debuger, więc nasłuchuje połączeń. Ta sama zasada dotyczy, że debuger uruchamia aplikację, a `docker exec` polecenie podczas uruchamiania bez debugowania. W przypadku .NET Framework aplikacji sieci Web punkt wejścia jest nieco inny, gdzie `ServiceMonitor` jest dodawany do polecenia.|
 
 Punkt wejścia kontenera można modyfikować tylko w projektach platformy Docker, a nie w projektach z pojedynczym kontenerem.
 

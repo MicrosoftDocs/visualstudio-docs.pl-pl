@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 134ed47d26fb7afb50bb50ac18418b436a563eb6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 98925402b91bea62e10b47312e7834ed92a1a178
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297582"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918753"
 ---
 # <a name="verify-your-xamarin-environment"></a>Sprawdzanie środowiska Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,10 +56,10 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
   
              Uwaga: Jeśli nie widzisz opcji **narzędzia > Visual Studio Emulator for Android...** — menu, może nie być zainstalowany sam emulator. Przejdź do **Panelu sterowania, > programy i funkcje**, wybierz pozycję **Microsoft Visual Studio**, a następnie kliknij przycisk **Zmień** , aby ponownie uruchomić Instalatora. Kliknij przycisk **Modyfikuj** w instalatorze, zaznacz pole wyboru **Międzyplatformowe programowanie aplikacji mobilnych > Microsoft Visual Studio Emulator for Android**, a następnie kliknij przycisk **Aktualizuj**.  
   
-        - W przypadku systemu Windows 7 i starszych wersji: zamiast tego wybierz z listy rozwijanej pozycję Xamarin Player dla systemu Android i naciśnij klawisz F5, aby uruchomić. Aby uzyskać szczegółowe informacje na temat programu Xamarin Player, jego Menedżera urządzeń i porad dotyczących rozwiązywania problemów, Przeczytaj [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (Xamarin.com).  
+        - W przypadku systemu Windows 7 i starszych wersji: zamiast tego wybierz z listy rozwijanej pozycję Xamarin Player dla systemu Android i naciśnij klawisz F5, aby uruchomić. Aby uzyskać szczegółowe informacje na temat programu Xamarin Player, jego Menedżera urządzeń i porad dotyczących rozwiązywania problemów, Przeczytaj [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (Xamarin.com).  
   
 > [!NOTE]
-> W programie Visual Studio można zauważyć, że na pasku narzędzi zostanie wyświetlony przycisk Emulator systemu Android Manager (AVD) (Pokaż poniżej), w którym zostanie otwarty Menedżer urządzeń używany do konfigurowania emulatora systemu Google Android.  Nie ma to wpływu na emulator programu Visual Studio dla systemu Android lub Xamarin Player, z których każdy ma własny Menedżer urządzeń do konfigurowania profilów.  Aby uzyskać szczegółowe informacje, zobacz [wprowadzenie do emulatora programu Visual Studio dla systemu Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog Visual Studio ALM) i [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (Xamarin.com).  
+> W programie Visual Studio można zauważyć, że na pasku narzędzi zostanie wyświetlony przycisk Emulator systemu Android Manager (AVD) (Pokaż poniżej), w którym zostanie otwarty Menedżer urządzeń używany do konfigurowania emulatora systemu Google Android.  Nie ma to wpływu na emulator programu Visual Studio dla systemu Android lub Xamarin Player, z których każdy ma własny Menedżer urządzeń do konfigurowania profilów.  Aby uzyskać szczegółowe informacje, zobacz [wprowadzenie do emulatora programu Visual Studio dla systemu Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog Visual Studio ALM) i [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (Xamarin.com).  
 > ![CrossPlat Xamarin — Weryfikuj 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin — Weryfikuj 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  
@@ -78,7 +78,7 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
   
 ## <a name="ios"></a>iOS  
   
-1. Upewnij się, że komputer Mac jest dostępny w sieci i sparowany z programem Visual Studio, zgodnie z opisem w artykule [nawiązywanie połączenia z komputerem Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Xamarin.com).  
+1. Upewnij się, że komputer Mac jest dostępny w sieci i sparowany z programem Visual Studio, zgodnie z opisem w artykule [nawiązywanie połączenia z komputerem Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (Xamarin.com).  
   
 2. Sprawdź poprawność projektanta scenorysu: w projekcie systemu iOS w Eksplorator rozwiązań Otwórz **główny plik scenorysu** . W tym miejscu program Visual Studio obsługuje projektanta, który jest uruchomiony zdalnie na komputerze Mac.  
   
@@ -94,7 +94,7 @@ Po zakończeniu instalacji (zobacz [Instalacja i instalacja](../cross-platform/s
   
          ![Wybieranie elementu docelowego debugowania telefonu iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin — Weryfikuj 6")  
   
-    4. Jeśli wystąpią problemy z nawiązywaniem połączenia z komputerem Mac, należy przeczytać [temat Rozwiązywanie problemów z połączeniem](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (Xamarin.com).  
+    4. Jeśli wystąpią problemy z nawiązywaniem połączenia z komputerem Mac, należy przeczytać [temat Rozwiązywanie problemów z połączeniem](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting) (Xamarin.com).  
   
     5. Jeśli zostanie wyświetlony komunikat o błędzie informujący, że nie zainstalowano profilów aprowizacji pasujących do zainstalowanych kluczy podpisywania systemu iOS, wykonaj następujące czynności:  
   

@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666676"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918760"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Należy poprawnie zaimplementować metody serializacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA2238: Implementuj poprawnie metody serializacji](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA2238: Implementuj poprawnie metody serializacji](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Kategoria|Microsoft. Usage|
+|Kategoria|Microsoft.Usage|
 |Zmiana kluczowa|Przerywanie — Jeśli metoda jest widoczna poza zestawem.<br /><br /> Bez przerywania — Jeśli metoda nie jest widoczna poza zestawem.|
 
 ## <a name="cause"></a>Przyczyna
@@ -48,7 +48,7 @@ Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA2238: Im
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Procedury obsługi zdarzeń serializacji przyjmują jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, Return `void` i mają widoczność `private`.
+  Procedury obsługi zdarzeń serializacji pobierają jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, zwracają `void`i mają widoczność `private`.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej reguły, Popraw sygnaturę, zwracany typ lub widoczność programu obsługi zdarzeń serializacji.

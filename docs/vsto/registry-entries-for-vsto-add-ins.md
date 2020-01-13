@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
-ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
+ms.openlocfilehash: 6f814aabc4a6de4806fd419f16599758799c7538
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955052"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919119"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Wpisy rejestru dotyczące dodatków narzędzi VSTO
   Podczas wdrażania dodatków VSTO utworzonych przy użyciu programu Visual Studio należy utworzyć określony zbiór wpisów rejestru. Te wpisy rejestru zawierają informacje umożliwiające aplikacji Microsoft Office odnajdywania i ładowania dodatku VSTO.
@@ -62,7 +62,7 @@ ms.locfileid: "74955052"
 >
 >Jeśli Instalator jest przeznaczony dla bieżącego użytkownika, nie trzeba go instalować do WOW6432Node, ponieważ ścieżka \Software HKEY_CURRENT_USER jest udostępniona.
 >
->Aby uzyskać więcej informacji [, zobacz 32-bitowe i 64-bitowe dane aplikacji w rejestrze](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
+>Aby uzyskać więcej informacji [, zobacz 32-bitowe i 64-bitowe dane aplikacji w rejestrze](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
  Poniższa tabela zawiera listę wpisów w tym kluczu rejestru.
 

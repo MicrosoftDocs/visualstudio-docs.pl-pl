@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850681"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916800"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby edytować definicje DSL, można tworzyć rozszerzenia projektanta. Typy rozszerzeń, które można wykonać, obejmują dodawanie poleceń menu, Dodawanie programów obsługi dla gestów przeciągania i podwójnego kliknięcia oraz reguły wyzwalane po zmianie określonych typów wartości lub relacji. Rozszerzenia mogą być spakowane jako rozszerzenie integracji programu Visual Studio (VSIX) i dystrybuowane do innych użytkowników.
-
- Aby uzyskać przykładowy kod i więcej informacji na temat tej funkcji, zobacz [witrynę sieci Web Visual Studio Wizualizacja i Modeling SDK (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Konfigurowanie rozwiązania
  Skonfiguruj projekt zawierający kod rozszerzenia oraz projekt VSIX, który eksportuje projekt. Twoje rozwiązanie może zawierać inne projekty, które są włączone do tego samego VSIX.

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593398"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917813"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Równoległe kompilowanie wielu projektów za pomocą programu MSBuild
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel — parametr zadania
-`BuildInParallel` jest opcjonalnym parametrem logicznym dla zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy `BuildInParallel` jest ustawiona na `true` (wartość domyślna to `false`), generowane są wiele procesów roboczych, aby kompilować tyle projektów jednocześnie, jak to możliwe. Do poprawnego działania przełącznik `-maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.
+`BuildInParallel` jest opcjonalnym parametrem logicznym dla zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy `BuildInParallel` jest ustawiona na `true` (wartość domyślna to `true`), generowane są wiele procesów roboczych, aby kompilować tyle projektów jednocześnie, jak to możliwe. Do poprawnego działania przełącznik `-maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.
 
 Poniżej przedstawiono przykład pochodzący z *Microsoft. Common. targets*, how to set The `BuildInParallel` Parameter.
 

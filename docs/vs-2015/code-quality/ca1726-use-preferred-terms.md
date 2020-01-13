@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671566"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918227"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Używaj preferowanych terminów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: use preferowane terminy](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).
+Aby uzyskać najnowszą dokumentację programu Visual Studio, zobacz [CA1726: use preferowane terminy](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Kategoria|Microsoft. nazewnictwo|
+|Kategoria|Microsoft.Naming|
 |Zmiana kluczowa|Przerywanie — gdy są uruchamiane w zestawach<br /><br /> Rozdzielenie — gdy jest uruchamiany w parametrach typu|
 
 ## <a name="cause"></a>Przyczyna

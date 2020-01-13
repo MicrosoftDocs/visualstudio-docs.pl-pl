@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296787"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917784"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszy
 
  ![Okno dialogowe Zmienianie uwierzytelniania dla ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [Tworzenie projektów sieci Web ASP.NET w Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu są nadal istotne dla programu Visual Studio 2015).
+ Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [Tworzenie projektów sieci Web ASP.NET w Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (informacje o uwierzytelnianiu są nadal istotne dla programu Visual Studio 2015).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Uzyskaj dostęp do konta Visual Studio Team Services
  Z menu głównego wybierz kolejno pozycje **zespół > Połącz z Team Foundation Server** , aby wyświetlić okno **Team Explorer** . Kliknij pozycję **Wybierz projekty zespołowe**, a następnie w polu listy w obszarze **Wybierz Team Foundation Server**powinien zostać wyświetlony adres URL konta Visual Studio Team Services. Po wybraniu adresu URL, który zostanie zalogowany, bez konieczności ponownego wprowadzania poświadczeń.
