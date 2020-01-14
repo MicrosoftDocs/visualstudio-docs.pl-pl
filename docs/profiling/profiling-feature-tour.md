@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189413"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929253"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: pierwsze spojrzenie na narzędzia profilowania
 
@@ -34,11 +34,11 @@ Podczas debugowania można użyć okna **Narzędzia diagnostyczne** do analizowa
 Okno **Narzędzia diagnostyczne** jest często preferowanym sposobem profilowania aplikacji, ale w przypadku kompilacji wydania można również przeanalizować aplikację. Aby uzyskać więcej informacji na temat różnych metod, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Aby wyświetlić obsługę narzędzia profilowania dla różnych typów aplikacji, zobacz [narzędzie, którego należy użyć?](#which-tool-should-i-use).
 
 > [!NOTE]
-> Można używać narzędzi po stronie programu z systemem Windows 7 lub nowszym. System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ).
+> Można używać narzędzi po stronie programu z systemem Windows 7 lub nowszym. Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debugerem (**narzędzia diagnostyczne** okno).
 
 ## <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora
 
-Narzędzie użycie procesora CPU jest dobrym miejscem, aby rozpocząć analizowanie wydajności aplikacji. Poinformuje więcej o zasobach procesora CPU zużywanych przez aplikację. Aby zapoznać się z bardziej szczegółowym omówieniem narzędzia użycia procesora CPU, zapoznaj [się z przewodnikiem po stronie początkującej dotyczącej profilowania wydajności](../profiling/beginners-guide-to-performance-profiling.md).
+Narzędzie użycie procesora CPU jest dobrym miejscem, aby rozpocząć analizowanie wydajności aplikacji. Poinformuje więcej o zasobach procesora CPU zużywanych przez aplikację. Aby zapoznać się z bardziej szczegółowym omówieniem narzędzia użycia procesora CPU, zobacz [mierzenie wydajności aplikacji przez analizowanie użycia procesora CPU](../profiling/beginners-guide-to-performance-profiling.md).
 
 W widoku **podsumowania** narzędzia diagnostyczne wybierz opcję **Włącz profilowanie procesora CPU** (musisz być w sesji debugowania).
 
@@ -109,7 +109,7 @@ W widoku Szczegóły osi czasu można znaleźć informacje takie jak typ activit
 
 Aby uzyskać więcej informacji, zobacz [oś czasu aplikacji](../profiling/application-timeline.md).
 
-## <a name="analyze-gpu-usage-direct3d"></a>Analizowanie użycia procesora GPU (Direct3D)
+## <a name="analyze-gpu-usage-direct3d"></a>Analiza użycia procesora GPU (Direct3D)
 
 W aplikacjach Direct3D (składniki Direct3D muszą znajdować C++się w programie) można sprawdzić aktywność procesora GPU i analizować problemy z wydajnością. Aby uzyskać więcej informacji, zobacz [użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage). Aby użyć narzędzia, wybierz pozycję **użycie procesora GPU** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź do scenariusza, który Cię interesuje, a następnie wybierz pozycję **Zatrzymaj zbieranie** , aby wygenerować raport.
 
@@ -136,15 +136,15 @@ Aby zdiagnozować czas odpowiedzi interfejsu użytkownika, powolne obciążenie 
 ::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analizowanie użycia sieci (platformy UWP)
 
-W aplikacjach platformy UWP można analizować operacje sieciowe wykonywane przy użyciu interfejsu API `Windows.Web.Http`. To narzędzie może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania. Aby użyć narzędzia, wybierz **Sieć** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W aplikacji przejdź przez scenariusz, który używa `Windows.Web.Http`, a następnie wybierz polecenie **Zatrzymaj zbieranie** , aby wygenerować raport.
+W aplikacjach platformy UWP można analizować operacje sieciowe wykonywane przy użyciu interfejsu API `Windows.Web.Http`. To narzędzie może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania. Aby użyć narzędzia, wybierz **Sieć** w profilerze wydajności, a następnie wybierz polecenie **Uruchom**. W swojej aplikacji, przechodzą przez scenariusz, który używa `Windows.Web.Http`, a następnie wybierz **Zatrzymaj Kolekcjonowanie** podczas generowania raportu.
 
 ![Narzędzie profilowania użycia sieci](../profiling/media/prof-tour-network-usage.png "Użycie sieci diag")
 
-Wybierz operację w widoku Podsumowanie, aby wyświetlić więcej szczegółów.
+Wybierz operację podsumowania bardziej szczegółowo widokami.
 
 ![Szczegółowe informacje w narzędziu Użycie sieci](../profiling/media/prof-tour-network-usage-details.png "Szczegóły użycia sieci diag")
 
-Aby uzyskać więcej informacji, zobacz temat [użycie sieci](../profiling/network-usage.md).
+Aby uzyskać więcej informacji, zobacz [użycie sieci](../profiling/network-usage.md).
 ::: moniker-end
 
 ## <a name="analyze-performance-legacy-tools"></a>Analizowanie wydajności (starsze narzędzia)
@@ -158,30 +158,30 @@ Jeśli potrzebujesz funkcji, takich jak Instrumentacja, która nie jest obecnie 
 Poniżej znajduje się tabela zawierająca listę różnych narzędzi oferowanych przez program Visual Studio i różne typy projektów, z których można korzystać:
 
 ::: moniker range=">=vs-2019"
-|Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
+|Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|opcję|opcję|opcję|
-|[Użycie pamięci](../profiling/memory-usage.md)|opcję|opcję|opcję|
-|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|opcję|opcję|znaleziono|
-|[Oś czasu aplikacji](../profiling/application-timeline.md)|opcję|opcję|znaleziono|
-|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|opcję|tak dla języka XAML, nie dla HTML|opcję|
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|opcję|znaleziono|opcję|
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
+|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
+|[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak dla języka XAML, nie dla HTML|tak|
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|nie|tak|
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-|Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET rdzeń|
+|Narzędzie wydajności|Pulpit systemu Windows|Platforma UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Użycie procesora CPU](../profiling/cpu-usage.md)|opcję|opcję|opcję|
-|[Użycie pamięci](../profiling/memory-usage.md)|opcję|opcję|opcję|
-|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|opcję|opcję|znaleziono|
-|[Oś czasu aplikacji](../profiling/application-timeline.md)|opcję|opcję|znaleziono|
-|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|opcję|tak dla języka XAML, nie dla HTML|opcję|
-|[Eksplorator wydajności](../profiling/performance-explorer.md)|opcję|znaleziono|opcję|
+|[Użycie procesora CPU](../profiling/cpu-usage.md)|tak|tak|tak|
+|[Użycie pamięci](../profiling/memory-usage.md)|tak|tak|tak|
+|[Użycie procesora GPU](/visualstudio/debugger/graphics/gpu-usage)|tak|tak|nie|
+|[Oś czasu aplikacji](../profiling/application-timeline.md)|tak|tak|nie|
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|tak|tak dla języka XAML, nie dla HTML|tak|
+|[Eksplorator wydajności](../profiling/performance-explorer.md)|tak|nie|tak|
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|Tylko platforma .NET z Visual Studio Enterprise|
-|[Użycie sieci](../profiling/network-usage.md)|znaleziono|opcję|znaleziono|
-|[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|znaleziono|tak dla języka HTML, nie dla języka XAML|znaleziono|
-|[Pamięć języka JavaScript](../profiling/javascript-memory.md)|znaleziono|tak dla języka HTML, nie dla języka XAML|znaleziono|
+|[Użycie sieci](../profiling/network-usage.md)|nie|tak|nie|
+|[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|nie|tak dla języka HTML, nie dla języka XAML|nie|
+|[Pamięć języka JavaScript](../profiling/javascript-memory.md)|nie|tak dla języka HTML, nie dla języka XAML|nie|
 ::: moniker-end
 
 

@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851712"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944262"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji w programie Shell (izolowanym)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
   
 - Visual Studio SDK  
   
-- Zestaw [narzędzi Instalator Windows XML](http://wix.sourceforge.net/) w wersji 3,6  
+- Zestaw [narzędzi Instalator Windows XML](https://documentation.help/WiX-Toolset/index.html/) w wersji 3,6  
   
   Przykład wymaga również wizualizacji i modelowania zestawu SDK firmy Microsoft, które nie są wymagane przez wszystkie powłoki.  
   
@@ -54,7 +54,7 @@ Aby zainstalować aplikację powłoki, należy wykonać następujące czynności
 2. Dla każdego projektu, który zawiera manifest VSIX, Edytuj zadania kompilacji w celu wygenerowania zawartości do lokalizacji, z której zostanie zainstalowany plik MSI. Uwzględnij manifest VSIX w danych wyjściowych kompilacji, ale nie Kompiluj pliku. VSIX.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Tworzenie pliku MSI dla powłoki  
- Aby skompilować pakiet MSI, zalecamy użycie zestawu [narzędzi Instalator Windows XML](http://wix.sourceforge.net/) , ponieważ zapewnia większą elastyczność niż standardowy projekt konfiguracji.  
+ Aby skompilować pakiet MSI, zalecamy użycie zestawu [narzędzi Instalator Windows XML](https://documentation.help/WiX-Toolset/index.html) , ponieważ zapewnia większą elastyczność niż standardowy projekt konfiguracji.  
   
  W pliku Product. WXS Ustaw bloki wykrywania i układ składników powłoki.  
   

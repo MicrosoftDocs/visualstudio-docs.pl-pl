@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254619"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929238"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Użycie pamięci miar w programie Visual Studio
 
@@ -22,7 +22,7 @@ Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie p
 
 Pokazano grafiki **narzędzia diagnostyczne** okna (dostępne w programie Visual Studio 2015 Update 1 lub nowszy):
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools — Update1")
 
 Mimo że można zbierać migawki pamięci w dowolnym momencie **użycie pamięci** narzędzie debugera programu Visual Studio można użyć do kontrolowania, jak aplikacja wykonuje podczas badania problemów z wydajnością. Ustawianie punktów przerwania, przechodzenie krok po kroku, Przerwij wszystko i inne akcje debuger może pomóc w skoncentrowaniu swoje badania wydajności ścieżki kodu, które są najbardziej odpowiednie. Wykonywania tych akcji, gdy aplikacja jest uruchomiona, można wyeliminować szumu od kodu, który nie interesują użytkownika i może znacznie skrócić czas potrzebny do zdiagnozowania problemu.
 
@@ -60,18 +60,18 @@ W tym samouczku wykonasz następujące czynności:
 
      Po zakończeniu ładowania aplikacji zostanie wyświetlony widok podsumowania narzędzia diagnostyczne.
 
-     ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![Karta Podsumowanie narzędzi diagnostycznych](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     > Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawki w aplikacjach w trybie macierzystym lub mieszanym, uruchom sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz **użycie pamięci** kartę, a następnie wybierz **profilowanie sterty**.
+     > Ponieważ zbieranie danych może mieć wpływ na wydajność debugowania aplikacji natywnej lub trybu mieszanego pamięci, migawki pamięci są domyślnie wyłączone. Aby włączyć migawek w aplikacji natywnej lub trybu mieszanego, Rozpocznij sesję debugowania (klawisz skrótu: **F5**). Gdy **narzędzia diagnostyczne** zostanie wyświetlone okno, wybierz **użycie pamięci** kartę, a następnie wybierz **profilowanie sterty**.
      >
      >  ![Włącz migawki](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  Zatrzymaj (klawisz skrótu:SHIFT+**F5**) i ponownie uruchom debugowanie.
+     >  Zatrzymaj (klawisz skrótu: **Shift**+**F5**) i uruchom ponownie debugowanie.
 
 6. Aby zrobić migawkę podczas uruchamiania sesji debugowania, wybierz opcję **wykonaj migawkę** na **użycie pamięci** paska narzędzi. (Pomocne może być Ustaw punkt przerwania w tym miejscu także.)
 
-    ![Wykonaj migawkę](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
+    ![Utwórz migawkę](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
      > Aby utworzyć punkt odniesienia dla porównania pamięci, należy rozważyć wykonanie migawki podczas uruchamiania sesji debugowania.
@@ -89,7 +89,7 @@ W tym samouczku wykonasz następujące czynności:
 ## <a name="analyze-memory-usage-data"></a>Analizowanie danych użycia pamięci
 Wiersze tabeli podsumowania użycia pamięci zawiera listę migawek, które miały podczas sesji debugowania i zawiera łącza do bardziej szczegółowych widoków.
 
-![Tabela podsumowująca pamięci](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Tabela podsumowania pamięci](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  Nazwa kolumny zależą od trybu debugowania, możesz wybrać we właściwościach projektu: .NET, natywny lub mieszany (.NET i natywny).
 
@@ -101,7 +101,7 @@ Po wykonaniu wiele migawek komórek tabeli podsumowania obejmują zmianę warto�
 
 Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szczegółowy raport użycia pamięci:
 
-- Aby wyświetlić szczegóły różnicę między bieżącą migawką i poprzedniej migawki, wybierz łącze Zmień strzałkę po lewej stronie (![zwiększyć użycie pamięci](../profiling/media/prof-tour-mem-usage-up-arrow.png "zwiększyć użycie pamięci")). Czerwona strzałka wskazuje wzrost użycia pamięci i zieloną strzałkę, aby wskazuje zmniejszenie.
+- Aby wyświetlić szczegóły różnicy między bieżącą migawką i poprzednią migawką, wybierz link Zmień z lewej strony strzałki (![Zwiększ użycie pamięci](../profiling/media/prof-tour-mem-usage-up-arrow.png "Zwiększenie użycia pamięci")). Czerwona strzałka wskazuje wzrost użycia pamięci i zieloną strzałkę, aby wskazuje zmniejszenie.
 
 > [!TIP]
 > Aby zidentyfikować problemy z pamięcią szybciej, raporty różnice są sortowane według typów obiektów, które zwiększył się wykorzystać w ogólny numer (kliknij łącze Zmień w **obiekty (różnica)** kolumny) lub większa wykorzystać w ogólny rozmiar sterty (kliknij Zmień łącze w **Rozmiar sterty (różnica)** kolumny).
@@ -113,19 +113,19 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 ### <a name="managed-types-reports"></a>Zarządzane typy raportów
  Wybierz link bieżącego **obiekty (różnica)** lub **alokacje (różnica)** komórka w tabeli podsumowania użycia pamięci.
 
- ![Raport typu zarządzanego debugera &#45; ścieżki do obiektu głównego](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![Debugowanie ścieżki raportów &#45; typów zarządzanych do katalogu głównego](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  Górne okienko pokazuje liczbę i rozmiar typów w migawce, takich jak rozmiar wszystkich obiektów, które są przywoływane przez typ (**rozmiarze włącznie**).
 
  **Ścieżki do obiektu głównego** drzewa w dolnym okienku Wyświetla obiekty odwołujące się do typu wybranego w górnym okienku. Moduł zbierający elementy bezużyteczne .NET Framework Czyści pamięć dla obiektu, tylko wtedy, gdy ostatni typ, który odwołuje się do niej po udostępnieniu.
 
- **Przywoływane typy** drzewa Wyświetla odwołania, które są przechowywane w wybranego w górnym okienku typu.
+ Drzewo **przywoływanych obiektów** wyświetla odwołania, które są przechowywane przez typ wybrany w górnym okienku.
 
- ![Widok raportu typów zarządzanych przywoływanych](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Widok raportu zarządzanych obiektów, do których istnieją odwołania](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- Aby wyświetlić wystąpienia typu wybranego w górnym okienku, wybierz ![ikonę wystąpienia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") ikony.
+ Aby wyświetlić wystąpienia wybranego typu w górnym okienku, wybierz ikonę ![wystąpienia](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") ikona.
 
- ![Wystąpienia widoku](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Widok wystąpień](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  **Wystąpień** widoku wystąpienia wybranego obiektu są wyświetlane w migawce w górnym okienku. **Ścieżki do obiektu głównego** i **przywoływane obiekty** okienku są wyświetlane obiekty odwołujące się do wybranego wystąpienia i typy, które odwołuje się do wybranego wystąpienia. Po zatrzymaniu debugera w punkcie, w którym migawka została utworzona, możesz umieścić kursor **wartość** komórkę, aby wyświetlić wartości obiektów w etykietce narzędzia.
 
@@ -136,11 +136,11 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 
  **Widok typów** Wyświetla liczbę i rozmiar typów w migawce.
 
-- Wybierz ikonę wystąpienia (![ikonę wystąpienia, w kolumnie Typ obiektu](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) dla wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.
+- Wybierz ikonę wystąpienia (![ikona wystąpienia w kolumnie Typ obiektu](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) wybranego typu, aby wyświetlić informacje o obiektach wybranego typu w migawce.
 
      **Wystąpień** widok zawiera każde wystąpienie wybranego typu. Wybranie wystąpienia przedstawia stos wywołań, które spowodowało utworzenie wystąpienia w **stos wywołań alokacji** okienka.
 
-     ![Wystąpienia widoku](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Widok wystąpień](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Wybierz **widok stosów** w **tryb widoku** listy w celu wyświetlenia alokacji stosu dla wybranego typu.
 
@@ -154,7 +154,7 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
 
 - Wybierz migawkę w **Porównaj z** raport zarządzane lub natywne listy.
 
-   ![Wybierz migawkę z porównania na liście](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ![Wybierz migawkę z listy Porównaj z](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
 Raport zmiana dodaje kolumn (oznaczone **(różnica)** ) do podstawowej raport, który wyświetlenie różnicy między wartością podstawowy, migawki i migawki porównania. Poniżej przedstawiono, jak może wyglądać raport natywnego typu widoku różnic:
 
@@ -164,7 +164,7 @@ Raport zmiana dodaje kolumn (oznaczone **(różnica)** ) do podstawowej raport, 
 
 [Analizowanie użycia Procesora i pamięci podczas debugowania](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Blog C++ wizualny: Profilowanie pamięci w C++ Visual 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Blogu Visual C++: Profilowanie pamięci w programie Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
 ## <a name="next-steps"></a>Następne kroki
 

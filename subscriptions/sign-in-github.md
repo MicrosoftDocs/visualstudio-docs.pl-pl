@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio za pomocą konta usługi GitHub.
-ms.openlocfilehash: 8a1c2884dbc5570ab18cf7496c699774702b5b62
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850532"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944195"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Logowanie do subskrypcji programu Visual Studio za pomocą konta usługi GitHub 
 
@@ -49,7 +49,7 @@ Odp.: nie wszystkie produkty firmy Microsoft mogą uzyskać dostęp do GitHub.co
 Odp.: nie. Nie spowoduje to zmiany hasła usługi GitHub. będziesz mieć już inny sposób na zalogowanie się do konto Microsoft. Za każdym razem, gdy zalogujesz się przy użyciu swojego adresu e-mail, oferujemy możliwość zalogowania się przy użyciu hasła konto Microsoft lub przejściu do usługi GitHub, aby się zalogować. Zdecydowanie zalecamy, aby w razie konieczności dodać hasło, upewnij się, że jest ono inne niż hasło do konta usługi GitHub.
 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>P: chcę dodać aplikację Authenticator do konta utworzonego za pomocą usługi GitHub.  Czy mogę to zrobić?
-Odp.: nie ma problemu — po prostu pobierz aplikację i zaloguj się przy użyciu swojego adresu e-mail. Po zalogowaniu się przy użyciu adresu e-mail zostanie wyświetlony monit o wybranie [aplikacji Authenticator](https://www.microsoft.com/account/authenticator#getapp) lub GitHub jako poświadczenia.
+Odp.: nie ma problemu — po prostu pobierz aplikację i zaloguj się przy użyciu swojego adresu e-mail. Po zalogowaniu się przy użyciu adresu e-mail zostanie wyświetlony monit o wybranie [aplikacji Authenticator](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6) lub GitHub jako poświadczenia.
 
 #### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Pytanie: włączono uwierzytelnianie dwuskładnikowe zarówno na stronie my GitHub, jak i na kontach Microsoft (MSA), ale po zalogowaniu się do mojego elementu MSA nadal jest wymagane dwukrotne uwierzytelnienie.  Dlaczego?
 Odp.: ze względu na ograniczenia zabezpieczeń firma Microsoft zlicza logowanie za pomocą usługi GitHub w ramach weryfikacji jednoskładnikowej, nawet jeśli w tym miejscu włączono weryfikację dwuetapową. W związku z tym należy ponownie uwierzytelnić konto Microsoft. 

@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210593"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944219"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Co nowego w debugerze w programie Visual Studio 2017
 
@@ -46,7 +46,7 @@ Debuger obejmuje następujące nowe funkcje:
 
     ![Przyciski do tyłu i do przodu](../debugger/media/intellitrace-step-back-icons-description.png  "Przyciski do tyłu i do przodu")
 
-    Aby uzyskać więcej informacji, zobacz stronę [Sprawdzanie stanu poprzedniej aplikacji przy użyciu IntelliTrace](../debugger/view-historical-application-state.md) .
+    Aby uzyskać więcej informacji, zobacz stronę [Sprawdzanie stanu poprzedniej aplikacji przy użyciu IntelliTrace](view-historical-application-state.md) .
 
 - **Pomocnik wyjątku** zastępuje asystenta wyjątków i pojawia się w niemodalnym oknie dialogowym, w którym wystąpił błąd. **Pomocnik wyjątków** zapewnia szybszy dostęp do wszelkich wyjątków wewnętrznych, dodatkową analizę przez debuger (jeśli jest dostępny) i natychmiastowy dostęp do **ustawień wyjątków** dla wyjątku. Pomocnika wyjątków można również przeciągać do widoku swobodnego, jeśli blokuje coś, czego potrzebujesz do wyświetlenia.
 
@@ -54,13 +54,13 @@ Debuger obejmuje następujące nowe funkcje:
 
     ![Pomocnik wyjątku debugera](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    Aby uzyskać więcej informacji, zobacz wpis w blogu [using the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) .
+    Aby uzyskać więcej informacji, zobacz wpis w blogu [using the new Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/) .
 
 - Teraz można uruchomić wiersz kodu, gdy jest wstrzymany w debugerze, zaznaczając ikonę **Uruchom wykonywanie do tutaj** zieloną strzałkę (zobaczysz ikonę przy umieszczeniu wskaźnika myszy nad wierszem kodu). Eliminuje to potrzebę ustawiania tymczasowych punktów przerwania.
 
     ![Uruchomienie debugera do kliknięcia](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
-- Warunki dotyczące wyjątków można ustawić w oknie dialogowym **Ustawienia wyjątku** (można to zrobić za pomocą ikony **Edytuj warunek** w oknie dialogowym Ustawienia wyjątku lub przy użyciu menu po kliknięciu prawym przyciskiem myszy dla wyjątku). Obecnie obsługiwane warunki obejmują nazwy modułu do dołączania lub wykluczania dla wyjątku.
+- Warunki dotyczące wyjątków można ustawić w oknie dialogowym **Ustawienia wyjątku** (można to zrobić za pomocą ikony **Edytuj warunek** w oknie dialogowym Ustawienia wyjątku lub przy użyciu menu po kliknięciu prawym przyciskiem myszy dla wyjątku). Obecnie obsługiwane warunki obejmują nazwy modułów, które mają zostać dołączone lub wykluczone dla wyjątku.
 
     ![Warunki dotyczące wyjątku](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
@@ -68,7 +68,7 @@ Debuger obejmuje następujące nowe funkcje:
 
     ![Wyszukaj w obszarze Dołącz do procesu](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Aby uzyskać więcej informacji o tych nowych funkcjach, zobacz [Informacje o [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]wersji programu ](/visualstudio/releasenotes/vs2017-relnotes).
+Aby uzyskać więcej informacji o tych nowych funkcjach, zapoznaj się z informacjami o [wersji [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Zobacz także
 
