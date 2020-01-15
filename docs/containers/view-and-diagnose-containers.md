@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188726"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846942"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery oraz obrazy w programie Visual Studio
 
@@ -21,11 +21,11 @@ Możesz zobaczyć, co się dzieje w kontenerach, które obsługują aplikację p
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 - [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual studio 2019 w wersji 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) lub nowszej lub jeśli używasz wcześniejszej wersji programu Visual Studio 2019, zainstaluj [rozszerzenie okna kontenerów](https://aka.ms/vscontainerspreview).
+- [Visual studio 2019 w wersji 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) lub nowszej lub jeśli używasz wcześniejszej wersji programu Visual Studio 2019, zainstaluj [rozszerzenie okna kontenerów](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Wyświetlanie informacji o kontenerach
 
-Okno **kontenery** jest otwierane automatycznie po uruchomieniu kontenera projektu .NET. Aby w dowolnym momencie wyświetlić kontenery w programie Visual Studio, użyj **klawisza Ctrl** +**Q** , aby aktywować pole wyszukiwania programu Visual Studio, a następnie wpisz `Containers` i wybierz pierwszy element. Możesz również otworzyć okno **kontenery** z menu głównego. Użyj **widoku** ścieżki menu  >  innych**kontenerów** > **systemu Windows** .  
+Okno **kontenery** jest otwierane automatycznie po uruchomieniu kontenera projektu .NET. Aby w dowolnym momencie wyświetlić kontenery w programie Visual Studio, użyj **klawisza Ctrl**+**Q** , aby aktywować pole wyszukiwania programu Visual Studio, a następnie wpisz `Containers` i wybierz pierwszy element. Możesz również otworzyć okno **kontenery** z menu głównego. Użyj **widoku** ścieżki menu > innych **kontenerów** > **systemu Windows** .  
 
 ![Zrzut ekranu karty środowisko w oknie kontenery](media/view-and-diagnose-containers/container-window.png)
 
@@ -60,7 +60,7 @@ Karta **dzienniki** zawiera wyniki polecenia `docker logs`. Domyślnie karta pok
 Aby wyczyścić dzienniki, użyj przycisku **Wyczyść** na karcie **dzienniki** .  Aby pobrać wszystkie dzienniki, użyj przycisku **Odśwież** .
 
 > [!NOTE]
-> Program Visual Studio automatycznie przekierowuje stdout i stderr do okna **danych wyjściowych** w przypadku uruchamiania bez debugowania z kontenerami systemu Windows, więc kontenery systemu Windows uruchomione z programu Visual Studio przy użyciu **kombinacji klawiszy CTRL** +**F5** nie będą wyświetlały dzienników Ta karta; Zamiast tego użyj okna **danych wyjściowych** .
+> Program Visual Studio automatycznie przekierowuje stdout i stderr do okna **danych wyjściowych** w przypadku uruchamiania bez debugowania z kontenerami systemu Windows, więc kontenery systemu Windows uruchomione z programu Visual Studio przy użyciu **kombinacji klawiszy CTRL**+**F5** nie będą wyświetlały dzienników na tej karcie; Zamiast tego użyj okna **danych wyjściowych** .
 
 ## <a name="view-the-filesystem"></a>Wyświetlanie systemu plików
 
@@ -88,7 +88,7 @@ W przypadku kontenerów systemu Windows zostanie otwarty wiersz polecenia system
 
 ![Zrzut ekranu okna bash](media/view-and-diagnose-containers/container-bash-window.png)
 
-Zwykle okno terminalu jest otwierane poza programem Visual Studio jako osobne okno. Jeśli chcesz, aby środowisko wiersza polecenia było zintegrowane z Visual Studio IDE jako okno narzędzi było dokować, możesz zainstalować [Terminal/Swagger/docs/v1./Swagger/docs/v1.](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
+Zwykle okno terminalu jest otwierane poza programem Visual Studio jako osobne okno. Jeśli chcesz, aby środowisko wiersza polecenia było zintegrowane z Visual Studio IDE jako okno narzędzi było dokować, możesz zainstalować [Terminal/Swagger/docs/v1./Swagger/docs/v1](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
 
 ## <a name="attach-the-debugger-to-a-process"></a>Dołącz debuger do procesu
 
