@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: 'CA3147: Oznaczanie procedur obsługi zleceń za pomocą tokenu ValidateAntiForgeryToken'
                   href: ca3147.md
+                - name: 'CA5358: Nie używaj niebezpiecznych trybów szyfrowania'
+                  href: ca5358.md
                 - name: 'CA5361: Nie wyłączaj użycia silnej kryptografii w pakiecie SChannel'
                   href: ca5361.md
                 - name: 'CA5363: Nie wyłączaj weryfikacji żądań'
