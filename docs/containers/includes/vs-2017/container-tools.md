@@ -1,46 +1,46 @@
 ---
 title: Narzędzia kontenerów programu Visual Studio z platformą ASP.NET Core
 author: ghogen
-description: Dowiedz się, jak używać narzędzi Visual Studio 2017 i platformy Docker for Windows
+description: Dowiedz się, jak korzystać z narzędzi i Docker for Windows programu Visual Studio 2017
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0555aeb722132ba7b9628be9096847d45efb66ef
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 63d2f021aabc3d9152900ad62f072ec1a35a8e5b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68146997"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75927848"
 ---
-Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamianie konteneryzowanych aplikacji platformy ASP.NET Core i opublikować je w usłudze Azure Container Registry (ACR), usługi Docker Hub, usłudze Azure App Service lub rejestru kontenerów. W tym artykule opublikujemy do usługi ACR.
+Program Visual Studio umożliwia łatwe tworzenie, debugowanie i uruchamianie kontenerów ASP.NET Core aplikacji oraz publikowanie ich w usłudze Azure Container Registry (ACR), Docker Hub, Azure App Service lub własnym rejestrze kontenerów. W tym artykule opublikujemy ACR.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* [Pulpitu platformy docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z **programowania dla sieci Web**, **narzędzi Azure** obciążenia, i/lub **programowanie dla wielu platform .NET Core** zainstalowanym obciążeniem
-* Publikowanie w usłudze Azure Container Registry w subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/offers/ms-azr-0044p/).
+* [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* [Program Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** i/lub **oprogramowania .NET Core dla wielu platform**
+* Do opublikowania w usłudze Azure Container Registry, subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
-## <a name="installation-and-setup"></a>Instalacja i Konfiguracja
+## <a name="installation-and-setup"></a>Instalacja i konfiguracja
 
-Instalacja platformy Docker, najpierw zapoznaj się z informacjami o [pulpitu platformy Docker for Windows: Co należy wiedzieć przed zainstalowaniem](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Następnie zainstaluj [pulpitu platformy Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+W przypadku instalacji platformy Docker najpierw przejrzyj informacje na [pulpicie Docker dla systemu Windows: co należy wiedzieć przed zainstalowaniem](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)programu. Następnie zainstaluj program [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
-## <a name="add-a-project-to-a-docker-container"></a>Dodaj projekt do kontenera platformy Docker
+## <a name="add-a-project-to-a-docker-container"></a>Dodawanie projektu do kontenera platformy Docker
 
-1. Wybierz z menu programu Visual Studio **Plik > Nowy > Projekt**.
-1. W obszarze **szablony** części **nowy projekt** okno dialogowe, wybierz opcję **Visual C# > sieci Web**.
+1. Z menu programu Visual Studio wybierz pozycję **plik > nowy > projekt**.
+1. W sekcji **Szablony** okna dialogowego **Nowy projekt** wybierz pozycję  **C# Visual > Web**.
 1. Wybierz **aplikacji sieci Web platformy ASP.NET Core**.
-1. Nazwij swoją nową aplikację (lub wykonać domyślnie) i wybierz **OK**.
+1. Nadaj nowej aplikacji nazwę (lub wybierz ją domyślną), a następnie kliknij **przycisk OK**.
 1. Wybierz **aplikacji sieci Web**.
-1. Sprawdź **włączyć obsługę platformy Docker** pole wyboru.
+1. Zaznacz pole wyboru **Włącz obsługę platformy Docker** .
 
-   ![Zaznacz pole wyboru obsługę platformy Docker](../../media/container-tools/enable-docker-support.PNG)
+   ![Pole wyboru Włącz obsługę platformy Docker](../../media/container-tools/enable-docker-support.PNG)
 
-1. Wybierz typ kontenera (Windows lub Linux) i kliknij **OK**.
+1. Wybierz odpowiedni typ kontenera (system Windows lub Linux), a następnie kliknij przycisk **OK**.
 
-## <a name="dockerfile-overview"></a>Plik Dockerfile — omówienie
+## <a name="dockerfile-overview"></a>Plik Dockerfile — przegląd
 
-A *pliku Dockerfile*, przepisu do utworzenia końcowej obrazu platformy Docker jest tworzony w projekcie. Zapoznaj się [odwołanie do pliku Dockerfile](https://docs.docker.com/engine/reference/builder/) dla zrozumienia poleceń w niej.:
+*Pliku dockerfile*, przepis dotyczący tworzenia końcowego obrazu platformy Docker, jest tworzony w projekcie. Zapoznaj się z dokumentacją [pliku dockerfile](https://docs.docker.com/engine/reference/builder/) , aby zrozumieć polecenia w nim.:
 
 ```
 FROM microsoft/dotnet:2.1-aspnetcore-runtime AS base
@@ -65,19 +65,19 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Poprzedni *pliku Dockerfile* opiera się na [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) obrazu i zawiera instrukcje dotyczące modyfikowania obraz podstawowy, tworząc projekt i dodanie go do kontenera.
+Poprzedni *pliku dockerfile* opiera się na obrazie [Microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) i zawiera instrukcje dotyczące modyfikowania obrazu podstawowego przez skompilowanie projektu i dodanie go do kontenera.
 
-Gdy okno dialogowe nowego projektu w **Konfigurowanie protokołu HTTPS** pole wyboru jest zaznaczone, *pliku Dockerfile* udostępnia dwa porty. Jeden port jest używany do ruchu HTTP; inne port jest używany do obsługi protokołu HTTPS. Jeśli nie jest zaznaczone pole wyboru, jednego portu (80) jest uwidaczniany dla ruchu HTTP.
+Jeśli w oknie dialogowym nowego projektu zostanie zaznaczone pole wyboru **Konfiguruj dla protokołu HTTPS**, plik *Dockerfile* uwidacznia dwa porty. Jeden port jest używany na potrzeby ruchu HTTP, a drugi na potrzeby protokołu HTTPS. Jeśli to pole wyboru nie zostanie zaznaczone, dla ruchu HTTP zostanie uwidoczniony pojedynczy port (80).
 
 ## <a name="debug"></a>Debugowanie
 
-Wybierz **Docker** z poziomu pozycji Debuguj listy rozwijanej w pasku narzędzi, a następnie uruchamiania, debugowania aplikacji. Może pojawić się komunikat, wraz z monitem o o ufanie certyfikat; Wybierz zaufać certyfikatowi, aby kontynuować.
+Wybierz pozycję **Docker** z listy rozwijanej debugowania na pasku narzędzi i rozpocznij debugowanie aplikacji. Może pojawić się komunikat z monitem o zaufać certyfikatowi; Wybierz relację zaufania certyfikatu, aby kontynuować.
 
-**Dane wyjściowe** okno pokazuje, jakie akcje pojawiają się.
+Okno **dane wyjściowe** pokazuje, jakie akcje są wykonywane.
 
-Otwórz **Konsola Menedżera pakietów** (PMC) z menu **narzędzia**> Menedżer pakietów NuGet, **Konsola Menedżera pakietów**.
+Otwórz **konsolę Menedżera pakietów** (PMC) z menu **Narzędzia**, > Menedżer pakietów NuGet, **konsola Menedżera pakietów**.
 
-Wynikowy obraz platformy Docker w aplikacji zostanie oznaczony jako *dev*. Obraz, który jest oparty na *2.1 — aspnetcore-środowiska uruchomieniowego* tag *microsoft/dotnet* obrazu podstawowego. Uruchom `docker images` polecenia w pliku **Konsola Menedżera pakietów** okna (PMC). Wyświetlane są obrazy na komputerze:
+Wynikowy obraz platformy Docker aplikacji jest oznaczony tagiem *dev*. Obraz bazuje na tagu *2.1-aspnetcore-runtime* obrazu podstawowego *microsoft/dotnet*. Uruchom polecenie `docker images` w oknie **konsoli menedżera pakietów** (PMC). Na komputerze są wyświetlane następujące obrazy:
 
 ```console
 REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
@@ -86,9 +86,9 @@ microsoft/dotnet  2.1-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
 ```
 
 > [!NOTE]
-> **Dev** obraz nie zawiera plików binarnych aplikacji i innej zawartości jako **debugowania** konfiguracje używają instalowania woluminów iteracji edytowanie i debugowanie. Aby utworzyć obraz produkcji zawierające całą zawartość, należy użyć **wersji** konfiguracji.
+> Obraz **deweloperski** nie zawiera plików binarnych aplikacji i innych zawartości, ponieważ konfiguracje **debugowania** używają funkcji instalacji woluminu, aby zapewnić iteracyjne edytowanie i debugowanie. Aby utworzyć obraz produkcyjny zawierający całą zawartość, użyj konfiguracji **wydania** .
 
-Uruchom `docker ps` polecenia w konsoli zarządzania Pakietami. Zwróć uwagę, że aplikacja jest uruchomiona przy użyciu kontenera:
+Uruchom polecenie `docker ps` w konsoli PMC. Zauważ, że aplikacja działa przy użyciu kontenera:
 
 ```console
 CONTAINER ID        IMAGE                  COMMAND                   CREATED             STATUS              PORTS                   NAMES
@@ -97,28 +97,28 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
 
 ## <a name="publish-docker-images"></a>Publikowanie obrazów platformy Docker
 
-Po zakończeniu cyklu programowanie i debugowanie aplikacji, można utworzyć obraz aplikacji produkcyjnych.
+Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obraz produkcyjny aplikacji.
 
-1. Zmień konfigurację menu rozwijane **wersji** i kompilowania aplikacji.
-1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz polecenie **Publikuj**.
-1. W oknie dialogowym docelowej publikowania wybierz **Container Registry** kartę.
-1. Wybierz **Tworzenie nowej usługi Azure Container Registry** i kliknij przycisk **Publikuj**.
-1. Wprowadź żądane wartości w **Utwórz nowy rejestr Azure Container Registry**.
+1. Zmień opcję listy rozwijanej konfiguracji na **Wydanie** i skompiluj aplikację.
+1. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Publikuj**.
+1. W oknie dialogowym Publikowanie elementu docelowego wybierz kartę **Container Registry** .
+1. Wybierz pozycję **Utwórz nowe Azure Container Registry** a następnie kliknij przycisk **Publikuj**.
+1. Wypełnij odpowiednie wartości w polu **Utwórz nową Azure Container Registry**.
 
     | Ustawienie      | Sugerowana wartość  | Opis                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Unikatowa nazwa identyfikująca rejestru kontenerów. |
-    | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure do użycia. |
-    | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której chcesz utworzyć rejestru kontenerów. Wybierz **New** do tworzenia nowej grupy zasobów.|
-    | **[JEDNOSTKA SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standardowa (Standard) | Warstwy usługi container Registry  |
-    | **Lokalizacja w rejestrze** | Bliską lokalizację | Wybierz lokalizację w [region](https://azure.microsoft.com/regions/) okolicy lub w pobliżu innych usług używających usługi container registry. |
+    | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
+    | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
+    | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
+    | **[Magazyn](/azure/container-registry/container-registry-skus)** | Standardowy | Warstwa usług w rejestrze kontenerów  |
+    | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 
-    ![Visual Studio utworzyć okno dialogowe usługi Azure Container Registry][0]
+    ![Okno dialogowe tworzenia Azure Container Registry programu Visual Studio][0]
 
 1. Kliknij przycisk **Utwórz**.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Możesz teraz ściągnąć kontenera z rejestru na dowolnym hoście może uruchamiać obrazy Docker, na przykład [usługi Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
+Teraz można ściągnąć kontener z rejestru do dowolnego hosta, który może uruchamiać obrazy platformy Docker, na przykład [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 
 [0]:../../media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog.png
