@@ -3,19 +3,19 @@ title: Visual Studio Professional 2019 i identyfikatory składników
 titleSuffix: ''
 description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifestu VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 414c68f544c88b1ee4de7ed1290b55be0000959e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: a785f03f5588b951f9473ef6c4a88099c33d44f1
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795699"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159400"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Visual Studio Core Editor (zawarty w Visual Studio Professional 2019)
 
@@ -91,7 +91,7 @@ Microsoft.Net.Component.4.TargetingPack | .NET framework 4 targeting pack | 16.0
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Narzędzia programistyczne programu .NET framework 4 – 4.6 | 16.0.28516.191 | Zalecane
 Microsoft.Net.Core.Component.SDK.2.1 | Środowisko uruchomieniowe LTS programu .NET Core 2,1 | 16.4.29519.181 | Zalecane
 Microsoft.VisualStudio.Component.AspNet45 | Zaawansowane funkcje platformy ASP.NET | 16.0.28315.86 | Zalecane
-Microsoft.VisualStudio.Component.Azure.Kubernetes.Tools | Visual Studio Tools for Kubernetes | 16.0.28625.61 | Zalecane
+Microsoft.VisualStudio.Component.Azure.Kubernetes.Tools | Narzędzia Visual Studio Tools for Kubernetes | 16.0.28625.61 | Zalecane
 Microsoft. VisualStudio. Component. Azure. PowerShell | Azure PowerShell | 16.4.29429.68 | Zalecane
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Podstawowe narzędzia usługi Azure Resource Manager | 16.4.29409.204 | Zalecane
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Narzędzia usługi Service Fabric | 16.4.29313.120 | Zalecane
@@ -237,7 +237,7 @@ Microsoft.VisualStudio.Component.DiagnosticTools | Narzędzia profilowania dla p
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 tools | 16.0.28315.86 | Zalecane
 Microsoft.VisualStudio.Component.FSharp | F#Obsługa języków | 16.0.28315.86 | Zalecane
 Microsoft.VisualStudio.Component.NuGet | Menedżer pakietów NuGet | 16.1.28829.92 | Zalecane
-Component.Dotfuscator | Ochrona preEmptive — Dotfuscator | 16.0.28528.71 | Optional
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 16.0.28528.71 | Optional
 Component.Microsoft.VisualStudio.RazorExtension | Usługi języka razor | 16.0.28714.129 | Optional
 Component.Microsoft.Web.LibraryManager | Library Manager | 16.0.28315.86 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET framework 4.6.2 targeting pack | 16.0.28517.75 | Optional

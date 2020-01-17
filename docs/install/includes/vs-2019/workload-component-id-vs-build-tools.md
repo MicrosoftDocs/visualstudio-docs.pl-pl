@@ -3,19 +3,19 @@ title: Visual Studio Build Tools 2019 i identyfikatory składników
 titleSuffix: ''
 description: Użyj identyfikatory obciążeń i składników programu Visual Studio do tworzenia klasycznych aplikacji opartych na Windows
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1e9fa33bbd8604f4260b61767f69b85e3263198b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 9f3920b7b746e4329cf94760e983d43e3579e8d3
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795786"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159531"
 ---
 ## <a name="azure-development-build-tools"></a>Narzędzia do kompilacji programowanie na platformie Azure
 
@@ -292,7 +292,7 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | Elementy docelowe i zadania 
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języków C# i Visual Basic Roslyn | 16.0.28714.129 | Wymagane
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Zestaw SDK programu Visual Studio Tworzenie podstawowych narzędzi | 16.0.28315.86 | Wymagane
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio rozszerzenia wymagania wstępne dotyczące programowania | 16.4.29318.151 | Wymagane
-Component.Dotfuscator | Ochrona preEmptive — Dotfuscator | 16.0.28528.71 | Optional
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 16.0.28528.71 | Optional
 Microsoft.Component.VC.Runtime.OSSupport | C++Środowisko uruchomieniowe platforma uniwersalna systemu Windows dla narzędzi kompilacji v142 | 16.4.29409.204 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | C++ATL dla najnowszych narzędzi kompilacji v142 (x86 & x64) | 16.4.29313.120 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++MFC dla najnowszych narzędzi kompilacji v142 (x86 & x64) | 16.4.29313.120 | Optional

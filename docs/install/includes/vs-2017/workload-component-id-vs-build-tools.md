@@ -2,25 +2,25 @@
 title: Visual Studio 2017 kompilacji narzędzia obciążeń i składników identyfikatorów
 titleSuffix: ''
 description: Użyj identyfikatory obciążeń i składników programu Visual Studio do tworzenia klasycznych aplikacji opartych na Windows
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 703d1595373f29926984c5380ba3167083a4318c
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176878"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159579"
 ---
 ## <a name="azure-development-build-tools"></a>Narzędzia do kompilacji programowanie na platformie Azure
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.AzureBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**Opis:** Zadania programu MSBuild i elementy docelowe do tworzenia aplikacji platformy Azure.
+**Opis:** MSBuild zadania i elementy docelowe do tworzenia aplikacji platformy Azure.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -62,9 +62,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="data-storage-and-processing-build-tools"></a>Przechowywanie i przetwarzanie danych narzędzia do kompilacji
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.DataBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.DataBuildTools
 
-**Opis:** Tworzenie projektów bazodanowych SQL Server
+**Opis:** kompilacji projektów bazodanowych SQL Server
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -83,9 +83,9 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy s
 
 ## <a name="net-desktop-build-tools"></a>Narzędzia kompilacji klasycznej platformy .NET
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
-**Opis:** Narzędzia do tworzenia aplikacji WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
+**Opis:** narzędzia do tworzenia aplikacji WPF, Windows Forms i aplikacji konsolowych przy użyciu C#, Visual Basic i F#.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -125,9 +125,9 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilator F# | 15.8.27825.0 |
 
 ## <a name="msbuild-tools"></a>Narzędzia MSBuild
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.MSBuildTools
+**ID:** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**Opis:** Zapewnia narzędzia wymagane do kompilowania aplikacji opartych na platformie MSBuild.
+**Opis:** zapewnia narzędzia wymagane do kompilowania aplikacji opartych na platformie MSBuild.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -139,9 +139,9 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języków C# i Vi
 
 ## <a name="net-core-build-tools"></a>Narzędzia kompilacji platformy .NET core
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
+**ID:** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**Opis:** Narzędzia do tworzenia aplikacji przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów.
+**Opis:** narzędzia do tworzenia aplikacji przy użyciu platformy .NET Core, ASP.NET Core, HTML/JavaScript i kontenerów.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -155,9 +155,9 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 – 1.1 narzędzia programis
 
 ## <a name="nodejs-build-tools"></a>Narzędzia do kompilacji node.js
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.NodeBuildTools
+**ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Opis:** Zadania MSBuild i elementy docelowe do tworzenia skalowalnych sieci aplikacji przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript.
+**Opis:** zadania MSBuild i elementy docelowe do tworzenia skalowalnych sieci aplikacji przy użyciu platformy Node.js i asynchronicznego oparte na zdarzeniach środowiska uruchomieniowego JavaScript.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -168,9 +168,9 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 zestawu SDK | 1
 
 ## <a name="officesharepoint-build-tools"></a>Narzędzia do kompilacji pakietu Office/SharePoint
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.OfficeBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
-**Opis:** Twórz dodatki pakietu Office i programu SharePoint i dodatków narzędzi VSTO.
+**Opis:** twórz dodatki pakietu Office i programu SharePoint i dodatków narzędzi VSTO.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -208,9 +208,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Narzędzia programistyczne pro
 
 ## <a name="universal-windows-platform-build-tools"></a>Narzędzia do kompilacji Universal Windows Platform
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.UniversalBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**Opis:** Zapewnia narzędzia wymagane do kompilowania aplikacji uniwersalnych platformy Windows.
+**Opis:** zapewnia narzędzia wymagane do kompilowania aplikacji uniwersalnych platformy Windows.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -231,21 +231,21 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | System Windows 10 SDK (10.
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | System Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | System Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | System Windows 10 SDK (10.0.15063.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [ARM i ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | System Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | System Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
 ## <a name="visual-c-build-tools"></a>Narzędzi Visual C++ build tools
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VCTools
+**ID:** Microsoft.VisualStudio.Workload.VCTools
 
-**Opis:** Twórz aplikacje pulpitu Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
+**Opis:** Twórz aplikacje klasyczne Windows przy użyciu zestawu narzędzi Microsoft C++, ATL lub MFC.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -273,12 +273,12 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | System Windows 10 SDK (10.
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | System Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | System Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | System Windows 10 SDK (10.0.15063.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | System Windows 10 SDK (10.0.15063.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [x86 i x64] | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | System Windows 10 SDK (10.0.16299.0) for Desktop C++ [ARM i ARM64] | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C#, VB, JS | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy uniwersalnej systemu Windows: C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C#, VB, JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | System Windows 10 SDK (10.0.16299.0) dla platformy UWP: C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | System Windows 10 SDK (10.0.17134.0) | 15.9.28307.102 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Zestaw SDK systemu Windows 8.1 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Windows XP podporu androidu Pro C++ | 15.8.27924.0 | Optional
@@ -289,9 +289,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | System Windows 10 SDK
 
 ## <a name="visual-studio-extension-development"></a>Programowanie rozszerzeń programu Visual Studio
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**Opis:** Narzędzia do tworzenia dodatków i rozszerzeń dla programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
+**Opis:** narzędzia do tworzenia dodatków i rozszerzeń dla programu Visual Studio, w tym nowe polecenia, analizatory kodu i okna narzędzi.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -306,7 +306,7 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | Elementy docelowe i zadania 
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilatory języków C# i Visual Basic Roslyn | 15.6.27309.0 | Wymagane
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Zestaw SDK programu Visual Studio Tworzenie podstawowych narzędzi | 15.8.27924.0 | Wymagane
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Visual Studio rozszerzenia wymagania wstępne dotyczące programowania | 15.8.27729.1 | Wymagane
-Component.Dotfuscator | Ochrona preEmptive — Dotfuscator | 15.0.26208.0 | Optional
+Component.Dotfuscator | PreEmptive Protection — Dotfuscator | 15.0.26208.0 | Optional
 Microsoft.Component.VC.Runtime.OSSupport | Środowisko uruchomieniowe Visual C++ dla platformy uniwersalnej systemu Windows | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Narzędzia do analizy statycznej | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | Visual C++ ATL dla x86 i x64 | 15.7.27625.0 | Optional
@@ -315,9 +315,9 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 w wersji 15.9 v14
 
 ## <a name="web-development-build-tools"></a>Narzędzia kompilacji programowanie sieci Web
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.WebBuildTools
+**ID:** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**Opis:** Zadania programu MSBuild i elementy docelowe do tworzenia aplikacji sieci web.
+**Opis:** zadania MSBuild i elementy docelowe do tworzenia aplikacji sieci web.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
@@ -360,9 +360,9 @@ Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 – 1.1 narzędzia programis
 
 ## <a name="mobile-development-with-net"></a>Tworzenie aplikacji mobilnych przy użyciu platformy .NET
 
-**IDENTYFIKATOR:** Microsoft.VisualStudio.Workload.XamarinBuildTools
+**Identyfikator:** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**Opis:** Narzędzia do tworzenia aplikacji dla wielu platform dla systemów iOS, Android i Windows przy użyciu C# i F#.
+**Opis:** narzędzia do tworzenia aplikacji dla wielu platform dla systemów iOS, Android i Windows przy użyciu C# i F#.
 
 ### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
 
