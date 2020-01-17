@@ -2,17 +2,17 @@
 title: Generowanie i konfigurowanie aplikacji na podstawie modeli
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748388"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114898"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 Można generować lub konfigurować części aplikacji z modelu.

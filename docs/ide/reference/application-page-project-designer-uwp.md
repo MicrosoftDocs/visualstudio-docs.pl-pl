@@ -6,17 +6,17 @@ f1_keywords:
 - AppPackage.Properties.Application
 helpviewer_keywords:
 - Application page [UWP project]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 01edb1871388cdc31f6c92ff25d10c876dfebc64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651951"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114403"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
 
@@ -24,21 +24,21 @@ Na stronie właściwości **aplikacji** można określić zestaw i informacje o 
 
 ![Strona właściwości aplikacji](media/application-page-uwp.png)
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project**  > **Właściwości** na pasku menu. Strony właściwości są otwierane na karcie **aplikacja** .
+Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project** > **Właściwości** na pasku menu. Strony właściwości są otwierane na karcie **aplikacja** .
 
 ## <a name="general-section"></a>Sekcja ogólna
 
-**Nazwa zestawu** &mdash;Specifies nazwą pliku wyjściowego, w którym będzie przechowywany manifest zestawu.
+**Nazwa zestawu**&mdash;określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu.
 
 Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
-**Domyślna przestrzeń nazw** &mdash;Specifies podstawową przestrzeń nazw dla plików dodanych do projektu. Aby uzyskać więcej informacji na temat przestrzeni nazw, zobacz [przestrzenie nazw (C# Przewodnik programowania)](/dotnet/csharp/programming-guide/namespaces/), [przestrzenie nazw (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces)lub [przestrzenie nazw (C++)](/cpp/cpp/namespaces-cpp).
+**Domyślna przestrzeń nazw**&mdash;określa podstawową przestrzeń nazw dla plików dodanych do projektu. Aby uzyskać więcej informacji na temat przestrzeni nazw, zobacz [przestrzenie nazw (C# Przewodnik programowania)](/dotnet/csharp/programming-guide/namespaces/), [przestrzenie nazw (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces)lub [przestrzenie nazw (C++)](/cpp/cpp/namespaces-cpp).
 
 Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informacje o zestawie** &mdash;Choosing ten przycisk wyświetla okno [dialogowe informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md).
+**Informacje o zestawie**&mdash;wybranie tego przycisku powoduje wyświetlenie okna [dialogowego Informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifest pakietu** &mdash;Choosing ten przycisk otwiera projektanta manifestów. Można również uzyskać dostęp do projektanta manifestu, wybierając plik _Package. appxmanifest_ w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Configure a Package with manifest Designer](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Manifest pakietu**&mdash;wybranie tego przycisku powoduje otwarcie projektanta manifestu. Można również uzyskać dostęp do projektanta manifestu, wybierając plik _Package. appxmanifest_ w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Configure a Package with manifest Designer](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
 
 ## <a name="targeting-section"></a>Sekcja określania wartości docelowej
 

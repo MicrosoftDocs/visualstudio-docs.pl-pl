@@ -2,17 +2,17 @@
 title: Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747407"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111362"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekompletną definicję DSL, którą można zaimportować do innego modemu DSL. Pozwala to na wspólne części podobnych modeli.
@@ -37,7 +37,7 @@ W programie Visual Studio Wizualizacja i Modeling SDK można utworzyć niekomple
 
 4. Można dodać dostosowania wymagające dodatkowego kodu, takie jak ograniczenia walidacji.
 
-5. Kliknij kolejno pozycje **Przekształć wszystkie szablony**.
+5. Kliknij przycisk **Transformuj wszystkie szablony**.
 
 6. Skompiluj projekt.
 

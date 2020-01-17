@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: a19c49482c45aa0a3cf5d7cb33eb106adb65b83b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713943"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114806"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Instrukcje: Wykluczanie projektów z kompilacji
 
@@ -30,7 +30,7 @@ Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Aby tymczasowo usunąć projekt z aktywnej konfiguracji rozwiązania
 
-1. Na pasku menu wybierz kolejno opcje **kompiluj**  > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **kompiluj** > **Configuration Manager**.
 
 2. W tabeli **kontekstowe projektu** Znajdź projekt, który ma zostać wykluczony z kompilacji.
 
@@ -40,9 +40,9 @@ Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Aby utworzyć konfigurację rozwiązania, która wyklucza projekt
 
-1. Na pasku menu wybierz kolejno opcje **kompiluj**  > **Configuration Manager**.
+1. Na pasku menu wybierz kolejno opcje **kompiluj** > **Configuration Manager**.
 
-2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz pozycję **\<New >** .
+2. Na liście **Konfiguracja aktywnego rozwiązania** wybierz pozycję **\<nowe >** .
 
 3. W polu **Nazwa** wprowadź nazwę konfiguracji rozwiązania.
 
@@ -52,7 +52,7 @@ Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji kompilacji](../
 
 6. Na pasku narzędzi **Standardowy** Sprawdź, czy nowa konfiguracja rozwiązania jest aktywna konfiguracja w polu **konfiguracje rozwiązania** .
 
-7. Na pasku menu wybierz **kompilacja** > **Skompiluj ponownie rozwiązanie**.
+7. Na pasku menu wybierz **kompilacji** > **Kompiluj rozwiązanie**.
 
 ## <a name="skipped-projects"></a>Pominięte projekty
 
@@ -69,6 +69,6 @@ Aby dowiedzieć się, dlaczego projekt został pominięty, zanotuj aktywną konf
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
+- [O konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
 - [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
 - [Instrukcje: kompilowanie wielu konfiguracji jednocześnie](../ide/how-to-build-multiple-configurations-simultaneously.md)

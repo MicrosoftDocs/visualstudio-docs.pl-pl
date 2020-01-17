@@ -3,17 +3,17 @@ title: 'Porady: tworzenie i modyfikacja poziomów MIP'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56fa2875b8a0893e55f7fc373b933b85b4fa8207
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 793d730df3942608451e7dbc329819b98c451973
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635525"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113283"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Instrukcje: Tworzenie i modyfikowanie poziomów MIP
 W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zmodyfikować *poziomy MIP* dla poziomu (LOD) tekstury w miejscu.
@@ -25,7 +25,7 @@ W tym dokumencie pokazano, jak za pomocą **edytora obrazów** wygenerować i zm
 
 1. Zacznij od podstawowej tekstury, zgodnie z opisem w temacie [How to: Create a Basic Texture](../designers/how-to-create-a-basic-texture.md). Aby uzyskać najlepsze wyniki, należy określić teksturę, która ma szerokość i wysokość, które są potęgami dwóch rozmiarów, na przykład 256, 512, 1024 i tak dalej.
 
-2. Generuj poziomy MIP. Na pasku narzędzi **Tryb edytora obrazów** wybierz kolejno opcje **zaawansowane**  > **Narzędzia**  > **Generuj MIPS**.
+2. Generuj poziomy MIP. Na pasku narzędzi **Tryb edytora obrazów** wybierz kolejno opcje **zaawansowane** > **Narzędzia** > **Generuj MIPS**.
 
      Należy zauważyć, że przyciski **Przejdź do następnego poziomu MIP** i **Przejdź do poprzedniego poziomu MIP** są teraz wyświetlane na pasku narzędzi **Tryb edytora obrazów** . Jeśli zostanie wyświetlone okno **Właściwości** , Zauważ, że właściwość tylko do odczytu na **poziomie MCI** i na **poziomie MCI** jest teraz wyświetlana we właściwościach obrazu.
 

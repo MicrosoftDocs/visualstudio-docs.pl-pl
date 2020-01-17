@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664827"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114492"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Instrukcje: stosowanie dystrybucji do opóźnienia tempem dla modelu testu tempa użytkownika
 
@@ -40,21 +40,21 @@ Wartość dla **opóźnienia Apply tempem** można ustawić na wartość true lu
 
 1. Otwórz test obciążenia.
 
-   Zostanie wyświetlona **Edytor testu obciążeniowego** . Zostanie wyświetlone drzewo testu obciążenia.
+   **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
 
 2. W folderze **scenariusze** drzewa testu obciążenia wybierz węzeł scenariusza, do którego ma zostać zastosowana dystrybucja tempem.
 
-3. W menu **Widok** wybierz polecenie **okno właściwości**.
+3. Na **widoku** menu, wybierz opcję **okno właściwości**.
 
-   Kategorie i właściwości scenariusza są wyświetlane w oknie **Właściwości** .
+   Kategorie i właściwości scenariusza są wyświetlane w **właściwości** okna.
 
 4. W polu wartość właściwości dla opcji **Zastosuj dystrybucję do tempem**wybierz wartość **prawda** lub **Fałsz**.
 
-5. Wybierz pozycję **plik**  > **Zapisz**. Teraz można uruchomić test obciążenia z nową wartością **opóźnienia Zastosuj dystrybucję do tempem** .
+5. Wybierz pozycję **plik** > **Zapisz**. Teraz można uruchomić test obciążenia z nową wartością **opóźnienia Zastosuj dystrybucję do tempem** .
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
 - [Przewodnik: Tworzenie i uruchamianie testów obciążeniowych](../test/walkthrough-create-and-run-a-load-test.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)
+- [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)

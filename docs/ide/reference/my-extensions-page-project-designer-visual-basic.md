@@ -8,24 +8,24 @@ helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748683"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114221"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Strona Moje rozszerzenia, Projektant projektu (Visual Basic)
 Użyj strony **Moje rozszerzenia** **projektanta projektu** , aby zarządzać rozszerzeniami przestrzeni nazw `My` w projekcie. rozszerzenia przestrzeni nazw `My` umożliwiają dostosowanie przestrzeni nazw `My` w celu dodania własnych niestandardowych elementów członkowskich. Aby uzyskać informacje na temat tworzenia rozszerzeń niestandardowej przestrzeni nazw `My`, zobacz [rozszerzanie przestrzeni nazw my w Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
 Aby uzyskać dostęp do strony **Moje rozszerzenia** , kliknij dwukrotnie **mój projekt** dla węzła projektu w **Eksplorator rozwiązań**. Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **Moje rozszerzenia** .
 
-## <a name="uielement-list"></a>Lista elementów UI
+## <a name="uielement-list"></a>Lista elementów interfejsu
 Poniższe opcje umożliwiają dodawanie lub usuwanie rozszerzeń `My` przestrzeni nazw w projekcie. Aby można było dodać rozszerzenie przestrzeni nazw `My`, należy najpierw zainstalować go jako szablon elementu programu Visual Studio. Informacje o publikowaniu i instalowaniu rozszerzeń `My` przestrzeni nazw znajdują się w temacie [pakowanie i wdrażanie niestandardowych rozszerzeń](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Moje rozszerzenia przestrzeni nazw**

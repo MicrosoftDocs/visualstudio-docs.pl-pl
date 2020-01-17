@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
 - Live Unit Testing What's New
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: b8a7627572daf872ddbd66a9c93f2c904246977d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653018"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114272"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Co nowego w programie Live Unit Testing for Visual Studio 2017
 
@@ -38,7 +38,7 @@ Począwszy od programu Visual Studio 2017 w wersji 15,4, Live Unit Testing zawie
 
 - **Niezawodność & wydajność**: Live Unit Testing teraz zapewnia, że system może lepiej wykryć, kiedy projekty nie zakończyły się w pełni i zapobiega awarii Live Unit Testing. Udoskonalenia wydajności kompilacji należy również unikać ponownej oceny projektów programu MSBuild, gdy system wie, że nic w pliku projektu nie uległo zmianie.
 
-- **Różne udoskonalenia interfejsu użytkownika**: zmiana nazwy **zestawu testów aktywnych na żywo — dołączenie/wykluczenie** z gestu kliknięcia prawym przyciskiem myszy została zmieniona na **Live Unit Testing Uwzględnij/Wyklucz**. Opcja **Zresetuj czyste** w menu**Live Unit Testing**  >  **testowych** została usunięta. Jest teraz dostępna, wybierając pozycję **narzędzia**  > **Opcje**  > **Live Unit Testing** i wybierając pozycję **Usuń utrwalone dane**.
+- **Różne udoskonalenia interfejsu użytkownika**: zmiana nazwy **zestawu testów aktywnych na żywo — dołączenie/wykluczenie** z gestu kliknięcia prawym przyciskiem myszy została zmieniona na **Live Unit Testing Uwzględnij/Wyklucz**. Opcja **Zresetuj czyste** w menu **Live Unit Testing** > **testowych** została usunięta. Jest teraz dostępna, wybierając pozycję **narzędzia** > **Opcje** > **Live Unit Testing** i wybierając pozycję **Usuń utrwalone dane**.
 
 ## <a name="version-153"></a>Wersja 15,3
 
@@ -60,9 +60,9 @@ Oprócz tych głównych dodatków, Live Unit Testing obejmuje następujące udos
 
 - Teraz można użyć następujących atrybutów, aby określić w kodzie źródłowym, który ma zostać wykluczony dla określonych metod testowych z Live Unit Testing:
 
-  - Dla xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
-  - Dla NUnit: `[Category("SkipWhenLiveUnitTesting")]`
-  - Dla MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+  - Aby uzyskać xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+  - Aby uzyskać NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+  - Aby uzyskać MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2c40e0f3d7cd1f4f86c10aace502796d6d00bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e7b0e1ca6d73e27f216f80054f87a35cf5389179
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654408"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114232"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Opcje — okno dialogowe: rozszerzenia \> środowiska
 
@@ -27,11 +27,11 @@ Po zaznaczeniu tej opcji program Visual Studio będzie okresowo sprawdzał dost�
 
 ## <a name="automatically-update-extensions"></a>Automatycznie Aktualizuj rozszerzenia
 
-Po zaznaczeniu tej opcji aktualizacje rozszerzeń są wprowadzane bez monitowania. Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Po zaznaczeniu tej opcji aktualizacje rozszerzeń są wprowadzane bez monitowania. Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="load-per-user-extensions-when-running-as-administrator"></a>Załaduj rozszerzenia na użytkownika podczas uruchamiania jako administrator
 
-Aby uzyskać więcej informacji, zobacz [Znajdowanie i używanie rozszerzeń programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+Aby uzyskać więcej informacji, zobacz [Znajdowanie i przy użyciu rozszerzenia programu Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Dodatkowe galerie rozszerzeń
 

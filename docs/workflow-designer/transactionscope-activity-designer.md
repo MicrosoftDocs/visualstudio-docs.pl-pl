@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5d557fb91c52c33022a161bada169d4332bac6b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649832"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114818"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope, projektant działań
 
@@ -33,13 +33,13 @@ Dostęp do projektanta działań elementu **TransactionScope** w kategorii **tra
 
 W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.TransactionScope> i opisano sposób ich używania w projektancie. Właściwości <xref:System.Activities.Activity.DisplayName%2A> i <xref:System.Activities.Statements.TransactionScope.Body%2A> można edytować na Projektant przepływu pracy powierzchni. Natomiast inne właściwości muszą być edytowane w siatce właściwości.
 
-|Nazwa właściwości|Wymagane|Użycie|
+|Nazwa właściwości|Wymagane|Pomiar|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna przyjazna nazwa działania <xref:System.Activities.Statements.TransactionScope>. Wartość domyślna to TransactionScope. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Oznacza|Określa działanie, które ma zostać wykonane w ramach jednej transakcji. Aby dodać działanie <xref:System.Activities.Statements.TransactionScope.Body%2A>, upuść działanie z **przybornika** do pola **treść** w projektancie działań elementu **TransactionScope** ze wskazówką text "upuść aktywność tutaj".|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Oznacza|Określa <xref:System.Transactions.IsolationLevel> dla tego <xref:System.Activities.Statements.TransactionScope>.|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|Określa przedział czasu (sformatowany jako 00:00:00, który wskazuje godziny: minuty: sekundy), aby transakcja była ukończona. Wartość domyślna to 1 minuta (00:01:00).|
-|[System. Activities. Statements. TransactionScope. AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Oznacza|Określa wartość wskazującą, czy przepływ pracy powinien być przerwany w przypadku przerwania transakcji.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Opcjonalna przyjazna nazwa działania <xref:System.Activities.Statements.TransactionScope>. Wartość domyślna to TransactionScope. Mimo że wartość <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagana, najlepszym rozwiązaniem jest użycie jednego z nich.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Prawda|Określa działanie, które ma zostać wykonane w ramach jednej transakcji. Aby dodać działanie <xref:System.Activities.Statements.TransactionScope.Body%2A>, upuść działanie z **przybornika** do pola **treść** w projektancie działań elementu **TransactionScope** ze wskazówką text "upuść aktywność tutaj".|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Prawda|Określa <xref:System.Transactions.IsolationLevel> dla tego <xref:System.Activities.Statements.TransactionScope>.|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Fałsz|Określa przedział czasu (sformatowany jako 00:00:00, który wskazuje godziny: minuty: sekundy), aby transakcja była ukończona. Wartość domyślna to 1 minuta (00:01:00).|
+|[System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Prawda|Określa wartość wskazującą, czy przepływ pracy powinien być przerwany w przypadku przerwania transakcji.|
 
 ## <a name="see-also"></a>Zobacz także
 

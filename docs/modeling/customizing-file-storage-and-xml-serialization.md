@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d8fe9fb5086b93861c7ca12a208affe7aa979df2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748461"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114427"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
@@ -124,13 +124,13 @@ Kwalifikowane monikery kluczy są łatwiejsze do odczytania niż monikery identy
 
 1. Upewnij się, że **klucz moniker** jest `false` dla każdej właściwości domeny w klasie i jej klasach bazowych.
 
-    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji Behavior\Class dane \\ \<the klasy domeny > \Element danych**.
+    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji Behavior\Class dane\\\<klasy domeny > dane \Element**.
 
     2. Sprawdź, czy **klucz moniker** jest `false` dla każdej właściwości domeny.
 
     3. Jeśli klasa domeny ma klasę bazową, Powtórz procedurę w tej klasie.
 
-2. Ustaw **Identyfikator serializacji**  =  `true` dla klasy domeny.
+2. Ustaw **Identyfikator serializacji** = `true` dla klasy domeny.
 
      Tę właściwość można znaleźć w obszarze **zachowanie serializacji kodu XML**.
 
@@ -138,17 +138,17 @@ Kwalifikowane monikery kluczy są łatwiejsze do odczytania niż monikery identy
 
 - Set **jest kluczem monikera** dla właściwości domeny istniejącej klasy domeny. Typ właściwości musi być `string`.
 
-    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji Behavior\Class dane \\ \<the klasy domeny > \Element dane**, a następnie wybierz właściwość domena.
+    1. W Eksploratorze DSL rozwiń kolejno pozycje **XML serializacji Behavior\Class dane\\\<klasy domeny > dane \Element**, a następnie wybierz właściwość domena.
 
     2. W okno Właściwości ustaw **klucz moniker** , aby `true`.
 
-- \- lub-
+- \- lub —
 
      Utwórz nową klasę domeny za pomocą narzędzia **klasy nazwanej domeny** .
 
      To narzędzie tworzy nową klasę, która ma właściwość domeny o nazwie name. **Nazwa elementu is** i **ma właściwości klucza monikera** tej właściwości domeny są inicjowane w celu `true`.
 
-- \- lub-
+- \- lub —
 
      Utwórz relację dziedziczenia z klasy domeny do innej klasy, która ma właściwość klucza monikera.
 
@@ -158,11 +158,11 @@ Jeśli używasz krótkich monikerów kluczy, możliwe jest, że dwa elementy w m
 
 Istnieje kilka metod, które pomagają uniknąć tej sytuacji:
 
-- Zestaw **jest nazwą elementu**  =  `true` właściwości domena klucza. Wybierz właściwość domena na diagramie definicji DSL, a następnie ustaw wartość w okno Właściwości.
+- Zestaw **jest nazwą elementu** = `true` właściwości domena klucza. Wybierz właściwość domena na diagramie definicji DSL, a następnie ustaw wartość w okno Właściwości.
 
      Gdy użytkownik tworzy nowe wystąpienie klasy, ta wartość powoduje, że właściwość domeny ma automatycznie przypisaną inną wartość. Zachowanie domyślne dodaje numer na końcu nazwy klasy. Nie uniemożliwia to użytkownikowi zmiany nazwy na duplikat, ale w przypadku, gdy użytkownik nie ustawi wartości przed zapisaniem modelu, może to zrobić.
 
-- Włącz sprawdzanie poprawności dla DSL. W Eksploratorze DSL wybierz pozycję Editor\Validation, a następnie ustaw `true` właściwości **Użyj...** .
+- Włącz sprawdzanie poprawności dla DSL. W Eksploratorze DSL wybierz pozycję Editor\Validation, a następnie ustaw `true`właściwości **Użyj...** .
 
      Jest automatycznie generowana Metoda walidacji, która sprawdza, czy niejasności. Metoda jest w kategorii Walidacja `Load`. Pozwala to upewnić się, że użytkownik otrzyma ostrzeżenie, że może nie być możliwe ponowne otwarcie pliku.
 
@@ -230,7 +230,7 @@ Aby wprowadzić następujące dostosowania, rozwiń węzeł **zachowanie seriali
     </familyTreeModel>
     ```
 
-- Ustaw **reprezentację** **elementu**  = , aby właściwość domeny została zapisana jako element, a nie jako wartość atrybutu.
+- Ustaw **reprezentację** **elementu** = , aby właściwość domeny została zapisana jako element, a nie jako wartość atrybutu.
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -275,7 +275,7 @@ Te elementy są dostępne w Eksploratorze DSL w obszarze **dane serializacji XML
 |Nazwa elementu|Nazwa węzła XML dla elementów tej klasy. Wartością domyślną jest mała wersja klasy domeny.|
 |Nazwa atrybutu monikera|Nazwa atrybutu używanego w elementach monikera, który będzie zawierać odwołanie. Jeśli pole pozostanie puste, zostanie użyta nazwa właściwości klucza lub identyfikatora.<br /><br /> W tym przykładzie jest to "name": `<personMoniker name="/Mike Nash"/>`|
 |Nazwa elementu monikera|Nazwa elementu XML używanego dla monikerów odwołujących się do elementów tej klasy.<br /><br /> Wartość domyślna to mała wersja nazwy klasy z sufiksem "moniker". Na przykład `personMoniker`.|
-|Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD jest w **kodzie Dsl\Generated \\ \*Schema. xsd**|
+|Nazwa typu monikera|Nazwa typu XSD wygenerowanego dla monikerów elementów tej klasy. XSD jest w **kodzie Dsl\Generated\\\*Schema. xsd**|
 |Identyfikator serializacji|W przypadku wartości true identyfikator GUID elementu jest dołączany do pliku. Musi to być prawdziwe, jeśli nie istnieje właściwość, która jest oznaczona jako **klucz monikera** , a DSL definiuje relacje odwołania do tej klasy.|
 |Nazwa typu|Nazwa typu XML wygenerowanego w formacie XSD z wytworzonej klasy domeny.|
 |Uwagi|Nieformalne uwagi skojarzone z tym elementem|

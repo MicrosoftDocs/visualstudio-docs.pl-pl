@@ -14,29 +14,29 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919187"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113787"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkcje ułatwień dostępu programu Visual Studio
 
 Oprócz funkcji i narzędzi ułatwień dostępu w systemie Windows następujące funkcje sprawiają, że program Visual Studio jest bardziej dostępny dla osób niepełnosprawnych:
 
-- Przycisk paska narzędzi i rozszerzenie tekstu
+- Rozszerzenia narzędzi przycisk i tekst
 
 - Opcje rozmiaru tekstu w edytorach
 
-- Dostosowanie koloru w edytorach
+- Dostosowywanie kolorów w edytorach
 
-- Dostosowywanie skrótu klawiaturowego
+- Dostosowywanie skrótów klawiatury
 
-- Autouzupełnianie dla metod i parametrów
+- Automatyczne uzupełnianie metody i parametrów
 
 > [!NOTE]
-> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [ułatwienia dostępu dla Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [ułatwienia dostępu dla Visual Studio dla komputerów Mac](/visualstudio/mac/accessibility).
 
 Więcej informacji znajduje się w następujących tematach:
 
@@ -46,7 +46,7 @@ Więcej informacji znajduje się w następujących tematach:
 
 - [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
-- [Porady i wskazówki dotyczące ułatwień dostępu](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
 
 - [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 

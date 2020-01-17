@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Analysis page in Project Designer
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de941e6b1a07873c2c160351cce561721e845cdb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609853"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113777"
 ---
 # <a name="code-analysis-project-designer"></a>Analiza kodu, Projektant projektu
 
@@ -26,7 +26,7 @@ Zawiera narzędzie do analizy kodu, które można wybrać do uruchomienia w kodz
 
 ## <a name="uielement-list"></a>Lista elementów UIElement
 
-Włącz analizę kodu \
+Włącz Analysis kodu\
 Włącza lub wyłącza analizę kodu dla projektu.
 
 Reguły projektowania \
@@ -41,25 +41,25 @@ Włącza lub wyłącza reguły współdziałania. Możesz również rozwinąć t
 Reguły utrzymania \
 Włącza lub wyłącza reguły utrzymania. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
-Reguły mobilności \
+Rules mobilności\
 Włącza lub wyłącza reguły mobilności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
-Reguły nazewnictwa \
+Rules nazewnictwa\
 Włącza lub wyłącza reguły nazewnictwa. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
-Reguły wydajności \
+Rules wydajności\
 Włącza lub wyłącza reguły wydajności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
 Reguły przenośności \
 Włącza lub wyłącza reguły przenośności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
-Reguły niezawodności \
+Rules niezawodności\
 Włącza lub wyłącza reguły niezawodności. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
-Reguły zabezpieczeń \
+Rules zabezpieczeń\
 Włącza lub wyłącza reguły zabezpieczeń. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
-Reguły użycia \
+Rules użycia\
 Włącza lub wyłącza reguły użycia. Możesz również rozwinąć ten wpis, aby włączyć lub wyłączyć poszczególne reguły.
 
 ## <a name="see-also"></a>Zobacz także

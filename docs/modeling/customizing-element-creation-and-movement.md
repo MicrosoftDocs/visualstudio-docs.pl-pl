@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 192bde210d7188e54576453dc04654e970df27f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 45131ff231e34cf769ac3665344e340f38b9380d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747610"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114244"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Dostosowywanie tworzenia i przesuwania elementów
 
@@ -38,7 +38,7 @@ Chociaż operacje tworzenia mogą się różnić od operacji kopiowania, faktycz
 
 Odpowiedzialnością EMD jest podjęcie decyzji o sposobie scalania obiektu lub grupy obiektów w konkretną lokalizację w modelu. W szczególności decyduje o tym, jakie relacje należy utworzyć, aby połączyć scaloną grupę z modelem. Można również dostosować ją do ustawiania właściwości i tworzenia dodatkowych obiektów.
 
-![Scalanie&#95;EMD DSL&#45;](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 EMD jest generowany automatycznie podczas definiowania relacji osadzania. Ta wartość domyślna EMD tworzy wystąpienie relacji, gdy użytkownicy dodają nowe wystąpienia podrzędne do elementu nadrzędnego. Można modyfikować te domyślne EMDs, na przykład dodając kod niestandardowy.
 
@@ -48,7 +48,7 @@ Możesz również dodać własne EMDs w definicji DSL, aby umożliwić użytkown
 
 Można dodać dyrektywy scalania elementów do klas domeny, relacji domeny, kształtów, łączników i diagramów. Można je dodać lub znaleźć w Eksploratorze DSL w klasie odbiorczej domeny. Klasa odbiorczej jest klasą domeny elementu, który znajduje się już w modelu, i na którym zostanie scalony nowy lub skopiowany element.
 
-![Szczegóły&#45;EMD&#95;DSL](../modeling/media/dsl-emd_details.png)
+![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png)
 
 **Klasa indeksowania** jest klasą domeny elementów, które można scalić do elementów członkowskich klasy odbiorczej. Wystąpienia podklas klasy indeksowania również zostaną scalone przez ten EMD, chyba że ustawisz **dla podklasy** wartości false.
 
@@ -109,7 +109,7 @@ Użytkownicy mogą również wklejać elementy do innych elementów.
 
       Możesz użyć narzędzia do nawigacji ścieżki, aby utworzyć każdą ścieżkę:
 
-      1. W obszarze **Scal proces przez utworzenie linków w ścieżkach**kliknij pozycję **\<add ścieżka >** .
+      1. W obszarze **Scal proces przez utworzenie linków w ścieżkach**kliknij pozycję **\<Dodaj ścieżkę >** .
 
       2. Kliknij strzałkę listy rozwijanej z prawej strony elementu listy. Zostanie wyświetlony widok drzewa.
 
@@ -304,11 +304,11 @@ W rozwiązaniu modelu składników można utworzyć dyrektywę scalania do przod
 
     Nowa ścieżka powinna wyglądać następująco:
 
-    **Składnik elementu ComponentHasPorts. Component/!**
+    **ComponentHasPorts.Component/!Component**
 
 9. Zapisz rozwiązanie, a następnie Przekształć szablony, klikając przycisk z prawej na pasku narzędzi **Eksplorator rozwiązań** .
 
-10. Kompiluj i uruchamiaj rozwiązanie. Pojawia się nowe wystąpienie programu Visual Studio.
+10. Skompiluj i uruchom rozwiązanie. Pojawia się nowe wystąpienie programu Visual Studio.
 
 11. W **Eksplorator rozwiązań**Otwórz przykład. mydsl. Zostanie wyświetlony diagram i **Przybornik ComponentLanguage** .
 

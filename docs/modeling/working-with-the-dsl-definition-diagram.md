@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Show Map Lines
 - Domain-Specific Language Tools, Show As Class
 - Domain-Specific Language Tools, Bring Tree Here
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e65b47baba985012dccad0c838c65d2d8bf2ef
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 53bbfbca975625a8f56f7519a15ac1670b94861b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748144"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115290"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Praca z diagramem definicji DSL
 Diagram definicji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] jest ważnym narzędziem do definiowania języka specyficznego dla domeny. Można dodawać elementy do modelu domeny i definiować relacje na diagramie. można także zmodyfikować układ diagramu, aby zwiększyć jego czytelność.
@@ -72,4 +72,4 @@ Diagram definicji [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] jest ważnym n
 
 ## <a name="see-also"></a>Zobacz także
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

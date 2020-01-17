@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650004"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114753"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow, projektant działań
 
@@ -33,7 +33,7 @@ Dostęp do programu **Rethrow** Designer w kategorii **Obsługa błędów** w **
 
 W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.Rethrow> i opisano, jak są one używane w projektancie:
 
-|Nazwa właściwości|Wymagane|Sposób użycia|
+|Nazwa właściwości|Wymagane|Pomiar|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Fałsz|Określa opcjonalną przyjazną nazwę działania <xref:System.Activities.Statements.Rethrow>. Wartość domyślna to Rethrow.|
 

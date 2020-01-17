@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605990"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114924"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
@@ -26,9 +26,9 @@ Przykłady w tym temacie są pobierane z szablonu rozwiązania diagram składnik
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sekcje pliku DslDefinition. DSL
 
-Element główny jest \<Dsl > i jego atrybuty identyfikują nazwę języka specyficznego dla domeny, przestrzeń nazw i numery wersji głównych i pomocniczych w celu przechowywania wersji. Schemat `DslDefinitionModel` definiuje zawartość i strukturę prawidłowego pliku DslDefinition. DSL.
+Element główny jest \<> DSL, a jego atrybuty określają nazwę języka specyficznego dla domeny, przestrzeń nazw oraz główne i pomocnicze numery wersji dla przechowywania wersji. Schemat `DslDefinitionModel` definiuje zawartość i strukturę prawidłowego pliku DslDefinition. DSL.
 
-Elementy podrzędne elementu głównego > \<Dsl są następujące:
+Elementy podrzędne elementu głównego \<DSL > są następujące:
 
 ### <a name="classes"></a>Klasy
 
@@ -46,7 +46,7 @@ Ta sekcja definiuje każdy typ i jego przestrzeń nazw. Właściwości domeny ma
 
 W tej sekcji zdefiniowano kształty opisujące, jak model pojawia się w projektancie. Te kształty geometryczne są mapowane na klasy w modelu w sekcji diagramu.
 
-### <a name="connectors"></a>Wtyczki
+### <a name="connectors"></a>Łączniki
 
 Ta sekcja definiuje wygląd łączników, które pojawiają się w projektancie. Te opisy stylów geometrycznych są mapowane na określone relacje w modelu w sekcji diagramu.
 
@@ -66,11 +66,11 @@ Ta sekcja definiuje konstruktora połączeń dla każdego narzędzia łącznika 
 
 Ta sekcja definiuje diagram i służy do określania właściwości, takich jak kolor tła i Klasa główna. (Klasa główna jest klasą domeny, która jest reprezentowana przez diagram jako całość). Sekcja diagramu zawiera również elementy ShapeMap i ConnectorMap, które określają kształt lub łącznik reprezentujący każdą klasę lub relację domeny.
 
-### <a name="designer"></a>Projektant
+### <a name="designer"></a>Designer
 
 Ta sekcja definiuje projektanta (Edytor), który łączy **Przybornik**, ustawienia walidacji, diagram i schemat serializacji. Sekcja Projektant definiuje również klasę główną modelu, która jest zazwyczaj klasą główną diagramu.
 
-### <a name="explorer"></a>Programie
+### <a name="explorer"></a>Eksplorator
 
 W tej sekcji przedstawiono zachowanie **Eksploratora DSL** (zdefiniowane w sekcji XmlSerializationBehavior).
 
@@ -132,7 +132,7 @@ Atrybut `IsFlags` określa, czy wygenerowany kod jest poprzedzony przez atrybut 
 
 ## <a name="classes"></a>Klasy
 
-Większość elementów w każdej definicji języka specyficznego dla domeny jest bezpośrednio lub pośrednio wystąpieniami `DomainClass`. Podklasy `DomainClass` zawierają `DomainRelationship`, `Shape`, `Connector` i `Diagram`. Sekcja `Classes` pliku DslDefinition. DSL zawiera listę klas domen.
+Większość elementów w każdej definicji języka specyficznego dla domeny jest bezpośrednio lub pośrednio wystąpieniami `DomainClass`. Podklasy `DomainClass` zawierają `DomainRelationship`, `Shape`, `Connector`i `Diagram`. Sekcja `Classes` pliku DslDefinition. DSL zawiera listę klas domen.
 
 Każda klasa ma zestaw właściwości i może mieć klasę bazową. W przykładzie diagramu składników `NamedElement` jest klasą abstrakcyjną, która ma właściwość `Name`, której typem jest ciąg:
 
@@ -172,7 +172,7 @@ Każda klasa domeny (w tym relacje, kształty, łączniki i diagramy) może mie�
 
 - **InheritanceModifier.** Ten atrybut to "abstract", "Sealed" lub "none".
 
-- **Nazwa.** Ten atrybut jest nazwą, która pojawia się w oknie **Właściwości** . Atrybut DisplayName może zawierać spacje i inne znaki interpunkcyjne.
+- **DisplayName.** Ten atrybut jest nazwą, która pojawia się w oknie **Właściwości** . Atrybut DisplayName może zawierać spacje i inne znaki interpunkcyjne.
 
 - **GeneratesDoubleDerived.** Jeśli ten atrybut ma wartość true, generowane są dwie klasy i jedna z nich jest podklasą innych. Wszystkie wygenerowane metody znajdują się w bazie, a konstruktory znajdują się w podklasie. Ustawiając ten atrybut, można przesłonić każdą wygenerowaną metodę w kodzie niestandardowym.
 
@@ -212,7 +212,7 @@ Każda właściwość domeny może mieć również następujące atrybuty:
 
 - **IsElementName**. Jeśli ten atrybut jest ustawiony na wartość true, jego wartość jest automatycznie ustawiana na wartość unikatową podczas tworzenia wystąpienia klasy nadrzędnej. Ten atrybut może być ustawiony na wartość true dla jednej właściwości w każdej klasie, która musi mieć typ ciągu. W przykładzie diagramu składników Właściwość `Name` w `NamedElement` ma `IsElementName` ustawioną wartość true. Za każdym razem, gdy użytkownik tworzy element `Component` (który dziedziczy po `NamedElement`), nazwa zostanie automatycznie zainicjowana na przykład "Component6".
 
-- `DefaultValue`., Jeśli określono ten atrybut, określona wartość zostanie przypisana do tego atrybutu dla nowych wystąpień tej klasy. Jeśli ustawiono `IsElementName`, atrybut DefaultValue określa początkową część nowego ciągu.
+- `DefaultValue`. Jeśli określono ten atrybut, określona wartość zostanie przypisana do tego atrybutu dla nowych wystąpień tej klasy. Jeśli ustawiono `IsElementName`, atrybut DefaultValue określa początkową część nowego ciągu.
 
 - **Kategoria** to nagłówek, pod którym Właściwość pojawi się w oknie **Właściwości** .
 
@@ -244,7 +244,7 @@ Każda relacja zawiera role źródłowe i docelowe, które mają następujące a
     ComponentPort p = ...; Component c = p.Component; if (c != null) ...
     ```
 
-- @No__t_0 roli to nazwa, która jest używana w klasie relacji do odwoływania się do tego końca łącza. Zgodnie z Konwencją nazwa roli zawsze jest pojedyncza, ponieważ każdy z nich ma tylko jedno wystąpienie na każdym końcu. Następujący kod będzie działał:
+- `Name` roli to nazwa, która jest używana w klasie relacji do odwoływania się do tego końca łącza. Zgodnie z Konwencją nazwa roli zawsze jest pojedyncza, ponieważ każdy z nich ma tylko jedno wystąpienie na każdym końcu. Następujący kod będzie działał:
 
     ```
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
@@ -352,7 +352,7 @@ Na przykład można dodać tę dyrektywę scalenia elementów do klasy Component
 
 Użytkownicy języka mogą następnie przeciągnąć komentarz do składnika i automatycznie utworzyć nowy komentarz z linkiem do składnika.
 
-Pierwsza ścieżka tworzenia linku przechodzi od `Component` do `ComponentModel` a następnie tworzy wystąpienie `ComponentModelHasComments` relacji osadzania. Druga ścieżka tworzenia linku tworzy łącze do relacji odwołania CommentsReferenceComponents ze składnika hosta do nowego komentarza. Wszystkie ścieżki tworzenia linków muszą zaczynać się od klasy hosta i muszą kończyć się linkiem, który prowadzi do nowo utworzonej klasy.
+Pierwsza ścieżka tworzenia linku przechodzi od `Component` do `ComponentModel` a następnie tworzy wystąpienie `ComponentModelHasComments`relacji osadzania. Druga ścieżka tworzenia linku tworzy łącze do relacji odwołania CommentsReferenceComponents ze składnika hosta do nowego komentarza. Wszystkie ścieżki tworzenia linków muszą zaczynać się od klasy hosta i muszą kończyć się linkiem, który prowadzi do nowo utworzonej klasy.
 
 ## <a name="xmlclassdata"></a>XmlClassData
 
@@ -406,7 +406,7 @@ W pliku serializowanego modelu pełny moniker elementu jest ścieżką z katalog
 
 Można ustawić atrybut **IsMonikerQualifier** dla właściwości String i podać dodatkowy sposób konstruowania pełnej nazwy elementu. Na przykład w pliku DslDefinition. DSL **przestrzeń nazw** jest kwalifikatorem monikera.
 
-### <a name="xmlrelationshipdata"></a>Element XmlRelationshipData
+### <a name="xmlrelationshipdata"></a>XmlRelationshipData
 
 W serializowanym pliku modelu linki (zarówno relacji osadzania, jak i odwołania) są reprezentowane przez węzły podrzędne końcowego końca relacji. W przypadku osadzania relacji węzeł podrzędny zawiera poddrzewo. W przypadku relacji odwołania węzeł podrzędny zawiera moniker, który odwołuje się do innej części drzewa.
 
@@ -539,7 +539,7 @@ Podobnie jak w poniższym przykładzie elementy `ShapeMap` mają co najmniej Mon
 
 Podstawowa funkcja elementu `ParentElementPath` jest tak, że ta sama Klasa obiektów może być wyświetlana jako inny kształt w różnych kontekstach. Na przykład jeśli `InPort` może być również osadzony w komentarzu, `InPort` może pojawić się jako inny kształt w tym celu.
 
-Następnie ścieżka Określa, jak kształt odnosi się do jego elementu nadrzędnego. Nie zdefiniowano struktury osadzania między kształtami w pliku DslDefinition. DSL. Należy wywnioskować strukturę z map kształtów. Element nadrzędny kształtu jest kształtem mapowanym na element domeny, który identyfikuje ścieżka elementu nadrzędnego. W takim przypadku ścieżka identyfikuje składnik, do którego należy `InPort`. W innej mapie kształtów Klasa składnika jest mapowana na ComponentShape. W związku z tym nowy kształt `InPort` zostanie utworzony jako kształt podrzędny `ComponentShape` składnika.
+Następnie ścieżka Określa, jak kształt odnosi się do jego elementu nadrzędnego. Nie zdefiniowano struktury osadzania między kształtami w pliku DslDefinition. DSL. Należy wywnioskować strukturę z map kształtów. Element nadrzędny kształtu jest kształtem mapowanym na element domeny, który identyfikuje ścieżka elementu nadrzędnego. W takim przypadku ścieżka identyfikuje składnik, do którego należy `InPort`. W innej mapie kształtów Klasa składnika jest mapowana na ComponentShape. W związku z tym nowy kształt `InPort` zostanie utworzony jako kształt podrzędny `ComponentShape`składnika.
 
 Po dołączeniu kształtu InPort do diagramu, ścieżka elementu nadrzędnego będzie musiała wykonać kolejny krok do modelu składnika, który jest mapowany na diagram:
 
@@ -579,6 +579,6 @@ Mapy łączników mogą również zawierać mapy dekoratora.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [narzędzia języka specyficznego dla domeny słownik](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

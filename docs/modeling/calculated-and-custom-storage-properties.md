@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748536"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115197"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą być wyświetlane użytkownikowi na diagramie i w Eksploratorze języka, a dostęp do niego można uzyskać za pomocą kodu programu. Jednak właściwości różnią się w sposób, w jaki są przechowywane ich wartości.
@@ -26,7 +26,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 |-|-|
 |**Standardowa** (domyślnie)|Właściwość domeny, która jest zapisywana w *magazynie* i serializowana do pliku.|
 |**Oblicza**|Właściwość domeny tylko do odczytu, która nie jest zapisywana w sklepie, ale jest obliczana na podstawie innych wartości.<br /><br /> Na przykład `Person.Age` można obliczyć z `Person.BirthDate`.<br /><br /> Musisz podać kod, który wykonuje obliczenia. Zwykle oblicza się wartość z innych właściwości domeny. Można jednak również używać zasobów zewnętrznych.|
-|**Magazyn niestandardowy**|Właściwość domeny, która nie jest zapisywana bezpośrednio w magazynie, ale może być zarówno Get, jak i Set.<br /><br /> Musisz podać metody pobierające i ustawiające wartość.<br /><br /> Na przykład `Person.FullAddress` mogą być przechowywane w `Person.StreetAddress`, `Person.City` i `Person.PostalCode`.<br /><br /> Możesz również uzyskać dostęp do zasobów zewnętrznych, na przykład w celu pobrania i ustawienia wartości z bazy danych.<br /><br /> Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).|
+|**Magazyn niestandardowy**|Właściwość domeny, która nie jest zapisywana bezpośrednio w magazynie, ale może być zarówno Get, jak i Set.<br /><br /> Musisz podać metody pobierające i ustawiające wartość.<br /><br /> Na przykład `Person.FullAddress` mogą być przechowywane w `Person.StreetAddress`, `Person.City`i `Person.PostalCode`.<br /><br /> Możesz również uzyskać dostęp do zasobów zewnętrznych, na przykład w celu pobrania i ustawienia wartości z bazy danych.<br /><br /> Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Dostarczanie kodu dla właściwości magazynu obliczeniowego lub niestandardowego
  W przypadku ustawienia rodzaju właściwości domeny na obliczeniową lub niestandardową magazyn należy zapewnić metody dostępu. Podczas kompilowania rozwiązania raport o błędach informuje o tym, co jest wymagane.
@@ -41,7 +41,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
 3. Kliknij pozycję **Przekształć wszystkie szablony** na pasku narzędzi **Eksplorator rozwiązań**.
 
-4. W menu **kompilacja** kliknij pozycję **Kompiluj rozwiązanie**.
+4. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
      Zostanie wyświetlony następujący komunikat o błędzie: "*YourClass* nie zawiera definicji dla get*YourProperty*".
 
@@ -52,7 +52,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
     > [!NOTE]
     > Ten plik jest generowany z DslDefinition. DSL. Jeśli edytujesz ten plik, zmiany zostaną utracone przy następnym kliknięciu pozycji **Przekształć wszystkie szablony**. Zamiast tego należy dodać wymaganą metodę w oddzielnym pliku.
 
-6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode \\*YourDomainClass*. cs.
+6. Utwórz lub Otwórz plik klasy w oddzielnym folderze, na przykład atrybut CustomCode\\*YourDomainClass*. cs.
 
      Upewnij się, że przestrzeń nazw jest taka sama jak w wygenerowanym kodzie.
 
@@ -77,7 +77,7 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
 
      Kod nie powinien określać wartości w magazynie, gdy `Store.InUndoRedoOrRollback` ma wartość true. Zobacz [transakcje i niestandardowe metody ustawiające](#setters).
 
-9. Kompiluj i uruchamiaj rozwiązanie.
+9. Skompiluj i uruchom rozwiązanie.
 
 10. Przetestuj właściwość. Upewnij się, że próbujesz **cofnąć** i **ponownie**wykonać operację.
 

@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925828"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115061"
 ---
 # <a name="understand-build-platforms"></a>Opis platform kompilacji
 
@@ -30,14 +30,14 @@ Można przechowywać różne wersje rozwiązań i właściwości projektu, któr
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Instrukcje: Skonfiguruj projekty na platformach docelowych](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Instrukcje: Konfigurowanie projektów na platformach docelowych](../ide/how-to-configure-projects-to-target-platforms.md)\
 Wyjaśnia, jak skonfigurować projekt jako docelowy określonej platformy.
 
-[Instrukcje: Skonfiguruj projekty na wiele platform docelowych](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Instrukcje: Konfigurowanie projektów pod kątem wielu platform](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Wyjaśniono, jak skonfigurować projekt przeznaczony do użycia na wielu platformach.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
 - [Twórz i czyść projekty i rozwiązania w programie Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

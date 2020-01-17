@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461510"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115106"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Instrukcje: Określanie zdarzeń kompilacji (Visual Basic)
 
@@ -44,14 +44,14 @@ Zdarzenia kompilacji są określone w oknie dialogowym **zdarzenia kompilacji** 
 4. Wprowadź argumenty wiersza polecenia dla akcji przed kompilacją lub po kompilacji, a następnie kliknij przycisk **OK**.
 
     > [!NOTE]
-    > Dodaj instrukcję przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki *. bat.* `call` Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Dodaj instrukcję `call` przed wszystkimi poleceniami po kompilacji, które uruchamiają pliki *. bat* . Na przykład `call C:\MyFile.bat` lub `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Jeśli wydarzenie przed kompilacją lub po kompilacji nie zakończy się pomyślnie, możesz przerwać kompilację, aby zakończyć działanie zdarzenia z kodem innym niż zero (0), co oznacza pomyślne wykonanie akcji.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Przykład: Jak zmienić informacje manifestu przy użyciu zdarzenia po kompilacji
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Przykład: jak zmienić informacje manifestu przy użyciu zdarzenia po kompilacji
 
-Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjnego w manifeście aplikacji przy użyciu polecenia *. exe* wywoływanego z zdarzenia po kompilacji (plik *. exe. manifest* w katalogu projektu). Minimalna wersja systemu operacyjnego to czterocyfrowy numer, taki jak 4.10.0.0. W tym celu polecenie zmieni `<dependentOS>` sekcję manifestu:
+Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjnego w manifeście aplikacji przy użyciu polecenia *. exe* wywoływanego z zdarzenia po kompilacji (plik *. exe. manifest* w katalogu projektu). Minimalna wersja systemu operacyjnego to czterocyfrowy numer, taki jak 4.10.0.0. W tym celu polecenie zmieni `<dependentOS>` sekcji manifestu:
 
 ```xml
 <dependentOS>
@@ -63,11 +63,11 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Aby utworzyć polecenie. exe w celu zmiany manifestu aplikacji
 
-1. Utwórz aplikację konsolową dla polecenia. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.
+1. Utwórz aplikację konsolową dla polecenia. W menu **Plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **Projekt**.
 
 2. W oknie dialogowym **Nowy projekt** w węźle **Visual Basic** wybierz pozycję **Windows** , a następnie szablon **aplikacja konsoli** . Nadaj nazwę projektowi `ChangeOSVersionVB`.
 
-3. W *Module1. vb*Dodaj następujący wiersz do innych `Imports` instrukcji w górnej części pliku:
+3. W *Module1. vb*Dodaj następujący wiersz do innych instrukcji `Imports` w górnej części pliku:
 
    ```vb
    Imports System.Xml
@@ -116,7 +116,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
    End Sub
    ```
 
-   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folder, w którym proces kompilacji tworzy manifest, zazwyczaj  *\<ProjectName >. publish*). Drugi argument to nowa wersja systemu operacyjnego.
+   Polecenie przyjmuje dwa argumenty. Pierwszy argument jest ścieżką do manifestu aplikacji (czyli folder, w którym proces kompilacji tworzy manifest, zwykle *\<ProjectName >. publish*). Drugi argument to nowa wersja systemu operacyjnego.
 
 5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
@@ -126,7 +126,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aby wywołać zdarzenie po kompilacji w celu zmiany manifestu aplikacji
 
-1. Utwórz aplikację systemu Windows dla projektu do opublikowania. W menu **plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **projekt**.
+1. Utwórz aplikację systemu Windows dla projektu do opublikowania. W menu **Plik** kliknij pozycję **Nowy**, a następnie kliknij pozycję **Projekt**.
 
 2. W oknie dialogowym **Nowy projekt** w węźle **Visual Basic** wybierz pozycję **Windows Desktop** , a następnie szablon **aplikacji Windows Forms** . Nadaj nazwę projektowi `VBWinApp`.
 3. Po wybraniu projektu w **Eksplorator rozwiązań**, w menu **projekt** kliknij polecenie **Właściwości**.
@@ -135,9 +135,9 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 
 5. Opublikuj projekt, klikając pozycję **Opublikuj teraz**.
 
-     Plik manifestu zostanie skompilowany i umieszczony w *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, a następnie kliknij polecenie **Otwórz za pomocą**, a następnie kliknij pozycję **Wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.
+     Plik manifestu zostanie skompilowany i umieszczony w *lokalizacji c:\temp\ VBWinApp_1_0_0_0 \vbwinapp.exe.manifest*. Aby wyświetlić manifest, kliknij prawym przyciskiem myszy plik, a następnie kliknij polecenie **Otwórz za pomocą**, a następnie kliknij pozycję **Wybierz program z listy**, a następnie kliknij przycisk **Notatnik**.
 
-     Wyszukaj w pliku `<osVersionInfo>` element. Na przykład wersja może być:
+     Wyszukaj w pliku `<osVersionInfo>` elementu. Na przykład wersja może być:
 
     ```xml
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
@@ -151,7 +151,7 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 
      Podczas kompilowania projektu to polecenie zmieni minimalną wersję systemu operacyjnego w manifeście aplikacji na 5.1.2600.0.
 
-     `$(TargetPath)` Makro wyraża pełną ścieżkę do tworzonego pliku wykonywalnego. W związku z tym *$ (TargetPath). manifest* określi manifest aplikacji utworzony w katalogu *bin* . Opublikowanie spowoduje skopiowanie tego manifestu do lokalizacji publikowania, która została ustawiona wcześniej.
+     Makro `$(TargetPath)` wyraża pełną ścieżkę do tworzonego pliku wykonywalnego. W związku z tym *$ (TargetPath). manifest* określi manifest aplikacji utworzony w katalogu *bin* . Opublikowanie spowoduje skopiowanie tego manifestu do lokalizacji publikowania, która została ustawiona wcześniej.
 
 8. Opublikuj projekt ponownie. Przejdź do strony **Publikowanie** , a następnie kliknij pozycję **Opublikuj teraz**.
 
@@ -168,4 +168,4 @@ Poniższa procedura pokazuje, jak ustawić minimalną wersję systemu operacyjne
 - [Strona kompilowania, Projektant projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Strona publikowania, Projektant projektu](../ide/reference/publish-page-project-designer.md)
 - [Zdarzenie przed kompilacją/wiersz polecenia zdarzenia po kompilacji](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Instrukcje: Określ zdarzenia kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Instrukcje: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md)

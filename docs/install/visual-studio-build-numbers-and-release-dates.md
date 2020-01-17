@@ -2,22 +2,21 @@
 title: Numery wersji i daty wydania programu Visual Studio
 titleSuffix: ''
 description: Lista wydanych wersji i numery kompilacji dla programu Visual Studio, posortowane według daty.
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/17/2019
+ms.date: 01/15/2020
 ms.topic: reference
-ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6864f6ad7819cf163c20f0d604d90370454b53a4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590906"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114177"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -29,6 +28,8 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.3 | Wydanie | 14 stycznia 2020 r. | 16.4.29709.97 |
+| 16.0.11 | Wydanie | 14 stycznia 2020 r. | 16.0.28803.653 |
 | 16.4.2 | Wydanie | 17 grudnia 2019 r. | 16.4.29613.14 |
 | 16.4.1 | Wydanie | 10 grudnia 2019 r. | 16.4.29609.76 |
 | 16.0.10 | Wydanie | 10 grudnia 2019 r. | 16.0.28803.631 |
@@ -119,6 +120,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.19 | Wydanie | 14 stycznia 2020 r. | 15.9.28307.1000 |
 | 15.0.28 | Wydanie | 11 grudnia 2019 | 15.0.26228.102 |
 | 15.9.18 | Wydanie | 10 grudnia 2019 r. | 15.9.28307.960 |
 | 15.9.17 | Wydanie | 15 października 2019 r. | 15.9.28307.905 |

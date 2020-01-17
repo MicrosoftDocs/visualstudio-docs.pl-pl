@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650161"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115389"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 
@@ -31,19 +31,19 @@ Poniższa tabela podsumowuje domyślne skróty klawiaturowe przypisane do polece
 
 |Skrót|Cel|
 |-|-------------|
-|CTRL + E, A|Pokazuje lub ukrywa projektanta argumentów.|
-|CTRL + E, C|Zwija wybrane działanie.|
-|CTRL + E, E|Rozwija wybrane działanie na miejscu.|
-|CTRL + E, F|Łączy wybrane działania w schemacie blokowym.|
-|CTRL + E, I|Pokazuje lub ukrywa projektanta importów.|
-|CTRL + E, M|Przesuwa fokus klawiatury do następnego elementu w kolejności tabulacji.|
-|CTRL + E, N|Tworzy nową zmienną w zakresie wybranego działania (lub najbliższą).|
-|CTRL + E, O|Pokazuje lub ukrywa mapę przeglądu.|
-|CTRL + E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Powoduje to przejście do jednego poziomu w nawigacji nawigacyjnej i zmianę działania głównego na powierzchni projektanta.|
-|CTRL + E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
-|CTRL + E, V|Pokazuje lub ukrywa projektanta zmiennych.|
-|CTRL + E, X|Rozwija wszystkie działania w przepływie pracy.|
-|CTRL + ALT + F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
+|CTRL+E, A|Pokazuje lub ukrywa projektanta argumentów.|
+|CTRL+E, C|Zwija wybrane działanie.|
+|CTRL+E, E|Rozwija wybrane działanie na miejscu.|
+|CTRL+E, F|Łączy wybrane działania w schemacie blokowym.|
+|CTRL+E, I|Pokazuje lub ukrywa projektanta importów.|
+|CTRL+E, M|Przesuwa fokus klawiatury do następnego elementu w kolejności tabulacji.|
+|CTRL+E, N|Tworzy nową zmienną w zakresie wybranego działania (lub najbliższą).|
+|CTRL+E, O|Pokazuje lub ukrywa mapę przeglądu.|
+|CTRL+E, P|Powoduje przejście do elementu nadrzędnego wybranego działania. Powoduje to przejście do jednego poziomu w nawigacji nawigacyjnej i zmianę działania głównego na powierzchni projektanta.|
+|CTRL+E, S|Dodaje element z fokusem klawiatury do bieżącego zaznaczenia.|
+|CTRL+E, V|Pokazuje lub ukrywa projektanta zmiennych.|
+|CTRL+E, X|Rozwija wszystkie działania w przepływie pracy.|
+|CTRL+ALT+F6|Przenosi fokus klawiatury z bieżącego obszaru interfejsu użytkownika do następnego obszaru w sekwencji. Kolejność jest następująca:<br /><br /> 1. pasek nawigacyjny.<br />2. powierzchnia projektanta<br />3. argumenty/zmienne/Importy projektant w przypadku otwarcia<br />4. Shell|
 
 ### <a name="flowchart"></a>Schemat blokowy
 
@@ -80,10 +80,10 @@ Domyślnie domyślne skróty klawiaturowe do edycji tekstu Visual Basic są stos
 - Ponowne mapowanie skrótów klawiaturowych dla następujących poleceń nie ma żadnego wpływu. Możesz użyć domyślnych skrótów klawiaturowych, aby uzyskać dostęp do tych poleceń podczas edytowania wyrażenia.
 
   - Wytnij
-  - Kopiuj
+  - Kopiowanie
   - Wklej
   - Zaznacz wszystko
-  - Anulowanie
-  - Ponawia
+  - Cofnij
+  - Wykonaj ponownie
 
 - Aby ponownie zamapować skróty klawiaturowe poleceń edycji wyrażeń wewnątrz Projektant przepływu pracy w programie Visual Studio, Edytuj skróty w zakresie Projektant przepływu pracy. Zmiany wprowadzone w zakresie edytora tekstu nie są automatycznie stosowane do Projektant przepływu pracy. Jeśli chcesz ponownie mapować skróty w obu miejscach, musisz zastosować zmiany dwukrotnie (raz dla każdego zakresu).

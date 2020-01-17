@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: TerryGLee
-ms.author: tglee
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67f65ea691a02bac87f75f43e0a9938125bcd959
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585512"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114730"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurowanie ostrzeżeń w Visual Basic
 
@@ -40,7 +40,7 @@ Opcja wiersza polecenia **/warnaserror** kompilatora może również służyć d
 | - |---------------|
 |`/warnaserror+`|Traktuj wszystkie ostrzeżenia jako błędy|
 |`/warnsaserror`-|Nie Traktuj jako ostrzeżeń jako błędy. Jest to domyślne ustawienie.|
-|`/warnaserror+:<warning list``>`|Traktuj określone ostrzeżenia jako błędy, wymienione przez ich numer identyfikatora błędu na liście rozdzielanej przecinkami.|
+|`/warnaserror+:<warning list` `>`|Traktuj określone ostrzeżenia jako błędy, wymienione przez ich numer identyfikatora błędu na liście rozdzielanej przecinkami.|
 |`/warnaserror-:<warning list>`|Nie Traktuj określonych ostrzeżeń jako błędów, które są wyświetlane na podstawie ich identyfikatora błędu na liście rozdzielanej przecinkami.|
 |`/nowarn`|Nie zgłaszaj ostrzeżeń.|
 |`/nowarn:<warning list>`|Nie zgłaszaj określonych ostrzeżeń, które są wyświetlane w postaci listy rozdzielanej przecinkami.|

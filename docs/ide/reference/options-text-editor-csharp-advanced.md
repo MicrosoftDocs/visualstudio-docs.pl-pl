@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596232"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124507"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 
@@ -87,7 +87,7 @@ Na stronie opcje **Zaawansowane** można modyfikować ustawienia formatowania ed
    using System.Linq;
    ```
 
-- Sugeruj użycie dla typów w zestawach odwołań
+- Sugeruj użycie dla typów w zestawach .NET Framework
 - Sugeruj użycie dla typów w pakietach NuGet
 
    Po wybraniu tych opcji można wykonać [szybką akcję](../quick-actions.md) , aby zainstalować pakiet NuGet i dodać dyrektywę `using` dla typów bez odwołań.

@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650424"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111432"
 ---
 # <a name="flowdecision-activity-designer"></a>FlowDecision, projektant działań
 
@@ -23,11 +23,11 @@ Węzeł <xref:System.Activities.Statements.FlowDecision> jest węzłem warunkowy
 
 ## <a name="the-flowdecision-node"></a>Węzeł FlowDecision
 
-Użyj <xref:System.Activities.Statements.FlowDecision>, gdy przepływ można rozgałęzić na dwie ścieżki. Węzeł <xref:System.Activities.Statements.FlowDecision> ma <xref:System.Activities.Statements.FlowDecision.Condition%2A> i <xref:System.Activities.Statements.FlowNode> skojarzone z dwoma możliwymi wynikami: <xref:System.Activities.Statements.FlowDecision.True%2A> lub <xref:System.Activities.Statements.FlowDecision.False%2A>. @No__t_0 jest oceniane, a wartość tej oceny określa następny <xref:System.Activities.Statements.FlowNode> do przetworzenia w <xref:System.Activities.Statements.Flowchart>.
+Użyj <xref:System.Activities.Statements.FlowDecision>, gdy przepływ można rozgałęzić na dwie ścieżki. Węzeł <xref:System.Activities.Statements.FlowDecision> ma <xref:System.Activities.Statements.FlowDecision.Condition%2A> i <xref:System.Activities.Statements.FlowNode> skojarzone z dwoma możliwymi wynikami: <xref:System.Activities.Statements.FlowDecision.True%2A> lub <xref:System.Activities.Statements.FlowDecision.False%2A>. <xref:System.Activities.Statements.FlowDecision.Condition%2A> jest oceniane, a wartość tej oceny określa następny <xref:System.Activities.Statements.FlowNode> do przetworzenia w <xref:System.Activities.Statements.Flowchart>.
 
 ### <a name="using-the-flowdecision-designer"></a>Korzystanie z narzędzia FlowDecision Designer
 
-Projektanta **FlowDecision** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp**, klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL** +**Alt** +**X**.
+Projektanta **FlowDecision** można znaleźć w kategorii **schemat blokowy** , do którego **uzyskuje się dostęp**, klikając kartę **Przybornik** na Projektant przepływu pracy. Alternatywnie wybierz pozycję **Przybornik** z menu **Widok** lub naciśnij **klawisze CTRL**+**Alt**+**X**.
 
 Projektanta **FlowDecision** można przeciągnąć z **przybornika** i porzucić do Projektant przepływu pracy powierzchni w ramach projektanta działań **schematu blokowego** . Spowoduje to utworzenie <xref:System.Activities.Statements.FlowDecision> oznaczonej **decyzją** w ramach działania <xref:System.Activities.Statements.Flowchart>. Wskaźnik myszy nad projektantem i dojścia do **rzeczywistych** i **fałszywych** kwadratów dla dwóch gałęzi.
 
@@ -39,11 +39,11 @@ Wyrażenie określające <xref:System.Activities.Statements.FlowDecision.Conditi
 
 W poniższej tabeli przedstawiono właściwości <xref:System.Activities.Statements.FlowDecision> i opisano sposób ich używania w projektancie. Te właściwości można edytować w siatce właściwości lub na powierzchni projektanta.
 
-|Nazwa właściwości|Wymagane|Użycie|
+|Nazwa właściwości|Wymagane|Pomiar|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Oznacza|Warunek określający, która ścieżka ma być wykonywana przez sterowanie przepływem.|
-|<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Ścieżka wykonywana przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> jest spełniony.|
-|<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Ścieżka wykonywana przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> nie jest spełniony.|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Prawda|Warunek określający, która ścieżka ma być wykonywana przez sterowanie przepływem.|
+|<xref:System.Activities.Statements.FlowDecision.True%2A>|Fałsz|Ścieżka wykonywana przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> jest spełniony.|
+|<xref:System.Activities.Statements.FlowDecision.False%2A>|Fałsz|Ścieżka wykonywana przez sterowanie przepływem, jeśli <xref:System.Activities.Statements.FlowDecision.Condition%2A> nie jest spełniony.|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -2,17 +2,17 @@
 title: Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9d043f64204c50be06952ecc39be75e15087cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654107"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114882"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na Windows Forms
 
@@ -39,7 +39,7 @@ Szablon DSL **projektanta w minimalnym** stopniu pozwala utworzyć minimalny DSL
 
    1. Przekształć wszystkie szablony.
 
-   2. Kompiluj i uruchamiaj przykład (**Ctrl** +**F5**).
+   2. Kompiluj i uruchamiaj przykład (**Ctrl**+**F5**).
 
    3. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik `Sample` w projekcie debugowania.
 
@@ -53,7 +53,7 @@ Szablon DSL **projektanta w minimalnym** stopniu pozwala utworzyć minimalny DSL
 
 - `DslDefinition.dsl` nie zawiera elementów diagramu. Dzieje się tak dlatego, że nie będziesz używać diagramów DSL do wyświetlania modeli wystąpień tego języka DSL. Zamiast tego utworzysz powiązanie formularza systemu Windows z modelem, a elementy w formularzu będą wyświetlały model.
 
-- Oprócz projektów `Dsl` i `DslPackage`, rozwiązanie zawiera trzeci projekt o nazwie `UI.` projekt**interfejsu użytkownika** zawiera definicję kontrolki Windows Forms. `DslPackage` zależy od `UI`, a `UI` zależy od `Dsl`.
+- Oprócz projektów `Dsl` i `DslPackage`, rozwiązanie zawiera trzeci projekt o nazwie `UI.`projekt **interfejsu użytkownika** zawiera definicję kontrolki Windows Forms. `DslPackage` zależy od `UI`, a `UI` zależy od `Dsl`.
 
 - W projekcie `DslPackage`, `UI\DocView.cs` zawiera kod, który wyświetla formant Windows Forms, który jest zdefiniowany w projekcie `UI`.
 
@@ -71,7 +71,7 @@ Po zaktualizowaniu pliku definicji DSL w celu zdefiniowania własnego modemu DSL
 
 W tym instruktażu zostanie użyta następująca Definicja DSL.
 
-![DSL&#45;—&#45;WPF 1](../modeling/media/dsl-wpf-1.png)
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Otwórz DslDefinition. DSL w projektancie DSL.
 
@@ -123,7 +123,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
 2. Wybierz **obiekt**, **dalej**.
 
-     Rozwiń węzeł **DSL**, **Company. FarmApp**i wybierz opcję **Farma**, która jest klasą główną modelu. Wybierz pozycję **Zakończ**.
+     Rozwiń węzeł **DSL**, **Company. FarmApp**i wybierz opcję **Farma**, która jest klasą główną modelu. Wybierz **Zakończ**.
 
      W Eksplorator rozwiązań projekt **interfejsu użytkownika** zawiera teraz **Properties\DataSources\Farm.DataSource**
 
@@ -162,7 +162,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
      Ustaw właściwość **DataMember** na **zwierzęta** lub **pola**.
 
-10. Ustaw właściwości **DataSource** `AnimalGridView` na `AnimalBinding` i `FieldGridView` na `FieldBinding`.
+10. Ustaw właściwości **DataSource** `AnimalGridView` na `AnimalBinding`i `FieldGridView` na `FieldBinding`.
 
 11. Dostosuj układ kontrolki farmy do swojego smaku.
 
@@ -174,7 +174,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
 - Gwarantuje to, że gdy użytkownik wybierze wiersz, okno Właściwości wyświetla właściwości odpowiedniego elementu modelu, a nie wiersz siatki danych.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) schemat linków między źródłami danych i widokami.
+  ![DslWpf4](../modeling/media/dslwpf4.png) schemat linków między źródłami danych i widokami.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Ukończ powiązania z DSL
 
@@ -214,7 +214,7 @@ Teraz można utworzyć nową kontrolkę użytkownika, która będzie wyświetla�
 
 Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później dodać dalsze ulepszenia.
 
-1. Kompiluj i uruchamiaj rozwiązanie.
+1. Skompiluj i uruchom rozwiązanie.
 
 2. W eksperymentalnym wystąpieniu programu Visual Studio Otwórz plik **przykładowy** .
 
@@ -241,7 +241,7 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
      W oknie dialogowym **Formatowanie i zaawansowane powiązanie** w obszarze **Tryb aktualizacji źródła danych**wybierz pozycję **OnPropertyChanged**.
 
-3. Kompiluj i uruchamiaj rozwiązanie.
+3. Skompiluj i uruchom rozwiązanie.
 
      Sprawdź, czy po zmianie zawartości pola odpowiednia właściwość modelu farmy zostanie natychmiast zmieniona.
 
@@ -294,13 +294,13 @@ Rozwiązanie DSL może teraz kompilować i uruchamiać, chociaż warto później
 
 3. Dodaj podobne przyciski dla kóz i pól.
 
-4. Kompiluj i uruchamiaj rozwiązanie.
+4. Skompiluj i uruchom rozwiązanie.
 
 5. Sprawdź, czy nowy przycisk dodaje element. Nowy element powinien pojawić się zarówno w Eksploratorze FarmApp, jak i w odpowiednim widoku siatki danych.
 
     Powinno być możliwe edytowanie nazwy elementu w widoku siatki danych. Możesz również z niej usunąć.
 
-   ![DSL&#45;—&#45;WPF 2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informacje o kodzie umożliwiającym dodanie elementu
 

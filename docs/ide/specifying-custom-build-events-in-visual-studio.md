@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918897"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115342"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
 
@@ -24,9 +24,9 @@ Określając to zdarzenie kompilacji niestandardowej, może automatycznie urucho
 
 Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
-- Visual Basic —[How to: Określ zdarzenia kompilacji (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic —[porady: Określanie Tworzenie zdarzenia (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C#i F#--[How to: Określ zdarzenia kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C#i F#—[porady: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++ —[określanie zdarzeń kompilacji](/cpp/build/specifying-build-events).
 
@@ -60,4 +60,4 @@ Aby uzyskać najlepsze wyniki postępuj zgodnie z tymi porady dotyczące formato
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
 - [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — Zdarzenie sprzed kompilacji](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Znaki specjalne w MSBuild](../msbuild/msbuild-special-characters.md)
-- [Przewodnik: Kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)

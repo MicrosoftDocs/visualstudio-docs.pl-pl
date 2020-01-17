@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748381"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114520"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Porady: przechwytywanie kliknięć w kształcie lub elemencie Decorator
 Poniższe procedury demonstrują sposób przechwycenia kliknięcia kształtu lub ikony dekoratora. Możesz przechwycić kliknięcia, podwójne kliknięcia, przeciąganie i inne gesty, a następnie odpowiedzieć na element.
@@ -34,10 +34,10 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> Ustaw wartość `e.Handled` na `true`, chyba że chcesz, aby zdarzenie zostało przesłane do zawierającego go kształtu lub diagramu.
+> Ustaw `e.Handled` na `true`, chyba że chcesz, aby zdarzenie zostało przesłane do zawierającego go kształtu lub diagramu.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Aby przechwycić kliknięcia w dekoratory
- Dekoratory obrazów są przeprowadzane na wystąpieniu klasy ImageField, która ma metodę OnDoubleClick. Możesz przechwycić kliknięcia, jeśli piszesz podklasę ImageField. Pola są konfigurowane w metodzie InitializeShapeFields. W związku z tym należy zmienić tę metodę, aby utworzyć wystąpienie klasy zamiast zwykłych ImageField. Metoda InitializeShapeFields znajduje się w wygenerowanym kodzie klasy Shape. Można przesłonić klasę kształtu, jeśli ustawisz jej Właściwość `Generates Double Derived` zgodnie z opisem w poniższej procedurze.
+ Dekoratory obrazów są przeprowadzane na wystąpieniu klasy ImageField, która ma metodę OnDoubleClick. Możesz przechwycić kliknięcia, jeśli piszesz podklasę ImageField. Pola są konfigurowane w metodzie InitializeShapeFields. W związku z tym należy zmienić tę metodę, aby utworzyć wystąpienie klasy zamiast zwykłych ImageField. Metoda InitializeShapeFields znajduje się w wygenerowanym kodzie klasy Shape. Można zastąpić klasę Shape, jeśli ustawisz jej Właściwość `Generates Double Derived` zgodnie z opisem w poniższej procedurze.
 
  Chociaż InitializeShapeFields jest metodą wystąpienia, jest wywoływana tylko raz dla każdej klasy. W związku z tym tylko jedno wystąpienie elementu ClickableImageField istnieje dla każdego pola w każdej klasie, a nie jednego wystąpienia dla każdego kształtu na diagramie. Gdy użytkownik kliknie dwukrotnie wystąpienie, należy zidentyfikować wystąpienie, które zostało trafione, jak pokazano w przykładzie.
 
@@ -112,7 +112,7 @@ public partial class MyShape // change
     }
     ```
 
-1. Kompiluj i uruchamiaj rozwiązanie.
+1. Skompiluj i uruchom rozwiązanie.
 
 2. Kliknij dwukrotnie ikonę na wystąpieniu kształtu. Powinien pojawić się komunikat testowy.
 
