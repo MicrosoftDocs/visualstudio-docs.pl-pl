@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 243af2549862f1d29c44ba5bfc3060d87d5c6f85
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d0a4243d0d64fbd9a436b49f42c99c275e9714b
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723835"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269114"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. Kierują one zachowanie klawisza **Start** (F5) i poleceń **kompilacji** . Domyślnie te polecenia kompilują i uruchamiają konfigurację debugowania. Oba polecenia są wykonywane w kontekście konfiguracji rozwiązania. Oznacza to, że użytkownik może oczekiwać, że od F5 rozpocznie się i skompiluje dowolne aktywne rozwiązanie za pośrednictwem ustawień. Środowisko jest przeznaczone do optymalizowania rozwiązań, a nie projektów, gdy chodzi o Kompilowanie i uruchamianie.
@@ -23,11 +23,11 @@ Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. K
  Standardowy pasek narzędzi programu Visual Studio zawiera przycisk Start i listę rozwijaną konfiguracji rozwiązania po prawej stronie przycisku Start. Ta lista umożliwia użytkownikom wybranie konfiguracji, która ma zostać uruchomiona po naciśnięciu klawisza F5, utworzenie własnych konfiguracji rozwiązań lub edytowanie istniejącej konfiguracji.
 
 > [!NOTE]
-> Brak interfejsów rozszerzalności do tworzenia lub edytowania konfiguracji rozwiązania. Musisz użyć `DTE.SolutionBuilder`. Istnieją jednak interfejsy API rozszerzalności do zarządzania kompilacją rozwiązania. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Brak interfejsów rozszerzalności do tworzenia lub edytowania konfiguracji rozwiązania. Musisz użyć `DTE.SolutionBuild`. Istnieją jednak interfejsy API rozszerzalności do zarządzania kompilacją rozwiązania. Aby uzyskać więcej informacji, zobacz temat <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Oto jak można zaimplementować konfiguracje rozwiązań obsługiwane przez typ projektu:
 
-- Projekt
+- {1&gt;Projekt&lt;1}
 
    Wyświetla nazwy projektów znalezionych w bieżącym rozwiązaniu.
 
@@ -45,11 +45,11 @@ Konfiguracje rozwiązań przechowują właściwości na poziomie rozwiązania. K
 
    Jeśli projekt nie obsługuje platform, kolumna platformy dla tego projektu nie wyświetla i jest wyłączona.
 
-- Kompilacja
+- {1&gt;Kompilacja&lt;1}
 
    Określa, czy projekt został skompilowany przez bieżącą konfigurację rozwiązania. Niewybrane projekty nie są kompilowane, gdy polecenia kompilacji na poziomie rozwiązania są wywoływane pomimo wszelkich zawartych w nim zależności projektu. Projekty, które nie zostały wybrane do skompilowania, są nadal objęte debugowaniem, uruchamianiem, pakowaniem i wdrażaniem rozwiązania.
 
-- Deploy
+- Wdrażanie programu
 
    Określa, czy projekt zostanie wdrożony, gdy polecenia Uruchom lub Wdróż zostaną użyte z wybraną konfiguracją kompilacji rozwiązania. Pole wyboru dla tego pola będzie dostępne, jeśli projekt obsługuje wdrażanie przez implementację interfejsu <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> w obiekcie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>.
 

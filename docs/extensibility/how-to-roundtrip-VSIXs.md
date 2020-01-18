@@ -8,18 +8,18 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: d6de945e7221d2239e1b4f00185a5b16c04b717d
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316487"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269060"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Instrukcje: Udostępnianie rozszerzeń dla programu Visual Studio 2017 i Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Instrukcje: Udostępnianie rozszerzeń dla programu Visual Studio 2019/2017 i Visual Studio 2015
 
-W tym dokumencie wyjaśniono, jak przekonywać rundy projektów rozszerzalności między programem Visual Studio 2015 i programem Visual Studio 2017. Po zakończeniu tego uaktualnienia projekt będzie mógł otwierać, kompilować, instalować i uruchamiać programy Visual Studio 2015 i Visual Studio 2017. Jako odwołanie, Niektóre rozszerzenia, które mogą być rundy między programem Visual Studio 2015 i programem Visual Studio 2017, można znaleźć w [przykładach rozszerzalności SDK programu vs](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+W tym dokumencie wyjaśniono, jak przeprowadzić rundę projektów rozszerzalności między programem Visual Studio 2015 i programem Visual Studio 2019 lub Visual Studio 2017. Po zakończeniu tego uaktualnienia projekt będzie mógł otwierać, kompilować, instalować i uruchamiać programy Visual Studio 2015 i Visual Studio 2019 lub 2017. Jako odwołanie, Niektóre rozszerzenia, które mogą być rundy, między programami Visual Studio 2015 i Visual Studio 2019 lub 2017, można znaleźć w przykładach [rozszerzalności SDK programu vs](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-Jeśli planujesz kompilację tylko w programie Visual Studio 2017, ale chcesz, aby plik wyjściowy VSIX działał zarówno w programie Visual Studio 2015, jak i w programie Visual Studio 2017, zapoznaj się z [dokumentem migracja rozszerzenia](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Jeśli planujesz kompilację tylko w programie Visual Studio 2019/2017, ale chcesz, aby plik wyjściowy VSIX działał zarówno w programie Visual Studio 2015, jak i w programie Visual Studio 2019/2017, zapoznaj się z [dokumentem migracja rozszerzenia](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 > [!NOTE]
 > Ze względu na zmiany w programie Visual Studio między wersjami niektóre elementy, które działały w jednej wersji, nie działają w innej. Upewnij się, że funkcje, do których próbujesz uzyskać dostęp, są dostępne w obu wersjach lub rozszerzenie będzie miało nieoczekiwane wyniki.
@@ -31,23 +31,23 @@ Poniżej przedstawiono zarys kroków, które należy wykonać w tym dokumencie w
     * Miejsce docelowe instalacji
     * Wymagania wstępne
 3. CSProj aktualizacji:
-    * Aktualizacja `<MinimumVisualStudioVersion>`.
+    * Update `<MinimumVisualStudioVersion>`.
     * Dodaj właściwość `<VsixType>`.
     * Dodaj właściwość debugowania `($DevEnvDir)` 3 razy.
     * Dodaj warunki do importowania narzędzi kompilacji i elementów docelowych.
 
-4. Kompiluj i Testuj
+4. Kompilowanie i testowanie
 
-## <a name="environment-setup"></a>Konfiguracja środowiska
+## <a name="environment-setup"></a>Omgeving instellen
 
 W tym dokumencie przyjęto założenie, że na maszynie zainstalowano następujące elementy:
 
 * Program Visual Studio 2015 z zainstalowanym zestawem SDK programu VS
-* Program Visual Studio 2017 z zainstalowanym obciążeniem rozszerzalności
+* Program Visual Studio 2019 lub 2017 z zainstalowanym obciążeniem rozszerzalności
 
 ## <a name="recommended-approach"></a>Zalecane podejście
 
-Zdecydowanie zaleca się uruchomienie tego uaktualnienia z programem Visual Studio 2015 zamiast programu Visual Studio 2017. Główną zaletą programowania w programie Visual Studio 2015 jest upewnienie się, że nie odwołują się do zestawów, które nie są dostępne w programie Visual Studio 2015. W przypadku tworzenia aplikacji w programie Visual Studio 2017 istnieje ryzyko, że można wprowadzić zależność od zestawu, który istnieje tylko w programie Visual Studio 2017.
+Zdecydowanie zaleca się uruchomienie tego uaktualnienia z programem Visual Studio 2015 zamiast programu Visual Studio 2019 lub 2017. Główną zaletą programowania w programie Visual Studio 2015 jest upewnienie się, że nie odwołują się do zestawów, które nie są dostępne w programie Visual Studio 2015. W przypadku tworzenia aplikacji w programie Visual Studio 2019 lub 2017 istnieje ryzyko, że możesz wprowadzić zależność od zestawu, który istnieje tylko w programie Visual Studio 2019 lub 2017.
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Upewnij się, że nie ma odwołań do pliku Project. JSON
 
@@ -67,14 +67,14 @@ Jeśli projekt zawiera plik *Project. JSON* :
 
 Musimy koniecznie dodać narzędzia do kompilacji, które pozwolą nam odpowiednio kompilować i debugować. Firma Microsoft utworzyła zestaw o nazwie Microsoft. VisualStudio. Sdk. BuildTasks.
 
-Do kompilowania i wdrażania nowego vsixv3 w programie Visual Studio 2015 i 2017 wymagane są następujące pakiety NuGet:
+Do kompilowania i wdrażania nowego vsixv3 w programie Visual Studio 2015 i 2019/2017 wymagane są następujące pakiety NuGet:
 
 Wersja | Narzędzia skompilowane
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
-Visual Studio 2017 | Microsoft.VSSDK.BuildTool
+Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
+Visual Studio 2019 lub 2017 | Microsoft. VSSDK. BuildTool
 
-Aby to zrobić:
+W tym celu:
 
 * Dodaj pakiet NuGet Microsoft. VisualStudio. Sdk. BuildTasks. 14.0 do projektu.
 * Jeśli projekt nie zawiera Microsoft. VSSDK. BuildTools, Dodaj go.
@@ -112,7 +112,7 @@ Aby to zrobić ręcznie:
 * Zapisz i zamknij plik.
 
 > [!NOTE]
-> Może być konieczne ręczne edytowanie wstępnie wymaganej wersji, aby upewnić się, że jest ona zgodna ze wszystkimi wersjami programu Visual Studio 2017. Wynika to z faktu, że projektant wstawi wersję minimalną jako bieżącą wersję programu Visual Studio (na przykład 15.0.26208.0). Jednak ponieważ inni użytkownicy mogą mieć wcześniejszą wersję, warto ręcznie edytować ją w 15,0.
+> Może być konieczne ręczne edytowanie wstępnie wymaganej wersji, aby upewnić się, że jest ona zgodna ze wszystkimi wersjami programu Visual Studio 2019 lub 2017. Wynika to z faktu, że projektant wstawi wersję minimalną jako bieżącą wersję programu Visual Studio (na przykład 15.0.26208.0). Jednak ponieważ inni użytkownicy mogą mieć wcześniejszą wersję, warto ręcznie edytować ją w 15,0.
 
 W tym momencie plik manifestu powinien wyglądać następująco:
 
@@ -195,9 +195,10 @@ Na przykład:
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Zapisz plik CSPROJ i zamknij go.
+* Zapisz plik CSPROJ i zamknij go. 
+  * Należy pamiętać, że jeśli używasz więcej niż jednego projektu w rozwiązaniu, ustaw ten projekt jako projekt startowy za pomocą polecenia "Ustaw jako projekt startowy" w menu kontekstowym projektu. Gwarantuje to, że program Visual Studio ponownie otworzy ten projekt po jego zwolnieniu.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Testowanie instalacji rozszerzeń w programie Visual Studio 2015 i Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2019-or-2017"></a>Testowanie instalacji rozszerzeń w programie Visual Studio 2015 i Visual Studio 2019 lub 2017
 
 W tym momencie projekt powinien być gotowy do kompilowania nowego vsixv3, który można zainstalować zarówno w programie Visual Studio 2015, jak i w programie Visual Studio 2017.
 
@@ -205,7 +206,7 @@ W tym momencie projekt powinien być gotowy do kompilowania nowego vsixv3, któr
 * Skompiluj projekt i Potwierdź w danych wyjściowych, że VSIX kompiluje się poprawnie.
 * Przejdź do katalogu projektu.
 * Otwórz folder *\bin\debug* .
-* Kliknij dwukrotnie plik VSIX i zainstaluj swoje rozszerzenie w programie Visual Studio 2015 i Visual Studio 2017.
+* Kliknij dwukrotnie plik VSIX i zainstaluj swoje rozszerzenie w programie Visual Studio 2015 i Visual Studio 2019/2017.
 * Upewnij się, że rozszerzenie znajduje się w **narzędziach** > **rozszerzenia i aktualizacje** w sekcji **zainstalowane** .
 * Spróbuj uruchomić lub użyć rozszerzenia, aby sprawdzić, czy działa.
 

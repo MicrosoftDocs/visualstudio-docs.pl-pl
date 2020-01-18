@@ -1,5 +1,5 @@
 ---
-title: Tworzenie kompilacji
+title: Kompilowanie budynku
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,51 +12,49 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8cb2a8a7a1711b01bcb167fceb13faa30e571c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114708"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269100"
 ---
-# <a name="compile-and-build-in-visual-studio"></a>Skompilować i utworzyć w programie Visual Studio
+# <a name="compile-and-build-in-visual-studio"></a>Kompilowanie i kompilowanie w programie Visual Studio
 
-Podczas kompilowania kodu źródłowego, aparat kompilacji tworzy zespołów i wykonywalnego aplikacji. Ogólnie rzecz biorąc proces kompilacji jest bardzo podobne w wielu różnych typach projektów, takich jak Windows, ASP.NET, aplikacje mobilne i inne. Proces kompilacji jest również podobne w językach programowania, takich jak C#, Visual Basic, C++, i F#.
+Pierwsze wprowadzenie do kompilowania w środowisku IDE zawiera [Przewodnik: kompilowanie aplikacji](walkthrough-building-an-application.md).
 
-Przez kompilacjom kodu, można szybko zidentyfikować błędy kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i wpisz niezgodności. Można także wykryć i poprawić błędy czasu wykonywania, takie jak błędy logiczne i semantyczne, tworząc i uruchamianiu wersji debugowania kodu.
-
-Pomyślnej kompilacji sprawdza, czy kod źródłowy aplikacji zawiera poprawną składnię i że może rozpoznać wszystkie statyczne odwołania do bibliotek, zespoły i inne składniki. Generowany jest plik wykonywalny aplikacji mogą być testowane dla prawidłowego działania w obu [debugowania środowiska](../debugger/index.yml) i przy użyciu różnych ręcznych i automatycznych testów [weryfikować jakość kodu](../test/improve-code-quality.md). Po aplikacji zostało w pełni przetestowane, można kompilować wydaną wersję do wdrażania na klientach. Aby zapoznać się z wprowadzeniem do tego procesu, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).
-
-Używasz jednej z następujących metod do tworzenia aplikacji: środowiska IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i potoków usługi Azure:
+Możesz użyć dowolnej z następujących metod, aby skompilować aplikację: środowisko IDE programu Visual Studio, narzędzia wiersza polecenia programu MSBuild i Azure Pipelines:
 
 | Metoda kompilacji | Zalety |
 | --- |--- | --- |
-| IDE |-Kompilacji od razu utworzyć i Testuj je w debugerze.<br />— Uruchamianie kompilację na wielu procesorach dla projektów C++ i C#.<br />— Dostosowywanie różne aspekty systemu kompilacji. |
-| Wiersz polecenia programu MSBuild| -Kompilować projekty bez konieczności instalowania programu Visual Studio.<br />-Tworzy wykonywania wielu procesorach dla wszystkich typów projektów.<br />-Dostosować większość obszarów systemu kompilacji.|
-| Azure Pipelines | — Automatyzowanie procesu kompilacji w ramach potoku ciągłej integracji/ciągłego dostarczania.<br />-Zastosować testy automatyczne z każdą kompilacją.<br />-Zatrudniać praktycznie nieograniczona liczba zasobów w chmurze dla procesów kompilacji.<br />-Modyfikować przepływ kompilacji oraz tworzyć aktywności kompilacji, aby wykonywać zadania wysoce niestandardowe.|
+| IDE |— Natychmiast Twórz kompilacje i Testuj je w debugerze.<br />— Uruchom kompilacje wieloprocesorowe C++ dla C# projektów i.<br />-Dostosowywanie różnych aspektów systemu kompilacji. |
+| CMake | -Kompiluj projekty przy użyciu narzędzia CMake<br />— Użyj tego samego systemu kompilacji na platformach Linux i Windows. |
+| Wiersz polecenia MSBuild| -Kompiluj projekty bez instalowania programu Visual Studio.<br />— Uruchom kompilacje wieloprocesorowe dla wszystkich typów projektów.<br />-Dostosowywanie większości obszarów systemu kompilacji.|
+| Azure Pipelines | — Automatyzuj proces kompilacji w ramach potoku ciągłej integracji/ciągłego dostarczania.<br />-Zastosuj testy automatyczne przy każdej kompilacji.<br />— Wykorzystuj praktycznie nieograniczone zasoby oparte na chmurze dla procesów kompilacji.<br />— Modyfikuj przepływ pracy kompilacji i twórz działania kompilacji, aby wykonywać głęboko dostosowane zadania.|
 
-Dokumentacja w tej sekcji przechodzi w stan więcej szczegółowych informacji z procesu kompilacji oparte na środowisku IDE. Aby uzyskać więcej informacji o innych metodach, zobacz [MSBuild](../msbuild/msbuild.md) i [potoki Azure](/azure/devops/pipelines/index?view=vsts)odpowiednio.
+Dokumentacja w tej sekcji zawiera dalsze szczegóły procesu kompilacji opartego na środowisku IDE. Aby uzyskać więcej informacji o innych metodach, zobacz odpowiednio [MSBuild](../msbuild/msbuild.md) i [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [skompilować i utworzyć w programie Visual Studio dla komputerów Mac](/visualstudio/mac/compiling-and-building).
+> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Kompilowanie i kompilowanie w Visual Studio dla komputerów Mac](/visualstudio/mac/compiling-and-building).
 
-## <a name="overview-of-building-from-the-ide"></a>Omówienie tworzenia z poziomu środowiska IDE
+## <a name="overview-of-building-from-the-ide"></a>Przegląd kompilowania z poziomu środowiska IDE
 
-Podczas tworzenia projektu Visual Studio stworzył domyślne konfiguracje kompilacji dla projektu i rozwiązania, które zawiera projekt.  Te konfiguracje definiują sposób rozwiązania i projekty są zbudowane i wdrażane. W szczególności, konfiguracje projektu są unikatowe dla platformy docelowej (na przykład Windows lub Linux) i typ (na przykład debug i release) kompilacji. Te konfiguracje można edytować, jednak, a także mogą tworzyć własne konfiguracje, zgodnie z potrzebami.
+Podczas tworzenia projektu program Visual Studio utworzył domyślne konfiguracje kompilacji dla projektu i rozwiązania, które zawiera projekt.  Te konfiguracje definiują sposób kompilowania i wdrażania rozwiązań i projektów. Konfiguracje projektu w szczególności są unikatowe dla platformy docelowej (na przykład Windows lub Linux) i typu kompilacji (na przykład debugowanie lub wydanie). Te konfiguracje można edytować w dowolny sposób, a także w razie konieczności tworzyć własne konfiguracje.
 
-Pierwszy wprowadzenie do tworzenia w środowisku IDE, zobacz [przewodnik: budowanie aplikacji](walkthrough-building-an-application.md).
+Pierwsze wprowadzenie do kompilowania w środowisku IDE zawiera [Przewodnik: kompilowanie aplikacji](walkthrough-building-an-application.md).
 
-Następnie możesz zapoznać się [kompilowanie oraz Oczyszczanie projektów i rozwiązań w programie Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) Aby dowiedzieć się więcej o dostosowywaniu różne aspekty można wprowadzić do procesu. Możliwe modyfikacje obejmują [zmiany katalogu danych wyjściowych](how-to-change-the-build-output-directory.md), [Określanie niestandardowych zdarzeń kompilacji](specifying-custom-build-events-in-visual-studio.md), [Zarządzanie zależności projektu](how-to-create-and-remove-project-dependencies.md), [Zarządzanie rejestr kompilacji pliki](how-to-view-save-and-configure-build-log-files.md), i [pomijanie ostrzeżeń kompilatora](how-to-suppress-compiler-warnings.md).
+Następnie zapoznaj się z [tworzeniem i czyszczeniem projektów i rozwiązań w programie Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) , aby dowiedzieć się więcej o różnych aspektach dostosowań, które można wykonać w procesie. Dostosowania obejmują [zmianę katalogów wyjściowych](how-to-change-the-build-output-directory.md), [Określanie niestandardowych zdarzeń kompilacji](specifying-custom-build-events-in-visual-studio.md), [Zarządzanie zależnościami projektu](how-to-create-and-remove-project-dependencies.md), [Zarządzanie plikami dzienników kompilacji](how-to-view-save-and-configure-build-log-files.md)i [pomijanie ostrzeżeń kompilatora](how-to-suppress-compiler-warnings.md).
 
-Z tego miejsca możesz zapoznać się z wielu innych zadań:
-- [O konfiguracjach kompilacji](understanding-build-configurations.md)
-- [Omówienie platformy kompilacji](understanding-build-platforms.md)
+Z tego miejsca możesz poznać różne inne zadania:
+- [Informacje o konfiguracjach kompilacji](understanding-build-configurations.md)
+- [Informacje o platformach kompilacji](understanding-build-platforms.md)
 - [Zarządzaj właściwościami projektu i rozwiązania](managing-project-and-solution-properties.md).
-- Określanie zdarzeń kompilacji w [C#](how-to-specify-build-events-csharp.md) i [języka Visual Basic](how-to-specify-build-events-visual-basic.md).
+- Określ zdarzenia kompilacji w [C#](how-to-specify-build-events-csharp.md) i [Visual Basic](how-to-specify-build-events-visual-basic.md).
 - [Ustawianie opcji kompilacji](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [Tworzenie wielu projektów w sposób równoległy](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
+- [Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [(Kompilacja) kompilowanie projektów witryny sieci Web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
-- [Skompilować i utworzyć (Visual Studio dla komputerów Mac)](/visualstudio/mac/compiling-and-building)
+- [Kompilowanie (Kompilowanie) projektów witryny sieci Web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Kompiluj i Kompiluj (Visual Studio dla komputerów Mac)](/visualstudio/mac/compiling-and-building)
+- [CMake projekty w programie Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

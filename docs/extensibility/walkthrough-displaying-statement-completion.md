@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632518"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269080"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie instrukcji wyświetlania
 Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefiniowanie identyfikatorów, dla których chcesz wprowadzić zakończenie, a następnie wyzwalanie sesji ukończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenie nazwy pliku i typ zawartości, a następnie wyświetlić uzupełnianie dla tego typu. Można też wyzwolić zakończenie dla istniejącego typu zawartości — na przykład "zwykły tekst". W tym instruktażu pokazano, jak wyzwolić uzupełnianie instrukcji dla typu zawartości "zwykły tekst", który jest typem zawartości plików tekstowych. Typ zawartości "text" jest elementem nadrzędnym wszystkich innych typów zawartości, w tym kodu i plików XML.
@@ -34,7 +34,7 @@ Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefi
 
 #### <a name="to-create-a-mef-project"></a>Aby utworzyć projekt MEF
 
-1. Utwórz projekt C# VSIX. (W oknie dialogowym **Nowy projekt** wybierz pozycję  **C# Wizualizacja/rozszerzalność**, a następnie **Projekt VSIX**). Nadaj nazwę `CompletionTest` rozwiązanie.
+1. Utwórz projekt C# VSIX. (W oknie dialogowym **Nowy projekt** wybierz pozycję  **C# Wizualizacja/rozszerzalność**, a następnie **Projekt VSIX**). Nadaj nazwę `CompletionTest`rozwiązanie.
 
 2. Dodaj szablon elementu klasyfikatora edytora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
@@ -48,7 +48,7 @@ Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefi
 
      Microsoft. VisualStudio. OLE. Interop
 
-     Microsoft. VisualStudio. Shell. 14.0
+     Microsoft. VisualStudio. Shell. 15.0
 
      Microsoft. VisualStudio. Shell. unzmienny. 10.0
 
@@ -133,7 +133,7 @@ Można zaimplementować uzupełnianie instrukcji opartych na języku przez zdefi
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Zaimportuj <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, która umożliwia konwersję z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> do <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> i <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>, który umożliwia dostęp do standardowych usług Visual Studio.
+4. Zaimportuj <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, która umożliwia konwersję z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> do <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>i <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>, który umożliwia dostęp do standardowych usług Visual Studio.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
