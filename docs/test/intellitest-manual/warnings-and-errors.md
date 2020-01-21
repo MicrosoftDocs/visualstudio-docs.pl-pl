@@ -4,49 +4,49 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653129"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112530"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
 ## <a name="warnings-and-errors-by-category"></a>Ostrzeżenia i błędy według kategorii
 
-* **Granice
-  * [Przekroczono MaxBranches](#maxbranches-exceeded)
-  * [Przekroczono MaxConstraintSolverTime](#maxconstraintsolvertime-exceeded)
-  * [Przekroczono MaxConditions](#maxconditions-exceeded)
-  * [Przekroczono MaxCalls](#maxcalls-exceeded)
-  * [Przekroczono MaxStack](#maxstack-exceeded)
-  * [Przekroczono MaxRuns](#maxruns-exceeded)
-  * [Przekroczono MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)
+* **Granice**
+  * [Przekroczono wartość MaxBranches](#maxbranches-exceeded)
+  * [Przekroczono wartość MaxConstraintSolverTime](#maxconstraintsolvertime-exceeded)
+  * [Przekroczono wartość MaxConditions](#maxconditions-exceeded)
+  * [Przekroczono wartość MaxCalls](#maxcalls-exceeded)
+  * [Przekroczono wartość MaxStack](#maxstack-exceeded)
+  * [Przekroczono wartość MaxRuns](#maxruns-exceeded)
+  * [Przekroczono wartość MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)
 
 * **Rozwiązywanie ograniczeń**
   * [Nie można skonkretyzować rozwiązania](#cannot-concretize-solution)
 
-* **3.x**
+* **Domeny**
   * [Potrzebna pomoc dla konstruowania obiektu](#help-construct)
   * [Potrzebujesz pomocy w znalezieniu typów](#help-types)
   * [Typ możliwych do użycia](#usable-type-guessed)
 
 * **Wykonanie**
   * [Nieoczekiwany błąd podczas eksploracji](#unexpected-exploration)
-  * [TargetInvocationException —](#targetinvocationexception)
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **WMI**
   * [Wywołana metoda bez Instrumentacji](#uninstrumented-method-called)
   * [Wywołana metoda zewnętrzna](#external-method-called)
   * [Wywołana metoda bezinstrumentowa](#uninstrumentable-method-called)
   * [Problem z testowaniem](#testability-issue)
-  * [Bieg](#limitation)
+  * [Ograniczenie](#limitation)
 
 * **Interpretera**
   * [Obserwowana niezgodność wywołań](#observed-call-mismatch)
@@ -342,6 +342,6 @@ W niektórych sytuacjach dopuszczalna jest zmiana pola statycznego:
 
 <a name="report-bug"></a>
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
