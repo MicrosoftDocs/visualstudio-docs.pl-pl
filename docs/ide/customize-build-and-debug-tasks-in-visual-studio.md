@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e912459f45086b1bf5f96a9458f006354e982ffd
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567440"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542688"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Dostosowywanie kompilacji i debugowania zadań rozwoju "Otwórz Folder"
 
@@ -224,6 +224,8 @@ Można utworzyć zadania dla dowolnego pliku lub folderu, określając jej nazw�
 |`${fileExtname}`| Rozszerzenie wybranego pliku (na przykład *js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Konfigurowanie debugowania za pomocą pliku launch.vs.json
+
+Aby skonfigurować projekty CMake na potrzeby debugowania, zobacz [Konfigurowanie CMAKE debugowania sesji](/cpp/build/configure-cmake-debugging-sessions).
 
 1. Aby skonfigurować usługi w bazie kodu do debugowania, **Eksploratora rozwiązań** wybierz **ustawienia debugowania i uruchamiania** element menu w menu kliknij prawym przyciskiem myszy lub kontekstu pliku wykonywalnego.
 

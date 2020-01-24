@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 293e7dd99ea2c4d440153797fcc5e9a15083e93c
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408361"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542610"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Przewodnik: Pisanie wizualizatora w języku Visual Basic
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
 W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu Windows Forms okno komunikatu. Ten Wizualizator prostego ciągu jest prosty przykład, aby pokazać, jak utworzyć wizualizatorów dla innych typów danych bardziej odpowiednie do swoich projektów.
 
 > [!NOTE]
@@ -39,10 +39,10 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 1. Utwórz nowy projekt biblioteki klas.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **języka visual basic**, wybierz **szablony**, następnie wybierz **Utwórz nową bibliotekę klas (.NET Standard)**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Visual Basic**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nową bibliotekę klas (.NET Framework)** . W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **języka Visual Basic**, wybierz **.NET Standard**, a następnie w środkowym okienku wybierz **biblioteki klas (platforma .NET Warstwa standardowa)**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual Basic**wybierz pozycję **.NET Standard**, a następnie w środkowym okienku wybierz pozycję **Biblioteka klas (.NET standard)** .
     ::: moniker-end
 
 2. Wpisz odpowiednią nazwę biblioteki klas, taką jak `MyFirstVisualizer`, a następnie kliknij przycisk **Utwórz** lub **OK**.
@@ -60,9 +60,9 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 3. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Mój pierwszy Wizualizator**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
 
-4. W **Dodaj odwołanie** dialogowym **Przeglądaj** zaznacz **Przeglądaj** i Znajdź Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+4. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj** i Znajdź plik Microsoft. VisualStudio. DebuggerVisualizers. dll.
 
-    Można znaleźć biblioteki DLL w  *\<Visual Studio katalog instalacji > \Common7\IDE\PublicAssemblies* podkatalogu katalogu instalacyjnego programu Visual Studio.
+    Bibliotekę DLL można znaleźć w *\<katalogu instalacyjnym programu Visual studio >* podkatalogu \Common7\IDE\PublicAssemblies.
 
 5. Kliknij przycisk **OK**.
 
@@ -108,9 +108,9 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
 
-2. W **Dodaj odwołanie** dialogowym **Przeglądaj** zaznacz **Przeglądaj**i Znajdź System.Windows.Forms.DLL.
+2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** wybierz pozycję **Przeglądaj**, a następnie znajdź polecenie System. Windows. Forms. dll.
 
-    Można znaleźć biblioteki DLL w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
+    Bibliotekę DLL można znaleźć w *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
 3. Kliknij przycisk **OK**.
 
@@ -168,13 +168,13 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Aby dodać projekt aplikacji konsoli w rozwiązaniu
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj**, a następnie kliknij przycisk **nowy projekt**.
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj**, a następnie kliknij pozycję **Nowy projekt**.
 
     ::: moniker range=">=vs-2019"
-    W polu wyszukiwania wpisz **języka visual basic**, wybierz **szablony**, następnie wybierz **Utwórz nową aplikację konsoli (.NET Framework)**. W oknie dialogowym wybierz **Utwórz**.
+    W polu wyszukiwania wpisz **Visual Basic**, wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nową aplikację konsolową (.NET Framework)** . W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **języka Visual Basic**, wybierz **pulpitu Windows**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET Framework)**.
+    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual Basic**wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)** .
     ::: moniker-end
 
 2. Wpisz odpowiednią nazwę biblioteki klas, taką jak `MyTestConsole`, a następnie kliknij przycisk **Utwórz** lub **OK**.
@@ -185,7 +185,7 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
 1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **MyTestConsole**, a następnie w menu skrótów kliknij **Dodaj odwołanie**.
 
-2. W **Dodaj odwołanie** dialogowym **Przeglądaj** Microsoft.VisualStudio.DebuggerVisualizers kliknij pozycję.
+2. W oknie dialogowym **Dodaj odwołanie** na karcie **Przeglądaj** kliknij pozycję Microsoft. VisualStudio. DebuggerVisualizers.
 
 3. Kliknij przycisk **OK**.
 
@@ -231,10 +231,10 @@ Wizualizator kodu muszą być umieszczone w pliku DLL, który będzie odczytywan
 
    Gratulacje. Mieć po prostu tworzone i testowane na Twoje pierwsze wizualizatora.
 
-   Aby korzystanie z wizualizatora w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast po prostu wywoływanie z kontroler testów, należy go zainstalować. Aby uzyskać więcej informacji, zobacz [jak: Instalacja programu Visualizer](../debugger/how-to-install-a-visualizer.md).
+   Aby korzystanie z wizualizatora w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zamiast po prostu wywoływanie z kontroler testów, należy go zainstalować. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Architektura wizualizatora](../debugger/visualizer-architecture.md)
-- [Instrukcje: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)
+- [Instrukcje: instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)
 - [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400865"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542597"
 ---
 # <a name="container-tools-launch-settings"></a>Ustawienia uruchamiania narzędzi kontenera
 
@@ -53,7 +53,7 @@ Ustawienie CommandName wskazuje, że ta sekcja dotyczy narzędzi kontenerów. W 
 |Nazwa ustawienia|Wersja|Przykład|Opis|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.|
-|launchUrl|Visual Studio 2017|"launchUrl": "schemat\<>://\<ServiceHost >:\<serviceport >"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   Schemat \<> — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.<br>   \<ServiceHost > — zwykle zastępowane "localhost". W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.<br>   \<Port > — zwykle zastępowany przez sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.  W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80", w zależności od tego, czy jest używany protokół SSL.|
+|launchUrl|Visual Studio 2017|"launchUrl": "{Schema}://{ServiceHost}: {serviceport}"|Ten adres URL jest używany podczas uruchamiania przeglądarki.  Obsługiwane tokeny zastępcze dla tego ciągu to:<br>   {Schema} — zamieniono na "http" lub "https" w zależności od tego, czy jest używany protokół SSL.<br>   {ServiceHost} — zazwyczaj zamieniono na "localhost". W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.<br>   {Serviceport} — zazwyczaj jest zastępowany sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.  W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80", w zależności od tego, czy jest używany protokół SSL.|
 
 ::: moniker-end
 
@@ -69,11 +69,11 @@ Ustawienie CommandName wskazuje, że ta sekcja dotyczy narzędzi kontenerów. W 
 | httpPort             | "httpPort": 24051                                     | Ten port na hoście jest mapowany na port 80 kontenera podczas uruchamiania kontenera.                                |
 |                      |                                                       | Jeśli nie zostanie określony, wartość jest pobierana z wartości iisSettings.                                                          |
 | launchBrowser        | "launchBrowser": true                                 | Wskazuje, czy po pomyślnym uruchomieniu projektu ma być uruchamiana przeglądarka.                                       |
-| launchUrl            | "launchUrl": "<scheme>://<serviceHost>:<servicePort>" | Ten adres URL jest używany podczas uruchamiania przeglądarki. Obsługiwane tokeny zastępcze dla tego ciągu to:                          |
-|                      |                                                       | - <scheme> — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.                                   |
-|                      |                                                       | - <serviceHost> — zwykle zastępowane "localhost".                                                                    |
+| launchUrl            | "launchUrl": "{Schema}://{ServiceHost}: {serviceport}" | Ten adres URL jest używany podczas uruchamiania przeglądarki. Obsługiwane tokeny zastępcze dla tego ciągu to:                          |
+|                      |                                                       | -{Schema} — zastępuje "http" lub "https" w zależności od tego, czy jest używany protokół SSL.                                   |
+|                      |                                                       | -{ServiceHost} — zazwyczaj zastępuje się "localhost".                                                                    |
 |                      |                                                       | W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane przez adres IP kontenera.           |
-|                      |                                                       | - <servicePort> — zwykle zastępowane sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.                   |
+|                      |                                                       | -{Serviceport} — zazwyczaj jest zastępowany sslPort lub httpPort, w zależności od tego, czy jest używany protokół SSL.                   |
 |                      |                                                       | W przypadku kontenerów systemu Windows w systemie Windows 10 RS3 lub starszym są one zastępowane "443" lub "80".         |
 |                      |                                                       | w zależności od tego, czy jest używany protokół SSL.                                                                                       |
 | sslPort              | "sslPort": 44381                                      | Ten port na hoście jest mapowany na port 443 kontenera podczas uruchamiania kontenera.                               |

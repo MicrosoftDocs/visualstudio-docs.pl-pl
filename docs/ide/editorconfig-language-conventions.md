@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588632"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542662"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **Nazwa reguły** | csharp_prefer_braces |
 | **Identyfikator reguły** | IDE0011 |
 | **Odpowiednie języki** | Język C# |
-| **Wartości** | `true` — Preferuj nawiasy klamrowe nawet dla jednego wiersza kodu<br /><br />`false` — Preferuj brak nawiasów klamrowych, jeśli są dozwolone |
+| **Wartości** | `true` — Preferuj nawiasy klamrowe nawet dla jednego wiersza kodu<br /><br />`false` — Preferuj brak nawiasów klamrowych, jeśli są dozwolone<br /><br />`when_multiline` — Preferuj nawiasy klamrowe w wielu wierszach |
 | **Domyślne dla programu Visual Studio** | `true:silent` |
 
 Przykłady kodu:

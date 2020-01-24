@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Uruchom narzędzie Spy ++ | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Uruchamianie programu Spy + + | Microsoft Docs'
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,45 +10,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 70874d70dd5f845e7b627f2aeb7ae51bafe45995
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387537"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542623"
 ---
-# <a name="how-to-start-spy"></a>Instrukcje: Uruchamianie programu Spy++
+# <a name="how-to-start-spy"></a>Porady: korzystanie z programu Spy++
 
-Można uruchomić programu Spy ++ w programie Visual Studio lub w wierszu polecenia.
+Program Spy + + można uruchomić w programie Visual Studio lub w wierszu polecenia.
 
- Po uruchomieniu programu Spy ++, jeśli zostanie wyświetlony komunikat o uprawnienia do wprowadzania zmian do komputera, wybierz opcję **tak**.
+ Gdy uruchamiasz program Spy + +, jeśli zostanie wyświetlony komunikat z monitem o wprowadzenie zmian na komputerze, wybierz pozycję **tak**.
 
 > [!NOTE]
-> Można uruchomić tylko jedno wystąpienie programu Spy ++. Jeśli zostanie podjęta próba uruchomienia drugiego wystąpienia, powoduje po prostu aktualnie uruchomione wystąpienie, którego można pobrać fokus.
+> Można uruchomić tylko jedno wystąpienie programu Spy + +. Jeśli spróbujesz uruchomić drugie wystąpienie, spowoduje to jedynie, że aktualnie uruchomione wystąpienie zacznie fokus.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Spy ++ wymaga następujących składników. Możesz wybrać te składniki z Instalatora programu Visual Studio, wybierając **poszczególne składniki** kartę, a następnie wybierając następujące składniki.
+W programie Spy + + wymagane są następujące składniki. Można wybrać te składniki z Instalator programu Visual Studio, wybierając kartę **poszczególne składniki** , a następnie wybierając następujące składniki.
 
-* W obszarze debugowania i testowania, zaznacz **narzędzia profilowania dla języka C++**
-* W obszarze działań programistycznych, wybierz **podstawowe funkcje programu Visual Studio C++**
+* W obszarze Debugowanie i testowanie wybierz pozycję  **C++ narzędzia profilowania**
+* W obszarze działania deweloperskie wybierz pozycję  **C++ funkcje podstawowe**
 
-Jeśli zostały wprowadzone zmiany, postępuj zgodnie z monitami, aby zainstalować te składniki.
+Jeśli wprowadzono jakiekolwiek zmiany, postępuj zgodnie z monitami, aby zainstalować te składniki.
 
-## <a name="start-spy-from-visual-studio"></a>Uruchom narzędzie Spy ++ w programie Visual Studio
+## <a name="start-spy-from-visual-studio"></a>Uruchom program Spy + + w programie Visual Studio
 
-Na **narzędzia** menu, wybierz opcję **Spy ++**.
+W menu **Narzędzia** wybierz polecenie **Spy + +** .
 
-Fakt, że narzędzie Spy ++ działają niezależnie, po jego uruchomieniu możesz zamknąć program Visual Studio.
+Ponieważ program Spy + + działa niezależnie, po jego uruchomieniu można zamknąć Visual Studio.
 
 > [!NOTE]
-> Podczas rejestrowania komunikatów z programem Spy ++, może to spowodować systemu operacyjnego działać wolniej.
+> W przypadku rejestrowania komunikatów w programie Spy + + może dojść do spowolnienia działania systemu operacyjnego.
 
-## <a name="start-spy-at-a-command-prompt"></a>Uruchom narzędzie Spy ++ w wierszu polecenia
+## <a name="start-spy-at-a-command-prompt"></a>Uruchom Spy + + w wierszu polecenia
 
-1. W oknie wiersza polecenia Zmień katalogi na folder, który zawiera spyxx.exe. Zazwyczaj jest ścieżka do tego folderu... \\ *Folder instalacji programu visual Studio*\Common7\Tools\\.
+1. W oknie wiersza polecenia Zmień katalog na folder, który zawiera spyxx. exe. Zwykle ścieżka do tego folderu to..\\\\\Common7\Tools *folderu instalacyjnego programu Visual Studio*.
 
-2. Enter **spyxx.exe**.
+2. Wprowadź **spyxx. exe**.
 
 ## <a name="see-also"></a>Zobacz także
 - [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)
