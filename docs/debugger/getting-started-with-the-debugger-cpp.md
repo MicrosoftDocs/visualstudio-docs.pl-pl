@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070cbcc79a79aea16e37f17ea775ce7838b41d59
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: aeef905b2372b22be7aee157c4d0249109ea3749
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179808"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76725871"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się debugować kod C++ przy użyciu programu Visual Studio
 
@@ -52,18 +52,43 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. Otwórz program Visual Studio.
+::: moniker range="vs-2017"
 
-    ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz c++** , wybierz pozycję **Szablony**, a następnie wybierz pozycję **Utwórz nowy projekt aplikacji konsolowej**. W wyświetlonym oknie dialogowym wpisz nazwę, taką jak **Get-Started-Debug**, a następnie wybierz pozycję **Utwórz**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Wizualizacja C++** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **Aplikacja konsolowa systemu Windows**. Następnie wpisz nazwę, na przykład **MyDbgApp** , i kliknij przycisk **OK**.
-    ::: moniker-end
+1. Otwórz program Visual Studio 2017.
 
-    Jeśli szablon projektu **aplikacji konsolowej systemu Windows** nie jest widoczny, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
-    Program Visual Studio tworzy projekt.
+3. W oknie dialogowym **Nowy projekt** w okienku po lewej stronie rozwiń pozycję **Wizualizacja C++** , a następnie wybierz pozycję **Windows Desktop**. W środkowym okienku wybierz pozycję **Aplikacja konsolowa systemu Windows**. Następnie nadaj nazwę projekt *Get-Started-Debug*.
+
+   > [!NOTE]
+   > Jeśli szablon projektu **aplikacji konsolowej systemu Windows** nie jest widoczny, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+   Jeśli okno startowe nie jest otwarte, wybierz polecenie **plik** > **Start okna**.
+
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+
+1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **C++** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja konsoli** , a następnie wybierz przycisk **dalej**.
+
+   ![Wybieranie C# szablonu aplikacji konsolowej (.NET Core)](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
+
+   > [!NOTE]
+   > Jeśli szablon **aplikacji konsolowej** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz pozycję **Programowanie dla komputerów z C++**  obciążeniem.
+
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź w polu **Nazwa projektu** polecenie *Get-Started-Debug* . Następnie wybierz pozycję **Utwórz**.
+
+   Program Visual Studio otwiera nowy projekt.
+
+::: moniker-end
+
+## <a name="create-the-application"></a>Tworzenie aplikacji
 
 1. W *get pracę debugging.cpp*, Zastąp następujący kod
 
@@ -170,7 +195,7 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
 ## <a name="start-the-debugger"></a>Uruchom debuger!
 
-1. Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub **Rozpocznij debugowanie** przycisk ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie ") na pasku narzędzi debugowania.
+1. Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania.
 
      **F5** uruchamia aplikacji za pomocą debugera dołączony do aplikacji, przetwarzania, ale teraz możemy jeszcze nie wykonano żadnych specjalnych badanie kodu. Dlatego właśnie ładowania aplikacji, a zostaną wyświetlone dane wyjściowe konsoli.
 
@@ -185,7 +210,9 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
      W tym samouczku utworzymy Przyjrzyj się bliżej aplikacji przy użyciu debugera i pobrać spojrzenie na debugera funkcji.
 
-2. Przerwij debugowanie, naciskając klawisz czerwony stop ![Zatrzymaj debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") przycisku.
+2. Zatrzymaj debuger, naciskając czerwony przycisk Zatrzymaj ![debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") przycisku.
+
+3. Zamknij okno konsoli.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomić debuger
 
@@ -213,26 +240,28 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
 1. Podczas wstrzymania w `shape->Draw` metody wywołania w `main` funkcji, naciśnij klawisz **F11** (lub wybierz **Debuguj > Step Into**) aby przejść do kodu, aby uzyskać `Rectangle` klasy.
 
-     ![Użyj F11, aby kod Step Into](../debugger/media/get-started-f11-cpp.png "F11 Step Into")
+     ![Użyj klawisza F11, aby przejść do kodu](../debugger/media/get-started-f11-cpp.png "F11 Wkrocz do")
 
      Jest F11 **Step Into** poleceń i prowadzi aplikacji wykonanie jednej instrukcji w danym momencie. F11 jest dobrym sposobem na zbadanie przepływ wykonania w najbardziej szczegółowy. (Aby szybciej przejść przez kod, pokazujemy inne opcje.) Domyślnie debuger pomija kod niebędący użytkownikiem (Aby uzyskać więcej szczegółów, zobacz [tylko mój kod](../debugger/just-my-code.md)).
 
 2. Naciśnij klawisz **F10** (lub wybierz **Debuguj > Step Over**) kilka razy dopóki debuger zatrzymuje się na `Shape::Draw` wywołania metody, a następnie klawisz **F10** jeszcze raz.
 
-     ![Użyj F10 kodowi Step Over](../debugger/media/get-started-step-over-cpp.png "F10 Step Over")
+     ![Użyj klawisza F10, aby przekroczyć kod](../debugger/media/get-started-step-over-cpp.png "F10 krok po kroku")
 
      Zauważ teraz, że debuger nie wkracza w `Draw` metody klasy bazowej (`Shape`). **F10** wyjście z kodu bez przechodzenie krok po kroku do funkcji lub metody w kodzie aplikacji (nadal wykonuje kod). Naciskając klawisz F10 `Shape::Draw` wywołania metody (zamiast **F11**), firma Microsoft pominięty Kod implementacji `Draw` w klasie bazowej, (które być może nie jesteśmy zainteresowani teraz).
 
 ## <a name="navigate-code-using-run-to-click"></a>Przechodzenie do kodu przy użyciu polecenia Uruchom do kliknięcia
 
-1. W edytorze kodu, przewiń w dół, umieść kursor nad `std::cout` w `Triangle` klasy do momentu zielony **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się po lewej stronie.
+1. Kliknij prawym przyciskiem myszy ustawiony wcześniej punkt przerwania i wybierz polecenie **Usuń punkt przerwania** (lub naciśnij klawisz **Ctrl** + **SHIFT** + **F9** , aby usunąć wszystkie punkty przerwania).
 
-     ![Użyj Uruchom do kliknięcia funkcji](../debugger/media/get-started-run-to-click-cpp.png "uruchamianie do kliknięcia")
+1. W edytorze kodu przewiń w dół i umieść kursor nad `std::cout` w klasie `Triangle` do momentu, gdy zielony przycisk **Uruchom** do ![kliknięcia zostanie wyświetlony po](../debugger/media/dbg-tour-run-to-click.png "RunToClick") lewej stronie.
+
+     ![Korzystanie z funkcji uruchamiania do kliknięcia](../debugger/media/get-started-run-to-click-cpp.png "Uruchom do kliknięcia")
 
    > [!NOTE]
    > Przycisk **Uruchom do kliknięcia** jest dostępny w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Jeśli nie widzisz przycisku zieloną strzałkę, użyj **F11** w tym przykładzie zamiast Aby awansować debugera we właściwym miejscu.
 
-2. Kliknij przycisk **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Kliknij przycisk **Uruchom, aby kliknąć** polecenie ![Uruchom, aby kliknąć](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Za pomocą tego przycisku jest podobna do ustawienia tymczasowy punkt przerwania. **Uruchamianie do kliknięcia** jest przydatna do poruszania się szybko w obrębie regionu widoczne dla kodu aplikacji (możesz kliknąć dowolny otwarty plik).
 
@@ -259,9 +288,11 @@ Załóżmy, że wszystko będzie gotowe badanie `Draw` method in Class metoda `T
 
      Powinien nastąpić powrót `for` pętli w `main` metody.
 
+1. Kliknij przycisk na lewym marginesie, aby dodać nowy punkt przerwania w pętli `for`.
+
 ## <a name="restart-your-app-quickly"></a>Szybko Uruchom ponownie swoją aplikację
 
-Kliknij przycisk **ponowne uruchomienie** ![ponowne uruchomienie aplikacji](../debugger/media/dbg-tour-restart.png "RestartApp") przycisku na pasku narzędzi debugowania (**Ctrl** + **Shift**   +  **F5**).
+Kliknij przycisk **Uruchom** ![ponownie uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl** + **SHIFT** + **F5**).
 
 Po naciśnięciu klawisza **ponowne uruchomienie**, można zaoszczędzić czas i zatrzymywanie aplikacji oraz ponownego uruchamiania debugera. Debuger wstrzymuje na pierwszy punkt przerwania zostanie osiągnięty przez wykonywanie kodu.
 
@@ -279,7 +310,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
 1. Rozwiń pierwszego indeksu `[0]` się `privateHeight` właściwości prostokąta.
 
-     ![Wyświetl etykietki danych](../debugger/media/get-started-data-tip-cpp.png "wyświetlanie etykietki danych")
+     ![Wyświetlanie etykietki danych](../debugger/media/get-started-data-tip-cpp.png "Wyświetlanie etykietki danych")
 
      Często podczas debugowania, chcesz, aby szybko sprawdzić wartości właściwości obiektów i porady dotyczące danych są dobrym sposobem, aby to zrobić.
 
@@ -287,7 +318,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
 1. Przyjrzyj się **Autos** okna w dolnej części edytora kodu.
 
-     ![Sprawdzanie zmiennych w oknie Autos](../debugger/media/get-started-autos-window-cpp.png "okno zmiennych automatycznych")
+     ![Sprawdź zmienne w oknie Autokorekty](../debugger/media/get-started-autos-window-cpp.png "Okno Autokorekty")
 
     W **Autos** oknie zostanie wyświetlony, zmienne i ich bieżącą wartość. Dla języka C++ **Autos** okno zawiera zmienne w poprzednim trzech wierszach kodu.
 
@@ -309,7 +340,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
 2. Kliknij przycisk **F11** kilka razy, aż zostanie wyświetlony debugera wstrzymywania w `Shape::Draw` metody `Rectangle` klasy w edytorze kodu. Przyjrzyj się **stos wywołań** okna.
 
-    ![Sprawdź stos wywołań](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
+    ![Badanie stosu wywołań](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
 
     **Stos wywołań** okno pokazuje kolejność, w którym są wprowadzenie wywoływane metody i funkcje. Górny wiersz zawiera bieżącą funkcję ( `Rectangle::Draw` metody w tym przykładzie). Drugi wiersz wskazuje, że `Rectangle::Draw` została wywołana z `main` funkcji i tak dalej.
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c7237d8d8bf66273078049a41a3193af0026792
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 1e19672ccc13b94f93bd21fc02701aa54648199e
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830024"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726086"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie C# kodu za pomocą programu Visual Studio
 
@@ -40,12 +40,12 @@ W tym samouczku wykonasz następujące czynności:
 
 ::: moniker range=">=vs-2019"
 
-Musisz mieć zainstalowany program Visual Studio 2019 i obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
+Musisz mieć zainstalowany program Visual Studio 2019 i **Międzyplatformowe obciążenie dla programu .NET Core** .
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacji klasycznych dla platformy .NET** obciążenia.
+Musisz mieć zainstalowany program Visual Studio 2017 i **Międzyplatformowe obciążenie dla programu .NET Core** .
 
 ::: moniker-end
 
@@ -61,24 +61,52 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 ::: moniker-end
 
-Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, wybierz **Modyfikuj**.
+Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. Otwórz program Visual Studio.
+Najpierw utworzysz projekt aplikacji konsolowej .NET Core. Typ projektu jest dostarczany ze wszystkimi plikami szablonu, które będą potrzebne, zanim będzie można nawet dodać wszystko.
 
-    ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, **wpisz Console**, wybierz pozycję **Szablony**, a następnie wybierz opcję **Utwórz nowy projekt Aplikacja konsolowa (.NET Core)** lub **Utwórz nowy projekt aplikacja konsoli (.NET Framework)** . W wyświetlonym oknie dialogowym wpisz nazwę, taką jak **Get-Started-Debug**, a następnie wybierz pozycję **Utwórz**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Wizualizacja C#** wybierz pozycję **Windows Desktop**, a następnie w środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Framework)** . Następnie wpisz nazwę, taką jak **Get-Started-Debug** , i kliknij przycisk **OK**.
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    Jeśli szablon projektu **aplikacja konsoli (.NET Framework)** nie jest widoczny, przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje...** , co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** obciążenia, wybierz **Modyfikuj**.
+1. Otwórz program Visual Studio 2017.
 
-    Program Visual Studio tworzy projekt.
+2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
-1. W *program.cs*, Zastąp cały kod domyślny
+3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **C#** , a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nadaj nazwę projekt *Get-Started-Debug*.
+
+     Jeśli szablon projektu **aplikacja konsoli (.NET Core)** nie jest widoczny, wybierz link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** .
+
+     Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Open Visual Studio 2019.
+
+   Jeśli okno startowe nie jest otwarte, wybierz polecenie **plik** > **Start okna**.
+
+1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+
+1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **C#** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+
+   ![Wybieranie C# szablonu aplikacji konsolowej (.NET Core)](../../debugger/media/vs-2019/get-started-create-console-project.png)
+
+   > [!NOTE]
+   > Jeśli nie widzisz szablonu **Aplikacja konsolowa (.NET Core)** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz obciążenie dla **wielu platform platformy .NET Core** .
+
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź w polu **Nazwa projektu** polecenie *Get-Started-Debug* . Następnie wybierz pozycję **Utwórz**.
+
+   Program Visual Studio otwiera nowy projekt.
+   
+::: moniker-end
+
+## <a name="create-the-application"></a>Tworzenie aplikacji
+
+1. W *program.cs*Zastąp cały kod domyślny przedstawiony tutaj:
 
     ```csharp
     using System;
@@ -199,6 +227,8 @@ Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, p
 
 2. Zatrzymaj debuger, naciskając czerwony przycisk Zatrzymaj ![debugowanie](../../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") przycisku.
 
+3. Zamknij okno konsoli.
+
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomić debuger
 
 1. W `foreach` pętli z `Main` funkcji, ustaw punkt przerwania, klikając w lewy margines następującego kodu:
@@ -237,6 +267,8 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
 ## <a name="navigate-code-using-run-to-click"></a>Przechodzenie do kodu przy użyciu polecenia Uruchom do kliknięcia
 
+1. Kliknij prawym przyciskiem myszy ustawiony wcześniej punkt przerwania i wybierz polecenie **Usuń punkt przerwania** (lub naciśnij klawisz **Ctrl** + **SHIFT** + **F9** , aby usunąć wszystkie punkty przerwania).
+
 1. W edytorze kodu przewiń w dół i umieść kursor nad metodą `Console.WriteLine` w klasie `Triangle` do momentu, gdy zielony przycisk **Uruchom** do ![kliknięcia zostanie wyświetlony](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") po lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
 
      ![Korzystanie z funkcji uruchamiania do kliknięcia](../csharp/media/get-started-run-to-click.png "Uruchom do kliknięcia")
@@ -270,6 +302,8 @@ Załóżmy, że wszystko będzie gotowe badanie `Draw` method in Class metoda `T
      To polecenie wznawia działanie aplikacji (i umożliwia przejście do) do momentu zwraca bieżącą funkcję.
 
      Powinien nastąpić powrót `foreach` pętli w `Main` metody. Jeśli nie, naciśnij klawisz **Shift** + **F11** po raz drugi.
+
+1. Kliknij przycisk na lewym marginesie, aby dodać nowy punkt przerwania w pętli `for`.
 
 ## <a name="restart-your-app-quickly"></a>Szybko Uruchom ponownie swoją aplikację
 

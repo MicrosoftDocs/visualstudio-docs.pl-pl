@@ -1,24 +1,25 @@
 ---
-title: 'Profiler wiersz poleceń: Otwórz aplikację klienta natywnego, pobieranie danych współbieżności'
+title: 'Wiersz polecenia profilera: otwieranie natywnej aplikacji klienckiej, pobieranie danych współbieżności'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b20d239ee1be6cba9484e31efc95b1f38572b59
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1bb8baed0d9154c02f23738944de2d3e84b7402b
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032928"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726038"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: Uruchamianie natywnej aplikacji autonomicznej z profilerem w celu zbierania danych współbieżności przy użyciu wiersza polecenia
-W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzi wiersza polecenia Profiling Tools do uruchamiania aplikacji natywnej autonomicznej (klienta) i zbierania danych współbieżności procesu i wątku.
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Instrukcje: uruchamianie autonomicznej aplikacji natywnej z profilerem w celu zbierania danych współbieżności przy użyciu wiersza polecenia
+W tym temacie opisano, jak używać narzędzi wiersza polecenia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania do uruchamiania natywnej aplikacji autonomicznej (klienckiej) i zbierania danych współbieżności procesu i wątku.
 
- Sesję profilowania zawiera następujące elementy:
+ Sesja profilowania ma następujące części:
 
 - Uruchamianie aplikacji za pomocą profilera
 
@@ -27,12 +28,12 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 - Kończenie sesji profilowania
 
 > [!NOTE]
-> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
+> Aby uzyskać ścieżkę do narzędzi profilowania, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na komputerach 64-bitowym 64-bitowe i 32-bitowe wersje narzędzia są dostępne. Aby użyć narzędzi profilowania z wiersza polecenia, należy dodać ścieżkę narzędzi do zmiennej środowiskowej PATH okna wiersza polecenia lub dodać do niej samo polecenie.
 
-## <a name="start-the-application-with-the-profiler"></a>Uruchom aplikację za pomocą profilera
- Aby uruchomić aplikację docelową przy użyciu profilera, należy użyć [VSPerfCmd.exe](../profiling/vsperfcmd.md) **/start** i **/uruchamianie** opcji, aby zainicjować Profiler i uruchom aplikację. Można określić **/start** i **/uruchamianie** oraz ich odpowiednie opcje. Można również dodać **/globaloff** opcję, aby wstrzymać zbieranie danych przy uruchamianiu aplikacji docelowej. Następnie użyj **globalon** do rozpoczęcia zbierania danych.
+## <a name="start-the-application-with-the-profiler"></a>Uruchamianie aplikacji przy użyciu profilera
+ Aby uruchomić aplikację docelową za pomocą profilera, należy użyć opcji [VSPerfCmd. exe](../profiling/vsperfcmd.md) **/Start** i **przełącznik/Launch** w celu zainicjowania profilera i uruchomienia aplikacji. Można określić **/Start** i **przełącznik/Launch** oraz ich odpowiednie opcje. Można również dodać **/globaloff** opcję, aby wstrzymać zbieranie danych przy uruchamianiu aplikacji docelowej. Następnie użyj **/GlobalOn** , aby rozpocząć zbieranie danych.
 
-#### <a name="to-start-an-application-with-the-profiler"></a>Aby uruchomić aplikację za pomocą profilera
+#### <a name="to-start-an-application-with-the-profiler"></a>Aby uruchomić aplikację przy użyciu profilera
 
 1. W wierszu polecenia wpisz następujące polecenie:
 
@@ -50,18 +51,18 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 
 2. Uruchom aplikację docelową, wpisując:
 
-     **Narzędzia VSPerfCmd**[/uruchamianie](../profiling/launch.md) **:** `AppName` [`Options`]
+     **VSPerfCmd**  [przełącznik/Launch](../profiling/launch.md) **:** `AppName` [`Options`]
 
-     Używasz opcje w poniższej tabeli z **/uruchamianie** opcji.
+     Można użyć dowolnej z opcji w poniższej tabeli z opcją **przełącznik/Launch** .
 
     |Opcja|Opis|
     |------------|-----------------|
-    |[przełącznika/args](../profiling/args.md) **:** `Arguments`|Określa ciąg, który zawiera argumenty wiersza polecenia, które mają być przekazane do aplikacji docelowej.|
-    |[/ Console](../profiling/console.md)|Uruchamia aplikację docelową wiersza polecenia w osobnym oknie.|
-    |[/ targetclr](../profiling/targetclr.md) **:** `CLRVersion`|Określa wersję środowisko uruchomieniowe języka wspólnego (CLR) do profilowania, gdy aplikacja ładuje więcej niż jedna wersja środowiska CLR.|
+    |[/args](../profiling/args.md) **:** `Arguments`|Określa ciąg zawierający argumenty wiersza polecenia, które mają być przekazane do aplikacji docelowej.|
+    |[/Console](../profiling/console.md)|Uruchamia docelową aplikację wiersza polecenia w osobnym oknie.|
+    |[/ targetclr](../profiling/targetclr.md) **:** `CLRVersion`|Określa wersję środowiska uruchomieniowego języka wspólnego (CLR) do profilowania, jeśli aplikacja ładuje więcej niż jedną wersję środowiska CLR.|
 
 ## <a name="control-data-collection"></a>Sterowanie zbieraniem danych
- Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku z *VSPerfCmd.exe* opcje. Przez kontrolowanie zbierania danych może zbierać dane dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
+ Gdy uruchomiona jest aplikacja docelowa, można kontrolować zbieranie danych przez uruchamianie i zatrzymywanie zapisywania danych do pliku za pomocą opcji *VSPerfCmd. exe* . Przez kontrolowanie zbierania danych może zbierać dane dla określonej części wykonywania programu, takiej jak uruchamianie lub zamykanie aplikacji.
 
 #### <a name="to-start-and-stop-data-collection"></a>Aby uruchomić i zatrzymać zbieranie danych
 
@@ -76,11 +77,11 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../code-quality/includes
 - Można również użyć **VSPerfCmd.exe**[/mark](../profiling/mark.md) opcję, aby wstawić znacznik programu profilującego do pliku danych. **/Mark** polecenie dodaje identyfikator, sygnaturę czasową i opcjonalny zdefiniowanych przez użytkownika ciąg tekstowy. Znaczniki może służyć do filtrowania danych w raportach profilera i widoków danych.
 
 ## <a name="end-the-profiling-session"></a>Kończenie sesji profilowania
- Aby zakończyć sesję profilowania, profiler nie może zbierać dane. Możesz zatrzymać zbieranie danych współbieżności przez zamknięcie profilowanej aplikacji lub wywołanie **VSPerfCmd / Odłącz** opcji. Następnie należy wywołać **VSPerfCmd/shutdown** opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.
+ Aby zakończyć sesję profilowania, profiler nie może zbierać dane. Możesz zatrzymać zbieranie danych współbieżności, zamykając profilowaną aplikację lub wywołując opcję **VSPerfCmd/detach** . Następnie należy wywołać **VSPerfCmd/shutdown** opcję, aby wyłączyć profiler i zamknąć plik danych profilowania.
 
 #### <a name="to-end-a-profiling-session"></a>Aby zakończyć sesję profilowania
 
-1. Odłącz profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie w wierszu polecenia:
+1. Odłącz Profiler od aplikacji docelowej, zamykając go lub wpisując następujące polecenie w wierszu polecenia:
 
      **Narzędzia VSPerfCmd / Odłącz**
 
