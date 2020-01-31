@@ -52,6 +52,8 @@
       items:
         - name: Inspekcja danych w oknach debugera
           href: debugger-windows.md
+        - name: Inspekcja wyjątków
+          href: exception-helper.md
         - name: Sprawdzanie zmiennych
           href: autos-and-locals-windows.md
         - name: Wyrażenia kontrolne zmiennych
