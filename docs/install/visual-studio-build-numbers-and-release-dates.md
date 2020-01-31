@@ -5,18 +5,18 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 01/15/2020
+ms.date: 01/23/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6864f6ad7819cf163c20f0d604d90370454b53a4
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 79870e2113ec7eda730a39bc9e1d5bd849f7e0fe
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114177"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826513"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -28,6 +28,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Preview 2 | 22 stycznia 2020 | 16.5.29721.120 |
 | 16.4.3 | Wydanie | 14 stycznia 2020 r. | 16.4.29709.97 |
 | 16.0.11 | Wydanie | 14 stycznia 2020 r. | 16.0.28803.653 |
 | 16.4.2 | Wydanie | 17 grudnia 2019 r. | 16.4.29613.14 |
@@ -41,7 +42,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 16.3.9 | Wydanie | 12 listopada 2019 r. | 16.3.29509.3 |
 | 16.4.0 | Wersja zapoznawcza 4 | 6 listopada 2019 | 16.4.29505.145 |
 | 16.3.8 | Wydanie | 5 listopada 2019 r. | 16.3.29503.13 |
-| 16.4.0 | Wersja zapoznawcza 3 | 4 listopada 2019 r. | 16.4.29430.225 |
+| 16.4.0 | Wersja zapoznawcza 3 | 4 listopada 2019 | 16.4.29430.225 |
 | 16.3.7 | Wydanie | 29 października 2019 r. | 16.3.29424.173 |
 | 16.3.6 | Wydanie | 22 października 2019 r. | 16.3.29418.71 |
 | 16.3.5 | Wydanie | 15 października 2019 r. | 16.3.29411.108 |
@@ -79,9 +80,9 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 16.1.0 | Wydanie | 21 maja 2019 r. | 16.1.28917.181 |
 | 16.2.0 | Wersja zapoznawcza 1 | 21 maja 2019 r. | 16.2.28917.182 |
 | 16.0.4 | Wydanie | 14 maja 2019 r. | 16.0.28803.452 |
-| 16.1.0 | Wersja zapoznawcza 3 | 6 maja 2019 r. | 16.1.28902.138 |
+| 16.1.0 | Wersja zapoznawcza 3 | 6 maja 2019 | 16.1.28902.138 |
 | 16.0.3 | Wydanie | 30 kwietnia 2019 r. | 16.0.28803.352 |
-| 16.1.0 | Preview 2 | 23 kwietnia 2019 r. | 16.1.28822.285 |
+| 16.1.0 | Preview 2 | 23 kwietnia 2019 | 16.1.28822.285 |
 | 16.0.2 | Wydanie | 18 kwietnia 2019 r. | 16.0.28803.202 |
 | 16.1.0 | Wersja zapoznawcza 1 | 10 kwietnia 2019 | 16.1.28809.33 |
 | 16.0.1 | Wydanie | 9 kwietnia 2019 r. | 16.0.28803.156 |
@@ -90,20 +91,20 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 | 16.0.0 | Wersja zapoznawcza 5 | 2 kwietnia 2019 r. | 16.0.28729.10 |
 | 16.0.0 | Release Candidate 4 (RC. 4) | 26 marca 2019 | 16.0.28721.148 |
 | 16.0.0 | Wersja zapoznawcza 4,4 | 26 marca 2019 | 16.0.28721.148 |
-| 16.0.0 | Wersja Release Candidate 3 (RC. 3) | 19 marca 2019 r. | 16.0.28714.193 |
-| 16.0.0 | Wersja zapoznawcza 4,3 | 19 marca 2019 r. | 16.0.28714.193 |
+| 16.0.0 | Wersja Release Candidate 3 (RC. 3) | 19 marca 2019 | 16.0.28714.193 |
+| 16.0.0 | Wersja zapoznawcza 4,3 | 19 marca 2019 | 16.0.28714.193 |
 | 16.0.0 | Wersja Release Candidate 2 (RC. 2) | 12 marca 2019 r. | 16.0.28711.60 |
 | 16.0.0 | Wersja zapoznawcza 4,2 | 12 marca 2019 r. | 16.0.28711.60 |
 | 16.0.0 | Release Candidate 1 Svc1 (RC. 1 Svc1) | 6 marca 2019 | 16.0.28705.295 |
 | 16.0.0 | Wersja zapoznawcza 4,1 Svc1 | 6 marca 2019 | 16.0.28705.295 |
-| 16.0.0 | Wersja Release Candidate 1 (RC. 1) | 5 marca 2019 r. | 16.0.28701.123 |
-| 16.0.0 | Wersja zapoznawcza 4,1 | 5 marca 2019 r. | 16.0.28701.123 |
+| 16.0.0 | Wersja Release Candidate 1 (RC. 1) | 5 marca 2019 | 16.0.28701.123 |
+| 16.0.0 | Wersja zapoznawcza 4,1 | 5 marca 2019 | 16.0.28701.123 |
 | 16.0.0 | Release Candidate (RC) | 27 lutego 2019 | 16.0.28625.133 |
 | 16.0.0 | Wersja zapoznawcza 4 | 27 lutego 2019 | 16.0.28625.133 |
-| 16.0.0 | Wersja zapoznawcza 3 | 13 lutego 2019 r. | 16.0.28608.199 |
+| 16.0.0 | Wersja zapoznawcza 3 | 13 lutego 2019 | 16.0.28608.199 |
 | 16.0.0 | Wersja zapoznawcza 2,2 | 5 lutego 2019 r. | 16.0.28602.52 |
-| 16.0.0 | Wersja zapoznawcza 2,1 | 31 stycznia 2019 r. | 16.0.28529.54 |
-| 16.0.0 | Preview 2 | 23 stycznia 2019 r. | 16.0.28522.59 |
+| 16.0.0 | Wersja zapoznawcza 2,1 | 31 stycznia 2019 | 16.0.28529.54 |
+| 16.0.0 | Preview 2 | 23 stycznia 2019 | 16.0.28522.59 |
 | 16.0.0 | Wersja zapoznawcza 1,1 | 10 grudnia 2018 | 16.0.28408.50 |
 | 16.0.0 | Wersja zapoznawcza 1 | 4 grudnia 2018 r. | 16.0.28329.73 |
 
@@ -138,11 +139,11 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 | 15.9.10 | Wydanie | 25 marca 2019 | 15.9.28307.557 |
 | 15.9.9 | Wydanie | 12 marca 2019 r. | 15.9.28307.518 |
 | 15.0.22 | Wydanie | 12 marca 2019 r. | 15.0.26228.76 |
-| 15.9.8 | Wydanie | 5 marca 2019 r. | 15.9.28307.481 |
+| 15.9.8 | Wydanie | 5 marca 2019 | 15.9.28307.481 |
 | 15.9.7 | Wydanie | 12 lutego 2019 r. | 15.9.28307.423 |
 | 15.0.21 | Wydanie | 12 lutego 2019 r. | 15.0.26228.73 |
 | 15.9.6 | Wydanie | 24 stycznia 2019 | 15.9.28307.344 |
-| 15.9.5 | Wydanie | 8 stycznia 2019 r. | 15.9.28307.280 |
+| 15.9.5 | Wydanie | 8 stycznia 2019 | 15.9.28307.280 |
 | 15.9.4 | Wydanie | 11 grudnia 2018 | 15.9.28307.222 |
 | 15.0.20 | Wydanie | 11 grudnia 2018 | 15.0.26228.64 |
 | 15.9.3 | Wydanie | 28 listopada 2018 r. | 15.9.28307.145 |

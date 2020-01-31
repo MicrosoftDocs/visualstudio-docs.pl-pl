@@ -1,18 +1,18 @@
 ---
 title: Jak używać narzędzia CTest dla języka C++
-ms.date: 05/01/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720551"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826526"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Jak używać narzędzia ctest dla C++ programu Visual Studio 2017 i nowszych
 
@@ -20,7 +20,7 @@ CMAKE (który obejmuje narzędzia ctest) jest domyślnie zintegrowany z programe
 
 ## <a name="to-write-tests"></a>Do pisania testów
 
-Obsługa CMake w programie Visual Studio nie obejmują systemu projektu programu Visual Studio. W związku z tym zapisu i Konfigurowanie narzędzia CTest testów, tak samo jak w każdym środowisku CMake. Użyj `enable_testing()` polecenia, aby włączyć testowanie, i polecenie `add_test()`, aby dodać nowy test. Aby dowiedzieć się więcej na temat narzędzia ctest, zobacz [dokumentację dotyczącą CMAKE](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+Obsługa CMake w programie Visual Studio nie obejmują systemu projektu programu Visual Studio. W związku z tym zapisu i Konfigurowanie narzędzia CTest testów, tak samo jak w każdym środowisku CMake. Użyj `enable_testing()` polecenia, aby włączyć testowanie, i `add_test()` lub `gtest_discover_tests()` polecenie, aby dodać nowy test. Aby dowiedzieć się więcej na temat narzędzia ctest, zobacz [dokumentację dotyczącą CMAKE](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
 
 Aby uzyskać więcej informacji o korzystaniu z CMake w programie Visual Studio, zobacz [CMAKE projects in Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 

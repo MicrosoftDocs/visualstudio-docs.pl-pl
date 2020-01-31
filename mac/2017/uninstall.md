@@ -6,20 +6,18 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 78bf7fce98f2a77e05a3fbbd31afcf3f20d97a9f
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: ad0be8546b88fbd01f54faf7eb00f71ddd6aa632
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74985140"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892158"
 ---
-# <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie Visual Studio dla komputerów Mac
+# <a name="uninstalling-visual-studio-for-mac"></a>Odinstalowywanie programu Visual Studio dla komputerów Mac
 
 Istnieje kilka produktów platformy Xamarin, które umożliwiają Programowanie aplikacji dla wielu platform, w tym aplikacje autonomiczne, takie jak Visual Studio dla komputerów Mac.
 
 Możesz użyć tego przewodnika, aby odinstalować każdy produkt osobno, przechodząc do odpowiedniej sekcji lub można użyć skryptów dostępnych w sekcji [Odinstalowywanie skryptu](#uninstall-script) w celu odinstalowania wszystkiego.
-
-Jeśli wcześniej zainstalowano Xamarin Studio na maszynie, w uzupełnieniu do poniższych kroków może być również konieczne wykonanie instrukcji dotyczących [odinstalowywania programu Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac) .
 
 ## <a name="uninstall-script"></a>Odinstaluj skrypt
 

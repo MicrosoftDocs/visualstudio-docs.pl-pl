@@ -16,17 +16,21 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4480442577ccb321d66ad65f94a7c86cdae62ae
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 56d3c301eb0e9b660a82b6552792a96aa5bd8596
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574009"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826591"
 ---
 # <a name="importgroup-element"></a>Zaimportuj element
+  
 Zawiera kolekcję elementów `Import`, które są zgrupowane w warunku opcjonalnym. Aby uzyskać więcej informacji, zobacz [import elementu (MSBuild)](../msbuild/import-element-msbuild.md).
 
- \<Project > \<zaimportowanie >
+```xml
+<Project>
+  <ImportGroup>
+```
 
 ## <a name="syntax"></a>Składnia
 
@@ -72,5 +76,6 @@ Zawiera kolekcję elementów `Import`, które są zgrupowane w warunku opcjonaln
 ```
 
 ## <a name="see-also"></a>Zobacz także
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)

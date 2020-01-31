@@ -8,18 +8,18 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188792"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826570"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera ASP.NET Core do Azure App Service przy użyciu programu Visual Studio
 
 Ten samouczek przeprowadzi Cię przez program Visual Studio w celu opublikowania ASP.NET Core aplikacji sieci Web w kontenerze [Azure App Service](/azure/app-service). Azure App Service to odpowiednia usługa dla aplikacji sieci Web o jednym kontenerze hostowanej na platformie Azure.
 
-Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem Utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) .
+Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpłatne konto](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -40,9 +40,9 @@ Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji 
 ::: moniker range="vs-2017"
 1. Z menu programu Visual Studio wybierz pozycję **plik > nowy > projekt**.
 2. W sekcji **Szablony** okna dialogowego **Nowy projekt** wybierz pozycję  **C# Visual > Web**.
-3. Wybierz **ASP.NET Core aplikacji sieci Web**.
+3. Wybierz **aplikacji sieci Web platformy ASP.NET Core**.
 4. Nadaj nowej aplikacji nazwę (lub wybierz ją domyślną), a następnie kliknij **przycisk OK**.
-5. Wybierz pozycję **aplikacja sieci Web**.
+5. Wybierz **aplikacji sieci Web**.
 6. Zaznacz pole wyboru **Włącz obsługę platformy Docker** .
 7. Wybierz typ kontenera systemu **Linux** i kliknij przycisk **OK**. Kontenery systemu Windows nie są obsługiwane do wdrażania w Azure App Service jako kontener.
 ::: moniker-end
@@ -53,13 +53,13 @@ Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji 
 1. Wybierz pozycję **aplikacja sieci Web**.
 1. Wybierz, czy ma być obsługiwana obsługa protokołu SSL, przy użyciu pola wyboru **Konfiguruj dla protokołu HTTPS** .
 1. Zaznacz pole wyboru **Włącz obsługę platformy Docker** .
-1. Wybierz typ kontenera systemu **Linux** , a następnie kliknij przycisk **Utwórz**. Kontenery systemu Windows nie są obsługiwane do wdrażania w Azure App Service jako kontener.
+1. Wybierz typ kontenera, a następnie kliknij przycisk **Utwórz**. Kontenery systemu Windows nie są obsługiwane do wdrażania w Azure App Service jako kontener.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Wdrażanie kontenera na platformie Azure
 
 1. Kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Publikuj**.
-1. W oknie dialogowym Publikowanie elementu docelowego wybierz pozycję **App Service Linux**.
+1. W oknie dialogowym Publikowanie elementu docelowego wybierz pozycję **App Service Linux** lub **App Service**. Jest to system operacyjny, który będzie obsługiwał serwer sieci Web.
 1. Możesz publikować tylko do App Service lub można publikować w App Service i Azure Container Registry (ACR). Aby opublikować kontener w Azure Container Registry (ACR), wybierz opcję **Utwórz nowe App Service dla kontenerów**, a następnie kliknij przycisk **Publikuj**.
 
    ![Zrzut ekranu okna dialogowego publikowania](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,9 +79,20 @@ Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji 
    ![Zrzut ekranu aplikacji sieci Web](media/deploy-app-service/web-application-running.png)
 
 1. Profil publikowania jest zapisywany ze wszystkimi wybranymi szczegółami, takimi jak grupa zasobów i rejestr kontenerów.
-1. Aby ponownie wykonać wdrożenie z tym samym profilem publikowania, użyj przycisku **Publikuj** , przycisku **Publikuj** w oknie **działanie publikowania w sieci Web** lub kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Publikuj** element w menu kontekstowe.
 
-## <a name="clean-up-resources"></a>Czyszczenie zasobów
+1. Aby ponownie wykonać wdrożenie z tym samym profilem publikowania, użyj przycisku **Publikuj** , przycisku **Publikuj** w oknie **działanie publikowania w sieci Web** lub kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Publikuj** element w menu kontekstowym.
+
+## <a name="view-container-settings"></a>Wyświetl ustawienia kontenera
+
+W [Azure Portal](https://portal.azure.com)można otworzyć wdrożony App Service.
+
+Ustawienia dla wdrożonego App Service można wyświetlić, otwierając menu **Ustawienia kontenera* (w przypadku korzystania z programu Visual Studio 2019 w wersji 16,4 lub nowszej).
+
+![Zrzut ekranu przedstawiający menu Ustawienia kontenera w Azure Portal](media/deploy-app-service/container-settings-menu.png)
+
+W tym miejscu można wyświetlić informacje o kontenerze, wyświetlić lub pobrać dzienniki albo skonfigurować ciągłe wdrażanie. Zobacz [Azure App Service ciągłej integracji/ciągłego wdrażania](/azure/app-service/containers/app-service-linux-ci-cd).
+
+## <a name="clean-up-resources"></a>Oczyszczanie zasobów
 
 Aby usunąć wszystkie zasoby platformy Azure skojarzone z tym samouczkiem, Usuń grupę zasobów przy użyciu [Azure Portal](https://portal.azure.com). Aby znaleźć grupę zasobów skojarzoną z opublikowaną aplikacją sieci Web, wybierz pozycję **wyświetl** > inne **działanie publikowania w sieci Web** > **Windows** , a następnie wybierz ikonę koła zębatego. Zostanie otwarta karta **Publikowanie** , która zawiera grupę zasobów.
 
@@ -89,7 +100,7 @@ W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Skonfiguruj ciągłą integrację i dostarczanie (CI/CD) za pomocą [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
+Dowiedz się więcej na temat [Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="see-also"></a>Zobacz także
 

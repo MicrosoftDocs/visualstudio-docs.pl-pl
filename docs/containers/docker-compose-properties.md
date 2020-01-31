@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916933"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826461"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose właściwości kompilacji
 
@@ -109,6 +109,20 @@ Użyj podwójnych cudzysłowów wokół wartości, jak w poprzednim przykładzie
 |com. Microsoft. VisualStudio. debugowanego obiektu. killprogram|To polecenie służy do zatrzymania programu debugowanego obiektu, który działa wewnątrz kontenera (w razie potrzeby).|
 |com. Microsoft. VisualStudio. debugowanego obiektu. program|Program został uruchomiony podczas uruchamiania debugowania. W przypadku aplikacji .NET Core to ustawienie jest zazwyczaj **dotnet**.|
 |com. Microsoft. VisualStudio. debugowanego obiektu. WorkingDirectory|Katalog używany jako katalog początkowy podczas uruchamiania debugowania. To ustawienie jest zwykle */App* dla kontenerów systemu Linux lub kontenerów *C:\app* for Windows.|
+
+## <a name="customize-the-app-startup-process"></a>Dostosowywanie procesu uruchamiania aplikacji
+
+Można uruchomić polecenie lub skrypt niestandardowy przed uruchomieniem aplikacji przy użyciu ustawienia `entrypoint` i zależnie od konfiguracji. Na przykład, jeśli trzeba skonfigurować certyfikat tylko w trybie **debugowania** przez uruchomienie `update-ca-certificates`, ale nie w trybie **wydania** , można dodać następujący kod tylko w *Docker-Compose. vs. Debug. yml*:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Jeśli pominięto *Docker-Compose. vs. release. yml* lub *Docker-Compose. vs. Debug. yml* , program Visual Studio generuje je na podstawie ustawień domyślnych.
 
 ## <a name="next-steps"></a>Następne kroki
 

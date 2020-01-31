@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574460"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826474"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Instrukcje: korzystanie z zestawów SDK projektu MSBuild
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15,0 wprowadza koncepcję "zestawu SDK projektu", która upraszcza korzystanie z zestawów deweloperskich oprogramowania, które wymagają zaimportowania właściwości i obiektów docelowych.
+Program MSBuild 15,0 wprowadził koncepcję "zestawu SDK projektu", która upraszcza korzystanie z zestawów deweloperskich oprogramowania, które wymagają zaimportowania właściwości i obiektów docelowych.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ ms.locfileid: "75574460"
 </Project>
 ```
 
-Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dodaje niejawne Importy u góry i u dołu projektu:
+Podczas obliczania projektu, MSBuild dodaje niejawne Importy u góry i u dołu pliku projektu:
 
 ```xml
 <Project>
@@ -46,9 +46,9 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
 
 ## <a name="reference-a-project-sdk"></a>Odwoływanie się do zestawu SDK projektu
 
- Istnieją trzy sposoby odwoływania się do zestawu SDK projektu:
+Istnieją trzy sposoby odwoływania się do zestawu SDK projektu:
 
-1. Użyj `Sdk` atrybutu dla elementu `<Project/>`:
+- Użyj `Sdk` atrybutu dla elementu `<Project/>`:
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -56,9 +56,9 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     </Project>
     ```
 
-    Niejawny import jest dodawany do góry i u dołu projektu, jak wspomniano powyżej.
+    Niejawny import jest dodawany do góry i u dołu projektu, jak opisano wcześniej.
     
-    Aby określić określoną wersję zestawu SDK, możesz dołączyć go do `Sdk` atrybutu:
+    Aby określić określoną wersję zestawu SDK, Dołącz ją do `Sdk` atrybutu:
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -69,7 +69,7 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     > [!NOTE]
     > Obecnie jedynym obsługiwanym sposobem odwoływania się do zestawu SDK projektu w Visual Studio dla komputerów Mac.
 
-2. Użyj `<Sdk/>` elementu najwyższego poziomu:
+- Użyj `<Sdk/>` elementu najwyższego poziomu:
 
     ```xml
     <Project>
@@ -78,9 +78,11 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     </Project>
    ```
 
-   Niejawny import jest dodawany do góry i u dołu projektu, jak wspomniano powyżej.  Atrybut `Version` nie jest wymagany.
+   Niejawny import jest dodawany do góry i u dołu projektu, jak opisano wcześniej.
+   
+   Atrybut `Version` nie jest wymagany.
 
-3. Użyj elementu `<Import/>` w dowolnym miejscu w projekcie:
+- Użyj elementu `<Import/>` w dowolnym miejscu w projekcie:
 
     ```xml
     <Project>
@@ -95,19 +97,23 @@ Podczas obliczania projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
 
    Jawne uwzględnienie Importy w projekcie umożliwia pełną kontrolę nad kolejnością.
 
-   Korzystając z elementu `<Import/>`, można również określić opcjonalny atrybut `Version`.  Na przykład można określić `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
+   Korzystając z elementu `<Import/>`, można również określić opcjonalny atrybut `Version`. Na przykład można określić `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Jak są rozwiązywane zestawy SDK projektu
 
-Podczas oceny importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicznie rozpoznaje ścieżkę do zestawu SDK projektu na podstawie określonej nazwy i wersji.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma także listę zarejestrowanych resolverów zestawu SDK, które są wtyczkami, które lokalizują zestawy SDK projektu na komputerze.  Te wtyczki obejmują:
+Podczas oceny importu program MSBuild dynamicznie rozpoznaje ścieżkę do zestawu SDK projektu na podstawie określonej nazwy i wersji.  Program MSBuild zawiera również listę zarejestrowanych narzędzi do rozwiązywania problemów z zestawem SDK, które są wtyczkami do lokalizowania zestawów SDK projektu na komputerze. Te wtyczki obejmują:
 
-1. Mechanizm rozwiązywania konfliktów oparty na pakiecie NuGet, który wysyła zapytanie do skonfigurowanych kanałów informacyjnych pakietu dla pakietów NuGet zgodnych z IDENTYFIKATORem i wersją określonego zestawu SDK.<br/>
-   Ten program rozpoznawania nazw jest aktywny tylko wtedy, gdy określono opcjonalną wersję i można jej użyć dla dowolnego niestandardowego zestawu SDK projektu.
-2. Program rozpoznawania interfejsu wiersza polecenia platformy .NET, który rozwiązuje zestawy SDK instalowane z interfejsem wiersza polecenia platformy .NET.<br/>
+- Mechanizm rozwiązywania konfliktów oparty na pakiecie NuGet, który wysyła zapytanie do skonfigurowanych kanałów informacyjnych pakietu dla pakietów NuGet zgodnych z IDENTYFIKATORem i wersją określonego zestawu SDK.
+
+   Ten mechanizm rozwiązywania konfliktów jest aktywny tylko w przypadku wybrania wersji opcjonalnej. Może być używana dla dowolnego niestandardowego zestawu SDK projektu.
+   
+- Program rozpoznawania interfejsu wiersza polecenia platformy .NET, który rozwiązuje zestawy SDK instalowane z [interfejsem wiersza polecenia platformy .NET](/dotnet/core/tools/).
+
    Ten mechanizm rozwiązywania konfliktów lokalizuje zestawy SDK projektu, takie jak `Microsoft.NET.Sdk` i `Microsoft.NET.Sdk.Web`, które są częścią produktu.
-3. Domyślny program rozpoznawania nazw, który rozwiązuje zestawy SDK, które zostały zainstalowane z programem MSBuild.
+   
+- Domyślny program rozpoznawania nazw, który rozwiązuje zestawy SDK, które zostały zainstalowane z programem MSBuild.
 
-Program rozpoznawania SDK oparty na pakiecie NuGet obsługuje określanie wersji w pliku [Global. JSON](/dotnet/core/tools/global-json) , który umożliwia kontrolowanie wersji zestawu SDK projektu w jednym miejscu, a nie w każdym projekcie:
+Program rozpoznawania SDK oparty na pakiecie NuGet obsługuje określanie wersji w pliku [Global. JSON](/dotnet/core/tools/global-json) , który umożliwia kontrolowanie wersji zestawu SDK projektu w jednym miejscu, a nie w poszczególnych projektach:
 
 ```json
 {
@@ -118,7 +124,7 @@ Program rozpoznawania SDK oparty na pakiecie NuGet obsługuje określanie wersji
 }
 ```
 
-Podczas kompilacji można używać tylko jednej wersji zestawu SDK projektu.  Jeśli odwołujesz się do dwóch różnych wersji tego samego zestawu SDK projektu, program MSBuild wyemituje ostrzeżenie.  Zaleca się, aby **nie** określać wersji w projektach, jeśli w pliku *Global. JSON*została określona wersja.
+Podczas kompilacji można używać tylko jednej wersji zestawu SDK projektu. Jeśli odwołujesz się do dwóch różnych wersji tego samego zestawu SDK projektu, MSBuild emituje ostrzeżenie. Zaleca się, aby **nie** określać wersji w projektach, jeśli w pliku *Global. JSON* została określona wersja.
 
 ## <a name="see-also"></a>Zobacz także
 
