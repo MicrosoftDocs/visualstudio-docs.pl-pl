@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Docker z ASP.NET Core
+title: Visual Studio Tools for Docker z ASP.NET
 author: ghogen
 description: Dowiedz się, jak korzystać z narzędzi i Docker for Windows programu Visual Studio 2019
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927909"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922998"
 ---
 Za pomocą programu Visual Studio można łatwo kompilować, debugować i uruchamiać kontenery .NET, ASP.NET i ASP.NET Core aplikacje oraz publikować je w Azure Container Registry (ACR), Docker Hub, Azure App Service lub własnym rejestrze kontenerów. W tym artykule opublikujemy aplikację ASP.NET Core w ACR.
 
@@ -20,7 +20,7 @@ Za pomocą programu Visual Studio można łatwo kompilować, debugować i urucha
 
 * [Pulpit Docker](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Program Visual Studio 2019](https://visualstudio.microsoft.com/downloads) z zainstalowaną obsługą tworzenia aplikacji dla **sieci Web**, obciążeń **narzędzi platformy Azure** i/lub **oprogramowania .NET Core dla wielu platform**
-* [Narzędzia programistyczne programu .net core 2,2](https://dotnet.microsoft.com/download/dotnet-core/2.2) do programowania przy użyciu programu .net Core 2,2
+* [Narzędzia programistyczne platformy .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) do programowania przy użyciu platformy .NET Core
 * Do opublikowania w usłudze Azure Container Registry, subskrypcji platformy Azure. [Zamów bezpłatną wersję próbną](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Instalacja i konfiguracja
@@ -29,10 +29,12 @@ W przypadku instalacji platformy Docker najpierw przejrzyj informacje na [pulpic
 
 ## <a name="add-a-project-to-a-docker-container"></a>Dodawanie projektu do kontenera platformy Docker
 
-1. Utwórz nowy projekt za pomocą szablonu **aplikacji sieci Web ASP.NET Core** .
+1. Utwórz nowy projekt za pomocą szablonu **aplikacji sieci web ASP.NET Core** lub jeśli chcesz użyć .NET Framework zamiast programu .NET Core, wybierz pozycję **ASP.NET Web Application (.NET Framework)** .
 1. Wybierz pozycję **aplikacja sieci Web**i upewnij się, że pole wyboru **Włącz obsługę platformy Docker** jest zaznaczone.
 
    ![Pole wyboru Włącz obsługę platformy Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   Zrzut ekranu przedstawia platformę .NET Core; Jeśli używasz .NET Framework, wygląda to nieco inaczej.
 
 1. Wybierz odpowiedni typ kontenera (system Windows lub Linux), a następnie kliknij przycisk **Utwórz**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Poprzedni *pliku dockerfile* opiera się na obrazie [Microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) i zawiera instrukcje dotyczące modyfikowania obrazu podstawowego przez skompilowanie projektu i dodanie go do kontenera.
+Poprzedni *pliku dockerfile* opiera się na obrazie [Microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) i zawiera instrukcje dotyczące modyfikowania obrazu podstawowego przez skompilowanie projektu i dodanie go do kontenera. Jeśli używasz .NET Framework, obraz podstawowy będzie różny.
 
 Jeśli w oknie dialogowym nowego projektu zostanie zaznaczone pole wyboru **Konfiguruj dla protokołu HTTPS**, plik *Dockerfile* uwidacznia dwa porty. Jeden port jest używany na potrzeby ruchu HTTP, a drugi na potrzeby protokołu HTTPS. Jeśli to pole wyboru nie zostanie zaznaczone, dla ruchu HTTP zostanie uwidoczniony pojedynczy port (80).
 
@@ -71,7 +73,7 @@ Jeśli w oknie dialogowym nowego projektu zostanie zaznaczone pole wyboru **Konf
 
 Wybierz pozycję **Docker** z listy rozwijanej debugowania na pasku narzędzi i rozpocznij debugowanie aplikacji. Może pojawić się komunikat z monitem o zaufać certyfikatowi; Wybierz relację zaufania certyfikatu, aby kontynuować.
 
-Opcja **Narzędzia kontenera** w oknie **danych wyjściowych** pokazuje, jakie akcje są wykonywane.
+Opcja **Narzędzia kontenera** w oknie **danych wyjściowych** pokazuje, jakie akcje są wykonywane. Po raz pierwszy pobranie obrazu podstawowego może potrwać trochę czasu, ale jest to znacznie szybsze w kolejnych uruchomieniach.
 
 ## <a name="containers-window"></a>Okno kontenerów
 
@@ -99,9 +101,9 @@ Po zakończeniu cyklu opracowywania i debugowania aplikacji można utworzyć obr
 
     | Ustawienie      | Sugerowana wartość  | Opis                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Prefiks DNS** | Nazwa unikatowa w skali globalnej | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
-    | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure, która ma być używana. |
-    | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowa**, aby utworzyć nową grupę zasobów.|
+    | **Prefiks DNS** | Globalnie unikatowa nazwa | Nazwa, która jednoznacznie identyfikuje rejestr kontenerów. |
+    | **Subskrypcja** | Wybierz subskrypcję | Subskrypcja platformy Azure do użycia. |
+    | **[Grupa zasobów](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nazwa grupy zasobów, w której ma zostać utworzony rejestr kontenerów. Wybierz pozycję **Nowy** , aby utworzyć nową grupę zasobów.|
     | **[Magazyn](/azure/container-registry/container-registry-skus)** | Standardowy | Warstwa usług w rejestrze kontenerów  |
     | **Lokalizacja rejestru** | Lokalizacja blisko Ciebie | Wybierz lokalizację w [regionie](https://azure.microsoft.com/regions/) blisko siebie lub w najbliższej innej usłudze, która będzie korzystać z rejestru kontenerów. |
 

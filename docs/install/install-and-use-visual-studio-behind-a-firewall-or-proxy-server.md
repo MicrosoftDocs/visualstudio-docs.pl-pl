@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ba3ca41fe1bf675bc4f17e9932525921060aaa9
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114937"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922872"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -76,6 +76,10 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 | www\.incredibuild.com | Tworzenie gier przy użyciu języka C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Tworzenie gier przy użyciu języka C++ (IncrediBuild) |
 | www\.python.org | Programowanie w języku Python (Python) <br /><br />Dane aplikacji analizy i przetwarzania (Python) |
+| developerservices2.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
+| developer.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
+| appstoreconnect.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
+| idmsa.apple.com | Inicjowanie obsługi platformy Xamarin. iOS |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Używanie programu Visual Studio i usług platformy Azure

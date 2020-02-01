@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów z błędami klienta platformy Docker na Windows | Dokumentacja firmy Microsoft
-description: Rozwiązywanie problemów napotykanych podczas korzystania z programu Visual Studio do tworzenia i wdrażania aplikacji sieci web do platformy Docker na Windows za pomocą programu Visual Studio.
+description: Rozwiązywanie problemów występujących podczas korzystania z programu Visual Studio do tworzenia i wdrażania aplikacji sieci Web w systemie Windows przy użyciu programu Visual Studio.
 ms.technology: vs-azure
 author: ghogen
 manager: jillfra
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: ce7645b8b4f71cf94d7320a0072d15b2b8083dec
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67412275"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923002"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker
 
-Podczas pracy z narzędzia kontenerów programu Visual Studio, mogą wystąpić problemy podczas kompilowania lub debugowania aplikacji. Poniżej są niektóre typowe kroki rozwiązywania problemów.
+Podczas pracy z narzędziami kontenera programu Visual Studio mogą wystąpić problemy podczas kompilowania lub debugowania aplikacji. Poniżej są niektóre typowe kroki rozwiązywania problemów.
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>Udostępnianie woluminów nie jest włączona. Włącz udostępnianie woluminów w ustawieniach platformy Docker CE dla Windows (tylko w przypadku kontenerów systemu Linux)
 
@@ -35,11 +35,11 @@ Aby rozwiązać ten problem:
 ![dyski udostępnione](media/troubleshooting-docker-errors/shareddrives.png)
 
 > [!TIP]
-> Wersje serwera Visual Studio później niż Visual Studio 2017 w wersji 15.6 monitowanie, gdy **udostępnione dyski** nie są skonfigurowane.
+> Program Visual Studio w wersji nowszej niż Visual Studio 2017 w wersji 15,6 wyświetla monit, gdy **dyski udostępnione** nie są skonfigurowane.
 
 ### <a name="container-type"></a>Typ kontenera
 
-Podczas dodawania obsługi programu Docker do projektu, możesz wybrać kontener systemu Linux lub Windows. Hosta platformy Docker musi działać ten sam typ kontenera. Aby zmienić typ kontenera, na uruchomione wystąpienie platformy Docker, kliknij prawym przyciskiem myszy ikonę platformy Docker w zasobniku systemowym, a następnie wybierz **przełączyć się do kontenerów Windows...**  lub **przełączyć się do kontenerów systemu Linux...** .
+Podczas dodawania obsługi platformy Docker do projektu należy wybrać kontener systemu Windows lub Linux. Na hoście platformy Docker musi być uruchomiony ten sam typ kontenera. Aby zmienić typ kontenera w uruchomionym wystąpieniu platformy Docker, kliknij prawym przyciskiem myszy ikonę platformy Docker na pasku zadań i wybierz polecenie **Switch to Windows containers...** (Przełącz do kontenerów systemu Windows...) lub polecenie **Switch to Linux containers...** (Przełącz do kontenerów systemu Linux...).
 
 ## <a name="unable-to-start-debugging"></a>Nie można uruchomić debugowania
 
@@ -56,30 +56,42 @@ Spróbuj wykonywanie skryptu do pobrania z [oczyszczania kontenera hosta sieci](
 
 Korzystając z platformy Docker dla systemu macOS, może wystąpić błąd odwołujące się do /usr/local/share/dotnet/sdk/NuGetFallbackFolder folderu. Dodaj folder do karty Udostępnianie plików na platformie Docker
 
-## <a name="docker-users-group"></a>Grupa użytkowników platformy docker
+## <a name="docker-users-group"></a>Grupa użytkowników platformy Docker
 
-Może wystąpić następujący błąd w programie Visual Studio, podczas pracy z kontenerami:
+Podczas pracy z kontenerami w programie Visual Studio może wystąpić następujący błąd:
 
 ```
 The current user must be in the 'docker-users' group to use Docker Desktop. 
 Add yourself to the 'docker-users' group and then log out of Windows.
 ```
 
-Musi być członkiem grupy "docker użytkownicy", aby mogła mieć uprawnienia do pracy z kontenerami aparatu Docker.  Aby dodać użytkownika do grupy w systemie Windows 10, wykonaj następujące kroki:
+Aby mieć uprawnienia do pracy z kontenerami platformy Docker, musisz być członkiem grupy "Docker-users".  Aby dodać siebie do grupy w systemie Windows 10, wykonaj następujące kroki:
 
-1. Z Start menu, otwórz **Zarządzanie komputerem**.
-1. Rozwiń **lokalnych użytkowników i grup**i wybierz polecenie **grup**.
-1. Znajdź **użytkowników platformy docker** grupy, kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do grupy**.
-1. Dodaj swoje konto użytkownika lub konta.
-1. Wyloguj się i zalogować ponownie te zmiany zaczęły obowiązywać.
+1. Z menu Start Otwórz pozycję **Zarządzanie komputerem**.
+1. Rozwiń węzeł **lokalni użytkownicy i grupy**, a następnie wybierz pozycję **grupy**.
+1. Znajdź grupę **Docker — użytkownicy** , kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj do grupy**.
+1. Dodaj konto użytkownika lub konta.
+1. Wyloguj się i zaloguj ponownie, aby te zmiany zaczęły obowiązywać.
 
-Można również użyć `net localgroup` polecenie w wierszu polecenia administratora, aby dodać użytkowników do określonych grup.
+Możesz również użyć polecenia `net localgroup` w wierszu polecenia administratora, aby dodać użytkowników do określonych grup.
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
-W programie PowerShell użyj [LocalGroupMember Dodaj](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) funkcji.
+W programie PowerShell Użyj funkcji [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) .
+
+## <a name="low-disk-space"></a>Mało miejsca na dysku
+
+Domyślnie program Docker przechowuje obrazy w folderze *% ProgramData%/Docker/* , który zazwyczaj znajduje się na dysku systemowym * C:\ProgramData\Docker\*. Aby zapobiec wykorzystaniu przez obrazy cennego miejsca na dysku systemowym, można zmienić lokalizację folderu obrazu.  Z poziomu ikony platformy Docker na pasku zadań Otwórz ustawienia platformy Docker, wybierz **demon**i przejdź z warstwy **podstawowa** na **Zaawansowane**. W okienku Edycja Dodaj ustawienie właściwości `graph` z wartością żądanej lokalizacji obrazów platformy Docker:
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Zrzut ekranu przedstawiający ustawienie lokalizacji obrazu platformy Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+Kliknij przycisk **Zastosuj** , aby ponownie uruchomić platformę Docker. Te kroki modyfikują plik konfiguracji w *%ProgramData%\docker\config\daemon.JSON*. Poprzednio skompilowane obrazy nie są przenoszone.
 
 ## <a name="microsoftdockertools-github-repo"></a>Repozytorium GitHub Microsoft/DockerTools
 
