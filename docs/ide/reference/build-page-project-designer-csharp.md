@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 85bf50c653d82a7de22d5a81fd81c38db0db1be8
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596869"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923268"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 
@@ -65,6 +65,12 @@ Definiuje śledzenie jako symbol we wszystkich plikach kodu źródłowego w apli
 Określa procesor, który ma być przeznaczony dla pliku wyjściowego. Wybierz opcję **x86** dla dowolnego 32-bitowego procesora zgodnego z technologią Intel, wybierz **x64** dla dowolnego 64-bitowego procesora zgodnego z technologią Intel, wybierz pozycję **ARM** dla procesorów ARM lub wybierz **dowolny** procesor, aby określić, że każdy z procesorów jest akceptowalny. **Każdy procesor** jest wartością domyślną dla projektów, ponieważ umożliwia uruchamianie aplikacji na najszerszym zakresie sprzętu.
 
 Aby uzyskać więcej informacji, zobacz [/platformC# (opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+
+**Wymaga**
+
+Określa kontekst dopuszczający wartości C# null całego projektu. Ta opcja interfejsu użytkownika została wprowadzona w programie Visual Studio 16,5 i jest dostępna tylko dla projektów używających C# 8,0 lub nowszych.
+
+Aby uzyskać więcej informacji, zobacz [konteksty dopuszczające wartości null](/dotnet/csharp/nullable-references#nullable-contexts).
 
 **Preferuj 32-bitowe**
 
