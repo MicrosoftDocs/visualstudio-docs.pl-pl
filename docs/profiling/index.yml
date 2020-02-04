@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Mierzenie wydajności aplikacji w programie Visual Studio
-summary: Narzędzia profilowania i diagnostyki pomagają zdiagnozować użycie pamięci i procesora oraz inne problemy na poziomie aplikacji. Za pomocą tych narzędzi można zbierać dane dotyczące wydajności podczas uruchamiania aplikacji.
+summary: Narzędzia profilowania i diagnostyki pomagają zdiagnozować problemy dotyczące użycia pamięci i procesora oraz inne problemy na poziomie aplikacji. Za pomocą tych narzędzi można zbierać dane dotyczące wydajności podczas korzystania z aplikacji.
 metadata:
   title: Mierzenie wydajności w programie Visual Studio
   description: Dowiedz się, jak za pomocą programu Visual Studio mierzyć wydajność przy użyciu narzędzi profilowania.
@@ -9,14 +9,14 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/30/2019
-  ms.openlocfilehash: c8a6adc0857924fb790231ccf5dd70635290b77e
-  ms.sourcegitcommit: 4b911e768601992ad42dd5911dc6a01e1fe48588
-  ms.translationtype: MT
+  ms.openlocfilehash: 4c5a2cfb7d3ef7a8ad71dd7591bc147932ff0535
+  ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 11/01/2019
-  ms.locfileid: "73413581"
+  ms.lasthandoff: 02/01/2020
+  ms.locfileid: "76923371"
 landingContent:
-- title: Profilowanie — informacje
+- title: Informacje o profilowaniu
   linkLists:
   - linkListType: overview
     links:
@@ -24,35 +24,37 @@ landingContent:
       url: profiling-feature-tour.md
   - linkListType: concept
     links:
-    - text: Sposoby uruchamiania narzędzi profilowania
+    - text: Sposoby korzystania z narzędzi profilowania
       url: running-profiling-tools-with-or-without-the-debugger.md
 - title: Wprowadzenie
   linkLists:
   - linkListType: quickstart
     links:
-    - text: Analizowanie użycia procesora CPUC#(, Visual Basic)
+    - text: Analizowanie użycia procesora CPU (C#, Visual Basic)
       url: quickstart-cpu-usage-managed.md
-    - text: Analizowanie użycia procesora CPUC++()
+    - text: Analizowanie użycia procesora CPU (C++)
       url: quickstart-cpu-usage-native.md
     - text: Analizowanie użycia procesora CPU (ASP.NET)
       url: quickstart-cpu-usage-aspnet.md
   - linkListType: tutorial
     links:
-    - text: Rozpocznij Analizowanie użycia procesora CPU
+    - text: Wprowadzenie do analizowania użycia procesora CPU
       url: beginners-guide-to-performance-profiling.md
-    - text: Wprowadzenie pomiaru użycia pamięci
+    - text: Wprowadzenie do mierzenia użycia pamięci
       url: memory-usage.md
-- title: Więcej narzędzi wydajności
+- title: Więcej narzędzi do oceny wydajności
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Pomiar użycia procesora CPU z wiersza polecenia
+      url: profile-apps-from-command-line.md
     - text: Wskazówki dotyczące wydajności
       url: perftips.md
     - text: Analizowanie zużycia zasobów (XAML)
       url: application-timeline.md
     - text: Analizowanie użycia procesora GPU (Direct3D)
       url: gpu-usage.md
-    - text: Analizowanie użycia sieci (platformy UWP)
+    - text: Analizowanie użycia sieci (platforma UWP)
       url: network-usage.md
-    - text: Analizowanie zużycia energii (platformy UWP)
+    - text: Analizowanie zużycia energii (platforma UWP)
       url: analyze-energy-use-in-store-apps.md

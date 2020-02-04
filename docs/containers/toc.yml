@@ -7,7 +7,7 @@
     - name: Szybki start
       expanded: true
       items:
-        - name: Aplikacja platformy ASP.NET Core w kontenerze
+        - name: Aplikacja platformy ASP.NET w kontenerze
           href: container-tools.md
         - name: Aplikacja jednostronicowa platformy React.js w kontenerze
           href: container-tools-react.md

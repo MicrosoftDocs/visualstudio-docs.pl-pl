@@ -38,6 +38,8 @@
 - name: Poznawanie programu Visual Studio
   expanded: true
   items:
+    - name: Uruchamianie programu
+      href: run-program.md
     - name: Otwieranie projektu z repozytorium
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Pisanie i edytowanie kodu
