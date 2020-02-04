@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2890ee9879d3cab2ff134fdbfcd4edabb36d512
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
+ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923163"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77001528"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie C# kodu za pomocą programu Visual Studio
 
@@ -187,7 +187,7 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
      `SendMessage(name, a[i]);`
 
-2. Naciśnij klawisz **F11** jeszcze raz, aby przejść do metody `SendMessage`.
+1. Naciśnij klawisz **F11** jeszcze raz, aby przejść do metody `SendMessage`.
 
      Żółty wskaźnik jest zaawansowany do metody `SendMessage`.
 
@@ -203,7 +203,9 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
      Należy wrócić do pętli `for` w metodzie `Main`, wstrzymane w wywołaniu metody `SendMessage`.
 
-3. Po wstrzymaniu wywołania metody naciśnij klawisz **F10** (lub wybierz polecenie **Debuguj > krok więcej**).
+1. Naciśnij klawisz **F11** , aby ponownie wrócić do metody `SendMessage`.
+
+1. Po wstrzymaniu wywołania metody naciśnij klawisz **F10** (lub wybierz polecenie **Debuguj > krok więcej**).
 
      ![Użyj klawisza F10, aby przekroczyć kod](../csharp/media/get-started-step-over.png "F10 krok po kroku")
 
@@ -262,7 +264,7 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 
 1. Rozwiń zmienną `letters`, aby wyświetlić elementy, które zawiera.
 
-     ![Sprawdź zmienne w oknie Autokorekty](../csharp/media/get-started-locals-window.png "Okno Autokorekty")
+     ![Sprawdź zmienne w oknie zmiennych lokalnych](../csharp/media/get-started-locals-window.png "Okno zmiennych lokalnych")
 
     **Lokalne** okno zawiera zmienne, które znajdują się w bieżącej [zakres](https://www.wikipedia.org/wiki/Scope_(computer_science)), oznacza to, że bieżący kontekst wykonywania.
 
