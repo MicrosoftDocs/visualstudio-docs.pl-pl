@@ -6,29 +6,29 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Poznaj korzyści wynikające z korzystania z pakietu Office 365 w niektórych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: b9834411c4b951fb7cdb09ac48dad651d109d618
+ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099610"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76967352"
 ---
-# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Pakiet Office 365 ProPlus w subskrypcjach programu Visual Studio
+# <a name="office-365-in-visual-studio-subscriptions"></a>Pakiet Office 365 w subskrypcjach programu Visual Studio
 
-Utwórz najlepszą swoją służbę. Pracuj wszędzie z aplikacjami, które są zawsze aktualizowane. Pakiet Office 365 ProPlus to subskrypcja dostarczana z aplikacjami premium, takimi jak Word, Excel, PowerPoint, OneNote, Outlook, Wydawca i dostęp (Wydawca i dostęp jest dostępny tylko na komputerze). Aplikacje można instalować na wielu urządzeniach, w tym na komputerach PC, Mac, iPad, iPhone, tabletach z systemem Android i telefonach z systemem Android. Dzięki subskrypcji otrzymujesz najnowsze wersje aplikacji i automatycznie odbierają aktualizacje po ich zakończeniu.
+Utwórz najlepszą swoją służbę. Pracuj wszędzie z aplikacjami, które są zawsze aktualizowane. Pakiet Office 365 to subskrypcja dostarczana z aplikacjami premium, takimi jak Word, Excel, PowerPoint, OneNote, Outlook, Wydawca i dostęp (Wydawca i dostęp jest dostępny tylko na komputerze). Aplikacje można instalować na wielu urządzeniach, w tym na komputerach PC, Mac, iPad, iPhone, tabletach z systemem Android i telefonach z systemem Android. Dzięki subskrypcji otrzymujesz najnowsze wersje aplikacji i automatycznie odbierają aktualizacje po ich zakończeniu.
 
 > [!NOTE]
 > Twoja subskrypcja programu Visual Studio uprawnia do korzystania z pakietu Office 365 do użycia w środowisku produkcyjnym.  
 
-## <a name="getting-started-with-office-365-proplus"></a>Wprowadzenie do pakietu Office 365 ProPlus
+## <a name="getting-started-with-office-365"></a>Wprowadzenie do pakietu Office 365 
 
-Wykonaj następujące kroki, aby pobrać i aktywować pakiet Office 365 ProPlus:
+Wykonaj następujące kroki, aby pobrać i aktywować pakiet Office 365:
 1. Zaloguj się do subskrypcji usługi Visual Studio Enterprise.
 2. Kliknij kartę **pliki do pobrania** .
 3. Zostanie wyświetlona lista proponowanych plików do pobrania. Na liście biuro wybierz pozycję **office 365**.
    > [!div class="mx-imgBorder"]
    > ![Pobierz pakiet Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Aby zainstalować pakiet Office 365 ProPlus, potrzebny będzie klucz produktu.  Kliknij link **Pobierz klucz** w obszarze list pakietu Office 365.
+0. Aby zainstalować pakiet Office 365, potrzebny będzie klucz produktu.  Kliknij link **Pobierz klucz** w obszarze list pakietu Office 365.
    > [!div class="mx-imgBorder"]
    > ![pakietem Office 365 Pobierz klucz produktu](_img/vs-office365/vs-office365-get-key.png)
 0. W oknie wyskakującym zostaną wyświetlone wszystkie klucze, które zostały już przejęte, a także te, które są dostępne dla Ciebie.  Aby uzyskać nowy klucz, kliknij opcję **klucz roszczeń** w obszarze list **Office Professional Plus 2019** .
@@ -50,17 +50,17 @@ Wykonaj następujące kroki, aby pobrać i aktywować pakiet Office 365 ProPlus:
 
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna| Dostępne       |  Tak          |
+| Visual Studio Enterprise (standardowa)   | VL, Azure, Retail| Dostępne       |  Tak          |
 | Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Dostępne       |  Tak          |
-| Visual Studio Enterprise (standardowa)   | NFR<sup>1</sup> | Niedostępne       |  Brak          |
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Niedostępne                                                            |  Brak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja | Niedostępne         |  Brak          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak          |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standardowa)   | NFR<sup>1</sup> | Niedostępne       |  N/D          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                            |  N/D          |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja | Niedostępne         |  N/D          |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  N/D          |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  N/D          |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | N/D |
 |  |
 
-<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), pełnego, MCT Software & Services Developer, BizSpark, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), MCT Software & Usługi, Wyobraź sobie, Microsoft Partner Network.*
+<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), pełnego, MCT Software & Services Developer, BizSpark, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), MCT Software & Services, wyobraź sobie, Microsoft Partner Network.*
 
 > [!NOTE]
 > Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
