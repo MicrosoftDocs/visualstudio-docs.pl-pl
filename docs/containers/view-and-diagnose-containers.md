@@ -4,15 +4,15 @@ description: Opisuje sposób ulepszania możliwości debugowania i diagnozowania
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846942"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027308"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Jak wyświetlać i diagnozować kontenery oraz obrazy w programie Visual Studio
 
@@ -88,7 +88,7 @@ W przypadku kontenerów systemu Windows zostanie otwarty wiersz polecenia system
 
 ![Zrzut ekranu okna bash](media/view-and-diagnose-containers/container-bash-window.png)
 
-Zwykle okno terminalu jest otwierane poza programem Visual Studio jako osobne okno. Jeśli chcesz, aby środowisko wiersza polecenia było zintegrowane z Visual Studio IDE jako okno narzędzi było dokować, możesz zainstalować [Terminal/Swagger/docs/v1./Swagger/docs/v1](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
+Zwykle okno terminalu jest otwierane poza programem Visual Studio jako osobne okno. Jeśli chcesz, aby środowisko wiersza polecenia było zintegrowane z Visual Studio IDE jako okno narzędzi było dokować, możesz zainstalować [Terminal/Swagger/docs/v1./Swagger/docs/v1. ](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
 
 ## <a name="attach-the-debugger-to-a-process"></a>Dołącz debuger do procesu
 
@@ -108,7 +108,7 @@ Aby usunąć obraz, kliknij prawym przyciskiem myszy obraz w widoku drzewa, a na
 
 Dowiedz się więcej o narzędziach kontenera dostępnych w programie Visual Studio, odczytując informacje o narzędziach [kontenerów](overview.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Programowanie kontenerów w programie Visual Studio](/visualstudio/containers)
 

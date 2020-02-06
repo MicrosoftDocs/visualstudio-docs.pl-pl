@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596193"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027626"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektu MSBuild
 W poniższej tabeli wymieniono często używane właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach *. targets* udostępnianych przez program MSBuild.
@@ -44,7 +44,7 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | AssemblyName | Nazwa końcowego zestawu wyjściowego po skompilowaniu projektu. |
 | BaseAddress | Określa adres podstawowy głównego zestawu wyjściowego. Ta właściwość jest równoważna z przełącznikiem kompilatora `/baseaddress`. |
 | BaseOutputPath | Określa ścieżkę podstawową dla pliku wyjściowego. Jeśli jest ustawiona, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] będzie używać `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Przykładowa składnia: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
-| BaseIntermediateOutputPath | Folder najwyższego poziomu, w którym są tworzone wszystkie pośrednie foldery wyjściowe specyficzne dla konfiguracji. Wartość domyślna to `obj\`. Poniższy kod jest przykładem: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseIntermediateOutputPath | Folder najwyższego poziomu, w którym są tworzone wszystkie pośrednie foldery wyjściowe specyficzne dla konfiguracji. Wartością domyślną jest `obj\`. Poniższy kod jest przykładem: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
 | BuildInParallel | Wartość logiczna wskazująca, czy odwołania projektu są kompilowane lub czyszczone równolegle, gdy jest używany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wieloetapowy. Wartość domyślna to `true`, co oznacza, że projekty będą kompilowane równolegle, jeśli system ma wiele rdzeni lub procesorów. |
 | BuildProjectReferences | Wartość logiczna wskazująca, czy odwołania projektu są tworzone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automatycznie ustawiaj `false`, jeśli tworzysz projekt w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE), `true` w przeciwnym razie. `-p:BuildProjectReferences=false` można określić w wierszu polecenia, aby uniknąć sprawdzania, czy odwołania do projektów są aktualne. |
 | CleanFile | Nazwa pliku, który będzie używany jako "czyszczenie pamięci podręcznej". Czyszczenie pamięci podręcznej to Lista wygenerowanych plików, które zostaną usunięte podczas operacji czyszczenia. Plik jest umieszczany w pośredniej ścieżce wyjściowej przez proces kompilacji.<br /><br /> Ta właściwość określa tylko nazwy plików, które nie mają informacji o ścieżce. |
@@ -75,14 +75,15 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | MSBuildProjectExtensionsPath | Określa ścieżkę, w której znajdują się rozszerzenia projektu. Domyślnie ma to taką samą wartość jak `BaseIntermediateOutputPath`. |
 | Moduleassemblyname — | Nazwa zestawu, do którego ma zostać dołączony skompilowany moduł. Właściwość jest równoważna z przełącznikiem kompilatora `/moduleassemblyname`. |
 | NoLogo | Wartość logiczna wskazująca, czy logo kompilatora ma być wyłączone. Ta właściwość jest równoważna z przełącznikiem kompilatora `/nologo`. |
-| NoStdLib | Wartość logiczna wskazująca, czy należy unikać odwoływania się do biblioteki standardowej (*mscorlib. dll*). Wartość domyślna to `false`. |
+| NoStdLib | Wartość logiczna wskazująca, czy należy unikać odwoływania się do biblioteki standardowej (*mscorlib. dll*). Wartością domyślną jest `false`. |
 | NoVBRuntimeReference | Wartość logiczna wskazująca, czy środowisko uruchomieniowe [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft. VisualBasic. dll*) powinno być dołączone jako odwołanie w projekcie. |
 | NoWin32Manifest | Wartość logiczna wskazująca, czy informacje manifestu kontroli konta użytkownika (UAC) będą osadzone w pliku wykonywalnym aplikacji. Dotyczy tylko projektów programu Visual Studio przeznaczonych dla [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. W projektach wdrożonych przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i COM bez rejestracji ten element jest ignorowany. `False` (wartość domyślna) określa, że informacje manifestu kontroli konta użytkownika (UAC) są osadzone w pliku wykonywalnym aplikacji. `True` określa, że informacje manifestu kontroli konta użytkownika nie są osadzone.<br /><br /> Ta właściwość ma zastosowanie tylko do [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]projekty [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W projektach wdrożonych przy użyciu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i COM bez rejestracji ta właściwość jest ignorowana.<br /><br /> NoWin32Manifest należy dodawać tylko wtedy, gdy nie chcesz, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] osadzać żadnych informacji manifestu w pliku wykonywalnym aplikacji; Ten proces jest nazywany *wirtualizacją*. Aby używać wirtualizacji, należy ustawić `<ApplicationManifest>` w połączeniu z `<NoWin32Manifest>` w następujący sposób:<br /><br /> — W przypadku projektów [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Usuń węzeł `<ApplicationManifest>`. (W [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty `<NoWin32Manifest>` jest ignorowane, gdy istnieje węzeł `<ApplicationManifest>`).<br />— W przypadku projektów [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Ustaw `<ApplicationManifest>` `False` i `<NoWin32Manifest>` na `True`. (W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projekty `<ApplicationManifest>` zastąpień `<NoWin32Manifest>`).<br /> Ta właściwość jest równoważna z przełącznikiem kompilatora `/nowin32manifest` *VBC. exe*. |
-| Optymalizuj | Wartość logiczna, która po ustawieniu na `true`, umożliwia optymalizacje kompilatora. Ta właściwość jest równoważna z przełącznikiem kompilatora `/optimize`. |
+| Optymalizacja | Wartość logiczna, która po ustawieniu na `true`, umożliwia optymalizacje kompilatora. Ta właściwość jest równoważna z przełącznikiem kompilatora `/optimize`. |
 | OptionCompare | Określa sposób, w jaki są wykonywane porównania ciągów. Prawidłowe wartości to "Binary" lub "text". Ta właściwość jest równoważna z przełącznikiem kompilatora `/optioncompare` *VBC. exe*. |
 | OptionExplicit | Wartość logiczna, która po ustawieniu na `true`wymaga jawnej deklaracji zmiennych w kodzie źródłowym. Ta właściwość jest równoważna z przełącznikiem kompilatora `/optionexplicit`. |
 | OptionInfer | Wartość logiczna, która po ustawieniu na `true`włącza wnioskowanie o typie zmiennych. Ta właściwość jest równoważna z przełącznikiem kompilatora `/optioninfer`. |
 | OptionStrict | Wartość logiczna, która po ustawieniu na `true`, powoduje, że zadanie kompilacji wymusza ścisłą semantykę typu w celu ograniczenia niejawnych konwersji typów. Ta właściwość jest równoważna z `/optionstrict`m przełącznikiem kompilatora *VBC. exe* . |
+| OutDir | Wskazuje końcową lokalizację wyjściową dla projektu lub rozwiązania. Podczas kompilowania rozwiązania OutDir można użyć do zebrania wielu danych wyjściowych projektu w jednej lokalizacji. Ponadto OutDir jest zawarty w AssemblySearchPaths używany do rozpoznawania odwołań. Na przykład *bin\Debug*. |
 | OutputPath | Określa ścieżkę do katalogu wyjściowego względem katalogu projektu, na przykład *bin\Debug*. |
 | OutputType | Określa format pliku wyjściowego. Ten parametr może mieć jedną z następujących wartości:<br /><br /> Biblioteki. Tworzy bibliotekę kodu. (Wartość domyślna).<br />Exe. Tworzy aplikację konsolową.<br />Elementu. Tworzy moduł.<br />Winexe. Tworzy program oparty na systemie Windows.<br /><br /> Ta właściwość jest równoważna z `/target`m przełącznikiem kompilatora *VBC. exe* . |
 | OverwriteReadOnlyFiles | Wartość logiczna wskazująca, czy chcesz włączyć kompilację w celu zastąpienia plików tylko do odczytu, czy wyzwolenia błędu. |
@@ -91,7 +92,7 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | Platforma | System operacyjny, dla którego tworzysz. Prawidłowe wartości to "dowolny procesor CPU", "x86" i "x64". |
 | ProduceReferenceAssembly | Wartość logiczna, która po ustawieniu na `true` włącza produkcję [zestawów referencyjnych](/dotnet/standard/assembly/reference-assemblies) dla bieżącego zestawu. w przypadku korzystania z tej funkcji należy `true` `Deterministic`. Ta właściwość odnosi się do `/refout` przełącznika kompilatorów *VBC. exe* i *CSC. exe* . |
 | ProduceOnlyReferenceAssembly | Wartość logiczna, która powoduje, że kompilator emituje tylko zestaw odniesienia zamiast skompilowanego kodu. Nie można używać w połączeniu z `ProduceReferenceAssembly`.  Ta właściwość odnosi się do `/refonly` przełącznika kompilatorów *VBC. exe* i *CSC. exe* . |
-| RemoveIntegerChecks | Wartość logiczna wskazująca, czy wyłączyć sprawdzanie błędów przepełnienia liczby całkowitej. Wartość domyślna to `false`. Ta właściwość jest równoważna z `/removeintchecks`m przełącznikiem kompilatora *VBC. exe* . |
+| RemoveIntegerChecks | Wartość logiczna wskazująca, czy wyłączyć sprawdzanie błędów przepełnienia liczby całkowitej. Wartością domyślną jest `false`. Ta właściwość jest równoważna z `/removeintchecks`m przełącznikiem kompilatora *VBC. exe* . |
 | SGenUseProxyTypes | Wartość logiczna wskazująca, czy typy proxy powinny być generowane przez *Sgen. exe*. Ma to zastosowanie tylko wtedy, gdy *GenerateSerializationAssemblies* jest ustawiona na wartość on i tylko dla .NET Framework.<br /><br /> Obiekt docelowy SGen używa tej właściwości, aby ustawić flagę UseProxyTypes. Ta właściwość domyślnie ma wartość true, a nie ma interfejsu użytkownika umożliwiającego zmianę tego ustawienia. Aby wygenerować zestaw serializacji dla typów niezwiązanych z usługą WebService, należy dodać tę właściwość do pliku projektu i ustawić wartość false przed zaimportowaniem elementu *Microsoft. Common. targets* lub  *C#/VB.targets*. |
 | SGenToolPath | Opcjonalna ścieżka narzędzia, która wskazuje, gdzie uzyskać *Sgen. exe* , gdy bieżąca wersja pliku *Sgen. exe* zostanie zastąpiona. Ta właściwość jest używana tylko dla .NET Framework.|
 | StartupObject | Określa klasę lub moduł, który zawiera metodę Main lub Sub Main. Ta właściwość jest równoważna z przełącznikiem kompilatora `/main`. |
@@ -130,5 +131,5 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | Win32Manifest | Nazwa pliku manifestu, który powinien być osadzony w końcowym zestawie. Ten parametr jest równoważny z przełącznikiem kompilatora `/win32Manifest`. |
 | Win32Resource | Nazwa pliku zasobu Win32, który ma zostać osadzony w końcowym zestawie. Ten parametr jest równoważny z przełącznikiem kompilatora `/win32resource`. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)

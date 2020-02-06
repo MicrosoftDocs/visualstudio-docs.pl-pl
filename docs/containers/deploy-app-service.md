@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826570"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027290"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Wdrażanie kontenera ASP.NET Core do Azure App Service przy użyciu programu Visual Studio
 
@@ -23,7 +23,7 @@ Jeśli nie masz subskrypcji platformy Azure, przed rozpoczęciem utwórz [bezpł
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby ukończyć ten samouczek:
+W celu ukończenia tego samouczka:
 
 ::: moniker range="vs-2017"
 - Zainstaluj najnowszą wersję programu [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) z obciążeniem "ASP.NET and Web Development"
@@ -33,16 +33,16 @@ Aby ukończyć ten samouczek:
 ::: moniker-end
 - Zainstaluj program [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
 
-## <a name="create-an-aspnet-core-web-app"></a>Tworzenie aplikacji sieci Web ASP.NET Core
+## <a name="create-an-aspnet-core-web-app"></a>Tworzenie aplikacji internetowej ASP.NET Core
 
 Poniższe kroki przeprowadzą Cię przez proces tworzenia podstawowej aplikacji ASP.NET Core, która będzie używana w tym samouczku.
 
 ::: moniker range="vs-2017"
 1. Z menu programu Visual Studio wybierz pozycję **plik > nowy > projekt**.
 2. W sekcji **Szablony** okna dialogowego **Nowy projekt** wybierz pozycję  **C# Visual > Web**.
-3. Wybierz **aplikacji sieci Web platformy ASP.NET Core**.
+3. Wybierz **ASP.NET Core aplikacji sieci Web**.
 4. Nadaj nowej aplikacji nazwę (lub wybierz ją domyślną), a następnie kliknij **przycisk OK**.
-5. Wybierz **aplikacji sieci Web**.
+5. Wybierz pozycję **aplikacja sieci Web**.
 6. Zaznacz pole wyboru **Włącz obsługę platformy Docker** .
 7. Wybierz typ kontenera systemu **Linux** i kliknij przycisk **OK**. Kontenery systemu Windows nie są obsługiwane do wdrażania w Azure App Service jako kontener.
 ::: moniker-end
@@ -102,6 +102,6 @@ W Azure Portal wybierz pozycję **grupy zasobów**, a następnie wybierz grupę 
 
 Dowiedz się więcej na temat [Azure App Service Linux](/azure/app-service/containers/app-service-linux-intro).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Wdróż do Azure Container Registry](hosting-web-apps-in-docker.md)

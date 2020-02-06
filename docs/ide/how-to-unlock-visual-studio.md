@@ -4,19 +4,19 @@ description: Dowiedz się, jak zwiększyć bezpłatną wersję próbną programu
 ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: db0f75b3e4c2f066b7a9d79976a50efd3364d7bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591375"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027578"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Rozszerzanie wersji próbnej lub aktualizowanie licencji
 
@@ -35,7 +35,7 @@ Aby nadal korzystać z programu Visual Studio po zakończeniu okresu próbnego, 
 
 Aby uzyskać więcej informacji o subskrypcjach programu Visual Studio i sposobie ich działania, zobacz stronę [często zadawanych pytań dotyczących subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/) .
 
-## <a name="enter-a-product-key"></a>Wprowadzanie klucza produktu
+## <a name="enter-a-product-key"></a>Wprowadź klucz produktu
 
 1. Wybierz pozycję plik **Ustawienia konta** > , aby otworzyć okno dialogowe **Ustawienia konta** , a następnie wybierz **licencję za pomocą linku klucz produktu** .
 
@@ -68,14 +68,14 @@ Jeśli nie wprowadzisz ponownie poświadczeń, token zaczyna się nieodświeżon
 
 Jeśli Twoja subskrypcja wygasła i nie masz już uprawnień dostępu do programu Visual Studio, musisz odnowić subskrypcję lub dodać kolejne konto z subskrypcją. Aby wyświetlić więcej informacji na temat używanej licencji, przejdź do **pliku** > **Ustawienia konta** i przejrzyj informacje o licencji po prawej stronie okna dialogowego. Jeśli masz inną subskrypcję skojarzoną z innym kontem, Dodaj to konto do listy **wszystkie konta** po lewej stronie okna dialogowego, wybierając łącze **Dodaj konto** .
 
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
+## <a name="get-support"></a>Uzyskiwanie pomocy technicznej
 
 Czasami problemy są nieprawidłowe. Jeśli wystąpi problem, poniżej przedstawiono niektóre opcje pomocy technicznej:
 
 * Zgłoś problemy dotyczące produktów za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 * Znajdź odpowiedzi na pytania dotyczące subskrypcji, kont i rozliczeń w ramach [subskrypcji — często zadawane pytania](https://visualstudio.microsoft.com/subscriptions/support/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Logowanie do programu Visual Studio](../ide/signing-in-to-visual-studio.md)
 * [Porównanie wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/compare/)

@@ -1,6 +1,6 @@
 ---
 title: Opis konfiguracji kompilacji
-ms.date: 11/04/2016
+ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a76c054a71d88800bf1af225c332c9df3d2035
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269139"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027618"
 ---
 # <a name="understand-build-configurations"></a>Opis konfiguracji kompilacji
 
@@ -40,7 +40,7 @@ Konfiguracje kompilacji muszą być potrzebne do kompilowania projektów przy u�
 ![Aktywna konfiguracja](media/understanding-build-configurations/active-config.png)
 
 > [!NOTE]
-> Ten temat ma zastosowanie do programu Visual Studio w systemie Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Konfiguracje kompilacji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/configurations).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Konfiguracje kompilacji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/configurations).
 
 Konfiguracja i sterowanie platformą, w której są przechowywane skompilowane pliki wyjściowe. Zwykle, gdy program Visual Studio kompiluje projekt, dane wyjściowe są umieszczane w podfolderze projektu o nazwie z aktywną konfiguracją (na przykład *bin/debug/x86*), ale można to zmienić.
 
@@ -91,7 +91,7 @@ Program Visual Studio używa następujących kryteriów do przypisywania konfigu
 
 - Jeśli projekt obsługuje wiele platform, zostanie znaleziona lub dodana konfiguracja rozwiązania dla każdej z obsługiwanych platform. Nazwa każdej konfiguracji rozwiązania obejmuje zarówno nazwę konfiguracji projektu, jak i nazwę platformy i ma postać *\<nazwa konfiguracji projektu > \<nazwa platformy >* .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)
 - [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)

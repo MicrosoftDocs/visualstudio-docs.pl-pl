@@ -2,17 +2,17 @@
 title: Praca z wieloma kontami użytkowników
 ms.date: 07/23/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd265d24fad683e031436d7cc81fa7fa74034ddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115266"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027608"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -123,9 +123,9 @@ Aby zalogować się za pomocą przepływu kodu urządzenia:
 
    ![Ukończono logowanie w programie Visual Studio za poorednictwem przeglądarki](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
 
-1. Wróć do strony zarządzania kontami w programie Visual Studio, a nowo dodane konto zostanie wyświetlone w obszarze **wszystkie konta**. Wybierz **Zamknij**.
+1. Wróć do strony zarządzania kontami w programie Visual Studio, a nowo dodane konto zostanie wyświetlone w obszarze **wszystkie konta**. Wybierz pozycję **Zamknij**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)
 - [Zaloguj się do Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)

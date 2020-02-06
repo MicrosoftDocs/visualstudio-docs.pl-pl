@@ -9,14 +9,14 @@ ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: conceptual
 ms.workload: multiple
-ms.date: 10/13/2017
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: ce7645b8b4f71cf94d7320a0072d15b2b8083dec
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: d8aa3028a12bcfb49f2663b2bea688baf14fd7f2
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923002"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027280"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Rozwiązywanie problemów związanych z opracowywaniem zwartości w programie Visual Studio przy użyciu platformy Docker
 
@@ -26,8 +26,8 @@ Podczas pracy z narzędziami kontenera programu Visual Studio mogą wystąpić p
 
 Aby rozwiązać ten problem:
 
-1. Kliknij prawym przyciskiem myszy **Docker for Windows** w obszarze powiadomień, a następnie wybierz **ustawienia**.
-1. Wybierz **udostępnione dyski** i Udostępnij dysk systemowy, wraz z dysku, na którym znajduje się projekt.
+1. Kliknij prawym przyciskiem myszy **Docker for Windows** w obszarze powiadomień, a następnie wybierz pozycję **Ustawienia**.
+1. Wybierz pozycję **dyski udostępnione** i Udostępnij dysk systemowy wraz z dyskiem, na którym znajduje się projekt.
 
 > [!NOTE]
 > Jeśli pliki są wyświetlane udostępniony, nadal może być konieczne kliknij link "Resetuj poświadczenia..." w dolnej części okna dialogowego, aby ponownie włączyć udostępnianie woluminów. Aby kontynuować po zresetowaniu poświadczeń, może być ponowne uruchomienie programu Visual Studio.
@@ -50,7 +50,7 @@ Jedną z przyczyn może być związany z mających nieaktualne składniki debugo
 
 ## <a name="errors-specific-to-networking-when-debugging-your-application"></a>Błędy specyficzne dla sieci podczas debugowania aplikacji
 
-Spróbuj wykonywanie skryptu do pobrania z [oczyszczania kontenera hosta sieci](https://github.com/MicrosoftDocs/Virtualization-Documentation/tree/master/windows-server-container-tools/CleanupContainerHostNetworking), która będzie odświeżać składników związanych z siecią na maszynie hosta.
+Spróbuj wykonać pobieranie skryptu z [sieci hostowania kontenerów oczyszczania](https://github.com/MicrosoftDocs/Virtualization-Documentation/tree/master/windows-server-container-tools/CleanupContainerHostNetworking), co spowoduje odświeżenie składników związanych z siecią na komputerze-hoście.
 
 ## <a name="mounts-denied"></a>Instaluje odmowa
 
@@ -95,4 +95,4 @@ Kliknij przycisk **Zastosuj** , aby ponownie uruchomić platformę Docker. Te kr
 
 ## <a name="microsoftdockertools-github-repo"></a>Repozytorium GitHub Microsoft/DockerTools
 
-Aby uzyskać inne problemy wystąpią, zobacz [Microsoft/DockerTools](https://github.com/microsoft/dockertools/issues) problemów.
+Aby poznać inne problemy, zobacz temat problemy z [programem Microsoft/DockerTools](https://github.com/microsoft/dockertools/issues) .

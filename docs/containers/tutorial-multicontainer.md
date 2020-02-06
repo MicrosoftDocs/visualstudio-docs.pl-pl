@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916512"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027333"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Samouczek: Tworzenie aplikacji z obsługą kontenera przy użyciu Docker Compose
 
@@ -84,6 +84,9 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
        }
     }
    ```
+   
+    > [!NOTE]
+    > W kodzie rzeczywistym nie należy zbyć `HttpClient` po każdym żądaniu. Aby uzyskać najlepsze rozwiązania, zobacz [Używanie HttpClientFactory do implementowania odpornych żądań HTTP](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
    W przypadku platformy .NET Core 3,1 w programie Visual Studio 2019 lub nowszym szablon internetowego interfejsu API używa interfejsu API WeatherForecast, więc Usuń komentarz tego wiersza i Skomentuj wiersz dla ASP.NET 2. x.
 
@@ -189,7 +192,7 @@ Dodaj projekt do tego samego rozwiązania i Wywołaj go *MyWebAPI*. Wybierz pozy
 
 Zapoznaj się z opcjami wdrażania [kontenerów na platformie Azure](/azure/containers).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
   
 [Docker Compose](https://docs.docker.com/compose/)  
 [Narzędzia kontenera](/visualstudio/containers/)
