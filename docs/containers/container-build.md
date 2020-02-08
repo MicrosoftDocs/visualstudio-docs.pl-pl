@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916938"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027261"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Jak program Visual Studio umożliwia tworzenie aplikacji konteneryzowanych
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Wiersze w pliku dockerfile rozpoczynają się od obrazu serwera nano Server z firmy Microsoft Container Registry (mcr.microsoft.com) i tworzą pośredni obraz `base`, który uwidacznia porty 80 i 443, i ustawia katalog roboczy na `/app`.
+Linie w pliku dockerfile zaczynają się od obrazu Debian z Microsoft Container Registry (mcr.microsoft.com) i tworzą pośredni obraz `base`, który uwidacznia porty 80 i 443, i ustawia katalog roboczy na `/app`.
 
 Następnym etapem jest `build`, który pojawia się w następujący sposób:
 
@@ -64,7 +64,7 @@ Końcowy etap zostanie uruchomiony ponownie z `base`i zawiera `COPY --from=publi
 
 Jeśli chcesz skompilować poza programem Visual Studio, możesz użyć `docker build` lub `MSBuild` do kompilowania z poziomu wiersza polecenia.
 
-### <a name="docker-build"></a>docker build
+### <a name="docker-build"></a>Kompilacja platformy Docker
 
 Aby skompilować rozwiązanie z kontenerem z wiersza polecenia, można zwykle użyć `docker build <context>` polecenia dla każdego projektu w rozwiązaniu. Podajesz argument *kontekstu kompilacji* . *Kontekst kompilacji* dla pliku dockerfile to folder na komputerze lokalnym, który jest używany jako folder roboczy do generowania obrazu. Na przykład jest to folder, z którego kopiowane są pliki podczas kopiowania do kontenera.  W projektach .NET Core Użyj folderu zawierającego plik rozwiązania (. sln).  W postaci ścieżki względnej ten argument jest zwykle ".." dla pliku dockerfile w folderze projektu i pliku rozwiązania w folderze nadrzędnym.  W przypadku projektów .NET Framework, kontekst kompilacji jest folderem projektu, a nie folderem rozwiązania.
 
@@ -181,7 +181,7 @@ Program Visual Studio używa niestandardowego punktu wejścia kontenera w zależ
 |||
 |-|-|
 | **Kontenery systemu Linux** | Punkt wejścia to `tail -f /dev/null`, co jest nieskończone oczekiwanie na utrzymanie kontenera. Gdy aplikacja jest uruchamiana za pomocą debugera, jest to debuger, który jest odpowiedzialny za uruchamianie aplikacji (czyli `dotnet webapp.dll`). W przypadku uruchomienia bez debugowania narzędzie uruchamia `docker exec -i {containerId} dotnet webapp.dll`, aby uruchomić aplikację.|
-| **Kontenery Windows**| Punkt wejścia jest podobny do `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, w którym działa debuger, więc nasłuchuje połączeń. Ta sama zasada dotyczy, że debuger uruchamia aplikację, a `docker exec` polecenie podczas uruchamiania bez debugowania. W przypadku .NET Framework aplikacji sieci Web punkt wejścia jest nieco inny, gdzie `ServiceMonitor` jest dodawany do polecenia.|
+| **Kontenery systemu Windows**| Punkt wejścia jest podobny do `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus`, w którym działa debuger, więc nasłuchuje połączeń. Ta sama zasada dotyczy, że debuger uruchamia aplikację, a `docker exec` polecenie podczas uruchamiania bez debugowania. W przypadku .NET Framework aplikacji sieci Web punkt wejścia jest nieco inny, gdzie `ServiceMonitor` jest dodawany do polecenia.|
 
 Punkt wejścia kontenera można modyfikować tylko w projektach platformy Docker, a nie w projektach z pojedynczym kontenerem.
 
@@ -189,7 +189,7 @@ Punkt wejścia kontenera można modyfikować tylko w projektach platformy Docker
 
 Dowiedz się, jak dodatkowo dostosować kompilacje przez ustawienie dodatkowych właściwości programu MSBuild w plikach projektu. Zobacz [Właściwości programu MSBuild dla projektów kontenerów](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 Program [MSBuild](../msbuild/msbuild.md)
 [pliku dockerfile w kontenerach systemu Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

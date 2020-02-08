@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
+ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888630"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77071950"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testowanie jednostkowe JavaScript i TypeScript w programie Visual Studio
 
@@ -65,7 +65,7 @@ describe('Test Suite 1', function() {
 
 Jeśli nie ustawisz opcji testów jednostkowych we właściwościach projektu, musisz upewnić się, że właściwość **Framework testów** w oknie **Właściwości** jest ustawiona na poprawną strukturę testową dla plików testów jednostkowych. Jest to wykonywane automatycznie przez szablony plików testów jednostkowych.
 
-![Platforma testowa](../javascript/media/UnitTestsFrameworkMocha.png)
+![Struktury testowej](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
 > Opcje testów jednostkowych będą mieć preferencję dotyczącą ustawień poszczególnych plików.
@@ -173,3 +173,5 @@ Oprócz powyższych właściwości należy również zainstalować pakiet NuGet 
     <GenerateProgramFile>false</GenerateProgramFile>
 </PropertyGroup>
 ```
+
+Niektóre środowiska testowe mogą wymagać dodatkowych pakietów npm na potrzeby wykrywania testów. Na przykład jest to program, który wymaga npm pakietu. W razie potrzeby zapoznaj się z dokumentacją dla konkretnej struktury.
