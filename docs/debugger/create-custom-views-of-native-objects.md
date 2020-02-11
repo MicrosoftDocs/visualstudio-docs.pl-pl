@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405212"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091786"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze przy użyciu struktury Natvis
 
@@ -690,3 +690,9 @@ Każdy typ zdefiniowany w pliku *Natvis* musi jawnie zawierać wszystkie WIZUALI
 Jest to znacznie większa ilość pracy, która pozwala napisać wizualizację niestandardową niż definicja pliku Natvis XML, ale nie jest to ograniczenie dotyczące tego, co plik Natvis działa lub nie obsługuje. Wizualizacje niestandardowe mają dostęp do pełnego zestawu interfejsów API rozszerzalności debugera, które mogą wysyłać zapytania i modyfikować proces debugowanego obiektu lub komunikować się z innymi częściami programu Visual Studio.
 
  Można użyć atrybutów `Condition`, `IncludeView`i `ExcludeView` dla elementów `CustomVisualizer`.
+
+ ## <a name="limitations"></a>Ograniczenia
+
+Dostosowania Natvis współpracują z klasami i strukturami, ale nie z typedef.
+
+Natvis nie obsługuje wizualizatorów dla typów pierwotnych (na przykład `int`, `bool`) ani dla wskaźników do typów pierwotnych. W tym scenariuszu jedną z opcji jest użycie [specyfikatora formatu](../debugger/format-specifiers-in-cpp.md) odpowiedniego dla Twojego przypadku użycia. Na przykład jeśli używasz `double* mydoublearray` w kodzie, możesz użyć specyfikatora formatu tablicy w oknie **czujki** debugera, takiego jak wyrażenie `mydoublearray, [100]`, które pokazuje pierwsze 100 elementów.

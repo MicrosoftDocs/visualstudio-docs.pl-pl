@@ -10,16 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 43c739cc24d453ad4129d8cb7cc4bfbebec07aa4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573823"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091824"
 ---
 # <a name="incremental-builds"></a>Kompilacje przyrostowe
 
 Kompilacje przyrostowe to kompilacje zoptymalizowane w taki sposób, że elementy docelowe, których pliki wyjściowe mają tak samo aktualną zawartość jak pliki wejściowe, nie są wykonywane. Element docelowy może mieć zarówno atrybut `Inputs`, który wskazuje elementy oczekiwane przez element docelowy na wejściu, oraz atrybut `Outputs`, który wskazuje elementy generowane przez element docelowy na wyjściu. Program MSBuild próbuje znaleźć mapowania 1-do-1 między wartościami tych atrybutów. Jeśli istnieje mapowanie 1-do-1, MSBuild porównuje znacznik czasu każdego elementu wejściowego ze znacznikiem czasu odpowiadającego mu elementu wyjściowego. Pliki wyjściowe pozbawione mapowań 1-do-1 są porównywane ze wszystkimi plikami wejściowymi. Element uważa się za aktualny, jeśli plik wyjściowy jest nie starszy niż plik lub pliki wejściowe.
+
+> [!NOTE]
+> Gdy program MSBuild ocenia pliki wejściowe, są brane pod uwagę tylko zawartość listy w bieżącym wykonaniu. Zmiany na liście z ostatniej kompilacji nie sprawiają, że element docelowy jest nieaktualny.
 
 Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy. Ta *przyrostowa kompilacja* obiektu docelowego może znacząco poprawić szybkość kompilacji. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy, ale pomija elementy aktualne. W efekcie wszystkie elementy stają się aktualne. Ten proces jest nazywany *częściową kompilacją przyrostową*.
 

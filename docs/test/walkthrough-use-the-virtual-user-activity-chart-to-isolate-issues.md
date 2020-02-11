@@ -7,20 +7,20 @@ helpviewer_keywords:
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebd779ed2c78f48c75d29297fba862ffda142e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659638"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091850"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: używanie wykresu aktywności wirtualnego użytkownika w celu wyizolowania problemów
 
 W tym instruktażu dowiesz się, jak za pomocą wykresu aktywności wirtualnego użytkownika wyizolować błędy, które wystąpiły dla indywidualnych użytkowników wirtualnych, którzy uruchomili test obciążenia.
 
-Wykres aktywności wirtualnego użytkownika umożliwia wizualizację aktywności wirtualnego użytkownika, która jest skojarzona z testem obciążenia. Każdy wiersz na wykresie reprezentuje pojedynczego użytkownika wirtualnego. Wykres aktywność użytkownika wirtualnego pokazuje, jak dokładnie każdy użytkownik wirtualny był wykonywany podczas testu. Dzięki temu można izolować problemy z wydajnością, sprawdzając wzorce aktywności użytkownika, wzorce obciążenia, skorelować Niepowodzenie lub powolne testy, a także żądania z innymi wirtualnymi działaniami użytkowników. Wykres aktywności wirtualnego użytkownika jest dostępny dopiero po zakończeniu ładowania po rozpoczęciu pracy.
+Wykres aktywności wirtualnego użytkownika umożliwia wizualizację aktywności wirtualnego użytkownika, która jest skojarzona z testem obciążenia. Każdy wiersz na wykresie reprezentuje poszczególnych użytkowników wirtualnych. Wykres aktywność użytkownika wirtualnego pokazuje, jak dokładnie każdy użytkownik wirtualny był wykonywany podczas testu. Dzięki temu można izolować problemy z wydajnością, sprawdzając wzorce aktywności użytkownika, wzorce obciążenia, skorelować Niepowodzenie lub powolne testy, a także żądania z innymi wirtualnymi działaniami użytkowników. Wykres aktywności wirtualnego użytkownika jest dostępny dopiero po zakończeniu ładowania po rozpoczęciu pracy.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -87,13 +87,13 @@ Po uruchomieniu testu obciążenia i zebraniu danych o aktywności użytkownika 
 
     - **Wynikiem**
 
-    - **NFS**
+    - **Sieć**
 
     - **Godzina rozpoczęcia**
 
     - **Trwania**
 
-    - **Odczynnik**
+    - **Agent**
 
     - **Dziennik testu**
 
