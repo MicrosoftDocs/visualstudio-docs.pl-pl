@@ -1,6 +1,6 @@
 ---
-title: Refaktoryzacje statycznej funkcji lokalnych
-ms.date: 09/28/2019
+title: Opcje statycznego refaktoryzacji funkcji lokalnych
+ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
 ms.author: midumont
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: adbf84b9ae7566cd5e58a7c757ce09a37252b754
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74782280"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144837"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>Statyczne refaktoryzacje funkcji lokalnych i szybkie akcje
 
@@ -24,9 +24,9 @@ W tym artykule przedstawiono dwie funkcje produktywności związane ze statyczny
 
 ## <a name="make-local-function-static"></a>Ustaw statyczną funkcję lokalną
 
-To Refaktoryzacja dotyczy:
+Ta Refaktoryzacja mają zastosowanie do:
 
-- Język C#
+- C#
 
 **Co:** Sprawia, że funkcja lokalna static i passuje zmienne zdefiniowane poza funkcją do deklaracji i wywołań funkcji.
 
@@ -34,7 +34,7 @@ To Refaktoryzacja dotyczy:
 
 **Dlaczego:** Statyczne funkcje lokalne zwiększają czytelność: wiedzą, że konkretny kod jest izolowany, ułatwia zrozumienie, ponowne odczytywanie i używanie. Statyczne funkcje lokalne zapewniają również określanie zakresu, aby zapobiec zanieczyszczaniu klasy za pomocą funkcji statycznej, która jest wywoływana tylko w jednej metodzie.
 
-### <a name="how-to"></a>Instrukcje
+### <a name="how-to"></a>Porady
 
 1. Umieść karetkę na nazwie funkcji lokalnej.
 
@@ -48,7 +48,7 @@ To Refaktoryzacja dotyczy:
 
 Ta szybka akcja dotyczy:
 
-- Język C#
+- C#
 
 **Co:** Przekazuje zmienną jawnie do lokalnej funkcji statycznej.
 
@@ -56,7 +56,7 @@ Ta szybka akcja dotyczy:
 
 **Dlaczego:** Używanie statycznych funkcji lokalnych zapewnia użytkownikom wyjaśnienie, ponieważ wiedzą, że mogą być deklarowane i wywoływane tylko w określonym kontekście programu. Zapewnia elastyczność definiowania zmiennych poza tym kontekstem, ale nadal może przekazać je jako argumenty do statycznej funkcji lokalnej.
 
-### <a name="how-to"></a>Instrukcje
+### <a name="how-to"></a>Porady
 
 1. Umieść karetkę na zmiennej, w której jest używana w statycznej funkcji lokalnej.
 
@@ -66,6 +66,6 @@ Ta szybka akcja dotyczy:
 
 3. Wybierz pozycję **Przekaż jawnie zmienną do lokalnej funkcji statycznej**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

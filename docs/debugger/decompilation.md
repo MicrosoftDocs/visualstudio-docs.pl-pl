@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091934"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144787"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generuj kod źródłowy z zestawów .NET podczas debugowania
 
@@ -80,8 +80,27 @@ Podczas debugowania kodu, który został dekompilowany z zestawu, który został
 - Punkty przerwania nie zawsze są powiązane z pasującą lokalizacją pochodzenia.
 - Krokowe nie zawsze należy do poprawnej lokalizacji.
 - Zmienne lokalne mogą nie mieć dokładnych nazw.
+- Niektóre zmienne mogą nie być dostępne do oceny.
 
 Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [IChsarpCompiler. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="decompilation-reliability"></a>Niezawodność dekompilacji
+
+Stosunkowo niewielki procent prób dekompilacji może skutkować niepowodzeniem. Jest to spowodowane błędem odwołania o wartości null punktu sekwencji w ILSpy.  Wyeliminowano błąd, przechwytując te problemy i łagodnie kończy się niepowodzeniem podczas próby dekompilacji.
+
+Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [IChsarpCompiler. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="limitations-with-async-code"></a>Ograniczenia związane z kodem asynchronicznym
+
+Wyniki z dekompilowania modułów z wzorcem kodu Async/await mogą być niekompletne lub w całości kończyć się niepowodzeniem. ILSpy implementacja Async/await i Yield State-Machines jest tylko częściowo zaimplementowana. 
+
+Więcej szczegółów można znaleźć w temacie problem z usługą plików [PDB](https://github.com/icsharpcode/ILSpy/issues/1422):.
+
+### <a name="just-my-code"></a>Tylko mój kod
+
+Ustawienia [tylko mój kod (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) pozwalają programowi Visual Studio na przechodzenie przez system, strukturę, bibliotekę i inne wywołania niebędące użytkownikami. Podczas sesji debugowania w oknie **moduły** są wyświetlane moduły kodu, które debuger jest traktowany jako mój kod (kod użytkownika).
+
+Dekompilacja modułów zoptymalizowanych lub wydań generuje kod niebędący użytkownikiem. Jeśli debuger przerwie w nieskompilowanym kodzie nieużywanym przez użytkownika, na przykład okno **nie** zostanie wyświetlone. Aby wyłączyć Tylko mój kod, przejdź do opcji **narzędzia** > **Opcje** (lub **Debuguj** > **Opcje**) > **debugowanie** > **Ogólne**, a następnie usuń zaznaczenie opcji **Włącz tylko mój kod**.
 
 ### <a name="extracted-sources"></a>Wyodrębnione źródła
 

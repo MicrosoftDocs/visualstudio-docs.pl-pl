@@ -2,7 +2,7 @@
 title: Modyfikowanie programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak modyfikowanie programu Visual Studio krok po kroku.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922878"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125354"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modyfikowanie programu Visual Studio przez dodawanie lub usuwanie obciążeń i składników
 
@@ -54,19 +54,19 @@ Poniżej przedstawiono sposób.
 
 1. Znajdowanie Instalatora programu Visual Studio na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10, wybierz pozycję **Start**, a następnie przewiń do list **V**, w którym znajduje się w **Instalatora programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
 
      ![Instalator programu Visual Studio](media/locate-the-visual-studio-installer.png "Lokalizowanie Instalatora Microsoft Visual Studio")
 
      >[!TIP]
-     >Na niektórych komputerach Instalatora programu Visual Studio może zostać wyświetlony w obszarze list **"M"** jako **Instalator programu Microsoft Visual Studio**.<br/><br/> Alternatywnie można znaleźć Instalatora programu Visual Studio w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     >Na niektórych komputerach Instalator programu Visual Studio mogą być wyświetlane pod literą **"M"** jako **Instalator Microsoft Visual Studio**.<br/><br/> Alternatywnie można znaleźć Instalator programu Visual Studio w następującej lokalizacji: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. Otwórz instalatora, a następnie wybierz **Modyfikuj**.
 
      ![Uruchamianie lub modyfikowanie programu Visual Studio](media/modify-visual-studio.png "Modyfikuj program Visual Studio 2017")
 
      > [!IMPORTANT]
-     > Jeśli masz oczekująca aktualizacja, przycisk Modyfikuj znajduje się w innym miejscu. Dzięki temu można zmodyfikować programu Visual Studio bez aktualizacji, należy wybrać w tym celu. Kliknij przycisk **więcej**, a następnie wybierz **Modyfikuj**.
+     > Jeśli masz oczekująca aktualizacja, przycisk Modyfikuj znajduje się w innym miejscu. Dzięki temu można zmodyfikować programu Visual Studio bez aktualizacji, należy wybrać w tym celu. Kliknij pozycję **więcej**, a następnie wybierz polecenie **Modyfikuj**.
      >
      > ![Aktualizowanie lub modyfikowanie programu Visual Studio](media/modify-or-update-visual-studio.png "Aktualizowanie lub modyfikowanie programu Visual Studio 2017")
 
@@ -76,7 +76,7 @@ Poniżej przedstawiono sposób.
 
 1. Znajdowanie Instalatora programu Visual Studio na komputerze.
 
-     Na przykład na komputerze z systemem Windows 10, wybierz pozycję **Start**, a następnie przewiń do list **V**, w którym znajduje się w **Instalatora programu Visual Studio**.
+     Na przykład na komputerze z systemem Windows 10 Wybierz pozycję **Start**, a następnie przewiń do litery **V**, gdzie jest ona wyświetlana jako **Instalator programu Visual Studio**.
 
      ![Otwórz Instalator programu Visual Studio z systemu Windows](media/vs-2019/vs-installer-windows-start.png "Otwórz Instalator programu Visual Studio")
 
@@ -124,6 +124,9 @@ Poniżej przedstawiono sposób.
 
  Obciążenia zawierają funkcje potrzebne dla używanego języka programowania lub platformy. Zmodyfikować programu Visual Studio, dzięki czemu obsługuje pracę, którą chcesz zrobić, jeśli chcesz to zrobić za pomocą obciążeń.
 
+ > [!TIP]
+>Aby uzyskać więcej informacji na temat narzędzi i pakietów składników potrzebnych do programowania, zobacz [obciążenia programu Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
+
 1. W Instalator programu Visual Studio wybierz kartę **obciążenia** , a następnie wybierz lub usuń zaznaczenie żądanych obciążeń.
 
     ![Okno dialogowe Instalatora programu Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Wybieranie obciążenia w programie Visual Studio 2019")
@@ -153,11 +156,11 @@ Domyślnie Instalator jest zgodny z językiem systemu operacyjnego, gdy jest uru
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Lista identyfikatorów składników & obciążeń programu Visual Studio](workload-and-component-ids.md)
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aktualizowanie programu Visual Studio w punkcie odniesienia obsługi](update-servicing-baseline.md)
-* [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)

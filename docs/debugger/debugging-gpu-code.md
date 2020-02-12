@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911573"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144795"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa debugowania GPU w programie Visual Studio obejmuje wykrywanie wyścigu, uruchamianie procesów i ich dołączanie oraz integrację z oknami debugowania.
 
 ## <a name="supported-platforms"></a>Obsługiwane platformy
- Debugowanie jest obsługiwane w [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]i [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Na potrzeby debugowania na emulatorze oprogramowania jest wymagane [!INCLUDE[win8](../debugger/includes/win8_md.md)]lub [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Na potrzeby debugowania sprzętu należy zainstalować sterowniki karty graficznej. Nie wszyscy dostawcy sprzętu implementują wszystkie funkcje debugera. Zapoznaj się z dokumentacją dostawcy, aby uzyskać ograniczenia.
+ Debugowanie jest obsługiwane w [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10, [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] i Windows Server 2016. W przypadku debugowania na emulatorze oprogramowania, [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10 lub [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], wymagany jest system Windows Server 2016. Na potrzeby debugowania sprzętu należy zainstalować sterowniki karty graficznej. Nie wszyscy dostawcy sprzętu implementują wszystkie funkcje debugera. Zapoznaj się z dokumentacją dostawcy, aby uzyskać ograniczenia.
 
 > [!NOTE]
 > Niezależni dostawcy sprzętu, którzy chcą obsługiwać debugowanie procesora GPU w programie Visual Studio, muszą utworzyć bibliotekę DLL, która implementuje interfejs VSD3DDebug i jest przeznaczony dla własnych sterowników.
@@ -65,7 +65,7 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
 ### <a name="specifying-an-accelerator"></a>Określanie akceleratora
- Punkty przerwania w kodzie GPU są osiągane tylko wtedy, gdy kod jest uruchomiony w akceleratorze [akceleratora::d irect3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (ref). Jeśli nie określisz akceleratora w kodzie, akcelerator REF jest automatycznie wybierany jako **Typ akceleratora debugowania** we właściwościach projektu. Jeśli kod jawnie wybiera akcelerator, akcelerator REF nie będzie używany podczas debugowania, a punkty przerwania nie będą trafiać, chyba że sprzęt procesora GPU ma obsługę debugowania. Można to naprawić, pisząc swój kod, tak aby używał akceleratora REF podczas debugowania. Aby uzyskać więcej informacji, zobacz właściwości projektu i [Używanie akceleratora i accelerator_view obiektów](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) oraz [ustawień projektu C++ dla konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Punkty przerwania w kodzie GPU są osiągane tylko wtedy, gdy kod jest uruchomiony na akceleratorze [::d irect3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (ref). Jeśli nie określisz akceleratora w kodzie, akcelerator REF jest automatycznie wybierany jako **Typ akceleratora debugowania** we właściwościach projektu. Jeśli kod jawnie wybiera akcelerator, akcelerator REF nie będzie używany podczas debugowania, a punkty przerwania nie będą trafiać, chyba że sprzęt procesora GPU ma obsługę debugowania. Można to naprawić, pisząc swój kod, tak aby używał akceleratora REF podczas debugowania. Aby uzyskać więcej informacji, zobacz właściwości projektu i [Używanie akceleratora i accelerator_view obiektów](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) oraz [ustawień projektu C++ dla konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Warunkowe punkty przerwania
  Warunkowe punkty przerwania w kodzie GPU są obsługiwane, ale nie każde wyrażenie może być oceniane na urządzeniu. Gdy nie można obliczyć wyrażenia na urządzeniu, jest ono oceniane w debugerze. Debuger może działać wolniej niż urządzenie.
@@ -79,7 +79,7 @@ Można debugować C++ kod, który jest uruchomiony w procesorze GPU. Obsługa de
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Błąd: wykrywanie limitu czasu i odzyskiwanie (TDR) musi być wyłączone w lokacji zdalnej.
  Istnieje możliwość, że C++ obliczenia amp przekroczą domyślny interwał czasu ustawiony przez proces wykrywania i odzyskiwania limitu czasu systemu Windows. W takim przypadku Obliczanie zostanie anulowane, a dane zostaną utracone. Aby uzyskać więcej informacji, zobacz temat [Obsługa C++ TDRs w amp](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: debugowanie aplikacji C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Rozpocznij debugowanie procesora GPU w programie Visual Studio](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587280"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144774"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Przegląd analizatorów kodu źródłowego
 
@@ -28,7 +28,7 @@ ms.locfileid: "75587280"
 - Możesz zainstalować dodatkowe analizatory jako pakiet NuGet lub rozszerzenie programu Visual Studio. Na przykład:
 
   - [Analizatory FxCop](../code-quality/install-fxcop-analyzers.md), zalecane przez firmę Microsoft analizatory jakości kodu
-  - [Analizatory](https://www.nuget.org/packages/SonarAnalyzer.CSharp/) stron trzecich, takie jak [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [przeanaliz XUnit](https://www.nuget.org/packages/xunit.analyzers/)i Sonar
+  - [Analizatory](https://www.nuget.org/packages/SonarAnalyzer.CSharp/) stron trzecich, takie jak [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [przeanaliz XUnit](https://www.nuget.org/packages/xunit.analyzers/)i Sonar
 
 Jeśli wykryto naruszenia reguł przez analizator, są one raportowane w edytorze kodu (jako *zygzak w kodzie* błędu) i w oknie Lista błędów.
 
@@ -93,7 +93,7 @@ Nie można skonfigurować ważności reguł z analizatorów, które zostały zai
 > [!div class="nextstepaction"]
 > [Korzystanie z analizatorów kodu w programie Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analizatory — często zadawane pytania](analyzers-faq.md)
 - [Napisz własny analizator kodu](../extensibility/getting-started-with-roslyn-analyzers.md)

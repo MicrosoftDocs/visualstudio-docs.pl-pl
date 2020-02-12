@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406721"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125367"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Co nowego w programie Visual Studio 2019
 
@@ -39,7 +39,7 @@ Oto podsumowanie o nowościach:
 
 Aby zapoznać się z pełną listą wszystkiego, co nowego w tej wersji, zobacz [Informacje o wersji](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Opracuj
+## <a name="develop"></a>Programowanie
 
 Obejrzyj poniższe wideo, aby dowiedzieć się więcej o tym, jak zaoszczędzić czas dzięki nowym funkcjom. <br><br>*Długość wideo: 3,00 minut*
 
@@ -120,7 +120,7 @@ Obejrzyj poniższe wideo, aby dowiedzieć się więcej o tym, jak zespół może
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>Cloud-pierwszy przepływ pracy
+### <a name="git-first-workflow"></a>Git — pierwszy przepływ pracy
 
 Informacje, które należy zauważyć po otwarciu programu Visual Studio 2019, jest nowym oknem startowym.
 
@@ -180,7 +180,7 @@ Możesz również sformatować sposób wyświetlania wartości w oknach czujki, 
 
 Aby uzyskać więcej informacji, zobacz [ulepszony w programie Visual Studio 2019: wyszukiwanie obiektów i właściwości w wpisie w blogu "Watch, autostarts" i lokalnych](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) .
 
-### <a name="snapshot-debugger"></a>Rozszerzenie Snapshot Debugger
+### <a name="snapshot-debugger"></a>Debuger migawek
 
 Utwórz migawkę wykonywania aplikacji w chmurze, aby zobaczyć dokładnie, co się dzieje. (Ta funkcja jest dostępna tylko w Visual Studio Enterprise.)
 
@@ -210,7 +210,7 @@ Często aktualizujemy program Visual Studio 2019 dzięki nowym funkcjom, które 
 
 Chcesz dowiedzieć się więcej na temat tego, co jeszcze znajduje się w programie Works dla programu Visual Studio 2019? Zapoznaj się z [planem programu Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 
-## <a name="give-us-feedback"></a>Prześlij nam swoją opinię
+## <a name="give-us-feedback"></a>Przekaż nam swoją opinię
 
 Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ traktujemy opinie naszych użytkowników bardzo poważnie. To wszystko, co robimy.
 
@@ -218,7 +218,7 @@ Dlaczego warto wysłać opinię do zespołu usługi Visual Studio? Ponieważ tra
 
 * W przypadku wystąpienia zawieszenia, awarii lub innego problemu z wydajnością można łatwo udostępnić Odtwórz kroki i pliki pomocnicze za pomocą narzędzia [Zgłoś problem](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Informacje o wersji programu Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Co nowego w zestawie SDK programu Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
