@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114403"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173090"
 ---
 # <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
 
@@ -38,7 +38,7 @@ Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.P
 
 **Informacje o zestawie**&mdash;wybranie tego przycisku powoduje wyświetlenie okna [dialogowego Informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifest pakietu**&mdash;wybranie tego przycisku powoduje otwarcie projektanta manifestu. Można również uzyskać dostęp do projektanta manifestu, wybierając plik _Package. appxmanifest_ w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Configure a Package with manifest Designer](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Manifest pakietu**&mdash;wybranie tego przycisku powoduje otwarcie projektanta manifestu. Można również uzyskać dostęp do projektanta manifestu, wybierając plik _Package. appxmanifest_ w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Configure a Package with manifest Designer](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Sekcja określania wartości docelowej
 
