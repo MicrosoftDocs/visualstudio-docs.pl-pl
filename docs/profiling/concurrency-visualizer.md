@@ -15,18 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912027"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192406"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 
 > [!NOTE]
 > Wizualizator współbieżności jest opcjonalnym rozszerzeniem programu Visual Studio. Pobierz narzędzie Concurrency Visualizer i narzędzia kolekcji Concurrency Visualizer z następujących linków:
 >
+> - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview) .
 > - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) .
 > - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015) .
 > - Pobierz [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
@@ -53,7 +54,7 @@ Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla syst
 |[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|Opisuje sposób Instrumentacji kodu źródłowego do wyświetlania dodatkowych informacji w wizualizatorze współbieżności.|
 |[Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Opisuje, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd. exe) do zbierania i przetwarzania śladów na maszynach, które nie mają programu Visual Studio.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

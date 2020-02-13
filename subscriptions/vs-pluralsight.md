@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74707000"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192419"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści z szkolenia Pluralsight w subskrypcjach programu Visual Studio
 
@@ -31,7 +31,7 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
    >
    > **"Uwaga: Jeśli wcześniej aktywowano inną ofertę Pluralsight w ramach subskrypcji programu Visual Studio, ten kod może nie pozwalać na utworzenie nowego konta Pluralsight".**
 
-2. Otrzymasz powiadomienie o pomyślnym pobraniu kodu kuponu.  Kliknij przycisk **Aktywuj**.
+2. Otrzymasz powiadomienie o pomyślnym pobraniu kodu kuponu.  Kliknij pozycję **Aktywuj**.
 
 3. Nastąpi przekierowanie do strony Pluralsight, która jest dostępna w ramach subskrypcji programu Visual Studio.
    - Podaj informacje kontaktowe wymagane w formularzu
@@ -50,20 +50,20 @@ W poniższej tabeli szczegółowo opisano, jakie korzyści z subskrypcji Plurals
 
 7. Wprowadź nazwę użytkownika podaną w powitalnej wiadomości e-mail, a właśnie utworzone hasło, a następnie kliknij przycisk **Zaloguj**.
 
-8. To wszystko!  Teraz możesz zacząć uczenie się z tysiącami kursów Pluralsight!
+8. Gotowe.  Teraz możesz zacząć uczenie się z tysiącami kursów Pluralsight!
 
 ## <a name="eligibility"></a>Kryteria
 
 |                          Poziom subskrypcji                          |     Kanały      |    Korzyść    |   Odnawialny?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (standardowa)           | LICENCJONOWANie, Azure, sprzedaż detaliczna |   6 miesięcy    | Tak<sup>2</sup> |
+|          Visual Studio Enterprise (standardowa)           | VL, Azure, Retail |   6 miesięcy    | Tak<sup>2</sup> |
 |          Visual Studio Enterprise z usługą GitHub Enterprise          | Licencja  |   6 miesięcy    | Tak<sup>2</sup> |
-|         Visual Studio Professional (standardowa)          | LICENCJONOWANie, Azure, sprzedaż detaliczna |   3 miesiące    | Tak<sup>2</sup> |
+|         Visual Studio Professional (standardowa)          | VL, Azure, Retail |   3 miesiące    | Tak<sup>2</sup> |
 |         Visual Studio Professional z usługą GitHub Enterprise          | Licencja  |   3 miesiące    | Tak<sup>2</sup> |
-|              Visual Studio Test Professional (standardowa)              |    LICENCJONOWANie detaliczne     |   3 miesiące    | Tak<sup>2</sup>  |
-|                      Platformy MSDN (standardowa)                       |    LICENCJONOWANie detaliczne     |   3 miesiące    | Tak<sup>2</sup>  |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       POTRĄCON       |
-|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       POTRĄCON       |
+|              Visual Studio Test Professional (standardowa)              |    LICENCJONOWANie detaliczne     |   Niedostępne    | Nie dotyczy  |
+|                      Platformy MSDN (standardowa)                       |    LICENCJONOWANie detaliczne     |   Niedostępne    | Nie dotyczy  |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) |       Azure       | Niedostępne |       Nie dotyczy       |
+|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Niedostępne |       Nie dotyczy       |
 ||
 
 <sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), programu Visual Studio Industry partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD), Microsoft Partner Network (MPN), pełnego etatu.*
