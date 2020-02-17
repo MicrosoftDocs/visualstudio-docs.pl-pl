@@ -3,17 +3,17 @@ title: Jak używać platformy Google Test dla języka C++
 description: Użyj Google Test, aby C++ utworzyć testy jednostkowe w programie Visual Studio.
 ms.date: 05/06/2017
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+author: corob-msft
+ms.openlocfilehash: 31078b060c94f3253232d22681a1a5dae47e03b6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926753"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279295"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak używać platformy Google Test dla języka C++ w programie Visual Studio
 
@@ -27,7 +27,7 @@ W programie Visual Studio 2017 i nowszych Google test jest zintegrowana z progra
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
 2. Ustaw **Język** na **C++** i wpisz **test** w polu wyszukiwania. Z listy wyników wybierz pozycję **projekt Google test**.
-3. Nazwij projekt testowy, a następnie kliknij przycisk **OK**.
+3. Nadaj projektowi testowemu nazwę i kliknij przycisk **OK**.
 
 ![Nowy projekt Google Test](media/vs-2019/cpp-gtest-new-project-vs2019.png)
 
@@ -38,8 +38,8 @@ W programie Visual Studio 2017 i nowszych Google test jest zintegrowana z progra
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Dodawanie projektu Google Test w programie Visual Studio 2017
 
 1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł rozwiązanie i wybierz polecenie **Dodaj** > **Nowy projekt**.
-2. W lewym okienku wybierz pozycję > **test** **wizualny C++**  , a następnie wybierz **Google test projekt** w środkowym okienku.
-3. Nazwij projekt testowy, a następnie kliknij przycisk **OK**.
+2. W lewym okienku wybierz pozycję **Visual C++**  > **test** , a następnie wybierz pozycję **Google test Project** w środkowym okienku.
+3. Nadaj projektowi testowemu nazwę i kliknij przycisk **OK**.
 
 ![Nowy projekt Google Test](media/cpp-gtest-new-project.png)
 
@@ -47,26 +47,26 @@ W programie Visual Studio 2017 i nowszych Google test jest zintegrowana z progra
 
 ## <a name="configure-the-test-project"></a>Konfigurowanie projektu testowego
 
-W **przetestować konfigurację projektu** wyświetlonym oknie dialogowym możesz wybrać projekt, którą chcesz przetestować. Po wybraniu projektu, Visual Studio dodaje odwołanie do wybranego projektu. Jeśli wybierzesz opcję Brak projektu, musisz ręcznie dodać odwołania do projektów, które mają zostać przetestowane. Wybierając między statyczne i dynamiczne łączenie plików binarnych platformy Google Test zagadnienia są takie same jak program w języku C++. Aby uzyskać więcej informacji, zobacz [biblioteki dll w programie Visual C++](/cpp/build/dlls-in-visual-cpp).
+W wyświetlonym oknie dialogowym **Konfiguracja projektu testowego** można wybrać projekt do przetestowania. Po wybraniu projektu, Visual Studio dodaje odwołanie do wybranego projektu. Jeśli wybierzesz opcję Brak projektu, musisz ręcznie dodać odwołania do projektów, które mają zostać przetestowane. Wybierając między statyczne i dynamiczne łączenie plików binarnych platformy Google Test zagadnienia są takie same jak program w języku C++. Aby uzyskać więcej informacji, zobacz [biblioteki DLL C++w wizualizacji ](/cpp/build/dlls-in-visual-cpp).
 
 ![Konfigurowanie projektu platformy Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Ustawianie opcji dodatkowych
 
-W menu głównym wybierz **narzędzia** > **opcje** > **rozszerzenia Test Adapter for Google Test** można ustawić dodatkowe opcje. Zobacz dokumentację platformy Google Test, aby uzyskać więcej informacji o tych ustawieniach.
+Z menu głównego wybierz kolejno pozycje **narzędzia** > **Opcje** > **test adapter for Google test** , aby ustawić dodatkowe opcje. Zobacz dokumentację platformy Google Test, aby uzyskać więcej informacji o tych ustawieniach.
 
 ![Ustawienia projektu testowego Google](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Dodaj dyrektywy #include
 
-W teście *.cpp* Dodaj dowolne wymagane `#include` dyrektywy, aby uwidocznić typy i funkcje programu kod testu. Zazwyczaj program jest góry o jeden poziom w hierarchii folderów. Jeśli wpiszesz `#include "../"` okno technologii IntelliSense będą wyświetlane i umożliwiają wybór pełną ścieżkę do pliku nagłówka.
+W pliku test *. cpp* Dodaj wszelkie potrzebne dyrektywy `#include`, aby zapewnić, że typy i funkcje programu mają być widoczne dla kodu testu. Zazwyczaj program jest góry o jeden poziom w hierarchii folderów. Po wpisaniu `#include "../"` zostanie wyświetlone okno IntelliSense i umożliwi wybranie pełnej ścieżki do pliku nagłówkowego.
 
 ![Dodaj # dyrektywy include](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>Pisanie i Uruchamianie testów
 
-Teraz można przystąpić do pisania i uruchamiania testów Google. Zobacz [podstawy platformy Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) uzyskać informacji na temat makra testu. Zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md) informacje odnajdywania i uruchamiania i grupowanie testów przy użyciu **Eksplorator testów**.
+Teraz można przystąpić do pisania i uruchamiania testów Google. Zobacz Podręcznik [Google test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) , aby uzyskać informacje na temat makr testowych. Zobacz [Uruchamianie testów jednostkowych za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md) , aby uzyskać informacje na temat odnajdywania, uruchamiania i grupowania testów przy użyciu programu **Test Explorer**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-[Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
+[Zapisz testy jednostkowe dla C/C++](writing-unit-tests-for-c-cpp.md)

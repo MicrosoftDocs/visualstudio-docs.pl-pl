@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do testów jednostkowych
-ms.date: 04/01/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,33 +9,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72ab0a6664740f2d772d79f9c77fddfbc12fb82f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596479"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279331"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
 Za pomocą programu Visual Studio można definiować i uruchamiać testy jednostkowe, aby zachować kondycję kodu, zapewnić pokrycie kodu i znajdować błędy i usterki przed klientami. Regularnie uruchamiaj testy jednostkowe, aby upewnić się, że kod działa prawidłowo.
 
-## <a name="create-unit-tests"></a>Tworzenie testów jednostkowych
+## <a name="create-unit-tests"></a>Utwórz testy jednostkowe
 
 W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
 
 1. Otwórz projekt, który chcesz przetestować w programie Visual Studio.
 
-   W celach demonstrujących przykładowy test jednostkowy ten artykuł służy do testowania prostego projektu "Hello world". Przykładowy kod dla takiego projektu jest następujący:
+   W celach demonstrujących przykładowy test jednostkowy ten artykuł służy do testowania prostego projektu "Hello world" o nazwie **HelloWorldCore**. Przykładowy kod dla takiego projektu jest następujący:
 
    ```csharp
-   public class Program
-   {
-       public static void Main()
-       {
-           Console.WriteLine("Hello World!");
-       }
-   }
+   namespace HelloWorldCore
+
+      public class Program
+      {
+         public static void Main()
+         {
+            Console.WriteLine("Hello World!");
+         }
+      }
    ```
 
 1. W **Eksplorator rozwiązań**wybierz węzeł rozwiązania. Następnie z górnego paska menu wybierz pozycję **plik** > **Dodaj** > **Nowy projekt**.
@@ -70,14 +72,48 @@ W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
 
 1. Dodaj kod do metody test jednostkowy.
 
-   ![Dodawanie kodu do metody testów jednostkowych w programie Visual Studio](media/vs-2019/unit-test-method.png)
+   Na przykład w przypadku projektu testowego MSTest lub NUnit można użyć poniższego kodu.
+
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class UnitTest1
+      {
+         private const string Expected = "Hello World!";
+         [TestMethod]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
 
 > [!TIP]
 > Aby zapoznać się z bardziej szczegółowym przewodnikiem tworzenia testów jednostkowych, zobacz [Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Uruchamianie testów jednostkowych
 
-1. Otwórz [Eksploratora testów](../test/run-unit-tests-with-test-explorer.md) , wybierając kolejno pozycje **testuj** > **Windows** > **Eksplorator testów** z górnego paska menu.
+1. Otwórz [Eksploratora testów](../test/run-unit-tests-with-test-explorer.md).
+
+   ::: moniker range=">=vs-2019"
+   Aby otworzyć Eksploratora testów, wybierz polecenie **testuj** > **Eksploratorze testów** z górnego paska menu.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Aby otworzyć Eksploratora testów, wybierz polecenie **testuj** > **Windows** > **Eksplorator testów** z górnego paska menu.
+   ::: moniker-end
 
 1. Uruchom testy jednostkowe, klikając pozycję **Uruchom wszystkie**.
 
@@ -174,9 +210,9 @@ Aby utworzyć testy jednostkowe używające [nunit](https://nunit.org/):
 
 6. Uruchom test z **Eksploratora testów** lub klikając prawym przyciskiem myszy kod testu i wybierając polecenie **Uruchom testy**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-* [Przewodnik: Tworzenie i Uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Przewodnik: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Polecenie Utwórz testy jednostkowe](create-unit-tests-menu.md)
 * [Generuj testy za pomocą IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Uruchom testy za pomocą Eksploratora testów](run-unit-tests-with-test-explorer.md)

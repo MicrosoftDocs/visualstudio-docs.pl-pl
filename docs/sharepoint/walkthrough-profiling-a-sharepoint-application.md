@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189122"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277647"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Przewodnik: Profilowanie aplikacji SharePoint
   W tym instruktażu pokazano, jak za pomocą narzędzi profilowania w programie Visual Studio zoptymalizować wydajność aplikacji SharePoint. Przykładowa aplikacja jest odbiorcą zdarzeń funkcji programu SharePoint, który zawiera pętlę bezczynności, która obniża wydajność odbiorcy zdarzeń funkcji. Program Visual Studio profiler umożliwia znalezienie i wyeliminowanie najbardziej kosztownego (najwolniejszego wykonania) części projektu, zwanej również *ścieżką gorącą*.
 
  W tym instruktażu przedstawiono następujące zadania:
 
-- [Addg funkcję i odbiorcę zdarzeń funkcji](#add-a-feature-and-feature-event-receiver).
+- [Dodaj funkcję i odbiorcę zdarzeń funkcji](#add-a-feature-and-feature-event-receiver).
 
 - [Skonfiguruj i Wdróż aplikację programu SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -42,14 +42,14 @@ ms.locfileid: "73189122"
 
 - Obsługiwane wersje systemu Microsoft Windows i programu SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].,
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Tworzenie projektu programu SharePoint
  Najpierw utwórz projekt programu SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint
 
-1. Na pasku menu wybierz kolejno opcje **plik**  > **Nowy**  > **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
+1. Na pasku menu wybierz kolejno opcje **plik** > **Nowy** > **projekt** , aby wyświetlić okno dialogowe **Nowy projekt** .
 
 2. Rozwiń węzeł **SharePoint** w obszarze **Wizualizacja C#**  lub **Visual Basic**, a następnie wybierz węzeł **2010** .
 
@@ -272,8 +272,7 @@ ms.locfileid: "73189122"
 
      Funkcja powinna aktywować znacznie szybciej, gdy wywołanie do pętli bezczynności zostało wyeliminowane. Przykładowy raport profilowania powinien odzwierciedlać ten sposób.
 
-## <a name="see-also"></a>Zobacz także
-- [Eksplorator wydajności](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Zobacz też
 - [Sesja wydajności — omówienie](../profiling/performance-session-overview.md)
 - [Profilowanie wydajności — przewodnik dla początkujących](../profiling/beginners-guide-to-performance-profiling.md)
 - [Znajdowanie wąskich gardeł aplikacji za pomocą programu Visual Studio profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

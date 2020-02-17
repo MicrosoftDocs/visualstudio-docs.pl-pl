@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275489"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektu MSBuild
 W poniższej tabeli wymieniono często używane właściwości, które są zdefiniowane w plikach projektu programu Visual Studio lub zawarte w plikach *. targets* udostępnianych przez program MSBuild.
@@ -43,8 +43,8 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | AssemblySearchPaths | Lista lokalizacji do przeszukania podczas rozpoznawania zestawu odwołania w czasie kompilacji. Kolejność, w jakiej ścieżki pojawiają się na tej liście, ma znaczenie, ponieważ ścieżki wymienione wcześniej mają pierwszeństwo przed późniejszymi wpisami. |
 | AssemblyName | Nazwa końcowego zestawu wyjściowego po skompilowaniu projektu. |
 | BaseAddress | Określa adres podstawowy głównego zestawu wyjściowego. Ta właściwość jest równoważna z przełącznikiem kompilatora `/baseaddress`. |
-| BaseOutputPath | Określa ścieżkę podstawową dla pliku wyjściowego. Jeśli jest ustawiona, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] będzie używać `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Przykładowa składnia: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BaseIntermediateOutputPath | Folder najwyższego poziomu, w którym są tworzone wszystkie pośrednie foldery wyjściowe specyficzne dla konfiguracji. Wartością domyślną jest `obj\`. Poniższy kod jest przykładem: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseOutputPath | Określa ścieżkę podstawową dla pliku wyjściowego. Jeśli jest ustawiona, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] będzie używać `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Przykładowa składnia: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BuildInParallel | Wartość logiczna wskazująca, czy odwołania projektu są kompilowane lub czyszczone równolegle, gdy jest używany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wieloetapowy. Wartość domyślna to `true`, co oznacza, że projekty będą kompilowane równolegle, jeśli system ma wiele rdzeni lub procesorów. |
 | BuildProjectReferences | Wartość logiczna wskazująca, czy odwołania projektu są tworzone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automatycznie ustawiaj `false`, jeśli tworzysz projekt w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE), `true` w przeciwnym razie. `-p:BuildProjectReferences=false` można określić w wierszu polecenia, aby uniknąć sprawdzania, czy odwołania do projektów są aktualne. |
 | CleanFile | Nazwa pliku, który będzie używany jako "czyszczenie pamięci podręcznej". Czyszczenie pamięci podręcznej to Lista wygenerowanych plików, które zostaną usunięte podczas operacji czyszczenia. Plik jest umieszczany w pośredniej ścieżce wyjściowej przez proces kompilacji.<br /><br /> Ta właściwość określa tylko nazwy plików, które nie mają informacji o ścieżce. |
@@ -72,8 +72,8 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | IntermediateOutputPath | Pełna pośrednia Ścieżka wyjściowa jako pochodna `BaseIntermediateOutputPath`, jeśli nie określono ścieżki. Na przykład *\obj\debug\\* . |
 | KeyContainerName | Nazwa kontenera klucza o silnej nazwie. |
 | KeyOriginatorFile | Nazwa pliku klucza o silnej nazwie. |
-| MSBuildProjectExtensionsPath | Określa ścieżkę, w której znajdują się rozszerzenia projektu. Domyślnie ma to taką samą wartość jak `BaseIntermediateOutputPath`. |
 | Moduleassemblyname — | Nazwa zestawu, do którego ma zostać dołączony skompilowany moduł. Właściwość jest równoważna z przełącznikiem kompilatora `/moduleassemblyname`. |
+| MSBuildProjectExtensionsPath | Określa ścieżkę, w której znajdują się rozszerzenia projektu. Domyślnie ma to taką samą wartość jak `BaseIntermediateOutputPath`. |
 | NoLogo | Wartość logiczna wskazująca, czy logo kompilatora ma być wyłączone. Ta właściwość jest równoważna z przełącznikiem kompilatora `/nologo`. |
 | NoStdLib | Wartość logiczna wskazująca, czy należy unikać odwoływania się do biblioteki standardowej (*mscorlib. dll*). Wartością domyślną jest `false`. |
 | NoVBRuntimeReference | Wartość logiczna wskazująca, czy środowisko uruchomieniowe [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft. VisualBasic. dll*) powinno być dołączone jako odwołanie w projekcie. |
@@ -90,13 +90,10 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | Elemencie pathmap | Określa sposób mapowania ścieżek fizycznych do nazw ścieżek źródłowych wyjściowych przez kompilator. Ta właściwość jest równoważna z przełącznikiem `/pathmap` kompilatora *CSC. exe* . |
 | PdbFile | Nazwa pliku *. pdb* , który emituje. Ta właściwość jest równoważna z przełącznikiem `/pdb` kompilatora *CSC. exe* . |
 | Platforma | System operacyjny, dla którego tworzysz. Prawidłowe wartości to "dowolny procesor CPU", "x86" i "x64". |
-| ProduceReferenceAssembly | Wartość logiczna, która po ustawieniu na `true` włącza produkcję [zestawów referencyjnych](/dotnet/standard/assembly/reference-assemblies) dla bieżącego zestawu. w przypadku korzystania z tej funkcji należy `true` `Deterministic`. Ta właściwość odnosi się do `/refout` przełącznika kompilatorów *VBC. exe* i *CSC. exe* . |
-| ProduceOnlyReferenceAssembly | Wartość logiczna, która powoduje, że kompilator emituje tylko zestaw odniesienia zamiast skompilowanego kodu. Nie można używać w połączeniu z `ProduceReferenceAssembly`.  Ta właściwość odnosi się do `/refonly` przełącznika kompilatorów *VBC. exe* i *CSC. exe* . |
-| RemoveIntegerChecks | Wartość logiczna wskazująca, czy wyłączyć sprawdzanie błędów przepełnienia liczby całkowitej. Wartością domyślną jest `false`. Ta właściwość jest równoważna z `/removeintchecks`m przełącznikiem kompilatora *VBC. exe* . |
-| SGenUseProxyTypes | Wartość logiczna wskazująca, czy typy proxy powinny być generowane przez *Sgen. exe*. Ma to zastosowanie tylko wtedy, gdy *GenerateSerializationAssemblies* jest ustawiona na wartość on i tylko dla .NET Framework.<br /><br /> Obiekt docelowy SGen używa tej właściwości, aby ustawić flagę UseProxyTypes. Ta właściwość domyślnie ma wartość true, a nie ma interfejsu użytkownika umożliwiającego zmianę tego ustawienia. Aby wygenerować zestaw serializacji dla typów niezwiązanych z usługą WebService, należy dodać tę właściwość do pliku projektu i ustawić wartość false przed zaimportowaniem elementu *Microsoft. Common. targets* lub  *C#/VB.targets*. |
-| SGenToolPath | Opcjonalna ścieżka narzędzia, która wskazuje, gdzie uzyskać *Sgen. exe* , gdy bieżąca wersja pliku *Sgen. exe* zostanie zastąpiona. Ta właściwość jest używana tylko dla .NET Framework.|
-| StartupObject | Określa klasę lub moduł, który zawiera metodę Main lub Sub Main. Ta właściwość jest równoważna z przełącznikiem kompilatora `/main`. |
 | ProcessorArchitecture | Architektura procesora, która jest używana podczas rozwiązywania odwołań do zestawów. Prawidłowe wartości to "MSIL", "x86", "amd64" lub "ia64". |
+| ProduceOnlyReferenceAssembly | Wartość logiczna, która powoduje, że kompilator emituje tylko zestaw odniesienia zamiast skompilowanego kodu. Nie można używać w połączeniu z `ProduceReferenceAssembly`.  Ta właściwość odnosi się do `/refonly` przełącznika kompilatorów *VBC. exe* i *CSC. exe* . |
+| ProduceReferenceAssembly | Wartość logiczna, która po ustawieniu na `true` włącza produkcję [zestawów referencyjnych](/dotnet/standard/assembly/reference-assemblies) dla bieżącego zestawu. w przypadku korzystania z tej funkcji należy `true` `Deterministic`. Ta właściwość odnosi się do `/refout` przełącznika kompilatorów *VBC. exe* i *CSC. exe* . |
+| RemoveIntegerChecks | Wartość logiczna wskazująca, czy wyłączyć sprawdzanie błędów przepełnienia liczby całkowitej. Wartością domyślną jest `false`. Ta właściwość jest równoważna z `/removeintchecks`m przełącznikiem kompilatora *VBC. exe* . |
 | RootNamespace | Główna przestrzeń nazw, która ma być używana przy nazwie zasobu osadzonego. Ta przestrzeń nazw jest częścią osadzonej nazwy manifestu zasobu. |
 | Satellite_AlgorithmId | Identyfikator algorytmu wyznaczania wartości skrótu *Al. exe* do użycia podczas tworzenia zestawów satelickich. |
 | Satellite_BaseAddress | Adres podstawowy, który ma być używany w przypadku kompilowania zestawów satelickich specyficznych dla kultury przy użyciu elementu docelowego `CreateSatelliteAssemblies`. |
@@ -117,6 +114,9 @@ W poniższej tabeli wymieniono często używane właściwości, które są zdefi
 | Satellite_Version | Określa informacje o wersji dla zestawu satelickiego. |
 | Satellite_Win32Icon | Wstawia plik ikony *. ico* w zestawie satelickim. |
 | Satellite_Win32Resource | Wstawia zasób Win32 (plik *. res* ) do zestawu satelickiego. |
+| SGenToolPath | Opcjonalna ścieżka narzędzia, która wskazuje, gdzie uzyskać *Sgen. exe* , gdy bieżąca wersja pliku *Sgen. exe* zostanie zastąpiona. Ta właściwość jest używana tylko dla .NET Framework.|
+| SGenUseProxyTypes | Wartość logiczna wskazująca, czy typy proxy powinny być generowane przez *Sgen. exe*. Ma to zastosowanie tylko wtedy, gdy *GenerateSerializationAssemblies* jest ustawiona na wartość on i tylko dla .NET Framework.<br /><br /> Obiekt docelowy SGen używa tej właściwości, aby ustawić flagę UseProxyTypes. Ta właściwość domyślnie ma wartość true, a nie ma interfejsu użytkownika umożliwiającego zmianę tego ustawienia. Aby wygenerować zestaw serializacji dla typów niezwiązanych z usługą WebService, należy dodać tę właściwość do pliku projektu i ustawić wartość false przed zaimportowaniem elementu *Microsoft. Common. targets* lub  *C#/VB.targets*. |
+| StartupObject | Określa klasę lub moduł, który zawiera metodę Main lub Sub Main. Ta właściwość jest równoważna z przełącznikiem kompilatora `/main`. |
 | SubsystemVersion | Określa minimalną wersję podsystemu, która może być używana przez wygenerowany plik wykonywalny. Ta właściwość jest równoważna z przełącznikiem kompilatora `/subsystemversion`. Aby uzyskać informacje o domyślnej wartości tej właściwości, zobacz [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) lub [/subsystemversion (C# opcje kompilatora)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Wersja .NET Compact Framework, która jest wymagana do uruchomienia aplikacji, która jest tworzona. Określenie tej opcji pozwala odwoływać się do niektórych zestawów struktur, które mogą nie być w stanie odwołać się w przeciwnym razie. |
 | TargetFrameworkVersion | Wersja .NET Framework, która jest wymagana do uruchomienia aplikacji, która jest tworzona. Określenie tej opcji pozwala odwoływać się do niektórych zestawów struktur, które mogą nie być w stanie odwołać się w przeciwnym razie. |

@@ -12,24 +12,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 095fbcf35337ff2a619b6f3dcc6d5c28773ae975
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542649"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275252"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Przykłady parametrów wiersza polecenia dla instalacji programu Visual Studio
 
-Aby zilustrować, jak [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md), poniżej przedstawiono kilka przykładów, które można dostosować do potrzeb.
+Aby zilustrować, jak [używać parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md), poniżej przedstawiono kilka przykładów, które można dostosować do własnych potrzeb.
 
-W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_community.exe` reprezentują odpowiedniej wersji program inicjujący programu Visual Studio, czyli pliku małe (około 1 MB), który inicjuje proces pobierania. Jeśli używasz innej wersji, należy zastąpić nazwę odpowiedniego programu inicjującego.
+W każdym przykładzie `vs_enterprise.exe`, `vs_professional.exe` i `vs_community.exe` reprezentuje odpowiednią wersję programu inicjującego programu Visual Studio, czyli mały (około 1 MB) plik inicjujący proces pobierania. Jeśli używasz innej wersji, należy zastąpić nazwę odpowiedniego programu inicjującego.
 
 > [!NOTE]
 > Wszystkie polecenia wymaga podniesienia uprawnień administracyjnych oraz Kontrola konta użytkownika, jeśli proces nie jest uruchomiona w wierszu polecenia z podwyższonym poziomem uprawnień zostanie wyświetlony monit.
 >
 > [!NOTE]
-> Możesz użyć `^` znak na końcu wiersza polecenia do łączenia wielu wierszy w pojedynczym poleceniu. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednik to początkowych (`` ` ``) znaków.
+> Można użyć znaku `^` na końcu wiersza polecenia, aby połączyć wiele wierszy w jedno polecenie. Alternatywnie można po prostu umieścić te wiersze razem na jeden wiersz. W programie PowerShell odpowiednik jest znakiem wielotaktu (`` ` ``).
 
 Listę obciążeń i składników, które można zainstalować przy użyciu wiersza polecenia, znajdują się na stronie [obciążenia i identyfikatory składników programu Visual Studio](workload-and-component-ids.md) .
 
@@ -51,7 +51,7 @@ Listę obciążeń i składników, które można zainstalować przy użyciu wier
    ```
 
   > [!NOTE]
-  > Oba polecenia są wymagane. Pierwsze polecenie aktualizuje Instalatora programu Visual Studio. Drugie polecenie aktualizuje wystąpienia programu Visual Studio. Aby uniknąć okno Kontrola konta użytkownika, należy uruchomić wiersz polecenia jako Administrator.
+  > Oba polecenia są zalecane. Pierwsze polecenie aktualizuje Instalatora programu Visual Studio. Drugie polecenie aktualizuje wystąpienia programu Visual Studio. Aby uniknąć okno Kontrola konta użytkownika, należy uruchomić wiersz polecenia jako Administrator.
 
 * Zainstalować pulpitu wystąpienia programu Visual Studio w trybie dyskretnym, przy użyciu pakietu języka francuskiego, zwracając tylko wtedy, gdy produkt jest zainstalowany.
 
@@ -159,7 +159,7 @@ Listę obciążeń i składników, które można zainstalować przy użyciu wier
 
 ::: moniker range="vs-2017"
 
-Te parametry wiersza polecenia jest **Nowość w wersji 15.7**. Aby uzyskać więcej informacji na temat ich zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+Te parametry wiersza polecenia są **nowe w 15,7**. Aby uzyskać więcej informacji na ten temat, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) .
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Te parametry wiersza polecenia jest **Nowość w wersji 15.7**. Aby uzyskać wi�
 
 ::: moniker range="vs-2017"
 
-To polecenie wiersza polecenia jest **nowego w programie 15.9**. Aby uzyskać więcej informacji na ten temat, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+To polecenie wiersza polecenia jest **nowe w 15,9**. Aby uzyskać więcej informacji na ten temat, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) .
 
 ::: moniker-end
 
@@ -203,7 +203,7 @@ To polecenie wiersza polecenia jest **nowego w programie 15.9**. Aby uzyskać wi
 
 ::: moniker range="vs-2017"
 
-Ten parametr wiersza polecenia jest **nowego w programie 15.9**. Aby uzyskać więcej informacji na ten temat, zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](use-command-line-parameters-to-install-visual-studio.md) strony.
+Ten parametr wiersza polecenia jest **Nowy w 15,9**. Aby uzyskać więcej informacji na ten temat, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md) .
 
 ::: moniker-end
 
@@ -221,7 +221,7 @@ Ten parametr wiersza polecenia jest **nowego w programie 15.9**. Aby uzyskać wi
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

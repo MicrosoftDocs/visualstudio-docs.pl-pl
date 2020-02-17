@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume | Dokumentacja firmy Microsoft'
+title: 'Instrukcje: Określanie dodatkowych informacji o kodzie przy użyciu __analysis_assume | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - __analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685818"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277974"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Instrukcje: Określanie dodatkowych informacji o kodzie za pomocą funkcji __analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Porady: określanie informacji o dodatkowym kodzie za pomocą __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Możesz podać wskazówek, aby narzędzie do analizy kodu dla kodu C/C++, który będzie pomocy proces analizy i zmniejszyć ostrzeżenia. Podać dodatkowe informacje, należy użyć następujących funkcji:  
+Możesz dostarczyć wskazówki do narzędzia do analizy kodu dla języka C/C++ kodu, które ułatwią proces analizy i zmniejszają ostrzeżenia. Aby podać dodatkowe informacje, użyj następującej funkcji:  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr` — Dowolne wyrażenie, które jest zakłada się, że zostało oszacowane jako prawdziwe.  
+ `expr` — dowolne wyrażenie, które ma zostać obliczone na wartość true.  
   
- Narzędzie do analizy kodu przyjęto założenie, że warunek, reprezentowane przez wyrażenie jest prawdziwe w punkt, gdzie funkcja pojawia się i pozostaje prawdziwy, do momentu wyrażenia zostanie zmieniona, na przykład przez przypisanie do zmiennej.  
+ Narzędzie do analizy kodu zakłada, że warunek reprezentowany przez wyrażenie ma wartość true w punkcie, w którym funkcja jest wyświetlana i pozostaje prawdziwa do momentu zmiany wyrażenia, na przykład przez przypisanie do zmiennej.  
   
 > [!NOTE]
-> `__analysis_assume` nie ma wpływu na optymalizacji kodu. Poza narzędzia analizy kodu `__analysis_assume` jest zdefiniowany jako pusta.  
+> `__analysis_assume` nie ma wpływu na optymalizację kodu. Na zewnątrz narzędzia do analizy kodu `__analysis_assume` jest definiowana jako No-op.  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod używa `__analysis_assume` aby poprawić to ostrzeżenie analizy kodu [C6388](../code-quality/c6388.md):  
+ Poniższy kod używa `__analysis_assume` do skorygowania ostrzeżenia analizy kodu [C6388](../code-quality/c6388.md):  
   
 ```  
 #include<windows.h>  

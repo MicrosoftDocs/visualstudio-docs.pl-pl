@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05a5a1cb55356dbdd0d0d0127793abbd2e73e109
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: f53d43b841719b974d0b943eacb08ab738a5b506
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114156"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278666"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Identyfikatory obciążeń i składników programu Visual Studio
 
@@ -29,7 +29,7 @@ Kliknij nazwy wersji w tabeli poniżej, aby wyświetlić dostępne obciążenia 
 
 ::: moniker range="vs-2017"
 
-**Zaktualizowano do programu [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
+**Zaktualizowano w [wersji 15,9](/visualstudio/releasenotes/vs2017-relnotes/)**
 
 | **Wersja** | **Identyfikator** | **Opis** |
 | ----------- | ------ | --------------- |
@@ -37,20 +37,20 @@ Kliknij nazwy wersji w tabeli poniżej, aby wyświetlić dostępne obciążenia 
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Profesjonalne narzędzia i usługi dla małych zespołów |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Bezpłatne, w pełni funkcjonalne środowisko IDE dla uczniów, typu open source i indywidualnych deweloperów |
 | [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md?vs-2017) | Microsoft.VisualStudio.Product.TeamExplorer | Interakcja z Team Foundation Server i usługom DevOps platformy Azure bez zestawu narzędzi dewelopera programu Visual Studio |
-| [Visual Studio 2017 Express pulpitu](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Twórz aplikacje natywne i zarządzane, takie jak WPF, WinForms i Win32 edytowania kodu uwzględniającej składnię, kontroli kodu źródłowego i zarządzania elementami roboczymi. Obejmuje obsługę języka C#, Visual Basic i Visual C++. |
+| [Program Visual Studio Desktop Express 2017](workload-component-id-vs-express.md?vs-2017) | Microsoft.VisualStudio.Product.WDExpress | Twórz aplikacje natywne i zarządzane, takie jak WPF, WinForms i Win32 edytowania kodu uwzględniającej składnię, kontroli kodu źródłowego i zarządzania elementami roboczymi. Obejmuje obsługę języka C#, Visual Basic i Visual C++. |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md?vs-2017) | Microsoft.VisualStudio.Product.BuildTools | Visual Studio Build Tools umożliwia tworzenie natywnych i zarządzanych aplikacji opartych na platformie MSBuild bez konieczności używania środowiska IDE programu Visual Studio. Dostępne są opcje instalacji kompilatorów języka Visual C++ i bibliotek, MFC, ATL i C + +/ interfejsu wiersza polecenia. |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md?vs-2017)  | Microsoft.VisualStudio.Product.TestAgent | Obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia |
 | [Visual&nbsp;Studio Test&nbsp;Controller 2017](workload-component-id-vs-test-controller.md?vs-2017) | Microsoft.VisualStudio.Product.TestController | Można rozprowadzać zautomatyzowane testy na wielu komputerach |
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
-| [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
+| [Opinie programu Visual&nbsp;Studio&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Aby uzyskać więcej informacji na temat używania tych list, zobacz [Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) strony i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) strony.
+Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz temat [Używanie parametrów wiersza polecenia do instalowania programu Visual studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) i [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017) .
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-**Zaktualizowano w [wersji 16,3](/visualstudio/releases/2019/release-notes/)**
+**Zaktualizowano w [wersji 16,4](/visualstudio/releases/2019/release-notes/)**
 
 | **Wersja** | **Identyfikator** | **Opis** |
 | ----------- | ------ | --------------- |
@@ -71,7 +71,7 @@ Aby uzyskać więcej informacji o sposobach korzystania z tych list, zobacz stro
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Przewodnik administratora programu Visual Studio dla programu Visual Studio](visual-studio-administrator-guide.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

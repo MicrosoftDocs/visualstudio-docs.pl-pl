@@ -2,19 +2,19 @@
 title: Fragmenty C++ kodu wizualizacji
 ms.date: 11/04/2016
 ms.topic: reference
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461624"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277831"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty C++ kodu wizualizacji
 
@@ -30,7 +30,7 @@ Aby wstawić fragment kodu, Otwórz plik C++ kodu ( *. cpp* lub *. h*), kliknij 
 
 - W menu **Edytuj/IntelliSense** wybierz pozycję **Wstaw fragment kodu**
 
-- Użyj klawiszy skrótu: **Ctrl**+**K**+**X**
+- Użyj klawiszy skrótów: **Ctrl**+**K**+**X**
 
 Powinna zostać wyświetlona lista opcji rozpoczynających się od **#if**. Po wybraniu **#if**do pliku powinien zostać wyświetlony następujący kod:
 
@@ -48,11 +48,11 @@ Aby użyć fragmentu kodu do otaczania zaznaczonego kodu, wybierz wiersz (lub wi
 
 - Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe, a następnie wybierz opcję **Otocz za pomocą**
 
-- Z menu **Edytuj** > **IntelliSense** wybierz opcję **Otocz z**
+- Z menu **edytuj** > **IntelliSense** wybierz opcję **Otocz z**
 
-- Korzystając z klawiatury, naciśnij klawisz: **Ctrl**+**K** S+
+- Korzystając z klawiatury, naciśnij klawisze: **Ctrl**+**K**+**S**
 
-Wybierz **#if**. Powinieneś wyglądać następująco:
+Wybierz **#if**. Powinny zostać wyświetlone informacje podobne do następujących:
 
 ```cpp
 #if 0
@@ -64,7 +64,7 @@ Następnie można zastąpić 0 prawidłowym warunkiem.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Gdzie mogę znaleźć kompletną listę fragmentów C++ kodu?
 
-C++ Pełną listę fragmentów kodu można znaleźć, przechodząc do **Menedżera fragmentów kodu** (w menu **Narzędzia** ) i ustawiając **Język** na **wizualizację C++** . W oknie poniżej rozwiń pozycję **Wizualizacja C++** . Nazwy wszystkich fragmentów C++ kodu powinny być widoczne w kolejności alfabetycznej.
+Pełną C++ listę fragmentów kodu można znaleźć, przechodząc do **Menedżera fragmentów kodu** (w menu **Narzędzia** ) i ustawiając **Język** na **C++wizualizację**. W oknie poniżej rozwiń pozycję **Wizualizacja C++** . Nazwy wszystkich fragmentów C++ kodu powinny być widoczne w kolejności alfabetycznej.
 
 Nazwy większości fragmentów kodu są oczywiste, ale niektóre nazwy mogą być mylące.
 
@@ -113,9 +113,9 @@ private:
 
 ## <a name="for-vs-forr-vs-rfor"></a>dla programu vs. dla vs rfor
 
-Istnieją trzy **różne fragmenty kodu** , które udostępniają różne rodzaje `for` pętli.
+Istnieją trzy **różne fragmenty kodu** , które dostarczają różnego rodzaju pętle `for`.
 
-Fragment kodu **rfor** zawiera pętlę for (link) opartą na [zakresie](/cpp/cpp/range-based-for-statement-cpp) . Ta konstrukcja jest preferowana przez pętle `for` oparte na indeksie.
+Fragment kodu **rfor** zawiera pętlę for (link) [opartą na zakresie](/cpp/cpp/range-based-for-statement-cpp) . Ta konstrukcja jest preferowana przez pętle `for` oparte na indeksach.
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-Wstawka **na potrzeby** zawiera `for` pętlę, w której warunek jest oparty na długości (w `size_t`) obiektu.
+Element **for** zawiera `for` pętlę, w której warunek jest oparty na długości (w `size_t`) obiektu.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-Fragment kodu **dla** zawiera pętlę `for` odwrotną, w której warunek jest oparty na długości (w postaci liczb całkowitych) obiektu.
+Fragment kodu **dla** zawiera pętlę odwrotną `for`, w której warunek jest oparty na długości (w liczbie całkowitej) obiektu.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -170,6 +170,6 @@ Jeśli spróbujesz wstawić fragment destruktora poza klasą, zapewnia destrukto
 {
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)

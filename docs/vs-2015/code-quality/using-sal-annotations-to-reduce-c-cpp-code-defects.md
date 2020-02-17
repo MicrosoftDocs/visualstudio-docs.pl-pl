@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 caps.latest.revision: 29
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 3dd1a481a7db9739bdd847c0b6780a2b55d28469
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 66da17a31f6287bea810fc29fdb9c12d95cc94b2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848312"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275415"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

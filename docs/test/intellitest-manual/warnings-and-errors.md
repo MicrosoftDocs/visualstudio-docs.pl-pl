@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76112530"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275436"
 ---
 # <a name="warnings-and-errors"></a>Ostrzeżenia i błędy
 
@@ -32,7 +32,7 @@ ms.locfileid: "76112530"
 * **Rozwiązywanie ograniczeń**
   * [Nie można skonkretyzować rozwiązania](#cannot-concretize-solution)
 
-* **Domeny**
+* **Domeny lub środowisko uruchomieniowe**
   * [Potrzebna pomoc dla konstruowania obiektu](#help-construct)
   * [Potrzebujesz pomocy w znalezieniu typów](#help-types)
   * [Typ możliwych do użycia](#usable-type-guessed)
@@ -254,7 +254,7 @@ Możesz pomóc IntelliTest, wskazując jeden lub więcej typów, które pasują 
 
 IntelliTest [generuje dane wejściowe testów](input-generation.md) dla dowolnego typu .NET. Gdy typ jest abstrakcyjny lub interfejs, IntelliTest musi wybrać określoną implementację tego typu. Aby to umożliwić, należy wiedzieć, które typy istnieją.
 
-Gdy to ostrzeżenie jest wyświetlane, indiicates, że IntelliTest wyglądało na niektórych przywoływanych zestawach i znalazł typ implementacji, ale nie ma pewności, czy powinien on używać tego typu, czy też w innym miejscu dostępne są inne typy. IntelliTest po prostu wybierz typ, który ma wyszukiwane obietnice.
+Gdy to ostrzeżenie jest wyświetlane, wskazuje, że IntelliTest wyglądało na niektórych przywoływanych zestawach i znalazł typ implementacji, ale nie ma pewności, czy powinien on korzystać z tego typu, czy też w innym miejscu dostępne są inne typy. IntelliTest po prostu wybierz typ, który ma wyszukiwane obietnice.
 
 Aby uniknąć tego ostrzeżenia, można zaakceptować wybór typu IntelliTest lub pomóc IntelliTest w użyciu innych typów przez dodanie odpowiedniego [PexUseType](attribute-glossary.md#pexusetype).
 
@@ -301,7 +301,7 @@ IntelliTest [generuje dane wejściowe testów](input-generation.md) przez monito
 To ostrzeżenie jest wyświetlane, ponieważ podczas wykonywania przypadku testowego wywołana została metoda, która zachowuje się niedeterministycznie lub współdziała ze środowiskiem. Przykłady to metody **System. Random** i **System. IO. File**. Jeśli chcesz, aby IntelliTest tworzyć znaczące dane wejściowe testów, musisz zasymulować metody, które IntelliTest flagi jako problemy z testowaniem.
 
 <a name="limitation"></a>
-## <a name="limitation"></a>Ograniczenie
+## <a name="limitation"></a>Ograniczenia
 
 IntelliTest [generuje dane wejściowe testów](input-generation.md) przy użyciu [funkcji ograniczenia Solver](input-generation.md#constraint-solver).
 Istnieją jednak pewne operacje, które wykraczają poza zakres [funkcji ograniczenia](input-generation.md#constraint-solver).

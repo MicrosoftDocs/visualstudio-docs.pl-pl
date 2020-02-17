@@ -1,5 +1,5 @@
 ---
-title: Funkcje wewnętrzne | Dokumentacja firmy Microsoft
+title: Funkcje wewnętrzne | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,48 +13,48 @@ f1_keywords:
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 caps.latest.revision: 9
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a0a6cd31cbc8cf73cfa2c7e9ee7c096fa56799b9
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65699437"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277961"
 ---
 # <a name="intrinsic-functions"></a>Funkcje wewnętrzne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wyrażenia w SAL może być wyrażeniem języka C/C++, pod warunkiem, że to wyrażenie ma efekty uboczne — na przykład ++,--i wywołania funkcji, wszystkie mają skutki uboczne w tym kontekście.  SAL zapewnia jednak niektóre obiekty funkcyjne i niektóre zastrzeżone symboli, które mogą być używane w wyrażeniach SAL. Są one określane jako *funkcje wewnętrzne*.  
+Wyrażenie w porażeniu SAL może być C/C++ wyrażeniem, pod warunkiem, że jest wyrażeniem, które nie ma efektów ubocznych — na przykład + +,--, i wywołania funkcji wszystkie mają efekty uboczne w tym kontekście.  Funkcja SAL udostępnia jednak niektóre obiekty podobne do funkcji i niektóre zastrzeżone symbole, które mogą być używane w wyrażeniach SAL. Są one nazywane *funkcjami wewnętrznymi*.  
   
-## <a name="general-purpose"></a>Ogólne zastosowanie  
- Następujących adnotacji funkcja instrinsic zapewniają ogólne narzędzie SAL.  
-  
-|Adnotacja|Opis|  
-|----------------|-----------------|  
-|`_Curr_`|Synonim dla obiektu, który jest obecnie oznaczony.  Gdy `_At_` adnotacja jest w użyciu, `_Curr_` jest taki sam jak pierwszy parametr `_At_`.  W przeciwnym razie jest parametr lub całej funkcji/zwracana wartość, z którą skojarzono się leksykalnie adnotacji.|  
-|`_Inexpressible_(expr)`|Wyraża sytuacji, w których rozmiar buforu jest zbyt złożona, aby reprezentować za pomocą wyrażenia adnotacji — na przykład, gdy jest ona obliczana przez skanowanie wejściowego zestawu danych, a następnie wciąż dochodzą nowe wybrane elementy członkowskie.|  
-|`_Nullterm_length_(param)`|`param` jest to liczba elementów w buforze do, ale nie łącznie z terminatorem null. Można stosować do dowolnej buforu typ agregacji, innym niż void.|  
-|`_Old_(expr)`|Gdy zostanie on oceniony w warunku wstępnym, `_Old_` zwraca wartości wejściowej `expr`.  Gdy zostanie ono ocenione po warunek, zwracana jest wartość `expr` jako może być ocenione w warunku wstępnym.|  
-|`_Param_(n)`|`n`Parametru do funkcji, licząc od 1 do `n`, i `n` jest literałem stałej. Jeśli ten parametr nosi, ta adnotacja jest taka sama jak uzyskiwanie dostępu do parametru o nazwie. **Uwaga:** `n` mogą odwoływać się do parametry pozycyjne, które są definiowane przez wielokropek lub mogą być używane w prototypy funkcji gdzie nazwy nie są używane.|  
-|`return`|C/C++ zastrzeżone słowa kluczowego `return` może służyć w wyrażeniu SAL do wskazania wartość zwracaną przez funkcję.  Wartość jest dostępna tylko w stanie post; jest z niego korzystać w stanie sprzed błąd składni.|  
-  
-## <a name="string-specific"></a>Określonego ciągu  
- Następujących adnotacji Wewnętrzna funkcja umożliwiają manipulowanie ciągami. Wszystkie cztery funkcje te służą do celów tego samego: Aby zwrócić liczbę elementów typu, który znajduje się przed terminatorem null. Różnice są typy danych w elementach, które są określone. Należy zauważyć, że jeśli chcesz określić długość zakończony znakiem null buforu, który nie składa się ze znaków, należy użyć `_Nullterm_length_(param)` adnotacji w poprzedniej sekcji.  
+## <a name="general-purpose"></a>Ogólnego przeznaczenia  
+ Poniższe adnotacje funkcji instrinsic zapewniają ogólne narzędzie dla SAL.  
   
 |Adnotacja|Opis|  
 |----------------|-----------------|  
-|`_String_length_(param)`|`param` jest to liczba elementów w ciągu maksymalnie, ale nie łącznie z terminatorem null. Ta adnotacja jest zarezerwowana dla typów znaku ciągu.|  
-|`strlen(param)`|`param` jest to liczba elementów w ciągu maksymalnie, ale nie łącznie z terminatorem null. Ta adnotacja jest zarezerwowany do użycia na znak tablice i przypomina funkcji środowiska uruchomieniowego C [funkcje strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` jest to liczba elementów w ciągu maksymalnie (z wyjątkiem) terminator o wartości null. Ta adnotacja jest zarezerwowany do użycia na znak dwubajtowy tablice i przypomina funkcji środowiska uruchomieniowego C [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`_Curr_`|Synonim dla obiektu, który jest aktualnie dodawany do adnotacji.  Gdy adnotacja `_At_` jest używana, `_Curr_` jest taka sama jak pierwszy parametr do `_At_`.  W przeciwnym razie jest to parametr lub cała funkcja/wartość zwracana, z którą adnotacja jest w sposób leksykalny.|  
+|`_Inexpressible_(expr)`|Wyraża sytuację, w której rozmiar buforu jest zbyt złożony do reprezentowania przy użyciu wyrażenia adnotacji — na przykład, kiedy jest obliczany przez skanowanie zestawu danych wejściowych, a następnie liczenie wybranych elementów członkowskich.|  
+|`_Nullterm_length_(param)`|`param` to liczba elementów w buforze, do których nie dołączany jest terminator o wartości null. Może być zastosowany do dowolnego buforu typu innego niż "void".|  
+|`_Old_(expr)`|Gdy jest oceniana w warunku wstępnym, `_Old_` zwraca wartość wejściową `expr`.  Gdy jest oceniana w warunku post, zwraca wartość `expr`, ponieważ zostałaby oceniona w warunku wstępnym.|  
+|`_Param_(n)`|`n`parametr do funkcji, zliczanie od 1 do `n`, a `n` jest stałą całką literału. Jeśli parametr ma nazwę, ta adnotacja jest taka sama, aby uzyskać dostęp do parametru według nazwy. **Uwaga:** `n` mogą odwoływać się do parametrów pozycyjnych, które są zdefiniowane przez wielokropek lub które mogą być używane w prototypach funkcji, gdzie nazwy nie są używane.|  
+|`return`|ZastrzeżonychC++ słów kluczowych C/`return` można użyć w WYrażeniu sal, aby wskazać zwracaną wartość funkcji.  Wartość jest dostępna tylko w stanie post; jest to błąd składniowy, aby używać go w stanie sprzed.|  
+  
+## <a name="string-specific"></a>Określony ciąg  
+ Poniższe adnotacje funkcji wewnętrznych umożliwiają manipulowanie ciągami. Wszystkie cztery z tych funkcji służą tego samego celu: aby zwrócić liczbę elementów typu znalezionych przed terminatorem o wartości null. Różnice to rodzaje danych w elementach, do których odwołują się. Należy pamiętać, że jeśli chcesz określić długość bufora zakończono znakiem null, który nie zawiera znaków, użyj adnotacji `_Nullterm_length_(param)` z poprzedniej sekcji.  
+  
+|Adnotacja|Opis|  
+|----------------|-----------------|  
+|`_String_length_(param)`|`param` to liczba elementów w ciągu, które nie obejmują terminatora o wartości null. Ta adnotacja jest zarezerwowana dla typów ciągów znaków.|  
+|`strlen(param)`|`param` to liczba elementów w ciągu, które nie obejmują terminatora o wartości null. Ta adnotacja jest zarezerwowana do użycia w tablicach znaków i przypomina funkcję środowiska uruchomieniowego C [strlen ()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` to liczba elementów w ciągu, do których nie ma terminatora null. Ta adnotacja jest zarezerwowana do użycia w tablicach o szerokim znaku i przypomina funkcję środowiska uruchomieniowego C [wcslen ()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Informacje o języku SAL](../code-quality/understanding-sal.md)   
+ [Korzystanie z adnotacji sal w celuC++ zmniejszenia wad kodu C/Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Zrozumienie  sal](../code-quality/understanding-sal.md)  
  [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)   
+   [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)  
  [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)   
- [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)   
- [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Dodawanie adnotacji do zachowania blokowania](../code-quality/annotating-locking-behavior.md)   
+ [Określanie, kiedy i gdzie ma być stosowana adnotacja](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)

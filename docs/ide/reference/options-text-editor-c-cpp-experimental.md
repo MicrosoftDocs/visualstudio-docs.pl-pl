@@ -6,17 +6,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461383"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278700"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstów, C/C++, eksperymentalne
 
@@ -28,7 +28,7 @@ W tym artykule opisano opcje w programie Visual Studio 2017. W przypadku program
 
 ::: moniker-end
 
-Aby uzyskać dostęp do tej strony właściwości, naciśnij klawisz **Ctrl**+**Q** , aby uaktywnić pole wyszukiwania, a następnie wpisz **eksperymentalne**. Wyszukiwanie znajduje się na stronie po kilku pierwszych literach. Możesz również uzyskać do niego dostęp, wybierając**Opcje** **Narzędzia** > i rozwinięcie **edytora tekstu**, a następnie **C/C++** , a następnie wybierając **eksperymentalne**.
+Aby uzyskać dostęp do tej strony właściwości, naciśnij klawisz **Ctrl**+**Q** , aby uaktywnić pole wyszukiwania, a następnie wpisz **eksperymentalne**. Wyszukiwanie znajduje się na stronie po kilku pierwszych literach. Możesz również uzyskać do niej dostęp, wybierając **Narzędzia** > **Opcje** i rozwinięcie **edytora tekstu**, a następnie **C/C++** , a następnie wybierając **eksperymentalne**.
 
 Te funkcje są dostępne w instalacji programu Visual Studio.
 
@@ -37,7 +37,7 @@ Te funkcje są dostępne w instalacji programu Visual Studio.
 
 ## <a name="enable-predictive-intellisense"></a>Włącz technologię IntelliSense predykcyjną
 
-Funkcja IntelliSense predykcyjna ogranicza liczbę wyników wyświetlanych na liście rozwijanej IntelliSense, dzięki czemu zobaczysz tylko wyniki, które są istotne w kontekście. Na przykład, jeśli wpiszesz `int x =` i wywołasz listę rozwijaną IntelliSense, zobaczysz tylko liczby całkowite lub funkcje, które zwracają liczby całkowite. Funkcja IntelliSense predykcyjna jest domyślnie wyłączona.
+Funkcja IntelliSense predykcyjna ogranicza liczbę wyników wyświetlanych na liście rozwijanej IntelliSense, dzięki czemu zobaczysz tylko wyniki, które są istotne w kontekście. Na przykład, jeśli wpiszesz `int x =` i wywołajesz listę rozwijaną IntelliSense, zobaczysz tylko liczby całkowite lub funkcje zwracające liczby całkowite. Funkcja IntelliSense predykcyjna jest domyślnie wyłączona.
 
 ::: moniker range="vs-2017"
 
@@ -63,7 +63,7 @@ W [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target
 
 - i więcej...
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refaktoryzacja w C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/

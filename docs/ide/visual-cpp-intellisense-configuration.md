@@ -2,17 +2,17 @@
 title: Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748591"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279312"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
@@ -74,7 +74,7 @@ Błędy analizatora tagów pojawiają się w oknie **Lista błędów** .
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Weryfikowanie ustawień projektu przy użyciu rejestrowania diagnostycznego
 
-Aby sprawdzić, czy kompilator IntelliSense korzysta z poprawnych opcji kompilatora, w tym do dołączania do nich i makr preprocesora, Włącz rejestrowanie diagnostyczne wierszy poleceń IntelliSense w **narzędziu > opcjeC++ > edytorze tekstów > C/> Advanced > Rejestrowanie diagnostyczne**. Ustaw opcję **Włącz rejestrowanie** na wartość true, **poziom rejestrowania** na 5 (największa pełna) i **Filtr rejestrowania** na 8 (rejestrowanie IntelliSense).
+Aby sprawdzić, czy kompilator IntelliSense używa poprawnych opcji kompilatora, w tym ścieżek i makr preprocesora, należy włączyć rejestrowanie diagnostyczne wierszy poleceń IntelliSense w **narzędziu > opcje > edytorze tekstów > CC++ /> zaawansowane > rejestrowania diagnostycznego**. Ustaw opcję **Włącz rejestrowanie** na wartość true, **poziom rejestrowania** na 5 (największa pełna) i **Filtr rejestrowania** na 8 (rejestrowanie IntelliSense).
 
 Okno Dane wyjściowe będzie teraz wyświetlał wiersze poleceń, które są przesyłane do kompilatora IntelliSense. Oto przykładowe dane wyjściowe:
 
@@ -93,7 +93,7 @@ Okno Dane wyjściowe będzie teraz wyświetlał wiersze poleceń, które są prz
 /Yustdafx.h
 ```
 
-Te informacje mogą ułatwić zrozumienie, dlaczego technologia IntelliSense dostarcza niedokładne informacje. Na przykład, jeśli katalog dołączania projektu zawiera **$ (\Include)** , a dziennik diagnostyczny zawiera **/I\Include** jako ścieżkę dołączania, oznacza to, że **$ (NazwaMojejZmiennej)** nie został oceniony i został usunięty z ostatniej ścieżki dołączania .
+Te informacje mogą ułatwić zrozumienie, dlaczego technologia IntelliSense dostarcza niedokładne informacje. Na przykład jeśli katalog dołączania projektu zawiera **$ (\Include)** , a dziennik diagnostyczny zawiera **/I\Include** jako ścieżkę dołączania, oznacza to, że **$ (NazwaMojejZmiennej)** nie został oceniony i został usunięty z ostatniej ścieżki dołączania.
 
 ## <a name="about-the-intellisense-build"></a>Informacje o kompilacji IntelliSense
 
@@ -120,6 +120,6 @@ W przypadku ustawienia zmiennej środowiskowej środowiskową TRACEDESIGNTIME na
 
 Aby dowiedzieć się więcej na temat zmiennej środowiskowej środowiskową TRACEDESIGNTIME, zobacz [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) i [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Informacje zawarte w tych artykułach są odpowiednie C++ dla projektów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual C++ IntelliSense](visual-cpp-intellisense.md)

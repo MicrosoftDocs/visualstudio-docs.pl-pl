@@ -3,147 +3,110 @@ title: Logowanie się do subskrypcji programu Visual Studio może zakończyć si
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/19/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem w przypadku używania aliasów lub przyjaznych nazw
-ms.openlocfilehash: 392b86699b1116f45ca75df3b611fff6a2aebc62
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff48852e566522ad01ee07bd46cda72b8e1e249
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378022"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77276620"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie się do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas korzystania z aliasów
-W zależności od typu konta użytego do zalogowania się dostępne subskrypcje mogą nie być poprawnie wyświetlane podczas logowania do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)programu. Jedną z potencjalnych przyczyn jest użycie "aliasów" lub "przyjaznych nazw" zamiast tożsamości logowania, do której przypisano subskrypcję. Jest to nazywane "aliasem".
+W zależności od typu konta użytego do zalogowania się dostępne subskrypcje mogą nie być poprawnie wyświetlane podczas logowania się do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jedną z potencjalnych przyczyn jest użycie "aliasów" lub "przyjaznych nazw" zamiast tożsamości logowania, do której przypisano subskrypcję. Jest to nazywane "aliasem".
 
 ## <a name="what-is-aliasing"></a>Co to jest aliasowanie?
 Termin "aliasowanie" odnosi się do użytkowników, którzy mają różne tożsamości do logowania się do systemu Windows (lub Active Directory) oraz do uzyskiwania dostępu do poczty e-mail.
 
-Aliasowanie może wystąpić, gdy firma ma usługę online firmy Microsoft dotyczącą logowania do katalogu, na przykład "JohnD@contoso.com", ale użytkownicy uzyskują dostęp do swoich kont e-mail przy użyciu aliasów lub przyjaznych nazw, takich jak "John.Doe@contoso.com". W przypadku wielu klientów, którzy zarządzają swoimi subskrypcjami za pośrednictwem usługi licencjonowania zbiorowego (VLSC), może to spowodować nieudane działanie logowania, ponieważ podany adres e-mail ('John.Doe@contoso.com') nie jest zgodny z adresem katalogu ('JohnD@contoso.com' ) wymagane do pomyślnego uwierzytelnienia za pomocą opcji "konto służbowe".
+Aliasowanie można napotkać, gdy firma ma usługę online firmy Microsoft dotyczącą logowania do katalogu, na przykład "olivia@contoso.com", ale użytkownicy uzyskują dostęp do swoich kont e-mail przy użyciu aliasów lub przyjaznych nazw, takich jak "OliviaG@contoso.com". Upewnij się, że użytkownicy logują się przy użyciu adresu E-mail "Logowanie", jak to zostało wymienione w portalu administratora subskrypcji programu Visual Studio w https://manage.visualstudio.com, aby uzyskać dostęp do swoich subskrypcji
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Jakie opcje są dostępne dla administratorów?
-Jako administrator dostępne są dwie opcje, dzięki którym Subskrybenci mogą pomyślnie korzystać z funkcji [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)logowania.
-- Pierwszą opcją (zalecane) jest użycie konta katalogu jako przypisanego adresu w witrynie Volume Licensing Service Center (VLSC). Aby uzyskać więcej informacji, zapoznaj się z sekcją [przypisywanie subskrybentów do konta katalogu](#assigning-subscribers-to-a-directory-account) w tym artykule.
-- Druga opcja (mniej bezpieczna) polega na tym, że Subskrybenci mogą skojarzyć swój adres e-mail "służbowy" z kontem "osobisty" (vel Konto Microsoft lub MSA). Aby uzyskać więcej informacji, zobacz [Definiowanie konta służbowego jako sekcji konta osobistego](#defining-a-work-or-school-account-as-a-personal-account) w tym artykule.
 
-> [!NOTE]
-> Gdy Twoja firma zostanie zmigrowana do nowego [portalu administratora](https://manage.visualstudio.com)subskrypcji programu Visual Studio, będzie można skorzystać z zalet nowego środowiska administracyjnego, co umożliwi udostępnienie katalogu i adresów e-mail jako części profilu. Dowiedz się więcej o [migracji](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
+W zależności od typu konta subskrybenta Znajdź odpowiednie rozwiązanie poniżej:
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Przypisywanie subskrybentów do konta katalogu
-We wszystkich przypadkach Menedżer subskrypcji w ramach usługi licencjonowania zbiorowego (VLSC) będzie musiał użyć adresu katalogu dla nowych subskrybentów lub zaktualizować adres e-mail dla subskrybentów "istniejących". Należy pamiętać, że użycie adresu katalogu oznacza, że nowi Subskrybenci nie otrzymają powitalnej wiadomości E-mail, a administrator musi powiadomić subskrybenta, że do nich przypisano subskrypcję. Po wykonaniu poniższych kroków można również skorzystać z [szablonu](#notifying-your-subscribers-with-directory-addresses) wiadomości e-mail w celu powiadomienia subskrybentów i pomocy w procesie logowania.
+### <a name="work-or-school-account-upn-mismatch-issue"></a>Problem niezgodności nazwy UPN konta służbowego lub szkolnego
 
-### <a name="adding-new-subscribers"></a>Dodawanie nowych subskrybentów
-Wykonaj następujące kroki, aby dodać nowego subskrybenta z kontem katalogu.
+Niezgodność głównej nazwy użytkownika (UPN) można napotkać, gdy Compnay ma aktywny Diretory skonfigurowany, gdzie nazwa UPN nie jest taka sama jak podstawowy adres SMTP. 
 
-1. Odwiedź witrynę [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) i zaloguj się.
-2. Na stronie Administrator VLSC kliknij pozycję **subskrypcje** , a następnie opcję **subskrypcje programu Visual Studio**.
+#### <a name="how-to-detect-if-a-users-sign-in-address-has-a-upn-mismatch"></a>Jak wykryć, czy adres logowania użytkownika ma niezgodność nazw UPN
 
-    > [!div class="mx-imgBorder"]
-    > ![Menu subskrypcje](_img//vlsc/vlsc-subscriptions.png)
+Użytkownik powinien wykonać następujące czynności:
 
-3. Kliknij **numer umowy** skojarzony z Visual Studio Subscription.
+1. Zaloguj się do https://my.visualstudio.com przy użyciu adresu logowania wymienionego w wiadomości e-mail dotyczącej przypisania subskrypcji.  
 
-    > [!div class="mx-imgBorder"]
-    > ![Wybierz umowę](_img/vlsc/vlsc-agreement.png)
+    > [!NOTE]
+    > Jeśli nie mają swoich wiadomości e-mail dotyczących przypisania subskrypcji, możesz ponownie wysłać ją do nich z poziomu portalu Adminstration.  
 
-4. Kliknij pozycję **Przypisz subskrypcję**.
-5. Wybierz żądany **poziom subskrypcji**.
-6. Sprawdź, czy masz dostępne subskrypcje do przypisania, a następnie kliknij przycisk **dalej**.
-7. Wprowadź szczegóły subskrybenta i adres katalogu w polu adres E-mail, a następnie kliknij przycisk **dalej**.
-8. Sprawdź poprawność informacji o subskrybencie i kliknij przycisk **Zakończ**.
-9. Powiadom abonenta, że jego subskrypcja została zainicjowana przy użyciu poniższego [szablonu](#notifying-your-subscribers-with-directory-addresses).
+2. Kliknij kartę **subskrypcje** .
+3. Sprawdź, czy adres e-mail wyświetlany w prawym górnym rogu wskazuje, że użytkownik jest zalogowany jako... " jest taka sama jak adres e-mail logowania w wiadomości e-mail dotyczącej przypisania subskrypcji.  Jeśli nie, nie będą oni mogli uzyskać dostępu do korzyści z subskrypcji. 
 
-### <a name="updating-an-existing-subscriber"></a>Aktualizowanie istniejącego subskrybenta
-Wykonaj poniższe kroki, aby zaktualizować istniejącego subskrybenta przy użyciu konta katalogu.
+   > [!div class="mx-imgBorder"]
+   > ](_img/aliasing/aliasing-subscriptions-page.png) strony subskrypcji ![
 
-1. Odwiedź witrynę [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) i zaloguj się.
-2. Na stronach administracyjnych VLSC kliknij pozycję **subskrypcje** , a następnie opcję **subskrypcje programu Visual Studio**.
-3. Kliknij **numer umowy** skojarzony z Visual Studio Subscription.
-4. Kliknij **strzałkę w dół** na pasku wyszukiwania.
-5. Wyszukaj subskrybenta przy użyciu pola "adres E-mail".
-6. Na liście wyników kliknij **nazwisko** subskrybenta.
-7. Kliknij przycisk **Edytuj**.
-8. Zmień pole adres E-mail na żądany adres katalogu, a następnie kliknij przycisk **Zapisz**.
-9. Powiadom abonenta, że jego subskrypcja została zainicjowana przy użyciu poniższego szablonu wiadomości e-mail.
+#### <a name="how-to-correct-the-upn-mismatch"></a>Jak poprawić niezgodność nazw UPN
 
-### <a name="notifying-your-subscribers-with-directory-addresses"></a>Powiadamianie subskrybentów o adresach katalogu
-Ponieważ powitalna wiadomość E-mail nie powiedzie się, skopiuj i wklej poniższy komunikat do wiadomości e-mail i Wyślij do subskrybenta. Zastąp% WORD% odpowiednimi informacjami dla każdego subskrybenta.
+1. Dostęp do portalu zarządzania administracyjnego programu Visual Studio w witrynie https://manage.visualstudio.com 
 
-```
------------ Copy Below (Ctrl+C) -----------
+2. Zlokalizuj użytkownika z niezgodnością nazwy UPN.  Funkcja [Filter](search-license.md) może to ułatwić, jeśli masz wiele subskrypcji. 
 
-Hello %SUBSCRIBER NAME%
+3. Zmień adres E-mail logowania na nazwę UPN użytkownika.
 
-You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
+4. Zapisz zmiany 
 
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
+5. Poproszenie użytkownika o wylogowanie się z portalu subskrybenta i ponowne zalogowanie się przy użyciu nazwy UPN.   
 
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
+### <a name="personal-account-aliasing-issue"></a>Problem z aliasem konta osobistego
 
------------ End Copy -----------
-```
+Problemy z aliasami mogą również mieć wpływ na konta osobiste. 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definiowanie konta służbowego jako konta osobistego
-Aby dodać nowego użytkownika lub zaktualizować adres e-mail użytkownika w ramach usługi licencjonowania zbiorowego (VLSC), Skorzystaj z instrukcji opisanych w sekcji [przypisywanie subskrybentów do konta katalogu](#assigning-subscribers-to-a-directory-account) .  W przypadku, gdy adres e-mail nie jest rozpoznawany przez katalog, użytkownik będzie musiał przejść krok po kroku, aby utworzyć nowe konto w celu zdefiniowania adresu e-mail jako konta osobistego.  W krótkim czasie zespół subskrypcji programu Visual Studio podłączył wykluczenie z zasad tożsamości zdefiniowanych poniżej, ale zainwestowano w możliwości niezbędne do usunięcia tych zasad.
+#### <a name="how-to-detect-if-a-personal-account-has-an-aliasing-issue"></a>Jak wykryć, czy konto osobiste ma problem z aliasem
 
-> [!WARNING]
-> Firma Microsoft nie zaleca łączenia tożsamości "służbowych" z tożsamościami "osobistymi".  Ta akcja powoduje utratę własności i kontroli konta przez organizację, a pracownik może nadal uzyskiwać dostęp do określonych produktów lub usług nawet po opuszczeniu firmy.  
+1. Zaloguj się https://my.visualstudio.com.
 
-### <a name="defining-an-email-address-as-a-personal-account"></a>Definiowanie adresu e-mail jako konta osobistego
-Po przypisaniu subskrypcji do subskrybenta otrzymasz wiadomość e-mail z prośbą o odwiedzenie [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) , aby skorzystać z korzyści z subskrypcji.  Podczas próby zalogowania się do Visual Studio Subscription logowania zakończy się niepowodzeniem z powodu błędu informującego, że konto nie zostało rozpoznane.  Przed zalogowaniem [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) się do środowiska zapoznaj się z poniższymi instrukcjami.  W razie potrzeby można użyć tego [szablonu](#notifying-your-subscribers-using-personal-accounts) do powiadomienia subskrybenta po przypisaniu subskrypcji.
+2. Kliknij kartę **subskrypcje** i Sprawdź adres, z którym użytkownik jest zalogowany. 
 
-1. Przejdź do https://my.visualstudio.com, a następnie kliknij pozycję **Utwórz nowe konto Microsoft**.
+3. Jeśli zalogowany adres e-mail nie jest taki sam jak adres e-mail używany do uzyskiwania dostępu do witryny sieci Web, występuje konflikt między kontem a aliasem. 
 
-2. Wypełnij pola:
-   - Wprowadź adres e-mail, na który otrzymasz powitalną wiadomość Someone@example.com e-mail w polu
-   - Utwórz hasło
-   - Wybierz ustawienia promocyjne
-   - Kliknij przycisk **dalej** .
+#### <a name="how-to-fix-a-personal-account-aliasing-issue"></a>Jak rozwiązać problem z aliasem konta osobistego
 
-3. Wykonaj kroki walidacji i kliknij przycisk **dalej**.
+Platforma subskrypcji programu Visual Studio ustala priorytet aliasu podstawowego w celu wyświetlenia szczegółów subskrypcji.  Aby rozwiązać ten problem, należy utworzyć inny alias adresu e-mail dla aliasu podstawowego logowania. 
 
-4. Nowi użytkownicy mogą wymagać zakończenia profilu programu Visual Studio.
+1. Przejdź do obszaru [Zarządzanie sposobem logowania do firmy Microsoft](https://go.microsoft.com/fwlink/p/?linkid=842796).
+2. Jeśli zostanie wyświetlony monit, zaloguj się do konto Microsoft. 
+3. W obszarze Aliasy kont wybierz pozycję **Utwórz podstawową** obok adresu e-mail używanego do przypisywania subskrypcji. 
+4. W obszarze Aliasy kont wybierz pozycję Utwórz podstawową obok adresu e-mail używanego do przypisywania subskrypcji. 
+5. Wyloguj się z portalu subskrybentów programu Visual Studio (https://my.visualstudio.com) 
+6. Uzyskaj ponownie dostęp do portalu przy użyciu nowego aliasu podstawowego. 
 
-5. Subskrypcja i korzyści powinny teraz być widoczne.
+### <a name="ensure-a-successful-experience-for-your-users"></a>Zapewnij pomyślne środowisko dla użytkowników
 
-### <a name="notifying-your-subscribers-using-personal-accounts"></a>Powiadamianie subskrybentów przy użyciu kont osobistych
-W powyższym scenariuszu subskrybent otrzyma "powitalną wiadomość E-mail", ale ze względu na aliasy mogą oni się nie zalogować.  Poniższego tekstu można użyć do powiadomienia subskrybenta powyższych kroków i zalecać opcje pomocy technicznej, jeśli jest to wymagane.  Zastąp% WORD% odpowiednimi informacjami dla każdego subskrybenta.
+Jako administrator dostępne są dwie opcje zapewnienia pomyślnego logowania się dla subskrybentów https://my.visualstudio.com. 
 
-```
------------ Copy Below (Ctrl+C) -----------
+- Pierwsza opcja (zalecana) polega na użyciu konta katalogu jako adresu logowania w https://manage.visualstudio.com.
+- Druga opcja, która jest mniej bezpieczna, druga opcja (mniej bezpieczna), polega na tym, że Subskrybenci mogą się zalogować przy użyciu innego adresu e-mail niż adres e-mail katalogu.
 
-Hello %SUBSCRIBER NAME%
+Obie opcje są konfigurowane w portalu administracyjnym, wykonując następujące czynności:
 
-You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
-1. Visit https://my.visualstudio.com
+1. Zaloguj się do https://manage.visualstudio.com 
 
-2. Click Create new Microsoft Account on the right hand side
+2. Jeśli zmieniasz pojedynczego użytkownika, wybierz tego użytkownika z tabeli i kliknij prawym przyciskiem myszy, aby edytować. Spowoduje to otwarcie panelu, w którym można zmodyfikować adres e-mail logowania.  
 
-3. Complete the Form:
-   - Use your corporate email address in the someone@example.com box
-   - Enter a password
-   - Select your promotional preference
-   - Click Next
+3. Wprowadź wymagane aktualizacje w polu adres e-mail logowania. 
 
-4. Complete the account validation steps
+4. Kliknij przycisk Zapisz, aby zmiany zaczęły obowiązywać.  
+Jeśli musisz wprowadzić te zmiany do dużej liczby użytkowników, możesz skorzystać z funkcji Edytuj zbiorczo. Aby uzyskać więcej informacji na temat tego procesu, przeczytaj sekcję **Edycja wielu subskrybentów korzystających z edycji zbiorczej** .  
 
-5. If necessary, complete the Visual Studio profile
+## <a name="next-steps"></a>Następne kroki
+Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
+- [Przypisywanie pojedynczych subskrypcji](assign-license.md)
+- [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
+- [Edytowanie subskrypcji](edit-license.md)
+- [Usuwanie subskrypcji](delete-license.md)
+- [Określanie maksymalnego użycia](maximum-usage.md)
 
-6. You should now see your benefits
-
-Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
-
-If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
-
-At the bottom of the page, select the following:
-   - Accounts, Subscriptions, and Billing Support
-   - From Issue, choose Subscription sign in support
-   - Choose the appropriate Country
-   - Select the desired Assisted Support option
-
------------ End Copy -----------
-```
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](/azure/devops/)
+- [Dokumentacja platformy Azure](/azure/)
+- [Dokumentacja Microsoft 365](/microsoft-365/)

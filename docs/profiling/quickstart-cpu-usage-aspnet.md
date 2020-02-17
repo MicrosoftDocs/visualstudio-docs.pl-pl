@@ -1,8 +1,8 @@
 ---
-title: Analizowanie danych użycia procesora CPU (ASP.NET)
-description: Mierzenie wydajności aplikacji w aplikacjach ASP.NET przy użyciu narzędzia diagnostyki użycia procesora CPU
+title: Analizowanie danych użycia procesora CPU (ASP.NET Core)
+description: Mierzenie wydajności aplikacji w aplikacjach ASP.NET Core przy użyciu narzędzia diagnostyki użycia procesora CPU
 ms.custom: mvc
-ms.date: 08/06/2018
+ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -12,40 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 367d789513e8ac220566cb4e451bcea015ec5a2a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275072"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Szybki start: Analizowanie danych użycia procesora CPU w programie Visual Studio (ASP.NET)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>Szybki Start: analizowanie danych użycia procesora CPU w programie Visual Studio (ASP.NET Core)
 
 Program Visual Studio udostępnia wiele zaawansowanych funkcji, które ułatwiają analizowanie problemów z wydajnością w aplikacji. Ten temat zawiera szybki sposób poznania niektórych podstawowych funkcji. Oto narzędzie do identyfikowania wąskich gardeł wydajności z powodu wysokiego użycia procesora CPU. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
 
 Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesję diagnostyczną. Jeśli opisane w tym miejscu narzędzie **użycie procesora CPU** nie poda potrzebnych danych, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne. W wielu przypadkach wąskich gardeł wydajności aplikacji może być spowodowane przez coś innego niż Procesora, takich jak pamięć, renderowania interfejsu użytkownika lub czas żądania sieciowego.
 
-Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debugerem (**narzędzia diagnostyczne** okno). W systemie Windows 7 i nowszych można użyć narzędzia do wykonywania w programie do [profilowania](../profiling/profiling-feature-tour.md).
+System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ). W systemie Windows 7 i nowszych można użyć narzędzia do wykonywania w programie do [profilowania](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. W programie Visual Studio wybierz pozycję **plik** > **Nowy projekt**.
+1. Otwórz program Visual Studio i Utwórz projekt.
 
-1. W **obszarze C#Wizualizacja** wybierz pozycję **Sieć Web**, a następnie w środkowym okienku wybierz pozycję **ASP.NET Web Application (.NET Framework)** .
+   ::: moniker range="vs-2017"
+   Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
-    Jeśli szablon projektu **aplikacji sieci Web ASP.NET** nie jest widoczny, kliknij link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie **ASP.NET i projektowanie sieci Web** , a następnie wybierz **Modyfikuj**.
+   W oknie dialogowym **Nowy projekt** w okienku po lewej stronie rozwiń pozycję **Wizualizacja C#** , a następnie wybierz pozycję **Sieć Web**. W środkowym okienku wybierz pozycję **ASP.NET Web Application (.NET Core)** . Następnie nadaj nazwę projektowi *MyProfilingApp_MVC*.
 
-1. Wpisz nazwę, taką jak **MyProfilingApp_MVC** , i kliknij przycisk **OK**.
+   > [!NOTE]
+   > Jeśli szablon projektu **aplikacji sieci Web ASP.NET (.NET Core)** nie jest widoczny, wybierz link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie **ASP.NET i projektowanie sieci Web** , a następnie wybierz **Modyfikuj**.
 
-1. W oknie dialogowym, które się pojawi, wybierz **MVC** w środkowym okienku, a następnie kliknij przycisk **OK**.
+   W oknie dialogowym, które się pojawi, wybierz **MVC** w środkowym okienku, a następnie kliknij przycisk **OK**.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   Jeśli okno startowe nie jest otwarte, wybierz polecenie **plik** > **Start okna**.
 
-    Program Visual Studio tworzy projekt. Eksplorator rozwiązań (prawego okienka) pokazuje pliki projektu.
+   W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
 
-1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy folder modele i wybierz polecenie **Dodaj** > **klasę**.
+   W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *ASP.NET* w polu wyszukiwania. Następnie wybierz **C#** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
 
-1. Nadaj nazwę nowej klasie `Data.cs` i wybierz pozycję **Dodaj**.
+   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja sieci Web ASP.NET (.NET Core)** , a następnie wybierz przycisk **dalej**.
 
-1. W Eksplorator rozwiązań Otwórz `Models/Data.cs` i Dodaj następującą `using` instrukcję na początku pliku:
+   > [!NOTE]
+   > Jeśli szablon **aplikacji sieci Web ASP.NET (.NET Core)** nie jest widoczny, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz obciążenie **ASP.NET i programowanie dla sieci Web** .
+
+   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MyProfilingApp_MVC* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+
+   W wyświetlonym oknie wybierz pozycję **aplikacja sieci Web (Model-View-Controller)** , a następnie wybierz pozycję **Utwórz**.
+
+   ::: moniker-end
+
+   Program Visual Studio otwiera nowy projekt.
+
+1. W Eksplorator rozwiązań kliknij prawym przyciskiem myszy folder modele i wybierz polecenie dodaj **klasę** > .
+
+1. Nazwij nową klasę `Data.cs` a następnie wybierz pozycję **Dodaj**.
+
+1. W Eksplorator rozwiązań otwórz `Models/Data.cs` i Dodaj następującą instrukcję `using` na początku pliku:
 
     ```csharp
     using System.Threading;
@@ -131,6 +151,8 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
 1. W Eksplorator rozwiązań otwórz pozycję *Controller/HomeControllers. cs*i Zastąp następujący kod:
 
+   ::: moniker range="vs-2017"
+
     ```csharp
     public ActionResult About()
     {
@@ -153,26 +175,57 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
     }
     ```
 
-## <a name="step-1-collect-profiling-data"></a>Krok 1. Zbieranie danych profilowania
+    ::: moniker-end
+    ::: moniker range="vs-2019"
 
-1. Najpierw ustaw punkt przerwania w aplikacji w tym wierszu kodu w `Simple` konstruktorze:
+    ```csharp
+    public IActionResult Privacy()
+    {
+        return View();
+    }
+    ```
+
+    przy użyciu tego kodu:
+
+    ```csharp
+    public IActionResult Privacy()
+    {
+        Models.Simple s = new Models.Simple();
+
+        return View(s.GetData());
+    }
+    ```
+
+    ::: moniker-end
+
+
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Zbierania danych profilowania
+
+1. Najpierw ustaw punkt przerwania w aplikacji w tym wierszu kodu w konstruktorze `Simple`:
 
     `for (int i = 0; i < 200; i++)`
 
     Ustaw punkt przerwania, klikając na marginesie na lewo od wiersza kodu.
 
-1. Następnie ustaw drugi punkt przerwania dla zamykającego nawiasu klamrowego na końcu `Simple` konstruktora:
+1. Następnie ustaw drugi punkt przerwania dla zamykającego nawiasu klamrowego na końcu konstruktora `Simple`:
 
      ![Ustawianie punktów przerwania na potrzeby profilowania](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
 
-1. Okno **Narzędzia diagnostyczne** jest już widoczne, chyba że zostało wyłączone. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+1. Okno **Narzędzia diagnostyczne** jest już widoczne, chyba że zostało wyłączone. Aby ponownie wyświetlić okno, kliknij pozycję **debuguj** > **Windows** > **Pokaż narzędzia diagnostyczne**.
 
-1. Kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).
+1. Kliknij pozycję **debuguj** > **Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).
 
-1. Po zakończeniu ładowania aplikacji kliknij link **informacje** w górnej części strony sieci Web, aby rozpocząć Uruchamianie nowego kodu.
+1. Po zakończeniu ładowania aplikacji kliknij odpowiednie łącze w górnej części strony sieci Web, aby rozpocząć Uruchamianie nowego kodu.
+
+   ::: moniker range="vs-2017"
+   W programie Visual Studio 2017 kliknij link **informacje** , aby uruchomić kod.
+   ::: moniker-end
+   ::: moniker range="vs-2019"
+   W programie Visual Studio 2019 kliknij link **prywatność** , aby uruchomić kod.
+   ::: moniker-end
 
 1. Zapoznaj się z widokiem **Podsumowanie** narzędzi diagnostycznych.
 
@@ -190,11 +243,11 @@ Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debu
 
      Program profilujący rozpoczyna, przygotowywanie danych wątku. Poczekaj na zakończenie jego działania.
 
-     Narzędzie użycie procesora CPU wyświetla raport w **użycie procesora CPU** kartę.
+     Narzędzie użycie procesora CPU wyświetla raport na karcie **użycie procesora CPU** .
 
      W tym momencie można rozpocząć analizy danych.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2. Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
 
 Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obszarze użycie procesora CPU, identyfikowanie funkcji, które wykonują najwięcej pracy i następnie wykonywanie bliższe spojrzenie na każdym z nich.
 
@@ -205,28 +258,28 @@ Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obsz
     > [!TIP]
     > Funkcje są wymienione w kolejności, począwszy od osoby faktycznie wykonujące najwięcej pracy (nie są w kolejności wywołań). Dzięki temu można szybko zidentyfikować najdłuższy uruchomionej funkcji.
 
-2. Na liście funkcji kliknij dwukrotnie `MyProfilingApp_MVC.Models.ServerClass::GetNumber` funkcję.
+2. Na liście funkcji kliknij dwukrotnie funkcję `MyProfilingApp_MVC.Models.ServerClass::GetNumber`.
 
     Po dwukrotnym kliknięciu funkcji, w okienku po lewej stronie zostanie otwarty widok **wywołujący/wywoływany** .
 
     ![Widok wywołujący/wywoływany narzędzi diagnostycznych](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
-    W tym widoku wybrana funkcja jest wyświetlana w nagłówku i w **bieżącym oknie funkcji** (`ServerClass::GetNumber`w tym przykładzie). Funkcja, która wywołała bieżącą funkcję jest wyświetlany po lewej stronie w obszarze **podczas wywoływania funkcji**, oraz wszelkie funkcje wywołane przez bieżącą funkcję są pokazane w **funkcji o nazwie** pole po prawej stronie. (Możesz wybrać jedno z pól można zmienić bieżącej funkcji.)
+    W tym widoku wybrana funkcja jest wyświetlana w nagłówku i w **bieżącym oknie funkcji** (`ServerClass::GetNumber`w tym przykładzie). Funkcja, która wywołała bieżącą funkcję, jest pokazywana po lewej stronie w obszarze **wywoływanie funkcji**, a wszystkie funkcje wywoływane przez bieżącą funkcję są wyświetlane w polu **wywoływane funkcje** po prawej stronie. (Możesz wybrać jedno z pól można zmienić bieżącej funkcji.)
 
     Ten widok przedstawia łączny czas (ms) i procent ogólnej aplikacji, czas, który funkcji zostały podjęte w celu ukończenia działania.
 
-    **Funkcja treści** również przedstawia łączną ilość czasu (i wartość procentowa czasu) w treści funkcji bez czasu poświęcony na wywołanie i nazywane funkcjami. (Na tym rysunku 2220 z 2235 MS były spędzane w treści funkcji, a pozostały czas (< 20 ms) został spędzony w kodzie zewnętrznym wywoływanym przez tę funkcję). Rzeczywiste wartości będą się różnić w zależności od środowiska.
+    **Treść funkcji** pokazuje również łączny czas (i procent czasu) spędzony w treści funkcji, z wyłączeniem czasu spędzonego na wywoływaniu i wywołaniu funkcji. (Na tym rysunku 2220 z 2235 MS były spędzane w treści funkcji, a pozostały czas (< 20 ms) został spędzony w kodzie zewnętrznym wywoływanym przez tę funkcję). Rzeczywiste wartości będą się różnić w zależności od środowiska.
 
     > [!TIP]
-    > O wysokiej wartości w **treści funkcji** może wskazać wąskie gardło w samej funkcji.
+    > Duże wartości w **treści funkcji** mogą wskazywać wąskie gardła wydajności w samej funkcji.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Analizowanie użycia pamięci](../profiling/memory-usage.md)do identyfikowania wąskich gardeł wydajności.
-- [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md) uzyskać bardziej szczegółowe informacje na temat narzędzia użycie procesora CPU.
+- [Analizuj użycie pamięci](../profiling/memory-usage.md), aby zidentyfikować wąskie gardła wydajności.
+- [Analizuj użycie procesora](../profiling/cpu-usage.md) , aby uzyskać bardziej szczegółowe informacje o narzędziu Użycie procesora CPU.
 - Analizuj użycie procesora bez dołączonego debugera lub jako przeznaczonego dla uruchomionej aplikacji — aby uzyskać więcej informacji, zobacz [zbieranie danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [narzędziach profilowania uruchamiania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
-- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

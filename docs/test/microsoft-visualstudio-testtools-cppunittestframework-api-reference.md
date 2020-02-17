@@ -2,29 +2,29 @@
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
 ms.date: 09/27/2019
 ms.topic: reference
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - multiple
-author: mikeblome
-ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 8a71b6d406b7507930a5d1a7ce593a296220d5a6
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720513"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278648"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API Microsoft. VisualStudio. TestTools. CppUnitTestFramework
 
 W tym temacie wymieniono publiczne elementy członkowskie przestrzeni nazw `Microsoft::VisualStudio::CppUnitTestFramework`. Użyj tych interfejsów API do C++ pisania testów jednostkowych w oparciu o środowisko testów jednostkowych firmy Microsoft. Na końcu tematu znajduje się [przykład użycia](#example) .
 
-Pliki nagłówkowe i lib znajdują się w *folderze \<Visual Studio installation > \VC\Auxiliary\VS\UnitTest*.
+Pliki nagłówkowe i lib znajdują się w *folderze\<instalacyjnym programu Visual Studio > \VC\Auxiliary\VS\UnitTest*.
 
 Ścieżki nagłówka i lib są automatycznie konfigurowane w natywnym projekcie testowym.
 
-## <a name="In_this_topic"></a> W tym temacie
+## <a name="In_this_topic"></a>W tym temacie
 
-[CppUnitTest.h](#cppUnitTest_h)
+[CppUnitTest. h](#cppUnitTest_h)
 
 - [Tworzenie klas i metod testowych](#create_test_classes_and_methods)
 
@@ -46,7 +46,7 @@ Pliki nagłówkowe i lib znajdują się w *folderze \<Visual Studio installation
 
   - [Wstępnie zdefiniowane atrybuty](#pre_defined_attributes)
 
-    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert. h](#cppUnitTestAssert_h)
 
   - [Potwierdzenia ogólne](#general_asserts)
 
@@ -86,15 +86,15 @@ Pliki nagłówkowe i lib znajdują się w *folderze \<Visual Studio installation
 
     - [Oczekiwanie wyjątku](#expect_exception)
 
-      [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger. h](#cppunittestlogger_h)
 
-    - [Logger](#logger)
+    - [Rejestratora](#logger)
 
     - [Napisz wiadomość](#write_message)
 
   - [Przykład użycia](#example)
 
-## <a name="cppUnitTest_h"></a> CppUnitTest.h
+## <a name="cppUnitTest_h"></a>CppUnitTest. h
 
 ### <a name="create_test_classes_and_methods"></a>Tworzenie klas i metod testowych
 
@@ -209,7 +209,7 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
-Dodaje atrybuty zdefiniowane przy użyciu co najmniej jednego makra `TEST_MODULE_ATTRIBUTE` do modułu testowego *testModuleName*.
+Dodaje atrybuty zdefiniowane za pomocą co najmniej jednego makra `TEST_MODULE_ATTRIBUTE` do modułu testowego *testModuleName*.
 
 Makro `TEST_MODULE_ATTRIBUTE` definiuje atrybut o nazwie *AttributeName* i wartości *atrybutu AttributeValue*.
 
@@ -221,13 +221,13 @@ Te wstępnie zdefiniowane makra atrybutów są udostępniane jako wygoda dla typ
 TEST_OWNER(ownerAlias)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Owner` i wartością atrybutu *ownerAlias*.
+Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `Owner` i wartości atrybutu *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Description` i wartością atrybutu *Description*.
+Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `Description` i wartości atrybutu *Description*.
 
 ```cpp
 TEST_PRIORITY(priority)
@@ -239,7 +239,7 @@ Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Priority` i wartością atrybutu *pr
 TEST_WORKITEM(workitem)
 ```
 
-Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `WorkItem` i wartością atrybutu elementu *roboczego*.
+Definiuje `TEST_METHOD_ATTRIBUTE` o nazwie `WorkItem` i wartości atrybutu elementu *roboczego*.
 
 ```cpp
 TEST_IGNORE()
@@ -247,7 +247,7 @@ TEST_IGNORE()
 
 Definiuje `TEST_METHOD_ATTRIBUTE` z nazwą `Ignore` i wartością atrybutu `true`.
 
-## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
+## <a name="cppUnitTestAssert_h"></a>CppUnitTestAssert. h
 
 ### <a name="general_asserts"></a>Potwierdzenia ogólne
 
@@ -296,7 +296,7 @@ static void Assert::AreEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa ciągi w_char * są równe
+Sprawdź, czy dwa w_char * ciągi są równe
 
 ```cpp
 static void Assert::AreEqual(
@@ -341,7 +341,7 @@ static void Assert::AreNotEqual(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-Sprawdź, czy dwa ciągi w_char * nie są równe
+Sprawdź, czy dwa w_char * ciągi nie są równe
 
 ```cpp
 static void Assert::AreNotEqual(
@@ -555,7 +555,7 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
+## <a name="cppunittestlogger_h"></a>CppUnitTestLogger. h
 
 ### <a name="logger"></a>Rejestratora
 Klasa rejestratora zawiera statyczne metody do zapisu w **okno dane wyjściowe**.
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
-- [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
+- [Testowanie jednostkowe kodu](../test/unit-test-your-code.md)
+- [Zapisz testy jednostkowe dla C/C++](writing-unit-tests-for-c-cpp.md)

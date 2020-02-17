@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), ClangCompile task
 - ClangCompile task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747341"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275466"
 ---
 # <a name="clangcompile-task"></a>ClangCompile, zadanie
 
@@ -47,14 +47,14 @@ W poniższej tabeli opisano parametry zadania **ClangCompile** .
 |**EnableNeonCodegen**|Opcjonalny parametr **bool** .<br/><br/>Włącza generowanie kodu dla sprzętu zmiennoprzecinkowego NEONu. Dotyczy to tylko architektury ARM.|
 |**ExceptionHandling**|Opcjonalny parametr **ciągu** .<br/><br/>Określa model obsługi wyjątków, który ma być używany przez kompilator.<br/><br/>**Wyłączone**, Wyłącz obsługę wyjątków (Użyj `fno-exceptions`).<br/>**Włączone**, Włącz obsługę wyjątków (Użyj `fexceptions`).<br/>**UnwindTables**, generuje wszystkie potrzebne dane statyczne, ale nie ma wpływu na wygenerowany kod (Użyj `funwind-tables`).|
 |**FloatABI**|Opcjonalny parametr **ciągu** .<br/><br/>Opcja wyboru umożliwiająca wybranie ABI zmiennoprzecinkowego.<br/><br/>**soft**, powoduje, że kompilator generuje dane wyjściowe zawierające wywołania biblioteki dla operacji zmiennoprzecinkowych (Użyj `mfloat-abi=soft`).<br/>**softfp**, umożliwia generowanie kodu przy użyciu instrukcji zmiennoprzecinkowych sprzętu, ale nadal używa konwencji wywoływania miękkie-zmiennoprzecinkowych (Użyj `mfloat-abi=softfp`).<br/>**trudne**, umożliwia generowanie instrukcji zmiennoprzecinkowych i używa konwencji wywoływania specyficznych dla FPU (Użyj `mfloat-abi=hard`).|
-|**ForcedIncludeFiles**|Opcjonalny parametr **String []** .<br/><br/>Co najmniej jeden wymuszony plik dyrektywy include.<br/><br/>Użyj `-include [name]`.|
+|**ForcedIncludeFiles**|Opcjonalny parametr **String []** .<br/><br/>co najmniej jeden wymuszony plik dyrektywy include.<br/><br/>Użyj `-include [name]`.|
 |**FunctionLevelLinking**|Opcjonalny parametr **bool** .<br/><br/>Umożliwia kompilatorowi pakowanie poszczególnych funkcji w postaci spakowanych funkcji (COMDAT). Wymagane do edycji i kontynuowania pracy.<br/><br/>Użyj `ffunction-sections`.|
 |**GccToolChain**|Opcjonalny parametr **ciągu** .<br/><br/>Ścieżka folderu do łańcucha narzędzi programu w zatoce.|
 |**GNUMode**|Opcjonalny parametr **bool** .<br/><br/>|
 |**MSCompatibility**|Opcjonalny parametr **bool** .<br/><br/>Włącz pełną zgodność C++ z firmą Microsoft.|
-|**MSCompatibilityVersion**|Opcjonalny parametr **ciągu** .<br/><br/>Wartość oddzielona kropką reprezentująca numer wersji kompilatora firmy Microsoft do zgłoszenia w _MSC_VER (0 = nie określaj go (domyślnie)).|
+|**MSCompatibilityVersion**|Opcjonalny parametr **ciągu** .<br/><br/>Wartość oddzielona kropką reprezentująca numer wersji kompilatora firmy Microsoft do raportowania w _MSC_VER (0 = nie określaj go (domyślnie)).|
 |**MSExtensions**|Opcjonalny parametr **bool** .<br/><br/>Zaakceptuj niektóre niestandardowe konstrukcje obsługiwane przez kompilator firmy Microsoft.|
-|**MSCompilerVersion**|Opcjonalny parametr **ciągu** .<br/><br/>Numer wersji kompilatora firmy Microsoft do zgłoszenia w _MSC_VER (0 = nie należy definiować go (domyślnie)).|
+|**MSCompilerVersion**|Opcjonalny parametr **ciągu** .<br/><br/>Numer wersji kompilatora firmy Microsoft do raportowania w _MSC_VER (0 = nie określaj go (domyślnie)).|
 |**MSVCErrorReport**|Opcjonalny parametr **bool** .<br/><br/>Zgłoś błędy, których program Visual Studio może użyć do analizowania informacji dotyczących plików i wierszy.|
 |**ObjectFileName**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę do przesłaniania domyślnej nazwy pliku obiektu; może to być nazwa pliku lub katalogu.<br/><br/>Użyj `/Fo[name]`.|
 |**OmitFramePointers**|Opcjonalny parametr **bool** .<br/><br/>Pomija tworzenie wskaźników ramek na stosie wywołań.|
@@ -65,7 +65,7 @@ W poniższej tabeli opisano parametry zadania **ClangCompile** .
 |**PrecompiledHeaderOutputFileDirectory**|Opcjonalny parametr **ciągu** .<br/><br/>Określa katalog dla wygenerowanego prekompilowanego nagłówka. Ten katalog zostanie również dodany do **dodatkowych katalogów dołączanych** podczas kompilacji.|
 |**PrecompiledHeaderCompileAs**|Opcjonalny parametr **ciągu** .<br/><br/>Wybierz opcję języka kompilowania dla prekompilowanego pliku nagłówkowego.<br/><br/>Użyj `-x c-header`, `-x c++-header`.|
 |**PreprocessorDefinitions**|Opcjonalny parametr **String []** .<br/><br/>Definiuje symbole przetwarzania wstępnego dla pliku źródłowego.<br/><br/>Użyj `-D`.|
-|**RuntimeLibrary**|Opcjonalny parametr **ciągu** .<br/><br/>Określ bibliotekę środowiska uruchomieniowego do konsolidacji.<br/><br/>Użyj `MSVC /MT`, `/MTd`, `/MD` `/MDd` przełączniki.<br/><br/>**Wielowątkowy**, powoduje, że aplikacja korzysta z wielowątkowejej, statycznej wersji biblioteki wykonawczej.<br/>**MultiThreadedDebug**, definiuje _DEBUG i _MT. Ta opcja również powoduje, że kompilator umieszcza nazwę biblioteki LIBCMTD.lib w pliku .obj, tak aby konsolidator użył LIBCMTD.lib, aby rozwiązać zewnętrzne symbole.<br/>**MultiThreadedDLL**, powoduje, że aplikacja korzysta z biblioteki wykonawczej specyficznej dla wielowątkowej i biblioteki DLL. Definiuje _MT i _DLL i powoduje, że kompilator umieszcza nazwę biblioteki MSVCRT. lib w pliku. obj.<br/>**MultiThreadedDebugDLL**, definiuje _DEBUG, _MT i _DLL i powoduje, że aplikacja korzysta z biblioteki wykonawczej wielowątkowej-and dll. Powoduje też, że kompilator umieszcza nazwę biblioteki MSVCRTD.lib w pliku .obj.|
+|**RuntimeLibrary**|Opcjonalny parametr **ciągu** .<br/><br/>Określ bibliotekę środowiska uruchomieniowego do konsolidacji.<br/><br/>Użyj `MSVC /MT`, `/MTd`, `/MD``/MDd` przełączniki.<br/><br/>**Wielowątkowy**, powoduje, że aplikacja korzysta z wielowątkowejej, statycznej wersji biblioteki wykonawczej.<br/>**MultiThreadedDebug**, definiuje _DEBUG i _MT. Ta opcja również powoduje, że kompilator umieszcza nazwę biblioteki LIBCMTD.lib w pliku .obj, tak aby konsolidator użył LIBCMTD.lib, aby rozwiązać zewnętrzne symbole.<br/>**MultiThreadedDLL**, powoduje, że aplikacja korzysta z biblioteki wykonawczej specyficznej dla wielowątkowej i biblioteki DLL. Definiuje _MT i _DLL i powoduje, że kompilator umieszcza nazwę biblioteki MSVCRT. lib w pliku. obj.<br/>**MultiThreadedDebugDLL**, definiuje _DEBUG, _MT i _DLL i powoduje, że aplikacja korzysta z wersji biblioteki wykonawczej wielowątkowej i z biblioteką DLL. Powoduje też, że kompilator umieszcza nazwę biblioteki MSVCRTD.lib w pliku .obj.|
 |**RuntimeTypeInfo**|Opcjonalny parametr **bool** .<br/><br/>Dodaje kod do sprawdzania C++ typów obiektów w czasie wykonywania (informacje o typie środowiska uruchomieniowego).<br/><br/>Użyj `frtti`, `fno-rtti`.|
 |**ShowIncludes**|Opcjonalny parametr **bool** .<br/><br/>Generuje listę plików dołączanych z danymi wyjściowymi kompilatora.<br/><br/>Użyj `-H`.|
 |**Źródeł**|Wymagany parametr **ITaskItem []** .|
@@ -82,6 +82,6 @@ W poniższej tabeli opisano parametry zadania **ClangCompile** .
 |**Pełne**|Opcjonalny parametr **bool** .<br/><br/>Pokaż polecenia do uruchomienia i użyj pełnych danych wyjściowych.|
 |**WarningLevel**|Opcjonalny parametr **ciągu** .<br/><br/>Wybierz, jak ścisłość kompilator ma mieć wpływ na błędy kodu. Inne flagi należy dodać bezpośrednio do **dodatkowych opcji** (SE `/w`, `/Weverything`).<br/><br/>**TurnOffAllWarnings**powoduje wyłączenie wszystkich ostrzeżeń kompilatora (Użyj `w`).<br/>**Włącz wszystkie ostrzeżenia**, włącza wszystkie ostrzeżenia, w tym te wyłączone domyślnie (Użyj `Wall`).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
