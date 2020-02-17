@@ -2,24 +2,24 @@
 title: Najlepsze praktyki i przykłady (SAL)
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 601d90ed7e310f058fbf816469fef7374363951f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789781"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265141"
 ---
 # <a name="best-practices-and-examples-sal"></a>Najlepsze praktyki i przykłady (SAL)
 Oto kilka sposobów, aby maksymalnie wykorzystać możliwości języka z adnotacjami kodu źródłowego (SAL) i uniknąć niektórych typowych problemów.
 
 ## <a name="_in_"></a>\_w\_
 
-Jeśli funkcja ma być zapisu w elemencie, użyj `_Inout_` zamiast `_In_`. Jest to szczególnie istotne w przypadku zautomatyzowanej konwersji ze starszych makr na SAL. Przed SAL, wielu programistów używa makr jako komentarzy — makra o nazwach `IN`, `OUT`, `IN_OUT`lub wariantów tych nazw. Chociaż zalecamy przekonwertowanie tych makr na SAL, Zachęcamy również do pomyślnego przeprowadzenia konwersji, ponieważ kod może ulec zmianie od momentu zapisania oryginalnego prototypu, a stare makro może nie odzwierciedlać tego kodu. Należy zwrócić szczególną uwagę na to, że makro komentarza `OPTIONAL` jest często umieszczane nieprawidłowo — na przykład po niewłaściwej stronie przecinka.
+Jeśli funkcja ma być zapisu w elemencie, użyj `_Inout_` zamiast `_In_`. Jest to szczególnie istotne w przypadku zautomatyzowanej konwersji ze starszych makr na SAL. Przed SAL, wielu programistów używa makr jako komentarzy — makra o nazwach `IN`, `OUT`, `IN_OUT`lub wariantów tych nazw. Chociaż zalecamy przekonwertowanie tych makr na SAL, Zachęcamy również do pomyślnego przeprowadzenia konwersji, ponieważ kod może ulec zmianie od momentu zapisania oryginalnego prototypu, a stare makro może nie odzwierciedlać tego kodu. Należy zwrócić szczególną uwagę na to, że makro `OPTIONAL` comment jest często umieszczane nieprawidłowo — na przykład po niewłaściwej stronie przecinka.
 
 ```cpp
 
@@ -61,9 +61,9 @@ void Func2(_Out_ int *p1)
 }
 ```
 
-## <a name="_pre_defensive_-and-_post_defensive_"></a>\_\_obroną\_ i \_\_
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_\_obroną\_ i \_\_\_
 
-Jeśli funkcja pojawia się na granicy zaufania, zalecamy użycie adnotacji `_Pre_defensive_`.  Modyfikator "obrony" modyfikuje niektóre adnotacje, aby wskazać, że w punkcie wywołania interfejs powinien być dokładnie sprawdzony, ale w treści implementacji należy założyć, że można przekazywać nieprawidłowe parametry. W takim przypadku `_In_ _Pre_defensive_` jest preferowany przez granicę zaufania, aby wskazać, że mimo że obiekt wywołujący otrzyma błąd, jeśli próbuje przekazać wartość NULL, treść funkcji zostanie przeanalizowana tak, jakby parametr może mieć wartość NULL, a wszystkie próby odwołujące wskaźnik bez wcześniejszego sprawdzenie, czy dla wartości NULL zostanie oflagowane.  Adnotacja `_Post_defensive_` jest również dostępna do użycia w wywołaniach zwrotnych, w których zakłada się, że jest to obiekt wywołujący, a niezaufany kod jest wywoływanym kodem.
+Jeśli funkcja pojawia się na granicy zaufania, zalecamy użycie adnotacji `_Pre_defensive_`.  Modyfikator "obrony" modyfikuje niektóre adnotacje, aby wskazać, że w punkcie wywołania interfejs powinien być dokładnie sprawdzony, ale w treści implementacji należy założyć, że można przekazywać nieprawidłowe parametry. W takim przypadku `_In_ _Pre_defensive_` jest preferowany przez granicę zaufania, aby wskazać, że mimo że obiekt wywołujący otrzyma błąd, jeśli próbuje przekazać wartość NULL, treść funkcji zostanie przeanalizowana tak, jakby parametr może mieć wartość NULL, a wszystkie próby odwołujące się do wskaźnika bez wcześniejszego sprawdzenia dla wartości NULL zostaną oflagowane.  Adnotacja `_Post_defensive_` jest również dostępna do użycia w wywołaniach zwrotnych, w których zakłada się, że jest to obiekt wywołujący, a niezaufany kod jest wywoływanym kodem.
 
 ## <a name="_out_writes_"></a>\_\_zapisy\_
 
@@ -77,7 +77,7 @@ void Func1(_Out_writes_(size) CHAR *pb,
 );
 ```
 
-Adnotacja `_Out_writes_` oznacza, że masz bufor. Ma przydzieloną liczbę bajtów `cb` z pierwszym bajtem zainicjowanym przy zamykaniu. Ta Adnotacja nie jest ściśle zła i warto wyrazić przydzieloną wielkość. Nie informuje jednak o tym, ile elementów jest inicjowanych przez funkcję.
+Adnotacja `_Out_writes_` oznacza, że masz bufor. Przydzielono `cb` bajtów z pierwszym bajtem zainicjowanym przy zamykaniu. Ta Adnotacja nie jest ściśle zła i warto wyrazić przydzieloną wielkość. Nie informuje jednak o tym, ile elementów jest inicjowanych przez funkcję.
 
 W następnym przykładzie pokazano trzy poprawne sposoby w pełni określić dokładny rozmiar zainicjowanej części buforu.
 
@@ -185,7 +185,7 @@ Wyrażenie `result` odwołuje się do wartości po stanie, która jest niedostę
 
 ## <a name="true-in-_success_"></a>Wartość TRUE w \_sukcesu\_
 
-Jeśli funkcja powiedzie się, gdy wartość zwracana jest różna od zera, użyj `return != 0` jako warunek sukcesu zamiast `return == TRUE`. Wartość niezerowa nie musi oznaczać równoważności wartości rzeczywistej, która zapewnia kompilator dla `TRUE`. Parametr do `_Success_` jest wyrażeniem, a następujące wyrażenia są oceniane jako równoważne: `return != 0`, `return != false`, `return != FALSE`i `return` bez parametrów ani porównań.
+Jeśli funkcja powiedzie się, gdy wartość zwracana jest różna od zera, użyj `return != 0` jako warunku sukcesu, a nie `return == TRUE`. Wartość niezerowa nie musi oznaczać równoważności wartości rzeczywistej, która zapewnia kompilator dla `TRUE`. Parametr do `_Success_` jest wyrażeniem, a następujące wyrażenia są oceniane jako równoważne: `return != 0`, `return != false`, `return != FALSE`i `return` bez parametrów ani porównań.
 
 ```cpp
 // Incorrect
@@ -235,7 +235,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 W tym przykładzie `_Out_opt_` mówi, że wskaźnik może mieć wartość NULL w ramach warunku wstępnego. Nie można jednak zastosować warunków wstępnych do wartości zwracanej. W takim przypadku poprawna adnotacja jest `_Ret_maybenull_`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
 [Informacje o języku SAL](../code-quality/understanding-sal.md)  
