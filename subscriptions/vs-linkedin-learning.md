@@ -3,15 +3,15 @@ title: Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visu
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 02/12/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z uczenia serwisu LinkedIn dostępnych w ramach subskrypcji usługi LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099649"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278850"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio
 
@@ -22,7 +22,7 @@ Aby skorzystać z zalet uczenia LinkedIn, musisz mieć konto LinkedIn.  Jeśli j
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu LinkedIn:
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź kafelek uczenie serwisu LinkedIn w kategorii Edukacja i kliknij link **Pobierz kod** .
    > [!div class="mx-imgBorder"]
@@ -72,11 +72,11 @@ Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
 | Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
 | Visual Studio Professional z usługą GitHub Enterprise | Licencja | 3 miesiące      | Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | 3 miesiące                                             |  Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | 3 miesiące                                              | Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |POTRĄCON|
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  Nie dotyczy         |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              | Nie dotyczy         |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), program Visual Studio Industry partner (VSIP).  Wyklucza: Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  MCT & usług.*
 

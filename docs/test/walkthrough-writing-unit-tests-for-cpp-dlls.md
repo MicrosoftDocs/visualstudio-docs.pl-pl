@@ -1,20 +1,20 @@
 ---
-title: 'Instrukcje: Zapisz testy jednostkowe C++ dla bibliotek DLL'
+title: 'Instrukcje: zapisywanie testów jednostkowych dla C++ bibliotek DLL'
 ms.date: 06/13/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+author: corob-msft
+ms.openlocfilehash: 752a2bb53e25954824a1400ee178cd0cbf4adcf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661908"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275425"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: Zapisz testy jednostkowe C++ dla bibliotek DLL
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Instrukcje: zapisywanie testów jednostkowych dla C++ bibliotek DLL
 
 W tym przewodniku opisano sposób tworzenia natywnej C++ biblioteki DLL przy użyciu metodologii test-First. Podstawowe kroki są następujące:
 
@@ -36,9 +36,9 @@ W tym przewodniku opisano sposób tworzenia natywnej C++ biblioteki DLL przy uż
 
 ## <a name="create_test_project"></a>Utwórz natywny projekt testów jednostkowych
 
-1. Na **pliku** menu, wybierz **New** > **projektu**.
+1. W menu **plik** wybierz **Nowy** **projekt** > .
 
-     **Program Visual Studio 2017 i jego wcześniejsze wersje**: Rozwiń >  **test** **wizualizacji C++** **zainstalowanych szablonów** >  . > 
+     **Visual Studio 2017 i starsze**: rozwiń węzeł **zainstalowane** > **Szablony** > **Visual C++**  > **test**.
      **Visual Studio 2019**: Ustaw **Język** na C++ i wpisz "test" w polu wyszukiwania.
 
      Wybierz szablon **projektu natywnych testów jednostkowych** lub dowolną zainstalowaną platformę. Jeśli wybierzesz inny szablon, taki jak Google Test lub podwyższanie poziomu. test, podstawowe zasady są takie same, mimo że niektóre szczegóły będą się różnić.
@@ -51,11 +51,11 @@ W tym przewodniku opisano sposób tworzenia natywnej C++ biblioteki DLL przy uż
 
      Zwróć uwagę, że:
 
-    - Każdy test jest definiowana za pomocą `TEST_METHOD(YourTestName){...}`.
+    - Każdy test jest definiowany przy użyciu `TEST_METHOD(YourTestName){...}`.
 
          Nie trzeba napisać podpis konwencjonalnych funkcji. Podpis jest tworzony za pomocą makra TEST_METHOD. Makro generuje funkcją wystąpienia, która zwraca wartość void. Polecenie to generuje także funkcję statyczną, która zwraca informacje na temat metody testowej. Te informacje temu Eksplorator testów, można znaleźć metody.
 
-    - Metody testowe są pogrupowane według klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
+    - Metody testowe są pogrupowane w klasy przy użyciu `TEST_CLASS(YourClassName){...}`.
 
          Gdy testy są uruchamiane, tworzone jest wystąpienie każdej klasy testu. Metody testowe są wywoływane w nieokreślonej kolejności. Można zdefiniować specjalne metody, które są wywoływane przed i po każdym modułu, klasy lub metody.
 
@@ -70,7 +70,7 @@ W tym przewodniku opisano sposób tworzenia natywnej C++ biblioteki DLL przy uż
         }
         ```
 
-         Należy zauważyć, że `Assert` klasa udostępnia kilka metod statycznych, których można sprawdzić wyniki za pomocą metod testowych.
+         Należy zauważyć, że Klasa `Assert` dostarcza kilka metod statycznych, których można użyć do sprawdzenia wyników w metodach testowych.
 
     2. W menu **test** wybierz polecenie **Uruchom** > **wszystkie testy**.
 
@@ -88,11 +88,11 @@ W tym przewodniku opisano sposób tworzenia natywnej C++ biblioteki DLL przy uż
 
 Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2019.
 
-1. Utwórz C++ projekt za pomocą **Kreatora pulpitu systemu Windows**: Kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**. Ustaw **Język** na C++ , a następnie wpisz ciąg "Windows" w polu wyszukiwania. Z listy wyników wybierz pozycję **Kreator pulpitu systemu Windows** .
+1. Utwórz C++ projekt za pomocą **Kreatora pulpitu systemu Windows**: kliknij prawym przyciskiem myszy nazwę rozwiązania w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy projekt**. Ustaw **Język** na C++ , a następnie wpisz ciąg "Windows" w polu wyszukiwania. Z listy wyników wybierz pozycję **Kreator pulpitu systemu Windows** .
 
      W tym instruktażu projekt ma nazwę `RootFinder`.
 
-2. Naciśnij pozycję **Utwórz**. W następnym oknie dialogowym w obszarze **Typ aplikacji** wybierz **bibliotekę dołączaną dynamicznie (dll)** , a także sprawdź **symbole eksportu**.
+2. Kliknij przycisk **Utwórz**. W następnym oknie dialogowym w obszarze **Typ aplikacji** wybierz **bibliotekę dołączaną dynamicznie (dll)** , a także sprawdź **symbole eksportu**.
 
      Opcja **Eksportuj symbole** generuje wygodne makro, którego można użyć do zadeklarowania eksportowanych metod.
 
@@ -102,7 +102,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
      ![Nowy projekt kodu DLL i plik h z makrami interfejsu API](../test/media/utecpp07.png)
 
-     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione składowe klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport C++ w klasach](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione elementy członkowskie klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport C++ w klasach](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
 4. W pliku Principal *. cpp* Dodaj minimalną treść dla funkcji:
 
@@ -134,7 +134,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
      ![Nowy projekt kodu DLL i plik h z makrami interfejsu API](../test/media/utecpp07.png)
 
-     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione składowe klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport C++ w klasach](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+     Deklarator `__declspec(dllexport)` powoduje, że publiczne i chronione elementy członkowskie klasy są widoczne poza biblioteką DLL. Aby uzyskać więcej informacji, zobacz [using dllimport i dllexport C++ w klasach](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
 4. W pliku Principal *. cpp* Dodaj minimalną treść dla funkcji:
 
@@ -152,7 +152,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
 1. Dodaj projekt DLL do odwołań projektu projektu testowego:
 
-   1. Kliknij prawym przyciskiem myszy węzeł projektu testu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **odwołania**.
+   1. Kliknij prawym przyciskiem myszy węzeł projektu testowego w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **odwołanie**.
 
    2. W oknie dialogowym **Dodaj odwołanie** wybierz projekt DLL i wybierz pozycję **Dodaj**.
 
@@ -188,13 +188,13 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
     Nowy test pojawi się w **Eksploratorze testów**.
 
-5. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+5. W **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
     ![Test podstawowego Eksploratora &#45; testów jednostkowych zakończonych niepowodzeniem](../test/media/utecpp10.png)
 
    Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
 
-## <a name="iterate"></a> Iteracyjne Udoskonal testy i nadawać im przekazać
+## <a name="iterate"></a>Iteracyjnie rozszerza testy i przekazują je
 
 1. Dodaj nowy test:
 
@@ -243,7 +243,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
     }
     ```
 
-4. Kompiluj rozwiązanie, a następnie w polu **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+4. Skompiluj rozwiązanie, a następnie w **Eksploratorze testów**wybierz opcję **Uruchom wszystkie**.
 
      Kod przechodzi oba testy.
 
@@ -252,7 +252,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
     > [!TIP]
     > Tworzenie kodu, dodając jeden testów w danym momencie. Upewnij się, że po każdej iteracji kod przechodzi wszystkie testy.
 
-## <a name="debug"></a> Debuguj test niepowodzeniem
+## <a name="debug"></a>Debuguj test zakończony niepowodzeniem
 
 1. Dodaj inny test:
 
@@ -291,7 +291,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
 3. Otwórz (lub kliknij dwukrotnie) Test zakończony niepowodzeniem.
 
-     Potwierdzenie nie powiodło się, jest wyróżniona. Komunikat o błędzie jest widoczny w okienku szczegółów **Eksplorator testów**.
+     Potwierdzenie nie powiodło się, jest wyróżniona. Komunikat o błędzie jest widoczny w okienku szczegółów w **Eksploratorze testów**.
 
      ![NegativeRangeTests nie powiodło się.](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -299,7 +299,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
     1. Ustaw punkt przerwania na początku funkcji SquareRoot.
 
-    2. W menu skrótów testów zakończonych niepowodzeniem, wybierz **Debuguj wybrane testy**.
+    2. W menu skrótów testu zakończonego niepowodzeniem wybierz **Debuguj wybrane testy**.
 
          Po zatrzymaniu w punkcie przerwania Uruchom przejść przez kod.
 
@@ -326,7 +326,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, należy włączyć równoległe wykonywanie testów ![za&#95;pomocą&#45;przycisku](../test/media/ute_parallelicon-small.png) przełączania wykonaj parallelicon mały przełącznik na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+> Jeśli pojedyncze testy nie mają żadnych zależności, które uniemożliwiają ich uruchomienie w dowolnej kolejności, Włącz równoległe wykonywanie testów przy użyciu przycisku&#95;przełączania&#45;![wykonaj parallelicon Small](../test/media/ute_parallelicon-small.png) na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 
 ::: moniker-end
 
@@ -337,7 +337,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
 ::: moniker-end
 
-## <a name="refactor"></a> Refaktoryzacja kodu bez zmieniania testów
+## <a name="refactor"></a>Refaktoryzacja kodu bez zmiany testów
 
 1. Uprość Obliczanie centralne w funkcji SquareRoot:
 
@@ -366,7 +366,7 @@ Poniższe kroki pokazują, jak utworzyć projekt DLL w programie Visual Studio 2
 
    Istnieje również możliwość przydzielenia minimalnego poziomu pokrycia kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie testów jednostkowych do C++ istniejących aplikacji](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Korzystanie z elementu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

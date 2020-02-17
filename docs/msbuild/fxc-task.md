@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), FXC task
 - FXC task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 67958a1a1ebb2ff382d0896e2fbaec6105c0c785
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747325"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279285"
 ---
 # <a name="fxc-task"></a>FXC, zadanie
 
@@ -53,12 +53,12 @@ W poniższej tabeli opisano parametry zadania **fxc** .
 |**SetRootSignature**|Opcjonalny parametr **ciągu** .<br/><br/>Dołącz podpis główny do kodu bajtowego modułu cieniującego. Dostępne dla modelu modułu cieniującego 5,0 lub nowszego.<br/><br/>Użyj `/setrootsignature`.|
 |**ShaderModel**|Opcjonalny parametr **ciągu** .<br/><br/>Określa model programu do cieniowania. Niektóre typy cieniowania mogą być używane tylko z najnowszymi modelami programu do cieniowania.<br/><br/>Użyj `/T [type]_[model]`.|
 |**Program do cieniowania**|Opcjonalny parametr **ciągu** .<br/><br/>Określa typ cieniowania.<br/><br/>Użyj `/T [type]_[model]`.<br/><br/>**Efekt**, użyj `fx`.<br/>Użyj `vs`.<br/>**Piksel**, użyj `ps`.<br/>**Geometria**, użyj `gs`.<br/>**Kadłub**, użyj `hs`.<br/>**Domenę**, użyj `ds`.<br/>**Obliczenia**, użyj `cs`.<br/>**Biblioteka**, użyj `lib`.<br/>**RootSignature**, Generuj obiekt sygnatury głównej.|
-|**Zewnętrz**|Wymagany parametr **ITaskItem** .|
+|**Element źródłowy**|Wymagany parametr **ITaskItem** .|
 |**SuppressStartupBanner**|Opcjonalny parametr **bool** .<br/><br/>Pomija wyświetlanie transparentu startowego i komunikatu informacyjnego.<br/><br/>Użyj `/nologo`.|
 |**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .|
 |**TreatWarningAsError**|Opcjonalny parametr **bool** .<br/><br/>Traktuje wszystkie ostrzeżenia kompilatora jako błędy.<br/><br/>W przypadku nowego projektu najlepiej jest używać `/WX` we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni najmniejszą możliwą trudną do znalezienia wady kodu.|
 |**VariableName**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę zmiennej w pliku nagłówkowym.<br/><br/>Użyj `/Vn [name]`.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

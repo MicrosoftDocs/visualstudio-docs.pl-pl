@@ -5,8 +5,8 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 dev_langs:
 - CSharp
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 07b2c5e941d31ab1be853f9a89af94462329bdf2
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461482"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278810"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Rozwiązywanie problemów i Tworzenie dzienników dla programu MSBuild
 
@@ -116,8 +116,8 @@ Plik MSBuild. binlog zostanie utworzony w katalogu, w którym uruchomiono progra
 
 ## <a name="create-a-detailed-log"></a>Tworzenie szczegółowego dziennika
 
-1. Z menu głównego programu Visual Studio wybierz kolejno pozycje **Narzędzia** > **Opcje** > **projekty i rozwiązania** >**kompilacja i uruchomienie**.
-1. Ustaw **poziom szczegółowości kompilacji projektu programu MSBuild** na **szczegółowy** w obu polach kombi. Kontrolka Top 1 kompiluje poziom szczegółowości w **okno dane wyjściowe** , a druga kontrola w \<pliku ProjectName\>. log, który jest tworzony w katalogu pośrednim każdego projektu, podczas kompilacji.
+1. Z menu głównego programu Visual Studio przejdź do pozycji **narzędzia** > **Opcje** > **projekty i rozwiązania** >**kompilacja i uruchomienie**.
+1. Ustaw **poziom szczegółowości kompilacji projektu programu MSBuild** na **szczegółowy** w obu polach kombi. Jeden z pierwszych kontrolek kompiluje poziom szczegółowości w **okno dane wyjściowe** , a druga kontrolka kompiluje poziom szczegółowości w pliku \<ProjectName\>. log, który jest tworzony w katalogu pośrednim projektu, podczas kompilacji.
 2. W wierszu polecenia programu Visual Studio Developer wprowadź jedno z tych poleceń, zastępując rzeczywistą ścieżkę i wartości konfiguracji:
 
     ```cmd

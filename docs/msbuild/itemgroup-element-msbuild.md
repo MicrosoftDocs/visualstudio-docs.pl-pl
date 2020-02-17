@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588118bf31c5d310e947b02fda476a63d0d9df7a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cd21d7da710a82d9396766971244aa5f7f9bbd4d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573459"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278794"
 ---
 # <a name="itemgroup-element-msbuild"></a>Item, element (MSBuild)
 Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Każdy element użyty w projekcie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi być określony jako element podrzędny elementu `ItemGroup`.
@@ -33,7 +33,8 @@ Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild
 ## <a name="syntax"></a>Składnia
 
 ```xml
-<ItemGroup Condition="'String A' == 'String B'">
+<ItemGroup Condition="'String A' == 'String B'"
+           Label="Label">
     <Item1>... </Item1>
     <Item2>... </Item2>
 </ItemGroup>
@@ -42,11 +43,12 @@ Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
 W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
 |`Condition`|Atrybut opcjonalny. Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`Label`|Atrybut opcjonalny. Identyfikuje `ItemGroup`.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -58,8 +60,8 @@ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzęd
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
-| [Cel](../msbuild/target-element-msbuild.md) | Począwszy od .NET Framework 3,5, element `ItemGroup` może znajdować się wewnątrz elementu `Target`. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md). |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Począwszy od .NET Framework 3,5, element `ItemGroup` może znajdować się wewnątrz elementu `Target`. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Przykład
 Poniższy przykład kodu przedstawia zdefiniowane przez użytkownika kolekcje elementów `Res` i `CodeFiles` zadeklarowane wewnątrz elementu `ItemGroup`. Każdy element w kolekcji `Res` elementów zawiera zdefiniowany przez użytkownika element podrzędny [ItemMetadata —](../msbuild/itemmetadata-element-msbuild.md) .
@@ -81,7 +83,7 @@ Poniższy przykład kodu przedstawia zdefiniowane przez użytkownika kolekcje el
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)
 - [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)
