@@ -2,17 +2,17 @@
 title: Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 95b3af7db7fc0e4c71d78716714031fd07dbdab5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807071"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271775"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -59,7 +59,7 @@ Ten przykład ilustruje kilka ostrzeżeń, które mogą znaleźć C++ podstawowe
 
 - C26485 jest zakresem reguł. 3: brak zanikania tablicy do wskaźnika.
 
-- C26481 jest zakresem reguł. 1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.
+- C26481 jest zakresem reguł. 1: nie używaj arytmetyki wskaźnika. Zamiast tego użyj polecenia cmdlet `span`.
 
 Jeśli C++ podstawowe zestaw reguł analizy kodu są instalowane i włączane podczas kompilowania tego kodu, pierwsze dwa ostrzeżenia są wyjściowe, ale trzeci jest pomijany. Oto dane wyjściowe kompilacji z przykładowego kodu:
 
@@ -224,20 +224,20 @@ Należy ustawić kilka zmiennych środowiskowych i użyć odpowiednich opcji wie
 
 1. **Zmienne środowiskowe**
    - `set esp.extensions=cppcorecheck.dll` to nakazuje aparatowi załadowanie C++ modułu podstawowych wytycznych.
-   - `set esp.annotationbuildlevel=ignore` powoduje wyłączenie logiki, która przetwarza adnotacje SAL. Adnotacje nie wpływają na analizę kodu C++ w ramach sprawdzania podstawowych wytycznych, ale czas ich przetwarzania (czasami długi czas). To ustawienie jest opcjonalne, ale zdecydowanie zalecane.
+   - `set esp.annotationbuildlevel=ignore` spowoduje to wyłączenie logiki, która przetwarza adnotacje SAL. Adnotacje nie wpływają na analizę kodu C++ w ramach sprawdzania podstawowych wytycznych, ale czas ich przetwarzania (czasami długi czas). To ustawienie jest opcjonalne, ale zdecydowanie zalecane.
    - `set caexcludepath=%include%` zdecydowanie zalecamy wyłączenie ostrzeżeń, które są uruchamiane w standardowych nagłówkach. W tym miejscu możesz dodać więcej ścieżek, na przykład ścieżkę do wspólnych nagłówków w projekcie.
 2. **Opcje wiersza polecenia**
    - `/analyze` włącza analizę kodu (należy rozważyć także użycie/analyze: Only i/analyze: Quiet).
    - `/analyze:plugin EspXEngine.dll` ta opcja ładuje aparat rozszerzeń analizy kodu do przodu. Ten aparat, z kolei, ładuje C++ najważniejsze wskazówki.
 
 ## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki podstawowej pomocy technicznej
-Podstawowa Biblioteka pomocy technicznej została zaprojektowana w celu ułatwienia przestrzegania podstawowych wytycznych. GSL zawiera definicje, które umożliwiają zamianę konstrukcji podatnych na błędy z bezpieczniejszymi alternatywami. Na przykład można zastąpić parę `T*, length` parametrów z typem `span<T>`. GSL jest dostępny w [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, dzięki czemu można przeglądać źródła, wprowadzać komentarze lub współtworzyć. Projekt można znaleźć pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Podstawowa Biblioteka pomocy technicznej została zaprojektowana w celu ułatwienia przestrzegania podstawowych wytycznych. GSL zawiera definicje, które umożliwiają zamianę konstrukcji podatnych na błędy z bezpieczniejszymi alternatywami. Na przykład można zastąpić `T*, length` parę parametrów `span<T>` typem. GSL jest dostępny w [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, dzięki czemu można przeglądać źródła, wprowadzać komentarze lub współtworzyć. Projekt można znaleźć w [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Korzystanie z C++ podstawowych wskazówek dotyczących sprawdzania w projektach programu Visual Studio 2015
 
 W przypadku korzystania z C++ programu Visual Studio 2015 zestawy reguł analizy kodu podstawowego nie są instalowane domyślnie. Należy wykonać kilka dodatkowych kroków, aby można było włączyć podstawowe C++ narzędzia do analizy kodu w programie Visual Studio 2015. Firma Microsoft zapewnia pomoc techniczną dla projektów programu Visual Studio 2015 przy użyciu pakietu NuGet. Pakiet ma nazwę Microsoft. CppCoreCheck i jest dostępny w [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga co najmniej programu Visual Studio 2015 z aktualizacją Update 1.
 
-Pakiet instaluje również inny pakiet jako zależność, tylko w przypadku podstawowej biblioteki obsługi (GSL). GSL jest również dostępna w witrynie GitHub pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Pakiet instaluje również inny pakiet jako zależność, tylko w przypadku podstawowej biblioteki obsługi (GSL). GSL jest również dostępna w witrynie GitHub w [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 Ze względu na sposób ładowania reguł analizy kodu należy zainstalować pakiet NuGet Microsoft. CppCoreCheck w każdym C++ projekcie, który ma być sprawdzany w programie Visual Studio 2015.
 
@@ -253,6 +253,6 @@ Ze względu na sposób ładowania reguł analizy kodu należy zainstalować paki
 
    Pakiet NuGet dodaje do projektu dodatkowy plik MSBuild *. targets* , który jest wywoływany po włączeniu analizy kodu dla projektu. Ten plik *targets* dodaje C++ podstawowe reguły sprawdzania jako dodatkowe rozszerzenie narzędzia do analizy kodu programu Visual Studio. Po zainstalowaniu pakietu można użyć okna dialogowego strony właściwości, aby włączyć lub wyłączyć reguły wydane i eksperymentalne.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Podstawowe informacje C++ o sprawdzaniu programu Visual Studio](code-analysis-for-cpp-corecheck.md)

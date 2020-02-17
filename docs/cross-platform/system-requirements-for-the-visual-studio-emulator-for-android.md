@@ -1,6 +1,7 @@
 ---
 title: Wymagania systemowe dla emulatora programu Visual Studio dla systemu Android | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,20 +9,21 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272052"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dla emulatora programu Visual Studio dla systemu Android
 
 Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-v, technologia wirtualizacji systemu Windows 8 i nowszych. Aby uruchomić emulator, komputer musi spełniać wymagania do uruchomienia funkcji Hyper-V, zgodnie z opisem w tym temacie.
 
-Program instalacyjny próbuje dyskretnie konfigurowanie wymagań wstępnych dla Ciebie, po zainstalowaniu emulatora. Gdy Instalator pomyślnie skonfiguruje wymagania wstępne, emulator po prostu działa zgodnie z oczekiwaniami. W przeciwnym razie może być konieczne ręcznie włączyć te wymagania wstępne. Jeśli trzeba ręcznie skonfigurować wymagania wstępne narzędzia i kroki są te same kroki opisane [tutaj](/previous-versions/windows/apps/jj863509\(v=vs.105\)) emulatora Windows Phone.
+Program instalacyjny próbuje dyskretnie konfigurowanie wymagań wstępnych dla Ciebie, po zainstalowaniu emulatora. Gdy Instalator pomyślnie skonfiguruje wymagania wstępne, emulator po prostu działa zgodnie z oczekiwaniami. W przeciwnym razie może być konieczne ręcznie włączyć te wymagania wstępne. Aby ręcznie skonfigurować wymagania wstępne, kroki i narzędzia są takie same jak [w przypadku](/previous-versions/windows/apps/jj863509\(v=vs.105\)) emulatora Windows Phone.
 
 > [!IMPORTANT]
 > Program instalacyjny dla emulatora sprawdza wymagania wstępne dotyczące uruchamiania programu Visual Studio Emulator dla systemu Android. Wyświetla ostrzeżenia, jeśli wymagania wstępne nie są obecne, ale go nie wymaga.
@@ -63,7 +65,7 @@ Wymagania funkcji Hyper-V
 ## <a name="system-requirements"></a>Wymagania systemowe
  Komputer musi spełniać następujące wymagania:
 
-- Obsługa funkcji Hyper-V (zobacz [wymagania funkcji Hyper-V](#hyper-v-requirements))
+- Obsługa funkcji Hyper-V (zobacz [wymagania dotyczące funkcji Hyper-v](#hyper-v-requirements))
 
 - 6 GB lub więcej pamięci RAM.
 
@@ -107,8 +109,8 @@ Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane d
 
 |Wymaganie|Jak sprawdzić i włączyć to wymaganie|
 |-----------------|----------------------------------------------|
-|Musi być zainstalowana funkcja Hyper-V|Postępuj zgodnie z instrukcjami w tym samym umożliwia [Włączanie funkcji Hyper-V na emulator Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Sprawdź stan **zarządzania maszynami wirtualnymi funkcji Hyper-V** usługi w przystawce usługi.|
-|Musi być uruchomiona funkcja Hyper-V.|Aby uzyskać więcej informacji na temat zarządzania usługami zobacz następujące tematy:<br /><br /> -   [Uruchom, Zatrzymaj, Wstrzymaj, Wznów lub ponownego uruchomienia usługi](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Konfigurowanie sposobu uruchamiania usługi](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
+|Musi być zainstalowana funkcja Hyper-V|Postępuj zgodnie z tymi samymi instrukcjami, które są używane do [włączania funkcji Hyper-V dla emulatora Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Sprawdź stan usługi **zarządzania maszynami wirtualnymi funkcji Hyper-V** w przystawce usługi.|
+|Musi być uruchomiona funkcja Hyper-V.|Aby uzyskać więcej informacji na temat zarządzania usługami zobacz następujące tematy:<br /><br /> -   [Uruchamianie, zatrzymywanie, wstrzymywanie, wznawianie lub ponowne uruchamianie usługi](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [skonfigurować sposób uruchamiania usługi](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Musisz być członkiem lokalnej grupy Administratorzy funkcji Hyper-V.
 
@@ -124,7 +126,7 @@ Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane d
  Aby samodzielnie ręcznie dodać do grupy, otwórz lokalni użytkownicy i grupy w przystawce.
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Uruchamianie emulatora z rozruchowego dysku VHD nie jest obsługiwane
- W przypadku uruchamiania aplikacji w Visual Studio Emulator dla systemu Android, gdy używasz Windows rozruchowego dysku VHD emulator zazwyczaj trwa kilka minut, aby uruchomić lub nie została uruchomiona. Jeśli emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: Wdrażanie aplikacji nie powiodło się. Spróbuj ponownie.
+ W przypadku uruchamiania aplikacji w Visual Studio Emulator dla systemu Android, gdy używasz Windows rozruchowego dysku VHD emulator zazwyczaj trwa kilka minut, aby uruchomić lub nie została uruchomiona. Jeśli emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: Wdrażanie aplikacji nie powiodło się. Spróbuj ponownie później.
 
  Ta konfiguracja nie jest obsługiwana. Aby uzyskać informacje dotyczące problemów pokrewnych, zobacz [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
@@ -145,6 +147,6 @@ W systemie plików ReFS pliki wirtualnego dysku twardego nie może mieć zestaw 
 
 Emulatora do emulowania wywołania do procesora GPU, takich jak używane przez OpenGL ES komputer musi mieć zgodną jednostkę GPU DirectX przy użyciu odpowiednich sterowników DirectX zainstalowane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), GetOutOfDateItems task
 - GetOutOfDateItems task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747317"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272395"
 ---
 # <a name="getoutofdateitems-task"></a>GetOutOfDateItems, zadanie
 
@@ -44,6 +44,6 @@ W poniższej tabeli opisano parametry zadania **GetOutOfDateItems** .
 |**TLogDirectory**|Wymagany parametr **ciągu** .|
 |**TLogNamePrefix**|Wymagany parametr **ciągu** .|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

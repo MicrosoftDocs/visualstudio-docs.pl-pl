@@ -6,21 +6,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445633"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272322"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Szybki start: analiza kodu C/C++
 
-Jakość aplikacji można poprawić, uruchamiając analizę kodu regularnie w języku C lub C++ kodzie. Może to pomóc w znalezieniu typowych problemów, naruszeniu dobrych rozwiązań programistycznych lub wad, które trudno wykryć poprzez testowanie. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń kompilatora, ponieważ analiza kodu wyszukuje określone wzorce kodu, które są prawidłowe, ale mogą nadal tworzyć problemy dla Ciebie lub innych osób korzystających z Twojego kodu.
+Jakość aplikacji można poprawić, uruchamiając analizę kodu regularnie w języku C lub C++ kodzie. Może to pomóc w znalezieniu typowych problemów, naruszeniu dobrych rozwiązań programistycznych lub wad, które trudno wykryć poprzez testowanie. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ analiza kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu.
 
 ## <a name="configure-rule-sets-for-a-project"></a>Konfigurowanie zestawów reguł dla projektu
 
@@ -69,13 +69,13 @@ Aby przeanalizować określone ostrzeżenie, wybierz tytuł ostrzeżenia w Lista
 
 Po wybraniu ostrzeżenia wiersz kodu, który spowodował ostrzeżenie, jest wyróżniony w edytorze kodu programu Visual Studio.
 
-Po zrozumieniu problemu można go rozwiązać w kodzie. Następnie ponownie uruchom analizę kodu, aby upewnić się, że ostrzeżenie nie pojawia się już w Lista błędów i że poprawka nie zgłosiła żadnych nowych ostrzeżeń.
+Po zrozumieniu problem można rozwiązać, w kodzie. Następnie ponownie uruchom analizę kodu, aby upewnić się, że ostrzeżenie nie pojawia się już w Lista błędów i że poprawka nie zgłosiła żadnych nowych ostrzeżeń.
 
 ## <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
-Istnieją przypadki, w których można zrezygnować z naprawienia ostrzeżenia analizy kodu. Użytkownik może zdecydować, że rozwiązanie tego problemu wymaga zbyt dużo ponownego kodowania w odniesieniu do prawdopodobieństwa, że problem będzie występował w jakiejkolwiek rzeczywistej implementacji kodu. Można też zastanowić się, że analiza, która jest używana w ostrzeżeniu, jest nieodpowiedni dla danego kontekstu. Możesz pominąć poszczególne ostrzeżenia, aby nie były wyświetlane w Lista błędów.
+Istnieją terminy, gdy można zdecydować, Rezygnacja z naprawiania ostrzeżenie analizy kodu. Można zdecydować, rozpoznawanie ostrzeżenia wymaga zbyt dużo nagrywanie względem prawdopodobieństwo wystąpienia problemu w implementacji rzeczywistych swój kod. Lub może być uważa, że analizy, który jest używany w ostrzeżenia jest nieodpowiedni dla określonego kontekstu. Możesz pominąć poszczególne ostrzeżenia, aby nie były wyświetlane w Lista błędów.
 
-Aby pominąć ostrzeżenie:
+Aby pominąć Ostrzeżenie:
 
 1. Jeśli szczegółowe informacje nie są wyświetlane, wybierz tytuł ostrzeżenia, aby go rozwinąć.
 
@@ -83,7 +83,7 @@ Aby pominąć ostrzeżenie:
 
 3. Wybierz pozycję **Pomiń komunikat** , a następnie wybierz pozycję **w polu Źródło**.
 
-   Pomijanie komunikatu powoduje wstawienie `#pragma warning (disable:[warning ID])`, które pomija Ostrzeżenie dla wiersza kodu.
+   Pomijanie komunikatu powoduje wstawienie `#pragma warning (disable:[warning ID])`, który pomija Ostrzeżenie dla wiersza kodu.
 
 ## <a name="create-work-items-for-code-analysis-warnings"></a>Utwórz elementy robocze dla ostrzeżeń analizy kodu
 
@@ -101,12 +101,12 @@ Za pomocą funkcji śledzenia elementów roboczych można rejestrować usterki w
 
 ## <a name="search-and-filter-code-analysis-results"></a>Wyszukiwanie i filtrowanie wyników analizy kodu
 
-Można wyszukiwać długie listy komunikatów ostrzegawczych i filtrować ostrzeżenia w rozwiązaniach w ramach projektu.
+Możesz wyszukiwać długim spisem komunikaty ostrzegawcze i filtrować ostrzeżeń w rozwiązaniach dotyczących wielu projektów.
 
 - **Aby filtrować ostrzeżenia według tytułu lub identyfikatora ostrzeżenia**: Wprowadź słowo kluczowe w polu wyszukiwania.
 
 - **Aby filtrować ostrzeżenia według ważności**: domyślnie komunikaty analizy kodu są przypisywane ważności **ostrzeżenia**. Można przypisać ważność co najmniej jednego komunikatu jako **błąd** w niestandardowym zestawie reguł. W kolumnie **ważność** **Lista błędów**wybierz strzałkę listy rozwijanej, a następnie ikonę filtru. Wybierz **Ostrzeżenie** lub **błąd** , aby wyświetlić tylko te komunikaty, do których przypisano odpowiednią ważność. Wybierz **pozycję Zaznacz wszystko** , aby wyświetlić wszystkie komunikaty.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Analiza kodu dla języka C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

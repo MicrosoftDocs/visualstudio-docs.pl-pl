@@ -3,17 +3,17 @@ title: Poznanie SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807092"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271822"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 
@@ -45,7 +45,7 @@ Czy można sprawdzić, co to jest funkcja? Po zaimplementowaniu lub wywołaniu f
 
 Dokumentacja zawiera kilka bitów informacji, które sugerują, że Twój kod musi zachować pewne właściwości, aby zapewnić poprawność programu:
 
-- `memcpy` kopiuje `count` z bufora źródłowego do bufora docelowego.
+- `memcpy` kopiuje `count` bajtów z bufora źródłowego do bufora docelowego.
 
 - Bufor docelowy musi być co najmniej tak duży jak bufor źródłowy.
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy obiekty wywołujące przechodzą wskaźnik o wartości innej niż NULL do zainicjowanego buforu dla `pInt` i że przed zwróceniem `pInt` nadal jest niezerowe i bufor jest zainicjowany.
+Visual Studio Code Analysis sprawdza, czy wywołujący przekażą wskaźnik o wartości innej niż NULL do zainicjowanego buforu dla `pInt`i że przed zwróceniem `pInt` nadal nie ma wartości NULL i bufor jest zainicjowany.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Przykład: \_Inout\_opt\_ adnotacji
 
@@ -325,7 +325,7 @@ void OutPtrCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL dla `*pInt` i że bufor jest inicjowany przez funkcję przed zwróceniem.
+Visual Studio Code Analysis sprawdza, czy obiekt wywołujący przekazuje wskaźnik o wartości innej niż NULL dla `*pInt`i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Przykład: \_Outptr\_opt\_ adnotacji
 
@@ -357,11 +357,11 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed usunięciem odwołania do `*pInt`, i że bufor jest inicjowany przez funkcję przed zwróceniem.
+Visual Studio Code Analysis sprawdza, czy ta funkcja sprawdza wartość NULL przed usunięciem odwołania `*pInt` i że bufor jest inicjowany przez funkcję przed zwróceniem.
 
 ### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Przykład: adnotacja\_ \_powiodła się w połączeniu z \_out\_
 
-Adnotacje można stosować do większości obiektów.  W szczególności można dodać adnotacje do całej funkcji.  Jedną z najbardziej oczywistych cech funkcji jest to, że może ona zakończyć się powodzeniem lub niepowodzeniem. Ale podobnie jak skojarzenie między buforem i jego rozmiarem,C++ C/nie można ekspresować sukces lub Niepowodzenie funkcji. Korzystając z adnotacji `_Success_`, możesz powiedzieć, co się powiedzie dla funkcji.  Parametr do adnotacji `_Success_` jest tylko wyrażeniem, gdy wartość true wskazuje, że funkcja zakończyła się powodzeniem. Wyrażenie może być dowolne, co może obsłużyć Analizator adnotacji. Efekty adnotacji po zwracaniu funkcji są stosowane tylko wtedy, gdy funkcja się powiedzie. Ten przykład pokazuje, jak `_Success_` współdziała z `_Out_`, aby wykonać odpowiednie czynności. Możesz użyć słowa kluczowego `return`, aby przedstawić wartość zwracaną.
+Adnotacje można stosować do większości obiektów.  W szczególności można dodać adnotacje do całej funkcji.  Jedną z najbardziej oczywistych cech funkcji jest to, że może ona zakończyć się powodzeniem lub niepowodzeniem. Ale podobnie jak skojarzenie między buforem i jego rozmiarem,C++ C/nie można ekspresować sukces lub Niepowodzenie funkcji. Korzystając z adnotacji `_Success_`, możesz powiedzieć, co się powiedzie dla funkcji.  Parametr do adnotacji `_Success_` jest tylko wyrażeniem, gdy wartość true wskazuje, że funkcja zakończyła się powodzeniem. Wyrażenie może być dowolne, co może obsłużyć Analizator adnotacji. Efekty adnotacji po zwracaniu funkcji są stosowane tylko wtedy, gdy funkcja się powiedzie. Ten przykład pokazuje, jak `_Success_` współdziała z `_Out_`, aby wykonać odpowiednie czynności. Możesz użyć słowa kluczowego `return`, aby reprezentować wartość zwracaną.
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)
@@ -404,7 +404,7 @@ Można też dodać adnotacje do wszystkich parametrów, aby upewnić się, że z
 
 [Blog zespołu ds. analizy kodu](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Dodawanie adnotacji do parametrów funkcji i zwracanych wartości](../code-quality/annotating-function-parameters-and-return-values.md)

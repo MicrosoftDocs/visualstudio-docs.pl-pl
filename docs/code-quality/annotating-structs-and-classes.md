@@ -19,17 +19,17 @@ f1_keywords:
 - _Field_size_full_opt_
 - _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 0ebcd88df8508ae534ab51289016261193f54380
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879259"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271034"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 
@@ -45,7 +45,7 @@ Możesz dodawać adnotacje do struktury i składowych klas przy użyciu adnotacj
 
      Pole, które ma rozmiar możliwy do zapisu w elementach (lub bajtach) określonych przez `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)``_Field_size_bytes_part_opt_(size, count)`
 
      Pole, które ma zapisywalny rozmiar w elementach (lub bajtach) określony przez `size`i `count` tych elementów (bajtów), które można odczytać.
 
@@ -109,7 +109,7 @@ Uwagi dotyczące tego przykładu:
 - `_Field_range_` dla `bufferSize` określa, że wartość `bufferSize` powinna należeć do zakresu od 1 do `MaxBufferSize` (włącznie).
 - Końcowe wyniki `_Struct_size_bytes_` i `_Field_size_` adnotacji są równoważne. W przypadku struktur lub klas, które mają podobny układ, `_Field_size_` jest łatwiejsze do odczytania i konserwowania, ponieważ ma mniejszą liczbę odwołań i obliczeń niż odpowiednik `_Struct_size_bytes_`j adnotacji. `_Field_size_` nie wymaga konwersji do rozmiaru bajtowego. Jeśli rozmiar bajtu jest jedyną opcją, na przykład dla pola wskaźnika void, można użyć `_Field_size_bytes_`. Jeśli zarówno `_Struct_size_bytes_`, jak i `_Field_size_` istnieją, oba będą dostępne dla narzędzi. Jest to narzędzie, co należy zrobić, jeśli dwa adnotacje nie zgadzają się.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Informacje o języku SAL](../code-quality/understanding-sal.md)

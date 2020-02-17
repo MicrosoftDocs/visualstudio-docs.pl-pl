@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401017"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271812"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Wskazówki: analizowanie kodu C++ pod względem wad
 
@@ -39,7 +39,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
      Rozwiązanie demonstracyjne wypełnia teraz **Eksplorator rozwiązań**.
 
-2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+2. W menu **kompilacja** kliknij polecenie **Kompiluj ponownie rozwiązanie**.
 
      Rozwiązanie kompiluje się bez błędów lub ostrzeżeń.
 
@@ -169,7 +169,7 @@ W tym instruktażu pokazano, jak analizowaćC++ kod c/Code pod kątem potencjaln
 
      Projekt teraz kompiluje się bez żadnych ostrzeżeń lub błędów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Przewodnik: Analizowanie kodu zarządzanego pod kątem wad kodu](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [analizy kodu dla językaC++ C/](../code-quality/code-analysis-for-c-cpp-overview.md)

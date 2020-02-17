@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846908"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272284"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i konfigurowanie narzędzi do kompilacji przy użyciu systemu iOS
 
@@ -62,9 +62,9 @@ Aby zainstalować i użyć agenta zdalnego do opracowania kodu dla systemu iOS, 
 
    Jeśli chcesz przeprowadzić ręczne podpisywanie, musisz utworzyć profil aprowizacji dla swojej aplikacji. Aby uzyskać szczegółowe informacje na temat tworzenia profilów aprowizacji, zobacz [Tworzenie profilu aprowizacji programistycznej](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-- [Node. js](https://nodejs.org/) w wersji 8.11.3 i npm w wersji 5.6.0
+- [Node. js](https://nodejs.org/) w wersji 12.14.1 i npm w wersji 6.13.4
 
-   Zainstaluj wersję 8.11.3 środowiska Node. js na komputerze Mac. Jeśli instalujesz pakiet Node. js, powinien on mieć npm w wersji 5.6.0. Inne wersje środowiska Node. js i npm mogą nie obsługiwać niektórych modułów używanych w `vcremote`agenta zdalnego, co może spowodować niepowodzenie instalacji `vcremote`.
+   Zainstaluj wersję 12.14.1 środowiska Node. js na komputerze Mac. Jeśli instalujesz pakiet Node. js, powinien on mieć npm w wersji 6.13.4. Inne wersje środowiska Node. js i npm mogą nie obsługiwać niektórych modułów używanych w `vcremote`agenta zdalnego, co może spowodować niepowodzenie instalacji `vcremote`. Zalecamy zainstalowanie środowiska Node. js za pomocą Menedżera pakietów, takiego jak [Menedżer wersji węzła](https://nodejs.org/en/download/package-manager/#nvm). Należy unikać używania polecenia `sudo`, aby zainstalować program Node. js, ponieważ instalacja niektórych modułów nie powiedzie się podczas korzystania z `sudo`.
 
 ## <a name="Install"></a>Zainstaluj agenta zdalnego dla systemu iOS
 
@@ -74,11 +74,17 @@ Przed zainstalowaniem agenta zdalnego upewnij się, że spełniono [wymagania ws
 
 ### <a name="DownloadInstall"></a>Aby pobrać i zainstalować agenta zdalnego
 
-- Z poziomu aplikacji terminalowej na komputerze Mac wpisz:
+- W aplikacji terminalowej na komputerze Mac Sprawdź, czy używana wersja środowiska Node. js jest obecnie wymagana w wersji 12.14.1. Aby sprawdzić wersję, uruchom polecenie:
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  Jeśli nie jest to właściwa wersja, może być konieczne wykonanie instrukcji instalacji środowiska Node. js w sekcji wymagania wstępne. Następnie ponownie uruchom program Node. js.
 
-   Przełącznik instalacji globalnej ( **-g**) jest zalecany, ale nie jest wymagany.
+- Po sprawdzeniu wymaganego środowiska Node. js należy uruchomić to polecenie, aby zainstalować vcremote w ramach tej wersji środowiska Node. js:
+
+   `npm install -g --unsafe-perm vcremote`
+
+   Przełącznik instalacji globalnej ( **-g**) jest zalecany, ale nie jest wymagany. Jeśli nie używasz globalnego przełącznika instalacji, vcremote zostanie zainstalowany w ramach bieżącej aktywnej ścieżki w aplikacji terminalowej.
 
    Podczas instalacji `vcremote` jest zainstalowana i tryb dewelopera jest aktywowany na komputerze Mac. Instalowane są również [oprogramowania Homebrew](https://brew.sh/) i dwa pakiety npm, `vcremote-lib` i `vcremote-utils`. Po zakończeniu instalacji można bezpiecznie zignorować wszystkie ostrzeżenia dotyczące pominiętych zależności opcjonalnych.
 
@@ -278,6 +284,6 @@ Jeśli `ideviceinstaller` błędy, które nie mogą uzyskać dostępu do folderu
     
 Następnie ponownie sprawdź, czy `ideviceinstaller` może komunikować się z urządzeniem.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie aplikacji mobilnych dla wielu platform za pomocą programuC++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

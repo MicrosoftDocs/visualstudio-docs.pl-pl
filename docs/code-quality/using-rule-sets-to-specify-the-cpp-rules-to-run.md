@@ -4,17 +4,17 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ec2d9c812de9ec6be5ba5f42ca2a4484703d0b84
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445610"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271782"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Użyj zestawów reguł, aby określić C++ reguły do uruchomienia
 
@@ -38,7 +38,7 @@ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej na
 
      \- lub-
 
-   - Wybierz **\<Browse... >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
+   - Wybierz **\<Przeglądaj... >** , aby określić istniejący zestaw reguł, którego nie ma na liście.
 
 4. Wybierz pozycję **Otwórz** , aby wyświetlić reguły w edytorze zestawu reguł.
 
@@ -66,7 +66,7 @@ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej na
 
 - Aby zwinąć reguły we wszystkich grupach, wybierz pozycję **Zwiń wszystko**.
 
-- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz **\<None >** .
+- Aby zmienić pole, według którego reguły są grupowane, wybierz pole z listy **Grupuj według** . Aby wyświetlić reguły niezgrupowane, wybierz **\<brak >** .
 
 - Aby dodać lub usunąć pola w kolumnach reguł, wybierz **Opcje kolumn**.
 
@@ -82,7 +82,7 @@ Aby utworzyć nowy niestandardowy zestaw reguł, Zapisz go przy użyciu nowej na
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Aby utworzyć zestaw reguł w edytorze tekstu
 
-Można utworzyć niestandardowy zestaw reguł w edytorze tekstów, zapisać go w dowolnej lokalizacji z rozszerzeniem `.ruleset` i zastosować go przy użyciu opcji kompilatora [/analyze: zestaw reguł](/cpp/build/reference/analyze-code-analysis) .
+Można utworzyć niestandardowy zestaw reguł w edytorze tekstów, zapisać go w dowolnej lokalizacji z rozszerzeniem `.ruleset` i zastosować z użyciem opcji kompilatora [/analyze:](/cpp/build/reference/analyze-code-analysis) rule.
 
 Poniższy przykład przedstawia podstawowy plik zestawu reguł, którego można użyć jako punktu wyjścia:
 

@@ -3,17 +3,17 @@ title: C++Ostrzeżenia dotyczące podstawowych wytycznych
 ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
-author: mblome
-ms.author: mblome
+author: corob
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69adb52b4fa7649bd99ecb5d4e29aa69390f6076
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4bcd32d633c2b88bba53aa79b670a59bda1ebef3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807118"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271394"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Korzystanie z kontrolerów podstawowych wytycznych dotyczących języka C++
 
@@ -64,7 +64,7 @@ Ten przykład ilustruje kilka ostrzeżeń, które mogą znaleźć C++ podstawowe
 
 - C26485 jest zakresem reguł. 3: brak zanikania tablicy do wskaźnika.
 
-- C26481 jest zakresem reguł. 1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.
+- C26481 jest zakresem reguł. 1: nie używaj arytmetyki wskaźnika. Zamiast tego użyj polecenia cmdlet `span`.
 
 Jeśli C++ podstawowe zestaw reguł analizy kodu są instalowane i włączane podczas kompilowania tego kodu, pierwsze dwa ostrzeżenia są wyjściowe, ale trzeci jest pomijany. Oto dane wyjściowe kompilacji z przykładowego kodu:
 
@@ -222,13 +222,13 @@ Należy ustawić kilka zmiennych środowiskowych i użyć odpowiednich opcji wie
 
 ## <a name="use-the-guideline-support-library"></a>Korzystanie z biblioteki podstawowej pomocy technicznej
 
-Podstawowa Biblioteka pomocy technicznej została zaprojektowana w celu ułatwienia przestrzegania podstawowych wytycznych. GSL zawiera definicje, które umożliwiają zamianę konstrukcji podatnych na błędy z bezpieczniejszymi alternatywami. Na przykład można zastąpić parę `T*, length` parametrów z typem `span<T>`. GSL jest dostępny w [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, dzięki czemu można przeglądać źródła, wprowadzać komentarze lub współtworzyć. Projekt można znaleźć pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Podstawowa Biblioteka pomocy technicznej została zaprojektowana w celu ułatwienia przestrzegania podstawowych wytycznych. GSL zawiera definicje, które umożliwiają zamianę konstrukcji podatnych na błędy z bezpieczniejszymi alternatywami. Na przykład można zastąpić `T*, length` parę parametrów `span<T>` typem. GSL jest dostępny w [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). Biblioteka jest open source, dzięki czemu można przeglądać źródła, wprowadzać komentarze lub współtworzyć. Projekt można znaleźć w [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Korzystanie z C++ podstawowych wskazówek dotyczących sprawdzania w projektach programu Visual Studio 2015
 
 W przypadku korzystania z C++ programu Visual Studio 2015 zestawy reguł analizy kodu podstawowego nie są instalowane domyślnie. Należy wykonać kilka dodatkowych kroków, aby można było włączyć podstawowe C++ narzędzia do analizy kodu w programie Visual Studio 2015. Firma Microsoft zapewnia pomoc techniczną dla projektów programu Visual Studio 2015 przy użyciu pakietu NuGet. Pakiet ma nazwę Microsoft. CppCoreCheck i jest dostępny w [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Ten pakiet wymaga co najmniej programu Visual Studio 2015 z aktualizacją Update 1.
 
-Pakiet instaluje również inny pakiet jako zależność, tylko w przypadku podstawowej biblioteki obsługi (GSL). GSL jest również dostępna w witrynie GitHub pod adresem [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Pakiet instaluje również inny pakiet jako zależność, tylko w przypadku podstawowej biblioteki obsługi (GSL). GSL jest również dostępna w witrynie GitHub w [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 Ze względu na sposób ładowania reguł analizy kodu należy zainstalować pakiet NuGet Microsoft. CppCoreCheck w każdym C++ projekcie, który ma być sprawdzany w programie Visual Studio 2015.
 

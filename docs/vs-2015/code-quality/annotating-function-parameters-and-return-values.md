@@ -123,15 +123,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bd9107bed68b9b5b6f88a239b3b155440b0e654c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852394"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271618"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

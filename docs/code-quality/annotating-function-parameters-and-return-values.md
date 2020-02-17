@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879272"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271090"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 W tym artykule opisano typowe zastosowania adnotacji dla prostych parametrów funkcji — skalarnych i wskaźników do struktur i klas — i większości rodzajów buforów.  W tym artykule przedstawiono również typowe wzorce użycia dla adnotacji. Aby uzyskać dodatkowe adnotacje dotyczące funkcji, zobacz [Dodawanie adnotacji do zachowania funkcji](../code-quality/annotating-function-behavior.md).
@@ -528,7 +528,7 @@ Wartość zwracana przez funkcję przypomina parametr `_Out_`, ale znajduje się
 
 [Blog zespołu ds. analizy kodu](https://blogs.msdn.microsoft.com/codeanalysis/)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z adnotacji SAL w celu zmniejszenia liczby defektów kodu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 - [Informacje o języku SAL](../code-quality/understanding-sal.md)

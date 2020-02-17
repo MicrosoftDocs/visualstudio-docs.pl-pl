@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3856c658c4d3d2598b69cc9bf77f95c219b187b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590049"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271174"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
 Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy implementującej interfejs <xref:Microsoft.Build.Framework.ITask>. Począwszy od .NET Framework w wersji 4, można tworzyć zadania w tekście w pliku projektu. Nie trzeba tworzyć oddzielnego zestawu, aby hostować zadanie. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).
@@ -74,7 +74,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
      <ParameterGroup />
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage("Hello, world!", MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, "Hello, world!");
        </Code>
      </Task>
    </UsingTask>
@@ -121,7 +121,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
      </ParameterGroup>
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage(Text, MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, Text);
        </Code>
      </Task>
    </UsingTask>
@@ -256,7 +256,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 </Code>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Docelowe elementy](../msbuild/msbuild-targets.md)
