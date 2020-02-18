@@ -27,7 +27,7 @@
 ### Narzędzia
 #### [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
-#### [Platforma Azure rozliczana według bieżącego użycia](vs-azure-payg.md)
+#### [Azure DevTest — płatność zgodnie z rzeczywistym użyciem](vs-azure-payg.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility & Security](vs-ems.md)
@@ -84,7 +84,7 @@
 ### [Nadmierne alokacje](handle-overclaimed-license.md)
 ### [Maksymalne użycie](maximum-usage.md)
 ### [Wygasłe subskrypcje](handle-expired-license.md)
-### [Subskrybenci korzystający z aliasów](aliasing.md)
+### [Scenariusze logowania subskrybenta](aliasing.md)
 ### [Subskrybenci z logowaniem do osobistej poczty e-mail](personal-email-sign-ins.md)
 ### [Zarządzanie Visual Studio z usługą GitHub Enterprise](assign-github.md)
 # Resources
