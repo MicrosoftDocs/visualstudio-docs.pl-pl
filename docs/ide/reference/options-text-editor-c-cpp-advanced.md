@@ -196,7 +196,7 @@ Ukryj niepotwierdzone elementy w wynikach "Znajdź wszystkie odwołania". W przy
 
 Domyślnie po zaznaczeniu tekstu wszystkie wystąpienia tego samego tekstu są automatycznie wyróżniane w bieżącym dokumencie. Tę funkcję można wyłączyć, ustawiając **opcję Wyłącz podświetlanie odwołań** na **wartość true**.
 
-## <a name="text-editor"></a>Edytor tekstu
+## <a name="text-editor"></a>{1&gt;Edytor tekstu&lt;1}
 
 **Włącz opcję Otocz za pomocą nawiasów klamrowych**
 

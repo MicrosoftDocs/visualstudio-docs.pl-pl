@@ -24,7 +24,7 @@ ms.locfileid: "77278481"
 
 Jakość aplikacji można poprawić, uruchamiając analizę kodu regularnie w języku C lub C++ kodzie. Może to pomóc w znalezieniu typowych problemów, naruszeniu dobrych rozwiązań programistycznych lub wad, które trudno wykryć poprzez testowanie. Ostrzeżenia analizy kodu różnią się od błędów i ostrzeżeń, ponieważ analiza kodu szuka wzorców konkretnego kodu, które są prawidłowe, ale nadal można tworzyć problemy dla Ciebie lub innych osób używających Twojego kodu.  
   
-## <a name="in-this-topic"></a>W tym temacie:  
+## <a name="in-this-topic"></a>W tym temacie  
   
 - [Konfigurowanie zestawów reguł dla projektu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
   
