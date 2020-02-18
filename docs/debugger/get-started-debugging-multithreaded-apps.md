@@ -2,7 +2,7 @@
 title: Informacje o debugowaniu aplikacji wielowątkowych
 description: Debuguj przy użyciu stosów równoległych i równoległych okien zegarków w programie Visual Studio
 ms.custom: ''
-ms.date: 11/16/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e21d5174c9a909e9ad8031dfb7585abc52a7e78
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: f280a93022342fd9ca4dcae5cdac1de919fe1657
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091798"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416410"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Rozpocznij debugowanie aplikacji wielowątkowych (C#, Visual Basic,) C++
 
@@ -360,7 +360,7 @@ Można ustawić punkty przerwania w różnych warunkach, takich jak nazwa wątku
     > [!NOTE]
     > Po przejściu do debugera zostanie uruchomione wszystkie wątki. Jednak debuger nie będzie zawijany do kodu w innych wątkach, chyba że jeden z innych wątków trafi punkt przerwania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
