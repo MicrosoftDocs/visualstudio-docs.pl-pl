@@ -16,7 +16,7 @@
       href: quickstart-debug-with-managed.md
     - name: Debugowanie aplikacji w języku C++
       href: quickstart-debug-with-cplusplus.md
-    - name: Debugowanie aplikacji platformy ASP.NET
+    - name: Debugowanie aplikacji ASP.NET Core
       href: quickstart-debug-aspnet.md
 - name: Samouczki
   items:
