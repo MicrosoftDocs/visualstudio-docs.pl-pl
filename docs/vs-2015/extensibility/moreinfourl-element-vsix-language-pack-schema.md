@@ -1,5 +1,5 @@
 ---
-title: Element MoreInfoURL (VSIX Language Pack schemat) | Dokumentacja firmy Microsoft
+title: MoreInfoURL — element (schemat pakietu Language Pack VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b80f1f90f3e661b0bbd09fadf173cb171cd97df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c583d67e1920080f11158a4001e191e93e234006
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695484"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476838"
 ---
-# <a name="moreinfourl-element-vsix-language-pack-schema"></a>Element MoreInfoURL (schemat VSIX Language Pack)
+# <a name="moreinfourl-element-vsix-language-pack-schema"></a>MoreInfoURL — element (schemat pakietu językowego VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.  
+Opcjonalny. Link do zlokalizowanych informacji o rozszerzeniu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,33 +33,33 @@ Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Brak||  
+|None||  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Brak||  
+|None||  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Wymagana. Zawiera element główny pakietu językowego VSIX.|  
+|[Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Wymagany. Dostarcza element główny pakietu językowego VSIX.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
- Opcjonalna. Link do witryny sieci Web. Łącze jest ciąg tekstowy.  
+ Opcjonalny. Link do witryny sieci Web. Łącze jest ciągiem tekstowym.  
   
 ## <a name="element-information"></a>Informacje o elementach  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Przestrzeń nazw    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   Nazwa schematu   |                 VSIX Language Pack schematu                 |
+|    Przestrzeń nazw    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nazwa schematu   |                 Schemat pakietu Language Pack VSIX                 |
 | Plik walidacji |                VSIXLanguagePackSchema.xsd                 |
-|  Może być pusta   |                      Nie dotyczy                       |
+|  Może być puste   |                      Nie dotyczy                       |
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
+ [Dokumentacja schematu pakietu językowego VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110))

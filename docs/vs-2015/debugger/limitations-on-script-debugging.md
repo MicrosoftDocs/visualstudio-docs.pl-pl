@@ -1,5 +1,5 @@
 ---
-title: Ograniczenia debugowania skryptu | Dokumentacja firmy Microsoft
+title: Ograniczenia dotyczące debugowania skryptów | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,33 +18,33 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ea088eadc09d45d576dd3c9cd33e5d9e2d79fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f4f8f1e2fb014dc812bb5980d333e0a851f9222
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160629"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476814"
 ---
 # <a name="limitations-on-script-debugging"></a>Ograniczenia debugowania skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje debugowanie skryptu po stronie klienta, z zastrzeżeniem ograniczeń w tym temacie.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] obsługuje debugowanie skryptu po stronie klienta, zgodnie z ograniczeniami w tym temacie.  
   
-## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Ograniczenia dotyczące mapowanie punktów przerwania, za pomocą skryptu po stronie klienta  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można ustawić punkt przerwania w pliku po stronie serwera ASPX lub kodu HTML, który jest przekształcany w pliku po stronie klienta w czasie wykonywania. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mapuje punkt przerwania z pliku po stronie serwera do odpowiedniego punktu przerwania w pliku po stronie klienta, podlegają następującym ograniczeniom:  
+## <a name="limitations-on-breakpoint-mapping-with-client-side-script"></a>Ograniczenia dotyczące mapowania punktów przerwania za pomocą skryptu po stronie klienta  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwia ustawienie punktu przerwania w pliku ASPX lub HTML po stronie serwera, który jest przekształcany na plik po stronie klienta w czasie wykonywania. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mapuje punkt przerwania z pliku po stronie serwera do odpowiedniego punktu przerwania w pliku po stronie klienta, z uwzględnieniem następujących ograniczeń:  
   
-- Można ustawić punktów przerwania, wewnątrz `<script>` bloków. Punkty przerwania w skrypcie wbudowanych lub `<% %>` bloki nie mogą być mapowane.  
+- Punkty przerwania muszą być ustawione wewnątrz bloków `<script>`. Nie można zamapować punktów przerwania w skrypcie wbudowanym lub blokach `<% %>`.  
   
-- Adres URL przeglądarki dla strony musi zawierać nazwę strony. Na przykład http://microsoft.com/default.apsx. Mapowanie punktów przerwania nie może rozpoznać przekierowania z adresu takich jak http://microsoft.com do domyślnej strony.  
+- Adres URL przeglądarki dla strony musi zawierać nazwę strony. Na przykład `http://microsoft.com/default.apsx`. Mapowanie punktów przerwania nie może rozpoznać przekierowania z adresu, takiego jak `http://microsoft.com`, do domyślnej strony.  
   
-- Należy ustawić punkt przerwania w określonej w przeglądarce adres URL, a nie w pliku sterowania (ascx) ASPX strony głównej strony lub inny plik dołączony przez tę stronę. Nie można zamapować punkty przerwania ustawione na stronach uwzględnione.  
+- Punkt przerwania musi być ustawiony na stronie określonej w adresie URL przeglądarki, a nie w pliku kontrolki ASPX (ascx), stronie wzorcowej ani w innym pliku dołączonym do tej strony. Nie można zamapować punktów przerwania ustawionych na uwzględnionych stronach.  
   
-- Punkty przerwania ustawione w `<script defer=true>` bloki nie mogą być mapowane.  
+- Nie można zamapować punktów przerwania ustawionych w blokach `<script defer=true>`.  
   
-- Aby ustawić punktów przerwania w `<script id="">` bloków, mapowanie punktów przerwania ignoruje `id` atrybutu.  
+- W przypadku punktów przerwania ustawionych w blokach `<script id="">` mapowanie punktów przerwania ignoruje atrybut `id`.  
   
-## <a name="breakpoint-mapping-and-duplicate-lines"></a>Mapowanie punktów przerwania lub zduplikowane wiersze  
- Aby znaleźć odpowiedniej lokalizacji w skrypt po stronie serwera i klienta, algorytm mapowanie punktu przerwania sprawdza, czy kod w każdym wierszu. Algorytm przyjęto założenie, że każdy wiersz jest unikatowa. Jeśli co najmniej dwa wiersze zawierają ten sam kod, a następnie ustaw punkt przerwania na jednym z tych zduplikowane wiersze, algorytm mapowanie punktu przerwania wybrać zduplikowany problem w pliku po stronie klienta. Aby tego uniknąć, należy dodać komentarz do wiersza, w którym ustawiono punkt przerwania. Przykład:  
+## <a name="breakpoint-mapping-and-duplicate-lines"></a>Mapowanie punktów przerwania i zduplikowane linie  
+ Aby znaleźć odpowiednią lokalizację w skrypcie po stronie serwera i po stronie klienta, algorytm mapowania punktu przerwania bada kod w każdym wierszu. Algorytm zakłada, że każdy wiersz jest unikatowy. Jeśli co najmniej dwie linie zawierają ten sam kod i ustawisz punkt przerwania dla jednego z tych zduplikowanych wierszy, algorytm mapowania punktu przerwania może wybrać nieprawidłowy duplikat w pliku po stronie klienta. Aby tego uniknąć, Dodaj komentarz do wiersza, w którym ustawiono punkt przerwania. Na przykład:  
   
 ```  
 i++ ;  

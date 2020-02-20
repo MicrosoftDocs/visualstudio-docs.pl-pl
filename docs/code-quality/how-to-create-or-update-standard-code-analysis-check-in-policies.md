@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587540"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506506"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 
@@ -29,7 +29,7 @@ Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu i sto
 
 - Dla kodu zarządzanego ustawia się zasady ewidencjonowania, określając *zestaw reguł* , który zawiera podzbiór reguł analizy kodu.
 
-- W przypadku językaC++ C/Code w programie Visual Studio 2017 w wersji 15,6 lub starszej zasady ewidencjonowania wymagają uruchomienia wszystkich reguł analizy kodu. Można dodać dyrektywy poprzedzające procesor, aby wyłączyć określone reguły dla poszczególnych projektów kodu w projekcie usługi Azure DevOps. W 15,7 i nowszych można użyć **/analyze:** Rule, aby określić, które reguły mają być uruchamiane. Aby uzyskać więcej informacji, zobacz [używanie zestawów reguł do określania C++ reguł do uruchomienia](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- W przypadku językaC++ C/Code w programie Visual Studio 2017 w wersji 15,6 lub starszej zasady ewidencjonowania wymagają uruchomienia wszystkich reguł analizy kodu. Można dodać dyrektywy poprzedzające procesor, aby wyłączyć określone reguły dla poszczególnych projektów kodu w projekcie usługi Azure DevOps. W 15,7 i nowszych można użyć **/analyze:** Rule, aby określić, które reguły mają być uruchamiane. Aby uzyskać więcej informacji, zobacz [używanie zestawów reguł do określania C++ reguł do uruchomienia](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 Po określeniu zasad ewidencjonowania dla kodu zarządzanego członkowie zespołu mogą synchronizować swoje ustawienia analizy kodu dla projektów kodu z ustawieniami zasad projektu usługi Azure DevOps.
 
@@ -67,6 +67,6 @@ Z listy **Uruchom ten zestaw reguł** Użyj jednej z następujących metod:
 
 Aby uzyskać więcej informacji na temat sposobu tworzenia i implementowania niestandardowego zestawu reguł zaewidencjonowania, zobacz [implementowanie niestandardowych zasad ewidencjonowania dla kodu zarządzanego](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Implementowanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

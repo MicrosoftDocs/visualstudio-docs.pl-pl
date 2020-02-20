@@ -1,5 +1,5 @@
 ---
-title: Element LocalizedName (VSIX Language Pack schemat) | Dokumentacja firmy Microsoft
+title: Zlokalizowany element (schemat pakietu Language Pack VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbda9f8c7a98d0830c898c81471854efc3a6403
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686137"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477039"
 ---
-# <a name="localizedname-element-vsix-language-pack-schema"></a>Element LocalizedName (schemat VSIX Language Pack)
+# <a name="localizedname-element-vsix-language-pack-schema"></a>Zlokalizowany element (schemat pakietu Language Pack VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wymagana. Zlokalizowana nazwa rozszerzenia do zainstalowania.  
+Wymagany. Zlokalizowana nazwa rozszerzenia, które ma zostać zainstalowane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -33,33 +33,33 @@ Wymagana. Zlokalizowana nazwa rozszerzenia do zainstalowania.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Brak||  
+|None||  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Brak||  
+|None||  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Wymagana. Zawiera element główny pakietu językowego VSIX.|  
+|[Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Wymagany. Dostarcza element główny pakietu językowego VSIX.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
- Wymagana. Nazwa pakietu językowego w języku docelowym.  
+ Wymagany. Nazwa pakietu językowego w języku docelowym.  
   
 ## <a name="element-information"></a>Informacje o elementach  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Przestrzeń nazw    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
-|   Nazwa schematu   |                 VSIX Language Pack schematu                 |
+|    Przestrzeń nazw    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
+|   Nazwa schematu   |                 Schemat pakietu Language Pack VSIX                 |
 | Plik walidacji |                VSIXLanguagePackSchema.xsd                 |
-|  Może być pusta   |                      Nie dotyczy                       |
+|  Może być puste   |                      Nie dotyczy                       |
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   
+ [Dokumentacja schematu pakietu językowego VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Lokalizowanie pakietów VSIX](../extensibility/localizing-vsix-packages.md)   
- [Odwołanie do schematu 1.0 rozszerzenia VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Dokumentacja schematu rozszerzenia VSIX 1,0](/previous-versions/dd393700(v=vs.110))

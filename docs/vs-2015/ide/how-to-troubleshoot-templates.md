@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: acee84f582f2d6b8e2905e50db352cde794b73e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670610"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477082"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Porady: rozwiązywanie problemów z szablonami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Jeśli szablon nie zostanie załadowany w środowisku deweloperskim, istnieje kilka sposobów zlokalizowania problemu.
+Jeśli szablon nie są ładowane w środowisku deweloperskim, istnieją zlokalizowania problemu na kilka sposobów.
 
 ## <a name="validating-the-vstemplate-file"></a>Weryfikowanie pliku. vstemplate
  Jeśli plik. vstemplate w szablonie nie jest zgodny ze schematem szablonu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], szablon może nie pojawić się w oknie dialogowym **Nowy projekt** .
@@ -32,14 +32,14 @@ Jeśli szablon nie zostanie załadowany w środowisku deweloperskim, istnieje ki
 
 2. Wyodrębnij plik zip.
 
-3. W menu **plik** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kliknij pozycję **Otwórz**, a następnie kliknij pozycję **plik**.
+3. W menu **plik** w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]kliknij pozycję **Otwórz**, a następnie kliknij pozycję **plik**.
 
 4. Wybierz plik vstemplate szablonu, a następnie kliknij przycisk **Otwórz**.
 
 5. Sprawdź, czy plik XML pliku. vstemplate jest zgodny ze schematem szablonu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji na temat schematu. vstemplate, zobacz [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Aby uzyskać pomoc techniczną IntelliSense podczas tworzenia pliku. vstemplate, należy dodać atrybut `xmlns` do elementu `VSTemplate` i przypisać go do wartości http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Aby uzyskać pomoc techniczną IntelliSense podczas tworzenia pliku. vstemplate, należy dodać atrybut `xmlns` do elementu `VSTemplate` i przypisać go do wartości `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
 6. Zapisz i zamknij plik. vstemplate.
 

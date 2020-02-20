@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588619"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476871"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Tworzenie kodu w programie Visual Studio
 
@@ -24,7 +24,7 @@ Poznasz Edytor i utworzono jakiś kod. Teraz chcesz upewnić się, że kod dzia�
 
 ## <a name="build-your-code"></a>Tworzenie kodu
 
-Istnieją dwa podstawowe rodzaje konfiguracji kompilacji: **debugowania** i **wersji**. Konfiguracja **debugowania** generuje wolniejszy, większy plik wykonywalny, który umożliwia bogatsze interaktywne środowisko debugowania w czasie wykonywania. Plik wykonywalny **debugowania** nigdy nie powinien być dostarczany. Konfiguracja **wydania** kompiluje szybszy i zoptymalizowany plik wykonywalny, który jest odpowiedni do dostarczenia (co najmniej z perspektywy kompilatora). W domyślnej konfiguracji kompilacji **debugowania**.
+Istnieją dwa podstawowe typy konfiguracji kompilacji: **debugowanie** i **wydanie**. Konfiguracja **debugowania** generuje wolniejszy, większy plik wykonywalny, który umożliwia bogatsze interaktywne środowisko debugowania w czasie wykonywania. Plik wykonywalny **debugowania** nigdy nie powinien być dostarczany. Konfiguracja **wydania** kompiluje szybszy i zoptymalizowany plik wykonywalny, który jest odpowiedni do dostarczenia (co najmniej z perspektywy kompilatora). Domyślną konfiguracją kompilacji jest **debugowanie**.
 
 Najprostszym sposobem kompilowania projektu jest naciśnięcie klawisza **F7**, ale można również uruchomić kompilację, wybierając opcję **Kompiluj** > **Kompiluj rozwiązanie** z menu głównego.
 
@@ -78,7 +78,7 @@ Program Visual Studio zawiera wbudowany zestaw [.NET compiler platform analizato
 
 ### <a name="c-code-analysis"></a>C++Analiza kodu
 
-Aby analizować C++ kod, uruchom [analizę kodu statycznego](../code-quality/quick-start-code-analysis-for-c-cpp.md). Zapoznaj się z wykonywać, aby uruchomić go po usunięciu oczywistych błędów, które uniemożliwiają pomyślne skompilowanie, i Poświęć trochę czasu na wygenerowanie ostrzeżeń. Zarządzaniem mu towarzyszą się na siebie i możesz poznać kilka technik stylu kodu.
+Aby analizować C++ kod, uruchom [analizę kodu statycznego](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). Zapoznaj się z wykonywać, aby uruchomić go po usunięciu oczywistych błędów, które uniemożliwiają pomyślne skompilowanie, i Poświęć trochę czasu na wygenerowanie ostrzeżeń. Zarządzaniem mu towarzyszą się na siebie i możesz poznać kilka technik stylu kodu.
 
 Naciśnij klawisz **Alt**+**F11** (lub wybierz pozycję **Analizuj** > **Uruchom analizę kodu w rozwiązaniu** z górnego menu), aby rozpocząć analizę kodu statycznego.
 
@@ -162,11 +162,11 @@ Ponadto program Visual Studio Wyświetla okno **Narzędzia diagnostyczne** , w k
 
 Testy jednostkowe są pierwszym wierszem obrony przed usterkami kodu, ponieważ po prawidłowym przetestowaniu pojedynczej "jednostki" kodu, zazwyczaj pojedynczej funkcji i są łatwiejsze do debugowania niż w przypadku pełnego programu. Program Visual Studio instaluje platformy testów jednostkowych firmy Microsoft dla kodu zarządzanego i natywnego. Testowania jednostkowego umożliwia tworzenie testów jednostkowych, uruchamiaj je i raportuje o wynikach tych testów. Uruchom ponownie testy jednostkowe po wprowadzeniu zmian, aby sprawdzić, czy kod nadal działa poprawnie. W wersji Visual Studio Enterprise można uruchomić testy automatycznie po każdej kompilacji.
 
-Aby rozpocząć pracę, przeczytaj [Generowanie testów jednostkowych dla kodu za pomocą funkcji IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Aby rozpocząć, przeczytaj artykuł [generowanie testów jednostkowych dla kodu za pomocą IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 Aby dowiedzieć się więcej o testach jednostkowych w programie Visual Studio i sposobach tworzenia lepszych kodów jakości, Przeczytaj [podstawowe informacje o teście jednostkowym](../test/unit-test-basics.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)
 - [Dowiedz się więcej o korzystaniu z debugera](../debugger/index.yml)

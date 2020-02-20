@@ -2,7 +2,7 @@
 title: 'Samouczek: tworzenie prostej C# aplikacji konsolowej'
 description: Dowiedz się, jak C# utworzyć aplikację konsolową w programie Visual Studio, krok po kroku.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: e72cba384d3780c738c29698f74cbc3b4898bb04
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830008"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476726"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej C# aplikacji konsolowej w programie Visual Studio
 
@@ -28,13 +28,13 @@ W tym samouczku C#dla programu Program Visual Studio służy do tworzenia i uruc
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Aby rozpocząć, utworzymy projekt C# aplikacji. Typ projektu jest dostarczany z
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
+2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
    (Alternatywnie naciśnij **klawisze Ctrl**+**SHIFT**+**N**).
 
 3. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **C#** , a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nazwij ***Kalkulator***plików.
@@ -108,11 +108,11 @@ Jeśli szablon projektu **Aplikacja konsolowa (.NET Core)** nie jest widoczny, m
    
 ::: moniker-end
 
-## <a name="create-the-app"></a>Tworzenie aplikacji
+## <a name="create-the-app"></a>Tworzymy aplikację.
 
 Po pierwsze będziemy poznać część obliczeń w C#liczbie całkowitej. Następnie dodamy kod, aby utworzyć podstawowy Kalkulator. Następnie debugujemy aplikację w celu znalezienia i naprawienia błędów. A wreszcie będziemy udoskonalić kod w celu zwiększenia wydajności.
 
-### <a name="explore-integer-math"></a>Poznawanie matematyki całkowitoliczbowej
+### <a name="explore-integer-math"></a>Eksploruj liczbę całkowitą
 
 Zacznijmy od niektórych prostych obliczeń matematycznych w C#.
 
@@ -133,6 +133,9 @@ Zacznijmy od niektórych prostych obliczeń matematycznych w C#.
     ```
 
     Należy zauważyć, że po wykonaniu tej czynności funkcja IntelliSense w programie Visual Studio oferuje opcję Autouzupełnianie wpisu.
+
+    > [!NOTE]
+    > Poniższa animacja nie jest przeznaczona do duplikowania poprzedniego kodu. Tylko pokazuje, jak działa funkcja autouzupełniania.
 
     ![Animacja kodu matematycznego w postaci liczby całkowitej, który pokazuje funkcję Autouzupełnianie funkcji IntelliSense w środowisku IDE programu Visual Studio](./media/integer-math-intellisense.gif)
 
@@ -268,18 +271,21 @@ Jednak aplikacja generuje tylko wynik dziesiętny. Przyjrzyjmy się do kodu, aby
 
 Ulepszono nasze podstawowe aplikacje kalkulatora, ale nie ma jeszcze bezpieczeństwa w miejscu, w którym można obsługiwać wyjątki, takie jak błędy danych wejściowych użytkownika.
 
-Na przykład jeśli spróbujesz podzielić liczbę przez zero lub wprowadzić znak alfanumeryczny, gdy aplikacja oczekuje znaku numerycznego (lub odwrotnie), aplikacja przestanie działać i zwróci błąd.
+Na przykład jeśli spróbujesz podzielić liczbę przez zero lub wprowadzić znak alfanumeryczny, gdy aplikacja oczekuje znaku numerycznego (lub odwrotnie), aplikacja może przestać działać, zwracać błąd lub zwracać nieoczekiwany wynik nienumeryczny.
 
-Zapoznaj się z kilkoma typowymi błędami danych wejściowych użytkownika, Znajdź je w debugerze i napraw je w kodzie.
+Zapoznaj się z kilkoma typowymi błędami danych wejściowych użytkownika, Znajdź je w debugerze, jeśli się tam znajdują, i napraw je w kodzie.
 
->[!TIP]
->Aby uzyskać więcej informacji o debugerze i sposobie jego działania, zobacz [pierwsze spojrzenie na stronę debugera programu Visual Studio](../../debugger/debugger-feature-tour.md) .
+> [!TIP]
+> Aby uzyskać więcej informacji o debugerze i sposobie jego działania, zobacz [pierwsze spojrzenie na stronę debugera programu Visual Studio](../../debugger/debugger-feature-tour.md) .
 
 ### <a name="fix-the-divide-by-zero-error"></a>Popraw błąd "dzielenie przez zero"
 
-Podczas próby podzielenia liczby przez zero Aplikacja konsolowa zawiesza się. Program Visual Studio wyświetli następnie informacje o błędach w edytorze kodu.
+Przy próbie podzielenia liczby przez zero Aplikacja konsolowa może zostać zamrożona, a następnie pokazać, co jest niewłaściwe w edytorze kodu.
 
    ![Edytor kodu programu Visual Studio pokazuje błąd dzielenia przez zero](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> Czasami aplikacja nie zawiesza się, a debuger nie pokazuje błędu dzielenia przez zero. Zamiast tego aplikacja może zwrócić nieoczekiwany wynik nienumeryczny, taki jak symbol nieskończoności. Następująca poprawka kodu nadal ma zastosowanie.
 
 Zmieńmy kod, aby obsłużyć ten błąd.
 
@@ -321,7 +327,7 @@ Zamiast korzystać z klasy `program`, aby obsłużyć cały kod, podzielemy apli
 
 Klasa `Calculator` będzie obsługiwać zbiorczą ilość pracy obliczeniowej, a Klasa `Program` będzie obsługiwać interfejs użytkownika i przechwytywanie błędów.
 
-Zaczynamy!
+Zacznijmy.
 
 1. Usuń wszystko *po* następującym bloku kodu:
 
@@ -599,7 +605,7 @@ Gratulujemy wykonanie kroków tego samouczka! Aby dowiedzieć się jeszcze więc
 > [!div class="nextstepaction"]
 > [Kontynuuj, aby C# uzyskać więcej samouczków](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Dowiedz się C# , jak debugować kod w programie Visual Studio](tutorial-debugger.md)

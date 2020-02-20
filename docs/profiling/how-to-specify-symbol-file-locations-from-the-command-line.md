@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778729"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476886"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Instrukcje: Określanie lokalizacji plików symboli z wiersza polecenia
 Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wierszy, narzędzie wiersza polecenia VSPerfReport wymaga dostępu do symbolu (. *PDB*) plików profilowanych składników i plików systemu Windows. Pliki symboli są tworzone podczas kompilowania składnika. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automatycznie przeszukuje następujące lokalizacje plików symboli:
@@ -46,9 +46,9 @@ Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wiersz
 
 2. Użyj następującej składni, aby ustawić zmienną środowiskową **_NT_SYMBOL_PATH** lub opcję VSPerfReport/SymbolPath:
 
-    *LocalStore* **\\* SRV** **\*http://msdl.microsoft.com/download/symbols**
+    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    gdzie *localstore* jest ścieżką utworzonego katalogu lokalnego.
+    gdzie *<LocalStore>* jest ścieżką utworzonego katalogu lokalnego.
 
 ## <a name="specify-component-symbol-files"></a>Określ pliki symboli składników
  Narzędzia profilowania wyszukuje. pliki *PDB* składników, które mają być przełączone w ich oryginalnych lokalizacjach, które są przechowywane w składnikach lub w folderze, który zawiera plik danych profilowania. Możesz określić inne lokalizacje do przeszukania, dodając co najmniej jedną ścieżkę do **_NT_SYMBOL_PATH** lub opcji **/SymbolPath** . Rozdziel ścieżki średnikami.
@@ -56,7 +56,9 @@ Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wiersz
 ## <a name="example"></a>Przykład
  Poniższy wiersz polecenia ustawia zmienną środowiskową **_NT_SYMBOL_PATH** na serwer symboli systemu Windows i katalog lokalny do **C:\symbols**.
 
- **Ustaw _NT_SYMBOL_PATH = SRV\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
+ ```cmd
+  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
+ ```
 
  Poniższy wiersz polecenia VSPerfReport dodaje katalog *C:\Projects\Symbols* do ścieżki wyszukiwania przy użyciu opcji **/SymbolPath** .
 

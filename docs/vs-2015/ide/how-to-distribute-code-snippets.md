@@ -11,19 +11,19 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667961"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476987"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Porady: rozprowadzanie wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po prostu możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swoich komputerach za pomocą Menedżera fragmentów kodu. Jeśli jednak masz kilka fragmentów do dystrybucji lub chcesz ich szerzej rozpowszechniać, Dołącz plik fragmentu do rozszerzenia programu Visual Studio, które użytkownicy programu Visual Studio mogą instalować.
 
- Aby utworzyć rozszerzenia programu Visual Studio, należy zainstalować zestaw SDK programu Visual Studio. Znajdź wersję VSSDK zgodną z instalacją programu Visual Studio na stronie [pobierania programu Visual studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).
+ Aby utworzyć rozszerzenia programu Visual Studio, należy zainstalować zestaw SDK programu Visual Studio. Znajdź wersję VSSDK zgodną z instalacją programu Visual Studio na stronie [pobierania programu Visual studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="setting-up-the-extension"></a>Konfigurowanie rozszerzenia
  W ramach tej procedury będziemy używać tego samego fragmentu kodu Hello world utworzonego w [przewodniku: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md). Dostarczymy tekst fragmentu, więc nie trzeba go wycofać i utworzyć.
@@ -62,7 +62,7 @@ Po prostu możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swo
 
 2. Przenieś plik fragmentu kodu do folderu **HelloWorldVB** .
 
-3. Wybierz plik fragmentu kodu w Eksplorator rozwiązań, a w oknie **Właściwości** upewnij się, że **Akcja kompilacja** jest ustawiona na **zawartość**, w polu **Kopiuj do katalogu wyjściowego** jest ustawiona wartość **Kopiuj zawsze**i **Uwzględnij w VSIX** opcję **"prawda"** .
+3. Wybierz plik fragmentu kodu w Eksplorator rozwiązań, a w oknie **Właściwości** upewnij się, że **Akcja kompilacja** jest ustawiona na **zawartość**, w polu **Kopiuj do katalogu wyjściowego** jest ustawiona wartość **Kopiuj zawsze**, a dla opcji Dołącz do pliku **VSIX** wybierz pozycję **prawda**.
 
 #### <a name="adding-the-pkgdef-file"></a>Dodawanie pliku. pkgdef
 
@@ -80,7 +80,7 @@ Po prostu możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swo
 
      Po sprawdzeniu tego klucza można zobaczyć, jak określić różne języki.
 
-3. Wybierz plik. pkgdef w Eksplorator rozwiązań, a w oknie **Właściwości** upewnij się, że **Akcja kompilacja** jest ustawiona na **zawartość**, w polu **Kopiuj do katalogu wyjściowego** jest ustawiona wartość **Kopiuj zawsze**i **Dołącz** do ustawienia.
+3. Wybierz plik. pkgdef w Eksplorator rozwiązań, a w oknie **Właściwości** upewnij się, że **Akcja kompilacja** jest ustawiona na **zawartość**, w polu **Kopiuj do katalogu wyjściowego** jest ustawiona wartość **Kopiuj zawsze**, a dla opcji Dołącz do pliku **VSIX** wybierz pozycję **prawda**.
 
 4. Dodaj plik. pkgdef jako element zawartości w manifeście VSIX. W pliku source. Extension. vsixmanifest przejdź do karty **zasoby** , a następnie kliknij przycisk **Nowy**.
 
@@ -90,7 +90,7 @@ Po prostu możesz nadać swoim znajomym fragmenty kodu i zainstalować je na swo
 
 1. Teraz można upewnić się, że fragment kodu działa w eksperymentalnym wystąpieniu programu Visual Studio. Eksperymentalne wystąpienie to druga kopia programu Visual Studio, która jest oddzielona od użytego do pisania kodu. Umożliwia pracę nad rozszerzeniem bez wpływu na środowisko deweloperskie.
 
-2. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone drugie wystąpienie programu Visual Studio.
+2. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinno zostać wyświetlone drugie wystąpienie programu Visual Studio.
 
 3. W eksperymentalnym wystąpieniu przejdź do pozycji **Tools/Code wstaweks Manager** i ustaw **Język** na **Basic**. Powinien być widoczny HelloWorldVB jako jeden z folderów i można rozwinąć folder, aby wyświetlić fragment kodu HelloWorldVB.
 

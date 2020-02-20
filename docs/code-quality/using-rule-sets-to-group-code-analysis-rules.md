@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a49f208fe3c60dfb8b9e20c83675cc43f1efb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587176"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506469"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Korzystanie z zestawów reguł do grupowania reguł analizy kodu
 
@@ -24,7 +24,7 @@ Podczas konfigurowania analizy kodu w programie Visual Studio można wybrać jed
 
 Zestaw reguł można dostosować, dodając lub usuwając reguły lub zmieniając jego wystąpienia tak, aby były wyświetlane jako ostrzeżenia lub błędy w **Lista błędów**. Dostosowane zestawy reguł mogą spełnić potrzeby konkretnego środowiska do tworzenia oprogramowania. Po dostosowaniu zestawu reguł Edytor zestawu reguł zawiera narzędzia do wyszukiwania i filtrowania, które ułatwiają proces.
 
-Zestawy reguł są dostępne dla [analizy kodu zarządzanego](analyzer-rule-sets.md), [starszej analizy kodu zarządzanego](how-to-configure-code-analysis-for-a-managed-code-project.md)i [ C++ analizy kodu](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+Zestawy reguł są dostępne dla [analizy kodu zarządzanego](analyzer-rule-sets.md), [starszej analizy kodu zarządzanego](how-to-configure-code-analysis-for-a-managed-code-project.md)i [ C++ analizy kodu](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Format zestawu reguł
 
@@ -67,6 +67,6 @@ Zestaw reguł dla projektu jest określany przez właściwość **CodeAnalysisRu
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Informacje o zestawie reguł analizy kodu](../code-quality/rule-set-reference.md)

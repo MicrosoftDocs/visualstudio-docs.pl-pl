@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Informacje o responsibilty administratorów dotyczące przeprowadzania spisów przedprodukcyjnych
-ms.openlocfilehash: 0eacd177b0901d866bbb974aca81a0e77cdaf25d
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439124"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476742"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Spis środowiska przedprodukcyjnego
 Subskrypcje programu Visual Studio upraszczają zarządzanie zasobami przez zliczanie użytkowników, a nie urządzeń.
@@ -37,7 +37,8 @@ Dowiedz się więcej o odpowiedzialności dla administratorów:
 - Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
-- [Dokumentacja platformy Azure](/azure/)
-- [Dokumentacja Microsoft 365](/microsoft-365/)
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+

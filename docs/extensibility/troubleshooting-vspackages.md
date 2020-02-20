@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718717"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506399"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 Poniżej przedstawiono typowe problemy, które mogą mieć pakietu VSPackage i porady dotyczące rozwiązywania problemów.
@@ -99,7 +99,7 @@ Poniżej przedstawiono typowe problemy, które mogą mieć pakietu VSPackage i p
 
     2. Dodaj następującą **lokalizację pliku symboli (. pdb)** :
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. Aby zwiększyć wydajność, określ folder pamięci podręcznej symboli, na przykład:
 
@@ -123,5 +123,5 @@ Poniżej przedstawiono typowe problemy, które mogą mieć pakietu VSPackage i p
 
    Upewnij się, że wpis InprocServer32 ma poprawną ścieżkę do biblioteki dll pakietu VSPackage.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakiety VSPackage](../extensibility/internals/vspackages.md)

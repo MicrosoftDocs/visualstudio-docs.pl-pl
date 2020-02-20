@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144787"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506513"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Generuj kod źródłowy z zestawów .NET podczas debugowania
 
@@ -82,13 +82,13 @@ Podczas debugowania kodu, który został dekompilowany z zestawu, który został
 - Zmienne lokalne mogą nie mieć dokładnych nazw.
 - Niektóre zmienne mogą nie być dostępne do oceny.
 
-Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [IChsarpCompiler. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [ICSharpCode. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="decompilation-reliability"></a>Niezawodność dekompilacji
 
 Stosunkowo niewielki procent prób dekompilacji może skutkować niepowodzeniem. Jest to spowodowane błędem odwołania o wartości null punktu sekwencji w ILSpy.  Wyeliminowano błąd, przechwytując te problemy i łagodnie kończy się niepowodzeniem podczas próby dekompilacji.
 
-Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [IChsarpCompiler. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
+Więcej szczegółów można znaleźć w temacie problem z usługą GitHub: [ICSharpCode. dekompilator — informacje Integration w debugerze programu vs](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="limitations-with-async-code"></a>Ograniczenia związane z kodem asynchronicznym
 

@@ -6,18 +6,21 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
-ms.openlocfilehash: d6ce32b0478b145b7d1814efa3738664ee622cf5
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439169"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476824"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio
 W zależności od posiadanej subskrypcji programu Visual Studio może być dostępna szeroka gama tytułów oprogramowania firmy Microsoft.  W tym artykule przedstawiono sposób lokalizowania i pobierania oprogramowania potrzebnego do maksymalnego wykorzystania subskrypcji. 
 
 > [!NOTE]
 > Na stronie [pliki do pobrania](https://my.visualstudio.com/downloads/featured) są wyświetlane tylko pobrane elementy dołączone do subskrypcji.  Jeśli masz więcej niż jedną subskrypcję lub członkostwo w programie, pokazywane pliki do pobrania będą dotyczyć najwyższej wstrzymanej **subskrypcji** , nawet jeśli obecnie jest wyświetlana inna subskrypcja.  Jeśli na przykład masz subskrypcję Visual Studio Enterprise i subskrypcję Visual Studio Professional skojarzoną z tym samym IDENTYFIKATORem logowania, wyświetlone pliki do pobrania będą uwzględnione w subskrypcji przedsiębiorstwa, nawet jeśli obecnie są wyświetlane korzyści z subskrypcji dla profesjonalistów.
+
+> [!NOTE]
+> Mamy świadomość problemu dotyczącego dostępności kluczy produktu pakietu Office 365.  Analizujemy przyczynę i aktualizujemy ten artykuł po rozwiązaniu problemu. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak mogę znaleźć pliki do pobrania w portalu subskrybenta?
 Po odwiedzeniu strony [pliki do pobrania](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) zobaczysz popularne pliki do pobrania ułożone w grupach według typu produktu.  Możesz wybrać jeden z popularnych plików do pobrania lub poszukać dowolnego produktu, korzystając z paska wyszukiwania w górnej części strony.
@@ -53,7 +56,8 @@ Aby dowiedzieć się więcej na temat lokalizowania, zgłaszania i eksportowania
 - [Znajdź i przejmij klucze](find-keys.md)
 
 ## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
-- [Dokumentacja platformy Azure](/azure/)
-- [Dokumentacja Microsoft 365](/microsoft-365/)
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
