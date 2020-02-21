@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 129a5551d04e8e9552b6d788f066c7c9df636f67
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
-ms.translationtype: HT
+ms.openlocfilehash: 4058c75b2282b6fb77c3026c3667a470d6b9fd92
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453372"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476875"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -135,7 +135,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Visual Studio Online | \*. online.visualstudio.com | https | 443 | Używane do wywoływania interfejsów API usługi Visual Studio Online |
 | Automatyczne pobieranie typu JavaScript | registry.npmjs.org | https | 443 | Służy do instalowania definicji typów TypeScript w celu zapewnienia funkcji IntelliSense dla popularnych bibliotek JavaScript |
 | Usługa licencjonowania subskrypcji programu Visual Studio | app.vssps.visualstudio.com/apis/Licensing/ClientRights | https | 443 | Licencjonowanie aktywacji w trybie online |
-| Debuger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/OneCore.msvsmon. plik\*. zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.commsdl.microsoft.com/download/symbols | https | 443 | 1. <br>Służy do pobierania BITS debugera dla debugowania .NET Core w systemie UNIX/MacOS za pośrednictwem protokołu SSH <br><br>2. <br>Służy do pobierania BITS debugera dla zdalnego debugowania kontenerów platformy Docker systemu Windows<br><br> 3. używane do wykonywania kroków źródłowych programu .NET Framework <br><br> 4. <br>(Jeśli założenia użytkownika) Służy do pobierania symboli publikowanych na serwerze symboli nuget.org.<br><br> 5. (Jeśli użytkownik zdecyduje się na) służący do pobierania symboli i plików binarnych firmy Microsoft, może być również wymagany do debugowania kodu zarządzanego w zrzutach |
+| Debuger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/OneCore.msvsmon. plik\*. zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https | 443 | 1. <br>Służy do pobierania BITS debugera dla debugowania .NET Core w systemie UNIX/MacOS za pośrednictwem protokołu SSH <br><br>2. <br>Służy do pobierania BITS debugera dla zdalnego debugowania kontenerów platformy Docker systemu Windows<br><br> 3. używane do wykonywania kroków źródłowych programu .NET Framework <br><br> 4. <br>(Jeśli założenia użytkownika) Służy do pobierania symboli publikowanych na serwerze symboli nuget.org.<br><br> 5. (Jeśli użytkownik zdecyduje się na) służący do pobierania symboli i plików binarnych firmy Microsoft, może być również wymagany do debugowania kodu zarządzanego w zrzutach |
 | Visual Studio Online| \*. online.visualstudio.com | https | 443 | Używane do wywoływania interfejsów API usługi Visual Studio Online |
 | Publikowanie aplikacji platformy Xamarin dla systemu Android | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https | 443 | Służy do współpracy z usługą Sklep Google Play do publikowania/przekazywania aplikacji platformy Xamarin Android bezpośrednio z programu Visual Studio. |
 | Azure Container Registry | *. azurecr.io | https | 443 | Dostęp do rejestrów kontenerów hostowanych na platformie Azure w celu skonfigurowania potoków CICD |
