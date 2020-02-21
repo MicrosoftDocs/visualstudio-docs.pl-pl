@@ -11,22 +11,22 @@ ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: 78786e6e6e7a8e5d8a8766138cb1a54a49416f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
+ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610891"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77544541"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Dodaj brakujące użycia w programie Visual Studio
 
-Ta generacja kodu ma zastosowanie do:
+Dotyczy to generowanie kodu:
 
 - C#
 
 **Co:** Umożliwia natychmiastowe dodanie niezbędnych importów lub [dyrektyw](/dotnet/csharp/language-reference/keywords/using-directive) dla kodu kopiowania i wklejania.
 
-**Kiedy:** Typowym sposobem jest skopiowanie kodu z różnych miejsc w projekcie lub w innych źródłach i wklejenie go do nowego kodu. Ta szybka akcja umożliwia znalezienie brakujących dyrektyw Imports dla kodu kopiującego i wklejonego, a następnie poprosi o ich dodanie.
+**Kiedy:** Typowym sposobem jest skopiowanie kodu z różnych miejsc w projekcie lub w innych źródłach i wklejenie go do nowego kodu. Ta szybka akcja umożliwia znalezienie brakujących dyrektyw Imports dla kodu kopiującego i wklejonego, a następnie poprosi o ich dodanie. Ta naprawa kodu może również dodać odwołania z projektu do projektu.
 
 **Dlaczego:** Ponieważ szybka akcja automatycznie dodaje wymagane Importy, nie trzeba ręcznie kopiować dyrektyw `using` wymaganych przez kod.
 
@@ -41,11 +41,11 @@ Ta generacja kodu ma zastosowanie do:
 
     ![Generowanie deklaracji using](media/generate-using-codefix.png)
 
-3. Wybierz pozycję **using \<your reference \>;,** aby dodać brakujące odwołanie.
+3. Wybierz pozycję **using \<odwołanie\>;,** aby dodać brakujące odwołanie.
 
     ![Generuj wynik użycia](media/generate-using-result.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)
