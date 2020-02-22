@@ -466,9 +466,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentowanie składnika autonomicznego .NET Framework i zbieranie danych pamięci za pomocą wiersza polecenia profilera
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'Przewodnik: Profilowanie wiersza polecenia przy użyciu próbkowania'
-                  href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Aplikacje internetowe ASP.NET
+            - name: aplikacje internetowe ASP.NET
               items:
                 - name: Profilowanie wiersza polecenia aplikacji internetowych ASP.NET
                   href: command-line-profiling-of-aspnet-web-applications.md
