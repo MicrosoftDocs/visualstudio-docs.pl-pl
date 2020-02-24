@@ -374,6 +374,8 @@
                   href: ide/reference/extract-interface.md
                 - name: Wyodrębnianie metody
                   href: ide/reference/extract-method.md
+                - name: Wyodrębnianie funkcji lokalnej
+                  href: ide/reference/extract-local-function.md
                 - name: Generowanie parametru
                   href: ide/reference/generate-parameter.md
                 - name: Śródwierszowa zmienna tymczasowa
@@ -386,6 +388,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Opcje refaktoryzacji statycznej funkcji lokalnej
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Ustawianie elementu członkowskiego jako statycznego
+                  href: ide/reference/make-member-static.md
                 - name: Przenoszenie deklaracji blisko odwołania
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Przenoszenie typu do pasującego pliku
