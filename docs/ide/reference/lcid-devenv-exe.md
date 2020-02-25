@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595530"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557936"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -52,14 +52,19 @@ W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych p
 |Język|LCID|
 |--------------|----------|
 |Chiński uproszczony|2052|
-|Chiński tradycyjny|1028|
-|angielski|1033|
-|francuski|1036|
-|niemiecki|1031|
+|Chiński (tradycyjny)|1028|
+|Czeski|1029|
+|Polski|1033|
+|Francuski|1036|
+|Niemiecki|1031|
 |Włoski|1040|
-|japoński|1041|
-|koreański|1042|
+|Japoński|1041|
+|Koreański|1042|
+|Polski|1045|
+|portugalski (Brazylia)|1046|
+|Rosyjski|1049|
 |Hiszpański|3082|
+|Turecki|1055
 
 ## <a name="example"></a>Przykład
 
@@ -69,7 +74,7 @@ Ten przykład ładuje środowisko IDE z ciągami zasobów w języku angielskim.
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Ustawienia międzynarodowe, Środowisko, Opcje — okno dialogowe](../../ide/reference/international-settings-environment-options-dialog-box.md)

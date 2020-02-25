@@ -28,6 +28,7 @@
 #### [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Azure DevTest — płatność zgodnie z rzeczywistym użyciem](vs-azure-payg.md)
+#### [Azure DevTest — Enterprise Agreement](azure-ea-devtest.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility & Security](vs-ems.md)

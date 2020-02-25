@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ab4c18006834cc1bef6841864e42609e09bc3a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3fe19549f61d646e08117198903b3ad9c1fd90dc
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585837"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557820"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Właściwości zarezerwowane i dobrze znane dla programu MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia zestaw wstępnie zdefiniowanych właściwości, które przechowują informacje o pliku projektu i [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plików binarnych. Te właściwości są oceniane w taki sam sposób, jak inne właściwości [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Na przykład, aby użyć właściwości `MSBuildProjectFile`, wpisz `$(MSBuildProjectFile)`.
@@ -36,6 +36,7 @@ ms.locfileid: "75585837"
 | `MSBuildExtensionsPath` | Dobrze znane | Wprowadzone w .NET Framework 4: nie ma różnicy między wartościami domyślnymi `MSBuildExtensionsPath` i `MSBuildExtensionsPath32`. Można ustawić zmienną środowiskową `MSBUILDLEGACYEXTENSIONSPATH` wartość różną od null, aby włączyć zachowanie wartości domyślnej `MSBuildExtensionsPath` we wcześniejszych wersjach.<br /><br /> W .NET Framework 3,5 i starszych wartość domyślna `MSBuildExtensionsPath` wskazuje ścieżkę podfolderu programu MSBuild w folderze *\Program files\\* lub *\Program Files (x86)* , w zależności od bitowości bieżącego procesu. Na przykład w przypadku procesu 32-bitowego na komputerze 64-bitowym ta właściwość wskazuje folder *\Program Files (x86)* . W przypadku procesu 64-bitowego na komputerze 64-bitowym ta właściwość wskazuje folder *\Program Files* .<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości.<br /><br /> Ta lokalizacja jest przydatnym miejscem do umieszczania niestandardowych plików docelowych. Na przykład pliki docelowe można zainstalować w *folderze \Program Files\MSBuild\MyFiles\Northwind.targets* , a następnie zaimportowane w plikach projektu przy użyciu tego kodu XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
 | `MSBuildExtensionsPath32` | Dobrze znane | Ścieżka podfolderu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w folderze *\Program Files* lub *\Program Files (x86)* . Ścieżka zawsze wskazuje folder 32-bitowy *\Program Files (x86)* na komputerze z 32-bitowym i *\Program files* na komputerze 64-bitowym. Zobacz również `MSBuildExtensionsPath` i `MSBuildExtensionsPath64`.<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. |
 | `MSBuildExtensionsPath64` | Dobrze znane | Ścieżka podfolderu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w folderze *\Program Files* . W przypadku maszyny 64-bitowej Ta ścieżka zawsze wskazuje folder *\Program Files* . W przypadku maszyny 32-bitowej Ta ścieżka jest pusta. Zobacz również `MSBuildExtensionsPath` i `MSBuildExtensionsPath32`.<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. |
+| `MSBuildInteractive` | Zarezerwowany | `true`, jeśli program MSBuild działa interaktywnie, co pozwala na wprowadzanie danych przez użytkownika. To ustawienie jest kontrolowane przez `-interactive` opcji wiersza polecenia. |
 | `MSBuildLastTaskResult` | Zarezerwowany | `true` Jeśli poprzednie zadanie zostało ukończone bez żadnych błędów (nawet jeśli wystąpiły ostrzeżenia), lub `false`, jeśli poprzednie zadanie zawierało błędy. Zazwyczaj w przypadku wystąpienia w zadaniu błędu jest to ostatni element, który wystąpi w tym projekcie. W związku z tym wartość tej właściwości nie jest nigdy `false`, z wyjątkiem następujących scenariuszy:<br /><br /> — Gdy atrybut `ContinueOnError` [elementu Task (MSBuild)](../msbuild/task-element-msbuild.md) jest ustawiony na `WarnAndContinue` (lub `true`) lub `ErrorAndContinue`.<br /><br /> — Gdy `Target` ma [element OnError (MSBuild)](../msbuild/onerror-element-msbuild.md) jako element podrzędny. |
 | `MSBuildNodeCount` | Zarezerwowany | Maksymalna liczba współbieżnych procesów, które są używane podczas kompilowania. Jest to wartość określona dla parametru **-maxcpucount** w wierszu polecenia. Jeśli określono wartość parametru **-maxcpucount** bez określenia wartości, `MSBuildNodeCount` określa liczbę procesorów w komputerze. Aby uzyskać więcej informacji, zobacz informacje [dotyczące wiersza polecenia](../msbuild/msbuild-command-line-reference.md) i [Tworzenie równolegle wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md). |
 | `MSBuildProgramFiles32` | Zarezerwowany | Lokalizacja folderu programu 32-bitowego na przykład *C:\Program Files (x86)* .<br /><br /> Nie dołączaj końcowego ukośnika odwrotnego dla tej właściwości. |
@@ -63,7 +64,7 @@ ms.locfileid: "75585837"
 Oprócz powyższych, nazwy odpowiadające elementom języka MSBuild nie mogą być używane dla właściwości, elementów lub metadanych elementu zdefiniowanych przez użytkownika:
 
 * VisualStudioProject
-* Docelowy
+* Środowisko docelowe
 * PropertyGroup
 * Dane wyjściowe
 * ItemGroup
@@ -71,11 +72,11 @@ Oprócz powyższych, nazwy odpowiadające elementom języka MSBuild nie mogą by
 * ProjectExtensions —
 * OnError
 * Element importgroup
-* Wybierz pozycję
-* Po
+* Wybierz ikonę
+* Czasie
 * Przypadku
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 
 - [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)

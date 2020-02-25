@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188896"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558184"
 ---
 # <a name="debug-xaml-in-blend"></a>Debugowanie XAML w Blend
 
@@ -89,7 +89,7 @@ Poniższy przykład przeprowadzi Cię przez prostą sesję debugowania XAML w pr
     </Grid>
     ```
 
-10. Naciśnij **klawisze Ctrl**+**SHIFT**+**B** , aby skompilować projekt.
+10. Naciśnij klawisz **Ctrl**+**SHIFT**+**B** , aby skompilować projekt.
 
     Zostanie wyświetlony komunikat o błędzie informujący o tym, że nie można skompilować projektu, a panel **wyników** wyświetla błędy w dolnej części aplikacji.
 
@@ -103,17 +103,17 @@ Po wykryciu błędów XAML na powierzchni projektowej zostanie wyświetlony aler
 
 1. Kliknij dwukrotnie pierwszy błąd na liście. Opis to "wartość <" jest nieprawidłowa w atrybucie "". Po dwukrotnym kliknięciu błędu wskaźnik znajdzie odpowiednią lokalizację w kodzie. `<` poprzedzający `Button` jest prawidłowy, a nie atrybut zgodnie z sugestią w komunikacie o błędzie. Jeśli zobaczysz poprzedni wiersz kodu, Zauważ, że brakuje cudzysłowu zamykającego dla atrybutu `Top`. Wpisz cudzysłów zamykający. Zwróć uwagę, że lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.
 
-2. Kliknij dwukrotnie opis "0" jest nieprawidłowy na początku nazwy "". `Margin="0,149,0,0"` wydaje się być poprawnie sformułowany. Należy jednak zauważyć, że Kodowanie koloru `Margin` nie jest zgodne z innymi wystąpieniami `Margin` w kodzie. Ponieważ brakuje cudzysłowu zamykającego w poprzedniej parze nazwa/wartość (`VerticalAlignment="Top`), `Margin="` jest odczytywany jako część wartości poprzedniego atrybutu, a wartość 0 jest odczytywana jako początek pary nazwa/wartość. Wpisz znaki cudzysłowu zamykającego dla `Top`. Lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.
+2. Kliknij dwukrotnie opis "0" jest nieprawidłowy na początku nazwy "". `Margin="0,149,0,0"` wydaje się być poprawnie sformułowane. Należy jednak zauważyć, że Kodowanie koloru `Margin` nie jest zgodne z innymi wystąpieniami `Margin` w kodzie. Ponieważ brakuje cudzysłowu zamykającego w poprzedniej parze nazwa/wartość (`VerticalAlignment="Top`), `Margin="` jest odczytywany jako część wartości poprzedniego atrybutu, a wartość 0 jest odczytywana jako początek pary nazwa/wartość. Wpisz znaki cudzysłowu zamykającego dla `Top`. Lista błędów w panelu **wyników** jest aktualizowana w celu odzwierciedlenia zmian.
 
-3. Kliknij dwukrotnie pozostały błąd, "przycisk zamykający tag XML" jest niezgodny. " Wskaźnik znajduje się w znaczniku zamykającej **siatki** (`</Grid>`), sugerując, że błąd znajduje się w obiekcie `Grid`. Zwróć uwagę, że w drugim obiekcie `Button` brakuje taga zamykającego. Po dodaniu zamykania `/` lista paneli **wyników** zostanie zaktualizowana. Teraz, gdy te początkowe błędy zostały rozwiązane, zidentyfikowano dwa dodatkowe błędy.
+3. Kliknij dwukrotnie pozostały błąd, "przycisk zamykający tag XML" jest niezgodny. " Wskaźnik znajduje się w znaczniku zamykającej **siatki** (`</Grid>`), sugerując, że błąd znajduje się wewnątrz obiektu `Grid`. Zwróć uwagę, że w drugim obiekcie `Button` brakuje taga zamykającego. Po dodaniu `/`zamknięcia lista paneli **wyników** zostanie zaktualizowana. Teraz, gdy te początkowe błędy zostały rozwiązane, zidentyfikowano dwa dodatkowe błędy.
 
 4. Kliknij dwukrotnie "zawartość elementu członkowskiego nie została rozpoznana lub jest niedostępna". `c` w `content` powinna być wielką literą. Zamień małe litery "c" na wielkie litery "c".
 
-5. Kliknij dwukrotnie "Właściwość" Mame "nie istnieje w przestrzeni nazw" <http://schemas.microsoft.com/winfx/2006/xaml> "." "M" w "Mame" musi być "N". Zamień literę "M" na "N". Teraz, gdy można analizować kod XAML, aplikacja zostanie wyświetlona na powierzchni projektowej.
+5. Kliknij dwukrotnie "Właściwość Mame" nie istnieje w przestrzeni nazw `http://schemas.microsoft.com/winfx/2006/xaml` ". "M" w "Mame" musi być "N". Zamień literę "M" na "N". Teraz, gdy można analizować kod XAML, aplikacja zostanie wyświetlona na powierzchni projektowej.
 
     ![Debugowanie kodu XAML w Blend for Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    Naciśnij **kombinację klawiszy Ctrl**+**SHIFT**+**B** , aby skompilować projekt i potwierdzić, że nie występują żadne pozostałe błędy.
+    Naciśnij klawisz **Ctrl**+**SHIFT**+**B** , aby skompilować projekt i potwierdzić, że nie występują żadne pozostałe błędy.
 
 ## <a name="debug-in-visual-studio"></a>Debugowanie w programie Visual Studio
 
@@ -121,6 +121,6 @@ Możesz otworzyć projekty programu Blend w programie Visual Studio, aby łatwie
 
 Aby uzyskać więcej informacji na temat debugowania aplikacji, zobacz [debugowanie aplikacji platformy UWP w programie Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Uzyskaj pomoc
+## <a name="get-help"></a>Uzyskiwanie pomocy
 
 Jeśli potrzebujesz więcej pomocy w debugowaniu aplikacji Blend, możesz przeszukać [fora społecznościowe aplikacji platformy UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) pod kątem ogłoszeń związanych z problemem lub ogłosić pytanie.

@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: f8e5054b4da0122c40c3ad62cfebcace973f7b20
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75918814"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558009"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
 ## <a name="clickonce-and-proxy-authentication"></a>Uwierzytelnianie ClickOnce i serwer proxy  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zapewnia obsługę uwierzytelniania zintegrowanego serwera proxy systemu Windows, począwszy od .NET Framework 3,5. Nie są wymagane żadne określone dyrektywy Machine. config. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nie zapewnia obsługi innych protokołów uwierzytelniania, takich jak Basic lub Digest.  
   
- Aby włączyć tę funkcję, można również zastosować poprawkę do .NET Framework 2,0. Aby uzyskać więcej informacji, zobacz temat https://go.microsoft.com/fwlink/?LinkId=158730.  
+ Aby włączyć tę funkcję, można również zastosować poprawkę do .NET Framework 2,0. Aby uzyskać więcej informacji, zobacz [Poprawka: komunikat o błędzie podczas próby zainstalowania aplikacji ClickOnce, która została utworzona w .NET Framework 2,0 na komputerze klienckim skonfigurowanym do korzystania z serwera proxy: "wymagane jest uwierzytelnianie serwera proxy"](https://support.microsoft.com/en-in/help/917952/fix-error-message-when-you-try-to-install-a-clickonce-application-that). 
   
  Aby uzyskać więcej informacji, zobacz [\<defaultProxy > elementu (Ustawienia sieci)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
@@ -121,7 +121,7 @@ Jeśli używasz programu Internet Information Services (IIS) w systemie Windows 
   
 - W przypadku utworzenia typu MIME z rozszerzeniem "*" i typu MIME "application/octet-stream" będzie można pobrać pliki niezablokowanego typu plików. (Nie można jednak pobrać zablokowanych typów plików, takich jak. aspx i. asmx).  
   
-  Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typów MIME w systemie Windows Server, zobacz artykuł KB326965 w bazie wiedzy Microsoft Knowledge Base "Usługa IIS 6,0 nie obsługuje nieznanych typów MIME" w [https://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](https://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typów MIME w systemie Windows Server, zobacz [jak dodać typ MIME do witryny sieci Web lub aplikacji](/iis/configuration/system.webserver/staticcontent/mimemap#how-to-add-a-mime-type-to-a-web-site-or-application).  
   
 ## <a name="content-type-mappings"></a>Mapowania typu zawartości  
  Podczas publikowania przy użyciu protokołu HTTP typ zawartości (znany również jako typ MIME) dla pliku. Application powinien mieć wartość "application/x-MS-Application". Jeśli na serwerze zainstalowano [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)], zostanie ono automatycznie skonfigurowane. Jeśli nie jest zainstalowany, należy utworzyć skojarzenie typu MIME dla wirtualnego katalogu aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] (lub całego serwera).  

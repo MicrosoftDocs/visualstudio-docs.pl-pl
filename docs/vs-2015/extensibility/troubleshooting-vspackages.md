@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476994"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557974"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,13 +101,11 @@ Poniżej przedstawiono typowe problemy, które mogą mieć pakietu VSPackage i p
   
     2. Dodaj następującą **lokalizację pliku symboli (. pdb)** :  
   
-         `https://msdl.microsoft.com/download/symbols`  
+       `https://msdl.microsoft.com/download/symbols`  
   
     3. Aby zwiększyć wydajność, określ folder pamięci podręcznej symboli, na przykład:  
-  
-        ```  
-        C:\symbols  
-        ```  
+
+       `C:\symbols`  
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Aby rozwiązać problem braku pakietu VSPackage lub jednej z jego zależności  
   
@@ -117,7 +115,7 @@ Poniżej przedstawiono typowe problemy, które mogą mieć pakietu VSPackage i p
   
    2. Wybierz kartę **odwołania** w oknie dialogowym **strony właściwości** i upewnij się, że wszystkie ścieżki są poprawne. Alternatywnie możesz użyć **Przeglądarka obiektów** , aby przeglądać w poszukiwaniu obiektów, do których istnieją odwołania.  
   
-        W przypadku kodu zarządzanego można użyć programu [Fuslogvw. exe (Podgląd dziennika powiązań zestawu)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) , aby wyświetlić szczegóły nieudanych obciążeń zestawu.  
+        W przypadku kodu zarządzanego można użyć programu [Fuslogvw. exe (Podgląd dziennika powiązań zestawu)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) , aby wyświetlić szczegóły nieudanych obciążeń zestawu.  
   
 2. W przypadku kodu niezarządzanego Znajdź identyfikator CLSID pakietu VSPackage w węźle rejestru CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:  
   

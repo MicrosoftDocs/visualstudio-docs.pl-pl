@@ -1,5 +1,5 @@
 ---
-title: Kreator publikacji (Office development w programie Visual Studio)
+title: Kreator publikacji (Office Development w Visual Studio)
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,50 +18,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447067"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558177"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office development w programie Visual Studio)
-  Użyj **Kreatora publikacji** Aby skopiować pliki rozwiązania do określonej lokalizacji, Utwórz pliki manifestu i Utwórz program instalacyjny.
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office Development w Visual Studio)
+  Użyj **Kreatora publikacji** do kopiowania plików rozwiązania do określonej lokalizacji, tworzenia plików manifestu i tworzenia programu instalacyjnego.
 
- Dostęp do tego kreatora w **kompilacji** menu, wybierz **Publikuj** *SolutionName*. Można również przejść **Kreatora publikacji** z **Eksploratora rozwiązań**. Otwórz menu skrótów dla węzła projektu, a następnie wybierz **Publikuj**.
+ Aby uzyskać dostęp do tego kreatora, w menu **kompilacja** wybierz polecenie **Publikuj** *rozwiązanie*. Możesz również uzyskać dostęp do **Kreatora publikacji** **Eksplorator rozwiązań**. Otwórz menu skrótów dla węzła projektu, a następnie wybierz polecenie **Publikuj**.
 
- Poniższej sekcji opisano strony kreatora.
+ W każdej sekcji poniżej opisano stronę kreatora.
 
 ## <a name="where-do-you-want-to-publish-the-application"></a>Gdzie chcesz opublikować aplikację?
- **Określ lokalizację do publikowania tej aplikacji** wymagane. Lokalizacji publikowania jest katalogiem gdzie **Kreatora publikacji** kopiuje pliki rozwiązania, takie jak manifestów, zestawy, tymczasowy certyfikat i innych plików z kompilacji. Musi mieć dostęp do zapisu do tego katalogu.
+ **Określ lokalizację, w której ma zostać opublikowana aplikacja** Wymagane. Lokalizacja publikowania to katalog, w którym **Kreator publikacji** kopiuje pliki rozwiązania, takie jak manifesty, zestawy, certyfikat tymczasowy i inne pliki z kompilacji. Musisz mieć dostęp do zapisu w tym katalogu.
 
- Wpisz lokalizację jako ścieżka na dysku, udziału plików, witryny FTP lub adres URL witryny sieci web, lub kliknij przycisk **Przeglądaj** przycisk, aby wyszukać lokalizację. Ścieżka może być w tych formatach:
+ Wpisz lokalizację jako ścieżkę dysku, udział plików, witrynę FTP lub adres URL witryny sieci Web, lub kliknij przycisk **Przeglądaj** , aby wyszukać lokalizację. Ścieżka może być w następujących formatach:
 
-- Względna lub bezwzględna ścieżka w standardzie Windows formatowania, takich jak *C:\Deploy\MyApplication* lub *\MyApplication*.
+- Ścieżka względna lub bezwzględna w standardowym formacie systemu Windows, na przykład *C:\Deploy\MyApplication* lub *\MyApplication*.
 
-- Ścieżka Universal Naming Convention (UNC), takie jak  *\\\ServerName\MyApplication\\* .
+- Ścieżka Universal Naming Convention (UNC), taka jak *\\\ServerName\MyApplication\\* .
 
-- Adres URL sieci Web site, takich jak http://www.microsoft.com/MyApplication.
+- Adres URL witryny sieci Web, na przykład `http://www.contoso.com/MyApplication`.
 
-  Domyślnie jest lokalizacja publikowania *http://localhost/projectname/* usługi IIS są zainstalowane, czy katalog publish\, jeśli to zrobisz nie IIS zainstalowany.
+  Domyślnie lokalizacja publikowania jest *http://localhost/projectname/* , jeśli są zainstalowane usługi IIS lub jeśli nie zainstalowano usług IIS.
 
 > [!NOTE]
-> Jeśli na komputerze docelowym systemem Windows Vista jest więcej istotnych kwestii. Musisz być administratorem na komputerze Windows Vista do korzystania z opcji publikowania lokalnych. Ponadto domyślna lokalizacja to zawsze *publikowania\\*  katalogu, niezależnie od tego, czy zostały zainstalowane usługi IIS.
+> Jeśli na komputerze docelowym jest uruchomiony system Windows Vista, należy wziąć pod uwagę więcej zagadnień. Aby użyć opcji publikowania lokalnego, musisz być administratorem na komputerze z systemem Windows Vista. Ponadto domyślną lokalizacją jest zawsze katalog *publikowania\\* niezależnie od tego, czy są zainstalowane usługi IIS.
 
-## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Co to jest domyślna ścieżka instalacji na komputerach użytkowników końcowych?
- Ścieżka instalacji jest opcjonalne. Można ustawić ścieżki instalacji później, jeśli użytkownik sobie tego życzy. Aby uzyskać więcej informacji, zobacz [jak: Zmień ścieżkę instalacji rozwiązania do pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Jaka jest domyślna ścieżka instalacji na komputerach użytkowników końcowych?
+ Ścieżka instalacji jest opcjonalna. Możesz ustawić ścieżkę instalacji później, jeśli wolisz. Aby uzyskać szczegółowe informacje, zobacz [jak to zrobić: zmiana ścieżki instalacji rozwiązania pakietu Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
 
- Ścieżka instalacji jest katalog, z którego użytkownik zainstaluje dostosowania. Należy również ścieżki, który rozwiązanie będzie używany do sprawdzenia aktualizacji. **Kreatora publikacji** nie wdrażają rozwiązania do tej lokalizacji, chyba, że ścieżka jest taka sama jak wprowadzona w **Określ lokalizację do publikowania tej aplikacji** pole na poprzedniej stronie.
+ Ścieżka instalacji to katalog, z którego użytkownik końcowy zainstaluje dostosowanie. Jest to również ścieżka, która będzie używana przez rozwiązanie do sprawdzania dostępności aktualizacji. **Kreator publikacji** nie wdraża rozwiązania w tej lokalizacji, chyba że ścieżka jest taka sama jak wprowadzona w polu **Określ lokalizację do opublikowania aplikacji** na poprzedniej stronie.
 
- **Z witryny sieci Web** Podaj adres URL, do którego użytkownicy końcowi będą wykonać, aby zainstalować rozwiązanie.
+ **Z witryny sieci Web** Określ adres URL, po którym użytkownicy końcowi będą mogli zainstalować rozwiązanie.
 
- **Z udziału pliku lub ścieżki UNC** Określ ścieżkę UNC, które użytkownicy końcowi będą wykonać, aby zainstalować rozwiązanie.
+ **Ze ścieżki UNC lub udziału plików** Określ ścieżkę UNC, która będzie przestrzegana przez użytkowników końcowych w celu zainstalowania rozwiązania.
 
- **Z dysku CD-ROM lub DVD-ROM** ta opcja nie wymaga ścieżkę instalacji.
+ **Z dysku CD-ROM lub DVD-ROM** Ta opcja nie wymaga ścieżki instalacji.
 
- Program Visual Studio nie nagrywanie, dysku CD lub DVD. Należy ręcznie skopiuj dane wyjściowe na dysku CD lub DVD.
+ Program Visual Studio nie nagrywa dysku CD lub DVD. Należy ręcznie skopiować dane wyjściowe na dysk CD lub DVD.
 
-## <a name="see-also"></a>Zobacz także
-- [Wdrażanie rozwiązania do pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Strona publikowania, Projektant projektu &#40;programowanie Office w Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
-- [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)
+## <a name="see-also"></a>Zobacz też
+- [Wdrażanie rozwiązania pakietu Office przy użyciu technologii ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
+- [Strona publikowanie, programowanie projektów &#40;Office Designer w programie Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Wdróż rozwiązanie pakietu Office](../vsto/deploying-an-office-solution.md)

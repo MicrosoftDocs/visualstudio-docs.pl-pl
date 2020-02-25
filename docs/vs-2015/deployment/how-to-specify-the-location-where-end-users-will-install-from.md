@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476904"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557985"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Porady: określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Podczas publikowania aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md
   
 2. Kliknij kartę **Publikowanie** .  
   
-3. W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowanego adresu URL przy użyciu formatu https://www.microsoft.com/ApplicationNamelub ścieżki UNC przy użyciu formatu \\\Server\ApplicationName.  
+3. W polu adres URL instalacji wprowadź lokalizację instalacji przy użyciu w pełni kwalifikowanego adresu URL przy użyciu formatu `https://www.contoso.com/ApplicationName`lub ścieżki UNC przy użyciu formatu `\\Server\ApplicationName`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Określanie, gdzie program Visual Studio ma kopiować pliki](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

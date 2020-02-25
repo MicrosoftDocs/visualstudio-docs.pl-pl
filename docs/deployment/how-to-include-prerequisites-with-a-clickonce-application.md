@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727905"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557630"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Instrukcje: uwzględnianie wymagań wstępnych z aplikacją ClickOnce
 Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], należy najpierw pobrać pakiety Instalatora dla tych wymagań wstępnych na komputer deweloperski. Gdy publikujesz aplikację i wybierzesz opcję **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**, wystąpi błąd, jeśli pakiety Instalatora nie znajdują się w folderze **Packages** .
@@ -31,10 +31,10 @@ Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą apli
 
 3. W Notatniku otwórz plik *Package. XML* .
 
-4. Znajdź element **name** zawierający **http://go.microsoft.com/fwlink** i skopiuj adres URL. Uwzględnij część **LinkId** .
+4. Znajdź element **name** zawierający `http://go.microsoft.com/fwlink`i skopiuj adres URL. Uwzględnij część **LinkId** .
 
    > [!NOTE]
-   > Jeśli element **name** nie zawiera **http://go.microsoft.com/fwlink** , Otwórz plik **Product. XML** w folderze głównym wymagania wstępnego i Znajdź ciąg **fwlink** .
+   > Jeśli element **name** nie zawiera `http://go.microsoft.com/fwlink`, Otwórz plik **Product. XML** w folderze głównym wymagania wstępnego i Znajdź ciąg **fwlink** .
 
    > [!IMPORTANT]
    > Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele elementów **nazwy** zawiera **fwlink**, należy powtórzyć pozostałe kroki dla każdego z nich.
@@ -45,9 +45,9 @@ Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą apli
 
 6. Skopiuj plik do folderu głównego dla wstępnie wymaganego składnika.
 
-    Na przykład dla wymagania wstępnego Instalator Windows 4,5 skopiuj plik do folderu *\Packages\WindowsInstaller4_5* .
+    Na przykład dla wymagania wstępnego Instalator Windows 4,5 skopiuj plik do folderu *\packages\ WindowsInstaller4_5* .
 
     Teraz można dystrybuować pakiet instalacyjny z aplikacją.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Instrukcje: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

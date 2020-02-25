@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189171"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557847"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 1
   Projekty programu SharePoint są kontenerami dla co najmniej jednego elementu projektu programu SharePoint. System projektu programu SharePoint w programie Visual Studio można rozłożyć przez utworzenie własnych typów elementów projektu programu SharePoint, a następnie skojarzenie ich z szablonem projektu. W tym instruktażu zdefiniujesz typ elementu projektu do tworzenia kolumny witryny, a następnie utworzysz szablon projektu, którego można użyć do utworzenia nowego projektu zawierającego element projektu kolumny witryny.
@@ -45,7 +45,7 @@ ms.locfileid: "73189171"
 
 - Obsługiwane wersje systemu Microsoft Windows, SharePoint i [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu zostanie użyty szablon **projektu VSIX** w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzającą narzędzia programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Element [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu zostanie użyty szablon **projektu VSIX** w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz sekcję [rozszerzającą narzędzia programu SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   Znajomość następujących koncepcji jest przydatna, ale nie jest wymagana, aby ukończyć Przewodnik:
 
@@ -68,7 +68,7 @@ ms.locfileid: "73189171"
 
 1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Na pasku menu wybierz kolejno pozycje **plik**  > **Nowy**  > **projekt**.
+2. Na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 3. W górnej części okna dialogowego **Nowy projekt** upewnij się, że na liście wersji .NET Framework wybrano **.NET Framework 4,5** .
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189171"
 
    - Dodaje `ProjectItem` elementy dla każdego elementu filethat dołączonego do każdego wystąpienia projektu.
 
-   - Używa przestrzeni nazw "<http://schemas.microsoft.com/developer/vstemplate/2005>". Inne pliki projektu w tym rozwiązaniu używają przestrzeni nazw "<http://schemas.microsoft.com/developer/msbuild/2003>". W związku z tym są generowane komunikaty ostrzegawcze schematu XML, ale można je zignorować w tym instruktażu.
+   - Używa przestrzeni nazw `http://schemas.microsoft.com/developer/vstemplate/2005`. Inne pliki projektu w tym rozwiązaniu używają przestrzeni nazw `http://schemas.microsoft.com/developer/msbuild/2003`. W związku z tym są generowane komunikaty ostrzegawcze schematu XML, ale można je zignorować w tym instruktażu.
 
      Aby uzyskać więcej informacji na temat zawartości plików *. vstemplate* , zobacz [Dokumentacja schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -752,7 +752,7 @@ ms.locfileid: "73189171"
 ## <a name="next-steps"></a>Następne kroki
  Po zakończeniu tego instruktażu można dodać kreatora do szablonu projektu. Gdy użytkownik tworzy projekt kolumny witryny, w kreatorze zostanie wyświetlony monit o podanie adresu URL witryny na potrzeby debugowania oraz tego, czy nowe rozwiązanie jest w trybie piaskownicy, a Kreator konfiguruje nowy projekt przy użyciu tych informacji. Kreator zbiera również informacje o kolumnie (takie jak typ podstawowy i Grupa, w której ma zostać wystawiona kolumna w galerii kolumn witryny) i dodaje te informacje do pliku repliks *. XML* w nowym projekcie. Aby uzyskać więcej informacji, zobacz [Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przewodnik: Tworzenie elementu projektu kolumny witryny z szablonem projektu, część 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
 - [Definiowanie niestandardowych typów elementów projektu SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ed6ddc11a998d97a193c2ab01ff69d386ed4ffe
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 01fbb6cfd1717562af79c067ede0cad9753ad5dd
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476966"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557893"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Porady: określanie lokalizacji plików symboli z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ Aby wyświetlić informacje o symbolach, takie jak nazwy funkcji i numery wiersz
   
 2. Użyj następującej składni, aby ustawić zmienną środowiskową **_NT_SYMBOL_PATH** lub opcję VSPerfReport/SymbolPath:  
   
-    `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
+   `srv*<LocalStore>*https://msdl.microsoft.com/downloads/symbols`  
   
-    gdzie *<LocalStore>* jest ścieżką utworzonego katalogu lokalnego.  
+   gdzie *<LocalStore>* jest ścieżką utworzonego katalogu lokalnego.  
   
 ## <a name="specifying-component-symbol-files"></a>Określanie plików symboli składników  
  Narzędzia profilowania wyszukuje pliki. pdb składników, które mają być przełączone w ich oryginalnych lokalizacjach, które są przechowywane w składnikach lub w folderze, który zawiera plik danych profilowania. Możesz określić inne lokalizacje do przeszukania, dodając co najmniej jedną ścieżkę do **_NT_SYMBOL_PATH** lub opcji **/SymbolPath** . Rozdziel ścieżki średnikami.  
   
 ## <a name="example"></a>Przykład  
  Poniższy wiersz polecenia ustawia zmienną środowiskową **_NT_SYMBOL_PATH** na serwer symboli systemu Windows i katalog lokalny do **C:\symbols**.  
-  
+
  ```cmd
- set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols`  
+ set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/downloads/symbols
  ```
-  
+
  Poniższy wiersz polecenia VSPerfReport dodaje katalog C:\Projects\Symbols do ścieżki wyszukiwania przy użyciu opcji **/SymbolPath** .  
   
  **VSPerfReport**  *MojaApl* **. exe/SymbolPath: C:\Projects\Symbols/Summary: ALL**
