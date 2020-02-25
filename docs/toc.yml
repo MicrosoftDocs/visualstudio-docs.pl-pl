@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Dodawanie parametru do metody
                   href: ide/reference/add-parameter.md
+                - name: Generowanie pola prywatnego z poziomu konstruktora
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Generowanie zastąpienia
                   href: ide/reference/generate-override.md
                 - name: Generowanie przesłonięć metod elementu Equals i GetHashCode
@@ -420,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Nieużywane przypisania wartości, zmienne i parametry'
                   href: ide/reference/unused-values-parameters.md
-                - name: Zawijanie i wyrównywanie łańcuchów wywołań
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Opakowywanie, wcięcia i wyrównywanie parametrów'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Opakowywanie, wcięcia i wyrównywanie refaktoryzacji'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: 'Przewodnik: generowanie kodu na podstawie użycia'
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
