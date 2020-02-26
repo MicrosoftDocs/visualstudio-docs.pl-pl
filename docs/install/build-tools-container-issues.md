@@ -1,7 +1,7 @@
 ---
 title: Znane problemy dotyczące kontenerów
 description: Dowiedz się więcej o znanych problemach, które mogą wystąpić podczas instalowania Visual Studio Build Tools w kontenerze systemu Windows.
-ms.date: 07/03/2019
+ms.date: 02/18/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
+ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77453385"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77611129"
 ---
 # <a name="known-issues-for-containers"></a>Znane problemy dotyczące kontenerów
 
@@ -40,7 +40,7 @@ Podczas instalowania Visual Studio Build Tools w kontenerze systemu Windows wyst
 * Przekaż `--norestart` w wierszu polecenia. W trakcie tego pisania próba ponownego uruchomienia kontenera systemu Windows z poziomu kontenera zwraca `ERROR_TOO_MANY_OPEN_FILES` do hosta.
 * Jeśli zamierzasz oprzeć obraz bezpośrednio w firmie Microsoft/windowsservercore, .NET Framework może nie zostać zainstalowana prawidłowo i nie wskazano błędu instalacji. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego należy oprzeć obraz na [platformie Microsoft/dotnet-Framework: 4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszym. Na przykład może zostać wyświetlony błąd podczas kompilowania przy użyciu programu MSBuild podobnego do poniższego:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets (84, 5): błąd MSB6003: nie można uruchomić określonego pliku wykonywalnego zadania "CSC. exe". Nie można załadować pliku lub zestawu "System. IO. FileSystem, Version = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a" lub jednej z jego zależności. W systemie nie można odnaleźć określonego pliku.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets (84, 5): błąd MSB6003: nie można uruchomić określonego pliku wykonywalnego zadania "CSC. exe". Nie można załadować pliku lub zestawu "System. IO. FileSystem, Version = 4.0.1.0, Culture = neutral, PublicKeyToken = b03f5f7f11d50a3a" lub jednej z jego zależności. System nie może odnaleźć określonego pliku.
 
 ::: moniker range="vs-2017"
 

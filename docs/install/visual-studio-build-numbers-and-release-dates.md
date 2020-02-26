@@ -5,18 +5,18 @@ description: Lista wydanych wersji i numery kompilacji dla programu Visual Studi
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 02/11/2020
+ms.date: 02/25/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 37715080d341c15fad1f5839990e2db28deedabf
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 5af5f9bb35f3f98061e84201eb6d7b80478f50cc
+ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476855"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77611145"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numery wersji i daty wydania programu Visual Studio
 
@@ -28,6 +28,7 @@ W poniższej tabeli wymieniono numery kompilacji i daty wydania dla programu Vis
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Wersja zapoznawcza 4 | 25 lutego 2020 | 16.5.29820.132 |
 | 16.5.0 | Wersja zapoznawcza 3 | 19 lutego 2020 | 16.5.29814.53 |
 | 16.4.5 | Release | 11 lutego 2020 r. | 16.4.29806.167 |
 | 16.4.4 | Release | 31 stycznia 2020 r. | 16.4.29728.190 |
