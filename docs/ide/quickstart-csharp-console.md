@@ -8,33 +8,33 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e7a0917a07a3e36ec46b0f9e530dd55728e4ee
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180113"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579489"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki start: Tworzenie pierwszej C# aplikacji konsolowej przy użyciu programu Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki Start: Tworzenie pierwszej C# aplikacji konsolowej przy użyciu programu Visual Studio
 
 W tym 5-10 minut wprowadzenie do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio utworzysz prostą C# aplikację, która działa w konsoli programu.
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Najpierw utworzysz projekt C# aplikacji. Typ projektu jest dostarczany ze wszyst
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **C#** , a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nadaj nazwę projekt *HelloWorld*.
 
@@ -109,19 +109,19 @@ Program Visual Studio zawiera domyślny kod "Hello world" w projekcie.
 
 ::: moniker-end
 
-(W tym celu wywołuje <xref:System.Console.WriteLine%2A> metodę w celu wyświetlenia ciągu literału "Hello World!" w oknie konsoli).
+(W tym celu wywołuje metodę <xref:System.Console.WriteLine%2A>, aby wyświetlić ciąg literału "Hello world!" w oknie konsoli).
 
    ![Wyświetl domyślny kod Hello world z szablonu](../ide/media/csharp-console-helloworld-template.png)
 
 Po naciśnięciu klawisza **F5**można uruchomić program w trybie debugowania. Jednak okno konsoli jest widoczne tylko przez chwilę przed zamknięciem.
 
-(Takie zachowanie ma miejsce, `Main` ponieważ metoda kończy się po wykonaniu jednej instrukcji i dlatego aplikacja kończy się).
+(Takie zachowanie jest spowodowane tym, że metoda `Main` kończy się po wykonaniu jednej instrukcji i dlatego aplikacja kończy działanie).
 
 ### <a name="add-some-code"></a>Dodaj kod
 
 Dodajmy kod w celu wstrzymania aplikacji, aby okno konsoli nie było zamykane do momentu naciśnięcia klawisza **Enter**.
 
-1. Dodaj następujący kod bezpośrednio po wywołaniu <xref:System.Console.WriteLine%2A> metody:
+1. Dodaj następujący kod bezpośrednio po wywołaniu metody <xref:System.Console.WriteLine%2A>:
 
    ```csharp
    Console.ReadLine();

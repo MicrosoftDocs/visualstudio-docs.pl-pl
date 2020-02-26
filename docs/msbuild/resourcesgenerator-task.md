@@ -1,5 +1,5 @@
 ---
-title: Resourcesgenerator — zadanie | Dokumentacja firmy Microsoft
+title: ResourcesGenerator — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - ResourcesGenerator task [WPF MSBuild]
 - ResourcesGenerator task [WPF MSBuild], parameters
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef54bdc3b3c692869b4883cf4f92293551a1958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996778"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579604"
 ---
-# <a name="resourcesgenerator-task"></a>Resourcesgenerator — zadanie
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> Zadań osadza co najmniej jeden zasób (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym, a inne typy rozszerzeń) do *Resources* pliku.
+# <a name="resourcesgenerator-task"></a>ResourcesGenerator —, zadanie
+Zadanie <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> umożliwia osadzenie jednego lub więcej zasobów ( *. jpg*, *. ico*, *. bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym i innych typów rozszerzeń) w pliku *resources* .
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`OutputPath`|Wymagane **ciąg** parametru.<br /><br /> Określa ścieżkę do katalogu wyjściowego. Jeśli ścieżka nie jest ścieżką bezwzględną, jest ona traktowana jako ścieżkę, która jest określana względem katalogu głównego projektu.|
-|`OutputResourcesFile`|Wymagane **[] ITaskItem** parametr wyjściowy.<br /><br /> Określa ścieżkę i nazwę wygenerowany *Resources* pliku. Jeśli ścieżka nie jest ścieżką bezwzględną *Resources* wygenerowaniu pliku względem katalogu głównego projektu.|
-|`ResourcesFiles`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa co najmniej jeden zasób do osadzenia w wygenerowanym *Resources* pliku.|
+|`OutputPath`|Wymagany parametr **ciągu** .<br /><br /> Określa ścieżkę katalogu wyjściowego. Jeśli ścieżka nie jest ścieżką bezwzględną, jest traktowana jako ścieżka względem katalogu głównego projektu.|
+|`OutputResourcesFile`|Wymagany parametr wyjściowy **ITaskItem []** .<br /><br /> Określa ścieżkę i nazwę wygenerowanego pliku *resources* . Jeśli ścieżka nie jest ścieżką bezwzględną, plik *resources* jest generowany względem katalogu głównego projektu.|
+|`ResourcesFiles`|Wymagany parametr **ITaskItem []** .<br /><br /> Określa co najmniej jeden zasób do osadzenia w wygenerowanym pliku *resources* .|
 
 ## <a name="example"></a>Przykład
- Poniższy przykład generuje *Resources* plików za pomocą jednego *.bmp* zasobów. *.Bmp* zasobów jest generowana do katalogu, który jest określana względem katalogu głównego projektu.
+ Poniższy przykład generuje plik *resources* z pojedynczym zasobem *. bmp* . Zasób *. bmp* jest generowany do katalogu, który jest względny dla katalogu głównego projektu.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -52,9 +52,9 @@ ms.locfileid: "62996778"
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

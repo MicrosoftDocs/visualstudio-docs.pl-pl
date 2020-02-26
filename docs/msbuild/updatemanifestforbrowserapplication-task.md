@@ -13,32 +13,32 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7b5122a54fd17c6bbe2a9aab204f5855c40e902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a78add284a5cea966d1176645649eed19017addd
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950699"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579536"
 ---
-# <a name="updatemanifestforbrowserapplication-task"></a>Updatemanifestforbrowserapplication — zadanie
-<xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Zadanie zostanie uruchomione, aby dodać  **\<hostInBrowser / >** elementu w manifeście aplikacji (*\<nazwa_projektu >. exe.manifest*) podczas [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] Projekt został skompilowany.
+# <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication —, zadanie
+Zadanie <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> jest uruchamiane w celu dodania elementu **\<HostInBrowser/>** do manifestu aplikacji ( *\<ProjectName >. exe. manifest*) podczas kompilowania projektu [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`ApplicationManifest`|Wymagane **[] ITaskItem** parametru.<br /><br /> Określa ścieżkę i nazwę pliku manifestu aplikacji, które chcesz dodać `<hostInBrowser />` elementu.|
-|`HostInBrowser`|Wymagane **logiczna** parametru.<br /><br /> Określa, czy należy zmodyfikować manifest aplikacji, aby uwzględnić  **\<hostInBrowser / >** elementu. Jeśli **true**, nowy  **\<hostInBrowser / >** element znajduje się w  **\<punktu wejścia / >** elementu. Włączenie elementu jest zbiorcza: Jeśli  **\<hostInBrowser / >** element już istnieje, nie jest usunięte, lub zastąpione. Zamiast tego dodatkowe  **\<hostInBrowser / >** zostanie utworzony element. Jeśli **false**, manifestu aplikacji nie jest modyfikowana.|
+|`ApplicationManifest`|Wymagany parametr **ITaskItem []** .<br /><br /> Określa ścieżkę i nazwę pliku manifestu aplikacji, do którego ma zostać dodany element `<hostInBrowser />`.|
+|`HostInBrowser`|Wymagany parametr **logiczny** .<br /><br /> Określa, czy należy zmodyfikować manifest aplikacji w taki sposób, aby zawierał **\<HostInBrowser/>** . W przypadku **wartości true**nowy element **\<HostInBrowser/>** jest zawarty w elemencie **\<EntryPoint/>** . Dołączenie elementu jest skumulowane: Jeśli element **\<HostInBrowser/>** już istnieje, nie zostanie on usunięty ani nadpisany. Zamiast tego tworzony jest dodatkowy **\<element HostInBrowser/>** . W przypadku **wartości false**manifest aplikacji nie jest modyfikowany.|
 
 ## <a name="remarks"></a>Uwagi
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] są uruchamiane przy użyciu [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] wdrażania, dlatego należy je opublikować z pomocniczymi manifesty wdrażania i aplikacji. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] używa [generateapplicationmanifest —](generateapplicationmanifest-task.md) zadania, aby wygenerować manifest aplikacji.
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] są uruchamiane przy użyciu wdrożenia [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)], dlatego należy je opublikować z obsługą manifestów wdrożenia i aplikacji. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] używa zadania [GenerateApplicationManifest —](generateapplicationmanifest-task.md) do wygenerowania manifestu aplikacji.
 
- Następnie, aby skonfigurować aplikacje hostowane w przeglądarce, dodatkowy  **\<hostInBrowser / >** element musi zostać dodany do manifestu aplikacji, jak pokazano w poniższym przykładzie:
+ Następnie w celu skonfigurowania aplikacji do hostowania z poziomu przeglądarki należy dodać do manifestu aplikacji dodatkowy **\<element HostInBrowser/>** , jak pokazano w następującym przykładzie:
 
 ```xml
 <!--MyXBAPApplication.exe.manifest-->
@@ -54,10 +54,10 @@ ms.locfileid: "62950699"
 />
 ```
 
- <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Zadanie zostanie uruchomione, gdy [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] projekt został skompilowany w celu dodania `<hostInBrowser />` elementu.
+ Zadanie <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> jest uruchamiane po skompilowaniu projektu [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] w celu dodania elementu `<hostInBrowser />`.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak i upewnij się, że `<hostInBrowser />` element znajduje się w pliku manifestu aplikacji.
+ Poniższy przykład pokazuje, jak upewnić się, że element `<hostInBrowser />` jest zawarty w pliku manifestu aplikacji.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -72,10 +72,10 @@ ms.locfileid: "62950699"
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
-- [Omówienie aplikacji przeglądarki XAML w WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Omówienie aplikacji przeglądarki XAML w języku WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

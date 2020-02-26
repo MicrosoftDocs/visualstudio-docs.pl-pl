@@ -4,17 +4,17 @@ ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 884047237652f6b69bd437b5faf47d820903b824
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588671"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579303"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu
 
@@ -56,7 +56,7 @@ Dostępne są również wspaniałe, bezpłatne zasoby szkoleniowe dotyczące wid
 
 Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu i Dodawanie etykiet do formularza](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Więcej C# samouczków](/visualstudio/get-started/csharp/)
 * [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621544"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579397"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. przypisanie losowej ikony do każdej etykiety
 
@@ -32,7 +32,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
       > [!IMPORTANT]
-      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka ![Programming dla Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka programowania ![dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
 2. Dodaj metodę `AssignIconsToSquares()`, jak pokazano w poprzednim kroku. Można go umieścić tuż poniżej kodu dodanego w [kroku 2: dodać losowy obiekt i listę ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
@@ -71,7 +71,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
 5. Zamknij program i uruchom go ponownie. Zauważ, że różne ikony są przypisywane do każdej etykiety, jak pokazano na poniższej ilustracji.
 
-     ![Matching gry z losowymi ikonami ](../ide/media/express_tut4step3.png)<br/>
+     ![Dopasowywanie gry przy użyciu ikon losowych](../ide/media/express_tut4step3.png)<br/>
 *Dopasowywanie gry z losowymi ikonami*
 
      Ikony są teraz widoczne, ponieważ nie zostały ukryte. Aby ukryć je z odtwarzacza, można ustawić właściwość **ForeColor** każdej etykiety na ten sam kolor, co Właściwość **BackColor** .

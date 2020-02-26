@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c451b2da08fdb0b38487438a47c6285b0380627
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647454"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579765"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Krok 8. Dodanie metody w celu sprawdzenia, czy gracz wygrał
 Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna zakończyć się, gdy gracz usługi WINS, więc musisz dodać metodę `CheckForWinner()`, aby sprawdzić, czy odtwarzacz wykupił.
@@ -31,7 +31,7 @@ Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna za
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
       > [!IMPORTANT]
-      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka ![Programming dla Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)     
+      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka programowania ![dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)     
 
      Metoda używa innej pętli `foreach` w C# pętli lub `For Each` w Visual Basic do przechodzenia przez każdą etykietę w <xref:System.Windows.Forms.TableLayoutPanel>. Używa operatora równości (`==` w C# i `=` w Visual Basic), aby sprawdzić kolor ikon każdej etykiety, aby sprawdzić, czy jest on zgodny z tłem. Jeśli kolory są zgodne, ikona pozostaje niewidoczna, a gracz nie dopasował wszystkich pozostałych ikon. W takim przypadku program używa instrukcji `return`, aby pominąć resztę metody. Jeśli pętla przechodzi przez wszystkie etykiety bez wykonywania instrukcji `return`, oznacza to, że wszystkie ikony w formularzu zostały dopasowane. Program wyświetli element MessageBox, który congratulate gracz na wygranie, a następnie wywoła metodę `Close()` formularza, aby zakończyć grę.
 
@@ -42,7 +42,7 @@ Utworzyłeś zabawną grę, ale wymaga ona jeszcze jednej rzeczy. Gra powinna za
 
 3. Zapisz i uruchom program. Zagraj w grę i dopasuj wszystkie ikony. Gdy wygrasz, program wyświetli element **MessageBox** gratulacjami (jak pokazano na poniższym zrzucie ekranu), a następnie zamknie to pole.
 
-     ![Matching gry przy użyciu ](../ide/media/express_tut4step8.png) MessageBox<br/>
+     ![Dopasowywanie gry przy użyciu](../ide/media/express_tut4step8.png) MessageBox<br/>
 ***Dopasowywanie gry*** *przy użyciu* ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć

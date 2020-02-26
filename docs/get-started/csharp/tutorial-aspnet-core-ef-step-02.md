@@ -9,19 +9,19 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061127"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580077"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core
 
@@ -44,7 +44,7 @@ Uruchom program Visual Studio 2019 i kliknij pozycję **Utwórz nowy projekt**. 
 
 W oknie Eksploratora rozwiązań po prawej stronie można wyświetlić zawartość nowego projektu. Są one opisane tutaj.
 
-![Projekt programu Visual Studio 2019 ASP.NET Core](media/vs-2019/vs2019-solution-explorer.png)
+![Visual Studio 2019 ASP.NET Core Project](media/vs-2019/vs2019-solution-explorer.png)
 
 ### <a name="wwwroot"></a>wwwroot
 
@@ -54,7 +54,7 @@ Folder *wwwroot* zawiera pliki statyczne, które będą dostępne publicznie z a
 
 Folder *strony* zawiera Razor Pages lokacji. Szablon domyślny zawiera kilka stron, w tym stronę *index. cshtml* , która jest stroną główną aplikacji, a także informacje o kontakcie i tak dalej.
 
-### <a name="appsettingsjson"></a>appSettings. JSON
+### <a name="appsettingsjson"></a>appsettings.json
 
 Ten plik zawiera ustawienia konfiguracji dla witryny w formacie JSON.
 
@@ -66,11 +66,11 @@ Ten plik pełni rolę punktu wejścia dla aplikacji. Gdy aplikacja jest uruchomi
 
 Host sieci Web utworzony w *program.cs* odwołuje się do klasy uruchomieniowej i wywołuje jej metody w celu skonfigurowania aplikacji. Metoda ConfigureServices jest odpowiedzialna za konfigurowanie wszelkich usług, które będą używane przez aplikację. Metoda `Configure` konfiguruje potok żądania HTTP aplikacji. Każde żądanie przechodzi przez ten potok, współpracując z każdą częścią *oprogramowania pośredniczącego* .
 
-### <a name="indexcshtml"></a>Index. cshtml
+### <a name="indexcshtml"></a>Index.cshtml
 
 Strona główna witryny zawiera część znaczników HTML i jakiś kod Razor po stronie serwera. Używa Razor do określenia modelu strony, `IndexModel`, który znajduje się w skojarzonym pliku *index.cshtml.cs* . Ustawia również tytuł strony przez ustawienie wartości w ViewData. Ta wartość ViewData jest odczytywana w pliku *\_Layout. cshtml* znajdującym się w folderze udostępnionym wewnątrz folderu strony. Plik układu jest współużytkowany przez wiele Razor Pages i zapewnia typowy wygląd i działanie aplikacji. Zawartość każdej strony jest renderowana w kodzie HTML pliku układu.
 
-## <a name="run-the-application"></a>Uruchom aplikację
+## <a name="run-the-application"></a>Uruchamianie aplikacji
 
 Teraz uruchom aplikację i wyświetl ją w przeglądarce. Możesz uruchomić aplikację przy użyciu **kombinacji klawiszy Ctrl**+**F5** lub wybierając **Debuguj** > **Uruchom bez debugowania** z menu programu Visual Studio.
 
@@ -92,7 +92,7 @@ Zastąp zawartość `<div>` w *index. cshtml* tym znacznikiem:
 <h2>It's @Model.Time right now on the server!</h2>
 ```
 
-Uruchom aplikację ponownie. Powinna zostać wyświetlona strona, która wyświetla bieżącą godzinę, ale zawsze jest Północna! To nie jest właściwe.
+Uruchom ponownie aplikację. Powinna zostać wyświetlona strona, która wyświetla bieżącą godzinę, ale zawsze jest Północna! To nie jest właściwe.
 
 ![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-in-browser.png)
 
@@ -116,7 +116,7 @@ public void OnGet()
 Po przejściu do aplikacji powinien zostać wyświetlony rzeczywisty czas serwera w przeglądarce.
 
 > [!NOTE]
-> Dane wyjściowe mogą się różnić od obrazu, ponieważ format danych wyjściowych ToShortDateTimeString zależy od bieżącego ustawienia kultury. Zobacz <xref:System.DateTime.ToShortTimeString>.
+> Dane wyjściowe mogą się różnić od obrazu, ponieważ format danych wyjściowych ToShortDateTimeString zależy od bieżącego ustawienia kultury. Zobacz: <xref:System.DateTime.ToShortTimeString>.
 
 ![Projekt programu Visual Studio 2019 ASP.NET Core w przeglądarce](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
@@ -126,6 +126,6 @@ W następnym filmie wideo dowiesz się, jak dodać obsługę danych do aplikacji
 
 [Samouczek: Praca z danymi w aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Samouczek: Tworzenie aplikacji internetowej Razor Pages przy użyciu ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

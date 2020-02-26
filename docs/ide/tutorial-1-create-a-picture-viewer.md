@@ -5,17 +5,17 @@ ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115097"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579724"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie przeglądarki obrazów
 
@@ -26,7 +26,7 @@ W tym samouczku utworzysz aplikację, która ładuje obraz z pliku i wyświetla 
 
 Ten samouczek przeprowadzi Cię przez następujące zadania:
 
-* Utwórz nowy projekt.
+* Tworzenie nowego projektu.
 
 * Testowanie (Debugowanie) aplikacji.
 
@@ -66,7 +66,7 @@ Dostępne są również wspaniałe, bezpłatne zasoby szkoleniowe dotyczące wid
 
 Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Więcej C# samouczków](/visualstudio/get-started/csharp/)
 * [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)

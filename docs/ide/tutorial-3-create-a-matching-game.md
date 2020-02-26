@@ -4,17 +4,17 @@ ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3039207cd36e1fcfedef95830fec9ebb91686491
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590270"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579703"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie gry w dopasowywanie
 
@@ -59,7 +59,7 @@ Dostępne są również wspaniałe, bezpłatne zasoby szkoleniowe dotyczące wid
 
 Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu i Dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Więcej C# samouczków](/visualstudio/get-started/csharp/)
 * [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)

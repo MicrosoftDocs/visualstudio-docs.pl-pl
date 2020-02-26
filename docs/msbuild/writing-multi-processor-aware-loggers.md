@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie rejestratorów procesorów uwzględniających | Dokumentacja firmy Microsoft
+title: Pisanie rejestratorów obsługujących wiele procesorów | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,39 +7,39 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443138"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579476"
 ---
-# <a name="write-multi-processor-aware-loggers"></a>Zapis procesorów uwzględniających rejestratorów
-Zdolność [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może korzystać z wielu procesorów skrócić czas tworzenia projektu, ale również dodaje złożoności do tworzenia rejestrowania zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy przybyć rejestratora w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł mogą pojawić się w tym samym czasie lub poza sekwencją. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia procesorów uwzględniających rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowego "przekazywanie rejestratorów."
+# <a name="write-multi-processor-aware-loggers"></a>Zapisuj rejestratory obsługujące wiele procesorów
+Możliwość [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] korzystania z wielu procesorów może obniżyć czas budowania projektu, ale również zwiększa złożoność tworzenia dzienników zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy docierają do rejestratora w sposób przewidywalny, sekwencyjny. Jednak w środowisku z obsługą wielu procesorów zdarzenia z różnych źródeł mogą zostać dostarczone w tym samym czasie lub poza sekwencją. Aby to umożliwić, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia Rejestrator z obsługą wieloprocesorową i nowy model rejestrowania oraz umożliwia tworzenie niestandardowych "rejestratorów przekazywania".
 
-## <a name="multi-processor-logging-challenges"></a>Rejestrowanie wielu procesorów wyzwania
- Podczas tworzenia co najmniej jeden projekt w systemie wieloprocesorowym lub wielordzeniowych [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zdarzenia kompilacji, dla wszystkich projektów są generowane w tym samym czasie. U rejestratora lawiny komunikaty o zdarzeniach może pojawić się w tym samym czasie lub poza sekwencją. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora 2.0 nie jest przeznaczony do obsługi takiej sytuacji, można przeciąży rejestratora i powodować czasy kompilacji zwiększona, rejestratora nieprawidłowe dane wyjściowe lub uszkodzone kompilacji. Aby rozwiązać te problemy, rejestratora (począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5) może przetwarzać zdarzenia poza sekwencji i skorelować zdarzenia i ich źródła.
+## <a name="multi-processor-logging-challenges"></a>Wyzwania dotyczące rejestrowania wieloprocesorowego
+ Podczas kompilowania co najmniej jednego projektu w systemie wieloprocesorowym lub wielordzeniowym, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zdarzenia kompilacji dla wszystkich projektów są generowane w tym samym czasie. Nieuporządkowane komunikatów o zdarzeniach może dotrzeć do rejestratora w tym samym czasie lub poza sekwencją. Ponieważ Rejestrator [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2,0 nie jest przeznaczony do obsługi tej sytuacji, może przeciążyć Rejestrator i spowodować zwiększenie czasów kompilacji, niepoprawnych danych wyjściowych rejestratora lub nawet przerwaną kompilację. Aby rozwiązać te problemy, Rejestrator (rozpoczynający się w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3,5) może przetwarzać zdarzenia poza sekwencją oraz skorelować zdarzenia i ich źródła.
 
- Może poprawić wydajność rejestrowania jeszcze więcej, tworząc rejestratora przekazywanie niestandardowych. Rejestrator niestandardowych przekazywania działa jako filtr, umożliwiając wybierz przed kompilacją, zdarzenia, które chcesz monitorować. Korzystając z Rejestratora przekazywanie niestandardowych zdarzeń niepożądanych nie przeciąży rejestratora, zbliżyć do siebie te dzienniki lub wolno budowania razy.
+ Aby zwiększyć efektywność rejestrowania jeszcze bardziej, można utworzyć niestandardowy Rejestrator przesyłania dalej. Niestandardowy Rejestrator przesyłania dalej działa jako filtr, umożliwiając wybór, przed kompilacją, tylko zdarzenia, które mają być monitorowane. W przypadku korzystania z niestandardowego rejestratora przesyłania dalej niepożądane zdarzenia nie mogą przeciążyć rejestratora, zaśmiecać dzienników lub długo tworzyć czasy kompilacji.
 
-## <a name="multi-processor-logging-models"></a>Modele rejestrowanie wielu procesorów
- Zapewnienie problemy związane z procesorów wielu kompilacji [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje dwa modele rejestrowania centralnej i rozproszonych.
+## <a name="multi-processor-logging-models"></a>Modele rejestrowania na wiele procesorów
+ Aby zapewnić problemy z kompilacją z obsługą wiele procesorów, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje dwa modele rejestrowania, centralne i rozproszone.
 
-### <a name="central-logging-model"></a>Model centralnego rejestrowania
- W modelu centralnego rejestrowania, pojedyncze wystąpienie *MSBuild.exe* działa jako "w węźle centralnym" i wystąpienia podrzędne centralnej węzła ("węzłów pomocniczych"), Dołącz do centralnej węzeł ułatwiają wykonywanie zadań kompilacji.
+### <a name="central-logging-model"></a>Centralny model rejestrowania
+ W centralnym modelu rejestrowania pojedyncze wystąpienie programu *MSBuild. exe* działa jak "centralny węzeł" i podrzędne wystąpienia węzła centralnego ("węzły pomocnicze") dołączane do węzła centralnego, aby ułatwić wykonywanie zadań kompilacji.
 
  ![Model rejestratora centralnego](../msbuild/media/centralnode.png "CentralNode")
 
- Rejestratory różne typy, które dołączanie do węzła centralnej są określane jako "centralnej rejestratorów." Tylko jedno wystąpienie każdego typu rejestratora można dołączyć do centralnej węzła w tym samym czasie.
+ Rejestratory różnych typów, które dołączają do węzła centralnego, są znane jako "rejestratory centralne". Tylko jedno wystąpienie każdego typu rejestratora może być dołączone do węzła centralnego w tym samym czasie.
 
- W przypadku kompilacji węzłów pomocniczych kierowanie ich zdarzeń kompilacji w węźle centralnym. W węźle centralnym kieruje ze zdarzeniami, a także tych węzłów pomocniczych do co najmniej jeden dołączony rejestratorów centralnej. Rejestratory, które następnie utworzyć plików dziennika, które są oparte na danych przychodzących.
+ Gdy wystąpi kompilacja, węzły pomocnicze kierują zdarzenia kompilacji do węzła centralnego. Węzeł centralny kieruje wszystkie zdarzenia, a także te węzły pomocnicze do co najmniej jednego dołączonego rejestratora centralnego. Rejestratory tworzą następnie pliki dziennika, które są oparte na danych przychodzących.
 
- Mimo że jest to jedyna <xref:Microsoft.Build.Framework.ILogger> jest wymagane do zaimplementowania przez rejestrator centralnej, firma Microsoft zaleca również Implementowanie <xref:Microsoft.Build.Framework.INodeLogger> tak, aby rejestratora centralnego inicjuje z liczbą węzłów, które uczestniczą w kompilacji. Następujące przeciążenia <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> wywołuje metodę, gdy aparat inicjuje rejestratora.
+ Chociaż tylko <xref:Microsoft.Build.Framework.ILogger> jest wymagana do wdrożenia przez rejestrator centralny, zalecamy również wdrożenie <xref:Microsoft.Build.Framework.INodeLogger> tak, aby Rejestrator centralny zainicjuje się liczbą węzłów uczestniczących w kompilacji. Następujące Przeciążenie metody <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> wywołuje się, gdy aparat inicjuje rejestrator.
 
 ```csharp
 public interface INodeLogger: ILogger
@@ -48,47 +48,47 @@ public interface INodeLogger: ILogger
 }
 ```
 
- Wszystkie wstępnie istniejące <xref:Microsoft.Build.Framework.ILogger>— na podstawie rejestratorów może działać jako rejestratorów centralnej i można dołączyć do kompilacji. Jednak centralnej rejestratorów zapisywane bez jawnego obsługę scenariuszy rejestrowanie wielu procesorów i zdarzeń poza kolejnością może przerwanie kompilacji lub generowania danych wyjściowych bez znaczenia.
+ Wszystkie istniejące wcześniej rejestratory oparte na <xref:Microsoft.Build.Framework.ILogger>mogą działać jako rejestratory środkowe i można dołączyć do kompilacji. Jednak centralne rejestratory zapisywane bez jawnej obsługi scenariuszy rejestrowania wieloprocesorowego i zdarzeń poza kolejnością mogą przerwać kompilację lub utworzyć nieaktualne dane wyjściowe.
 
-### <a name="distributed-logging-model"></a>Rejestrowanie rozproszonego modelu
- W modelu centralnego rejestrowania zbyt dużej ilości ruchu przychodzącego komunikatu może spowodować przeciążenie węźle centralnym, na przykład, gdy wiele projektów kompilacji w tym samym czasie. Może to podkreślają zasobów systemowych i zmniejszyć wydajność kompilacji. Aby ułatwić ten problem, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje model rejestrowania rozproszonych.
+### <a name="distributed-logging-model"></a>Model rejestrowania rozproszonego
+ W centralnym modelu rejestrowania zbyt dużo ruchu komunikatów przychodzących może przeciążyć centralny węzeł, na przykład, gdy wiele projektów kompiluje się w tym samym czasie. Pozwala to na obciążenie zasobów systemowych i zmniejszenie wydajności kompilacji. Aby ułatwić ten problem, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsługuje model rejestrowania rozproszonego.
 
- ![Model rejestrowania rozproszonych](../msbuild/media/distnode.png "DistNode")
+ ![Model rejestrowania rozproszonego](../msbuild/media/distnode.png "DistNode")
 
- Model rejestrowania rozproszonych rozszerzają model centralnego rejestrowania, umożliwiając tworzenie rejestratora przekazywania.
+ Model rejestrowania rozproszonego rozszerza centralny model rejestrowania, umożliwiając tworzenie rejestratora przesyłania dalej.
 
-#### <a name="forwarding-loggers"></a>Przekazywanie rejestratorów
- Rejestrator przekazywania jest rejestratora pomocniczego, lekki, zawierający filtr zdarzeń, który dołącza do węzła pomocniczego i odbiera zdarzenia przychodzące kompilacji z tego węzła. On filtruje zdarzenia przychodzące i przekazuje tylko te, które określają na węźle centralnym. Zmniejsza to ruch komunikat, który jest wysyłany do węźle centralnym i zwiększa ogólną wydajność kompilacji.
+#### <a name="forwarding-loggers"></a>Rejestratory przesyłania dalej
+ Rejestrator przekazywania to pomocniczy, lekki Rejestrator z filtrem zdarzeń, który dołącza do węzła pomocniczego i odbiera przychodzące zdarzenia kompilacji z tego węzła. Filtruje zdarzenia przychodzące i przekazuje tylko te, które są określone w węźle centralnym. Zmniejsza to ruch komunikatów wysyłany do węzła centralnego i zwiększa ogólną wydajność kompilacji.
 
- Istnieją dwa sposoby korzystania z rejestrowania rozproszonych, w następujący sposób:
+ Istnieją dwa sposoby używania rejestrowania rozproszonego w następujący sposób:
 
-- Dostosowywanie rejestratora wstępnie metalowych przesyłania dalej o nazwie <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
+- Dostosuj rejestratora wstępnego przesyłania dalej o nazwie <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
 
-- Napisać własne niestandardowe przekazywania rejestratora.
+- Napisz własny niestandardowy Rejestrator przesyłania dalej.
 
-Można zmodyfikować ConfigurableForwardingLogger ze swoimi potrzebami. W tym celu należy wywołać rejestratora w wierszu polecenia za pomocą *MSBuild.exe*i wyświetlać zdarzenia kompilacji, które chcesz rejestratora do przekazywania na węźle centralnym.
+Możesz zmodyfikować ConfigurableForwardingLogger zgodnie z wymaganiami. W tym celu wywołaj rejestrator w wierszu polecenia za pomocą programu *MSBuild. exe*i Wyświetl listę zdarzeń kompilacji, które mają być przekazywane przez rejestrator do węzła centralnego.
 
-Alternatywnie można utworzyć rejestratora przekazywanie niestandardowych. Tworząc rejestratora przekazywanie niestandardowych, można dostosować zachowanie programu rejestrującego. Jednak tworzenie rejestratora przekazywanie niestandardowych jest bardziej skomplikowane niż po prostu Dostosowywanie ConfigurableForwardingLogger. Aby uzyskać więcej informacji, zobacz [tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md).
+Alternatywnie można utworzyć niestandardowy Rejestrator przesyłania dalej. Tworząc niestandardowy Rejestrator przesyłania dalej, można dostosować zachowanie rejestratora. Tworzenie niestandardowego rejestratora przesyłania dalej jest jednak bardziej skomplikowane niż tylko Dostosowywanie ConfigurableForwardingLogger. Aby uzyskać więcej informacji, zobacz [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md).
 
-## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Proste rozproszone rejestrowania przy użyciu ConfigurableForwardingLogger
- Aby dołączyć ConfigurableForwardingLogger lub rejestratora przekazywanie niestandardowych, należy użyć `-distributedlogger` przełącznika (`-dl` w skrócie) w *MSBuild.exe* kompilacji wiersza polecenia. Format określająca nazwy klasy i typy rejestratora jest taka sama jak dla `-logger` przełącznika, z tą różnicą, że rozproszonych rejestratora zawsze ma dwie klasy rejestrowania zamiast jednym Rejestrator przekazywania i rejestratora centralnego. Oto przykładowy sposób dołączyć Rejestrator przekazywanie niestandardowej o nazwie XMLForwardingLogger.
+## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Używanie ConfigurableForwardingLogger na potrzeby prostego rejestrowania rozproszonego
+ Aby dołączyć ConfigurableForwardingLogger lub niestandardowy Rejestrator przesyłania dalej, użyj przełącznika `-distributedlogger` (w`-dl` krótko) w kompilacji wiersza polecenia *MSBuild. exe* . Format służący do określania nazw typów i klas rejestratora jest taki sam jak w przypadku przełącznika `-logger`, z tą różnicą, że w przypadku rejestrowania rozproszonego zawsze istnieją dwie klasy rejestrowania, a nie jeden, rejestrator przekazywania i centralny rejestrator. Poniżej przedstawiono przykład sposobu dołączania niestandardowego rejestratora przesyłania dalej o nazwie XMLForwardingLogger.
 
 ```cmd
 msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral
 ```
 
 > [!NOTE]
-> Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `-dl` przełącznika.
+> Gwiazdka (*) musi oddzielić dwie nazwy rejestratora w przełączniku `-dl`.
 
- Za pomocą ConfigurableForwardingLogger przypomina przy użyciu innych rejestratora (zgodnie z opisem w [dzienniki kompilacji uzyskiwanie](../msbuild/obtaining-build-logs-with-msbuild.md)), z tą różnicą, że możesz dołączyć rejestratora ConfigurableForwardingLogger zamiast typowej [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora i Określ jako parametry zdarzeń, które chcesz ConfigurableForwardingLogger w celu przekazania ich węźle centralnym.
+ Korzystanie z ConfigurableForwardingLogger przypomina korzystanie z dowolnego innego Rejestratora (jak przedstawiono w [uzyskiwaniu dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)), z tą różnicą, że zamiast typowego rejestratora [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] należy dołączyć Rejestrator ConfigurableForwardingLogger i określić jako parametry zdarzenia, które mają być przekazywane przez ConfigurableForwardingLogger do węzła centralnego.
 
- Na przykład, jeśli chcesz otrzymywać powiadomienia, tylko wtedy, gdy kompilacja rozpoczyna i kończy i po wystąpieniu błędu, należy wprowadzić `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, i `ERROREVENT` jako parametry. Wiele parametrów mogą być przekazywane, oddzielając je średnikami. Oto przykład sposobu użycia ConfigurableForwardingLogger do przekazywania tylko `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, i `ERROREVENT` zdarzenia.
+ Na przykład jeśli chcesz otrzymywać powiadomienia tylko wtedy, gdy kompilacja rozpocznie się i skończy, a w przypadku wystąpienia błędu, należy przekazać `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`i `ERROREVENT` jako parametry. Wiele parametrów można przekazywać, rozdzielając je średnikami. Poniżej przedstawiono przykład użycia ConfigurableForwardingLogger do przesyłania dalej tylko zdarzeń `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`i `ERROREVENT`.
 
 ```cmd
 msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT
 ```
 
- Oto lista dostępnych parametrów ConfigurableForwardingLogger.
+ Poniżej znajduje się lista dostępnych parametrów ConfigurableForwardingLogger.
 
 |Parametry ConfigurableForwardingLogger|
 | - |
@@ -106,10 +106,10 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NORMALMESSAGEEVENT|
 |LOWMESSAGEEVENT|
 |CUSTOMEVENT|
-|WIERSZ POLECENIA|
+|WIERSZA polecenia|
 |PERFORMANCESUMMARY|
-|NOSUMMARY|
+|Nosummary|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>Zobacz także
-- [Tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>Zobacz też
+- [Tworzenie rejestratorów przekazywania](../msbuild/creating-forwarding-loggers.md)

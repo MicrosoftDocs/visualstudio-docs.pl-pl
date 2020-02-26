@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621430"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579349"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
 
@@ -34,11 +34,11 @@ Gra w dopasowywanie działa w następujący sposób:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać program obsługi zdarzeń kliknięcia do każdej etykiety
 
-1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań**wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie **wyświetl**  > **projektanta**.
+1. Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksplorator rozwiązań**wybierz pozycję *Form1.cs* lub *Form1. vb*. Na pasku menu wybierz polecenie **wyświetl** > **projektanta**.
 
 2. Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie naciśnij i przytrzymaj klawisz **Ctrl** podczas wybierania każdej z pozostałych etykiet, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 
-3. Wybierz przycisk **zdarzenia** na pasku narzędzi w oknie **Właściwości** , aby wyświetlić stronę **zdarzenia** w oknie **Właściwości** . Przewiń w dół do zdarzenia kliknij, a **następnie** wprowadź **label_Click** w polu, jak pokazano na poniższym zrzucie ekranu.
+3. Wybierz przycisk **zdarzenia** na pasku narzędzi w oknie **Właściwości** , aby wyświetlić stronę **zdarzenia** w oknie **Właściwości** . Przewiń w dół do zdarzenia **kliknij** i wprowadź **label_Click** w polu, jak pokazano na poniższym zrzucie ekranu.
 
      ![Okno Właściwości pokazujące zdarzenie Kliknij](../ide/media/express_labelclick.png)
 
@@ -50,7 +50,7 @@ Gra w dopasowywanie działa w następujący sposób:
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
      > [!IMPORTANT]
-     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka ![Programming dla Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka programowania ![dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
     > [!NOTE]
     > Jeśli skopiujesz i wkleisz blok kodu `label_Click()` zamiast ręcznie wprowadzić kod, pamiętaj, aby zastąpić istniejący kod `label_Click()`. W przeciwnym razie otrzymasz zduplikowany blok kodu.
@@ -60,7 +60,7 @@ Gra w dopasowywanie działa w następujący sposób:
 
      Ta metoda najpierw sprawdza, czy `clickedLabel` został pomyślnie przekonwertowany (rzutowany) z obiektu do kontrolki etykieta. Jeśli nie powiedzie się, ma wartość `null` (C#) lub `Nothing` (Visual Basic) i nie chcesz wykonywać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety przy użyciu właściwości **ForeColor** etykiety. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (To jest działanie instrukcji `return`: informuje program, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, dlatego program zmienia kolor tekstu etykiety na czarny.
 
-6. Na pasku menu wybierz kolejno opcje **plik**  > **Zapisz wszystko** , aby zapisać postęp, a następnie na pasku menu wybierz **Debuguj**  > **Rozpocznij debugowanie** , aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
+6. Na pasku menu wybierz kolejno opcje **plik** > **Zapisz wszystko** , aby zapisać postęp, a następnie na pasku menu wybierz **Debuguj** > **Rozpocznij debugowanie** , aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

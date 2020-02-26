@@ -1,5 +1,5 @@
 ---
-title: WriteAllTLogs | Dokumentacja firmy Microsoft
+title: WriteAllTLogs | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -10,17 +10,17 @@ apitype: COM
 helpviewer_keywords:
 - WriteAllTLogs
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c64f0079a03b730fb700cfbc6320c5dffa05d7a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778446"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579518"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 Zapisuje dzienniki śledzenia dla wszystkich wątków i kontekstów.
@@ -34,17 +34,17 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 #### <a name="parameters"></a>Parametry
 [in] `intermediateDirectory`
 
- Katalog, w którym mają zostać zapisane w dzienniku śledzenia.
+ Katalog, w którym ma być przechowywany dziennik śledzenia.
 
 [in] `tlogRootName`
 
- Nazwa głównej nazwy pliku dziennika.
+ Nazwa głównego pliku dziennika.
 
 ## <a name="return-value"></a>Wartość zwracana
- **HRESULT** z **Powodzenie** bitu, jeśli kontekst śledzenia został utworzony.
+ **Wynik HRESULT** z **pomyślnym** bitem ustawionym w przypadku utworzenia kontekstu śledzenia.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *FileTracker.h*
+ **Nagłówek:** *FileTracker. h*
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [WriteContextTLogs](../msbuild/writecontexttlogs.md)

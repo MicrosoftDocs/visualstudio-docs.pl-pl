@@ -8,21 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994918"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77577948"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Przegląd narzędzi do pomiaru wydajności w programie Visual Studio
 
-Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi są gromadzone dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) w okresie czasu, takie jak czas uruchamiania aplikacji. Możesz wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu lub analiza wydajności aplikacji w późniejszej analizy.
+Narzędzia profilowania i diagnostyki pomagają zdiagnozować problemy dotyczące użycia pamięci i procesora oraz inne problemy na poziomie aplikacji. Za pomocą tych narzędzi są gromadzone dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) w okresie czasu, takie jak czas uruchamiania aplikacji. Możesz wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu lub analiza wydajności aplikacji w późniejszej analizy.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* [Pierwsze spojrzenie na profilowanie narzędzia](../profiling/profiling-feature-tour.md) Aby dowiedzieć się o wiele różnych sposobów, aby zmierzyć wydajność aplikacji.
+* [Najpierw Spójrz na narzędzia profilowania](../profiling/profiling-feature-tour.md) , aby dowiedzieć się więcej o wielu różnych sposobach mierzenia wydajności aplikacji.
 
-* [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md) uzyskać bardziej szczegółowe informacje na temat narzędzia użycie procesora CPU.
+* [Analizuj użycie procesora](../profiling/cpu-usage.md) , aby uzyskać bardziej szczegółowe informacje o narzędziu Użycie procesora CPU.
 
-* [Analizowanie użycia pamięci](../profiling/memory-usage.md) do identyfikowania wąskich gardeł wydajności.
+* [Analizuj użycie pamięci](../profiling/memory-usage.md) , aby zidentyfikować wąskie gardła wydajności.
+
+* [Analizowanie użycia pamięci za pomocą narzędzia alokacji obiektów platformy .NET](../profiling/dotnet-alloc-tool.md) do identyfikowania wąskich gardeł wydajności w aplikacjach .NET.

@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589984"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579793"
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6. Nadaj nazwę kontrolkom przycisków
 
@@ -103,7 +103,7 @@ Karta ***Form1.cs*** *z C# kodem*
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5. Dodawanie kontrolek do formularza](../ide/step-5-add-controls-to-your-form.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
 * [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

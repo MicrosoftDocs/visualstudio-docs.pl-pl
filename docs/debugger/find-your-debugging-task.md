@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599293"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578768"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Znajdowanie zadania debugowania w programie Visual Studio
 
@@ -75,7 +75,7 @@ Można to zrobić przez [ustawienie punktu przerwania w oknie demontażu](using-
 
 Aby uzyskać więcej informacji, zobacz [nawigowanie po kodzie za pomocą debugera](navigating-through-code-with-the-debugger.md).
 
-## <a name="inspect-data"></a>Sprawdzanie danych
+## <a name="inspect-data"></a>Inspekcja danych
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Sprawdź wartość zmiennych podczas uruchamiania aplikacji
 
@@ -103,7 +103,7 @@ Aby skonfigurować opcje debugera i ustawienia projektu debugera, zobacz [Ustawi
 
 ## <a name="additional-tasks"></a>Dodatkowe zadania
 
-### <a name="fix-an-exception"></a>Naprawianie wyjątku
+### <a name="fix-an-exception"></a>Usuń wyjątek
 
 Zobacz [Rozwiązywanie wyjątku](write-better-code-with-visual-studio.md#fix-an-exception).
 
@@ -130,3 +130,7 @@ Zobacz [dołączanie do uruchomionych procesów](attach-to-running-processes-wit
 ### <a name="debug-multithreaded-applications"></a>Debugowanie aplikacji wielowątkowych
 
 Zobacz [debugowanie aplikacji wielowątkowych](debug-multithreaded-applications-in-visual-studio.md).
+
+### <a name="fix-performance-issues"></a>Rozwiązywanie problemów z wydajnością
+
+Zobacz [pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

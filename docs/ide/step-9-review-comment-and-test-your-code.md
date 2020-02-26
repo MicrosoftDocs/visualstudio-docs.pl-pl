@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572486"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579748"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9. przeglądanie, komentowanie i testowanie kodu
 
@@ -65,20 +65,20 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
     > [!TIP]
     > Środowisko IDE zostało skompilowane, aby ułatwić pisanie kodu, a *fragmenty kodu* są jednym ze sposobów. Fragment kodu jest skrótem, który jest rozwinięty w niewielkim bloku.
     >
-    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno opcje **narzędzia**  > **kod fragmenty kodu**. W C#przypadku, fragment `if` znajduje się **w C# wizualizacji** . W przypadku Visual Basic fragmenty kodu `if` znajdują się w **wzorcach** ,  > **warunkowe i pętle**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
+    >  Zobaczysz wszystkie dostępne fragmenty kodu. Na pasku menu wybierz kolejno opcje **narzędzia** > **kod fragmenty kodu**. W C#przypadku, fragment `if` znajduje się **w C# wizualizacji** . W przypadku Visual Basic fragmenty kodu `if` znajdują się w **wzorcach** , > **warunkowe i pętle**. Za pomocą tego menedżera można przeglądać istniejące fragmenty kodu lub dodawać własne fragmenty kodu.
     >
     >  Aby uaktywnić fragment kodu przy wpisywaniu tekstu, wpisz go i wybierz klawisz **Tab** . Wiele fragmentów kodu pojawia się w oknie **IntelliSense** , co oznacza, że wybierasz klawisz **Tab** dwa razy: najpierw, aby wybrać wstawkę z okna **IntelliSense** , a następnie wskazać, że IDE używa tego fragmentu kodu. (Technologia IntelliSense obsługuje fragment kodu `if`, ale nie fragment `ifelse`).
 
 1. Przed uruchomieniem aplikacji Zapisz aplikację, wybierając przycisk **Zapisz wszystkie** paski narzędzi, który powinien wyglądać podobnie do poniższego zrzutu ekranu.
 
-     ![Save wszystkie przyciski paska narzędzi ](../ide/media/express_iconsaveall.png)<br>
+     przycisk ![Zapisz cały pasek narzędzi](../ide/media/express_iconsaveall.png)<br>
 *Przycisk* ***Zapisz wszystko***
 
-     Alternatywnie, aby zapisać aplikację, wybierz pozycję **plik**  > **Zapisz wszystko** na pasku menu (lub naciśnij klawisz **Ctrl** +**SHIFT** +**S**). Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
+     Alternatywnie, aby zapisać aplikację, wybierz pozycję **plik** > **Zapisz wszystko** na pasku menu (lub naciśnij klawisz **Ctrl**+**SHIFT**+**S**). Najlepszym rozwiązaniem jest wczesne i częste zapisywanie.
 
      Po uruchomieniu program powinien wyglądać jak na poniższej ilustracji.
 
-     ](../ide/media/express_pictureviewerdonerun.png) przeglądarka ![Picture<br>***Przeglądarka obrazów***
+     Przeglądarka ![Picture](../ide/media/express_pictureviewerdonerun.png)<br>***Przeglądarka obrazów***
 
 ## <a name="to-test-your-app"></a>Aby przetestować aplikację
 
@@ -87,7 +87,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 1. Wybierz przycisk **Pokaż obraz** , aby uruchomić właśnie napisany kod. Najpierw aplikacja otwiera okno dialogowe **Otwórz plik** . Sprawdź, czy Twoje filtry są wyświetlane na liście rozwijanej **Pliki typu** u dołu okna dialogowego. Następnie przejdź do obrazu i otwórz go. Zwykle można znaleźć przykładowe obrazy dostarczane z systemem operacyjnym Windows w folderze *Moje dokumenty* w folderze *Moje obrazy Pictures\Sample* .
 
     > [!TIP]
-    > Jeśli nie widzisz żadnych obrazów w oknie dialogowym **Wybierz plik obrazu** , upewnij się, że na liście rozwijanej w prawym dolnym rogu okna dialogowego jest zaznaczone pole wyboru **wszystkie pliki (*. \*)** .
+    > Jeśli nie widzisz żadnych obrazów w oknie dialogowym **Wybierz plik obrazu** , upewnij się, że na liście rozwijanej w prawym dolnym rogu okna dialogowego jest zaznaczone pole wyboru **wszystkie pliki (*.\*)** .
 
 1. Załaduj obraz i pojawia się w elemencie PictureBox. Następnie spróbuj zmienić rozmiar formularza, przeciągając jego obramowania. Ponieważ element PictureBox jest zadokowany wewnątrz elementu TableLayoutPanel, który sam jest zadokowany w formularzu, obszar obrazu zmieni się w taki sposób, aby był tak szeroki jak formularz, i wypełni górne 90 procent formularza. Dlatego zostały użyte <xref:System.Windows.Forms.TableLayoutPanel> i kontenery <xref:System.Windows.Forms.FlowLayoutPanel>: zachowują rozmiar formularza poprawnie, gdy użytkownik zmienia jego rozmiary.
 
@@ -99,7 +99,7 @@ Właśnie skompilowano coś, co działa, a chociaż nie zostało to jeszcze zrob
 
 - Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 8. Pisanie kodu dla programu obsługi zdarzeń przycisku Pokaż obraz](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
 * [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

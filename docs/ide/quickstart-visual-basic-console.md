@@ -7,33 +7,33 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da73ac3f47b6b63817ff905923b71e3354b06c
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180086"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579500"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki start: Tworzenie pierwszej aplikacji konsolowej w programie Visual Studio przy użyciu Visual Basic
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Szybki Start: Tworzenie pierwszej aplikacji konsolowej w programie Visual Studio przy użyciu Visual Basic
 
 W tym 5-10 minutowym wprowadzeniu do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio utworzysz prostą Visual Basic aplikację, która działa w konsoli programu.
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu jest d
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na górnym pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
 
 3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual Basic**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nadaj nazwę projekt *HelloWorld*.
 
@@ -64,7 +64,7 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu jest d
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> Niektóre zrzuty ekranu w tym przewodniku szybki start używają ciemnego motywu. Jeśli nie używasz motyw ciemny, ale aby zobaczyć [Personalizowanie programu Visual Studio IDE i edytorem](quickstart-personalize-the-ide.md) strony, aby dowiedzieć się, jak.
+> Niektóre zrzuty ekranu w tym przewodniku szybki start używają ciemnego motywu. Jeśli nie używasz ciemnego motywu, ale chcesz, zobacz stronę [personalizowanie środowiska IDE i edytora programu Visual Studio](quickstart-personalize-the-ide.md) , aby dowiedzieć się, jak.
 
 1. Open Visual Studio 2019.
 
@@ -99,7 +99,7 @@ Najpierw utworzysz projekt aplikacji w języku Visual Basic. Typ projektu jest d
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
-Po wybraniu szablonu projektu Visual Basic i Nazwij swój projekt, program Visual Studio utworzy prostą aplikację "Hello world". Wywołuje <xref:System.Console.WriteLine%2A> metodę w celu wyświetlenia ciągu literału "Hello World!" w oknie konsoli.
+Po wybraniu szablonu projektu Visual Basic i Nazwij swój projekt, program Visual Studio utworzy prostą aplikację "Hello world". Wywołuje metodę <xref:System.Console.WriteLine%2A>, aby wyświetlić ciąg literału "Hello world!" w oknie konsoli.
 
 ![Wyświetl domyślny kod Hello world z szablonu](../ide/media/vb-console-helloworld-template.png)
 
@@ -107,13 +107,13 @@ Jeśli klikniesz przycisk **HelloWorld** w IDE, możesz uruchomić program w try
 
   ![Kliknij przycisk Hello world, aby uruchomić program w trybie debugowania](../ide/media/vb-console-hello-world-button.png)
 
-Po wykonaniu tej czynności okno konsoli jest widoczne tylko przez chwilę przed zamknięciem. Dzieje się tak, `Main` ponieważ metoda kończy się po wykonaniu jednej instrukcji i dlatego aplikacja kończy działanie.
+Po wykonaniu tej czynności okno konsoli jest widoczne tylko przez chwilę przed zamknięciem. Dzieje się tak, ponieważ metoda `Main` kończy się po wykonaniu jednej instrukcji i dlatego aplikacja kończy działanie.
 
 ### <a name="add-some-code"></a>Dodaj kod
 
 Dodajmy kod, aby wstrzymać aplikację, a następnie poproszony o wprowadzenie danych przez użytkownika.
 
-1. Dodaj następujący kod bezpośrednio po wywołaniu <xref:System.Console.WriteLine%2A> metody:
+1. Dodaj następujący kod bezpośrednio po wywołaniu metody <xref:System.Console.WriteLine%2A>:
 
    ```vb
    Console.Write("Press any key to continue...")
@@ -122,7 +122,7 @@ Dodajmy kod, aby wstrzymać aplikację, a następnie poproszony o wprowadzenie d
 
     Powoduje to wstrzymanie programu do momentu naciśnięcia klawisza.
 
-2. Na pasku menu wybierz pozycję **kompilacja** > Kompiluj**rozwiązanie**.
+2. Na pasku menu wybierz kolejno opcje **kompiluj** > **Kompiluj rozwiązanie**.
 
    Spowoduje to skompilowanie programu do języka pośredniego (IL), który jest konwertowany na kod binarny przez kompilator just-in-Time (JIT).
 

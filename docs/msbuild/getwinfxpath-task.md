@@ -1,5 +1,5 @@
 ---
-title: GetWinFXPath Task | Microsoft Docs
+title: GetWinFXPath — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,34 +13,34 @@ helpviewer_keywords:
 - GetWinFXPath task [WPF MSBuild]
 - obtaining the path to the current .NET Framework runtime [WPF MSBuild]
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95e5ad882d7021b597d7ba0ad8c38177f4a5136
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 894cfe9fd6e116e983a5290e5817211182b073c7
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996348"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578617"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath task
-<xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> Zadanie zwraca katalogu bieżącego [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] środowiska uruchomieniowego.
+Zadanie <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> zwraca katalog bieżącego [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] środowiska uruchomieniowego.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 | Parametr | Opis |
 |-------------------| - |
-| `WinFXPath` | Opcjonalnie **ciąg** parametr wyjściowy.<br /><br /> Określa ścieżkę rzeczywistych [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)] środowiska uruchomieniowego. |
-| `WinFXNativePath` | Wymagane **ciąg** parametru.<br /><br /> Określa ścieżkę do natywnych [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] środowiska uruchomieniowego. |
-| `WinFXWowPath` | Wymagane **ciąg** parametru.<br /><br /> Określa ścieżkę do [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] zestawów w 32-bitowych **Windows na Windows** modułu w systemach 64-bitowych. |
+| `WinFXPath` | Opcjonalny parametr wyjściowy **ciągu** .<br /><br /> Określa rzeczywistą ścieżkę do środowiska uruchomieniowego [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)]. |
+| `WinFXNativePath` | Wymagany parametr **ciągu** .<br /><br /> Określa ścieżkę do natywnego środowiska uruchomieniowego [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)]. |
+| `WinFXWowPath` | Wymagany parametr **ciągu** .<br /><br /> Określa ścieżkę do zestawów [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] w 32-bitowym **systemie Windows w module systemu Windows** w systemach 64-bitowych. |
 
 ## <a name="remarks"></a>Uwagi
- Jeśli <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> zadanie jest wykonywane na 64-bitowy procesor, **WinFXPath** parametr ma wartość ścieżki, która jest przechowywana w **WinFXWowPath** parametru; w przeciwnym razie **WinFXPath**  parametr ma wartość ścieżki, która jest przechowywana w **WinFXNativePath** parametru.
+ Jeśli zadanie <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> jest wykonywane na procesorze 64-bitowym, parametr **WinFXPath** jest ustawiany na ścieżkę, która jest przechowywana w parametrze **WinFXWowPath** ; w przeciwnym razie parametr **WinFXPath** jest ustawiany na ścieżkę, która jest przechowywana w parametrze **WinFXNativePath** .
 
 ## <a name="example"></a>Przykład
- Poniższy przykład pokazuje, jak używać **getwinfxpath —** zadanie, aby wykryć ścieżką natywną do [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] środowiska uruchomieniowego.
+ Poniższy przykład pokazuje, jak używać zadania **GetWinFXPath —** do wykrywania ścieżki natywnej do środowiska uruchomieniowego [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)].
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,9 +56,9 @@ ms.locfileid: "62996348"
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
-- [Odwołanie do narzędzia MSBuild](../msbuild/msbuild-reference.md)
+- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

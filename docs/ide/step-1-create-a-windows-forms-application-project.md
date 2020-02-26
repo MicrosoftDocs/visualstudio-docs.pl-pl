@@ -5,17 +5,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588788"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579913"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Krok 1. Tworzenie projektu aplikacji Windows Forms
 
@@ -25,7 +25,7 @@ Podczas tworzenia przeglądarki obrazów pierwszym krokiem jest utworzenie proje
 
 ## <a name="open-visual-studio-2017"></a>Open Visual Studio 2017
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
+1. Na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. Okno dialogowe powinno wyglądać podobnie do poniższego zrzutu ekranu.
 
      okno dialogowe ![nowego projektu](../ide/media/newprojectdialogcallouts.png)<br/>***Nowy projekt*** — okno *dialogowe*
 
@@ -115,7 +115,7 @@ Program Visual Studio tworzy rozwiązanie dla aplikacji. Rozwiązanie działa ja
 
 * Aby powrócić do tematu przeglądu, zobacz [Samouczek 1: Tworzenie przeglądarki obrazów](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
 * [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

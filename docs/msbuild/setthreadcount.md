@@ -1,5 +1,5 @@
 ---
-title: SetThreadCount | Dokumentacja firmy Microsoft
+title: SetThreadCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 apiname:
@@ -10,20 +10,20 @@ apitype: COM
 helpviewer_keywords:
 - SetThreadCount
 ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 656e491e683c7ec2de23ea7e49938e833af3a295
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b1eb28d5a54af1708fa8d3ea7a12887174a15bb
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945737"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579589"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
-Ustawia liczbę wątku globalnych i przypisuje obliczony wynik w bieżącym wątku.
+Ustawia liczbę wątków globalnych i przypisuje liczbę do bieżącego wątku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,10 +34,10 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 #### <a name="parameters"></a>Parametry
 [in] `threadCount`
 
- Liczba wątków używanych.
+ Liczba wątków, które mają być używane.
 
 ## <a name="return-value"></a>Wartość zwracana
- **HRESULT** z **Powodzenie** bitu, jeśli liczba wątków został zaktualizowany.
+ **Wynik HRESULT** z ustawionym **bitem** bitu, jeśli licznik wątków został zaktualizowany.
 
 ## <a name="requirements"></a>Wymagania
- **Nagłówek:** *FileTracker.h*
+ **Nagłówek:** *FileTracker. h*

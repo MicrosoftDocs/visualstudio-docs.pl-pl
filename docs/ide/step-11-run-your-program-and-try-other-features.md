@@ -1,25 +1,25 @@
 ---
-title: Krok 11. Uruchom aplikację przeglądarka obrazów i wypróbuj inne funkcje
+title: Krok 11. Uruchamianie aplikacji Przeglądarka obrazów i wypróbuj inne funkcje
 ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118800"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579904"
 ---
-# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Krok 11. Uruchom aplikację przeglądarka obrazów i wypróbuj inne funkcje
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Krok 11. Uruchamianie aplikacji Przeglądarka obrazów i wypróbuj inne funkcje
 
-Twoja aplikacja dla przeglądarki obrazów została zakończona i jest gotowa do uruchomienia. Możesz uruchomić aplikację i ustawić kolor <xref:System.Windows.Forms.PictureBox>tła. Aby dowiedzieć się więcej, spróbuj poprawić aplikację, zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
+Twoja aplikacja dla przeglądarki obrazów została zakończona i jest gotowa do uruchomienia. Możesz uruchomić aplikację i ustawić kolor tła <xref:System.Windows.Forms.PictureBox>. Aby dowiedzieć się więcej, spróbuj poprawić aplikację, zmieniając kolor formularza, dostosowując przyciski i pole wyboru i zmieniając właściwości formularza.
 
 ## <a name="how-to-run-your-app-and-set-the-background-color"></a>Jak uruchomić aplikację i ustawić kolor tła
 
@@ -27,10 +27,10 @@ Twoja aplikacja dla przeglądarki obrazów została zakończona i jest gotowa do
 
 1. Przed otwarciem obrazu wybierz przycisk **Ustaw kolor tła** . Zostanie otwarte okno dialogowe **koloru** .
 
-     ![Okno dialogowe koloru](../ide/media/express_colordialog.png)<br/>
-***Kolor*** okno *dialogowe*
+     okno dialogowe ![koloru](../ide/media/express_colordialog.png)<br/>
+Okno *dialogowe* ***koloru***
 
-1. Wybierz kolor, aby ustawić kolor tła PictureBox. Dokładnie `backgroundButton_Click()` Obejrzyj metodę (lub,) `BackgroundButton_Click()`, aby zrozumieć, jak działa.
+1. Wybierz kolor, aby ustawić kolor tła PictureBox. Dokładnie zapoznaj się z metodą `backgroundButton_Click()` (lub `BackgroundButton_Click()`), aby zrozumieć, jak to działa.
 
     > [!NOTE]
     > Możesz załadować obraz z Internetu, wklejając jego adres URL do okna dialogowego **Otwórz plik** . Spróbuj znaleźć obraz z przezroczystym tłem, aby wyświetlić kolor tła.
@@ -52,11 +52,11 @@ Twoja aplikacja dla przeglądarki obrazów została zakończona i jest gotowa do
 Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 > [!div class="nextstepaction"]
-> [Samouczek 2: Tworzenie quizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md)
+> [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10: Napisz kod dla dodatkowych przycisków i pola](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)wyboru.
+Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Więcej C# samouczków](/visualstudio/get-started/csharp/)
 * [Więcej samouczków Visual Basic](/visualstudio/get-started/visual-basic/)

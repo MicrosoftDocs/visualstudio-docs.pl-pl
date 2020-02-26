@@ -9,21 +9,21 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: cef0db7e5615d08fb5b22c38604a24124c853ebd
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300589"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580068"
 ---
-# <a name="step-3-work-with-data-using-entity-framework"></a>Krok 3. Pracuj z danymi przy użyciu Entity Framework
+# <a name="step-3-work-with-data-using-entity-framework"></a>Krok 3. Współpraca z danymi przy użyciu Entity Framework
 
 Wykonaj następujące kroki, aby rozpocząć pracę z danymi przy użyciu Entity Framework Core w aplikacji ASP.NET Core sieci Web.
 
@@ -54,11 +54,11 @@ public class Game
 
 Teraz jesteśmy gotowi do utworzenia stron, które będą używane do zarządzania naszą biblioteką gier. Może to być spowodowane zniechęcająceem, ale jest to bardzo proste. Najpierw musimy zdecydować, gdzie w naszej aplikacji powinna się znajdować ta funkcja. Otwórz folder strony w projekcie sieci Web i Dodaj do niego nowy folder. Wywołaj *gry*IT.
 
-Teraz kliknij prawym przyciskiem myszy pozycję gry i wybierz polecenie **Dodaj** > **nowy element szkieletowy**. Wybierz opcję Razor Pages przy użyciu **Entity Framework (CRUD)** . CRUD oznacza "Tworzenie, odczytywanie, aktualizowanie, usuwanie" i ten szablon spowoduje utworzenie stron dla każdej z tych operacji (w tym strony "Wyświetl wszystko" i "Wyświetlanie szczegółów jednego elementu").
+Teraz kliknij prawym przyciskiem myszy pozycję gry i wybierz polecenie **dodaj** > **nowy element szkieletowy**. Wybierz opcję Razor Pages przy użyciu **Entity Framework (CRUD)** . CRUD oznacza "Tworzenie, odczytywanie, aktualizowanie, usuwanie" i ten szablon spowoduje utworzenie stron dla każdej z tych operacji (w tym strony "Wyświetl wszystko" i "Wyświetlanie szczegółów jednego elementu").
 
 ![Program Visual Studio 2019 ASP.NET Core Dodawanie szkieletu stron](media/vs-2019/vs2019-add-scaffold.png)
 
-Wybierz klasę modelu gier i użyj ikony "+", aby dodać nową klasę kontekstu danych. Nadaj mu `AppDbContext`nazwę. Pozostaw resztę jako domyślne i kliknij przycisk **Dodaj**.
+Wybierz klasę modelu gier i użyj ikony "+", aby dodać nową klasę kontekstu danych. Nadaj jej nazwę `AppDbContext`. Pozostaw resztę jako domyślne i kliknij przycisk **Dodaj**.
 
 Zostanie wyświetlony następujący Razor Pages dodany do folderu gry:
 
@@ -70,14 +70,14 @@ Zostanie wyświetlony następujący Razor Pages dodany do folderu gry:
 
 ![ASP.NET Core strony szkieletowe programu Visual Studio 2019](media/vs-2019/vs2019-scaffolded-pages.png)
 
-Oprócz dodawania stron w folderze *gry* , operacja tworzenia szkieletu dodaliśmy kod do klasy my *Startup.cs* . W `ConfigureServices` metodzie w tej klasie zobaczysz, że ten kod został dodany:
+Oprócz dodawania stron w folderze *gry* , operacja tworzenia szkieletu dodaliśmy kod do klasy my *Startup.cs* . W metodzie `ConfigureServices` w tej klasie zobaczysz, że ten kod został dodany:
 
 ```csharp
 services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(Configuration.GetConnectionString("AppDbContext")));
 ```
 
-Należy również znaleźć `AppDbContext` parametry połączenia, które zostały dodane do pliku *appSettings. JSON* projektu.
+Zostanie również znalezione `AppDbContext` parametry połączenia zostały dodane do pliku *appSettings. JSON* projektu.
 
 Jeśli aplikacja zostanie uruchomiona teraz, może się nie powieść, ponieważ nie została jeszcze utworzona baza danych. W razie potrzeby można skonfigurować aplikację do automatycznego tworzenia bazy danych, [dodając kod do program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main):
 
@@ -115,11 +115,11 @@ using WebApplication1.Models;
 
 Upewnij się, że używasz nazwy projektu zamiast WebApplication1 w kodzie.
 
-Większość kodu jest tylko w przypadku obsługi błędów i zapewnienia dostępu do EF Core `AppDbContext` przed uruchomieniem aplikacji. Ważnym wierszem jest to, co mówi `context.Database.EnsureCreated()`, co spowoduje utworzenie bazy danych, jeśli jeszcze nie istnieje. Teraz aplikacja jest gotowa do uruchomienia.
+Większość kodu jest tylko dla obsługi błędów i zapewnienia dostępu do EF Core `AppDbContext` przed uruchomieniem aplikacji. Ważna linia to ten, który jest wyświetlany `context.Database.EnsureCreated()`, co spowoduje utworzenie bazy danych, jeśli jeszcze nie istnieje. Teraz aplikacja jest gotowa do uruchomienia.
 
 ## <a name="test-it-out"></a>Przetestuj to
 
-Uruchom aplikację i przejdź do `/Games` programu na pasku adresu. Zostanie wyświetlona pusta strona listy. Kliknij przycisk **Utwórz nowy** , aby dodać `Game` nowy element do kolekcji. Wypełnij formularz i kliknij przycisk **Utwórz**. Powinien on zostać wyświetlony w widoku listy. Kliknij pozycję **szczegóły** , aby wyświetlić szczegóły pojedynczego rekordu.
+Uruchom aplikację i przejdź do `/Games` na pasku adresu. Zostanie wyświetlona pusta strona listy. Kliknij przycisk **Utwórz nowy** , aby dodać nowy `Game` do kolekcji. Wypełnij formularz i kliknij przycisk **Utwórz**. Powinien on zostać wyświetlony w widoku listy. Kliknij pozycję **szczegóły** , aby wyświetlić szczegóły pojedynczego rekordu.
 
 Dodaj inny rekord. Możesz kliknąć przycisk *Edytuj* , aby zmienić szczegóły rekordu, lub **usunąć** , aby usunąć go, co spowoduje wyświetlenie monitu o potwierdzenie przed faktycznym usunięciem rekordu.
 
@@ -131,9 +131,9 @@ To wszystko miało na celu rozpoczęcie pracy z danymi w aplikacji ASP.NET Core 
 
 W następnym filmie wideo dowiesz się, jak dodać obsługę interfejsu API sieci Web do aplikacji.
 
-[Krok 4. Uwidacznianie internetowego interfejsu API z poziomu aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Krok 4. Udostępnianie internetowego interfejsu API z poziomu aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Razor Pages z Entity Framework Core w ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [ASP.NET Core Razor Pages z EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

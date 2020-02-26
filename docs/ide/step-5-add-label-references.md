@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647519"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579328"
 ---
 # <a name="step-5-add-label-references"></a>Krok 5. Dodawanie odwołań do etykiet
 Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili program pokazuje wszystkie etykiety wybrane przez gracza. Ale zaraz to zmienimy. Po wybraniu pierwszej etykiety program powinien wyświetlać ikonę etykiety. Po wybraniu drugiej etykiety program powinien wyświetlić obie ikony przez krótki czas i potem ponownie je ukryć. Program będzie teraz śledził, który formant Etykieta jest wybierany jako pierwszy, a który jest wybierany drugi przy użyciu *zmiennych odwołania*.
@@ -31,7 +31,7 @@ Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili pro
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
 
      > [!IMPORTANT]
-     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka ![Programming dla Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+     > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka programowania ![dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Te zmienne odwołania wyglądają podobnie do instrukcji użytych wcześniej do dodawania obiektów (takich jak <xref:System.Windows.Forms.Timer> obiektów, obiektów <xref:System.Collections.Generic.List%601> i obiektów <xref:System.Random>) do formularza. Jednak te instrukcje nie powodują, że dwie kontrolki dodatkowej etykiety są wyświetlane w formularzu, ponieważ nie ma słowa kluczowego `new` użytego w żadnej z dwóch instrukcji. Bez słowa kluczowego `new`, żaden obiekt nie jest tworzony. Dlatego `firstClicked` i `secondClicked` są nazywane zmiennymi odwołania: tylko śledzą obiekty etykiet (lub odwołują się do nich).
 
@@ -46,7 +46,7 @@ Program musi śledzić, które kontrolki etykiet wybiera gracz. W tej chwili pro
 
 4. Wybierz następny formant etykiety i zauważ, że nic się nie dzieje. Program śledzi już pierwszą etykietę, którą wybrał gracz, więc `firstClicked` nie równa się `null` w C# lub `Nothing` w Visual Basic. Gdy instrukcja `if` sprawdza `firstClicked`, aby określić, czy jest równa `null` lub `Nothing`, stwierdza, że nie, i nie wykonuje instrukcji w instrukcji `if`. Dlatego tylko pierwsza wybrana ikona powoduje zmianę czerni, a inne ikony są niewidoczne, jak pokazano na poniższej ilustracji.
 
-     ![Matching gra pokazująca jedną ikonę ](../ide/media/express_tut4step5.png)<br/>
+     ![pasujące gry pokazujące jedną ikonę](../ide/media/express_tut4step5.png)<br/>
 ***Gra w dopasowywanie*** *pokazująca jedną ikonę*
 
      Tę sytuację należy rozwiązać w następnym kroku samouczka, dodając kontrolkę **czasomierz** .

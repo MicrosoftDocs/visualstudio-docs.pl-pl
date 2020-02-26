@@ -8,20 +8,20 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b058883e30587ed656690796732b15750b6277
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647447"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579293"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. zachowanie widoczności par
-Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast sprawiać, że ikony znikają, włączając czasomierz (przy użyciu metody <xref:System.Windows.Forms.Timer.Start>), gra należy zresetować, tak aby nie śledził już żadnych etykiet przy użyciu `firstClicked` i `secondClicked` zmiennych odwołania, bez resetowania kolorów dla obu tych elementów. wybrane etykiety.
+Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast sprawiać, że ikony są znikane przez włączenie czasomierza (przy użyciu metody <xref:System.Windows.Forms.Timer.Start>), gra powinna zostać zresetowana tak, aby nie śledzić żadnych etykiet przy użyciu `firstClicked` i `secondClicked` zmiennych odwołania, bez resetowania kolorów dla dwóch wybranych etykiet.
 
 ## <a name="to-keep-pairs-visible"></a>Aby zachować widoczność par
 
@@ -61,7 +61,7 @@ Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne
 
 2. Zapisz i uruchom program, a następnie zacznij wybierać ikony na formularzu. Jeśli wybierzesz parę, która nie pasuje, wyzwala się zdarzenie czasomierza Takt i obie ikony znikają. W przypadku wybrania pary zgodnej z nową instrukcją `if`, a instrukcja return powoduje, że metoda pominie kod, który uruchamia czasomierz, więc ikony pozostaną widoczne, jak pokazano na poniższej ilustracji.
 
-     ![Game utworzone w tym samouczku ](../ide/media/express_finishedgame.png)<br/>
+     ![grę utworzoną w tym samouczku](../ide/media/express_finishedgame.png)<br/>
 ***Gra w dopasowywanie*** *z widocznymi parami ikon*
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć

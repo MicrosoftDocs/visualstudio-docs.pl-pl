@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910344"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578342"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
 Narzędzie **użycie pamięci** monitoruje użycie pamięci przez aplikację. Za pomocą tego narzędzia można analizować efekty związane z pamięcią w czasie rzeczywistym scenariuszy, które aktywnie opracowujesz w programie Visual Studio. Można utworzyć szczegółowe migawki Stanów pamięci aplikacji i porównać migawki w celu znalezienia głównych przyczyn problemów z pamięcią.
 
 Narzędzie **użycie pamięci** można uruchomić z debugerem lub bez niego. Poniższe instrukcje pokazują, jak używać narzędzia **użycie pamięci** bez debugera w **profilerze wydajności**programu Visual Studio.
-
->[!NOTE]
->- Aby zmierzyć użycie pamięci dla aplikacji platformy .NET Core, należy użyć narzędzia **użycie pamięci** z debugerem. Aby uzyskać instrukcje, zobacz [profilowanie użycia pamięci w programie Visual Studio](memory-usage.md).
->- Aby analizować użycie pamięci w aplikacjach JavaScript lub HTML platformy UWP, użyj narzędzia [pamięci JavaScript](../profiling/javascript-memory.md) w **profilerze wydajności**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sesje diagnostyczne dotyczące użycia pamięci
 
@@ -214,7 +210,7 @@ Drzewo **typów, do których istnieją odwołania** w raporcie różnic migawek,
 |**Różnica w rozmiarze włącznie (w bajtach)**|Dla typu, różnica w rozmiarze wszystkich wystąpień typu między migawką podstawową i poprzednią migawką, włącznie z rozmiarem obiektów w obiektach.|
 |**Module**|Moduł, który zawiera obiekt.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pamięć JavaScript](../profiling/javascript-memory.md)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

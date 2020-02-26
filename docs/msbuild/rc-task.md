@@ -17,17 +17,17 @@ helpviewer_keywords:
 - RC task (MSBuild (C++))
 - MSBuild (C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a0b19487551e7f132ea921eacdbcdb051104f9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912055"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578487"
 ---
 # <a name="rc-task"></a>RC — Zadanie
 Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *RC. exe*. Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów ( *. res*). Aby uzyskać więcej informacji, zobacz [kompilator zasobów](/windows/desktop/menurc/resource-compiler).
@@ -38,17 +38,17 @@ Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *RC. exe*. Zad
 |Parametr|Opis|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Opcjonalny parametr **String []** .<br /><br /> Dodaje katalog do listy katalogów, które są przeszukiwane w poszukiwaniu plików dołączanych.<br /><br /> Aby uzyskać więcej informacji, zobacz **/i** Option in [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
-|**AdditionalOptions**|Opcjonalny parametr **ciągu** .<br /><br /> Lista opcji wiersza polecenia; na przykład/\<option1 >/\<option2 >/\<option # >. Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania **RC** .<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w temacie [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
+|**AdditionalOptions**|Opcjonalny parametr **ciągu** .<br /><br /> Lista opcji wiersza polecenia; na przykład/\<opcja1 >/\<opcja2 >/\<opcji # >. Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania **RC** .<br /><br /> Aby uzyskać więcej informacji, zobacz Opcje w temacie [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**Dziedzinie**|Opcjonalny parametr **ciągu** .<br /><br /> Określa identyfikator ustawień regionalnych, który reprezentuje kulturę używaną w zasobach.<br /><br /> Aby uzyskać więcej informacji, zobacz **/l** opcji w artykule [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**IgnoreStandardIncludePath**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, program zapobiega sprawdzaniu przez kompilator zasobów zmiennej środowiskowej INCLUDE podczas wyszukiwania plików nagłówkowych lub plików zasobów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/x** Option in [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**NullTerminateStrings**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, null-kończy wszystkie ciągi w tabeli ciągów.<br /><br /> Aby uzyskać więcej informacji, zobacz **/n** opcji w artykule [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**PreprocessorDefinitions**|Opcjonalny parametr **String []** .<br /><br /> Zdefiniuj jeden lub więcej symboli preprocesora dla kompilatora zasobów. Określ listę symboli makr.<br /><br /> Aby uzyskać więcej informacji, zobacz **/d** Option in [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-). Zobacz też **UndefinePreprocessorDefinitions** w tej tabeli.|
 |**ResourceOutputFileName**|Opcjonalny parametr **ciągu** .<br /><br /> Określa nazwę pliku zasobów. Określ nazwę pliku zasobu.<br /><br /> Aby uzyskać więcej informacji, zobacz **/fo** Option in [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
 |**ShowProgress**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, wyświetla komunikaty, które są raportowane na postęp kompilatora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/v** opcja w artykule [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-).|
-|**Zewnętrz**|Wymagany `ITaskItem[]` parametr.<br /><br /> Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.|
+|**Element źródłowy**|Wymagany `ITaskItem[]` parametr.<br /><br /> Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.|
 |**SuppressStartupBanner**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.<br /><br /> Aby uzyskać więcej informacji, wpisz **/?** Opcja wiersza polecenia, a następnie zobacz opcję **/nologo** .|
 |**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog dziennika śledzenia.|
 |**UndefinePreprocessorDefinitions**|Usuń definicję symbolu preprocesora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/u** opcji w artykule [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-). Zobacz też **PreprocessorDefinitions** w tej tabeli.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

@@ -5,17 +5,17 @@ ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590023"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579384"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4. układ formularza przy użyciu kontrolki TableLayoutPanel
 
@@ -83,7 +83,7 @@ Kolumny ***TableLayoutPanel*** *i style wierszy*
 
 1. Z listy rozwijanej **Pokaż** w górnej części okna **Style kolumn i wierszy** wybierz pozycję **wiersze**. Ustaw wartość **row1** na 90% i **Row2** na 10 procent.
 
-1. Wybierz **OK** przycisku. Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. (Możesz zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając **tableLayoutPanel1** w formularzu, a następnie przeciągając obramowania wierszy i kolumn).
+1. Wybierz przycisk **OK** . Obiekt TableLayoutPanel powinien teraz mieć duży górny wiersz, mały dolny wiersz, małą lewą kolumnę i dużą prawą kolumnę. (Możesz zmienić rozmiar wierszy i kolumn w TableLayoutPanel, wybierając **tableLayoutPanel1** w formularzu, a następnie przeciągając obramowania wierszy i kolumn).
 
      ![Form1 ze zmienionym rozmiarem TableLayoutPanel](../ide/media/vs_formafterlayoutpanel.png)<br>
 ***Formularz Form1*** *(przeglądarka obrazów) ze zmienionym rozmiarem* ***TableLayoutPanel***
@@ -94,7 +94,7 @@ Kolumny ***TableLayoutPanel*** *i style wierszy*
 
 * Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
 * [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)

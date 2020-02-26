@@ -9,31 +9,31 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864704"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579952"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: Tworzenie prostej aplikacji z Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Samouczek: tworzenie prostej aplikacji z Visual Basic
 
 Wykonując ten samouczek, zobaczysz wiele narzędzi, okien dialogowych i projektantów, których można używać podczas tworzenia aplikacji w programie Visual Studio. Utworzysz aplikację "Hello, World", projektujesz interfejs użytkownika, dodasz kod i błędy debugowania, podczas gdy uczysz się pracować w zintegrowanym środowisku programistycznym ([IDE](visual-studio-ide.md)).
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -57,21 +57,21 @@ Po uruchomieniu programu Visual Studio, okno uruchamiania zostanie otwarte jako 
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Utwórz projekt
+## <a name="create-the-project"></a>Tworzenie projektu
 
 Podczas tworzenia aplikacji w programie Visual Studio, należy najpierw utworzyć projekt i rozwiązanie. Na potrzeby tego przykładu utworzysz projekt Windows Presentation Foundation (WPF).
 
 ::: moniker range="vs-2017"
 
-1. Utwórz nowy projekt. Na pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
+1. Tworzenie nowego projektu. Na pasku menu wybierz pozycję **plik** > **Nowy** > **projekt**.
 
      ![Na pasku menu wybierz kolejno opcje plik, nowy, projekt.](../media/exploreide-filenewproject.png)
 
-2. W oknie **dialogowym Nowy projekt** wybierz kategorię **zainstalowana** > **Visual Basic** > **Windows Desktop** , a następnie wybierz szablon **Aplikacja WPF (.NET Framework)** . Nazwij projekt **HelloWPFApp**, a następnie wybierz **przycisk OK**.
+2. W oknie dialogowym **Nowy projekt** wybierz > **zainstalowane** **Visual Basic** > kategorii **pulpitu systemu Windows** , a następnie wybierz szablon **Aplikacja WPF (.NET Framework)** . Nazwij projekt **HelloWPFApp**, a następnie wybierz **przycisk OK**.
 
      ![Szablon aplikacji WPF w oknie dialogowym Nowy projekt programu Visual Studio](media/exploreide-newproject-vb.png)
 
-Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** pokazuje różne pliki. **Projektant WPF** przedstawia widok projektu i widok XAML *MainWindow. XAML* w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku. Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
+Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** pokazuje różne pliki. **Projektant WPF** przedstawia widok projektu i widok XAML *MainWindow. XAML* w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku. Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. Następujące elementy są wyświetlane w **Eksplorator rozwiązań**:
 
 ![Eksplorator rozwiązań z załadowanymi plikami HelloWPFApp](../media/exploreide-hellowpfappfiles.png)
 
@@ -87,7 +87,7 @@ Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator
 
 3. Na następnym ekranie Nadaj projektowi nazwę, **HelloWPFApp**i wybierz pozycję **Utwórz**.
 
-Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** pokazuje różne pliki. **Projektant WPF** przedstawia widok projektu i widok XAML *MainWindow. XAML* w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku. Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:
+Program Visual Studio tworzy projekt i rozwiązanie HelloWPFApp, a **Eksplorator rozwiązań** pokazuje różne pliki. **Projektant WPF** przedstawia widok projektu i widok XAML *MainWindow. XAML* w widoku złożonym. Można przesuwać rozdzielacz, aby pokazać więcej lub mniej jednego widoku. Możesz zobaczyć tylko widok wizualizacji lub tylko widok XAML. Następujące elementy są wyświetlane w **Eksplorator rozwiązań**:
 
 ![Eksplorator rozwiązań z załadowanymi plikami HelloWPFApp](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
@@ -106,7 +106,7 @@ Nadaj MainWindow bardziej konkretną nazwę. W **Eksplorator rozwiązań**klikni
 
 Jeśli projektant nie jest otwarty, wybierz pozycję *Greetings. XAML* w **Eksplorator rozwiązań**i naciśnij klawisz **SHIFT**+**F7** , aby otworzyć projektanta.
 
-Dodamy do tej aplikacji trzy typy kontrolek: <xref:System.Windows.Controls.TextBlock> kontrolka, dwie <xref:System.Windows.Controls.RadioButton> kontrolki i <xref:System.Windows.Controls.Button> kontrolka.
+Dodamy do tej aplikacji trzy typy kontrolek: kontrolka <xref:System.Windows.Controls.TextBlock>, dwie kontrolki <xref:System.Windows.Controls.RadioButton> i kontrolka <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Dodaj kontrolkę TextBlock
 
@@ -152,7 +152,7 @@ Następnie dodasz dwie kontrolki [RadioButton](/dotnet/framework/wpf/controls/ra
 
      ![Formularz Greetings z kontrolką TextBlock i dwoma przyciskami radiowymi](../media/exploreide-greetingswithradiobuttons.png)
 
-3. W oknie **Właściwości** dla lewego formantu RadioButton, Zmień właściwość **name** (właściwość w górnej części okna **Właściwości** ) na `HelloButton`.
+3. W oknie **Właściwości** dla lewego formantu RadioButton Zmień właściwość **name** (właściwość w górnej części okna **Właściwości** ) na `HelloButton`.
 
      ![Okno właściwości elementu RadioButton](../media/exploreide-buttonproperties.png)
 
@@ -162,7 +162,7 @@ Możesz teraz dodawać wyświetlany tekst dla każdego formantu RadioButton. Pon
 
 ### <a name="add-display-text-for-each-radio-button"></a>Dodaj tekst wyświetlany dla każdego przycisku radiowego
 
-Zaktualizuj atrybut **zawartości** dla `HelloButton` i `GoodbyeButton` do `"Hello"` i `"Goodbye"` w języku XAML. Znacznik XAML powinien teraz wyglądać podobnie do poniższego przykładu:
+Zaktualizuj atrybut **Content** dla `HelloButton` i `GoodbyeButton` do `"Hello"` i `"Goodbye"` w kodzie XAML. Znacznik XAML powinien teraz wyglądać podobnie do poniższego przykładu:
 
    ```xaml
    <Grid>
@@ -188,9 +188,9 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 1. W **przyborniku**Znajdź formant **Button** , a następnie dodaj go do powierzchni projektowej pod kontrolkami RadioButton, przeciągając go do formularza w widoku projektu. Jeśli używasz programu Visual Studio 2019 lub nowszego, czerwona linia ułatwia wyśrodkowanie formantu.
 
-2. W widoku XAML Zmień wartość **zawartości** kontrolki Button z `Content="Button"` na `Content="Display"`, a następnie Zapisz zmiany.
+2. W widoku XAML Zmień wartość **zawartości** kontrolki przycisku z `Content="Button"` na `Content="Display"`, a następnie Zapisz zmiany.
 
-     Znacznik powinien wyglądać podobnie do poniższego przykładu:`<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`
+     Znacznik powinien wyglądać podobnie do poniższego przykładu: `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`
 
      Okno powinno wyglądać podobnie, jak na poniższej ilustracji.
 
@@ -198,11 +198,11 @@ Ostatnim elementem interfejsu użytkownika, który dodasz, jest kontrolka [przyc
 
 ### <a name="add-code-to-the-display-button"></a>Dodawanie kodu do przycisku wyświetlania
 
-Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do `Button_Click` zdarzenia w *Greetings. XAML. vb* lub *Greetings.XAML.cs*.
+Gdy aplikacja jest uruchomiona, okno komunikatu pojawia się, gdy użytkownik wybierze przycisk radiowy, a następnie wybierze przycisk **wyświetlania** . Jedno okno komunikatu pojawi się, żeby wyświetlić „Hello”, a inne pojawi się, aby wyświetlić „Goodbye”. Aby utworzyć to zachowanie, dodasz kod do zdarzenia `Button_Click` w *Greetings. XAML. vb* lub *Greetings.XAML.cs*.
 
 1. Na powierzchni projektowej kliknij dwukrotnie przycisk **Wyświetl** .
 
-     *Greetings. XAML. vb* zostanie otwarty z kursorem w `Button_Click` zdarzeniu.
+     *Greetings. XAML. vb* zostanie otwarty z kursorem w zdarzeniu `Button_Click`.
 
     ```vb
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
@@ -234,11 +234,11 @@ W tym kroku znajdziesz błąd, który został wywołany wcześniej przez zmianę
 
 1. Uruchom Debuger, naciskając klawisz **F5** lub wybierając pozycję **Debuguj**, a następnie **Rozpocznij debugowanie**.
 
-   Zostanie wyświetlone okno **tryb przerwania** , a okno **dane wyjściowe** wskazuje, że wystąpił IOException: Nie można zlokalizować zasobu "MainWindow. XAML".
+   Zostanie wyświetlone okno **tryb przerwania** , a okno **dane wyjściowe** wskazuje, że wystąpił IOException: nie można zlokalizować zasobu "MainWindow. XAML".
 
    ![Zrzut ekranu komunikatu IOException](../media/exploreide-ioexception.png)
 
-2. Zatrzymaj debuger, wybierając **Debuguj** > **Zatrzymaj debugowanie**.
+2. Zatrzymaj debuger, wybierając pozycję **debuguj** > **zatrzymać debugowanie**.
 
 Zmieniono nazwę *MainWindow. XAML* na *Greetings. XAML* na początku tego samouczka, ale kod nadal odwołuje się do *MainWindow. XAML* jako startowy identyfikator URI dla aplikacji, więc nie można uruchomić projektu.
 
@@ -246,7 +246,7 @@ Zmieniono nazwę *MainWindow. XAML* na *Greetings. XAML* na początku tego samou
 
 1. W **Eksplorator rozwiązań**Otwórz plik *Application. XAML* .
 
-2. Zmień `StartupUri="MainWindow.xaml"` na`StartupUri="Greetings.xaml"`, a następnie Zapisz zmiany.
+2. Zmień `StartupUri="MainWindow.xaml"` na `StartupUri="Greetings.xaml"`, a następnie Zapisz zmiany.
 
 Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno **Greetings** aplikacji.
 
@@ -261,11 +261,11 @@ Ponownie uruchom debuger (naciśnij klawisz **F5**). Powinny pojawić się okno 
 
 ### <a name="debug-with-breakpoints"></a>Debuguj z punktami przerwania
 
-Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów przerwania. Możesz dodać punkty przerwania, wybierając pozycję **Debuguj** > **punkt przerwania**, klikając na lewym marginesie edytora obok wiersza kodu, w którym ma nastąpić przerwanie lub naciskając klawisz **F9**.
+Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów przerwania. Możesz dodać punkty przerwania, wybierając pozycję **debuguj** > **Przełącz punkt przerwania**, klikając na lewym marginesie edytora obok wiersza kodu, w którym ma nastąpić przerwanie lub naciskając klawisz **F9**.
 
 #### <a name="add-breakpoints"></a>Dodaj punkty przerwania
 
-1. Otwórz *Greetings. XAML. vb*i wybierz następujący wiersz:`MessageBox.Show("Hello.")`
+1. Otwórz *Greetings. XAML. vb*i wybierz następujący wiersz: `MessageBox.Show("Hello.")`
 
 2. Dodaj punkt przerwania, naciskając klawisz **F9** lub z menu, wybierając **Debuguj**, a następnie **Przełącz punkt przerwania**.
 
@@ -281,7 +281,7 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 
    ![Zrzut ekranu punktu przerwania w debugerze](media/exploreide-debugbreakpoint.png)
 
-6. Na pasku menu wybierz polecenie **Debuguj** > **krok wychodzący**.
+6. Na pasku menu wybierz polecenie **debuguj** > **Wyjdź z kroku**.
 
      Aplikacja wznawia wykonywanie i pojawia się okno komunikatu z wyrazem "Hello".
 
@@ -295,7 +295,7 @@ Możesz przetestować kod podczas debugowania przez dodanie niektórych punktów
 
 10. Zamknij okno aplikacji, aby zatrzymać debugowanie.
 
-11. Na pasku menu wybierz **Debuguj** > **Wyłącz wszystkie punkty przerwania**.
+11. Na pasku menu wybierz **debuguj** > **wyłączyć wszystkie punkty przerwania**.
 
 ### <a name="view-a-representation-of-the-ui-elements"></a>Wyświetl reprezentację elementów interfejsu użytkownika
 
@@ -307,15 +307,15 @@ W uruchomionej aplikacji powinien zostać wyświetlony widżet pojawiający się
 
 Teraz, gdy upewnieniu się, że wszystko działa, możesz przygotować wersję dystrybucyjną aplikacji.
 
-1. W menu głównym wybierz opcję **Kompiluj** > **czyste rozwiązanie** , aby usunąć pliki pośrednie i pliki wyjściowe, które zostały utworzone podczas poprzednich kompilacji. Nie jest to konieczne, ale czyści dane wyjściowe kompilacji debugowania.
+1. W menu głównym wybierz opcję **kompiluj** > **Wyczyść rozwiązanie** , aby usunąć pliki pośrednie i pliki wyjściowe, które zostały utworzone podczas poprzednich kompilacji. Nie jest to konieczne, ale czyści dane wyjściowe kompilacji debugowania.
 
 2. Zmień konfigurację kompilacji dla HelloWPFApp z **Debug** na **Release** przy użyciu kontrolki menu rozwijanego na pasku narzędzi (jest to komunikat "Debugowanie" jest obecnie).
 
-3. Skompiluj rozwiązanie, wybierając pozycję **Kompiluj** > **kompilację rozwiązania**.
+3. Skompiluj rozwiązanie, wybierając kolejno opcje **kompiluj** > **Kompiluj rozwiązanie**.
 
 Gratulujemy wykonanie kroków tego samouczka! Można znaleźć *plik. exe* , który został utworzony w ramach rozwiązania i katalogu projektu ( *. ..\HelloWPFApp\HelloWPFApp\bin\Release*).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 ::: moniker range="vs-2017"
 

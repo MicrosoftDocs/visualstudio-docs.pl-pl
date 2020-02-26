@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do zadania MSBuild WPF | Dokumentacja firmy Microsoft
+title: Odwołanie do zadania WPF MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,29 +13,29 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778329"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578188"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Odwołanie do zadania WPF MSBuild
-Proces kompilacji Windows Presentation Foundation (WPF) Microsoft build engine (MSBuild) rozszerza możliwości za sprawą dodatkowego zestawu zadań kompilacji, w tym zadania, aby skompilować i zasobów procesowych.
+Proces kompilacji Windows Presentation Foundation (WPF) rozszerza program Microsoft Build Engine (MSBuild) z dodatkowym zestawem zadań kompilacji, w tym zadaniami do kompilowania znaczników i zasobów procesów.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [FileClassifier](../msbuild/fileclassifier-task.md)
 
- Klasyfikuje zestaw zasobów źródłowego, jak te, które zostaną osadzone w zestawie. Jeśli zasób nie jest możliwych do zlokalizowania, jest osadzony w głównym zestawem aplikacji; w przeciwnym razie jest osadzony w zestawie satelickim.
+ Klasyfikuje zestaw zasobów źródłowych jako te, które będą osadzone w zestawie. Jeśli zasób nie jest Lokalizowalny, jest osadzony w głównym zestawie aplikacji; w przeciwnym razie jest osadzony w zestawie satelickim.
 
 - [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
 
- Generuje zestaw, jeśli co najmniej jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] strony w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowanego zestawu jest usuwany po zakończeniu procesu kompilacji, czy Proces kompilacji zakończy się niepowodzeniem.
+ Generuje zestaw, jeśli co najmniej jedna strona [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] w projekcie odwołuje się do typu, który jest zadeklarowany lokalnie w tym projekcie. Wygenerowany zestaw jest usuwany po zakończeniu procesu kompilacji lub w przypadku niepowodzenia procesu kompilacji.
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
@@ -43,27 +43,27 @@ Proces kompilacji Windows Presentation Foundation (WPF) Microsoft build engine (
 
 - [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
 
- Konwertuje niemożliwe do zlokalizowania [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] pliki na skompilowany format binarny projektu.
+ Konwertuje nielokalizowalne pliki projektu [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] na skompilowany format binarny.
 
 - [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
 
- Przeprowadza korektę znaczników kompilacji na [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] pliki, które odwołują się typy w tym samym projekcie.
+ Wykonuje kompilację drugiego przebiegu znaczników dla plików [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)], które odwołują się do typów w tym samym projekcie.
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- Scala atrybuty lokalizacji i komentarze, co najmniej jednego [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików binarnych w jeden plik dla całego zestawu.
+ Scala atrybuty lokalizacji i komentarze jednego lub więcej [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików w formacie binarnym w pojedynczym pliku dla całego zestawu.
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Osadza co najmniej jeden zasób (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym, a inne typy rozszerzeń) do *Resources*pliku.
+ Osadza jeden lub więcej zasobów ( *. jpg*, *. ico*, *. bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym i innych typów rozszerzenia) w pliku *resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
- Sprawdza, czy, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] elementy, które znajdują się w źródle [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików.
+ Sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby lokalizować wszystkie [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] elementy, które są zawarte w źródłowym pliku [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Dodaje  **\<hostInBrowser / >** elementu w manifeście aplikacji (*\<nazwa_projektu >. exe.manifest*) podczas [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] projekt został skompilowany.
+ Dodaje element **\<HostInBrowser/>** do manifestu aplikacji ( *\<ProjectName >. exe. manifest*) podczas kompilowania projektu [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,5 @@
 ---
-title: Getframeworkpath — zadanie | Dokumentacja firmy Microsoft
+title: GetFrameworkPath — — zadanie | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,40 +13,40 @@ helpviewer_keywords:
 - GetFrameworkPath task [MSBuild]
 - MSBuild, GetFrameworkPath task
 ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747556"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579643"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath — zadanie
 Pobiera ścieżkę do zestawów .NET Framework.
 
 ## <a name="task-parameters"></a>Parametry zadania
-W poniższej tabeli opisano parametry `GetFrameworkPath` zadania.
+W poniższej tabeli opisano parametry zadania `GetFrameworkPath`.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`FrameworkVersion11Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 1.1, jeśli jest obecny. W przeciwnym razie zwraca `null`.|
-|`FrameworkVersion20Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 2.0, jeśli jest obecny. W przeciwnym razie zwraca `null`.|
-|`FrameworkVersion30Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 3.0 lub nowszej, jeśli jest obecny. W przeciwnym razie zwraca `null`.|
-|`FrameworkVersion35Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów w wersji 3.5 framework, jeśli jest obecny. W przeciwnym razie zwraca `null`.|
-|`FrameworkVersion40Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów framework w wersji 4.0 lub nowszej, jeśli jest obecny. W przeciwnym razie zwraca `null`.|
-|`Path`|Opcjonalnie `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszych zestawów framework, jeśli są dostępne. W przeciwnym razie zwraca `null`.|
+|`FrameworkVersion11Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 1,1, jeśli istnieją. W przeciwnym razie zwraca `null`.|
+|`FrameworkVersion20Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 2,0, jeśli istnieją. W przeciwnym razie zwraca `null`.|
+|`FrameworkVersion30Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 3,0, jeśli istnieją. W przeciwnym razie zwraca `null`.|
+|`FrameworkVersion35Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 3,5, jeśli istnieją. W przeciwnym razie zwraca `null`.|
+|`FrameworkVersion40Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do zestawów programu Framework w wersji 4,0, jeśli istnieją. W przeciwnym razie zwraca `null`.|
+|`Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszych zestawów struktury, jeśli są dostępne. W przeciwnym razie zwraca `null`.|
 
 ## <a name="remarks"></a>Uwagi
-Jeśli są zainstalowane różne wersje programu .NET Framework, to zadanie zwraca informacje o wersji, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest przeznaczony do działania.
+Jeśli zainstalowano kilka wersji .NET Framework, to zadanie zwróci wersję, która [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] została zaprojektowana do uruchomienia.
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasa, która sama dziedziczy <xref:Microsoft.Build.Utilities.Task> klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [taskextension — klasa bazowa](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-W poniższym przykładzie użyto `GetFrameworkPath` zadanie, aby zapisać ścieżki programu .NET Framework w `FrameworkPath` właściwości.
+Poniższy przykład używa zadania `GetFrameworkPath` do przechowywania ścieżki do .NET Framework we właściwości `FrameworkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -60,6 +60,6 @@ W poniższym przykładzie użyto `GetFrameworkPath` zadanie, aby zapisać ście�
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

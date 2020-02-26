@@ -10,33 +10,33 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
-ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70977438"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580092"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Samouczek: Tworzenie pierwszej aplikacji ASP.NET Core przy użyciu Entity Framework z programem Visual Studio 2019
 
 W tym samouczku utworzysz aplikację sieci Web ASP.NET Core, która używa danych, i Wdróż ją na platformie Azure. Ten samouczek składa się z następujących kroków:
 
-- [Krok 1. Zainstaluj program Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Krok 1. Instalowanie programu Visual Studio 2019](#step-1-install-visual-studio-2019)
 - [Krok 2. Tworzenie pierwszej aplikacji sieci Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Krok 3. Pracuj z danymi przy użyciu Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Krok 3. Współpraca z danymi przy użyciu Entity Framework](tutorial-aspnet-core-ef-step-03.md)
 - [Krok 4. Uwidacznianie internetowego interfejsu API w aplikacji ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Krok 5. Wdrażanie aplikacji ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Krok 5. wdrażanie aplikacji ASP.NET Core na platformie Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>Krok 1. Zainstaluj program Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>Krok 1. Instalowanie programu Visual Studio 2019
 
-Dowiedz się, jak zainstalować program Visual Studio 2019 z tym samouczkiem wideo oraz instrukcje krok po kroku. Jeśli masz już zainstalowany program Visual Studio, przejdź do [kroku 2: Utwórz swoją pierwszą ASP.NET Core aplikację](tutorial-aspnet-core-ef-step-02.md)sieci Web.
+Dowiedz się, jak zainstalować program Visual Studio 2019 z tym samouczkiem wideo oraz instrukcje krok po kroku. Jeśli masz już zainstalowany program Visual Studio, przejdź do [kroku 2: Tworzenie pierwszej aplikacji sieci web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
 
 _Obejrzyj ten film wideo i postępuj zgodnie z instrukcjami, aby zainstalować program Visual Studio i utworzyć swoją pierwszą aplikację ASP.NET Core._
 
@@ -58,7 +58,7 @@ Program Visual Studio może być używany w wielu różnych rodzajach programowa
 
 ![Visual Studio 2019 Wybieranie obciążeń](media/vs-2019/vs2019-choose-workloads.png)
 
-## <a name="install"></a>Zainstaluj
+## <a name="install"></a>Instalowanie
 
 Kliknij przycisk **Zainstaluj** , aby Instalator mógł pobrać i zainstalować program Visual Studio.
 
@@ -70,7 +70,7 @@ Program Visual Studio powinien być uruchamiany automatycznie po zakończeniu dz
 
 ## <a name="explore-aspnet-core-project-types"></a>Eksploruj ASP.NET Core typy projektów
 
-Możesz wybrać nazwę i lokalizację projektu, a następnie wybrać pozycję **Utwórz**. Teraz wybierz szablon, który ma być używany dla aplikacji ASP.NET Core. Można wybrać następujące opcje:
+Możesz wybrać nazwę i lokalizację projektu, a następnie wybrać pozycję **Utwórz**. Teraz wybierz szablon, który ma być używany dla aplikacji ASP.NET Core. Możesz wybrać z następujących opcji:
 
 - Ciągiem. Pusty szablon projektu, który umożliwia rozpoczęcie od podstaw.
 - API. Najlepsze dla interfejsów API sieci Web.
@@ -98,6 +98,6 @@ W następnym filmie wideo dowiesz się więcej na temat pierwszego projektu ASP.
 
 [Samouczek: Tworzenie pierwszej aplikacji sieci Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Samouczek: Wprowadzenie do C# i ASP.NET Core](tutorial-aspnet-core.md) bardziej szczegółowy samouczek bez przewodnika wideo
+- [Samouczek: wprowadzenie do C# i ASP.NET Core](tutorial-aspnet-core.md) Bardziej szczegółowy samouczek bez instruktażu wideo
