@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: c98bb7851b2b959e078c954cd8f11b1d4151ce0b
-  ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
-  ms.translationtype: MT
+  ms.openlocfilehash: 7bb755fc13215b7087a0023a8e2a19442415092b
+  ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 10/15/2019
-  ms.locfileid: "72349690"
+  ms.lasthandoff: 02/25/2020
+  ms.locfileid: "77579262"
 landingContent:
 - title: Informacje o debugowaniu
   linkLists:
@@ -38,9 +38,9 @@ landingContent:
       url: getting-started-with-the-debugger-cpp.md
     - text: Dowiedz się, jak debugować w języku Visual Basic
       url: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
-    - text: Uruchamianie kodu w języku Python w > debugera >
+    - text: Uruchamianie kodu w języku Python w debugerze >>
       url: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-- title: Wstrzymywanie i nawigowanie po kodzie
+- title: Wstrzymywanie kodu i nawigowanie po nim
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -60,7 +60,7 @@ landingContent:
       url: watch-and-quickwatch-windows.md
     - text: Przeglądanie stosu wywołań
       url: how-to-use-the-call-stack-window.md
-- title: Zapoznaj się z debugerem
+- title: Uzyskiwanie dokładniejszych informacji za pomocą debugera
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -72,11 +72,11 @@ landingContent:
       url: debug-live-azure-applications.md
     - text: Określanie zawartości do wyświetlenia w debugerze
       url: using-the-debuggerdisplay-attribute.md
-    - text: Debugowanie zdalne
-      url: remote-debugging.md
+    - text: Debugowanie problemów z wydajnością >>
+      url: ../profiling/profiling-feature-tour.md
 - title: Współpraca
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Pisanie i debugowanie kodu za pomocą Live Share > >
+    - text: Pisanie i debugowanie kodu przy użyciu rozszerzenia Live Share >>
       url: /visualstudio/liveshare/use/vs
