@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbe0dbda58a0c57cacd64c40b66cc640b779bca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593320"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633996"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath — zadanie
-Pobiera ścieżkę do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
 
+Pobiera ścieżkę do zestawu Windows Software Development Kit (SDK).
 ## <a name="task-parameters"></a>Parametry zadania
+
+W poniższej tabeli opisano parametry zadania `GetFrameworkSdkPath`.
 W poniższej tabeli opisano parametry zadania `GetFrameworkSdkPath`.
 
 |Parametr|Opis|
@@ -39,10 +41,12 @@ W poniższej tabeli opisano parametry zadania `GetFrameworkSdkPath`.
 |`Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszego zestawu SDK platformy .NET, jeśli obecna jest jakakolwiek wersja. W przeciwnym razie zwraca `String.Empty`.|
 
 ## <a name="remarks"></a>Uwagi
+
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład używa zadania `GetFrameworkSdkPath` do przechowywania ścieżki do [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] we właściwości `SdkPath`.
+
+Poniższy przykład używa zadania `GetFrameworkSdkPath` do przechowywania ścieżki do Windows SDK we właściwości `SdkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -57,6 +61,7 @@ Poniższy przykład używa zadania `GetFrameworkSdkPath` do przechowywania ście
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

@@ -10,15 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573784"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633710"
 ---
 # <a name="item-definitions"></a>Definicje elementów
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2,0 włącza statyczną deklarację elementów w plikach projektu przy użyciu elementu [Item](../msbuild/itemgroup-element-msbuild.md) . Metadane mogą jednak być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3,5, element projektu o nazwie [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) przejdzie do tego ograniczenia. *ItemDefinitionGroup* umożliwia zdefiniowanie zestawu definicji elementów, który dodaje domyślne wartości metadanych do wszystkich elementów w nazwanym typie elementu.
+
+MSBuild 2,0 włącza statyczną deklarację elementów w plikach projektu przy użyciu elementu [Item](../msbuild/itemgroup-element-msbuild.md) . Metadane mogą jednak być dodawane tylko na poziomie elementu, nawet jeśli metadane są identyczne dla wszystkich elementów. Począwszy od programu MSBuild 3,5, element projektu o nazwie [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) przejdzie do tego ograniczenia. *ItemDefinitionGroup* umożliwia zdefiniowanie zestawu definicji elementów, który dodaje domyślne wartości metadanych do wszystkich elementów w nazwanym typie elementu.
 
 Element *ItemDefinitionGroup* pojawia się bezpośrednio po elemencie [projektu](../msbuild/project-element-msbuild.md) pliku projektu. Definicje elementów zapewniają następujące funkcje:
 
@@ -33,6 +34,7 @@ Element *ItemDefinitionGroup* pojawia się bezpośrednio po elemencie [projektu]
 - Warunki mogą służyć do kontrolowania dołączania metadanych.
 
 ## <a name="item-metadata-default-values"></a>Wartości domyślne metadanych elementu
+
 Metadane elementu, które są zdefiniowane w ItemDefinitionGroup, to tylko deklaracja metadanych domyślnych. Metadane nie są stosowane, chyba że zdefiniujesz element, który używa elementu element, aby zawierał wartości metadanych.
 
 > [!NOTE]
@@ -61,6 +63,7 @@ W tym przykładzie domyślne metadane "m" są stosowane do elementu "i", poniewa
 > W nazwach elementów XML i parametrów jest rozróżniana wielkość liter\-. Nazwy właściwości metadanych elementu i\/elementu nie są rozróżniane\-. W związku z tym elementy ItemDefinitionGroup o nazwach, które różnią się tylko wielkością liter, powinny być traktowane jako te same elementy.
 
 ## <a name="value-sources"></a>Źródła wartości
+
 Wartości metadanych zdefiniowane w ItemDefinitionGroup mogą pochodzić z wielu różnych źródeł w następujący sposób:
 
 - Właściwość właściwości
@@ -83,6 +86,7 @@ Wartości metadanych zdefiniowane w ItemDefinitionGroup mogą pochodzić z wielu
 > Metadane elementu z elementu Itemobject nie są przydatne w deklaracji metadanych ItemDefinitionGroup, ponieważ elementy ItemDefinitionGroup są przetwarzane przed elementami elementów Item.
 
 ## <a name="additive-and-multiple-definitions"></a>Dodatek i wiele definicji
+
 Podczas dodawania definicji lub używania wielu ItemDefinitionGroups należy pamiętać o następujących kwestiach:
 
 - Dodatkowa Specyfikacja metadanych jest dodawana do typu.
@@ -143,6 +147,7 @@ Gdy zastąpisz poprzednio zdefiniowane metadane, Ostatnia Specyfikacja ma pierws
 ```
 
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Używanie warunków w ItemDefinitionGroup
+
 Możesz użyć warunków w ItemDefinitionGroup, aby kontrolować dodawanie metadanych. Na przykład:
 
 ```xml
@@ -189,7 +194,8 @@ W powyższym przykładzie element "i" odwołuje się do elementu "test" w swoim 
 W powyższym przykładzie "m" zostanie ustawiona na wartość "M1", ponieważ warunek odwołuje się do wartości metadanych elementu "i" elementu "yes".
 
 ## <a name="override-and-delete-metadata"></a>Zastępowanie i usuwanie metadanych
-Metadane zdefiniowane w elemencie ItemDefinitionGroup można zastąpić w późniejszym elemencie ItemDefinitionGroup, ustawiając wartość metadanych na pustą. Możesz również skutecznie usunąć element metadanych, ustawiając go na wartość pustą. Na przykład:
+
+Metadane zdefiniowane w elemencie ItemDefinitionGroup można zastąpić w późniejszym elemencie ItemDefinitionGroup, ustawiając wartość metadanych na inną wartość. Możesz również skutecznie usunąć element metadanych, ustawiając go na wartość pustą. Na przykład:
 
 ```xml
 <ItemDefinitionGroup>
@@ -207,6 +213,7 @@ Metadane zdefiniowane w elemencie ItemDefinitionGroup można zastąpić w późn
 Element "i" nadal zawiera metadane "m", ale jego wartość jest pusta.
 
 ## <a name="scope-of-metadata"></a>Zakres metadanych
+
 ItemDefinitionGroups mają zakres globalny dla zdefiniowanych i globalnych właściwości wszędzie tam, gdzie są zdefiniowane. Domyślne definicje metadanych w ItemDefinitionGroup mogą być odwołujące się do siebie. Na przykład następujące użycie prostego odwołania do metadanych:
 
 ```xml
@@ -240,7 +247,7 @@ Jednak następujące elementy są nieprawidłowe:
 </ItemDefinitionGroup>
 ```
 
-Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3,5, ItemGroups może być również odwołujący się do samego siebie. Na przykład:
+Począwszy od programu MSBuild 3,5, ItemGroups może być również odwołujący się do samego siebie. Na przykład:
 
 ```xml
 <ItemGroup>
@@ -251,5 +258,6 @@ Począwszy od [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecm
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)
+## <a name="see-also"></a>Zobacz też
+
+- [Tworzenie partii](../msbuild/msbuild-batching.md)

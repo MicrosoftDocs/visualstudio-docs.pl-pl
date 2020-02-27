@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd21d7da710a82d9396766971244aa5f7f9bbd4d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 8064ce4c13419238ca5877893a731d2ac53afb25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278794"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633645"
 ---
 # <a name="itemgroup-element-msbuild"></a>Item, element (MSBuild)
-Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Każdy element użyty w projekcie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi być określony jako element podrzędny elementu `ItemGroup`.
+
+Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild.md) użytkownika. Każdy element użyty w projekcie programu MSBuild musi być określony jako element podrzędny elementu `ItemGroup`.
 
 \<Project > \<Items >
 
@@ -41,6 +42,7 @@ Zawiera zestaw [elementów zdefiniowanych przez](../msbuild/item-element-msbuild
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
 W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
 ### <a name="attributes"></a>Atrybuty
@@ -60,10 +62,11 @@ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzęd
 
 | Element | Opis |
 | - | - |
-| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 | [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Począwszy od .NET Framework 3,5, element `ItemGroup` może znajdować się wewnątrz elementu `Target`. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kodu przedstawia zdefiniowane przez użytkownika kolekcje elementów `Res` i `CodeFiles` zadeklarowane wewnątrz elementu `ItemGroup`. Każdy element w kolekcji `Res` elementów zawiera zdefiniowany przez użytkownika element podrzędny [ItemMetadata —](../msbuild/itemmetadata-element-msbuild.md) .
 
 ```xml
@@ -84,6 +87,7 @@ Poniższy przykład kodu przedstawia zdefiniowane przez użytkownika kolekcje el
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)
 - [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)

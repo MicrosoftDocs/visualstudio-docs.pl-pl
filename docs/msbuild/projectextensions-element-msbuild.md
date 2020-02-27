@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1057743732c8dfc7ebb05bc9cbc108d61b2e234c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597415"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632969"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions —, element (MSBuild)
-Zezwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plikom projektu na zawiera informacje, które nie są[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Wszystkie elementy wewnątrz elementu `ProjectExtensions` zostaną zignorowane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Zezwala na pliki projektu MSBuild zawierające informacje inne niż MSBuild. Wszystkie elementy wewnątrz elementu `ProjectExtensions` zostaną zignorowane przez MSBuild.
 
  \<Project > \<ProjectExtensions — >
 
@@ -39,24 +40,29 @@ Zezwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
- Brak
+### <a name="attributes"></a>Atrybuty
+
+ None
 
 ### <a name="child-elements"></a>Elementy podrzędne
- Brak
+
+ None
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
- W projekcie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] można użyć tylko jednego elementu `ProjectExtensions`.
+
+ Tylko jeden element `ProjectExtensions` może być używany w projekcie programu MSBuild.
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu przedstawia informacje z zintegrowanego środowiska programistycznego, które są przechowywane w `ProjectExtensions` elemencie.
 
 ```xml
@@ -71,6 +77,7 @@ Zezwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild
 </ProjectExtensions>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596778"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633203"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Struktura docelowa programu MSBuild i platforma docelowa
+
 Projekt można skompilować do uruchamiania w *środowisku docelowym*, który jest określoną wersją .NET Framework i *platformą docelową*, która jest konkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 802x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*.
 
 > [!IMPORTANT]
 > W tym artykule przedstawiono stary sposób określania platformy docelowej. Projekty w stylu zestawu SDK umożliwiają różne TargetFrameworks, takie jak standard. Aby uzyskać więcej informacji, zobacz [Platformy docelowe](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Struktura docelowa i profil
+
  Platforma docelowa to określona wersja .NET Framework, do której projekt jest uruchamiany. Specyfikacja platformy docelowej jest wymagana, ponieważ włącza funkcje kompilatora i odwołania do zestawów, które są wyłącznie dla tej wersji platformy.
 
  Obecnie następujące wersje .NET Framework są dostępne do użycia:
 
 - .NET Framework 2,0 (zawarte w Visual Studio 2005)
 
-- .NET Framework 3,0 (zawarte w [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3,0 (uwzględniony w systemie Windows Vista)
 
-- .NET Framework 3,5 (zawarte w [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3,5 (zawarte w Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4,6 (zawarte w [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4,6 (zawarte w Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -50,7 +52,7 @@ Projekt można skompilować do uruchamiania w *środowisku docelowym*, który je
 
 Wersje .NET Framework różnią się od siebie na liście zestawów, które każda z nich udostępnia. Na przykład nie można kompilować aplikacji Windows Presentation Foundation (WPF), chyba że projekt jest przeznaczony dla .NET Framework w wersji 3,0 lub nowszej.
 
-Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w pliku projektu. Można zmienić platformę docelową dla projektu przy użyciu stron właściwości projektu w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio. Aby uzyskać więcej informacji, zobacz [jak: docelowa wersja systemu .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Dostępne wartości `TargetFrameworkVersion` to `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, `v4.7.1`, `v4.7.2`i `v4.8`.
+Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w pliku projektu. Można zmienić platformę docelową dla projektu przy użyciu stron właściwości projektu w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio. Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Dostępne wartości `TargetFrameworkVersion` to `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, `v4.7.1`, `v4.7.2`i `v4.8`.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -69,7 +71,8 @@ Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w 
 ```
 
 ## <a name="target-platform"></a>Platforma docelowa
- *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Na przykład
+
+ *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Na przykład:
 
 - `x86` wyznacza 32-bitowego systemu operacyjnego Windows, który działa na procesorze Intel 80x86 lub jego odpowiedniku.
 
@@ -96,5 +99,6 @@ Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w 
 
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

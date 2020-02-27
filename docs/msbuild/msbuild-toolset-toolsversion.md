@@ -13,18 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af4816440c2eb285a0f30db50e18108ce79265f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593810"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633125"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 
 Program MSBuild korzysta z zestawu narzędzi do tworzenia aplikacji, obiektów docelowych i narzędzia. Zazwyczaj zestaw narzędzi programu MSBuild zawiera plik *Microsoft. Common. Tasks* , plik *Microsoft. Common. targets* oraz kompilatory, takie jak *CSC. exe* i *VBC. exe*. Większość zestawów narzędzi może służyć do kompilowania aplikacji do więcej niż jednej wersji .NET Framework i więcej niż jednej platformy systemowej. Jednak zestaw narzędzi MSBuild 2,0 może służyć do określania tylko .NET Framework 2,0.
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion — atrybut
+
 ::: moniker range=">=vs-2019"
  Określ zestaw narzędzi w atrybucie `ToolsVersion` elementu [projektu](../msbuild/project-element-msbuild.md) w pliku projektu. W poniższym przykładzie określono, że projekt powinien zostać skompilowany przy użyciu zestawu narzędzi MSBuild "Current".
 
@@ -131,7 +132,7 @@ Program MSBuild oferuje przeciążenia dla metod `ToolLocationHelper`, które do
 
 Podzestawy narzędzi zostały wprowadzone w .NET Framework 4,5.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Konfiguracje standardowego i niestandardowego zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)
 - [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

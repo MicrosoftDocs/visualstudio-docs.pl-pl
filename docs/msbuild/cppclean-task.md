@@ -19,17 +19,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596076"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634347"
 ---
 # <a name="cppclean-task"></a>CPPClean — Zadanie
+
 Usuwa pliki tymczasowe, które program MSBuild tworzy po C++ skompilowaniu projektu. Proces usuwania plików kompilacji jest znany jako *czyszczenie*.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania **CPPClean —** .
 
 |Parametr|Opis|
@@ -40,5 +42,6 @@ Usuwa pliki tymczasowe, które program MSBuild tworzy po C++ skompilowaniu proje
 |**FilesExcludedFromClean**|Opcjonalny parametr `String`.<br /><br /> Określa rozdzielaną średnikami listę plików, które nie są czyste.|
 |**FoldersToClean**|Wymagany `String` parametr.<br /><br /> Określa rozdzielaną średnikami listę katalogów do oczyszczenia. Można określić pełną lub względną ścieżkę, a ścieżka może zawierać symbol wieloznaczny (*).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

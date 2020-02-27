@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573797"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633684"
 ---
 # <a name="item-functions"></a>Funkcje elementów
-Począwszy od programu MSBuild 4,0, kod w zadaniach i obiektach docelowych może wywoływać funkcje elementu, aby uzyskać informacje o elementach w projekcie. Te funkcje upraszczają pobieranie elementów DISTINCT () i są szybsze niż pętle w elementach.
+
+Kod w zadaniach i obiektach docelowych może wywoływać funkcje elementu, aby uzyskać informacje o elementach w projekcie (w programie MSBuild 4,0 i nowszych). Te funkcje upraszczają pobieranie odrębnych elementów i są szybsze niż pętle w elementach.
 
 ## <a name="string-item-functions"></a>Funkcje elementu String
+
 Można użyć metod i właściwości ciągu w .NET Framework, aby wykonywać operacje na dowolnej wartości elementu. W przypadku metod <xref:System.String> należy określić nazwę metody. Dla właściwości <xref:System.String> Określ nazwę właściwości po "get_".
 
 Dla elementów, które mają wiele ciągów, Metoda ciągu lub właściwość jest uruchamiana dla każdego ciągu.
@@ -49,6 +51,7 @@ Poniższy przykład pokazuje, jak używać tych funkcji ciągów znaków.
 ```
 
 ## <a name="intrinsic-item-functions"></a>Funkcje elementu wewnętrznego
+
 W poniższej tabeli wymieniono funkcje wewnętrzne dostępne dla elementów.
 
 |Funkcja|Przykład|Opis|
@@ -99,5 +102,6 @@ Poniższy przykład pokazuje, jak używać funkcji elementu wewnętrznego.
   -->
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Elementy](../msbuild/msbuild-items.md)

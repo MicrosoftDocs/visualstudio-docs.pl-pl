@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574421"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633788"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Instrukcje: użycie zmiennych środowiskowych w kompilacji
+
 Podczas kompilowania projektów często konieczne jest ustawienie opcji kompilacji przy użyciu informacji, które nie są w pliku projektu lub plików wchodzących w skład Twojego projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.
 
 ## <a name="reference-environment-variables"></a>Zmienne środowiskowe referencyjne
- Wszystkie zmienne środowiskowe są dostępne dla pliku projektu [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) jako właściwości.
+
+ Wszystkie zmienne środowiskowe są dostępne dla pliku projektu Microsoft Build Engine (MSBuild) jako właściwości.
 
 > [!NOTE]
 > Jeśli plik projektu zawiera jawną definicję właściwości, która ma taką samą nazwę jak zmienna środowiskowa, właściwość w pliku projektu zastępuje wartość zmiennej środowiskowej.
@@ -46,6 +48,7 @@ Podczas kompilowania projektów często konieczne jest ustawienie opcji kompilac
     > W nazwach właściwości nie jest rozróżniana wielkość liter, Dlatego obie `$(ToolsPath)` i `$(TOOLSPATH)` odwołują się do tej samej właściwości lub zmiennej środowiskowej.
 
 ## <a name="example"></a>Przykład
+
  Następujący plik projektu używa zmiennych środowiskowych, aby określić lokalizację katalogów.
 
 ```xml
@@ -62,7 +65,8 @@ Podczas kompilowania projektów często konieczne jest ustawienie opcji kompilac
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 - [Instrukcje: kompilowanie tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

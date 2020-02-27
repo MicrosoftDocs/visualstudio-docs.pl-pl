@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d970437cd04a3f3d5467c905829e1d4229ab8a71
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 604ed91d32140c3b037e6ddef21e996f72ef8439
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578460"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632579"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput — zadanie
+
 Określa pliki wyjściowe dla odwołań projektu innych niż MSBuild.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `ResolveNonMSBuildProjectOutput`.
 
 |Parametr|Opis|
@@ -37,8 +39,10 @@ Określa pliki wyjściowe dla odwołań projektu innych niż MSBuild.
 |`UnresolvedProjectReferences`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera listę elementów odwołań projektu, których nie można rozpoznać przy użyciu prewiązanej listy danych wyjściowych.<br /><br /> Ponieważ program Visual Studio rozpoznaje tylko wstępnie projekty programów innych niż MSBuild, oznacza to, że odwołania do projektu na tej liście są w formacie MSBuild.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

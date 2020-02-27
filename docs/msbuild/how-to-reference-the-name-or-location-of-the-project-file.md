@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574785"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633840"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Instrukcje: odwoływanie się do nazwy lub lokalizacji pliku projektu
-Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez konieczności tworzenia własnej właściwości. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia zastrzeżone właściwości, które odwołują się do nazwy pliku projektu i innych właściwości związanych z projektem. Aby uzyskać więcej informacji na temat właściwości zastrzeżonych, zobacz [Właściwości zarezerwowane i dobrze znane programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+
+Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez konieczności tworzenia własnej właściwości. MSBuild zawiera zastrzeżone właściwości, które odwołują się do nazwy pliku projektu i innych właściwości związanych z projektem. Aby uzyskać więcej informacji na temat właściwości zastrzeżonych, zobacz [Właściwości zarezerwowane i dobrze znane programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Korzystanie z właściwości projektu
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia pewne właściwości zastrzeżone, których można użyć w plikach projektu bez definiowania ich za każdym razem. Na przykład właściwość zastrzeżona `MSBuildProjectName` zawiera odwołanie do nazwy pliku projektu. Właściwość zastrzeżona `MSBuildProjectDirectory` zawiera odwołanie do lokalizacji pliku projektu.
+
+ MSBuild zawiera pewne zastrzeżone właściwości, których można użyć w plikach projektu bez definiowania ich za każdym razem. Na przykład właściwość zastrzeżona `MSBuildProjectName` zawiera odwołanie do nazwy pliku projektu. Właściwość zastrzeżona `MSBuildProjectDirectory` zawiera odwołanie do lokalizacji pliku projektu.
 
 #### <a name="to-use-the-project-properties"></a>Aby użyć właściwości projektu
 
@@ -47,6 +49,7 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 > W pliku projektu nie można ponownie zdefiniować zarezerwowanych właściwości.
 
 ## <a name="example"></a>Przykład
+
  Następujący przykładowy plik projektu odwołuje się do nazwy projektu jako zastrzeżonej właściwości, aby określić nazwę danych wyjściowych.
 
 ```xml
@@ -75,6 +78,7 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 ```
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykładowy plik projektu używa zastrzeżonej właściwości `MSBuildProjectDirectory`, aby utworzyć pełną ścieżkę do pliku w lokalizacji pliku projektu.
 
 ```xml
@@ -87,6 +91,9 @@ Możesz użyć nazwy lub lokalizacji projektu w samym pliku projektu bez koniecz
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+W przykładzie użyto składni [funkcji właściwości](property-functions.md) , aby wywołać metodę .NET Framework statycznej <xref:System.IO.Path.Combine*?displayProperty=fullName>.
+
+## <a name="see-also"></a>Zobacz też
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Właściwości zarezerwowane i dobrze znane dla programu MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

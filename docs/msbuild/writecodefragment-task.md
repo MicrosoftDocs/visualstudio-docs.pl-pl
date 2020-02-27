@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0ab604b23a99ab2dd62adca6076168fe264ab1b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567401"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630695"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment — zadanie
+
 Generuje plik kodu tymczasowego z określonego wygenerowanego fragmentu kodu. Nie usuwa pliku.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `WriteCodeFragment`.
 
 |Parametr|Opis|
@@ -37,8 +39,10 @@ Generuje plik kodu tymczasowego z określonego wygenerowanego fragmentu kodu. Ni
 |`OutputFile`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa ścieżkę pliku, który został wygenerowany. Jeśli ten parametr jest ustawiony przy użyciu nazwy pliku, folder docelowy jest dołączany do nazwy pliku. Jeśli jest ustawiona przy użyciu elementu głównego, folder docelowy jest ignorowany.<br /><br /> Jeśli ten parametr nie jest ustawiony, nazwa pliku wyjściowego jest folderem docelowym, dowolną nazwą pliku i Domyślnym rozszerzeniem nazwy pliku dla określonego języka.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

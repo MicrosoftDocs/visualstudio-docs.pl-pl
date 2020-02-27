@@ -18,17 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5bfe09fec169495afa5b58a41f7c9f1b9bacfad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573472"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633632"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup, element (MSBuild)
+
 Element `ItemDefinitionGroup` umożliwia zdefiniowanie zestawu definicji elementów, które są wartościami metadanych, które są stosowane do wszystkich elementów w projekcie, domyślnie. ItemDefinitionGroup zastępuje potrzebę korzystania z [zadania elementu](../msbuild/createitem-task.md) a i [zadania właściwości](../msbuild/createproperty-task.md). Aby uzyskać więcej informacji, zobacz [definicje elementu](../msbuild/item-definitions.md).
 
-\<Project> \<ItemDefinitionGroup>
+\<Project > \<ItemDefinitionGroup >
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,9 +41,10 @@ Element `ItemDefinitionGroup` umożliwia zdefiniowanie zestawu definicji element
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
 W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -58,9 +60,10 @@ W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzęd
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kodu definiuje dwa elementy metadanych, m i n, w ItemDefinitionGroup. W tym przykładzie domyślne metadane "m" są stosowane do elementu "i", ponieważ metadane "m" nie są jawnie zdefiniowane przez element "i". Jednak domyślne metadane "n" nie są stosowane do elementu "i", ponieważ metadane "n" są już zdefiniowane przez element "i".
 
 ```xml
@@ -81,6 +84,7 @@ Poniższy przykład kodu definiuje dwa elementy metadanych, m i n, w ItemDefinit
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)

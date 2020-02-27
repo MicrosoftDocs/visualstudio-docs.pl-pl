@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585222"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633918"
 ---
 # <a name="how-to-clean-a-build"></a>Instrukcje: czyszczenie kompilacji
-Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usunięte, pozostawiając tylko pliki projektu i składnika. Z plików projektu i składników można następnie skompilować nowe wystąpienia plików pośrednich i wyjściowych. Biblioteka typowych zadań, które są dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera zadanie [exec](../msbuild/exec-task.md) , za pomocą którego można uruchamiać polecenia systemowe. Aby uzyskać więcej informacji na temat biblioteki zadań, zobacz [Dokumentacja zadania](../msbuild/msbuild-task-reference.md).
+
+Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usunięte, pozostawiając tylko pliki projektu i składnika. Z plików projektu i składników można następnie skompilować nowe wystąpienia plików pośrednich i wyjściowych. 
 
 ## <a name="create-a-directory-for-output-items"></a>Tworzenie katalogu dla elementów wyjściowych
+
  Domyślnie plik *. exe* , który jest tworzony podczas kompilowania projektu, jest umieszczany w tym samym katalogu, w którym znajdują się pliki projektu i plików źródłowych. Zwykle jednak elementy wyjściowe są tworzone w osobnym katalogu.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Aby utworzyć katalog dla elementów wyjściowych
+### <a name="to-create-a-directory-for-output-items"></a>Aby utworzyć katalog dla elementów wyjściowych
 
 1. Użyj elementu `Property`, aby zdefiniować lokalizację i nazwę katalogu. Na przykład Utwórz katalog o nazwie *BuiltApp* w katalogu zawierającym pliki projektu i źródła:
 
@@ -40,6 +42,7 @@ Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usun
      ```
 
 ## <a name="remove-the-output-items"></a>Usuń elementy wyjściowe
+
  Przed utworzeniem nowych wystąpień plików pośrednich i wyjściowych warto wyczyścić wszystkie poprzednie wystąpienia plików pośrednich i wyjściowych. Użyj zadania [RemoveDir —](../msbuild/removedir-task.md) , aby usunąć katalog i wszystkie pliki i katalogi, które zawiera z dysku.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Aby usunąć katalog i wszystkie pliki znajdujące się w katalogu
@@ -49,6 +52,7 @@ Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usun
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Przykład
+
  Następujący przykładowy kod projektu zawiera nowy element docelowy `Clean`, który używa zadania `RemoveDir` do usuwania katalogu i wszystkich plików i katalogów, które zawiera. Ponadto w tym przykładzie `Compile` Target tworzy oddzielny katalog dla elementów wyjściowych, które są usuwane podczas czyszczenia kompilacji.
 
  `Compile` jest zdefiniowany jako domyślny element docelowy i dlatego jest używany automatycznie, chyba że określono inny element docelowy lub docelowy. **Aby określić inny element docelowy,** należy użyć przełącznika wiersza polecenia. Na przykład:
@@ -99,8 +103,8 @@ Gdy czyścisz kompilację, wszystkie pliki pośrednie i wyjściowe zostaną usun
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Exec — zadanie](../msbuild/exec-task.md)
+## <a name="see-also"></a>Zobacz też
+
 - [MakeDir, zadanie](../msbuild/makedir-task.md)
 - [RemoveDir —, zadanie](../msbuild/removedir-task.md)
 - [CSC — zadanie](../msbuild/csc-task.md)

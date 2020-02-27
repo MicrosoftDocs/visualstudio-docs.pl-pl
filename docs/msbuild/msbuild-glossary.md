@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593671"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633346"
 ---
 # <a name="msbuild-glossary"></a>Słownik programu MSBuild
 
@@ -88,10 +88,10 @@ plik projektu \
 Plik projektu zawiera skrypt programu MSBuild, który kontroluje kompilację. Pliki projektu zwykle mają rozszerzenie pliku, które zawiera element *proj*, taki jak *. csproj* lub *. vbproj*. Pliki projektu mogą importować pliki właściwości i pliki docelowe.
 
 wartość
-Właściwość to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Właściwość to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 Właściwość, środowisko \
-Właściwość Environment jest właściwością, która jest automatycznie inicjowana do wartości zmiennej środowiskowej systemowej o tej samej nazwie. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Właściwość Environment jest właściwością, która jest automatycznie inicjowana do wartości zmiennej środowiskowej systemowej o tej samej nazwie. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 plik właściwości \
 Plik właściwości to plik projektu, który zawiera głównie grupy właściwości i grupy elementów, które kierują kompilację. Według Konwencji ma rozszerzenie pliku *. props*. Pliki właściwości są zwykle importowane na początku skojarzonych plików projektu.
@@ -100,23 +100,23 @@ Właściwość, funkcja \
 Funkcja właściwości to systemowa właściwość lub metoda, która może służyć do oceniania skryptów programu MSBuild. Metody właściwości mogą służyć do odczytywania czasu systemowego, porównywania ciągów, dopasowywania wyrażeń regularnych i wykonywania innych akcji. Aby uzyskać więcej informacji, zobacz [funkcje właściwości](../msbuild/property-functions.md).
 
 Funkcja właściwości, zagnieżdżona wartość \
-Funkcje właściwości mogą być połączone w celu tworzenia bardziej złożonych funkcji. Na przykład
+Funkcje właściwości mogą być połączone w celu tworzenia bardziej złożonych funkcji. Na przykład:
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
 Aby uzyskać więcej informacji, zobacz [funkcje właściwości](../msbuild/property-functions.md).
 
 Właściwość, Global \
-Właściwość globalna to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Właściwości globalne są ustawiane w wierszu polecenia lub przy użyciu atrybutu `Properties` [zadania programu MSBuild](../msbuild/msbuild-task.md)i nie można ich modyfikować w fazie oceny kompilacji. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Właściwość globalna to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Właściwości globalne są ustawiane w wierszu polecenia lub przy użyciu atrybutu `Properties` [zadania programu MSBuild](../msbuild/msbuild-task.md)i nie można ich modyfikować w fazie oceny kompilacji. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 Właściwość, lokalna \
 Właściwość lokalna to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Ten termin służy tylko do odróżnienia właściwości, która nie jest właściwością globalną.
 
 Właściwość, rejestr \
-Właściwość rejestru ma wartość, która jest ustawiana za pomocą specjalnej składni, która odczytuje wartość podklucza rejestru systemowego. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Właściwość rejestru ma wartość, która jest ustawiana za pomocą specjalnej składni, która odczytuje wartość podklucza rejestru systemowego. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 Właściwość, zarezerwowane \
-Właściwość zastrzeżona to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Zastrzeżone właściwości są automatycznie inicjowane dla wstępnie zdefiniowanych wartości. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+Właściwość zastrzeżona to para klucz-wartość, która jest używana do kontrolowania procesu kompilacji. Zastrzeżone właściwości są automatycznie inicjowane dla wstępnie zdefiniowanych wartości. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 projekt — zakres \
 Zakres projektu — opisuje obiekt MSBuild, na przykład lokalną właściwość, która jest widoczna tylko w zawierającym go pliku projektu i do wszelkich importowanych projektów.
@@ -161,7 +161,7 @@ plik docelowy \
 Plik targets to plik projektu, który zawiera głównie elementy docelowe i zadania, które kierują kompilację. Według Konwencji ma rozszerzenie pliku *targets*. Pliki docelowe są zwykle importowane na końcu skojarzonych plików projektu.
 
 zadaniem
-Zadania są jednostkami kodu wykonywalnego, których [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty używają do wykonywania operacji kompilacji. Na przykład zadanie może kompilować pliki wejściowe lub uruchomić narzędzie zewnętrzne. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
+Zadania są jednostkami kodu wykonywalnego, które są używane przez projekty MSBuild do wykonywania operacji kompilacji. Na przykład zadanie może kompilować pliki wejściowe lub uruchomić narzędzie zewnętrzne. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 przekształcania
 Transformacja jest konwersją jeden do jednego z jednej kolekcji elementów na inną. Poza umożliwieniem projektowi konwersji kolekcji elementów, transformacja umożliwia obiektowi docelowemu znalezienie bezpośredniego mapowania między danymi wejściowymi i wyjściowymi. Aby uzyskać więcej informacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).
@@ -169,6 +169,6 @@ Transformacja jest konwersją jeden do jednego z jednej kolekcji elementów na i
 dobrze znane metadane \
 Zobacz *metadane, dobrze znane*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [MSBuild](../msbuild/msbuild.md)

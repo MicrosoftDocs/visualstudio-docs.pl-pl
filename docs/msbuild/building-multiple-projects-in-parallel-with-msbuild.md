@@ -12,14 +12,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917813"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634503"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Równoległe kompilowanie wielu projektów za pomocą programu MSBuild
+
 Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie ich równolegle. Aby uruchomić kompilacje równolegle, należy użyć następujących ustawień na komputerze z wieloma procesorami lub procesorem o wielu rdzeniach:
 
 - Należy użyć przełącznika `-maxcpucount` w wierszu polecenia.
@@ -30,6 +31,7 @@ Można użyć programu MSBuild do kompilacji wielu projektów przez uruchomienie
 > Przełącznik **-verbose** ( **-v**) w wierszu polecenia może również wpływać na wydajność kompilacji. Wydajność kompilacji może spaść jeśli szczegółowość informacji dziennika kompilacji jest ustawiona na szczegóły lub diagnostyka, które są używane w celu rozwiązania problemów. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md) i [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount przełącznik
+
 Jeśli używasz przełącznika `-maxcpucount` lub `-m` do Short, MSBuild może utworzyć określoną liczbę procesów *MSBuild. exe* , które mogą być uruchamiane równolegle. Procesy te są nazywane także „procesami roboczymi”. Każdy proces roboczy używa oddzielnego rdzenia procesora, jeśli jakieś są dostępne, do kompilacji projektu a w tym samym czasie inne dostępne procesory mogą kompilować inne projekty. Na przykład ustawienie tego parametru na wartość „4” spowoduje, że program MSBuild utworzy cztery procesy robocze w celu skompilowania projektu.
 
 Jeśli przełącznik `-maxcpucount` zostanie dołączony, bez określenia wartości, program MSBuild użyje maksymalnie wartości równej liczbie procesorów w komputerze.
@@ -43,7 +45,8 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel — parametr zadania
-`BuildInParallel` jest opcjonalnym parametrem logicznym dla zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Gdy `BuildInParallel` jest ustawiona na `true` (wartość domyślna to `true`), generowane są wiele procesów roboczych, aby kompilować tyle projektów jednocześnie, jak to możliwe. Do poprawnego działania przełącznik `-maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.
+
+`BuildInParallel` jest opcjonalnym parametrem logicznym zadania programu MSBuild. Gdy `BuildInParallel` jest ustawiona na `true` (wartość domyślna to `true`), generowane są wiele procesów roboczych, aby kompilować tyle projektów jednocześnie, jak to możliwe. Do poprawnego działania przełącznik `-maxcpucount` musi być ustawiony na wartość większą niż 1, a system musi posiadać co najmniej dwa procesory lub procesor dwurdzeniowy.
 
 Poniżej przedstawiono przykład pochodzący z *Microsoft. Common. targets*, how to set The `BuildInParallel` Parameter.
 
@@ -69,7 +72,8 @@ Poniżej przedstawiono przykład pochodzący z *Microsoft. Common. targets*, how
 </MSBuild>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Używanie wielu procesorów do kompilowania projektów](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Zapisuj rejestratory obsługujące wiele procesorów](../msbuild/writing-multi-processor-aware-loggers.md)
 - [Blog C++ strojenia równoległości kompilacji](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

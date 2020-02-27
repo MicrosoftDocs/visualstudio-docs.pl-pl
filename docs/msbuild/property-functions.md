@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bb4c44b4e642ff1137df7f0afe02502224060a64
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597389"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632943"
 ---
 # <a name="property-functions"></a>Funkcje właściwości
 
-W .NET Framework wersjach 4 i 4,5 funkcja właściwości może służyć do oceniania skryptów programu MSBuild. Funkcji właściwości można używać wszędzie tam, gdzie są wyświetlane właściwości. W przeciwieństwie do zadań, funkcji właściwości można używać poza obiektami docelowymi i są oceniane przed dowolnymi uruchomieniami docelowym.
+Funkcje właściwości to wywołania metod .NET Framework, które są wyświetlane w definicjach właściwości programu MSBuild. W przeciwieństwie do zadań, funkcji właściwości można używać poza obiektami docelowymi i są oceniane przed dowolnymi uruchomieniami docelowym.
 
- Bez używania zadań programu MSBuild można odczytać czas systemowy, porównać ciągi, dopasować wyrażenia regularne i wykonać inne akcje w skrypcie kompilacji. Program MSBuild podejmie próbę przekonwertowania ciągu na liczbę i liczbę na ciąg, a następnie wprowadzi inne konwersje zgodnie z wymaganiami.
- 
+Bez używania zadań programu MSBuild można odczytać czas systemowy, porównać ciągi, dopasować wyrażenia regularne i wykonać inne akcje w skrypcie kompilacji. Program MSBuild podejmie próbę przekonwertowania ciągu na liczbę i liczbę na ciąg, a następnie wprowadzi inne konwersje zgodnie z wymaganiami.
+
 Wartości ciągu zwracane z funkcji właściwości mają [znaki specjalne](msbuild-special-characters.md) . Jeśli wartość ma być traktowana tak, jakby została umieszczona bezpośrednio w pliku projektu, użyj `$([MSBuild]::Unescape())`, aby wypróbować znaki specjalne.
+
+Funkcje właściwości są dostępne w .NET Framework 4 i nowszych.
 
 ## <a name="property-function-syntax"></a>Składnia funkcji właściwości
 
@@ -37,7 +39,7 @@ Są to trzy rodzaje funkcji właściwości; Każda funkcja ma inną składnię:
 
 Wszystkie wartości właściwości kompilacji są tylko wartościami ciągu. Można użyć metod String (Instance) do działania na dowolnej wartości właściwości. Na przykład można wyodrębnić nazwę dysku (pierwsze trzy znaki) z właściwości build, która reprezentuje pełną ścieżkę przy użyciu tego kodu:
 
-```fundamental
+```
 $(ProjectOutputFolder.Substring(0,3))
 ```
 
@@ -45,7 +47,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 W skrypcie kompilacji można uzyskać dostęp do właściwości statycznych i metod wielu klas systemowych. Aby uzyskać wartość właściwości statycznej, użyj następującej składni, gdzie \<klasie > jest nazwą klasy systemowej, a właściwość \<> jest nazwą właściwości.
 
-```fundamental
+```
 $([Class]::Property)
 ```
 
@@ -57,7 +59,7 @@ Na przykład można użyć poniższego kodu, aby ustawić właściwość kompila
 
 Aby wywołać metodę statyczną, należy użyć następującej składni, gdzie \<klasie > jest nazwą klasy systemowej, \<Metoda > jest nazwą metody i (\<parametry >) jest listą parametrów dla metody:
 
-```fundamental
+```
 $([Class]::Method(Parameters))
 ```
 
@@ -121,7 +123,7 @@ Ponadto można użyć następujących metod statycznych i właściwości:
 
 Jeśli uzyskujesz dostęp do właściwości statycznej, która zwraca wystąpienie obiektu, można wywołać metody instancji tego obiektu. Aby wywołać metodę wystąpienia, użyj następującej składni, gdzie \<klasie > jest nazwą klasy systemowej, \<Właściwość > jest nazwą właściwości, \<Metoda > jest nazwą metody, a (\<parametry >) jest listą parametrów dla metody:
 
-```fundamental
+```
 $([Class]::Property.Method(Parameters))
 ```
 
@@ -137,13 +139,13 @@ Na przykład można użyć poniższego kodu, aby ustawić właściwość kompila
 
 Można uzyskać dostęp do kilku metod statycznych w kompilacji, aby zapewnić obsługę znaków arytmetycznych, koniunkcji logicznej i ucieczki. Dostęp do tych metod uzyskuje się za pomocą następującej składni, gdzie \<Metoda > jest nazwą metody i (\<parametry >) jest listą parametrów dla metody.
 
-```fundamental
+```
 $([MSBuild]::Method(Parameters))
 ```
 
 Aby na przykład dodać dwa właściwości, które mają wartości liczbowe, użyj poniższego kodu.
 
-```fundamental
+```
 $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
@@ -172,8 +174,8 @@ Poniżej znajduje się lista funkcji właściwości programu MSBuild:
 |String NormalizePath (ciąg parametrów [] ścieżka)|Pobiera kanoniczną pełną ścieżkę podanej ścieżki i zapewnia, że zawiera poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.|
 |String NormalizeDirectory (ciąg parametrów [] ścieżka)|Pobiera kanoniczną pełną ścieżkę do podanego katalogu i zapewnia, że zawiera poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego, przy zapewnieniu, że ma końcowy ukośnik.|
 |ciąg EnsureTrailingSlash (ścieżka ciągu)|Jeśli dana ścieżka nie ma końcowego ukośnika, Dodaj ją. Jeśli ścieżka jest pustym ciągiem, nie modyfikuje go.|
-|ciąg GetPathOfFileAbove (plik String, ciąg startingDirectory)|Wyszukuje plik na podstawie lokalizacji bieżącego pliku kompilacji lub na podstawie `startingDirectory`, jeśli zostanie określony.|
-|GetDirectoryNameOfFileAbove (ciąg startingDirectory, ciąg fileName)|Znajdź plik w katalogu określonym lub lokalizacji w strukturze katalogów powyżej tego katalogu.|
+|ciąg GetPathOfFileAbove (plik String, ciąg startingDirectory)|Wyszukuje i zwraca pełną ścieżkę do pliku w strukturze katalogów powyżej bieżącej lokalizacji pliku kompilacji lub na podstawie `startingDirectory`, jeśli jest określony.|
+|GetDirectoryNameOfFileAbove (ciąg startingDirectory, ciąg fileName)|Znajdź i zwróć katalog pliku w określonym katalogu lub lokalizacji w strukturze katalogów powyżej tego katalogu.|
 |String MakeRelative (ciąg basePath, ścieżka ciągu)|Powoduje, że `path` względne `basePath`. `basePath` musi być katalogiem bezwzględnym. Jeśli nie można nawiązać `path`, zostanie zwrócony Verbatim. Podobne do `Uri.MakeRelativeUri`.|
 |String ValueOrDefault (ciąg conditionValue, String DefaultValue)|Zwróć ciąg w parametrze "DefaultValue" tylko wtedy, gdy parametr "conditionValue" jest pusty, w przeciwnym razie Zwróć wartość conditionValue.|
 
@@ -181,7 +183,7 @@ Poniżej znajduje się lista funkcji właściwości programu MSBuild:
 
 Można połączyć funkcje właściwości, aby tworzyć bardziej złożone funkcje, jak pokazano w poniższym przykładzie.
 
-```fundamental
+```
 $([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))
 ```
 
@@ -195,7 +197,7 @@ Funkcja właściwości `DoesTaskHostExist` w programie MSBuild zwraca, czy host 
 
 Ta funkcja właściwości ma następującą składnię:
 
-```fundamental
+```
 $([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```
 
@@ -205,7 +207,7 @@ Funkcja właściwości `EnsureTrailingSlash` w programie MSBuild dodaje końcowy
 
 Ta funkcja właściwości ma następującą składnię:
 
-```fundamental
+```
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```
 
@@ -215,7 +217,7 @@ Funkcja właściwości `GetDirectoryNameOfFileAbove` MSBuild szuka pliku w katal
 
  Ta funkcja właściwości ma następującą składnię:
 
-```fundamental
+```
 $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```
 
@@ -227,7 +229,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 
 ## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
 
-Funkcja właściwości `GetPathOfFileAbove` w programie MSBuild zwraca ścieżkę do pliku bezpośrednio poprzedzającego ten plik. Jest on funkcjonalnie równoważny z wywołaniem
+Funkcja właściwości `GetPathOfFileAbove` w programie MSBuild zwraca ścieżkę do określonego pliku, jeśli znajduje się w strukturze katalogów powyżej bieżącego katalogu. Jest on funkcjonalnie równoważny z wywołaniem
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
@@ -235,7 +237,7 @@ Funkcja właściwości `GetPathOfFileAbove` w programie MSBuild zwraca ścieżk�
 
 Ta funkcja właściwości ma następującą składnię:
 
-```fundamental
+```
 $([MSBuild]::GetPathOfFileAbove(dir.props))
 ```
 
@@ -245,7 +247,7 @@ Funkcja właściwości `GetRegistryValue` MSBuild zwraca wartość klucza rejest
 
 W poniższych przykładach pokazano, jak ta funkcja jest używana:
 
-```fundamental
+```
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
 $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
@@ -257,7 +259,7 @@ Funkcja właściwości `GetRegistryValueFromView` MSBuild pobiera dane rejestru 
 
 Składnia tej funkcji właściwości to:
 
-```fundamental
+```
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
@@ -275,7 +277,7 @@ Dostępne są następujące widoki rejestru:
 
 Poniżej przedstawiono przykład.
 
- ```fundamental
+ ```
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
@@ -287,7 +289,7 @@ Funkcja właściwości `MakeRelative` MSBuild zwraca ścieżkę względną drugi
 
 Ta funkcja właściwości ma następującą składnię:
 
-```fundamental
+```
 $([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```
 
@@ -338,7 +340,7 @@ Output:
 -->
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
 

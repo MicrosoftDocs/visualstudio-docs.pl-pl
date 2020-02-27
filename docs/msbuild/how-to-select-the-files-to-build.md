@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574616"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633814"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Instrukcje: Wybieranie plików do skompilowania
+
 Podczas kompilowania projektu, który zawiera kilka plików, każdy plik można wyświetlić osobno w pliku projektu lub użyć symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżonym zestawie katalogów.
 
 ## <a name="specify-inputs"></a>Określ dane wejściowe
+
 Elementy reprezentują dane wejściowe dla kompilacji. Aby uzyskać więcej informacji o elementach, zobacz [Items](../msbuild/msbuild-items.md).
 
-Aby dołączyć pliki dla kompilacji, muszą one znajdować się na liście elementów w pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Do list elementów można dodawać wiele plików przez dołączenie pojedynczych plików lub użycie symboli wieloznacznych w celu uwzględnienia wielu plików jednocześnie.
+Aby dołączyć pliki dla kompilacji, muszą one znajdować się na liście elementów w pliku projektu MSBuild. Do list elementów można dodawać wiele plików przez dołączenie pojedynczych plików lub użycie symboli wieloznacznych w celu uwzględnienia wielu plików jednocześnie.
 
 #### <a name="to-declare-items-individually"></a>Aby zadeklarować elementy indywidualnie
 
@@ -51,6 +53,7 @@ Aby dołączyć pliki dla kompilacji, muszą one znajdować się na liście elem
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>Określ dane wejściowe za pomocą symboli wieloznacznych
+
 Można również użyć symboli wieloznacznych, aby rekursywnie uwzględnić wszystkie pliki lub tylko określone pliki z podkatalogów jako dane wejściowe dla kompilacji. Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [Items](../msbuild/msbuild-items.md)
 
 Poniższe przykłady opierają się na projekcie zawierającym pliki graficzne w następujących katalogach i podkatalogach z plikiem projektu znajdującym się w katalogu *projektu* :
@@ -84,6 +87,7 @@ Poniższe przykłady opierają się na projekcie zawierającym pliki graficzne w
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>Przekazywanie elementów do zadania
+
 W pliku projektu można użyć notacji @ () w zadaniach, aby określić całą listę elementów jako dane wejściowe dla kompilacji. Tej notacji można użyć, aby wyświetlić listę wszystkich plików osobno lub użyć symboli wieloznacznych.
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Aby użyć wszystkich plików C# wizualnych lub Visual Basic jako dane wejściowe
@@ -97,11 +101,12 @@ W pliku projektu można użyć notacji @ () w zadaniach, aby określić całą l
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> Aby określić dane wejściowe dla kompilacji, należy użyć symboli wieloznacznych z elementami. nie można określić danych wejściowych przy użyciu `Sources` atrybutu w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania, takich jak [CSC](../msbuild/csc-task.md) lub [VBC](../msbuild/vbc-task.md). Poniższy przykład nie jest prawidłowy w pliku projektu:
+> Aby określić dane wejściowe dla kompilacji, należy użyć symboli wieloznacznych z elementami. nie można określić danych wejściowych przy użyciu atrybutu `Sources` w zadaniach MSBuild, takich jak [CSC](../msbuild/csc-task.md) lub [VBC](../msbuild/vbc-task.md). Poniższy przykład nie jest prawidłowy w pliku projektu:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kodu pokazuje projekt, który zawiera wszystkie pliki wejściowe osobno.
 
 ```xml
@@ -136,6 +141,7 @@ Poniższy przykład kodu pokazuje projekt, który zawiera wszystkie pliki wejśc
 ```
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kodu używa symbolu wieloznacznego w celu uwzględnienia wszystkich plików *. cs* .
 
 ```xml
@@ -169,6 +175,7 @@ Poniższy przykład kodu używa symbolu wieloznacznego w celu uwzględnienia wsz
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Instrukcje: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Elementy](../msbuild/msbuild-items.md)

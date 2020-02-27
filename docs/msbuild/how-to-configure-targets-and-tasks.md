@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596349"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633892"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Instrukcje: Konfigurowanie obiektów docelowych i zadań
+
+Wybrane zadania programu MSBuild można ustawić tak, aby były uruchamiane w środowisku, w którym są docelowe, niezależnie od środowiska komputera deweloperskiego. Na przykład w przypadku używania komputera 64-bitowego do kompilowania aplikacji, która jest przeznaczona dla architektury 32-bitowej, wybrane zadania są uruchamiane w procesie 32-bitowym.
 Wybrane zadania programu MSBuild można ustawić tak, aby były uruchamiane w środowisku, w którym są docelowe, niezależnie od środowiska komputera deweloperskiego. Na przykład w przypadku używania komputera 64-bitowego do kompilowania aplikacji, która jest przeznaczona dla architektury 32-bitowej, wybrane zadania są uruchamiane w procesie 32-bitowym.
 
 > [!NOTE]
 > Jeśli zadanie kompilacji jest zapisywana w języku .NET, takim jak Visual C# lub Visual Basic, i nie używa natywnych zasobów lub narzędzi, zostanie uruchomione w dowolnym kontekście docelowym bez dostosowania.
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask atrybutów i parametrów zadań
+
 Następujące atrybuty `UsingTask` wpływają na wszystkie operacje zadania w konkretnym procesie kompilacji:
 
 - Atrybut `Runtime`, jeśli jest obecny, ustawia wersję środowiska uruchomieniowego języka wspólnego (CLR) i może przyjmować jedną z następujących wartości: `CLR2`, `CLR4`, `CurrentRuntime`lub `*` (dowolne środowisko uruchomieniowe).
@@ -74,6 +77,7 @@ Przed uruchomieniem zadania przez program MSBuild szuka pasującego `UsingTask`,
 ```
 
 ## <a name="task-factories"></a>Fabryki zadań
+
 Przed uruchomieniem zadania program MSBuild sprawdza, czy jest on przeznaczony do uruchomienia w bieżącym kontekście oprogramowania. Jeśli zadanie jest oznaczone, MSBuild przekazuje go do AssemblyTaskFactory, który uruchamia go w bieżącym procesie; w przeciwnym razie MSBuild przekazuje zadanie do TaskHostFactory, które uruchamia zadanie w procesie, który jest zgodny z kontekstem docelowym. Nawet jeśli bieżący kontekst i dopasowanie kontekstu docelowego, można wymusić uruchamianie pozaprocesowe zadania (na potrzeby izolacji, zabezpieczeń lub innych przyczyn) przez ustawienie `TaskFactory` na `TaskHostFactory`.
 
 ```xml
@@ -84,6 +88,7 @@ Przed uruchomieniem zadania program MSBuild sprawdza, czy jest on przeznaczony d
 ```
 
 ## <a name="phantom-task-parameters"></a>Fantom — parametry zadania
+
 Podobnie jak w przypadku wszystkich innych parametrów zadań, `MSBuildRuntime` i `MSBuildArchitecture` można ustawić na podstawie właściwości kompilacji.
 
 ```xml
@@ -107,5 +112,6 @@ Parametry `MSBuildRuntime` i `MSBuildArchitecture` zapewniają największą elas
 > [!NOTE]
 > Parametry zadań są oceniane w kontekście węzła nadrzędnego, a nie w kontekście hosta zadania. Zmienne środowiskowe, które są zależne od architektury (takie jak lokalizacja *plików programu* ), będą oceniane do wartości zgodnej z węzłem nadrzędnym. Jeśli jednak ta sama zmienna środowiskowa jest odczytywana bezpośrednio przez zadanie, zostanie ona prawidłowo oceniona w kontekście hosta zadania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Konfigurowanie obiektów docelowych i zadań](../msbuild/configuring-targets-and-tasks.md)

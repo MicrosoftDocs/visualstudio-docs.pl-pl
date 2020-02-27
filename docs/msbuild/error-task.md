@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596362"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634230"
 ---
 # <a name="error-task"></a>Error — Zadanie
+
 Kończy kompilację i rejestruje błąd na podstawie ocenianej instrukcji warunkowej.
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `Error`.
 
 | Parametr | Opis |
@@ -36,16 +38,18 @@ W poniższej tabeli opisano parametry zadania `Error`.
 | `Code` | Opcjonalny parametr `String`.<br /><br /> Kod błędu, który ma zostać skojarzony z błędem. |
 | `File` | Opcjonalny parametr `String`.<br /><br /> Nazwa pliku, który zawiera błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie błędu. |
 | `HelpKeyword` | Opcjonalny parametr `String`.<br /><br /> Słowo kluczowe pomocy do skojarzenia z błędem. |
-| `Text` | Opcjonalny parametr `String`.<br /><br /> Tekst błędu, który [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dzienniki, jeśli parametr `Condition` zostanie oszacowany jako `true`. |
+| `Text` | Opcjonalny parametr `String`.<br /><br /> Tekst błędu, który program MSBuild rejestruje, jeśli `Condition` parametr oblicza `true`. |
 
 ## <a name="remarks"></a>Uwagi
-Zadanie `Error` pozwala [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty do wydawania tekstu błędów dla rejestratorów i zatrzymania wykonywania kompilacji.
+
+Zadanie `Error` umożliwia projektom MSBuild wygenerowanie tekstu błędów w celu rejestrowania i zatrzymanie wykonywania kompilacji.
 
 Jeśli `Condition` parametr oblicza `true`, kompilacja zostanie zatrzymana i zostanie zarejestrowany błąd. Jeśli parametr `Condition` nie istnieje, zostanie zarejestrowany błąd i zostanie zatrzymane wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kodu sprawdza, czy są ustawione wszystkie wymagane właściwości. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość parametru `Text` zadania `Error`.
 
 ```xml
@@ -62,6 +66,7 @@ Poniższy przykład kodu sprawdza, czy są ustawione wszystkie wymagane właści
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)

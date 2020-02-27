@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567297"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631084"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: korzystanie z programu MSBuild
 
@@ -43,7 +43,7 @@ Program MSBuild można uruchomić z programu Visual Studio lub z **okna poleceń
     W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D:\\* . Zaakceptuj wartości domyślne dla **rozwiązania**, **nazwy rozwiązania** (**BuildApp**) i **struktury**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual C#**  > **Windows Desktop**, a następnie wybierz pozycję **Windows Forms App (.NET Framework)** . Następnie wybierz przycisk **OK**.
+    Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual C#**  > **Windows Desktop**, a następnie wybierz pozycję **Windows Forms App (.NET Framework)** . Następnie wybierz przycisk **OK**.
 
     W polu **Nazwa** wpisz `BuildApp`. Wprowadź **lokalizację** rozwiązania, na przykład *D:\\* . Zaakceptuj wartości domyślne dla opcji **Utwórz katalog dla rozwiązania** (wybrane), **Dodaj do kontroli źródła** (nie wybrano) i **nazwę rozwiązania** (**BuildApp**).
     ::: moniker-end
@@ -175,7 +175,7 @@ Zadanie Message przyjmuje wartość ciągu atrybutu Text jako dane wejściowe i 
 </PropertyGroup>
 ```
 
- Wszystkie właściwości są elementami podrzędnymi elementów właściwości. Nazwa właściwości jest nazwą elementu podrzędnego, a wartość właściwości jest element tekstowy elementu podrzędnego. Na przykład
+ Wszystkie właściwości są elementami podrzędnymi elementów właściwości. Nazwa właściwości jest nazwą elementu podrzędnego, a wartość właściwości jest element tekstowy elementu podrzędnego. Na przykład:
 
 ```xml
 <TargetFrameworkVersion>v15.0</TargetFrameworkVersion>
@@ -183,7 +183,7 @@ Zadanie Message przyjmuje wartość ciągu atrybutu Text jako dane wejściowe i 
 
  definiuje właściwość o nazwie TargetFrameworkVersion, podając ją jako wartość ciągu "v 15.0".
 
- Właściwości kompilacji można ponownie zdefiniować w dowolnym momencie. Jeśli węzeł
+ Właściwości kompilacji można ponownie zdefiniować w dowolnym momencie. Jeśli użytkownik
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -192,6 +192,7 @@ Zadanie Message przyjmuje wartość ciągu atrybutu Text jako dane wejściowe i 
  pojawia się w dalszej części pliku projektu lub w pliku zaimportowanego później w pliku projektu, a następnie TargetFrameworkVersion przyjmuje nową wartość "v 3.5".
 
 ## <a name="examine-a-property-value"></a>Sprawdzanie wartości właściwości
+
  Aby uzyskać wartość właściwości, należy użyć następującej składni, gdzie PropertyName jest nazwą właściwości:
 
 ```xml
@@ -243,7 +244,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>Właściwości warunkowe
 
- Wiele właściwości, takich jak konfiguracja, jest zdefiniowana warunkowo, to oznacza, że atrybut Condition jest wyświetlany w elemencie właściwości. Właściwości warunkowe są zdefiniowane lub definiowane ponownie tylko wtedy, gdy warunek ma wartość "true". Należy zauważyć, że niezdefiniowane właściwości otrzymują wartość domyślną pustego ciągu. Na przykład
+ Wiele właściwości, takich jak konfiguracja, jest zdefiniowana warunkowo, to oznacza, że atrybut Condition jest wyświetlany w elemencie właściwości. Właściwości warunkowe są zdefiniowane lub definiowane ponownie tylko wtedy, gdy warunek ma wartość "true". Należy zauważyć, że niezdefiniowane właściwości otrzymują wartość domyślną pustego ciągu. Na przykład:
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -315,7 +316,7 @@ Aby uzyskać więcej informacji, zobacz [znaki specjalne programu MSBuild](../ms
 
  Element jest częścią informacji, zazwyczaj nazwą pliku, która jest używana jako dane wejściowe systemu kompilacji. Na przykład Kolekcja elementów reprezentujących pliki źródłowe może zostać przeniesiona do zadania o nazwie Kompiluj, aby skompilować je do zestawu.
 
- Wszystkie elementy są elementami podrzędnymi elementów Item. Nazwa elementu jest nazwą elementu podrzędnego, a wartość elementu jest wartością atrybutu Include elementu podrzędnego. Wartości elementów o tej samej nazwie są zbierane w typach elementów o tej samej nazwie.  Na przykład
+ Wszystkie elementy są elementami podrzędnymi elementów Item. Nazwa elementu jest nazwą elementu podrzędnego, a wartość elementu jest wartością atrybutu Include elementu podrzędnego. Wartości elementów o tej samej nazwie są zbierane w typach elementów o tej samej nazwie.  Na przykład:
 
 ```xml
 <ItemGroup>
@@ -411,7 +412,8 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude i symboli wieloznacznych
- Możesz użyć symboli wieloznacznych "*", "\*\*" i "?" z atrybutem include, aby dodać elementy do typu elementu. Na przykład
+
+ Możesz użyć symboli wieloznacznych "*", "\*\*" i "?" z atrybutem include, aby dodać elementy do typu elementu. Na przykład:
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -425,7 +427,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 
  dodaje wszystkie pliki z rozszerzeniem pliku *JPEG* w folderze *obrazy* i wszystkie jego podfoldery do typu elementu zdjęcia. Aby uzyskać więcej przykładów, zobacz [jak to zrobić: Wybierz pliki do skompilowania](../msbuild/how-to-select-the-files-to-build.md).
 
- Zwróć uwagę, że jako że elementy są deklarowane, są dodawane do typu elementu. Na przykład
+ Zwróć uwagę, że jako że elementy są deklarowane, są dodawane do typu elementu. Na przykład:
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -438,7 +440,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- Można wykluczyć element z typu elementu z atrybutem Exclude. Na przykład
+ Można wykluczyć element z typu elementu z atrybutem Exclude. Na przykład:
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -446,7 +448,7 @@ Zmień zadanie, aby użyć powrotu karetki i wysuwu wiersza (% 0A% 0D), aby wyś
 
  dodaje wszystkie pliki z rozszerzeniem pliku *CS* do typu elementu kompilacji, z wyjątkiem plików, których nazwy zawierają *projektanta*ciągów. Aby uzyskać więcej przykładów, zobacz [How to: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
 
-Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w elemencie Item, który je zawiera. Na przykład
+Atrybut Exclude ma wpływ tylko na elementy dodane przez atrybut Include w elemencie Item, który je zawiera. Na przykład:
 
 ```xml
 <Compile Include="*.cs" />
@@ -486,6 +488,7 @@ nie wykluczają *Form1.cs*pliku, który został dodany w poprzednim elemencie el
     ```
 
 ## <a name="item-metadata"></a>Metadane elementu
+
  Elementy mogą zawierać metadane oprócz informacji zebranych z atrybutów dołączania i wykluczania. Te metadane mogą być używane przez zadania, które wymagają więcej informacji o elementach niż tylko wartość elementu.
 
  Metadane elementu są zadeklarowane w pliku projektu przez utworzenie elementu o nazwie metadanych jako elementu podrzędnego elementu. Element może mieć zero lub więcej wartości metadanych. Na przykład następujący element CSFile ma metadane kultury o wartości "fr":
@@ -602,7 +605,7 @@ Zwróć uwagę, że metadane wyrażone w tej składni nie powodują przetwarzani
 
  Aby dowiedzieć się, jak utworzyć prosty plik projektu w jednym kroku, wypróbuj [Przewodnik: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Omówienie programu MSBuild](../msbuild/msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b02108e2ee47a31ced196643bf917b3b63c1c6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594906"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631513"
 ---
 # <a name="unzip-task"></a>Rozpakuj zadanie
+
 Rozpakuje Archiwum *. zip* do określonej lokalizacji.
 
 >[!NOTE]
 >Zadanie `Unzip` jest dostępne tylko w programie MSBuild 15,8 i nowszych wersjach.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `Unzip`.
 
 |Parametr|Opis|
@@ -46,9 +48,11 @@ Rozpakuje Archiwum *. zip* do określonej lokalizacji.
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa co najmniej jeden plik do rozpakowania. Podczas określania wielu plików, które są rozpakowane, w celu przeszukania tego samego folderu.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład rozpakuje archiwum i zastępuje wszystkie pliki tylko do odczytu.
 
 ```xml
@@ -65,6 +69,7 @@ Rozpakuje Archiwum *. zip* do określonej lokalizacji.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

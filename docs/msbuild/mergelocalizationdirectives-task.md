@@ -18,28 +18,31 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c689122ac0ddfd9441122fdead64ecd8049e72
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579628"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633502"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives —, zadanie
-Zadanie <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Scala atrybuty lokalizacji i komentarze jednego lub większej liczby plików w formacie binarnym [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w pojedynczym pliku dla całego zestawu.
+
+Zadanie <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Scala atrybuty lokalizacji i komentarze jednego lub więcej plików formatu binarnego XAML do pojedynczego pliku dla całego zestawu.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 | Parametr | Opis |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa listę plików dyrektyw lokalizacyjnych dla poszczególnych plików w [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] formacie binarnym. |
+| `GeneratedLocalizationFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa listę plików dyrektyw lokalizacyjnych dla poszczególnych plików w formacie binarnym XAML. |
 | `OutputFile` | Wymagany parametr wyjściowy **ciągu** .<br /><br /> Określa ścieżkę wyjściową skompilowanego zestawu dyrektyw. |
 
 ## <a name="remarks"></a>Uwagi
-Do zawartości [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] można dodawać atrybuty lokalizacji i komentarze. Dzięki obsłudze [!INCLUDE[TLA#tla_wpf](../msbuild/includes/tlasharptla_wpf_md.md)] lokalizacji można rozłożyć atrybuty lokalizacji i komentarze oraz umieścić je w pliku *. loc* , który jest oddzielony od wygenerowanego zestawu. Można to zrobić przy użyciu atrybutu **LocalizationPropertyStorage** . Aby uzyskać więcej informacji na temat atrybutów lokalizacji i komentarzy oraz **LocalizationPropertyStorage**, zobacz [atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+
+Możesz dodawać atrybuty lokalizacji i komentarze do zawartości XAML. Dzięki obsłudze lokalizacji Windows Presentation Foundation (WPF) można rozłożyć atrybuty lokalizacji i komentarze oraz umieścić je w pliku *. loc* , który jest oddzielony od wygenerowanego zestawu. Można to zrobić przy użyciu atrybutu **LocalizationPropertyStorage** . Aby uzyskać więcej informacji na temat atrybutów lokalizacji i komentarzy oraz **LocalizationPropertyStorage**, zobacz [atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Przykład
-Poniższy przykład Scala Komentarze lokalizacyjne kilku [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] plików w formacie binarnym w jeden plik *. loc* .
+
+Poniższy przykład Scala Komentarze lokalizacyjne kilku plików w formacie binarnym XAML w jeden plik *. loc* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,6 +58,7 @@ Poniższy przykład Scala Komentarze lokalizacyjne kilku [!INCLUDE[TLA2#tla_xaml
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

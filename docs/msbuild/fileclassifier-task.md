@@ -17,14 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579682"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634191"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier —, zadanie
+
 Zadanie <xref:Microsoft.Build.Tasks.Windows.FileClassifier> klasyfikuje zestaw zasobów źródłowych jako te, które będą osadzone w zestawie. Jeśli zasób nie jest Lokalizowalny, jest osadzony w głównym zestawie aplikacji; w przeciwnym razie jest osadzony w zestawie satelickim.
 
 ## <a name="task-parameters"></a>Parametry zadania
@@ -41,9 +42,11 @@ Zadanie <xref:Microsoft.Build.Tasks.Windows.FileClassifier> klasyfikuje zestaw z
 |`SourceFiles`|Wymagany parametr **ITaskItem []** .<br /><br /> Określa listę plików do klasyfikowania.|
 
 ## <a name="remarks"></a>Uwagi
+
 Jeśli parametr **Culture** nie jest ustawiony, wszystkie zasoby, które są określone za pomocą parametru **SourceFiles** , nie są lokalizowalne; w przeciwnym razie są one lokalizowalne, chyba że są skojarzone z **lokalizowalnym** atrybutem, który ma wartość **false**.
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład klasyfikuje pojedynczy plik źródłowy jako zasób, a następnie osadza go w zestawie satelitarnym dla kultury francuskiej — kanadyjskiej (fr-CA).
 
 ```xml
@@ -64,6 +67,7 @@ Poniższy przykład klasyfikuje pojedynczy plik źródłowy jako zasób, a nast�
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

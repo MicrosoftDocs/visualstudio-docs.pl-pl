@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c32681af56595f8b00feab4979a3ec45f1588
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: e84007c9a10618c6d757a36debe58c272302fa3e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578689"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634035"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo — zadanie
+
 Generuje zaufanie aplikacji z manifestu podstawowego oraz z parametrów `TargetZone` i `ExcludedPermissions`.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `GenerateTrustInfo`.
 
 |Parametr|Opis|
@@ -38,8 +40,10 @@ Generuje zaufanie aplikacji z manifestu podstawowego oraz z parametrów `TargetZ
 |`TrustInfoFile`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa plik, który zawiera informacje o zaufaniu zabezpieczeń aplikacji.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

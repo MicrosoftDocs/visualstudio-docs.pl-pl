@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574330"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633775"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Instrukcje: użycie znaków zarezerwowanych XML w plikach projektu
+
 Podczas tworzenia plików projektu może być konieczne użycie znaków zarezerwowanych XML, na przykład w wartościach właściwości lub w wartościach parametrów zadania. Jednak niektóre zastrzeżone znaki muszą zostać zastąpione przez nazwaną jednostkę, aby można było analizować plik projektu.
 
 ## <a name="use-reserved-characters"></a>Użyj znaków zarezerwowanych
+
  W poniższej tabeli opisano zastrzeżone znaki XML, które muszą zostać zastąpione przez odpowiadającą mu nazwę jednostki, aby można było analizować plik projektu.
 
 |Znak zarezerwowany|Nazwana jednostka|
@@ -29,7 +31,7 @@ Podczas tworzenia plików projektu może być konieczne użycie znaków zarezerw
 |\<|&amp;lt;|
 |>|&amp;gt;|
 |&|&amp;amp;|
-|"|&amp;quot;|
+|”|&amp;quot;|
 |'|&amp;.|
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Aby użyć podwójnych cudzysłowów w pliku projektu
@@ -41,6 +43,7 @@ Podczas tworzenia plików projektu może być konieczne użycie znaków zarezerw
     ```
 
 ## <a name="example"></a>Przykład
+
  W poniższym przykładzie kodu podwójne cudzysłowy są używane do wyróżnienia nazwy pliku w wiadomości wyjściowej przez plik projektu.
 
 ```xml
@@ -70,6 +73,7 @@ Podczas tworzenia plików projektu może być konieczne użycie znaków zarezerw
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

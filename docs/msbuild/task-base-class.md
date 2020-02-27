@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d7d6e0870f809a30bc3feb7ecb7a7302b7729124
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566400"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631955"
 ---
 # <a name="task-base-class"></a>Klasa bazowa zadania
+
 Wiele zadań ostatecznie dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Ta klasa dodaje kilka parametrów do zadań, które pochodzą z nich. Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry tej klasy bazowej.
 
 |Parametr|Opis|
@@ -34,6 +36,7 @@ Wiele zadań ostatecznie dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskHost>.<br /><br /> Określa wystąpienie obiektu hosta (może mieć wartość null). Aparat kompilacji ustawia tę właściwość, jeśli IDE hosta skojarzył obiekt hosta z tym konkretnym zadaniem.|
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Opcjonalny <xref:Microsoft.Build.Utilities.TaskLoggingHelper> parametr tylko do odczytu.<br /><br /> Obiekt pomocnika rejestrowania...|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

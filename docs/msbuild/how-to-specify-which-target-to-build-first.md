@@ -12,18 +12,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75bcb41bb2df2afcb6e71b0fdaf58d0d7429e974
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574631"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633801"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Instrukcje: Określanie pierwszego obiektu docelowego do skompilowania
-Plik projektu może zawierać jeden lub więcej elementów `Target`, które definiują sposób kompilowania projektu. Silnik [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) kompiluje pierwszy znaleziony projekt i wszelkie zależności, chyba że plik projektu zawiera atrybut `DefaultTargets`, atrybut `InitialTargets` lub element docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-Target** .
 
+Plik projektu może zawierać jeden lub więcej elementów `Target`, które definiują sposób kompilowania projektu. Aparat Microsoft Build Engine (MSBuild) kompiluje pierwszy znaleziony projekt i wszelkie zależności, chyba że plik projektu zawiera atrybut `DefaultTargets`, atrybut `InitialTargets` lub element docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-Target** .
 ## <a name="use-the-initialtargets-attribute"></a>Użyj atrybutu InitialTargets
+
  Atrybut `InitialTargets` elementu `Project` określa element docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w atrybucie `DefaultTargets`.
+Atrybut `InitialTargets` elementu `Project` określa element docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w atrybucie `DefaultTargets`.
 
 #### <a name="to-specify-one-initial-target"></a>Aby określić jeden początkowy element docelowy
 
@@ -40,7 +42,8 @@ Plik projektu może zawierać jeden lub więcej elementów `Target`, które defi
      `<Project InitialTargets="Clean;Compile">`
 
 ## <a name="use-the-defaulttargets-attribute"></a>Użyj atrybutu DefaultTargets —
- Atrybut `DefaultTargets` elementu `Project` określa, które elementy docelowe lub docelowe są kompilowane, jeśli element docelowy nie zostanie jawnie określony w wierszu polecenia. Jeśli obiekty docelowe są określone zarówno w atrybucie `InitialTargets`, jak i `DefaultTargets` i nie określono elementu docelowego w wierszu polecenia, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] uruchamia obiekty docelowe określone w atrybut `InitialTargets`, a następnie obiekty docelowe określone w atrybucie `DefaultTargets`.
+
+ Atrybut `DefaultTargets` elementu `Project` określa, które elementy docelowe lub docelowe są kompilowane, jeśli element docelowy nie zostanie jawnie określony w wierszu polecenia. Jeśli obiekty docelowe są określone w atrybucie `InitialTargets` i `DefaultTargets` i nie określono elementu docelowego w wierszu polecenia, MSBuild uruchamia elementy docelowe określone w `InitialTargets` atrybutu, a następnie obiekty docelowe określone w atrybucie `DefaultTargets`.
 
 #### <a name="to-specify-one-default-target"></a>Aby określić jeden domyślny obiekt docelowy
 
@@ -57,6 +60,7 @@ Plik projektu może zawierać jeden lub więcej elementów `Target`, które defi
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Użyj przełącznika-Target
+
  Jeśli domyślny element docelowy nie jest zdefiniowany w pliku projektu lub jeśli nie chcesz używać tego domyślnego obiektu docelowego, możesz użyć przełącznika wiersza polecenia **-Target** , aby określić inny element docelowy. Element docelowy lub docelowy określone za pomocą przełącznika **-Target** są uruchamiane zamiast obiektów docelowych określonych przez atrybut `DefaultTargets`. Elementy docelowe określone w atrybucie `InitialTargets` zawsze są uruchamiane jako pierwsze.
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby użyć elementu docelowego innego niż domyślny obiekt docelowy
@@ -71,7 +75,8 @@ Plik projektu może zawierać jeden lub więcej elementów `Target`, które defi
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [MSBuild](../msbuild/msbuild.md)
 - [Docelowe elementy](../msbuild/msbuild-targets.md)
 - [Instrukcje: czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)

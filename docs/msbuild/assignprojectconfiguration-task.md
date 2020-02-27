@@ -13,24 +13,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f61858bfcdf0f54c4f786e1b1064707b57c68c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b5159b73058c73c925cae644c2e3ddd2bc84ac41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593450"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634555"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration, zadanie
+
 To zadanie akceptuje listę ciągów konfiguracji i przypisuje je do określonych projektów.
 
 ## <a name="task-parameters"></a>Parametry zadania
+
  W poniższej tabeli opisano parametry zadania `AssignProjectConfiguration`.
 
 |Parametr|Opis|
 |---------------|-----------------|
 |`SolutionConfigurationContents`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera ciąg XML zawierający konfigurację projektu dla każdego projektu. Konfiguracje są przypisywane do nazwanych projektów.|
 |`DefaultToVcxPlatformMapping`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform używanych przez większość typów do tych, które są używane przez pliki *. vcxproj* .<br /><br /> Na przykład:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform *. vcxproj* na nazwy platform używane przez większość typów.<br /><br /> Na przykład:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
+|`VcxToDefaultPlatformMapping`|Optional (Opcjonalność)<br /><br /> `string` parametr wyjściowy.<br /><br /> Zawiera rozdzielaną średnikami listę mapowań z nazw platform *. vcxproj* na nazwy platform używane przez większość typów.<br /><br /> Na przykład:<br /><br /> `"Win32=AnyCPU;X64=X64"`|
 |`CurrentProjectConfiguration`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera konfigurację dla bieżącego projektu.|
 |`CurrentProjectPlatform`|Opcjonalny `string` parametr wyjściowy.<br /><br /> Zawiera platformę dla bieżącego projektu.|
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|Opcjonalny `bool` parametr wyjściowy.<br /><br /> Zawiera flagę wskazującą, że odwołania powinny zostać skompilowane, nawet jeśli zostały wyłączone w konfiguracji projektu.|
@@ -41,8 +43,10 @@ To zadanie akceptuje listę ciągów konfiguracji i przypisuje je do określonyc
 |`UnassignedProjects`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera listę elementów odwołań projektu, których nie można rozpoznać przy użyciu wstępnie rozwiązanej listy danych wyjściowych.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

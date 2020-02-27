@@ -19,14 +19,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e942fbd32841bbfe0a429c8623da09dcbbd0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593372"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634477"
 ---
 # <a name="choose-element-msbuild"></a>Choose — element (MSBuild)
+
 Oblicza elementy podrzędne w celu wybrania jednego zestawu `ItemGroup` elementów i/lub `PropertyGroup` elementów do obliczenia.
 
  \<> projektu \<wybierz > \<, gdy > \<wybierz >... \<w przeciwnym razie > \<wybierz >...
@@ -41,9 +42,11 @@ Oblicza elementy podrzędne w celu wybrania jednego zestawu `ItemGroup` element�
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
+
  Brak.
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -51,20 +54,22 @@ Oblicza elementy podrzędne w celu wybrania jednego zestawu `ItemGroup` element�
 |Element|Opis|
 |-------------|-----------------|
 |[Przypadku](../msbuild/otherwise-element-msbuild.md)|Element opcjonalny.<br /><br /> Określa blok kodu `PropertyGroup` i `ItemGroup` elementów, które mają być oceniane w przypadku, gdy warunki wszystkich `When`ych elementów są szacowane do `false`. Może istnieć zero lub jeden `Otherwise` elementów w elemencie `Choose` i musi być ostatnim elementem.|
-|[When](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwy blok kodu dla elementu `Choose` do wybrania. Element `Choose` może zawierać co najmniej jeden element `When`.|
+|[Czasie](../msbuild/when-element-msbuild.md)|Element wymagany.<br /><br /> Określa możliwy blok kodu dla elementu `Choose` do wybrania. Element `Choose` może zawierać co najmniej jeden element `When`.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
 | [Przypadku](../msbuild/otherwise-element-msbuild.md) | Określa blok kodu do wykonania, jeśli warunki wszystkich `When` elementów mają być `false`ne. |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
-| [When](../msbuild/when-element-msbuild.md) | Określa możliwy blok kodu dla elementu `Choose` do wybrania. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
+| [Czasie](../msbuild/when-element-msbuild.md) | Określa możliwy blok kodu dla elementu `Choose` do wybrania. |
 
 ## <a name="remarks"></a>Uwagi
+
  Elementy `Choose`, `When`i `Otherwise` są używane razem, aby zapewnić możliwość wybrania jednej sekcji kodu do wykonania z wielu możliwych wariantów. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Przykład
+
  Następujący projekt używa elementu `Choose`, aby wybrać zestaw wartości właściwości w elementach `When` do ustawienia. Jeśli `Condition` atrybuty obu elementów `When` oblicza do `false`, wartości właściwości w elemencie `Otherwise` są ustawiane.
 
 ```xml
@@ -112,6 +117,7 @@ Oblicza elementy podrzędne w celu wybrania jednego zestawu `ItemGroup` element�
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

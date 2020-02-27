@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1eb28d5a54af1708fa8d3ea7a12887174a15bb
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 102f46ec639719bb2bec70a38c6c7177c63793c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579589"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632332"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
+
 Ustawia liczbę wątków globalnych i przypisuje liczbę do bieżącego wątku.
 
 ## <a name="syntax"></a>Składnia
@@ -32,12 +33,15 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ```
 
 #### <a name="parameters"></a>Parametry
+
 [in] `threadCount`
 
  Liczba wątków, które mają być używane.
 
 ## <a name="return-value"></a>Wartość zwracana
+
  **Wynik HRESULT** z ustawionym **bitem** bitu, jeśli licznik wątków został zaktualizowany.
 
 ## <a name="requirements"></a>Wymagania
+
  **Nagłówek:** *FileTracker. h*

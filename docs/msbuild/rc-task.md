@@ -22,17 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bcc37446fe5b627ec789bc04461ea643e30575
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 13ae844759cb73de6dc7bcce6c8898c21132f9d7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578487"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632917"
 ---
 # <a name="rc-task"></a>RC — Zadanie
+
 Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *RC. exe*. Zadanie **RC** kompiluje zasoby, takie jak kursory, ikony, mapy bitowe, okna dialogowe i czcionki, do pliku zasobów ( *. res*). Aby uzyskać więcej informacji, zobacz [kompilator zasobów](/windows/desktop/menurc/resource-compiler).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania RC. Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
 
 |Parametr|Opis|
@@ -51,4 +53,5 @@ Zawija narzędzie kompilatora zasobów systemu Microsoft Windows, *RC. exe*. Zad
 |**UndefinePreprocessorDefinitions**|Usuń definicję symbolu preprocesora.<br /><br /> Aby uzyskać więcej informacji, zobacz **/u** opcji w artykule [using RC (wiersz polecenia RC)](/windows/win32/menurc/using-rc-the-rc-command-line-). Zobacz też **PreprocessorDefinitions** w tej tabeli.|
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

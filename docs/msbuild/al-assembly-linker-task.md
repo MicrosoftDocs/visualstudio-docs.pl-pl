@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d90e6c94d07b73e79d793982944bca395a562df2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6861fee8691c32415111347ab673f9e48bfb9e11
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593476"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634594"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Konsolidator zestawu) — zadanie
-Zadanie AL zapakuje *Al. exe*, narzędzie, które jest dystrybuowane z [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. To narzędzie konsolidatora zestawu służy do tworzenia zestawu z manifestem z co najmniej jednego pliku, który jest modułem lub plikami zasobów. Kompilatory i środowiska programistyczne mogą już zapewnić te możliwości, więc często nie jest konieczne bezpośrednie używanie tego zadania. Konsolidator zestawu jest najbardziej przydatny dla deweloperów, którzy chcą utworzyć pojedynczy zestaw z wielu plików składników, takich jak te, które mogą być tworzone na podstawie programowania w języku mieszanym. To zadanie nie łączy modułów w pojedynczy plik zestawu; poszczególne moduły muszą być nadal dystrybuowane i dostępne w celu poprawnego załadowania zestawu. Aby uzyskać więcej informacji na temat *Al. exe*, zobacz [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker).
+
+Zadanie AL zapakuje *Al. exe*, narzędzie, które jest dystrybuowane z zestawem Windows Software Development Kit (SDK). To narzędzie konsolidatora zestawu służy do tworzenia zestawu z manifestem z co najmniej jednego pliku, który jest modułem lub plikami zasobów. Kompilatory i środowiska programistyczne mogą już zapewnić te możliwości, więc często nie jest konieczne bezpośrednie używanie tego zadania. Konsolidator zestawu jest najbardziej przydatny dla deweloperów, którzy chcą utworzyć pojedynczy zestaw z wielu plików składników, takich jak te, które mogą być tworzone na podstawie programowania w języku mieszanym. To zadanie nie łączy modułów w pojedynczy plik zestawu; poszczególne moduły muszą być nadal dystrybuowane i dostępne w celu poprawnego załadowania zestawu. Aby uzyskać więcej informacji na temat *Al. exe*, zobacz [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `AL`.
 
 | Parametr | Opis |
@@ -62,16 +64,18 @@ Zadanie AL zapakuje *Al. exe*, narzędzie, które jest dystrybuowane z [!INCLUDE
 | `TemplateFile` | Opcjonalny parametr `String`.<br /><br /> Określa zestaw, z którego mają dziedziczyć wszystkie metadane zestawu, z wyjątkiem pola kultura. Określony zestaw musi mieć silną nazwę.<br /><br /> Zestaw utworzony przy użyciu `TemplateFile` parametr będzie zestawem satelickim. Ten parametr odpowiada opcji `/template` w [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Timeout` | Opcjonalny parametr `Int32`.<br /><br /> Określa ilość czasu (w milisekundach), po upływie którego plik wykonywalny zadania zostanie zakończony. Wartość domyślna to `Int.MaxValue`, co oznacza, że nie ma limitu czasu. |
 | `Title` | Opcjonalny parametr `String`.<br /><br /> Określa ciąg dla pola `Title` w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację opcji `/title` w [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker). |
-| `ToolPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (Al. exe). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, która jest uruchomiona [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `ToolPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (Al. exe). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, w której działa program MSBuild. |
 | `Trademark` | Opcjonalny parametr `String`.<br /><br /> Określa ciąg dla pola `Trademark` w zestawie. Aby uzyskać więcej informacji, zobacz dokumentację opcji `/trade[mark]` w [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Version` | Opcjonalny parametr `String`.<br /><br /> Określa informacje o wersji tego zestawu. Format ciągu to *główna. pomocnicza. kompilacja. poprawka*. Wartość domyślna to 0. Aby uzyskać więcej informacji, zobacz dokumentację opcji `/v[ersion]` w [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Icon` | Opcjonalny parametr `String`.<br /><br /> Wstawia plik *. ico* w zestawie. Plik *. ico* zapewnia plikowi wyjściowemu odpowiedni wygląd w Eksploratorze plików. Ten parametr odpowiada opcji `/win32icon` w [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker). |
 | `Win32Resource` | Opcjonalny parametr `String`.<br /><br /> Wstawia zasób Win32 (plik *. res* ) do pliku wyjściowego. Aby uzyskać więcej informacji, zobacz dokumentację opcji `/win32res` w [Al. exe (Konsolidator zestawu)](/dotnet/framework/tools/al-exe-assembly-linker). |
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.ToolTask>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład tworzy zestaw z określonymi opcjami.
 
 ```xml
@@ -91,6 +95,7 @@ Zadanie AL zapakuje *Al. exe*, narzędzie, które jest dystrybuowane z [!INCLUDE
 </AL>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 * [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 * [Zadania](../msbuild/msbuild-tasks.md)

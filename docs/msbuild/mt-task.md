@@ -24,17 +24,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5fe0ce106fc471431d3aac088eb3f45cfb28c564
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595033"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633060"
 ---
 # <a name="mt-task"></a>MT — Zadanie
+
 Zawija narzędzie manifestu Microsoft, *Mt. exe*. Aby uzyskać więcej informacji, zobacz [Mt. exe](/windows/desktop/SbsCs/mt-exe).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry **MT** zadania. Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
 
 > [!NOTE]
@@ -68,5 +70,6 @@ Zawija narzędzie manifestu Microsoft, *Mt. exe*. Aby uzyskać więcej informacj
 |**UpdateFileHashesSearchPath**|Opcjonalny parametr `String`.<br /><br /> Określa ścieżkę wyszukiwania do użycia podczas aktualizowania skrótów plików. Użyj tego parametru z parametrem zadania **UpdateFileHashesMT** .<br /><br /> Aby uzyskać więcej informacji, zobacz **UpdateFileHashes** parametr w tej tabeli.|
 |**VerboseOutput**|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, wyświetla pełne informacje o debugowaniu.<br /><br /> Aby uzyskać więcej informacji, zobacz opcję **/verbose** w programie [Mt. exe](/windows/desktop/SbsCs/mt-exe).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

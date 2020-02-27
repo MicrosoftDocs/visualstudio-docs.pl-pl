@@ -1,6 +1,6 @@
 ---
 title: Obsługiwane zmiany kodu (C++) | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -20,20 +20,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b93c9cfa6767aea83d941cbc8684b27517c8f911
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729550"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629589"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu. Jednak niektórych zmian nie można zastosować podczas wykonywania programu. Aby zastosować te zmiany, należy zatrzymać wykonywanie i utworzyć nową wersję kodu.
 
  Zobacz [Edytuj i Kontynuuj (C++)](../debugger/edit-and-continue-visual-cpp.md) , aby uzyskać informacje na temat pracy z funkcją C++ Edytuj i Kontynuuj dla programu Visual Studio.
 
+## <a name="BKMK_Requirements"></a>Wymagania
+### <a name="build-settings-project--properties"></a>Ustawienia kompilacji (właściwości > projektu):
+  1. **Ogólne >C++ języka C/> Format informacji o debugowaniu**: programowej bazy danych do edycji i kontynuowania (`/ZI`)
+  2. **Generowanie koduC++ w języku C/> > Włącz minimalną**ponowną kompilację: tak (`/Gm`)
+  3. **> łączący ogólne > Włącz konsolidację przyrostową**: tak (`/INCREMENTAL`)
+
+     Wszystkie niezgodne ustawienia konsolidatora (takie jak `/SAFESEH`lub `/OPT:`...) powinny spowodować ostrzeżenia _LNK4075 narzędzi konsolidatora_ podczas kompilacji.  
+     Przykład: `LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification`
+
+### <a name="debugger-settings-debug--options--general"></a>Ustawienia debugera (Opcje > debugowania > Ogólne):
+  - Włącz natywną edycję i Kontynuuj
+
+     Wszystkie niezgodne ustawienia kompilatora lub konsolidatora powodują wystąpienie błędu podczas edytowania i kontynuowania.  
+     Przykład: `Edit and Continue : error  : ‘file.cpp’ in ‘MyApp.exe’ was not compiled with Edit and Continue enabled. Ensure that the file is compiled with the Program Database for Edit and Continue (/ZI) option.`
+
 ## <a name="BKMK_Unsupported_changes"></a>Nieobsługiwane zmiany
- NastępująceC++ zmiany nie mogą zostać zastosowane podczas sesji debugowania:
+ Podczas sesji debugowania nieC++ można zastosować następujących zmian: C/. Jeśli wprowadzisz dowolne z tych zmian, a następnie spróbujesz zastosować zmiany kodu, w oknie **danych wyjściowych** zostanie wyświetlony komunikat o błędzie lub ostrzeżenie.
 
 - Większość zmian w danych globalnych lub statycznych.
 
@@ -57,7 +72,9 @@ Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu.
 
 - Zmiany w kodzie, który nie ma pliku obiektu.
 
-  Jeśli wprowadzisz jedną z tych zmian, a następnie spróbujesz zastosować zmiany kodu, w oknie **danych wyjściowych** zostanie wyświetlony komunikat o błędzie lub ostrzeżenie.
+* Modyfikowanie wyrażeń lambda, które:
+  - Mieć statyczny lub globalny element członkowski.
+  - Są przesyłane do funkcji std::. Powoduje to naruszenie oryginalnego naruszenia ODR i wyników w C1092.
 
 - Edytuj i Kontynuuj nie aktualizuje bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej, wykonywanie jest kontynuowane ze starą wersją i nie zostanie wygenerowane ostrzeżenie.
 
@@ -66,7 +83,9 @@ Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu.
 
 - Debugowanie natywnych aplikacji skompilowanych za pomocą [/zo (rozszerzanie zoptymalizowanego debugowania)](/cpp/build/reference/zo-enhance-optimized-debugging)
 
-- W wersjach programu Visual Studio wcześniejszych niż Visual Studio 2015 Update 1 Debuguj platformy UWP aplikacje lub składniki. Począwszy od programu Visual Studio 2015 Update 1, możesz użyć opcji Edytuj i Kontynuuj w C++ aplikacjach platformy UWP i aplikacji DirectX, ponieważ teraz obsługuje przełącznik kompilatora `/ZI` z przełącznikiem `/bigobj`. Można również użyć opcji Edytuj i Kontynuuj z plikami binarnymi skompilowanymi przy użyciu przełącznika `/FASTLINK`.
+- W wersjach programu Visual Studio wcześniejszych niż Visual Studio 2015 Update 1 Debuguj platformy UWP aplikacje lub składniki. Począwszy od programu Visual Studio 2015 Update 1, możesz użyć opcji Edytuj i Kontynuuj w C++ aplikacjach platformy UWP i aplikacji DirectX, ponieważ teraz obsługuje ona przełącznik kompilatora `/ZI` z przełącznikiem `/bigobj`. Można również użyć opcji Edytuj i Kontynuuj z plikami binarnymi skompilowanymi przy użyciu przełącznika `/FASTLINK`.
+
+- Debugowanie 8/8.1 aplikacji ze sklepu. Te projekty używają zestawu narzędzi VC 120 i przełącznika C/C++ `/bigobj`. Edytowanie i kontynuowanie za pomocą `/bigobj` jest obsługiwane tylko w zestawie narzędzi VC 140.
 
 - Debugowanie w systemie Windows 98.
 
@@ -86,22 +105,22 @@ Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu.
 
 - Debugowanie starej wersji kodu od momentu kompilacji nowej wersji nie powiodło się z powodu błędów kompilacji.
 
+- Użycie ścieżki niestandardowego kompilatora (*CL. exe*). Ze względów bezpieczeństwa na ponowną kompilację pliku podczas edytowania i kontynuowania program Visual Studio zawsze używa zainstalowanego kompilatora. Jeśli używasz niestandardowej ścieżki kompilatora (na przykład za pośrednictwem niestandardowej zmiennej `$(ExecutablePath)` w pliku `*.props`), zostanie wyświetlone ostrzeżenie, a program Visual Studio powraca do korzystania z zainstalowanego kompilatora o tej samej wersji/architekturze.
+
+- System kompilacji FASTBuild. FASTBuild nie jest obecnie zgodne z przełącznikiem kompilatora "Włącz minimalną ponowną kompilację (`/Gm`)", więc Edycja i kontynuacja nie są obsługiwane.
+
+- Starsze architektury/zestawy narzędzi VC. Przy użyciu zestawu narzędzi VC 140 domyślny Debuger obsługuje edytowanie i kontynuowanie w przypadku aplikacji x86 i x64. Starsze zestawy narzędzi obsługują tylko aplikacje x86. Zestawy narzędzi starsze niż VC 120 powinny używać starszego debugera, sprawdzając "_opcje > debugowania > ogólne >_ użyć macierzystego trybu zgodności", aby użyć polecenia Edytuj i Kontynuuj.
+
 ## <a name="BKMK_Linking_limitations"></a>Ograniczenia łączenia
 
 ### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a>Opcje konsolidatora, które wyłączają funkcję Edytuj i Kontynuuj
  Następujące opcje konsolidatora Wyłącz Edytuj i Kontynuuj:
 
-- Ustawienie **/OPT: ref**, **/OPT: ICF**lub **/Incremental: nie** wyłącza opcji Edytuj i Kontynuuj z następującym ostrzeżeniem:
+- Ustawienie **/OPT: ref**, **/OPT: ICF**lub **/Incremental: nie** wyłącza opcji Edytuj i Kontynuuj z następującym ostrzeżeniem:  
+     `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-     LINK: Warning LNK4075 narzędzi KONSOLIDATORA: ignorowanie/EDITANDCONTINUE z powodu/OPT
-
-     specyfikacja
-
-- Ustawienie **/Order**, **/Release**lub **/Force** wyłącza opcję Edytuj i Kontynuuj z ostrzeżeniem:
-
-     LINK: Warning LNK4075 narzędzi KONSOLIDATORA: ignorowanie/INCREMENTAL z powodu Option
-
-     specyfikacja
+- Ustawienie **/Order**, **/Release**lub **/Force** wyłącza opcję Edytuj i Kontynuuj z następującym ostrzeżeniem:  
+     `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - Ustawienie dowolnej opcji, która uniemożliwia tworzenie pliku bazy danych programu (. pdb) wyłącza polecenie Edytuj i Kontynuuj bez określonego ostrzeżenia.
 
@@ -122,7 +141,7 @@ Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu.
 
 3. Wyczyść pole wyboru **Połącz ponownie zmiany kodu po debugowaniu** .
 
-## <a name="BKMK_Precompiled_Header_Limitations"></a>Ograniczenia prekompilowanego nagłówka
+## <a name="BKMK_Precompiled_header_limitations"></a>Ograniczenia prekompilowanego nagłówka
  Domyślnie polecenie Edytuj i Kontynuuj ładuje i przetwarza prekompilowane nagłówki w tle w celu przyspieszenia przetwarzania zmian w kodzie. Ładowanie prekompilowanych nagłówków wymaga alokacji pamięci fizycznej, co może być problemem w przypadku kompilowania na komputerze z ograniczoną ilością pamięci RAM. Można określić, czy może to być problem przy użyciu Menedżera zadań systemu Windows do określenia ilości dostępnej pamięci fizycznej podczas debugowania. Jeśli ta liczba jest większa niż rozmiar prekompilowanych nagłówków, nie powinny wystąpić problemy w trybie Edytuj i kontynuuj. Jeśli ilość jest mniejsza niż rozmiar wstępnie skompilowanych nagłówków, można zapobiec ładowaniu prekompilowanych nagłówków w tle przez polecenie Edytuj i Kontynuuj.
 
  **Aby wyłączyć ładowanie wstępnie skompilowanych nagłówków dla Edytuj i Kontynuuj**
@@ -133,8 +152,16 @@ Edytuj i Kontynuuj dla C++ projektów obsługuje większość typów zmian kodu.
 
 3. Wyczyść pole wyboru **Zezwalaj na wstępne Kompilowanie** .
 
-## <a name="BKMK_IDL_Attribute_Limitations"></a>Ograniczenia atrybutów IDL
+## <a name="BKMK_IDL_attribute_limitations"></a>Ograniczenia atrybutów IDL
  Edytuj i Kontynuuj nie generuj ponownie plików definicji interfejsu (IDL). W związku z tym zmiany atrybutów IDL nie zostaną odzwierciedlone podczas debugowania. Aby zobaczyć wynik zmian atrybutów IDL, należy zatrzymać debugowanie i ponownie skompilować aplikację. Edytuj i Kontynuuj nie generuje błędu lub ostrzeżenia, jeśli atrybuty IDL zostały zmienione. Aby uzyskać więcej informacji, zobacz [atrybuty IDL](/cpp/windows/idl-attributes).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="BKMK_Diagnosing_issues"></a>Diagnozowanie problemów
+ Jeśli scenariusz nie pasuje do żadnego z powyższych warunków, można zebrać więcej szczegółów, ustawiając następującą wartość rejestru DWORD:
+ 1. Otwórz wiersz polecenia dla deweloperów.
+ 2. Uruchom następujące polecenie:  
+     `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+
+ Ustawienie tej wartości na początku sesji debugowania powoduje, że różne składniki edytują i kontynuują Spew pełne rejestrowanie do okienka **debugowania** > **okno dane wyjściowe** .
+
+## <a name="see-also"></a>Zobacz też
 - [Edytuj i Kontynuuj (C++)](../debugger/edit-and-continue-visual-cpp.md)

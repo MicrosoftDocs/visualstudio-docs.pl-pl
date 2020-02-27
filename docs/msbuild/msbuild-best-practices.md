@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1aee1a6ae3abc06846523df9470ad75d316a50b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d3605109519dccaafa1367464bd8c2385df5e93e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592090"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633424"
 ---
 # <a name="msbuild-best-practices"></a>Najlepsze rozwiązania dla programu MSBuild
+
 Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania skryptów programu MSBuild:
 
 - Domyślne wartości właściwości są najlepiej obsługiwane przy użyciu atrybutu `Condition`, a nie poprzez deklarowanie właściwości, której wartość domyślna może zostać przesłonięta w wierszu polecenia. Na przykład użyj
@@ -31,5 +32,6 @@ Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania
 
 - Unikaj symboli wieloznacznych podczas zaznaczania elementów. Zamiast tego należy jawnie określić pliki. Ułatwia to śledzenie błędów, które mogą wystąpić podczas dodawania lub usuwania plików.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

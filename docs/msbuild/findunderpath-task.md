@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33912df490b148c91c2a0d152f979bd6149d8ae3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4d97b727dcba8cd16fe97ee33764947797c36db7
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566075"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634139"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath — zadanie
+
 Określa, które elementy w określonej kolekcji elementów mają ścieżki, które znajdują się w lub poniżej określonego folderu.
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `FindUnderPath`.
 
 |Parametr|Opis|
@@ -40,9 +42,11 @@ W poniższej tabeli opisano parametry zadania `FindUnderPath`.
 |`UpdateToAbsolutePaths`|Opcjonalny parametr `Boolean`.<br /><br /> W przypadku wartości true ścieżki elementów wyjściowych są aktualizowane jako ścieżki bezwzględne.|
 
 ## <a name="remarks"></a>Uwagi
+
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład używa zadania `FindUnderPath`, aby określić, czy pliki zawarte w elemencie `MyFiles` mają ścieżki istniejące w ścieżce określonej przez właściwość `SearchPath`. Po zakończeniu zadania `FilesNotFoundInPath` element zawiera plik *plik1. txt* , a element `FilesFoundInPath` zawiera plik *plik2. txt* .
 
 ```xml
@@ -72,7 +76,8 @@ Poniższy przykład używa zadania `FindUnderPath`, aby określić, czy pliki za
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

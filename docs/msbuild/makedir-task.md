@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011cc16dd965b952aa382c46f01d09fcc41bc02e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592168"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633541"
 ---
 # <a name="makedir-task"></a>MakeDir — zadanie
+
 Tworzy katalogi i, w razie potrzeby, wszystkie katalogi nadrzędne.
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `MakeDir`.
 
 |Parametr|Opis|
@@ -37,9 +39,11 @@ W poniższej tabeli opisano parametry zadania `MakeDir`.
 |`DirectoriesCreated`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Katalogi, które są tworzone przez to zadanie. Jeśli nie można utworzyć niektórych katalogów, może to nie zawierać wszystkich elementów, które zostały przesłane do `Directories` parametru.|
 
 ## <a name="remarks"></a>Uwagi
+
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kodu używa zadania `MakeDir`, aby utworzyć katalog określony przez właściwość `OutputDirectory`.
 
 ```xml
@@ -57,6 +61,7 @@ Poniższy przykład kodu używa zadania `MakeDir`, aby utworzyć katalog określ
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

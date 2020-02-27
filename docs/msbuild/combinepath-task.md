@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a52e0d770a535b0fa7d29a379a7f6aba63e62d78
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 533f87eba9032efa7dc60ac682bbe400cb640727
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593346"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634438"
 ---
 # <a name="combinepath-task"></a>CombinePath — zadanie
-Łączy określone ścieżki w jedną ścieżkę.
 
+Łączy określone ścieżki w jedną ścieżkę.
 ## <a name="task-parameters"></a>Parametry zadania
+
  W poniższej tabeli opisano parametry [zadania CombinePath —](../msbuild/combinepath-task.md).
+
 
 |Parametr|Opis|
 |---------------|-----------------|
@@ -36,8 +38,10 @@ ms.locfileid: "75593346"
 |`CombinedPaths`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Połączona Ścieżka utworzona przez to zadanie.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

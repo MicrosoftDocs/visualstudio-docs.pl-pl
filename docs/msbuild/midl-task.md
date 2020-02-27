@@ -26,17 +26,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592155"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633476"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
+
 Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *MIDL. exe*. Aby uzyskać więcej informacji, zobacz [MIDL — dokumentacja wiersza polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
 ## <a name="parameters"></a>Parametry
+
  Poniżej opisano parametry zadania **MIDL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
 
 - **AdditionalIncludeDirectories**
@@ -91,7 +93,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |-----------|--------------------------|
     |**Opatrzon**|**/char podpisany**|
     |**Bajt**|**/char bez znaku**|
-    |**Ascii**|**/char ascii7**|
+    |**ASCII**|**/char ascii7**|
 
      Aby uzyskać więcej informacji, zobacz **/char** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -113,7 +115,7 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**Brak**|**/Error brak**|
+    |**Dawaj**|**/Error brak**|
     |**EnableCustom**|**/Error**|
     |**Wszystkie**|**/Error wszystko**|
 
@@ -169,8 +171,8 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**Brak**|**/Client brak**|
-    |**Stub**|**/Client**|
+    |**Dawaj**|**/Client brak**|
+    |**Szkieletu**|**/Client**|
 
      Aby uzyskać więcej informacji, zobacz **/Client** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -184,8 +186,8 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
-    |**Brak**|**/Server brak**|
-    |**Stub**|**/Server — stub**|
+    |**Dawaj**|**/Server brak**|
+    |**Szkieletu**|**/Server — stub**|
 
      Aby uzyskać więcej informacji, zobacz opcja **/Server** w [MIDL w wierszu polecenia](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -302,10 +304,10 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
     |**NotSet**|*\<brak >*|
-    |**1**|**/Zp1**|
+    |**1**|**/ZP1**|
     |**2**|**/Zp2**|
     |**4**|**/Zp4**|
-    |**8**|**/Zp8**|
+    |**8**|**/ZP8**|
 
      Aby uzyskać więcej informacji, zobacz **/ZP** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Opcja **/ZP** jest równoważna z opcją **/Pack** i starszą opcją **/align** .
 
@@ -336,9 +338,9 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
     |Wartość|Opcja wiersza polecenia|
     |-----------|--------------------------|
     |**NotSet**|*\<brak >*|
-    |**Win32**|**/ENV Win32**|
+    |**System**|**/ENV Win32**|
     |**Itanium**|**/ENV ia64**|
-    |**X64**|**/ENV x64**|
+    |**Procesorów**|**/ENV x64**|
 
      Aby uzyskać więcej informacji, zobacz **/ENV** opcji w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -415,5 +417,6 @@ Zawija narzędzie kompilatora Microsoft Interface Definition Language (MIDL), *M
 
      Aby uzyskać więcej informacji, zobacz opcja **/w** w [wierszu polecenia MIDL](/windows/desktop/Midl/midl-command-line-reference). Zobacz również parametr **warnaserror —** w tej tabeli.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

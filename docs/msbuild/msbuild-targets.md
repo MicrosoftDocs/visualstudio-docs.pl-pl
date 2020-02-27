@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593853"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633190"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 
@@ -31,7 +31,7 @@ Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają
 </Target>
 ```
 
- Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować elementy docelowe. Na przykład
+ Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować elementy docelowe. Na przykład:
 
 ```xml
 <Target Name="AfterBuild" >
@@ -68,7 +68,7 @@ Aby uzyskać szczegółowe informacje i uzyskać więcej informacji na temat doc
 
 ## <a name="target-batching"></a>Przetwarzanie wsadowe docelowe
 
-Element docelowy może mieć atrybut `Outputs`, który określa metadane w postaci%(\<metadanych >). W takim przypadku MSBuild uruchamia element docelowy raz dla każdej unikatowej wartości metadanych, grupując lub "wsadowe" elementy, które mają tę wartość metadanych. Na przykład
+Element docelowy może mieć atrybut `Outputs`, który określa metadane w postaci%(\<metadanych >). W takim przypadku MSBuild uruchamia element docelowy raz dla każdej unikatowej wartości metadanych, grupując lub "wsadowe" elementy, które mają tę wartość metadanych. Na przykład:
 
 ```xml
 <ItemGroup>
@@ -105,6 +105,7 @@ Reference: 4.0
  Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy, co znacznie zwiększa szybkość kompilacji. Jest to nazywane kompilacją przyrostową docelowej. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy bez aktualnych elementów. Ta nazwa jest nazywana częściową kompilacją przyrostową obiektu docelowego. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Domyślne cele kompilacji
+
 Poniżej wymieniono publiczne obiekty docelowe w Microsoft. Common. CurrentVersion. targets.
 
 ```
@@ -1011,7 +1012,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
     DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Instrukcje: użycie tego samego elementu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

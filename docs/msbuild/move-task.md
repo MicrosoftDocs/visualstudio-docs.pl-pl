@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8adfa75964959e2cce61779914a52f03319ed314
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592142"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633463"
 ---
 # <a name="move-task"></a>Move — Zadanie
+
 Przenosi pliki do nowej lokalizacji.
 
 ## <a name="parameters"></a>Parametry
+
  W tabeli następujące kwestie opisano parametry zadania `Move`.
 
 |Parametr|Opis|
@@ -38,12 +40,14 @@ Przenosi pliki do nowej lokalizacji.
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do przeniesienia.|
 
 ## <a name="remarks"></a>Uwagi
+
  Należy określić parametr `DestinationFolder` lub parametr `DestinationFiles`, ale nie oba jednocześnie. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
 
  Zadanie `Move` tworzy foldery wymagane dla żądanych plików docelowych.
 
  Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

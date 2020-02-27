@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77271174"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631162"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Przewodnik: Tworzenie zadania wbudowanego
+
 Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy implementującej interfejs <xref:Microsoft.Build.Framework.ITask>. Począwszy od .NET Framework w wersji 4, można tworzyć zadania w tekście w pliku projektu. Nie trzeba tworzyć oddzielnego zestawu, aby hostować zadanie. Aby uzyskać więcej informacji, zobacz [zadania wbudowane](../msbuild/msbuild-inline-tasks.md).
 
  W tym instruktażu pokazano, jak tworzyć i uruchamiać te zadania wbudowane:
@@ -40,13 +41,12 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 3. Użyj **okna wiersza polecenia** , aby skompilować projekt i przeanalizować wyniki.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Tworzenie i modyfikowanie projektu MSBuild
+
  System projektu programu Visual Studio jest oparty na programie MSBuild. W związku z tym można utworzyć plik projektu kompilacji przy użyciu programu Visual Studio. W tej sekcji utworzysz plik projektu wizualizacji C# . (Zamiast tego można utworzyć plik projektu Visual Basic. W kontekście tego samouczka różnica między dwoma plikami projektu jest niewielka.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>Aby utworzyć i zmodyfikować plik projektu
 
-1. W programie Visual Studio w menu **plik** kliknij pozycję **Nowy** , a następnie kliknij pozycję **projekt**.
-
-2. W oknie dialogowym **Nowy projekt** wybierz typ projektu **wizualizacji C#**  , a następnie wybierz szablon **aplikacji Windows Forms** . W polu **Nazwa** wpisz `InlineTasks`. Wpisz **lokalizację** rozwiązania, na przykład *D:\\* . Upewnij się, że wybrano opcję **Utwórz katalog dla rozwiązania** , pole wyboru **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** to **InlineTasks**.
+1. W programie Visual Studio Utwórz nowy projekt za pomocą C# szablonu **aplikacji Windows Forms** . W polu **Nazwa** wpisz `InlineTasks`. Wpisz **lokalizację** rozwiązania, na przykład *D:\\* . Upewnij się, że wybrano opcję **Utwórz katalog dla rozwiązania** , pole wyboru **Dodaj do kontroli źródła** jest wyczyszczone, a **Nazwa rozwiązania** to **InlineTasks**.
 
 3. Kliknij przycisk **OK** , aby utworzyć plik projektu.
 
@@ -57,6 +57,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
      Plik projektu pojawi się w edytorze kodu.
 
 ## <a name="add-a-basic-hello-task"></a>Dodaj podstawowe zadanie powitania
+
  Teraz Dodaj do pliku projektu podstawowe zadanie, które wyświetla komunikat "Hello, World!" Dodaj również domyślny obiekt docelowy TestBuild, aby wywołać zadanie.
 
 #### <a name="to-add-a-basic-hello-task"></a>Aby dodać podstawowe zadanie powitania
@@ -88,6 +89,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    Ten kod tworzy zadanie wbudowane o nazwie Hello i nie ma parametrów, odwołań ani dyrektyw `Using`. Zadanie Hello zawiera tylko jeden wiersz kodu, który wyświetla komunikat powitalny na domyślnym urządzeniu rejestrowania, zazwyczaj okno konsoli.
 
 ### <a name="run-the-hello-task"></a>Uruchamianie zadania powitania
+
  Uruchom program MSBuild przy użyciu **okna wiersza polecenia** , aby skonstruować zadanie powitania i przetworzyć obiekt docelowy TestBuild, który go wywołuje.
 
 ##### <a name="to-run-the-hello-task"></a>Aby uruchomić zadanie powitania
@@ -108,6 +110,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    Przez przemienne między edytorem kodu a **oknem wiersza polecenia**można zmienić plik projektu i szybko zobaczyć wyniki.
 
 ## <a name="define-the-echo-task"></a>Definiowanie zadania echo
+
  Utwórz zadanie wbudowane, które przyjmuje parametr String i wyświetla ciąg na domyślnym urządzeniu rejestrowania.
 
 #### <a name="to-define-the-echo-task"></a>Aby zdefiniować zadanie echo
@@ -139,6 +142,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    Ten kod definiuje zadanie wbudowane o nazwie echo i ma tylko jeden wymagany tekst parametru wejściowego. Domyślnie parametry są typu System. String. Wartość parametru tekstowego jest ustawiana, gdy obiekt docelowy TestBuild wywołuje zadanie echo.
 
 ## <a name="define-the-adder-task"></a>Definiowanie zadania dodającego
+
  Utwórz zadanie wbudowane, które dodaje dwa parametry całkowite i emituje ich sumę jako właściwość programu MSBuild.
 
 #### <a name="to-define-the-adder-task"></a>Aby zdefiniować zadanie dodające
@@ -175,6 +179,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
    Ten kod definiuje zadanie wbudowane o nazwie dodające i ma dwa wymagane parametry wejściowe Integer, a i B oraz jeden parametr wyjściowy Integer, C. Zadanie dodające dodaje dwa parametry wejściowe i zwraca sumę w parametrze danych wyjściowych. Suma jest emitowana jako właściwość programu MSBuild `Sum`. Wartości parametrów wejściowych są ustawiane, gdy obiekt docelowy TestBuild wywołuje zadanie dodające.
 
 ## <a name="define-the-regx-task"></a>Definiowanie zadania RegX
+
  Utwórz zadanie wbudowane, które akceptuje grupę elementów i wyrażenie regularne i zwraca listę wszystkich elementów, które mają zawartość pliku zgodną z wyrażeniem.
 
 #### <a name="to-define-the-regx-task"></a>Aby zdefiniować zadanie RegX
@@ -244,6 +249,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
   Wartość parametrów wejściowych ustawia się, gdy obiekt docelowy TestBuild wywołuje zadanie RegX. Zadanie RegX odczytuje każdy plik i zwraca listę plików, które pasują do wyrażenia regularnego. Ta lista jest zwracana jako parametr wyjściowy `Result`, który jest emitowany jako element MSBuild `MatchedFiles`.
 
 ### <a name="handle-reserved-characters"></a>Obsługa znaków zarezerwowanych
+
  Analizator MSBuild przetwarza zadania wbudowane jako XML. Znaki, które mają zarezerwowane znaczenie w formacie XML, na przykład "\<" i ">", są wykrywane i obsługiwane tak, jakby były XML, a nie kodem źródłowym platformy .NET. Aby uwzględnić zastrzeżone znaki w wyrażeniach kodu, takich jak `Files.Length > 0`, napisz element `Code`, tak aby jego zawartość była zawarta w wyrażeniu CDATA, w następujący sposób:
 
  ```xml
@@ -257,6 +263,7 @@ Aby utworzyć i uruchomić zadania, użyj programu Visual Studio i **okna wiersz
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Docelowe elementy](../msbuild/msbuild-targets.md)

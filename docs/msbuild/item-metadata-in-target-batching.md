@@ -12,20 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 013cf211fe9fdfb8fef07c5ac757fa5f4b35a521
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75577281"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633671"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadane elementu w partii docelowej
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ma możliwość przeprowadzenia analizy zależności w danych wejściowych i wyjściowych docelowej kompilacji. Jeśli okaże się, że dane wejściowe lub wyjściowe elementu docelowego są aktualne, element docelowy zostanie pominięty i kompilacja będzie kontynuowała pracę. `Target` elementy używają atrybutów `Inputs` i `Outputs`, aby określić elementy do sprawdzenia podczas analizy zależności.
 
-Jeśli obiekt docelowy zawiera zadanie, które używa wsadowych elementów jako danych wejściowych lub wyjściowych, element `Target` obiektu docelowego powinien użyć operacji wsadowych w `Inputs` lub `Outputs` atrybutów, aby umożliwić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pomijanie partii elementów, które są już aktualne.
+Program MSBuild ma możliwość przeprowadzenia analizy zależności w danych wejściowych i wyjściowych docelowej kompilacji. Jeśli okaże się, że dane wejściowe lub wyjściowe elementu docelowego są aktualne, element docelowy zostanie pominięty i kompilacja będzie kontynuowała pracę. `Target` elementy używają atrybutów `Inputs` i `Outputs`, aby określić elementy do sprawdzenia podczas analizy zależności.
+
+Jeśli obiekt docelowy zawiera zadanie, które używa wsadowych elementów jako danych wejściowych lub wyjściowych, element `Target` obiektu docelowego powinien użyć operacji wsadowych w atrybutach `Inputs` lub `Outputs`, aby umożliwić programowi MSBuild pomijanie partii elementów, które są już aktualne.
 
 ## <a name="batch-targets"></a>Cele partii
-Poniższy przykład zawiera listę elementów o nazwie `Res`, która jest podzielona na dwie partie na podstawie metadanych elementu `Culture`. Każda z tych partii jest przenoszona do zadania `AL`, które tworzy zestaw wyjściowy dla każdej partii. Za pomocą tworzenia pakietów wsadowych w atrybucie `Outputs` elementu `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może określić, czy każda z poszczególnych partii jest aktualna przed uruchomieniem obiektu docelowego. Bez używania tworzenia wsadowych obiektów docelowych obie partie elementów byłyby uruchamiane przez zadanie za każdym razem, gdy obiekt docelowy został wykonany.
+
+Poniższy przykład zawiera listę elementów o nazwie `Res`, która jest podzielona na dwie partie na podstawie metadanych elementu `Culture`. Każda z tych partii jest przenoszona do zadania `AL`, które tworzy zestaw wyjściowy dla każdej partii. Przy użyciu operacji wsadowych w atrybucie `Outputs` elementu `Target`, MSBuild może określić, czy każda z poszczególnych partii jest aktualna przed uruchomieniem obiektu docelowego. Bez używania tworzenia wsadowych obiektów docelowych obie partie elementów byłyby uruchamiane przez zadanie za każdym razem, gdy obiekt docelowy został wykonany.
 
 ```xml
 <Project
@@ -65,8 +67,9 @@ Poniższy przykład zawiera listę elementów o nazwie `Res`, która jest podzie
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)
-- [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md)
+- [Tworzenie partii](../msbuild/msbuild-batching.md)
 - [Target — element (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Metadane elementu w przetwarzaniu wsadowym zadań](../msbuild/item-metadata-in-task-batching.md)

@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576059"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633866"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Instrukcje: wykluczanie plików z kompilacji
+
 W pliku projektu można użyć symboli wieloznacznych, aby uwzględnić wszystkie pliki w jednym katalogu lub zagnieżdżony zestaw katalogów jako dane wejściowe dla kompilacji. Jednak może istnieć jeden plik w katalogu lub jeden katalog w zagnieżdżonym zestawie katalogów, które nie mają być uwzględniane jako dane wejściowe dla kompilacji. Można jawnie wykluczyć ten plik lub katalog z listy danych wejściowych. Może to być również plik w projekcie, który ma być uwzględniony tylko w określonych warunkach. Można jawnie zadeklarować warunki, w których plik jest uwzględniony w kompilacji.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Wyklucz plik lub katalog z danych wejściowych dla kompilacji
+
  Listy elementów są plikami wejściowymi dla kompilacji. Elementy, które mają zostać uwzględnione, są deklarowane osobno lub jako Grupa przy użyciu atrybutu `Include`. Na przykład:
 
 ```xml
@@ -76,6 +78,7 @@ W pliku projektu można użyć symboli wieloznacznych, aby uwzględnić wszystki
     > Należy określić ścieżkę dla obu atrybutów. Jeśli ścieżka bezwzględna jest używana do określania lokalizacji plików w atrybucie `Include`, należy również użyć ścieżki bezwzględnej w atrybucie `Exclude`; Jeśli używasz ścieżki względnej w atrybucie `Include`, należy również użyć ścieżki względnej w atrybucie `Exclude`.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Użyj warunków, aby wykluczyć plik lub katalog z danych wejściowych dla kompilacji
+
  Jeśli istnieją jakieś elementy, które mają zostać uwzględnione, na przykład w kompilacji debugowania, ale nie w kompilacji wydania, można użyć atrybutu `Condition`, aby określić warunki, w których ma zostać uwzględniony element.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Aby dołączyć plik *Formula. vb* tylko w kompilacjach wydania
@@ -89,6 +92,7 @@ W pliku projektu można użyć symboli wieloznacznych, aby uwzględnić wszystki
     ```
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu kompiluje projekt ze wszystkimi plikami *CS* w katalogu, z wyjątkiem *Form2.cs*.
 
 ```xml
@@ -122,7 +126,8 @@ W pliku projektu można użyć symboli wieloznacznych, aby uwzględnić wszystki
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Elementy](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Instrukcje: Wybieranie plików do skompilowania](../msbuild/how-to-select-the-files-to-build.md)

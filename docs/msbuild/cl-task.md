@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c45f22011c32378af0690c9aee226877faf903bd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593359"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634464"
 ---
 # <a name="cl-task"></a>CL — Zadanie
+
 Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy pliki wykonywalne ( *. exe*), pliki bibliotek dołączanych dynamicznie (*dll*) lub moduły kodu ( *. module*). Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options).
 
 ## <a name="parameters"></a>Parametry
+
  Na poniższej liście opisano parametry zadania **CL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
 
 - **AdditionalIncludeDirectories**
@@ -84,7 +86,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **AssemblyAndMachineCode** -  **/FAc**
 
-  - **AssemblyAndSourceCode** -  **/FAs**
+  - **AssemblyAndSourceCode** -  **/FAS**
 
   - **Wszystkie** -  **/FACS**
 
@@ -148,9 +150,9 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **Cdecl** -  **/GD**
 
-  - **FastCall** -                           **/Gr**
+  - **FastCall** -                           **/gr**
 
-  - **StdCall** -                           **/Gz**
+  - **StdCall** -                           **/GZ**
 
     Aby uzyskać więcej informacji, zobacz [/GD,/gr,/GV,/GZ (Konwencja wywoływania)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
@@ -178,15 +180,15 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **wartość false** - *nie\<*
+  - **wartość false** - *nie\<>*
 
-  - **true** -  **/clr**
+  - **prawda** -  **/CLR**
 
   - **Czysty** -  **/CLR: Pure**
 
-  - **Safe** -  **/clr:safe**
+  - **Bezpieczny** -  **/CLR: Safe**
 
-  - **OldSyntax** -  **/clr:oldSyntax**
+  - **OldSyntax** -  **/CLR: oldSyntax**
 
     Aby uzyskać więcej informacji, zobacz [/CLR (Kompilacja środowiska uruchomieniowego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -210,7 +212,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **ProgramDatabase** -  **/Zi**
 
-  - **EditAndContinue** -  **/ZI**
+  - **EditAndContinue** -  **/Zi**
 
     Aby uzyskać więcej informacji, zobacz [/Z7,/Zi,/ZI (format informacji o debugowaniu)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 
@@ -272,7 +274,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **Monituj** -  **/errorReport: Prompt**
 
-  - **Queue** -  **/errorReport:queue**
+  - **Kolejka** -  **/errorReport: Queue**
 
   - **Wyślij** -  **/errorReport: Send**
 
@@ -286,13 +288,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **wartość false** - *nie\<*
+  - **wartość false** - *nie\<>*
 
-  - **Async** -  **/EHa**
+  - **/EHa** **Async** - 
 
-  - **Sync** -  **/EHsc**
+  - **Synchronizuj** -  **/EHsc**
 
-  - **SyncCThrow** -  **/EHs**
+  - **SyncCThrow** -  **/EHS**
 
     Aby uzyskać więcej informacji, zobacz [/EH (model obsługi wyjątków)](/cpp/build/reference/eh-exception-handling-model).
 
@@ -340,7 +342,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **Strict** -  **/FP: Strict**
 
-  - **Fast** -  **/fp:fast**
+  - **Szybka** -  **/FP: szybka**
 
     Aby uzyskać więcej informacji, zobacz [/FP (Określ zachowanie zmiennoprzecinkowe)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
@@ -404,7 +406,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **Wyłączone** -  **/Ob0**
 
-  - **OnlyExplicitInline** -  **/Ob1**
+  - **OnlyExplicitInline** -  **/OB1**
 
   - **AnySuitable** -  **/Ob2**
 
@@ -486,7 +488,7 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
   - **MaxSpeed** -  **/O2**
 
-  - **Full** -  **/Ox**
+  - **Pełny** -  **/OX**
 
     Aby uzyskać więcej informacji, zobacz [/O opcje (Optymalizuj kod)](/cpp/build/reference/o-options-optimize-code).
 
@@ -590,13 +592,13 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **MultiThreaded** -  **/MT**
+  - **Wielowątkowe** -  **/MT**
 
-  - **MultiThreadedDebug** -  **/MTd**
+  - **MultiThreadedDebug** -  **/MTD**
 
   - **MultiThreadedDLL** -  **/MD**
 
-  - **MultiThreadedDebugDLL** -  **/MDd**
+  - **MultiThreadedDebugDLL** -  **/MDD**
 
     Aby uzyskać więcej informacji, zobacz [/MD,/MT,/LD (Korzystanie z biblioteki wykonawczej)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
@@ -646,15 +648,15 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
 
-  - **Default** -  **/Zp1**
+  - **Domyślne** -  **/ZP1**
 
-  - **1Byte** -  **/Zp1**
+  - **1Byte** -  **/ZP1**
 
   - **2Bytes** -  **/Zp2**
 
   - **4Bytes** -  **/Zp4**
 
-  - **8Bytes** -  **/Zp8**
+  - **8Bytes** -  **/ZP8**
 
   - **16Bytes** -  **/Zp16**
 
@@ -800,5 +802,6 @@ Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy 
 
    Aby uzyskać więcej informacji, zobacz parametry **TLogReadFiles** i **TLogWriteFiles** w tej tabeli.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

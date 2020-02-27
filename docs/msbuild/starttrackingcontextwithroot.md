@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b48529f82a908ea765151561a71c58cd2c7bc5
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578418"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632098"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
+
 Uruchamia kontekst śledzenia przy użyciu pliku odpowiedzi określającego znacznik główny.
 
 ## <a name="syntax"></a>Składnia
@@ -32,6 +33,7 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```
 
 #### <a name="parameters"></a>Parametry
+
 [in] `intermediateDirectory`
 
  Katalog, w którym ma być przechowywany dziennik śledzenia.
@@ -45,10 +47,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  Nazwa ścieżki pliku odpowiedzi zawierającego znacznik główny. Nazwa główna służy do grupowania wszystkich śledzenia dla kontekstu.
 
 ## <a name="return-value"></a>Wartość zwracana
+
  **Wynik HRESULT** z **pomyślnym** bitem ustawionym w przypadku utworzenia kontekstu śledzenia.
 
 ## <a name="requirements"></a>Wymagania
+
  **Nagłówek:** *FileTracker. h*
 
 ## <a name="see-also"></a>Zobacz też
+
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

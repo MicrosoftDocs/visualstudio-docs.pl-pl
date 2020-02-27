@@ -22,20 +22,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590478"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634256"
 ---
 # <a name="downloadfile-task"></a>DownloadFile, zadanie
+
 Pobiera określone pliki przy użyciu protokołu HTTP (Hyper-Text Transfer Protocol).
 
 >[!NOTE]
 >Zadanie DownloadFile jest dostępne tylko w programie MSBuild 15,8 i nowszych wersjach.
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `DownloadFile`.
 
 |Parametr|Opis|
@@ -49,9 +51,11 @@ W poniższej tabeli opisano parametry zadania `DownloadFile`.
 |`SourceUrl`|Wymagany `String` parametr.<br /><br /> Określa adres URL do pobrania.|
 
 ## <a name="remarks"></a>Uwagi
+
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład pobiera plik i dołącza go do `Content` elementów przed skompilowaniem projektu.
 
 ```xml
@@ -72,6 +76,7 @@ Poniższy przykład pobiera plik i dołącza go do `Content` elementów przed sk
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

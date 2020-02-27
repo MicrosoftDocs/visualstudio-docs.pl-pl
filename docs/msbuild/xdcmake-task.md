@@ -19,22 +19,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 797a2f80c4e634b3dcb3b0fa32c46476e32cc334
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 3c41bfc2015f29cbb73b33df3594b3a3430af3f3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578117"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630655"
 ---
 # <a name="xdcmake-task"></a>XDCMake — Zadanie
+
 Zawija narzędzie dokumentacji XML (*xdcmake. exe*), które scala pliki komentarzy dokumentów XML ( *. xdc*) w pliku *. XML* .
 
  Plik *. xdc* jest tworzony podczas dostarczania komentarzy do dokumentacji w kodzie C++ źródłowym i kompilowania przy użyciu opcji kompilatora [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) . Aby uzyskać więcej informacji, zobacz [odwołania xdcmake](/cpp/build/reference/xdcmake-reference), [strony właściwości narzędzia generatora dokumentów XML](/cpp/build/reference/xml-document-generator-tool-property-pages)i opcji pomocy wiersza polecenia ( **/?** ) dla *xdcmake. exe*.
 
 ## <a name="remarks"></a>Uwagi
+
  Domyślnie narzędzie *xdcmake. exe* obsługuje kilka opcji wiersza polecenia. Dodatkowe opcje są obsługiwane w przypadku określenia opcji wiersza polecenia **/Old** .
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania **xdcmake** .
 
 |Parametr|Opis|
@@ -50,4 +53,5 @@ Zawija narzędzie dokumentacji XML (*xdcmake. exe*), które scala pliki komentar
 |**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog dziennika śledzenia.|
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

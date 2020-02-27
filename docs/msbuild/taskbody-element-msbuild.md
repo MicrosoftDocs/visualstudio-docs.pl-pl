@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 45b255f782390cfc478ac2f7bce58170e4e2b268
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594984"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631851"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody —, element (MSBuild)
+
 Zawiera dane, które są przesyłane do `TaskFactory``UsingTask`. Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project > \<UsingTask > \<TaskBody — >
@@ -35,9 +36,10 @@ Zawiera dane, które są przesyłane do `TaskFactory``UsingTask`. Aby uzyskać w
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -53,9 +55,10 @@ Zawiera dane, które są przesyłane do `TaskFactory``UsingTask`. Aby uzyskać w
 
 | Element | Opis |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Zapewnia sposób rejestrowania zadań w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. W projekcie może istnieć co najmniej zero elementów `UsingTask`. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Zapewnia sposób rejestrowania zadań w programie MSBuild. W projekcie może istnieć co najmniej zero elementów `UsingTask`. |
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład pokazuje, jak używać elementu `TaskBody` z atrybutem `Evaluate`.
 
 ```xml
@@ -71,7 +74,8 @@ Zawiera dane, które są przesyłane do `TaskFactory``UsingTask`. Aby uzyskać w
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

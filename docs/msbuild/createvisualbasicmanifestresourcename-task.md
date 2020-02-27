@@ -16,32 +16,36 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636cd4a7d287f60235f3827837050efa1e15eb90
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6aa419001d2e890c87873862f0575607b31d22c2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596921"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634295"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName — zadanie
-Tworzy nazwę manifestu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]w stylu na podstawie danej nazwy pliku *resx* lub innego zasobu.
+
+Tworzy nazwę manifestu Visual Basic w stylu na podstawie danej nazwy pliku *resx* lub innego zasobu.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry [zadania CreateVisualBasicManifestResourceName —](../msbuild/createvisualbasicmanifestresourcename-task.md).
 
 | Parametr | Opis |
 | - | - |
 | `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` wyjściowego parametru tylko do odczytu.<br /><br /> Nazwy manifestów. |
-| `ResourceFiles` | Wymagany `String` parametr.<br /><br /> Nazwa pliku zasobów, z którego ma zostać utworzona Nazwa manifestu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. |
+| `ResourceFiles` | Wymagany `String` parametr.<br /><br /> Nazwa pliku zasobów, z którego ma zostać utworzona Nazwa manifestu Visual Basic. |
 | `RootNamespace` | Opcjonalny parametr `String`.<br /><br /> Główna przestrzeń nazw pliku zasobów, zazwyczaj pobierana z pliku projektu. Może być `null`. |
 | `PrependCultureAsDirectory` | Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, nazwa kultury zostanie dodana jako nazwa katalogu tuż przed nazwą zasobu manifestu. Wartość domyślna to `true`. |
 | `ResourceFilesWithManifestResourceNames` | Opcjonalny parametr wyjściowy `String` tylko do odczytu.<br /><br /> Zwraca nazwę pliku zasobu, który zawiera teraz nazwę zasobu manifestu. |
 
 ## <a name="remarks"></a>Uwagi
+
  [Zadanie CreateVisualBasicManifestResourceName —](../msbuild/createvisualbasicmanifestresourcename-task.md) określa odpowiednią nazwę zasobu manifestu, która ma zostać przypisana do danego pliku *resx* lub innego zasobu. Zadanie zawiera nazwę logiczną pliku zasobów, a następnie dołącza ją do parametru wyjściowego jako metadane.
 
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

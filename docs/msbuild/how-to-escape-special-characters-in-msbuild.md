@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f9958ae93e2605ad3c89decb4ac9fabc18102148
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595010"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633879"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Instrukcje: znaki specjalne ucieczki w MSBuild
 
-Niektóre znaki mają specjalne znaczenie w plikach projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Przykłady znaków obejmują średnika (`;`) i gwiazdki (`*`). Aby uzyskać pełną listę tych znaków specjalnych, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).
+Niektóre znaki mają specjalne znaczenie w plikach projektu MSBuild. Przykłady znaków obejmują średnika (`;`) i gwiazdki (`*`). Aby uzyskać pełną listę tych znaków specjalnych, zobacz [znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md).
 
 Aby można było używać tych znaków specjalnych jako literałów w pliku projektu, muszą one być określone przy użyciu składni `%<xx>`, gdzie `<xx>` reprezentuje szesnastkową wartość ASCII znaku.
 
@@ -34,7 +34,7 @@ Przykład, gdzie są używane znaki specjalne, znajduje się w `Include` atrybuc
 <Compile Include="MyFile.cs;MyClass.cs"/>
 ```
 
-Jeśli chcesz zadeklarować element, który zawiera średnik w nazwie, należy użyć składni `%<xx>`, aby wyjść z średnika i uniemożliwić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deklaracji dwóch oddzielnych elementów. Na przykład poniższy element wyprowadza średnik i deklaruje jeden element o nazwie `MyFile.cs;MyClass.cs`.
+Jeśli chcesz zadeklarować element, który zawiera średnik w nazwie, należy użyć składni `%<xx>`, aby wyjść z średnika i uniemożliwić programowi MSBuild deklarowanie dwóch oddzielnych elementów. Na przykład poniższy element wyprowadza średnik i deklaruje jeden element o nazwie `MyFile.cs;MyClass.cs`.
 
 ```xml
 <Compile Include="MyFile.cs%3BMyClass.cs"/>
@@ -50,7 +50,7 @@ Do ciągów ucieczki można także użyć [funkcji właściwości](../msbuild/pr
 
 Użyj `%<xx>` notacji zamiast znaku specjalnego, gdzie `<xx>` reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (`*`) jako znaku literału, użyj `%2A`wartości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Elementy](../msbuild/msbuild-items.md)

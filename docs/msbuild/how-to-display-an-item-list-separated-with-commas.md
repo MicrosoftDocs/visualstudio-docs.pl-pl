@@ -11,18 +11,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596336"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633905"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami
-Podczas pracy z listami elementów w [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), czasami warto wyświetlić zawartość tych list elementów w sposób łatwy do odczytania. Można też mieć zadanie, które pobiera listę elementów oddzielonych od specjalnego ciągu separatora. W obu tych przypadkach można określić ciąg separatora dla listy elementów.
+
+Podczas pracy z listami elementów w Microsoft Build Engine (MSBuild), czasami warto wyświetlić zawartość tych list elementów w sposób łatwy do odczytania. Można też mieć zadanie, które pobiera listę elementów oddzielonych od specjalnego ciągu separatora. W obu tych przypadkach można określić ciąg separatora dla listy elementów.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Oddziel elementy na liście przecinkami
-Domyślnie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa średników do rozdzielania elementów na liście. Rozważmy na przykład element `Message` z następującą wartością:
+
+Domyślnie program MSBuild używa średników do rozdzielania elementów na liście. Rozważmy na przykład element `Message` z następującą wartością:
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
@@ -43,6 +45,7 @@ Separator może być pojedynczym znakiem lub ciągiem i musi być ujęty w cudzy
     `@(TXTFile, ', ')`
 
 ## <a name="example"></a>Przykład
+
 W tym przykładzie zadanie [exec](../msbuild/exec-task.md) uruchamia narzędzie findstr, aby znaleźć określone ciągi tekstowe w pliku, retexts *. txt*. W poleceniu findstr ciągi wyszukiwania literału są wskazywane przez przełącznik **-c:** , więc separator elementu `-c:` jest wstawiany między elementami na liście `@(Phrase)` elementów.
 
 W tym przykładzie równoważne polecenie wiersza polecenia to:
@@ -66,6 +69,7 @@ W tym przykładzie równoważne polecenie wiersza polecenia to:
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)

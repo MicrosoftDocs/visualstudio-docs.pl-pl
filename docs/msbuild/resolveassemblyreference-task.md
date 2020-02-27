@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fcd289f5258fde7ae8f17a9e19a25427fe6885
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b79bd8eb3f7d813e3acd091ce5f2ffbc7b3eeb49
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77278357"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632761"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference — zadanie
+
 Określa wszystkie zestawy, które są zależne od określonych zestawów, w tym drugi i `n`zależności kolejności.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `ResolveAssemblyReference`.
 
 |Parametr|Opis|
@@ -78,6 +80,7 @@ Określa wszystkie zestawy, które są zależne od określonych zestawów, w tym
 |`TargetProcessorArchitecture`|Opcjonalny parametr `String`.<br /><br /> Preferowana docelowa architektura procesora. Służy do rozpoznawania odwołań do globalnej pamięci podręcznej zestawów (GAC).<br /><br /> Ten parametr może mieć wartość `x86`, `IA64`lub `AMD64`.<br /><br /> Jeśli ten parametr nie jest obecny, zadanie najpierw traktuje zestawy zgodne z architekturą aktualnie uruchomionego procesu. Jeśli zestaw nie zostanie znaleziony, oznacza to, że zadanie traktuje zestawy w pamięci podręcznej, które mają `ProcessorArchitecture` wartość `MSIL` lub brak wartości `ProcessorArchitecture`.|
 
 ## <a name="warnings"></a>Ostrzeżenia
+
  Rejestrowane są następujące ostrzeżenia:
 
 - `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
@@ -101,8 +104,10 @@ Określa wszystkie zestawy, które są zależne od określonych zestawów, w tym
 - `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

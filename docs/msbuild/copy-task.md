@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558163"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634373"
 ---
 # <a name="copy-task"></a>Copy — Zadanie
+
 Kopiowanie plików do nowej lokalizacji w systemie plików.
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `Copy`.
 
 |Parametr|Opis|
@@ -47,6 +49,7 @@ W poniższej tabeli opisano parametry zadania `Copy`.
 |`UseHardlinksIfPossible`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli ma wartość `true`, będą tworzone twarde łącza do kopiowanych plików zamiast kopiowania plików.|
 
 ## <a name="warnings"></a>Ostrzeżenia
+
 Ostrzeżenia są rejestrowane, w tym:
 
 - `Copy.DestinationIsDirectory`
@@ -66,11 +69,13 @@ Ostrzeżenia są rejestrowane, w tym:
 - `Copy.RemovingReadOnlyAttribute`
 
 ## <a name="remarks"></a>Uwagi
+
 Musi być określony parametr `DestinationFolder` lub `DestinationFiles`, ale nie oba. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
 
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład kopiuje elementy w kolekcji elementów `MySourceFiles` do folderu *c:\MyProject\Destination*.
 
 ```xml
@@ -91,6 +96,7 @@ Poniższy przykład kopiuje elementy w kolekcji elementów `MySourceFiles` do fo
 ```
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt kopiuje wszystkie pliki cyklicznie z *c:\MySourceTree* do *c:\MyDestinationTree*przy zachowaniu struktury katalogów.
 
 ```xml
@@ -111,5 +117,6 @@ Poniższy przykład ilustruje, jak wykonać kopiowanie cykliczne. Ten projekt ko
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

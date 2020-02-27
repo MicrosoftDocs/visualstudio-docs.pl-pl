@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd62738a89b38adb6cd01d6a33d661e95144d34
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bc50379563a85ce9c76f3d45b9d70c1f784eaf5a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565269"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631253"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask, element (MSBuild)
+
 Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-element-msbuild.md) , do zestawu, który zawiera implementację zadania.
 
  \<Project > \<UsingTask >
@@ -43,9 +44,10 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
 > W przeciwieństwie do właściwości i elementów, zostanie użyty *pierwszy* `UsingTask` element, który ma zastosowanie do `TaskName`; Aby zastąpić zadania, należy zdefiniować nowe `UsingTask` *przed* istniejącym.
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -59,16 +61,17 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
 
 |Element|Opis|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Zestaw parametrów, które są wyświetlane w zadaniu wygenerowanym przez określony `TaskFactory`.|
-|[Zadanie](../msbuild/task-element-msbuild.md)|Dane, które są przesyłane do `TaskFactory` w celu wygenerowania wystąpienia zadania.|
+|[ParameterGroup —](../msbuild/parametergroup-element.md)|Zestaw parametrów, które są wyświetlane w zadaniu wygenerowanym przez określony `TaskFactory`.|
+|[Zadanie podrzędne](../msbuild/task-element-msbuild.md)|Dane, które są przesyłane do `TaskFactory` w celu wygenerowania wystąpienia zadania.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
+
  Zmienne środowiskowe, właściwości wiersza polecenia, właściwości na poziomie projektu i elementy na poziomie projektu mogą być przywoływane w `UsingTask` elementów zawartych w pliku projektu bezpośrednio lub za pomocą zaimportowanego pliku projektu. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
@@ -77,6 +80,7 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
  W programie MSBuild 4,0 przy użyciu zadań można ładować z plików *. overridetask* .
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład pokazuje, jak używać elementu `UsingTask` z atrybutem `AssemblyName`.
 
 ```xml
@@ -93,6 +97,7 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
 ```
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład pokazuje, jak używać elementu `UsingTask` z atrybutem `AssemblyFile`.
 
 ```xml
@@ -100,7 +105,8 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

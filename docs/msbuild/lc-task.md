@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86525b2c4ddcf36ca85feee31f89f0003f1f9775
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8cea0ca4e6562ccc626bf52ad74dfa75b4f118f9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590829"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633606"
 ---
 # <a name="lc-task"></a>LC — Zadanie
+
 Zawija program *LC. exe*, który generuje plik *licencji* z pliku *. licx* . Aby uzyskać więcej informacji na temat *LC. exe*, zobacz [LC. exe (kompilator licencji)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `LC`.
 
 |Parametr|Opis|
@@ -44,6 +46,7 @@ W poniższej tabeli opisano parametry zadania `LC`.
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.ToolTask>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład używa zadania `LC` do kompilowania licencji.
 
 ```xml
@@ -66,6 +69,7 @@ Poniższy przykład używa zadania `LC` do kompilowania licencji.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

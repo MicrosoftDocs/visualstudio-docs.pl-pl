@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d34d8edca64987f9b6c4648bef1f239aca4d5ba
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 873783196a3eebdaca9cc4278b091e084c1488b0
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594945"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631656"
 ---
 # <a name="touch-task"></a>Touch — Zadanie
+
 Ustawia czasy dostępu i modyfikacji plików.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `Touch`.
 
 |Parametr|Opis|
@@ -40,9 +42,11 @@ Ustawia czasy dostępu i modyfikacji plików.
 |`TouchedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera kolekcję elementów, które zostały pomyślnie naruszone.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład używa zadania `Touch`, aby zmienić czasy dostępu i modyfikacji plików określonych w kolekcji `Files` elementów i umieszcza listę pomyślnie naruszonych plików w kolekcji `FilesTouched` elementów.
 
 ```xml
@@ -63,6 +67,7 @@ Ustawia czasy dostępu i modyfikacji plików.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

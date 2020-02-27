@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2ddf970225d96291f76935838a743ba358eff0f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594880"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633086"
 ---
 # <a name="onerror-element-msbuild"></a>OnError — element (MSBuild)
+
 Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut `ContinueOnError` jest `false` dla zadania zakończonego niepowodzeniem.
 
  \<Project > \<Target > \<OnError >
@@ -38,9 +39,10 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut 
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -48,21 +50,24 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut 
 |`ExecuteTargets`|Atrybut wymagany.<br /><br /> Elementy docelowe do wykonania, jeśli zadanie zakończy się niepowodzeniem. Rozdziel wiele obiektów docelowych średnikami. Wiele obiektów docelowych jest wykonywanych w określonej kolejności.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
+
  Brak.
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Cel](../msbuild/target-element-msbuild.md) | Element kontenera dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadań. |
+| [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Element kontenera zadań programu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykonuje `OnError` elementu, jeśli jeden z zadań elementu `Target` nie powiedzie się z atrybutem `ContinueOnError` ustawionym na `ErrorAndStop` (lub `false`). Gdy zadanie nie powiedzie się, obiekty docelowe określone w atrybucie `ExecuteTargets` są wykonywane. Jeśli obiekt docelowy zawiera więcej niż jeden element `OnError`, elementy `OnError` są wykonywane sekwencyjnie, gdy zadanie zakończy się niepowodzeniem.
+
+ MSBuild wykonuje element `OnError`, jeśli jeden z zadań elementu `Target` nie powiedzie się z atrybutem `ContinueOnError` ustawionym na `ErrorAndStop` (lub `false`). Gdy zadanie nie powiedzie się, obiekty docelowe określone w atrybucie `ExecuteTargets` są wykonywane. Jeśli obiekt docelowy zawiera więcej niż jeden element `OnError`, elementy `OnError` są wykonywane sekwencyjnie, gdy zadanie zakończy się niepowodzeniem.
 
  Aby uzyskać informacje o atrybucie `ContinueOnError`, zobacz [element Task (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o celach, zobacz [targets](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Przykład
- Poniższy kod wykonuje zadania `TaskOne` i `TaskTwo`. Jeśli `TaskOne` nie powiedzie się, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] oblicza element `OnError` i wykonuje obiekt docelowy `OtherTarget`.
+
+ Poniższy kod wykonuje zadania `TaskOne` i `TaskTwo`. Jeśli `TaskOne` nie powiedzie się, MSBuild ocenia element `OnError` i wykonuje element docelowy `OtherTarget`.
 
 ```xml
 <Target Name="ThisTarget">
@@ -74,6 +79,7 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut 
 </Target>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Docelowe elementy](../msbuild/msbuild-targets.md)

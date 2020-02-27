@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f808c14b8459abfb3bf9c531cfff496932836c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d17dde15fdfcc00890338eadf603f02352697363
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566361"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631877"
 ---
 # <a name="task-element-msbuild"></a>Task — element (MSBuild)
-Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Nazwa elementu jest określana na podstawie nazwy tworzonego zadania.
+
+Tworzy i wykonuje wystąpienie zadania programu MSBuild. Nazwa elementu jest określana na podstawie nazwy tworzonego zadania.
 
  \<projekt > \<docelowy >
 
@@ -39,9 +40,10 @@ Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -53,20 +55,22 @@ Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/
 
 |Element|Opis|
 |-------------|-----------------|
-|[Output](../msbuild/output-element-msbuild.md)|Przechowuje dane wyjściowe z zadania w pliku projektu. W zadaniu może istnieć co najmniej zero elementów `Output`.|
+|[Dane wyjściowe](../msbuild/output-element-msbuild.md)|Przechowuje dane wyjściowe z zadania w pliku projektu. W zadaniu może istnieć co najmniej zero elementów `Output`.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Cel](../msbuild/target-element-msbuild.md) | Element kontenera dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadań. |
+| [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Element kontenera zadań programu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
- Element `Task` w pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tworzy wystąpienie zadania, ustawia jego właściwości i wykonuje je. Element `Output` przechowuje parametry wyjściowe we właściwościach lub elementach, które mają być używane w innym miejscu w pliku projektu.
+
+ Element `Task` w pliku projektu MSBuild tworzy wystąpienie zadania, ustawia jego właściwości i wykonuje je. Element `Output` przechowuje parametry wyjściowe we właściwościach lub elementach, które mają być używane w innym miejscu w pliku projektu.
 
  Jeśli w elemencie nadrzędnym `Target` zadania znajdują się jakiekolwiek elementy z [błędami](../msbuild/onerror-element-msbuild.md) , będą one nadal oceniane, jeśli zadanie zakończy się niepowodzeniem, a `ContinueOnError` ma wartość `false`. Aby uzyskać więcej informacji o zadaniach, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu tworzy wystąpienie klasy [zadania CSC](../msbuild/csc-task.md) , ustawia sześć właściwości i wykonuje zadanie. Po wykonaniu wartość właściwości `OutputAssembly` obiektu jest umieszczana w liście elementów o nazwie `FinalAssemblyName`.
 
 ```xml
@@ -83,7 +87,8 @@ Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/
 </Target>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

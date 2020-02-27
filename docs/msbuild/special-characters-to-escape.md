@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686640cbe3c93cbe3d938cd3025a77129c829bd7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d1b17ded468e262d4f636ed5494081adab7b8c5f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595114"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632254"
 ---
 # <a name="special-characters-to-escape"></a>Znaki specjalne do wyjścia
+
 Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znaczenie w kontekście, w którym są używane. Na przykład gwiazdka (*) jest znakiem specjalnym tylko w atrybutach "include" i "exclude" definicji elementu lub w wywołaniu <xref:Microsoft.Build.Tasks.CreateItem>. We wszystkich innych przypadkach gwiazdka jest traktowana jako literał gwiazdki. Mimo że nie ma potrzeby ucieczki gwiazdek w plikach projektu, nie jest to szkodliwe.
 
  Użyj notacji%\<XX > zamiast znaku specjalnego, gdzie \<XX > reprezentuje wartość szesnastkową znaku ASCII. Na przykład, aby użyć gwiazdki (*) jako znaku literału, użyj wartości `%2A`.
@@ -36,7 +37,7 @@ Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znacze
 |$|Znak dolara używany do odwoływania się do właściwości.|
 |@|Znak używany do odwoływania się do list elementów.|
 |(|Otwórz nawias, używany na listach.|
-|).|Nawias zamykający używany na listach.|
+|)|Nawias zamykający używany na listach.|
 |;|Średnik, separator listy.|
 |?|Znak zapytania, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|
 |*|Gwiazdka, symbol wieloznaczny podczas opisywania specyfikacji pliku w sekcji dołączania/wykluczania elementu.|
@@ -44,6 +45,7 @@ Znaki specjalne muszą być wyprowadzane tylko wtedy, gdy mają specjalne znacze
 > [!NOTE]
 > W niektórych scenariuszach może zajść potrzeba ucieczki znaków podwójnego cudzysłowu ("), na przykład podczas korzystania z zadania `Exec`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Instrukcje: znaki specjalne ucieczki w MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

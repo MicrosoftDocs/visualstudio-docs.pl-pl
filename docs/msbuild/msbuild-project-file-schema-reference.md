@@ -15,24 +15,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a0ef3fc6fe446ccda5479c95301d71efa84be4
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 4f8a59349540492cd441f1eb3fa63ed520c0e8cd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557804"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633281"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Odwołanie do schematu pliku projektu MSBuild
 
-Zawiera tabelę zawierającą wszystkie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementy schematu XML z ich dostępnymi atrybutami i elementami podrzędnymi.
+Zawiera tabelę zawierającą wszystkie elementy schematu XML programu MSBuild z ich dostępnymi atrybutami i elementami podrzędnymi.
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] używa plików projektu do nakazuje aparatowi kompilacji, co należy skompilować, i jak go skompilować. pliki projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] są plikami XML, które są zgodne ze schematem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML. Ta sekcja dokumentuje plik definicji schematu XML (*XSD*) dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ MSBuild używa plików projektu, aby poinstruować aparat kompilacji, co należy skompilować i jak go skompilować. Pliki projektów programu MSBuild są plikami XML, które są zgodne ze schematem XML programu MSBuild. Ta sekcja dokumentuje plik definicji schematu XML (*XSD*) dla programu MSBuild.
 
 W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w pliku projektu programu MSBuild. Jeśli jest obecny, należy ` http://schemas.microsoft.com/developer/msbuild/2003` niezależnie od wersji programu Visual Studio.
 
 ## <a name="msbuild-xml-schema-elements"></a>Elementy schematu XML programu MSBuild
 
- W poniższej tabeli wymieniono wszystkie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] elementy schematu XML wraz z ich elementami i atrybutami podrzędnymi.
+ W poniższej tabeli wymieniono wszystkie elementy schematu XML programu MSBuild wraz z ich elementami i atrybutami podrzędnymi.
 
 |Element|Elementy podrzędne|Atrybuty|
 |-------------|--------------------|----------------|

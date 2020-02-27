@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595153"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632566"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Rozwiązywanie zestawów w czasie projektowania
+
 Po dodaniu odwołania do zestawu za pośrednictwem karty **.NET** okna dialogowego **Dodaj odwołanie** , odwołanie wskazuje do pośredniego zestawu odwołania; oznacza to, że zestaw, który zawiera wszystkie informacje o typie i podpisie, ale niekoniecznie zawiera kod. Karta **.NET** zawiera listę zestawów referencyjnych, które odpowiadają zestawom środowiska uruchomieniowego w .NET Framework. Ponadto zawiera listę zestawów referencyjnych, które odpowiadają zestawom środowiska uruchomieniowego w zarejestrowanych folderach AssemblyFoldersEx, które są używane przez inne firmy.
 
 ## <a name="multi-targeting"></a>Wiele elementów docelowych
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] pozwala docelować wersje .NET Framework, które są uruchamiane w środowisku uruchomieniowym języka wspólnego (CLR) w wersji 2,0 lub 4. Te wersje obejmują .NET Framework wersje 2,0, 3,0, 3,5, 4, 4,5 i 4.5.1 oraz wersje Silverlight, 1,0 i 2,0. Jeśli zostanie wydana nowa wersja .NET Framework oparta na wersji CLR 2.0 lub wersji 4, Framework może być zainstalowany przy użyciu odpowiedniego pakietu i automatycznie pojawi się jako cel w programie Visual Studio.
+
+ Program Visual Studio umożliwia określanie wersji .NET Framework, które są uruchamiane na wielu wersjach .NET Framework. Po wydaniu nowej wersji .NET Framework Framework można zainstalować przy użyciu pakietu docelowego, który zostanie automatycznie wyświetlony jako element docelowy w programie Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Jak działa rozpoznawanie typów
+
  W czasie wykonywania środowisko CLR rozpoznaje typy w zestawie, przeszukując pamięć podręczną, katalog *bin* i wszystkie ścieżki sondowania. Jest to obsługiwane przez moduł ładujący fusion. Ale skąd moduł ładujący fusion wie czego szukać? Jest to zależne od rozdzielczości w czasie projektowania, gdy aplikacja jest skompilowana.
 
  Podczas kompilacji, kompilator rozwiązuje typy aplikacji używając zestawów odwołania. W .NET Framework wersje 2,0, 3,0, 3,5, 4, 4,5 i 4.5.1 zestawy referencyjne są instalowane podczas instalacji .NET Framework.
@@ -36,5 +39,5 @@ Po dodaniu odwołania do zestawu za pośrednictwem karty **.NET** okna dialogowe
 
  Pakiet docelowy, który jest teraz dostarczany z zestawem SDK .NET Framework zawiera listę wszystkich zestawów środowiska uruchomieniowego w tej wersji środowiska, nazywaną listą redystrybucyjną (Redist), uniemożliwiającą systemowi kompilacji rozpoznawanie typów w niewłaściwy sposób wersja zestawu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

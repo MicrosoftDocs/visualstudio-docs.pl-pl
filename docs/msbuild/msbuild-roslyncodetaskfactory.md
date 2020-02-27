@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585902"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633229"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory
+
 Podobnie jak w przypadku [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory używa międzyplatformowych kompilatorów Roslyn do generowania zestawów zadań w pamięci do użycia jako zadania wbudowane.  .NET Standard obiektów docelowych zadań RoslynCodeTaskFactory i może współdziałać z .NET Framework i środowiska uruchomieniowe platformy .NET Core, a także z innymi platformami, takimi jak Linux i Mac OS.
 
 >[!NOTE]
 >RoslynCodeTaskFactory jest dostępna tylko w programie MSBuild 15,8 i nowszych.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struktura zadania śródwierszowego z RoslynCodeTaskFactory
+
  RoslynCodeTaskFactory wbudowane zadania są deklarowane w taki sam sposób jak [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), jedyną różnicą jest to, że docelowe .NET Standard.  Zadanie śródwierszowe i element `UsingTask`, który go zawiera, są zwykle zawarte w pliku *. targets* i importowane do innych plików projektu zgodnie z wymaganiami. Oto podstawowe zadanie wbudowane. Należy zauważyć, że nic nie robi.
 
 ```xml
@@ -68,6 +70,7 @@ elementy `Reference` i `Using` to Language-niezależny od. Zadania wbudowane mo�
 > Elementy zawarte w elemencie `Task` są specyficzne dla fabryki zadań, w tym przypadku w fabryce zadań Code.
 
 ### <a name="code-element"></a>Element Code
+
 Ostatni element podrzędny, który ma być wyświetlany w elemencie `Task`, to `Code` elementu. Element `Code` zawiera lub lokalizuje kod, który chcesz skompilować do zadania. Elementy `Code` są zależne od tego, jak chcesz napisać zadanie.
 
 Atrybut `Language` określa język, w którym napisano kod. Dopuszczalne wartości to `cs` dla C#`vb` Visual Basic.
@@ -87,7 +90,8 @@ Alternatywnie, można użyć atrybutu `Source` elementu `Code`, aby określić l
 > [!NOTE]
 > Podczas definiowania klasy zadań w pliku źródłowym, nazwa klasy musi zgadzać się z atrybutem `TaskName` odpowiadającego elementu [UsingTask](../msbuild/usingtask-element-msbuild.md) .
 
-## <a name="hello-world"></a>Witaj Świecie
+## <a name="hello-world"></a>Witaj, świecie
+
  Oto bardziej niezawodne zadanie wbudowane z RoslynCodeTaskFactory. Zadanie HelloWorld wyświetla "Hello, World!" na domyślnym urządzeniu rejestrowania błędów, które jest zazwyczaj konsolą systemową lub oknem **danych wyjściowych** programu Visual Studio. Element `Reference` w przykładzie jest uwzględniany tylko w przypadku ilustracji.
 
 ```xml
@@ -125,6 +129,7 @@ Zadanie HelloWorld można zapisać w pliku o nazwie *HelloWorld. targets*, a nas
 ```
 
 ## <a name="input-and-output-parameters"></a>Parametry wejściowe i wyjściowe
+
  Wbudowane parametry zadania są elementami podrzędnymi elementu `ParameterGroup`. Każdy parametr przyjmuje nazwę elementu, który go definiuje. Poniższy kod definiuje `Text`parametru.
 
 ```xml
@@ -141,7 +146,7 @@ Parametry mogą mieć jeden lub więcej z następujących atrybutów:
 
 - `Output` jest opcjonalnym atrybutem, który jest `false` domyślnie. Jeśli `true`, wówczas parametr musi mieć wartość przed powrotem z metody Execute.
 
-Na przykład
+Na przykład:
 
 ```xml
 <ParameterGroup>
@@ -162,6 +167,7 @@ definiuje te trzy parametry:
 Jeśli element `Code` ma atrybut `Type` `Fragment` lub `Method`, wówczas właściwości są tworzone automatycznie dla każdego parametru. W przeciwnym razie właściwości muszą być jawnie zadeklarowane w kodzie źródłowym zadania i muszą dokładnie pasować do ich definicji parametrów.
 
 ## <a name="example"></a>Przykład
+
  Następujące zadanie wbudowane rejestruje niektóre komunikaty i zwraca ciąg.
 
 ```xml
@@ -253,6 +259,7 @@ Te zadania wbudowane mogą łączyć ścieżki i uzyskać nazwę pliku.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Przewodnik: Tworzenie zadania wbudowanego](../msbuild/walkthrough-creating-an-inline-task.md)

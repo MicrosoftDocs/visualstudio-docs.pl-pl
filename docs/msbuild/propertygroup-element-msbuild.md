@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597376"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632930"
 ---
 # <a name="propertygroup-element-msbuild"></a>Property — element (MSBuild)
-Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Każdy element `Property` używany w projekcie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] musi być elementem podrzędnym elementu `PropertyGroup`.
+
+Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.md) zdefiniowanych przez użytkownika. Każdy element `Property` używany w projekcie programu MSBuild musi być elementem podrzędnym elementu `PropertyGroup`.
 
  \<Project > \<właściwości >
 
@@ -40,9 +41,10 @@ Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.m
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -52,15 +54,16 @@ Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.m
 
 |Element|Opis|
 |-------------|-----------------|
-|[Property](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Nazwa właściwości zdefiniowanej przez użytkownika, która zawiera wartość właściwości. Element `PropertyGroup` może mieć zero lub więcej elementów *Właściwości* .|
+|[Właściwość](../msbuild/property-element-msbuild.md)|Element opcjonalny.<br /><br /> Nazwa właściwości zdefiniowanej przez użytkownika, która zawiera wartość właściwości. Element `PropertyGroup` może mieć zero lub więcej elementów *Właściwości* .|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu pokazuje, jak ustawić właściwości na podstawie warunku. W tym przykładzie, jeśli wartość właściwości `CompileConfig` jest `DEBUG`, zostaną ustawione właściwości `Optimization`, `Obfuscate`i `OutputPath` wewnątrz elementu `PropertyGroup`.
 
 ```xml
@@ -71,6 +74,7 @@ Zawiera zestaw elementów [Właściwości](../msbuild/property-element-msbuild.m
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)

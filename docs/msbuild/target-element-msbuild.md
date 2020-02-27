@@ -18,15 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566426"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631981"
 ---
 # <a name="target-element-msbuild"></a>Target — element (MSBuild)
-Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+Zawiera zestaw zadań wykonywanych sekwencyjnie dla programu MSBuild.
 
  \<projekt > \<docelowy >
 
@@ -51,9 +52,10 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -72,7 +74,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 
 | Element | Opis |
 | - | - |
-| [Zadanie](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. W elemencie docelowym mogą istnieć co najmniej zero zadań. |
+| [Zadanie podrzędne](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania programu MSBuild. W elemencie docelowym mogą istnieć co najmniej zero zadań. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Zawiera zestaw elementów `Property` zdefiniowanych przez użytkownika. Począwszy od .NET Framework 3,5, element `Target` może zawierać `PropertyGroup` elementów. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Zawiera zestaw elementów `Item` zdefiniowanych przez użytkownika. Począwszy od .NET Framework 3,5, element `Target` może zawierać `ItemGroup` elementów. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md). |
 | [OnError](../msbuild/onerror-element-msbuild.md) | Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut `ContinueOnError` jest ErrorAndStop (lub `false`) dla zadania zakończonego niepowodzeniem. Element docelowy może mieć co najmniej zero elementów `OnError`. Jeśli elementy `OnError` są obecne, muszą one być ostatnimi elementami elementu `Target`.<br /><br /> Aby uzyskać informacje o atrybucie `ContinueOnError`, zobacz [element Task (MSBuild)](../msbuild/task-element-msbuild.md). |
@@ -81,10 +83,11 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 
 | Element | Opis |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
- Pierwszy cel do wykonania jest określony w czasie wykonywania. Elementy docelowe mogą mieć zależności od innych elementów docelowych. Na przykład element docelowy wdrożenia zależy od elementu docelowego kompilacji. Aparat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykonuje zależności w kolejności, w jakiej występują w atrybucie `DependsOnTargets`, od lewej do prawej. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md).
+
+ Pierwszy cel do wykonania jest określony w czasie wykonywania. Elementy docelowe mogą mieć zależności od innych elementów docelowych. Na przykład element docelowy wdrożenia zależy od elementu docelowego kompilacji. Aparat MSBuild wykonuje zależności w kolejności, w jakiej występują w atrybucie `DependsOnTargets`, od lewej do prawej. Aby uzyskać więcej informacji, zobacz [targets](../msbuild/msbuild-targets.md).
 
  MSBuild jest zależna od kolejności importu, a ostatnią definicją obiektu docelowego z określonym atrybutem `Name` jest definicja użyta.
 
@@ -101,6 +104,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
  Przed MSBuild 4, za każdym razem, gdy `Target` zawiera wiele odwołań do tego samego elementu w jego `Outputs`, te zduplikowane elementy zostałyby zarejestrowane. W bardzo dużych kompilacjach, które mają dużą liczbę danych wyjściowych i wiele współzależności między projektami, może to spowodować marnowanie dużej ilości pamięci, ponieważ duplikaty elementów nie były używane. Gdy atrybut `KeepDuplicateOutputs` jest ustawiony na `true`, te duplikaty są rejestrowane.
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu pokazuje `Target` element, który wykonuje `Csc` zadanie.
 
 ```xml
@@ -117,6 +121,7 @@ Zawiera zestaw zadań, które mają być wykonywane sekwencyjnie przez [!INCLUDE
 </Target>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Docelowe elementy](../msbuild/msbuild-targets.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

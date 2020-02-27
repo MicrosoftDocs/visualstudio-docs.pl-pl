@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af61c15c8ef65c062c1aab6eba079c613f99b5f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f40f2713d93e4f1ad9755efaea2f8fba5f0bda94
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595233"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631318"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>Wydajne używanie pamięci podczas kompilowania dużych projektów
-Duże projekty często zawierają wiele podprojektów i innych zależności, które mogą zużywać dużą ilość pamięci systemowej w czasie kompilacji. Po zmniejszeniu dostępnej pamięci systemowej może ulec również obniżenie wydajności systemu. Starsze wersje projektów [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pozostawały w pamięci. W wersji 3,5 usunięto starsze wersje projektów, ale zachowane wyniki kompilacji są przechowywane w pamięci podręcznej na potrzeby późniejszego pobierania.
+
+Duże projekty często zawierają wiele podprojektów i innych zależności, które mogą zużywać dużą ilość pamięci systemowej w czasie kompilacji. Po zmniejszeniu dostępnej pamięci systemowej może ulec również obniżenie wydajności systemu. Starsze wersje projektów programu MSBuild pozostawały w pamięci. W wersji 3,5 usunięto starsze wersje projektów, ale zachowane wyniki kompilacji są przechowywane w pamięci podręcznej na potrzeby późniejszego pobierania.
 
  Wersja 4,0 obsługuje automatyczne zarządzanie pamięcią, co pozwala na zapisywanie projektów przed użyciem takich właściwości jak `UnloadProjectsOnCompletion` i `UseResultsCache`.
 
-### <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz też
+
 - [Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593775"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633112"
 ---
 # <a name="msbuild-transforms"></a>Przekształcenia programu MSBuild
-Transformacja jest konwersją jeden do jednego z jednej listy elementów na inną. Poza umożliwieniem projektowi konwersji list elementów, transformacja umożliwia obiektowi docelowemu znalezienie bezpośredniego mapowania między danymi wejściowymi i wyjściowymi. W tym temacie objaśniono transformacje i sposób, w jaki [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ich używanie do wydajniejszego kompilowania projektów.
+
+Transformacja jest konwersją jeden do jednego z jednej listy elementów na inną. Poza umożliwieniem projektowi konwersji list elementów, transformacja umożliwia obiektowi docelowemu znalezienie bezpośredniego mapowania między danymi wejściowymi i wyjściowymi. W tym temacie objaśniono transformacje i sposób, w jaki MSBuild używa ich do bardziej wydajnego kompilowania projektów.
 
 ## <a name="transform-modifiers"></a>Przekształć Modyfikatory
+
 Przekształcenia nie są dowolne, ale są ograniczone przez specjalną składnię, w której wszystkie Modyfikatory transformacji muszą mieć format%(\<ItemMetaDataName >). Wszystkie metadane elementu mogą być używane jako modyfikator przekształcania. Obejmuje to metadane dobrze znanego elementu, które są przypisywane do każdego elementu podczas jego tworzenia. Aby uzyskać listę dobrze znanych metadanych elementu, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
 
 W poniższym przykładzie lista plików *resx* jest przekształcana na listę plików *resources* . Modyfikator przekształcenia% (filename) określa, że każdy plik *resources* ma taką samą nazwę jak plik. *resx* .
@@ -36,6 +38,7 @@ Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*
 > Możesz określić niestandardowy separator dla listy przekształconych elementów w ten sam sposób, w jaki określisz separator dla standardowej listy elementów. Na przykład aby oddzielić listę przekształconych elementów przy użyciu przecinka (,) zamiast domyślnego średnika (;), użyj następującego kodu XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Używanie wielu modyfikatorów
+
  Wyrażenie przekształcenia może zawierać wiele modyfikatorów, które mogą być połączone w dowolnej kolejności i mogą być powtarzane. W poniższym przykładzie nazwa katalogu zawierającego pliki jest zmieniana, ale pliki zachowują oryginalną nazwę i rozszerzenie nazwy pliku.
 
 ```xml
@@ -45,7 +48,8 @@ Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*
  Na przykład, jeśli elementy znajdujące się na liście elementów `RESXFile` są *Project1\Form1.resx*, *Project1\Form2.resx*i *Project1\Form3.Text*, dane wyjściowe na liście przekształconej będą *Toolset\Form1.resx*, *Toolset\Form2.resx*i *Toolset\Form3.Text*.
 
 ## <a name="dependency-analysis"></a>Analiza zależności
- Transformacje gwarantują mapowanie jeden do jednego między listą przekształconych elementów a listą pierwotnych elementów. W związku z tym, jeśli obiekt docelowy tworzy wyprowadzanie danych wejściowych, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może analizować sygnatury czasowe danych wejściowych i wyjściowych, a także zdecydować, czy pominąć, skompilować lub częściowo skompilować element docelowy.
+
+ Transformacje gwarantują mapowanie jeden do jednego między listą przekształconych elementów a listą pierwotnych elementów. W związku z tym, jeśli obiekt docelowy tworzy dane wyjściowe, które są przekształcane, program MSBuild może analizować sygnatury czasowe wejść i wyjść, a także zdecydować, czy pominąć, skompilować lub częściowo skompilować element docelowy.
 
  W poniższym przykładzie [zadania Copy](../msbuild/copy-task.md) każdy plik na liście elementów `BuiltAssemblies` mapuje do pliku w folderze docelowym zadania, określonym przy użyciu transformacji w atrybucie `Outputs`. Jeśli plik na liście elementów `BuiltAssemblies` ulegnie zmianie, zadanie `Copy` zostanie uruchomione tylko dla zmienionego pliku, a wszystkie inne pliki zostaną pominięte. Aby uzyskać więcej informacji na temat analizy zależności i sposobu używania transformacji, zobacz [How to: build przyrostowo](../msbuild/how-to-build-incrementally.md).
 
@@ -64,7 +68,8 @@ Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*
 ## <a name="example"></a>Przykład
 
 ### <a name="description"></a>Opis
- W poniższym przykładzie przedstawiono plik projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], który używa transformacji. W tym przykładzie przyjęto założenie, że w katalogu *c:\sub0\sub1\sub2\sub3* istnieje tylko jeden plik *XSD* , a katalog roboczy to *c:\sub0*.
+
+ Poniższy przykład pokazuje plik projektu MSBuild, który używa transformacji. W tym przykładzie przyjęto założenie, że w katalogu *c:\sub0\sub1\sub2\sub3* istnieje tylko jeden plik *XSD* , a katalog roboczy to *c:\sub0*.
 
 ### <a name="code"></a>Kod
 
@@ -88,6 +93,7 @@ Na przykład jeśli elementy na liście elementów @ (RESXFile) to *Form1. resx*
 ```
 
 ### <a name="comments"></a>Komentarze
+
  Ten przykład generuje następujące wyniki:
 
 ```
@@ -101,7 +107,8 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Instrukcje: kompilowanie przyrostowe](../msbuild/how-to-build-incrementally.md)

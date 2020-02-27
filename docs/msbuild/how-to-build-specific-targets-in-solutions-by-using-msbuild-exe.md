@@ -12,23 +12,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 921b5d2d4aad7cfe48b7f6cc9cb802fde9520e19
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 178dfcaf0bdf8296fd271cb7c4e5dd0bbd251d7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585261"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633931"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Instrukcje: kompilowanie określonych obiektów docelowych w rozwiązaniach za pomocą programu MSBuild. exe
+
 Programu *MSBuild. exe* można użyć do tworzenia określonych elementów docelowych określonych projektów w rozwiązaniu.
 
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Aby utworzyć konkretny obiekt docelowy określonego projektu w rozwiązaniu
+## <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Aby utworzyć konkretny obiekt docelowy określonego projektu w rozwiązaniu
 
 1. W wierszu polecenia wpisz `MSBuild.exe <SolutionName>.sln`, gdzie `<SolutionName>` odpowiada nazwie pliku rozwiązania, które zawiera obiekt docelowy, który chcesz wykonać.
 
 2. Określ element docelowy po przełączniku `-target:` w formacie \<ProjectName >:\<TargetName >. Jeśli nazwa projektu zawiera dowolny ze znaków `%`, `$`, `@`, `;`, `.`, `(`, `)`lub `'`, Zamień je na `_` w określonej nazwie docelowej.
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład wykonuje `Rebuild` cel projektu `NotInSlnFolder`, a następnie wykonuje `Clean` cel projektu `InSolutionFolder`, który znajduje się w folderze rozwiązania *nowyfolder* .
 
 ```cmd
@@ -41,7 +43,8 @@ Aby zapoznać się z opcjami dostępnymi dla Ciebie, można to zrobić za pomoc�
 
 Nie Kompiluj z tym zestawem zmiennych środowiskowych, chyba że potrzebny jest ten widok wewnętrzny. To ustawienie może spowodować problemy podczas kompilowania projektów w rozwiązaniu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Dokumentacja wiersza polecenia](../msbuild/msbuild-command-line-reference.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

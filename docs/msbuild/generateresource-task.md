@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e83cc04b309a940f5aa4c5a36099f10afddcc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594803"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634061"
 ---
 # <a name="generateresource-task"></a>GenerateResource — zadanie
+
 Konwertuje pliki *. txt* i *. resx* (format zasobów opartych na języku XML) i *pliki binarne środowiska* uruchomieniowego języka wspólnego, które mogą być osadzone w binarnym pliku wykonywalnym środowiska uruchomieniowego lub skompilowane w zestawach satelickich. To zadanie jest zwykle używane do konwertowania plików *txt* lub *resx* na pliki *resources* . Zadanie `GenerateResource` działa podobnie jak [Resgen. exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `GenerateResource`.
 
 |Parametr|Opis|
@@ -61,6 +63,7 @@ W poniższej tabeli opisano parametry zadania `GenerateResource`.
 |`UseSourcePath`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, określa, że katalog pliku wejściowego ma być używany do rozpoznawania względnych ścieżek plików.|
 
 ## <a name="remarks"></a>Uwagi
+
 Ponieważ pliki *resx* mogą zawierać linki do innych plików zasobów, nie wystarczy po prostu porównać sygnatury czasowe plików *resx* i *resources* , aby sprawdzić, czy dane wyjściowe są aktualne. Zamiast tego zadanie `GenerateResource` wykonuje poniższe linki w plikach *resx* i sprawdza również sygnatury czasowe połączonych plików. Oznacza to, że nie należy zasadniczo używać atrybutów `Inputs` i `Outputs` w elemencie docelowym zawierającym zadanie `GenerateResource`, ponieważ może to spowodować, że zostanie pominięte, gdy powinien zostać rzeczywiście uruchomiony.
 
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
@@ -68,6 +71,7 @@ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z kla
 W przypadku używania programu MSBuild 4,0 do celów projektów programu .NET 3,5 kompilacja może zakończyć się niepowodzeniem w zasobach x86. Aby obejść ten problem, można utworzyć obiekt docelowy jako zestaw AnyCPU.
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład używa zadania `GenerateResource` do generowania plików *resources* z plików określonych przez kolekcję `Resx` Item.
 
 ```xml
@@ -94,6 +98,7 @@ Przy założeniu, że zestaw nosi nazwę, poniższy kod generuje osadzony zasób
 
 Bez metadanych \<LogicalName >, zasób zostałby nazwany *. WebResource. resources*.  Ten przykład ma zastosowanie tylko do Visual Basic i procesu C# kompilacji wizualnej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

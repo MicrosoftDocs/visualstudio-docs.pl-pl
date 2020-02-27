@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596011"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632787"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates — zadanie
+
 Usuwa zduplikowane elementy z określonej kolekcji elementów.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `RemoveDuplicates`.
 
 |Parametr|Opis|
@@ -37,11 +39,13 @@ Usuwa zduplikowane elementy z określonej kolekcji elementów.
 |`Inputs`|Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Kolekcja elementów, z której mają zostać usunięte zduplikowane elementy.|
 
 ## <a name="remarks"></a>Uwagi
+
  To zadanie uwzględnia wielkość liter i nie porównuje metadanych elementów podczas określania duplikatów.
 
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  W poniższym przykładzie użyto zadania `RemoveDuplicates`, aby usunąć zduplikowane elementy z kolekcji elementów `MyItems`. Po zakończeniu zadania kolekcja `FilteredItems` elementów zawiera jeden element.
 
 ```xml
@@ -89,7 +93,8 @@ Usuwa zduplikowane elementy z określonej kolekcji elementów.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

@@ -18,17 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a96b59837d04deb0517d3ab79b3b668e036a20
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579643"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634009"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath — zadanie
+
+Pobiera ścieżkę do zestawów .NET Framework.
 Pobiera ścieżkę do zestawów .NET Framework.
 
 ## <a name="task-parameters"></a>Parametry zadania
+
 W poniższej tabeli opisano parametry zadania `GetFrameworkPath`.
 
 |Parametr|Opis|
@@ -41,11 +44,13 @@ W poniższej tabeli opisano parametry zadania `GetFrameworkPath`.
 |`Path`|Opcjonalny `String` parametr wyjściowy.<br /><br /> Zawiera ścieżkę do najnowszych zestawów struktury, jeśli są dostępne. W przeciwnym razie zwraca `null`.|
 
 ## <a name="remarks"></a>Uwagi
-Jeśli zainstalowano kilka wersji .NET Framework, to zadanie zwróci wersję, która [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] została zaprojektowana do uruchomienia.
+
+Jeśli zainstalowano kilka wersji .NET Framework, to zadanie zwróci wersję, na której ma być uruchamiany program MSBuild.
 
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład używa zadania `GetFrameworkPath` do przechowywania ścieżki do .NET Framework we właściwości `FrameworkPath`.
 
 ```xml
@@ -61,5 +66,6 @@ Poniższy przykład używa zadania `GetFrameworkPath` do przechowywania ścieżk
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

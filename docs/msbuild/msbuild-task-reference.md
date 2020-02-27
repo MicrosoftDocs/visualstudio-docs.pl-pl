@@ -15,23 +15,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593879"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633164"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania programu MSBuild
 
-Zadania zapewniają kod, który jest uruchamiany podczas procesu kompilacji. Zadania z poniższej listy są dołączone do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Po zainstalowaniu [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] są dostępne dodatkowe zadania, które służą do kompilowania [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów. Aby uzyskać więcej informacji, zobacz [ C++ zadania](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Zadania zapewniają kod, który jest uruchamiany podczas procesu kompilacji. Zadania z poniższej listy są dołączone do programu MSBuild. Po zainstalowaniu C++ obciążenia są dostępne dodatkowe zadania, które są używane do kompilowania C++ projektów. Aby uzyskać więcej informacji, zobacz [ C++ zadania](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma również następujące parametry:
 
 | Parametr | Opis |
 |-------------------| - |
-| `Condition` | Opcjonalny parametr `String`.<br /><br /> Wyrażenie `Boolean` używane przez aparat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do określenia, czy zadanie zostanie wykonane. Aby uzyskać informacje na temat warunków, które są obsługiwane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], zobacz [warunki](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parametr opcjonalny. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Gdy zadanie się nie powiedzie, kolejne zadania w elemencie [Target](../msbuild/target-element-msbuild.md) i Build są nadal wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Gdy zadanie nie powiedzie się, kolejne zadania w elemencie `Target` i kompilacja nadal będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (wartość domyślna). Gdy zadanie nie powiedzie się, pozostałe zadania w elemencie `Target` i kompilacja nie są wykonywane, a cały element `Target` i kompilacja są uznawane za niepowodzenie.<br /><br /> Wersje .NET Framework przed 4,5 są obsługiwane tylko przez wartości `true` i `false`.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: ignore Errors in Tasks](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `Condition` | Opcjonalny parametr `String`.<br /><br /> Wyrażenie `Boolean` używane przez aparat MSBuild do określenia, czy zadanie zostanie wykonane. Aby uzyskać informacje o warunkach, które są obsługiwane przez program MSBuild, zobacz [warunki](../msbuild/msbuild-conditions.md). |
+| `ContinueOnError` | Opcjonalny parametr. Może zawierać jedną z następujących wartości:<br /><br /> -   **WarnAndContinue** lub **true**. Gdy zadanie się nie powiedzie, kolejne zadania w elemencie [Target](../msbuild/target-element-msbuild.md) i Build są nadal wykonywane, a wszystkie błędy z zadania są traktowane jako ostrzeżenia.<br />-   **ErrorAndContinue**. Gdy zadanie nie powiedzie się, kolejne zadania w elemencie `Target` i kompilacja nadal będą wykonywane, a wszystkie błędy z zadania są traktowane jako błędy.<br />-   **ErrorAndStop** lub **false** (wartość domyślna). Gdy zadanie nie powiedzie się, pozostałe zadania w elemencie `Target` i kompilacja nie są wykonywane, a cały element `Target` i kompilacja są uznawane za niepowodzenie.<br /><br /> Wersje .NET Framework przed 4,5 są obsługiwane tylko przez wartości `true` i `false`.<br /><br /> Aby uzyskać więcej informacji, zobacz [How to: ignore Errors in Tasks](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>W tej sekcji
 
@@ -85,7 +85,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [CreateCSharpManifestResourceName —, zadanie](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Tworzy nazwę manifestu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]w stylu na podstawie danej nazwy pliku *resx* lub innego zasobu.
+ Tworzy nazwę C#manifestu w stylu na podstawie danej nazwy pliku *resx* lub innego zasobu.
 
 - [Zadanie elementu](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [CreateVisualBasicManifestResourceName —, zadanie](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Tworzy nazwę manifestu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]w stylu na podstawie danej nazwy pliku *resx* lub innego zasobu.
+ Tworzy nazwę manifestu Visual Basic w stylu na podstawie danej nazwy pliku *resx* lub innego zasobu.
 
 - [CSC — zadanie](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [GenerateApplicationManifest —, zadanie](../msbuild/generateapplicationmanifest-task.md)
 
- Generuje manifest aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lub natywny manifest.
+ Generuje manifest aplikacji ClickOnce lub natywny manifest.
 
 - [GenerateBootstrapper —, zadanie](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [GenerateDeploymentManifest —, zadanie](../msbuild/generatedeploymentmanifest-task.md)
 
- Generuje manifest wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Generuje manifest wdrażania ClickOnce.
 
 - [GenerateResource, zadanie](../msbuild/generateresource-task.md)
 
@@ -173,7 +173,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [GetFrameworkSdkPath —, zadanie](../msbuild/getframeworksdkpath-task.md)
 
- Pobiera ścieżkę do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+ Pobiera ścieżkę do zestawu Windows Software Development Kit (SDK).
 
 - [GetReferenceAssemblyPaths, zadanie](../msbuild/getreferenceassemblypaths-task.md)
 
@@ -197,7 +197,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [Zadanie MSBuild](../msbuild/msbuild-task.md)
 
- Kompiluje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z innego projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Kompiluje projekty MSBuild z innego projektu MSBuild.
 
 - [ReadLinesFromFile —, zadanie](../msbuild/readlinesfromfile-task.md)
 
@@ -221,7 +221,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - ResGen, zadanie
 
- {1&gt;Nieaktualne.&lt;1} Zadanie [GenerateResource](../msbuild/generateresource-task.md) służy do konwertowania plików *txt* i *resx* do i z plików binarnych pliku binarnego środowiska uruchomieniowego języka *wspólnego.*
+ Nieaktualne. Zadanie [GenerateResource](../msbuild/generateresource-task.md) służy do konwertowania plików *txt* i *resx* do i z plików binarnych pliku binarnego środowiska uruchomieniowego języka *wspólnego.*
 
 - [ResolveAssemblyReference —, zadanie](../msbuild/resolveassemblyreference-task.md)
 
@@ -271,7 +271,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
  Aktualizuje wybrane właściwości w manifeście i podpisuje je.
 
-- [Vbc — zadanie](../msbuild/vbc-task.md)
+- [VBC, zadanie](../msbuild/vbc-task.md)
 
  Wywołuje kompilator Visual Basic do tworzenia plików wykonywalnych, bibliotek dołączanych dynamicznie lub modułów kodu.
 
@@ -307,7 +307,7 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
  Tworzy archiwum *zip* z zawartości katalogu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
 - [Pisanie zadania](../msbuild/task-writing.md)

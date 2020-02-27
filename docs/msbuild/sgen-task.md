@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 4305f27435d97c346ce623a21b37f011fd8da0cd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595127"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632306"
 ---
 # <a name="sgen-task"></a>SGen — Zadanie
+
 Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie otacza narzędzie generatora serializatora XML (*Sgen. exe*). Aby uzyskać więcej informacji, zobacz [narzędzie generatora serializatorów XML (Sgen. exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `SGen`.
 
 | Parametr | Opis |
@@ -45,14 +47,16 @@ Tworzy zestaw serializacji XML dla typów w określonym zestawie. To zadanie ota
 | `SerializationAssemblyName` | Opcjonalny parametr `String`.<br /><br /> Określa nazwę wygenerowanego zestawu serializacji. |
 | `ShouldGenerateSerializer` | Wymagany `Boolean` parametr.<br /><br /> Jeśli `true`, zadanie SGen powinno generować zestaw serializacji. |
 | `Timeout` | Opcjonalny parametr `Int32`.<br /><br /> Określa ilość czasu (w milisekundach), po upływie którego plik wykonywalny zadania zostanie zakończony. Wartość domyślna to `Int.MaxValue`, co oznacza, że nie ma limitu czasu. |
-| `ToolPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (*Sgen. exe*). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, która jest uruchomiona [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `ToolPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (*Sgen. exe*). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, w której działa program MSBuild. |
 | `Types` | Opcjonalny parametr `String[]`.<br /><br /> Pobiera lub ustawia listę konkretnych typów, dla których ma zostać wygenerowany kod serializacji. SGen generuje kod serializacji tylko dla tych typów. |
 | `UseProxyTypes` | Wymagany `Boolean` parametr.<br /><br /> Jeśli `true`, zadanie SGen generuje kod serializacji tylko dla typów serwera proxy usługi sieci Web XML. |
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.ToolTask>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)

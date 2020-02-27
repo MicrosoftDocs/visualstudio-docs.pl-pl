@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594971"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631695"
 ---
 # <a name="tooltaskextension-base-class"></a>Klasa bazowa ToolTaskExtension
+
 Wiele zadań dziedziczy z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, która dziedziczy z klasy <xref:Microsoft.Build.Utilities.ToolTask>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które pochodzą z nich. Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry klas bazowych.
 
 | Parametr | Opis |
@@ -41,10 +43,11 @@ Wiele zadań dziedziczy z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, 
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Opcjonalny parametr `String`.<br /><br /> Znaczenie, za pomocą którego można rejestrować tekst ze standardowego strumienia wyjściowego. |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | Wirtualny opcjonalny parametr `Int32`.<br /><br /> Określa ilość czasu (w milisekundach), po upływie którego plik wykonywalny zadania zostanie zakończony. Wartość domyślna to `Int.MaxValue`, co oznacza, że nie ma limitu czasu. Limit czasu jest w milisekundach. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | Wirtualny opcjonalny parametr `string`.<br /><br /> Projekty mogą zaimplementować ten element, aby zastąpić narzędzie. Zadania mogą zastąpić ten sposób, aby zachować wartość tego narzędzia. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Opcjonalny parametr `string`.<br /><br /> Określa lokalizację, z której zadanie ładuje źródłowy plik wykonywalny. Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK, która odnosi się do wersji platformy, która jest uruchomiona [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Opcjonalny parametr `string`.<br /><br /> Określa lokalizację, z której zadanie ładuje źródłowy plik wykonywalny. Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK, która odnosi się do wersji platformy, w której działa program MSBuild. |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Opcjonalny parametr `bool`.<br /><br /> Po ustawieniu na `true`, to zadanie tworzy plik wsadowy dla wiersza polecenia i wykonuje go przy użyciu procesora poleceń zamiast wykonywania polecenia bezpośrednio. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Opcjonalny parametr `bool`.<br /><br /> Gdy jest ustawiona na `true`, to zadanie nadaje węzeł, gdy jego zadanie jest wykonywane. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

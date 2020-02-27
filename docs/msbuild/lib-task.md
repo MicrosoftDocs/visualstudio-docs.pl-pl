@@ -25,17 +25,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: a5794d059a17f39531a7788895b604ae0e9590ce
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578542"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633593"
 ---
 # <a name="lib-task"></a>LIB — Zadanie
+
 Zawija narzędzie Microsoft 32-bitowego Menedżera bibliotek, *lib. exe*. Menedżer biblioteki tworzy i zarządza biblioteką plików obiektów Common File Format (COFF). Menedżer biblioteki może również tworzyć pliki eksportu i importować biblioteki w celu odwoływania się do wyeksportowanych definicji. Aby uzyskać więcej informacji, zobacz [Dokumentacja biblioteki lib](/cpp/build/reference/lib-reference) i [uruchomienie biblioteki lib](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania **lib** . Większość parametrów zadań odpowiada opcji wiersza polecenia.
 
 |Parametr|Opis|
@@ -66,4 +68,5 @@ Zawija narzędzie Microsoft 32-bitowego Menedżera bibliotek, *lib. exe*. Mened�
 |**Pełne**|Opcjonalny parametr **logiczny** .<br /><br /> Jeśli `true`, wyświetla szczegółowe informacje o postępie sesji; dotyczy to również nazw dodawanych plików. *obj* . Informacje są wysyłane do wyjścia standardowego i mogą być przekierowywane do pliku.<br /><br /> Aby uzyskać więcej informacji, zobacz opcja **/verbose** w [uruchomionej lib](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

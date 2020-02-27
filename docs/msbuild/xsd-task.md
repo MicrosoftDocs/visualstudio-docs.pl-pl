@@ -20,20 +20,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565789"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630785"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
+
 Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki schematu lub klasy ze źródła.
 
 > [!NOTE]
 > Począwszy od programu Visual Studio 2017 C++ , obsługa projektu dla pliku *XSD. exe* jest przestarzała. Można nadal używać interfejsów API **Microsoft. VisualC. CppCodeProvider** , ręcznie dodając *CppCodeProvider. dll* do pamięci GAC.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania **XSD** .
 
 - **AdditionalOptions**
@@ -50,9 +52,9 @@ Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki sch
 
   Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
 
-  - **classes** -  **/classes**
+  - **klasy** -  **/Classes**
 
-  - **dataset** -  **/dataset**
+  - **zestaw danych** -  **/DataSet**
 
 - **Język**
 
@@ -62,7 +64,7 @@ Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki sch
 
      Wybierz pozycję z firmyC#cs (czyli domyślnej), **VB** (Visual Basic) lub **js** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.
 
-- **Namespace**
+- **Przestrzeń nazw**
 
      Opcjonalny parametr **ciągu** .
 
@@ -86,5 +88,6 @@ Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki sch
 
      Określa katalog dziennika śledzenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

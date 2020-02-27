@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2503040e074a62422d4c7c904f5ad3a2bd84d6c1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567283"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631032"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co nowego w programie MSBuild 15
 
@@ -39,6 +39,7 @@ Program MSBuild jest teraz dostępny jako część [zestaw .NET Core SDK](https:
 - Właściwości `SDK35ToolsPath` i `SDK40ToolsPath` wskazują zestaw .NET Framework SDK, który jest opakowany z tą wersją programu Visual Studio (na przykład 10.0 A dla narzędzi 4. X).
 
 ## <a name="updates"></a>Aktualizacje
+
 - [Element projektu](../msbuild/project-element-msbuild.md) ma nowy atrybut `SDK`. Ponadto atrybut `Xmlns` jest teraz opcjonalny. Aby uzyskać więcej informacji o atrybucie `SDK`, zobacz [How to: use Project SDK](../msbuild/how-to-use-project-sdk.md), [Packages, webpackages i platforms](/dotnet/core/packages) i [Dodatki do formatu csproj dla platformy .NET Core](/dotnet/core/tools/csproj).
 - [Element Item](../msbuild/item-element-msbuild.md) poza elementami docelowymi ma nowy atrybut `Update`. Ponadto ograniczenie `Remove` atrybutu zostało wyeliminowane.
 - *Directory. Build. props* to plik zdefiniowany przez użytkownika, który udostępnia dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft. Common. props* , chyba że właściwość `ImportDirectoryBuildTargets` jest ustawiona na **false**. *Katalog. Build. targets* został zaimportowany przez element *Microsoft. Common. targets*.
@@ -49,7 +50,8 @@ Program MSBuild jest teraz dostępny jako część [zestaw .NET Core SDK](https:
 - `EnsureTrailingSlash` dodaje końcowy ukośnik do ścieżki, jeśli jeszcze nie istnieje.
 - `NormalizePath` łączy elementy ścieżki i zapewnia, że ciąg wyjściowy ma poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.
 - `NormalizeDirectory` łączy elementy ścieżki, zapewnia końcowy ukośnik i zapewnia, że ciąg wyjściowy ma poprawne znaki separatora katalogów dla bieżącego systemu operacyjnego.
-- `GetPathOfFileAbove` zwraca ścieżkę pliku bezpośrednio poprzedzającego ten plik. Jest funkcjonalnym odpowiednikiem wywołania `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
+- `GetPathOfFileAbove` zwraca ścieżkę pliku bezpośrednio poprzedzającego ten plik. Jest on funkcjonalnie równoważny z wywołaniem `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [MSBuild](../msbuild/msbuild.md)

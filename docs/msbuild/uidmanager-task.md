@@ -19,26 +19,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312e174b1bbe0a21d155e4e6b5050e6f41dd8352
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579548"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631526"
 ---
 # <a name="uidmanager-task"></a>UidManager, zadanie
-Zadanie <xref:Microsoft.Build.Tasks.Windows.UidManager> sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie elementy [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] zawarte w źródłowym pliku [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].
+
+Zadanie <xref:Microsoft.Build.Tasks.Windows.UidManager> sprawdza, aktualizuje lub usuwa unikatowe identyfikatory (UID), aby zlokalizować wszystkie elementy XAML, które są zawarte w źródłowym pliku XAML.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 | Parametr | Opis |
 |-------------------------| - |
-| `IntermediateDirectory` | Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog, który jest używany do tworzenia kopii zapasowych plików [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] źródłowych, które są określone przez parametr **MarkupFiles** . |
-| `MarkupFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa pliki źródłowe [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] do dołączenia do sprawdzania UID, aktualizowania lub usuwania. |
+| `IntermediateDirectory` | Opcjonalny parametr **ciągu** .<br /><br /> Określa katalog, który jest używany do tworzenia kopii zapasowej źródłowych plików XAML, które są określone przez parametr **MarkupFiles** . |
+| `MarkupFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa pliki źródłowe XAML, które mają być używane do sprawdzania UID, aktualizowania lub usuwania. |
 | `Task` | Wymagany parametr **ciągu** .<br /><br /> Określa zadanie zarządzania UID, które ma zostać wykonane. Prawidłowe opcje to **check**, **Update**lub **Remove**. |
 
 ## <a name="example"></a>Przykład
- Poniższy przykład używa zadania <xref:Microsoft.Build.Tasks.Windows.UidManager>, aby sprawdzić, czy określone źródłowe [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] pliki zawierają [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] elementy, które mają odpowiednie identyfikatory UID.
+
+ Poniższy przykład używa zadania <xref:Microsoft.Build.Tasks.Windows.UidManager>, aby sprawdzić, czy określone źródłowe pliki XAML zawierają elementy XAML, które mają odpowiednie identyfikatory UID.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -55,6 +57,7 @@ Zadanie <xref:Microsoft.Build.Tasks.Windows.UidManager> sprawdza, aktualizuje lu
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

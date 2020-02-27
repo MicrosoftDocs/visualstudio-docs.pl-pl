@@ -17,15 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579604"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632514"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator —, zadanie
-Zadanie <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> umożliwia osadzenie jednego lub więcej zasobów ( *. jpg*, *. ico*, *. bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] w formacie binarnym i innych typów rozszerzeń) w pliku *resources* .
+
+Zadanie <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> umożliwia osadzenie jednego lub więcej zasobów (*jpg*, *. ico*, *. bmp*, XAML w formacie binarnym i innych typów rozszerzenia) w pliku *resources* .
 
 ## <a name="task-parameters"></a>Parametry zadania
 
@@ -36,6 +37,7 @@ Zadanie <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> umożliwia osadz
 |`ResourcesFiles`|Wymagany parametr **ITaskItem []** .<br /><br /> Określa co najmniej jeden zasób do osadzenia w wygenerowanym pliku *resources* .|
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład generuje plik *resources* z pojedynczym zasobem *. bmp* . Zasób *. bmp* jest generowany do katalogu, który jest względny dla katalogu głównego projektu.
 
 ```xml
@@ -53,6 +55,7 @@ Zadanie <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> umożliwia osadz
 ```
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania](../msbuild/wpf-msbuild-task-reference.md)
 - [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)

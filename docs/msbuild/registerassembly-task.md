@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57031bd49a67e1961b5413a59f66562cc9c1b883
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0c95606a00e86ffd187162e444f2c710c5cc3a0e
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596791"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632891"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly — zadanie
+
 Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru, co umożliwia klientom COM tworzenie klas .NET Framework przezroczystie. Zachowanie tego zadania jest podobne, ale nie identyczne, z tym, że [Regasm. exe (Narzędzie rejestracji zestawów)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `RegisterAssembly`.
 
 |Parametr|Opis|
@@ -39,9 +41,11 @@ Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru,
 |`TypeLibFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Określa bibliotekę typów do wygenerowania na podstawie określonego zestawu. Wygenerowana biblioteka typów zawiera definicje dostępnych typów zdefiniowanych w ramach zestawu. Biblioteka typów jest generowana tylko wtedy, gdy spełniony jest jeden z następujących warunków:<br /><br /> -Biblioteka typów o tej nazwie nie istnieje w tej lokalizacji.<br />-Istnieje biblioteka typów, ale jest ona starsza niż przekazanie zestawu.<br /><br /> Jeśli biblioteka typów jest nowsza niż przekazanie zestawu, nowy element nie zostanie utworzony, ale zestaw nadal będzie zarejestrowany.<br /><br /> Jeśli ten parametr jest określony, musi mieć taką samą liczbę elementów jak parametr `Assemblies` lub zadanie zakończy się niepowodzeniem. Jeśli żadne dane wejściowe nie są określone, zadanie zostanie domyślnie przyłączone do nazwy zestawu i zmienione rozszerzenie elementu na *. tlb*.|
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład używa zadania `RegisterAssembly`, aby zarejestrować zestaw określony przez kolekcję elementów `MyAssemblies`.
 
 ```xml
@@ -59,6 +63,7 @@ Odczytuje metadane w określonym zestawie i dodaje niezbędne wpisy do rejestru,
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

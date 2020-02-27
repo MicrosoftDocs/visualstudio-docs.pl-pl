@@ -13,29 +13,33 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a32b914cab8626df513994a3d68c2aac3d7cb7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e2d825c0c08ffeba1449954ed310644dd4437840
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593437"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634542"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath, zadanie
+
 To zadanie akceptuje listę plików i dodaje atrybuty `<TargetPath>`, jeśli nie zostały one jeszcze określone.
 
 ## <a name="task-parameters"></a>Parametry zadania
+
 W poniższej tabeli opisano parametry zadania `AssignTargetPath`.
 
 |Parametr|Opis|
 |---------------|-----------------|
 |`RootFolder`|Opcjonalny `string` parametr wejściowy.<br /><br /> Zawiera ścieżkę do folderu, który zawiera linki docelowe.|
 |`Files`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wejściowy.<br /><br /> Zawiera przychodzącą listę plików.|
-|`AssignedFiles`|Optional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera uzyskaną listę plików.|
+|`AssignedFiles`|Optional (Opcjonalność)<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr wyjściowy.<br /><br /> Zawiera uzyskaną listę plików.|
 
 ## <a name="remarks"></a>Uwagi
+
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład wykonuje zadanie `AssignTargetPath`, aby skonfigurować projekt.
 
 ```xml
@@ -51,6 +55,7 @@ RootFolder="Resources"
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

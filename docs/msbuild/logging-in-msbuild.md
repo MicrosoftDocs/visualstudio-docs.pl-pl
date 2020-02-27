@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592194"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633554"
 ---
 # <a name="logging-in-msbuild"></a>Logowanie w programie MSBuild
+
 Rejestrowanie zapewnia sposób monitorowania postępu kompilacji. Rejestrowanie przechwytuje zdarzenia kompilacji, komunikaty, ostrzeżenia i błędy w pliku dziennika.
 
 ## <a name="in-this-section"></a>W tej sekcji
+
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Opisuje różne aspekty rejestrowania w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Opisuje różne aspekty rejestrowania w programie MSBuild.
 
 - [Rejestratory kompilacji](../msbuild/build-loggers.md)
 
@@ -41,5 +43,6 @@ Rejestrowanie zapewnia sposób monitorowania postępu kompilacji. Rejestrowanie 
 
  Zawiera instrukcje tworzenia niestandardowych rejestratorów przesyłania dalej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Opisuje sposób szybszego kompilowania wielu projektów przez uruchamianie ich równolegle.

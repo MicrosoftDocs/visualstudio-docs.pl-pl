@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2a1710336ebc73be707e962733e37376b5689e10
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591141"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631240"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
+
 Zawija *VBC. exe*, który tworzy pliki wykonywalne ( *. exe*), biblioteki dołączane dynamicznie (*dll*) lub moduły kodu ( *. module*). Aby uzyskać więcej informacji na temat *VBC. exe*, zobacz [Visual Basic kompilator wiersza polecenia](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry zadania `Vbc`.
 
 | Parametr | Opis |
@@ -68,18 +70,18 @@ Zawija *VBC. exe*, który tworzy pliki wykonywalne ( *. exe*), biblioteki dołą
 | `OutputAssembly` | Opcjonalny `String` parametr wyjściowy.<br /><br /> Określa nazwę pliku wyjściowego. Ten parametr odnosi [się do przełącznika kompilatora](/dotnet/visual-basic/reference/command-line-compiler/out) *VBC. exe* . |
 | `Platform` | Opcjonalny parametr `String`.<br /><br /> Określa platformę procesora, do której ma być przeznaczony plik wyjściowy. Ten parametr może mieć wartość `x86`, `x64`, `Itanium`lub `anycpu`. Wartość domyślna to `anycpu`. Ten parametr odpowiada przełącznikowi [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) kompilatora *VBC. exe* . |
 | `References` | Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Powoduje, że zadanie importuje informacje o typie publicznym z określonych elementów do bieżącego projektu. Ten parametr odpowiada przełącznikowi [-Reference](/dotnet/visual-basic/reference/command-line-compiler/reference) kompilatora *VBC. exe* . |
-| `RemoveIntegerChecks` | Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, wyłącza sprawdzanie błędów przepełnienia liczby całkowitej. Wartość domyślna to `false`. Ten parametr odnosi się do przełącznika [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) kompilatora *VBC. exe* . |
+| `RemoveIntegerChecks` | Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, wyłącza sprawdzanie błędów przepełnienia liczby całkowitej. Wartością domyślną jest `false`. Ten parametr odnosi się do przełącznika [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) kompilatora *VBC. exe* . |
 | `Resources` | Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Osadza zasób .NET Framework w pliku wyjściowym. Ten parametr odnosi się do przełącznika [-Resource](/dotnet/visual-basic/reference/command-line-compiler/resource) kompilatora *VBC. exe* . |
 | `ResponseFiles` | Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa plik odpowiedzi zawierający polecenia dla tego zadania. Ten parametr odpowiada opcji [@ (Określ plik odpowiedzi)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) kompilatora *VBC. exe* . |
 | `RootNamespace` | Opcjonalny parametr `String`.<br /><br /> Określa główną przestrzeń nazw dla wszystkich deklaracji typu. Ten parametr odnosi się do przełącznika [-RootNamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) kompilatora *VBC. exe* . |
 | `SdkPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację plików *mscorlib. dll* i *Microsoft. VisualBasic. dll*. Ten parametr odnosi się do przełącznika [-SdkPath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) kompilatora *VBC. exe* . |
 | `Sources` | Opcjonalny parametr `[]` <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa co najmniej jeden Visual Basic pliki źródłowe. |
-| `TargetCompactFramework` | Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, zadanie odwołuje się do [!INCLUDE[Compact](../extensibility/includes/compact_md.md)]. Ten przełącznik odpowiada przełącznikowi [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) kompilatora *VBC. exe* . |
+| `TargetCompactFramework` | Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, zadanie odwołuje się do .NET Compact Framework. Ten przełącznik odpowiada przełącznikowi [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) kompilatora *VBC. exe* . |
 | `TargetType` | Opcjonalny parametr `String`.<br /><br /> Określa format pliku wyjściowego. Ten parametr może mieć wartość `library`, która tworzy bibliotekę kodu, `exe`, która tworzy aplikację konsolową, `module`, która tworzy moduł, lub `winexe`, który tworzy program systemu Windows. Wartość domyślna to `library`. Ten parametr odnosi się do przełącznika [-Target](/dotnet/visual-basic/reference/command-line-compiler/target) kompilatora *VBC. exe* . |
 | `Timeout` | Opcjonalny parametr `Int32`.<br /><br /> Określa ilość czasu (w milisekundach), po upływie którego plik wykonywalny zadania zostanie zakończony. Wartość domyślna to `Int.MaxValue`, co oznacza, że nie ma limitu czasu. |
-| `ToolPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (*VBC. exe*). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, która jest uruchomiona [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `ToolPath` | Opcjonalny parametr `String`.<br /><br /> Określa lokalizację, z której zadanie będzie ładować podstawowy plik wykonywalny (*VBC. exe*). Jeśli ten parametr nie jest określony, zadanie używa ścieżki instalacji zestawu SDK odpowiadającej wersji platformy, w której działa program MSBuild. |
 | `TreatWarningsAsErrors` | Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, wszystkie ostrzeżenia są traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror). |
-| `UseHostCompilerIfAvailable` | Opcjonalny parametr `Boolean`.<br /><br /> Instruuje zadanie, aby używało obiektu kompilatora w procesie, jeśli jest dostępny. Używane tylko przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
+| `UseHostCompilerIfAvailable` | Opcjonalny parametr `Boolean`.<br /><br /> Instruuje zadanie, aby używało obiektu kompilatora w procesie, jeśli jest dostępny. Używany tylko przez program Visual Studio. |
 | `Utf8Output` | Opcjonalny parametr `Boolean`.<br /><br /> Rejestruje dane wyjściowe kompilatora przy użyciu kodowania UTF-8. Ten parametr odnosi się do przełącznika [-utf8output —](/dotnet/visual-basic/reference/command-line-compiler/utf8output) kompilatora *VBC. exe* . |
 | `Verbosity` | Opcjonalny parametr `String`.<br /><br /> Określa poziom szczegółowości danych wyjściowych kompilatora. Poziom szczegółowości można `Quiet`, `Normal` (wartość domyślna) lub `Verbose`. |
 | `WarningsAsErrors` | Opcjonalny parametr `String`.<br /><br /> Określa listę ostrzeżeń, które mają być traktowane jako błędy. Aby uzyskać więcej informacji, zobacz [-warnaserror — (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Ten parametr zastępuje parametr `TreatWarningsAsErrors`. |
@@ -88,9 +90,11 @@ Zawija *VBC. exe*, który tworzy pliki wykonywalne ( *. exe*), biblioteki dołą
 | `Win32Resources` | Opcjonalny parametr `String`.<br /><br /> Wstawia plik zasobów Win32 ( *. res*) do pliku wyjściowego. Ten parametr odnosi się do przełącznika [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) kompilatora *VBC. exe* . |
 
 ## <a name="remarks"></a>Uwagi
+
  Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.ToolTask>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kompiluje projekt Visual Basic.
 
 ```xml
@@ -101,7 +105,8 @@ Zawija *VBC. exe*, który tworzy pliki wykonywalne ( *. exe*), biblioteki dołą
    OutputAssembly="out.exe"/>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Kompilator wiersza polecenia Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

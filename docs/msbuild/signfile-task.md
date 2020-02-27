@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 397366a7dac601cd11dc1c70efc352edf303a92e
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 133048a5bb8103c681d8e2b84e68033c486109e1
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579584"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632293"
 ---
 # <a name="signfile-task"></a>SignFile — zadanie
 
@@ -74,5 +74,6 @@ Podpisuje określony plik przy użyciu podanego certyfikatu.
 > Odcisk palca certyfikatu to skrót SHA-1 certyfikatu. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie skrótu SHA-1 certyfikatu zaufanego głównego urzędu certyfikacji](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). W przypadku kopiowania i wklejania odcisku palca z szczegółów certyfikatu upewnij się, że nie dołączysz znaku dodatkowego (3F) niewidocznego, co może uniemożliwić `SignFile` odnajdywania certyfikatu.
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

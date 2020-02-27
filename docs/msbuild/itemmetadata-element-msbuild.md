@@ -16,17 +16,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c19dbd74176babbf9e26030a68a6095992b660
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589373"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633619"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata —, element (MSBuild)
+
 Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawiera wartość metadanych elementu. Element może mieć dowolną liczbę par klucz-wartość metadanych.
 
- \<Project > \<Itemmanager > \<
+ \<Project > \<Itemmanager > \<>
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,15 +36,17 @@ Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawi
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
+
  Brak.
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
@@ -53,11 +56,13 @@ Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawi
 |[Element](../msbuild/item-element-msbuild.md)|Element zdefiniowany przez użytkownika, który definiuje dane wejściowe dla procesu kompilacji.|
 
 ## <a name="text-value"></a>Wartość tekstowa
+
  Wartość tekstowa jest opcjonalna.
 
  Ten tekst Określa wartość metadanych elementu, która może być tekstem lub XML.
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu pokazuje, jak dodać `Culture` metadanych z wartością `fr` do `CSFile`elementu.
 
 ```xml
@@ -68,6 +73,7 @@ Zawiera klucz metadanych elementu zdefiniowanego przez użytkownika, który zawi
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementy](../msbuild/msbuild-items.md)

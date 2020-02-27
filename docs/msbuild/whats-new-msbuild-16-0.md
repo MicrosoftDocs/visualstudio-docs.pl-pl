@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 1a83ce4cf47f8a1607e562dfdb69b5b7374de1a6
-ms.sourcegitcommit: ca9375d1c48355f2e9f7bc1b2d3f0e94eb15db00
+ms.openlocfilehash: abd8ba039f9f6a19f5c028e05c03151c090e304c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76022343"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631006"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Co nowego w programie MSBuild 16,0
 
@@ -35,5 +35,6 @@ W tym artykule opisano zaktualizowane funkcje i właściwości w programie MSBui
 
 Program MSBuild (i Visual Studio) jest teraz przeznaczony dla platformy .NET Framework 4.7.2. Jeśli chcesz używać nowych funkcji interfejsu API programu MSBuild, Twój zestaw również wymaga uaktualnienia, ale istniejący kod w dalszym ciągu będzie działać.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [MSBuild](../msbuild/msbuild.md)

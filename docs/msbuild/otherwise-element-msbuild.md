@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594845"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633047"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise — element (MSBuild)
+
 Określa blok kodu do wykonania, gdy i tylko wtedy, gdy warunki wszystkich `When` elementów są szacowane do `false`.
 
  \<> projektu \<wybierz > \<, gdy > \<wybierz >... \<w przeciwnym razie > \<wybierz >...
@@ -41,9 +42,11 @@ Określa blok kodu do wykonania, gdy i tylko wtedy, gdy warunki wszystkich `When
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
+
  Brak.
 
 ### <a name="child-elements"></a>Elementy podrzędne
@@ -61,11 +64,13 @@ Określa blok kodu do wykonania, gdy i tylko wtedy, gdy warunki wszystkich `When
 |[Następnie](../msbuild/choose-element-msbuild.md)|Oblicza elementy podrzędne, aby wybrać jedną sekcję kodu do wykonania.|
 
 ## <a name="remarks"></a>Uwagi
+
  Może istnieć tylko jeden element `Otherwise` w elemencie `Choose` i musi być ostatnim elementem.
 
  Elementy `Choose`, `When`i `Otherwise` są używane razem, aby zapewnić możliwość wybrania jednej sekcji kodu do wykonania z wielu możliwych wariantów. Aby uzyskać więcej informacji, zobacz [konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Przykład
+
  Następujący projekt używa elementu `Choose`, aby wybrać zestaw wartości właściwości w elementach `When` do ustawienia. Jeśli `Condition` atrybuty obu elementów `When` oblicza do `false`, wartości właściwości w elemencie `Otherwise` są ustawiane.
 
 ```xml
@@ -113,6 +118,7 @@ Określa blok kodu do wykonania, gdy i tylko wtedy, gdy warunki wszystkich `When
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Konstrukcje warunkowe](../msbuild/msbuild-conditional-constructs.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)

@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee4620e845205a936bbdf48a9872c4dec3305ea
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9335ca6608d36edbd17e47a441e13aecaa41c890
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596037"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634204"
 ---
 # <a name="file-tracking"></a>Śledzenie plików
+
 Dzienniki śledzenia plików są wywołaniami systemu plików Windows dla procesu i jego procesów podrzędnych. Wywołując funkcje wymienione poniżej, programy kontrolują, kiedy należy włączyć i wyłączyć rejestrowanie i określić plik dziennika, który ma być używany.
 
 - [EndTrackingContext](../msbuild/endtrackingcontext.md) Zatrzymaj śledzenie bieżącego kontekstu.

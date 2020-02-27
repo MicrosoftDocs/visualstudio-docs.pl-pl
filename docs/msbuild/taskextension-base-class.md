@@ -16,17 +16,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58410d1a2dbb2fc477915ac78e30a67b525e59f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3dc771f16c7077549ba06d5cdda422319554d40
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594958"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631708"
 ---
 # <a name="taskextension-base-class"></a>Klasa bazowa TaskExtension
+
 Wiele zadań dziedziczy z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Ten łańcuch dziedziczenia dodaje kilka parametrów do zadań, które pochodzą z nich. Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
+
  W poniższej tabeli opisano parametry klas bazowych.
 
 |Parametr|Opis|
@@ -37,6 +39,7 @@ Wiele zadań dziedziczy z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, któ
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskHost>.<br /><br /> Określa wystąpienie obiektu hosta (może mieć wartość null). Aparat kompilacji ustawia tę właściwość, jeśli IDE hosta skojarzył obiekt hosta z tym konkretnym zadaniem.|
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|Opcjonalny <xref:Microsoft.Build.Utilities.TaskLoggingHelper> parametr tylko do odczytu.<br /><br /> Pobiera obiekt `TaskLoggingHelperExtension`, który zawiera metody rejestrowania zadań.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)

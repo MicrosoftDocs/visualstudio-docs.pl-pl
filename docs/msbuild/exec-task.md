@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78aef20a322ad3743ed1cb89955654456dff670e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f588ae1b32b8b8d47d6323ee32d02c9053a3de32
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591453"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634217"
 ---
 # <a name="exec-task"></a>Exec — Zadanie
+
 Uruchamia określony program lub polecenie przy użyciu określonych argumentów.
 
 ## <a name="parameters"></a>Parametry
+
 W poniższej tabeli opisano parametry zadania `Exec`.
 
 |Parametr|Opis|
@@ -48,13 +50,15 @@ W poniższej tabeli opisano parametry zadania `Exec`.
 |`WorkingDirectory`|Opcjonalny parametr `String`.<br /><br /> Określa katalog, w którym zostanie uruchomione polecenie.<br /><br />Domyślnie: bieżący katalog roboczy projektu.|
 
 ## <a name="remarks"></a>Uwagi
-To zadanie jest przydatne, gdy określone zadanie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dla zadania, które chcesz wykonać, jest niedostępne. Jednak zadanie `Exec`, w przeciwieństwie do bardziej określonego zadania, nie może wykonać dodatkowych operacji przetwarzania ani wykonywania warunkowego na podstawie wyniku uruchomionego narzędzia lub polecenia.
+
+To zadanie jest przydatne, gdy określone zadanie programu MSBuild dla zadania, które chcesz wykonać, jest niedostępne. Jednak zadanie `Exec`, w przeciwieństwie do bardziej określonego zadania, nie może wykonać dodatkowych operacji przetwarzania ani wykonywania warunkowego na podstawie wyniku uruchomionego narzędzia lub polecenia.
 
 Zadanie `Exec` wywołuje *cmd. exe* , zamiast bezpośrednio wywołujący proces.
 
 Oprócz parametrów wymienionych w tym dokumencie, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.ToolTask>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [ToolTaskExtension Base Class](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
 Poniższy przykład używa zadania `Exec`, aby uruchomić polecenie.
 
 ```xml
@@ -70,6 +74,7 @@ Poniższy przykład używa zadania `Exec`, aby uruchomić polecenie.
 </Project>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

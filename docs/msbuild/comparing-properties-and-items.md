@@ -10,24 +10,27 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596128"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634412"
 ---
 # <a name="compare-properties-and-items"></a>Porównanie właściwości i elementów
+
 Właściwości i elementy programu MSBuild służą do przekazywania informacji do zadań, oceniania warunków i przechowywania wartości, do których można się odwoływać w całym pliku projektu.
 
-- Właściwości to pary nazwa-wartość. Aby uzyskać więcej informacji, zobacz [właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+- Właściwości to pary nazwa-wartość. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
 
 - Elementy to obiekty, które zwykle reprezentują pliki. Obiekty elementów mogą mieć skojarzone kolekcje metadanych. Metadane to pary nazwa-wartość. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
 
 ## <a name="scalars-and-vectors"></a>Wartości skalarne i wektory
+
 Ponieważ właściwości programu MSBuild to pary nazwa-wartość, które mają tylko jedną wartość ciągu, są one często opisane jako *skalarne*. Ponieważ typy elementów programu MSBuild to listy, często są one opisane jako *wektor*. Jednakże w przypadku właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
 
 ### <a name="target-dependency-injection"></a>Docelowa iniekcja zależności
+
 Aby zobaczyć, jak właściwości mogą reprezentować wiele wartości, należy wziąć pod uwagę typowy wzorzec użycia w celu dodania celu do listy obiektów docelowych do skompilowania. Ta lista jest zazwyczaj reprezentowana przez wartość właściwości, z nazwami docelowymi oddzielonymi średnikami.
 
 ```xml
@@ -40,7 +43,7 @@ Aby zobaczyć, jak właściwości mogą reprezentować wiele wartości, należy 
 </PropertyGroup>
 ```
 
-Właściwość `BuildDependsOn` jest zwykle używana jako argument docelowego atrybutu `DependsOnTargets`, efektywnie konwertując go na listę elementów. Ta właściwość może zostać zastąpiona w celu dodania celu lub zmiany docelowej kolejności wykonania. Na przykład
+Właściwość `BuildDependsOn` jest zwykle używana jako argument docelowego atrybutu `DependsOnTargets`, efektywnie konwertując go na listę elementów. Ta właściwość może zostać zastąpiona w celu dodania celu lub zmiany docelowej kolejności wykonania. Na przykład:
 
 ```xml
 <PropertyGroup>
@@ -56,6 +59,7 @@ dodaje element docelowy CustomBuild do listy target, dając `BuildDependsOn` war
 Począwszy od programu MSBuild 4,0, docelowa iniekcja zależności jest przestarzała. Zamiast tego użyj atrybutów `AfterTargets` i `BeforeTargets`. Aby uzyskać więcej informacji, zobacz [Target Order Build](../msbuild/target-build-order.md).
 
 ### <a name="conversions-between-strings-and-item-lists"></a>Konwersje między ciągami i listami elementów
+
 MSBuild wykonuje konwersje do i z typów elementów oraz wartości ciągów zgodnie z wymaganiami. Aby zobaczyć, jak lista elementów może być wartością ciągu, należy wziąć pod uwagę, co się dzieje, gdy typ elementu jest używany jako wartość właściwości programu MSBuild:
 
 ```xml
@@ -70,6 +74,7 @@ MSBuild wykonuje konwersje do i z typów elementów oraz wartości ciągów zgod
 Typ elementu OutputDir ma atrybut `Include` o wartości "\\plików";\\certyfikatów ". Program MSBuild analizuje ten ciąg w dwóch elementach: plikach z certyfikatami \ i Certificates\\. Gdy typ elementu OutputDir jest używany jako wartość właściwości OutputDirList, MSBuild konwertuje lub "spłaszcza" typu elementu do postaci ciągów rozdzielanych średnikami "\\plików".\\certyfikatów ".
 
 ## <a name="properties-and-items-in-tasks"></a>Właściwości i elementy w zadaniach
+
 Właściwości i elementy są używane jako dane wejściowe i wyjściowe do zadań programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 Właściwości są przesyłane do zadań jako atrybuty. W ramach zadania Właściwość programu MSBuild jest reprezentowana przez typ właściwości, którego wartość może zostać przekonwertowana na i z ciągu. Obsługiwane typy właściwości obejmują `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string`i dowolnego typu, który <xref:System.Convert.ChangeType%2A> może obsłużyć.
@@ -79,6 +84,7 @@ Elementy są przesyłane do zadań jako obiekty <xref:Microsoft.Build.Framework.
 Listę elementów typu elementu można przesłać jako tablicę obiektów `ITaskItem`. Począwszy od .NET Framework 3,5, elementy można usunąć z listy elementów w obiekcie docelowym przy użyciu atrybutu `Remove`. Ponieważ elementy można usunąć z listy elementów, istnieje możliwość, aby typ elementu miał zero elementów. Jeśli lista elementów jest przenoszona do zadania, kod w zadaniu powinien sprawdzać tę możliwość.
 
 ## <a name="property-and-item-evaluation-order"></a>Kolejność szacowania właściwości i elementów
+
 W fazie oceny kompilacji importowane pliki są włączane do kompilacji w kolejności, w jakiej są wyświetlane. Właściwości i elementy są zdefiniowane w trzech przebiegach w następującej kolejności:
 
 - Właściwości są definiowane i modyfikowane w kolejności, w jakiej są wyświetlane.
@@ -104,6 +110,7 @@ Nie jest to jednak Kompletna historia. Gdy właściwość, definicja elementu lu
   - Właściwości i elementy, które są zdefiniowane w obiektach docelowych, są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, a wartości właściwości są rozwijane w wyrażeniach. Wartości elementów i przekształcenia elementów są również rozwinięte. Wartości właściwości, wartości typu elementu i wartości metadanych są ustawiane na rozszerzone wyrażenia.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Delikatne efekty kolejności oceny
+
 W fazie oceny kompilacji właściwość Ocena poprzedza element oceny elementu. Niemniej jednak właściwości mogą mieć wartości, które są zależne od wartości elementów. Rozważmy następujący skrypt.
 
 ```xml
@@ -178,5 +185,6 @@ Wartość `KeyFileVersion` jest ustawiona na "1.0.0.3", a nie "\@(KeyFile->"% (w
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)

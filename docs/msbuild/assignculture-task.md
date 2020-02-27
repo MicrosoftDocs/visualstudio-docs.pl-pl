@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393077d6391a5c1f5f4088773013538efbedc9f7
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578704"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634568"
 ---
 # <a name="assignculture-task"></a>AssignCulture — zadanie
+
 To zadanie akceptuje listę elementów, które mogą zawierać prawidłowy ciąg identyfikatora kultury .NET jako część nazwy pliku i tworzy elementy, które mają metadane o nazwie `Culture` zawierający odpowiedni identyfikator kultury. Na przykład nazwa pliku *Form1.fr-fr. resx* ma osadzony identyfikator kultury "fr-fr", więc to zadanie spowoduje utworzenie elementu o tej samej nazwie pliku z metadanymi `Culture` równe `fr-fr`. Zadanie tworzy również listę nazw plików z kulturą usuniętą z pliku.
 
 ## <a name="task-parameters"></a>Parametry zadania
+
 W poniższej tabeli opisano parametry zadania `AssignCulture`.
 
 |Parametr|Opis|
@@ -40,9 +42,11 @@ W poniższej tabeli opisano parametry zadania `AssignCulture`.
 |`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa listę plików z osadzonymi nazwami kultur, do której ma zostać przypisana kultura.|
 
 ## <a name="remarks"></a>Uwagi
+
 Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład wykonuje zadanie `AssignCulture` przy użyciu kolekcji elementów `ResourceFiles`.
 
 ```xml
@@ -78,5 +82,6 @@ W poniższej tabeli opisano wartości elementów wyjściowych po wykonaniu zadan
 |`OutCultureNeutralAssignedFiles`|*MyResource1. resx* (Culture = "fr")<br /><br /> *MyResource2. XX. resx* (brak dodatkowych metadanych)|
 
 ## <a name="see-also"></a>Zobacz też
+
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

@@ -18,14 +18,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594854"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633034"
 ---
 # <a name="output-element-msbuild"></a>Output — element (MSBuild)
+
 Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
 
  \<Project > \<Target > \<zadanie > \<danych wyjściowych >
@@ -39,9 +40,10 @@ Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
 ```
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
+
  W poniższych sekcjach opisano atrybuty, elementy podrzędne i elementy nadrzędne.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
 |Atrybut|Opis|
 |---------------|-----------------|
@@ -51,15 +53,17 @@ Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
+
  Brak.
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Zadanie](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Zadanie podrzędne](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania programu MSBuild. |
 
 ## <a name="example"></a>Przykład
+
  Poniższy przykład kodu pokazuje zadanie `Csc` wykonywane wewnątrz elementu `Target`. Elementy i właściwości przesłane do parametrów zadania są zadeklarowane poza zakresem tego przykładu. Wartość z `OutputAssembly` parametru wyjściowego jest przechowywana w elemencie `FinalAssemblyName`, a wartość z parametru wyjściowego `BuildSucceeded` jest przechowywana we właściwości `BuildWorked`. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
 
 ```xml
@@ -79,6 +83,7 @@ Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
 </Target>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
+
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
 - [Zadania](../msbuild/msbuild-tasks.md)
