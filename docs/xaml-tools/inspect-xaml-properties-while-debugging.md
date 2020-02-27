@@ -3,18 +3,18 @@ title: Sprawdź właściwości XAML podczas debugowania | Microsoft Docs
 ms.date: 11/12/2019
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 61893e06f79b14b95ebb5b923eca581b047d979b
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: 36246f959aa49e49aa84defc203075f163c67118
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072763"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706412"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Sprawdzanie właściwości XAML podczas debugowania 
 
@@ -31,7 +31,7 @@ Można używać tych narzędzi w następujących konfiguracjach:
 
 Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk. Za każdym razem, gdy klikniesz przycisk, kolejny element zostanie dodany do listy. Elementy oznaczone parzyste są kolorami szarymi, a elementy o numerach nieparzystych są kolorem żółtym.
 
-### <a name="create-the-project"></a>Utwórz projekt
+### <a name="create-the-project"></a>Tworzenie projektu
 
 1. Utwórz C# nową aplikację WPF (**plik** > **nowym** > **projekcie**, a następnie wpisz ciągC# "WPF" i wybierz pozycję **Aplikacja WPF (.NET Core)** lub **Aplikacja WPF (.NET Framework)** . Nadaj mu nazwę **TestXaml**.
 
@@ -74,7 +74,7 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
    }
    ```
 
-1. Skompiluj projekt i Rozpocznij debugowanie. (Konfiguracja kompilacji musi być debugowana, nie wersja. Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).)
+1. Skompiluj projekt, a następnie rozpocząć debugowanie. (Konfiguracja kompilacji musi być debugowana, nie wersja. Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md).)
 
    Po wyświetleniu okna powinien pojawić się pasek narzędzi w aplikacji w działającej aplikacji.
 
@@ -110,12 +110,12 @@ Zacznijmy od bardzo prostej aplikacji WPF, która zawiera widok listy i przycisk
 
 1. Teraz przyjrzyjmy się właściwościom jednego z elementów pola listy.
 
-   Wybierz pierwszy element pola listy w **dynamicznym drzewie wizualnym** i kliknij ikonę **Pokaż właściwości** na pasku narzędzi. Powinien pojawić się **Eksplorator właściwości na żywo** . Należy pamiętać, że pole **Content** ma wartość "Item1 —", a pole**koloru**  >  w **tle**jest **#FFFFFFE0**.
+   Wybierz pierwszy element pola listy w **dynamicznym drzewie wizualnym** i kliknij ikonę **Pokaż właściwości** na pasku narzędzi. Powinien pojawić się **Eksplorator właściwości na żywo** . Należy pamiętać, że pole **Content** ma wartość "Item1 —", a pole **koloru** > **tła** jest **#FFFFFFE0**.
    
 1. Wróć do **aktywnego drzewa wizualnego** i wybierz drugi element pola listy. **Eksplorator właściwości na żywo** powinien pokazać, że pole **Content** ma wartość "Item2 —", a pole **koloru** > **tła** jest **#FFD3D3D3** (w zależności od motywu).
 
    > [!NOTE]
-   > Żółte obramowanie wokół właściwości w **Eksploratorze właściwości na żywo** oznacza, że wartość właściwości jest ustawiana za pośrednictwem powiązania, takiego jak `Color = {BindingExpression}`. Zielona krawędź oznacza, że wartość jest ustawiana za pomocą zasobu, na przykład `Color = {StaticResource MyBrush}`.
+   > Żółte obramowanie wokół właściwości w **Eksploratorze właściwości na żywo** oznacza, że wartość właściwości jest ustawiana za pośrednictwem powiązania, takiego jak `Color = {BindingExpression}`. Zielona krawędź oznacza, że wartość jest ustawiana za pomocą zasobu, takiego jak `Color = {StaticResource MyBrush}`.
 
    Rzeczywista struktura języka XAML zawiera wiele elementów, które prawdopodobnie nie są bezpośrednio zainteresowane. Jeśli nie znasz dobrze kodu, być może masz czas, w którym możesz uzyskać informacje o tym, czego szukasz. Tak więc **dynamiczne drzewo wizualne** zawiera kilka sposobów umożliwiających znalezienie elementu, który ma być badany, za pomocą interfejsu użytkownika aplikacji.
 
@@ -151,6 +151,6 @@ Możesz użyć tych narzędzi XAML nawet wtedy, gdy nie masz kodu źródłowego.
 
 4. W drugim wystąpieniu programu Visual Studio Otwórz **dynamiczne drzewo wizualne** (**Debug > Windows > Live Visual Tree**). Powinny być widoczne elementy interfejsu użytkownika **TestXaml** i być możliwe ich manipulowanie tak jak podczas debugowania aplikacji bezpośrednio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Pisanie i debugowanie uruchomionego kodu XAML z gorącą funkcją XAML](xaml-hot-reload.md)

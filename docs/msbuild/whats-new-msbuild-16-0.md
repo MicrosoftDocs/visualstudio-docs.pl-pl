@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: abd8ba039f9f6a19f5c028e05c03151c090e304c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 69c576f34b73ec99edd231d39e8bfa8ea661f2ff
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631006"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652810"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Co nowego w programie MSBuild 16,0
 
@@ -21,7 +21,7 @@ W tym artykule opisano zaktualizowane funkcje i właściwości w programie MSBui
 
 ## <a name="changed-path"></a>Zmieniona ścieżka
 
- Program MSBuild jest zainstalowany w folderze *\Current* w każdej wersji programu Visual Studio. Na przykład *C:\Program Files (x86) \Microsoft Visual Studio\Current\Enterprise\MSBuild*. Możesz również użyć następującego modułu programu PowerShell, aby zlokalizować program MSBuild: [vssetup. PowerShell](https://github.com/Microsoft/vssetup.powershell).
+ Program MSBuild jest zainstalowany w folderze *\Current* w każdej wersji programu Visual Studio, a pliki wykonywalne znajdują się w podfolderze *\Bin* . Na przykład ścieżka do programu *MSBuild. exe* zainstalowana z programem visual Studio 2019 Community to *C:\Program Files (x86) \Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe* można także użyć następującego modułu programu PowerShell do zlokalizowania programu MSBuild: [vssetup. PowerShell](https://github.com/Microsoft/vssetup.powershell).
 
 ## <a name="changed-properties"></a>Zmienione właściwości
 
