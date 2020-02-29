@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587449"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167627"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
@@ -78,7 +78,7 @@ Właściwości tego atrybutu obejmują:
 
 - **Zakres** — element docelowy, na którym jest pomijane ostrzeżenie. Jeśli obiekt docelowy nie jest określony, zostanie ustawiony na obiekt docelowy atrybutu. Obsługiwane są następujące [zakresy](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) :
 
-  - `module` — ten zakres pomija ostrzeżenia względem zestawu. Jest to globalne pominięcie, które ma zastosowanie do całego projektu.
+  - [`module`](#module-suppression-scope) — ten zakres pomija ostrzeżenia względem zestawu. Jest to globalne pominięcie, które ma zastosowanie do całego projektu.
 
   - `resource` — (tylko[starsze FxCop](../code-quality/static-code-analysis-for-managed-code-overview.md) ) ten zakres pomija ostrzeżenia w informacjach diagnostycznych zapisywana w plikach zasobów, które są częścią modułu (zestawu). Ten zakres nie jest odczytywany/respektowany w C#kompilatorach/vb dla diagnostyki analizatora Roslyn, który analizuje tylko pliki źródłowe.
 
@@ -174,11 +174,19 @@ Pomijanie na poziomie globalnym jest jedynym sposobem, aby pominąć komunikaty 
 > [!NOTE]
 > `Target` zawsze zawiera w pełni kwalifikowaną nazwę elementu.
 
-## <a name="global-suppression-file"></a>Globalny plik pominięć
+### <a name="global-suppression-file"></a>Globalny plik pominięć
 
 Globalny plik pominięć zachowuje pominięcia, które są pominięciami lub pominięciami na poziomie globalnym, które nie określają celu. Na przykład pominięcia dla naruszeń poziomu zestawu są przechowywane w tym pliku. Ponadto niektóre ASP.NET są przechowywane w tym pliku, ponieważ ustawienia na poziomie projektu nie są dostępne dla kodu za formularzem. Globalny plik pomijania jest tworzony i dodawany do projektu przy pierwszym zaznaczeniu opcji **w pliku pomijania projektu** **w oknie** **Lista błędów** .
 
-## <a name="see-also"></a>Zobacz także
+### <a name="module-suppression-scope"></a>Zakres pomijania modułu
+
+Można pominąć naruszenia jakości kodu dla całego zestawu przy użyciu zakresu **modułu** .
+
+Na przykład następujący atrybut w pliku projektu _GlobalSuppressions_ będzie pomijał naruszenie zasad ConfigureAwait dla projektu ASP.NET Core:
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

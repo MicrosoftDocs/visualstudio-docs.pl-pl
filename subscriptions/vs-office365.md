@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat korzyści z korzystania z pakietu Office 365 Pro Plus w niektórych subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036732"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904155"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Pakiet Office 365 Pro Plus w subskrypcjach programu Visual Studio
 
@@ -76,14 +76,15 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, platformy Azure DevOps lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - Kredyty na korzystanie z [usługi Azure DevTest](vs-azure.md) Jeśli planujesz opracowywać aplikacje dla pakietu Office, chcesz aktywować [subskrypcję dewelopera pakietu Office](vs-office-dev.md)
 
-## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](/azure/devops/)
-- [Dokumentacja platformy Azure](/azure/)
-- [Dokumentacja Microsoft 365](/microsoft-365/)

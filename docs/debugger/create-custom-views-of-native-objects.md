@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091786"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167757"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Tworzenie niestandardowych widoków C++ obiektów w debugerze przy użyciu struktury Natvis
 
@@ -94,6 +94,30 @@ Debuger programu Visual Studio ładuje pliki *Natvis* w C++ projektach automatyc
 >[!NOTE]
 >Reguły Natvis zostały załadowane z *. pdb* stosuje się tylko do typów modułów, do których odwołuje się plik. *PDB* . Na przykład jeśli *Module1. pdb* ma wpis Natvis dla typu o nazwie `Test`, dotyczy tylko klasy `Test` w *Module1. dll*. Jeśli inny moduł również definiuje klasę o nazwie `Test`, wpis Natvis *Module1. pdb* nie dotyczy tego elementu.
 
+**Aby zainstalować i zarejestrować plik *. Natvis* za pośrednictwem pakietu VSIX:**
+
+Pakiet VSIX może instalować i rejestrować pliki *. Natvis* . Niezależnie od tego, gdzie są zainstalowane, wszystkie zarejestrowane pliki *Natvis* są automatycznie wybierane podczas debugowania.
+
+1. Dołącz plik *. Natvis* w pakiecie VSIX. Na przykład dla następującego pliku projektu:
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+     <ItemGroup>
+       <VSIXSourceItem Include="Visualizer.natvis" />
+     </ItemGroup>
+   </Project>
+   ```
+
+2. Zarejestruj plik *Natvis* w pliku *source. Extension. vsixmanifest* :
+   ```xml
+   <?xml version="1.0" encoding="utf-8"?>
+   <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+     <Assets>
+       <Asset Type="NativeVisualizer" Path="Visualizer.natvis"  />
+     </Assets>
+   </PackageManifest>
+   ```
+
 ### <a name="BKMK_natvis_location"></a>Lokalizacje plików Natvis
 
 Pliki *. Natvis* można dodać do katalogu użytkownika lub do katalogu systemowego, jeśli mają być stosowane do wielu projektów.
@@ -104,19 +128,21 @@ Pliki *. Natvis* są oceniane w następującej kolejności:
 
 2. Wszystkie pliki *Natvis* , które znajdują się w C++ załadowanym projekcie lub w rozwiązaniu najwyższego poziomu. Ta grupa zawiera wszystkie załadowane C++ projekty, w tym biblioteki klas, ale nie projekty w innych językach.
 
+3. Wszystkie pliki *Natvis* zainstalowane i zarejestrowane za pośrednictwem pakietu VSIX.
+
 ::: moniker range="vs-2017"
 
-3. Katalog Natvis specyficzny dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2017 \ Wizualizatory*).
+4. Katalog Natvis specyficzny dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2017 \ Wizualizatory*).
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. Katalog Natvis specyficzny dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2019 \ Wizualizatory*).
+4. Katalog Natvis specyficzny dla użytkownika (na przykład *%USERPROFILE%\Documents\Visual Studio 2019 \ Wizualizatory*).
 
 ::: moniker-end
 
-4. Katalog Natvis całego systemu ( *%VSInstallDir%\Common7\Packages\Debugger\Visualizers*). Ten katalog zawiera pliki *. Natvis* , które są instalowane z programem Visual Studio. Jeśli masz uprawnienia administratora, możesz dodać pliki do tego katalogu.
+5. Katalog Natvis całego systemu ( *%VSInstallDir%\Common7\Packages\Debugger\Visualizers*). Ten katalog zawiera pliki *. Natvis* , które są instalowane z programem Visual Studio. Jeśli masz uprawnienia administratora, możesz dodać pliki do tego katalogu.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Modyfikuj pliki Natvis podczas debugowania
 
@@ -236,7 +262,7 @@ W poniższym przykładzie Wizualizacja dotyczy tylko typu `BaseClass`:
 
 #### <a name="priority-attribute"></a>Priorytet — atrybut
 
-Opcjonalny atrybut `Priority` określa kolejność, w której mają być używane definicje alternatywne, jeśli nie można przeanalizować definicji. Możliwe wartości `Priority` to: `Low`, `MediumLow`,`Medium`, `MediumHigh`i `High`. Wartość domyślna to `Medium`. Atrybut `Priority` odróżnia tylko między priorytetami w tym samym pliku *. Natvis* .
+Opcjonalny atrybut `Priority` określa kolejność, w której mają być używane definicje alternatywne, jeśli nie można przeanalizować definicji. Możliwe wartości `Priority` to: `Low`, `MediumLow`,`Medium`, `MediumHigh`i `High`. Wartością domyślną jest `Medium`. Atrybut `Priority` odróżnia tylko między priorytetami w tym samym pliku *. Natvis* .
 
 Poniższy przykład najpierw analizuje wpis pasujący do 2015 STL. Jeśli przeanalizowanie nie powiedzie się, używa alternatywnego wpisu dla wersji 2013 biblioteki STL:
 
@@ -682,7 +708,7 @@ Każdy typ zdefiniowany w pliku *Natvis* musi jawnie zawierać wszystkie WIZUALI
 </Type>
 ```
 
- Można zobaczyć przykład `UIVisualizer` w rozszerzeniu [czujki obrazu](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) używanym do wyświetlania map bitowych w pamięci.
+ Można zobaczyć przykład `UIVisualizer` w rozszerzeniu [czujki obrazu](https://marketplace.visualstudio.com/search?term=%22Image%20Watch%22&target=VS&category=All%20categories&vsVersion=&sortBy=Relevance) używanym do wyświetlania map bitowych w pamięci.
 
 ### <a name="BKMK_CustomVisualizer"></a>CustomVisualizer, element
  `CustomVisualizer` jest punktem rozszerzalności, który określa rozszerzenie VSIX, które można napisać, aby kontrolować wizualizacje w programie Visual Studio Code. Aby uzyskać więcej informacji na temat pisania rozszerzeń VSIX, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).

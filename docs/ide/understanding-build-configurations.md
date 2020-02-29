@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027618"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904168"
 ---
 # <a name="understand-build-configurations"></a>Opis konfiguracji kompilacji
 
@@ -44,11 +44,11 @@ Konfiguracje kompilacji muszą być potrzebne do kompilowania projektów przy u�
 
 Konfiguracja i sterowanie platformą, w której są przechowywane skompilowane pliki wyjściowe. Zwykle, gdy program Visual Studio kompiluje projekt, dane wyjściowe są umieszczane w podfolderze projektu o nazwie z aktywną konfiguracją (na przykład *bin/debug/x86*), ale można to zmienić.
 
-Możesz tworzyć własne konfiguracje kompilacji na poziomie rozwiązania i projektu. Konfiguracja rozwiązania określa, które projekty są uwzględniane w kompilacji, gdy ta konfiguracja jest aktywna. Zostaną skompilowane tylko projekty określone w aktywnej konfiguracji rozwiązania. Konfiguracja projektu określa, jakie ustawienia kompilacji i opcje kompilatora są używane podczas kompilowania projektu.
+Możesz tworzyć własne konfiguracje kompilacji na poziomie rozwiązania i projektu. Konfiguracja rozwiązania określa, które projekty są uwzględniane w kompilacji, gdy ta konfiguracja jest aktywna. Zostaną skompilowane tylko projekty określone w aktywnej konfiguracji rozwiązania. Jeśli w Configuration Manager wybrano wiele platform docelowych, tworzone są wszystkie projekty, które są stosowane do danej platformy. Konfiguracja projektu określa, jakie ustawienia kompilacji i opcje kompilatora są używane podczas kompilowania projektu.
 
 Aby utworzyć, wybrać, zmodyfikować lub usunąć konfigurację, można użyć **Configuration Manager**. Aby go otworzyć, na pasku menu wybierz opcję **kompiluj** > **Configuration Manager**lub po prostu wpisz **konfigurację** w polu wyszukiwania. Możesz również użyć listy **konfiguracje rozwiązania** na pasku narzędzi **Standardowy** , aby wybrać konfigurację lub otworzyć **Configuration Manager**.
 
-![Menedżer konfiguracji](media/understanding-build-configurations/config-manager.png)
+![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Jeśli nie możesz znaleźć ustawień konfiguracji rozwiązania na pasku narzędzi i nie można uzyskać dostępu do **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] można zastosować ustawienia deweloperskie. Aby uzyskać więcej informacji, zobacz [How to: Manage Configurations with Visual Basic Settings Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -70,6 +70,12 @@ Aktywna Konfiguracja rozwiązania zapewnia również kontekst dla środowiska ID
 Konfiguracja i platforma, do których elementy docelowe projektu są używane razem, do określania ustawień kompilacji i opcji kompilatora, które mają być używane podczas kompilowania. Projekt może mieć różne ustawienia dla każdej kombinacji konfiguracji i platformy. Aby zmodyfikować właściwości projektu, otwórz menu skrótów dla projektu w **Eksplorator rozwiązań**, a następnie wybierz **Właściwości**.  W górnej części karty **kompilacja** projektanta projektu wybierz aktywną konfigurację, aby edytować jej ustawienia kompilacji.
 
 ![Konfiguracje projektanta projektu](media/understanding-build-configurations/project-designer-configuration.png)
+
+## <a name="building-multiple-configurations"></a>Kompilowanie wielu konfiguracji
+
+W przypadku kompilowania rozwiązania przy użyciu polecenia **kompiluj** > **Kompiluj rozwiązanie** program Visual Studio kompiluje tylko aktywną konfigurację. Wszystkie projekty, które są określone w tej konfiguracji rozwiązania, są kompilowane i jedyną utworzoną konfiguracją projektu jest ta, która jest określona w aktywnej konfiguracji rozwiązania i aktywnej platformie rozwiązania, która jest wyświetlana na pasku narzędzi w programie Visual Studio. Na przykład **debugowanie** i **x86**. Inne zdefiniowane konfiguracje i platformy nie są kompilowane.
+
+Jeśli chcesz skompilować wiele konfiguracji i platform w jednej akcji, możesz użyć opcji Kompiluj > Batch **Build** w programie Visual Studio. Aby uzyskać dostęp do tej funkcji, naciśnij klawisz **Ctrl**+**Q** , aby otworzyć pole wyszukiwania, a następnie wprowadź `Batch build`. Kompilacja wsadowa nie jest dostępna dla wszystkich typów projektów. Zobacz [jak: kompilowanie wielu konfiguracji jednocześnie](how-to-build-multiple-configurations-simultaneously.md).
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Jak program Visual Studio przypisuje konfiguracje projektu
 
