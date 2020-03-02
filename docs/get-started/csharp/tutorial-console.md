@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6e4bb97cc510ceb580b28a05eb6f3b27acdd451a
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 528887c477814b7011cf941a9198f83701beee54
+ms.sourcegitcommit: 2f6c6434419ac25ef166b1ccc409527cf69e6674
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580013"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78215435"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Samouczek: tworzenie prostej C# aplikacji konsolowej w programie Visual Studio
 
@@ -329,15 +329,15 @@ Klasa `Calculator` będzie obsługiwać zbiorczą ilość pracy obliczeniowej, a
 
 Zacznijmy.
 
-1. Usuń wszystko *po* następującym bloku kodu:
+1. Usuń wszystko w `Calculator` przestrzeni nazw między otwierającym i zamykającym nawiasem klamrowym:
 
     ```csharp
-
     using System;
 
     namespace Calculator
     {
-
+        
+    }
     ```
 
 1. Następnie Dodaj nową klasę `Calculator` w następujący sposób:
@@ -605,7 +605,7 @@ Gratulujemy wykonanie kroków tego samouczka! Aby dowiedzieć się jeszcze więc
 > [!div class="nextstepaction"]
 > [Kontynuuj, aby C# uzyskać więcej samouczków](/dotnet/csharp/tutorials/)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Dowiedz się C# , jak debugować kod w programie Visual Studio](tutorial-debugger.md)
