@@ -280,12 +280,14 @@
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: Platforma ASP.NET debugowania zdalnego na komputerze IIS
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
-        - name: Platforma ASP.NET debugowania zdalnego na platformie Azure
+        - name: Platforma ASP.NET Core debugowania zdalnego na platformie Azure
           href: remote-debugging-azure.md
         - name: 'Zdalne debugowanie projektu w języku C# lub Visual Basic'
           href: remote-debugging-csharp.md
         - name: Debugowanie zdalne projektu C++
           href: remote-debugging-cpp.md
+        - name: Platforma .NET Core debugowania zdalnego w systemie Linux
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Przypisania portów debugera zdalnego
           href: remote-debugger-port-assignments.md
         - name: Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego
