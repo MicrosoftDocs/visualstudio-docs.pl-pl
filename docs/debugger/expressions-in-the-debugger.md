@@ -1,6 +1,6 @@
 ---
 title: Wyrażenia w debugerze | Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736213"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235006"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera oszacowania wyrażeń, które działają po wprowadzeniu wyrażenia w oknie dialogowym **QuickWatch** , oknie **czujki** lub w oknie **bezpośrednim** . Oceny wyrażeń są również w pracy w oknie **punkty przerwania** i wiele innych miejsc w debugerze.
@@ -32,7 +32,7 @@ Debuger programu Visual Studio zawiera oszacowania wyrażeń, które działają 
 W poniższych sekcjach opisano ograniczenia obliczeń wyrażeń dla języków obsługiwanych przez program Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>F#wyrażenia nie są obsługiwane
-F#wyrażenia nie są rozpoznawane. Jeśli debugujesz F# kod, musisz przetłumaczyć wyrażenia na C# składnię przed wprowadzeniem wyrażeń do okna debugera lub w oknie dialogowym. W przypadku tłumaczenia wyrażeń z F# do C#, należy pamiętać, że C# program używa operatora`==`, aby sprawdzić równość, podczas gdy F# używa jednego`=`.
+F#wyrażenia nie są rozpoznawane. Jeśli debugujesz F# kod, musisz przetłumaczyć wyrażenia na C# składnię przed wprowadzeniem wyrażeń do okna debugera lub w oknie dialogowym. W przypadku tłumaczenia wyrażeń z F# do C#, należy pamiętać, że C# program używa operatora `==`, aby sprawdzić równość, podczas gdy F# używa jednego `=`.
 
 ## <a name="c-expressions"></a>C++Wyrażeń
 Aby uzyskać informacje o używaniu operatorów kontekstu z C++wyrażeniami w, zobacz [operator kontekstu (C++)](../debugger/context-operator-cpp.md).
@@ -101,10 +101,10 @@ Funkcje wewnętrzne debugera:
 |----------|-------------------------|
 |**Długość ciągu**|strlen, wcslen, strnlen, wcsnlen|
 |**Porównanie ciągów**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Wyszukiwanie ciągów**|strchr, wcschr, strstr, wcsstr|
-|**System**|GetLastError (), TlsGetValue ()|
-|**System Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Funkcje te wymagają, aby proces, który jest debugowany, był uruchomiony w systemie Windows 8. Debugowanie plików zrzutu wygenerowanych z urządzenia z systemem Windows 8 wymaga również, aby na komputerze z programem Visual Studio był uruchomiony system Windows 8. Jednak w przypadku zdalnego debugowania urządzenia z systemem Windows 8 na komputerze z programem Visual Studio może działać system Windows 7.|
-|**Dodatkowych**|__log2<br /><br /> Zwraca bazę logarytmiczną 2 z określonej liczby całkowitej zaokrągloną do najbliższej mniejszej liczby całkowitej.|
+|**Wyszukiwanie ciągów**|strchr, wcschr, memchr, wmemchr, strstr, wcsstr|
+|**System**|Wartość GetLastError, TlsGetValue|
+|**System Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> Funkcje te wymagają, aby proces, który jest debugowany, był uruchomiony w systemie Windows 8. Debugowanie plików zrzutu wygenerowanych z urządzenia z systemem Windows 8 wymaga również, aby na komputerze z programem Visual Studio był uruchomiony system Windows 8. Jednak w przypadku zdalnego debugowania urządzenia z systemem Windows 8 na komputerze z programem Visual Studio może działać system Windows 7.|
+|**Różne**|__log2//zwraca bazę logarytmiczną 2 z określonej liczby całkowitej zaokrągloną do najbliższej mniejszej liczby całkowitej.<br /><br />__findNonNull, DecodeHString, WindowsCompareStringOrdinal, RoInspectCapturedStackBackTrace, CoDecodeProxy, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//concurrency:: Array < >:: operator [index < >] i operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//concurrency:: Array < >:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//concurrency:: Array < >:: operator [tiled_index < >] i operator (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//concurrency:: array_view < >:: operator [index < >] i operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//concurrency:: array_view < >:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//concurrency:: array_view < >:: operator [tiled_index < >] i operator (tiled_index < >)<br /><br />TreeTraverse_Init//Inicjuje nowe przechodzenie drzewa<br /><br />TreeTraverse_Next//zwraca węzły w drzewie<br /><br />TreeTraverse_Skip//pomija węzły w oczekującym przechodzeniu drzewa "|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI — nieobsługiwane wyrażenia
 
@@ -204,7 +204,7 @@ Nie można zadeklarować jawnych nowych zmiennych w oknach debugera. Można jedn
 
 - Słowa kluczowe na poziomie przestrzeni nazw lub modułu, takie jak `End Sub` lub `Module`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Specyfikatory formatu w języku C++](../debugger/format-specifiers-in-cpp.md)
 - [Operator kontekstu (C++)](../debugger/context-operator-cpp.md)
 - [Specyfikatory formatu w języku C#](../debugger/format-specifiers-in-csharp.md)

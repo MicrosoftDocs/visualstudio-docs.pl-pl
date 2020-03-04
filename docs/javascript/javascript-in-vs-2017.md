@@ -12,17 +12,16 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888662"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234959"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
-JavaScript to język pierwszej klasy w programie Visual Studio. Podczas pisania kodu w języku JavaScript w środowisku IDE programu Visual Studio można używać większości lub wszystkich standardowych ułatwień edycji (fragmenty kodu, technologia IntelliSense itd.). Można napisać kod JavaScript dla wielu typów i usług aplikacji.
+JavaScript jest językiem pierwszej klasy w programie Visual Studio. Podczas pisania kodu w języku JavaScript w środowisku IDE programu Visual Studio można używać większości lub wszystkich standardowych ułatwień edycji (fragmenty kodu, technologia IntelliSense itd.). W przypadku wielu typów aplikacji i usług, można napisać kod JavaScript.
 
 > [!NOTE]
 > Dodaliśmy do społeczności społeczność rzeczy, aby powiadomienia MDN w witrynie [sieci Web dokumenty](https://developer.mozilla.org/en-US/) z jednym zatrzymywaniem, bardzo różnorodnym zasobem programistycznym, przekierowując wszystkie (500 + strony) informacje o interfejsie API języka JavaScript firmy Microsoft z docs.Microsoft.com do ich odpowiedników powiadomienia MDN. Aby uzyskać szczegółowe informacje, zobacz ten [anons](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).

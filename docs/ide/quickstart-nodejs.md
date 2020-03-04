@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4995c6b95ba12eb776130b17dab1911c47988871
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: f716421da3b9f888dbb7656c55db6814de88332b
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180328"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235057"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Szybki Start: Tworzenie pierwszej aplikacji node. js przy użyciu programu Visual Studio
 
@@ -35,31 +35,33 @@ W tym 5-10 minutowym wprowadzeniu do zintegrowanego środowiska programistyczneg
     Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **środowiska Node. js** , a następnie wybierz polecenie **Modyfikuj**.
 
     ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
 
-    Jeśli nie jest ona zainstalowana, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
+    Jeśli go nie zainstalowano, zalecamy zainstalowanie wersji LTS z poziomu witryny sieci Web [Node. js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi platformami i bibliotekami. Architektura Node. js została skompilowana dla architektur 32-bitowych i 64-bitowych. Narzędzia Node. js w programie Visual Studio, zawarte w obciążeniu Node. js, obsługują obie wersje. Tylko jeden jest wymagany, a Instalator środowiska Node. js obsługuje tylko jeden instalowany w danym momencie.
+    
+    Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw **ścieżkę pliku Node. exe**). Można użyć globalnej instalacji środowiska Node. js lub określić ścieżkę do lokalnego interpretera w każdym z projektów Node. js. 
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
 Najpierw utworzysz projekt aplikacji sieci Web środowiska Node. js.
 
-1. Jeśli nie masz już zainstalowane środowisko uruchomieniowe Node.js, należy zainstalować wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web.
+1. Jeśli nie masz już zainstalowanego środowiska uruchomieniowego Node. js, Zainstaluj wersję LTS z witryny sieci Web [Node. js](https://nodejs.org/en/download/) .
 
-    Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
+    Aby uzyskać więcej informacji, zobacz Wymagania wstępne.
 
 1. Otwórz program Visual Studio.
 
-1. Utwórz nowy projekt.
+1. Tworzenie nowego projektu.
 
     ::: moniker range=">=vs-2019"
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node. js**, a następnie wybierz pozycję **Utwórz nowy pusty projekt aplikacji sieci Web Node. js** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **pustą aplikację sieci Web Node. js**, a następnie wybierz **przycisk OK**.
+    Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **pustą aplikację sieci Web Node. js**, a następnie wybierz **przycisk OK**.
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **pustej aplikacji sieci Web Node. js** , musisz dodać obciążenie **programowania Node. js** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
@@ -67,13 +69,13 @@ Najpierw utworzysz projekt aplikacji sieci Web środowiska Node. js.
 
 ## <a name="explore-the-ide"></a>Eksploruj IDE
 
-1. Przyjrzyj się **Eksploratora rozwiązań** w okienku po prawej stronie.
+1. Zapoznaj się z **Eksplorator rozwiązań** w okienku po prawej stronie.
 
    ![Eksplorator rozwiązań](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-   - Wyróżnione czcionką pogrubioną jest projektu, przy użyciu nazwę nadaną w **nowy projekt** okno dialogowe. Na dysku ten projekt jest reprezentowany przez plik *. njsproj* w folderze projektu.
+   - Wyróżnione czcionką pogrubioną jest projektem, przy użyciu nazwy podanych w oknie dialogowym **Nowy projekt** . Na dysku ten projekt jest reprezentowany przez plik *. njsproj* w folderze projektu.
 
-   - Na najwyższym poziomie to rozwiązanie, która domyślnie ma taką samą nazwę jak projektu. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów.
+   - Na najwyższym poziomie to rozwiązanie, która domyślnie ma taką samą nazwę jak projektu. Rozwiązanie reprezentowane przez plik *. sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
 
    - W węźle npm są wyświetlane wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego.
 
@@ -99,18 +101,18 @@ Najpierw utworzysz projekt aplikacji sieci Web środowiska Node. js.
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Naciśnij klawisz **Ctrl**+**F5** (lub **Debuguj > Uruchom bez debugowania**) do uruchamiania aplikacji. Aplikacja zostanie otwarta w przeglądarce.
+1. Naciśnij klawisz **Ctrl**+**F5** (lub **Debuguj > Uruchom bez debugowania**), aby uruchomić aplikację. Aplikacja zostanie otwarta w przeglądarce.
 
 1. W oknie przeglądarki zobaczysz ciąg "Hello world" oraz numer portu lokalnego.
 
-1. Zamknij przeglądarkę sieci web.
+1. Zamknij przeglądarkę sieci Web.
 
 Gratulujemy zakończenia tego przewodnika Szybki Start, w którym rozpoczęto pracę z programem Visual Studio IDE i środowiskiem Node. js. Jeśli chcesz lepiej podzielić się swoimi możliwościami, przejdź do samouczka w sekcji **samouczki** spisu treści.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Wdrażanie aplikacji do usługi App Service w systemie Linux](../javascript/publish-nodejs-app-azure.md)
+> [Wdrażanie aplikacji w systemie Linux App Service](../javascript/publish-nodejs-app-azure.md)
 
 - [Samouczek dla środowiska Node. js i Express](../javascript/tutorial-nodejs.md)
 - [Samouczek dotyczący środowiska Node. js i reagowanie](../javascript/tutorial-nodejs-with-react-and-jsx.md)

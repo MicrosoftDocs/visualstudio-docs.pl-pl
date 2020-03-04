@@ -3,15 +3,15 @@ title: Śledzenie przypisań użytkowników i zamówień przetwarzania | Visual 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o responsibilty administratorów do śledzenia przypisań użytkowników i przetwarzania zamówień.
-ms.openlocfilehash: bf7fcdb2fae2ad6d354c4320ec26c4f1025766dd
-ms.sourcegitcommit: bb72ce6ec173f3ae06c7ae57322c43690f27553c
+ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76967339"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235228"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Śledzenie przypisania użytkownika i przetwarzania zamówień
 Administratorzy subskrypcji programu Visual Studio powinni śledzić użycie programu Visual Studio i przetwarzać zamówienia w celu zwiększenia użycia zgodnie z harmonogramem przedstawionym w ramach umowy licencjonowania zbiorowego lub umowy dotyczącej produktów i usług firmy Microsoft. Nowy portal administrowania subskrypcjami programu Visual Studio został uproszczony dzięki pomocnemu śledzeniu pokazującemu dostępne i wykorzystane licencje.
@@ -36,6 +36,12 @@ Możesz przypisywać subskrypcje za pomocą programów, takich jak Open License 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Umowy Enterprise, MPSA i Select
 Umowy Microsoft Enterprise Agreement (EA), MPSA i Select Plus Agreement zapewniają elastyczność w zakresie używania i licencjonowania oprogramowania Visual Studio z upływem czasu. Administratorzy programu Visual Studio muszą dokonać rocznej realizacji w celu przeprowadzenia licencji na oprogramowanie do maksymalnego użycia ustalonego w okresie obowiązywania umowy.
 
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Obowiązki administratora](admin-responsibilities.md)
@@ -43,7 +49,3 @@ Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Zarządzanie dużymi zespołami i zleceniobiorcami zewnętrznymi](manage-teams.md)
 - Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu
 
-## <a name="see-also"></a>Zobacz także
-- [Dokumentacja programu Visual Studio](/visualstudio/)
-- [Dokumentacja platformy Azure](/azure/)
-- [Azure DevOps](/azure/devops/)

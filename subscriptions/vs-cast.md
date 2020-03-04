@@ -3,20 +3,21 @@ title: Korzyści wyróżniania RZUTowania w subskrypcji programu Visual Studio |
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Poznaj korzyści wynikające z wyróżniania RZUTowania dostępne w wybranych subskrypcjach programu Visual Studio
-ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 7b06800bd53e2843015f3f3509a4a2c7e0eae671
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983738"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257179"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Korzyść wyróżniania RZUTowania w subskrypcjach programu Visual Studio
-Deweloperzy potrzebują ważnych szczegółowych informacji na temat oprogramowania podczas migracji do chmury. Dzięki wyróżnieniu RZUTowania Subskrybenci mogą szybko skanować swój kod źródłowy aplikacji Visual Studio Enterprise, aby identyfikować gotowość aplikacji do migracji na platformę Azure oraz monitorować postęp swojej aplikacji zarówno podczas migracji, jak i po niej.
+Deweloperzy potrzebują ważnych szczegółowych informacji na temat oprogramowania podczas migracji do chmury. Dzięki wykreśleniu RZUTcy Subskrybenci programu Visual Studio mogą szybko skanować swój kod źródłowy aplikacji, aby identyfikować gotowość do użycia w chmurze do migracji na platformę Azure i monitorować postęp swojej aplikacji zarówno podczas migracji, jak i po niej.
 
-Subskrybenci Visual Studio Enterprise mogą uzyskać bezpłatną i pełną subskrypcję jednomiesięczną, aby wyróżnić do pięciu aplikacji na subskrybenta.
+- Subskrybenci Visual Studio Enterprise mogą uzyskać bezpłatną i pełną subskrypcję z trzema subskrypcjami, która umożliwia użytkownikom ocenę maksymalnie pięciu aplikacji.
+- Subskrybenci Visual Studio Professional mogą uzyskać podobną subskrypcję, która umożliwia ocenę jednej aplikacji przez trzy miesiące.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -26,7 +27,7 @@ Subskrybenci Visual Studio Enterprise mogą uzyskać bezpłatną i pełną subsk
    > [!div class="mx-imgBorder"]
    > Kafelek korzyści z wyróżniania RZUTowania ![](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-0. Zobaczysz komunikat informujący, że kod został pomyślnie pobrany.  Kliknij pozycję **Aktywuj**, w którym momencie nastąpi przekierowanie do strony Wyróżnij rzutowanie, na której można kontynuować proces aktywacji.  (Jeśli nie zdecydujesz się na aktywację teraz, zawsze możesz wrócić do kafelka wyróżnienie RZUTowania w portalu subskrypcji.  Łącze "Pobierz kod" zmieni się na "Aktywuj", a kliknięcie spowoduje wznowienie procesu aktywacji.
+0. Zobaczysz komunikat informujący, że kod został pomyślnie pobrany.  Kliknij pozycję **Aktywuj**. (Jeśli nie zdecydujesz się na aktywację teraz, zawsze możesz wrócić do kafelka wyróżnienie RZUTowania w portalu subskrypcji.  Łącze "Pobierz kod" zmieni się na "Aktywuj", a kliknięcie spowoduje wznowienie procesu aktywacji.
 
 0. Nastąpi przekierowanie do strony wyróżniania RZUTowania, na której można eksplorować funkcje subskrypcji.  Gdy wszystko będzie gotowe do utworzenia konta, wystarczy podać informacje kontaktowe w formularzu sieci Web i kliknąć pozycję **Prześlij**.
 
@@ -40,7 +41,7 @@ Subskrybenci Visual Studio Enterprise mogą uzyskać bezpłatną i pełną subsk
 
 0. Zespół RZUTowania oceni Twoje żądanie i skontaktuje się z Tobą, aby zakończyć tworzenie konta.
 
-0. Otrzymasz również następujący adres e-mail z RZUTowania, potwierdzając otrzymanie żądania.
+0. Otrzymasz również następujący adres e-mail z RZUTowania, potwierdzając otrzymanie żądania.  (W tym przykładzie przedstawiono wiadomości e-mail otrzymane przez subskrybentów przedsiębiorstwa).
 
    > *Dziękujemy za Twoją prośbę o aktywację 30-dniowego dostępu do wyróżnienia — oferta wyłączna dla klientów Microsoft Visual Studio Enterprise.*
    >
@@ -75,14 +76,14 @@ Po zatwierdzeniu żądania otrzymasz drugą wiadomość e-mail z potwierdzeniem 
 ## <a name="eligibility"></a>Kryteria
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | Ocenianie 5 aplikacji przez 30 dni|  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Ocenianie 5 aplikacji przez 30 dni|  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Niedostępne                                                             |  N/D          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Niedostępne                                                             |  N/D          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  N/D           |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  N/D          |
-| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | N/D |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | N/D |
+| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, | Ocenianie 5 aplikacji przez trzy miesiące|  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Ocenianie 5 aplikacji przez trzy miesiące|  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                             |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
+| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                       | Ocenianie 1 aplikacji przez trzy miesiące                                                            |  Nie.  Dostępne tylko dla nowych subskrybentów                  |
+| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Nie dotyczy           |
+| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Nie dotyczy          |
+| Visual Studio Enterprise (standardowa)  | NFR<sup>1</sup> |Niedostępne  | Nie dotyczy |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
 <sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), ekwiwalentu, najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Microsoft Partner Network (MPN), Visual Studio Industry partner (VSIP), Microsoft Certified Trainer, BizSpark, Wyobraź sobie*
 
@@ -98,6 +99,12 @@ Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.v
 
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach subskrypcji, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek platformy Azure w kategorii narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać swoje środki na korzystanie z platformy Azure DevTest.

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916880"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234985"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Programowanie aplikacji mobilnych na wiele platform w programie Visual Studio
 
@@ -27,20 +27,20 @@ Do tworzenia gier lub realistycznych aplikacji graficznych, należy zainstalowa�
 
 ## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Tworzenie aplikacji dla systemów Android, iOS i Windows (.NET Framework)
 
-![Urządzenia](../cross-platform/media/homedevices.png "HomeDevices")
+![Urządzeniem](../cross-platform/media/homedevices.png "HomeDevices")
 
 Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla systemów Android, iOS i Windows w tym samym rozwiązaniu, udostępniając kod i nawet interfejs użytkownika.
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Zainstaluj program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (Visual Studio)|
-|[Więcej informacji na temat platformy Xamarin w programie Visual Studio](https://visualstudio.microsoft.com/xamarin/) (Visual Studio)|
+|[Zainstaluj program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
+|[Informacje o programie Xamarin w programie Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Dokumentacja dotycząca tworzenia aplikacji mobilnych dla oprogramowania Xamarin](/xamarin/) |
 |[DevOps z aplikacjami platformy Xamarin](/xamarin/tools/ci/devops/) |
 |[Poznaj aplikacje uniwersalne systemu Windows w programie Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Dowiedz się więcej o podobieństwa Swift i C#](https://aka.ms/scposter) (witrynie download.microsoft.com)|
+|[Dowiedz się więcej o podobieństwach SWIFT C# i](https://aka.ms/scposter) (Download.Microsoft.com)|
 
-### <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu
+### <a name="AndroidHTML"></a>Docelowa wersja systemu Android, iOS i Windows z pojedynczej bazy kodu
 
  Możesz tworzyć natywne aplikacje dla systemów Android, iOS i Windows za pomocą C# programu F# lub (Visual Basic nie jest to obsługiwane w tej chwili).  Aby rozpocząć, zainstaluj program Visual Studio, wybierz opcję **Programowanie aplikacji mobilnych przy użyciu platformy .NET** w instalatorze.
 
@@ -54,22 +54,22 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Projektowanie jeden zestaw stron, które są renderowane dla wszystkich urządzeń za pomocą platformy Xamarin.Forms
 
- W zależności od złożoności projektu aplikacji, można rozważyć wbudowanie jej za pomocą *Xamarin.Forms* szablonów w **Mobile Apps** grupy szablonów projektu. Xamarin.Forms to zestaw narzędzi interfejsu użytkownika, który umożliwia tworzenie jednego interfejsu, którą można współdzielić między systemów Android, iOS i Windows.  Podczas kompilowania rozwiązania Xamarin. Forms uzyskasz aplikację dla systemu Android, aplikację dla systemu iOS i aplikację systemu Windows. Aby uzyskać więcej informacji, zobacz informacje [o tworzeniu aplikacji mobilnych za pomocą platformy Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) i [dokumentacji platformy Xamarin. Forms](/xamarin/xamarin-forms/).
+ W zależności od złożoności projektu aplikacji można rozważyć skompilowanie go przy użyciu szablonów *Xamarin. Forms* w grupie **Mobile Apps** szablonów projektu. Xamarin.Forms to zestaw narzędzi interfejsu użytkownika, który umożliwia tworzenie jednego interfejsu, którą można współdzielić między systemów Android, iOS i Windows.  Podczas kompilowania rozwiązania Xamarin. Forms uzyskasz aplikację dla systemu Android, aplikację dla systemu iOS i aplikację systemu Windows. Aby uzyskać więcej informacji, zobacz informacje [o tworzeniu aplikacji mobilnych za pomocą platformy Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) i [dokumentacji platformy Xamarin. Forms](/xamarin/xamarin-forms/).
 
-#### <a name="ShareHTML"></a> Współdziel kod między systemami Android, iOS i aplikacji Windows
+#### <a name="ShareHTML"></a>Udostępnianie kodu między aplikacjami dla systemów Android, iOS i Windows
 
  Jeśli nie korzystasz z programu Xamarin. Forms i chcesz projektować dla każdej platformy osobno, możesz udostępnić większość kodu innego niż interfejs użytkownika między projektami platformy (Android, iOS i Windows). W tym wszelka logika biznesowa, integracja z chmurą, dostęp do bazy danych lub inny kod, który jest przeznaczony dla .NET Framework. Jedyny kod, którego nie można udostępnić, to kod, który jest przeznaczony dla konkretnej platformy.
 
- ![Udostępnianie kodu między systemami Windows, iOs i Android](../cross-platform/media/sharecode.png "ShareCode")
+ ![Udostępnianie kodu między systemami Windows, iOS i Android interfejsów użytkownika](../cross-platform/media/sharecode.png "ShareCode")
 
  Możesz udostępnić swój kod za pomocą udostępnionego projektu i/lub projekt przenośnej biblioteki klas. Może się okazać, że niektóre kodu mieści się najlepiej w projekcie udostępnionym i jakiś kod sprawia, że więcej sens w projekcie biblioteki klas przenośnych.
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Udostępnianie kodu opcje](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
+|[Udostępnianie opcji kodu](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Opcje udostępniania kodu w programie .NET](/dotnet/standard/cross-platform/) |
 
-### <a name="WindowsHTML"></a> Docelowe urządzenia z systemem Windows 10
+### <a name="WindowsHTML"></a>Docelowe urządzenia z systemem Windows 10
 
  ![Urządzenia z systemem Windows](../cross-platform/media/windowsdevices.png "Urządzenia z systemem Windows")
 
@@ -82,11 +82,11 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 |[Wprowadzenie do platforma uniwersalna systemu Windows](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Tworzenie pierwszej aplikacji](/windows/uwp/get-started/your-first-app)|
 |[Opracowywanie aplikacji na platformę uniwersalną systemu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrowanie aplikacji na platformie Universal Windows (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
+|[Migrowanie aplikacji do platforma uniwersalna systemu Windows (platformy UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ::: moniker range="vs-2017"
 
-## <a name="HTML"></a> Tworzenie aplikacji dla systemu Android, iOS i Windows (HTML/JavaScript)
+## <a name="HTML"></a>Tworzenie aplikacji dla systemów Android, iOS i Windows (HTML/JavaScript)
 
  ![Urządzenia z systemami Windows, iOS i Android](../cross-platform/media/homedevices.png "Urządzenia z systemami Windows, iOS i Android")
 
@@ -108,9 +108,9 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Zainstaluj program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (Visual Studio)|
+|[Zainstaluj program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Wprowadzenie do Visual Studio Tools dla Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Dowiedz się więcej o Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (Visual Studio)|
+|[Dowiedz się więcej o programie Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
  Gdy wszystko będzie gotowe do uruchomienia aplikacji i zobacz, jak wygląda, użyj Emulator systemu Android. Jest to szybkie, niezawodne i łatwe do zainstalowania i skonfigurowania.
 
- Możesz również utworzyć aplikację, która jest przeznaczona dla pełnej szerokości urządzeń z systemem Windows 10 przy C++ użyciu szablonu projektu aplikacji platforma uniwersalna systemu Windows (platformy UWP). Dowiedz się więcej w [urządzenia docelowego systemu Windows 10](#WindowsHTML) sekcji, która występuje wcześniej w tym temacie.
+ Możesz również utworzyć aplikację, która jest przeznaczona dla pełnej szerokości urządzeń z systemem Windows 10 przy C++ użyciu szablonu projektu aplikacji platforma uniwersalna systemu Windows (platformy UWP). Więcej informacji na ten temat znajduje się w sekcji [docelowe urządzenia z systemem Windows 10](#WindowsHTML) , która występuje wcześniej w tym temacie.
 
  Aby udostępnić C++ kod między systemami Android, iOS i Windows, można utworzyć statyczną lub dynamiczną bibliotekę udostępnioną.
 
@@ -140,12 +140,12 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Pobierz program Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Instalowanie aplikacji mobilnych dla wielu platform za pomocą programuC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Pobierz program Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[Instalowanie aplikacji mobilnych dla wielu platform za pomocą programuC++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[Dowiedz się więcej C++ o korzystaniu z programu w celu użycia na wielu platformach](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Zainstaluj to, czego potrzebujesz, a następnie utwórz natywną aplikację działania dla systemu Android](create-an-android-native-activity-app.md)|
-|[Dowiedz się więcej na temat udostępniania kodu w języku C++ w aplikacjach dla systemów Android i Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (Visual Studio)|
-|[Przykłady tworzenia aplikacji mobilnych dla wielu platform dla programuC++](cross-platform-mobile-development-examples.md)|
+|[Zainstaluj to, czego potrzebujesz, a następnie Utwórz C++ natywną aplikację działania dla systemu Android](/cpp/cross-platform/create-an-android-native-activity-app)|
+|[Dowiedz się więcej C++ o udostępnianiu kodu w aplikacjach dla systemów Android i Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Przykłady tworzenia aplikacji mobilnych dla wielu platform dla programuC++](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 
@@ -159,14 +159,14 @@ Za pomocą Visual Studio Tools dla platformy Xamarin można docelowo dla system�
 
 |**Dowiedz się więcej**|
 |--------------------|
-|[Dowiedz się więcej o tworzeniu gier za pomocą programu Visual Studio Unity](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
+|[Dowiedz się więcej o tworzeniu gier Unity w programie Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Przeczytaj więcej na temat Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Zacznij korzystać z Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Przeczytaj najnowsze ulepszenia do programu Visual Studio Tools for Unity 2.0 w wersji zapoznawczej](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog Visual Studio)|
-|[Obejrzyj wprowadzenie wideo do programu Visual Studio Tools for Unity 2.0 w wersji zapoznawczej](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (wideo)|
-|[Dowiedz się więcej o Unity](https://unity.com/) (Unity witryny sieci Web)|
+|Zapoznaj się z [najnowszymi ulepszeniami w wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog programu Visual Studio)|
+|[Obejrzyj film wideo z wprowadzeniem do wersji Zapoznawczej Visual Studio Tools for Unity 2,0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (wideo)|
+|[Dowiedz się więcej na temat aparatu Unity](https://unity.com/) (witryna sieci Web Unity)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie interfejsów API pakietu Office 365 do projektu programu Visual Studio](/office/developer-program/office-365-developer-program)
 - [App Services platformy Azure — Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)

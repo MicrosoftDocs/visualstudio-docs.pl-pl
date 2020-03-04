@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Dowiedz się więcej na temat obowiązków administratorów subskrypcji.
-ms.openlocfilehash: 05b1a66eb6589f1d0d9502a754f67d0f9c31424f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851877"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235161"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Przegląd obowiązków administracyjnych
 Jako administrator możesz zarządzać subskrypcjami dla swojej organizacji.  Rola administratora przenosi również obowiązki, aby upewnić się, że subskrypcje są zarządzane zgodnie z postanowieniami licencyjnymi. W tym artykule opisano obowiązki, korzyści i ograniczenia roli administratora.
@@ -34,6 +34,12 @@ Subskrypcje programu Visual Studio umożliwiają członkom zespołu deweloperów
 | Nie przeznaczone dla środowisk produkcyjnych | Oprogramowanie subskrypcji programu Visual Studio nie jest licencjonowane dla środowisk produkcyjnych, w tym wszystkich środowisk, do których użytkownicy końcowi uzyskują dostęp w środowisku produkcyjnym. Tworzenie kopii zapasowej produkcyjnej lub używanej do produkcji w trakcie szczytowych okresów działania. Wyjątki od tej usługi obejmują określone korzyści dotyczące pewnych poziomów subskrypcji, które opisano w dokumencie dotyczącym [licencjonowania programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf).                                                                                            |
 | Ponowne przypisywanie licencji                     | Gdy użytkownik opuści zespół i nie będzie już wymagał licencji, można ponownie przypisać licencję po upływie 90 dni. Po ponownym przypisaniu licencji wszystkie klucze produktów, które były już używane, nadal będą dostępne, ale nie zostaną zastąpione. W przypadku organizacji z umowami Enterprise Agreement (EA) wszystkie korzyści, które były używane przez oryginalnego użytkownika, takie jak szkolenia Pluralsight, zostaną zresetowane.                                                                                                                                                                                                                                                 |
 | Wyjątek dla użytkowników końcowych                  | Na końcu projektu tworzenia oprogramowania użytkownicy końcowi zwykle przeglądają aplikację i określają, czy spełnia ona niezbędne kryteria wydania. Ten proces jest nazywany testowaniem akceptacji przez użytkownika (przeprowadzających). Członkowie zespołu, tacy jak sponsor biznesowy lub Menedżer produktu, mogą działać jako serwery proxy dla użytkowników końcowych. Użytkownicy końcowi, którzy nie mają subskrypcji programu Visual Studio, mogą uzyskać dostęp do oprogramowania dla programu przeprowadzających, jeśli w przeciwnym razie używanie oprogramowania jest zgodne ze wszystkimi postanowieniami licencyjnymi programu Visual Studio. Jest to rzadki, że ktoś, którego podstawową rolą jest projektowanie, opracowywanie lub testowanie oprogramowania, będzie również kwalifikować się jako "użytkownik końcowy". |
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:

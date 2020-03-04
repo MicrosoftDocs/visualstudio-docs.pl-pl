@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
-ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
+ms.openlocfilehash: f2f00cde0c2ea3fad79c0f5ef75f3c33ad7afc22
+ms.sourcegitcommit: c98e0ccf236765b44e47095ee52836cb012e3854
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181122"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78257192"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz kolejno opcje **debuguj** > **Dołącz do procesu** lub naciśnij **klawisze CTRL**+**Alt**+**P** w programie Visual Studio, a następnie użyj okna dialogowego **Dołącz do procesu** , aby dołączyć debuger do procesu.
@@ -229,7 +229,7 @@ Aby szybko wybrać uruchomiony proces do dołączenia, w programie Visual Studio
 |Debugowanie skryptu po stronie klienta na lokalnym serwerze usług IIS, dla typów obsługiwanych aplikacji |Użyj **dołączania do procesu**|*Chrome. exe*, *MicrosoftEdgeCP. exe*lub *iexplore. exe*|Debugowanie skryptu musi być włączona. Dla programu Chrome należy również uruchomić polecenie Chrome w trybie debugowania, a następnie w polu **Dołącz do** wybrać pozycję **kod WebKit** .|
 |Debugowanie aplikacji w języku C#, Visual Basic lub C++ na komputerze lokalnym|Użyj standardowego debugowania (**F5**) lub **Dołącz do procesu**|*\<nazwa_aplikacji >. exe*|W większości scenariuszy należy używać debugowania standardowego i nie **dołączać do procesu**.|
 |Zdalne debugowanie aplikacji pulpitu Windows|Zdalne narzędzia|Nie dotyczy| Zobacz [debugowanie zdalne a C# lub Visual Basic aplikacji](../debugger/remote-debugging-csharp.md) lub [debugowania zdalnego C++ aplikacji](../debugger/remote-debugging-cpp.md)|
-|Debugowanie programu .NET Core w systemie Linux|Użyj **dołączania do procesu**|*dotnet. exe*|Aby korzystać z protokołu SSH, zobacz [zdalne debugowanie programu .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Aby użyć kontenera Docker systemu Linux, zobacz [dołączanie do procesu działającego w kontenerze platformy Docker Linux](#BKMK_Docker_Attach).|
+|Debugowanie programu .NET Core w systemie Linux|Użyj **dołączania do procesu**|*dotnet. exe*|Aby korzystać z protokołu SSH, zobacz [zdalne debugowanie programu .NET Core działającego w systemie Linux przy użyciu protokołu SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). |
 |Debugowanie aplikacji platformy ASP.NET na komputerze lokalnym, po uruchomieniu aplikacji bez debugera|Użyj **dołączania do procesu**|*iiexpress. exe*|Może to być przydatne zapewnić aplikacji obciążenia szybciej, takich jak (na przykład) podczas profilowania. |
 |Debugowanie innych typów aplikacji obsługiwanych w proces serwera|Jeśli serwer jest zdalny, użyj narzędzi zdalnych i **Dołącz do procesu**|*Chrome. exe*, *iexplore. exe*lub inne procesy|Jeśli to konieczne, należy użyć Monitora zasobów ułatwiają identyfikację procesu. Zobacz [debugowanie zdalne](../debugger/remote-debugging.md).|
 |Zdalne debugowanie aplikacji Windows aplikacji Uniwersalnej, OneCore, HoloLens i IoT|Debugowanie zainstalowanego pakietu aplikacji|Nie dotyczy|Zobacz [debugowanie zainstalowanego pakietu aplikacji](debug-installed-app-package.md) zamiast używania **dołączania do procesu**|

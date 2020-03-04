@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428783"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235083"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji node. js i Express w programie Visual Studio
 
@@ -24,19 +24,19 @@ W tym samouczku dla programowania programu Visual Studio przy użyciu oprogramow
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
-Z tego samouczka dowiesz się, jak wykonywać następujące czynności:
+Ten samouczek zawiera informacje na temat wykonywania następujących czynności:
 > [!div class="checklist"]
-> * Tworzenie projektu platformy Node.js
+> * Tworzenie projektu z użyciem narzędzia Node.js
 > * Dodaj kod
 > * Edytowanie kodu przy użyciu funkcji IntelliSense
 > * Uruchamianie aplikacji
@@ -69,13 +69,15 @@ Express to struktura aplikacji sieci Web, używana jako struktura serwera dla ś
     Jeśli program Visual Studio 2017 nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
     ::: moniker-end
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz **programowania Node.js** obciążenia, wybierz **Modyfikuj**.
+    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Wybierz obciążenie **środowiska Node. js** , a następnie wybierz polecenie **Modyfikuj**.
 
     ![Obciążenie node.js w Instalatorze programu VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Konieczne jest posiadanie zainstalowanego środowiska uruchomieniowego Node.js.
 
-    Jeśli nie jest ona zainstalowana, zainstaluj wersję LTS z [Node.js](https://nodejs.org/en/download/) witryny sieci Web. Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie zostanie wykryta zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt, aby odwoływać się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu, kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **właściwości**).
+    Jeśli go nie zainstalowano, zalecamy zainstalowanie wersji LTS z poziomu witryny sieci Web [Node. js](https://nodejs.org/en/download/) w celu uzyskania najlepszej zgodności z zewnętrznymi platformami i bibliotekami. Architektura Node. js została skompilowana dla architektur 32-bitowych i 64-bitowych. Narzędzia Node. js w programie Visual Studio, zawarte w obciążeniu Node. js, obsługują obie wersje. Tylko jeden jest wymagany, a Instalator środowiska Node. js obsługuje tylko jeden instalowany w danym momencie.
+    
+    Ogólnie rzecz biorąc program Visual Studio automatycznie wykrywa zainstalowane środowisko uruchomieniowe Node.js. Jeśli nie wykryje zainstalowanego środowiska uruchomieniowego, można skonfigurować projekt do odwoływania się do zainstalowanego środowiska uruchomieniowego na stronie właściwości (po utworzeniu projektu kliknij prawym przyciskiem myszy węzeł projektu, wybierz polecenie **Właściwości**, a następnie ustaw **ścieżkę pliku Node. exe**). Można użyć globalnej instalacji środowiska Node. js lub określić ścieżkę do lokalnego interpretera w każdym z projektów Node. js. 
 
     Ten samouczek został przetestowany przy użyciu środowiska Node. js 8.10.0.
 
@@ -87,13 +89,13 @@ W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji 
 
 1. Otwórz program Visual Studio.
 
-1. Utwórz nowy projekt.
+1. Tworzenie nowego projektu.
 
     ::: moniker range=">=vs-2019"
     Naciśnij klawisz **ESC** , aby zamknąć okno uruchamiania. **Naciśnij klawisze CTRL + Q** , aby otworzyć pole wyszukiwania, wpisz **Node. js**, a następnie wybierz pozycję **Utwórz nową podstawową aplikację Azure Node. js Express 4** (JavaScript). W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **podstawową aplikację Azure Node. js Express 4**, a następnie wybierz **przycisk OK**.
+    Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **JavaScript**, a następnie wybierz polecenie **Node. js**. W środkowym okienku wybierz **podstawową aplikację Azure Node. js Express 4**, a następnie wybierz **przycisk OK**.
     ::: moniker-end
     Jeśli nie widzisz szablonu projektu **podstawowego programu Azure Node. js Express 4** , musisz dodać obciążenie **programowania Node. js** . Aby uzyskać szczegółowe instrukcje, zobacz [wymagania wstępne](#prerequisites).
 
@@ -103,7 +105,7 @@ W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji 
 
     (1) wyróżnione **czcionką pogrubioną** jest projektem, przy użyciu nazwy podanych w oknie dialogowym **Nowy projekt** . W systemie plików ten projekt jest reprezentowany przez plik *. njsproj* w folderze projektu. Aby ustawić właściwości i zmienne środowiskowe skojarzone z projektem, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Właściwości**. Możesz wykonywać czynności okrężne przy użyciu innych narzędzi programistycznych, ponieważ plik projektu nie wprowadza niestandardowych zmian w źródle projektu Node. js.
 
-    (2) na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów.
+    (2) na najwyższym poziomie jest rozwiązaniem, które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie reprezentowane przez plik *. sln* na dysku jest kontenerem dla co najmniej jednego powiązanego projektu.
 
     (3) węzeł npm pokazuje wszystkie zainstalowane pakiety npm. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego lub zainstalować i zaktualizować pakiety przy użyciu ustawień w pliku *Package. JSON* , a następnie kliknąć prawym przyciskiem myszy opcje w węźle npm.
 
@@ -113,7 +115,7 @@ W tym samouczku zaczniesz od prostego projektu zawierającego kod dla aplikacji 
 
 1. Otwórz węzeł **npm** i upewnij się, że wszystkie wymagane pakiety npm są obecne.
 
-    Jeśli wszystkie pakiety brakuje (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy **npm** węzeł i wybierz polecenie **Zainstaluj brakujące pakiety npm**.
+    Jeśli brakuje któregoś z pakietów (ikona wykrzyknika), możesz kliknąć prawym przyciskiem myszy węzeł **npm** i wybrać polecenie **Zainstaluj brakujące pakiety npm**.
 
 ## <a name="add-some-code"></a>Dodaj kod
 
@@ -180,7 +182,7 @@ IntelliSense to narzędzie programu Visual Studio, które ułatwia pisanie kodu.
 
 1. W polu *index. js*przejdź do wiersza kodu zawierającego `res.render`.
 
-1. Umieść kursor po ciągu `data`, typ `: get` i IntelliSense wyświetli funkcję `getData` zdefiniowaną wcześniej w kodzie. Wybierz `getData`.
+1. Umieść kursor po ciągu `data`, typ `: get` i IntelliSense wyświetli funkcję `getData` zdefiniowaną wcześniej w kodzie. Wybierz pozycję `getData`.
 
     ![Korzystanie z funkcji IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
 
@@ -245,7 +247,7 @@ Następnie uruchomisz aplikację z dołączonym debugerem programu Visual Studio
 
     ![Aplikacja uruchomiona w przeglądarce](../javascript/media/tutorial-nodejs-running-in-browser.png)
 
-1. Zamknij przeglądarkę sieci web.
+1. Zamknij przeglądarkę sieci Web.
 
 ## <a name="optional-publish-to-azure-app-service"></a>Obowiązkowe Publikuj w Azure App Service
 
@@ -270,4 +272,4 @@ Gratulujemy wykonanie kroków tego samouczka!
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Wdrażanie aplikacji do usługi App Service w systemie Linux](../javascript/publish-nodejs-app-azure.md)
+> [Wdrażanie aplikacji w systemie Linux App Service](../javascript/publish-nodejs-app-azure.md)
