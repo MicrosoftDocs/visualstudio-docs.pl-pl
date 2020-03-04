@@ -17,14 +17,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c4fa5d093952eefc870aded3d3e14a1f5983a7
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633008"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263111"
 ---
-# <a name="parameter-element"></a>Element parametru
+# <a name="parameter-element"></a>Parameter, element
 
 Zawiera informacje dotyczące konkretnego parametru zadania generowanego przez `TaskFactory``UsingTask`.  Nazwa elementu jest nazwą parametru.  Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
@@ -71,9 +71,9 @@ Zawiera informacje dotyczące konkretnego parametru zadania generowanego przez `
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
              ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 

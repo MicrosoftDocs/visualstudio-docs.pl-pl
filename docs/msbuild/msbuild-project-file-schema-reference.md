@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f8a59349540492cd441f1eb3fa63ed520c0e8cd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633281"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263106"
 ---
-# <a name="msbuild-project-file-schema-reference"></a>Odwołanie do schematu pliku projektu MSBuild
+# <a name="msbuild-project-file-schema-reference"></a>Dokumentacja schematu pliku projektu MSBuild
 
 Zawiera tabelę zawierającą wszystkie elementy schematu XML programu MSBuild z ich dostępnymi atrybutami i elementami podrzędnymi.
 
@@ -54,9 +54,9 @@ W programie Visual Studio 2017 i nowszych nie jest wymagany link do schematu w p
 |[Property — element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Właściwość*|Warunek|
 |[Element zestawu SDK (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|Name (Nazwa)<br /><br /> Wersja|
 |[Target — element (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Zadanie podrzędne*|AfterTargets<br /><br /> BeforeTargets<br /><br /> Warunek<br /><br /> DependsOnTargets<br /><br /> Dane wejściowe<br /><br /> KeepDuplicateOutputs<br /><br /> Name (Nazwa)<br /><br /> Dane wyjściowe<br /><br /> Zwraca|
-|[Task — element (MSBuild)](../msbuild/task-element-msbuild.md)|Dane wyjściowe|Warunek<br /><br /> ContinueOnError<br /><br /> *Konstruktora*|
-|[TaskBody —, element (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Dane*|Evaluate|
-|[UsingTask, element (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody —|AssemblyFile<br /><br /> AssemblyName<br /><br /> Warunek<br /><br /> TaskFactory<br /><br /> TaskName|
+|[Element Task elementu docelowego (MSBuild)](../msbuild/task-element-msbuild.md)|Dane wyjściowe|Warunek<br /><br /> ContinueOnError<br /><br /> *Konstruktora*|
+|[Element Task elementu UsingTask (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Dane*|Evaluate|
+|[UsingTask, element (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Zadanie|AssemblyFile<br /><br /> AssemblyName<br /><br /> Warunek<br /><br /> TaskFactory<br /><br /> TaskName|
 |[When, element (MSBuild)](../msbuild/when-element-msbuild.md)|Wybierz ikonę<br /><br /> ItemGroup<br /><br /> PropertyGroup|Warunek|
 
 ## <a name="see-also"></a>Zobacz też

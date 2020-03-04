@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc50379563a85ce9c76f3d45b9d70c1f784eaf5a
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 2d977892956c90fd88ff913b9c9300b0176323a4
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631253"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263126"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask, element (MSBuild)
 
@@ -53,7 +53,7 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
 |---------------|-----------------|
 |`AssemblyName`|Wymagany jest atrybut `AssemblyName` lub atrybut `AssemblyFile`.<br /><br /> Nazwa zestawu do załadowania. Atrybut `AssemblyName` akceptuje zestawy o silnych nazwach, chociaż silne nazewnictwo nie jest wymagane. Użycie tego atrybutu jest równoznaczne z załadowaniem zestawu za pomocą metody <xref:System.Reflection.Assembly.Load%2A> w programie .NET.<br /><br /> Tego atrybutu nie można użyć, jeśli jest używany atrybut `AssemblyFile`.|
 |`AssemblyFile`|Wymagany jest `AssemblyName` lub `AssemblyFile` atrybut.<br /><br /> Ścieżka pliku zestawu. Ten atrybut akceptuje pełne ścieżki lub ścieżki względne. Ścieżki względne są względne dla katalogu pliku projektu lub pliku docelowego, w którym zadeklarowany jest element `UsingTask`. Użycie tego atrybutu jest równoznaczne z załadowaniem zestawu za pomocą metody <xref:System.Reflection.Assembly.LoadFrom%2A> w programie .NET.<br /><br /> Tego atrybutu nie można użyć, jeśli jest używany atrybut `AssemblyName`.|
-|`TaskFactory`|Atrybut opcjonalny.<br /><br /> Określa klasę w zestawie, która jest odpowiedzialna za generowanie wystąpień określonej nazwy `Task`.  Użytkownik może także określić `TaskBody` jako element podrzędny, który fabryka zadań odbiera i używa do wygenerowania zadania. Zawartość `TaskBody` jest specyficzna dla fabryki zadań.|
+|`TaskFactory`|Atrybut opcjonalny.<br /><br /> Określa klasę w zestawie, która jest odpowiedzialna za generowanie wystąpień określonej nazwy `Task`.  Użytkownik może także określić `Task` jako element podrzędny, który fabryka zadań odbiera i używa do wygenerowania zadania. Zawartość `Task` jest specyficzna dla fabryki zadań.|
 |`TaskName`|Atrybut wymagany.<br /><br /> Nazwa zadania do odwołania z zestawu. Jeśli niejasności są możliwe, ten atrybut powinien zawsze określać pełne przestrzenie nazw. Jeśli jest niejasności, MSBuild wybiera dowolne dopasowanie, co może spowodować nieoczekiwane wyniki.|
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
 
@@ -90,9 +90,9 @@ Mapuje zadanie, do którego odwołuje się element [zadania](../msbuild/task-ele
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody>
+       <Task>
       ... Task factory-specific data ...
-       </TaskBody>
+       </Task>
 </UsingTask>
 ```
 

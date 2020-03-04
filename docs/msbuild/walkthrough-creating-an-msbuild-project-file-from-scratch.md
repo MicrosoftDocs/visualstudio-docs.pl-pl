@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a8b380791cbb8adcc43b363e5f0a332935e131
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631110"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263139"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od podstaw
 
@@ -154,8 +154,6 @@ Zadania w miejscu docelowym kompilacji są wykonywane sekwencyjnie. W takim przy
 > ```xml
 > <Compile Include="*.cs" />
 > ```
->
-> Nie zaleca się jednak używania symboli wieloznacznych, ponieważ sprawia, że debugowanie i selektywne ukierunkowanie są trudniejsze, jeśli pliki źródłowe są dodawane lub usuwane.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Zwiększanie ścieżki w celu uwzględnienia programu MSBuild
 
@@ -361,7 +359,7 @@ Plik projektu powinien teraz wyglądać podobnie do następującego kodu:
 
      Aby sprawdzić, czy folder *\bin\\* zawiera aplikację *aplikację MSBuildSample* , wpisz **dir bin**.
 
-## <a name="build-incrementally"></a>Kompiluj przyrostowo
+## <a name="build-incrementally"></a>Kompilacja przyrostowa
 
  Można powiedzieć, że program MSBuild ma tworzyć obiekty docelowe tylko wtedy, gdy pliki źródłowe lub docelowe, od których zależy element docelowy, zostały zmienione. MSBuild używa sygnatury czasowej pliku, aby określić, czy został zmieniony.
 
