@@ -11,14 +11,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3605109519dccaafa1367464bd8c2385df5e93e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633424"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263152"
 ---
-# <a name="msbuild-best-practices"></a>Najlepsze rozwiązania dla programu MSBuild
+# <a name="msbuild-best-practices"></a>Najlepsze rozwiązania w programie MSBuild
 
 Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania skryptów programu MSBuild:
 
@@ -30,7 +30,7 @@ Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania
 </MyProperty>
 ```
 
-- Unikaj symboli wieloznacznych podczas zaznaczania elementów. Zamiast tego należy jawnie określić pliki. Ułatwia to śledzenie błędów, które mogą wystąpić podczas dodawania lub usuwania plików.
+- Ogólnie rzecz biorąc, Unikaj używania symboli wieloznacznych podczas zaznaczania elementów. Zamiast tego należy jawnie określić pliki. Jest to spowodowane tym, że w większości typów projektów MSBuild rozszerza symbole wieloznaczne w różnych godzinach, na przykład podczas dodawania lub usuwania elementów, co może prowadzić do nieoczekiwanego zachowania. Wyjątkiem jest w projektach w stylu zestaw .NET Core SDK, które poprawnie przetwarzają symbole wieloznaczne.
 
 ## <a name="see-also"></a>Zobacz też
 

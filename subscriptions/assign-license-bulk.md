@@ -3,21 +3,20 @@ title: Przypisywanie licencji do grup użytkowników dla subskrypcji programu Vi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak Administratorzy mogą przypisywać licencje do wielu subskrybentów za pomocą funkcji zbiorczego dodawania lub grup Microsoft Azure Active Directory
-ms.openlocfilehash: ae16c64f90f90b820332e0ee7f1753a8dd6e5c32
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652823"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263347"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administrowania subskrypcjami pozwala dodawać użytkowników jeden w czasie lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
 
 Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorczego lub jeśli Twoja organizacja korzysta z usługi Microsoft Azure Active Directory (Azure AD), możesz użyć grup usługi Azure AD. W tym artykule opisano proces dla obu tych opcji. 
-
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Używanie dodatków zbiorczych do przypisywania subskrypcji
 1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio w witrynie https://manage.visualstudio.com.
@@ -59,19 +58,16 @@ Aby dodać dużych grup użytkowników, możesz użyć funkcji dodawania zbiorcz
    > [!div class="mx-imgBorder"]
    > ![komunikat z potwierdzeniem, jeśli przekazywanie wielu subskrybentów powiedzie się](media/bulk-add-template-success.png)
 
-## <a name="use-azure-ad-groups-to-assign-subscriptions"></a>Przypisywanie subskrypcji przy użyciu grup usługi Azure AD 
-Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskrypcji. Możesz dodać grupy zabezpieczeń usługi Azure AD w portalu administracyjnym subskrypcji, co zapewni, że wszyscy użytkownicy w grupie mają przypisaną subskrypcję. W celu ułatwienia, gdy użytkownicy opuszczają Twoją organizację i zostaną usunięci z usługi Azure AD, ich dostęp do subskrypcji również zostanie usunięty.
-
-> [!NOTE]
-> Ta funkcja jest wdrażana w fazach, dlatego może nie być natychmiast dostępna dla Twojej organizacji.   
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Przypisywanie subskrypcji przy użyciu grup Azure Active Directory 
+Korzystanie z tej funkcji ułatwia pozostawanie na swoich przypisaniach subskrypcji. Możesz dodać Azure Active Directory grupy zabezpieczeń w portalu administratora subskrypcji, co zapewni, że wszyscy użytkownicy w grupie mają przypisaną subskrypcję. Aby ułatwić, gdy użytkownicy opuszczają Twoją organizację i zostaną usunięci z Azure Active Directory, ich dostęp do subskrypcji zostanie również usunięty. 
 
 > [!IMPORTANT]
 > Następujące ograniczenia dotyczą korzystania z grup usługi Azure AD na potrzeby dodawania subskrybentów:
 > - Grupy muszą zawierać co najmniej jednego członka.  Puste grupy nie są obsługiwane.
-> - Grupy muszą mieć mniej niż 1 000 użytkowników.
-> - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Zagnieżdżone grupy nie są obsługiwane.
-> - Obsługiwane są tylko zaufane umowy.
-> - Wszyscy członkowie grupy muszą mieć adres e-mail skojarzony z kontem usługi Azure AD.
+> - Grupy muszą mieć mniej niż 1 000 użytkowników 
+> - Wszyscy użytkownicy muszą znajdować się na najwyższym poziomie grupy.  Grupy zagnieżdżone nie są obsługiwane
+> - Obsługiwane są tylko zaufane umowy
+> - Wszyscy członkowie grupy muszą mieć adres e-mail skojarzony z kontem usługi Azure AD
 
 
 1. Zaloguj się do portalu administracyjnego subskrypcji programu Visual Studio w witrynie [https://manage.visualstudio.com](https://manage.visualstudio.com).
@@ -104,7 +100,7 @@ Odp.: nie — wszyscy użytkownicy w grupie otrzymują tę samą subskrypcję.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>P: Czy można edytować szczegóły subskrybenta dodanych do grupy usługi Azure AD?  
 Odp.: nie--aby zmodyfikować informacje dla poszczególnych subskrybentów, należy usunąć je z grupy zabezpieczeń usługi Azure AD i przypisać im pojedynczą subskrypcję.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: dodano kogoś do grupy zabezpieczeń usługi Azure AD, ale nie są one widoczne w portalu administracyjnym subskrypcji i nie mają subskrypcji. Dlaczego nie?  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: dodano kogoś do grupy zabezpieczeń usługi Azure AD, ale nie są one widoczne w portalu administracyjnym subskrypcji i nie mają subskrypcji. Dlaczego?  
 Odp.: w zależności od tego, jak Twoja organizacja skonfigurował usługę Azure AD, można zobaczyć opóźnienia nawet przez 24 godziny przed dodaniem użytkownika. Jeśli jest dłuższa niż 24 godziny, [skontaktuj się z pomocą techniczną](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 
@@ -117,6 +113,4 @@ Odp.: w zależności od tego, jak Twoja organizacja skonfigurował usługę Azur
 ## <a name="next-steps"></a>Następne kroki
 - Masz tylko jednego lub dwóch subskrybentów do dodania?  Wyewidencjonowywanie [dodawania pojedynczych użytkowników](assign-license.md)
 - Potrzebujesz pomocy? Skontaktuj się z [pomocą techniczną programu Visual Studio Administration i subscriptions](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-
 

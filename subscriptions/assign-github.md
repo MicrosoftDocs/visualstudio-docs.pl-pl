@@ -3,15 +3,15 @@ title: Oferta programu Visual Studio i usługi GitHub Enterprise | Microsoft Doc
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Zarządzanie subskrypcjami w ofercie programu Visual Studio i usługi GitHub Enterprise
-ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: e48b047862daa80452e1b2128dc74fee8bd1039e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558153"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263334"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Zarządzanie subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise
 Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mogą zakupić nową ofertę subskrypcji, która wiąże się z subskrypcjami programu Visual Studio w wersji Standard i usługi GitHub. Jest to prosty i ekonomiczny sposób, w jaki Subskrybenci programu Visual Studio mogą uzyskać przedsiębiorstwo w serwisie GitHub. 
@@ -19,7 +19,7 @@ Klienci, którzy mają umowę Enterprise Agreement (EA) z firmą Microsoft, mog�
 Gdy organizacja kupuje subskrypcje programu Visual Studio za pomocą usługi GitHub Enterprise, są one obsługiwane i zarządzane w dwóch częściach.
 
 ## <a name="manage-visual-studio-subscriptions"></a>Zarządzanie subskrypcjami programu Visual Studio
-Gdy organizacja kupuje subskrypcje programu Visual Studio za pomocą usługi GitHub Enterprise, część subskrypcji programu Visual Studio jest obsługiwana natychmiast, a subskrypcje są dostępne do przypisania i zarządzania w portalu [administracyjnym subskrypcji](https://manage.visualstudio.com) programu Visual Studio. 
+Gdy organizacja kupuje subskrypcje programu Visual Studio za pomocą usługi GitHub Enterprise, część subskrypcji programu Visual Studio jest inicjowana natychmiast, a subskrypcje są dostępne do przypisywania i zarządzania w portalu [administracyjnym subskrypcji](https://manage.visualstudio.com) programu Visual Studio. 
 
 Aby uzyskać więcej informacji na temat zarządzania subskrypcjami, zapoznaj się z następującymi tematami:
 - [Korzystanie z portalu administracyjnego](using-admin-portal.md)
@@ -31,7 +31,7 @@ Aby uzyskać więcej informacji na temat zarządzania subskrypcjami, zapoznaj si
 > [!Important]
 > Jeśli subskrypcje programu Visual Studio z usługą GitHub Enterprise są przypisane przez administratorów subskrypcji programu Visual Studio, a nigdy nie zakupionych subskrypcji, nie będą one widoczne dla administratorów przedsiębiorstwa usługi GitHub w organizacji. Aby upewnić się, że subskrypcje w witrynie GitHub są widoczne, należy dokonać zakupu, w tym **co najmniej jeden** Visual Studio Professional z usługą GitHub enterprise lub Visual Studio Enterprise z subskrypcją usługi GitHub Enterprise, przy pierwszym przypisaniu subskrypcji.  
 >
-> Klient jest odpowiedzialny za zagwarantowanie, że dla każdej przypisanej subskrypcji usługi GitHub istnieje odpowiedni program Visual Studio z subskrypcją usługi GitHub przypisany w portalu zarządzania w celu zachowania zgodności z wymaganiami dotyczącymi licencjonowania dla tego ramach.
+> Klient jest odpowiedzialny za zagwarantowanie, że dla każdej przypisanej subskrypcji usługi GitHub istnieje odpowiedni program Visual Studio z subskrypcją usługi GitHub przypisany w portalu administracyjnym subskrypcji programu Visual Studio w celu zachowania zgodności z wymagania dotyczące licencjonowania dla tej subskrypcji.
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Zarządzanie subskrypcjami w witrynie GitHub Enterprise
 W przypadku zakupu subskrypcji usługi GitHub przedsiębiorstwa partnerzy usługi GitHub z klientami mogą pomóc w tworzeniu i konfigurowaniu organizacji, które będą uzyskiwać dostęp do usługi GitHub i identyfikowania administratorów.  Ci Administratorzy otrzymają powiadomienie, że zostały skonfigurowane jako administratorzy.  
@@ -71,5 +71,20 @@ Pomoc usługi GitHub zawiera wiele przewodników administratorów, które mogą 
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - Uzyskaj [Pomoc techniczną](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
+Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
+- [Przypisywanie pojedynczych subskrypcji](assign-license.md)
+- [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
+- [Edytowanie subskrypcji](edit-license.md)
+- [Usuwanie subskrypcji](delete-license.md)
+- [Określanie maksymalnego użycia](maximum-usage.md)
+
 Aby uzyskać więcej informacji na temat zarządzania subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise, zapoznaj się z [portalem administracyjnym subskrypcji](https://visualstudio.microsoft.com/subscriptions-administration/)programu Visual Studio.
+
+
