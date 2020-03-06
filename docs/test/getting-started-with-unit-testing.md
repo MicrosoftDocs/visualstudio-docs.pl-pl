@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie do testów jednostkowych
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279331"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289857"
 ---
 # <a name="get-started-with-unit-testing"></a>Wprowadzenie do testów jednostkowych
 
@@ -22,7 +22,7 @@ Za pomocą programu Visual Studio można definiować i uruchamiać testy jednost
 
 ## <a name="create-unit-tests"></a>Utwórz testy jednostkowe
 
-W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
+W tej sekcji opisano sposób tworzenia projektu testów jednostkowych.
 
 1. Otwórz projekt, który chcesz przetestować w programie Visual Studio.
 
@@ -72,7 +72,7 @@ W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
 
 1. Dodaj kod do metody test jednostkowy.
 
-   Na przykład w przypadku projektu testowego MSTest lub NUnit można użyć poniższego kodu.
+   Na przykład dla projektu MSTest można użyć poniższego kodu.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,42 @@ W tej sekcji opisano, jak utworzyć projekt testu jednostkowego.
    }
    ```
 
+   Lub, w przypadku projektu NUnit, można użyć poniższego kodu.
+
+   ```csharp
+   using using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> Aby zapoznać się z bardziej szczegółowym przewodnikiem tworzenia testów jednostkowych, zobacz [Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Aby uzyskać więcej informacji na temat tworzenia testów jednostkowych, zobacz [Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Uruchamianie testów jednostkowych
 
