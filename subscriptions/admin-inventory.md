@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Informacje o responsibilty administratorów dotyczące przeprowadzania spisów przedprodukcyjnych
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4dec93101cb7399da3cd493af38c0559f0ed9dee
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476742"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894380"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Spis środowiska przedprodukcyjnego
 Subskrypcje programu Visual Studio upraszczają zarządzanie zasobami przez zliczanie użytkowników, a nie urządzeń.
@@ -29,6 +29,12 @@ Oto kilka sposobów, aby uprościć tworzenie spisu środowiska przedprodukcyjne
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Obowiązki administratora](admin-responsibilities.md)
@@ -36,9 +42,5 @@ Dowiedz się więcej o odpowiedzialności dla administratorów:
 - [Śledzenie przypisań użytkowników i przetwarzanie zamówień](assignments-orders.md)
 - Używanie [maksymalnego użycia](maximum-usage.md) do śledzenia zobowiązań zakupu
 
-## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 

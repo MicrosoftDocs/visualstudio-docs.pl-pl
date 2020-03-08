@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Dowiedz się, jak anonimowe dane subskrybenta, gdy dostęp do subskrypcji zostanie utracony.
-ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 439e53b1c67fde0fbda0666652e29bf396abfee2
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77520842"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894416"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Zachowywanie anonimowości informacji o subskrybencie programu Visual Studio
 Gdy wystąpi zdarzenie, które blokuje użycie subskrypcji przez subskrybenta, takie jak wygaśnięcie subskrypcji lub usunięcie konta logowania subskrybenta, informacje osobiste użytkownika, takie jak nazwa i konto logowania, są zasadniczo szyfrowane w celu renderowania nie można ich używać.  Jest to gotowe do ochrony danych osobowych subskrybenta.
@@ -41,11 +41,13 @@ Odp.: Istnieją dwa sposoby na uniknięcie problemu:
 - Wdróż pojedynczy system zarządzania tożsamościami — MSA lub AAD--, ale nie oba.  
 - Skojarz tożsamości usługi AAD i MSA za pośrednictwem dzierżawy. 
 
-## <a name="next-steps"></a>Następne kroki
-Dowiedz się, jak zapobiegać zachowywanie anonimowości przez [kojarzenie tożsamości usługi MSA i usługi AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
 - [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Następne kroki
+Dowiedz się, jak zapobiegać zachowywanie anonimowości przez [kojarzenie tożsamości usługi MSA i usługi AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+

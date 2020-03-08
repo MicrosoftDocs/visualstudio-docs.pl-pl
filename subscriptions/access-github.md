@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Dowiedz się więcej na temat nowej oferty programu Visual Studio i usługi GitHub
-ms.openlocfilehash: 5ae209bc0f6b3dcef99f15abd2cfb67d65f655d0
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: f8cfe09d6c9dc7608684ccf80238db4ac066fc20
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476749"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894385"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Wprowadzenie do subskrypcji programu Visual Studio za pomocą usługi GitHub Enterprise  
 
@@ -77,12 +77,14 @@ Odp.: wraz z subskrypcją usługi GitHub Enterprise otrzymujesz pełną subskryp
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - Uzyskaj [Pomoc techniczną](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) dla przedsiębiorstw w witrynie GitHub.   
 
-## <a name="next-steps"></a>Następne kroki
-Jeśli dopiero zaczynasz pracę z usługą GitHub, zapoznaj się z [laboratorium uczenia usługi GitHub](https://lab.github.com/), które przeprowadzi Cię przez serię ciekawych i praktycznych projektów, udostępniając przydatne opinie w sposób.
-
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
 - [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Następne kroki
+Jeśli dopiero zaczynasz pracę z usługą GitHub, zapoznaj się z [laboratorium uczenia usługi GitHub](https://lab.github.com/), które przeprowadzi Cię przez serię ciekawych i praktycznych projektów, udostępniając przydatne opinie w sposób.
+
+
 
