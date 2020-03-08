@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633164"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865326"
 ---
 # <a name="msbuild-task-reference"></a>Odwołanie do zadania programu MSBuild
 
@@ -37,15 +37,15 @@ Oprócz parametrów wymienionych w tematach w tej sekcji każde zadanie ma równ
 
 - [Klasa bazowa zadania](../msbuild/task-base-class.md)
 
- Dodaje kilka parametrów do zadań, które pochodzą z klasy <xref:Microsoft.Build.Utilities.Task>.
+ Dodaje kilka parametrów do zadań, które pochodzą z klasy <xref:Microsoft.Build.Utilities.Task>. Nie przeznaczony do użycia bezpośrednio.
 
 - [Klasa bazowa TaskExtension](../msbuild/taskextension-base-class.md)
 
- Dodaje kilka parametrów do zadań, które pochodzą z klasy <xref:Microsoft.Build.Tasks.TaskExtension>.
+ Dodaje kilka parametrów do zadań, które pochodzą z klasy <xref:Microsoft.Build.Tasks.TaskExtension>. Nie przeznaczony do użycia bezpośrednio.
 
 - [Klasa bazowa ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
 
- Dodaje kilka parametrów do zadań, które pochodzą z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>.
+ Dodaje kilka parametrów do zadań, które pochodzą z klasy <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Nie przeznaczony do użycia bezpośrednio.
 
 - [AL (Konsolidator zestawu) — zadanie](../msbuild/al-assembly-linker-task.md)
 

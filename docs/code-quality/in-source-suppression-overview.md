@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167627"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408715"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Pomiń ostrzeżenia analizy kodu
 
@@ -92,6 +92,8 @@ Właściwości tego atrybutu obejmują:
 
 - **Target** — identyfikator, który jest używany do określenia elementu docelowego, na którym jest pomijane ostrzeżenie. Musi zawierać w pełni kwalifikowaną nazwę elementu.
 
+Gdy widzisz ostrzeżenia w programie Visual Studio, możesz wyświetlić przykłady `SuppressMessage` przez [dodanie pomijania do globalnego pliku pomijania](../code-quality/use-roslyn-analyzers.md#suppress-violations). Atrybut pomijania i jego właściwości wymagane są wyświetlane w oknie podglądu.
+
 ## <a name="suppressmessage-usage"></a>SuppressMessage użycie
 
 Ostrzeżenia analizy kodu są pomijane na poziomie, do którego zastosowano atrybut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. Na przykład atrybut może być stosowany na poziomie zestawu, modułu, typu, elementu członkowskiego lub parametru. Celem jest ścisłe sprzęganie informacji o pominięciu do kodu, w którym występuje naruszenie.
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>Wygenerowany kod
-
-Kompilatory kodu zarządzanego i narzędzia innych firm generują kod, aby ułatwić szybkie tworzenie kodu. Kod wygenerowany przez kompilator, który pojawia się w plikach źródłowych jest zwykle oznaczony atrybutem `GeneratedCodeAttribute`.
-
-Można wybrać, czy pomijać ostrzeżenia i błędy analizy kodu dla wygenerowanego kodu. Aby uzyskać informacje na temat sposobu pomijania takich ostrzeżeń i błędów, zobacz [How to: pomijanie ostrzeżeń dla wygenerowanego kodu](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
-
-> [!NOTE]
-> Analiza kodu ignoruje `GeneratedCodeAttribute`, gdy jest stosowana do całego zestawu lub jednego parametru.
-
 ## <a name="global-level-suppressions"></a>Pominięcia na poziomie globalnym
 
 Narzędzie do analizy kodu zarządzanego sprawdza atrybuty `SuppressMessage`, które są stosowane na poziomie zestawu, modułu, typu, elementu członkowskiego lub parametru. Wyzwala również naruszenia zasobów i przestrzeni nazw. Te naruszenia muszą być stosowane na poziomie globalnym i są objęte zakresem i elementem przeznaczonym dla siebie. Na przykład następujący komunikat pomija naruszenie przestrzeni nazw:
@@ -185,6 +178,22 @@ Można pominąć naruszenia jakości kodu dla całego zestawu przy użyciu zakre
 Na przykład następujący atrybut w pliku projektu _GlobalSuppressions_ będzie pomijał naruszenie zasad ConfigureAwait dla projektu ASP.NET Core:
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>Wygenerowany kod
+
+Kompilatory kodu zarządzanego i narzędzia innych firm generują kod, aby ułatwić szybkie tworzenie kodu. Kod wygenerowany przez kompilator, który pojawia się w plikach źródłowych jest zwykle oznaczony atrybutem `GeneratedCodeAttribute`.
+
+W przypadku analizy kodu źródłowego (analizatory FxCop) można pominąć komunikaty w wygenerowanym kodzie przy użyciu pliku [. editorconfig](../code-quality/configure-fxcop-analyzers.md) w katalogu głównym projektu lub rozwiązania. Użyj wzorca pliku, aby dopasować wygenerowany kod. Na przykład, aby wykluczyć ostrzeżenia CS1591 w plikach * *. Designer.cs* , użyj tego pliku konfiguracyjnego.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+W przypadku starszej analizy kodu można zdecydować, czy pomijać ostrzeżenia i błędy analizy kodu dla wygenerowanego kodu. Aby uzyskać informacje na temat sposobu pomijania takich ostrzeżeń i błędów, zobacz [How to: pomijanie ostrzeżeń dla wygenerowanego kodu](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+
+> [!NOTE]
+> Analiza kodu ignoruje `GeneratedCodeAttribute`, gdy jest stosowana do całego zestawu lub jednego parametru.
 
 ## <a name="see-also"></a>Zobacz też
 

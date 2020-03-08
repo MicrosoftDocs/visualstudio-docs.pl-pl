@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Logowanie może zakończyć się niepowodzeniem w przypadku używania aliasów lub przyjaznych nazw
-ms.openlocfilehash: 824d24979d029d4a2de611db092afdbe908f64ea
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: 53b277296e6923bb78717bb76a0c20d2861c29ce
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235141"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865391"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie się do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem podczas korzystania z aliasów
 W zależności od typu konta użytego do zalogowania się dostępne subskrypcje mogą nie być poprawnie wyświetlane podczas logowania się do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jedną z potencjalnych przyczyn jest użycie "aliasów" lub "przyjaznych nazw" zamiast tożsamości logowania, do której przypisano subskrypcję. Jest to nazywane "aliasem".
@@ -39,7 +39,7 @@ Można napotkać niezgodność nazw UPN, gdy firma ma Active Directory skonfigur
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Jak naprawić niezgodność nazw UPN
 
-1. Dostęp do portalu zarządzania administracyjnego programu Visual Studio https://manage.visualstudio.com 
+1. Dostęp do portalu zarządzania administracyjnego programu Visual Studio [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 2. Znajdź subskrybenta z niezgodnością nazwy UPN. (Funkcja [filtru](search-license.md) może ułatwić znalezienie subskrybenta).
 
@@ -55,7 +55,7 @@ Jeśli adres e-mail używany do logowania się do portalu subskrypcji programu V
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Jak wykryć, czy Twoje konto subskrypcji osobistej ma wpływ na problem z aliasem
 
-1. Zaloguj się do https://my.visualstudio.com/subscriptions
+1. Zaloguj się do [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. Sprawdź, czy adres e-mail logowania wyświetlany w prawym górnym rogu strony jest zgodny z adresem użytym do zalogowania.  Jeśli zalogowany adres e-mail nie jest taki sam jak adres e-mail używany do uzyskiwania dostępu do witryny sieci Web, występuje konflikt między kontem a aliasem.
 
@@ -81,7 +81,7 @@ Jako administrator dostępne są dwie opcje zapewnienia pomyślnego logowania si
 - Druga opcja (mniej bezpieczna) polega na tym, że Subskrybenci mogą się zalogować przy użyciu innego adresu e-mail niż adres e-mail swojego katalogu.
 
 Obie te opcje są konfigurowane w portalu administracyjnym, wykonując następujące czynności:  
-1. Zaloguj się do https://manage.visualstudio.com 
+1. Zaloguj się do [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 0. Jeśli zmieniasz pojedynczego użytkownika, wybierz tego użytkownika z tabeli i kliknij prawym przyciskiem myszy, aby edytować. Spowoduje to otwarcie panelu, w którym można zmodyfikować adres e-mail logowania. Wprowadź wymagane aktualizacje w polu adres e-mail logowania. Kliknij przycisk Zapisz, aby zmiany zaczęły obowiązywać.  
 

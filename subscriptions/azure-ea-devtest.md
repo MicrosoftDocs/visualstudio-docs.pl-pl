@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: Dowiedz się, jak korzystać z specjalnych cen usługi Azure DevTest dostępnych dla klientów z umowami Enterprise Agreement
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580105"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410430"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta usługi Azure Umowa Enterprise DevTest
 
@@ -25,7 +25,7 @@ Korzystanie z ofert jest procesem dwuetapowym:
 
 ## <a name="enable-offers-in-the-ea-portal"></a>Włączanie ofert w portalu EA
 Aby włączyć oferty:
-1. Zaloguj się do https://ea.azure.com/manage.
+1. Zaloguj się do witryny [https://ea.azure.com/manage](https://ea.azure.com/manage).
 0. Kliknij menu **konto** .
 0. Znajdź konto, dla którego chcesz włączyć oferty.  Jeśli masz wiele kont, możesz użyć **wyszukiwania** , aby szybko zlokalizować konto. 
 0. Umieść kursor na nazwie konta. 
@@ -35,7 +35,7 @@ Aby włączyć oferty:
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Tworzenie indywidualnych subskrypcji w ramach konta
 Każdy subskrybent na koncie może utworzyć subskrypcję, wykonując następujące czynności:
-1. Zaloguj się do https://account.windowsazure.com/signup?showCatalogs=True.
+1. Zaloguj się do witryny [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Wybierz ofertę **Enterprise — tworzenie i testowanie** .
 0. Kliknij pole wyboru, aby potwierdzić, że subskrypcja podlega Umowa Enterprise. 
 0. Kliknij pozycję **Kup**.  (W przypadku tej oferty nie masz faktycznie kupowanych elementów).

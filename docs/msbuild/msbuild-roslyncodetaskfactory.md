@@ -10,19 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead738042b15c955aadb458c527253f3759b934e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 658302de187d6bbeab67dedaaa816709f00436ed
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633229"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865378"
 ---
-# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild z RoslynCodeTaskFactory
+# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Zadania wbudowane programu MSBuild przy użyciu fabryki RoslynCodeTaskFactory
 
 Podobnie jak w przypadku [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory używa międzyplatformowych kompilatorów Roslyn do generowania zestawów zadań w pamięci do użycia jako zadania wbudowane.  .NET Standard obiektów docelowych zadań RoslynCodeTaskFactory i może współdziałać z .NET Framework i środowiska uruchomieniowe platformy .NET Core, a także z innymi platformami, takimi jak Linux i Mac OS.
 
 >[!NOTE]
->RoslynCodeTaskFactory jest dostępna tylko w programie MSBuild 15,8 i nowszych.
+>RoslynCodeTaskFactory jest dostępna tylko w programie MSBuild 15,8 i nowszych. Wersje MSBuild są zgodne z wersjami programu Visual Studio, więc RoslynCodeTaskFactory jest dostępna w programie Visual Studio 15,8 lub nowszym.
 
 ## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Struktura zadania śródwierszowego z RoslynCodeTaskFactory
 
@@ -164,7 +164,7 @@ definiuje te trzy parametry:
 
 - `Tally` jest parametrem wyjściowym typu System. Int32.
 
-Jeśli element `Code` ma atrybut `Type` `Fragment` lub `Method`, wówczas właściwości są tworzone automatycznie dla każdego parametru. W przeciwnym razie właściwości muszą być jawnie zadeklarowane w kodzie źródłowym zadania i muszą dokładnie pasować do ich definicji parametrów.
+Jeśli element `Code` ma atrybut `Type` `Fragment` lub `Method`, wówczas właściwości są tworzone automatycznie dla każdego parametru.  W RoslynCodeTaskFactory, jeśli element `Code` ma atrybut `Type` `Class`, nie trzeba określać `ParameterGroup`, ponieważ jest wywnioskowany na podstawie kodu źródłowego (jest to różnica między `CodeTaskFactory`). W przeciwnym razie właściwości muszą być jawnie zadeklarowane w kodzie źródłowym zadania i muszą dokładnie pasować do ich definicji parametrów.
 
 ## <a name="example"></a>Przykład
 

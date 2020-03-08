@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 7fd8e886a4f770238c00ef881748388f93281074
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114204"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409694"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -107,13 +107,21 @@ Przed wdrożeniem programu Visual Studio w całej organizacji należy wykonać k
 
 ## <a name="step-4---deploy-updates"></a>Krok 4 — wdrażanie aktualizacji
 
-* [Odśwież lokalizacji sieciowej, z najnowszymi aktualizacjami](update-a-network-installation-of-visual-studio.md?view=vs-2019) do programu Visual Studio za pomocą polecenia używane w kroku 1 w regularnych odstępach czasu, aby dodać zaktualizowane składniki.
+* [Odśwież lokalizację sieciową przy użyciu najnowszych aktualizacji](update-a-network-installation-of-visual-studio.md?view=vs-2019) programu Visual Studio, uruchamiając polecenie użyte w kroku 1 w regularnych odstępach czasu w celu dodania zaktualizowanych składników.
 
   Program Visual Studio można zaktualizować za pomocą skryptu aktualizacji. Aby to zrobić, użyj [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametru wiersza polecenia.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) korzystanie z narzędzi Visual Studio Tools
 
-Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019) na maszynach klienckich.
+Dostępne są kilka narzędzi, które ułatwiają [wykrywanie zainstalowanych wystąpień programu Visual Studio i zarządzanie nimi](tools-for-managing-visual-studio-instances.md?view=vs-2019) na komputerach klienckich.
+
+## <a name="advanced-configuration"></a>Konfiguracja zaawansowana
+
+Domyślnie instalacja programu Visual Studio umożliwia dołączanie typów niestandardowych do wyszukiwania w usłudze Bing z listy błędów F1 i kodu. Można skonfigurować program Visual Studio, aby wyłączyć mechanizm wyszukiwania z uwzględnieniem dowolnych niestandardowych typów użytkowników, zmieniając wartość następującego klucza rejestru przez zasady:
+
+**"PutCustomTypeInBingSearch" DWORD 0**
+
+Rejestr znajduje się w katalogu * Software\Microsoft\VisualStudio\16.0_ {InstanceId} \ Roslyn\Internal\Diagnostics\* w gałęzi rejestru prywatnego. Aby uzyskać instrukcje dotyczące sposobu otwierania gałęzi rejestru, zobacz [Edytowanie rejestru dla wystąpienia programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
@@ -146,22 +154,30 @@ Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie 
 
 ## <a name="step-4---deploy-updates"></a>Krok 4 — wdrażanie aktualizacji
 
-* [Odśwież lokalizacji sieciowej, z najnowszymi aktualizacjami](update-a-network-installation-of-visual-studio.md?view=vs-2017) do programu Visual Studio za pomocą polecenia używane w kroku 1 w regularnych odstępach czasu, aby dodać zaktualizowane składniki.
+* [Odśwież lokalizację sieciową przy użyciu najnowszych aktualizacji](update-a-network-installation-of-visual-studio.md?view=vs-2017) programu Visual Studio, uruchamiając polecenie użyte w kroku 1 w regularnych odstępach czasu w celu dodania zaktualizowanych składników.
 
   Program Visual Studio można zaktualizować za pomocą skryptu aktualizacji. Aby to zrobić, użyj [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametru wiersza polecenia.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Krok 5 — (opcjonalnie) korzystanie z narzędzi Visual Studio Tools
 
-Mamy kilka narzędzi, które ułatwiają [wykrywania wystąpień i zarządzanie nimi zainstalowanego programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017) na maszynach klienckich.
+Dostępne są kilka narzędzi, które ułatwiają [wykrywanie zainstalowanych wystąpień programu Visual Studio i zarządzanie nimi](tools-for-managing-visual-studio-instances.md?view=vs-2017) na komputerach klienckich.
+
+## <a name="advanced-configuration"></a>Konfiguracja zaawansowana
+
+Domyślnie instalacja programu Visual Studio umożliwia dołączanie typów niestandardowych do wyszukiwania w usłudze Bing z listy błędów F1 i kodu. Można skonfigurować program Visual Studio, aby wyłączyć mechanizm wyszukiwania z uwzględnieniem dowolnych niestandardowych typów użytkowników, zmieniając wartość następującego klucza rejestru przez zasady:
+
+**"PutCustomTypeInBingSearch" DWORD 0**
+
+Rejestr znajduje się w katalogu * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics\* w gałęzi rejestru prywatnego. Aby uzyskać instrukcje dotyczące sposobu otwierania gałęzi rejestru, zobacz [Edytowanie rejestru dla wystąpienia programu Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
-* [Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio](install-certificates-for-visual-studio-offline.md)
+* [Zainstaluj certyfikaty wymagane do instalacji w trybie offline programu Visual Studio](install-certificates-for-visual-studio-offline.md)
 * [Importuj lub Eksportuj konfiguracje instalacji](import-export-installation-configurations.md)
 * [Archiwa Instalatora programu Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)

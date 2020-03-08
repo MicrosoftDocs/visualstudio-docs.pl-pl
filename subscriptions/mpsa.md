@@ -3,15 +3,15 @@ title: Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
-ms.openlocfilehash: f87a77cdc19244ca24da1685c0b05372f6cc76d7
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: e4416bfab95bd7d1c38c392bfbf9efee9a06fc7f
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605847"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410252"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Subskrypcje programu Visual Studio w ramach umowy dotyczącej produktów i usług firmy Microsoft (MPSA)
 Jeśli masz zakupione subskrypcje programu Visual Studio w programie MPSA, musisz znać kilka kwestii, aby móc stać się administratorem subskrypcji programu Visual Studio i przypisać subskrypcje użytkownikom. Jeśli użytkownik został już skonfigurowany jako administrator, możesz przejść bezpośrednio do [portalu administracyjnego](https://manage.visualstudio.com/)subskrypcji programu Visual Studio.
@@ -43,7 +43,12 @@ Po spełnieniu powyższych kryteriów można utworzyć skojarzenie konta zakupu 
 4. Wybierz **dzierżawę** (np. contoso.onmicrosoft.com).
 5. Kliknij pozycję **Skojarz domenę**.
 
-Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj udostępniać Administratorzy subskrypcji programu Visual Studio w ciągu kilku minut. Jednak czasami może to potrwać do 24 godzin. Po zainicjowaniu obsługi dzierżawy będzie można uzyskać dostęp do portalu administracyjnego subskrypcji programu Visual Studio. Jeśli trwa to dłużej niż 24 godziny, skontaktuj się z pomocą techniczną MPSA.
+Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj udostępniać Administratorzy subskrypcji programu Visual Studio w ciągu kilku minut. Jednak czasami może to potrwać do 24 godzin. Po zainicjowaniu obsługi dzierżawy będzie można uzyskać dostęp do portalu administracyjnego subskrypcji programu Visual Studio. Jeśli trwa to dłużej niż 24 godziny, skontaktuj się z pomocą techniczną usługi MPSA, wykonując następujące czynności:
+1. Połącz z https://www.microsoft.com/licensing/mpsa/default
+2. Kliknij menu **więcej** w górnej części strony. 
+3. Wybierz **Pomoc techniczną**
+4. Wybierz **Pomoc techniczną licencjonowania**
+5. Wybierz opcję pomocy technicznej, która najlepiej odpowiada Twoim potrzebom. 
 
 > [!NOTE]
 > Jeśli istnieją nowi użytkownicy, którzy spełniają kryteria w krokach 2 i 5 (po skojarzeniu), musisz skontaktować się z pomocą techniczną MPSA. Pomoc techniczna MPSA zapewnia pomoc w zakresie udostępniania nowych administratorów subskrypcji programu Visual Studio.
@@ -51,7 +56,21 @@ Po skojarzeniu wszyscy użytkownicy spełniający kryteria będą zazwyczaj udos
 ## <a name="tenant-association-unmanaged"></a>Skojarzenie dzierżawy (niezarządzane)
 Jeśli zarejestrowano Cię w centrum biznesowym za pomocą wiadomości e-mail, która nie jest kontem służbowym (nie jest zarejestrowana w Azure Active Directory "Azure AD"), jak wyjaśniono powyżej, skojarzenie dzierżawy będzie nieco inne. Należy wykonać czynności, które są nazywane "przejmowaniem domeny". W trakcie tego procesu użytkownik zostanie samemu administratorem globalnym, który zmieni dzierżawę z niezarządzanych na zarządzaną.
 
-Aby uzyskać bardziej szczegółowy opis tego procesu, możesz użyć [przewodników szybki start](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Pobierz przewodnik o nazwie *"Instalacja i korzystanie z usług online"* , który przeprowadzi Cię przez procedurę przejęcia przez domenę. Po zakończeniu tego procesu konto zakupu zostanie również skojarzone z dzierżawcą.
+Aby uzyskać bardziej szczegółowy opis tego procesu, możesz użyć [przewodników szybki start](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx). Pobierz przewodnik o nazwie *"Instalacja i korzystanie z usług online"* , który przeprowadzi Cię przez procedurę przejęcia przez domenę. Po zakończeniu tego procesu konto zakupu zostanie również skojarzone z dzierżawcą.
 
 > [!NOTE]
 > Po przeprowadzeniu procesu przejęcia domeny należy przestrzegać kryteriów z pięciu kroków w sekcji w przypadku skojarzenia predzierżawców (zarządzane). Po spełnieniu kryteriów będzie konieczne skontaktowanie się z pomocą techniczną MPSA w celu udostępnienia dodatkowych administratorów subskrypcji programu Visual Studio.
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Następne kroki
+Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio.
+- [Przypisywanie pojedynczych subskrypcji](assign-license.md)
+- [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
+- [Edytowanie subskrypcji](edit-license.md)
+- [Usuwanie subskrypcji](delete-license.md)
+- [Określanie maksymalnego użycia](maximum-usage.md)
