@@ -10,34 +10,34 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594308"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409549"
 ---
 # <a name="attribute-glossary"></a>Słownik atrybutów
 
 ## <a name="attributes-by-namespace"></a>Atrybuty według przestrzeni nazw
 
-* **Microsoft.Pex.Framework**
+* **Microsoft. Pex. Framework**
   * [PexAssumeNotNull](#pexassumenotnull)
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
     * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
-* **Microsoft.Pex.Framework.Settings**
+* **Microsoft. Pex. Framework. Settings**
   * [PexAssemblySettings](#pexassemblysettings)
 
-* **Microsoft.Pex.Framework.Instrumentation**
+* **Microsoft. Pex. Framework. Instrumentation**
   * [PexAssemblyUnderTest](#pexassemblyundertest)
   * [PexInstrumentAssembly](#pexinstrumentassemblyattribute)
 
-* **Microsoft.Pex.Framework.Using**
+* **Microsoft. Pex. Framework. using**
   * [PexUseType](#pexusetype)
 
-* **Microsoft.Pex.Framework.Validation**
+* **Microsoft. Pex. Framework. Validation**
   * [PexAllowedException](#pexallowedexception)
   * [PexAllowedExceptionFromAssembly](#pexallowedexceptionfromassembly)
   * [PexAllowedExceptionFromType](#pexallowedexceptionfromtype)
@@ -245,6 +245,6 @@ class CtorTest(int capacity) {
 
 [Więcej informacji](xref:Microsoft.Pex.Framework.Validation.PexAllowedExceptionFromTypeUnderTestAttribute)
 
-## <a name="got-feedback"></a>Chcesz przekazać opinię?
+## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

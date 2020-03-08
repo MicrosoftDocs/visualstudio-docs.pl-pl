@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75678964"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409772"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Flask za pomocą widoków i szablonów stron
 
-**Poprzedni krok: [Tworzenie projektu programu Visual Studio i rozwiązania](learn-flask-visual-studio-step-01-project-solution.md)**
+**Poprzedni krok: [Tworzenie projektu i rozwiązania programu Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Co znajduje się w kroku 1 w tym samouczku jest aplikacji Flask za pomocą jednej stronie, a cały kod w jednym pliku. Aby umożliwić do przyszłego rozwoju, najlepiej jest Refaktoryzacja kodu i tworzenia struktury szablony stron. W szczególności chcesz oddzielić kodu dla widoków aplikacji od innych aspektów, takich jak kod startowy.
 
@@ -32,11 +32,11 @@ W tym kroku teraz dowiesz się, jak:
 
 ## <a name="step-2-1-refactor-the-project-to-support-further-development"></a>Krok 1 z 2: Refaktoryzacja projektu dalszych obsługi opracowywania aplikacji
 
-W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć pojedynczy *app.py* pliku, który zawiera kod uruchamiający wraz z jednego widoku. Aby zezwolić na dalszy rozwój aplikacji za pomocą wielu widoków i szablonów, najlepiej jest do oddzielania tych problemów.
+W kodzie utworzonym przez szablon "pusty kolby projekt sieci Web" istnieje pojedynczy plik *App.py* , który zawiera kod uruchomienia obok jednego widoku. Aby zezwolić na dalszy rozwój aplikacji za pomocą wielu widoków i szablonów, najlepiej jest do oddzielania tych problemów.
 
-1. W folderze projektu, należy utworzyć folder aplikacji o nazwie `HelloFlask` (kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy Folder** .)
+1. W folderze projektu Utwórz folder aplikacji o nazwie `HelloFlask` (kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **Nowy folder**).
 
-2. W *HelloFlask* folderze utwórz plik o nazwie  *\_ \_init\_\_.py* z następującą zawartością, które tworzy `Flask` wystąpienia i ładuje widoków aplikacji (utworzonym w następnym kroku):
+2. W folderze *HelloFlask* Utwórz plik o nazwie *\_\_init\_\_. PR* z następującą zawartością, która tworzy wystąpienie `Flask` i ładuje widoki aplikacji (utworzone w następnym kroku):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
     import HelloFlask.views
     ```
 
-3. W *HelloFlask* folderze utwórz plik o nazwie *views.py* z następującą zawartością. Nazwa *views.py* jest ważne, ponieważ użyto `import HelloFlask.views` w ramach  *\_ \_init\_\_PY*; Jeśli zostanie wyświetlony błąd w czasie wykonywania nazwy nie są zgodne.
+3. W folderze *HelloFlask* Utwórz plik o nazwie *views.py* z następującą zawartością. Nazwa *views.py* jest ważna, ponieważ użyto `import HelloFlask.views` w *\_\_init\_\_. PR*; Jeśli nazwy nie są zgodne, zobaczysz błąd w czasie wykonywania.
 
     ```python
     from flask import Flask
@@ -57,11 +57,11 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
         return "Hello Flask!"
     ```
 
-    Oprócz zmiana nazwy funkcji i wyznaczać trasy do `home`, ten kod zawiera kod renderowania strony z *app.py* , a następnie importuje `app` obiekt, który jest zadeklarowany w  *\_ \_init\_\_.py*.
+    Oprócz zmiany nazwy funkcji i trasy do `home`, ten kod zawiera kod renderowania stron z *App.py* i importuje obiekt `app`, który jest zadeklarowany w *\_\_init\_\_.* str.
 
-4. Utwórz podfolder w *HelloFlask* o nazwie *szablony*, pozostaną puste teraz.
+4. Utwórz podfolder w programie *HelloFlask* o nazwie *templates*, który pozostanie pusty dla tej pory.
 
-5. W folderze głównym projektu, Zmień nazwę *app.py* do *runserver.py*i ich zawartości, które są zgodne z poniższym kodem:
+5. W folderze głównym projektu Zmień nazwę *App.py* na *runserver.py*i Oznacz zawartość jako zgodną z poniższym kodem:
 
     ```python
     import os
@@ -82,9 +82,9 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
 
     ![Struktura projektu po refaktoryzacji kodu](media/flask/step02-project-structure.png)
 
-7. Wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi (przeglądarka zostanie wyświetlony maja różnią się w) do uruchamiania aplikacji i Otwórz w przeglądarce. Wypróbuj oba / a/home tras adresów URL.
+7. Wybierz pozycję **debuguj** > **Rozpocznij debugowanie** (**F5**) lub przycisk **serwera sieci Web** na pasku narzędzi (widoczna przeglądarka może się różnić), aby uruchomić aplikację i otworzyć przeglądarkę. Wypróbuj oba / a/home tras adresów URL.
 
-8. Możesz również ustawić punkty przerwania w różnych części kodu i ponownie aplikację, aby stosować się do uruchomienia sekwencji. Na przykład Ustawianie punktu przerwania w pierwszym wierszu *runserver.py* i *HelloFlask\_* init_ *.py*, a następnie na `return "Hello Flask!"` wiersza w *views.py*. Następnie ponownie uruchom aplikację (**debugowania** > **ponowne uruchomienie**, **Ctrl**+**F5**, lub przycisk paska narzędzi, pokazano poniżej) i krok po kroku (**F10**) kodu lub uruchamiania z punktu przerwania, w których używane jest **F5**.
+8. Możesz również ustawić punkty przerwania w różnych części kodu i ponownie aplikację, aby stosować się do uruchomienia sekwencji. Na przykład ustaw punkt przerwania w pierwszych wierszach *runserver.py* i *HelloFlask\_* init_ *. PR*i w wierszu `return "Hello Flask!"` w *views.py*. Następnie uruchom ponownie aplikację (**debuguj** > **Uruchom ponownie**, **Ctrl**+**F5**lub przycisk paska narzędzi poniżej), a następnie przeprowadź krok przez (**F10**) kod lub Uruchom z każdego punktu przerwania za pomocą klawisza **F5**.
 
     ![Uruchom ponownie przycisk na pasku narzędzi debugowania w programie Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -94,11 +94,11 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
 
 Ponieważ wprowadzono zmiany w kodzie, a następnie zostały one przetestowane pomyślnie, teraz jest to doskonały moment, aby przejrzeć i zatwierdzić zmiany do kontroli źródła. Wykonania kolejnych kroków tego samouczka przypomnienia o odpowiedniej razy, aby ponownie zatwierdzić do kontroli źródła, a następnie wrócić do tej sekcji.
 
-1. Wybierz przycisk zmiany wzdłuż dolnej części programu Visual Studio (w kółkach poniżej), która przechodzi do **Team Explorer**.
+1. Wybierz przycisk zmiany w dolnej części programu Visual Studio (kółko poniżej), które przechodzi do **Team Explorer**.
 
     ![Przycisk zmiany kontroli źródła na pasku stanu programu Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. W **Team Explorer**, wprowadź wiadomość dotyczącą zatwierdzenia, takich jak "Zrefaktoryzuj kod" i wybierz **Zatwierdź wszystko**. Po zakończeniu zatwierdzania zostanie wyświetlony komunikat **zatwierdzenie \<> utworzone lokalnie. Synchronizuj, aby udostępnić zmiany na serwerze.** Aby wypchnąć zmiany do repozytorium zdalnego, należy zaznaczyć **synchronizacji**, a następnie wybierz **wypychania** w obszarze **zatwierdzeń wychodzących**. Wiele lokalnych zatwierdzeń, przed wypchnięciem do zdalnego również może wzrosnąć.
+1. W **Team Explorer**wprowadź komunikat dotyczący zatwierdzenia, taki jak "kod refaktoryzacji", i wybierz pozycję **Zatwierdź wszystko**. Po zakończeniu zatwierdzania zostanie wyświetlony komunikat **zatwierdzenie \<> utworzone lokalnie. Synchronizuj, aby udostępnić zmiany na serwerze.** Jeśli chcesz wypchnąć zmiany do zdalnego repozytorium, wybierz pozycję **Synchronizuj**, a następnie wybierz pozycję **wypychanie** w obszarze **zatwierdzenia wychodzące**. Wiele lokalnych zatwierdzeń, przed wypchnięciem do zdalnego również może wzrosnąć.
 
     ![Wypychanie zatwierdzeń do zdalnego w programie Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 
@@ -110,11 +110,11 @@ Jak często zdecydujesz się i jak często wypychanie zatwierdzeń do repozytori
 
 ## <a name="step-2-2-use-a-template-to-render-a-page"></a>Krok 2 z 2: renderowanie strony za pomocą szablonu
 
-`home` Funkcja, która należy do tej pory w *views.py* nie więcej niż odpowiedzi HTTP zwykłego tekstu dla strony. Jednak większość rzeczywistych stron sieci web, elastyczniejsze sformatowanego strony HTML, które często obejmują dane na żywo. W rzeczywistości głównym powodem, aby zdefiniować widoku, używając funkcji jest do generowania zawartości dynamicznej.
+Funkcja `home`, która jest dotąd w *views.py* , nie generuje więcej niż zwykły tekst odpowiedzi HTTP dla strony. Jednak większość rzeczywistych stron sieci web, elastyczniejsze sformatowanego strony HTML, które często obejmują dane na żywo. W rzeczywistości głównym powodem, aby zdefiniować widoku, używając funkcji jest do generowania zawartości dynamicznej.
 
 Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, możesz tworzyć się jak w ciągu przy użyciu zawartości dynamicznej kod HTML. Jednak ponieważ najlepiej oddzielić znaczników, od danych jest znacznie lepiej jest umieścić znaczniki w szablonie i przechowywać dane w kodzie.
 
-1. Po pierwsze, Edytuj *views.py* zawiera następujący kod, który używa wbudowanego kodu HTML dla strony z niektórych zawartości dynamicznej:
+1. W przypadku elementów uruchamiających należy edytować *views.py* tak, aby zawierał następujący kod, który używa wbudowanego kodu HTML dla strony z niepewną zawartością dynamiczną:
 
     ```python
     from datetime import datetime
@@ -136,7 +136,7 @@ Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, mo�
 
 1. Uruchom aplikację, a następnie odśwież stronę za kilka razy, aby zobaczyć, że data/godzina jest aktualizowana. Gdy skończysz, Zatrzymaj aplikację.
 
-1. Aby przekonwertować renderowanie strony, aby użyć szablonu, Utwórz plik o nazwie *index.html* w *szablony* folderu o następującej zawartości gdzie `{{ content }}` jest symbolu zastępczego lub wymiany tokenu (również wywołuje się *zmiennej szablonu*) dla której należy podać wartość w kodzie:
+1. Aby skonwertować Render strony w celu użycia szablonu, Utwórz plik o nazwie *index. html* w folderze *templates* o następującej zawartości, gdzie `{{ content }}` jest symbolem zastępczym lub tokenem zastępczym (nazywanym również *zmienną szablonu*), dla której podasz wartość w kodzie:
 
     ```html
     <html>
@@ -148,7 +148,7 @@ Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, mo�
     </html>
     ```
 
-1. Modyfikowanie `home` funkcja do użycia `render_template` można załadować szablonu i podać wartość "zawartość", która jest wykonywane przy użyciu argumentu nazwanego pasujące do nazwy symbolu zastępczego. Flask automatycznie wyszuka szablonów w *szablony* folderu, dzięki czemu ścieżkę do szablonu jest określana względem tego folderu:
+1. Zmodyfikuj funkcję `home`, aby użyć `render_template` do załadowania szablonu i podania wartości dla "Content", która jest wykonywana przy użyciu nazwanego argumentu pasującego do nazwy symbolu zastępczego. Kolba automatycznie szuka szablonów w folderze *templates* , więc ścieżka do szablonu jest określana względem tego folderu:
 
     ```python
     def home():
@@ -160,9 +160,9 @@ Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, mo�
             content = "<strong>Hello, Flask!</strong> on " + formatted_now)
     ```
 
-1. Uruchamianie aplikacji, zobacz wyniki i Zauważ, że wbudowane HTML w `content` wartości nie renderuje *jako* HTML, ponieważ automatycznie aparatu tworzenia szablonów (Jinja) specjalne zawartość HTML. Automatycznego anulowania zapewnianego element zapobiega przypadkowemu luk w zabezpieczeniach na ataki przez iniekcję kodu: deweloperzy często zbierania danych wejściowych z jednej strony i użyć jej jako wartości w drugiej za pomocą symbolu zastępczego szablonu. Anulowanie służy również jako przypomnienie, że ponownie jest zalecana z kodu HTML.
+1. Uruchom aplikację i sprawdź wyniki, a następnie zaobserwuj, że wbudowany kod HTML w wartości `content` nie jest renderowany *jako* HTML, ponieważ aparat tworzenia szablonów (jinja) automatycznie WYPROWADZA zawartość HTML. Automatycznego anulowania zapewnianego element zapobiega przypadkowemu luk w zabezpieczeniach na ataki przez iniekcję kodu: deweloperzy często zbierania danych wejściowych z jednej strony i użyć jej jako wartości w drugiej za pomocą symbolu zastępczego szablonu. Anulowanie służy również jako przypomnienie, że ponownie jest zalecana z kodu HTML.
 
-    W związku z tym Przejrzyj *templates\index.html* mogą zawierać różne symbole zastępcze dla każdego elementu danych w ramach znaczników:
+    W związku z tym Przejrzyj *templates\index.html* , aby zawierały odrębne symbole zastępcze dla każdego fragmentu danych w znaczniku:
 
     ```html
     <html>
@@ -175,7 +175,7 @@ Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, mo�
     </html>
     ```
 
-    Następnie zaktualizuj `home` funkcję, aby podać wartości dla symboli zastępczych:
+    Następnie zaktualizuj funkcję `home`, aby zapewnić wartości dla wszystkich symboli zastępczych:
 
     ```python
     def home():
@@ -193,7 +193,7 @@ Ponieważ wartość zwracana dla widoku jest po prostu określonym ciągiem, mo�
 
     ![Uruchamianie aplikacji przy użyciu szablonu](media/flask/step02-result.png)
 
-1. Zatwierdź zmiany do kontroli źródła i zaktualizować repozytorium zdalnego, jeśli to konieczne, zgodnie z opisem w [krok 1 z 2](#commit-to-source-control).
+1. Zatwierdź zmiany w kontroli źródła i zaktualizuj zdalne repozytorium, jeśli to konieczne, zgodnie z opisem w [kroku 2-1](#commit-to-source-control).
 
 ### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Pytanie: Czy szablony stron muszą znajdować się w oddzielnym pliku?
 
@@ -201,20 +201,20 @@ Odpowiedź: Mimo że szablony są zazwyczaj obsługiwane w oddzielnych plikach H
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>Pytanie: Szablony korzystać tylko z rozszerzeniem pliku HTML?
 
-Odpowiedź: *.html* rozszerzenie dla plików szablonów strony jest opcjonalne, ponieważ zawsze zidentyfikować dokładną ścieżkę względną do pliku w pierwszym argumencie `render_template` funkcji. Jednak program Visual Studio (i innych edytorów) zazwyczaj zapewnia funkcje, takie jak kod zakończenia i składnia barwy z *.html* pliki, które przewyższa fakt, że stronie Szablony nie są ściśle HTML.
+Odpowiedź: rozszerzenie *HTML* dla plików szablonów stron jest całkowicie opcjonalne, ponieważ zawsze identyfikujesz dokładną ścieżkę względną do pliku w pierwszym argumencie funkcji `render_template`. Jednak program Visual Studio (i inne redaktorzy) zwykle udostępnia funkcje, takie jak uzupełnianie kodu i zabarwienie składni z plikami *. html* , co pozwala na przeważenie faktu, że szablony stron nie są wyłącznie w formacie HTML.
 
-W rzeczywistości podczas pracy z projektem Flask programu Visual Studio automatycznie wykrywa, gdy plik HTML, który jest edytowany jest faktycznie szablonem Flask i zapewnia niektórych funkcji autouzupełniania. Na przykład, po rozpoczęciu wpisywania Flask komentarz szablon strony `{#`, Visual Studio automatycznie umożliwia zamknięcie `#}` znaków. **Dodaj komentarz do zaznaczenia** i **Usuń komentarz zaznaczenia** poleceń (na **Edytuj** > **zaawansowane** menu i na pasku narzędzi) komentarze szablonu można także użyć zamiast komentarze HTML.
+W rzeczywistości podczas pracy z projektem Flask programu Visual Studio automatycznie wykrywa, gdy plik HTML, który jest edytowany jest faktycznie szablonem Flask i zapewnia niektórych funkcji autouzupełniania. Na przykład po rozpoczęciu wpisywania komentarza do szablonu strony, `{#`, program Visual Studio automatycznie poda zamykane znaki `#}`. Polecenia **zaznaczania komentarza** i usuwania **komentarzy** (w menu **Edytuj** > **Zaawansowane** i na pasku narzędzi) również używają komentarzy szablonu zamiast komentarzy HTML.
 
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Pytanie: Szablony można podzielić na dalsze podfoldery?
 
-Odpowiedź: Tak, można użyć podfoldery i odwoływać się do ścieżki względnej w obszarze *szablony* w wywołaniach `render_template`. Ten sposób jest doskonałym sposobem na efektywne tworzenie przestrzeni nazw dla szablonów.
+Odpowiedź: tak, możesz użyć podfolderów, a następnie odwołać się do ścieżki względnej w obszarze *Szablony* w wywołaniach do `render_template`. Ten sposób jest doskonałym sposobem na efektywne tworzenie przestrzeni nazw dla szablonów.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
+> [Korzystanie z plików statycznych, dodawanie stron i dziedziczenie szablonów](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
 ## <a name="go-deeper"></a>Przejdź dalej
 
-- [Przewodnik Szybki Start Flask — renderowanie szablony](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) (flask.pocoo.org)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — platformy flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Samouczek [Szybki Start — szablony renderowania](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) (Flask.pocoo.org)
+- Kod źródłowy samouczka w witrynie GitHub: [Microsoft/Python-Sample-vs-Learning-Kolba](https://github.com/Microsoft/python-sample-vs-learning-flask)

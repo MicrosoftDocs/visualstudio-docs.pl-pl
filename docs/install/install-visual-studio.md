@@ -1,5 +1,5 @@
 ---
-title: Zainstaluj program Visual Studio
+title: Instalacja programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować program Visual Studio, krok po kroku.
 ms.date: 12/13/2019
@@ -21,13 +21,13 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d8e6e3a857c9bbf5577cf395f698f64cfb11bddc
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114572"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409760"
 ---
-# <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
+# <a name="install-visual-studio"></a>Instalacja programu Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -42,17 +42,17 @@ Nowy sposób instalowania programu Visual Studio — Zapraszamy! W tej wersji U�
 ::: moniker-end
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Zainstaluj program Visual Studio dla komputerów Mac](/visualstudio/mac/installation/).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Install Visual Studio dla komputerów Mac](/visualstudio/mac/installation/).
 
 ::: moniker range="vs-2019"
 
-Chcesz dowiedzieć się więcej na temat inne nowości w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releases/2019/release-notes/).
+Chcesz dowiedzieć się więcej na temat inne nowości w tej wersji? Zapoznaj się z naszymi [informacjami o wersji](/visualstudio/releases/2019/release-notes/).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Chcesz dowiedzieć się więcej na temat inne nowości w tej wersji? Zobacz nasze [informacje o wersji](/visualstudio/releasenotes/vs2017-relnotes).
+Chcesz dowiedzieć się więcej na temat inne nowości w tej wersji? Zapoznaj się z naszymi [informacjami o wersji](/visualstudio/releasenotes/vs2017-relnotes).
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Przed rozpoczęciem instalowania programu Visual Studio:
 
 ::: moniker range="vs-2017"
 
-Masz pytania dotyczące uruchamiania poprzednich wersji programu Visual Studio obok siebie przy użyciu programu Visual Studio 2017, zobacz [informacjami o zgodności programu Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+Pytania dotyczące uruchamiania wcześniejszych wersji programu Visual Studio obok programu Visual Studio 2017 zawiera temat [szczegóły zgodności programu Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ::: moniker-end
 
@@ -121,15 +121,15 @@ Aby to zrobić, wybierz poniższy przycisk, wybierz wersję programu Visual Stud
 
 Uruchom plik programu inicjującego, aby zainstalować Instalator programu Visual Studio. Ten nowy Lightweight Installer zawiera wszystko, czego potrzebujesz do zainstalowania i dostosowania programu Visual Studio.
 
-1. Z usługi **pliki do pobrania** folderu, kliknij dwukrotnie program inicjujący, który jest zgodny lub podobny do jednego z następujących plików:
+1. W folderze **pobierania** kliknij dwukrotnie program inicjujący pasujący do jednego z następujących plików lub jest podobny do następującego:
 
-   * **vs_community.exe** dla Visual Studio Community
-   * **vs_professional.exe** for Visual Studio Professional
-   * **vs_enterprise.exe** programu Visual Studio Enterprise
+   * **vs_community. exe** dla programu Visual Studio Community
+   * **vs_professional. exe** dla Visual Studio Professional
+   * **vs_enterprise. exe** dla Visual Studio Enterprise
 
    Jeśli zostanie wyświetlony komunikat Kontrola konta użytkownika, wybierz opcję **tak**.
 
-2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Wybierz **nadal**.
+2. Poprosimy o potwierdzenie [postanowień licencyjnych](https://visualstudio.microsoft.com/license-terms/) firmy Microsoft oraz [zasad zachowania poufności informacji](https://privacy.microsoft.com/privacystatement)firmy Microsoft. Wybierz pozycję **Kontynuuj**.
 
    ![Postanowienia licencyjne i zasady zachowania poufności informacji](media/privacy-and-license-terms.png "Postanowienia licencyjne i zasady zachowania poufności informacji firmy Microsoft")
 
@@ -166,7 +166,7 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
  ::: moniker-end
 
 > [!TIP]
-> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz program Visual Studio, Otwórz, przejdź do strony **narzędzia** > **Pobierz narzędzia i funkcje...**  która otwiera Instalatora programu Visual Studio. Lub Otwórz **Instalatora programu Visual Studio** z Start menu. W tym miejscu możesz wybrać obciążenia lub składniki, które chcesz zainstalować. Następnie wybierz **Modyfikuj**.
+> W dowolnym momencie po zakończeniu instalacji można zainstalować obciążeń lub składników, które nie są początkowo zainstalowano. Jeśli masz otwarty program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje...** , które otwiera Instalator programu Visual Studio. Lub Otwórz **Instalator programu Visual Studio** z menu Start. W tym miejscu możesz wybrać obciążenia lub składniki, które chcesz zainstalować. Następnie wybierz **Modyfikuj**.
 
 ## <a name="step-5---choose-individual-components-optional"></a>Krok 5. Wybierz poszczególne składniki (opcjonalnie)
 
@@ -202,13 +202,13 @@ Domyślnie program instalacyjny próbuje jest zgodny z językiem systemu operacy
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Zmień język Instalatora z poziomu wiersza polecenia
 
-Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z poziomu wiersza polecenia. Na przykład, możesz wymusić Instalatora Aby uruchomić w języku angielskim, za pomocą następującego polecenia: `vs_installer.exe --locale en-US`. Instalator zapamięta to ustawienie po jej uruchomieniu następnym razem. Instalator obsługuje następujące generatory kodów języka: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
+Inny sposób, można zmienić domyślny język jest, uruchamiając Instalatora z poziomu wiersza polecenia. Na przykład można wymusić uruchomienie Instalatora w języku angielskim przy użyciu następującego polecenia: `vs_installer.exe --locale en-US`. Instalator zapamięta to ustawienie po jej uruchomieniu następnym razem. Instalator obsługuje następujące generatory kodów języka: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru i tr-tr.
 
 ## <a name="step-7---select-the-installation-location-optional"></a>Krok 7 — Wybieranie lokalizacji instalacji (opcjonalnie)
 
 ::: moniker range="vs-2017"
 
-**Nowość w wersji 15.7**: mogą teraz zmniejszać miejsca zajmowanego przez instalację programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
+**Nowość w 15,7**: można teraz zmniejszyć zasięg instalacji programu Visual Studio na dysku systemowym. Można przenieść pamięci podręcznej pobierania, składników udostępnionych, zestawy SDK i narzędzi na różnych dyskach i zachować programu Visual Studio na dysku, na której działa najszybszej.
 
   ![Visual Studio 2017 — Zmień lokalizacje instalacji](media/installation-options-by-location.png "Zmień lokalizację instalacji")
 
@@ -259,11 +259,11 @@ Aby uzyskać więcej informacji, zobacz stronę [Wybieranie lokalizacji instalac
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Aktualizowanie programu Visual Studio](update-visual-studio.md)
 * [Modyfikowanie programu Visual Studio](modify-visual-studio.md)
 * [Odinstalowywanie programu Visual Studio](uninstall-visual-studio.md)
 * [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
 * [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Zainstaluj program Visual Studio dla komputerów Mac](/visualstudio/mac/installation)
+* [Zainstaluj Visual Studio dla komputerów Mac](/visualstudio/mac/installation)

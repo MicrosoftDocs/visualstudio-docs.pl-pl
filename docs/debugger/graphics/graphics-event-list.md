@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911488"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409331"
 ---
 # <a name="graphics-event-list"></a>Lista zdarzeń grafiki
 Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby eksplorować zdarzenia Direct3D, które zostały zarejestrowane podczas renderowania ramki gry lub aplikacji.
@@ -34,9 +34,9 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 
 |Kolejka Direct3D|Kolor|
 |-----------------------|-----------|
-|Kolejka renderowania|znacznika|
-|Kolejka obliczeń|kryje|
-|Kopiuj kolejkę|pomarańcz|
+|Kolejka renderowania|Znacznika|
+|Kolejka obliczeń|Kryje|
+|Kopiuj kolejkę|Orange|
 
  Program Direct3D 11 nie uwidacznia wielu kolejek, dlatego zdarzenia nie są kodowane na liście zdarzeń podczas pracy z funkcją przechwytywania aplikacji Direct3D 11.
 
@@ -55,7 +55,7 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
  Możesz użyć pola wyszukiwania — znajdującego się w prawym górnym rogu okna **Lista zdarzeń grafiki** — aby przefiltrować listę zdarzeń w celu uwzględnienia tylko zdarzeń, których nazwy zawierają określone słowa kluczowe. Możesz określić pojedyncze słowa kluczowe, takie jak `Vertex`— jak pokazano na poprzedniej ilustracji — lub kilka słów kluczowych przy użyciu listy rozdzielanej średnikami, takiej jak `Draw;Primitive`— które pasują do zdarzeń, które mają `Draw` lub `Primitive` nazwy. Wyszukiwania są wrażliwe na odstępy — na przykład `VSSet` i `VS Set` są różnymi wyszukiwaniami, dlatego należy uważnie przeszukiwać dane.
 
 ### <a name="moving-between-draw-calls"></a>Przechodzenie między wywołaniami rysowania
- Ponieważ badanie wywołań `Draw` jest szczególnie ważne, można użyć **przejść do następnego wywołania rysowania** i **przejść do poprzedniego przycisku rysowania wywołania** — znajdującego się w lewym górnym rogu okna **Lista zdarzeń grafiki** — w celu znalezienia i przesunięcia między rysowaniem szybkie wywołania.
+ Ponieważ badanie wywołań `Draw` jest szczególnie ważne, można użyć **przejść do następnego wywołania rysowania** i **przejść do poprzedniego przycisku rysowania wywołania** — znajdującego się w lewym górnym rogu okna **Lista zdarzeń grafiki** — w celu szybkiego znalezienia i przechodzenia między wywołaniami rysowania.
 
 ### <a name="links-to-graphics-objects"></a>Linki do obiektów graficznych
  W celu zrozumienia pewnych zdarzeń graficznych mogą być potrzebne dodatkowe informacje o bieżącym stanie Direct3D lub obiektów Direct3D, do których odwołuje się zdarzenie. Wiele zdarzeń zawiera linki do tych informacji, które można wykonać, aby uzyskać więcej szczegółów.
@@ -94,7 +94,7 @@ Użyj listy zdarzeń grafiki w analizator grafiki programu Visual Studio, aby ek
 |Zakończ grupę zdarzeń|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
 |Tworzenie znacznika zdarzenia|`SetMarkerInt`|`SetMarker`|`D3DPerf_SetMarker`|
 
- Możesz użyć dowolnego z tych interfejsów API, które obsługuje wersja Direct3D — na przykład, jeśli docelowym interfejsem API programu Direct3D 11,1, możesz użyć albo `SetMarker` lub `D3DPerf_SetMarker` do utworzenia znacznika zdarzenia, ale nie `SetMarkerInt`, ponieważ jest on dostępny tylko w programie Direct3D 11.2 — i możesz nawet wymieszać te, które obsługują różne wersje programu Direct3D razem w tej samej aplikacji.
+ Możesz użyć dowolnego z tych interfejsów API, które obsługuje wersja Direct3D — na przykład, jeśli docelowym interfejsem API programu Direct3D 11,1, możesz użyć albo `SetMarker` lub `D3DPerf_SetMarker` do utworzenia znacznika zdarzenia, ale nie `SetMarkerInt`, ponieważ jest on dostępny tylko w programie Direct3D 11.2 — i można nawet mieszać te, które obsługują różne wersje programu Direct3D razem w tej samej aplikacji.
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
@@ -107,11 +107,11 @@ To okno umożliwia wyświetlenie historii wybranego elementu na liście zdarzeń
 
 | Kolumna | Opis |
 |-----------| - |
-| **Wprowadź** | Pokazuje typ wpisu, zazwyczaj *Tworzenie*, *Odczyt* i *zapis*. |
+| **Typ** | Pokazuje typ wpisu, zazwyczaj *Tworzenie*, *Odczyt* i *zapis*. |
 | **Widokiem** | Pokazuje w tym momencie miniaturę zasobu.  Kliknij dwukrotnie miniaturę, aby otworzyć w tym momencie widok szczegółów zasobu. |
-| **Event** | Pokazuje wywołanie metody, które wygenerowało zdarzenie.  Każdą dodatkową historię poszczególnych elementów można wyświetlić, wybierając ikonę czujki ![ikonę czujki,](media/gfx_watch.png) w odpowiednim wierszu.  Ponadto, aby uzyskać więcej informacji, można wybrać każdy element, który jest rysowany w niebieskim tekście, na przykład `m_commandList` na poniższym zrzucie ekranu. |
+| **Zdarzenie** | Pokazuje wywołanie metody, które wygenerowało zdarzenie.  Każdą dodatkową historię poszczególnych elementów można wyświetlić, wybierając ikonę czujki ![ikonę czujki,](media/gfx_watch.png) w odpowiednim wierszu.  Ponadto, aby uzyskać więcej informacji, można wybrać każdy element, który jest rysowany w niebieskim tekście, na przykład `m_commandList` na poniższym zrzucie ekranu. |
 
 <!-- /VERSIONLESS -->
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Przewodnik: brak obiektów spowodowany stanem urządzenia](walkthrough-missing-objects-due-to-device-state.md)

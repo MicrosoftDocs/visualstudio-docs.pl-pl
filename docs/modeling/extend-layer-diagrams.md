@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596648"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410237"
 ---
 # <a name="extend-dependency-diagrams"></a>Rozszerzanie diagramów zależności
 
@@ -25,7 +25,7 @@ Można napisać kod, aby tworzyć i aktualizować diagramy zależności oraz spr
 
 Na komputerze, na którym chcesz opracowywać rozszerzenia warstwy, muszą być zainstalowane następujące elementy:
 
-- {1&gt;Visual Studio&lt;1}
+- Visual Studio
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
@@ -35,7 +35,7 @@ Na komputerze, na którym chcesz opracowywać rozszerzenia warstwy, muszą być 
 
 Na komputerze, na którym chcesz uruchomić rozszerzenia warstwy, musi być zainstalowana odpowiednia wersja programu Visual Studio. Aby sprawdzić, które wersje programu Visual Studio obsługują diagramy zależności, zobacz [Obsługa wersji dla narzędzi architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Diagramy zależności: Odwołanie](../modeling/layer-diagrams-reference.md)
 - [Diagramy zależności: Wskazówki](../modeling/layer-diagrams-guidelines.md)
