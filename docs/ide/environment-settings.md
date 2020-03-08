@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588580"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408369"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Ustawienia środowiska dla programu Visual Studio
 
@@ -22,10 +22,10 @@ Dostępne są następujące kolekcje ustawień:
 
 - Ogólne
 - JavaScript
-- Język Visual Basic
+- Visual Basic
 - Visual C#
 - Visual C++
-- Opracowywanie rozwiązań internetowych
+- Programowanie dla sieci Web
 - Programowanie dla sieci Web (tylko kod)
 
 ## <a name="reset-settings"></a>Resetuj ustawienia
@@ -46,7 +46,7 @@ Aby zmienić ustawienia programistyczne po otwarciu programu Visual Studio po ra
 
 1. Na stronie **Resetowanie ukończone** wybierz pozycję **Zamknij**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Synchronizowanie ustawień na wielu komputerach](synchronized-settings-in-visual-studio.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](personalizing-the-visual-studio-ide.md)

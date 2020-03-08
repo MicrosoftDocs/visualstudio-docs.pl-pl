@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594178"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410137"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -80,7 +80,7 @@ Technologia IntelliSense usuwa zbędnych członków z listy uzupełniania, używ
 
 Technologia IntelliSense zapamiętuje członków, którzy zostali ostatnio wybrani w polu [Członkowie listy](../ide/using-intellisense.md) podręcznej, aby automatycznie uzupełniać nazwy obiektów. Przy następnym użyciu **listy składowych**, ostatnio używane elementy członkowskie są wyświetlane u góry. Historia ostatnio używanych elementów członkowskich jest czyszczona między poszczególnymi sesjami programu Visual Studio.
 
-### <a name="override"></a>zastąpienie
+### <a name="override"></a>override
 
 Po wpisaniu [przesłonięcia](/dotnet/csharp/language-reference/keywords/override) , a **następnie naciśnięciu**klawisza, IntelliSense wyświetla wszystkie prawidłowe elementy członkowskie klasy bazowej, które można przesłonić w oknie listy rozwijanej. Wpisywanie zwracanego typu metody po `override` monituje IntelliSense o metody, które zwracają ten sam typ. Gdy technologia IntelliSense nie może znaleźć dopasowań, wyświetla wszystkie elementy członkowskie klasy bazowej.
 
@@ -160,7 +160,7 @@ Po naciśnięciu klawisza **Tab**funkcja IntelliSense odtworzy metodę o poprawn
 > [!NOTE]
 > Użyj polecenia **Nawiguj wstecz** w menu **widok** (**Ctrl**+ **-** ), aby wrócić do instrukcji Event podłączenie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

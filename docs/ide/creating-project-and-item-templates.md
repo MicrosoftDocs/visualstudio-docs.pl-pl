@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589763"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409049"
 ---
 # <a name="project-and-item-templates"></a>Szablony projektów i elementów
 
@@ -27,7 +27,7 @@ Liczba szablonów elementów i projektów wstępnie zdefiniowane są instalowane
 
 Te szablony zapewniają punkt wyjścia dla użytkowników, aby rozpocząć tworzenie projektów lub rozszerzania istniejących projektów. Szablony projektów dostarczają pliki, które są wymagane dla określonego typu projektu, zawierają odwołania do standardowego zestawu i ustawiają domyślne opcje kompilatora i właściwości projektu. Szablonów elementów może mieścić się stopnia skomplikowania z jednego pustego pliku, który ma określone rozszerzenie pliku, wielu plików kodu źródłowego z kodem skróconym, informacje o projektancie plików i zasoby osadzone.
 
-Możesz korzystać z zainstalowanych szablonów, tworzyć własne szablony niestandardowe lub pobierać i używać szablonów utworzonych przez społeczność. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md) i [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md).
+Możesz korzystać z zainstalowanych szablonów, tworzyć własne szablony niestandardowe lub pobierać i używać szablonów utworzonych przez społeczność. Aby uzyskać więcej informacji, zobacz [How to: Create Project Templates](../ide/how-to-create-project-templates.md) and [How to: Create Item templates](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Zawartość szablonu
 
@@ -49,7 +49,7 @@ Wszystkie szablony projektów i elementów, czy zainstalowany za pomocą program
 
    Aby uzyskać więcej informacji na temat plików *. vstemplate* , zobacz [Tagi szablonów](template-tags.md) i [Parametry szablonu](../ide/template-parameters.md).
 
-Jeśli te pliki są kompresowane do *zip* pliku i umieścić w odpowiednim folderze, Visual Studio automatycznie wyświetli je w następujących miejscach:
+Gdy te pliki są kompresowane do pliku *zip* i umieszczane w prawidłowym folderze, program Visual Studio automatycznie wyświetli je w następujących miejscach:
 
 ::: moniker range="vs-2017"
 
@@ -65,12 +65,12 @@ Jeśli te pliki są kompresowane do *zip* pliku i umieścić w odpowiednim folde
 
 - Szablony elementów są wyświetlane w oknie **Dodaj nowy element** .
 
-Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [How to: Lokalizowanie i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Porady: Tworzenie szablonów projektów](../ide/how-to-create-project-templates.md)
-- [Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
+- [Instrukcje: Tworzenie szablonów projektu](../ide/how-to-create-project-templates.md)
+- [Instrukcje: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
 - [Tagi szablonu](template-tags.md)
 - [Parametry szablonu](../ide/template-parameters.md)
 - [Dostosowywanie szablonów](../ide/customizing-project-and-item-templates.md)

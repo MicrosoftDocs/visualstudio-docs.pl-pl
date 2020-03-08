@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578768"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409232"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Znajdowanie zadania debugowania w programie Visual Studio
 

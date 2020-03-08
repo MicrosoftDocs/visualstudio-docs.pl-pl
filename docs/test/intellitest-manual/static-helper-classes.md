@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591570"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409560"
 ---
 # <a name="static-helper-classes"></a>Statyczne klasy pomocy
 
@@ -95,7 +95,7 @@ Klasa **PexChoose** może działać w dwóch trybach:
 
 * Wygenerowany kod dla określonych przypadków testowych konfiguruje dostawcę wyboru w określony sposób, tak aby ponowne wykonanie takiego przypadku testowego powodowało wybór konkretnych opcji wyzwalania określonej ścieżki wykonania.
 
-**Sposób użycia**
+**Użycie**
 
 * Proste wywołanie **PexChoose. Value** w celu wygenerowania nowej wartości:
 
@@ -141,7 +141,7 @@ public partial class MathExTests {
 
 Klasa statyczna używana do ignorowania ograniczeń dotyczących parametrów oraz do drukowania informacji symbolicznych skojarzonych z wartościami.
 
-**Sposób użycia**
+**Użycie**
 
 Zwykle IntelliTest próbuje uwzględnić wszystkie ścieżki wykonywania kodu podczas wykonywania. Jednak szczególnie w przypadku obliczania warunków założeń i potwierdzeń nie należy eksplorować wszystkich możliwych przypadków.
 
@@ -170,6 +170,6 @@ public static void AreElementsNotNull<T>(T[] value)
 }
 ```
 
-## <a name="got-feedback"></a>Chcesz przekazać opinię?
+## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

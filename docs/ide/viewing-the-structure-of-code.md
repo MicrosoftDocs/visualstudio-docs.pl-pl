@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594204"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409987"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
 
@@ -119,7 +119,7 @@ Menu skrótów w oknie **Hierarchia wywołań** zawiera następujące polecenia:
 |**Przejdź do definicji**|Przechodzi do oryginalnej definicji metody.|
 |**Znajdź wszystkie odwołania**|Znajduje w projekcie wszystkie odwołania do wybranej metody.|
 |**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzły podrzędne).|
-|**Odśwież**|Odświeża informacje.|
+|**Odowieżenie**|Odświeża informacje.|
 
 ## <a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
 
@@ -200,9 +200,9 @@ Menu skrótów (lub kliknij prawym przyciskiem myszy) w oknie **definicji kodu**
 |||
 |-|-|
 |**Szybkie akcje i refaktoryzacje**||
-|**Zmienianie nazwy**||
+|**Zmiana nazwy**||
 |**Generowanie grafu plików dołączanych**||
-|**Zobacz definicję**||
+|**Definicja wglądu**||
 |**Przejdź do definicji**|Znajduje definicję (lub definicje, dla klas częściowych) i wyświetla je w oknie **Znajdź wyniki** .|
 |**Przejdź do deklaracji**||
 |**Znajdź wszystkie odwołania**|Znajduje odwołania do typu lub elementu członkowskiego w rozwiązaniu.|
@@ -224,6 +224,6 @@ Menu skrótów (lub kliknij prawym przyciskiem myszy) w oknie **definicji kodu**
 
 Możesz użyć okna **Konspekt dokumentu** w połączeniu z widokami projektanta, takimi jak projektant dla strony XAML lub Projektant formularzy systemu Windows lub za pomocą stron HTML. To okno wyświetla elementy w widoku drzewa, aby można było wyświetlić logiczną strukturę formularza lub strony i znaleźć formanty, które są głęboko osadzone lub ukryte.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Widok klasy i Przeglądarka obiektów, ikony](../ide/class-view-and-object-browser-icons.md)
