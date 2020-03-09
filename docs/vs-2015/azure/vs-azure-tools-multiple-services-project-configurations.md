@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915582"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410051"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurowanie projektu platformy Azure w programie Visual Studio w celu używania wielu konfiguracji usługi
 
@@ -41,7 +41,7 @@ Wybiera, do których plików `ServiceConfiguration.*.cscfg` mają wpływ zmiany.
 
 Ustaw właściwość liczba **wystąpień** na liczbę wystąpień, które usługa powinna uruchomić dla tej roli.
 
-Ustaw właściwość **rozmiar maszyny wirtualnej** na **bardzo małe**, **małe**, **średnie**, **duże**lub **bardzo duże**.  Aby uzyskać więcej informacji, zobacz [rozmiary dla Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
+Ustaw właściwość **rozmiar maszyny wirtualnej** na **bardzo małe**, **małe**, **średnie**, **duże**lub **bardzo duże**.  Aby uzyskać więcej informacji, zobacz [Rozmiary usług Cloud Services](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Akcja uruchamiania (tylko rola sieci Web)
 

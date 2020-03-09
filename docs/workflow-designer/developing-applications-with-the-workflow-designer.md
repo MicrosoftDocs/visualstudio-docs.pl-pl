@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597090"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409158"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Programowanie aplikacji za pomocą Projektanta przepływu pracy
 
@@ -43,6 +43,6 @@ Aby użyć szablonów projektów przepływu pracy w programie Visual Studio, naj
 
    Program Visual Studio instaluje składnik **Windows Workflow Foundation** .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)
