@@ -13,22 +13,22 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383740"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409453"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Zarządzanie pakietami npm w programie Visual Studio
 
-npm pozwala Ci instalować i Zarządzaj pakietami do użytku w aplikacjach Node.js. Jeśli znasz npm i chcesz, aby dowiedzieć się więcej, przejdź do strony [dokumentacji npm](https://docs.npmjs.com/).
+npm pozwala Ci instalować i Zarządzaj pakietami do użytku w aplikacjach Node.js. Jeśli nie znasz npm i chcesz dowiedzieć się więcej, przejdź do [dokumentacji npm](https://docs.npmjs.com/).
 
 Visual Studio można łatwo korzystać z polecenia npm npm i problem za pomocą interfejsu użytkownika lub bezpośrednio. Można użyć następujących metod:
-* [Zainstaluj pakiety za pomocą Eksploratora rozwiązań](#npmInstallWindow)
-* [Zarządzanie pakietami zainstalowanych za pomocą Eksploratora rozwiązań](#solutionExplorer)
-* [Użyj `.npm` polecenia w oknie interaktywne Node.js](#interactive)
+* [Zainstaluj pakiety z Eksplorator rozwiązań](#npmInstallWindow)
+* [Zarządzaj zainstalowanymi pakietami z Eksplorator rozwiązań](#solutionExplorer)
+* [Używanie `.npm` polecenia w oknie interaktywnym środowiska Node. js](#interactive)
 
-Te funkcje współdziałają ze sobą i synchronizować z system projektu i *package.json* pliku w projekcie.
+Te funkcje współpracują i synchronizują z systemem projektu i plikiem *Package. JSON* w projekcie.
 
 > [!Important]
 > NPM oczekuje folderu *node_modules* i pliku *Package. JSON* w katalogu głównym projektu. Jeśli struktura folderów aplikacji jest inna, należy zaktualizować strukturę folderów, jeśli chcesz zarządzać pakietami npm za pomocą programu Visual Studio.
@@ -36,9 +36,9 @@ Te funkcje współdziałają ze sobą i synchronizować z system projektu i *pac
 > [!NOTE]
 > W przypadku istniejących projektów NPM Użyj szablonu **z istniejącego rozwiązania kodu Node. js** .
 
-## <a name="npmInstallWindow"></a> Zainstaluj pakiety za pomocą Eksploratora rozwiązań
+## <a name="npmInstallWindow"></a>Zainstaluj pakiety z Eksplorator rozwiązań
 
-Jest najprostszym sposobem zainstalowania pakietów npm w oknie instalacji pakietu npm. Aby uzyskać dostęp do tego okna, kliknij prawym przyciskiem myszy **npm** węzeł w projekcie i wybierz **zainstalować nowe pakiety npm**.
+Jest najprostszym sposobem zainstalowania pakietów npm w oknie instalacji pakietu npm. Aby uzyskać dostęp do tego okna, kliknij prawym przyciskiem myszy węzeł **npm** w projekcie i wybierz polecenie **Instaluj nowe pakiety npm**.
 
 ![Zainstaluj nowy pakiet npm z Eksploratora rozwiązań](../javascript/media/solution-explorer-install-package.png)
 
@@ -46,35 +46,35 @@ W tym oknie można wyszukać pakietu, określ opcje i zainstalować.
 
 ![Wyszukiwanie pakietów Menedżera npm](../javascript/media/search-package.png)
 
-* **Typ zależności** — wybrać między **standardowa**, **rozwoju**, i **opcjonalnie** pakietów. Standard określa, czy pakiet jest zależnością środowiska uruchomieniowego rozwoju Określa, że pakiet jest tylko wymagane podczas programowania.
-* **Dodaj do pliku package.json** — ta opcja jest przestarzały
-* **Wybrana wersja** — wybierz wersję pakietu, którą chcesz zainstalować.
-* **Inne argumenty pakietu npm** -określ inne argumenty pakietu npm standardowych. Na przykład można wprowadzić wartość wersji takie jak `@~0.8` zainstalować określoną wersję, która nie jest dostępna na liście wersji.
+* **Typ zależności** — wybierany między pakietami **Standard**, **Development**i **Optional** . Standard określa, czy pakiet jest zależnością środowiska uruchomieniowego rozwoju Określa, że pakiet jest tylko wymagane podczas programowania.
+* **Dodaj do pliku Package. JSON** — ta opcja jest przestarzała
+* **Wybrana wersja** — wybierz wersję pakietu do zainstalowania.
+* **Inne argumenty npm** — Określ inne standardowe argumenty npm. Na przykład możesz wprowadzić wartość wersji, taką jak `@~0.8`, aby zainstalować określoną wersję, która nie jest dostępna na liście wersje.
 
-Aby zobaczyć postęp instalacji na karcie npm w oknie danych wyjściowych. Może to potrwać pewien czas.
+Aby zobaczyć postęp instalacji na karcie npm w oknie danych wyjściowych. Może to potrwać jakiś czas.
 
 > [!TIP]
-> Można wyszukiwać pakiety o określonym zakresie przez poprzedzenie jej zapytania wyszukiwania z zakresem interesuje Cię, na przykład wpisz `@types/mocha` do wyszukiwania plików definicji TypeScript dla środowiska mocha. Instalując definicje typów TypeScript, możesz również określić wersji TypeScript jest elementem docelowym, dodając `@ts2.6` w polu argumentów npm.
+> Możesz wyszukać pakiety z zakresem, oczekując na zapytanie wyszukiwania z interesującym zakresem, na przykład wpisz `@types/mocha`, aby wyszukać pliki definicji TypeScript dla środowiska Mocha. Ponadto podczas instalowania definicji typów dla języka TypeScript można określić wersję języka TypeScript, którą odwołujących, dodając `@ts2.6` w polu argumentu npm.
 
-## <a name="solutionExplorer"></a>Zarządzanie pakietów zainstalowanych w Eksploratorze rozwiązań
+## <a name="solutionExplorer"></a>Zarządzaj zainstalowanymi pakietami w Eksplorator rozwiązań
 
-pakiety npm są wyświetlane w Eksploratorze rozwiązań. Wpisy w obszarze **npm** węzła naśladować zależności w *package.json* pliku.
+pakiety npm są wyświetlane w Eksploratorze rozwiązań. Wpisy w węźle **npm** powodują naśladowanie zależności w pliku *Package. JSON* .
 
 ![Wyszukiwanie pakietów Menedżera npm](../javascript/media/solution-explorer-status.png)
 
 ### <a name="package-status"></a>Stan pakietu
 * ![Zainstalowany pakiet](../javascript/media/installed-npm.png) -Zainstalowanych i wymienionych w pliku package.json
-* ![Nadmiarowe pakietu](../javascript/media/extraneous-npm.png) — zainstalowany, ale nie zostały jawnie wymienione w pliku package.json
+* ![pakiet niezależny](../javascript/media/extraneous-npm.png)-zainstalowany, ale nie jest jawnie wymieniony w pliku Package. JSON
 * ![Brak pakietu](../javascript/media/missing-npm.png) — Użytkownik nie jest zainstalowany, ale wymienione w pliku package.json
 
-Kliknij prawym przyciskiem myszy węzeł pakietu lub **npm** węzeł, aby wykonać jedną z następujących czynności:
-* **Instalowanie brakujących pakietów** wymienione w *pliku package.json*
-* **Pakiety aktualizacji** do najnowszej wersji
-* **Odinstaluj pakiet** i Usuń z *pliku package.json*
+Kliknij prawym przyciskiem myszy węzeł pakietu lub węzeł **npm** , aby wykonać jedną z następujących czynności:
+* **Zainstaluj brakujące pakiety** , które są wymienione w pliku *Package. JSON*
+* **Aktualizuj pakiety** do najnowszej wersji
+* **Odinstalowywanie pakietu** i usuwanie z pliku *Package. JSON*
 
-## <a name="interactive"></a>W oknie interaktywne Node.js za pomocą polecenia .npm
+## <a name="interactive"></a>Użyj polecenia. npm w oknie interaktywnym środowiska Node. js
 
-Można również użyć `.npm` polecenia w oknie interaktywne Node.js do wykonywania poleceń Menedżera npm. Aby otworzyć okno, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie wybierz **Otwórz okno interaktywne języka Node.js**.
+Możesz również użyć `.npm` polecenie w oknie interaktywnym środowiska Node. js, aby wykonać polecenia npm. Aby otworzyć okno, kliknij prawym przyciskiem myszy projekt w Eksplorator rozwiązań i wybierz polecenie **Otwórz okno interaktywne środowiska Node. js**.
 
 W oknie poleceń, takich jak następujące służy do zainstalowania pakietu:
 
@@ -85,4 +85,4 @@ W oknie poleceń, takich jak następujące służy do zainstalowania pakietu:
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Jeśli projekt nie zawiera pliku package.json, użyj `.npm init -y` Aby utworzyć nowy plik package.json przy użyciu domyślnych wpisów.
+ > Jeśli projekt nie zawiera pliku Package. JSON, użyj `.npm init -y`, aby utworzyć nowy plik Package. JSON z wpisami domyślnymi.

@@ -1,5 +1,5 @@
 ---
-title: Usługa Essentials | Dokumentacja firmy Microsoft
+title: Podstawowa usługa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8817ca48ff0a3f44a973986a173e647ce89c662c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318687"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409715"
 ---
 # <a name="service-essentials"></a>Podstawowe informacje o usłudze
-Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage udostępnia określony zestaw interfejsów dla innego pakietu VSPackage korzystać. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest to zbiór pakietów VSPackage, które świadczy usługi do innych pakietów VSPackage.
+Usługa jest umową między dwoma pakietów VSPackage. Jeden pakietu VSPackage udostępnia określony zestaw interfejsów dla innego pakietu VSPackage do użycia. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] to sama kolekcja pakietów VSPackage, która udostępnia usługi innym pakietów VSPackage.
 
- Na przykład można użyć usługa SVsActivityLog można uzyskać interfejsu IVsActivityLog, które służy do zapisania do dziennika aktywności. Aby uzyskać więcej informacji, zobacz [jak: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).
+ Można na przykład użyć usługi SVsActivityLog do uzyskania interfejsu IVsActivityLog, którego można użyć do zapisu w dzienniku aktywności. Aby uzyskać więcej informacji, zobacz [How to: Use the Activity Log](../../extensibility/how-to-use-the-activity-log.md).
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są także niektóre wbudowane usługi, które nie zostały zarejestrowane. Pakietów VSPackage można zastąpić wbudowanych lub innych usług, zapewniając zastąpienie usług. Zastąpienie tylko jedna usługa jest dozwolony dla każdej usługi.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia również niektóre wbudowane usługi, które nie są zarejestrowane. Pakietów VSPackage może zastąpić wbudowane lub inne usługi, dostarczając przesłonięcie usługi. Dla każdej usługi dozwolony jest tylko jedno przesłonięcie usługi.
 
- Usługi mają nie możliwości odnajdywania. W związku z tym musisz wiedzieć, identyfikator usługi (SID), usługi, które chcą korzystać i musisz wiedzieć, interfejsy, które zawiera. Dokumentacja usługi zawiera te informacje.
+ Usługi nie mają możliwości odnajdowania. W związku z tym należy znać identyfikator usługi (SID) usługi, która ma zostać zużyta, i należy wiedzieć, które interfejsy zapewnia. Dokumentacja referencyjna usługi zawiera te informacje.
 
-- Pakietów VSPackage, które zapewniają usługi są określane jako dostawcy usług.
+- Pakietów VSPackage świadczący usługi są nazywane dostawcami usług.
 
-- Usługi, które są dostarczane do innych pakietów VSPackage są nazywane usług globalnych.
+- Usługi udostępniane innym pakietów VSPackage są nazywane usługami globalnymi.
 
-- Usługi, które są dostępne tylko dla pakietu VSPackage, który implementuje je lub do obiektu, który tworzy, są nazywane usługami lokalnymi.
+- Usługi, które są dostępne tylko dla pakietu VSPackage, które je implementują, lub do dowolnego tworzonego obiektu, są nazywane usługami lokalnymi.
 
-- Usług, które zastępują wbudowanych usług lub usług świadczonych przez inne pakiety są nazywane zastąpienia usługi.
+- Usługi, które zastępują wbudowane usługi lub usługi udostępniane przez inne pakiety, są nazywane zastępowaniem usługi.
 
-- Usługi lub zastąpienia usługi, które są ładowane na żądanie, oznacza to, że dostawca usług jest ładowany podczas usługi, którą zapewnia, jest wymagany przez innego pakietu VSPackage.
+- Usług lub zastąpień usługi są ładowane na żądanie, czyli dostawca usług jest ładowany, gdy usługa, którą zapewnia, jest wymagana przez inny pakietu VSPackage.
 
-- Aby zapewnić obsługę ładowania na żądanie, dostawca usług rejestruje jej usług globalnych z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [jak: Oferuje usługi](../../extensibility/how-to-provide-a-service.md).
+- Aby zapewnić obsługę ładowania na żądanie, dostawca usług rejestruje swoje usługi globalne przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji, zobacz [How to: zapewnianie usługi](../../extensibility/how-to-provide-a-service.md).
 
-- Po uzyskaniu usługi, użyj [QueryInterface](/cpp/atl/queryinterface) (niezarządzany kod) lub rzutowania (kod zarządzany) można pobrać żądanego interfejsu, na przykład:
+- Po uzyskaniu usługi należy użyć [polecenia QueryInterface](/cpp/atl/queryinterface) (kod niezarządzany) lub rzutowania (kod zarządzany) w celu uzyskania odpowiedniego interfejsu, na przykład:
 
   ```vb
   TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)
@@ -48,35 +48,35 @@ Usługa jest Umowa między dwoma pakietami VSPackage. Jednego pakietu VSPackage 
   GetService(typeof(SVsActivityLog)) as IVsActivityLog;
   ```
 
-- Kod zarządzany odnosi się do usługi przez jej typ, kod niezarządzany, który odnosi się do usługi za pomocą identyfikatora GUID.
+- Zarządzany kod odnosi się do usługi według jej typu, natomiast niezarządzany kod odnosi się do usługi za pomocą identyfikatora GUID.
 
-- Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje pakietu VSPackage, przekazuje on usługodawcy do pakietu VSPackage, aby udzielić dostępu pakietu VSPackage do usług globalnych. Jest to określane jako "Lokalizacja" pakietu VSPackage.
+- Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje pakietu VSPackage, przekazuje dostawcę usług do pakietu VSPackage, aby dać pakietu VSPackage dostęp do usług globalnych. Jest to nazywane "lokalizacjami" pakietu VSPackage.
 
-- Pakietów VSPackage może być dostawcy usług dla obiektów, które tworzą. Na przykład formularz może wysyłać żądania usługi kolorów do ramki, który może przekazywać żądania do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- Pakietów VSPackage mogą być dostawcami usług dla tworzonych przez siebie obiektów. Na przykład formularz może wysłać żądanie dotyczące usługi kolorowej do ramki, co może przekazać żądanie do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-- Zarządzane obiekty, które głęboko zagnieżdżone lub nie jest ulokowany w ogóle, może wywołać <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> uzyskać bezpośredni dostęp do usług globalnych.
+- Zarządzane obiekty, które są głęboko zagnieżdżone lub nie znajdują się w ogóle, mogą wywoływać <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>, aby uzyskać bezpośredni dostęp do usług globalnych.
 
 <a name="how-to-use-getglobalservice"></a>
 
-## <a name="use-getglobalservice"></a>Use GetGlobalService
+## <a name="use-getglobalservice"></a>Użyj GetGlobalService
 
-Czasami może być konieczne uzyskiwanie usługi okno narzędzia lub kontroli kontenera, które nie zostały zlokalizowane; w przeciwnym razie ma zostały umieszczone u dostawcy usług, które nie wie o usługę, którą chcesz. Na przykład można zapisywać w dzienniku aktywności ze znajdujących się pod kontrolą. Aby uzyskać więcej informacji na temat tych i innych scenariuszy, zobacz [jak: Rozwiązywanie problemów z usługami](../../extensibility/how-to-troubleshoot-services.md).
+Czasami może być konieczne uzyskanie usługi z okna narzędzi lub kontenera kontroli, który nie został zlokalizowany, lub w innym systemie, który jest zlokalizowany przez dostawcę usług, który nie wie o żądaną usługę. Na przykład możesz chcieć zapisać w dzienniku aktywności z poziomu kontrolki. Aby uzyskać więcej informacji na temat tych i innych scenariuszy, zobacz [How to: Rozwiązywanie problemów z usługami](../../extensibility/how-to-troubleshoot-services.md).
 
-Większość usług Visual Studio można uzyskać przez wywołanie statycznego <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metody.
+Większość usług Visual Studio można uzyskać, wywołując metodę static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>.
 
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> korzysta z pamięci podręcznej usługi jest ulokowany dostawcy, który jest inicjowany dowolnego pakietu VSPackage pochodzące z pakietu po raz pierwszy. Musisz gwarantować, że ten warunek jest spełniony; w przeciwnym razie należy przygotować usługę o wartości null.
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> polega na zainicjowaniu dostawcy usługi w pamięci podręcznej, który został zainicjowany po raz pierwszy każdy pakietu VSPackage pochodzący z pakietu. Należy zastanowić się, że ten warunek jest spełniony lub został przygotowany dla usługi o wartości null.
 
-Na szczęście <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> działa prawidłowo w większości przypadków.
+Na szczęście <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> działa prawidłowo w większości czasu.
 
-- Jeśli pakietu VSPackage udostępnia usługę znanego tylko innego pakietu VSPackage, pakietu VSPackage żądania usługi jest ulokowany przed pakietu VSPackage warunkiem, że usługa jest ładowany.
+- Jeśli pakietu VSPackage zapewnia usługę znaną tylko innemu pakietu VSPackage, pakietu VSPackage żądający usługi jest zlokalizowana przed załadowaniem usługi pakietu VSPackage.
 
-- Jeśli okno narzędzia jest tworzony przez pakietu VSPackage, pakietu VSPackage jest ulokowany przed utworzeniem okna narzędzia.
+- Jeśli okno narzędzi jest tworzone przez pakietu VSPackage, pakietu VSPackage jest zlokalizowane przed utworzeniem okna narzędzi.
 
-- Jeśli formant kontenera jest hostowana przez okna narzędzia utworzonego przez pakietu VSPackage, pakietu VSPackage jest ulokowany przed utworzeniem kontenera kontrolki.
+- Jeśli kontener formantów jest hostowany w oknie narzędzi utworzonym przez pakietu VSPackage, pakietu VSPackage jest zlokalizowane przed utworzeniem kontenera sterowania.
 
-### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Aby uzyskać to usługa firmy znajdujące się w kontenerze okna lub kontroli narzędzi
+### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Aby uzyskać usługę z poziomu okna narzędzi lub kontenera kontrolek
 
-- Wstaw ten kod w konstruktorze, okno narzędzia lub kontroli kontenera:
+- Wstaw ten kod w konstruktorze, oknie narzędzi lub kontenerze formantów:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -90,9 +90,9 @@ Na szczęście <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> d
     End If
     ```
 
-    Ten kod uzyskuje usługi SVsActivityLog i rzutuje IVsActivityLog interfejs, który może służyć do zapisu w dzienniku aktywności. Aby uzyskać przykład, zobacz [jak: Korzystanie z dziennika aktywności](../../extensibility/how-to-use-the-activity-log.md).
+    Ten kod uzyskuje usługę SVsActivityLog i rzutuje ją na interfejs IVsActivityLog, który może być używany do zapisywania w dzienniku aktywności. Aby zapoznać się z przykładem, zobacz [How to: Use the Activity Log](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Lista dostępnych usług](../../extensibility/internals/list-of-available-services.md)
 - [Korzystanie z usług i dostarczanie ich](../../extensibility/using-and-providing-services.md)

@@ -11,18 +11,18 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585408"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408505"
 ---
 # <a name="code-style-preferences"></a>Preferencje stylu kodu
 
 Można zdefiniować ustawienia stylu kodu dla każdego projektu przy użyciu [pliku EditorConfig](#code-styles-in-editorconfig-files)lub dla całego kodu edytowanego w programie Visual Studio na [stronie **Opcje** ](#code-styles-in-the-options-dialog-box)edytora tekstu. W C# przypadku kodu można także skonfigurować program Visual Studio, aby stosował te preferencje stylu kodu za pomocą poleceń **czyszczenia kodu** (Visual Studio 2019) i **formatowania dokumentu** (Visual Studio 2017).
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
+> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [zachowanie edytora w programie Visual Studio dla komputerów Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="code-styles-in-editorconfig-files"></a>Style kodu w plikach EditorConfig
 
@@ -38,7 +38,7 @@ Możesz ręcznie wypełnić plik EditorConfig lub można automatycznie wygenerow
 
 ## <a name="code-styles-in-the-options-dialog-box"></a>Style kodu w oknie dialogowym Opcje
 
-Preferencje stylu kodu można ustawić dla wszystkich projektów C# i Visual Basic, otwierając okno dialogowe **Opcje** z menu **Narzędzia** . W **opcje** okno dialogowe, wybierz opcję **edytora tekstów** > [**C#** lub **podstawowe**] > **styl kodu**  >  **Ogólne**.
+Preferencje stylu kodu można ustawić dla wszystkich projektów C# i Visual Basic, otwierając okno dialogowe **Opcje** z menu **Narzędzia** . W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu** > [**C#** lub **Basic**] > **styl kodu** > **Ogólne**.
 
 Każdy element na liście pokazuje jego podgląd preferencji, w przypadku wybrania:
 
@@ -101,8 +101,8 @@ Jeśli chcesz, aby ustawienia stylu kodu były stosowane za każdym razem, gdy z
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Szybkie akcje](../ide/quick-actions.md)
-- [.NET coding convention ustawienia dla wtyczki EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Ustawienia konwencji kodowania .NET dla EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
 - [Zachowanie edytora (Visual Studio dla komputerów Mac)](/visualstudio/mac/editor-behavior)

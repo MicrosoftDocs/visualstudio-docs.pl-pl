@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849806"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409509"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Rozszerzanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Aby uzyskać więcej informacji, zobacz ten film wideo: ![link do filmu wideo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN — jak to zrobić: narzędzia i rozszerzalność UML](https://msdn.microsoft.com/vstudio/ff859492).
 
-## <a name="Requirements"></a> Wymagania
+## <a name="Requirements"></a>Wymagania
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
@@ -85,7 +85,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
  Aby uzyskać więcej informacji, zobacz [integrowanie modeli UML z innymi modelami i narzędziami](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-## <a name="generation"></a>Generowanie
+## <a name="generation"></a>Generacji
  Z modelu można generować kod programu, skrypty, konfiguracje, dokumenty, nowe modele lub inne artefakty.
 
  W systemach bagażowych, które są projektami firmy Fabrikam, większość kodu programu jest taka sama z jednego projektu do następnego. Aspekt zmiennej głównej to plan przepływu bagażu wokół lotniska. Gdy zespół projektowy osiągnął doświadczenie z kilku pierwszych projektów, deweloperzy narzędzi tworzą szablon generujący, w modelu przepływu bagażu, większość kodu programu zmiennej i innych plików, takich jak dokumenty użytkownika. Znacznie skraca to czas projektowania i częstotliwość błędów dla każdego nowego projektu.
@@ -113,7 +113,7 @@ Ten temat zawiera podsumowanie różnych sposobów, w których można rozłoży�
 
 |**Kategoria**|**Linki**|
 |------------------|---------------|
-|**Filmy wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Wideo**|![link do wideo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: jak serie — narzędzia i rozszerzalność UML](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![link do kanału wideo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML z programem Visual Studio](https://channel9.msdn.com/posts/clinted/)|
 |**Fora**|-   [Wizualizacja programu Visual Studio & narzędzia do modelowania](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [wizualizacji programu Visual Studio & Modeling SDK (narzędzia DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogi**|[Blog programu Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
 |**Artykuły techniczne i dzienniki**|[Centrum architektury MSDN](https://msdn.microsoft.com/architecture/default.aspx)|

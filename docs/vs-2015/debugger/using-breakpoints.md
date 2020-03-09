@@ -1,5 +1,5 @@
 ---
-title: Używanie punktów przerwania | Dokumentacja firmy Microsoft
+title: Używanie punktów przerwania | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,160 +42,160 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684467"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408766"
 ---
 # <a name="using-breakpoints"></a>Używanie punktów przerwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debugera, być może wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań. Są one jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów.
+Możesz ustawić punkty przerwania, gdy chcesz zatrzymać wykonywanie debugera, być może widzisz stan zmiennych kodu lub obejrzyj stos wywołań. Są one jedną z najważniejszych technik debugowania w przyborniku dewelopera.
   
-## <a name="BKMK_Overview"></a> Ustawianie punktu przerwania funkcji w kodzie źródłowym  
- Możesz ustawić punktu przerwania funkcji w kodzie źródłowym, klikając w lewy margines w pliku kodu źródłowego lub umieszczając kursor w wierszu kodu i naciskając klawisz F9. Punkt przerwania jest wyświetlany jako czerwona kropka na lewym marginesie, a w wierszu kodu jest także pokolorowane:  
+## <a name="BKMK_Overview"></a>Ustawianie punktu przerwania funkcji w kodzie źródłowym  
+ Aby ustawić punkt przerwania funkcji w kodzie źródłowym, kliknij na lewym marginesie pliku kodu źródłowego lub przez umieszczenie kursora w wierszu kodu i naciśnięcie klawisza F9. Punkt przerwania jest wyświetlany jako czerwona kropka na lewym marginesie, a wiersz kodu jest również kolorowy:  
   
- ![Ustaw punkt przerwania](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Ustawianie punktu przerwania](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
- Po uruchomieniu tego kodu w debugerze, zatrzyma wykonywanie zawsze wtedy, gdy punkt przerwania zostaje trafiony przed wykonaniem kodu w danym wierszu. Wiersz kodu źródłowego jest kolor żółty:  
+ Po uruchomieniu tego kodu w debugerze wykonywanie jest przerywane za każdym razem, gdy punkt przerwania zostanie osiągnięty, przed wykonaniem kodu w tym wierszu. Linia kodu źródłowego jest kolorem żółtym:  
   
- ![Punkt przerwania wykonywania zatrzymana](../debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Zatrzymano wykonywanie punktu przerwania](../debugger/media/breakpointexecution.png "BreakpointExecution")  
   
- W tym momencie wartość `testInt` nadal jest 1.  
+ W tym momencie wartość `testInt` jest nadal równa 1.  
   
- Można sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stosu wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
+ Możesz sprawdzić bieżący stan aplikacji, w tym wartości zmiennych i stos wywołań. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).  
   
- Możesz ustawić punkt przerwania w każdym wierszu kodu wykonywalnego. Na przykład w języku C# kodu powyżej można ustawić punkt przerwania w deklaracji zmiennej `for` pętli lub dowolny kod wewnątrz `for` pętli, ale nie można ustawić punkt przerwania na deklaracje przestrzeni nazw lub klasy lub podpis metody.  
+ Możesz ustawić punkt przerwania w każdym wierszu kodu wykonywalnego. Na przykład w powyższym C# kodzie można ustawić punkt przerwania dla deklaracji zmiennej, pętlę `for` lub dowolny kod wewnątrz pętli `for`, ale nie można ustawić punktu przerwania w deklaracjach nazw lub klasach ani w podpisie metody.  
   
-## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Ustawienie inne rodzaje punktów przerwania  
- Można również ustawić punkty przerwania w stosie wywołań, w oknie demontażu i, w kodzie natywnym języku C++, warunek danych lub adres pamięci.  
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Ustawianie innych rodzajów punktów przerwania  
+ Możesz również ustawić punkty przerwania w stosie wywołań, w oknie demontażu oraz w kodzie natywnym C++ , w warunku danych lub adresie pamięci.  
   
-## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Ustawianie punktu przerwania w oknie stosu wywołań  
- Możesz przerwać wykonywanie w instrukcji lub wierszu, który powraca wywołanie funkcji, aby ustawić punkt przerwania w **stos wywołań** okna. Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: Korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md). Debuger musi mieć przestał być wykonywany.  
+## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a>Ustawianie punktu przerwania w oknie stosu wywołań  
+ Możesz przerwać wykonywanie w instrukcji lub wierszu, z którym wraca funkcja wywołująca, przez ustawienie punktu przerwania w oknie **stosu wywołań** . Aby uzyskać więcej informacji na temat stosu wywołań, zobacz [jak: korzystanie z okna stosu wywołań](../debugger/how-to-use-the-call-stack-window.md). Debuger musi zatrzymać wykonywanie.  
   
-1. Rozpocznij debugowanie aplikacji, a wykonanie oczekiwania jest zatrzymana (na przykład w punkcie przerwania). Otwórz **stos wywołań** okna (**debugowanie / Windows / stos wywołań**, lub **CTRL + ALT + C**).  
+1. Rozpocznij debugowanie aplikacji i zaczekaj na zatrzymanie wykonywania (na przykład w punkcie przerwania). Otwórz okno **stos wywołań** (**Debugowanie/Windows/stos wywołań**lub **Ctrl + Alt + C**).  
   
-2. Kliknij prawym przyciskiem myszy funkcji wywołującej, a następnie wybierz pozycję **punktu przerwania / Wstaw punkt przerwania**, lub po prostu użyj klawisza skrótu **F9**.  
+2. Kliknij prawym przyciskiem myszy funkcję wywołującą, a następnie wybierz pozycję **punkt przerwania/Wstaw punkt przerwania**lub po prostu Użyj klawisza skrótu **F9**.  
   
-3. Symbol punktu przerwania pojawia się na lewym marginesie stos wywołań, obok nazwy wywołania funkcji.  
+3. Symbol punktu przerwania pojawia się na lewym marginesie stosu wywołań obok nazwy wywołania funkcji.  
   
-   W **punktów przerwania** , punkt przerwania stosu wywołań zostanie wyświetlone jako adresu z lokalizacją pamięci, która odpowiada następnej instrukcji wykonywalnej w funkcji. Debuger przerywa wykonywanie w instrukcji.  
+   W oknie **punkty przerwania** stos wywołań jest wyświetlany jako adres z lokalizacją w pamięci, która odpowiada następnej instrukcji wykonywalnej w funkcji. Debuger przerywa wykonywanie w instrukcji.  
   
-   Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+   Aby wizualnie śledzić punkty przerwania podczas wykonywania kodu, zobacz [metody mapowania na stosie wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Ustawienie punktu przerwania w oknie demontaż  
- Aby ustawić punkt przerwania w instrukcji montażu, debuger musi być w trybie przerwania.  
+## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Ustawianie punktu przerwania w oknie demontażu  
+ Aby ustawić punkt przerwania w instrukcji zestawu, debuger musi być w trybie przerwania.  
   
-1. Rozpocznij debugowanie aplikacji, a wykonanie oczekiwania jest zatrzymana (na przykład w punkcie przerwania). Otwórz **dezasemblacji** okna (**debugowanie / Windows / dezasemblacji**, lub **Ctrl + Alt + D**).  
+1. Rozpocznij debugowanie aplikacji i zaczekaj na zatrzymanie wykonywania (na przykład w punkcie przerwania). Otwórz okno **demontaż** (**Debuguj/Windows/demontażu**lub **Ctrl + Alt + D**).  
   
-2. Kliknij na lewym marginesie w instrukcji, które chcesz przerwać lub ustawić kursor na instrukcji i naciśnij klawisz **F9**.  
+2. Kliknij na lewym marginesie instrukcji, która ma zostać przerwana, lub ustaw kursor na instrukcji i naciśnij klawisz **F9**.  
   
-## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Ustawianie punktu przerwania danych (tylko w natywnym kodzie C++)  
- Punkty przerwania danych przerwać wykonywanie, gdy wartość, która jest przechowywana w zmiany adresu określonego pamięci. Jeśli wartości jest czytana, ale nie został zmieniony, wykonanie nie zostanie przerwane. Aby ustawić punkty przerwania danych, debuger musi być w trybie przerwania.  
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Ustawianie punktu przerwania danych ( C++ tylko kod natywny)  
+ Punkty przerwania danych przerywają wykonywanie w przypadku zmiany wartości przechowywanej w określonym adresie pamięci. Jeśli wartości jest czytana, ale nie został zmieniony, wykonanie nie zostanie przerwane. Aby ustawić punkty przerwania danych, debuger musi być w trybie przerwania.  
   
-1. Rozpocznij debugowanie aplikacji i zaczekaj, aż do osiągnięcia punktu przerwania. Na **debugowania** menu, wybierz **nowego punktu przerwania / punktu przerwania danych** (lub Otwórz **punktów przerwania** okna i wybierz polecenie **New / punktu przerwania danych**.  
+1. Rozpocznij debugowanie aplikacji i poczekaj, aż zostanie osiągnięty punkt przerwania. W menu **Debuguj** wybierz pozycję **nowy punkt przerwania/punkt przerwania danych** (lub Otwórz okno **punkty przerwania** i wybierz pozycję **nowy/punkt przerwania danych**).  
   
-2. W **adres** wpisz adres pamięci lub wyrażenie, które daje w wyniku adres pamięci. Na przykład wpisz `&avar` przerwanie, kiedy zawartość zmiennej `avar` zmiany.  
+2. W polu **adres** wpisz adres pamięci lub wyrażenie, które daje w wyniku adres pamięci. Na przykład wpisz `&avar`, aby przerwać, gdy zawartość zmiennej `avar` ulega zmianie.  
   
-3. W **liczba bajtów** listy rozwijanej wybierz liczbę bajtów, które chcesz, aby debuger ma uważać. Na przykład w przypadku wybrania **4**, debuger będzie obserwował cztery bajty począwszy `&avar` i przerwie działanie, jeśli którykolwiek z tych bajtów zmienić wartość.  
+3. Z listy rozwijanej **liczba bajtów** wybierz liczbę bajtów, które ma oglądać debuger. Na przykład po wybraniu opcji **4**debuger będzie oglądać cztery bajty, zaczynając od `&avar` i przerwać, jeśli którykolwiek z tych bajtów zmieni wartość.  
   
-   Należy pamiętać, że punkty przerwania danych zależy od stosowania adresów pamięci.  
+   Należy pamiętać, że punkty przerwania danych zależą od możliwości zastosowania określonych adresów pamięci.  
   
-- Adres zmiennej zmieni się między jedną sesją debugowania do następnego. Punkty przerwania danych są automatycznie wyłączane na koniec każdej sesji debugowania.  
+- Adres zmiennej zmienia się z jednej sesji debugowania na następną. Punkty przerwania danych są automatycznie wyłączane na końcu każdej sesji debugowania.  
   
-- Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, pozostaje punkt przerwania, włączona, gdy funkcja skończy działanie, ale adres pamięci nie ma już zastosowania, a zachowanie punktu przerwania są nieprzewidywalne. Jeśli punkt przerwania danych zostanie ustawiony na zmiennej lokalnej, należy usunąć lub wyłącz punkt przerwania przed końcem działania funkcji.  
+- Jeśli ustawisz punkt przerwania danych na zmiennej lokalnej, punkt przerwania zostanie włączony, gdy funkcja zostanie zakończona, ale adres pamięci nie będzie już stosowany, a zachowanie punktu przerwania jest nieprzewidywalne. Jeśli ustawisz punkt przerwania danych na zmiennej lokalnej, należy usunąć lub wyłączyć punkt przerwania przed zakończeniem działania funkcji.  
   
-  Punkty przerwania danych nie działają w tych warunkach:  
+  Punkty przerwania danych nie działają w następujących warunkach:  
   
-- Proces, który nie jest debugowany, zapisuje w lokalizacji pamięci  
+- Proces, który nie jest debugowany zapis w lokalizacji pamięci  
   
-- Lokalizacja pamięci jest współużytkowana przez dwa lub więcej procesów  
+- Lokalizacja pamięci jest współdzielona przez dwa lub więcej procesów  
   
-- Lokalizacja pamięci jest aktualizowana w jądrze. Na przykład, jeśli pamięć jest przekazywana do Windows 32-bitowych `ReadFile` funkcji, pamięć zostanie zaktualizowana z trybu jądra i debuger nie przerywa działania podczas zapisu w pamięci.  
+- Lokalizacja pamięci jest aktualizowana w jądrze. Na przykład jeśli pamięć jest przenoszona do 32-bitowej funkcji `ReadFile` systemu Windows, pamięć zostanie zaktualizowana z trybu jądra, a debuger nie przerwie podczas zapisu w pamięci.  
   
-## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Ustawienie punktu przerwania przy użyciu adresu pamięci (tylko w natywnym kodzie C++)  
- Aby ustawić punkt przerwania na metodę o nazwie na określonym wystąpieniu klasy umożliwia także adres obiektu.  Oto przykład:  
+## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Ustawianie punktu przerwania z adresem pamięci (tylko C++ kod natywny)  
+ Możesz również użyć adresu obiektu, aby ustawić punkt przerwania dla metody wywoływanej w konkretnym wystąpieniu klasy.  Oto przykład:  
   
- Na przykład, biorąc pod uwagę obiekt typu `my_class` za pomocą adresu, można ustawić punktu przerwania funkcji w metodę o nazwie `my_method` wywoływane z tego wystąpienia.  
+ Na przykład, mając obiekt typu `my_class` z adresem, można ustawić punkt przerwania funkcji dla metody o nazwie `my_method` wywoływany z tego wystąpienia.  
   
-1. Ustaw punkt przerwania gdzieś po konkretyzacji tego wystąpienia klasy.  
+1. Ustaw punkt przerwania w dowolnym miejscu po utworzeniu wystąpienia klasy.  
   
-2. Znajdź adres wystąpienia (przycisk ma `0xcccccccc`).  
+2. Znajdź adres wystąpienia (Załóżmy, że jest on `0xcccccccc`).  
   
-3. Kliknij przycisk **debugowanie / nowy punkt przerwania / funkcji punktu przerwania** (lub **ALT + F9, B**).  
+3. Kliknij pozycję **Debuguj/nowy punkt przerwania/punkt przerwania funkcji** (lub **ALT + F9, B**).  
   
-4. Dodaj następujący tekst, aby **nazwy funkcji** pola:  
+4. Dodaj następujący tekst do pola **nazwa funkcji** :  
   
     ```cpp  
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Zarządzanie punktów przerwania  
- Możesz użyć **punktów przerwania** okna (**debugowanie / Windows / punktów przerwania**, lub **CTRL + ALT + B**) aby wyświetlić wszystkie punkty przerwania ustawiono w rozwiązaniu:  
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>Zarządzanie punktami przerwania  
+ Możesz użyć okna **punkty przerwania** (**debugowanie/okna/punkty przerwania**lub **Ctrl + Alt + B**), aby zobaczyć wszystkie punkty przerwania ustawione w rozwiązaniu:  
   
  ![Okno punktów przerwania](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
- **Punktów przerwania** okno udostępnia centralne miejsce do zarządzania wszystkimi punktami przerwań, które mogą być szczególnie przydatne w dużym rozwiązaniem lub złożonych scenariuszy debugowania, w których punkty przerwania mają kluczowe znaczenie. Jeśli trzeba zapisać lub udostępnić stan i lokalizację zbioru punktów przerwania, możesz wyeksportować i zaimportować punktów przerwania tylko z **punktów przerwania** okna.  
+ Okno **punkty przerwania** udostępnia centralne miejsce do zarządzania wszystkimi punktami przerwania, które mogą być szczególnie przydatne w przypadku dużych rozwiązań lub złożonych scenariuszy debugowania, w których punkty przerwania są krytyczne. Jeśli zachodzi potrzeba zapisania lub udostępnienia stanu i lokalizacji zestawu punktów przerwania, można eksportować i importować punkty przerwania tylko z okna **punkty przerwania** .  
   
-## <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Zaawansowane punkty przerwania  
+## <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>Zaawansowane punkty przerwania  
   
 ## <a name="breakpoint-conditions"></a>Warunki punktu przerwania  
  Można kontrolować, kiedy i gdzie jest wykonywany punkt przerwania, ustawiając warunków.  
   
-1. Kliknij prawym przyciskiem myszy punkt przerwania lub Najedź kursorem punkt przerwania i wybierz ikonę ustawienia.  
+1. Kliknij prawym przyciskiem myszy punkt przerwania lub umieść kursor nad punktem przerwania, a następnie wybierz ikonę Ustawienia.  
   
-2. W menu kontekstowym wybierz **warunki**. Spowoduje to otwarcie **ustawienia punktu przerwania** okna:  
+2. W menu kontekstowym wybierz pozycję **warunki**. Spowoduje to otwarcie okna **Ustawienia punktu przerwania** :  
   
    ![Ustawienia punktu przerwania](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-   Kiedy zaznaczysz **warunki** polu okna rozwija do wyświetlania różnych typów warunków.  
+   Po zaznaczeniu pola **warunki** okno zostanie rozwinięte, aby pokazać różne rodzaje warunków.  
   
-   **Wyrażenie warunkowe:** Po wybraniu wyrażenia warunkowego, możesz wybrać dwa warunki: **Ma wartość true** i **po zmianie**. Wybierz **ma wartość true** Jeśli chcesz przerwać gdy wyrażenie jest spełniony, lub wybierz **po zmianie** Jeśli chcesz przerwać, gdy zmieniono wartość wyrażenia.  
+   **Wyrażenie warunkowe:** Po wybraniu wyrażenia warunkowego można wybrać dwa warunki: **wartość true** i **po zmianie**. Wybierz **wartość PRAWDA** , jeśli chcesz przerwać, gdy wyrażenie jest spełnione, lub wybierz, **Kiedy zmiana** ma zostać przerwana, gdy wartość wyrażenia zostanie zmieniona.  
   
-   W poniższym przykładzie, możemy ustawić punkt przerwania, aby trafić tylko wtedy, gdy wartość `testInt` jest **4**:  
+   W poniższym przykładzie ustawimy punkt przerwania, tylko wtedy, gdy wartość `testInt` wynosi **4**:  
   
-   ![Spełniony jest warunek punktu przerwania](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+   ![Warunek punktu przerwania ma wartość true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
-   W poniższym przykładzie, możemy ustawić punkt przerwania, aby trafić tylko wtedy, gdy wartość `testInt` zmiany:  
+   W poniższym przykładzie ustawimy punkt przerwania, tylko wtedy, gdy wartość `testInt` ulegnie zmianie:  
   
-   ![Punkt przerwania po zmianie](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+   ![Punkt przerwania w przypadku zmiany](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
-   Zachowanie po zmienionego pola jest różne w różnych językach programowania. Jeśli wybierzesz **po zmianie** dla kodu natywnego, debuger nie uważa pierwszej oceny warunku za zmianę, więc punkt przerwania nie zostanie osiągnięty przy pierwszej ocenie. Jeśli wybierzesz **po zmianie** dla kodu zarządzanego, punkt przerwania zostanie osiągnięty przy pierwszej ocenie po **po zmianie** jest zaznaczone.  
+   Zachowanie w przypadku zmiany pola jest różne dla różnych języków programowania. Jeśli wybierzesz **zmianę** dla kodu natywnego, debuger nie uwzględnia pierwszej oceny warunku do zmiany, więc punkt przerwania nie zostanie osiągnięty przy pierwszej ocenie. Jeśli wybierzesz **zmianę** dla kodu zarządzanego, punkt przerwania zostanie osiągnięty podczas pierwszej oceny po wybraniu opcji **zmieniono** .  
   
-   Jeśli ustawisz warunek punktu przerwania z nieprawidłową składnią, zostanie wyświetlony komunikat ostrzegawczy. Jeśli określisz warunek punktu przerwania o prawidłowej składni, ale nieprawidłowej semantyce, pojawi się ostrzeżenie, gdy punkt przerwania zostaje trafiony po raz pierwszy. W każdym z tych przypadków debuger przerywa wykonywanie, gdy nieprawidłowy punkt przerwania zostaje trafiony. Punkt przerwania jest pomijany tylko wtedy, gdy warunek jest prawidłowy i daje w wyniku `false`.  
+   Jeśli ustawisz warunek punktu przerwania z nieprawidłową składnią, zostanie wyświetlony komunikat ostrzegawczy. Jeśli określisz warunek punktu przerwania o prawidłowej składni, ale nieprawidłowej semantyce, pojawi się ostrzeżenie, gdy punkt przerwania zostaje trafiony po raz pierwszy. W obu przypadkach debuger przerywa wykonywanie, gdy zostanie trafiony nieprawidłowy punkt przerwania. Punkt przerwania jest pomijany tylko wtedy, gdy warunek jest prawidłowy i ma wartość `false`.  
   
-   Warunek może być dowolnym prawidłowym wyrażeniem rozpoznawanym przez debuger. Aby uzyskać więcej informacji dotyczących prawidłowych wyrażeń, zobacz [wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md).  
+   Warunek może być dowolnym prawidłowym wyrażeniem rozpoznawanym przez debuger. Aby uzyskać więcej informacji na temat prawidłowych wyrażeń, zobacz [wyrażenia w debugerze](../debugger/expressions-in-the-debugger.md).  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Za pomocą identyfikatorów obiektów w warunkach punkt przerwania (C# i F#)  
- Istnieją momenty, gdy zachodzi potrzeba przyjrzeć się zachowaniu określonego obiektu; na przykład można dowiedzieć się, dlaczego obiekt został wstawiony więcej niż jeden raz w kolekcji. W C# i F#, można tworzyć identyfikatory obiektów dla określonego wystąpienia [typy odwołań](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Korzystanie z identyfikatorów obiektów w warunkach punktuC# przerwania (i F#)  
+ Istnieją przypadki, w których chcesz obserwować zachowanie określonego obiektu; na przykład możesz chcieć dowiedzieć się, dlaczego obiekt został wstawiony do kolekcji więcej niż raz. W C# programie F#i można tworzyć identyfikatory obiektów dla określonych wystąpień [typów referencyjnych](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) i używać ich w warunkach punktu przerwania. Identyfikator obiektu jest generowany przez środowisko uruchomieniowe języka wspólnego (CLR) debugowanie usług i powiązane z obiektem.  Aby utworzyć identyfikator obiektu, wykonaj następujące czynności:  
   
-1. Ustaw punkt przerwania w kodzie na pewien czas, po utworzeniu obiektu.  
+1. Ustaw punkt przerwania w kodzie jakiś czas po utworzeniu obiektu.  
   
-2. Uruchamianie debugowania oraz po zatrzymaniu w punkcie przerwania wykonywania znaleźć punkt przerwania w **lokalne** okna, kliknij go prawym przyciskiem myszy, a następnie wybierz pozycję **wprowadzić identyfikator obiektu**.  
+2. Rozpocznij debugowanie i po zatrzymaniu wykonywania w punkcie przerwania Znajdź punkt przerwania w oknie **zmiennych lokalnych** , kliknij go prawym przyciskiem myszy, a następnie wybierz polecenie **Utwórz identyfikator obiektu**.  
   
-    Powinien zostać wyświetlony **$** oraz liczbą **lokalne** okna. Jest to identyfikator obiektu.  
+    Powinna zostać wyświetlona **$** Plus cyfra w oknie **zmiennych lokalnych** . Jest to identyfikator obiektu.  
   
-3. Dodaj nowe warunkowego punktu przerwania w punkcie, że chcesz zbadać, na przykład jeśli obiekt jest do dodania do kolekcji.  
+3. Dodaj nowy warunkowy punkt przerwania w punkcie, który chcesz zbadać, na przykład gdy obiekt ma zostać dodany do kolekcji.  
   
-4. W polu Wyrażenie warunkowe, należy użyć Identyfikatora obiektu. Na przykład, jeśli występuje zmienna `item` odwołujące się do obiektu, który ma zostać dodany do kolekcji, możesz umieścić **elementu == $n**, gdzie **n** jest numer Identyfikatora obiektu.  
+4. Użyj identyfikatora obiektu w polu wyrażenia warunkowego. Na przykład jeśli istnieje zmienna `item` odwołująca się do obiektu, który ma zostać dodany do kolekcji, należy umieścić **element = = $n**, gdzie **n** jest numerem identyfikatora obiektu.  
   
     Wykonywanie zostanie przerwane w momencie gdy ten obiekt ma być dodana do kolekcji.  
   
-   Jeśli chcesz później usunąć identyfikator obiektu, należy kliknąć prawym przyciskiem myszy zmiennej w **lokalne** okna, a następnie wybierz pozycję **usunięcia obiektu o identyfikatorze**.  
+   Jeśli chcesz później usunąć identyfikator obiektu, możesz kliknąć prawym przyciskiem myszy zmienną w oknie **zmiennych lokalnych** i wybrać pozycję **Usuń identyfikator obiektu**.  
   
-   Należy pamiętać, że identyfikatory obiektów tworzenie słabe odwołania i uniemożliwia obiektu jako elementu bezużytecznego zbierane. Są one prawidłowe tylko dla bieżącej sesji debugowania.  
+   Należy zauważyć, że identyfikatory obiektów tworzą słabe odwołania i nie uniemożliwiają odzyskiwania obiektu. Są one prawidłowe tylko dla bieżącej sesji debugowania.  
   
 ## <a name="hit-count"></a>Liczba trafień  
- Jeśli podejrzewasz, że pętla w kodzie rozpoczyna się niewłaściwie po określonej liczbie iteracji, możesz ustawić punkt przerwania, aby zatrzymać wykonywanie po określonej liczby dotarć do skojarzonego wiersza kodu, zamiast być zmuszonym do kilkukrotnego naciśnij  **F5** do osiągnięcia poziomu iteracji.  
+ Jeśli podejrzewasz, że pętla w kodzie zaczyna się błędna po określonej liczbie iteracji, możesz ustawić punkt przerwania, aby zatrzymać wykonywanie po podanej liczbie trafień do skojarzonego wiersza kodu, zamiast wymuszać wielokrotne naciśnięcie klawisza **F5** w celu osiągnięcia poziomu iteracji.  
   
- W **ustawienia punktu przerwania** oknie, warunek na **liczba trafień**. Następnie możesz określić liczbę iteracji. W poniższym przykładzie możemy ustawić punkt przerwania, aby trafić w każdej iteracji innych:  
+ W oknie **Ustawienia punktu przerwania** Ustaw warunek na **liczbę trafień**. Następnie można określić liczbę iteracji. W poniższym przykładzie ustawimy punkt przerwania w przypadku każdej innej iteracji:  
   
  ![Liczba trafień punktu przerwania](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
 ## <a name="filter"></a>Filtr  
  Można ograniczyć punkt przerwania, aby wyzwalać tylko dla określonego urządzenia lub w określonych procesów i wątków.  
   
- W **ustawienie punktu przerwania**s oknie, warunek na **filtru**. Wprowadź co najmniej jedną z następujących wyrażeń.  
+ W oknie **Ustawienia punktu przerwania**Ustaw warunek do **filtrowania**. Wprowadź co najmniej jedno z następujących wyrażeń.  
   
 - MachineName = "name"  
   
@@ -207,21 +207,21 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
   
 - ThreadName = "name"  
   
-  Wartości parametrów należy ująć w cudzysłów. Można połączyć klauzule za pomocą `&` (oraz) `||` (lub), `!` (nie) i nawiasy.  
+  Wartości parametrów należy ująć w cudzysłów. Można łączyć klauzule przy użyciu `&` (i), `||` (lub), `!` (nie) i nawiasów.  
   
-## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Akcje punktu przerwania i punkty śledzenia  
- Punkt śledzenia jest punktem przerwania, który drukuje wiadomość w oknie danych wyjściowych. Tracepoint może zachowywać się jak tymczasowa instrukcja śledzenia w języku programowania.  
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Akcje punktu przerwania i punkty śledzenia  
+ Punkt śledzenia jest punktem przerwania, który drukuje komunikat do okna danych wyjściowych. Tracepoint może zachowywać się jak tymczasowa instrukcja śledzenia w języku programowania.  
   
- W **ustawienia punktu przerwania** okno wyboru **akcje** pole. Wybierz **Rejestruj komunikat w oknie danych wyjściowych** w **akcji** grupy. Można wydrukować ciąg ogólnych, takich jak **to test**. Aby uwzględnić wartość zmiennej lub wyrażenia, należy ją ująć w nawiasy klamrowe.  
+ W oknie **Ustawienia punktu przerwania** zaznacz pole **Akcje** . Wybierz pozycję **Rejestruj komunikat w oknie danych wyjściowych** w grupie **akcji** . Można wydrukować ciąg ogólny, na przykład **ten test**. Aby uwzględnić wartość zmiennej lub wyrażenia, należy ująć ją w nawiasy klamrowe.  
   
- Aby przerwać wykonywanie po osiągnięciu punktu śledzenia, wyczyść **Kontynuuj wykonywanie** pole wyboru. Gdy **Kontynuuj wykonywanie** jest zaznaczone, wykonanie nie zostało zatrzymane. W obu przypadkach komunikat jest drukowany.  
+ Aby przerwać wykonywanie po trafieniu punkt śledzenia, usuń zaznaczenie pola wyboru **Kontynuuj wykonywanie** . Gdy jest zaznaczone pole wyboru **Kontynuuj wykonywanie** , wykonywanie nie jest zatrzymywane. W obu przypadkach komunikat jest drukowany.  
   
- Można użyć następujących specjalnych słów kluczowych w **komunikat**.  
+ W **komunikacie**można używać następujących specjalnych słów kluczowych.  
   
 |||  
 |-|-|  
-|**$ADDRESS**|Bieżącej instrukcji|  
-|**$CALLER**|Nazwa funkcji wywoływania|  
+|**$ADDRESS**|Bieżąca instrukcja|  
+|**$CALLER**|Nazwa funkcji wywołującej|  
 |**$CALLSTACK**|Stos wywołań|  
 |**$FUNCTION**|Nazwa bieżącej funkcji|  
 |**$PID**|Identyfikator procesu|  
@@ -231,26 +231,26 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
 |**$TICK**||  
 |**$TNAME**||  
   
-## <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etykiety punktów przerwania  
- Etykiety punktów przerwania są używane tylko w **punktów przerwania** okna, aby sortować i filtrować listy punktów przerwania. Aby dodać etykietę do punktu przerwania, wybierz wiersz punktu przerwania, a następnie wybierz **etykiety** w menu kontekstowym.  
+## <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a>Etykiety punktów przerwania  
+ Etykiety punktów przerwania są używane tylko w oknie **punkty przerwania** do sortowania i filtrowania listy punktów przerwania. Aby dodać etykietę do punktu przerwania, wybierz wiersz punktu przerwania, a następnie wybierz pozycję **etykieta** w menu kontekstowym.  
   
-## <a name="export-and-import-breakpoints"></a>Eksport i Import punktów przerwania  
- Punkt przerwania można wyeksportować do pliku XML, klikając prawym przyciskiem myszy punkt przerwania i wybierając polecenie **wyeksportować**. Plik jest zapisywany w katalogu rozwiązania domyślnie. Aby zaimportować punktów przerwania, otwórz **punktów przerwania** okna (**CTRL + ALT + B**) i na pasku narzędzi kliknij strzałkę skierowaną w prawo (etykietka narzędzia jest **Importuj punkty przerwania z plikiem**) .  
+## <a name="export-and-import-breakpoints"></a>Eksportuj i Importuj punkty przerwania  
+ Punkt przerwania można wyeksportować do pliku XML, klikając prawym przyciskiem myszy punkt przerwania i wybierając pozycję **Eksportuj**. Plik jest domyślnie zapisywany w katalogu rozwiązania. Aby zaimportować punkty przerwania, Otwórz okno **punkty przerwania** (**Ctrl + Alt + B**) i na pasku narzędzi kliknij strzałkę wskazującą w prawo (etykietka narzędzia powoduje **Importowanie punktów przerwania z pliku**).  
   
-## <a name="troubleshoot-breakpoints"></a>Rozwiązywanie problemów z punktów przerwania  
+## <a name="troubleshoot-breakpoints"></a>Rozwiązywanie problemów z punktami przerwania  
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po usunięciu punktu przerwania, ale można kontynuować trafień je, gdy I ponownie Rozpocznij debugowanie  
- Jeśli usunięty punkt przerwania podczas debugowania, w niektórych przypadkach można napotkać punkt przerwania ponownie przy następnym uruchomieniu debugowania. Aby zatrzymać, naciśnięcie tego punktu przerwania, sprawdź, czy wszystkie wystąpienia punktu przerwania są usuwane z **punktów przerwania** okna.  
+ Jeśli punkt przerwania został usunięty podczas debugowania, w niektórych przypadkach można ponownie uruchomić punkt przerwania przy następnym rozpoczęciu debugowania. Aby przerwać ten punkt przerwania, upewnij się, że wszystkie wystąpienia punktu przerwania są usuwane z okna **punkty przerwania** .  
   
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Debuger nie może zlokalizować poprawnej wersji pliku źródłowego dla punktu przerwania  
- Jeśli plik źródłowy został zmieniony i źródło nie jest już zgodny z kodu, który jest debugowany, debuger może zlokalizować pliku źródłowego, który odpowiada punktowi przerwania, nawet jeśli plik źródłowy istnieje.  
+### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Debuger nie może znaleźć poprawnej wersji pliku źródłowego dla punktu przerwania  
+ Jeśli plik źródłowy został zmieniony, a źródło nie pasuje już do kodu, który jest debugowany, debuger może zlokalizować plik źródłowy, który odnosi się do punktu przerwania, nawet jeśli plik źródłowy istnieje.  
   
-1. Jeśli chcesz, aby wyświetlić kod źródłowy, który nie pasuje do wersji programu Visual Studio debugowania, wybierz polecenie **Debuguj / opcje i ustawienia**. Na **debugowanie/ogólne** strony, wyczyść **wymaga plików źródłowych, które dokładnie dopasować oryginalną wersję** opcji.  
+1. Jeśli chcesz, aby program Visual Studio wyświetlał kod źródłowy, który jest niezgodny z debugowaną wersją, wybierz polecenie **Debuguj/opcje i ustawienia**. Na stronie **debugowanie/ogólne** wyczyść pole wyboru **Wymagaj plików źródłowych, które dokładnie pasują do oryginalnej wersji** .  
   
-2. Możesz również powiązać punkt przerwania w pliku źródłowym. Zaznacz punkt przerwania i wybierz polecenie **warunki** w menu kontekstowym. Sprawdź **Zezwalaj kod źródłowy różnił się od oryginału** w **ustawienia punktu przerwania** okna.  
+2. Można również powiązać punkt przerwania z plikiem źródłowym. Wybierz punkt przerwania i wybierz pozycję **warunki** w menu kontekstowym. Zaznacz pole wyboru **Zezwalaj, aby kod źródłowy różnił się od oryginału** w oknie **Ustawienia punktu przerwania** .  
   
 ### <a name="breakpoints-dont-work-in-a-dll"></a>Punkty przerwania nie działają w bibliotece DLL  
- Nie można ustawić punktu przerwania w pliku źródłowym, gdy debuger nie załadował jeszcze informacje debugowania dla modułu gdzie znajduje się kod. Objawy mogą obejmować takie jak wiadomości **nie będzie można ustawić punktu przerwania**. Glif ostrzegawczy punktu przerwania pojawia się w lokalizacji punktu przerwania. Jednak te ostrzegawcze punkty przerwania stają się rzeczywistymi punktami przerwania podczas ładowania kodu. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Nie można ustawić punktu przerwania w pliku źródłowym, gdy debuger nie załadował informacji debugowania dla modułu, w którym znajduje się kod. Objawy mogą zawierać komunikaty, takie jak **punkt przerwania nie zostanie ustawiony**. Symbol punktu przerwania ostrzeżenia pojawia się w lokalizacji punktu przerwania. Jednak te ostrzeżenia są wyświetlane jako rzeczywiste punkty przerwania podczas ładowania kodu. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
