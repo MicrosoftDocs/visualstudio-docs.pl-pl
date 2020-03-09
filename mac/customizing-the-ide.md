@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: d35cd7ebc5534cd49f18db794b5fdeb5f62f4758
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984196"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409602"
 ---
 # <a name="customizing-the-ide"></a>Dostosowywanie środowiska IDE
 
@@ -31,18 +31,18 @@ Visual Studio dla komputerów Mac jest lokalizowana w następujących 14 języka
 
 * Chiński — Chiny
 * Chiński — Tajwan
-* czeski
-* francuski
-* niemiecki
-* angielski
+* Czeski
+* Francuski
+* Niemiecki
+* Polski
 * Włoski
-* japoński
-* koreański
-* polski
+* Japoński
+* Koreański
+* Polski
 * Portugalski (Brazylia)
-* rosyjski
+* Rosyjski
 * Hiszpański
-* turecki
+* Turecki
 
 Aby zmienić język wyświetlany przez Visual Studio dla komputerów Mac, przejdź do **okna preferencji > programu Visual Studio > środowisku > stylu wizualizacji** i wybierz żądany język z listy rozwijanej **język interfejsu użytkownika** , jak pokazano na poniższej ilustracji:
 
@@ -136,6 +136,6 @@ Aby przywrócić pojedynczy otwarty Edytor, wybierz pozycję **wyświetl > kolum
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Personalizowanie środowiska IDE programu Visual Studio (w systemie Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

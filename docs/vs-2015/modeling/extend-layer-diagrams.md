@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301033"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409613"
 ---
 # <a name="extend-layer-diagrams"></a>Rozszerzone diagramy warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Można napisać kod, aby utworzyć i zaktualizować Diagramy warstw oraz sprawdz
 ## <a name="prereqs"></a>Wymagania
  Na komputerze, na którym chcesz opracowywać rozszerzenia warstwy, muszą być zainstalowane następujące elementy:
 
-- {1&gt;Visual Studio&lt;1}
+- Visual Studio
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 

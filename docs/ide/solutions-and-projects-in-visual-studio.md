@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590088"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408819"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 
@@ -45,7 +45,7 @@ Program Visual Studio używa programu [MSBuild](../msbuild/msbuild.md) do kompil
 Pliki projektu są oparte na [schemacie XML programu MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Aby sprawdzić zawartość nowszych [plików projektu w stylu zestawu SDK](../msbuild/how-to-use-project-sdk.md) w programie Visual Studio, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Edytuj \<ProjectName\>** . Aby przyjrzeć się zawartości .NET Framework i innych projektów tego stylu, najpierw Zwolnij projekt (kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Zwolnij projekt**). Następnie kliknij prawym przyciskiem myszy projekt i wybierz polecenie **edytuj \<projectname\>** .
 
 > [!NOTE]
-> Nie musisz używać rozwiązań ani projektów w programie Visual Studio do edytowania, kompilowania i debugowania kodu. Możesz po prostu otworzyć folder zawierający pliki źródłowe w programie Visual Studio i rozpocząć edycję. Aby uzyskać więcej informacji, zobacz [tworzenie kodu w programie Visual Studio bez projektów ani rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
+> Nie musisz używać rozwiązań ani projektów w programie Visual Studio do edytowania, kompilowania i debugowania kodu. Możesz po prostu otworzyć folder zawierający pliki źródłowe w programie Visual Studio i rozpocząć edycję. Aby uzyskać więcej informacji, zobacz [Programowanie kodu w programie Visual Studio bez projektów i rozwiązań](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ## <a name="solutions"></a>Rozwiązania
 
@@ -53,9 +53,9 @@ Projekt jest zawarty w *rozwiązaniu*. Pomimo nazwy, rozwiązanie nie jest "odpo
 
 Program Visual Studio używa dwóch typów plików ( *. sln* i *. suo*) do przechowywania ustawień rozwiązań:
 
-|Rozszerzenie|Nazwa|Opis|
+|Wewnętrzny|Name (Nazwa)|Opis|
 |---------------|----------|-----------------|
-|.sln|Rozwiązanie Visual Studio|Organizuje projekty, elementy projektu i elementy rozwiązania w rozwiązaniu.|
+|.sln|Rozwiązanie programu Visual Studio|Organizuje projekty, elementy projektu i elementy rozwiązania w rozwiązaniu.|
 |.suo|Opcje użytkownika rozwiązania|Przechowuje ustawienia i dostosowania na poziomie użytkownika, takie jak punkty przerwania.|
 
 ## <a name="create-new-projects"></a>Utwórz nowe projekty
@@ -76,7 +76,7 @@ Wiele poleceń menu jest dostępnych w menu po kliknięciu prawym przyciskiem my
 
 W przypadku projektów ASP.NET Core można dostosować sposób zagnieżdżania plików w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zagnieżdżania plików w Eksplorator rozwiązań](file-nesting-solution-explorer.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/projects-and-solutions)
