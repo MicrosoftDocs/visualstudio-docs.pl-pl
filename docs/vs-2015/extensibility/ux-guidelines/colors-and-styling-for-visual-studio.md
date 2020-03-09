@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291602"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410069"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "74291602"
 ### <a name="the-vscolor-service"></a>Usługa VSColor
  Program Visual Studio udostępnia usługi kolorów środowiska, znana jako usługa VSColor, dzięki czemu można powiązać wartości kolorów elementy interfejsu użytkownika do wpisu o nazwie zawierające wartości kolorów dla każdego motywu programu Visual Studio. Daje to gwarancję, że kolory automatycznie zmieni się na odzwierciedla bieżący użytkownik wybrał motyw lub system trybu wysokiego kontrastu. Korzystanie z usługi oznacza, że implementacja wszystkie zmiany dotyczące motyw kolorów odbywa się w jednym miejscu i korzystania z typowych udostępnione kolory z usługi interfejs użytkownika będzie automatycznie odzwierciedlał nowe motywy w przyszłych wersjach programu Visual Studio.
 
-### <a name="implementation"></a>Wdrażanie
+### <a name="implementation"></a>Implementacja
  Kod źródłowy programu Visual Studio zawiera kilka plików definicji pakietu, które zawierają listy tokenów nazw i wartości odpowiednich kolorów dla każdego motywu. Usługa kolor odczytuje VSColors zdefiniowane w tych plikach definicji pakietu. Te kolory są przywoływane w znacznikach XAML lub w kodzie, a następnie ładowane za pomocą metody **IVsUIShell5. GetThemedColor** lub mapowania DynamicResource —.
 
 ### <a name="system-colors"></a>Kolory systemowe
@@ -258,7 +258,7 @@ protected override void Dispose(bool disposing)
 
 ## <a name="BKMK_ChoosingHighContrastColors"></a>Wybieranie duży kontrast kolorów
 
-### <a name="overview"></a>Przegląd
+### <a name="overview"></a>Omówienie
  Windows używa kilka motywów poziomie systemu o wysokim kontraście podnoszących kontrast kolorów tekstu, tła i obrazów, dzięki czemu elementy są wyświetlane na ekranie znacznie. Ze względu na ułatwienia dostępu jest ważne, że elementy interfejsu programu Visual Studio poprawnie odpowiadać, gdy użytkownicy będą przełączać się do motywu o wysokim kontraście.
 
  Tylko niewielki podzbiór kolory systemowe może służyć do dużego kontrastu, motywów. Podczas wybierania systemu nazw kolorów, należy pamiętać o następujących wskazówek:
@@ -300,11 +300,11 @@ protected override void Dispose(bool disposing)
 ### <a name="usage-patterns"></a>Wzorce użycia
  Wiele typowych elementów interfejsu użytkownika już dużego kontrastu kolorów zdefiniowanych. Można się odwołać te wzorce użycia podczas wybierania nazw kolorów z własnym systemem tak, aby elementów interfejsu użytkownika są zgodne z podobnych elementów.
 
-|Kolor systemu|Sposób użycia|
+|Kolor systemu|Użycie|
 |------------------|-----------|
 |ActiveCaption|-Active IDE i okna rafted symbole przycisk aktywowany, a następnie naciśnij klawisz<br />-Tło paska title IDE i rafted systemu windows<br />— Tło paska stanu domyślne|
 |ActiveCaptionText|-Active IDE i okna rafted dla pierwszego planu paska tytułu (tekst i symbole)<br />-Tło i obramowanie aktywnego okna przycisków po wskazaniu wskaźnikiem, a następnie naciśnij klawisz|
-|Formant|— Pola kombi lista rozwijana i wyszukiwania kontrolowania domyślne i wyłączone w tle, w tym przycisk listy rozwijanej<br />-Tło przycisku target dock<br />— Tło paska polecenie<br />— Tło okna Narzędzie|
+|formant|— Pola kombi lista rozwijana i wyszukiwania kontrolowania domyślne i wyłączone w tle, w tym przycisk listy rozwijanej<br />-Tło przycisku target dock<br />— Tło paska polecenie<br />— Tło okna Narzędzie|
 |ControlDark|-Tło IDE<br />— Separatory pasek menu i poleceń<br />— Obramowania paska polecenie<br />-Shadows menu.<br />-Narzędzie separator i obramowanie domyślne i aktywuje karcie okna<br />— Dobrze dokumentu tło przycisku przepełnienia<br />-Obramowanie symbol target dock|
 |ControlDarkDark|— Okno karty po przeniesieniu fokusu wybrany dokument|
 |ControlLight|-Obramowanie karty autoukrywanie<br />— Obramowanie pole kombi pola i listy rozwijanej listy<br />-Zadokować docelowej tło i obramowanie|
@@ -325,7 +325,7 @@ protected override void Dispose(bool disposing)
 
 ## <a name="BKMK_ExposingColorsForEndUsers"></a>Uwidacznianie kolorów dla użytkowników końcowych
 
-### <a name="overview"></a>Przegląd
+### <a name="overview"></a>Omówienie
  Czasami chcesz umożliwiają użytkownikom końcowym dostosować interfejs użytkownika, takie jak podczas tworzenia edytora kodu lub powierzchni projektowej. Najbardziej typowym sposobem wykonania tej czynności jest użycie okna dialogowego **narzędzia > opcje** . Chyba że masz wysoce wyspecjalizowany interfejs użytkownika, który wymaga specjalnych kontroli, najprostszym sposobem na zaprezentowanie dostosowania jest strona **czcionki i kolory** w sekcji **środowisko** okna dialogowego. Dla każdego elementu, który należy udostępnić dostosowywania użytkownik może wybrać zmienić kolor pierwszego planu i kolor tła.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Tworzenie pakietu VSPackage dla kolorów można dostosowywać
@@ -348,7 +348,7 @@ protected override void Dispose(bool disposing)
 
  Należy wypełnić rejestru za pomocą dwóch wartości:
 
-|Nazwa|Type|Dane|Opis|
+|Nazwa|Typ|Dane|Opis|
 |----------|----------|----------|-----------------|
 |Kategoria|REG_SZ|Identyfikator GUID|Identyfikator GUID utworzone w celu identyfikowania kategorii|
 |Package|REG_SZ|Identyfikator GUID|Identyfikator GUID usługi pakietu VSPackage, która obsługuje kategorii|
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  Należy wypełnić rejestru za pomocą dwóch wartości:
 
-|Nazwa|Type|Dane|Opis|
+|Nazwa|Typ|Dane|Opis|
 |----------|----------|----------|-----------------|
 |Kategoria|REG_SZ|Identyfikator GUID|Identyfikator GUID utworzone w celu identyfikowania kategorii|
 |Package|REG_SZ|Identyfikator GUID|Identyfikator GUID usługi pakietu VSPackage, która obsługuje kategorii|
@@ -424,7 +424,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
     "NameID"=dword:00000064
 ```
 
- **KORYGUJĄC**
+ **UWAGA:**
 
 - "NameID" = identyfikator zasobu Nazwa zlokalizowanej kategorii w pakiecie
 

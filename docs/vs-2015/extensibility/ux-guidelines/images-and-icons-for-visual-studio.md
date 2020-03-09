@@ -9,11 +9,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 843829c56fcbd2f5c558d7c4a8b14a660a431eac
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558220"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410546"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -306,7 +306,7 @@ ms.locfileid: "77558220"
 ### <a name="base-palette"></a>Paleta podstawowa
  Wszystkich standardowych ikon zawiera trzy kolory podstawowej. Ikony zawierają nie gradientach lub cienie, z co najmniej dwa wyjątki dla ikony narzędzia 3D.
 
-|Sposób użycia|Name (Nazwa)|Wartość (motyw jasny)|Próbki|Przykład|
+|Użycie|Nazwa|Wartość (motyw jasny)|Próbki|Przykład|
 |-----------|----------|---------------------------|------------|-------------|
 |Tło/ciemny|VS BG|424242 / 66,66,66|![Próbnik 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![Przykład palety podstawowej](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405 — 02_BasePaletteExample")|
 |Pierwszy plan/lekki|VS FG|F0EFF1 / 240,239,241|![F0EFF1 próbki](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
@@ -319,7 +319,7 @@ ms.locfileid: "77558220"
 #### <a name="action-modifiers"></a>Modyfikatory akcji
  Cztery kolory poniżej wskazują typy akcji związanej z Modyfikatory akcji:
 
-|Sposób użycia|Name (Nazwa)|Wartości (wszystkie motywy)|Próbki|
+|Użycie|Nazwa|Wartości (wszystkie motywy)|Próbki|
 |-----------|----------|--------------------------|------------|
 |Dodatnie|Zielony akcji programu VS|388A34 / 56,138,52|![388A34 próbki](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
 |Ujemne|Czerwony akcji programu VS|A1260D / 161,38,13|![A1260D próbki](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
@@ -362,14 +362,14 @@ ms.locfileid: "77558220"
 
 #### <a name="folder"></a>Folder
 
-|Sposób użycia|Name (Nazwa)|Wartości (wszystkie motywy)|Próbki|Przykład|
+|Użycie|Nazwa|Wartości (wszystkie motywy)|Próbki|Przykład|
 |-----------|----------|--------------------------|------------|-------------|
 |Foldery|Folder|DCB67A / 220,182,122|![DCB67A próbki](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![Ikona koloru folderu](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405 — 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Języki Visual Studio
  Każda z typowych języków lub platform dostępne w programie Visual Studio ma kolor skojarzony. Te kolory na ikonie podstawowej lub nad modyfikatorami języka, które pojawiają się w prawym górnym rogu złożone ikony.
 
-|Sposób użycia|Name (Nazwa)|Wartości (wszystkie motywy)|Próbki|
+|Użycie|Nazwa|Wartości (wszystkie motywy)|Próbki|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|Niebieski HTML WPF ASP|0095D 7 / 0,149,215|![0095D7 próbki](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|Purpurowy CPP|9B4F96 / 155,79,150|![9B4F96 próbki](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -391,7 +391,7 @@ ms.locfileid: "77558220"
 #### <a name="intellisense"></a>IntelliSense
  Ikony IntelliSense Użyj palety kolorów wyłączności. Te kolory pomagają użytkownikom szybko odróżnić różne elementy na liście menu podręczne IntelliSense.
 
-|Sposób użycia|Name (Nazwa)|Wartości (wszystkie motywy)|Próbki|
+|Użycie|Nazwa|Wartości (wszystkie motywy)|Próbki|
 |-----------|----------|--------------------------|------------|
 |Klasa zdarzenia|Pomarańczowy akcji programu VS|C27D1A / 194,125,26|![C27D1A próbki](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |Metody rozszerzenia, delegat metody i modułu|Purpurowy akcji programu VS|652D 90 / 101,45,144|![652D90 próbki](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -409,7 +409,7 @@ ms.locfileid: "77558220"
 ### <a name="notifications"></a>Powiadomienia
  Powiadomienia w programie Visual Studio są używane do wskazania stanu. Paleta powiadomień używa następujące cztery kolory, a także Opcje wypełnienia czarne lub białe pierwszego planu, w celu zdefiniowania powiadomień za pomocą następujących poziomów stanu.
 
-|Sposób użycia|Name (Nazwa)|Wartości (wszystkie motywy)|Próbki|
+|Użycie|Nazwa|Wartości (wszystkie motywy)|Próbki|
 |-----------|----------|--------------------------|------------|
 |Stan: neutralny|Niebieski powiadomień (VS niebieski)|1BA1E2 / 27,161,226|![1BA1E2 próbki](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |Stan: dodatnią|Zielony powiadomień (kolor zielony VS)|339933 / 51,153,51|![Próbnik 339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -427,7 +427,7 @@ ms.locfileid: "77558220"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Ogólnie rzecz biorąc Visual Studio Online zawiera funkcje obsługiwane w przeglądarce. Kolor zmienia się w różnych środowiskach, ale styl pozostają bez zmian.
 
-|Grupa|Sposób użycia|Name (Nazwa)|Wartości (wszystkie motywy)|Próbki|
+|Grupa|Użycie|Nazwa|Wartości (wszystkie motywy)|Próbki|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Tło|TFSO BG|656565/ 101, 101, 101|![Próbnik 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|Kontur|TFSO OUT|FFFFFF / 255, 255, 255|![FFFFFF próbki](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
@@ -436,7 +436,7 @@ ms.locfileid: "77558220"
 |F12|Tło|Biały|FFFFFF / 255, 255, 255|![FFFFFF próbki](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Normalne|F12 Grey_Primary|555555 / 85, 85, 85|![Próbnik 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|Po wskazaniu wskaźnikiem|F12 Blue_Hover|2279BF / 34,121,191|![2279BF próbki](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Disabled (Wyłączony)|F12 LtGrey_Disabled|ABABAC / 171,171,172|![ABABAC próbki](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Wyłączone|F12 LtGrey_Disabled|ABABAC / 171,171,172|![ABABAC próbki](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Tło|Zatrzymaj wskaźnik myszy bg|D9EBF7 / 217,235,247|![D9EBF7 próbki](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Po naciśnięciu tła|Po naciśnięciu bg|B2D7F0 / 178,215,240|![B2D7F0 próbki](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|Kontur|VS OUT|F6F6F6 / 246,246,246|![F6F6F6 próbki](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|

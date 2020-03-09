@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263299"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409367"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Omówienie wdrażania w programie Visual Studio
 
 Wdrażanie aplikacji, usług i składników to rozpowszechnianie ich w celu instalacji na innych komputerach, urządzeniach, serwerach lub w chmurze. W programie Visual Studio możesz wybrać odpowiednią metodę w zależności od typu wdrożenia, jakiego potrzebujesz.
 
-Dla wielu popularnych typów aplikacji można wdrożyć swojej aplikacji bezpośrednio z Eksploratora rozwiązań w programie Visual Studio. Aby szybko zapoznać się z tej możliwości, zobacz [Pierwsze spojrzenie na wdrażanie](../deployment/deploying-applications-services-and-components.md).
+Dla wielu popularnych typów aplikacji można wdrożyć swojej aplikacji bezpośrednio z Eksploratora rozwiązań w programie Visual Studio. Aby zapoznać się z szybkim samouczkiem dotyczącym tej funkcji, zobacz [pierwsze spojrzenie na wdrażanie](../deployment/deploying-applications-services-and-components.md).
 
 ![Wybierz jedną z opcji publikowania](../deployment/media/quickstart-publish-azure.png)
 
@@ -32,20 +32,20 @@ Dla wielu popularnych typów aplikacji można wdrożyć swojej aplikacji bezpoś
 
 Z poziomu programu Visual Studio, aplikacje mogą być publikowane bezpośrednio do następujących celów:
 
-- [Usługa Azure App Service](#azure-app-service)
-- [Usługa Azure Virtual Machines](#azure-virtual-machines)
+- [Azure App Service](#azure-app-service)
+- [Azure Virtual Machines](#azure-virtual-machines)
 - [System plików](#file-system)
-- [Niestandardowe obiekty docelowe (usługi IIS, FTP itp.) ](#custom-targets-iis-ftp), która obejmuje wszystkie serwery sieci web dowolnego.
+- [Niestandardowe elementy docelowe (IIS, FTP itp.)](#custom-targets-iis-ftp), które obejmują wszystkie dowolne serwery sieci Web.
 
-Na **Publikuj** karty, wybierz istniejący profil publikowania, zaimportuj istniejącą lub Utwórz nową za pomocą opcji opisanych w tym miejscu. Aby zapoznać się z opcji publikowania w środowisku IDE dla różnych typów aplikacji, zobacz [Pierwsze spojrzenie na wdrażanie](../deployment/deploying-applications-services-and-components.md).
+Na karcie **Publikowanie** można wybrać istniejący profil publikowania, zaimportować istniejący lub utworzyć nowy, korzystając z opcji opisanych tutaj. Aby zapoznać się z opcjami publikowania w środowisku IDE dla różnych typów aplikacji, zobacz [pierwsze spojrzenie na wdrożenie](../deployment/deploying-applications-services-and-components.md).
 
-## <a name="azure-app-service"></a>Usługa Azure App Service
+## <a name="azure-app-service"></a>Azure App Service
 
-[Usługa Azure App Service](/azure/app-service/app-service-web-overview) i [usługi App Service w systemie Linux](/azure/app-service/containers/app-service-linux-intro) ułatwiają deweloperom szybkie tworzenie różnych skalowalnych aplikacji i usług bez konserwacja infrastruktury.
+[Azure App Service](/azure/app-service/app-service-web-overview) i [App Service w systemie Linux](/azure/app-service/containers/app-service-linux-intro) pomagają deweloperom szybko tworzyć różne skalowalne aplikacje i usługi sieci Web bez konieczności utrzymywania infrastruktury.
 
-Możesz określić, ile obliczeń power usługi App Service ma, wybierając [ceny warstwy lub planu](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) dla zawierającego usługi App Service. Może mieć wiele sieci Web apps (i innych typów aplikacji) udostępnianie tej samej usługi App Service bez konieczności zmieniania warstwy cenowej. Na przykład umożliwia hostowanie aplikacji sieci Web w rozwoju, przejściowe i produkcyjne razem na tej samej usługi App Service.
+Należy określić, ile mocy obliczeniowej ma App Service, wybierając [warstwę cenową lub plan](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) dla App Service zawierającej. Może mieć wiele sieci Web apps (i innych typów aplikacji) udostępnianie tej samej usługi App Service bez konieczności zmieniania warstwy cenowej. Na przykład umożliwia hostowanie aplikacji sieci Web w rozwoju, przejściowe i produkcyjne razem na tej samej usługi App Service.
 
-Usługi App Service działa w przypadku hostowanych w chmurze maszyn wirtualnych na platformie Azure, ale te maszyny wirtualne są zarządzane dla Ciebie. Każda aplikacja w usłudze App Service zostanie przypisany unikatowy \*. adresu URL azurewebsites.net; wszystkie warstwy cenowe innych niż bezpłatna umożliwia przypisywanie nazw domen niestandardowych do lokacji.
+Usługi App Service działa w przypadku hostowanych w chmurze maszyn wirtualnych na platformie Azure, ale te maszyny wirtualne są zarządzane dla Ciebie. Dla każdej aplikacji w App Service zostanie przypisany unikatowy adres URL \*. azurewebsites.net; wszystkie warstwy cenowe inne niż bezpłatna umożliwiają przypisanie niestandardowych nazw domen do lokacji.
 
 ### <a name="when-to-choose-azure-app-service"></a>Kiedy należy wybrać w usłudze Azure App Service
 
@@ -54,17 +54,17 @@ Usługi App Service działa w przypadku hostowanych w chmurze maszyn wirtualnych
 - Nie chcesz do obsługi infrastruktury serwera (w tym aktualizacji oprogramowania).
 - Wszelkie dostosowania na poziomie maszyny, na serwerach, które hostują aplikację sieci web nie jest konieczne.
 
-> Jeśli chcesz używać usługi Azure App Service w Twoim centrum danych lub innymi komputerami w środowisku lokalnym, możesz to zrobić za pomocą [usługi Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+> Jeśli chcesz używać Azure App Service we własnym centrum danych lub na innych komputerach lokalnych, możesz to zrobić przy użyciu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-Aby uzyskać więcej informacji dotyczących publikowania w usłudze App Service, zobacz [Szybki Start — publikowanie w usłudze Azure App Service](quickstart-deploy-to-azure.md) i [Szybki Start — publikowanie platformy ASP.NET Core z systemem Linux](quickstart-deploy-to-linux.md).
+Aby uzyskać więcej informacji o publikowaniu do App Service, zobacz [Przewodnik Szybki Start — publikowanie w usłudze Azure App Service](quickstart-deploy-to-azure.md) i [szybki start — publikowanie ASP.NET Core w systemie Linux](quickstart-deploy-to-linux.md).
 
-## <a name="azure-virtual-machines"></a>Usługa Azure Virtual Machines
+## <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
-[Azure Virtual Machines (VMs)](https://azure.microsoft.com/documentation/services/virtual-machines/) pozwalają na tworzenie i zarządzanie nimi dowolną liczbę zasobów obliczeniowych w chmurze. Przy założeniu, odpowiedzialność za wszystkie aktualizacji oprogramowania i na maszynach wirtualnych, można dostosować je wedle potrzeby zgodnie z wymaganiami aplikacji. Dostęp do maszyn wirtualnych bezpośrednio za pośrednictwem pulpitu zdalnego, a każdy z nich będzie stosować jej przypisany adres IP, tak długo, jak żądany.
+[Usługa Azure Virtual Machines (maszyny wirtualne)](https://azure.microsoft.com/documentation/services/virtual-machines/) umożliwia tworzenie dowolnej liczby zasobów obliczeniowych w chmurze i zarządzanie nią. Przy założeniu, odpowiedzialność za wszystkie aktualizacji oprogramowania i na maszynach wirtualnych, można dostosować je wedle potrzeby zgodnie z wymaganiami aplikacji. Dostęp do maszyn wirtualnych bezpośrednio za pośrednictwem pulpitu zdalnego, a każdy z nich będzie stosować jej przypisany adres IP, tak długo, jak żądany.
 
 Skalowanie aplikacji, która jest obsługiwana na maszynach wirtualnych obejmuje wdrażanie dodatkowych maszyn wirtualnych, odpowiednio do zapotrzebowania, a następnie wdrożenie niezbędne oprogramowanie. Ten dodatkowy poziom kontroli umożliwia skalowanie inaczej w różnych regionach na świecie. Na przykład aplikacji obsługujących pracowników w różnych biur regionalnych można skalować zgodnie z liczbą pracowników w tych regionach potencjalnie obniżając koszty maszyn wirtualnych.
 
-Aby uzyskać dodatkowe informacje, zapoznaj się [szczegółowe porównanie](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) między usługi Azure App Service, Azure Virtual Machines i innych usług platformy Azure, które służą jako cel wdrożenia przy użyciu opcji niestandardowych w programie Visual Studio.
+Dodatkowe informacje znajdują się w [szczegółowym porównaniu](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) między Azure App Service, Azure Virtual Machines i innymi usługami platformy Azure, których można użyć jako celu wdrożenia przy użyciu opcji niestandardowej w programie Visual Studio.
 
 ### <a name="when-to-choose-azure-app-virtual-machines"></a>Kiedy należy wybrać maszyny wirtualne aplikacji platformy Azure
 
@@ -73,15 +73,15 @@ Aby uzyskać dodatkowe informacje, zapoznaj się [szczegółowe porównanie](htt
 - Chcesz, aby poprawnie poziom kontroli nad skalowanie aplikacji sieci web.
 - Należy bezpośredni dostęp do serwerów obsługujących aplikację z innych przyczyn.
 
-> Jeśli chcesz użyć usługi Azure Virtual Machines w Twoim centrum danych lub innymi komputerami w środowisku lokalnym, możesz to zrobić za pomocą [usługi Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+> Jeśli chcesz korzystać z usługi Azure Virtual Machines we własnym centrum danych lub na innych komputerach lokalnych, możesz to zrobić przy użyciu [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 ## <a name="file-system"></a>System plików
 
 Wdrażanie w systemie plików oznacza, że można po prostu skopiować plików aplikacji do określonego folderu na swoim komputerze. W większości przypadków służy do celów testowych lub aby wdrożyć aplikację do użytku przez ograniczoną liczbę osób, jeśli komputer jest również korzysta z serwera. Jeśli folder docelowy jest udostępniony w sieci, potem wdrożyć w systemie plików można udostępnić sieci web plików aplikacji do innych użytkowników, którzy mogą następnie wdrożyć ją do określonych serwerów.
 
-Komputerach lokalnych, które działają na serwerze można udostępnić swojej aplikacji za pośrednictwem Internetu lub sieci wewnętrznej, w zależności od sposobu skonfigurowania i sieci, z którymi jest połączony. (W przypadku podłączenia komputera bezpośrednio do Internetu, być szczególnie uważać, aby chronić je przed zagrożeniami bezpieczeństwa zewnętrznych). Ponieważ można zarządzać tymi komputerami, masz pełną kontrolę nad konfiguracjach sprzętu i oprogramowania.
+Komputerach lokalnych, które działają na serwerze można udostępnić swojej aplikacji za pośrednictwem Internetu lub sieci wewnętrznej, w zależności od sposobu skonfigurowania i sieci, z którymi jest połączony. (Jeśli komputer zostanie połączony bezpośrednio z Internetem, należy szczególnie uważnie chronić go przed zagrożeniami bezpieczeństwa zewnętrznego). Ponieważ zarządzasz tymi maszynami, masz pełną kontrolę nad konfiguracjami oprogramowania i sprzętu.
 
-Należy pamiętać, że jeśli jakiegokolwiek powodu (na przykład dostęp do komputera) nie jest możliwe do użycia usług cloud services, takich jak usługa Azure App Service lub Azure Virtual Machines, możesz użyć [usługi Azure Stack](https://azure.microsoft.com/overview/azure-stack/) we własnym centrum danych. Usługi Azure Stack umożliwia zarządzanie zasobami oraz używanie zasobów komputerowych za pośrednictwem usługi Azure App Service i Azure Virtual Machines, zachowując jeszcze wszystkiego w środowisku lokalnym.
+Należy pamiętać, że jeśli z jakiegokolwiek powodu (na przykład dostęp do komputera) nie można korzystać z usług w chmurze, takich jak Azure App Service lub Azure Virtual Machines, można użyć [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) we własnym centrum danych. Usługi Azure Stack umożliwia zarządzanie zasobami oraz używanie zasobów komputerowych za pośrednictwem usługi Azure App Service i Azure Virtual Machines, zachowując jeszcze wszystkiego w środowisku lokalnym.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Kiedy należy wybrać wdrożenie systemu plików
 
@@ -89,13 +89,13 @@ Należy pamiętać, że jeśli jakiegokolwiek powodu (na przykład dostęp do ko
 - Należy tylko wdrożenia lokalnego testu.
 - Chcesz zbadać i potencjalnie modyfikować pliki aplikacji niezależnie przed wysłaniem ich na inny cel wdrożenia.
 
-Aby uzyskać więcej informacji, zobacz [Szybki Start — wdrażanie w folderze lokalnym](quickstart-deploy-to-local-folder.md)
+Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie do folderu lokalnego](quickstart-deploy-to-local-folder.md) .
 
 ## <a name="custom-targets-iis-ftp"></a>Niestandardowe obiekty docelowe (usługi IIS, FTP)
 
 Niestandardowe obiekty docelowe pozwala wdrożyć aplikację na docelowym niż w usłudze Azure App Service, Azure Virtual Machines lub lokalnego systemu plików. System plików lub dowolnego innego serwera (Internet lub Intranet) do którego masz dostęp, włączając te na innych usługach w chmurze można wdrożyć. Można pracować w sieci web wdrażanie (plików lub. ZIP) i FTP.
 
-Podczas wybierania niestandardowe obiekty docelowe, Visual Studio wyświetli monit o podanie nazwa profilu, a następnie zbieranie dodatkowych **połączenia** informacje w tym serwera docelowego lub lokalizacji, nazwa witryny i poświadczenia. Możesz kontrolować następujące zachowania na **ustawienia** karty:
+W przypadku wybrania niestandardowego celu program Visual Studio poprosi o podanie nazwy profilu, a następnie zbiera dodatkowe informacje o **połączeniu** , w tym serwer docelowy lub lokalizację, nazwę lokacji i poświadczenia. Na karcie **Ustawienia** można kontrolować następujące zachowania:
 
 - Konfiguracja, który chcesz wdrożyć.
 - Czy chcesz usunąć istniejące pliki z miejsca docelowego.
@@ -110,15 +110,15 @@ Można utworzyć dowolną liczbę profilów wdrażania niestandardowego w progra
 - Chcesz wdrożyć, korzystając z poświadczeń innych niż te, które można używać w programie Visual Studio lub te bezpośrednio związane z Twojego konta platformy Azure.
 - Chcesz usunąć pliki z docelowym każdorazowo, gdy wdrożysz.
 
-Aby uzyskać więcej informacji, zobacz [Szybki Start — wdrażanie w witrynie sieci web](quickstart-deploy-to-a-web-site.md)
+Aby uzyskać więcej informacji, zobacz [Przewodnik Szybki Start — wdrażanie w witrynie sieci Web](quickstart-deploy-to-a-web-site.md) .
 
 ## <a name="next-steps"></a>Następne kroki
 
 Samouczki:
 
-- [Wdrażanie aplikacji .NET Core za pomocą narzędzia publikowania](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publikowanie aplikacji platformy ASP.NET core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Wdrażanie aplikacji .NET Core za pomocą narzędzia do publikowania](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publikowanie aplikacji ASP.NET Core na platformie Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Wdrażanie w Visual C++](/cpp/windows/deployment-in-visual-cpp)
-- [Wdrażanie aplikacji platformy uniwersalnej systemu Windows](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publikowanie aplikacji w języku Node.js na platformie Azure, za pomocą narzędzia Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Publikowanie aplikacji w języku Python w usłudze Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Wdrażanie aplikacji platformy UWP](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publikowanie aplikacji node. js na platformie Azure przy użyciu Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+- [Publikowanie aplikacji w języku Python w celu Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

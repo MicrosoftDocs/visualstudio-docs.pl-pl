@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587059"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408571"
 ---
 # <a name="add-new-data-sources"></a>Dodawanie nowych źródeł danych
 

@@ -1,6 +1,6 @@
 ---
-title: Opcje narzędzia języka R
-description: Odwołanie do opcji w programie Visual Studio dla języka R i skojarzone funkcji.
+title: Opcje narzędzi języka R
+description: Informacje dotyczące opcji w programie Visual Studio dla języka R i skojarzonych funkcji.
 ms.date: 12/04/2017
 ms.topic: reference
 f1_keywords:
@@ -14,117 +14,117 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999041"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409645"
 ---
-# <a name="r-tools-for-visual-studio-options"></a>Narzędzia języka R dla programu Visual Studio, opcje
+# <a name="r-tools-for-visual-studio-options"></a>Opcje R Tools for Visual Studio
 
-Ustawienia są dostępne za pośrednictwem **R Tools** > **opcje** menu lub za pomocą **narzędzia** > **opcje** i przewijając do **R Tools**:
+Ustawienia są dostępne za pomocą menu **Opcje** **narzędzia R Tools** > lub **narzędzi** > **Opcje** i przewijania do **narzędzi języka r**:
 
-  ![Okno dialogowe Opcje dla narzędzia języka R](media/options-dialog.png)
+  ![Okno dialogowe opcji dla narzędzi R Tools](media/options-dialog.png)
 
-Opcje i ustawienia specyficzne dla języka R są dostępne przy użyciu poniższych metod. Musisz wybrać **Pokaż wszystkie ustawienia** u dołu **opcje** wszystkie te sekcje się pojawić okno dialogowe.
+Opcje i ustawienia specyficzne dla języka R są dostępne przy użyciu poniższych metod. Należy zaznaczyć pole wyboru **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego **Opcje** dla wszystkich tych sekcji do wyświetlenia.
 
-- Opcje formatowania kodu (zobacz [opcji edytora](editing-r-code-in-visual-studio.md#editor-options): **Narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów** > **R** > **formatowania**
-- Opcje linter (zobacz [Zaznaczanie błędów](linting-r-code.md)): **Narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów** > **R** > **Lint**
-- Zaawansowane opcje edytora ([opisanych w tym artykule](#text-editor--r--advanced-options)): **Narzędzia** > **opcje** menu, następnie wybierz pozycję **edytora tekstów** > **R** > **zaawansowane**
-- Opcje zachowania ([opisanych w tym artykule](#r-tools--advanced-options)): **Narzędzia języka R** > **opcje** menu lub **narzędzia** > **opcje**, następnie przewiń listę do **R Tools**.
+- Opcje formatowania kodu (zobacz [Opcje edytora](editing-r-code-in-visual-studio.md#editor-options): **Narzędzia** > menu **Opcje** , a następnie wybierz **Edytor tekstu** > **R** > **Formatowanie**
+- Opcje Linter (zobacz [Zaznaczanie błędów](linting-r-code.md)): **Narzędzia** > menu **Opcje** , a następnie wybierz **Edytor tekstu** > **R** > **lint**
+- Zaawansowane opcje edytora ([opisane w tym artykule](#text-editor--r--advanced-options)): **Narzędzia** > menu **Opcje** , a następnie wybierz **Edytor tekstu** > **R** > **Zaawansowane**
+- Opcje behawioralne ([opisane w tym artykule](#r-tools--advanced-options)): **narzędzia R Tools** > menu **Opcje** lub **Narzędzia** > **Opcje**, a następnie przewiń do **Narzędzia R Tools**.
 
-**R Tools** > **ustawienia do nauki o danych** polecenie ma również wpływ na wiele różnych ustawień w programie Visual Studio ogólną. To polecenie jest opisane w następnej sekcji.
+Polecenie **R Tools** > **nauka o danych — ustawienia** ma także wpływ na wiele różnych ustawień w programie Visual Studio. To polecenie zostało opisane w następnej sekcji.
 
 <a name="data-scientist-layout"></a>
 
-## <a name="r-tools--data-science-settings"></a>Narzędzia języka R > Ustawienia do nauki o danych
+## <a name="r-tools--data-science-settings"></a>Narzędzia R > Nauka o danych — ustawienia
 
-**R Tools > Ustawienia do nauki o danych** elementu menu powoduje skonfigurowanie środowiska IDE programu Visual Studio za pomocą układu, który jest zoptymalizowany pod kątem potrzeb naukowców pracujących. W szczególności, ta opcja umożliwia otwarcie [Interactive](interactive-repl-for-r-in-visual-studio.md), [narzędzie Variable Explorer](variable-explorer.md), i [obszary robocze](r-workspaces-in-visual-studio.md) systemu windows:
+Element menu **> narzędzia R Tools nauka o danych — ustawienia** KONFIGURUJE środowisko IDE programu Visual Studio z układem zoptymalizowanym pod kątem potrzeb analityków danych. W przypadku tej opcji program otwiera okna [interakcyjne](interactive-repl-for-r-in-visual-studio.md), [Eksplorator zmiennych](variable-explorer.md)i [obszary robocze](r-workspaces-in-visual-studio.md) :
 
-![Układ okna naukowego przetwarzania danych w programie Visual Studio](media/installation-data-scientist-layout-result.png)
+![Układ okna analityków danych w programie Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Aby później przywrócić pozostałe ustawienia programu Visual Studio, należy najpierw użyć **narzędzia** > **Import i eksport ustawień** polecenia select **Eksportuj wybrane ustawienia środowiska**, a następnie określ nazwę pliku. Aby przywrócić te ustawienia, użyj tego samego polecenia, a następnie wybierz pozycję **Importuj ustawienia wybranego środowiska**. Również można użyć tych samych poleceń, jeśli zmienisz układ naukowego przetwarzania danych, a chcesz do niej powrócić w późniejszym czasie na zamiast używania **ustawienia do nauki o danych** polecenia bezpośrednio.
+Aby później wrócić do innych ustawień programu Visual Studio, należy najpierw użyć **narzędzi** > **Importuj i Eksportuj ustawienia** , wybrać opcję **Eksportuj wybrane ustawienia środowiska**i określić nazwę pliku. Aby przywrócić te ustawienia, użyj tego samego polecenia i wybierz opcję **Importuj wybrane ustawienia środowiska**. Możesz również użyć tych samych poleceń, jeśli zmienisz układ Analityka danych i chcesz wrócić do niego później, zamiast używać polecenia **nauka o danych — ustawienia** .
 
-## <a name="text-editor--r--advanced-options"></a>Edytor tekstu > R > Opcje zaawansowane
+## <a name="text-editor--r--advanced-options"></a>Edytor tekstu > opcji R > Advanced
 
-Te opcje umożliwiają kontrolowanie zachowania formatowania, funkcji IntelliSense, tworzenie konspektu, wcięcia i składnia sprawdzania pod kątem języka R.
+Opcje te kontrolują zachowanie formatowania, IntelliSense, konspekt, wcięcia i sprawdzanie składni dla języka R.
 
-![Okno dialogowe Opcje dla opcji edytora zaawansowanego tekstu R](media/options-dialog-advanced-text-editor.png)
+![Okno dialogowe Opcje zaawansowane opcje edytora tekstu R](media/options-dialog-advanced-text-editor.png)
 
-Każda opcja jest równa lub wyłącz do sterowania zachowaniem w danym. Szczegółowe informacje dotyczące wpływa na każdej opcji Przyjrzyj się okienku pomocy w dolnej części okna dialogowego. Należy pamiętać, że można przeciągnąć górnej części okienka Pomocy do okienka większych upewnij.
+Każda opcja jest ustawiona na wartość włączone lub wyłączone w celu sterowania zachowaniem. Aby uzyskać szczegółowe informacje na temat tego, co ma wpływ na poszczególne opcje, zobacz okienko pomocy u dołu okna dialogowego. Pamiętaj, że możesz przeciągnąć górną część tego okienka pomocy, aby okienko było większe.
 
-![Rozwinięte okienko pomocy w oknie dialogowym Zaawansowane opcje edytora tekstowego języka R](media/options-dialog-advanced-text-editor2.png)
+![Rozwinięte okienko pomocy w oknie dialogowym Opcje zaawansowane edytora tekstu w języku R](media/options-dialog-advanced-text-editor2.png)
 
-## <a name="r-tools--advanced-options"></a>Narzędzia języka R > Opcje zaawansowane
+## <a name="r-tools--advanced-options"></a>Narzędzia R > Opcje zaawansowane
 
-**R Tools** > **opcje** polecenie menu otwiera **opcje** okno dialogowe Opcje języka R:
+Polecenie **r Tools** > **Opcje** menu spowoduje otwarcie okna dialogowego **Opcje** do opcji r:
 
-  ![Okno dialogowe Opcje dla narzędzia języka R](media/options-dialog.png)
+  ![Okno dialogowe opcji dla narzędzi R Tools](media/options-dialog.png)
 
-Poniżej opisano różne opcje dostępne na tej stronie.
+W poniższych sekcjach opisano różne opcje dostępne na tej stronie.
 
 ### <a name="debugging"></a>Debugowanie
 
-Te opcje umożliwiają kontrolowanie sposobu obsługi wartości w [narzędzie Variable Explorer](variable-explorer.md) i w oknach debugera, takie jak wyrażenie kontrolne i lokalne (zobacz [kod R debugowania](debugging-r-in-visual-studio.md)).
+Te opcje kontrolują sposób obsługi wartości w [Eksplorator zmiennych](variable-explorer.md) i w oknach debugera, takich jak Watch i lokalne (zobacz [Debugowanie kodu R](debugging-r-in-visual-studio.md)).
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Oceń aktywne powiązania | `True` | Gdy `True`, zapewnia zawsze wyświetlić najbardziej aktualne wartości podczas sprawdzania zmiennych i właściwości. Ryzyko jest tego obliczenia, które wyrażeń może spowodować, że efekty uboczne, w zależności od tego, jak zostały zaimplementowane. |
-| Wyświetlanie zmiennych poprzedzone kropką | `False` | Określa, czy zmienne prefiksem `.` są wyświetlane. |
+| Oceń aktywne powiązania | `True` | Gdy `True`, zapewnia zawsze aktualną wartość podczas inspekcji zmiennych i właściwości. Ryzyko polega na tym, że Ocena wyrażeń może spowodować efekty uboczne, w zależności od tego, jak zostały zaimplementowane. |
+| Pokaż zmienne z prefiksami z kropką | `False` | Określa, czy są wyświetlane zmienne poprzedzone prefiksem `.`. |
 
 ### <a name="grid-view"></a>Widok siatki
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Obliczanie dynamiczne | `False` | Domyślnie `View(<expression>)` funkcja tworzy migawkę danych jako ramkę danych, która może zużywać znaczną pamięć z dużymi zestawami danych. Ustawienie tej opcji na `True` oznacza, że wyrażenie jest oceniane podczas odświeżania siatki w celu pobrania tylko tych danych, która jest wyświetlana. Jednak jeśli zmiany wyrażeń również zmieniają się dane, które może być nieodpowiedni dla dplyr pip wyrażeń. |
+| Obliczanie dynamiczne | `False` | Domyślnie funkcja `View(<expression>)` wykonuje migawkę danych jako ramkę danych, co może zużywać znaczną ilość pamięci z dużymi zestawami danych. Ustawienie tej opcji na `True` oznacza, że wyrażenie jest oceniane, gdy siatka zostanie odświeżona w celu pobrania tylko tych danych, które są wyświetlane. Jeśli jednak wyrażenie zmieni również zmiany danych, które mogą być nieodpowiednie dla wyrażeń PIP dplyr. |
 
-### <a name="help"></a>Help
+### <a name="help"></a>Pomoc
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Przeglądarki sieci Web F1 | `Internal` | Określa, jak uzyskać pomoc jest wyświetlane, gdy wyszukiwany termin, w którym używana jest **Ctrl**+**F1**. Po ustawieniu `Internal`, pomoc jest renderowany w oknie narzędzi w programie Visual Studio. Po ustawieniu `External`, Pomoc pojawia się w domyślnej przeglądarce internetowej. |
-| F1 Ciąg wyszukiwania w sieci Web | `R site:stackoverflow.com` | Określa, jak wyszukiwane terminy są przekazywane do aparat wyszukiwania, po naciśnięciu klawisza **Ctrl**+**F1** dla terminu w edytorze. Domyślnie ten ciąg jest `R site:stackoverflow.com`, która dołącza `R` do wyszukiwanego terminu. `site:stackoverflow.com` Jest dyrektywą do wyszukiwarki, który nakazuje, aby zawęzić zakres wyszukiwania do stron w `stackoverflow.com` domeny. |
-| Przeglądarka Pomocy języka R | `Automatic` | Określa, jak uzyskać pomoc jest wyświetlane, gdy w przypadku wyszukiwania przy użyciu dokumentacji języka R **F1**, **?**, lub **?** . Po ustawieniu `Automatic`, Pomoc powoduje wyświetlenie odpowiedniego okna. Na przykład pomocy HTML pojawia się w obrębie okna narzędzi programu Visual Studio, pliki PDF znajdują się w domyślnym programie PDF. Po ustawieniu `External`, pomoc jest wyświetlana w domyślnej przeglądarce internetowej. |
+| Przeglądarka sieci Web F1 | `Internal` | Kontroluje sposób wyświetlania pomocy podczas wyszukiwania terminu przy użyciu **klawisza Ctrl**+**F1**. Po ustawieniu na `Internal`pomoc jest renderowana w oknie narzędzia w programie Visual Studio. Po ustawieniu na `External`pomoc pojawia się w domyślnej przeglądarce sieci Web. |
+| Ciąg wyszukiwanie w sieci Web F1 | `R site:stackoverflow.com` | Kontroluje, jak terminy wyszukiwania są przesyłane do aparatu wyszukiwania po naciśnięciu klawisza **Ctrl**+**F1** w okresie w edytorze. Domyślnie ciąg jest `R site:stackoverflow.com`, który dołącza `R` do wyszukiwanego terminu. `site:stackoverflow.com` jest dyrektywą do aparatu wyszukiwania, która informuje go o zakresie wyszukiwania do stron w domenie `stackoverflow.com`. |
+| Przeglądarka Pomoc dla języka R | `Automatic` | Kontroluje sposób wyświetlania pomocy podczas wyszukiwania dokumentacji języka R przy użyciu **klawisza F1**, **?** lub **?** . Po ustawieniu na `Automatic`, program Help renderuje w odpowiednim oknie. Na przykład Pomoc HTML pojawia się w oknie narzędzia programu Visual Studio, a pliki PDF pojawiają się w domyślnym programie PDF. Po ustawieniu na `External`pomoc jest renderowana w domyślnej przeglądarce sieci Web. |
 
 ### <a name="history"></a>Historia
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Zawsze zapisuj historii | `True` | Określa, czy RTVS zapisuje historii poleceń do *. RHistory* pliku w katalogu roboczym, gdy projekt jest zamknięty. Zapisywanie historii odbywa się nawet wtedy, gdy nie można zapisać projekt, przed zakończeniem pracy. |
-| Zresetuj filtr wyszukiwania | `True` | Określa, czy okno Historia można filtrować historii poleceń, aby pokazać tylko polecenia, które podciąg dopasowywania termin z filtru w oknie dialogowym historie R. To ustawienie określa, czy chcesz zresetować filtr wyszukiwania historii zawsze wtedy, gdy nowe polecenie lub przełącz się do nowego projektu, co powoduje wyzwolenie obciążenia innego *. RHistory* pliku. Domyślne ustawienie `True` minimalizuje Zaskoczenie, gdy należy uruchomić polecenie z zestaw filtrów więc trzeba sprawdzić, dlaczego polecenie uruchomienia tylko widoczne nie w historii. |
-| Używanie opcji wyboru z wielowierszowym | `True` | Określa, czy oświadczenie wielowierszowego pola można wybrać w historii za pomocą jednego kliknięcia. Umożliwia także strzałkę nawigacji po kodzie w Windows interakcyjnego w górę/w dół instrukcji zamiast wierszy. |
+| Zawsze Zapisuj historię | `True` | Kontroluje, czy RTVS zapisuje historię poleceń do *. RHistory* plik w katalogu roboczym za każdym razem, gdy projekt jest zamknięty. Zapisywanie historii jest wykonywane nawet wtedy, gdy projekt nie zostanie zapisany przed zakończeniem pracy. |
+| Resetuj filtr wyszukiwania | `True` | Określa, czy okno historii może odfiltrować historię poleceń, aby wyświetlić tylko te polecenia, które są zgodne z terminem filtru w oknie dialogowym Historia poleceń w języku R. To ustawienie określa, czy należy zresetować filtr wyszukiwania historii za każdym razem, gdy zostanie uruchomione nowe polecenie lub przejdziesz do nowego projektu, który wyzwala obciążenie innego *. Plik RHistory* . Ustawienie domyślne `True` minimalizuje nieoczekiwane działanie, gdy uruchamiasz polecenie z zestawem filtrów i zastanawiasz się, dlaczego uruchomione polecenie nie było widoczne w historii. |
+| Użyj wyboru wielowierszowego | `True` | Określa, czy można wybrać wielowierszową instrukcję w historii przy użyciu jednego kliknięcia. Włącza również nawigację w górę i w dół w oknach interaktywnych przez instrukcje zamiast wierszy. |
 
 ### <a name="html"></a>HTML
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Przeglądarki strony HTML | `External` | Określa, gdzie zawartości, takie jak `ggvis` wykres, lub `shiny` aplikacji jest renderowany. `Internal` przedstawia dane wyjściowe HTML w obrębie okna narzędzi w programie Visual Studio; `External` wyświetla dane wyjściowe HTML w domyślnej przeglądarce. |
+| Przeglądarka stron HTML | `External` | Określa miejsce, w którym jest renderowana zawartość, taka jak `ggvis` lub `shiny` aplikacji. `Internal` wyświetla dane wyjściowe HTML w oknie narzędzia w programie Visual Studio; `External` wyświetla dane wyjściowe HTML w domyślnej przeglądarce. |
 
 ### <a name="logging"></a>Rejestrowanie
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Dziennik zdarzeń | `Normal` | Określa poziom szczegółowości rejestrowania umożliwiający RTVS diagnostyki. Domyślne ustawienie `Normal` tworzy plik dziennika w swojej `TEMP` katalogu. Po ustawieniu `Traffic`, RTVS rejestruje wszystkie polecenia i odpowiedzi w sesji. Te pliki dziennika nigdy nie należy pozostawić komputer, ale mogą być przydatne do diagnozowania problemów w RTVS. |
+| Zdarzenia dziennika | `Normal` | Steruje szczegółowością rejestrowania używanego na potrzeby diagnostyki RTVS. Domyślne ustawienie `Normal` tworzy plik dziennika w katalogu `TEMP`. Po ustawieniu na `Traffic`, RTVS rejestruje wszystkie polecenia i odpowiedzi w sesji. Te pliki dziennika nigdy nie opuszczają maszyny, ale mogą być przydatne do diagnozowania problemów w RTVS. |
 
 ### <a name="markdown"></a>Markdown
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Przeglądarka Podgląd języka markdown | `External` | Określa, w którym będą wyświetlane dane wyjściowe RMarkdown HTML. `Internal` Pokazuje dokumentu RMarkdown HTML, w ramach okna narzędzi w programie Visual Studio; `External` Wyświetla HTML RMarkdown za pomocą domyślnej przeglądarki. |
+| Przeglądarka promocji — wersja zapoznawcza | `External` | Określa, gdzie jest wyświetlane dane wyjściowe HTML RMarkdown. `Internal` przedstawia dokument HTML RMarkdown w oknie narzędzia w programie Visual Studio; `External` wyświetla HTML RMarkdown przy użyciu domyślnej przeglądarki. |
 
 ### <a name="r-engine"></a>Aparat języka R
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Strona kodowa | `(OS Default)` | Ustawia stronę kodową (ustawienia regionalne) dla języka R. Domyślnie używa podstawowych ustawień regionalnych systemu operacyjnego. |
-| Dublowanie CRAN | `(Use .Rprofile)` | Ustawia dublowanie CRAN domyślny, w ramach instalacji pakietów. Domyślne ustawienie `Use .Rprofile` uwzględnia ustawienia CRAN dublowane w swojej *. RProfile* pliku. |
+| Strona kodowa | `(OS Default)` | Ustawia stronę kodową (ustawienia regionalne) dla języka R. Domyślnie używa on podstawowych ustawień regionalnych systemu operacyjnego. |
+| CRAN dublowanie | `(Use .Rprofile)` | Ustawia domyślne dublowanie CRAN dla instalacji pakietów. Domyślne ustawienie `Use .Rprofile` uwzględnia ustawienia dublowania CRAN w *. Plik RProfile* . |
 
 ### <a name="workspace"></a>Obszar roboczy
 
 | Opcja | Wartość domyślna | Opis |
 | --- | --- | --- |
-| Załaduj obszar roboczy, po otwarciu projektu | `No` | Ustawienie `Yes` umożliwia ładowanie danych sesji z *. Dane_rekordu* plików w środowisku globalnym, po otwarciu projektu. |
-| Monit o zapisanie obszar roboczy w przypadku zresetowania | `Yes` | Ustawienie `No` wyłącza monitowania o zapisywanie obszaru roboczego, po kliknięciu przycisku resetowania w oknie interaktywnym. |
-| Zapisywanie obszaru roboczego po zamknięciu projektu | `No` | Ustawienie `Yes` umożliwia zapisywanie w środowisku globalnym, aby *. Dane_rekordu* plików, gdy projekt jest zamknięty. |
-| Pokaż okno dialogowe potwierdzenia przed przełączeniem obszarów roboczych | `Yes` | Ustawienie `No` Wyłącza monitowanie użytkownika o potwierdzenie podczas przełączania między różnych obszarów roboczych. Zobacz [przełączać się między obszarami roboczymi](r-workspaces-in-visual-studio.md#switch-between-workspaces) |
-| Pokaż wskaźnik obciążenia maszyny | `False` | Określa widoczność wskaźnika obciążenia procesora CPU i pamięci/sieci na pasku stanu. Ponieważ wskaźnik ponosi ruchu sieciowego, warto zachować `False` w scenariuszach mierzonego zdalnego. Zmiana ta opcja wymaga, uruchom ponownie program Visual Studio. |
+| Załaduj obszar roboczy podczas otwierania projektu | `No` | Ustawienie `Yes` umożliwia ładowanie danych sesji z programu *. RData* plik w środowisku globalnym, gdy projekt jest otwarty. |
+| Monituj o zapisanie obszaru roboczego przy resetowaniu | `Yes` | Ustawienie `No` Wyłącza monitowanie o zapisanie obszaru roboczego po kliknięciu przycisku Resetuj w oknie interaktywnym. |
+| Zapisz obszar roboczy po zamknięciu projektu | `No` | Ustawienie `Yes` umożliwia zapisanie środowiska globalnego na *. Plik RData* , gdy projekt jest zamknięty. |
+| Pokaż okno dialogowe potwierdzenia przed przełączeniem obszarów roboczych | `Yes` | Ustawienie `No` Wyłącza monitowanie użytkownika o potwierdzenie podczas przełączania różnych obszarów roboczych. Zobacz [przełączanie między obszarami roboczymi](r-workspaces-in-visual-studio.md#switch-between-workspaces) |
+| Pokaż wskaźnik obciążenia maszyny | `False` | Kontroluje widoczność wskaźnika obciążenia procesora/pamięci/sieci na pasku stanu. Ponieważ wskaźnik wiąże się z ruchem sieciowym, warto zachować ten `False` w scenariuszach taryfowych. Zmiana tej opcji wymaga ponownego uruchomienia programu Visual Studio. |

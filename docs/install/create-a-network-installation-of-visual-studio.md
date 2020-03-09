@@ -16,15 +16,15 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115374"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410106"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
-Zazwyczaj administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdrożenia na stacjach roboczych klienta. Zaprojektowano program Visual Studio, aby umożliwić buforowanie plików dla początkowej instalacji wraz ze wszystkimi aktualizacjami produktów w jednym folderze. (Ten proces jest również określany jako _tworzenie układu_.)
+Zazwyczaj administrator przedsiębiorstwa tworzy punkt instalacji sieci do wdrożenia na stacjach roboczych klienta. Zaprojektowano program Visual Studio, aby umożliwić buforowanie plików dla początkowej instalacji wraz ze wszystkimi aktualizacjami produktów w jednym folderze. (Ten proces jest również określany jako _Tworzenie układu_).
 
 Firma Microsoft wykonane to dlatego, że stacje robocze klienta można użyć tej samej lokalizacji sieci do zarządzania ich instalacji, nawet jeśli ich jeszcze nie zostało zaktualizowane do obsługi najnowszej aktualizacji.
 
@@ -43,8 +43,8 @@ Plik wykonywalny instalatora&mdash;lub być bardziej specyficzny,&mdash;pliku pr
 
 | Wersja | Nazwa pliku |
 |-------------|-----------------------|
-|Visual Studio Enterprise | **vs_enterprise.exe** |
-|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Enterprise | **vs_enterprise. exe** |
+|Visual Studio Professional | **vs_professional. exe** |
 |Visual Studio Build Tools   | **vs_buildtools. exe** |
 
 Inne obsługiwane programu inicjujące obejmują **vs_feedbackclient. exe**, **vs_TeamExplorer. exe**, **vs_testagent. exe**, **vs_testcontroller. exe**i **vs_testprofessional. exe**.
@@ -57,8 +57,8 @@ Plik wykonywalny instalatora&mdash;lub być bardziej specyficzny,&mdash;pliku pr
 
 |Wersja | Pobieranie|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Enterprise | [**vs_enterprise. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Professional | [**vs_professional. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 | Visual Studio Build Tools   | [**vs_buildtools. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
 Inne obsługiwane programu inicjujące obejmują [vs_TeamExplorer. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe), [vs_testagent. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)i [vs_testcontroller. exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe).
@@ -76,7 +76,7 @@ Musi mieć połączenie internetowe, aby ukończyć ten krok. Aby utworzyć inst
    > Pełny układ programu Visual Studio wymaga co najmniej 35 GB miejsca na dysku, co może potrwać trochę czasu. Zobacz sekcję [Dostosowywanie układu sieciowego](#customize-the-network-layout) , aby uzyskać szczegółowe informacje na temat sposobu tworzenia układu z tylko składnikami, które chcesz zainstalować.
    >
    > [!TIP]
-   > Upewnij się, uruchom polecenie z katalogu pobierania. Zwykle to `C:\Users\<username>\Downloads` na komputerze z systemem Windows 10.
+   > Upewnij się, uruchom polecenie z katalogu pobierania. Zwykle jest to `C:\Users\<username>\Downloads` na komputerze z systemem Windows 10.
 
 - For Visual Studio Enterprise, run:
 
@@ -88,7 +88,7 @@ Musi mieć połączenie internetowe, aby ukończyć ten krok. Aby utworzyć inst
 
 ## <a name="modify-the-responsejson-file"></a>Zmodyfikuj plik response.json
 
-Można zmodyfikować response.json, aby ustawić wartości domyślne, które są używane po uruchomieniu Instalatora.  Na przykład, można skonfigurować `response.json` pliku, aby wybrać określony zbiór obciążeń wybrana automatycznie. Zobacz [instalacji automatyzacji programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md) Aby uzyskać szczegółowe informacje.
+Można zmodyfikować response.json, aby ustawić wartości domyślne, które są używane po uruchomieniu Instalatora.  Na przykład można skonfigurować plik `response.json`, aby wybrać określony zestaw obciążeń automatycznie. Aby uzyskać szczegółowe informacje [, zobacz Automatyzowanie instalacji programu Visual Studio z plikiem odpowiedzi](automated-installation-with-response-file.md) .
 
 W przypadku wystąpienia problemu z programem inicjującym programu Visual Studio, który zgłasza błąd podczas parowania z plikiem Response. JSON, zobacz sekcję "nie można przeanalizować identyfikatora z procesu nadrzędnego" w temacie [Rozwiązywanie problemów związanych z siecią podczas instalowania lub używania strony programu Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) , aby uzyskać więcej informacji na temat tego, co należy zrobić.
 
@@ -121,12 +121,12 @@ xcopy /e c:\VSLayout \\server\products\VS2019
 
 ## <a name="customize-the-network-layout"></a>Dostosuj układ sieci
 
-Istnieje kilka opcji, których można użyć w celu dostosowania układu sieci. Można utworzyć częściowe układ, który zawiera tylko określony zbiór [ustawień regionalnych języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [obciążeń, składniki i ich zależności zalecane lub opcjonalne](workload-and-component-ids.md). Może to być przydatne, Jeśli wiesz, że zamierzasz wdrożyć tylko podzestaw obciążeń na stacjach roboczych klientów. Typowe parametry wiersza polecenia dla dostosowywania układu obejmują:
+Istnieje kilka opcji, których można użyć w celu dostosowania układu sieci. Można utworzyć układ częściowy, który zawiera tylko określony zestaw [ustawień regionalnych języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [obciążeń, składników i ich zalecanych lub opcjonalnych zależności](workload-and-component-ids.md). Może to być przydatne, Jeśli wiesz, że zamierzasz wdrożyć tylko podzestaw obciążeń na stacjach roboczych klientów. Typowe parametry wiersza polecenia dla dostosowywania układu obejmują:
 
-* `--add` Aby określić [obciążenia lub składnika ID](workload-and-component-ids.md). <br>Jeśli `--add` jest używany, te obciążenia i składniki określony za pomocą `--add` zostaną pobrane.  Jeśli `--add` nie jest używany, wszystkie obciążenia i składniki zostaną pobrane.
-* `--includeRecommended` Aby uwzględnić wszystkie składniki zalecane dla określonego obciążenia identyfikatorów
-* `--includeOptional` Aby uwzględnić wszystkie składniki zalecanych i opcjonalnych dla określonego obciążenia identyfikatorów.
-* `--lang` Aby określić [ustawień regionalnych języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+* `--add` określić [obciążenia lub identyfikatory składników](workload-and-component-ids.md). <br>Jeśli zostanie użyta `--add`, pobierane są tylko te obciążenia i składniki określone z `--add`.  Jeśli `--add` nie jest używany, wszystkie obciążenia i składniki zostaną pobrane.
+* `--includeRecommended`, aby uwzględnić wszystkie zalecane składniki dla określonych identyfikatorów obciążeń
+* `--includeOptional`, aby uwzględnić wszystkie zalecane i opcjonalne składniki dla określonych identyfikatorów obciążeń.
+* `--lang`, aby określić [Ustawienia regionalne języka](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
 
 Poniżej przedstawiono kilka przykładów sposobu tworzenia niestandardowego układu częściowe.
 
@@ -222,11 +222,11 @@ Administratorzy mogą wdrożyć Visual Studio na klienckich stacjach roboczych w
 > Aby zapobiec wystąpieniu błędu, upewnij się, że pełna ścieżka układu jest krótsza niż 80 znaków.
 
 > [!TIP]
-> Gdy wykonywane w ramach pliku wsadowego `--wait` opcji zapewnia, że `vs_enterprise.exe` proces będzie czekał instalacja została zakończona, zanim zwraca kod zakończenia.
+> Podczas wykonywania jako część pliku wsadowego, opcja `--wait` zapewnia, że proces `vs_enterprise.exe` czeka na zakończenie instalacji, zanim zwróci kod zakończenia.
 >
-> Jest to przydatne, jeśli administrator przedsiębiorstwa chce, aby wykonać dalsze czynności na Zakończono instalowanie (na przykład, aby [zastosować klucz produktu do pomyślnej instalacji](automatically-apply-product-keys-when-deploying-visual-studio.md)), ale musi czekać na zakończenie obsługi instalacji Zwrócony kod z tej instalacji.
+> Jest to przydatne, jeśli administrator przedsiębiorstwa chce wykonać dalsze działania w ramach ukończonej instalacji (na przykład w celu [zastosowania klucza produktu do pomyślnej instalacji](automatically-apply-product-keys-when-deploying-visual-studio.md)), ale musi poczekać na zakończenie instalacji, aby obsłużyć kod powrotny z tej instalacji.
 >
-> Jeśli nie używasz `--wait`, `vs_enterprise.exe` proces kończy się przed instalacja została zakończona i zwraca kod zakończenia niedokładne, która nie zawiera stanu operacji instalacji.
+> Jeśli nie używasz `--wait`, proces `vs_enterprise.exe` zostanie zakończony przed ukończeniem instalacji i zwróci niewłaściwy kod zakończenia, który nie reprezentuje stanu operacji instalacji.
 >
 
 ::: moniker range="vs-2019"
@@ -235,20 +235,20 @@ Administratorzy mogą wdrożyć Visual Studio na klienckich stacjach roboczych w
 >
 ::: moniker-end
 
-Podczas instalacji z układu, zawartość, która jest zainstalowana jest uzyskiwany z układu. Jednak w przypadku wybrania składnika, który nie jest w układzie, zostanie on pobrany z Internetu.  Jeśli chcesz uniemożliwić pobranie żadnej zawartości, których brakuje w układzie, użyj Instalatora programu Visual Studio `--noWeb` opcji. Jeśli `--noWeb` jest używany i układu nie ma żadnej zawartości, który został wybrany do zainstalowania, Instalator zakończy się niepowodzeniem.
+Podczas instalacji z układu, zawartość, która jest zainstalowana jest uzyskiwany z układu. Jednak w przypadku wybrania składnika, który nie jest w układzie, zostanie on pobrany z Internetu.  Aby uniemożliwić pobranie przez Instalatora programu Visual Studio żadnej zawartości, której brakuje w układzie, użyj opcji `--noWeb`. Jeśli `--noWeb` jest używany, a układ nie zawiera żadnej zawartości wybranej do zainstalowania, instalacja zakończy się niepowodzeniem.
 
 > [!IMPORTANT]
 > Opcja `--noWeb` nie zatrzymuje sprawdzania dostępności aktualizacji przez Instalatora programu Visual Studio. Aby uzyskać więcej informacji, zobacz stronę [sterowanie aktualizacjami w przypadku sieci opartych na programie Visual Studio](controlling-updates-to-visual-studio-deployments.md) .
 
 ### <a name="error-codes"></a>Kody błędów
 
-Jeśli użyto `--wait` parametru, a następnie w zależności od wyniku operacji, `%ERRORLEVEL%` zmienna środowiskowa jest ustawiony na jedną z następujących wartości:
+Jeśli użyto `--wait` parametru, a następnie w zależności od wyniku operacji, zmienna środowiskowa `%ERRORLEVEL%` jest ustawiana na jedną z następujących wartości:
 
 [!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Aktualizowanie układu instalacji sieciowej
 
-Podczas aktualizacji produktów są dostępne, może okazać się konieczne [aktualizowanie układu instalacji sieciowej](update-a-network-installation-of-visual-studio.md) zestawowi zaktualizowane pakiety.
+Gdy aktualizacje produktów staną się dostępne, warto [zaktualizować układ instalacji sieci](update-a-network-installation-of-visual-studio.md) w celu uwzględnienia zaktualizowanych pakietów.
 
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-release"></a>Jak utworzyć układ poprzedniej wersji programu Visual Studio
 
@@ -278,18 +278,18 @@ Jeśli musisz utworzyć układ dla starszej wersji programu Visual Studio, przej
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Jak uzyskać pomoc techniczną dla Instalatora w trybie offline
 
-Jeśli wystąpi problem z instalacją w trybie offline, chcielibyśmy się dowiedzieć o nim. Najlepszym sposobem, aby przekazać nam polega na użyciu [Zgłoś Problem](../ide/how-to-report-a-problem-with-visual-studio.md) narzędzia. Korzystając z tego narzędzia, możesz wysłać nam telemetrii i dzienniki, musimy pomóc nam zdiagnozować i rozwiązać problem.
+Jeśli wystąpi problem z instalacją w trybie offline, chcielibyśmy się dowiedzieć o nim. Najlepszym sposobem na poinformowanie nas jest użycie narzędzia [Zgłoś problem](../ide/how-to-report-a-problem-with-visual-studio.md) . Korzystając z tego narzędzia, możesz wysłać nam telemetrii i dzienniki, musimy pomóc nam zdiagnozować i rozwiązać problem.
 
-Oferujemy również [ **Czat na żywo** ](https://visualstudio.microsoft.com/vs/support/#talktous) opcję pomocy technicznej (tylko język angielski) w przypadku problemów związanych z instalacją.
+Oferujemy również opcję obsługi [**rozmowy na żywo**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) dla problemów związanych z instalacją.
 
 Inne opcje pomocy technicznej dostępne, mamy zbyt. Listę można znaleźć na naszej stronie [opinii](../ide/feedback-options.md) .
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
+- [Przewodnik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 - [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 - [Rozwiązywanie problemów związanych z siecią podczas instalowania programu Visual Studio lub korzystania z niego](troubleshooting-network-related-errors-in-visual-studio.md)
-- [Sterowanie aktualizacjami na potrzeby wdrożenia oparte na sieci programu Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+- [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
 - [Cykl życia produktu Visual Studio i obsługa](/visualstudio/releases/2019/servicing/)
 - [Aktualizowanie programu Visual Studio w punkcie odniesienia obsługi](update-servicing-baseline.md)
 - [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
