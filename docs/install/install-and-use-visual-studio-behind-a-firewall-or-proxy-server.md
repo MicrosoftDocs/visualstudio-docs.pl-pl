@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544529"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409523"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalowanie i używanie programu Visual Studio i usług platformy Azure za serwerem zapory lub serwera proxy
 
@@ -54,7 +54,7 @@ Ponieważ Instalator programu Visual Studio pobiera pliki z różnych domen i ic
 | xamarin-downloads.azureedge.net | Lokalizacja listy pobierania pakietów Android SDK |
 | marketplace.visualstudio.com | Lokalizacja pobierania rozszerzenia programu Visual Studio |
 | \*. gallerycdn.vsassets.io  | Lokalizacja pobierania rozszerzenia programu Visual Studio |
-| VisualStudio.microsoft.com | Lokalizacja dokumentacji |
+| visualstudio.microsoft.com | Lokalizacja dokumentacji |
 | docs.microsoft.com | Lokalizacja dokumentacji |
 | msdn.microsoft.com | Lokalizacja dokumentacji |
 | microsoft.com www\. | Lokalizacja dokumentacji |
@@ -108,7 +108,7 @@ Aby mieć pewność, że masz dostęp do wszystkiego, czego potrzebujesz, gdy ko
 | Informacje o repozytorium GitHub | api.github.com | https/443 | Wymagane w celu uzyskania dodatkowych informacji na temat pakietów bower |
 | Linterów sieci Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | protokół http/80 | |
 | Cookiecutter<br>Eksplorator szablonu<br>odnajdywanie <br><br>Cookiecutter <br>Eksplorator projektu<br> Tworzenie | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Służy do odnajdywania szablonów online z naszych zalecanych kanałów informacyjnych i repozytoriów GitHub <br><br>Umożliwia tworzenie projektu z szablonu narzędzia cookiecutter, który wymaga jednorazowe instalacji na żądanie pakietu języka Python cookiecutter na podstawie indeksu pakietów języka Python (PyPI) |
-| Pakiet języka Python <br>odnajdywanie<br><br>Pakiet języka Python <br>zarządzanie<br><br>Nowa <br>Python <br> project <br>szablonów | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Zapewnia możliwość wyszukiwania pakiety pip<br><br>Używane do automatycznego instalowania narzędzia pip, jeżeli brakuje <br><br>Służy do rozwiązywania następujących nowych szablonów projektów języka Python do adresów URL szablonów cookiecutter:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame przy użyciu PyKinect <br> -Projekt Pyvot |
+| Pakiet języka Python <br>odnajdywanie<br><br>Pakiet języka Python <br>zarządzanie<br><br>Nowa <br>Python <br> projekt <br>szablonów | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Zapewnia możliwość wyszukiwania pakiety pip<br><br>Używane do automatycznego instalowania narzędzia pip, jeżeli brakuje <br><br>Służy do rozwiązywania następujących nowych szablonów projektów języka Python do adresów URL szablonów cookiecutter:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame przy użyciu PyKinect <br> -Projekt Pyvot |
 | Sieci web pakietu Office <br>Dodatek <br> Manifest <br>Weryfikacja <br>Usługa | verificationservice.osi.office.net | https/443 | Służy do sprawdzania manifesty dla dodatki pakietu Office sieci web |
 | Program SharePoint i <br>Dodatki pakietu Office | sharepoint.com<br> office365.com<br> microsoftonline.com <br> outlook.com | https/443 | Służy do publikowania i testowania dodatków programu SharePoint i pakietu Office do usługi SharePoint Online i pakietu Office 365 |
 | Usługa Workflow Manager <br>Testowanie usługi<br> Host | | http/12292 | Reguły zapory, która jest tworzona automatycznie do dodatków programu SharePoint przy użyciu przepływów pracy testowania |
