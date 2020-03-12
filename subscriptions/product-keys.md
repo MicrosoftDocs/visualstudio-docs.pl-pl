@@ -3,15 +3,15 @@ title: Korzystanie z kluczy produktów | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/20/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
-ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 3cd4992a89f5cdd12e85d83e3ac8b525bd2fe7d4
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377691"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947121"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
@@ -36,7 +36,7 @@ Firma Microsoft dokłada starań, aby chronić integralność programu Visual St
 
 Dzienny limit liczby zgłoszeń to 10 kluczy dla wszystkich subskrypcji programu Visual Studio, w tym te oferowane przez MPN, BizSpark, MCT Software & Services i MCT, z wyjątkiem Visual Studio Professional (MPN), które mają dzienny limit roszczeń równy 7 kluczy.
 
-Uwaga: Ograniczenia klucza mogą ulec zmianie. Sprawdź tutaj, aby uzyskać najbardziej aktualne limity.
+Uwaga: ograniczenia dotyczące klucza mogą ulec zmianie. Sprawdź tutaj, aby uzyskać najbardziej aktualne limity.
 
 Jeśli zatwierdzono maksymalną liczbę kluczy dostępnych dla subskrypcji w ciągu 24 godzin, zostanie wyświetlony komunikat o błędzie z informacją o tym, że limit został osiągnięty. Limit jest resetowany co 24 godziny, rozpoczynając od 12:01 czasu pacyficznego.
 
@@ -48,12 +48,12 @@ Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić k
 Niektóre produkty łączą wiele wersji produktu w jeden plik do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
 Niektóre klucze są udostępniane automatycznie, takie jak klucze "static", których można użyć dowolną liczbę razy, ponieważ aktywacja nie jest wymagana. Inne klucze muszą zostać przejęte przez wybranie linku **Pobierz klucz** dla produktu.
 > [!div class="mx-imgBorder"]
-> ![Pobierz klucz ze strony plików do pobrania](_img/product-keys/download-get-key.png)
+> ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
 
 Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Na tej stronie można znaleźć klucze statyczne, które działają dla wszystkich użytkowników produktu, uzyskać klucze niestandardowe tylko do użytku, sprawdzić stan limitów roszczeń i wyeksportować wszystkie klucze produktów. 
 
 > [!div class="mx-imgBorder"]
-> ![Strona klucze produktu](_img/product-keys/product-keys-page.png)
+> ](_img/product-keys/product-keys-page.png) strony ![kluczy produktu
 
 W zależności od produktu dostępne są różne typy kluczy.
 
@@ -62,7 +62,7 @@ W zależności od produktu dostępne są różne typy kluczy.
 |    Typ klucza           |    Opis                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest wymagany żaden klucz.                                                       |
-|    Stępują                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
+|    Sprzedaż detaliczna                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
 |    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu z tym samym kluczem. Wartości MAKs są zwykle używane z wersjami produktów licencjonowania zbiorowego. Zazwyczaj dla każdej subskrypcji jest dostarczany tylko jeden klucz MAK.    |
 |    Statyczny klucz aktywacji    |    Klucze aktywacji statycznej są udostępniane dla produktów, które nie wymagają aktywacji. Mogą one być używane dla dowolnej liczby instalacji.                                                                                                                  |
 |    Klucz niestandardowy                 |    Klucze niestandardowe udostępniają specjalne akcje lub informacje umożliwiające aktywację lub instalację produktu.                                                                                                                                                                |
@@ -75,7 +75,13 @@ W zależności od produktu dostępne są różne typy kluczy.
 
 Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
 
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
-Aby zgłosić klucze, odwiedź https://my.visualstudio.com/productkeys stronę.  
+Aby zgłosić klucze, odwiedź https://my.visualstudio.com/productkeys.  
 Dowiedz się [, jak znaleźć i zgłosić klucze](find-keys.md).
 Możesz również zapoznać się z tematami dotyczącymi używania kluczy produktów do obsługi [pokazów internetowych](internet-demos.md).

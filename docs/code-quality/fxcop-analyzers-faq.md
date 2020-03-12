@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517a583c859870b979c89c4fe2f55cd3bc0fc913
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d8e1df93fa9e865bb9b9136b9d0a0e07f1a485ea
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587618"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937516"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Często zadawane pytania dotyczące analizatorów FxCop i FxCop
 
@@ -60,5 +60,5 @@ Jeśli projekt używa opcji kompilacja do traktowania ostrzeżeń jako błędów
 ## <a name="see-also"></a>Zobacz także
 
 - [Omówienie analizatorów .NET Compiler Platform](roslyn-analyzers-overview.md)
-- [Wprowadzenie do analizatorów](fxcop-analyzers.yml)
+- [Migrowanie do analizatorów FxCop](migrate-from-legacy-analysis-to-fxcop-analyzers.md)
 - [Zainstaluj analizatory FxCop](install-fxcop-analyzers.md)

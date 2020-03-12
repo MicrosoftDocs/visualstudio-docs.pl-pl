@@ -3,15 +3,15 @@ title: Logowanie do subskrypcji programu Visual Studio za pomocą konta usługi 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak zalogować się do subskrypcji programu Visual Studio za pomocą konta usługi GitHub.
-ms.openlocfilehash: ffafd3821112a62ec1f86666f8c0fe6571bbb335
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.openlocfilehash: a0a2f69ab3cbab3fdf6c35d9407a59a7c7d49eb1
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75944195"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947082"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Logowanie do subskrypcji programu Visual Studio za pomocą konta usługi GitHub 
 
@@ -62,6 +62,12 @@ Odp.: Przejdź do [karty zabezpieczenia](https://account.microsoft.com/security)
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Pytanie: próbuję zalogować się przy użyciu konta usługi GitHub, ale otrzymuję monit o podanie tożsamości firmy Microsoft, której należy użyć zamiast tego.  Co się dzieje?
 Odp.: Jeśli masz Azure Active Directory adres e-mail na koncie usługi GitHub, oznacza to, że masz już tożsamość firmy Microsoft, która może uzyskiwać dostęp do platformy Azure i uruchamiać potoki CI przy użyciu kodu usługi GitHub. Użycie tego konta zapewnia, że Twoje zasoby platformy Azure i potoki kompilacji pozostaną w granicach organizacyjnych. Jeśli jednak wykonujesz osobistą służbę, zalecamy umieszczenie osobistego adresu e-mail na Twoim koncie usługi GitHub, aby zawsze miał dostęp do niego. Po wykonaniu tej czynności spróbuj zalogować się ponownie i wybierz opcję **Użyj innego adresu e-mail** , gdy zostanie wyświetlony monit o zalogowanie się do konta służbowego. Pozwoli to utworzyć nowe konto Microsoft przy użyciu tego osobistego adresu e-mail.
+
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Po pomyślnym zalogowaniu się do portalu subskrypcji zalecamy odwiedzenie strony korzyści w https://my.visualstudio.com/benefits i eksplorowanie doskonałych narzędzi, usług i ofert dostępnych dla Ciebie.  

@@ -3,15 +3,15 @@ title: Zarządzaj subskrypcjami programu Visual Studio oferowanymi za pomocą Mi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Jak przypisać subskrypcje programu Visual Studio do użytkowników końcowych w przypadku partnerów MPN.
-ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
-ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492908"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947138"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Zarządzaj subskrypcjami programu Visual Studio oferowanymi za pomocą Microsoft Partner Network (MPN)
 Partnerzy, którzy uzyskają kompetencje lub kupują Action Pack w MPN, mogą korzystać z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane dla poszczególnych użytkowników i są prawidłowe tylko wtedy, gdy są przypisane do określonego użytkownika nazwanego, który działa dla firmy partnerskiej.
@@ -59,7 +59,13 @@ Subskrybent programu Microsoft Action Pack i subskrypcje programu Visual Studio
   > Rola kontaktu technicznego jest wymagana dla subskrypcji programu Visual Studio
   - PG 8 — przypisywanie subskrypcji programu Visual Studio dla partnerów z kompetencjami
 
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
 Subskrybenci i Administratorzy programów powinni współpracować bezpośrednio z zespołem pomocy technicznej Microsoft Partner Network, aby rozwiązać wszelkie problemy z dostępem do subskrypcji przez subskrybentów. Aby uzyskać pomoc, odwiedź stronę [pomocy technicznej dla partnerów](https://partner.microsoft.com/support) . (Poświadczenia logowania do MPN będą wymagane).
 
-https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt.; _ylu = X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV = 2/RE = 1577405628/RO = 10/RU = https %3 a %2 f %2 f assetsprod. Microsoft. com% 2fmpn% 2fProgram-administrator-przewodnik-to-Software-and-Online-Services-korzyści/RK = 2/RS = xsA5OL. 9t6QqJlvFYZ3OPnZkC_k-
+

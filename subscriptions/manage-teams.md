@@ -3,15 +3,15 @@ title: Zarządzanie dużymi zespołami i zewnętrznymi wykonawcami | Visual Stud
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Zapoznaj się z odpowiedzialnością administratorów, aby zarządzać subskrypcjami dla dużych zespołów, a także zewnętrznych wykonawców.
-ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2f51febfa3cab6f3200b364cce1cc02e438a0384
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850048"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947061"
 ---
 # <a name="large-teams-and-external-contractors"></a>Duże zespoły i zewnętrzni wykonawcy
 Administratorzy subskrypcji programu Visual Studio są odpowiedzialni za zapewnienie, że każdy użytkownik, który współdziała z programem Visual Studio — licencjonowanym oprogramowaniem, ma odpowiednie licencje z własną subskrypcją programu Visual Studio.
@@ -32,6 +32,12 @@ Zewnętrzni wykonawcy mogą przystąpić licencje do środowiska z licencjonowan
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia dotyczące licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o odpowiedzialności dla administratorów:

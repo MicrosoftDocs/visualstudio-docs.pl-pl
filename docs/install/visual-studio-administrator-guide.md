@@ -2,7 +2,7 @@
 title: Podręcznik administratora programu Visual Studio
 titleSuffix: ''
 description: Dowiedz się więcej o sposobie wdrażania programu Visual Studio w środowisku przedsiębiorstwa.
-ms.date: 06/02/2019
+ms.date: 03/09/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7fd8e886a4f770238c00ef881748388f93281074
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: 2bad72037a8839780b5eec4fbcfb44a56b62dbc4
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409694"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78946985"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 
@@ -174,7 +174,7 @@ Rejestr znajduje się w katalogu * Software\Microsoft\VisualStudio\15.0_ {Instan
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
 * [Zainstaluj certyfikaty wymagane do instalacji w trybie offline programu Visual Studio](install-certificates-for-visual-studio-offline.md)

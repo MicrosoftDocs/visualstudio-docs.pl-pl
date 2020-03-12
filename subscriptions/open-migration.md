@@ -3,15 +3,15 @@ title: Partnerzy zarządzający subskrypcjami programu Visual Studio dla klient�
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak partnerzy zarządzają subskrypcjami programu Visual Studio dla swoich klientów.
-ms.openlocfilehash: 2dba1491bd7472e1de824433ce534503de0b37be
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850558"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947078"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partnerzy zarządzający subskrypcjami w imieniu klientów
 Aby zarządzać subskrypcjami w [portalu administracyjnym subskrypcji](https://manage.visualstudio.com)programu Visual Studio, należy wykonać kilka kroków. Proces będzie:
@@ -53,6 +53,12 @@ Ten scenariusz ma zastosowanie do nowych partnerów, którzy już umieścili now
 - [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Warunki licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Odwiedź [Portal administratora subskrypcji](https://manage.visualstudio.com) programu Visual Studio, aby zarządzać subskrypcjami.

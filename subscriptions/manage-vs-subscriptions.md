@@ -3,15 +3,15 @@ title: Zarządzanie subskrypcjami programu Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak maksymalnie wykorzystać subskrypcje programu Visual Studio
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408890"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78968000"
 ---
 # <a name="managing-subscriptions"></a>Zarządzanie subskrypcjami
 
@@ -112,3 +112,17 @@ Odp.: w zależności od kanału zakupu firma Microsoft zachowuje dane klienta pr
 > [!NOTE]
 > - Jeśli zdecydujesz się zamknąć konto Microsoft lub usługę Azure AD, Twoje dane osobowe będą anonimowe od razu.
 > - Nie będziemy w pełni usuwać wszystkich Twoich danych osobowych, jeśli masz aktywne subskrypcje.
+
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Następne kroki
+Czy zarządzasz subskrypcjami dla Twojej organizacji?  Dowiedz się więcej o zarządzaniu subskrypcjami programu Visual Studio:
+- [Przypisywanie pojedynczych subskrypcji](assign-license.md)
+- [Przypisywanie wielu subskrypcji](assign-license-bulk.md)
+- [Edytowanie subskrypcji](edit-license.md)
+- [Usuwanie subskrypcji](delete-license.md)
+- [Określanie maksymalnego użycia](maximum-usage.md)

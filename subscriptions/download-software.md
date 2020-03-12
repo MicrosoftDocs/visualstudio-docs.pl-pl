@@ -3,15 +3,15 @@ title: Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476824"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937491"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio
 W zależności od posiadanej subskrypcji programu Visual Studio może być dostępna szeroka gama tytułów oprogramowania firmy Microsoft.  W tym artykule przedstawiono sposób lokalizowania i pobierania oprogramowania potrzebnego do maksymalnego wykorzystania subskrypcji. 
@@ -50,14 +50,22 @@ Aby uzyskać klucz produktu do pobrania, można kliknąć niebieski klucz z etyk
 > [!div class="mx-imgBorder"]
 > ![klucze produktów programu Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
 Aby dowiedzieć się więcej na temat lokalizowania, zgłaszania i eksportowania kluczy produktów, zapoznaj się z dokumentacją dotyczącą kluczy produktów:
 - [Omówienie kluczy produktów](product-keys.md)
 - [Znajdź i przejmij klucze](find-keys.md)
 
-## <a name="see-also"></a>Zobacz też
-- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+Dowiedz się, jak korzystać z innych doskonałych korzyści, takich jak:
+- [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Visual Studio IDE](vs-ide-benefit.md)
+
+
+
 

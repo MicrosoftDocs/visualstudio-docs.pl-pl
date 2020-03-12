@@ -3,15 +3,15 @@ title: Dostępność produktu na potrzeby pobierania oprogramowania w subskrypcj
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informacje o dostępności produktu w ramach pobierania oprogramowania dla subskrypcji programu Visual Studio
-ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 30dd3a216274e189d4d1afe2321bd1db7b66fb94
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706813"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947099"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Dostępność produktu na potrzeby pobierania oprogramowania w ramach subskrypcji programu Visual Studio
 W ramach korzyści dla subskrybenta masz dostęp do szerokiego zakresu pobierania oprogramowania.
@@ -36,6 +36,12 @@ Liczba i typ pobieranych danych zależy od poziomu subskrypcji i członkostwa w 
 > Jeśli masz wiele subskrypcji skojarzonych z tym samym adresem e-mail, dostępne tytuły oprogramowania są określane przez posiadaną subskrypcję **najwyższego** poziomu.  Jeśli na przykład masz subskrypcję Visual Studio Enterprise i subskrypcję Visual Studio Test Professional, będziesz mieć dostęp do tytułów oprogramowania zawartych w subskrypcji Visual Studio Enterprise, niezależnie od tego, która subskrypcja jest obecnie używana w portalu subskrypcji. 
 
 Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+
+## <a name="see-also"></a>Zobacz także
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Niektóre pliki do pobrania mogą wymagać klucza produktu, aby można było je zainstalować i aktywować.  Zapoznaj się z artykułem dotyczącym [kluczy produktów](product-keys.md) , aby uzyskać szczegółowe informacje na temat uzyskiwania i zarządzania kluczami produktów. 

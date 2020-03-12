@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
-ms.translationtype: MT
+ms.openlocfilehash: d6ecbfc3917898de1b55a6a1e1edc411d8b01234
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77590807"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78967961"
 ---
 *Zintegrowane środowisko programistyczne* programu Visual Studio to twórczy pad do uruchamiania, który umożliwia edytowanie, debugowanie i kompilowanie kodu, a następnie publikowanie aplikacji. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
@@ -47,7 +47,7 @@ Ten obraz pokazuje programu Visual Studio Otwórz projekt i kilka okien narzędz
 
 Program Visual Studio jest dostępna dla Windows i Mac. [Visual Studio dla komputerów Mac](/visualstudio/mac/) ma wiele takich samych funkcji, jak program Visual Studio 2017 i jest zoptymalizowany pod kątem opracowywania aplikacji mobilnych i międzyplatformowych. Ten artykuł dotyczy programu Visual Studio 2017 w wersji Windows.
 
-Istnieją trzy wersje programu Visual Studio 2017: Community, Professional i Enterprise. Zobacz [porównanie programu Visual Studio 2017 środowisk IDE](https://visualstudio.microsoft.com/vs/compare/) , aby dowiedzieć się, jakie funkcje są obsługiwane w poszczególnych wersjach.
+Istnieją trzy wersje programu Visual Studio 2017: Community, Professional i Enterprise. Zobacz [porównanie wersji programu Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) , aby dowiedzieć się, które funkcje są obsługiwane w poszczególnych wersjach.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Istnieją trzy wersje programu Visual Studio 2017: Community, Professional i Ent
 
 Program Visual Studio jest dostępna dla Windows i Mac. [Visual Studio dla komputerów Mac](/visualstudio/mac/) ma wiele takich samych funkcji, jak program Visual Studio 2019 i jest zoptymalizowany pod kątem opracowywania aplikacji mobilnych i międzyplatformowych. Ten artykuł koncentruje się na wersji systemu Windows programu Visual Studio 2019.
 
-Istnieją trzy wersje programu Visual Studio 2019: Community, Professional i Enterprise. Zobacz [porównanie programu Visual Studio środowisk IDE](https://visualstudio.microsoft.com/vs/compare/) , aby dowiedzieć się, jakie funkcje są obsługiwane w poszczególnych wersjach.
+Istnieją trzy wersje programu Visual Studio 2019: Community, Professional i Enterprise. Zobacz [porównanie wersji programu Visual Studio](https://visualstudio.microsoft.com/vs/compare/) , aby dowiedzieć się, które funkcje są obsługiwane w poszczególnych wersjach.
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
    ![Refaktoryzacja w programie Visual Studio](../media/refactoring-menu.png)
 
-- [IntelliSense](../../ide/using-intellisense.md)
+- [Funkcja IntelliSense](../../ide/using-intellisense.md)
 
    Funkcja IntelliSense jest okres zestaw funkcji, który wyświetla informacje o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w innym miejscu. Funkcje IntelliSense, zależy od języka. Aby uzyskać więcej informacji, zobacz [ C# IntelliSense](../../ide/visual-csharp-intellisense.md), [ C++ Visual IntelliSense](../../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../../ide/javascript-intellisense.md)i [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md). Na poniższej ilustracji przedstawiono, jak technologia IntelliSense wyświetla listę elementu członkowskiego dla typu:
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408602"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78945728"
 ---
 # <a name="fxcop-rule-port-status"></a>Stan portu reguły FxCop
 
@@ -40,6 +40,7 @@ Identyfikator reguły | Tytuł
 [CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Oznacz zestawy atrybutem ComVisible
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | Oznacz atrybuty atrybutem AttributeUsage
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | Zdefiniuj metody dostępu dla argumentów atrybutów
+[CA1021](ca1021.md) | Unikaj parametrów out
 [CA1024](ca1024-use-properties-where-appropriate.md) | Używaj właściwości, o ile to możliwe
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | Oznacz typy wyliczeniowe atrybutem Flags
 [CA1028](ca1028-enum-storage-should-be-int32.md) | Magazyn wyliczeniowy powinien mieć wartość Int32
@@ -344,6 +345,6 @@ Następujące reguły FxCop starszej wersji są przestarzałe i nie zostaną zai
 - [CA2233](ca2233.md)
 - [CA5122 deklaracje](ca5122.md)
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 
 - [Reguły Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)
