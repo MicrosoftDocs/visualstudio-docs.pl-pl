@@ -1,7 +1,7 @@
 ---
-title: Program Visual Studio Feedback Client obciążenia i identyfikatory składników
+title: Obciążenie klienta opinii programu Visual Studio i identyfikatory składników
 titleSuffix: ''
-description: Identyfikatory obciążeń i składników programu Visual Studio umożliwiają przesyłanie bogatych opinii dotyczących usługom DevOps platformy Azure lub serwera Team Foundation Server
+description: Używanie obciążenia i identyfikatorów składników programu Visual Studio w celu dostarczania rozszerzonych opinii dotyczących usług DevOps platformy Azure lub programu Team Foundation Server
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -17,53 +17,53 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
 ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76113847"
 ---
-# <a name="visual-studio-feedback-client-component-directory"></a>Katalog składników programu Visual Studio Feedback Client
+# <a name="visual-studio-feedback-client-component-directory"></a>Katalog składników klienta opinii programu Visual Studio
 
-Tabele na tej stronie listy identyfikatorów, w której można zainstalować program Visual Studio przy użyciu wiersza polecenia lub można określić jako zależności w manifestu VSIX. Należy pamiętać, że dodamy dodatkowe składniki, jak wydaniu aktualizacji do programu Visual Studio.
+Tabele na tej stronie listy identyfikatorów, których można użyć do zainstalowania programu Visual Studio przy użyciu wiersza polecenia lub które można określić jako zależność w manifeście VSIX. Należy zauważyć, że dodamy dodatkowe składniki podczas wydawania aktualizacji programu Visual Studio.
 
-Ponadto należy pamiętać, że informacje o stronie:
+Zwróć również uwagę na następujące informacje na temat strony:
 
-* Każde obciążenie ma osobny rozdział, następuje identyfikator obciążenia i tabeli składników, które są dostępne dla obciążenia.
-* Domyślnie **wymagane** składniki zostaną zainstalowane po zainstalowaniu obciążenia.
-* Jeśli chcesz, możesz także zainstalować **zalecane** i **opcjonalnie** składników.
-* Dodaliśmy również sekcję, która zawiera listę dodatkowych składników, które nie są powiązane z dowolnych obciążeń.
+* Każde obciążenie ma własną sekcję, a następnie identyfikator obciążenia i tabelę składników, które są dostępne dla obciążenia.
+* Domyślnie **wymagane** składniki zostaną zainstalowane podczas instalowania obciążenia.
+* W tym przypadku można również zainstalować składniki **Zalecane** i **Opcjonalne.**
+* Dodaliśmy również sekcję zawierającą listę dodatkowych składników, które nie są powiązane z żadnym obciążeniem.
 
-Po ustawieniu współzależności w manifeście VSIX tylko należy określić identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze zależności minimalnej składnika. W niektórych scenariuszach to oznaczać, że należy określić tylko jeden składnik z obciążenia. W innych przypadkach może oznaczać, możesz określić wiele składników z pojedynczego obciążenia lub wielu składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [instrukcje: Migrowanie projektów rozszerzalności do programu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) strony.
+Po ustawieniu zależności w manifeście VSIX należy określić tylko identyfikatory składników. Użyj tabel na tej stronie, aby określić nasze minimalne zależności składników. W niektórych scenariuszach może to oznaczać, że można określić tylko jeden składnik z obciążenia. W innych scenariuszach może to oznaczać, że można określić wiele składników z jednego obciążenia lub wiele składników z wielu obciążeń. Aby uzyskać więcej informacji, zobacz [how to: Migrate Extensibility Projects to Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) page.
 
-Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz [Użyj parametry wiersza polecenia, aby zainstalować program Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) strony. I dla listy, obciążenie i identyfikatorów składników dla innych produktów, zobacz [Visual Studio 2017 obciążenia i identyfikatory składnika](workload-and-component-ids.md) strony.
+Aby uzyskać więcej informacji na temat używania tych identyfikatorów, zobacz Instalowanie strony [programu Visual Studio 2017 za pomocą parametrów wiersza polecenia.](use-command-line-parameters-to-install-visual-studio.md) Aby uzyskać listę identyfikatorów obciążenia i składników dla innych produktów, zobacz stronę [Obciążenia i identyfikatory składników programu Visual Studio 2017.](workload-and-component-ids.md)
 
 ## <a name="feedback-client"></a>Feedback Client
 
-**ID:** Microsoft.VisualStudio.Workload.FeedbackClient
+**Identyfikator:** Microsoft.VisualStudio.Workload.FeedbackKlient
 
-**Opis:** Feedback client umożliwia uczestnikom projektu przesyłanie bogatych opinii usługom DevOps platformy Azure lub serwera Team Foundation Server.
+**Opis:** Klient opinii umożliwia interesariuszom dostarczanie bogatych opinii dla usług Azure DevOps services lub Team Foundation Server.
 
-### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
+### <a name="components-included-by-this-workload"></a>Składniki objęte tym obciążeniem
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Wymagane
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Wymagany
 
-## <a name="unaffiliated-components"></a>Składniki nie podlega
+## <a name="unaffiliated-components"></a>Składniki niepowiązane
 
-Są to składniki, które nie są uwzględniane przy użyciu dowolnego obciążenia, ale można wybrać jako poszczególnych składników.
+Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-n/d | n/d | n/d
+Nie dotyczy | Nie dotyczy | Nie dotyczy
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
-* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Tworzenie instalacji programu Visual Studio w trybie offline](create-an-offline-installation-of-visual-studio.md)

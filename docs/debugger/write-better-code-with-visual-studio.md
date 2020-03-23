@@ -1,6 +1,6 @@
 ---
 title: Narzędzia i techniki debugowania
-description: Pisanie lepszego kodu z mniejszymi usterkami przy użyciu programu Visual Studio do rozwiązywania wyjątków, naprawiania błędów i ulepszania kodu
+description: Napisz lepszy kod z mniejszą ilością błędów, używając programu Visual Studio do naprawianie wyjątków, naprawianie błędów i ulepszanie kodu
 ms.custom:
 - debug-experiment
 - seodec18
@@ -14,54 +14,54 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409201"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302029"
 ---
-# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniki i narzędzia debugowania ułatwiające pisanie lepszego kodu
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniki debugowania i narzędzia ułatwiające pisanie lepszego kodu
 
-Naprawianie usterek i błędów w kodzie może być czasochłonne i czasami frustrujące — zadanie. Zajmuje trochę czasu, aby dowiedzieć się, jak można debugować skutecznie, ale rozbudowane środowisko IDE, takie jak Visual Studio ułatwia zadania o wiele prostsze. Środowisko IDE może pomóc w rozwiązaniu błędów i szybszej debugowania kodu, a nie tylko, ale może też pomóc napisać lepszy kod z mniejszą liczbą błędów. Naszym celem tego artykułu jest udostępnienie całościowego widoku procesu "Usterka-naprawianie", dzięki czemu wiadomo, kiedy należy używać analizatora kodu, kiedy należy używać debugera, jak naprawić wyjątki i jak kod zamiaru. Jeśli już wiesz, że musisz użyć debugera, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
+Naprawianie błędów i błędów w kodzie może być czasochłonne — a czasami frustrujące — zadanie. Potrzeba czasu, aby dowiedzieć się, jak skutecznie debugować, ale zaawansowane IDE jak Visual Studio może znacznie ułatwić pracę. IDE może pomóc naprawić błędy i debugować kod szybciej, a nie tylko, ale może również pomóc napisać lepszy kod z mniejszą liczbą błędów. Naszym celem w tym artykule jest zapewnienie całościowego widoku procesu "naprawiania błędów", dzięki czemu będziesz wiedzieć, kiedy używać analizatora kodu, kiedy używać debugera, jak naprawić wyjątki i jak kodować intencje. Jeśli już wiesz, że musisz użyć debugera, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-W tym artykule omówiono sposób wykorzystania środowiska IDE, aby zwiększyć produktywność sesji kodowania. Firma Microsoft dotyku kilku zadań, takich jak:
+W tym artykule mówimy o wykorzystaniu IDE, aby twoje sesje kodowania bardziej wydajne. Dotykamy kilku zadań, takich jak:
 
-* Przygotowanie kodu do debugowania przy użyciu analizatora kodu środowiska IDE
+* Przygotuj kod do debugowania, wykorzystując analizator kodu IDE
 
-* Jak naprawić wyjątków (błędy środowiska wykonawczego)
+* Jak naprawić wyjątki (błędy w czasie wykonywania)
 
-* Jak zminimalizować usterki przez kodowanie dla zamiaru (przy użyciu potwierdzenia)
+* Jak zminimalizować błędy przez kodowanie intencji (przy użyciu potwierdzenia)
 
-* Kiedy należy używać debugera
+* Kiedy używać debugera
 
-Aby zademonstrować te zadania, pokazujemy kilka najbardziej typowych błędów i usterek, które będzie występować podczas próby przeprowadzenia debugowania aplikacji. Mimo że kod przykładowy C#, informacje koncepcyjne poniżej ogólnie stosuje się do języka C++, Visual Basic, JavaScript i inne języki obsługiwane przez program Visual Studio (z wyjątkiem sytuacji, gdy podane). Zrzuty ekranu są w języku C#.
+Aby zademonstrować te zadania, pokazujemy kilka najczęstszych typów błędów i błędów, które można napotkać podczas próby debugowania aplikacji. Chociaż przykładowy kod jest C#, informacje koncepcyjne są ogólnie stosowane do języka C++, Visual Basic, JavaScript i innych języków obsługiwanych przez program Visual Studio (z wyjątkiem przypadków, gdy zaznaczono inaczej). Zrzuty ekranu są w języku C#.
 
-## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Tworzenie przykładowej aplikacji z niektórymi usterkami i błędami
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Tworzenie przykładowej aplikacji z pewnymi błędami i błędami w niej
 
-Poniższy kod zawiera pewne błędy, które można rozwiązać, przy użyciu programu Visual Studio IDE. W tym miejscu aplikacja jest prosta aplikacja, która symuluje pobieranie danych JSON z niektórych operacji, podczas deserializacji danych do obiektu i aktualizowanie prostą listę nowych danych.
+Poniższy kod zawiera kilka błędów, które można naprawić przy użyciu środowiska IDE programu Visual Studio. Aplikacja w tym miejscu jest prosta aplikacja, która symuluje uzyskanie danych JSON z niektórych operacji, deserializacji danych do obiektu i aktualizowanie prostej listy z nowymi danymi.
 
 Aby utworzyć aplikację:
 
-1. W zależności od typu aplikacji, który ma zostać utworzony, musi być zainstalowany program Visual Studio i **Programowanie na platformie .NET Core** lub środowisko **programistyczne programu .NET Desktop** .
+1. Program Visual Studio musi być zainstalowany i **program .NET Core — program rozwoju na wielu platformach** lub zainstalowane obciążenie **programistyczne dla komputerów .NET,** w zależności od typu aplikacji, który chcesz utworzyć.
 
-    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads/) , aby zainstalować ją bezpłatnie.
+    Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony pobierania programu Visual [Studio,](https://visualstudio.microsoft.com/downloads/)aby zainstalować ją bezpłatnie.
 
-    Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, kliknij pozycję **narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie programu **.NET Core dla wielu platform** lub programowanie **aplikacji klasycznych platformy .NET** , a następnie wybierz **Modyfikuj**.
+    Jeśli chcesz zainstalować obciążenie, ale masz już program Visual Studio, kliknij pozycję **Narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia instalator programu Visual Studio. Wybierz program **.NET Core dla deweloperów międzyplatformowych** lub obciążenia **programistycznego .NET dla komputerów stacjonarnych,** a następnie wybierz pozycję **Modyfikuj**.
 
 1. Otwórz program Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**. Wpisz w polu wyszukiwania **konsolę** , a następnie wybierz pozycję **Aplikacja konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)** . Wybierz pozycję **Dalej**. Wpisz nazwę projektu, taką jak **Console_Parse_JSON** , i kliknij przycisk **Utwórz**.
+    W oknie początkowym wybierz pozycję **Utwórz nowy projekt**. Wpisz **konsolę** w polu wyszukiwania, a następnie wybierz **aplikację konsoli (.NET Core)** lub aplikację konsoli **(.NET Framework).** Wybierz pozycję **Dalej**. Wpisz nazwę projektu, taką jak **Console_Parse_JSON,** a następnie kliknij przycisk **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Wizualizacja C#** wybierz pozycję **Aplikacja konsolowa**, a następnie w środkowym okienku wybierz pozycję Aplikacja **konsolowa (.NET Core)** lub **Aplikacja konsolowa (.NET Framework)** . Wpisz nazwę, taką jak **Console_Parse_JSON** , i kliknij przycisk **OK**.
+    Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **Aplikacja konsoli**, a następnie w środkowym okienku wybierz aplikację **konsoli (.NET Core)** lub **aplikację konsoli (.NET Framework).** Wpisz nazwę, taką jak **Console_Parse_JSON** i kliknij przycisk **OK**.
     ::: moniker-end
 
-    Jeśli nie widzisz szablonu projektu **Aplikacja konsolowa (.NET Core)** lub **aplikacja konsoli (.NET Framework)** , przejdź do pozycji **Narzędzia** > **Pobierz narzędzia i funkcje**, co spowoduje otwarcie Instalator programu Visual Studio. Wybierz opcję **Programowanie dla wielu platform w środowisku .NET Core** lub **środowisko programistyczne programu .NET Desktop** , a następnie wybierz polecenie **Modyfikuj**.
+    Jeśli nie widzisz szablonu projektu **aplikacji konsoli (.NET Core)** lub **aplikacji konsoli (net framework),** przejdź do **pozycji Narzędzia** > **Pobierz narzędzia i funkcje**, który otwiera Instalator programu Visual Studio. Wybierz opcję **programowy platformy .NET Core dla różnych platform** lub obciążenia **programistycznego .NET dla komputerów stacjonarnych,** a następnie wybierz pozycję **Modyfikuj**.
 
-    Program Visual Studio tworzy projekt konsoli, który pojawia się w Eksplorator rozwiązań w okienku po prawej stronie.
+    Visual Studio tworzy projekt konsoli, który pojawia się w Eksploratorze rozwiązań w prawym okienku.
 
-1. Zastąp domyślny kod w pliku *program.cs* projektu następującym przykładowym kodem.
+1. Zastąp domyślny kod w pliku *Program.cs* projektu poniższym przykładowym kodem.
 
 ```csharp
 using System;
@@ -184,57 +184,57 @@ namespace Console_Parse_JSON
 }
 ```
 
-## <a name="find-the-red-and-green-squiggles"></a>Znajdź zygzaki czerwonego i zielonego!
+## <a name="find-the-red-and-green-squiggles"></a>Znajdź czerwone i zielone faliszki!
 
-Przed podjęciem próby Uruchom przykładową aplikację i uruchom debuger, sprawdź kod w edytorze kodu dla czerwonego i zielonego faliste linie. Reprezentują te błędy i ostrzeżenia, które są identyfikowane przez analizator kodu środowiska IDE. Czerwone faliste linie błędów kompilacji, które należy naprawić przed uruchomić kod. Zielone symbole są ostrzeżenia. Chociaż często można uruchomić aplikację bez ustalenia ostrzeżenia, mogą być źródłem błędów i możesz często zaoszczędzić czas i problemy, badając ich. Te ostrzeżenia i błędy są również wyświetlane w oknie **Lista błędów** , jeśli wolisz wyświetlić widok listy.
+Przed podjęciem próby uruchomienia przykładowej aplikacji i uruchomienia debugera, sprawdź kod w edytorze kodu dla czerwonego i zielonego squiggles. Reprezentują one błędy i ostrzeżenia, które są identyfikowane przez analizator kodu IDE. Czerwone squiggles są błędy w czasie kompilacji, które należy naprawić, zanim będzie można uruchomić kod. Zielone faliszki są ostrzeżenia. Chociaż często można uruchomić aplikację bez naprawiania ostrzeżeń, mogą one być źródłem błędów i często oszczędzasz czas i problemy, badając je. Te ostrzeżenia i błędy są również wyświetlane w oknie **Lista błędów,** jeśli wolisz widok listy.
 
-W przykładowej aplikacji Zobacz kilka czerwone symbole, które trzeba naprawić, a jeden, zielony, który możesz przyjrzymy się. Oto pierwszy błąd.
+W przykładowej aplikacji zobaczysz kilka czerwonych faliczek, które musisz naprawić, i jeden zielony, który będziesz patrzeć. Oto pierwszy błąd.
 
-![Błąd podczas pokazywania jako czerwona fala](../debugger/media/write-better-code-red-squiggle.png)
+![Błąd wyświetlany jako czerwony squiggle](../debugger/media/write-better-code-red-squiggle.png)
 
-Aby naprawić ten błąd, zostanie przyjrzymy się inna funkcja IDE, reprezentowany przez ikonę żarówki.
+Aby naprawić ten błąd, przyjrzysz się innej funkcji IDE, reprezentowanej przez ikonę żarówki.
 
-## <a name="check-the-light-bulb"></a>Sprawdź żarówki.
+## <a name="check-the-light-bulb"></a>Sprawdź żarówkę!
 
-Pierwszy czerwona fala reprezentuje błąd kompilacji. Umieść kursor nad nim i zobaczysz komunikat ```The name `Encoding` does not exist in the current context```.
+Pierwszy czerwony squiggle reprezentuje błąd w czasie kompilacji. Najedź nad nim ```The name `Encoding` does not exist in the current context```kursorem i zobaczysz komunikat .
 
-Należy zauważyć, że ten błąd wskazuje ikonę żarówki, aby lewym dolnym rogu. Wraz ze ikoną śrubokrętu ![ikonę śrubokrętu](../ide/media/screwdriver-icon.png)ikona żarówki ![ikona żarówki](../ide/media/light-bulb-icon.png) reprezentuje szybkie akcje, które mogą pomóc w rozwiązaniu lub ponownym uruchomieniu kodu. Żarówka reprezentuje problemy, które *należy* naprawić. Śrubokręt jest w przypadku problemów, które można wybrać, aby rozwiązać problem. Użyj pierwszej sugerowanej poprawki, aby rozwiązać ten problem, klikając pozycję **System. Text** po lewej stronie.
+Należy zauważyć, że ten błąd pokazuje ikonę żarówki w lewym dolnym dolnym. Wraz z ikoną ![śrubokręta, ikona](../ide/media/screwdriver-icon.png)](../ide/media/light-bulb-icon.png) ![żarówki ikona żarówki reprezentuje szybkie akcje, które mogą pomóc naprawić lub refaktoryzuje kod wbudowany. Żarówka reprezentuje problemy, które *należy* rozwiązać. Śrubokręt jest przeznaczony do rozwiązywania problemów, które można rozwiązać. Użyj pierwszej sugerowanej poprawki, aby rozwiązać ten błąd, klikając **pozycję System.Text** po lewej stronie.
 
 ![Użyj żarówki, aby naprawić kod](../debugger/media/write-better-code-missing-include.png)
 
-Po kliknięciu tego elementu program Visual Studio dodaje instrukcję `using System.Text` w górnej części pliku *program.cs* i czerwona zygzakowata znika. (Jeśli nie masz pewności, jaka będzie Sugerowana poprawka, wybierz link **Podgląd zmian** po prawej stronie przed zastosowaniem poprawki).
+Po kliknięciu tego elementu visual `using System.Text` studio dodaje instrukcję w górnej części pliku *Program.cs,* a czerwony squiggle zniknie. (Jeśli nie masz pewności, co zrobi sugerowana poprawka, wybierz łącze **Zmiany podglądu** po prawej stronie przed zastosowaniem poprawki).
 
-Poprzedni błąd jest typowym, który jest zwykle naprawiany przez dodanie nowej instrukcji `using` do kodu. Istnieje kilka typowych, podobnych błędów do tego, takich jak ```The type or namespace `Name` cannot be found.``` tego rodzaju błędy mogą wskazywać brak odwołania do zestawu (kliknij projekt prawym przyciskiem myszy, wybierz polecenie **Dodaj** **odwołanie** > ), nazwę błędnej pisowni lub brakującą bibliotekę, którą trzeba dodać (dla C#, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zarządzaj pakietami NuGet**).
+Poprzedni błąd jest typowy, który zwykle naprawić, `using` dodając nową instrukcję do kodu. Istnieje kilka typowych, podobnych błędów ```The type or namespace `Name` cannot be found.``` do tego, takich jak Te rodzaje błędów może wskazywać na brakujące odwołanie do zestawu (kliknij prawym przyciskiem myszy projekt, wybierz **polecenie Dodaj** > **odwołanie), błędnie**wpozwędną nazwę lub brakującą bibliotekę, którą należy dodać (dla języka C#, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Zarządzaj pakietami NuGet).**
 
-## <a name="fix-the-remaining-errors-and-warnings"></a>Usuń pozostałe błędy i ostrzeżenia
+## <a name="fix-the-remaining-errors-and-warnings"></a>Napraw pozostałe błędy i ostrzeżenia
 
-Istnieje kilka więcej zygzaki przyjrzenie się w tym kodzie. W tym miejscu zobaczysz typowy błąd konwersji typu. Po umieszczeniu wężyk zobaczysz, że kod próbuje przekonwertować ciąg na liczbę całkowitą, która nie jest obsługiwana, chyba że dodasz kod jawne, aby konwersji.
+Istnieje kilka więcej squiggles spojrzeć na w tym kodzie. W tym miejscu jest widoczny typowy błąd konwersji typu. Po umieszczeniu wskaźnika myszy nad faliskiem zobaczysz, że kod próbuje przekonwertować ciąg na int, który nie jest obsługiwany, chyba że dodasz jawny kod, aby dokonać konwersji.
 
 ![Błąd konwersji typu](../debugger/media/write-better-code-conversion-error.png)
 
-Analizator kodu nie można odgadnąć zgodne z zamiarami użytkownika, dlatego są nie żarówki, aby Ci pomóc tym razem. Aby naprawić ten błąd, musisz wiedzieć celem kodu. W tym przykładzie nie jest zbyt trudne, aby zobaczyć, że `points` powinna być wartością liczbową (Integer), ponieważ próbujesz dodać `points` do `totalpoints`.
+Ponieważ analizator kodu nie można odgadnąć intencji, nie ma żarówek, które pomogą Ci tym razem. Aby naprawić ten błąd, musisz znać intencji kodu. W tym przykładzie nie jest zbyt `points` trudne, aby zobaczyć, że powinna być wartością liczbową (liczba całkowita), ponieważ próbujesz dodać `points` do `totalpoints`.
 
-Aby naprawić ten błąd, Zmień `points` składową klasy `User` z:
+Aby naprawić ten błąd, `points` zmień `User` element członkowski klasy z tego:
 
 ```csharp
 [DataMember]
 internal string points;
 ```
 
-na taki:
+wprowadź następujące zmiany:
 
 ```csharp
 [DataMember]
 internal int points;
 ```
 
-Pozbycie czerwoną linią falistą w edytorze kodu.
+Czerwone faliste linie w edytorze kodu odejdą.
 
-Następnie umieść wskaźnik myszy na zielonym zygzaku w deklaracji elementu członkowskiego danych `points`. Analizator kodu informujący o tym, że zmienna nigdy nie jest przypisywana wartość.
+Następnie umieść wskaźnik myszy na zielonym falista `points` w deklaracji elementu członkowskiego danych. Analizator kodu informuje, że zmienna nigdy nie jest przypisana wartość.
 
-![Komunikat ostrzegawczy dotyczący nieprzypisanej zmiennej](../debugger/media/write-better-code-warning-message.png)
+![Komunikat ostrzegawczy dla nieprzypisaną zmienną](../debugger/media/write-better-code-warning-message.png)
 
-Zazwyczaj jest to problem, który musi mieć stałą. Jednak w przykładowej aplikacji, w której znajdują się dane w zmiennej `points` podczas procesu deserializacji, a następnie dodając tę wartość do `totalpoints` elementu członkowskiego danych. W tym przykładzie znana celem kod i można bezpiecznie zignorować to ostrzeżenie. Jednakże jeśli chcesz wyeliminować ostrzeżenia, możesz zastąpić następujący kod:
+Zazwyczaj reprezentuje to problem, który należy rozwiązać. Jednak w przykładowej aplikacji są w rzeczywistości `points` przechowywania danych w zmiennej podczas procesu deserializacji, a następnie dodanie tej wartości do elementu członkowskiego `totalpoints` danych. W tym przykładzie znasz intencji kodu i można bezpiecznie zignorować ostrzeżenie. Jeśli jednak chcesz wyeliminować ostrzeżenie, możesz zastąpić następujący kod:
 
 ```csharp
 item.totalpoints = users[i].points;
@@ -247,33 +247,33 @@ item.points = users[i].points;
 item.totalpoints += users[i].points;
 ```
 
-Zielony wężyk stanie się niepotrzebna.
+Zielony squiggle odchodzi.
 
-## <a name="fix-an-exception"></a>Usuń wyjątek
+## <a name="fix-an-exception"></a>Naprawianie wyjątku
 
-Po stałej czerwone symbole i rozwiązany — lub co najmniej zbadać — wszystkie zielone symbole, jesteś gotowy do uruchomienia debugera i uruchomić aplikację.
+Po naprawieniu wszystkich czerwonych falizw i rozwiązany - lub przynajmniej zbadane - wszystkie zielone squiggles, można przystąpić do uruchomienia debugera i uruchomić aplikację.
 
-Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania.
+Naciśnij **klawisz F5** **(Debugowanie > rozpocznij debugowanie)** lub przycisk **Start Debugowania** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi Debugowania.
 
-W tym momencie Przykładowa aplikacja zgłasza wyjątek `SerializationException` (błąd czasu wykonywania). Oznacza to, że aplikacja zastosowana podlewka na dane, które podejmuje próbę serializacji. Ponieważ aplikacja jest uruchomiona w trybie debugowania (debuger dołączony), pomocnika wyjątków debugera spowoduje przejście bezpośrednio do kodu, który wygenerował wyjątek i zapewnia komunikat o błędzie przydatne.
+W tym momencie przykładowa `SerializationException` aplikacja zgłasza wyjątek (błąd środowiska uruchomieniowego). Oznacza to, że aplikacja dławi się danymi, które próbuje serializować. Ponieważ aplikacja została uruchomiona w trybie debugowania (debuger dołączony), Debuger's Exception Helper przeniesie Cię bezpośrednio do kodu, który zgłosił wyjątek i daje pomocny komunikat o błędzie.
 
-![Występuje SerializationException](../debugger/media/write-better-code-serialization-exception.png)
+![Występuje a SerializationException](../debugger/media/write-better-code-serialization-exception.png)
 
-Komunikat o błędzie informuje o tym, że wartość `4o` nie może być analizowana jako liczba całkowita. Dlatego w tym przykładzie wiadomo, że dane są nieprawidłowe: `4o` powinna być `40`. Jednakże jeśli nie masz kontrolę nad danymi w scenariuszu rzeczywistego (np. otrzymujesz z usługi sieci web), co można zrobić na jego temat? Jak można to naprawić?
+Komunikat o błędzie informuje, `4o` że wartość nie może być analizowana jako liczba całkowita. Tak więc, w tym przykładzie, `4o` wiesz, `40`że dane są złe: powinny być . Jeśli jednak nie masz kontroli nad danymi w rzeczywistym scenariuszu (powiedzmy, że otrzymujesz go z usługi sieci web), co z tym robisz? Jak to naprawić?
 
-Po osiągnięciu wyjątek, należy poprosić (i odpowiedzi) na kilka pytań:
+Po naciśnięciu wyjątku musisz zadać (i odpowiedzieć) na kilka pytań:
 
-* Jest to wyjątek po prostu usterkę, która będzie można naprawić? Lub:
+* Czy ten wyjątek jest tylko błędem, który można naprawić? Lub:
 
-* Ten wyjątek jest coś, co użytkownicy mogą występować?
+* Czy ten wyjątek jest czymś, co użytkownicy mogą napotkać?
 
-Jeśli jest to pierwsza, naprawić błąd. (W przykładowej aplikacji oznacza to poprawienie nieprawidłowych danych). Jeśli jest to ostatnie, może być konieczne obsłużenie wyjątku w kodzie przy użyciu bloku `try/catch` (w następnej sekcji znajdziesz inne możliwe strategie). W przykładowej aplikacji Zastąp następujący kod:
+Jeśli jest to pierwszy, naprawić błąd. (W przykładowej aplikacji oznacza to naprawienie złych danych). Jeśli jest to ten ostatni, może być konieczne obsłużenie wyjątku w kodzie przy użyciu `try/catch` bloku (przyjrzymy się innym możliwym strategiom w następnej sekcji). W przykładowej aplikacji zastąp następujący kod:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
 ```
 
-przy użyciu tego kodu:
+z tym kodem:
 
 ```csharp
 try
@@ -287,13 +287,13 @@ catch (SerializationException)
 }
 ```
 
-Blok `try/catch` ma koszt wydajności, więc będzie można używać go tylko wtedy, gdy ich naprawdę potrzebujesz, czyli gdzie (a) mogą wystąpić w wydanej wersji aplikacji i gdzie (b) Dokumentacja metody wskazuje, że należy sprawdzić, czy jest to wyjątek (przy założeniu, że dokumentacja jest kompletna). W wielu przypadkach odpowiednio obsłużyć wyjątek, a użytkownik nigdy nie musi wiedzieć o nim.
+Blok `try/catch` ma pewien koszt wydajności, więc będziesz chciał ich używać tylko wtedy, gdy naprawdę ich potrzebujesz, czyli gdzie (a) mogą wystąpić w wersji aplikacji i gdzie (b) dokumentacja metody wskazuje, że należy sprawdzić wyjątek (przy założeniu, że dokumentacja jest kompletna!). W wielu przypadkach można obsługiwać wyjątek odpowiednio i użytkownik nigdy nie będzie musiał wiedzieć o tym.
 
-Poniżej przedstawiono kilka ważnych wskazówki dotyczące obsługi wyjątków:
+Oto kilka ważnych wskazówek dotyczących obsługi wyjątków:
 
-* Unikaj używania pustego bloku catch, takiego jak `catch (Exception) {}`, który nie podejmuje odpowiednich działań, aby uwidocznić lub obsłużyć błąd. Blok catch pusta lub informacyjne można ukryć wyjątki i może sprawić, że kod utrudnia debugowanie zamiast łatwiejsze.
+* Należy unikać używania pustego bloku catch, takiego jak `catch (Exception) {}`, który nie podejmuje odpowiednich działań w celu udostępnienia lub obsługi błędu. Pusty lub niepoinformacyjny blok catch może ukryć wyjątki i może utrudnić debugowanie kodu zamiast łatwiejsze.
 
-* Użyj bloku `try/catch` wokół konkretnej funkcji, która zgłasza wyjątek (`ReadObject`, w aplikacji przykładowej). Jeśli używasz wokół większych fragmentów kodu znajdą ukrywanie lokalizacji błędu. Na przykład nie należy używać bloku `try/catch` wokół wywołania funkcji nadrzędnej `ReadToObject`, pokazanej tutaj lub nie wiadomo, gdzie wystąpił wyjątek.
+* Użyj `try/catch` bloku wokół określonej funkcji, która`ReadObject`zgłasza wyjątek ( , w przykładowej aplikacji). Jeśli używasz go wokół większego fragmentu kodu, kończy się ukrywanie lokalizacji błędu. Na przykład nie należy `try/catch` używać bloku wokół wywołania `ReadToObject`funkcji nadrzędnej, wyświetlane w tym miejscu, lub nie wiadomo dokładnie, gdzie wystąpił wyjątek.
 
     ```csharp
     // Don't do this
@@ -306,19 +306,19 @@ Poniżej przedstawiono kilka ważnych wskazówki dotyczące obsługi wyjątków:
     }
     ```
 
-* W przypadku nieznanych funkcji, które są dołączane do aplikacji, szczególnie tych, które współdziałają z danymi zewnętrznymi (takimi jak żądanie sieci Web), zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki może zgłosić funkcja. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
+* W przypadku nieznanych funkcji, które można uwzględnić w aplikacji, zwłaszcza tych, które wchodzą w interakcję z danymi zewnętrznymi (takich jak żądanie sieci web), sprawdź dokumentację, aby zobaczyć, jakie wyjątki funkcja może zgłosić. Może to być informacje krytyczne dla prawidłowej obsługi błędów i debugowania aplikacji.
 
-W przypadku przykładowej aplikacji Popraw `SerializationException` w metodzie `GetJsonData`, zmieniając `4o` na `40`.
+W przypadku przykładowej `SerializationException` aplikacji `GetJsonData` napraw metodę, zmieniając `4o` na `40`.
 
-## <a name="clarify-your-code-intent-by-using-assert"></a>Wyjaśnienia intencji Twojego kodu za pomocą potwierdzeń
+## <a name="clarify-your-code-intent-by-using-assert"></a>Wyjaśnij zamiar kodu za pomocą potwierdzenia
 
-Kliknij przycisk **Uruchom** ![ponownie uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl** + **SHIFT** + **F5**). Spowoduje to ponowne uruchomienie aplikacji w mniejszej liczby czynności. Zostaną wyświetlone następujące dane wyjściowe, w oknie konsoli.
+Kliknij przycisk **Uruchom ponownie** ![aplikację](../debugger/media/dbg-tour-restart.png "Uruchom aplikację RestartApp") na pasku narzędzi Debugowania **(Ctrl** + **Shift** + **F5**). Spowoduje to ponowne uruchomienie aplikacji w mniejszej liczbie kroków. W oknie konsoli są widoczne następujące dane wyjściowe.
 
 ![Wartość null w danych wyjściowych](../debugger/media/write-better-code-using-assert-null-output.png)
 
-Możesz zobaczyć coś w poniższych danych wyjściowych, który nie jest całkowicie poprawny. **Nazwa** i **nazwisko** dla trzeciego rekordu są puste!
+Widać w tym wyjściu coś, co nie jest w porządku. **nazwa i** **nazwisko** dla trzeciego rekordu są puste!
 
-Jest to dobry moment, aby poznać przydatną technikę kodowania, często nieużywaną, która polega na wykorzystaniu instrukcji `assert` w funkcjach. Dodając następujący kod, należy uwzględnić sprawdzanie środowiska uruchomieniowego, aby upewnić się, że `firstname` i `lastname` nie są `null`. Zastąp następujący kod w metodzie `UpdateRecords`:
+Jest to dobry moment, aby porozmawiać o pomocnej praktyce kodowania, często niedostatecznie stosowanej, czyli używania `assert` instrukcji w funkcjach. Dodając następujący kod, należy dołączyć sprawdzanie środowiska uruchomieniowego, aby upewnić się, że `firstname` nie `lastname` `null`są . Zastąp następujący `UpdateRecords` kod w metodzie:
 
 ```csharp
 if (existingUser == false)
@@ -341,28 +341,28 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-Po dodaniu `assert` instrukcji, takich jak to, do funkcji w trakcie procesu tworzenia, możesz pomóc określić cel kodu. W poprzednim przykładzie możemy określ następujące ustawienia:
+Dodając `assert` instrukcje takie jak ten do funkcji podczas procesu tworzenia, można określić intencji kodu. W poprzednim przykładzie określamy następujące elementy:
 
-* Prawidłowy ciąg jest wymagany dla imię
-* Prawidłowy ciąg jest wymagany dla nazwisko
+* Prawidłowy ciąg jest wymagany dla imienia
+* Prawidłowy ciąg jest wymagany dla nazwiska
 
-Określając opcje w ten sposób, możesz wymusić wymagań. Jest to proste i przydatną metodę, która służy do powierzchni błędów podczas projektowania. (instrukcje`assert` są również używane jako element główny w testach jednostkowych).
+Określając intencji w ten sposób, można wymusić wymagania. Jest to prosta i przydatna metoda, której można użyć do tworzenia błędów podczas tworzenia. (Instrukcje`assert` są również używane jako główny element w testach jednostkowych.)
 
-Kliknij przycisk **Uruchom** ![ponownie uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl** + **SHIFT** + **F5**).
+Kliknij przycisk **Uruchom ponownie** ![aplikację](../debugger/media/dbg-tour-restart.png "Uruchom aplikację RestartApp") na pasku narzędzi Debugowania **(Ctrl** + **Shift** + **F5**).
 
 > [!NOTE]
 > Kod `assert` jest aktywny tylko w kompilacji debugowania.
 
-Po ponownym uruchomieniu debuger zatrzymuje się w instrukcji `assert`, ponieważ wyrażenie `users[i].firstname != null` oblicza `false` zamiast `true`.
+Po `assert` ponownym uruchomieniu debuger wstrzymuje instrukcję, ponieważ wyrażenie `true` `users[i].firstname != null` ocenia zamiast `false` .
 
-![Asercja rozwiązuje na wartość false](../debugger/media/write-better-code-using-assert.png)
+![Assert rozpoznaje fałsz](../debugger/media/write-better-code-using-assert.png)
 
-Wystąpił błąd `assert` informuje o problemie, który należy zbadać. `assert` może obejmować wiele scenariuszy, w których niekoniecznie widzisz wyjątek. W tym przykładzie użytkownik nie zobaczy wyjątku, a wartość `null` zostanie dodana jako `firstname` na liście rekordów. Może to spowodować problemy później (takie jak widać w danych wyjściowych konsoli) i może być trudniejsze do debugowania.
+Błąd `assert` informuje, że istnieje problem, który należy zbadać. `assert`może obejmować wiele scenariuszy, w których nie zawsze widzisz wyjątek. W tym przykładzie użytkownik nie zobaczy wyjątku, `null` a `firstname` wartość zostanie dodana, jak na liście rekordów. Może to spowodować problemy później (takie jak widać w danych wyjściowych konsoli) i może być trudniejsze do debugowania.
 
 > [!NOTE]
-> W scenariuszach, w których wywoływana jest metoda dla `null` wartość, `NullReferenceException` wyniki. Zwykle chcesz uniknąć używania bloku `try/catch` dla ogólnego wyjątku, czyli wyjątku, który nie jest powiązany z określoną funkcją biblioteki. Każdy obiekt może zgłosić `NullReferenceException`. Jeśli nie masz pewności, sprawdź w dokumentacji dotyczącej funkcji biblioteki.
+> W scenariuszach, w których `null` można wywołać metodę na wartość, `NullReferenceException` wyniki. Zwykle chcesz uniknąć używania `try/catch` bloku dla wyjątku ogólnego, czyli wyjątku, który nie jest związany z określoną funkcją biblioteki. Każdy obiekt może `NullReferenceException`rzucić . Sprawdź dokumentację funkcji biblioteki, jeśli nie masz pewności.
 
-Podczas procesu debugowania warto zachować konkretną instrukcję `assert`, dopóki nie będzie wiadomo, że trzeba ją zamienić na rzeczywistą poprawkę kodu. Załóżmy, że możesz zdecydować, czy użytkownik może wystąpić wyjątek w kompilacji wydania aplikacji. W takim przypadku musisz wykonać refaktoryzację kodu, aby upewnić się, że Twoja aplikacja nie zgłosić wyjątek krytyczny lub spowodować inny błąd. Tak aby rozwiązać ten kod, Zastąp następujący kod:
+Podczas procesu debugowania dobrze jest zachować `assert` określoną instrukcję, dopóki nie wiesz, że musisz zastąpić ją rzeczywistą poprawką kodu. Załóżmy, że zdecydujesz, że użytkownik może napotkać wyjątek w kompilacji wersji aplikacji. W takim przypadku należy refaktoryzuje kod, aby upewnić się, że aplikacja nie zgłasza wyjątek krytyczny lub spowodować inny błąd. Tak więc, aby naprawić ten kod, zastąp następujący kod:
 
 ```csharp
 if (existingUser == false)
@@ -370,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-przy użyciu tego kodu:
+z tym kodem:
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)
@@ -378,9 +378,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-Korzystając z tego kodu, spełniasz wymagania dotyczące kodu i upewnij się, że rekord o wartości `firstname` lub `lastname` `null` nie został dodany do danych.
+Korzystając z tego kodu, należy spełnić wymagania dotyczące kodu `firstname` i `lastname` upewnij `null` się, że rekord o wartości lub wartości nie jest dodawany do danych.
 
-W tym przykładzie dodaliśmy dwie `assert` instrukcji wewnątrz pętli. Zazwyczaj w przypadku używania `assert`najlepiej dodać instrukcje `assert` w punkcie wejścia (początku) funkcji lub metody. Obecnie przeglądasz metodę `UpdateRecords` w przykładowej aplikacji. W tej metodzie wiadomo, że masz problemy, jeśli jeden z argumentów metody jest `null`, więc sprawdź je w instrukcji `assert` w punkcie wejścia funkcji.
+W tym przykładzie dodaliśmy dwie `assert` instrukcje wewnątrz pętli. Zazwyczaj podczas korzystania `assert`z programu najlepiej `assert` jest dodać instrukcje w punkcie wejścia (początek) funkcji lub metody. Aktualnie przeglądasz metodę `UpdateRecords` w przykładowej aplikacji. W tej metodzie wiesz, że masz kłopoty, `null`jeśli jeden z argumentów metody jest , więc sprawdź je zarówno z instrukcją `assert` w punkcie wejścia funkcji.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -389,37 +389,37 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-W przypadku powyższych instrukcji zamiarem jest załadowanie istniejących danych (`db`) i pobranie nowych danych (`users`) przed aktualizacją.
+W przypadku poprzednich instrukcji intencją jest załadowanie`db`istniejących danych (`users`) i pobranie nowych danych ( ) przed zaktualizowaniem czegokolwiek.
 
-Można użyć `assert` z dowolnym rodzajem wyrażenia, które jest rozpoznawane jako `true` lub `false`. Na przykład, można dodać instrukcję `assert` taką jak.
+Można użyć `assert` z dowolnego rodzaju wyrażenie, `true` `false`które rozwiązuje lub . Na przykład można dodać takie `assert` stwierdzenie.
 
 ```csharp
 Debug.Assert(users[0].points > 0);
 ```
 
-Powyższy kod jest przydatne, jeśli chcesz określić następujące opcje: nową wartość punktu większą niż zero (0) jest wymagany do zaktualizowania rekordu użytkownika.
+Poprzedni kod jest przydatne, jeśli chcesz określić następujące intencji: nowa wartość punktu większa niż zero (0) jest wymagana do aktualizacji rekordu użytkownika.
 
 ## <a name="inspect-your-code-in-the-debugger"></a>Sprawdzanie kodu w debugerze
 
-OK teraz, gdy zostały rozwiązane wszystkie krytyczne zasoby, które jest nie tak z przykładowej aplikacji, możesz przejść na inne rzeczy ważne!
+OK, teraz, gdy naprawiłeś wszystko, co jest krytyczne, co jest nie tak z przykładową aplikacją, możesz przejść do innych ważnych rzeczy!
 
-Pokazaliśmy pomocnika wyjątków debugera, ale debuger jest znacznie bardziej zaawansowane narzędzie, które umożliwia także wykonywać inne czynności, takie jak kroku przez kod, aby zbadać jego zmienne. Te bardziej zaawansowanych możliwości są przydatne w wielu scenariuszach, w szczególności następujące:
+Pokazaliśmy Ci debugera wyjątek Pomocnika, ale debuger jest znacznie bardziej zaawansowane narzędzie, które pozwala również zrobić inne rzeczy, takie jak krok po kroku przez kod i sprawdzić jego zmienne. Te bardziej zaawansowane funkcje są przydatne w wielu scenariuszach, szczególnie w następujących przypadkach:
 
-* Podjęto próbę wyizolować błąd środowiska uruchomieniowego w kodzie, ale nie można użyć go za pomocą metod i narzędzi omówionych wcześniej.
+* Próbujesz wyizolować błąd środowiska uruchomieniowego w kodzie, ale nie można tego zrobić przy użyciu metod i narzędzi wcześniej omówione.
 
-* Chcesz zweryfikować Twojego kodu, to znaczy, obejrzyj podczas jego uruchamiania, aby upewnić się, jest zachowuje się w taki sposób, w których oczekujesz i sposób, co ma się.
+* Chcesz sprawdzić poprawność kodu, czyli oglądać go podczas pracy, aby upewnić się, że zachowuje się w sposób oczekiwany i robi to, co chcesz.
 
-    Jest to istotne, aby obejrzeć kodu podczas jego uruchamiania. Możesz dowiedzieć się więcej o swoim kodzie w ten sposób i można często zidentyfikować usterek przed ich manifestu żadne objawy oczywiste.
+    Jest pouczające, aby obejrzeć kod, gdy działa. Możesz dowiedzieć się więcej o kodzie w ten sposób i często można zidentyfikować błędy, zanim zamanifestują one żadnych oczywistych objawów.
 
-Aby dowiedzieć się, jak korzystać z najważniejszych funkcji debugera, zobacz [debugowanie dla bezwzględnych początkujących](../debugger/debugging-absolute-beginners.md).
+Aby dowiedzieć się, jak korzystać z podstawowych funkcji debugera, zobacz [Debugowanie dla początkujących .](../debugger/debugging-absolute-beginners.md)
 
 ## <a name="fix-performance-issues"></a>Rozwiązywanie problemów z wydajnością
 
-Błędów innego rodzaju obejmują nieefektywny kod, który powoduje, że aplikacja działał wolno lub używają zbyt dużo pamięci. Ogólnie rzecz biorąc Optymalizacja wydajności jest coś, co można zrobić później w tworzenie aplikacji. Jednakże, możesz napotkać problemy z wydajnością wcześnie (na przykład, możesz zobaczyć część aplikacja działa wolno), i może być konieczne do testowania aplikacji przy użyciu narzędzi do profilowania na wczesnym etapie. Aby uzyskać więcej informacji na temat narzędzi profilowania, takich jak narzędzie użycie procesora CPU i Analizator pamięci, zobacz [najpierw przejrzyj narzędzia profilowania](../profiling/profiling-feature-tour.md).
+Błędy innego rodzaju obejmują nieefektywny kod, który powoduje, że aplikacja działa wolno lub używać zbyt dużo pamięci. Ogólnie rzecz biorąc, optymalizacja wydajności jest coś zrobić w dalszej części tworzenia aplikacji. Jednak można uruchomić na problemy z wydajnością wcześnie (na przykład widać, że niektóre części aplikacji działa wolno) i może być konieczne przetestowanie aplikacji z narzędzi profilowania na początku. Aby uzyskać więcej informacji na temat narzędzi profilowania, takich jak narzędzie Użycie procesora i analizator pamięci, zobacz [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule wyjaśniono sposób uniknięcia i rozwiązać wiele typowych błędów w kodzie i kiedy należy używać debugera. Następnie Dowiedz się więcej o naprawiaj usterki za pomocą debugera programu Visual Studio.
+W tym artykule dowiesz się, jak uniknąć i naprawić wiele typowych błędów w kodzie i kiedy używać debugera. Następnie dowiedz się więcej na temat używania debugera programu Visual Studio do rozwiązywania błędów.
 
 > [!div class="nextstepaction"]
-> [Debugowanie dla bezwzględnych początkujących](../debugger/debugging-absolute-beginners.md)
+> [Debugowanie dla całkowicie początkujących](../debugger/debugging-absolute-beginners.md)

@@ -1,49 +1,52 @@
 ---
 title: Generowanie deklaracji using
-ms.date: 02/19/2019
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
 helpviewer_keywords:
 - add missing usings
-ms.openlocfilehash: f3b3435e10d6bb9a71fd16b9286759b136c167f4
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544541"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094321"
 ---
-# <a name="add-missing-usings-in-visual-studio"></a>Dodaj brakujące użycia w programie Visual Studio
+# <a name="add-missing-usings-in-visual-studio"></a>Dodawanie brakujących za pomocą programu Visual Studio
 
-Dotyczy to generowanie kodu:
+To generowanie kodu dotyczy:
 
 - C#
 
-**Co:** Umożliwia natychmiastowe dodanie niezbędnych importów lub [dyrektyw](/dotnet/csharp/language-reference/keywords/using-directive) dla kodu kopiowania i wklejania.
+- Visual Basic
 
-**Kiedy:** Typowym sposobem jest skopiowanie kodu z różnych miejsc w projekcie lub w innych źródłach i wklejenie go do nowego kodu. Ta szybka akcja umożliwia znalezienie brakujących dyrektyw Imports dla kodu kopiującego i wklejonego, a następnie poprosi o ich dodanie. Ta naprawa kodu może również dodać odwołania z projektu do projektu.
+**Co:** Umożliwia natychmiastowe dodanie niezbędnych importów lub [za pomocą dyrektyw](/dotnet/csharp/language-reference/keywords/using-directive) dla kodu kopiowania i wklejanych.
 
-**Dlaczego:** Ponieważ szybka akcja automatycznie dodaje wymagane Importy, nie trzeba ręcznie kopiować dyrektyw `using` wymaganych przez kod.
+**Kiedy:** Jest powszechną praktyką, aby skopiować kod z różnych miejsc w projekcie lub innych źródeł i wkleić go do nowego kodu. Ta szybka akcja znajduje brakujące dyrektywy importu dla kodu kopiowania i wklejenia, a następnie monituje o ich dodanie. Ta poprawka kodu można również dodać odwołania z projektu do projektu.
 
-## <a name="add-missing-usings-refactoring"></a>Dodaj brakujące składniki przy użyciu refaktoryzacji
+**Dlaczego?** Ponieważ szybka akcja automatycznie dodaje niezbędne importy, nie trzeba ręcznie `using` kopiować dyrektyw, które są potrzebne do kodu.
 
-1. Skopiuj kod z pliku i wklej go do nowego, bez uwzględniania niezbędnych dyrektyw `using`. W wyniku błędu następuje poprawka kodu, która dodaje brakujące dyrektywy `using`.
+## <a name="add-missing-usings-refactoring"></a>Dodawanie brakujących użycia refaktoryzacji
+
+1. Skopiuj kod z pliku i wklej `using` go do nowego bez uwzględnienia niezbędnych dyrektyw. Wynikowy błąd towarzyszy poprawka kodu, która dodaje `using` brakujące dyrektywy.
 
     > [!NOTE]
-    > Tę sugestię należy włączyć w obszarze **narzędzia > opcje > edytorze tekstów > C# > Advanced > przy użyciu dyrektyw**.
+    > Tę sugestię należy włączyć w **obszarze Opcje > narzędzia > Edytor tekstu > C# > Zaawansowane > Korzystanie z dyrektyw**.
 
-2. Wybierz kombinację klawiszy CTRL +. , aby otworzyć menu **szybkie akcje i operacje refaktoryzacji** .
+2. Wybierz pozycję Ctrl+. , aby otworzyć menu **Szybkie akcje i Refaktoryzowania.**
 
     ![Generowanie deklaracji using](media/generate-using-codefix.png)
 
-3. Wybierz pozycję **using \<odwołanie\>;,** aby dodać brakujące odwołanie.
+3. Wybierz ** \<za\>pomocą odwołania ;** aby dodać brakujące odwołanie.
 
-    ![Generuj wynik użycia](media/generate-using-result.png)
+    ![Generowanie wyników użycia](media/generate-using-result.png)
 
 ## <a name="see-also"></a>Zobacz też
 

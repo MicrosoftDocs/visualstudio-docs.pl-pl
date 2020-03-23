@@ -16,51 +16,51 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b2570876ddaa03753b1c0d3fb9f9ddc772bbbcb8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114662"
 ---
-# <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji w trybie offline programu Visual Studio
+# <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalowanie certyfikatów wymaganych do instalacji programu Visual Studio w trybie offline
 
-Program Visual Studio jest przeznaczony głównie do zainstalowania na komputerze połączonym z Internetem, ponieważ wiele składników są regularnie aktualizowane. Jednak za pomocą kilka dodatkowych kroków, istnieje możliwość wdrażanie programu Visual Studio w środowisku, w przypadku, gdy działającego połączenia internetowego jest niedostępny.
+Visual Studio jest przeznaczony przede wszystkim do zainstalowania na komputerze podłączonym do Internetu, ponieważ wiele składników są regularnie aktualizowane. Jednak z niektórych dodatkowych kroków, jest możliwe do wdrożenia programu Visual Studio w środowisku, w którym działające połączenie internetowe jest niedostępne.
 
-Aparat Instalatora programu Visual Studio instaluje tylko zawartość, która jest zaufana. Dzieje się tak, sprawdzając sygnatur Authenticode zawartości pobierany i weryfikowanie, czy cała zawartość jest zaufany, przed zainstalowaniem. Dzięki temu środowiska przed atakami gdzie zostanie naruszony lokalizacji pobierania. Program Visual Studio Instalator w związku z tym wymaga zainstalowania kilka standardowych główne firmy Microsoft i certyfikatów pośrednich i w górę do daty na komputerze użytkownika. Jeśli komputer został zachowany na bieżąco z usługą Windows Update, certyfikaty podpisywania zwykle są aktualne. Jeśli komputer jest połączony z Internetem, podczas instalacji programu Visual Studio może odświeżyć certyfikaty w razie do weryfikowania podpisów plików. Jeśli komputer jest w trybie offline, certyfikaty musi być odświeżane w inny sposób.
+Aparat konfiguracji programu Visual Studio instaluje tylko zawartość, która jest zaufana. Odbywa się to poprzez sprawdzenie podpisów Authenticode pobieranej zawartości i sprawdzenie, czy cała zawartość jest zaufana przed zainstalowaniem. Dzięki temu środowisko jest bezpieczne przed atakami, w których lokalizacja pobierania jest zagrożona. Instalator programu Visual Studio wymaga zatem zainstalowania kilku standardowych certyfikatów głównych i pośrednich firmy Microsoft na komputerze użytkownika. Jeśli urządzenie zostało zaktualizowane w usłudze Windows Update, certyfikaty podpisywania są zwykle aktualne. Jeśli komputer jest połączony z Internetem, podczas instalacji program Visual Studio może odświeżyć certyfikaty w razie potrzeby w celu zweryfikowania podpisów plików. Jeśli urządzenie jest w trybie offline, certyfikaty muszą zostać odświeżone w inny sposób.
 
-## <a name="how-to-refresh-certificates-when-offline"></a>Jak odświeżyć certyfikaty, gdy jest w trybie offline
+## <a name="how-to-refresh-certificates-when-offline"></a>Jak odświeżyć certyfikaty w trybie offline
 
-Istnieją trzy opcje instalowania lub aktualizowania certyfikatów w środowisku, w trybie offline.
+Istnieją trzy opcje instalowania lub aktualizowania certyfikatów w środowisku offline.
 
-### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Opcja 1 — ręcznie instalować certyfikaty z folderu układu
+### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Opcja 1 — ręczne instalowanie certyfikatów z folderu układu
 
 ::: moniker range="vs-2017"
 
-Podczas tworzenia układu sieci wymagane certyfikaty zostaną pobrane do folderu certyfikatów. Następnie może ręcznie instalować certyfikaty dwukrotne kliknięcie każdego z plików certyfikatów, a następnie klikając polecenie za pomocą Kreatora Menedżera certyfikatów. Jeśli pojawi się pytanie o hasło, pozostaw to pole puste.
+Podczas tworzenia układu sieci niezbędne certyfikaty są pobierane do folderu Certyfikaty. Następnie można ręcznie zainstalować certyfikaty, klikając dwukrotnie każdy z plików certyfikatów, a następnie klikając kreatora Menedżera certyfikatów. Jeśli zostaniesz poproszony o podanie hasła, pozostaw to puste.
 
-**Aktualizacja**: Visual Studio 2017 w wersji 15.8 w wersji Preview 2 lub nowszej, możesz ręcznie zainstalować certyfikaty klikając prawym przyciskiem myszy każdy plik certyfikatu, wybierając Zainstaluj certyfikat, a następnie klikając polecenie za pomocą Kreatora Menedżera certyfikatów.
+**Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15.8 Preview 2 lub nowszej można ręcznie zainstalować certyfikaty, klikając prawym przyciskiem myszy każdy z plików certyfikatów, wybierając polecenie Zainstaluj certyfikat, a następnie klikając kreatora Menedżera certyfikatów.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Podczas tworzenia układu sieci wymagane certyfikaty zostaną pobrane do folderu certyfikatów. Certyfikaty można zainstalować ręcznie, klikając prawym przyciskiem myszy każdy plik certyfikatu, wybierając pozycję Zainstaluj certyfikat, a następnie klikając kreatora Menedżera certyfikatów. Jeśli pojawi się pytanie o hasło, pozostaw to pole puste.
+Podczas tworzenia układu sieci niezbędne certyfikaty są pobierane do folderu Certyfikaty. Certyfikaty można zainstalować ręcznie, klikając prawym przyciskiem myszy każdy z plików certyfikatów, wybierając polecenie Zainstaluj certyfikat, a następnie klikając kreatora Menedżera certyfikatów. Jeśli zostaniesz poproszony o podanie hasła, pozostaw to puste.
 
 ::: moniker-end
 
-### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opcja 2 — rozpowszechniania zaufanych głównych certyfikatów w środowisku przedsiębiorstwa
+### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opcja 2 — dystrybucja zaufanych certyfikatów głównych w środowisku przedsiębiorstwa
 
-Dla przedsiębiorstw mających maszyny w trybie offline, które nie mają najnowsze certyfikaty główne, administrator może użyć instrukcji na [Konfigurowanie zaufanych certyfikatów głównych i niedopuszczalne certyfikaty](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) strony, aby je zaktualizować.
+W przypadku przedsiębiorstw z komputerami w trybie offline, które nie mają najnowszych certyfikatów głównych, administrator może użyć instrukcji na stronie [Konfigurowanie zaufanych katalogów głównych i niedozwolonych certyfikatów,](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) aby je zaktualizować.
 
-### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Opcja 3 — certyfikaty Zainstaluj jako część inicjowanych przez skrypty wdrażania programu Visual Studio
+### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Opcja 3 — instalowanie certyfikatów w ramach wdrożenia skryptowego programu Visual Studio
 
-Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na klienckich stacjach roboczych, powinni wykonać następujące czynności:
+Jeśli skrypty wdrożenia programu Visual Studio w środowisku w trybie offline do stacji roboczych klienta, należy wykonać następujące kroki:
 
 ::: moniker range="vs-2017"
 
-1. Kopiuj [narzędzie Menedżer certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) w udziale instalacji (na przykład \\server\share\vs2017). Certmgr.exe nie jest częścią Windows, ale jest dostępny jako część [zestawu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Skopiuj [narzędzie Menedżera certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) \\do udziału instalacyjnego (na przykład server\share\vs2017). Program Certmgr.exe nie jest dołączony do samego systemu Windows, ale jest dostępny jako część [programu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-2. Utwórz plik wsadowy za pomocą następujących poleceń:
+2. Utwórz plik wsadowy z następującymi poleceniami:
 
    ```cmd
    certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Code Signing PCA 2011" -s -r LocalMachine CA
@@ -76,7 +76,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Aktualizacja**: dla programu Visual Studio 2017 w wersji Preview należy zachować 15,8 2 lub nowszego, utworzyć plik wsadowy za pomocą następujących poleceń:
+   **Aktualizacja**: W przypadku programu Visual Studio 2017 w wersji 15.8 Wersja zapoznawcza 2 lub nowsza utwórz plik wsadowy za pomocą następujących poleceń:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -86,7 +86,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
    
-   Alternatywnie można utworzyć plik wsadowy, który używa narzędzia Certutil. exe, które jest dostarczane z systemem Windows, przy użyciu następujących poleceń:
+   Alternatywnie należy utworzyć plik wsadowy, który używa pliku certutil.exe, który jest dostarczany z systemem Windows, z następującymi poleceniami:
    
       ```cmd
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
@@ -96,15 +96,15 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
 
-3. Wdróż plik wsadowy do klienta. To polecenie można uruchamiać z procesów z podwyższonym poziomem uprawnień.
+3. Wdrażanie pliku wsadowego na kliencie. To polecenie powinno być uruchamiane z procesu podwyższonego poziomu.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Skopiuj [narzędzie Menedżer certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr. exe) do udziału instalacyjnego (na przykład \\server\share\vs2019). Certmgr.exe nie jest częścią Windows, ale jest dostępny jako część [zestawu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Skopiuj [narzędzie Menedżera certyfikatów](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) \\do udziału instalacyjnego (na przykład server\share\vs2019). Program Certmgr.exe nie jest dołączony do samego systemu Windows, ale jest dostępny jako część [programu Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-2. Utwórz plik wsadowy za pomocą następujących poleceń:
+2. Utwórz plik wsadowy z następującymi poleceniami:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -114,7 +114,7 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
    
-   Alternatywnie można utworzyć plik wsadowy, który używa narzędzia Certutil. exe, które jest dostarczane z systemem Windows, przy użyciu następujących poleceń:
+   Alternatywnie należy utworzyć plik wsadowy, który używa pliku certutil.exe, który jest dostarczany z systemem Windows, z następującymi poleceniami:
    
       ```cmd
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
@@ -124,88 +124,88 @@ Jeśli to skryptów wdrażania programu Visual Studio w środowisku offline na k
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
 
-3. Wdróż plik wsadowy do klienta. To polecenie można uruchamiać z procesów z podwyższonym poziomem uprawnień.
+3. Wdrażanie pliku wsadowego na kliencie. To polecenie powinno być uruchamiane z procesu podwyższonego poziomu.
 
 ::: moniker-end
 
-## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Co to są w nim certyfikaty pliki certyfikatów?
+## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Jakie są pliki certyfikatów w folderze Certyfikaty?
 
 ::: moniker range="vs-2017"
 
-3\. Pliki p12, w tym folderze każdego zawierają pośredniego certyfikatu i certyfikatu głównego. Certyfikaty zainstalowane zostały większości systemów, które są aktualne z usługą Windows Update.
+Trzy . Pliki P12 w tym folderze zawierają certyfikat pośredni i certyfikat główny. Większość systemów, które są aktualne w usłudze Windows Update, ma już zainstalowane te certyfikaty.
 
 * **ManifestSignCertificates.p12** zawiera:
-  * Certyfikat pośredniego: **2011 UPW podpisywania kodu firmy Microsoft**
-    * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2011**
-    * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
+  * Certyfikat pośredni: **Podpisywanie kodu pca firmy Microsoft 2011**
+    * Niewymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
+  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2011**
+    * Wymagane w systemach Windows 7 z dodatkiem Service Pack 1, w których nie zainstalowano najnowszych aktualizacji systemu Windows.
 * **ManifestCounterSignCertificates.p12** zawiera:
-  * Certyfikat pośredniego: **2010 UPW sygnaturę czasową firmy Microsoft**
-    * Nie jest wymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
-  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2010**
-    * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
+  * Certyfikat pośredni: **Microsoft Time-Stamp PCA 2010**
+    * Niewymagane. Zwiększa wydajność w niektórych scenariuszach, jeśli jest obecny.
+  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2010**
+    * Wymagane dla systemów Windows 7 z dodatkiem Service Pack 1, w których nie są zainstalowane najnowsze aktualizacje systemu Windows.
 * **Vs_installer_opc. SignCertificates.p12** zawiera:
-  * Certyfikat pośredniego: **UPW podpisywania kodu firmy Microsoft**
-    * Wymagane we wszystkich systemach. Należy pamiętać, że systemy za pomocą wszystkie aktualizacje stosowane z witryny Windows Update nie mogą mieć ten certyfikat.
-  * Certyfikat główny: **Microsoft główny urząd certyfikacji**
-    * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+  * Certyfikat pośredni: **Podpisywanie kodu pca firmy Microsoft**
+    * Wymagane dla wszystkich systemów. Należy zauważyć, że systemy ze wszystkimi aktualizacjami zastosowanymi z usługi Windows Update mogą nie mieć tego certyfikatu.
+  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft**
+    * Wymagany. Ten certyfikat jest dostarczany z systemami z systemem Windows 7 lub nowszym.
 
-**Aktualizacja**: dla programu Visual Studio 2017 w wersji Preview należy zachować 15,8 2 lub nowszego, Instalator programu Visual Studio wymaga tylko główny certyfikaty do zainstalowania w systemie. Te certyfikaty są przechowywane w plikach. cer zamiast. p12.
+**Aktualizacja:** W przypadku programu Visual Studio 2017 w wersji 15.8 Wersja zapoznawcza 2 lub nowsza Instalator programu Visual Studio wymaga instalowania w systemie tylko certyfikatów głównych. Certyfikaty te są przechowywane w plikach cer zamiast .p12.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates. cer** zawiera:
-  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2011**
-    * Wymagany w systemach Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
-* **ManifestCounterSignCertificates. cer** zawiera:
-  * Certyfikat główny: **Microsoft główny certyfikat urzędu 2010**
-    * Wymagany dla systemów Windows 7 z dodatkiem SP1, które nie mają zainstalowanych najnowszych aktualizacji Windows.
-* **Vs_installer_opc. SignCertificates. cer** zawiera:
-  * Certyfikat główny: **Microsoft główny urząd certyfikacji**
-    * Wymagany. Ten certyfikat jest dostarczany z komputerów z systemami Windows 7 lub nowszy.
+* **ManifestSignCertificates.cer** zawiera:
+  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2011**
+    * Wymagane w systemach Windows 7 z dodatkiem Service Pack 1, w których nie zainstalowano najnowszych aktualizacji systemu Windows.
+* **ManifestCounterSignCertificates.cer** zawiera:
+  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft 2010**
+    * Wymagane dla systemów Windows 7 z dodatkiem Service Pack 1, w których nie są zainstalowane najnowsze aktualizacje systemu Windows.
+* **Vs_installer_opc. SignCertificates.cer** zawiera:
+  * Certyfikat główny: **Główny urząd certyfikacji firmy Microsoft**
+    * Wymagany. Ten certyfikat jest dostarczany z systemami z systemem Windows 7 lub nowszym.
 
-Instalator programu Visual Studio wymaga zainstalowania tylko certyfikatów głównych w systemie.
+Instalator programu Visual Studio wymaga tylko certyfikatów głównych, które mają być zainstalowane w systemie.
 
 ::: moniker-end
 
-## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Dlaczego są certyfikaty z folderu certyfikaty nie są instalowane automatycznie?
+## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Dlaczego certyfikaty z folderu Certyfikaty nie są instalowane automatycznie?
 
-Po podpis jest weryfikowany w środowisku, w trybie online, interfejsy API Windows są używane do pobierania i Dodaj certyfikaty do systemu. Weryfikacja, czy certyfikat jest zaufany, za pomocą ustawień administracyjnych występuje w trakcie tego procesu. Ten proces sprawdzania poprawności nie może wystąpić w środowiskach najbardziej w trybie offline. Ręczne instalowanie certyfikatów umożliwia Administratorzy przedsiębiorstwa w celu zapewnienia certyfikaty są zaufane i zgodne z zasadami zabezpieczeń organizacji.
+Po zweryfikowaniu podpisu w środowisku online interfejsy API systemu Windows są używane do pobierania i dodawania certyfikatów do systemu. Podczas tego procesu odbywa się weryfikacja, czy certyfikat jest zaufany i dozwolony za pomocą ustawień administracyjnych. Ten proces weryfikacji nie może wystąpić w większości środowisk w trybie offline. Ręczne instalowanie certyfikatów umożliwia administratorom przedsiębiorstwa zapewnienie, że certyfikaty są zaufane i spełniają zasady zabezpieczeń ich organizacji.
 
-## <a name="checking-if-certificates-are-already-installed"></a>Sprawdzanie, czy certyfikaty są już zainstalowany
+## <a name="checking-if-certificates-are-already-installed"></a>Sprawdzanie, czy certyfikaty są już zainstalowane
 
-Jest jednym ze sposobów, aby sprawdzić instalację systemu wykonaj następujące kroki:
+Jednym ze sposobów sprawdzenia systemu instalacjonowania jest wykonać następujące kroki:
 
-1. Uruchom **mmc.exe**.<br/>
-  a. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
-  b. Kliknij dwukrotnie **certyfikaty**, wybierz opcję **konto komputera**, a następnie kliknij przycisk **dalej**.<br/>
-  c. Wybierz **komputera lokalnego**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
-  d. Rozwiń **certyfikaty (komputer lokalny)** .<br/>
-  e. Rozwiń **zaufane główne urzędy certyfikacji**, a następnie wybierz pozycję **certyfikaty**.<br/>
-    * Sprawdź tę listę pod kątem certyfikatów głównych niezbędne.<br/>
+1. Uruchom **program mmc.exe**.<br/>
+  a. Kliknij **pozycję Plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
+  b. Kliknij dwukrotnie pozycję **Certyfikaty**, wybierz pozycję **Konto komputera**, a następnie kliknij przycisk **Dalej**.<br/>
+  d. Wybierz **pozycję Komputer lokalny**, kliknij pozycję **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
+  d. Rozwiń **certyfikaty (komputer lokalny)**.<br/>
+  e. Rozwiń pozycję **Zaufane główne urzędy certyfikacji**, a następnie wybierz pozycję **Certyfikaty**.<br/>
+    * Sprawdź tę listę niezbędnych certyfikatów głównych.<br/>
 
-   f. Rozwiń **pośrednie urzędy certyfikacji**, a następnie wybierz pozycję **certyfikaty**.<br/>
-    * Sprawdź tę listę pod kątem wymaganych certyfikatów pośrednich.<br/>
+   f. Rozwiń **węzeł Pośrednie urzędy certyfikacji**, a następnie wybierz pozycję **Certyfikaty**.<br/>
+    * Sprawdź tę listę wymaganych certyfikatów pośrednich.<br/>
 
-2. Kliknij pozycję **plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
-  a. Kliknij dwukrotnie **certyfikaty**, wybierz opcję **Moje konto użytkownika**, kliknij przycisk **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
-  b. Rozwiń **Certyfikaty — bieżący użytkownik**.<br/>
-  c. Rozwiń **pośrednie urzędy certyfikacji**, a następnie wybierz pozycję **certyfikaty**.<br/>
-    * Sprawdź tę listę pod kątem wymaganych certyfikatów pośrednich.<br/>
+2. Kliknij **pozycję Plik**, a następnie wybierz pozycję **Dodaj/Usuń przystawkę**.<br/>
+  a. Kliknij dwukrotnie **pozycję Certyfikaty**, wybierz pozycję **Moje konto użytkownika**, kliknij pozycję **Zakończ**, a następnie kliknij przycisk **OK**.<br/>
+  b. Rozwiń **certyfikaty — bieżący użytkownik**.<br/>
+  d. Rozwiń **węzeł Pośrednie urzędy certyfikacji**, a następnie wybierz pozycję **Certyfikaty**.<br/>
+    * Sprawdź tę listę wymaganych certyfikatów pośrednich.<br/>
 
-Jeśli nazwy certyfikatów nie były w **wystawiony dla** kolumn muszą być zainstalowane.  Jeśli pośredniego certyfikatu tylko w **bieżącego użytkownika** certyfikat pośredniego przechowywania, a następnie jest dostępna tylko dla użytkownika, który jest zalogowany. Użytkownik może być konieczne zainstalowanie go innym użytkownikom.
+Jeśli nazwy certyfikatów nie znajdowały się w kolumnach **Wystawione do,** muszą zostać zainstalowane.  Jeśli certyfikat pośredni znajdował się tylko w magazynie bieżących certyfikatów pośrednich **użytkownika,** jest on dostępny tylko dla zalogowanego użytkownika. Może być konieczne zainstalowanie go dla innych użytkowników.
 
-## <a name="install-visual-studio"></a>Zainstaluj program Visual Studio
+## <a name="install-visual-studio"></a>Instalacja programu Visual Studio
 
-Po zainstalowaniu certyfikatów, za pomocą instrukcji z kontynuacją wdrożenia programu Visual Studio [wdrażania z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) części "Tworzenie instalacji sieciowej programu Visual Studio".
+Po zainstalowaniu certyfikatów wdrożenie programu Visual Studio można kontynuować przy użyciu instrukcji z sekcji [Wdrażanie z instalacji sieciowej](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) na stronie "Tworzenie instalacji sieciowej programu Visual Studio".
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-* [Instalowanie programu Visual Studio](install-visual-studio.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
-* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalacja programu Visual Studio](install-visual-studio.md)
+* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)

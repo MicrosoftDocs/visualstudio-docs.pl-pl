@@ -1,5 +1,5 @@
 ---
-title: Krok 5. Dodawanie kontrolek do formularza
+title: 'Krok 5: Dodawanie kontrolek do formularza'
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -11,82 +11,82 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579362"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>Krok 5. Dodawanie kontrolek do formularza
+# <a name="step-5-add-controls-to-your-form"></a>Krok 5: Dodawanie kontrolek do formularza
 
-W tym kroku dodasz kontrolki, takie jak kontrolka <xref:System.Windows.Forms.PictureBox> i kontrolka <xref:System.Windows.Forms.CheckBox> do formularza. Następnie możesz dodać kontrolki <xref:System.Windows.Forms.Button> do formularza.
+W tym kroku należy dodać formanty, takie jak <xref:System.Windows.Forms.PictureBox> formant i <xref:System.Windows.Forms.CheckBox> formant, do formularza. Następnie należy <xref:System.Windows.Forms.Button> dodać formanty do formularza.
 
-## <a name="how-to-add-controls-to-your-form"></a>Jak dodać kontrolki do formularza
+## <a name="how-to-add-controls-to-your-form"></a>Jak dodać formanty do formularza
 
-1. Wybierz kartę **Przybornik** po lewej stronie środowiska IDE programu Visual Studio (lub naciśnij klawisz **Ctrl**+**Alt**+**X**), a następnie rozwiń grupę **formanty wspólne** . Pokazuje najczęściej używane kontrolki, które są widoczne w formularzach.
+1. Wybierz kartę **Przybornik** po lewej stronie środowiska IDE programu Visual Studio (lub naciśnij klawisz **Ctrl**+**Alt**+**X),** a następnie rozwiń grupę **Typowe formanty.** Spowoduje to wyświetlone najbardziej typowe formanty widoczne w formularzach.
 
-1. Kliknij dwukrotnie element **PictureBox** , aby dodać formant PictureBox do formularza. Ponieważ TableLayoutPanel jest zadokowane, aby wypełnić formularz, IDE dodaje formant PictureBox do pierwszej pustej komórki (górny lewy róg).
+1. Kliknij dwukrotnie element **PictureBox,** aby dodać kontrolkę PictureBox do formularza. Ponieważ TableLayoutPanel jest zadokowany, aby wypełnić formularz, IDE dodaje picturebox kontrolki do pierwszej pustej komórki (w lewym górnym rogu).
 
-1. Wybierz nowy formant **PictureBox** , aby go zaznaczyć, a następnie wybierz czarny trójkąt w nowym formancie PictureBox, aby wyświetlić jego listę zadań, jak pokazano na poniższym zrzucie ekranu.
+1. Wybierz nowy formant **PictureBox,** aby go zaznaczyć, a następnie wybierz czarny trójkąt na nowym formancie PictureBox, aby wyświetlić listę zadań, jak pokazano na poniższym zrzucie ekranu.
 
-    ![zadania PictureBox](../ide/media/express_pictureboxtasks.png)<br/>PictureBox * * * *zadania**
-
-    > [!NOTE]
-    > Jeśli przypadkowo dodasz niewłaściwy typ kontrolki do TableLayoutPanel, możesz go usunąć. Kliknij prawym przyciskiem myszy kontrolkę, a następnie wybierz polecenie **Usuń** w menu kontekstowym. Można również usunąć kontrolki z formularza przy użyciu paska menu. Na pasku menu wybierz polecenie **edytuj** > **cofnij**lub **Edytuj** > **Usuń**.
-
-1. W menu **zadania PictureBox** w formancie **PictureBox** wybierz łącze **Dock w kontenerze nadrzędnym** . Spowoduje to automatyczne ustawienie właściwości **Dock dokowania** do **wypełnienia**. Aby to zobaczyć, wybierz formant **PictureBox** , aby go zaznaczyć, przejdź do okna **Właściwości** i upewnij się, że właściwość **Dock** jest ustawiona na **Fill**.
-
-1. Ustaw element PictureBox w obu kolumnach, zmieniając jego właściwość **ColumnSpan** . W elemencie **PictureBox**wybierz formant **PictureBox** i ustaw jego właściwość **ColumnSpan** na **2**. Ponadto, gdy element PictureBox jest pusty, chcesz wyświetlić pustą ramkę. Ustaw właściwość **BorderStyle** na **Fixed3D**.
+    ![Zadania PictureBox](../ide/media/express_pictureboxtasks.png)<br/>PictureBox*** *zadania**
 
     > [!NOTE]
-    > Jeśli właściwość **ColumnSpan** nie jest widoczna dla elementu PictureBox, prawdopodobnie element PictureBox został dodany do formularza zamiast TableLayoutPanel. Aby rozwiązać ten problem, wybierz element **PictureBox**, usuń go, wybierz **TableLayoutPanel**, a następnie Dodaj nowy PictureBox.
+    > Jeśli przypadkowo dodać niewłaściwy typ formantu do TableLayoutPanel, można go usunąć. Kliknij prawym przyciskiem myszy formant, a następnie w menu kontekstowym wybierz polecenie **Usuń.** Formanty można również usunąć z formularza za pomocą paska menu. Na pasku menu wybierz pozycję **Edytuj** > **cofnij**lub **Edytuj** > **usuń**.
 
-1. Wybierz **TableLayoutPanel** w formularzu, a następnie Dodaj kontrolkę pola wyboru do formularza. Kliknij dwukrotnie element **CheckBox** w **przyborniku** , aby dodać nową kontrolkę CheckBox do następnej wolnej komórki w tabeli. Ponieważ element PictureBox przyjmuje pierwsze dwie komórki w TableLayoutPanel, formant CheckBox zostanie dodany do lewej dolnej komórki. Wybierz właściwość **Text** i wpisz **ciąg Rozciągnij**, jak pokazano na poniższej ilustracji.
+1. W menu **Zadania picturebox** z kontrolki **PictureBox** wybierz łącze **Dok w kontenerze nadrzędnym.** Spowoduje to automatyczne ustawienie właściwości **PictureBox Dock** na **Fill**. Aby to zobaczyć, wybierz kontrolkę **PictureBox,** aby ją **zaznaczyć,** przejdź do okna Właściwości i upewnij się, że właściwość **Dock** jest **ustawiona**na Wypełnienie .
 
-    ![kontrolka TextBox z właściwością rozciągania](../ide/media/express_pictureviewercheckbox.png)<br/>***TextBox*** — *formant z* *właściwością* ***rozciągania***
-
-1. Wybierz **TableLayoutPanel** w formularzu, a następnie przejdź do grupy **kontenery** w **przyborniku** (gdzie masz formant TableLayoutPanel), a następnie kliknij dwukrotnie element **FlowLayoutPanel** , aby dodać nową kontrolkę do ostatniej komórki (prawy dolny). Następnie zadokuj FlowLayoutPanel w TableLayoutPanel. Możesz to zrobić, wybierając pozycję **Dock w kontenerze nadrzędnym** na liście zadań czarny trójkąta FlowLayoutPanel lub ustawiając właściwość **Dock** FlowLayoutPanel na **Fill**.
+1. Upewnij się PictureBox obejmują obie kolumny, zmieniając jego **ColumnSpan** właściwości. W **picturebox**wybierz **picturebox** kontrolki i ustawić jego **ColumnSpan** właściwość **na 2**. Ponadto, gdy PictureBox jest pusty, chcesz pokazać pustą ramkę. Ustaw jego **BorderStyle** właściwość **Fixed3D**.
 
     > [!NOTE]
-    > <xref:System.Windows.Forms.FlowLayoutPanel> jest kontenerem, który rozmieszcza inne kontrolki w wierszu, jeden po drugim. Zmiana rozmiaru FlowLayoutPanel powoduje, że wszystkie kontrolki są układane w jednym wierszu, jeśli ma to miejsce. W przeciwnym razie Rozmieść je w wierszach, jeden na drugim. <br/><br/>W tym miejscu będziesz używać FlowLayoutPanel do przechowywania czterech przycisków. Jeśli przyciski są układane na drugim, podczas dodawania ich, przed dodaniem przycisków upewnij się, że wybrano FlowLayoutPanel. <br/><br/>(Zazwyczaj każda komórka zawiera tylko jeden formant. W tym przykładzie Dolna prawa komórka TableLayoutPanel zawiera cztery kontrolki przycisku. Dlaczego?  Ponieważ FlowLayoutPanel jest kontrolką kontenera, która jest kontrolką w komórce, która zawiera inne kontrolki.
+    > Jeśli nie widzisz **ColumnSpan** właściwości dla PictureBox, to jest prawdopodobne, że PictureBox został dodany do formularza, a nie TableLayoutPanel. Aby rozwiązać ten problem, wybierz **picturebox**, usuń go, wybierz **TableLayoutPanel**, a następnie dodaj nowy PictureBox.
+
+1. Wybierz **panel TableLayout w** formularzu, a następnie dodaj kontrolkę Pole wyboru do formularza. Kliknij dwukrotnie element **Pola wyboru** w **przyborniku,** aby dodać nowy kontrolkę CheckBox do następnej bezpłatnej komórki w tabeli. Ponieważ PictureBox zajmuje pierwsze dwie komórki w TableLayoutPanel, CheckBox formant jest dodawany do lewej dolnej komórki. Wybierz **właściwość Tekst** i wpisz wyraz **Rozciągnij**, jak pokazano na poniższej ilustracji.
+
+    ![Formant TextBox z właściwością Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Formant TextBox*** *z* *właściwością* ***Stretch***
+
+1. Wybierz **TableLayoutPanel** w formularzu, a następnie przejdź do grupy **Kontenery** w **przyborniku** (gdzie masz kontrolkę TableLayoutPanel) i kliknij dwukrotnie element **FlowLayoutPanel,** aby dodać nowy formant do ostatniej komórki (w prawym dolnym rogu). Następnie zadokuj panel FlowLayout w panelu TableLayoutPanel. Można to zrobić, wybierając dock **w kontenerze nadrzędnym** na czarnej liście zadań FlowLayoutPanel lub ustawiając właściwość **Dok w** pliku FlowLayoutPanel na **Wypełnienie**.
+
+    > [!NOTE]
+    > A <xref:System.Windows.Forms.FlowLayoutPanel> jest kontenerem, który rozmieszcza inne formanty w wierszu, jeden po drugim. Podczas ponownego rozmiaru FlowLayoutPanel, określa wszystkie jego formanty w jednym wierszu, jeśli ma na to miejsce. W przeciwnym razie układa je w wierszach, jeden na drugim. <br/><br/>W tym miejscu użyjesz FlowLayoutPanel do przechowywania czterech przycisków. Jeśli przyciski rozmieszczają jeden na drugim podczas dodawania, przed dodaniem przycisków upewnij się, że wybrano panel FlowLayoutPanel. <br/><br/>(Zazwyczaj każda komórka zawiera tylko jedną formant. W tym przykładzie dolna komórka tablelayoutPanel zawiera cztery formanty przycisku. Dlaczego?  Ponieważ FlowLayoutPanel jest formantem kontenera, który jest formantem w komórce, która przechowuje inne formanty.)
 
 ## <a name="to-add-buttons"></a>Aby dodać przyciski
 
-1. Wybierz nowo dodany FlowLayoutPanel. Przejdź do obszaru **wspólne kontrolki** w **przyborniku** i kliknij dwukrotnie element **Button** , aby dodać kontrolkę przycisku o nazwie **Button1** do FlowLayoutPanel. Powtarzaj, aby dodać inny przycisk. IDE Określa, że istnieje już przycisk o nazwie **Button1** i wywołuje następną **Button2**.
+1. Wybierz nowy panel FlowLayoutPanel, który został dodany. Przejdź do **pozycji Typowe formanty** w **przyborniku** i kliknij dwukrotnie element **Przycisku,** aby dodać kontrolkę **przycisku** o nazwie button1 do panelu FlowLayoutPanel. Powtórz tę czynność, aby dodać kolejny przycisk. IDE określa, że istnieje już przycisk o nazwie **button1** i wywołuje następny **przycisk2**.
 
-1. Zazwyczaj należy dodać inne przyciski przy użyciu **przybornika**. Tym razem wybierz pozycję **Button2**, a następnie na pasku menu wybierz polecenie **Edytuj** > **Kopiuj** (lub naciśnij klawisz **Ctrl**+**C**). Następnie wybierz pozycję **edytuj** > **Wklej** na pasku menu (lub naciśnij klawisz **Ctrl**+**V**), aby wkleić kopię przycisku. Teraz wklej je ponownie. Należy zauważyć, że IDE dodaje **button3** i **button4** do FlowLayoutPanel.
-
-    > [!NOTE]
-    > Można kopiować i wklejać dowolną kontrolkę. Nazwy IDE i umieszczają w sposób logiczny nowe kontrolki. W przypadku wklejenia kontrolki do kontenera IDE wybiera następne miejsce logiczne dla umieszczania.
-
-1. Wybierz pierwszy przycisk i ustaw jego właściwość **Text** , aby **wyświetlić obraz**. Następnie ustaw właściwości **tekst** dla kolejnych trzech przycisków, aby **wyczyścić obraz**, **Ustaw kolor tła**i **Zamknij**.
-
-1. Zmień rozmiar przycisków i rozmieść je tak, aby były wyrównane do prawej strony panelu. Wybierz **FlowLayoutPanel** i przyjrzyj się jego właściwości **FlowDirection** . Zmień to ustawienie na wartość **RightToLeft**.
-
-   Przyciski powinny być wyrównane do prawej strony komórki i odwrotnie w kolejności, w której przycisk **Pokaż obraz** znajduje się po prawej stronie.
+1. Zazwyczaj inne przyciski można dodać za pomocą **przybornika**. Tym razem wybierz **button2**, a następnie z paska menu wybierz polecenie **Edytuj** > **kopię** (lub naciśnij klawisz **Ctrl**+**C**). Następnie wybierz polecenie **Edytuj** > **wklej** z paska menu (lub naciśnij klawisz **Ctrl**+**V),** aby wkleić kopię przycisku. Teraz wklej go ponownie. Należy zauważyć, że IDE dodaje **button3** i **button4** do FlowLayoutPanel.
 
     > [!NOTE]
-    > Jeśli przyciski są nadal w niewłaściwej kolejności, możesz przeciągnąć przyciski wokół FlowLayoutPanel, aby zmienić ich kolejność w dowolnej kolejności. Możesz wybrać przycisk i przeciągnąć go w lewo lub w prawo.
+    > Można skopiować i wkleić dowolną formant. IDE nazwy i umieszcza nowe formanty w logiczny sposób. Jeśli wklejasz formant do kontenera, IDE wybiera następne miejsce logiczne do umieszczenia.
 
-1. Wybierz przycisk **Zamknij** , aby go zaznaczyć. Aby wybrać pozostałe przyciski w tym samym czasie, naciśnij i przytrzymaj klawisz **Ctrl** i wybierz je.
+1. Wybierz pierwszy przycisk i ustaw jego **text** właściwość **pokaż obraz**. Następnie ustaw właściwości **Tekst** następnych trzech przycisków, aby **wyczyścić obraz**, **Ustaw kolor tła**i **Zamknij**.
 
-   Po wybraniu wszystkich przycisków przejdź do okna **Właściwości** i przewiń do właściwości **AutoSize** . Ta właściwość nakazuje przyciskowi automatyczną zmianę rozmiaru w celu dopasowania do całego tekstu. Ustaw dla niego **wartość true**.
+1. Dodajmy przyciski i ułóżmy je tak, aby były wyrównane do prawej strony panelu. Wybierz **FlowLayoutPanel** i spójrz na jego **Właściwość FlowDirection.** Zmień go tak, aby był ustawiony na **RightToLeft**.
 
-   Przyciski powinny mieć teraz rozmiar prawidłowy i być w odpowiedniej kolejności. (Pod warunkiem, że wszystkie cztery przyciski są zaznaczone, można zmienić wszystkie cztery właściwości **autorozmiaru** w tym samym czasie). Na poniższej ilustracji przedstawiono cztery przyciski.
+   Przyciski powinny wyrównać się po prawej stronie komórki i odwrócić ich kolejność, tak aby przycisk **Pokaż obraz** znajduje się po prawej stronie.
 
-    ![Podgląd obrazów z czterema przyciskami](../ide/media/express_autosize.png)<br/>***Przeglądarka obrazów*** *z czterema przyciskami*
+    > [!NOTE]
+    > Jeśli przyciski są nadal w niewłaściwej kolejności, można przeciągnąć przyciski wokół FlowLayoutPanel, aby zmienić ich kolejność. Możesz wybrać przycisk i przeciągnąć go w lewo lub w prawo.
 
-1. Teraz ponownie uruchom program, aby zobaczyć zmiany.
+1. Wybierz przycisk **Zamknij,** aby go zaznaczyć. Następnie, aby wybrać resztę przycisków w tym samym czasie, naciśnij i przytrzymaj klawisz **Ctrl** i wybierz je.
 
-   Zauważ, że przyciski i pole wyboru nie wykonują jeszcze&mdash;, ale wkrótce.
+   Po wybraniu wszystkich przycisków przejdź do okna **Właściwości** i przewiń w górę do właściwości **AutoSize.** Ta właściwość mówi przycisk, aby automatycznie zmienić rozmiar się dopasować do wszystkich jego tekstu. Ustaw go na **True**.
+
+   Przyciski powinny być teraz odpowiednio dobrane i być w odpowiedniej kolejności. (Tak długo, jak wszystkie cztery przyciski są zaznaczone, można zmienić wszystkie cztery **właściwości AutoSize** w tym samym czasie.) Na poniższej ilustracji przedstawiono cztery przyciski.
+
+    ![Przeglądarka obrazów z czterema przyciskami](../ide/media/express_autosize.png)<br/>***Przeglądarka obrazów*** *z czterema przyciskami*
+
+1. Teraz uruchom program ponownie, aby zobaczyć zmiany.
+
+   Zauważ, że przyciski i pole wyboru&mdash;nie robią jeszcze nic, ale wkrótce.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-* Aby przejść do następnego kroku samouczka, zobacz **[krok 6. nazwa kontrolek przycisku](../ide/step-6-name-your-button-controls.md)** .
+* Aby przejść do następnego kroku samouczka, zobacz **[Krok 6: Nadaj nazw przyciskom .](../ide/step-6-name-your-button-controls.md)**
 
-* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 4. układ formularza przy użyciu formantu TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+* Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 4: Rozmieść formularz za pomocą kontrolki TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
-* [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)
+* [Samouczek 2: Tworzenie quizu matematycznego z czasem](tutorial-2-create-a-timed-math-quiz.md)
+* [samouczek 3: Tworzenie pasującej gry](tutorial-3-create-a-matching-game.md)

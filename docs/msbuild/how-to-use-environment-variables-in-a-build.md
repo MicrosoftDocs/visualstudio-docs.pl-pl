@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: użycie zmiennych środowiskowych w kompilacji | Microsoft Docs'
+title: 'Jak: Używanie zmiennych środowiskowych w kompilacji | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,39 +13,39 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633788"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Instrukcje: użycie zmiennych środowiskowych w kompilacji
+# <a name="how-to-use-environment-variables-in-a-build"></a>Jak: Używanie zmiennych środowiskowych w kompilacji
 
-Podczas kompilowania projektów często konieczne jest ustawienie opcji kompilacji przy użyciu informacji, które nie są w pliku projektu lub plików wchodzących w skład Twojego projektu. Te informacje są zwykle przechowywane w zmiennych środowiskowych.
+Podczas tworzenia projektów często konieczne jest ustawienie opcji kompilacji przy użyciu informacji, które nie znajdują się w pliku projektu lub plików, które składają się na projekt. Te informacje są zazwyczaj przechowywane w zmiennych środowiskowych.
 
-## <a name="reference-environment-variables"></a>Zmienne środowiskowe referencyjne
+## <a name="reference-environment-variables"></a>Referencyjne zmienne środowiskowe
 
- Wszystkie zmienne środowiskowe są dostępne dla pliku projektu Microsoft Build Engine (MSBuild) jako właściwości.
+ Wszystkie zmienne środowiskowe są dostępne w pliku projektu Microsoft Build Engine (MSBuild) jako właściwości.
 
 > [!NOTE]
 > Jeśli plik projektu zawiera jawną definicję właściwości, która ma taką samą nazwę jak zmienna środowiskowa, właściwość w pliku projektu zastępuje wartość zmiennej środowiskowej.
 
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Aby użyć zmiennej środowiskowej w projekcie MSBuild
 
-- Odwołuje się do zmiennej środowiskowej w taki sam sposób jak zmienna zadeklarowana w pliku projektu. Na przykład poniższy kod odwołuje się do zmiennej środowiskowej BIN_PATH:
+- Odwołaj się do zmiennej środowiskowej w taki sam sposób, jak zmienna zadeklarowana w pliku projektu. Na przykład następujący kod odwołuje się do BIN_PATH zmiennej środowiskowej:
 
    `<FinalOutput>$(BIN_PATH)\MyAssembly.dll</FinalOutput>`
 
-  Można użyć atrybutu `Condition`, aby podać wartość domyślną właściwości, jeśli zmienna środowiskowa nie została ustawiona.
+  Za pomocą `Condition` atrybutu można podać wartość domyślną właściwości, jeśli zmienna środowiskowa nie została ustawiona.
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>Aby podać wartość domyślną dla właściwości
 
-- Użyj atrybutu `Condition` we właściwości, aby ustawić wartość tylko wtedy, gdy właściwość nie ma wartości. Na przykład poniższy kod ustawia właściwość `ToolsPath` na *c:\Tools* tylko wtedy, gdy zmienna środowiskowa `ToolsPath` nie jest ustawiona:
+- Użyj `Condition` atrybutu we właściwości, aby ustawić wartość tylko wtedy, gdy właściwość nie ma wartości. Na przykład następujący kod `ToolsPath` ustawia właściwość na *c:\tools* tylko wtedy, gdy zmienna środowiskowa `ToolsPath` nie jest ustawiona:
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
     > [!NOTE]
-    > W nazwach właściwości nie jest rozróżniana wielkość liter, Dlatego obie `$(ToolsPath)` i `$(TOOLSPATH)` odwołują się do tej samej właściwości lub zmiennej środowiskowej.
+    > W nazwach właściwości nie `$(ToolsPath)` rozróżniana jest wielkość liter, więc zarówno i `$(TOOLSPATH)` odwołuje się do tej samej właściwości lub zmiennej środowiskowej.
 
 ## <a name="example"></a>Przykład
 
@@ -67,6 +67,6 @@ Podczas kompilowania projektów często konieczne jest ustawienie opcji kompilac
 
 ## <a name="see-also"></a>Zobacz też
 
-- [MSBuild](../msbuild/msbuild.md)
-- [Właściwości programu MSBuild](../msbuild/msbuild-properties.md)
-- [Instrukcje: kompilowanie tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [Msbuild](../msbuild/msbuild.md)
+- [Właściwości MSBuild](../msbuild/msbuild-properties.md)
+- [Jak: Tworzenie tych samych plików źródłowych z różnymi opcjami](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

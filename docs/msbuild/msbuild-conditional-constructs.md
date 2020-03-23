@@ -1,5 +1,5 @@
 ---
-title: Konstrukcje warunkowe MSBuild | Microsoft Docs
+title: Konstrukcje warunkowe MSBuild | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -23,25 +23,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a06849c2aa0f4ec0203a7209ffc78be438dba9e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633385"
 ---
 # <a name="msbuild-conditional-constructs"></a>Konstrukcje warunkowe MSBuild
 
-Program MSBuild oferuje mechanizm do wykonywania operacji lub przetwarzania za pomocą elementów [Choose](../msbuild/choose-element-msbuild.md), [when](../msbuild/when-element-msbuild.md)i [Otherwise](../msbuild/otherwise-element-msbuild.md) .
+MSBuild udostępnia mechanizm dla albo/lub przetwarzania z [Wybierz](../msbuild/choose-element-msbuild.md), [Kiedy](../msbuild/when-element-msbuild.md)i [W inny sposób](../msbuild/otherwise-element-msbuild.md) elementów.
 
-## <a name="use-the-choose-element"></a>Użyj wybierz element
+## <a name="use-the-choose-element"></a>Użyj elementu Wybierz
 
- Element `Choose` zawiera serię `When` elementów z atrybutami `Condition`, które są testowane w kolejności od góry do dołu do momentu, aż do `true`. Jeśli więcej niż jeden element `When` oblicza `true`, zostanie użyta tylko pierwsza z nich. Element `Otherwise`, jeśli jest obecny, będzie oceniany, jeśli nie ma żadnego warunku elementu `When` do `true`.
+ Element `Choose` zawiera serię `When` elementów `Condition` z atrybutami, które są testowane w `true`kolejności od góry do dołu, aż jeden ocenia . Jeśli więcej `When` niż jeden `true`element ocenia , używany jest tylko pierwszy. Element, `Otherwise` jeśli jest obecny, zostanie oceniony, jeśli żaden warunek `When` elementu nie zostanie obliczony na `true`.
 
- elementy `Choose` mogą być używane jako elementy podrzędne `Project`, `When` i `Otherwise` elementów. elementy `When` i `Otherwise` mogą mieć elementy podrzędne `ItemGroup`, `PropertyGroup`lub `Choose`.
+ `Choose`elementy mogą być używane `Project`jako `When` `Otherwise` elementy podrzędne , i elementów. `When`i `Otherwise` elementy `ItemGroup`mogą `PropertyGroup`mieć `Choose` , lub elementy podrzędne.
 
 ## <a name="example"></a>Przykład
 
- W poniższym przykładzie są użyte elementy `Choose` i `When` do przetwarzania. Właściwości i elementy projektu są ustawiane w zależności od wartości właściwości `Configuration`.
+ W poniższym `Choose` przykładzie `When` użyto i elementy dla albo/lub przetwarzania. Właściwości i elementy projektu są ustawiane w zależności `Configuration` od wartości właściwości.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
@@ -81,7 +81,7 @@ Program MSBuild oferuje mechanizm do wykonywania operacji lub przetwarzania za p
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Choose — element (MSBuild)](../msbuild/choose-element-msbuild.md)
-- [When, element (MSBuild)](../msbuild/when-element-msbuild.md)
-- [Otherwise — element (MSBuild)](../msbuild/otherwise-element-msbuild.md)
-- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Wybierz element (MSBuild)](../msbuild/choose-element-msbuild.md)
+- [Gdy element (MSBuild)](../msbuild/when-element-msbuild.md)
+- [W przeciwnym razie element (MSBuild)](../msbuild/otherwise-element-msbuild.md)
+- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)

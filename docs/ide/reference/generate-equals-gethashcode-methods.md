@@ -1,5 +1,5 @@
 ---
-title: Generuj C# zastąpienia metody Equals i GetHashCode
+title: Generowanie c# równych i przesłonia metody GetHashCode
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -8,63 +8,63 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569286"
 ---
-# <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generuj zastąpienia metody Equals i GetHashCode w programie Visual Studio
+# <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generowanie zastępów metody Equals i GetHashCode w programie Visual Studio
 
-Dotyczy to generowanie kodu:
+To generowanie kodu dotyczy:
 
-- Język C#
+- C#
 
-**Co:** Umożliwia generowanie metod **Equals** i **GetHashCode** .
+**Co:** Umożliwia **generowanie equals** i **GetHashCode** metody.
 
-**Kiedy:** Generuj te zastąpienia, gdy masz typ, który powinien być porównywany przez co najmniej jedno pole, a nie lokalizację obiektu w pamięci.
+**Kiedy:** Wygeneruj te zastąpienia, gdy masz typ, który powinien być porównywany przez jedno lub więcej pól, a nie przez lokalizację obiektu w pamięci.
 
-**Zalet**
+**Dlaczego:**
 
-- W przypadku implementowania typu wartości należy rozważyć Zastępowanie metody **Equals** , aby uzyskać większą wydajność w porównaniu z domyślną implementacją metody Equals dla elementu ValueType.
+- Jeśli implementujesz typ wartości, należy rozważyć zastąpienie **Equals** metody, aby uzyskać zwiększoną wydajność w porównaniu z domyślną implementacją Equals metody valuetype.
 
-- Jeśli wdrażasz typ referencyjny, należy rozważyć Zastępowanie metody **Equals** , jeśli typ wygląda jak typ podstawowy, taki jak Point, String, BigNumber itd.
+- Jeśli implementujesz typ odwołania, należy rozważyć zastąpienie **Equals** metody, jeśli typ wygląda jak typ podstawowy, takich jak Punkt, String, BigNumber i tak dalej.
 
-- Zastąp metodę **GetHashCode** , aby umożliwić prawidłowe działanie typu w tabeli skrótów. Przeczytaj więcej wskazówek na temat [operatorów równości](/dotnet/standard/design-guidelines/equality-operators).
+- Zastąpuj **GetHashCode** metody, aby umożliwić typ do poprawnego działania w tabeli mieszania. Przeczytaj więcej wskazówek dotyczących [operatorów równości](/dotnet/standard/design-guidelines/equality-operators).
 
-## <a name="how-to"></a>Instrukcje
+## <a name="how-to"></a>Porady
 
-1. Umieść kursor w dowolnym miejscu w wierszu deklaracji typu.
+1. Umieść kursor gdzieś w wierszu deklaracji typu.
 
    ![Wyróżniony kod](media/overrides-highlight-cs.png)
 
    > [!TIP]
-   > Nie klikaj dwukrotnie opcji zaznacz nazwę typu lub opcja menu nie będzie dostępna. Umieść kursor w dowolnym miejscu w wierszu.
+   > Nie klikaj dwukrotnie nazwy typu lub opcja menu nie będzie dostępna. Wystarczy umieścić kursor gdzieś na linii.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+   - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
 
-   - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+   - Kliknij prawym przyciskiem myszy i wybierz menu **Szybkie akcje i Refaktoryzowania.**
 
-   - Kliknij ikonę ![śrubokręt](../media/screwdriver-icon.png) ikona wyświetlana na lewym marginesie.
+   - Kliknij ikonę ![Śrubokręt](../media/screwdriver-icon.png) ikonę wyświetlaną na lewym marginesie.
 
-   ![Generuj Podgląd przesłonięć](media/overrides-preview-cs.png)
+   ![Generowanie podglądu zastępowania](media/overrides-preview-cs.png)
 
-1. Wybierz pozycję **Generuj wartość Equals (Object)** lub **Generuj wartość Equals i GetHashCode** z menu rozwijanego.
+1. Z menu rozwijanego **wybierz polecenie Generuj equals(object)** lub **Generuj equals i GetHashCode.**
 
-1. W oknie dialogowym **Wybierz członków** wybierz członków, dla których chcesz wygenerować metody:
+1. W oknie dialogowym **Wybieranie członków** wybierz elementy członkowskie, dla których chcesz wygenerować metody:
 
-    ![Generowanie okna dialogowego zastąpień](media/overrides-dialog-cs.png)
+    ![Okno dialogowe Generowanie zastępowania](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > Możesz również generować operatory z tego okna dialogowego przy użyciu pola wyboru w dolnej części okna dialogowego.
+    > Można również wybrać opcję generowania operatorów z tego okna dialogowego przy użyciu pola wyboru w dolnej części okna dialogowego.
 
-   Metody `Equals` i `GetHashCode` są generowane z domyślnymi implementacjami.
+   I `Equals` `GetHashCode` metody są generowane z domyślnych implementacji.
 
    ![Generowanie wyniku metody](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Generowanie kodu](../code-generation-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

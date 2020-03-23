@@ -8,136 +8,136 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78235202"
 ---
 # <a name="features-of-visual-studio"></a>Funkcje programu Visual Studio
 
-Artykuł [Omówienie programu Visual Studio IDE](../get-started/visual-studio-ide.md) zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych deweloperów, którzy już znają się w programie Visual Studio.
+Artykuł [o pojucie środowiska visual studio](../get-started/visual-studio-ide.md) zawiera podstawowe wprowadzenie do programu Visual Studio. W tym artykule opisano funkcje, które mogą być bardziej odpowiednie dla doświadczonych deweloperów lub tych deweloperów, którzy są już zaznajomieni z programem Visual Studio.
 
-## <a name="modular-installation"></a>Modularna instalacja
+## <a name="modular-installation"></a>Instalacja modułowa
 
-Modułowy Instalator programu Visual Studio umożliwia wybranie i zainstalowanie *obciążeń*. Obciążenia są grupami funkcji wymaganych przez preferowany język programowania lub platformę. Taka strategia pomaga zachować śladu mniejsze, instalacja programu Visual Studio, co oznacza, jej instalowanie i aktualizowanie szybciej za.
+Modułowy instalator programu Visual Studio umożliwia wybór i *zainstalowanie obciążeń.* Obciążenia to grupy funkcji potrzebnych dla preferowanego języka programowania lub platformy. Ta strategia pomaga zachować rozmiar instalacji programu Visual Studio mniejsze, co oznacza, że instaluje i aktualizuje szybciej zbyt.
 
 ::: moniker range="vs-2017"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/downloads) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 Aby dowiedzieć się więcej o konfigurowaniu programu Visual Studio w systemie, zobacz [Instalowanie programu Visual Studio](../install/install-visual-studio.md).
 
-## <a name="create-cloud-enabled-apps-for-azure"></a>Tworzenie aplikacji z obsługą chmury dla platformy Azure
+## <a name="create-cloud-enabled-apps-for-azure"></a>Tworzenie aplikacji z obsługą chmury na platformie Azure
 
-Program Visual Studio udostępnia zestaw narzędzi, które umożliwiają proste tworzenie aplikacji z obsługą chmury obsługiwane przez Microsoft Azure. Można skonfigurować, tworzenie, debugowanie, pakowanie i wdrażanie aplikacji i usług Microsoft Azure bezpośrednio z poziomu środowiska IDE. Aby uzyskać narzędzia i szablony projektów platformy Azure, wybierz obciążenie **Programowanie na platformie Azure** podczas instalowania programu Visual Studio.
+Program Visual Studio oferuje zestaw narzędzi, które umożliwiają łatwe tworzenie aplikacji obsługujących chmurę z pomocą platformy Microsoft Azure. Można skonfigurować, tworzyć, debugować, pakować i wdrażać aplikacje i usługi na platformie Microsoft Azure bezpośrednio z IDE. Aby uzyskać narzędzia platformy Azure i szablony projektów, wybierz obciążenie **deweloperskie platformy Azure** podczas instalowania programu Visual Studio.
 
 ![Obciążenie programistyczne platformy Azure](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
-Po zainstalowaniu obciążeń **programistycznych platformy Azure** następujące szablony w **chmurze** dla programu C# są dostępne w oknie dialogowym **Nowy projekt** :
+Po zainstalowaniu obciążenia **dewelopera platformy Azure** następujące szablony **chmury** dla języka C# są dostępne w oknie dialogowym **Nowy projekt:**
 
-![Szablony projektów chmury dla programu Visual Studio](media/cloud-project-templates.png)
+![Szablony projektów w chmurze dla programu Visual Studio](media/cloud-project-templates.png)
 
 ::: moniker-end
 
-[Eksplorator chmur](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) programu Visual Studio umożliwia wyświetlanie zasobów w chmurze opartych na platformie Azure i zarządzanie nimi w programie Visual Studio. Te zasoby mogą obejmować maszyn wirtualnych, tabel, baz danych SQL i inne. W **programie Cloud Explorer** widoczne są zasoby platformy Azure we wszystkich kontach zarządzanych w ramach subskrypcji platformy Azure, do której się zalogowano. A jeśli określona operacja wymaga Azure Portal, w programie **Cloud Explorer** znajdują się linki umożliwiające przejście do miejsca w portalu, w którym należy się zapoznać.
+Visual Studio [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) umożliwia wyświetlanie zasobów chmurowych opartych na platformie Azure i zarządzanie nimi w programie Visual Studio. Zasoby te mogą obejmować maszyny wirtualne, tabele, bazy danych SQL i inne. **Cloud Explorer** pokazuje zasoby platformy Azure na wszystkich kontach zarządzanych w ramach subskrypcji platformy Azure, do której jesteś zalogowany. A jeśli określona operacja wymaga witryny Azure portal, **Cloud Explorer** zawiera łącza, które można zabrać do miejsca w portalu, gdzie należy udać.
 
 ![Eksplorator chmury w programie Visual Studio](media/cloud-explorer.png)
 
-Możesz korzystać z usług platformy Azure dla aplikacji przy użyciu **usług połączonych** , takich jak:
+Możesz korzystać z usług platformy Azure dla aplikacji przy użyciu **usług połączonych,** takich jak:
 
-- [Active Directory podłączona usługa](/azure/active-directory/develop/vs-active-directory-add-connected-service) , dzięki czemu użytkownicy mogą używać swoich kont w usłudze [Azure Active Directory](/azure/active-directory/active-directory-whatis) do nawiązywania połączeń z aplikacjami sieci Web
-- [Usługa połączona usługi Azure Storage](/azure/vs-azure-tools-connected-services-storage) dla magazynu obiektów blob, kolejek i tabel
-- [Key Vault podłączona usługa](/azure/key-vault/vs-key-vault-add-connected-service) do zarządzania wpisami tajnymi dla aplikacji sieci Web
+- [Usługa połączona z usługą Active Directory,](/azure/active-directory/develop/vs-active-directory-add-connected-service) dzięki której użytkownicy mogą korzystać z kont z [usługi Azure Active Directory](/azure/active-directory/active-directory-whatis) do łączenia się z aplikacjami sieci Web
+- [Usługa połączona z usługą Azure Storage](/azure/vs-azure-tools-connected-services-storage) dla magazynu obiektów blob, kolejek i tabel
+- [Usługa połączona z usługą Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) do zarządzania wpisami tajnymi dla aplikacji sieci Web
 
-Dostępne **usługi połączone** są zależne od typu projektu. Aby dodać usługę, kliknij prawym przyciskiem myszy projekt w **Eksplorator rozwiązań** i wybierz polecenie **Dodaj** > **połączonej usługi**.
+Dostępne **usługi połączone** zależą od typu projektu. Dodaj usługę, klikając prawym przyciskiem myszy projekt w **Eksploratorze rozwiązań** i wybierając **pozycję Dodaj** > **połączoną usługę**.
 
-![Usług połączonych programu Visual Studio](media/connected-services.png)
+![Połączone usługi programu Visual Studio](media/connected-services.png)
 
-Aby uzyskać więcej informacji, zobacz [przenoszenie do chmury za pomocą programu Visual Studio i platformy Azure](https://visualstudio.microsoft.com/vs/azure-tools/).
+Aby uzyskać więcej informacji, zobacz [Przenoszenie do chmury za pomocą programu Visual Studio i platformy Azure](https://visualstudio.microsoft.com/vs/azure-tools/).
 
-## <a name="create-apps-for-the-web"></a>Tworzenie aplikacji sieci Web
+## <a name="create-apps-for-the-web"></a>Tworzenie aplikacji dla sieci Web
 
-Sieć web dyski w nowoczesnym świecie, a Visual Studio może pomóc, dzięki czemu można tworzyć aplikacje dla niego. Można tworzyć aplikacje internetowe przy użyciu platformy ASP.NET, Node.js, Python, JavaScript i TypeScript. Program Visual Studio rozumie, środowisk sieci web, takich jak Angular, jQuery, Express i nie tylko. Platforma ASP.NET Core i .NET Core, działających w systemach operacyjnych Windows, Mac i Linux. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) to główna Aktualizacja dla MVC, WebAPI i sygnalizująca, która działa w systemach Windows, Mac i Linux.  Platformy ASP.NET Core został zaprojektowany od podstaw w górę aby zapewnić Ci .NET odchudzona i konfigurowalna stosu do tworzenia nowoczesnej sieci web, które są oparte na chmurze aplikacje i usługi.
+Sieć web napędza nasz nowoczesny świat, a program Visual Studio może pomóc w pisaniu aplikacji dla niego. Aplikacje internetowe można tworzyć przy użyciu ASP.NET, Node.js, Python, JavaScript i TypeScript. Visual Studio rozumie struktur sieci web, takich jak Angular, jQuery, Express i więcej. ASP.NET Core i .NET Core działają w systemach operacyjnych Windows, Mac i Linux. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) jest główną aktualizacją MVC, WebAPI i SignalR i działa na windows, Mac i Linux.  ASP.NET Core został zaprojektowany od podstaw, aby zapewnić Ci chudego i komponowalny stos .NET do tworzenia nowoczesnych aplikacji i usług internetowych opartych na chmurze.
 
-Aby uzyskać więcej informacji, zobacz [nowoczesne narzędzia sieci Web](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
+Aby uzyskać więcej informacji, zobacz [Nowoczesne narzędzia internetowe](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
-## <a name="build-cross-platform-apps-and-games"></a>Twórz Międzyplatformowe aplikacje i gry
+## <a name="build-cross-platform-apps-and-games"></a>Tworzenie aplikacji i gier między platformami
 
-Możesz użyć programu Visual Studio do tworzenia aplikacji i gier dla systemów macOS, Linux i Windows, a także dla urządzeń z systemami Android, iOS i innymi [urządzeniami przenośnymi](https://visualstudio.microsoft.com/vs/mobile-app-development/).
+Za pomocą programu Visual Studio można tworzyć aplikacje i gry dla systemów macOS, Linux i Windows, a także dla systemów Android, iOS i innych [urządzeń przenośnych.](https://visualstudio.microsoft.com/vs/mobile-app-development/)
 
-- Twórz aplikacje [platformy .NET Core](/dotnet/core/) działające w systemach Windows, MacOS i Linux.
+- Twórz aplikacje [.NET Core,](/dotnet/core/) które działają w systemach Windows, macOS i Linux.
 
-- Twórz aplikacje mobilne dla systemów iOS, Android i Windows w C# systemach F# i przy użyciu platformy [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
+- Tworzenie aplikacji mobilnych dla systemów iOS, Android i Windows w językach C# i F# przy użyciu platformy [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
-- Używaj standardowych technologii sieci Web&mdash;językach HTML, CSS i&mdash;JavaScript, aby tworzyć aplikacje mobilne dla systemów iOS, Android i Windows przy użyciu [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
+- Użyj standardowych&mdash;technologii internetowych HTML, CSS i JavaScript&mdash;do tworzenia aplikacji mobilnych dla systemów iOS, Android i Windows przy użyciu [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Twórz gry 2D i 3W w C# programie przy użyciu [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Tworzenie gier 2D i 3D w języku C# przy użyciu [narzędzi visual studio dla unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Twórz aplikacje C++ natywne dla urządzeń z systemem iOS, Android i Windows. Udostępniaj wspólny kod w bibliotekach skompilowanych dla systemów iOS, Android i Windows za pomocą [ C++ programu do tworzenia aplikacji dla wielu platform](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
+- Twórz natywne aplikacje Języka C++ dla urządzeń z systemami iOS, Android i Windows. Udostępnianie wspólnego kodu w bibliotekach utworzonych dla systemów iOS, Android i Windows przy użyciu [języka C++ do tworzenia między platformami](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
-- Wdrażaj, Testuj i Debuguj aplikacje dla systemu Android za pomocą [emulatora systemu Android](../cross-platform/visual-studio-emulator-for-android.md).
+- Wdrażanie, testowanie i debugowanie aplikacji na Androida za pomocą [emulatora systemu Android](../cross-platform/visual-studio-emulator-for-android.md).
 
-## <a name="connect-to-databases"></a>Łączenie z bazami danych
+## <a name="connect-to-databases"></a>Łączenie się z bazami danych
 
-**Eksplorator serwera** ułatwia przeglądanie SQL Server wystąpień i zasobów oraz zarządzanie nimi lokalnie, zdalnie i na platformie Azure, Salesforce.com, Office 365 i witrynach sieci Web. Aby otworzyć **Eksplorator serwera**, w menu głównym wybierz polecenie **Wyświetl** > **Eksplorator serwera**. Aby uzyskać więcej informacji na temat korzystania z Eksplorator serwera, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
+**Eksplorator serwera** ułatwia przeglądanie wystąpień i zasobów programu SQL Server i zarządzanie nimi lokalnie, zdalnie oraz na platformie Azure, Salesforce.com, usłudze Office 365 i witrynach sieci Web. Aby otworzyć **program Server Explorer**w menu głównym, wybierz polecenie **Wyświetl** > **Eksploratora serwera**. Aby uzyskać więcej informacji na temat korzystania z Eksploratora serwera, zobacz [Dodawanie nowych połączeń](../data-tools/add-new-connections.md).
 
-[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) to zaawansowane środowisko programistyczne dla SQL Server, Azure SQL Database i Azure SQL Data Warehouse. Umożliwia kompilowanie, debugowanie, obsługa i Refaktoryzuj baz danych. Możesz pracować z projektem bazy danych lub bezpośrednio z bazy danych połączone wystąpienie na — lub poza siedzibą firmy.
+[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) to zaawansowane środowisko programistyczne dla programu SQL Server, bazy danych SQL Azure i usługi Azure SQL Data Warehouse. Umożliwia tworzenie, debugowanie, obsługa i refaktoryzowania baz danych. Można pracować z projektem bazy danych lub bezpośrednio z wystąpieniem połączonej bazy danych w siedzibie lub poza nim.
 
-**Eksplorator obiektów SQL Server** w programie Visual Studio udostępnia widok obiektów bazy danych podobny do SQL Server Management Studio. Eksplorator obiektów SQL Server umożliwia wykonywanie zadań związanych z administracją i projektowaniem bazy danych z lekkimi opłatami. Przykłady pracy obejmują edytowanie danych tabeli, porównywanie schematów, wykonywanie zapytań za pomocą menu kontekstowych bezpośrednio z Eksplorator obiektów SQL Server i innych.
+**Eksplorator obiektów programu SQL Server** w programie Visual Studio udostępnia widok obiektów bazy danych podobnych do programu SQL Server Management Studio. SQL Server Object Explorer umożliwia wykonywanie lekkich zadań administracyjnych i projektowych bazy danych. Przykłady pracy obejmują edytowanie danych tabeli, porównywanie schematów, wykonywanie zapytań przy użyciu menu kontekstowych bezpośrednio z Eksploratora obiektów programu SQL Server i innych.
 
 ![Eksplorator obiektów SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
-## <a name="debug-test-and-improve-your-code"></a>Debugowanie, testowanie i ulepszaj swój kod
+## <a name="debug-test-and-improve-your-code"></a>Debugowanie, testowanie i ulepszanie kodu
 
-Podczas pisania kodu, musisz go uruchomić i przetestować go dla błędów i wydajności. System debugowania programu Visual Studio umożliwia debugowanie kodu działającego w projekcie lokalnym, na urządzeniu zdalnym lub w [emulatorze urządzenia](../cross-platform/visual-studio-emulator-for-android.md). Można przejść przez kod w jednej instrukcji w danym momencie i sprawdzanie zmiennych, zgodnie z rzeczywistym. Możesz ustawić punkty przerwania, które są osiągane tylko wtedy, gdy określony warunek ma wartość true. Opcjami debugowania można zarządzać w edytorze kodu, dzięki czemu nie trzeba opuszczać kodu. Aby uzyskać więcej informacji na temat debugowania w programie Visual Studio, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
+Podczas pisania kodu, należy go uruchomić i przetestować go pod kątem błędów i wydajności. Nowatorski system debugowania programu Visual Studio umożliwia debugowanie kodu uruchomionego w projekcie lokalnym, na urządzeniu zdalnym lub [emulatorze urządzenia.](../cross-platform/visual-studio-emulator-for-android.md) Możesz przejść przez kod jedną instrukcję naraz i sprawdzić zmienne w trakcie podróży. Można ustawić punkty przerwania, które są trafione tylko wtedy, gdy określony warunek jest spełniony. Opcje debugowania można zarządzać w samym edytorze kodu, dzięki czemu nie trzeba opuszczać kodu. Aby uzyskać więcej informacji na temat debugowania w programie Visual Studio, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-Aby dowiedzieć się więcej o ulepszaniu wydajności aplikacji, Wyewidencjonuj funkcję [profilowania](../profiling/profiling-feature-tour.md) programu Visual Studio.
+Aby dowiedzieć się więcej na temat poprawy wydajności aplikacji, wyewidencjonuj funkcję [profilowania](../profiling/profiling-feature-tour.md) programu Visual Studio.
 
-W przypadku [testowania](../test/improve-code-quality.md)program Visual Studio oferuje testy jednostkowe, Live Unit Testing, IntelliTest, testy obciążenia i wydajności itp. Program Visual Studio oferuje także zaawansowane funkcje [analizy kodu](../code-quality/code-analysis-for-managed-code-overview.md) umożliwiające przechwycenie projektu, zabezpieczeń i innych typów wad.
+Do [testowania](../test/improve-code-quality.md)program Visual Studio oferuje testowanie jednostkowe, testowanie jednostek na żywo, test intellitest, testowanie obciążenia i wydajności i inne. Visual Studio ma również zaawansowane możliwości [analizy kodu,](../code-quality/code-analysis-for-managed-code-overview.md) aby wychwyć projekt, zabezpieczenia i inne typy wad.
 
-## <a name="deploy-your-finished-application"></a>Wdrażanie gotowych aplikacji
+## <a name="deploy-your-finished-application"></a>Wdrażanie gotowego zgłoszenia
 
-Gdy aplikacja jest gotowa do wdrożenia użytkownikom lub klientom, program Visual Studio udostępnia narzędzia do wykonania tej czynności. Opcje wdrożenia obejmują Microsoft Store, do witryny programu SharePoint lub z technologiami InstallShield lub Instalator Windows. Jest ona dostępna za pośrednictwem środowiska IDE. Aby uzyskać więcej informacji, zobacz [wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md).
+Gdy aplikacja jest gotowa do wdrożenia dla użytkowników lub klientów, Visual Studio udostępnia narzędzia, aby to zrobić. Opcje wdrażania obejmują sklep Microsoft Store, witrynę programu SharePoint lub technologie InstallShield lub Windows Installer. Wszystko jest dostępne za pośrednictwem IDE. Aby uzyskać więcej informacji, zobacz [Wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md).
 
-## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzaj kodem źródłowym i współpracować z innymi
+## <a name="manage-your-source-code-and-collaborate-with-others"></a>Zarządzanie kodem źródłowym i współpraca z innymi osobami
 
-Możesz zarządzać kodem źródłowym w repozytoriach Git hostowanych przez dowolnego dostawcę, w tym witrynę GitHub. Można też używać [Azure DevOps Services](/azure/devops/index) do zarządzania kodem wraz z błędami i elementami roboczymi dla całego projektu. Zobacz Rozpoczynanie [pracy z usługą git i Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) , aby dowiedzieć się więcej o zarządzaniu repozytoriami Git w programie Visual Studio przy użyciu Team Explorer. Visual Studio ma również innych funkcji kontroli źródła wbudowanych. Aby dowiedzieć się więcej na ten temat, zobacz [nowe funkcje usługi Git w programie Visual Studio (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
+Możesz zarządzać kodem źródłowym w repozytoriach Git obsługiwanych przez dowolnego dostawcę, w tym GitHub. Możesz też użyć [usługi Azure DevOps](/azure/devops/index) do zarządzania kodem obok błędów i elementów roboczych dla całego projektu. Zobacz [Wprowadzenie do funkcji Git i Reppos platformy Azure,](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) aby dowiedzieć się więcej o zarządzaniu repozytoriami Git w programie Visual Studio przy użyciu Eksploratora zespołu. Visual Studio ma również inne wbudowane funkcje kontroli źródła. Aby dowiedzieć się więcej o nich, zobacz [Nowe funkcje Git w programie Visual Studio (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
-Azure DevOps Services to usługi oparte na chmurze, które umożliwiają planowanie, hostowanie, Automatyzowanie i wdrażanie oprogramowania oraz włączanie współpracy w zespołach. Azure DevOps Services obsługiwać zarówno repozytoria Git (rozproszonej kontroli wersji), jak i Kontrola wersji serwera Team Foundation (scentralizowany system kontroli wersji). Obsługują one potoki do ciągłego kompilowania i wydawania (CI/CD) kodu przechowywanego w systemach kontroli wersji. Usługom DevOps platformy Azure obsługują również Scrum i CMMI Agile metodologii programowania.
+Usługi Azure DevOps to usługi oparte na chmurze do planowania, hostowanie, automatyzacja i wdrażanie oprogramowania oraz umożliwienie współpracy w zespołach. Usługi Azure DevOps obsługują zarówno repozytoria Git (rozproszona kontrola wersji), jak i kontrolę wersji Team Foundation (scentralizowana kontrola wersji). Obsługują potoki ciągłej kompilacji i zwalniania (CI/CD) kodu przechowywanego w systemach kontroli wersji. Usługi Azure DevOps obsługują również metody programowania Scrum, CMMI i Agile.
 
-Team Foundation Server (TFS), to Centrum zarządzania cyklem życia aplikacji dla programu Visual Studio. Dzięki temu wszyscy pracownicy z procesem rozwoju uczestnictwa, używając jednego rozwiązania. TFS jest przydatne w celu zarządzania heterogenicznych zespołów i projektów, zbyt.
+Team Foundation Server (TFS) to centrum zarządzania cyklem życia aplikacji dla programu Visual Studio. Umożliwia wszystkim zaangażowanym w proces tworzenia udział przy użyciu jednego rozwiązania. TFS jest również przydatny do zarządzania heterogenicznymi zespołami i projektami.
 
-Jeśli masz organizację usługi Azure DevOps lub Team Foundation Server w sieci, możesz połączyć się z nią za pomocą okna **Team Explorer** w programie Visual Studio. Z tego okna można sprawdzić kod do lub z kontroli źródła, zarządzania elementami roboczymi, kompilacji i rozpoczęcia pokoje zespołów dostępu oraz obszarów roboczych. **Team Explorer** można otworzyć w polu wyszukiwania lub w menu głównym z **widoku** > **Team Explorer** lub z **zespołu** > **Zarządzanie połączeniami**.
+Jeśli masz w sieci organizację Azure DevOps lub serwer Team Foundation Server, możesz połączyć się z nią za pośrednictwem okna **Eksploratora zespołu** w programie Visual Studio. W tym oknie można zaewidencjonować kod do lub poza kontrolą źródła, zarządzać elementami roboczymi, uruchamiać kompilacje i uzyskiwać dostęp do pomieszczeń zespołu i obszarów roboczych. **Eksploratora zespołu** można otworzyć w polu wyszukiwania lub w menu głównym w **widoku** > **Eksploratora zespołu** lub w oknie Zarządzanie **zespołami** > **Manage Connections**.
 
-Na poniższej ilustracji przedstawiono okno **Team Explorer** dla rozwiązania, które jest hostowane w Azure DevOps Services.
+Na poniższej ilustracji przedstawiono okno **Eksploratora zespołu** dla rozwiązania hostowanego w usługach Azure DevOps.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
-Możesz też zautomatyzować proces kompilacji, aby skompilować kod, który deweloperzy w zespole sprawdzeniu w kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Aby uzyskać więcej informacji, zobacz [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Można również zautomatyzować proces kompilacji do tworzenia kodu, który deweloperzy w zespole zaewidencjonowali do kontroli wersji. Można na przykład skompilować jeden lub więcej projektów w nocy lub za każdym razem, kiedy kod jest zaewidencjonowany. Aby uzyskać więcej informacji, zobacz [Potoki platformy Azure](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="extend-visual-studio"></a>Rozszerzanie funkcjonalności programu Visual Studio
 
-Jeśli program Visual Studio nie ma dokładnie funkcji, czego potrzebujesz, możesz dodać go! Można personalizować środowisko IDE na podstawie przepływu pracy i stylu, dodanie obsługi narzędzi zewnętrznych, które nie są jeszcze zintegrowane z programem Visual Studio i modyfikować istniejące funkcje do zwiększenia produktywności. Aby znaleźć najnowszą wersję Visual Studio Extensibility Tools (VS SDK), zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Jeśli program Visual Studio nie ma dokładnie potrzebnej funkcji, możesz ją dodać! Ide można spersonalizować na podstawie przepływu pracy i stylu, dodać obsługę narzędzi zewnętrznych, które nie zostały jeszcze zintegrowane z programem Visual Studio i zmodyfikować istniejące funkcje, aby zwiększyć produktywność. Aby znaleźć najnowszą wersję narzędzi rozszerzalności programu Visual Studio (VS SDK), zobacz [Zestaw SDK programu Visual Studio](../extensibility/visual-studio-sdk.md).
 
-Platforma kompilatora .NET ("Roslyn") służy do pisania własnego kodu analizatory i generatorów kodu. Znajdź wszystko, czego potrzebujesz, w witrynie [Roslyn](https://github.com/dotnet/Roslyn).
+Za pomocą platformy kompilatora .NET ("Roslyn") można napisać własne analizatory kodu i generatory kodu. Znajdź wszystko, czego potrzebujesz w [Roslyn](https://github.com/dotnet/Roslyn).
 
-Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) dla programu Visual Studio utworzone przez deweloperów firmy Microsoft, a także naszą społeczność deweloperów.
+Znajdź [istniejące rozszerzenia](https://marketplace.visualstudio.com/vs) programu Visual Studio utworzone przez deweloperów firmy Microsoft, a także naszą społeczność programistów.
 
-Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [rozszerzanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
+Aby dowiedzieć się więcej na temat rozszerzania programu Visual Studio, zobacz [Rozszerzanie środowiska IDE programu Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Środowisko IDE programu Visual Studio — omówienie](../get-started/visual-studio-ide.md)
+- [Omówienie ide programu Visual Studio](../get-started/visual-studio-ide.md)
 - [Co nowego w programie Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Co nowego w programie Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

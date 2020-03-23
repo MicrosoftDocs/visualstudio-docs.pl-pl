@@ -1,5 +1,5 @@
 ---
-title: Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
+title: 'Krok 10: Napisz kod dodatkowych przycisków i pole wyboru'
 ms.date: 08/30/2019
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 ms.topic: tutorial
@@ -14,24 +14,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579439"
 ---
-# <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10. Pisanie kodu dla dodatkowych przycisków i pola wyboru
+# <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Krok 10: Napisz kod dodatkowych przycisków i pole wyboru
 
-Teraz wszystko jest gotowe do wykonania innych czterech metod. Możesz skopiować i wkleić ten kod, ale jeśli chcesz poznać większość z tego samouczka, wpisz kod i użyj funkcji IntelliSense.
+Teraz możesz przystąpić do ukończenia pozostałych czterech metod. Możesz skopiować i wkleić ten kod, ale jeśli chcesz dowiedzieć się najwięcej z tego samouczka, wpisz kod i użyj IntelliSense.
 
-Ten kod dodaje funkcję do przycisków, które zostały dodane wcześniej. Bez tego kodu przyciski nie wykonują żadnych czynności. Przyciski używają kodu w swoich zdarzeniach <xref:System.Windows.Forms.Control.Click> (i pole wyboru używa zdarzenia <xref:System.Windows.Forms.CheckBox.CheckedChanged>) do wykonywania różnych czynności podczas aktywowania kontrolek. Na przykład zdarzenie `clearButton_Click` (lub `ClearButton_Click`), które aktywuje się po wybraniu przycisku **Wyczyść obraz** , powoduje wymazanie bieżącego obrazu przez ustawienie jego właściwości **Image** na **wartość null** (lub **Nothing**). Każde zdarzenie w kodzie zawiera komentarze objaśniające, jak działa kod.
+Ten kod dodaje funkcjonalność do przycisków dodanych wcześniej. Bez tego kodu przyciski nic nie robią. Przyciski używają kodu <xref:System.Windows.Forms.Control.Click> w swoich zdarzeniach (a pole wyboru używa <xref:System.Windows.Forms.CheckBox.CheckedChanged> zdarzenia) do wykonywania różnych czynności po aktywowaniu formantów. Na przykład `clearButton_Click` zdarzenie `ClearButton_Click`(lub), które aktywuje się po wybraniu przycisku **Wyczyść obraz,** powoduje wymazanie bieżącego obrazu przez ustawienie jego właściwości **Image** na **wartość null** (lub, **nic).** Każde zdarzenie w kodzie zawiera komentarze, które wyjaśniają, co robi kod.
 
 > [!TIP]
-> Najlepszym rozwiązaniem jest zawsze Dodawanie komentarzy do kodu. Komentarze są informacjami dla osoby, które mają być odczytane, i warto pamiętać o tym, aby kod był zrozumiały. Wszystkie elementy w wierszu komentarza są ignorowane przez aplikację. W C#programie Dodaj komentarz do wiersza, wpisując dwa ukośniki do przodu (//), a w Visual Basic skomentować linię, zaczynając od znaku pojedynczego cudzysłowu (').
+> Najlepszym rozwiązaniem: zawsze skomentuj swój kod. Komentarze są informacjami dla osoby do przeczytania i warto poświęcić czas, aby twój kod był zrozumiały. Wszystko w wierszu komentarza jest ignorowane przez aplikację. W języku C#, komentarz wiersza, wpisując dwa ukośniki do przodu na początku (//), a w języku Visual Basic komentujesz wiersz, zaczynając od pojedynczego cudzysłowu (').
 
-## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Jak napisać kod dla dodatkowych przycisków i pola wyboru
+## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Jak napisać kod dodatkowych przycisków i pole wyboru
 
-Dodaj następujący kod do pliku kodu **Form1** (*Form1.cs* lub *Form1. vb*).
+Dodaj następujący kod do pliku kodu **formularza Form1** *(Form1.cs* lub *Form1.vb*).
 
   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -44,11 +44,11 @@ Dodaj następujący kod do pliku kodu **Form1** (*Form1.cs* lub *Form1. vb*).
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz **[krok 11. Uruchamianie aplikacji i wypróbuj inne funkcje](../ide/step-11-run-your-program-and-try-other-features.md)** .
+* Aby przejść do następnego kroku samouczka, zobacz **[Krok 11: Uruchamianie aplikacji i wypróbowanie innych funkcji](../ide/step-11-run-your-program-and-try-other-features.md)**.
 
-* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 9: przeglądanie, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).
+* Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 9: Przeglądanie, komentowanie i testowanie kodu](../ide/step-9-review-comment-and-test-your-code.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
-* [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)
+* [Samouczek 2: Tworzenie quizu matematycznego z czasem](tutorial-2-create-a-timed-math-quiz.md)
+* [samouczek 3: Tworzenie pasującej gry](tutorial-3-create-a-matching-game.md)

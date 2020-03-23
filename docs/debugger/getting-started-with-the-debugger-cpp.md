@@ -1,6 +1,6 @@
 ---
-title: 'Samouczek: debugowanie C++ kodu'
-description: Dowiedz się, jak uruchomić debuger programu Visual Studio, Przechodź przez kod i sprawdzić dane.
+title: 'Samouczek: Kod debugowania C++'
+description: Dowiedz się, jak uruchomić debuger programu Visual Studio, przejść przez kod i sprawdzić dane.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
@@ -15,99 +15,99 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77091811"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Dowiedz się debugować kod C++ przy użyciu programu Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Samouczek: Naucz się debugować kod C++ przy użyciu programu Visual Studio
 
-W tym artykule przedstawiono funkcje debugera programu Visual Studio w przewodnik krok po kroku. Jeśli potrzebujesz widoku wyższego poziomu funkcji debugera, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md). Gdy *debugujesz aplikację*, zazwyczaj oznacza to, że aplikacja jest uruchamiana z dołączonym debugerem. Gdy to zrobisz, debuger zapewnia wiele sposobów, aby zobaczyć, co kod robi podczas jego uruchamiania. Można przejść przez kod i przyjrzyj się wartości przechowywane w zmiennych, można ustawić zegarki dla zmiennych, aby zobaczyć, kiedy zmienić wartości, można zbadać ścieżki wykonywania kodu, czy gałąź kodu nie jest uruchomiona, i tak dalej. Jeśli po raz pierwszy podjęto próbę debugowania kodu, przed przejściem do tego artykułu warto przeczytać [debugowanie dla bezwzględnych początkujących](../debugger/debugging-absolute-beginners.md) .
+W tym artykule przedstawiono funkcje debugera programu Visual Studio w przewodniku krok po kroku. Jeśli chcesz widok wyższego poziomu funkcji debugera, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md). Podczas *debugowania aplikacji,* zwykle oznacza to, że aplikacja jest uruchomiona z dołączonym debugerem. Po wykonaniu tej funkcji debuger udostępnia wiele sposobów, aby zobaczyć, co robi kod podczas jego działania. Można przejść przez kod i spojrzeć na wartości przechowywane w zmiennych, można ustawić zegarki na zmienne, aby zobaczyć, kiedy zmiany wartości, można sprawdzić ścieżkę wykonywania kodu, sprawdzić, czy gałąź kodu jest uruchomiona i tak dalej. Jeśli jest to pierwszy raz, który próbowałeś debugować kod, możesz przeczytać [Debugowanie dla początkujących absolutnych](../debugger/debugging-absolute-beginners.md) przed przejściem przez ten artykuł.
 
-Mimo że aplikacja demonstracyjna C++to, większość funkcji ma zastosowanie do C#, Visual Basic, F#, Python, JavaScript i innych języków obsługiwanych przez program Visual Studio (F# nie obsługuje funkcji Edit-and-Continue. F#i język JavaScript nie obsługuje okna **autostarts** ). Zrzuty ekranu znajdują się w C++temacie.
+Mimo że aplikacja demonstracyjna jest C++, większość funkcji mają zastosowanie do języka C#, Visual Basic, F#, Python, JavaScript i innych języków obsługiwanych przez program Visual Studio (F# nie obsługuje edit-and-continue. F# i JavaScript nie obsługują okna **Autos).** Zrzuty ekranu są w języku C++.
 
 W tym samouczku zostaną wykonane następujące czynności:
 
 > [!div class="checklist"]
-> * Uruchom debuger i identyfikować punkty przerwania.
-> * Dowiedz się więcej poleceń, aby przejść przez kod w debugerze
-> * Sprawdzanie zmiennych w oknach debugera i porady dotyczące danych
+> * Uruchom debuger i trafić punkty przerwania.
+> * Dowiedz się, jak przejść przez kod w debugerze
+> * Sprawdzanie zmiennych w poradach dotyczących danych i oknach debugera
 > * Sprawdź stos wywołań
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 ::: moniker range=">=vs-2019"
 
-Musisz mieć zainstalowany program Visual Studio 2019 i **programowanie C++ dla komputerów stacjonarnych** .
+Musisz mieć zainstalowany program Visual Studio 2019 i program rozwoju pulpitu z obciążeniem **C++.**
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-Musisz mieć zainstalowany program Visual Studio 2017 i **programowanie C++ dla komputerów stacjonarnych** .
+Musisz mieć zainstalowany program Visual Studio 2017 i program rozwoju pulpitu z obciążeniem **C++.**
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/downloads) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
-Jeśli musisz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do pozycji **narzędzia** > **Pobierz narzędzia i funkcje..** ., co spowoduje otwarcie Instalator programu Visual Studio. Uruchamia Instalatora programu Visual Studio. Wybierz pozycję **programowanie C++ dla komputerów stacjonarnych** , a następnie wybierz polecenie **Modyfikuj**.
+Jeśli chcesz zainstalować obciążenie, ale masz już program Visual Studio, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...**, który otwiera Instalator programu Visual Studio. Uruchamia instalator programu Visual Studio. Wybierz program rozwoju pulpitu z obciążeniem **języka C++,** a następnie wybierz pozycję **Modyfikuj**.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt aplikacji C++ konsolowej. Typ projektu jest dostarczany ze wszystkimi plikami szablonu, które będą potrzebne, zanim będzie można nawet dodać wszystko.
+Najpierw utworzysz projekt aplikacji konsoli Języka C++. Typ projektu zawiera wszystkie potrzebne pliki szablonów, zanim jeszcze cokolwiek dodasz!
 
 ::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
+2. Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
-3. W oknie dialogowym **Nowy projekt** w okienku po lewej stronie rozwiń pozycję **Wizualizacja C++**  , a następnie wybierz pozycję **Windows Desktop**. W środkowym okienku wybierz pozycję **Aplikacja konsolowa systemu Windows**. Następnie nadaj nazwę projekt *Get-Started-Debug*.
+3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual C++,** a następnie wybierz pozycję **Pulpit systemu Windows**. W środkowym okienku wybierz pozycję **Aplikacja konsoli systemu Windows**. Następnie nazwij projekt *get-started-debugowania*.
 
-     Jeśli szablon projektu **aplikacji konsolowej** nie jest widoczny, wybierz link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+     Jeśli nie widzisz szablonu projektu **aplikacji konsoli,** wybierz łącze **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego Nowy **projekt.** Uruchamia instalator programu Visual Studio. Wybierz **wieloplatformowe obciążenie programistyczne .NET Core,** a następnie wybierz pozycję **Modyfikuj**.
 
 4. Kliknij przycisk **OK**.
 
-   Program Visual Studio otwiera nowy projekt.
+   Visual Studio otwiera nowy projekt.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Otwórz program Visual Studio 2019.
 
-   Jeśli okno startowe nie jest otwarte, wybierz polecenie **plik** > **Start okna**.
+   Jeśli okno startowe nie jest otwarte, wybierz polecenie **Okno startowe** **pliku** > .
 
-1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+1. W oknie początkowym wybierz pozycję **Utwórz nowy projekt**.
 
-1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **C++** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+1. W oknie **Utwórz nowy projekt** wprowadź lub wpisz *konsolę* w polu wyszukiwania. Następnie wybierz pozycję **C++** z listy Język, a następnie wybierz pozycję **Windows** z listy Platforma. 
 
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja konsoli** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtrów językowych i platformowych wybierz szablon **aplikacji konsoli,** a następnie wybierz pozycję **Dalej**.
 
-   ![Wybieranie C++ szablonu dla aplikacji konsolowej](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
+   ![Wybieranie szablonu C++ dla aplikacji konsoli](../debugger/media/vs-2019/get-started-create-console-project-cpp.png)
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji konsolowej** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz pozycję **Programowanie dla komputerów z C++**  obciążeniem.
+   > Jeśli nie widzisz szablonu **aplikacji konsoli,** możesz go zainstalować w oknie **Utwórz nowy projekt.** W komunikacie **Nie znajdowanie tego, czego szukasz?** **Install more tools and features** Następnie w Instalatorze programu Visual Studio wybierz program rozwoju pulpitu z obciążeniem **C++.**
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź w polu **Nazwa projektu** polecenie *Get-Started-Debug* . Następnie wybierz pozycję **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *wprowadzenie do debugowania w* polu Nazwa **projektu.** Następnie wybierz pozycję **Utwórz**.
 
-   Program Visual Studio otwiera nowy projekt.
+   Visual Studio otwiera nowy projekt.
 
 ::: moniker-end
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
-1. W *Get-Started-Debugging. cpp*Zastąp cały kod domyślny następującym kodem:
+1. W *pliku get-started-debugging.cpp*zastąp cały kod domyślny następującym kodem:
 
     ```cpp
     #include <string>
@@ -139,9 +139,9 @@ Najpierw utworzysz projekt aplikacji C++ konsolowej. Typ projektu jest dostarcza
 
 ## <a name="start-the-debugger"></a>Uruchom debuger!
 
-1. Naciśnij klawisz **F5** (**Debuguj > Rozpocznij debugowanie**) lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi debugowania.
+1. Naciśnij **klawisz F5** **(Debugowanie > rozpocznij debugowanie)** lub przycisk **Start Debugowania** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie") na pasku narzędzi Debugowania.
 
-     **F5** uruchamia aplikację z debugerem dołączonym do procesu aplikacji, ale teraz nie robimy żadnych specjalnych, aby przeanalizować kod. Dlatego właśnie ładowania aplikacji, a zostaną wyświetlone dane wyjściowe konsoli.
+     **F5** uruchamia aplikację z debugerem dołączonym do procesu aplikacji, ale teraz nie zrobiliśmy nic specjalnego, aby zbadać kod. Więc aplikacja po prostu ładuje i widzisz wyjście konsoli.
 
     ```cmd
     Hello, f! Count to 1
@@ -156,176 +156,176 @@ Najpierw utworzysz projekt aplikacji C++ konsolowej. Typ projektu jest dostarcza
     Hello, fred smith! Count to 10
     ```
 
-     W tym samouczku utworzymy Przyjrzyj się bliżej aplikacji przy użyciu debugera i pobrać spojrzenie na debugera funkcji.
+     W tym samouczku przyjrzymy się bliżej tej aplikacji za pomocą debugera i przyjrzymy się funkcjom debugera.
 
-2. Zatrzymaj debuger, naciskając czerwony przycisk Zatrzymaj ![debugowanie](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") (**SHIFT** + **F5**).
+2. Zatrzymaj debuger, naciskając czerwony przycisk ![zatrzymania debugowania](../debugger/media/dbg-tour-stop-debugging.png "Zatrzymaj debugowanie") **(Shift** + **F5**).
 
-3. W oknie konsoli naciśnij klawisz i **wprowadź** , aby zamknąć okno konsoli.
+3. W oknie konsoli naciśnij klawisz i **enter,** aby zamknąć okno konsoli.
 
-## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustaw punkt przerwania i uruchomić debuger
+## <a name="set-a-breakpoint-and-start-the-debugger"></a>Ustawianie punktu przerwania i uruchamianie debugera
 
-1. W pętli `for` funkcji `main` Ustaw punkt przerwania, klikając lewy margines w następującym wierszu kodu:
+1. W `for` pętli `main` funkcji ustaw punkt przerwania, klikając lewy margines następującego wiersza kodu:
 
     `name += letters[i];`
 
-    W miejscu ustawionym na ![punkt przerwania pojawia się](../debugger/media/dbg-breakpoint.png "Punkt przerwania") czerwony okrąg.
+    W miejscu ustawiania punktu przerwania pojawi się ![czerwony punkt przerwania.](../debugger/media/dbg-breakpoint.png "Punkt przerwania")
 
-    Punkty przerwania są jedną z najważniejszych i najważniejszych funkcji niezawodnego debugowania. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu.
+    Punkty przerwania są jedną z najbardziej podstawowych i podstawowych funkcji niezawodnego debugowania. Punkt przerwania wskazuje, gdzie visual studio należy zawiesić uruchomiony kod, dzięki czemu można spojrzeć na wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu jest coraz uruchamiany.
 
-2. Naciśnij klawisz **F5** lub przycisk **Rozpocznij debugowanie** ![Rozpocznij debugowanie](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie"), uruchomienie aplikacji, a debuger zostanie uruchomiony do wiersza kodu, w którym ustawiono punkt przerwania.
+2. Naciśnij **klawisz F5** lub przycisk **Start Debugowania** ![Start Debugowania](../debugger/media/dbg-tour-start-debugging.png "Rozpocznij debugowanie"), aplikacja uruchamia się, a debuger uruchamia się do wiersza kodu, w którym można ustawić punkt przerwania.
 
-    ![Ustaw i Traf punkt przerwania](../debugger/media/get-started-set-breakpoint-cpp.png)
+    ![Ustawianie i trafienie punktu przerwania](../debugger/media/get-started-set-breakpoint-cpp.png)
 
-    Żółta strzałka reprezentuje instrukcji, w której debuger wstrzymany, również zawiesza wykonywanie aplikacji w tym samym punkcie (Ta instrukcja nie jeszcze wykonane).
+    Żółta strzałka reprezentuje instrukcję, na której debuger wstrzymane, który również zawiesza wykonywanie aplikacji w tym samym momencie (ta instrukcja nie została jeszcze wykonana).
 
-     Jeśli aplikacja nie jest jeszcze uruchomiona, **F5** uruchamia debuger i kończy się przy pierwszym punkcie przerwania. W przeciwnym razie **F5** kontynuuje działanie aplikacji do następnego punktu przerwania.
+     Jeśli aplikacja nie jest jeszcze uruchomiona, **F5** uruchamia debugera i zatrzymuje się w pierwszym punkcie przerwania. W przeciwnym razie **F5** kontynuuje uruchamianie aplikacji do następnego punktu przerwania.
 
-    Punkty przerwania są to przydatne, gdy wiadomo, wiersz kodu lub sekcji kodu, który chcesz zbadać szczegółowo. Aby uzyskać informacje na temat różnych typów punktów przerwania, które można ustawić, takich jak warunkowe punkty przerwania, zobacz [Używanie punktów przerwania](../debugger/using-breakpoints.md).
+    Punkty przerwania są przydatne funkcji, gdy znasz wiersz kodu lub sekcji kodu, które chcesz zbadać szczegółowo. Aby uzyskać informacje na temat różnych typów punktów przerwania, które można ustawić, takich jak warunkowe punkty przerwania, zobacz [Korzystanie z punktów przerwania](../debugger/using-breakpoints.md).
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Przechodzenie do kodu w debugerze, przy użyciu poleceń krokowych
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Nawigowanie po kodzie w debugerze przy użyciu poleceń kroków
 
-Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to dobry sposób, aby uzyskać szybkie na wykonywanie aplikacji w debugerze (równoważne polecenia takie jak menu poleceń są wyświetlane w nawiasach).
+Najczęściej używamy skrótów klawiaturowych w tym miejscu, ponieważ jest to dobry sposób, aby szybko wykonać aplikację w debugerze (równoważne polecenia, takie jak polecenia menu są wyświetlane w nawiasach).
 
-1. Gdy jest wstrzymana w pętli `for` w metodzie `main`, naciśnij klawisz **F11** (lub wybierz polecenie **Debuguj > Wkrocz**) dwa razy, aby przejść do wywołania metody `SendMessage`.
+1. Podczas `for` gdy wstrzymane w `main` pętli w metodzie, naciśnij **F11** (lub wybierz **debugowanie > Step Into)** dwa razy, aby przejść do wywołania `SendMessage` metody.
 
-     Po dwukrotnym naciśnięciu klawisza **F11** należy mieć następujący wiersz kodu:
+     Po dwukrotnym naciśnięciu **F11** powinieneś być w tym wierszu kodu:
 
      `SendMessage(name, a[i]);`
 
-1. Naciśnij klawisz **F11** jeszcze raz, aby przejść do metody `SendMessage`.
+1. Naciśnij **klawisz F11** jeszcze raz, aby wejść do `SendMessage` metody.
 
-     Żółty wskaźnik jest zaawansowany do metody `SendMessage`.
+     Żółty wskaźnik przechodzi `SendMessage` do metody.
 
-     ![Użyj klawisza F11, aby przejść do kodu](../debugger/media/get-started-f11-cpp.png "Wkrocz do kroku")
+     ![Użyj F11, aby wkroczyć do kodu](../debugger/media/get-started-f11-cpp.png "F10 Krok do")
 
-     F11 to **krok do** polecenia i postępuje z jedną instrukcją wykonywania aplikacji w danym momencie. F11 jest dobrym sposobem na zbadanie przepływ wykonania w najbardziej szczegółowy. (Aby szybciej przejść przez kod, pokazujemy inne opcje.) Domyślnie debuger pomija kod niebędący użytkownikiem (Aby uzyskać więcej szczegółów, zobacz [tylko mój kod](../debugger/just-my-code.md)).
+     F11 jest **step into** polecenia i zaliczki wykonywania aplikacji jedną instrukcję naraz. F11 jest dobrym sposobem, aby zbadać przepływ wykonania w najbardziej szczegółowo. (Aby szybciej poruszać się po kodzie, pokazujemy również kilka innych opcji). Domyślnie debuger przeskakuje nad kodem niebędącym użytkownikiem (jeśli chcesz uzyskać więcej szczegółów, zobacz [Tylko mój kod](../debugger/just-my-code.md)).
 
-     Załóżmy, że skończysz badanie metody `SendMessage` i chcesz uzyskać dostęp do metody, ale pozostać w debugerze. Można to zrobić przy użyciu polecenia **krok po kroku** .
+     Załóżmy, że skończysz badanie `SendMessage` metody i chcesz wyjść z metody, ale pobyt w debugera. Można to zrobić za pomocą polecenia **Step Out.**
 
-1. Naciśnij klawisz **Shift** + **F11** (lub **Debuguj > krok**).
+1. Naciśnij **klawisz Shift** + **F11** (lub **Debug > Step Out).**
 
-     To polecenie wznawia wykonywanie aplikacji (i zwiększa debuger) do momentu, gdy bieżąca metoda lub funkcja zwróci wynik.
+     To polecenie wznawia wykonywanie aplikacji (i przesuwa debuger) do czasu zwrotu bieżącej metody lub funkcji.
 
-     Należy wrócić do pętli `for` w metodzie `main`, wstrzymane w wywołaniu metody `SendMessage`.
+     Powinieneś być z `for` powrotem `main` w pętli w `SendMessage` metodzie, wstrzymane przy wywołaniu metody.
 
-1. Naciśnij klawisz **F11** kilka razy, dopóki nie powrócisz do wywołania metody `SendMessage`.
+1. Naciskaj **klawisz F11** kilka razy, aż ponownie powrócisz do wywołania `SendMessage` metody.
 
-1. Po wstrzymaniu wywołania metody naciśnij klawisz **F10** (lub wybierz polecenie **Debuguj > krok więcej**).
+1. Podczas gdy wstrzymane przy wywołaniu metody, naciśnij **klawisz F10** (lub wybierz **debugowanie > Step Over)** raz.
 
-     ![Użyj klawisza F10, aby przekroczyć kod](../debugger/media/get-started-step-over-cpp.png "F10 krok po kroku")
+     ![Użyj F10, aby przejść przez kod](../debugger/media/get-started-step-over-cpp.png "F10 Krok nad")
 
-     Zauważ, że debuger nie przekroczy metody `SendMessage`. **F10** przesuwa debuger bez przechodzenia do funkcji lub metod w kodzie aplikacji (kod nadal jest wykonywany). Naciskając klawisz **F10** w wywołaniu metody `SendMessage` (zamiast **F11**), pominięto kod implementacji dla `SendMessage` (co może nie interesuje Cię teraz). Aby uzyskać więcej informacji na temat różnych sposobów poruszania się po kodzie, zobacz [nawigowanie po kodzie w debugerze](../debugger/navigating-through-code-with-the-debugger.md).
+     Należy zauważyć, tym razem, że debuger nie krok do `SendMessage` metody. **F10** zaliczki debugera bez przechodzenia do funkcji lub metod w kodzie aplikacji (kod nadal wykonuje). Naciskając **F10** `SendMessage` na wywołanie metody (zamiast **F11**), przeskoczyliśmy kod implementacji (który `SendMessage` być może nie jesteśmy zainteresowani w tej chwili). Aby uzyskać więcej informacji na temat różnych sposobów poruszania się po kodzie, zobacz [Nawigowanie po kodzie w debugerze](../debugger/navigating-through-code-with-the-debugger.md).
 
-## <a name="navigate-code-using-run-to-click"></a>Przechodzenie do kodu przy użyciu polecenia Uruchom do kliknięcia
+## <a name="navigate-code-using-run-to-click"></a>Nawigowanie po kodzie za pomocą przycisku Uruchom, aby kliknąć
 
-1. Naciśnij klawisz **F5** , aby przejść do punktu przerwania.
+1. Naciśnij **klawisz F5,** aby przejść do punktu przerwania.
 
-1. W edytorze kodu przewiń w dół i umieść kursor nad funkcją `std::wcout` w metodzie `SendMessage` do momentu, gdy zielony przycisk Uruchom ![do kliknięcia zostanie wyświetlony po](../debugger/media/dbg-tour-run-to-click.png "RunToClick") lewej stronie. Etykietka narzędzia dla przycisku pokazuje "uruchom wykonywanie do tego miejsca".
+1. W edytorze kodu przewiń `std::wcout` w dół `SendMessage` i umieść wskaźnik myszy na funkcji w metodzie, aż po lewej stronie pojawi się zielony przycisk **Uruchom, aby kliknąć** ![Uruchom, aby kliknąć.](../debugger/media/dbg-tour-run-to-click.png "RunToClick (RunToClick)") Etykietka narzędzia dla przycisku pokazuje "Uruchom wykonanie tutaj".
 
-     ![Korzystanie z funkcji uruchamiania do kliknięcia](../debugger/media/get-started-run-to-click-cpp.png "Uruchom do kliknięcia")
+     ![Użyj funkcji Uruchom, aby kliknąć](../debugger/media/get-started-run-to-click-cpp.png "Uruchom do kliknięcia")
 
    > [!NOTE]
-   > Przycisk **Uruchom do kliknięcia** jest nowy w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. (Jeśli nie widzisz przycisku Zielona strzałka, użyj klawisza **F11** w tym przykładzie zamiast, aby przejść do odpowiedniego miejsca w debugerze).
+   > Przycisk **Uruchom, aby kliknąć** jest nowy w [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]pliku . (Jeśli nie widzisz zielonego przycisku strzałki, użyj **F11** w tym przykładzie, aby przejść debuger do właściwego miejsca).
 
-2. Kliknij przycisk **Uruchom, aby kliknąć** polecenie ![Uruchom, aby kliknąć](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Kliknij przycisk **Uruchom, aby kliknąć** ![Uruchom, aby kliknąć](../debugger/media/dbg-tour-run-to-click.png "RunToClick (RunToClick)").
 
-    Debuger przechodzi do funkcji `std::wcout`.
+    Debuger przechodzi do `std::wcout` funkcji.
 
-    Za pomocą tego przycisku jest podobna do ustawienia tymczasowy punkt przerwania. **Uruchamianie do kliknięcia** jest przydatne do szybkiego szybszego wprowadzania informacji w widocznym regionie kodu aplikacji (można kliknąć dowolny otwarty plik).
+    Użycie tego przycisku jest podobne do ustawiania tymczasowego punktu przerwania. **Uruchom, aby kliknąć** jest przydatna do szybkiego poruszania się w widocznym regionie kodu aplikacji (możesz kliknąć dowolny otwarty plik).
 
-## <a name="restart-your-app-quickly"></a>Szybko Uruchom ponownie swoją aplikację
+## <a name="restart-your-app-quickly"></a>Szybkie ponowne uruchamianie aplikacji
 
-Kliknij przycisk **Uruchom** ![ponownie uruchom aplikację](../debugger/media/dbg-tour-restart.png "RestartApp") na pasku narzędzi debugowania (**Ctrl** + **SHIFT** + **F5**).
+Kliknij przycisk **Uruchom ponownie** ![aplikację](../debugger/media/dbg-tour-restart.png "Uruchom aplikację RestartApp") na pasku narzędzi Debugowania **(Ctrl** + **Shift** + **F5**).
 
-Po naciśnięciu przycisku **Uruchom ponownie**program zapisze czas w przeciwieństwie do zatrzymywania aplikacji i ponownego uruchomienia debugera. Debuger wstrzymuje na pierwszy punkt przerwania zostanie osiągnięty przez wykonywanie kodu.
+Po naciśnięciu **przycisku Uruchom ponownie**, oszczędza czas w porównaniu do zatrzymania aplikacji i ponownego uruchomienia debugera. Debuger wstrzymuje w pierwszym punkcie przerwania, który jest trafiony przez wykonanie kodu.
 
-Debuger zatrzyma się ponownie w punkcie przerwania, który został wcześniej ustawiony wewnątrz pętli `for`.
+Debuger zatrzymuje się ponownie w punkcie przerwania, który wcześniej ustawiono wewnątrz `for` pętli.
 
-## <a name="inspect-variables-with-data-tips"></a>Sprawdzanie zmiennych z poradami do danych
+## <a name="inspect-variables-with-data-tips"></a>Sprawdzanie zmiennych za pomocą wskazówek dotyczących danych
 
-Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej przydatnych funkcjach debugera i istnieją różne sposoby, aby to zrobić. Często podczas próby debugowania problemu próbujesz sprawdzić, czy zmienne są przechowywane wartości, których można oczekiwać, aby użytkownicy posiadali w danym momencie.
+Funkcje, które umożliwiają sprawdzanie zmiennych są jedną z najbardziej przydatnych funkcji debugera i istnieją różne sposoby, aby to zrobić. Często podczas próby debugowania problemu, próbujesz dowiedzieć się, czy zmienne są przechowywanie wartości, które oczekują ich mieć w określonym czasie.
 
-1. Gdy jest wstrzymana w instrukcji `name += letters[i]`, umieść wskaźnik myszy na zmiennej `letters` i zobaczysz jej wartość domyślną, `size={10}`.
+1. Po wstrzymaniu `name += letters[i]` na instrukcji umieść `letters` wskaźnik myszy na zmiennej `size={10}`i zobaczysz jej wartość domyślną, .
 
-1. Rozwiń zmienną `letters`, aby wyświetlić jej właściwości, które obejmują wszystkie elementy, które zawiera zmienna.
+1. Rozwiń `letters` zmienną, aby wyświetlić jej właściwości, które zawierają wszystkie elementy, które zawiera zmienna.
 
-1. Następnie umieść wskaźnik myszy nad zmienną `name` i zobaczysz jej bieżącą wartość jako pusty ciąg.
+1. Następnie umieść wskaźnik `name` myszy na zmiennej, a zobaczysz jej bieżącą wartość, pusty ciąg.
 
-1. Naciśnij klawisz **F5** (lub **Debuguj** > **Kontynuuj**) kilka razy, aby wielokrotnie powtarzać kilka razy przez pętlę `for`, zatrzymując ponownie w punkcie przerwania i umieszczając wskaźnik myszy na zmiennej `name` za każdym razem, aby sprawdzić jej wartość.
+1. Naciśnij **klawisz F5** (lub **Debug** > **Continue)** kilka razy, `for` aby kilka razy iterować przez pętlę, `name` wstrzymując ponownie punkt przerwania i najeżdżając kursorem na zmienną za każdym razem, aby sprawdzić jej wartość.
 
-     ![Wyświetlanie etykietki danych](../debugger/media/get-started-data-tip-cpp.png "Wyświetlanie etykietki danych")
+     ![Wyświetlanie końcówki danych](../debugger/media/get-started-data-tip-cpp.png "Wyświetlanie końcówki danych")
 
-     Wartość zmiennej zmienia się z każdą iteracją `for` pętli, wyświetlając wartości `f`, następnie `fr`, a następnie `fre`i tak dalej.
+     Wartość zmiennej zmienia się z każdą `for` iteracją pętli, `fr`wyświetlaą `fre`wartości `f`, następnie , a następnie i tak dalej.
 
-     Często podczas debugowania, chcesz, aby szybko sprawdzić wartości zmiennych, aby zobaczyć, czy będą one przechowywane wartości, których oczekujesz, aby przechowywać, właściwości i porady dotyczące danych są dobrym sposobem, aby to zrobić.
+     Często podczas debugowania, chcesz szybki sposób, aby sprawdzić wartości właściwości na zmiennych, aby zobaczyć, czy są one przechowywania wartości, które oczekują ich do przechowywania, a wskazówki dotyczące danych są dobrym sposobem, aby to zrobić.
 
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych za pomocą okien zmiennych automatycznych i zmiennych lokalnych
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Sprawdzanie zmiennych za pomocą okien Autos i Locals
 
-1. Zapoznaj się z oknem **Autokorekty** u dołu edytora kodu.
+1. Spójrz na okno **Autos** w dolnej części edytora kodu.
 
-    Jeśli jest zamknięte, otwórz je podczas wstrzymania w debugerze, wybierając pozycję **debuguj** > **Windows** > **autostarts**.
+    Jeśli jest zamknięty, otwórz go podczas wstrzymania w debugerze, wybierając **debugowanie** > **autos****systemu Windows** > .
 
-    W oknie **Autokorekty** widoczne są zmienne i ich bieżąca wartość. W oknie **samochody** są wyświetlane wszystkie zmienne używane w bieżącym wierszu lub poprzednim wierszu (Sprawdź dokumentację zachowania specyficzną dla języka).
+    W oknie **Autos** widoczne są zmienne i ich bieżąca wartość. Okno **Autos** zawiera wszystkie zmienne używane w bieżącym wierszu lub poprzednim wierszu (Sprawdź dokumentację zachowania specyficznego dla języka).
 
-1. Następnie zapoznaj się z oknem **Locals (ustawienia regionalne** ) na karcie obok okna **Autokorekty** .
+1. Następnie spójrz na okno **Zmiennoprawny** na karcie obok okna **Autos.**
 
-1. Rozwiń zmienną `letters`, aby wyświetlić elementy, które zawiera.
+1. Rozwiń `letters` zmienną, aby wyświetlić elementy, które zawiera.
 
-     ![Sprawdź zmienne w oknie zmiennych lokalnych](../debugger/media/get-started-locals-window-cpp.png "Okno zmiennych lokalnych")
+     ![Sprawdzanie zmiennych w oknie Dla mieszkańców](../debugger/media/get-started-locals-window-cpp.png "Okno miejscowi")
 
-    W oknie **Ustawienia lokalne** są wyświetlane zmienne, które znajdują się w bieżącym [zakresie](https://www.wikipedia.org/wiki/Scope_(computer_science)), czyli bieżącym kontekście wykonania.
+    Okno **Locals** pokazuje zmienne, które znajdują się w bieżącym [zakresie](https://www.wikipedia.org/wiki/Scope_(computer_science)), czyli bieżącego kontekstu wykonywania.
 
-## <a name="set-a-watch"></a>Ustawianie wyrażenia kontrolnego
+## <a name="set-a-watch"></a>Ustawianie zegarka
 
-1. W głównym oknie edytora kodu kliknij prawym przyciskiem myszy zmienną `name` i wybierz polecenie **Dodaj czujkę**.
+1. W oknie głównego edytora kodu `name` kliknij zmienną prawym przyciskiem myszy i wybierz polecenie **Dodaj czujki**.
 
-    Zostanie otwarte okno **czujki** w dolnej części edytora kodu. Możesz użyć okna **czujki** , aby określić zmienną (lub wyrażenie), dla którego chcesz zachować czujkę.
+    Okno **Czujka** zostanie otwarte w dolnej części edytora kodu. Za pomocą okna **Czujka** można określić zmienną (lub wyrażenie), które ma być obserwowane.
 
-    Teraz masz ustawiony czujkę na zmiennej `name` i zobaczysz jej zmianę wartości podczas przechodzenia przez debuger. W przeciwieństwie do innych zmiennych okien, w oknie **czujki** zawsze są wyświetlane zmienne, które są obserwowane (są wyszarzone, gdy są poza zakresem).
+    Teraz masz zegarek ustawiony na `name` zmiennej i widać jej zmianę wartości podczas przechodzenia przez debuger. W przeciwieństwie do innych okien zmiennych, **watch** okno zawsze pokazuje zmienne, które obserwujesz (są wyszarzone, gdy poza zakresem).
 
 ## <a name="examine-the-call-stack"></a>Sprawdź stos wywołań
 
-1. W pętli `for` kliknij okno **stos wywołań** , które jest domyślnie otwarte w prawym dolnym okienku.
+1. Po wstrzymaniu `for` w pętli kliknij okno **Stos wywołań,** które jest domyślnie otwarte w prawym dolnym okienku.
 
-    Jeśli jest zamknięte, otwórz je podczas wstrzymania w debugerze, wybierając pozycję **debuguj** > **Windows** > **stos wywołań**.
+    Jeśli jest zamknięty, otwórz go podczas wstrzymania w debugerze, wybierając **debugowanie** > **stosu wywołań****systemu Windows** > .
 
-2. Klikaj polecenie **F11** kilka razy, aż zobaczysz debuger pauzy w metodzie `SendMessage`. Sprawdź okno **stosu wywołań** .
+2. Kliknij **klawisz F11** kilka razy, aż zobaczysz `SendMessage` pauzę debugera w metodzie. Spójrz na okno **Stos wywołań.**
 
-    ![Badanie stosu wywołań](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
+    ![Sprawdź stos wywołań](../debugger/media/get-started-call-stack-cpp.png "BadanieCallStack")
 
-    Okno **stos wywołań** pokazuje kolejność, w której metody i funkcje są wywoływane. W górnym wierszu jest wyświetlana bieżąca funkcja (Metoda `SendMessage` w tej aplikacji). Drugi wiersz pokazuje, że `SendMessage` został wywołany z metody `main` i tak dalej.
+    Okno **Stos wywołań** pokazuje kolejność, w jakiej metody i funkcje są wywoływane. Górna linia pokazuje bieżącą `SendMessage` funkcję (metodę w tej aplikacji). Druga linia pokazuje, że `SendMessage` `main` został wywołany z metody, i tak dalej.
 
    > [!NOTE]
-   > Okno **stosu wywołań** przypomina perspektywę debugowania w niektórych środowisk IDE, takich jak przezaćmienie.
+   > Okno **Stos wywołań** jest podobne do perspektywy debugowania w niektórych środowiskach IDE, takich jak Eclipse.
 
-    Stos wywołań jest dobrym sposobem na badania i informacje na temat wykonywania przepływu aplikacji.
+    Stos wywołań jest dobrym sposobem, aby zbadać i zrozumieć przepływ wykonywania aplikacji.
 
-    Możesz kliknąć dwukrotnie wiersz kodu, aby przyjrzeć się kodu źródłowego i zmienia także bieżący zakres kontrolowanym przez debuger. Ta akcja nie wcześniejsze debugera.
+    Można dwukrotnie kliknąć wiersz kodu, aby przejść do tego kodu źródłowego i który również zmienia bieżący zakres jest sprawdzany przez debugera. Ta akcja nie powoduje przyspieszenia debugera.
 
-    Możesz również użyć menu dostępnych po kliknięciu prawym przyciskiem myszy w oknie **stos wywołań** , aby wykonać inne czynności. Na przykład można wstawiać punkty przerwania do określonych funkcji, przełączać debuger za pomocą polecenia **Uruchom do kursora**i testować kod źródłowy. Aby uzyskać więcej informacji, zobacz [How to: badanie stosu wywołań](../debugger/how-to-use-the-call-stack-window.md).
+    Można również użyć menu prawym przyciskiem myszy z okna **Stos wywołań,** aby wykonać inne czynności. Na przykład można wstawić punkty przerwania do określonych funkcji, przesunąć debuger za pomocą **uruchom do kursora**i przejść do badania kodu źródłowego. Aby uzyskać więcej informacji, zobacz [Jak: Sprawdź stos wywołań](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="change-the-execution-flow"></a>Zmień przepływ wykonania
+## <a name="change-the-execution-flow"></a>Zmienianie przepływu wykonania
 
-1. Naciśnij dwukrotnie klawisz **F11** , aby uruchomić funkcję `std::wcout`.
+1. Naciśnij dwukrotnie **klawisz F11,** aby uruchomić `std::wcout` tę funkcję.
 
-1. Po wstrzymaniu debugera w wywołaniu metody `SendMessage` Użyj myszy, aby uzyskać żółtą strzałkę (wskaźnik wykonywania) po lewej stronie, a następnie przesuń żółtą strzałkę w górę o jeden wiersz w górę, z powrotem do `std::wcout`.
+1. Gdy debuger został wstrzymany w wywołaniu `SendMessage` metody, użyj myszy, aby pobrać żółtą strzałkę (wskaźnik wykonania) `std::wcout`po lewej stronie i przesunąć żółtą strzałkę w górę o jedną linię, z powrotem do .
 
-1. Naciśnij klawisz **F11**.
+1. Naciśnij **klawisz F11**.
 
-    Debuger uruchamia ponownie funkcję `std::wcout` (zobaczysz to w danych wyjściowych okna konsoli).
+    Debuger ponownie wywrze `std::wcout` tę funkcję (widać to w danych wyjściowych okna konsoli).
 
-    Zmieniając przepływ wykonania, można wykonać czynności, jak przetestować różne ścieżki wykonywania lub uruchom ponownie kodu bez ponownego uruchamiania debugera.
+    Zmieniając przepływ wykonywania, można wykonać takie czynności, jak testowanie różnych ścieżek wykonywania kodu lub ponownego uruchamiania kodu bez ponownego uruchamiania debugera.
 
     > [!WARNING]
-    > Często muszą być ostrożnym z tej funkcji, a następnie zostanie wyświetlone ostrzeżenie w etykietce narzędzia. Zbyt mogą pojawić się inne ostrzeżenia. Przeniesienie wskaźnika nie można przywrócić aplikację do wcześniejszego stanu aplikacji.
+    > Często należy zachować ostrożność przy tej funkcji, a w etykietce narzędzia jest widoczne ostrzeżenie. Mogą pojawić się również inne ostrzeżenia. Przenoszenie wskaźnika nie można przywrócić aplikacji do wcześniejszego stanu aplikacji.
 
-1. Naciśnij klawisz **F5** , aby kontynuować uruchamianie aplikacji.
+1. Naciśnij **klawisz F5,** aby kontynuować uruchamianie aplikacji.
 
-    Gratulujemy wykonanie kroków tego samouczka!
+    Gratulujemy ukończenia tego samouczka!
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
+W tym samouczku dowiesz się, jak uruchomić debuger, krok po kroku kodu i sprawdzić zmienne. Możesz chcieć uzyskać spojrzenie wysokiego poziomu na funkcje debugera wraz z łączami do większej ilości informacji.
 
 > [!div class="nextstepaction"]
 > [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

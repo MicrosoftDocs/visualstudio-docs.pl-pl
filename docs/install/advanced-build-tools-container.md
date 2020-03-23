@@ -1,5 +1,5 @@
 ---
-title: Zaawansowany przykład dla kontenerów
+title: Zaawansowany przykład kontenerów
 description: ''
 ms.date: 07/03/2019
 ms.topic: conceptual
@@ -12,36 +12,36 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b0a88815c4a2853270b539a3e012297b681af62e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114944"
 ---
-# <a name="advanced-example-for-containers"></a>Zaawansowany przykład dla kontenerów
+# <a name="advanced-example-for-containers"></a>Zaawansowany przykład kontenerów
 
 ::: moniker range="vs-2017"
 
-Przykład pliku dockerfile w [narzędziu do tworzenia kompilacji do kontenera](build-tools-container.md) zawsze używa obrazu [Microsoft/dotnet-Framework: 4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) na podstawie najnowszego obrazu Microsoft/windowsservercore i najnowszego Instalatora Visual Studio Build Tools. Jeśli opublikujesz ten obraz w [rejestrze platformy Docker](https://azure.microsoft.com/services/container-registry) dla innych użytkowników, ten obraz może być poprawny w wielu scenariuszach. Jednak w rzeczywistości jest to bardziej powszechne, aby określić, jaki podstawowy obraz jest używany, jakie dane binarne są pobierane i które instalowane wersje narzędzi.
+Przykładowy plik Dockerfile w [instalacji narzędzi kompilacji w kontenerze](build-tools-container.md) zawsze używa obrazu [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) na podstawie najnowszego obrazu microsoft/windowsservercore i najnowszego instalatora narzędzi kompilacji programu Visual Studio. Jeśli publikujesz ten obraz w [rejestrze platformy Docker](https://azure.microsoft.com/services/container-registry) dla innych do ciągnięcia, ten obraz może być w porządku dla wielu scenariuszy. Jednak w praktyce częściej można dokłdnąć, jakiego obrazu podstawowego używasz, pobieranych plików binarnych i instalowanych wersji narzędzi.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Przykład pliku dockerfile w [narzędziu do tworzenia kompilacji do kontenera](build-tools-container.md) zawsze używa obrazu [Microsoft/dotnet-Framework: 4.8](https://hub.docker.com/r/microsoft/dotnet-framework) na podstawie najnowszego obrazu Microsoft/windowsservercore i najnowszego Instalatora Visual Studio Build Tools. Jeśli opublikujesz ten obraz w [rejestrze platformy Docker](https://azure.microsoft.com/services/container-registry) dla innych użytkowników, ten obraz może być poprawny w wielu scenariuszach. Jednak w rzeczywistości jest to bardziej powszechne, aby określić, jaki podstawowy obraz jest używany, jakie dane binarne są pobierane i które instalowane wersje narzędzi.
+Przykładowy plik Dockerfile w [instalacji narzędzi kompilacji w kontenerze](build-tools-container.md) zawsze używa obrazu [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) na podstawie najnowszego obrazu microsoft/windowsservercore i najnowszego instalatora narzędzi kompilacji programu Visual Studio. Jeśli publikujesz ten obraz w [rejestrze platformy Docker](https://azure.microsoft.com/services/container-registry) dla innych do ciągnięcia, ten obraz może być w porządku dla wielu scenariuszy. Jednak w praktyce częściej można dokłdnąć, jakiego obrazu podstawowego używasz, pobieranych plików binarnych i instalowanych wersji narzędzi.
 
 ::: moniker-end
 
-W poniższym przykładzie pliku dockerfile używa określonego znacznika wersji obrazu Microsoft/dotnet-Framework. Użycie określonego tagu dla obrazu podstawowego to commonplace i ułatwia zapamiętanie, że Kompilowanie lub rekompilowanie obrazów zawsze jest takie samo.
+Poniższy przykład Dockerfile używa określonego tagu wersji obrazu microsoft/dotnet-framework. Używanie określonego znacznika dla obrazu podstawowego jest powszechne i ułatwia zapamiętanie, że tworzenie lub odbudowywanie obrazów ma zawsze tę samą podstawę.
 
 > [!NOTE]
-> Nie można zainstalować programu Visual Studio w programie Microsoft/windowsservercore: 10.0.14393.1593 ani na podstawie jego obrazu, który ma znane problemy z uruchamianiem Instalatora w kontenerze. Aby uzyskać więcej informacji, zobacz [znane problemy dotyczące kontenerów](build-tools-container-issues.md).
+> Nie można zainstalować programu Visual Studio w programie Microsoft/windowsservercore:10.0.14393.1593 lub na jego podstawie dowolnego obrazu, który ma znane problemy z uruchomieniem instalatora w kontenerze. Aby uzyskać więcej informacji, zobacz [Znane problemy dla kontenerów](build-tools-container-issues.md).
 
-Poniższy przykład Pobiera najnowszą wersję narzędzi kompilacji. Jeśli chcesz użyć wcześniejszej wersji narzędzi do kompilacji, którą można zainstalować w kontenerze później, musisz najpierw [utworzyć](create-an-offline-installation-of-visual-studio.md) i [zachować](update-a-network-installation-of-visual-studio.md) układ.
+Poniższy przykład pobiera najnowszą wersję narzędzi kompilacji. Jeśli chcesz użyć wcześniejszej wersji narzędzi kompilacji, które można zainstalować w kontenerze później, należy najpierw [utworzyć](create-an-offline-installation-of-visual-studio.md) i [obsługiwać](update-a-network-installation-of-visual-studio.md) układ.
 
-## <a name="install-script"></a>Zainstaluj skrypt
+## <a name="install-script"></a>Instalowanie skryptu
 
-Aby zbierać dzienniki w przypadku wystąpienia błędu instalacji, Utwórz skrypt wsadowy o nazwie "Install. cmd" w katalogu roboczym, który zawiera następującą zawartość:
+Aby zbierać dzienniki po wystąpieniu błędu instalacji, utwórz skrypt wsadowy o nazwie "Install.cmd" w katalogu roboczym, który zawiera następującą zawartość:
 
 ```shell
 @if not defined _echo echo off
@@ -60,9 +60,9 @@ if "%ERRORLEVEL%"=="3010" (
 )
 ```
 
-## <a name="dockerfile"></a>Pliku dockerfile
+## <a name="dockerfile"></a>Plik dockerfile
 
-W katalogu roboczym Utwórz "pliku dockerfile" z następującą zawartością:
+W katalogu roboczym utwórz "Dockerfile" z następującą zawartością:
 
 ::: moniker range="vs-2017"
 
@@ -104,9 +104,9 @@ CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
    > [!WARNING]
-   > Program Visual Studio 2017 w wersji 15,8 lub starszej (dowolny produkt) nie zostanie prawidłowo zainstalowany na MCR\.Microsoft\.com\/Windows\/ServerCore: 1809 lub nowszy. Nie jest wyświetlany żaden błąd.
+   > Program Visual Studio 2017 w wersji 15.8 lub nowszej\.\.(dowolny produkt) nie zostanie poprawnie zainstalowany w programie mcr microsoft com\/windows\/servercore:1809 lub nowszym. Nie jest wyświetlany żaden błąd.
    >
-   > Aby uzyskać więcej informacji, zobacz [znane problemy dotyczące kontenerów](build-tools-container-issues.md) .
+   > Aby uzyskać więcej [informacji, zobacz Znane problemy dla kontenerów.](build-tools-container-issues.md)
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 
 ::: moniker-end
 
-Uruchom następujące polecenie, aby skompilować obraz w bieżącym katalogu roboczym:
+Uruchom następujące polecenie, aby utworzyć obraz w bieżącym katalogu roboczym:
 
 ::: moniker range="vs-2017"
 
@@ -169,11 +169,11 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 
 ::: moniker-end
 
-Opcjonalnie Przekaż albo oba `FROM_IMAGE` lub `CHANNEL_URL` argumenty przy użyciu `--build-arg` przełącznika wiersza polecenia, aby określić inny obraz podstawowy lub lokalizację układu wewnętrznego w celu utrzymania stałego obrazu.
+Opcjonalnie przekaż jeden `FROM_IMAGE` lub `CHANNEL_URL` oba `--build-arg` lub argumenty za pomocą przełącznika wiersza polecenia, aby określić inny obraz podstawowy lub lokalizację układu wewnętrznego w celu utrzymania stałego obrazu.
 
 ## <a name="diagnosing-install-failures"></a>Diagnozowanie błędów instalacji
 
-Ten przykład pobiera określone narzędzia i sprawdza, czy skróty pasują do siebie. Pobiera również najnowsze narzędzie do zbierania dzienników programu Visual Studio i programu .NET, dzięki czemu w przypadku wystąpienia błędu instalacji można skopiować dzienniki na maszynę hosta w celu przeanalizowania błędu.
+W tym przykładzie pobiera określone narzędzia i sprawdza, czy skróty są zgodne. Pobiera również najnowsze narzędzie do zbierania dzienników programu Visual Studio i .NET, dzięki czemu w przypadku wystąpienia błędu instalacji można skopiować dzienniki do komputera hosta w celu przeanalizowania błędu.
 
 ::: moniker range="vs-2017"
 
@@ -207,12 +207,12 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ::: moniker-end
 
-Po zakończeniu ostatniego wiersza Otwórz pozycję "%TEMP%\vslogs.zip" na swojej maszynie lub Prześlij problem do witryny internetowej [społeczności deweloperów](https://developercommunity.visualstudio.com) .
+Po zakończeniu wykonywania ostatniego wiersza otwórz "%TEMP%\vslogs.zip" na komputerze lub prześlij problem w witrynie [społeczności deweloperów.](https://developercommunity.visualstudio.com)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie narzędzi do kompilacji w kontenerze](build-tools-container.md)
 * [Znane problemy z kontenerami](build-tools-container-issues.md)
-* [Visual Studio Build Tools obciążenia i identyfikatory składników](workload-component-id-vs-build-tools.md)
+* [Obciążenie i identyfikatory składników narzędzi kompilacji programu Visual Studio](workload-component-id-vs-build-tools.md)

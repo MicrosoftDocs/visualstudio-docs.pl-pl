@@ -1,5 +1,5 @@
 ---
-title: Wyłącz analizę kodu
+title: Wyłączanie analizy kodu
 ms.date: 10/03/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d25254cabecd88c6e876646c3c276503aadf7eb7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8db6ad7bed4b1526d87112f33d3586728728d7f5
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587670"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431400"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Jak wyłączyć analizę kodu źródłowego dla kodu zarządzanego
 
@@ -23,39 +23,35 @@ Ta strona pomaga wyłączyć analizę kodu w programie Visual Studio. Istnieją 
 
 - Typ projektu (.NET Core/Standard a .NET Framework)
 
-  Projekty .NET Core i .NET Standard zawierają opcje na stronie właściwości analizy kodu, które umożliwiają wyłączenie analizy kodu z analizatorów zainstalowanych jako pakiet NuGet. Aby uzyskać więcej informacji, zobacz [.NET Core i .NET Standard projects](#net-core-and-net-standard-projects). Aby wyłączyć analizę kodu źródłowego dla projektów .NET Framework, zobacz [.NET Framework projects](#net-framework-projects).
+  Projekty .NET Core i .NET Standard mają opcje na stronie właściwości analizy kodu, które umożliwiają wyłączenie analizy kodu z analizatorów zainstalowanych jako pakiet NuGet. Aby uzyskać więcej informacji, zobacz [.NET Core i .NET Standard projects](#net-core-and-net-standard-projects). Aby wyłączyć analizę kodu źródłowego dla projektów programu .NET Framework, zobacz [projekty programu .NET Framework](#net-framework-projects).
 
-- Pakiet narzędzia NuGet Analyzer a VSIX lub wbudowane analizatory
+- Analiza źródła a analiza starsza
 
-  Obecnie nie można wyłączyć analizy kodu na żywo dla wbudowanych analizatorów, na przykład identyfikator reguły IDE0067. Podobnie nie można wyłączyć analizy kodu na żywo dla analizatorów, które zostały zainstalowane w ramach rozszerzenia programu Visual Studio (VSIX). Aby pominąć błędy i ostrzeżenia z wbudowanych i opartych na VSIX analizatorów, wybierz pozycję **analizuj** > **kompilację i Pomiń aktywne problemy** na pasku menu. *Można* wyłączyć analizę na żywo i w czasie rzeczywistym dla analizatorów zainstalowanych w ramach pakietu NuGet.
-
-- Analiza źródła a wersja do starszej analizy
-
-  Ten temat ma zastosowanie do analizy kodu źródłowego, a nie do starszej wersji (binarnej) analizy. Aby uzyskać informacje na temat wyłączania starszej analizy, zobacz [How to: Enable and disable The Legacy Code Analysis](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+  Ten temat dotyczy analizy kodu źródłowego, a nie do starszej analizy (binarnej). Aby uzyskać informacje dotyczące wyłączania starszej analizy, zobacz [Jak: Włączanie i wyłączanie starszej analizy kodu](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 ## <a name="net-core-and-net-standard-projects"></a>Projekty .NET Core i .NET Standard
 
-Począwszy od programu Visual Studio 2019 w wersji 16,3, na stronie właściwości analizy kodu są dostępne dwa pola wyboru, które umożliwiają kontrolowanie, czy analizatory oparte na NuGet są uruchamiane w czasie kompilacji i w czasie projektowania. Te opcje są specyficzne dla projektu.
+Począwszy od programu Visual Studio 2019 w wersji 16.3, istnieją dwa pola wyboru dostępne na stronie właściwości analizy kodu, które umożliwiają kontrolowanie, czy analizatory są uruchamiane w czasie kompilacji i czasie projektowania. Te opcje są specyficzne dla projektu.
 
-![Włącz lub Wyłącz analizę kodu na żywo lub po kompilacji w programie Visual Studio](media/run-on-build-run-live-analysis.png)
+![Włączanie lub wyłączanie analizy kodu na żywo lub kompilacji w programie Visual Studio](media/run-on-build-run-live-analysis.png)
 
-Aby otworzyć tę stronę, kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**. Wybierz kartę **Analiza kodu** .
+Aby otworzyć tę stronę, kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratorze rozwiązań** i wybierz polecenie **Właściwości**. Wybierz kartę **Analiza kodu.**
 
-- Aby wyłączyć analizę źródła w czasie kompilacji, usuń zaznaczenie opcji **Uruchom przy kompilacji** .
-- Aby wyłączyć analizę źródła na żywo, usuń zaznaczenie opcji **Uruchom przy użyciu analizy na żywo** .
+- Aby wyłączyć analizę źródła w czasie kompilacji, odznacz opcję **Uruchom na kompilacji.**
+- Aby wyłączyć analizę źródeł na żywo, odznacz opcję **Uruchom na żywo analizy.**
 
 > [!NOTE]
-> Wbudowane i oparte na VSIX analizatory będą nadal zapewniać analizę na żywo kodu, nawet jeśli nie jest zaznaczone pole wyboru **Uruchom na żywo analizy** . Jeśli chcesz pominąć błędy i ostrzeżenia z tych analizatorów, wybierz pozycję **analizuj** > **Kompiluj i Pomijaj aktywne problemy** na pasku menu.
+> Począwszy od programu Visual Studio 2019 w wersji 16.5, jeśli wolisz przepływ pracy wykonywania analizy kodu na żądanie, można wyłączyć wykonywanie analizatora podczas analizy na żywo i/lub kompilacji i ręcznie wyzwolić analizę kodu raz w projekcie lub rozwiązaniu na żądanie. Aby uzyskać informacje na temat ręcznego uruchamiania analizy kodu, zobacz [Jak: Ręcznie uruchamiać analizę kodu dla kodu zarządzanego](how-to-run-code-analysis-manually-for-managed-code.md).  
 
-## <a name="net-framework-projects"></a>Projekty .NET Framework
+## <a name="net-framework-projects"></a>Projekty platformy .NET Framework
 
-Aby wyłączyć analizę kodu źródłowego dla analizatorów zainstalowanych w ramach pakietu NuGet, Dodaj co najmniej jedną z następujących właściwości programu MSBuild do [pliku projektu](../ide/solutions-and-projects-in-visual-studio.md#project-file).
+Aby wyłączyć analizę kodu źródłowego dla analizatorów, dodaj do [pliku projektu](../ide/solutions-and-projects-in-visual-studio.md#project-file)jedną lub więcej następujących właściwości MSBuild .
 
-| Właściwość programu MSBuild | Opis | Domyślny |
+| Właściwość MSBuild | Opis | Domyślne |
 | - | - | - |
-| `RunAnalyzersDuringBuild` | Określa, czy analizatory oparte na NuGet są uruchamiane w czasie kompilacji. | `true` |
-| `RunAnalyzersDuringLiveAnalysis` | Określa, czy analizatory bazujące na NuGet analizują kod na żywo w czasie projektowania. | `true` |
-| `RunAnalyzers` | Wyłącza analizatory oparte na NuGet w czasie kompilacji i projektowania. Ta właściwość ma wyższy priorytet niż `RunAnalyzersDuringBuild` i `RunAnalyzersDuringLiveAnalysis`. | `true` |
+| `RunAnalyzersDuringBuild` | Określa, czy analizatory są uruchamiane w czasie kompilacji. | `true` |
+| `RunAnalyzersDuringLiveAnalysis` | Określa, czy analizatory analizują kod na żywo w czasie projektowania. | `true` |
+| `RunAnalyzers` | Wyłącza analizatory w czasie kompilacji i projektowania. Ta właściwość ma `RunAnalyzersDuringBuild` `RunAnalyzersDuringLiveAnalysis`pierwszeństwo przed i . | `true` |
 
 Przykłady:
 
@@ -71,17 +67,17 @@ Przykłady:
 
 ## <a name="source-analysis"></a>Analiza źródła
 
-Nie można wyłączyć [analizy źródła](roslyn-analyzers-overview.md) w programie Visual Studio 2017. Jeśli chcesz wyczyścić błędy analizatora z Lista błędów, możesz pominąć wszystkie bieżące naruszenia, wybierając pozycję **analizuj** > **Uruchom analizę kodu i pominąć aktywne problemy** na pasku menu. Aby uzyskać więcej informacji, zobacz [pomijanie naruszeń](use-roslyn-analyzers.md#suppress-violations).
+Nie można wyłączyć [analizy źródłowej](roslyn-analyzers-overview.md) w programie Visual Studio 2017. Jeśli chcesz wyczyścić błędy analizatora z listy błędów, możesz pominąć wszystkie bieżące naruszenia, wybierając **pozycję Analizuj** > **analizę kodu przebiegu i Pomijaj aktywne problemy** na pasku menu. Aby uzyskać więcej informacji, zobacz [Pomijanie naruszeń](use-roslyn-analyzers.md#suppress-violations).
 
-Począwszy od programu Visual Studio 2019 w wersji 16,3, można wyłączyć analizę kodu źródłowego opartego na narzędziu NuGet. Rozważ uaktualnienie do programu Visual Studio 2019.
+Począwszy od programu Visual Studio 2019 w wersji 16.3, można wyłączyć analizę kodu źródłowego lub wykonać go na żądanie. Należy rozważyć uaktualnienie do programu Visual Studio 2019.
 
 ## <a name="legacy-analysis"></a>Analiza w starszej wersji
 
-Starszą analizę czasu kompilacji można wyłączyć na stronie właściwości **analizy kodu** . Aby uzyskać więcej informacji, zobacz [How to: Enable and disable The Legacy Code Analysis](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Można wyłączyć starszą analizę czasu kompilacji na stronie właściwości **analizy kodu.** Aby uzyskać więcej informacji, zobacz [Jak: Włączanie i wyłączanie starszej analizy kodu](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Pomiń naruszenia](use-roslyn-analyzers.md#suppress-violations)
-- [Instrukcje: Włączanie i wyłączanie analizy starszego kodu](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Pomijanie naruszeń](use-roslyn-analyzers.md#suppress-violations)
+- [Jak: Włączanie i wyłączanie starszej analizy kodu](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

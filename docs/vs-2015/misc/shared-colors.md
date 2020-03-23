@@ -1,5 +1,5 @@
 ---
-title: Udostępnione kolory | Dokumentacja firmy Microsoft
+title: Współdzielone kolory | Dokumenty firmy Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,1619 +8,1619 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436570"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302407"
 ---
-# <a name="shared-colors"></a>Udostępnione kolory
+# <a name="shared-colors"></a>Kolory udostępnione
 Tutaj wstaw wprowadzenie.  
   
-## <a name="shared-colors"></a>Udostępnione kolory  
- Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby Twoje element interfejsu, aby były zgodne z podobne funkcje, umożliwia już istniejącymi nazwami tokenu w plikach definicji pakietu wybierz i przypisania kolorów. Gwarantuje to, że Twój interfejs użytkownika pozostaje zgodny z całego środowiska programu Visual Studio i że jest aktualizowana automatycznie po motywy są dodawane lub aktualizowane.  
+## <a name="shared-colors"></a>Kolory udostępnione  
+ Podczas projektowania interfejsu użytkownika, który używa wspólnych elementów powłoki programu Visual Studio lub chcesz, aby element interfejsu był zgodny z podobnymi funkcjami, użyj istniejących nazw tokenów w plikach definicji pakietu, aby wybrać i przypisać kolory. Gwarantuje to, że interfejs użytkownika pozostaje zgodny z ogólnym środowisku programu Visual Studio i że aktualizuje się automatycznie po dodaniu lub zaktualizowaniu motywów.  
   
- W tym artykule opisano typowe elementy interfejsu użytkownika i token nazwy które używają, które można odwoływać się podczas kompilowania z podobnym interfejsem użytkownika. Dla określonych informacji dotyczących tych kolorów tokeny dostępu, zobacz [usługa VSColor](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ W tym artykule opisano typowe elementy interfejsu użytkownika i nazwy tokenów, których używają, do których można się odwoływać podczas tworzenia podobnego interfejsu użytkownika. Aby uzyskać szczegółowe informacje dotyczące uzyskiwania dostępu do tych tokenów kolorów, zobacz [Usługa VSColor](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
- Upewnij się, że prawidłowo używać nazw tokenu:  
+ Upewnij się, że nazwy tokenów są używane poprawnie:  
   
-- **Użyj tokenu nazw na podstawie funkcji, nie na samego koloru.** Typowe udostępnione kolory są skojarzone z elementami określonego interfejsu i są przeznaczone wyłącznie do użytku takie same lub podobne funkcje. Na przykład nie używaj ponownie plików kolor po naciśnięciu kombi dla Animacja postępu rotowania tylko dlatego, jak kolor. Funkcje pola kombi i animacji są różne, a Jeśli kolor skojarzony z zmiany pola kombi, mogą już być odpowiedni kolor w odniesieniu do danego elementu animacji. Spójnego używania koloru pomaga w poznaniu użytkowników i uniknąć pomyłek.  
+- **Użyj nazw tokenów opartych na funkcji, a nie na samym kolorze.** Typowe kolory udostępnione są skojarzone z określonymi elementami interfejsu i są przeznaczone tylko do użycia dla tych samych lub podobnych funkcji. Na przykład nie należy ponownie używać koloru wciśniętym polu kombi dla animacji postępu wirowania tylko dlatego, że podoba Ci się kolor. Funkcje pola kombi i animacji są różne, a jeśli kolor skojarzony z polem kombi ulegnie zmianie, może nie być już odpowiedni kolor dla elementu animacji. Konsekwentne korzystanie z kolorów pomaga zorientować użytkowników i zapobiec pomyłce.  
   
-- **Użyj kolorów tła i tekstu w poprawnej kombinacji.** Kolory tła, które są przeznaczone do użycia z tekstem będzie miał kolor tekstu. Nie używaj kolorów tekstu innego niż został określony dla w tle. Jeśli nie jest kolorem skojarzony tekst, nie należy używać tego kolor tła dla dowolnego powierzchni, w którym oczekujesz, że do wyświetlania tekstu. Inne kombinacje kolorów tekstu i tła może spowodować w interfejsie nie można go odczytać.  
+- **Użyj kolorów tła i tekstu w odpowiedniej kombinacji.** Kolory tła, które mają być używane z tekstem, będą miały skojarzony kolor tekstu. Nie używaj kolorów tekstowych innych niż określone dla tego tła. Jeśli nie ma skojarzonego koloru tekstu, nie należy używać tego koloru tła dla dowolnej powierzchni, na której ma być wyświetlany tekst. Inne kombinacje kolorów tekstu i tła mogą powodować nieczytelny interfejs.  
   
-- **Użyj kolorów kontrolki, które są odpowiednie dla ich lokalizacji.** W określonych stanach niektóre formanty programu Visual Studio nie mają osobne obramowania i kolory tła. Zamiast tego przejmą ich te kolory z powierzchni spodem. Upewnij się, zawsze używaj tokenów nazwy, które są odpowiednie dla lokalizacji, w którym umieszcza się kontrolka.  
+- **Użyj kolorów formantów, które są odpowiednie dla ich lokalizacji.** W niektórych stanach niektóre formanty programu Visual Studio nie mają oddzielnych kolorów obramowania i tła. Zamiast tego zbierają te kolory z powierzchni za nimi. Upewnij się, że zawsze używasz nazw tokenów, które są odpowiednie dla lokalizacji, w której umieszczasz formant.  
   
 > [!IMPORTANT]
-> Nie używaj tokenów w kategorii "Stronę startową" lub "Jabłecznik"!  
+> Nie używaj tokenów znalezionych w kategoriach "Strona startowa" lub "Cydr"!  
   
-### <a name="command-structures"></a>Polecenie struktury  
+### <a name="command-structures"></a>Struktury poleceń  
   
-#### <a name="BKMK_CommandMenus"></a> Menu  
- Menu może wystąpić w kilku miejscach w programie Visual Studio 2013: główny pasek menu, osadzony w dokumencie lub narzędzia systemu windows lub kliknij prawym przyciskiem myszy w różnych miejscach w całej IDE. Implementacje menu skojarzone z innymi elementami interfejsu użytkownika zostały omówione w sekcji dla odpowiednich elementów. Zawsze należy używać implementacji standardowe menu oferowanych przez środowisko Visual Studio. Jednak w sporadycznych przypadkach możesz utracić dostęp do standardowego menu programu Visual Studio. W takich sytuacjach należy stosować następujących nazw tokenu, aby upewnić się, że Twój interfejs użytkownika są spójne z innych menu w programie Visual Studio.  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Menu  
+ Menu może występować w kilku miejscach w programie Visual Studio 2013: pasek menu głównego, osadzone w oknach dokumentu lub narzędzia lub po kliknięciu prawym przyciskiem myszy w różnych lokalizacjach w całej IDE. Implementacje menu skojarzone z innymi elementami interfejsu użytkownika są omówione w sekcji dla odpowiedniego elementu. Należy zawsze używać implementacji menu standardowego dostarczonych przez środowisko programu Visual Studio. Jednak w niektórych rzadkich przypadkach może nie mieć dostępu do standardowych menu programu Visual Studio. W takich sytuacjach należy użyć następujących nazw tokenów, aby upewnić się, że interfejs użytkownika jest zgodny z innymi menu w programie Visual Studio.  
   
- ![Menu poprawek](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")  
+ ![Menu redline](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
   
-Użyj...  
-- Kiedy należy utworzyć niestandardowe menu.  
+Używać...  
+- gdy trzeba utworzyć menu niestandardowe.  
   
-- Jeśli masz nowy składnik interfejsu użytkownika, który chcesz dopasować menu programu Visual Studio.  
+- gdy masz nowy składnik interfejsu użytkownika, który chcesz dopasować menu programu Visual Studio.  
   
-Nie używaj...  
-kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.  
+Nie używaj ...  
+sam kolor tła. Zawsze używaj kombinacji tła/pierwszego planu, jak określono.  
   
 ##### <a name="menu-title"></a>Tytuł menu  
- Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjonalnie symbol, zwykle w przypadku, gdy menu znajduje się na pasku poleceń.  
+ Tytuły menu składają się z tła, obramowania i tekstu tytułowego, a także opcjonalnego glifu, zwykle gdy menu znajduje się na pasku poleceń.  
   
- ![Tytuł menu poprawek](../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")  
+ ![Czerwony pasek tytułu menu](../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")  
   
-Użyj...  
-zawsze, gdy tworzysz tytuł menu niestandardowe.  
+Używać...  
+przy każdym tworzeniu niestandardowego tytułu menu.  
   
 Nie używaj...  
-- dla wszystkich elementów, które nie chcesz zawsze odpowiada tytuł menu.  
+- na wszystko, czego nie chcesz zawsze pasować do tytułu menu.  
   
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Domyślny tytuł menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Tytuł menu**|Tło|Brak|  
-|![Domyślny tytuł menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303 002_MenuTitleDefault")<br /><br /> **Tytuł menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Tytuł menu z domyślną symbol](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Tytuł menu z glifów**|Pierwszego planu (symbol)|`Environment.CommandBarMenuGlyph`|  
-|![Tytuł menu z domyślną symbol](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303 003_MenuTitleWithGlyphDefault")<br /><br /> **Tytuł menu z glifów**|Obramowanie|Brak|  
+|![Domyślny tytuł menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **Tytuł menu**|Tło|Brak|  
+|![Domyślny tytuł menu](../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303-002_MenuTitleDefault")<br /><br /> **Tytuł menu**|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|![Tytuł menu z domyślnym glifem](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **Tytuł menu z glifem**|Pierwszy plan (Glif)|`Environment.CommandBarMenuGlyph`|  
+|![Tytuł menu z domyślnym glifem](../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303-003_MenuTitleWithGlyphDefault")<br /><br /> **Tytuł menu z glifem**|Obramowanie|Brak|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł menu, po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **Tytuł menu**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Tytuł menu, po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303 004_MenuTitleHover")<br /><br /> **Tytuł menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
-|![Tytuł menu z symbol po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")<br /><br /> **Tytuł menu z glifów**|Pierwszego planu (symbol)|`Environment.CommandBarMenuMouseOverGlyph`|  
-|![Tytuł menu z symbol po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303 005_MenuTitleWithGlyphHover")<br /><br /> **Tytuł menu z glifów**|Obramowanie|`Environment.CommandBarBorder`|  
+|![Tytuł menu po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **Tytuł menu**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Tytuł menu po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303-004_MenuTitleHover")<br /><br /> **Tytuł menu**|Pierwszy plan (tekst)|`Environment.CommandBarTextHover`|  
+|![Tytuł menu z glifem po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")<br /><br /> **Tytuł menu z glifem**|Pierwszy plan (Glif)|`Environment.CommandBarMenuMouseOverGlyph`|  
+|![Tytuł menu z glifem po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303-005_MenuTitleWithGlyphHover")<br /><br /> **Tytuł menu z glifem**|Obramowanie|`Environment.CommandBarBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł menu naciśnięty](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **Tytuł menu**|Tło|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Tytuł menu naciśnięty](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303 006_MenuTitlePressed")<br /><br /> **Tytuł menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Tytuł menu z naciśnięto symbol](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")<br /><br /> **Tytuł menu z glifów**|Pierwszego planu (symbol)|`Environment.CommandBarMenuMouseDownGlyph`|  
-|![Tytuł menu z naciśnięto symbol](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303 007_MenuTitleWithGlyphPressed")<br /><br /> **Tytuł menu z glifów**|Obramowanie|`Environment.CommandBarMenuBorder`<br /><br /> Tylko po lewej stronie, górnej i prawej stronie.|  
+|![Wciśnięty tytuł menu](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **Tytuł menu**|Tło|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Wciśnięty tytuł menu](../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303-006_MenuTitlePressed")<br /><br /> **Tytuł menu**|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|![Tytuł menu z wciśniętym glifem](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **Tytuł menu z glifem**|Pierwszy plan (Glif)|`Environment.CommandBarMenuMouseDownGlyph`|  
+|![Tytuł menu z wciśniętym glifem](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **Tytuł menu z glifem**|Obramowanie|`Environment.CommandBarMenuBorder`<br /><br /> Tylko po lewej, górnej i prawej stronie.|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł menu przy użyciu symbolu wyłączone](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifów**|Tło|Brak|  
-|![Tytuł menu przy użyciu symbolu wyłączone](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifów**|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
-|![Tytuł menu przy użyciu symbolu wyłączone](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifów**|Pierwszego planu (symbol)|`Environment.CommandBarTextInactive`|  
-|![Tytuł menu przy użyciu symbolu wyłączone](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303 008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifów**|Obramowanie|Brak|  
+|![Tytuł menu z wyłączonym glifem](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifem**|Tło|Brak|  
+|![Tytuł menu z wyłączonym glifem](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifem**|Pierwszy plan (tekst)|`Environment.CommandBarTextInactive`|  
+|![Tytuł menu z wyłączonym glifem](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifem**|Pierwszy plan (Glif)|`Environment.CommandBarTextInactive`|  
+|![Tytuł menu z wyłączonym glifem](../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303-008_MenuTitleWithGlyphDisabled")<br /><br /> **Tytuł menu z glifem**|Obramowanie|Brak|  
   
 ##### <a name="menu"></a>Menu  
- Element menu poszczególnych składa się z tekst menu i opcjonalnej ikony, pole wyboru lub symbol podmenu. Jego tekstu i tła kolorów zmiana po najechaniu wskaźnikiem. Token ten kolor to para tła/pierwszego planu.  
+ Pojedynczy element menu składa się z tekstu menu i opcjonalnej ikony, pola wyboru lub glifu podmenu. Jego tło i kolor tekstu zmieniają się po najechaniu kursorem. Ten token kolorów jest parą tła/pierwszego planu.  
   
- ![Elementy menu poprawek](../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")  
+ ![Elementy menu redline](../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")  
   
- Użyj...  
- Aby uzyskać wszystkie listy rozwijanej, który jest uruchamiany z paska menu i paska poleceń.  
+ Używać...  
+ dla każdej listy rozwijanej uruchamianej z paska menu lub paska poleceń.  
   
 Nie używaj...  
-- Aby uzyskać wszystkie listy rozwijanej, która występuje w kontekście innego.  
+- dla każdej listy rozwijanej, która występuje w innym kontekście.  
 
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Tło|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Pierwszego planu (podmenu symbol)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Obramowanie|`Environment.CommandBarMenuBorder`|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Tło kanału ikony|`Environment.CommandBarMenuIconBackground`|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|Separator|`Environment.CommandBarMenuSeparator`|  
-|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303 010_MenuDefault")<br /><br /> **Menu**|W tle|`Environment.DropShadowBackground`|  
-|![Menu zaznaczone](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")<br /><br /> **Zaznaczone**|Znacznik wyboru|`Environment.CommandBarCheckBox`|  
-|![Menu zaznaczone](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303 011_MenuChecked")<br /><br /> **Zaznaczone**|Znacznik wyboru tła|`Environment.CommandBarSelectedIcon`|  
-|![Wybrane menu](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")<br /><br /> **Wybrane**|Tło ikony|`Environment.CommandBarSelected`|  
-|![Wybrane menu](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303 012_MenuSelected")<br /><br /> **Wybrane**|Ikona obramowania|`Environment.CommandBarSelectedBorder`|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Tło|`Environment.CommandBarMenuBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Pierwszy plan (glif podmenu)|`Environment.CommandBarMenuSubmenuGlyph`|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Obramowanie|`Environment.CommandBarMenuBorder`|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Tło kanału ikony|`Environment.CommandBarMenuIconBackground`|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Separator|`Environment.CommandBarMenuSeparator`|  
+|![Domyślne menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|W tle|`Environment.DropShadowBackground`|  
+|![Menu zaznaczone](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Zaznaczone**|Sprawdź znacznik|`Environment.CommandBarCheckBox`|  
+|![Menu zaznaczone](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Zaznaczone**|Sprawdzanie tła znacznika|`Environment.CommandBarSelectedIcon`|  
+|![Wybrane menu](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Wybrano**|Tło ikony|`Environment.CommandBarSelected`|  
+|![Wybrane menu](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Wybrano**|Obramowanie ikony|`Environment.CommandBarSelectedBorder`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Po wskazaniu wskaźnikiem menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Element menu**|Tło|`Environment.CommandBarMenuItemMouseOver`|  
-|![Po wskazaniu wskaźnikiem menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Element menu**|Pierwszego planu (tekst)|`Environment.CommandBarMenuItemMouseOver`|  
-|![Po wskazaniu wskaźnikiem menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303 013_MenuHover")<br /><br /> **Element menu**|Pierwszego planu (podmenu symbol)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![Po wskazaniu wskaźnikiem menu zaznaczone](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")<br /><br /> **Zaznaczone**|Znacznik wyboru|`Environment.CommandBarCheckBoxMouseOver`|  
-|![Po wskazaniu wskaźnikiem menu zaznaczone](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303 014_MenuHoverChecked")<br /><br /> **Zaznaczone**|Znacznik wyboru tła|`Environment.CommandBarHoverOverSelectedIcon`|  
-|![Po wskazaniu wskaźnikiem menu wybrane](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")<br /><br /> **Wybrane**|Tło ikony|`Environment.CommandBarHoverOverSelected`|  
-|![Po wskazaniu wskaźnikiem menu wybrane](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303 015_MenuHoverSelected")<br /><br /> **Wybrane**|Ikona obramowania|`Environment.CommandBarHoverOverSelectedIconBorder`|  
+|![Najechać menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Pozycja menu**|Tło|`Environment.CommandBarMenuItemMouseOver`|  
+|![Najechać menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Pozycja menu**|Pierwszy plan (tekst)|`Environment.CommandBarMenuItemMouseOver`|  
+|![Najechać menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Pozycja menu**|Pierwszy plan (glif podmenu)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
+|![Menu poleć wskaźnik myszy](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Zaznaczone**|Sprawdź znacznik|`Environment.CommandBarCheckBoxMouseOver`|  
+|![Menu poleć wskaźnik myszy](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Zaznaczone**|Sprawdzanie tła znacznika|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![Wybrano opcję Najechajnie](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Wybrano**|Tło ikony|`Environment.CommandBarHoverOverSelected`|  
+|![Wybrano opcję Najechajnie](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Wybrano**|Obramowanie ikony|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Menu wyłączone](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> Element menu|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
-|![Menu wyłączone](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303 016_MenuDisabled")<br /><br /> Element menu|Pierwszego planu (podmenu symbol)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![Zaznaczone wyłączone menu](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")<br /><br /> Zaznaczone|Znacznik wyboru|`Environment.CommandBarCheckBoxDisabled`|  
-|![Zaznaczone wyłączone menu](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303 017_MenuDisabledChecked")<br /><br /> Zaznaczone|Znacznik wyboru tła|`Environment.CommandBarSelectedIconDisabled`|  
+|![Menu wyłączone](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Pozycja menu|Pierwszy plan (tekst)|`Environment.CommandBarTextInactive`|  
+|![Menu wyłączone](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Pozycja menu|Pierwszy plan (glif podmenu)|`Environment.CommandBarMenuSubmenuGlyph`|  
+|![Menu wyłączone zaznaczone](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Zaznaczone|Sprawdź znacznik|`Environment.CommandBarCheckBoxDisabled`|  
+|![Menu wyłączone zaznaczone](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Zaznaczone|Sprawdzanie tła znacznika|`Environment.CommandBarSelectedIconDisabled`|  
   
 #### <a name="command-bar"></a>Pasek poleceń  
- Na pasku poleceń może znajdować się w wielu miejscach w programie Visual Studio IDE, głównie półki polecenia i narzędzia embedded na platformie lub okna dokumentu.  
+ Pasek poleceń może pojawić się w wielu miejscach w środowisku IDE programu Visual Studio, w szczególności na półce poleceń i osadzony w oknach narzędzi lub dokumentów.  
   
- Ogólnie rzecz biorąc należy zawsze używać implementacja paska poleceń standardowych, które są dostarczane przez środowisko Visual Studio. Przy użyciu standardowego mechanizmu zapewnia, są poprawnie wyświetlane wszystkie szczegóły visual i że elementów interaktywnych będą zachowywać się spójne z innymi formantami paska poleceń programu Visual Studio. Jednak jeśli jest to niezbędne do tworzenia własnego paska poleceń, upewnij się, że poprawnie za pomocą następujących nazw tokenu stylu.  
+ Ogólnie rzecz biorąc należy zawsze używać implementacji standardowego paska poleceń dostarczonych przez środowisko programu Visual Studio. Za pomocą standardowego mechanizmu zapewnia, że wszystkie szczegóły wizualne będą wyświetlane poprawnie i że elementy interaktywne będą zachowywać się zgodnie z innymi formantami paska poleceń programu Visual Studio. Jeśli jednak konieczne jest zbudowanie własnego paska poleceń, upewnij się, że styl poprawnie używasz następujących nazw tokenów.  
   
- ![Pasek poleceń poprawek](../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")  
+ ![Czerwona linia paska poleceń](../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")  
   
- ![Przycisk przepełnienie poprawek](../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")  
+ ![Czerwony przycisk przepełnienia](../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")  
   
- Użyj...  
- w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego implementacja paska poleceń programu Visual Studio.  
-  
-Nie używaj...  
-- dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
-
-- Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
-  
-##### <a name="command-bar-group"></a>Grupy pasek poleceń  
- Grupy pasek poleceń zawiera zestaw powiązanych formantów paska poleceń i może zawierać dowolną liczbę przyciski, Podziel przyciski, menu rozwijane, pola kombi lub menu. Kolory dla tych formantów jest regulowane przez oddzielne nazwy tokenu i są omówione oddzielnie w innym miejscu, w tym przewodniku. Linii separatora jest używane do dzielenia grupy pasek poleceń do powiązanych podgrupy.  
-  
- ![Grupa paska poleceń poprawek](../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")  
-  
- Użyj...  
- w miejscach osadzone polecenia pasek ale są one nie można użyć standardowego implementacja paska poleceń programu Visual Studio.  
+ Używać...  
+ w miejscach, w których potrzebny jest osadzony pasek poleceń, ale nie można użyć standardowej implementacji paska poleceń programu Visual Studio.  
   
 Nie używaj...  
 - dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
 
-- Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
+- dla składników paska poleceń innych niż te, dla których określono nazwy tokenów.  
   
-  **Domyślne** (nie innych Państw)  
+##### <a name="command-bar-group"></a>Grupa paska poleceń  
+ Grupa paska poleceń składa się z powiązanego zestawu kontrolek paska poleceń i może zawierać dowolną liczbę przycisków, przycisków podziału, menu rozwijanych, pól kombi lub menu. Kolory dla tych formantów są regulowane przez oddzielne nazwy tokenów i są omawiane indywidualnie w innym miejscu w tym przewodniku. Linia separatora służy do dzielenia grupy pasków poleceń na powiązane podgrupy.  
   
-|Element|Nazwa tokenu: Category.Color|  
+ ![Czerwona linia grupy paska polecenia](../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")  
+  
+ Używać...  
+ w miejscach, w których potrzebny jest osadzony pasek poleceń, ale nie można użyć standardowej implementacji paska poleceń programu Visual Studio.  
+  
+Nie używaj...  
+- dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
+
+- dla składników paska poleceń innych niż te, dla których określono nazwy tokenów.  
+  
+  **Domyślnie** (bez innych stanów)  
+  
+|Element|Nazwa tokenu: Category.color|  
 |-------------|--------------------------------|  
-|Tło|`Environment.CommandBarGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
+|Tło|`Environment.CommandBarGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
 |Obramowanie|`Environment.CommandBarToolBarBorder`|  
 |Przeciągnij uchwyt|`Environment.CommandBarDragHandle`|  
 |Separator|`Environment.CommandBarToolBarSeparator`<br /><br /> `Environment.CommandBarToolBarSeparatorHighlight`|  
   
 ##### <a name="command-icons"></a>Ikony poleceń  
- ![Ikona polecenia poprawek](../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")  
+ ![Czerwona linia ikony polecenia](../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")  
   
- ![Ikona polecenia poprawek](../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")  
+ ![Czerwona linia ikony polecenia](../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")  
   
- Użyj...  
- dla przycisków, które zostaną umieszczone na pasku poleceń.  
+ Używać...  
+ dla wszystkich przycisków, które zostaną umieszczone na pasku poleceń.  
   
 Nie używaj...  
-- dla formantów, które mają własne nazwy tokenu.  
+- formanty, które mają własne nazwy tokenów.  
 
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Tło|N/d (dziedziczy tło paska poleceń)|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Polecenie domyślną ikonę](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303 023_CommandIconDefault")<br /><br /> **Default**|Obramowanie|Brak|  
-|![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Tło|`Environment.CommandBarSelected`|  
-|![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Pierwszego planu (tekst)|`Environment.CommandBarTextSelected`|  
-|![Polecenie ikonę domyślnie wybrana](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303 024_CommandIconDefaultSelected")<br /><br /> **Wybrane**|Obramowanie|`Environment.CommandBarSelectedBorder`|  
+|![Domyślna ikona polecenia](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Domyślny**|Tło|Nie dotyczy (dziedziczy z tła paska poleceń)|  
+|![Domyślna ikona polecenia](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Domyślny**|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|![Domyślna ikona polecenia](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303-023_CommandIconDefault")<br /><br /> **Domyślny**|Obramowanie|Nie dotyczy|  
+|![Domyślna ikona polecenia zaznaczona](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Wybrano**|Tło|`Environment.CommandBarSelected`|  
+|![Domyślna ikona polecenia zaznaczona](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Wybrano**|Pierwszy plan (tekst)|`Environment.CommandBarTextSelected`|  
+|![Domyślna ikona polecenia zaznaczona](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303-024_CommandIconDefaultSelected")<br /><br /> **Wybrano**|Obramowanie|`Environment.CommandBarSelectedBorder`|  
   
- **Aktywowanie i fokus klawiatury**  
+ **Najedź kursorem i z naciskem na klawiaturę**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Polecenie ikony po wskazaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standardowa po najechaniu wskaźnikiem**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Polecenie ikony po wskazaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standardowa po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
-|![Polecenie ikony po wskazaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303 025_CommandIconHover")<br /><br /> **Standardowa po najechaniu wskaźnikiem**|Obramowanie|`Environment.CommandBarBorder`|  
-|![Polecenie ikony po wskazaniu wskaźnikiem, wybrane](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")<br /><br /> **Wybrane po najechaniu wskaźnikiem**|Tło|`Environment.CommandBarHoverOverSelected`|  
-|![Polecenie ikony po wskazaniu wskaźnikiem, wybrane](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")<br /><br /> **Wybrane po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.CommandBarTextHoverOverSelected`|  
-|![Polecenie ikony po wskazaniu wskaźnikiem, wybrane](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303 026_CommandIconHoverSelected")<br /><br /> **Wybrane po najechaniu wskaźnikiem**|Obramowanie|`Environment.CommandBarHoverOverSelectedIconBorder`|  
+|![Najechać kursorem myszy na ikon](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard po najechaniu kursorem**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Najechać kursorem myszy na ikon](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard po najechaniu kursorem**|Pierwszy plan (tekst)|`Environment.CommandBarTextHover`|  
+|![Najechać kursorem myszy na ikon](../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303-025_CommandIconHover")<br /><br /> **Standard po najechaniu kursorem**|Obramowanie|`Environment.CommandBarBorder`|  
+|![Wybrano ikonę polecenia](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br /><br /> **Wybrane po najechaniu kursorem myszy**|Tło|`Environment.CommandBarHoverOverSelected`|  
+|![Wybrano ikonę polecenia](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br /><br /> **Wybrane po najechaniu kursorem myszy**|Pierwszy plan (tekst)|`Environment.CommandBarTextHoverOverSelected`|  
+|![Wybrano ikonę polecenia](../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303-026_CommandIconHoverSelected")<br /><br /> **Wybrane po najechaniu kursorem myszy**|Obramowanie|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Ikona polecenia naciśnięty](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Ikona po naciśnięciu polecenia**|Tło|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Ikona polecenia naciśnięty](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Ikona po naciśnięciu polecenia**|Pierwszego planu (tekst)|`Environment.CommandBarTextMouseDown`|  
-|![Ikona polecenia naciśnięty](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303 027_CommandIconPressed")<br /><br /> **Ikona po naciśnięciu polecenia**|Obramowanie|`Environment.CommandBarBorder`|  
+|![Wciśnięty ikonę polecenia](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Ikona wciśnięty polecenia**|Tło|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Wciśnięty ikonę polecenia](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Ikona wciśnięty polecenia**|Pierwszy plan (tekst)|`Environment.CommandBarTextMouseDown`|  
+|![Wciśnięty ikonę polecenia](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Ikona wciśnięty polecenia**|Obramowanie|`Environment.CommandBarBorder`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Tło|N/d (dziedziczy tło paska poleceń)|  
-|![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Pierwszego planu (tekst)|`Environment.CommandBarTextInactive`|  
-|![Ikona polecenia wyłączone](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303 028_CommandIconDisabled")<br /><br /> **Ikona polecenia wyłączenia**|Obramowanie|Brak|  
+|![Ikona polecenia wyłączona](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Ikona polecenia Wyłączone**|Tło|Nie dotyczy (dziedziczy z tła paska poleceń)|  
+|![Ikona polecenia wyłączona](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Ikona polecenia Wyłączone**|Pierwszy plan (tekst)|`Environment.CommandBarTextInactive`|  
+|![Ikona polecenia wyłączona](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Ikona polecenia Wyłączone**|Obramowanie|Nie dotyczy|  
   
-##### <a name="BKMK_CommandComboBox"></a> Pole kombi  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Pudełko kombi  
   
 > [!IMPORTANT]
-> Pola kombi są podobne do list rozwijanych, ale zawierają region tekst do edycji. Jeśli z listy rozwijanej nie obejmuje regionu tekst do edycji, należy użyć tokenów kolor, znajdującym się [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown).  
+> Pola kombi są podobne do rozwijanych, ale zawierają edytowalny region tekstu. Jeśli twoja rozwijana pozycja nie zawiera edytowalnyego regionu tekstowego, użyj tokenów kolorów znalezionych w obszarze [Rozwijane](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
- ![Pole kombi poprawek](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
+ ![Czerwona linia pola kombi](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
-Użyj...  
-- Podczas tworzenia pola kombi niestandardowych.  
+Używać...  
+- podczas tworzenia niestandardowych skrzynek kombi.  
 
-- Podczas tworzenia formantu paska poleceń, która jest podobna do pola kombi.  
+- podczas tworzenia formantu paska poleceń, który jest podobny do pola kombi.  
 
-Nie używaj...  
-- dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.  
+Nie używaj ...  
+- dla wszystkiego, czego nie chcesz zawsze pasować do interfejsu użytkownika paska poleceń.  
 
-- Jeśli masz dostęp do pola kombi ze stylem.  
+- gdy masz dostęp do stylizowanego pola kombi.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxBackground`|  
-|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxText`|  
-|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Pola wejściowego**|Obramowanie|`Environment.ComboBoxBorder`|  
-|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303 030_ComboBoxInputField")<br /><br /> **Pola wejściowego**|Separator|Nie separatora|  
-|![Listy pola kombi&#45;naciśnięty przycisk](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Tło|N/d (dziedziczy)|  
-|![Listy pola kombi&#45;naciśnięty przycisk](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.ComboBoxGlyph`|  
-|![Pole kombi&#47;porzucić&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br /><br /> **Listy rozwijanej**|Tło|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Pole kombi&#47;porzucić&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br /><br /> **Listy rozwijanej**|Pierwszego planu (tekst)|`Environment.ComboBoxItemText`|  
-|![Pole kombi&#47;porzucić&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")<br /><br /> **Listy rozwijanej**|Obramowanie|`Environment.ComboBoxPopupBorder`|  
+|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Pole wejściowe**|Tło|`Environment.ComboBoxBackground`|  
+|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`Environment.ComboBoxText`|  
+|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Pole wejściowe**|Obramowanie|`Environment.ComboBoxBorder`|  
+|![Pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303-030_ComboBoxInputField")<br /><br /> **Pole wejściowe**|Separator|Brak separatora|  
+|![Przycisk upuszczania pola kombi&#45;w dół](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Tło|Nie dotyczy (dziedziczy)|  
+|![Przycisk upuszczania pola kombi&#45;w dół](../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.ComboBoxGlyph`|  
+|![Pole kombi&#47;lista&#45;w dół](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Lista rozwijana**|Tło|`Environment.ComboBoxPopupBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pole kombi&#47;lista&#45;w dół](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Lista rozwijana**|Pierwszy plan (tekst)|`Environment.ComboBoxItemText`|  
+|![Pole kombi&#47;lista&#45;w dół](../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")<br /><br /> **Lista rozwijana**|Obramowanie|`Environment.ComboBoxPopupBorder`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxMouseOverText`|  
-|![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Pola wejściowego**|Obramowanie|`Environment.ComboBoxMouseOverBorder`|  
-|![Pole kombi pola wejściowego po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303 033_ComboBoxInputFieldHover")<br /><br /> **Pola wejściowego**|Separator|`Environment.ComboBoxMouseOverSeparator`|  
-|![Pole kombi&#47;porzucić&#45;przycisku po umieszczeniu na](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.ComboBoxButtonMouseOverBackground`|  
-|![Pole kombi&#47;porzucić&#45;przycisku po umieszczeniu na](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303 034_ComboBoxDropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.ComboBoxMouseOverGlyph`|  
-|![Pole kombi&#47;porzucić&#45;listy po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br /><br /> **Listy rozwijanej**|W tle (element Menu)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![Pole kombi&#47;porzucić&#45;listy po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br /><br /> **Listy rozwijanej**|Pierwszego planu (tekst)|`Environment.ComboBoxItemMouseOverText`|  
-|![Pole kombi&#47;porzucić&#45;listy po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303 035_ComboBoxDropdownListHover")<br /><br /> **Listy rozwijanej**|Obramowanie (element Menu)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![Pole wejściowe pola kombi po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Pole wejściowe**|Tło|`Environment.ComboBoxMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pole wejściowe pola kombi po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`Environment.ComboBoxMouseOverText`|  
+|![Pole wejściowe pola kombi po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Pole wejściowe**|Obramowanie|`Environment.ComboBoxMouseOverBorder`|  
+|![Pole wejściowe pola kombi po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br /><br /> **Pole wejściowe**|Separator|`Environment.ComboBoxMouseOverSeparator`|  
+|![Pole kombi&#47;przycisk upuszczania&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.ComboBoxButtonMouseOverBackground`|  
+|![Pole kombi&#47;przycisk upuszczania&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.ComboBoxMouseOverGlyph`|  
+|![Pole kombi&#47;lista&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Lista rozwijana**|Tło (pozycja menu)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![Pole kombi&#47;lista&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Lista rozwijana**|Pierwszy plan (tekst)|`Environment.ComboBoxItemMouseOverText`|  
+|![Pole kombi&#47;lista&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br /><br /> **Lista rozwijana**|Obramowanie (pozycja menu)|`Environment.ComboBoxItemMouseOverBorder`|  
   
- **Fokus**  
+ **Ustawiono fokus**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Pole wejściowe pola kombi skupia się](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxFocusedBackground`|  
-|![Pole wejściowe pola kombi skupia się](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxFocusedText`|  
-|![Pole wejściowe pola kombi skupia się](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **Pola wejściowego**|Obramowanie|`Environment.ComboBoxFocusedBorder`|  
-|![Pole wejściowe pola kombi skupia się](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303 036_ComboBoxInputFieldFocused")<br /><br /> **Pola wejściowego**|Separator|`Environment.ComboBoxFocusedButtonSeparator`|  
-|![Pole kombi&#47;porzucić&#45;naciśnięty przycisk skupia się](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.ComboBoxFocusedButtonBackground`|  
-|![Pole kombi&#47;porzucić&#45;naciśnięty przycisk skupia się](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303 037_ComboBoxDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.ComboBoxFocusedGlyph`|  
+|![Pole wejściowe pola kombi koncentruje](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Pole wejściowe**|Tło|`Environment.ComboBoxFocusedBackground`|  
+|![Pole wejściowe pola kombi koncentruje](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`Environment.ComboBoxFocusedText`|  
+|![Pole wejściowe pola kombi koncentruje](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Pole wejściowe**|Obramowanie|`Environment.ComboBoxFocusedBorder`|  
+|![Pole wejściowe pola kombi koncentruje](../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br /><br /> **Pole wejściowe**|Separator|`Environment.ComboBoxFocusedButtonSeparator`|  
+|![Pole kombi&#47;przycisk upuszczania&#45;w dół](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.ComboBoxFocusedButtonBackground`|  
+|![Pole kombi&#47;przycisk upuszczania&#45;w dół](../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.ComboBoxFocusedGlyph`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Pole wejściowe pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxMouseDownBackground`|  
-|![Pole wejściowe pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxMouseDownText`|  
-|![Pole wejściowe pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **Pola wejściowego**|Obramowanie|`Environment.ComboBoxMouseDownBorder`|  
-|![Pole wejściowe pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303 038_ComboBoxInputFieldPressed")<br /><br /> **Pola wejściowego**|Separator|`Environment.ComboBoxMouseDownSeparator`|  
-|![Pole kombi&#47;porzucić&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.ComboBoxButtonMouseDownBackground`|  
-|![Pole kombi&#47;porzucić&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303 039_ComboBoxDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.ComboBoxMouseDownGlyph`|  
+|![Wciśnięte pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Pole wejściowe**|Tło|`Environment.ComboBoxMouseDownBackground`|  
+|![Wciśnięte pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`Environment.ComboBoxMouseDownText`|  
+|![Wciśnięte pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Pole wejściowe**|Obramowanie|`Environment.ComboBoxMouseDownBorder`|  
+|![Wciśnięte pole wejściowe pola kombi](../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br /><br /> **Pole wejściowe**|Separator|`Environment.ComboBoxMouseDownSeparator`|  
+|![Pole kombi&#47;wciśnięty przycisk upuszczania&#45;w dół](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.ComboBoxButtonMouseDownBackground`|  
+|![Pole kombi&#47;wciśnięty przycisk upuszczania&#45;w dół](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.ComboBoxMouseDownGlyph`|  
   
  **Wyłączone**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Pola wejściowego**|Tło|`Environment.ComboBoxDisabledBackground`|  
-|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`Environment.ComboBoxDisabledText`|  
-|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Pola wejściowego**|Obramowanie|`Environment.ComboBoxDisabledBorder`|  
-|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303 041_ComboBoxInputFieldDisabled")<br /><br /> **Pola wejściowego**|Separator|Nie separatora|  
-|![Pole kombi&#47;porzucić&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
-|![Pole kombi&#47;porzucić&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303 040_ComboBoxDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.ComboBoxDisabledGlyph`|  
+|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Pole wejściowe**|Tło|`Environment.ComboBoxDisabledBackground`|  
+|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`Environment.ComboBoxDisabledText`|  
+|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Pole wejściowe**|Obramowanie|`Environment.ComboBoxDisabledBorder`|  
+|![Pole wejściowe pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303-041_ComboBoxInputFieldDisabled")<br /><br /> **Pole wejściowe**|Separator|Brak separatora|  
+|![Pole kombi&#47;przycisk upuszczenia&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
+|![Pole kombi&#47;przycisk upuszczenia&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="BKMK_CommandDropDown"></a> Lista rozwijana  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Z listy rozwijanej  
   
 > [!IMPORTANT]
-> Listy rozwijane są podobne do pola kombi, ale brak regionów tekst do edycji. Jeśli z listy rozwijanej zawiera tekst do edycji regionu, należy użyć tokenów kolor, znajdującym się [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox).  
+> Listy rozwijane są podobne do pól kombi, ale brakuje edytowalnych regionów tekstowych. Jeśli twoja rozwijana liczba zawiera edytowalny region tekstowy, użyj tokenów kolorów znalezionych w [polu Kombi](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
- ![Upuść&#45;poprawek w dół](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
+ ![Upuść&#45;w dół czerwonej linii](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
- Użyj...  
- Podczas tworzenia kontrolki niestandardowej listy rozwijanej.  
+ Używać...  
+ podczas tworzenia niestandardowych formantów listy rozwijanej.  
   
-Nie używaj...  
-- dla wszystkich elementów, który nie jest podobna do listy rozwijanej.  
+Nie używaj ...  
+- dla wszystkiego, co nie jest podobne do listy rozwijanej.  
 
-- dla pola kombi lub przyciski dzielone.  
+- dla skrzynek kombi lub przycisków dzielonych.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;w dół do pola wyboru](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownBackground`|  
-|![Upuść&#45;w dół do pola wyboru](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Pierwszego planu (tekst)|`DropDownText`|  
-|![Upuść&#45;w dół do pola wyboru](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Obramowanie|`DropDownBorder`|  
-|![Upuść&#45;w dół do pola wyboru](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303 043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Separator|Nie separatora|  
-|![Upuść&#45;naciśnięty przycisk](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
-|![Upuść&#45;naciśnięty przycisk](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303 044_DropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.DropDownGlyph`|  
-|![Upuść&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Listy rozwijanej**|Tło|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Upuść&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Listy rozwijanej**|Pierwszego planu (tekst)|`Environment.ComboBoxItemText`|  
-|![Upuść&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Listy rozwijanej**|Obramowanie|`Environment.DropDownPopupBorder`|  
-|![Upuść&#45;listy rozwijanej](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")<br /><br /> **Listy rozwijanej**|W tle|`Environment.DropShadowBackground`|  
+|![Pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownBackground`|  
+|![Pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Pierwszy plan (tekst)|`DropDownText`|  
+|![Pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Obramowanie|`DropDownBorder`|  
+|![Pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303-043_DropdownSelectionField")<br /><br /> **Pole wyboru**|Separator|Brak separatora|  
+|![Przycisk upuść&#45;w dół](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
+|![Przycisk upuść&#45;w dół](../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303-044_DropdownButton")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.DropDownGlyph`|  
+|![Lista&#45;w dół](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Lista rozwijana**|Tło|`Environment.DropDownPopupBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Lista&#45;w dół](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Lista rozwijana**|Pierwszy plan (tekst)|`Environment.ComboBoxItemText`|  
+|![Lista&#45;w dół](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Lista rozwijana**|Obramowanie|`Environment.DropDownPopupBorder`|  
+|![Lista&#45;w dół](../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")<br /><br /> **Lista rozwijana**|W tle|`Environment.DropShadowBackground`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Pierwszego planu (tekst)|`Environment.DropDownMouseOverText`|  
-|![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Obramowanie|`Environment.DropDownMouseOverBorder`|  
-|![Upuść&#45;w dół do pola wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303 046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Separator|`Environment.DropDownButtonMouseOverSeparator`|  
-|![Upuść&#45;przycisku po umieszczeniu na](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.DropDownButtonMouseOverBackground`|  
-|![Upuść&#45;przycisku po umieszczeniu na](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303 047_DropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.DropDownMouseOverGlyph`|  
-|![Upuść&#45;listy po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")<br /><br /> **Listy rozwijanej**|W tle (element Menu)|`Environment.ComboBoxItemMouseOverBackground`|  
-|![Upuść&#45;listy po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")<br /><br /> **Listy rozwijanej**|Pierwszego planu (tekst)|`Environment.ComboBoxItemMouseOverText`|  
-|![Upuść&#45;listy po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303 048_DropdownListHover")<br /><br /> **Listy rozwijanej**|Obramowanie (element Menu)|`Environment.ComboBoxItemMouseOverBorder`|  
+|![Upuść pole wyboru&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Upuść pole wyboru&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Pierwszy plan (tekst)|`Environment.DropDownMouseOverText`|  
+|![Upuść pole wyboru&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Obramowanie|`Environment.DropDownMouseOverBorder`|  
+|![Upuść pole wyboru&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303-046_DropdownSelectionFieldHover")<br /><br /> **Pole wyboru**|Separator|`Environment.DropDownButtonMouseOverSeparator`|  
+|![Przycisk upuść&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.DropDownButtonMouseOverBackground`|  
+|![Przycisk upuść&#45;w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303-047_DropdownButtonHover")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.DropDownMouseOverGlyph`|  
+|![Lista&#45;upuszczania w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Lista rozwijana**|Tło (pozycja menu)|`Environment.ComboBoxItemMouseOverBackground`|  
+|![Lista&#45;upuszczania w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Lista rozwijana**|Pierwszy plan (tekst)|`Environment.ComboBoxItemMouseOverText`|  
+|![Lista&#45;upuszczania w dół po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303-048_DropdownListHover")<br /><br /> **Lista rozwijana**|Obramowanie (pozycja menu)|`Environment.ComboBoxItemMouseOverBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;w dół do pola wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownMouseDownBackground`|  
-|![Upuść&#45;w dół do pola wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Pierwszego planu (tekst)|`Environment.DropDownMouseDownText`|  
-|![Upuść&#45;w dół do pola wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Obramowanie|`Environment.DropDownMouseDownBorder`|  
-|![Upuść&#45;w dół do pola wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Separator|`Environment.DropDownButtonMouseDownSeparator`|  
-|![Upuść&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.DropDownButtonMouseDownBackground`|  
-|![Upuść&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303 050_DropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`Environment.DropDownMouseDownGlyph`|  
+|![Wciśnięte pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Tło|`Environment.DropDownMouseDownBackground`|  
+|![Wciśnięte pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Pierwszy plan (tekst)|`Environment.DropDownMouseDownText`|  
+|![Wciśnięte pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Obramowanie|`Environment.DropDownMouseDownBorder`|  
+|![Wciśnięte pole wyboru&#45;w dół](../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303-049_DropdownSelectionFieldPressed")<br /><br /> **Pole wyboru**|Separator|`Environment.DropDownButtonMouseDownSeparator`|  
+|![Przycisk upuszczenia&#45;w dół](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Tło|`Environment.DropDownButtonMouseDownBackground`|  
+|![Przycisk upuszczenia&#45;w dół](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`Environment.DropDownMouseDownGlyph`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Tło|`Environment.DropDownDisabledBackground`|  
-|![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Pierwszego planu (tekst)|`Environment.DropDownDisabledText`|  
-|![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Obramowanie|`Environment.DropDownDisabledBorder`|  
-|![Upuść&#45;w dół do pola wyboru wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303 051_DropdownSelectionFieldDisabled")|Separator|Nie separatora|  
-|![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Tło|Brak|  
-|![Upuść&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303 052_DropdownButtonDisabled")|Pierwszego planu (symbol)|`Environment.DropDownDisabledGlyph`|  
+|![Pole wyboru&#45;w dół wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Tło|`Environment.DropDownDisabledBackground`|  
+|![Pole wyboru&#45;w dół wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Pierwszy plan (tekst)|`Environment.DropDownDisabledText`|  
+|![Pole wyboru&#45;w dół wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Obramowanie|`Environment.DropDownDisabledBorder`|  
+|![Pole wyboru&#45;w dół wyłączone](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")|Separator|Brak separatora|  
+|![Przycisk upuszczenia&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Tło|Nie dotyczy|  
+|![Przycisk upuszczenia&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Pierwszy plan (Glif)|`Environment.DropDownDisabledGlyph`|  
   
-##### <a name="split-button"></a>Przycisk podziału  
- Przyciski dzielone udostępniać wiele tokenów nazwy inne kontrolki paska poleceń, takich jak przyciski, menu i tekst paska poleceń. Wszystkie niezbędne działania i przycisk listy rozwijanej token nazwy są powtarzane tutaj dla wygody. Listy rozwijane w przycisku podziału stanowią implementacje paska poleceń [menu](../misc/shared-colors.md#BKMK_CommandMenus).  
+##### <a name="split-button"></a>Przycisk Podziału  
+ Przyciski podziału współużytkują wiele nazw tokenów z innymi kontrolkami paska poleceń, takimi jak przyciski, menu i tekst paska poleceń. Wszystkie niezbędne działania i nazwy tokenów przycisku rozwijane są powtarzane tutaj dla wygody. Listy rozwijane przycisków podziału są implementacjami paska poleceń [Menu](../misc/shared-colors.md#BKMK_CommandMenus).  
   
- ![Przycisk podziału poprawek](../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")  
+ ![Czerwony przycisk Podziału](../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")  
   
- Użyj...  
- Kiedy tworzysz przycisku podziału niestandardowych.  
+ Używać...  
+ podczas tworzenia niestandardowego przycisku podziału.  
   
-Nie używaj...  
+Nie używaj ...  
 - dla innych rodzajów przycisków.  
 
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Tło|Brak|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Pierwszego planu (symbol)|`Environment.CommandBarSplitButtonGlyph`|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Obramowanie|Brak|  
-|![Przycisk podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303 054_SplitButton")<br /><br /> **Przycisk podziału (ustawienie domyślne)**|Separator|Brak|  
+|![Przycisk Podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Przycisk Podziału (domyślnie)**|Tło|Brak|  
+|![Przycisk Podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Przycisk Podziału (domyślnie)**|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|![Przycisk Podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Przycisk Podziału (domyślnie)**|Pierwszy plan (Glif)|`Environment.CommandBarSplitButtonGlyph`|  
+|![Przycisk Podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Przycisk Podziału (domyślnie)**|Obramowanie|Nie dotyczy|  
+|![Przycisk Podziału](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303-054_SplitButton")<br /><br /> **Przycisk Podziału (domyślnie)**|Separator|Nie dotyczy|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
-|![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Pierwszego planu (symbol)|`Environment.CommandBarSplitButtonMouseOverGlyph`|  
-|![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Obramowanie|`Environment.CommandBarBorder`|  
-|![Przycisk podziału po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303 055_SplitButtonHover")<br /><br /> **Przycisk podziału (po najechaniu wskaźnikiem)**|Separator|`Environment.CommandBarSplitButtonSeparator`|  
+|![Przycisk Podziału po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Przycisk Podziału (po najechaniu kursorem)**|Tło|`Environment.CommandBarMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Przycisk Podziału po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Przycisk Podziału (po najechaniu kursorem)**|Pierwszy plan (tekst)|`Environment.CommandBarTextHover`|  
+|![Przycisk Podziału po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Przycisk Podziału (po najechaniu kursorem)**|Pierwszy plan (Glif)|`Environment.CommandBarSplitButtonMouseOverGlyph`|  
+|![Przycisk Podziału po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Przycisk Podziału (po najechaniu kursorem)**|Obramowanie|`Environment.CommandBarBorder`|  
+|![Przycisk Podziału po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303-055_SplitButtonHover")<br /><br /> **Przycisk Podziału (po najechaniu kursorem)**|Separator|`Environment.CommandBarSplitButtonSeparator`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Tło|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Pierwszego planu (tekst)|`Environment.CommandBarTextMouseDown`|  
-|![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Pierwszego planu (symbol)|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
-|![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Obramowanie|`Environment.CommandBarBorder`|  
-|![Wciśnięcie przycisku podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303 056_SplitButtonPressed")<br /><br /> **Przycisk podziału (po naciśnięciu)**|Separator|Brak|  
+|![Wciśnięty przycisk Podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Przycisk Podziału (wciśnięty)**|Tło|`Environment.CommandBarMouseDownBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Wciśnięty przycisk Podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Przycisk Podziału (wciśnięty)**|Pierwszy plan (tekst)|`Environment.CommandBarTextMouseDown`|  
+|![Wciśnięty przycisk Podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Przycisk Podziału (wciśnięty)**|Pierwszy plan (Glif)|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
+|![Wciśnięty przycisk Podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Przycisk Podziału (wciśnięty)**|Obramowanie|`Environment.CommandBarBorder`|  
+|![Wciśnięty przycisk Podziału](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Przycisk Podziału (wciśnięty)**|Separator|Nie dotyczy|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Tło|Brak|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (tekst)|`Environment.ComboBoxItemTextInactive`|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Pierwszego planu (symbol)|`Environment.CommandBarTextInactive`|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Obramowanie|Brak|  
-|![Przycisk podziału wyłączone](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303 057_SplitButtonDisabled")<br /><br /> **Przycisk podziału (wyłączony)**|Separator|Brak|  
+|![Przycisk Podziału wyłączony](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Przycisk Podziału (wyłączony)**|Tło|Nie dotyczy|  
+|![Przycisk Podziału wyłączony](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Przycisk Podziału (wyłączony)**|Pierwszy plan (tekst)|`Environment.ComboBoxItemTextInactive`|  
+|![Przycisk Podziału wyłączony](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Przycisk Podziału (wyłączony)**|Pierwszy plan (Glif)|`Environment.CommandBarTextInactive`|  
+|![Przycisk Podziału wyłączony](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Przycisk Podziału (wyłączony)**|Obramowanie|Nie dotyczy|  
+|![Przycisk Podziału wyłączony](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br /><br /> **Przycisk Podziału (wyłączony)**|Separator|Nie dotyczy|  
   
-##### <a name="more-options-and-overflow-buttons"></a>Przyciski "Overflow ma wartość" i więcej opcji  
- Przycisk "Więcej opcji" jest używany, gdy grupy pasek poleceń jest możliwe do dostosowania, albo dodając lub usuwając przyciski paska poleceń powiązanych. Przycisk "Overflow" jest wyświetlany, gdy pasek poleceń zostały obcięte ze względu na Brak miejsca w poziomie, a po kliknięciu pokazuje menu zawierające przyciski paska poleceń nie może być wyświetlany. Kolory dla tych dwóch przycisków są kontrolowane przez ten sam zestaw tokenów nazwy.  
+##### <a name="more-options-and-overflow-buttons"></a>Przyciski "Więcej opcji" i "Przepełnienie"  
+ Przycisk "Więcej opcji" jest używany, gdy grupa paska poleceń można dostosować, dodając lub usuwając powiązane przyciski paska poleceń. Przycisk "Przepełnienie" pojawia się, gdy pasek poleceń jest obcinany z powodu braku miejsca w poziomie, a po kliknięciu pokazuje menu zawierające przyciski paska poleceń, które nie mogą być wyświetlane. Kolory dla tych dwóch przycisków są kontrolowane przez ten sam zestaw nazw tokenów.  
   
- ![Więcej opcji poprawek](../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303 058_MoreOptionsRedline")  
+ ![Więcej opcji redline](../extensibility/ux-guidelines/media/0303-058-moreoptionsredline.png "0303-058_MoreOptionsRedline")  
   
- Użyj...  
- niestandardowe "więcej opcji" lub "Overflow" przycisków.  
+ Używać...  
+ dla niestandardowych przycisków "Więcej opcji" lub "Przepełnienie".  
   
- Nie używaj...  
- dla przycisków, które nie mają podobne funkcje do bardziej opcji lub przycisku "Overflow".  
+ Nie używaj ...  
+ dla przycisków, które nie mają podobnych funkcji do przycisku "Więcej opcji" lub "Przepełnienie".  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Więcej opcji](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsBackground`|  
-|![Więcej opcji](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303 059_MoreOptions")<br /><br /> **Więcej opcji**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsGlyph`|  
-|![Przycisk przepełnienie](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 060_Overflow")<br /><br /> **przepełnienia**|Tło|`Environment.CommandBarOptionsBackground`|  
-|![Przycisk przepełnienie](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303 060_Overflow")<br /><br /> **przepełnienia**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsGlyph`|  
+|![Więcej opcji](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsBackground`|  
+|![Więcej opcji](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Więcej opcji**|Pierwszy plan (Glif)|`Environment.CommandBarOptionsGlyph`|  
+|![Przycisk Przepełnienie](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Przepełnienie**|Tło|`Environment.CommandBarOptionsBackground`|  
+|![Przycisk Przepełnienie](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Przepełnienie**|Pierwszy plan (Glif)|`Environment.CommandBarOptionsGlyph`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Więcej opcji po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Więcej opcji po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303 061_MoreOptionsHover")<br /><br /> **Więcej opcji**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsMouseDownGlyph`|  
-|![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303 062_OverflowOptions")<br /><br /> **przepełnienia**|Tło|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303 062_OverflowOptions")<br /><br /> **przepełnienia**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Więcej opcji po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Więcej opcji po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Więcej opcji**|Pierwszy plan (Glif)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Przepełnienie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Przepełnienie**|Tło|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Przepełnienie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Przepełnienie**|Pierwszy plan (Glif)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Więcej opcji naciśnięty](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Więcej opcji naciśnięty](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303 063_MoreOptionsPressed")<br /><br /> **Więcej opcji**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsMouseDownGlyph`|  
-|![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303 064_OverflowPressed")<br /><br /> **przepełnienia**|Tło|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303 064_OverflowPressed")<br /><br /> **przepełnienia**|Pierwszego planu (symbol)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Więcej wciśniętych opcji](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Więcej opcji**|Tło|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Więcej wciśniętych opcji](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Więcej opcji**|Pierwszy plan (Glif)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Przepełnienie wciśnięte](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Przepełnienie**|Tło|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Przepełnienie wciśnięte](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Przepełnienie**|Pierwszy plan (Glif)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
 ### <a name="document-windows"></a>Okna dokumentów  
- Nie ma potrzeby replikowanie okna dokumentu, ponieważ są one udostępniane przez środowisko Visual Studio. Jednak można zdecydować, czy chcesz korzystać kolory używane w oknach dokumentów, tak, aby Twój interfejs użytkownika zawsze wyświetlana jest zgodny z tej części środowiska Visual Studio.  
+ Nie ma potrzeby replikowania okien dokumentów, ponieważ są one dostarczane przez środowisko programu Visual Studio. Jednak można zdecydować, że chcesz wykorzystać kolory używane w oknach dokumentów, tak aby interfejs użytkownika zawsze pojawia się zgodne z tej części środowiska programu Visual Studio.  
   
- Korzystając z tokenów kolor okna dokumentu, należy uważać, aby używać ich tylko dla podobnych elementów oraz zawsze par. Jeśli nie zrobisz, będziesz mieć nieoczekiwane wyniki w interfejsie użytkownika.  
+ Podczas korzystania z tokenów kolorów okna dokumentu, należy uważać, aby używać ich tylko dla podobnych elementów i zawsze w parach. Jeśli tego nie zrobisz, będziesz mieć nieoczekiwane wyniki w interfejsie użytkownika.  
   
 #### <a name="document-window-frame"></a>Ramka okna dokumentu  
- Okna dokumentów może być zadokowane w IDE lub zmiennoprzecinkową jako oddzielne okno. Gdy okno dokumentu jest liczb zmiennoprzecinkowych poza IDE, ona nadal znajduje się w źródle dokumentu i ma tła, obramowania, tekstu i kolorów karty, które są takie same jak, gdy jest on częścią środowiska IDE. Jednak dokumentu znajduje się wewnątrz ramki, który ma swój własny tło obramowania i kolorów tekstu. Gdy okna narzędziowe są zadokowane w źródle dokumentu, dziedziczą zachowanie i koloru dla swoich kart z nazwy tokenu okien dokumentu.  
+ Okna dokumentu mogą być zadokowane w IDE lub pływające jako oddzielne okno. Gdy okno dokumentu jest przestawne poza IDE, nadal znajduje się w dokumencie dobrze i ma tła, obramowania, tekstu i kolorów kart, które są takie same, jak wtedy, gdy jest częścią IDE. Jednak dokument znajduje się wewnątrz ramki, która ma własne kolory tła, obramowania i tekstu. Gdy okna narzędzi są dobrze zadokowane w dokumencie, dziedziczą zachowanie i kolor ich kart z nazw tokenów okna dokumentu.  
   
- ![Okno zadokowane dokumentu poprawek](../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303 065_DockedDocumentWindowRedline")  
+ ![Zadokowany czerwony kolor okna dokumentu](../extensibility/ux-guidelines/media/0303-065-dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")  
   
- **Okno zadokowane dokumentu**  
+ **Zadokowane okno dokumentu**  
   
- ![Przestawne okna dokumentu poprawek](../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303 066_FloatingDocumentWindowRedline")  
+ ![Przestawna czerwona linia okna dokumentu](../extensibility/ux-guidelines/media/0303-066-floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")  
   
- **Przestawne okna dokumentu.**  
+ **Okno dokumentu przestawnego**  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować okno dokumentu.  
+ Używać...  
+ w dowolnym miejscu, w dowolnym miejscu, w tym interfejsu użytkownika, który ma być zgodny z oknem dokumentu.  
   
- Nie używaj...  
- dla dowolnego interfejsu użytkownika, których nie chcesz automatycznie umożliwia zmianę powłoki ma aktualizacji motywu.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być automatycznie zmieniany, jeśli powłoka ma aktualizację motywu.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|Dokument: zadokowany lub liczb zmiennoprzecinkowych|Tło|Zależy od typu dokumentu|  
-|Dokument: zadokowany lub liczb zmiennoprzecinkowych|Pierwszego planu (tekst)|Zależy od typu dokumentu|  
-|Dokument: zadokowany lub liczb zmiennoprzecinkowych|Obramowanie|`Environment.ToolWindowBorder`|  
-|![Ramka skupia się](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")<br /><br /> **Ramka: Opływanie, fokus**|Tło|`Environment.ToolWindowFloatingFrame`|  
-|![Ramka skupia się](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")<br /><br /> **Ramka: Opływanie, fokus**|Pierwszego planu (tekst)|`Environment.ToolWindowFloatingFrame`|  
-|![Ramka skupia się](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")<br /><br /> **Ramka: Opływanie, fokus**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonActiveGlyph`|  
-|![Ramka skupia się](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")<br /><br /> **Ramka: Opływanie, fokus**|Obramowanie|`Environment.MainWindowActiveDefaultBorder`|  
-|![Ramka skupia się](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303 067_FrameFocused")<br /><br /> **Ramka: Opływanie, fokus**|Obramowanie (symbol)|`Environment.RaftedWindowButtonActiveBorder`<br /><br /> Ustaw przezroczyste|  
-|![Po przeniesieniu fokusu ramki](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Tło|`Environment.ToolWindowFloatingFrameInactive`|  
-|![Po przeniesieniu fokusu ramki](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.ToolWindowFloatingFrameInactive`|  
-|![Po przeniesieniu fokusu ramki](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonInactiveGlyph`|  
-|![Po przeniesieniu fokusu ramki](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Obramowanie|`Environment.MainWindowInactiveBorder`|  
-|![Po przeniesieniu fokusu ramki](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303 068_FrameUnfocused")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Obramowanie (symbol)|`Environment.RaftedWindowButtonInactiveBorder`<br /><br /> Ustaw przezroczyste|  
+|Dokument: zadokowany lub przestawny|Tło|Zależy od typu dokumentu|  
+|Dokument: zadokowany lub przestawny|Pierwszy plan (tekst)|Zależy od typu dokumentu|  
+|Dokument: zadokowany lub przestawny|Obramowanie|`Environment.ToolWindowBorder`|  
+|![Skoncentrowana ramka](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")<br /><br /> **Rama: pływająca, skupiona**|Tło|`Environment.ToolWindowFloatingFrame`|  
+|![Skoncentrowana ramka](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")<br /><br /> **Rama: pływająca, skupiona**|Pierwszy plan (tekst)|`Environment.ToolWindowFloatingFrame`|  
+|![Skoncentrowana ramka](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")<br /><br /> **Rama: pływająca, skupiona**|Pierwszy plan (Glif)|`Environment.RaftedWindowButtonActiveGlyph`|  
+|![Skoncentrowana ramka](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")<br /><br /> **Rama: pływająca, skupiona**|Obramowanie|`Environment.MainWindowActiveDefaultBorder`|  
+|![Skoncentrowana ramka](../extensibility/ux-guidelines/media/0303-067-framefocused.png "0303-067_FrameFocused")<br /><br /> **Rama: pływająca, skupiona**|Obramowanie (Glif)|`Environment.RaftedWindowButtonActiveBorder`<br /><br /> Ustawiona na przezroczysta|  
+|![Ramka nieskoncentrowana](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Tło|`Environment.ToolWindowFloatingFrameInactive`|  
+|![Ramka nieskoncentrowana](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Pierwszy plan (tekst)|`Environment.ToolWindowFloatingFrameInactive`|  
+|![Ramka nieskoncentrowana](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Pierwszy plan (Glif)|`Environment.RaftedWindowButtonInactiveGlyph`|  
+|![Ramka nieskoncentrowana](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Obramowanie|`Environment.MainWindowInactiveBorder`|  
+|![Ramka nieskoncentrowana](../extensibility/ux-guidelines/media/0303-068-frameunfocused.png "0303-068_FrameUnfocused")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Obramowanie (Glif)|`Environment.RaftedWindowButtonInactiveBorder`<br /><br /> Ustawiona na przezroczysta|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Ramka koncentruje się na przesunięciu](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Ramka: Opływanie, fokus**|Tło (symbol)|`Environment.RaftedWindowButtonHoverActive`|  
-|![Ramka koncentruje się na przesunięciu](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Ramka: Opływanie, fokus**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
-|![Ramka koncentruje się na przesunięciu](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303 069_FrameFocusedHover")<br /><br /> **Ramka: Opływanie, fokus**|Obramowanie (symbol)|`Environment.RaftedWindowButtonHoverActiveBorder`|  
-|![Po przeniesieniu fokusu po najechaniu wskaźnikiem ramki](../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303 070_FrameUnfocusedHover")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Tło (symbol)|`EnvironmentRaftedWindowButtonHoverInactive`|  
-|![Po przeniesieniu fokusu po najechaniu wskaźnikiem ramki](../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303 070_FrameUnfocusedHover")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonHoverInactiveGlyph`|  
-|![Po przeniesieniu fokusu po najechaniu wskaźnikiem ramki](../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303 070_FrameUnfocusedHover")<br /><br /> **Ramka: liczb zmiennoprzecinkowych, po przeniesieniu fokusu**|Obramowanie (symbol)|`Environment.RaftedWindowButtonHoverInactiveBorder`|  
+|![Ramka skupiona na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Rama: pływająca, skupiona**|Tło (Glif)|`Environment.RaftedWindowButtonHoverActive`|  
+|![Ramka skupiona na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Rama: pływająca, skupiona**|Pierwszy plan (Glif)|`Environment.RaftedWindowButtonHoverActiveGlyph`|  
+|![Ramka skupiona na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-069-framefocusedhover.png "0303-069_FrameFocusedHover")<br /><br /> **Rama: pływająca, skupiona**|Obramowanie (Glif)|`Environment.RaftedWindowButtonHoverActiveBorder`|  
+|![Ramka nieskoncentrowana po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Tło (Glif)|`EnvironmentRaftedWindowButtonHoverInactive`|  
+|![Ramka nieskoncentrowana po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Pierwszy plan (Glif)|`Environment.RaftedWindowButtonHoverInactiveGlyph`|  
+|![Ramka nieskoncentrowana po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-070-frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br /><br /> **Rama: pływająca, nieskoncentrowana**|Obramowanie (Glif)|`Environment.RaftedWindowButtonHoverInactiveBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Ramka skupia się po naciśnięciu](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Ramka: Opływanie, fokus**|Tło (symbol)|`Environment.RaftedWindowButtonDown`|  
-|![Ramka skupia się po naciśnięciu](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Ramka: Opływanie, fokus**|Pierwszego planu (symbol)|`Environment.RaftedWindowButtonDownGlyph`|  
-|![Ramka skupia się po naciśnięciu](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303 071_FrameFocusedPressed")<br /><br /> **Ramka: Opływanie, fokus**|Obramowanie (symbol)|`Environment.RaftedWindowButtonDownBorder`|  
+|![Wciśnięty klawisz frame](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Rama: pływająca, skupiona**|Tło (Glif)|`Environment.RaftedWindowButtonDown`|  
+|![Wciśnięty klawisz frame](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Rama: pływająca, skupiona**|Pierwszy plan (Glif)|`Environment.RaftedWindowButtonDownGlyph`|  
+|![Wciśnięty klawisz frame](../extensibility/ux-guidelines/media/0303-071-framefocusedpressed.png "0303-071_FrameFocusedPressed")<br /><br /> **Rama: pływająca, skupiona**|Obramowanie (Glif)|`Environment.RaftedWindowButtonDownBorder`|  
   
 #### <a name="document-tabs"></a>Karty dokumentów  
- Karty dokumentów znajdują się w kanale kartę, aby wskazać, które dokumenty są obecnie otwarte, oraz które z nich jest bieżąca wybrane lub aktywnego dokumentu. Okna narzędzi również może być zadokowane w kanale kartę dokumentu, jeśli użytkownik przełączy je ma. W takiej sytuacji używają takich samych kolorów karty jako okna dokumentu. Czy tworzenie interfejsu użytkownika chcesz zawsze odpowiada kolory okna dokumentu (w tym aktualizacje motywu lub jeśli są zainstalowane nowe motywy), a następnie odwoływać się do tych tokenów kolorów.  
+ Karty dokumentów znajdują się w kanale kart, aby wskazać, które dokumenty są aktualnie otwarte, wraz z tym, który z nich jest bieżącym wybranym lub aktywnym dokumentem. Okna narzędzi można również zadokować w kanale karty dokumentu, jeśli użytkownik je tam umieszcza. W tej sytuacji używają tych samych kolorów kart, co okna dokumentu. Jeśli tworzysz interfejs użytkownika, który ma być zawsze zgodny z kolorami okna dokumentu (w tym aktualizacjami motywu lub jeśli są zainstalowane nowe motywy), odwoł się do tych tokenów kolorów.  
   
- ![Karty dokumentów poprawek](../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303 072_DocumentTabRedline")  
+ ![Czerwony zakładka Dokument](../extensibility/ux-guidelines/media/0303-072-documenttabredline.png "0303-072_DocumentTabRedline")  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować karty dokumentów i automatycznie pobierał kompozycję aktualizacje lub nowe kolory motywu.  
+ Używać...  
+ w dowolnym miejscu tworzenia interfejsu użytkownika, który ma być zgodny z kartami dokumentów i automatycznie odbiera aktualizacje motywów lub nowe kolory motywu.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, gdy powłoka ma motyw aktualizacji.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, gdy powłoka ma aktualizację motywu.  
   
-##### <a name="open-document-tabs"></a>Otwórz dokument karty  
- Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla jego nazwę. Dokumenty można albo wybrać lub otworzyć w tle, a ich karty odzwierciedlać te stany:  
+##### <a name="open-document-tabs"></a>Otwieranie kart dokumentów  
+ Każdy otwarty dokument ma kartę w kanale kart dokumentu, na których wyświetlana jest jego nazwa. Dokumenty można wybierać lub otwierać w tle, a ich karty odzwierciedlają następujące stany:  
   
-- Wybrane karta reprezentuje dokument, który jest aktualnie wyświetlany w dokumencie dobrze. Kartę wybraną ma obramowanie dokumentu, które dobrze rozszerza między górną krawędzią dokumentu.  
+- Wybrana karta reprezentuje dokument, który jest aktualnie wyświetlany w dokumencie. Wybrana karta ma obramowanie dokumentu, które dobrze rozciąga się na górną krawędź dokumentu.  
   
-- Karty w tle są żadnych kart dokumentu, które nie są aktualnie wybrana karta. Po kliknięciu stają się wybranej karty i uzyskania wszystkich obramowania, tekstu i tła kolorów z tymi nazwami tokenu.  
+- Karty tła to wszystkie karty dokumentów, które nie są aktualnie zaznaczoną kartą. Po kliknięciu stają się one wybraną kartą i uzyskują wszystkie kolory tła, obramowania i tekstu z tych nazw tokenów.  
   
-  ![Karta otwartym dokumencie poprawek](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Otwórz czerwoną linię karty dokumentu](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
   
-  Użyj...  
-  Podczas tworzenia karty niestandardowego dokumentu.  
+  Używać...  
+  podczas tworzenia niestandardowych kart dokumentów.  
   
-  Nie używaj...  
-  - dla karty tymczasowe (wersja zapoznawcza).  
+  Nie używaj ...  
+  - dla tymczasowych (podgląd) kart.  
   
-- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+- dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
-##### <a name="selected-tab"></a>Wybranej karty  
- **Fokus**  
+##### <a name="selected-tab"></a>Karta Zaznaczone  
+ **Ustawiono fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Kartę wybraną skupia się](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Karcie wybrany dokument skupia się**|Tło|`Environment.FileTabSelectedGradientTop`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Kartę wybraną skupia się](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Karcie wybrany dokument skupia się**|Pierwszego planu (tekst)|`Environment.FileTabSelectedText`|  
-|![Kartę wybraną skupia się](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Karcie wybrany dokument skupia się**|Obramowanie|`Environment.FileTabSelectedBorder`<br /><br /> Ustaw kolor tła.|  
-|![Kartę wybraną skupia się](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303 074_SelectedTabFocused")<br /><br /> **Karcie wybrany dokument skupia się**|Obramowanie dokumentu|`Environment.FileTabDocumentBorderBackground`|  
+|![Zaznaczone fokus karty](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Karta Wybrany dokument, fokus**|Tło|`Environment.FileTabSelectedGradientTop`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Zaznaczone fokus karty](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Karta Wybrany dokument, fokus**|Pierwszy plan (tekst)|`Environment.FileTabSelectedText`|  
+|![Zaznaczone fokus karty](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Karta Wybrany dokument, fokus**|Obramowanie|`Environment.FileTabSelectedBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
+|![Zaznaczone fokus karty](../extensibility/ux-guidelines/media/0303-074-selectedtabfocused.png "0303-074_SelectedTabFocused")<br /><br /> **Karta Wybrany dokument, fokus**|Obramowanie dokumentu|`Environment.FileTabDocumentBorderBackground`|  
   
- **Po przeniesieniu fokusu**  
+ **Unfocused**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Tło|`Environment.FileTabInactiveGradientTop`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.FileTabInactiveText`|  
-|![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Obramowanie|`Environment.FileTabInactiveBorder`<br /><br /> Ustaw kolor tła.|  
-|![Po przeniesieniu fokusu kartę wybraną](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303 075_SelectedTabUnfocused")<br /><br /> **Karta wybrany dokument, po przeniesieniu fokusu**|Obramowanie dokumentu|`Environment.FileTabInactiveDocumentBorderBackground`|  
+|![Zaznaczona karta nieskoncentrowana](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Karta Zaznaczony dokument, nieskoncentrowana**|Tło|`Environment.FileTabInactiveGradientTop`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Zaznaczona karta nieskoncentrowana](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Karta Zaznaczony dokument, nieskoncentrowana**|Pierwszy plan (tekst)|`Environment.FileTabInactiveText`|  
+|![Zaznaczona karta nieskoncentrowana](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Karta Zaznaczony dokument, nieskoncentrowana**|Obramowanie|`Environment.FileTabInactiveBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
+|![Zaznaczona karta nieskoncentrowana](../extensibility/ux-guidelines/media/0303-075-selectedtabunfocused.png "0303-075_SelectedTabUnfocused")<br /><br /> **Karta Zaznaczony dokument, nieskoncentrowana**|Obramowanie dokumentu|`Environment.FileTabInactiveDocumentBorderBackground`|  
   
-##### <a name="background-tab"></a>Karta tła  
- **Default**  
+##### <a name="background-tab"></a>Karta Tło  
+ **Domyślny**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Karta tła](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **Domyślna karta tła**|Tło|`Environment.FileTabBackground`|  
-|![Karta tła](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **Domyślna karta tła**|Pierwszego planu (tekst)|`Environment.FileTabText`|  
-|![Karta tła](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303 076_BackgroundTab")<br /><br /> **Domyślna karta tła**|Obramowanie|`Environment.FileTabBorder`<br /><br /> Ustaw kolor tła.|  
+|![Karta Tło](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Domyślna karta Tło**|Tło|`Environment.FileTabBackground`|  
+|![Karta Tło](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Domyślna karta Tło**|Pierwszy plan (tekst)|`Environment.FileTabText`|  
+|![Karta Tło](../extensibility/ux-guidelines/media/0303-076-backgroundtab.png "0303-076_BackgroundTab")<br /><br /> **Domyślna karta Tło**|Obramowanie|`Environment.FileTabBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Karta tło po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **Karta tło po najechaniu wskaźnikiem**|Tło|`Environment.FileTabHotGradientTop`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Karta tło po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **Karta tło po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.FileTabHotText`|  
-|![Karta tło po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")<br /><br /> **Karta tło po najechaniu wskaźnikiem**|Obramowanie|`Environment.FileTabHotBorder`<br /><br /> Ustaw kolor tła.|  
+|![Karta Tło po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **Karta Tło po najechaniu kursorem myszy**|Tło|`Environment.FileTabHotGradientTop`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Karta Tło po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **Karta Tło po najechaniu kursorem myszy**|Pierwszy plan (tekst)|`Environment.FileTabHotText`|  
+|![Karta Tło po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303-077_BackgroundTabHover")<br /><br /> **Karta Tło po najechaniu kursorem myszy**|Obramowanie|`Environment.FileTabHotBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
-##### <a name="preview-tab"></a>Karta (wersja zapoznawcza)  
- Karta (wersja zapoznawcza) pojawia się po prawej stronie kanału kartę dokumentu, gdy użytkownik kliknie element w oknie narzędzia Eksploratora rozwiązań. On działa w wersji zapoznawczej dokumentu, a także zapewnia możliwość nie zamykaj dokumentu po lewej stronie kanału karty dokumentu. Otwórz kartę tylko jeden (wersja zapoznawcza) może być otwarty naraz. Podgląd karty mają zarówno w tle i wybranych stanów, takie jak karty i może być ukierunkowane lub po przeniesieniu fokusu w ich stanie aktywnym.  
+##### <a name="preview-tab"></a>Karta Podgląd  
+ Karta podglądu pojawi się po prawej stronie kanału karty dokumentu, gdy użytkownik kliknie element w oknie narzędzia Eksploratora rozwiązań. Działa jako podgląd dokumentu, a także daje użytkownikowi możliwość utrzymania dokumentu otwartego po lewej stronie kanału karty dokumentu. W ciągu jednego czasu można otworzyć tylko jedną kartę podglądu. Karty podglądu mają zarówno tło, jak i wybrane stany, takie jak otwarte karty, i mogą być skoncentrowane lub nieskoncentrowane w ich aktywnym stanie.  
   
- ![Karta Podgląd poprawek](../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")  
+ ![Czerwony kolor karty Podgląd](../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")  
   
- Użyj...  
- dowolne miejsce tworzenia tymczasowych (wersja zapoznawcza) i ma pewien element, aby dopasować bieżący kolor karcie podglądu.  
+ Używać...  
+ gdziekolwiek tworzysz tymczasowy podgląd i chcesz, aby jakiś element pasował do bieżącego koloru karty podglądu.  
   
-Nie używaj...  
-- dla każdego rodzaju dokumentu lub kartę, która nie jest tymczasowe (wersja zapoznawcza).  
+Nie używaj ...  
+- dla każdego rodzaju dokumentu lub karty, która nie jest tymczasowa (podgląd).  
 
-- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+- dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
-  **Karta wybranego (wersja zapoznawcza): Fokus**  
+  **Wybrana karta podglądu: skupiona**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Tło|`Environment.FileTabProvisionalSelectedActive`|  
-|![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
-|![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Obramowanie|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Ustaw kolor tła.|  
-|![Karta (wersja zapoznawcza) koncentruje się](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303 079_PreviewTabFocused")<br /><br /> **Karta specjalistyczny (wersja zapoznawcza)**|Obramowanie dokumentu|`Environment.FileTabProvisionalSelectedActiveBorder`|  
+|![Fokus karty Podgląd](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Karta Podgląd z punktem skupienia**|Tło|`Environment.FileTabProvisionalSelectedActive`|  
+|![Fokus karty Podgląd](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Karta Podgląd z punktem skupienia**|Pierwszy plan (tekst)|`Environment.FileTabProvisionalSelectedActiveForeground`|  
+|![Fokus karty Podgląd](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Karta Podgląd z punktem skupienia**|Obramowanie|`Environment.FileTabProvisionalSelectedActiveBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
+|![Fokus karty Podgląd](../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303-079_PreviewTabFocused")<br /><br /> **Karta Podgląd z punktem skupienia**|Obramowanie dokumentu|`Environment.FileTabProvisionalSelectedActiveBorder`|  
   
- **Karta wybranego (wersja zapoznawcza): Po przeniesieniu fokusu**  
+ **Wybrana karta podglądu: Nieskoncentrowana**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Tło|`Environment.FileTabProvisionalSelectedInactive`|  
-|![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
-|![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Obramowanie|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
-|![Karta (wersja zapoznawcza) po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303 080_PreviewTabUnfocused")<br /><br /> **Karta po przeniesieniu fokusu (wersja zapoznawcza)**|Obramowanie dokumentu|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
+|![Karta Podgląd nieskoncentrowana](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Karta Podgląd nieskoncentrowany**|Tło|`Environment.FileTabProvisionalSelectedInactive`|  
+|![Karta Podgląd nieskoncentrowana](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Karta Podgląd nieskoncentrowany**|Pierwszy plan (tekst)|`Environment.FileTabProvisionalSelectedInactiveForeground`|  
+|![Karta Podgląd nieskoncentrowana](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Karta Podgląd nieskoncentrowany**|Obramowanie|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
+|![Karta Podgląd nieskoncentrowana](../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303-080_PreviewTabUnfocused")<br /><br /> **Karta Podgląd nieskoncentrowany**|Obramowanie dokumentu|`Environment.FileTabProvisionalSelectedInactiveBorder`|  
   
- **Karta (wersja zapoznawcza) tła: Domyślne**  
+ **Karta Podgląd tła: Domyślna**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta tła w wersji zapoznawczej](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tła**|Tło|`Environment.FileTabProvisionalInactive`|  
-|![Karta tła w wersji zapoznawczej](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tła**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalInactiveForeground`|  
-|![Karta tła w wersji zapoznawczej](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303 081_PreviewBackgroundTab")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tła**|Obramowanie|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Ustaw kolor tła.|  
+|![Karta Podgląd tła](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Karta Tła karty Podgląd**|Tło|`Environment.FileTabProvisionalInactive`|  
+|![Karta Podgląd tła](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Karta Tła karty Podgląd**|Pierwszy plan (tekst)|`Environment.FileTabProvisionalInactiveForeground`|  
+|![Karta Podgląd tła](../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303-081_PreviewBackgroundTab")<br /><br /> **Karta Tła karty Podgląd**|Obramowanie|`Environment.FileTabProvisionalInactiveBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
- **Karta (wersja zapoznawcza) tła: Po wskazaniu wskaźnikiem**  
+ **Karta Podgląd tła: Kursoruj kursorem**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta tła (wersja zapoznawcza) po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tło po najechaniu wskaźnikiem**|Tło|`Environment.FileTabProvisionalHover`|  
-|![Karta tła (wersja zapoznawcza) po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tło po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.FileTabProvisionalHoverForeground`|  
-|![Karta tła (wersja zapoznawcza) po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303 082_PreviewBackgroundTabHover")<br /><br /> **W wersji zapoznawczej zarządzania tab tab tło po najechaniu wskaźnikiem**|Obramowanie|`Environment.FileTabProvisionalHoverBorder`<br /><br /> Ustaw kolor tła.|  
+|![Karta Podgląd tła po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Karta tła karty Podgląd po najechaniu kursorem myszy**|Tło|`Environment.FileTabProvisionalHover`|  
+|![Karta Podgląd tła po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Karta tła karty Podgląd po najechaniu kursorem myszy**|Pierwszy plan (tekst)|`Environment.FileTabProvisionalHoverForeground`|  
+|![Karta Podgląd tła po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Karta tła karty Podgląd po najechaniu kursorem myszy**|Obramowanie|`Environment.FileTabProvisionalHoverBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
-##### <a name="document-overflow-button"></a>Przycisk przepełnienie dokument  
- Przycisk przepełnienie dokument jest obecny, jeśli istnieje jeden lub więcej dokumentów otworzyć, niezależnie od tego, czy brak miejsca w pionie w bieżącej konfiguracji, aby dopasować wszystkich kartach dokumentów. Menu rozwijanego przepełnienie dokumentu, które są kontrolowane przez **CommandBarMenu** kolory (zobacz [menu](../misc/shared-colors.md#BKMK_CommandMenus)), zostanie wyświetlona lista wszystkich otwartych dokumentach widoczna i ukryta, i zmienia się glif przepełnienia w zależności od tego, czy wszystkie otwarte dokumenty są wyświetlane w kanale kartę.  
+##### <a name="document-overflow-button"></a>Przycisk Przepełnienie dokumentu  
+ Przycisk przepełnienia dokumentu jest obecny, jeśli jest otwarty jeden lub więcej dokumentów, niezależnie od tego, czy w bieżącej konfiguracji jest miejsce w pionie, aby zmieścić wszystkie karty dokumentu. Menu rozwijane przepełnienie dokumentu, które jest kontrolowane przez kolory **CommandBarMenu** (patrz [Menu),](../misc/shared-colors.md#BKMK_CommandMenus)wyświetla listę wszystkich otwartych dokumentów, zarówno widocznych, jak i ukrytych, a glif przepełnienia zmienia się w zależności od tego, czy wszystkie otwarte dokumenty są wyświetlane w kanale kart.  
   
- ![Przepełnienie poprawek](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")  
+ ![Przepełnienie czerwonej linii](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
-Użyj...  
-Podczas tworzenia niestandardowego dokumentu przycisku przepełnienia.  
+Używać...  
+podczas tworzenia niestandardowego przycisku przepełnienia dokumentu.  
 
-Nie używaj...  
-- dla interfejsu użytkownika, który nie jest podobne do przycisku przepełnienia.  
+Nie używaj ...  
+- dla interfejsu użytkownika, który nie jest podobny do przycisku przepełnienia.  
 
-- dla przycisków przepełnienie paska poleceń.  
+- dla przycisków przepełnienia paska poleceń.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Przycisk przepełnienie dokument**|Tło|`Environment.DocWellOverflowButtonBackground`|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Przycisk przepełnienie dokument**|Pierwszego planu (symbol)|`Environment.DocWellOverflowButtonGlyph`|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")<br /><br /> **Przycisk przepełnienie dokument**|Obramowanie|Brak|  
+|![Przepełnienie](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Przycisk Przepełnienie dokumentu**|Tło|`Environment.DocWellOverflowButtonBackground`|  
+|![Przepełnienie](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Przycisk Przepełnienie dokumentu**|Pierwszy plan (Glif)|`Environment.DocWellOverflowButtonGlyph`|  
+|![Przepełnienie](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **Przycisk Przepełnienie dokumentu**|Obramowanie|Nie dotyczy|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Przycisk przepełnienie dokument po najechaniu wskaźnikiem**|Tło|`Environment.DocWellOverflowButtonMouseOverBackground`|  
-|![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Przycisk przepełnienie dokument po najechaniu wskaźnikiem**|Pierwszego planu (symbol)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
-|![Overflow po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303 085_OverflowHover")<br /><br /> **Przycisk przepełnienie dokument po najechaniu wskaźnikiem**|Obramowanie|`Environment.DocWellOverflowButtonMouseOverBorder`|  
+|![Przepełnienie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Przycisk Przepełnienie dokumentu po najechaniu kursorem myszy**|Tło|`Environment.DocWellOverflowButtonMouseOverBackground`|  
+|![Przepełnienie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Przycisk Przepełnienie dokumentu po najechaniu kursorem myszy**|Pierwszy plan (Glif)|`Environment.DocWellOverflowButtonMouseOverGlyph`|  
+|![Przepełnienie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303-085_OverflowHover")<br /><br /> **Przycisk Przepełnienie dokumentu po najechaniu kursorem myszy**|Obramowanie|`Environment.DocWellOverflowButtonMouseOverBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Naciśnięty przycisk przepełnienie dokument**|Tło|`Environment.DocWellOverflowButtonMouseDownBackground`|  
-|![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Naciśnięty przycisk przepełnienie dokument**|Pierwszego planu (symbol)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
-|![Przepełnienie naciśnięty](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303 086_OverflowPressed")<br /><br /> **Naciśnięty przycisk przepełnienie dokument**|Obramowanie|`Environment.DocWellOverflowButtonMouseDownBorder`|  
+|![Przepełnienie wciśnięte](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Wciśnięty przycisk przepełnienia dokumentu**|Tło|`Environment.DocWellOverflowButtonMouseDownBackground`|  
+|![Przepełnienie wciśnięte](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Wciśnięty przycisk przepełnienia dokumentu**|Pierwszy plan (Glif)|`Environment.DocWellOverflowButtonMouseDownGlyph`|  
+|![Przepełnienie wciśnięte](../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303-086_OverflowPressed")<br /><br /> **Wciśnięty przycisk przepełnienia dokumentu**|Obramowanie|`Environment.DocWellOverflowButtonMouseDownBorder`|  
   
 ### <a name="tool-windows"></a>Okna narzędzi  
- Nie ma potrzeby replikowanie okien narzędziowych, ponieważ są one udostępniane przez środowisko Visual Studio. Jednak można zdecydować, czy chcesz korzystać kolorów używanych w oknach narzędzi, dzięki czemu interfejs użytkownika zawsze wyświetlana jest zgodny z tej części środowiska Visual Studio.  
+ Nie ma potrzeby replikowania okien narzędzi, ponieważ są one dostarczane przez środowisko programu Visual Studio. Jednak można zdecydować, że chcesz wykorzystać kolory używane w oknach narzędzi, tak aby interfejs użytkownika zawsze pojawia się zgodne z tej części środowiska programu Visual Studio.  
   
- ![Okno narzędzia poprawek](../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303 087_ToolWindowRedline")  
+ ![Czerwona linia okna narzędzia](../extensibility/ux-guidelines/media/0303-087-toolwindowredline.png "0303-087_ToolWindowRedline")  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować okna narzędzi.  
+ Używać...  
+ w dowolnym miejscu, w dowolnym miejscu, w tym interfejsu użytkownika, który ma być zgodny z oknami narzędzi.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
-#### <a name="tool-window-frame"></a>Ramki okna narzędzi  
- Okna narzędzi w programie Visual Studio są używane w przypadku wielu różnych zadań, a może znajdować się w jednej z kilku różnych stanów. Jeśli okno narzędzi jest otwarty, można przypisać do dowolnego z czterech bokach obszar dokumentu. Okna narzędzi można również liczb zmiennoprzecinkowych poza IDE, co pozwala na można zmieniać pozycji w dowolnym miejscu w ramach ekranu użytkownika. Zmiennoprzecinkowe systemu windows zawsze znajdują się na górze IDE. Na koniec okna narzędzi może być zadokowane jako okien dokumentu i są wyświetlane na karcie w dokumencie dobrze. Okna narzędzi, które zostały zadokowane jako okien dokumentu mają kolor w części za pomocą nazwy tokenu okien dokumentu.  
+#### <a name="tool-window-frame"></a>Ramka okna narzędzia  
+ Okna narzędzi w programie Visual Studio są używane dla wielu różnych zadań i mogą istnieć w jednym z kilku różnych stanów. Jeśli okno narzędzia jest otwarte, można je przypisać do dowolnej z czterech stron obszaru dokumentu. Okna narzędzi można również unosić się poza IDE, co pozwala na ich zmianę położenia w dowolnym miejscu na ekranie użytkownika. Okna przestawne zawsze znajdują się na szczycie IDE. Na koniec okna narzędzi mogą być zadokowane jako okna dokumentów i dobrze wyświetlane jako karta w dokumencie. Okna narzędzi, które zostały zadokowane jako okna dokumentów, są częściowo barwione przy użyciu nazw tokenów okna dokumentu.  
   
- ![Ramka okna narzędzia poprawek](../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303 088_ToolWindowFrameRedline")  
+ ![Ramka okna narzędzia czerwona linia](../extensibility/ux-guidelines/media/0303-088-toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować okna narzędzi.  
+ Używać...  
+ w dowolnym miejscu, w dowolnym miejscu, w tym interfejsu użytkownika, który ma być zgodny z oknami narzędzi.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
- **Zadokowane**  
+ **Zadokowany**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Okno zadokowane](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|Tło|`Environment.ToolWindowBackground`|  
-|![Okno zadokowane](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303 089_ToolWindowDocked")|Obramowanie|`Environment.ToolWindowBorder`|  
+|![Okno narzędzia zadokowane](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|Tło|`Environment.ToolWindowBackground`|  
+|![Okno narzędzia zadokowane](../extensibility/ux-guidelines/media/0303-089-toolwindowdocked.png "0303-089_ToolWindowDocked")|Obramowanie|`Environment.ToolWindowBorder`|  
   
- **Zmiennoprzecinkowa: fokus**  
+ **Pływające: koncentruje się**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Okna narzędzi, które skupia się](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|Tło|`Environment.ToolWindowBackground`|  
-|![Okna narzędzi, które skupia się](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303 090_ToolWindowFocused")|Obramowanie|`Environment.MainWindowActiveDefaultBorder`|  
+|![Skupione okno narzędzia](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|Tło|`Environment.ToolWindowBackground`|  
+|![Skupione okno narzędzia](../extensibility/ux-guidelines/media/0303-090-toolwindowfocused.png "0303-090_ToolWindowFocused")|Obramowanie|`Environment.MainWindowActiveDefaultBorder`|  
   
- **Zmiennoprzecinkowa: po przeniesieniu fokusu**  
+ **Pływające: nieskoncentrowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Po przeniesieniu fokusu okna narzędzi](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|Tło|`Environment.ToolWindowBackground`|  
-|![Po przeniesieniu fokusu okna narzędzi](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303 091_ToolWindowUnfocused")|Obramowanie|`Environment.MainWindowInactiveBorder`|  
+|![Okno narzędzia nieskoncentrowane](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|Tło|`Environment.ToolWindowBackground`|  
+|![Okno narzędzia nieskoncentrowane](../extensibility/ux-guidelines/media/0303-091-toolwindowunfocused.png "0303-091_ToolWindowUnfocused")|Obramowanie|`Environment.MainWindowInactiveBorder`|  
   
-#### <a name="tool-window-title-bar"></a>Pasek tytułu okna narzędzi  
- Obramowania paska tytułu nie jest PRAWDA obramowanie, ale Gruba linia wzdłuż górnej krawędzi paska tytułu. Nie ma w Nazwa tokenu dla jego stanu po przeniesieniu fokusu.  
+#### <a name="tool-window-title-bar"></a>Pasek tytułu okna narzędzia  
+ Obramowanie paska tytułu nie jest prawdziwym obramowaniem, ale grubą linią w górnej części paska tytułu. Nie ma nazwy tokenu dla jego stan nieskoncentrowany.  
   
- ![Pasek tytułu okna narzędzia poprawek](../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303 092_ToolWindowTitleBarRedline")  
+ ![Czerwony pasek tytułu okna narzędzia](../extensibility/ux-guidelines/media/0303-092-toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować okna narzędzi.  
+ Używać...  
+ w dowolnym miejscu, w dowolnym miejscu, w tym interfejsu użytkownika, który ma być zgodny z oknami narzędzi.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
- **Fokus**  
+ **Ustawiono fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pasek tytułu skupia się](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Pasek tytułu fokusem**|Tło|`Environment.TitleBarActiveGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Pasek tytułu skupia się](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Pasek tytułu fokusem**|Pierwszego planu (tekst)|`Environment.TitleBarActiveText`|  
-|![Pasek tytułu skupia się](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Pasek tytułu fokusem**|Obramowanie|`Environment.TitleBarActiveBorder`<br /><br /> Ustaw kolor tła.|  
-|![Pasek tytułu skupia się](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303 093_TitleBarFocused")<br /><br /> **Pasek tytułu fokusem**|Przeciągnij uchwyt|`Environment.TitleBarDragHandleActive`|  
+|![Pasek tytułu skupiony](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Ostry pasek tytułu**|Tło|`Environment.TitleBarActiveGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pasek tytułu skupiony](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Ostry pasek tytułu**|Pierwszy plan (tekst)|`Environment.TitleBarActiveText`|  
+|![Pasek tytułu skupiony](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Ostry pasek tytułu**|Obramowanie|`Environment.TitleBarActiveBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
+|![Pasek tytułu skupiony](../extensibility/ux-guidelines/media/0303-093-titlebarfocused.png "0303-093_TitleBarFocused")<br /><br /> **Ostry pasek tytułu**|Przeciągnij uchwyt|`Environment.TitleBarDragHandleActive`|  
   
- **Po przeniesieniu fokusu**  
+ **Unfocused**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Tło|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.TitleBarInactiveText`|  
-|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Obramowanie|Brak|  
-|![Po przeniesieniu fokusu paska tytułu](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303 094_TitleBarUnfocused")<br /><br /> **Pasek tytułu po przeniesieniu fokusu**|Przeciągnij uchwyt|`Environment.TitleBarDragHandle`|  
+|![Pasek tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Nieskoncentrowany pasek tytułu**|Tło|`Environment.TitleBarInactiveGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pasek tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Nieskoncentrowany pasek tytułu**|Pierwszy plan (tekst)|`Environment.TitleBarInactiveText`|  
+|![Pasek tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Nieskoncentrowany pasek tytułu**|Obramowanie|Nie dotyczy|  
+|![Pasek tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303-094_TitleBarUnfocused")<br /><br /> **Nieskoncentrowany pasek tytułu**|Przeciągnij uchwyt|`Environment.TitleBarDragHandle`|  
   
 ##### <a name="title-bar-buttons"></a>Przyciski paska tytułu  
- ![Przycisk paska tytułu poprawek](../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")  
+ ![Czerwony pasek tytułu](../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")  
   
- Użyj...  
- przycisków, które są wyświetlane w interfejs użytkownika, który używa tokenów kolor z paski tytułu okna narzędzia.  
+ Używać...  
+ dla przycisków, które pojawiają się w interfejsie użytkownika, który używa tokenów kolorów z pasków tytułów okna narzędzia.  
   
-Nie używaj...  
-- w przypadku przycisków, które pojawiają się w innych lokalizacjach.  
+Nie używaj ...  
+- dla przycisków wyświetlanych w innych lokalizacjach.  
 
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Tło|Brak|  
-|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonActiveGlyph`|  
-|![Tytuł paska przycisk skupia się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")<br /><br /> **Fokus**|Obramowanie|Brak|  
-|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Tło|Brak|  
-|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonInactiveGlyph`|  
-|![Tytuł paska przycisku po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303 097_TitleBarButtonUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|Brak|  
+|![Przycisk paska tytułu koncentruje się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Ustawiono fokus**|Tło|Nie dotyczy|  
+|![Przycisk paska tytułu koncentruje się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Ustawiono fokus**|Pierwszy plan (Glif)|`Environment.ToolWindowButtonActiveGlyph`|  
+|![Przycisk paska tytułu koncentruje się](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br /><br /> **Ustawiono fokus**|Obramowanie|Nie dotyczy|  
+|![Przycisk paska tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Unfocused**|Tło|Nie dotyczy|  
+|![Przycisk paska tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Unfocused**|Pierwszy plan (Glif)|`Environment.ToolWindowButtonInactiveGlyph`|  
+|![Przycisk paska tytułu nieskoncentrowany](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br /><br /> **Unfocused**|Obramowanie|Nie dotyczy|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk paska tytułu, który skupia się na przesunięciu](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Fokus**|Tło|`Environment.ToolWindowButtonHoverActive`|  
-|![Przycisk paska tytułu, który skupia się na przesunięciu](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
-|![Przycisk paska tytułu, który skupia się na przesunięciu](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")<br /><br /> **Fokus**|Obramowanie|`Environment.ToolWindowButtonHoverActiveBorder`|  
-|![Tytuł paska przycisku po przeniesieniu fokusu po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Tło|`Environment.ToolWindowButtonHoverInactive`|  
-|![Tytuł paska przycisku po przeniesieniu fokusu po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonHoverInactiveGlyph`|  
-|![Tytuł paska przycisku po przeniesieniu fokusu po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303 099_TitleBarButtonUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|`Environment.ToolWindowButtonHoverInactiveBorder`|  
+|![Przycisk paska tytułu na skupić się na najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Ustawiono fokus**|Tło|`Environment.ToolWindowButtonHoverActive`|  
+|![Przycisk paska tytułu na skupić się na najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Ustawiono fokus**|Pierwszy plan (Glif)|`Environment.ToolWindowButtonHoverActiveGlyph`|  
+|![Przycisk paska tytułu na skupić się na najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303-098_TitleBarButtonFocusedHover")<br /><br /> **Ustawiono fokus**|Obramowanie|`Environment.ToolWindowButtonHoverActiveBorder`|  
+|![Przycisk paska tytułu nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br /><br /> **Unfocused**|Tło|`Environment.ToolWindowButtonHoverInactive`|  
+|![Przycisk paska tytułu nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br /><br /> **Unfocused**|Pierwszy plan (Glif)|`Environment.ToolWindowButtonHoverInactiveGlyph`|  
+|![Przycisk paska tytułu nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303-099_TitleBarButtonUnfocusedHover")<br /><br /> **Unfocused**|Obramowanie|`Environment.ToolWindowButtonHoverInactiveBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tytuł paska przycisk fokus i naciśnięciu](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Fokus**|Tło|`Environment.ToolWindowButtonDown`|  
-|![Tytuł paska przycisk fokus i naciśnięciu](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonDownActiveGlyph`|  
-|![Tytuł paska przycisk fokus i naciśnięciu](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")<br /><br /> **Fokus**|Obramowanie|`Environment.ToolWindowButtonDownBorder`|  
-|![Przycisk paska tytułu, po przeniesieniu fokusu i po naciśnięciu](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Po przeniesieniu fokusu**|Tło|`Environment.ToolWindowButtonDown`|  
-|![Przycisk paska tytułu, po przeniesieniu fokusu i po naciśnięciu](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`Environment.ToolWindowButtonDownInactiveGlyph`|  
-|![Przycisk paska tytułu, po przeniesieniu fokusu i po naciśnięciu](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303 101_TitleBarButtonUnfocusedPressed")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|`Environment.ToolWindowButtonDownBorder`|  
+|![Przycisk paska tytułu nakoncentrowany i naciśnięty](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Ustawiono fokus**|Tło|`Environment.ToolWindowButtonDown`|  
+|![Przycisk paska tytułu nakoncentrowany i naciśnięty](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Ustawiono fokus**|Pierwszy plan (Glif)|`Environment.ToolWindowButtonDownActiveGlyph`|  
+|![Przycisk paska tytułu nakoncentrowany i naciśnięty](../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303-100_TitleBarButtonFocusedPressed")<br /><br /> **Ustawiono fokus**|Obramowanie|`Environment.ToolWindowButtonDownBorder`|  
+|![Przycisk paska tytułu nieskoncentrowany i naciśnięty](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br /><br /> **Unfocused**|Tło|`Environment.ToolWindowButtonDown`|  
+|![Przycisk paska tytułu nieskoncentrowany i naciśnięty](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br /><br /> **Unfocused**|Pierwszy plan (Glif)|`Environment.ToolWindowButtonDownInactiveGlyph`|  
+|![Przycisk paska tytułu nieskoncentrowany i naciśnięty](../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303-101_TitleBarButtonUnfocusedPressed")<br /><br /> **Unfocused**|Obramowanie|`Environment.ToolWindowButtonDownBorder`|  
   
-#### <a name="tool-window-tabs"></a>Karty okna narzędzi  
- ![Karta okna narzędzia poprawek](../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303 102_ToolWindowTabRedline")  
+#### <a name="tool-window-tabs"></a>Karty okna narzędzia  
+ ![Karta okno narzędzia czerwony](../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303-102_ToolWindowTabRedline")  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować okna narzędzi.  
+ Używać...  
+ w dowolnym miejscu, w dowolnym miejscu, w tym interfejsu użytkownika, który ma być zgodny z oknami narzędzi.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
- **Wybranej karty**  
+ **Karta Zaznaczone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta okna narzędzia skupia się](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Karta okna narzędzia wybrane, ukierunkowane**|Tło|`Environment.ToolWindowTabSelectedTab`|  
-|![Karta okna narzędzia skupia się](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Karta okna narzędzia wybrane, ukierunkowane**|Pierwszego planu (tekst)|`Environment.ToolWindowTabSelectedActiveText`|  
-|![Karta okna narzędzia skupia się](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303 103_ToolWindowTabFocused")<br /><br /> **Karta okna narzędzia wybrane, ukierunkowane**|Obramowanie|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Ustaw kolor tła.|  
+|![Fokus okna narzędzia](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Karta Okno zaznaczone, skupione narzędzie**|Tło|`Environment.ToolWindowTabSelectedTab`|  
+|![Fokus okna narzędzia](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Karta Okno zaznaczone, skupione narzędzie**|Pierwszy plan (tekst)|`Environment.ToolWindowTabSelectedActiveText`|  
+|![Fokus okna narzędzia](../extensibility/ux-guidelines/media/0303-103-toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br /><br /> **Karta Okno zaznaczone, skupione narzędzie**|Obramowanie|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta w oknie narzędzia po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Karta okna narzędzia zaznaczona, po przeniesieniu fokusu**|Tło|`Environment.ToolWindowTabSelectedTab`|  
-|![Karta w oknie narzędzia po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Karta okna narzędzia zaznaczona, po przeniesieniu fokusu**|Pierwszego planu (tekst)|`Environment.ToolWindowTabSelectedText`|  
-|![Karta w oknie narzędzia po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303 104_ToolWindowTabUnfocused")<br /><br /> **Karta okna narzędzia zaznaczona, po przeniesieniu fokusu**|Obramowanie|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Ustaw kolor tła.|  
+|![Karta okna narzędzia nieskoncentrowana](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Karta okno narzędzia zaznaczone, nieskoncentrowane**|Tło|`Environment.ToolWindowTabSelectedTab`|  
+|![Karta okna narzędzia nieskoncentrowana](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Karta okno narzędzia zaznaczone, nieskoncentrowane**|Pierwszy plan (tekst)|`Environment.ToolWindowTabSelectedText`|  
+|![Karta okna narzędzia nieskoncentrowana](../extensibility/ux-guidelines/media/0303-104-toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br /><br /> **Karta okno narzędzia zaznaczone, nieskoncentrowane**|Obramowanie|`Environment.ToolWindowTabSelectedBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
- **Karta tła**  
+ **Karta Tło**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta tła okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Karta okna narzędzia do tła**|Tło|`Environment.ToolWindowTabGradientBegin`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.|  
-|![Karta tła okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Karta okna narzędzia do tła**|Pierwszego planu (tekst)|`Environment.ToolWindowTabText`|  
-|![Karta tła okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303 105_ToolWindowBackgroundTab")<br /><br /> **Karta okna narzędzia do tła**|Obramowanie|`Environment.ToolWindowTabBorder`|  
+|![Karta tło okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Karta Okno narzędzia Tło**|Tło|`Environment.ToolWindowTabGradientBegin`<br /><br /> Gradient zatrzymuje ustawioną na tę samą wartość koloru w programie Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabGradientEnd`<br /><br /> Gradient zatrzymuje ustawioną na tę samą wartość koloru w programie Visual Studio 2013.|  
+|![Karta tło okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Karta Okno narzędzia Tło**|Pierwszy plan (tekst)|`Environment.ToolWindowTabText`|  
+|![Karta tło okna narzędzia](../extensibility/ux-guidelines/media/0303-105-toolwindowbackgroundtab.png "0303-105_ToolWindowBackgroundTab")<br /><br /> **Karta Okno narzędzia Tło**|Obramowanie|`Environment.ToolWindowTabBorder`|  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Karta tła okna narzędzia po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okna narzędzia tło po najechaniu wskaźnikiem**|Tło|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> Ustaw na tę samą wartość koloru w programie Visual Studio 2013 zatrzymania gradientu.|  
-|![Karta tła okna narzędzia po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okna narzędzia tło po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.ToolWindowTabMouseOverText`|  
-|![Karta tła okna narzędzia po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303 106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okna narzędzia tło po najechaniu wskaźnikiem**|Obramowanie|`Environment.ToolWindowTabMouseOverBorder`<br /><br /> Ustaw kolor tła.|  
+|![Karta tła okna narzędzia po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okno narzędzia tło po najechaniu kursorem myszy**|Tło|`Environment.ToolWindowTabMouseOverBackgroundBegin`<br /><br /> Gradient zatrzymuje ustawioną na tę samą wartość koloru w programie Visual Studio 2013.<br /><br /> `Environment.ToolWindowTabMouseOverBackgroundEnd`<br /><br /> Gradient zatrzymuje ustawioną na tę samą wartość koloru w programie Visual Studio 2013.|  
+|![Karta tła okna narzędzia po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okno narzędzia tło po najechaniu kursorem myszy**|Pierwszy plan (tekst)|`Environment.ToolWindowTabMouseOverText`|  
+|![Karta tła okna narzędzia po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-106-toolwindowbackgroundtabhover.png "0303-106_ToolWindowBackgroundTabHover")<br /><br /> **Karta okno narzędzia tło po najechaniu kursorem myszy**|Obramowanie|`Environment.ToolWindowTabMouseOverBorder`<br /><br /> Ustaw ten sam kolor co tło.|  
   
 #### <a name="auto-hide-tabs"></a>Automatyczne ukrywanie kart  
- ![Automatyczne&#45;ukrywanie poprawek](../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303 107_AutoHideRedline")  
+ ![Automatyczna&#45;ukryć czerwoną linię](../extensibility/ux-guidelines/media/0303-107-autohideredline.png "0303-107_AutoHideRedline")  
   
- Użyj...  
- dowolne miejsce służy do utworzenia interfejsu użytkownika, który chcesz dopasować karty okna ukryte automatycznie narzędzi.  
+ Używać...  
+ w dowolnym miejscu tworzenia interfejsu użytkownika, który ma być zgodny z automatycznie ukrytymi kartami okna narzędzia.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie ma być zmieniany automatycznie, jeśli powłoka ma aktualizację motywu.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Automatyczne&#45;Ukrywanie karty](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Domyślną kartę autoukrywanie**|Tło|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Automatyczne&#45;Ukrywanie karty](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Domyślną kartę autoukrywanie**|Pierwszego planu (tekst)|`Environment.AutoHideTabText`|  
-|![Automatyczne&#45;Ukrywanie karty](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303 108_AutoHideTab")<br /><br /> **Domyślną kartę autoukrywanie**|Obramowanie|`Environment.AutoHideTabBorder`|  
+|![Karta Automatyczna&#45;ukrywanie](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Domyślna karta automatycznego ukrywania**|Tło|`Environment.AutoHideTabBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Karta Automatyczna&#45;ukrywanie](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Domyślna karta automatycznego ukrywania**|Pierwszy plan (tekst)|`Environment.AutoHideTabText`|  
+|![Karta Automatyczna&#45;ukrywanie](../extensibility/ux-guidelines/media/0303-108-autohidetab.png "0303-108_AutoHideTab")<br /><br /> **Domyślna karta automatycznego ukrywania**|Obramowanie|`Environment.AutoHideTabBorder`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Automatyczne&#45;Ukrywanie karty po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Autoukrywanie kartę po najechaniu wskaźnikiem**|Tło|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Automatyczne&#45;Ukrywanie karty po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Autoukrywanie kartę po najechaniu wskaźnikiem**|Pierwszego planu (tekst)|`Environment.AutoHideTabMouseOverText`|  
-|![Automatyczne&#45;Ukrywanie karty po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303 109_AutoHideTabHover")<br /><br /> **Autoukrywanie kartę po najechaniu wskaźnikiem**|Obramowanie|`Environment.AutoHideTabMouseOverBorder`|  
+|![Automatyczne&#45;ukryj kartę po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatyczne ukrywanie karty po najechaniu kursorem myszy**|Tło|`Environment.AutoHideTabMouseOverBackgroundBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Automatyczne&#45;ukryj kartę po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatyczne ukrywanie karty po najechaniu kursorem myszy**|Pierwszy plan (tekst)|`Environment.AutoHideTabMouseOverText`|  
+|![Automatyczne&#45;ukryj kartę po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-109-autohidetabhover.png "0303-109_AutoHideTabHover")<br /><br /> **Automatyczne ukrywanie karty po najechaniu kursorem myszy**|Obramowanie|`Environment.AutoHideTabMouseOverBorder`|  
   
-### <a name="common-shared-controls"></a>Typowe kontrolki udostępnionego  
- Używając standardowego paska poleceń programu Visual Studio w Twojej funkcji, będziesz mieć dostęp do formantów powłoki ze stylem, a powinien nie re szablonu tych wspólnych formantów. Jednak jeśli potrzebujesz do tworzenia paska poleceń niestandardowych, może być konieczne do tworzenia kontrolek niestandardowych również. W takim przypadku upewnij się, że Użyj poprawne nazwy tokenu dla każdego z następujących formantów interfejsu użytkownika jest zgodne z pozostałą częścią programu Visual Studio.  
+### <a name="common-shared-controls"></a>Typowe kontrolki współużytkowane  
+ Korzystając ze standardowego paska poleceń programu Visual Studio w funkcji, będziesz mieć dostęp do formantów powłoki w stylu i nie należy ponownie szablon tych typowych formantów. Jednak jeśli trzeba utworzyć pasek poleceń niestandardowe, może być konieczne tworzenie formantów niestandardowych, jak również. W takim przypadku należy pamiętać, aby użyć poprawne nazwy tokenów dla każdego z następujących formantów, tak aby interfejs użytkownika jest zgodny z resztą programu Visual Studio.  
   
 #### <a name="search-box"></a>Pole wyszukiwania  
- Możliwe, używaj wspólnej kontroli wyszukiwania oferowanych przez środowisko Visual Studio. Kolory pole wyszukiwania znajdują się w kategorii "SearchControl" **ShellColors.pkgdef** pliku, który zawiera token nazwy pola wejściowego, przycisk akcji, przycisk listy rozwijanej i menu rozwijanego.  
+ Jeśli to możliwe, należy użyć wspólnego formantu wyszukiwania dostarczonego przez środowisko programu Visual Studio. Kolory pól wyszukiwania znajdują się w kategorii "SearchControl" w pliku **ShellColors.pkgdef,** który zawiera nazwy tokenów dla pola wejściowego, przycisku akcji, przycisku rozwijanego i menu rozwijanego.  
   
- Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wzajemnie wykluczających się:  
+ Pole wyszukiwania może być jednym z kilku stanów, z których niektóre wzajemnie się wykluczają:  
   
-- "Skupia się" lub "po przeniesieniu fokusu" odnosi się do czy kursor znajduje się w polu tekstowym.  
+- "Koncentruje się" lub "nieskoncentrowane" odnosi się do tego, czy kursor znajduje się w polu tekstowym.  
   
-- "Active" lub "nieaktywne" odnosi się do tego, czy użytkownik wprowadził zapytania wyszukiwania w polu tekstowym.  
+- "Aktywny" lub "nieaktywny" odnosi się do tego, czy użytkownik ma wprowadzić zapytanie wyszukiwania w polu tekstowym.  
   
-- "Aktywowaniu" oznacza, że użytkownik ma moused w polu wyszukiwania za pomocą myszy (ten stan zastępuje inne stany).  
+- "Hover" oznacza, że użytkownik ma myszy nad polem wyszukiwania za pomocą myszy (ten stan zastępuje wszystkie inne stany).  
   
-- "Wyłączone" oznacza, że funkcja wyszukiwania jest wyłączone dla bieżącego kontekstu.  
+- "Wyłączone" oznacza, że funkcja wyszukiwania jest wyłączona dla bieżącego kontekstu.  
   
-  ![Pole wyszukiwania poprawek](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Czerwony kolor pola wyszukiwania](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
   
-  Użyj...  
-  Podczas projektowania pole wyszukiwania niestandardowego.  
+  Używać...  
+  podczas projektowania niestandardowego pola wyszukiwania.  
   
-  Nie używaj...  
-  - dla wszystkich elementów, który nie jest pole wyszukiwania.  
+  Nie używaj ...  
+  - dla wszystkiego, co nie jest polem wyszukiwania.  
   
-- dla każdego elementu, który nie ma zawsze do dopasowania wyszukiwania polu interfejsu użytkownika.  
+- dla wszystkiego, co nie chcesz zawsze pasować do interfejsu użytkownika pola wyszukiwania.  
   
-  **Fokus**  
+  **Ustawiono fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wejściowe wyszukiwania skupia się](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Pola wejściowego**|Tło|`SearchControl.FocusedBackground`|  
-|![Pole wejściowe wyszukiwania skupia się](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.FocusedBackground`|  
-|![Pole wejściowe wyszukiwania skupia się](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Pola wejściowego**|Obramowanie|`SearchControl.FocusedBorder`|  
-|![Pole wejściowe wyszukiwania skupia się](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303 111_SearchInputFieldFocused")<br /><br /> **Pola wejściowego**|Separator|`SearchControl.FocusedDropDownSeparator`|  
-|![Fokus przycisku akcji Wyszukaj](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Akcja przycisku**|Tło|Brak|  
-|![Fokus przycisku akcji Wyszukaj](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol wyszukiwania)|`SearchControl.SearchGlyph`|  
-|![Fokus przycisku akcji Wyszukaj](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Zatrzymaj symbol)|`SearchControl.StopGlyph`|  
-|![Fokus przycisku akcji Wyszukaj](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Wyczyść symbol)|`SearchControl.ClearGlyph`|  
-|![Fokus przycisku akcji Wyszukaj](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303 112_SearchActionButtonFocused")<br /><br /> **Akcja przycisku**|Obramowanie|Brak|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk skupia się](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Tło|`SearchControl.FocusedDropDownButton`|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk skupia się](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`SearchControl.FocusedDropDownButtonGlyph`|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk skupia się](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303 113_SearchDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|`SearchControl.FocusedDropDownButtonBorder`|  
+|![Pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Pole wejściowe**|Tło|`SearchControl.FocusedBackground`|  
+|![Pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`SearchControl.FocusedBackground`|  
+|![Pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Pole wejściowe**|Obramowanie|`SearchControl.FocusedBorder`|  
+|![Pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br /><br /> **Pole wejściowe**|Separator|`SearchControl.FocusedDropDownSeparator`|  
+|![Przycisk akcji wyszukiwania koncentruje](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Przycisk Akcja**|Tło|Brak|  
+|![Przycisk akcji wyszukiwania koncentruje](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Przycisk Akcja**|Pierwszy plan (glif wyszukiwania)|`SearchControl.SearchGlyph`|  
+|![Przycisk akcji wyszukiwania koncentruje](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Przycisk Akcja**|Pierwszy plan (stop glif)|`SearchControl.StopGlyph`|  
+|![Przycisk akcji wyszukiwania koncentruje](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Przycisk Akcja**|Pierwszy plan (przezroczysty glif)|`SearchControl.ClearGlyph`|  
+|![Przycisk akcji wyszukiwania koncentruje](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br /><br /> **Przycisk Akcja**|Obramowanie|Nie dotyczy|  
+|![Przycisk rozwijania wyszukiwania&#45;w dół](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Tło|`SearchControl.FocusedDropDownButton`|  
+|![Przycisk rozwijania wyszukiwania&#45;w dół](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`SearchControl.FocusedDropDownButtonGlyph`|  
+|![Przycisk rozwijania wyszukiwania&#45;w dół](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|`SearchControl.FocusedDropDownButtonBorder`|  
   
- **Po przeniesieniu fokusu**  
+ **Unfocused**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pola wejściowego**|Tło|`SearchControl.SearchActiveBackground`|  
-|![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.SearchActiveBackground`|  
-|![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pola wejściowego**|Obramowanie|`SearchControl.UnfocusedBorder`|  
-|![Po przeniesieniu fokusu pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303 114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pola wejściowego**|Separator|`SearchControl.DropDownSeparator`|  
-|![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Tło|`SearchControl.Unfocused`|  
-|![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.Unfocused`|  
-|![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Obramowanie|`SearchControl.UnfocusedBorder`|  
-|![Pole wejściowe wyszukiwania po przeniesieniu fokusu i nieaktywnych](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pola wejściowego**|Separator|`SearchControl.DropDownSeparator`|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Tło|Brak|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol wyszukiwania)|`SearchControl.SearchGlyph`|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Zatrzymaj symbol)|`SearchControl.StopGlyph`|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Pierwszego planu (Wyczyść symbol)|`SearchControl.ClearGlyph`|  
-|![Przycisk wyszukiwania akcji po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303 115_SearchActionButtonUnfocused")<br /><br /> **Akcja przycisku**|Obramowanie|Brak|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")<br /><br /> **Przycisk listy rozwijanej**|Tło|`SearchControl.UnfocusedDropDownButton`|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303 116_SearchDropdownButtonUnfocused")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|`SearchControl.UnfocusedDropDownButtonBorder`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowane](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pole wejściowe**|Tło|`SearchControl.SearchActiveBackground`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowane](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pole wejściowe**|Pierwszy plan (tekst)|`SearchControl.SearchActiveBackground`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowane](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pole wejściowe**|Obramowanie|`SearchControl.UnfocusedBorder`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowane](../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br /><br /> **Aktywne pole wejściowe**|Separator|`SearchControl.DropDownSeparator`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowanego i nieaktywnego](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pole wejściowe**|Tło|`SearchControl.Unfocused`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowanego i nieaktywnego](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pole wejściowe**|Pierwszy plan (tekst)|`SearchControl.Unfocused`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowanego i nieaktywnego](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pole wejściowe**|Obramowanie|`SearchControl.UnfocusedBorder`|  
+|![Wyszukiwanie pola wejściowego nieskoncentrowanego i nieaktywnego](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br /><br /> **Nieaktywne pole wejściowe**|Separator|`SearchControl.DropDownSeparator`|  
+|![Przycisk akcji wyszukiwania nieskoncentrowany](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Przycisk Akcja**|Tło|Nie dotyczy|  
+|![Przycisk akcji wyszukiwania nieskoncentrowany](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Przycisk Akcja**|Pierwszy plan (glif wyszukiwania)|`SearchControl.SearchGlyph`|  
+|![Przycisk akcji wyszukiwania nieskoncentrowany](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Przycisk Akcja**|Pierwszy plan (stop glif)|`SearchControl.StopGlyph`|  
+|![Przycisk akcji wyszukiwania nieskoncentrowany](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Przycisk Akcja**|Pierwszy plan (przezroczysty glif)|`SearchControl.ClearGlyph`|  
+|![Przycisk akcji wyszukiwania nieskoncentrowany](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br /><br /> **Przycisk Akcja**|Obramowanie|Nie dotyczy|  
+|![Przycisk upuszczenia wyszukiwania&#45;w dół nieskoncentrowany](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Przycisk listy rozwijanej**|Tło|`SearchControl.UnfocusedDropDownButton`|  
+|![Przycisk upuszczenia wyszukiwania&#45;w dół nieskoncentrowany](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`SearchControl.UnfocusedDropDownButtonGlyph`|  
+|![Przycisk upuszczenia wyszukiwania&#45;w dół nieskoncentrowany](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|`SearchControl.UnfocusedDropDownButtonBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Naciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Akcja przycisku**|Tło|`SearchControl.ActionButtonMouseDown`|  
-|![Naciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol)|`SearchControl.ActionButtonMouseDownGlyph`|  
-|![Naciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Akcja przycisku**|Obramowanie|`SearchControl.ActionButtonMouseDownBorder`|  
-|![Listy wyszukiwania&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Tło|`SearchControl.MouseDownDropDownButton`|  
-|![Listy wyszukiwania&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`SearchControl.MouseDownDropDownButtonGlyph`|  
-|![Listy wyszukiwania&#45;dół wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|`SearchControl.MouseDownDropDownButtonBorder`|  
+|![Wciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Przycisk Akcja**|Tło|`SearchControl.ActionButtonMouseDown`|  
+|![Wciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Przycisk Akcja**|Pierwszy plan (Glif)|`SearchControl.ActionButtonMouseDownGlyph`|  
+|![Wciśnięty przycisk akcji wyszukiwania](../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303-116-1_SearchActionButtonPressed")<br /><br /> **Przycisk Akcja**|Obramowanie|`SearchControl.ActionButtonMouseDownBorder`|  
+|![Wciśnięty przycisk upuszczenia wyszukiwania&#45;w dół](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Tło|`SearchControl.MouseDownDropDownButton`|  
+|![Wciśnięty przycisk upuszczenia wyszukiwania&#45;w dół](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`SearchControl.MouseDownDropDownButtonGlyph`|  
+|![Wciśnięty przycisk upuszczenia wyszukiwania&#45;w dół](../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|`SearchControl.MouseDownDropDownButtonBorder`|  
   
  **Wyróżnione (tylko tekst)**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Wyróżnij pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Pole wejściowe tekst wyróżniony**|Tło|`SearchControl.Selection`|  
-|![Wyróżnij pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Pole wejściowe tekst wyróżniony**|Pierwszego planu (tekst)|`SearchControl.FocusedBackground`|  
-|![Wyróżnij pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Pole wejściowe tekst wyróżniony**|Obramowanie|Brak|  
-|![Wyróżnij pole wejściowe wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303 120_SearchInputFieldHighlight")<br /><br /> **Pole wejściowe tekst wyróżniony**|Separator|`SearchControl.FocusedDropDownSeparator`|  
+|![Podświetl pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Pole wprowadzania z wyróżnionym tekstem**|Tło|`SearchControl.Selection`|  
+|![Podświetl pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Pole wprowadzania z wyróżnionym tekstem**|Pierwszy plan (tekst)|`SearchControl.FocusedBackground`|  
+|![Podświetl pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Pole wprowadzania z wyróżnionym tekstem**|Obramowanie|Brak|  
+|![Podświetl pole wprowadzania wyszukiwania](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Pole wprowadzania z wyróżnionym tekstem**|Separator|`SearchControl.FocusedDropDownSeparator`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wejściowe wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Pola wejściowego**|Tło|`SearchControl.Disabled`|  
-|![Pole wejściowe wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Pola wejściowego**|Pierwszego planu (tekst)|`SearchControl.Disabled`|  
-|![Pole wejściowe wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Pola wejściowego**|Obramowanie|`SearchControl.DisabledBorder`|  
-|![Pole wejściowe wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303 121_SearchInputFieldDisabled")<br /><br /> **Pola wejściowego**|Separator|`SearchControl.DropDownSeparator`|  
-|![Wyszukiwanie akcji przycisk wyłączone](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akcja przycisku**|Tło|Brak|  
-|![Wyszukiwanie akcji przycisk wyłączone](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akcja przycisku**|Pierwszego planu (symbol)|`SearchControl.ActionButtonDisabledGlyph`|  
-|![Wyszukiwanie akcji przycisk wyłączone](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303 122_SearchActionButtonDisabled")<br /><br /> **Akcja przycisku**|Obramowanie|Brak|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Pierwszego planu (symbol)|`SearchControl.DisabledDownButtonGlyph`|  
-|![Listy wyszukiwania&#45;naciśnięty przycisk wyłączone](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|Brak|  
+|![Pole wprowadzania wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Pole wejściowe**|Tło|`SearchControl.Disabled`|  
+|![Pole wprowadzania wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Pole wejściowe**|Pierwszy plan (tekst)|`SearchControl.Disabled`|  
+|![Pole wprowadzania wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Pole wejściowe**|Obramowanie|`SearchControl.DisabledBorder`|  
+|![Pole wprowadzania wyszukiwania wyłączone](../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br /><br /> **Pole wejściowe**|Separator|`SearchControl.DropDownSeparator`|  
+|![Przycisk akcji wyszukiwania wyłączony](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Przycisk Akcja**|Tło|Brak|  
+|![Przycisk akcji wyszukiwania wyłączony](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Przycisk Akcja**|Pierwszy plan (Glif)|`SearchControl.ActionButtonDisabledGlyph`|  
+|![Przycisk akcji wyszukiwania wyłączony](../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303-122_SearchActionButtonDisabled")<br /><br /> **Przycisk Akcja**|Obramowanie|Brak|  
+|![Przycisk upuszczenia wyszukiwania&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Tło|Brak|  
+|![Przycisk upuszczenia wyszukiwania&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Pierwszy plan (Glif)|`SearchControl.DisabledDownButtonGlyph`|  
+|![Przycisk upuszczenia wyszukiwania&#45;w dół wyłączony](../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303-123_SearchDropdownButtonDisabled")<br /><br /> **Przycisk listy rozwijanej**|Obramowanie|Brak|  
   
 ##### <a name="search-drop-down-lists"></a>Listy rozwijane wyszukiwania  
- Menu rozwijane pole wyszukiwania ma być nieco bardziej skomplikowane niż inne menu rozwijanych w programie Visual Studio. "Sugerowane wyszukiwania" i sekcje "Opcje wyszukiwania" może występować samodzielnie, lub ze sobą w menu, a każdy z nich jest kolorowe oddzielnie. Wiersz również oddziela te dwie sekcje, gdy pojawiają się ze sobą i obramowanie wokół menu rozwijane całego.  
+ Menu rozwijane pola wyszukiwania ma potencjał, aby być nieco bardziej złożone niż inne menu rozwijane w programie Visual Studio. Sekcje "sugerowane wyszukiwania" i "opcje wyszukiwania" mogą pojawić się samodzielnie lub razem w menu, a każda z nich jest kolorowana oddzielnie. Linia oddziela również te dwie sekcje, gdy pojawiają się razem, a obramowanie otacza całe menu rozwijane.  
   
- ![Listy wyszukiwania&#45;poprawek w dół](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")  
+ ![Wyszukaj&#45;w dół czerwonej linii](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")  
   
-Użyj...  
-- Podczas tworzenia listy rozwijanej wyszukiwania niestandardowego.  
+Używać...  
+- podczas tworzenia niestandardowej listy rozwijanej wyszukiwania.  
 
-- Prawidłowe nazwy tokenu dla składników poprawnej listy.  
+- poprawne nazwy tokenów dla składników listy poprawne.  
 
-Nie używaj...  
-- Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.  
+Nie używaj ...  
+- dla list rozwijanych, które pojawiają się w innych kontekstach.  
 
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Domyślne (nie innych Państw)**  
+  **Domyślnie (bez innych stanów)**  
   
-|Element|Nazwa tokenu: Category.Color|  
+|Element|Nazwa tokenu: Category.color|  
 |-------------|--------------------------------|  
 |Obramowanie|`SearchControl.PopupBorder`|  
 |Separator|`SearchControl.PopupSectionHeaderSeparator`|  
 |W tle|`Environment.DropShadowBackground`|  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Wyszukaj sugerowane](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **Sugerowane wyszukiwania**|Tło|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Wyszukaj sugerowane](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303 125_SearchSuggested")<br /><br /> **Sugerowane wyszukiwania**|Pierwszego planu (tekst)|`SearchControl.PopupItemText`|  
-|![Pole wyboru wyszukiwania](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole)**|Tło|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Tło|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Pole wyboru wyszukiwania](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole)**|Pierwszego planu (pole tekstowe)|`SearchControl.PopupCheckboxText`|  
-|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Pierwszego planu (pole tekstowe)|`SearchControl.PopupCheckboxText`|  
-|![Pole wyboru wyszukiwania](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole)**|Pierwszego planu (tekst łącza)|`SearchControl.PopupButtonText`|  
-|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Pierwszego planu (tekst łącza)|`SearchControl.PopupButtonText`|  
-|![Pole wyboru wyszukiwania](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole)**|Tło nagłówka|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Tło nagłówka|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Pole wyboru wyszukiwania](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole)**|Pierwszego planu (tekst nagłówka)|`SearchControl.PopupSectionHeaderText`|  
-|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303 127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Pierwszego planu (tekst nagłówka)|`SearchControl.PopupSectionHeaderText`|  
+|![Sugerowane wyszukiwanie](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **Sugerowane wyszukiwania**|Tło|`SearchControl.PopupItemsListBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Sugerowane wyszukiwanie](../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303-125_SearchSuggested")<br /><br /> **Sugerowane wyszukiwania**|Pierwszy plan (tekst)|`SearchControl.PopupItemText`|  
+|![Pole wyboru Wyszukaj](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole wyboru)**|Tło|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Tło|`SearchControl.PopupSectionBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pole wyboru Wyszukaj](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole wyboru)**|Pierwszy plan (tekst pola wyboru)|`SearchControl.PopupCheckboxText`|  
+|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Pierwszy plan (tekst pola wyboru)|`SearchControl.PopupCheckboxText`|  
+|![Pole wyboru Wyszukaj](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole wyboru)**|Pierwszy plan (tekst łącza)|`SearchControl.PopupButtonText`|  
+|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Pierwszy plan (tekst łącza)|`SearchControl.PopupButtonText`|  
+|![Pole wyboru Wyszukaj](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole wyboru)**|Tło nagłówka|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Tło nagłówka|`SearchControl.PopupSectionHeaderGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pole wyboru Wyszukaj](../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")<br /><br /> **Opcje wyszukiwania (pole wyboru)**|Pierwszy plan (tekst nagłówka)|`SearchControl.PopupSectionHeaderText`|  
+|![Opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303-127_SearchOptions")<br /><br /> **Opcje wyszukiwania (link)**|Pierwszy plan (tekst nagłówka)|`SearchControl.PopupSectionHeaderText`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Wyszukaj sugerowane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Wyszukaj sugerowane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Pierwszego planu (tekst)|`SearchControl.PopupMouseOverItemText`|  
-|![Wyszukaj sugerowane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303 128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Obramowanie|`SearchControl.PopupControlMouseOverBorder`|  
-|![Pole wyboru wyszukiwania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole)**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Opcje po najechaniu wskaźnikiem wyszukiwania](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Pole wyboru wyszukiwania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole)**|Pierwszego planu (pole tekstowe)|`SearchControl.PopupCheckboxMouseDownText`|  
-|![Opcje po najechaniu wskaźnikiem wyszukiwania](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Pierwszego planu (pole tekstowe)|`SearchControl.PopupCheckboxMouseDownText`|  
-|![Pole wyboru wyszukiwania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole)**|Pierwszego planu (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
-|![Opcje po najechaniu wskaźnikiem wyszukiwania](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Pierwszego planu (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
-|![Pole wyboru wyszukiwania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303 129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole)**|Obramowanie|`SearchControl.PopupControlMouseOverBorder`|  
-|![Opcje po najechaniu wskaźnikiem wyszukiwania](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303 130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Obramowanie|`SearchControl.PopupControlMouseOverBorder`|  
+|![Sugerowane wyszukiwanie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Sugerowane wyszukiwanie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Pierwszy plan (tekst)|`SearchControl.PopupMouseOverItemText`|  
+|![Sugerowane wyszukiwanie po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br /><br /> **Sugerowane wyszukiwania**|Obramowanie|`SearchControl.PopupControlMouseOverBorder`|  
+|![Pole wyboru Wyszukaj po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Opcje wyszukiwania po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Tło|`SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Pole wyboru Wyszukaj po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Pierwszy plan (tekst pola wyboru)|`SearchControl.PopupCheckboxMouseDownText`|  
+|![Opcje wyszukiwania po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Pierwszy plan (tekst pola wyboru)|`SearchControl.PopupCheckboxMouseDownText`|  
+|![Pole wyboru Wyszukaj po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Pierwszy plan (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
+|![Opcje wyszukiwania po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Pierwszy plan (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
+|![Pole wyboru Wyszukaj po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303-129_SearchCheckboxHover")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Obramowanie|`SearchControl.PopupControlMouseOverBorder`|  
+|![Opcje wyszukiwania po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303-130_SearchOptionsHover")<br /><br /> **Opcje wyszukiwania**|Obramowanie|`SearchControl.PopupControlMouseOverBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Wyszukaj sugerowane naciśnięty](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole)**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Opcje naciśnięty wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Wyszukaj sugerowane naciśnięty](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole)**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Opcje naciśnięty wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Wyszukaj sugerowane naciśnięty](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole)**|Pierwszego planu (pole tekstowe)|`SearchControl.PopupCheckboxMouseDownText`|  
-|![Opcje naciśnięty wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Pierwszego planu (pole tekstowe)|`SearchControl.PopupCheckboxMouseDownText`|  
-|![Wyszukaj sugerowane naciśnięty](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole)**|Tło łącza|`SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Opcje naciśnięty wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło łącza|`SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br /><br /> Nie są używane w nowoczesny interfejs użytkownika z motywami, istnieją ograniczniki gradientu i wartości dla tego tła.|  
-|![Wyszukaj sugerowane naciśnięty](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303 131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole)**|Pierwszego planu (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
-|![Opcje naciśnięty wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303 132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Pierwszego planu (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
+|![Sugerowane wyszukiwanie wciśnięte](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Wciśnięte opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Sugerowane wyszukiwanie wciśnięte](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Wciśnięte opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło pola wyboru|`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Sugerowane wyszukiwanie wciśnięte](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Pierwszy plan (tekst pola wyboru)|`SearchControl.PopupCheckboxMouseDownText`|  
+|![Wciśnięte opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Pierwszy plan (tekst pola wyboru)|`SearchControl.PopupCheckboxMouseDownText`|  
+|![Sugerowane wyszukiwanie wciśnięte](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Tło łącza|`SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Wciśnięte opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Tło łącza|`SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br /><br /> Chociaż nie jest używany w nowoczesnym interfejsie użytkownika tematyce, istnieją przystanki gradientu i wartości dla tego tła.|  
+|![Sugerowane wyszukiwanie wciśnięte](../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303-131_SearchSuggestedPressed")<br /><br /> **Sugerowane wyszukiwania (pole wyboru)**|Pierwszy plan (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
+|![Wciśnięte opcje wyszukiwania](../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303-132_SearchOptionsPressed")<br /><br /> **Opcje wyszukiwania**|Pierwszy plan (tekst łącza)|`SearchControl.PopupButtonMouseDownText`|  
   
 #### <a name="hyperlink"></a>Hyperlink  
- Hiperlink jest jeden formant, który nie ma parę tła/na pierwszym planie. We wszystkich przypadkach należy użyć hiperłącze kolor pierwszego planu, który pojawi się prawidłowo na ciemny i symulowanych map bitowych białe tło. Jeśli nie używa tokenu kolor kontrolki hiperlinku, pojawią się domyślny kolor systemu dla "naciśnięty", "który będzie flash czerwony. To sygnał, formant nie używa tokenu kolor odpowiednie środowisko.  
+ Hiperłącze jest jednym formancie, który nie ma pary pierwszego planu/tła. We wszystkich przypadkach należy użyć koloru hiperłącza pierwszego planu, który będzie wyświetlany poprawnie na ciemnym, szarym i białym tle. Jeśli nie używasz tokenu kolorów dla formantu hiperłącza, zobaczysz domyślny kolor systemu dla "wciśnięty", który będzie migać na czerwono. Jest to sygnał, że formant nie używa poprawnego tokenu kolor środowiska.  
   
- ![Hiperłącze poprawek](../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303 133_HyperlinkRedline")  
+ ![Hiperłącze czerwona](../extensibility/ux-guidelines/media/0303-133-hyperlinkredline.png "0303-133_HyperlinkRedline")  
   
- Użyj...  
- Kiedy należy utworzyć niestandardowy hiperlink.  
+ Używać...  
+ gdy trzeba utworzyć niestandardowe hiperłącze.  
   
- Nie używaj...  
- dla wszystkich elementów, które nie są hiperłączem.  
+ Nie używaj ...  
+ dla wszystkiego, co nie jest hiperłączem.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Domyślne hiperłącze](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303 134_Hyperlink")|Pierwszego planu (tekst)|`Environment.PanelHyperlink`|  
+|![Domyślne hiperłącze](../extensibility/ux-guidelines/media/0303-134-hyperlink.png "0303-134_Hyperlink")|Pierwszy plan (tekst)|`Environment.PanelHyperlink`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Hiperłącza po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303 135_HyperlinkHover")|Pierwszego planu (tekst)|`Environment.PanelHyperlinkHover`|  
+|![Hiperłącze po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-135-hyperlinkhover.png "0303-135_HyperlinkHover")|Pierwszy plan (tekst)|`Environment.PanelHyperlinkHover`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Hiperłącze naciśnięty](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303 136_HyperlinkPressed")|Pierwszego planu (tekst)|`Environment.PanelHyperlinkPressed`|  
+|![Wciśnięty hiperłącze](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")|Pierwszy plan (tekst)|`Environment.PanelHyperlinkPressed`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Hiperłącze wyłączone](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303 137_HyperlinkDisabled")|Pierwszego planu (tekst)|`Environment.PanelHyperlinkDisabled`|  
+|![Hiperłącze wyłączone](../extensibility/ux-guidelines/media/0303-137-hyperlinkdisabled.png "0303-137_HyperlinkDisabled")|Pierwszy plan (tekst)|`Environment.PanelHyperlinkDisabled`|  
   
 #### <a name="infobar"></a>Pasek informacyjny  
- Infobars są używane do Podaj więcej informacji na temat danego kontekstu i zawsze pojawiają się w górnej części okna dokumentu lub okna narzędzi.  
+ Paski informacyjne są używane w celu zapewnienia więcej informacji o danym kontekście i zawsze pojawiają się w górnej części okna dokumentu lub okna narzędzia.  
   
- ![Pasek informacyjny poprawek](../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303 138_InfobarRedline")  
+ ![Czerwona linia paska informacyjnego](../extensibility/ux-guidelines/media/0303-138-infobarredline.png "0303-138_InfobarRedline")  
   
- Użyj...  
- Podczas tworzenia niestandardowego infobars.  
+ Używać...  
+ podczas tworzenia niestandardowych pasków informacyjnych.  
   
- Nie używaj...  
+ Nie używaj ...  
  dla elementów interfejsu użytkownika, które nie są podobne do paska informacyjnego.  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Pasek informacyjny**|Tło|`Environment.InfoBackground`|  
-|![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Pasek informacyjny**|Pierwszego planu (tekst)|`Environment.InfoText`|  
-|![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Pasek informacyjny**|Obramowanie|`Environment.ToolWindowBorder`|  
+|![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Pasek informacyjny**|Tło|`Environment.InfoBackground`|  
+|![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Pasek informacyjny**|Pierwszy plan (tekst)|`Environment.InfoText`|  
+|![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Pasek informacyjny**|Obramowanie|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Pasek przewijania  
- Paski przewijania mają różne przez środowisko Visual Studio i nie będą musiały mieć motywów. Jednak można zdecydować, czy chcesz korzystać kolorów używanych na paski przewijania, dzięki czemu interfejs użytkownika zawsze wyświetlana jest zgodny z tej części środowiska Visual Studio.  
+ Paski przewijania są stylizowane przez środowisko programu Visual Studio i nie muszą być tematyce. Jednak można zdecydować, że chcesz wykorzystać kolory używane w paski przewijania, tak aby interfejs użytkownika zawsze pojawia się zgodne z tej części środowiska programu Visual Studio.  
   
- ![Pasek przewijania poprawek](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
+ ![Czerwony pasek przewijania](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
- Użyj...  
- Podczas tworzenia interfejsu użytkownika, który chcesz dopasować paski przewijania w programie Visual Studio.  
+ Używać...  
+ podczas tworzenia interfejsu użytkownika, który chcesz dopasować paski przewijania programu Visual Studio.  
   
- Nie używaj...  
- dla wszystkich elementów, nie chcesz zawsze odpowiadać paska przewijania interfejsu użytkownika.  
+ Nie używaj ...  
+ dla wszystkiego, czego nie chcesz zawsze pasować do interfejsu użytkownika paska przewijania.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pasek przewijania](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **Pasek przewijania**|Pasek przewijania|`Environment.ScrollBarBackground`|  
-|![Pasek przewijania](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303 141_Scrollbar")<br /><br /> **Pasek przewijania**|Pierwszego planu (przycisku przewijania)|`Environment.ScrollBarThumbBackground`|  
-|![Paska strzałki przewijania](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 142_ScrollbarArrow")<br /><br /> **Strzałki przewijania**|Tło|`Environment.ScrollBarArrowBackground`<br /><br /> Ustaw kolor paska przewijania.|  
-|![Paska strzałki przewijania](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303 142_ScrollbarArrow")<br /><br /> **Strzałki przewijania**|Pierwszego planu (symbol)|`Environment.ScrollBarArrowGlyph`|  
+|![Pasek przewijania](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Pasek przewijania](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Scrollbar**|Pierwszy plan (kciuk)|`Environment.ScrollBarThumbBackground`|  
+|![Strzałka paska przewijania](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Strzałka przewijania**|Tło|`Environment.ScrollBarArrowBackground`<br /><br /> Ustaw ten sam kolor co pasek przewijania.|  
+|![Strzałka paska przewijania](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Strzałka przewijania**|Pierwszy plan (Glif)|`Environment.ScrollBarArrowGlyph`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pasek przewijania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **Pasek przewijania**|Pasek przewijania|`Environment.ScrollBarBackground`|  
-|![Pasek przewijania po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303 143_ScrollbarHover")<br /><br /> **Pasek przewijania**|Pierwszego planu (przycisku przewijania)|`Environment.ScrollBarThumbMouseOverBackground`|  
-|![Przewiń w pasku strzałkę po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303 144_ScrollbarArrowHover")<br /><br /> **Strzałki przewijania**|Tło|`Environment.ScrollBarArrowMouseOverBackground`<br /><br /> Ustaw kolor paska przewijania.|  
-|![Przewiń w pasku strzałkę po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303 144_ScrollbarArrowHover")<br /><br /> **Strzałki przewijania**|Pierwszego planu (symbol)|`Environment.ScrollBarArrowGlyphMouseOver`|  
+|![Pasek przewijania po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Pasek przewijania po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303-143_ScrollbarHover")<br /><br /> **Scrollbar**|Pierwszy plan (kciuk)|`Environment.ScrollBarThumbMouseOverBackground`|  
+|![Strzałka paska przewijania po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Strzałka przewijania**|Tło|`Environment.ScrollBarArrowMouseOverBackground`<br /><br /> Ustaw ten sam kolor co pasek przewijania.|  
+|![Strzałka paska przewijania po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-144-scrollbararrowhover.png "0303-144_ScrollbarArrowHover")<br /><br /> **Strzałka przewijania**|Pierwszy plan (Glif)|`Environment.ScrollBarArrowGlyphMouseOver`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Naciśnięto paska przewijania](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **Pasek przewijania**|Pasek przewijania|`Environment.ScrollBarBackground`|  
-|![Naciśnięto paska przewijania](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303 145_ScrollbarPressed")<br /><br /> **Pasek przewijania**|Pierwszego planu (przycisku przewijania)|`Environment.ScrollBarThumbPressedBackground`|  
-|![Paska kliknięciu strzałki przewijania](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br /><br /> **Strzałki przewijania**|Tło|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Ustaw ten sam kolor jak pasek przewijania.|  
-|![Paska kliknięciu strzałki przewijania](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303 146_ScrollbarArrowPressed")<br /><br /> **Strzałki przewijania**|Pierwszego planu (symbol)|`Environment.ScrollBarArrowGlyphPressed`|  
+|![Wciśnięty pasek przewijania](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Wciśnięty pasek przewijania](../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303-145_ScrollbarPressed")<br /><br /> **Scrollbar**|Pierwszy plan (kciuk)|`Environment.ScrollBarThumbPressedBackground`|  
+|![Wciśnięte strzałki paska przewijania](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Strzałka przewijania**|Tło|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Ustaw ten sam kolor co pasek przewijania.|  
+|![Wciśnięte strzałki paska przewijania](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Strzałka przewijania**|Pierwszy plan (Glif)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="BKMK_TreeView"></a> Widok drzewa  
- Kilkoma oknami narzędzi, w tym Eksploratora rozwiązań, Eksploratora serwera i widoku klasy implementuje hierarchiczne schematu organizacyjnego którego kolory są kontrolowane przez nazw kolorów w kategorii TreeView. Wszystkie elementy w widoku drzewa mają kolor tła i tekstu. Elementy, które zostały zagnieżdżone elementy podrzędne mają także symbole, które wskazują, czy element jest rozwijane czy zwijane.  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Widok drzewa  
+ Kilka okien narzędzi, w tym Eksplorator rozwiązań, Eksplorator serwerów i Widok klasy, implementuje hierarchiczny schemat organizacyjny, którego kolory są kontrolowane przez nazwy kolorów w kategorii TreeView. Wszystkie elementy w widoku drzewa mają kolory tła i tekstu. Elementy, które mają zagnieżdżone elementy podrzędne mają również glify, które wskazują, czy element jest rozwinięty lub zwinięty.  
   
- ![Widok drzewa poprawek](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")  
+ ![Widok drzewa czerwony](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
   
- Użyj...  
- wszędzie, musisz zaimplementować hierarchiczny widok organizacji.  
+ Używać...  
+ w dowolnym miejscu, w dowolnym miejscu, w dowolnym miejscu, aby zaimplementować hierarchiczny widok organizacyjny.  
   
-Nie używaj...  
-- dla wszystkich elementów, który nie jest podobny do widoku drzewa.  
+Nie używaj ...  
+- dla wszystkiego, co nie jest podobne do widoku drzewa.  
 
-- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu innej niż określona.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Tło|`TreeView.Background`|  
-|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Pierwszego planu (tekst)|`TreeView.Background`|  
-|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Pierwszego planu (symbol)|`TreeView.Glyph`|  
-|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303 148_TreeView")|Obramowanie|Brak|  
+|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Tło|`TreeView.Background`|  
+|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Pierwszy plan (tekst)|`TreeView.Background`|  
+|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Pierwszy plan (Glif)|`TreeView.Glyph`|  
+|![Widok drzewa](../extensibility/ux-guidelines/media/0303-148-treeview.png "0303-148_TreeView")|Obramowanie|Brak|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Widoku drzewa w przesunięciu](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Tło|`TreeView.Background`|  
-|![Widoku drzewa w przesunięciu](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Pierwszego planu (tekst)|`TreeView.Background`|  
-|![Widoku drzewa w przesunięciu](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Pierwszego planu (symbol)|`TreeView.GlyphMouseOver`|  
-|![Widoku drzewa w przesunięciu](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303 149_TreeViewHover")|Obramowanie|Brak|  
+|![Widok drzewa po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Tło|`TreeView.Background`|  
+|![Widok drzewa po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Pierwszy plan (tekst)|`TreeView.Background`|  
+|![Widok drzewa po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Pierwszy plan (Glif)|`TreeView.GlyphMouseOver`|  
+|![Widok drzewa po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303-149_TreeViewHover")|Obramowanie|Brak|  
   
- **Przeciągnij kursor nad**  
+ **Przeciągnij nad**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Dragover widok drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Tło|`TreeView.DragOverItem`|  
-|![Dragover widok drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Pierwszego planu (tekst)|`TreeView.DragOverItem`|  
-|![Dragover widok drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Pierwszego planu (symbol)|`TreeView.DragOverItemGlyph`|  
-|![Dragover widok drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303 150_TreeViewDragOver")|Obramowanie|Brak|  
+|![Przeciąganie widoku drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Tło|`TreeView.DragOverItem`|  
+|![Przeciąganie widoku drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Pierwszy plan (tekst)|`TreeView.DragOverItem`|  
+|![Przeciąganie widoku drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Pierwszy plan (Glif)|`TreeView.DragOverItemGlyph`|  
+|![Przeciąganie widoku drzewa](../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303-150_TreeViewDragOver")|Obramowanie|Brak|  
   
- **Wybrane**  
+ **Wybrano**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Fokus widoku drzewa](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Fokus**|Tło|`TreeView.SelectedItemActive`|  
-|![Fokus widoku drzewa](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Fokus**|Pierwszego planu (tekst)|`TreeView.SelectedItemActive`|  
-|![Fokus widoku drzewa](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`TreeView.SelectedItemActiveGlyph`|  
-|![Fokus widoku drzewa](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")<br /><br /> **Fokus**|Obramowanie|`TreeView.FocusVisualBorder`|  
-|![Po przeniesieniu fokusu w widoku drzewa](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Tło|`TreeView.SelectedItemInactive`|  
-|![Po przeniesieniu fokusu w widoku drzewa](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (tekst)|`TreeView.SelectedItemInactive`|  
-|![Po przeniesieniu fokusu w widoku drzewa](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`TreeView.SelectedItemInactiveGlyph`|  
-|![Po przeniesieniu fokusu w widoku drzewa](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303 152_TreeViewUnfocused")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|Brak|  
+|![Widok drzewa skoncentrowany](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Ustawiono fokus**|Tło|`TreeView.SelectedItemActive`|  
+|![Widok drzewa skoncentrowany](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Ustawiono fokus**|Pierwszy plan (tekst)|`TreeView.SelectedItemActive`|  
+|![Widok drzewa skoncentrowany](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Ustawiono fokus**|Pierwszy plan (Glif)|`TreeView.SelectedItemActiveGlyph`|  
+|![Widok drzewa skoncentrowany](../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303-151_TreeViewFocused")<br /><br /> **Ustawiono fokus**|Obramowanie|`TreeView.FocusVisualBorder`|  
+|![Widok drzewa nieskoncentrowany](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Unfocused**|Tło|`TreeView.SelectedItemInactive`|  
+|![Widok drzewa nieskoncentrowany](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Unfocused**|Pierwszy plan (tekst)|`TreeView.SelectedItemInactive`|  
+|![Widok drzewa nieskoncentrowany](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Unfocused**|Pierwszy plan (Glif)|`TreeView.SelectedItemInactiveGlyph`|  
+|![Widok drzewa nieskoncentrowany](../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303-152_TreeViewUnfocused")<br /><br /> **Unfocused**|Obramowanie|Brak|  
   
- **Umieść kursor nad wybrane**  
+ **Umieść wskaźnik myszy na zaznaczonym**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Koncentruje się na przesunięciu widoku drzewa](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Fokus**|Tło|`TreeView.SelectedItemActive`|  
-|![Koncentruje się na przesunięciu widoku drzewa](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Fokus**|Pierwszego planu (tekst)|`TreeView.SelectedItemActive`|  
-|![Koncentruje się na przesunięciu widoku drzewa](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Fokus**|Pierwszego planu (symbol)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Koncentruje się na przesunięciu widoku drzewa](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")<br /><br /> **Fokus**|Obramowanie|Brak`TreeView.FocusVisualBorder`|  
-|![Widoku drzewa po przeniesieniu fokusu w przesunięciu](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Tło|`TreeView.SelectedItemInactive`|  
-|![Widoku drzewa po przeniesieniu fokusu w przesunięciu](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (tekst)|`TreeView.SelectedItemInactive`|  
-|![Widoku drzewa po przeniesieniu fokusu w przesunięciu](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Pierwszego planu (symbol)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Widoku drzewa po przeniesieniu fokusu w przesunięciu](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303 154_TreeViewUnfocusedHover")<br /><br /> **Po przeniesieniu fokusu**|Obramowanie|Brak|  
+|![Widok drzewa skupiony na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Ustawiono fokus**|Tło|`TreeView.SelectedItemActive`|  
+|![Widok drzewa skupiony na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Ustawiono fokus**|Pierwszy plan (tekst)|`TreeView.SelectedItemActive`|  
+|![Widok drzewa skupiony na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Ustawiono fokus**|Pierwszy plan (Glif)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
+|![Widok drzewa skupiony na najechaniu kursorem](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Ustawiono fokus**|Obramowanie|Brak`TreeView.FocusVisualBorder`|  
+|![Widok drzewa nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Unfocused**|Tło|`TreeView.SelectedItemInactive`|  
+|![Widok drzewa nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Unfocused**|Pierwszy plan (tekst)|`TreeView.SelectedItemInactive`|  
+|![Widok drzewa nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Unfocused**|Pierwszy plan (Glif)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
+|![Widok drzewa nieskoncentrowany po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Unfocused**|Obramowanie|Brak|  
   
 #### <a name="button-controls"></a>formanty przycisków  
- ![Kontrolka przycisku poprawek](../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")  
+ ![Czerwona linia sterowania przyciskami](../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303-155_ButtonControlRedline")  
   
- Użyj...  
- w przypadku przycisków w źródle dokumentu, którą chcesz zintegrować z kompozycji programu Visual Studio (światło, ciemny, niebieski lub kompozycję Duży kontrast systemu).  
+ Używać...  
+ dla przycisków w dokumencie dobrze, że chcesz zintegrować z motywami programu Visual Studio (Jasny, Ciemny, Niebieski lub system wysoki kontrast motywu).  
   
- Nie używaj...  
- dla przycisków, które będą wyświetlane na tle niestandardowego, który nie jest częścią motywu programu Visual Studio.  
+ Nie używaj ...  
+ dla przycisków, które będą wyświetlane na niestandardowym tle, który nie jest częścią motywu programu Visual Studio.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|Przycisk|`CommonControls.Button`|  
-|![Przycisk](../extensibility/ux-guidelines/media/0303-156-button.png "0303 156_Button")|Obramowanie przycisku|`CommonControls.ButtonBorder`|  
+|![Przycisk](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Button|`CommonControls.Button`|  
+|![Przycisk](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Obramowanie przycisków|`CommonControls.ButtonBorder`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk wyłączone](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|Przycisk|`CommonControls.ButtonDisabled`|  
-|![Przycisk wyłączone](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303 157_ButtonDisabled")|Obramowanie przycisku|`CommonControls.ButtonBorderDisabled`|  
+|![Przycisk wyłączony](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Button|`CommonControls.ButtonDisabled`|  
+|![Przycisk wyłączony](../extensibility/ux-guidelines/media/0303-157-buttondisabled.png "0303-157_ButtonDisabled")|Obramowanie przycisków|`CommonControls.ButtonBorderDisabled`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Przycisk po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|Przycisk|`CommonControls.ButtonHover`|  
-|![Przycisk po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303 158_ButtonHover")|Obramowanie przycisku|`CommonControls.ButtonBorderHover`|  
+|![Przycisk po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Button|`CommonControls.ButtonHover`|  
+|![Przycisk po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-158-buttonhover.png "0303-158_ButtonHover")|Obramowanie przycisków|`CommonControls.ButtonBorderHover`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|Przycisk|`CommonControls.ButtonPressed`|  
-|![Wciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303 159_ButtonPressed")|Obramowanie przycisku|`CommonControls.ButtonBorderPressed`|  
+|![Naciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Button|`CommonControls.ButtonPressed`|  
+|![Naciśnięcie przycisku](../extensibility/ux-guidelines/media/0303-159-buttonpressed.png "0303-159_ButtonPressed")|Obramowanie przycisków|`CommonControls.ButtonBorderPressed`|  
   
- **Fokus**  
+ **Ustawiono fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Fokus przycisku](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|Przycisk|`CommonControls.ButtonFocused`|  
-|![Fokus przycisku](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303 160_ButtonFocused")|Obramowanie przycisku|`CommonControls.ButtonBorderFocused`|  
+|![Nacisk na przycisk](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Button|`CommonControls.ButtonFocused`|  
+|![Nacisk na przycisk](../extensibility/ux-guidelines/media/0303-160-buttonfocused.png "0303-160_ButtonFocused")|Obramowanie przycisków|`CommonControls.ButtonBorderFocused`|  
   
-#### <a name="check-box-controls"></a>Formanty pól wyboru  
- ![Pole wyboru poprawek](../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303 161_CheckboxRedline")  
+#### <a name="check-box-controls"></a>Kontrolki pola wyboru  
+ ![Pole wyboru redline](../extensibility/ux-guidelines/media/0303-161-checkboxredline.png "0303-161_CheckboxRedline")  
   
- Użyj...  
- Formanty pól wyboru znajdujących się w dokumencie dobrze.  
+ Używać...  
+ dla formantów pola wyboru zawartych w dokumencie dobrze.  
   
- Nie używaj...  
- dla dowolnego interfejsu użytkownika, który nie jest kontrolkę pola wyboru.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie jest formantem pola wyboru.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Tło|`CommonControls.CheckBoxBackground`|  
-|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Obramowanie|`CommonControls.CheckBoxBorder`|  
-|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Tekst|`CommonControls.CheckBoxText`|  
-|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303 162_Checkbox")|Symbol|`CommonControls.CheckBoxGlyph`|  
+|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Tło|`CommonControls.CheckBoxBackground`|  
+|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Obramowanie|`CommonControls.CheckBoxBorder`|  
+|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Tekst|`CommonControls.CheckBoxText`|  
+|![Pole wyboru](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Glifów|`CommonControls.CheckBoxGlyph`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Tło|`CommonControls.CheckBoxBackgroundDisabled`|  
-|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Obramowanie|`CommonControls.CheckBoxBorderDisabled`|  
-|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Tekst|`CommonControls.CheckBoxTextDisabled`|  
-|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303 163_CheckboxDisabled")|Symbol|`CommonControls.CheckBoxGlyphDisabled`|  
+|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Tło|`CommonControls.CheckBoxBackgroundDisabled`|  
+|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Obramowanie|`CommonControls.CheckBoxBorderDisabled`|  
+|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Tekst|`CommonControls.CheckBoxTextDisabled`|  
+|![Pole wyboru wyłączone](../extensibility/ux-guidelines/media/0303-163-checkboxdisabled.png "0303-163_CheckboxDisabled")|Glifów|`CommonControls.CheckBoxGlyphDisabled`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Tło|`CommonControls.CheckBoxBackgroundHover`|  
-|![Pole wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Obramowanie|`CommonControls.CheckBoxBorderHover`|  
-|![Pole wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Tekst|`CommonControls.CheckBoxTextHover`|  
-|![Pole wyboru po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303 164_CheckboxHover")|Symbol|`CommonControls.CheckBoxGlyphHover`|  
+|![Pole wyboru po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Tło|`CommonControls.CheckBoxBackgroundHover`|  
+|![Pole wyboru po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Obramowanie|`CommonControls.CheckBoxBorderHover`|  
+|![Pole wyboru po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Tekst|`CommonControls.CheckBoxTextHover`|  
+|![Pole wyboru po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-164-checkboxhover.png "0303-164_CheckboxHover")|Glifów|`CommonControls.CheckBoxGlyphHover`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Tło|`CommonControls.CheckBoxBackgroundPressed`|  
-|![Pole wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Obramowanie|`CommonControls.CheckBoxBorderPressed`|  
-|![Pole wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Tekst|`CommonControls.CheckBoxTextPressed`|  
-|![Pole wyboru naciśnięty](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303 165_CheckboxPressed")|Symbol|`CommonControls.CheckBoxGlyphPressed`|  
+|![Wciśnięte pole wyboru](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Tło|`CommonControls.CheckBoxBackgroundPressed`|  
+|![Wciśnięte pole wyboru](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Obramowanie|`CommonControls.CheckBoxBorderPressed`|  
+|![Wciśnięte pole wyboru](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Tekst|`CommonControls.CheckBoxTextPressed`|  
+|![Wciśnięte pole wyboru](../extensibility/ux-guidelines/media/0303-165-checkboxpressed.png "0303-165_CheckboxPressed")|Glifów|`CommonControls.CheckBoxGlyphPressed`|  
   
- **Fokus**  
+ **Ustawiono fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Pole wyboru, które skupia się](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Tło|`CommonControls.CheckBoxBackgroundFocused`|  
-|![Pole wyboru, które skupia się](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Obramowanie|`CommonControls.CheckBoxBorderFocused`|  
-|![Pole wyboru, które skupia się](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Tekst|`CommonControls.CheckBoxTextFocused`|  
-|![Pole wyboru, które skupia się](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303 166_CheckboxFocused")|Symbol|`CommonControls.CheckBoxGlyphFocused`|  
+|![Pole wyboru z fokusem](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Tło|`CommonControls.CheckBoxBackgroundFocused`|  
+|![Pole wyboru z fokusem](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Obramowanie|`CommonControls.CheckBoxBorderFocused`|  
+|![Pole wyboru z fokusem](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Tekst|`CommonControls.CheckBoxTextFocused`|  
+|![Pole wyboru z fokusem](../extensibility/ux-guidelines/media/0303-166-checkboxfocused.png "0303-166_CheckboxFocused")|Glifów|`CommonControls.CheckBoxGlyphFocused`|  
   
-#### <a name="drop-boxcombo-box-controls"></a>Upuść formantów pola kombi/pola  
- ![Upuść&#45;dół&#47;poprawek pola kombi](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")  
+#### <a name="drop-boxcombo-box-controls"></a>Kontrolki skrzynki/pola kombi  
+ ![Upuść&#45;w dół&#47;pole kombi redline](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")  
   
-Użyj...  
-listy rozwijane i pole kombi pola, które są również częścią dokumentu.  
+Używać...  
+dla rozwijanych i pól kombi, które są częścią dokumentu dobrze.  
 
-Nie używaj...  
-- dla dowolnego interfejsu użytkownika, który nie jest listy rozwijanej lub pola kombi.  
+Nie używaj ...  
+- dla dowolnego interfejsu użytkownika, który nie jest polem rozwijanym ani kombi.  
 
-- Aby uzyskać [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown) lub [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox) na pasku poleceń.  
+- dla pola [rozwijanego](../misc/shared-colors.md#BKMK_CommandDropDown) lub [kombi](../misc/shared-colors.md#BKMK_CommandComboBox) na pasku poleceń.  
   
-  **Default**  
+  **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Tło|`CommonControls.ComboBoxBackground`|  
-|![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Obramowanie|`CommonControls.ComboBoxBorder`|  
-|![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Tekst|`CommonControls.ComboBoxText`|  
-|![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Separator|`CommonControls.ComboBoxSeparator`|  
-|![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Symbol|`CommonControls.ComboBoxGlyph`|  
-|![Upuść&#45;dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303 168_DropDownComboBox")|Tło glifów|`CommonControls.ComboBoxGlyphBackground`|  
+|![Upuść&#45;w dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Tło|`CommonControls.ComboBoxBackground`|  
+|![Upuść&#45;w dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Obramowanie|`CommonControls.ComboBoxBorder`|  
+|![Upuść&#45;w dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Tekst|`CommonControls.ComboBoxText`|  
+|![Upuść&#45;w dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Separator|`CommonControls.ComboBoxSeparator`|  
+|![Upuść&#45;w dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Glifów|`CommonControls.ComboBoxGlyph`|  
+|![Upuść&#45;w dół&#47;pola kombi](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Tło glifów|`CommonControls.ComboBoxGlyphBackground`|  
   
  **Wyłączone**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Tło|`CommonControls.ComboBoxBackgroundDisabled`|  
-|![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Obramowanie|`CommonControls.ComboBoxBorderDisabled`|  
-|![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Tekst|`CommonControls.ComboBoxTextDisabled`|  
-|![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Separator|`CommonControls.ComboBoxSeparatorDisabled`|  
-|![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Symbol|`CommonControls.ComboBoxGlyphDisabled`|  
-|![Upuść&#45;dół&#47;pola kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303 169_DropDownComboBoxDisabled")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
+|![Upuść&#45;w dół&#47;pole kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Tło|`CommonControls.ComboBoxBackgroundDisabled`|  
+|![Upuść&#45;w dół&#47;pole kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Obramowanie|`CommonControls.ComboBoxBorderDisabled`|  
+|![Upuść&#45;w dół&#47;pole kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Tekst|`CommonControls.ComboBoxTextDisabled`|  
+|![Upuść&#45;w dół&#47;pole kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Separator|`CommonControls.ComboBoxSeparatorDisabled`|  
+|![Upuść&#45;w dół&#47;pole kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Glifów|`CommonControls.ComboBoxGlyphDisabled`|  
+|![Upuść&#45;w dół&#47;pole kombi wyłączone](../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundDisabled`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Tło|`CommonControls.ComboBoxBackgroundHover`|  
-|![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Obramowanie|`CommonControls.ComboBoxBorderHover`|  
-|![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Tekst|`CommonControls.ComboBoxTextHover`|  
-|![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Separator|`CommonControls.ComboBoxSeparatorHover`|  
-|![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Symbol|`CommonControls.ComboBoxGlyphHover`|  
-|![Upuść&#45;dół&#47;pola kombi po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303 170_DropDownComboBoxHover")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundHover`|  
+|![Upuść&#45;w dół&#47;pole kombi po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Tło|`CommonControls.ComboBoxBackgroundHover`|  
+|![Upuść&#45;w dół&#47;pole kombi po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Obramowanie|`CommonControls.ComboBoxBorderHover`|  
+|![Upuść&#45;w dół&#47;pole kombi po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Tekst|`CommonControls.ComboBoxTextHover`|  
+|![Upuść&#45;w dół&#47;pole kombi po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Separator|`CommonControls.ComboBoxSeparatorHover`|  
+|![Upuść&#45;w dół&#47;pole kombi po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Glifów|`CommonControls.ComboBoxGlyphHover`|  
+|![Upuść&#45;w dół&#47;pole kombi po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundHover`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Tło|`CommonControls.ComboBoxBackgroundPressed`|  
-|![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Obramowanie|`CommonControls.ComboBoxBorderPressed`|  
-|![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Tekst|`CommonControls.ComboBoxTextPressed`|  
-|![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Separator|`CommonControls.ComboBoxSeparatorPressed`|  
-|![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Symbol|`CommonControls.ComboBoxGlyphPressed`|  
-|![Upuść&#45;dół&#47;pola kombi naciśnięty](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
+|![Upuść&#45;w dół&#47;wciśnięty pole kombi](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Tło|`CommonControls.ComboBoxBackgroundPressed`|  
+|![Upuść&#45;w dół&#47;wciśnięty pole kombi](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Obramowanie|`CommonControls.ComboBoxBorderPressed`|  
+|![Upuść&#45;w dół&#47;wciśnięty pole kombi](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Tekst|`CommonControls.ComboBoxTextPressed`|  
+|![Upuść&#45;w dół&#47;wciśnięty pole kombi](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Separator|`CommonControls.ComboBoxSeparatorPressed`|  
+|![Upuść&#45;w dół&#47;wciśnięty pole kombi](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Glifów|`CommonControls.ComboBoxGlyphPressed`|  
+|![Upuść&#45;w dół&#47;wciśnięty pole kombi](../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundPressed`|  
   
- **Fokus**  
+ **Ustawiono fokus**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Tło|`CommonControls.ComboBoxBackgroundFocused`|  
-|![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Obramowanie|`CommonControls.ComboBoxBorderFocused`|  
-|![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Tekst|`CommonControls.ComboBoxTextFocused`|  
-|![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Separator|`CommonControls.ComboBoxSeparatorFocused`|  
-|![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Symbol|`CommonControls.ComboBoxGlyphFocused`|  
-|![Upuść&#45;dół&#47;pola kombi, które skupia się](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
+|![Upuść&#45;w dół&#47;pole kombi koncentruje](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Tło|`CommonControls.ComboBoxBackgroundFocused`|  
+|![Upuść&#45;w dół&#47;pole kombi koncentruje](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Obramowanie|`CommonControls.ComboBoxBorderFocused`|  
+|![Upuść&#45;w dół&#47;pole kombi koncentruje](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Tekst|`CommonControls.ComboBoxTextFocused`|  
+|![Upuść&#45;w dół&#47;pole kombi koncentruje](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Separator|`CommonControls.ComboBoxSeparatorFocused`|  
+|![Upuść&#45;w dół&#47;pole kombi koncentruje](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Glifów|`CommonControls.ComboBoxGlyphFocused`|  
+|![Upuść&#45;w dół&#47;pole kombi koncentruje](../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")|Tło glifów|`CommonControls.ComboBoxGlyphBackgroundFocused`|  
   
- **Wybór danych wejściowych tekstu**  
+ **Wybór wprowadzania tekstu**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;wprowadź tekst pola kombi](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")|Wyróżnij|`CommonControls.ComboBoxTextInputSelection`|  
+|![Wprowadzanie tekstu pola kombi&#47;&#45;w dół](../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")|Wyróżnij|`CommonControls.ComboBoxTextInputSelection`|  
   
- **Naciśnięto — widok elementu listy**  
+ **Naciśnięty — widok elementu listy**  
   
 |Składnik|Element|Nazwa tokenu: Color.category|  
 |---------------|-------------|--------------------------------|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListBackground`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListBackgroundHover`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListItemBackgroundPressed`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListItemBackgroundFocused`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorder`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorderHover`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorderPressed`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorderFocused`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemText`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemTextHover`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemTextPressed`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemTextFocused`|  
-|![Upuść&#45;dół&#47;widoku listy pole kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303 174_DropDownComboBoxListView")|Tło w tle|`CommonControls.ComboBoxListBackgroundShadow`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListBackground`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListBackgroundHover`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListItemBackgroundPressed`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tło|`CommonControls.ComboBoxListItemBackgroundFocused`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorder`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorderHover`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorderPressed`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Obramowanie|`CommonControls.ComboBoxListBorderFocused`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemText`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemTextHover`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemTextPressed`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Tekst elementu|`CommonControls.ComboBoxListItemTextFocused`|  
+|![Upuść&#45;w dół&#47;widok listy pól kombi](../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303-174_DropDownComboBoxListView")|Cień tła|`CommonControls.ComboBoxListBackgroundShadow`|  
   
-#### <a name="tabular-data-grid-controls"></a>Formanty danych tabelarycznych (siatki)  
- Formanty danych tabelarycznych, znany także jako formantach siatki są wspólnych formantów dla programu Visual Studio, który może służyć do prezentowania dużych ilości danych w wielu kolumnach. Formanty standardowe dane tabelaryczne znajdują się w wielu miejscach w programie Visual Studio: Lista błędów okna narzędzia, raporty funkcji IntelliTrace i widok sterty w pamięci, między innymi. Zawsze używaj kontrolek standardowych danych tabelarycznych, pod warunkiem. W sporadycznych przypadkach możesz utracić dostęp do formantów standardowych danych tabelarycznych. W takich sytuacjach należy stosować następujących nazw tokenu, aby upewnić się, że Twój interfejs użytkownika jest zgodne z innymi formantami danych tabelarycznych w programie Visual Studio.  
+#### <a name="tabular-data-grid-controls"></a>Kontrolki danych tabelaryczne (siatki)  
+ Kontrolki danych tabelaryczne, znane również jako formanty siatki, są typowymi formantami programu Visual Studio, które mogą być używane do prezentowania dużych ilości danych w wielu kolumnach. Standardowe kontrole danych tabelaryczne można znaleźć w wielu miejscach w programie Visual Studio: okno narzędzia lista błędów, raporty IntelliTrace i widok sterty pamięci, między innymi. Zawsze używaj standardowych kontroli danych tabelaryczne. W niektórych rzadkich przypadkach może nie mieć dostępu do standardowych kontroli danych tabelaryczne. W takich sytuacjach należy użyć następujących nazw tokenów, aby upewnić się, że interfejs użytkownika jest zgodny z innymi kontrolkami danych tabelaryczne w programie Visual Studio.  
   
- ![Dane tabelaryczne &#40;formant siatki&#41; poprawek](../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303 197_TabularDataGridControlRedline")  
+ ![Tabelaryczne dane &#40;sterowanie siatką&#41; czerwoną](../extensibility/ux-guidelines/media/0303-197-tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")  
   
- Użyj...  
- Aby uzyskać tabelaryczny lub kontrolki siatki.  
+ Używać...  
+ dla kontrolek tabelaryczne lub siatki.  
   
- Nie używaj...  
- dla wszelkich elementów interfejsu użytkownika, który nie jest formantem tabelarycznych lub siatkę.  
+ Nie używaj ...  
+ dla dowolnego interfejsu użytkownika, który nie jest formantem tabelarycznym ani siatki.  
   
 ##### <a name="column-headers"></a>Nagłówki kolumn  
- Nagłówki kolumn składają się z tło, obramowanie, tekst tytułu i opcjonalnie symbol zwykle używany podczas siatki są posortowane według tej kolumny.  
+ Nagłówki kolumn składają się z tła, obramowania, tekstu tytułu i opcjonalnego glifów zwykle używanych, gdy siatka jest sortowana według tej kolumny.  
   
-|Stan|Element|Nazwa tokenu: Category.Color|  
+|Stan|Element|Nazwa tokenu: Category.color|  
 |-----------|-------------|--------------------------------|  
-|Domyślny|Tło|`Header.Default`|  
-|Domyślny|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|Domyślny|Pierwszego planu (symbol)|`Header.Glyph`|  
-|Domyślny|Obramowanie|`Header.SeparatorLine`|  
-|Po wskazaniu wskaźnikiem|Tło|`Header.MouseOver`|  
-|Po wskazaniu wskaźnikiem|Pierwszego planu (tekst)|`Environment.CommandBarTextHover`|  
-|Po wskazaniu wskaźnikiem|Pierwszego planu (symbol)|`Header.MouseOverGlyph`|  
-|Po wskazaniu wskaźnikiem|Obramowanie|`Header.SeparatorLine`|  
-|Naciśnięto|Tło|`CommonControls.CheckBoxBackgroundPressed`|  
-|Naciśnięto|Pierwszego planu (tekst)|`CommonControls.CheckBoxBorderPressed`|  
-|Naciśnięto|Pierwszego planu (symbol)|`CommonControls.CheckBoxTextPressed`|  
-|Naciśnięto|Obramowanie|`CommonControls.CheckBoxGlyphPressed`|  
+|Domyślne|Tło|`Header.Default`|  
+|Domyślne|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|Domyślne|Pierwszy plan (Glif)|`Header.Glyph`|  
+|Domyślne|Obramowanie|`Header.SeparatorLine`|  
+|Aktywowane|Tło|`Header.MouseOver`|  
+|Aktywowane|Pierwszy plan (tekst)|`Environment.CommandBarTextHover`|  
+|Aktywowane|Pierwszy plan (Glif)|`Header.MouseOverGlyph`|  
+|Aktywowane|Obramowanie|`Header.SeparatorLine`|  
+|Naciśnięte|Tło|`CommonControls.CheckBoxBackgroundPressed`|  
+|Naciśnięte|Pierwszy plan (tekst)|`CommonControls.CheckBoxBorderPressed`|  
+|Naciśnięte|Pierwszy plan (Glif)|`CommonControls.CheckBoxTextPressed`|  
+|Naciśnięte|Obramowanie|`CommonControls.CheckBoxGlyphPressed`|  
   
 ##### <a name="list-view-items"></a>Elementy widoku listy  
- Elementy widoku listy składają się z tła i jego zawartość. Zawartość może być tekst i/lub ikonę.  
+ Elementy widoku listy składają się z tła i zawartości. Zawartość może być tekstem, ikoną lub obiema.  
   
-|Stan|Element|Nazwa tokenu: Category.Color|  
+|Stan|Element|Nazwa tokenu: Category.color|  
 |-----------|-------------|--------------------------------|  
-|Domyślny|Tło|Przezroczyste|  
-|Domyślny|Pierwszego planu (tekst)|`Environment.CommandBarTextActive`|  
-|Domyślny|Obramowanie|Brak|  
-|Zaznaczone (aktywny)|Tło|`TreeView.SelectedItemActive`|  
-|Zaznaczone (aktywny)|Pierwszego planu (tekst)|`TreeView.SelectedItemActiveText`|  
-|Zaznaczone (aktywny)|Obramowanie|Brak|  
-|Zaznaczone (nieaktywny)|Tło|`TreeView.SelectedItemInactive`|  
-|Zaznaczone (nieaktywny)|Pierwszego planu (tekst)|`TreeView.SelectedItemInactiveText`|  
-|Zaznaczone (nieaktywny)|Obramowanie|Brak|  
+|Domyślne|Tło|Przezroczyste|  
+|Domyślne|Pierwszy plan (tekst)|`Environment.CommandBarTextActive`|  
+|Domyślne|Obramowanie|Brak|  
+|Zaznaczone (aktywne)|Tło|`TreeView.SelectedItemActive`|  
+|Zaznaczone (aktywne)|Pierwszy plan (tekst)|`TreeView.SelectedItemActiveText`|  
+|Zaznaczone (aktywne)|Obramowanie|Brak|  
+|Zaznaczone (nieaktywne)|Tło|`TreeView.SelectedItemInactive`|  
+|Zaznaczone (nieaktywne)|Pierwszy plan (tekst)|`TreeView.SelectedItemInactiveText`|  
+|Zaznaczone (nieaktywne)|Obramowanie|Brak|  
   
 ### <a name="manifest-designer"></a>Manifest Designer  
- Manifest Designer został zaprojektowany jako sposób, aby ułatwić edytowanie pliku manifestu w projektach systemu Windows 8 i Windows Phone 8. Gdy nie ma udostępnionego framework dostępne do użycia, może być odpowiednia dla Ciebie dopasować układ i kolory kart orientacji/nawigacji i ogólną strukturę. Aby uzyskać więcej informacji na temat szczegółów układ zobacz [układu dla programu Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md).  
+ Projektant manifestu został zaprojektowany jako sposób na ułatwienie edytowania pliku manifestu w projektach systemu Windows 8 i Windows Phone 8. Chociaż nie ma żadnej udostępnionej struktury dostępnej do użycia, może być odpowiedni dla ciebie, aby dopasować układ projektu i kolory kart orientacji/nawigacji i ogólnej struktury. Aby uzyskać więcej informacji na temat szczegółów układu, zobacz [Układ programu Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md).  
   
- ![Projektant manifestu poprawek](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")  
+ ![Czerwona linia projektanta manifestu](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")  
   
-Użyj...  
-- dla projektantów, które są podobne do projektanta manifestu.  
+Używać...  
+- dla projektantów, które są podobne do Projektanta manifestu.  
 
-- zamiast przy użyciu karty wspólne kontroluje również w górnej części edytora w obrębie dokumentu.  
+- zamiast używania wspólnych kontrolek kart w górnej części edytora w dokumencie.  
 
-Nie używaj...  
-- Jeśli masz więcej niż sześć kart.  
+Nie używaj ...  
+- jeśli masz więcej niż sześć kart.  
 
-- dla wszelkich elementów interfejsu użytkownika, który nie ma struktury, takich jak projektant manifestów.  
+- dla dowolnego interfejsu użytkownika, który nie jest skonstruowany jak Projektant manifestu.  
   
-|Stan|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Stan|Składnik|Element|Nazwa tokenu: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
-|Domyślne (wybrane)|Tab|Tło|`ManifestDesigner.TabActive`|  
-|Domyślne (wybrane)|Tab|Obramowanie|Brak|  
-|Domyślne (wybrane)|Okienko opisu|Tło|`ManifestDesigner.DescriptionPane`|  
-|Domyślne (wybrane)|Strona zawartości|Tło|`ManifestDesigner.Background`|  
-|Domyślne (wybrane)|Strona zawartości|Tekst pomocy w oknie dialogowym|`ManifestDesigner.WatermarkText`<br /><br /> Ta nazwa tokenu jest niezgodna z jego funkcji.|  
-|Inne niż wybrane|Tab|Tło|`ManifestDesigner.Tab.Inactive`|  
-|Po wskazaniu wskaźnikiem|Tab|Tło|`ManifestDesigner.Tab.Mouseover`|  
+|Domyślnie (zaznaczone)|Tab|Tło|`ManifestDesigner.TabActive`|  
+|Domyślnie (zaznaczone)|Tab|Obramowanie|Brak|  
+|Domyślnie (zaznaczone)|Okienko opisu|Tło|`ManifestDesigner.DescriptionPane`|  
+|Domyślnie (zaznaczone)|Strona zawartości|Tło|`ManifestDesigner.Background`|  
+|Domyślnie (zaznaczone)|Strona zawartości|Tekst pomocnika okna dialogowego|`ManifestDesigner.WatermarkText`<br /><br /> Ta nazwa tokenu nie pasuje do jego funkcji.|  
+|Niewybrane|Tab|Tło|`ManifestDesigner.Tab.Inactive`|  
+|Aktywowane|Tab|Tło|`ManifestDesigner.Tab.Mouseover`|  
   
 ### <a name="tagging"></a>Znakowanie  
- Program Visual Studio obsługuje, tagowanie, co pozwala użytkownikowi zadeklarować można wyszukiwać słowa kluczowe na potrzeby śledzenia. Na przykład menedżerów projektów i programistów umożliwia Team Foundation Server (TFS) tagów elementów roboczych. W poniższych tabelach podać nazw kolorów zarówno samego znacznika, jak i "zamknąć ikonę" symbol, umieść kursor i wybranych stanów.  
+ Visual Studio obsługuje tagowanie, co pozwala użytkownikowi zadeklarować słowa kluczowe z wyszukuj do celów śledzenia. Na przykład menedżerowie projektów i deweloperzy mogą używać team foundation server (TFS) do oznaczania elementów roboczych. Poniższe tabele podają nazwy kolorów zarówno dla samego tagu, jak i glifu "zamknij ikonę", który pojawia się w stanach myszy i wybranych.  
   
- ![Znakowanie poprawek](../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")  
+ ![Oznaczanie czerwonej linii](../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")  
   
- Użyj...  
- dla interfejsu użytkownika, który obsługuje znakowanie.  
+ Używać...  
+ dla interfejsu użytkownika, który obsługuje tagowanie.  
   
- Nie używaj...  
- dla wszystkich innych typów interfejsu użytkownika.  
+ Nie używaj ...  
+ dla innego typu interfejsu użytkownika.  
   
 #### <a name="tag"></a>Tag  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Tło|`Tag.Background`|  
-|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303 177_Tag")<br /><br /> **Default**|Pierwszego planu (tekst)|`Tag.Background`|  
-|![Tag po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Po wskazaniu wskaźnikiem**|Tło|`Tag.HoverBackground`|  
-|![Tag po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")<br /><br /> **Po wskazaniu wskaźnikiem**|Pierwszego planu (tekst)|`Tag.HoverBackgroundText`|  
-|![Tag naciśnięty](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **Naciśnięto**|Tło|`Tag.PressedBackground`|  
-|![Tag naciśnięty](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303 179_TagPressed")<br /><br /> **Naciśnięto**|Pierwszego planu (tekst)|`Tag.PressedBackgroundText`|  
-|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 180_TagSelected")<br /><br /> **Wybrane**|Tło|`Tag.SelectedBackground`|  
-|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303 180_TagSelected")<br /><br /> **Wybrane**|Pierwszego planu (tekst)|`Tag.SelectedBackgroundText`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Domyślny**|Tło|`Tag.Background`|  
+|![Tag](../extensibility/ux-guidelines/media/0303-177-tag.png "0303-177_Tag")<br /><br /> **Domyślny**|Pierwszy plan (tekst)|`Tag.Background`|  
+|![Tag po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Aktywowane**|Tło|`Tag.HoverBackground`|  
+|![Tag po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-178-taghover.png "0303-178_TagHover")<br /><br /> **Aktywowane**|Pierwszy plan (tekst)|`Tag.HoverBackgroundText`|  
+|![Wciśnięty znacznik](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Naciśnięte**|Tło|`Tag.PressedBackground`|  
+|![Wciśnięty znacznik](../extensibility/ux-guidelines/media/0303-179-tagpressed.png "0303-179_TagPressed")<br /><br /> **Naciśnięte**|Pierwszy plan (tekst)|`Tag.PressedBackgroundText`|  
+|![Znacznik zaznaczony](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **Wybrano**|Tło|`Tag.SelectedBackground`|  
+|![Znacznik zaznaczony](../extensibility/ux-guidelines/media/0303-180-tagselected.png "0303-180_TagSelected")<br /><br /> **Wybrano**|Pierwszy plan (tekst)|`Tag.SelectedBackgroundText`|  
   
-#### <a name="glyph-close-icon"></a>Symbol (ikonę zamknięcia)  
- **Default**  
+#### <a name="glyph-close-icon"></a>Glif (ikona zamknięcia)  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Tło|Brak|  
-|![Tag &#40;symbol&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")<br /><br /> **Domyślne (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyph`|  
+|![Oznacz &#40;&#41;glifów](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Domyślny (domyślny tag)**|Tło|Nie dotyczy|  
+|![Oznacz &#40;&#41;glifów](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **Domyślny (domyślny tag)**|Pierwszy plan (Glif)|`Tag.TagHoverGlyph`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;symbol&#41; po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Po wskazaniu wskaźnikiem (ustawienie domyślne tagu)**|Tło|`Tag.TagHoverGlyphHoverBackground`|  
-|![Tag &#40;symbol&#41; po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Po wskazaniu wskaźnikiem (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyphHover`|  
-|![Tag &#40;symbol&#41; po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303 182_TagGlyphHover")<br /><br /> **Po wskazaniu wskaźnikiem (ustawienie domyślne tagu)**|Obramowanie|`Tag.TagHoverGlyphHoverBorder`|  
+|![Oznacz &#40;&#41; glifów po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Wskaźnik myszy (domyślny znacznik)**|Tło|`Tag.TagHoverGlyphHoverBackground`|  
+|![Oznacz &#40;&#41; glifów po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Wskaźnik myszy (domyślny znacznik)**|Pierwszy plan (Glif)|`Tag.TagHoverGlyphHover`|  
+|![Oznacz &#40;&#41; glifów po najechaniu kursorem](../extensibility/ux-guidelines/media/0303-182-tagglyphhover.png "0303-182_TagGlyphHover")<br /><br /> **Wskaźnik myszy (domyślny znacznik)**|Obramowanie|`Tag.TagHoverGlyphHoverBorder`|  
   
- **Naciśnięto**  
+ **Naciśnięte**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;symbol&#41; naciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Naciśnięto (ustawienie domyślne tagu)**|Tło|`Tag.TagHoverGlyphPressedBackground`|  
-|![Tag &#40;symbol&#41; naciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Naciśnięto (ustawienie domyślne tagu)**|Pierwszego planu (symbol)|`Tag.TagHoverGlyphPressed`|  
-|![Tag &#40;symbol&#41; naciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")<br /><br /> **Naciśnięto (ustawienie domyślne tagu)**|Obramowanie|`Tag.TagHoverGlyphPressedBorder`|  
+|![Znacznik &#40;&#41; glifów wciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Wciśnięty (tag domyślny)**|Tło|`Tag.TagHoverGlyphPressedBackground`|  
+|![Znacznik &#40;&#41; glifów wciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Wciśnięty (tag domyślny)**|Pierwszy plan (Glif)|`Tag.TagHoverGlyphPressed`|  
+|![Znacznik &#40;&#41; glifów wciśnięty](../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")<br /><br /> **Wciśnięty (tag domyślny)**|Obramowanie|`Tag.TagHoverGlyphPressedBorder`|  
   
- **Domyślne wybrany symbol znacznika**  
+ **Znacznik zaznaczony/domyślny glif**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Tło|Brak|  
-|![Zaznaczony tag](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303 184_TagSelected")<br /><br /> **Domyślne (wybrane tag)**|Pierwszego planu (symbol)|`Tag.TagSelectedGlyph`|  
+|![Znacznik zaznaczony](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **Domyślny (zaznaczony tag)**|Tło|Nie dotyczy|  
+|![Znacznik zaznaczony](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303-184_TagSelected")<br /><br /> **Domyślny (zaznaczony tag)**|Pierwszy plan (Glif)|`Tag.TagSelectedGlyph`|  
   
- **Wybrany symbol znacznika po wskazaniu wskaźnikiem**  
+ **Znacznik zaznaczony/aktywowanie glifów**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag wybrane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Po wskazaniu wskaźnikiem (wybrany tag)**|Tło|`Tag.TagSelectedGlyphHoverBackground`|  
-|![Tag wybrane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Po wskazaniu wskaźnikiem (wybrany tag)**|Pierwszego planu (symbol)|`Tag.TagSelectedGlyphHover`|  
-|![Tag wybrane po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303 185_TagSelectedHover")<br /><br /> **Po wskazaniu wskaźnikiem (wybrany tag)**|Obramowanie|`Tag.TagSelectedGlyphHoverBorder`|  
+|![Znacznik wybrany po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Wskaźnik myszy (zaznaczony znacznik)**|Tło|`Tag.TagSelectedGlyphHoverBackground`|  
+|![Znacznik wybrany po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Wskaźnik myszy (zaznaczony znacznik)**|Pierwszy plan (Glif)|`Tag.TagSelectedGlyphHover`|  
+|![Znacznik wybrany po najechaniu kursorem myszy](../extensibility/ux-guidelines/media/0303-185-tagselectedhover.png "0303-185_TagSelectedHover")<br /><br /> **Wskaźnik myszy (zaznaczony znacznik)**|Obramowanie|`Tag.TagSelectedGlyphHoverBorder`|  
   
- **Wybrano/symbol tagu wciśnięty**  
+ **Znacznik wybrany/wciśnięty glif**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Zaznaczony tag naciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Po naciśnięciu (wybrany tag)**|Tło|`Tag.TagSelectedGlyphPressedBackground`|  
-|![Zaznaczony tag naciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Po naciśnięciu (wybrany tag)**|Foreground(Glyph)|`Tag.TagSelectedGlyphPressed`|  
-|![Zaznaczony tag naciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303 186_TagSelectedPressed")<br /><br /> **Po naciśnięciu (wybrany tag)**|Obramowanie|`Tag.TagSelectedGlyphPressedBorder`|  
+|![Znacznik wciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Wciśnięty (zaznaczony znacznik)**|Tło|`Tag.TagSelectedGlyphPressedBackground`|  
+|![Znacznik wciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Wciśnięty (zaznaczony znacznik)**|Pierwszy plan(Glif)|`Tag.TagSelectedGlyphPressed`|  
+|![Znacznik wciśnięty](../extensibility/ux-guidelines/media/0303-186-tagselectedpressed.png "0303-186_TagSelectedPressed")<br /><br /> **Wciśnięty (zaznaczony znacznik)**|Obramowanie|`Tag.TagSelectedGlyphPressedBorder`|  
   
 ### <a name="shell"></a>Powłoka  
   
 #### <a name="background"></a>Tło  
- Tło środowiska składa się z dwóch warstw. Dolna warstwa jest jednolitego koloru, który obejmuje całe środowisko IDE. Górną warstwę mieści się w obszarze półki polecenia i między kanałami automatycznego ukrywania okna narzędzia na lewej lub prawej krawędzi środowiska IDE. Począwszy od programu Visual Studio 2013 warstwy tła górny i dolny są ustawione na ten sam kolor w motywy jasny i ciemny motyw.  
+ Tło środowiska składa się z dwóch warstw. Dolna warstwa jest jednolity kolor, który obejmuje cały IDE. Górna warstwa mieści się pod półką poleceń i między oknem narzędzia automatycznie ukrywaj kanały po lewej i prawej krawędzi IDE. Od programu Visual Studio 2013 górne i dolne warstwy tła są ustawione na ten sam kolor w motywach Jasne i Ciemne.  
   
- ![Tło powłoki poprawek](../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")  
+ ![Czerwona linia tła powłoki](../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")  
   
- Użyj...  
- dla miejsc, które chcesz dopasować tło środowiska Visual Studio.  
+ Używać...  
+ dla miejsc, które mają być zgodne z tłem środowiska programu Visual Studio.  
   
-Nie używaj...  
-- jako wypełnienia dla miejsc, które nie są tła powierzchni.  
+Nie używaj ...  
+- jako wypełnienie dla miejsc, które nie są powierzchniami tła.  
 
-- jako tła, na którym chcesz umieścić elementy pierwszego planu.  
+- jako tło, na którym chcesz umieścić elementy pierwszego planu.  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|Dolna warstwa|Tło|`Environment.EnvironmentBackground`|  
+|Warstwa dolna|Tło|`Environment.EnvironmentBackground`|  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|Górną warstwę|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.EnvironmentBackgroundGradientBegin`|  
-|Górną warstwę|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.EnvironmentBackgroundGradientEnd`|  
-|Górną warstwę|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.EnvironmentBackgroundGradientMiddle1`|  
-|Górną warstwę|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.EnvironmentBackgroundGradientMiddle2`|  
+|Warstwa górna|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.EnvironmentBackgroundGradientBegin`|  
+|Warstwa górna|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.EnvironmentBackgroundGradientEnd`|  
+|Warstwa górna|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.EnvironmentBackgroundGradientMiddle1`|  
+|Warstwa górna|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.EnvironmentBackgroundGradientMiddle2`|  
   
-#### <a name="command-shelf"></a>Polecenie Półka  
- Dwa zestawy token nazwy są używane do tła półki polecenia: on ustawiony, na którym znajduje się na pasku menu, a drugi dla gdzie znajdują się paski poleceń. Grupa pasek indywidualne polecenie ma swoje własne wartości kolorów tła, które zostały omówione bardziej szczegółowo w sekcji "polecenie bar". Menu paska i polecenia paska tekstu omówiono w sekcji pasek menu i poleceń, odpowiednio.  
+#### <a name="command-shelf"></a>Półka poleceń  
+ Dwa zestawy nazw tokenów są używane dla tła półki poleceń: jeden zestaw, dla którego znajduje się pasek menu i jeden dla miejsca, w którym znajdują się paski poleceń. Indywidualna grupa paska poleceń ma własne wartości kolorów tła, które są omówione bardziej szczegółowo w sekcji "pasek poleceń". Pasek menu i tekst paska poleceń są omawiane odpowiednio w sekcjach menu i paska poleceń.  
   
- ![Polecenie półki poprawek](../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")  
+ ![Czerwona linia półki poleceń](../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")  
   
-Użyj...  
-- dla obszarów, w którym umieszcza się menu i paski narzędzi.  
+Używać...  
+- dla obszarów, w których umieszczasz menu lub paski narzędzi.  
 
-- w tle poprawne / pierwszego planu token kombinacja nazwy.  
+- z prawidłową kombinacją nazw tokenów tła/pierwszego planu.  
   
-  Nie używaj...  
-  dla obszarów, które nie są podobne do półki polecenia.  
+  Nie używaj ...  
+  dla obszarów, które nie są podobne do półki poleceń.  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|Pasek menu|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfHighlightGradientBegin`|  
-|Pasek menu|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfHighlightGradientMiddle`|  
-|Pasek menu|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfHighlightGradientEnd`|  
-|Pasek poleceń|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfBackgroundGradientBegin`|  
-|Pasek poleceń|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfBackgroundGradientMiddle`|  
-|Pasek poleceń|Tło<br /><br /> *Ustaw na tę samą wartość koloru w Visual Studio 2013 jasny i ciemny motyw motywy zatrzymania gradientu.*|`Environment.CommandShelfBackgroundGradientEnd`|  
+|Pasek menu|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.CommandShelfHighlightGradientBegin`|  
+|Pasek menu|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.CommandShelfHighlightGradientMiddle`|  
+|Pasek menu|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.CommandShelfHighlightGradientEnd`|  
+|Pasek poleceń|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.CommandShelfBackgroundGradientBegin`|  
+|Pasek poleceń|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.CommandShelfBackgroundGradientMiddle`|  
+|Pasek poleceń|Tło<br /><br /> *Gradient zatrzymuje ustawioną na tę samą wartość koloru w motywach jasnych i ciemnych programu Visual Studio 2013.*|`Environment.CommandShelfBackgroundGradientEnd`|  
   
 ### <a name="toolbox"></a>Przybornik  
- Przybornik jest jednym z typowych okien narzędzi, które jest najczęściej używany w programie Visual Studio. Jest zasadniczo kontrolki drzewa za pomocą specjalnych motywu i stylów zastosowana.  
+ Przybornik jest jednym z typowych okien narzędzi, który jest najczęściej używany w programie Visual Studio. Jest to zasadniczo kontrola drzewa ze specjalnym motywem i zastosowanej stylizacji.  
   
- ![Przybornik poprawek](../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303 189_ToolboxRedline")  
+ ![Czerwony pasek narzędzi](../extensibility/ux-guidelines/media/0303-189-toolboxredline.png "0303-189_ToolboxRedline")  
   
- Użyj...  
- Podczas projektowania okna narzędzi, które chcesz, aby zawsze były zgodne z przybornika powłoki.  
+ Używać...  
+ podczas projektowania okna narzędzia, które ma być zawsze zgodne z przybornikami powłoki.  
   
- Nie używaj...  
- dla każdego elementu, który nie jest podobne do przybornika interfejsu użytkownika lub jeśli wiesz, czy interfejs użytkownika będą mieć problemy, jeśli Przybornik powłoki kolory zmiany.  
+ Nie używaj ...  
+ dla wszystkiego, co nie jest podobne do interfejsu użytkownika przybornika lub jeśli nie masz pewności, czy interfejs użytkownika będzie miał problemy, jeśli zmienią się kolory przybornika powłoki.  
   
- **Default**  
+ **Domyślny**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Węzeł nadrzędny przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Tło|`Environment.ToolboxContent`<br /><br /> Nagłówki<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Poszczególne elementy lub całe okno, jeśli brak dostępnych kontrolek|  
-|![Węzeł podrzędny przybornika](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Tło|`Environment.ToolboxContent`<br /><br /> Nagłówki<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Poszczególne elementy lub całe okno, jeśli brak dostępnych kontrolek|  
-|![Węzeł nadrzędny przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Obramowanie|Brak|  
-|![Węzeł podrzędny przybornika](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Obramowanie|Brak|  
-|![Węzeł nadrzędny przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Pierwszego planu (symbol)|`Environment.ToolboxContent`|  
-|![Węzeł podrzędny przybornika](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Pierwszego planu (symbol)|`Environment.ToolboxContent`|  
-|![Węzeł nadrzędny przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303 190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Pierwszego planu (tekst)|`Environment.ToolboxContent`|  
-|![Węzeł podrzędny przybornika](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303 191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Pierwszego planu (tekst)|`Environment.ToolboxContent`|  
+|![Węzeł nadrzędny przybornika przybornika przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Tło|`Environment.ToolboxContent`<br /><br /> Nagłówki<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Poszczególne elementy lub całe okno, jeśli nie ma dostępnych formantów|  
+|![Węzeł podrzędny przybornika przyborniku](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Tło|`Environment.ToolboxContent`<br /><br /> Nagłówki<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Poszczególne elementy lub całe okno, jeśli nie ma dostępnych formantów|  
+|![Węzeł nadrzędny przybornika przybornika przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Obramowanie|Brak|  
+|![Węzeł podrzędny przybornika przyborniku](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Obramowanie|Brak|  
+|![Węzeł nadrzędny przybornika przybornika przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Pierwszy plan (Glif)|`Environment.ToolboxContent`|  
+|![Węzeł podrzędny przybornika przyborniku](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Pierwszy plan (Glif)|`Environment.ToolboxContent`|  
+|![Węzeł nadrzędny przybornika przybornika przybornika](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Węzeł nadrzędny**|Pierwszy plan (tekst)|`Environment.ToolboxContent`|  
+|![Węzeł podrzędny przybornika przyborniku](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Węzeł podrzędny**|Pierwszy plan (tekst)|`Environment.ToolboxContent`|  
   
- **Po wskazaniu wskaźnikiem**  
+ **Aktywowane**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Przybornik umieść wskaźnik myszy na węzeł podrzędny**|Tło|`Environment.ToolboxContentMouseOver`<br /><br /> Tylko pojedynczych elementów|  
-|![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Przybornik umieść wskaźnik myszy na węzeł podrzędny**|Obramowanie|Brak|  
-|![Węzeł podrzędny przybornika po najechaniu wskaźnikiem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303 192_ToolboxChildNodeHover")<br /><br /> **Przybornik umieść wskaźnik myszy na węzeł podrzędny**|Pierwszego planu (tekst)|`Environment.ToolboxContentMouseOver`<br /><br /> Tylko pojedynczych elementów|  
+|![Węzeł podrzędny przyborniku przy najechaniu kursorem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Przybornik najechać kursorem na węzeł podrzędny**|Tło|`Environment.ToolboxContentMouseOver`<br /><br /> Tylko pojedyncze przedmioty|  
+|![Węzeł podrzędny przyborniku przy najechaniu kursorem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Przybornik najechać kursorem na węzeł podrzędny**|Obramowanie|Brak|  
+|![Węzeł podrzędny przyborniku przy najechaniu kursorem](../extensibility/ux-guidelines/media/0303-192-toolboxchildnodehover.png "0303-192_ToolboxChildNodeHover")<br /><br /> **Przybornik najechać kursorem na węzeł podrzędny**|Pierwszy plan (tekst)|`Environment.ToolboxContentMouseOver`<br /><br /> Tylko pojedyncze przedmioty|  
   
- **Wybrane**  
+ **Wybrano**  
   
-|Składnik|Element|Nazwa tokenu: Category.Color|  
+|Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Węzeł nadrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **Węzeł nadrzędny fokusem**|Tło|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Węzeł podrzędny fokusem**|Tło|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł nadrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **Węzeł nadrzędny fokusem**|Obramowanie|`TreeView.FocusVisualBorder`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Węzeł podrzędny fokusem**|Obramowanie|`TreeView.FocusVisualBorder`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł nadrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **Węzeł nadrzędny fokusem**|Pierwszego planu (symbol)|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Węzeł podrzędny fokusem**|Pierwszego planu (symbol)|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł nadrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303 193_ToolboxParentNodeFocused")<br /><br /> **Węzeł nadrzędny fokusem**|Pierwszego planu (tekst)|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika skupia się](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303 194_ToolboxChildNodeFocused")<br /><br /> **Węzeł podrzędny fokusem**|Pierwszego planu (tekst)|`TreeView.SelectedItemActive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Po przeniesieniu fokusu węzła nadrzędnego przybornika](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Węzeł nadrzędny po przeniesieniu fokusu**|Tło|`TreeView.SelectedItemInactive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Węzeł podrzędny bez fokusu**|Tło|`TreeView.SelectedItemInactive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Po przeniesieniu fokusu węzła nadrzędnego przybornika](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Węzeł nadrzędny po przeniesieniu fokusu**|Obramowanie|Brak|  
-|![Węzeł podrzędny przybornika po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Węzeł podrzędny bez fokusu**|Obramowanie|Brak|  
-|![Po przeniesieniu fokusu węzła nadrzędnego przybornika](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Węzeł nadrzędny po przeniesieniu fokusu**|Pierwszego planu (symbol)|`TreeView.SelectedItemInactive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Węzeł podrzędny bez fokusu**|Pierwszego planu (symbol)|`TreeView.SelectedItemInactive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Po przeniesieniu fokusu węzła nadrzędnego przybornika](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303 195_ToolboxParentNodeUnfocused")<br /><br /> **Węzeł nadrzędny po przeniesieniu fokusu**|Pierwszego planu (tekst)|`TreeView.SelectedItemInactive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
-|![Węzeł podrzędny przybornika po przeniesieniu fokusu](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303 196_ToolboxChildNodeUnfocused")<br /><br /> **Węzeł podrzędny bez fokusu**|Pierwszego planu (tekst)|`TreeView.SelectedItemInactive`<br /><br /> Z [widoku drzewa](../misc/shared-colors.md#BKMK_TreeView) kategorii|  
+|![Skupiono się na węźle nadrzędnym przybornika przyborniku](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Skoncentrowany węzeł nadrzędny**|Tło|`TreeView.SelectedItemActive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle podrzędnym przybornika](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Skoncentrowany węzeł podrzędny**|Tło|`TreeView.SelectedItemActive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle nadrzędnym przybornika przyborniku](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Skoncentrowany węzeł nadrzędny**|Obramowanie|`TreeView.FocusVisualBorder`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle podrzędnym przybornika](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Skoncentrowany węzeł podrzędny**|Obramowanie|`TreeView.FocusVisualBorder`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle nadrzędnym przybornika przyborniku](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Skoncentrowany węzeł nadrzędny**|Pierwszy plan (Glif)|`TreeView.SelectedItemActive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle podrzędnym przybornika](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Skoncentrowany węzeł podrzędny**|Pierwszy plan (Glif)|`TreeView.SelectedItemActive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle nadrzędnym przybornika przyborniku](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Skoncentrowany węzeł nadrzędny**|Pierwszy plan (tekst)|`TreeView.SelectedItemActive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Skupiono się na węźle podrzędnym przybornika](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Skoncentrowany węzeł podrzędny**|Pierwszy plan (tekst)|`TreeView.SelectedItemActive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Węzeł nadrzędny przybornika przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł nadrzędny**|Tło|`TreeView.SelectedItemInactive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Węzeł podrzędny przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł podrzędny**|Tło|`TreeView.SelectedItemInactive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Węzeł nadrzędny przybornika przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł nadrzędny**|Obramowanie|Brak|  
+|![Węzeł podrzędny przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł podrzędny**|Obramowanie|Brak|  
+|![Węzeł nadrzędny przybornika przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł nadrzędny**|Pierwszy plan (Glif)|`TreeView.SelectedItemInactive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Węzeł podrzędny przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł podrzędny**|Pierwszy plan (Glif)|`TreeView.SelectedItemInactive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Węzeł nadrzędny przybornika przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł nadrzędny**|Pierwszy plan (tekst)|`TreeView.SelectedItemInactive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Węzeł podrzędny przybornika nieskoncentrowany](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nieskoncentrowany węzeł podrzędny**|Pierwszy plan (tekst)|`TreeView.SelectedItemInactive`<br /><br /> Z kategorii [widok drzewa](../misc/shared-colors.md#BKMK_TreeView)|  
   
-## <a name="color-value-reference"></a>Odwołanie wartości koloru  
+## <a name="color-value-reference"></a>Odwołanie do wartości koloru  
   
 |||||||||  
 |-|-|-|-|-|-|-|-|  
-|Składnik|Część|Element|Stan|Światła|Ciemny|Niebieski|Duży kontrast|  
-|Linie podziału|||Domyślny|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
-|Ekspander glifów||Pierwszy plan|Domyślny|||||  
-|Ekspander glifów||Pierwszy plan|Po wskazaniu wskaźnikiem|||||  
-|Ekspander glifów||Tło|Domyślny|||||  
-|Ekspander glifów||Tło|Po wskazaniu wskaźnikiem|||||  
-|Ekspander glifów||Obramowanie|Domyślny|||||  
-|Ekspander glifów||Obramowanie|Po wskazaniu wskaźnikiem|||||
+|Składnik|Część|Element|Stan|Jasny|Ciemny|Blue|Wysoki kontrast|  
+|Linie podziału|||Domyślne|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark ( ControlDark )|  
+|Glif ekspandera||Pierwszy plan|Domyślne|||||  
+|Glif ekspandera||Pierwszy plan|Aktywowane|||||  
+|Glif ekspandera||Tło|Domyślne|||||  
+|Glif ekspandera||Tło|Aktywowane|||||  
+|Glif ekspandera||Obramowanie|Domyślne|||||  
+|Glif ekspandera||Obramowanie|Aktywowane|||||

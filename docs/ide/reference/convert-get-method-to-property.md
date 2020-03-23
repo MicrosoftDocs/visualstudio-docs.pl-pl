@@ -1,50 +1,53 @@
 ---
-title: Konwertuj metodę get na Właściwość; Konwertuj właściwość na metodę get
-ms.date: 01/26/2018
+title: Konwertuj metodę Pobierz na właściwość; konwertowanie właściwości na Metodę Pobierz
+ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e3807f3902cbd0d2718f249f15cd268fb81ac51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75570235"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094203"
 ---
-# <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertowanie metody Get na właściwość / skonwertować właściwości refaktoryzacje metody Get
+# <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Konwertuj metodę Pobierz na właściwość / Convert właściwość na refaktoryzowania metody Pobierz
 
-Dotyczą te operacje refaktoryzacji:
+Te refaktoryzowania mają zastosowanie do:
 
-- Język C#
+- C#
+
+- Visual Basic
 
 ## <a name="convert-get-method-to-property"></a>Konwertowanie metody Get na właściwość
 
-**Co:** umożliwia konwertowanie metody Get na właściwości (i opcjonalnie swoje metody Set).
+**Co:** Umożliwia konwertowanie Get metody do właściwości (i opcjonalnie Set metody).
 
-**Kiedy:** mają metody Get, który nie zawiera żadnych logiki.
+**Kiedy:** Masz Get metody, która nie zawiera żadnej logiki.
 
-### <a name="how-to"></a>Instrukcje
+### <a name="how-to"></a>Porady
 
-1. Umieść kursor w nazwie metody Get.
+1. Umieść kursor w nazwie metody Pobierz.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę z właściwością** z menu podręcznego okna podglądu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zastąpić metodę z właściwością** z menu podręcznego okna podglądu.
+   - **Klawiatura**
+      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania,** a następnie wybierz polecenie **Zamień metodę właściwością** z okna podglądu.
+   - **Mysz**
+      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz polecenie **Zamień metodę właściwością** z okna podglądu.
 
-1. (Opcjonalnie) W przypadku metody Set można także przekonwertować swoje metody Set w tym momencie, wybierając **metody Get Zastąp i metody Set z właściwością**.
+1. (Opcjonalnie) Jeśli masz set metody, można również przekonwertować set metody w tej chwili, wybierając **Zamień Pobierz metody i Ustaw metodę z właściwością**.
 
-1. Jeśli jesteś zadowolony z zmiany w wersji zapoznawczej kodu, naciśnij klawisz **Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
+1. Jeśli jesteś zadowolony ze zmiany w podglądzie kodu, naciśnij **klawisz Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
 
 Przykład:
 
@@ -66,26 +69,26 @@ public int MyValue
 }
 ```
 
-## <a name="convert-property-to-get-method"></a>Konwertowanie właściwości na metodę Get
+## <a name="convert-property-to-get-method"></a>Konwertuj właściwość na metodę Pobierz
 
-**Co:** umożliwia konwertowanie właściwości na metodę Get
+**Co:** Umożliwia konwertowanie właściwości na metodę Get
 
-**Kiedy:** mają właściwość, która obejmuje więcej niż natychmiast ustawiania i pobierania wartości
+**Kiedy:** Masz właściwość, która obejmuje więcej niż natychmiast ustawienie i uzyskanie wartości
 
-### <a name="how-to"></a>Instrukcje
+### <a name="how-to"></a>Porady
 
-1. Umieść kursor w nazwie metody Get.
+1. Umieść kursor w nazwie metody Pobierz.
 
 1. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zamień właściwości metody** z menu podręcznego okna podglądu.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zamień właściwości metody** z menu podręcznego okna podglądu.
+   - **Klawiatura**
+      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania,** a następnie wybrać **polecenie Zamień właściwość metodami** z okna podglądu.
+   - **Mysz**
+      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz polecenie **Zamień właściwość metodami** z okna podglądu.
 
-1. Jeśli jesteś zadowolony z zmiany w wersji zapoznawczej kodu, naciśnij klawisz **Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
+1. Jeśli jesteś zadowolony ze zmiany w podglądzie kodu, naciśnij **klawisz Enter** lub kliknij poprawkę z menu, a zmiany zostaną zatwierdzone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

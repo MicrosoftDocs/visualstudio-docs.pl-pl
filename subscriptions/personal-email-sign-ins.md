@@ -1,56 +1,57 @@
 ---
-title: Osobiste wiadomości e-mail wyświetlane w VLSC
+title: Osobiste wiadomości e-mail wyświetlane w vlsc
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/03/2020
+ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
+ms.date: 03/17/2020
 ms.topic: conceptual
-description: Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
-ms.openlocfilehash: c4a3202bfb14246fa8057309de90bdc7c32db5df
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+description: Subskrypcje programu Visual Studio — dlaczego widzę adresy Hotmail lub Gmail dla moich subskrybentów?
+ms.openlocfilehash: 7cd6a4761efb7dcad7568bd0a95ba33141407055
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78410233"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79550333"
 ---
-# <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Subskrypcje programu Visual Studio — Dlaczego widzę adresy Hotmail i Gmail dla subskrybentów?
-Po przeprowadzeniu migracji z witryny Volume Licensing Service Center (VLSC) do nowego [portalu administratora subskrypcji](https://manage.visualstudio.com)programu Visual Studio Administratorzy mogli znaleźć, że adres e-mail logowania dla niektórych subskrybentów zawiera adres e-mail innej firmy, taki jak Hotmail, Gmail lub Yahoo.  Aby uzyskać więcej informacji, zapoznaj się z [tym wideo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
+# <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Subskrypcje programu Visual Studio — dlaczego widzę konta osobiste subskrybentów?
+Po migracji firm z Centrum usług licencjonowania zbiorowego (VLSC) do nowego [portalu administracyjnego subskrypcji](https://manage.visualstudio.com)programu Visual Studio administratorzy byli zaskoczeni, że "Adres e-mail logowania" dla niektórych subskrybentów zawiera osobisty adres e-mail, taki jak Hotmail lub Outlook.  Aby uzyskać więcej informacji, zapoznaj się z [tym filmem](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
 ## <a name="cause"></a>Przyczyna
-Ten scenariusz występuje ze względu na procesy logowania skojarzone ze starszym doświadczeniem subskrybenta MSDN. Użytkownicy zostali zmigrowani z witryny Volume License Service Center (VLSC) do portalu administracyjnego subskrypcji programu Visual Studio bez żadnych modyfikacji. Administratorzy mogą nie wiedzieć, że użytkownicy korzystali z kont osobistych w celu uzyskania dostępu do korzyści z subskrypcji. Przed migracją subskrybentów programu Visual Studio, które zostały wykonane w 2016, były dwie akcje wymagane do pomyślnego użycia Visual Studio Subscription:
-1. Administrator "przypisał" subskrypcję do indywidualnego subskrybenta przy użyciu służbowego adresu e-mail.
-2. Subskrybent "aktywowany" w ramach subskrypcji.
+Ten scenariusz występuje z powodu procesów logowania, które były skojarzone z starszego środowiska subskrybenta MSDN. Użytkownicy zostali migrowani z Centrum usług licencji zbiorczych (VLSC) do portalu administracyjnego subskrypcji programu Visual Studio bez modyfikacji. Administratorzy mogli nie wiedzieć, że użytkownicy korzystali z kont osobistych w celu uzyskania dostępu do korzyści z subskrypcji. Przed migracjami subskrybentów programu Visual Studio, które zostały ukończone w 2016 r., istniały dwie akcje wymagane do pomyślnego użycia subskrypcji programu Visual Studio:
+1. Administrator "przypisał" subskrypcję poszczególnym subskrybentom, używając służbowego adresu e-mail.
+2. Subskrybent "aktywował" subskrypcję.
 
-Podczas procesu aktywacji subskrybenta: konto Microsoft (MSA) było wymagane do zalogowania się. Jeśli subskrybent nie podjął próby dokonania konta służbowego (np. tasha@contoso.com), może utworzyć nowy element MSA lub wykorzystać istniejący. W związku z tym "adres E-mail logowania" jest inny niż przypisany do adresu E-mail.
+Podczas procesu aktywacji subskrybenta: do zalogowania się wymagane było konto Microsoft (MSA). Jeśli subskrybent nie próbował utworzyć konta służbowego (np. tasha@contoso.com) msa, może utworzyć nowy MSA lub wykorzystać istniejące. Spowodowało to, że ich "Adres e-mail logowania" różni się od "Przypisany do adresu e-mail".
 
 > [!NOTE]
-> Nowe środowisko subskrybenta na [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) obsługuje typy tożsamości zarówno służbowe, jak i konto Microsoft (MAA).
+> Nowoczesne środowisko subskrybenta [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) obsługuje zarówno typy tożsamości usługi Praca/Szkoła, jak i Konto Microsoft (MSA).
 
 ## <a name="solution"></a>Rozwiązanie
-Aby rozwiązać ten problem, po prostu wybierz przycisk **Połącz wiadomości e-mail** , a system podejmie próbę dopasowania kont z kont MSA do istniejących użytkowników w organizacji Azure Active Directory (Azure AD) w oparciu o pasujące imię i nazwisko. Jeśli wystąpi błąd, możesz usunąć dowolne dopasowanie, klikając **znak X** z prawej strony dopasowania.  
+Aby rozwiązać ten problem, po prostu wybierz przycisk **Połącz wiadomości e-mail,** a system spróbuje dopasować konta z msa do istniejących użytkowników w usłudze Azure Active Directory (Azure AD) organizacji na podstawie dopasowania imienia i nazwiska. Jeśli wystąpi błąd, możesz usunąć dowolne dopasowanie, klikając **x** po prawej stronie meczu.  
 
 > [!div class="mx-imgBorder"]
-> Przycisk ![połącz wiadomości E-mail](_img/connect-emails/connect-emails-button.png)
+> ![Przycisk Połącz e-maile](_img/connect-emails/connect-emails-button.png)
 
-Możesz również użyć **katalogu wyszukiwania** , aby naprawić błędy lub uzupełnić brakujące informacje z usługi Azure AD. Jeśli wszystkie dopasowania wyglądają prawidłowo, możesz wybrać opcję "Wybierz wszystkich pasujących subskrybentów" zamiast wybierać je pojedynczo.  
-
-> [!div class="mx-imgBorder"]
-> ![łączenie wiadomości E-mail](_img/connect-emails/connect-emails-flyout.png)
-
-Następnie kliknij pozycję "Kontynuuj", co spowoduje przejście do ekranu, który wprowadza zmiany, które mają zostać wykonane. Jeśli zgadzasz się, kliknij przycisk "Zapisz", a zmiany zostaną wprowadzone. Subskrybent otrzyma również komunikat z informacją o zmianie przy następnym logowaniu do swojej subskrypcji.   
+Można również użyć **katalogu wyszukiwania,** aby poprawić błędy lub wypełnić brakujące informacje z usługi Azure AD. Jeśli wszystkie dopasowania wyglądają poprawnie, możesz wybrać opcję "Wybierz wszystkich pasujących subskrybentów", zamiast wybierać je po jednym naraz.  
 
 > [!div class="mx-imgBorder"]
-> Potwierdzenie ![połączenia E-mail](_img/connect-emails/connect-emails-confirm.png) 
+> ![Łączenie wiadomości e-mail wylatuje](_img/connect-emails/connect-emails-flyout.png)
+
+Następnie kliknij na "kontynuuj", który zabierze Cię do ekranu przedstawiającego zmiany, które mają się odbyć. Jeśli wyrazisz na to zgodę, kliknij przycisk "Zapisz", a zmiany zostaną wprowadzone. Subskrybent otrzyma również wiadomość informującą o zmianie przy następnym logowaniu się do subskrypcji.   
+
+> [!div class="mx-imgBorder"]
+> ![Połącz e-maile z potwierdzeniem](_img/connect-emails/connect-emails-confirm.png) 
 
 > [!NOTE]
-> Podczas edytowania adresu e-mail należy tylko zaktualizować wiadomość e-mail użytą do zalogowania się do swojej subskrypcji na https://my.visualstudio.com. Jeśli subskrybent ma już aktywowane korzyści, takie jak Azure lub Pluralsight przy użyciu innego adresu e-mail, będzie musiał nadal korzystać z tych adresów e-mail w celu uzyskania dostępu do nich. W przypadku nowych korzyści, do których mają dostęp, powinny być używane nowe adresy e-mail. 
+> Podczas edytowania adresu e-mail logowania jest to tylko aktualizacja wiadomości e-mail https://my.visualstudio.comużywanej przez subskrybenta do logowania się do subskrypcji w programie . Jeśli subskrybent ma już aktywowane korzyści, takie jak Azure lub Pluralsight przy użyciu innego adresu e-mail, będą musieli nadal używać tych adresów e-mail, aby uzyskać do nich dostęp. W przypadku nowych korzyści, do których uzyskują dostęp, powinni użyć nowego adresu e-mail. 
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ##  <a name="next-steps"></a>Następne kroki
-- Jeśli Zaktualizowano adresy e-mail subskrybentów, można powiadomić ich, że informacje logowania zostały zmienione.  Otrzymają także wiadomość e-mail z zaktualizowanymi informacjami.
-- Przydatne może być [odfiltrowanie listy subskrybentów](search-license.md) w organizacji, aby wyszukać wszelkie adresy e-mail logowania, które mogą wymagać zmiany.  
+- Jeśli zaktualizowano adres(y) e-mail subskrybenta(-ów), możesz powiadomić ich o zmianie informacji o logowaniu.  Otrzymają również wiadomość e-mail ze zaktualizowanymi informacjami.
+- Może być przydatne [filtrowanie listy subskrybentów](search-license.md) w organizacji, aby wyszukać wszelkie logowania adresy e-mail, które mogą wymagać zmiany.  

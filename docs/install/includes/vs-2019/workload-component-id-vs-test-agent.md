@@ -1,38 +1,38 @@
 ---
-title: Obciążenie i identyfikatory składników programu Visual Studio Test Agent 2019
+title: Identyfikatory obciążenia i składników programu Visual Studio Test Agent 2019
 titleSuffix: ''
-description: Użyj obciążenia programu Visual Studio i identyfikatory składników do uruchamiania testów automatycznych i testy obciążeniowe zdalnie
+description: Zdalne uruchamianie automatycznych testów i ładowanie testów za pomocą obciążenia i identyfikatorów składników programu Visual Studio
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: e7659cf0e9a5ab06b84d845a7b90cac5c21525f8
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: d600b5c3fc48423f8bdb1824cb04a20dcbaae08d
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159493"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437536"
 ---
 ## <a name="test-agent"></a>Test Agent
 
-**ID:** Microsoft.VisualStudio.Workload.TestAgent
+**Identyfikator:** Microsoft.VisualStudio.Workload.TestAgent
 
-**Opis:** obsługuje zdalne uruchamianie zautomatyzowanych testów i testów obciążenia
+**Opis:** Obsługuje zdalne uruchamianie automatycznych testów i testów obciążenia
 
-### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
+### <a name="components-included-by-this-workload"></a>Składniki objęte tym obciążeniem
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Podstawowe funkcje agenta testowego | 16.0.28315.86 | Wymagane
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Podstawowe funkcje agenta testowego | 16.0.28315.86 | Wymagany
 
-## <a name="unaffiliated-components"></a>Składniki nie podlega
+## <a name="unaffiliated-components"></a>Składniki niepowiązane
 
-Są to składniki, które nie są uwzględniane przy użyciu dowolnego obciążenia, ale można wybrać jako poszczególnych składników.
+Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-n/d | n/d | n/d
+Nie dotyczy | Nie dotyczy | Nie dotyczy

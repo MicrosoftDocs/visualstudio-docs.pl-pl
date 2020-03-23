@@ -1,5 +1,5 @@
 ---
-title: Krok 8. Dostosowywanie quizu
+title: 'Krok 8: Dostosuj quiz'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,22 +14,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579369"
 ---
-# <a name="step-8-customize-the-quiz"></a>Krok 8. Dostosowywanie quizu
+# <a name="step-8-customize-the-quiz"></a>Krok 8: Dostosuj quiz
 
-W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywania quizu i rozwinięcia tego, co już znasz. Na przykład należy zastanowić się, jak program tworzy losowe problemy dotyczące dzielenia, dla których odpowiedź nigdy nie jest częścią. Aby dowiedzieć się więcej, Zmień kolor kontrolki `timeLabel` na inny, a następnie Przekaż wskazówkę do wskazówki.
+W ostatniej części samouczka zapoznajesz się z kilkoma sposobami dostosowania quizu i rozwinięcie tego, czego już się nauczyłeś. Na przykład zastanów się, jak program tworzy losowe problemy z podziałem, dla których odpowiedź nigdy nie jest ułamkiem. Aby dowiedzieć się `timeLabel` więcej, obróć formant w inny kolor i daj uczestnikowi quizu wskazówkę.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie quizu matematycznego z czasem](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-customize-the-quiz"></a>Aby dostosować Quiz
+## <a name="to-customize-the-quiz"></a>Aby dostosować quiz
 
-- Gdy tylko pięć sekund pozostanie w quizie, Zmień wartość kontrolki **timeLabel** na czerwony, ustawiając jej właściwość **BackColor** .
+- Gdy tylko pięć sekund pozostaje w quizie, włącz **timeLabel** kontroli czerwony, ustawiając jego **BackColor** właściwości.
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -41,12 +41,12 @@ W ostatniej części samouczka zapoznajesz się z innymi sposobami dostosowywani
 
   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-  Zresetuj kolor, gdy quiz jest ustawiony na wartość.
+  Zresetuj kolor po zakończeniu quizu.
 
-- Nadaj quizowi wskazówkę, odtwarzając dźwięk po wprowadzeniu prawidłowej odpowiedzi do kontrolki <xref:System.Windows.Forms.NumericUpDown>. (Należy napisać procedurę obsługi zdarzeń dla każdego zdarzenia <xref:System.Windows.Forms.NumericUpDown.ValueChanged> kontrolki, które jest wyzwalane za każdym razem, gdy osoba zażąda zmiany wartości kontrolki.)
+- Daj uczestnikowi quizu wskazówkę, odtwarzając dźwięk, gdy <xref:System.Windows.Forms.NumericUpDown> poprawna odpowiedź zostanie wprowadzona do formantu. (Należy napisać program obsługi zdarzeń dla <xref:System.Windows.Forms.NumericUpDown.ValueChanged> każdego zdarzenia formantu, który jest uruchamiany za każdym razem, gdy osoba biorąca udział w quizie zmienia wartość formantu).
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego samouczka, zobacz **[samouczek 3: Tworzenie gry w dopasowywanie](../ide/tutorial-3-create-a-matching-game.md)** .
+- Aby przejść do następnego samouczka, zobacz **[Samouczek 3: Tworzenie pasującej gry](../ide/tutorial-3-create-a-matching-game.md)**.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 7. Dodawanie problemów mnożenia i dzielenia](../ide/step-7-add-multiplication-and-division-problems.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 7: Dodawanie problemów z mnożeniem i dzieleniem](../ide/step-7-add-multiplication-and-division-problems.md).

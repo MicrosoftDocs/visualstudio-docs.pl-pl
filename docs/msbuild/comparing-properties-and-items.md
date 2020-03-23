@@ -1,5 +1,5 @@
 ---
-title: Porównywanie właściwości i elementów | Microsoft Docs
+title: Porównywanie właściwości i towarów | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634412"
 ---
-# <a name="compare-properties-and-items"></a>Porównanie właściwości i elementów
+# <a name="compare-properties-and-items"></a>Porównaj właściwości i elementy
 
-Właściwości i elementy programu MSBuild służą do przekazywania informacji do zadań, oceniania warunków i przechowywania wartości, do których można się odwoływać w całym pliku projektu.
+Właściwości i elementy MSBuild są używane do przekazywania informacji do zadań, oceny warunków i przechowywania wartości, do których można się odwoływać w całym pliku projektu.
 
-- Właściwości to pary nazwa-wartość. Aby uzyskać więcej informacji, zobacz [Właściwości programu MSBuild](../msbuild/msbuild-properties.md).
+- Właściwości są parami nazwa-wartość. Aby uzyskać więcej informacji, zobacz [WŁAŚCIWOŚCI MSBuild](../msbuild/msbuild-properties.md).
 
-- Elementy to obiekty, które zwykle reprezentują pliki. Obiekty elementów mogą mieć skojarzone kolekcje metadanych. Metadane to pary nazwa-wartość. Aby uzyskać więcej informacji, zobacz [Items](../msbuild/msbuild-items.md).
+- Elementy są obiektami, które zazwyczaj reprezentują pliki. Obiekty elementu mogą mieć skojarzone kolekcje metadanych. Metadane są parami nazwa-wartość. Aby uzyskać więcej informacji, zobacz [Elementy](../msbuild/msbuild-items.md).
 
-## <a name="scalars-and-vectors"></a>Wartości skalarne i wektory
+## <a name="scalars-and-vectors"></a>Skalary i wektory
 
-Ponieważ właściwości programu MSBuild to pary nazwa-wartość, które mają tylko jedną wartość ciągu, są one często opisane jako *skalarne*. Ponieważ typy elementów programu MSBuild to listy, często są one opisane jako *wektor*. Jednakże w przypadku właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
+Ponieważ właściwości MSBuild są parami nazwa-wartość, które mają tylko jedną wartość ciągu, są często opisywane jako *skalarne.* Ponieważ typy elementów MSBuild są listami elementów, są one często określane jako *wektor*. Jednak w praktyce właściwości mogą reprezentować wiele wartości, a typy elementów mogą mieć zero lub jeden element.
 
-### <a name="target-dependency-injection"></a>Docelowa iniekcja zależności
+### <a name="target-dependency-injection"></a>Wstrzyknięcie zależności docelowej
 
-Aby zobaczyć, jak właściwości mogą reprezentować wiele wartości, należy wziąć pod uwagę typowy wzorzec użycia w celu dodania celu do listy obiektów docelowych do skompilowania. Ta lista jest zazwyczaj reprezentowana przez wartość właściwości, z nazwami docelowymi oddzielonymi średnikami.
+Aby zobaczyć, jak właściwości mogą reprezentować wiele wartości, należy wziąć pod uwagę typowy wzorzec użycia do dodawania obiektu docelowego do listy obiektów docelowych, które mają zostać utworzone. Ta lista jest zazwyczaj reprezentowana przez wartość właściwości, z nazwami docelowymi oddzielonymi średnikami.
 
 ```xml
 <PropertyGroup>
@@ -43,7 +43,7 @@ Aby zobaczyć, jak właściwości mogą reprezentować wiele wartości, należy 
 </PropertyGroup>
 ```
 
-Właściwość `BuildDependsOn` jest zwykle używana jako argument docelowego atrybutu `DependsOnTargets`, efektywnie konwertując go na listę elementów. Ta właściwość może zostać zastąpiona w celu dodania celu lub zmiany docelowej kolejności wykonania. Na przykład:
+Właściwość `BuildDependsOn` jest zwykle używana jako argument `DependsOnTargets` atrybutu docelowego, skutecznie konwertując go na listę elementów. Ta właściwość może zostać zastąpiona, aby dodać obiekt docelowy lub zmienić docelową kolejność wykonywania. Na przykład:
 
 ```xml
 <PropertyGroup>
@@ -54,13 +54,13 @@ Właściwość `BuildDependsOn` jest zwykle używana jako argument docelowego at
 </PropertyGroup>
 ```
 
-dodaje element docelowy CustomBuild do listy target, dając `BuildDependsOn` wartość `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.
+dodaje cel CustomBuild do listy `BuildDependsOn` docelowej, podając wartość `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.
 
-Począwszy od programu MSBuild 4,0, docelowa iniekcja zależności jest przestarzała. Zamiast tego użyj atrybutów `AfterTargets` i `BeforeTargets`. Aby uzyskać więcej informacji, zobacz [Target Order Build](../msbuild/target-build-order.md).
+Począwszy od MSBuild 4.0, iniekcja zależności docelowej jest przestarzała. Zamiast `AfterTargets` tego `BeforeTargets` użyj atrybutów i. Aby uzyskać więcej informacji, zobacz [Docelowa kolejność kompilacji](../msbuild/target-build-order.md).
 
-### <a name="conversions-between-strings-and-item-lists"></a>Konwersje między ciągami i listami elementów
+### <a name="conversions-between-strings-and-item-lists"></a>Konwersje między ciągami a listami elementów
 
-MSBuild wykonuje konwersje do i z typów elementów oraz wartości ciągów zgodnie z wymaganiami. Aby zobaczyć, jak lista elementów może być wartością ciągu, należy wziąć pod uwagę, co się dzieje, gdy typ elementu jest używany jako wartość właściwości programu MSBuild:
+MSBuild wykonuje konwersje do i z typów elementów i wartości ciągów w razie potrzeby. Aby zobaczyć, jak lista elementów może stać się wartością ciągu, należy wziąć pod uwagę, co się dzieje, gdy typ elementu jest używany jako wartość właściwości MSBuild:
 
 ```xml
 <ItemGroup>
@@ -71,47 +71,47 @@ MSBuild wykonuje konwersje do i z typów elementów oraz wartości ciągów zgod
 </PropertyGroup>
 ```
 
-Typ elementu OutputDir ma atrybut `Include` o wartości "\\plików";\\certyfikatów ". Program MSBuild analizuje ten ciąg w dwóch elementach: plikach z certyfikatami \ i Certificates\\. Gdy typ elementu OutputDir jest używany jako wartość właściwości OutputDirList, MSBuild konwertuje lub "spłaszcza" typu elementu do postaci ciągów rozdzielanych średnikami "\\plików".\\certyfikatów ".
+Typ elementu OutputDir `Include` ma atrybut o wartości "KeyFiles\\; Certyfikaty\\". MSBuild analizuje ten ciąg na dwa elementy: KeyFiles\ i Certificates\\. Gdy typ elementu OutputDir jest używany jako wartość właściwości OutputDirList, MSBuild konwertuje lub "spłaszcza" typ elementu na\\ciąg oddzielany średnikiem "KeyFiles; Certyfikaty\\".
 
 ## <a name="properties-and-items-in-tasks"></a>Właściwości i elementy w zadaniach
 
-Właściwości i elementy są używane jako dane wejściowe i wyjściowe do zadań programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
+Właściwości i elementy są używane jako dane wejściowe i wyjściowe do zadań MSBuild. Aby uzyskać więcej informacji, zobacz [Zadania](../msbuild/msbuild-tasks.md).
 
-Właściwości są przesyłane do zadań jako atrybuty. W ramach zadania Właściwość programu MSBuild jest reprezentowana przez typ właściwości, którego wartość może zostać przekonwertowana na i z ciągu. Obsługiwane typy właściwości obejmują `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string`i dowolnego typu, który <xref:System.Convert.ChangeType%2A> może obsłużyć.
+Właściwości są przekazywane do zadań jako atrybuty. W ramach zadania właściwość MSBuild jest reprezentowana przez typ właściwości, którego wartość można przekonwertować na i z ciągu. Obsługiwane typy właściwości `bool` `char`obejmują `DateTime` `Decimal`, `Double` `int`, `string`, , <xref:System.Convert.ChangeType%2A> , i dowolny typ, który może obsłużyć.
 
-Elementy są przesyłane do zadań jako obiekty <xref:Microsoft.Build.Framework.ITaskItem>. W ramach zadania <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> reprezentuje wartość elementu, a <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> pobiera jego metadane.
+Elementy są przekazywane <xref:Microsoft.Build.Framework.ITaskItem> do zadań jako obiekty. W ramach <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> zadania reprezentuje wartość elementu <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> i pobiera jego metadane.
 
-Listę elementów typu elementu można przesłać jako tablicę obiektów `ITaskItem`. Począwszy od .NET Framework 3,5, elementy można usunąć z listy elementów w obiekcie docelowym przy użyciu atrybutu `Remove`. Ponieważ elementy można usunąć z listy elementów, istnieje możliwość, aby typ elementu miał zero elementów. Jeśli lista elementów jest przenoszona do zadania, kod w zadaniu powinien sprawdzać tę możliwość.
+Lista elementów typu elementu może być przekazywana jako tablica `ITaskItem` obiektów. Począwszy od programu .NET Framework 3.5, elementy można usunąć z `Remove` listy elementów w miejscu docelowym przy użyciu atrybutu. Ponieważ elementy można usunąć z listy elementów, jest możliwe dla typu elementu, aby mieć zero elementów. Jeśli lista elementów jest przekazywana do zadania, kod w zadaniu powinien sprawdzić tę możliwość.
 
-## <a name="property-and-item-evaluation-order"></a>Kolejność szacowania właściwości i elementów
+## <a name="property-and-item-evaluation-order"></a>Kolejność oceny właściwości i towaru
 
-W fazie oceny kompilacji importowane pliki są włączane do kompilacji w kolejności, w jakiej są wyświetlane. Właściwości i elementy są zdefiniowane w trzech przebiegach w następującej kolejności:
+Podczas fazy oceny kompilacji importowane pliki są włączane do kompilacji w kolejności, w jakiej się pojawiają. Właściwości i elementy są definiowane w trzech przejściach w następującej kolejności:
 
-- Właściwości są definiowane i modyfikowane w kolejności, w jakiej są wyświetlane.
+- Właściwości są definiowane i modyfikowane w kolejności, w jakiej się pojawiają.
 
-- Definicje elementów są zdefiniowane i modyfikowane w kolejności, w jakiej są wyświetlane.
+- Definicje towarów są definiowane i modyfikowane w kolejności, w jakiej się pojawiają.
 
-- Elementy są definiowane i modyfikowane w kolejności, w jakiej są wyświetlane.
+- Elementy są definiowane i modyfikowane w kolejności, w jakiej się pojawiają.
 
-Podczas fazy wykonywania kompilacji, właściwości i elementy, które są zdefiniowane w obiektach docelowych, są oceniane razem w jednej fazie w kolejności, w jakiej są wyświetlane.
+Podczas fazy wykonywania kompilacji właściwości i elementy, które są zdefiniowane w ramach obiektów docelowych są oceniane razem w jednej fazie w kolejności, w jakiej się pojawiają.
 
-Nie jest to jednak Kompletna historia. Gdy właściwość, definicja elementu lub element jest zdefiniowany, jego wartość jest szacowana. Ewaluatora wyrażeń rozszerza ciąg, który określa wartość. Rozszerzenie ciągu jest zależne od fazy kompilacji. Poniżej znajduje się bardziej szczegółowa Właściwość i kolejność oceny elementów:
+Nie jest to jednak pełna historia. Po zdefiniowaniu właściwości, definicji towaru lub towaru jego wartość jest obliczana. Oceniający wyrażenie rozwija ciąg, który określa wartość. Rozwinięcie ciągu zależy od fazy kompilacji. Oto bardziej szczegółowa kolejność oceny właściwości i towaru:
 
-- W fazie oceny kompilacji:
+- Podczas fazy oceny kompilacji:
 
-  - Właściwości są definiowane i modyfikowane w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w formularzu $ (PropertyName) są rozwinięte w wyrażeniach. Wartość właściwości jest ustawiona na rozwinięte wyrażenie.
+  - Właściwości są definiowane i modyfikowane w kolejności, w jakiej się pojawiają. Funkcje właściwości są wykonywane. Wartości właściwości w postaci $(PropertyName) są rozwijane w wyrażeniach. Wartość właściwości jest ustawiona na wyrażenie rozwinięte.
 
-  - Definicje elementów są zdefiniowane i modyfikowane w kolejności, w jakiej są wyświetlane. Funkcje właściwości zostały już rozwinięte w wyrażeniach. Wartości metadanych są ustawiane na rozszerzone wyrażenia.
+  - Definicje towarów są definiowane i modyfikowane w kolejności, w jakiej się pojawiają. Funkcje właściwości zostały już rozwinięte w wyrażeniach. Wartości metadanych są ustawione na wyrażenia rozwinięte.
 
-  - Typy elementów są zdefiniowane i modyfikowane w kolejności, w jakiej są wyświetlane. Wartości elementów w postaci @ (ItemType) są rozwinięte. Przekształcenia elementów są również rozwinięte. Funkcje i wartości właściwości zostały już rozwinięte w wyrażeniach. Lista elementów i wartości metadanych są ustawiane na rozszerzone wyrażenia.
+  - Typy elementów są definiowane i modyfikowane w kolejności, w jakiej się pojawiają. Wartości elementów w formularzu @(ItemType) są rozwijane. Przekształcenia elementów są również rozwinięte. Funkcje i wartości właściwości zostały już rozwinięte w wyrażeniach. Lista elementów i wartości metadanych są ustawiane na rozszerzone wyrażenia.
 
 - Podczas fazy wykonywania kompilacji:
 
-  - Właściwości i elementy, które są zdefiniowane w obiektach docelowych, są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, a wartości właściwości są rozwijane w wyrażeniach. Wartości elementów i przekształcenia elementów są również rozwinięte. Wartości właściwości, wartości typu elementu i wartości metadanych są ustawiane na rozszerzone wyrażenia.
+  - Właściwości i elementy, które są zdefiniowane w obrębie obiektów docelowych są oceniane razem w kolejności, w jakiej się pojawiają. Funkcje właściwości są wykonywane i wartości właściwości są rozwijane w wyrażeniach. Wartości elementów i przekształcenia elementów są również rozwijane. Wartości właściwości, wartości typu elementu i wartości metadanych są ustawiane na wyrażenia rozwinięte.
 
-### <a name="subtle-effects-of-the-evaluation-order"></a>Delikatne efekty kolejności oceny
+### <a name="subtle-effects-of-the-evaluation-order"></a>Subtelne efekty zlecenia oceny
 
-W fazie oceny kompilacji właściwość Ocena poprzedza element oceny elementu. Niemniej jednak właściwości mogą mieć wartości, które są zależne od wartości elementów. Rozważmy następujący skrypt.
+W fazie oceny kompilacji oceny właściwości poprzedza oceny elementu. Niemniej jednak właściwości mogą mieć wartości, które wydają się zależeć od wartości elementu. Należy wziąć pod uwagę następujący skrypt.
 
 ```xml
 <ItemGroup>
@@ -127,19 +127,19 @@ W fazie oceny kompilacji właściwość Ocena poprzedza element oceny elementu. 
 </Target>
 ```
 
-Wykonanie zadania komunikatu wyświetla następujący komunikat:
+Wykonanie zadania Wiadomość wyświetla ten komunikat:
 
 ```
 KeyFileVersion: 1.0.0.3
 ```
 
-Wynika to z faktu, że wartość `KeyFileVersion` jest w rzeczywistości ciągiem "\@(KeyFile->"% (wersja) ")". Przekształcenia elementów i elementów nie zostały rozwinięte, gdy właściwość została najpierw zdefiniowana, więc Właściwość `KeyFileVersion` ma przypisaną wartość nierozwiniętego ciągu.
+Dzieje się tak, `KeyFileVersion` ponieważ wartość\@jest faktycznie ciąg " (KeyFile->'%(Version)')". Przekształcenia towarów i towarów nie zostały rozwinięte, `KeyFileVersion` gdy właściwość została zdefiniowana po raz pierwszy, więc właściwość została przypisana wartość ciągu nierozwińczonego.
 
-Podczas fazy wykonywania kompilacji, gdy przetwarza zadanie komunikatu, MSBuild rozszerza ciąg "\@(KeyFile->"% (wersja) ")", aby dać "1.0.0.3".
+Podczas fazy wykonywania kompilacji, podczas przetwarzania message zadanie, MSBuild\@rozszerza ciąg " (KeyFile->'%(Version)')" do wydajności "1.0.0.3".
 
-Zauważ, że ten sam komunikat będzie wyświetlany nawet wtedy, gdy właściwości i grupy elementów zostały odtworzone w odpowiedniej kolejności.
+Należy zauważyć, że ten sam komunikat pojawi się, nawet jeśli właściwości i grup towarów zostały wycofane w kolejności.
 
-W drugim przykładzie należy rozważyć, co się dzieje, gdy właściwości i grupy elementów znajdują się w elemencie targets:
+W drugim przykładzie należy wziąć pod uwagę, co może się zdarzyć, gdy grupy właściwości i towarów znajdują się w obrębie obiektów docelowych:
 
 ```xml
 <Target Name="AfterBuild">
@@ -155,15 +155,15 @@ W drugim przykładzie należy rozważyć, co się dzieje, gdy właściwości i g
 </Target>
 ```
 
-Komunikat zadania wyświetla następujący komunikat:
+Zadanie Wiadomość wyświetla ten komunikat:
 
 ```
 KeyFileVersion:
 ```
 
-Wynika to z faktu, że podczas fazy wykonywania kompilacji, właściwości i elementów w obszarze elementy docelowe są oceniane z góry na dół w tym samym czasie. Gdy `KeyFileVersion` jest zdefiniowany, `KeyFile` jest nieznany. W związku z tym transformacja elementu rozwija się do pustego ciągu.
+Dzieje się tak, ponieważ w fazie wykonywania kompilacji, grupy właściwości i elementów zdefiniowane w obiektach docelowych są oceniane od góry do dołu w tym samym czasie. Gdy `KeyFileVersion` jest `KeyFile` zdefiniowany, jest nieznany. W związku z tym transformacja elementu rozwija się do pustego ciągu.
 
-W takim przypadku odwracanie kolejności właściwości i grup elementów przywraca oryginalny komunikat:
+W takim przypadku odwrócenie kolejności właściwości i grup elementów przywraca oryginalną wiadomość:
 
 ```xml
 <Target Name="AfterBuild">
@@ -179,7 +179,7 @@ W takim przypadku odwracanie kolejności właściwości i grup elementów przywr
 </Target>
 ```
 
-Wartość `KeyFileVersion` jest ustawiona na "1.0.0.3", a nie "\@(KeyFile->"% (wersja) ")". Komunikat zadania wyświetla następujący komunikat:
+Wartość `KeyFileVersion` jest ustawiona na "1.0.0.3",\@a nie na " (KeyFile->'%(Version)')". Zadanie Wiadomość wyświetla ten komunikat:
 
 ```
 KeyFileVersion: 1.0.0.3

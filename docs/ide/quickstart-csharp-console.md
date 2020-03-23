@@ -1,7 +1,7 @@
 ---
-title: Tworzenie pierwszej C# aplikacji konsolowej przy użyciu programu Visual Studio
+title: Tworzenie pierwszej aplikacji konsoli języka C# za pomocą programu Visual Studio
 titleSuffix: ''
-description: Dowiedz się C#, jak utworzyć prostą aplikację konsolową Hello World w programie Visual Studio, krok po kroku.
+description: Dowiedz się, jak utworzyć prostą aplikację konsoli Hello World w programie Visual Studio w języku C#, krok po kroku.
 ms.custom: seodec18
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
@@ -16,82 +16,82 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579489"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki Start: Tworzenie pierwszej C# aplikacji konsolowej przy użyciu programu Visual Studio
+# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Szybki start: tworzenie pierwszej aplikacji konsoli języka C# za pomocą programu Visual Studio
 
-W tym 5-10 minut wprowadzenie do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio utworzysz prostą C# aplikację, która działa w konsoli programu.
+W tym 5-10 minut wprowadzenie do środowiska programistycznego zintegrowanego programu Visual Studio (IDE), utworzysz prostą aplikację języka C#, która działa na konsoli.
 
 ::: moniker range="vs-2017"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) , aby zainstalować ją bezpłatnie.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [plików do pobrania programu Visual Studio](https://visualstudio.microsoft.com/downloads) , aby zainstalować ją bezpłatnie.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/downloads) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utworzysz projekt C# aplikacji. Typ projektu jest dostarczany ze wszystkimi plikami szablonu, które będą potrzebne, zanim będzie można nawet dodać wszystko.
+Najpierw utworzysz projekt aplikacji języka C#. Typ projektu zawiera wszystkie potrzebne pliki szablonów, zanim jeszcze cokolwiek dodasz!
 
 ::: moniker range="vs-2017"
 
 1. Otwórz program Visual Studio 2017.
 
-2. Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
+2. Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
-3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **C#** , a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **aplikacja konsoli (.NET Core)** . Następnie nadaj nazwę projekt *HelloWorld*.
+3. W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **C#**, a następnie wybierz pozycję **.NET Core**. W środkowym okienku wybierz pozycję **Aplikacja konsoli (.NET Core)**. Następnie nazwij projekt *HelloWorld*.
 
-   ![Szablon projektu aplikacji konsolowej (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
+   ![Szablon projektu aplikacji konsoli (.NET Core) w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     Jeśli szablon projektu **aplikacja konsoli (.NET Core)** nie jest widoczny, wybierz link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** .
+     Jeśli nie widzisz szablonu projektu **aplikacji konsoli (NET Core),** wybierz łącze **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego Nowy **projekt.**
 
-   ![Wybierz łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![Wybieranie łącza Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
-     Uruchamia Instalatora programu Visual Studio. Wybierz obciążenie dla **wielu platform platformy .NET Core** , a następnie wybierz **Modyfikuj**.
+     Uruchamia instalator programu Visual Studio. Wybierz **wieloplatformowe obciążenie programistyczne .NET Core,** a następnie wybierz pozycję **Modyfikuj**.
 
-     ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Wieloplatformowe obciążenie programowe programu .NET Core w Instalatorze programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Otwórz program Visual Studio 2019.
 
-1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+1. W oknie początkowym wybierz pozycję **Utwórz nowy projekt**.
 
    ![Okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **C#** z listy język, a następnie wybierz pozycję **Windows** z listy platform. 
+1. W oknie **Utwórz nowy projekt** wprowadź lub wpisz *konsolę* w polu wyszukiwania. Następnie wybierz **pozycję C#** z listy Język, a następnie wybierz pozycję **Windows** z listy Platforma. 
 
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **Aplikacja konsolowa (.NET Core)** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtrów językowych i platformowych wybierz szablon **Aplikacji konsoli (NET Core),** a następnie wybierz pozycję **Dalej**.
 
-   ![Wybieranie C# szablonu dla aplikacji konsolowej (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+   ![Wybierz szablon C# dla aplikacji konsoli (.NET Framework)](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz szablonu **Aplikacja konsolowa (.NET Core)** , możesz go zainstalować z okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
+   > Jeśli nie widzisz szablonu **aplikacji konsoli (.NET Core),** możesz go zainstalować w oknie **Utwórz nowy projekt.** W komunikacie **Nie znajdowanie tego, czego szukasz?** **Install more tools and features**
    >
-   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "Nie znajdując tego, czego szukasz" w oknie "Utwórz nowy projekt"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
-   > Następnie w Instalator programu Visual Studio wybierz obciążenie dla **wielu platform platformy .NET Core** .
+   > Następnie w Instalatorze programu Visual Studio wybierz obciążenie **programistyczne .NET Core na różnych platformach.**
    >
-   > ![Obciążenie Międzyplatformowe dla platformy .NET Core w Instalator programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Wieloplatformowe obciążenie programowe programu .NET Core w Instalatorze programu Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze "[Create a Project](#create-a-project)".
+   > Następnie wybierz przycisk **Modyfikuj** w Instalatorze programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie. Następnie wróć do kroku 2 w tej procedurze["Utwórz projekt".](#create-a-project)
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *HelloWorld* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *helloworld* w polu **Nazwa projektu.** Następnie wybierz pozycję **Utwórz**.
 
-   ![w oknie "Konfigurowanie nowego projektu" Nazwij swój projekt "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
+   ![w oknie "Skonfiguruj nowy projekt" nazwij swój projekt "HelloWorld"](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 
-   Program Visual Studio otwiera nowy projekt.
+   Visual Studio otwiera nowy projekt.
    
 ::: moniker-end
 
@@ -99,61 +99,61 @@ Najpierw utworzysz projekt C# aplikacji. Typ projektu jest dostarczany ze wszyst
 
 ::: moniker range="vs-2017"
 
-Po wybraniu szablonu C# projektu i Nazwij swój projekt program Visual Studio tworzy prostą aplikację "Hello World".
+Po wybraniu szablonu projektu języka C# i nazwa projektu visual studio tworzy prostą aplikację "Hello World" dla Ciebie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Program Visual Studio zawiera domyślny kod "Hello world" w projekcie.
+Visual Studio zawiera domyślny kod "Hello World" w projekcie.
 
 ::: moniker-end
 
-(W tym celu wywołuje metodę <xref:System.Console.WriteLine%2A>, aby wyświetlić ciąg literału "Hello world!" w oknie konsoli).
+(Aby to zrobić, <xref:System.Console.WriteLine%2A> wywołuje metodę wyświetlania dosłownego ciągu "Hello World!" w oknie konsoli).)
 
-   ![Wyświetl domyślny kod Hello world z szablonu](../ide/media/csharp-console-helloworld-template.png)
+   ![Wyświetlanie domyślnego kodu Hello World z szablonu](../ide/media/csharp-console-helloworld-template.png)
 
-Po naciśnięciu klawisza **F5**można uruchomić program w trybie debugowania. Jednak okno konsoli jest widoczne tylko przez chwilę przed zamknięciem.
+Po naciśnięciu **klawisza F5**program można uruchomić w trybie debugowania. Jednak okno konsoli jest widoczne tylko przez chwilę przed zamknięciem.
 
-(Takie zachowanie jest spowodowane tym, że metoda `Main` kończy się po wykonaniu jednej instrukcji i dlatego aplikacja kończy działanie).
+(To zachowanie występuje, `Main` ponieważ metoda kończy się po wykonaniu pojedynczej instrukcji, a więc aplikacja kończy się.)
 
 ### <a name="add-some-code"></a>Dodaj kod
 
-Dodajmy kod w celu wstrzymania aplikacji, aby okno konsoli nie było zamykane do momentu naciśnięcia klawisza **Enter**.
+Dodajmy kod, aby wstrzymać aplikację, aby okno konsoli nie zostało zamknięte, dopóki nie naciśniesz **klawisz ENTER**.
 
-1. Dodaj następujący kod bezpośrednio po wywołaniu metody <xref:System.Console.WriteLine%2A>:
+1. Dodaj następujący kod natychmiast po <xref:System.Console.WriteLine%2A> wywołaniu metody:
 
    ```csharp
    Console.ReadLine();
    ```
 
-1. Sprawdź, czy wygląda to w edytorze kodu:
+1. Sprawdź, czy wygląda to tak w edytorze kodu:
 
-   ![Dodawanie kodu w celu wstrzymania aplikacji Hello world](../ide/media/csharp-console-helloworld-add-code.png)
+   ![Dodawanie kodu w celu wstrzymania aplikacji Hello World](../ide/media/csharp-console-helloworld-add-code.png)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-1. Wybierz przycisk **HelloWorld** na pasku narzędzi, aby uruchomić aplikację w trybie debugowania. (Lub naciśnij klawisz **F5**).
+1. Wybierz przycisk **HelloWorld** na pasku narzędzi, aby uruchomić aplikację w trybie debugowania. (Lub, można nacisnąć **klawisz F5**.)
 
-   ![Wybierz przycisk Hello world, aby uruchomić aplikację z paska narzędzi](../ide/media/csharp-console-hello-world-button.png)
+   ![Wybierz przycisk Hello World, aby uruchomić aplikację z paska narzędzi](../ide/media/csharp-console-hello-world-button.png)
 
 1. Wyświetl aplikację w oknie konsoli.
 
-   ![Okno konsoli zawierające Hello world!](../ide/media/csharp-console-hello-world.png)
+   ![Okno konsoli z hello world!](../ide/media/csharp-console-hello-world.png)
 
-### <a name="close-the-application"></a>Zamknij aplikację
+### <a name="close-the-application"></a>Zamykanie aplikacji
 
-1. Naciśnij klawisz **Enter** , aby zamknąć okno konsoli.
+1. Naciśnij **klawisz ENTER,** aby zamknąć okno konsoli.
 
-1. Zamknij okienko **danych wyjściowych** w programie Visual Studio.
+1. Zamknij okienko **dane wyjściowe** w programie Visual Studio.
 
-   ![Zamknij okienko danych wyjściowych w programie Visual Studio](../ide/media/csharp-hello-world-close-output-pane.png)
+   ![Zamykanie okienka dane wyjściowe w programie Visual Studio](../ide/media/csharp-hello-world-close-output-pane.png)
 
 1. Zamknij program Visual Studio.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że udało Ci się poznać nieco C# trochę i środowisko IDE programu Visual Studio. Aby dowiedzieć się więcej, przejdź do poniższych samouczków.
+Gratulujemy ukończenia tego szybkiego startu! Mamy nadzieję, że dowiedziałeś się trochę o C# i ide programu Visual Studio. Aby dowiedzieć się więcej, przejdź do poniższych samouczków.
 
 > [!div class="nextstepaction"]
-> [Wprowadzenie do aplikacji C# konsolowej w programie Visual Studio](../get-started/csharp/tutorial-console.md)
+> [Wprowadzenie do aplikacji konsoli języka C# w programie Visual Studio](../get-started/csharp/tutorial-console.md)

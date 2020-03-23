@@ -9,48 +9,48 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589867"
 ---
 # <a name="work-with-textures-and-images"></a>Praca z teksturami i obrazami
 
-Możesz użyć edytora obrazów w programie Visual Studio, aby tworzyć i modyfikować tekstury i obrazy. Edytor obrazów obsługuje bogate formaty tekstury i obrazów, takie jak te, które są używane w programowaniu aplikacji DirectX.
+Edytor obrazów w programie Visual Studio służy do tworzenia i modyfikowania tekstur i obrazów. Edytor obrazów obsługuje bogate tekstury i formaty obrazów, takie jak te, które są używane w tworzeniu aplikacji DirectX.
 
 > [!NOTE]
-> Edytor obrazów nie obsługuje obrazów o małym kolorze, takich jak ikony lub kursory. Aby tworzyć lub modyfikować te rodzaje obrazów, użyj [edytora obrazów dla ikonC++()](/cpp/windows/image-editor-for-icons).
+> Edytor obrazów nie obsługuje obrazów o niskich kolorach, takich jak ikony lub kursory. Aby utworzyć lub zmodyfikować te rodzaje obrazów, użyj [Edytora obrazów dla ikon (C++)](/cpp/windows/image-editor-for-icons).
 
 ## <a name="textures-and-images"></a>Tekstury i obrazy
 
-Tekstury i obrazy są, na poziomie podstawowym, tylko tabele danych, które są używane do zapewniania wizualnych szczegółów w aplikacjach graficznych. Rodzaj szczegółów, które zapewnia teksturę lub obraz, zależy od tego, w jaki sposób jest używany, ale przykłady kolorów, wartości alfa (przezroczystość), normalne wartości powierzchni i wysokość są typowymi przykładami. Podstawowa różnica między teksturą a obrazem polega na tym, że tekstura jest przeznaczona do użycia razem z reprezentacją kształtu — zwykle modelem 3D — do wyrażania kompletnego obiektu lub sceny, ale obraz jest zazwyczaj autonomiczną reprezentacją obiektu lub sceny.
+Tekstury i obrazy to na poziomie podstawowym tylko tabele danych, które są używane do dostarczania szczegółów wizualnych w aplikacjach graficznych. Rodzaj szczegółów, który zapewnia teksturę lub obraz, zależy od sposobu jego użycia, ale typowe przykłady są próbkami kolorów, wartościami alfa (przezroczystości), wartościami normalnymi powierzchni i wartościami wysokości. Podstawową różnicą między teksturą a obrazem jest to, że tekstura ma być używana razem z reprezentacją kształtu — zazwyczaj modelu 3D — do wyrażania pełnego obiektu lub sceny, ale obraz jest zazwyczaj samodzielną reprezentacją obiektu lub sceny.
 
-Wszelka tekstura może być zakodowana i skompresowana na wiele sposobów, które są ortogonalne do typu danych, które są przechowywane tekstury, lub do zwymiarowania lub "kształtu" tekstury. Jednak różne metody kodowania i kompresji dają lepsze wyniki dla różnych rodzajów danych.
+Każda tekstura może być zakodowana i skompresowana na wiele sposobów, które są ortogonalne do typu danych, które posiada tekstura, lub do wymiarowości lub "kształtu" tekstury. Jednak różne metody kodowania i kompresji dają lepsze wyniki dla różnych rodzajów danych.
 
-Korzystając z edytora obrazów, można tworzyć i modyfikować tekstury i obrazy w sposób podobny do innych edytorów obrazów. Edytor obrazów udostępnia również mipmapping i inne funkcje do użycia z grafikami 3D i obsługuje wiele wysoce skompresowanych, przyspieszanych sprzętowo formatów tekstury obsługiwanych przez technologię DirectX.
+Za pomocą Edytora obrazów można tworzyć i modyfikować tekstury i obrazy w sposób przypominający inne edytory obrazów. Edytor obrazów zapewnia również mipmapping i inne funkcje do użytku z grafiką 3D i obsługuje wiele wysoce skompresowanych, przyspieszonych sprzętowo formatów tekstur, które obsługuje DirectX.
 
 Typowe rodzaje tekstur obejmują:
 
-### <a name="texture-maps"></a>Mapy tekstury
+### <a name="texture-maps"></a>Mapy tekstur
 
-Mapy tekstury zawierają wartości kolorów, które są zorganizowane jako macierz Jednowymiarowa, dwulub trójwymiarową. Są one używane do podania szczegółów koloru dla obiektu, którego to dotyczy. Kolory są powszechnie kodowane przy użyciu kanałów RGB (czerwony, zielony, niebieski) i mogą zawierać czwarty kanał, alfa, który reprezentuje przezroczystość. Mniej często kolory mogą być zakodowane w innym schemacie kolorów lub czwarty kanał może zawierać dane inne niż alfa — na przykład wysokość.
+Mapy tekstur zawierają wartości kolorów, które są zorganizowane jako macierz jedno-, dwu- lub trójwymiarowa. Są one używane do zapewnienia szczegółów koloru obiektu, którego dotyczy problem. Kolory są często kodowane przy użyciu kanałów kolorów RGB (czerwony, zielony, niebieski) i mogą zawierać czwarty kanał alfa, który reprezentuje przezroczystość. Rzadziej kolory mogą być kodowane w innym schemacie kolorów lub czwarty kanał może zawierać dane inne niż alfa — na przykład wysokość.
 
-### <a name="normal-maps"></a>Mapy normalne
+### <a name="normal-maps"></a>Normalne mapy
 
-Mapy normalne zawierają normalne. Są one używane do zapewnienia szczegółowych informacji o oświetleniu danego obiektu. Normalne są zazwyczaj kodowane przy użyciu czerwonych, zielonych i niebieskich składników koloru do przechowywania wymiarów x, y i z wektora. Istnieją jednak inne kodowania, na przykład kodowanie, które opierają się na współrzędnych biegunowych.
+Normalne mapy zawierają normalsy powierzchni. Służą one do zapewnienia szczegółów oświetlenia na dotkniętym obiekcie. Normalsy są często kodowane przy użyciu składników koloru czerwonego, zielonego i niebieskiego do przechowywania wymiarów x, y i z wektora. Istnieją jednak inne kodowania — na przykład kodowanie oparte na współrzędnych biegunowych.
 
 ### <a name="height-maps"></a>Mapy wysokości
 
-Mapy wysokości zawierają dane pól wysokości. Są one używane do zapewnienia postaci geometrycznej szczegółów dla danego obiektu, przy użyciu kodu modułu cieniującego do obliczenia żądanego efektu lub zapewnienia punktów danych do użycia, takich jak generacja terenu. Wartości wysokości są powszechnie kodowane przy użyciu jednego kanału w tekstury.
+Mapy wysokości zawierają dane dotyczące pola wysokości. Są one używane do zapewnienia formy szczegółów geometrycznych obiektu, którego dotyczy luka — przy użyciu kodu modułu cieniującego do obliczenia pożądanego efektu — lub w celu zapewnienia punktów danych dla zastosowań takich jak generowanie terenu. Wartości wysokości są często kodowane przy użyciu jednego kanału w teksturze.
 
-### <a name="cube-maps"></a>Mapy modułów
+### <a name="cube-maps"></a>Mapy sześcianów
 
-Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalne, ale są zorganizowane jako sześć tekstur na powierzchniach modułu. W związku z tym mapy modułów nie są próbkowane przez dostarczenie współrzędnych tekstury, ale przez dostarczenie wektora, którego źródłem jest środek modułu; próbka jest wykonywana w punkcie, w którym wektor przecina moduł. Mapy modułów służą do zapewnienia przybliżenia środowiska, którego można użyć do obliczenia odbić — jest to nazywane *mapowaniem środowiska*— lub w celu zapewnienia tekstury dla obiektów sferycznych o mniejszej zniekształceniu niż w przypadku warstw podstawowych.
+Mapy modułów mogą zawierać różne typy danych — na przykład kolory lub normalsy — ale są zorganizowane jako sześć tekstur na twarzach modułu. Z tego powodu mapy modułu nie są próbkowane przez dostarczanie współrzędnych tekstury, ale przez dostarczanie wektora, którego pochodzenie jest środkiem modułu; próbka jest pobierana w miejscu, w którym wektor przecina sześcian. Mapy modułów służą do przybliżenia środowiska, które może być używane do obliczania odbić — jest to nazywane *mapowaniem środowiska*— lub w celu zapewnienia tekstury obiektom sferycznym o mniejszym zniekształceniu niż podstawowe, dwuwymiarowe tekstury.
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Edytor obrazów](../designers/image-editor.md)|Opisuje, jak używać edytora obrazów do pracy z teksturami i obrazami.|
-|[Przykłady edytora obrazów](../designers/how-to-create-a-basic-texture.md)|Zawiera łącza do tematów, które pokazują, jak używać edytora obrazów do wykonywania typowych zadań przetwarzania obrazów.|
+|[Edytor obrazów](../designers/image-editor.md)|W tym artykule opisano sposób korzystania z Edytora obrazów do pracy z teksturami i obrazami.|
+|[Przykłady edytora obrazów](../designers/how-to-create-a-basic-texture.md)|Zawiera łącza do tematów, które pokazują, jak używać Edytora obrazów do wykonywania typowych zadań przetwarzania obrazu.|

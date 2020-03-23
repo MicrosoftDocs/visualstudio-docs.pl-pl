@@ -1,6 +1,6 @@
 ---
-title: Ważność i pomijanie reguły analizatora
-ms.date: 09/23/2019
+title: Ważność i tłumienie reguły analizatora
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,50 +11,50 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c24164f31ca444d17035f145a1783c69dfb2585b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 67fd157ad4db24acbc1676ea0a9a1d79e9eb34f9
+ms.sourcegitcommit: 92361aac3665a934faa081e1d1ea89a067b01c5b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587202"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431413"
 ---
 # <a name="use-code-analyzers"></a>Korzystanie z analizatorów kodu
 
-.NET Compiler Platform ("Roslyn") analizatory kodu analizują C# kod lub Visual Basic w trakcie pisania. Każda *Diagnostyka* lub reguła ma domyślną ważność i stan pomijania, który można zastąpić dla projektu. W tym artykule omówiono Ustawianie ważności reguły, korzystanie z zestawów reguł i pomijanie naruszeń.
+Analizatory kodu platformy kompilatora platformy .NET ("Roslyn") analizują kod języka C# lub Visual Basic podczas pisania. Każda *diagnostyka* lub reguła ma domyślny stan ważności i tłumienia, który można nadpisać dla projektu. W tym artykule omówiono ważność reguły ustawiania, używania zestawów reguł i wygaszania naruszeń.
 
-## <a name="analyzers-in-solution-explorer"></a>Analizatory w Eksplorator rozwiązań
+## <a name="analyzers-in-solution-explorer"></a>Analizatory w Eksploratorze rozwiązań
 
-Można wykonać wiele czynności dostosowywania diagnostyki analizatora **Eksplorator rozwiązań**. Jeśli [instalujesz analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet, węzeł **analizatory** zostanie wyświetlony w węźle **odwołania** lub **zależności** w **Eksplorator rozwiązań**. W przypadku rozwinięcia **analizatorów, a**następnie rozszerzenia jednego z zestawów, zostanie wyświetlona cała Diagnostyka w zestawie.
+Można wykonać wiele dostosowywania diagnostyki analizatora z **Eksploratora rozwiązań**. Jeśli [instalujesz analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet, węzeł **Analizatory** pojawi się w węźle **Odwołania** lub **zależności** w **Eksploratorze rozwiązań.** Jeśli rozwiniesz **Analizatory**, a następnie rozwiń jeden z zestawów analizatora, zobaczysz wszystkie diagnostyki w zestawie.
 
-![Węzeł analizatorów w Eksplorator rozwiązań](media/analyzers-expanded-in-solution-explorer.png)
+![Węzeł analizatorów w Eksploratorze rozwiązań](media/analyzers-expanded-in-solution-explorer.png)
 
-Właściwości diagnostyki, w tym jej opis i domyślną ważność, można wyświetlić w oknie **Właściwości** . Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy regułę i wybierz pozycję **Właściwości**lub wybierz regułę, a następnie naciśnij klawisz **Alt**+**Enter**.
+Można wyświetlić właściwości diagnostyki, w tym jej opis i ważność domyślną, w oknie **Właściwości.** Aby wyświetlić właściwości, kliknij prawym przyciskiem myszy regułę i wybierz polecenie **Właściwości**lub zaznacz regułę, a następnie naciśnij klawisz **Alt**+**Enter**.
 
-![Właściwości diagnostyczne w okno Właściwości](media/analyzer-diagnostic-properties.png)
+![Właściwości diagnostyczne w oknie Właściwości](media/analyzer-diagnostic-properties.png)
 
-Aby wyświetlić dokumentację online dla diagnostyki, kliknij prawym przyciskiem myszy diagnostykę i wybierz polecenie **Wyświetl pomoc**.
+Aby wyświetlić dokumentację online dotyczącą diagnostyki, kliknij prawym przyciskiem myszy diagnostykę i wybierz pozycję **Wyświetl Pomoc**.
 
-Ikony obok każdej diagnostyki w **Eksplorator rozwiązań** odpowiadają ikonom widocznym w zestawie reguł po otwarciu go w edytorze:
+Ikony obok każdej diagnostyki w **Eksploratorze rozwiązań** odpowiadają ikonom widocznym w zestawie reguł po otwarciu go w edytorze:
 
-- Symbol "x" w okręgu wskazuje [ważność](#rule-severity) **błędu**
-- "!" w trójkącie wskazuje [ważność](#rule-severity) **ostrzeżenia**
-- "i" w okręgu wskazuje [ważność](#rule-severity) **informacji**
-- "i" w okręgu w jasnym kolorze tła wskazuje [ważność](#rule-severity) **ukrycia**
-- strzałka skierowana w dół w okręgu wskazuje, że Diagnostyka jest pomijana
+- "x" w okręgu wskazuje [na ważność](#rule-severity) **błędu**
+- "!" w trójkącie wskazuje na [ważność](#rule-severity) **ostrzeżenia**
+- "i" w kole wskazuje na [ważność](#rule-severity) **informacji**
+- litera "i" w okręgu na jasnym tle wskazuje **na** [ważność](#rule-severity)
+- strzałka skierowana w dół w okręgu wskazuje, że diagnostyka jest wygaszony
 
-![Ikony diagnostyki w Eksplorator rozwiązań](media/diagnostics-icons-solution-explorer.png)
+![Ikony diagnostyki w Eksploratorze rozwiązań](media/diagnostics-icons-solution-explorer.png)
 
 ## <a name="rule-severity"></a>Ważność reguły
 
 ::: moniker range=">=vs-2019"
 
-Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [są instalowane analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. Począwszy od programu Visual Studio 2019 w wersji 16,3, można skonfigurować ważność reguły [w pliku EditorConfig](#set-rule-severity-in-an-editorconfig-file). Możesz również zmienić ważność reguły [z Eksplorator rozwiązań](#set-rule-severity-from-solution-explorer) lub [w pliku zestawu reguł](#set-rule-severity-in-the-rule-set-file).
+Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [instalujesz analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. Począwszy od programu Visual Studio 2019 w wersji 16.3, można skonfigurować ważność reguły [w pliku EditorConfig](#set-rule-severity-in-an-editorconfig-file). Ważność reguły można również zmienić [w Eksploratorze rozwiązań](#set-rule-severity-from-solution-explorer) lub [w pliku zestawu reguł](#set-rule-severity-in-the-rule-set-file).
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [są instalowane analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. Można zmienić ważność reguły [z Eksplorator rozwiązań](#set-rule-severity-from-solution-explorer) lub [w pliku zestawu reguł](#set-rule-severity-in-the-rule-set-file).
+Można skonfigurować ważność reguł analizatora lub *diagnostyki*, jeśli [instalujesz analizatory](../code-quality/install-roslyn-analyzers.md) jako pakiet NuGet. Ważność reguły można zmienić [w Eksploratorze rozwiązań](#set-rule-severity-from-solution-explorer) lub [w pliku zestawu reguł](#set-rule-severity-in-the-rule-set-file).
 
 ::: moniker-end
 
@@ -62,38 +62,68 @@ W poniższej tabeli przedstawiono różne opcje ważności:
 
 | Ważność (Eksplorator rozwiązań) | Ważność (plik EditorConfig) | Zachowanie w czasie kompilacji | Zachowanie edytora |
 |-|-|-|
-| Błąd | `error` | Naruszenia są wyświetlane jako *Błędy* w Lista błędów i w danych wyjściowych kompilacji w wierszu polecenia i powodują niepowodzenie kompilacji.| Kod powodujący problemy jest podkreślony czerwoną czerwoną ramką na pasku przewijania. |
-| Ostrzeżenie | `warning` | Naruszenia są wyświetlane jako *ostrzeżenia* w Lista błędów i w danych wyjściowych kompilacji wiersza polecenia, ale nie powodują awarii kompilacji. | Kod powodujący problemy jest podkreślony zieloną, zieloną ramką na pasku przewijania. |
-| Informacje | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* w Lista błędów, a nie w danych wyjściowych kompilacji wiersza polecenia. | Kod powodujący problemy jest podkreślony szarym i oznaczonym przez małe szare pole na pasku przewijania. |
-| Hidden | `silent` | Niewidoczny dla użytkownika. | Niewidoczny dla użytkownika. Diagnostyka jest jednak raportowana w aparacie diagnostyki IDE. |
-| Brak | `none` | Całkowicie pomijane. | Całkowicie pomijane. |
-| Domyślny | `default` | Odnosi się do domyślnej wagi reguły. Aby określić, jaka jest wartość domyślna dla reguły, należy poszukać w okno Właściwości. | Odnosi się do domyślnej wagi reguły. |
+| Błąd | `error` | Naruszenia są wyświetlane jako błędy na liście *błędów* i w danych wyjściowych kompilacji wiersza polecenia i powodują niepowodzenie kompilacji.| Naruszający kod jest podkreślony czerwoną falistą i oznaczony małym czerwonym polem na pasku przewijania. |
+| Ostrzeżenie | `warning` | Naruszenia są wyświetlane jako *ostrzeżenia* na liście błędów i w danych wyjściowych kompilacji wiersza polecenia, ale nie powodują awarii kompilacji. | Naruszający kod jest podkreślony zielonym squiggle i oznaczony małym zielonym polem na pasku przewijania. |
+| Info | `suggestion` | Naruszenia są wyświetlane jako *komunikaty* na liście błędów, a nie w ogóle w danych wyjściowych kompilacji wiersza polecenia. | Naruszający kod jest podkreślony szarym squiggle i oznaczony małym szarym polem na pasku przewijania. |
+| Ukryty | `silent` | Niewidoczne dla użytkownika. | Niewidoczne dla użytkownika. Diagnostyka jest jednak zgłaszana do aparatu diagnostycznego IDE. |
+| Brak | `none` | Całkowicie stłumiony. | Całkowicie stłumiony. |
+| Domyślne | `default` | Odpowiada domyślnej ważności reguły. Aby określić, jaka jest wartość domyślna reguły, poszukaj w oknie Właściwości. | Odpowiada domyślnej ważności reguły. |
 
-Poniższy zrzut ekranu edytora kodu pokazuje trzy różne naruszenia z różnymi serwerami. Zwróć uwagę na kolor zygzaka i małego, kolorowego kwadratu na pasku przewijania po prawej stronie.
+Poniższy zrzut ekranu edytora kodu pokazuje trzy różne naruszenia o różnych ważnościach. Zwróć uwagę na kolor faliste i mały, kolorowy kwadrat na pasku przewijania po prawej stronie.
 
-![Błąd, ostrzeżenie i naruszenie informacji w edytorze kodu](media/diagnostics-severity-colors.png)
+![Naruszenie błędów, ostrzeżeń i informacji w edytorze kodu](media/diagnostics-severity-colors.png)
 
-Poniższy zrzut ekranu przedstawia te same trzy naruszenia, które są wyświetlane w Lista błędów:
+Poniższy zrzut ekranu przedstawia te same trzy naruszenia, które pojawiają się na liście błędów:
 
-![Błąd, ostrzeżenie i naruszenie informacji w Lista błędów](media/diagnostics-severities-in-error-list.png)
+![Naruszenie błędów, ostrzeżeń i informacji na liście błędów](media/diagnostics-severities-in-error-list.png)
 
 ::: moniker range=">=vs-2019"
 
 ### <a name="set-rule-severity-in-an-editorconfig-file"></a>Ustawianie ważności reguły w pliku EditorConfig
 
-(Program Visual Studio 2019 w wersji 16,3 lub nowszej)
+(Visual Studio 2019 w wersji 16.3 i nowszej)
 
-Ogólna składnia służąca do określania ważności reguły w pliku EditorConfig jest następująca:
+Ważność ostrzeżeń kompilatora lub reguł analizatora można ustawić w pliku EditorConfig z następującą składnią:
 
 `dotnet_diagnostic.<rule ID>.severity = <severity>`
 
-Ustawienie ważności reguły w pliku EditorConfig ma pierwszeństwo przed ważnością ustawioną w zestawie reguł lub w Eksplorator rozwiązań. Ważność można skonfigurować [ręcznie](#manually-configure-rule-severity) w pliku EditorConfig lub [automatycznie](#automatically-configure-rule-severity) za pomocą żarówki, która pojawia się obok naruszenia.
+Ustawienie ważności reguły w pliku EditorConfig ma pierwszeństwo przed ważnością ustawioną w zestawie reguł lub w Eksploratorze rozwiązań. Ważność można [ręcznie](#manually-configure-rule-severity) skonfigurować w pliku EditorConfig lub [automatycznie](#automatically-configure-rule-severity) za pośrednictwem żarówki, która pojawia się obok naruszenia.
 
-#### <a name="manually-configure-rule-severity"></a>Ręcznie skonfiguruj ważność reguły
+### <a name="set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file"></a>Ustawianie ważności reguł wielu reguł analizatora jednocześnie w pliku EditorConfig
 
-1. Jeśli nie masz jeszcze pliku EditorConfig dla projektu, [Dodaj go](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
+(Visual Studio 2019 w wersji 16.5 i nowszej)
 
-2. Dodaj wpis dla każdej reguły, która ma zostać skonfigurowana w ramach odpowiedniego rozszerzenia pliku. Na przykład, aby ustawić ważność [CA1822](ca1822.md) na `error` dla C# plików, wpis wygląda następująco:
+Można ustawić ważność dla określonej kategorii reguł analizatora lub dla wszystkich reguł analizatora z jednego wpisu w pliku EditorConfig.
+
+- Ustaw ważność reguły dla kategorii reguł analizatora:
+
+`dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity>`
+
+- Ustaw ważność reguły dla wszystkich reguł analizatora:
+
+`dotnet_analyzer_diagnostic.severity = <severity>`
+
+Jeśli masz wiele wpisów, które mają zastosowanie do określonego identyfikatora reguły, poniżej znajduje się kolejność pierwszeństwa, aby wybrać odpowiedni wpis:
+
+- Wpis ważności dla indywidualnej reguły według identyfikatora ma pierwszeństwo przed wpisem ważności dla kategorii.
+- Wpis ważności dla kategorii ma pierwszeństwo przed wpisem ważności dla wszystkich reguł analizatora.
+
+Rozważmy następujący przykład EditorConfig, gdzie [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) ma kategorię "Wydajność":
+
+   ```ini
+   [*.cs]
+   dotnet_diagnostic.CA1822.severity = error
+   dotnet_analyzer_diagnostic.category-performance.severity = warning
+   dotnet_analyzer_diagnostic.severity = suggestion
+   ```
+
+W poprzednim przykładzie wszystkie trzy wpisy mają zastosowanie do ca1822. Jednak przy użyciu określonych reguł pierwszeństwa, pierwszy wpis ważności oparty na identyfikatorze reguły wygrywa nad kolejnymi wpisami. W tym przykładzie CA1822 będzie miał skuteczną ważność "błąd". Wszystkie pozostałe reguły z kategorią "Wydajność" będą miały ważność "ostrzeżenie". Wszystkie pozostałe reguły analizatora, które nie mają kategorii "Wydajność", będą miały ważność "sugestia".
+
+#### <a name="manually-configure-rule-severity"></a>Ręczne konfigurowanie ważności reguły
+
+1. Jeśli nie masz jeszcze pliku EditorConfig dla projektu, [dodaj jeden](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)plik .
+
+2. Dodaj wpis dla każdej reguły, którą chcesz skonfigurować w ramach odpowiedniego rozszerzenia pliku. Na przykład, aby ustawić ważność dla [CA1822](ca1822.md) `error` dla plików Języka C#, wpis wygląda następująco:
 
    ```ini
    [*.cs]
@@ -101,149 +131,246 @@ Ustawienie ważności reguły w pliku EditorConfig ma pierwszeństwo przed ważn
    ```
 
 > [!NOTE]
-> W przypadku analizatorów stylu kodu IDE można także skonfigurować je w pliku EditorConfig przy użyciu innej składni, na przykład `dotnet_style_qualification_for_field = false:suggestion`. Jeśli jednak ustawisz ważność przy użyciu składni `dotnet_diagnostic`, ma pierwszeństwo. Aby uzyskać więcej informacji, zobacz [konwencje językowe dla EditorConfig](../ide/editorconfig-language-conventions.md).
+> W przypadku analizatorów w stylu kodu IDE można je również skonfigurować w pliku EditorConfig przy użyciu innej składni, `dotnet_style_qualification_for_field = false:suggestion`na przykład . Jednak jeśli ustawisz ważność `dotnet_diagnostic` przy użyciu składni, ma pierwszeństwo. Aby uzyskać więcej informacji, zobacz [Konwencje języka dla EditorConfig](../ide/editorconfig-language-conventions.md).
 
-#### <a name="automatically-configure-rule-severity"></a>Automatycznie Konfiguruj ważność reguły
+#### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>Konwertowanie istniejącego pliku ruleset na plik EditorConfig
 
-Program Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły z menu żarówki [szybkich działań](../ide/quick-actions.md) .
+Począwszy od programu Visual Studio 2019 w wersji 16.5, pliki uszeprzonego są przestarzałe na rzecz pliku EditorConfig dla konfiguracji analizatora dla kodu zarządzanego. Większość narzędzi programu Visual Studio dla konfiguracji ważności reguły analizatora została zaktualizowana do pracy z plikami EditorConfig zamiast plików zestawu reguł. EditorConfig pliki umożliwiają skonfigurowanie zarówno ważności reguły analizatora i opcje analizatora, w tym opcje stylu kodu IDE programu Visual Studio. Zdecydowanie zaleca się przekonwertowanie istniejącego pliku zieć reguł na plik EditorConfig. Zaleca się również zapisanie pliku EditorConfig w katalogu głównym repozytorium lub w folderze rozwiązania. Korzystając z katalogu głównego repozytorium lub folderu rozwiązania, upewnij się, że ustawienia ważności z tego pliku są automatycznie stosowane odpowiednio do całego repozytorium lub rozwiązania.
 
-1. Po wystąpieniu naruszenia, umieść wskaźnik myszy nad naruszeniem w edytorze i otwórz menu żarówki. Lub umieść kursor w wierszu i naciśnij klawisz **Ctrl**+ **.** (kropka).
+Istnieje kilka sposobów konwersji istniejącego pliku rozstawu reguł na plik EditorConfig:
 
-2. W menu żarówki wybierz pozycję **Konfiguruj lub Pomiń problemy** > **Skonfiguruj \<Identyfikator reguły > ważność**.
+- Z Edytora reguł w programie Visual Studio (wymaga programu Visual Studio 2019 16.5 lub nowszego). Jeśli projekt używa już określonego pliku usterek jako jego `CodeAnalysisRuleSet`, można przekonwertować go na równoważny plik EditorConfig z Edytora reguł w programie Visual Studio.
 
-   ![Skonfiguruj ważność reguły z poziomu menu żarówki w programie Visual Studio](media/configure-rule-severity.png)
+    1. Kliknij dwukrotnie plik pliku zawierającego reguły w Eksploratorze rozwiązań.
+
+       Plik ruleset powinien zostać otwarty w Edytorze reguł. W górnej części edytora zasad powinien zostać wyświetlony klikalny **pasek informacyjny.**
+
+       ![Konwertuj plik reguł na EditorConfig w Edytorze reguł](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
+
+    2. **Kliknij** łącze paska informacyjnego.
+
+       Powinno to otworzyć okno dialogowe **Zapisz jako,** które umożliwia wybranie katalogu, w którym chcesz wygenerować plik EditorConfig.
+
+    3. **Kliknij** przycisk **Zapisz,** aby wygenerować plik EditorConfig.
+
+       Wygenerowany EditorConfig powinien zostać otwarty w edytorze. Ponadto właściwość `CodeAnalysisRuleSet` MSBuild jest aktualizowana w pliku projektu, dzięki czemu nie odwołuje się już do oryginalnego pliku pliku pliku ruleset.
+
+- Z wiersza polecenia:
+
+    1. Zainstaluj pakiet NuGet [Microsoft.CodeAnalysis.RulesetToEditorconfigConverter](https://www.nuget.org/packages/Microsoft.CodeAnalysis.RulesetToEditorconfigConverter).
+
+    2. Wykonywanie `RulesetToEditorconfigConverter.exe` z zainstalowanego pakietu ze ścieżkami do pliku zestawu reguł i pliku EditorConfig jako argumentami wiersza polecenia.
+
+   ```
+   Usage: RulesetToEditorconfigConverter.exe <%ruleset_file%> [<%path_to_editorconfig%>]
+   ```
+
+Oto przykładowy plik ruleset do konwersji:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules for ConsoleApp" Description="Code analysis rules for ConsoleApp.csproj." ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1001" Action="Warning" />
+    <Rule Id="CA1821" Action="Warning" />
+    <Rule Id="CA2213" Action="Warning" />
+    <Rule Id="CA2231" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+Oto przekonwertowany plik EditorConfig:
+
+```ini
+# NOTE: Requires **VS2019 16.3** or later
+
+# Rules for ConsoleApp
+# Description: Code analysis rules for ConsoleApp.csproj.
+
+# Code files
+[*.{cs,vb}]
+
+
+dotnet_diagnostic.CA1001.severity = warning
+
+dotnet_diagnostic.CA1821.severity = warning
+
+dotnet_diagnostic.CA2213.severity = warning
+
+dotnet_diagnostic.CA2231.severity = warning
+```
+
+#### <a name="automatically-configure-rule-severity"></a>Automatyczne konfigurowanie ważności reguły
+
+##### <a name="configure-from-light-bulb-menu"></a>Konfigurowanie z menu żarówki
+
+Visual Studio zapewnia wygodny sposób konfigurowania ważności reguły z menu żarówki [Szybkie akcje.](../ide/quick-actions.md)
+
+1. Po wystąpieniu naruszenia najedź kursorem na naruszenie w edytorze i otwórz menu żarówki. Możesz też umieścić kursor na linii i nacisnąć klawisz **Ctrl**+**.** (okres).
+
+2. Z menu żarówki wybierz pozycję **Konfiguruj lub wyłącz problemy** > **Konfigurowanie \<identyfikatora reguły> ważności**.
+
+   ![Konfigurowanie ważności reguły z menu żarówki w programie Visual Studio](media/configure-rule-severity.png)
 
 3. W tym miejscu wybierz jedną z opcji ważności.
 
-   ![Skonfiguruj ważność reguły jako sugestię](media/configure-rule-severity-suggestion.png)
+   ![Konfigurowanie ważności reguły jako sugestii](media/configure-rule-severity-suggestion.png)
 
-   Program Visual Studio dodaje wpis do pliku EditorConfig, aby skonfigurować regułę do żądanego poziomu, jak pokazano w polu podglądu.
+   Visual Studio dodaje wpis do editorconfig pliku, aby skonfigurować regułę do żądanego poziomu, jak pokazano w polu podglądu.
 
    > [!TIP]
-   > Jeśli nie masz jeszcze pliku EditorConfig w projekcie, program Visual Studio utworzy go dla Ciebie.
+   > Jeśli nie masz jeszcze EditorConfig pliku w projekcie, Visual Studio tworzy jeden dla Ciebie.
+
+##### <a name="configure-from-error-list"></a>Konfigurowanie z listy błędów
+
+Visual Studio zapewnia również wygodny sposób konfigurowania ważności reguły z menu kontekstowego listy błędów.
+
+1. Po wystąpieniu naruszenia kliknij prawym przyciskiem myszy wpis diagnostyczny na liście błędów.
+
+2. Z menu kontekstowego wybierz polecenie **Ustaw ważność**.
+
+   ![Konfigurowanie ważności reguły z listy błędów w programie Visual Studio](media/configure-rule-severity-error-list.png)
+
+3. W tym miejscu wybierz jedną z opcji ważności.
+
+   Visual Studio dodaje wpis do editorconfig pliku, aby skonfigurować regułę do żądanego poziomu.
+
+   > [!TIP]
+   > Jeśli nie masz jeszcze EditorConfig pliku w projekcie, Visual Studio tworzy jeden dla Ciebie.
 
 ::: moniker-end
 
-### <a name="set-rule-severity-from-solution-explorer"></a>Ustaw ważność reguły na podstawie Eksplorator rozwiązań
+### <a name="set-rule-severity-from-solution-explorer"></a>Ustawianie ważności reguły w Eksploratorze rozwiązań
 
-1. W **Eksplorator rozwiązań**rozwiń węzeł **odwołania** > **analizatory** (lub **zależności** > **analizatory** dla projektów .NET Core).
+1. W Eksploratorze rozwiązań rozwiń**analizatory** **odwołań** > (lub**analizatory** **zależności** > dla projektów .NET Core).
 
-1. Rozwiń zestaw, który zawiera regułę, dla której chcesz ustawić ważność.
+2. Rozwiń zestaw zawierający regułę, dla której chcesz ustawić ważność.
 
-1. Kliknij prawym przyciskiem myszy regułę, a następnie wybierz pozycję **Ustaw ważność zestawu reguł**. W menu rozwijanym wybierz jedną z opcji ważności.
+::: moniker range=">=vs-2019"
+3. Kliknij prawym przyciskiem myszy regułę i wybierz polecenie **Ustaw ważność**. W menu kontekstowym wybierz jedną z opcji ważności.
 
-   Ważność reguły jest zapisywana w pliku aktywnego zestawu reguł.
+   Visual Studio dodaje wpis do editorconfig pliku, aby skonfigurować regułę do żądanego poziomu. Jeśli projekt używa pliku usiepów zamiast pliku EditorConfig, wpis ważności jest dodawany do pliku ruleset.
 
-### <a name="set-rule-severity-in-the-rule-set-file"></a>Ustaw ważność reguły w pliku zestawu reguł
+   > [!TIP]
+   > Jeśli nie masz jeszcze EditorConfig plik lub plik ruleset w projekcie, Visual Studio tworzy nowy plik EditorConfig dla Ciebie.
+::: moniker-end
 
-![Plik zestawu reguł w Eksplorator rozwiązań](media/ruleset-in-solution-explorer.png)
+::: moniker range="vs-2017"
+3. Kliknij prawym przyciskiem myszy regułę i wybierz polecenie **Ustaw ważność zestawu reguł**. W menu kontekstowym wybierz jedną z opcji ważności.
 
-1. Otwórz plik aktywnego zestawu reguł, klikając go dwukrotnie w **Eksplorator rozwiązań**, wybierając pozycję **Otwórz aktywny zestaw reguł** w menu rozwijanym prawym przyciskiem myszy węzła **odwołania** > **analizatory** , lub wybierając pozycję **Otwórz** na stronie właściwości **analizy kodu** dla projektu.
+   Ważność reguły jest zapisywana w aktywnym pliku zestawu reguł.
+::: moniker-end
 
-   Jeśli po raz pierwszy edytujesz zestaw reguł, program Visual Studio tworzy kopię domyślnego pliku zestawu reguł, nazywa ją *\<projectname >. regułą*i dodaje ją do projektu. Ten niestandardowy zestaw reguł jest również aktywnym zestawem reguł dla projektu.
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Ustawianie ważności reguły w pliku zestawu reguł
+
+![Plik zestawu reguł w Eksploratorze rozwiązań](media/ruleset-in-solution-explorer.png)
+
+1. Otwórz aktywny plik zestawu reguł, klikając go dwukrotnie w **Eksploratorze rozwiązań,** wybierając **polecenie Otwórz aktywny zestaw reguł** w menu prawym przyciskiem myszy **węzła Analizatory odwołań** > **Analyzers** lub wybierając **pozycję Otwórz** na stronie właściwości **Analiza kodu** dla projektu.
+
+   Jeśli jest to pierwszy raz, gdy edytujesz zestaw reguł, program Visual Studio tworzy kopię domyślnego pliku zestawu reguł, nazywa go * \<projectname>.ruleset*i dodaje go do projektu. Ten niestandardowy zestaw reguł staje się również aktywnym zestawem reguł dla projektu.
 
    > [!NOTE]
-   > Projekty .NET Core i .NET Standard nie obsługują poleceń menu dla zestawów reguł w **Eksplorator rozwiązań**, na przykład **Otwórz aktywny zestaw reguł**. Aby określić regułę niedomyślną dla projektu .NET Core lub .NET Standard, ręcznie [Dodaj właściwość **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) do pliku projektu. Nadal można skonfigurować reguły w ramach zestawu reguł w interfejsie użytkownika edytora zestawu reguł programu Visual Studio.
+   > Projekty .NET Core i .NET Standard nie obsługują poleceń menu dla zestawów reguł w **Eksploratorze rozwiązań,** na przykład **Otwórz aktywny zestaw reguł**. Aby określić nie domyślny zestaw reguł dla projektu .NET Core lub .NET Standard, należy ręcznie [dodać właściwość **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) do pliku projektu. Nadal można skonfigurować reguły w ramach zestawu reguł w interfejsie użytkownika edytora reguł programu Visual Studio.
 
-1. Przejdź do reguły, rozszerzając jej zawierający zestaw.
+1. Przejdź do reguły, rozwijając jej zestaw zawierający.
 
-1. W kolumnie **Akcja** wybierz wartość, aby otworzyć listę rozwijaną, a następnie wybierz odpowiednią ważność z listy.
+1. W kolumnie **Akcja** wybierz wartość, aby otworzyć listę rozwijaną, a następnie wybierz żądaną ważność z listy.
 
    ![Plik zestawu reguł otwarty w edytorze](media/ruleset-file-in-editor.png)
 
-## <a name="suppress-violations"></a>Pomiń naruszenia
+## <a name="suppress-violations"></a>Pomijanie naruszeń
 
-Istnieje wiele sposobów pomijania naruszeń reguł:
+Istnieje wiele sposobów na pomijanie naruszeń reguł:
 
 ::: moniker range=">=vs-2019"
 
 - W **pliku EditorConfig**
 
-  Ustaw ważność na `none`, na przykład `dotnet_diagnostic.CA1822.severity = none`.
+  Ustaw ważność `none`na , `dotnet_diagnostic.CA1822.severity = none`na przykład .
 
-- Z menu **Analizuj**
+- Z menu **Analiza**
 
-  Wybierz pozycję **analizuj** > **Kompiluj i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
+  Wybierz **pozycję Analizuj** > **kompilację i pomijaj aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "baselining".
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-- Z menu **Analizuj**
+- Z menu **Analiza**
 
-  Wybierz pozycję **analizuj** > **Uruchom analizę kodu i Pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "określania poziomu odniesienia".
+  Wybierz **opcję Analizuj** > **analizę kodu przebiegu i pomiń aktywne problemy** na pasku menu, aby pominąć wszystkie bieżące naruszenia. Jest to czasami określane jako "baselining".
 
 ::: moniker-end
 
-- Z **Eksplorator rozwiązań**
+- Z **Eksploratora rozwiązań**
 
   Ustaw ważność reguły na **Brak**.
 
-- Z **edytora zestawu reguł**
+- Z **edytora zestawów reguł**
 
-  Usuń zaznaczenie pola obok jego nazwy lub ustaw opcję **Akcja** na **Brak**.
+  Wyezwuj pole wyboru obok jego nazwy lub ustaw **opcję Akcja** na **Brak**.
 
 - Z **edytora kodu**
 
-  Umieść kursor w wierszu kodu z naruszeniem, a następnie naciśnij klawisz **Ctrl**+**kropki (.)** , aby otworzyć menu **szybkie akcje** . Wybierz opcję **Pomijaj CAXXXX** > **w pliku źródłowym/in**.
+  Umieść kursor w wierszu kodu z naruszeniem i naciśnij klawisz **Ctrl**+**Period (.),** aby otworzyć menu **Szybkie akcje.** Wybierz **opcję Wygaszanie CAXXXX** > **w pliku tłumienia źródła/w .**
 
-  ![Pomiń diagnostykę z menu szybkich akcji](media/suppress-diagnostic-from-editor.png)
+  ![Pomijanie diagnostyki z menu szybkich akcji](media/suppress-diagnostic-from-editor.png)
 
-- Z **Lista błędów**
+- Z **listy błędów**
 
-  Wybierz reguły, które chcesz pominąć, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **pomiń** > **w polu Źródło/w pliku**pominięć.
+  Zaznacz reguły, które chcesz pominąć, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Wygasij** > **w pliku pomijania źródła/w obszarze pomijania**.
 
-  - W przypadku pominięcia **w źródle**zostanie otwarte okno dialogowe **Podgląd zmian** z podglądem C# [#pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic #Disable dyrektywie [ostrzegawczej](/dotnet/visual-basic/language-reference/directives/directives) , która jest dodawana do kodu źródłowego.
+  - Jeśli wygasniesz **w źródle,** zostanie otwarte okno dialogowe **Zmiany podglądu** i zostanie wyświetlony podgląd [ostrzeżenia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) języka C# lub dyrektywy o ostrzeżeniu języka Visual Basic [#Disable,](/dotnet/visual-basic/language-reference/directives/directives) która jest dodana do kodu źródłowego.
 
-    ![Wersja zapoznawcza dodawania #pragma ostrzeżenie w pliku kodu](media/pragma-warning-preview.png)
+    ![Podgląd dodawania ostrzeżenia #pragma w pliku kodu](media/pragma-warning-preview.png)
 
-  - W przypadku wybrania **w pliku pomijania**zostanie otwarte okno dialogowe **Podgląd zmian** i zostanie wyświetlony podgląd atrybutu <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>, który zostanie dodany do globalnego pliku pominięć.
+  - Jeśli wybierzesz **opcję W pliku pomijania,** zostanie otwarte <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> okno dialogowe Podgląd **zmian** i zostanie wyświetlony podgląd atrybutu dodanego do globalnego pliku wygaszania.
 
-    ![Wersja zapoznawcza dodawania atrybutu SuppressMessage do pliku pominięcia](media/preview-changes-in-suppression-file.png)
+    ![Podgląd dodawania atrybutu SuppressMessage do pliku pomijania](media/preview-changes-in-suppression-file.png)
 
-  W oknie dialogowym **Podgląd zmian** wybierz pozycję **Zastosuj**.
+  W oknie **dialogowym Zmiany podglądu** wybierz pozycję **Zastosuj**.
 
   > [!NOTE]
-  > Jeśli nie widzisz opcji **pomijania** menu w **Eksplorator rozwiązań**, naruszenie może być możliwe z kompilacji, a nie analizy na żywo. **Lista błędów** wyświetla diagnostykę lub naruszenia reguł zarówno z analizy kodu na żywo, jak i do kompilacji. Ponieważ Diagnostyka kompilacji może być nieaktualna, na przykład Jeśli edytujesz kod w celu usunięcia naruszenia, ale nie został on ponownie skompilowany, nie można pominąć tej diagnostyki z **Lista błędów**. Diagnostyka z analizy na żywo lub technologia IntelliSense są zawsze aktualne z bieżącymi źródłami i można je pominąć z poziomu **Lista błędów**. Aby wykluczyć diagnostykę *kompilacji* z wybranej opcji, Przełącz filtr źródła **Lista błędów** z **kompilacja + IntelliSense** na **technologię IntelliSense**. Następnie wybierz diagnostykę, którą chcesz pominąć, i wykonaj instrukcje opisane wcześniej.
+  > Jeśli nie widzisz opcji **Menu Pomijanie** w **Eksploratorze rozwiązań,** naruszenie prawdopodobnie pochodzi z kompilacji, a nie analizy na żywo. **Lista błędów** wyświetla diagnostyki lub naruszenia reguły, z analizy kodu na żywo i kompilacji. Ponieważ diagnostyka kompilacji może być przestarzała, na przykład, jeśli edytowano kod, aby naprawić naruszenie, ale nie został przebudowany, nie można pominąć tych diagnostyki z **listy błędów**. Diagnostyka z analizy na żywo lub IntelliSense są zawsze aktualne z bieżącymi źródłami i mogą być pomijane z **listy błędów**. Aby wykluczyć *diagnostykę kompilacji* z wyboru, przełącz filtr **źródłowy listy błędów** z **Kompilacja + IntelliSense** na **IntelliSense Only**. Następnie wybierz diagnostykę, którą chcesz wygasić, i postępuj zgodnie z wcześniejszym opisem.
   >
-  > ![Filtr źródła Lista błędów w programie Visual Studio](media/error-list-filter.png)
+  > ![Filtr źródła listy błędów w programie Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Użycie wiersza polecenia
 
-Podczas kompilowania projektu w wierszu polecenia naruszenia reguły pojawiają się w danych wyjściowych kompilacji w przypadku spełnienia następujących warunków:
+Podczas tworzenia projektu w wierszu polecenia naruszenia reguł są wyświetlane w danych wyjściowych kompilacji, jeśli spełnione są następujące warunki:
 
 - Analizatory są instalowane jako pakiet NuGet, a nie jako rozszerzenie VSIX.
 
-- Co najmniej jedna reguła narusza kod projektu.
+- Jedna lub więcej reguł są naruszane w kodzie projektu.
 
-- [Ważność](#rule-severity) naruszonej reguły jest ustawiona na wartość **Ostrzeżenie**, w przypadku których naruszenia przypadków nie powodują niepowodzenia kompilacji lub **błąd**, w których wypadek naruszenia przypadku niepowodzenia kompilacji.
+- [Ważność](#rule-severity) naruszonej reguły jest ustawiona na **ostrzeżenie,** w którym to przypadku naruszenia nie powodują awarii **kompilacji**lub błąd , w którym to przypadku naruszenia powodują niepowodzenie kompilacji.
 
-Szczegółowość danych wyjściowych kompilacji nie ma wpływu na to, czy są wyświetlane naruszenia reguł. Nawet z **cichą** szczegółowością, naruszenia reguł pojawiają się w danych wyjściowych kompilacji.
+Szczegółowość danych wyjściowych kompilacji nie wpływa na to, czy są wyświetlane naruszenia reguły. Nawet w **przypadku cichej** szczegółowości naruszenia reguł pojawiają się w danych wyjściowych kompilacji.
 
 > [!TIP]
-> Jeśli masz możliwość uruchomienia starszej analizy z poziomu wiersza polecenia, za pomocą *plik FxCopCmd. exe* lub za pośrednictwem MSBuild z flagą **RunCodeAnalysis** , Oto jak to zrobić za pomocą analizatorów kodu.
+> Jeśli jesteś przyzwyczajony do uruchamiania starszej analizy z wiersza polecenia, albo z *FxCopCmd.exe* lub za pośrednictwem msbuild z Flaga **RunCodeAnalysis,** oto jak to zrobić z analizatorów kodu.
 
-Aby wyświetlić naruszenia analizatora w wierszu polecenia podczas kompilowania projektu przy użyciu programu MSBuild, uruchom polecenie podobne do tego:
+Aby wyświetlić naruszenia analizatora w wierszu polecenia podczas tworzenia projektu przy użyciu msbuild, uruchom polecenie w ten sposób:
 
 ```cmd
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-Na poniższej ilustracji przedstawiono dane wyjściowe kompilacji wiersza polecenia z kompilowania projektu, który zawiera naruszenie reguły analizatora:
+Na poniższej ilustracji przedstawiono dane wyjściowe kompilacji wiersza polecenia z tworzenia projektu, który zawiera naruszenie reguły analizatora:
 
-![Dane wyjściowe MSBuild z naruszeniem reguły](media/command-line-build-analyzers.png)
+![Wyjście MSBuild z naruszeniem reguły](media/command-line-build-analyzers.png)
 
 ## <a name="dependent-projects"></a>Projekty zależne
 
-W projekcie .NET Core, jeśli dodasz odwołanie do projektu, który ma analizatory NuGet, te analizatory są automatycznie dodawane do projektu zależnego. Aby wyłączyć to zachowanie, na przykład jeśli projekt zależny jest projektem testowym jednostkowym, Oznacz pakiet NuGet jako prywatny w pliku *. csproj* lub *. vbproj* projektu, do którego istnieje odwołanie, ustawiając atrybut **PrivateAssets** :
+W projekcie .NET Core, jeśli dodasz odwołanie do projektu, który ma analizatory NuGet, analizatory te są automatycznie dodawane do projektu zależnego. Aby wyłączyć to zachowanie, na przykład jeśli projekt zależny jest projektem testowym jednostkowym, oznacz pakiet NuGet jako prywatny w pliku *csproj* lub *.vbproj* projektu, do którego istnieje odwołanie, ustawiając atrybut **PrivateAssets:**
 
 ```xml
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przegląd analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Prześlij usterkę analizatora kodu](https://github.com/dotnet/roslyn-analyzers/issues)
-- [Korzystanie z zestawów reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Pomiń ostrzeżenia analizy kodu](../code-quality/in-source-suppression-overview.md)
+- [Omówienie analizatorów kodu w programie Visual Studio](../code-quality/roslyn-analyzers-overview.md)
+- [Prześlij błąd analizatora kodu](https://github.com/dotnet/roslyn-analyzers/issues)
+- [Używanie zestawów reguł](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Pomijanie ostrzeżeń o analizie kodu](../code-quality/in-source-suppression-overview.md)

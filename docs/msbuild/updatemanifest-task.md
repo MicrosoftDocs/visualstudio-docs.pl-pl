@@ -1,5 +1,5 @@
 ---
-title: UpdateManifest — — zadanie | Microsoft Docs
+title: UpdateManifest Zadanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,30 +17,30 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631345"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest — zadanie
 
-Aktualizuje wybrane właściwości w manifeście i podpisuje je.
+Aktualizuje wybrane właściwości w manifeście i rezygnuje.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania `UpdateManifest`.
+ W poniższej tabeli `UpdateManifest` opisano parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`ApplicationManifest`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa manifest aplikacji.|
-|`ApplicationPath`|Wymagany `String` parametr.<br /><br /> Określa ścieżkę manifestu aplikacji.|
-|`InputManifest`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa manifest do zaktualizowania.|
-|`OutputManifest`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem> parametr wyjściowy.<br /><br /> Określa manifest, który zawiera zaktualizowane właściwości.|
+|`ApplicationManifest`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa manifest aplikacji.|
+|`ApplicationPath`|Wymagany parametr interfejsu `String`.<br /><br /> Określa ścieżkę manifestu aplikacji.|
+|`InputManifest`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa manifest do aktualizacji.|
+|`OutputManifest`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem><br /><br /> Określa manifest zawierający zaktualizowane właściwości.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [Klasa bazowa zadania](../msbuild/task-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to <xref:Microsoft.Build.Utilities.Task> zadanie dziedziczy parametry z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisów, zobacz [Klasa podstawowa zadania](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
 

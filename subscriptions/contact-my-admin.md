@@ -7,44 +7,44 @@ ms.date: 03/07/2020
 ms.topic: conceptual
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
 ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937539"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Uzyskaj pomoc od administratora subskrypcji
-Jeśli Twoja subskrypcja programu Visual Studio jest świadczona przez służbowe lub szkolne, prawdopodobnie została przypisana do Ciebie przez administratora subskrypcji lub administratora.  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy użytkownik ma możliwość pobrania oprogramowania i wykonywania innych funkcji związanych z subskrypcją.
+Jeśli subskrypcja programu Visual Studio jest dostarczana przez twoją pracę lub szkołę, istnieje prawdopodobieństwo, że została przypisana przez administratora subskrypcji lub "administratora".  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy masz możliwość pobierania oprogramowania, oraz wykonywać inne funkcje związane z subskrypcją.
 
-Mając na uwadze rozmiar i złożoność wielu organizacji, użytkownik może nie wiedzieć, kto jest administratorem, więc może być trudne, aby wiedzieć, gdzie uzyskać pomoc.  Dodaliśmy nową funkcję do portalu subskrybentów, która pomoże Ci skontaktować się z administratorem.   
+Biorąc pod uwagę rozmiar i złożoność wielu organizacji, możesz nie być świadomy tego, kim jest administrator, więc może być trudno wiedzieć, gdzie uzyskać pomoc.  Dodaliśmy nową funkcję do portalu subskrybenta, aby pomóc Ci w skontaktowaniu się z administratorem.   
 
 ## <a name="how-to-contact-your-admin"></a>Jak skontaktować się z administratorem
-1. Zaloguj się do portalu subskrybenta w witrynie https://my.visualstudio.com
-2. Kliknij kartę **subskrypcje** . 
-3. Kliknij przycisk **skontaktuj się z moim administratorem** w prawym górnym rogu. 
+1. Zaloguj się do portalu subskrybenta pod adresemhttps://my.visualstudio.com
+2. Kliknij kartę **Subskrypcje.** 
+3. Kliknij przycisk **Skontaktuj się z administratorem** w prawym górnym rogu. 
    > [!div class="mx-imgBorder"]
-   > ![skontaktować się z administratorem](_img/contact-my-admin/contact-my-admin-button.png)
-4. Wprowadź komunikat dla administratora.
-5. Jeśli chcesz otrzymać kopię wiadomości wysłanej do administratora, kliknij pole wyboru **Wyślij do mnie kopię** . 
-6. Na koniec kliknij pozycję **Wyślij**.
+   > ![Skontaktuj się z moim administratorem](_img/contact-my-admin/contact-my-admin-button.png)
+4. Wprowadź wiadomość dla administratora.
+5. Jeśli chcesz otrzymać kopię wiadomości wysłanej do administratora, kliknij pole wyboru **Wyślij do mnie kopię.** 
+6. Na koniec kliknij przycisk **Wyślij**.
 
 > [!NOTE]
-> **Administratorzy:**  Aby ustawić adres e-mail, na który są wysyłane żądania "Skontaktuj się z administratorem", określ ten adres w [preferencjach umowy](admin-prefs.md#contact-email-address).
+> **Super admini:**  Aby ustawić adres e-mail, na który wysyłane są żądania "Skontaktuj się z administratorem", określ ten adres w [preferencjach umowy](admin-prefs.md#contact-email-address).
 
-## <a name="resources"></a>Resources
+## <a name="resources"></a>Zasoby
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Jeśli jeszcze tego nie zrobiono, Zalecamy aktywowanie tych korzyści, aby maksymalnie wykorzystać subskrypcję programu Visual Studio:
+Jeśli jeszcze tego nie zrobiono, firma Microsoft zaleca aktywowanie tych korzyści, aby w pełni wykorzystać subskrypcję programu Visual Studio:
 - [Visual Studio IDE](vs-ide-benefit.md)
 - [Azure](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 
-Te korzyści i więcej można znaleźć na https://my.visualstudio.com/benefits.
+Te korzyści i więcej https://my.visualstudio.com/benefitsmożna znaleźć na stronie .
 

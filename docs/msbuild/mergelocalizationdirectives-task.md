@@ -1,5 +1,5 @@
 ---
-title: MergeLocalizationDirectives — — zadanie | Microsoft Docs
+title: Zadanie scalanialokalizacji | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,30 +19,30 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633502"
 ---
-# <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives —, zadanie
+# <a name="mergelocalizationdirectives-task"></a>Zadanie mergelocalizationdirectives
 
-Zadanie <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Scala atrybuty lokalizacji i komentarze jednego lub więcej plików formatu binarnego XAML do pojedynczego pliku dla całego zestawu.
+Zadanie <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> scala atrybuty lokalizacji i komentarze jednego lub więcej plików formatu binarnego XAML w jeden plik dla całego zestawu.
 
 ## <a name="task-parameters"></a>Parametry zadania
 
 | Parametr | Opis |
 |------------------------------| - |
-| `GeneratedLocalizationFiles` | Wymagany parametr **ITaskItem []** .<br /><br /> Określa listę plików dyrektyw lokalizacyjnych dla poszczególnych plików w formacie binarnym XAML. |
-| `OutputFile` | Wymagany parametr wyjściowy **ciągu** .<br /><br /> Określa ścieżkę wyjściową skompilowanego zestawu dyrektyw. |
+| `GeneratedLocalizationFiles` | Wymagany parametr **ITaskItem[].**<br /><br /> Określa listę plików dyrektyw lokalizacyjnych dla poszczególnych plików w formacie binarnym XAML. |
+| `OutputFile` | Wymagany parametr **wyjściowy ciągu.**<br /><br /> Określa ścieżkę wyjściową zestawu skompilowanych dyrektyw lokalizacyjnych. |
 
 ## <a name="remarks"></a>Uwagi
 
-Możesz dodawać atrybuty lokalizacji i komentarze do zawartości XAML. Dzięki obsłudze lokalizacji Windows Presentation Foundation (WPF) można rozłożyć atrybuty lokalizacji i komentarze oraz umieścić je w pliku *. loc* , który jest oddzielony od wygenerowanego zestawu. Można to zrobić przy użyciu atrybutu **LocalizationPropertyStorage** . Aby uzyskać więcej informacji na temat atrybutów lokalizacji i komentarzy oraz **LocalizationPropertyStorage**, zobacz [atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+Do zawartości XAML można dodawać atrybuty lokalizacji i komentarze. Za pomocą obsługi lokalizacji programu Windows Presentation Foundation (WPF) można usunąć atrybuty lokalizacji i komentarze i umieścić je w pliku *.loc,* który jest oddzielony od wygenerowanego zestawu. Można to zrobić za pomocą **localizationPropertyStorage** atrybutu. Aby uzyskać więcej informacji na temat atrybutów i komentarzy lokalizacji oraz **LocalizationPropertyStorage**, zobacz [Atrybuty lokalizacji i komentarze](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład Scala Komentarze lokalizacyjne kilku plików w formacie binarnym XAML w jeden plik *. loc* .
+Poniższy przykład scala komentarze lokalizacji kilku plików formatu binarnego XAML w pojedynczy plik *.loc.*
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -61,6 +61,6 @@ Poniższy przykład Scala Komentarze lokalizacyjne kilku plików w formacie bina
 
 - [Odwołanie do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Odwołanie do zadania WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)
-- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
-- [Odwołanie do zadania programu MSBuild](../msbuild/msbuild-task-reference.md)
+- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [Odwołanie do zadania MSBuild](../msbuild/msbuild-task-reference.md)
 - [Tworzenie aplikacji WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

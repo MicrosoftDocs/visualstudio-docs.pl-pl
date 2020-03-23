@@ -1,5 +1,5 @@
 ---
-title: StopTrackingAndCleanup | Microsoft Docs
+title: StopTrackingAndCleanup | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee30bf031761fa7920dadad04d8f17a1bcc0b3a2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631994"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 
-Powoduje zatrzymanie śledzenia i zwolnienie dowolnej pamięci używanej przez sesję śledzenia.
+Zatrzymuje wszystkie śledzenie i zwalnia dowolną pamięć używaną przez sesję śledzenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,11 +34,11 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 
 ## <a name="return-value"></a>Wartość zwracana
 
- Zwraca wartość **HRESULT** z **pomyślnie** ustawionym bitem, jeśli śledzenie zostało zatrzymane.
+ Zwraca **HRESULT** z bitem **SUCCEEDED,** jeśli śledzenie zostało zatrzymane.
 
 ## <a name="requirements"></a>Wymagania
 
- **Nagłówek:** *FileTracker. h*
+ **Nagłówek:** *FileTracker.h*
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: kompilowanie projektu zawierającego zasoby | Microsoft Docs'
+title: 'Jak: Tworzenie projektu, który ma zasoby | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,35 +14,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633957"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Instrukcje: kompilowanie projektu zawierającego zasoby
+# <a name="how-to-build-a-project-that-has-resources"></a>Jak: Tworzenie projektu, który ma zasoby
 
-Jeśli tworzysz zlokalizowane wersje projektu, wszystkie elementy interfejsu użytkownika muszą być rozdzielone na pliki zasobów dla różnych języków. Jeśli projekt używa tylko ciągów, pliki zasobów mogą używać plików tekstowych. Alternatywnie możesz użyć plików *. resx* jako plików zasobów.
+Jeśli budujesz zlokalizowane wersje projektu, wszystkie elementy interfejsu użytkownika muszą być podzielone na pliki zasobów dla różnych języków. Jeśli projekt używa tylko ciągów, pliki zasobów można użyć plików tekstowych. Alternatywnie można użyć plików *resx* jako plików zasobów.
 
-## <a name="compile-resources-with-msbuild"></a>Kompilowanie zasobów przy użyciu programu MSBuild
+## <a name="compile-resources-with-msbuild"></a>Kompilowanie zasobów za pomocą usługi MSBuild
 
-Biblioteka typowych zadań, które są dostarczane z programem MSBuild, zawiera zadanie `GenerateResource`, którego można użyć do kompilowania zasobów w plikach *resx* lub plików tekstowych. To zadanie zawiera parametr `Sources`, aby określić, które pliki zasobów należy skompilować, oraz parametr `OutputResources`, aby określić nazwy dla plików zasobów wyjściowych. Aby uzyskać więcej informacji na temat `GenerateResource` zadania, zobacz [zadanie GenerateResource](../msbuild/generateresource-task.md).
+Biblioteka typowych zadań, która jest dostarczana `GenerateResource` z MSBuild zawiera zadanie, które można użyć do kompilowania zasobów w *plikach .resx lub tekstowych.* To zadanie `Sources` zawiera parametr określający pliki zasobów `OutputResources` do skompilowania oraz parametr określający nazwy plików zasobów wyjściowych. Aby uzyskać więcej `GenerateResource` informacji na temat zadania, zobacz [GenerateResource task](../msbuild/generateresource-task.md).
 
-#### <a name="to-compile-resources-with-msbuild"></a>Aby skompilować zasoby przy użyciu programu MSBuild
+#### <a name="to-compile-resources-with-msbuild"></a>Aby skompilować zasoby za pomocą usługi MSBuild
 
-1. Zidentyfikuj pliki zasobów projektu i przekaż je do zadania `GenerateResource`, jako listy elementów lub jako nazwy plików.
+1. Zidentyfikuj pliki zasobów projektu `GenerateResource` i przekaż je do zadania, jako listy elementów lub jako nazwy plików.
 
-2. Określ parametr `OutputResources` zadania `GenerateResource`, które pozwala ustawić nazwy dla plików zasobów wyjściowych.
+2. Określ `OutputResources` parametr `GenerateResource` zadania, który umożliwia ustawienie nazw plików zasobów wyjściowych.
 
-3. Użyj elementu `Output` zadania do przechowywania wartości parametru `OutputResources` w elemencie.
+3. Użyj `Output` elementu zadania, aby zapisać wartość `OutputResources` parametru w elemencie.
 
-4. Użyj elementu utworzonego z elementu `Output` jako dane wejściowe w innym zadaniu.
+4. Użyj elementu utworzonego `Output` z elementu jako danych wejściowych do innego zadania.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład kodu pokazuje, jak `Output` element określa, że atrybut `OutputResources` zadania `GenerateResource` będzie zawierać skompilowane pliki zasobów *Alpha. resources* i *beta. resources* oraz że te dwa pliki zostaną umieszczone wewnątrz listy elementów `Resources`. Identyfikując te pliki *. resources* jako kolekcję elementów o tej samej nazwie, można je łatwo wykorzystać jako dane wejściowe dla innego zadania, na przykład zadanie [CSC](../msbuild/csc-task.md) .
+Poniższy przykład kodu `Output` pokazuje, jak `OutputResources` element określa, `GenerateResource` że atrybut zadania będzie zawierać skompilowane pliki zasobów *alpha.resources* i `Resources` *beta.resources* i że te dwa pliki zostaną umieszczone wewnątrz listy elementów. Identyfikując te pliki *.resources* jako zbiór elementów o tej samej nazwie, można łatwo użyć ich jako danych wejściowych dla innego zadania, takiego jak zadanie [Csc.](../msbuild/csc-task.md)
 
-To zadanie jest równoważne użyciu przełącznika **/Compile** dla [Resgen. exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):
+To zadanie jest równoznaczne z użyciem przełącznika **/compile** dla [Resgen.exe:](/dotnet/framework/tools/resgen-exe-resource-file-generator)
 
 `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`
 
@@ -57,7 +57,7 @@ To zadanie jest równoważne użyciu przełącznika **/Compile** dla [Resgen. ex
 
 ## <a name="example"></a>Przykład
 
-Następujący przykładowy projekt zawiera dwa zadania: zadanie `GenerateResource` do kompilowania zasobów i zadania `Csc` do kompilowania zarówno plików kodu źródłowego, jak i skompilowanych plików zasobów. Pliki zasobów skompilowane przez zadanie `GenerateResource` są przechowywane w elemencie `Resources` i przesyłane do zadania `Csc`.
+Poniższy przykładowy projekt zawiera `GenerateResource` dwa zadania: zadanie `Csc` do skompilowania zasobów i zadanie do skompilowania zarówno plików kodu źródłowego, jak i skompilowanych plików zasobów. Pliki zasobów skompilowane przez `GenerateResource` zadanie `Resources` są przechowywane `Csc` w elemencie i przekazywane do zadania.
 
 ```xml
 <Project DefaultTargets = "Build"
@@ -82,7 +82,7 @@ Następujący przykładowy projekt zawiera dwa zadania: zadanie `GenerateResourc
 
 ## <a name="see-also"></a>Zobacz też
 
-- [MSBuild](../msbuild/msbuild.md)
-- [GenerateResource, zadanie](../msbuild/generateresource-task.md)
-- [CSC — zadanie](../msbuild/csc-task.md)
+- [Msbuild](../msbuild/msbuild.md)
+- [Zadanie GenerateResource](../msbuild/generateresource-task.md)
+- [Zadanie csc](../msbuild/csc-task.md)
 - [Resgen.exe (generator pliku zasobów)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

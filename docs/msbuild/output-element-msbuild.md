@@ -1,5 +1,5 @@
 ---
-title: Output — element (MSBuild) | Microsoft Docs
+title: Element wyjściowy (MSBuild) | Dokumenty firmy Microsoft
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633034"
 ---
-# <a name="output-element-msbuild"></a>Output — element (MSBuild)
+# <a name="output-element-msbuild"></a>Element wyjściowy (MSBuild)
 
-Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
+Przechowuje wartości wyjściowe zadania w elementach i właściwościach.
 
- \<Project > \<Target > \<zadanie > \<danych wyjściowych >
+ \<>> \< \< \<> zadań> zadań>> projektu
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,9 +48,9 @@ Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
 |Atrybut|Opis|
 |---------------|-----------------|
 |`TaskParameter`|Atrybut wymagany.<br /><br /> Nazwa parametru wyjściowego zadania.|
-|`PropertyName`|Wymagany jest atrybut `PropertyName` lub `ItemName`.<br /><br /> Właściwość, która otrzymuje wartość parametru wyjściowego zadania. Projekt może następnie odwołać się do właściwości przy użyciu składni $ (\<PropertyName >). Ta nazwa właściwości może być nową nazwą właściwości lub nazwą, która jest już zdefiniowana w projekcie.<br /><br /> Nie można użyć tego atrybutu, jeśli `ItemName` jest również używany.|
-|`ItemName`|Wymagany jest atrybut `PropertyName` lub `ItemName`.<br /><br /> Element, który otrzymuje wartość parametru wyjściowego zadania. Projekt może odwoływać się do elementu za pomocą składni @ (\<itemName >). Nazwa elementu może być nazwą nowego elementu lub nazwą, która jest już zdefiniowana w projekcie. Gdy nazwa elementu jest istniejącym elementem, wartości parametrów wyjściowych są dodawane do istniejącego elementu. <br /><br /> Nie można użyć tego atrybutu, jeśli `PropertyName` jest również używany.|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
+|`PropertyName`|Wymagany jest `PropertyName` `ItemName` atrybut lub atrybut.<br /><br /> Właściwość, która odbiera wartość parametru wyjściowego zadania. Projekt może następnie odwoływać się\<do właściwości ze składnią $( PropertyName>). Ta nazwa właściwości może być nową nazwą właściwości lub nazwą, która jest już zdefiniowana w projekcie.<br /><br /> Ten atrybut nie może `ItemName` być używany, jeśli jest również używany.|
+|`ItemName`|Wymagany jest `PropertyName` `ItemName` atrybut lub atrybut.<br /><br /> Element, który otrzymuje wartość parametru wyjściowego zadania. Projekt może następnie odwoływać się\<do elementu ze składnią @( ItemName>). Nazwa elementu może być nową nazwą elementu lub nazwą, która jest już zdefiniowana w projekcie. Gdy nazwa elementu jest istniejącym elementem, wartości parametrów wyjściowych są dodawane do istniejącego elementu. <br /><br /> Ten atrybut nie może `PropertyName` być używany, jeśli jest również używany.|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -60,11 +60,11 @@ Przechowuje wartości wyjściowe zadania w elementach i we właściwościach.
 
 | Element | Opis |
 | - | - |
-| [Zadanie podrzędne](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania programu MSBuild. |
+| [Zadanie](../msbuild/task-element-msbuild.md) | Tworzy i wykonuje wystąpienie zadania MSBuild. |
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu pokazuje zadanie `Csc` wykonywane wewnątrz elementu `Target`. Elementy i właściwości przesłane do parametrów zadania są zadeklarowane poza zakresem tego przykładu. Wartość z `OutputAssembly` parametru wyjściowego jest przechowywana w elemencie `FinalAssemblyName`, a wartość z parametru wyjściowego `BuildSucceeded` jest przechowywana we właściwości `BuildWorked`. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).
+ Poniższy przykład kodu `Csc` pokazuje zadanie wykonywane `Target` wewnątrz elementu. Elementy i właściwości przekazywane do parametrów zadania są zadeklarowane poza zakresem tego przykładu. Wartość z parametru `OutputAssembly` output jest `FinalAssemblyName` przechowywana w elemencie, a wartość z parametru `BuildSucceeded` output jest przechowywana we `BuildWorked` właściwości. Aby uzyskać więcej informacji, zobacz [Zadania](../msbuild/msbuild-tasks.md).
 
 ```xml
 <Target Name="Compile" DependsOnTargets="Resources">

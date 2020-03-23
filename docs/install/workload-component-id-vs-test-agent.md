@@ -1,12 +1,12 @@
 ---
-title: Obciążenie agenta testowego programu Visual Studio i identyfikatory składników
+title: Obciążenie i identyfikatory składników agenta testowego programu Visual Studio
 titleSuffix: ''
-description: Użyj obciążenia programu Visual Studio i identyfikatory składników do uruchamiania testów automatycznych i testy obciążeniowe zdalnie
+description: Zdalne uruchamianie automatycznych testów i ładowanie testów za pomocą obciążenia i identyfikatorów składników programu Visual Studio
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bec1795b831ffc522b42984b74320505a774acb9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 114fdf5fb5f123b021ff7b53078bbe2e929c9db9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114356"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437525"
 ---
-# <a name="visual-studio-test-agent-component-directory"></a>Katalog składnika agenta testowego programu Visual Studio
+# <a name="visual-studio-test-agent-component-directory"></a>Katalog składników agenta testowego programu Visual Studio
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -44,10 +44,10 @@ ms.locfileid: "76114356"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
-* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Tworzenie instalacji programu Visual Studio w trybie offline](create-an-offline-installation-of-visual-studio.md)

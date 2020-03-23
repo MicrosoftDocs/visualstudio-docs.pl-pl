@@ -1,5 +1,5 @@
 ---
-title: Zadanie XSD | Microsoft Docs
+title: Zadanie XSD | Dokumenty firmy Microsoft
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -21,72 +21,72 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77630785"
 ---
 # <a name="xsd-task"></a>XSD — Zadanie
 
-Zawija narzędzie definicji schematu XML (*XSD. exe*), które generuje pliki schematu lub klasy ze źródła.
+Zawija narzędzie XML Schema Definition *(xsd.exe),* które generuje pliki schematu lub klasy ze źródła.
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2017 C++ , obsługa projektu dla pliku *XSD. exe* jest przestarzała. Można nadal używać interfejsów API **Microsoft. VisualC. CppCodeProvider** , ręcznie dodając *CppCodeProvider. dll* do pamięci GAC.
+> Począwszy od programu Visual Studio 2017, obsługa projektu C++ dla *xsd.exe* jest przestarzała. Nadal można używać interfejsów API **programu Microsoft.VisualC.CppCodeProvider,** ręcznie dodając *plik CppCodeProvider.dll* do pliku GAC.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania **XSD** .
+ W poniższej tabeli opisano parametry zadania **XSD.**
 
-- **AdditionalOptions**
+- **Dodatkoweopcje**
 
-     Opcjonalny parametr **ciągu** .
+     Opcjonalny parametr **String.**
 
-     Lista opcji określona w wierszu polecenia. Na przykład/\<opcja1 >/\<opcja2 >/\<opcji # >. Użyj tego parametru, aby określić opcje, które nie są reprezentowane przez żaden inny parametr zadania **XSD** .
+     Lista opcji określonych w wierszu polecenia. Na przykład\</ option1>\</ option2\<> / option#>. Ten parametr służy do określania opcji, które nie są reprezentowane przez żaden inny parametr zadania **XSD.**
 
 - **GenerateFromSchema**
 
-  Opcjonalny parametr **ciągu** .
+  Opcjonalny parametr **String.**
 
-  Określa typy, które są generowane na podstawie określonego schematu.
+  Określa typy, które są generowane z określonego schematu.
 
-  Określ jedną z następujących wartości, z których każdy odpowiada opcji XSD.
+  Określ jedną z następujących wartości, z których każda odpowiada opcji XSD.
 
-  - **klasy** -  **/Classes**
+  - **klasy** - **/klasy**
 
-  - **zestaw danych** -  **/DataSet**
+  - **zestaw danych** - **/zestaw danych**
 
 - **Język**
 
-     Opcjonalny parametr **ciągu** .
+     Opcjonalny parametr **String.**
 
-     Określa język programowania, który ma być używany dla wygenerowanego kodu.
+     Określa język programowania używany dla wygenerowanego kodu.
 
-     Wybierz pozycję z firmyC#cs (czyli domyślnej), **VB** (Visual Basic) lub **js** (JScript). Można również określić w pełni kwalifikowaną nazwę klasy, która implementuje `System.CodeDom.Compiler.CodeDomProvider Class`.
+     Wybierz z **CS** (C#, który jest domyślny), **VB** (Visual Basic) lub **JS** (JScript). Można również określić w pełni kwalifikowaną `System.CodeDom.Compiler.CodeDomProvider Class`nazwę dla klasy, która implementuje .
 
-- **Przestrzeń nazw**
+- **Namespace**
 
-     Opcjonalny parametr **ciągu** .
+     Opcjonalny parametr **String.**
 
      Określa przestrzeń nazw czasu wykonywania wygenerowany typów.
 
 - **Źródeł**
 
-     Wymagany `ITaskItem[]` parametr.
+     Wymagany parametr interfejsu `ITaskItem[]`.
 
-     Definiuje tablicę elementów plików źródłowych MSBuild, które mogą być używane i emitowane przez zadania.
+     Definiuje tablicę elementów pliku źródłowego MSBuild, które mogą być używane i emitowane przez zadania.
 
-- **SuppressStartupBanner**
+- **SuppressStartupBanner (SuppressStartupBanner)**
 
-     Opcjonalny parametr **logiczny** .
+     Opcjonalny parametr **logiczny.**
 
-     Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.
+     Jeśli `true`program Zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji po uruchomieniu zadania.
 
-- **Katalog trackerlogdirectory**
+- **TrackerLogDirectory (TrackerLogDirectory)**
 
-     Opcjonalny parametr **ciągu** .
+     Opcjonalny parametr **String.**
 
-     Określa katalog dziennika śledzenia.
+     Określa katalog dziennika modułu śledzącego.
 
 ## <a name="see-also"></a>Zobacz też
 

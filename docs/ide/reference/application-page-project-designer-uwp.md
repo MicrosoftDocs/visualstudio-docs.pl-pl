@@ -1,5 +1,5 @@
 ---
-title: Strona właściwości aplikacji dla aplikacji platformy UWP
+title: Strona właściwości aplikacji dla aplikacji platformy uniwersalnej systemu Windows
 ms.date: 01/23/2018
 ms.topic: reference
 f1_keywords:
@@ -12,41 +12,41 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77173090"
 ---
-# <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy UWP)
+# <a name="application-property-page-uwp-projects"></a>Strona właściwości aplikacji (projekty platformy uniwersalnej systemuśpiłnie)
 
-Na stronie właściwości **aplikacji** można określić zestaw i informacje o projekcie platforma uniwersalna systemu Windows (platformy UWP) oraz docelową wersję systemu Windows 10.
+Strona Właściwości **aplikacji** służy do określania informacji o zestawie i pakiecie projektu platformy uniwersalnej systemu Windows (PLATFORMY UNIWERSALNEJ SYSTEMU Windows) oraz określania docelowej wersji systemu Windows 10.
 
 ![Strona właściwości aplikacji](media/application-page-uwp.png)
 
-Aby uzyskać dostęp do strony **aplikacji** , wybierz węzeł projektu w **Eksplorator rozwiązań**. Następnie wybierz pozycję **Project** > **Właściwości** na pasku menu. Strony właściwości są otwierane na karcie **aplikacja** .
+Aby uzyskać dostęp do strony **Aplikacji,** wybierz węzeł projektu w **Eksploratorze rozwiązań**. Następnie wybierz polecenie**Właściwości** **projektu** > na pasku menu. Strony właściwości są otwierane na karcie **Aplikacja.**
 
 ## <a name="general-section"></a>Sekcja ogólna
 
-**Nazwa zestawu**&mdash;określa nazwę pliku wyjściowego, który będzie przechowywać manifest zestawu.
+**Nazwa zestawu**&mdash;Określa nazwę pliku wyjściowego, który będzie zawierać manifest zestawu.
 
-Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
+Aby uzyskać dostęp do tej <xref:VSLangProj.ProjectProperties.AssemblyName%2A>właściwości programowo, zobacz .
 
-**Domyślna przestrzeń nazw**&mdash;określa podstawową przestrzeń nazw dla plików dodanych do projektu. Aby uzyskać więcej informacji na temat przestrzeni nazw, zobacz [przestrzenie nazw (C# Przewodnik programowania)](/dotnet/csharp/programming-guide/namespaces/), [przestrzenie nazw (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces)lub [przestrzenie nazw (C++)](/cpp/cpp/namespaces-cpp).
+**Domyślny obszar nazw**&mdash;Określa bazowy obszar nazw dla plików dodanych do projektu. Aby uzyskać więcej informacji na temat obszarów nazw, zobacz [Obszary nazw (przewodnik po programowaniu W języku C#),](/dotnet/csharp/programming-guide/namespaces/) [Obszary nazw (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces)lub [Obszary nazw (C++)](/cpp/cpp/namespaces-cpp).
 
-Aby programowo uzyskać dostęp do tej właściwości, zobacz <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
+Aby uzyskać dostęp do tej <xref:VSLangProj.ProjectProperties.RootNamespace%2A>właściwości programowo, zobacz .
 
-**Informacje o zestawie**&mdash;wybranie tego przycisku powoduje wyświetlenie okna [dialogowego Informacje o zestawie](../../ide/reference/assembly-information-dialog-box.md).
+**Informacje o**&mdash;złożeniu Wybranie tego przycisku powoduje [wyświetlenie okna dialogowego Informacje o złożeniu](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifest pakietu**&mdash;wybranie tego przycisku powoduje otwarcie projektanta manifestu. Można również uzyskać dostęp do projektanta manifestu, wybierając plik _Package. appxmanifest_ w **Eksplorator rozwiązań**. Aby uzyskać więcej informacji, zobacz [Configure a Package with manifest Designer](/windows/msix/package/packaging-uwp-apps#configure-your-project).
+**Manifest pakietu**&mdash;Wybranie tego przycisku otwiera projektanta manifestu. Projektant manifestu można również uzyskać dostęp, wybierając plik _Package.appxmanifest_ w **Eksploratorze rozwiązań**. Aby uzyskać więcej informacji, zobacz [Konfigurowanie pakietu z projektantem manifestów](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
-## <a name="targeting-section"></a>Sekcja określania wartości docelowej
+## <a name="targeting-section"></a>Sekcja Kierowania
 
-Możesz ustawić wersję docelową i minimalną wersję systemu Windows 10 dla swojej aplikacji, używając list rozwijanych w tej sekcji. Zaleca się, aby można było określić najnowszą wersję systemu Windows 10 i jeśli tworzysz aplikację dla przedsiębiorstw, która obsługuje starszą wersję minimalną. Aby uzyskać więcej informacji na temat wersji systemu Windows 10, zobacz [Wybieranie wersji platformy UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version).
+Wersję docelową i minimalną wersję systemu Windows 10 dla aplikacji można ustawić za pomocą list rozwijanych w tej sekcji. Zaleca się, aby kierować reklamy na najnowszą wersję systemu Windows 10, a jeśli tworzysz aplikację dla przedsiębiorstwa, że obsługuje starszą wersję minimalną zbyt. Aby uzyskać więcej informacji o tym, którą wersję systemu Windows 10 wybrać, zobacz [Wybieranie wersji platformy uniwersalnej](/windows/uwp/updates-and-versions/choose-a-uwp-version)systemu Windows .
 
-Aby uzyskać informacje dotyczące platformy docelowej w programie Visual Studio, zobacz temat [Określanie platformy docelowej](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
+Aby uzyskać informacje na temat kierowania na platformę w programie Visual Studio, zobacz [Kierowanie na platformę.](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Tworzenie pierwszej aplikacji platformy UWP](/windows/uwp/get-started/your-first-app)
-- [Wybierz wersję platformy UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)
+- [Tworzenie pierwszej aplikacji platformy uniwersalnej systemuśpiłnie](/windows/uwp/get-started/your-first-app)
+- [Wybieranie wersji platformy uniwersalnej systemu uniwersalnego](/windows/uwp/updates-and-versions/choose-a-uwp-version)

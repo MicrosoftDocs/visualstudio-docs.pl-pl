@@ -24,101 +24,101 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76114560"
 ---
-# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Twórz i czyść projekty i rozwiązania w programie Visual Studio
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Twórz i twórz projekty i rozwiązania w programie Visual Studio
 
-Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby zapoznać się z samouczkiem krok po kroku, zobacz [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md).
-
-> [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Tworzenie i czyszczenie projektów oraz rozwiązań w programie Visual Studio dla komputerów Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
+Za pomocą procedur w tym temacie, można skompilować, odbudować lub wyczyścić wszystkie lub niektóre projekty lub elementy projektu w rozwiązaniu. Aby zapoznać się z samouczkiem krok po kroku, zobacz [Instruktaż: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> Interfejs użytkownika w Twojej wersji programu Visual Studio mogą różnić się od co w tym temacie opisano, w zależności od aktywnych ustawień. Aby zmienić swoje ustawienia, na przykład aby **ogólne** lub **Visual C++** ustawienia, wybierz **narzędzia** > **Import i eksport ustawień**, a następnie wybierz **Resetuj wszystkie ustawienia**.
+> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W programie Visual Studio dla komputerów Mac zobacz [Tworzenie i czyszczenie projektów i rozwiązań w programie Visual Studio dla komputerów Mac.](/visualstudio/mac/building-and-cleaning-projects-and-solutions)
 
-## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Do kompilacji, odbudować lub Wyczyść całe rozwiązanie
+> [!NOTE]
+> Interfejs użytkownika w wersji programu Visual Studio może się różnić od tego, co opisano w tym temacie, w zależności od aktywnych ustawień. Aby zmienić ustawienia, na przykład na **Ustawienia ogólne** lub **Visual C++,** wybierz pozycję Ustawienia**importu i eksportu** **narzędzi,** > a następnie wybierz pozycję **Resetuj wszystkie ustawienia**.
 
-1. W **Eksploratora rozwiązań**, wybierz lub Otwórz rozwiązanie.
+## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Aby zbudować, odbudować lub wyczyścić całe rozwiązanie
 
-2. Na pasku menu wybierz **kompilacji**, a następnie wybierz jedno z następujących poleceń:
+1. W **Eksploratorze rozwiązań**wybierz lub otwórz rozwiązanie.
 
-    - Wybierz **kompilacji** lub **Kompiluj rozwiązanie** skompilować tylko tych projektów, plików i składników, które zmieniły się od najnowszej kompilacji.
+2. Na pasku menu wybierz pozycję **Buduj**, a następnie wybierz jedno z następujących poleceń:
+
+    - Wybierz **opcję Kompilacja** lub **rozwiązanie kompilacji,** aby skompilować tylko te pliki projektu i składniki, które uległy zmianie od czasu ostatniej kompilacji.
 
         > [!NOTE]
-        > **Kompilacji** staje się polecenia **Kompiluj rozwiązanie** gdy rozwiązanie zawiera więcej niż jeden projekt.
+        > Polecenie **Kompilacja** staje się **rozwiązaniem kompilacji,** gdy rozwiązanie zawiera więcej niż jeden projekt.
 
-    - Wybierz **Kompiluj rozwiązanie** do rozwiązania "Wyczyść", a następnie skompilowanie wszystkich plików projektu i składników.
+    - Wybierz **opcję Odbuduj rozwiązanie,** aby "wyczyścić" rozwiązanie, a następnie skompilować wszystkie pliki i składniki projektu.
 
-    - Wybierz **czyste rozwiązanie** można usunąć wszystkich plików pośrednich i wynikowych. Za pomocą tylko projektu, jak i składnika pliki po lewej nowe wystąpienia pośrednich i pliki wyjściowe może następnie być skompilowana.
+    - Wybierz **pozycję Clean Solution,** aby usunąć wszystkie pliki pośrednie i wyjściowe. Po lewej stronie pozostało tylko pliki projektu i składnika, można następnie zbudować nowe wystąpienia plików pośrednich i wyjściowych.
 
-## <a name="to-build-or-rebuild-a-single-project"></a>Aby skompilować lub ponownie skompilować pojedynczego projektu
+## <a name="to-build-or-rebuild-a-single-project"></a>Aby zbudować lub odbudować pojedynczy projekt
 
-1. W **Eksploratora rozwiązań**, wybrać lub otworzyć projektu.
+1. W **Eksploratorze rozwiązań**wybierz lub otwórz projekt.
 
-2. Na pasku menu wybierz **kompilacja**, a następnie wybierz opcję **Kompiluj** *ProjectName* lub **Skompiluj ponownie** *ProjectName*.
+2. Na pasku menu wybierz polecenie **Buduj**, a następnie wybierz pozycję **Buduj** *projectname* lub **Odbuduj** *projectname*.
 
-    - Wybierz pozycję **Kompiluj** *ProjectName* , aby skompilować tylko składniki projektu, które uległy zmianie od czasu ostatniej kompilacji.
+    - Wybierz **pozycję Build** *ProjectName,* aby utworzyć tylko te składniki projektu, które uległy zmianie od czasu ostatniej kompilacji.
 
-    - Wybierz pozycję **Kompiluj ponownie** *ProjectName* , aby usunąć "czysty" projekt, a następnie Skompiluj pliki projektu i wszystkie składniki projektu.
+    - Wybierz **pozycję Odbuduj** *ProjectName,* aby "wyczyścić" projekt, a następnie skompilować pliki projektu i wszystkie składniki projektu.
 
-## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Aby skompilować tylko projekt startowy i jego zależności
+## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Aby utworzyć tylko projekt startowy i jego zależności
 
-1. Na pasku menu wybierz **narzędzia** > **opcje**.
+1. Na pasku menu wybierz pozycję**Opcje** **narzędzi** > .
 
-2. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzła, a następnie wybierz **kompilowanie i uruchamianie** strony.
+2. W oknie dialogowym **Opcje** rozwiń węzeł **Projekty i rozwiązania,** a następnie wybierz stronę **Kompilacja i uruchom.**
 
-     Zostanie otwarte okno dialogowe **Opcje** **tworzenia i uruchamiania** > **projekty i rozwiązania** > .
+     Zostanie otwarte okno dialogowe **Tworzenie i uruchamianie** > projektów i opcji**rozwiązań.** > **Options**
 
-3. Wybierz **tylko tworzyć projekty startowe i zależności przy uruchomieniu** pole wyboru.
+3. Zaznacz pole wyboru **Tylko tworzenie projektów startowych i zależności w obszarze Uruchom.**
 
-     Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednej z następujących czynności:
+     Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednego z następujących kroków:
 
-    - Na pasku menu wybierz **debuguj** > **Start** (**F5**).
+    - Na pasku menu wybierz pozycję **Debug** > **Start** (**F5**).
 
-    - Na pasku menu wybierz kolejno opcje **kompiluj** > **Kompiluj rozwiązanie** (**Ctrl**+**SHIFT**+**B**).
+    - Na pasku menu wybierz pozycję **Build** > **Build Solution** **(Ctrl**+**Shift**+**B**).
 
-    Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązania są tworzone po uruchomieniu dowolnego z powyższych poleceń. To pole wyboru jest domyślnie wyczyszczone.
+    Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązania są tworzone po uruchomieniu jednego z powyższych poleceń. To pole wyboru jest domyślnie wyczyszczone.
 
-## <a name="to-build-only-the-selected-visual-c-project"></a>Można tworzyć tylko dla wybranego projektu Visual C++
+## <a name="to-build-only-the-selected-visual-c-project"></a>Aby utworzyć tylko wybrany projekt visual c++
 
-Wybierz projekt [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], a następnie na pasku menu wybierz kolejno opcje **kompiluj** > **Project**i jedno z następujących poleceń:
+Wybierz [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekt, a następnie na pasku menu wybierz pozycję **Zbuduj** > **tylko projekt**i jedno z następujących poleceń:
 
-- **Tylko kompilacja** *ProjectName*
+- **Zbuduj tylko** *projectname*
 
-- **Ponownie skompiluj tylko** *ProjectName*
+- **Odbuduj tylko** *projectname*
 
-- **Czyszczenie tylko** *ProjectName*
+- **Nazwa** *projektu* tylko do czyszczenia
 
-- **Połącz tylko** *ProjectName*
+- **Nazwa** *tylko łącza projectname*
 
-Polecenia te dotyczą tylko programu [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektu, która została wybrana, bez tworzenia, ponownie skompilować, czyszczenia i łączenie wszystkie zależności projektu lub rozwiązania pliki. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **projektu tylko** podmenu może zawierać więcej poleceń.
+Te polecenia dotyczą tylko [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] wybranego projektu, bez tworzenia, przebudowywania, czyszczenia lub łączenia zależności projektu lub plików rozwiązań. W zależności od [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]wersji podmenu **Tylko projekt** może zawierać więcej poleceń.
 
-## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować wiele elementów projektu C++
+## <a name="to-compile-multiple-c-project-items"></a>Aby skompilować wiele elementów projektu języka C++
 
-W **Eksploratora rozwiązań**, wybierz wiele plików, które mają może być skompilowany akcji, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz **skompilować**.
+W **Eksploratorze rozwiązań**wybierz wiele plików, które mogą być kompilowane akcje, otwórz menu skrótów dla jednego z tych plików, a następnie wybierz polecenie **Skompiluj**.
 
-Jeśli pliki mają zależności, pliki zostanie skompilowany w kolejności wg zależności. Operacja kompilowania zakończy się niepowodzeniem, jeśli pliki wymagają prekompilowanego nagłówka, który nie jest dostępny podczas kompilowania. Operacja kompilacji używa bieżącej aktywnej konfiguracji rozwiązania.
+Jeśli pliki mają zależności, pliki zostaną skompilowane w kolejności zależności. Operacja kompilacji zakończy się niepowodzeniem, jeśli pliki wymagają wstępnie skompilowanego nagłówka, który nie jest dostępny podczas kompilowania. Operacja kompilacji używa bieżącej konfiguracji aktywnego rozwiązania.
 
 ## <a name="to-stop-a-build"></a>Aby zatrzymać kompilację
 
 Wykonaj jedną z następujących czynności:
 
-- Na pasku menu wybierz pozycję **kompilacja** > **Anuluj**.
+- Na pasku menu wybierz pozycję **Zmiecie** > **anuluj**.
 
-- Naciśnij klawisz **Ctrl**+**Break**.
+- Naciśnij **klawisze Ctrl**+**Break**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Kompilowanie i kompilowanie](../ide/compiling-and-building-in-visual-studio.md)
-- [Ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md)
+- [Kompilacja i budowa](../ide/compiling-and-building-in-visual-studio.md)
+- [Opis konfiguracji kompilacji](../ide/understanding-build-configurations.md)
 - [Instrukcje: ustawienia konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Dokumentacja CC++ /Building](/cpp/build/reference/c-cpp-building-reference)
-- [Przełączniki wiersza polecenia devenv](../ide/reference/devenv-command-line-switches.md)
+- [C/C++ odniesienie do budynku](/cpp/build/reference/c-cpp-building-reference)
+- [Przełączniki linii poleceń Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)
-- [Twórz i oczyść projekty i rozwiązania (Visual Studio dla komputerów Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)
+- [Tworzenie i czyszczenie projektów i rozwiązań (Visual Studio dla komputerów Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

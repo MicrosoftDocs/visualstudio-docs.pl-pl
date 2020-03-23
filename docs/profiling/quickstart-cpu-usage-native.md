@@ -1,6 +1,6 @@
 ---
-title: Analizowanie danych użycia procesora CPUC++()
-description: Mierzenie wydajności aplikacji w C++ programie przy użyciu narzędzia diagnostyki użycia procesora CPU
+title: Analizowanie danych użycia procesora (C++)
+description: Mierzenie wydajności aplikacji w języku C++ za pomocą narzędzia diagnostycznego użycie procesora CPU
 ms.date: 02/14/2020
 ms.topic: quickstart
 f1_keywords:
@@ -13,51 +13,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5912e433f4d2bc05dc4e460456c8858af82183f6
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 58c91590e751970f9291c8e13ccb9fc2abcc8728
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279218"
+ms.lasthandoff: 03/20/2020
+ms.locfileid: "79550090"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki Start: analizowanie danych użycia procesora CPU w programieC++Visual Studio ()
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki start: analizowanie danych użycia procesora w programie Visual Studio (C++)
 
-Program Visual Studio udostępnia wiele zaawansowanych funkcji, które ułatwiają analizowanie problemów z wydajnością w aplikacji. Ten temat zawiera szybki sposób poznania niektórych podstawowych funkcji. W tym miejscu znajdziesz narzędzie do identyfikowania wąskich gardeł wydajności z powodu wysokiego użycia procesora CPU. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
+Visual Studio zawiera wiele zaawansowanych funkcji, które ułatwią analizowanie problemów z wydajnością w aplikacji. W tym temacie przedstawiono szybki sposób, aby dowiedzieć się niektóre z podstawowych funkcji. W tym miejscu przyjrzymy się narzędziu do identyfikacji wąskich gardeł wydajności ze względu na wysokie użycie procesora CPU. Narzędzia diagnostyczne są obsługiwane dla rozwoju platformy .NET w programie Visual Studio, w tym ASP.NET i rozwoju macierzystego/C++.
 
-Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesję diagnostyczną. Jeśli opisane w tym miejscu narzędzie **użycie procesora CPU** nie poda potrzebnych danych, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne. W wielu przypadkach wąskich gardeł wydajności aplikacji może być spowodowane przez coś innego niż Procesora, takich jak pamięć, renderowania interfejsu użytkownika lub czas żądania sieciowego. Centrum diagnostyki oferuje wiele innych opcji rejestracji i analizowaniu tego rodzaju danych.
+Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesją diagnostyczną. Jeśli narzędzie **użycia procesora CPU** opisane w tym miejscu nie daje danych, które są potrzebne, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla Ciebie. W wielu przypadkach wąskie gardło wydajności aplikacji może być spowodowane przez coś innego niż procesor, takich jak pamięć, renderowanie interfejsu użytkownika lub czas żądania sieci. Centrum diagnostyki oferuje wiele innych opcji do rejestrowania i analizowania tego rodzaju danych.
 
-System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania przy użyciu debugera (okno**Narzędzia diagnostyczne** ). W systemie Windows 7 i nowszych można użyć narzędzia do wykonywania w programie do [profilowania](../profiling/profiling-feature-tour.md).
+System Windows 8 i nowsze są wymagane do uruchamiania narzędzi profilowania za pomocą debugera (okno**Narzędzia diagnostyczne).** W systemie Windows 7 lub nowszym można użyć narzędzia pośmiertnego, [profilera wydajności](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-1. Otwórz program Visual Studio i Utwórz projekt.
+1. Otwórz program Visual Studio i utwórz projekt.
 
    ::: moniker range="vs-2017"
-   Na górnym pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
+   Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
-   W oknie dialogowym **Nowy projekt** w okienku po lewej stronie rozwiń pozycję **Wizualizacja C++** , a następnie wybierz pozycję **Windows Desktop**. W środkowym okienku wybierz pozycję **Aplikacja konsolowa systemu Windows**. Następnie nadaj nazwę projektowi *Diagnostics_Get_Started_Native*.
+   W oknie dialogowym **Nowy projekt** w lewym okienku rozwiń węzeł **Visual C++,** a następnie wybierz pozycję **Pulpit systemu Windows**. W środkowym okienku wybierz pozycję **Aplikacja konsoli systemu Windows**. Następnie nazwij projekt *Diagnostics_Get_Started_Native*.
 
-   Jeśli szablon projektu **aplikacji konsolowej systemu Windows** nie jest widoczny, wybierz link **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt** . Uruchamia Instalatora programu Visual Studio. Wybierz pozycję **programowanie C++ dla komputerów stacjonarnych** , a następnie wybierz polecenie **Modyfikuj**.
+   Jeśli nie widzisz szablonu projektu **aplikacji konsoli systemu Windows,** wybierz łącze **Otwórz Instalator programu Visual Studio** w lewym okienku okna dialogowego **Nowy projekt.** Uruchamia instalator programu Visual Studio. Wybierz program rozwoju pulpitu z obciążeniem **języka C++,** a następnie wybierz pozycję **Modyfikuj**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Jeśli okno startowe nie jest otwarte, wybierz polecenie **plik** > **Start okna**.
+   Jeśli okno startowe nie jest otwarte, wybierz polecenie **Okno startowe** **pliku** > .
 
-   W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+   W oknie początkowym wybierz pozycję **Utwórz nowy projekt**.
 
-   W oknie **Tworzenie nowego projektu** w polu wyszukiwania wpisz lub wpisz *Console* . Następnie wybierz **C++** z listy język, a następnie wybierz pozycję **Windows** z listy platform.
+   W oknie **Utwórz nowy projekt** wprowadź lub wpisz *konsolę* w polu wyszukiwania. Następnie wybierz pozycję **C++** z listy Język, a następnie wybierz pozycję **Windows** z listy Platforma.
 
-   Po zastosowaniu filtrów języka i platformy wybierz szablon **aplikacja konsoli** , a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtrów językowych i platformowych wybierz szablon **aplikacji konsoli,** a następnie wybierz pozycję **Dalej**.
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji konsolowej** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** . Następnie w Instalator programu Visual Studio wybierz pozycję **Programowanie dla komputerów z C++**  obciążeniem.
+   > Jeśli nie widzisz szablonu **aplikacji konsoli,** możesz go zainstalować w oknie **Utwórz nowy projekt.** W komunikacie **Nie znajdowanie tego, czego szukasz?** **Install more tools and features** Następnie w Instalatorze programu Visual Studio wybierz program rozwoju pulpitu z obciążeniem **C++.**
 
-   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *Diagnostics_Get_Started_Native* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+   W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *Diagnostics_Get_Started_Native* w polu **Nazwa projektu.** Następnie wybierz pozycję **Utwórz**.
 
    ::: moniker-end
 
-   Program Visual Studio otwiera nowy projekt.
+   Visual Studio otwiera nowy projekt.
 
-1. W *Diagnostics_Get_Started_Native*Zastąp następujący kod
+1. W *Diagnostics_Get_Started_Native*, zastąp następujący kod
 
     ```c++
     int main()
@@ -66,7 +66,7 @@ System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania
     }
     ```
 
-    z tym kodem (nie należy usuwać `#include "stdafx.h"`):
+    z tym kodem `#include "stdafx.h"`(nie usuwaj):
 
     ```c++
     #include <iostream>
@@ -130,76 +130,78 @@ System Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania
     }
     ```
 
-## <a name="step-1-collect-profiling-data"></a>Krok 1: Zbierania danych profilowania
+## <a name="step-1-collect-profiling-data"></a>Krok 1: Zbieranie danych profilowania
 
-1. Najpierw ustaw punkt przerwania w aplikacji w tym wierszu kodu w funkcji `main`:
+1. Najpierw ustaw punkt przerwania w aplikacji w tym `main` wierszu kodu w funkcji:
 
     `for (int i = 0; i < 10; ++i) {`
 
-    Ustaw punkt przerwania, klikając na marginesie na lewo od wiersza kodu.
+    Ustaw punkt przerwania, klikając w marginesie wiersza kodu.
 
-2. Następnie ustaw drugi punkt przerwania na zamykającym nawiasie klamrowym na końcu funkcji `main`:
+2. Następnie ustaw drugi punkt przerwania na nawiasie klamrowym zamknięcia na końcu `main` funkcji:
 
-     ![Ustawianie punktów przerwania na potrzeby profilowania](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Ustawianie punktów przerwania na potrzeby profilowania")
+     ![Ustawianie punktów przerwania profilowania](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Ustawianie punktów przerwania profilowania")
 
-    > [!TIP]
-    > Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, który chcesz analizować.
+    Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, które chcesz analizować.
 
-3. Okno **Narzędzia diagnostyczne** jest już widoczne, chyba że zostało wyłączone. Aby ponownie wyświetlić okno, kliknij pozycję **debuguj** > **Windows** > **Pokaż narzędzia diagnostyczne**.
+    >[!TIP]
+    > Po wstrzymaniu w punkcie przerwania lub operacji przechodzenia do kodu można również analizować wydajność przy użyciu [porad dotyczących wydajności](../profiling/perftips.md).
 
-4. Kliknij pozycję **debuguj** > **Rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).
+3. Okno **Narzędzia diagnostyczne** jest już widoczne, chyba że zostało wyłączone. Aby ponownie wyświetlić okno, kliknij przycisk **Debugowanie** > **narzędzi diagnostycznych programu****Windows** > Show .
+
+4. Kliknij **przycisk Debugowanie** > **rozpocznij debugowanie** (lub **Rozpocznij** na pasku narzędzi lub **F5**).
 
      Po zakończeniu ładowania aplikacji zostanie wyświetlony widok **Podsumowanie** narzędzi diagnostycznych.
 
-5. Gdy debuger jest wstrzymany, Włącz zbieranie danych użycia procesora CPU przez wybranie opcji **Rejestruj profil procesora**, a następnie otwórz kartę **użycie procesora CPU** .
+5. Gdy debuger jest wstrzymany, włącz zbieranie danych użycia procesora CPU, wybierając pozycję **Record CPU Profile**, a następnie otwórz kartę Użycie **procesora CPU.**
 
-     ![Narzędzia diagnostyczne umożliwiają profilowanie procesora CPU](../profiling/media/quickstart-cpu-usage-summary.png "Narzędzia diagnostyczne umożliwiają profilowanie procesora CPU")
+     ![Narzędzia diagnostyczne umożliwiają profilowanie procesora](../profiling/media/quickstart-cpu-usage-summary.png "Narzędzia diagnostyczne umożliwiają profilowanie procesora")
 
-     Gdy zbieranie danych jest włączone, przycisk Rejestruj wyświetla czerwony okrąg.
+     Gdy zbieranie danych jest włączone, przycisk nagrywania wyświetla czerwone kółko.
 
-     Po wybraniu opcji **Rejestruj profil procesora CPU**program Visual Studio rozpocznie nagrywanie funkcji i czas ich wykonywania, a także wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania. Te zebrane dane można wyświetlić tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
+     Po **wybraniu opcji Zarejestruj profil procesora CPU**program Visual Studio rozpocznie rejestrowanie funkcji i czasu ich wykonania, a także udostępni wykres osi czasu, którego można użyć do skoncentrowania się na określonych segmentach sesji próbkowania. Można wyświetlić te dane zbierane tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
 
-6. Naciśnij klawisz F5, aby uruchomić aplikację na drugi punkt przerwania.
+6. Naciśnij klawisz F5, aby uruchomić aplikację w drugim punkcie przerwania.
 
-     Teraz masz teraz dane wydajności dla twojej aplikacji specjalnie dla regionu kodu wykonywanego między dwoma punktami przerwania.
+     Teraz masz teraz dane dotyczące wydajności dla aplikacji specjalnie dla regionu kodu, który działa między dwoma punktami przerwania.
 
-     Program profilujący rozpoczyna, przygotowywanie danych wątku. Poczekaj na zakończenie jego działania.
+     Profiler rozpoczyna przygotowywanie danych wątku. Poczekaj, aż się skończy.
 
-     Narzędzie użycie procesora CPU wyświetla raport na karcie **użycie procesora CPU** .
+     Narzędzie Użycie procesora CPU wyświetla raport na karcie **Użycie procesora CPU.**
 
-     W tym momencie można rozpocząć analizy danych.
+     W tym momencie można rozpocząć analizowanie danych.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora CPU
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analizowanie danych użycia procesora
 
-Zaleca się rozpocząć analizowanie danych, sprawdzając listę funkcji, w obszarze użycie procesora CPU, identyfikowanie funkcji, które wykonują najwięcej pracy i następnie wykonywanie bliższe spojrzenie na każdym z nich.
+Zaleca się rozpoczęcie analizowania danych przez zbadanie listy funkcji w obszarze Użycie procesora CPU, identyfikowanie funkcji, które wykonują najwięcej pracy, a następnie przyjrzenie się każdej z nich.
 
-1. Na liście funkcji zbadać funkcje, które wykonują najwięcej pracy.
+1. Na liście funkcji sprawdź funkcje, które wykonują najwięcej pracy.
 
-     ![Karta użycie procesora CPU narzędzi diagnostycznych](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "DiagToolsCPUUsageTab")
-
-    > [!TIP]
-    > Funkcje są wymienione w kolejności, począwszy od osoby faktycznie wykonujące najwięcej pracy (nie są w kolejności wywołań). Dzięki temu można szybko zidentyfikować najdłuższy uruchomionej funkcji.
-
-2. Na liście funkcji kliknij dwukrotnie funkcję `getNumber`.
-
-    Po dwukrotnym kliknięciu funkcji, w okienku po lewej stronie zostanie otwarty widok **wywołujący/wywoływany** .
-
-    ![Widok wywoływany przez obiekt wywołujący narzędzi diagnostycznych](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
-
-    W tym widoku wybrana funkcja jest wyświetlana w nagłówku i w **bieżącym oknie funkcji** (`getNumber`w tym przykładzie). Funkcja, która wywołała bieżącą funkcję, jest pokazywana po lewej stronie w obszarze **wywoływanie funkcji**, a wszystkie funkcje wywoływane przez bieżącą funkcję są wyświetlane w polu **wywoływane funkcje** po prawej stronie. (Możesz wybrać jedno z pól można zmienić bieżącej funkcji.)
-
-    Ten widok przedstawia łączny czas (ms) i procent ogólnej aplikacji, czas, który funkcji zostały podjęte w celu ukończenia działania.
-
-    **Treść funkcji** pokazuje również łączny czas (i procent czasu) spędzony w treści funkcji, z wyłączeniem czasu spędzonego na wywoływaniu i wywołaniu funkcji. (Na tym rysunku 119 z 43602 MS były spędzane w treści funkcji, a pozostały czas spędzony w innym kodzie wywoływanym przez tę funkcję). Rzeczywiste wartości będą się różnić w zależności od środowiska.
+     ![Karta Użycie procesora cpu narzędzi diagnostycznych](../profiling/media/quickstart-cpu-usage-cpu-cplusplus.png "Karta DiagToolsCPUUsageTab")
 
     > [!TIP]
-    > Duże wartości w **treści funkcji** mogą wskazywać wąskie gardła wydajności w samej funkcji.
+    > Funkcje są wyświetlane w kolejności, począwszy od tych, którzy wykonują najwięcej pracy (nie są one w kolejności wywołania). Pomaga to szybko zidentyfikować najdłużej działające funkcje.
+
+2. Na liście funkcji kliknij dwukrotnie `getNumber` funkcję.
+
+    Po dwukrotnym kliknięciu funkcji w lewym okienku zostanie otwarty widok **Wywołujący/Wywoływany.**
+
+    ![Diagnostyka Narzędzia Caller Callee Widok](../profiling/media/quickstart-cpu-usage-caller-callee-cplusplus.png "DiagToolsCallerCallee")
+
+    W tym widoku wybrana funkcja jest wyświetlana w nagłówku`getNumber`i w polu **Bieżąca funkcja** ( , w tym przykładzie). Funkcja, która wywoływała bieżącą funkcję, jest wyświetlana po lewej stronie w obszarze **Funkcja wywoływania,** a wszystkie funkcje wywoływane przez bieżącą funkcję są wyświetlane w polu **Wywoływane funkcje** po prawej stronie. (Można wybrać do któregokolwiek z pól, aby zmienić bieżącą funkcję).
+
+    Ten widok pokazuje całkowity czas (ms) i procent całkowitego czasu działania aplikacji, który został pobrany do wykonania.
+
+    **Treść funkcji** pokazuje również całkowitą ilość czasu (i procent czasu) spędzoną w treści funkcji, z wyłączeniem czasu spędzonego podczas wywoływania i wywoływania funkcji. (Na tej ilustracji 119 z 43602 ms zostały wydane w treści funkcji, a pozostały czas został spędzony w innym kodzie wywoływane przez tę funkcję). Rzeczywiste wartości będą bardzo różne w zależności od środowiska.
+
+    > [!TIP]
+    > Wysokie wartości w **treści funkcji** może wskazywać wąskie gardło wydajności w ramach samej funkcji.
 
 ## <a name="next-steps"></a>Następne kroki
 
-- [Analizuj użycie pamięci](../profiling/memory-usage.md), aby zidentyfikować wąskie gardła wydajności.
-- [Analizuj użycie procesora](../profiling/cpu-usage.md) , aby uzyskać bardziej szczegółowe informacje o narzędziu Użycie procesora CPU.
-- Analizuj użycie procesora bez dołączonego debugera lub jako przeznaczonego dla uruchomionej aplikacji — aby uzyskać więcej informacji, zobacz [zbieranie danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [narzędziach profilowania uruchamiania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+- [Analizowanie użycia pamięci](../profiling/memory-usage.md)w celu zidentyfikowania wąskich gardeł wydajności.
+- [Analizowanie użycia procesora CPU](../profiling/cpu-usage.md) w celu uzyskania bardziej szczegółowych informacji na temat narzędzia użycia procesora CPU.
+- Analizowanie użycia procesora bez dołączonego debugera lub kierowanie na działającą aplikację — aby uzyskać więcej informacji, zobacz [Zbieranie danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [programie Run profilowanie narzędzi z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ## <a name="see-also"></a>Zobacz też
 

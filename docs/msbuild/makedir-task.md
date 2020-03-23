@@ -1,5 +1,5 @@
 ---
-title: MakeDir — zadanie | Microsoft Docs
+title: Zadanie MakeDir | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,32 +19,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633541"
 ---
 # <a name="makedir-task"></a>MakeDir — zadanie
 
-Tworzy katalogi i, w razie potrzeby, wszystkie katalogi nadrzędne.
+Tworzy katalogi i, jeśli to konieczne, katalogi nadrzędne.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry zadania `MakeDir`.
+W poniższej tabeli `MakeDir` opisano parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
 |`Directories`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Zestaw katalogów do utworzenia.|
-|`DirectoriesCreated`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Katalogi, które są tworzone przez to zadanie. Jeśli nie można utworzyć niektórych katalogów, może to nie zawierać wszystkich elementów, które zostały przesłane do `Directories` parametru.|
+|`DirectoriesCreated`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Katalogi, które są tworzone przez to zadanie. Jeśli nie można utworzyć niektórych katalogów, może to nie zawierać `Directories` wszystkich elementów, które zostały przekazane do parametru.|
 
 ## <a name="remarks"></a>Uwagi
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład kodu używa zadania `MakeDir`, aby utworzyć katalog określony przez właściwość `OutputDirectory`.
+Poniższy przykład kodu `MakeDir` używa zadania do utworzenia `OutputDirectory` katalogu określonego przez właściwość.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

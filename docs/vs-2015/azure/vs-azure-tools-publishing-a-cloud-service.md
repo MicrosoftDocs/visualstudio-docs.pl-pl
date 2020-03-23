@@ -1,6 +1,6 @@
 ---
-title: Publikowanie usługi w chmurze przy użyciu narzędzi platformy Azure | Microsoft Docs
-description: Dowiedz się, jak publikować projekty usług w chmurze platformy Azure za pomocą programu Visual Studio.
+title: Publikowanie usługi w chmurze przy użyciu narzędzi platformy Azure | Dokumenty firmy Microsoft
+description: Dowiedz się, jak publikować projekty usługi w chmurze platformy Azure przy użyciu programu Visual Studio.
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
@@ -12,149 +12,149 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846515"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302561"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikowanie usługi w chmurze za pomocą programu Visual Studio
 
-Program Visual Studio może publikować aplikację bezpośrednio na platformie Azure z obsługą środowiska przejściowego i produkcyjnego w ramach usługi w chmurze. Podczas publikowania należy wybrać środowisko wdrażania i konto magazynu, które jest tymczasowo używane dla pakietu wdrożeniowego.
+Visual Studio można opublikować aplikację bezpośrednio na platformie Azure, z obsługą środowisk przejściowych i produkcyjnych usługi w chmurze. Podczas publikowania należy wybrać środowisko wdrażania i konto magazynu, które jest tymczasowo używane dla pakietu wdrożeniowego.
 
-Podczas tworzenia i testowania aplikacji platformy Azure można użyć Web Deploy, aby publikować zmiany przyrostowo dla ról sieci Web. Po opublikowaniu aplikacji w środowisku wdrażania Web Deploy umożliwia wdrożenie zmian bezpośrednio na maszynie wirtualnej, na której działa rola sieci Web. Nie ma potrzeby pakowania i publikowania całej aplikacji platformy Azure za każdym razem, gdy chcesz zaktualizować rolę sieci Web w celu przetestowania zmian. Dzięki temu można mieć dostęp do roli sieci Web w chmurze na potrzeby testowania bez czekania na opublikowanie aplikacji w środowisku wdrożenia.
+Podczas tworzenia i testowania aplikacji platformy Azure, można użyć wdrażania sieci Web, aby publikować zmiany przyrostowo dla ról sieci web. Po opublikowaniu aplikacji w środowisku wdrażania, Web Deploy umożliwia wdrażanie zmian bezpośrednio na maszynie wirtualnej, która jest uruchomiona roli sieci web. Nie trzeba pakować i publikować całej aplikacji platformy Azure za każdym razem, gdy chcesz zaktualizować rolę sieci web, aby przetestować zmiany. Dzięki takiemu podejściu można mieć zmiany roli sieci web dostępne w chmurze do testowania bez oczekiwania na opublikowanie aplikacji w środowisku wdrażania.
 
-Użyj następujących procedur, aby opublikować aplikację platformy Azure i zaktualizować rolę sieci Web przy użyciu Web Deploy:
+Skorzystaj z następujących procedur, aby opublikować aplikację platformy Azure i zaktualizować rolę sieci Web przy użyciu narzędzia Web Deploy:
 
-- Publikowanie lub pakowanie aplikacji platformy Azure z poziomu programu Visual Studio
+- Publikowanie lub pakowanie aplikacji platformy Azure z programu Visual Studio
 - Aktualizowanie roli sieci Web w ramach cyklu tworzenia i testowania
 
-## <a name="publish-or-package-an-azure-application-from-visual-studio"></a>Publikowanie lub pakowanie aplikacji platformy Azure z poziomu programu Visual Studio
+## <a name="publish-or-package-an-azure-application-from-visual-studio"></a>Publikowanie lub pakowanie aplikacji platformy Azure z programu Visual Studio
 
-Po opublikowaniu aplikacji platformy Azure można wykonać jedną z następujących czynności:
+Podczas publikowania aplikacji platformy Azure można wykonać jedno z następujących zadań:
 
-- Utwórz pakiet usługi: można użyć tego pakietu i pliku konfiguracji usługi do opublikowania aplikacji w środowisku wdrażania z [Azure Portal](https://portal.azure.com).
+- Utwórz pakiet usługi: Można użyć tego pakietu i pliku konfiguracji usługi, aby opublikować aplikację w środowisku wdrażania z [witryny Azure portal](https://portal.azure.com).
 
-- Opublikuj projekt platformy Azure z poziomu programu Visual Studio: Aby opublikować aplikację bezpośrednio na platformie Azure, użyj Kreatora publikacji. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Opublikuj swój projekt platformy Azure z programu Visual Studio: Aby opublikować aplikację bezpośrednio na platformie Azure, użyj Kreatora publikowania. Aby uzyskać więcej informacji, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Aby utworzyć pakiet usługi z programu Visual Studio
 
-1. Gdy wszystko będzie gotowe do opublikowania aplikacji, Otwórz Eksplorator rozwiązań, otwórz menu skrótów dla projektu platformy Azure, który zawiera Twoje role, a następnie wybierz polecenie Publikuj.
+1. Gdy będziesz gotowy do opublikowania aplikacji, otwórz Eksploratora rozwiązań, otwórz menu skrótów dla projektu platformy Azure, który zawiera twoje role, i wybierz pozycję Publikuj.
 
-1. Aby utworzyć tylko pakiet usługi, wykonaj następujące kroki:
+1. Aby utworzyć tylko pakiet usług, wykonaj następujące kroki:
 
-   a. W menu skrótów dla projektu platformy Azure wybierz pozycję **pakiet**.
+   a. W menu skrótów dla projektu platformy Azure wybierz pozycję **Pakiet**.
 
-   b. W oknie dialogowym **pakowanie aplikacji platformy Azure** wybierz konfigurację usługi, dla której chcesz utworzyć pakiet, a następnie wybierz konfigurację kompilacji.
+   b. W oknie dialogowym **Pakiet aplikacji platformy Azure** wybierz konfigurację usługi, dla której chcesz utworzyć pakiet, a następnie wybierz konfigurację kompilacji.
 
-   c. Obowiązkowe Aby włączyć Pulpit zdalny dla usługi w chmurze po jej opublikowaniu, wybierz pozycję **włącz pulpit zdalny dla wszystkich ról**, a następnie wybierz pozycję **Ustawienia** , aby skonfigurować pulpit zdalny poświadczenia. Aby uzyskać więcej informacji, zobacz [Włącz Podłączanie pulpitu zdalnego dla roli w usługach Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+   d. (Opcjonalnie) Aby włączyć pulpit zdalny usługi w chmurze po jej opublikowaniu, wybierz pozycję **Włącz pulpit zdalny dla wszystkich ról**, a następnie wybierz pozycję **Ustawienia,** aby skonfigurować poświadczenia pulpitu zdalnego. Aby uzyskać więcej informacji, zobacz [Włączanie połączenia pulpitu zdalnego dla roli w usługach w chmurze azure przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-      Jeśli chcesz debugować usługę w chmurze po jej opublikowaniu, Włącz debugowanie zdalne, wybierając opcję **Włącz debuger zdalny dla wszystkich ról**.
+      Jeśli chcesz debugować usługę w chmurze po jej opublikowaniu, włącz zdalne debugowanie, wybierając **pozycję Włącz debuger zdalny dla wszystkich ról**.
 
-   d. Aby utworzyć pakiet, wybierz link **pakiet** .
+   d. Aby utworzyć pakiet, wybierz łącze **Pakiet.**
 
-      Eksplorator plików pokazuje lokalizację pliku nowo utworzonego pakietu. Możesz skopiować tę lokalizację, aby można było jej używać z poziomu Azure Portal.
+      Eksplorator plików pokazuje lokalizację pliku nowo utworzonego pakietu. Tę lokalizację można skopiować, aby można było jej używać z witryny Azure Portal.
 
-   e. Aby opublikować ten pakiet w środowisku wdrażania, należy użyć tej lokalizacji jako lokalizacji pakietu podczas tworzenia usługi w chmurze i wdrożyć ten pakiet w środowisku z Azure Portal.
+   e. Aby opublikować ten pakiet w środowisku wdrażania, należy użyć tej lokalizacji jako lokalizacji pakietu podczas tworzenia usługi w chmurze i wdrażania tego pakietu w środowisku za pomocą witryny Azure portal.
 
-1. Obowiązkowe Aby anulować proces wdrażania, w menu skrótów dla elementu wiersza w dzienniku aktywności wybierz polecenie **Anuluj i Usuń**. To polecenie powoduje zatrzymanie procesu wdrażania i usuwa środowisko wdrażania na platformie Azure. Aby usunąć środowisko po wdrożeniu, użyj Azure Portal.
+1. (Opcjonalnie) Aby anulować proces wdrażania, w menu skrótów elementu zamówienia w dzienniku aktywności wybierz pozycję **Anuluj i usuń**. To polecenie zatrzymuje proces wdrażania i usuwa środowisko wdrażania z platformy Azure. Aby usunąć środowisko po wdrożeniu, użyj witryny Azure portal.
 
-1. Obowiązkowe Po rozpoczęciu wystąpień roli program Visual Studio automatycznie wyświetli środowisko wdrożenia w węźle **Cloud Services** w Eksplorator serwera. W tym miejscu można zobaczyć stan poszczególnych wystąpień ról. Zobacz [Zarządzanie zasobami platformy Azure za pomocą programu Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md). Na poniższej ilustracji przedstawiono wystąpienia roli, podczas gdy nadal są w stanie inicjowania:
+1. (Opcjonalnie) Po uruchomieniu wystąpień roli program Visual Studio automatycznie wyświetla środowisko wdrażania w węźle Usługi w **chmurze** w Eksploratorze serwera. W tym miejscu można zobaczyć stan poszczególnych wystąpień roli. Zobacz [Zarządzanie zasobami platformy Azure za pomocą Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md). Na poniższej ilustracji przedstawiono wystąpienia roli, gdy są one nadal w stanie inicjowania:
 
     ![VST_DeployComputeNode](./media/vs-azure-tools-publishing-a-cloud-service/IC744134.png)
 
 ## <a name="update-a-web-role-as-part-of-the-development-and-testing-cycle"></a>Aktualizowanie roli sieci Web w ramach cyklu tworzenia i testowania
 
-Jeśli infrastruktura zaplecza aplikacji jest stabilna, ale role sieci Web potrzebują coraz częściej aktualizacji, można użyć Web Deploy, aby zaktualizować tylko rolę sieci Web w projekcie. Web Deploy jest przydatny, gdy nie chcesz odbudować i ponownie wdrożyć ról procesu roboczego zaplecza, lub jeśli masz wiele ról sieci Web i chcesz zaktualizować tylko jedną z ról sieci Web.
+Jeśli infrastruktura zaplecza aplikacji jest stabilna, ale role sieci web wymagają częstszego aktualizowania, można użyć wdrożenia w sieci Web, aby zaktualizować tylko rolę sieci Web w projekcie. Wdrażanie w sieci Web jest przydatne, gdy nie chcesz odbudować i ponownie wdrożyć ról roboczego zaplecza lub jeśli masz wiele ról sieci Web i chcesz zaktualizować tylko jedną z ról sieci Web.
 
-### <a name="requirements-for-using-web-deploy"></a>Wymagania dotyczące używania Web Deploy
+### <a name="requirements-for-using-web-deploy"></a>Wymagania dotyczące korzystania z wdrażania w sieci Web
 
-- **Tylko do celów deweloperskich i testowych**: zmiany są wprowadzane bezpośrednio do maszyny wirtualnej, w której uruchomiono rolę sieci Web. Jeśli ta maszyna wirtualna musi zostać odtworzona, zmiany zostaną utracone, ponieważ oryginalny opublikowany pakiet jest używany do odtworzenia maszyny wirtualnej dla tej roli. Opublikuj ponownie aplikację, aby uzyskać najnowsze zmiany roli sieci Web.
+- **Tylko do celów deweloperskich i testowych:** zmiany są wprowadzane bezpośrednio do maszyny wirtualnej, na której jest uruchomiona rola sieci web. Jeśli ta maszyna wirtualna ma zostać odtworzona, zmiany zostaną utracone, ponieważ oryginalny pakiet, który został opublikowany jest używany do ponownego tworzenia maszyny wirtualnej dla roli. Ponownie opublikuj aplikację, aby uzyskać najnowsze zmiany dla roli sieci web.
 
-- **Można aktualizować tylko role sieci Web**: nie można zaktualizować ról procesu roboczego. Ponadto nie można zaktualizować `RoleEntryPoint` w `web role.cs`.
+- **Można aktualizować tylko role sieci Web:** nie można aktualizować ról procesu roboczego. Ponadto nie można zaktualizować w `RoleEntryPoint` `web role.cs`.
 
-- **Może obsługiwać tylko pojedyncze wystąpienie roli sieci Web**: w środowisku wdrażania nie można mieć wielu wystąpień żadnej roli sieci Web. Jednak obsługiwane są wiele ról sieci Web z tylko jednym wystąpieniem.
+- **Może obsługiwać tylko jedno wystąpienie roli sieci web:** nie można mieć wielu wystąpień dowolnej roli sieci web w środowisku wdrażania. Jednak wiele ról sieci web, z których każda ma tylko jedno wystąpienie, jest obsługiwanych.
 
-- **Włącz połączenia pulpitu zdalnego**: to wymaganie umożliwia Web Deploy do łączenia się z maszyną wirtualną przy użyciu użytkownika i hasła w celu wdrożenia zmian na serwerze z uruchomionym programem Internet Information Services (IIS). Ponadto może być konieczne nawiązanie połączenia z maszyną wirtualną w celu dodania certyfikatu zaufanego do usług IIS na tej maszynie wirtualnej. (Ten certyfikat gwarantuje, że połączenie zdalne dla usług IIS, które jest używane przez Web Deploy jest bezpieczne.)
+- **Włącz połączenia pulpitu zdalnego:** To wymaganie umożliwia wdrażaniu w sieci Web za pomocą użytkownika i hasła do łączenia się z maszyną wirtualną w celu wdrożenia zmian na serwerze z uruchomionymi usługami internet information services (IIS). Ponadto może być konieczne połączenie z maszyną wirtualną, aby dodać zaufany certyfikat do usług IIS na tej maszynie wirtualnej. (Ten certyfikat gwarantuje, że połączenie zdalne dla usług IIS używane przez program Web Deploy jest bezpieczne).
 
-W poniższej procedurze przyjęto założenie, że używasz kreatora **publikacji aplikacji platformy Azure** .
+W poniższej procedurze przyjęto założenie, że używasz kreatora **publikowania aplikacji platformy Azure.**
 
-### <a name="enable-web-deploy-when-you-publish-your-application"></a>Włącz Web Deploy podczas publikowania aplikacji
+### <a name="enable-web-deploy-when-you-publish-your-application"></a>Włączanie wdrażania w sieci Web podczas publikowania aplikacji
 
-1. Aby włączyć opcję **włącz Web Deploy dla wszystkich ról sieci Web** , należy najpierw skonfigurować połączenia pulpitu zdalnego. Wybierz pozycję **włącz pulpit zdalny** dla wszystkich ról, a następnie podaj poświadczenia, które są używane do zdalnego nawiązywania połączenia w wyświetlonym oknie **Konfiguracja pulpit zdalny** . Zobacz [włączanie Podłączanie pulpitu zdalnego dla roli na platformie Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+1. Aby włączyć opcję **Włącz wdrażanie sieci Web dla wszystkich ról sieci Web,** należy najpierw skonfigurować połączenia pulpitu zdalnego. Wybierz **pozycję Włącz pulpit zdalny** dla wszystkich ról, a następnie podaj poświadczenia używane do zdalnego łączenia się w wyświetlonym polu **Konfiguracja pulpitu zdalnego.** Zobacz [Włączanie połączenia pulpitu zdalnego dla roli w usługach w chmurze platformy Azure przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
-1. Aby włączyć Web Deploy dla wszystkich ról sieci Web w aplikacji, wybierz opcję **włącz Web Deploy dla wszystkich ról sieci Web**.
+1. Aby włączyć wdrażanie w sieci Web dla wszystkich ról sieci Web w aplikacji, wybierz pozycję **Włącz wdrażanie w sieci Web dla wszystkich ról sieci Web**.
 
-    Zostanie wyświetlony żółty trójkąt ostrzegawczy. Web Deploy domyślnie używa niezaufanego certyfikatu z podpisem własnym, co nie jest zalecane do przekazywania poufnych danych. Aby zabezpieczyć ten proces w przypadku danych poufnych, można dodać certyfikat SSL, który będzie używany na potrzeby połączeń Web Deploy. Ten certyfikat musi być zaufanym certyfikatem. Aby uzyskać więcej informacji, zobacz [udostępnianie narzędzia Web Deploy Secure](#make-web-deploy-secure).
+    Pojawi się żółty trójkąt ostrzegawczy. Program Web Deploy domyślnie używa niezaufanego certyfikatu z podpisem własnym, który nie jest zalecany do przekazywania poufnych danych. Jeśli chcesz zabezpieczyć ten proces dla poufnych danych, możesz dodać certyfikat SSL, który ma być używany do wdrażania w sieci Web połączeń. Ten certyfikat musi być zaufanym certyfikatem. Aby uzyskać więcej informacji, zobacz [Bezpieczne wdrażanie sieci Web](#make-web-deploy-secure).
 
-1. Wybierz pozycję **dalej** , aby wyświetlić ekran **Podsumowanie** , a następnie wybierz pozycję **Publikuj** , aby wdrożyć usługę w chmurze.
+1. Wybierz **pozycję Dalej,** aby wyświetlić ekran **Podsumowanie,** a następnie wybierz pozycję **Publikuj,** aby wdrożyć usługę w chmurze.
 
-    Usługa w chmurze jest publikowana. Utworzona maszyna wirtualna ma włączone połączenia zdalne dla usług IIS, dzięki czemu Web Deploy może służyć do aktualizowania ról sieci Web bez konieczności ich ponownego publikowania.
+    Usługa w chmurze jest publikowana. Utworzona maszyna wirtualna ma włączone połączenia zdalne dla usług IIS, dzięki czemu wdrażanie w sieci Web może służyć do aktualizowania ról sieci Web bez ich ponownego publikowania.
 
    > [!NOTE]
-   > Jeśli masz więcej niż jedno wystąpienie skonfigurowane dla roli sieci Web, zostanie wyświetlony komunikat ostrzegawczy z informacją o tym, że każda rola sieci Web jest ograniczona do jednego wystąpienia tylko w pakiecie utworzonym w celu opublikowania aplikacji. Kliknij przycisk **OK**, aby kontynuować. Zgodnie z opisem w sekcji wymagania można mieć więcej niż jedną rolę sieci Web, ale tylko jedno wystąpienie każdej roli.
+   > Jeśli dla roli sieci web skonfigurowano więcej niż jedno wystąpienie, zostanie wyświetlony komunikat ostrzegawczy informujący, że każda rola sieci web jest ograniczona do jednego wystąpienia tylko w pakiecie utworzonym w celu opublikowania aplikacji. Kliknij przycisk **OK**, aby kontynuować. Jak podano w sekcji Wymagania, można mieć więcej niż jedną rolę sieci web, ale tylko jedno wystąpienie każdej roli.
 
-### <a name="update-your-web-role-by-using-web-deploy"></a>Aktualizowanie roli sieci Web przy użyciu Web Deploy
+### <a name="update-your-web-role-by-using-web-deploy"></a>Aktualizowanie roli sieci Web przy użyciu wdrażania w sieci Web
 
-1. Aby użyć Web Deploy, wprowadź zmiany kodu w projekcie dla dowolnych ról sieci Web w programie Visual Studio, które chcesz opublikować, a następnie kliknij prawym przyciskiem myszy ten węzeł projektu w rozwiązaniu, a następnie wskaż polecenie **Publikuj**. Zostanie wyświetlone okno dialogowe **Publikowanie sieci Web** .
+1. Aby użyć programu Web Deploy, należy wprowadzić zmiany kodu w projekcie dla dowolnej roli sieci Web w programie Visual Studio, które chcesz opublikować, a następnie kliknij prawym przyciskiem myszy ten węzeł projektu w rozwiązaniu i wskaż polecenie **Publikuj**. Zostanie wyświetlone okno dialogowe **Publikowanie w sieci Web.**
 
-1. Obowiązkowe Jeśli został dodany zaufany certyfikat SSL do użycia dla połączeń zdalnych dla usług IIS, możesz wyczyścić pole wyboru **Zezwalaj na niezaufany certyfikat** . Aby uzyskać informacje dotyczące sposobu dodawania certyfikatu w celu zapewnienia Web Deploy zabezpieczenia, zapoznaj się z sekcją w **celu wprowadzenia Web Deploy zabezpieczeń** w dalszej części tego artykułu.
+1. (Opcjonalnie) Jeśli dodano zaufany certyfikat SSL do użycia w połączeniach zdalnych dla usług IIS, można wyczyścić pole wyboru **Zezwalaj na niezaufany certyfikat.** Aby uzyskać informacje dotyczące dodawania certyfikatu w celu zabezpieczenia wdrożenia w sieci Web, zobacz sekcję **Aby wdrożenie sieci Web było bezpieczne** w dalszej części tego artykułu.
 
-1. Aby można było używać Web Deploy, mechanizm publikowania wymaga nazwy użytkownika i hasła, które zostały skonfigurowane dla połączenia Pulpit zdalny podczas pierwszej publikacji pakietu.
+1. Aby użyć narzędzia Web Deploy, mechanizm publikowania wymaga nazwy użytkownika i hasła skonfigurowanych dla połączenia pulpitu zdalnego podczas pierwszego opublikowania pakietu.
 
-   a. W polu **Nazwa użytkownika**wprowadź nazwę użytkownika.
+   a. W **pliku User name**wprowadź nazwę użytkownika.
 
-   b. W polu **hasło**wprowadź hasło.
+   b. W **obszarze Hasło**wprowadź hasło.
 
-   c. Obowiązkowe Jeśli chcesz zapisać to hasło w tym profilu, wybierz pozycję **Zapisz hasło**.
+   d. (Opcjonalnie) Jeśli chcesz zapisać to hasło w tym profilu, wybierz pozycję **Zapisz hasło**.
 
 1. Aby opublikować zmiany w roli sieci Web, wybierz pozycję **Publikuj**.
 
-    W wierszu stanu zostanie wyświetlona wartość **Publikowanie rozpoczęta**. Po zakończeniu publikowania zostanie wyświetlony komunikat **Publikowanie zakończyło się pomyślnie** . Zmiany zostały teraz wdrożone w roli sieci Web na maszynie wirtualnej. Teraz możesz uruchomić aplikację platformy Azure w środowisku platformy Azure, aby przetestować zmiany.
+    W wierszu stanu jest wyświetlany komunikat **Publish started**. Po zakończeniu publikowania zostanie **wyświetlony program Publikowania.** Zmiany zostały wdrożone do roli sieci web na maszynie wirtualnej. Teraz możesz uruchomić aplikację platformy Azure w środowisku platformy Azure, aby przetestować zmiany.
 
-### <a name="make-web-deploy-secure"></a>Zabezpieczanie narzędzia Web Deploy
+### <a name="make-web-deploy-secure"></a>Bezpieczne wdrażanie w sieci Web
 
-1. Web Deploy domyślnie używa niezaufanego certyfikatu z podpisem własnym, co nie jest zalecane do przekazywania poufnych danych. Aby zabezpieczyć ten proces w przypadku danych poufnych, można dodać certyfikat SSL, który będzie używany na potrzeby połączeń Web Deploy. Ten certyfikat musi być zaufanym certyfikatem uzyskanym od urzędu certyfikacji (CA).
+1. Program Web Deploy domyślnie używa niezaufanego certyfikatu z podpisem własnym, który nie jest zalecany do przekazywania poufnych danych. Jeśli chcesz zabezpieczyć ten proces dla poufnych danych, możesz dodać certyfikat SSL, który ma być używany do wdrażania w sieci Web połączeń. Ten certyfikat musi być zaufanym certyfikatem, który można uzyskać od urzędu certyfikacji.This certificate needs to be a trusted certificate, which you obtain from a certificate authority (CA).
 
-    Aby zapewnić Web Deploy zabezpieczenia dla każdej maszyny wirtualnej dla każdej z ról sieci Web, należy przekazać zaufany certyfikat, który ma być używany dla narzędzia Web Deploy do Azure Portal. Ten certyfikat gwarantuje, że certyfikat jest dodawany do maszyny wirtualnej, która jest tworzona dla roli sieci Web podczas publikowania aplikacji.
+    Aby program Web Deploy był bezpieczny dla każdej maszyny wirtualnej dla każdej z ról sieci Web, należy przekazać zaufany certyfikat, którego chcesz użyć do wdrożenia w sieci Web w witrynie Azure portal. Ten certyfikat zapewnia, że certyfikat jest dodawany do maszyny wirtualnej, która jest tworzona dla roli sieci web podczas publikowania aplikacji.
 
-1. Aby dodać zaufany certyfikat SSL do usług IIS do użycia na potrzeby połączeń zdalnych, wykonaj następujące kroki:
+1. Aby dodać zaufany certyfikat SSL do usług IIS do użycia w przypadku połączeń zdalnych, wykonaj następujące kroki:
 
-   a. Aby nawiązać połączenie z maszyną wirtualną, na której działa rola sieci Web, wybierz wystąpienie roli sieci Web w programie **Cloud Explorer** lub **Eksplorator serwera**, a następnie wybierz polecenie **Połącz przy użyciu pulpit zdalny** . Aby uzyskać szczegółowe instrukcje dotyczące nawiązywania połączenia z maszyną wirtualną, zobacz [włączanie Podłączanie pulpitu zdalnego dla roli na platformie Azure Cloud Services przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). W przeglądarce zostanie wyświetlony komunikat z prośbą o pobranie pliku `.rdp`.
+   a. Aby połączyć się z maszyną wirtualną, na którą działa rola sieci Web, wybierz wystąpienie roli sieci Web w **Eksploratorze chmury** lub **Eksploratorze serwera,** a następnie wybierz polecenie **Połącz za pomocą pulpitu zdalnego.** Aby uzyskać szczegółowe instrukcje dotyczące łączenia się z maszyną wirtualną, zobacz [Włączanie połączenia pulpitu zdalnego dla roli w usługach w chmurze platformy Azure przy użyciu programu Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Przeglądarka wyświetli monit o `.rdp` pobranie pliku.
 
-   b. Aby dodać certyfikat SSL, Otwórz usługę zarządzania w Menedżerze usług IIS. W Menedżerze usług IIS Włącz protokół SSL, otwierając link **powiązania** w okienku **Akcja** . Zostanie wyświetlone okno dialogowe **Dodawanie powiązania witryny** . Wybierz pozycję **Dodaj**, a następnie na liście rozwijanej **Typ** wybierz pozycję https. Z listy **certyfikat SSL** wybierz certyfikat SSL, który został podpisany przez urząd certyfikacji i przekazany do Azure Portal. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień połączenia dla usługi zarządzania](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
+   b. Aby dodać certyfikat SSL, otwórz usługę zarządzania w Menedżerze usług IIS. W Menedżerze usług IIS włącz SSL, otwierając łącze **Powiązania** w okienku **Akcja.** Zostanie wyświetlone okno dialogowe **Dodawanie powiązania witryny.** Wybierz **pozycję Dodaj**, a następnie wybierz pozycję HTTPS na liście rozwijanej **Typ.** Na liście **certyfikatów SSL** wybierz certyfikat SSL podpisany przez urząd certyfikacji i przekazany do witryny Azure portal. Aby uzyskać więcej informacji, zobacz [Konfigurowanie ustawień połączenia dla usługi zarządzania](https://technet.microsoft.com/library/cc770458(WS.10).aspx).
 
       > [!NOTE]
-      > W przypadku dodania zaufanego certyfikatu SSL żółty trójkąt ostrzegawczy nie pojawia się już w **Kreatorze publikacji**.
+      > Po dodaniu zaufanego certyfikatu SSL żółty trójkąt ostrzegawczy nie będzie już wyświetlany w **Kreatorze publikowania**.
 
-## <a name="include-files-in-the-service-package"></a>Uwzględnij pliki w pakiecie usługi
+## <a name="include-files-in-the-service-package"></a>Dołączanie plików do pakietu usług
 
-Może być konieczne uwzględnienie określonych plików w pakiecie usługi, aby były dostępne na maszynie wirtualnej utworzonej dla roli. Na przykład możesz chcieć dodać `.exe` lub plik `.msi`, który jest używany przez skrypt uruchamiania w pakiecie usługi. Może być też konieczne dodanie zestawu, który jest wymagany przez rolę sieci Web lub projekt roli proces roboczy. Aby dołączyć pliki, należy je dodać do rozwiązania dla aplikacji platformy Azure.
+Może być konieczne dołączenie określonych plików w pakiecie usługi, tak aby były one dostępne na maszynie wirtualnej, która jest tworzona dla roli. Na przykład można dodać `.exe` lub `.msi` plik, który jest używany przez skrypt startowy do pakietu usługi. Lub może być konieczne dodanie zestawu, który wymaga roli sieci web lub projektu roli procesu roboczego. Aby dołączyć pliki, należy je dodać do rozwiązania dla aplikacji platformy Azure.
 
-1. Aby dodać zestaw do pakietu usługi, wykonaj następujące czynności:
+1. Aby dodać zestaw do pakietu serwisowego, należy wykonać następujące czynności:
 
-   a. W **Eksplorator rozwiązań**Otwórz węzeł projektu dla projektu, w którym brakuje zestawu, którego dotyczy odwołanie.
-   b. Aby dodać zestaw do projektu, otwórz menu skrótów dla folderu **References** , a następnie wybierz **Dodaj odwołanie**. Zostanie wyświetlone okno dialogowe Dodawanie odwołania.
-   c. Wybierz odwołanie, które chcesz dodać, a następnie wybierz przycisk **OK**. Odwołanie jest dodawane do listy w folderze **References** .
-   d. Otwórz menu skrótów dla dodanego zestawu i wybierz polecenie **Właściwości**. Zostanie wyświetlone okno **Właściwości** .
+   a. W **Eksploratorze rozwiązań**otwórz węzeł projektu dla projektu, dla którego brakuje zestawu, do którego istnieje odwołanie.
+   b. Aby dodać zestaw do projektu, otwórz menu skrótów dla folderu **Odwołania,** a następnie wybierz pozycję **Dodaj odwołanie**. Zostanie wyświetlone okno dialogowe Dodaj odwołanie.
+   d. Wybierz odwołanie, które chcesz dodać, a następnie wybierz przycisk **OK**. Odwołanie zostanie dodane do listy w folderze **Odwołania.**
+   d. Otwórz menu skrótów dla dodanego złożenia i wybierz polecenie **Właściwości**. Zostanie wyświetlone okno **Właściwości.**
 
-      Aby dołączyć ten zestaw do pakietu usługi, na **liście Kopiuj lokalne** wybierz **wartość PRAWDA**.
-1. W **Eksplorator rozwiązań** Otwórz węzeł projektu dla projektu, w którym brakuje zestawu, którego dotyczy odwołanie.
+      Aby uwzględnić ten zestaw w pakiecie usług, na **liście Kopiuj lokalnie** wybierz pozycję **True**.
+1. W **Eksploratorze rozwiązań** otwórz węzeł projektu dla projektu, w którego brakuje zestawu, do którego istnieje odwołanie.
 
-1. Aby dodać zestaw do projektu, otwórz menu skrótów dla folderu **References** , a następnie wybierz **Dodaj odwołanie**. Zostanie wyświetlone okno dialogowe **Dodawanie odwołania** .
+1. Aby dodać zestaw do projektu, otwórz menu skrótów dla folderu **Odwołania,** a następnie wybierz pozycję **Dodaj odwołanie**. Zostanie wyświetlone okno dialogowe **Dodaj odwołanie.**
 
-1. Wybierz odwołanie, które chcesz dodać, a następnie wybierz przycisk **OK** .
+1. Wybierz odwołanie, które chcesz dodać, a następnie wybierz przycisk **OK.**
 
-    Odwołanie jest dodawane do listy w folderze **References** .
+    Odwołanie zostanie dodane do listy w folderze **Odwołania.**
 
-1. Otwórz menu skrótów dla dodanego zestawu i wybierz polecenie **Właściwości**. Zostanie wyświetlona okno Właściwości.
+1. Otwórz menu skrótów dla dodanego złożenia i wybierz polecenie **Właściwości**. Zostanie wyświetlone okno Właściwości.
 
-1. Aby dołączyć ten zestaw do pakietu usługi, na liście **Kopiuj lokalne** wybierz pozycję **prawda**.
+1. Aby uwzględnić ten zestaw w pakiecie usług, na liście **Kopiuj lokalnie** wybierz pozycję **True**.
 
-1. Aby uwzględnić pliki w pakiecie usługi, które zostały dodane do projektu roli sieci Web, otwórz menu skrótów dla tego pliku, a następnie wybierz polecenie **Właściwości**. W oknie **Właściwości** wybierz pozycję **zawartość** w polu listy **Akcja kompilacji** .
+1. Aby uwzględnić pliki w pakiecie usług, które zostały dodane do projektu roli sieci Web, otwórz menu **skrótów**dla pliku, a następnie wybierz polecenie Właściwości . W oknie **Właściwości** wybierz pozycję **Zawartość** z pola listy **Akcja kompilacji.**
 
-1. Aby uwzględnić pliki w pakiecie usługi, które zostały dodane do projektu roli procesu roboczego, otwórz menu skrótów dla tego pliku, a następnie wybierz polecenie **Właściwości**. W oknie **Właściwości** w polu listy **Kopiuj do katalogu wyjściowego** wybierz opcję **Kopiuj** .
+1. Aby uwzględnić pliki w pakiecie usług, które zostały dodane do projektu roli procesu roboczego, otwórz menu **skrótów**dla pliku, a następnie wybierz polecenie Właściwości . W oknie **Właściwości** wybierz polecenie **Kopiuj, jeśli jest nowsza** z pola listy **Kopiuj do katalogu wyjściowego.**
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby dowiedzieć się więcej o publikowaniu na platformie Azure z programu Visual Studio, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md).
+Aby dowiedzieć się więcej o publikowaniu na platformie Azure w programie Visual Studio, zobacz [Kreator publikowania aplikacji platformy Azure](vs-azure-tools-publish-azure-application-wizard.md).

@@ -1,5 +1,5 @@
 ---
-title: ClangCompile — zadanie | Microsoft Docs
+title: Zadanie clangcompile | Dokumenty firmy Microsoft
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -18,69 +18,69 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77275466"
 ---
-# <a name="clangcompile-task"></a>ClangCompile, zadanie
+# <a name="clangcompile-task"></a>Zadanie ClangCompile
 
-Zawija narzędzie kompilatora firmy C++ Microsoft, Clang. exe.
+Zawija narzędzie kompilatora Microsoft C++, clang.exe.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry zadania **ClangCompile** .
+W poniższej tabeli opisano parametry zadania **ClangCompile.**
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Opcjonalny parametr **String []** .<br/><br/>Określa co najmniej jeden katalog do dodania do ścieżki dołączania; Oddzielaj średnikami, jeśli więcej niż jeden.<br/><br/>Użyj `-I[path]`.|
-|**AdditionalOptions**|Opcjonalny parametr **ciągu** .|
-|**BufferSecurityCheck**|Opcjonalny parametr **ciągu** .<br/><br/>Kontrola zabezpieczeń pomaga wykrywać bufory stosu w trybie failover, typowy atak na zabezpieczenia programu. <br/><br/>Użyj `fstack-protector`.|
-|**BuildingInIde**|Opcjonalny parametr **bool** .|
-|**CLanguageStandard**|Opcjonalny parametr **ciągu** .<br/><br/>Określa standard języka C.<br/><br/>Użyj `std=[value]` z wartością **C89**, **C99**, **C11**, **gnu99**lub **gnu11**.|
-|**ClangVersion**|Opcjonalny parametr **ciągu** .|
-|**CompileAs**|Opcjonalny parametr **ciągu** .<br/><br/>Wybierz opcję Język kompilacji dla plików. c i. cpp. Wartość domyślna zostanie wykryta w zależności od rozmiaru. c lub. cpp.<br/><br/>Użyj `-x c`, `-x c++`.|
-|**CppLanguageStandard**|Opcjonalny parametr **ciągu** .<br/><br/>Określa standard C++ języka.<br/><br/>Użyj `std=[value]` z wartością **c++ 98**, **c++ 11**, **c + + 1Y**, **GNU + + 98**, **GNU + + 11**lub **GNU + + 1Y**.|
-|**DataLevelLinking**|Opcjonalny parametr **bool** .<br/><br/>Umożliwia optymalizacjom konsolidatora usuwanie nieużywanych danych przez emitowanie każdego elementu danych w osobnej sekcji.|
-|**DebugInformationFormat**|Opcjonalny parametr **ciągu** .<br/><br/>Określa typ informacji o debugowaniu generowanych przez kompilator.<br/><br/>**Brak**, nie tworzy informacji o debugowaniu, dzięki czemu kompilacja może być szybsza (Użyj `g0`).<br/>**FullDebug**, Generuj informacje o debugowaniu DWARF2 (Użyj `g2 -gdwarf-2`).<br/>**LineNumber**, Generuj tylko informacje o numerze wiersza (Użyj `gline-tables-only`).|
-|**EnableNeonCodegen**|Opcjonalny parametr **bool** .<br/><br/>Włącza generowanie kodu dla sprzętu zmiennoprzecinkowego NEONu. Dotyczy to tylko architektury ARM.|
-|**ExceptionHandling**|Opcjonalny parametr **ciągu** .<br/><br/>Określa model obsługi wyjątków, który ma być używany przez kompilator.<br/><br/>**Wyłączone**, Wyłącz obsługę wyjątków (Użyj `fno-exceptions`).<br/>**Włączone**, Włącz obsługę wyjątków (Użyj `fexceptions`).<br/>**UnwindTables**, generuje wszystkie potrzebne dane statyczne, ale nie ma wpływu na wygenerowany kod (Użyj `funwind-tables`).|
-|**FloatABI**|Opcjonalny parametr **ciągu** .<br/><br/>Opcja wyboru umożliwiająca wybranie ABI zmiennoprzecinkowego.<br/><br/>**soft**, powoduje, że kompilator generuje dane wyjściowe zawierające wywołania biblioteki dla operacji zmiennoprzecinkowych (Użyj `mfloat-abi=soft`).<br/>**softfp**, umożliwia generowanie kodu przy użyciu instrukcji zmiennoprzecinkowych sprzętu, ale nadal używa konwencji wywoływania miękkie-zmiennoprzecinkowych (Użyj `mfloat-abi=softfp`).<br/>**trudne**, umożliwia generowanie instrukcji zmiennoprzecinkowych i używa konwencji wywoływania specyficznych dla FPU (Użyj `mfloat-abi=hard`).|
-|**ForcedIncludeFiles**|Opcjonalny parametr **String []** .<br/><br/>co najmniej jeden wymuszony plik dyrektywy include.<br/><br/>Użyj `-include [name]`.|
-|**FunctionLevelLinking**|Opcjonalny parametr **bool** .<br/><br/>Umożliwia kompilatorowi pakowanie poszczególnych funkcji w postaci spakowanych funkcji (COMDAT). Wymagane do edycji i kontynuowania pracy.<br/><br/>Użyj `ffunction-sections`.|
-|**GccToolChain**|Opcjonalny parametr **ciągu** .<br/><br/>Ścieżka folderu do łańcucha narzędzi programu w zatoce.|
-|**GNUMode**|Opcjonalny parametr **bool** .<br/><br/>|
-|**MSCompatibility**|Opcjonalny parametr **bool** .<br/><br/>Włącz pełną zgodność C++ z firmą Microsoft.|
-|**MSCompatibilityVersion**|Opcjonalny parametr **ciągu** .<br/><br/>Wartość oddzielona kropką reprezentująca numer wersji kompilatora firmy Microsoft do raportowania w _MSC_VER (0 = nie określaj go (domyślnie)).|
-|**MSExtensions**|Opcjonalny parametr **bool** .<br/><br/>Zaakceptuj niektóre niestandardowe konstrukcje obsługiwane przez kompilator firmy Microsoft.|
-|**MSCompilerVersion**|Opcjonalny parametr **ciągu** .<br/><br/>Numer wersji kompilatora firmy Microsoft do raportowania w _MSC_VER (0 = nie określaj go (domyślnie)).|
-|**MSVCErrorReport**|Opcjonalny parametr **bool** .<br/><br/>Zgłoś błędy, których program Visual Studio może użyć do analizowania informacji dotyczących plików i wierszy.|
-|**ObjectFileName**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę do przesłaniania domyślnej nazwy pliku obiektu; może to być nazwa pliku lub katalogu.<br/><br/>Użyj `/Fo[name]`.|
-|**OmitFramePointers**|Opcjonalny parametr **bool** .<br/><br/>Pomija tworzenie wskaźników ramek na stosie wywołań.|
-|**Optymalizacja**|Opcjonalny parametr **ciągu** .<br/><br/>Określa poziom optymalizacji aplikacji.<br/><br/>**Niestandardowa,** niestandardowa Optymalizacja.<br/>**Wyłączone**, wyłącz optymalizację (Użyj `O0`).<br/>**MinSize**, Optymalizuj pod kątem rozmiaru (Użyj `Os`).<br/>**MaxSpeed**, Optymalizuj pod kątem szybkości (Użyj `O2`).<br/>**Pełne**, drogie optymalizacje (Użyj `O3`).|
-|**PositionIndependentCode**|Opcjonalny parametr **bool** .<br/><br/>Generuj kod niezależnej pozycji (PIC) do użycia w bibliotece udostępnionej.|
-|**PrecompiledHeader**|Opcjonalny parametr **ciągu** .<br/><br/>Umożliwia utworzenie lub użycie prekompilowanego nagłówka podczas kompilowania.|
-|**PrecompiledHeaderFile**|Opcjonalny parametr **ciągu** .<br/><br/>Określa nazwę pliku nagłówkowego, który ma być używany dla prekompilowanego pliku nagłówkowego. Ten plik zostanie również dodany do **wymuszonych plików dołączanych** podczas kompilacji.|
-|**PrecompiledHeaderOutputFileDirectory**|Opcjonalny parametr **ciągu** .<br/><br/>Określa katalog dla wygenerowanego prekompilowanego nagłówka. Ten katalog zostanie również dodany do **dodatkowych katalogów dołączanych** podczas kompilacji.|
-|**PrecompiledHeaderCompileAs**|Opcjonalny parametr **ciągu** .<br/><br/>Wybierz opcję języka kompilowania dla prekompilowanego pliku nagłówkowego.<br/><br/>Użyj `-x c-header`, `-x c++-header`.|
-|**PreprocessorDefinitions**|Opcjonalny parametr **String []** .<br/><br/>Definiuje symbole przetwarzania wstępnego dla pliku źródłowego.<br/><br/>Użyj `-D`.|
-|**RuntimeLibrary**|Opcjonalny parametr **ciągu** .<br/><br/>Określ bibliotekę środowiska uruchomieniowego do konsolidacji.<br/><br/>Użyj `MSVC /MT`, `/MTd`, `/MD``/MDd` przełączniki.<br/><br/>**Wielowątkowy**, powoduje, że aplikacja korzysta z wielowątkowejej, statycznej wersji biblioteki wykonawczej.<br/>**MultiThreadedDebug**, definiuje _DEBUG i _MT. Ta opcja również powoduje, że kompilator umieszcza nazwę biblioteki LIBCMTD.lib w pliku .obj, tak aby konsolidator użył LIBCMTD.lib, aby rozwiązać zewnętrzne symbole.<br/>**MultiThreadedDLL**, powoduje, że aplikacja korzysta z biblioteki wykonawczej specyficznej dla wielowątkowej i biblioteki DLL. Definiuje _MT i _DLL i powoduje, że kompilator umieszcza nazwę biblioteki MSVCRT. lib w pliku. obj.<br/>**MultiThreadedDebugDLL**, definiuje _DEBUG, _MT i _DLL i powoduje, że aplikacja korzysta z wersji biblioteki wykonawczej wielowątkowej i z biblioteką DLL. Powoduje też, że kompilator umieszcza nazwę biblioteki MSVCRTD.lib w pliku .obj.|
-|**RuntimeTypeInfo**|Opcjonalny parametr **bool** .<br/><br/>Dodaje kod do sprawdzania C++ typów obiektów w czasie wykonywania (informacje o typie środowiska uruchomieniowego).<br/><br/>Użyj `frtti`, `fno-rtti`.|
-|**ShowIncludes**|Opcjonalny parametr **bool** .<br/><br/>Generuje listę plików dołączanych z danymi wyjściowymi kompilatora.<br/><br/>Użyj `-H`.|
-|**Źródeł**|Wymagany parametr **ITaskItem []** .|
-|**StrictAliasing**|Opcjonalny parametr **bool** .<br/><br/>Przyjęto założenie rygorystycznych reguł aliasów. Obiekt jednego typu nigdy nie zostanie przyjęty, aby znajdował się w tym samym adresie co obiekt innego typu.|
-|**Okno**|Opcjonalny parametr **ciągu** .<br/><br/>Ścieżka folderu do katalogu głównego dla nagłówków i bibliotek.|
-|**TargetArch**|Opcjonalny parametr **ciągu** .<br/><br/>Architektura docelowa.|
-|**Kciukmode**|Opcjonalny parametr **ciągu** .<br/><br/>Generuj kod, który jest wykonywany dla mikroarchitektury przycisku przewijania. Dotyczy to tylko architektury ARM.<br/><br/>Przycisk **przewijania**, Generuj kod kciuka (Użyj `mthumb`).<br/>**ARM**, Generuj kod ARM (Użyj `marm`).<br/>**Wyłączone**, opcja nie dotyczy wybranej platformy.|
-|**Katalog trackerlogdirectory**|Opcjonalny parametr **ciągu** .<br/><br/>Katalog dziennika śledzenia.|
-|**TreatWarningAsError**|Opcjonalny parametr **bool** .<br/><br/>Traktuje wszystkie ostrzeżenia kompilatora jako błędy.<br/><br/>W przypadku nowego projektu najlepiej jest używać `/WX` we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni najmniejszą możliwą trudną do znalezienia wady kodu.|
-|**UndefinePreprocessorDefinitions**|Opcjonalny parametr **String []** .<br/><br/>Określa co najmniej jedną definicję preprocesora.<br/><br/>Użyj `-U [macro]`.|
-|**UndefineAllPreprocessorDefinitions**|Opcjonalny parametr **bool** .<br/><br/>Usuń wszystkie poprzednio zdefiniowane wartości preprocesora.<br/><br/>Użyj `-undef`.|
-|**UseMultiToolTask**|Opcjonalny parametr **bool** .<br/><br/>Kompilacja wieloprocesorowa.|
-|**UseShortEnums**|Opcjonalny parametr **bool** .<br/><br/>Typ wyliczenia używa tylko liczby bajtów wymaganej przez wejściowy zestaw możliwych wartości.|
-|**Pełne**|Opcjonalny parametr **bool** .<br/><br/>Pokaż polecenia do uruchomienia i użyj pełnych danych wyjściowych.|
-|**WarningLevel**|Opcjonalny parametr **ciągu** .<br/><br/>Wybierz, jak ścisłość kompilator ma mieć wpływ na błędy kodu. Inne flagi należy dodać bezpośrednio do **dodatkowych opcji** (SE `/w`, `/Weverything`).<br/><br/>**TurnOffAllWarnings**powoduje wyłączenie wszystkich ostrzeżeń kompilatora (Użyj `w`).<br/>**Włącz wszystkie ostrzeżenia**, włącza wszystkie ostrzeżenia, w tym te wyłączone domyślnie (Użyj `Wall`).|
+|**DodatkoweInobserwająKatary**|Opcjonalny **parametr string[].**<br/><br/>Określa jeden lub więcej katalogów do dodania do ścieżki dołączania; od siebie średnikami, jeśli więcej niż jeden.<br/><br/>Użyj witryny `-I[path]`.|
+|**Dodatkoweopcje**|Opcjonalny parametr **ciągu.**|
+|**Sprawdzanie zabezpieczeń bufora**|Opcjonalny parametr **ciągu.**<br/><br/>Sprawdzanie zabezpieczeń pomaga wykryć over-runs buforu stosu, typowy atak na zabezpieczenia programu. <br/><br/>Użyj witryny `fstack-protector`.|
+|**BuildingInIde (Ekwid.**|Opcjonalny parametr **bool.**|
+|**CLanguageStandard**|Opcjonalny parametr **ciągu.**<br/><br/>Określa standard języka C.<br/><br/>Stosować `std=[value]` z wartością **c89**, **c99**, **c11**, **gnu99**lub **gnu11**.|
+|**ClangVersion (Wersja clangowa)**|Opcjonalny parametr **ciągu.**|
+|**KompilacjeA**|Opcjonalny parametr **ciągu.**<br/><br/>Wybierz opcję języka kompilacji dla plików c i cpp. Wartość domyślna zostanie wykryta na podstawie zakresu .c lub .cpp.<br/><br/>Użyj `-x c` `-x c++`, .|
+|**CppLanguageStandard**|Opcjonalny parametr **ciągu.**<br/><br/>Określa standard języka C++.<br/><br/>Używaj `std=[value]` z wartością **c++98**, **c++11**, **c++1y**, **gnu++98**, **gnu++11**lub **gnu++1y**.|
+|**DataLevelLinking (Łączenie danych)**|Opcjonalny parametr **bool.**<br/><br/>Umożliwia optymalizacje konsolidatora, aby usunąć nieużywane dane, emitując każdy element danych w osobnej sekcji.|
+|**DebugInformationFormat**|Opcjonalny parametr **ciągu.**<br/><br/>Określa typ informacji debugowania generowanych przez kompilator.<br/><br/>**Brak**, nie generuje żadnych informacji debugowania, więc `g0`kompilacja może być szybsza (użycie ).<br/>**FullDebug**, generowanie informacji debugowania DWARF2 (użyj `g2 -gdwarf-2`).<br/>**Liczba linii**, wygeneruj `gline-tables-only`tylko informacje o numerze wiersza (użyj ).|
+|**EnableNeonCodegen (Włącz Kodowanie)**|Opcjonalny parametr **bool.**<br/><br/>Umożliwia generowanie kodu dla sprzętu zmiennoprzecinkowego NEON. Dotyczy to tylko architektury ramienia.|
+|**Obsługa wyjątków**|Opcjonalny parametr **ciągu.**<br/><br/>Określa model obsługi wyjątków, który ma być używany przez kompilator.<br/><br/>**Wyłączone**, wyłącz obsługę `fno-exceptions`wyjątków (użyj ).<br/>**Włączono**, włącz obsługę `fexceptions`wyjątków (użyj ).<br/>**UnwindTables**, generuje wszelkie potrzebne dane statyczne, ale nie `funwind-tables`wpływa na kod wygenerowany (use ).|
+|**Spławik**|Opcjonalny parametr **ciągu.**<br/><br/>Opcja wyboru, aby wybrać zmiennoprzecinkową ABI.<br/><br/>**soft**, powoduje, że kompilator generuje dane wyjściowe `mfloat-abi=soft`zawierające wywołania biblioteki dla operacji zmiennoprzecinkowych (użyj ).<br/>**softfp**, umożliwia generowanie kodu za pomocą sprzętowych instrukcji zmiennoprzecinkowych, `mfloat-abi=softfp`ale nadal używa soft-float konwencji wywoływania (użytkowania).<br/>**hard**, umożliwia generowanie instrukcji zmiennoprzecinkowych i wykorzystuje `mfloat-abi=hard`specyficzne dla FPU konwencje wywoływania (użytkowanie).|
+|**Wymuszonewłącza pliki**|Opcjonalny **parametr string[].**<br/><br/>Jeden lub więcej wymuszonych plików dołączania.<br/><br/>Użyj witryny `-include [name]`.|
+|**FunctionLevelLinking (FunkcjaPoziomowanie łączące)**|Opcjonalny parametr **bool.**<br/><br/>Umożliwia kompilatorowi pakowanie poszczególnych funkcji w postaci spakowanych funkcji (COMDATs). Wymagane do edycji i kontynuowania pracy.<br/><br/>Użyj witryny `ffunction-sections`.|
+|**GccToolChain (GccToolChain)**|Opcjonalny parametr **ciągu.**<br/><br/>Ścieżka folderu do łańcucha narzędzi Gcc.|
+|**Tryb GNU**|Opcjonalny parametr **bool.**<br/><br/>|
+|**Zgodność z MS**|Opcjonalny parametr **bool.**<br/><br/>Włącz pełną zgodność z programem Microsoft C++.|
+|**MsCompatibilityVersion**|Opcjonalny parametr **ciągu.**<br/><br/>Wartość oddzielona kropkami reprezentująca numer wersji kompilatora firmy Microsoft do raportowania w _MSC_VER (0 = nie definiuj go (domyślnie)).|
+|**MSWysokiecje**|Opcjonalny parametr **bool.**<br/><br/>Zaakceptuj niektóre niestandardowe konstrukcje obsługiwane przez kompilator firmy Microsoft.|
+|**MSCompilerVersion (Niespołeczeństwo)**|Opcjonalny parametr **ciągu.**<br/><br/>Numer wersji kompilatora firmy Microsoft do raportowania w _MSC_VER (0 = nie definiuj go (domyślnie)).|
+|**MSVCErrorZdnik**|Opcjonalny parametr **bool.**<br/><br/>Zgłaszaj błędy, których program Visual Studio może używać do analizować informacje o plikach i wierszach.|
+|**Nazwa pliku objectfile**|Opcjonalny parametr **ciągu.**<br/><br/>Określa nazwę, która ma zastąpić domyślną nazwę pliku obiektu; może to być nazwa pliku lub katalogu.<br/><br/>Użyj witryny `/Fo[name]`.|
+|**OmitFramePointers (OmitFramePointers)**|Opcjonalny parametr **bool.**<br/><br/>Pomija tworzenie wskaźników ramek na stosie wywołań.|
+|**Optymalizacji**|Opcjonalny parametr **ciągu.**<br/><br/>Określa poziom optymalizacji dla aplikacji.<br/><br/>**Niestandardowa,** niestandardowa optymalizacja.<br/>**Wyłączone**, wyłączyć `O0`optymalizację (użyj ).<br/>**MinSize**, optymalizacja pod `Os`kątem rozmiaru (użyj).<br/>**MaxSpeed**, optymalizacja pod `O2`kątem prędkości (zastosowanie).<br/>**Pełna,** kosztowna optymalizacja (użytkowanie). `O3`|
+|**Kod pozycyjnyzależny**|Opcjonalny parametr **bool.**<br/><br/>Generowanie kodu niezależnego pozycjonu (PIC) do użycia w bibliotece udostępnionej.|
+|**Wstępnie skompilowanyheader**|Opcjonalny parametr **ciągu.**<br/><br/>Umożliwia tworzenie lub używanie wstępnie skompilowanego nagłówka podczas kompilacji.|
+|**Wstępnie skompilowany plikheader**|Opcjonalny parametr **ciągu.**<br/><br/>Określa nazwę pliku nagłówka, który ma być używany dla wstępnie skompilowanego pliku nagłówka. Ten plik zostanie również dodany do **wymuszonych plików dołączania** podczas kompilacji.|
+|**PrekompilowanyDirectorPozycji Nagłówków**|Opcjonalny parametr **ciągu.**<br/><br/>Określa katalog wygenerowanego nagłówka wstępnie skompilowanego. Ten katalog zostanie również dodany do **dodatkowych katalogów dołączania** podczas kompilacji.|
+|**Wstępnie skompilowanefirmyheaderów**|Opcjonalny parametr **ciągu.**<br/><br/>Wybierz opcję języka kompilacji dla wstępnie skompilowanego pliku nagłówka.<br/><br/>Użyj `-x c-header` `-x c++-header`, .|
+|**Definicje przedtwarze**|Opcjonalny **parametr string[].**<br/><br/>Definiuje symbole przetwarzania wstępnego dla pliku źródłowego.<br/><br/>Użyj witryny `-D`.|
+|**Biblioteka uruchomieniowa**|Opcjonalny parametr **ciągu.**<br/><br/>Określ bibliotekę środowiska uruchomieniowego do łączenia.<br/><br/>Użyj `MSVC /MT` `/MTd`, `/MD` `/MDd` , przełączników.<br/><br/>**MultiThreaded**, powoduje, że aplikacja do korzystania z wielowątkową, statyczną wersję biblioteki w czasie wykonywania.<br/>**MultiThreadedDebug**, definiuje _DEBUG i _MT. Ta opcja również powoduje, że kompilator umieszcza nazwę biblioteki LIBCMTD.lib w pliku .obj, tak aby konsolidator użył LIBCMTD.lib, aby rozwiązać zewnętrzne symbole.<br/>**MultiThreadedDLL**, powoduje, że aplikacja do korzystania z wielu wątłych i DLL specyficzne wersji biblioteki w czasie wykonywania. Definiuje _MT i _DLL i powoduje, że kompilator umieszcza nazwę biblioteki MSVCRT.lib w pliku obj.<br/>**MultiThreadedDebugDLL**, definiuje _DEBUG, _MT i _DLL i powoduje, że aplikacja do korzystania z debugowania wielowątkowej i DLL specyficznej wersji biblioteki w czasie wykonywania. Powoduje też, że kompilator umieszcza nazwę biblioteki MSVCRTD.lib w pliku .obj.|
+|**Środowisko wykonawczeTypeInfo**|Opcjonalny parametr **bool.**<br/><br/>Dodaje kod do sprawdzania typów obiektów języka C++ w czasie wykonywania (informacje o typie środowiska wykonawczego).<br/><br/>Użyj `frtti` `fno-rtti`, .|
+|**ShowIncludes (w tym)**|Opcjonalny parametr **bool.**<br/><br/>Generuje listę plików dołączanych z wyjściem kompilatora.<br/><br/>Użyj witryny `-H`.|
+|**Źródeł**|Wymagany parametr **ITaskItem[].**|
+|**Ścisłeaaliasing**|Opcjonalny parametr **bool.**<br/><br/>Załóżmy, że najsurowsze reguły aliasowania. Obiekt jednego typu nigdy nie będzie zakładany, że znajduje się pod tym samym adresem co obiekt innego typu.|
+|**Sysroot ( Sysroot )**|Opcjonalny parametr **ciągu.**<br/><br/>Ścieżka folderu do katalogu głównego nagłówków i bibliotek.|
+|**CelArch**|Opcjonalny parametr **ciągu.**<br/><br/>Architektura docelowa.|
+|**Tryb kciuka**|Opcjonalny parametr **ciągu.**<br/><br/>Generowanie kodu, który wykonuje dla mikroarchitektury kciuka. Dotyczy to tylko architektury ramienia.<br/><br/>**Thumb**, wygeneruj kod kciuka (użyj). `mthumb`<br/>**ARM**, wygeneruj kod ramienia (użyj). `marm`<br/>**Wyłączone**, opcja nie dotyczy wybranej platformy.|
+|**TrackerLogDirectory (TrackerLogDirectory)**|Opcjonalny parametr **ciągu.**<br/><br/>Katalog dzienników trackera.|
+|**TreatWarningAsError**|Opcjonalny parametr **bool.**<br/><br/>Traktuje wszystkie ostrzeżenia kompilatora jako błędy.<br/><br/>W przypadku nowego projektu najlepiej jest `/WX` użyć we wszystkich kompilacjach; rozwiązanie wszystkich ostrzeżeń zapewni jak najmniej trudnych do znalezienia wad kodu.|
+|**DefinePreprocessorDefinitions**|Opcjonalny **parametr string[].**<br/><br/>Określa co najmniej jedną niedrobnie wolną od przetwarzania preprocesora.<br/><br/>Użyj witryny `-U [macro]`.|
+|**UndefineAllPreprocessorDefinitions**|Opcjonalny parametr **bool.**<br/><br/>Oddefiuj wszystkie uprzednio zdefiniowane wartości preprocesora.<br/><br/>Użyj witryny `-undef`.|
+|**UżyjMultiToolTask**|Opcjonalny parametr **bool.**<br/><br/>Kompilacja wieloprocesorowa.|
+|**UżyjShortEnums**|Opcjonalny parametr **bool.**<br/><br/>Typ wyliczenia używa tylko tyle bajtów wymaganych przez zestaw wejściowy możliwych wartości.|
+|**Pełne**|Opcjonalny parametr **bool.**<br/><br/>Pokaż polecenia do uruchamiania i używania pełnych danych wyjściowych.|
+|**Warninglevel**|Opcjonalny parametr **ciągu.**<br/><br/>Wybierz, jak ścisłe, że kompilator ma dotyczyć błędów kodu. Inne flagi powinny być dodawane bezpośrednio `/w`do `/Weverything` **opcji dodatkowych** (se , ).<br/><br/>**TurnOffAllWarnings**, wyłącza wszystkie ostrzeżenia `w`kompilatora (użyj ).<br/>**EnableAllWarnings**, włącza wszystkie ostrzeżenia, w `Wall`tym te wyłączone domyślnie (użyj ).|
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -1,5 +1,5 @@
 ---
-title: Porównanie wyników testów obciążenia
+title: Porównywanie wyników testów obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,40 +10,40 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589347"
 ---
-# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Testy obciążenia raport wyników dla potrzeb porównań testów lub analizy trendów
+# <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Zgłoś wyniki testów obciążenia dla porównań testów lub analizy trendów
 
-Można generować raporty testu obciążenia programu Microsoft Excel, które opierają się na dwóch lub więcej wynikach badań.
+Można wygenerować raporty testów obciążenia programu Microsoft Excel, które są oparte na co najmniej dwóch wynikach testów.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Dostępne są dwa typy raportów testów obciążenia:
+Dostępne są dwa typy raportów z testów obciążenia:
 
-- Uruchom porównanie&mdash;ten raport jest faktycznie dwóch raportów, które wyświetlają dane porównania side-by-side przy użyciu tabel i wykresów słupkowych.
+- Uruchom&mdash;porównanie Ten raport to w rzeczywistości dwa raporty, które wyświetlają dane porównania obok siebie przy użyciu tabel i wykresów słupkowych.
 
-- Trend&mdash;możesz wygenerować analizy trendu na podstawie co najmniej dwóch raportów. Wyniki są wyświetlane przy użyciu wykresów liniowych.
+- Trend&mdash;Możesz wygenerować analizę trendów w dwóch lub więcej raportach. Wyniki są wyświetlane przy użyciu wykresów liniowych.
 
-Raport może służyć do udostępniania danych dotyczących wydajności zainteresowanym osobom i przekazywania, czy ogólna wydajność i kondycja systemu jest coraz lepsza czy gorsza.
+Każdy raport może służyć do udostępniania danych dotyczących wydajności zainteresowanym stronom i przekazywania, czy ogólna wydajność i kondycja systemu jest coraz lepsza, czy gorsza.
 
-Definicje raportów są przechowywane w bazie danych testu obciążenia. Po zapisaniu raportu definicja raportu jest zapisywany w bazie danych i mogą być używane ponownie później.
+Definicje raportów są przechowywane w bazie danych testów obciążenia. Po zapisaniu raportu definicja raportu jest zapisywana w bazie danych i może być ponownie usuowana później.
 
-Ponadto plik arkusza kalkulacyjnego mogą być udostępniane zainteresowane strony, aby nie trzeba połączyć z bazą danych, aby wyświetlić raport zainteresowanych stron.
+Ponadto plik arkusza kalkulacyjnego można udostępnić zainteresowanym stronom, aby zainteresowane strony nie musiały łączyć się z bazą danych w celu wyświetlenia raportu.
 
 > [!NOTE]
-> Po dodaniu komentarzy do testu obciążenia są wyświetlane w raporcie programu Excel.
+> Jeśli dodasz komentarze do testu obciążenia, pojawią się one w raporcie programu Excel.
 
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
 |-|-|
-|**Tworzenie raportu wydajności i obciążenia:** można tworzyć raporty na testy wydajności sieci web i obciążenia, przy użyciu programu Microsoft Excel.|- [Porady: tworzenie w programie Microsoft Excel raportów wydajności testu obciążenia](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Ręczne tworzenie raportu wydajności i obciążenia za pomocą programu Microsoft Word:** można tworzyć raporty na testy wydajności sieci web i obciążenia ręcznie kopiując i wklejając podsumowanie, tabeli i dane wykresu do dokumentu programu Microsoft Word.|- [Porady: ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Tworzenie raportu wydajności i stresu:** Raporty dotyczące testów wydajności obciążenia i sieci Web można tworzyć za pomocą programu Microsoft Excel.|- [Jak: Tworzenie raportów wydajności testu obciążenia przy użyciu programu Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Ręcznie utwórz raport o wydajności i stresie przy użyciu programu Microsoft Word:** Raporty dotyczące testów wydajności obciążenia i sieci Web można tworzyć ręcznie, kopiując i wklejając podsumowanie, tabelę i dane wykresu do dokumentu programu Microsoft Word.|- [Jak: Ręczne tworzenie raportu wydajności testu obciążenia przy użyciu programu Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analizowanie wyników testu obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

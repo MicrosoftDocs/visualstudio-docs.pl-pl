@@ -1,5 +1,5 @@
 ---
-title: Metadane elementu w przetwarzaniu wsadowym zadań | Microsoft Docs
+title: Metadane elementu w partii zadań | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,31 +14,31 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92613b96d5d85a959e3426df86168c7110b74fed
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633658"
 ---
-# <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
+# <a name="item-metadata-in-task-batching"></a>Metadane elementu w partii zadań
 
-Program MSBuild ma możliwość dzielenia list elementów na różne kategorie lub partie, na podstawie metadanych elementów i uruchamiania zadania jeden raz z każdą partią. Może być myląca, aby dokładnie zrozumieć, jakie elementy są przesyłane, z których partiami. W tym temacie opisano następujące typowe scenariusze związane z przetwarzaniem wsadowym.
+MSBuild ma możliwość dzielenia list elementów na różne kategorie lub partii, na podstawie metadanych elementu i uruchamiania zadania jeden raz z każdej partii. Może to być mylące, aby zrozumieć dokładnie, jakie elementy są przekazywane z której partii. W tym temacie opisano następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.
 
-- Dzielenie listy elementów na partie
+- Dzielenie listy towarów na partie
 
-- Dzielenie kilku list elementów na partie
+- Dzielenie kilku list towarów na partie
 
-- Wsadowe pojedyncze elementy w czasie
+- Przetwarzanie wsadowe po jednym elemencie naraz
 
 - Filtrowanie list elementów
 
-Aby uzyskać więcej informacji o przetwarzaniu wsadowym przy użyciu programu MSBuild, zobacz [Batching](../msbuild/msbuild-batching.md).
+Aby uzyskać więcej informacji na temat przetwarzania wsadowego za pomocą msbuild, zobacz [Przetwarzanie wsadowe](../msbuild/msbuild-batching.md).
 
-## <a name="divide-an-item-list-into-batches"></a>Dzielenie listy elementów na partie
+## <a name="divide-an-item-list-into-batches"></a>Dzielenie listy towarów na partie
 
-Przetwarzanie wsadowe umożliwia dzielenie listy elementów na różne partie na podstawie metadanych elementów i przekazywanie poszczególnych partii do zadania oddzielnie. Jest to przydatne w przypadku tworzenia zestawów satelickich.
+Przetwarzanie wsadowe umożliwia dzielenie listy towarów na różne partie na podstawie metadanych elementu i przekazywanie każdej partii do zadania oddzielnie. Jest to przydatne do tworzenia zestawów satelitarnych.
 
-Poniższy przykład pokazuje, jak podzielić listę elementów na partie na podstawie metadanych elementu. Lista elementów `ExampColl` jest dzielona na trzy partie na podstawie metadanych elementu `Number`. Obecność `%(ExampColl.Number)`w atrybucie `Text` powiadamia MSBuild, że należy wykonać przetwarzanie wsadowe. Lista elementów `ExampColl` jest dzielona na trzy partie na podstawie metadanych `Number`, a każda partia jest przenoszona osobno do zadania podrzędnego.
+W poniższym przykładzie pokazano, jak podzielić listę elementów na partie na podstawie metadanych elementu. Lista `ExampColl` elementów jest podzielona na trzy `Number` partie na podstawie metadanych elementu. Obecność `%(ExampColl.Number)`w atrybucie `Text` powiadamia MSBuild, że należy wykonać przetwarzanie wsadowe. Lista `ExampColl` elementów jest podzielona na trzy `Number` partie na podstawie metadanych, a każda partia jest przekazywana oddzielnie do zadania.
 
 ```xml
 <Project
@@ -73,7 +73,7 @@ Poniższy przykład pokazuje, jak podzielić listę elementów na partie na pods
 </Project>
 ```
 
-W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
+Zadanie [Wiadomość](../msbuild/message-task.md) wyświetla następujące informacje:
 
 `Number: 1 -- Items in ExampColl: Item1;Item4`
 
@@ -81,14 +81,14 @@ W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące 
 
 `Number: 3 -- Items in ExampColl: Item3;Item6`
 
-## <a name="divide-several-item-lists-into-batches"></a>Dzielenie kilku list elementów na partie
+## <a name="divide-several-item-lists-into-batches"></a>Dzielenie kilku list towarów na partie
 
-Program MSBuild może podzielić wiele list elementów na partie na podstawie tych samych metadanych. Dzięki temu można łatwo podzielić różne listy elementów na partie, aby skompilować wiele zestawów. Na przykład można mieć listę elementów plików *CS* podzieloną na partię aplikacji i partię zestawu oraz listę elementów zasobów podzieloną na partię aplikacji i partię zestawu. Następnie można użyć usługi Batch, aby przekazać te listy elementów do jednego zadania i skompilować aplikację i zestaw.
+MSBuild może podzielić wiele list elementów na partie na podstawie tych samych metadanych. Ułatwia to dzielenie różnych list towarów na partie do tworzenia wielu zestawów. Na przykład może mieć listę elementów plików *.cs* podzieloną na partię aplikacji i partię zestawu oraz listę zapasów plików zasobów podzielonych na partię aplikacji i partię zestawu. Następnie można użyć przetwarzania wsadowego, aby przekazać te listy elementów do jednego zadania i skompilować zarówno aplikację, jak i zestaw.
 
 > [!NOTE]
-> Jeśli lista elementów przenoszona do zadania nie zawiera żadnych elementów z metadanymi, do których się odwołuje, każdy element na liście elementów jest przesyłany do każdej partii.
+> Jeśli lista elementów przekazywanych do zadania nie zawiera żadnych elementów z metadanymi, do których istnieje odwołanie, każdy element na tej liście elementów jest przekazywany do każdej partii.
 
-Poniższy przykład pokazuje, jak podzielić listę wielu elementów na partie na podstawie metadanych elementu. Listy elementów `ExampColl` i `ExampColl2` są podzielone na trzy partie na podstawie metadanych `Number` elementu. Obecność `%(Number)`w atrybucie `Text` powiadamia MSBuild, że należy wykonać przetwarzanie wsadowe. Listy elementów `ExampColl` i `ExampColl2` są podzielone na trzy partie na podstawie metadanych `Number`, a każda partia jest przenoszona osobno do zadania.
+W poniższym przykładzie pokazano, jak podzielić listę wielu elementów na partie na podstawie metadanych elementu. Listy `ExampColl` `ExampColl2` i towary są podzielone na trzy `Number` partie na podstawie metadanych elementu. Obecność `%(Number)`w atrybucie `Text` powiadamia MSBuild, że należy wykonać przetwarzanie wsadowe. Listy `ExampColl` `ExampColl2` i towary są podzielone na trzy `Number` partie na podstawie metadanych, a każda partia jest przekazywana oddzielnie do zadania.
 
 ```xml
 <Project
@@ -126,7 +126,7 @@ Poniższy przykład pokazuje, jak podzielić listę wielu elementów na partie n
 </Project>
 ```
 
-W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
+Zadanie [Wiadomość](../msbuild/message-task.md) wyświetla następujące informacje:
 
 `Number: 1 -- Items in ExampColl: Item1 ExampColl2: Item4`
 
@@ -134,11 +134,11 @@ W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące 
 
 `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`
 
-## <a name="batch-one-item-at-a-time"></a>Wsadowe pojedyncze elementy
+## <a name="batch-one-item-at-a-time"></a>Wsad po jednym elemencie naraz
 
-Przetwarzanie wsadowe może również odbywać się w przypadku metadanych o dobrze znanych elementach, które są przypisywane do każdego elementu podczas tworzenia. Gwarantuje to, że każdy element w kolekcji będzie miał metadane do użycia na potrzeby przetwarzania wsadowego. Wartość metadanych `Identity` jest unikatowa dla każdego elementu i jest przydatna do dzielenia każdego elementu na liście elementów na osobną partię. Aby uzyskać pełną listę metadanych dobrze znanych elementów, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
+Przetwarzanie wsadowe można również wykonać na dobrze znanych metadanych elementu, który jest przypisany do każdego elementu podczas tworzenia. Gwarantuje to, że każdy element w kolekcji będzie miał niektóre metadane do użycia do przetwarzania wsadowego. Wartość `Identity` metadanych jest unikatowa dla każdego elementu i jest przydatna do dzielenia każdego elementu na liście elementów na osobną partię. Aby uzyskać pełną listę dobrze znanych metadanych elementu, zobacz [Znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
 
-Poniższy przykład pokazuje, jak pojedynczo wsadowo poszczególne elementy z listy elementów. Ponieważ wartość metadanych `Identity` każdego elementu jest unikatowa, lista elementów `ExampColl` jest podzielona na sześć partii, każda partia zawierająca jeden element listy elementów. Obecność `%(Identity)`w atrybucie `Text` powiadamia MSBuild, że należy wykonać przetwarzanie wsadowe.
+W poniższym przykładzie pokazano, jak partii każdego towaru na liście towarów po jednym na raz. Ponieważ `Identity` wartość metadanych każdego elementu `ExampColl` jest unikatowa, lista elementów jest podzielona na sześć partii, z których każda zawiera jeden element listy elementów. Obecność `%(Identity)`w atrybucie `Text` powiadamia MSBuild, że należy wykonać przetwarzanie wsadowe.
 
 ```xml
 <Project
@@ -163,7 +163,7 @@ Poniższy przykład pokazuje, jak pojedynczo wsadowo poszczególne elementy z li
 </Project>
 ```
 
-W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
+Zadanie [Wiadomość](../msbuild/message-task.md) wyświetla następujące informacje:
 
 ```output
 Identity: 'Item1' -- Items in ExampColl: Item1
@@ -174,11 +174,11 @@ Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
 ```
 
-## <a name="filter-item-lists"></a>Filtruj listy elementów
+## <a name="filter-item-lists"></a>Listy elementów filtrowania
 
-Przy użyciu operacji wsadowych można odfiltrować niektóre elementy z listy elementów przed przekazaniem jej do zadania. Na przykład filtrowanie wartości metadanych dobrze znanego elementu `Extension` umożliwia uruchamianie zadania tylko dla plików o określonym rozszerzeniu.
+Przetwarzanie wsadowe może służyć do filtrowania niektórych elementów z listy elementów przed przekazaniem go do zadania. Na przykład filtrowanie `Extension` wartości metadanych dobrze znanego elementu umożliwia uruchamianie zadania tylko dla plików z określonym rozszerzeniem.
 
-Poniższy przykład pokazuje, jak podzielić listę elementów na partie na podstawie metadanych elementu, a następnie odfiltrować te partie, gdy są one przesyłane do zadania. Lista elementów `ExampColl` jest dzielona na trzy partie na podstawie metadanych elementu `Number`. Atrybut `Condition` zadania określa, że tylko partie z wartością metadanych elementu `Number` `2` zostaną przesłane do zadania
+W poniższym przykładzie pokazano, jak podzielić listę elementów na partie na podstawie metadanych elementu, a następnie filtrować te partie, gdy są przekazywane do zadania. Lista `ExampColl` elementów jest podzielona na trzy `Number` partie na podstawie metadanych elementu. Atrybut `Condition` zadania określa, że do zadania będą `Number` przekazywane tylko `2` partie o wartości metadanych elementu.
 
 ```xml
 <Project
@@ -216,7 +216,7 @@ Poniższy przykład pokazuje, jak podzielić listę elementów na partie na pods
 </Project>
 ```
 
-W oknie [komunikatu](../msbuild/message-task.md) są wyświetlane następujące informacje:
+Zadanie [Wiadomość](../msbuild/message-task.md) wyświetla następujące informacje:
 
 ```
 Items in ExampColl: Item2;Item5
@@ -224,9 +224,9 @@ Items in ExampColl: Item2;Item5
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Metadane dobrze znanego elementu](../msbuild/msbuild-well-known-item-metadata.md)
-- [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
-- [ItemMetadata —, element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
+- [Dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md)
+- [Element elementu (MSBuild)](../msbuild/item-element-msbuild.md)
+- [ItemMetadata element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Tworzenie partii](../msbuild/msbuild-batching.md)
-- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)

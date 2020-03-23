@@ -1,5 +1,5 @@
 ---
-title: Zadanie komunikatu | Microsoft Docs
+title: Zadanie wiadomości | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,34 +19,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78865365"
 ---
 # <a name="message-task"></a>Komunikat — Zadanie
 
-Rejestruje komunikat w trakcie kompilacji.
+Rejestruje komunikat podczas kompilacji.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania `Message`.
+ W poniższej tabeli `Message` opisano parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Importance`|Opcjonalny parametr `String`.<br /><br /> Określa ważność komunikatu. Ten parametr może mieć wartość `high`, `normal` lub `low`. Wartością domyślną jest `normal`.|
-|`Text`|Opcjonalny parametr `String`.<br /><br /> Tekst błędu do zarejestrowania.|
+|`Importance`|Parametr `String` opcjonalny.<br /><br /> Określa znaczenie wiadomości. Ten parametr może mieć `high` `normal` wartość `low`, lub . Wartością domyślną jest `normal`.|
+|`Text`|Parametr `String` opcjonalny.<br /><br /> Tekst błędu do zalogowania.|
 
 ## <a name="remarks"></a>Uwagi
 
- Zadanie `Message` umożliwia projektom programu MSBuild wydawanie komunikatów do rejestratorów w różnych krokach procesu kompilacji.
+ Zadanie `Message` umożliwia msbuild projektów do wystawiania komunikatów do rejestratorów na różnych etapach procesu kompilacji.
 
- Jeśli parametr `Condition` zostanie oszacowany na `true`, wartość parametru `Text` zostanie zarejestrowana, a kompilacja będzie nadal wykonywana. Jeśli parametr `Condition` nie istnieje, tekst komunikatu jest rejestrowany. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [pobieranie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
+ Jeśli `Condition` parametr zostanie `true`obliczony na `Text` , wartość parametru zostanie zarejestrowana, a kompilacja będzie nadal wykonywana. Jeśli `Condition` parametr nie istnieje, tekst wiadomości jest rejestrowany. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Domyślnie komunikat jest wysyłany do wszystkich zarejestrowanych rejestratorów. Rejestrator interpretuje parametr `Importance`. Zwykle komunikat ustawiany na `high` jest wysyłany, gdy poziom szczegółowości rejestratora jest ustawiony na <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` lub wyższy. Wiadomość ustawiona na `low` jest wysyłana, gdy poziom szczegółowości rejestratora jest ustawiony na <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed`.
+ Domyślnie wiadomość jest wysyłana do wszystkich zarejestrowanych rejestratorów. Rejestrator interpretuje `Importance` parametr. Zazwyczaj komunikat ustawiony jest `high` wysyłany, gdy szczegółowość rejestratora <xref:Microsoft.Build.Framework.LoggerVerbosity>jest ustawiona na .`Minimal` lub wyższe. Komunikat ustawiony `low` na jest wysyłany, gdy szczegółowość <xref:Microsoft.Build.Framework.LoggerVerbosity>rejestratora jest ustawiona na . `Detailed`.
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 

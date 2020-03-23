@@ -1,5 +1,5 @@
 ---
-title: Element zestawu SDK (MSBuild) | Microsoft Docs
+title: Element Sdk (MSBuild) | Dokumenty firmy Microsoft
 ms.date: 01/25/2018
 ms.topic: reference
 f1_keywords:
@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632475"
 ---
-# <a name="sdk-element-msbuild"></a>Element zestawu SDK (MSBuild)
+# <a name="sdk-element-msbuild"></a>Element Sdk (MSBuild)
 
-Odwołuje się do zestawu SDK projektu programu MSBuild.
+Odwołuje się do sdk projektu MSBuild.
 
- \<Project > \<SDK >
+ \<projekt> \<> Sdk
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,8 +45,8 @@ Odwołuje się do zestawu SDK projektu programu MSBuild.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Atrybut wymagany.<br /><br /> Nazwa zestawu SDK projektu.|
-|`Version`|Atrybut opcjonalny.<br /><br /> Wersja zestawu SDK projektu|
+|`Name`|Atrybut wymagany.<br /><br /> Nazwa sdk projektu.|
+|`Version`|Atrybut opcjonalny.<br /><br /> Wersja sdk projektu|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -56,10 +56,10 @@ Odwołuje się do zestawu SDK projektu programu MSBuild.
 
 | Element | Opis |
 | - | - |
-| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Instrukcje: odwoływanie się do zestawu SDK projektu programu MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Jak: Odwoływanie się do sdk projektu MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [Msbuild](../msbuild/msbuild.md)

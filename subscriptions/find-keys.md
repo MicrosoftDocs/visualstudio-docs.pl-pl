@@ -1,75 +1,75 @@
 ---
-title: Znajdowanie i pojmowanie kluczy produktów w subskrypcjach programu Visual Studio | Microsoft Docs
+title: Znajdowanie kluczy produktów i odchyliwanie ich w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Dowiedz się, jak znaleźć, zatwierdzić i wyeksportować klucze produktów w subskrypcjach programu Visual Studio
+description: Dowiedz się, jak znajdować, zgłaszać roszczenia i eksportować klucze produktów w ramach subskrypcji programu Visual Studio
 ms.openlocfilehash: 984a89f5085867ea7b23735d05d0e22ef51dcfdb
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937505"
 ---
-# <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Znajdowanie i pojmowanie kluczy produktów w subskrypcjach programu Visual Studio
-W tym artykule opisano sposób lokalizowania, zgłaszania i eksportowania kluczy produktów z https://my.visualstudio.com/productkeys.  Aby uzyskać więcej informacji na temat aktywowania produktu przy użyciu klucza, wersji programu Key i licencji zbiorczych oraz dziennych limitów roszczeń dotyczących klucza produktu, przejdź do [omówienia kluczy produktów](product-keys.md).
+# <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Znajdowanie kluczy produktów i odchyliwanie ich w subskrypcjach programu Visual Studio
+W tym artykule wyjaśniono, jak zlokalizować, zgłosić roszczenie i wyeksportować klucze produktu z pliku https://my.visualstudio.com/productkeys.  Aby uzyskać więcej informacji na temat aktywacji produktu za pomocą klucza, wersji kluczy licencji detalicznej i zbiorczej oraz dziennych limitów oświadczeń dotyczących kluczy produktu, odwiedź [przegląd kluczy produktu](product-keys.md).
 
-## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie i pojmowanie kluczy produktów
-Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić klucze produktów. Poszczególne klucze produktu można znaleźć, wybierając niebieskie łącze **Uzyskaj klucz** dla określonego produktu na stronie [pliki do pobrania](https://my.visualstudio.com/downloads) , jak pokazano poniżej.  Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Jeśli istnieje wiele kluczy dla pojedynczego produktu, w kolumnie uwagi zostanie wyświetlona informacja, która ułatwia zidentyfikowanie, który klucz ma być używany.
+## <a name="locating-and-claiming-product-keys"></a>Lokalizowanie i odbierzenie kluczy produktu
+Aby wyświetlić klucze produktu, musisz zalogować się do subskrypcji programu Visual Studio. Poszczególne klucze produktu można znaleźć, wybierając niebieski link **Pobierz klucz** dla określonego produktu na stronie [Pliki do pobrania,](https://my.visualstudio.com/downloads) jak pokazano poniżej.  Wszystkie klucze są również dostępne w zagregowane na stronie [Klucze produktu.](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) Jeśli dla pojedynczego produktu istnieje wiele kluczy, notatki będą wyświetlane w kolumnie Notatki do pobrania, aby ułatwić identyfikację klucza, który powinien być używany.
 > [!div class="mx-imgBorder"]
 > ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
 
-Niektóre produkty łączą wiele wersji produktu w jeden plik do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
-Niektóre klucze są udostępniane automatycznie, takie jak klucze "static", których można użyć dowolną liczbę razy, ponieważ aktywacja nie jest wymagana. Inne klucze muszą zostać przejęte przez wybranie linku **Pobierz klucz** dla produktu.
+Niektóre produkty łączą wiele wersji produktu w jednym pliku do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
+Niektóre klucze są dostarczane automatycznie, takie jak "statyczne" klucze, których można używać tyle razy, ile potrzeba, ponieważ aktywacja nie jest wymagana. Inne klucze należy zgłoś się, wybierając łącze **Pobierz klucz** dla produktu.
 
-W zależności od produktu dostępne są różne typy kluczy.
+Dostępne są różne typy kluczy, w zależności od produktu.
 
 ### <a name="product-key-types"></a>Typy kluczy produktu
 
 |    Typ klucza           |    Opis                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest wymagany żaden klucz.                                                       |
-|    Sprzedaż detaliczna                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
-|    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu z tym samym kluczem. Wartości MAKs są zwykle używane z wersjami produktów licencjonowania zbiorowego. Zazwyczaj dla każdej subskrypcji jest dostarczany tylko jeden klucz MAK.    |
-|    Statyczny klucz aktywacji    |    Klucze aktywacji statycznej są udostępniane dla produktów, które nie wymagają aktywacji. Mogą one być używane dla dowolnej liczby instalacji.                                                                                                                  |
-|    Klucz niestandardowy                 |    Klucze niestandardowe udostępniają specjalne akcje lub informacje umożliwiające aktywację lub instalację produktu.                                                                                                                                                                |
-|    VA 1,0                     |    Są to wiele kluczy aktywacji, podobne do klucza MAK.                                                                                                                                                                                                 |
-|    Klucz OEM                    |    Są to oryginalne klucze producenta sprzętu, które umożliwiają wiele aktywacji.                                                                                                                                                                       |
-|    DreamSpark — klucz sprzedaży    |    Te klucze sprzedaży detalicznej są przeznaczone dla DreamSpark i umożliwiają jedną aktywację. Klucze detaliczne DreamSpark są wydawane w partiach i są przeznaczone głównie do użycia przez uczniów.                                                                                     |
-|    Klucz laboratorium DreamSpark         |    Te klucze użycia są przeznaczone dla programów DreamSpark i umożliwiają wiele aktywacji. Klucze Lab DreamSpark są przeznaczone do użytku w scenariuszach laboratorium komputerowego na Uniwersytecie.                                                                                       |
-|    Klucz MAK DreamSpark         |    Są to Klucze MAK dla klientów programu DreamSpark.                                                                                                                                                                                                  |
+|    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest potrzebny żaden klucz.                                                       |
+|    Sprzedaż detaliczna                     |    Klucze sieci sprzedaży umożliwiają wiele aktywacji i są używane do kompilacji detalicznych produktu. W wielu przypadkach 10 aktywacji jest dozwolonych na klucz, ale często więcej jest dozwolonych na tym samym komputerze.                                                       |
+|    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu za pomocą tego samego klucza. Maks są zwykle używane z wersjami licencjonowania zbiorowego produktów. Zazwyczaj tylko jeden klucz KLUCZA MAK jest dostarczany na subskrypcję.    |
+|    Statyczny klucz aktywacyjny    |    Statyczne klucze aktywacyjne są dostarczane dla produktów, które nie wymagają aktywacji. Mogą być używane do dowolnej liczby instalacji.                                                                                                                  |
+|    Klucz niestandardowy                 |    Klucze niestandardowe zapewniają specjalne akcje lub informacje, aby aktywować lub zainstalować produkt.                                                                                                                                                                |
+|    VA 1.0                     |    Są to wiele kluczy aktywacji, podobne do klucza MAK.                                                                                                                                                                                                 |
+|    Klucz OEM                    |    Są to klucze producenta oryginalnego sprzętu, które umożliwiają wielokrotne aktywacje.                                                                                                                                                                       |
+|    DreamSpark Klucz detaliczny    |    Te klucze sprzedaży detalicznej są dla DreamSpark i umożliwiają jedną aktywację. Klucze dreamspark retail są wydawane w partiach i są przeznaczone głównie do konsumpcji studentów.                                                                                     |
+|    Klucz laboratorium DreamSpark         |    Te klucze do użytku laboratoryjego są przeznaczone dla programów DreamSpark i umożliwiają wielokrotne aktywacje. DreamSpark Lab Keys są przeznaczone do użytku w scenariuszach laboratorium komputerowego uniwersytetu.                                                                                       |
+|    Klucz MAK DreamSpark         |    Są to klucze KLUCZYKÓW MAK dla klientów programu DreamSpark.                                                                                                                                                                                                  |
 |
 
-Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
+Możesz ubiegać się o klucz ze strony pobierania produktu lub wyszukać klucz, którego potrzebujesz na stronie [Klucze produktu.](https://my.visualstudio.com/productkeys)
 
-### <a name="claiming-product-keys"></a>Pojmowanie kluczy produktów
-Tylko subskrybenci z aktywnymi subskrypcjami mogą pobierać produkty i zgłaszać klucze produktów.  Można wyeksportować zatwierdzono klucze ze strony [klucze produktu](https://my.visualstudio.com/productkeys) , gdy subskrypcja jest aktywna.
+### <a name="claiming-product-keys"></a>Odebranie kluczy produktu
+Tylko subskrybenci z aktywnymi subskrypcjami mogą pobierać produkty i żądać kluczy produktów.  Odebrane klucze można wyeksportować ze strony [Klucze produktu,](https://my.visualstudio.com/productkeys) gdy subskrypcja jest aktywna.
 
-Aby zgłosić klucz produktu:
-1. Zaloguj się do swojej subskrypcji programu Visual Studio.  Musisz się zalogować, aby pobrać produkty lub zatwierdzić klucze produktów.
-2. Kliknij kartę [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) .
-3. Klucze produktów są wyświetlane alfabetycznie według nazwy produktu.  Możesz albo przewinąć w dół do nazwy żądanego produktu, albo poszukać go za pomocą paska wyszukiwania w górnej części strony.
+Aby odebrać klucz produktu:
+1. Zaloguj się do subskrypcji programu Visual Studio.  Aby pobrać produkty lub odebrać klucze produktów, musisz się zalogować.
+2. Kliknij kartę [Klucze produktu.](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+3. Klucze produktu są wyświetlane alfabetycznie według nazwy produktu.  Możesz przewinąć w dół do nazwy żądanego produktu lub wyszukać go za pomocą paska wyszukiwania u góry strony.
 > [!div class="mx-imgBorder"]
-> ![wyszukiwanie klucza produktu](_img/product-keys/search-keys.png)
+> ![Wyszukaj klucz produktu](_img/product-keys/search-keys.png)
    
-W tym przykładzie używamy paska wyszukiwania do lokalizowania klucza produktu dla Visual Studio Enterprise 2019.
-Jak widać, na liście są wyświetlane różne wersje.  Jeden z najważniejszych kluczy został już przejęty dla Visual Studio Enterprise 2019 wersji 16,0 i 16,1.  Dodatkowe klucze różnych typów są nadal dostępne dla obu wersji. Należy zauważyć, że w kolumnie **uwagi** można zarejestrować krótką notatkę dotyczącą przejętych kluczy.  Można go użyć w połączeniu z datą w kolumnie **przejęte** , aby śledzić klucze, które zostały przejęte.  Możesz na przykład wprowadzić uwagi podczas aktywowania instalacji produktu przy użyciu klucza.
+W tym przykładzie użyliśmy paska wyszukiwania, aby zlokalizować klucz produktu dla programu Visual Studio Enterprise 2019.
+Jak widać, istnieje kilka wersji wymienionych.  Jeden klucz każdy został już zgłoszony dla programu Visual Studio Enterprise 2019 w wersjach 16.0 i 16.1.  Dodatkowe klucze różnych typów są nadal dostępne dla obu wersji. Należy zauważyć, że można zarejestrować krótką notatkę o odebranych kluczach w kolumnie **Notatki.**  Można użyć tego w połączeniu z datą w **kolumnie Zgłoszone,** aby śledzić klucze, które zostały zgłoszone.  Notatki można na przykład zrobić podczas aktywowania instalacji produktu za pomocą klucza.
 
-### <a name="exporting-your-claimed-keys"></a>Eksportowanie przejętych kluczy
-Można wyeksportować listę wszystkich przejętych kluczy, a także duży wybór statycznych i innych kluczy, które są automatycznie oznaczane jako "żądane".
+### <a name="exporting-your-claimed-keys"></a>Eksportowanie odebranych kluczy
+Możesz wyeksportować listę wszystkich zgłoszonych kluczy wraz z dużym wyborem kluczy statycznych i innych, które są automatycznie oznaczane jako "zgłoszone" dla Ciebie.
 
 > [!IMPORTANT]
-> Jeśli subskrypcja wygaśnie, nie będzie już można żądać nowych kluczy ani eksportować pożądanych kluczy.
+> Jeśli subskrypcja wygaśnie, nie będzie już można ubiegać się o nowe klucze ani eksportować żądanych kluczy.
 
-Aby wyeksportować klucze, po prostu kliknij link **Eksportuj wszystkie klucze** z prawej strony na stronie klucze produktów.  Zostanie utworzony plik XML zatytułowany KeysExport. XML i będzie można otworzyć lub zapisać plik.  Należy otworzyć plik z aplikacją, która może obsługiwać pliki XML.  Na przykład możesz otworzyć plik jako skoroszyt tylko do odczytu w programie Excel.
+Aby wyeksportować klucze, wystarczy kliknąć **łącze Eksportuj wszystkie klucze** po prawej stronie kluczy produktu.  Zostanie utworzony plik xml zatytułowany KeysExport.xml i będziesz mieć możliwość otwarcia lub zapisania pliku.  Należy otworzyć plik za pomocą aplikacji zdolnej do obsługi plików xml.  Na przykład można otworzyć plik jako skoroszyt tylko do odczytu w programie Excel.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Gdy wszystko jest gotowe do pobrania oprogramowania i używania kluczy, odwiedź stronę https://my.visualstudio.com/downloads.  Aby uzyskać więcej informacji o pobieraniu oprogramowania, zobacz [Omówienie pobierania](download-software.md).
+Gdy będziesz gotowy do pobierania oprogramowania https://my.visualstudio.com/downloadsi używania klawiszy, odwiedź stronę .  Aby uzyskać więcej informacji na temat pobierania oprogramowania, zobacz [przegląd pobierania](download-software.md).

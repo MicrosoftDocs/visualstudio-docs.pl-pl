@@ -1,5 +1,5 @@
 ---
-title: Element Task elementu UsingTask (MSBuild) | Microsoft Docs
+title: Element zadania usingTask (MSBuild) | Dokumenty firmy Microsoft
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263191"
 ---
-# <a name="task-element-of-usingtask-msbuild"></a>Element Task elementu UsingTask (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Element zadania UsingTask (MSBuild)
 
-Zawiera dane, które są przesyłane do `TaskFactory``UsingTask`. Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Zawiera dane przekazywane do `UsingTask` `TaskFactory`pliku . Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project > \<UsingTask > \<zadania >
+ \<>> \<projektu usingTask> \<task>
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,23 +43,23 @@ Zawiera dane, które są przesyłane do `TaskFactory``UsingTask`. Aby uzyskać w
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Evaluate`|Opcjonalny logiczny atrybut.<br /><br /> Jeśli `true`, MSBuild oblicza wszystkie elementy wewnętrzne i rozszerza elementy i właściwości przed przekazaniem informacji do `TaskFactory` podczas tworzenia wystąpienia zadania.|
+|`Evaluate`|Opcjonalny atrybut logiczny.<br /><br /> Jeśli `true`, MSBuild ocenia wszystkie elementy wewnętrzne i rozwija elementy i właściwości, zanim przekazuje informacje `TaskFactory` do, gdy zadanie jest tworzone.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|Dane|Tekst między tagami `Task` jest wysyłany Verbatim do `TaskFactory`.|
+|Dane|Tekst między `Task` znacznikami jest wysyłany dosłownie `TaskFactory`do pliku .|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Zapewnia sposób rejestrowania zadań w programie MSBuild. W projekcie może istnieć co najmniej zero elementów `UsingTask`. |
+| [Usingtask](../msbuild/usingtask-element-msbuild.md) | Umożliwia rejestrowanie zadań w msbuild. Może istnieć zero `UsingTask` lub więcej elementów w projekcie. |
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład pokazuje, jak używać elementu `Task` z atrybutem `Evaluate`.
+ W poniższym przykładzie `Task` pokazano, `Evaluate` jak używać elementu z atrybutem.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">

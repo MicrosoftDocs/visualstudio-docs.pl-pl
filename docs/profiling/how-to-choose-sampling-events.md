@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wybieranie zdarzeń próbkowania | Microsoft Docs'
+title: 'Jak: Wybierz zdarzenia próbkowania | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,48 +20,48 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779054"
 ---
-# <a name="how-to-choose-sampling-events"></a>Instrukcje: Wybieranie zdarzeń próbkowania
-Domyślnie narzędzia profilowania [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zbiera dane dotyczące wydajności w interwale określonym jako liczba cykli procesora, które są używane w profilowanym procesie. Domyślna liczba cykli w interwale wynosi 10 000 000, czyli około 0,01 sekund na 1% GH. Można zmienić liczbę cykli w interwale i można zmienić przykładowe zdarzenie. Dostępne są następujące przykładowe zdarzenia:
+# <a name="how-to-choose-sampling-events"></a>Jak: Wybierz zdarzenia próbkowania
+Domyślnie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania zbiera dane wydajności w odstępie, który jest określony jako liczba cykli procesora, które są używane przez profilowany proces. Domyślna liczba cykli w interwale wynosi 10 000 000, czyli około 0,01 sekundy na komputerze 1 GH. Można zmienić liczbę cykli w interwale i można zmienić zdarzenie próbki. Dostępne są następujące przykładowe zdarzenia:
 
-- Cykle zegara — w przypadku problemów związanych z PROCESORem.
+- Cykle zegara - dla problemów związanych z procesorem.
 
-- Błędy stron — w przypadku problemów związanych z pamięcią.
+- Błędy strony - w przypadku problemów związanych z pamięcią.
 
-- Wywołania systemowe — w przypadku problemów związanych z we/wy.
+- Połączenia systemowe - w przypadku problemów związanych z we/wy.
 
-- Licznik wydajności — liczniki procesora CPU w przypadku problemów z wydajnością niskiego poziomu.
+- Licznik wydajności — liczniki procesora cpu dla problemów z wydajnością niskiego poziomu.
 
 > [!IMPORTANT]
-> Jeśli zbierasz dane pamięci .NET (alokacje lub okresy istnienia obiektów lub oba) przy użyciu metody próbkowania, wszystkie zdarzenia próbkowania określone przez użytkownika są ignorowane, a odpowiednie alokacje pamięci lub zdarzenia wyrzucania elementów bezużytecznych są używane do zbierania danych.
+> Jeśli zbierasz dane pamięci .NET (alokacje lub okresy istnienia obiektów lub oba) przy użyciu metody próbkowania, wszystkie zdarzenia próbkowania określone przez użytkownika są ignorowane, a odpowiednie alokacje pamięci lub zdarzenia wyrzucania elementów bezużytecznych lub oba te zdarzenia są używane do zbierania danych.
 
 ### <a name="to-select-a-sample-event"></a>Aby wybrać przykładowe zdarzenie
 
-1. W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksploratorze wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Właściwości**.
 
-2. Na **stronie właściwości**kliknij właściwości **próbkowania** .
+2. Na **stronach właściwości**kliknij właściwości **próbkowania.**
 
-3. Z listy rozwijanej **przykład zdarzenia** wybierz przykładowe zdarzenie, którego chcesz użyć do profilowania aplikacji.
+3. Z listy rozwijanej **Przykładowe zdarzenie** wybierz przykładowe zdarzenie, którego chcesz użyć do profilowania aplikacji.
 
     > [!NOTE]
-    > **Dostępne liczniki wydajności** są włączane tylko w przypadku wybrania **licznika wydajności** z listy rozwijanej **przykład zdarzenia** .
+    > **Liczniki wydajności Dostępne** są włączone tylko wtedy, gdy wybierzesz **licznik wydajności** z listy rozwijanej **Przykładowe zdarzenie.**
 
-4. W przypadku wybrania **licznika wydajności**wybierz określony licznik procesora w obszarze dostępne kontrolki widoku drzewa **liczników wydajności** .
+4. Jeśli wybierzesz **licznik wydajności,** wybierz określony licznik procesora z **kontrolki Dostępne liczniki wydajności** widoku drzewa.
 
-    - Liczniki w węźle **zdarzenia przenośne** są dostępne na wszystkich typach procesorów.
+    - Liczniki w węźle **Zdarzenia przenośne** są dostępne dla wszystkich typów procesorów.
 
-    - Liczniki w węźle **zdarzenia platformy** są specyficzne dla procesora na bieżącym komputerze i mogą być niedostępne w przypadku innych typów procesorów.
+    - Liczniki w węźle **Zdarzenia platformy** są specyficzne dla procesora na bieżącym komputerze i mogą nie być dostępne dla innych typów procesorów.
 
-5. Po wybraniu przykładowego zdarzenia w polu tekstowym **Interwał próbkowania** zostanie wyświetlona domyślna wartość interwału próbkowania. W razie potrzeby możesz wprowadzić wartość w polu tekstowym.
+5. Po wybraniu zdarzenia przykładowego domyślna wartość interwału próbkowania jest wyświetlana w polu tekstowym **interwał próbkowania.** W razie potrzeby można wprowadzić odpowiednią wartość w polu tekstowym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-- [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
-- [Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)
-- [Omówienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
+- [Jak: Wybierz metody zbierania](../profiling/how-to-choose-collection-methods.md)
+- [Liczniki procesorów i systemu Windows](../profiling/cpu-and-windows-counters.md)
+- [Zrozumienie wartości danych próbkowania](../profiling/understanding-sampling-data-values.md)
 - [Profil z wiersza polecenia](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -1,5 +1,5 @@
 ---
-title: Debugowanie wielu procesów | Microsoft Docs
+title: Debugowanie wielu procesów | Dokumenty firmy Microsoft
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -20,162 +20,162 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409786"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302225"
 ---
-# <a name="debug-multiple-processes-c-visual-basic-c"></a>Debuguj wiele procesów (C#, Visual Basic, C++)
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>Debugowanie wielu procesów (C#, Visual Basic, C++)
 
-Program Visual Studio może debugować rozwiązanie, które ma kilka procesów. Można uruchamiać i przełączać między procesami, przerywać, kontynuować i przechodzić przez źródło, zatrzymywać debugowanie oraz kończyć lub odłączać się od poszczególnych procesów.
+Visual Studio można debugować rozwiązanie, które ma kilka procesów. Można rozpocząć i przełączać się między procesami, przerwać, kontynuować i krok po kroku przez źródło, zatrzymać debugowanie i zakończyć lub odłączyć od poszczególnych procesów.
 
-## <a name="start-debugging-with-multiple-processes"></a>Rozpocznij debugowanie z wieloma procesami
+## <a name="start-debugging-with-multiple-processes"></a>Rozpoczynanie debugowania za pomocą wielu procesów
 
-Jeśli więcej niż jeden projekt w rozwiązaniu programu Visual Studio może działać niezależnie, można wybrać projekt, który zostanie uruchomiony przez debuger. Bieżący projekt startowy jest wyświetlany pogrubiony w **Eksplorator rozwiązań**.
+Gdy więcej niż jeden projekt w rozwiązaniu programu Visual Studio można uruchomić niezależnie, można wybrać projekt, który uruchamia debuger. Bieżący projekt uruchamiania jest wyświetlany pogrubioną czcionką w **Eksploratorze rozwiązań**.
 
-Aby zmienić projekt startowy, w **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy inny projekt i wybierz polecenie **Ustaw jako projekt startowy**.
+Aby zmienić projekt startowy, w **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy inny projekt i wybierz polecenie **Ustaw jako projekt startowy**.
 
-Aby rozpocząć debugowanie projektu z **Eksplorator rozwiązań** bez tworzenia projektu startowego, kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Debuguj** > **Uruchom nowe wystąpienie** lub **Wkrocz do nowego wystąpienia**.
+Aby rozpocząć debugowanie projektu z **Eksploratora rozwiązań** bez przekształcania go w projekt startowy, kliknij prawym przyciskiem myszy projekt i wybierz polecenie**Rozpocznij nowe wystąpienie** **debugowania** > lub **Krok do nowego wystąpienia**.
 
-**Aby ustawić projekt startowy lub wiele projektów na podstawie właściwości rozwiązania:**
+**Aby ustawić projekt startowy lub wiele projektów z właściwości rozwiązania:**
 
-1. Wybierz rozwiązanie w **Eksplorator rozwiązań** a następnie wybierz ikonę **Właściwości** na pasku narzędzi lub kliknij rozwiązanie prawym przyciskiem myszy, a następnie wybierz pozycję **Właściwości**.
+1. Wybierz rozwiązanie w **Eksploratorze rozwiązań,** a następnie wybierz ikonę **Właściwości** na pasku narzędzi lub kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Właściwości**.
 
-1. Na stronie **Właściwości** wybierz pozycję **wspólne właściwości** > **projekt startowy**.
+1. Na stronie **Właściwości** wybierz pozycję**Projekt uruchamiania** **wspólnych właściwości** > .
 
-   ![Zmiana typu uruchomienia dla projektu](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")
+   ![Zmienianie typu uruchamiania projektu](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")
 
-1. Wybierz **bieżące zaznaczenie**, **pojedynczy projekt startowy** i plik projektu lub **wiele projektów startowych**.
+1. Wybierz **bieżące zaznaczenie,** **Pojedynczy projekt startowy** i plik projektu lub Wiele projektów **startowych**.
 
-   W przypadku wybrania **wielu projektów startowych**można zmienić kolejność uruchamiania i akcję do wykonania dla każdego projektu: **Uruchom**, **Uruchom bez debugowania**lub **Brak**.
+   W przypadku **wybrania opcji Wiele projektów startowych**można zmienić kolejność uruchamiania i akcję do wykonania dla każdego projektu: **Start**, Start **bez debugowania**lub **Brak**.
 
-1. Wybierz pozycję **Zastosuj**, lub **przycisk OK** , aby zastosować i zamknąć okno dialogowe.
+1. Wybierz **opcję Zastosuj**lub **OK,** aby zastosować i zamknąć okno dialogowe.
 
-### <a name="BKMK_Attach_to_a_process"></a>Dołącz do procesu
+### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a>Dołączanie do procesu
 
-Debuger może również *dołączać* do aplikacji działających w procesach poza programem Visual Studio, w tym na urządzeniach zdalnych. Po dołączeniu do aplikacji możesz użyć debugera programu Visual Studio. Funkcje debugowania mogą być ograniczone. Jest to zależne od tego, czy aplikacja została skompilowana przy użyciu informacji debugowania, czy masz dostęp do kodu źródłowego aplikacji oraz czy kompilator JIT śledzi informacje debugowania.
+Debuger można również *dołączyć* do aplikacji działających w procesach poza programem Visual Studio, w tym na urządzeniach zdalnych. Po dołączeniu do aplikacji można użyć debugera programu Visual Studio. Funkcje debugowania mogą być ograniczone. To zależy od tego, czy aplikacja została zbudowana z informacjami debugowania, czy masz dostęp do kodu źródłowego aplikacji i czy kompilator JIT śledzi informacje debugowania.
 
-Aby uzyskać więcej informacji, zobacz [dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+Aby uzyskać więcej informacji, zobacz [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 **Aby dołączyć do uruchomionego procesu:**
 
-1. Po uruchomieniu aplikacji wybierz kolejno opcje **debuguj** > **Dołącz do procesu**.
+1. Po uruchomieniu aplikacji wybierz pozycję **Debug** > **dołącz do procesu**.
 
-   ![Okno dialogowe Dołączanie do procesu](../debugger/media/dbg_attachtoprocessdlg.png "okno dialogowe dołączania do procesu")
+   ![Okno dialogowe Dołączanie do procesu](../debugger/media/dbg_attachtoprocessdlg.png "Okno dialogowe Dołączanie do procesu")
 
-1. W oknie dialogowym **Dołącz do procesu** wybierz proces z listy **dostępne procesy** , a następnie wybierz pozycję **Dołącz**.
+1. W oknie dialogowym **Dołączanie do procesu** wybierz proces z listy **Dostępne procesy,** a następnie wybierz pozycję **Dołącz**.
 
 >[!NOTE]
->Debuger nie dołącza automatycznie do procesu podrzędnego, który jest uruchamiany przez debugowany proces, nawet jeśli projekt podrzędny znajduje się w tym samym rozwiązaniu. Aby debugować proces podrzędny, należy dołączyć do procesu podrzędnego po jego rozpoczęciu lub skonfigurować Edytor rejestru systemu Windows, aby uruchamiał proces podrzędny w nowym wystąpieniu debugera.
+>Debuger nie automatycznie dołączyć do procesu podrzędnego, który jest uruchamiany przez debugowany proces, nawet jeśli projekt podrzędny jest w tym samym rozwiązaniu. Aby debugować proces podrzędny, dołącz do procesu podrzędnego po jego uruchomieniu lub skonfiguruj Edytor rejestru systemu Windows, aby uruchomić proces podrzędny w nowym wystąpieniu debugera.
 
-### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Użyj edytora rejestru, aby automatycznie uruchomić proces w debugerze
+### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Automatyczne uruchamianie procesu w debugerze za pomocą Edytora rejestru
 
-Czasami może być konieczne Debugowanie kodu startowego dla aplikacji, która jest uruchamiana przez inny proces. Przykłady obejmują usługi i akcje instalacji niestandardowej. Debuger może być uruchamiany i automatycznie dołączany do aplikacji.
+Czasami może być konieczne debugowanie kodu startowego dla aplikacji, która jest uruchamiana przez inny proces. Przykłady obejmują usługi i akcje konfiguracji niestandardowej. Możesz uruchomić debuger i automatycznie dołączyć do aplikacji.
 
-1. Uruchom Edytor rejestru systemu Windows, uruchamiając *regedit. exe*.
+1. Uruchom Edytor rejestru systemu Windows, uruchamiając *plik regedit.exe*.
 
-1. W Edytorze rejestru przejdź do **HKEY_LOCAL_MACHINE \Software\microsoft\windows NT\CurrentVersion\Image opcje wykonywania plików**.
+1. W Edytorze rejestru przejdź do **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**.
 
-1. Wybierz folder aplikacji, którą chcesz uruchomić w debugerze.
+1. Wybierz folder aplikacji, który chcesz uruchomić w debugerze.
 
-   Jeśli aplikacja nie jest wymieniona jako folder podrzędny, kliknij prawym przyciskiem myszy **Opcje wykonywania pliku obrazu**, wybierz polecenie **Nowy** > **klucz**, a następnie wpisz nazwę aplikacji. Możesz też kliknąć prawym przyciskiem myszy nowy klucz w drzewie, wybrać polecenie **Zmień**nazwę, a następnie wprowadzić wartość Nazwa aplikacji.
+   Jeśli aplikacji nie ma na liście jako folderu podrzędnego, kliknij prawym przyciskiem myszy **pozycję Opcje wykonywania plików obrazu**, wybierz pozycję **Nowy** > **klucz**i wpisz nazwę aplikacji. Możesz też kliknąć prawym przyciskiem myszy nowy klucz w drzewie, wybrać **pozycję Zmień nazwę**, a następnie wprowadź nazwę aplikacji.
 
-1. Kliknij prawym przyciskiem myszy nowy klucz w drzewie i wybierz pozycję **nowa** > **wartość ciągu**.
+1. Kliknij prawym przyciskiem myszy nowy klucz w drzewie i wybierz polecenie **Nowa** > **wartość ciągu**.
 
-1. Zmień nazwę nowej wartości z **nowej wartości #1** na `debugger`.
+1. Zmień nazwę nowej wartości z **Nowa wartość** `debugger`#1 na .
 
 1. Kliknij prawym przyciskiem myszy **debuger** i wybierz polecenie **Modyfikuj**.
 
    ![Okno dialogowe Edytowanie ciągu](../debugger/media/dbg_execution_automaticstart_editstringdlg.png "Okno dialogowe Edytowanie ciągu")
 
-1. W oknie dialogowym **Edytowanie ciągu** wpisz `vsjitdebugger.exe` w polu **dane wartości** , a następnie wybierz przycisk **OK**.
+1. W oknie dialogowym **Edytowanie ciągu** wpisz `vsjitdebugger.exe` pole **Dane wartość,** a następnie wybierz przycisk **OK**.
 
-   ![Wpis początkowy debugera automatycznego w regedit. exe](../debugger/media/dbg_execution_automaticstart_result.png "Wpis początkowy debugera automatycznego w regedit. exe")
+   ![Automatyczny wpis startowy debugera w pliku regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "Automatyczny wpis startowy debugera w pliku regedit.exe")
 
-## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Debugowanie z wieloma procesami
+## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Debugowanie z wieloma procesami
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
-Podczas debugowania aplikacji z kilkoma procesami polecenia debugera przerywania, krokowe i kontynuowania mają domyślnie wpływ na wszystkie procesy. Na przykład gdy proces jest zawieszony w punkcie przerwania, wykonywanie wszystkich innych procesów również zostaje zawieszone. To zachowanie domyślne można zmienić, aby uzyskać większą kontrolę nad obiektami docelowymi poleceń wykonywania.
+Podczas debugowania aplikacji z kilku procesów, podział, stepping i ciągłe debuger polecenia wpływają na wszystkie procesy domyślnie. Na przykład, gdy proces jest zawieszony w punkcie przerwania, wykonywanie wszystkich innych procesów jest również zawieszone. Można zmienić to domyślne zachowanie, aby uzyskać większą kontrolę nad celami poleceń wykonywania.
 
-**Aby zmienić, czy wszystkie procesy są zawieszane po przerwaniu jednego procesu:**
+**Aby zmienić, czy wszystkie procesy są zawieszone, gdy jeden proces się zepsuje:**
 
-- W **obszarze narzędzia** (lub **Debuguj**) > **Opcje** > **debugowanie** > **Ogólne**zaznacz lub usuń zaznaczenie pola wyboru **Przerwij wszystkie procesy w przypadku, gdy jest to jedno przerwanie procesu** .
+- W obszarze **Narzędzia** (lub **Debugowanie)**> **opcje** > **debugowania** > **ogólne**zaznacz lub wyczyść pole wyboru **Przerwij wszystkie procesy, gdy jeden proces przerywa.**
 
-### <a name="BKMK_Break__step__and_continue_commands"></a>Polecenia Break, Step i Continue
+### <a name="break-step-and-continue-commands"></a><a name="BKMK_Break__step__and_continue_commands"></a>Przerywanie, krok i kontynuowanie poleceń
 
-W poniższej tabeli opisano zachowania poleceń debugowania po zaznaczeniu pola wyboru **Przerwij wszystkie procesy, gdy** jest zaznaczone lub jest ono odtworzone:
+W poniższej tabeli opisano zachowania poleceń debugowania, gdy pole wyboru **Przerwij wszystkie procesy, gdy zaznaczono** lub nie zaznaczono wyboru jednego procesu:
 
-|**Polecenie**|Wybrano|Niezaznaczone|
+|**Polecenie**|Wybrano|Zaznaczona|
 |-|-|-|
-|**Debuguj**  > **Przerwij wszystkie**|Wszystkie procesy są przerywane.|Wszystkie procesy są przerywane.|
-|**Debuguj** > **Kontynuuj**|Wszystkie procesy są wznawiane.|Wszystkie zawieszone procesy są wznawiane.|
-|**Debuguj** > **krok po**kroku **,** Przekrocz lub **Wyjdź**|Wszystkie procesy są uruchamiane podczas wykonywania bieżących kroków procesu. <br />Następnie wszystkie procesy są przerywane.|Bieżące etapy procesu. <br />Zawieszone procesy są wznawiane. <br />Uruchomione procesy są kontynuowane.|
-|**Debuguj** > **krok po kroku do bieżącego procesu**, **Przekrocz bieżący**proces lub **Wyjdź z bieżącego procesu**|Nie dotyczy|Bieżące etapy procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|**Punkt przerwania** okna źródłowego|Wszystkie procesy są przerywane.|Tylko przerwy w procesie okna źródłowego.|
-|Okno źródłowe **uruchamia do kursora**<br />Okno źródłowe musi znajdować się w bieżącym procesie.|Wszystkie procesy są uruchamiane, gdy proces okna źródłowego jest uruchamiany do kursora, a następnie do końca.<br />Następnie wszystkie inne procesy są przerywane.|Proces okna źródłowego jest uruchamiany do kursora.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|**Proces przerwania** > okna **procesów**|Nie dotyczy|Wybrane podziały procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|Okno **procesów** > **kontynuować procesu**|Nie dotyczy|Wybrany proces zostanie wznowiony.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
+|**Debugowanie**  > **break all**|Wszystkie procesy pękają.|Wszystkie procesy pękają.|
+|**Debugowanie** > **kontynuuj**|Wszystkie procesy wznawiają się.|Wszystkie zawieszone procesy zostaną wznowione.|
+|**Krok debugowania** > **do**, Krok **na**, lub **Wyjść**|Wszystkie procesy są uruchamiane podczas bieżących kroków procesu. <br />Następnie wszystkie procesy pękają.|Bieżące etapy procesu. <br />Zawieszone procesy wznowić. <br />Procesy uruchomione są kontynuowane.|
+|**Krok debugowania** > **do bieżącego procesu,** **krok nad bieżącym procesem**lub **Wysuń bieżący proces**|Nie dotyczy|Bieżące etapy procesu.<br />Inne procesy zachowują swój istniejący stan (zawieszony lub uruchomiony).|
+|Punkt **przerwania** okna źródłowego|Wszystkie procesy pękają.|Tylko podziały procesu okna źródła.|
+|Okno źródłowe **Uruchom do kursora**<br />Okno źródłowe musi być w bieżącym procesie.|Wszystkie procesy są uruchamiane, gdy proces okna źródłowego jest uruchamiany do kursora, a następnie przerywa.<br />Następnie wszystkie inne procesy pękają.|Proces okna źródłowego jest uruchamiany do kursora.<br />Inne procesy zachowują swój istniejący stan (zawieszony lub uruchomiony).|
+|**Procesy** > **proces podziału** okna|Nie dotyczy|Wybrane przerwy procesu.<br />Inne procesy zachowują swój istniejący stan (zawieszony lub uruchomiony).|
+|**Okno Procesy** > **kontynuuj proces**|Nie dotyczy|Wznawia się wybrany proces.<br />Inne procesy zachowują swój istniejący stan (zawieszony lub uruchomiony).|
 
-### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>Znajdowanie plików źródłowych i symboli (. pdb)
-Aby nawigować po kodzie źródłowym procesu, debuger musi mieć dostęp do plików źródłowych i plików symboli. Aby uzyskać więcej informacji, zobacz [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+### <a name="find-the-source-and-symbol-pdb-files"></a><a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>Znajdowanie plików źródłowych i symboli (pdb)
+Aby poruszać się po kodzie źródłowym procesu, debuger potrzebuje dostępu do swoich plików źródłowych i plików symboli. Aby uzyskać więcej informacji, zobacz [Określanie symbolu (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-Jeśli nie możesz uzyskać dostępu do plików dla procesu, możesz nawigować przy użyciu okna **demontażu** . Aby uzyskać więcej informacji, zobacz [How to: Use the deassembly Window](../debugger/how-to-use-the-disassembly-window.md).
+Jeśli nie możesz uzyskać dostępu do plików dla procesu, możesz nawigować za pomocą okna **Demontaż.** Aby uzyskać więcej informacji, zobacz [Jak: Użyj okna Demontaż](../debugger/how-to-use-the-disassembly-window.md).
 
-### <a name="BKMK_Switch_between_processes"></a>Przełączanie między procesami
+### <a name="switch-between-processes"></a><a name="BKMK_Switch_between_processes"></a>Przełączanie między procesami
 
-Podczas debugowania można dołączyć do wielu procesów, ale tylko jeden proces jest aktywny w debugerze w danym momencie. Można ustawić aktywny lub *bieżący* proces na pasku narzędzi **lokalizacji debugowania** lub w oknie **procesy** . Aby przełączać się między procesami, oba procesy muszą być w trybie przerwania.
+Można dołączyć do wielu procesów podczas debugowania, ale tylko jeden proces jest aktywny w debugerze w danym momencie. Aktywny lub *bieżący* proces można ustawić na pasku narzędzi **Lokalizacja debugowania** lub w oknie **Procesy.** Aby przełączać się między procesami, oba procesy muszą być w trybie przerwania.
 
-**Aby ustawić bieżący proces na pasku narzędzi lokalizacji debugowania:**
+**Aby ustawić bieżący proces z paska narzędzi Lokalizacja debugowania:**
 
-1. Aby otworzyć pasek narzędzi **Lokalizacja debugowania** , wybierz pozycję **Wyświetl** > **paski narzędzi** > **Lokalizacja debugowania**.
+1. Aby otworzyć pasek narzędzi **Lokalizacja debugowania,** wybierz pozycję **Wyświetl** > **położenie debugowania pasków** > **Debug Location**narzędzi .
 
-1. Podczas debugowania na pasku narzędzi **Lokalizacja debugowania** wybierz proces, który chcesz ustawić jako bieżący proces z listy rozwijanej **proces** .
+1. Podczas debugowania na pasku narzędzi **Lokalizacja debugowania** wybierz proces, który chcesz ustawić jako bieżący proces z listy rozwijanej **Proces.**
 
    ![Przełączanie między procesami](../debugger/media/dbg_execution_switchbetweenmodules.png "DBG_Execution_SwitchBetweenModules")
 
-**Aby ustawić bieżący proces z okna procesy:**
+**Aby ustawić bieżący proces z okna Procesy:**
 
-1. Aby otworzyć okno **procesy** , podczas debugowania wybierz pozycję **debuguj** > **procesy** > **systemu Windows** .
+1. Aby otworzyć okno **Procesy** podczas debugowania, wybierz opcję **Debugowanie** > **procesów****systemu Windows** > .
 
-1. W oknie **procesy** bieżący proces jest oznaczony żółtą strzałką. Kliknij dwukrotnie proces, który ma zostać ustawiony jako bieżący proces.
+1. W oknie **Procesy** bieżący proces jest oznaczony żółtą strzałką. Kliknij dwukrotnie proces, który chcesz ustawić jako bieżący proces.
 
-   ![Okno procesów](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")
+   ![Okno Procesy](../debugger/media/dbg_processeswindow.png "DBG_ProcessesWindow")
 
-Przełączenie do procesu ustawia go jako bieżący proces do celów debugowania. Okna debugera pokazują stan bieżącego procesu, a polecenia krok po kroku mają wpływ tylko na bieżący proces.
+Przełączanie do procesu ustawia go jako bieżący proces do celów debugowania. Okna debugera pokazują stan bieżącego procesu, a polecenia krokowe wpływają tylko na bieżący proces.
 
-## <a name="stop-debugging-with-multiple-processes"></a>Zatrzymaj debugowanie z wieloma procesami
+## <a name="stop-debugging-with-multiple-processes"></a>Zatrzymywać debugowanie za pomocą wielu procesów
 
-Domyślnie po wybraniu opcji **debuguj** > **Zatrzymaj debugowanie**debuger zakończy się lub odłącza od wszystkich procesów.
+Domyślnie po wybraniu **debugowania** > **zatrzymaj debugowanie debugowanie**debuger kończy się lub odłącza od wszystkich procesów.
 
 - Jeśli bieżący proces został uruchomiony w debugerze, proces zostanie zakończony.
 
-- W przypadku dołączenia debugera do bieżącego procesu debuger odłącza się od procesu i opuszcza proces uruchomiony.
+- Jeśli debuger został dołączony do bieżącego procesu, debuger odłącza się od procesu i pozostawia proces uruchomiony.
 
-Po rozpoczęciu debugowania procesu z rozwiązania programu Visual Studio, dołączenie do innego procesu, który jest już uruchomiony, a następnie wybranie opcji **Zatrzymaj debugowanie**spowoduje zakończenie sesji debugowania. Proces, który został uruchomiony w programie Visual Studio, został zakończony, podczas gdy dołączono proces, aby nadal działał.
+Jeśli zaczniesz debugowania procesu z rozwiązania programu Visual Studio, a następnie dołączyć do innego procesu, który jest już uruchomiony, a następnie wybierz **pozycję Zatrzymaj debugowanie**, sesja debugowania kończy. Proces, który został uruchomiony w programie Visual Studio kończy się, podczas gdy proces dołączony do utrzymuje uruchomiony.
 
-Aby kontrolować sposób, w jaki **zatrzymanie debugowania** wpływa na poszczególne procesy, w oknie **procesy** kliknij prawym przyciskiem myszy proces, a następnie zaznacz lub usuń zaznaczenie pola wyboru **Odłącz po zatrzymaniu debugowania** .
+Aby kontrolować sposób, w jaki **zatrzymanie debugowania** wpływa na pojedynczy proces, w oknie **Procesy** kliknij prawym przyciskiem myszy proces, a następnie zaznacz lub wyczyść pole wyboru **Odłącz podczas debugowania zatrzymanego.**
 
 >[!NOTE]
->Opcja **Przerwij wszystkie procesy, gdy jeden proces** jest debugerem, nie ma wpływu na zatrzymywanie, Kończenie lub odłączanie od procesów.
+>**Przerwać wszystkie procesy, gdy jeden proces przerywa** debugera opcja nie wpływa na zatrzymywanie, kończenie lub odłączanie od procesów.
 
-### <a name="stop-terminate-and-detach-commands"></a>Polecenia zatrzymywania, kończenia i odłączania
+### <a name="stop-terminate-and-detach-commands"></a>Polecenia zatrzymania, zakończenia i odłączyć
 
-Poniższa tabela zawiera opis zachowań poleceń zatrzymywanie, kończenie i odłączanie debugera z wieloma procesami:
+W poniższej tabeli opisano zachowania poleceń zatrzymania, zakończenia i odłączania debugera za pomocą wielu procesów:
 
 |**Polecenie**|**Opis**|
 |-|-|
-|**Debuguj** > **Zatrzymaj debugowanie**|O ile zachowanie nie zostanie zmienione w oknie **procesy** , procesy uruchomione przez debuger są zakończone, a dołączone procesy są odłączone.|
-|**Debuguj** > **przerwać wszystkie**|Wszystkie procesy zostały zakończone.|
-|**Debuguj** > **odłączania wszystkich**|Debuger odłącza się od wszystkich procesów.|
-|**Proces Odłączania** > okna **procesów**|Debuger odłącza się od wybranego procesu.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|**Proces kończenia** okna **procesów** >|Wybrany proces został zakończony.<br />Inne procesy utrzymują swój istniejący stan (zawieszone lub działające).|
-|Okno **procesów** > **Odłącz po zatrzymaniu debugowania**|W przypadku wybrania tej operacji **debuguj** > **Zatrzymaj debugowanie** z wybranego procesu. <br />Jeśli nie jest zaznaczone **, debugowanie** > **Zatrzymaj debugowanie** zakończy się wybranym procesie. |
+|**Debugowanie** > **zatrzymania debugowania**|O ile zachowanie nie zostanie zmienione w oknie **Procesy,** procesy uruchamiane przez debuger są kończyne, a dołączone procesy są odłączane.|
+|**Debugowanie** > **zakończ wszystko**|Wszystkie procesy zostały zakończone.|
+|**Debuguj** > **wszystkie**|Debuger odłącza się od wszystkich procesów.|
+|**Procesy** > **proces odłączyć okno**|Debuger odłącza się od wybranego procesu.<br />Inne procesy zachowują swój istniejący stan (zawieszony lub uruchomiony).|
+|**Okno Procesy** > **zakończenie procesu**|Wybrany proces zostanie zakończony.<br />Inne procesy zachowują swój istniejący stan (zawieszony lub uruchomiony).|
+|**Okno procesów** > **odłączyć po zatrzymaniu debugowania**|Jeśli ta opcja jest zaznaczona, **debugowanie** > **zatrzyma debugowanie** odłącza się od wybranego procesu. <br />Jeśli nie jest zaznaczona, **debugowanie** > **debugowania** kończy wybrany proces. |
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Określanie symboli (. pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [Dołącz do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
-- [Debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [Określanie symbolu (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Dołączanie do uruchomionych procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Przechodzenie przez kod za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
+- [Debugowanie just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)

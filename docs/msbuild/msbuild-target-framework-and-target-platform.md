@@ -1,5 +1,5 @@
 ---
-title: Struktura docelowa programu MSBuild i platforma docelowa | Microsoft Docs
+title: Platforma docelowa i platforma docelowa MSBuild | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -9,61 +9,61 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633203"
 ---
-# <a name="msbuild-target-framework-and-target-platform"></a>Struktura docelowa programu MSBuild i platforma docelowa
+# <a name="msbuild-target-framework-and-target-platform"></a>Platforma docelowa i platforma docelowa MSBuild
 
-Projekt można skompilować do uruchamiania w *środowisku docelowym*, który jest określoną wersją .NET Framework i *platformą docelową*, która jest konkretną architekturą oprogramowania.  Można na przykład określić, że aplikacja ma być uruchamiana na .NET Framework 2,0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 802x86 ("x86"). Kombinacja struktury docelowej i platformy docelowej jest znana jako *kontekst docelowy*.
+Projekt można zbudować do pracy na *platformie docelowej*, która jest określoną wersją platformy .NET Framework i *platformą docelową*, która jest architekturą określonego oprogramowania.  Na przykład można kierować aplikację do uruchamiania w programie .NET Framework 2.0 na platformie 32-bitowej, która jest zgodna z rodziną procesorów 802x86 ("x86"). Połączenie struktury docelowej i platformy docelowej jest znane jako *kontekst docelowy.*
 
 > [!IMPORTANT]
-> W tym artykule przedstawiono stary sposób określania platformy docelowej. Projekty w stylu zestawu SDK umożliwiają różne TargetFrameworks, takie jak standard. Aby uzyskać więcej informacji, zobacz [Platformy docelowe](/dotnet/standard/frameworks).
+> W tym artykule przedstawiono stary sposób, aby określić platformę docelową. Projekty w stylu SDK umożliwiają różne targetframeworks, takie jak netstandard. Aby uzyskać więcej informacji, zobacz [struktury docelowe](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Struktura docelowa i profil
 
- Platforma docelowa to określona wersja .NET Framework, do której projekt jest uruchamiany. Specyfikacja platformy docelowej jest wymagana, ponieważ włącza funkcje kompilatora i odwołania do zestawów, które są wyłącznie dla tej wersji platformy.
+ Struktura docelowa jest określoną wersją programu .NET Framework, na których jest utworzony projekt. Specyfikacja struktury docelowej jest wymagana, ponieważ umożliwia funkcje kompilatora i odwołania do zestawu, które są wyłączne dla tej wersji struktury.
 
- Obecnie następujące wersje .NET Framework są dostępne do użycia:
+ Obecnie dostępne są następujące wersje programu .NET Framework:
 
-- .NET Framework 2,0 (zawarte w Visual Studio 2005)
+- .NET Framework 2.0 (zawarte w programie Visual Studio 2005)
 
-- .NET Framework 3,0 (uwzględniony w systemie Windows Vista)
+- Program .NET Framework 3.0 (uwzględniony w systemie Windows Vista)
 
-- .NET Framework 3,5 (zawarte w Visual Studio 2008)
+- .NET Framework 3.5 (zawarte w programie Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4,6 (zawarte w Visual Studio 2015)
+- .NET Framework 4.6 (zawarte w programie Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
 - .NET Framework 4.6.2
 
-- .NET Framework 4,7
+- .NET Framework 4.7
 
 - .NET Framework 4.7.1
 
 - .NET Framework 4.7.2
 
-- .NET Framework 4,8
+- .NET Framework 4.8
 
-Wersje .NET Framework różnią się od siebie na liście zestawów, które każda z nich udostępnia. Na przykład nie można kompilować aplikacji Windows Presentation Foundation (WPF), chyba że projekt jest przeznaczony dla .NET Framework w wersji 3,0 lub nowszej.
+Wersje programu .NET Framework różnią się od siebie na liście zestawów, które każdy udostępnia do odwołania. Na przykład nie można utworzyć aplikacji Programu Windows Presentation Foundation (WPF), chyba że projekt jest przeznaczony dla programu .NET Framework w wersji 3.0 lub wyższej.
 
-Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w pliku projektu. Można zmienić platformę docelową dla projektu przy użyciu stron właściwości projektu w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio. Aby uzyskać więcej informacji, zobacz [How to: Target of a wersja .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Dostępne wartości `TargetFrameworkVersion` to `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, `v4.7.1`, `v4.7.2`i `v4.8`.
+Struktura docelowa jest `TargetFrameworkVersion` określona we właściwości w pliku projektu. Platformę docelową projektu można zmienić przy użyciu stron właściwości projektu w zintegrowanym środowisku programistycznym Programu Visual Studio (IDE). Aby uzyskać więcej informacji, zobacz [Jak: Target wersji programu .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Dostępne wartości `TargetFrameworkVersion` to `v2.0` `v3.0`, `v3.5` `v4.5.2`, `v4.6` `v4.6.1`, `v4.6.2` `v4.7`, `v4.7.1` `v4.7.2`, `v4.8`, , , , , i .
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
 ```
 
- *Profil docelowy* jest podzbiorem platformy docelowej. Na przykład profil klienta .NET Framework 4 nie zawiera odwołań do zestawów programu MSBuild.
+ *Profil docelowy* jest podzbiorem struktury docelowej. Na przykład profil klienta programu .NET Framework 4 nie zawiera odwołań do zestawów MSBuild.
 
  > [!NOTE]
- > Profile docelowe mają zastosowanie tylko do [bibliotek klas przenośnych](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+ > Profile docelowe mają zastosowanie tylko do [przenośnych bibliotek klas](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
 
- Profil docelowy jest określony we właściwości `TargetFrameworkProfile` w pliku projektu. Profil docelowy można zmienić przy użyciu formantu Target-Framework na stronach właściwości projektu w IDE.
+ Profil docelowy jest `TargetFrameworkProfile` określony we właściwości w pliku projektu. Profil docelowy można zmienić przy użyciu formantu struktury docelowej na stronach właściwości projektu w IDE.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -72,15 +72,15 @@ Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w 
 
 ## <a name="target-platform"></a>Platforma docelowa
 
- *Platformą* jest kombinacja sprzętu i oprogramowania, która definiuje określone środowisko uruchomieniowe. Na przykład:
+ *Platforma* to połączenie sprzętu i oprogramowania, które definiuje określone środowisko wykonawcze. Na przykład:
 
-- `x86` wyznacza 32-bitowego systemu operacyjnego Windows, który działa na procesorze Intel 80x86 lub jego odpowiedniku.
+- `x86`wyznacza 32-bitowy system operacyjny Windows, który działa na procesorze Intel 80x86 lub jego odpowiedniku.
 
-- `x64` określa 64-bitowy system operacyjny Windows, który działa na procesorze Intel x64 lub jest równoważny.
+- `x64`wyznacza 64-bitowy system operacyjny Windows, który jest uruchomiony na procesorze Intel x64 lub jego odpowiedniku.
 
-- `Xbox` wyznacza platformę Microsoft Xbox 360.
+- `Xbox`wyznacza platformę Microsoft Xbox 360.
 
-*Platforma docelowa* to określona platforma, na której ma być uruchamiany projekt. Platforma docelowa jest określona we właściwości kompilacja `PlatformTarget` w pliku projektu. Możesz zmienić platformę docelową, korzystając ze stron właściwości projektu lub **Configuration Manager** w IDE.
+*Platforma docelowa* jest określoną platformą, na którą jest utworzony projekt. Platforma docelowa jest `PlatformTarget` określona we właściwości kompilacji w pliku projektu. Platformę docelową można zmienić przy użyciu stron właściwości projektu lub **programu Configuration Manager** w IDE.
 
 ```xml
 <PropertyGroup>
@@ -89,7 +89,7 @@ Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w 
 
 ```
 
-*Konfiguracja docelowa* jest podzbiorem platformy docelowej. Na przykład konfiguracja `x86``Debug` nie obejmuje większości optymalizacji kodu. Konfiguracja docelowa jest określona we właściwości kompilacja `Configuration` w pliku projektu. Konfigurację docelową można zmienić przy użyciu stron właściwości projektu lub **Configuration Manager**.
+*Konfiguracja docelowa* jest podzbiorem platformy docelowej. Na przykład `x86``Debug` konfiguracja nie zawiera większości optymalizacji kodu. Konfiguracja docelowa jest `Configuration` określona we właściwości kompilacji w pliku projektu. Konfigurację docelową można zmienić za pomocą stron właściwości projektu lub **programu Configuration Manager**.
 
 ```xml
 <PropertyGroup>
@@ -101,4 +101,4 @@ Struktura docelowa jest określona we właściwości `TargetFrameworkVersion` w 
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)
+- [Wielotargowe](../msbuild/msbuild-multitargeting-overview.md)
