@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Pokrycie kodu — wyszukiwanie błędów
               href: troubleshooting-code-coverage.md
-        - name: Izolowanie testów jednostkowych programu SharePoint 2010 przy użyciu emulatorów
+        - name: Izolowanie testów jednostkowych SharePoint 2010 przy użyciu emulatorów
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Używanie automatyzacji interfejsu użytkownika do testowania kodu
       items:
@@ -126,15 +126,15 @@
               items:
                 - name: Przykładowe rozszerzenie kodowanych testów UI dla programu Excel
                   href: sample-coded-ui-test-extension-for-excel.md
-                - name: 'ExtensionPackage, klasa'
+                - name: ExtensionPackage — Klasa
                   href: sample-excel-extension-extensionpackage-class.md
-                - name: 'TechnologyManager, klasa'
+                - name: TechnologyManager — Klasa
                   href: sample-excel-extension-technologymanager-class.md
-                - name: 'PropertyProvider, klasa'
+                - name: PropertyProvider — Klasa
                   href: sample-excel-extension-propertyprovider-class.md
                 - name: Klasy elementów
                   href: sample-excel-extension-element-classes.md
-                - name: 'ActionFilter, klasa'
+                - name: ActionFilter — Klasa
                   href: sample-excel-extension-actionfilter-class.md
         - name: Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
           href: upgrading-coded-ui-tests-from-visual-studio-2010.md

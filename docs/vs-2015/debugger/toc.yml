@@ -86,7 +86,7 @@
               href: using-run-time-checks-without-the-c-run-time-library.md
     - name: Dołączanie do uruchomionych procesów
       href: attach-to-running-processes-with-the-visual-studio-debugger.md
-    - name: Określanie plików symboli (pdb) i plików źródłowych
+    - name: Określanie plików symboli (.pdb) i plików źródłowych
       href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
     - name: Debugowanie aplikacji 64-bitowych
       href: debug-64-bit-applications.md
@@ -132,7 +132,7 @@
               href: how-to-debug-in-mixed-mode.md
             - name: Biblioteka formantów sieci Web (zarządzany kod)
               href: web-control-library-managed-code.md
-        - name: Projekty konsoli
+        - name: Projekty startowe
           href: debugging-preparation-console-projects.md
         - name: Aplikacje internetowe ASP.NET
           href: debugging-preparation-aspnet-web-applications.md
@@ -410,7 +410,7 @@
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
                 - name: 'Przykładowy kod nawigacji debugera (Xaml i C#)'
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
-            - name: 'Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach ze Sklepu Windows'
+            - name: 'Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach Sklepu Windows)'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
         - name: Zawartość pobrana z wyprzedzeniem dla aplikacji Sklepu Windows
           href: prefetch-content-for-windows-store-apps.md
@@ -424,7 +424,7 @@
               href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
             - name: Zalecane ustawienia właściwości
               href: managed-debugging-recommended-property-settings.md
-            - name: Aplikacje Windows Forms
+            - name: Aplikacje biblioteki Windows Form
               href: debugging-preparation-windows-forms-applications.md
             - name: Usługi systemu Windows
               href: debugging-preparation-windows-services.md

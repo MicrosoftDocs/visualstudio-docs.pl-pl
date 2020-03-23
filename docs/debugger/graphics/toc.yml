@@ -50,21 +50,21 @@
   items:
     - name: Przykłady diagnostyki grafiki
       href: graphics-diagnostics-examples.md
-    - name: 'Przewodnik: Przechwytywanie informacji graficznych'
+    - name: 'Wskazówki: przechwytywanie informacji graficznych'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Przewodnik: programowe przechwytywanie informacji graficznych'
+    - name: 'Wskazówki: programowe przechwytywanie informacji graficznych'
       href: walkthrough-capturing-graphics-information-programmatically.md
-    - name: 'Przewodnik: brak obiektów spowodowany stanem urządzenia'
+    - name: 'Wskazówki: brak obiektów spowodowany stanem urządzenia'
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 'Przewodnik: brak obiektów spowodowany cieniowaniem wierzchołków'
+    - name: 'Wskazówki: brak obiektów spowodowany cieniowaniem wierzchołków'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: 'Przewodnik: brak obiektów spowodowany błędnie skonfigurowanym potokiem'
+    - name: 'Wskazówki: brak obiektów spowodowany błędnie skonfigurowanym potokiem'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem'
+    - name: 'Wskazówki: debugowanie błędów renderowania spowodowanych cieniowaniem'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Przewodnik: używanie diagnostyki grafiki do debugowania cieniowania obliczenia'
+    - name: 'Wskazówki: używanie diagnostyki grafiki do debugowania cieniowania obliczenia'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: 'Instrukcje: zmiana maszyny odtwarzania diagnostyki grafiki'
+    - name: 'Porady: zmiana maszyny odtwarzania diagnostyki grafiki'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Odwołanie (przechwycenie programowe)
   items:

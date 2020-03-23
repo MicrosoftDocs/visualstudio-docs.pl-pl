@@ -20,7 +20,7 @@
       href: visual-studio-data-tools-for-dotnet.md
     - name: Narzędzia platformy Entity Framework
       href: entity-data-model-tools-in-visual-studio.md
-    - name: Zestawy danych
+    - name: DataSets
       items:
         - name: Narzędzia do obsługi zestawów danych
           href: dataset-tools-in-visual-studio.md

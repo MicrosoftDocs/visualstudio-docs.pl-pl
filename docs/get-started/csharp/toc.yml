@@ -35,7 +35,7 @@
           href: tutorial-aspnet-core-ef-step-04.md
         - name: 5 — Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
           href: tutorial-aspnet-core-ef-step-05.md
-- name: Poznawanie programu Visual Studio
+- name: Poznaj program Visual Studio
   expanded: true
   items:
     - name: Uruchamianie programu

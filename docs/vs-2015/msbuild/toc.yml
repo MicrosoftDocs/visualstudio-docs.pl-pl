@@ -124,9 +124,9 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Rejestrowanie rozszerzeń środowiska .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Równoległe kompilowanie wielu projektów
+        - name: Równoległe tworzenie wielu projektów
           items:
-            - name: Równoległe kompilowanie wielu projektów
+            - name: Równoległe tworzenie wielu projektów
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Używanie wielu procesorów w projektach kompilacji
               href: using-multiple-processors-to-build-projects.md
@@ -144,7 +144,7 @@
                   href: standard-and-custom-toolset-configurations.md
                 - name: Zastępowanie ustawień ToolsVersion
                   href: overriding-toolsversion-settings.md
-            - name: Docelowa platforma i architektura
+            - name: Platforma docelowa
               href: msbuild-target-framework-and-target-platform.md
             - name: Rozwiązywanie zestawów w czasie projektowania
               href: resolving-assemblies-at-design-time.md
@@ -226,13 +226,13 @@
               href: usingtask-element-msbuild.md
             - name: When — Element (MSBuild)
               href: when-element-msbuild.md
-        - name: Dokumentacja zadań
+        - name: Odwołanie do zadania
           items:
-            - name: Dokumentacja zadań
+            - name: Odwołanie do zadania
               href: msbuild-task-reference.md
-            - name: Zadania w programie Visual C++
+            - name: Zadania w Visual C++
               items:
-                - name: Zadania w programie Visual C++
+                - name: Zadania w Visual C++
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake — Zadanie
                   href: bscmake-task.md
@@ -392,9 +392,9 @@
           href: common-msbuild-project-properties.md
         - name: Wspólne elementy projektów MSBuild
           href: common-msbuild-project-items.md
-        - name: Dokumentacja wiersza polecenia
+        - name: Informacje w wierszu polecenia
           href: msbuild-command-line-reference.md
-        - name: Pliki Targets
+        - name: Pliki .Targets
           href: msbuild-dot-targets-files.md
         - name: Metadane dobrze znanego elementu
           href: msbuild-well-known-item-metadata.md
@@ -406,11 +406,11 @@
           items:
             - name: Odwołanie do WPF MSBuild
               href: wpf-msbuild-reference.md
-            - name: Pliki Targets
+            - name: Pliki .Targets
               href: wpf-dot-targets-files.md
-            - name: Dokumentacja zadań
+            - name: Odwołanie do zadania
               items:
-                - name: Dokumentacja zadań
+                - name: Odwołanie do zadania
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

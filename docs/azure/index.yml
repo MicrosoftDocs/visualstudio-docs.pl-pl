@@ -1,4 +1,4 @@
-## YamlMime:Landing
+### YamlMime:Landing
 title: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio
 metadata:
   title: Programowanie na platformie Azure
@@ -10,106 +10,112 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
+  ms.openlocfilehash: 7d993a357094f52bc633da7e6fd22540a613c338
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 03/21/2020
+  ms.locfileid: "76022299"
 landingContent:
-  - title: Wdrażanie w usłudze Azure App Service
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
-            url: /azure/app-service/app-service-web-get-started-dotnet-framework
-          - text: Wdrażanie aplikacji internetowej platformy ASP.NET na platformie Azure
-            url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
-          - text: Ciągłe wdrażanie na platformie Azure za pomocą programu Visual Studio i rozwiązania Git
-            url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-          - text: Ciągłe wdrażanie na platformie Azure za pomocą usługi Azure Pipelines
-            url: /azure/devops/pipelines/get-started-yaml
-          - text: Wdrażanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
-            url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
-  - title: 'Usługi App Services, Logic Apps i Azure Functions'
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Tworzenie i hostowanie aplikacji internetowej za pomocą usługi Azure App Service
-            url: /azure/app-service/app-service-web-get-started-dotnet
-          - text: 'Tworzenie zautomatyzowanych, skalowalnych przepływów pracy za pomocą usługi Azure Logic Apps'
-            url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
-          - text: Przetwarzanie zdarzeń za pomocą usługi Azure Functions
-            url: /azure/azure-functions/functions-create-your-first-function-visual-studio
-      - linkListType: overview
-        links:
-          - text: Zestaw Azure SDK dla deweloperów platform .NET i .NET Core
-            url: /dotnet/azure
-  - title: Programowanie kontenerów
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Programowanie kontenerów
-            url: /visualstudio/containers
-          - text: Narzędzia kontenerów w programie Visual Studio
-            url: /visualstudio/containers/overview
-          - text: Narzędzia platformy Kubernetes
-            url: /visualstudio/containers/tutorial-kubernetes-tools
-  - title: Debugowanie usług platformy Azure i analizowanie wydajności
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Debugowanie platformy ASP.NET Core w programie IIS na platformie Azure
-            url: /visualstudio/debugger/remote-debugging-azure
-          - text: Debugowanie usługi w chmurze na platformie Azure
-            url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-          - text: Debugowanie aplikacji uruchomionej na maszynie wirtualnej
-            url: vs-azure-tools-debug-cloud-services-virtual-machines.md
-          - text: Mierzenie wydajności usług w chmurze na platformie Azure
-            url: vs-azure-tools-performance-profiling-cloud-services.md
-  - title: Usługi połączone
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Azure Storage
-            url: vs-azure-tools-connected-services-storage.md
-          - text: Usługa Azure Key Vault
-            url: /azure/key-vault/vs-key-vault-add-connected-service
-          - text: Azure Active Directory
-            url: /azure/active-directory/develop/vs-active-directory-add-connected-service
-          - text: Cognitive Services — analiza tekstu
-            url: /azure/cognitive-services/text-analytics/vs-text-connected-service
-          - text: Cognitive Services — wyszukiwanie wiadomości Bing
-            url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-          - text: Cognitive Services — interfejs API rozpoznawania twarzy
-            url: /azure/cognitive-services/face/vs-face-connected-service
-          - text: Cognitive Services — przetwarzanie obrazów
-            url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
-  - title: Usługi w chmurze platformy Azure
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Tworzenie i konfigurowanie projektów usług w chmurze platformy Azure
-            url: vs-azure-tools-azure-project-create.md
-          - text: Debugowanie usług w chmurze lokalnie i na platformie Azure
-            url: vs-azure-tools-debugging-cloud-services-overview.md
-          - text: Analizowanie wydajności za pomocą profilera programu Visual Studio
-            url: vs-azure-tools-performance-profiling-cloud-services.md
-          - text: Wdrażanie usługi w chmurze na platformie Azure
-            url: vs-azure-tools-publishing-a-cloud-service.md
-          - text: Monitorowanie i diagnozowanie usług w chmurze i maszyn wirtualnych uruchomionych na platformie Azure
-            url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-  - title: Cloud Explorer
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Uzyskiwanie dostępu do kont usługi Azure Storage w programie Visual Studio
-            url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-          - text: Uzyskiwanie dostępu do maszyn wirtualnych z programu Visual Studio
-            url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-  - title: Inne zasoby
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Grupa zasobów platformy Azure
-            url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
-          - text: Usługa Data Lake Analytics
-            url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
-          - text: Usługa Stream Analytics
-            url: /azure/stream-analytics/stream-analytics-quick-create-vs
-          - text: Usługa Service Fabric
-            url: /azure/service-fabric/service-fabric-get-started
+- title: Wdrażanie w usłudze Azure App Service
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Wdrażanie aplikacji platformy ASP.NET Core na platformie Azure
+      url: /azure/app-service/app-service-web-get-started-dotnet-framework
+    - text: Wdrażanie aplikacji internetowej platformy ASP.NET na platformie Azure
+      url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+    - text: Ciągłe wdrażanie na platformie Azure za pomocą programu Visual Studio i rozwiązania Git
+      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+    - text: Ciągłe wdrażanie na platformie Azure za pomocą usługi Azure Pipelines
+      url: /azure/devops/pipelines/get-started-yaml
+    - text: Wdrażanie aplikacji internetowej platformy ASP.NET na maszynie wirtualnej platformy Azure
+      url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
+- title: Usługi App Services, Logic Apps i Azure Functions
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Tworzenie i hostowanie aplikacji internetowej za pomocą usługi Azure App Service
+      url: /azure/app-service/app-service-web-get-started-dotnet
+    - text: Tworzenie zautomatyzowanych, skalowalnych przepływów pracy za pomocą usługi Azure Logic Apps
+      url: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+    - text: Przetwarzanie zdarzeń za pomocą usługi Azure Functions
+      url: /azure/azure-functions/functions-create-your-first-function-visual-studio
+  - linkListType: overview
+    links:
+    - text: Zestaw Azure SDK dla deweloperów platform .NET i .NET Core
+      url: /dotnet/azure
+- title: Programowanie kontenerów
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Programowanie kontenerów
+      url: /visualstudio/containers
+    - text: Narzędzia kontenerów w programie Visual Studio
+      url: /visualstudio/containers/overview
+    - text: Narzędzia platformy Kubernetes
+      url: /visualstudio/containers/tutorial-kubernetes-tools
+- title: Debugowanie usług platformy Azure i analizowanie wydajności
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Debugowanie platformy ASP.NET Core w programie IIS na platformie Azure
+      url: /visualstudio/debugger/remote-debugging-azure
+    - text: Debugowanie usługi w chmurze na platformie Azure
+      url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+    - text: Debugowanie aplikacji uruchomionej na maszynie wirtualnej
+      url: vs-azure-tools-debug-cloud-services-virtual-machines.md
+    - text: Mierzenie wydajności usług w chmurze na platformie Azure
+      url: vs-azure-tools-performance-profiling-cloud-services.md
+- title: Usługi połączone
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Azure Storage
+      url: vs-azure-tools-connected-services-storage.md
+    - text: Usługa Azure Key Vault
+      url: /azure/key-vault/vs-key-vault-add-connected-service
+    - text: Azure Active Directory
+      url: /azure/active-directory/develop/vs-active-directory-add-connected-service
+    - text: Cognitive Services — analiza tekstu
+      url: /azure/cognitive-services/text-analytics/vs-text-connected-service
+    - text: Cognitive Services — wyszukiwanie wiadomości Bing
+      url: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+    - text: Cognitive Services — interfejs API rozpoznawania twarzy
+      url: /azure/cognitive-services/face/vs-face-connected-service
+    - text: Cognitive Services — przetwarzanie obrazów
+      url: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+- title: Usługi w chmurze platformy Azure
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Tworzenie i konfigurowanie projektów usług w chmurze platformy Azure
+      url: vs-azure-tools-azure-project-create.md
+    - text: Debugowanie usług w chmurze lokalnie i na platformie Azure
+      url: vs-azure-tools-debugging-cloud-services-overview.md
+    - text: Analizowanie wydajności za pomocą profilera programu Visual Studio
+      url: vs-azure-tools-performance-profiling-cloud-services.md
+    - text: Wdrażanie usługi w chmurze na platformie Azure
+      url: vs-azure-tools-publishing-a-cloud-service.md
+    - text: Monitorowanie i diagnozowanie usług w chmurze i maszyn wirtualnych uruchomionych na platformie Azure
+      url: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+- title: Cloud Explorer
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Uzyskiwanie dostępu do kont usługi Azure Storage w programie Visual Studio
+      url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+    - text: Uzyskiwanie dostępu do maszyn wirtualnych z programu Visual Studio
+      url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
+- title: Inne zasoby
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Grupa zasobów platformy Azure
+      url: /azure/azure-resource-manager/vs-azure-tools-resource-groups-deployment-projects-create-deploy
+    - text: Usługa Data Lake Analytics
+      url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+    - text: Usługa Stream Analytics
+      url: /azure/stream-analytics/stream-analytics-quick-create-vs
+    - text: Service Fabric
+      url: /azure/service-fabric/service-fabric-get-started

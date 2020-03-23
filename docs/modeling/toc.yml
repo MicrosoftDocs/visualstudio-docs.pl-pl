@@ -34,9 +34,9 @@
   items:
     - name: Tworzenie modeli aplikacji
       href: create-models-for-your-app.md
-    - name: 'Diagramy zależności: Tematy pomocy'
+    - name: 'Diagramy zależności: Odwołanie'
       href: layer-diagrams-reference.md
-    - name: 'Diagramy zależności: Wytyczne dotyczące'
+    - name: 'Diagramy zależności: Wskazówki'
       href: layer-diagrams-guidelines.md
     - name: Udostępnianie modeli
       items:
@@ -221,9 +221,9 @@
           href: accessing-models-from-text-templates.md
         - name: Użycie rozszerzenia Visual Studio ModelBus w szablonie tekstu
           href: using-visual-studio-modelbus-in-a-text-template.md
-        - name: 'Przewodnik: Debugowanie szablonu tekstowego uzyskującego dostęp do modelu'
+        - name: 'Przewodnik: debugowanie szablonu tekstowego uzyskującego dostęp do modelu'
           href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
-        - name: 'Przewodnik: Łączenie hosta z generowanym procesorem dyrektywy'
+        - name: 'Przewodnik: łączenie hosta z wygenerowanym procesorem dyrektywy'
           href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
         - name: DslTextTransform — Polecenie
           href: the-dsltexttransform-command.md
@@ -277,7 +277,7 @@
       items:
         - name: Omówienie i instrukcje
           href: design-time-code-generation-by-using-t4-text-templates.md
-        - name: 'Przewodnik: Generowanie kodu przy użyciu szablonów tekstowych'
+        - name: 'Przewodnik: generowanie kodu przy użyciu szablonów tekstowych'
           href: walkthrough-generating-code-by-using-text-templates.md
         - name: Generowanie kodu w procesie kompilacji
           href: code-generation-in-a-build-process.md
@@ -342,7 +342,7 @@
               href: creating-custom-t4-text-template-directive-processors.md
             - name: Wdrażanie niestandardowego procesora dyrektywy
               href: deploying-a-custom-directive-processor.md
-            - name: 'Przewodnik: Tworzenie niestandardowego procesora dyrektywy'
+            - name: 'Przewodnik: tworzenie niestandardowego procesora dyrektywy'
               href: walkthrough-creating-a-custom-directive-processor.md
         - name: Wywoływanie przekształcenia tekstu w rozszerzeniu programu VS
           href: invoking-text-transformation-in-a-vs-extension.md
@@ -350,7 +350,7 @@
           items:
             - name: Przetwarzanie szablonów tekstowych przy użyciu hosta niestandardowego
               href: processing-text-templates-by-using-a-custom-host.md
-            - name: 'Przewodnik: Tworzenie niestandardowego hosta szablonu tekstowego'
+            - name: 'Przewodnik: tworzenie niestandardowego hosta szablonu tekstowego'
               href: walkthrough-creating-a-custom-text-template-host.md
     - name: Wykaz interfejsów API dla szablonów tekstowych T4
       href: api-reference-for-t4-text-templates.md

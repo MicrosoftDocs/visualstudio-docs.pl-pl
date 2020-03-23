@@ -384,9 +384,9 @@
           href: setting-bookmarks-in-code.md
         - name: Korzystanie z listy zadań
           href: using-the-task-list.md
-        - name: Znajdowanie zmian w kodzie i innych elementów historii
+        - name: Znajdowanie zmian w kodzie i innych elementów historii kodu
           items:
-            - name: Znajdowanie zmian w kodzie i innych elementów historii
+            - name: Znajdowanie zmian w kodzie i innych elementów historii kodu
               href: find-code-changes-and-other-history-with-codelens.md
             - name: Polecenie CodeIndex
               href: codeindex-command.md
@@ -510,7 +510,7 @@
           href: how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Dostosowywanie układów okien
           href: customizing-window-layouts-in-visual-studio.md
-        - name: Dostosowywanie strony początkowej
+        - name: Dostosowanie strony początkowej
           href: customizing-the-start-page-for-visual-studio.md
         - name: Zarządzanie narzędziami zewnętrznymi
           href: managing-external-tools.md
@@ -956,7 +956,7 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Zasoby do rozwiązywania problemów z błędami środowiska IDE
+        - name: Zasoby dla rozwiązywania problemów z błędami środowiska IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
         - name: Ułatwienia dostępu dla osób niepełnosprawnych
           items:

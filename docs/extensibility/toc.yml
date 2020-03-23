@@ -4,7 +4,7 @@
   href: installing-the-visual-studio-sdk.md
 - name: Rozpoczynanie tworzenia rozszerzeń Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Tworzenie pierwszego rozszerzenia: Witaj Świecie'
+- name: 'Tworzenie pierwszego rozszerzenia: Hello World'
   href: extensibility-hello-world.md
 - name: Co nowego w zestawie Visual Studio 2019 SDK
   items:
@@ -138,43 +138,43 @@
           href: editor-imports.md
         - name: Obsługa wtyczki EditorConfig
           href: supporting-editorconfig.md
-        - name: 'Przewodnik: Łączenie typu zawartości z rozszerzeniem nazwy pliku'
+        - name: 'Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku'
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: 'Przewodnik: Tworzenie symbolu na marginesie'
+        - name: 'Przewodnik: tworzenie symbolu na marginesie'
           href: walkthrough-creating-a-margin-glyph.md
-        - name: 'Przewodnik: Dostosowywanie widoku tekstu'
+        - name: 'Przewodnik: dostosowywanie widoku tekstu'
           href: walkthrough-customizing-the-text-view.md
-        - name: 'Przewodnik: Tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)'
+        - name: 'Przewodnik: tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)'
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 'Przewodnik: Wyróżnianie tekstu'
+        - name: 'Przewodnik: wyróżnianie tekstu'
           href: walkthrough-highlighting-text.md
-        - name: 'Przewodnik: Tworzenie konspektu'
+        - name: 'Przewodnik: tworzenie konspektu'
           href: walkthrough-outlining.md
-        - name: 'Przewodnik: Wyświetlanie parowanych nawiasów klamrowych'
+        - name: 'Przewodnik: wyświetlanie parowanych nawiasów klamrowych'
           href: walkthrough-displaying-matching-braces.md
-        - name: 'Przewodnik: Wyświetlanie etykietek narzędzi SzybkieInfo'
+        - name: 'Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo'
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: 'Przewodnik: Wyświetlanie pomocy dotyczącej podpisów'
+        - name: 'Przewodnik: wyświetlanie pomocy dotyczącej sygnatur'
           href: walkthrough-displaying-signature-help.md
-        - name: 'Przewodnik: Wyświetlanie uzupełniania składni'
+        - name: 'Przewodnik: wyświetlanie uzupełniania instrukcji'
           href: walkthrough-displaying-statement-completion.md
-        - name: 'Przewodnik: Implementowanie fragmentów kodu'
+        - name: 'Przewodnik: implementowanie fragmentów kodu'
           href: walkthrough-implementing-code-snippets.md
-        - name: 'Przewodnik: Wyświetlanie sugestii „żarówka”'
+        - name: 'Przewodnik: wyświetlanie sugestii „żarówka”'
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: 'Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora'
+        - name: 'Przewodnik: używanie polecenia programu PowerShell z rozszerzeniem edytora'
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: 'Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora'
+        - name: 'Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora'
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: 'Przewodnik: Uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora'
+        - name: 'Przewodnik: uzyskiwanie dostępu do obiektu DTE z rozszerzenia edytora'
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: Tworzenie niestandardowych edytorów i projektantów
       items:
         - name: Tworzenie niestandardowych edytorów i projektantów
           href: creating-custom-editors-and-designers.md
-        - name: 'Przewodnik: Tworzenie edytora niestandardowego'
+        - name: 'Przewodnik: tworzenie edytora niestandardowego'
           href: walkthrough-creating-a-custom-editor.md
-        - name: 'Przewodnik: Dodawanie funkcji do edytora niestandardowego'
+        - name: 'Przewodnik: dodawanie funkcji do edytora niestandardowego'
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: Inicjowanie projektanta i konfiguracja metadanych
           href: designer-initialization-and-metadata-configuration.md
@@ -388,13 +388,13 @@
       items:
         - name: Tworzenie niestandardowej strony początkowej
           href: creating-a-custom-start-page.md
-        - name: 'Przewodnik: Dodawanie niestandardowych elementów XAML do strony początkowej'
+        - name: 'Przewodnik: dodawanie niestandardowych elementów XAML do strony początkowej'
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: Dodawanie kontrolki użytkownika do strony początkowej
           href: adding-user-control-to-the-start-page.md
         - name: Dodawanie poleceń programu Visual Studio do strony początkowej
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: 'Przewodnik: Zapisywanie ustawień użytkownika na stronie początkowej'
+        - name: 'Przewodnik: zapisywanie ustawień użytkownika na stronie początkowej'
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: Wdrażanie niestandardowych stron początkowych
           href: deploying-custom-start-pages.md
@@ -494,11 +494,11 @@
       href: vsix-project-template.md
     - name: Wprowadzenie do szablonu projektu VSIX
       href: getting-started-with-the-vsix-project-template.md
-    - name: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio'
+    - name: 'Przewodnik: publikowanie rozszerzenia programu Visual Studio'
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pośrednictwem wiersza polecenia'
+    - name: 'Przewodnik: publikowanie rozszerzenia programu Visual Studio za pośrednictwem wiersza polecenia'
       href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: 'Przewodnik: Tworzenie pakietu rozszerzeń'
+    - name: 'Przewodnik: tworzenie pakietu rozszerzeń'
       href: walkthough-create-extension-pack.md
     - name: Dodawanie zależności do pakietu VSIX
       href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -828,11 +828,11 @@
       href: creating-a-software-development-kit.md
     - name: Zestaw SDK a pakiet NuGet
       href: nuget-versus-sdk-references.md
-    - name: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic'
+    - name: 'Przewodnik: tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++'
+    - name: 'Przewodnik: tworzenie zestawu SDK przy użyciu języka C++'
       href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: 'Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript'
+    - name: 'Przewodnik: tworzenie zestawu SDK przy użyciu języka JavaScript'
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Rozszerzalność platformy kompilatora .NET („Roslyn”)
   items:

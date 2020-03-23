@@ -476,9 +476,9 @@
                           href: ca3076-insecure-xslt-script-execution.md
                         - name: 'CA3077: Niezabezpieczone przetwarzanie w elemencie Design interfejsu API, dokumencie XML i czytniku tekstu dla kodu XML'
                           href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-                    - name: 'Wykorzystanie — Ostrzeżenia '
+                    - name: Wykorzystanie — Ostrzeżenia
                       items:
-                        - name: 'Wykorzystanie — Ostrzeżenia '
+                        - name: Wykorzystanie — Ostrzeżenia
                           href: usage-warnings.md
                         - name: 'CA1801: Dokonaj przeglądu nieużywanych parametrów'
                           href: ca1801-review-unused-parameters.md

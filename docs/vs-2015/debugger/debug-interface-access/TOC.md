@@ -36,7 +36,7 @@
 #### [UDT](udt.md)
 #### [VTable](vtable.md)
 #### [VTableShape](vtableshape.md)
-## [Dokumentacja](debug-interface-access-sdk-reference.md)
+## [Tematy pomocy](debug-interface-access-sdk-reference.md)
 ### [Interfejsy (Zestaw SDK dostępu do interfejsu debugowania)](interfaces-debug-interface-access-sdk.md)
 #### [IDiaAddressMap](idiaaddressmap.md)
 ##### [IDiaAddressMap::get_addressMapEnabled](idiaaddressmap-get-addressmapenabled.md)
