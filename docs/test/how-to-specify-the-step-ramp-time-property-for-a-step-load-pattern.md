@@ -1,5 +1,5 @@
 ---
-title: Czas zwiększania kroku wzorca obciążenia dla testowania obciążenia
+title: Krok Ramp Time dla wzorca obciążenia kroku do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,26 +9,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588918"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Instrukcje: Określanie właściwości czasu rampy kroku dla wzorca obciążenia krok po kroku
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Jak: Określ właściwość czasu rampy kroku dla wzorca obciążenia kroku
 
-Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążeniowego**, możesz użyć **edytora testu obciążenia** można zmienić właściwości scenariuszy do spełnienia potrzeb i celów testowania. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
+Po utworzeniu testu obciążenia za pomocą **Kreatora nowego testu obciążenia**można użyć **Edytora testów obciążenia,** aby zmienić właściwości scenariuszy, aby spełnić twoje potrzeby i cele testowania. Aby uzyskać więcej informacji, zobacz [Instruktaż: Tworzenie i uruchamianie testu obciążenia](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
-> Aby uzyskać pełną listę właściwości scenariusza testów obciążenia wraz z opisami, zobacz [właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md).
+> Aby uzyskać pełną listę właściwości scenariusza testu obciążenia i ich opisy, zobacz [Właściwości scenariusza testu obciążenia.](../test/load-test-scenario-properties.md)
 
-Właściwość **czas rampy kroku** jest ustawiana w oknie **Właściwości** . Edytuj właściwości scenariusza testów obciążenia w **edytora testu obciążenia**.
+Właściwość **Krok Czas rampy** jest ustawiona w oknie **Właściwości.** Można edytować właściwości scenariusza testu obciążenia w **Edytorze testów obciążenia**.
 
-Właściwość **czas pochylni kroku** jest używana tylko z wzorcem ładowania kroku. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Właściwość **Krok Ramp Time** jest używany tylko ze wzorcem obciążenia kroku. Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców obciążenia w celu modelowania działań użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-Wzorzec obciążenia kroków służy do zwiększania obciążenia serwera lub serwerów w miarę przebiegu testu obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się w miarę wzrostu obciążenia użytkownika. Na przykład, aby zobaczyć, jak serwer lub serwery działają w miarę wzrostu obciążenia użytkownika 2 000 użytkowników, można uruchomić 10-godzinny test obciążenia, korzystając ze wzorca ładowania kroków o następujących właściwościach:
+Wzorzec obciążenia krok jest używany do zwiększenia obciążenia na serwerze lub serwerach w miarę wykonywania testu obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się wraz ze wzrostem obciążenia użytkownika. Na przykład, aby zobaczyć, jak serwer lub serwery działają w miarę zwiększania obciążenia użytkownika do 2000 użytkowników, można uruchomić 10-godzinny test obciążenia przy użyciu wzorca obciążenia krokowego z następującymi właściwościami:
 
 - Początkowa liczba użytkowników: 100
 
@@ -36,41 +36,41 @@ Wzorzec obciążenia kroków służy do zwiększania obciążenia serwera lub se
 
 - Czas trwania kroku (w sekundach): 1800
 
-- Czas pochylenia kroku (w sekundach): 20
+- Krok Ramp Czas (sekundy): 20
 
-- Liczba użytkowników kroku: 100
+- Liczba użytkowników kroków: 100
 
-Te ustawienia mają uruchomiony test obciążenia przez 30 minut (1800 sekund) na obciążeniach użytkowników 100, 200, 300, aż do 2 000 użytkowników.
+Te ustawienia mają test obciążenia uruchomiony przez 30 minut (1800 sekund) przy obciążeniach użytkownika 100, 200, 300, do 2000 użytkowników.
 
 > [!NOTE]
-> Właściwość **czas rampy kroku** jest jedyną jedną z tych właściwości, które nie są dostępne do wyboru w **nowym Kreator testu obciążeniowego**.
+> Właściwość **Krok Czas rampy** jest jedyną z tych właściwości, która nie jest dostępna do wyboru w **Kreatorze nowego testu obciążenia.**
 
-Właściwość **czas rampy kroku** pozwala zwiększyć się od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), a nie bezpośrednio. W tym przykładzie obciążenie użytkownikami zostanie zwiększone od 100 do 200 użytkowników w ciągu 20 sekund (w każdej sekundzie wynosi 5 użytkowników).
+**Właściwość Step Ramp Time** umożliwia zwiększenie z jednego kroku do następnego (na przykład od 100 do 200 użytkowników) jest stopniowe, a nie natychmiastowe. W tym przykładzie obciążenie użytkownika zostanie zwiększone ze 100 do 200 użytkowników w okresie 20 sekund (wzrost o 5 użytkowników co sekundę).
 
-## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Aby edytować Właściwość czas rampy kroku dla wzorca obciążenia krok po kroku
+## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Aby edytować właściwość czasu rampy kroku dla wzorca obciążenia kroku
 
 1. Otwórz test obciążenia.
 
-     **Edytora testu obciążenia** pojawia się. Zostanie wyświetlone drzewo testu obciążenia.
+     Pojawi się **Edytor testów obciążenia.** Zostanie wyświetlone drzewo testu obciążenia.
 
-2. W folderze **scenariusze** dla drzew testów obciążenia Otwórz węzeł scenariusza, dla którego chcesz określić czas przyrastania kroku.
+2. W folderze **Scenariusze** drzew testów obciążenia otwórz węzeł scenariusza, dla którego chcesz określić czas rampy kroku.
 
-3. Wybierz węzeł **wzorzec obciążenia krok po kroku** .
+3. Wybierz węzeł **Wzorzec obciążenia kroku.**
 
     > [!NOTE]
-    > Wzorzec obciążenia dla scenariusza musi być wzorcem obciążenia etapem. Jeśli tak nie jest, wzorzec obciążenia będzie wyświetlał typ wzorca obciążenia, który jest aktualnie skojarzony z scenariuszem. Aby uzyskać więcej informacji, zobacz [obciążenia Edytowanie wzorców do działań wirtualnego użytkownika w modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+    > Wzorzec obciążenia dla scenariusza musi być wzorzec obciążenia kroku. Jeśli tak nie jest, wzorzec obciążenia wyświetli typ wzorca obciążenia, który jest obecnie skojarzony ze scenariuszem. Aby uzyskać więcej informacji, zobacz [Edytowanie wzorców obciążenia w celu modelowania działań użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4. Na **widoku** menu, wybierz opcję **okno właściwości**.
+4. W menu **Widok** wybierz polecenie **Okno Właściwości**.
 
-     Kategorie i właściwości tego scenariusza są wyświetlane w **właściwości** okna.
+     Kategorie i właściwości scenariusza są wyświetlane w oknie **Właściwości.**
 
-5. Ustaw wartość właściwości czas narastania **kroku** , wprowadzając liczbę dla sekund podejmowanych w każdym kroku w celu stopniowego dodawania użytkowników określonych przez właściwość **Liczba użytkowników kroków** .
+5. Ustaw wartość właściwości **Step Ramp Time,** wprowadzając liczbę dla sekund wykonanych w każdym kroku, aby stopniowo dodawać użytkowników określonych przez właściwość **Liczba użytkowników kroku.**
 
-6. Po zakończeniu, zmiana wartości właściwości, wybierz **Zapisz** na **pliku** menu. Następnie możesz uruchomić test obciążenia, korzystając z nowej wartości **czasu pochylenia kroku** .
+6. Po zakończeniu zmiany właściwości wybierz polecenie **Zapisz** w menu **Plik.** Następnie można uruchomić test obciążenia przy użyciu nowej wartości **krok rampa czas.**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Edytowanie scenariuszy testu obciążenia](../test/edit-load-test-scenarios.md)
+- [Edytowanie scenariuszy testów obciążenia](../test/edit-load-test-scenarios.md)
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
-- [Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)
+- [Edytowanie wzorców obciążenia w celu modelowania działań użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md)

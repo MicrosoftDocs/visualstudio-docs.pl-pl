@@ -18,36 +18,36 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585421"
 ---
 # <a name="code-snippets"></a>Fragmenty kodu
 
-Fragmenty kodu to małe bloki kodu wielokrotnego użytku, które można wstawić do pliku kodu przy użyciu menu rozwijanego prawym przyciskiem myszy (menu kontekstowe) lub kombinacji klawiszy skrótu. Zwykle zawierają one często używane bloki kodu, takie jak `try-finally` lub `if-else` bloki, ale mogą służyć do wstawiania całych klas lub metod.
+Fragmenty kodu to małe bloki kodu wielokrotnego użycia, które można wstawić do pliku kodu za pomocą polecenia menu menu (menu kontekstowego) lub kombinacji skrótów klawiszowych. Zazwyczaj zawierają one często używane bloki `try-finally` `if-else` kodu, takie jak lub bloki, ale mogą być używane do wstawiania całych klas lub metod.
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [fragmenty kodu (Visual Studio dla komputerów Mac)](/visualstudio/mac/snippets).
+> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W programie Visual Studio dla komputerów Mac zobacz [Fragmenty kodu (Visual Studio dla komputerów Mac).](/visualstudio/mac/snippets)
 
-Fragmenty kodu są dostępne dla wielu języków, w tym C#, C++, Visual Basic, XML i T-SQL, do ich nazwy. Aby wyświetlić wszystkie dostępne, zainstalowane fragmenty kodu dla danego języka, Otwórz **Menedżera wstawek kodów** z menu **Narzędzia** (lub naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**B**) i wybierz język z menu rozwijanego u góry.
+Fragmenty kodu są dostępne dla wielu języków, w tym C#, C++, Visual Basic, XML i T-SQL, aby wymienić tylko kilka. Aby wyświetlić wszystkie dostępne zainstalowane fragmenty kodu języka, otwórz **Menedżera urywków kodu** z menu **Narzędzia** (lub naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**B**) i wybierz język z menu rozwijanego u góry.
 
-![Okno dialogowe Menedżer fragmentów kodu](media/code-snippets-manager.png)
+![Okno dialogowe Menedżer urywków kodu](media/code-snippets-manager.png)
 
-Można uzyskać dostęp do fragmentów kodu w następujący sposób:
+Dostęp do fragmentów kodu można uzyskać w następujący sposób:
 
-- Na pasku menu wybierz polecenie **edytuj** > **IntelliSense** > **Wstaw fragment kodu**
+- Na pasku menu wybierz pozycję **Edytuj** > **urywek wstawiania** **intellisense** > 
 
-- W edytorze kodu po kliknięciu prawym przyciskiem myszy lub menu kontekstowym wybierz **wstawkę > ** **Wstaw fragment** kodu
+- Z menu kontekstowego lub kontekstowego w edytorze kodu wybierz polecenie > **Urywek wstawiania fragmentu kodu** **Snippet**
 
-- Na klawiaturze naciśnij klawisz **ctrl**+**K**,**Ctrl**+**X**
+- Z klawiatury naciśnij **klawisze Ctrl**+**K**,**Ctrl**+**X**
 
-## <a name="expansion-snippets-and-surround-with-snippets"></a>Fragmenty kodu rozwinięcia i otocz za pomocą fragmentów kodu
+## <a name="expansion-snippets-and-surround-with-snippets"></a>Fragmenty rozszerzania i fragmenty dźwięku przestrzennego
 
-W programie Visual Studio istnieją dwa rodzaje fragmentów kodu: fragmenty rozszerzające, które są dodawane w określonym punkcie wstawiania i mogą zastąpić skrót fragmentu oraz fragmenty kodu (C# i C++ tylko), które są dodawane wokół wybranego bloku.
+W programie Visual Studio istnieją dwa rodzaje fragmentu kodu: fragmenty kodu, które są dodawane w określonym punkcie wstawiania i mogą zastąpić skrót urywka i otoczyć fragmentami kodu (tylko C# i C++), które są dodawane wokół wybranego bloku kodu.
 
-Przykład fragmentu rozszerzenia: w C# tryf skrótu jest używany do wstawiania bloku try-finally:
+Przykład fragmentu rozszerzenia: w języku C# skrót tryf jest używany do wstawiania bloku try-finally:
 
 ```csharp
 try
@@ -60,9 +60,9 @@ finally
 }
 ```
 
-Możesz wstawić ten fragment kodu, klikając **Wstaw fragment kodu** w menu rozwijanym prawym przyciskiem myszy (menu kontekstowe) okna kod, a następnie pozycję **C#Wizualizacja**, a następnie wpisując `tryf`, a następnie naciskając klawisz **Tab**. Możesz też wpisać `tryf` i dwukrotnie nacisnąć klawisz **Tab** .
+Ten fragment kodu można wstawić, klikając polecenie **Wstaw fragment** kodu w menu (menu kontekstowym) okna kodu, `tryf`a następnie w programie Visual **C#,** a następnie wpisz klawisz Tab , a następnie naciśnij klawisz **Tab**. Możesz też wpisać `tryf` i **nacisnąć klawisz Tab** dwa razy.
 
-Przykład fragmentu kodu otaczającego: w C++ `if` skrótu można użyć jako fragmentu kodu wstawiania lub jako fragmentu kodu. Jeśli zaznaczysz wiersz kodu (na przykład `return FALSE;`), a następnie wybierz opcję **Otocz z** > , **Jeśli**, fragment kodu jest rozwinięty wokół wiersza:
+Przykład fragmentu kodu surround z: w języku C++ skrót `if` może być używany jako fragment wstawiania lub jako fragment kodu surround. Jeśli wybierzesz wiersz kodu `return FALSE;`(na przykład ), a następnie wybierz polecenie **Surround With** > **if,** fragment kodu zostanie rozwinięty wokół linii:
 
 ```cpp
 if (true)
@@ -71,15 +71,15 @@ if (true)
 }
 ```
 
-## <a name="snippet-replacement-parameters"></a>Parametry zamiany fragmentu kodu
+## <a name="snippet-replacement-parameters"></a>Parametry zastępowania fragmentu kodu
 
-Fragmenty kodu mogą zawierać parametry zastępcze, które są symbolami zastępczymi, które należy zastąpić, aby dopasować do precyzyjnego kodu, który piszesz. W poprzednim przykładzie `true` jest parametrem zastępczym, który powinien zostać zamieniony na odpowiedni warunek. Zastępowana zmiana jest powtarzana dla każdego wystąpienia tego samego parametru zastępującego w fragmencie kodu.
+Urywki mogą zawierać parametry zastępcze, które są symbolami zastępczymi, które należy zastąpić, aby dopasować dokładny kod, który piszesz. W poprzednim `true` przykładzie jest parametrem zastępczym, który można zastąpić odpowiednim warunkiem. Zamiennik zostanie powtórzony dla każdego wystąpienia tego samego parametru zastępczego we wemieciach.
 
-Na przykład, w Visual Basic istnieje fragment kodu, który wstawia właściwość. Aby wstawić **fragment kodu, wybierz** wstawka > **Wstaw fragment** kodu z menu po kliknięciu prawym przyciskiem myszy lub w pliku z kodem Visual Basic. Następnie wybierz **wzorce kodu** > **właściwości, procedury, zdarzenia** > **definiują Właściwość**.
+Na przykład w języku Visual Basic istnieje fragment kodu, który wstawia właściwość. Aby wstawić fragment kodu, wybierz polecenie**Fragment kodu urywka** **Snippet** > z menu prawym przyciskiem myszy lub kontekstowego w pliku kodu języka Visual Basic. Następnie wybierz polecenie Właściwości **wzorców** > **kodu, procedury, zdarzenia** > **Zdefiniuj właściwość**.
 
-![Menu fragmentu kodu do definiowania właściwości](media/code-snippets-vb-property.png)
+![Menu fragmentu kodu dla zdefiniuj właściwość](media/code-snippets-vb-property.png)
 
-Zostanie wstawiony następujący kod:
+Wstawiany jest następujący kod:
 
 ```vb
 Private newPropertyValue As String
@@ -93,15 +93,15 @@ Public Property NewProperty() As String
 End Property
 ```
 
-Jeśli zmienisz `newPropertyValue` na `m_property`, każde wystąpienie `newPropertyValue` zostanie zmienione. Jeśli zmienisz `String` na `Int` w deklaracji właściwości, wartość w metodzie Set zostanie również zmieniona na `Int`.
+Jeśli `newPropertyValue` zmienisz `m_property`na , `newPropertyValue` każde wystąpienie zostanie zmienione. Jeśli `String` zmienisz `Int` na w deklaracji właściwości, wartość w metodzie `Int`zestawu jest również zmieniana na .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przewodnik: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
-- [Instrukcje: dystrybuowanie fragmentów kodu](../ide/how-to-distribute-code-snippets.md)
-- [Najlepsze rozwiązania dotyczące korzystania z fragmentów kodu](../ide/best-practices-for-using-code-snippets.md)
-- [Fragmenty kodu rozwiązywania problemów](../ide/troubleshooting-snippets.md)
-- [C#fragmenty kodu](../ide/visual-csharp-code-snippets.md)
-- [C++fragmenty kodu](../ide/visual-cpp-code-snippets.md)
+- [Instruktaż: Tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)
+- [Jak: Rozpowszechnianie fragmentów kodu](../ide/how-to-distribute-code-snippets.md)
+- [Najważniejsze wskazówki dotyczące używania fragmentów kodu](../ide/best-practices-for-using-code-snippets.md)
+- [Rozwiązywanie problemów z urywkami](../ide/troubleshooting-snippets.md)
+- [Fragmenty kodu języka C#](../ide/visual-csharp-code-snippets.md)
+- [Fragmenty kodu języka C++](../ide/visual-cpp-code-snippets.md)
 - [Fragmenty kodu — informacje o schemacie](../ide/code-snippets-schema-reference.md)
 - [Fragmenty kodu (Visual Studio dla komputerów Mac)](/visualstudio/mac/snippets)

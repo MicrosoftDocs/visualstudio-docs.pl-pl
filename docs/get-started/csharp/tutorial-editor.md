@@ -1,6 +1,6 @@
 ---
-title: Wprowadzenie do edytowania dla C# deweloperów
-description: W tym 10-minutowym wprowadzeniu do edytora kodu w programie Visual Studio przedstawiono niektóre sposoby łatwiejszego zapisywania, nawigowania i poznania C# kodu przez program Visual Studio.
+title: Wprowadzenie do edycji dla deweloperów języka C#
+description: To 10-minutowe wprowadzenie do edytora kodu w programie Visual Studio pokazuje niektóre ze sposobów, w jakie program Visual Studio ułatwia pisanie, nawigowanie i rozumienie kodu języka C#.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
@@ -13,38 +13,38 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75590439"
 ---
-# <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak za pomocą edytora kodu
+# <a name="learn-to-use-the-code-editor"></a>Dowiedz się, jak korzystać z edytora kodu
 
-W ramach tego wprowadzenia do edytora kodu w programie Visual Studio 10-minutowe dodamy kod do pliku w celu Spójrz na kilka sposobów, że program Visual Studio sprawia, że pisania, nawigowania i zrozumienie kodu łatwiej.
+W tym 10-minutowym wprowadzeniu do edytora kodu w programie Visual Studio dodamy kod do pliku, aby przyjrzeć się niektórym sposobom, w jakie program Visual Studio ułatwia pisanie, nawigowanie i rozumienie kodu.
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+> Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/downloads) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
-W C#tym artykule założono, że znasz już program. Jeśli nie, zalecamy zapoznaj się z samouczkiem, takim jak [wprowadzenie do C# i ASP.NET Core w programie Visual Studio](tutorial-aspnet-core.md) .
+W tym artykule założono, że jesteś już zaznajomiony z C#. Jeśli nie, sugerujemy, aby spojrzeć na samouczek, takich jak [Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio](tutorial-aspnet-core.md) pierwszy.
 
 > [!TIP]
-> Aby wykonać kroki opisane w tym artykule, upewnij się, że C# masz wybrane ustawienia dla programu Visual Studio. Aby uzyskać informacje o wybieraniu ustawień dla zintegrowanego środowiska programistycznego (IDE), zobacz [Wybieranie ustawień środowiska](visual-studio-ide.md#select-environment-settings).
+> Aby wykonać wraz z tym artykułem, upewnij się, że masz ustawienia języka C# wybrany dla programu Visual Studio. Aby uzyskać informacje na temat wybierania ustawień zintegrowanego środowiska programistycznego (IDE), zobacz [Wybieranie ustawień środowiska](visual-studio-ide.md#select-environment-settings).
 
-## <a name="create-a-new-code-file"></a>Utwórz nowy plik kodu
+## <a name="create-a-new-code-file"></a>Tworzenie nowego pliku kodu
 
-Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
+Zacznij od utworzenia nowego pliku i dodania do niego kodu.
 
 ::: moniker range="vs-2017"
 
@@ -54,45 +54,45 @@ Rozpocznij, tworząc nowy plik i dodawanie kodu do niego.
 
 ::: moniker range=">=vs-2019"
 
-1. Otwórz program Visual Studio. Naciśnij klawisz **ESC** lub kliknij pozycję **Kontynuuj bez kodu** w oknie uruchamiania, aby otworzyć środowisko programistyczne.
+1. Otwórz program Visual Studio. Naciśnij **klawisz Esc** lub kliknij przycisk Kontynuuj bez **kodu** w oknie startowym, aby otworzyć środowisko programistyczne.
 
 ::: moniker-end
 
-2. Z menu **plik** na pasku menu wybierz polecenie **Nowy** **plik** > lub naciśnij **klawisze CTRL**+**N**.
+2. Z menu **Plik** na pasku menu wybierz pozycję **Nowy** > **plik**lub naciśnij klawisz **Ctrl**+**N**.
 
-3. W **nowy plik** okno dialogowe, w obszarze **ogólne** kategorii, wybierz **klasy Visual C#** , a następnie wybierz **Otwórz**.
+3. W oknie dialogowym **Nowy plik** w kategorii **Ogólne** wybierz pozycję Klasa języka **Visual C#,** a następnie wybierz pozycję **Otwórz**.
 
-   Nowy plik zostanie otwarty w edytorze za pomocą szkielet klasy C#. (Zwróć uwagę, że firma Microsoft nie ma konieczności tworzenia pełnej projekt programu Visual Studio na uzyskanie niektórych korzyści, że Edytor kodu oferuje; wszystko co potrzebne jest pliku z kodem)!
+   Nowy plik otwiera się w edytorze ze szkieletem klasy C#. (Zauważ, że nie musimy tworzyć pełnego projektu programu Visual Studio, aby uzyskać niektóre korzyści, które oferuje edytor kodu; wszystko, czego potrzebujesz, to plik kodu!)
 
-   ![Plik kodu C# w programie Visual Studio](../media/tutorial-editor.png)
+   ![Plik kodu języka C# w programie Visual Studio](../media/tutorial-editor.png)
 
 ## <a name="use-code-snippets"></a>Używanie fragmentów kodu
 
-Program Visual Studio oferuje przydatne *fragmenty kodu* , umożliwia szybkie i łatwe generowanie najczęściej używane bloki kodu. [Fragmenty kodu](../../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym C#, Visual Basic i C++. Dodajmy języka C# `void Main` fragment kodu do naszego pliku.
+Visual Studio zawiera przydatne *fragmenty kodu,* których można użyć do szybkiego i łatwego generowania często używanych bloków kodu. [Fragmenty kodu](../../ide/code-snippets.md) są dostępne dla różnych języków programowania, w tym C#, Visual Basic i C++. Dodajmy fragment kodu `void Main` języka C# do naszego pliku.
 
-1. Umieść kursor nad końcowego zamykającego nawiasu klamrowego **}** w pliku i wpisz znaki `svm` (który oznacza `static void Main` &mdash;nie martw się zbyt dużo Jeśli nie masz pewności co oznacza to, że).
+1. Umieść kursor tuż nad ostatecznym nawiasem klamrowym **}** w `svm` pliku i `static void Main` &mdash;wpisz znaki (co oznacza, nie martw się zbytnio, jeśli nie wiesz, co to oznacza).
 
-   Wyskakujące okno dialogowe pojawia się z informacjami o `svm` fragmentu kodu.
+   Zostanie wyświetlone wyskakujące `svm` okno dialogowe z informacjami o urywek kodu.
 
-   ![Funkcja IntelliSense dla fragmentu kodu w programie Visual Studio](../media/tutorial-intellisense-snippet.png)
+   ![IntelliSense dla fragmentu kodu w programie Visual Studio](../media/tutorial-intellisense-snippet.png)
 
-1. Naciśnij klawisz **kartę** dwa razy, aby wstawić fragment kodu.
+1. Naciśnij dwukrotnie **klawisz Tab,** aby wstawić fragment kodu.
 
-   Zostanie wyświetlony `static void Main()` podpis metody poproś o dodanie Cię do pliku. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metodą jest punkt wejścia dla aplikacji w języku C#.
+   Zostanie wyświetlony `static void Main()` podpis metody zostanie dodany do pliku. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) Metoda jest punktem wejścia dla aplikacji C#.
 
-Fragmenty kodu dostępne różnią się w różnych językach programowania. Aby sprawdzić dostępne fragmenty kodu dla danego języka, wybierz opcję **edytuj** > **IntelliSense** > **Wstaw** wstawkę lub naciśnij **kombinację klawiszy CTRL**+**K**, **Ctrl**+**X**, a następnie wybierz folder języka. Dla języka C# listy wygląda następująco:
+Dostępne fragmenty kodu różnią się w zależności od języka programowania. Możesz sprawdzić dostępne fragmenty kodu dla swojego języka, wybierając **pozycję Edytuj** > fragment kodu**IntelliSense** > **Insert** lub naciskając **klawisze Ctrl**+**K**, **Ctrl**+**X**, a następnie wybierając folder języka. W przypadku języka C#lista wygląda następująco:
 
-![Lista fragment kodu języka C#](../media/tutorial-code-snippet-list.png)
+![Lista fragmentów kodu języka C#](../media/tutorial-code-snippet-list.png)
 
-Lista zawiera fragmenty kodu do tworzenia [klasy](/dotnet/csharp/programming-guide/classes-and-structs/classes), [Konstruktor](/dotnet/csharp/programming-guide/classes-and-structs/constructors), [dla](/dotnet/csharp/language-reference/keywords/for) pętli, [Jeśli](/dotnet/csharp/language-reference/keywords/if-else) lub [Przełącz](/dotnet/csharp/language-reference/keywords/switch)instrukcji i nie tylko.
+Lista zawiera fragmenty do tworzenia [klasy,](/dotnet/csharp/programming-guide/classes-and-structs/classes) [konstruktora,](/dotnet/csharp/programming-guide/classes-and-structs/constructors) [for](/dotnet/csharp/language-reference/keywords/for) loop, [instrukcji if](/dotnet/csharp/language-reference/keywords/if-else) lub [switch](/dotnet/csharp/language-reference/keywords/switch) i innych.
 
-## <a name="comment-out-code"></a>Komentarz do kodu
+## <a name="comment-out-code"></a>Skomentuj kod
 
-Pasek narzędzi, który jest wiersz przycisków poniżej paska menu w programie Visual Studio, może pomóc zwiększyć produktywność kodowania. Na przykład, można przełączać tryb uzupełniania IntelliSense ([IntelliSense](../../ide/using-intellisense.md) jest pomoc kodowania, który zawiera listę metod, między innymi dopasowania), zwiększ lub Zmniejsz wcięcie wiersza lub kod, który chcesz przekształcić w komentarz skompilować. W tej sekcji firma Microsoft będzie komentarz kodu.
+Pasek narzędzi, który jest wiersz przycisków pod paskiem menu w programie Visual Studio, może pomóc zwiększyć produktywność podczas kodowania. Na przykład można przełączyć tryb ukończenia IntelliSense[(IntelliSense](../../ide/using-intellisense.md) jest pomocą kodowania, która wyświetla listę pasujących metod, między innymi), zwiększyć lub zmniejszyć wcięcie wiersza lub skomentować kod, który nie ma być skompilowany. W tej sekcji pokomentujemy kod.
 
 ![Pasek narzędzi edytora](../media/tutorial-editor-toolbar.png)
 
-1. Wklej następujący kod do `Main()` treści metody.
+1. Wklej następujący kod `Main()` do treści metody.
 
     ```csharp
     // _words is a string array that we'll sort alphabetically
@@ -116,49 +116,49 @@ Pasek narzędzi, który jest wiersz przycisków poniżej paska menu w programie 
                                 select word;
     ```
 
-1. Nie używamy `morewords` zmienną, ale firma Microsoft może używać go później tak nie chcemy całkowicie usunąć go. Zamiast tego Załóżmy komentarz te wiersze. Zaznacz całą definicję `morewords` do zamknięcia średnikami, a następnie wybierz **komentarz zaznaczonych wierszach** przycisk na pasku narzędzi. Jeśli wolisz użyć klawiatury, naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**C**.
+1. Nie używamy zmiennej, `morewords` ale możemy jej użyć później, więc nie chcemy jej całkowicie usunąć. Zamiast tego, skomentujmy te wiersze. Zaznacz całą definicję końcowego `morewords` średnika, a następnie wybierz przycisk **Zakomentuj wybrane wiersze** na pasku narzędzi. Jeśli wolisz używać klawiatury, naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**C**.
 
-   ![Komentarz przycisku](../media/tutorial-comment-out.png)
+   ![Przycisk Wyjmij komentarz](../media/tutorial-comment-out.png)
 
-   Znaki komentarza C# `//` są dodawane na początku każdego wybranego wiersza, aby przekształcić w komentarz kod.
+   Znaki `//` komentarza języka C# są dodawane na początku każdego wybranego wiersza, aby skomentować kod.
 
-## <a name="collapse-code-blocks"></a>Zwiń bloki kodu
+## <a name="collapse-code-blocks"></a>Zwijanie bloków kodu
 
-Nie chcemy wyświetlić pusty [Konstruktor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) dla `Class1` wygenerowany, więc aby uniknąć przeładowania naszych widok kodu, możemy go zwinąć. Wybierz małe pole szarego znakiem minus znajdującym się w nim na marginesie pierwszy wiersz konstruktora. Lub, jeśli jesteś użytkownikiem klawiatury, umieść kursor gdziekolwiek w Konstruktorze kod i naciśnij klawisz **Ctrl**+**M**, **Ctrl**+**M** .
+Nie chcemy, aby zobaczyć pusty `Class1` [konstruktor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) dla tego został wygenerowany, więc aby uporządkować nasz widok kodu, zwińmy go. Wybierz małe szare pole ze znakiem minus wewnątrz niego na marginesie pierwszego wiersza konstruktora. Lub, jeśli jesteś użytkownikiem klawiatury, umieść kursor w dowolnym miejscu w kodzie konstruktora i naciśnij **klawisze Ctrl**+**M**, **Ctrl**+**M**.
 
-![Przycisk Zwiń konspekt](../media/tutorial-collapse.png)
+![Przycisk zwijanie konspektów](../media/tutorial-collapse.png)
 
-Blok kodu jest ustawiana na tylko pierwszy wiersz, następuje wielokropek (`...`). Aby rozwinąć blok kodu ponownie, kliknij pole szarego tego samego, który ma teraz znakiem plus lub naciśnij klawisz **Ctrl**+**M**, **Ctrl**+**M**  ponownie. Ta funkcja jest nazywana [konspekt](../../ide/outlining.md) i jest szczególnie przydatne, gdy one zwijanie długie metod lub klas całego.
+Blok kodu zwija się tylko do pierwszego wiersza, po którym następuje wielokropek (`...`). Aby ponownie rozwinąć blok kodu, kliknij to samo szare pole, w które ma teraz znak plus, lub ponownie naciśnij **klawisze Ctrl**+**M**, **Ctrl**+**M.** Ta funkcja jest [nazywana tworzeniem przespekk i](../../ide/outlining.md) jest szczególnie przydatna podczas zwijania długich metod lub całych klas.
 
-## <a name="view-symbol-definitions"></a>Wyświetlanie definicji symbolu
+## <a name="view-symbol-definitions"></a>Wyświetlanie definicji symboli
 
-Edytor programu Visual Studio ułatwia sprawdzanie definicji typu, metody itp. Jednym ze sposobów jest przejście do pliku, który zawiera definicję, na przykład przez wybranie **Przejdź do definicji** lub naciśnięcie klawisza **F12** wszędzie tam, gdzie jest przywoływany symbol. Jeszcze szybszy sposób, który nie zmienia się od pliku pracujesz w jest użycie [Peek Definition](../../ide/go-to-and-peek-definition.md#peek-definition). Umożliwia wgląd w definicji `string` typu.
+Edytor programu Visual Studio ułatwia sprawdzanie definicji typu, metody itp. Jednym ze sposobów jest przejście do pliku zawierającego definicję, na przykład przez **wybranie opcji Przejdź do definicji** lub naciśnięcie **klawisza F12** w dowolnym miejscu, do którego odwołuje się symbol. Jeszcze szybszym sposobem, który nie odsunie fokus od pliku, w który pracujesz, jest użycie [funkcji Peek Definition](../../ide/go-to-and-peek-definition.md#peek-definition). Zajrzyjmy do definicji `string` typu.
 
-1. Kliknij prawym przyciskiem myszy na dowolne wystąpienie `string` i wybierz polecenie **Peek Definition** menu zawartości. Lub naciśnij **Alt**+**F12**.
+1. Kliknij prawym przyciskiem `string` myszy dowolne wystąpienie i wybierz z menu treści **opcję Peek Definition.** Lub naciśnij **klawisz Alt**+**F12**.
 
-   Okno wyskakujące pojawia się przy użyciu definicji elementu `String` klasy. Można przewijać w oknie podręcznym lub nawet rzut oka na definicję innego typu niż peeked kodu.
+   Pojawi się wyskakujące okno `String` z definicją klasy. Możesz przewijać w wyskakującym oknie, a nawet zajrzeć do definicji innego typu z zaglądanego kodu.
 
-   ![Okna definicji wglądu](../media/tutorial-peek-definition.png)
+   ![Okno definicji wglądu](../media/tutorial-peek-definition.png)
 
-1. Zamknij okno definicji podejrzeć, wybierając pole małych znakiem "x" w prawym górnym rogu okna podręcznego.
+1. Zamknij okno definicji zaglądanego, wybierając małe pole z literą "x" w prawym górnym rogu okna podręcznego.
 
-## <a name="use-intellisense-to-complete-words"></a>Funkcja IntelliSense są używane do realizowania słów
+## <a name="use-intellisense-to-complete-words"></a>Uzupełnianie wyrazów za pomocą funkcji IntelliSense
 
-[Funkcja IntelliSense](../../ide/using-intellisense.md) jest zasobem nieocenione, gdy masz kodowania. Jego można wyświetlić informacje o dostępne elementy członkowskie typu lub szczegóły parametrów dla innego przeciążenia metody. Funkcja IntelliSense umożliwia również Dokończ wyraz, po wpisaniu małej liczby znaków, aby odróżnić go. Dodajmy wiersza kodu, aby wydrukować zamówione ciągi w oknie konsoli, czyli miejsce standardowe dane wyjściowe programu do go.
+[IntelliSense](../../ide/using-intellisense.md) jest nieocenionym zasobem podczas kodowania. Może pokazać informacje o dostępnych elementów członkowskich typu lub szczegóły parametru dla różnych przeciążeń metody. Za pomocą programu IntelliSense można również ukończyć słowo po wpisaniu wystarczającej liczby znaków, aby je rozróżnić. Dodajmy wiersz kodu, aby wydrukować uporządkowane ciągi znaków do okna konsoli, które jest standardowym miejscem wyjścia z programu.
 
-1. Poniżej `query` zmiennej, wpisz następujący kod:
+1. Poniżej `query` zmiennej zacznij wpisywać następujący kod:
 
    ```csharp
    foreach (string str in qu
    ```
 
-   Zobacz IntelliSense dowiesz się, **Quick Info** o `query` symboli.
+   Zobaczysz, że program IntelliSense `query` wyświetla szybkie **informacje** o symbolu.
 
-   ![Uzupełnianie wyrazów w technologii IntelliSense w programie Visual Studio](../media/tutorial-intellisense-completion-list.png)
+   ![Zakończenie wyrazów IntelliSense w programie Visual Studio](../media/tutorial-intellisense-completion-list.png)
 
-1. Aby wstawić pozostałe słowa `query` za pomocą funkcji uzupełniania programu word w technologii IntelliSense, naciśnij klawisz **kartę**.
+1. Aby wstawić resztę `query` wyrazu przy użyciu funkcji uzupełniania wyrazów IntelliSense, naciśnij klawisz **Tab**.
 
-1. Zakończ poza blok kodu, aby wyglądała jak poniższy kod. Można nawet rozwiązaniem, ponownie użyć wstawki kodu programu, wprowadzając `cw` , a następnie naciskając klawisze **kartę** dwa razy, aby wygenerować `Console.WriteLine` kodu.
+1. Zakończ blok kodu, aby wyglądać jak następujący kod. Można nawet ćwiczyć przy użyciu fragmentów kodu `cw` ponownie, wprowadzając, a `Console.WriteLine` następnie naciskając **tab** dwa razy, aby wygenerować kod.
 
    ```csharp
    foreach (string str in query)
@@ -167,32 +167,32 @@ Edytor programu Visual Studio ułatwia sprawdzanie definicji typu, metody itp. J
    }
    ```
 
-## <a name="refactor-a-name"></a>Refaktoryzuj nazwę
+## <a name="refactor-a-name"></a>Refaktoryzator nazwy
 
-Nikt nie pobiera kod bezpośrednio po raz pierwszy, a jedną z rzeczy, które trzeba zmienić to nazwa zmiennej lub metody. Spróbujmy programu Visual Studio [zrefaktoryzuj](../../ide/refactoring-in-visual-studio.md) funkcji, aby zmienić nazwę `_words` zmienną `words`.
+Nikt nie pobiera kodu prawo za pierwszym razem, a jedną z rzeczy, które mogą być trzeba zmienić jest nazwa zmiennej lub metody. Wypróbujmy funkcję [refaktoryzowania](../../ide/refactoring-in-visual-studio.md) programu Visual Studio, `_words` aby `words`zmienić nazwę zmiennej na .
 
-1. Umieść kursor nad definicji `_words` zmienną i wybierz polecenie **Zmień nazwę** z kliknij prawym przyciskiem myszy lub menu kontekstowego lub naciśnij **Ctrl**+**R**, **Ctrl**+**R**.
+1. Umieść kursor nad definicją `_words` zmiennej i wybierz polecenie Zmień nazwę z menu kontekstowego lub naciśnij **klawisze** **Ctrl**+**R**, **Ctrl**+**R**.
 
-   Okno podręczne **Zmień nazwę** okno dialogowe pojawia się u góry bezpośrednio z edytora.
+   W prawym górnym rogu edytora pojawi się wyskakujące okno dialogowe **Zmień nazwę.**
 
-1. Wprowadź żądaną nazwę **wyrazy**. Należy zauważyć, że odwołanie do `words` również automatycznie została zmieniona w zapytaniu. Przed naciśnięciem **Enter**, wybierz opcję **dodawać komentarze** pola wyboru w **Zmień nazwę** okno podręczne.
+1. Wprowadź żądane **wyrazy**nazwy . Należy zauważyć, `words` że odwołanie do kwerendy jest również automatycznie zmieniana. Przed naciśnięciem **klawisza Enter**zaznacz pole wyboru **Dołącz komentarze** w polu podręcznym **Zmień nazwę.**
 
    ![Zmień nazwę — Okno dialogowe](../media/tutorial-rename.png)
 
-1. Naciśnij klawisz **wprowadź**.
+1. Naciśnij **klawisz Enter**.
 
-   Oba wystąpienia `words` została zmieniona, a także odwołania do `words` w komentarzu do kodu.
+   Oba wystąpienia `words` zostały zmienione, a także odwołanie `words` do w komentarzu kodu.
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Dowiedz się więcej o projekty i rozwiązania](../tutorial-projects-solutions.md)
+> [Dowiedz się więcej o projektach i rozwiązaniach](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../../ide/code-snippets.md)
-- [Przechodzenie do kodu](../../ide/navigating-code.md)
-- [Obramowanie](../../ide/outlining.md)
-- [Polecenia Przejdź do definicji i Zobacz definicję](../../ide/go-to-and-peek-definition.md)
+- [Nawigowanie po kodzie](../../ide/navigating-code.md)
+- [Tworzenie konspektu](../../ide/outlining.md)
+- [Przejdź do definicji i Zobacz definicję](../../ide/go-to-and-peek-definition.md)
 - [Refaktoryzacja](../../ide/refactoring-in-visual-studio.md)
 - [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

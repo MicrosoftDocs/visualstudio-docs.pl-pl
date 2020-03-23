@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569208"
 ---
 # <a name="go-to-command"></a>Przejdź do — Polecenie
@@ -31,14 +31,14 @@ Edit.GoTo [linenumber]
 
 ## <a name="arguments"></a>Argumenty
 `linenumber`\
-Opcjonalny. Liczba całkowita reprezentująca liczbę wierszy, które mają zostać przechodzenie.
+Element opcjonalny. Liczba całkowita reprezentująca numer wiersza, do który ma się udać.
 
 ## <a name="remarks"></a>Uwagi
-Numerowanie wierszy rozpoczyna się od jednej. Jeśli wartość `linenumber` jest mniejsza od 1, zostanie wyświetlona pierwsza linia. Jeśli wartość `linenumber` jest większa niż liczba ostatniego wiersza, zostanie wyświetlony ostatni wiersz.
+Numerowanie wierszy rozpoczyna się od jednego. Jeśli wartość `linenumber` jest mniejsza niż jedna, zostanie wyświetlona pierwsza linia. Jeśli wartość `linenumber` jest większa niż liczba ostatniego wiersza, zostanie wyświetlona ostatnia linia.
 
-Jeśli nie określono wartości dla `linenumber`, zostanie wyświetlone okno dialogowe **Przejdź do wiersza** .
+Jeśli wartość `linenumber` dla nie jest określona, zostanie wyświetlone okno dialogowe **Przejdź do wiersza.**
 
-Alias dla tego polecenia to GoToLn.
+Alias tego polecenia to GoToLn.
 
 ## <a name="example"></a>Przykład
 
@@ -46,9 +46,9 @@ Alias dla tego polecenia to GoToLn.
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

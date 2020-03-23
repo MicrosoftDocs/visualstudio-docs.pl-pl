@@ -9,36 +9,36 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71d570e6dc7544911ebe2bb279aafb3a07620cbc
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589412"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Instrukcje: eksportowanie tekstury zawierającej mipmapy
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Jak: Eksportowanie tekstury zawierającej mipmaps
 
-Potok zawartości obrazu może generować mipmapy z obrazu źródłowego jako część fazy kompilacji projektu. Aby osiągnąć pewne skutki, czasami trzeba ręcznie określić zawartość obrazu dla każdego poziomu MCI. Gdy nie musisz określać ręcznie zawartości obrazu dla każdego poziomu MIP, generowanie mipmapy w czasie kompilacji zapewnia, że zawartość mipmappingu nigdy nie będzie zsynchronizowana. Eliminuje także koszt wydajności generowania mipmapy w czasie wykonywania.
+Potok zawartości obrazu można wygenerować mipmaps z obrazu źródłowego w ramach fazy kompilacji projektu. Aby osiągnąć pewne efekty, czasami trzeba ręcznie określić zawartość obrazu każdego poziomu MIP. Jeśli nie trzeba ręcznie określić zawartość obrazu każdego poziomu MIP, generowanie mipmaps w czasie kompilacji zapewnia, że zawartość mipmap nigdy nie stają się niezsynchronizowane. Eliminuje również koszt wydajności generowania mipmaps w czasie wykonywania.
 
-W tym artykule omówiono:
+Ten artykuł obejmuje:
 
-- Konfigurowanie obrazu źródłowego, który ma być przetwarzany przez potok zawartości obrazu.
+- Konfigurowanie obrazu źródłowego do przetworzenia przez potok zawartości obrazu.
 
-- Konfigurowanie potoku zawartości obrazu w celu wygenerowania mipmapy.
+- Konfigurowanie potoku zawartości obrazu do generowania mipmaps.
 
-## <a name="export-mipmaps"></a>Eksportuj mipmapy
+## <a name="export-mipmaps"></a>Eksportowanie mipmaps
 
-Mipmapping zapewnia Automatyczny poziom szczegółowości ekranu dla powierzchni teksturowanych w grze 3D lub aplikacji. Zwiększa to wydajność renderowania gry lub aplikacji przez wstępne obliczenie wersji tekstury z próbką w dół. Wstępne obliczanie wersji z próbką w dół oznacza, że cała tekstura nie musi być próbkowana w dół przy każdej próbie.
+Mipmapping zapewnia automatyczne poziom szczegółowości ekranu dla teksturowanych powierzchni w grze lub aplikacji 3D. Zwiększa wydajność renderowania gry lub aplikacji przez wstępne obliczanie wersji tekstury z próbką w dół. Wstępne obliczanie wersji próbkowanych w dół oznacza, że cała tekstura nie musi być próbkowana w dół za każdym razem, gdy jest próbkowana.
 
-### <a name="to-export-a-texture-that-has-mipmaps"></a>Aby wyeksportować teksturę, która ma mipmapy
+### <a name="to-export-a-texture-that-has-mipmaps"></a>Aby wyeksportować teksturę z mipmaps
 
-1. Zacznij od tekstury podstawowej. Załaduj istniejący plik obrazu lub utwórz go zgodnie z opisem w temacie [How to: Create a Basic Texture](../designers/how-to-create-a-basic-texture.md). Aby obsłużyć mipmapy, należy określić teksturę, która ma szerokość i wysokość, które są takie same jak te same wartości, na przykład 64x64, 256x256 lub 512 x 512.
+1. Zacznij od podstawowej tekstury. Załaduj istniejący plik obrazu lub utwórz go w sposób opisany w [aplikacji Jak: Tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Aby obsługiwać mipmaps, należy określić teksturę, która ma szerokość i wysokość, które mają taką samą moc dwóch rozmiarów, na przykład 64x64, 256x256 lub 512x512.
 
-2. Skonfiguruj utworzony plik tekstury w taki sposób, aby był przetwarzany przez potok zawartości obrazu. W **Eksplorator rozwiązań**Otwórz menu skrótów dla utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości**. Na stronie **Ogólne** **Właściwości** > ustaw właściwość **Typ elementu** na **potok zawartości obrazu**. Upewnij się, że właściwość **Content** jest ustawiona na **wartość Yes (tak** ), a wartość **exclude z kompilacji** to **no**. Wybierz przycisk **Zastosuj**.
+2. Skonfiguruj utworzony właśnie plik tekstury, tak aby był przetwarzany przez potok zawartości obrazu. W **Eksploratorze rozwiązań**otwórz menu skrótów dla utworzonego pliku tekstury, a następnie wybierz polecenie **Właściwości**. Na stronie **Właściwości konfiguracji** > **ogólne** ustaw właściwość Typ **elementu** na Potok **zawartości obrazu**. Upewnij się, że właściwość **Content** jest ustawiona na **Tak,** a **opcja Wyklucz z kompilacji** jest ustawiona na **Nie**. Wybierz przycisk **Zastosuj**.
 
-   Zostanie wyświetlona strona właściwości konfiguracja **potoku zawartości obrazu** .
+   Zostanie wyświetlona strona właściwości właściwości konfiguracji **potoku zawartości** obrazu.
 
-3. Skonfiguruj potok zawartości obrazu w celu wygenerowania mipmapy. Na stronie **Właściwości konfiguracji** > **potoku zawartości obrazu** > **Ogólne** ustaw właściwość **Generuj** wartość **Yes (/generatemips)** .
+3. Skonfiguruj potok zawartości obrazu do generowania mipmaps. Na stronie**Ogólne** **potoku zawartości** > obrazu **właściwości konfiguracji** > ustaw właściwość **Generowanie mips** na **Tak (/generatemips).**
 
-4. Wybierz **OK**.
+4. Kliknij przycisk **OK**.
 
-Podczas kompilowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, włącznie z poziomami MIP. Wynik jest kopiowany do katalogu wyjściowego projektu.
+Podczas tworzenia projektu potok zawartości obrazu konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który został określony, w tym poziomów MIP. Wynik jest kopiowany do katalogu wyjściowego projektu.

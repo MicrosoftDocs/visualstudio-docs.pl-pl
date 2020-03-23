@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593866"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Przywraca ustawienia domyślne programu Visual Studio i automatycznie uruchamia środowisko IDE programu Visual Studio. Ten przełącznik opcjonalnie resetuje ustawienia do określonego pliku ustawień.
+Przywraca domyślne ustawienia programu Visual Studio i automatycznie uruchamia ide programu Visual Studio. Ten przełącznik opcjonalnie resetuje ustawienia do określonego pliku ustawień.
 
 Ustawienia domyślne pochodzą z profilu, który został wybrany podczas pierwszego uruchomienia programu Visual Studio.
 
@@ -39,31 +39,31 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  Opcjonalny. Pełna ścieżka i nazwa pliku ustawień, który ma zostać zastosowany do programu Visual Studio.
+  Element opcjonalny. Pełna ścieżka i nazwa pliku ustawień do zastosowania do programu Visual Studio.
 
-- *DefaultCollectionSpecifier*
+- *DefaultCollectionSpecifier (Domyślny specjalista ds.*
 
-  Opcjonalny. Specyfikator reprezentujący domyślną kolekcję ustawień do przywrócenia. Wybierz jeden z domyślnych specyfikatorów kolekcji wymienionych w tabeli.
+  Element opcjonalny. Specyfikator reprezentujący domyślną kolekcję ustawień do przywrócenia. Wybierz jeden z domyślnych specyfikatorów kolekcji wymienionych w tabeli.
 
   | Domyślna nazwa kolekcji | Specyfikator kolekcji |
   | --- | --- |
   | **Ogólne** | `General` |
-  | **JavaScript** | `JavaScript` |
+  | **Javascript** | `JavaScript` |
   | **Visual Basic** | `VB` |
-  | **Visual C#** | `CSharp` |
+  | **Wizualizacja C #** | `CSharp` |
   | **Visual C++** | `VC` |
-  | **Programowanie dla sieci Web** | `Web` |
-  | **Programowanie dla sieci Web (tylko kod)** | `WebCode` |
+  | **Tworzenie stron internetowych** | `Web` |
+  | **Tworzenie stron internetowych (tylko kod)** | `WebCode` |
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli *SettingsFile* nie zostanie określony, IDE zostanie otwarty przy użyciu istniejących ustawień.
+Jeśli nie *ustawienia pliku* jest określony, IDE otwiera się przy użyciu istniejących ustawień.
 
 ## <a name="example"></a>Przykład
 
-Pierwszy przykład stosuje ustawienia przechowywane w pliku `MySettings.vssettings`.
+W pierwszym przykładzie stosuje się `MySettings.vssettings`ustawienia zapisane w pliku .
 
-Drugi przykład przywraca domyślny profil wizualizacji C# .
+Drugi przykład przywraca domyślny profil języka Visual C#.
 
 ```shell
 devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
@@ -71,8 +71,8 @@ devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
 devenv /resetsettings CSharp
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ustawienia środowiska](../environment-settings.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

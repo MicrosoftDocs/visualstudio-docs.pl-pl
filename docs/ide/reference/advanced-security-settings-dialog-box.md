@@ -14,30 +14,30 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 033c8d9c97d54b972a7bf30e9e1e04171e5b505e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595842"
 ---
-# <a name="advanced-security-settings-dialog-box"></a>Okno dialogowe Zaawansowane ustawienia zabezpieczeń
+# <a name="advanced-security-settings-dialog-box"></a>Zaawansowane ustawienia zabezpieczeń — Okno dialogowe
 
 To okno dialogowe umożliwia określenie ustawień zabezpieczeń związanych z debugowaniem w strefie.
 
-![Zaawansowane ustawienia zabezpieczeń — okno dialogowe w programie Visual Studio](../media/advanced-security-settings.png)
+![Okno dialogowe Zaawansowane ustawienia zabezpieczeń w programie Visual Studio](../media/advanced-security-settings.png)
 
-Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy zostanie wyświetlony **Projektant projektu** , kliknij kartę **zabezpieczenia** . Na stronie **zabezpieczenia** wybierz opcję **Włącz ustawienia zabezpieczeń ClickOnce**, kliknij **to jest aplikacja częściowej relacji zaufania**, a następnie kliknij przycisk **Zaawansowane**.
+Aby uzyskać dostęp do tego okna dialogowego, wybierz węzeł projektu w **Eksploratorze rozwiązań,** a następnie w menu **Projekt** kliknij polecenie **Właściwości**. Po wyświetleniu **projektanta projektu** kliknij kartę **Zabezpieczenia.** Na stronie **Zabezpieczenia** wybierz pozycję **Włącz pozycję Kliknij pozycję Ustawienia zabezpieczeń,** kliknij pozycję To jest aplikacja **częściowego zaufania**, a następnie kliknij pozycję **Zaawansowane**.
 
-## <a name="uielement-list"></a>Lista elementów UIElement
+## <a name="uielement-list"></a>Lista UIElement
 
-**Przyznaj aplikacji dostęp do jej lokalizacji pochodzenia**
+**Udzielenie aplikacji dostępu do miejsca pochodzenia**
 
-Jeśli zaznaczysz to pole wyboru, aplikacja będzie mogła uzyskać dostęp do witryny sieci Web lub udziału serwera, na którym została opublikowana. Ta opcja jest wybrana domyślnie.
+Jeśli zaznaczysz to pole wyboru, aplikacja może uzyskać dostęp do witryny sieci Web lub udziału serwera, na którym jest publikowana. Ta opcja jest wybrana domyślnie.
 
-**Debuguj tę aplikację tak, jakby była pobrana z następującego adresu URL**
+**Debugowanie tej aplikacji tak, jakby została pobrana z następującego adresu URL**
 
-Jeśli musisz zezwolić aplikacji na dostęp do witryny sieci Web lub udziału serwera odpowiadającego **adresowi URL instalacji** określonym na stronie **publikowania** , wprowadź tutaj ten adres URL. Ta opcja jest dostępna tylko w przypadku wybrania opcji **Udziel dostępu aplikacji do jej lokalizacji pochodzenia** .
+Jeśli musisz zezwolić aplikacji na dostęp do udziału w witrynie sieci Web lub serwera odpowiadającego **adresowi URL instalacji** określonemu na stronie **Publikowanie,** wprowadź ten adres URL tutaj. Ta opcja jest dostępna tylko wtedy, gdy **wybrano opcję Przyznanie aplikacji dostępu do jej witryny pochodzenia.**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Strona zabezpieczeń, Projektant projektu](../../ide/reference/security-page-project-designer.md)

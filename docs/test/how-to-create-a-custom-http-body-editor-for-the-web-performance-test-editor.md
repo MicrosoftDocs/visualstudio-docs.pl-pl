@@ -1,5 +1,5 @@
 ---
-title: Utwórz niestandardowy Edytor treści HTTP dla Edytor internetowego testu wydajnościowego
+title: Tworzenie niestandardowego edytora treści HTTP dla Edytora testów wydajności sieci Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,60 +9,60 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589204"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Porady: tworzenie HTTP niestandardowego edytora treści do edytora testów wydajności sieci Web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Jak: Tworzenie niestandardowego edytora treści HTTP dla Edytora testów wydajności sieci Web
 
-Można tworzyć Edytor treści niestandardowych, który umożliwia edytowanie treść ciągu lub dane binarne ciała treści żądania usługi sieci web, na przykład SOAP, REST, asmx, wcf, RIA i inne typy żądań usług sieci web.
+Można utworzyć niestandardowy edytor zawartości, który umożliwia edycję zawartości treści ciągu lub zawartości treści binarnej żądania usługi sieci web, na przykład SOAP, REST, asmx, wcf, RIA i innych typów żądań usługi sieci web.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Można zaimplementować te rodzaje edytorów:
+Można zaimplementować następujące rodzaje edytorów:
 
-- **Edytor zawartości ciągu** ten sposób jest implementowany przy użyciu <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> interfejsu.
+- **Edytor zawartości ciągów** Jest to realizowane <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> przy użyciu interfejsu.
 
-- **Edytor zawartości binarnej** ten sposób jest implementowany przy użyciu <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> interfejsu.
+- **Edytor treści binarnych** Jest to realizowane <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> przy użyciu interfejsu.
 
-Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> przestrzeni nazw.
+Te interfejsy są zawarte <xref:Microsoft.VisualStudio.TestTools.WebTesting> w obszarze nazw.
 
-## <a name="create-a-windows-control-library-project"></a>Utwórz projekt Biblioteka formantów Windows
+## <a name="create-a-windows-control-library-project"></a>Tworzenie projektu biblioteki sterowania systemem Windows
 
-1. W programie Visual Studio Utwórz nowy projekt **biblioteki formantów Windows Forms** . Nazwij projekt **MessageEditors**.
+1. W programie Visual Studio utwórz nowy projekt **biblioteki kontroli formularzy systemu Windows.** Nazwij projekt **MessageEditors**.
 
-   Projekt jest dodawany do nowego rozwiązania i <xref:System.Windows.Forms.UserControl> o nazwie *UserControl1.cs* jest przedstawiany w projektancie.
+   Projekt zostanie dodany do nowego <xref:System.Windows.Forms.UserControl> rozwiązania i nazwany *UserControl1.cs* jest przedstawiony w Projektancie.
 
-1. Z **przybornika**w obszarze **wspólnych formantów** przeciągnij <xref:System.Windows.Forms.RichTextBox> na powierzchnię obiektu UserControl1.
+1. Z **przybornika**, w kategorii Typowe <xref:System.Windows.Forms.RichTextBox> **formanty,** przeciągnij na powierzchni UserControl1.
 
-1. Wybierz symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> sterowania, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
+1. Wybierz glif znacznika![akcji (Smart](../test/media/vs_winformsmttagglyph.gif)Tag Glyph) w <xref:System.Windows.Forms.RichTextBox> prawym górnym rogu formantu, a następnie wybierz i **Dokuj w kontenerze nadrzędnym**.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Biblioteka formularzy Windows i wybierz **właściwości**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy projekt Biblioteki formularzy systemu Windows i wybierz polecenie **Właściwości**.
 
-1. W **właściwości**, wybierz opcję **aplikacji** kartę.
+1. W oknie **Właściwości**wybierz kartę **Aplikacja.**
 
-1. Z listy rozwijanej **platforma docelowa** wybierz pozycję .NET Framework 4 (lub nowszy).
+1. Na liście rozwijanej **Struktura docelowa** wybierz .NET Framework 4 (lub nowsze).
 
-1. **Zmiana platformy docelowej** zostanie wyświetlone okno dialogowe.
+1. Zostanie wyświetlone okno dialogowe **Zmiana struktury docelowej.**
 
-1. Wybierz **tak**.
+1. Wybierz **pozycję Tak**.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł **Odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
-1. **Dodaj odwołanie** zostanie wyświetlone okno dialogowe.
+1. Zostanie wyświetlone okno dialogowe **Dodawanie odwołania.**
 
-1. Wybierz opcję. **NET** karty, przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** , a następnie wybierz **OK**.
+1. Wybierz opcję . **NET,** przewiń w dół i wybierz pozycję **Microsoft.VisualStudio.QualityTools.WebTestFramework,** a następnie wybierz przycisk **OK**.
 
-1. Jeśli **Projektant widoków** nie jest wciąż otwarty w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **UserControl1.cs** , a następnie wybierz **Projektant widoków**.
+1. Jeśli **projektant widoku** nie jest nadal otwarty, w **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy **UserControl1.cs** a następnie wybierz polecenie **Wyświetl projektanta**.
 
-1. Na powierzchni projektowej kliknij prawym przyciskiem myszy i wybierz **Wyświetl kod**.
+1. Na powierzchni projektowej kliknij prawym przyciskiem myszy i wybierz polecenie **Wyświetl kod**.
 
-1. (Opcjonalnie) Zmień nazwę klasy i konstruktora z UserControl1 na nazwę opisową, na przykład MessageEditorControl:
+1. (Opcjonalnie) Zmień nazwę klasy i konstruktora z UserControl1 na znaczącą nazwę, na przykład MessageEditorControl:
 
     > [!NOTE]
-    > W przykładzie zastosowano MessageEditorControl.
+    > W przykładzie użyto MessageEditorControl.
 
     ```csharp
     namespace MessageEditors
@@ -77,7 +77,7 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
     }
     ```
 
-1. Dodaj następujące właściwości, aby umożliwić uzyskanie i ustawienie tekstu w RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Interfejsu będzie używać EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> będzie używać EditByteArray:
+1. Dodaj następujące właściwości, aby umożliwić uzyskiwanie i ustawianie tekstu w richtextbox1. Interfejs <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> będzie używać EditString <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> i będzie używać EditByteArray:
 
     ```csharp
     public String EditString
@@ -105,43 +105,43 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
     }
     ```
 
-## <a name="add-a-class-to-the-windows-control-library-project"></a>Dodaj klasę do projektu Biblioteka formantów Windows
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Dodawanie klasy do projektu Biblioteki sterowania systemu Windows
 
-Dodaj klasę do projektu. Będzie służyć do implementowania <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> i <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> interfejsów.
+Dodaj klasę do projektu. Będzie on używany do <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> implementacji i interfejsów.
 
-**Przegląd kodu w tej procedurze**
+**Omówienie kodu w tej procedurze**
 
-MessageEditorControl <xref:System.Windows.Forms.UserControl> utworzony w poprzedniej procedurze zostanie uruchomiony jako messageEditorControl:
+MessageEditorControl, <xref:System.Windows.Forms.UserControl> który został utworzony w poprzedniej procedurze jest tworzone jako messageEditorControl:
 
 ```csharp
 private MessageEditorControl messageEditorControl
 ```
 
-Wystąpienie messageEditorControl znajduje się w oknie dialogowym wtyczki, utworzony przez <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> metody. Ponadto messageEditorControl <xref:System.Windows.Forms.RichTextBox> jest wypełniana przy użyciu zawartości <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Jednak tworzenie wtyczki nie może wystąpić, chyba że <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> zwraca `true`. W przypadku tego edytora <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> zwraca `true` Jeśli <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> zawiera element "xml".
+Wystąpienie messageEditorControl jest hostowane w oknie dialogowym <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> dodatku plug-in, które jest tworzone przez metodę. Ponadto messageEditorControl jest wypełniona <xref:System.Windows.Forms.RichTextBox> zawartością w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Jednak tworzenie wtyczki nie może wystąpić, chyba że <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> zwraca `true`. W przypadku tego edytora zwraca, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> `true` jeśli <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> w zawiera "xml".
 
-Po zakończeniu edycji ciągu i użytkownik klika polecenie **OK** w oknie dialogowym wtyczki, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> jest wywoływana w celu uzyskania edytowanego tekstu jako ciągu i aktualizacji **ciąg tekstowy** w żądaniu w sieci Web Edytorze wydajności testów.
+Po zakończeniu edycji treści ciągu i kliknięciu **przycisku OK** w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> oknie dialogowym dodatku plug-in, jest wywoływana, aby uzyskać edytowany tekst jako ciąg i zaktualizować **treść ciągu** w żądaniu w Edytorze wydajności testów sieci Web.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Tworzenie klasy i implementowanie interfejsu IStringHttpBodyEditorPlugin
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Biblioteka kontrolek formularzy Windows i wybierz **Dodaj nowy element**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy projekt Biblioteki sterowania formularzami systemu Windows i wybierz polecenie **Dodaj nowy element**.
 
-   **Dodaj nowy element** zostanie wyświetlone okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **Dodaj nowy element**.
 
-2. Wybierz **klasy**.
+2. Wybierz **klasę**.
 
-3. W **nazwa** tekstu wpisz opisową nazwę dla tej klasy, na przykład `MessageEditorPlugins`.
+3. W polu tekstowym **Nazwa** wpisz na przykład opisową `MessageEditorPlugins`nazwę klasy .
 
-4. Wybierz **Dodaj**.
+4. Wybierz **pozycję Dodaj**.
 
-   Moduł Class1 jest dodawany do projektu i przedstawiony w edytorze kodu.
+   Klasa1 jest dodawany do projektu i prezentowane w Edytorze kodu.
 
-5. W edytorze kodu Dodaj następującą instrukcję `using`:
+5. W edytorze kodu dodaj `using` następującą instrukcję:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-6. Wklej następujący kod w celu zaimplementowania interfejsu:
+6. Wklej w następującym kodzie, aby zaimplementować interfejs:
 
     ```csharp
     /// <summary>
@@ -190,27 +190,27 @@ Po zakończeniu edycji ciągu i użytkownik klika polecenie **OK** w oknie dialo
     }
     ```
 
-## <a name="add-a-ibinaryhttpbodyeditorplugin-to-the-class"></a>Dodaj IBinaryHttpBodyEditorPlugin do klasy
+## <a name="add-a-ibinaryhttpbodyeditorplugin-to-the-class"></a>Dodawanie do klasy elementu IBinaryHttpBodyEditorPlugin
 
-Implementowanie <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> interfejsu.
+Zaimplementuj interfejs <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
-**Przegląd kodu w tej procedurze**
+**Omówienie kodu w tej procedurze**
 
-Implementacja kodu dla <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> interfejs jest podobny do <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> opisane w poprzedniej procedurze. Jednak binarna wersja wykorzystuje tablicę bajtów do obsługi danych binarnych zamiast ciągu.
+Implementacja kodu <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> dla interfejsu jest <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> podobna do opisanej w poprzedniej procedurze. Jednak wersja binarna używa tablicy bajtów do obsługi danych binarnych zamiast ciągu.
 
-MessageEditorControl <xref:System.Windows.Forms.UserControl> utworzone w pierwszej procedurze zostanie uruchomiony jako messageEditorControl:
+MessageEditorControl <xref:System.Windows.Forms.UserControl> utworzony w pierwszej procedurze jest tworzona jako messageEditorControl:
 
 ```csharp
 private MessageEditorControl messageEditorControl
 ```
 
-Wystąpienie messageEditorControl znajduje się w oknie dialogowym wtyczki, utworzony przez <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.CreateEditor*> metody. Ponadto messageEditorControl <xref:System.Windows.Forms.RichTextBox> jest wypełniana przy użyciu zawartości <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Jednak tworzenie wtyczki nie może wystąpić, chyba że <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> zwraca `true`. W przypadku tego edytora <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> zwraca `true` Jeśli <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> zawiera "wartość msbin1".
+Wystąpienie messageEditorControl jest hostowane w oknie dialogowym <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.CreateEditor*> dodatku plug-in, które jest tworzone przez metodę. Ponadto messageEditorControl jest wypełniona <xref:System.Windows.Forms.RichTextBox> zawartością w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Jednak tworzenie wtyczki nie może wystąpić, chyba że <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> zwraca `true`. W przypadku tego edytora zwraca, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.SupportsContentType*> <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> `true` jeśli <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> w zawiera "msbin1".
 
-Po zakończeniu edycji ciągu i użytkownik klika polecenie **OK** w oknie dialogowym wtyczki, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*> jest wywoływana w celu uzyskania edytowanego tekstu jako ciągu i aktualizacji **BinaryHttpBody.Data** w żądaniu w sieci Web edytorze wydajności testów.
+Po zakończeniu edycji treści ciągu i kliknięciu przycisku **OK** w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin.GetNewValue*> oknie dialogowym wtyczki, jest wywoływana, aby uzyskać edytowany tekst jako ciąg i zaktualizować **BinaryHttpBody.Data** w żądaniu w Edytorze wydajności testów sieci Web.
 
-### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>Aby dodać IBinaryHttpBodyEditorPlugin do klasy
+### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>Aby dodać iBinaryHttpBodyEditorPlugin do klasy
 
-- Zapisz lub skopiuj poniższy kod w klasie XmlMessageEditor dodany w poprzedniej procedurze, aby utworzyć wystąpienie klasy Msbin1MessageEditor z <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> interfejs i wdrożyć wymagane metody:
+- Napisz lub skopiuj następujący kod w ramach klasy XmlMessageEditor dodanej w poprzedniej procedurze <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> w celu wystąpienia klasy Msbin1MessageEditor z interfejsu i zaimplementowania wymaganych metod:
 
     ```csharp
     /// <summary>
@@ -262,52 +262,52 @@ Po zakończeniu edycji ciągu i użytkownik klika polecenie **OK** w oknie dialo
         }
     ```
 
-## <a name="build-and-deploy-the-plug-ins"></a>Tworzenie i wdrażanie dodatków plug-in
+## <a name="build-and-deploy-the-plug-ins"></a>Tworzenie i wdrażanie wtyczek
 
-1. Na **kompilacji** menu, wybierz **kompilacji \<Nazwa projektu biblioteki formantów Windows >** .
+1. W menu **Kompilacja** wybierz polecenie **Tworzenie \<nazwy projektu Biblioteki sterowania formularzami systemu Windows>**.
 
 2. Zamknij wszystkie wystąpienia programu Visual Studio.
 
    > [!NOTE]
-   > Zamykanie programu Visual Studio zapewniają, że *.dll* plik nie jest zablokowany, przed podjęciem próby skopiowania go.
+   > Zamknięcie programu Visual Studio upewnia się, że plik *dll* nie jest zablokowany przed próbą jego skopiowania.
 
-3. Skopiuj otrzymany plik *dll* z folderu *bin\Debug* projektu (na przykład *MessageEditors. dll*) do *%ProgramFiles%\Microsoft Visual Studio\2017\\\<Edition > \Common7\IDE\PrivateAssemblies\WebTestPlugins*.
+3. Skopiuj wynikowy plik *dll* z folderu *bin\debugowania* projektu (na przykład *MessageEditors.dll*) do *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4. Otwórz program Visual Studio.
 
-   *.Dll* jest obecnie zarejestrowany za pomocą programu Visual Studio.
+   Biblioteka *.dll* jest teraz zarejestrowana w programie Visual Studio.
 
-## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Sprawdź wtyczki za pomocą testu wydajności sieci Web
+## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>Weryfikowanie wtyczek za pomocą testu wydajności sieci Web
 
-1. Utwórz projekt testu.
+1. Tworzenie projektu testowego.
 
-2. Utwórz test wydajności sieci web i wprowadź adres URL usługi sieci web w przeglądarce.
+2. Utwórz test wydajności sieci Web i wprowadź adres URL w przeglądarce do usługi sieci web.
 
-3. Po zakończeniu rejestrowania w sieci Web edytorze testów wydajności, rozwiń żądania usługi sieci web i wybierz opcję **ciąg tekstowy** lub **dane binarne ciała**.
+3. Po zakończeniu nagrywania w Edytorze testów wydajności sieci Web rozwiń żądanie dla usługi sieci web i wybierz **treść ciągu** lub **obiekt binarny**.
 
-4. W oknie **Właściwości** wybierz opcję treść ciągu lub binarny, a następnie wybierz wielokropek **(...)** .
+4. W oknie **Właściwości** wybierz obiekt ciągów lub obiekt binarny i wybierz wielokropek **(...)**.
 
-   **Edytowanie danych treści HTTP** zostanie wyświetlone okno dialogowe.
+   Zostanie wyświetlone okno dialogowe **Edytowanie danych treści HTTP.**
 
-5. Możesz teraz edytować dane i wybrać **OK**. Wywołuje to metodę GetNewValue w celu aktualizacji zawartości w <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5. Teraz możesz edytować dane i wybrać **przycisk OK**. Wywołuje to odpowiednią metodę GetNewValue, aby <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>zaktualizować zawartość w pliku .
 
-## <a name="compile-the-code"></a>Skompilować kod
+## <a name="compile-the-code"></a>Skompiluj kod
 
-Sprawdź, czy framework docelowa dla projektu Biblioteka formantów Windows .NET Framework 4.5. Domyślnie projekty biblioteki formantów Windows docelowa Architektura klienta programu .NET Framework 4.5, której nie pozwoli na włączenie odniesienia Microsoft.VisualStudio.QualityTools.WebTestFramework.
+Sprawdź, czy docelową strukturą dla projektu biblioteki sterowania systemu Windows jest .NET Framework 4.5. Domyślnie projekty biblioteki sterowania systemu Windows są przeznaczone dla platformy klienta programu .NET Framework 4.5, która nie zezwala na dołączanie odwołania microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-Aby uzyskać więcej informacji, zobacz [strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).
+Aby uzyskać więcej informacji, zobacz [stronę aplikacji, projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
-- [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Porady: tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md)
-- [Kod niestandardowej reguły wyodrębniania dla testów wydajności sieci web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Kod niestandardowej reguły walidacji dla testów wydajności sieci web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
-- [Generowanie i uruchom kodowany internetowy test wydajnościowy](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Porady: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)
+- [Jak: Tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md)
+- [Kodowania niestandardowej reguły wyodrębniania dla testu wydajności sieci Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Kodowania niestandardowej reguły sprawdzania poprawności dla testu wydajności sieci Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Jak: Tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)
+- [Generowanie i uruchamianie kodowanego testu wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md)
+- [Jak: Tworzenie dodatku programu Visual Studio dla Podglądu wyników testów wydajności sieci Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

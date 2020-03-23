@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585655"
 ---
 # <a name="watch-command"></a>Czujka — Polecenie
-Tworzy i otwiera określone wystąpienie **Obejrzyj** okna. Można użyć okna **czujki** do obliczenia wartości zmiennych, wyrażeń i rejestrów, aby edytować te wartości i zapisać wyniki.
+Tworzy i otwiera określone wystąpienie okna **czujki.** Za pomocą okna **Czujka** można obliczyć wartości zmiennych, wyrażeń i rejestrów, edytować te wartości i zapisywać wyniki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,11 +32,11 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Argumenty
 
 `index`\
-Wymagany. Numer wystąpienia okna Czujka.
+Wymagany. Numer wystąpienia okna czujki.
 
 ## <a name="remarks"></a>Uwagi
 
-`index` musi być liczbą całkowitą. Prawidłowe wartości to 1, 2, 3 lub 4.
+Musi `index` być całkowitej liczby. Prawidłowe wartości to 1, 2, 3 lub 4.
 
 ## <a name="example"></a>Przykład
 
@@ -44,11 +44,11 @@ Wymagany. Numer wystąpienia okna Czujka.
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Okna zmiennych automatycznych i zmiennych lokalnych](../../debugger/autos-and-locals-windows.md)
-- [Ustaw kontrolkę na zmienne przy użyciu okien czujki i QuickWatch w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Ustawianie zegarka na zmiennych przy użyciu systemu Watch i QuickWatch Windows w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

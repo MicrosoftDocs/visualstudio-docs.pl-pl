@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568831"
 ---
 # <a name="import-and-export-settings-command"></a>Import i eksport ustawień — Polecenie
@@ -32,33 +32,33 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 ## <a name="switches"></a>Przełączniki
 
-/Export:`filename`
+/eksport:`filename`
 
-Opcjonalny. Eksportuje bieżące ustawienia do określonego pliku.
+Element opcjonalny. Eksportuje bieżące ustawienia do określonego pliku.
 
 /import:`filename`
 
-Opcjonalny. Importuje ustawienia w określonym pliku.
+Element opcjonalny. Importuje ustawienia w określonym pliku.
 
-/Reset
+/reset
 
-Opcjonalny. Resetuje bieżące ustawienia.
+Element opcjonalny. Resetuje bieżące ustawienia.
 
 ## <a name="remarks"></a>Uwagi
 
-Uruchomienie tego polecenia bez przełączników powoduje otwarcie kreatora **importowania i eksportowania ustawień** . Aby uzyskać więcej informacji, zobacz [Synchronizowanie ustawień](../synchronized-settings-in-visual-studio.md) i [ustawień środowiska](../environment-settings.md).
+Uruchomienie tego polecenia bez przełączników powoduje otwarcie kreatora **Importuj i eksportuj ustawienia.** Aby uzyskać więcej informacji, zobacz [Synchronizowanie ustawień](../synchronized-settings-in-visual-studio.md) i [ustawień środowiska](../environment-settings.md).
 
 ## <a name="example"></a>Przykład
 
-Następujące polecenie eksportuje bieżące ustawienia do pliku `MyFile.vssettings`:
+Następujące polecenie eksportuje bieżące `MyFile.vssettings`ustawienia do pliku:
 
 ```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Ustawienia środowiska](../../ide/environment-settings.md)
-- [Synchronizuj ustawienia](../../ide/synchronized-settings-in-visual-studio.md)
+- [Synchronizowanie ustawień](../../ide/synchronized-settings-in-visual-studio.md)
 - [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)

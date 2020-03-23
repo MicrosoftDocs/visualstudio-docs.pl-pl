@@ -17,73 +17,73 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596219"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opcje, edytor tekstu, C#, IntelliSense
 
-Na stronie opcje **IntelliSense** można modyfikować ustawienia wpływające na zachowanie funkcji IntelliSense dla C#programu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia** > **Opcje**, a następnie wybierz **C#** pozycję **Edytor tekstu** >  > **IntelliSense**.
+Strona opcji **IntelliSense** służy do modyfikowania ustawień, które wpływają na zachowanie intellisense dla języka C#. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję**Opcje** **narzędzi** > , a następnie wybierz pozycję **Edytor** > tekstu**C#** > **IntelliSense**.
 
-Strona Opcje **IntelliSense** zawiera następujące opcje:
+Strona opcji **IntelliSense** zawiera następujące opcje:
 
-## <a name="completion-lists"></a>Listy uzupełniania
+## <a name="completion-lists"></a>Listy uzupełnień
 
-- Pokaż listę uzupełniania po wpisaniu znaku *
+- Pokaż listę uzupełnień po wpisaniu znaku*
 
-   Po wybraniu tej opcji funkcja IntelliSense automatycznie wyświetla listę uzupełniania po rozpoczęciu wpisywania. Gdy ta opcja nie jest zaznaczona, uzupełnianie IntelliSense jest nadal dostępne z menu **IntelliSense** lub naciskając klawisz **Ctrl**+**miejsce**.
+   Po wybraniu tej opcji program IntelliSense automatycznie wyświetla listę uzupełnień po rozpoczęciu wpisywania. Jeśli ta opcja nie jest zaznaczona, zakończenie intelliSense jest nadal dostępne w menu **IntelliSense** lub po naciśnięciu **klawisza Ctrl**+**Space**.
 
-- Pokaż listę uzupełniania po usunięciu znaku
+- Pokaż listę uzupełnień po usunięciu znaku
 
-- Wyróżnij pasujące fragmenty elementów listy uzupełniania
+- Wyróżnianie pasujących części elementów listy uzupełnień
 
 - Pokaż filtry elementów ukończenia
 
-## <a name="snippets-behavior"></a>Zachowanie fragmentów kodu
+## <a name="snippets-behavior"></a>Zachowanie urywków
 
-- Nigdy nie dołączaj fragmentów kodu
+- Nigdy nie dołączaj urywków
 
-   Po wybraniu tej opcji funkcja IntelliSense nigdy nie dodaje aliasów fragmentów C# kodu do listy uzupełniania.
+   Po wybraniu tej opcji intellisense nigdy nie dodaje aliasów dla fragmentów kodu języka C# do listy uzupełniania.
 
-- Zawsze dołączaj fragmenty kodu
+- Zawsze dołączaj urywki
 
-   Po wybraniu tej opcji technologia IntelliSense dodaje aliasy C# dla fragmentów kodu do listy uzupełniania. W przypadku, gdy alias fragmentu kodu jest taki sam jak słowo kluczowe, na przykład, [Klasa](/dotnet/csharp/language-reference/keywords/class), słowo kluczowe jest zastępowane skrótem. Aby uzyskać więcej informacji, zobacz [ C# fragmenty kodu](../../ide/visual-csharp-code-snippets.md).
+   Po wybraniu tej opcji intellisense dodaje aliasy dla fragmentów kodu języka C# do listy uzupełniania. W przypadku, gdy alias fragmentu kodu jest taki sam jak słowo kluczowe, na przykład [klasa](/dotnet/csharp/language-reference/keywords/class), słowo kluczowe jest zastępowane skrótem. Aby uzyskać więcej informacji, zobacz [Urywki kodu języka C#.](../../ide/visual-csharp-code-snippets.md)
 
-- Dołącz fragmenty kodu, gdy?-Tab jest wpisana po identyfikatorze
+- Dołączanie urywków, gdy po identyfikatorze jest wpisywany ?-Tab
 
-   Po wybraniu tej opcji technologia IntelliSense dodaje aliasy C# dla fragmentów kodu do listy uzupełniania po naciśnięciu klawisza **Tab** **+po** identyfikatorze
+   Gdy ta opcja jest zaznaczona, IntelliSense dodaje aliasy dla fragmentów kodu języka C# do listy uzupełnień, **gdy?** + **Karta** jest wciskana po identyfikatorze
 
-## <a name="enter-key-behavior"></a>Zachowanie klawisza ENTER
+## <a name="enter-key-behavior"></a>Wprowadź zachowanie klucza
 
 - Nigdy nie dodawaj nowego wiersza po wprowadzeniu
 
-   Określa, że nowy wiersz nigdy nie jest dodawany automatycznie po wybraniu elementu na liście uzupełniania i naciśnięciu klawisza **Enter**.
+   Określa, że nowy wiersz nigdy nie jest dodawany automatycznie po wybraniu elementu na liście uzupełnień i naciśnięciu **klawisza Enter**.
 
-- Dodaj nowy wiersz po zakończeniu w pełni wpisanego wyrazu.
+- Dodaj nowy wiersz na enter po zakończeniu w pełni wpisanego wyrazu
 
-   Określa, że po wpisaniu wszystkich znaków dla wpisu na liście uzupełniania, a następnie naciśnięciu klawisza **Enter**, nowy wiersz zostanie dodany automatycznie, a kursor zostanie przeniesiony do nowego wiersza.
+   Określa, że jeśli wpiszesz wszystkie znaki wpisu na liście zakończenia, a następnie naciśniesz **klawisz Enter,** nowy wiersz zostanie dodany automatycznie, a kursor zostanie przeniesiony do nowego wiersza.
 
-   Na przykład, jeśli wpiszesz `else` a następnie naciśniesz klawisz **Enter**, w edytorze zostanie wyświetlony następujący komunikat:
+   Na przykład, jeśli `else` wpiszesz, a następnie naciśnij **klawisz Enter,** w edytorze pojawi się następujący komunikat:
 
    `else`
 
-   `|` (Lokalizacja kursora)
+   `|`(lokalizacja kursora)
 
-   Jeśli jednak wpiszesz tylko `el` a następnie naciśniesz klawisz **Enter**, w edytorze zostanie wyświetlony następujący komunikat:
+   Jeśli jednak wpiszesz tylko, `el` a następnie naciśnij klawisz **Enter,** w edytorze pojawi się następujący komunikat:
 
-   `else|` (Lokalizacja kursora)
+   `else|`(lokalizacja kursora)
 
 - Zawsze dodawaj nowy wiersz po wprowadzeniu
 
-   Określa, że po wpisaniu *dowolnego* ze znaków dla wpisu na liście uzupełniania, a następnie naciśnięciu klawisza **Enter**, nowy wiersz zostanie dodany automatycznie, a kursor zostanie przeniesiony do nowego wiersza.
+   Określa, że jeśli wpiszesz *dowolny* ze znaków wpisu na liście uzupełnień, a następnie naciśniesz **klawisz Enter,** nowy wiersz zostanie dodany automatycznie, a kursor zostanie przeniesiony do nowego wiersza.
 
 ## <a name="show-name-suggestions"></a>Pokaż sugestie dotyczące nazw
 
-Wykonuje automatyczne uzupełnianie nazw obiektów dla elementów członkowskich, które zostały ostatnio wybrane.
+Wykonuje automatyczne uzupełnianie nazwy obiektu dla członków, które zostały niedawno wybrane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
-- [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)
+- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Korzystanie z IntelliSense](../../ide/using-intellisense.md)
