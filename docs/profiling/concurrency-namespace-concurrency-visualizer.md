@@ -1,5 +1,5 @@
 ---
-title: Namespace współbieżności (Concurrency Visualizer) | Dokumentacja firmy Microsoft
+title: Obszar nazw współbieżności (wizualizator współbieżności) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63001081"
 ---
-# <a name="concurrency-namespace-concurrency-visualizer"></a>Przestrzeń nazwy współbieżności (Concurrency Visualizer)
-`Concurrency` Przestrzeń nazw zawiera klasy i funkcje, które zapewniają dostęp do środowiska wykonawczego Concurrency, platformy programowania współbieżnego dla C++. Aby uzyskać więcej informacji, zobacz [współbieżność środowiska wykonawczego](/cpp/parallel/concrt/concurrency-runtime).
+# <a name="concurrency-namespace-concurrency-visualizer"></a>Obszar nazw współbieżności (wizualizator współbieżności)
+Obszar `Concurrency` nazw zawiera klasy i funkcje, które zapewniają dostęp do współbieżności środowiska wykonawczego, równoczesnych platform programowania dla języka C++. Aby uzyskać więcej informacji, zobacz [Środowisko uruchomieniowe współbieżności](/cpp/parallel/concrt/concurrency-runtime).
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,14 +30,14 @@ namespace Concurrency;
 
 ## <a name="members"></a>Elementy członkowskie
 
-### <a name="namespaces"></a>Namespaces
+### <a name="namespaces"></a>Przestrzenie nazw
 
 |Nazwa|Opis|
 |----------|-----------------|
-|[Przestrzeń nazw diagnostic](../profiling/diagnostic-namespace.md)|`diagnostics` Przestrzeń nazw zawiera funkcje do emitowania znaczników narzędzia Concurrency Visualizer.|
+|[diagnostyka obszaru nazw](../profiling/diagnostic-namespace.md)|Obszar `diagnostics` nazw udostępnia funkcje emitowania znaczników wizualizatora współbieżności.|
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** cvmarkersobj.h
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do biblioteki C](../profiling/c-library-reference.md)

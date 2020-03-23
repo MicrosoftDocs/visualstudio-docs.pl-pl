@@ -1,5 +1,5 @@
 ---
-title: Wykres aktywności GPU | Dokumentacja firmy Microsoft
+title: Wykres aktywności GPU | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969569"
 ---
-# <a name="gpu-activity-graph"></a>Wykres aktywności procesora GPU
-Wykres aktywności procesora GPU w Wizualizatorze współbieżności przedstawia poziomu aktywności DirectX w systemie, gdyż jest mierzone przez liczbę aparatów DirectX, które są używane wraz z upływem czasu.  Wykres nie pokazuje, które określonych aparatów były używane.  Aparat uznaje się będzie używana, jeśli przetwarza wszystkie działanie procesora GPU.
+# <a name="gpu-activity-graph"></a>Wykres aktywności gpu
+Wykres aktywności gpu w wizualizatorze współbieżności wyświetla poziom aktywności DirectX w systemie mierzony liczbą aparatów DirectX, które są używane w czasie.  Wykres nie pokazuje, które konkretne silniki zostały użyte.  Silnik jest uważany za używany, jeśli przetwarza pracę procesora gpu.
 
-## <a name="gpu-activity-graph-colors"></a>Kolory wykres aktywności procesora GPU
- Zielony oznacza zużycia silników DirectX w bieżącym procesie.
+## <a name="gpu-activity-graph-colors"></a>Kolory wykresu aktywności gpu
+ Zielony wskazuje zużycie silników DirectX przez bieżący proces.
 
- Jasny zwykle wskazuje zużycia silników DirectX przez inne procesy w systemie. Aby zmniejszyć zużycia silników DirectX przez inne procesy, Zmniejsz liczbę innych procesów uruchomionych w systemie.
+ Jasnoszary oznacza zużycie silników DirectX przez inne procesy w systemie. Aby zmniejszyć zużycie silników DirectX przez inne procesy, należy zmniejszyć liczbę innych procesów uruchomionych w systemie.
 
- Oficjalny wskazuje dostępność nieużywane aparatów DirectX w systemie. Silników są dostępne dla procesu, jeśli możesz znaleźć dodatkowe możliwości w celu ich wykorzystania. Niektóre aparaty należy używać tylko dla określonych typów zadań.
+ Biały oznacza dostępność nieużywanych silników DirectX w systemie. Silniki te są dostępne dla twojego procesu, jeśli możesz znaleźć więcej możliwości ich wykorzystania. Niektóre aparaty mogą być używane tylko do określonych rodzajów zadań.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wykorzystania](../profiling/utilization-view.md)

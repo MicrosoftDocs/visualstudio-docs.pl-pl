@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Tworzenie raportu śledzenia wywołań narzędzia profilowania | Microsoft Docs'
+title: 'Jak: Tworzenie raportu śledzenia połączeń narzędzi profilowania | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778989"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: Tworzenie raportu śledzenia wywołań narzędzi profilowania
-*Raport śledzenia wywołań* dla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania wyświetla informacje o chronometrażu dla każdego wpisu i punktu wyjścia do funkcji aplikacji oraz każde wywołanie funkcji przez funkcję. Raporty śledzenia wywołań są dostępne do profilowania danych tylko wtedy, gdy zostały zebrane przy użyciu metody instrumentacji.
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Instrukcje: tworzenie raportu śledzenia wywołań narzędzi profilowania
+*Raport śledzenia wywołań* dla narzędzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilowania zawiera listę informacji chronometrażu dla każdego punktu wejścia i wyjścia do funkcji aplikacji i każdego wywołania innych funkcji przez funkcję. Raporty śledzenia wywołania są dostępne dla profilowania danych tylko wtedy, gdy zostały zebrane za pomocą metody instrumentacji.
 
 > [!NOTE]
-> Nie można wyświetlić raportów śledzenia wywołań w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby wygenerować wartość rozdzieloną przecinkami, należy użyć narzędzia wiersza polecenia **VSPerfReport** . *CSV*) lub. plik *XML* . Aby uzyskać więcej informacji na temat tego narzędzia, zobacz [VSPerfReport](../profiling/vsperfreport.md).
+> W pliku [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby wygenerować wartość oddzieloną przecinkami, należy użyć narzędzia wiersza polecenia **VSPerfReport.** * csv)* lub . *xml.* Aby uzyskać więcej informacji na temat tego narzędzia, zobacz [VSPerfReport](../profiling/vsperfreport.md).
 
-### <a name="to-create-a-call-trace-report"></a>Aby utworzyć raport śledzenia wywołań
+### <a name="to-create-a-call-trace-report"></a>Aby utworzyć raport śledzenia połączeń
 
-1. Otwórz okno **wiersza polecenia** .
+1. Otwórz okno **wiersza polecenia.**
 
 2. W wierszu polecenia wpisz następujące polecenie:
 
-     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/XML]**
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
     |||
     |-|-|
-    |*ToolsPath*|Ścieżka narzędzia profilowania narzędzi wiersza polecenia. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|Dane profilowania (. *VSP* lub. *vsps*) rozszerzeniem. Akceptowane są pełne i częściowe ścieżki.|
-    |Xml|Generuje raport w formacie XML.|
+    |*Ścieżka narzędzi*|Ścieżka narzędzi wiersza polecenia Narzędzia profilowania. Aby uzyskać więcej informacji, zobacz [Określanie ścieżki do narzędzi wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
+    |*Plik VSP*|Dane profilowania (.* vsp* lub . *vsps*) Plik. Akceptowane są pełne i częściowe ścieżki.|
+    |Xml|Generuje raport sformatowany w formacie XML.|
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+## <a name="see-also"></a>Zobacz też
+- [Jak: Zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [Interfejsy API narzędzi profilowania](../profiling/profiling-tools-apis.md)

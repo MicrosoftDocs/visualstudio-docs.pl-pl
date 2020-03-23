@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62950658"
 ---
-# <a name="nosplash-devenvexe"></a>/ NoSplash (devenv.exe)
+# <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
-Zapobiega są wyświetlane na ekranie powitalnym.
+Zapobiega pokazywaniu ekranu powitalnego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,23 +31,23 @@ devenv /NoSplash [File1[ FileN]...]
 
 ## <a name="arguments"></a>Argumenty
 
-- *File1*
+- *Plik1*
 
-  Opcjonalna. Plik można otworzyć w istniejącego wystąpienia programu Visual Studio. Jeśli nie ma wystąpień programu Visual Studio, jest tworzone nowe wystąpienie o uproszczonym układzie okna i otwarciu narzędzia *plik1* w nowym wystąpieniu.
+  Element opcjonalny. Plik do otwarcia w istniejącym wystąpieniu programu Visual Studio. Jeśli nie istnieje żadne wystąpienie programu Visual Studio, zostanie utworzone nowe wystąpienie z uproszczonym układem okna, a narzędzie otworzy *plik1* w nowym wystąpieniu.
 
-- *FileN*
+- *Plik*
 
-  Opcjonalna. Jeden lub więcej dodatkowych plików do otwierania w istniejącym wystąpieniu programu Visual Studio.
+  Element opcjonalny. Jeden lub więcej dodatkowych plików do otwarcia w istniejącym wystąpieniu programu Visual Studio.
 
 ## <a name="remarks"></a>Uwagi
 
-Ten przełącznik powoduje ukrycie opcji na ekranie powitalnym. Pomijając ten przełącznik powoduje, że ekran powitalny do wyświetlenia. Aby sprawdzić na ekranie powitalnym dalsze (na przykład, aby sprawdzić, ikona produktu pakietu VSPackage), należy użyć [/powitalny](../../extensibility/devenv-command-line-switches-for-vspackage-development.md) przełącznika.
+Ten przełącznik ukrywa ekran powitalny. Pozostawienie tego przełącznika powoduje wyświetlenie ekranu powitalnego. Jeśli chcesz zbadać ekran powitalny dalej (na przykład, aby sprawdzić ikonę produktu VSPackage), użyj przełącznika [/Splash.](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)
 
-`/NoSplash` Przełącznika może być łączone z innymi przełącznikami, takich jak [/Run](run-devenv-exe.md) lub [/DebugExe](debugexe-devenv-exe.md).
+Przełącznik `/NoSplash` może być łączony z innymi przełącznikami, takimi jak [/Run](run-devenv-exe.md) lub [/DebugExe](debugexe-devenv-exe.md).
 
 ## <a name="example"></a>Przykład
 
-Wszystkie trzy przykłady Otwórz IDE bez wyświetlania na ekranie powitalnym. Drugi przykład również określone rozwiązanie kompiluje i uruchamia wbudowanych pliku wykonywalnego. Trzeci przykład otwiera określony plik wykonywalny do debugowania w środowisku IDE.
+Wszystkie trzy przykłady otwierają IDE bez wyświetlania ekranu powitalnego. Drugi przykład kompiluje również określone rozwiązanie i uruchamia wbudowany plik wykonywalny. Trzeci przykład otwiera określony plik wykonywalny do debugowania w IDE.
 
 ```shell
 devenv /nosplash
@@ -57,7 +57,7 @@ devenv /nosplash /run MySolution.sln
 devenv /nosplash /debugexe MySolution.exe
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)
+- [Przełączniki wiersza polecenia Devenv dla rozwoju VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

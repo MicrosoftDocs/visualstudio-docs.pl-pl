@@ -1,5 +1,5 @@
 ---
-title: Tworzenie dodatku dla podglądu wyników testu wydajności sieci Web
+title: Tworzenie dodatku dla podglądu wyników testów wydajności sieci Web
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,136 +10,136 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6da2686a5a68325101e7161a51a8144e7ef42b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589087"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Instrukcje: Tworzenie dodatku dla usługi Web Performance Wyniki testów Viewer
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Jak: Tworzenie dodatku dla podglądu wyników testów wydajności sieci Web
 
-Możesz rozszerzyć w interfejsie użytkownika dla **podglądu wyników testu wydajności sieci Web** przy użyciu następujących przestrzeni nazw:
+Interfejs użytkownika przeglądarki wyników **testów wydajności sieci Web** można rozszerzyć przy użyciu następujących obszarów nazw:
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-Ponadto należy dodać odwołanie do biblioteki DLL LoadTestPackage, która znajduje się w folderze *% ProgramFiles (x86)% \ Microsoft Visual Studio\\\<wersja > \Enterprise\Common7\IDE\PrivateAssemblies* .
+Ponadto należy dodać odwołanie do biblioteki DLL LoadTestPackage, która znajduje się w folderze *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<>\Enterprise\Common7\IDE\PrivateAssemblies* folderu.
 
-Aby rozszerzyć **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika, należy utworzyć dodatek programu Visual Studio i kontrolki użytkownika. W poniższych procedurach opisano sposób tworzenia dodatku, formantu użytkownika oraz sposób implementacji klas niezbędnych do rozszerzenia **podglądu wyników testu wydajności sieci Web**w interfejsie użytkownika.
+Aby rozszerzyć interfejs użytkownika **podglądu wyników testu wydajności sieci Web,** należy utworzyć dodatek programu Visual Studio i kontrolkę użytkownika. Poniższe procedury wyjaśniają, jak utworzyć dodatek, formant użytkownika i jak zaimplementować klasy niezbędne do rozszerzenia interfejsu użytkownika **podglądu wyników testu wydajności sieci Web.**
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Utwórz lub Otwórz rozwiązanie, które zawiera projekt testu wydajności i obciążenia sieci web i aplikacji sieci web ASP.NET
+## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Tworzenie lub otwieranie rozwiązania zawierającego ASP.NET aplikacji sieci web oraz projektu testu wydajności i obciążenia sieci Web
 
-### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>Aby przygotować się do rozszerzania podglądu wyników testu wydajności sieci Web
+### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>Aby przygotować się do rozszerzenia podglądu wyników testów wydajności sieci Web
 
-Utwórz lub Otwórz rozwiązanie spoza środowiska produkcyjnego, że możesz eksperymentować z zawierającego aplikację sieci web platformy ASP.NET i wydajności sieci web i obciążenia projektu testowego z jednego lub więcej testów wydajności sieci web dla aplikacji sieci web platformy ASP.NET.
+Utwórz lub otwórz rozwiązanie nieprodukcyjne, z którym można eksperymentować, z którym zawiera ASP.NET aplikacji sieci web i projektu testu wydajności sieci web i obciążenia z co najmniej jednym testem wydajności sieci web dla ASP.NET aplikacji sieci web.
 
 > [!NOTE]
-> Możesz utworzyć aplikację sieci web platformy ASP.NET i projekt zawierający testy wydajności sieci web zgodnie z instrukcjami opisanymi w testu wydajności sieci web i obciążenia [porady: Tworzenie nowego testu usługi internetowej](../test/how-to-create-a-web-service-test.md) i [Generowanie i uruchom kodowany internetowy test wydajności](../test/generate-and-run-a-coded-web-performance-test.md).
+> Można utworzyć ASP.NET aplikacji sieci web i projektu testu wydajności sieci web i obciążenia, który zawiera testy wydajności sieci web, wykonując procedury w [jak: Tworzenie testu usługi sieci web](../test/how-to-create-a-web-service-test.md) i [generowanie i uruchamianie zakodowany test wydajności sieci Web](../test/generate-and-run-a-coded-web-performance-test.md).
 
-## <a name="create-a-visual-studio-add-in"></a>Utwórz dodatek programu Visual Studio
+## <a name="create-a-visual-studio-add-in"></a>Tworzenie dodatku programu Visual Studio
 
-Dodatek jest skompilowaną biblioteką DLL, która działa w programie Visual Studio zintegrowane środowisko programistyczne (IDE). Kompilacja pomaga chronić Twoje prawa własności intelektualnej i zwiększa wydajność. Chociaż dodatki można utworzyć ręcznie, może okazać się łatwiejszy w obsłudze **kreatora dodatków**. Ten kreator tworzy funkcjonalny, ale podstawowy dodatek, którą można uruchamiać natychmiast po utworzeniu. Po **kreatora dodatków** wygeneruje podstawowy program, można dodać do niego kod i go dostosować.
+Dodatek jest skompilowaną biblioteką DLL, która jest uruchamiana w zintegrowanym środowisku programistycznym Programu Visual Studio (IDE). Kompilacja pomaga chronić własność intelektualną i poprawia wydajność. Chociaż dodatki można tworzyć ręcznie, korzystanie z **Kreatora dodatków**może być łatwiejsze. Ten kreator tworzy funkcjonalny, ale podstawowy dodatek, który można uruchomić natychmiast po jego utworzeniu. Po wygenerowaniu przez **Kreatora dodatków** podstawowy program można dodać do niego kod i dostosować go.
 
-**Kreatora dodatków** pozwala podać nazwę wyświetlaną i opis dla dodatku. Obie subskrypcje będą widoczne w **Add-In Manager**. Opcjonalnie może mieć kod Generuj kreatora, który dodaje do **narzędzia** menu polecenie, aby otworzyć dodatek. Możesz również wyświetlić niestandardowe **o** okno dialogowe dla dodatku. Po zakończeniu działania kreatora, masz nowy projekt, który ma tylko jedną klasę, która implementuje dodatek. Ta klasa ma nazwę Połącz.
+**Kreator dodatków** umożliwia podanie nazwy wyświetlanej i opisu dodatku. Oba pojawią się w **Menedżerze dodatków**. Opcjonalnie kreator może wygenerować kod, który dodaje do menu **Narzędzia** polecenie, aby otworzyć dodatek. Można również wyświetlić niestandardowe okno dialogowe **Informacje** dla dodatku. Po zakończeniu pracy kreatora, masz nowy projekt, który ma tylko jedną klasę, która implementuje dodatek. Ta klasa nosi nazwę Connect.
 
-Użyjesz **Add-In Manager** na końcu tego artykułu.
+Menedżer **dodatków** użyje na końcu tego artykułu.
 
-### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Aby utworzyć dodatek za pomocą Kreatora dodatek
+### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Aby utworzyć dodatek za pomocą Kreatora dodatków
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. Utwórz nowy projekt **dodatku programu Visual Studio** .
+2. Utwórz nowy projekt **dodatku programu Visual Studio.**
 
-    Visual Studio **kreatora dodatków** rozpoczyna się.
+    Uruchamia się **Kreator dodatków** programu Visual Studio.
 
-3. Wybierz **dalej**.
+3. Wybierz pozycję **Dalej**.
 
-4. Na **wybierz język programowania** wybierz język programowania, który chcesz użyć do pisania dodatku.
+4. Na stronie **Wybierz język programowania** wybierz język programowania, którego chcesz użyć do zapisania dodatku.
 
    > [!NOTE]
-   > Ten temat używa języka Visual C# dla przykładowego kodu.
+   > W tym temacie użyto języka Visual C# dla przykładowego kodu.
 
-5. Na **wybierz aplikację hosta** wybierz **programu Visual Studio** i wyczyść **makra programu Visual Studio**.
+5. Na stronie **Wybierz hosta aplikacji** wybierz pozycję **Visual Studio** i **wyczyść wyczyść makra programu Visual Studio**.
 
-6. Wybierz **dalej**.
+6. Wybierz pozycję **Dalej**.
 
-7. Wpisz nazwę i opis dla dodatku na **wprowadź nazwę i opis** strony.
+7. Wpisz nazwę i opis dodatku na stronie **Wprowadź nazwę i opis.**
 
-     Gdy dodatek zostanie utworzona, jego nazwa i opis są wyświetlane w **dostępne dodatki** listy w **Add-In Manager**. Dodaj tyle szczegółowy opis dodatku, dzięki czemu użytkownicy mogą dowiedzieć się, jakie dodatku nie, jak działa i tak dalej.
+     Po utworzeniu dodatku jego nazwa i opis są wyświetlane na liście Dostępne dodatki w **Menedżerze** **dodatków** . Dodaj wystarczająco dużo szczegółów do opisu dodatku, aby użytkownicy mogli dowiedzieć się, co robi dodatek, jak działa i tak dalej.
 
-8. Wybierz **dalej**.
+8. Wybierz pozycję **Dalej**.
 
-9. Na **wybierz opcje dodatku** wybierz opcję **chciałbym aby dodatek załadowany gdy uruchomiona zostanie aplikacja hosta**.
+9. Na stronie **Wybieranie opcji dodatku** wybierz pozycję **Chciałbym, aby mój dodatek był ładowany po uruchomieniu aplikacji hosta.**
 
 10. Wyczyść pozostałe pola wyboru.
 
-11. Na **wybór informacji "Pomoc na temat"** strony, należy można określić, czy informacje o dodatku mają być wyświetlane w **o** okno dialogowe. Jeśli chcesz, aby informacje były wyświetlane, zaznacz **tak, chciałbym aby dodatek zawierał okno informacji "o"** pole wyboru.
+11. Na stronie **Wybieranie informacji o pomocy** można określić, czy informacje o dodatku mają być wyświetlane w oknie dialogowym **Informacje.** Jeśli chcesz, aby informacje były wyświetlane, zaznacz pole **wyboru Tak, chcę, aby mój dodatek oferował informacje "Informacje o".**
 
-     Informacje, które mogą być dodawane do programu Visual Studio **o** okno dialogowe zawiera numer wersji, szczegóły pomocy technicznej, dane licencyjne i tak dalej.
+     Informacje, które można dodać do okna dialogowego **Informacje programu** Visual Studio obejmują numer wersji, szczegóły pomocy technicznej, dane licencyjne i tak dalej.
 
-12. Wybierz **dalej**.
+12. Wybierz pozycję **Dalej**.
 
-13. Wybrane opcje są wyświetlane na **Podsumowanie** stron, którymi możesz się zapoznać. Jeśli Cię zadowala, wybierz opcję **Zakończ** do utworzenia dodatku. Jeśli chcesz coś zmienić, wybierz opcję **ponownie** przycisku.
+13. Wybrane opcje są wyświetlane na stronie **Podsumowanie,** aby można było ją przejrzeć. Jeśli jesteś zadowolony, wybierz **zakończ,** aby utworzyć dodatek. Jeśli chcesz coś zmienić, wybierz przycisk **Wstecz.**
 
-     Nowe rozwiązanie i projekt są tworzone i *Connect.cs* plików dla nowych dodatków jest wyświetlany w **Edytor kodu**.
+     Nowe rozwiązanie i projekt są tworzone, a plik *Connect.cs* dla nowego dodatku jest wyświetlany w **Edytorze kodu**.
 
-     Możesz dodać kod, aby *Connect.cs* plik po poniższej procedury, która tworzy kontrolkę użytkownika, który będzie się odnosić projekt WebPerfTestResultsViewerAddin.
+     Do pliku *Connect.cs* zostanie dodana po poniższej procedurze, która tworzy formant użytkownika, do którego odwołuje się ten projekt WebPerfTestResultsViewerAddin.
 
-    Gdy dodatek zostanie utworzona, należy zarejestrować go za pomocą programu Visual Studio można ją aktywować na **Add-In Manager**. Możesz to zrobić przy użyciu pliku XML, który ma *.addin* rozszerzenie nazwy pliku.
+    Po utworzeniu dodatku należy zarejestrować go w programie Visual Studio, aby można go było aktywować w **Menedżerze dodatków**. Można to zrobić za pomocą pliku XML, który ma rozszerzenie nazwy pliku *.addin.*
 
-    *.Addin* pliku w tym artykule opisano informacje, które wymaga programu Visual Studio, aby wyświetlić dodatek w **Add-In Manager**. Po uruchomieniu programu Visual Studio szuka w *.addin* lokalizacji dla każdego pliku dostępne *.addin* plików. Jeśli jakiekolwiek znajdzie, odczytuje plik XML i daje **Add-In Manager** informacje, które ten wymaga do uruchomienia dodatku po kliknięciu.
+    Plik *.addin* opisuje informacje, których program Visual Studio wymaga do wyświetlania dodatku w **Menedżerze dodatków**. Po uruchomieniu programu Visual Studio wyszukuje w lokalizacji pliku *.addin* wszystkie dostępne pliki *.addin.* Jeśli znajdzie jakiekolwiek, odczytuje plik XML i daje **Add-In Manager** informacje, które wymaga, aby uruchomić dodatek po kliknięciu.
 
-    *.Addin* pliku jest tworzony automatycznie podczas tworzenia dodatku za pomocą **kreatora dodatków**.
+    Plik *.addin* jest tworzony automatycznie podczas tworzenia dodatku za pomocą **Kreatora dodatków**.
 
-### <a name="add-in-file-locations"></a>Lokalizacje pliku dodatku
+### <a name="add-in-file-locations"></a>Lokalizacje plików dodatków
 
-Dwie kopie *.addin* pliki są tworzone automatycznie przez **kreatora dodatków**, wykonując następujące czynności:
+Dwie kopie plików *.addin* są tworzone automatycznie przez **Kreatora dodatków w**następujący sposób:
 
-|**. Lokalizacja pliku dodatku**|**Opis**|
+|**. Lokalizacja pliku addin**|**Opis**|
 |-|----------------------------|-|
-|Głównego folderu projektu|Używany do wdrażania projektu dodatek. Uwzględnione w projekcie w celu ułatwienia edycji i ma ścieżkę lokalną dla wdrażania w formacie xcopy.|
-|Folder dodatków|Używane do uruchamiania dodatku w środowisku debugowania. Zawsze powinien wskazywać ścieżkę wyjściową bieżącej konfiguracji kompilacji.|
+|Główny folder projektu|Używane do wdrażania projektu dodatku. Zawarte w projekcie dla ułatwienia edycji i ma ścieżkę lokalną dla xcopy stylu wdrożenia.|
+|Folder dodatku|Służy do uruchamiania dodatku w środowisku debugowania. Zawsze należy wskazać ścieżkę wyjściową bieżącej konfiguracji kompilacji.|
 
-## <a name="create-a-windows-form-control-library-project"></a>Utwórz projekt Biblioteka kontrolek formularzy Windows
+## <a name="create-a-windows-form-control-library-project"></a>Tworzenie projektu biblioteki kontroli formularzy systemu Windows
 
-Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do projektu Biblioteka kontrolek formularzy Windows, aby utworzyć wystąpienie <xref:System.Windows.Forms.UserControl> klasy.
+Dodatek Visual Studio utworzony w poprzedniej procedurze odwołuje się do projektu Biblioteki <xref:System.Windows.Forms.UserControl> kontroli formularzy systemu Windows w celu utworzenia wystąpienia klasy.
 
-### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Aby utworzyć formant ma być używany w podglądzie wyników testu sieci Web
+### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Aby utworzyć formant do użycia w przeglądarce wyników testów sieci Web
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy rozwiązanie, wybierz polecenie **Dodaj**, a następnie wybierz pozycję **Nowy projekt**.
 
-2. Utwórz nowy projekt **biblioteki formantów Windows Forms** .
+2. Utwórz nowy projekt **biblioteki kontroli formularzy systemu Windows.**
 
-3. Z **przybornika**, przeciągnij <xref:System.Windows.Forms.DataGridView> na powierzchnię obiektu userControl1.
+3. Z **przybornika**przeciągnij a <xref:System.Windows.Forms.DataGridView> na powierzchnię userControl1.
 
-4. Kliknij symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.DataGridView> i wykonaj następujące czynności:
+4. Kliknij glif znacznika![akcji (Smart](../test/media/vs_winformsmttagglyph.gif)Tag Glyph) w <xref:System.Windows.Forms.DataGridView> prawym górnym rogu i wykonaj następujące kroki:
 
-    1. Wybierz **Zadokuj w kontenerze nadrzędnym**.
+    1. Wybierz **pozycję Dok w kontenerze nadrzędnym**.
 
-    2. Usuń zaznaczenie pól wyboru dla **Włącz dodawanie**, **Włącz edytowanie**, **Włącz usuwanie** i **Włącz zmienianie kolejności kolumn**.
+    2. Wyczyść pola wyboru **Włącz dodawanie,** **Włącz edycję**, **Włącz usuwanie** i Włącz ponowne **ustawienie kolumny**.
 
-    3. Wybierz **Dodaj kolumnę**.
+    3. Wybierz **pozycję Dodaj kolumnę**.
 
-         **Dodaj kolumnę** zostanie wyświetlone okno dialogowe.
+         Zostanie wyświetlone okno dialogowe **Dodawanie kolumny.**
 
-    4. W **typu** listy rozwijanej wybierz **DataGridViewTextBoxColumn**.
+    4. Z listy rozwijanej **Typ** wybierz pozycję **DataGridViewTextBoxColumn**.
 
-    5. Wyczyść tekst "Kolumna1" w **tekst nagłówka**.
+    5. Wyczyść tekst "Kolumna1" w **tekście nagłówka**.
 
-    6. Wybierz **Dodaj**.
+    6. Wybierz **pozycję Dodaj**.
 
-    7. Wybierz **Zamknij**.
+    7. Wybierz **pozycję Zamknij**.
 
-5. W **właściwości** oknie zmiany **(nazwa)** właściwość <xref:System.Windows.Forms.DataGridView> do **resultControlDataGridView**.
+5. W oknie **Właściwości** zmień właściwość <xref:System.Windows.Forms.DataGridView> **(Nazwa)** **do resultControlDataGridView**.
 
-6. Kliknij prawym przyciskiem myszy projekt powierzchni i wybierz **Wyświetl kod**.
+6. Kliknij prawym przyciskiem myszy powierzchnię projektową i wybierz polecenie **Wyświetl kod**.
 
-     *UserControl1.cs* plik jest wyświetlany w **Edytor kodu**.
+     Plik *UserControl1.cs* jest wyświetlany w **Edytorze kodu**.
 
-7. Zmień nazwę skonkretyzowanej <xref:System.Windows.Forms.UserControl> klasy z UserContro1 na resultControl:
+7. Zmień nazwę <xref:System.Windows.Forms.UserControl> klasy wystąpienia z UserContro1 na resultControl:
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -152,37 +152,37 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
             }
     ```
 
-     W następnej procedurze, dodasz kod do projektu WebPerfTestResultsViewerAddin *Connect.cs* pliku, który będzie odwoływać się do klasy resultControl.
+     W następnej procedurze dodasz kod do pliku *Connect.cs* projektu WebPerfTestResultsViewerAddin, który będzie odwoływał się do klasy resultControl.
 
-     Będziesz dodawać dodatkowy kod w celu *Connect.cs* pliku później.
+     Później do pliku *Connect.cs* dodasz dodatkowy kod.
 
-## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Dodaj kod do dodatku WebPerfTestResultsViewerAddin
+## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Dodaj kod do WebPerfTestResultsViewerAddin
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** węzeł w projekcie WebPerfTestResultsViewerAddin i wybierz pozycję **Dodaj odwołanie**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł **Odwołania** w projekcie WebPerfTestResultsViewerAddin i wybierz polecenie **Dodaj odwołanie**.
 
-2. W **Dodaj odwołanie** okna dialogowego wybierz **.NET** kartę.
+2. W oknie dialogowym **Dodawanie odwołania** wybierz kartę **.NET.**
 
-3. Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework** i **System.Windows.Forms**.
+3. Przewiń w dół i wybierz pozycję **Microsoft.VisualStudio.QualityTools.WebTestFramework** i **System.Windows.Forms**.
 
-4. Wybierz **OK**.
+4. Wybierz pozycję **OK**.
 
-5. Kliknij prawym przyciskiem myszy **odwołania** ponownie, a następnie wybierz węzeł **Dodaj odwołanie**.
+5. Ponownie kliknij prawym przyciskiem myszy węzeł **Odwołania,** a następnie wybierz polecenie **Dodaj odwołanie**.
 
-6. W **Dodaj odwołanie** okna dialogowego wybierz **Przeglądaj** kartę.
+6. W oknie dialogowym **Dodawanie odwołania** wybierz kartę **Przeglądaj.**
 
-7. Wybierz listę rozwijaną dla **przeszukania** i przejdź do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* i wybierz  *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* pliku.
+7. Wybierz pozycję rozwijaną **Funkcji Szukaj** i przejdź do *pozycji %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* i wybierz plik *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll.*
 
-8. Wybierz **OK**.
+8. Wybierz pozycję **OK**.
 
-9. Kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerAddin i wybierz **Dodaj odwołanie**.
+9. Kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerAddin, a następnie wybierz polecenie **Dodaj odwołanie**.
 
-10. W **Dodaj odwołanie** okna dialogowego wybierz **projektów** kartę.
+10. W oknie dialogowym **Dodawanie odwołania** wybierz kartę **Projekty.**
 
-11. W obszarze **Nazwa projektu**, wybierz opcję **WebPerfTestResultsViewerControl** projektu, a następnie wybierz **OK**.
+11. W obszarze **Nazwa projektu**wybierz projekt **WebPerfTestResultsViewerControl** i wybierz przycisk **OK**.
 
-12. Jeśli *Connect.cs* plik nie jest wciąż otwarty, w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Connect.cs** plik w projekcie WebPerfTestResultsViewerAddin i wybierz  **Wyświetlanie kodu**.
+12. Jeśli plik *Connect.cs* nie jest nadal otwarty, w **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy plik **Connect.cs** w projekcie WebPerfTestResultsViewerAddin i wybierz polecenie **Wyświetl kod**.
 
-13. W *Connect.cs* Dodaj następujące instrukcje Using:
+13. W pliku *Connect.cs* dodaj następujące instrukcje Using:
 
     ```csharp
     using System.IO;
@@ -193,9 +193,9 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Przewiń w dół do dolnej części *Connect.cs* pliku. Musisz dodać listę identyfikatorów GUID dla <xref:System.Windows.Forms.UserControl> w przypadku więcej niż jedno wystąpienie **podglądu wyników testu wydajności sieci Web** jest otwarty. Należy dodać później kod, który używa tej listy.
+14. Przewiń w dół do dołu *Connect.cs* pliku. Należy dodać listę identyfikatorów GUID <xref:System.Windows.Forms.UserControl> dla w przypadku, gdy więcej niż jedno wystąpienie **podglądu wyników testów wydajności sieci Web** jest otwarty. Później dodasz kod, który używa tej listy.
 
-     Druga lista ciągu jest używany w metodzie OnDiscconection, która będzie kodowana później.
+     Druga lista ciągów jest używana w OnDiscconection metody, które zostaną zakodowane później.
 
     ```csharp
     private DTE2 _applicationObject;
@@ -204,7 +204,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. *Connect.cs* pliku tworzy wystąpienia klasy o nazwie Połącz z <xref:Extensibility.IDTExtensibility2> klasy i zawiera także kilka metod wykonania dodatku programu Visual Studio. Jedną z metod jest metodą OnConnection, które otrzymuje powiadomienie, że dodatek jest ładowany. W metodzie OnConnection użyjesz klasy LoadTestPackageExt do utworzenia pakietu rozszerzeń dla **podglądu wyników testu wydajności sieci Web**. Dodaj następujący kod do metody OnConnection:
+15. Plik *Connect.cs* wystąpienia klasy o nazwie Połącz <xref:Extensibility.IDTExtensibility2> z klasy, a także zawiera niektóre metody implementacji dodatku programu Visual Studio. Jedną z metod jest OnConnection metoda, która odbiera powiadomienie, że dodatek jest ładowany. W OnConnection metody użyjesz LoadTestPackageExt klasy do utworzenia pakietu rozszerzalności dla **przeglądarki wyników testu wydajności sieci Web**. Dodaj następujący kod do metody OnConnection:
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -216,7 +216,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
             }
     ```
 
-16. Dodaj następujący kod do klasy Połącz, aby utworzyć metodę WebTestResultViewerExt_WindowCreated dla programu obsługi zdarzeń loadtestpackageext.webtestresultviewerext.windowcreated, które zostały dodane w metodzie OnConnection i metodę WindowCreated, wywołuje metodę WebTestResultViewerExt_WindowCreated.
+16. Dodaj następujący kod do klasy connect, aby utworzyć metodę WebTestResultViewerExt_WindowCreated dla loadTestPackageExt.WebTestResultViewerExt.WindowCreated obsługi zdarzeń, który został dodany w OnConnection metody i WindowCreated metody, która wywołanie metody WebTestResultViewerExt_WindowCreated.
 
     ```csharp
             void WebTestResultViewerExt_WindowCreated(object sender, WebTestResultViewerExt.WindowCreatedEventArgs e)
@@ -229,7 +229,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
                 resultControl resultControl = new resultControl();            // Add to the dictionary of open playback windows.            System.Diagnostics.Debug.Assert(!m_controls.ContainsKey(viewer.TestResultId));            List<UserControl> userControls = new List<UserControl>();            userControls.Add(resultControl);            // Add Guid to the m_control List to manage Result viewers and controls.            m_controls.Add(viewer.TestResultId, userControls);            // Add tabs to the playback control.            resultControl.Dock = DockStyle.Fill;            viewer.AddResultPage(new Guid(), "Sample", resultControl);        }
     ```
 
-17. Dodaj następujący kod do klasy Połącz, aby utworzyć metodę WebTestResultViewer_SelectedChanged dla programu obsługi zdarzeń loadtestpackageext.webtestresultviewerext.selectionchanged, które zostały dodane w metodzie OnConnection:
+17. Dodaj następujący kod do klasy connect, aby utworzyć metodę WebTestResultViewer_SelectedChanged dla loadTestPackageExt.WebTestResultViewerExt.SelectionChanged obsługi zdarzeń, który został dodany w OnConnection metody:
 
     ```csharp
     void WebTestResultViewer_SelectedChanged(object sender, WebTestResultViewerExt.SelectionChangedEventArgs e)
@@ -238,7 +238,7 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
     }
     ```
 
-18. Dodaj następujący kod do klasy Połącz, aby utworzyć metodę WebTesResultViewer_WindowClosed dla programu obsługi zdarzeń loadtestpackageext.webtestresultviewerext.WindowClosed, które zostały dodane w metodzie OnConnection:
+18. Dodaj następujący kod do klasy connect, aby utworzyć metodę WebTesResultViewer_WindowClosed dla programu obsługi zdarzeń dla loadTestPackageExt.WebTestResultViewerExt.WindowClosedtwo dodane w metodzie OnConnection:
 
     ```csharp
     void WebTesResultViewer_WindowClosed(object sender, WebTestResultViewerExt.WindowClosedEventArgs e)
@@ -250,32 +250,32 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
     }
     ```
 
-     Teraz, gdy kod zostało wykonany na potrzeby dodatku programu Visual Studio, należy dodać metodę Update do obiektu resultControl w projekcie WebPerfTestResultsViewerControl.
+     Teraz, gdy kod został ukończony dla dodatku Visual Studio, należy dodać Update metody do resultControl w projekcie WebPerfTestResultsViewerControl.
 
-## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Dodaj kod do dodatku WebPerfTestResultsViewerControl
+## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Dodawanie kodu do kontrolera WebPerfTestResultsViewerControl
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerControl i wybierz **właściwości**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu WebPerfTestResultsViewerControl i wybierz polecenie **Właściwości**.
 
-2. Wybierz kartę **aplikacja** , a następnie wybierz listę rozwijaną **platforma docelowa** i wybierz pozycję **.NET Framework 4** (lub nowszy). Zamknij okno **Właściwości** .
+2. Wybierz kartę **Aplikacja,** a następnie wybierz listę rozwijaną **Struktura docelowa** i wybierz pozycję **.NET Framework 4** (lub nowszą). Zamknij okno **Właściwości.**
 
-   Jest to wymagane w celu obsługi odwołań biblioteki DLL, które są potrzebne do rozszerzania **podglądu wyników testu wydajności sieci Web**.
+   Jest to wymagane do obsługi odwołań do biblioteki DLL, które są potrzebne do rozszerzenia **podglądu wyników testów wydajności sieci Web.**
 
-3. W **Eksploratora rozwiązań**, w projekcie WebPerfTestResultsViewerControl kliknij prawym przyciskiem myszy **odwołania** a następnie wybierz węzeł **Dodaj odwołanie**.
+3. W **Eksploratorze rozwiązań**w projekcie WebPerfTestResultsViewerControl kliknij prawym przyciskiem myszy węzeł **Odwołania** i wybierz polecenie **Dodaj odwołanie**.
 
-4. W **Dodaj odwołanie** okno dialogowe, kliknij przycisk **.NET** kartę.
+4. W oknie dialogowym **Dodawanie odwołania** kliknij kartę **.NET.**
 
-5. Przewiń w dół i wybierz **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
+5. Przewiń w dół i wybierz pozycję **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6. Wybierz **OK**.
+6. Wybierz pozycję **OK**.
 
-7. W *UserControl1.cs* Dodaj następujące instrukcje Using:
+7. W pliku *UserControl1.cs* dodaj następujące instrukcje Using:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8. Dodaj metodę aktualizacji, która jest nazywana i przekazywana jako WebTestRequestResult z metody WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged w *Connect.cs* pliku. Metoda Aktualizuj zapełnia DataGridView różne właściwości przekazany w WebTestRequestResult.
+8. Dodaj Update metoda, która jest wywoływana i przekazywane WebTestRequestResult z WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged metody w pliku *Connect.cs.* Update Metoda wypełnia DataGridView z różnych właściwości przekazanych do niego w WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -302,39 +302,39 @@ Visual Studio dodatek utworzony w poprzedniej procedurze odwołuje się do proje
 
 ## <a name="build-the-solution"></a>Kompilowanie rozwiązania
 
-- Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
+- W menu **Kompilacja** wybierz polecenie **Buduj rozwiązanie**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Zarejestruj dodatek WebPerfTestResultsViewerAddin
 
-1. Na **narzędzia** menu, wybierz opcję **Add-in Manager**.
+1. W menu **Narzędzia** wybierz polecenie **Menedżer dodatków**.
 
-2. **Add-in Manager** zostanie wyświetlone okno dialogowe.
+2. Zostanie wyświetlone okno dialogowe **Menedżer dodatków.**
 
-3. Zaznacz pole wyboru dla dodatku WebPerfTestResultsViewerAddin w **dostępne dodatki** kolumny i wyczyść pola wyboru **uruchamiania** i **wiersza polecenia**kolumn.
+3. Zaznacz pole wyboru dodatku WebPerfTestResultsViewerAddin w kolumnie Dostępne dodatki i **wyczyść** pola wyboru pod kolumnami **Uruchamianie** i **Wiersz polecenia.**
 
-4. Wybierz **OK**.
+4. Wybierz pozycję **OK**.
 
-## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Uruchamianie testu wydajności sieci Web za pomocą przeglądarki Wyniki testów sieci Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Uruchamianie testu wydajności sieci Web przy użyciu przeglądarki wyników testów sieci Web
 
-1. Uruchamianie testu wydajności sieci web, a następnie zostanie wyświetlony dodatku WebPerfTestResultsViewerAddin w nowej karcie zatytułowaną przykład, wyświetlaną w **Podgląd wyników testu wydajności sieci Web**.
+1. Uruchom test wydajności sieci Web, a zobaczysz nową kartę dodatku WebPerfTestResultsViewerAddin zatytułowaną Przykład wyświetlany w **przeglądarce wyników testów wydajności sieci Web**.
 
-2. Wybierz kartę Aby wyświetlić właściwości przedstawione w formancie DataGridView.
+2. Wybierz kartę, aby wyświetlić właściwości prezentowane w datagridview.
 
 ## <a name="net-security"></a>Zabezpieczenia platformy .NET
 
-Aby zwiększyć bezpieczeństwo poprzez uniemożliwienie automatycznego uaktywniania szkodliwych dodatków, program Visual Studio udostępnia ustawienia na **opcje narzędzi** stronę o nazwie **Dodaj dodatków/makr zabezpieczeń**.
+Aby zwiększyć bezpieczeństwo, zapobiegając automatycznemu aktywowaniu złośliwych dodatków, program Visual Studio udostępnia ustawienia na stronie **Opcje narzędzi** o nazwie **Add-in/Macros Security**.
 
-Ponadto ta strona opcji pozwala określić foldery, w których program Visual Studio szuka *. Dodatek* pliki rejestracji. Zwiększa to bezpieczeństwo pozwalając ograniczyć lokalizacje gdzie *. Dodatek* mogą być odczytywane pliki rejestracji. Pozwala to zapobiec złośliwego *. Dodatek* pliki z nieumyślnemu używaniu.
+Ponadto ta strona opcji umożliwia określenie folderów, w których program Visual Studio wyszukuje *program . Pliki rejestracyjne AddIn.* Zwiększa to bezpieczeństwo, umożliwiając ograniczenie lokalizacji, w których *. Pliki rejestracyjne AddIn* można odczytać. Pomaga to zapobiegać złośliwemu *programowi . AddIn* plików z nieumyślnie używane.
 
 **Ustawienia zabezpieczeń dodatku**
 
-Ustawienia na stronie opcje dla dodatku zabezpieczeń są następujące:
+Ustawienia na stronie opcji zabezpieczeń dodatku są następujące:
 
-- **Zezwalaj składnikom dodatku na ładowanie.** Domyślnie wybrana. Po wybraniu, dodatki mogą ładować w programie Visual Studio. Gdy nie dokonano zaznaczenia, dodatki mają zakaz załadunku w programie Visual Studio.
+- **Zezwalaj na ładowanie składników dodatku.** Domyślnie zaznaczony. Gdy ta opcja jest zaznaczona, dodatki mogą być ładowane w programie Visual Studio. Jeśli nie jest zaznaczona, dodatki nie mogą ładować w programie Visual Studio.
 
-- **Zezwalaj na składniki dodatku na ładowanie z adresu URL.** Nie jest zaznaczone domyślnie. Po wybraniu, dodatki mogą być ładowane z zewnętrznych witryn sieci Web. Gdy nie dokonano zaznaczenia, zdalne dodatki mają zakaz załadunku w programie Visual Studio. Jeśli z jakiegoś powodu nie można załadować dodatku, następnie go nie można załadować z sieci Web. To ustawienie kontroluje tylko ładowanie dodatku DLL. *. Dodatek* pliki rejestracji muszą się znajdować w systemie lokalnym.
+- **Zezwalaj na ładowanie składników dodatku z adresu URL.** Nie jest zaznaczona domyślnie. Po wybraniu tej opcji dodatki można ładować z zewnętrznych witryn sieci Web. Jeśli nie jest zaznaczona, zdalne dodatki nie mogą ładować się w programie Visual Studio. Jeśli dodatek nie może załadować z jakiegoś powodu, nie można go załadować z sieci Web. To ustawienie steruje tylko ładowaniem biblioteki DLL dodatku. W *. Pliki rejestracyjne dodatków* muszą zawsze znajdować się w systemie lokalnym.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
@@ -342,4 +342,4 @@ Ustawienia na stronie opcje dla dodatku zabezpieczeń są następujące:
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.DataGrid>
-- [Tworzenie niestandardowych kodów i wtyczek dla testów obciążenia](../test/create-custom-code-and-plug-ins-for-load-tests.md)
+- [Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych](../test/create-custom-code-and-plug-ins-for-load-tests.md)

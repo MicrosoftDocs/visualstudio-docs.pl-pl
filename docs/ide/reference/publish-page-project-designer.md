@@ -14,86 +14,86 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926170"
 ---
 # <a name="publish-page-project-designer"></a>Strona publikowania, Projektant projektu
 
-Strona **Publikowanie** **projektanta projektu** służy do konfigurowania właściwości wdrażania ClickOnce.
+Strona **Publikowania** **projektanta projektu** służy do konfigurowania właściwości wdrożenia ClickOnce.
 
-Aby uzyskać dostęp do strony **Publikowanie** , wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **Publikowanie** .
+Aby uzyskać dostęp do strony **Publikowanie,** wybierz węzeł projektu w **Eksploratorze rozwiązań,** a następnie w menu **Projekt** kliknij polecenie **Właściwości**. Po wyświetleniu **projektanta projektu** kliknij kartę **Publikuj.**
 
 > [!NOTE]
-> Niektóre z opisanych tutaj właściwości ClickOnce można także ustawić w **PublishWizard**, dostępne w menu **kompilacja** lub klikając przycisk **PublishWizard** na tej stronie.
+> Niektóre właściwości ClickOnce opisane w tym miejscu można również ustawić w **PublishWizard**, dostępne z menu **Kompilacja** lub klikając przycisk **PublishWizard** na tej stronie.
 
 ## <a name="uielement-list"></a>Lista elementów UI
 
  **Lokalizacja folderu publikowania**
 
-Określa lokalizację, w której aplikacja jest publikowana. Może to być ścieżka dysku (`C:\deploy\myapplication`), udział plików (`\\server\myapplication`) lub serwer FTP (`ftp://ftp.microsoft.com/myapplication`). Zwróć uwagę, że tekst musi być obecny w polu **Lokalizacja publikowania** , aby można było wykonać przycisk Przeglądaj ( **...** ).
+Określa lokalizację, w której aplikacja jest publikowana. Może to być`C:\deploy\myapplication`ścieżka dysku (`\\server\myapplication`), udział plików`ftp://ftp.microsoft.com/myapplication`( ) lub serwer FTP ( ). Należy pamiętać, że tekst musi znajdować się w polu **Lokalizacja publikowania,** aby przycisk przeglądania (**...**) działał.
 
  **Adres URL folderu instalacji**
 
-Opcjonalny. Określa witrynę sieci Web, do której użytkownicy przejdą w celu zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania**, na przykład po opublikowaniu aplikacji na serwerze przejściowym.
+Element opcjonalny. Określa witrynę sieci Web, do której użytkownicy przechodzą do zainstalowania aplikacji. Jest to konieczne tylko wtedy, gdy różni się od **lokalizacji publikowania**, na przykład, gdy aplikacja jest publikowana na serwerze przejściowym.
 
  **Tryb instalacji i ustawienia**
 
-Określa, czy aplikacja jest uruchamiana bezpośrednio z **lokalizacji publikowania** (gdy **aplikacja jest dostępna w trybie online** jest zaznaczona) lub jest zainstalowana i dodawana do menu **Start** oraz do apletu **Dodaj lub usuń programy** w **Panel sterowania** (gdy **aplikacja jest dostępna w trybie offline, a także** jest zaznaczona).
+Określa, czy aplikacja jest uruchamiana bezpośrednio z **lokalizacji publikowania** (gdy aplikacja jest dostępna tylko **w trybie online** jest zaznaczona) lub jest zainstalowana i dodana do menu **Start** i elementu Dodaj lub **usuń programy** w **Panelu sterowania** (gdy aplikacja jest również dostępna w **trybie offline).**
 
-W przypadku aplikacji przeglądarki sieci Web WPF **aplikacja jest dostępna w trybie offline** , a opcja jest wyłączona, ponieważ takie aplikacje są dostępne tylko w trybie online.
+W przypadku aplikacji przeglądarki sieci Web WPF **aplikacja jest dostępna w trybie offline, ponieważ** takie aplikacje są dostępne tylko w trybie online.
 
  **Pliki aplikacji**
 
-Otwiera okno dialogowe pliki aplikacji, w którym można określić, w jaki sposób i gdzie są instalowane poszczególne pliki.
+Otwiera okno dialogowe Pliki aplikacji, które służy do określania sposobu i miejsca instalowania poszczególnych plików.
 
  **Wymagania wstępne**
 
-Otwiera okno dialogowe wymagania wstępne, które służy do określania składników wymaganych wstępnie, takich jak .NET Framework, które mają być instalowane razem z aplikacją.
+Otwiera okno dialogowe Wymagania wstępne, które służy do określania składników wymagań wstępnych, takich jak .NET Framework, które mają być zainstalowane razem z aplikacją.
 
  **Aktualizacje**
 
-Otwiera okno dialogowe aktualizacje aplikacji, w którym można określić zachowanie aktualizacji dla aplikacji. Niedostępne, gdy **aplikacja jest dostępna tylko w trybie online** jest zaznaczona.
+Otwiera okno dialogowe Aktualizacje aplikacji, które służy do określania zachowania aktualizacji dla aplikacji. Opcja **niedostępna, gdy aplikacja jest dostępna tylko w trybie online.**
 
  **Opcje**
 
-Otwiera okno dialogowe Opcje publikowania, które służy do określania dodatkowych opcji publikowania zaawansowanego.
+Otwiera okno dialogowe Opcje publikowania, które służy do określania dodatkowych zaawansowanych opcji publikowania.
 
- **Wersja publikacji**
+ **Opublikuj wersję**
 
-Ustawia numer wersji publikacji dla aplikacji; po zmianie numeru wersji aplikacja zostanie opublikowana jako aktualizacja. Każda część wersji publikacji (**główna**, pomocnicza, **kompilacja**, **poprawka**) może mieć maksymalną wartość 65355 (<xref:System.UInt16.MaxValue>), maksymalną dozwoloną przez. <xref:System.Version>
+Ustawia numer wersji publikowania dla aplikacji; po zmianie numeru wersji aplikacja jest publikowana jako aktualizacja. Każda część wersji publikowania **(Major**, **Minor**, **Build**, **Revision**) może mieć<xref:System.UInt16.MaxValue>maksymalną wartość <xref:System.Version>65355 ( ), maksymalną dozwoloną przez .
 
-Po zainstalowaniu więcej niż jedna wersja aplikacji przy użyciu technologii ClickOnce, instalacja przemieszcza inne wersje aplikacji do folderu o nazwie archiwum, w lokalizacji publikowania, który określisz. Archiwizowanie starszych w ten sposób utrzymuje katalogu instalacyjnyego folderów z wcześniejszych wersji.
+Po zainstalowaniu więcej niż jednej wersji aplikacji przy użyciu ClickOnce, instalacja przenosi wcześniejsze wersje aplikacji do folderu o nazwie Archiwum, w lokalizacji publikowania, które określisz. Archiwizacja wcześniejszych wersji w ten sposób utrzymuje katalog instalacyjny z dala od folderów z wcześniejszej wersji.
 
- **Automatycznie Zwiększ numer poprawki przy każdej publikacji**
+ **Automatyczne zwiększanie wersji przy każdym publikowaniu**
 
-Opcjonalny. Gdy ta opcja jest zaznaczona (wartość domyślna), część **poprawki** numeru wersji publikacji jest zwiększana o jeden po opublikowaniu aplikacji. Powoduje to opublikowanie aplikacji jako aktualizacji.
+Element opcjonalny. Po wybraniu tej opcji (domyślnie) **część rewizji** numeru wersji publikowania jest zwiększana o jeden za każdym razem, gdy aplikacja jest publikowana. Powoduje to, że aplikacja ma zostać opublikowana jako aktualizacja.
 
  **Kreator publikacji**
 
-Otwiera Kreatora publikacji. Ukończenie działania Kreatora publikacji ma taki sam skutek jak uruchomienie polecenia **Publikuj** w menu **kompilacja** .
+Otwiera Kreatora publikowania. Ukończenie Kreatora publikowania ma taki sam efekt jak uruchomienie polecenia **Publikuj** w menu **Kompilacja.**
 
- **Publikuj teraz**
+ **Opublikuj teraz**
 
 Publikuje aplikację przy użyciu bieżących ustawień. Odpowiednik przycisku **Zakończ** w **PublishWizard**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Publikowanie aplikacji ClickOnce](../../deployment/publishing-clickonce-applications.md)
-- [Instrukcje: Publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Instrukcje: Określanie lokalizacji kopiowania plików przez program Visual Studio](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Instrukcje: Określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Instrukcje: Określanie linku do pomocy technicznej](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Instrukcje: Określanie trybu instalacji offline lub online w ramach technologii ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [Instrukcje: Włączanie funkcji AutoStart dla instalacji z dysku CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Instrukcje: Ustawianie wersji publikacji technologii ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Instrukcje: Automatyczne zwiększanie wersji publikacji ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [Instrukcje: Określanie plików publikowanych za pomocą technologii ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [Instrukcje: Instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Instrukcje: Zarządzanie aktualizacjami dla aplikacji ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Instrukcje: Zmienianie języka publikacji dla aplikacji ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Instrukcje: Określanie nazwy menu Start dla aplikacji ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
-- [Instrukcje: Określanie strony publikowania dla aplikacji ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-- [Wskazówki dotyczące wdrażania i zabezpieczeń ClickOnce](../../deployment/clickonce-security-and-deployment.md)
+- [Instrukcje: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Porady: określanie lokalizacji kopiowania plików przez program Visual Studio](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Instrukcje: określanie lokalizacji, z której użytkownicy końcowi będą przeprowadzać instalacje](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Instrukcje: określanie linku do pomocy technicznej](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Instrukcje: określanie trybu offline lub online instalowania za pomocą technologii ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Porady: włączenie funkcji AutoStart dla instalacji z dysku CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [Instrukcje: ustawienie wersji publikacji technologii ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Instrukcje: automatyczne zwiększenie wersji publikacji ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Instrukcje: określanie plików publikowanych za pomocą technologii ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [Porady: instalowanie wstępnie wymaganych składników za pomocą aplikacji ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Porady: zarządzanie aktualizacji dla aplikacji ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Porady: zmienianie języka publikacji dla aplikacji ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Instrukcje: określanie nazwy menu Start dla aplikacji ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Instrukcje: określanie strony publikowania dla aplikacji ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [Kliknijonce zabezpieczenia i wdrażanie](../../deployment/clickonce-security-and-deployment.md)

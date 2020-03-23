@@ -13,52 +13,52 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567908"
 ---
 # <a name="prerequisites-dialog-box"></a>Wstępnie wymagane składniki — Okno dialogowe
 
-W oknie dialogowym **wymagania wstępne** określono, które wstępnie wymagane składniki są zainstalowane, jak są instalowane, oraz kolejności instalacji pakietów.
+Okno dialogowe **Wymagania wstępne** określa, które składniki wymagań wstępnych są zainstalowane, jak są instalowane i jaka kolejność pakietów jest instalowana.
 
-![Okno dialogowe wymagania wstępne w programie Visual Studio](media/prerequisites-dialog-box.png)
+![Okno dialogowe Wymagania wstępne w programie Visual Studio](media/prerequisites-dialog-box.png)
 
-Aby uzyskać dostęp do okna dialogowego, wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie wybierz pozycję **Project** > **Właściwości**. Gdy zostanie wyświetlony **Projektant projektu** , wybierz kartę **Publikowanie** , a następnie wybierz pozycję **wymagania wstępne**. W przypadku projektów instalacyjnych w menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się okno dialogowe **strony właściwości** , kliknij pozycję **wymagania wstępne**.
+Aby uzyskać dostęp do okna dialogowego, wybierz węzeł projektu w **Eksploratorze rozwiązań,** a następnie wybierz pozycję**Właściwości** **projektu** > . Po wyświetleniu **projektanta projektu** wybierz kartę **Publikuj,** a następnie wybierz pozycję **Wymagania wstępne**. W przypadku projektów instalatora w menu **Projekt** kliknij polecenie **Właściwości**. Po **wyświetleniu** okna dialogowego Strony właściwości kliknij pozycję **Wymagania wstępne**.
 
-## <a name="uielement-list"></a>Lista elementów UIElement
+## <a name="uielement-list"></a>Lista UIElement
 
 |Element|Opis|
 |-------------|-----------------|
-|**Utwórz program instalacyjny, aby zainstalować wstępnie wymagane składniki**|Obejmuje składniki wymagane wstępnie w programie instalacyjnym aplikacji (*Setup. exe*), dzięki czemu zostaną one zainstalowane przed aplikacją w kolejności zależności. Ta opcja jest wybrana domyślnie. Jeśli nie jest zaznaczone, *plik Setup. exe* nie zostanie utworzony.|
-|**Wybierz wymagania wstępne do zainstalowania**|Określa, czy zainstalować składniki, takie jak .NET Framework C++ i biblioteki środowiska uruchomieniowego.<br /><br />Na przykład, zaznaczając pole wyboru obok **SQL Server 2012 Express**, należy określić, że program instalacyjny musi sprawdzić, czy ten składnik jest zainstalowany na komputerze docelowym, i zainstalować go, jeśli nie.<br /><br />Aby uzyskać szczegółowe informacje na temat każdego wstępnie wymaganego pakietu, zobacz [Informacje o wymaganiach wstępnych](#prerequisites-information).|
-|**Pobierz wstępnie wymagane składniki z witryny sieci Web dostawcy składników**|Określa, że wstępnie wymagane składniki mają być instalowane z witryny sieci Web dostawcy. Jest to domyślne ustawienie opcji.|
-|**Pobierz wstępnie wymagane składniki z tej samej lokalizacji co moja aplikacja**|Określa, że wstępnie wymagane składniki mają być instalowane z tej samej lokalizacji, w której znajduje się aplikacja. Spowoduje to skopiowanie wszystkich wstępnie wymaganych pakietów do lokalizacji publikowania. Aby opcja działała, składniki muszą się znajdować na komputerze deweloperskim.|
-|**Pobierz wstępnie wymagane składniki z następującej lokalizacji**|Określa, że wstępnie wymagane składniki mają być instalowane z wprowadzonej lokalizacji. Możesz użyć przycisku **Przeglądaj** , aby wybrać lokalizację.|
+|**Tworzenie programu instalacyjnego do instalowania składników wstępnych**|Zawiera składniki wymaganego w programie instalacyjnym aplikacji *(Setup.exe),* dzięki czemu zostaną zainstalowane przed aplikacją w kolejności zależności. Ta opcja jest wybrana domyślnie. Jeśli nie jest zaznaczona, nie jest tworzony *plik Setup.exe.*|
+|**Wybierz wymagania wstępne do zainstalowania**|Określa, czy mają być instalowane składniki, takie jak .NET Framework i biblioteki wykonawcze języka C++.<br /><br />Na przykład zaznaczając pole wyboru obok **programu SQL Server 2012 Express,** należy określić, że program instalacyjny musi sprawdzić, czy ten składnik jest zainstalowany na komputerze docelowym, i zainstalować go, jeśli nie jest.<br /><br />Aby uzyskać szczegółowe informacje o każdym pakiecie wymagań wstępnych, zobacz [Informacje o wymaganiach wstępnych](#prerequisites-information).|
+|**Pobieranie wymagań wstępnych ze strony internetowej dostawcy komponentu**|Określa, że składniki wymaganego są instalowane w witrynie sieci Web dostawcy. Jest to domyślne ustawienie opcji.|
+|**Pobieranie wymagań wstępnych z tej samej lokalizacji co moja aplikacja**|Określa, że składniki wymaganego być zainstalowane z tej samej lokalizacji co aplikacja. Spowoduje to skopiowanie wszystkich pakietów wymaganych do lokalizacji publikowania. Aby opcja działała, składniki muszą się znajdować na komputerze deweloperskim.|
+|**Pobieranie wymagań wstępnych z następującej lokalizacji**|Określa, że składniki wymaganego są instalowane z wprowadzonej lokalizacji. Za pomocą przycisku **Przeglądaj** można wybrać lokalizację.|
 
 > [!NOTE]
-> Aby uzyskać informacje na temat miejsca, w którym należy wprowadzić wymagania wstępne, zobacz [Tworzenie pakietów programu inicjującego](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages).
+> Aby uzyskać informacje o tym, gdzie umieścić wymagania wstępne, zobacz [Tworzenie pakietów inicjującego](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages).
 
 ## <a name="prerequisites-information"></a>Informacje o wymaganiach wstępnych
 
-Wstępnie wymagane składniki, które pojawiają się w oknie dialogowym **wymagania wstępne** , mogą się różnić od tych znajdujących się na poniższej liście. Wstępnie wymagane pakiety wymienione w **oknie dialogowym wymagania wstępne** są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli później zmienisz platformę docelową projektu, musisz ręcznie wybrać wymagania wstępne, aby dopasować nową platformę docelową.
+Składniki wymagań wstępnych, które pojawiają się w oknie dialogowym **Wymagania wstępne** mogą różnić się od tych na poniższej liście. Pakiety wymagań wstępnych wymienione w **oknie dialogowym Wymagania wstępne** są ustawiane automatycznie przy pierwszym otwarciu okna dialogowego. Jeśli następnie zmienisz platformę docelową projektu, musisz ręcznie wybrać wymagania wstępne, aby dopasować się do nowej struktury docelowej.
 
 |Element|Opis|
 |-------------|-----------------|
-|**.NET Framework 3,5 z dodatkiem SP1**|Ten pakiet instaluje następujące elementy:<br /><br /> -.NET Framework wersje 2,0, 3,0 i 3,5.<br />-Obsługa wszystkich wersji .NET Framework w systemach operacyjnych 32-bitowych (x86) i 64-bitowych (x64).<br />-Pakiety językowe dla każdej wersji .NET Framework, która jest zainstalowana z pakietem.<br />— Dodatki Service Pack dla .NET Framework 2,0 i 3,0.<br /><br /> .NET Framework 3,0 jest dołączony do systemu Windows Vista, a .NET Framework 3,5 jest dołączony do programu Visual Studio. .NET Framework 3,5 jest wymagana dla wszystkich Visual Basic i C# projektów, które są kompilowane dla 32-bitowych systemów operacyjnych i dla których platforma docelowa jest ustawiona na **.NET Framework 3,5**oraz dla Visual Basic C# i projektów skompilowanych dla systemów 64-bitowych. (IA64 nie jest obsługiwana). Należy pamiętać, że C# Visual Basic i projekty są kompilowane domyślnie dla dowolnej architektury procesora. Aby uzyskać więcej informacji, zobacz temat [Omówienie określania elementów docelowych](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wymagań wstępnych dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
-|**Microsoft .NET Framework 4.x**|Ten pakiet instaluje .NET Framework 4. x dla platform x86 i x64.|
-|**Typy Microsoft System CLR dla SQL Server 2014 (x64 i x86)**|Ten pakiet instaluje typy Microsoft System CLR dla SQL Server 2014 dla x64 lub x86.|
-|**SQL Server 2008 R2 Express**|Ten pakiet instaluje Microsoft SQL Server 2008 R2 Express, bezpłatną wersję Microsoft SQL Server 2008 R2, idealną bazę danych dla małych aplikacji sieci Web, serwerów i komputerów. Może służyć bezpłatnie na potrzeby programowania i produkcji.|
-|**SQL Server 2012 Express**|Ten pakiet instaluje Microsoft SQL Server 2012 Express.|
-|**SQL Server 2012 Express LocalDB**|Ten pakiet instaluje Microsoft SQL Server 2012 Express LocalDB.|
-|**Biblioteki C++ środowiska uruchomieniowego Visual "14" (ARM)**|Ten pakiet instaluje biblioteki uruchomieniowe wizualizacji C++ dla architektury Itanium, które zapewniają procedury programowania dla systemu operacyjnego Microsoft Windows. Procedury te automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez Języki C++ C i.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dokumentacja biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
-|**Biblioteki C++ środowiska uruchomieniowego Visual "14" (x64)**|Ten pakiet instaluje biblioteki uruchomieniowe wizualizacji C++ dla systemów operacyjnych x64, które zapewniają procedury programowania dla systemu operacyjnego Microsoft Windows. Procedury te automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez Języki C++ C i.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dokumentacja biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
-|**Biblioteki C++ środowiska uruchomieniowego Visual "14" (x86)**|Ten pakiet instaluje biblioteki uruchomieniowe wizualizacji C++ dla systemów operacyjnych x86, które zapewniają procedury programowania dla systemu operacyjnego Microsoft Windows. Procedury te automatyzują wiele typowych zadań programistycznych, które nie są dostarczane przez Języki C++ C i.<br /><br /> Aby uzyskać więcej informacji, zobacz [Dokumentacja biblioteki wykonawczej C](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**.NET Framework 3.5 SP1**|Ten pakiet instaluje następujące elementy:<br /><br /> - .NET Framework wersje 2.0, 3.0 i 3.5.<br />- Obsługa wszystkich wersji programu .NET Framework w systemach operacyjnych 32-bitowych (x86) i 64-bitowych (x64).<br />- Pakiety językowe dla każdej wersji programu .NET Framework, która jest zainstalowana z pakietem.<br />- Dodatki Service Pack dla platformy .NET Framework 2.0 i 3.0.<br /><br /> Program .NET Framework 3.0 jest dołączony do systemu Windows Vista, a program .NET Framework 3.5 jest dołączony do programu Visual Studio. Program .NET Framework 3.5 jest wymagany dla wszystkich projektów języka Visual Basic i C#, które są kompilowane dla 32-bitowych systemów operacyjnych i dla których struktura docelowa jest ustawiona na **.NET Framework 3.5**oraz dla projektów języka Visual Basic i C# skompilowanych dla 64-bitowych systemów operacyjnych. (IA64 nie jest obsługiwany.) Należy zauważyć, że projekty języka Visual Basic i C# są domyślnie kompilowane dla dowolnej architektury procesora CPU. Aby uzyskać więcej informacji, zobacz [Omówienie kierowania na platformę](../../ide/visual-studio-multi-targeting-overview.md) i [wdrażanie wymagań wstępnych dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**Microsoft .NET Framework 4.x**|Ten pakiet instaluje .NET Framework 4.x dla platform x86 i x64.|
+|**Typy CLR systemu Microsoft dla programu SQL Server 2014 (x64 i x86)**|Ten pakiet instaluje typy CLR systemu Microsoft Dla programu SQL Server 2014 dla x64 lub x86.|
+|**SQL Server 2008 R2 Express**|Ten pakiet instaluje program Microsoft SQL Server 2008 R2 Express, bezpłatną wersję programu Microsoft SQL Server 2008 R2, idealną bazę danych dla małych aplikacji sieci Web, serwerów lub komputerów stacjonarnych. Może być używany za darmo do rozwoju i produkcji.|
+|**SQL Server 2012 Express**|Ten pakiet instaluje program Microsoft SQL Server 2012 Express.|
+|**SQL Server 2012 Express LocalDB**|Ten pakiet instaluje usługę Microsoft SQL Server 2012 Express LocalDB.|
+|**Biblioteki środowiska wykonawczego visual C++ "14" (ARM)**|Ten pakiet instaluje biblioteki w czasie wykonywania języka Visual C++ dla architektury Itanium, które zapewniają procedury programowania dla systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programowania, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [C Run-Time Library Reference](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**Biblioteki środowiska wykonawczego Visual C++ "14" (x64)**|Ten pakiet instaluje biblioteki w czasie wykonywania języka Visual C++ dla systemów operacyjnych x64, które zapewniają procedury programowania dla systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programowania, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [C Run-Time Library Reference](/cpp/c-runtime-library/c-run-time-library-reference).|
+|**Biblioteki środowiska wykonawczego Visual C++ "14" (x86)**|Ten pakiet instaluje biblioteki w czasie wykonywania języka Visual C++ dla systemów operacyjnych x86, które zapewniają procedury programowania dla systemu operacyjnego Microsoft Windows. Te procedury automatyzują wiele typowych zadań programowania, które nie są dostarczane przez języki C i C++.<br /><br /> Aby uzyskać więcej informacji, zobacz [C Run-Time Library Reference](/cpp/c-runtime-library/c-run-time-library-reference).|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Strona publikowania, Projektant projektu](../../ide/reference/publish-page-project-designer.md)
-- [Wstępnie wymagane składniki wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)
+- [Wymagania wstępne wdrażania aplikacji](../../deployment/application-deployment-prerequisites.md)
 - [Wdrażanie wstępnie wymaganych składników dla aplikacji 64-bitowych](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
-- [Omówienie określania celu platformy](../../ide/visual-studio-multi-targeting-overview.md)
+- [Omówienie kierowania na ramy](../../ide/visual-studio-multi-targeting-overview.md)

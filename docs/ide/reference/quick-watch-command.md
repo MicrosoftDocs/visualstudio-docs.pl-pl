@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565633"
 ---
 # <a name="quick-watch-command"></a>Szybka czujka — Polecenie
-Wyświetla wybrany lub określony tekst w polu wyrażenie okna [QuickWatch](../../debugger/watch-and-quickwatch-windows.md) . Za pomocą tego okna dialogowego można obliczyć bieżącą wartość zmiennej lub wyrażenia rozpoznawanego przez debuger lub zawartość rejestru. Ponadto można zmienić wartość dowolnej zmiennej innej niż stała lub zawartości dowolnego rejestru.
+Wyświetla zaznaczony lub określony tekst w polu Wyrażenie w oknie [QuickWatch.](../../debugger/watch-and-quickwatch-windows.md) To okno dialogowe służy do obliczania bieżącej wartości zmiennej lub wyrażenia rozpoznawanej przez debuger lub zawartości rejestru. Ponadto można zmienić wartość dowolnej zmiennej niekonserwowej lub zawartości dowolnego rejestru.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,11 +32,11 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>Argumenty
 
 `text`\
-Opcjonalny. Tekst, który ma zostać dodany do okna dialogowego **QuickWatch** .
+Element opcjonalny. Tekst do dodania do okna dialogowego **QuickWatch.**
 
 ## <a name="remarks"></a>Uwagi
 
-W przypadku pominięcia `text`, w okno wyrażeń kontrolnych zostanie dodany aktualnie zaznaczony tekst lub słowo.
+Jeśli `text` zostanie pominięty, aktualnie zaznaczony tekst lub wyraz na kursorze zostanie dodany do okna Czujka.
 
 ## <a name="example"></a>Przykład
 
@@ -44,10 +44,10 @@ W przypadku pominięcia `text`, w okno wyrażeń kontrolnych zostanie dodany akt
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Ustaw kontrolkę na zmienne przy użyciu okien czujki i QuickWatch w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Ustawianie zegarka na zmiennych przy użyciu systemu Watch i QuickWatch Windows w programie Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

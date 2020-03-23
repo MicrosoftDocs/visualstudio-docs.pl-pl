@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do biblioteki języka C++ | Dokumentacja firmy Microsoft
+title: Dokumentacja biblioteki C++ | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552983"
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki języka C++
 
-Ta sekcja zawiera informacje dotyczące SDK narzędzia Concurrency Visualizer.
+Ta sekcja zawiera informacje referencyjne dla SDK wizualizatora współbieżności.
 
 > [!NOTE]
-> Standard języka C++ zastrzega stosowanie identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znak do implementacji takich jak biblioteki. Nie należy używać nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu, elementy, które stosują taką konwencję nazw, których nie jest gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tego względu takie elementy kodu zostały pominięte w tej dokumentacji.
+> Standard języka C++ zastrzega użycie identyfikatorów, które zaczynają`_`się od znaku podkreślenia ( ) dla implementacji, takich jak biblioteki. Nie należy używać nazw zaczynających się od podkreślenia w kodzie. Zachowanie elementów kodu, których nazwy są zgodne z niniejszą konwencją nie są gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tych powodów takie elementy kodu są pomijane w tej dokumentacji.
 
 ## <a name="in-this-section"></a>W tej sekcji
 
-[Przestrzeń nazwy współbieżności (Concurrency Visualizer)](../profiling/concurrency-namespace-concurrency-visualizer.md)
+[Obszar nazw współbieżności (wizualizator współbieżności)](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

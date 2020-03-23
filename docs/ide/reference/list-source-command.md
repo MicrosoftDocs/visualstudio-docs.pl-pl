@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747904"
 ---
 # <a name="list-source-command"></a>Lista źródeł — Polecenie
@@ -32,34 +32,34 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Przełączniki
-/Count: `number`
+/Count:`number`
 
-Opcjonalny. Określa liczbę wierszy do wyświetlenia.
+Element opcjonalny. Określa liczbę wyświetlanych linii.
 
-/Current
+/Prąd
 
-Opcjonalny. Wyświetla bieżący wiersz.
+Element opcjonalny. Pokazuje bieżący wiersz.
 
-/File: `filename`
+/Plik:`filename`
 
-Opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nazwa pliku nie zostanie określona, polecenie pokazuje kod źródłowy wiersza bieżącej instrukcji.
+Element opcjonalny. Ścieżka pliku do wyświetlenia. Jeśli nie określono nazwy pliku, polecenie pokazuje kod źródłowy wiersza bieżącej instrukcji.
 
-/Line: `number`
+/Linia:`number`
 
-Opcjonalny. Pokazuje określony numer wiersza.
+Element opcjonalny. Pokazuje określony numer wiersza.
 
-/ShowLineNumbers: `yes|no`
+/ShowLineNumbers:`yes|no`
 
-Opcjonalny. Określa, czy mają być wyświetlane numery wierszy.
+Element opcjonalny. Określa, czy mają być wyświetlane numery wierszy.
 
 ## <a name="example"></a>Przykład
-W tym przykładzie przedstawiono kod źródłowy z wiersza 4 pliku Form1. vb, z widocznymi numerami wierszy.
+W tym przykładzie wyszczeli się kod źródłowy z wiersza 4 pliku Form1.vb z widocznymi numerami wierszy.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)

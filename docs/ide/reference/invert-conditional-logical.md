@@ -11,36 +11,36 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531675"
 ---
-# <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Odwróć wyrażenia warunkowe i warunkowego i/lub operatorów
+# <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Odwrócone wyrażenia warunkowe i operatory warunkowe I/OR
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 - Visual Basic
 
-**Co:** Umożliwia Odwróć wyrażenia warunkowego lub warunkowe i/lub operatora.
+**Co:** Umożliwia odwrócenie wyrażenia warunkowego lub operatora warunkowego I/OR.
 
-**Kiedy:** Wyrażenia warunkowego lub warunkowe i/lub operator, który będzie lepszym rozumieć, jeśli odwrócony.
+**Kiedy:** Masz wyrażenie warunkowe lub warunkowe I/OR operatora, które byłyby lepiej zrozumiałe, jeśli odwrócone.
 
-**Dlaczego:** Odwracanie wyrażenie lub warunkowe i/lub operator ręcznie może trwać dłużej i ewentualnie wprowadzał błędy. Ta poprawka kodu pomaga to osiągnąć, automatycznie tej refaktoryzacji.
+**Dlaczego?** Odwracanie wyrażenia lub warunkowego operatora AND/OR ręcznie może trwać znacznie dłużej i ewentualnie powodować błędy. Ta poprawka kodu pomaga wykonać tę refaktoryzacji automatycznie.
 
-## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>Odwróć wyrażenia warunkowe i warunkowego i/lub refaktoryzacji operatorów
+## <a name="invert-conditional-expressions-and-conditional-andor-operators-refactoring"></a>Odwrócone wyrażenia warunkowe i refaktoryzatory warunkowe i/lub operatorów
 
-1. Umieść kursor w wyrażeniu warunkowym lub warunkowe i/lub operatora.
-2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-3. Wybierz **warunkowe Odwróć** lub **Zastąp "& &" z "||"**
+1. Umieść kursor w wyrażeniu warunkowym lub w uwarunkowatym operatorze I/OR.
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+3. Wybierz **opcję Odwróć warunek** lub **zamień "&&" na "||"**
 
-    ![Odwróć warunkowe](media/invert-conditional.png)
+    ![Odwrócony warunkowy](media/invert-conditional.png)
 
-    ![Odwróć warunkowe](media/invert-logical-operator.png)
+    ![Odwrócony warunkowy](media/invert-logical-operator.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)

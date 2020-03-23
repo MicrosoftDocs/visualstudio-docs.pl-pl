@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585707"
 ---
 # <a name="add-existing-item-command"></a>Dodaj istniejący element — Polecenie
@@ -31,31 +31,31 @@ File.AddExistingItem filename [/e:editorname]
 
 ## <a name="arguments"></a>Argumenty
 `filename`\
-Wymagany. Pełna ścieżka i nazwa pliku z rozszerzeniem, elementu, który ma zostać dodany do bieżącego rozwiązania. Jeśli ścieżka pliku lub nazwa pliku zawiera spacje, należy ująć całą ścieżkę w cudzysłów.
+Wymagany. Pełna ścieżka i nazwa pliku, z rozszerzeniem, elementu, aby dodać do bieżącego rozwiązania. Jeśli ścieżka pliku lub nazwa pliku zawiera spacje, należy ująć całą ścieżkę w cudzysłów.
 
 ## <a name="switches"></a>Przełączniki
-/e: `editorname`\
-Opcjonalny. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
+/e:`editorname`\
+Element opcjonalny. Nazwa edytora, w którym zostanie otwarty plik. Jeśli argument jest określony, ale nie podano nazwy edytora, zostanie wyświetlone okno dialogowe **Otwórz za pomocą.**
 
-Składnia argumentów/e:`editorname` używa nazw edytorów, które są wyświetlane w **oknie dialogowym Otwórz za pomocą**, ujęte w cudzysłów. Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego, należy wprowadzić następujące polecenie dla argumentu/e:`editorname`.
+Składnia argumentu /e:`editorname` używa nazw edytorów wyświetlanych w oknie **dialogowym Otwórz za pomocą**, ujętych w cudzysłów. Na przykład, aby otworzyć arkusz stylów w edytorze kodu źródłowego,`editorname` należy wprowadzić następujące dla argumentu /e:.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Uwagi
-Autouzupełnianie próbuje znaleźć poprawną ścieżkę i nazwę pliku podczas wpisywania.
+Autouzupełnianie próbuje zlokalizować prawidłową ścieżkę i nazwę pliku podczas pisania.
 
 ## <a name="example"></a>Przykład
-Ten przykład dodaje plik Form1. frm do bieżącego rozwiązania.
+W tym przykładzie dodaje plik Form1.frm do bieżącego rozwiązania.
 
 ```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

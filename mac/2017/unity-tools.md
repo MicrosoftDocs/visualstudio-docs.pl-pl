@@ -1,65 +1,65 @@
 ---
-title: Program Visual Studio dla komputerów Mac Tools for Unity
-description: Wprowadzenie do Visual Studio Tools for Unity rozszerzenia
+title: Narzędzia programu Visual Studio dla komputerów Mac dla unity
+description: Wprowadzenie rozszerzenia Visual Studio Tools for Unity
 author: therealjohn
 ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62986808"
 ---
-# <a name="visual-studio-for-mac-tools-for-unity"></a>Program Visual Studio dla komputerów Mac Tools for Unity
+# <a name="visual-studio-for-mac-tools-for-unity"></a>Narzędzia programu Visual Studio dla komputerów Mac dla unity
 
-![Stylizowane obraz aparatu Unity i programu Visual Studio dla komputerów Mac](media/vsmac-tools-unity-image1.png)
+![Stylizowany obraz Unity i Visual Studio dla komputerów Mac](media/vsmac-tools-unity-image1.png)
 
 Visual Studio dla komputerów Mac Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, które przekształca program Visual Studio dla komputerów Mac w zaawansowane narzędzie do tworzenia międzyplatformowych gier i aplikacji z wykorzystaniem platformy Unity.
 
-Integracja aparatu Unity jest uwzględniona fabrycznie w programie Visual Studio dla komputerów Mac, a począwszy od Unity 2018.1, Visual Studio for Mac jest ustawieniem domyślnym C# środowisko IDE przeznaczone do projektów aparatu Unity.
+Integracja unity jest zawierana po wyjęciu z pudełka w programie Visual Studio dla komputerów Mac, a począwszy od unity 2018.1, Visual Studio dla komputerów Mac jest domyślnym ideem języka C# dla projektów Unity.
 
 ## <a name="overview"></a>Omówienie
 
-Oto niektóre kluczowe funkcje programu Visual Studio dla komputerów Mac Tools for Unity:
+Oto niektóre z kluczowych funkcji programu Visual Studio for Mac Tools for Unity:
 
-### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Zgodne z programem Visual Studio for Mac Community Edition
+### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Zgodność z programem Visual Studio dla komputerów Mac Community Edition
 
-[Program Visual Studio for Mac Community Edition](https://visualstudio.microsoft.com/) . jest dostępna bezpłatna i powiązane z użyciem aparatu Unity instaluje, począwszy od 2018.1 aparatu Unity. Zobacz programu Visual Studio dla komputerów Mac Tools for Unity [dokumentację dotyczącą konfiguracji](setup-vsmac-tools-unity.md) Aby uzyskać więcej informacji.
+[Visual Studio for Mac Community Edition](https://visualstudio.microsoft.com/) jest dostępny bezpłatnie i w pakiecie z instalacjami Unity, począwszy od Unity 2018.1. Aby uzyskać więcej informacji, zobacz [dokumentację konfiguracji](setup-vsmac-tools-unity.md) programu Visual Studio for Mac Tools for Unity.
 
-### <a name="intellisense-for-unity-messages"></a>Funkcja IntelliSense dla komunikatów Unity
+### <a name="intellisense-for-unity-messages"></a>Komunikaty IntelliSense for Unity
 
-Funkcja IntelliSense ułatwia szybkie i łatwe do [Implementuj komunikaty aparatu Unity](using-vsmac-tools-unity.md#intellisense-for-unity-messages) takich jak `OnCollisionEnter`, łącznie z ich parametrów.
+IntelliSense sprawia, że szybkie i `OnCollisionEnter`łatwe do [wdrożenia komunikatów Unity](using-vsmac-tools-unity.md#intellisense-for-unity-messages) jak , w tym ich parametry.
 
-### <a name="superior-debugging"></a>Lepsze funkcje debugowania
+### <a name="superior-debugging"></a>Doskonałe debugowanie
 
-Program Visual Studio dla komputerów Mac Tools for Unity obsługuje wszystkie [debugowania](using-vsmac-tools-unity.md#unity-debugging) funkcje, których można oczekiwać od programu Visual Studio:
+Visual Studio for Mac Tools for Unity obsługuje wszystkie funkcje [debugowania,](using-vsmac-tools-unity.md#unity-debugging) których oczekujesz od programu Visual Studio:
 
 * Ustaw punkty przerwania, w tym warunkowe punkty przerwania.
-* Oceniaj złożone wyrażenia w oknie czujki.
-* Sprawdzanie i modyfikowanie wartości zmiennych i argumentów.
-* Przejść do szczegółów w złożonych obiektów i struktur danych.
+* Ocena złożonych wyrażeń w oknie Czujka.
+* Inspekcja i modyfikowanie wartości zmiennych i argumentów.
+* Przechodzenie do szczegółów w złożonych obiektach i strukturach danych.
 
-### <a name="powerful-refactoring-and-context-actions"></a>Zaawansowane operacje refaktoryzacji i kontekstu
+### <a name="powerful-refactoring-and-context-actions"></a>Zaawansowane refaktoryzowania i akcji kontekstowych
 
-Napisz więcej kodu można używać z menu szybkiego i skróty klawiaturowe dla [zmiana nazwy, refaktoryzacji i kontekstu akcji](refactoring.md).
+Napisz więcej użytecznego kodu z szybkimi menu i skrótami klawiaturowymi do [zmiany nazwy, refaktoryzacji i akcji kontekstowych](refactoring.md).
 
 ### <a name="browse-and-add-new-files"></a>Przeglądanie i dodawanie nowych plików
 
-Przeglądanie projektów aparatu Unity i [Dodaj foldery, skryptów i programów do cieniowania](using-vsmac-tools-unity.md#adding-new-unity-files-and-folders), wszystko to w ramach programu Visual Studio dla komputerów Mac w środowisku IDE.
+Przeglądaj projekty Unity i [dodaj foldery, skrypty lub moduły cieniowania](using-vsmac-tools-unity.md#adding-new-unity-files-and-folders), wszystko w środowisku IDE programu Visual Studio dla komputerów Mac.
 
-### <a name="use-familiar-key-bindings"></a>Użyj znanych powiązań klawiszy
+### <a name="use-familiar-key-bindings"></a>Używanie znanych powiązań klawiszy
 
-Zwiększ produktywność za pomocą klawiszy, które znasz. Program Visual Studio for Mac oferuje znanych [klucz powiązania](customizing-the-ide.md) dla wielu popularnych środowisk IDE, takie jak Visual Studio na Windows, ReSharper, Visual Studio Code i Xcode.
+Zwiększ produktywność, korzystając z kluczowych powiązań, które znasz. Program Visual Studio dla komputerów Mac udostępnia znane [powiązania kluczy](customizing-the-ide.md) dla wielu popularnych adresów IE, takich jak Visual Studio w systemie Windows, ReSharper, Visual Studio Code i Xcode.
 
-### <a name="customize-the-visual-theme"></a>Dostosowywanie motyw wizualny
+### <a name="customize-the-visual-theme"></a>Dostosowywanie motywu wizualnego
 
-Nadaj oczy rest za pomocą dołączonej [motyw ciemny](customizing-the-ide.md).
+Daj swoim oczom odpocząć z dołączonym [ciemnym motywem.](customizing-the-ide.md)
 
-## <a name="tips-for-unity-developers-getting-started-with-visual-studio-for-mac"></a>Wskazówki dla deweloperów Unity, wprowadzenie do programu Visual Studio dla komputerów Mac
+## <a name="tips-for-unity-developers-getting-started-with-visual-studio-for-mac"></a>Wskazówki dla deweloperów Unity o rozpoczęciu pracy z programem Visual Studio dla komputerów Mac
 
-Te linki wyjaśnić przydatnych funkcji dla deweloperów Unity, które właśnie zaczynają się z programem Visual Studio dla komputerów Mac:
+Te łącza wyjaśniają przydatne funkcje dla deweloperów Unity, zaczynając od programu Visual Studio dla komputerów Mac:
 
-* [Dostosowywaniu środowiska IDE](customizing-the-ide.md) — Dowiedz się jak [Zmień motyw wizualny](customizing-the-ide.md#dark-theme) lub przełącz się do więcej powszechnie znane [klucz powiązania](customizing-the-ide.md#key-bindings) schematu.
-* [Edytor źródła](source-editor.md) — Dowiedz się, jak Visual Studio dla komputerów Mac ułatwia pisanie kodu lepsze szybciej i łatwiej, w tym wspólnego [skróty klawiaturowe](keyboard-shortcuts.md).
+* [Dostosowywanie IDE](customizing-the-ide.md) — dowiedz się, jak [zmienić motyw wizualny](customizing-the-ide.md#dark-theme) lub przełączyć się na bardziej znany schemat [wiązania klucza.](customizing-the-ide.md#key-bindings)
+* [Edytor źródłowy](source-editor.md) — dowiedz się, jak program Visual Studio dla komputerów Mac może przyspieszyć i ułatwić pisanie lepszego kodu, w tym typowe [skróty klawiaturowe.](keyboard-shortcuts.md)

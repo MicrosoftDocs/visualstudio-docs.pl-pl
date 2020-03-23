@@ -1,6 +1,6 @@
 ---
-title: Refaktoryzacja kodu w języku Python
-description: Visual Studio ułatwia refaktoryzacji kodu języka Python, zmieniając nazwę identyfikatorów, wyodrębnianie metody, dodając Importy i usuwanie nieużywanych importuje.
+title: Refaktoryzator kodu Pythona
+description: Visual Studio ułatwia refaktoryzowanie kodu języka Python, zmieniając nazwy identyfikatorów, wyodrębniając metody, dodając import i usuwając nieużywane importy.
 ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -11,72 +11,72 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62429901"
 ---
-# <a name="refactor-python-code"></a>Refaktoryzacja kodu w języku Python
+# <a name="refactor-python-code"></a>Refaktoryzator kodu Pythona
 
-Program Visual Studio zapewnia kilka poleceń dla automatycznie Przekształcanie i czyszczenie kodu źródłowego języka Python:
+Program Visual Studio udostępnia kilka poleceń do automatycznego przekształcania i czyszczenia kodu źródłowego języka Python:
 
-- [Zmień nazwę](#rename) zmienia nazwę wybranej klasy, metody lub nazwę zmiennej
-- [Wyodrębnij metodę](#extract-method) tworzy nową metodę z zaznaczonego kodu
-- [Dodaj import](#add-import) zapewnia tagu inteligentnego, aby dodać brakujący importu
-- [Usuwanie nieużywanych dyrektyw import](#remove-unused-imports) spowoduje usunięcie nieużywanych dyrektyw Import
+- [Zmiana nazwy](#rename) zmienia nazwę wybranej klasy, metody lub nazwy zmiennej
+- [Metoda wyodrębniania](#extract-method) tworzy nową metodę z wybranego kodu
+- [Dodaj import](#add-import) udostępnia tag inteligentny, aby dodać brakujący import
+- [Usuwanie nieużywanego importu](#remove-unused-imports) usuwa nieużywane importy
 
-## <a name="rename"></a>Zmień nazwę
+## <a name="rename"></a>Zmiana nazwy
 
-1. Kliknij prawym przyciskiem myszy identyfikator, który chcesz zmienić nazwę i wybierz **Zmień nazwę**, lub ustaw karetkę identyfikatora i wybierz **Edytuj** > **Refaktoryzuj**  >  **Zmień nazwę** polecenia menu (**F2**).
-2. W **Zmień nazwę** wyświetlonym oknie dialogowym wprowadź nową nazwę dla identyfikatora, a następnie wybierz pozycję **OK**:
+1. Kliknij prawym przyciskiem myszy identyfikator, którego nazwę chcesz zmienić, a następnie wybierz pozycję **Zmień nazwę**lub umieść daszek w tym identyfikatorze i wybierz polecenie menu Edytuj**regenerator** >  **Edit** > **rename** (**F2**).
+2. W wyświetlonym oknie dialogowym **Zmień nazwę** wprowadź nową nazwę identyfikatora i wybierz przycisk **OK:**
 
-   ![Zmień nazwę monit o podanie nowej nazwy identyfikator](media/code-refactor-rename-1.png)
+   ![Zmień nazwę monitu o nową nazwę identifer](media/code-refactor-rename-1.png)
 
-3. W następnym oknie dialogowym Wybierz pliki i wystąpienia w kodzie, do którego należy zastosować, zmianę nazwy; Wybierz wszystkie poszczególne wystąpienia określonej zmiany w wersji zapoznawczej:
+3. W następnym oknie dialogowym wybierz pliki i wystąpienia w kodzie, do których należy zastosować zmianę nazwy; wybierz dowolne pojedyncze wystąpienie, aby wyświetlić podgląd konkretnej zmiany:
 
-   ![Zmienianie nazwy okna dialogowego, aby wybrać lokalizację zastosować zmiany](media/code-refactor-rename-2.png)
+   ![Zmień nazwę okna dialogowego, aby wybrać miejsce zastosowania zmian](media/code-refactor-rename-2.png)
 
-4. Wybierz **Zastosuj** będzie wprowadzenie zmian do plików kodu źródłowego. (Tę akcję można cofnąć.)
+4. Wybierz **pozycję Zastosuj,** aby wprowadzić zmiany w plikach kodu źródłowego. (Tę akcję można cofnąć).
 
 ## <a name="extract-method"></a>Wyodrębnianie metody
 
-1. Wybierz wiersze kodu lub wyrażenie które ma wyodrębnić do oddzielnych metodach.
-2. Wybierz **Edytuj** > **Refaktoryzuj** > **Extrahovat metodu** polecenie menu lub typ **Ctrl** + **R** > **M**.
-3. W wyświetlonym oknie dialogowym wprowadź nową nazwę metody, wskaż, gdzie Wyodrębnij ją, a następnie wybierz pozycję Wszystkie zmienne zamknięcia. Zmienne, które nie zostały wybrane do zamknięcia są przekształcane w argumenty metody:
+1. Wybierz wiersze kodu lub wyrażenia, aby wyodrębnić do oddzielnej metody.
+2. Zaznacz polecenie menu Menu metody **Edytuj** > **refaktoryzatora** > **Extract method** lub wpisz **Klawisze Ctrl**+**R** > **M**.
+3. W wyświetlonym oknie dialogowym wprowadź nową nazwę metody, wskaż, gdzie ją wyodrębnić, i wybierz dowolne zmienne zamknięcia. Zmienne niewybrane do zamknięcia są przekształcane w argumenty metody:
 
-   ![Wyodrębnij metodę okna dialogowego](media/code-refactor-extract-method-1.png)
+   ![Okno dialogowe Wyodrębnianie metody](media/code-refactor-extract-method-1.png)
 
-4. Wybierz **OK** i kod zostanie odpowiednio zmodyfikowany:
+4. Wybierz **przycisk OK,** a kod zostanie odpowiednio zmodyfikowany:
 
-   ![Efekt wyodrębnianie metody](media/code-refactor-extract-method-2.png)
+   ![Wpływ wyodrębnienia metody](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Dodaj import
 
-Po umieszczeniu karetkę na identyfikator informacje typu nie ma program Visual Studio udostępnia tagu inteligentnego (ikonę żarówki po lewej stronie kodu), której polecenia Dodaj niezbędne `import` lub `from ... import` instrukcji:
+Po umieszczeniu karetki na identyfikator, który nie zawiera informacji o typie, Visual Studio udostępnia tag inteligentny (ikona `import` żarówki po lewej stronie kodu), którego polecenia dodają niezbędne lub `from ... import` instrukcje:
 
-![Dodawanie tagów inteligentnych importu](media/code-refactor-add-import-1.png)
+![Dodawanie tagu inteligentnego importu](media/code-refactor-add-import-1.png)
 
-Program Visual Studio oferuje `import` uzupełnienia dla najwyższego pakiety i moduły w bieżącym projekcie i standardową bibliotekę. Program Visual Studio oferuje również `from ... import` uzupełnienia dla modułów podrzędnych i podpakietów, jak również elementy członkowskie modułu. Uzupełnianie obejmują funkcje, klasy lub wyeksportowane dane. Wybierając jedną z opcji dodaje instrukcję, aby w górnej części pliku, po innych Importy lub z istniejącymi `from ... import` instrukcji, jeśli w tym samym module jest już zaimportowana.
+Visual Studio `import` oferuje uzupełnienia dla pakietów najwyższego poziomu i modułów w bieżącym projekcie i standardowej bibliotece. Visual Studio `from ... import` oferuje również uzupełnienia dla podmodułów i podpakietów, a także członków modułu. Uzupełnienia obejmują funkcje, klasy lub eksportowane dane. Wybranie jednej z opcji powoduje dodanie instrukcji w górnej części pliku po `from ... import` innych importowaniu lub do istniejącej instrukcji, jeśli ten sam moduł jest już zaimportowany.
 
-![Wynikiem dodania importu](media/code-refactor-add-import-2.png)
+![Wynik dodania importu](media/code-refactor-add-import-2.png)
 
-Program Visual Studio próbuje odfiltrować elementy członkowskie, które faktycznie nie są zdefiniowane w module, takie jak moduły są importowane do innego, które nie są elementy podrzędne, wykonując importu modułu. Na przykład użyć wielu modułów `import sys` zamiast `from xyz import sys`, więc nie widzisz zakończenia importowania `sys` z innych modułów, nawet jeśli brak modułów `__all__` elementu członkowskiego, który wyklucza `sys`.
+Visual Studio próbuje odfiltrować członków, które nie są faktycznie zdefiniowane w module, takich jak moduły, które są importowane do innego, ale nie są elementami podrzędnymi modułu podczas importowania. Na przykład wiele modułów `import sys` `from xyz import sys`używać, a nie , więc nie `sys` widać zakończenia importowania z innych `__all__` modułów, `sys`nawet jeśli moduły brakuje elementu członkowskiego, który wyklucza .
 
-Podobnie program Visual Studio filtruje funkcje, które są importowane z innymi modułami lub z wbudowanego obszaru nazw. Na przykład jeśli importuje moduł `settrace` funkcji z `sys` modułu, a następnie teoretycznie można go zaimportować z tego modułu. Ale najlepiej użyć `import settrace from sys` bezpośrednio, a zatem program Visual Studio udostępnia specjalnie tej instrukcji.
+Podobnie visual studio filtruje funkcje, które są importowane z innych modułów lub z wbudowanego obszaru nazw. Na przykład, jeśli moduł `settrace` importuje `sys` funkcję z modułu, to teoretycznie można zaimportować go z tego modułu. Ale najlepiej jest używać `import settrace from sys` bezpośrednio, a więc Visual Studio oferuje tej instrukcji w szczególności.
 
-Ponadto jeśli coś zwykle można wykluczyć, ale ma inne wartości, które mogłyby zostać uwzględnione w (ponieważ jest to nazwa została przypisana wartość w module, na przykład), program Visual Studio nadal nie obejmuje importowania. To zachowanie przyjęto założenie, że wartość nie powinna wyeksportowany, ponieważ jest on zdefiniowany w innym module, a zatem dodatkowego przydziału jest prawdopodobnie fikcyjnego wartość, która eksportowane są również nie.
+Na koniec, jeśli coś normalnie zostanie wykluczone, ale ma inne wartości, które zostaną uwzględnione (ponieważ nazwa została przypisana wartość w module, na przykład), Visual Studio nadal wyklucza importu. To zachowanie zakłada, że wartość nie powinna być eksportowana, ponieważ jest zdefiniowana w innym module, a zatem dodatkowe przypisanie może być wartością fikcyjną, która również nie jest eksportowana.
 
-## <a name="remove-unused-imports"></a>Usuwanie nieużywanych dyrektyw Import
+## <a name="remove-unused-imports"></a>Usuwanie nieużywanych importów
 
-Podczas pisania kodu, jest łatwo skończyć z `import` instrukcji dla modułów, które nie są w ogóle używane. Ponieważ program Visual Studio analizuje kod, można określić automatycznie czy `import` instrukcji jest potrzebny, analizując czy zaimportowane nazwa jest używana w zakresie, poniżej której występuje instrukcja.
+Podczas pisania kodu, łatwo skończyć `import` z instrukcji dla modułów, które nie są używane w ogóle. Ponieważ visual studio analizuje kod, można automatycznie `import` określić, czy instrukcja jest potrzebna, patrząc na czy zaimportowana nazwa jest używana w zakresie poniżej, gdzie występuje instrukcja.
 
-Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze i wybierz pozycję **Usuń Importy**, które zapewnia opcje, aby usunąć z **wszystkie zakresy** lub po prostu **bieżącego zakresu**:
+Kliknij prawym przyciskiem myszy w dowolnym miejscu edytora i wybierz polecenie **Usuń import,** co daje opcje usuwania ze **wszystkich zakresów** lub tylko **bieżącego zakresu:**
 
-![Usuwanie menu Importy](media/code-refactor-remove-imports-1.png)
+![Menu Usuń import](media/code-refactor-remove-imports-1.png)
 
 Visual Studio następnie wprowadza odpowiednie zmiany w kodzie:
 
-![Wpływ usunięcia Importy](media/code-refactor-remove-imports-2.png)
+![Efekt usuwania importu](media/code-refactor-remove-imports-2.png)
 
-Należy pamiętać, że program Visual Studio nie uwzględnia się tego do przepływu sterowania; przy użyciu nazwy przed `import` instrukcji jest traktowany tak, jakby nazwa faktycznie został użyty. Program Visual Studio ignoruje także wszystkie `from __future__` importów, Importy, podczas których są wykonywane wewnątrz definicji klasy, jak również z `from ... import *` instrukcji.
+Należy zauważyć, że visual studio nie uwzględnia przepływu sterowania; przy użyciu nazwy `import` przed instrukcja jest traktowana tak, jakby nazwa była w rzeczywistości używana. Visual Studio ignoruje `from __future__` również wszystkie importy, import, które są wykonywane `from ... import *` wewnątrz definicji klasy, a także z instrukcji.

@@ -1,6 +1,6 @@
 ---
-title: Użyj REPL środowiska Node.js
-description: Program Visual Studio umożliwia wchodzenie w interakcje ze środowiskiem uruchomieniowym platformy Node.js
+title: Korzystanie z pliku Node.js REPL
+description: Program Visual Studio zapewnia obsługę interakcji ze środowiska uruchomieniowego Node.js
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -12,40 +12,40 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62840675"
 ---
-# <a name="work-with-the-nodejs-interactive-window"></a>Praca z okno interaktywne języka Node.js
+# <a name="work-with-the-nodejs-interactive-window"></a>Praca z interakcyjnym oknem Node.js
 
-Node.js Tools for Visual Studio obejmują interakcyjne okno zainstalowanego środowiska uruchomieniowego Node.js. To okno umożliwia wprowadzanie kodu w języku JavaScript i natychmiastowe wyświetlenie wyników w, a także wykonywać polecenia npm na interakcję z bieżącego projektu. Okno interaktywne jest także znana jako REPL (**R**eczytaj /**E**valuate /**P**rukuj **L**obiektowo).
+Node.js Tools for Visual Studio zawiera interaktywne okno dla zainstalowanego środowiska wykonawczego Node.js. To okno umożliwia wprowadzenie kodu JavaScript i natychmiastowe wyświetlenie wyników, a także wykonanie poleceń npm w celu interakcji z bieżącym projektem. Interaktywne okno jest również znane jako REPL (**R**ead/**E**valuate/**P**rint **L**oop).
 
-## <a name="open-the-interactive-window"></a>Otwórz okno interaktywne
+## <a name="open-the-interactive-window"></a>Otwieranie okna interaktywnego
 
-Okno interaktywne można otworzyć, klikając prawym przyciskiem myszy węzeł projektu środowiska Node.js w Eksploratorze rozwiązań i wybierając polecenie **Otwórz okno interaktywne języka Node.js**.
+Okno interaktywne można otworzyć, klikając prawym przyciskiem myszy węzeł projektu Node.js w Eksploratorze rozwiązań i wybierając **polecenie Otwórz okno interaktywne Node.js**.
 
-![Okno interaktywne języka node.js, w menu kontekstowym projektu](../javascript/media/interactivewindow-open-from-project.png)
+![Interakcyjne okno Node.js w menu kontekstowym projektu](../javascript/media/interactivewindow-open-from-project.png)
 
-Klucze skrócone domyślne, aby otworzyć okno interaktywne języka Node.js są **[CTRL] + K, N**. Ewentualnie można otworzyć okna z paska narzędzi, wybierając **widoku** > **Windows** > **okno interaktywne języka Node.js**.
+Domyślnymi skrótami klawiszowymi do otwierania interaktywnego okna Node.js są **[CTRL] + K, N**. Można też otworzyć okno na pasku narzędzi, wybierając **polecenie Wyświetl** > okno interaktywne**Windows** > **Node.js**.
 
-## <a name="use-the-repl"></a>Użyj REPL
+## <a name="use-the-repl"></a>Użyj repl
 
-Po otwarciu, można wprowadzić poleceń.
+Po otwarciu można wprowadzić polecenia.
 
-![Okno interaktywne języka node.js](../javascript/media/interactivewindow.png)
+![Okno interaktywne Node.js](../javascript/media/interactivewindow.png)
 
-Okno interaktywne zawiera kilka wbudowanych poleceń, które zaczynają się prefiksem kropka, aby odróżnić je od dowolnej funkcji JavaScript, który został zadeklarowany. Obsługiwane są następujące polecenia:
+Okno interaktywne ma kilka wbudowanych poleceń, które zaczynają się od prefiksu kropki, aby odróżnić je od dowolnej deklarowaną funkcji JavaScript. Obsługiwane są następujące polecenia:
 
-**.CLS, .clear** Czyści zawartość okna edytora, pozostawiając bez zmian historii i wykonywania kontekstu.
+**.cls, .clear** Czyści zawartość okna edytora, pozostawiając kontekst historii i wykonywania nienaruszone.
 
-**.Help** Wyświetla Pomoc dotyczącą określonego polecenia lub na wszystkich dostępnych poleceń i powiązań klawiszy, jeśli nie określono.
+**.help (pomoc)** Wyświetla pomoc w określonym poleceniu lub na wszystkich dostępnych poleceniach i powiązaniach klawiszy, jeśli nie określono żadnych.
 
-**.info** zawiera informacje o bieżącym Node.js używanych pliku wykonywalnego.
+**.info (informacje)** Pokazuje informacje o bieżącym używanym pliku wykonywalnym Node.js.
 
-**.npm** uruchamia polecenie npm. Jeśli rozwiązanie zawiera więcej niż jeden projekt, określ projekt docelowy za pomocą `.npm [projectname] <npm arguments>`.
+**.npm** Uruchamia polecenie npm. Jeśli rozwiązanie zawiera więcej niż jeden projekt, `.npm [projectname] <npm arguments>`określ projekt docelowy za pomocą .
 
-**.Reset** przywraca stan początkowy, Zachowaj historię środowiska wykonawczego.
+**.reset (reset)** Resetuje środowisko wykonywania do stanu początkowego, zachowaj historię.
 
-**.Save** zapisuje bieżącą sesję REPL do pliku.
+**.save (zapisz)** Zapisuje bieżącą sesję REPL w pliku.

@@ -1,6 +1,6 @@
 ---
-title: Interaktywna pętla REPL dla języka R
-description: Jak używać interaktywne środowisko REPL dla języka R inVisual Studio, który jest zintegrowany z okna edytora.
+title: Interaktywny REPL dla R
+description: Jak korzystać z interaktywnego środowiska REPL dla R inVisual Studio, który jest zintegrowany z oknami edytora.
 ms.date: 06/28/2017
 ms.topic: conceptual
 author: kraigb
@@ -9,91 +9,91 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62815003"
 ---
-# <a name="work-with-the-r-interactive-window"></a>Praca z oknie interaktywnym r.
+# <a name="work-with-the-r-interactive-window"></a>Praca z interakcyjnym oknem języka R
 
-Narzędzia R Tools for Visual Studio (RTVS) zawiera znany także jako okno interaktywne R **REPL** okna (odczyt-oceny-Print-Loop), można podać kod r. i od razu zobaczyć wyniki. Wszystkie moduły, składni i zmiennych, jak również funkcję IntelliSense, jest dostępna w oknie interaktywnym.
+R Tools for Visual Studio (RTVS) udostępnia okno interaktywne języka R, znane również jako okno **REPL** (Read-Evaluate-Print-Loop), w którym można wprowadzić kod języka R i natychmiast wyświetlić wyniki. Wszystkie moduły, składnia i zmienne, a także IntelliSense, jest dostępna w oknie interaktywnym.
 
-Okno interaktywne jest także zintegrowana z regularnych okna edytora języka R. Możesz wybrać kod i naciśnij klawisz **Ctrl**+**Enter**, lub kliknij prawym przyciskiem myszy i wybierz polecenie **Execute w Interactive**, i jest on uruchamiany wiersz po wierszu w trybie interaktywnym okna tak, jakby została wpisana bezpośrednio. Gdy kursor znajduje się w jednym wierszu w oknie edytora **Ctrl**+**Enter** wysyła tę linię do okna interaktywnego, a następnie przenosi kursor do następnego wiersza. W ten sposób można po prostu naciśnij **Ctrl**+**Enter** wielokrotnie do kroku za pośrednictwem kodu.
+Interaktywne okno jest również zintegrowane ze zwykłymi oknami edytora R. Można wybrać kod i nacisnąć **klawisze Ctrl**+**Enter**lub kliknąć prawym przyciskiem myszy i wybrać polecenie Wykonaj **w trybie interaktywnym,** a kod jest uruchamiany wiersz po wierszu w oknie interaktywnym, tak jakby wpisywał go bezpośrednio. Gdy kursor znajduje się w jednym wierszu w oknie edytora, **klawisz Ctrl**+**Enter** wysyła ten wiersz do okna interaktywnego, a następnie przenosi kursor do następnego wiersza. W ten sposób można po prostu nacisnąć **klawisz Ctrl**+**Enter** wielokrotnie, aby przejść przez kod.
 
-Aby te funkcje środowiska, postępuj zgodnie z [wprowadzenie do języka R](getting-started-with-r.md) wskazówki oraz sekcje w tym artykule. [Fragmenty kodu](code-snippets-for-r.md) również działać w oknie interaktywnym, podobnie jak w edytorze języka R w systemie windows.
+Aby zapoznać się [z](getting-started-with-r.md) tymi funkcjami, wykonaj przewodnik Wprowadzenie do programu R oraz sekcje w tym artykule. [Fragmenty kodu](code-snippets-for-r.md) działają również w oknie interaktywnym, tak jak w oknach edytora Języka R.
 
-## <a name="overview-of-the-interactive-window"></a>Przegląd okna interaktywnego
+## <a name="overview-of-the-interactive-window"></a>Omówienie okna interaktywnego
 
-Wpisując prawidłowy kod R i naciskając klawisz **Enter** na końcu wiersza uruchamia kod w danym wierszu:
+Wpisanie prawidłowego kodu R i naciśnięcie **klawisza Enter** na końcu wiersza powoduje wprowadzenie kodu w tym wierszu:
 
 ```repl
 > 3 + 3
 [1] 6
 ```
 
-Naciśnięcie klawisza **Enter** dowolne miejsce na jeden wiersz danych wejściowych działa także tego wiersza.
+Naciśnięcie **klawisza Enter** w dowolnym miejscu na wejściu jednowierszowym powoduje również, że linia ta.
 
-Wszystkie poprzednie dane wejściowe i wyjściowe w rozwiązaniu REPL jest tylko do odczytu i nie można jej zmienić. Jednak można wybrać i skopiować tekst z okna w dowolnym momencie również wkleić. Wklejony kod działa tak, jakby zostały wprowadzone, wiersz po wierszu.
+Wszystkie poprzednie wejścia i wyjścia w REPL jest tylko do odczytu i nie można zmienić. Można jednak zaznaczyć i skopiować tekst z okna w dowolnym momencie, a także wkleić. Wklejony kod jest uruchamiany tak, jakby był wprowadzany wiersz po wierszu.
 
-Oznacza to, po rozpoczęciu wpisywania instrukcji i naciśnij klawisz **Enter**, RTVS wie, kiedy należy kontynuować wykonywanie instrukcji i przejdzie do trybu wielowierszowego z + monit z lewej strony oraz właściwe wcięcia. RTVS wykonuje ponadto nawiasy, nawiasy i nawiasy klamrowe:
+Oznacza to, że po rozpoczęciu wpisywania instrukcji i naciśnięciu **klawisza Enter,** RTVS wie, kiedy instrukcja musi być kontynuowana i przechodzi w tryb wieloliniowy z monitem + po lewej stronie i odpowiednim wcięciem. RTVS uzupełnia również nawiasy, nawiasy i nawiasy klamrowe:
 
-![Instrukcja wielowierszowe wpis w oknie interaktywnym](media/repl-multiline-entry.png)
+![Wpis instrukcji wielowierszowej w oknie interaktywnym](media/repl-multiline-entry.png)
 
-W tym trybie wielowierszowe **Enter** klucz uruchamia blok kodu, tylko jeśli umieszczona na końcu bloku, w przeciwnym razie Wstawia nowy wiersz. Jednakże, możesz nacisnąć przycisk **Ctrl**+**Enter** na żadnej pozycji, aby uruchomić ten kod blokować natychmiast.
+W tym trybie wielowierszowym klawisz **Enter** uruchamia blok kodu tylko wtedy, gdy znajduje się na końcu bloku, w przeciwnym razie wstawia nowy wiersz. Można jednak nacisnąć klawisz **Ctrl**+**Enter** w dowolnej pozycji, aby natychmiast uruchomić ten blok kodu.
 
 ### <a name="toolbar-commands"></a>Polecenia paska narzędzi
 
-Oto okna interaktywnego przy użyciu jego narzędzi:
+Oto interaktywne okno z paskiem narzędzi:
 
-![Okno interaktywne za pomocą paska narzędzi](media/repl-window.png)
+![Okno interaktywne z paskiem narzędzi](media/repl-window.png)
 
-Polecenia pasek narzędzi znajdują się w następujący sposób, z których większość mają odpowiedniki klawiatury i są również dostępne na **R Tools** > **sesji** i **R Tools**  >  **Katalog roboczy** menu (lub wspomniane):
+Polecenia paska narzędzi są następujące, z których większość ma odpowiedniki klawiatury i są również dostępne w menu **R Tools** > **Session** i **R Tools** > **Working Directory** (lub jak wspomniano):
 
-| Przycisk | Polecenie | Kombinacja klawiszy | Opis |
+| Button | Polecenie | Kombinacja klawiszy | Opis |
 | --- | --- | --- | --- |
-| ![Przycisk resetowania](media/repl-toolbar-01-reset.png) | Resetuj | **CTRL**+**Shift**+**F10** | Resetuje sesji okna interaktywnego, czyszcząc wszystkie zmienne i historię. |
-| ![Przycisk Wyczyść](media/repl-toolbar-02-clear.png) | Clear | **Ctrl**+**L** | Czyści wyświetlone w oknie interaktywnym; dane wyjściowe nie ma wpływu na zmienne sesji lub z historii. |
-| ![Przyciski historii](media/repl-toolbar-03-history.png) | Poprzednie polecenie History<br/>Następne polecenie historii | **Się**, **w dół**<br/>**ALT**+**się**, **Alt**+**w dół** | Przewija historii, z pewnymi rodzajami zachowań dla bloków kodu wiele wierszy. Zobacz [historii](#history). |
-| ![Przycisk obszaru roboczego obciążenia](media/repl-toolbar-04-load-workspace.png) | Załaduj obszar roboczy | n/d | Ładuje poprzedniej zapisano obszar roboczy (zobacz [obszarów roboczych i sesje](#workspaces-and-sessions). |
-| ![Obszar roboczy przycisk Zapisz jako](media/repl-toolbar-05-save-workspace-as.png)| Zapisywanie obszaru roboczego jako | n/d | Zapisuje bieżący stan sesji jako obszaru roboczego (zobacz [obszarów roboczych i sesje](#workspaces-and-sessions). |
-| ![Źródło języka R skryptu przycisku](media/repl-toolbar-06-source-r-script.png) | Source Skript R | **Ctrl**+**Shift**+**S** | Wywołania `source` z aktualnie aktywnego skryptu języka R w edytorze programu Visual Studio, która uruchamia kod.  Ten przycisk jest wyświetlana tylko wtedy, gdy plik języka R jest otwarty w edytorze programu Visual Studio. |
-| ![Source skript R przycisk echo](media/repl-toolbar-07-source-r-script-with-echo.png) | Source Skript R Echo | **Ctrl**+**Shift**+**Enter** | Ale takie same jak Source Skript R Wyświetla zawartość skryptu w oknie interaktywnym. |
-| ![Przerwanie przycisk R](media/repl-toolbar-08-interrupt-r.png)| Przerwanie R | **ESC** | Zatrzymuje uruchamianie kodu w oknie interaktywnym, takich jak `while` pętli na zrzucie ekranu przedstawiono na początku tej sekcji. |
-| ![Dołącz debuger przycisku](media/repl-toolbar-09b-attach-debugger.png)| Dołącz debuger | n/d | Również dostępne za pośrednictwem **debugowania** > **dołączyć do interaktywne R** polecenia. |
-| ![Ustaw katalog roboczy przycisk lokalizację pliku źródłowego](media/repl-toolbar-10-set-working-directory-source.png)| Ustawianie pracy katalogu do lokalizacji plików źródłowych | **Ctrl**+**Shift**+**E** | Ustawia katalog roboczy najbardziej niedawno pochodzące z wyszukiwania pliku załadowane do okna interaktywnego (przy użyciu `source`). Zobacz [katalog roboczy](#working-directory). |
-| ![Ustaw katalog roboczy na przycisk lokalizacji projektu](media/repl-toolbar-11-set-working-directory-to-project.png) | Ustawianie pracy katalogu do lokalizacji projektu | **Ctrl**+**Shift**+**P** | Ustawia katalog roboczy w katalogu głównym projektu aktualnie załadowanych w programie Visual Studio. Zobacz [katalog roboczy](#working-directory). |
-| (Pole tekstowe) | Wybierz pracy katalogu | n/d | Bezpośrednie pole wejściowe dla katalogu roboczego. Zobacz [katalog roboczy](#working-directory). |
+| ![Przycisk Resetuj](media/repl-toolbar-01-reset.png) | Reset | **Ctrl**+**Shift**Przesunięcie+ctrl**F10** | Resetuje interaktywną sesję okna, czyszcząc wszystkie zmienne i historię. |
+| ![Przycisk Wyczyść](media/repl-toolbar-02-clear.png) | Clear | **Ctrl**+**L** | Czyści dane wyjściowe wyświetlane w oknie interaktywnym; nie wpływa na zmienne sesji ani na historię. |
+| ![Przyciski Historia](media/repl-toolbar-03-history.png) | Poprzednie polecenie Historia<br/>Polecenie Następna historia | **W górę**, **w dół**<br/>**Alt**+**w górę**, **Alt**+w**dół** | Przewija historię z pewnymi zachowaniami dla wielowierszowych bloków kodu. Zobacz [Historia](#history). |
+| ![Przycisk Załaduj obszar roboczy](media/repl-toolbar-04-load-workspace.png) | Załaduj obszar roboczy | Nie dotyczy | Ładuje poprzedni zapisany obszar [roboczy](#workspaces-and-sessions)(zobacz Obszary robocze i sesje . |
+| ![Zapisz obszar roboczy jako przycisk](media/repl-toolbar-05-save-workspace-as.png)| Zapisz obszar roboczy jako | Nie dotyczy | Zapisuje bieżący stan sesji jako obszar roboczy (zobacz [Obszary robocze i sesje](#workspaces-and-sessions). |
+| ![Przycisk skryptu źródłowego R](media/repl-toolbar-06-source-r-script.png) | Skrypt źródłowy R | **Ctrl**+**Shift**Przesunięcie+Ctrl**S** | Wywołania `source` z aktualnie aktywnym skryptem języka R w edytorze programu Visual Studio, który uruchamia kod.  Ten przycisk jest wyświetlany tylko wtedy, gdy plik języka R jest otwarty w edytorze programu Visual Studio. |
+| ![Skrypt źródłowy R z przyciskiem echa](media/repl-toolbar-07-source-r-script-with-echo.png) | Skrypt źródłowy R z echo | **Wprowadzanie**+**przesunięcia**+**Enter** ctrl | Tak samo jak skrypt źródłowy R, ale wyświetla zawartość skryptu w oknie interaktywnym. |
+| ![Przycisk Przerwa R](media/repl-toolbar-08-interrupt-r.png)| Przerwa R | **Esc** | Zatrzymuje każdy uruchomiony kod w oknie `while` interaktywnym, na przykład pętla na zrzucie ekranu pokazuje na początku tej sekcji. |
+| ![Przycisk Dołącz debuger](media/repl-toolbar-09b-attach-debugger.png)| Dołącz debuger | Nie dotyczy | Dostępne również za pomocą polecenia **Debug** > **Attach to R Interactive.** |
+| ![Ustawianie przycisku lokalizacji pliku źródłowego w katalogu roboczym](media/repl-toolbar-10-set-working-directory-source.png)| Ustawianie katalogu roboczego na lokalizację pliku źródłowego | **Ctrl**+**Shift**Przesunięcie+Ctrl**E** | Ustawia katalog roboczy na ostatnio pozyskiwany plik załadowany `source`do okna interaktywnego (za pomocą ). Zobacz [Katalog roboczy](#working-directory). |
+| ![Ustawianie przycisku lokalizacji projektu w katalogu roboczym](media/repl-toolbar-11-set-working-directory-to-project.png) | Ustawianie katalogu roboczego na lokalizację projektu | **Ctrl**+**Shift**Przesunięcie+ctrl**P** | Ustawia katalog roboczy do katalogu głównego aktualnie załadowanego projektu w programie Visual Studio. Zobacz [Katalog roboczy](#working-directory). |
+| (Pole tekstowe) | Wybierz katalog roboczy | Nie dotyczy | Pole wprowadzania bezpośredniego dla katalogu roboczego. Zobacz [Katalog roboczy](#working-directory). |
 
-## <a name="workspaces-and-sessions"></a>Obszary robocze i sesji
+## <a name="workspaces-and-sessions"></a>Obszary robocze i sesje
 
-Uruchamianie kodu w oknie interaktywnym są gromadzone kontekstu w bieżącej sesji. Kontekst składa się ze zmiennych globalnych, definicje funkcji, biblioteka obciążeń i tak dalej. Tego kontekstu wspólnie nosi nazwę *obszaru roboczego*, możesz zapisać i załadować obszarów roboczych w dowolnym momencie.
+Uruchomiony kod w oknie interaktywnym tworzy kontekst w bieżącej sesji. Kontekst składa się ze zmiennych globalnych, definicji funkcji, obciążeń biblioteki i tak dalej. Ten kontekst jest zbiorczo nazywany *obszarem roboczym*i można zapisać i załadować obszary robocze w dowolnym momencie.
 
-Wybieranie **Zapisywanie obszaru roboczego jako** przycisku lub przy użyciu **R Tools** > **sesji** > **Zapisywanie obszaru roboczego jako**polecenie wyświetli monit o podanie lokalizacji i nazwa pliku (domyślnym rozszerzeniem jest *. Dane_rekordu*).
+Wybranie przycisku **Zapisz obszar roboczy jako** lub użycie polecenia**Zapisywanie sesji** >  **R Narzędzia** > **jako** monity o lokalizację i nazwę pliku (rozszerzenie domyślne to *. RData*).
 
-Aby zapisać obszar roboczy przy użyciu określonej nazwy pliku (wartość domyślna to *. Dane_rekordu*), kliknij pozycję **Zapisz obszar roboczy** przycisku w rozwiązaniu REPL:
+Aby zapisać obszar roboczy przy użyciu określonej nazwy pliku (wartością domyślną jest *. RData*), kliknij przycisk **Zapisz obszar roboczy** w REPL:
 
-Aby ponownie załadować uprzednio zapisanego obszaru roboczego, wybierz **obciążenia roboczego** przycisku, lub użyj **R Tools** > **sesji** > **obciążenia Obszar roboczy** i przejdź do pliku.
+Aby ponownie załadować wcześniej zapisany obszar roboczy, wybierz przycisk **Załaduj obszar roboczy** lub użyj obszaru**roboczego** > R **Tools** > Session**Load Workspace** i przejdź do pliku obszaru roboczego.
 
-**Resetowania** przycisk lub **R Tools** > **sesji** > **resetowania** czyści kontekstu sesji. Jeśli używasz sesji zdalnej, zresetowanie spowoduje również usunięcie profilu użytkownika na komputerze zdalnym, wyczyść Wyłącz wszystkie przechowywane pliki. (Zobacz [obszary robocze](r-workspaces-in-visual-studio.md#directories-on-local-and-remote-computers).)
+Przycisk **Resetuj** lub**Resetowanie sesji** > **Reset** **narzędzi** > R czyści kontekst sesji. Jeśli używasz sesji zdalnej, resetowanie powoduje również usunięcie profilu użytkownika na komputerze zdalnym w celu usunięcia wszystkich przechowywanych tam plików. (Zobacz [Obszary robocze](r-workspaces-in-visual-studio.md#directories-on-local-and-remote-computers)).)
 
 ## <a name="working-directory"></a>Katalog roboczy
 
-Deweloperzy często chcą zmienić ich katalog roboczy znajduje się w interaktywnej sesji. Różne polecenia dostępne na pasku narzędzi **R Tools** > **katalog roboczy** menu i menu kontekstowego projektu pozwala łatwo ustawić katalogu roboczego do lokalizacji pliku źródłowego , lokalizacji lub w projekcie lub w dowolne miejsce. Pomoże uniknąć wpisywania pełne nazwy ścieżek lub długiej względnej nazwy ścieżek przy odwoływaniu się do plików.
+Deweloperzy często chcą zmienić swój katalog roboczy podczas sesji interaktywnej. Różne polecenia dostępne na pasku narzędzi, menu katalogu **R Tools** > **Working** i menu kontekstowym projektu umożliwiają łatwe ustawienie katalogu roboczego na lokalizację pliku źródłowego, lokalizacji lub projektu lub dowolnej innej dowolnej dowolnej lokalizacji. Pomaga to uniknąć wpisywania pełnych nazwy ścieżek lub długich względnych nazwy ścieżek podczas odwoływania się do plików.
 
 ## <a name="history"></a>Historia
 
-Każdy wiersz w oknie interaktywnym zawiera wiersze wysyłane z edytora, zostaną zachowane w historii REPL. Następnie można przejść w historii z Up i klawiszy strzałek, ponieważ prawdopodobnie przyzwyczajeni do w wierszu polecenia.
+Każdy wiersz wprowadzony w oknie interaktywnym, zawiera wiersze wysyłane z edytora, są zachowywane w historii REPL. Następnie można poruszać się po historii za pomocą klawiszy strzałek w górę i w dół, do których prawdopodobnie jesteś przyzwyczajony w wierszu polecenia.
 
-Jedną różnicaą jest to, że jeśli zacznij pisać w bieżącym wierszu i naciśnij klawisz, że bieżący wiersz jest zachowywany w Twojej historii, nawet za pośrednictwem możesz nie jeszcze tego wiersza jeszcze uruchomione.
+Jedną z różnic jest to, że jeśli zaczniesz wpisywać w bieżącym wierszu i naciśnij w górę, ta bieżąca linia zostanie zachowana w historii, nawet przez nie uruchomisz jeszcze tej linii.
 
-Historia w oknie interaktywnym działa inteligentnie instrukcji innych blok kodu, obejmujących wiele wierszy. Gdy okrągło historii z Up i klawiszy strzałek, bloki kodu wielowierszowe pobierana jako całą jednostkę i wyświetlane jako bieżący wpis. W tym momencie klawisze strzałek powodują przechodzenie za pośrednictwem tego bloku kodu wiersz po wierszu, aż do osiągnięcia top lub bottom. W górnej części bloku kodu strzałkę w górę pobiera poprzedni element w historii; w wierszu dolnej strzałkę w dół pobiera następny element.
+Historia w oknie interaktywnym działa również inteligentnie z instrukcjami innych bloków kodu, które obejmują linie. Podczas przechodzenia przez historię za pomocą klawiszy strzałek w górę i w dół, wielowierszowe bloki kodu są pobierane jako cała jednostka i wyświetlane jako bieżący wpis. W tym momencie klawisze strzałek nawigują po tym bloku kodu wiersz po wierszu, aż do osiągnięcia górnej lub dolnej granicy. W górnej części bloku kodu strzałka w górę pobiera poprzedni element w historii; w dolnej linii, strzałka w dół pobiera następny element.
 
-To zachowanie uwzględniają wielkość liter Typowa ponowne uruchomienie ostatniego elementu w historii ze strzałką w górę i **Enter** klawiszy kombinacji, zapewniając naturalną do edycji blok kodu wielowierszowego, naciskając klawisz Strzałka w górę do Przejdź do niego.
+To zachowanie uwzględnia typowy przypadek ponownego uruchamiania ostatniego elementu w historii za pomocą kombinacji strzałki w górę i **klawisza Enter,** jednocześnie umożliwiając edycję bloku kodu wielowierszowego, naciskając strzałkę w górę, aby do niego przejść.
 
-Aby uniknąć, przechodząc do bloków kodu wielowierszowego, użyj przycisków paska narzędzi lub **Alt**+**się** i **Alt**-**wdół**, a wszystkie takie bloki są traktowane jako jeden wiersz.
+Aby uniknąć przechodzenia do wielowierszowych bloków kodu, użyj przycisków paska narzędzi lub **Alt**+**Up** i **Alt**-**Down**, a wszystkie takie bloki są traktowane jako pojedyncza linia.
 
-Najprostszym sposobem funkcje historii środowiska jest wypróbować je samodzielnie w oknie interaktywnym. Poniższy kod zawiera kilka odpowiedniego wiersza jednym i wielu instrukcji. Kopiowanie i wklejanie z każdej instrukcji pojedynczo, jednak użyć do utworzenia odpowiednich historii. (Możesz również Wklej kod w osobnym pliku kodu i wysłać wiersze do okna interaktywnego z **Ctrl**+**Enter**.)
+Najprostszym sposobem, aby doświadczyć funkcji historii jest wypróbowanie ich dla siebie w oknie interaktywnym. Poniższy kod zawiera kilka odpowiednich instrukcji jedno- i wielowierszowych. Użyj jednak kopiowania i wklejenia z każdą instrukcją indywidualnie, aby utworzyć odpowiednią historię. (Można również wkleić kod do oddzielnego pliku kodu, a następnie wysłać wiersze do interaktywnego okna z **Ctrl**+**Enter**.)
 
 ```R
 3 + 3

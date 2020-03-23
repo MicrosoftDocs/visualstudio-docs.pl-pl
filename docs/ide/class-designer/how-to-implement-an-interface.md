@@ -12,45 +12,45 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbe8db6c6bd7df5285880f7f860df5bb26db736a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590114"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Instrukcje: implementowanie interfejsu w Projektant klas
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Jak: Implementowanie interfejsu w Projektancie klas
 
-W **Projektant klas**można zaimplementować interfejs na diagramie klas, łącząc go z klasą, która dostarcza kod dla metod interfejsu. **Projektant klas** generuje implementację interfejsu i wyświetla relacje między interfejsem a klasą jako relację dziedziczenia. Interfejs można zaimplementować, rysując linię dziedziczenia między interfejsem a klasą lub przeciągając interfejs z Widok klasy.
+W **projektancie klas**można zaimplementować interfejs na diagramie klasy, łącząc go z klasą, która udostępnia kod dla metod interfejsu. **Class Designer** generuje implementację interfejsu i wyświetla relację między interfejsem a klasą jako relację dziedziczenia. Interfejs można zaimplementować, rysując linię dziedziczenia między interfejsem a klasą lub przeciągając interfejs z widoku klasy.
 
 > [!TIP]
-> Interfejsy można tworzyć w taki sam sposób, jak w przypadku innych typów. Jeśli interfejs istnieje, ale nie jest wyświetlany na diagramie klas, należy najpierw go wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie typów przy użyciu Projektant klas](how-to-create-types.md) i [instrukcje: wyświetlanie istniejących typów](how-to-view-existing-types.md).
+> Interfejsy można tworzyć w taki sam sposób, jak inne typy. Jeśli interfejs istnieje, ale nie pojawia się na diagramie klasy, a następnie najpierw go wyświetlić. Aby uzyskać więcej informacji, zobacz [Jak: Tworzenie typów przy użyciu Projektanta klas](how-to-create-types.md) i [jak: Wyświetlanie istniejących typów](how-to-view-existing-types.md).
 
-## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Aby zaimplementować interfejs poprzez rysowanie linii dziedziczenia
+## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Aby zaimplementować interfejs przez rysowanie linii dziedziczenia
 
-1. Na diagramie klasy Wyświetl interfejs i klasę, która będzie implementować interfejs.
+1. Na diagramie klasy wyświetl interfejs i klasę, która zaimplementuje interfejs.
 
 2. Narysuj linię dziedziczenia z klasy i interfejsu.
 
-     Do klasy jest dołączona lizak, a etykieta o nazwie interfejsu identyfikuje relację dziedziczenia. Program Visual Studio generuje klasy pośredniczące dla wszystkich elementów członkowskich interfejsu.
+     Lizak pojawia się dołączony do klasy i etykieta z nazwą interfejsu identyfikuje relację dziedziczenia. Visual Studio generuje wycinki dla wszystkich elementów członkowskich interfejsu.
 
-Aby uzyskać więcej informacji, zobacz [jak: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md).
+Aby uzyskać więcej informacji, zobacz [Jak: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Aby zaimplementować interfejs z okna Widok klasy
 
-1. Na diagramie klas Wyświetl klasę, w której chcesz zaimplementować interfejs.
+1. Na diagramie klasy wyświetl klasę, która ma zaimplementować interfejs.
 
-2. Otwórz **Widok klasy** i Znajdź interfejs.
+2. Otwórz **widok klasy** i znajdź interfejs.
 
     > [!TIP]
-    > Jeśli **Widok klasy** nie jest otwarty, Otwórz **Widok klasy** z menu **widok** lub naciśnij **klawisze CTRL**+**SHIFT**+**C**.
+    > Jeśli **widok klasy** nie jest otwarty, otwórz widok **klasy** z menu **Widok** lub naciśnij klawisz **Ctrl**+**Shift**+**C**.
 
 3. Przeciągnij węzeł interfejsu do kształtu klasy na diagramie.
 
-     Do klasy jest dołączona lizak, a etykieta o nazwie interfejsu identyfikuje relację dziedziczenia. Program Visual Studio generuje klasy pośredniczące dla wszystkich elementów członkowskich interfejsu; w tym momencie interfejs jest zaimplementowany.
+     Lizak pojawia się dołączony do klasy i etykieta z nazwą interfejsu identyfikuje relację dziedziczenia. Visual Studio generuje wycinki dla wszystkich elementów członkowskich interfejsu; w tym momencie interfejs jest zaimplementowany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Instrukcje: Tworzenie typów za pomocą Projektanta klas](how-to-create-types.md)
-- [Instrukcje: wyświetlanie istniejących typów](how-to-view-existing-types.md)
-- [Instrukcje: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
+- [Porady: tworzenie typów za pomocą Projektanta klas](how-to-create-types.md)
+- [Jak: Wyświetlanie istniejących typów](how-to-view-existing-types.md)
+- [Jak: Tworzenie dziedziczenia między typami](how-to-create-inheritance-between-types.md)
 - [Refaktoryzacja klas i typów](refactoring-classes-and-types.md)

@@ -1,5 +1,5 @@
 ---
-title: Średnie wykorzystanie procesora CPU | Dokumentacja firmy Microsoft
+title: Średnie wykorzystanie procesora | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62777001"
 ---
-# <a name="average-cpu-utilization"></a>Średnie wykorzystanie procesora CPU
-Pokazuje PROFILOWANEGO procesu średnie wykorzystanie rdzenie logiczne systemu w czasie trwania procesu. Wykres nie pokazuje, które określonych core jest aktywny w dowolnym momencie. Na przykład jeśli każdy dwa rdzenie są uruchamiane o pojemności 50% dla danego okresu, w tym widoku pokaże jednego rdzenia logicznego wykorzystywane.
+# <a name="average-cpu-utilization"></a>Średnie wykorzystanie procesora
+Pokazuje średnie wykorzystanie rdzeni logicznych systemu przez czas trwania procesu. Wykres nie pokazuje, który określony rdzeń jest aktywny w danym momencie. Na przykład jeśli dwa rdzenie są uruchomione z pojemnością 50% dla danego okresu czasu, w tym widoku zostanie wyświetlona jeden rdzeń logiczny.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok rdzeni](../profiling/cores-view.md)
 - [Wykres wykorzystania procesora CPU](../profiling/cpu-utilization-graph.md)

@@ -1,5 +1,5 @@
 ---
-title: Sklonuj repozytorium
+title: Klonowanie repozytorium
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -8,54 +8,54 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 73f1595e0e6c8f182f0bedcece51011390964ed2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62539661"
 ---
-# <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonowanie repozytorium kodu w języku Python w programie Visual Studio
+# <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonowanie repozytorium kodu języka Python w programie Visual Studio
 
-Po [zainstalowany program Visual Studio Tools for AI](installation.md), można łatwo klonowanie repozytorium kodu w języku Python i Utwórz projekt z niego.
+Po [zainstalowaniu programu Visual Studio Tools for AI](installation.md)można łatwo sklonować repozytorium kodu języka Python i utworzyć z niego projekt.
 
-1. Aby nawiązać połączenie z repozytoriami GitHub, uruchom Instalatora programu Visual Studio wybierz **Modyfikuj**i wybierz pozycję **poszczególne składniki** kartę. Przewiń w dół do **kodu narzędzia** zaznacz **rozszerzeniu GitHub extension for Visual Studio**i wybierz **Modyfikuj**.
+1. Aby połączyć się z repozytoriami GitHub, uruchom instalator programu Visual Studio, wybierz pozycję **Modyfikuj**i wybierz kartę **Poszczególne składniki.** Przewiń w dół do sekcji **Narzędzia kodu,** wybierz **rozszerzenie GitHub dla programu Visual Studio**i wybierz pozycję **Modyfikuj**.
 
-    ![Wybieranie rozszerzenia GitHub w Instalatorze programu Visual Studio](media/create-project-repo/installation-github-extension.png)
+    ![Wybieranie rozszerzenia GitHub w instalatorze programu Visual Studio](media/create-project-repo/installation-github-extension.png)
 
 2. Uruchom program Visual Studio.
 
-3. Wybierz **Widok > Team Explorer** otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub DevOps platformy Azure lub klonowanie repozytorium.
+3. Wybierz **opcję Wyświetl > Eksploratorze zespołu,** aby otworzyć okno **Eksploratora zespołu,** w którym można połączyć się z usługą GitHub lub Azure DevOps lub sklonować repozytorium.
 
-    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media/create-project-repo/team-explorer-devops.png)
+    ![Okno Eksploratora zespołu przedstawiające usługi Azure DevOps, GitHub i klonowanie repozytorium](media/create-project-repo/team-explorer-devops.png)
 
-4. W polu adres URL w taki sposób, w obszarze **lokalne repozytoria Git**, wprowadź `https://github.com/Microsoft/samples-for-ai`, wprowadź folderu na sklonowane pliki i wybierz **klonowania**.
+4. W polu URL w **obszarze Lokalne repozytoria Git**wprowadź , `https://github.com/Microsoft/samples-for-ai`wprowadź folder sklonowanych plików i wybierz opcję **Klonuj**.
 
     > [!Tip]
-    > Folder, który określisz w programie Team Explorer jest dany folder do odbierania sklonowane pliki. W odróżnieniu od `git clone` polecenia Tworzenie własnego klonu w programie Team Explorer nie tworzy automatycznie podfolder o nazwie repozytorium.
+    > Folder określony w Eksploratorze zespołu jest specyficznym folderem do odbierania sklonowanych plików. W `git clone` przeciwieństwie do polecenia, utworzenie klona w Eksploratorze zespołu nie powoduje automatycznego utworzenia podfolderu o nazwie repozytorium.
 
-5. Po ukończeniu klonowania, kliknij dwukrotnie folder repozytorium w dolnej części programu Team Explorer, aby przejść do pulpitu nawigacyjnego repozytorium. W obszarze **rozwiązania**, wybierz opcję **New**.
+5. Po zakończeniu klonowania kliknij dwukrotnie folder repozytorium u dołu Eksploratora zespołu, aby przejść do pulpitu nawigacyjnego repozytorium. W obszarze **Rozwiązania**wybierz pozycję **Nowy**.
 
-    ![Okno Eksploratora zespołu, tworząc nowy projekt z klonu](media/create-project-repo/team-explorer-new-project.png)
+    ![Okno eksploratora zespołu, tworzenie nowego projektu z klonu](media/create-project-repo/team-explorer-new-project.png)
 
-6. W **nowy projekt** wyświetlonym oknie dialogowym wybierz pozycję "**z istniejącego kodu języka Python**", określ nazwę dla projektu, ustawianie **lokalizacji** na tym samym folderze co repozytorium, i Wybierz **OK**. W oknie kreatora wybierz **Zakończ**.
+6. W wyświetlonym oknie dialogowym **Nowy projekt** wybierz opcję **"Z istniejącego kodu języka Python**" określ nazwę projektu, ustaw **lokalizację** na ten sam folder co repozytorium i wybierz **przycisk OK**. W wyświetlonym kreatorze wybierz pozycję **Zakończ**.
 
-7. Wybierz **Widok > Eksploratorze rozwiązań** z menu.
+7. Z menu **wybierz polecenie Wyświetl > Eksploratora rozwiązań.**
 
-8. W Eksploratorze rozwiązań rozwiń `TensorFlow Examples> MNIST` węzła, kliknij prawym przyciskiem myszy `convolutional.py`i wybierz **Ustaw jako plik startowy**. W tym kroku opisano programu Visual Studio, plik, który należy używać, podczas uruchamiania projektu.
+8. W Eksploratorze `TensorFlow Examples> MNIST` rozwiązań rozwiń węzeł, kliknij prawym przyciskiem myszy `convolutional.py`i wybierz polecenie Ustaw jako plik **startowy**. Ten krok informuje visual studio, który plik należy użyć podczas uruchamiania projektu.
 
-9. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **Debuguj > Uruchom bez debugowania** do uruchomienia programu. Jeśli zostanie wyświetlony błąd, sprawdź ponownie ustawienia katalogu roboczego w poprzednim kroku.
+9. Naciśnij **klawisz Ctrl**+**F5** lub wybierz **opcję Debugowanie > rozpocznij bez debugowania,** aby uruchomić program. Jeśli zostanie wyświetlony błąd, sprawdź ponownie ustawienie katalogu roboczego w poprzednim kroku.
 
-10. Gdy program zostanie uruchomiony pomyślnie, zobaczysz go uruchomić, aby pobrać szkolenia i testowanie zestawu danych, a następnie uczenie modelu oraz Twoje współczynnik błędów wyjścia. Chcesz, aby współczynnik błędów, aby zmniejszyć wraz z upływem czasu
+10. Po pomyślnym uruchomieniu programu zostanie wyświetlony komunikat rozpoczęcie pobierania zestawu danych szkoleniowych i testowych, a następnie szkolenie modelu i wysunienie poziomu błędu. Chcesz, aby poziom błędu zmniejszał się wraz z czasem
 
-    ![Pierwsze dane wyjściowe programu Python mnist ręcznie ZAPISANYCH](media/create-project-repo/tensorflow-mnist-running.png)
+    ![Pierwsze dane wyjściowe z programu Python MNIST](media/create-project-repo/tensorflow-mnist-running.png)
 
    > [!NOTE]
-   > Jeśli używasz pakietu Anaconda i komunikatu o błędzie informującego o brakujących numpy, konieczne może być [zmiany w środowisku Python, aby użyć pakietu Anaconda](../python/selecting-a-python-environment-for-a-project.md).
+   > Jeśli używasz Anakondy i pojawia się błąd dotyczący braku numpy, może być [konieczna zmiana środowiska Pythona, aby użyć Anaconda](../python/selecting-a-python-environment-for-a-project.md).
 
-11. Można wizualizować postęp przy użyciu narzędzia TensorBoard. Kliknij prawym przyciskiem myszy projekt, a następnie kliknij przycisk **uruchom narzędzia TensorBoard** następnie wybierz katalog danych wyjściowych dzienników narzędzia TensorBoard.
+11. Można wizualizować postęp z TensorBoard. Kliknij prawym przyciskiem myszy projekt i kliknij polecenie **Uruchom tensorboard,** a następnie wybierz katalog wyjściowych dzienników TensorBoard.
 
-   ![Uruchom narzędzia tensorboard](media/create-project-repo/run-tensorboard.png)
+   ![uruchamianie tablicy tensorboard](media/create-project-repo/run-tensorboard.png)
 
-12. Zwróć uwagę, błąd zmniejsza się z czasem, co oznacza, że w celu ulepszania jakości.
+12. Zwróć uwagę na zmniejszenie błędu w nadgodzinach, co oznacza, że jakość się poprawia.
 
-   ![Uruchom narzędzia tensorboard](media/create-project-repo/tensorboard.png)
+   ![uruchamianie tablicy tensorboard](media/create-project-repo/tensorboard.png)

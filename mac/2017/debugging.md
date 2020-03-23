@@ -1,99 +1,99 @@
 ---
 title: Debugowanie za pomocą platformy Xamarin
-description: Debugowanie jest powszechną i niezbędną częścią programowania. Jako dojrzały IDE Visual Studio dla komputerów Mac zawiera cały zestaw funkcji, które ułatwiają debugowanie. Z bezpiecznego debugowania do wizualizacji danych w tym artykule wyjaśniono, jak używać pełnego potencjału debugowania w Visual Studio dla komputerów Mac.
+description: Debugowanie jest wspólną i konieczną częścią programowania. Jako dojrzały IDE visual studio dla komputerów Mac zawiera cały zestaw funkcji, aby debugowanie łatwe. Od bezpiecznego debugowania do wizualizacji danych, w tym artykule wyjaśniono, jak używać pełnego potencjału debugowania w programie Visual Studio dla komputerów Mac.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: f62ebe21dcc5eb60927c0bc14617051aba3363e8
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985014"
 ---
 # <a name="debugging-with-xamarin"></a>Debugowanie za pomocą platformy Xamarin
 
-Visual Studio dla komputerów Mac ma natywny debuger umożliwiający obsługę debugowania dla aplikacji Xamarin. iOS, Xamarin. Mac i Xamarin. Android.
+Visual Studio dla komputerów Mac ma natywnego debugera umożliwiającego obsługę debugowania dla aplikacji Xamarin.iOS, Xamarin.Mac i Xamarin.Android.
 
-Visual Studio dla komputerów Mac używa [*debugera miękkiego mono*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), który jest implementowany w środowisku uruchomieniowym mono, umożliwiając Visual Studio dla komputerów Mac Debugowanie kodu zarządzanego na wszystkich platformach.
+Visual Studio dla komputerów Mac używa [*debugera mono soft*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), który jest zaimplementowany w czasie wykonywania Mono, dzięki czemu visual studio dla komputerów Mac do debugowania kodu zarządzanego na wszystkich platformach.
 
 ## <a name="the-debugger"></a>Debuger
 
-Visual Studio dla komputerów Mac używa debugera miękkiego mono do debugowania zarządzanego koduC# ( F#lub) we wszystkich aplikacjach platformy Xamarin. Program mono Soft Debugger różni się od zwykłych debugerów, ponieważ jest to współpracujący debuger, który jest wbudowany w środowisko uruchomieniowe mono. wygenerowany kod i środowisko uruchomieniowe mono współdziałają z IDE w celu zapewnienia środowiska debugowania. Środowisko uruchomieniowe mono udostępnia funkcje debugowania za pomocą protokołu przewodowego, który można dowiedzieć [się więcej na temat dokumentacji programu mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio dla komputerów Mac używa debugera mono soft do debugowania zarządzanego kodu (C# lub F#) we wszystkich aplikacjach platformy Xamarin. Debuger mono soft różni się od zwykłych debugerów, ponieważ jest to debuger kooperacyjny, który jest wbudowany w środowisko wykonawcze Mono; wygenerowany kod i mono środowiska wykonawczego współpracować z IDE, aby zapewnić środowisko debugowania. Środowisko wykonawcze Mono udostępnia funkcje debugowania za pośrednictwem protokołu przewodowego, o którym można przeczytać więcej [w dokumentacji Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
-Mocne debugery, takie jak [LLDB](https://lldb.llvm.org/index.html) lub [GDB](https://www.gnu.org/software/gdb/), kontrolują program bez wiedzy ani współpracy z debugowanego programu, ale nadal mogą być przydatne podczas debugowania aplikacji platformy Xamarin w przypadku, gdy wymagane jest debugowanie natywnego kodu dla systemu iOS lub Android.
+Debugery twarde, takie jak [LLDB](https://lldb.llvm.org/index.html) lub [GDB,](https://www.gnu.org/software/gdb/)kontrolują program bez wiedzy lub współpracy z debugowanego programu, ale nadal mogą być przydatne podczas debugowania aplikacji platformy Xamarin w przypadku konieczności debugowania natywnego kodu systemu iOS lub Android.
 
 ## <a name="using-the-debugger"></a>Korzystanie z debugera
 
-Aby rozpocząć debugowanie aplikacji, zawsze upewnij się, że konfiguracja jest ustawiona na **Debuguj**. Konfiguracja debugowania oferuje przydatny zestaw narzędzi do obsługi debugowania, takich jak punkty przerwania, używanie wizualizatorów danych i wyświetlanie stosu wywołań:
+Aby rozpocząć debugowanie dowolnej aplikacji, zawsze upewnij się, że konfiguracja jest ustawiona na **Debugowanie**. Konfiguracja debugowania zapewnia pomocny zestaw narzędzi do obsługi debugowania, takich jak punkty przerwania, przy użyciu wizualizatorów danych i wyświetlania stosu wywołań:
 
 ![Konfiguracja debugowania](media/debugging-image_0.png)
 
-## <a name="setting-a-breakpoint"></a>Ustawienie punktu przerwania
+## <a name="setting-a-breakpoint"></a>Ustawianie punktu przerwania
 
-Aby ustawić punkt przerwania w środowisku IDE, kliknij obszar marginesu w edytorze obok numeru wiersza kodu, w którym chcesz przerwać:
+Aby ustawić punkt przerwania w ide, kliknij na marginesie edytora, obok numeru wiersza kodu, w którym chcesz złamać:
 
 ![Ustawianie punktu przerwania na marginesie](media/debugging-image0.png)
 
-Wszystkie punkty przerwania, które zostały ustawione w kodzie, można wyświetlić, przechodząc do **konsoli punkty przerwania**:
+Można wyświetlić wszystkie punkty przerwania, które zostały ustawione w kodzie, przechodząc do **punktu przerwania:**
 
 ![Lista punktów przerwania](media/debugging-image0a.png)
 
 ## <a name="start-debugging"></a>Rozpocznij debugowanie
 
-Aby rozpocząć debugowanie, wybierz urządzenie docelowe lub podobną/emulator w środowisku IDE:
+Aby rozpocząć debugowanie, wybierz urządzenie docelowe lub podobny/emulator w ide:
 
 ![Wybierz urządzenie docelowe](media/debugging-image1.png)
 
-Następnie wdróż aplikację, naciskając przycisk **Odtwórz** lub **polecenie cmd + Return**. Po trafieniu punktu przerwania kod zostanie wyróżniony żółty:
+Następnie wdrożyć aplikację, naciskając przycisk **Play,** lub **Cmd + return**. Po trafieniu punktu przerwania kod zostanie wyróżniony na żółto:
 
-![Wyróżnij wyświetlany punkt przerwania został trafiony](media/debugging-image2.png)
+![Wyróżnienie pokazujące punkt przerwania zostało trafione](media/debugging-image2.png)
 
-Aby uzyskać więcej informacji na temat tego, co dzieje się w kodzie, można użyć narzędzi debugowania, takich jak używany do sprawdzania wartości obiektów.
+Narzędzia debugowania, takie jak ten używany do sprawdzania wartości obiektów, mogą być używane w tym momencie, aby uzyskać więcej informacji na temat tego, co dzieje się w kodzie:
 
-![Debugowanie wizualizacji](media/debugging-image3.png)
+![Wizualizacje debugowania](media/debugging-image3.png)
 
 ## <a name="conditional-breakpoints"></a>Warunkowe punkty przerwania
 
-Można również ustawić reguły określające sytuacje, w których powinien wystąpić punkt przerwania, tak jak w przypadku dodawania *warunkowego punktu przerwania*. Aby ustawić warunkowy punkt przerwania, uzyskaj dostęp do **okno właściwości punktu przerwania**, który można wykonać na dwa sposoby:
+Można również ustawić reguły dyktujące okoliczności, w których powinien wystąpić punkt przerwania, jest to nazywane dodawaniem *warunkowego punktu przerwania*. Aby ustawić warunkowy punkt przerwania, należy uzyskać dostęp do **okna Właściwości punktu przerwania,** które można wykonać na dwa sposoby:
 
-* Aby dodać nowy warunkowy punkt przerwania, kliknij prawym przyciskiem myszy na marginesie edytora, po lewej stronie numeru wiersza dla kodu, dla którego chcesz ustawić punkt przerwania, a następnie wybierz polecenie Nowy punkt przerwania:
+* Aby dodać nowy warunkowy punkt przerwania, kliknij prawym przyciskiem myszy margines edytora, po lewej stronie numeru wiersza dla kodu, na którym chcesz ustawić punkt przerwania, i wybierz pozycję Nowy punkt przerwania:
 
  ![Menu kontekstowe punktu przerwania](media/debugging-image4.png)
 
-* Aby dodać warunek do istniejącego punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania i wybierz polecenie **właściwości punktu przerwania**, lub w **konsoli punkty przerwania**wybierz przycisk Edytuj punkt przerwania przedstawiony poniżej:
+* Aby dodać warunek do istniejącego punktu przerwania, kliknij prawym przyciskiem myszy punkt przerwania i wybierz polecenie **Właściwości punktu przerwania**lub w **panelu Breakpoints Pad**wybierz przycisk Edytuj punkt przerwania zilustrowany poniżej:
 
- ![Edytuj istniejący punkt przerwania w konsoli punkty przerwania](media/debugging-image5.png)
+ ![Edytowanie istniejącego punktu przerwania w programie Breakpoints Pad](media/debugging-image5.png)
 
-Następnie możesz wprowadzić warunek, pod którym ma nastąpić punkt przerwania:
+Następnie można wprowadzić warunek, w którym ma wystąpić punkt przerwania:
 
- ![Edytuj warunki punktu przerwania](media/debugging-image6.png)
+ ![Edytowanie warunków punktu przerwania](media/debugging-image6.png)
 
-## <a name="stepping-through-code"></a>Krokowe przechodzenie przez kod
+## <a name="stepping-through-code"></a>Przechodzenie przez kod
 
-Po osiągnięciu punktu przerwania narzędzia debugowania umożliwiają uzyskanie kontroli nad wykonywaniem programu. W Visual Studio dla komputerów Mac zostaną wyświetlone cztery przyciski, które umożliwiają wykonywanie kroków i przechodzenie przez kod. W Visual Studio dla komputerów Mac będą wyglądać następująco:
+Po osiągnięciu punktu przerwania narzędzia debugowania umożliwiają uzyskanie kontroli nad wykonaniem programu. Visual Studio dla komputerów Mac wyświetli cztery przyciski, co pozwala na uruchamianie i krok po kroku przez kod. W programie Visual Studio dla komputerów Mac będą wyglądać następująco:
 
- ![Przyciski umożliwiające przechodzenie przez kod](media/debugging-image7.png)
+ ![Przyciski do przechodzenia przez kod](media/debugging-image7.png)
 
-Poniżej przedstawiono cztery przyciski:
+Oto cztery przyciski:
 
-* **Odtwórz** — spowoduje to rozpoczęcie wykonywania kodu aż do następnego punktu przerwania.
-* **Przekroczenie** — spowoduje to wykonanie następnego wiersza kodu. Jeśli następnym wierszem jest wywołanie funkcji, krok powyżej wykona funkcję i zatrzyma się w następnym wierszu kodu *po* funkcji.
-* **Wkrocz do** -spowoduje to również wykonanie następnego wiersza kodu. Jeśli następnym wierszem jest wywołanie funkcji, krok do zostanie zatrzymany w pierwszym wierszu funkcji, co pozwoli na kontynuowanie debugowania między wierszami funkcji. Jeśli następny wiersz nie jest funkcją, będzie działać tak samo jak krok powyżej.
-* **Wyjdź** — spowoduje to powrót do wiersza, w którym wywołano bieżącą funkcję.
+* **Odtwórz** — rozpocznie się wykonywanie kodu, aż do następnego punktu przerwania.
+* **Krok —** spowoduje to wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołanie funkcji, Step Over wykona funkcję i zatrzyma się w następnym wierszu kodu *po* funkcji.
+* **Krok do** — spowoduje to również wykonanie następnego wiersza kodu. Jeśli następny wiersz jest wywołaniem funkcji, Step Into zatrzyma się w pierwszym wierszu funkcji, co pozwala kontynuować debugowanie wiersza po wierszu funkcji. Jeśli następny wiersz nie jest funkcją, będzie zachowywać się tak samo jak Step Over.
+* **Wyjdź** — spowoduje to powrót do wiersza, w którym została wywołana bieżąca funkcja.
 
-## <a name="debugging-monos-class-libraries"></a>Debugowanie bibliotek klas mono
+## <a name="debugging-monos-class-libraries"></a>Debugowanie bibliotek klas Mono
 
-Produkty platformy Xamarin są dostarczane z kodem źródłowym dla bibliotek klas mono i można ich użyć do pojedynczego kroku z debugera, aby sprawdzić, jak działają elementy na wyciągu.
+Produkty platformy Xamarin dostarczane z kodem źródłowym bibliotek klasy Mono i można użyć tego do pojedynczego kroku z debugera, aby sprawdzić, jak rzeczy działają pod maską.
 
 Ponieważ ta funkcja zużywa więcej pamięci podczas debugowania, jest domyślnie wyłączona.
 
-Aby włączyć tę funkcję, przejdź do **Visual Studio dla komputerów Mac > preferencji > debugerze** i upewnij się, że "**Debugowanie kodu projektu; nie wkraczaj do kodu struktury ".** opcja jest **niezaznaczona**, jak pokazano poniżej:
+Aby włączyć tę funkcję, przejdź do **programu Visual Studio for Mac > Preferencje > debugera** i upewnij się, że tylko kod projektu**debugowania; nie wchodź do kodu framework.**" opcja jest **niezaznaczona,** jak pokazano poniżej:
 
-![Nie wkraczaj do kodu struktury — opcja](media/debugging-image8.png)
+![Nie wchodź do opcji kodu framework](media/debugging-image8.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Debugowanie w programie Visual Studio (w systemie Windows)](/visualstudio/debugger/)

@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvWriteMessage | Dokumentacja firmy Microsoft
+title: Funkcja CvWriteMessage | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -27,14 +27,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62936663"
 ---
-# <a name="cvwritemessage-function"></a>Cvwritemessage — funkcja
-Zapisuje komunikat do pliku śledzenia w Wizualizatorze współbieżności.
+# <a name="cvwritemessage-function"></a>Funkcja CvWriteMessage
+Zapisuje komunikat do pliku śledzenia wizualizatora współbieżności.
 
 ## <a name="syntax"></a>Składnia
 
@@ -93,18 +93,18 @@ HRESULT CvWriteMessageExVA(
 ```
 
 #### <a name="parameters"></a>Parametry
- `argList` Lista argumentów.
+ `argList`Lista argumentów.
 
- `category` Kategoria zakresu
+ `category`Kategoria zakresu
 
- `level` Poziom ważności zakresu.
+ `level`Poziom ważności zakresu.
 
- `pMarkerSeries` Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.
+ `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może być null.
 
- `pMessage` Ciąg formatu komunikatów. Nie może mieć wartości NULL.
+ `pMessage`Ciąg formatu wiadomości. Nie może być null.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+ S_OK, gdy wiadomość zostanie pomyślnie napisana. Kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkers.h*
@@ -113,5 +113,5 @@ HRESULT CvWriteMessageExVA(
 
  **ANSI:** CvWriteMessageA, CvWriteMessageVA, CvWriteMessageExA, CvWriteMessageExVA
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

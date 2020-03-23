@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvReleaseProvider | Dokumentacja firmy Microsoft
+title: Funkcja cvreleaseprovider | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62974049"
 ---
-# <a name="cvreleaseprovider-function"></a>Cvreleaseprovider — funkcja
-Dostawca znacznika wydań. Zwalnianie dostawcy znacznika nie wpłynie na utworzonej wcześniej znaczników serii tego dostawcy. Seria znacznika musi to być wersja osobno przez wywołanie cvreleasemarkerseries —. Nie można zwolnić dostawcy powoduje, że przeciek pamięci.
+# <a name="cvreleaseprovider-function"></a>Funkcja CvReleaseProvider
+Zwalnia dostawcę znaczników. Zwolnienie dostawcy znaczników nie wpłynie na poprzednio utworzoną serię znaczników tego dostawcy. Seria markerów musi być wydana oddzielnie przez wywołanie CvReleaseMarkerSeries. Niepowodzenie wydania dostawcy powoduje przeciek pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,13 +31,13 @@ HRESULT CvReleaseProvider(
 ```
 
 #### <a name="parameters"></a>Parametry
- `pProvider` Kontekst dostawcy. Nie może mieć wartości NULL.
+ `pProvider`Kontekst dostawcy. Nie może być null.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy dostawca jest pomyślnie zwolnione lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+ S_OK, gdy dostawca został pomyślnie zwolniony lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkers.h*
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

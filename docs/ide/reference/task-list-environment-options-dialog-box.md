@@ -23,45 +23,45 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592012"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Opcje — okno dialogowe: \> środowiska Lista zadań
+# <a name="options-dialog-box-environment--task-list"></a>Okno dialogowe \> Opcje: Lista zadań środowiska
 
-Ta strona opcji pozwala dodawać, usuwać i zmieniać tokeny komentarza generujące **Lista zadań** przypomnień. Aby wyświetlić te ustawienia, wybierz **Opcje** z menu **Narzędzia** , rozwiń folder **środowisko** i wybierz **Lista zadań**.
+Ta strona Opcje umożliwia dodawanie, usuwanie i zmienianie tokenów komentarzy, które generują przypomnienia **o liście zadań.** Aby wyświetlić te ustawienia, wybierz polecenie **Opcje** z menu **Narzędzia,** rozwiń folder **Środowisko** i wybierz pozycję **Lista zadań**.
 
-## <a name="task-list-tokens"></a>Tokeny Lista zadań
+## <a name="task-list-tokens"></a>Tokeny listy zadań
 
-Po wstawieniu komentarza do kodu, którego tekst zaczyna się od tokenu z **listy tokenów**, **Lista zadań** wyświetla komentarz jako nowy wpis za każdym razem, gdy plik zostanie otwarty do edycji. Kliknij wpis **Lista zadań** , aby przejść bezpośrednio do wiersza komentarza w kodzie. Aby uzyskać więcej informacji, zobacz [używanie Lista zadań](../../ide/using-the-task-list.md).
+Po wstawieniu komentarza do kodu, którego tekst zaczyna się od tokenu z **listy Token,** **lista zadań** wyświetla komentarz jako nowy wpis, gdy plik jest otwierany do edycji. Kliknij wpis **Lista zadań,** aby przejść bezpośrednio do wiersza komentarza w kodzie. Aby uzyskać więcej informacji, zobacz [Korzystanie z listy zadań](../../ide/using-the-task-list.md).
 
-Lista tokenów \
-Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokenów niestandardowych. W tokenach komentarzy jest rozróżniana wielkość liter w C# i C++, ale nie w Visual Basic.
+Lista tokenów\
+Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokenów niestandardowych. Tokeny komentarzy są rozróżniane wielkość liter w językach C# i C++, ale nie w języku Visual Basic.
 
 > [!NOTE]
-> Jeśli żądany token nie zostanie wpisany dokładnie tak, jak pojawia się na liście tokenów, zadanie komentarza nie będzie wyświetlane w **Lista zadań**.
+> Jeśli żądany token nie zostanie wpisany dokładnie tak, jak pojawia się na liście tokenów, zadanie komentarza nie będzie wyświetlane na **liście zadań**.
 
-Priorytet
-Ustawia priorytet zadań, które używają wybranego tokenu (niska, normalna lub wysoka). Komentarze do zadań zaczynające się od tego tokenu są automatycznie przypisywane przez wyznaczony priorytet w **Lista zadań**.
+Priorytet\
+Ustawia priorytet zadań, które używają wybranego tokenu (niski, normalny lub wysoki). Komentarze zadań, które zaczynają się od tego tokenu, są automatycznie przypisywane wyznaczonemu priorytetowi na **liście zadań**.
 
-Nazwij
-Wprowadź ciąg tokenu tutaj, a następnie kliknij przycisk **Dodaj** , aby dodać ciąg do listy tokenów.
+Nazwa\
+Wprowadź ciąg tokenu w tym miejscu, a następnie kliknij przycisk **Dodaj,** aby dodać ciąg do listy tokenów.
 
-Dodana
-Włączone po wprowadzeniu nowej **nazwy**. Kliknij, aby dodać nowy ciąg tokenu przy użyciu wartości wprowadzonych w polach **Nazwa** i **priorytet** .
+Dodaj\
+Włączono po wprowadzeniu nowej **nazwy**. Kliknij, aby dodać nowy ciąg tokenu przy użyciu wartości wprowadzonych w polach **Nazwa** i **Priorytet.**
 
-Usunięty
+Usuń\
 Kliknij, aby usunąć wybrany token z listy tokenów. Nie można usunąć domyślnego tokenu komentarza.
 
-Stąp
-Kliknij, aby wprowadzić zmiany w istniejącym tokenie przy użyciu wartości wprowadzonych w polach **Nazwa** i **priorytet** .
+Zmień\
+Kliknij, aby wprowadzić zmiany w istniejącym tokenie przy użyciu wartości wprowadzonych w polach **Nazwa** i **Priorytet.**
 
 > [!NOTE]
-> Nie można zmienić ani usunąć domyślnego tokenu komentarza, ale można zmienić jego poziom priorytetu.
+> Nie można zmienić nazwy lub usunąć domyślnego tokenu komentarza, ale można zmienić jego poziom priorytetu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Korzystanie z listy zadań](../../ide/using-the-task-list.md)
-- [Ustawien zakładek w kodzie](../../ide/setting-bookmarks-in-code.md)
+- [Zakładki Sett w kodzie](../../ide/setting-bookmarks-in-code.md)

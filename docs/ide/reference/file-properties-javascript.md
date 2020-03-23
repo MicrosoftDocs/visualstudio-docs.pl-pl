@@ -27,47 +27,47 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68926235"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 
-Właściwości pliku można użyć, aby wskazać, jakie akcje powinien wykonać system projektu na plikach. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik ma zostać dodany do pakietu jako plik zasobów.
+Właściwości pliku można użyć, aby wskazać, jakie akcje system projektu powinien wykonać na plikach. Na przykład można ustawić właściwości pliku, aby wskazać, czy plik powinien zostać dodany do pakietu jako plik zasobu.
 
-Możesz wybrać dowolny plik w Eksplorator rozwiązań a następnie przejrzeć jego właściwości w okno Właściwości. Pliki JavaScript mają cztery właściwości: **Kopiuj do katalogu wyjściowego**, **akcji pakietu**, **nazwy pliku**i **ścieżki pliku**.
+Można wybrać dowolny plik w Eksploratorze rozwiązań, a następnie sprawdzić jego właściwości w oknie Właściwości. Pliki JavaScript mają cztery właściwości: **Kopiuj do katalogu wyjściowego,** **Akcja pakietu,** **Nazwa pliku**i **Ścieżka pliku.**
 
 ## <a name="file-properties"></a>Właściwości pliku
 W tej sekcji opisano właściwości typowe dla plików JavaScript.
 
-### <a name="copy-to-output-directory-property"></a>Kopiuj do właściwości katalogu wyjściowego
-Ta właściwość określa warunki, w których wybrany plik źródłowy zostanie skopiowany do katalogu wyjściowego. Wybierz opcję nie **Kopiuj** , jeśli plik nigdy nie będzie kopiowany do katalogu wyjściowego. Wybierz opcję **Kopiuj zawsze** , jeśli plik jest zawsze kopiowany do katalogu wyjściowego. Wybierz opcję **Kopiuj, jeśli nowszy** , jeśli plik ma być kopiowany tylko wtedy, gdy jest on nowszy niż istniejący plik o tej samej nazwie w katalogu wyjściowym.
+### <a name="copy-to-output-directory-property"></a>Właściwość Kopiowanie do katalogu wyjściowego
+Ta właściwość określa warunki, w których wybrany plik źródłowy zostanie skopiowany do katalogu wyjściowego. Wybierz **opcję Nie kopiuj,** jeśli plik nigdy nie ma być kopiowany do katalogu wyjściowego. Wybierz **opcję Kopiuj zawsze,** jeśli plik ma być zawsze kopiowany do katalogu wyjściowego. Wybierz **opcję Kopiuj, jeśli** plik ma być kopiowany tylko wtedy, gdy jest nowszy niż istniejący plik o tej samej nazwie w katalogu wyjściowym.
 
 ### <a name="package-action"></a>Akcja pakietu
-Właściwość **Akcja pakietu** wskazuje, co program Visual Studio wykonuje wraz z plikiem, gdy kompilacja jest wykonywana. **Akcja pakietu** może mieć jedną z kilku wartości:
+Właściwość **akcja pakietu** wskazuje, co program Visual Studio robi z plikiem podczas wykonywania kompilacji. **Akcja pakietu** może mieć jedną z kilku wartości:
 
-- **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, taką jak plik Readme.
+- **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy zawierający dokumentację, taką jak plik Readme.
 
-- **Zawartość** — plik zostanie uwzględniony w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla pliku htm, js, CSS, obrazu, audio lub wideo.
+- **Zawartość** — plik znajduje się w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla pliku .htm, .js, css, image, audio lub wideo.
 
-- **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego plik jest używany do wprowadzania danych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku Package. appxmanifest.
+- **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego plik jest używany do wprowadzania danych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.
 
-- **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego zawartość pliku jest indeksowana w indeksie zasobów pakietu (PRI), który jest przekazywany do manifestu pakietu. Jest zazwyczaj używany w przypadku plików zasobów.
+- **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego zawartość pliku są indeksowane w indeksie zasobów pakietu (PRI), który przechodzi do manifestu pakietu. Zazwyczaj jest używany dla plików zasobów.
 
-Wartość domyślna dla **akcji pakietu** zależy od rozszerzenia pliku dodawanego do rozwiązania.
+Wartość domyślna **dla akcji pakietu** zależy od rozszerzenia pliku, który można dodać do rozwiązania.
 
-### <a name="file-name-property"></a>Właściwość nazwy pliku
-Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksplorator rozwiązań i wybrać polecenie **Zmień nazwę**.
+### <a name="file-name-property"></a>Właściwość nazwa pliku
+Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksploratorze rozwiązań i wybrać **polecenie Zmień nazwę**.
 
-### <a name="full-path-property"></a>Właściwość pełnej ścieżki
-Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę pliku, można przeciągnąć i upuścić plik w Eksplorator rozwiązań.
+### <a name="full-path-property"></a>Pełna właściwość path
+Wyświetla pełną ścieżkę do pliku jako wartość tylko do odczytu. Aby zmienić ścieżkę pliku, można przeciągnąć i upuścić plik w Eksploratorze rozwiązań.
 
-## <a name="reference-file-properties"></a>Właściwości pliku referencyjnego
-W tej sekcji opisano właściwości typowe dla plików, do których odwołuje się aplikacja platformy UWP skompilowana przy użyciu języka JavaScript. Po wybraniu odwołania, takiego jak plik winmd, odwołanie do zestawu SDK, odwołanie projekt-do-projektu lub odwołanie do zestawu w Eksplorator rozwiązań, inne właściwości mogą być wyświetlane w okno Właściwości, zgodnie z typem pliku.
+## <a name="reference-file-properties"></a>Właściwości pliku odwołań
+W tej sekcji opisano właściwości typowe dla plików, do których odwołuje się aplikacja platformy uniwersalnej systemuśpiłna schyłana przy użyciu języka JavaScript. Po wybraniu odwołania, takiego jak plik .winmd, odwołanie do zestawu SDK, odwołanie do projektu lub odwołanie do zestawu w Eksploratorze rozwiązań, inne właściwości mogą być wyświetlane w oknie Właściwości, zgodnie z typem pliku.
 
-### <a name="culture"></a>Kultura
+### <a name="culture"></a>Culture
 Wyświetla język skojarzony z odwołaniem.
 
 ### <a name="file-type"></a>Typ pliku
@@ -77,23 +77,23 @@ Wyświetla typ pliku odwołania.
 Wyświetla wersję pliku odwołania.
 
 ### <a name="identity"></a>Tożsamość
-Wyświetla tożsamość odwołania, która jest używana w projekcie, który jest przechowywany w pliku projektu.
+Wyświetla tożsamość odwołania, który jest używany w projekcie, który jest przechowywany w pliku projektu.
 
-### <a name="package"></a>Package
+### <a name="package"></a>Pakiet
 Wyświetla nazwę manifestu pakietu skojarzonego z odwołaniem.
 
-### <a name="resolved-path"></a>Rozwiązany ścieżka
-Wyświetla ścieżkę do odwołania, które jest używane w projekcie.
+### <a name="resolved-path"></a>Rozwiązana ścieżka
+Wyświetla ścieżkę do odwołania, który jest używany w projekcie.
 
-### <a name="sdk-path"></a>Ścieżka zestawu SDK
-Wyświetla ścieżkę do pliku zestawu SDK, do którego istnieje odwołanie.
+### <a name="sdk-path"></a>Ścieżka SDK
+Wyświetla ścieżkę do pliku SDK, do którego istnieje odwołanie.
 
-### <a name="uri"></a>Adresu
-Wyświetla identyfikator URI, który musi być uwzględniony w plikach HTML lub JavaScript projektu, aby dołączyć plik jako plik źródłowy.
+### <a name="uri"></a>Identyfikator uri
+Wyświetla identyfikator URI, który musi zostać uwzględniony w plikach HTML lub JavaScript projektu, aby uwzględnić plik jako plik źródłowy.
 
 ### <a name="version"></a>Wersja
 Wyświetla wersję odwołania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zarządzanie właściwościami projektu i rozwiązania](../../ide/managing-project-and-solution-properties.md)
+- [Zarządzanie właściwościami projektów i rozwiązań](../../ide/managing-project-and-solution-properties.md)

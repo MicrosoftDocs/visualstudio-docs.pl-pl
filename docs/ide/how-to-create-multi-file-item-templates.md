@@ -1,5 +1,5 @@
 ---
-title: Tworzenie szablonów elementów wielu plików
+title: Tworzenie szablonów elementów z wieloma plikami
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593736"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Porady: Tworzenie szablonów elementów wielu plików
+# <a name="how-to-create-multi-file-item-templates"></a>Jak: Tworzenie szablonów elementów z wieloma plikami
 
-Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularze Windows wymaga następujących trzech plików:
+Szablony elementów mogą określać tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularzy systemu Windows wymaga następujących trzech plików:
 
-- Plik, który zawiera kod dla formularza
+- Plik zawierający kod formularza
 
-- Plik, który zawiera informacje o projektancie formularza
+- Plik zawierający informacje o projektancie formularza
 
-- Plik zawierający zasoby osadzone dla formularza
+- Plik zawierający osadzone zasoby formularza
 
-Szablony elementów wielu plików wymagane parametry, aby upewnić się, że rozszerzenia odpowiedniego pliku są używane podczas tworzenia elementu. Jeśli tworzysz szablonów elementów wielu plików za pomocą **Kreatora eksportowania szablonu**, parametry te są generowane automatycznie i nie dalszej edycji jest wymagany.
+Szablony elementów z wieloma plikami wymagają parametrów, aby upewnić się, że podczas tworzenia elementu są używane poprawne rozszerzenia plików. Jeśli szablon elementu z wieloma plikami zostanie utworzony za pomocą **Kreatora eksportu szablonów,** parametry te są generowane automatycznie i nie jest wymagana dalsza edycja.
 
 ## <a name="use-the-export-template-wizard"></a>Korzystanie z Kreatora eksportu szablonów
 
-Można utworzyć szablon elementów wielu plików w taki sam sposób, jak szablon elementu pojedynczego pliku. Zobacz [porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md). Na **wybierz element do eksportowania** strony kreatora, wybierz plik, który zawiera pliki zależne (na przykład plik formularzy Windows Forms). W kreatorze są automatycznie dostępne pliki zależne, takie jak projektant i pliki zasobów w szablonie.
+Szablon elementu z wieloma plikami można utworzyć w taki sam sposób, jak szablon pojedynczego elementu. Zobacz [Jak: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md). Na stronie **Wybierz element do wyeksportowania** kreatora wybierz plik zawierający pliki zależne (na przykład plik formularza Formularze systemu Windows). Kreator automatycznie zawiera wszystkie pliki zależne, takie jak pliki projektanta i zasobów, w szablonie.
 
-## <a name="manually-create-a-multi-file-item-template"></a>Ręcznie Utwórz szablon elementu wieloplikowego
+## <a name="manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonu elementu z wieloma plikami
 
-1. Utwórz szablon elementu po będzie ręcznie utworzyć szablon elementu pojedynczy plik, ale zawierają każdego pliku, który stanowi elementów wielu plików.
+1. Utwórz szablon elementu tak, jak ręcznie utwórz szablon pojedynczego pliku, ale dołącz każdy plik, który stanowi element wielonamedowy.
 
-1. W *.vstemplate* XML Dodaj `ProjectItem` elementu dla każdego pliku i Dodaj `TargetFileName` atrybutu tego elementu. Ustaw wartość `TargetFileName` atrybutu *$fileinputname$. FileExtension*, gdzie *FileExtension* jest rozszerzeniem pliku, który jest uwzględniane w szablonie. Na przykład:
+1. W pliku XML *.vstemplate* `ProjectItem` dodaj element dla każdego pojedynczego `TargetFileName` pliku i dodaj atrybut do tego elementu. Ustaw wartość atrybutu na `TargetFileName` *$fileinputname$. FileExtension*, gdzie *FileExtension* jest rozszerzeniem pliku, który jest zawarty w szablonie. Przykład:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -51,23 +51,23 @@ Można utworzyć szablon elementów wielu plików w taki sam sposób, jak szablo
     ```
 
      > [!NOTE]
-     > Gdy element pochodzące z tego szablonu zostanie dodany do projektu, nazw plików, z której pochodzą z nazwy, który użytkownik wprowadza w **Dodaj nowy element** okno dialogowe.
+     > Gdy element pochodzący z tego szablonu zostanie dodany do projektu, nazwy plików będą pochodzić od nazwy wprowadzonej przez użytkownika w oknie dialogowym **Dodawanie nowego elementu.**
 
-1. Wybierz pliki do uwzględnienia w szablonie, kliknij prawym przyciskiem myszy zaznaczenie, a następnie wybierz **wysyłać** > **skompresowany folder (zip)** .
+1. Wybierz pliki, które mają zostać uwzględnione w szablonie, kliknij prawym przyciskiem myszy zaznaczenie i wybierz polecenie **Wyślij do** > **skompresowanego (spakowane) folderu**.
 
-   Wybrane pliki są kompresowane do *zip* pliku.
+   Wybrane pliki zostaną skompresowane do pliku *zip.*
 
-1. Kopiuj *zip* plik do lokalizacji szablonów elementów użytkownika. Domyślnie katalog znajduje się *%USERPROFILE%\Documents\Visual Studio \<wersji\>\Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [porady: lokalizowanie i organizacja szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Skopiuj plik *zip* do lokalizacji szablonu elementu użytkownika. Domyślnie katalog to *%USERPROFILE%\Documents\Visual \<Studio\>Version \Templates\ItemTemplates*. Aby uzyskać więcej informacji, zobacz [Jak: Lokalizowanie i organizowanie szablonów](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Zamknij program Visual Studio, a następnie otwórz go ponownie.
 
-1. Utwórz nowy projekt lub Otwórz istniejący projekt, a następnie wybierz **projektu** > **Dodaj nowy element** lub naciśnij **Ctrl** +  **SHIFT**+**A**.
+1. Utwórz nowy projekt lub otwórz istniejący projekt, a następnie wybierz pozycję **Project** > **Add New Item** lub Naciśnij klawisz **Ctrl**+**Shift**+**A**.
 
-   Szablon elementów wielu plików jest wyświetlany w **Dodaj nowy element** okno dialogowe.
+   Szablon elementu z wieloma plikami pojawi się w oknie dialogowym **Dodawanie nowego elementu.**
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład przedstawia szablon Windows Forms. Gdy element zostanie utworzony na podstawie tego szablonu, nazwy trzy utworzone pliki będą zgodne nazwy wprowadzone w **Dodaj nowy element** okno dialogowe.
+W poniższym przykładzie przedstawiono szablon formularzy systemu Windows. Po utworzeniu elementu na podstawie tego szablonu nazwy trzech utworzonych plików będą zgodne z nazwą wprowadzona w oknie dialogowym **Dodawanie nowego elementu.**
 
 ```xml
 <VSTemplate Version="2.0.0" Type="Item"
@@ -92,9 +92,9 @@ Poniższy przykład przedstawia szablon Windows Forms. Gdy element zostanie utwo
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Porady: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
+- [Jak: Tworzenie szablonów elementów](../ide/how-to-create-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
-- [Instrukcje: zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Jak: Zastępowanie parametrów w szablonie](../ide/how-to-substitute-parameters-in-a-template.md)

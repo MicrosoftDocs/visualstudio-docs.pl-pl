@@ -1,49 +1,49 @@
 ---
 title: Zarządzanie odwołaniami w projekcie
-description: W tym artykule opisano sposób zarządzania odwołań w projekcie w programie Visual Studio dla komputerów Mac
+description: W tym artykule opisano sposób zarządzania odwołaniami w projekcie w programie Visual Studio dla komputerów Mac
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.openlocfilehash: a14630c5448632a939e1768040b910caf6276c2a
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "67692920"
 ---
 # <a name="managing-references-in-a-project"></a>Zarządzanie odwołaniami w projekcie
 
-Program Visual Studio for Mac oferuje dwa sposób dodawania dodatkowych odwołania do projektu:
+Program Visual Studio dla komputerów Mac udostępnia dwa sposoby dodawania dodatkowych odwołań do projektu:
 
 ![Informacje o projekcie](media/projects-and-solutions-image10.png)
 
 Są to:
 
-* Odwołania
-* Rozszerzeń Nuget (dodane za pośrednictwem Packages folder)
+* Dokumentacja
+* NuGets (Dodano za pośrednictwem folderu Pakiety)
 
-Ponadto odwołania sieci Web i odwołania natywne również można dodać do każdego projektu.
+Ponadto odwołania do sieci Web i odwołania natywne można również dodać do dowolnego projektu.
 
-## <a name="assembly-references"></a>Odwołania do zestawów
+## <a name="assembly-references"></a>Odniesienia do złożenia
 
-Każdy struktury platformy Xamarin jest dostarczany z ponad tuzina zestawów. Nie wszystkie te pakiety zestawu w projekcie są określone przez domyślny.
+Każda struktura w ramach platformy Xamarin jest dostarczana z kilkunastoma zestawami. Nie wszystkie z tych pakietów zestawu są domyślnie odwołuje się do projektu.
 
-Aby edytować pakietów, do których istnieją odwołania w projekcie, należy użyć **Edytuj odwołania** okno dialogowe, które można wyświetlić, klikając dwukrotnie plik w folderze odwołania lub wybierając **Edytuj odwołania** na kontekst menu Akcje:
+Aby edytować pakiety, do których odwołuje się projekt, użyj okna dialogowego **Edytuj odwołania,** które można wyświetlić, klikając dwukrotnie folder Odwołania lub wybierając pozycję Edytuj odwołania w jego **akcjach** menu kontekstowego:
 
-![Okno dialogowe odwołania do zestawu](media/projects-and-solutions-image11.png)
+![Okno dialogowe Odwołania do złożenia](media/projects-and-solutions-image11.png)
 
-Aby uzyskać informacji na temat zestawów dostępności dla każdej platformy Xamarin, zobacz [dostępnych zestawów](https://developer.xamarin.com/guides/cross-platform/advanced/available-assemblies/) przewodnik.
+Aby uzyskać informacje na temat zestawów dostępnych dla każdej platformy Xamarin, zapoznaj się z [przewodnikiem Dostępne zestawy.](https://developer.xamarin.com/guides/cross-platform/advanced/available-assemblies/)
 
 ## <a name="nuget"></a>NuGet
 
-NuGet jest najbardziej popularnych Menedżer pakietów dla programowania na platformie .NET. Program Visual Studio dla komputerów Mac, obsługę pakietów NuGet umożliwia wyszukiwanie pakiety do dodania do projektu.
+NuGet jest najpopularniejszym menedżerem pakietów dla rozwoju platformy .NET. Obsługa nuget w programie Visual Studio for Mac umożliwia wyszukiwanie pakietów do dodania do projektu.
 
-Aby to zrobić, kliknij prawym przyciskiem myszy **pakietu** folderu w konsoli rozwiązania, a następnie wybierz opcję Dodaj pakiety.
+Aby to zrobić, kliknij prawym przyciskiem myszy folder **Pakiet** w panelu rozwiązania i wybierz pozycję Dodaj pakiety.
 
-Więcej informacji na temat korzystania z pakietu NuGet jest podawany jako [pakietu w tym NuGet w projekcie](nuget-walkthrough.md) wskazówki.
+Więcej informacji na temat korzystania z pakietu NuGet znajduje się w [including pakietu NuGet w](nuget-walkthrough.md) instruktażu projektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zarządzanie odwołaniami (Visual Studio Windows)](/visualstudio/ide/managing-references-in-a-project)
-- [Dodawaniem odwołań za pomocą NuGet a extension SDK (Visual Studio Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)
+- [Zarządzanie odwołaniami (Visual Studio w systemie Windows)](/visualstudio/ide/managing-references-in-a-project)
+- [Dodawanie odwołań przy użyciu nuget a sdk rozszerzenia (Visual Studio w systemie Windows)](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

@@ -1,5 +1,5 @@
 ---
-title: Nazwa przestrzeni nazw i folder synchronizacji
+title: Synchronizowanie przestrzeni nazw i nazwy folderu
 ms.date: 06/12/2019
 ms.topic: reference
 author: mikadumont
@@ -10,32 +10,32 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d7073edaf6ecc261c58bf1e5607323b9214c5ed0
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67160727"
 ---
-# <a name="sync-namespace-and-folder-name"></a>Nazwa przestrzeni nazw i folder synchronizacji
+# <a name="sync-namespace-and-folder-name"></a>Synchronizowanie przestrzeni nazw i nazwy folderu
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
-**Co:** Synchronizacja przestrzeni nazw i nazwę folderu.
+**Co:** Synchronizowanie obszaru nazw i nazwy folderu.
 
-**Kiedy:** Chcesz Przekształcanie części rozwiązaniu, przeciągając plik do nowego folderu. 
+**Kiedy:** Chcesz ponownie wywrzeć część rozwiązania, przeciągając plik do nowego folderu. 
 
-**Dlaczego:** Chcesz upewnić się, że przestrzeń nazw aktualność w górę z Twojej nowej struktury folderów.
+**Dlaczego?** Chcesz upewnić się, że obszar nazw jest na bieżąco z nową strukturą folderów.
 
-## <a name="how-to"></a>Instrukcje
+## <a name="how-to"></a>Porady
 
-1. Umieść kursor w nazwie przestrzeni nazw.
-2. Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-3. Wybierz **zmiany nazw w celu \<nazwę folderu >** .
+1. Umieść kursor w nazwie obszaru nazw.
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+3. Wybierz **pozycję Zmień \<obszar nazw na nazwę folderu>**.
 
-   ![Namespace synchronizacji i nazwę folderu](media/sync-namespace-and-folder-name.png)
+   ![Synchronizowanie nazwy obszaru nazw i folderu](media/sync-namespace-and-folder-name.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Widok rdzeni | Dokumentacja firmy Microsoft
+title: Widok rdzeni | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b26b913a42a563e0226ff2697b947684dfec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553061"
 ---
 # <a name="cores-view"></a>Widok rdzeni
-**Widoku rdzeni** pokazuje, jak wykonanie wątku został zamapowany na rdzeni procesora logicznego (wybierz **analizy** > **Concurrency Visualizer** do uruchomienia Narzędzie CONCURRENCY visualizer). Jeśli piszesz aplikacje serwera, ten widok może pomóc w optymalizacji wydajności pamięci podręcznej przy użyciu przystawki Zarządzanie puli wątków koligacji lub wątku. Może również pomóc możesz sprawdzić przypadki, w którym korzystanie z koligacji wątku może mieć pogorszyła problem migracji między różnymi rdzeniami. Widok rdzeni ma dwie części, wykresu i legenda.
+**Widok rdzeni** pokazuje, jak wykonanie wątku zostało mapowane na rdzenie procesora logicznego (wybierz **opcję Analizuj** > **wizualizator współbieżności,** aby uruchomić wizualizator współbieżności). Jeśli piszesz aplikacje serwera, ten widok może pomóc zoptymalizować wydajność pamięci podręcznej przy użyciu koligacji wątków lub zarządzania pulą wątków. Może również pomóc zbadać przypadki, w których użycie koligacji wątku może pogorszyć problem migracji międzyrdzeniowej. Widok rdzeni ma dwie części, wykres i legendę.
 
- Na wykresie widać rdzenie logiczne na osi y i godziny na osi x. Każdy wątek na wykresie ma unikatowy kolor, więc możliwe jest śledzenie jego ruchu między rdzeniami wraz z upływem czasu. Wątki na tym wykresie można filtrować, wybierając je w obszarze legendy.
+ Wykres przedstawia rdzenie logiczne na osi y i czasie na osi x. Każdy wątek na wykresie ma unikalny kolor, dzięki czemu można śledzić jego ruch w poprzek rdzeni w czasie. Wątki na tym wykresie można filtrować, zaznaczając je w obszarze legendy.
 
- W obszarze legendy ma wpis dla każdego koloru na wykresie. Każdy wpis zawiera kolor wątku i nazwę, liczba przełączeń kontekstu między rdzeniami, całkowita liczba przełączeń kontekstu i procent przełączeń kontekstu przecinających rdzenie. Legendy są posortowane według liczby przełączeń kontekstu między rdzeniami, w kolejności malejącej. Wyświetla listę wątków, które wykonywane w czasie wyświetlane.  Lista jest aktualizowana, jeśli użytkownik przybliżanie/Oddalanie lub przesuwanie.
+ Obszar legendy ma wpis dla każdego koloru na wykresie. Każdy wpis pokazuje kolor i nazwę wątku, liczbę przełączników kontekstu między rdzeniami, całkowitą liczbę przełączników kontekstu i procent przełączników kontekstu, które przecinają rdzenie. Legenda jest sortowana według liczby przełączników kontekstu między rdzeniami w kolejności malejącej. Wyświetla tylko wątki, które zostały wykonane podczas wyświetlanego zakresu czasu.  Lista zostanie zaktualizowana po powiększeniu lub przesunienie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 - [Widok wykorzystania](../profiling/utilization-view.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

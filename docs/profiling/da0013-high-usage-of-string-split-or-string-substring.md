@@ -1,5 +1,5 @@
 ---
-title: 'DA0013: wysokie użycie metody String. Split lub String. substring | Microsoft Docs'
+title: 'DA0013: Wysokie użycie string.split lub string.substring | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,29 +18,29 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d42469ac5236a41eda96af5d1fe896a5ed84a321
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779411"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie String.Split lub String.Substring
 
 |||
 |-|-|
-|Identyfikator zasady|DA0013|
-|Kategoria|Wskazówki dotyczące .NET Framework|
-|Metody profilowania|Sond|
-|Komunikat|Rozważ ograniczenie użycia funkcji String. Split i String. substring.|
+|Identyfikator reguły|DA0013|
+|Kategoria|Wskazówki dotyczące użycia programu .NET Framework|
+|Metody profilowania|Próbkowanie|
+|Komunikat|Należy rozważyć zmniejszenie użycia string.split i String.Substring funkcji.|
 |Typ reguły|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania metody System. String. Split lub system. String. substring są istotną częścią danych profilowania. Rozważ użycie elementu System. String. IndexOf lub system. String. IndexOfAny, jeśli testujesz istnienie podciągu w ciągu.
+ Wywołania metody System.String.Split lub System.String.Substring stanowią znaczną część danych profilowania. Należy rozważyć użycie System.String.IndexOf lub System.String.IndexOfAny, jeśli testujesz podciąg w ciągu.
 
 ## <a name="rule-description"></a>Opis reguły
- Metoda Split działa na obiekcie String i zwraca nową tablicę ciągów, która zawiera podciągi oryginału. Funkcja przydziela pamięć dla zwracanego obiektu array i przydziela nowy obiekt ciągu dla każdego elementu tablicy, który znajdzie. Podobnie Metoda substr działa na obiekcie String i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciągu.
+ Split Metoda działa na String obiektu i zwraca nową tablicę Strings, który posiada podciągi oryginału. Funkcja przydziela pamięć dla zwróconego obiektu tablicowego i przydziela nowy obiekt String dla każdego elementu tablicy, który znajdzie. Podobnie substr metoda działa na String obiektu i zwraca nowy String, który jest odpowiednikiem żądanego podciągu.
 
- Jeśli Zarządzanie alokacją pamięci ma krytyczne znaczenie dla aplikacji, należy rozważyć użycie alternatywnych metod String. Split i String. substr. Na przykład można użyć metody IndexOf lub IndexOfAny, aby zlokalizować konkretny podciąg w ciągu znaków bez tworzenia nowego wystąpienia klasy String.
+ Jeśli zarządzanie alokacji pamięci ma kluczowe znaczenie w aplikacji, należy rozważyć użycie alternatyw dla String.Split i String.Substr metody. Na przykład można użyć IndexOf lub IndexOfAny metody, aby zlokalizować określonego podciąg w ciągu znaku bez tworzenia nowego wystąpienia String klasy.
 
 ## <a name="how-to-investigate-a-warning"></a>Jak zbadać ostrzeżenie
- Kliknij dwukrotnie komunikat w oknie **Lista błędów** , aby przejść do [widoku Szczegóły funkcji](../profiling/function-details-view.md) danych profilu próbkowania. Sprawdź funkcje wywołujące, aby znaleźć sekcje programu, które są najczęściej używane metody System. String. Split lub system. String. substr. Jeśli to możliwe, użyj metody IndexOf lub IndexOfAny, aby zlokalizować konkretny podciąg w ciągu znaków bez tworzenia nowego wystąpienia klasy String.
+ Kliknij dwukrotnie komunikat w oknie **Lista błędów,** aby przejść do [widoku szczegóły funkcji](../profiling/function-details-view.md) danych profilu próbkowania. Sprawdź funkcje wywołujące, aby znaleźć sekcje programu, które najczęściej korzystają z metod System.String.Split lub System.String.Substr. Jeśli to możliwe, użyj IndexOf lub IndexOfAny metody, aby zlokalizować określonego podciąg w ciągu znaków bez tworzenia nowego wystąpienia String klasy.

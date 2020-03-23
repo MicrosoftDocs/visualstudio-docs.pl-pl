@@ -8,124 +8,124 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872089158b6e4dc0b55c26ad187e3b68d0501f26
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77027608"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
-Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszystkie do programu Visual Studio, aby uzyskać dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego osobno. Usługi platformy Azure, Application Insights, Azure DevOps i Office 365 obsługują usprawnione środowisko logowania.
+Jeśli masz wiele kont Microsoft i/lub kont służbowych, możesz dodać je wszystkie do programu Visual Studio, aby uzyskać dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego oddzielnie. Usługi Azure, Application Insights, Azure DevOps i Office 365 obsługują usprawnione środowisko logowania.
 
-Po dodaniu wielu kont na jednej maszynie ten zbiór kont zostanie przejściu do Ciebie, jeśli zalogujesz się do programu Visual Studio na innym komputerze.
+Po dodaniu wielu kont na jednym komputerze ten zestaw kont przemieszcza się z Tobą, jeśli zalogujesz się do programu Visual Studio na innym komputerze.
 
 > [!NOTE]
-> Mimo że nazwy kont są przenoszone, poświadczenia nie są obsługiwane. Zostanie wyświetlony monit o podanie poświadczeń dla tych innych kont przy pierwszej próbie użycia zasobów na nowym komputerze.
+> Chociaż nazwy kont są przemęczone, poświadczenia nie są. Zostanie wyświetlony monit o wprowadzenie poświadczeń dla tych innych kont przy pierwszej próbie użycia ich zasobów na nowym komputerze.
 
-W tym artykule pokazano, jak dodać wiele kont do programu Visual Studio. Przedstawiono w nim również sposób wyświetlania zasobów dostępnych z tych kont w miejscach takich jak okno dialogowe **Dodawanie podłączonej usługi** , **Eksplorator serwera**i **Team Explorer**.
+W tym artykule pokazano, jak dodać wiele kont do programu Visual Studio. Pokazuje również, jak wyświetlić zasoby dostępne z tych kont w miejscach takich jak Okno dialogowe **Dodaj połączoną usługę,** **Eksplorator serwera**i **Eksplorator zespołu**.
 
 ## <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
-Zaloguj się do programu Visual Studio przy użyciu konto Microsoft lub konta organizacyjnego. Twoja nazwa użytkownika powinna pojawić się w górnym rogu okna, podobnie jak w przypadku:
+Zaloguj się do programu Visual Studio za pomocą konta Microsoft lub konta organizacji. Nazwa użytkownika powinna być wyświetlana w górnym rogu okna, podobnie jak w tym przypadku:
 
 ![Aktualnie zalogowany użytkownik](../ide/media/vs2015_username.png)
 
-### <a name="access-your-azure-account-in-server-explorer"></a>Uzyskaj dostęp do konta platformy Azure w Eksplorator serwera
+### <a name="access-your-azure-account-in-server-explorer"></a>Uzyskiwanie dostępu do konta platformy Azure w Eksploratorze serwera
 
-Aby otworzyć Eksplorator serwera, wybierz pozycję **wyświetl** > **Eksplorator serwera** (lub, jeśli używasz [ustawień środowiska](../ide/environment-settings.md)"ogólne", naciśnij **klawisze CTRL**+**Alt**+**S**). Rozwiń węzeł **platformy Azure** i zwróć uwagę, że zawiera on zasoby dostępne na koncie platformy Azure skojarzonym z kontem używanym do logowania się w programie Visual Studio. Wygląda podobnie do poniższej ilustracji:
+Aby otworzyć Eksploratora serwera, wybierz pozycję **Wyświetl** > **Eksploratora serwera** (lub, jeśli używasz "Ogólnych" ustawień [środowiska,](../ide/environment-settings.md)naciśnij **klawisz Ctrl**+**Alt**+**S**). Rozwiń węzeł **platformy Azure** i zwróć uwagę, że zawiera zasoby dostępne na koncie platformy Azure skojarzone z kontem, które zostało użyte do zalogowania się do programu Visual Studio. Wygląda podobnie do następującego obrazu:
 
 ![Eksplorator serwera z rozwiniętym węzłem platformy Azure](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
-Przy pierwszym użyciu programu Visual Studio na dowolnym konkretnym urządzeniu w oknie dialogowym są wyświetlane tylko subskrypcje zarejestrowane w ramach konta, na którym się zalogowano. Możesz uzyskać dostęp do zasobów dla dowolnego innego konta bezpośrednio z **Eksplorator serwera** , klikając prawym przyciskiem myszy węzeł **platformy Azure** , wybierając pozycję **Zarządzaj i Filtruj subskrypcje**, a następnie dodając konta z poziomu kontrolki selektor kont. W razie potrzeby możesz wybrać inne konto, klikając strzałkę w dół i wybierając pozycję z listy kont. Po wybraniu konta możesz dostosować subskrypcje w ramach tego konta, które mają być wyświetlane w **Eksplorator serwera**.
+Przy pierwszym użyciu programu Visual Studio na dowolnym określonym urządzeniu okno dialogowe zawiera tylko subskrypcje zarejestrowane na koncie, które się zalogowano. Dostęp do zasobów dla innych kont można uzyskać bezpośrednio z **Eksploratora serwera,** klikając prawym przyciskiem myszy węzeł **platformy Azure,** wybierając pozycję **Zarządzaj subskrypcjami i filtruj subskrypcje,** a następnie dodając konta z kontroli selektora kont. Następnie możesz wybrać inne konto, w razie potrzeby, klikając strzałkę w dół i wybierając z listy kont. Po wybraniu konta można dostosować subskrypcje w ramach tego konta do wyświetlenia w **Eksploratorze serwera**.
 
 ![Okno dialogowe Zarządzanie subskrypcjami platformy Azure](../ide/media/vs2015_manage_subs.png)
 
-Przy następnym otwarciu **Eksplorator serwera**zostaną wyświetlone zasoby dla tej subskrypcji.
+Przy następnym **otwarciu Eksploratora serwera**zostaną wyświetlone zasoby dla tej subskrypcji.
 
-### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Uzyskiwanie dostępu do konta platformy Azure za pomocą okna dialogowego Dodawanie połączonej usługi
+### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Dostęp do konta platformy Azure za pomocą okna dialogowego Dodawanie połączonej usługi
 
-1. Otwórz istniejący projekt lub Utwórz nowy projekt.
+1. Otwórz istniejący projekt lub utwórz nowy projekt.
 
-1. Wybierz węzeł projektu w **Eksplorator rozwiązań**, a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj** > **połączonej usługi**.
+1. Wybierz węzeł projektu w **Eksploratorze rozwiązań,** a następnie kliknij prawym przyciskiem myszy i wybierz polecenie **Dodaj** > **połączoną usługę**.
 
-   Zostanie wyświetlony Kreator **dodawania usługi połączonej** z listą usług na koncie platformy Azure skojarzonym z Twoim kontem personalizacji programu Visual Studio. Nie musisz logować się osobno na platformie Azure. Należy jednak zalogować się do innych kont przy pierwszej próbie uzyskania dostępu do zasobów z innego komputera.
+   Kreator **Dodaj usługę połączoną** zostanie wyświetlony i wyświetli listę usług na koncie platformy Azure skojarzonych z kontem personalizacji programu Visual Studio. Nie musisz logować się oddzielnie na platformie Azure. Jednak musisz zalogować się do innych kont przy pierwszej próbie uzyskania dostępu do ich zasobów z innego komputera.
 
-### <a name="access-azure-active-directory-in-a-web-project"></a>Dostęp do Azure Active Directory w projekcie sieci Web
+### <a name="access-azure-active-directory-in-a-web-project"></a>Uzyskiwanie dostępu do usługi Azure Active Directory w projekcie sieci Web
 
-Usługa Azure Active Directory (AAD) umożliwia obsługę logowania jednokrotnego dla użytkowników końcowych w aplikacjach sieci Web ASP.NET MVC lub uwierzytelnianie usługi AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania poszczególnych kont użytkowników. Użytkownicy, którzy mają dostęp do domeny Active Directory mogą korzystać z istniejących kont usługi AAD do łączenia się z aplikacjami sieci Web. Aplikacje pakietu Office 365 mogą również korzystać z uwierzytelniania domeny.
+Usługa Azure Active Directory (AAD) umożliwia obsługę logowania jednokrotnego użytkownika końcowego ASP.NET aplikacji sieci Web MVC lub uwierzytelniania usługi AD w usługach interfejsu API sieci Web. Uwierzytelnianie domeny różni się od uwierzytelniania kont poszczególnych użytkowników. Użytkownicy, którzy mają dostęp do domeny usługi Active Directory, mogą łączyć się z aplikacjami sieci Web za pomocą istniejących kont usługi AAD. Aplikacje usługi Office 365 mogą również korzystać z uwierzytelniania domeny.
 
 ::: moniker range="vs-2017"
 
-Aby wyświetlić tę akcję, Utwórz nowy projekt **ASP.NET Core aplikacji sieci Web** . W oknie dialogowym **Nowa aplikacja sieci web ASP.NET Core** wybierz szablon **aplikacja sieci Web** , a następnie wybierz pozycję **Zmień uwierzytelnianie**.
+Aby to zobaczyć w akcji, utwórz nowy **projekt ASP.NET Core Web Application.** W oknie dialogowym **Nowa ASP.NET Podstawowa aplikacja sieci Web** wybierz szablon aplikacji sieci **Web,** a następnie wybierz polecenie **Zmień uwierzytelnianie**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Aby wyświetlić tę akcję, Utwórz nowy projekt **ASP.NET Core aplikacji sieci Web** . Na stronie **Tworzenie nowej ASP.NET Core aplikacji sieci Web** wybierz szablon **aplikacja sieci Web** , a następnie wybierz pozycję **Zmień** w obszarze **uwierzytelnianie**.
+Aby to zobaczyć w akcji, utwórz nowy **projekt ASP.NET Core Web Application.** Na stronie **Tworzenie nowej ASP.NET podstawowej aplikacji sieci Web** wybierz szablon aplikacji sieci **Web,** a następnie wybierz pozycję **Zmień** w obszarze **Uwierzytelnianie**.
 
 ::: moniker-end
 
-Zostanie wyświetlone okno dialogowe **Zmienianie uwierzytelniania** , w którym można wybrać rodzaj uwierzytelniania, który ma być używany w aplikacji.
+Zostanie wyświetlone okno dialogowe **Zmiana uwierzytelniania,** w którym można wybrać rodzaj uwierzytelniania, którego chcesz użyć w aplikacji.
 
 ![Okno dialogowe Zmienianie uwierzytelniania dla ASP.NET](../ide/media/vs2015_change_authentication.png)
 
-Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w programie ASP.NET, zobacz [Tworzenie projektów sieci web ASP.NET w programie Visual Studio](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#authentication-methods).
+Aby uzyskać więcej informacji na temat różnych rodzajów uwierzytelniania w ASP.NET, zobacz [Tworzenie projektów sieci Web ASP.NET w programie Visual Studio](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#authentication-methods).
 
-### <a name="access-your-azure-devops-organization"></a>Dostęp do organizacji usługi Azure DevOps
+### <a name="access-your-azure-devops-organization"></a>Uzyskiwanie dostępu do organizacji DevOps platformy Azure
 
-Z menu głównego wybierz kolejno pozycje **zespół** > **Zarządzanie połączeniami** , aby otworzyć okno **Team Explorer-Connect** . Wybierz pozycję **Zarządzaj połączeniami** **, > połączyć**się z projektem. W oknie dialogowym **Połącz z projektem** wybierz projekt z listy (lub wybierz pozycję **Dodaj serwer TFS** i wprowadź adres URL serwera). Po wybraniu adresu URL użytkownik jest zalogowany bez konieczności ponownego wprowadzania poświadczeń.
+W menu głównym wybierz **pozycję Team** > **Manage Connections** , aby otworzyć okno **Eksplorator zespołu — Połącz.** Wybierz pozycję **Zarządzaj połączeniami** > **Połącz z projektem**. W oknie **dialogowym Połącz** z projektem wybierz projekt z listy (lub wybierz **pozycję Dodaj serwer TFS** i wprowadź adres URL do serwera). Po wybraniu adresu URL użytkownik jest zalogowany bez konieczności ponownego wniesienia poświadczeń.
 
-Aby uzyskać więcej informacji, zobacz [nawiązywanie połączenia z projektami w Team Explorer](connect-team-project.md).
+Aby uzyskać więcej informacji, zobacz [Łączenie się z projektami w Eksploratorze zespołu](connect-team-project.md).
 
 ## <a name="add-an-additional-account-to-visual-studio"></a>Dodawanie dodatkowego konta do programu Visual Studio
 
 Aby dodać dodatkowe konto do programu Visual Studio:
 
-1. Wybierz pozycję plik **Ustawienia konta** > .
+1. Wybierz **pozycję Ustawienia** > **konta**plików .
 
-1. W obszarze **wszystkie konta**wybierz pozycję **Dodaj konto**.
+1. W obszarze **Wszystkie konta**wybierz pozycję **Dodaj konto**.
 
-1. Na stronie **Logowanie do konta** wybierz konto lub wybierz pozycję **Użyj innego konta**. Postępuj zgodnie z monitami, aby wprowadzić nowe poświadczenia konta.
+1. Na stronie **Zaloguj się na konto** wybierz konto lub wybierz pozycję Użyj innego **konta**. Postępuj zgodnie z instrukcjami, aby wprowadzić nowe poświadczenia konta.
 
-Obowiązkowe Teraz możesz przejść do **Eksplorator serwera** i wyświetlić usługi platformy Azure skojarzone z właśnie dodanym kontem. W **Eksplorator serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** , a następnie wybierz pozycję **Zarządzaj i Filtruj subskrypcje**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w **Eksplorator serwera**. Powinny zostać wyświetlone wszystkie usługi skojarzone z określoną subskrypcją. Mimo że użytkownik nie jest obecnie zalogowany do programu Visual Studio przy użyciu drugiego konta, loguje się do usług i zasobów tego konta. Ta sama wartość dotyczy **projektu** > **Dodaj podłączoną usługę** i **zespół** > **Połącz się z Team Foundation Server**.
+(Opcjonalnie) Teraz możesz przejść do **Eksploratora serwera** i wyświetlić usługi platformy Azure skojarzone z właśnie dodanym kontem. W **Eksploratorze serwera**kliknij prawym przyciskiem myszy węzeł **platformy Azure** i wybierz polecenie **Zarządzaj subskrypcjami i filtruj**. Wybierz nowe konto, klikając strzałkę listy rozwijanej obok bieżącego konta, a następnie wybierz subskrypcje, które mają być wyświetlane w **Eksploratorze serwera**. Powinny być widoczne wszystkie usługi skojarzone z określoną subskrypcją. Mimo że nie jesteś aktualnie zalogowany do programu Visual Studio przy za pomocą drugiego konta, użytkownik jest zalogowany do usług i zasobów tego konta. To samo dotyczy **usługi Project** > **Add Connected Service** i **Team** > **Connect z team foundation server**.
 
 ### <a name="add-an-account-using-device-code-flow"></a>Dodawanie konta przy użyciu przepływu kodu urządzenia
 
-W niektórych przypadkach nie można zalogować się lub dodać konta w zwykły sposób. Taka sytuacja może wystąpić, jeśli program Internet Explorer jest blokowany z jakiegoś powodu lub jeśli sieć znajduje się za zaporą. Aby obejść ten proces, można włączyć *przepływ kodu urządzenia* , aby dodać konto lub ponownie uwierzytelnić Twoje konto. Przepływ kodu urządzenia umożliwia zalogowanie się przy użyciu innej przeglądarki lub na innej maszynie&mdash;fizycznej lub wirtualnej (VM).
+W niektórych przypadkach nie można zalogować się ani dodać konta w zwykły sposób. Może się tak zdarzyć, jeśli program Internet Explorer jest zablokowany z jakiegoś powodu lub jeśli sieć znajduje się za zaporą. Aby obejść ten temat, można włączyć *przepływ kodu urządzenia,* aby dodać konto lub ponownie uwierzytelnić konto. Przepływ kodu urządzenia umożliwia logowanie się przy użyciu&mdash;innej przeglądarki lub na innym komputerze fizycznym lub wirtualnym (VM).
 
-Aby zalogować się za pomocą przepływu kodu urządzenia:
+Aby zalogować się przy użyciu przepływu kodu urządzenia:
 
-1. Otwórz stronę [**konta**](reference/accounts-environment-options-dialog-box.md) w obszarze **narzędzia** > **Opcje** > **środowisku**, a następnie wybierz pozycję **Włącz przepływ kodu urządzenia podczas dodawania lub ponownego uwierzytelniania konta**. Wybierz **przycisk OK** , aby zamknąć strony Opcje.
+1. Otwórz stronę [**Konta**](reference/accounts-environment-options-dialog-box.md) w obszarze**Środowisko opcji** > **Environment** **narzędzia** > , a następnie wybierz pozycję **Włącz przepływ kodu urządzenia podczas dodawania lub ponownego uwierzytelniania konta**. Wybierz **przycisk OK,** aby zamknąć strony opcji.
 
-1. Wybierz pozycję plik **Ustawienia konta** > , aby otworzyć stronę Zarządzanie kontem.
+1. Wybierz pozycję**Ustawienia konta** **plików,** > aby otworzyć stronę zarządzania kontem.
 
-1. Wybierz pozycję **Dodaj konto** w obszarze **wszystkie konta**.
+1. Wybierz **pozycję Dodaj konto w** obszarze Wszystkie **konta**.
 
-   Zostanie wyświetlone okno dialogowe z adresem URL i kodem do wklejenia do przeglądarki sieci Web.
+   Okno dialogowe zawiera adres URL i kod do wklejenia do przeglądarki internetowej.
 
    ![Adres URL i kod przepływu kodu urządzenia](media/work-with-multiple-user-accounts/device-login-code.png)
 
-1. Naciśnij klawisz **Ctrl**+**C** , aby skopiować tekst okna dialogowego, a następnie wybierz **przycisk OK** , aby zamknąć okno dialogowe. Wklej skopiowany tekst do edytora tekstu, takiego jak Notatnik. Ułatwia to skopiowanie kodu w następnym kroku.
+1. Naciśnij **klawisz Ctrl**+**C,** aby skopiować tekst okna dialogowego, a następnie wybierz przycisk **OK,** aby zamknąć okno dialogowe. Wklej skopiowany tekst do edytora tekstu, takiego jak Notatnik. Ułatwia to skopiowanie kodu w następnym kroku.
 
-1. Przejdź do adresu URL logowania do urządzenia na komputerze lub w przeglądarce sieci Web, którego chcesz użyć do zalogowania się do programu Visual Studio, a następnie wklej lub wprowadź kod skopiowany do pola, w którym znajduje się **kod**.
+1. Przejdź do adresu URL logowania urządzenia na komputerze lub przeglądarce internetowej, którego chcesz użyć do zalogowania się do programu Visual Studio, a następnie wklej lub wprowadź kod skopiowany do pola z **napisem Kod**.
 
-   Nazwa aplikacji **Visual Studio** powinna zostać wyświetlona w dalszej postaci na stronie.
+   Nazwa aplikacji **Visual Studio** powinna pojawić się w dalszej stronie.
 
-1. W obszarze **Visual Studio**wybierz pozycję **Kontynuuj**.
+1. W **obszarze Visual Studio**wybierz pozycję **Kontynuuj**.
 
-   ![Device-login-Page. png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
 
-1. Postępuj zgodnie z monitami, aby wprowadzić poświadczenia konta.
+1. Postępuj zgodnie z instrukcjami, aby wprowadzić poświadczenia konta.
 
-   Zostanie wyświetlona strona z informacją, że użytkownik zalogował się do programu Visual Studio na urządzeniu i że można zamknąć okno przeglądarki.
+   Zostanie wyświetlona strona informująca o zalogowaniu się do programu Visual Studio na urządzeniu i o tym, że można zamknąć okno przeglądarki.
 
-   ![Ukończono logowanie w programie Visual Studio za poorednictwem przeglądarki](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
+   ![Pełne logowanie się w programie Visual Studio za pośrednictwem przeglądarki](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
 
-1. Wróć do strony zarządzania kontami w programie Visual Studio, a nowo dodane konto zostanie wyświetlone w obszarze **wszystkie konta**. Wybierz pozycję **Zamknij**.
+1. Wróć do strony zarządzania kontem w programie Visual Studio, a zobaczysz nowo dodane konto wymienione w obszarze **Wszystkie konta**. Wybierz **pozycję Zamknij**.
 
 ## <a name="see-also"></a>Zobacz też
 
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)
-- [Zaloguj się do Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)
+- [Logowanie się do programu Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)

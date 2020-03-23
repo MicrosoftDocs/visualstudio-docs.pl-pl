@@ -1,5 +1,5 @@
 ---
-title: 'DA0010: drogie GetHashCode | Microsoft Docs'
+title: 'DA0010: Drogie GetHashCode | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,27 +15,27 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ce982c7a98fd12749c66c89e47bd895d2fb6a5d
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777689"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Expensive GetHashCode
 
 |||
 |-|-|
-|Identyfikator zasady|DA0010|
-|Kategoria|Użycie .NET Framework|
-|Metody profilowania|Sond<br /><br /> Pamięć platformy .NET|
-|Komunikat|Funkcje GetHashCode powinny być tanie i nie mogą przydzielać żadnej pamięci. Zmniejsz złożoność funkcji kodu skrótu, jeśli jest to możliwe.|
-|Typ komunikatu|Ostrzeżenie|
+|Identyfikator reguły|DA0010|
+|Kategoria|Użycie programu .NET Framework|
+|Metody profilowania|Próbkowanie<br /><br /> Pamięć .NET|
+|Komunikat|Funkcje GetHashCode powinny być tanie i nie przydzielać żadnej pamięci. Zmniejsz złożoność funkcji kodu mieszania, jeśli to możliwe.|
+|Typ wiadomości|Ostrzeżenie|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania metody GetHashCode typu są znaczną częścią danych profilowania lub metoda przydziela pamięć.
+ Wywołania GetHashCode metody typu są znaczną część danych profilowania lub metoda przydziela pamięci.
 
 ## <a name="rule-description"></a>Opis reguły
- Mieszanie jest techniką szybkiego lokalizowania określonego elementu w dużej kolekcji. Ponieważ tabele skrótów mogą być duże i muszą obsługiwać bardzo wysokie stawki dostępu, tabele skrótów powinny być wydajne. Implikacje tego wymagania polega na tym, że metody GetHashCode w .NET Framework nie powinny przydzielić pamięci. Alokacja pamięci zwiększa obciążenie w module wyrzucania elementów bezużytecznych i uwidacznia metodę do potencjalnych opóźnień, jeśli konieczne jest uruchomienie wyrzucania elementów bezużytecznych w wyniku żądania alokacji.
+ Mieszanie jest techniką szybkiego lokalizowania określonego elementu w dużej kolekcji. Ponieważ tabele mieszania mogą być duże i muszą obsługiwać bardzo wysokie stawki dostępu, tabele skrótów powinny być wydajne. Implikacją tego wymagania jest, że Metody GetHashCode w .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie modułu zbierającego elementy bezużyteczne i udostępnia metodę do potencjalnych opóźnień, jeśli staje się konieczne uruchomienie wyrzucania elementów bezużytecznych w wyniku żądania alokacji.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Zmniejsz złożoność metody.

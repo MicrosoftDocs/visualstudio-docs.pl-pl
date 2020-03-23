@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvCreateDefaultMarkerSeriesOfDefaultProvider | Dokumentacja firmy Microsoft
+title: Funkcja cvCreateDefaultMarkerSeriesOfDefaultProvider | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1a13174b2991b7c69535a6d1910f761890397818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552697"
 ---
-# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider function
-Tworzy domyślny znaczników serii domyślnego dostawcę.
+# <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Funkcja CvCreateDefaultMarkerSeriesOfDefaultProvider
+Tworzy domyślną serię znaczników domyślnego dostawcy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,15 +32,15 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ```
 
 #### <a name="parameters"></a>Parametry
- `ppProvider` Adres dostawcy zmiennej obiektu. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
+ `ppProvider`Adres zmiennej obiektu dostawcy. Adres nie może być NULL, zmienna może mieć dowolną wartość.
 
- `ppMarkerSeries` Adres zmiennej obiektu serii znacznika. Adres nie może mieć wartości NULL, zmienna może mieć dowolną wartość.
+ `ppMarkerSeries`Adres zmiennej obiektu serii znaczników. Adres nie może być NULL, zmienna może mieć dowolną wartość.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy zarówno dostawca, jak i znaczników serii zostały utworzone pomyślnie lub kod błędu w przypadku zostały wszystkie błędy. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+ S_OK, gdy pomyślnie utworzone są zarówno seria dostawcy, jak i znacznika lub kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkers.h*
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

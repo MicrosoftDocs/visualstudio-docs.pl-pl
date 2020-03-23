@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565880"
 ---
 # <a name="shell-command"></a>Shell — Polecenie
@@ -41,53 +41,53 @@ Wymagany. Ścieżka i nazwa pliku do wykonania lub dokumentu do otwarcia. Pełna
 
 `args`
 
-Opcjonalny. Wszystkie argumenty do przekazania do wywołanego programu.
+Element opcjonalny. Wszelkie argumenty, aby przekazać do wywoływanych programu.
 
 ## <a name="switches"></a>Przełączniki
-/commandwindow [lub]/Command [lub]/c [lub]/cmd
+/commandwindow [lub] /command [lub] /c [lub] /cmd
 
-Opcjonalny. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **wiersza polecenia** .
+Element opcjonalny. Określa, że dane wyjściowe pliku wykonywalnego są wyświetlane w oknie **Polecenia.**
 
-/dir:`folder` [lub]/d: `folder`
+/dir:`folder` [lub] /d:`folder`
 
-Opcjonalny. Określa katalog roboczy, który ma zostać ustawiony podczas uruchamiania programu.
+Element opcjonalny. Określa katalog roboczy, który ma być ustawiony po uruchomieniu programu.
 
-/outputWindow [lub]/Output [lub]/out [lub]//o
+/outputwindow [lub] /output [lub] /out [lub] /o
 
-Opcjonalny. Określa, że dane wyjściowe dla pliku wykonywalnego są wyświetlane w oknie **danych wyjściowych** .
+Element opcjonalny. Określa, że dane wyjściowe pliku wykonywalnego są wyświetlane w oknie **Dane wyjściowe.**
 
 ## <a name="remarks"></a>Uwagi
-Przełączniki/dir/o/c należy określić bezpośrednio po `Tools.Shell`. Wszystkie elementy określone po nazwie pliku wykonywalnego są przekazane do niego jako argumenty wiersza polecenia.
+Przełączniki /dir /o/c muszą być `Tools.Shell`określone natychmiast po . Wszystko, co zostało określone po tym, jak nazwa pliku wykonywalnego jest przekazywana do niego jako argumenty wiersza polecenia.
 
-Wstępnie zdefiniowanego aliasu `Shell` można użyć zamiast `Tools.Shell`.
+Wstępnie zdefiniowany alias `Shell` może być używany `Tools.Shell`zamiast pliku .
 
 > [!CAUTION]
-> Jeśli argument `path` podaje ścieżkę katalogu oraz nazwę pliku, należy ująć wszystkie nazwy ścieżki w cudzysłowy literału ("" "), tak jak w następujących przypadkach:
+> Jeśli `path` argument dostarcza ścieżkę katalogu, a także nazwę pliku, należy ująć całą nazwę ścieżki w cudzysłowy dosłowne (""),jak w następujący sposób:
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
-Każdy zestaw trzech podwójnych cudzysłowów ("" ") jest interpretowany przez procesor `Shell` jako pojedynczy znak podwójnego cudzysłowu. W ten sposób powyższy przykład faktycznie przekazuje następujący ciąg ścieżki do polecenia `Shell`:
+Każdy zestaw trzech cudzysłowów ("""") jest interpretowany przez `Shell` procesor jako pojedynczy znak cudzysłowu. W związku z tym w poprzednim przykładzie `Shell` faktycznie przekazuje następujący ciąg ścieżki do polecenia:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
 > [!CAUTION]
-> Jeśli ciąg ścieżki nie zostanie ujęty w cudzysłowy literału ("" "), system Windows będzie używać tylko części ciągu do pierwszego odstępu. Na przykład jeśli powyższy ciąg ścieżki nie został prawidłowo ujęty w cudzysłów, system Windows szuka pliku o nazwie "program" znajdującego się w C:\ Katalog główny. Jeśli plik wykonywalny C:\Program.exe był rzeczywiście dostępny, nawet jeden instalowany przez nielegalne manipulowanie, system Windows podejmie próbę wykonania tego programu zamiast żądanego programu "c:\Program Files\SomeFile.exe".
+> Jeśli ciąg ścieżki nie zostanie ujęty w cudzysłowy (""), system Windows użyje tylko części ciągu do pierwszego spacji. Na przykład, jeśli ciąg ścieżki powyżej nie były cytowane poprawnie, system Windows będzie szukać pliku o nazwie "Program" znajduje się w C:\ katalogu głównego. Jeśli plik wykonywalny C:\Program.exe był rzeczywiście dostępny, nawet jeden zainstalowany przez nielegalne manipulowanie, system Windows próbowałby wykonać ten program zamiast żądanego programu "c:\Program Files\SomeFile.exe".
 
 ## <a name="example"></a>Przykład
-Następujące polecenie używa xcopy. exe do skopiowania pliku `MyText.txt` do folderu `Text`. Dane wyjściowe z xcopy. exe są wyświetlane zarówno w **oknie poleceń** , jak i w oknie **danych wyjściowych** .
+Następujące polecenie używa xcopy.exe do `MyText.txt` skopiowania `Text` pliku do folderu. Dane wyjściowe z pliku xcopy.exe są wyświetlane zarówno w **oknie polecenia,** jak i w oknie **Wyjście.**
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Okno Dane wyjściowe](../../ide/reference/output-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Okno wyjściowe](../../ide/reference/output-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

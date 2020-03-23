@@ -1,5 +1,5 @@
 ---
-title: Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU | Dokumentacja firmy Microsoft
+title: Dostosowywanie plików projektu utworzonych przez VSTU | Dokumenty firmy Microsoft
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -11,17 +11,17 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62819532"
 ---
-# <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych za pomocą rozszerzenia VSTU
-Visual Studio Tools for Unity zapewnia wywołanie zwrotne stylu aparatu Unity w trakcie Generowanie pliku projektu. Zarejestrowanie `VisualStudioIntegration.ProjectFileGeneration` zdarzenia w celu zmodyfikowania pliku projektu, zawsze wtedy, gdy zostanie ponownie wygenerowany.
+# <a name="customize-project-files-created-by-vstu"></a>Dostosowywanie plików projektu utworzonych przez usługę VSTU
+Visual Studio Tools for Unity zapewnia wywołania zwrotnego w stylu Unity podczas generowania pliku projektu. Zarejestruj się `VisualStudioIntegration.ProjectFileGeneration` w zdarzeniu, aby zmodyfikować plik projektu za każdym razem, gdy jest generowany ponownie.
 
 ## <a name="demonstrates"></a>Demonstracje
- Jak dostosowywanie plików projektu programu Visual Studio, które są generowane przez program Visual Studio Tools for Unity.
+ Jak dostosować pliki projektu programu Visual Studio generowane przez narzędzia programu Visual Studio dla unity.
 
 ## <a name="example"></a>Przykład
 
@@ -69,5 +69,5 @@ public class ProjectFileHook
 #endif
 ```
 
-## <a name="see-also"></a>Zobacz także
- [Przykład: Wywołanie zwrotne dziennika](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+## <a name="see-also"></a>Zobacz też
+ [Przykład: wywołanie zwrotne dziennika](../cross-platform/share-the-unity-log-callback-with-vstu.md)

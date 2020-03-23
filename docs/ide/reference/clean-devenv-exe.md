@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570469"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
-Czyści wszystkie pliki pośredniczące i katalogi wyjściowe.
+Czyści wszystkie pliki pośrednie i katalogi wyjściowe.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,37 +36,37 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Wymagany. Pełna ścieżka i nazwa pliku rozwiązania.
 
-- *Sygnatur*
+- *Config*
 
-  Opcjonalny. Konfiguracja (na przykład `Debug` lub `Release`) do czyszczenia plików pośrednich dla rozwiązania o nazwie w *SolutionName*. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten argument jest nieokreślony lub pusty ciąg (`""`), narzędzie używa aktywnej konfiguracji rozwiązania.
+  Element opcjonalny. Konfiguracja (na `Debug` `Release`przykład lub ) do czyszczenia plików pośredniczących dla rozwiązania o nazwie w *SolutionName*. Jeśli dostępna jest więcej niż jedna platforma rozwiązania, należy `Debug|Win32`również określić platformę (na przykład). Jeśli ten argument jest nieokreślony lub`""`pusty ciąg ( ), narzędzie używa aktywnej konfiguracji rozwiązania.
 
-- `/Project` *ProjName*
+- `/Project`*Nazwa proj*
 
-  Opcjonalny. Ścieżka i nazwa pliku projektu w ramach rozwiązania. Możesz wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Możesz również wprowadzić pełną ścieżkę i nazwę pliku projektu.
+  Element opcjonalny. Ścieżka i nazwa pliku projektu w rozwiązaniu. Można wprowadzić nazwę wyświetlaną projektu lub ścieżkę względną z folderu *SolutionName* do pliku projektu. Można również wprowadzić pełną ścieżkę i nazwę pliku projektu.
 
-- `/ProjectConfig` *ProjConfigName*
+- `/ProjectConfig`*Nazwa ProjConfigName*
 
-  Opcjonalny. Nazwa konfiguracji kompilacji projektu (na przykład `Debug` lub `Release`), która ma być używana podczas czyszczenia `/Project` o nazwie. Jeśli jest dostępna więcej niż jedna platforma rozwiązania, należy również określić platformę (na przykład `Debug|Win32`). Jeśli ten przełącznik jest określony, zastępuje argument *konfiguracji* .
+  Element opcjonalny. Nazwa konfiguracji kompilacji projektu (na przykład `Debug` lub `Release`) `/Project` do użycia podczas czyszczenia nazwanego. Jeśli dostępna jest więcej niż jedna platforma rozwiązania, należy `Debug|Win32`również określić platformę (na przykład). Jeśli ten przełącznik jest określony, zastępuje *config* argumentu.
 
-- `/Out` *OutputFilename*
+- `/Out`*Plik wyjściowy*
 
-  Opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe do końca pliku.
+  Element opcjonalny. Nazwa pliku, do którego chcesz wysłać dane wyjściowe narzędzia. Jeśli plik już istnieje, narzędzie dołącza dane wyjściowe na końcu pliku.
 
 ## <a name="remarks"></a>Uwagi
 
-Ten przełącznik ma taką samą funkcję jak polecenie menu **Wyczyść rozwiązanie** w środowisku IDE.
+Ten przełącznik wykonuje tę samą funkcję co polecenie menu **Czyste rozwiązanie** w środowisku IDE.
 
-Ujmij ciągi, które zawierają spacje w podwójnym cudzysłowie.
+Łącz ciągi, które zawierają spacje w cudzysłowie podwójnym.
 
-Informacje podsumowujące podczas czyszczenia i kompilowania, w tym błędy, mogą być wyświetlane w oknie **wiersza polecenia** lub w dowolnym pliku dziennika określonym za pomocą przełącznika [/out](out-devenv-exe.md) .
+Informacje podsumowujące podczas czyszczenia i tworzenia, w tym błędy, mogą być wyświetlane w oknie **Polecenia** lub w dowolnym pliku dziennika określonym za pomocą przełącznika [/Out.](out-devenv-exe.md)
 
-Jeśli przełącznik `/Project` nie zostanie określony, Akcja czyszczenia jest wykonywana we wszystkich projektach w rozwiązaniu, nawet jeśli *Nazwa* pliku została określona jako plik projektu.
+Jeśli `/Project` przełącznik nie jest określony, akcja czyszczenia jest wykonywana na wszystkich projektach w rozwiązaniu, nawet jeśli *FileName* został określony jako plik projektu.
 
 ## <a name="example"></a>Przykład
 
-Pierwszy przykład czyści rozwiązanie `MySolution` przy użyciu konfiguracji domyślnej określonej w pliku rozwiązania.
+Pierwszy przykład czyści `MySolution` rozwiązanie przy użyciu domyślnej konfiguracji określonej w pliku rozwiązania.
 
-Drugi przykład czyści projekt `CSharpWinApp`przy użyciu konfiguracji kompilacji projektu `Debug` w `MySolution`.
+Drugi przykład czyści `CSharpWinApp`projekt, `Debug` przy użyciu `MySolution`konfiguracji kompilacji projektu w ramach .
 
 ```shell
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
@@ -74,9 +74,9 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md)
-- [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/Out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/Odbuduj (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

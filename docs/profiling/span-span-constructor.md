@@ -1,5 +1,5 @@
 ---
-title: Konstruktor span::span | Dokumentacja firmy Microsoft
+title: rozpiętość::konstruktor zakresu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62979825"
 ---
 # <a name="spanspan-constructor"></a>span::span — Konstruktor
 
-Inicjuje nowe wystąpienie klasy `span` klasy.
+Inicjuje nowe wystąpienie klasy `span`.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,20 +54,20 @@ span(
 
 #### <a name="parameters"></a>Parametry
 
-`_Series` Kontekst serii prawidłowe znacznika.
+`_Series`Prawidłowy kontekst serii znaczników.
 
-`_Format` Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.
+`_Format`Ciąg formatu złożonego, który zawiera tekst połączony z elementami formatu zero lub więcej, które odpowiadają obiektom na liście argumentów.
 
-`_Importance` Poziom ważności.
+`_Importance`Poziom ważności.
 
-`_Category` Kategoria.
+`_Category`Kategorii.
 
 ## <a name="requirements"></a>Wymagania
 
 **Nagłówek:** *cvmarkersobj.h*
 
-**Namespace:** CONCURRENCY::Diagnostic —
+**Obszar nazw:** Współbieżność::dignostyk
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [span, klasa](../profiling/span-class.md)
+- [klasa span](../profiling/span-class.md)

@@ -8,60 +8,60 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 313083090c94c94f4e196e87f3bf6cf6df36e118
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565256"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 
-Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład projekt testu jednostkowego zostałyby utworzone dla każdego projektu kodu, w ramach produktu. Projekt testowy może znajdować się w tym samym rozwiązaniu, jak kod w środowisku produkcyjnym lub może być w oddzielnym rozwiązaniu. Może mieć wiele jednostek projekty testowe w rozwiązaniu.
+Testy jednostkowe często dublują strukturę testowego kodu. Na przykład projekt testu jednostkowego zostanie utworzony dla każdego projektu kodu w produkcie. Projekt testowy może być w tym samym rozwiązaniu co kod produkcyjny lub może znajdować się w osobnym rozwiązaniu. W rozwiązaniu może być dostępnych wiele projektów testów jednostkowych.
 
 > [!NOTE]
-> Lokalizacja testów jednostkowych dla kodu natywnego i struktury projektu testowego może różnić się od struktury opisanej w tym artykule. Aby uzyskać więcej informacji, zobacz [pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
+> Lokalizacja testów jednostkowych dla kodu macierzystego i struktury projektu testowego może być inna niż struktura opisana w tym artykule. Aby uzyskać więcej informacji, zobacz [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="to-create-a-unit-test-project"></a>Aby utworzyć projekt testu jednostkowego
 
-1. W menu **plik** wybierz polecenie **Nowy** > **Project**lub naciśnij **klawisze CTRL**+**SHIFT**+**N**.
+1. W menu **Plik** wybierz polecenie **Nowy** > **projekt**lub naciśnij **klawisze Ctrl**+**Shift**+**N**.
 
 ::: moniker range="vs-2017"
 
-2. W **nowy projekt** okna dialogowego rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.
+2. W oknie dialogowym **Nowy projekt** rozwiń węzeł **Zainstalowany,** wybierz język, którego chcesz użyć w projekcie testowym, a następnie wybierz pozycję **Testuj**.
 
-3. Wybierz szablon projektu dla środowiska testowego, którego chcesz użyć, na przykład **projekt testu MSTest** lub **projekt testowy nunit**. Nazwij projekt, a następnie wybierz **przycisk OK**.
+3. Wybierz szablon projektu dla struktury testów, której chcesz użyć, na przykład **MSTest Test Project** lub **NUnit Test Project**. Nazwij projekt, a następnie wybierz przycisk **OK**.
 
-   ![Szablony projektów testowych w programie Visual Studio 2017](media/test-project-templates.png)
+   ![Testowanie szablonów projektów w programie Visual Studio 2017](media/test-project-templates.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Na stronie **Tworzenie nowego projektu** wpisz **test jednostkowy** w polu wyszukiwania. Wybierz szablon projektu dla środowiska testowego, którego chcesz użyć, na przykład **projekt MSTest test** lub **projekt testowy nunit**, a następnie wybierz **dalej**.
+2. Na stronie **Tworzenie nowego projektu** wpisz test **jednostkowy** w polu wyszukiwania. Wybierz szablon projektu dla struktury testów, której chcesz użyć, na przykład **MSTest Test Project** lub **NUnit Test Project**, a następnie wybierz pozycję **Dalej**.
 
-   ![Szablony projektów testowych w programie Visual Studio 2019](media/vs-2019/test-project-templates.png)
+   ![Testowanie szablonów projektów w programie Visual Studio 2019](media/vs-2019/test-project-templates.png)
 
-3. Na stronie **Konfiguruj nowy projekt** wprowadź nazwę projektu, a następnie wybierz pozycję **Utwórz**.
+3. Na stronie **Konfigurowanie nowego projektu** wprowadź nazwę projektu, a następnie wybierz pozycję **Utwórz**.
 
 ::: moniker-end
 
-4. W projekcie testu jednostki Dodaj odwołanie do testowanego kodu. Aby dodać odwołanie do projektu kodu w tym samym rozwiązaniu:
+4. W projekcie testu jednostkowego dodaj odwołanie do kodu w ramach testu. Aby dodać odwołanie do projektu kodu w tym samym rozwiązaniu:
 
-   1. Wybierz projekt testowy w **Eksplorator rozwiązań**.
+   1. Wybierz projekt testowy w **Eksploratorze rozwiązań**.
 
-   2. Na **projektu** menu, wybierz **Dodaj odwołanie**.
+   2. W menu **Projekt** wybierz polecenie **Dodaj odwołanie**.
 
-   3. W **Menedżerze odwołań**wybierz węzeł **rozwiązania** w obszarze **projekty**. Wybierz projekt kodu, który chcesz przetestować, a następnie wybierz przycisk **OK**.
+   3. W **Menedżerze odwołań**wybierz węzeł **Rozwiązanie** w obszarze **Projekty**. Wybierz projekt kodu, który chcesz przetestować, a następnie wybierz **przycisk OK**.
 
-   Jeśli kod, który ma zostać przetestowany, znajduje się w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md) , aby uzyskać informacje na temat dodawania odwołania.
+   Jeśli kod, który chcesz przetestować znajduje się w innej lokalizacji, zobacz [Zarządzanie odwołaniami w projekcie,](../ide/managing-references-in-a-project.md) aby uzyskać informacje na temat dodawania odwołania.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Zobacz jeden z następujących sekcji:
+Zobacz jedną z następujących sekcji:
 
 **Pisanie testów jednostkowych**
 
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
+- [Jednostka przetestować swój kod](../test/unit-test-your-code.md)
 
 - [Pisanie testów jednostkowych dla języka C/C++](writing-unit-tests-for-c-cpp.md)
 

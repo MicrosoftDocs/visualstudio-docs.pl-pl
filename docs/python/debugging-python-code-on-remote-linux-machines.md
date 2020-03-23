@@ -1,6 +1,6 @@
 ---
-title: Debugowanie kodu w języku Python na komputerach zdalnych systemu Linux
-description: Debugowanie kodu w języku Python uruchomiona na zdalnym komputerów z systemem Linux, w tym wymagane kroki konfiguracji, zabezpieczeń i rozwiązywanie problemów przy użyciu programu Visual Studio.
+title: Kod Debugowania języka Python na zdalnych komputerach z systemem Linux
+description: Program Visual Studio służy do debugowania kodu języka Python uruchomionego na zdalnych komputerach z systemem Linux, w tym niezbędnych kroków konfiguracji, zabezpieczeń i rozwiązywania problemów.
 ms.date: 12/06/2018
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -11,36 +11,36 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62962552"
 ---
-# <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu w języku Python w systemie Linux
+# <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu Języka Python w systemie Linux
 
-Visual Studio można uruchomić i debugowanie lokalne i zdalne aplikacje języka Python na komputerze Windows (zobacz [zdalne debugowanie](../debugger/remote-debugging.md)). Można również debugować zdalnie na różnych systemów operacyjnych, urządzenia lub implementacji języka Python innych niż z użyciem języka CPython [biblioteki ptvsd](https://pypi.python.org/pypi/ptvsd).
+Program Visual Studio może uruchamiać i debugować aplikacje Języka Python lokalnie i zdalnie na komputerze z systemem Windows (zobacz [Zdalne debugowanie](../debugger/remote-debugging.md)). Może również debugować zdalnie na innym systemie operacyjnym, urządzeniu lub implementacji Języka Python innych niż CPython przy użyciu [biblioteki ptvsd](https://pypi.python.org/pypi/ptvsd).
 
-Korzystając z ptvsd, debugowanego kodu w języku Python hostuje serwer debugowania, do którego można dołączyć programu Visual Studio. Ta hostingu wymaga niewielkiej modyfikacji w kodzie, aby zaimportować i włączyć serwer i mogą wymagać sieci lub zapory konfiguracji na komputerze zdalnym, aby zezwolić na połączenia TCP.
+Podczas korzystania z ptvsd, kod Języka Python jest debugowany hostuje serwer debugowania, do którego visual studio można dołączyć. Ten hosting wymaga niewielkiej modyfikacji kodu w celu zaimportowania i włączenia serwera, a także może wymagać konfiguracji sieci lub zapory na komputerze zdalnym, aby zezwolić na połączenia TCP.
 
 |   |   |
 |---|---|
-| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | Wprowadzenie do zdalnego debugowania, zobacz [szczegółowe informacje: Zdalne debugowanie dla platform](https://youtu.be/y1Qq7BrV6Cc) (witrynie youtube.com, 6m22s), która ma zastosowanie do programu Visual Studio 2015 i 2017. |
+| ![ikona kamery filmowa dla wideo](../install/media/video-icon.png "Obejrzyj film") | Aby zapoznać się z wprowadzeniem do zdalnego debugowania, zobacz [Deep Dive: Debugowanie zdalne między platformami](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s), które ma zastosowanie zarówno do programu Visual Studio 2015, jak i 2017. |
 
 ## <a name="set-up-a-linux-computer"></a>Konfigurowanie komputera z systemem Linux
 
-Do wykonania tego instruktażu potrzebne są następujące elementy:
+Do wykonania tego przewodnika potrzebne są następujące elementy:
 
-- Komputera zdalnego z systemem języka Python w systemie operacyjnym, takich jak Mac OS x lub Linux.
-- Port 5678 (przychodzące) otwarty w zaporze na tym komputerze, co jest ustawieniem domyślnym dla zdalnego debugowania.
+- Komputer zdalny z systemem Python w systemie operacyjnym, takim jak Mac OSX lub Linux.
+- Port 5678 (przychodzący) otwarty na zaporze tego komputera, co jest ustawieniem domyślnym dla zdalnego debugowania.
 
-Możesz łatwo tworzyć [maszyny wirtualnej systemu Linux na platformie Azure](/azure/virtual-machines/linux/creation-choices) i [dostęp do niego przy użyciu pulpitu zdalnego](/azure/virtual-machines/linux/use-remote-desktop) z Windows. Ubuntu dla maszyny Wirtualnej jest wygodne, ponieważ język Python jest instalowany domyślnie; w przeciwnym razie zobacz listę w [interpreter języka Python wybranym](installing-python-interpreters.md) dla dodatkowych Python można pobrać architekturę.
+Maszynę [wirtualną systemu Linux](/azure/virtual-machines/linux/creation-choices) można łatwo utworzyć na platformie Azure i uzyskać do niej dostęp za pomocą [pulpitu zdalnego](/azure/virtual-machines/linux/use-remote-desktop) z systemu Windows. Ubuntu dla maszyny Wirtualnej jest wygodne, ponieważ Python jest zainstalowany domyślnie; w przeciwnym razie zobacz listę na [Zainstaluj wybraną interpreter języka Python, aby](installing-python-interpreters.md) uzyskać dodatkowe lokalizacje pobierania języka Python.
 
-Aby uzyskać więcej informacji na temat tworzenia reguł zapory na Maszynie wirtualnej platformy Azure, zobacz [Otwieranie portów dla maszyny Wirtualnej na platformie Azure przy użyciu witryny Azure portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
+Aby uzyskać szczegółowe informacje na temat tworzenia reguły zapory dla maszyny Wirtualnej platformy Azure, zobacz [Otwieranie portów na maszynie Wirtualnej na platformie Azure przy użyciu witryny Azure portal.](/azure/virtual-machines/windows/nsg-quickstart-portal)
 
-## <a name="prepare-the-script-for-debugging"></a>Przygotowywanie skryptu do debugowania
+## <a name="prepare-the-script-for-debugging"></a>Przygotowanie skryptu do debugowania
 
-1. Na komputerze zdalnym, Utwórz plik w języku Python o nazwie *zgadywania game.py* następującym kodem:
+1. Na komputerze zdalnym utwórz plik języka Python o nazwie *guessing-game.py* z następującym kodem:
 
     ```python
     import random
@@ -65,64 +65,64 @@ Aby uzyskać więcej informacji na temat tworzenia reguł zapory na Maszynie wir
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Zainstaluj `ptvsd` pakietu w Twoim środowisku za pomocą `pip3 install ptvsd`.
+1. Zainstaluj `ptvsd` pakiet w swoim `pip3 install ptvsd`środowisku za pomocą programu .
    >[!NOTE]
-   >To dobry pomysł, aby zarejestrować wersji ptvsd zainstalowanego w przypadku, gdy będą potrzebne do rozwiązywania problemów; [listy ptvsd](https://pypi.python.org/pypi/ptvsd) pokazuje również dostępnych wersji.
+   >Dobrym pomysłem jest nagranie wersji ptvsd, która jest zainstalowana w przypadku, gdy jest potrzebna do rozwiązywania problemów; [na liście ptvsd znajdują](https://pypi.python.org/pypi/ptvsd) się również dostępne wersje.
 
-1. Włączanie debugowania zdalnego, dodając poniższy kod Najwcześniejsza możliwe w momencie *zgadywania game.py*, przed uruchomieniem innego kodu. (Jednak ściśle wymagane, nie można debugować żadnych wątków w tle zduplikowany przed `enable_attach` funkcja jest wywoływana.)
+1. Włącz zdalne debugowanie, dodając poniższy kod *w*najwcześniejszym możliwym punkcie guessing-game.py przed innym kodem. (Chociaż nie jest to ścisłe wymaganie, nie można debugować żadnych wątków tła zrodził się przed wywołaniem `enable_attach` funkcji.)
 
    ```python
    import ptvsd
    ptvsd.enable_attach()
    ```
 
-1. Zapisz plik i uruchom `python3 guessing-game.py`. Wywołanie `enable_attach` działa w tle, a następnie czeka na połączenia przychodzące, podczas pracy z programem. Jeśli to konieczne, `wait_for_attach` funkcja może zostać wywołana po `enable_attach` blokowania program, dopóki nie dołącza debuger.
+1. Zapisz plik i `python3 guessing-game.py`uruchom plik . Wywołanie `enable_attach` działa w tle i czeka na połączenia przychodzące, jak w przeciwnym razie interakcji z programem. W razie `wait_for_attach` potrzeby funkcję można `enable_attach` wywołać po zablokowaniu programu, dopóki debuger nie zostanie dołączony.
 
 > [!Tip]
-> Oprócz `enable_attach` i `wait_for_attach`, ptvsd udostępnia również funkcję Pomocnika `break_into_debugger`, który służy jako programowy punkt przerwania, jeśli jest dołączony debuger. Istnieje również `is_attached` funkcja, która zwraca `True` Jeśli jest dołączony debuger (należy pamiętać, że nie ma potrzeby do sprawdzenia tego wyniku przed wywołaniem innych `ptvsd` funkcji).
+> Oprócz `enable_attach` i `wait_for_attach`, ptvsd zapewnia również `break_into_debugger`funkcję pomocnika , który służy jako programowy punkt przerwania, jeśli debuger jest dołączony. Istnieje również `is_attached` funkcja, `True` która zwraca, jeśli debuger jest dołączony (należy pamiętać, że `ptvsd` nie ma potrzeby, aby sprawdzić ten wynik przed wywołaniem innych funkcji).
 
-## <a name="attach-remotely-from-python-tools"></a>Dołącz zdalnie z poziomu narzędzi języka Python
+## <a name="attach-remotely-from-python-tools"></a>Dołączanie zdalnie z narzędzi Python
 
-W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces zdalny.
+W tych krokach ustawiamy prosty punkt przerwania, aby zatrzymać proces zdalny.
 
-1. Utwórz kopię pliku zdalnego na komputerze lokalnym, a następnie otwórz go w programie Visual Studio. Nie ma znaczenia, gdzie znajduje się plik, ale jego nazwa powinna odpowiadać nazwie skryptu na komputerze zdalnym.
+1. Utwórz kopię pliku zdalnego na komputerze lokalnym i otwórz go w programie Visual Studio. Nie ma znaczenia, gdzie znajduje się plik, ale jego nazwa powinna być zgodna z nazwą skryptu na komputerze zdalnym.
 
-1. (Opcjonalnie) Aby technologia IntelliSense dla ptvsd na komputerze lokalnym, należy zainstalować pakiet ptvsd w środowisku Python.
+1. (Opcjonalnie) Aby mieć IntelliSense dla ptvsd na komputerze lokalnym, zainstaluj pakiet ptvsd w środowisku Pythona.
 
-1. Wybierz **debugowania** > **dołączyć do procesu**.
+1. Wybierz **debugowanie** > **Dołącz do procesu**.
 
-1. W **dołączyć do procesu** wyświetlonym oknie dialogowym Ustaw **typu połączenia** do **zdalnego języka Python (ptvsd)**. (W starszych wersjach programu Visual Studio o nazwie tych poleceń **transportu** i **zdalnego debugowania w języku Python**.)
+1. W wyświetlonym oknie dialogowym **Dołącz do procesu** ustaw typ **połączenia** na **zdalny język Python (ptvsd).** (W starszych wersjach programu Visual Studio te polecenia mają nazwy **Transport** i **Python zdalnego debugowania**.)
 
-1. W **adres docelowy połączenia** pola (**kwalifikator** w starszych wersjach), wprowadź `tcp://<ip_address>:5678` gdzie `<ip_address>` jest fakt, że komputera zdalnego (która może być jawne adres lub nazwę, np. myvm.cloudapp.NET) i `:5678` zdalnego debugowania numer portu to.
+1. W polu **Obiekt docelowy połączenia** **(Kwalifikator** w starszych wersjach) wprowadź miejsce, `tcp://<ip_address>:5678` w `<ip_address>` którym znajduje `:5678` się komputer zdalny (który może być adresem jawnym lub nazwą, taką jak myvm.cloudapp.net) i jest zdalnym numerem portu debugowania.
 
-1. Naciśnij klawisz **Enter** do wypełnienia listy ptvsd dostępne procesy na tym komputerze:
+1. Naciśnij **klawisz Enter,** aby wypełnić listę dostępnych procesów ptvsd na tym komputerze:
 
-    ![Wprowadź adres docelowy połączenia i wyświetlanie listy procesów](media/remote-debugging-qualifier.png)
+    ![Wprowadzanie obiektu docelowego połączenia i wyświetlanie procesów](media/remote-debugging-qualifier.png)
 
-    Jeśli się zdarzyć, aby uruchomić inny program na komputerze zdalnym po wypełnieniu tej listy, wybierz **Odśwież** przycisku.
+    Jeśli po zapełnieniu tej listy uruchomisz inny program na komputerze zdalnym, wybierz przycisk **Odśwież.**
 
-1. Wybierz proces do debugowania i następnie **Dołącz**, lub kliknij dwukrotnie ten proces.
+1. Wybierz proces do debugowania, a następnie **Dołącz**lub kliknij dwukrotnie proces.
 
-1. Program Visual Studio następnie przełącza w trybie debugowania, nadal skrypt do uruchomienia na komputerze zdalnym, zapewniając wszystkie zwykle [debugowania](debugging-python-in-visual-studio.md) możliwości. Na przykład ustaw punkt przerwania na `if guess < number:` wiersza, a następnie przełączyć się do komputera zdalnego i wprowadź inny wynik. Możesz to zrobić, programu Visual Studio w Twojej zatrzymuje komputera lokalnego, w tym punkcie przerwania, aby zobaczyć zmienne lokalne i tak dalej:
+1. Visual Studio następnie przełącza się w tryb debugowania, podczas gdy skrypt nadal działa na komputerze zdalnym, zapewniając wszystkie możliwości [debugowania](debugging-python-in-visual-studio.md) zwykle. Na przykład ustaw punkt przerwania w wierszu, `if guess < number:` a następnie przełącz się na komputer zdalny i wprowadź inne przypuszczenie. Po zrobienie tego program Visual Studio na komputerze lokalnym zatrzymuje się w tym punkcie przerwania, pokazuje zmienne lokalne i tak dalej:
 
-    ![Program Visual Studio zatrzymuje debugowanie po trafieniu punktu przerwania](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio wstrzymuje debugowanie po osiągnięciu punktu przerwania](media/remote-debugging-breakpoint-hit.png)
 
-1. Po zatrzymaniu debugowania, Visual Studio odłącza się od programu, który będzie działać na komputerze zdalnym. ptvsd nadal nasłuchuje dołączanie debugery, dzięki czemu możesz dołączyć do procesu w dowolnym momencie ponownie.
+1. Po zatrzymaniu debugowania program Visual Studio odłącza się od programu, który nadal działa na komputerze zdalnym. ptvsd kontynuuje również nasłuchiwanie do dołączania debugerów, dzięki czemu można ponownie dołączyć do procesu w dowolnym momencie.
 
 ### <a name="connection-troubleshooting"></a>Rozwiązywanie problemów z połączeniem
 
-1. Upewnij się, że wybrano **zdalnego języka Python (ptvsd)** dla **typu połączenia** (**zdalnego debugowania w języku Python** dla **transportu** z starsze wersje.)
-1. Sprawdź, czy klucz tajny w **adres docelowy połączenia** (lub **kwalifikator**) dokładnie pasuje do wpisu tajnego w kodzie zdalnego.
-1. Upewnij się, że adres IP w **adres docelowy połączenia** (lub **kwalifikator**) jest zgodna z komputera zdalnego.
-1. Sprawdź otwarciu portu debugowania zdalnego na komputerze zdalnym i że zostały dołączone sufiks portu w element docelowy połączenia, takich jak `:5678`.
-    - Jeśli potrzebujesz użyć innego portu, można je było wprowadzić w `enable_attach` wywołać za pomocą `address` argumentu, jak `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. W tym wypadku Otwórz określonego portu w zaporze.
-1. Upewnij się, że wersja ptvsd zainstalowane na komputerze zdalnym, zwrócone przez `pip3 list` pasuje do używanej przez wersję narzędzi Python tools używane w programie Visual Studio w poniższej tabeli. W razie potrzeby zaktualizuj ptvsd na komputerze zdalnym.
+1. Upewnij się, że wybrano **opcję Python remote (ptvsd)** dla **typu połączenia** **(Debugowanie zdalne języka Python** dla **transportu** ze starszymi wersjami).
+1. Sprawdź, czy klucz tajny w **docelowych połączeń** (lub **kwalifikator)** dokładnie pasuje do klucza tajnego w kodzie zdalnym.
+1. Sprawdź, czy adres IP w **docelowych połączeń** (lub **kwalifikator)** odpowiada adresowi komputera zdalnego.
+1. Sprawdź, czy port zdalnego debugowania na komputerze zdalnym został otwarty i czy sufiks portu `:5678`został dołączony do obiektu docelowego połączenia, na przykład .
+    - Jeśli chcesz użyć innego portu, można go `enable_attach` określić `address` w wywołaniu `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`za pomocą argumentu, jak w . W takim przypadku otwórz ten konkretny port w zaporze.
+1. Sprawdź, czy wersja ptvsd zainstalowany na komputerze `pip3 list` zdalnym, jak zwraca przez dopasowania, które są używane przez wersję narzędzi Języka Python, którego używasz w programie Visual Studio w poniższej tabeli. W razie potrzeby zaktualizuj ptvsd na komputerze zdalnym.
 
-    | Visual Studio w wersji | Wersja narzędzi/ptvsd języka Python |
+    | Wersja programu Visual Studio | Narzędzia Python/wersja ptvsd |
     | --- | --- |
-    | 2017 15.8 | 4.1.1a9 (debuger starszej wersji: 3.2.1.0) |
-    | 2017 wersji 15.7 | 4.1.1a1 (debuger starszej wersji: 3.2.1.0) |
-    | 2017 15.4, 15.5, wersji 15.6 | 3.2.1.0 |
+    | 2017 15.8 | 4.1.1a9 (debuger starsza: 3.2.1.0) |
+    | 2017 15.7 | 4.1.1a1 (debuger starsza: 3.2.1.0) |
+    | 2017 15.4, 15.5, 15.6 | 3.2.1.0 |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
     | 2017 15.0, 15.1 | 3.0.0 |
@@ -130,53 +130,53 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="using-ptvsd-3x"></a>Za pomocą ptvsd 3.x
+## <a name="using-ptvsd-3x"></a>Korzystanie z ptvsd 3.x
 
-Poniższe informacje dotyczą tylko do debugowania zdalnego z ptvsd 3.x, który zawiera niektóre funkcje, które zostały usunięte w ptvsd 4.x.
+Poniższe informacje dotyczą tylko zdalnego debugowania z ptvsd 3.x, który zawiera pewne funkcje, które zostały usunięte w ptvsd 4.x.
 
-1. Za pomocą ptvsd 3.x, `enable_attach` funkcji wymaganych do przekazania "wpis tajny" jako pierwszy argument, który ogranicza dostęp do działającego skryptu. Możesz wprowadzić ten wpis tajny podczas dołączania debugera zdalnego. Chociaż nie jest to zalecane, można zezwolić wszystkim użytkownikom połączyć, użyj `enable_attach(secret=None)`.
+1. W pliku ptvsd 3.x `enable_attach` funkcja wymagana do przekazania "klucza tajnego" jako pierwszego argumentu, który ogranicza dostęp do uruchomionego skryptu. Ten klucz tajny należy wprowadzić podczas podłączania zdalnego debugera. Chociaż nie zalecane, można zezwolić `enable_attach(secret=None)`każdemu na łączenie się, używać .
 
-1. Adres docelowy połączenia jest adres URL `tcp://<secret>@<ip_address>:5678` gdzie `<secret>` jest przekazany ciąg `enable_attach` w kodzie języka Python.
+1. Docelowy adres `tcp://<secret>@<ip_address>:5678` URL `<secret>` połączenia to `enable_attach` miejsce, w którym jest ciąg przekazywany w kodzie języka Python.
 
-Domyślnie połączenie z serwerem zdalnego debugowania 3.x ptvsd jest chroniony tylko przez klucz tajny, a wszystkie dane są przekazywane w postaci zwykłego tekstu. W przypadku bardziej bezpieczne połączenia ptvsd 3.x obsługuje przy użyciu protokołu SSL `tcsp` protokołu, który ustawia się w następujący sposób:
+Domyślnie połączenie z serwerem zdalnego debugowania ptvsd 3.x jest zabezpieczone tylko kluczem tajnym, a wszystkie dane są przekazywane w postaci zwykłego tekstu. Aby uzyskać bezpieczniejsze połączenie, ptvsd 3.x `tcsp` obsługuje protokół SSL przy użyciu protokołu, który można skonfigurować w następujący sposób:
 
-1. Na komputerze zdalnym Wygeneruj oddzielny certyfikat z podpisem własnym i plików kluczy przy użyciu biblioteki openssl:
+1. Na komputerze zdalnym wygeneruj oddzielny certyfikat z podpisem własnym i pliki kluczy przy użyciu openssl:
 
     ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
-    Po wyświetleniu monitu użyj nazwę hosta lub adres IP (zależności możesz użyć do łączenia z), aby uzyskać **nazwa pospolita** po wyświetleniu monitu przez openssl.
+    Po wyświetleniu monitu użyj nazwy hosta lub adresu IP (w zależności od tego, którego używasz do nawiązania połączenia) dla **nazwy pospolitej,** gdy zostanie wyświetlony monit openssl.
 
-    (Zobacz [certyfikaty z podpisem własnym](https://docs.python.org/3/library/ssl.html#self-signed-certificates) w języku Python `ssl` docs modułu, aby uzyskać więcej informacji. Należy pamiętać, że polecenia w dokumentacji tych generuje tylko jednego połączonego pliku.)
+    (Aby uzyskać dodatkowe informacje, `ssl` zobacz [certyfikaty z podpisem własnym](https://docs.python.org/3/library/ssl.html#self-signed-certificates) w docs modułu Pythona. Należy zauważyć, że polecenie w tych docs generuje tylko jeden plik połączony.)
 
-1. W kodzie, zmodyfikuj wywołanie `enable_attach` obejmujący `certfile` i `keyfile` argumentów za pomocą nazwy plików jako wartości (te argumenty mają takie samo znaczenie jak w przypadku standardowych `ssl.wrap_socket` funkce Pythonu):
+1. W kodzie zmodyfikuj wywołanie `enable_attach` do `certfile` uwzględnienia i `keyfile` argumenty przy użyciu nazw plików jako `ssl.wrap_socket` wartości (te argumenty mają takie samo znaczenie jak dla standardowej funkcji Języka Python):
 
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
 
-    Można również wprowadzić tę samą zmianę w pliku kodu na komputerze lokalnym, ale ponieważ ten kod nie jest uruchamiany, nie jest bezwzględnie konieczne.
+    Można również wprowadzić tę samą zmianę w pliku kodu na komputerze lokalnym, ale ponieważ ten kod nie jest faktycznie uruchomiony, nie jest absolutnie konieczne.
 
 1. Uruchom ponownie program Python na komputerze zdalnym, dzięki czemu jest gotowy do debugowania.
 
-1. Przez dodawanie certyfikatu do zaufanego głównego urzędu certyfikacji na komputerze Windows z programem Visual Studio, należy zabezpieczyć kanał:
+1. Zabezpiecz kanał, dodając certyfikat do zaufanego głównego urzędu certyfikacji na komputerze z systemem Windows za pomocą programu Visual Studio:
 
-    1. Skopiuj plik certyfikatu z komputera zdalnego na komputerze lokalnym.
-    1. Otwórz **Panelu sterowania** i przejdź do **narzędzia administracyjne** > **zarządzania certyfikatami komputera**.
-    1. W wyświetlonym oknie rozwiń **zaufane główne urzędy certyfikacji** po lewej stronie, kliknij prawym przyciskiem myszy **certyfikaty**i wybierz **wszystkie zadania**  >  **Importu**.
-    1. Przejdź do, a następnie wybierz pozycję *cer* skopiować pliku z komputera zdalnego, kliknij przycisk za pomocą okien dialogowych, aby ukończyć importowanie.
+    1. Skopiuj plik certyfikatu z komputera zdalnego na komputer lokalny.
+    1. Otwórz **Panel sterowania** i przejdź do pozycji Narzędzia **administracyjne** > **Zarządzaj certyfikatami komputerowymi**.
+    1. W wyświetlonym oknie rozwiń pozycję **Zaufane główne urzędy certyfikacji** po lewej stronie, kliknij prawym przyciskiem myszy pozycję **Certyfikaty**i wybierz polecenie**Importuj** **wszystkie zadania** > .
+    1. Przejdź do pliku *cer* skopiowanego z komputera zdalnego i wybierz go, a następnie kliknij okna dialogowe, aby zakończyć importowanie.
 
-1. Powtórz ten proces dołączania w programie Visual Studio opisany wcześniej, teraz, używając `tcps://` jako protokół dla **adres docelowy połączenia** (lub **kwalifikator**).
+1. Powtórz proces dołączania w programie Visual Studio, jak opisano wcześniej, teraz używając `tcps://` jako protokołu dla obiektu **docelowego połączenia** (lub **kwalifikatora).**
 
-    ![Wybieranie transportu debugowania zdalnego przy użyciu protokołu SSL](media/remote-debugging-qualifier-ssl.png)
+    ![Wybieranie zdalnego transportu debugowania za pomocą ssl](media/remote-debugging-qualifier-ssl.png)
 
-1. Visual Studio wyświetli monit o potencjalnych problemów z certyfikatami, podczas nawiązywania połączenia za pośrednictwem protokołu SSL. Można zignorować te ostrzeżenia i kontynuować, ale mimo że nadal szyfrowany kanał przed podsłuchiwaniem może być otwarty na ataki typu man-in--middle.
+1. Program Visual Studio monituje o potencjalne problemy z certyfikatami podczas łączenia się za ich za sprawą. Możesz zignorować ostrzeżenia i kontynuować, ale mimo że kanał jest nadal szyfrowany przed podsłuchiwaniem, może być otwarty na ataki typu man-in-the-middle.
 
-    1. Jeśli widzisz **certyfikatu zdalnego nie jest zaufany** ostrzeżenie poniżej, oznacza to, nie został poprawnie dodany certyfikatów do zaufanego głównego urzędu certyfikacji. Te kroki i spróbuj ponownie.
+    1. Jeśli poniżej widzisz, że **certyfikat zdalny nie jest zaufany,** oznacza to, że certyfikat nie został poprawnie dodumny do zaufanego głównego urzędu certyfikacji. Sprawdź te kroki i spróbuj ponownie.
 
-        ![Ostrzeżenie zaufany certyfikat SSL](media/remote-debugging-ssl-warning.png)
+        ![Ostrzeżenie o zaufanie certyfikatu SSL](media/remote-debugging-ssl-warning.png)
 
-    1. Jeśli widzisz **certyfikatu zdalnego nazwa jest niezgodna z nazwą hosta** ostrzeżenie poniżej, oznacza to, nie używasz prawidłowego hosta lub adres IP jako **nazwa pospolita** podczas tworzenia certyfikatu.
+    1. Jeśli poniżej zostanie wyświetlone ostrzeżenie o **zdalnej nazwie certyfikatu,** oznacza to, że podczas tworzenia certyfikatu nie używasz właściwej nazwy hosta lub adresu IP jako **nazwy pospolitej.**
 
-        ![Ostrzeżenie nazwa hosta certyfikatu SSL](media/remote-debugging-ssl-warning2.png)
+        ![Ostrzeżenie o nazwach hosta certyfikatu SSL](media/remote-debugging-ssl-warning2.png)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: ustawienie bieżącej sesji | Microsoft Docs'
+title: 'Jak: Ustawianie bieżącej sesji | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,27 +17,27 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778755"
 ---
-# <a name="how-to-set-the-current-session"></a>Instrukcje: ustawienie bieżącej sesji
+# <a name="how-to-set-the-current-session"></a>Jak: Ustawianie bieżącej sesji
 
-W **Eksplorator wydajności**można otworzyć wiele sesji wydajności, a następnie wybrać jedną z widocznych sesji wydajności, która ma zostać ustawiona jako bieżąca sesja.
+Można otworzyć wiele sesji wydajności w **Eksploratorze wydajności,** a następnie wybrać jedną z widocznych sesji wydajności, które mają być ustawione jako bieżąca sesja.
 
-Po ustawieniu sesji jako bieżącej sesji, kliknięcie pozycji **Uruchom** na pasku narzędzi **Eksplorator wydajności** spowoduje rozpoczęcie profilowania bieżącej sesji.
+Po ustawieniu sesji jako bieżącej sesji kliknięcie **przycisku Uruchom** na pasku narzędzi **Eksploratora wydajności** rozpocznie profilowanie bieżącej sesji.
 
 ## <a name="to-set-current-performance-session"></a>Aby ustawić bieżącą sesję wydajności
 
-- W **Eksplorator wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij pozycję **Ustaw jako bieżącą sesję**.
+- W **Eksploratorze wydajności**kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij polecenie **Ustaw jako bieżącą sesję**.
 
-     Nazwa sesji pojawia się pogrubioną czcionką.
+     Nazwa sesji jest wyświetlana pogrubioną czcionką.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-[Konfigurowanie](../profiling/configuring-performance-sessions.md) sesji wydajności
-[okna Eksplorator wydajności](../profiling/performance-explorer-window.md)
-[właściwości sesji wydajności](../profiling/performance-session-properties.md)
-[przegląd sesji wydajności](../profiling/performance-session-overview.md)
+[Konfigurowanie sesji wydajności sesje](../profiling/configuring-performance-sessions.md)
+wydajności Okna
+[Eksploratora](../profiling/performance-explorer-window.md)[wydajności](../profiling/performance-session-properties.md)
+[omówienie sesji wydajności](../profiling/performance-session-overview.md)

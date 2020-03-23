@@ -1,5 +1,5 @@
 ---
-title: 'Wiersz polecenia profilera: szczegóły informacji o chronometrażu dla aplikacji autonomicznej'
+title: 'Wiersz polecenia profilera: szczegóły danych chronometrażu dla aplikacji autonomicznej'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,42 +13,42 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779613"
 ---
-# <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych o chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
-W tej sekcji opisano procedury i opcje dotyczące zbierania szczegółowych danych wydajności dla składnika klienta (autonomicznego) za pomocą metody instrumentacji z wiersza polecenia.
+# <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Zbieranie szczegółowych danych chronometrażu dla aplikacji autonomicznej przy użyciu wiersza polecenia profilera
+W tej sekcji opisano procedury i opcje zbierania szczegółowych danych o wydajności dla składnika klienta (autonomicznego) przy użyciu metody instrumentacji z wiersza polecenia.
 
-## <a name="common-tasks"></a>Wspólne zadania
+## <a name="common-tasks"></a>Typowe zadania
 
 |Zadanie|Zawartość pokrewna|
 |----------|---------------------|
-|**Profilowanie aplikacji .NET Framework przy użyciu instrumentacji**|-   [: Instrumentacja składnika .NET i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
-|**Profilowanie aplikacji CC++ /za pomocą Instrumentacji**|-   [: Instrumentacja składnika macierzystego i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
-|**Dodawanie danych interakcji warstwy**|-   [Zbieraj dane interakcji warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+|**Profilowanie aplikacji .NET Framework przy użyciu instrumentacji**|-   [Jak: Zaarząduj składnik .NET i zbieraj szczegółowe dane chronometrażu](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
+|**Profilowanie aplikacji C/C++ za pomocą oprzyrządowania**|-   [Jak: Instrumentować komponent macierzysty i zbierać szczegółowe dane chronometrażu](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
+|**Dodawanie danych interakcji warstwy**|-   [Zbieranie danych interakcji warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Zadania powiązane
 
-### <a name="profile-stand-alone-applications"></a>Profile aplikacji autonomicznych
+### <a name="profile-stand-alone-applications"></a>Aplikacje autonomiczne profilu
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profilowanie aplikacji przy użyciu próbkowania**|-   [zbierać dane statystyczne aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
-|**Profilowanie alokacji pamięci .NET i wyrzucania elementów bezużytecznych**|-   [Zbieraj dane .NET Framework pamięci](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
-|**Profilowanie zasobów i aktywność wątku**|-   [zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
+|**Aplikacje profilowe za pomocą próbkowania**|-   [Zbieranie statystyk aplikacji przy użyciu próbkowania](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**Alokacja pamięci .NET i wyrzucanie elementów bezużytecznych**|-   [Zbieranie danych pamięci programu .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
+|**Rywalizacja o zasoby profilu i działanie wątku**|-   [Zbieranie danych współbieżności](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 
-### <a name="profile-by-using-the-instrumentation-method"></a>Profilowanie przy użyciu metody instrumentacji
+### <a name="profile-by-using-the-instrumentation-method"></a>Profil przy użyciu metody oprzyrządowania
 
 |Zadanie|Powiązana zawartość|
 |----------|---------------------|
-|**Profilowanie aplikacji ASP.NET**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
-|**Usługi profilu**|-   [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
+|**Aplikacje ASP.NET profilowe**|-   [Zbieranie szczegółowych danych dotyczących chronometrażu za pomocą oprzyrządowania](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
+|**Usługi profilowania**|-   [Zbieranie szczegółowych danych dotyczących chronometrażu za pomocą oprzyrządowania](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|
 
-### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie widoków i raportów danych Instrumentacji
+### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizowanie widoków i raportów danych o instrumentacji
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>Tematy pomocy
+## <a name="reference"></a>Dokumentacja
 - [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Wizualizowanie zdarzeń EventSource w postaci znaczników | Dokumentacja firmy Microsoft
+title: Wizualizacja zdarzeń eventsource jako znaczników | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -9,64 +9,64 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64811548"
 ---
-# <a name="visualize-eventsource-events-as-markers"></a>Wizualizowanie zdarzeń EventSource w postaci znaczników
-Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w postaci znaczników i możesz kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczników EventSource, należy zarejestrować identyfikator GUID dostawcy ETW za pomocą [Zaawansowane ustawienia](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) okno dialogowe. Narzędzie Concurrency Visualizer zawiera domyślnych Konwencji do reprezentowania zdarzeń EventSource jako [znaczniki typu Flaga](../profiling/flag-markers.md), [znaczniki zakresu](../profiling/span-markers.md), i [znaczniki komunikatu](../profiling/message-markers.md). Można dostosować sposób wyświetlania zdarzeń EventSource, dodając pola niestandardowe do zdarzenia. Aby uzyskać więcej informacji na temat znaczników, zobacz [znaczniki Concurrency Visualizer](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji na temat zdarzeń EventSource, zobacz <xref:System.Diagnostics.Tracing>.
+# <a name="visualize-eventsource-events-as-markers"></a>Wizualizuj zdarzenia EventSource jako znaczniki
+Wizualizator współbieżności można wyświetlić EventSource zdarzenia jako znaczniki i można kontrolować sposób wyświetlania znaczników. Aby wyświetlić znaczniki EventSource, zarejestruj identyfikator GUID dostawcy ETW za pomocą okna dialogowego [Ustawienia zaawansowane.](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) Wizualizator współbieżności ma domyślne konwencje reprezentujące zdarzenia EventSource jako [znaczniki flag,](../profiling/flag-markers.md) [znaczniki zakresu](../profiling/span-markers.md)i [znaczniki wiadomości](../profiling/message-markers.md). Sposób wyświetlania zdarzeń EventSource można dostosować, dodając pola niestandardowe do zdarzeń. Aby uzyskać więcej informacji na temat znaczników, zobacz [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md). Aby uzyskać więcej informacji o <xref:System.Diagnostics.Tracing>zdarzeniach EventSource, zobacz .
 
-## <a name="default-visualization-of-eventsource-events"></a>Wizualizacji domyślnej wpisania zdarzeń EventSource
- Domyślnie narzędzie Concurrency Visualizer używa następujących konwencji, który reprezentuje zdarzeń EventSource.
+## <a name="default-visualization-of-eventsource-events"></a>Domyślna wizualizacja zdarzeń EventSource
+ Domyślnie wizualizator współbieżności używa następujących konwencji do reprezentowania zdarzeń EventSource.
 
 ### <a name="marker-type"></a>Typ znacznika
 
-1. Zdarzenia, które mają [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win: uruchamianie lub win: zatrzymywanie są traktowane jako początek lub koniec zakresu, odpowiednio.  Zagnieżdżone lub nakładające się zakresy nie mogą być wyświetlane. Nie można wyświetlić pary zdarzeń, które zaczynają się w jednym wątku i kończyć się na innym.
+1. Zdarzenia, które mają [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start lub win:Stop są traktowane jako początek lub koniec zakresu, odpowiednio.  Nie można wyświetlić zagnieżdżonych lub nakładających się zakresów. Nie można wyświetlić par zdarzeń, które rozpoczynają się w jednym wątku i kończą na innym.
 
-2. Zdarzenie, którego kod operacji nie jest win: Start ani win: Stop jest traktowany jako flagi znacznika, chyba że jego [poziom](/windows/desktop/WES/defining-severity-levels) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win: pełne lub nowszej.
+2. Zdarzenie, którego kod opcode nie jest win:Start ani win:Stop jest traktowane jako flaga znacznika, chyba że jego [poziom](/windows/desktop/WES/defining-severity-levels) (pole EVENT_RECORD. EVENT_HEADER. EVENT_DESCRIPTOR) jest win:Verbose lub wyższe.
 
-3. We wszystkich innych przypadkach zdarzenia jest traktowany jak jeden komunikat.
+3. We wszystkich innych przypadkach zdarzenie jest traktowane jako komunikat.
 
-### <a name="importance"></a>Znaczenie
- W poniższej tabeli opisano, jak poziom zdarzenia mapuje znaczenie znacznika.
+### <a name="importance"></a>Ważność
+ W poniższej tabeli zdefiniowano sposób, w jaki poziom zdarzenia jest mapowy do ważności znacznika.
 
-|Poziom funkcji ETW|Znaczenie wizualizatora współbieżności|
+|Poziom ETW|Znaczenie wizualizatora współbieżności|
 |---------------|---------------------------------------|
-|win: LogAlways|Normalne|
-|Wygraj: krytyczne|Krytyczny|
-|win: błąd|Krytyczny|
-|win: ostrzeżenie|Wysoka|
-|Wygraj: informacyjne|Normalne|
-|Wygraj: pełne|Małe|
-|Większa niż win: pełne|Małe|
+|wygrać:LogWszkejszy|Normalne|
+|wygrana:Krytyczne|Krytyczny|
+|wygrać:Błąd|Krytyczny|
+|wygrać:Ostrzeżenie|Wysoka|
+|wygrać:Informacje|Normalne|
+|wygrana:Pełne|Małe|
+|Większa niż wygrana:pełne|Małe|
 
 ### <a name="series-name"></a>Nazwa serii
- Nazwa zadania zdarzenia jest używany dla nazwy serii. Nazwa serii jest pusta, jeśli zadanie nie został zdefiniowany dla tego zdarzenia.
+ Nazwa zadania zdarzenia jest używana dla nazwy serii. Nazwa serii jest pusta, jeśli nie zdefiniowano żadnego zadania dla zdarzenia.
 
 ### <a name="category"></a>Kategoria
- Jeśli jest na poziomie systemu Windows: krytyczne lub win: błąd, a następnie kategorię alertu (-1). W przeciwnym razie kategoria jest wartość domyślna (0).
+ Jeśli poziom jest win:Critical lub win:Error, a następnie kategorii alert (-1). W przeciwnym razie kategoria jest domyślna (0).
 
 ### <a name="text"></a>Tekst
- Jeśli komunikat tekstu sformatowanego typu printf został zdefiniowany dla zdarzenia, jest on wyświetlany jako opis znacznika. W przeciwnym razie długość opisu jest nazwa zdarzenia i wartości poszczególnych pól ładunku.
+ Jeśli dla zdarzenia zdefiniowano sformatowaną wiadomość tekstową typu printf, jest ona wyświetlana jako opis znacznika. W przeciwnym razie opis jest nazwą zdarzenia i wartością każdego pola ładunku.
 
 ## <a name="customize-visualization-of-eventsource-events"></a>Dostosowywanie wizualizacji zdarzeń EventSource
- Można dostosować sposób wyświetlania zdarzeń EventSource, dodając odpowiednie pola do zdarzenia, zgodnie z opisem w poniższych sekcjach.
+ Sposób wyświetlania zdarzeń EventSource można dostosować, dodając odpowiednie pola do zdarzenia, zgodnie z opisem w poniższych sekcjach.
 
 ### <a name="marker-type"></a>Typ znacznika
- Użyj `cvType` pola typu byte, do kontroli rodzaju znacznik, który jest używany do reprezentowania zdarzenia. Poniżej przedstawiono dostępne wartości dla cvType:
+ Użyj `cvType` pola, bajtu, aby kontrolować rodzaj znacznika, który jest używany do reprezentowania zdarzenia. Oto dostępne wartości dla cvType:
 
 |wartość cvType|Wynikowy typ znacznika|
 |------------------|---------------------------|
 |0|Komunikat|
-|1|Początek zakresu|
-|2|Koniec zakresu|
+|1|Początek rozszeł|
+|2|Koniec rozsłości|
 |3|Flaga|
 |Wszystkie inne wartości|Komunikat|
 
-### <a name="importance"></a>Znaczenie
- Możesz użyć `cvImportance` pola typu byte, aby kontrolować ustawienia ważności zdarzeń EventSource. Firma Microsoft zaleca jednak sterować wyświetlanych ważność zdarzenia przy użyciu jego poziom.
+### <a name="importance"></a>Ważność
+ Można użyć `cvImportance` pola, bajt, aby kontrolować ustawienie ważności dla eventSource zdarzenia. Jednak zaleca się kontrolowanie wyświetlane znaczenie zdarzenia przy użyciu jego poziom.
 
 |wartość cvImportance|Znaczenie wizualizatora współbieżności|
 |------------------------|---------------------------------------|
@@ -79,19 +79,19 @@ Narzędzie Concurrency Visualizer można wyświetlać zdarzeń EventSource w pos
 |Wszystkie inne wartości|Małe|
 
 ### <a name="series-name"></a>Nazwa serii
- Użyj `cvSeries` pole zdarzenia, ciąg, aby kontrolować nazwę serii, zapewniająca przez narzędzie Concurrency Visualizer do zdarzeń EventSource.
+ Użyj `cvSeries` pola zdarzenia, ciąg, aby kontrolować nazwę serii, że wizualizator współbieżności daje eventSource zdarzenia.
 
 ### <a name="category"></a>Kategoria
- Użyj `cvCategory` pola typu byte do kontrolowania kategorię, która Concurrency Visualizer zapewnia na zdarzenie źródła zdarzeń.
+ Użyj `cvCategory` pola, bajt, aby kontrolować kategorię, którą wizualizator współbieżności daje do zdarzenia EventSource.
 
 ### <a name="text"></a>Tekst
- Użyj `cvTextW` pola ciągu, do kontrolowania opis, zapewniająca Concurrency Visualizer na zdarzenie źródła zdarzeń.
+ Użyj `cvTextW` pola, ciąg, aby kontrolować opis, który wizualizator współbieżności daje eventSource zdarzenia.
 
 ### <a name="spanid"></a>SpanID
- Używają pola cvSpanId, int, aby dopasować pary zdarzeń. Wartość dla każdej pary uruchamianie i zatrzymywanie wydarzeń, które reprezentują zakres musi być unikatowa. Zazwyczaj współbieżnych kodu to wymaga użycia elementów podstawowych synchronizacji takich jak <xref:System.Threading.Interlocked.Exchange%2A> aby upewnić się, że klucz (wartość jest używana do CvSpanID) jest poprawny.
+ Użyj pola cvSpanId, int, aby dopasować pary zdarzeń. Wartość dla każdej pary zdarzeń start/stop, które reprezentują zakres musi być unikatowa. Zazwyczaj dla równoczesnego kodu wymaga to użycia wierzchołków synchronizacji, takich jak <xref:System.Threading.Interlocked.Exchange%2A> zapewnienie, że klucz (wartość, która jest używana dla CvSpanID) jest poprawna.
 
 > [!NOTE]
-> Użycie SpanID Aby zagnieździć zakresy, zezwolić im na częściowo nakładają się na tym samym wątku, lub zezwolić im na uruchomienie na jeden wątek i zakończenia od innego nie jest obsługiwane.
+> Użycie SpanID do zagnieżdżania zakresów, zezwalaj im na częściowe nakładanie się na ten sam wątek lub zezwalanie im na uruchamianie na jednym wątku i na końcu na innym nie jest obsługiwane.
 
-## <a name="see-also"></a>Zobacz także
-- [Znaczniki CONCURRENCY visualizer](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Zobacz też
+- [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)

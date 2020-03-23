@@ -1,5 +1,5 @@
 ---
-title: Czas zarządzania pamięcią | Dokumentacja firmy Microsoft
+title: Czas zarządzania pamięcią | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62963784"
 ---
 # <a name="memory-management-time"></a>Czas zarządzania pamięcią
-Te segmenty na osi czasu są skojarzone z zablokowania prób są podzielone na zarządzanie pamięcią. Ten scenariusz oznacza, że wątek jest zablokowany przez zdarzenie, który jest skojarzony z operacji zarządzania pamięcią, takich jak stronicowania. W tym czasie wątek został zablokowany w stanie interfejsu API lub jądra Concurrency Visualizer jest liczy się jako zarządzania pamięcią. Obejmują one zdarzenia, takie jak Alokacja pamięci i stronicowania.
+Te segmenty na osi czasu są skojarzone z czasem blokowania, które są klasyfikowane jako zarządzanie pamięcią. Ten scenariusz oznacza, że wątek jest blokowany przez zdarzenie, które jest skojarzone z operacji zarządzania pamięcią, takich jak stronicowanie. W tym czasie wątek został zablokowany w stanie interfejsu API lub jądra, który wizualizator współbieżności jest zliczany jako zarządzanie pamięcią. Należą do nich zdarzenia, takie jak stronicowanie i alokacji pamięci.
 
- Sprawdź stosy wywołań skojarzone i profilu, aby lepiej zrozumieć podstawowe przyczyny bloki, które są podzielone na zarządzanie pamięcią raportów.
+ Sprawdź skojarzone stosy wywołań i raporty profilu, aby lepiej zrozumieć podstawowe przyczyny bloków, które są klasyfikowane jako zarządzanie pamięcią.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

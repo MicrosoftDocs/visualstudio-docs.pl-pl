@@ -8,142 +8,142 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd85565ee573015737ab815258914bec89ab9369
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596986"
 ---
-# <a name="productivity-tips-for-visual-studio"></a>Porady dotyczące wydajności dla programu Visual Studio
+# <a name="productivity-tips-for-visual-studio"></a>Wskazówki dotyczące produktywności programu Visual Studio
 
-W tym artykule omówiono wskazówki dotyczące funkcji programu Visual Studio, które ułatwiają szybkie i wydajniejsze pisanie, nawigowanie i debugowanie kodu.
+W tym artykule omówiono wskazówki dotyczące funkcji programu Visual Studio, które ułatwiają szybsze i wydajniejsze pisanie, nawigowanie i debugowanie kodu.
 
-Aby uzyskać informacje na temat przydatnych skrótów klawiaturowych, zobacz [Skróty dotyczące produktywności](../ide/productivity-shortcuts.md). Aby uzyskać pełną listę skrótów poleceń, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Aby uzyskać informacje na temat przydatnych skrótów klawiaturowych, zobacz [Skróty zwiększające produktywność](../ide/productivity-shortcuts.md). Aby uzyskać pełną listę skrótów poleceń, zobacz [Domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="write-code"></a>Pisanie kodu
 
 Pisz kod szybciej, korzystając z następujących funkcji.
 
-- **Użyj poleceń wygody**. Program Visual Studio zawiera różne polecenia ułatwiające wykonywanie typowych zadań edycji szybciej. Na przykład można wybrać polecenie, aby łatwo zduplikować wiersz kodu bez konieczności jego kopiowania, zmiany położenia kursora, a następnie wklejenia. Wybierz **Edytuj** > **zduplikowane** lub naciśnij **Ctrl**+**E**,**V**. Możesz również szybko rozwijać lub zwijać zaznaczenie tekstu, wybierając **edytuj** > **Zaawansowane** > **Rozwiń zaznaczenie** lub **Edytuj** > **zaawansowaną** pozycję > **kontraktu**lub naciskając **SHIFT**+**Alt**+ **=** lub **SHIFT**+**Alt**+ **-** .
+- **Używaj poleceń convenience**. Program Visual Studio zawiera różne polecenia ułatwiające szybsze wykonywanie typowych zadań edycji. Na przykład można wybrać polecenie, aby łatwo zduplikować wiersz kodu bez konieczności kopiowania go, zmiany położenia kursora, a następnie wklejania go. Wybierz **pozycję Edytuj** > **duplikat** lub naciśnij **klawisze Ctrl**+**E**,**V**. Można również szybko rozwinąć lub umtraktować zaznaczenie tekstu, wybierając **pozycję Edytuj** > **zaawansowane** > **rozwiń zaznaczenie** lub **Edytuj** > **zaawansowane** > **zaznaczenie kontraktu**lub naciskając klawisz **Shift**+**Alt** + **=** lub **Shift**+**Alt**+**-**.
 
-- **Korzystać z technologii IntelliSense**. Podczas wprowadzania kodu w edytorze, pojawi się informacje IntelliSense, takie jak lista członków, informacje o parametrach, szybkie informacje, pomoc podpisu i Dokończ wyraz. Funkcje te obsługują niepełne dopasowywanie tekstu. na przykład listy wyników dla List Members zawiera nie tylko wpisy, które rozpoczynają się od znaków czy zostały wprowadzone, ale także wpisy, które zawierają kombinacje znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [IntelliSense użyj](../ide/using-intellisense.md).
+- **Użyj IntelliSense**. Po wprowadzeniu kodu w edytorze wyświetlane są informacje IntelliSense, takie jak Lista członków, Informacje o parametrach, Szybkie informacje, Pomoc podpisu i Pełne słowo. Funkcje te obsługują rozmyte dopasowanie tekstu; na przykład listy wyników dla członków listy zawierają nie tylko wpisy rozpoczynające się od wprowadzonych znaków, ale także wpisy zawierające kombinację znaków w dowolnym miejscu ich nazw. Aby uzyskać więcej informacji, zobacz [Korzystanie z programu IntelliSense](../ide/using-intellisense.md).
 
-- **Zmień auto Wstawianie opcji IntelliSense podczas wpisywania kodu**. Przełączając IntelliSense do trybu sugestii, można określić, że opcje IntelliSense będą umieszczone tylko wtedy, gdy je samodzielnie wybierzesz.
+- **Zmieniaj automatyczne wstawianie opcji IntelliSense podczas wprowadzania kodu**. Przełączając intellisense do trybu sugestii, można określić, że opcje IntelliSense są wstawiane tylko wtedy, gdy jawnie je wybierzesz.
 
-     Aby włączyć tryb sugestia, wybierz opcję **Ctrl**+**Alt**+**spacja** kluczy lub na pasku menu wybierz **Edytuj**  >  **IntelliSense** > **Przełącz tryb uzupełniania**.
+     Aby włączyć tryb sugestii, wybierz klawisze **Ctrl**+**Alt**+**Spacja** lub na pasku menu wybierz pozycję **Edytuj** > **tryb przełączania****intellisense** > .
 
-- **Używanie fragmentów kodu**. Możesz użyć wbudowanych fragmentów kodu lub utworzyć własne fragmenty kodu.
+- **Użyj fragmentów kodu**. Można użyć wbudowanych fragmentów kodu lub utworzyć własne fragmenty kodu.
 
-     Aby wstawić framgent kodu, na pasku menu wybierz **Edytuj** > **IntelliSense** > **Wstaw fragment kodu** lub **Otocz**, lub Otwórz menu skrótów w pliku i wybierz pozycję **fragment** > **Wstaw fragment kodu** lub **Otocz**. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).
+     Aby wstawić fragment kodu, na pasku menu wybierz pozycję **Edytuj** > fragment kodu**IntelliSense** > **Insert** lub **Surround With**lub otwórz menu skrótów w pliku i wybierz pozycję **Snippet** > Fragment**wstawiania fragmentu** kodu lub **Surround With**. Aby uzyskać więcej informacji, zobacz [Fragmenty kodu](../ide/code-snippets.md).
 
-- **Rozwiązywanie błędów kodu w wierszu**. Szybkie akcje pozwalają na łatwe Refaktoryzacja, generowanie lub inny sposób modyfikować kodu za pomocą jednej akcji. Te akcje mogą być stosowane za pomocą śrubokręt ![ikonę śrubokręt](media/screwdriver-icon.png) lub żarówki ![ikoną żarówki](media/light-bulb-icon.png) ikony, lub naciskając **Alt** +  **Wprowadź** lub **Ctrl**+ **.** gdy kursor jest ustawiony na odpowiedni wiersz kodu. Zobacz [szybkie akcje](quick-actions.md) Aby uzyskać więcej informacji.
+- **Napraw błędy kodu w linii**. Szybkie akcje umożliwiają łatwe refaktoryzowanie, generowanie lub modyfikowanie kodu za pomocą jednej akcji. Działania te można zastosować za pomocą ![ikony](media/screwdriver-icon.png) śrubokręta lub ![ikony żarówki Ikony](media/light-bulb-icon.png) żarówki lub naciskając klawisz **Alt**+**Enter** lub **Ctrl**+**.** gdy kursor znajduje się w odpowiednim wierszu kodu. Aby uzyskać więcej informacji, zobacz [Szybkie akcje.](quick-actions.md)
 
-- **Pokaż i Edytuj definicję elementu kodu**. Można szybko wyświetlić i edytować ten moduł, w którym zdefiniowano element kodu, takich jak element członkowski, zmienna lub lokalnego lub.
+- **Pokaż i edytuj definicję elementu kodu**. Można szybko wyświetlić i edytować moduł, w którym zdefiniowano element kodu, taki jak element członkowski, zmienna lub lokalny.
 
-    Aby otworzyć definicję w oknie podręcznym, zaznacz element, a następnie wybierz **Alt**+**F12** kluczy, lub Otwórz menu skrótów dla elementu, a następnie wybierz **wgląd Definicja**. Aby otworzyć definicję w oddzielnym oknie kodu, otwórz menu skrótów dla elementu, a następnie wybierz **przejdź do definicji**.
+    Aby otworzyć definicję w wyskakującym oknie, zaznacz element, a następnie wybierz klawisze **Alt**+**F12** lub otwórz menu skrótów dla elementu, a następnie wybierz polecenie **Definicja wglądu**. Aby otworzyć definicję w osobnym oknie kodu, otwórz menu skrótów dla elementu, a następnie wybierz pozycję **Przejdź do definicji**.
 
-- **Użyj aplikacji przykładowych**. Można przyspieszyć opracowywanie aplikacji, pobierając i instalując aplikacje przykładowe od [sieci Microsoft Developer Network](https://code.msdn.microsoft.com/). Można także dowiesz się o określonej technologii lub koncepcji programowania, pobierając i przeglądając zestaw przykładów dotyczących danego obszaru.
+- **Użyj przykładowych aplikacji**. Tworzenie aplikacji można przyspieszyć, pobierając i instalując przykładowe aplikacje z [usługi Microsoft Developer Network.](https://code.msdn.microsoft.com/) Możesz również zapoznać się z określoną technologią lub koncepcją programowania, pobierając i eksplorując pakiet próbkowania dla tego obszaru.
 
-## <a name="navigate-within-your-code"></a>Nawigowanie w kodzie
+## <a name="navigate-within-your-code"></a>Poruszanie się po kodzie
 
-Aby znaleźć i Przenieś do określonych lokalizacji w kodzie szybciej, można użyć różnych technik przetwarzania.
+Można użyć różnych technik, aby szybciej znaleźć i przenieść do określonych lokalizacji w kodzie.
 
-- **Zakładki linii kodu**. Można użyć zakładek, aby szybko przechodzić do określonych wierszy kodu w pliku.
+- **Zakładki wierszy kodu**. Zakładki umożliwiają szybkie przechodzenie do określonych wierszy kodu w pliku.
 
-    Aby ustawić zakładki, na pasku menu, wybierz **Edytuj** > **zakładki** > **Przełącz zakładkę**. Możesz wyświetlać wszystkie zakładki dla rozwiązania w **zakładki** okna. Aby uzyskać więcej informacji, zobacz [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md).
+    Aby ustawić zakładkę, na pasku menu wybierz pozycję **Edytuj** > **zakładki Przełączanie** > **zakładki**. W oknie **Zakładki** można wyświetlić wszystkie zakładki rozwiązania. Aby uzyskać więcej informacji, zobacz [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md).
 
-- **Wyszukaj definicje symbolu w pliku**. Możesz przeszukiwać rozwiązanie, aby zlokalizować definicje symboli i nazwy plików, ale wyniki wyszukiwania nie uwzględniają przestrzeni nazw lub zmiennych lokalnych.
+- **Wyszukiwanie definicji symboli w pliku**. Można wyszukiwać w ramach rozwiązania, aby zlokalizować definicje symboli i nazwy plików, ale wyniki wyszukiwania nie zawierają obszarów nazw ani zmiennych lokalnych.
 
-   Aby skorzystać z tej funkcji, na pasku menu wybierz **Edytuj** > **przejdź do**.
+   Aby uzyskać dostęp do tej funkcji, na pasku menu wybierz pozycję **Edytuj** > **nawiguj do**.
 
-- **Przeglądaj ogólną strukturę kodu**. W **Eksploratora rozwiązań**, możesz wyszukiwać i przeglądać klasy i ich typów i członków w projektach. Można również wyszukiwać symbole, wyświetlać hierarchię wywoływania metody, znajdować odwołania do symboli i wykonywać inne zadania. Jeśli wybierzesz element kodu w **Eksploratora rozwiązań**, skojarzony plik zostanie otwarty w **Podgląd** kartę, a kursor przeniesie się do elementu w pliku. Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md).
+- **Przejrzyj ogólną strukturę kodu**. W **Eksploratorze rozwiązań**można wyszukiwać i przeglądać klasy oraz ich typy i elementy członkowskie w projektach. Można również wyszukiwać symbole, wyświetlać hierarchię wywołań metody, znajdować odniesienia do symboli i wykonywać inne zadania. Jeśli wybierzesz element kodu w **Eksploratorze rozwiązań,** skojarzony plik zostanie otwarty na karcie **Podgląd,** a kursor zostanie przeniesiony do elementu w pliku. Aby uzyskać więcej informacji, zobacz [Wyświetlanie struktury kodu](../ide/viewing-the-structure-of-code.md).
 
-## <a name="find-items-faster"></a>Znajdź elementy szybciej
+## <a name="find-items-faster"></a>Szybsze znajdowanie przedmiotów
 
-Możesz dodatkowo przeszukiwać środowisko IDE dla poleceń, plików i opcji, oprócz filtrowania zawartości okien narzędziowych, aby wyświetlić tylko informacje odnoszące się do bieżącego zadania.
+Oprócz filtrowania zawartości okien narzędzi można przeszukiwać ide w poszukiwaniu poleceń, plików i opcji, aby wyświetlić tylko istotne informacje dotyczące bieżącego zadania.
 
-- **Przefiltruj zawartość okna Narzędzie**. Możesz przeszukiwać zawartość wielu okien narzędziowych, takich jak **przybornika**, **właściwości** oknie i **Eksploratora rozwiązań**, ale Wyświetl tylko elementy, których nazwy zawiera znaki, które określisz.
+- **Filtrowanie zawartości okien narzędzi**. Można wyszukiwać w obrębie zawartości wielu okien narzędzi, takich jak **Przybornik**, okno **Właściwości** i **Eksplorator rozwiązań,** ale wyświetla tylko elementy, których nazwy zawierają określone znaki.
 
-- **Wyświetlenie tylko błędów, które mają adres**. Jeśli wybierzesz **filtru** znajdujący się na **lista błędów** narzędzi, można zmniejszyć liczbę błędów, które pojawiają się w **lista błędów** okna. Możesz wyświetlić tylko błędy w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Można również wyszukiwać **lista błędów** okna, aby znaleźć określone błędy.
+- **Wyświetlaj tylko błędy, które chcesz rozwiązać**. Jeśli na pasku narzędzi Lista błędów zostanie wybrana przycisk **Filtruj,** można zmniejszyć liczbę błędów wyświetlanych w oknie **Lista błędów.** **Filter** Można wyświetlić tylko błędy w plikach, które są otwarte w edytorze, tylko błędy w bieżącym pliku lub tylko błędy w bieżącym projekcie. Można również wyszukać w oknie **Lista błędów,** aby znaleźć określone błędy.
 
-- **Znajdowanie okien dialogowych, poleceń menu, opcji i innych**. W polu wyszukiwania wprowadź słowa kluczowe lub frazy dla elementów, które próbujesz znaleźć. Na przykład następujące opcje są wyświetlane, jeśli wprowadzisz **Nowy projekt**:
+- **Znajdź okna dialogowe, polecenia menu, opcje i inne**. W polu wyszukiwania wprowadź słowa kluczowe lub frazy elementów, które próbujesz znaleźć. Na przykład następujące opcje są wyświetlane po wprowadzeniu **nowego projektu:**
 
    ::: moniker range="vs-2017"
 
-   ![Szybkie uruchamianie wyniki "nowego projektu"](../ide/media/productivity_quicklaunch.png)
+   ![Szybkie uruchamianie wyników dla "nowego projektu"](../ide/media/productivity_quicklaunch.png)
 
-   Przycisk **szybkiego uruchamiania** wyświetla linki umożliwiające utworzenie nowego projektu, dodanie nowego elementu do projektu i strony **projekty i rozwiązania** w oknie dialogowym **Opcje** , między innymi. Wyniki wyszukiwania mogą również obejmować pliki projektu i okna narzędzi.
+   **Szybkie uruchamianie** wyświetla łącza do tworzenia nowego projektu, dodawania nowego elementu do projektu oraz między innymi do strony **Projekty i rozwiązania** w oknie dialogowym **Opcje.** Wyniki wyszukiwania mogą również zawierać pliki projektu i okna narzędzi.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Wyniki wyszukiwania dla elementu "nowy projekt"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Wyniki wyszukiwania dla 'new project'](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Naciśnij klawisz **Ctrl**+**Q** , aby przejść bezpośrednio do pola wyszukiwania.
+   Naciśnij **klawisz Ctrl**+**Q,** aby przejść bezpośrednio do pola wyszukiwania.
 
-## <a name="debug-code"></a>Możliwe jest debugowanie kodu
+## <a name="debug-code"></a>Kod debugowania
 
-Debugowanie może zajmować dużo czasu, ale poniższe porady mogą pomóc przyspieszyć proces.
+Debugowanie może zużyć dużo czasu, ale poniższe wskazówki mogą pomóc przyspieszyć proces.
 
-- **Testowanie strony, aplikacji lub witryny w różnych przeglądarkach**. Podczas debugowania kodu można łatwo przełączać się między przeglądarkami zainstalowanych w sieci web, w tym [narzędzie Page Inspector (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), bez konieczności otwierania **przeglądanie za pomocą** okno dialogowe. Możesz użyć **Debuguj element docelowy** listę, która znajduje się na **standardowa** pasku narzędzi obok pozycji **Rozpocznij debugowanie** przycisk, aby szybko sprawdzić, jakiej przeglądarki używasz podczas debugowania lub Wyświetlanie stron.
+- **Przetestuj tę samą stronę, aplikację lub witrynę w różnych przeglądarkach.** Podczas debugowania kodu można łatwo przełączać się między zainstalowanymi przeglądarkami internetowymi, w tym [Inspektorem strony (Visual Studio),](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209)bez konieczności otwierania okna dialogowego **Przeglądaj za pomocą.** Za pomocą listy **Debugowania docelowego,** która znajduje się na pasku narzędzi **Standardowy** obok **przycisku Rozpocznij debugowanie,** można szybko sprawdzić, której przeglądarki używasz podczas debugowania lub wyświetlania stron.
 
-    ![Wybierz opcje debugowania w przeglądarce sieci web](../ide/media/webbrowserdropdowntoolbar.png)
+    ![Wybieranie opcji debugowania przeglądarki internetowej](../ide/media/webbrowserdropdowntoolbar.png)
 
-- **Ustaw tymczasowe punkty przerwania**. Można utworzyć tymczasowy punkt przerwania w bieżącym wierszu kodu i jednocześnie uruchomić debuger. Po osiągnięciu tego wiersza kodu debuger przechodzi w tryb podziału. Aby uzyskać więcej informacji, zobacz [Nawiguj za pomocą kodu z debugerem](../debugger/navigating-through-code-with-the-debugger.md).
+- **Ustaw tymczasowe punkty przerwania**. Można utworzyć tymczasowy punkt przerwania w bieżącym wierszu kodu i uruchomić debuger jednocześnie. Po naciśnięciu tego wiersza kodu debuger wchodzi w tryb przerwania. Aby uzyskać więcej informacji, zobacz [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
-    Aby użyć tej funkcji, wybierz opcję **Ctrl**+**F10** kluczy lub Otwórz menu skrótów dla wiersza kodu, na którym chcesz przerwać, a następnie wybierz **Uruchom do kursora** .
+    Aby użyć tej funkcji, wybierz klawisze **Ctrl**+**F10** lub otwórz menu skrótów dla wiersza kodu, w którym chcesz przerwać, a następnie wybierz pozycję **Uruchom kursor**.
 
-- **Przenieś punkt wykonania podczas debugowania**. Można przenieść bieżący punkt wykonania do innej części kodu, a następnie ponownie uruchom debugowanie od tego momentu. Ta technika jest przydatna, jeśli chcesz debugować sekcję kodu bez konieczności ponownego przechodzenia przez wszystkie czynności, które są wymagane do uzyskania tej sekcji. Aby uzyskać więcej informacji, zobacz [Nawiguj za pomocą kodu z debugerem](../debugger/navigating-through-code-with-the-debugger.md).
+- **Przenieś punkt wykonywania podczas debugowania**. Można przenieść bieżący punkt wykonywania do innej sekcji kodu, a następnie ponownie debugowania z tego punktu. Ta technika jest przydatna, jeśli chcesz debugować sekcję kodu bez konieczności ponownego tworzenia wszystkich kroków, które są wymagane do osiągnięcia tej sekcji. Aby uzyskać więcej informacji, zobacz [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md).
 
-     Aby przesunąć punkt wykonania, przeciągnij żółty grot do lokalizacji, w której chcesz ustawić następną instrukcję w tym samym pliku źródłowym, a następnie wybierz **F5** klawisz, aby kontynuować debugowanie.
+     Aby przenieść punkt wykonania, przeciągnij żółty grot strzałki do lokalizacji, w której chcesz ustawić następną instrukcję w tym samym pliku źródłowym, a następnie wybierz klawisz **F5,** aby kontynuować debugowanie.
 
-- **Przechwytywanie informacji o wartości dla zmiennych**. Możesz dodać etykietki danych do zmiennej w kodzie i przypiąć go, aby umożliwić dostęp ostatniej znanej wartości zmiennej po zakończeniu debugowania. Aby uzyskać więcej informacji, zobacz [wyświetlanie wartości danych w poradach dotyczących](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).
+- **Przechwytywanie informacji o wartości dla zmiennych**. Można dodać DataTip do zmiennej w kodzie i przypiąć go, dzięki czemu można uzyskać dostęp do ostatniej znanej wartości zmiennej po zakończeniu debugowania. Aby uzyskać więcej informacji, zobacz [Wyświetlanie wartości danych w poradach dotyczących danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).
 
-     Aby dodać etykietki danych, debuger musi być w trybie przerwania. Umieść kursor w zmiennej, a następnie wybierz przycisk szpilki na się DataTip. Po zatrzymaniu debugowania w pliku źródłowym obok wiersza kodu, który zawiera zmienną pojawia się niebieska ikona szpilki. Jeśli wskażesz niebieską zakładkę, pojawi się wartość zmiennej z ostatniej sesji debugowania.
+     Aby dodać datatip, debuger musi być w trybie przerwania. Umieść kursor na zmiennej, a następnie wybierz przycisk pinezki na wyświetleniu etykietki danych. Po zatrzymaniu debugowania w pliku źródłowym obok wiersza kodu zawierającego zmienną pojawia się niebieska ikona pinezki. Jeśli wskażesz niebieski pin, pojawi się wartość zmiennej z ostatniej sesji debugowania.
 
-- **Wyczyść okno bezpośrednie**. Możesz wymazać zawartość [bezpośrednim](../ide/reference/immediate-window.md) w czasie projektowania, wprowadzając `>cls` lub `>Edit.ClearAll`
+- **Wyczyść okno Natychmiastowe**. Zawartość [okna Bezpośrednie](../ide/reference/immediate-window.md) można wymazać w czasie projektowania, `>cls` wprowadzając lub`>Edit.ClearAll`
 
-     Aby uzyskać więcej informacji na temat dodatkowych poleceń, zobacz [Visual Studio — aliasy poleceń](../ide/reference/visual-studio-command-aliases.md).
+     Aby uzyskać więcej informacji o dodatkowych poleceniach, zobacz [Aliasy poleceń programu Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
 ## <a name="access-visual-studio-tools"></a>Dostęp do narzędzi programu Visual Studio
 
-Można szybko wyświetlić wiersz polecenia dla deweloperów lub innego narzędzia programu Visual Studio, jeśli przypniesz go do Start menu lub paska zadań.
+Możesz szybko uzyskać dostęp do wiersza polecenia dewelopera lub innego narzędzia programu Visual Studio, jeśli przypiąć go do menu Start lub paska zadań.
 
 ::: moniker range="vs-2017"
 
-1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017 \ Visual Studio Tools*.
+1. W Eksploratorze Windows przejdź do *pozycji %ProgramData%\Microsoft\Windows\Menu Start\Programy\Visual Studio 2017\Visual Studio Tools*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. W Eksploratorze Windows przejdź do *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019 \ Visual Studio Tools*.
+1. W Eksploratorze Windows przejdź do *pozycji %ProgramData%\Microsoft\Windows\Menu Start\Programy\Visual Studio 2019\Visual Studio Tools*.
 
 ::: moniker-end
 
-2. Kliknij prawym przyciskiem myszy lub Otwórz menu kontekstowe dla **wiersz polecenia dla deweloperów**, a następnie wybierz **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
+2. Kliknij prawym przyciskiem myszy lub otwórz menu kontekstowe **wiersza polecenia dewelopera,** a następnie wybierz pozycję **Przypnij do ekranu startowego** lub **Przypnij do paska zadań**.
 
-## <a name="manage-files-toolbars-and-windows"></a>Zarządzanie plikami, paski narzędzi i systemu windows
+## <a name="manage-files-toolbars-and-windows"></a>Zarządzanie plikami, paskami narzędzi i oknami
 
-W dowolnym momencie może być działa w wielu plikach kodów i poruszać się między kilkoma oknami narzędzi, jak utworzyć aplikację. Można organizować, korzystając z następujących wskazówek:
+W dowolnym momencie, może być praca w wielu plikach kodu i przenoszenie między kilkoma oknami narzędzi podczas tworzenia aplikacji. Możesz zachować porządek, korzystając z następujących wskazówek:
 
-- **Zachowaj pliki, które są często używane widoczne w edytorze**. Możesz przypiąć pliki po lewej stronie karty, by pozostały widoczne niezależnie od tego, ile plików jest otwarty w edytorze.
+- **Zachowaj pliki, których często używasz, są widoczne w edytorze**. Pliki można przypiąć po lewej stronie karty, tak aby były widoczne niezależnie od tego, ile plików jest otwartych w edytorze.
 
-   Aby przypiąć plik, wybierz kartę pliku, a następnie wybierz **Przełącz stan przypięcia** przycisku.
+   Aby przypiąć plik, wybierz kartę pliku, a następnie wybierz przycisk **Przełącz stan pinu.**
 
-- **Przenoszenie dokumentów i okien na inne monitory**. Jeśli używasz więcej niż jednego monitora podczas opracowywania aplikacji, można pracować na porcjach aplikacji łatwiej, przenosząc pliki, które są otwarte w edytorze na inny monitor. Możesz również przesuwać, że okna narzędzi, takich jak okna debugera, do innego monitora i karty dokowanie okien dokumentu i narzędzi w celu utworzenia "tratwach". Aby uzyskać więcej informacji, zobacz [dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
+- **Przenoszenie dokumentów i okien na inne monitory**. Jeśli podczas tworzenia aplikacji używasz więcej niż jednego monitora, możesz łatwiej pracować nad częściami aplikacji, przenosząc pliki otwarte w edytorze na inny monitor. Można również przenieść okna narzędzi, takie jak okna debugera, do innego monitora i tabulatora dokowania dokumentów i okien narzędzi razem, aby utworzyć "tratwy". Aby uzyskać więcej informacji, zobacz [Dostosowywanie układów okien w programie Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 
-   Można również zarządzać plikami łatwiej, tworząc inną instancję **Eksploratora rozwiązań** i przenosząc ją na inny monitor. Aby utworzyć inną instancję programu **Eksploratora rozwiązań**, otwórz menu skrótów na liście **Eksploratora rozwiązań**, a następnie wybierz **nowy widok Eksploratora rozwiązań**.
+   Można również łatwiej zarządzać plikami, tworząc inne wystąpienie **Eksploratora rozwiązań** i przenosząc je na inny monitor. Aby utworzyć inne wystąpienie **Eksploratora rozwiązań,** otwórz menu skrótów w **Eksploratorze rozwiązań,** a następnie wybierz pozycję **Widok Eksploratora nowych rozwiązań**.
 
-- **Dostosowywanie czcionek, które są wyświetlane w programie Visual Studio**. Można zmienić krój czcionki, rozmiar i kolor, który jest używany dla tekstu w IDE. Na przykład możesz dostosować kolor elementów konkretnego kodu w edytorze i krój czcionki w narzędzie systemu windows lub w całej IDE. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) i [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Dostosuj czcionki wyświetlane w programie Visual Studio**. Można zmienić czcionkę, rozmiar i kolor używanego dla tekstu w IDE. Na przykład można dostosować kolor określonych elementów kodu w edytorze i czcionki ściany w oknach narzędzi lub w całej IDE. Aby uzyskać więcej informacji, zobacz [Jak: Zmienianie czcionek i kolorów](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) oraz [Jak: Zmienianie czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — porady i wskazówki dotyczące wpisu w blogu](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
+- [Wpis w blogu dotyczące porad i wskazówek dotyczących programu Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Domyślne skróty klawiaturowe dla często używanych poleceń](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Porady: Dostosowywanie menu i paski narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Wskazówki: Tworzenie prostej aplikacji](../get-started/csharp/tutorial-wpf.md)
-- [Ułatwienia dostępu, porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)
+- [Jak: Dostosowywanie menu i pasków narzędzi](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Przewodnik: Tworzenie prostej aplikacji](../get-started/csharp/tutorial-wpf.md)
+- [Porady i wskazówki związane z ułatwieniami dostępu](../ide/reference/accessibility-tips-and-tricks.md)

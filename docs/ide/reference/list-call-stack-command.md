@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f62852550c161566832a7ab78d4058d1d14028f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748722"
 ---
 # <a name="list-call-stack-command"></a>Lista stosu wywołań — Polecenie
@@ -36,71 +36,71 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ## <a name="arguments"></a>Argumenty
 
 `index`\
-Opcjonalny. Ustawia bieżącą ramkę stosu i nie wyświetla danych wyjściowych.
+Element opcjonalny. Ustawia bieżącą ramkę stosu i nie wyświetla żadnych danych wyjściowych.
 
 ## <a name="switches"></a>Przełączniki
-Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
+Każdy przełącznik można wywołać za pomocą jego pełnej formy lub krótkiego formularza.
 
-/Count: `number` [lub]/C: `number`
+/Count:`number` [lub] /C:`number`
 
-Opcjonalny. Maksymalna liczba stosów wywołań do wyświetlenia. Wartość domyślna to Unlimited.
+Element opcjonalny. Maksymalna liczba stosów połączeń do wyświetlenia. Wartość domyślna jest nieograniczona.
 
-/ShowTypes: `yes`&#124; `no` [lub]/t: `yes`&#124; `no`
+/ShowTypes:`yes`&#124;`no` [lub] /T:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy mają być wyświetlane typy parametrów. Wartość domyślna to `yes`.
+Element opcjonalny. Określa, czy mają być wyświetlane typy parametrów. Wartością `yes`domyślną jest .
 
-/ShowNames: `yes`&#124; `no` [lub]/n: `yes`&#124; `no`
+/ShowNames:`yes`&#124;`no` [lub] /N:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy mają być wyświetlane nazwy parametrów. Wartość domyślna to `yes`.
+Element opcjonalny. Określa, czy mają być wyświetlane nazwy parametrów. Wartością `yes`domyślną jest .
 
-/ShowValues: `yes`&#124; `no` [lub]/v: `yes`&#124; `no`
+/ShowValues:`yes`&#124;`no` [lub] /V:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy mają być wyświetlane wartości parametrów. Wartość domyślna to `yes`.
+Element opcjonalny. Określa, czy mają być wyświetlane wartości parametrów. Wartością `yes`domyślną jest .
 
-/ShowModule: `yes`&#124; `no` [lub]/m: `yes`&#124; `no`
+/ShowModule:`yes`&#124;`no` [lub] /M:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy ma być wyświetlana nazwa modułu. Wartość domyślna to `yes`.
+Element opcjonalny. Określa, czy ma być wyświetlana nazwa modułu. Wartością `yes`domyślną jest .
 
-/ShowLineOffset: `yes`&#124; `no` [lub]/#: `yes`&#124; `no`
+/ShowLineOffset:`yes`&#124;`no` [lub] /#:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy ma być wyświetlane przesunięcie wiersza. Wartość domyślna to `no`.
+Element opcjonalny. Określa, czy ma być wyświetlane przesunięcie linii. Wartością `no`domyślną jest .
 
-/ShowByteOffset: `yes`&#124; `no` [lub]/b: `yes`&#124; `no`
+/ShowByteOffset:`yes`&#124;`no` [lub] /B:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy ma być wyświetlane przesunięcie bajtów. Wartość domyślna to `no`.
+Element opcjonalny. Określa, czy ma być wyświetlane przesunięcie bajtu. Wartością `no`domyślną jest .
 
-/ShowLanguage: `yes`&#124; `no` [lub]/l: `yes`&#124; `no`
+/ShowLanguage:`yes`&#124;`no` [lub] /L:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy ma być wyświetlany język. Wartość domyślna to `no`.
+Element opcjonalny. Określa, czy język ma być wyświetlany. Wartością `no`domyślną jest .
 
-/IncludeCallsAcrossThreads: `yes`&#124; `no` [lub]/i: `yes`&#124; `no`
+/IncludeCallsAcrossThreads:`yes`&#124;`no` [lub] /I:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy dołączać wywołania do lub z innych wątków. Wartość domyślna to `no`.
+Element opcjonalny. Określa, czy wywołania mają być dołączane do innych wątków, czy z nich. Wartością `no`domyślną jest .
 
-/ShowExternalCode: `yes`&#124; `no`
+/ShowExternalCode:`yes`&#124;`no`
 
-Opcjonalny. Określa, czy Tylko mój kod ma być wyświetlana dla stosu wywołań. Gdy Tylko mój kod jest wyłączona, zostanie wyświetlony cały kod niebędący użytkownikiem. Gdy Tylko mój kod jest włączona, kod niebędący użytkownikiem jest wyświetlany jako `[external]` w danych wyjściowych stosu wywołań.
+Element opcjonalny. Określa, czy ma być wyświetlany tylko mój kod dla callstack. Gdy just my code jest wyłączony, wyświetlany jest cały kod niebędący użytkownikiem. Gdy tylko mój kod jest włączony, kod `[external]` niebędący użytkownikiem jest wyświetlany tak jak w danych wyjściowych callstack.
 
-Wątek: `n`
+Wątku:`n`
 
-Opcjonalny. Wyświetla stosu wywołań dla wątku `n`. Jeśli żaden wątek nie zostanie określony, program wyświetla stosu wywołań dla bieżącego wątku.
+Element opcjonalny. Wyświetla przywiązek wywoławczy dla wątku `n`. Jeśli nie wątek jest określony, wyświetla callstack dla bieżącego wątku.
 
 ## <a name="remarks"></a>Uwagi
-Zmiany wprowadzone do argumentów lub przełączników stosują się do przyszłych wywołań tego polecenia. Jeśli zostanie wyświetlona wartość Debug. ListCallStackby, zostanie wyświetlony cały stos wywołań. Jeśli określisz indeks, na przykład
+Zmiany wprowadzone w argumentach lub przełącznikach dotyczą przyszłych wywołań tego polecenia. Jeśli problem Debug.ListCallStackby się, cały stos wywołań wyświetla. Jeśli określisz indeks, na przykład,
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
-następnie bieżąca Ramka stosu jest ustawiona na tę ramkę (w tym przypadku druga ramka).
+następnie bieżąca ramka stosu jest ustawiona na tę klatkę (w tym przypadku drugą klatkę).
 
-Możesz również napisać to polecenie przy użyciu wstępnie zdefiniowanego aliasu KB. Na przykład możesz wprowadzić
+Można również napisać to polecenie przy użyciu jego wstępnie zdefiniowanego aliasu kb. Można na przykład wprowadzić
 
 ```cmd
 kb 2
 ```
 
-Aby ustawić bieżącą ramkę stosu na drugą klatkę.
+, aby ustawić bieżącą klatkę stosu na drugą klatkę.
 
 ## <a name="example"></a>Przykład
 
@@ -108,11 +108,11 @@ Aby ustawić bieżącą ramkę stosu na drugą klatkę.
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Lista dezasemblacji, polecenie](../../ide/reference/list-disassembly-command.md)
-- [Lista wątków, polecenie](../../ide/reference/list-threads-command.md)
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Lista dezasemblacji — Polecenie](../../ide/reference/list-disassembly-command.md)
+- [Lista wątków — Polecenie](../../ide/reference/list-threads-command.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

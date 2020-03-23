@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie portów dla kontrolerów testów i agentów testowych
+title: Konfigurowanie portów dla kontrolerów testowych i agentów testowych
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,58 +14,58 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2228f5ac4dce4743fa6dafbb321f0106b5d6cc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595946"
 ---
-# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurowanie portów dla kontrolerów testów i agentów testowych
+# <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurowanie portów dla kontrolerów testowych i agentów testowych
 
-Można zmienić domyślne porty przychodzące używane przez kontroler testów, agentem testowym a klientem. Może to być konieczne, jeśli próbujesz użyć kontrolera testów, agenta testowego lub klienta wraz z innym oprogramowaniem powodującą konflikt z ustawieniami portu. To kolejny powód, aby zmienić porty z powodu ograniczeń zapory między kontrolerem testów i klientem. W takim przypadku można ręcznie skonfigurować port, aby zapewnić Włączanie go dla zapory, tak aby kontroler testów mógł wysyłać wyniki do klienta.
+Można zmienić domyślne porty przychodzące używane przez kontrolera testów, agenta testowego i klienta. Może to być konieczne, jeśli próbujesz użyć kontrolera testów, agenta testowego lub klienta wraz z innym oprogramowaniem, które powoduje konflikt z ustawieniami portu. Innym powodem, aby zmienić porty jest ze względu na ograniczenie zapory między kontrolerem testów i klienta. W takim przypadku można ręcznie skonfigurować port, aby pomieścić włączenie go dla zapory, tak aby kontroler testów może wysyłać wyniki do klienta.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Poniższa ilustracja przedstawia punkty połączenia między kontrolerem testów, agentem testowym a klienta. Przedstawia, które porty są używane dla połączeń przychodzących i wychodzących, a także ograniczenia zabezpieczeń używane na tych portach.
+Na poniższej ilustracji przedstawiono punkty połączenia między kontrolerem testów, agentem testowym a klientem. Określa, które porty są używane do połączeń przychodzących i wychodzących, a także ograniczenia zabezpieczeń stosowane w tych portach.
 
-![Porty kontrolerów testów i agentów testowych oraz zabezpieczenia](../test/media/test-controller-agent-firewall.png)
+![Porty i zabezpieczenia kontrolera testowego i agenta testowego](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Połączenia przychodzące
 
-Domyślnym portem używanym przez kontroler testów jest 6901, a port domyślny agenta testowego to 6910. Klient używa portu losowego domyślnie, który jest używany do odbierania wyników testów z kontrolera testów. Dla wszystkich połączeń przychodzących kontroler testów uwierzytelnia podmiot wywołujący i weryfikuje, czy należy on do określonej grupy zabezpieczeń.
+Domyślny port używany przez kontroler testowy to 6901, a domyślny port agenta testowego to 6910. Klient domyślnie używa losowego portu, który jest używany do odbierania wyników testów z kontrolera testów. Dla wszystkich połączeń przychodzących kontroler testu uwierzytelnia stronę wywołującą i sprawdza, czy należy do określonej grupy zabezpieczeń.
 
-- **Kontroler testów** połączenia przychodzące są na porcie TCP 6901. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Skonfiguruj porty przychodzące](#configure-the-incoming-ports).
+- **Kontroler testowy** Połączenia przychodzące znajdują się na porcie TCP 6901. W razie potrzeby można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów przychodzących](#configure-the-incoming-ports).
 
-    Kontroler testów musi być w stanie wykonać połączenie wychodzące do agentów testowych i do klienta.
+    Kontroler testów musi mieć możliwość nawiązywać połączenia wychodzącego z agentami testowymi i klientem.
 
     > [!NOTE]
-    > Kontroler testów musi przychodzących **plików i drukarek udostępnianie** otwartego połączenia.
+    > Kontroler testowy wymaga otwartego połączenia **udostępniania plików i drukarek.**
 
-- **Agent testowy** połączenia przychodzące są na porcie TCP 6910. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Skonfiguruj porty przychodzące](#configure-the-incoming-ports).
+- **Agent testowy** Połączenia przychodzące są na porcie TCP 6910. W razie potrzeby można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów przychodzących](#configure-the-incoming-ports).
 
-   Agent testowy musi być w stanie wykonać połączenie wychodzące do kontrolera testów.
+   Agent testowy musi mieć możliwość nawiązywać połączenia wychodzącego z kontrolerem testów.
 
-- **Klient** domyślnie losowy port TCP jest używany dla połączeń przychodzących. Jeśli zachodzi potrzeba, można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Skonfiguruj porty przychodzące](#configure-the-incoming-ports).
+- **Klient** Domyślnie losowy port TCP jest używany dla połączeń przychodzących. W razie potrzeby można skonfigurować port przychodzący. Aby uzyskać więcej informacji, zobacz [Konfigurowanie portów przychodzących](#configure-the-incoming-ports).
 
-   Gdy kontroler testów próbuje połączyć się z czas klienta pierwszy, może otrzymać powiadomienia o zaporze.
+   Możesz otrzymywać powiadomienia zapory, gdy kontroler testów próbuje połączyć się z klientem po raz pierwszy.
 
-   W systemie Windows Server 2008, powiadomienia zapory są domyślnie wyłączone i trzeba ręcznie dodać wyjątki zapory dla programów klienckich (*devenv.exe*, *mstest.exe*, *mlm.exe*) tak, aby umożliwić akceptowanie połączeń przychodzących.
+   W systemie Windows Server 2008 powiadomienia zapory są domyślnie wyłączone i należy ręcznie dodać wyjątki zapory dla programów klienckich (*devenv.exe*, *mstest.exe*, *mlm.exe*), aby mogła akceptować połączenia przychodzące.
 
 ## <a name="outgoing-connections"></a>Połączenia wychodzące
 
 Losowe porty TCP są używane dla wszystkich połączeń wychodzących.
 
-- **Kontroler testów** kontroler testów musi być w stanie wykonać połączenie wychodzące do agentów i do klienta.
+- **Kontroler testowy** Kontroler testu musi mieć możliwość nawiązywać połączenia wychodzącego z agentami i klientem.
 
-- **Agent testowy** agent testowy musi być w stanie wykonać połączenie wychodzące do kontrolera.
+- **Agent testowy** Agent testowy musi mieć możliwość nawiązywać połączenia wychodzącego z kontrolerem.
 
-- **Klient** klient musi być w stanie wykonać połączenie wychodzące do kontrolera.
+- **Klient** Klient musi mieć możliwość nawiązywać połączenia wychodzącego z kontrolerem.
 
-## <a name="configure-the-incoming-ports"></a>Skonfiguruj porty przychodzące
+## <a name="configure-the-incoming-ports"></a>Konfigurowanie portów przychodzących
 
-Postępując następująco, skonfiguruj porty dla kontrolera testów i agentów testowych.
+Postępuj zgodnie z tymi wskazówkami, aby skonfigurować porty dla kontrolera testów i agentów testowych.
 
-- **Usługa kontrolera** Modyfikuj wartość portu edytując *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config* pliku:
+- **Usługa kontrolera** Zmodyfikuj wartość portu, edytując plik *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config:*
 
     ```xml
     <appSettings>
@@ -73,7 +73,7 @@ Postępując następująco, skonfiguruj porty dla kontrolera testów i agentów 
     </appSettings>
     ```
 
-- **Usługa agenta** modyfikuje portu, edytując *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config* pliku:
+- **Usługa agenta** Zmodyfikuj port, edytując plik *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config:*
 
     ```xml
     <appSettings>
@@ -81,12 +81,12 @@ Postępując następująco, skonfiguruj porty dla kontrolera testów i agentów 
     </appSettings>
     ```
 
-- **Klient** Dodaj następującą rejestru za pomocą Edytora rejestru (**DWORD**) wartości. Klient użyje jednego z portów z określonego zakresu do odbierania danych z kontrolera testów:
+- **Klient** Użyj edytora rejestru, aby dodać następujące wartości rejestru (**DWORD**). Klient użyje jednego z portów z określonego zakresu do odbierania danych z kontrolera testów:
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
      **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)

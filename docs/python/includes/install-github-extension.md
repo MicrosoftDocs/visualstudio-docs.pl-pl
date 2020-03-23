@@ -1,12 +1,12 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 62fc9607b6f54dc90d4eb8864cba3a0fb1e74779
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "68185927"
 ---
-Aby pracować z repozytoriami GitHub z poziomu programu Visual Studio, musisz zainstalować rozszerzenie GitHub dla programu Visual Studio. Aby to zrobić, należy uruchomić Instalatora programu Visual Studio, wybierz **Modyfikuj**i wybierz **poszczególne składniki** kartę. Przewiń w dół do **kodu narzędzia** zaznacz **rozszerzeniu GitHub extension for Visual Studio**i wybierz **Modyfikuj**.
+Aby pracować z repozytoriami GitHub z poziomu programu VS, należy zainstalować rozszerzenie GitHub dla programu Visual Studio. Aby to zrobić, uruchom instalator programu Visual Studio, wybierz pozycję **Modyfikuj**i wybierz kartę **Poszczególne składniki.** Przewiń w dół do sekcji **Narzędzia kodu,** wybierz **rozszerzenie GitHub dla programu Visual Studio**i wybierz pozycję **Modyfikuj**.
 
-![Wybieranie rozszerzenia GitHub w Instalatorze programu VS](../media/installation-github-extension.png)
+![Wybieranie rozszerzenia GitHub w instalatorze vs](../media/installation-github-extension.png)

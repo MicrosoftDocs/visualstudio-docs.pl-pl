@@ -1,6 +1,6 @@
 ---
-title: Publikowanie aplikacji w języku Python w usłudze Azure App Service na Windows
-description: Jak opublikować aplikację sieci web Python bezpośrednio w usłudze Azure App Service na Windows w programie Visual Studio, w tym niezbędną treść w pliku web.config.
+title: Publikowanie aplikacji języka Python w usłudze Azure App Service w systemie Windows
+description: Jak opublikować aplikację sieci Web języka Python bezpośrednio w usłudze Azure App Service w systemie Windows z programu Visual Studio, w tym niezbędną zawartość pliku web.config.
 ms.date: 01/07/2019
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -12,76 +12,76 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: cf9125476a4fdc369cc22034e081f2151020f064
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62784664"
 ---
-# <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service na Windows
+# <a name="publishing-to-azure-app-service-on-windows"></a>Publikowanie w usłudze Azure App Service w systemie Windows
 
 > [!Note]
-> Ta zawartość i funkcje opisane są przestarzałe, ale nadal działać. Zachęcamy programistów używających języka Python, aby dokonać migracji do [usługi App Service w systemie Linux](publishing-python-web-applications-to-azure-from-visual-studio.md) gdzie to możliwe.
+> Ta zawartość i opisane funkcje są przestarzałe, ale nadal działają. Deweloperzy języka Python są zachęcani do migracji do [usługi App Service w systemie Linux,](publishing-python-web-applications-to-azure-from-visual-studio.md) jeśli to możliwe.
 
-Program Visual Studio oferuje możliwość publikowania aplikacji sieci web w języku Python bezpośrednio w usłudze Azure App Service na Windows. Publikowanie w usłudze Azure App Service w Windows oznacza kopiowanie wymaganych plików do serwera i konfigurowania odpowiednich `web.config` pliku, który powoduje, że serwer sieci web jak uruchomić aplikację.
+Visual Studio udostępnia możliwość publikowania aplikacji sieci Web Języka Python bezpośrednio do usługi Azure App Service w systemie Windows. Publikowanie w usłudze Azure App Service w systemie Windows oznacza `web.config` kopiowanie niezbędnych plików na serwer i konfigurowanie odpowiedniego pliku, który instruuje serwer sieci web, jak uruchomić aplikację.
 
-Proces publikowania różni się między Visual Studio 2017 i nowszym oraz Visual Studio 2015. W szczególności program Visual Studio 2015 automatyzuje niektóre kroki, w tym tworzenie `web.config`, ale taką automatyzację ogranicza długoterminowe elastyczność i kontrolę. Visual Studio 2017 i nowszym wymaga dodatkowych ręcznych czynności, ale zapewnia dokładniejszą kontrolę nad środowiska Python. Obie opcje są opisane w tym miejscu.
+Proces publikowania różni się między programem Visual Studio 2017 i nowszym a programem Visual Studio 2015. W szczególności visual studio 2015 automatyzuje niektóre `web.config`kroki, w tym tworzenie , ale ta automatyzacja ogranicza długoterminową elastyczność i kontrolę. Visual Studio 2017 i nowsze wymaga więcej ręcznych kroków, ale zapewnia bardziej dokładną kontrolę nad środowiskiem Python. Obie opcje są opisane tutaj.
 
 > [!Note]
-> Aby uzyskać podstawowe informacje dotyczące zmiany między Visual Studio 2015 i Visual Studio 2017 i nowsze, zobacz w blogu, [Opublikuj na platformie Azure w programie Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/).
+> Aby uzyskać informacje na temat zmian między programami Visual Studio 2015 i Visual Studio 2017 i nowszymi, zobacz wpis w blogu [Publikowania na platformie Azure w programie Visual Studio 2017.](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-W ramach tego przewodnika należy projektu aplikacji sieci web, oparte na platformy Bottle, Flask i Django. Jeśli jeszcze nie masz projektu, aby ponowić proces publikowania, Utwórz projekt prosty test w następujący sposób:
+W tym instruktażu potrzebny jest projekt aplikacji sieci web oparty na strukturach Bottle, Flask lub Django. Jeśli nie masz jeszcze projektu i chcesz wypróbować proces publikowania, utwórz prosty projekt testowy w następujący sposób:
 
-1. W programie Visual Studio, wybierz **Plik > Nowy > Projekt**, wyszukaj "Bottle", wybierz **projektu sieci Web Bottle**, określ, jak i nazwę i ścieżkę do projektu, kliknij przycisk **OK**. (Szablon Bottle jest uwzględniany z pakietem roboczym programowania Python; zobacz [instalacji](installing-python-support-in-visual-studio.md).)
+1. W programie Visual Studio wybierz **pozycję Plik > Nowy projekt >**, wyszukaj hasło "Butelka", wybierz projekt Bottle Web **Project**, określ i nazwij i ścieżkę projektu, kliknij przycisk **OK**. (Szablon Butelka jest dołączony do obciążenia deweloperskiego języka Python; zobacz [Instalacja](installing-python-support-in-visual-studio.md).)
 
-1. Postępuj zgodnie z monitami, aby zainstalować pakiety zewnętrzne, wybierając **zainstalować w środowisku wirtualnym** i preferowaną podstawowy interpreter dla środowiska wirtualnego. Ten wybór wersji języka Python zainstalowane w usłudze App Service jest zazwyczaj odpowiada.
+1. Postępuj zgodnie z instrukcjami, aby zainstalować pakiety zewnętrzne, wybierając **pozycję Zainstaluj w środowisku wirtualnym** i preferowany tłumacz podstawowy dla środowiska wirtualnego. Zazwyczaj można dopasować ten wybór do wersji języka Python zainstalowany w usłudze App Service.
 
-1. Lokalnie przetestować projekt, naciskając klawisz F5 lub wybierając **Debuguj > Rozpocznij debugowanie**.
+1. Przetestuj projekt lokalnie, naciskając klawisz F5 lub wybierając **debugowanie > Rozpocznij debugowanie**.
 
 ## <a name="create-an-azure-app-service"></a>Tworzenie usługi Azure App Service
 
-Publikowanie na platformie Azure wymaga docelowej usługi App Service. W tym celu można utworzyć usługi App Service przy użyciu subskrypcji platformy Azure, możesz też tymczasową witrynę.
+Publikowanie na platformie Azure wymaga docelowej usługi aplikacji. W tym celu można utworzyć usługę app service przy użyciu subskrypcji platformy Azure lub można użyć witryny tymczasowej.
 
-Jeśli nie masz jeszcze subskrypcji, skorzystaj z [bezpłatne konto Azure pełnej](https://azure.microsoft.com/free/), co obejmuje istnieją małe wymogi dotyczące środków na korzystanie z usług platformy Azure. Należy również rozważyć skorzystania [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), które zapewnia 25 USD środków co miesiąc przez cały rok.
+Jeśli nie masz jeszcze subskrypcji, zacznij od [bezpłatnego pełnego konta platformy Azure,](https://azure.microsoft.com/free/)które obejmuje hojne kredyty na usługi platformy Azure. Rozważ również zarejestrowanie się w [programie Visual Studio Dev Essentials,](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/)który daje 25 USD kredytu co miesiąc przez cały rok.
 
 > [!Tip]
-> Mimo że Azure poprosi o podanie karty kredytowej zweryfikować swoje konto, karta nie jest rozliczane. Można również ustawić [limit wydatków](/azure/billing/billing-spending-limit) równa z bezpłatnych środków, aby zagwarantować, że występują nie dodatkowych opłat. Ponadto platforma Azure oferuje bezpłatne usługi App Service za warstwę planu, która doskonale nadaje się dla aplikacji prosty test, zgodnie z opisem w następnej sekcji.
+> Mimo że platforma Azure prosi o kartę kredytową w celu zweryfikowania konta, karta nie jest obciążona. Możesz również ustawić [limit wydatków](/azure/billing/billing-spending-limit) równy darmowym kredytom, aby zagwarantować, że nie pojawią się żadne dodatkowe opłaty. Ponadto platforma Azure udostępnia bezpłatną warstwę planu usługi app service, która jest idealna dla prostych aplikacji testowych, zgodnie z opisem w następnej sekcji.
 
 ### <a name="using-a-subscription"></a>Korzystanie z subskrypcji
 
-Z aktywną subskrypcją platformy Azure Utwórz usługę App Service przy użyciu pusta aplikacja internetowa w następujący sposób:
+Dzięki aktywnej subskrypcji platformy Azure utwórz usługę app service z pustą aplikacją sieci Web w następujący sposób:
 
 1. Zaloguj się na [portal.azure.com](https://portal.azure.com).
-1. Wybierz **+ nowy**, a następnie wybierz **sieci Web i mobilność** następuje **aplikacji sieci Web**.
-1. Określ nazwę dla aplikacji sieci web, pozostaw **grupy zasobów** do "Utwórz nowy" i wybierz polecenie **Windows** jako system operacyjny.
-1. Wybierz **plan App service/lokalizacja**, wybierz opcję **Utwórz nową**i określ nazwę i lokalizację. Następnie wybierz pozycję **warstwa cenowa**, przewiń w dół i wybierz **bezpłatna F1** planowanie, naciśnij klawisz **wybierz**, a następnie **OK** i następnie **Tworzenie**.
-1. (Opcjonalnie) Po utworzeniu usługi App Service, przejdź do niego, wybierz **Pobierz profil publikowania**, a następnie zapisz plik lokalnie.
+1. Wybierz **+Nowy**, a następnie wybierz pozycję **Web + Mobile,** a następnie aplikację Web **App**.
+1. Określ nazwę aplikacji sieci web, pozostaw **grupę zasobów** na "Utwórz nowy" i wybierz pozycję **Windows** jako system operacyjny.
+1. Wybierz **plan/lokalizację usługi aplikacji**, wybierz pozycję **Utwórz nowe**i określ nazwę i lokalizację. Następnie wybierz **pozycję Warstwa cenowa**, przewiń w dół do i wybierz plan **Wolny F1,** naciśnij **klawisz Select**, a następnie przycisk **OK,** a następnie **utwórz**.
+1. (Opcjonalnie) Po utworzeniu usługi App Service przejdź do niej, wybierz pozycję **Pobierz profil publikowania**i zapisz plik lokalnie.
 
-### <a name="using-a-temporary-app-service"></a>Przy użyciu tymczasowego App Service
+### <a name="using-a-temporary-app-service"></a>Korzystanie z tymczasowej usługi aplikacji
 
-Tworzenie tymczasowego usługi App Service bez subskrypcji platformy Azure w następujący sposób:
+Utwórz tymczasową usługę aplikacji bez konieczności subskrypcji platformy Azure w następujący sposób:
 
 1. Otwórz przeglądarkę, aby [try.azurewebsites.net](https://try.azurewebsites.net).
-1. Wybierz **aplikacji sieci Web** typ aplikacji, następnie wybierz **dalej**.
-1. Wybierz **pusta witryna**, a następnie **Utwórz**.
-1. Zaloguj się przy użyciu społecznościowych logowania wybranego i po pewnym czasie lokacja jest gotowa na wyświetlany adres URL.
-1. Wybierz **Pobierz profil publikowania** i Zapisz `.publishsettings` pliku, który można użyć później.
+1. Wybierz **aplikację Web App** dla typu aplikacji, a następnie wybierz pozycję **Dalej**.
+1. Wybierz **pozycję Pusta witryna,** a następnie **polecenie Utwórz**.
+1. Zaloguj się za pomocą wybranego loginu społecznościowego, a po krótkim czasie twoja witryna jest gotowa pod wyświetlonym adresem URL.
+1. Wybierz pozycję Pobierz profil `.publishsettings` **publikowania** i zapisz plik, którego używasz później.
 
-## <a name="configure-python-on-azure-app-service"></a>Konfigurowanie języka Python w usłudze Azure App Service
+## <a name="configure-python-on-azure-app-service"></a>Konfigurowanie usługi Python w usłudze Azure App Service
 
-Po utworzeniu usługi App Service z pustym uruchamiania aplikacji sieci Web (lub w ramach subskrypcji w bezpłatnej lokacji), zainstaluj wybranej wersji języka Python, zgodnie z opisem [zarządzania z językiem Python w usłudze Azure App Service](managing-python-on-azure-app-service.md). Do publikowania z programu Visual Studio 2017 i nowszych wersji rekordu dokładnej ścieżki do interpretera języka Python zainstalowane z rozszerzeniem lokacji zgodnie z opisem w tym artykule.
+Po uruchomieniu usługi App Service z pustą aplikacją sieci Web (w ramach subskrypcji lub w bezpłatnej witrynie) zainstaluj wybraną wersję języka Python zgodnie z [opisem Zarządzanie pythonem w usłudze Azure App Service.](managing-python-on-azure-app-service.md) Aby opublikować z programu Visual Studio 2017 i nowszych, należy zarejestrować dokładną ścieżkę do interpretera języka Python zainstalowanego z rozszerzeniem lokacji, zgodnie z opisem w tym artykule.
 
-Jeśli to konieczne, możesz także zainstalować `bottle` pakietu przy użyciu procesu w tych instrukcjach, ponieważ ten pakiet jest zainstalowany jako część druga kroki opisane w tym przewodniku.
+W razie potrzeby można `bottle` również zainstalować pakiet przy użyciu procesu w tych instrukcjach, ponieważ ten pakiet jest zainstalowany jako część innych kroków w tym instruktażu.
 
 ## <a name="publish-to-app-service---visual-studio-2017-and-later"></a>Publikowanie w usłudze App Service — Visual Studio 2017 i nowsze
 
-Publikowanie w usłudze Azure App Service z programu Visual Studio 2017 i nowszym kopiuje tylko pliki w projekcie do serwera. Jest to konieczne, w związku z tym, aby utworzyć pliki niezbędne do skonfigurowania środowiska serwera.
+Publikowanie w usłudze Azure App Service z programu Visual Studio 2017 i później kopiuje tylko pliki w projekcie na serwerze. W związku z tym konieczne jest utworzenie plików niezbędnych do skonfigurowania środowiska serwera.
 
-1. W programie Visual Studio **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz **Dodaj > Nowy element...** . W wyświetlonym oknie dialogowym Wybieranie szablonu "Web.config Pro Azure (Fast CGI)" i następnie naciśnij przycisk OK. Spowoduje to utworzenie `web.config` pliku w katalogu głównym projektu.
+1. W **Eksploratorze rozwiązań**programu Visual Studio kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Dodaj > Nowy element...**. W wyświetlonym oknie dialogowym wybierz szablon "Azure web.config (Fast CGI)" i wybierz przycisk OK. Spowoduje to utworzenie pliku `web.config` w katalogu głównym projektu.
 
-1. Modyfikowanie `PythonHandler` wpis `web.config` tak, aby ścieżka odpowiada instalację języka Python na serwerze (zobacz [dokumentacja konfiguracji usług IIS](https://www.iis.net/configreference) (iis.net) dla szczegółowymi informacjami na temat). Na przykład w przypadku języka Python 3.6.1 x64 wpis powinna wyglądać następująco:
+1. Zmodyfikuj `PythonHandler` wpis, `web.config` aby ścieżka była zgodna z instalacją języka Python na serwerze (szczegółowe informacje można znaleźć w [odwołaniu do konfiguracji usług IIS](https://www.iis.net/configreference) (iis.net). Na przykład dla języka Python 3.6.1 x64 wpis powinien być wyświetlany w następujący sposób:
 
     ```xml
     <system.webServer>
@@ -93,124 +93,124 @@ Publikowanie w usłudze Azure App Service z programu Visual Studio 2017 i nowszy
     </system.webServer>
     ```
 
-1. Ustaw `WSGI_HANDLER` wpis `web.config` odpowiednio dla struktury korzystasz:
+1. Ustaw `WSGI_HANDLER` wpis `web.config` w odpowiednim dla używanej struktury:
 
-    - **Bottle**: Dodawanie nawiasów po `app.wsgi_app` jak pokazano poniżej. Jest to konieczne, ponieważ ten obiekt jest funkcją (zobacz `app.py`) zamiast zmiennej:
+    - **Butelka**: dodać nawiasy `app.wsgi_app` po jak pokazano poniżej. Jest to konieczne, ponieważ ten `app.py`obiekt jest funkcją (patrz ) a nie zmienną:
 
         ```xml
         <!-- Bottle apps only -->
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: Zmiana `WSGI_HANDLER` wartość `<project_name>.app` gdzie `<project_name>` jest zgodna z nazwą projektu. Możesz znaleźć dokładny identyfikator, analizując `from <project_name> import app` instrukcji w `runserver.py`. Na przykład jeśli projekt ma nazwę "FlaskAzurePublishExample", wpis wyglądałby następująco:
+    - **Kolba**: Zmień `WSGI_HANDLER` wartość `<project_name>.app` `<project_name>` na miejsce odpowiadające nazwie projektu. Możesz znaleźć dokładny identifer, patrząc `from <project_name> import app` na `runserver.py`oświadczenie w . Na przykład jeśli projekt nosi nazwę "FlaskAzurePublishExample", wpis będzie wyświetlany w następujący sposób:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: Dwie zmiany są potrzebne do `web.config` dla projektów Django. Najpierw należy zmienić `WSGI_HANDLER` wartość `django.core.wsgi.get_wsgi_application()` (obiekt jest w `wsgi.py` pliku):
+    - **Django**: Potrzebne są `web.config` dwie zmiany w projektach Django. Najpierw zmień `WSGI_HANDLER` wartość `django.core.wsgi.get_wsgi_application()` na (obiekt znajduje `wsgi.py` się w pliku):
 
         ```xml
         <!-- Django apps only -->
         <add key="WSGI_HANDLER" value="django.core.wsgi.get_wsgi_application()"/>
         ```
 
-        Po drugie, Dodaj następujący wpis poniżej dla `WSGI_HANDLER`, zastępując `DjangoAzurePublishExample` o nazwie projektu:
+        Po drugie, dodaj następujący wpis `WSGI_HANDLER`poniżej tego, który ma zastąpić `DjangoAzurePublishExample` nazwą projektu:
 
         ```xml
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Tylko aplikacje Django**: W projekcie Django `settings.py` plików, Dodawanie domeny do adresu URL witryny `ALLOWED_HOSTS` jak pokazano poniżej, zastępując "vspython-test-02.azurewebsites .net" adres URL, oczywiście:
+1. **Tylko aplikacje Django**: W `settings.py` pliku projektu Django dodaj `ALLOWED_HOSTS` domenę adresu URL witryny, jak pokazano poniżej, zastępując "vspython-test-02.azurewebsites.net" adresem URL, oczywiście:
 
     ```python
     # Change the URL to your specific site
     ALLOWED_HOSTS = ['vspython-test-02.azurewebsites.net']
     ```
 
-    Błąd podczas dodawania adresu URL do wyników tablicy w błędzie "DisallowedHost u / nieprawidłowy nagłówek HTTP_HOST:"\<adres URL witryny\>". Może być konieczne dodanie "\<adres URL witryny\>" Aby ALLOWED_HOSTS. "
+    Nie można dodać adresu URL do tablicy powoduje błąd "DisallowedHost at\</\>Invalid HTTP_HOST header: ' adres URL witryny '. Do ALLOWED_HOSTS może\<być\>konieczne dodanie adresu URL witryny."
 
-    Należy pamiętać, że gdy tablica jest pusta, Django automatycznie umożliwia nazwy "Host_lokalny", ale dodanie adresu URL produkcji powoduje usunięcie tej możliwości. Aby z tego powodu należy zachować oddzielne deweloperskich i produkcyjnych kopii `settings.py`, lub użyj zmiennych środowiskowych, aby kontrolować wartości w czasie wykonywania.
+    Zauważ, że gdy tablica jest pusta, Django automatycznie zezwala na "localhost", ale dodanie produkcyjnego adresu URL powoduje usunięcie tych możliwości. Z tego powodu można zachować oddzielne kopie `settings.py`rozwoju i produkcji , lub użyć zmiennych środowiskowych do kontrolowania wartości czasu wykonywania.
 
-1. W **Eksploratora rozwiązań**, rozwiń folder o nazwie taka sama jak projekt, kliknij prawym przyciskiem myszy `static` folderu, wybierz **Dodaj > Nowy element...** , a następnie wybierz szablon "Statycznych w usłudze Azure files web.config" i wybierz **OK**. Ta akcja powoduje utworzenie innego `web.config` w `static` folder, który wyłącza Python przetwarzania dla tego folderu. Ta konfiguracja wysyła żądania dotyczące plików statycznych do domyślnego serwera sieci web, a nie przy użyciu aplikacji języka Python.
+1. W **Eksploratorze rozwiązań**rozwiń folder o takiej `static` samej nazwie jak projekt, kliknij prawym przyciskiem myszy folder, wybierz polecenie **Dodaj > Nowy element...**, wybierz szablon "Azure static files web.config" i wybierz przycisk **OK**. Ta akcja spowoduje utworzenie kolejnego pliku `web.config` w folderze `static`, co z kolei spowoduje wyłączenie przetwarzania języka Python dla tego folderu. Ta konfiguracja wysyła żądania dotyczące plików statycznych do domyślnego serwera internetowego, zamiast korzystać z aplikacji Python.
 
-1. Następnie zapisać projekt, w programie Visual Studio **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt i wybierz **Publikuj**.
+1. Zapisz projekt, a następnie w **Eksploratorze rozwiązań**programu Visual Studio kliknij prawym przyciskiem myszy projekt i wybierz polecenie **Publikuj**.
 
-    ![Polecenia menu kontekstowego projektu publikowania](media/template-web-publish-command.png)
+    ![Polecenie Publikowania w menu kontekstowym projektu](media/template-web-publish-command.png)
 
-1. W **Publikuj** kartę, która pojawia się, zaznaczyć miejscem docelowym publikowania:
+1. Na wyświetlej kartę **Publikowanie** wybierz miejsce docelowe publikowania:
 
-    a. Subskrypcja platformy Azure: Wybierz **Microsoft Azure App Service**, następnie **wybierz istniejącą** następuje **Publikuj**. Zostanie wyświetlone okno dialogowe, w którym można wybrać odpowiednią subskrypcję i usługi app service. Jeśli nie pojawia się usługa App Service, należy użyć pobrany profil publikowania, zgodnie z poniższym opisem dla tymczasowych usługi APp Service.
+    a. Twoja własna subskrypcja platformy Azure: wybierz usługę **Microsoft Azure App Service**, a następnie wybierz pozycję **Istniejąca,** a następnie **pozycję Publikuj**. Zostanie wyświetlone okno dialogowe, w którym można wybrać odpowiednią subskrypcję i usługę aplikacji. Jeśli usługa App Service nie jest wyświetlana, użyj pobranego profilu publikowania, jak opisano poniżej, dla tymczasowej usługi APp.
 
-    ![Publikowanie Azure krok 1, Visual Studio 2017 i nowsze, istniejące subskrypcje](media/tutorials-common-publish-1a-2017.png)
+    ![Publikowanie w usłudze Azure krok 1, Visual Studio 2017 i nowsze, istniejące subskrypcje](media/tutorials-common-publish-1a-2017.png)
 
-    b. Jeśli korzystania tymczasowe usługi App Service na try.azurewebsites.net lub w przeciwnym razie należy użyć profilu publikowania, wybierz **>** formantu, aby znaleźć **Importuj profil**, wybierz tę opcję, następnie Wybierz **Publikuj**. Powoduje wyświetlenie monitu o podanie lokalizacji `.publishsettings` wcześniej pobrany plik.
+    b. Jeśli używasz tymczasowej usługi app service na try.azurewebsites.net lub w inny sposób **>** musisz użyć profilu publikowania, wybierz formant, aby znaleźć **profil importu**, wybierz tę opcję, a następnie wybierz pozycję **Publikuj**. Spowoduje to wyświetlenie monitu o lokalizację pobranego `.publishsettings` wcześniej pliku.
 
-    ![Publikowanie do usługi Azure, krok 1, program Visual Studio 2017 i nowsze, tymczasowy app service](media/tutorials-common-publish-1b-2017.png)
+    ![Publikowanie w usłudze Azure krok 1, Visual Studio 2017 i nowszych, tymczasowa usługa aplikacji](media/tutorials-common-publish-1b-2017.png)
 
-1. Visual Studio Wyświetla stan publikowania w okna "Działanie publikowania w sieci Web" i publikacji. Po zakończeniu publikowania w domyślnej przeglądarce otworzy się adres URL witryny. Adres URL jest również wyświetlany w oknie publikowania.
+1. Program Visual Studio wyświetla stan publikowania w oknie "Aktywność publikowania w sieci Web" i w oknie Publikowania. Po zakończeniu publikowania domyślna przeglądarka zostanie otwarta w adresie URL witryny. Adres URL jest również wyświetlany w oknie Publikowanie.
 
-1. Po otwarciu przeglądarki może zostać wyświetlony komunikat "nie można wyświetlić strony, ponieważ wystąpił błąd wewnętrzny serwera." Ten komunikat oznacza, że środowiska Python na serwerze nie jest w pełni skonfigurowany, w którym to przypadku wykonaj następujące czynności:
+1. Po otwarciu przeglądarki może zostać wyświetlony komunikat "Strona nie może być wyświetlana, ponieważ wystąpił błąd serwera wewnętrznego". Ten komunikat wskazuje, że środowisko Języka Python na serwerze nie jest w pełni skonfigurowane, w którym to przypadku wykonaj następujące czynności:
 
-    a. Zapoznaj się ponownie do [zarządzania z językiem Python w usłudze Azure App Service](managing-python-on-azure-app-service.md), upewniając się, że masz odpowiednią języka Python zainstalowane rozszerzenie witryny.
+    a. Zapoznaj się ponownie [z zarządzaniem programem Python w usłudze Azure App Service,](managing-python-on-azure-app-service.md)upewniając się, że masz zainstalowane odpowiednie rozszerzenie witryny Języka Python.
 
-    b. Dokładnie sprawdź ścieżkę do interpretera języka Python w swojej `web.config` pliku. Ścieżka musi dokładnie odpowiadać lokalizacji instalacji rozszerzenia wybranej witryny.
+    b. Sprawdź dokładnie ścieżkę do interpretera `web.config` języka Python w pliku. Ścieżka musi dokładnie odpowiadać lokalizacji instalacji wybranego rozszerzenia lokacji.
 
-    c. Uaktualnij wszystkie pakiety wymienione w swojej aplikacji za pomocą konsoli Kudu `requirements.txt` pliku: Przejdź do tego samego folderu języka Python, który jest używany w `web.config`, takich jak `/home/python361x64`, i uruchom następujące polecenie, zgodnie z opisem w [Kudu konsoli](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)sekcji:
+    d. Użyj konsoli Kudu, aby uaktualnić wszystkie `requirements.txt` pakiety wymienione w pliku aplikacji: przejdź `web.config`do `/home/python361x64`tego samego folderu Języka Python, który jest używany w , na przykład , i uruchom następujące polecenie, jak opisano w sekcji [Konsoli Kudu:](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)
 
     ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
-    Jeśli widzisz błędy uprawnień podczas uruchamiania tego polecenia, sprawdź, czy używasz polecenia w folderze rozszerzenia witryny i *nie* w folderze instalacji języka Python domyślnej usługi App Service. Ponieważ nie można modyfikować tych środowisk domyślne, bez obaw próby zainstalowania pakietów zakończy się niepowodzeniem.
+    Jeśli podczas uruchamiania tego polecenia są widoczne błędy uprawnień, sprawdź, czy jest uruchamiane polecenie w folderze rozszerzenia lokacji, a *nie* w folderze jednej z domyślnych instalacji języka Python usługi App Service. Ponieważ nie można zmodyfikować tych środowisk domyślnych, próba zainstalowania pakietów z pewnością nie powiedzie się.
 
-    d. Dla danych wyjściowych szczegółowy komunikat o błędzie, należy dodać następujący wiersz do `web.config` w ramach `<system.webServer>` węzła, który umożliwia bardziej szczegółowe dane wyjściowe błędu:
+    d. Aby uzyskać szczegółowe dane wyjściowe `web.config` błędu, dodaj następujący wiersz do `<system.webServer>` węźle, który zapewnia bardziej szczegółowe dane wyjściowe błędu:
 
     ```xml
     <httpErrors errorMode="Detailed"></httpErrors>
     ```
 
-    e. Spróbuj ponownie uruchomić usługi App Service po zainstalowaniu nowych pakietów. Ponowne uruchomienie komputera nie jest konieczne w przypadku zmiany `web.config`, jak usługa App Service, automatyczne ponowne uruchomienie zawsze, gdy `web.config` zmiany.
+    e. Spróbuj ponownie uruchomić usługę App Service po zainstalowaniu nowych pakietów. Ponowne uruchomienie nie jest `web.config`konieczne podczas zmiany, ponieważ `web.config` usługa App Service uruchamia automatyczne ponowne uruchamianie za każdym razem, gdy się zmieni.
 
     > [!Tip]
-    > Jeśli wprowadzisz zmiany do swojej aplikacji `requirements.txt` pliku, pamiętaj ponownie użyć konsoli Kudu, aby zainstalować wszystkie pakiety, które są teraz wymienione w tym pliku.
+    > Jeśli wprowadzisz jakiekolwiek zmiany w pliku `requirements.txt` aplikacji, zainstaluj ponownie wszystkie pakiety wymienione w tym pliku, używając konsoli Kudu.
 
-1. Po skonfigurowaniu w pełni środowisko serwera, Odśwież stronę w przeglądarce i aplikacji sieci web powinna zostać wyświetlona.
+1. Po całkowitym skonfigurowaniu środowiska serwera odśwież stronę w przeglądarce. Powinna zostać wyświetlona aplikacja internetowa.
 
     ![Wyniki publikowania aplikacji Bottle, Flask i Django w usłudze App Service](media/azure-publish-results.png)
 
-## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikowanie w usłudze App Service — program Visual Studio 2015
+## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikowanie w usłudze app service — Visual Studio 2015
 
 > [!Note]
-> Krótki film tego procesu można znaleźć na [samouczek języka Python dla programu Visual Studio: Tworzenie witryny sieci Web](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (witrynie youtube.com, 3m10s).
+> Krótki film wideo z tego procesu można znaleźć w [programie Visual Studio Python Samouczek: Tworzenie witryny sieci Web](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (youtube.com, 3m10s).
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy, wybierz projekt **Publikuj**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy projekt, wybierz pozycję **Publikuj**.
 
-1. W **Publikuj** okno dialogowe, wybierz opcję **Microsoft Azure App Service**:
+1. W oknie dialogowym **Publikowanie** wybierz pozycję **Microsoft Azure App Service**:
 
-  ![Publikowanie do usługi Azure, krok 1](media/tutorials-common-publish-1.png)
+  ![Publikowanie w usłudze Azure krok 1](media/tutorials-common-publish-1.png)
 
-1. Wybieranie klasy docelowej:
+1. Wybierz cel:
 
-    - Jeśli masz subskrypcję platformy Azure, wybierz **Microsoft Azure App Service** jako miejscem docelowym publikowania, następnie w oknie dialogowym poniżej wybierz istniejącej usługi App Service lub **New** Aby utworzyć nową.
-    - Jeśli używasz tymczasową witrynę z try.azurewebsites.net wybierz **importu** jako miejscem docelowym publikowania, następnie Przeglądaj w poszukiwaniu `.publishsettings` plik pobrany z witryny i wybierz **OK**.
+    - Jeśli masz subskrypcję platformy Azure, wybierz microsoft **azure app service** jako miejsce docelowe publikowania, a następnie w poniższym oknie dialogowym wybierz istniejącą usługę app service lub wybierz **nowy,** aby utworzyć nowy.
+    - Jeśli używasz witryny tymczasowej z try.azurewebsites.net, wybierz **pozycję Importuj** jako `.publishsettings` miejsce docelowe publikowania, a następnie wyszukaj plik pobrany z witryny i wybierz **przycisk OK**.
 
-1. Szczegóły usługi App Service są wyświetlane w **Publikuj** okna dialogowego **połączenia** poniższej karcie.
+1. Szczegóły usługi app service są wyświetlane **na** karcie **Połączenie** okna publikowania poniżej.
 
-  ![Publikowanie do usługi Azure, krok 2](media/tutorials-common-publish-2.png)
+  ![Publikowanie w kroku 2 platformy Azure](media/tutorials-common-publish-2.png)
 
-1. Wybierz **Dalej >** zgodnie z potrzebami, aby przejrzeć dodatkowe ustawienia.
+1. **Wybierz następną >** w razie potrzeby, aby przejrzeć dodatkowe ustawienia.
 
-1. Wybierz **publikowania**. Gdy aplikacja jest wdrażana na platformie Azure, domyślnej przeglądarki otwiera się w danej lokacji.
+1. Wybierz pozycję **Publikuj**. Po wdrożeniu aplikacji na platformie Azure domyślna przeglądarka zostanie otwarta w tej witrynie.
 
-W ramach tego procesu Visual Studio wykona następujące czynności:
+W ramach tego procesu program Visual Studio wykonuje również następujące kroki:
 
-- Tworzenie `web.config` pliku na serwerze, który zawiera odpowiednie wskaźniki do aplikacji `wsgi_app` działać, a w usłudze App Service domyślnie języka Python 3.4 interpretera.
-- Wyłącz przetwarzanie plików w projekcie `static` folder (reguł dla tego znajdują się w `web.config`).
-- Opublikuj w środowisku wirtualnym na serwerze.
-- Dodaj `web.debug.config` plików i ptvsd narzędzia, aby umożliwić debugowanie zdalne debugowanie.
+- Utwórz `web.config` plik na serwerze, który zawiera odpowiednie `wsgi_app` wskaźniki do funkcji aplikacji i do domyślnego interpretera języka Python 3.4 usługi App Service.
+- Wyłącz przetwarzanie plików w `static` folderze projektu (reguły `web.config`dla tego są w ).
+- Opublikuj środowisko wirtualne na serwerze.
+- Dodaj `web.debug.config` plik i narzędzia debugowania ptvsd, aby włączyć zdalne debugowanie.
 
-Jak wspomniano wcześniej, te kroki automatyczne uprościć proces publikowania, ale utrudnić do kontrolowania środowiska Python. Na przykład `web.config` pliku jest tworzony tylko na serwerze, ale nie są dodawane do projektu. Proces publikowania również trwa dłużej, ponieważ ona jest kopiowanie środowiska zupełnie wirtualnego z komputera dewelopera zamiast polegania na konfigurację serwera.
+Jak wspomniano wcześniej, te automatyczne kroki upraszczają proces publikowania, ale utrudniają kontrolowanie środowiska Języka Python. Na przykład `web.config` plik jest tworzony tylko na serwerze, ale nie jest dodawany do projektu. Proces publikowania trwa również dłużej, ponieważ jest kopiowanie całego środowiska wirtualnego z komputera deweloperskiego, a nie poleganie na konfiguracji serwera.
 
-Po pewnym czasie może chcesz zachować swoje własne `web.config` pliku i użyć `requirements.txt` bezpośrednio utrzymanie pakiety na serwerze. Za pomocą `requirements.txt`, w szczególności gwarantuje, że zawsze być zgodna swoje środowiska deweloperskie i serwera.
+Ostatecznie można zachować własny `web.config` plik i `requirements.txt` używać do obsługi pakietów na serwerze bezpośrednio. Korzystanie `requirements.txt`, w szczególności, gwarantuje, że środowiska deweloperów i serwerów zawsze pasują.

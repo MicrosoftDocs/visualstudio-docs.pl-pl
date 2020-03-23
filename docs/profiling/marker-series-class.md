@@ -1,5 +1,5 @@
 ---
-title: marker_series, klasa | Dokumentacja firmy Microsoft
+title: Klasa marker_series | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155d47f6764e754a1093cbcf884368c80d709a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62575920"
 ---
-# <a name="markerseries-class"></a>marker_series, klasa
-Reprezentuje serial kanał zdarzeń generowanych przez jednego dostawcę.
+# <a name="marker_series-class"></a>klasa marker_series
+Reprezentuje kanał szeregowy zdarzeń generowanych przez jednego dostawcę.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,21 +30,21 @@ class marker_series;
 
 ## <a name="members"></a>Elementy członkowskie
 
-### <a name="public-constructors"></a>Konstruktory publiczne
+### <a name="public-constructors"></a>Konstruktorzy publiczni
 
 |Nazwa|Opis|
 |----------|-----------------|
-|[Konstruktor marker_series::marker_series](../profiling/marker-series-marker-series-constructor.md)|Inicjuje nowe wystąpienie klasy `marker_series` klasy.|
-|[marker_series:: ~ marker_series — destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Niszczy obiekt marker_series i zwalnia wszystkie zasoby przydzielone.|
+|[marker_series::marker_series konstruktor](../profiling/marker-series-marker-series-constructor.md)|Inicjuje nowe wystąpienie klasy `marker_series`.|
+|[marker_series::~marker_series destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Niszczy marker_series obiekt i uwalnia wszystkie przydzielone zasoby.|
 
 ### <a name="public-methods"></a>Metody publiczne
 
 |Nazwa|Opis|
 |----------|-----------------|
-|[marker_series::is_enabled — metoda](../profiling/marker-series-is-enabled-method.md)|Określa, czy dowolnej sesji ma włączone dostawcy.|
-|[marker_series::write_alert — metoda](../profiling/marker-series-write-alert-method.md)|Zapisuje plik śledzenia Concurrency Visualizer alertu.|
-|[marker_series::write_flag — metoda](../profiling/marker-series-write-flag-method.md)|Zapisuje plik śledzenia Concurrency Visualizer flagę.|
-|[marker_series::write_message — metoda](../profiling/marker-series-write-message-method.md)|Zapisuje komunikat do pliku śledzenia w Wizualizatorze współbieżności.|
+|[marker_series::metoda is_enabled](../profiling/marker-series-is-enabled-method.md)|Określa, czy którakolwiek sesja włączyła dostawcę.|
+|[marker_series::metoda write_alert](../profiling/marker-series-write-alert-method.md)|Zapisuje alert do pliku śledzenia wizualizatora współbieżności.|
+|[marker_series::metoda write_flag](../profiling/marker-series-write-flag-method.md)|Zapisuje flagę do pliku śledzenia wizualizatora współbieżności.|
+|[marker_series::metoda write_message](../profiling/marker-series-write-message-method.md)|Zapisuje komunikat do pliku śledzenia wizualizatora współbieżności.|
 
 ## <a name="inheritance-hierarchy"></a>Hierarchia dziedziczenia
  `marker_series`
@@ -52,7 +52,7 @@ class marker_series;
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkersobj.h*
 
- **Namespace:** CONCURRENCY::Diagnostic —
+ **Obszar nazw:** Współbieżność::dignostyk
 
-## <a name="see-also"></a>Zobacz także
-- [Diagnostic — przestrzeń nazw](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Zobacz też
+- [diagnostyczna przestrzeń nazw](../profiling/diagnostic-namespace.md)

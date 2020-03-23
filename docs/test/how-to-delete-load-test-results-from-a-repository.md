@@ -14,46 +14,46 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26dc9750a2bf2eaf5d0ee5dd3d08485c458bb74a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589061"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Porady: z wynikami testów obciążeniowych usunięcia z repozytorium
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Jak: Usuwanie wyników testu obciążenia z repozytorium
 
-Po uruchomieniu testu obciążenia, informacje, które zostały zebrane podczas uruchomienia jest przechowywane w repozytorium wyników testów obciążenia. Repozytorium to zawiera dane licznika wydajności oraz informacje o wszelkich błędach. Aby uzyskać więcej informacji, zobacz [w repozytorium wyników testów obciążenia z wynikami testów obciążeniowych Zarządzaj](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Po uruchomieniu testu obciążenia informacje, które zostały zebrane podczas uruchamiania są przechowywane w repozytorium wyników testu obciążenia. Repozytorium to zawiera dane licznika wydajności oraz informacje o wszelkich błędach. Aby uzyskać więcej informacji, zobacz [Zarządzanie wynikami testu obciążenia w repozytorium wyników testu obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-Wyniki testu obciążeniowego można zarządzać z edytora testu obciążenia, używając **Otwórz i Zarządzaj wynikami testu obciążenia** okno dialogowe. Można otworzyć, importować, eksportować i usuwać wyniki testu obciążenia.
+Wyniki testów obciążenia można zarządzać z Edytora testów obciążenia za pomocą okna dialogowego **Otwieranie i zarządzanie wynikami testu obciążenia.** Można otwierać, importować, eksportować i usuwać wyniki testów obciążenia.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-delete-results-from-a-repository"></a>Aby usunąć wyniki z repozytorium
 
-1. Od wydajności sieci web i obciążenia projektu testowego, otwórz test obciążenia.
+1. Z projektu testu wydajności sieci web i obciążenia otwórz test obciążenia.
 
-2. Na osadzonym pasku narzędzi wybierz **Otwórz i Zarządzaj wynikami**.
+2. Na osadzonym pasku narzędzi wybierz pozycję **Otwórz i zarządzaj wynikami**.
 
-     **Otwórz i Zarządzaj wynikami testu obciążenia** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Otwieranie wyników testu obciążenia i zarządzanie** nimi.
 
-3. W **wprowadź nazwę kontrolera Aby odnaleźć wyniki testu obciążeniowego**, wybierz kontroler. Wybierz  **\<lokalnie - bez kontrolera >** aby przejść do wyników przechowywanych lokalnie.
+3. W **wprowadź nazwę kontrolera, aby znaleźć wyniki testu obciążenia,** wybierz kontroler. Wybierz ** \<opcję Lokalny — nie>kontrolera,** aby uzyskać dostęp do wyników przechowywanych lokalnie.
 
-4. W **Pokaż wyniki następującego testu obciążeniowego**, zaznacz test obciążeniowy, którego wyniki chcesz wyświetlić. Wybierz  **\<Pokaż wyniki wszystkich testów >** aby zobaczyć wszystkie wyniki wszystkich testów.
+4. W **obszarze Pokaż wyniki dla następującego testu obciążenia**wybierz test obciążenia, którego wyniki chcesz wyświetlić. Wybierz ** \<pokaż wyniki dla wszystkich testów>,** aby wyświetlić wszystkie wyniki dla wszystkich testów.
 
-     Jeśli wyniki testów obciążenia są dostępne, są wyświetlane w **wyniki testu obciążeniowego** listy. Kolumny są **czasu**, **czas trwania**, **użytkownika**, **wynik**, **testu**, i  **Opis elementu**. **Testowanie** zawiera nazwę testu, i **opis** zawiera opcjonalny opis dodawany przed uruchomieniem testu. **Opis** krótkie opisy, które zostały wprowadzone w kolumnie jest wyświetlana **komentarze dotyczące analizy** dla tego wyniku testu.
+     Jeśli wyniki testu obciążenia są dostępne, są one wyświetlane na liście **Wyniki testu obciążenia.** Kolumny to **Czas,** **Czas trwania,** **Użytkownik,** **Wynik,** **Test**i **Opis**. **Test** zawiera nazwę testu, a **opis** zawiera opcjonalny opis, który jest dodawany przed uruchomieniem testu. Kolumna **Opis** wyświetla krótkie opisy, które zostały wprowadzone w **komentarzach do analizy** dla tego wyniku testu.
 
-5. W **wyniki testu obciążeniowego** Wybierz wynik. Możesz użyć **Shift** klucza **Ctrl** klucza i / lub wybrać więcej niż jeden wynik.
+5. Na liście **Wyniki testu obciążenia** wybierz wynik. Za pomocą klawisza **Shift,** **klawisza Ctrl** lub obu można wybrać więcej niż jeden wynik.
 
-6. Wybierz **Usuń**.
+6. Wybierz pozycję **Usuń**.
 
      Wyniki są usuwane z repozytorium.
 
     > [!NOTE]
-    > **Otwórz i Zarządzaj wynikami testu obciążenia** okno dialogowe pozostaje otwarty, po usunięciu wyniki.
+    > Okno dialogowe **Otwieranie wyników testów obciążenia i zarządzanie nimi** pozostaje otwarte po usunięciu wyników.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Porady: z wynikami testów obciążeniowych eksportu z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)
-- [Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Analizowanie wyników testów obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Porady: Importuj wyniki testu obciążenia z repozytorium](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Jak: Eksportowanie wyników testu obciążenia z repozytorium](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Zarządzanie wynikami testu obciążenia w repozytorium wyników testu obciążenia](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Analizowanie wyników testu obciążenia](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Jak: Importowanie wyników testu obciążenia do repozytorium](../test/how-to-import-load-test-results-into-a-repository.md)

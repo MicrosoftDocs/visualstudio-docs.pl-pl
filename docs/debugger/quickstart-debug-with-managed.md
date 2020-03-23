@@ -1,6 +1,6 @@
 ---
-title: Debugowanie kodu zarządzanego | Dokumentacja firmy Microsoft
-description: Debugowanie języka C# lub Visual Basic przy użyciu debugera programu Visual Studio
+title: Kod zarządzany debugowania | Dokumenty firmy Microsoft
+description: Debugowanie języka C# lub visual basic przy użyciu debugera programu Visual Studio
 ms.custom: mvc
 ms.date: 03/18/2018
 ms.topic: quickstart
@@ -13,32 +13,32 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e5495bb1f531db00d43e04cce9f5f771c88cc1a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "65679206"
 ---
-# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: Debugowanie za pomocą C# lub Visual Basic, za pomocą debugera programu Visual Studio
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Szybki start: debugowanie za pomocą języka C# lub Visual Basic przy użyciu debugera programu Visual Studio
 
-Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc w debugowaniu aplikacji. Ten temat zapewnia szybki sposób, aby dowiedzieć się, niektóre z podstawowych funkcji.
+Debuger programu Visual Studio zawiera wiele zaawansowanych funkcji ułatwiające debugowanie aplikacji. W tym temacie przedstawiono szybki sposób, aby dowiedzieć się niektóre z podstawowych funkcji.
 
 ## <a name="create-a-new-project"></a>Tworzenie nowego projektu
 
-1. Otwórz program Visual Studio i Utwórz nowy projekt.
+1. Otwórz program Visual Studio i utwórz nowy projekt.
 
     ::: moniker range=">=vs-2019"
-    Naciśnij klawisz **Esc** aby zamknąć okno rozpoczęcia. Typ **Ctrl + Q** aby otworzyć pole wyszukiwania, wpisz **konsoli**, wybierz **szablony**, następnie wybierz **Utwórz nowy projekt aplikacji konsoli (.NET Core)**. W oknie dialogowym wybierz **Utwórz**.
+    Naciśnij **klawisz Esc,** aby zamknąć okno początkowe. Wpisz **Ctrl + Q,** aby otworzyć pole wyszukiwania, wpisz **konsolę**, wybierz **pozycję Szablony**, a następnie wybierz pozycję **Utwórz nowy projekt aplikacji konsoli (.NET Core).** W wyświetlonym oknie dialogowym wybierz pozycję **Utwórz**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na pasku menu u góry wybierz **pliku** > **New** > **projektu**. W okienku po lewej stronie **nowy projekt** okno dialogowe, w obszarze **Visual C#** , wybierz **platformy .NET Core**, a następnie w środkowym okienku wybierz **Aplikacja konsoli (.NET -Rdzeniowe)**. Następnie wpisz nazwę, takich jak **MyDbgApp** i kliknij przycisk **OK**.
+    Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**. W lewym okienku okna dialogowego **Nowy projekt** w obszarze **Visual C#** wybierz pozycję **.NET Core**, a następnie w środkowym okienku wybierz pozycję Aplikacja konsoli **(.NET Core).** Następnie wpisz nazwę, taką jak **MyDbgApp** i kliknij **przycisk OK**.
     ::: moniker-end
 
-     Jeśli nie widzisz **Aplikacja konsoli (.NET Core)** szablon projektu, przejdź do **narzędzia** > **Pobierz narzędzia i funkcje...** , która otwiera Instalatora programu Visual Studio. Wybierz **programowanie aplikacji klasycznych dla platformy .NET** i **platformy .NET Core** obciążenia, wybierz **Modyfikuj**.
+     Jeśli nie widzisz szablonu projektu **aplikacji konsoli (.NET Core),** przejdź do **pozycji Narzędzia** > **Pobierz narzędzia i funkcje...**, który otwiera Instalator programu Visual Studio. Wybierz program **.NET rozwoju pulpitu** i **.NET Core** obciążenia, a następnie wybierz pozycję **Modyfikuj**.
 
-    Program Visual Studio tworzy projekt.
+    Visual Studio tworzy projekt.
 
-1. W *Program.cs* lub *Module1.vb*, Zastąp następujący kod
+1. W *Program.cs* lub *Module1.vb*należy wymienić następujący kod
 
     ```csharp
     class Program
@@ -56,7 +56,7 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
     End Module
     ```
 
-    przy użyciu tego kodu:
+    z tym kodem:
 
     ```csharp
     class Program
@@ -124,66 +124,66 @@ Debuger programu Visual Studio zapewnia wiele zaawansowanych funkcji, aby pomóc
     ```
 
     > [!NOTE]
-    > W języku Visual Basic, upewnij się, obiekt startowy jest ustawiony na `Sub Main` (**właściwości > aplikacji > Obiekt początkowy**).
+    > W języku Visual Basic upewnij się, `Sub Main` że obiekt startowy jest ustawiony na (**Właściwości > Obiekt uruchamiania aplikacji > ).**
 
-## <a name="set-a-breakpoint"></a>Ustaw punkt przerwania
+## <a name="set-a-breakpoint"></a>Ustawianie punktu przerwania
 
-A *punktu przerwania* jest znacznik, który wskazuje, gdzie program Visual Studio należy wstrzymać działającego kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy nie jest wprowadzenie uruchamiane gałęzi kodu. Jest najbardziej podstawowa funkcja podczas debugowania.
+*Punkt przerwania* jest znacznik, który wskazuje, gdzie Visual Studio należy zawiesić uruchomiony kod, dzięki czemu można spojrzeć na wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu jest coraz uruchamiany. Jest to najbardziej podstawowa funkcja w debugowaniu.
 
-1. Aby ustawić punkt przerwania, kliknij na marginesie po lewej stronie `doWork` wywołania funkcji (lub wybierz linii kodu i naciśnij klawisz **F9**).
+1. Aby ustawić punkt przerwania, kliknij w marginesie `doWork` na marginesie wywołania funkcji (lub wybierz wiersz kodu i naciśnij **klawisz F9**).
 
-    ![Ustaw punkt przerwania](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Ustaw punkt przerwania")
+    ![Ustawianie punktu przerwania](../debugger/media/dbg-qs-set-breakpoint-csharp.png "Ustawianie punktu przerwania")
 
-2. Teraz naciśnij **F5** (lub wybierz **Debuguj > Rozpocznij debugowanie**).
+2. Teraz naciśnij **klawisz F5** (lub wybierz **debugowanie > rozpocznij debugowanie).**
 
-    ![Trafiony punkt przerwania](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "trafia w punkt przerwania")
+    ![Trafienie w punkt przerwania](../debugger/media/dbg-qs-hit-breakpoint-csharp.png "Trafienie w punkt przerwania")
 
-    Wstrzymuje działanie debugera, gdzie ustawić punkt przerwania. Żółta strzałka wskazuje instrukcji, w której zostało wstrzymane wykonanie debugera i aplikacji. Wiersz z `doWork` wywołanie funkcji nie zostało jeszcze wykonane.
+    Debuger wstrzymuje miejsce ustawiania punktu przerwania. Instrukcja, w której debuger i wykonanie aplikacji jest wstrzymana, jest wskazywana przez żółtą strzałkę. Wiersz z `doWork` wywołaniem funkcji nie został jeszcze wykonany.
 
     > [!TIP]
-    > Jeśli punkt przerwania w pętli lub rekursji, lub jeśli masz wiele punktów przerwania, które często krokach, użyj [warunkowego punktu przerwania](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że Twój kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. Warunkowego punktu przerwania, można zaoszczędzić czas i jego może również ułatwić debugowanie problemów, które są trudne do odtworzenia.
+    > Jeśli masz punkt przerwania w pętli lub rekursji lub jeśli masz wiele punktów przerwania, które często krok po kroku, należy użyć [warunkowego punktu przerwania,](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) aby upewnić się, że kod jest zawieszony TYLKO po spełnieniu określonych warunków. Warunkowy punkt przerwania może zaoszczędzić czas i może również ułatwić debugowanie problemów, które są trudne do odtworzenia.
 
-## <a name="navigate-code"></a>Przechodzenie do kodu
+## <a name="navigate-code"></a>Nawigowanie po kodzie
 
-Ma innego polecenia, aby wydać polecenie debugera, aby kontynuować. Przedstawiono polecenia nawigacji przydatne kodu, która jest dostępna, począwszy od programu Visual Studio 2017.
+Istnieją różne polecenia, aby poinstruować debugera, aby kontynuować. Pokazujemy przydatne polecenie nawigacji kodu, które jest dostępne począwszy od programu Visual Studio 2017.
 
-Podczas wstrzymania w punkcie przerwania, umieść kursor nad instrukcji `c1.AddLast(20)` aż zielony **Uruchom do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick") pojawia się, a następnie naciśnij klawisz **Uruchom do kliknięcia** przycisku.
+Po wstrzymaniu w punkcie przerwania `c1.AddLast(20)` umieść wskaźnik myszy na instrukcji, aż pojawi się zielony **przycisk Uruchom, aby kliknąć** przycisk ![Uruchom, aby kliknąć,](../debugger/media/dbg-tour-run-to-click.png "RunToClick (RunToClick)") a następnie naciśnij przycisk **Uruchom, aby kliknąć.**
 
-![Uruchom do kliknięcia](../debugger/media/dbg-qs-run-to-click-csharp.png "Uruchom do kliknięcia")
+![Uruchom, aby kliknąć](../debugger/media/dbg-qs-run-to-click-csharp.png "Uruchom, aby kliknąć")
 
-Aplikacja kontynuuje wykonywanie, wywołanie `doWork`i zatrzymuje się w wierszu kodu, gdy kliknięto przycisk.
+Aplikacja kontynuuje wykonywanie, `doWork`wywoływanie i wstrzymuje wiersz kodu, w którym kliknięno przycisk.
 
-Typowe polecenia klawiatury używane do obejmują Przechodź przez kod **F10** i **F11**. Aby uzyskać więcej szczegółowych instrukcji, zobacz [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md).
+Typowe polecenia klawiatury używane do przechodzenia przez kod obejmują **F10** i **F11**. Aby uzyskać bardziej szczegółowe instrukcje, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
-## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w datatip
+## <a name="inspect-variables-in-a-datatip"></a>Sprawdzanie zmiennych w etykietce danych
 
-1. W bieżącym wierszu kodu (oznaczonych przez wskaźnik wykonania żółty), umieść kursor nad `c1` obiektu myszą, aby pokazać poradzie dotyczącej danych.
+1. W bieżącym wierszu kodu (oznaczone żółtym wskaźnikiem `c1` wykonania) umieść wskaźnik myszy nad obiektem, aby wyświetlić etykietkę danych.
 
-    ![Wyświetl etykietki danych](../debugger/media/dbg-qs-data-tip-csharp.png "wyświetlanie etykietki danych")
+    ![Wyświetlanie etykietki danych](../debugger/media/dbg-qs-data-tip-csharp.png "Wyświetlanie etykietki danych")
 
-    Datatip pokazuje bieżącą wartość `c1` zmiennej i umożliwia inspekcję jego właściwości. Podczas debugowania, jeśli zostanie wyświetlony wartości, który nie powinien, prawdopodobnie masz usterkę w poprzednim lub wywoływania wierszy kodu.
+    Porada data zawiera bieżącą `c1` wartość zmiennej i umożliwia sprawdzenie jej właściwości. Podczas debugowania, jeśli widzisz wartość, której się nie spodziewasz, prawdopodobnie masz błąd w poprzednich lub wywołujących wierszy kodu.
 
-2. Rozwiń etykietka danych, aby wyświetlić bieżące wartości właściwości `c1` obiektu.
+2. Rozwiń poradę danych, aby przyjrzeć `c1` się bieżącym wartościom właściwości obiektu.
 
-3. Jeśli chcesz przypiąć datatip, dzięki czemu możesz zobaczyć wartość `c1` podczas wykonywania kodu, kliknij ikonę pinezki małe. (W dogodnym miejscu może przechodzić przypiętych etykietki danych).
+3. Jeśli chcesz przypiąć etykietkę danych, aby nadal `c1` widzieć wartość podczas wykonywania kodu, kliknij ikonę małego pinezki. (Etykietka przypiętych danych jest ów komfortowa).
 
 ## <a name="edit-code-and-continue-debugging"></a>Edytowanie kodu i kontynuowanie debugowania
 
-Po zidentyfikowaniu zmianę, która ma zostać przetestowana w kodzie, gdy w trakcie sesji debugowania, możesz to zrobić, zbyt.
+Jeśli zidentyfikujesz zmianę, którą chcesz przetestować w kodzie, podczas gdy w środku sesji debugowania, można to zrobić, zbyt.
 
-1. Kliknij pozycję drugiego wystąpienia `c2.First.Value` i zmień `c2.First.Value` do `c2.Last.Value`.
+1. Kliknij drugie wystąpienie `c2.First.Value` `c2.First.Value` i `c2.Last.Value`zmień na .
 
-2. Naciśnij klawisz **F10** (lub **Debuguj > Step Over**) kilka razy, aby poszerzyć debugera i wykonywanie edycji kodu.
+2. Naciśnij kilka razy **klawisz F10** (lub **Debug > Step Over),** aby przejść do debugera i wykonać edytowany kod.
 
-    ![Edytuj i Kontynuuj](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Edytuj i Kontynuuj")
+    ![Edytowanie i kontynuowanie](../debugger/media/dbg-qs-edit-and-continue-csharp.gif "Edytowanie i kontynuowanie")
 
-    **F10** prowadzi instrukcja debugger jeden w danym momencie, ale kroki za pośrednictwem funkcji zamiast przechodzenie krok po kroku do nich (nadal wykonuje kod, który zostanie pominięta).
+    **F10** zaliczki debugera jedną instrukcję naraz, ale kroki nad funkcjami zamiast przechodzenia do nich (kod, który pominąć nadal wykonuje).
 
-Aby uzyskać więcej informacji na temat korzystania z edit-and-continue i ograniczenia dotyczące funkcji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).
+Aby uzyskać więcej informacji na temat korzystania z funkcji i ograniczeń funkcji, zobacz [Edytowanie i kontynuowanie](../debugger/edit-and-continue.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
+W tym samouczku dowiesz się, jak uruchomić debuger, krok po kroku kodu i sprawdzić zmienne. Możesz chcieć uzyskać spojrzenie wysokiego poziomu na funkcje debugera wraz z łączami do większej ilości informacji.
 
 > [!div class="nextstepaction"]
 > [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

@@ -10,121 +10,121 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71128288"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizowanie zużycia zasobów i aktywności wątku interfejsu użytkownika (XAML)
 
-Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji aplikacji dotyczące problemów z wydajnością w aplikacjach XAML. To narzędzie pozwala zwiększyć wydajność aplikacji XAML, pokazując szczegółowy widok wykorzystania zasobów aplikacji. Możesz analizować czas spędzony przez aplikację na przygotowanie ramek interfejsu użytkownika (układ i renderowania), obsługi żądań dysku i sieci oraz w scenariuszach, takich jak uruchamianie aplikacji i ładowanie strony i rozmiar Windows.
+Profiler **osi czasu aplikacji** służy do znajdowania i rozwiązywania problemów z wydajnością związanych z interakcją aplikacji w aplikacjach XAML. To narzędzie pomaga zwiększyć wydajność aplikacji XAML, wyświetlając szczegółowy widok zużycia zasobów aplikacji. Można analizować czas spędzony przez aplikację przygotowując ramki interfejsu użytkownika (układ i renderowanie), obsługę żądań sieciowych i dysków oraz w scenariuszach takich jak Uruchamianie aplikacji, Ładowanie strony i rozmiar systemu Windows.
 
-**Oś czasu aplikacji** jest jednym z narzędzi, można uruchomić z **debugowania** > **Profiler wydajności** polecenia.
+**Oś czasu aplikacji** jest jednym z narzędzi, które można uruchomić z **debugowania** > **wydajności profiler** polecenia.
 
-To narzędzie zastępuje **XAML UI Responsiveness** narzędzie, które było częścią zestawu narzędzi diagnostycznych dla programu Visual Studio 2013.
+To narzędzie zastępuje narzędzie **do reagowania interfejsu użytkownika XAML,** które było częścią zestawu narzędzi diagnostycznych dla programu Visual Studio 2013.
 
-To narzędzie służy na następujących platformach:
+Tego narzędzia można używać na następujących platformach:
 
-- Windows Universal apps (w systemie Windows 10)
+- Uniwersalne aplikacje systemu Windows (w systemie Windows 10)
 - Windows 8.1
-- Windows Presentation Foundation (.Net 4.0 i nowsze)
+- Podstawa prezentacji systemu Windows (.Net 4.0 lub powyżej)
 - Windows 7
 
 > [!NOTE]
-> Można zbierać i analizować dane użycia procesora CPU i dane zużycia energii, wraz z **ApplicationTimeline** danych. Zobacz [uruchamianie narzędzi z lub bez debugera profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+> Można zbierać i analizować dane użycia procesora CPU i dane zużycia energii wraz z danymi **ApplicationTimeline.** Zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="collect-application-timeline-data"></a>Zbieranie danych oś czasu aplikacji
+## <a name="collect-application-timeline-data"></a>Zbieranie danych osi czasu aplikacji
 
-Czas reakcji aplikacji można profilować na komputerze lokalnym, podłączone urządzenie, symulatorze programu Visual Studio lub emulatorach lub urządzenie zdalne. Zobacz [uruchamianie narzędzi z lub bez debugera profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Szybkość reakcji aplikacji można profilować na komputerze lokalnym, podłączonym urządzeniu, symulatorze lub emulatorach programu Visual Studio lub urządzeniu zdalnym. Zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!TIP]
-> Jeśli to możliwe Uruchom aplikację bezpośrednio na urządzeniu. Wydajność aplikacji obserwowana na symulatorze lub za pośrednictwem połączenia pulpitu zdalnego może nie być taka sama jak rzeczywista wydajność na urządzeniu. Z drugiej strony zbieranie danych przy użyciu narzędzia zdalne programu Visual Studio nie ma wpływu na dane wydajności.
+> Jeśli to możliwe, uruchom aplikację bezpośrednio na urządzeniu. Wydajność aplikacji obserwowana w symulatorze lub za pośrednictwem połączenia pulpitu zdalnego może nie być taka sama jak rzeczywista wydajność urządzenia. Z drugiej strony zbieranie danych przy użyciu narzędzi zdalnych programu Visual Studio nie wpływa na dane dotyczące wydajności.
 
 Poniżej przedstawiono podstawowe kroki:
 
 1. Otwórz aplikację XAML.
 
-2. Kliknij przycisk **debugowanie / Profiler wydajności**. Powinien zostać wyświetlony listę narzędzi w oknie .diagsession profilowania.
+2. Kliknij **przycisk Debugowanie / Profiler wydajności**. W oknie .diagsession powinna zostać wyświetlona lista narzędzi profilowania.
 
-3. Wybierz **oś czasu aplikacji** a następnie kliknij przycisk **Start** w dolnej części okna.
+3. Wybierz **pozycję Oś czasu aplikacji,** a następnie kliknij przycisk **Start** u dołu okna.
 
    > [!NOTE]
-   > Może widzieć okno Kontrola konta użytkownika żądaniem udzielenia uprawnienia do uruchamiania *VsEtwCollector.exe*. Kliknij przycisk **Tak**.
+   > Może zostać wyświetlene okno Kontrola konta użytkownika z prośbą o zgodę na uruchomienie *pliku VsEtwCollector.exe*. Kliknij **przycisk Tak**.
 
-4. Uruchom scenariuszu jesteś zainteresowany profilowania w aplikacji, aby zbierać dane dotyczące wydajności.
+4. Uruchom scenariusz, który cię interesuje profilowanie w aplikacji, aby zbierać dane o wydajności.
 
-5. Aby zatrzymać profilowanie, Przełącz do okna .diagsession, a następnie kliknij przycisk **zatrzymać** w górnej części okna.
+5. Aby zatrzymać profilowanie, przełącz się z powrotem do okna .diagsession i kliknij przycisk **Zatrzymaj** w górnej części okna.
 
    Program Visual Studio analizuje zebrane dane i wyświetla wyniki.
 
-   ![Raport programu profilującego osi czasu](../profiling/media/timeline_base.png "TIMELINE_Base")
+   ![Raport profilera osi czasu](../profiling/media/timeline_base.png "TIMELINE_Base")
 
 ## <a name="analyze-timeline-profiling-data"></a>Analizowanie danych profilowania osi czasu
 
 Po zebraniu danych profilowania można wykonać poniższe kroki, aby rozpocząć analizę:
 
-1. Przejrzyj informacje na **wykorzystanie wątku interfejsu użytkownika** i **przepustowość wizualna (kl. / s)** wykresów, a następnie użyj pasków nawigacyjnych osi czasu, aby wybrać zakres czasu do przeanalizowania.
+1. Wyświetl informacje na wykresach **wykorzystania wątku interfejsu użytkownika** i **przepływności wizualnej (FPS),** a następnie użyj pasków nawigacyjnych osi czasu, aby wybrać zakres czasu, który chcesz przeanalizować.
 
-2. Korzystając z informacji podanych w **wykorzystanie wątku interfejsu użytkownika** lub **przepustowość wizualna (kl. / s)** wykresy, sprawdź szczegóły w **szczegóły osi czasu** widok, aby znaleźć możliwe przyczyny Brak seeming czas odpowiedzi.
+2. Korzystając z informacji w **wykorzystaniu wątku interfejsu** użytkownika lub **wizualnej przepływności (FPS)** wykresy, sprawdź szczegóły w widoku **szczegółów osi czasu,** aby znaleźć możliwe przyczyny pozornego braku reakcji.
 
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> Scenariusze, kategorii lub zdarzeń
+### <a name="report-scenarios-categories-and-events"></a><a name="BKMK_Report_scenarios_categories_and_events"></a>Scenariusze raportów, kategorie i zdarzenia
 
-**Oś czasu aplikacji** narzędzie wyświetli dane chronometrażu dla scenariuszy, kategorie i zdarzenia, które są związane z wydajnością XAML.
+**Narzędzie Oś czasu aplikacji** wyświetla dane chronometrażu dla scenariuszy, kategorii i zdarzeń związanych z wydajnością XAML.
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> Oś czasu sesji diagnostycznej
+### <a name="diagnostic-session-timeline"></a><a name="BKMK_Diagnostic_session_timeline"></a>Oś czasu sesji diagnostycznej
 
 ![Oś czasu wydajności i diagnostyki](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
-Linijka u góry strony pokazuje oś czasu dla profilowanych informacji. Ta oś czasu ma zastosowanie do obu **wykorzystanie wątku interfejsu użytkownika** wykresu i **przepustowość wizualna** wykresu. Można zawęzić zakres raportu, przeciągając paski nawigacyjne na osi czasu w celu zaznaczenia segmentu osi czasu.
+Linijka w górnej części strony pokazuje oś czasu dla profilowanych informacji. Ta oś czasu ma zastosowanie zarówno do **wykresu wykorzystania wątku interfejsu** użytkownika, jak i wykresu **przepływności wizualnej.** Można zawęzić zakres raportu, przeciągając paski nawigacyjne na osi czasu w celu zaznaczenia segmentu osi czasu.
 
-Oś czasu są również wyświetlane wstawione znaczniki użytkownika oraz zdarzenia cyklu życia aktywacji aplikacji.
+Na osi czasu są również wyświetlane wszystkie wstawione znaczniki użytkownika oraz zdarzenia cyklu życia aktywacji aplikacji.
 
-### <a name="BKMK_UI_thread_utilization_graph"></a> Wykres wykorzystania wątku interfejsu użytkownika
+### <a name="ui-thread-utilization-graph"></a><a name="BKMK_UI_thread_utilization_graph"></a>Wykres wykorzystania wątku interfejsu użytkownika
 
 ![Wykres wykorzystania procesora CPU](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
-**Wykorzystanie wątku interfejsu użytkownika (%)** wykresu jest wykres słupkowy, który wyświetla względna ilość czasu spędzonego w kategorii, aby w przedziale kolekcji.
+**Wykres wykorzystania wątku interfejsu użytkownika (%)** jest wykresem słupkowym, który wyświetla względną ilość czasu spędzonego w kategorii podczas zakresu kolekcji.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> Wykres przepustowość wizualna (kl. / s)
+### <a name="visual-throughput-fps-graph"></a><a name="BKMK_Visual_throughput_FPS_graph"></a>Wykres przepływności wizualnej (FPS)
 
-![Wykres przepustowość wizualna](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
+![Wykres przepływności wizualnej](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
-**Przepustowość wizualna (kl. / s)** wykres liniowy pokazuje liczbę klatek na sekundę (kl. / s) w wątku interfejsu użytkownika i kompozycję aplikacji.
+Wykres linii **przepływności wizualnej (FPS)** pokazuje klatki na sekundę (FPS) w wątku interfejsu użytkownika i kompozycji dla aplikacji.
 
-### <a name="BKMK_Timeline_details_"></a> Szczegóły osi czasu
+### <a name="timeline-details"></a><a name="BKMK_Timeline_details_"></a>Szczegóły osi czasu
 
-Widok szczegółów jest spędzisz tutaj większość czasu analizowanie raportu. Prezentuje sposób użycia procesora CPU przez aplikację, pogrupowane według podsystemu struktury interfejsu użytkownika lub składnik systemu, który procesor CPU wykorzystany.
+Widok szczegółów to miejsce, w którym spędzasz większość czasu na analizowaniu raportu. Pokazuje użycie procesora CPU przez aplikację sklasyfikowane przez podsystem struktury interfejsu użytkownika lub składnik systemu, który korzystał z procesora CPU.
 
 Obsługiwane są następujące zdarzenia:
 
 |||
 |-|-|
-|**Analiza kodu**|Czas poświęcony na podczas analizowania plików XAML i tworzenia obiektów.<br /><br /> Rozwijanie **analizowanie** w węźle **szczegóły osi czasu** Wyświetla łańcuch zależności wszystkie pliki XAML, które były analizowane z powodu zdarzenia katalogu głównego. Tej porady pozwala zidentyfikować niepotrzebnego pliku podczas analizowania i obiektu tworzenia w scenariuszach poufnych wydajności i zoptymalizować je automatycznie.|
-|**Układ**|W przypadku dużych aplikacji tysięcy elementów mogą być wyświetlane na ekranie, w tym samym czasie. Ten ekran może prowadzić do niskiej szybkości klatek interfejsu użytkownika i czas odpowiedzi aplikacji odpowiednio niska. Zdarzenie układu określają dokładnie koszt układania każdego elementu (oznacza to, że czas spędzony w rozmieszczanie, miary, ApplyTemplate, ArrangeOverride i MeasureOverride). Ale sprzyja wytwarzaniu drzew wizualne, które uczestniczyła w przekazanie układu. Aby określić, które drzewa logiczne, aby oczyścić lub w celu oceny innych mechanizmów opóźnienia, aby zoptymalizować układ subskrypcji — okres próbny, można użyć tej wizualizacji.|
-|**Renderowanie**|Czas poświęcony na rysunku elementów XAML do ekranu.|
-|**I/0**|Czas poświęcony na pobieranie danych z dysku lokalnego lub z zasobów sieciowych, które są dostępne za pośrednictwem [Microsoft Windows Internet (WinINet) interfejsu API](/windows/desktop/WinInet/portal).|
-|**Kod aplikacji**|Czas poświęcony na wykonywanie kodu aplikacji (użytkownik), które nie są związane z analizą składni ani układu.|
-|**XAML — inne**|Czas poświęcony na wykonywanie kodu czasu wykonywania XAML.|
+|**Analizowania**|Czas poświęcony na analizowanie plików XAML i tworzenie obiektów.<br /><br /> Rozwijanie węzła **analizowania** w **szczegółach osi czasu** wyświetla łańcuch zależności wszystkich plików XAML, które zostały przeanalizowane z powodu zdarzenia głównego. Ta wskazówka umożliwia identyfikowanie niepotrzebnych analizowania plików i tworzenia obiektów w scenariuszach uwzględniających wydajność i optymalizowanie ich.|
+|**Układ**|W dużych aplikacjach tysiące elementów mogą być wyświetlane na ekranie w tym samym czasie. Ten wyświetlacz może spowodować niską liczbę klatek na sekundę interfejsu użytkownika i odpowiednio słabą szybkość reakcji aplikacji. Zdarzenie Układ dokładnie określa koszt układania każdego elementu (czyli czas spędzony w Rozmieszczeniu, Miara, ZastosujTemplate, ArrangeOverride i MeasureOverride). Buduje również drzewa wizualne, które brały udział w układzie pass. Ta wizualizacja służy do określenia, które drzewa logiczne do przycinania lub do oceny innych mechanizmów odroczenia w celu optymalizacji przebiegu układu.|
+|**Renderowanie**|Czas poświęcony na rysowanie elementów XAML na ekranie.|
+|**I/0**|Czas poświęcony na pobieranie danych z dysku lokalnego lub z zasobów sieciowych, do których uzyskuje się dostęp za pośrednictwem [interfejsu API Sieci Microsoft Windows (WinINet).](/windows/desktop/WinInet/portal)|
+|**Kod aplikacji**|Czas spędzony na wykonywaniu kodu aplikacji (użytkownika), który nie jest związany z analizowaniem lub układem.|
+|**Xaml Inne**|Czas spędzony na wykonywaniu kodu środowiska wykonawczego XAML.|
 
 > [!TIP]
-> Wybierz **użycie procesora CPU** narzędzia wraz z **oś czasu aplikacji** narzędzia w przypadku uruchamiania profilowania na przeglądanie aplikacji metod, które są wykonywane w wątku interfejsu użytkownika. Przenoszenie kodu aplikacji długotrwałych do wątku w tle może poprawić czas odpowiedzi interfejsu użytkownika.
+> Wybierz narzędzie **Użycie procesora CPU** wraz z narzędziem **Osi czasu aplikacji** po uruchomieniu profilowania, aby wyświetlić metody aplikacji, które są wykonywane w wątku interfejsu użytkownika. Przenoszenie długotrwałego kodu aplikacji do wątku w tle może poprawić szybkość reakcji interfejsu użytkownika.
 
-#### <a name="BKMK_Customizing_Timeline_details_"></a> Dostosowywanie szczegóły osi czasu
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a>Dostosowywanie szczegółów osi czasu
 
-Użyj **szczegóły osi czasu** narzędzi, aby sortowanie, filtrowanie i podaj adnotacje **szczegóły osi czasu** zapisy.
+Pasek narzędzi **Szczegóły osi czasu** służy do sortowania, filtrowania i określania adnotacji wpisów widoku szczegółów osi **czasu.**
 
 |||
 |-|-|
-|**Sortuj według**|Sortuj według czasu rozpoczęcia lub długość zdarzenia.|
-|![Grupuj zdarzenia według ramki](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dodaje lub usuwa najwyższego poziomu **ramki** kategorię, która grupuje zdarzenia przez ramkę.|
-|![Lista szczegółów osi czasu filtrów](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtruje listę według wybranych kategorii i długość zdarzenia.|
-|![Dostosowywanie osi czasu szczegółowe informacje o](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umożliwia określenie adnotacje do zdarzenia.|
+|**Sortuj według**|Sortuj według czasu rozpoczęcia lub długości zdarzeń.|
+|![Grupowanie zdarzeń według ramek](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dodaje lub usuwa kategorię **ramki** najwyższego poziomu, która grupuje zdarzenia według ramek.|
+|![Lista szczegółów oś czasu filtrowania](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtruje listę według wybranych kategorii i długości zdarzeń.|
+|![Dostosowywanie informacji o szczegółach osi czasu](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umożliwia określenie adnotacji zdarzeń.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Blog zespołu WPF: Nowe narzędzie do analizy wydajności interfejsu użytkownika dla aplikacji WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
-- [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Optymalizowanie wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
+- [Najważniejsze wskazówki dotyczące wydajności aplikacji platformy uniwersalnej systemu Windows w językach C++, C#i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
+- [Optymalizacja wydajności aplikacji WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
-- [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)
+- [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

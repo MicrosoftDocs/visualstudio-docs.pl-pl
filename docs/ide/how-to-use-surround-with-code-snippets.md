@@ -1,5 +1,5 @@
 ---
-title: Jak używać fragmentów kodu ze znakiem przestrzenny | Microsoft Docs
+title: Jak używać fragmentów kodu surround-with | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,51 +11,51 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 931ce20ee872a37b8ca7ccccc18714abc7a0e41f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593762"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Instrukcje: używanie fragmentów kodu w cudzysłowie
+# <a name="how-to-use-surround-with-code-snippets"></a>Jak: Używanie fragmentów kodu surround-with
 
-W poniższych procedurach opisano, jak używać fragmentów kodu. Fragmenty kodu przestrzenny są dostępne na trzy sposoby: za pomocą skrótu klawiaturowego, menu **Edycja** i menu kontekstowego.
+W poniższych procedurach opisano sposób używania fragmentów kodu surround-with. Fragmenty kodu surround-with są dostępne na trzy sposoby: za pomocą skrótu klawiaturowego, menu **Edycja** oraz menu po kliknięciu prawym przyciskiem myszy lub menu kontekstowego.
 
-## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Aby użyć fragmentów kodu ze znakiem skrótu klawiaturowego
+## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Aby używać fragmentów kodu surround-with za pomocą skrótu klawiaturowego
 
-1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
+1. W programie Visual Studio IDE otwórz plik, który zamierzasz edytować.
 
-1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
+1. W **Edytorze kodu**zaznacz tekst do dźwięku.
 
-1. Wpisz **ctrl**+**K**, **Ctrl**+**S**.
+1. Wpisz **Ctrl**+**K**, **Ctrl**+**S**.
 
-1. Wybierz fragment kodu z listy fragmentów kodu przy użyciu myszy lub wpisz nazwę fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
+1. Wybierz fragment kodu z listy fragmentów kodu za pomocą myszy lub wpisując nazwę fragmentu kodu i naciskając **klawisz Tab** lub **Enter**.
 
-## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>Aby użyć fragmentów kodu z otaczaniem za pomocą menu Edycja
+## <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>Aby użyć fragmentów kodu surround-with w menu Edycja
 
-1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
+1. W programie Visual Studio IDE otwórz plik, który zamierzasz edytować.
 
-1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
+1. W **Edytorze kodu**zaznacz tekst do dźwięku.
 
-1. Z menu **Edycja** wybierz pozycję **IntelliSense** , a następnie wybierz polecenie **Otocz za pomocą** polecenia.
+1. Z menu **Edycja** wybierz polecenie **IntelliSense,** a następnie wybierz polecenie **Surround With.**
 
-1. Wybierz fragment kodu ze wstawka fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
+1. Wybierz fragment kodu z insertera fragmentu kodu, a następnie naciśnij **klawisz Tab** lub **Enter**.
 
-     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz **Tab** lub **Enter**.
+     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie **nacisnąć klawisz Tab** lub **Enter**.
 
-## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>Aby skorzystać z fragmentów kodu otaczającego i z menu kontekstowego
+## <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>Aby użyć fragmentów kodu surround-with w menu kontekstowym
 
-1. W środowisku IDE programu Visual Studio Otwórz plik, który ma być edytowany.
+1. W programie Visual Studio IDE otwórz plik, który zamierzasz edytować.
 
-1. W **edytorze kodu**wybierz opcję tekst do obprzestrzennia.
+1. W **Edytorze kodu**zaznacz tekst do dźwięku.
 
-1. Kliknij prawym przyciskiem myszy zaznaczony tekst, a następnie wybierz polecenie **Otocz z** menu kontekstowego.
+1. Kliknij prawym przyciskiem myszy zaznaczony tekst, a następnie wybierz polecenie **Surround With** z menu kontekstowego.
 
-1. Wybierz fragment kodu ze wstawka fragmentu kodu, a następnie naciśnij klawisz **Tab** lub **Enter**.
+1. Wybierz fragment kodu z insertera fragmentu kodu, a następnie naciśnij **klawisz Tab** lub **Enter**.
 
-     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie nacisnąć klawisz **Tab** lub **Enter**.
+     Alternatywnie można wpisać nazwę fragmentu kodu, a następnie **nacisnąć klawisz Tab** lub **Enter**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [C#fragmenty kodu](../ide/visual-csharp-code-snippets.md)
+- [Fragmenty kodu języka C#](../ide/visual-csharp-code-snippets.md)
 - [Selektor fragmentów kodu](../ide/reference/code-snippet-picker.md)

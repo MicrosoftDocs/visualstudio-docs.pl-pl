@@ -1,6 +1,6 @@
 ---
-title: Funkcja IntelliSense dla kodu języka R
-description: Funkcji IntelliSense Visual Studio Wyświetla informacje dotyczące funkcji, elementach członkowskich obiektu, fragmenty kodu i uzupełnień, podczas wpisywania kodu R.
+title: IntelliSense dla kodu R
+description: Visual Studio IntelliSense wyświetla informacje o funkcjach, elementy członkowskie obiektu, fragmenty kodu i uzupełnienia podczas wpisywać kod R.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -9,56 +9,56 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999137"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-Funkcji IntelliSense Visual Studio Wyświetla informacje na temat funkcji można wywołać elementy członkowskie obiektów, argumenty funkcji i [fragmenty kodu](code-snippets-for-r.md) bezpośrednio w widoku w taki sposób, jak napisać kod. Ponadto wyświetla możliwe uzupełnienia podczas wpisywania i uzupełnia, gdy użytkownik naciśnie klawisz **kartę** lub **Enter** kluczy (zobacz [opcji edytora](editing-r-code-in-visual-studio.md#editor-options) dla **zaawansowane** karty). Funkcja IntelliSense jest dostępna w edytorze programu i [okna interaktywnego](interactive-repl-for-r-in-visual-studio.md).
+Visual Studio IntelliSense wyświetla informacje o funkcjach, które można wywołać, członków obiektów, argumenty funkcji i [fragmenty kodu](code-snippets-for-r.md) bezpośrednio w widoku podczas pisania kodu. Wyświetla również możliwe uzupełnienia podczas pisania i kończy się po naciśnięciu **klawiszy Tab** lub **Enter** (zobacz [Opcje edytora](editing-r-code-in-visual-studio.md#editor-options) karty **Zaawansowane).** IntelliSense jest dostępny zarówno w edytorze, jak i [w oknie interaktywnym.](interactive-repl-for-r-in-visual-studio.md)
 
-![Funkcja IntelliSense, wyświetlanie sygnatura funkcji](media/intellisense-function-signature.png)
+![IntelliSense z podpisem funkcji](media/intellisense-function-signature.png)
 
-Podczas pisania funkcji lub innych instrukcji, technologia IntelliSense zawiera automatyczne uzupełnianie menu filtrowane (case-sensitively), co wprowadzono już:
+Podczas wpisywania funkcji lub innej instrukcji intelliSense udostępnia menu automatycznego uzupełniania filtrowane (z uwzględnieniem wielkości liter) według tego, co już wprowadzono:
 
-![Menu automatycznego uzupełniania IntelliSense](media/intellisense-auto-complete-menu.png)
+![Menu automatycznego uzupełniania intellisense](media/intellisense-auto-complete-menu.png)
 
-Naciśnięcie klawisza **kartę** (lub **Enter**, lub **miejsca**, w zależności od konfiguracji opcji), wstawia elementu wybranego na liście rozwijanej. Możesz zmienić wybór, za pomocą klawiszy strzałek.
+Naciśnięcie **klawisza Tab** (lub **Enter**, lub **Spacja**, w zależności od sposobu ustawiania opcji) powoduje wstawienie elementu wybranego z listy rozwijanej. Zaznaczenie można zmieniać za pomocą klawiszy strzałek.
 
-Funkcja IntelliSense zawiera też propozycje dla uczestników programu R obiektów:
+IntelliSense zawiera również sugestie dla członków obiektów R:
 
-![Sugestie funkcji IntelliSense dla elementów członkowskich obiektu](media/intellisense-auto-complete-r-objects.png)
+![Sugestie intellisense dla elementów członkowskich obiektów](media/intellisense-auto-complete-r-objects.png)
 
-Naciśnięcie klawisza **ESC** całkowicie odrzuci menu. Połącz Utwórz kopię zapasową przy użyciu **Ctrl**+**miejsca**.
+Naciśnięcie **klawisza ESC** powoduje całkowite odrzucenie menu. Możesz go przywrócić za pomocą **klawisza Ctrl**+**Space**.
 
-Wpisywanie otwarcia `(` dla funkcji wywołania wstawia zamykającym `)` i wyświetlenie pomocy dotyczącej sygnatur, jak pokazano wcześniej:
+Wpisanie otworu `(` dla wywołania funkcji `)` powoduje wstawienie zamknięcia i wyświetlenie pomocy podpisu, jak pokazano wcześniej:
 
-![Pomocy dotyczącej sygnatur funkcji IntelliSense dla funkcji](media/intellisense-function-signature.png)
+![Pomoc dotycząca podpisu IntelliSense dla funkcji](media/intellisense-function-signature.png)
 
-Ponownie **ESC** odrzuci okno podręczne; dla sygnatury funkcji, można przenieść go ponownie przy użyciu **Ctrl**+**Shift**+**miejsca** .
+Ponownie **ESC** odrzuca wyskakujące okienko; dla podpisów funkcji, można go ponownie przywołać za pomocą **klawisza Ctrl**+**Shift**+**Space**.
 
 > [!Tip]
-> Jeśli parametr pomocy ukrycie tekstowe podrzędne, naciśnij i przytrzymaj **Ctrl** , aby parametr półprzezroczyste tekst pomocy.
+> Jeśli pomoc w parametrach zasłania tekst pod nim, naciśnij i przytrzymaj klawisz **Ctrl,** aby tekst pomocy parametru był przezroczysty.
 
-## <a name="intellisense-for-user-defined-functions-and-variables"></a>Funkcja IntelliSense dla zmiennych i funkcji zdefiniowanych przez użytkownika
+## <a name="intellisense-for-user-defined-functions-and-variables"></a>IntelliSense dla funkcji i zmiennych zdefiniowanych przez użytkownika
 
-Funkcja IntelliSense dotyczy funkcje zdefiniowane przez użytkownika, w tym samym pliku, uzupełnianie parametr name:
+IntelliSense ma zastosowanie do funkcji zdefiniowanych przez użytkownika w tym samym pliku, w tym uzupełniania parametrów nazwy:
 
-![Funkcja IntelliSense dla funkcji zdefiniowanych przez użytkownika](media/intellisense-same-file-functions.png)
+![IntelliSense dla funkcji zdefiniowanych przez użytkownika](media/intellisense-same-file-functions.png)
 
-![Uzupełnianie parametrów przez funkcję IntelliSense dla funkcji zdefiniowanych przez użytkownika](media/intellisense-parameter-completion.png)
+![Uzupełnianie parametrów IntelliSense dla funkcji zdefiniowanych przez użytkownika](media/intellisense-parameter-completion.png)
 
-Funkcja IntelliSense ma zastosowanie również w przypadku zmiennych, w tym samym pliku i bieżącej sesji:
+IntelliSense ma również zastosowanie do zmiennych w tym samym pliku i bieżącej sesji:
 
-![Zmienna uzupełnianie przez funkcję IntelliSense](media/intellisense-variable-completion.png)
+![Zakończenie zmiennej IntelliSense](media/intellisense-variable-completion.png)
 
 > [!Note]
-> W oknie interaktywnym IntelliSense uwzględnia tylko nazwy w bieżącej sesji języka R: i ignoruje pliki w projekcie.
+> W oknie interaktywnym intellisense uwzględnia tylko nazwy w bieżącej sesji języka R i ignoruje pliki w projekcie.
 
 ## <a name="code-suggestions"></a>Sugestie dotyczące kodu
 
-Gdy żarówka (nazywane tagu inteligentnego) pojawi się na marginesie, Visual Studio sugeruje dostępne dla często używanych akcji to skrót. Na przykład, umieść kursor nad wiersz, który zawiera `library` instrukcji w edytorze, aby zobaczyć żarówki. Wybranie ikony żarówki powoduje wyświetlenie dostępnych opcji:
+Gdy żarówka (nazywana tagiem inteligentnym) pojawia się na marginesie, program Visual Studio sugeruje, że istnieje skrót dostępny dla często używanej akcji. Na przykład umieść wskaźnik myszy `library` na wierszu zawierającym instrukcję w edytorze, aby wyświetlić żarówkę. Wybór dostępnych opcji wyświetlania żarówki:
 
-![Tagi inteligentne dla języka R w edytorze](media/intellisense-smart-tags.png)
+![Tagi inteligentne dla R w edytorze](media/intellisense-smart-tags.png)

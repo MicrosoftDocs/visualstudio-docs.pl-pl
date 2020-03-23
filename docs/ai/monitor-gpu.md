@@ -8,21 +8,21 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: f455a1cbfbad58ebe724c879837e161954cf4be2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62560951"
 ---
-# <a name="monitoring-gpu-utilization"></a>Monitorowanie użycia procesora GPU
+# <a name="monitoring-gpu-utilization"></a>Monitorowanie wykorzystania gpu
 
-Aby monitorować użycie procesora GPU zdalnego maszyn z systemem Linux:
+Aby monitorować wykorzystanie gpu zdalnych maszyn z systemem Linux:
 
-1. W **Eksploratora serwera**, rozwiń węzeł **maszynach zdalnych**.
-2. **Kliknij prawym przyciskiem myszy** komputer zdalny, którą chcesz monitorować.
+1. W **Eksploratorze serwera**rozwiń węzeł **Maszyny zdalne**.
+2. **Kliknij prawym przyciskiem myszy** komputer zdalny, który chcesz monitorować.
 
-    ![mapy cieplnej procesora GPU](media/monitor-gpu/gpu-heatmap-0.png)
+    ![mapa cieplna gpu](media/monitor-gpu/gpu-heatmap-0.png)
 
-3. Kliknij przycisk **Pokaż mapę cieplną**.
+3. Kliknij **pozycję Pokaż mapę cieplną**.
 
-    ![mapy cieplnej procesora GPU](media/monitor-gpu/heatmap.png)
+    ![mapa cieplna gpu](media/monitor-gpu/heatmap.png)

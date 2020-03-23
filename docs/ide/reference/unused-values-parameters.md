@@ -11,36 +11,36 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531874"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>Nieużywane przypisania wartości, zmienne i parametry
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 - Visual Basic
 
-**Co:** Powoduje zanikanie nieużywanych parametrów out i generuje ostrzeżenie dla wyrażenia nieużywanych wartości. Kompilator wykonuje też analizę przepływu, aby znaleźć wszystkich przypisań nieużywanej wartości. Nieużywane zanikanie wartości przypisania i żarówka pojawia się za pomocą [szybka akcja](../quick-actions.md) można usunąć nadmiarowe przypisania. Nieużywane zmienne przy użyciu wartości nieznany Pokaż [szybka akcja](../quick-actions.md) sugestiami użycia [odrzuca](/dotnet/csharp/discards) zamiast tego. (Odrzucenia są tymczasowego, fikcyjnego zmiennych, które są celowo nieużywane w kodzie aplikacji. Mogą zmniejszyć alokacji pamięci i sprawić, że kod jest łatwiejsza do odczytania.)
+**Co:** Zanika nieużywane parametry i generuje ostrzeżenie dla nieużywanych wartości wyrażeń. Kompilator wykonuje również analizę przepływu, aby znaleźć wszystkie nieużywane przypisania wartości. Nieużywane przypisania wartości zanikają, a żarówka pojawi się z [szybką akcją,](../quick-actions.md) aby usunąć nadmiarowe przypisanie. Nieużywane zmienne o nieznanych wartościach pokazują sugestię [szybkiej akcji,](../quick-actions.md) aby zamiast tego użyć [odrzutów.](/dotnet/csharp/discards) (Odrzuty są tymczasowe, fikcyjne zmienne, które są celowo nieużywane w kodzie aplikacji. Mogą one zmniejszyć alokację pamięci i ułatwić odczytanie kodu.)
 
-**Kiedy:** Masz przypisań wartości, parametry i wartości wyrażenia, które nigdy nie są używane.
+**Kiedy:** Masz przypisania wartości, parametry lub wartości wyrażeń, które nigdy nie są używane.
 
-**Dlaczego:** Czasami trudno stwierdzić, jeśli przypisanie wartości, zmienna lub parametr jest już używany. Wygaszanie te wartości lub zostanie wygenerowane ostrzeżenie, możesz uzyskać wizualną jaki kod, możesz usunąć.
+**Dlaczego?** Czasami trudno jest stwierdzić, czy przypisanie wartości, zmienna lub parametr nie jest już używany. Zanikanie tych wartości lub generowanie ostrzeżenia, otrzymasz wizualną wskazówkę, jaki kod można usunąć.
 
-## <a name="unused-expression-values-and-parameters-diagnostic"></a>Wyrażenie nieużywanych wartości i parametry diagnostyczne
+## <a name="unused-expression-values-and-parameters-diagnostic"></a>Nieużywane wartości i parametry diagnostyczne
 
-1. Mieć żadnych przypisanie wartości, zmienna lub parametr, który nie jest używany.
-2. Przypisanie nieużywanej wartości lub parametr pojawia się rozmytą się. Wartość wyrażenia nieużywane generuje ostrzeżenie.
+1. Mieć dowolne przypisanie wartości, zmienną lub parametr, który nie jest używany.
+2. Nieużywane przypisanie wartości lub parametr wydaje się wyblakłe. Nieużywane wyrażenie wartość generuje ostrzeżenie.
 
-  ![Nieużywany parametr](media/unused-parameter.png)
-  ![nieużywanej wartości](media/unused-value.png)
-  ![przypisania nieużywanej wartości](media/unused-value-assignment.png)
-  ![odrzucenia nieużywanej wartości](media/unused-value-discard.png)
+  ![Nieużywane](media/unused-parameter.png)
+  ![parametry Nieużywane](media/unused-value.png)
+  ![wartości](media/unused-value-assignment.png)
+  ![Nieużywane przypisanie wartości Nieużywane odrzucić wartość](media/unused-value-discard.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)

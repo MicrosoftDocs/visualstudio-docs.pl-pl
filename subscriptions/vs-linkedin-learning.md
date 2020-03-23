@@ -1,102 +1,102 @@
 ---
-title: Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio | Microsoft Docs
+title: Korzyści z uczenia się linkedin w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 02/12/2020
 ms.topic: conceptual
-description: Dowiedz się więcej na temat korzyści z uczenia serwisu LinkedIn dostępnych w ramach subskrypcji usługi LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
+description: Dowiedz się więcej o korzyściach linkedin learning zawartych w ramach subskrypcji LinkedIn Premium zawartej w wybranych subskrypcjach programu Visual Studio.
 ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "77278850"
 ---
-# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyść szkoleniowa serwisu LinkedIn w ramach subskrypcji programu Visual Studio
+# <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Korzyści linkedin learning w subskrypcjach programu Visual Studio
 
-Odblokuj możliwości serwisu LinkedIn, aby uzyskać dostęp do osób, szczegółowych informacji i umiejętności potrzebnych do rozwoju kariery.  Poznaj najpopularniejsze umiejętności technologiczne, techniczne i kreatywne od ekspertów branżowych.
+Uwolnij moc LinkedIn dzięki dostępowi do ludzi, spostrzeżeń i umiejętności potrzebnych do rozwoju kariery.  Poznaj najbardziej poszukiwane umiejętności biznesowe, techniczne i kreatywne od ekspertów z branży.
 
-Wybrane subskrypcje programu Visual Studio obejmują subskrypcję usługi LinkedIn Premium, która obejmuje uczenie serwisu LinkedIn.  Długość subskrypcji w warstwie Premium zależy od typu posiadanej subskrypcji programu Visual Studio.
-Aby skorzystać z zalet uczenia LinkedIn, musisz mieć konto LinkedIn.  Jeśli jeszcze tego nie zrobiono, będziesz mieć możliwość utworzenia go przed aktywowaniem subskrypcji Premium.
+Wybrane subskrypcje programu Visual Studio obejmują subskrypcję usługi LinkedIn Premium, która obejmuje usługi LinkedIn Learning.  Długość subskrypcji premium zależy od typu subskrypcji programu Visual Studio, który masz.
+Aby skorzystać z usługi LinkedIn Learning, musisz mieć konto LinkedIn.  Jeśli jeszcze go nie masz, będziesz mieć szansę na jego utworzenie przed aktywacją subskrypcji Premium.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-Aby aktywować subskrypcję serwisu LinkedIn Premium i korzyść uczenia serwisu LinkedIn:
-1. Zaloguj się do witryny [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Aby aktywować subskrypcję LinkedIn Premium i korzyści linkedin learning:
+1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
 
-2. Znajdź kafelek uczenie serwisu LinkedIn w kategorii Edukacja i kliknij link **Pobierz kod** .
+2. Znajdź kafelek LinkedIn Learning w kategorii Edukacja i kliknij łącze **Pobierz kod.**
    > [!div class="mx-imgBorder"]
-   > ![kafelka korzyści z uczenia LinkedIn](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
+   > ![Kafelek korzyści szkoleniowych linkedin](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
 
-3. Jeśli masz już konto w serwisie LinkedIn i użytkownik jest zalogowany automatycznie, natychmiast nastąpi przekierowanie do strony aktywacji do korzystania z serwisu LinkedIn.  Jeśli masz konto LinkedIn, ale nie zalogowano się automatycznie, po prostu wprowadź nazwę użytkownika i hasło, a następnie kliknij przycisk **Zaloguj**.  Przejdź do [tego kroku](#activate-your-offer) , aby aktywować ofertę.
+3. Jeśli masz już konto LinkedIn i zalogujesz się automatycznie, natychmiast przejdziesz do strony aktywacji korzyści LinkedIn Learning.  Jeśli masz konto LinkedIn, ale nie jesteś automatycznie zalogowany, po prostu wprowadź swoją nazwę użytkownika i hasło, a następnie kliknij przycisk **Zaloguj**się .  Przejdź do [tego kroku,](#activate-your-offer) aby aktywować swoją ofertę.
 
-### <a name="create-a-linkedin-account"></a>Tworzenie konta LinkedIn
-4. Jeśli nie masz jeszcze konta LinkedIn, kliknij pozycję **Dołącz teraz**.
+### <a name="create-a-linkedin-account"></a>Tworzenie konta linkedin
+4. Jeśli nie masz jeszcze konta LinkedIn, kliknij dołącz **teraz**.
 
-5. Wprowadź swoje dane osobowe, wybierz nazwę użytkownika i hasło, a następnie kliknij pozycję **Dołącz teraz**.
+5. Wprowadź swoje dane osobowe, wybierz nazwę użytkownika i hasło, a następnie kliknij dołącz **teraz**.
 
-6. Określ swój kraj i kod pocztowy, a następnie kliknij przycisk **dalej**.
+6. Określ swój kraj i kod pocztowy, a następnie kliknij przycisk **Dalej**.
 
-7. Następnie podajmy pewne informacje dotyczące Twojego profilu.  Wskaż, czy jesteś uczniem, i podaj najnowszy tytuł zadania, firmę i branżę.
+7. Następnie podasz kilka informacji o sobie dla swojego profilu.  Określ, czy jesteś studentem, i podaj swój najnowszy tytuł pracy, firmę i branżę.
 
-8. W tym kroku będziesz mieć możliwość zidentyfikowania interesujących Cię obszarów.  Aby przyspieszyć proces tworzenia konta, kliknij przycisk **nie Zadbaj jeszcze.  Jestem otwarty** .  (Można później identyfikować interesujące Cię obszary).
+8. W tym kroku będziesz miał okazję zidentyfikować interesujące Cię obszary.  Aby przyspieszyć proces tworzenia konta, kliknij **jeszcze nie masz pewności.  Jestem otwarty!**  (Obszary zainteresowania można zidentyfikować później).
 
-9. Gdy podałeś swój adres e-mail, zostanie wysłany komunikat zawierający kod potwierdzający.  Komunikat pochodzi z "komunikatów LinkedIn".  Jeśli nie znajdujesz się w skrzynce odbiorczej, Sprawdź foldery wiadomości-śmieci.  Wprowadź kod z wiadomości i kliknij przycisk **Weryfikuj**.
+9. Po podaniu adresu e-mail została wysłana wiadomość zawierająca kod potwierdzający.  Wiadomość pochodzi z "Wiadomości Linkedin".  Jeśli nie znajdziesz go w skrzynce odbiorczej, sprawdź foldery wiadomości-śmieci.  Wprowadź kod z wiadomości i kliknij przycisk **Zweryfikuj**.
 
-10. Jeśli chcesz zaimportować kontakty z wprowadzonego wcześniej konta e-mail, możesz to zrobić teraz.  W przeciwnym razie kliknij przycisk **Pomiń**. (Jeśli zdecydujesz się pominąć ten krok, zostanie wyświetlony monit o potwierdzenie wyboru.  Kliknij przycisk **tak**.
+10. Jeśli chcesz zaimportować kontakty z konta e-mail wprowadzonego wcześniej, możesz to zrobić teraz.  W przeciwnym razie kliknij przycisk **Pomiń**. (Jeśli zdecydujesz się pominąć ten krok, zostaniesz poproszony o potwierdzenie wyboru.  Kliknij **przycisk Tak.**
 
-11. Alerty zadań umożliwiają otrzymywanie powiadomień o zadaniach w Twoim regionie, które mogą być odpowiednie dla Ciebie.  Możesz ustawić alert zadania teraz lub pominąć ten krok, aby kontynuować tworzenie konta.
+11. Powiadomienia o ofertach pracy umożliwiają powiadamianie o zadaniach w Twojej okolicy, które mogą być dla Ciebie odpowiednie.  Możesz teraz ustawić alert o pracy lub pominąć ten krok, aby kontynuować tworzenie konta.
 
-12. Na podstawie preferencji i danych osobowych, które zostały podane do tej pory, zobaczysz wybór zalecanych połączeń, aby rozpocząć tworzenie sieci.  Możesz wybrać opcję dodania połączeń lub pominąć ten krok.
+12. Na podstawie preferencji i informacji osobistych, które podałeś do tej pory, zobaczysz wybór zalecanych połączeń, aby rozpocząć tworzenie sieci.  Można dodać połączenia lub pominąć ten krok.
 
-13. Aby dodać zdjęcie do swojego profilu, kliknij przycisk **Przekaż zdjęcie**.  W przeciwnym razie można pominąć ten krok.  (Zawsze możesz dodać zdjęcie później).
+13. Aby dodać zdjęcie do swojego profilu, kliknij **przycisk Przekaż zdjęcie**.  W przeciwnym razie można pominąć ten krok.  (Zawsze możesz dodać zdjęcie później).
 
-14. Aplikację LinkedIn można pobrać na telefon w celu uzyskania dostępu do sieci w dowolnym miejscu.  Możesz wysłać link do telefonu lub pobrać bezpośrednio ze sklepu App Store lub Google Play.  Możesz również kliknąć przycisk **dalej** , aby pominąć ten krok teraz i pobrać aplikację później.
+14. Możesz pobrać aplikację LinkedIn na telefon, aby mieć dostęp do sieci w dowolnym miejscu.  Możesz wysłać link do telefonu lub pobrać bezpośrednio ze sklepu App Store lub Google Play.  Możesz również kliknąć przycisk **Dalej,** aby teraz pominąć ten krok, a następnie pobrać aplikację później.
 
-### <a name="activate-your-offer"></a>Aktywuj ofertę
-15. Teraz, po zalogowaniu się do konta usługi LinkedIn lub utworzeniu nowego, możesz zacząć aktywować subskrypcję Premium i zacząć uczenie się w serwisie LinkedIn.  Kliknij pozycję **Aktywuj ofertę**.
+### <a name="activate-your-offer"></a>Aktywuj swoją ofertę
+15. Teraz, gdy zalogujesz się na swoje konto LinkedIn lub utworzysz nowe, możesz aktywować subskrypcję Premium i zacząć korzystać z LinkedIn Learning.  Kliknij **aktywuj ofertę**.
    > [!div class="mx-imgBorder"]
-   > ![Aktywuj uczenie w serwisie LinkedIn](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![LinkedIn Learning Aktywuj](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-16. Możesz rozpocząć Eksplorowanie interesujących Cię umiejętności.  Wybierz z listy zaleceń, Wyszukaj inne umiejętności lub kliknij pozycję **Pomiń** , aby kontynuować bez wybierania umiejętności.
+16. Możesz rozpocząć odkrywanie umiejętności, które Cię interesują.  Wybierz z listy rekomendacji, wyszukaj inne umiejętności lub kliknij **pomiń,** aby kontynuować bez wybierania umiejętności.
    > [!div class="mx-imgBorder"]
-   > ![umiejętności uczenia w serwisie LinkedIn](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![Umiejętności uczenia się na LinkedIn](_img/vs-linkedin/vs-linkedin-skills.png)
 
-17. Pomyślnie aktywowano ofertę subskrypcji Premium i teraz możesz zacząć korzystać z uczenia serwisu LinkedIn i innych korzyści oferowanych przez usługę Premium!
+17. Pomyślnie aktywowałeś swoją ofertę subskrypcji Premium i możesz teraz zacząć korzystać z LinkedIn Learning i wszystkich innych korzyści premium!
    > [!div class="mx-imgBorder"]
-   > ![domu uczenia LinkedIn](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![Strona główna uczenia się na LinkedIn](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
-## <a name="eligibility"></a>Kryteria
+## <a name="eligibility"></a>Kwalifikowalności
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnej?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
-| Visual Studio Professional (standardowa) | VL, Azure, Retail                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja | 3 miesiące      | Nie.  Dostępne tylko dla nowych subskrybentów         |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                            |  Nie dotyczy         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              | Nie dotyczy         |
+| Visual Studio Enterprise (standard)   | VL, Azure, Retail, wybrane NFR<sup>1</sup> | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Enterprise z gitHub Enterprise   | Vl | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |
+| Visual Studio Professional (standard) | VL, Azure, Handel detaliczny                                       | 3 miesiące                                                            |Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Professional z gitHub Enterprise | Vl | 3 miesiące      | Nie.  Dostępne tylko dla nowych subskrybentów         |
+| Visual Studio Test Professional (standard)                         | VL, Handel detaliczny                                              | Niedostępne                                            |  Nie dotyczy         |
+| Platformy MSDN (standard)                                          | VL, Handel detaliczny                                              | Niedostępne                                              | Nie dotyczy         |
 | Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure                                       | Niedostępne                                                           |Nie dotyczy|
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), program Visual Studio Industry partner (VSIP).  Wyklucza: Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  MCT & usług.*
+<sup>1</sup>  *Zawiera: Nie do odsprzedaży (NFR), Visual Studio Industry Partner (VSIP).  Wykluczenia: Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już rocznych subskrypcji programu Visual Studio Professional i rocznych subskrypcji programu Visual Studio Enterprise w subskrypcjach w chmurze. Nie będzie żadnych zmian w istniejącym doświadczeniu klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) aby przejść do eksplorowania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
-### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Jeśli odnowię subskrypcję, czy Twoje korzyści z uczenia w serwisie LinkedIn również zostały odnowione?
-Odp.: nie, oferta szkoleniowa serwisu LinkedIn jest dostępna tylko dla nowych subskrybentów.
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Czy jeśli odnowię subskrypcję, moja usługa LinkedIn Learning również zostanie odnowiona?
+O: Nie, oferta LinkedIn Learning jest dostępna tylko dla nowych subskrybentów.
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy dotyczącej uczenia LinkedIn?  Zapoznaj się z następującymi zasobami:
-  - Pomoc przy [korzystaniu z uczenia LinkedIn](https://www.linkedin.com/help/learning).
-  - Zapoznaj się z ogólnymi pytaniami dotyczącymi [serwisu LinkedIn](https://www.linkedin.com/help/linkedin) , takimi jak tworzenie kont i profilów oraz utrzymywanie sieci.
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Zasoby pomocnicze
+- Potrzebujesz pomocy w linkedin learning?  Zapoznaj się z tymi zasobami:
+  - Pomoc [w korzystaniu](https://www.linkedin.com/help/learning)z usługi LinkedIn Learning .
+  - Pomoc w zakresie ogólnych pytań dotyczących [usługi LinkedIn,](https://www.linkedin.com/help/linkedin) takich jak tworzenie kont i profili oraz utrzymywanie sieci.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Zapoznaj się z pozostałymi korzyściami z subskrypcji. Odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Zapoznaj się z pozostałymi zaletami zawartymi w subskrypcji. Odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach subskrypcji, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek platformy Azure w kategorii narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać swoje środki na korzystanie z platformy Azure DevTest.
+Jeśli nie aktywowałeś jeszcze indywidualnej korzyści kredytowej usługi Azure DevTest, która pochodzi z subskrypcji, odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek Platformy Azure w kategorii Narzędzia, aby skonfigurować subskrypcję platformy Azure i zrealizować indywidualny kredyt usługi Azure DevTest.

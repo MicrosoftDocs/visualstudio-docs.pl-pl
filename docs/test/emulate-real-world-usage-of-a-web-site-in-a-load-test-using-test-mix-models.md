@@ -1,5 +1,5 @@
 ---
-title: Emulowanie rzeczywistego użycia witryny sieci Web na potrzeby testowania obciążenia
+title: Emulacja rzeczywistego wykorzystania strony internetowej do testowania obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,38 +10,38 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589607"
 ---
-# <a name="test-mix-models-overview"></a>Przegląd modeli testów mieszanych
+# <a name="test-mix-models-overview"></a>Przegląd modeli miksu testowego
 
-Opcja Załaduj model umożliwia dokładniejsze przewidywalność rzeczywistego użycia witryny sieci Web lub aplikacji, które są testowane. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na precyzyjnym modelu obciążenia, może generować błędne wyniki.
+Opcje modelowania ładowania służą do dokładniejszego przewidywania oczekiwanego rzeczywistego użycia witryny sieci Web lub aplikacji, które są testowania obciążenia. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na dokładnym modelu obciążenia, może generować mylące wyniki.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="test-mix-model-enhancements"></a>Ulepszenia modelu testu mieszanego
+## <a name="test-mix-model-enhancements"></a>Ulepszenia modelu miksu testowego
 
-Korzystając z Edytor testu obciążeniowego lub Kreatora testów modelu testowego, można określić następujące typy testów mieszanych dla scenariusza testu obciążenia. Aby uzyskać więcej informacji, zobacz [Zmiana modelu testu mieszanego w scenariuszu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+Za pomocą Edytora testów obciążenia lub kreatora modelu mix testu, można określić następujące typy testu wymieszać dla scenariusza testu obciążenia. Aby uzyskać więcej informacji, zobacz [Zmienianie modelu miksu testowego w scenariuszu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-Można określić jedną z następujących opcji model testu mieszanego, dla scenariusza testu obciążenia:
+Można określić jedną z następujących opcji modelu testu dla scenariusza testu obciążenia:
 
-- **Na podstawie całkowitej liczby testów:** Określa, który test wydajności lub jednostki w sieci web jest uruchamiany, gdy wirtualny użytkownik rozpoczyna iterację testu. Na koniec testu obciążenia, ile razy określony przebieg testu pasuje do przypisanego rozkładu testowego. Ten model testu mieszanego należy użyć, gdy test mieszany jest tworzony na transakcji, określonym w dzienniku IIS lub w danych produkcyjnych. Aby uzyskać więcej informacji, zobacz [procent w oparciu o uruchomione testy](#BasedOnTestsStarted).
+- **Na podstawie całkowitej liczby testów:** Określa, który test wydajności sieci web lub jednostki jest uruchamiany, gdy użytkownik wirtualny rozpoczyna iterację testową. Na końcu testu obciążenia liczba razy, że określone uruchomienie testu dopasowane przypisany rozkład testu. Użyj tego modelu mix testu, gdy opierasz mix testu na procentach transakcji w dzienniku IIS lub w danych produkcyjnych. Aby uzyskać więcej informacji, zobacz [Wartość procentowa na podstawie rozpoczętych testów](#BasedOnTestsStarted).
 
-- **Na podstawie liczby użytkowników wirtualnych:** Określa procent wirtualnych użytkowników, którzy uruchomią namierzenie internetowego testu wydajności lub jednostki. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu pasuje do przypisanego rozkładu. Użyj tego modelu testu mieszanego, gdy tworzysz test mieszany na procent użytkowników, którzy uruchamiają określony test. Aby uzyskać więcej informacji, zobacz [procent na podstawie użytkowników wirtualnych](#PercentageBasedonVirtualUsers).
+- **Na podstawie liczby użytkowników wirtualnych:** Określa procent użytkowników wirtualnych, którzy będą uruchamiać określoną wydajność sieci web lub test jednostkowy. W dowolnym momencie testu obciążenia liczba użytkowników, którzy są uruchomione określonego testu odpowiada przypisanej dystrybucji. Użyj tego modelu mix testu, gdy są oparte mix testu na procent użytkowników, którzy są uruchomione określonego testu. Aby uzyskać więcej informacji, zobacz [Wartość procentowa na podstawie użytkowników wirtualnych](#PercentageBasedonVirtualUsers).
 
-- **Na podstawie tempa użytkownika:** czasie trwania testu obciążeniowego każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników, na godzinę. Ten model testu mieszanego należy użyć, jeśli chcesz, aby wirtualni użytkownicy uruchamiali test w konkretnym tempie przez cały test obciążeniowy. Aby uzyskać więcej informacji, zobacz [tempem test mix](#PacingTestMix).
+- **Na podstawie tempa użytkownika:** W trakcie testu obciążenia każdy test wydajności sieci web lub test jednostkowy jest uruchamiany określoną liczbę razy na użytkowników na godzinę. Użyj tego modelu mix testu, jeśli chcesz, aby użytkownicy wirtualni uruchomić test w określonym tempie przez cały test obciążenia. Aby uzyskać więcej informacji, zobacz [tempo testu mix](#PacingTestMix).
 
     > [!TIP]
-    > Kiedy wybierasz **procentowy test mieszany** i wybierasz **wartość procentową na podstawie użytkowników wirtualnych**? Różnica między tymi dwoma opcjami jest ważna, gdy niektóre testy w teście mieszanym mają znacznie dłuższy czas trwania niż inne testy. W takiej sytuacji należy prawdopodobnie wybrać **wartość procentową na podstawie użytkowników wirtualnych**. Wybór ten pozwala uniknąć przebiegu testowego, w którym prawdopodobieństwo zwiększy się, że zbyt wielu użytkowników będzie uruchamiać testy długotrwałe. Jeśli jednak wszystkie testy mają podobne czasy trwania, można bezpiecznie wybrać **Procent testu mieszanego**.
+    > Kiedy wybierasz **procentową kombinację testów** i kiedy wybierzesz **wartość procentową na podstawie wirtualnych użytkowników?** Różnica między tymi dwoma wyborami jest ważne, gdy niektóre testy w zestawieniu testowym mają znacznie dłuższy czas trwania niż inne testy. W tej sytuacji prawdopodobnie należy wybrać **wartość procentową na podstawie wirtualnych użytkowników**. Ten wybór pomaga uniknąć przebiegu testowego, w którym prawdopodobieństwo wzrasta, że zbyt wielu użytkowników będzie działać testy długoterminowe. Jeśli jednak wszystkie testy mają podobny czas trwania, można bezpieczniej wybrać **procentową mieszankę testu**.
 
-- **Na podstawie w kolejności sekwencyjnej:** każdy wirtualny użytkownik uruchamia testy wydajności lub jednostki sieci web w kolejności, że testy są zdefiniowane w tym scenariuszu. Wirtualny użytkownik kontynuuje, okrągło testów w następującej kolejności do czasu ukończenia testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [kolejność sekwencyjna](#SequentialOrder).
+- **Na podstawie kolejności:** Każdy użytkownik wirtualny uruchamia wydajność sieci web lub testy jednostkowe w kolejności, w. Użytkownik wirtualny kontynuuje przechodzenie do pracy w tej kolejności podczas wykonywania testów w tej kolejności. Aby uzyskać więcej informacji, zobacz [Kolejność sekwencyjna](#SequentialOrder).
 
-### <a name="BasedOnTestsStarted"></a>Procent w oparciu o uruchomione testy
+### <a name="percentage-based-on-tests-started"></a><a name="BasedOnTestsStarted"></a>Procent na podstawie rozpoczętych testów
 
-Dla każdego testu w połączeniu można określić wartość procentową, która określa, jak często test jest wybierany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
+Dla każdego testu w mieszance można określić wartość procentową, która określa, jak często test jest wybierany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
 
 - TestA (50%)
 
@@ -49,64 +49,64 @@ Dla każdego testu w połączeniu można określić wartość procentową, któr
 
 - TestC (15%)
 
-Jeśli używasz tego ustawienia, następnym testem do uruchomienia jest na podstawie przypisanych wartości procentowych. Należy to zrobić bez uwzględniania liczby użytkowników wirtualnych, którzy aktualnie uruchamiają poszczególne testy.
+Jeśli używasz tego ustawienia, następny test do uruchomienia jest oparty na przypisanych wartościach procentowych. Można to zrobić bez uwzględnienia liczby użytkowników wirtualnych, którzy są obecnie uruchomione każdego testu.
 
-### <a name="PercentageBasedonVirtualUsers"></a>Wartość procentowa w oparciu o użytkowników wirtualnych
-Ten model testu mieszanego określa procent wirtualnych użytkowników, którzy będą uruchamiać określony test. W przypadku korzystania z tego modelu testu mieszanego następnym testem do uruchomienia jest nie tylko na przypisanych wartościach procentowych, ale również w procentach wirtualnych użytkowników, którzy aktualnie używają określonego testu. W każdym punkcie testu obciążenia liczba użytkowników, którzy uruchamiali określony test, dopasowuje się do przypisanej dystrybucji tak jak to możliwe.
+### <a name="percentage-based-on-virtual-users"></a><a name="PercentageBasedonVirtualUsers"></a>Procent na podstawie użytkowników wirtualnych
+Ten model testu mix określa procent użytkowników wirtualnych, którzy uruchomią określonego testu. Jeśli używasz tego modelu testu mix, następny test do uruchomienia opiera się nie tylko na przypisane wartości procentowe, ale także na procent użytkowników wirtualnych, którzy są obecnie uruchomione określonego testu. W dowolnym momencie testu obciążenia liczba użytkowników, którzy są uruchomione określonego testu odpowiada przypisanej dystrybucji tak ściśle, jak to możliwe.
 
-### <a name="PacingTestMix"></a>Mieszany test tempem
+### <a name="pacing-test-mix"></a><a name="PacingTestMix"></a>Mieszanka testowa tempa
 
-Jeśli określisz test tempem, ustawisz współczynnik wykonywania testów dla każdego wirtualnego użytkownika dla każdego testu w teście mieszanym. Dla każdego testu Ta stawka jest wyrażona jako testy wykonywane przez użytkownika wirtualnego na godzinę. Na przykład można przypisać następujący test tempem do następujących testów:
+Jeśli określisz tempo testu mix, można ustawić szybkość wykonywania testu dla każdego użytkownika wirtualnego dla każdego testu w zestawieniu testu. Dla każdego testu ta stawka jest wyrażona jako testy uruchamiane na użytkownika wirtualnego na godzinę. Na przykład można przypisać następujące tempo testu mix do następujących testów:
 
-- A: 4 testy na użytkownika na godzinę
+- TestA: 4 testy na użytkownika na godzinę
 
 - TestB: 2 testy na użytkownika na godzinę
 
-- TestC: testy 0,125 na użytkownika na godzinę
+- TestC: 0,125 testów na użytkownika na godzinę
 
-Jeśli używasz modelu testowego tempem, aparat środowiska uruchomieniowego testu obciążenia gwarantuje, że rzeczywista częstotliwość uruchamiania testów jest mniejsza lub równa określonej szybkości. Jeśli testy są zbyt długie dla przypisanej liczby, zostanie zwrócony błąd.
+Jeśli używasz modelu mix testu tempa, aparat środowiska uruchomieniowego testu obciążenia gwarantuje, że rzeczywista szybkość, z jaką testy są uruchamiane jest mniejsza lub równa określonej szybkości. Jeśli testy są trwać zbyt długo, aby przypisany numer został ukończony, zwracany jest błąd.
 
-Ustawienie **czas reakcji między iteracjami testu** nie ma zastosowania, gdy jest używany test tempem.
+Think **Time Between Test Iteracji** ustawienie nie ma zastosowania, gdy używasz mix testu tempa.
 
-#### <a name="apply-distribution-to-pacing-delay"></a>Zastosuj rozkład do opóźnienia tempem
-Wartość właściwości **Zastosuj dystrybucję do tempem** w scenariuszu testu obciążenia można ustawić na wartość true lub false:
+#### <a name="apply-distribution-to-pacing-delay"></a>Stosowanie dystrybucji do opóźnienia tempa
+Wartość zastosuj **dystrybucję do pacing delay** właściwości w scenariuszu testu obciążenia można ustawić na true lub false:
 
-- **Prawda**: w scenariuszu będą stosowane typowe opóźnienia dystrybucji statystycznej określone przez wartość w kolumnie **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** . Aby uzyskać więcej informacji, zobacz [Edit Text mix models, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Prawda:** Scenariusz zastosuje typowe opóźnienia dystrybucji statystycznej określone przez wartość w **testach na godzinę** kolumny w oknie dialogowym **Edytuj miks testowy.** Aby uzyskać więcej informacji, zobacz [Edytowanie modeli miksu tekstu, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego.](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 
-   Załóżmy na przykład, że masz **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** dla testu ustawionego na 2 użytkowników na godzinę. Jeśli właściwość **Zastosuj dystrybucję do tempem** jest ustawiona na **wartość true**, typowa dystrybucja statystyczna jest stosowana do czasu oczekiwania między testami. Testy będą nadal działały 2 testy na godzinę, ale nie musi to być 30 minut między nimi. Pierwszy test może działać po upływie 4 minut, a drugi test po 45 minutach.
+   Załóżmy na przykład, że masz **testy na użytkownika na godzinę** wartość w oknie dialogowym Edytuj mix **testu** dla zestawu testów do 2 użytkowników na godzinę. Jeśli **zastosuj dystrybucję do pacing delay** właściwość jest ustawiona na **True,** typowy rozkład statystyczny jest stosowany do czasu oczekiwania między testami. Testy będą nadal uruchamiać 2 testy na godzinę, ale niekoniecznie będzie to 30 minut między nimi. Pierwszy test mógł zostać uruchomiony po 4 minutach, a drugi po 45 minutach.
 
-- **Fałsz**: testy będą uruchamiane w określonym tempie określonym dla wartości w kolumnie **testy na użytkownika na godzinę** w oknie dialogowym **Edycja testu mieszanego** . Aby uzyskać więcej informacji, zobacz [Edit Text mix models, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False:** Testy będą uruchamiane w określonym tempie określonym dla wartości w **testach na godzinę** kolumny w oknie dialogowym **Edytuj miks testowy.** Aby uzyskać więcej informacji, zobacz [Edytowanie modeli miksu tekstu, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego.](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 
-   Załóżmy na przykład, że masz **testy na użytkownika na godzinę** w oknie dialogowym **Edytowanie testu mieszanego** dla testu ustawionego na 2 użytkowników na godzinę. Jeśli właściwość **Zastosuj dystrybucję do tempem** jest ustawiona na **false (FAŁSZ**), oznacza to, że po uruchomieniu testów nie ma Leeway. Test będzie uruchamiany co 30 minut. Daje to pewność, że wykonujesz 2 testy na godzinę.
+   Załóżmy na przykład, że masz **testy na użytkownika na godzinę** wartość w oknie dialogowym Edytuj mix **testu** dla zestawu testów do 2 użytkowników na godzinę. Jeśli **Zastosuj dystrybucji do pacing delay** właściwość jest **ustawiona**na False , są w zasadzie daje nie ma swobody podczas uruchamiania testów. Test będzie uruchamiany co 30 minut. To sprawia, że należy wykonać 2 testy na godzinę.
 
-  Aby uzyskać więcej informacji, zobacz [jak: stosowanie dystrybucji do opóźnień tempem podczas korzystania z modelu mieszanego testów użycia](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Aby uzyskać więcej informacji, zobacz [Jak: Stosowanie dystrybucji do opóźnienia tempa podczas korzystania z modelu miksowania testu tempa użytkownika](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-### <a name="SequentialOrder"></a>Porządek sekwencyjny
-Wybranie opcji kolejność testów sekwencyjnych spowoduje, że każdy użytkownik wirtualny uruchomi wszystkie testy w scenariuszu w kolejności, w jakiej testy zostały zdefiniowane.
+### <a name="sequential-order"></a><a name="SequentialOrder"></a>Kolejności
+Wybranie na podstawie kolejności testu sekwencyjnego kolejność opcji sprawia, że każdy użytkownik wirtualny uruchomić wszystkie testy w scenariuszu w kolejności, w kolejności, w zależności od testów zostały zdefiniowane.
 
-## <a name="test-iterations-property"></a>Właściwość iteracji testu
-We właściwościach parametrów uruchomieniowych można określić wartość dla właściwości iteracje testu. Ta wartość jest liczbą iteracji testowych do uruchomienia w teście obciążenia. Po rozpoczęciu określonej liczby iteracji testowych nie zostaną uruchomione żadne dodatkowe iteracje testu pomimo ustawień dowolnego profilu ładowania. Po zakończeniu liczby podanych iteracji testowych, test obciążenia kończy się. Aby uzyskać więcej informacji, zobacz [How to: Określanie liczby iteracji testowych w ustawieniu uruchomieniowym](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+## <a name="test-iterations-property"></a>Właściwość iteracji testowych
+We właściwościach Uruchom ustawienia można określić wartość właściwości Test Iterations. Ta wartość jest liczbą iteracji testu do uruchomienia w teście obciążenia. Po uruchomieniu określonej liczby iteracji testowych nie zostanie uruchomiona żadna dodatkowa iteracje testowe pomimo ustawień któregokolwiek z profilów obciążenia. Po zakończeniu określonej liczby iteracji testowych kończy się test obciążenia. Aby uzyskać więcej informacji, zobacz [Jak: Określanie liczby iteracji testowych w ustawieniu uruchamiania](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
-## <a name="initialize-and-terminate-tests"></a>Zainicjuj i Przerwij testy
-Możesz wybrać testy do uruchomienia na początku i na końcu sesji testowania obciążenia każdego użytkownika wirtualnego. Aby uzyskać więcej informacji, zobacz [Edit Text mix models, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+## <a name="initialize-and-terminate-tests"></a>Inicjowanie i przerywanie testów
+Można wybrać testy do uruchomienia na początku i na końcu sesji testowania obciążenia każdego użytkownika wirtualnego. Aby uzyskać więcej informacji, zobacz [Edytowanie modeli miksu tekstu, aby określić prawdopodobieństwo uruchomienia testu przez użytkownika wirtualnego.](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 
-- **Zainicjuj test**. Ten test jest uruchamiany przez każdego użytkownika wirtualnego przed uruchomieniem któregokolwiek z testów w teście mieszanym.
+- **Zainicjować test**. Ten test jest uruchamiany przez każdego użytkownika wirtualnego przed uruchomieniem dowolnego z testów w zestawieniu testowym.
 
-- **Przerwij test**. Ten test jest uruchamiany po uruchomieniu wszystkich testów dla określonego użytkownika wirtualnego.
+- **Zakończ test**. Ten test jest uruchamiany po uruchomieniu wszystkich testów dla określonego użytkownika wirtualnego.
 
-  Należy zwrócić uwagę na następujące informacje dotyczące testu inicjowania i zakończenia testu:
+  Należy zwrócić uwagę na następujące informacje na temat testu inicjowania i testu zakończenia:
 
-- Czas trwania testu obciążenia można określić według czasu, a nie liczby iteracji. W tym przypadku po zakończeniu przebiegu testu obciążenia, test zakończenia nie zostanie uruchomiony.
+- Można określić czas trwania testu obciążenia według czasu, a nie według liczby iteracji. W takim przypadku po zakończeniu trwania przebiegu testu obciążenia, test zakończenia nie zostanie uruchomiony.
 
-- Jeśli test inicjalizacji jest testem jednostkowym lub testem wydajności sieci Web, stanem TestContext lub WebTestContext, obiekt po zakończeniu testu inicjowania jest zapisywany. Będzie on używany jako kontekst początkowy dla iteracji testów w teście mieszanym.
+- Jeśli test inicjowania jest test jednostkowy lub test wydajności sieci web, stan TestContext lub WebTestContext, obiekt po zakończeniu testu inicjowania jest zapisywany. Następnie będzie używany jako kontekst początkowy dla iteracji testów w zestawieniu testowym.
 
-- Nowi użytkownicy, zgodnie z definicją wyrażoną w procentach właściwości scenariusza nowych użytkowników, zawsze wykonują testy inicjacji, jedną iterację testu z mieszanego testu i zakończenia testu.
+- Nowi użytkownicy, zgodnie z definicją w właściwości scenariusza Procent nowych użytkowników, zawsze wykonać test inicjowania, jedną iterację testu z testu mix i testu zakończenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
-- [Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Edytuj test mieszany, aby określić, które testy, aby uwzględnić w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
-- [Właściwości scenariusza testów obciążenia](../test/load-test-scenario-properties.md)
-- [Zmiana modelu testu mieszanego w scenariuszu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Edytowanie modeli mieszania tekstu w celu określenia prawdopodobieństwa uruchomienia testu przez użytkownika wirtualnego](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Edytowanie wzorców obciążenia w celu modelowania działań użytkownika wirtualnego](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Edytuj kombinację testów, aby określić, które testy mają być uwzględniane w scenariuszu testu obciążenia](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
+- [Konfigurowanie ustawień przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Właściwości scenariusza testu obciążenia](../test/load-test-scenario-properties.md)
+- [Zmienianie modelu miksu testowego w scenariuszu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

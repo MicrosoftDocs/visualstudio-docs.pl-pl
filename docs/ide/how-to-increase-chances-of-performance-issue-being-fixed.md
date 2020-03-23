@@ -1,77 +1,77 @@
 ---
-title: Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
+title: W jaki sposób można zwiększyć szanse na naprawiony problem z wydajnością
 description: Dodatkowe informacje i najlepsze rozwiązania dotyczące przesyłania problemów z wydajnością w programie Visual Studio
 author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
 ms.openlocfilehash: 119de27298acafee7dc563a30246b18da42f9f29
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75918160"
 ---
-# <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na rozwiązywanie problemów z wydajnością
+# <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Jak zwiększyć szanse na naprawiony problem z wydajnością
 
-Narzędzie "[Zgłoś problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania wielu problemów. Zespół programu Visual Studio plamuje trendy awarii i spowolnienia w zakresie opinii użytkowników i rozwiązuje problemy, które mają wpływ na rozległą Swath użytkowników. Im bardziej funkcjonalny jest konkretny bilet opinii, tym bardziej prawdopodobnie zostanie on zdiagnozowany i rozwiązany szybko przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania w zakresie zgłaszania problemów dotyczących awarii lub spowolnienia w celu zwiększenia możliwości podejmowania działań.
+Narzędzie["Zgłoś problem"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)jest szeroko używane przez użytkowników programu Visual Studio do zgłaszania szeregu problemów. Zespół programu Visual Studio dostrzega trendy awarii i spowolnienia w opiniach użytkowników i rozwiązuje problemy wpływające na szeroki pokos użytkowników. Im bardziej zasysanym jest konkretny bilet na opinię, tym większe prawdopodobieństwo, że zostanie on szybko zdiagnozowany i rozwiązany przez zespół produktu. W tym dokumencie opisano najlepsze rozwiązania podczas zgłaszania problemów z awarią lub spowolnieniem, aby uczynić je bardziej użytecznymi.
 
 ## <a name="general-best-practices"></a>Ogólne najlepsze praktyki
 
-Program Visual Studio to duża, złożona platforma, która obsługuje wiele języków, typów projektów, platform i nie tylko. Sposób działania jest funkcją, w której składniki są instalowane i aktywne w sesji, zainstalowane rozszerzenia, ustawienia programu Visual Studio, Konfiguracja komputera i na końcu kształtu edytowanego kodu. Mając na względzie liczbę zmiennych, trudno jest stwierdzić, czy raport o problemach z jednego użytkownika ma ten sam problem jako raport o problemie od innego użytkownika, chociaż widoczny objaw jest taki sam. Z tego względu niektóre najlepsze rozwiązania mają na celu zagwarantowanie, że konkretny raport o problemie ma większe prawdopodobieństwo zdiagnozowania.
+Visual Studio to duża, złożona platforma, która obsługuje wiele języków, typów projektów, platform i innych. Jak to działa jest funkcja, która składniki są zainstalowane i aktywne w sesji, rozszerzenia zainstalowane, ustawienia programu Visual Studio, konfiguracja komputera i wreszcie kształt kodu, który jest edytowany. Biorąc pod uwagę liczbę zmiennych, trudno jest stwierdzić, czy raport o problemie od jednego użytkownika ma ten sam podstawowy problem co raport o problemie od innego użytkownika, nawet jeśli widoczny objaw jest taki sam. Biorąc pod uwagę, że, oto kilka najlepszych praktyk, aby upewnić się, że konkretny raport problem ma większe prawdopodobieństwo zdiagnozowania.
 
-**Podaj jak określony tytuł**
+**Podaj jak najbardziej konkretny tytuł**
 
-Poszukaj unikatowych podpisów zgłaszanego problemu i Dołącz możliwie jak najwięcej w tytule. Jeśli tytuł jest opisowy, jest mniej dobry, że użytkownicy z niepowiązanymi problemami (ale ten sam objaw) będą głosować lub komentować bilet, co sprawia, że diagnozowanie *problemu jest* trudniejsze.
+Poszukaj różnych podpisów dla zgłaszanych problemów i uwzględnij w tytule jak najwięcej. Jeśli tytuł jest opisowy, jest mniej prawdopodobne, że użytkownicy z niepowiązanych problemów (ale ten sam powierzchowny objaw) będzie głosować lub komentować bilet, co utrudnia diagnozę *problemu.*
 
-**W razie wątpliwości Zarejestruj nowy raport o problemie**
+**W razie wątpliwości zarejestruj nowy raport o problemie**
 
-Wiele problemów może nie mieć żadnych odrębnych podpisów ani kroków do odtworzenia. W takich przypadkach nowy raport jest lepszy niż zagłosowanie lub komentarz dotyczący innego raportu, który zgłasza podobny *objaw*zewnętrzny. W zależności od typu raportu Dołącz do raportu dodatkowe pliki diagnostyczne zgodnie z opisem w dalszej części tego dokumentu.
+Wiele problemów może nie mieć żadnych charakterystycznych podpisów lub kroków do odtworzenia. W takich przypadkach nowy raport jest lepszy niż głos lub komentarz do innego raportu, który zgłasza podobny *objaw*zewnętrzny . W zależności od typu raportu dołącz dodatkowe pliki diagnostyczne do raportu, zgodnie z opisem w dalszej części tego dokumentu.
 
 **Najlepsze rozwiązania dotyczące problemów**
 
-Poniżej opisano problemy, które trudno zdiagnozować bez prawidłowych plików diagnostycznych. Po zidentyfikowaniu przypadku, który najlepiej opisuje Twój problem, postępuj zgodnie z instrukcjami dotyczącymi opinii specyficznymi dla tego przypadku.
+Opisane poniżej są problemy, które są trudne do zdiagnozowania bez dobrych plików diagnostycznych. Po zidentyfikowaniu sprawy, która najlepiej opisuje problem, wykonaj kroki opinii specyficzne dla tej sprawy.
 
 -   [Awarie:](#crashes) Awaria występuje, gdy proces (Visual Studio) kończy się nieoczekiwanie.
 
--   Brak [odpowiedzi:](#unresponsiveness) VS przestaje odpowiadać przez dłuższy czas.
+-   [Brak reakcji:](#unresponsiveness) VS przestaje odpowiadać przez dłuższy czas.
 
--   [Problemy z spowolnieniem:](#slowness-and-high-cpu-issues) Każda określona akcja w programie VS jest wolniejsza niż wymagana
+-   [Problemy z powolnością:](#slowness-and-high-cpu-issues) Każda określona akcja w vs jest wolniejsza niż pożądana
 
--   [Wysoki procesor CPU:](#slowness-and-high-cpu-issues) Rozszerzone okresy nieoczekiwanie wysokiego użycia procesora CPU
+-   [Wysoki procesor:](#slowness-and-high-cpu-issues) Wydłużone okresy nieoczekiwanie wysokiego zużycia procesora
 
--   [Problemy pozaprocesowe:](#out-of-process-issues) Problem spowodowany przez proces satelitarny programu Visual Studio
+-   [Problemy poza procesem:](#out-of-process-issues) Problem spowodowany procesem satelitarnym programu Visual Studio
 
-## <a name="crashes"></a>Stąp
+## <a name="crashes"></a>Ulega awarii
 Awaria występuje, gdy proces (Visual Studio) kończy się nieoczekiwanie.
 
-**Bezpośrednie odtwarzalne awarie**
+**Bezpośrednio powtarzalne awarie**
 
-Bezpośrednie odtwarzalne awarie to przypadki, które mają wszystkie następujące cechy:
+Bezpośrednio powtarzalne awarie to przypadki, które mają wszystkie następujące cechy:
 
-- Mogą być obserwowane przez następujący znany zestaw kroków
+- Można zaobserwować, wykonując znany zestaw kroków
 
-- Mogą być zaobserwowane na wielu komputerach (jeśli są dostępne)
+- Można zaobserwować na wielu komputerach (jeśli są dostępne)
 
-- Może być odtwarzany w przykładowym kodzie lub w projekcie, który może być połączony lub udostępniony jako część opinii (Jeśli kroki obejmują Otwieranie projektu lub dokumentu)
+- Może być powielana w przykładowym kodzie lub projekcie, który może być połączony lub dostarczony jako część opinii (jeśli kroki obejmują otwarcie projektu lub dokumentu)
 
-Aby uzyskać te problemy, wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i pamiętaj, aby uwzględnić następujące informacje:
+W przypadku tych problemów wykonaj kroki opisane w["Jak zgłosić problem"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)i pamiętaj o uwzględnienie:
 
--   Kroki prowadzące do odtworzenia problemu
+-   Kroki, aby odtworzyć problem
 
--   Autonomiczny projekt Odtwórz, zgodnie z powyższym opisem. Jeśli autonomiczna Odtwórz nie jest możliwa, należy dołączyć:
+-   Samodzielny projekt repro, jak opisano powyżej. Jeśli samodzielne repro nie jest możliwe, dołącz:
 
-    -   Język otwartych projektów (C\#, C++itp.)
+    -   Język otwartych projektów (C,\#C++, itp.)
 
-    -   Rodzaj projektu (Aplikacja konsolowa, ASP.NET itp.)
+    -   Rodzaj projektu (aplikacja konsoli, ASP.NET itp.)
 
 
 > [!NOTE]
-> **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zestaw kroków służących do odtworzenia problemu wraz z przykładowym kodem źródłowym.
+> **Najcenniejsze opinie:** W tym przypadku najbardziej cenne opinie jest zestaw kroków do odtworzenia problemu wraz z przykładowego kodu źródłowego.
 
 **Nieznane awarie**
 
-Jeśli nie masz pewności, co jest przyczyną awarii lub wydaje się losowo, możesz przechwycić zrzuty lokalnie za każdym razem, gdy program Visual Studio ulegnie awarii i dołączyć je do oddzielnych elementów opinii. Aby zaoszczędzić zrzuty lokalnie podczas awarii programu Visual Studio, uruchom następujące polecenia w oknie polecenia administratora:
+Jeśli nie masz pewności, co jest przyczyną awarii lub wydają się losowe, następnie można przechwycić zrzuty lokalnie za każdym razem, gdy program Visual Studio ulega awarii i dołączyć je do oddzielnych elementów opinii. Aby zapisać zrzuty lokalnie po awarii programu Visual Studio, uruchom następujące polecenia w oknie polecenia administratora:
 
 ```
 reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
@@ -87,114 +87,114 @@ reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\Windows Error
 Reporting\\LocalDumps\\devenv.exe" /v DumpFolder /t REG_SZ /d "C:\\CrashDumps"
 ```
 
-Dostosuj liczbę zrzutów i folder zrzutów odpowiednio do potrzeb. Więcej informacji na temat tych ustawień znajduje się w [tym miejscu](/windows/win32/wer/collecting-user-mode-dumps).
+Dostosuj liczbę zrzutów i folder zrzutu, zgodnie z potrzebami. Więcej informacji na temat tych ustawień można [znaleźć tutaj](/windows/win32/wer/collecting-user-mode-dumps).
 
 > [!NOTE]
-> Zrzuty przechwycone przy użyciu Menedżera zadań mogą mieć nieprawidłową liczbę bitów, co sprawia, że są one mniej użyteczne. Opisana powyżej procedura jest preferowanym sposobem przechwytywania zrzutu sterty. Jeśli chcesz użyć Menedżera zadań, Zamknij ten, który jest aktualnie uruchomiony, uruchom Menedżera zadań 32-bitowe (% windir%\\syswow64\\polecenia taskmgr. exe) i zbierz z niego zrzut sterty.
+> Zrzuty przechwycone za pomocą Menedżera zadań mogą być niewłaściwym bitness, co sprawia, że mniej użyteczne. Procedura opisana powyżej jest preferowanym sposobem przechwytywania zrzutu sterty. Jeśli chcesz użyć Menedżera zadań, zamknij ten, który jest aktualnie uruchomiony, uruchom 32-bitowego Menedżera zadań (%windir%\\syswow64\\taskmgr.exe) i zbierz stamtąd zrzut sterty.
 
 > [!NOTE] 
-> Każdy plik zrzutu utworzony przez tę metodę będzie miał rozmiar do 4 GB. Upewnij się, że ustawisz DumpFolder do lokalizacji z odpowiednią ilością miejsca na dysku, lub odpowiednio Dostosuj DumpCount.
+> Każdy plik zrzutu wyprodukowany przez tę metodę będzie miał rozmiar do 4 GB. Upewnij się, aby ustawić DumpFolder do lokalizacji z odpowiednią przestrzeń dysku lub odpowiednio dostosować DumpCount.
 
-Za każdym razem, gdy program Visual Studio ulega awarii, utworzy plik zrzutu **devenv. exe. [ Number]. dmp** plik w skonfigurowanej lokalizacji.
+Za każdym razem, gdy program Visual Studio ulega awarii, utworzy plik zrzutu **devenv.exe.[ w** skonfigurowanym pliku dmp w skonfigurowanym miejscu.
 
-Następnie użyj programu Visual Studio "Zgłoś problem..." ona. Umożliwi to dołączenie odpowiedniego zrzutu.
+Następnie użyj programu Visual Studio "Zgłoś problem..." Funkcji. To pozwoli ci dołączyć odpowiedni zrzut.
 
-1.  Zlokalizuj plik zrzutu dla zgłaszanej awarii (Poszukaj pliku o poprawnym czasie tworzenia)
+1.  Znajdź plik zrzutu dla zgłaszanego awarii (poszukaj pliku z poprawnym czasem tworzenia)
 
-2.  Jeśli to możliwe, należy pliku zip (\*. zip), aby zmniejszyć jego rozmiar przed przesłaniem opinii
+2.  Jeśli to możliwe,\*skompresuj plik (.zip), aby zmniejszyć jego rozmiar przed przesłaniem opinii
 
-3.  Wykonaj kroki opisane w temacie "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" i Dołącz zrzut sterty do nowego elementu opinii.
+3.  Wykonaj kroki opisane w "[Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)", i dołącz zrzut sterty do nowego elementu opinii.
 
 > [!NOTE] 
-> **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zrzut sterty przechwytywany w chwili awarii.
+> **Najcenniejsze opinie:** W tym przypadku najcenniejsze informacje zwrotne to zrzut sterty przechwycony w momencie awarii.
 
-## <a name="unresponsiveness"></a>Braku
+## <a name="unresponsiveness"></a>Brak reakcji
 VS przestaje odpowiadać przez dłuższy czas.
 
-**Bezpośrednia odtwarzalność braku odpowiedzi**
+**Bezpośrednio powtarzalna brak reakcji**
 
-Zgodnie z opisem w odpowiedniej sekcji dotyczącej awarii, w przypadku problemów, które można łatwo odtworzyć, były widoczne na wielu maszynach i mogą być prezentowane w małych przykładach, najbardziej cenne raporty dotyczące opinii to te, które obejmują kroki umożliwiające odtworzenie problemu i uwzględnienie przykładowy kod źródłowy, który pokazuje problem.
+Jak opisano w odpowiedniej sekcji dotyczącej awarii, w przypadku problemów, które można łatwo odtworzyć, widoczne na wielu komputerach i można je wykazać w małej próbce, najcenniejsze raporty zwrotne to te, które zawierają kroki mające na celu odtworzenie problemu i obejmują przykładowy kod źródłowy, który pokazuje problem.
 
-**Nieznana nieodpowiadający czas**
+**Nieznana niereaguje**
 
-Jeśli manifesty nieodpowiadające są w sposób nieprzewidywalny, w następnym wystąpieniu Uruchom nowe wystąpienie programu Visual Studio i Zgłoś problem z tego wystąpienia.
-Na [ekranie "rekord"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)upewnij się, że wybrano sesję programu Visual Studio, która nie odpowiada.
+Jeśli brak odpowiedzi objawia się w nieprzewidywalny sposób, w następnym wystąpieniu uruchom nowe wystąpienie programu Visual Studio i zgłoś problem z tego wystąpienia.
+Na [ekranie "Rekord"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)należy wybrać sesję programu Visual Studio, która nie odpowiada.
 
-Jeśli wystąpienie programu Visual Studio, które nie odpowiada, zostało uruchomione w trybie administratora, drugie wystąpienie należy również uruchomić w trybie administratora.
-
->[!NOTE] 
-> **Najbardziej cenna opinia:** W takim przypadku najbardziej cenną opinią jest zrzut sterty przechwytywany w czasie braku odpowiedzi.
-
-## <a name="slowness-and-high-cpu-issues"></a>Spowolnienie i wysokie problemy z procesorem CPU
-
-Co sprawia, że zbyt niska lub wysokie wykorzystanie procesora CPU jest najbardziej funkcjonalny, jest to ślad wydajności przechwytywany, gdy trwa powolne działanie lub wysokie zdarzenie procesora CPU.
+Jeśli wystąpienie programu Visual Studio, które nie odpowiada został uruchomiony w trybie administratora, a następnie drugie wystąpienie również muszą zostać uruchomione w trybie administratora.
 
 >[!NOTE] 
-> Jeśli to możliwe, Izoluj każdy scenariusz w osobnym, konkretnym raporcie dotyczącym opinii.
-Na przykład, jeśli wpisywanie i nawigacja jest niska, wykonaj poniższe czynności w przypadku każdego problemu. Ułatwia to zespołowi produktu odizolowanie przyczyny określonych problemów.
+> **Najcenniejsze opinie:** W tym przypadku najcenniejsze informacje zwrotne to zrzut sterty przechwycony w czasie braku odpowiedzi.
 
-Aby uzyskać najlepsze wyniki przechwytywania wydajności, wykonaj następujące kroki:
+## <a name="slowness-and-high-cpu-issues"></a>Powolność i wysokie problemy z procesorem
 
-1.  Jeśli jeszcze nie działa, należy otworzyć kopię programu Visual Studio, w której będzie można odtworzyć problem.
+Co sprawia, że powolność lub wysoki problem użycia procesora CPU najbardziej zasłynialne jest śledzenie wydajności przechwycone podczas powolnej pracy lub zdarzenia procesora CPU jest w toku.
 
-    -   Mam wszystko skonfigurowane w celu odtworzenia problemu. Na przykład jeśli potrzebujesz określonego projektu do załadowania z określonym plikiem otwartym, upewnij się, że oba te kroki zostały wykonane przed kontynuowaniem.
+>[!NOTE] 
+> Jeśli to możliwe, wyizolować każdy scenariusz w osobnym, szczegółowym raporcie opinii.
+Na przykład jeśli wpisywanie i nawigacja są powolne, wykonaj poniższe kroki raz na problem. Pomaga to zespołowi produktu wyizolować przyczynę określonych problemów.
 
-    -   Jeśli *nie* zgłaszasz problemu specyficznego dla ładowania rozwiązania, spróbuj odczekać 5-10 minut (lub więcej, w zależności od rozmiaru rozwiązania) po otwarciu rozwiązania przed zarejestrowaniem śladu wydajności. Proces ładowania rozwiązań tworzy dużą ilość danych, więc oczekiwanie na kilka minut pozwala nam skupić się na konkretnym wytworzonym problemie.
+Aby uzyskać najlepsze wyniki w przechwytywaniu wydajności, wykonaj następujące kroki:
 
-2.  Rozpocznij drugą kopię programu Visual Studio *bez otwartego rozwiązania*
+1.  Jeśli nie jest jeszcze uruchomiony, otwórz kopię programu Visual Studio, w której odtworzono problem
 
-3.  W nowej kopii programu Visual Studio Otwórz narzędzie **Zgłoś problem**
+    -   Mieć wszystko skonfigurowane, aby odtworzyć problem. Na przykład jeśli potrzebujesz określonego projektu do załadowania z otwartym określonym plikiem, upewnij się, że oba te kroki zostały zakończone przed kontynuowaniem.
 
-4.  Postępuj zgodnie z instrukcjami w temacie [Jak zgłosić problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) do momentu osiągnięcia kroku "Podaj ślad i zrzut sterty (opcjonalnie)".
+    -   Jeśli *nie* zgłaszasz problemu specyficznego dla ładowania rozwiązania, spróbuj odczekać 5-10 minut (lub więcej, w zależności od rozmiaru rozwiązania) po otwarciu rozwiązania przed nagraniem śledzenia wydajności. Proces ładowania rozwiązania generuje dużą ilość danych, więc odczekanie kilku minut pomaga nam skupić się na konkretnym problemie, który zgłaszasz.
 
-5.  Wybierz, aby zarejestrować pierwszą kopię programu Visual Studio (jeden napotkany problem z wydajnością) i Rozpocznij nagrywanie.
+2.  Uruchamianie drugiej kopii programu Visual Studio *bez otwierania rozwiązania*
 
-    -   Zostanie wyświetlona aplikacja rejestratora kroków i rozpocznie się nagrywanie.
+3.  W nowej kopii programu Visual Studio otwórz narzędzie **Zgłoś problem**
 
-    -   **Podczas nagrywania** wykonaj działanie problematyczne w pierwszej kopii programu Visual Studio. Trudno jest poprawić konkretne problemy z wydajnością, jeśli nie są one wyświetlane w zarejestrowanym czasie.
+4.  Wykonaj kroki opisane w [jak zgłosić problem,](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) aż do osiągnięcia kroku "Podaj zrzut śladu i sterty (opcjonalnie)".
 
-    -   Jeśli akcja jest krótsza niż 30 sekund i można ją łatwo powtórzyć, powtórz tę czynność, aby bardziej zademonstrować problem.
+5.  Wybierz, aby nagrać pierwszą kopię programu Visual Studio (ten, który napotyka problem z wydajnością) i rozpocząć nagrywanie.
 
-    -   W większości przypadków śledzenie 60 sekund jest wystarczające do zademonstrowania problemów, szczególnie jeśli problematyczna akcja zakończyła się (lub została powtórzona) przez więcej niż 30 sekund. Czas trwania można dostosować w miarę potrzeb, aby przechwytywać zachowanie, które chcesz naprawić.
+    -   Pojawi się aplikacja Rejestrator kroków i rozpocznie nagrywanie.
 
-6.  Kliknij pozycję "Zatrzymaj rekord" w rejestratorze kroków zaraz po zakończeniu operacji wolnej lub wysokiego procesora CPU, które chcesz zgłosić. Przetworzenie śledzenia wydajności może potrwać kilka minut.
+    -   **Podczas nagrywania wykonaj** problematyczną akcję w pierwszej kopii programu Visual Studio. Trudno jest nam rozwiązać konkretne problemy z wydajnością, jeśli nie pojawią się one w zarejestrowanym czasie.
 
-7.  Po zakończeniu nastąpi kilka załączników do Twojej opinii. Dołącz wszelkie dodatkowe pliki, które mogą pomóc odtworzyć problem (przykładowy projekt, zrzuty ekranu, wideo itp.).
+    -   Jeśli akcja jest krótsza niż 30 sekund i można ją łatwo powtórzyć, powtórz akcję, aby jeszcze bardziej zademonstrować problem.
+
+    -   W większości przypadków ślad 60 sekund jest wystarczający, aby wykazać problemy, zwłaszcza jeśli problematyczne działanie trwało (lub zostało powtórzone) przez ponad 30 sekund. Czas trwania można dostosować w razie potrzeby, aby przechwycić zachowanie, które chcesz naprawić.
+
+6.  Kliknij "Zatrzymaj rekord" w Rejestratorze kroków, gdy tylko powolna praca lub zdarzenie wysokiego procesora, które chcesz zgłosić, zostanie zakończone. Może upłynąć kilka minut, aby przetworzyć śledzenia wydajności.
+
+7.  Po zakończeniu, będzie kilka załączników do opinii. Dołącz dodatkowe pliki, które mogą pomóc odtworzyć problem (przykładowy projekt, zrzuty ekranu, filmy itp.).
 
 8.  Prześlij opinię.
 
-Podczas rejestrowania śladu wydajności, jeśli zbyt niska operacja lub wysoki procesor CPU jest na końcu, natychmiast zatrzymać nagranie. W przypadku zebrania zbyt dużej ilości informacji najstarsze informacje są zastępowane. Jeśli śledzenie nie zostanie wkrótce zatrzymane (w ciągu kilku sekund) po interesującej operacji, przydatne dane śledzenia zostaną nadpisywane.
+Podczas rejestrowania śledzenia wydajności, jeśli powolna operacja lub wysoki procesor CPU, który zgłaszasz, dobiega końca, natychmiast zatrzymaj nagrywanie. Jeśli zbiera się zbyt dużo informacji, najstarsze informacje są zastępowane. Jeśli śledzenie nie zostanie zatrzymane wkrótce (w ciągu kilku sekund) po interesującej operacji, przydatne dane śledzenia zostaną zastąpione.
 
-Nie dołączaj bezpośrednio śladów wydajności do istniejących elementów opinii w witrynie internetowej społeczności deweloperów. Żądanie/podanie dodatkowych informacji to obsługiwany przepływ pracy w wbudowanym raporcie programu Visual Studio — narzędzie problemu. Jeśli śledzenie wydajności jest wymagane, aby można było rozwiązać poprzedni element opinii, ustawimy stan elementu opinii na "potrzebne więcej informacji", co może być odpowiedziane w taki sam sposób jak Zgłaszanie nowego problemu. Aby uzyskać szczegółowe instrukcje, zapoznaj się z [sekcją "potrzebujesz więcej informacji"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) w dokumencie Zgłoś narzędzie problemu.
+Nie należy bezpośrednio dołączać śladów wydajności do istniejących elementów opinii w witrynie społeczności deweloperów. Żądanie/podanie dodatkowych informacji jest obsługiwanym przepływem pracy we wbudowanym narzędziu Zgłoś problem w programie Visual Studio. Jeśli śledzenie wydajności jest wymagane w celu rozwiązania poprzedniego elementu opinii, ustawimy stan elementu opinii na "Potrzebujesz więcej informacji", na który można odpowiedzieć w taki sam sposób, jak zgłoszenie nowego problemu. Aby uzyskać szczegółowe instrukcje, zapoznaj się z [sekcją "Potrzebujesz więcej informacji"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) w dokumencie narzędzia Zgłoś problem.
 
 > [!NOTE] 
-> **Najbardziej cenna opinia:** W przypadku niemal wszystkich problemów z niską ilością zasobów procesora, najbardziej cenną opinią jest ogólny opis tego, co próbujesz zrobić, wraz z śladem wydajności (\*. etl. zip), który przechwytuje zachowanie w tym czasie.
+> **Najcenniejsze opinie:** Dla prawie wszystkich problemów powolność / wysoki procesor, najcenniejsze opinie jest wysokiego poziomu opis tego,\*co starali się zrobić, wraz ze śledzeniem wydajności (.etl.zip), który przechwytuje zachowanie w tym czasie.
 
-**Zaawansowane dane śledzenia wydajności**
+**Zaawansowane ślady wydajności**
 
-Możliwości zbierania danych śledzenia w przypadku większości scenariuszy są wystarczające w odniesieniu do narzędzia raport-a-problem. Ale istnieją przypadki, w których wymagana jest większa kontrola nad zbieraniem danych śledzenia (na przykład śledzenie o większym rozmiarze buforu), w którym to przypadku narzędzia PerfView jest doskonałym narzędziem do użycia. Procedurę ręcznego rejestrowania śledzenia wydajności za pomocą narzędzia Narzędzia PerfView można znaleźć na stronie [rejestrowanie śladów wydajności ze narzędzia PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+Możliwości śledzenia kolekcji w narzędziu Report-a-problem są wystarczające dla większości scenariuszy. Ale są chwile, w których wymagana jest większa kontrola nad kolekcji śledzenia (na przykład śledzenia o większym rozmiarze buforu), w którym to przypadku PerfView jest doskonałym narzędziem do użycia. Kroki ręcznego rejestrowania śledzenia wydajności za pomocą narzędzia PerfView można znaleźć na [śledzenia wydajności nagrywania za pomocą PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) strony.
 
-## <a name="out-of-process-issues"></a>Problemy pozaprocesowe
+## <a name="out-of-process-issues"></a>Problemy poza procesem
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2019 w wersji 16,3, dzienniki pozaprocesowe są automatycznie dołączane do opinii przesłanych za pomocą narzędzia Zgłoś problem. Jeśli jednak problem jest bezpośrednio odtwarzalny, wykonanie poniższych kroków może pomóc w dodaniu dodatkowych informacji w celu lepszego zdiagnozowania problemu.
+> Począwszy od programu Visual Studio 2019 w wersji 16.3 dzienniki poza procesem są automatycznie dołączane do opinii przesłanych za pomocą narzędzia Zgłoś problem. Jeśli jednak problem jest bezpośrednio powtarzalny, wykonując poniższe kroki, nadal można dodać dodatkowe informacje, aby lepiej zdiagnozować problem.
 
-Istnieje wiele procesów satelitarnych, które działają równolegle z programem Visual Studio i udostępniają różne funkcje spoza głównego procesu programu Visual Studio. Jeśli wystąpi błąd w jednym z tych procesów satelitarnych, zwykle jest on wyświetlany w programie Visual Studio po stronie "StreamJsonRpc. RemoteInvocationException" lub "StreamJsonRpc. ConnectionLostException".
+Istnieje wiele procesów satelitarnych, które są uruchamiane równolegle do programu Visual Studio i zapewniają różne funkcje spoza głównego procesu programu Visual Studio. Jeśli wystąpi błąd w jednym z tych procesów satelitarnych jest zwykle postrzegane po stronie programu Visual Studio jako "StreamJsonRpc.RemoteInvocationException" lub "StreamJsonRpc.ConnectionLostException".
 
-Co sprawia, że te typy problemów są najbardziej funkcjonalne, należy dostarczyć dodatkowe dzienniki, które mogą być zbierane, wykonując następujące czynności:
+Co sprawia, że te typy problemów najbardziej zas uzywalne jest zapewnienie dodatkowych dzienników, które mogą być zbierane przez następujące kroki:
 
-1.  Jeśli ten problem jest bezpośrednio powtarzalny, Zacznij od usunięcia folderu **% temp%/servicehub/Logs** . Jeśli nie można odtworzyć tego problemu, pozostaw ten folder bez zmian i zignoruj następujące punktory:
+1.  Jeśli jest to problem bezpośrednio powtarzalny, należy rozpocząć od usunięcia folderu **%temp%/servicehub/logs.** Jeśli nie możesz odtworzyć tego problemu, zachowaj ten folder w stanie nienaruszonym i zignoruj następujące punktory:
 
-    -   Ustaw globalną zmienną środowiskową **ServiceHubTraceLevel** na **wszystkie**
+    -   Ustaw globalną zmienną środowiskową **ServiceHubTraceLevel** na **Wszystkie**
     -   Odtwórz problem.
 
-2.  Pobierz [Narzędzie do](https://www.microsoft.com/download/details.aspx?id=12493)zbierania dzienników Microsoft Visual Studio i .NET Framework.
-3.  Uruchom narzędzie. Spowoduje to wyjście z pliku zip do **% temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
+2.  Pobierz [tutaj](https://www.microsoft.com/download/details.aspx?id=12493)narzędzie microsoft visual studio i .NET Framework Log Collection Tool .
+3.  Uruchom narzędzie. Powoduje to wyprowadzanie pliku zip do **%temp%/vslogs.zip**. Dołącz ten plik do swojej opinii.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Opcje opinii programu Visual Studio](../ide/feedback-options.md)
-* [Zgłoś problem z Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
-* [Zgłoś problem zC++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
+* [Zgłaszanie problemu z programem Visual Studio dla komputerów Mac](/visualstudio/mac/report-a-problem)
+* [Zgłoś problem z c++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Społeczność deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/)
-* [Prywatność danych społeczności deweloperów](developer-community-privacy.md)
+* [Prywatność danych w społeczności deweloperów](developer-community-privacy.md)

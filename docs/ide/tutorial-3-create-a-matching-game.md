@@ -1,5 +1,5 @@
 ---
-title: 'Samouczek 3: Tworzenie gry w dopasowywanie'
+title: 'samouczek 3: Tworzenie pasującej gry'
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
@@ -10,24 +10,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579703"
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie gry w dopasowywanie
+# <a name="tutorial-3-create-a-matching-game"></a>samouczek 3: Tworzenie pasującej gry
 
 W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary ukrytych ikon.
 
 > [!NOTE]
-> W tym samouczku C# omówiono zarówno program, jak i Visual Basic, dlatego należy skoncentrować się na informacjach specyficznych dla języka programowania, którego używasz.
+> W tym samouczku omówiono zarówno języka C#, jak i języka Visual Basic, więc skup się na informacjach specyficznych dla używanego języka programowania.
 
-Ten samouczek przeprowadzi Cię przez następujące zadania:
+W tym samouczku przedstawiono następujące zadania:
 
-- Przechowywanie obiektów, takich jak ikony, w obiekcie <xref:System.Collections.Generic.List%601>.
+- Przechowuj obiekty, takie jak ikony, w <xref:System.Collections.Generic.List%601> obiekcie.
 
-- Użyj pętli `foreach` w C# pętli `For Each` w Visual Basic, aby wykonać iterację elementów na liście.
+- Użyj `foreach` pętli w języku `For Each` C# lub pętli w języku Visual Basic, aby iterować za pośrednictwem elementów na liście.
 
 - Śledzić stan formularza za pomocą zmiennych odwołania.
 
@@ -35,32 +35,32 @@ Ten samouczek przeprowadzi Cię przez następujące zadania:
 
 - Stworzyć czasomierz, który odlicza czas do zera, a następnie uruchamia zdarzenie dokładnie jeden raz po uruchomieniu.
 
-Po zakończeniu aplikacja powinna wyglądać podobnie do poniższej ilustracji:
+Po zakończeniu aplikacja powinna wyglądać podobnie do następującego obrazu:
 
 ![Gra tworzona w ramach tego samouczka](../ide/media/express_finishedgame.png)
 
-## <a name="tutorial-links"></a>Linki samouczków
+## <a name="tutorial-links"></a>Łącza do samouczka
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Krok 1. Tworzenie projektu i Dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Zacznij od utworzenia projektu i dodania kontrolki `TableLayoutPanel`, aby zachować poprawne wyrównywanie kontrolek.|
-|[Krok 2. Dodawanie losowego obiektu i listy ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Dodaj obiekt `Random` i obiekt `List`, aby utworzyć listę ikon.|
-|[Krok 3. przypisanie losowej ikony do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md)|Przypisz ikony losowo do kontrolek `Label`, tak aby każda gra była inna.|
-|[Krok 4. Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Dodaj procedurę obsługi zdarzeń `Click`, która zmienia kolor klikniętej etykiety.|
-|[Krok 5. Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md)|Dodaj zmienne odwołania, aby śledzić, które etykiety zostały kliknięte.|
-|[Krok 6. Dodawanie czasomierza](../ide/step-6-add-a-timer.md)|Dodaj czasomierz do formularza, aby śledzić czas, który upłynął w grze.|
-|[Krok 7. zachowanie widoczności par](../ide/step-7-keep-pairs-visible.md)|Zachowaj widoczne pary ikon, jeśli wybrana para pasuje.|
-|[Krok 8. Dodanie metody w celu sprawdzenia, czy gracz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Dodaj metodę `CheckForWinner()`, aby sprawdzić, czy odtwarzacz został wygrany.|
-|[Krok 9. Wypróbuj inne funkcje](../ide/step-9-try-other-features.md)|Wypróbuj inne funkcje, takie jak zmiana ikon i kolorów, dodawanie siatki i dodawanie dźwięków. Spróbuj powiększyć planszę i dostosować czasomierz.|
+|[Krok 1: Tworzenie projektu i dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Rozpocznij od utworzenia `TableLayoutPanel` projektu i dodania formantu, aby zapewnić prawidłowe wyrównanie formantów.|
+|[Krok 2: Dodaj losowy obiekt i listę ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Dodaj `Random` obiekt i `List` obiekt, aby utworzyć listę ikon.|
+|[Krok 3: Przypisz losową ikonę do każdej etykiety](../ide/step-3-assign-a-random-icon-to-each-label.md)|Przypisz ikony losowo `Label` do kontrolek, tak aby każda gra była inna.|
+|[Krok 4: Dodaj program obsługi zdarzeń kliknięć do każdej etykiety](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Dodaj `Click` program obsługi zdarzeń, który zmienia kolor kliknowanego etykiety.|
+|[Krok 5: Dodawanie odniesień do etykiet](../ide/step-5-add-label-references.md)|Dodaj zmienne odwołania, aby śledzić, które etykiety zostały kliknięte.|
+|[Krok 6: Dodaj timer](../ide/step-6-add-a-timer.md)|Dodaj czasomierz do formularza, aby śledzić czas, który upłynął w grze.|
+|[Krok 7: Utrzymuj widoczne pary](../ide/step-7-keep-pairs-visible.md)|Zachowaj widoczne pary ikon, jeśli wybrana para pasuje.|
+|[Krok 8: Dodaj metodę, aby sprawdzić, czy gracz wygrał](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Dodaj `CheckForWinner()` metodę, aby sprawdzić, czy gracz wygrał.|
+|[Krok 9: Wypróbuj inne funkcje](../ide/step-9-try-other-features.md)|Wypróbuj inne funkcje, takie jak zmiana ikon i kolorów, dodawanie siatki i dodawanie dźwięków. Spróbuj powiększyć planszę i dostosować czasomierz.|
 
-Dostępne są również wspaniałe, bezpłatne zasoby szkoleniowe dotyczące wideo. Aby dowiedzieć się więcej na C#temat programowania w programie, zobacz [ C# podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej na temat programowania w Visual Basic, zobacz [Visual Basic podstawy: Programowanie dla bezwzględnych początkujących](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
+Dostępne są również świetne, bezpłatne materiały do nauki wideo. Aby dowiedzieć się więcej o programowaniu w języku C#, zobacz [C# podstawy: Rozwój dla początkujących absolutnych](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Aby dowiedzieć się więcej o programowaniu w języku Visual Basic, zobacz [Visual Basic podstawy: Rozwój dla początkujących .](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby rozpocząć pracę z samouczkiem, Zacznij od **[kroku 1: Tworzenie projektu i Dodawanie tabeli do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
+Aby rozpocząć samouczek, zacznij od **[kroku 1: Utwórz projekt i dodaj tabelę do formularza](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Więcej C# samouczków](/visualstudio/get-started/csharp/)
-* [Samouczki Visual Basic](/visualstudio/get-started/visual-basic/)
-* [C++Podręcznik](/cpp/get-started/tutorial-console-cpp)
+* [Więcej samouczków języka C#](/visualstudio/get-started/csharp/)
+* [Samouczki dotyczące języka Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Samouczki języka C++](/cpp/get-started/tutorial-console-cpp)

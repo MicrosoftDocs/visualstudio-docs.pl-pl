@@ -1,5 +1,5 @@
 ---
-title: Procent redukcji szumów | Dokumentacja firmy Microsoft
+title: Procent redukcji hałasu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d3021aef3f9a2e11849991327a6ef8783b62439
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794316"
 ---
 # <a name="noise-reduction-percentage"></a>Procent redukcji szumu
-Domyślnie wartość ustawienia procent redukcji szumu to 2. Tylko te wpisy, które mają procent całkowitego czasu większe lub równe tego ustawienia są wyświetlane w drzewie wywołań. Zmieniając ustawienie, możesz kontrolować liczbę wpisów, które są wyświetlane w drzewie wywołań. Na przykład zmieniając wartość 10 wyświetli tylko pozycje drzewo wywołań, które mają całkowitego czasu większe niż lub równą 10%. Zwiększenie wartości tego ustawienia, można skoncentrować się na wpisów, które mają większy wpływ na wydajność procesu.
+Domyślnie wartość ustawienia Procent redukcji szumów wynosi 2. Tylko wpisy, które mają procent czasu włącznie większe lub równe temu ustawieniu są wyświetlane w drzewie wywołań. Zmieniając to ustawienie, można kontrolować liczbę wpisów wyświetlanych w drzewie wywołań. Na przykład zmiana wartości na 10 spowoduje wyświetlenie tylko wpisów drzewa wywołań, które mają czas włącznie większy lub równy 10%. Zwiększając wartość ustawienia, można skupić się na wpisach, które mają większy wpływ na wydajność procesu.

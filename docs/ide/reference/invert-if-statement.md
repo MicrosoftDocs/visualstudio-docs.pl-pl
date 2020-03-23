@@ -11,40 +11,40 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a0419100cbc5fcd543eb250fa85cbfe2ebd1c97f
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "65531587"
 ---
 # <a name="invert-if-statement"></a>Odwracanie instrukcji If
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 - Visual Basic
 
-**Co:** Umożliwia Odwróć `if` lub `if else` instrukcji bez zmiany znaczenia kodu.
+**Co:** Umożliwia odwrócenie `if` lub `if else` instrukcji bez zmiany znaczenia kodu.
 
-**Kiedy:** Jeśli masz `if` lub `if else` instrukcję, która będzie lepiej rozumieć, gdy odwrócony.
+**Kiedy:** Gdy masz `if` lub `if else` instrukcji, które byłyby lepiej zrozumiałe, gdy odwrócone.
 
-**Dlaczego:** Odwracanie `if` lub `if else` instrukcji ręcznie może trwać dłużej i ewentualnie wprowadzał błędy. Ta poprawka kodu pomaga to osiągnąć, automatycznie tej refaktoryzacji.
+**Dlaczego?** Odwracanie lub `if` `if else` instrukcja ręcznie może trwać znacznie dłużej i ewentualnie wprowadzić błędy. Ta poprawka kodu pomaga wykonać tę refaktoryzacji automatycznie.
 
-## <a name="invert-if-statement-refactoring"></a>Odwróć, jeśli instrukcja refaktoryzacji
+## <a name="invert-if-statement-refactoring"></a>Odwróć, jeśli refaktoryzuje instrukcję
 
-1. Umieść kursor w `if` lub `if else` instrukcji.
+1. Umieść kursor w `if` instrukcji `if else` lub instrukcji.
 
-    ![Odwróć Jeśli else](media/invert-if.png)
+    ![Odwróć, jeśli inaczej](media/invert-if.png)
 
-2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
 
-    ![Odwróć, jeśli program tworzący poprawki kodu else](media/invert-if-codefix.png)
+    ![Popraw kod Odwróć, jeśli inaczej](media/invert-if-codefix.png)
 
-3. Wybierz **Odwróć Jeśli**.
+3. Wybierz **opcję Odwróć, jeśli**.
 
-    ![Odwróć, jeśli inny wynik](media/invert-if-codefix-result.png)
+    ![Odwróć, jeśli wynik w przeciwnym razie](media/invert-if-codefix-result.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Wskazówki dla deweloperów platformy .NET](../csharp-developer-productivity.md)

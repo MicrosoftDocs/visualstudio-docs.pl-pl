@@ -1,5 +1,5 @@
 ---
-title: Kontrola wersji serwera Team Foundation (TFVC)
+title: Kontrola wersji Team Foundation (TFVC)
 description: Przewodnik rozwiązywania problemów dotyczący TFVC i macOS.
 author: jmatthiesen
 ms.author: jomatthi
@@ -7,86 +7,86 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "73714510"
 ---
-# <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Czy Visual Studio dla komputerów Mac obsługiwać Kontrola wersji serwera Team Foundation?
+# <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Czy program Visual Studio dla komputerów Mac obsługuje kontrolę wersji programu Team Foundation?
 
 > [!CAUTION]
-> Rozszerzenie TFVC podglądu dla Visual Studio dla komputerów Mac nie jest już obsługiwane w programie Visual Studio 2019 for Mac.
+> Rozszerzenie TFVC w wersji zapoznawczej dla programu Visual Studio dla komputerów Mac nie jest już obsługiwane w programie Visual Studio 2019 dla komputerów Mac.
 
 
-## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Alternatywne opcje kontroli wersji w Visual Studio dla komputerów Mac
+## <a name="alternative-version-control-options-in-visual-studio-for-mac"></a>Opcje alternatywnej kontroli wersji w programie Visual Studio dla komputerów Mac
 
-Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z **narzędzia Git** zamiast Kontrola wersji serwera Team Foundation (TFVC). 
+Aby uzyskać najlepsze środowisko kontroli wersji w systemie macOS, zalecamy użycie **git** zamiast Team Foundation Version Control (TFVC). 
 
-Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz Podręcznik [konfigurowania repozytorium git](/visualstudio/mac/set-up-git-repository) .
+Git jest obsługiwany w programie Visual Studio dla komputerów Mac i jest domyślną opcją dla repozytoriów hostowanych w programie Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej na temat korzystania z git z TFS/Azure DevOps, zobacz [Konfigurowanie repozytorium Git](/visualstudio/mac/set-up-git-repository) przewodnik.
 
-## <a name="unsupported-workarounds-for-tfvc"></a>Nieobsługiwane obejścia dla TFVC
+## <a name="unsupported-workarounds-for-tfvc"></a>Nieobsługiwały obejścia tfvc
 
-Mimo że Visual Studio dla komputerów Mac nie obsługiwał oficjalnie TFVC, pozostała część tego przewodnika zawiera pewne obejścia do pracy z TFVC na macOS. Jeśli obecnie używasz usługi TFVC na potrzeby kontroli wersji, Oto kilka rozwiązań, których można użyć w celu uzyskania dostępu do kodu źródłowego hostowanego w TFVC:
+Program Visual Studio dla komputerów Mac oficjalnie nie obsługuje usługi TFVC, ale pozostała część tego przewodnika zawiera pewne obejścia dotyczące pracy z TFVC w systemie macOS. Jeśli używasz TFVC do kontroli wersji dzisiaj, oto kilka rozwiązań, których można użyć, aby uzyskać dostęp do kodu źródłowego hostowanego w TFVC:
 
-* Opcja 1. [Użyj Visual Studio Code i rozszerzenia Azure Repos, dla graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
-* Opcja 2. [Nawiązywanie połączenia z repozytorium przy użyciu Team Explorer Everywhere wiersza polecenia klienta (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+* Sposób 1. [Używanie kodu programu Visual Studio i rozszerzenia repozytorium platformy Azure dla graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
+* Sposób 2. [Łączenie się z repozytorium przy użyciu klienta wiersza polecenia Eksploratora wszędzie (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
-### Opcja 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Użyj Visual Studio Code i rozszerzenia Azure Repos
+### <a name="option-1--use-visual-studio-code-and-the-azure-repos-extension"></a>Sposób 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a>Używanie kodu programu Visual Studio i rozszerzenia repozytorium platformy Azure
 
-Jeśli chcesz współpracować z interfejsem graficznym w celu zarządzania plikami w kontroli wersji, rozszerzenie Azure Repos dla Visual Studio Code udostępnia rozwiązanie obsługiwane przez firmę Microsoft. Aby rozpocząć, Pobierz [Visual Studio Code](https://code.visualstudio.com) a następnie Dowiedz się, jak [skonfigurować rozszerzenie Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
+Jeśli chcesz pracować z interfejsem graficznym do zarządzania plikami w kontroli wersji, rozszerzenie Repozytorium platformy Azure dla programu Visual Studio Code zapewnia obsługiwane rozwiązanie firmy Microsoft. Aby rozpocząć, pobierz [program Visual Studio Code,](https://code.visualstudio.com) a następnie dowiedz się, jak [skonfigurować rozszerzenie Repozytorium platformy Azure](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### Opcja 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Nawiązywanie połączenia przy użyciu Team Explorer Everywhere klienta wiersza polecenia
+### <a name="option-2--connecting-using-the-team-explorer-everywhere-command-line-client"></a>Sposób 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Łączenie się przy użyciu klienta wiersza polecenia Eksploratora zespołu wszędzie
 
 > [!IMPORTANT]
-> Zgodnie z Team Explorer Everywherem Readme ten projekt [nie jest już obsługiwany](https://github.com/microsoft/team-explorer-everywhere).
+> Zgodnie z programem ReadME Team Explorer Everywhere, ten projekt nie jest [już utrzymywany.](https://github.com/microsoft/team-explorer-everywhere)
 
-Jeśli nie masz doświadczenia w korzystaniu z terminalu macOS, klient wiersza polecenia Team Explorer Everywhere (TEE-CLC) zapewnia obsługiwany sposób nawiązywania połączenia ze źródłem w programie TFVC.
+Jeśli korzystasz z terminala macOS, klient wiersza polecenia Team Explorer Everywhere (TEE-CLC) zapewnia obsługiwany sposób łączenia się ze źródłem w TFVC.
 
-Możesz wykonać poniższe kroki, aby skonfigurować połączenie do TFVC i zatwierdzić zmiany.
+Możesz wykonać poniższe czynności, aby skonfigurować połączenie z TFVC i zatwierdzić zmiany.
 
-#### <a name="setting-up-the-tee-clc"></a>Konfigurowanie TEE-CLC
+#### <a name="setting-up-the-tee-clc"></a>Konfigurowanie tee-CLC
 
-Istnieją dwa sposoby uzyskania Instalatora za pomocą TEE-CLC.
+Tee-CLC można skonfigurować na dwa sposoby.
 
-* Użyj oprogramowania homebrew, aby zainstalować klienta programu lub
-* Pobierz i ręcznie zainstaluj klienta
+* Użyj Homebrew, aby zainstalować klienta, lub
+* Pobieranie i ręczne instalowanie klienta
 
-Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebrew, który jest menedżerem pakietów dla macOS. Aby zainstalować za pomocą tej metody:
+Najprostszym rozwiązaniem jest **użycie HomeBrew**, który jest menedżerem pakietów dla systemu macOS. Aby zainstalować przy użyciu tej metody:
 
 1. Uruchom aplikację terminala macOS.
-1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
-1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu: `brew install tee-clc`
+1. Zainstaluj Homebrew za pomocą terminala i instrukcji na [stronie głównej Homebrew](https://brew.sh/).
+1. Po zainstalowaniu homebrew uruchom następujące polecenie z terminala:`brew install tee-clc`
 
-Aby **ręcznie skonfigurować tee-CLC**:
+Aby **ręcznie skonfigurować TEE-CLC:**
 
-1. [Pobierz najnowszą wersję tee-CLC](https://github.com/Microsoft/team-explorer-everywhere/releases) ze Team Explorer Everywhere strony wersji repozytorium GitHub (np. tee-CLC-14.134.0. zip w momencie pisania tego zapisu).
+1. [Pobierz najnowszą wersję tee-clc](https://github.com/Microsoft/team-explorer-everywhere/releases) ze strony wydań repozytorium GitHub w eksploratorze Team Explorer Everywhere (np.
 1. Wyodrębnij zawartość pliku zip do folderu na dysku.
-1. Otwórz aplikację terminala macOS i użyj polecenia `cd`, aby przełączyć się do folderu, który został użyty w poprzednim kroku.
-1. Z poziomu folderu Uruchom polecenie `./tf`, aby sprawdzić, czy można uruchomić klienta wiersza polecenia, może pojawić się monit o zainstalowanie języka Java lub innych zależności.
+1. Otwórz aplikację terminala macOS `cd` i użyj polecenia, aby przełączyć się do folderu użytego w poprzednim kroku.
+1. Z poziomu folderu uruchom `./tf` polecenie, aby sprawdzić, czy klient wiersza polecenia może być uruchomiony, może zostać wyświetlony monit o zainstalowanie oprogramowania Java lub innych zależności.
 
-Po zainstalowaniu TEE-CLC można uruchomić polecenie `tf eula`, aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
+Po zainstalowaniu tee-CLC można uruchomić `tf eula` polecenie, aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
 
-Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
+Na koniec, aby uwierzytelnić się w środowisku TFS/Azure DevOps, musisz utworzyć token dostępu osobistego na serwerze. Dowiedz się więcej o [uwierzytelnieniu za pomocą tokenów dostępu osobistego](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia tokenu dostępu osobistego do użycia z TFVC, należy podać pełny dostęp podczas konfigurowania tokenu.
 
-#### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Nawiązywanie połączenia z repozytorium przy użyciu TEE-CLC
+#### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Łączenie się z repozytorium za pomocą tee-CLC
 
-Aby nawiązać połączenie z kodem źródłowym, musisz najpierw utworzyć obszar roboczy przy użyciu polecenia `tf workspace`. Na przykład następujące polecenia nawiązują połączenie z organizacją w Azure DevOps Services o nazwie "Moja organizacja": 
+Aby połączyć się z kodem źródłowym, należy `tf workspace` najpierw utworzyć obszar roboczy za pomocą polecenia. Na przykład następujące polecenia łączą się z organizacją w usługach Azure DevOps o nazwie "MyOrganization": 
 
 ```bash
 export TF_AUTO_SAVE_CREDENTIALS=1
 tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 ```
 
-Ustawienie środowiska `TF_AUTO_SAVE_CREDENTIALS` służy do zapisywania poświadczeń, dlatego nie zostanie wyświetlony monit o wprowadzenie ich wiele razy. Po wyświetleniu monitu o podanie nazwy użytkownika Użyj osobistego tokenu dostępu utworzonego w poprzedniej sekcji i użyj pustego hasła.
+Ustawienie `TF_AUTO_SAVE_CREDENTIALS` środowiska służy do zapisywania poświadczeń, więc nie jest wyświetlany monit o ich wielokrotne wprowadzanie. Po wyświetleniu monitu o podanie nazwy użytkownika użyj tokenu dostępu osobistego utworzonego w poprzedniej sekcji i użyj pustego hasła.
 
-Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyj polecenia `tf workfold`. Poniższy przykład mapuje folder o nazwie "WebApp. Services" z projektu TFVC "moje repozytorium" i skonfiguruje go do kopiowania do lokalnego folderu ~/Projects/(tj. folder "projects" w folderze głównym bieżącego użytkownika).
+Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyjesz tego `tf workfold` polecenia. Poniższy przykład będzie mapować folder o nazwie "WebApp.Services" z projektu TFVC "MyRepository" i skonfigurować go do kopiowania do lokalnego folderu ~/Projects/ (tj. folderu "Projekty" w folderze domowym bieżących użytkowników).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/
 ```
 
-Na koniec użyj następującego polecenia, aby pobrać pliki źródłowe z serwera i skopiować je lokalnie:
+Na koniec należy użyć następującego polecenia, aby uzyskać pliki źródłowe z serwera i skopiować je lokalnie:
 
 ```bash
 tf get
@@ -94,7 +94,7 @@ tf get
 
 #### <a name="committing-changes-using-the-tee-clc"></a>Zatwierdzanie zmian przy użyciu TEE-CLC
 
-Po wprowadzeniu zmian w plikach w Visual Studio dla komputerów Mac można wrócić do terminalu, aby zaewidencjonować zmiany. Polecenie `tf add` służy do dodawania plików do listy oczekujących zmian do zaewidencjonowania, a polecenie `tf checkin` wykonuje rzeczywiste ewidencjonowanie na serwerze. Polecenie `checkin` zawiera parametry służące do dodawania komentarza lub kojarzenia powiązanego elementu pracy. W poniższym fragmencie kodu wszystkie pliki w folderze `WebApp.Services` są dodawane cyklicznie do zaewidencjonowania. Następnie kod jest sprawdzany z komentarzem i skojarzony z elementem roboczym o IDENTYFIKATORze "42".
+Po włączeniu zmian w plikach w programie Visual Studio dla komputerów Mac można przełączyć się z powrotem do terminalu, aby zaewidencjonować zmiany. Polecenie `tf add` służy do dodawania plików do listy oczekujących zmian, `tf checkin` które mają zostać zaewidencjonowane, a polecenie wykonuje rzeczywiste zaewidencjonowanie na serwerze. Polecenie `checkin` zawiera parametry, aby dodać komentarz lub skojarzyć powiązany element pracy. We wpisie kodu poniżej wszystkie pliki `WebApp.Services` w folderze są dodawane, cyklicznie, do ewidencjonowania. Następnie kod jest zaewidencjonowany z komentarzem i skojarzony z elementem pracy o identyfikatorze "42".
 
 ```bash
 cd WebApp.Services
@@ -102,10 +102,10 @@ tf add * /recursive
 tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind" -associate:42
 ```
 
-Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, można użyć następującego polecenia z terminalu:
+Aby dowiedzieć się więcej o poleceniach wymienionych tutaj lub innych, można użyć następującego polecenia z terminala:
 
 `tf help`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Opracowywanie i udostępnianie kodu w programie TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Tworzenie i udostępnianie kodu w TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

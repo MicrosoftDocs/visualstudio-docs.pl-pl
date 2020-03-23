@@ -7,20 +7,20 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: a2a8a5bc03baf51f684777f39f0815699c6c77af
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76158837"
 ---
-## <a name="get-support"></a>Uzyskaj pomoc techniczną
+## <a name="get-support"></a>Uzyskiwanie pomocy technicznej
 
-Czasami mogą wystąpić problemy. Jeśli instalacja programu Visual Studio nie powiedzie się, zobacz [Rozwiązywanie problemów z instalacją i uaktualnieniem programu Visual Studio](../troubleshooting-installation-issues.md) , aby uzyskać wskazówki krok po kroku.
+Czasami coś może pójść nie tak. Jeśli instalacja programu Visual Studio nie powiedzie się, zobacz [Rozwiązywanie problemów z instalacją i uaktualnieniem](../troubleshooting-installation-issues.md) programu Visual Studio w celu uzyskania wskazówek krok po kroku.
 
-Oferujemy również [ **Czat na żywo** ](https://visualstudio.microsoft.com/vs/support/#talktous) opcję pomocy technicznej (tylko język angielski) w przypadku problemów związanych z instalacją.
+Oferujemy również opcję pomocy technicznej [**na czacie na żywo**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) w przypadku problemów związanych z instalacją.
 
-Poniżej przedstawiono kilka więcej opcji pomocy technicznej:
+Oto kilka innych opcji pomocy technicznej:
 
-* Zgłoś problemy produktu z nami za pośrednictwem [Zgłoś Problem](../../ide/how-to-report-a-problem-with-visual-studio.md) narzędzia, która pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowisku IDE programu Visual Studio.
-* Zaproponuj funkcję śledzenia problemów produktu i Szukaj odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
-* Użyj swojej [GitHub](https://github.com/) konto, aby komunikować się z USA i innych deweloperów programu Visual Studio w [konwersacji programu Visual Studio community dotyczącym oprogramowania Gitter](https://gitter.im/Microsoft/VisualStudio).
+* Zgłoś nam problemy z produktem za pomocą narzędzia [Zgłoś problem,](../../ide/how-to-report-a-problem-with-visual-studio.md) które pojawia się zarówno w Instalatorze programu Visual Studio, jak i w środowiskach IDE programu Visual Studio.
+* Zasugeruj funkcję, śledź problemy z produktem i znajdź odpowiedzi w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/).
+* Użyj swojego konta [GitHub,](https://github.com/) aby porozmawiać z nami i innymi deweloperami programu Visual Studio w [konwersacji programu Visual Studio w społeczności Gitter.](https://gitter.im/Microsoft/VisualStudio)

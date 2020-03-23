@@ -1,5 +1,5 @@
 ---
-title: Widok rdzeni — oś czasu | Dokumentacja firmy Microsoft
+title: Oś czasu widoku rdzeni | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553113"
 ---
 # <a name="cores-view-timeline"></a>Oś czasu widoku rdzeni
-Każdy wiersz na osi czasu reprezentuje rdzenia procesora logicznego w systemie profilowane. Dla każdego wiersza oś pozioma ukazuje, który wątek była uruchomiona na rdzeń logiczny w danym punkcie w czasie. Możesz umieścić kursor kolor zainteresowania na osi czasu do zwrócenia etykietkę narzędzia, która identyfikuje wątku. Aby ułatwić identyfikację wątku, legendę u dołu okna pokazuje, co reprezentuje każdy kolor. Narzędzie do powiększania umożliwia powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i przesuwanie kółka myszy. Spójność powiększenia jest zachowywane podczas przełączania się między widokiem rdzeni i wątków.
+Każdy wiersz na osi czasu reprezentuje rdzeń procesora logicznego w profilowanym systemie. Dla każdego wiersza oś pozioma pokazuje, który wątek był uruchomiony na rdzeniu logicznym w danym momencie. Można najechać kursorem na kolor zainteresowania na osi czasu, aby zwrócić etykietkę narzędzia, która identyfikuje wątek. Aby ułatwić identyfikację wątku, legenda w dolnej części okna pokazuje, co reprezentuje każdy kolor. Użyj narzędzia Powiększenie, aby powiększać i pomniejszać, klikając i przeciągając lub naciskając klawisz CTRL i przesuwając kółko myszy. Spójność powiększenia jest zachowywana po przełączeniu między widokiem rdzeni a widokiem wątków.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok rdzeni](../profiling/cores-view.md)
-- [Formant powiększania (Widok wątków)](../profiling/zoom-control-threads-view.md)
+- [Kontrolka powiększenia (widok wątków)](../profiling/zoom-control-threads-view.md)

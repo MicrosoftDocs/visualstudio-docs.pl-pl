@@ -1,5 +1,5 @@
 ---
-title: Funkcja CvWriteFlag | Dokumentacja firmy Microsoft
+title: Funkcja CvWriteFlag | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62936683"
 ---
-# <a name="cvwriteflag-function"></a>Cvwriteflag — funkcja
-Zapisuje plik śledzenia Concurrency Visualizer flagę.
+# <a name="cvwriteflag-function"></a>Funkcja CvWriteFlag
+Zapisuje flagę do pliku śledzenia wizualizatora współbieżności.
 
 ## <a name="syntax"></a>Składnia
 
@@ -63,25 +63,25 @@ HRESULT CvWriteFlagExVA(
 ```
 
 #### <a name="parameters"></a>Parametry
- `argList` Lista argumentów.
+ `argList`Lista argumentów.
 
- `category` Kategoria.
+ `category`Kategorii.
 
- `level` Poziom ważności.
+ `level`Poziom ważności.
 
- `pMarkerSeries` Kontekst serii prawidłowe znacznika. Nie może mieć wartości NULL.
+ `pMarkerSeries`Prawidłowy kontekst serii znaczników. Nie może być null.
 
- `pMessage` Ciąg formatu komunikatów. Nie może mieć wartości NULL.
+ `pMessage`Ciąg formatu wiadomości. Nie może być null.
 
 ## <a name="return-value"></a>Wartość zwracana
- S_OK, gdy komunikat jest pomyślnie zapisane. Kod błędu w przypadku, gdy było żadnych błędów. Aby sprawdzić, czy warunek błędu, należy użyć makra Powodzenie/niepowodzenie.
+ S_OK, gdy wiadomość zostanie pomyślnie napisana. Kod błędu w przypadku wystąpienia błędów. Użyj makr UDANE/NIEUDANE, aby sprawdzić, czy nie ma warunku błędu.
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkers.h*
 
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW
 
- <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA
+ <strong>ANSI:</strong> CvWriteFlagExA, CvWriteFlagExVA
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do biblioteki języka C++](../profiling/cpp-library-reference.md)

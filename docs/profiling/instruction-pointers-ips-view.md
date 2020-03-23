@@ -1,5 +1,5 @@
 ---
-title: Widok wskaźników instrukcji (IP) | Microsoft Docs
+title: Widok wskaźników instrukcji (IP) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,22 +19,22 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778638"
 ---
 # <a name="instruction-pointers-ips-view"></a>Widok wskaźników instrukcji (IP)
-Widok wskaźników instrukcji umożliwia wyświetlenie określonych instrukcji, które są wykonywane podczas profilowania próbkowania.
+Widok Wskaźniki instrukcji umożliwia wyświetlenie określonych instrukcji, które są wykonywane podczas profilowania próbkowania.
 
- Ten widok nie jest dostępny podczas profilowania Instrumentacji.
+ Ten widok nie jest dostępny podczas profilowania instrumentacji.
 
- W przypadku danych profilu próbkowania widok adresów IP identyfikuje instrukcje w funkcji, która była wykonywana bezpośrednio podczas zbierania próbki.
+ W przypadku danych profilu próbkowania widok adresów IP identyfikuje instrukcje w funkcji, która była bezpośrednio wykonywana podczas pobierania próbki.
 
- W przypadku danych pamięci platformy .NET Widok wiersze identyfikuje instrukcje przydzielenia pamięci.
+ W przypadku danych pamięci .NET widok Linie identyfikuje instrukcje, które przydzielają pamięć.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
 - [Widok wskaźników instrukcji (IP) — próbkowanie](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)

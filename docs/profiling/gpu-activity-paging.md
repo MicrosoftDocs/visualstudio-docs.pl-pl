@@ -1,5 +1,5 @@
 ---
-title: Aktywność procesora GPU (stronicowanie) | Dokumentacja firmy Microsoft
+title: Aktywność gpu (stronicowanie) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bd28c7b41a01992ad52fa343b098b0a02460806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969618"
 ---
 # <a name="gpu-activity-paging"></a>Aktywność GPU (Stronicowanie)
-**Aktywność procesora GPU (stronicowanie)** segmenty na **wątków** karcie reprezentują czas, po procesora GPU przetwarzającą żądania stronicowania.  Długość segmentu reprezentuje czas, czy procesor GPU przetwarzającą pakiet stronicowania dostępu (DMA) pamięci. Zazwyczaj stronicowania pakiety są skojarzone z transfer pamięci między GPU i CPU.
+Segmenty **aktywności gpu (stronicowania)** na karcie Wątki reprezentują **czasy** przetwarzania żądań stronicowania przez procesor GPU.  Długość segmentu reprezentuje czas, przez który procesor GPU przetwarzał pakiet stronicowania dostępu do pamięci bezpośredniej (DMA). Zazwyczaj pakiety stronicowania są skojarzone z transferem pamięci między procesorem CPU a procesorem GPU.
 
- Po wybraniu segmentu stronicowania procesora GPU, raport na **bieżącego** karta zawiera informacje o pakiecie DMA, która została przetworzona. Obejmuje to ilość razem, gdy jego oczekiwania w kolejce sprzętowej, skojarzony z aparatu programu DirectX, proces, który przesłał pakiet DMA i czas wymagany do przetwarzania pakietów.
+ Po wybraniu segmentu stronicowania gpu raport na karcie **Bieżący** wyświetla informacje o przetworzonym pakiecie DMA. Obejmuje to czas oczekiwania w kolejce sprzętu skojarzonej z aparatem DirectX, proces, który przesłał pakiet DMA i czas wymagany do przetworzenia pakietu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wykorzystania](../profiling/utilization-view.md)

@@ -10,32 +10,32 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68740063"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>Konwertowanie instrukcji switch na wyrażenie switch
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
-**Whatman** Konwertuj [instrukcję Switch](/dotnet/csharp/language-reference/keywords/switch) na C# [wyrażenie przełącznika](/dotnet/csharp/whats-new/csharp-8#switch-expressions)8,0.
+**Co:** Konwertuj [instrukcję switch](/dotnet/csharp/language-reference/keywords/switch) na [wyrażenie przełącznika](/dotnet/csharp/whats-new/csharp-8#switch-expressions)C# 8.0 .
 
-**Czasie** Chcesz przekonwertować `switch` instrukcję `switch` na wyrażenie i na odwrót. 
+**Kiedy:** Chcesz przekonwertować instrukcję `switch` na `switch` wyrażenie i odwrotnie. 
 
-**Zalet** Jeśli używasz tylko wyrażeń, to Refaktoryzacja umożliwia łatwe przejście z tradycyjnych `switch` instrukcji.
+**Dlaczego?** Jeśli używasz tylko wyrażeń, to refaktoryzowanie umożliwia łatwe przejście od tradycyjnych `switch` instrukcji.
 
-## <a name="how-to"></a>Instrukcje
+## <a name="how-to"></a>Porady
 
-1. W pliku projektu [Ustaw wersję językową na podgląd](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file) , ponieważ `switch` wyrażenia są nową C# funkcją 8,0.
-2. Umieść kursor `switch` w słowie kluczowym i naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
-3. Wybierz pozycję **Konwertuj instrukcję Switch na wyrażenie**.
+1. W pliku projektu [ustaw wersję językową na podgląd,](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file) ponieważ `switch` wyrażenia są nową funkcją języka C# 8.0.
+2. Umieść kursor w `switch` słowie kluczowym i naciśnij klawisz **Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+3. Wybierz **pozycję Konwertuj instrukcję przełączania na wyrażenie**.
 
    ![Konwertowanie instrukcji switch na wyrażenie switch](media/convert-switch-statement-to-switch-expression.png) 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

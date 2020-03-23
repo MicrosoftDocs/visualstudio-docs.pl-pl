@@ -1,5 +1,5 @@
 ---
-title: PROFILE_CURRENTID | Microsoft Docs
+title: PROFILE_CURRENTID | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 63b44bee152acbf5529acfcadaa49a19e9feb52b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778365"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
-PROFILE_CURRENTID zwraca pseudo-token identyfikatora wątku lub identyfikatora procesu w wywołaniu funkcji NameProfile, StartProfile, StopProfile, SuspendProfile i ResumeProfile. Użyj go, aby spowodować, że funkcja będzie działać w bieżącym wątku lub procesie, a nie w określonym powyżej.
+PROFILE_CURRENTID zwraca pseudo-token dla identyfikatora wątku lub identyfikator procesu, w wywołaniu NameProfile, StartProfile, StopProfile, SuspendProfile i ResumeProfile funkcji. Użyj go, aby spowodować, że funkcja działa na bieżącym wątku lub procesu, a nie specjalnie wskazany.
 
 ## <a name="example"></a>Przykład
- PROFILE_CURRENTID jest zdefiniowany w *VSPerf. h* jako:
+ PROFILE_CURRENTID jest zdefiniowany w *vsPerf.h* jako:
 
 ```cpp
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;
 ```
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje PROFILE_CURRENTID. W przykładzie używa się PROFILE_CURRENTID jako parametru identyfikującego bieżący wątek w wywołaniu funkcji [StartProfile](../profiling/startprofile.md) .
+ Poniższy przykład ilustruje PROFILE_CURRENTID. W przykładzie użyto PROFILE_CURRENTID jako parametru identyfikującego bieżący wątek w wywołaniu funkcji [StartProfile.](../profiling/startprofile.md)
 
 ```cpp
 void ExerciseProfileCurrentID()
@@ -58,8 +58,8 @@ void ExerciseProfileCurrentID()
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do interfejsu API profilera programu Visual Studio (natywne)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [NameProfile](../profiling/nameprofile.md)
 - [ResumeProfile](../profiling/resumeprofile.md)
 - [StartProfile](../profiling/startprofile.md)

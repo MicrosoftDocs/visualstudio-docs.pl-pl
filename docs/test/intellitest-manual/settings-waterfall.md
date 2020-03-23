@@ -1,5 +1,5 @@
 ---
-title: Ustawienia kaskadowe | Narzędzie testowe dla deweloperów Microsoft IntelliTest
+title: Ustawienia wodospadu | Narzędzie testowe Microsoft IntelliTest Developer
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,23 +10,23 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591583"
 ---
 # <a name="settings-waterfall"></a>Kaskadowy model ustawień
 
-Koncepcja ustawień kaskadowych oznacza, że użytkownik może określić ustawienia na poziomie **zestawu**, **osprzętu**i **eksploracji** :
+Koncepcja wodospadu ustawień oznacza, że użytkownik może określić ustawienia na poziomie **Zestawu,** **Oprawa**i **Eksploracja:**
 
-* Zestaw — [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
-* Armatura — [PexClass](attribute-glossary.md#pexclass)
-* Eksploracja — [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
+* Montaż - [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
+* Oprawa - [PexClass](attribute-glossary.md#pexclass)
+* Eksploracja - [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
 
-Ustawienia określone na poziomie **zestawu** mają wpływ na wszystkie armaturę i eksplorację w tym zestawie. Ustawienia określone na poziomie **armatury** mają wpływ na wszystkie eksploracje w ramach tej armatury. Ustawienia podrzędne win&mdash;, jeśli ustawienie jest zdefiniowane na poziomie **zestawu** i poziomów **armatury** , są używane ustawienia **osprzętu** .
+Ustawienia określone na poziomie **złożenia** mają wpływ na wszystkie umocowania i eksploracji w ramach tego zestawu. Ustawienia określone na poziomie **urządzenia** wpływają na wszystkie eksploracje w ramach tego urządzenia. Ustawienia podrzędne&mdash;wygrywają, jeśli ustawienie jest zdefiniowane na poziomach **złożenia** i **umocowania,** używane są ustawienia **terminowania.**
 
-Należy zauważyć, że niektóre ustawienia są specyficzne dla poziomu **zestawu** lub poziomu **osprzętu** .
+Należy zauważyć, że niektóre ustawienia są specyficzne dla poziomu **złożenia** lub **poziom umocowania.**
 
 **Przykład**
 
@@ -46,6 +46,6 @@ namespace MyTests
 }
 ```
 
-## <a name="got-feedback"></a>Chcesz przekazać opinię?
+## <a name="got-feedback"></a>Chcesz przesłać opinię?
 
-Publikuj swoje pomysły i żądania funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Opublikuj swoje pomysły i sugestie funkcji w [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

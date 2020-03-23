@@ -1,5 +1,5 @@
 ---
-title: ProjectExtensions — — element (MSBuild) | Microsoft Docs
+title: Element wyeksbuzji projektu (MSBuild) | Dokumenty firmy Microsoft
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632969"
 ---
-# <a name="projectextensions-element-msbuild"></a>ProjectExtensions —, element (MSBuild)
+# <a name="projectextensions-element-msbuild"></a>Element ProjectExtensions (MSBuild)
 
-Zezwala na pliki projektu MSBuild zawierające informacje inne niż MSBuild. Wszystkie elementy wewnątrz elementu `ProjectExtensions` zostaną zignorowane przez MSBuild.
+Umożliwia msbuild plików projektu zawierają informacje inne niż MSBuild. Wszystko wewnątrz `ProjectExtensions` elementu zostaną zignorowane przez MSBuild.
 
- \<Project > \<ProjectExtensions — >
+ \<> \<> projektu> projectextensions
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,25 +45,25 @@ Zezwala na pliki projektu MSBuild zawierające informacje inne niż MSBuild. Wsz
 
 ### <a name="attributes"></a>Atrybuty
 
- None
+ Brak
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
- None
+ Brak
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [Projektu](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
+| [Project](../msbuild/project-element-msbuild.md) | Wymagany element główny pliku projektu MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
 
- Tylko jeden element `ProjectExtensions` może być używany w projekcie programu MSBuild.
+ Tylko `ProjectExtensions` jeden element może być używany w projekcie MSBuild.
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu przedstawia informacje z zintegrowanego środowiska programistycznego, które są przechowywane w `ProjectExtensions` elemencie.
+ Poniższy przykład kodu pokazuje informacje ze zintegrowanego `ProjectExtensions` środowiska programistycznego przechowywane w elemencie.
 
 ```xml
 <ProjectExtensions>
@@ -80,4 +80,4 @@ Zezwala na pliki projektu MSBuild zawierające informacje inne niż MSBuild. Wsz
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [Msbuild](../msbuild/msbuild.md)

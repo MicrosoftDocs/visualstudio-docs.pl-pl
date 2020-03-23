@@ -1,5 +1,5 @@
 ---
-title: Analizowanie użycia sieci w aplikacjach platformy UWP
+title: Analizowanie użycia sieci w aplikacjach platformy uniwersalnej systemu Windows
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,71 +11,71 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 16c17c6f39980b115b34869fdc6b4912ca94ab0b
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73144701"
 ---
-# <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
-Narzędzie Diagnostyka **sieci** programu Visual Studio zbiera dane dotyczące operacji sieciowych wykonywanych przy użyciu [interfejsu API Windows. Web. http](/uwp/api/windows.web.http). Analizowanie danych może pomóc w rozwiązywaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, niepoprawna pamięć podręczna oraz niska wydajność wyświetlania i pobierania.
+# <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy uniwersalnej systemu Windows
+Narzędzie diagnostyczne usługi Visual Studio **Network** zbiera dane dotyczące operacji sieciowych wykonywanych za pomocą [interfejsu API windows.web.http](/uwp/api/windows.web.http). Analizowanie danych może pomóc w rozwiązaniu problemów, takich jak problemy z dostępem i uwierzytelnianiem, nieprawidłowe użycie pamięci podręcznej oraz niska wydajność wyświetlania i pobierania.
 
- Narzędzie sieciowe obsługuje tylko aplikacje platformy UWP. Inne platformy nie są w tej chwili obsługiwane.
+ Narzędzie Sieć obsługuje tylko aplikacje platformy uniwersalnej systemu Windows. Inne platformy nie są obecnie obsługiwane.
 
 > [!NOTE]
-> Aby zapoznać się z bardziej szczegółowym opisem narzędzia sieci, zobacz [wprowadzenie do narzędzia sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
+> Aby uzyskać pełniejszy opis narzędzia Sieć, zobacz [Wprowadzenie narzędzia sieciowego programu Visual Studio](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/).
 
 ## <a name="collect-network-tool-data"></a>Zbieranie danych narzędzia sieciowego
- Należy uruchomić narzędzie **sieciowe** z otwartym projektem programu Visual Studio na komputerze z programem Visual Studio.
+ Należy uruchomić narzędzie **sieć** z otwartym projektem programu Visual Studio na komputerze z programem Visual Studio.
 
 1. Otwórz projekt w programie Visual Studio.
 
-2. W menu kliknij pozycję **Debuguj/Performance Profiler**. Wybierz pozycję **Sieć**, a następnie wybierz pozycję **Uruchom**.
+2. W menu kliknij przycisk **Debug / Profiler wydajności**. Wybierz pozycję **Sieć**, a następnie wybierz pozycję **Start**.
 
-3. Narzędzie sieciowe rozpocznie zbieranie ruchu HTTP aplikacji.
+3. Narzędzie sieciowe rozpoczyna zbieranie ruchu HTTP aplikacji.
 
-    Po uruchomieniu aplikacji Widok podsumowania w okienku po lewej stronie automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku Podsumowanie, aby wyświetlić więcej informacji w panelu Szczegóły w okienku po prawej stronie.
+    Podczas uruchamiania aplikacji widok podsumowania w lewym okienku automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku podsumowania, aby wyświetlić więcej informacji w panelu szczegółów w prawym okienku.
 
-4. Wybierz pozycję **Zatrzymaj** , aby zamknąć aplikację.
+4. Wybierz **pozycję Zatrzymaj,** aby zamknąć aplikację.
 
-   Okno raportu powinno wyglądać następująco:
+   Okno raportu powinno wyglądać mniej więcej tak:
 
-   ![Okno sieci](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")
+   ![Okno Sieć](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")
 
 ## <a name="analyze-data"></a>Analizowanie danych
- Przechwycony ruch HTTP można analizować, gdy aplikacja jest uruchomiona, a nawet po zamknięciu aplikacji, wybierając dowolną z operacji sieciowych wyświetlanych w widoku Podsumowanie.
+ Możesz analizować przechwycony ruch HTTP, gdy aplikacja jest uruchomiona, a nawet po zamknięciu aplikacji, wybierając dowolną z operacji sieciowych wyświetlanych w widoku podsumowania.
 
- Widok Podsumowanie **sieci** przedstawia dane dla każdej operacji sieciowej w uruchomieniu aplikacji. Wybierz nagłówek kolumny, aby posortować listę, lub wybierz typy zawartości, które mają być wyświetlane w widoku filtr **typu zawartości** .
+ Widok podsumowania **sieci** zawiera dane dla każdej operacji sieciowej w uruchomieniu aplikacji. Wybierz nagłówek kolumny, aby posortować listę, lub wybierz typy zawartości do wyświetlenia w widoku filtru **Typ zawartości.**
 
- Wybierz pozycję **Zapisz jako Har** , aby utworzyć plik JSON, który może być używany przez narzędzia innych firm, takie jak programu Fiddler.
+ Wybierz **zapisz jako HAR,** aby utworzyć plik JSON, który może być zużywany przez narzędzia innych firm, takie jak Fiddler.
 
- Widoki szczegóły **sieci** wyświetlają więcej informacji o operacji sieciowej w widoku Podsumowanie.
+ W widokach **Szczegóły sieci** są wyświetlane więcej informacji o operacji sieciowej w widoku podsumowania.
 
  ![Okienko szczegółów narzędzia sieciowego](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
 |||
 |-|-|
-|**Nagłówka**|Informacje o nagłówkach żądań zdarzenia.|
-|**Jednostce**|Dane ładunku żądania i odpowiedzi.|
-|**Parametry**|Nazwy i wartości parametrów ciągu zapytania.|
-|**Plik cookie**|Odpowiedź i żądanie danych plików cookie.|
-|**Chronometraż**|Wykres etapów pobierania wybranych zasobów.|
+|**Nagłówki**|Informacje o nagłówkach żądań zdarzenia.|
+|**Treść**|Dane ładunku żądania i odpowiedzi.|
+|**Parametry**|Nazwy i wartości parametrów ciągu kwerendy.|
+|**Plik cookie**|Odpowiedzi i żądania danych cookie.|
+|**Chronometraż**|Wykres etapów pozyskiwania wybranych zasobów.|
 
- Na pasku **podsumowania** sieci jest wyświetlana liczba operacji w sieci, które są wyświetlane w danym momencie, ilość transferowanych danych, czas ich pobrania oraz liczba błędów (żądań z odpowiedziami 4xx lub 5xx).
+ Pasek **podsumowania** sieci pokazuje liczbę operacji sieciowych wyświetlanych w danym momencie, ilość przesłanych danych, czas ich pobrania i liczbę błędów (żądania z odpowiedziami 4xx lub 5xx).
 
-### <a name="analysis-tips"></a>Porady dotyczące analizy
- To narzędzie wyróżnia pewne obszary, które mogą być przydatne podczas przeprowadzania analizy związanej z siecią:
+### <a name="analysis-tips"></a>Wskazówki dotyczące analizy
+ To narzędzie wyróżnia niektóre obszary, które mogą być przydatne podczas analizy związanej z siecią:
 
-1. Żądania, które są w pełni obsługiwane z pamięci podręcznej, są wyświetlane jako **(z pamięci podręcznej)** w kolumnie **odebrane** . Może to pomóc w ustaleniu, czy pamięć podręczna jest wydajnie używana do oszczędzania przepustowości użytkowników, czy też w przypadku buforowania odpowiedzi przez pomyłkę i dostarczenie użytkownikom końcowym aplikacji nieaktualnymi danymi.
+1. Żądania, które są w pełni obsługiwane z pamięci podręcznej są wyświetlane jako **(z pamięci podręcznej)** w **Odebrane** kolumny. Może to pomóc w określeniu, czy pamięć podręczna jest skutecznie obsługiwana do zapisywania przepustowości użytkownika, czy też buforowanie odpowiedzi przez pomyłkę i dostarczanie użytkownikowi końcowemu aplikacji nieaktualnych danych.
 
-2. Odpowiedzi na błędy (4xx lub 5xx) są wyświetlane w kolumnie **wyniki** z czerwonym kodem stanu i są również wyróżnione na pasku podsumowania. Dzięki temu można łatwo wyróżnić błędy między wieloma potencjalnymi żądaniami w aplikacji.
+2. Odpowiedzi na błędy (4xx lub 5xx) są wyświetlane w kolumnie **Wyniki** z czerwonym kodem stanu i są również wyróżnione na pasku podsumowania. Ułatwia to wykrywanie błędów wśród wielu potencjalnych żądań w aplikacji.
 
-3. Przycisk "Łatwa drukowanie" odpowiedzi (na karcie Body) może pomóc w analizie danych w postaci notacji JSON, XML, HTML, CSS, JavaScript i języka TypeScript przez zwiększenie czytelności zawartości.
+3. Przycisk drukowania (wewnątrz karty treści) może pomóc w analizacji ładunków odpowiedzi JSON, XML, HTML, CSS, JavaScript i TypeScript, zwiększając czytelność zawartości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Blog programu Visual Studio: wprowadzenie do Inspektora sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)
-- [Wideo Channel 9: narzędzia diagnostyczne VS — Nowy Profiler sieci](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
+- [Blog programu Visual Studio: Wprowadzenie inspektora sieci programu Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Kanał 9 Wideo: Narzędzia diagnostyczne VS - nowy profiler sieciowy](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Profilowanie w programie Visual Studio](../profiling/index.yml)
 - [Pierwsze spojrzenie na narzędzia profilowania](../profiling/profiling-feature-tour.md)

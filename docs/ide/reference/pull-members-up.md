@@ -1,5 +1,5 @@
 ---
-title: Obudowach elementów członkowskich
+title: Pociągnij członków w górę
 ms.date: 02/13/2019
 ms.topic: reference
 author: kendrahavens
@@ -11,43 +11,43 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969183"
 ---
-# <a name="pull-members-up"></a>Obudowach elementów członkowskich
+# <a name="pull-members-up"></a>Pociągnij członków w górę
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Co:** Pozwala na ściąganie członków typu podstawowego.
+**Co:** Umożliwia wyciągnięcie elementów członkowskich do typu podstawowego.
 
-**Kiedy:** Udało Ci się wdrożyć interfejs i chcesz przenieść element członkowski do typu podstawowego.
+**Kiedy:** Zaimplementowano interfejs i chcesz przenieść element członkowski do typu podstawowego.
 
-**Dlaczego:** Ściąganie elementów członkowskich w umożliwia inne implementacje interfejsu dziedziczy tych członków, a także.
+**Dlaczego?** Ciągnięcie członków w górę umożliwia inne implementacje interfejsu do dziedziczenia tych elementów członkowskich, jak również.
 
-## <a name="how-to"></a>Instrukcje
+## <a name="how-to"></a>Porady
 
-1. Umieść kursor w dowolnym członkiem zaimplementowany interfejs.
-2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+1. Umieść kursor w dowolnym elementów członkowskich zaimplementowanego interfejsu.
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
 
-   ![Obudowach elementów członkowskich](media/pull-members-up.png)
+   ![Pociągnij członków w górę](media/pull-members-up.png)
 
-2. Wybierz **pobierania członków typu podstawowego**.
+2. Wybierz **opcję Pociągnij elementy członkowskie do typu bazowego**.
 
-3. W oknie dialogowym Wybierz elementy członkowskie, które chcesz dodać do wybranego interfejsu.
+3. W oknie dialogowym wybierz elementy członkowskie, które chcesz dodać do wybranego interfejsu.
 
-   ![Obudowach element członkowski](media/pull-members-up-dialog.png)
+   ![Pociągnij członka w górę](media/pull-members-up-dialog.png)
 
-4. Wybierz **OK**. Zaznaczone elementy członkowskie są pobierane w do interfejsu.
+4. Wybierz pozycję **OK**. Wybrane elementy członkowskie są ściągane do interfejsu.
 
-   ![Obudowach element członkowski ukończone](media/pull-members-up-completed.png)
+   ![Pociągnij element członkowski w górę ukończony](media/pull-members-up-completed.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

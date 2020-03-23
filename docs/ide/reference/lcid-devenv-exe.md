@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77557936"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
-Ustawia domyślny język używany na potrzeby tekstu, waluty i innych wartości w IDE.
+Ustawia domyślny język używany dla tekstu, waluty i innych wartości w środowisku IDE.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,24 +37,24 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>Argumenty
 
-- *LocaleID*
+- *Localeid*
 
   Wymagany. Identyfikator ustawień regionalnych (LCID) określonego języka.
 
 ## <a name="remarks"></a>Uwagi
 
-Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest utrwalana między sesjami, a środowisko IDE pokazuje tę zmianę w obszarze **narzędzia** > **opcje** > **środowisku** > **Ustawienia międzynarodowe** > **języka** .
+Ładuje IDE i ustawia domyślny język naturalny dla środowiska. Ta zmiana jest zachowywana między sesjami, a IDE pokazuje tę zmianę w**polu** Język**ustawień międzynarodowych** > **ustawień** > **Environment** > środowiska **narzędzi.** > 
 
-Jeśli określony język nie jest dostępny w systemie, przełącznik `/LCID` jest ignorowany.
+Jeśli określony język nie jest dostępny w `/LCID` systemie, przełącznik jest ignorowany.
 
-W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych przez program Visual Studio.
+W poniższej tabeli wymieniono identyfikatory LCID języków obsługiwanych przez program Visual Studio.
 
-|Język|LCID|
+|Język|Identyfikator LCID|
 |--------------|----------|
 |Chiński uproszczony|2052|
 |Chiński (tradycyjny)|1028|
 |Czeski|1029|
-|Polski|1033|
+|Polski|1045|
 |Francuski|1036|
 |Niemiecki|1031|
 |Włoski|1040|
@@ -68,7 +68,7 @@ W poniższej tabeli przedstawiono identyfikatory LCID języków obsługiwanych p
 
 ## <a name="example"></a>Przykład
 
-Ten przykład ładuje środowisko IDE z ciągami zasobów w języku angielskim.
+W tym przykładzie ładuje IDE z ciągami zasobów w języku angielskim.
 
 ```shell
 devenv /LCID 1033
@@ -76,6 +76,6 @@ devenv /LCID 1033
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Ustawienia międzynarodowe, Środowisko, Opcje — okno dialogowe](../../ide/reference/international-settings-environment-options-dialog-box.md)
 - [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md)

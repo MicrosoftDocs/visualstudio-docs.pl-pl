@@ -1,5 +1,5 @@
 ---
-title: Żadnej aktywności wątku do pokazania (Widok wątków) | Dokumentacja firmy Microsoft
+title: Brak aktywności wątku do wyświetlenia (widok wątków) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,24 +13,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794471"
 ---
-# <a name="no-thread-activity-to-show-threads-view"></a>Żadnej aktywności wątku, aby pokazać (Widok wątków)
-Ten obszar zawiera dane dotyczące odkrywanie wątków w aktualnie widocznym zakresie czasu.
+# <a name="no-thread-activity-to-show-threads-view"></a>Brak działania wątku do wyświetlenia (widok wątków)
+Ten obszar zawiera dane dotyczące wątków nieuprzejmych w aktualnie widocznym zakresie czasu.
 
- Jeśli informacje nie są widoczne, sprawdź następujące ustawienia:
+ Jeśli żadne informacje nie są widoczne, sprawdź następujące ustawienia:
 
-- Poziom powiększenia jest wysoka? Spróbuj powiększanie out lub przewijania, aby wyświetlić więcej aktywności wątku w zakresie.
+- Czy poziom powiększenia jest wysoki? Spróbuj pomniejszyć lub przewinąć, aby uzyskać większą aktywność wątku w zasięgu.
 
-- Zbyt wiele wątków jest ukryty? Jeśli tak, spróbuj, przedstawiający wszystkie wątki
+- Czy zbyt wiele wątków jest ukrytych? Jeśli tak, spróbuj pokazać wszystkie wątki
 
-- Jeśli **tylko mój kod** jest wybrana, można przeglądać tylko dane o swoim kodzie. Spróbuj wyczyścić to ustawienie, aby ustalić, czy występuje aktywność wątek systemu.
+- Jeśli wybrano **opcję Tylko mój kod,** można wyświetlać tylko dane dotyczące kodu. Spróbuj wyczyścić ustawienie, aby upewnić się, czy istnieje jakaś aktywność wątku systemowego.
 
-- Upewnij się, że redukcja szumów jest ustawiona na progu dolnego.
+- Upewnij się, że redukcja szumów jest ustawiona na niski próg.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

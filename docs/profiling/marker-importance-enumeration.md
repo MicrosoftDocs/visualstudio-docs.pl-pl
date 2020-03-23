@@ -1,5 +1,5 @@
 ---
-title: Wyliczenie marker_importance | Dokumentacja firmy Microsoft
+title: Marker_importance Wyliczenie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62999960"
 ---
-# <a name="markerimportance-enumeration"></a>marker_importance — wyliczenie
-Reprezentuje poziom ważności znaczników narzędzia Concurrency Visualizer.
+# <a name="marker_importance-enumeration"></a>marker_importance wyliczenie
+Reprezentuje poziom ważności znacznika wizualizatora współbieżności.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,15 +34,15 @@ enum marker_importance;
 
 |Nazwa|Opis|
 |----------|-----------------|
-|`critical_importance`|Określa, że znacznika ma krytyczne znaczenie.|
-|`high_importance`|Określa, że znacznika ma o wysokiej ważności.|
-|`low_importance`|Określa, że znacznika ma niską ważnością.|
-|`normal_importance`|Określa, że znacznika ma znaczenie normalny.|
+|`critical_importance`|Określa, że znacznik ma kluczowe znaczenie.|
+|`high_importance`|Określa, że znacznik ma duże znaczenie.|
+|`low_importance`|Określa, że znacznik ma niskie znaczenie.|
+|`normal_importance`|Określa, że znacznik ma normalne znaczenie.|
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkersobj.h*
 
- **Namespace:** CONCURRENCY::Diagnostic —
+ **Obszar nazw:** Współbieżność::dignostyk
 
-## <a name="see-also"></a>Zobacz także
-- [Diagnostic — przestrzeń nazw](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Zobacz też
+- [diagnostyczna przestrzeń nazw](../profiling/diagnostic-namespace.md)

@@ -15,27 +15,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75592259"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Instrukcje: Dodawanie komentarzy do diagramów klas
+# <a name="how-to-add-comments-to-class-diagrams"></a>Jak: Dodawanie komentarzy do diagramów klas
 
-Za pomocą kształtów komentarzy można dodawać adnotacje do diagramów klas. Kształt komentarza ma jedną właściwość, **tekst**, w którym można wpisać tekst. Kształty komentarzy istnieją tylko na powierzchni diagramu, a nie w kodzie.
+Do donotowania diagramów klas można używać kształtów komentarzy. Kształt komentarza ma jedną właściwość **Tekst**, do której można wpisać tekst. Kształty komentarzy istnieją tylko na powierzchni diagramu, a nie w kodzie.
 
-Komentarz znajduje się w widoku diagramu klas w **Projektant klas**. Jeśli otworzysz drugi diagram klasy do tego samego projektu, komentarze utworzone w pierwszym widoku nie będą widoczne. Usunięcie diagramu spowoduje również usunięcie wszystkich zawartych w nim komentarzy.
+Komentarz znajduje się w widoku diagramu klasy w **Projektancie klas**. Jeśli otworzysz diagram drugiej klasy na tym samym projekcie, komentarze utworzone w pierwszym widoku nie będą widoczne. Jeśli usuniesz diagram, wszystkie zawarte w nim komentarze również zostaną usunięte.
 
-Można zmienić rozmiar kształtu komentarza, ale nie można zmienić innych aspektów jego wyglądu, takich jak kolor tła, czcionka lub rozmiar czcionki.
+Można zmienić rozmiar kształtu komentarza, ale nie można zmieniać innych aspektów jego wyglądu, takich jak kolor tła, czcionka lub rozmiar czcionki.
 
 ## <a name="to-add-a-comment"></a>Aby dodać komentarz
 
-1. Przeciągnij komentarz z **przybornika Projektant klas** na Diagram klas.
+1. Przeciągnij komentarz z **zestawu narzędzi Projektanta klas** na diagram klasy.
 
-2. Kliknij nowy kształt komentarza na diagramie i wpisz żądany tekst.
+2. Kliknij nowy kształt komentarza na diagramie i wpisz odpowiedni tekst.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Pracuj z diagramami klas](designing-and-viewing-classes-and-types.md)
-- [Instrukcje: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md)
+- [Praca z diagramami klas](designing-and-viewing-classes-and-types.md)
+- [Jak: Dostosowywanie diagramów klas](how-to-customize-class-diagrams.md)

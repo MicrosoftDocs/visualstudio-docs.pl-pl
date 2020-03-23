@@ -1,55 +1,55 @@
 ---
 title: Dołączanie pakietu NuGet do projektu
-description: W tym dokumencie opisano sposób dołączania pakietu NuGet w projekcie przy użyciu Visual Studio dla komputerów Mac. Przeprowadza on wyszukiwanie i pobieranie pakietu, a także przedstawia funkcje integracji IDE.
+description: W tym dokumencie opisano, jak dołączyć pakiet NuGet w projekcie przy użyciu programu Visual Studio dla komputerów Mac. Przechodzi przez znajdowanie i pobieranie pakietu, a także wprowadzenie funkcji integracji IDE.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
 ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74127238"
 ---
-# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalowanie pakietów NuGet i zarządzanie nimi w Visual Studio dla komputerów Mac
+# <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalowanie pakietów NuGet i zarządzanie nimi w programie Visual Studio dla komputerów Mac
 
-Interfejs użytkownika Menedżera pakietów NuGet w Visual Studio dla komputerów Mac umożliwia łatwe instalowanie, Odinstalowywanie i aktualizowanie pakietów NuGet w projektach i rozwiązaniach. Można wyszukiwać i dodawać pakiety do projektów .NET Core, ASP.NET Core i Xamarin.
+Interfejs użytkownika Menedżera pakietów NuGet w programie Visual Studio dla komputerów Mac umożliwia łatwe instalowanie, odinstalowywanie i aktualizowanie pakietów NuGet w projektach i rozwiązaniach. Można wyszukiwać i dodawać pakiety do projektów .NET Core, ASP.NET Core i Xamarin.
 
-W tym artykule opisano sposób dołączania pakietu NuGet do projektu i zademonstrowania łańcucha narzędzi, który sprawia, że proces jest płynny.
+W tym artykule opisano, jak dołączyć pakiet NuGet w projekcie i demonstruje łańcuch narzędzi, który sprawia, że proces bezproblemowe.
 
-Aby zapoznać się z wprowadzeniem do korzystania z narzędzia NuGet w Visual Studio dla komputerów Mac, zobacz [Szybki Start: Instalowanie i używanie pakietu w programie Visual Studio dla komputerów Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
+Aby uzyskać wprowadzenie do korzystania z programu NuGet w programie Visual Studio dla komputerów Mac, zobacz [Szybki start: Instalowanie i używanie pakietu w programie Visual Studio dla komputerów Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
 ## <a name="find-and-install-a-package"></a>Znajdowanie i instalowanie pakietu
 
-1. Gdy projekt jest otwarty w Visual Studio dla komputerów Mac, kliknij prawym przyciskiem myszy folder **zależności** (**pakiety** , jeśli używany jest projekt Xamarin) w **okienko rozwiązania** i wybierz pozycję **Zarządzaj pakietami NuGet..** ..
+1. Po otwarciu projektu w programie Visual Studio dla **komputerów** Mac kliknij prawym przyciskiem myszy folder Zależności **(Folder Pakiety,** jeśli używasz projektu platformy Xamarin) w **panelu rozwiązania** i wybierz pozycję **Zarządzaj pakietami NuGet...**.
 
-    ![Dodaj nową akcję kontekstu pakietu NuGet](media/nuget-walkthrough-packages-menu.png)
+    ![Dodawanie nowej akcji kontekstu pakietu NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. Spowoduje to uruchomienie okna **Zarządzanie pakietami NuGet** . Upewnij się, że lista rozwijana źródła w lewym górnym rogu okna dialogowego jest ustawiona na `nuget.org`, aby przeszukać centralne repozytorium pakietów NuGet.
+2. Spowoduje to uruchomienie okna **Zarządzanie pakietami NuGet.** Upewnij się, że źródło listy rozwijanej w lewym `nuget.org`górnym rogu okna dialogowego jest ustawiona na , tak aby przeszukiwać centralne repozytorium pakietów NuGet.
 
-    ![Wyświetl listę pakietów NuGet](media/nuget-walkthrough-add-packages1.png)
+    ![Lista pakietów NuGet](media/nuget-walkthrough-add-packages1.png)
 
-3. Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć konkretny pakiet, na przykład `EntityFramework`. Po znalezieniu pakietu, którego chcesz użyć, zaznacz go, a następnie kliknij przycisk **Dodaj pakiet** , aby rozpocząć instalację.
+3. Użyj pola wyszukiwania w prawym górnym rogu, aby znaleźć `EntityFramework`określony pakiet, na przykład . Po znalezieniu pakietu, którego chcesz użyć, zaznacz go i kliknij przycisk **Dodaj pakiet,** aby rozpocząć instalację.
 
-    ![Dodaj pakiet NuGet EntityFramework](media/nuget-walkthrough-add-packages2.png)
+    ![Dodaj pakiet NuGet entityframework](media/nuget-walkthrough-add-packages2.png)
 
 4. Po pobraniu pakietu zostanie on dodany do projektu. Rozwiązanie zmieni się w zależności od typu edytowanego projektu:
 
     **Projekty platformy Xamarin**
-    * Węzeł **References** będzie zawierać listę wszystkich zestawów, które są częścią pakietu NuGet.
-    * Węzeł **pakiety** wyświetla każdy pobrany pakiet NuGet. Możesz zaktualizować lub usunąć pakiet z tej listy.
+    * **Węzeł Odwołania** będzie zawierać listę wszystkich zestawów, które są częścią pakietu NuGet.
+    * Węzeł **Pakiety** wyświetla każdy pobrany pakiet NuGet. Pakiet można zaktualizować lub usunąć z tej listy.
     
-    **Projekty .NET Core**
+    **Podstawowe projekty platformy .NET**
 
-    * **Zależności > węźle NuGet** wyświetla każdy pobrany pakiet NuGet. Możesz zaktualizować lub usunąć pakiet z tej listy.
+    * **Zależności > węzła NuGet** wyświetla każdy pobrany pakiet NuGet. Pakiet można zaktualizować lub usunąć z tej listy.
 
 ## <a name="using-nuget-packages"></a>Korzystanie z pakietów NuGet
 
-Po dodaniu pakietu NuGet wraz z aktualizacją projektu można programować względem interfejsów API, tak jak w przypadku dowolnego odwołania do projektu.
+Po dodaniu pakietu NuGet i zaktualizowano odwołania do projektu, można programować względem interfejsów API, tak jak w przypadku dowolnego odwołania do projektu.
 
-Upewnij się, że wszystkie wymagane dyrektywy `using` są dodawane na początku pliku:
+Upewnij się, że `using` dodasz wszystkie wymagane dyrektywy do górnej części pliku:
 
 ```csharp
 using Newtonsoft.Json;
@@ -59,67 +59,67 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Aktualizowanie pakietów
 
-Aktualizacje pakietu można wykonać wszystkie naraz, klikając prawym przyciskiem myszy węzeł **zależności** (węzeł**pakiety** dla projektów platformy Xamarin) lub indywidualnie dla każdego pakietu. Po udostępnieniu nowej wersji pakietu NuGet ikona aktualizacji zostanie wyświetlona ![strzałkę w górę z kółkiem](media/nuget-walkthrough-update-icon.png).
+Aktualizacje pakietu można wykonać wszystkie na raz, klikając prawym przyciskiem myszy węzeł **zależności** **(węzeł Pakiety** dla projektów platformy Xamarin) lub indywidualnie w każdym pakiecie. Gdy dostępna jest nowa wersja pakietu NuGet, ![pojawi się](media/nuget-walkthrough-update-icon.png)ikona aktualizacji w górę z kółkiem .
 
-Kliknij prawym przyciskiem myszy pozycję **zależności** , aby uzyskać dostęp do menu kontekstowego, a następnie wybierz polecenie **Aktualizuj** , aby zaktualizować wszystkie pakiety:
+Kliknij prawym przyciskiem myszy **zależności,** aby uzyskać dostęp do menu kontekstowego i wybierz **pozycję Aktualizuj,** aby zaktualizować wszystkie pakiety:
 
-![Menu pakiety](media/nuget-walkthrough-packages-menu-update.png)
+![Menu Pakiety](media/nuget-walkthrough-packages-menu-update.png)
 
-* **Zarządzanie pakietami NuGet** — otwiera okno w celu dodania kolejnych pakietów do projektu.
-* **Update** — sprawdza serwer źródłowy dla każdego pakietu i pobiera nowsze wersje.
-* **Restore** — pobiera wszystkie brakujące pakiety (bez aktualizowania istniejących pakietów do nowszych wersji).
+* **Zarządzanie pakietami NuGet** — otwiera okno, aby dodać więcej pakietów do projektu.
+* **Aktualizacja** — sprawdza serwer źródłowy dla każdego pakietu i pobiera wszystkie nowsze wersje.
+* **Przywracanie** — pobiera brakujące pakiety (bez aktualizowania istniejących pakietów do nowszych wersji).
 
-Opcje aktualizacji i przywracania są również dostępne na poziomie rozwiązania i wpływają na wszystkie projekty w rozwiązaniu.
+Opcje aktualizacji i przywracania są również dostępne na poziomie rozwiązania i mają wpływ na wszystkie projekty w rozwiązaniu.
 
 ### <a name="locating-outdated-packages"></a>Lokalizowanie nieaktualnych pakietów
-W konsoli rozwiązania możesz zobaczyć, która wersja pakietu jest aktualnie zainstalowana, a następnie kliknij prawym przyciskiem myszy pakiet, który chcesz zaktualizować.
+Z konsoli rozwiązania można wyświetlić, jaka wersja pakietu jest aktualnie zainstalowana i kliknąć prawym przyciskiem myszy pakiet do aktualizacji.
 
-![Menu pakiety z opcjami do zaktualizowania, usunięcia, odświeżenia](media/nuget-walkthrough-PackageMenu.png)
+![Menu Pakiety z opcjami Aktualizacji, Usuń, Odśwież](media/nuget-walkthrough-PackageMenu.png)
 
-Po udostępnieniu nowej wersji pakietu zobaczysz powiadomienie obok nazwy pakietu, dzięki czemu możesz zdecydować, czy chcesz ją zaktualizować.
+Zostanie również wyświetlone powiadomienie obok nazwy pakietu, gdy dostępna jest nowa wersja pakietu, więc możesz zdecydować, czy możesz go zaktualizować.
 
 ![Powiadomienie wyświetlane, gdy dostępna jest nowa wersja pakietu](media/nuget-walkthrough-package-update-available.png)
 
-W wyświetlonym menu są dostępne dwie opcje:
+W wyświetlonym menu dostępne są dwie opcje:
 
-* **Update** — sprawdza serwer źródłowy i pobiera nowszą wersję (jeśli istnieje).
-* **Usuń** — usuwa pakiet z tego projektu i usuwa odpowiednie zestawy z odwołań projektu.
+* **Aktualizacja** — sprawdza serwer źródłowy i pobiera nowszą wersję (jeśli istnieje).
+* **Usuń** — usuwa pakiet z tego projektu i usuwa odpowiednie zestawy z odwołania projektu.
 
-## <a name="manage-packages-for-the-solution"></a>Zarządzaj pakietami dla rozwiązania
+## <a name="manage-packages-for-the-solution"></a>Zarządzanie pakietami dla rozwiązania
 
 Zarządzanie pakietami dla rozwiązania jest wygodnym sposobem pracy z wieloma projektami jednocześnie.
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Zarządzaj pakietami NuGet...** :
+1. Kliknij prawym przyciskiem myszy rozwiązanie i wybierz pozycję **Zarządzaj pakietami NuGet...**:
 
-    ![Zarządzaj pakietami NuGet dla rozwiązania](media/nuget-walkthrough-manage-packages-solution.png)
+    ![Zarządzanie pakietami NuGet dla rozwiązania](media/nuget-walkthrough-manage-packages-solution.png)
 
-1. Podczas zarządzania pakietami dla rozwiązania interfejs użytkownika umożliwia wybranie projektów, na które mają wpływ operacje:
+1. Podczas zarządzania pakietami dla rozwiązania interfejsu użytkownika pozwala wybrać projekty, których dotyczą operacje:
 
     ![Selektor projektu podczas zarządzania pakietami dla rozwiązania](media/nuget-walkthrough-add-to-projects.png)
 
-### <a name="consolidate-tab"></a>Karta konsolidowanie
+### <a name="consolidate-tab"></a>Karta Konsolidacja
 
-W przypadku pracy w rozwiązaniu z wieloma projektami uważa się, że najlepszym rozwiązaniem jest upewnienie się, że każdy z nich korzysta z tego samego pakietu NuGet w każdym projekcie, ale również korzysta z tego samego numeru wersji tego pakietu. Visual Studio dla komputerów Mac pomaga to ułatwić, dostarczając kartę **konsolidacji** w interfejsie użytkownika Menedżera pakietów, gdy zdecydujesz się na zarządzanie pakietami dla rozwiązania. Za pomocą tej karty można łatwo zobaczyć, gdzie pakiety z unikatowymi numerami wersji są używane przez różne projekty w rozwiązaniu:
+Podczas pracy w rozwiązaniu z wieloma projektami, jest uważane za najlepsze rozwiązanie, aby upewnić się, że w dowolnym miejscu używasz tego samego pakietu NuGet w każdym projekcie, używasz również tego samego numeru wersji tego pakietu. Program Visual Studio dla komputerów Mac ułatwia to, udostępniając kartę **Konsolidacja** w interfejsie użytkownika Menedżera pakietów, gdy użytkownik zdecyduje się zarządzać pakietami dla rozwiązania. Za pomocą tej karty można łatwo zobaczyć, gdzie pakiety z odrębnymi numerami wersji są używane przez różne projekty w rozwiązaniu:
 
-![Karta konsolidacja interfejsu użytkownika Menedżera pakietów](media/nuget-walkthrough-consolidate-tab.png)
+![Karta Konsolidacja interfejsu użytkownika menedżera pakietów](media/nuget-walkthrough-consolidate-tab.png)
 
-W tym przykładzie projekt NuGetDemo korzysta z Microsoft. EntityFrameworkCore 2,20, natomiast NuGetDemo. Shared jest używany przez Microsoft. EntityFrameworkCore 2.2.6. Aby skonsolidować wersje pakietów, wykonaj następujące czynności:
+W tym przykładzie projekt NuGetDemo używa microsoft.EntityFrameworkCore 2.20, podczas gdy NuGetDemo.Shared używa microsoft.EntityFrameworkCore 2.2.6. Aby skonsolidować wersje pakietów, wykonaj następujące czynności:
 
-- Wybierz projekty do zaktualizowania na liście projektów.
-- Wybierz wersję, która ma być używana we wszystkich projektach z listy **nowej wersji** , np. Microsoft. EntityFrameworkCore 3.0.0.
-- Wybierz przycisk **Konsoliduj pakiet** .
+- Wybierz projekty, które mają być aktualizowane na liście projektów.
+- Wybierz wersję, która ma być używana we wszystkich tych projektach na liście **Nowa wersja,** na przykład Microsoft.EntityFrameworkCore 3.0.0.
+- Wybierz przycisk **Konsolidacja pakietu.**
 
-Menedżer pakietów instaluje wybraną wersję pakietu we wszystkich wybranych projektach, po upływie których pakiet nie jest już wyświetlany na karcie **konsolidowanie** .
+Menedżer pakietów instaluje wybraną wersję pakietu we wszystkich wybranych projektach, po czym pakiet nie jest już wyświetlany na karcie **Konsolidacja.**
 
 ## <a name="adding-package-sources"></a>Dodawanie źródeł pakietów
 
-Pakiety dostępne do instalacji są początkowo pobierane z nuget.org. Można jednak dodać inne lokalizacje pakietu do Visual Studio dla komputerów Mac. Może to być przydatne do testowania własnych pakietów NuGet w środowisku deweloperskim lub do korzystania z prywatnego serwera NuGet w firmie lub organizacji.
+Pakiety dostępne do instalacji są początkowo pobierane z nuget.org. Można jednak dodać inne lokalizacje pakietów do programu Visual Studio dla komputerów Mac. Może to być przydatne do testowania własnych pakietów NuGet w trakcie opracowywania lub do korzystania z prywatnego serwera NuGet wewnątrz firmy lub organizacji.
 
-W Visual Studio dla komputerów Mac przejdź do **okna preferencje > programu Visual Studio, > źródła > NuGet** , aby wyświetlić i edytować listę źródeł pakietów. Należy pamiętać, że źródła mogą być serwerem zdalnym (określonym za pomocą adresu URL) lub katalogiem lokalnym.
+W programie Visual Studio dla komputerów Mac przejdź do **programu Visual Studio > preferencje > Źródła > NuGet,** aby wyświetlić i edytować listę źródeł pakietów. Należy zauważyć, że źródłem może być serwer zdalny (określony przez adres URL) lub katalog lokalny.
 
 ![Źródła pakietów](media/nuget-walkthrough-PackageSource.png)
 
-Kliknij przycisk **Dodaj** , aby skonfigurować nowe źródło. Wprowadź przyjazną nazwę i adres URL (lub ścieżkę pliku) do źródła pakietu. Jeśli źródłem jest bezpieczny serwer sieci Web, wprowadź nazwę użytkownika i hasło. w przeciwnym razie pozostaw te wpisy puste:
+Kliknij **przycisk Dodaj,** aby skonfigurować nowe źródło. Wprowadź przyjazną nazwę i adres URL (lub ścieżkę pliku) do źródła pakietu. Jeśli źródłem jest bezpieczny serwer www, wprowadź nazwę użytkownika i hasło, w przeciwnym razie pozostaw te wpisy puste:
 
 ![Dodawanie źródeł pakietów](media/nuget-walkthrough-PackageSource2.png)
 
@@ -129,16 +129,16 @@ Podczas wyszukiwania pakietów można wybrać różne źródła:
 
 ## <a name="version-control"></a>Kontrola wersji
 
-Dokumentacja programu NuGet omawia [Korzystanie z programu NuGet bez zatwierdzania pakietów do kontroli źródła](/nuget/consume-packages/packages-and-source-control). Jeśli wolisz, aby nie przechowywać plików binarnych i nieużywanych informacji w kontroli źródła, możesz skonfigurować Visual Studio dla komputerów Mac, aby automatycznie przywracać pakiety z serwera. Oznacza to, że gdy deweloper pobiera projekt z kontroli źródła po raz pierwszy, program Visual Studio dla komputerów Mac automatycznie pobierze i zainstaluje wymagane pakiety.
+Dokumentacja NuGet omówiono [przy użyciu NuGet bez zatwierdzania pakietów do kontroli źródła.](/nuget/consume-packages/packages-and-source-control) Jeśli wolisz nie przechowywać plików binarnych i nieużywanych informacji w formancie źródła, można skonfigurować visual studio dla komputerów Mac, aby automatycznie przywracać pakiety z serwera. Oznacza to, że gdy deweloper pobiera projekt z kontroli źródła po raz pierwszy, Visual Studio dla komputerów Mac automatycznie pobierze i zainstaluje wymagane pakiety.
 
-![Automatycznie Przywróć pakiety](media/nuget-walkthrough-AutoRestore.png)
+![Automatyczne przywracanie pakietów](media/nuget-walkthrough-AutoRestore.png)
 
-Zapoznaj się z określoną dokumentacją kontroli źródła, aby uzyskać szczegółowe informacje na temat wykluczania śledzenia katalogu `packages`.
+Szczegółowe informacje na temat wykluczania śledzonego `packages` katalogu można znaleźć w dokumentacji kontroli określonego źródła.
 
-## <a name="related-video"></a>Pokrewne wideo
+## <a name="related-video"></a>Podobne wideo
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie i używanie pakietu w programie Visual Studio (w systemie Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

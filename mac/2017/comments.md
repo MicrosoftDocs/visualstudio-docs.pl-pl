@@ -1,36 +1,36 @@
 ---
-title: Komentarz do kodu
-description: W tym artykule opisano używanie komentarzy w edytorze źródła Visual Studio dla komputerów Mac
+title: Skomentuj kod
+description: W tym artykule opisano używanie komentarzy w edytorze źródłowym programu Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74982644"
 ---
 # <a name="comments"></a>Komentarze
 
-Podczas debugowania lub eksperymentowania z kodem może być przydatne Dodawanie komentarzy do bloków kodu jako czasowo lub długoterminowe.
+Podczas debugowania lub eksperymentowania z kodem, może być przydatne do komentowania bloków kodu tymczasowo lub długoterminowe.
 
 Aby skomentować cały blok kodu:
 
-* Zaznacz kod i wybierz pozycję **Przełącz Komentarze do wierszy** z menu kontekstowego.
+* Wybierz kod i wybierz polecenie **Przełącz komentarze do wiersza** z menu kontekstowego
 
 LUB
 
-* Użyj `cmd + /` powiązanie klawiszy na wybranym kodzie.
+* Użyj `cmd + /` powiązania klawiszy w wybranym kodzie.
 
-Te metody mogą służyć do komentowania i usuwania komentarzy do sekcji kodu. W C# plikach można dodawać dodatkowe poziomy komentarzy do wierszy, które umożliwiają stosowanie komentarzy do regionów kodów i Dodawanie komentarzy do nich, zachowując jednocześnie rzeczywiste Komentarze:
+Metody te mogą służyć do komentowania i dekomentowania sekcje kodu. W plikach Języka C# można dodać dodatkowe poziomy komentarzy wierszy, co umożliwia komentowanie i brak komentarza w regionach kodów, przy jednoczesnym zachowaniu rzeczywistych komentarzy:
 
-![Komentarze na poziomie kilku](media/source-editor-image8.png)
+![komentarze wielopoziomowe](media/source-editor-image8.png)
 
-Komentarze są również przydatne do dokumentowania kodu dla przyszłych deweloperów, które mogą z nich korzystać. Są one zazwyczaj wykonywane w formie komentarzy wielowierszowych, które są dodawane w następujący sposób w każdym języku:
+Komentarze są również przydatne do dokumentowania kodu dla przyszłych deweloperów, którzy mogą z nim współpracować. Są one zwykle wykonywane w formie komentarzy wielowierszowych, które są dodawane w następujący sposób w każdym języku:
 
-**C#**
+**C #**
 
 ```csharp
 /*
@@ -39,7 +39,7 @@ Komentarze są również przydatne do dokumentowania kodu dla przyszłych dewelo
 */
 ```
 
-**F#**
+**F #**
 
 ```fsharp
 (*
@@ -48,6 +48,6 @@ Komentarze są również przydatne do dokumentowania kodu dla przyszłych dewelo
 *)
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Dodawanie komentarza do kodu (Visual Studio w systemie Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)
+- [Skomentuj kod (Visual Studio w systemie Windows)](/visualstudio/ide/quickstart-editor#comment-out-code)

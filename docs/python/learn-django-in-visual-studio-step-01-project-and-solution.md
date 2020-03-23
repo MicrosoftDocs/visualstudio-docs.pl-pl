@@ -1,7 +1,7 @@
 ---
-title: Poznaj samouczek Django w programie Visual Studio, krok 1, podstawy Django
+title: Dowiedz się samouczek Django w programie Visual Studio, krok 1, podstawy Django
 titleSuffix: ''
-description: Przewodnik podstawy Django w kontekście projektów programu Visual Studio, demonstrując pomocy technicznej programu Visual Studio udostępnia do tworzenia aplikacji Django.
+description: Przewodnik podstawowych Django w kontekście projektów programu Visual Studio, demonstrując wsparcie Visual Studio zapewnia rozwoju Django.
 ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,203 +12,203 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62962261"
 ---
-# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Wprowadzenie do struktury sieci web Django w programie Visual Studio
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Wprowadzenie do struktury sieci Web Django w programie Visual Studio
 
-[Django](https://www.djangoproject.com/) jest przeznaczony do tworzenia aplikacji internetowych szybki, bezpieczny i skalowalny struktura języka Python wysokiego poziomu. W tym samouczku przedstawiono framework Django w kontekście szablonów projektu, które program Visual Studio udostępnia uprościć tworzenie aplikacji sieci web opartych na Django.
+[Django](https://www.djangoproject.com/) to wysokiej klasy struktura Pythona zaprojektowana z myślą o szybkim, bezpiecznym i skalowalnym tworzeniu stron internetowych. W tym samouczku eksploruje platformę Django w kontekście szablonów projektu, które program Visual Studio zapewnia usprawnienie tworzenia aplikacji sieci web opartych na Django.
 
-W tym samouczku dowiesz się, jak:
+Niniejszy samouczek zawiera informacje na temat wykonywania następujących czynności:
 
 > [!div class="checklist"]
-> - Tworzenie podstawowego projektu Django w repozytorium Git przy użyciu szablonu "Pusty projekt sieci Web Django" (krok 1)
-> - Tworzenie aplikacji Django z jednej strony i renderowania tej strony, przy użyciu szablonu (krok 2)
-> - Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia (krok 3)
-> - Szablon projektu sieci Web Django służy do tworzenia aplikacji z wieloma stronami i elastyczne środowisko (krok 4)
-> - Uwierzytelnianie użytkowników (krok 5)
-> - Szablon projektu sieci Web Django sond służy do tworzenia aplikacji używającej modeli, migracje baz danych i dostosowania interfejsu administracyjnego (krok 6)
+> - Utwórz podstawowy projekt Django w repozytorium Git za pomocą szablonu "Blank Django Web Project" (krok 1)
+> - Utwórz aplikację Django za pomocą jednej strony i twórz tę stronę za pomocą szablonu (krok 2)
+> - Obsługa plików statycznych, dodawanie stron i używanie dziedziczenia szablonów (krok 3)
+> - Użyj szablonu Django Web Project, aby utworzyć aplikację z wieloma stronami i responsywnym projektem (krok 4)
+> - Uwierzytelnij użytkowników (krok 5)
+> - Szablon Usługi Polls Django Web Project służy do tworzenia aplikacji, która używa modeli, migracji baz danych i dostosowań do interfejsu administracyjnego (krok 6)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Visual Studio 2017 lub później na Windows przy użyciu następujących opcji:
-  - **Programowania w języku Python** obciążenia (**obciążenia** karty w oknie Instalatora). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
-  - **Git dla Windows** i **rozszerzeniu GitHub Extension for Visual Studio** na **poszczególne składniki** karcie **kodu narzędzia**.
+- Visual Studio 2017 lub nowsze w systemie Windows z następującymi opcjami:
+  - Obciążenie **programistyczne języka Python** **(obciążenie karty** w instalatorze). Aby uzyskać instrukcje, zobacz [Instalowanie obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md).
+  - **Git dla systemu Windows** i **rozszerzenie GitHub dla programu Visual Studio** na karcie Poszczególne **składniki** w obszarze **Narzędzia kodu**.
 
-Szablony projektów Django są również dołączone do wszystkich wcześniejszych wersjach narzędzi Python Tools for Visual Studio, chociaż szczegóły mogą się różnić od co zostało omówione w tym samouczku (szczególnie różni się ze starszymi wersjami struktury Django).
+Szablony projektów Django są również dołączone do wszystkich wcześniejszych wersji narzędzi Python Tools for Visual Studio, chociaż szczegóły mogą różnić się od tego, co zostało omówione w tym samouczku (szczególnie różne we wcześniejszych wersjach struktury Django).
 
-Programowanie w języku Python nie jest obecnie obsługiwana w programie Visual Studio dla komputerów Mac. Na komputerach Mac i Linux, należy użyć [rozszerzenie języka Python w programie Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+Programowanie języka Python nie jest obecnie obsługiwane w programie Visual Studio dla komputerów Mac. Na komputerach Mac i Linux użyj [rozszerzenia Python w programie Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-### <a name="visual-studio-projects-and-django-projects"></a>"Visual Studio" i "Django projektów"
+### <a name="visual-studio-projects-and-django-projects"></a>"Projekty Visual Studio" i "Projekty Django"
 
-W terminologii Django "Projekt Django" składa się z kilku plików konfiguracji na poziomie witryny, wraz z co najmniej jeden "aplikacje" wdrażane w ramach hosta sieci web, aby utworzyć aplikację sieci web o pełny. Projekt Django może zawierać wiele aplikacji, a ta sama aplikacja może znajdować się w wielu projektach Django.
+W terminologii Django "projekt Django" składa się z kilku plików konfiguracyjnych na poziomie witryny wraz z jedną lub kilkoma "aplikacjami", które wdrażasz na hoście internetowym w celu utworzenia pełnej aplikacji internetowej. Projekt Django może zawierać wiele aplikacji, a ta sama aplikacja może być w wielu projektach Django.
 
-Projekt programu Visual Studio ze swojej strony może zawierać projekt Django wraz z wieloma aplikacjami. Dla uproszczenia, należy zawsze wtedy, gdy w tym samouczku odnosi się do właśnie to "Projekt" odwołuje się do projektu programu Visual Studio. Gdy odwołuje się do części "Django projektu" aplikacja sieci web, używa "Django projektu" specjalnie.
+Projekt programu Visual Studio, ze swojej strony, może zawierać projekt Django wraz z wieloma aplikacjami. Ze względu na prostotę, gdy ten samouczek odnosi się tylko do "projektu", odnosi się do projektu programu Visual Studio. Gdy odnosi się do "Projektu Django" część aplikacji internetowej, używa "Projekt Django" specjalnie.
 
-W trakcie tego samouczka utworzysz jedno rozwiązanie Visual Studio zawierający trzy oddzielne projekty Django, z których każdy zawiera pojedynczą aplikację Django. Przechowując projektów w tym samym rozwiązaniu, można łatwo przełączać i z powrotem między różnych plików do porównania.
+W trakcie tego samouczka utworzysz jedno rozwiązanie programu Visual Studio, które zawiera trzy oddzielne projekty Django, z których każdy zawiera jedną aplikację Django. Utrzymując projekty w tym samym rozwiązaniu, można łatwo przełączać się między różnymi plikami do porównania.
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: Tworzenie projektu programu Visual Studio i rozwiązania
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: Tworzenie projektu i rozwiązania programu Visual Studio
 
-Podczas pracy z Django z wiersza polecenia, zwykle Uruchom projekt, uruchamiając `django-admin startproject <project_name>` polecenia. W programie Visual Studio przy użyciu szablonu "Pusty projekt sieci Web Django" zawiera tę samą strukturę, w ramach projektu programu Visual Studio i rozwiązania.
+Podczas pracy z Django z wiersza polecenia, zazwyczaj `django-admin startproject <project_name>` należy rozpocząć projekt, uruchamiając polecenie. W programie Visual Studio przy użyciu szablonu "Blank Django Web Project" zapewnia taką samą strukturę w projekcie i rozwiązaniu programu Visual Studio.
 
-1. W programie Visual Studio, wybierz **pliku** > **New** > **projektu**, wyszukaj frazę "Django" i wybierz **pusty projekt sieci Web Django**  szablonu. (Szablon znajduje się również w obszarze **Python** > **Web** na liście po lewej stronie.)
+1. W programie Visual Studio wybierz **pozycję Plik** > **nowego** > **projektu**, wyszukaj hasło "Django" i wybierz szablon Pusty projekt **internetowy Django.** (Szablon znajduje się również w obszarze **Python** > **Web** na liście po lewej stronie).
 
-    ![Okno dialogowe nowego projektu w programie Visual Studio dla pustego projektu sieci Web Django](media/django/step01-new-blank-project.png)
+    ![Nowe okno dialogowe projektu w programie Visual Studio dla pustego projektu sieci Web Django](media/django/step01-new-blank-project.png)
 
-1. W polach w dolnej części okna dialogowego wprowadź następujące informacje (jak pokazano na poprzednim rysunku), a następnie wybierz **OK**:
+1. W polach u dołu okna dialogowego wprowadź następujące informacje (jak pokazano na poprzedniej grafice), a następnie wybierz **przycisk OK:**
 
-    - **Nazwa**: Ustaw nazwę projektu programu Visual Studio, aby **BasicProject**. Ta nazwa jest także używana dla projektu Django.
-    - **Lokalizacja**: Określ lokalizację, w której chcesz utworzyć rozwiązanie programu Visual Studio i projektu.
-    - **Rozwiązanie**: pozostaw ten formant ustawioną wartość domyślną **Utwórz nowe rozwiązanie** opcji.
-    - **Nazwa rozwiązania**: Ustaw **LearningDjango**, który jest odpowiedni do rozwiązania jako kontener dla wielu projektów w ramach tego samouczka.
-    - **Utwórz katalog dla rozwiązania**: Pozostaw zestawu (ustawienie domyślne).
-    - **Utwórz nowe repozytorium Git**: Wybierz tę opcję, (czyli wyczyść domyślnie), tak aby program Visual Studio tworzy lokalne repozytorium Git, podczas tworzenia rozwiązania. Jeśli nie widzisz tej opcji, uruchom Instalatora programu Visual Studio i Dodaj **Git dla Windows** i **rozszerzeniu GitHub Extension for Visual Studio** na **poszczególne składniki** kartę w obszarze **kodu narzędzia**.
+    - **Nazwa**: ustaw nazwę projektu programu Visual Studio na **BasicProject**. Ta nazwa jest również używana dla projektu Django.
+    - **Lokalizacja**: określ lokalizację, w której ma być utworzone rozwiązanie i projekt programu Visual Studio.
+    - **Rozwiązanie:** pozostaw tę formant jako domyślną **Opcję Utwórz nowe rozwiązanie.**
+    - **Nazwa rozwiązania:** zestaw **LearningDjango**, który jest odpowiedni dla rozwiązania jako kontener dla wielu projektów w tym samouczku.
+    - **Tworzenie katalogu dla rozwiązania**: Pozostaw zestaw (domyślny).
+    - **Utwórz nowe repozytorium Git:** Wybierz tę opcję (która jest domyślnie wyczyszczona), aby program Visual Studio utworzył lokalne repozytorium Git podczas tworzenia rozwiązania. Jeśli nie widzisz tej opcji, uruchom instalator programu Visual Studio i dodaj rozszerzenie **Git dla systemu Windows** i **GitHub dla programu Visual Studio** na karcie Poszczególne **składniki** w obszarze **Narzędzia kodu**.
 
-1. Po chwili Visual Studio wyświetli monit z informacją o tym okna dialogowego **ten projekt wymaga pakiety zewnętrzne** (pokazana poniżej). To okno dialogowe pojawia się, ponieważ szablon zawiera *requirements.txt* plik odwołuje się do najnowszego pakietu 1.x Django. (Wybierz **Pokaż wymagane pakiety** Aby wyświetlić zależności dokładną.)
+1. Po chwili visual studio monituje o okno dialogowe z informacją **Ten projekt wymaga pakietów zewnętrznych** (pokazano poniżej). To okno dialogowe pojawia się, ponieważ szablon zawiera plik *requirements.txt* odwołujący się do najnowszego pakietu Django 1.x. (Wybierz **pokaż wymagane pakiety,** aby zobaczyć dokładne zależności).
 
-    ![Monituj powiedzenie, że projekt wymaga pakiety zewnętrzne](media/django/step01-requirements-prompt-install-myself.png)
+    ![Monit mówiąc, że projekt wymaga pakietów zewnętrznych](media/django/step01-requirements-prompt-install-myself.png)
 
-1. Wybierz opcję **I zainstaluje je samodzielnie**. Utworzysz środowisko wirtualne wkrótce, aby upewnić się, że jest ona wykluczana z kontroli źródła. (Zawsze można tworzyć środowiska na podstawie *requirements.txt*.)
+1. Wybierz opcję **zainstaluję je samodzielnie**. Wkrótce utworzysz środowisko wirtualne, aby upewnić się, że jest wykluczone z kontroli źródła. (Środowisko zawsze można utworzyć na podstawie *pliku requirements.txt).*
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1 – 2: Sprawdź kontrolki Git i opublikuj do zdalnego repozytorium
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1-2: Zbadaj kontrolki Git i opublikuj w zdalnym repozytorium
 
-Ponieważ wybrano **Utwórz nowe repozytorium Git** w **nowy projekt** okno dialogowe, projekt jest już zaangażowana w lokalnej kontroli źródła zaraz po zakończeniu procesu tworzenia. W tym kroku należy zapoznać się z kontrolek Git programu Visual Studio i **Team Explorer** okna, w którym pracujesz z kontrolą źródła.
+Ponieważ w oknie dialogowym **Nowy projekt** **wybrano repozytorium Utwórz nowy Git,** projekt jest już zatwierdzony do kontroli źródła lokalnego zaraz po zakończeniu procesu tworzenia. W tym kroku zapoznajesz się z formantami Git programu Visual Studio i oknem **Eksploratora zespołu,** w którym pracujesz z kontrolą źródła.
 
-1. Sprawdź formanty Git na dolnym rogu okna głównego programu Visual Studio. Od lewej do prawej te kontrolki wyświetlają niewypchniętych zatwierdzeń, niezatwierdzone zmiany, nazwę repozytorium i gałąź bieżącą:
+1. Sprawdź kontrolki Git w dolnym rogu okna głównego programu Visual Studio. Od lewej do prawej te formanty pokazują nieuprawione zatwierdzenia, niezatwierdzone zmiany, nazwę repozytorium i bieżącą gałąź:
 
-    ![Git formantów w oknie programu Visual Studio](media/django/step01-git-controls.png)
+    ![Formanty git w oknie programu Visual Studio](media/django/step01-git-controls.png)
 
     > [!Note]
-    > Jeśli nie zaznaczysz **Utwórz nowe repozytorium Git** w **nowy projekt** oknie dialogowym usługi Git kontrolek zostaną wyświetlone tylko **Dodaj do kontroli źródła** polecenia, który tworzy lokalną repozytorium.
+    > Jeśli nie wybierzesz **repozytorium Utwórz nowy Git** w oknie dialogowym **Nowy projekt,** formanty Git pokażą tylko polecenie **dodaj do źródła,** które tworzy lokalne repozytorium.
     >
-    > ![Dodaj do kontroli źródła jest wyświetlany w programie Visual Studio, jeśli nie utworzono repozytorium](media/django/step01-git-add-to-source-control.png)
+    > ![Dodaj do kontroli źródła pojawia się w programie Visual Studio, jeśli nie utworzono repozytorium](media/django/step01-git-add-to-source-control.png)
 
-1. Wybierz przycisk zmiany, a Visual Studio otwiera jego **Team Explorer** okno na **zmiany** strony. Ponieważ nowo utworzonego projektu jest już zatwierdzone do kontroli źródła automatycznie, nie widać wszystkie oczekujące zmiany.
+1. Wybierz przycisk zmiany, a program Visual Studio otworzy okno **Eksploratora zespołu** na stronie **Zmiany.** Ponieważ nowo utworzony projekt jest już zobowiązana do kontroli źródła automatycznie, nie widać żadnych oczekujących zmian.
 
-    ![Okno Eksploratora zespołu na stronie zmiany](media/django/step01-team-explorer-changes.png)
+    ![Okno Eksploratora zespołu na stronie Zmiany](media/django/step01-team-explorer-changes.png)
 
-1. Na pasku stanu programu Visual Studio, wybierz przycisk niewypchniętych zatwierdzeń (strzałkę w górę o **2**) aby otworzyć **synchronizacji** strony w **Team Explorer**. Ponieważ lokalne repozytorium, na stronie jest prostych opcji, aby opublikować repozytorium w różnych repozytoria zdalne.
+1. Na pasku stanu programu Visual Studio wybierz przycisk unpushed commits (strzałka w górę z **2**), aby otworzyć stronę **Synchronizacja** w **Eksploratorze zespołu**. Ponieważ masz tylko repozytorium lokalne, strona udostępnia łatwe opcje publikowania repozytorium w różnych repozytoriach zdalnych.
 
-    ![Team Explorer okna pokazujący dostępne Git opcji repozytorium dla kontroli źródła](media/django/step01-team-explorer.png)
+    ![Okno Eksploratora zespołu z dostępnymi opcjami repozytorium Git dla kontroli źródła](media/django/step01-team-explorer.png)
 
-    Możesz niezależnie od usługi, w której ma we własnych projektach. W tym samouczku pokazano sposób użycia usługi GitHub, w której ukończone przykładowego kodu na potrzeby tego samouczka jest zachowywany w [Microsoft/python — przykładowe vs uczenia — django](https://github.com/Microsoft/python-sample-vs-learning-django) repozytorium.
+    Możesz wybrać dowolną usługę dla własnych projektów. W tym samouczku pokazano użycie usługi GitHub, w której wypełniony przykładowy kod samouczka jest obsługiwany w repozytorium [Microsoft/python-sample-vs-learning-django.](https://github.com/Microsoft/python-sample-vs-learning-django)
 
-1. Po wybraniu dowolnego z **Publikuj** kontrolek **Team Explorer** wyświetli monit o podanie informacji. Na przykład podczas publikowania próbki na potrzeby tego samouczka, samo repozytorium musieli najpierw należy utworzyć, w którym to przypadku **wypychania do repozytorium zdalnego** użyto opcji za pomocą adresu URL repozytorium.
+1. Po wybraniu dowolnego z **formantów Publikowania,** **Team Explorer** monituje o więcej informacji. Na przykład podczas publikowania próbki dla tego samouczka, repozytorium trzeba było utworzyć najpierw, w którym to przypadku opcja **Wypychanie do repozytorium zdalnego** została użyta z adresem URL repozytorium.
 
     ![Okno Eksploratora zespołu do wypychania do istniejącego repozytorium zdalnego](media/django/step01-push-to-github.png)
 
-    Jeśli masz istniejące repozytorium, **publikowanie w usłudze GitHub** i **Wypychanie do usługi Azure DevOps** opcje pozwalają utworzyć bezpośrednio z poziomu programu Visual Studio.
+    Jeśli nie masz istniejącego repozytorium, **opcje publikowania w usłudze GitHub** i **wypychania do usługi Azure DevOps** umożliwiają utworzenie go bezpośrednio z poziomu programu Visual Studio.
 
-1. Podczas pracy z tym samouczkiem Uzyskaj w celu przejrzenia okresowo za pomocą formantów w programie Visual Studio można zatwierdzać i wypychać zmiany. W tym samouczku przypomina o tym, w odpowiednich miejscach.
+1. Podczas pracy nad tym samouczkiem, dostać się do nawyku okresowego używania formantów w programie Visual Studio do zatwierdzania i wypychania zmian. Ten samouczek przypomina w odpowiednich punktach.
 
 > [!Tip]
-> Szybko poruszać się po **Team Explorer**, wybierz nagłówek (który odczytuje **zmiany** lub **wypychania** w obrazach powyżej) aby wyświetlić menu podręcznego dostępnych stron.
+> Aby szybko poruszać się w **Eksploratorze zespołu,** wybierz nagłówek (który **odczytuje zmiany** lub **Wypychaj** powyższe obrazy), aby wyświetlić wyskakujące menu dostępnych stron.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pytanie: Jakie są niektóre korzyści wynikające z używania kontroli źródła, od początku projektu?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Pytanie: Jakie są pewne zalety korzystania z kontroli źródła od początku projektu?
 
-Odpowiedź: Przede wszystkim przy użyciu kontroli źródła od samego początku, zwłaszcza, jeśli używasz zdalnego repozytorium zawiera kopię zapasową regularne poza siedzibą firmy, projektu. W przeciwieństwie do obsługi projektu tylko na lokalny system plików, kontroli źródła także zmienić pełną historię zmian i łatwe możliwość przywracania pojedynczego pliku lub całego projektu do poprzedniego stanu. Aby zmian historii pomaga ustalić przyczynę regresji (niepowodzeń testów). Ponadto kontroli źródła jest pracy wielu osób na projekt, która zarządza zastępuje i zapewnia Rozwiązywanie konfliktów. Na koniec kontroli źródła, która jest całkowicie formę automatyzacji, konfiguruje możesz również do automatyzacji kompilacji, testowania i rozwiązania release management. Tak naprawdę jest pierwszym krokiem przy użyciu metodyki DevOps dla projektu, a ponieważ barier wejścia znajdują się więc niski, to naprawdę bez powodu, aby nie używać kontroli źródła, od początku.
+Odpowiedź: Przede wszystkim przy użyciu kontroli źródła od początku, zwłaszcza jeśli używasz również zdalnego repozytorium, zapewnia regularne tworzenie kopii zapasowych poza witryną projektu. W przeciwieństwie do utrzymania projektu tylko w lokalnym systemie plików, kontrola źródła zapewnia również pełną historię zmian i łatwą możliwość ponownego ponownego pojedynczego pliku lub całego projektu do poprzedniego stanu. Ta historia zmian pomaga określić przyczynę regresji (błędy testu). Ponadto kontrola źródła jest niezbędna, jeśli wiele osób pracuje nad projektem, ponieważ zarządza nadpisywami i zapewnia rozwiązywanie konfliktów. Na koniec kontrola źródła, która jest zasadniczo formą automatyzacji, ustawia cię dobrze do automatyzacji kompilacji, testowania i zarządzania wydaniami. To naprawdę pierwszy krok w użyciu DevOps dla projektu, a ponieważ bariery wejścia są tak niskie, naprawdę nie ma powodu, aby nie używać kontroli źródła od początku.
 
-Aby uzyskać dalsze dyskusji na temat kontroli źródła jako usługi automation, zobacz [źródło prawdziwych danych: Rola repozytoriów w infrastrukturze DevOps](https://msdn.microsoft.com/magazine/mt763232), artykuł w MSDN Magazine przeznaczony dla aplikacji mobilnych, który ma również zastosowanie do aplikacji sieci web.
+Aby uzyskać dalsze dyskusje na temat kontroli źródła jako automatyzacji, zobacz [Źródło prawdy: Rola repozytoriów w DevOps](https://msdn.microsoft.com/magazine/mt763232), artykuł w MSDN Magazine napisany dla aplikacji mobilnych, który dotyczy również aplikacji internetowych.
 
-### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pytanie: Można zapobiec programu Visual Studio automatyczne zatwierdzanie nowego projektu?
+### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pytanie: Czy mogę uniemożliwić programowi Visual Studio automatyczne zatwierdzanie nowego projektu?
 
-Odpowiedź: Tak. Aby wyłączyć automatyczne zatwierdzenie, przejdź do **ustawienia** strony w **Team Explorer**, wybierz opcję **Git** > **ustawienia globalne**, wyczyść Opcja etykietą **Zatwierdź zmiany po scaleniu domyślnie**, a następnie wybierz **aktualizacji**.
+Odpowiedź: Tak. Aby wyłączyć automatyczne zatwierdzanie, przejdź do strony **Ustawienia** w **Eksploratorze zespołu**, wybierz pozycję**Ustawienia globalne** **Git** > , wyczyść opcję z etykietą **Zatwierdzanie zmian po domyślnym scaleniu**, a następnie wybierz pozycję **Aktualizuj**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1-3: Utwórz środowisko wirtualne i wykluczenie go z kontroli źródła
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1-3: Tworzenie środowiska wirtualnego i wykluczanie go z kontroli źródła
 
-Teraz, gdy skonfigurowano kontroli źródła dla projektu, można utworzyć środowiska wirtualnego, który zawiera niezbędne pakiety Django dla projektu. Następnie można użyć **Team Explorer** Aby wykluczyć folder środowiska z poziomu kontroli źródła.
+Teraz, po skonfigurowaniu kontroli źródła dla projektu, można utworzyć środowisko wirtualne, które zawiera niezbędne pakiety Django dla projektu. Następnie można użyć **Eksploratora zespołu,** aby wykluczyć folder środowiska z kontroli źródła.
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **środowiska Python** a następnie wybierz węzeł **Dodawanie środowiska wirtualnego**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł **Środowiska języka Python** i wybierz polecenie Dodaj środowisko **wirtualne**.
 
-    ![Dodaj polecenie środowisko wirtualne w Eksploratorze rozwiązań](media/django/step01-add-virtual-environment-command.png)
+    ![Polecenie Dodaj środowisko wirtualne w Eksploratorze rozwiązań](media/django/step01-add-virtual-environment-command.png)
 
-1. **Dodawanie środowiska wirtualnego** zostanie wyświetlone okno dialogowe z komunikat **znaleźliśmy pliku requirements.txt.** Ten komunikat oznacza, że program Visual Studio używa tego pliku do skonfigurowania środowiska wirtualnego.
+1. Zostanie wyświetlone okno dialogowe **Dodaj środowisko wirtualne** z komunikatem **"Znaleźliśmy plik requirements.txt".** Ten komunikat wskazuje, że program Visual Studio używa tego pliku do skonfigurowania środowiska wirtualnego.
 
-    ![Dodaj okno środowiska wirtualnego z komunikatem w pliku requirements.txt](media/django/step01-add-virtual-environment-found-requirements.png)
+    ![Dodawanie okna dialogowego środowiska wirtualnego z komunikatem requirements.txt](media/django/step01-add-virtual-environment-found-requirements.png)
 
-1. Wybierz **Utwórz** aby zaakceptować wartości domyślne. (Można zmienić nazwę środowiska wirtualnego, jeśli chcesz, który po prostu zmienia nazwę jej podfolder, ale `env` jest standardowej konwencji.)
+1. Wybierz **pozycję Utwórz,** aby zaakceptować wartości domyślne. (Można zmienić nazwę środowiska wirtualnego, jeśli chcesz, który po prostu zmienia `env` nazwę jego podfolder, ale jest standardową konwencją.)
 
-1. Wyrazić zgodę na uprawnienia administratora, jeśli zostanie wyświetlony monit, a następnie o cierpliwość przez kilka minut, podczas gdy program Visual Studio pobiera i instaluje pakiety, oznacza to, aby uzyskać Django rozwijanie kilka tysięcy plików o tyle podfoldery! Możesz zobaczyć postępy w programie Visual Studio **dane wyjściowe** okna. Czekając, spędzać w kolejnych sekcjach pytanie.
+1. Zgoda na uprawnienia administratora, jeśli zostanie wyświetlony monit, a następnie ciągnij przez kilka minut, podczas gdy Visual Studio pobiera i instaluje pakiety, co dla Django oznacza rozszerzenie kilku tysięcy plików w około tylu podfolderach! Postęp można zobaczyć w oknie **Dane wyjściowe** programu Visual Studio. Podczas oczekiwania zastanów się nad sekcjami Pytania, które następują po tym.
 
-1. Dla kontrolek repozytorium Git usługi Visual Studio (na pasku stanu), wybierz wskaźnik zmian (pokazujący **99&#42;**) co spowoduje otwarcie **zmiany** strony w **Team Explorer**.
+1. W formancie Git programu Visual Studio (na pasku stanu) wybierz wskaźnik zmian (który pokazuje **99&#42;), **który otwiera stronę **Zmiany** w **Eksploratorze zespołu.**
 
-    Tworzenie środowiska wirtualnego odwoływanych tysięcy zmian, ale nie trzeba uwzględnić któryś z nich w kontroli źródła, ponieważ użytkownik (lub każdy w przeciwnym razie klonowanie projektu) zawsze można odtworzyć środowisko z *requirements.txt* .
+    Tworzenie środowiska wirtualnego przyniosło tysiące zmian, ale nie trzeba uwzględniać żadnego z nich w kontroli źródła, ponieważ użytkownik (lub ktokolwiek inny klonuje projekt) zawsze może odtworzyć środowisko z *pliku requirements.txt*.
 
-    Aby wykluczyć środowiska wirtualnego, kliknij prawym przyciskiem myszy **env** i wybierz polecenie **ignorować te elementy lokalne**.
+    Aby wykluczyć środowisko wirtualne, kliknij prawym przyciskiem myszy folder **env** i wybierz polecenie **Ignoruj te elementy lokalne**.
 
-    ![Ignorowanie środowiska wirtualnego w zmian kontroli źródła](media/django/step01-ignore-local-items.png)
+    ![Ignorowanie środowiska wirtualnego w zmianach kontroli źródła](media/django/step01-ignore-local-items.png)
 
-1. Po wykluczeniu środowiska wirtualnego, tylko pozostałe zmiany są w pliku projektu i *.gitignore*. *.Gitignore* zawierający dodano wpis dla folderu środowiska wirtualnego. Możesz kliknąć dwukrotnie plik, aby zobaczyć diff.
+1. Po wyłączeniu środowiska wirtualnego jedynymi pozostałymi zmianami są plik projektu i *.gitignore*. Plik *.gitignore* zawiera dodany wpis dla folderu środowiska wirtualnego. Możesz kliknąć dwukrotnie plik, aby wyświetlić różnice.
 
-1. Wprowadź wiadomość dotyczącą zatwierdzenia, a następnie wybierz pozycję **Zatwierdź wszystko** przycisk, a następnie, jeśli chcesz wypychanie zatwierdzeń do repozytorium zdalnego.
+1. Wprowadź komunikat o zatwierdzeniu i wybierz przycisk **Zatwierdz wszystko,** a następnie naciśnij zatwierdzenia do zdalnego repozytorium, jeśli chcesz.
 
-### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pytanie: Dlaczego chcesz utworzyć środowisko wirtualne?
+### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Pytanie: Dlaczego chcę utworzyć środowisko wirtualne?
 
-Odpowiedź: Środowisko wirtualne jest doskonałym sposobem na izolowanie dokładnie zależności aplikacji. Tej izolacji pozwala uniknąć konfliktów w środowisku Python globalnym i ułatwia testowanie i współpracy. Wraz z upływem czasu podczas opracowywania aplikacji, niezmiennie wprowadzanych wiele pomocnych pakiety języka Python. Przechowując pakietów w środowisku wirtualnym specyficzne dla projektu, można łatwo zaktualizować projektu *requirements.txt* pliku, który opisuje środowisku, w którym znajduje się w kontroli źródła. Gdy projekt jest kopiowana do innych komputerów, serwerów kompilacji, wdrażania serwerów i innych komputerach rozwoju, w tym jest łatwo odtworzyć środowiskiem za pomocą tylko *requirements.txt* (co jest dlaczego środowiska nie musi znajdować się w kontroli źródła). Aby uzyskać więcej informacji, zobacz [korzystanie ze środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
+Odpowiedź: Środowisko wirtualne to świetny sposób na wyizolowanie dokładnych zależności aplikacji. Taka izolacja pozwala uniknąć konfliktów w globalnym środowisku Języka Python i ułatwia zarówno testowanie, jak i współpracę. Z biegiem czasu, podczas tworzenia aplikacji, niezmiennie przynosisz wiele przydatnych pakietów Pythona. Przechowując pakiety w środowisku wirtualnym specyficznym dla projektu, można łatwo zaktualizować plik *requirements.txt* projektu, który opisuje to środowisko, które jest zawarte w kontroli źródła. Gdy projekt jest kopiowany do innych komputerów, w tym serwerów kompilacji, serwerów wdrożeniowych i innych komputerów deweloperskich, można łatwo odtworzyć środowisko przy użyciu tylko *pliku requirements.txt* (dlatego środowisko nie musi znajdować się pod kontrolą źródła). Aby uzyskać więcej informacji, zobacz [Używanie środowisk wirtualnych](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pytanie: Jak usunąć środowisko wirtualne jest została już przydzielona do kontroli źródła?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Pytanie: Jak usunąć środowisko wirtualne, które jest już zaangażowane w kontrolę źródła?
 
-Odpowiedź: Po pierwsze Przeprowadź edycję swoje *.gitignore* plik, aby wykluczyć folder: Znajdź sekcję na końcu z komentarzem `# Python Tools for Visual Studio (PTVS)` i Dodaj nowy wiersz do folderu, w środowisku wirtualnym, takie jak `/BasicProject/env`. (Ponieważ program Visual Studio nie wyświetla plik w **Eksploratora rozwiązań**, otwórz je bezpośrednio przy użyciu **pliku** > **Otwórz**  >   **Plik** polecenia menu. Możesz również otworzyć plik z **Team Explorer**: na **ustawienia** wybierz opcję **ustawienia repozytorium**, przejdź do **Ignoruj & atrybutów plików** sekcji, a następnie wybierz **Edytuj** łącze obok **.gitignore**.)
+Odpowiedź: Najpierw edytuj plik *.gitignore,* aby wykluczyć folder: znajdź sekcję na końcu z komentarzem `# Python Tools for Visual Studio (PTVS)` i `/BasicProject/env`dodaj nowy wiersz dla folderu środowiska wirtualnego, na przykład . (Ponieważ program Visual Studio nie pokazuje pliku w **Eksploratorze rozwiązań,** otwórz go bezpośrednio za pomocą polecenia menu > **Otwórz** > **File** **plik.** Możesz również otworzyć plik z **Eksploratora zespołu**: na stronie **Ustawienia** wybierz **pozycję Ustawienia repozytorium**, przejdź do sekcji **Ignoruj & atrybuty,** a następnie wybierz łącze **Edytuj** obok **.gitignore**.)
 
-Po drugie, Otwórz okno polecenia, przejdź do folderu, takich jak *BasicProject* zawierający takie jak folder w środowisku wirtualnym *env*i uruchom `git rm -r env`. Następnie należy zatwierdzić te zmiany z wiersza polecenia (`git commit -m 'Remove venv'`) lub czy zatwierdzić z **zmiany** strony **Team Explorer**.
+Po drugie, otwórz okno polecenia, przejdź do folderu takiego jak *BasicProject,* `git rm -r env`który zawiera folder środowiska wirtualnego, taki jak *env,* i uruchom . Następnie zaobenduj te`git commit -m 'Remove venv'`zmiany z wiersza polecenia ( ) lub zaobenduj na stronie **Zmiany** **Eksploratora zespołu**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1-4: Badanie kodu standardowy
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1-4: Zbadaj kod płyty kotłowej
 
-Po zakończeniu tworzenia projektu, należy zbadać standardowy kod projektu Django (czyli ponownie, taka sama jak wartość generowanych przez polecenia interfejsu wiersza polecenia `django-admin startproject <project_name>`).
+Po zakończeniu tworzenia projektu należy sprawdzić kod projektu Django (który jest ponownie taki `django-admin startproject <project_name>`sam, jak generowany przez polecenie CLI).
 
-1. W projekcie jest głównym *manage.py*, Django narzędzie wiersza polecenia administracyjne programu Visual Studio automatycznie ustawia jako plik startowy projektu. Uruchom narzędzie przy użyciu wiersza polecenia `python manage.py <command> [options]`. Do wykonywania typowych zadań Django Visual Studio zapewnia wygodne poleceń. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Python** Aby wyświetlić listę. Niektóre z tych poleceń w ramach tego samouczka wystąpią.
+1. W katalogu głównym projektu jest *manage.py*, narzędzie administracyjne wiersza polecenia Django, które visual studio automatycznie ustawia jako plik startowy projektu. Narzędzie jest uruchamiane w `python manage.py <command> [options]`wierszu polecenia za pomocą programu . W przypadku typowych zadań Django program Visual Studio udostępnia wygodne polecenia menu. Kliknij prawym przyciskiem myszy projekt w **Eksploratorze rozwiązań** i wybierz **pozycję Python,** aby wyświetlić listę. Niektóre z tych poleceń można napotkać w trakcie tego samouczka.
 
-    ![Polecenia Django w języku Python projektu menu kontekstowe](media/django/step01-django-commands-menu.png)
+    ![Polecenia Django w menu kontekstowym projektu Pythona](media/django/step01-django-commands-menu.png)
 
-2. W projekcie jest folder o nazwie taka sama jak projekt. Zawiera podstawowe pliki projektu Django:
+2. W projekcie jest folder o nazwie taki sam jak projekt. Zawiera podstawowe pliki projektu Django:
 
-   - *__init.PY*: pusty plik Python informuje, czy ten folder jest pakiet języka Python.
-   - *wsgi.PY*: punkt wejścia dla zgodnego z WSGI serwerów sieci web do obsługi projektu. Zazwyczaj pozostaw ten plik jako — jest jak udostępnia punkty zaczepienia do produkcyjnych serwerów sieci web.
-   - *Settings.PY*: zawiera ustawienia dla projektu Django, co możesz zmodyfikować w trakcie opracowywania aplikacji sieci web.
-   - *URLs.PY*: zawiera spis treści dla projektu Django, która jest modyfikowana w trakcie opracowywania.
+   - *__init.py*: pusty plik, który informuje Pythona, że ten folder jest pakietem Pythona.
+   - *wsgi.py*: punkt wejścia dla serwerów sieci web zgodnych z WSGI do obsługi projektu. Zazwyczaj pozostawiasz ten plik w stanie takim, w jakim udostępnia on haki dla produkcyjnych serwerów sieci web.
+   - *settings.py*: zawiera ustawienia projektu Django, które modyfikujesz w trakcie tworzenia aplikacji internetowej.
+   - *urls.py*: zawiera spis treści projektu Django, który również modyfikujesz w trakcie rozwoju.
 
-     ![Django pliki projektu w Eksploratorze rozwiązań](media/django/step01-django-project-in-solution-explorer.png)
+     ![Pliki projektu Django w Eksploratorze rozwiązań](media/django/step01-django-project-in-solution-explorer.png)
 
-3. Jak wspomniano wcześniej, szablon programu Visual Studio dodaje również *requirements.txt* plik do projektu określenie Django zależności pakietów. Obecność tego pliku to, co zachęca do tworzenia środowiska wirtualnego, tworząc po raz pierwszy projekt.
+3. Jak wspomniano wcześniej, szablon programu Visual Studio dodaje również plik *requirements.txt* do projektu, określając zależność pakietu Django. Obecność tego pliku jest tym, co zachęca do tworzenia środowiska wirtualnego podczas pierwszego tworzenia projektu.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pytanie: Visual Studio wygenerować plik Requirements.txt znajduje się w środowisku wirtualnym po zainstalowaniu innych pakietów?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pytanie: Czy program Visual Studio może generować plik requirements.txt ze środowiska wirtualnego po zainstalowaniu innych pakietów?
 
-Odpowiedź: Tak. Rozwiń **środowiska Python** węzła, kliknij prawym przyciskiem myszy środowiska wirtualnego, a następnie wybierz pozycję **Generovat requirements.txt** polecenia. Dobre okresowo użycia tego polecenia podczas modyfikowania środowiska i zatwierdzania zmian do *requirements.txt* do kontroli źródła oraz innych zmian kodu, które są zależne od danego środowiska. Jeśli ustawisz ciągłej integracji na serwerze kompilacji, możesz wygenerować plik oraz zatwierdzić zmiany, przy każdej modyfikacji środowiska.
+Odpowiedź: Tak. Rozwiń węzeł **Środowiska języka Python,** kliknij prawym przyciskiem myszy środowisko wirtualne i wybierz polecenie **Generuj polecenie requirements.txt.** Dobrze jest używać tego polecenia okresowo podczas modyfikowania środowiska i zatwierdzania zmian *w requirements.txt* do kontroli źródła wraz z innymi zmianami kodu, które zależą od tego środowiska. Jeśli konfigurujesz ciągłą integrację na serwerze kompilacji, należy wygenerować plik i zatwierdzić zmiany przy każdym modyfikowaniu środowiska.
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>Krok 1-5: Uruchom pusty projekt Django
 
-1. W programie Visual Studio, wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi ( Przeglądarka widocznej mogą się różnić):
+1. W programie Visual Studio wybierz opcję **Debugowanie** > **start debugowania** **(F5)** lub użyj przycisku **Serwera sieci Web** na pasku narzędzi (widoczna przeglądarka może się różnić):
 
-    ![Uruchamianie serwera sieci web przycisku paska narzędzi w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
+    ![Uruchamianie przycisku paska narzędzi serwera sieci Web w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
 
-1. Uruchomienie serwera oznacza, że uruchomienie polecenia `manage.py runserver <port>`, co spowoduje włączenie serwera wdrożeniowego wbudowanych w Django. Jeśli program Visual Studio twierdzi **nie można uruchomić debugera** z komunikatem o konieczności nie plik startowy, kliknij prawym przyciskiem myszy **manage.py** w **Eksploratora rozwiązań** i wybierz **Ustaw jako plik startowy**.
+1. Uruchomienie serwera oznacza uruchomienie `manage.py runserver <port>`polecenia , które uruchamia wbudowany serwer deweloperski Django. Jeśli program Visual Studio **mówi, że nie można uruchomić debugera** z komunikatem o braku pliku startowego, kliknij prawym przyciskiem myszy **manage.py** w **Eksploratorze rozwiązań** i wybierz pozycję **Ustaw jako plik startowy**.
 
-1. Po uruchomieniu serwera, zobaczysz okno konsoli otwórz oznacza również Wyświetla dziennik serwera. Program Visual Studio automatycznie otworzy w przeglądarce `http://localhost:<port>`. Ponieważ projekt Django nie ma żadnych aplikacji, jednak Django pokazuje tylko strony domyślnej można potwierdzić, że posiadane przez Ciebie do tej pory działa prawidłowo:
+1. Po uruchomieniu serwera zostanie wyświetlone otwarte okno konsoli, w którym również jest wyświetlany dziennik serwera. Program Visual Studio automatycznie `http://localhost:<port>`otwiera przeglądarkę na program . Ponieważ projekt Django nie ma aplikacji, Django pokazuje tylko domyślną stronę, aby potwierdzić, że to, co masz do tej pory, działa dobrze:
 
-    ![Widok domyślny projekt Django](media/django/step01-first-run-success.png)
+    ![Domyślny widok projektu Django](media/django/step01-first-run-success.png)
 
-1. Gdy skończysz, Zatrzymaj serwer zamknięcie okna konsoli lub za pomocą **debugowania** > **Zatrzymaj debugowanie** polecenia w programie Visual Studio.
+1. Po zakończeniu zatrzymaj serwer, zamykając okno konsoli lub używając polecenia **Debugowania** > **zatrzymaj debugowanie** w programie Visual Studio.
 
-### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Pytanie: Jest Django, serwer sieci web, a także platformę?
+### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Pytanie: Czy Django jest serwerem www, a także platformą?
 
-Odpowiedź: Tak i nie. Django ma serwera sieci web wbudowane, który służy do celów programistycznych. Ten serwer sieci web jest, co zostanie wykorzystany podczas uruchamiania aplikacji sieci web w środowisku lokalnym, takie jak czas debugowania w programie Visual Studio. Podczas wdrażania hosta sieci web, jednak Django użyje hosta serwera sieci web. *Wsgi.py* modułu w projekcie Django dba o przechwytywanie na serwerach produkcyjnych.
+Odpowiedź: Tak i nie. Django ma wbudowany serwer www, który jest używany do celów programisty. Ten serwer sieci web jest to, co pobiera używane podczas uruchamiania aplikacji sieci web lokalnie, takich jak podczas debugowania w programie Visual Studio. Jednak po wdrożeniu na hoście Django używa serwera sieci web hosta. Moduł *wsgi.py* w projekcie Django zajmuje się podłączaniem do serwerów produkcyjnych.
 
-### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pytanie: Jaka jest różnica między za pomocą poleceń menu Debugowanie i polecenia serwera w podmenu Python projektu?
+### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Pytanie: Jaka jest różnica między używaniem poleceń menu debugowania a poleceniami serwera w podmenu Python projektu?
 
-Odpowiedź: Oprócz **debugowania** poleceń menu i przycisków paska narzędzi można również uruchomić serwera za pomocą **Python** > **uruchom serwer** lub  **Python** > **serwera debugowania Uruchom** polecenia menu kontekstowego projektu. Oba polecenia, Otwórz okno konsoli zawiera adres URL lokalnego (localhost:port) dla uruchomionego serwera. Jednak należy ręcznie otworzyć przeglądarkę z tego adresu URL i uruchomienie serwera debugowania nie zostanie uruchomiona automatycznie debugera programu Visual Studio. Możesz dołączyć debugera do uruchomionego procesu później, jeśli chcesz, za pomocą **debugowania** > **dołączyć do procesu** polecenia.
+Odpowiedź: Oprócz poleceń menu **debugowania** i przycisków paska narzędzi można również **Python** > uruchomić serwer za pomocą poleceń**serwera uruchamiania** **języka Python** > lub Python**Run** w menu kontekstowym projektu. Oba polecenia otwierają okno konsoli, w którym jest widoczny lokalny adres URL (localhost:port) dla uruchomionego serwera. Należy jednak ręcznie otworzyć przeglądarkę z tym adresem URL, a uruchomienie serwera debugowania nie uruchamia automatycznie debugera programu Visual Studio. Debugera można dołączyć do uruchomionego procesu później, jeśli chcesz, za pomocą polecenia > **Debugowanie dołączania do procesu.** **Debug**
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym momencie podstawowego projektu Django nie zawiera żadnych aplikacji. Możesz utworzyć aplikację w następnym kroku. Ponieważ zazwyczaj pracować z więcej niż projekt Django aplikacje Django, nie musisz wiedzieć znacznie bardziej, informacje o plikach standardowy w chwili obecnej.
+W tym momencie podstawowy projekt Django nie zawiera żadnych aplikacji. Utwórz aplikację w następnym kroku. Ponieważ zazwyczaj pracujesz z aplikacjami Django bardziej niż projekt Django, nie musisz wiedzieć o tym więcej o plikach z kotłem.
 
 > [!div class="nextstepaction"]
-> [Tworzenie aplikacji Django przy użyciu widoków i szablonów stron](learn-django-in-visual-studio-step-02-create-an-app.md)
+> [Tworzenie aplikacji Django z widokami i szablonami stron](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="go-deeper"></a>Przejdź dalej
+## <a name="go-deeper"></a>Głębiej
 
-- Kod projektu Django: [Zapisywanie swoją pierwszą aplikację Django, część 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
-- Narzędzie administracyjne: [administracyjnego django i manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Kod projektu Django: [Pisanie pierwszej aplikacji Django, część 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
+- Narzędzie administracyjne: [django-admin i manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
+- Kod źródłowy samouczka na GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

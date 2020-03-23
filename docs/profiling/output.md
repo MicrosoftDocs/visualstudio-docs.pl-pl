@@ -1,5 +1,5 @@
 ---
-title: Dane wyjściowe | Microsoft Docs
+title: Produkcja | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778508"
 ---
 # <a name="output"></a>Dane wyjściowe
-Opcja **wyjście** określa nazwę pliku danych profilowania dla sesji wydajności. **Dane wyjściowe** muszą być używane z opcją **Start** .
+Opcja **Dane wyjściowe** określa nazwę pliku danych profilowania dla sesji wydajności. **Dane wyjściowe** muszą być używane z opcją **Start.**
 
 ## <a name="syntax"></a>Składnia
 
@@ -26,12 +26,12 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `FileName` nazwę pliku danych. Akceptowane są pełne i częściowe ścieżki. Jeśli ścieżka nie zostanie określona, plik zostanie utworzony w bieżącym katalogu.
+ `FileName`Nazwa pliku danych. Akceptowane są pełne i częściowe ścieżki. Jeśli ścieżka nie zostanie określona, plik jest tworzony w bieżącym katalogu.
 
 ## <a name="required-options"></a>Wymagane opcje
- Opcja **Output** musi być używana z opcją **Start** .
+ Opcja **Wyjście** musi być używana z opcją **Start.**
 
- **Początek:** `Method` określa nazwę pliku wyjściowego.
+ **Start:** `Method` Określa nazwę pliku wyjściowego.
 
 ## <a name="example"></a>Przykład
  W poniższym przykładzie plik danych profilowania jest tworzony w bieżącym katalogu.
@@ -40,8 +40,8 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilu](../profiling/command-line-profiling-of-services.md)
+- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

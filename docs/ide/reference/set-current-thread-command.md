@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72748614"
 ---
 # <a name="set-current-thread-command"></a>Ustaw bieżący wątek — Polecenie
@@ -32,7 +32,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>Argumenty
 `index`
 
-Wymagany. Wybiera wątek według indeksu.
+Wymagany. Wybiera wątek według jego indeksu.
 
 ## <a name="example"></a>Przykład
 
@@ -40,9 +40,9 @@ Wymagany. Wybiera wątek według indeksu.
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,93 +1,93 @@
 ---
 title: Kontrola wersji Team Foundation (TFVC)
-description: Nawiązywanie połączenia z Visual Studio dla komputerów Mac Team Foundation Server/Azure DevOps z usługą Kontrola wersji serwera Team Foundation (TFVC).
+description: Łączenie się z programu Visual Studio dla komputerów Mac do team foundation server/azure devops z team foundation kontroli wersji (TFVC).
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985199"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>Nawiązywanie połączenia z Kontrola wersji serwera Team Foundation
+# <a name="connecting-to-team-foundation-version-control"></a>Łączenie się z kontrolą wersji programu Team Foundation
 
 > [!NOTE]
-> Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z narzędzia Git zamiast Kontrola wersji serwera Team Foundation (TFVC). Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz artykuł [Konfigurowanie repozytorium git](/visualstudio/mac/set-up-git-repository) .
+> Aby uzyskać najlepsze środowisko kontroli wersji w systemie macOS, zalecamy użycie git zamiast Team Foundation Version Control (TFVC). Git jest obsługiwany w programie Visual Studio dla komputerów Mac i jest domyślną opcją dla repozytoriów hostowanych w programie Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej na temat korzystania z git z TFS/Azure DevOps, zobacz [konfigurowanie repozytorium Git](/visualstudio/mac/set-up-git-repository) artykułu.
 >
-> Jeśli wcześniej była używana wersja zapoznawcza rozszerzenia TFVC dla Visual Studio dla komputerów Mac, nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 for Mac.
+> Jeśli wcześniej używano wersji w wersji zapoznawczej rozszerzenia TFVC dla programu Visual Studio dla komputerów Mac, nie jest już obsługiwana podczas uaktualniania do programu Visual Studio 2019 dla komputerów Mac.
 
-Azure Repos oferuje dwa modele kontroli wersji: [git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji i [Kontrola wersji serwera Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), scentralizowany system kontroli wersji.
+Usługa Azure Repos udostępnia dwa modele kontroli wersji: [Git](/azure/devops/repos/git/?view=azure-devops), rozproszony system kontroli wersji i [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), scentralizowany system kontroli wersji.
 
-Visual Studio dla komputerów Mac zapewnia pełną obsługę repozytoriów Git, ale wymaga zastosowania niektórych rozwiązań do pracy z usługą TFVC. Jeśli obecnie używasz usługi TFVC na potrzeby kontroli wersji, Oto kilka rozwiązań, których można użyć w celu uzyskania dostępu do kodu źródłowego hostowanego w TFVC:
+Visual Studio dla komputerów Mac zapewnia pełną obsługę repozytoriów Git, ale wymaga pewnych obejść do pracy z TFVC. Jeśli używasz TFVC do kontroli wersji dzisiaj, oto kilka rozwiązań, których można użyć, aby uzyskać dostęp do kodu źródłowego hostowanego w TFVC:
 
-* [Użyj Visual Studio Code i rozszerzenia Azure Repos, dla graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
-* [Nawiązywanie połączenia z repozytorium przy użyciu Team Explorer Everywhere wiersza polecenia klienta (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
-* [Połącz się z usługą TFVC przy użyciu rozszerzenia (nieobsługiwane) Kontrola wersji serwera Team Foundation dla Visual Studio dla komputerów Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
+* [Używanie kodu programu Visual Studio i rozszerzenia repozytorium platformy Azure dla graficznego interfejsu użytkownika](#use-visual-studio-code-and-the-azure-repos-extension)
+* [Łączenie się z repozytorium przy użyciu klienta wiersza polecenia Eksploratora wszędzie (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+* [Łączenie się z tfvc przy użyciu (nieobsługiwał) Team Foundation Version Control rozszerzenie programu Visual Studio dla komputerów Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
 
-Pozostała część tego artykułu przeprowadzi Cię przez wymienione powyżej opcje.
+Dalsza część artykułu prowadzi cię przez opcje wymienione powyżej.
 
 ## <a name="requirements"></a>Wymagania
 
-* Visual Studio Community, Professional lub Enterprise dla komputerów Mac w wersji 7,8 lub nowszej.
-* Azure DevOps Services, Team Foundation Server 2013 i nowsze, lub Azure DevOps Server 2018 i nowsze.
-* Projekt w Azure DevOps Services lub Team Foundation Server/Azure DevOps Server skonfigurowany do korzystania z Kontrola wersji serwera Team Foundation.
+* Visual Studio Community, Professional lub Enterprise for Mac w wersji 7.8 lub nowszej.
+* Usługi Azure DevOps, Team Foundation Server 2013 i nowsze lub Azure DevOps Server 2018 i nowsze.
+* Projekt w usługach Azure DevOps services lub Team Foundation Server/Azure DevOps Server, skonfigurowany do używania kontroli wersji programu Team Foundation.
 
-## <a name="use-visual-studio-code-and-the-azure-repos-extension"></a>Użyj Visual Studio Code i rozszerzenia Azure Repos
+## <a name="use-visual-studio-code-and-the-azure-repos-extension"></a>Używanie kodu programu Visual Studio i rozszerzenia repozytorium platformy Azure
 
-Jeśli chcesz współpracować z interfejsem graficznym w celu zarządzania plikami w kontroli wersji, rozszerzenie Azure Repos dla Visual Studio Code udostępnia rozwiązanie obsługiwane przez firmę Microsoft. Aby rozpocząć, Pobierz [Visual Studio Code](https://code.visualstudio.com) a następnie Dowiedz się, jak [skonfigurować rozszerzenie Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
+Jeśli chcesz pracować z interfejsem graficznym do zarządzania plikami w kontroli wersji, rozszerzenie Repozytorium platformy Azure dla programu Visual Studio Code zapewnia obsługiwane rozwiązanie firmy Microsoft. Aby rozpocząć, pobierz [program Visual Studio Code,](https://code.visualstudio.com) a następnie dowiedz się, jak [skonfigurować rozszerzenie Repozytorium platformy Azure](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-## <a name="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Nawiązywanie połączenia przy użyciu Team Explorer Everywhere klienta wiersza polecenia
+## <a name="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Łączenie się przy użyciu klienta wiersza polecenia Eksploratora zespołu wszędzie
 
-Jeśli nie masz doświadczenia w korzystaniu z terminalu macOS, klient wiersza polecenia Team Explorer Everywhere (TEE-CLC) zapewnia obsługiwany sposób nawiązywania połączenia ze źródłem w programie TFVC.
+Jeśli korzystasz z terminala macOS, klient wiersza polecenia Team Explorer Everywhere (TEE-CLC) zapewnia obsługiwany sposób łączenia się ze źródłem w TFVC.
 
-Możesz wykonać poniższe kroki, aby skonfigurować połączenie do TFVC i zatwierdzić zmiany.
+Możesz wykonać poniższe czynności, aby skonfigurować połączenie z TFVC i zatwierdzić zmiany.
 
-### <a name="setting-up-the-tee-clc"></a>Konfigurowanie TEE-CLC
+### <a name="setting-up-the-tee-clc"></a>Konfigurowanie tee-CLC
 
-Istnieją dwa sposoby uzyskania Instalatora za pomocą TEE-CLC.
+Tee-CLC można skonfigurować na dwa sposoby.
 
-* Użyj oprogramowania homebrew, aby zainstalować klienta programu lub
-* Pobierz i ręcznie zainstaluj klienta
+* Użyj Homebrew, aby zainstalować klienta, lub
+* Pobieranie i ręczne instalowanie klienta
 
-Najprostszym rozwiązaniem jest **Korzystanie**z programu oprogramowania homebrew, który jest menedżerem pakietów dla macOS. Aby zainstalować za pomocą tej metody:
+Najprostszym rozwiązaniem jest **użycie HomeBrew**, który jest menedżerem pakietów dla systemu macOS. Aby zainstalować przy użyciu tej metody:
 
 1. Uruchom aplikację terminala macOS.
-1. Zainstaluj program oprogramowania Homebrew przy użyciu terminalu i instrukcje na [stronie głównej oprogramowania Homebrew](https://brew.sh/).
-1. Po zainstalowaniu oprogramowania Homebrew Uruchom następujące polecenie z terminalu: `brew install tee-clc`
+1. Zainstaluj Homebrew za pomocą terminala i instrukcji na [stronie głównej Homebrew](https://brew.sh/).
+1. Po zainstalowaniu homebrew uruchom następujące polecenie z terminala:`brew install tee-clc`
 
-Aby **ręcznie skonfigurować tee-CLC**:
+Aby **ręcznie skonfigurować TEE-CLC:**
 
-1. [Pobierz najnowszą wersję tee-CLC](https://github.com/Microsoft/team-explorer-everywhere/releases) ze Team Explorer Everywhere strony wersji repozytorium GitHub (np. tee-CLC-14.134.0. zip w momencie pisania tego zapisu).
+1. [Pobierz najnowszą wersję tee-clc](https://github.com/Microsoft/team-explorer-everywhere/releases) ze strony wydań repozytorium GitHub w eksploratorze Team Explorer Everywhere (np.
 1. Wyodrębnij zawartość pliku zip do folderu na dysku.
-1. Otwórz aplikację terminala macOS i użyj polecenia `cd`, aby przełączyć się do folderu, który został użyty w poprzednim kroku.
-1. Z poziomu folderu Uruchom polecenie `./tf`, aby sprawdzić, czy można uruchomić klienta wiersza polecenia, może pojawić się monit o zainstalowanie języka Java lub innych zależności.
+1. Otwórz aplikację terminala macOS `cd` i użyj polecenia, aby przełączyć się do folderu użytego w poprzednim kroku.
+1. Z poziomu folderu uruchom `./tf` polecenie, aby sprawdzić, czy klient wiersza polecenia może być uruchomiony, może zostać wyświetlony monit o zainstalowanie oprogramowania Java lub innych zależności.
 
-Po zainstalowaniu TEE-CLC można uruchomić polecenie `tf eula`, aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
+Po zainstalowaniu tee-CLC można uruchomić `tf eula` polecenie, aby wyświetlić i zaakceptować umowę licencyjną dla klienta.
 
-Na koniec, aby uwierzytelnić się w środowisku DevOps TFS/Azure, musisz utworzyć osobisty token dostępu na serwerze. Dowiedz się więcej o [uwierzytelnianiu z osobistymi tokenami dostępu](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia osobistego tokenu dostępu do używania z usługą TFVC należy zapewnić pełen dostęp podczas konfigurowania tokenu.
+Na koniec, aby uwierzytelnić się w środowisku TFS/Azure DevOps, musisz utworzyć token dostępu osobistego na serwerze. Dowiedz się więcej o [uwierzytelnieniu za pomocą tokenów dostępu osobistego](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Podczas tworzenia tokenu dostępu osobistego do użycia z TFVC, należy podać pełny dostęp podczas konfigurowania tokenu.
 
-### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Nawiązywanie połączenia z repozytorium przy użyciu TEE-CLC
+### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Łączenie się z repozytorium za pomocą tee-CLC
 
-Aby nawiązać połączenie z kodem źródłowym, musisz najpierw utworzyć obszar roboczy przy użyciu polecenia `tf workspace`. Na przykład następujące polecenia nawiązują połączenie z organizacją w Azure DevOps Services o nazwie "Moja organizacja": 
+Aby połączyć się z kodem źródłowym, należy `tf workspace` najpierw utworzyć obszar roboczy za pomocą polecenia. Na przykład następujące polecenia łączą się z organizacją w usługach Azure DevOps o nazwie "MyOrganization": 
 
 ```bash
 export TF_AUTO_SAVE_CREDENTIALS=1
 tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 ```
 
-Ustawienie środowiska `TF_AUTO_SAVE_CREDENTIALS` służy do zapisywania poświadczeń, dlatego nie zostanie wyświetlony monit o wprowadzenie ich wiele razy. Po wyświetleniu monitu o podanie nazwy użytkownika Użyj osobistego tokenu dostępu utworzonego w poprzedniej sekcji i użyj pustego hasła.
+Ustawienie `TF_AUTO_SAVE_CREDENTIALS` środowiska służy do zapisywania poświadczeń, więc nie jest wyświetlany monit o ich wielokrotne wprowadzanie. Po wyświetleniu monitu o podanie nazwy użytkownika użyj tokenu dostępu osobistego utworzonego w poprzedniej sekcji i użyj pustego hasła.
 
-Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyj polecenia `tf workfold`. Poniższy przykład mapuje folder o nazwie "WebApp. Services" z projektu TFVC "moje repozytorium" i skonfiguruje go do kopiowania do lokalnego folderu ~/Projects/(tj. folder "projects" w folderze głównym bieżącego użytkownika).
+Aby utworzyć mapowanie plików źródłowych do folderu lokalnego, użyjesz tego `tf workfold` polecenia. Poniższy przykład będzie mapować folder o nazwie "WebApp.Services" z projektu TFVC "MyRepository" i skonfigurować go do kopiowania do lokalnego folderu ~/Projects/ (tj. folderu "Projekty" w folderze domowym bieżących użytkowników).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/
 ```
 
-Na koniec użyj następującego polecenia, aby pobrać pliki źródłowe z serwera i skopiować je lokalnie:
+Na koniec należy użyć następującego polecenia, aby uzyskać pliki źródłowe z serwera i skopiować je lokalnie:
 
 ```bash
 tf get
@@ -95,7 +95,7 @@ tf get
 
 ### <a name="committing-changes-using-the-tee-clc"></a>Zatwierdzanie zmian przy użyciu TEE-CLC
 
-Po wprowadzeniu zmian w plikach w Visual Studio dla komputerów Mac można wrócić do terminalu, aby zaewidencjonować zmiany. Polecenie `tf add` służy do dodawania plików do listy oczekujących zmian do zaewidencjonowania, a polecenie `tf checkin` wykonuje rzeczywiste ewidencjonowanie na serwerze. Polecenie `checkin` zawiera parametry służące do dodawania komentarza lub kojarzenia powiązanego elementu pracy. W poniższym fragmencie kodu wszystkie pliki w folderze `WebApp.Services` są dodawane cyklicznie do zaewidencjonowania. Następnie kod jest sprawdzany z komentarzem i skojarzony z elementem roboczym o IDENTYFIKATORze "42".
+Po włączeniu zmian w plikach w programie Visual Studio dla komputerów Mac można przełączyć się z powrotem do terminalu, aby zaewidencjonować zmiany. Polecenie `tf add` służy do dodawania plików do listy oczekujących zmian, `tf checkin` które mają zostać zaewidencjonowane, a polecenie wykonuje rzeczywiste zaewidencjonowanie na serwerze. Polecenie `checkin` zawiera parametry, aby dodać komentarz lub skojarzyć powiązany element pracy. We wpisie kodu poniżej wszystkie pliki `WebApp.Services` w folderze są dodawane, cyklicznie, do ewidencjonowania. Następnie kod jest zaewidencjonowany z komentarzem i skojarzony z elementem pracy o identyfikatorze "42".
 
 ```bash
 cd WebApp.Services
@@ -103,128 +103,128 @@ tf add * /recursive
 tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind" -associate:42
 ```
 
-Aby dowiedzieć się więcej na temat poleceń wymienionych tutaj lub innych, można użyć następującego polecenia z terminalu:
+Aby dowiedzieć się więcej o poleceniach wymienionych tutaj lub innych, można użyć następującego polecenia z terminala:
 
 `tf help`
 
-## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Nawiązywanie połączenia z usługą TFVC przy użyciu rozszerzenia Kontrola wersji serwera Team Foundation
+## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Łączenie się z tfvc przy użyciu rozszerzenia Team Foundation Version Control
 
 > [!NOTE]
-> Aby zapewnić najlepszą kontrolę wersji w systemie macOS, zalecamy korzystanie z narzędzia Git zamiast Kontrola wersji serwera Team Foundation (TFVC). Narzędzie git jest obsługiwane w Visual Studio dla komputerów Mac i jest opcją domyślną dla repozytoriów hostowanych w Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej o korzystaniu z narzędzia Git z programem TFS/Azure DevOps, zobacz artykuł [Konfigurowanie repozytorium git](/visualstudio/mac/set-up-git-repository) .
+> Aby uzyskać najlepsze środowisko kontroli wersji w systemie macOS, zalecamy użycie git zamiast Team Foundation Version Control (TFVC). Git jest obsługiwany w programie Visual Studio dla komputerów Mac i jest domyślną opcją dla repozytoriów hostowanych w programie Team Foundation Server (TFS)/Azure DevOps. Aby dowiedzieć się więcej na temat korzystania z git z TFS/Azure DevOps, zobacz [konfigurowanie repozytorium Git](/visualstudio/mac/set-up-git-repository) artykułu.
 >
-> Jeśli wcześniej była używana wersja zapoznawcza rozszerzenia TFVC dla Visual Studio dla komputerów Mac, nie jest już obsługiwana w przypadku uaktualniania do programu Visual Studio 2019 for Mac.
+> Jeśli wcześniej używano wersji w wersji zapoznawczej rozszerzenia TFVC dla programu Visual Studio dla komputerów Mac, nie jest już obsługiwana podczas uaktualniania do programu Visual Studio 2019 dla komputerów Mac.
 
-W galerii rozszerzeń Visual Studio dla komputerów Mac istnieje rozszerzenie kontroli wersji programu Team Foundation, które oferuje ograniczoną obsługę połączenia z usługą TFVC. Rozszerzenie nie jest obsługiwane i zawiera kilka znanych problemów, dlatego środowisko może się różnić w przypadku korzystania z niego.
+W galerii rozszerzenia programu Visual Studio dla komputerów Mac istnieje rozszerzenie kontroli wersji programu Team Foundation, które oferuje ograniczoną obsługę, aby połączyć się z TFVC. Rozszerzenie nie jest obsługiwane i ma kilka znanych problemów, więc doświadczenie może się różnić podczas korzystania z niego.
 
-Aby zainstalować rozszerzenie, uruchom Visual Studio dla komputerów Mac i wybierz menu **rozszerzenia Visual Studio >** . W **galerii** zaznacz **kontroli wersji > kontroli wersji Team Foundation dla TFS i usługi Azure DevOps** i kliknij przycisk **instalacji...** :
+Aby zainstalować rozszerzenie, uruchom program Visual Studio dla komputerów Mac i wybierz menu **Rozszerzenia > programu Visual Studio.** Na karcie **Galeria** wybierz pozycję **Kontrola wersji > kontrola wersji programu Team Foundation dla usług TFS i azure DevOps** i kliknij pozycję **Zainstaluj...**:
 
 ![Menedżer rozszerzeń](media/tfvc-install.png)
 
-Postępuj zgodnie z monitami, aby zainstalować rozszerzenie. Po zainstalowaniu programu ponownie uruchom środowisko IDE.
+Postępuj zgodnie z instrukcjami, aby zainstalować rozszerzenie. Po zainstalowaniu uruchom ponownie IDE.
 
 ### <a name="updating-the-extension"></a>Aktualizowanie rozszerzenia
 
-Aktualizacje rozszerzenia TFVC są wykonywane okresowo. Aby uzyskać dostęp do aktualizacji, wybierz pozycję **rozszerzenia programu Visual Studio >...** z menu, a następnie wybierz kartę **aktualizacje** . Wybierz rozszerzenie na liście i naciśnij przycisk **Aktualizuj** :
+Aktualizacje rozszerzenia TFVC są okresowo. Aby uzyskać dostęp do aktualizacji, wybierz z menu **polecenie Visual Studio > Rozszerzenia...** i wybierz **Update** kartę **Aktualizacje.**
 
-Naciśnij przycisk **Instaluj** w następnym oknie dialogowym, aby odinstalować stary pakiet i zainstalować nowy.
+Naciśnij **przycisk Zainstaluj** w następnym oknie dialogowym, aby odinstalować stary pakiet i zainstalować nowy.
 
-### <a name="using-the-extension"></a>Przy użyciu rozszerzenia
+### <a name="using-the-extension"></a>Korzystanie z rozszerzenia
 
-Po zainstalowaniu rozszerzenia wybierz **kontroli wersji > DevOps programu TFS/platformy Azure > Otwórz ze zdalnego repozytorium...** elementu menu.
+Po zainstalowaniu rozszerzenia wybierz pozycję menu **Kontrola wersji > TFS/Azure DevOps > Open z repozytorium zdalnego...** element menu.
 
 ![Element menu, aby otworzyć rozszerzenie](media/tfvc-source-control-explorer-devops.png)
 
-Wybierz opcję VSTS lub Team Foundation Server, aby rozpocząć pracę, i naciśnij przycisk **Kontynuuj**:
+Wybierz program VSTS lub Team Foundation Server, aby rozpocząć pracę, a następnie naciśnij przycisk **Kontynuuj:**
 
-![Nawiązywanie połączenia z serwerem](media/tfvc-choose-server-type-devops.png)
+![Łączenie się z serwerem](media/tfvc-choose-server-type-devops.png)
 
-#### <a name="azure-repos-authentication"></a>Uwierzytelnianie Azure Repos
+#### <a name="azure-repos-authentication"></a>Uwierzytelnianie repozytorium platformy Azure
 
-Po wybraniu projektu hostowanego na Azure Repos zostanie wyświetlony monit o wprowadzenie szczegółów konto Microsoft:
+Po wybraniu projektu, który jest hostowany w repo platformy Azure, zostanie wyświetlony monit o wprowadzenie szczegółów konta Microsoft:
 
-![Połącz z Azure Repos](media/tfvc-vsts-login.png)
+![Połącz się z repozytorium platformy Azure](media/tfvc-vsts-login.png)
 
 #### <a name="tfs-authentication"></a>Uwierzytelnianie TFS
 
-Aby nawiązać połączenie z programem TFS, wprowadź szczegóły serwera i poświadczenia konta. Wprowadź domenę, aby korzystać z uwierzytelniania NTLM, w przeciwnym razie pozostaw puste, aby użyć uwierzytelniania podstawowego. Wybierz pozycję **Dodaj serwer**:
+Aby połączyć się z usługą TFS, wprowadź szczegóły serwera i poświadczenia konta. Wprowadź domenę, aby użyć uwierzytelniania NTLM, w przeciwnym razie pozostaw puste miejsce, aby użyć uwierzytelniania podstawowego. Wybierz **pozycję Dodaj serwer:**
 
-![Zaloguj się do serwera TFS](media/tfvc-login.png)
+![Logowanie się do serwera TFS](media/tfvc-login.png)
 
 ### <a name="selecting-a-project"></a>Wybieranie projektu
 
-Po pomyślnym uwierzytelnieniu można zobaczyć listę repozytoriów skojarzonych z kontem w oknie dialogowym **Otwórz z kontroli źródła** :
+Po pomyślnym uwierzytelnieniu w oknie dialogowym **Kontrola źródła** zostanie wyświetlona lista repozytoriów skojarzonych z kontem:
 
-![Otwórz z okna dialogowego kontroli źródła z wyświetlanymi projektami](media/tfvc-vsts-projects.png)
+![Otwórz z okna dialogowego Kontrola źródła z wyświetlonymi projektami](media/tfvc-vsts-projects.png)
 
 To okno dialogowe jest zorganizowane z następującymi węzłami:
 
-- Azure DevOps — organizacja lub kolekcja — wyświetla wszystkie organizacje połączone z konto Microsoft, które zostały zalogowane.
-- Projekty — w każdej organizacji lub kolekcji można mieć wiele projektów. Projekt jest miejscem, w którym są hostowane kod źródłowy, elementy robocze i kompilacje automatyczne.
+- Organizacja lub kolekcja programu Azure DevOps — wyświetla wszystkie organizacje połączone z kontem Microsoft, za pomocą którego użytkownik się zalogował.
+- Projekty — w każdej organizacji lub kolekcji można mieć wiele projektów. Projekt jest, gdzie kod źródłowy, elementy robocze i zautomatyzowane kompilacje są hostowane.
 
 W tym momencie można wyszukiwać i filtrować według nazwy projektu lub organizacji.
 
 #### <a name="adding-a-new-server"></a>Dodawanie nowego serwera
 
-Aby dodać nowy serwer do listy, naciśnij przycisk **Dodaj hosta** w oknie dialogowym **Otwórz z kontroli źródła** :
+Aby dodać nowy serwer do listy, naciśnij przycisk **Dodaj hosta** w oknie dialogowym **Otwórz z kontrolki źródła:**
 
-![Wyróżniono przycisk Dodaj, aby dodać nowy serwer do listy](media/tfvc-add-new-server.png)
+![Wyróżniony przycisk dodaj, aby dodać nowy serwer do listy](media/tfvc-add-new-server.png)
 
-Wybierz dostawcę z listy, a następnie wprowadź swoje poświadczenia:
+Wybierz dostawcę z listy i wprowadź poświadczenia:
 
-![Okno dialogowe pokazujące opcję dla dostawcy kontroli źródła](media/tfvc-add-new-creds-devops.png)
+![Okno dialogowe z opcją dla dostawcy kontroli źródła](media/tfvc-add-new-creds-devops.png)
 
 ### <a name="creating-a-new-workspace"></a>Tworzenie nowego obszaru roboczego
 
-Aby rozpocząć pracę z projektem, musisz mieć _obszar roboczy_. Jeśli nie masz jeszcze obszaru roboczego, możesz utworzyć go z poziomu pola kombi **obszaru roboczego** w oknie dialogowym **Otwórz z kontroli źródła** :
+Aby rozpocząć pracę z projektem, musisz mieć _obszar roboczy_. Jeśli nie masz jeszcze obszaru roboczego, możesz go utworzyć z pola kombi **Obszaru roboczego** w oknie dialogowym **Kontrola źródła Otwórz z źródła:**
 
-![Utwórz nowy obszar roboczy — opcja ComboBox](media/tfvc-create-new-workspace.png)
+![Tworzenie nowej opcji pola kombi obszaru roboczego](media/tfvc-create-new-workspace.png)
 
-Ustaw nazwę i ścieżkę lokalną dla nowego obszaru roboczego i wybierz pozycję **Utwórz obszar roboczy**:
+Ustaw nazwę i ścieżkę lokalną dla nowego obszaru roboczego i wybierz pozycję **Utwórz obszar roboczy:**
 
 ![Wprowadzanie nazwy i ścieżki lokalnej dla nowego obszaru roboczego](media/tfvc-local-workspace.png)
 
 ### <a name="using-the-source-code-explorer"></a>Korzystanie z Eksploratora kodu źródłowego
 
-Po utworzeniu obszaru roboczego i zmapowaniu projektu możesz rozpocząć pracę z _Eksploratorem kodu źródłowego_.
+Po utworzeniu obszaru roboczego i zamapowania projektu można rozpocząć pracę z _Eksploratorem kodu źródłowego_.
 
-Aby otworzyć Eksploratora kodu źródłowego, zaznacz element menu **Kontrola wersji > TFS/Azure DevOps > Eksploator kontroli źródła** .
+Aby otworzyć Eksploratora kodu źródłowego, wybierz pozycję menu **Kontrola wersji > TFS/Azure DevOps > Eksplorator kontroli źródła.**
 
-Eksplorator kodu źródłowego umożliwia nawigowanie przez wszystkie zmapowane projekty, ich pliki i foldery. Umożliwia również wykonywanie wszystkich podstawowych akcji kontroli źródła, takich jak:
+Eksplorator kodu źródłowego umożliwia poruszanie się po wszystkich mapowanych projektach, ich plikach i folderach. Umożliwia również wykonywanie wszystkich podstawowych akcji kontroli źródła, takich jak:
 
 - Pobierz najnowszą wersję
-- Pobierz określoną wersję
+- Uzyskaj określoną wersję
 - Ewidencjonowanie i wyewidencjonowywanie plików
-- Zablokuj i Odblokuj pliki
-- Dodawanie, usuwanie i zmiana nazw plików
-- Wyświetlić historię
+- Blokowanie i odblokowywanie plików
+- Dodawanie, usuwanie i zmienianie nazw plików
+- Wyświetlanie historii
 - Porównaj zmiany.
 
-Wiele z tych akcji jest dostępnych za pomocą akcji kontekstu w projekcie:
+Wiele z tych działań jest dostępnych za pośrednictwem działań kontekstowych projektu:
 
 ![Akcje menu kontekstowego dla projektu](media/tfvc-sourcecode-actions.png)
 
 ### <a name="managing-workspaces"></a>Zarządzanie obszarami roboczymi
 
-Jeśli obszar roboczy nie został jeszcze utworzony, zgodnie z opisem w sekcji [Tworzenie obszaru roboczego](#creating-a-new-workspace) można zauważyć, że Eksplorator kodu źródłowego jest pusty:
+Jeśli nie utworzono jeszcze obszaru roboczego, zgodnie z opisem w sekcji [Tworzenie obszaru roboczego,](#creating-a-new-workspace) można zauważyć, że Eksplorator kodu źródłowego jest pusty:
 
-![pusty Eksplorator kodu źródłowego](media/tfvc-setup-empty-sce.png)
+![pusty eksplorator kodu źródłowego](media/tfvc-setup-empty-sce.png)
 
-Aby skonfigurować zdalny projekt przy użyciu lokalnego obszaru roboczego, wykonaj następujące czynności:
+Aby skonfigurować projekt zdalny w lokalnym obszarze roboczym, należy wykonać następujące czynności:
 
-1. Wybierz **serwer** z ComboBox.
-1. Należy zauważyć, że nie ma żadnych obszarów roboczych, a ścieżka lokalna nie jest zamapowana. Wybierz łącze **niezamapowane** , aby wyświetlić okno dialogowe **Tworzenie nowego obszaru roboczego** .
-1. Podaj nazwę obszaru roboczego, a następnie kliknij pozycję **Dodaj folder roboczy** , aby zmapować projekt do folderu lokalnego na komputerze:
+1. Wybierz **serwer** z pola kombi.
+1. Należy zauważyć, że istnieją "brak obszarów roboczych" i że ścieżka lokalna jest "Nie mapowane". Wybierz **łącze Nie mapowane,** aby wyświetlić okno dialogowe **Utwórz nowy obszar roboczy.**
+1. Podaj nazwę obszaru roboczego, a następnie kliknij przycisk **Dodaj folder roboczy,** aby zamapować projekt na folder lokalny na komputerze:
 
-    ![Utwórz nowe okno dialogowe obszaru roboczego z opcjami domyślnymi](media/tfvc-workspace1.png)
+    ![Tworzenie nowego okna dialogowego obszaru roboczego z opcjami domyślnymi](media/tfvc-workspace1.png)
 
-1. Wybierz folder "$", aby zmapować wszystkie projekty na serwerze do tego samego obszaru roboczego, lub Wybierz pojedynczy projekt, a następnie kliknij przycisk **OK**:
+1. Wybierz folder "$", aby zamapować wszystkie projekty na serwerze do tego samego obszaru roboczego, lub wybierz pojedynczy projekt, a następnie kliknij przycisk **OK:**
 
-    ![Okno dialogowe Przeglądanie w poszukiwaniu folderu, w którym są wyświetlane wszystkie projekty](media/tfvc-workspace2.png)
+    ![Okno dialogowe Przeglądania folderu przedstawiające wszystkie projekty](media/tfvc-workspace2.png)
 
-1. Wybierz lokalizację na komputerze lokalnym, do której mają zostać zamapowane projekty, a następnie kliknij pozycję **Wybierz folder**.
-1. Potwierdź szczegóły nowego obszaru roboczego, naciskając **przycisk OK** .
+1. Wybierz lokalizację na komputerze lokalnym, na którą chcesz zamapować projekt, i kliknij przycisk **Wybierz folder**.
+1. Potwierdź szczegóły nowego obszaru roboczego, naciskając przycisk **OK**
 
-    ![Okno dialogowe Tworzenie nowego obszaru roboczego z dodanym folderem roboczym](media/tfvc-workspace3.png)
+    ![Tworzenie nowego okna dialogowego obszaru roboczego z dodanym folderem roboczym](media/tfvc-workspace3.png)
 
 Po skonfigurowaniu obszaru roboczego można go zmienić lub usunąć, klikając przycisk **Zarządzaj obszarami roboczymi** w Eksploratorze kodu źródłowego.
 
@@ -232,46 +232,46 @@ Po skonfigurowaniu obszaru roboczego można go zmienić lub usunąć, klikając 
 
 ## <a name="troubleshooting-and-known-issues"></a>Rozwiązywanie problemów i znane problemy
 
-#### <a name="problems-using-basic-authentication"></a>Problemy z uwierzytelnianiem podstawowym
+#### <a name="problems-using-basic-authentication"></a>Problemy z wykorzystaniem uwierzytelniania podstawowego
 
-Do uwierzytelniania za pomocą serwera można użyć następujących opcji:
+Do uwierzytelniania na serwerze można użyć następujących opcji:
 
 - Oauth
-- Podstawowy
-- NTLM
+- Podstawowa (Basic)
+- Ntlm
 
-Aby korzystać z uwierzytelniania podstawowego, należy włączyć **alternatywne poświadczenia uwierzytelniania** w Azure DevOps Services, wykonując poniższe kroki:
+Aby użyć uwierzytelniania podstawowego, konieczne jest włączenie **alternatywnych poświadczeń uwierzytelniania** w usługach Azure DevOps, wykonując poniższe kroki:
 
-1. Zaloguj się do swojej organizacji usługi Azure DevOps jako właściciel (https:\//dev.Azure.com/{Organization}/{Project}).
+1. Zaloguj się do organizacji Programu Azure DevOps\/jako właściciel (https: /dev.azure.com/{organization}/{project}).
 
-2. Na pasku narzędzi organizacji wybierz ikonę koła zębatego i wybierz pozycję **zasady**:
+2. Na pasku narzędzi organizacji wybierz ikonę koła zębatego i wybierz pozycję **Zasady:**
 
-    ![Wybrana opcja ustawień zasad](media/tfvc-auth2.png)
+    ![Wybrano opcję ustawień zasad](media/tfvc-auth2.png)
 
-3. Sprawdź ustawienia połączenia aplikacji. Zmień te ustawienia na podstawie zasad zabezpieczeń:
+3. Przejrzyj ustawienia połączenia aplikacji. Zmień te ustawienia na podstawie zasad zabezpieczeń:
 
-    ![Wybrana opcja ustawień zasad](media/tfvc-auth.png)
+    ![Wybrano opcję ustawień zasad](media/tfvc-auth.png)
 
-#### <a name="i-do-not-see-anything-in-tfvc"></a>Nie widzę niczego w TFVC
+#### <a name="i-do-not-see-anything-in-tfvc"></a>Nie widzę nic w TFVC
 
-Aby skonfigurować Kontrola wersji serwera Team Foundation (TFVC) na komputerze deweloperskim, **należy** utworzyć obszar roboczy, zgodnie z opisem w sekcji [Zarządzanie obszarami roboczymi](#managing-workspaces) .
+Aby skonfigurować system Team Foundation Version Control (TFVC) na komputerze deweloperskim, **należy** utworzyć obszar roboczy, zgodnie z opisem w sekcji [Zarządzanie obszarami roboczymi.](#managing-workspaces)
 
-W Eksploator kontroli źródła naciśnij przycisk **Zarządzaj obszarami roboczymi** . Postępuj zgodnie z instrukcjami, aby zmapować projekt do folderu na komputerze deweloperskim.
+W Eksploratorze kontroli źródła naciśnij przycisk **Zarządzaj obszarami roboczymi.** Wykonaj kroki, aby zamapować projekt do folderu na komputerze deweloperskim.
 
-#### <a name="i-do-not-see-any--all-of-my-projects"></a>Nie widzę żadnych/wszystkich moich projektów
+#### <a name="i-do-not-see-any--all-of-my-projects"></a>Nie widzę żadnych / wszystkich moich projektów
 
-Po uwierzytelnieniu powinna zostać wyświetlona lista projektów. Domyślnie są wyświetlane tylko projekty TFS. Aby wyświetlić inne typy projektów, zaznacz pole wyboru "Zobacz wszystkie projekty".
+Po uwierzytelnieniu powinna zostać wyświetlona lista projektów. Domyślnie wyświetlane są tylko projekty TFS. Aby wyświetlić inne typy projektów, zaznacz pole "Zobacz wszystkie projekty".
 
-Należy pamiętać, że projekty, które znajdują się na serwerze, nie będą wyświetlane, jeśli nie masz odpowiednich uprawnień.
+Należy pamiętać, że projekty, które znajdują się na serwerze nie pojawi się, jeśli nie masz odpowiednich uprawnień.
 
-##### <a name="i-am-getting-the-error-cannot-create-the-workspace-please-try-again"></a>Otrzymuję komunikat o błędzie "nie można utworzyć obszaru roboczego. Spróbuj ponownie.
+##### <a name="i-am-getting-the-error-cannot-create-the-workspace-please-try-again"></a>Pojawia się błąd "Nie można utworzyć obszaru roboczego. Spróbuj ponownie"
 
-Podczas próby [utworzenia nowego obszaru roboczego](#creating-a-new-workspace)należy upewnić się, że są spełnione następujące warunki:
+Podczas próby [utworzenia nowego obszaru roboczego](#creating-a-new-workspace)należy upewnić się, że spełnione są następujące warunki:
 
 - Brak użycia nieprawidłowych znaków w nazwie obszaru roboczego.
-- Nazwa musi być krótsza niż 64 znaków.
-- Ścieżka lokalna nie może być używana przez żadne inne obszary robocze.
+- Nazwa musi być mniejsza niż 64 znaki.
+- Ścieżka lokalna nie może być używana przez inne obszary robocze.
 
-### <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz też
 
-- [Opracowywanie i udostępnianie kodu w programie TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Tworzenie i udostępnianie kodu w TFVC przy użyciu programu Visual Studio (w systemie Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

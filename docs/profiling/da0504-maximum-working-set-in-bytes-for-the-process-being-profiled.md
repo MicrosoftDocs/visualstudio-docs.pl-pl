@@ -1,5 +1,5 @@
 ---
-title: 'DA0504: maksymalny zestaw roboczy w bajtach dla profilowanego procesu | Microsoft Docs'
+title: 'DA0504: Maksymalny zestaw roboczy w bajtach dla profilowanego procesu | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,32 +14,32 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779327"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: Maksymalny rozmiar zestawu roboczego w bajtach dla procesu poddawanego profilowaniu
 
 |||
 |-|-|
-|Identyfikator zasady|DA0504|
+|Identyfikator reguły|DA0504|
 |Kategoria|Zarządzanie zasobami|
 |Metoda profilowania|Wszystkie|
-|Komunikat|Te informacje zostały zebrane tylko w celu uzyskania informacji. Licznik zestawu roboczego procesu mierzy użycie pamięci fizycznej przez proces profilowania. Raportowana wartość jest maksimum zaobserwowane we wszystkich interwałach pomiarowych.|
-|Typ reguły|Informacje programu|
+|Komunikat|Informacje te zostały zebrane wyłącznie w celu uzyskania informacji. Licznik Zestaw roboczy procesu mierzy użycie pamięci fizycznej przez proces, który są profilowania. Zgłoszona wartość jest maksymalną obserwowaną we wszystkich odstępach czasu pomiaru.|
+|Typ reguły|Informacje|
 
- Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="rule-description"></a>Opis reguły
- Ten komunikat przedstawia maksymalną ilość pamięci fizycznej (w bajtach), która aktualnie jest używana przez proces. Zestaw roboczy procesu przedstawia strony z przestrzeni adresowej procesu, która znajduje się obecnie w pamięci fizycznej. Ta reguła raportuje maksymalną wartość zestawu roboczego procesu, gdy profilowanie było aktywne.
+ Ten komunikat informuje o maksymalnej ilości pamięci fizycznej w bajtach, z których obecnie korzysta proces. Zestaw roboczy procesu reprezentuje strony z przestrzeni adresowej procesu, które obecnie znajdują się w pamięci fizycznej. Ta reguła raportuje maksymalną wartość dla zestawu roboczego procesu, gdy profilowanie było aktywne.
 
- Raportowana wartość obejmuje strony rezydentne z udostępnionych segmentów pamięci, do których odwołuje się proces. Udostępnione biblioteki DLL, do których odwołują się odwołania do procesów, są uwzględniane w zliczanych segmentach pamięci współdzielonej. Wartość zestawu roboczego procesu może być wyższa niż ilość pamięci wirtualnej przydzielonej przez proces z powodu udostępnionych segmentów pamięci.
+ Zgłoszona wartość obejmuje strony rezydentne z segmentów pamięci współużytkowanej, do których odwołuje się proces. Udostępnione biblioteki DLL, do których odwołania do procesu są uwzględniane w segmentach pamięci współużytkowanej, które są zliczane. Wartość zestawu roboczego procesu może być wyższa niż ilość pamięci wirtualnej przydzielonej przez proces z powodu segmentów pamięci współużytkowanej.
 
- Rozmiar zestawu roboczego procesu odzwierciedla ilość pamięci wirtualnej, która jest aktywnie używana przez proces. Ma także wpływ na ilość pamięci fizycznej (lub pamięci RAM), która jest dostępna do uruchamiania aplikacji i rywalizacji dla tej pamięci fizycznej z innych uruchomionych procesów. Aby uzyskać więcej informacji na temat procesów zestawów roboczych, zobacz [zestaw roboczy](/windows/win32/memory/working-set) w dokumentacji zarządzania pamięcią systemu Windows w witrynie MSDN.
+ Rozmiar zestawu roboczego procesu odzwierciedla ilość pamięci wirtualnej, z jakiej aktywnie korzysta proces. Ma również wpływ na ilość pamięci fizycznej (lub pamięci RAM) dostępne do uruchomienia aplikacji i rywalizacji dla tej pamięci fizycznej z innych uruchomionych procesów. Aby uzyskać więcej informacji na temat zestawów roboczych procesu, zobacz [Zestaw roboczy](/windows/win32/memory/working-set) w dokumentacji zarządzania pamięcią systemu Windows w msdn.
 
-## <a name="how-to-use-rule-data"></a>Jak używać danych reguł
- Ta zasada zbiera dane pomiarów z funkcji monitorowania wydajności systemu Windows i raportuje je tylko w celu uzyskania informacji. Służy do porównywania wydajności różnych wersji lub kompilacji programu lub do zrozumienia wydajności aplikacji w różnych scenariuszach testowych.
+## <a name="how-to-use-rule-data"></a>Jak korzystać z danych reguł
+ Reguła zbiera te dane pomiarowe z funkcji monitorowania wydajności systemu Windows i zgłasza go tylko w celu uzyskania informacji. Użyj go do porównania wydajności różnych wersji lub kompilacji programu lub do zrozumienia wydajności aplikacji w różnych scenariuszach testowych.
 
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [widoku znaczniki](../profiling/marks-view.md) danych profilowania. Znajdź kolumny licznika **Process\Working** i **pamięć \ strony/s** . Następnie Znajdź maksymalną wartość **zestawu Process\Working** i porównaj ją z wartością **pamięć \ strony/s** . Często wartość maksymalna zestawu roboczego jest skojarzona z interwałem, w którym występuje zmniejszona aktywność we/wy stronicowania, szczególnie jeśli maszyna jest ograniczona do pamięci.
+ Kliknij dwukrotnie wiadomość w oknie Lista błędów, aby przejść do [widoku znaczników](../profiling/marks-view.md) danych profilowania. Znajdź kolumny **liczników Proces\Zestaw roboczy** i **Pamięć\Strony/s.** Następnie znajdź maksymalną wartość **zestawu roboczego Process\i** porównaj ją z wartością **Pamięć\Strony/s.** Często maksymalna wartość zestawu roboczego jest skojarzona z interwałem, w którym zmniejsza się aktywność we/wy stronicowania, zwłaszcza jeśli komputer jest ograniczony pamięcią.

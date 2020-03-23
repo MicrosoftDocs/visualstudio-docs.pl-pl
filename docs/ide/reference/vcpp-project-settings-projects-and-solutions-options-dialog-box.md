@@ -1,5 +1,5 @@
 ---
-title: C++Opcje ustawień projektu
+title: Opcje ustawień projektu języka C++
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -19,29 +19,29 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "68918882"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Ustawienia projektu VC++, projekty i rozwiązania, opcje — Okno dialogowe
 
-To okno dialogowe umożliwia definiowanie C++ ustawień kompilacji i projektu związanych z rejestrowaniem, wydajnością i typami plików pomocniczych.
+To okno dialogowe umożliwia definiowanie ustawień kompilacji i projektu języka C++ związanych z rejestrowaniem, wydajnością i obsługiwanymi typami plików.
 
 ## <a name="to-access-this-dialog-box"></a>Aby uzyskać dostęp do tego okna dialogowego
 
-1. Na **narzędzia** menu, kliknij przycisk **opcje**.
+1. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
-2. Wybierz **projekty i rozwiązania**, a następnie wybierz pozycję **Ustawienia projektu VC + +** .
+2. Wybierz **pozycję Projekty i rozwiązania**, a następnie wybierz pozycję Ustawienia projektu **VC++**.
 
-## <a name="build-logging"></a>Rejestrowanie kompilacji
+## <a name="build-logging"></a>Tworzenie rejestrowania
 
  **Tak**
 
-  Włącza generowanie pliku dziennika kompilacji. Ta opcja generuje BuildLog. htm, który można znaleźć w katalogu plików pośrednich projektu. Każda nowa kompilacja zastępuje poprzedni plik BuildLog. htm.
+  Włącza generowanie pliku dziennika kompilacji. Ta opcja generuje BuildLog.htm, który można znaleźć w katalogu plików pośrednich projektu. Każda świeża kompilacja zastępuje poprzedni plik BuildLog.htm.
 
- **Znaleziono**
+ **Nie**
 
   Wyłącza generowanie pliku dziennika kompilacji.
 
@@ -49,9 +49,9 @@ To okno dialogowe umożliwia definiowanie C++ ustawień kompilacji i projektu zw
 
  **Tak**
 
-Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa, że wszystkie zmienne środowiskowe podczas kompilacji C++ projektów są wyświetlane w pliku dziennika kompilacji.
+Wyświetla listę zmiennych środowiskowych w pliku dziennika kompilacji. Ta opcja określa echo wszystkich zmiennych środowiskowych, podczas kompilacji projektów C++ do pliku dziennika kompilacji.
 
- **Znaleziono**
+ **Nie**
 
 Wyklucz zmienne środowiskowe z pliku dziennika kompilacji.
 
@@ -59,49 +59,49 @@ Wyklucz zmienne środowiskowe z pliku dziennika kompilacji.
 
  **Tak**
 
-  Włącza czas kompilacji. W przypadku wybrania tej operacji w oknie danych wyjściowych zostanie opublikowany czas potrzebny na zakończenie kompilacji. Aby uzyskać więcej informacji, zobacz [okno dane wyjściowe](../../ide/reference/output-window.md).
+  Włącza czas kompilacji. Jeśli ta opcja jest zaznaczona, czas potrzebny na ukończenie kompilacji jest księgowane w oknie Dane wyjściowe. Aby uzyskać więcej informacji, zobacz [Okno wyjściowe](../../ide/reference/output-window.md).
 
- **Znaleziono**
+ **Nie**
 
 Wyłącza czas kompilacji.
 
-## <a name="maximum-concurrent-c-compilations"></a>Maksymalna liczba C++ współbieżnych kompilacji
+## <a name="maximum-concurrent-c-compilations"></a>Maksymalna jednoczesna kompilacja języka C++
 
-Określa maksymalną liczbę rdzeni procesora CPU do użycia na potrzeby kompilacji C++ równoległej.
+Określa maksymalną liczbę rdzeni procesora CPU do użycia dla równoległej kompilacji C++.
 
 ## <a name="extensions-to-include"></a>Rozszerzenia do uwzględnienia
 
-Określa rozszerzenia nazw plików, które można przenieść do projektu.
+Określa rozszerzenia nazw plików, które mogą być przenoszone do projektu.
 
 ## <a name="extensions-to-hide"></a>Rozszerzenia do ukrycia
 
-Określa rozszerzenia nazw plików, które nie będą wyświetlane w **Eksplorator rozwiązań** po włączeniu **wyświetlania wszystkich plików** .
+Określa rozszerzenia nazw plików, które nie będą wyświetlane w **Eksploratorze rozwiązań** po włączeniu **funkcji Pokaż wszystkie pliki.**
 
 ## <a name="build-customization-search-path"></a>Ścieżka wyszukiwania dostosowywania kompilacji
 
-Określa listę katalogów zawierających pliki reguł, które ułatwiają definiowanie reguł kompilacji dla projektów.
+Określa listę katalogów zawierających pliki .rules, które ułatwiają definiowanie reguł kompilacji dla projektów.
 
-## <a name="solution-explorer-mode"></a>Tryb Eksplorator rozwiązań
+## <a name="solution-explorer-mode"></a>Tryb Eksploratora rozwiązań
 
 **Pokaż tylko pliki w projekcie**
 
-Konfiguruje **Eksplorator rozwiązań** tylko do wyświetlania plików w projekcie.
+Konfiguruje **Eksploratora rozwiązań,** aby wyświetlał tylko pliki w projekcie.
 
 **Pokaż wszystkie pliki**
 
-Konfiguruje **Eksplorator rozwiązań** do wyświetlania plików w projekcie i plikach na dysku w folderze projektu.
+Konfiguruje **Eksploratora rozwiązań,** aby wyświetlał pliki w projekcie i pliki na dysku w folderze projektu.
 
 ## <a name="enable-project-caching"></a>Włącz buforowanie projektu
 
 **Tak**
 
-Umożliwia programowi Visual Studio buforowanie danych projektu w taki sposób, aby po otwarciu projektu w następnym momencie można było załadować te dane w pamięci podręcznej, a nie ponownie obliczać je na podstawie plików projektu. Użycie danych w pamięci podręcznej może znacznie skrócić czas ładowania projektu.
+Umożliwia programowi Visual Studio buforowanie danych projektu, dzięki czemu podczas następnego otwarcia projektu można załadować te dane w pamięci podręcznej, a nie ponownie obliczyć je z plików projektu. Korzystanie z danych w pamięci podręcznej może znacznie przyspieszyć czas ładowania projektu.
 
-**Znaleziono**
+**Nie**
 
-Nie używaj danych projektu w pamięci podręcznej. Analizuj pliki projektu za każdym razem, gdy projekt jest ładowany.
+Nie należy używać buforowanych danych projektu. Analizuj pliki projektu za każdym razem, gdy projekt się ładuje.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kompilowanie programów C/C++](/cpp/build/projects-and-build-systems-cpp)
-- [Dokumentacja kompilacji w języku C/C++](/cpp/build/reference/c-cpp-building-reference)
+- [Odwołanie kompilacji C/C++](/cpp/build/reference/c-cpp-building-reference)

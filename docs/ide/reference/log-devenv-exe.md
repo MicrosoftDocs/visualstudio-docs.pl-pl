@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595465"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
-Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik jest wyświetlany po wywołaniu `devenv /log` co najmniej raz. Domyślnie plik dziennika znajduje się tutaj:
+Loguje wszelką aktywność do pliku dziennika w celu rozwiązywania problemów. Ten plik pojawia się `devenv /log` po wywołaniu co najmniej raz. Domyślnie plik dziennika znajduje się tutaj:
 
-**% AppData%\\Microsoft\\VisualStudio\\** \<wersja\> **\\ActivityLog. XML**
+**%APPDATA%\\\\Witryna\\**aktywności w wersji\<\>**\\** programu Microsoft VisualStudio.xml
 
-gdzie wersja\> \<jest wersją programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
+gdzie \<\> wersja jest wersją programu Visual Studio. Można jednak określić inną ścieżkę i nazwę pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,24 +35,24 @@ devenv /Log NameOfLogFile
 
 ## <a name="arguments"></a>Argumenty
 
-- *NameOfLogFile*
+- *NazwaOfLogFile*
 
-  Wymagany. Pełna ścieżka i nazwa pliku dziennika, w którym ma zostać zapisany plik.
+  Wymagany. Pełna ścieżka i nazwa pliku dziennika do zapisania.
 
 ## <a name="remarks"></a>Uwagi
 
 Ten przełącznik musi być umieszczony na końcu wiersza polecenia po innych przełącznikach.
 
-Dziennik jest zapisywana tylko dla wszystkich wystąpień programu Visual Studio, które zostały otwarte przy użyciu przełącznika `/Log`.
+Dziennik jest napisany tylko dla wszystkich wystąpień programu Visual Studio, które zostały otwarte za pomocą przełącznika. `/Log`
 
 ## <a name="example"></a>Przykład
 
-Ten przykład kieruje rejestrowanie do pliku `MyVSLog.xml` w katalogu macierzystym użytkownika.
+W tym przykładzie kieruje `MyVSLog.xml` rejestrowanie do pliku w katalogu macierzystym użytkownika.
 
 ```shell
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

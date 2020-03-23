@@ -1,7 +1,7 @@
 ---
-title: Korzystanie z programu Visual Studio bez myszy
+title: Używanie programu Visual Studio bez myszy
 titleSuffix: ''
-description: Dowiedz się, jak nawigować i pisać kod w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio, korzystając z klawiatury.
+description: Dowiedz się, jak nawigować i pisać kod w zintegrowanym środowisku programistycznym Visual Studio (IDE) za pomocą klawiatury.
 ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,89 +17,89 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569026"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Korzystanie wyłącznie z klawiatury
+# <a name="how-to-use-the-keyboard-exclusively"></a>Jak korzystać z klawiatury wyłącznie
 
-Skróty klawiaturowe mogą ułatwić nawigowanie w środowisku IDE programu Visual Studio i pisanie kodu. W tym artykule przedstawiono kilka sposobów bardziej efektywnego używania skrótów klawiaturowych.
+Skróty klawiaturowe mogą ułatwić poruszanie się po środowiskoch IDE programu Visual Studio i pisanie kodu. W tym artykule omówiono kilka sposobów efektywniejszego używania skrótów klawiaturowych.
 
-Aby zapoznać się z pełną listą klawiszy skrótów poleceń w programie Visual Studio, zobacz [domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Aby uzyskać pełną listę klawiszy skrótów poleceń w programie Visual Studio, zobacz [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Aby dowiedzieć się więcej na temat aktualizacji ułatwień dostępu, zobacz artykuł [ulepszenia ułatwień dostępu w blogu dotyczącym programu Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) .
+> Aby dowiedzieć się więcej o aktualizacjach ułatwień dostępu, zobacz [informacje o ulepszeniach ułatwień dostępu w blogu programu Visual Studio 2017.](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)
 
 ::: moniker-end
 
 > [!NOTE]
-> W zależności od ustawień lub używanej wersji programu Visual Studio okna dialogowe i polecenia menu mogą się różnić od tych opisanych w pomocy. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [zresetować ustawienia](../environment-settings.md#reset-settings).
+> W zależności od ustawień lub wersji programu Visual Studio, którego używasz, okna dialogowe i polecenia menu, które widzisz, mogą różnić się od tych opisanych w Pomocy. Aby zmienić ustawienia, wybierz polecenie **Importuj i eksportuj ustawienia** w menu **Narzędzia.** Aby uzyskać więcej informacji, zobacz [Resetowanie ustawień](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Kontrolki przybornika
 
-Aby dodać kontrolkę w przyborniku do formularza lub projektanta bez użycia myszy:
+Aby dodać formant w przyborniku do formularza lub projektanta bez użycia myszy:
 
-1. Na pasku menu wybierz **widok** > **Przybornik**.
+1. Na pasku menu wybierz pozycję **Wyświetl** > **przybornik**.
 
-2. Aby poruszać się między sekcjami na karcie **przybornika** , użyj klawiszy **Ctrl**+**strzałka w górę** lub **Ctrl**+**Strzałka w dół** .
+2. Użyj**strzałki** **Ctrl**+w górę lub klawiszy**Strzałki w dół** **Ctrl,**+aby poruszać się między sekcjami na karcie **Przybornik.**
 
-3. Użyj klawisza **Strzałka w górę** lub **Strzałka w dół** , aby poruszać się między kontrolkami w sekcji.
+3. Użyj klawisza **strzałki w górę** lub **strzałki w dół,** aby poruszać się między formantami w sekcji.
 
-4. Po wybraniu kontrolki Użyj klawisza **Enter** , aby dodać formant do formularza lub projektanta.
+4. Po wybraniu formantu użyj klawisza **Enter,** aby dodać formant do formularza lub projektanta.
 
 ## <a name="dialog-box-options"></a>Opcje okien dialogowych
 
-Aby poruszać się między opcjami w oknie dialogowym i zmieniać ustawienia opcji przy użyciu tylko klawiatury:
+Aby przejść między opcjami w oknie dialogowym i zmienić ustawienia opcji, używając tylko klawiatury:
 
-1. Użyj klawisza **Tab** lub **SHIFT**+**Tab** , aby przejść w górę i w dół za pomocą kontrolek w oknie dialogowym.
+1. Użyj **karty** lub **klawiszy Tab,**+**Tab** aby przechodzić w górę i w dół za pomocą kontrolek w oknie dialogowym.
 
 2. Aby zmienić ustawienia opcji:
 
-   - W przypadku przycisków radiowych Użyj klawiszy **Strzałka w górę** i **Strzałka w dół** , aby zmienić wybór.
+   - W przypadku przycisków radiowych zmień wybór za pomocą **klawiszy strzałek** w górę i **Strzałki w dół.**
 
-   - W polu wyboru naciśnij klawisz **spacji** , aby zaznaczyć lub usunąć zaznaczenie.
+   - W przypadku pól wyboru naciśnij klawisz **Spacja,** aby zaznaczyć lub usunąć zaznaczenie.
 
-   - W przypadku list rozwijanych Użyj klawiszy **Alt**+**Strzałka w dół** , aby wyświetlić elementy, a następnie użyj klawiszy **Strzałka w górę** i **Strzałka w dół** , aby zmienić wybrany element.
+   - W przypadku list rozwijanych użyj strzałki **Alt**+**w dół,** aby wyświetlić elementy, a następnie zmień zaznaczony element za pomocą **klawiszy strzałek w górę** i **strzałek w dół.**
 
-   - W obszarze przyciski wybierz pozycję **Enter** , aby wywołać.
+   - W przypadku przycisków wybierz pozycję **Enter,** aby wywołać.
 
-   - W przypadku siatek Użyj klawiszy strzałek, aby nawigować po stronie. W przypadku list rozwijanych w siatkach Użyj **klawisza Shift**+**Alt**+**strzałkę w dół** , aby wyświetlić elementy, a następnie użyj klawiszy **Strzałka w górę** i **Strzałka w dół** , aby zmienić wybrany element.
+   - W przypadku siatek użyj klawiszy strzałek do nawigacji. W przypadku list rozwijanych w siatce użyj strzałki **Shift**+**Alt**+**w dół,** aby wyświetlić elementy, a następnie zmień zaznaczony element za pomocą **klawiszy strzałek w górę** i **Strzałki w dół.**
 
 ## <a name="navigate-between-windows-and-files"></a>Nawigowanie między oknami i plikami
 
-- Aby poruszać się między plikami w edytorze lub projektantem, wybierz skrót **klawiaturowy** z **klawiszem Ctrl**+, aby wyświetlić okno Nawigator IDE z **aktywnymi plikami** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego pliku.
+- Aby poruszać się między plikami w edytorze lub projektancie, wybierz skrót klawiaturowy **ctrl**+**tab,** aby wyświetlić nawigator IDE z zaznaczonymi **plikami aktywnymi.** Wybierz klawisz **Enter,** aby przejść do wyróżnionego pliku.
 
-- Aby poruszać się między zadokowanymi oknami narzędzi, wybierz skrót klawiaturowy **Alt**+**F7** , aby wyświetlić okno Nawigator IDE z **aktywnymi oknami narzędzi** . Wybierz klawisz **Enter** , aby przejść do wyróżnionego okna.
+- Aby przejść między zadokowanymi oknami narzędzi, wybierz skrót klawiaturowy **Alt**+**F7,** aby wyświetlić nawigator IDE z zaznaczonym systemem **Windows z aktywnym narzędziem.** Wybierz klawisz **Enter,** aby przejść do wyróżnionego okna.
 
-## <a name="move-and-dock-tool-windows"></a>Przenieś i Zadokuj okna narzędzi
+## <a name="move-and-dock-tool-windows"></a>Przenoszenie i dokowanie okien narzędzi
 
-1. Przejdź do okna narzędzi, które ma zostać przeniesione i umieść fokus.
+1. Przejdź do okna narzędzia, które zamierzasz przenieść, i nadać mu fokus.
 
-2. W menu **okno** wybierz opcję **było dokować** .
+2. W menu **Okno** wybierz opcję **Możliwość dokunia.**
 
-3. Naciśnij klawisz **Alt**+**spacja**, a następnie wybierz pozycję **Przenieś**.
+3. Naciśnij **klawisz Alt**+**Spacja**, a następnie wybierz polecenie **Przenieś**.
 
-   Zostanie wyświetlony romb przewodnika dokowania.
+   Pojawi się prowadnica dokująca.
 
-4. Użyj klawiszy strzałek, aby przenieść okno do nowej lokalizacji.
+4. Użyj klawiszy strzałek, aby przenieść okno w nowe miejsce.
 
-   Wskaźnik myszy jest przenoszony przy użyciu okna przy użyciu klawiszy strzałek.
+   Wskaźnik myszy porusza się wraz z oknem podczas używania klawiszy strzałek.
 
-5. Po osiągnięciu nowej lokalizacji Użyj klawiszy strzałek, aby przenieść wskaźnik myszy nad poprawną część rombu przewodnika.
+5. Po osiągnięciu nowej lokalizacji użyj klawiszy strzałek, aby przesunąć wskaźnik myszy nad właściwą częścią prowadnicy.
 
-   W nowej lokalizacji dokowania zostanie wyświetlony kontur okna narzędzi.
+   W nowej lokalizacji dokowania pojawi się kontur okna narzędzia.
 
-6. Naciśnij klawisz **wprowadź**.
+6. Naciśnij **klawisz Enter**.
 
-   Okno narzędzia jest przyciągane do miejsca w nowej lokalizacji dokowania.
+   Okno narzędzia zostanie przyciągnięte na miejsce w nowej lokalizacji dokowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-* [Identyfikowanie i Dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-* [Ułatwienia dostępu, porady i wskazówki](../../ide/reference/accessibility-tips-and-tricks.md)
+* [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+* [Porady i wskazówki związane z ułatwieniami dostępu](../../ide/reference/accessibility-tips-and-tricks.md)
 * [Domyślne skróty klawiaturowe](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 * [Ułatwienia dostępu w produktach firmy Microsoft](https://www.microsoft.com/accessibility/)

@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Zbierz pomiary interakcji między warstwami dla projektów bazy danych | Microsoft Docs'
+title: 'DA0030: Zbieranie pomiarów interakcji warstwowych dla projektów bazy danych | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,33 +14,33 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777479"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Zbieraj pomiary interakcji między warstwami dla projektów bazy danych
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Zbieranie pomiarów interakcji warstwy dla projektów bazy danych
 
 |||
 |-|-|
-|Identyfikator zasady|DA0030|
-|Kategoria|Użycie narzędzia profilowania|
-|Metoda profilowania|Sond|
-|Komunikat|Zebranie pomiarów interakcji dla aplikacji wielowarstwowych pomoże Ci zrozumieć wzorce użycia bazy danych oraz opóźnienia dostępu do danych. Spróbuj ponownie profilować aplikację, korzystając z włączonej opcji profilowania interakcji między warstwami.|
-|Typ reguły|Informacje programu|
+|Identyfikator reguły|DA0030|
+|Kategoria|Użycie narzędzi profilowania|
+|Metoda profilowania|Próbkowanie|
+|Komunikat|Zbieranie pomiarów interakcji dla aplikacji wielowarstwowych pomoże Ci zrozumieć wzorce użycia bazy danych i opóźnienia w dostępie do kluczowych danych. Spróbuj ponownie profilować aplikację z włączoną opcją profilowania interakcji warstwy.|
+|Typ reguły|Informacje|
 
 ## <a name="cause"></a>Przyczyna
- Wywołania metod <xref:System.Data> są znaczną częścią danych profilowania, a dane interakcji warstwy nie są zbierane w ramach uruchomienia profilowania. Rozważ ponowne przeprowadzenie profilowania i dodanie danych interakcji między warstwami.
+ Wywołania <xref:System.Data> metod są znaczną część danych profilowania i nie zostały zebrane dane interakcji warstwy w przebiegu profilowania. Rozważ profilowanie ponownie i dodanie danych interakcji warstwy.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada jest uruchamiana zawsze, gdy w funkcjach znajdujących się w przestrzeni nazw System. Data znajdują się znaczące działania, w tym <xref:System.Data.Linq><xref:System.Data.Linq>.
+ Ta reguła jest uruchamiana za każdym razem, gdy istnieje znacząca <xref:System.Data.Linq> <xref:System.Data.Linq>aktywność w funkcjach, które znajdują się w przestrzeniach nazw System.Data, w tym .
 
- Aplikacje wielowarstwowe wykorzystują usługi warstwowe do prezentacji i warstw danych. Często warstwa danych jest osobnym procesem z uruchomionym systemem zarządzania bazami danych, takim jak Microsoft SQL Server. Warstwa danych może nawet być uruchomiona na oddzielnym komputerze od reszty aplikacji. Profile próbkowania zapewniają niewielki wgląd w funkcje i usługi działające poza procesem lub zdalnie.
+ Aplikacje wielowarstwowe używają usług warstwowych do prezentacji i warstw danych. Często warstwa danych jest oddzielnym procesem z systemem zarządzania bazą danych, takim jak Microsoft SQL Server. Warstwa danych może nawet działać na oddzielnym komputerze od reszty aplikacji. Profile próbkowania zapewniają niewielki wgląd w funkcje i usługi działające poza procesem lub zdalnie.
 
- Narzędzia profilowania mogą zbierać informacje o chronometrażu dla aplikacji wielowarstwowych, które współpracują z warstwą danych Microsoft SQL Server przy użyciu wywołań asynchronicznych usługi ADO.NET Services. Należy jawnie włączyć profilowanie interakcji między warstwami. Nie jest on domyślnie włączony.
+ Narzędzia profilowania mogą zbierać informacje o chronometrażu dla aplikacji wielowarstwowych, które wchodzą w interakcję z warstwą danych programu Microsoft SQL Server przy użyciu asynchroniicznych wywołań ADO.NET usług. Należy jawnie włączyć profilowanie interakcji warstwy. Nie jest domyślnie włączona.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Ta reguła służy tylko do celów informacyjnych i może nie wymagać czynności naprawczych.
+ Ta reguła służy wyłącznie do celów informacyjnych i może nie wymagać działań naprawczych.
 
- Aby uzyskać informacje na temat dodawania danych interakcji warstwy do profilowania danych z programu Visual Studio IDE, zobacz [zbieranie danych o interakcji warstwy](../profiling/collecting-tier-interaction-data.md). Aby uzyskać informacje na temat dodawania danych interakcji warstwy z wiersza polecenia, zobacz [zbieranie danych o interakcji z warstwą](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+ Aby uzyskać informacje dotyczące dodawania danych interakcji warstwy do danych profilowania z ide programu Visual Studio, zobacz [Zbieranie danych interakcji warstwy](../profiling/collecting-tier-interaction-data.md). Aby uzyskać informacje dotyczące dodawania danych interakcji warstwy z wiersza polecenia, zobacz [Zbieranie danych interakcji warstwy](../profiling/adding-tier-interaction-data-from-the-command-line.md).

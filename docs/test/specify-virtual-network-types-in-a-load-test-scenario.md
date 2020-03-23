@@ -13,91 +13,91 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "76115301"
 ---
-# <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Określanie typów sieci wirtualnych w scenariuszu testu obciążenia
+# <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Określanie typów sieci wirtualnej w scenariuszu testu obciążenia
 
-*Mieszanie sieci* umożliwia symulowanie obciążenia w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu heterogenicznej mieszanki typów sieci zamiast jednego typu sieci. Należy utworzyć bliższe przybliżenie, w jaki sposób użytkownicy końcowi współpracują z aplikacjami.
+*Mix sieci* umożliwia bardziej realistyczne symulowanie obciążenia w scenariuszu testu obciążenia. Obciążenie jest generowane przy użyciu niejednorodnej kombinacji typów sieci zamiast jednego typu sieci. Tworzenie bliższe przybliżenie sposobu interakcji użytkowników końcowych z aplikacjami.
 
-Mieszanie sieci określa prawdopodobieństwo, że użytkownik wirtualny uruchomił dany *profil sieciowy*. Profil sieci to symulacja przepustowości sieci w warstwie aplikacji. Nie symuluje opóźnienia.
+Połączenie sieciowe określa prawdopodobieństwo uruchomienia przez użytkownika wirtualnego danego *profilu sieciowego*. Profil sieciowy jest symulacją przepustowości sieci w warstwie aplikacji. Nie symuluje opóźnienia.
 
-Podczas tworzenia testu obciążenia warto zasymulować, że obciążenie jest generowane przez więcej niż jeden typ połączenia sieciowego. Mieszanie sieciowe oferuje kilka typów sieci. Różne sieci są symulowane. Po wybraniu opcji, takiej jak `Cable-DSL 1.5Mbps`, czasy oczekiwania są wstrzykiwane do testu, aby symulować wybraną przepustowość.
+Podczas tworzenia testu obciążenia można symulować, że obciążenie jest generowane za pośrednictwem więcej niż jednego typu połączenia sieciowego. Sieć oferuje kilka typów sieci. Symulowane są różne sieci. Po wybraniu opcji, `Cable-DSL 1.5Mbps`takiej jak , czas oczekiwania są wstrzykiwane do testu, aby symulować wybraną przepustowość.
 
-Mieszanie sieciowe działa jak inne opcje mieszane. Typ sieci jest wybierany losowo z użytkownikiem wirtualnym w oparciu o mieszanie sieciowe. Testy tego użytkownika są uruchamiane przy użyciu określonego typu sieci, na podstawie prawdopodobieństwa określonego w kombinacji.
+Mix sieci działa jak inne opcje mix. Typ sieci jest wybierany losowo skojarzony z użytkownikiem wirtualnym na podstawie kombinacji sieciowej. Testy tego użytkownika są uruchamiane przy użyciu określonego typu sieci, na podstawie prawdopodobieństwa określonego w mieszance.
 
-Po określeniu kombinacji sieci można dodawać i usuwać typy sieci. Możesz również zmienić dystrybucję mieszanych sieci przy użyciu kontrolki mieszanej.
+Po określeniu kombinacji sieci można dodawać i usuwać typy sieci. Można również zmienić dystrybucję miksu sieciowego za pomocą formantu mieszania.
 
-Formant mieszany umożliwia łatwe dostosowanie dystrybucji sieci w scenariuszu.
+Formant miksu umożliwia łatwe dostosowanie dystrybucji sieci w scenariuszu.
 
-Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Aby uzyskać więcej informacji, zobacz [Informacje o formancie mieszania](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="true-network-emulation"></a>Emulacja prawdziwej sieci
+## <a name="true-network-emulation"></a>Prawdziwa emulacja sieci
 
-Program Visual Studio używa emulacji sieci opartej na oprogramowaniu dla wszystkich typów testów, w tym testów obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
+Visual Studio używa emulacji sieci true oparte na oprogramowaniu dla wszystkich typów testów, w tym testów obciążenia. Prawdziwa emulacja sieci symuluje warunki sieciowe poprzez bezpośrednią manipulację pakietami sieciowymi. Prawdziwy emulator sieci może emulować zachowanie zarówno sieci przewodowych, jak i bezprzewodowych przy użyciu niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone do emulacji sieci true:
 
-- Czas błądzenia w sieci (opóźnienie)
+- Czas podróży w obie strony przez sieć (opóźnienie)
 
-- Dostępna przepustowość
+- Ilość dostępnej przepustowości
 
-- Zachowanie usługi kolejkowania wiadomości
+- Zachowanie kolejkowania
 
 - Utrata pakietów
 
-- Zmiana kolejności pakietów
+- Ponowne kolejność pakietów
 
-- Propagacje błędów.
+- Propagacja błędów.
 
-Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
+Prawdziwa emulacja sieci zapewnia również elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
 
-Emulacja sieci może być używana przez deweloperów aplikacji i testerów do emulowania pożądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu z testami sprzętu, emulacji sieci true jest rozwiązaniem znacznie tańszym i bardziej elastycznym.
+Prawdziwa emulacja sieci może być używana przez programistów i testerów aplikacji opartych na sieci do emulowania żądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu do łóżek testowych sprzętu, prawdziwa emulacja sieci jest znacznie tańszym i bardziej elastycznym rozwiązaniem.
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Aby dodać nowe sieci do scenariusza
 
-1. Podczas procesu określania mieszanki sieciowej dla scenariusza wybierz pozycję **Dodaj**.
+1. Podczas procesu określania koszyka sieciowego dla scenariusza wybierz pozycję **Dodaj**.
 
-     Do siatki zostanie dodany nowy wpis sieciowy.
+     Nowy wpis sieci zostanie dodany do siatki.
 
     > [!NOTE]
-    > Aby wyświetlić okno dialogowe **Edytowanie miksu sieci** , kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz polecenie **Edytuj mieszanie sieciowe**.
+    > Aby wyświetlić okno dialogowe **Edytowanie koszyka sieciowego,** kliknij prawym przyciskiem myszy istniejący scenariusz, a następnie wybierz polecenie **Edytuj miks sieciowy**.
 
 2. W kolumnie **Typ sieci** wybierz strzałkę dla nowego wpisu. Wybierz żądany typ sieci.
 
-3. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Opcjonalnie) Wyreguluj formant miksu, aby określić rozkład testowy. Aby uzyskać więcej informacji, zobacz [Informacje o formancie mieszania](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4. Po zakończeniu dodawania sieci wybierz **przycisk OK**.
+4. Po zakończeniu dodawania sieci wybierz przycisk **OK**.
 
-## <a name="to-remove-networks-from-a-scenario"></a>Aby usunąć sieci z scenariusza
+## <a name="to-remove-networks-from-a-scenario"></a>Aby usunąć sieci ze scenariusza
 
 1. Otwórz test obciążenia.
 
-2. Kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć sieć, a następnie wybierz pozycję **Edytuj mieszanie sieciowe**. Zostanie wyświetlone okno dialogowe **Edytowanie sieci mieszanej** .
+2. Kliknij prawym przyciskiem myszy scenariusz, z którego chcesz usunąć sieć, a następnie wybierz polecenie **Edytuj miks sieciowy**. Zostanie wyświetlone okno dialogowe **Edytowanie koszyka** sieciowego.
 
 3. Wybierz sieć w siatce, a następnie wybierz pozycję **Usuń**.
 
-4. (Opcjonalnie) Dostosuj kontroli mieszany, aby określić rozkład testu. Aby uzyskać więcej informacji, zobacz [informacje o formancie mieszanego](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Opcjonalnie) Wyreguluj formant miksu, aby określić rozkład testowy. Aby uzyskać więcej informacji, zobacz [Informacje o formancie mieszania](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5. Po zakończeniu usuwania sieci wybierz **przycisk OK**.
+5. Po zakończeniu usuwania sieci wybierz przycisk **OK**.
 
-## <a name="about-the-mix-control"></a>Informacje o formancie mieszany
+## <a name="about-the-mix-control"></a>Informacje o kontroli mieszania
 
-Kontrolka mieszana umożliwia dostosowanie wartości procentowej obciążenia między testami, typami przeglądarek lub typami sieci w scenariuszu testu obciążenia. Aby dostosować wartości procentowe, przesuń suwaki. Dostosowanie mieszanki dla typów sieci określa prawdopodobieństwo, że użytkownik wirtualny uruchamiający konkretny profil sieci w scenariuszu testu obciążenia.
+Formant mix umożliwia dostosowanie procent obciążenia, który jest rozdzielany między testy, typy przeglądarki lub typy sieci w scenariuszu testu obciążenia. Aby dostosować wartości procentowe, przesuń suwaki. Dostosowanie kombinacji dla typów sieci określa prawdopodobieństwo, że użytkownik wirtualny uruchomi określony profil sieciowy w scenariuszu testu obciążenia.
 
-Podczas przesuwania suwaka, zmień wartości procentowe wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, kwota, dodawanie lub usuwanie jest rozłożona równomiernie innych elementów. Istnieje możliwość zastąpienia tego zachowania. Jeśli zaznaczysz pole wyboru w kolumnie blokady dla określonego elementu, można zablokować określoną wartość procentową wartość dla tego elementu. Następnie podczas przesuwania suwaka, kwota, dodawanie lub usuwanie są stosowane tylko do wszystkie pozostałe elementy odblokowane.
+Podczas przenoszenia suwaka zmieniają się wartości procentowe wszystkich dostępnych elementów. Jeśli masz więcej niż dwa elementy, kwota dodana lub wyrównana jest rozłożona równomiernie między inne elementy. Istnieje możliwość zastąpienia tego zachowania. Jeśli zaznaczysz pole wyboru w kolumnie blokady dla określonego elementu, zostanie zablokowana określona wartość procentowa dla tego elementu. Następnie po przeniesieniu suwaka kwota dodania lub usunięcia jest stosowana tylko do pozostałych odblokowanych elementów.
 
-**Dystrybucji** przycisk służy do przydzielania wartości procentowe równomiernie wszystkie elementy. Na przykład, jeśli masz trzy elementy, wybierając **dystrybucji** ustawia wartości procentowe 34, 33 i 33.
+**Przycisk Rozłóż** służy do równego przydzielania wartości procentowych między wszystkie elementy. Na przykład jeśli masz trzy elementy, wybranie opcji **Rozmieść** ustawia wartości procentowe na 34, 33 i 33.
 
 > [!WARNING]
-> **Dystrybucji** przycisk zastępuje wszystkie elementy, które są zablokowane.
+> Przycisk **Rozłóż** zastępuje wszystkie elementy, które są zablokowane.
 
-Istnieje również możliwość na typ wartości procentowe bezpośrednio do **%** kolumny, a nie za pomocą suwaków. Jeśli bezpośrednio wprowadzasz wartość procentową, inne elementy nie skoryguje automatycznie.
+Możliwe jest również wpisanie wartości procentowych **%** bezpośrednio w kolumnie zamiast za pomocą suwaków. Jeśli wprowadzisz wartość procentową bezpośrednio, pozostałe elementy nie zostaną automatycznie dostosowane.
 
 > [!NOTE]
-> Suwaki są wyłączone, gdy łączny nie powoduje dodania do 100% lub wartości procentowe są wprowadzane do **%** kolumny są liczbę miejsc dziesiętnych.
+> Suwaki są wyłączone, gdy suma nie sumuje się do 100%, **%** lub gdy wartości procentowe wprowadzone w kolumnie są dziesiętne.
 
-Po wprowadzeniu wartości procentowe ręcznie, należy pamiętać, że sumę wszystkich elementów wynosi 100%. W przypadku zapisania mieszanki, jeśli suma nie jest równa 100%, zostanie wyświetlony monit o zaakceptowanie wartości procentowych w miarę ich lub przywrócenia i dostosowania. Jeśli zdecydujesz się je zaakceptować, ponieważ są one, będzie naliczana proporcjonalnie do 100%.  Na przykład jeśli masz dwa elementy, a następnie ręcznie ustawić je do 80% i 40%, pierwszy element zostanie ustawione na % 66,67 (80 podzielona przez 120), a drugi element zostanie ustawione na % 33,33 (40 podzielona przez 120).
+Podczas ręcznego wprowadzania wartości procentowych należy upewnić się, że suma wszystkich elementów wynosi 100%. Po zapisaniu mieszanki, jeśli suma nie jest 100%, zostanie wyświetlony monit o zaakceptowanie wartości procentowych w ich stanie lub o ich powrót i dostosowanie. Jeśli zdecydujesz się je zaakceptować w taki sposób, w jaki są, będą one proporcjonalnie do 100%.  Na przykład, jeśli masz dwa elementy i ręcznie ustawisz je na 80% i 40%, pierwszy element zostanie ustawiony na 66,67% (80 podzielonych przez 120), a drugi element zostanie ustawiony na 33,33% (40 podzielonych przez 120).

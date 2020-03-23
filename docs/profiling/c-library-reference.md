@@ -1,5 +1,5 @@
 ---
-title: Odwołanie do biblioteki C | Dokumentacja firmy Microsoft
+title: C Dokumentacja biblioteki | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 570c3c1cfa4ee42b0b7262b92fba3c936297387c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440269"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "64826673"
 ---
 # <a name="c-library-reference"></a>Odwołanie do biblioteki C
-Ta sekcja zawiera informacje dotyczące SDK narzędzia Concurrency Visualizer.
+Ta sekcja zawiera informacje referencyjne dla SDK wizualizatora współbieżności.
 
 > [!NOTE]
-> Standard języka C zastrzega stosowanie identyfikatorów, które zaczynają się od znaku podkreślenia (`_`) znak do implementacji takich jak biblioteki. Nie należy używać nazwy rozpoczynające się od znaku podkreślenia w kodzie. Zachowanie kodu, elementy, które stosują taką konwencję nazw, których nie jest gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tego względu takie elementy kodu zostały pominięte w tej dokumentacji.
+> Standard języka C zastrzega sobie użycie identyfikatorów, które`_`zaczynają się od znaku podkreślenia ( ) dla implementacji, takich jak biblioteki. Nie należy używać nazw zaczynających się od podkreślenia w kodzie. Zachowanie elementów kodu, których nazwy są zgodne z niniejszą konwencją nie są gwarantowane i mogą ulec zmianie w przyszłych wersjach. Z tych powodów takie elementy kodu są pomijane w tej dokumentacji.

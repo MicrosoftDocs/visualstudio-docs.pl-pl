@@ -1,6 +1,6 @@
 ---
-title: Elementy MSBuild | Microsoft Docs
-description: Użyj atrybutu dołączania MSBuild elementu Item, aby określić pliki do uwzględnienia w kompilacji
+title: Przedmioty MSBuild | Dokumenty firmy Microsoft
+description: Użyj atrybutu MSBuild Include grupy elementów, aby określić pliki, które mają zostać uwzględnione w kompilacji
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,22 +11,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7ea464695faeaf6651f645a39ce2b41d255108
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: c7c41539ec50cb166dfe60690a4722992b29a47a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633307"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093971"
 ---
-# <a name="msbuild-items"></a>Elementy programu MSBuild
+# <a name="msbuild-items"></a>Elementy MSBuild
 
-Elementy programu MSBuild są wejściami do systemu kompilacji i zazwyczaj reprezentują pliki (pliki są określone w `Include` atrybutu). Elementy są pogrupowane w typy elementów na podstawie ich nazw elementów. Typy elementów są nazwanymi elementami, które mogą być używane jako parametry zadań. Zadania używają wartości elementów do wykonania kroków procesu kompilacji.
+Elementy MSBuild są dane wejściowe do systemu kompilacji i zazwyczaj reprezentują `Include` pliki (pliki są określone w atrybucie). Elementy są grupowane w typy elementów na podstawie ich nazw elementów. Typy elementów są nazwane listy elementów, które mogą być używane jako parametry dla zadań. Zadania używają wartości elementu do wykonywania kroków procesu kompilacji.
 
- Ponieważ elementy są nazwane przez typ elementu, do którego należą, można użyć zamiennie warunków "Item" i "value Item".
+ Ponieważ towary są nazwane przez typ towaru, do którego należą, terminy "element" i "wartość towaru" mogą być używane zamiennie.
 
 ## <a name="create-items-in-a-project-file"></a>Tworzenie elementów w pliku projektu
 
- Elementy w pliku projektu deklaruje się jako elementy podrzędne elementu [Item](../msbuild/itemgroup-element-msbuild.md) . Nazwa elementu podrzędnego jest typem elementu. Atrybut `Include` elementu określa elementy (pliki), które mają być dołączone do tego typu elementu. Na przykład poniższy kod XML tworzy typ elementu o nazwie `Compile`, który zawiera dwa pliki.
+ Zadeklarować elementy w pliku projektu jako elementy podrzędne [itemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Nazwa elementu podrzędnego jest typem elementu. Atrybut `Include` elementu określa elementy (pliki), które mają być dołączone do tego typu elementu. Na przykład następujący kod XML tworzy typ `Compile`elementu o nazwie , który zawiera dwa pliki.
 
 ```xml
 <ItemGroup>
@@ -35,9 +35,9 @@ Elementy programu MSBuild są wejściami do systemu kompilacji i zazwyczaj repre
 </ItemGroup>
 ```
 
- Element *file2.cs* nie zastępuje elementu *file1.cs*; Zamiast tego nazwa pliku jest dołączana do listy wartości dla typu elementu `Compile`.
+ *File2.cs* towaru nie zastępuje *file1.cs*towaru; Zamiast tego nazwa pliku jest dołączana do listy `Compile` wartości dla typu elementu.
 
- Poniższy kod XML tworzy ten sam typ elementu przez zadeklarowanie obu plików w jednym `Include` atrybutu. Należy zauważyć, że nazwy plików są oddzielone średnikami.
+ Następujący kod XML tworzy ten sam typ elementu, deklarując oba pliki w jednym `Include` atrybucie. Należy zauważyć, że nazwy plików są oddzielone średnikiem.
 
 ```xml
 <ItemGroup>
@@ -45,49 +45,51 @@ Elementy programu MSBuild są wejściami do systemu kompilacji i zazwyczaj repre
 </ItemGroup>
 ```
 
+Atrybut `Include` jest ścieżką, która jest interpretowana względem folderu pliku projektu, $(MSBuildProjectPath), nawet jeśli element znajduje się w importowanym pliku, takim jak plik *.targets.*
+
 ## <a name="create-items-during-execution"></a>Tworzenie elementów podczas wykonywania
 
- Elementy, które są poza elementami [docelowymi](../msbuild/target-element-msbuild.md) , są przypisane do wartości w fazie oceny kompilacji. Podczas kolejnej fazy wykonywania elementy mogą być tworzone lub modyfikowane w następujący sposób:
+ Elementy, które znajdują się poza elementy [docelowe](../msbuild/target-element-msbuild.md) są przypisywane wartości podczas fazy oceny kompilacji. Podczas kolejnej fazy wykonywania elementy mogą być tworzone lub modyfikowane w następujący sposób:
 
-- Każde zadanie może emitować element. Aby emitować element, element [Task](../msbuild/task-element-msbuild.md) musi mieć podrzędny element [wyjściowy](../msbuild/output-element-msbuild.md) , który ma atrybut `ItemName`.
+- Każde zadanie może emitować element. Aby emitować element, [Task](../msbuild/task-element-msbuild.md) element musi mieć element `ItemName` [wyjściowy](../msbuild/output-element-msbuild.md) podrzędny, który ma atrybut.
 
-- Zadanie [elementu "Item](../msbuild/createitem-task.md) " może emitować element. Takie użycie jest przestarzałe.
+- Zadanie [CreateItem](../msbuild/createitem-task.md) może emitować element. Takie użycie jest przestarzałe.
 
-- Począwszy od .NET Framework 3,5, elementy `Target` mogą zawierać elementy elementu [Item](../msbuild/itemgroup-element-msbuild.md) , które mogą zawierać elementy Item.
+- Począwszy od programu .NET Framework `Target` 3.5, elementy mogą zawierać [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementy, które mogą zawierać elementy elementu.
 
-## <a name="reference-items-in-a-project-file"></a>Elementy referencyjne w pliku projektu
+## <a name="reference-items-in-a-project-file"></a>Odwoływanie się do elementów w pliku projektu
 
- Aby odwołać się do typów elementów w całym pliku projektu, należy użyć składni @ (\<ItemType >). Na przykład, można odwołać się do typu elementu w poprzednim przykładzie przy użyciu `@(Compile)`. Za pomocą tej składni można przekazać elementy do zadań, określając typ elementu jako parametr tego zadania. Aby uzyskać więcej informacji, zobacz [jak: Wybieranie plików do skompilowania](../msbuild/how-to-select-the-files-to-build.md).
+ Aby odwołać się do typów elementów w całym\<pliku projektu, należy użyć składni @( ItemType>). Na przykład należy odwołać się do typu `@(Compile)`elementu w poprzednim przykładzie za pomocą programu . Za pomocą tej składni, można przekazać elementy do zadań, określając typ elementu jako parametr tego zadania. Aby uzyskać więcej informacji, zobacz [Jak: Wybierz pliki do utworzenia](../msbuild/how-to-select-the-files-to-build.md).
 
- Domyślnie elementy typu elementu są oddzielone średnikami (;) po jego rozszerzeniu. Aby określić separator inny niż domyślny, można użyć składni @ (\<ItemType >, "\<separator >"). Aby uzyskać więcej informacji, zobacz [jak: wyświetlić listę elementów rozdzieloną przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
+ Domyślnie elementy typu towaru są oddzielone średnikami (;) po jego rozszerzeniu. Można użyć składni @(\<ItemType>,\<' separator>'), aby określić separator inny niż domyślny. Aby uzyskać więcej informacji, zobacz [Jak: Wyświetlanie listy elementów oddzielonych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
-## <a name="use-wildcards-to-specify-items"></a>Użyj symboli wieloznacznych, aby określić elementy
+## <a name="use-wildcards-to-specify-items"></a>Określanie elementów za pomocą symboli wieloznacznych
 
-Możesz użyć symboli wieloznacznych `**`, `*`i `?`, aby określić grupę plików jako dane wejściowe dla kompilacji, a nie osobno wymieniać każdy plik.
+Za pomocą `**`znaków `*`symboli wieloznacznych i `?` symboli wieloznacznych można określić grupę plików jako dane wejściowe dla kompilacji zamiast osobno wymieniać każdy plik.
 
-- `?` symbol wieloznaczny dopasowuje pojedynczy znak.
-- `*` symbol wieloznaczny dopasowuje zero lub więcej znaków.
-- Sekwencja znaków wieloznacznych `**` dopasowuje ścieżkę częściową.
+- Symbol `?` wieloznaczny pasuje do pojedynczego znaku.
+- Symbol `*` wieloznaczny odpowiada zero lub więcej znaków.
+- Sekwencja `**` symboli wieloznacznych pasuje do ścieżki częściowej.
 
-Na przykład można określić wszystkie pliki `.cs` w katalogu, który zawiera plik projektu, przy użyciu następującego elementu w pliku projektu.
+Na przykład można określić `.cs` wszystkie pliki w katalogu, który zawiera plik projektu przy użyciu następującego elementu w pliku projektu.
 
 ```xml
 <CSFile Include="*.cs"/>
 ```
 
-Następujący element wybiera wszystkie pliki `.vb` na dysku `D:`:
+Następujący element wybiera `.vb` wszystkie pliki `D:` na dysku:
 
 ```xml
 <VBFile Include="D:/**/*.vb"/>
 ```
 
-Jeśli chcesz uwzględnić literał `*` lub `?` znaków w elemencie bez rozwinięcia symbolu wieloznacznego, musisz [wprowadzić symbole wieloznaczne](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+Jeśli chcesz dołączyć dosłowne `*` lub `?` znaki do elementu bez rozszerzeń symboli wieloznacznych, musisz uciec od [symboli wieloznacznych](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to: Wybierz pliki do skompilowania](../msbuild/how-to-select-the-files-to-build.md).
+Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [Jak: Wybieranie plików do utworzenia](../msbuild/how-to-select-the-files-to-build.md).
 
-## <a name="use-the-exclude-attribute"></a>Użyj atrybutu Exclude
+## <a name="use-the-exclude-attribute"></a>Użyj atrybutu Wyklucz
 
- Elementy elementu mogą zawierać atrybut `Exclude`, który wyklucza określone elementy (pliki) z typu elementu. Atrybut `Exclude` jest zwykle używany razem z symbolami wieloznacznymi. Na przykład poniższy kod XML dodaje każdy plik *CS* w katalogu do typu elementu CSFile, z wyjątkiem pliku *DoNotBuild.cs* .
+ Elementy elementu mogą `Exclude` zawierać atrybut, który wyklucza określone elementy (pliki) z typu elementu. Atrybut `Exclude` jest zwykle używany razem ze znakami wieloznaczymi. Na przykład następujący kod XML dodaje każdy plik *cs* w katalogu do typu elementu CSFile, z wyjątkiem pliku *DoNotBuild.cs.*
 
 ```xml
 <ItemGroup>
@@ -95,22 +97,22 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </ItemGroup>
 ```
 
- Atrybut `Exclude` ma wpływ tylko na elementy, które są dodawane przez atrybut `Include` w elemencie elementu, który zawiera oba typy. W poniższym przykładzie nie można wykluczyć pliku *Form1.cs*, który został dodany w poprzednim elemencie elementu.
+ Atrybut `Exclude` ma wpływ tylko na elementy, `Include` które są dodawane przez atrybut w elemencie elementu, który zawiera je zarówno. Poniższy przykład nie wyklucza *pliku Form1.cs*, który został dodany w poprzednim elemencie elementu.
 
 ```xml
 <Compile Include="*.cs" />
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
- Aby uzyskać więcej informacji, zobacz [jak: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
+ Aby uzyskać więcej informacji, zobacz [Jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md).
 
 ## <a name="item-metadata"></a>Metadane elementu
 
- Elementy mogą zawierać metadane oprócz informacji w atrybutach `Include` i `Exclude`. Te metadane mogą służyć do zadań, które wymagają więcej informacji na temat elementów lub zadań wsadowych i elementów docelowych. Aby uzyskać więcej informacji, zobacz Tworzenie [pakietów wsadowych](../msbuild/msbuild-batching.md).
+ Elementy mogą zawierać metadane oprócz `Include` informacji `Exclude` w i atrybuty. Te metadane mogą być używane przez zadania, które wymagają więcej informacji o elementach lub do zadań wsadowych i obiektów docelowych. Aby uzyskać więcej informacji, zobacz [Batching](../msbuild/msbuild-batching.md).
 
- Metadata jest kolekcją par klucz-wartość, które są zadeklarowane w pliku projektu jako elementy podrzędne elementu elementu. Nazwa elementu podrzędnego jest nazwą metadanych, a wartością elementu podrzędnego jest wartość metadanych.
+ Metadane to zbiór par klucz-wartość, które są zadeklarowane w pliku projektu jako elementy podrzędne elementu elementu. Nazwa elementu podrzędnego jest nazwą metadanych, a wartość elementu podrzędnego jest wartością metadanych.
 
- Metadane są skojarzone z elementem elementu, który go zawiera. Na przykład poniższy kod XML dodaje `Culture` metadanych, które mają wartość `Fr` do elementów *one.cs* i *Two.cs* typu elementu CSFile.
+ Metadane są skojarzone z elementem, który go zawiera. Na przykład następujący kod `Culture` XML dodaje metadane, które mają wartość `Fr` zarówno do *one.cs,* jak i *two.cs* elementów typu elementu CSFile.
 
 ```xml
 <ItemGroup>
@@ -120,11 +122,11 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </ItemGroup>
 ```
 
- Element może mieć zero lub więcej wartości metadanych. Wartości metadanych można zmienić w dowolnym momencie. Jeśli ustawisz metadane na wartość pustą, możesz skutecznie usunąć ją z kompilacji.
+ Element może mieć zero lub więcej wartości metadanych. Wartości metadanych można zmienić w dowolnym momencie. Jeśli ustawisz metadane na pustą wartość, skutecznie usunąć je z kompilacji.
 
-### <a name="BKMK_ReferencingItemMetadata"></a>Metadane elementu odwołania w pliku projektu
+### <a name="reference-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a>Metadane elementu odwołania w pliku projektu
 
- Metadane elementu można odwoływać w całym pliku projektu przy użyciu składni%(\<ItemMetadataName >). Jeśli istnieje niejednoznaczność, można kwalifikować odwołanie przy użyciu nazwy typu elementu. Na przykład można określić%(\<ItemType. ItemMetaDataName >). Poniższy przykład używa metadanych wyświetlania do wsadowego zadania wiadomości. Aby uzyskać więcej informacji o sposobach używania metadanych elementu na potrzeby tworzenia pakietów wsadowych, zobacz [metadane elementu w usłudze Batch zadania](../msbuild/item-metadata-in-task-batching.md).
+ Metadane elementu można odwoływać się do metadanych\<elementu w całym pliku projektu przy użyciu składni %( ItemMetadataName>). Jeśli istnieje niejednoznaczność, można zakwalifikować odwołanie przy użyciu nazwy typu elementu. Na przykład można określić\<%( ItemType.ItemMetaDataName>). W poniższym przykładzie użyto wyświetlają metadane do partii Message zadanie. Aby uzyskać więcej informacji na temat używania metadanych elementu do przetwarzania wsadowego, zobacz [Metadane elementu w wsadowaniu wsadowym zadań](../msbuild/item-metadata-in-task-batching.md).
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -142,15 +144,15 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </Project>
 ```
 
-### <a name="BKMK_WellKnownItemMetadata"></a>Metadane dobrze znanego elementu
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a>Dobrze znane metadane elementu
 
- Gdy element zostanie dodany do typu elementu, do tego elementu są przypisane pewne dobrze znane metadane. Na przykład wszystkie elementy mają dobrze znane metadane%(\<filename >), których wartość jest nazwą pliku elementu (bez rozszerzenia). Aby uzyskać więcej informacji, zobacz [dobrze znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
+ Gdy element jest dodawany do typu elementu, ten element jest przypisany niektóre dobrze znane metadane. Na przykład wszystkie elementy mają dobrze znane\<metadane %( Nazwa pliku>), którego wartość jest nazwą pliku elementu (bez rozszerzenia). Aby uzyskać więcej informacji, zobacz [Znane metadane elementu](../msbuild/msbuild-well-known-item-metadata.md).
 
-### <a name="BKMK_Transforming"></a>Przekształcanie typów elementów za pomocą metadanych
+### <a name="transform-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a>Przekształcanie typów elementów przy użyciu metadanych
 
- Listy elementów można przekształcać na nowe listy elementów przy użyciu metadanych. Na przykład można przekształcić typ elementu `CppFiles`, który zawiera elementy, które reprezentują pliki *. cpp* , do odpowiedniej listy plików *. obj* przy użyciu wyrażenia `@(CppFiles -> '%(Filename).obj')`.
+ Listy elementów można przekształcić w nowe listy elementów przy użyciu metadanych. Na przykład można przekształcić typ `CppFiles` elementu, który zawiera elementy reprezentujące pliki *cpp,* w odpowiednią `@(CppFiles -> '%(Filename).obj')`listę plików *obj* przy użyciu wyrażenia .
 
- Poniższy kod tworzy `CultureResource` typ elementu zawierający kopie wszystkich elementów `EmbeddedResource` z metadanymi `Culture`. Wartość metadanych `Culture` jest wartością nowego `CultureResource.TargetDirectory`metadanych.
+ Poniższy kod `CultureResource` tworzy typ elementu, który `EmbeddedResource` zawiera `Culture` kopie wszystkich elementów z metadanymi. Wartość `Culture` metadanych staje się wartością `CultureResource.TargetDirectory`nowych metadanych .
 
 ```xml
 <Target Name="ProcessCultureResources">
@@ -163,11 +165,11 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </Target>
 ```
 
- Aby uzyskać więcej informacji, zobacz [transformacje](../msbuild/msbuild-transforms.md).
+ Aby uzyskać więcej informacji, zobacz [Przekształcenia](../msbuild/msbuild-transforms.md).
 
 ## <a name="item-definitions"></a>Definicje elementów
 
- Począwszy od .NET Framework 3,5, można dodać domyślne metadane do dowolnego typu elementu przy użyciu [elementu ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Podobnie jak dobrze znane metadane, domyślne metadane są skojarzone ze wszystkimi elementami typu elementu określonego przez użytkownika. Można jawnie przesłonić domyślne metadane w definicji elementu. Na przykład poniższy kod XML daje `Compile` elementy *one.cs* i *Three.cs* `BuildDay` metadanych z wartością "poniedziałek". Kod nadaje elementu *two.cs* `BuildDay` metadanych z wartością "wtorek".
+ Począwszy od programu .NET Framework 3.5, można dodać domyślne metadane do dowolnego typu elementu przy użyciu [elementu ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Podobnie jak dobrze znane metadane, domyślne metadane są skojarzone ze wszystkimi elementami o określonym typie elementu. Domyślne metadane można jawnie zastąpić w definicji elementu. Na przykład następujący kod XML daje `Compile` elementy *one.cs* i *three.cs* metadanych `BuildDay` z wartością "Poniedziałek". Kod daje element *two.cs* metadanych `BuildDay` o wartości "Wtorek".
 
 ```xml
 <ItemDefinitionGroup>
@@ -183,17 +185,17 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </ItemGroup>
 ```
 
- Aby uzyskać więcej informacji, zobacz [definicje elementu](../msbuild/item-definitions.md).
+ Aby uzyskać więcej informacji, zobacz [Definicje elementów](../msbuild/item-definitions.md).
 
-## <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Atrybuty elementów w elemencie Items elementu docelowego
+## <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Atrybuty elementów w grupie przedmiotów obiektu docelowego
 
- Począwszy od .NET Framework 3,5, elementy `Target` mogą zawierać elementy elementu [Item](../msbuild/itemgroup-element-msbuild.md) , które mogą zawierać elementy Item. Atrybuty w tej sekcji są prawidłowe, jeśli są określone dla elementu w `ItemGroup`, który znajduje się w `Target`.
+ Począwszy od programu .NET Framework `Target` 3.5, elementy mogą zawierać [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementy, które mogą zawierać elementy elementu. Atrybuty w tej sekcji są prawidłowe, gdy `ItemGroup` są określone `Target`dla elementu w .
 
-### <a name="BKMK_RemoveAttribute"></a>Usuń atrybut
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a>Usuń atrybut
 
- Atrybut `Remove` usuwa określone elementy (pliki) z typu elementu. Ten atrybut został wprowadzony w .NET Framework 3,5 (tylko wewnątrz elementów docelowych). W programie MSBuild 15,0 obsługiwane są zarówno elementy docelowe wewnątrz, jak i poza nią.
+ Atrybut `Remove` usuwa określone elementy (pliki) z typu elementu. Ten atrybut został wprowadzony w .NET Framework 3.5 (tylko wewnątrz obiektów docelowych). Zarówno wewnątrz, jak i na zewnątrz obiekty docelowe są obsługiwane począwszy od MSBuild 15.0.
 
- Poniższy przykład usuwa każdy plik *config* z typu elementu kompilowania.
+ Poniższy przykład usuwa każdy plik *.config* z typu elementu kompilacji.
 
 ```xml
 <Target>
@@ -203,11 +205,11 @@ Aby uzyskać więcej informacji na temat symboli wieloznacznych, zobacz [How to:
 </Target>
 ```
 
-### <a name="BKMK_KeepMetadata"></a>KeepMetadata — atrybut
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a>Atrybut KeepMetadata
 
- Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać atrybut `KeepMetadata`. Jeśli ten atrybut jest określony, tylko metadane określone na liście rozdzielanej średnikami nazw będą transferowane z elementu źródłowego do elementu docelowego. Pusta wartość tego atrybutu jest równoważna z nieokreśleniem go. Atrybut `KeepMetadata` został wprowadzony w .NET Framework 4,5.
+ Jeśli element jest generowany w obrębie obiektu docelowego, element elementu może zawierać `KeepMetadata` atrybut. Jeśli ten atrybut jest określony, tylko metadane, które są określone na liście nazw rozdzielane średnikami zostaną przeniesione z elementu źródłowego do elementu docelowego. Pusta wartość dla tego atrybutu jest odpowiednikiem nieokreślenia go. Atrybut `KeepMetadata` został wprowadzony w .NET Framework 4.5.
 
- Poniższy przykład ilustruje sposób użycia atrybutu `KeepMetadata`.
+ Poniższy przykład ilustruje `KeepMetadata` sposób użycia atrybutu.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
@@ -246,11 +248,11 @@ Output:
 -->
 ```
 
-### <a name="BKMK_RemoveMetadata"></a>RemoveMetadata — atrybut
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a>Atrybut Usuń metadane
 
- Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać atrybut `RemoveMetadata`. Jeśli ten atrybut jest określony, wszystkie metadane są przesyłane z elementu źródłowego do elementu docelowego, z wyjątkiem metadanych, których nazwy są zawarte na liście rozdzielanych średnikami nazw. Pusta wartość tego atrybutu jest równoważna z nieokreśleniem go. Atrybut `RemoveMetadata` został wprowadzony w .NET Framework 4,5.
+ Jeśli element jest generowany w obrębie obiektu docelowego, element elementu może zawierać `RemoveMetadata` atrybut. Jeśli ten atrybut jest określony, wszystkie metadane są przenoszone z elementu źródłowego do elementu docelowego z wyjątkiem metadanych, których nazwy znajdują się na liście nazw rozdzielonych średnikami. Pusta wartość dla tego atrybutu jest odpowiednikiem nieokreślenia go. Atrybut `RemoveMetadata` został wprowadzony w .NET Framework 4.5.
 
- Poniższy przykład ilustruje sposób użycia atrybutu `RemoveMetadata`.
+ Poniższy przykład ilustruje `RemoveMetadata` sposób użycia atrybutu.
 
 ```xml
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -296,13 +298,13 @@ Output:
 -->
 ```
 
-### <a name="BKMK_KeepDuplicates"></a>KeepDuplicates — atrybut
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a>Atrybut KeepDuplicates
 
- Jeśli element jest generowany w obiekcie docelowym, element Item może zawierać atrybut `KeepDuplicates`. `KeepDuplicates` jest atrybutem `Boolean`, który określa, czy element powinien zostać dodany do grupy docelowej, jeśli element jest dokładną duplikatem istniejącego elementu.
+ Jeśli element jest generowany w obrębie obiektu docelowego, element elementu może zawierać `KeepDuplicates` atrybut. `KeepDuplicates`jest `Boolean` atrybutem, który określa, czy element powinien zostać dodany do grupy docelowej, jeśli element jest dokładnym duplikatem istniejącego elementu.
 
- Jeśli element źródłowy i docelowy mają tę samą wartość include, ale różne metadane, element jest dodawany nawet wtedy, gdy `KeepDuplicates` jest ustawiona na `false`. Pusta wartość tego atrybutu jest równoważna z nieokreśleniem go. Atrybut `KeepDuplicates` został wprowadzony w .NET Framework 4,5.
+ Jeśli element źródłowy i docelowy mają taką samą wartość Include, ale różne metadane, element jest dodawany, nawet jeśli `KeepDuplicates` jest ustawiony na `false`. Pusta wartość dla tego atrybutu jest odpowiednikiem nieokreślenia go. Atrybut `KeepDuplicates` został wprowadzony w .NET Framework 4.5.
 
- Poniższy przykład ilustruje sposób użycia atrybutu `KeepDuplicates`.
+ Poniższy przykład ilustruje `KeepDuplicates` sposób użycia atrybutu.
 
 ```xml
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -338,12 +340,12 @@ Output:
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Item — element (MSBuild)](../msbuild/item-element-msbuild.md)
-- [Wspólne elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)
-- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [MSBuild](../msbuild/msbuild.md)
-- [Instrukcje: Wybieranie plików do skompilowania](../msbuild/how-to-select-the-files-to-build.md)
-- [Instrukcje: wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Instrukcje: Wyświetlanie listy elementów rozdzielanych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
+- [Element elementu (MSBuild)](../msbuild/item-element-msbuild.md)
+- [Typowe elementy projektu MSBuild](../msbuild/common-msbuild-project-items.md)
+- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Msbuild](../msbuild/msbuild.md)
+- [Jak: Wybierz pliki do utworzenia](../msbuild/how-to-select-the-files-to-build.md)
+- [Jak: Wykluczanie plików z kompilacji](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Jak: Wyświetlanie listy elementów oddzielonych przecinkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [Definicje elementów](../msbuild/item-definitions.md)
 - [Tworzenie partii](../msbuild/msbuild-batching.md)

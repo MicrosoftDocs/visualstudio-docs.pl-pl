@@ -1,5 +1,5 @@
 ---
-title: Aktywność procesora GPU (ten proces) | Dokumentacja firmy Microsoft
+title: Aktywność gpu (ten proces) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 68e85fc44977a3d9756965de12e25d13d62dbb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969541"
 ---
 # <a name="gpu-activity-this-process"></a>Aktywności procesora GPU (ten proces)
-**Aktywności procesora GPU (ten proces)** segmenty w widoku wątków w Wizualizatorze współbieżności reprezentują razy podczas przetwarzania żądania w imieniu bieżącego procesu procesora GPU. Te żądania są wysyłane do procesora GPU jako pakiety dostępu (DMA) pamięci. Długość segmentu reprezentuje czas procesora GPU zostało przetwarzania pakietu DMA imieniu bieżącego procesu.
+Segmenty **działania gpu (ten proces)** w widoku Wątki w wizualizatorze współbieżności reprezentują czasy, kiedy procesor GPU przetwarzał żądania w imieniu bieżącego procesu. Te żądania są wysyłane do gpu jako pakiety bezpośredniego dostępu do pamięci (DMA). Długość segmentu reprezentuje czas przetwarzania pakietu DMA przez procesor GPU w imieniu bieżącego procesu.
 
- Po wybraniu segmentu działanie procesora GPU, raport na **bieżącego** karta zawiera informacje o pakiecie DMA, która została przetworzona. Informacje te obejmują czas, który pakiet jest oczekiwany w kolejce sprzętowej, skojarzony z aparatu programu DirectX, proces, który przesłał pakiet i czas wymagany do przetwarzania pakietów. Procesu niż bieżący proces może fizycznie przesłany pakiet DMA do procesora GPU. Narzędzie Concurrency Visualizer można wykrywać przesyłanej przez inny proces roboczy do procesora GPU w imieniu bieżący proces.
+ Po wybraniu segmentu aktywności GPU w raporcie na karcie **Bieżący** są wyświetlane informacje o przetworzonym pakiecie DMA. Informacje te obejmują czas oczekiwania pakietu w kolejce sprzętowej skojarzonej z aparatem DirectX, proces przesyłania pakietu oraz czas wymagany do przetworzenia pakietu. Proces inny niż bieżący proces mógł fizycznie przesłać pakiet DMA do gpu. Wizualizator współbieżności można wykryć, gdy inny proces przesłane pracy do gpu w imieniu bieżącego procesu.

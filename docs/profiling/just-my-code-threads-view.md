@@ -1,5 +1,5 @@
 ---
-title: Tylko mój kod (Widok wątków) | Dokumentacja firmy Microsoft
+title: Tylko mój kod (widok wątków) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62995342"
 ---
 # <a name="just-my-code-threads-view"></a>Tylko mój kod (Widok wątków)
-Jeśli wybierzesz tę opcję, będzie filtrować stos wywołań, aby pokazać tylko Twój kod i jeden poziom funkcji o nazwie.
+Jeśli wybierzesz tę opcję, przefiltrujesz stos wywołań, aby wyświetlić tylko kod oraz jeden poziom wywoływanych funkcji.
 
- Przez włączenie tej opcji, można znacznie zmniejszyć złożoność stos wywołań i być może ułatwić diagnozowanie konkretnych problemów.
+ Aktywując tę opcję, można znacznie zmniejszyć złożoność stosu wywołań i być może ułatwić diagnozowanie określonego problemu.
 
- W niektórych przypadkach wybranie tej opcji może odfiltrować wywołania blokowania. Jeśli potrzebujesz pełnego wywołanie stosu szczegóły, aby kierować się, usuń zaznaczenie tej opcji, aby udostępnić pełny stos wywołania.
+ W niektórych przypadkach wybranie tej opcji może odfiltrować wywołanie blokowania. Jeśli potrzebujesz pełne szczegóły stosu wywołań, aby dokonać tego określenia, wyczyść tę opcję, aby udostępnić stos pełne wywołań.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)
-- [Procent redukcji szumu](../profiling/noise-reduction-percentage.md)
+- [Procent redukcji hałasu](../profiling/noise-reduction-percentage.md)

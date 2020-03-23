@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f180a45b274ec3042b7e150a43b5e8681fafcfed
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593593"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
@@ -31,16 +31,16 @@ devenv /SafeMode
 
 ## <a name="remarks"></a>Uwagi
 
-Ten przełącznik zapobiega ładowaniu wszystkich pakietów VSPackage innych firm podczas uruchamiania programu Visual Studio, co pozwala na stabilne wykonanie.
+Ten przełącznik zapobiega wszystkie vspackages innych firm z ładowania po uruchomieniu programu Visual Studio, umożliwiając stabilne wykonywanie.
 
 ## <a name="example"></a>Przykład
 
-W poniższym przykładzie program Visual Studio jest uruchamiany w trybie awaryjnym.
+Poniższy przykład uruchamia visual studio w trybie awaryjnym.
 
 ```shell
 devenv /safemode
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

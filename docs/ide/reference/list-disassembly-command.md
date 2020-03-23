@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aaeab2e65088b8f1bfce3a6a12f8cd66c3245b75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747923"
 ---
 # <a name="list-disassembly-command"></a>Lista dezasemblacji — Polecenie
-Rozpoczyna proces debugowania i pozwala określić, jak błędy są obsługiwane.
+Rozpoczyna proces debugowania i pozwala określić sposób obsługi błędów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>Przełączniki
-Każdy przełącznik może być wywoływany przy użyciu kompletnego formularza lub krótkiej formy.
+Każdy przełącznik można wywołać za pomocą jego pełnej formy lub krótkiego formularza.
 
-/Count: `number` [lub]/c: `number` [lub]/length: `number` [lub]/l: `number`
+/count: `number` [lub] /c: `number` [lub] `number` /length: [lub] /l:`number`
 
-Opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
+Element opcjonalny. Liczba instrukcji do wyświetlenia. Wartość domyślna to 8.
 
-/endaddress: `expression` [lub]/e: `expression`
+/endaddress: `expression` [lub] /e:`expression`
 
-Opcjonalny. Adres, pod który ma zostać zatrzymany demontaż.
+Element opcjonalny. Adres, pod którym należy zatrzymać demontaż.
 
-/codebytes: `yes`&#124; `no` [lub]/bytes: `yes`&#124; `no` [lub]/b: `yes`&#124; `no`
+/codebytes:`yes`&#124;`no` [lub]`yes` /bajtów:&#124;`no` [lub] /b:`yes`&#124;`no`
 
-Opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartość domyślna to `no`.
+Element opcjonalny. Wskazuje, czy mają być wyświetlane bajty kodu. Wartością `no`domyślną jest .
 
-/source: `yes`&#124; `no` [lub]/s: `yes`&#124; `no`
+/źródło:`yes`&#124;`no` [lub] /s:`yes`&#124;`no`
 
-Opcjonalny. Wskazuje, czy ma być wyświetlany kod źródłowy. Wartość domyślna to `no`.
+Element opcjonalny. Wskazuje, czy kod źródłowy ma być wyświetlany. Wartością `no`domyślną jest .
 
-/symbolnames: `yes`&#124; `no` [lub]/names: `yes`&#124; `no` [lub]/n: `yes`&#124; `no`
+/symbolnames:`yes`&#124;`no` [lub] /names:`yes`&#124;`no` [lub] /n:`yes`&#124;`no`
 
-Opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartość domyślna to `yes`.
+Element opcjonalny. Wskazuje, czy mają być wyświetlane nazwy symboli. Wartością `yes`domyślną jest .
 
- [/linenumbers: `yes`&#124; `no`]
+ [/numery bielizny:`yes`&#124;`no`]
 
-Opcjonalny. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik/Source musi mieć wartość `yes`, aby można było użyć przełącznika/linenumbers.
+Element opcjonalny. Umożliwia wyświetlanie numerów wierszy skojarzonych z kodem źródłowym. Przełącznik /source musi mieć `yes` wartość, aby użyć przełącznika /linenumbers.
 
 ## <a name="example"></a>Przykład
 
@@ -64,11 +64,11 @@ Opcjonalny. Włącza wyświetlanie numerów wierszy skojarzonych z kodem źród�
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Lista stosu wywołań, polecenie](../../ide/reference/list-call-stack-command.md)
-- [Lista wątków, polecenie](../../ide/reference/list-threads-command.md)
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Lista stosu wywołań — Polecenie](../../ide/reference/list-call-stack-command.md)
+- [Lista wątków — Polecenie](../../ide/reference/list-threads-command.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

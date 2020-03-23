@@ -1,7 +1,7 @@
 ---
-title: Język Python w programie Visual Studio — samouczek krok 1, Utwórz projekt
+title: Python w programie Visual Studio krok 1, tworzenie projektu
 titleSuffix: ''
-description: Przegląd i krok 1 core Przewodnik po funkcji języka Python w programie Visual Studio, w tym wymagania wstępne i tworzenia nowego projektu języka Python.
+description: Omówienie i krok 1 podstawowego przewodnika po możliwościach języka Python w programie Visual Studio, w tym wymagania wstępne i tworzenie nowego projektu języka Python.
 ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,69 +12,69 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430747"
 ---
-# <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z językiem Python w programie Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Samouczek: Praca z Pythonem w programie Visual Studio
 
-Język Python jest popularnych języków programowania, które jest niezawodne, elastyczne, można łatwo dowiedzieć się, bezpłatnie do użycia we wszystkich systemach operacyjnych i obsługiwane przez społeczność deweloperów silne i wielu bezpłatnych bibliotek. Język obsługuje wszystkich sposobów rozwoju, w tym aplikacje sieci web, usług sieci web, aplikacje klasyczne, skryptów i obliczeń naukowych i jest używany przez wiele uniwersytety, analitykom, zwykłych deweloperów i podobne profesjonalnych deweloperów.
+Python to popularny język programowania, który jest niezawodny, elastyczny, łatwy do nauczenia się, darmowy w użyciu we wszystkich systemach operacyjnych i wspierany zarówno przez silną społeczność programistów, jak i wiele darmowych bibliotek. Język obsługuje wszystkie żyrowi rozwoju, w tym aplikacje internetowe, usługi internetowe, aplikacje komputerowe, skrypty i obliczenia naukowe i jest używany przez wiele uniwersytetów, naukowców, przypadkowych programistów i profesjonalnych programistów.
 
-Visual Studio zapewnia najwyższej jakości obsługę języka Python. Ten samouczek przeprowadzi Cię przez następujące kroki:
+Visual Studio zapewnia pierwszorzędną obsługę języka dla języka Python. W tym samouczku przedstawiono następujące kroki:
 
 - [Krok 0: Instalacja](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Krok 1. Tworzenie projektu języka Python (w tym artykule)](#step-1-create-a-new-python-project)
-- [Krok 2. Pisanie i uruchamianie kodu, aby zobaczyć funkcji IntelliSense Visual Studio w miejscu pracy](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Krok 3. Utwórz więcej kodu w okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Krok 4. Uruchom program ukończone w debugerze programu Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Krok 5. Instalowanie pakietów i zarządzanie środowiskami Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [Krok 6. Praca z usługą Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [Krok 1: Tworzenie projektu języka Python (ten artykuł)](#step-1-create-a-new-python-project)
+- [Krok 2: Napisz i uruchom kod, aby zobaczyć Visual Studio IntelliSense w pracy](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Krok 3: Tworzenie większej ilości kodu w interaktywnym oknie REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Krok 4: Uruchom ukończony program w debugerze programu Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Krok 5: Instalowanie pakietów i zarządzanie środowiskami Pythona](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Krok 6: Praca z Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
-## <a name="step-1-create-a-new-python-project"></a>Krok 1. Utwórz nowy projekt języka Python
+## <a name="step-1-create-a-new-python-project"></a>Krok 1: Tworzenie nowego projektu Języka Python
 
-A *projektu* jest jak Visual Studio zarządza wszystkie pliki, które łączą się do tworzenia pojedynczej aplikacji, łącznie z kodu źródłowego, zasobów, konfiguracji i tak dalej. Projekt rozmieszczony i obsługuje relacje między projektu wszystkie pliki, a także zasobów zewnętrznych, które są współużytkowane przez wiele projektów. W efekcie projektów umożliwia aplikacji bez wysiłku rozwoju, i poszerzenia znacznie łatwiejsze niż po prostu zarządzanie relacjami projektu w folderach ad-hoc, skrypty, pliki tekstowe i nawet własne zdania.
+*Projekt* jest jak Visual Studio zarządza wszystkie pliki, które łączą się w celu uzyskania pojedynczej aplikacji, w tym kod źródłowy, zasoby, konfiguracje i tak dalej. Projekt formalizuje i utrzymuje relację między wszystkimi plikami projektu, a także zasobami zewnętrznymi, które są współużytkowane między wieloma projektami. W związku z tym projekty umożliwiają aplikacji bezproblemowe rozszerzanie i rozwijanie się znacznie łatwiej niż zwykłe zarządzanie relacjami projektu w folderach ad hoc, skryptach, plikach tekstowych, a nawet własnym umyśle.
 
-W tym samouczku zaczynać prosty projekt zawierający pojedynczy pusty plik kodu.
+W tym samouczku zaczynasz od prostego projektu zawierającego pojedynczy, pusty plik kodu.
 
-1. W programie Visual Studio, wybierz **pliku** > **New** > **projektu** (**Ctrl** + **Shift**+**N**), co spowoduje uruchomienie **nowy projekt** okna dialogowego. W tym miejscu możesz przeglądać szablony wielu różnych językach, a następnie wybierz jedną dla projektu i określ, gdzie umieszcza pliki w programie Visual Studio.
+1. W programie Visual Studio wybierz **pozycję Plik** > **nowego** > **projektu** **(Ctrl**+**Shift**+**N),** które powoduje wyświetlanie okna dialogowego Nowy **projekt.** W tym miejscu można przeglądać szablony w różnych językach, a następnie wybrać jeden dla projektu i określić, gdzie program Visual Studio umieszcza pliki.
 
-1. Zaznacz, aby wyświetlić szablony Python **zainstalowane** > **Python** po lewej lub wyszukaj "Python". Przy użyciu wyszukiwania jest doskonałym sposobem na znajdowanie szablonu, jeśli nie pamiętasz lokalizacji w drzewie języków.
+1. Aby wyświetlić szablony Języka Python, wybierz **pozycję Zainstalowany** > **Python** po lewej stronie lub wyszukaj hasło "Python". Korzystanie z wyszukiwania to świetny sposób na znalezienie szablonu, gdy nie pamiętasz jego lokalizacji w drzewie języków.
 
-    ![Okno dialogowe nowego projektu za pomocą projektów języka Python pokazano](media/vs-getting-started-python-01-new-project.png)
+    ![Nowe okno dialogowe projektu z pokazanymi projektami języka Python](media/vs-getting-started-python-01-new-project.png)
 
-    Zwróć uwagę, jak obsługa w języku Python w programie Visual Studio zawiera kilka szablonów projektu, w tym aplikacje sieci web przy użyciu platformy Bottle, Flask i Django. Na potrzeby tego przewodnika, Zacznijmy od pustego projektu.
+    Zwróć uwagę, jak python wsparcie w programie Visual Studio zawiera szereg szablonów projektu, w tym aplikacji sieci web przy użyciu Bottle, Flask i Django struktur. Na potrzeby tego przewodnika, jednak zacznijmy od pustego projektu.
 
-1. Wybierz **aplikację w języku Python** szablonu, podaj nazwę dla projektu, a następnie wybierz **OK**.
+1. Wybierz szablon **aplikacji języka Python,** określ nazwę projektu i wybierz **przycisk OK**.
 
-1. Po kilku chwilach programu Visual Studio pokazuje strukturę projektu w **Eksploratora rozwiązań** okna (1). Domyślny plik kodu jest otwarty w edytorze, (2). **Właściwości** okna (3) również pojawi się dodatkowe informacje dla każdego elementu wybranego w **Eksploratora rozwiązań**, łącznie z jego dokładnej lokalizacji na dysku.
+1. Po kilku chwilach visual studio pokazuje strukturę projektu w oknie **Eksploratora rozwiązań** (1). Domyślny plik kodu jest otwarty w edytorze (2). Okno **Właściwości** (3) pojawia się również, aby wyświetlić dodatkowe informacje dla każdego elementu wybranego w **Eksploratorze rozwiązań,** w tym jego dokładną lokalizację na dysku.
 
-    ![Eksplorator rozwiązań z projektu języka Python](media/vs-getting-started-python-02-windows.png)
+    ![Eksplorator rozwiązań z projektem języka Python](media/vs-getting-started-python-02-windows.png)
 
-1. Zapoznaj się z może chwilę potrwać **Eksploratora rozwiązań**, czyli, gdzie przeglądać pliki i foldery w projekcie.
+1. Poświęć kilka chwil na zapoznanie się z **Eksploratorem rozwiązań,** czyli w miejscu przeglądania plików i folderów w projekcie.
 
-    ![Rozszerzona w Eksploratorze rozwiązań, aby wyświetlić różne funkcje](media/vs-getting-started-python-03-solution-explorer.png)
+    ![Eksplorator rozwiązań został rozwinięty w celu wyświetlenia różnych funkcji](media/vs-getting-started-python-03-solution-explorer.png)
 
-    (1) wyróżniony pogrubioną czcionką jest projektu, przy użyciu nazwę nadaną w **nowy projekt** okna dialogowego. Na dysku, ten projekt jest reprezentowany przez *.pyproj* pliku w folderze projektu.
+    (1) Wyróżniony pogrubioną czcionką jest twój projekt, używając nazwy nadany w oknie dialogowym **Nowy projekt.** Na dysku ten projekt jest reprezentowany przez plik *pyproj* w folderze projektu.
 
-    (2) przy najwyższym poziomie jest *rozwiązania*, która domyślnie ma taką samą nazwę jak projektu. To rozwiązanie, reprezentowane przez *.sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów. Na przykład jeśli piszesz rozszerzenie języka C++ dla aplikacji języka Python projektu C++ może znajdują się w tym samym rozwiązaniu. Rozwiązanie może również zawierać projekt usługi sieci web, wraz z projektów dla programów dedykowanych testu.
+    (2) Na najwyższym poziomie jest *rozwiązanie,* które domyślnie ma taką samą nazwę jak projekt. Rozwiązanie, reprezentowane przez plik *.sln* na dysku, jest kontenerem dla jednego lub więcej powiązanych projektów. Na przykład jeśli piszesz rozszerzenie C++ dla aplikacji języka Python, ten projekt języka C++ może przebywać w ramach tego samego rozwiązania. Rozwiązanie może również zawierać projekt dla usługi sieci web, wraz z projektami dla dedykowanych programów testowych.
 
-    (3) w ramach projektu Zobacz pliki źródłowe, w tym przypadku jest tylko jeden *PY* pliku. Wybranie pliku powoduje wyświetlenie jego właściwości w **właściwości** okna. Dwukrotne kliknięcie pliku otwierany w sposób, który jest odpowiedni dla tego pliku.
+    (3) W projekcie widzisz pliki źródłowe, w tym przypadku tylko jeden plik *py.* Wybranie pliku powoduje wyświetlenie jego właściwości w oknie **Właściwości.** Dwukrotne kliknięcie pliku powoduje otwarcie go w dowolny sposób dla danego pliku.
 
-    (4) również w projekcie jest **środowiska Python** węzła. Po rozwinięciu zostanie wyświetlony interpreterów języka Python, które są dostępne dla Ciebie. Rozwiń węzeł interpreter w taki sposób, aby zobaczyć bibliotek, które są zainstalowane w tym środowisku (5).
+    (4) Również w ramach projektu jest węzeł **Środowiska Python.** Po rozwinięciu zostaną wyświetlone interpretery języka Python, które są dostępne dla Ciebie. Rozwiń węzeł interpretera, aby wyświetlić biblioteki zainstalowane w tym środowisku (5).
 
-    Kliknij prawym przyciskiem myszy dowolny węzeł lub elementu w **Eksploratora rozwiązań** na dostęp do menu odpowiednich poleceń. Na przykład **Zmień nazwę** polecenie pozwala zmienić nazwę węzła lub elementu, w tym projektu i rozwiązania.
+    Kliknij prawym przyciskiem myszy dowolny węzeł lub element w **Eksploratorze rozwiązań,** aby uzyskać dostęp do menu odpowiednich poleceń. Na przykład zmień **nazwę** polecenia umożliwia zmianę nazwy dowolnego węzła lub elementu, w tym projektu i rozwiązania.
 
 ## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
 > [Pisanie i uruchamianie kodu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="go-deeper"></a>Przejdź dalej
+## <a name="go-deeper"></a>Głębiej
 
-- [Projekty Python w programie Visual Studio](managing-python-projects-in-visual-studio.md).
-- [Dowiedz się więcej o języku Python w witrynie python.org](https://www.python.org)
+- [Projekty języka Python w programie Visual Studio](managing-python-projects-in-visual-studio.md).
+- [Dowiedz się więcej o języku Python na python.org](https://www.python.org)
 - [Python dla początkujących](https://www.python.org/about/gettingstarted/) (python.org)

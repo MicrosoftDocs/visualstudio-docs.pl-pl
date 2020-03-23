@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591518"
 ---
-# <a name="open-file-command"></a>Otwórz plik — polecenie
+# <a name="open-file-command"></a>Otwórz plik, polecenie
 
-Otwiera istniejący plik i pozwala na określenie edytora.
+Otwiera istniejący plik i umożliwia określenie edytora.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ Wymagany. Pełna lub częściowa ścieżka i nazwa pliku do otwarcia. Ścieżki 
 
 /e:`editorname`
 
-Opcjonalny. Nazwa edytora, w którym plik zostanie otwarty. Jeśli argument jest określony, ale nie zostanie podana nazwa edytora, pojawi się okno dialogowe **Otwórz za pomocą** .
+Element opcjonalny. Nazwa edytora, w którym zostanie otwarty plik. Jeśli argument jest określony, ale nie podano nazwy edytora, zostanie wyświetlone okno dialogowe **Otwórz za pomocą.**
 
-Składnia argumentów/e:`editorname` używa nazw edytorów, które są wyświetlane w oknie dialogowym Otwórz za pomocą, ujęte w cudzysłów.
+Składnia argumentu /e:`editorname` używa nazw edytorów wyświetlanych w oknie dialogowym Otwórz za pomocą, ujętych w cudzysłów.
 
-Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadzić następujące polecenie dla argumentu/e:`editorname`.
+Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy`editorname` wprowadzić następujące dla /e: argument.
 
 ```cmd
 /e:"Source Code (text) Editor"
@@ -53,20 +53,20 @@ Na przykład, aby otworzyć plik w edytorze kodu źródłowego, należy wprowadz
 
 ## <a name="remarks"></a>Uwagi
 
-Podczas wprowadzania ścieżki funkcja automatycznego uzupełniania próbuje znaleźć poprawną ścieżkę i nazwę pliku.
+Po wprowadzeniu ścieżki automatyczne uzupełnianie próbuje zlokalizować prawidłową ścieżkę i nazwę pliku.
 
 ## <a name="example"></a>Przykład
 
-Ten przykład otwiera plik stylu "test1. css" w edytorze kodu źródłowego.
+W tym przykładzie otwiera plik stylu "Test1.css" w edytorze kodu źródłowego.
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Polecenia programu Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [okno Polecenie](../../ide/reference/command-window.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
 - [Okno bezpośrednie](../../ide/reference/immediate-window.md)
-- [Znajdź/pole polecenia](../../ide/find-command-box.md)
+- [Pole Znajdź/Polecenie](../../ide/find-command-box.md)
 - [Aliasy poleceń programu Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

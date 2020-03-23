@@ -1,5 +1,5 @@
 ---
-title: 'marker_series:: ~ marker_series — destruktor | Dokumentacja firmy Microsoft'
+title: marker_series::~marker_series Destructor | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9de1d51eb99fa6914f792ed4c34668f861caee02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62831374"
 ---
-# <a name="markerseriesmarkerseries-destructor"></a>marker_series:: ~ marker_series — destruktor
-Niszczy obiekt marker_series i zwalnia wszystkie zasoby przydzielone.
+# <a name="marker_seriesmarker_series-destructor"></a>marker_series::~marker_series destruktor
+Niszczy marker_series obiekt i uwalnia wszystkie przydzielone zasoby.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,7 +31,7 @@ Niszczy obiekt marker_series i zwalnia wszystkie zasoby przydzielone.
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkersobj.h*
 
- **Namespace:** CONCURRENCY::Diagnostic —
+ **Obszar nazw:** Współbieżność::dignostyk
 
-## <a name="see-also"></a>Zobacz także
-- [marker_series, klasa](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Zobacz też
+- [klasa marker_series](../profiling/marker-series-class.md)

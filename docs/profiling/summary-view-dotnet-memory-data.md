@@ -1,5 +1,5 @@
 ---
-title: Widok podsumowania — dane pamięci platformy .NET | Microsoft Docs
+title: Widok podsumowania — dane pamięci .NET | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,42 +12,42 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: a67902af99eaee6c75f92f86c2481dfc2afd744e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771559"
 ---
-# <a name="summary-view---net-memory-data"></a>Widok podsumowania — dane pamięci platformy .NET
-Widok podsumowania zawiera informacje o funkcjach i typach programu .NET, które przydzieliły najwięcej pamięci, oraz typy, które zostały utworzone najczęściej w ramach uruchomienia profilowania. Aby uzyskać więcej informacji, w tym opis linków powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
+# <a name="summary-view---net-memory-data"></a>Widok podsumowania — dane pamięci .NET
+W widoku Podsumowanie są wyświetlane informacje o funkcjach i typach platformy .NET, które przydzieliły najwięcej pamięci, oraz o typach, które zostały utworzone najczęściej w przebiegu profilowania. Aby uzyskać więcej informacji, w tym opis łączy powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
 
 ## <a name="timeline-graph"></a>Wykres osi czasu
- Wykres osi czasu w widoku Podsumowanie przedstawia wykorzystanie procesora (CPU) przez profilowaną aplikację w czasie, w którym nastąpiło profilowanie. Możesz użyć wykresu osi czasu do filtrowania widoku do wybranego przedziału czasu. Aby uzyskać więcej informacji, zobacz [How to: Filter viewss Reports from a Summary oś czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Wykres osi czasu w widoku Podsumowanie pokazuje wykorzystanie procesora (CPU) przez profilowane aplikacji w czasie, który wystąpił profilowania. Za pomocą wykresu osi czasu można filtrować widok do wybranego przedziału czasu. Aby uzyskać więcej informacji, zobacz [Jak: Filtrowanie widoków raportu z osi czasu podsumowania](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
-## <a name="functions-allocating-most-memory"></a>Funkcje przydzielające najwięcej pamięci
- Wyświetla listę funkcji, które przydzieliły największą liczbę bajtów pamięci w przebiegu profilowania.
+## <a name="functions-allocating-most-memory"></a>Funkcje przydzielające większość pamięci
+ Wyświetla listę funkcji, które przydzielono największą liczbę bajtów pamięci w przebiegu profilowania.
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|Nazwa funkcji.|
-|**Szybkość**|Procent wszystkich przydzielonej liczby bajtów w przebiegu profilowania, który został przydzielony przez tę funkcję lub przez funkcję podrzędną, która została wywołana przez tę funkcję.|
+|**Bajty %**|Procent wszystkich przydzielonych bajtów w przebiegu profilowania, które zostały przydzielone przez tę funkcję lub przez funkcję podrzędną, która została wywołana przez tę funkcję.|
 
-## <a name="types-with-most-memory-allocated"></a>Typy z największą przydzieloną ilością pamięci
- Wyświetla listę typów, dla których w przebiegu profilowania jest przydzielono największą liczbę bajtów pamięci.
+## <a name="types-with-most-memory-allocated"></a>Typy z największą liczną pamięcią
+ Wyświetla listę typów, dla których największa liczba bajtów pamięci zostały przydzielone w przebiegu profilowania.
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|Nazwa typu.|
-|**Szybkość**|Procent wszystkich przydzieloną bajtów w przebiegu profilowania, który został przydzielony dla tego typu.|
+|**Bajty %**|Procent wszystkich przydzielonych bajtów w przebiegu profilowania, które zostały przydzielone dla tego typu.|
 
 ## <a name="types-with-most-instances"></a>Typy z większością wystąpień
- Wyświetla listę typów, które zostały utworzone najczęściej podczas przebiegu profilowania. wprowadzono
+ Wyświetla listę typów, które zostały utworzone najwięcej razy podczas wykonywania profilowania. Hda
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|Nazwa typu.|
-|**Liczba**|Wartość procentowa łącznej liczby obiektów of.NET, które zostały utworzone w ramach uruchomienia profilowania, które były wystąpieniami tego typu.|
+|**Wystąpienia %**|Procent całkowitej liczby obiektów of.NET, które zostały utworzone w przebiegu profilowania, które były wystąpieniami tego typu.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok podsumowania — dane próbkowania](../profiling/summary-view-sampling-data.md)
-- [Widok podsumowania — dane Instrumentacji](../profiling/summary-view-instrumentation-data.md)
+- [Widok podsumowania - dane oprzyrządowania](../profiling/summary-view-instrumentation-data.md)

@@ -1,46 +1,46 @@
 ---
-title: Połącz się z projektami w programie Team Explorer
+title: Łączenie się z projektami w Eksploratorze zespołu
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585486"
 ---
-# <a name="connect-to-projects-in-team-explorer"></a>Połącz się z projektami w programie Team Explorer
+# <a name="connect-to-projects-in-team-explorer"></a>Łączenie się z projektami w Eksploratorze zespołu
 
-Użyj **Team Explorer** okna narzędzi do koordynowania swoich działań kodu z innymi członkami zespołu, aby opracować projekt, a także do zarządzania pracą, która jest przypisana do Ciebie, Twojego zespołu lub projektów. **Team Explorer** łączy program Visual Studio z repozytoriów Git i GitHub, repozytoriów kontroli (TFVC) w wersji Team Foundation i projektów w serwisie [usługom DevOps platformy Azure](/azure/devops/user-guide/what-is-azure-devops-services) lub lokalną [platformy Azure Serwer DevOps](/azure/devops/index-all) (wcześniej znane jako serwera TFS). Można zarządzać kodem źródłowym, elementami roboczymi i kompilacjami.
+Okno narzędzia **Eksplorator zespołu** służy do koordynowania wysiłków związanych z kodem z innymi członkami zespołu w celu opracowania projektu i zarządzania pracą przypisaną do Ciebie, zespołu lub projektów. **Team Explorer** łączy program Visual Studio z repozytoriami Git i GitHub, repozytoriami kontroli wersji programu Team Foundation (TFVC) oraz projektami hostowanymi w [usługach Azure DevOps](/azure/devops/user-guide/what-is-azure-devops-services) lub lokalnym serwerze Azure [DevOps Server](/azure/devops/index-all) (wcześniej znanym jako TFS). Można zarządzać kodem źródłowym, elementami roboczymi i kompilacjami.
 
-![Strony głównej programu Team Explorer w programie Visual Studio](media/team-explorer/team-explorer.png)
+![Strona główna Eksploratora zespołu w programie Visual Studio](media/team-explorer/team-explorer.png)
 
 > [!TIP]
-> Po otwarciu programu Visual Studio i **Team Explorer** nie są wyświetlane, otwórz go, wybierając **widoku** > **Team Explorer** z paska menu.
+> Jeśli otworzysz program Visual Studio, a **Eksplorator zespołu** nie zostanie wyświetlony, otwórz go, wybierając **pozycję Wyświetl** > **Eksploratora zespołu** na pasku menu.
 
-## <a name="connect-to-a-project-or-repository"></a>Łączenie się z projektu lub repozytorium
+## <a name="connect-to-a-project-or-repository"></a>Łączenie się z projektem lub repozytorium
 
-Łączenie do projektu lub repozytorium na **Connect** strony.
+Połącz się z projektem lub repozytorium na stronie **Połącz.**
 
-![Łączenie strony w programie Team Explorer](media/team-explorer/connect.png)
+![Połącz stronę w Eksploratorze zespołu](media/team-explorer/connect.png)
 
 Aby połączyć się z projektem:
 
-1. Otwórz **Connect** strony, wybierając **Zarządzaj połączeniami** ikony.
+1. Otwórz stronę **Połącz,** wybierając ikonę **Zarządzaj połączeniami.**
 
-   ![Zarządzanie połączeniami przycisku w programie Team Explorer](media/team-explorer/manage-connections.png)
+   ![Przycisk Zarządzaj połączeniami w Eksploratorze zespołu](media/team-explorer/manage-connections.png)
 
-1. Na **Connect** wybierz **Zarządzaj połączeniami** > **nawiązywanie połączenia z projektem**.
+1. Na stronie **Łączenie** wybierz pozycję **Zarządzaj połączeniami** > **Połącz z projektem**.
 
-   ![Połącz się z projektem w programie Team Explorer](media/team-explorer/connect-project.png)
+   ![Łączenie się z projektem w Eksploratorze zespołu](media/team-explorer/connect-project.png)
 
 > [!TIP]
-> Jeśli musisz utworzyć nowy projekt lub dodać użytkowników do projektu, zobacz [Tworzenie projektu (DevOps platformy Azure)](/azure/devops/organizations/projects/create-project) i [Dodawanie użytkowników do projektu lub zespołu (DevOps platformy Azure)](/azure/devops/organizations/security/add-users-team-project).
+> Jeśli chcesz utworzyć nowy projekt lub dodać użytkowników do projektu, zobacz [Tworzenie projektu (Azure DevOps)](/azure/devops/organizations/projects/create-project) i [Dodawanie użytkowników do projektu lub zespołu (Azure DevOps).](/azure/devops/organizations/security/add-users-team-project)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Dokumentacja programu Team Explorer](reference/team-explorer-reference.md)
-- [Połącz się z projektem (DevOps platformy Azure)](/azure/devops/organizations/projects/connect-to-projects)
+- [Dokumentacja wtyczki Team Explorer](reference/team-explorer-reference.md)
+- [Łączenie się z projektem (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

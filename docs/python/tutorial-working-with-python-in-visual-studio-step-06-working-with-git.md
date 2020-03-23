@@ -1,7 +1,7 @@
 ---
-title: Język Python w Visual Studio — samouczek krok 6, pracy z usługą Git
+title: Python w programie Visual Studio krok 6, praca z Git
 titleSuffix: ''
-description: Krok 6 wskazówki podstawowych języka Python w programie Visual Studio, obejmujące funkcje związane z Git programu Visual Studio.
+description: Krok 6 podstawowego przewodnika pythona w programie Visual Studio, obejmujący funkcje związane z git programu Visual Studio.
 ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,66 +12,66 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "72289718"
 ---
-# <a name="step-6-work-with-git"></a>Krok 6: Pracy z usługą Git
+# <a name="step-6-work-with-git"></a>Krok 6: Praca z Git
 
-**Poprzedni krok: [zainstalować pakiety i zarządzać środowiskiem Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+**Poprzedni krok: [Instalowanie pakietów i zarządzanie środowiskiem Pythona](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio zapewnia bezpośrednią integrację z usługą lokalne repozytoria Git i repozytoria zdalne w usługach, takich jak GitHub i repozytoriów platformy Azure. Integracja obejmuje klonowanie repozytorium, zatwierdzanie zmian i zarządzania gałęzi.
+Visual Studio zapewnia bezpośrednią integrację z lokalnymi repozytoriami Git i zdalnymi repozytoriami w usługach, takich jak GitHub i Repozytorium platformy Azure. Integracja obejmuje klonowanie repozytorium, zatwierdzanie zmian i zarządzanie gałęziami.
 
-Ten artykuł zawiera ogólne omówienie tworzenia lokalnego repozytorium Git dla istniejącego projektu i zapoznawanie się z niektórych funkcji związanych z Git programu Visual Studio.
+Ten artykuł zawiera podstawowe omówienie tworzenia lokalnego repozytorium Git dla istniejącego projektu i zapoznania się z niektórymi funkcjami związanymi z git programu Visual Studio.
 
-1. Mając otwarty w programie Visual Studio, takie jak projekt z projekt [poprzedniego kroku](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), kliknij prawym przyciskiem myszy rozwiązanie i wybierz **Dodaj rozwiązanie do kontroli źródła**. Program Visual Studio tworzy lokalnego repozytorium Git, który zawiera kod projektu.
+1. Po otwarciu projektu w programie Visual Studio, takim jak projekt z [poprzedniego kroku,](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)kliknij prawym przyciskiem myszy rozwiązanie i wybierz polecenie **Dodaj rozwiązanie do kontroli źródła.** Visual Studio tworzy lokalne repozytorium Git, który zawiera kod projektu.
 
-1. Gdy Visual Studio wykryje, że projekt jest zarządzana w kontrolkach Git związane z repozytorium Git są wyświetlane na prawym dolnym rogu okna programu Visual Studio. Pokaż formanty oczekujących zatwierdzeń, zmiany nazwy repozytorium i gałąź. Umieść kursor nad formantów, aby wyświetlić dodatkowe informacje.
+1. Gdy visual studio wykryje, że projekt jest zarządzany w repozytorium Git związane formanty pojawiają się w prawym dolnym rogu okna programu Visual Studio. Formanty pokazują oczekujące zatwierdzenia, zmiany, nazwę repozytorium i gałąź. Umieść wskaźnik myszy na formanty, aby wyświetlić dodatkowe informacje.
 
-    ![Dodatkowe informacje są wyświetlane po umieszczeniu wskaźnika myszy nad formantem Git w oknie programu Visual Studio](media/working-with-git-01.png)
+    ![Dodatkowe informacje są wyświetlane po najechaniu kursorem na kontrolkę Git w oknie programu Visual Studio](media/working-with-git-01.png)
 
-1. Podczas tworzenia nowego repozytorium, lub wybierz dowolny z formantów Git, Visual Studio otwiera **Team Explorer** okna. (Okno można otworzyć w dowolnym momencie za pomocą polecenia > **widoku** **Team Explorer** menu). Okno ma trzy główne okienka, które można przełączać między przy użyciu listy rozwijanej w nagłówku **Team Explorer** . **Synchronizacji** okienko, które udostępnia operacje publikacji, pojawia się również, po wybraniu **wypychania** kontroli (ikonę strzałki w górę):
+1. Po utworzeniu nowego repozytorium lub wybraniu dowolnego z formantów Git program Visual Studio otwiera okno **Eksploratora zespołu.** (Okno można otworzyć w dowolnym momencie za pomocą polecenia menu **Wyświetl** > **Eksploratora** zespołu). Okno ma trzy główne okienka, które przełączają się między użyciem listy rozwijanej w nagłówku **Eksploratora zespołu.** Okienko **Synchronizacja,** które zapewnia operacje publikowania, pojawia się również po wybraniu kontrolki **Push** (ikona strzałki w górę):
 
-    ![Team Explorer w programie Visual Studio po utworzeniu repozytorium lokalnego](media/working-with-git-02.png)
+    ![Eksplorator zespołu w programie Visual Studio po utworzeniu lokalnego repozytorium](media/working-with-git-02.png)
 
-1. Wybierz **zmiany** (lub kontroli Git za pomocą ikony ołówka) niezatwierdzone zmiany przejrzeć i zatwierdzić je, jeśli to konieczne.
+1. Wybierz **opcję Zmiany** (lub kontrolkę Git z ikoną ołówka), aby przejrzeć niezatwierdzone zmiany i zatwierdzić je w razie potrzeby.
 
-    ![Team Explorer w programie Visual Studio przedstawiający niezatwierdzone zmiany](media/working-with-git-03.png)
+    ![Eksplorator zespołu w programie Visual Studio z niezatwierdzonych zmianami](media/working-with-git-03.png)
 
-    Kliknij dwukrotnie plik w **zmiany** listy, aby otworzyć widok różnic dla tego pliku:
+    Kliknij dwukrotnie plik na liście **Zmiany,** aby otworzyć widok różnicowy dla tego pliku:
 
-    ![Widok różnic dla zmian w pliku](media/working-with-git-05.png)
+    ![Widok różnicy dla zmian w pliku](media/working-with-git-05.png)
 
-1. Wybierz **gałęzie** (lub kontroli Git o nazwie gałęzi) do badania gałęzi i wykonywania operacji scalania i zmianę bazy:
+1. Wybierz **opcję Gałęzie** (lub kontrolka Git z nazwą gałęzi), aby zbadać gałęzie i wykonać operacje scalania i ponownego bazowania:
 
-    ![Team Explorer w programie Visual Studio przedstawiający gałęzi](media/working-with-git-04.png)
+    ![Eksplorator zespołu w programie Visual Studio z oddziałami](media/working-with-git-04.png)
 
-1. Wybranie kontrolki Git o nazwie repozytorium (**CosineWave** na poprzedniej ilustracji), **Team Explorer** pokazuje **Connect** interfejs, za pomocą którego możesz szybko przełączyć się do innym repozytorium całkowicie.
+1. Wybierając kontrolkę Git z nazwą repozytorium **(CosineWave** w poprzednim obrazie), **Team Explorer** pokazuje interfejs **Connect,** za pomocą którego można szybko przełączyć się do innego repozytorium całkowicie.
 
-1. Korzystając z lokalnego repozytorium, zatwierdzone zmiany przejdź bezpośrednio do repozytorium. Jeśli masz połączenie z repozytorium zdalnym, wybierz nagłówek listy rozwijanej w **Team Explorer**, wybierz **synchronizacji** Aby przełączyć się do **synchronizacji** sekcji oraz pracować z nimi **Ściągnięcia** i **pobrać** poleceń przedstawionych istnieje.
+1. Podczas korzystania z lokalnego repozytorium zatwierdzone zmiany przejść bezpośrednio do repozytorium. Jeśli masz połączenie z repozytorium zdalnym, wybierz nagłówek rozwijany w **Eksploratorze zespołu**, wybierz **pozycję Synchronizuj,** aby przełączyć się do sekcji **Synchronizacja,** i pracuj z **wyświetlonymi** tam poleceniami **Ściągnij** i Pobierz.
 
-## <a name="go-deeper"></a>Przejdź dalej
+## <a name="go-deeper"></a>Głębiej
 
-Aby uzyskać krótki przewodnik tworzenia projektu ze zdalnego repozytorium Git, zobacz [Szybki Start: klonowanie repozytorium kodu w języku Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Aby uzyskać krótki instruktaż tworzenia projektu z zdalnego repozytorium Git, zobacz [Szybki start: Klonowanie repozytorium kodu języka Python w programie Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Samouczek znacznie bardziej złożone, w tym obsługa konfliktów scalania, przeglądanie kodu za pomocą żądań ściągnięcia, zmienianie bazy i selekcjonowanie zmiany między gałęziami, zobacz [Rozpoczynanie pracy z usługą Git i repozytoriów platformy Azure](/azure/devops/repos/git/gitquickstart).
+Aby uzyskać znacznie bardziej kompleksowy samouczek, w tym obsługę konfliktów scalania, przeglądanie kodu za pomocą żądań ściągnięcia, zmiany dotyczące przekładania i wybierania wiśni między gałęziami, zobacz [Wprowadzenie do git i usługi Azure Repos](/azure/devops/repos/git/gitquickstart).
 
-## <a name="tutorial-review"></a>Przejrzyj samouczek
+## <a name="tutorial-review"></a>Recenzja samouczka
 
-Gratulacje z okazji wykonanie kroków tego samouczka w języku Python w programie Visual Studio. W tym samouczku wyjaśniono sposób:
+Gratulujemy ukończenia tego samouczka na temat języka Python w programie Visual Studio. W tym samouczku dowiesz się, jak:
 
 - Tworzenie projektów i wyświetlanie zawartości projektu.
-- Za pomocą edytora kodu i uruchomić projekt.
-- Użyj **Interactive** okna do tworzenia nowego kodu i łatwo skopiować ten kod do edytora.
-- Uruchom program ukończone w debugerze programu Visual Studio.
-- Instalowanie pakietów i zarządzanie środowiskami Python.
+- Użyj edytora kodu i uruchom projekt.
+- Użyj **interaktywnego** okna, aby opracować nowy kod i łatwo skopiować ten kod do edytora.
+- Uruchom ukończony program w debugerze programu Visual Studio.
+- Instalowanie pakietów i zarządzanie środowiskami Języka Python.
 - Praca z kodem w repozytorium Git.
 
-W tym miejscu zapoznaj się z pojęciami i przewodniki z instrukcjami, łącznie z następującymi artykułami:
+W tym miejscu zapoznaj się z przewodnikami pojęć i poradnikami, w tym następującymi artykułami:
 
-- [Tworzenie rozszerzenia C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md)
+- [Tworzenie rozszerzenia języka C++ dla języka Python](working-with-c-cpp-python-in-visual-studio.md)
 - [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- [Profilowanie](profiling-python-code-in-visual-studio.md)
-- [Testowanie jednostek](unit-testing-python-in-visual-studio.md)
+- [Profilowania](profiling-python-code-in-visual-studio.md)
+- [Testy jednostkowe](unit-testing-python-in-visual-studio.md)

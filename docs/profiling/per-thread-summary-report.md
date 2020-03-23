@@ -1,5 +1,5 @@
 ---
-title: Raport Podsumowanie wątku | Dokumentacja firmy Microsoft
+title: Raport podsumowujący na wątek | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794329"
 ---
-# <a name="per-thread-summary-report"></a>Raport Podsumowanie wątku
-Ten wykres słupkowy zawiera część czas spędzony przez każdy wątek odkrywanie każdej kategorii w aktualnie widocznym zakresie czasu. "Wykonanie" oznacza, że wykonywany jest wątek; wszystkich innych kategoriach oznacza oczekiwania wątku do czegoś.
+# <a name="per-thread-summary-report"></a>Raport podsumowujący na wątek
+Ten wykres słupkowy pokazuje proporcję czasu, przez który każdy nieukryty wątek spędza w każdej kategorii aktywności podczas aktualnie widocznego zakresu czasu. "Wykonanie" oznacza, że wątek jest wykonywany; wszystkie inne kategorie oznaczają, że wątek czeka na coś.
 
-## <a name="see-also"></a>Zobacz także
-- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
-- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
+## <a name="see-also"></a>Zobacz też
+- [Czas wykonania (widok wątków)](../profiling/execution-time-threads-view.md)
+- [Czas we/wy (widok wątków)](../profiling/i-o-time-threads-view.md)
 - [Czas zarządzania pamięcią](../profiling/memory-management-time.md)
-- [Czas wywłaszczania](../profiling/preemption-time.md)
-- [Czas uśpienia](../profiling/sleep-time.md)
+- [Czas wywłaszczenia](../profiling/preemption-time.md)
+- [Czas snu](../profiling/sleep-time.md)
 - [Czas synchronizacji](../profiling/synchronization-time.md)
 - [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

@@ -1,6 +1,6 @@
 ---
-title: Przewodnik Szybki Start — Tworzenie projektu języka Python za pomocą Cookiecutter
-description: W tym przewodniku Szybki Start utworzysz projekt programu Visual Studio dla języka Python za pomocą szablonów Cookiecutter.
+title: Szybki start — tworzenie projektu języka Python przy użyciu funkcji Cookiecutter
+description: W tym przewodniku Szybki start utworzysz projekt programu Visual Studio dla języka Python przy użyciu szablonu Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
@@ -11,44 +11,44 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62954512"
 ---
-# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki start: Tworzenie projektu z szablonu Cookiecutter
+# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Szybki start: tworzenie projektu na podstawie szablonu cookiecutter
 
-Po [zainstalowane obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md), można łatwo utworzyć nowy projekt z szablonu Cookiecutter, w tym wiele, które są publikowane w witrynie GitHub. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) zapewnia graficzny interfejs użytkownika do odnalezienia szablonów, wprowadź opcje szablonu oraz tworzenie projektów i plików. On zostało uwzględnione w programie Visual Studio 2017 i nowsze i mogą być zainstalowane oddzielnie we wcześniejszych wersjach programu Visual Studio.
+Po [zainstalowaniu obsługi języka Python w programie Visual Studio](installing-python-support-in-visual-studio.md)można łatwo utworzyć nowy projekt za pomocą szablonu cookiecutter, w tym wiele, które są publikowane w usłudze GitHub. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) udostępnia graficzny interfejs użytkownika do odnajdowania szablonów, opcji szablonów wejściowych oraz tworzenia projektów i plików. Jest dołączony do programu Visual Studio 2017 i nowszych i może być zainstalowany oddzielnie we wcześniejszych wersjach programu Visual Studio.
 
-1. W tym przewodniku Szybki Start należy najpierw zainstalować dystrybucji anaconda3, wersja języka Python, która obejmuje niezbędne pakiety języka Python dla szablonu Cookiecutter, pokazano poniżej. Uruchom Instalatora programu Visual Studio, wybierz **Modyfikuj**, rozwiń opcje **programowania w języku Python** po prawej stronie i wybierz pozycję **Anaconda3** (32-bitowy lub 64-bitowych). Należy pamiętać, że instalacja może zająć trochę czasu w zależności od szybkości Internetu, ale jest to najprostszy sposób, aby zainstalować wymagane pakiety.
+1. W przypadku tego przewodnika Szybki start najpierw zainstaluj dystrybucję Języka Python Anaconda3, która zawiera niezbędne pakiety Pythona dla szablonu Cookiecutter pokazanego tutaj. Uruchom instalator programu Visual Studio, wybierz pozycję **Modyfikuj,** rozwiń opcje **tworzenia języka Python** po prawej stronie i wybierz pozycję **Anaconda3** (32-bitowe lub 64-bitowe). Należy pamiętać, że instalacja może zająć trochę czasu w zależności od szybkości Internetu, ale jest to najprostszy sposób instalowania potrzebnych pakietów.
 
 1. Uruchom program Visual Studio.
 
-1. Wybierz **pliku** > **nowe** > **z Cookiecutter**. To polecenie powoduje otwarcie okna w programie Visual Studio, w którym można przeglądać szablony.
+1. Wybierz **plik** > **nowy** > **z cookiecutter**. To polecenie otwiera okno w programie Visual Studio, w którym można przeglądać szablony.
 
-    ![Nowy projekt z szablonów Cookiecutter](media/projects-from-cookiecutter1.png)
+    ![Nowy szablon projektu z cookiecutter](media/projects-from-cookiecutter1.png)
 
-1. Wybrane **Microsoft/python-skryptu sklearn klasyfikatora cookiecutter** szablonu, następnie wybierz pozycję **dalej**. (Ten proces może potrwać kilka minut po raz pierwszy zostanie użyty został konkretny szablon, ponieważ program Visual Studio instaluje wymagane pakiety języka Python.)
+1. Wybrano szablon **Microsoft/python-sklearn-classifier-cookiecutter,** a następnie wybierz przycisk **Dalej**. (Proces może potrwać kilka minut przy pierwszym użyciu określonego szablonu, ponieważ program Visual Studio instaluje wymagane pakiety Języka Python).
 
-1. W następnym kroku, należy ustawić lokalizację dla nowego projektu w **utworzyć do** pole, a następnie wybierz opcję **Utwórz i Otwórz projekt**.
+1. W następnym kroku ustaw lokalizację nowego projektu w polu **Utwórz do,** a następnie wybierz pozycję **Utwórz i otwórz projekt**.
 
-    ![Drugi etap przy użyciu Cookiecutter, ustawianie właściwości projektu](media/projects-from-cookiecutter2.png)
+    ![Drugi krok za pomocą Cookiecutter, ustawianie właściwości projektu](media/projects-from-cookiecutter2.png)
 
-1. Po zakończeniu procesu zostanie wyświetlony komunikat **pomyślnie utworzono pliki przy użyciu szablonu...** . Projekt zostanie automatycznie otwarty w oknie Eksploratora rozwiązań.
+1. Po zakończeniu procesu zostanie wyświetlony komunikat **Pomyślnie utworzone pliki przy użyciu szablonu...**. Projekt jest otwierany w Eksploratorze rozwiązań automatycznie.
 
-1. Naciśnij klawisz **Ctrl**+**F5** lub wybierz **debugowania** > **Uruchom bez debugowania** do uruchomienia programu.
+1. Naciśnij **klawisz Ctrl**+**F5** lub wybierz **opcję Debugowanie** > **start bez debugowania,** aby uruchomić program.
 
-    ![Dane wyjściowe projektu szablonu języka python — skryptu sklearn klasyfikatora cookiecutter](media/projects-from-cookiecutter4.png)
+    ![Dane wyjściowe projektu szablonu python-sklearn-classifier-cookiecutter](media/projects-from-cookiecutter4.png)
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Samouczek: Praca z językiem Python w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Samouczek: Praca z Pythonem w programie Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Używanie rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md)
-- [Ręcznie Zidentyfikuj istniejące interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md)
+- [Użyj rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md)
+- [Ręczne identyfikowanie istniejącego interpretera języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i wcześniejszych](installing-python-support-in-visual-studio.md)
 - [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations)

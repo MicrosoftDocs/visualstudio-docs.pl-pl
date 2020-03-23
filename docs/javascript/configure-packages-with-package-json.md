@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie pakietów npm przy użyciu pliku package.json
-description: Określ wersje pakietów npm przy użyciu pliku package.json
+title: Konfigurowanie pakietów npm za pomocą pliku package.json
+description: Określanie wersji pakietu npm przy użyciu pliku package.json
 ms.date: 09/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -12,33 +12,33 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "67692377"
 ---
 # <a name="packagejson-configuration"></a>Konfiguracja pliku package.json
 
-Jeśli tworzysz aplikację platformy Node.js z dużą liczbą pakietów npm nie jest niczym niezwykłym wystąpiły ostrzeżenia i błędy podczas kompilowania projektu, jeśli co najmniej jeden pakiet został zaktualizowany. Czasami wyniki konflikt wersji lub wersji pakietu jest przestarzała. Oto kilka szybkich porad, aby pomóc w skonfigurowaniu Twojej [package.json](https://docs.npmjs.com/files/package.json) pliku i zrozumieć, co się dzieje po wyświetleniu ostrzeżenia lub błędy. Nie jest to kompletny przewodnik dotyczący *package.json* i koncentruje się tylko na przechowywanie wersji pakietów npm.
+Jeśli tworzysz aplikację Node.js z dużą ilością pakietów npm, nie jest rzadkością, aby uruchomić ostrzeżenia lub błędy podczas tworzenia projektu, jeśli jeden lub więcej pakietów został zaktualizowany. Czasami wyniki konfliktu wersji lub wersja pakietu została przestarzała. Oto kilka szybkich wskazówek, które pomogą Ci skonfigurować plik [package.json](https://docs.npmjs.com/files/package.json) i zrozumieć, co się dzieje, gdy widzisz ostrzeżenia lub błędy. Nie jest to kompletny przewodnik po *package.json* i koncentruje się tylko na wersji pakietu npm.
 
-System przechowywania wersji pakietu npm ma ścisłych zasad. Format wersji następuje tutaj:
+System przechowywania wersji pakietu npm ma surowe zasady. Format wersji jest następujący:
 
 ```
 [major].[minor].[patch]
 ```
 
-Załóżmy, że masz pakiet w swojej aplikacji za pomocą wersji 5.2.1. Wersja główna wynosi 5, wersja pomocnicza jest 2 i poprawka jest 1.
+Załóżmy, że masz pakiet w aplikacji z wersją 5.2.1. Wersja główna to 5, wersja pomocnicza to 2, a łatka to 1.
 
-* W ramach aktualizacji wersji głównych pakiet zawiera nowe funkcje, które są wstecznie niezgodny, który istotne zmiany.
-* Aktualizacja wersji pomocniczej, nowe funkcje zostały dodane do pakietu, które są wstecznie zgodne ze starszymi wersjami pakietu.
-* W ramach aktualizacji poprawki co najmniej jeden poprawki są uwzględniane. Poprawki błędów zawsze są wstecznie zgodne.
+* W aktualizacji wersji głównej pakiet zawiera nowe funkcje, które są niezgodne z tyłu, czyli zmiany podziału.
+* W wersji pomocniczej aktualizacja nowych funkcji zostały dodane do pakietu, które są wstecznie zgodne z wcześniejszymi wersjami pakietu.
+* W aktualizacji poprawki uwzględniono co najmniej jedną poprawkę. Poprawki błędów są zawsze zgodne z powrotem.
 
-Warto zauważyć, że niektóre funkcje pakietu npm mają zależności. Na przykład aby użyć nowej funkcji pakietu kompilatora TypeScript (modułu ładującego usług terminalowych) z webpack, jest możliwe, należy również zaktualizować pakiet npm webpack i interfejs wiersza polecenia webpack.
+Warto zauważyć, że niektóre funkcje pakietu npm mają zależności. Na przykład, aby użyć nowej funkcji pakietu kompilatora TypeScript (ts-loader) z pakietem internetowym, możliwe jest również, że należy zaktualizować pakiet npm webpack i pakiet webpack-cli.
 
-Aby ułatwić zarządzanie, przechowywanie wersji pakietów, npm obsługuje kilka notacji, których można używać w *package.json*. Aby kontrolować typ aktualizacji pakietu, które mają zostać zaakceptowane w swojej aplikacji, można użyć tych notacji.
+Aby ułatwić zarządzanie przechowywaniem wersji pakietów, npm obsługuje kilka notacji, których można użyć w *pliku package.json*. Za pomocą tych notacji można kontrolować typ aktualizacji pakietu, które chcesz zaakceptować w aplikacji.
 
-Załóżmy, że używasz platformy React i musi zawierać **react** i **react-dom** pakietów Menedżera npm. Użytkownik może określić, że na kilka sposobów, w swojej *package.json* pliku. Na przykład użyj dokładną wersję pakietu można określić w następujący sposób.
+Załóżmy, że używasz React i trzeba uwzględnić **react** **i react-dom** npm pakietu. Można określić, że na kilka sposobów w pliku *package.json.* Na przykład można określić użycie dokładnej wersji pakietu w następujący sposób.
 
   ```json
   "dependencies": {
@@ -47,9 +47,9 @@ Załóżmy, że używasz platformy React i musi zawierać **react** i **react-do
   },
   ```
 
-Przy użyciu notacji poprzedniej, npm będą zawsze uzyskać dokładną wersję określoną, 16.4.2.
+Korzystając z poprzedniego notacji, npm zawsze otrzyma dokładną wersję określoną, 16.4.2.
 
-Specjalne notacji służy do ograniczania aktualizacji w celu aktualizacji poprawki (poprawki). W tym przykładzie:
+Możesz użyć specjalnego notacji, aby ograniczyć aktualizacje do aktualizacji poprawek (poprawek). W tym przykładzie:
 
   ```json
   "dependencies": {
@@ -58,9 +58,9 @@ Specjalne notacji służy do ograniczania aktualizacji w celu aktualizacji popra
   },
   ```
 
-znak tyldy (~) umożliwia Poinformuj aktualizacja samego programu npm pakietu, gdy jest zastosowana poprawka. Dlatego npm można zaktualizować react 16.4.2 do 16.4.3 (lub 16.4.4, itp.), ale nie będzie akceptować aktualizację do wersji mniejszym lub większym stopniu. Dlatego 16.4.2 nie zostaną zaktualizowane, aby 16.5.0.
+możesz użyć znaku tyldy (~), aby powiedzieć npm, aby aktualizował pakiet tylko wtedy, gdy jest załatany. Tak, npm może zaktualizować reagować 16.4.2 do 16.4.3 (lub 16.4.4, itp.), ale nie zaakceptuje aktualizacji do wersji głównej lub pomocniczej. Tak więc, 16.4.2 nie zostanie zaktualizowany do 16.5.0.
 
-Można również użyć symbolu daszka (^) do określania, że ten npm można zaktualizować pomocniczy numer wersji.
+Można również użyć symbolu dauszy (^), aby określić, że npm może zaktualizować numer wersji pomocniczej.
 
   ```json
   "dependencies": {
@@ -69,8 +69,8 @@ Można również użyć symbolu daszka (^) do określania, że ten npm można za
   },
   ```
 
-Notacji, npm, można zaktualizować react 16.4.2 do 16.5.0 (lub 16.5.1, 16.6.0, itp.), ale nie będzie akceptować aktualizację do wersji głównej. Dlatego 16.4.2 nie zostaną zaktualizowane, aby 17.0.0.
+Korzystając z tego notacji, npm może zaktualizować react 16.4.2 do 16.5.0 (lub 16.5.1, 16.6.0 itp.), ale nie zaakceptuje aktualizacji wersji głównej. Tak więc, 16.4.2 nie zostanie zaktualizowany do 17.0.0.
 
-Po zaktualizowaniu pakietów npm generuje *lock.json pakietu* pliku, który zawiera listę wersji pakietu npm rzeczywiste używane w aplikacji, w tym wszystkich zagnieżdżonych pakietów. Gdy *package.json* formantów zależności bezpośrednich dla aplikacji, ta funkcja nie kontroluje zagnieżdżonych zależności (inne wymagane przez pakiet npm określonego pakietów npm). Możesz użyć *lock.json pakietu* plik w cyklu rozwoju, jeśli musisz upewnić się, że inne deweloperzy i testerzy korzystają z dokładną pakiety, które są używane, łącznie z pakietów zagnieżdżonych. Aby uzyskać więcej informacji, zobacz [lock.json pakietu](https://docs.npmjs.com/files/package-lock.json) w dokumentacji programu npm.
+Gdy npm aktualizuje pakiety, generuje plik *package-lock.json,* który zawiera listę rzeczywistych wersji pakietu npm używanych w aplikacji, w tym wszystkich pakietów zagnieżdżonych. *Package.json* kontroluje bezpośrednie zależności aplikacji, ale nie kontroluje zagnieżdżonych zależności (innych pakietów npm wymaganych przez określony pakiet npm). Można użyć *pliku package-lock.json* w cyklu dewelopera, jeśli trzeba upewnić się, że inni deweloperzy i testerzy używają dokładnie pakietów, których używasz, w tym pakietów zagnieżdżonych. Aby uzyskać więcej informacji, zobacz [package-lock.json](https://docs.npmjs.com/files/package-lock.json) w dokumentacji npm.
 
-Dla programu Visual Studio *lock.json pakietu* plik nie zostanie dodany do projektu, ale możesz go znaleźć w folderze projektu.
+W programie Visual Studio plik *package-lock.json* nie jest dodawany do projektu, ale można go znaleźć w folderze projektu.

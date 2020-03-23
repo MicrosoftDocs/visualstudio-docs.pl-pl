@@ -15,14 +15,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568688"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
-Wyświetla wartość wybranych rejestrów i pozwala modyfikować listę rejestrów do wyświetlenia.
+Wyświetla wartość wybranych rejestrów i umożliwia modyfikowanie listy rejestrów do wyświetlenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,7 +35,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Przełączniki
 /Display [{`register`&#124;`registerGroup`}...]
 
-Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli nie określono `register` lub `registerGroup`, zostanie wyświetlona domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Na przykład:
+Wyświetla wartości określonego `register` lub `registerGroup`. Jeśli `register` nie `registerGroup` określono lub jest określony, wyświetlana jest domyślna lista rejestrów. Jeśli nie określono przełącznika, zachowanie jest takie samo. Przykład:
 
 `Debug.ListRegisters /Display eax`
 
@@ -43,30 +43,30 @@ jest równoważny
 
 `Debug.ListRegisters eax`
 
-/List
+/Lista
 
-Wyświetla wszystkie grupy rejestrów na liście.
+Wyświetla wszystkie grupy rejestru na liście.
 
 /Watch [{`register`&#124;`registerGroup`}...]
 
-Dodaje do listy co najmniej jedną wartość `register` lub `registerGroup`.
+Dodaje do `register` listy `registerGroup` co najmniej jedną lub więcej wartości.
 
 /Unwatch [{`register`&#124;`registerGroup`}...]
 
-Usuwa co najmniej jedną `register` lub `registerGroup` wartości z listy.
+Usuwa jedną lub `register` `registerGroup` więcej wartości z listy.
 
 ## <a name="remarks"></a>Uwagi
-Alias `r` może być używany zamiast `Debug.ListRegisters`.
+Alias `r` może być używany `Debug.ListRegisters`zamiast pliku .
 
 ## <a name="example"></a>Przykład
-Ten przykład używa `r` aliasu `Debug.ListRegisters`, aby wyświetlić wartości `Flags`grupy rejestru.
+W tym przykładzie użyto aliasu `Debug.ListRegisters` `r` do `Flags`wyświetlania wartości grupy rejestru .
 
 ```cmd
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
 - [Podstawy debugowania: okno rejestrów](../../debugger/debugging-basics-registers-window.md)
-- [Instrukcje: korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)
+- [Porady: korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)

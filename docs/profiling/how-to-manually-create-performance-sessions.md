@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: ręczne tworzenie sesji wydajności | Microsoft Docs'
+title: 'Jak: Ręczne tworzenie sesji wydajności | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,27 +16,27 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778833"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Instrukcje: ręczne tworzenie sesji wydajności
-Sesję wydajności można utworzyć ręcznie. Nie trzeba otwierać projektu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aby to zrobić. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).
+# <a name="how-to-manually-create-performance-sessions"></a>Jak: Ręczne tworzenie sesji wydajności
+Można ręcznie utworzyć sesję wydajności. Nie musisz otwierać projektu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aby to zrobić. Aby uzyskać więcej informacji, zobacz [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md).
 
 ### <a name="to-manually-create-a-performance-session"></a>Aby ręcznie utworzyć sesję wydajności
 
-1. W menu **debugowanie** wskaż polecenie **Profiler**, a następnie **Eksplorator wydajności**, a następnie kliknij pozycję **Nowa sesja wydajności**.
+1. W menu **Debugowanie** wskaż polecenie **Profiler**, a następnie **Pozycję Eksplorator wydajności**, a następnie kliknij polecenie **Nowa sesja wydajności**.
 
-     Do **Eksplorator wydajności**zostanie dodana pusta sesja wydajności.
+     Do **Eksploratora wydajności**dodawana jest pusta sesja wydajności .
 
-2. Kliknij prawym przyciskiem myszy **obiekt docelowy**, a następnie kliknij polecenie **Dodaj docelowy plik binarny**.
+2. Kliknij prawym przyciskiem myszy pozycję **Obiekty docelowe**, a następnie kliknij polecenie **Dodaj plik binarny docelowy**.
 
-3. W oknie dialogowym **Dodaj docelowy plik binarny** wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**.
+3. W oknie dialogowym **Dodawanie pliku binarnego obiektu docelowego** zaznacz nazwę pliku, a następnie kliknij przycisk **Otwórz**.
 
-     Zostanie dodany nowy plik binarny.
+     Dodano nowy plik binarny.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Eksplorator wydajności](../profiling/performance-explorer.md)
 - [Wprowadzenie](../profiling/getting-started-with-performance-tools.md)

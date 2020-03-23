@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595738"
 ---
 # <a name="convert-dialog-box"></a>okno dialogowe konwertowania
 
-Okno dialogowe **Konwersja** zostało użyte w poprzednich wersjach programu Visual Studio i jest obecnie przestarzałe.
+Okno dialogowe **Konwertowanie** było używane w poprzednich wersjach programu Visual Studio i jest teraz przestarzałe.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -1,5 +1,5 @@
 ---
-title: Zdarzenia niestandardowe ETW natywnej sterty | Dokumentacja firmy Microsoft
+title: Niestandardowe zdarzenia sterty ETW natywnej | Dokumenty firmy Microsoft
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -11,19 +11,19 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62552964"
 ---
 # <a name="custom-native-etw-heap-events"></a>Niestandardowe zdarzenia ETW sterty natywnej
 
-Program Visual Studio zawiera szereg [profilowania i narzędzia diagnostyczne](../profiling/profiling-feature-tour.md), łącznie z profilera pamięci natywnej.  Przechwytuje ten program profilujący [zdarzenia ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od dostawcy sterty i umożliwia analizowanie jak pamięci są przydzielone i używane.  Domyślnie to narzędzie tylko analizować przydziałów wykonanych ze standardowego stosu Windows i nie będzie można wyświetlić alokacje poza tym sterty natywnej.
+Visual Studio zawiera wiele [narzędzi profilowania i diagnostyki,](../profiling/profiling-feature-tour.md)w tym natywnego profilera pamięci.  Ten profiler haki [etw zdarzeń](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od dostawcy sterty i zapewnia analizę, jak pamięć jest przydzielany i używany.  Domyślnie to narzędzie może analizować tylko alokacje wykonane ze standardowej sterty systemu Windows, a wszelkie alokacje poza tym macierzystym stosem nie będą wyświetlane.
 
-Istnieje wiele przypadków, w których warto używać własnych niestandardowych sterty i uniknąć obciążenie alokacji ze standardowego stosu.  Na przykład można użyć [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) do przydzielania dużej ilości pamięci na początku aplikację lub grę, a następnie Zarządzaj własne bloki w ramach tej listy.  W tym scenariuszu narzędzie memory profiler widział tylko tej początkowej alokacji i nie niestandardowych zarządzania wykonywane wewnątrz fragmentu pamięci.  Jednak przy użyciu dostawcy funkcji ETW sterty natywnej niestandardowego, można pozwolić narzędzie wiedzieć o dowolnych alokacji, które wykonujesz poza standardowe sterty.
+Istnieje wiele przypadków, w których można użyć własnego sterty niestandardowej i uniknąć narzutów alokacji ze standardowego stosu.  Na przykład można użyć [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) przeznaczyć dużą ilość pamięci na początku aplikacji lub gry, a następnie zarządzać własne bloki w tej liście.  W tym scenariuszu narzędzie profiler pamięci będzie tylko zobaczyć, że alokacja początkowa, a nie niestandardowe zarządzanie wykonane wewnątrz fragmentu pamięci.  Jednak za pomocą dostawcy ETW natywnej sterty niestandardowej można poinformować narzędzie o wszelkich alokacjach, które są wykonane poza standardową stertą.
 
-Na przykład w projekcie podobnie do poniższego gdzie `MemoryPool` niestandardowe sterty jest pojedynczą alokację byłaby widoczna tylko na stosie Windows:
+Na przykład w projekcie, takim `MemoryPool` jak następujące, gdzie jest stos niestandardowy, będzie wyświetlany tylko pojedyncza alokacja na stercie systemu Windows:
 
 ```cpp
 class Foo
@@ -45,46 +45,46 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Migawka [użycie pamięci](../profiling/memory-usage.md) narzędzia bez sterty niestandardowe śledzenia będą wyświetlane tylko alokacji jednobajtowych 8192 i żaden dokonywane przez pulę przydziały niestandardowe:
+Migawka z narzędzia [Użycie pamięci](../profiling/memory-usage.md) bez niestandardowego śledzenia sterty pokaże tylko pojedynczą alokację bajtów 8192 i żadna z alokacji niestandardowych dokonywanych przez pulę:
 
-![Alokacja sterty dla Windows](media/heap-example-windows-heap.png)
+![Alokacja sterty systemu Windows](media/heap-example-windows-heap.png)
 
-Wykonując poniższe kroki, możemy użyć tego samego narzędzia do śledzenia usgae pamięci w naszym niestandardowe sterty.
+Wykonując następujące kroki, możemy użyć tego samego narzędzia do śledzenia usgae pamięci w naszym stercie niestandardowej.
 
-## <a name="how-to-use"></a>Sposób użycia
+## <a name="how-to-use"></a>Jak stosować
 
-Ta biblioteka może bez problemów używany w językach C i C++.
+Ta biblioteka może być łatwo używana w językach C i C++.
 
-1. Należy dołączyć nagłówek dla dostawcy ETW sterty niestandardowe:
+1. Dołącz nagłówek dostawcy niestandardowego dostawcy ETW sterty niestandardowej:
 
    ```cpp
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. Dodaj `__declspec(allocator)` dekoratora żadnych funkcji w Menedżerze swoje niestandardowe sterty, która zwraca wskaźnik do nowo przydzielonego stosu pamięci.  Tego dekoratora umożliwia narzędzia prawidłowo identyfikować typ pamięci są zwracane.  Na przykład:
+1. Dodaj `__declspec(allocator)` dekoratora do dowolnej funkcji w menedżerze sterty niestandardowej, która zwraca wskaźnik do nowo przydzielonej pamięci sterty.  Ten dekorator pozwala narzędziu poprawnie zidentyfikować typ zwracanej pamięci.  Przykład:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
 
    > [!NOTE]
-   > Tego dekoratora poinformuje kompilator, że ta funkcja jest wywołaniem alokatora.  Każde wywołanie funkcji zwróci adres miejsca wywołania, rozmiar instrukcji wywołania i typeId nowy obiekt do nowego `S_HEAPALLOCSITE` symboli.  Gdy stos wywołań jest przydzielany, Windows będzie emitować zdarzenia ETW za pomocą tych informacji.  Narzędzie memory profiler przedstawia stos wywołań wyszukiwania pasującego adres zwrotny `S_HEAPALLOCSITE` symboli i typeId informacje zawarte w symbolu jest używana do wyświetlania typ środowiska uruchomieniowego alokacji.
+   > Ten dekorator powie kompilator, że ta funkcja jest wywołaniem alokatora.  Każde wywołanie funkcji spowoduje wysunie adres callite, rozmiar instrukcji wywołania i typeId `S_HEAPALLOCSITE` nowego obiektu do nowego symbolu.  Po przydzieleniu przydzieleniu przydzielynia połączenia system Windows emituje zdarzenie ETW z tymi informacjami.  Narzędzie profilera pamięci przechodzi callstack szuka adresu `S_HEAPALLOCSITE` zwrotnego pasujące do symbolu i typeId informacji w symbolu jest używany do wyświetlania typu środowiska wykonawczego alokacji.
    >
-   > Krótko mówiąc, oznacza to, że wywołanie, który wygląda jak `(B*)(A*)MyMalloc(sizeof(B))` pojawią się w narzędziu jako typu `B`, a nie `void` lub `A`.
+   > Krótko mówiąc, oznacza to, `(B*)(A*)MyMalloc(sizeof(B))` że połączenie, które wygląda, `B`pojawi `void` się `A`w narzędziu jako typ , nie lub .
 
-1. Dla języka C++, należy utworzyć `VSHeapTracker::CHeapTracker` obiektu, podając nazwę na stosie, w którym będą widoczne w narzędziu profilowania:
+1. W przypadku języka C++ utwórz `VSHeapTracker::CHeapTracker` obiekt, podając nazwę sterty, która pojawi się w narzędziu profilowania:
 
    ```cpp
    auto pHeapTracker = std::make_unique<VSHeapTracker::CHeapTracker>("MyCustomHeap");
    ```
 
-   Jeśli używasz języka C, należy użyć `OpenHeapTracker` zamiast tego funkcji.  Ta funkcja zwraca uchwyt, który będzie używany podczas wywoływania innych funkcji śledzenia:
+   Jeśli używasz języka C, użyj `OpenHeapTracker` tej funkcji.  Ta funkcja zwróci dojście, którego będziesz używać podczas wywoływania innych funkcji śledzenia:
 
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
 
-1. Podczas przydzielania pamięci przy użyciu niestandardowych funkcji, należy wywołać `AllocateEvent` (C++) lub `VSHeapTrackerAllocateEvent` metody (C), przekazując we wskaźniku do pamięci oraz ich rozmiar, aby śledzić przydział:
+1. Podczas przydzielania pamięci przy użyciu funkcji `AllocateEvent` niestandardowej, wywołać (C++) lub `VSHeapTrackerAllocateEvent` (C) metoda, przekazywanie w wskaźniku do pamięci i jej rozmiar, aby śledzić alokacji:
 
    ```cpp
    pHeapTracker->AllocateEvent(memPtr, size);
@@ -97,9 +97,9 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    ```
 
    > [!IMPORTANT]
-   > Nie zapomnij tag funkcji za pomocą niestandardowego zarządcy `__declspec(allocator)` dekoratora wcześniejszym opisem.
+   > Nie zapomnij oznaczyć niestandardowej funkcji alokatora za pomocą opisanego `__declspec(allocator)` wcześniej dekoratora.
 
-1. Gdy Trwa cofanie alokacji pamięci za pomocą funkcji niestandardowych, należy wywołać `DeallocateEvent` (C++) lub `VSHeapTracerDeallocateEvent` — funkcja (C), przekazując we wskaźniku do pamięci, aby śledzić dezalokację:
+1. Podczas przydzielania pamięci przy użyciu funkcji `DeallocateEvent` niestandardowej, wywołać (C++) lub `VSHeapTracerDeallocateEvent` (C) funkcji, przechodząc w wskaźniku do pamięci, aby śledzić alokacji:
 
    ```cpp
    pHeapTracker->DeallocateEvent(memPtr);
@@ -111,7 +111,7 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
    ```
 
-1. Gdy ponowne przydzielanie pamięci przy użyciu niestandardowych funkcji, należy wywołać `ReallocateEvent` (C++) lub `VSHeapReallocateEvent` metody (C), przekazując wskaźnik do nowej pamięci, rozmiar alokacji i wskaźnik do starego pamięci:
+1. Podczas ponownego przydzielania pamięci przy użyciu `ReallocateEvent` funkcji niestandardowej, `VSHeapReallocateEvent` wywołać (C++) lub (C) metoda, przekazywanie wskaźnika do nowej pamięci, rozmiar alokacji i wskaźnik do starej pamięci:
 
    ```cpp
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
@@ -123,7 +123,7 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
    ```
 
-1. Na koniec, aby zamknąć i wyczyścić śledzenie stosu niestandardowych w języku C++, należy użyć `CHeapTracker` destruktora, ręcznie lub za pośrednictwem standardowe zasady zakresu, lub `CloseHeapTracker` funkcji w C:
+1. Na koniec, aby zamknąć i oczyścić niestandardowy moduł śledzenia `CHeapTracker` sterty w języku C++, użyj destruktora ręcznie lub za pomocą standardowych reguł określania zakresu lub `CloseHeapTracker` funkcji w języku C:
 
    ```cpp
    delete pHeapTracker;
@@ -136,25 +136,25 @@ Ta biblioteka może bez problemów używany w językach C i C++.
    ```
 
 ## <a name="track-memory-usage"></a>Śledzenie użycia pamięci
-Za pomocą tych wywołań w miejscu użycia niestandardowego sterty teraz można śledzić przy użyciu standardu **użycie pamięci** narzędzia w programie Visual Studio.  Aby uzyskać więcej informacji na temat używania tego narzędzia, zobacz [użycie pamięci](../profiling/memory-usage.md) dokumentacji. Upewnij się, że włączono profilowanie sterty z migawkami, w przeciwnym razie nie będzie mógł przeglądać użycie niestandardowych sterty wyświetlane.
+Z tych wywołań w miejscu, niestandardowe użycie sterty można teraz śledzić przy użyciu standardowego narzędzia **użycia pamięci** w programie Visual Studio.  Aby uzyskać więcej informacji na temat korzystania z tego narzędzia, zobacz dokumentację [użycia pamięci.](../profiling/memory-usage.md) Upewnij się, że włączono profilowanie sterty za pomocą migawek, w przeciwnym razie nie zostanie wyświetlone niestandardowe użycie sterty.
 
 ![Włącz profilowanie sterty](media/heap-enable-heap.png)
 
-Aby wyświetlić swoje niestandardowe sterty, śledzenie, użyj **sterty** listy rozwijanej znajduje się w prawym górnym rogu **migawki** okna, aby zmienić widok z *sterta NT* do własnego stosu jako o nazwie wcześniej.
+Aby wyświetlić niestandardowe śledzenie sterty, użyj listy rozwijanej **Sterta** znajdującej się w prawym górnym rogu okna **Migawka,** aby zmienić widok z *sterty NT* na własną stertę, jak nazwano wcześniej.
 
 ![Wybór sterty](media/heap-example-custom-heap.png)
 
-Za pomocą powyższego przykładu kodu za pomocą `MemoryPool` tworzenia `VSHeapTracker::CHeapTracker` obiektu, a własną `allocate` teraz podczas wywoływania metody `AllocateEvent` metody będą teraz widoczne wynik tego niestandardowego alokacji przedstawiający trzy wystąpienia sumowanie 24 bajty z Typ `Foo`.
+Korzystając z powyższego `MemoryPool` przykładu `VSHeapTracker::CHeapTracker` kodu, z `allocate` utworzeniem obiektu `AllocateEvent` i naszą własną metodą teraz wywołującą metodę, można teraz zobaczyć wynik tej `Foo`alokacji niestandardowej, pokazując trzy wystąpienia o łącznej liczbie 24 bajtów, wszystkie typu .
 
-Wartość domyślna *sterta NT* sterty wygląda tak samo jak wcześniej dodając naszych `CHeapTracker` obiektu.
+Domyślna *sterty sterty NT* wygląda tak samo jak `CHeapTracker` wcześniej, z dodatkiem naszego obiektu.
 
-![Sterta NT za pomocą śledzenia](media/heap-example-windows-heap.png)
+![Sterta NT z trackerem](media/heap-example-windows-heap.png)
 
-Przy użyciu standardowego stosu Windows, można używać to narzędzie do porównywania migawek i poszukaj przecieków i uszkodzenie w niestandardowych stosu, który jest opisany w głównym [użycie pamięci](../profiling/memory-usage.md) dokumentacji.
+Podobnie jak w przypadku standardowej sterty systemu Windows, można również użyć tego narzędzia do porównywania migawek i wyszukiwania przecieków i uszkodzenia w stercie niestandardowej, która jest opisana w głównej dokumentacji [użycia pamięci.](../profiling/memory-usage.md)
 
 > [!TIP]
-> Program Visual Studio zawiera także **użycie pamięci** narzędzia w **profilowanie wydajności** zestawu narzędzi, które zostały włączone w **debugowania**  >   **Profiler wydajności** opcji menu lub **Alt**+**F2** za pomocą klawiatury w połączeniu.  Ta funkcja nie obejmuje śledzenia stosu i nie będą wyświetlane na swojej niestandardowej sterty, zgodnie z opisem w tym miejscu.  Tylko **narzędzia diagnostyczne** okno, które można włączyć za pomocą **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**  menu lub **Ctrl**+**Alt**+**F2** połączenie za pomocą klawiatury, zawiera tę funkcję.
+> Visual Studio zawiera również narzędzie **Użycie pamięci** w zestawie narzędzi **profilowania wydajności,** który jest włączony **Alt**z opcji menu+ **debugowania** > **profilera wydajności** lub kombinacji klawiatury Alt**F2.**  Ta funkcja nie obejmuje śledzenia sterty i nie będzie wyświetlać niestandardowego stosu, jak opisano w tym miejscu.  Tylko okno **Narzędzia diagnostyczne,** które można włączyć za pomocą menu **Debugowanie** > **narzędzi diagnostycznych pokazu** systemu**Windows** > lub kombinacji klawiatury **Ctrl**+**Alt**+**F2,** zawiera tę funkcję.
 
-## <a name="see-also"></a>Zobacz także
-[Pierwsze spojrzenie na profilowanie narzędzia](../profiling/profiling-feature-tour.md)
-[użycie pamięci](../profiling/memory-usage.md)
+## <a name="see-also"></a>Zobacz też
+[Pierwsze spojrzenie na narzędzia](../profiling/profiling-feature-tour.md)
+do profilowania[Użycie pamięci](../profiling/memory-usage.md)

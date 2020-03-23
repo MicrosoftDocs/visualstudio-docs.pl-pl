@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569858"
 ---
-# <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv. exe)
+# <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
-**Nowość dla programu Visual Studio 2019 w wersji 16,1**
+**Nowość dla programu Visual Studio 2019 w wersji 16.1**
 
-Otwiera określone rozwiązanie bez ładowania żadnych projektów. Aby uzyskać więcej informacji, zobacz [przefiltrowane rozwiązania w programie Visual Studio](../filtered-solutions.md).
+Otwiera określone rozwiązanie bez ładowania żadnych projektów. Aby uzyskać więcej informacji, zobacz [filtrowane rozwiązania w programie Visual Studio](../filtered-solutions.md).
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,13 +38,13 @@ Wymagany. Pełna ścieżka i nazwa rozwiązania, które ma zostać otwarte.
 
 ## <a name="example"></a>Przykład
 
-Przykład otwiera rozwiązanie MySln. sln bez ładowania żadnych projektów.
+W przykładzie otwiera rozwiązanie MySln.sln bez ładowania żadnych projektów.
 
 ```shell
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Rozwiązania filtrowane w programie Visual Studio](../filtered-solutions.md)
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Filtrowane rozwiązania w programie Visual Studio](../filtered-solutions.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

@@ -1,6 +1,6 @@
 ---
 title: 'Samouczek: Otwieranie projektu z repozytorium'
-description: Dowiedz się, jak otworzyć projekt w repozytorium Git lub Azure DevOps za pomocą programu Visual Studio.
+description: Dowiedz się, jak otworzyć projekt w repozytorium Git lub Azure DevOps przy użyciu programu Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
 ms.technology: vs-ide-general
@@ -15,25 +15,25 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "70180437"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Samouczek: Otwieranie projektu z repozytorium
 
-W tym samouczku użyjesz programu Visual Studio, aby połączyć się z repozytorium po raz pierwszy, a następnie otworzyć projekt.
+W tym samouczku użyjesz programu Visual Studio, aby połączyć się z repozytorium po raz pierwszy, a następnie otworzyć projekt z niego.
 
 ::: moniker range="vs-2017"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads) strony, aby zainstalować go za darmo.
+Jeśli program Visual Studio nie został jeszcze zainstalowany, przejdź do strony [pobierania programu Visual Studio,](https://visualstudio.microsoft.com/downloads) aby zainstalować ją bezpłatnie.
 
 ::: moniker-end
 
@@ -43,55 +43,55 @@ Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [pro
 
 1. Otwórz program Visual Studio 2017.
 
-1. Na górnym pasku menu wybierz pozycję **plik** > **Otwórz** > **Otwórz z kontroli źródła**.
+1. Na górnym pasku menu wybierz pozycję **Otwórz plik** > **Open** > **z kontroli źródła**.
 
-   Zostanie otwarte okienko **Team Explorer-Connect** .
+   Zostanie otwarte okienko **Eksplorator zespołu — połącz.**
 
-    ![Okno Team Explorer w środowisku IDE programu Visual Studio](./media/open-proj-repo-team-explorer.png)
+    ![Okno Eksploratora zespołu w środowisku IDE programu Visual Studio](./media/open-proj-repo-team-explorer.png)
 
-1. W sekcji **lokalne repozytoria Git** wybierz **klon**.
+1. W sekcji **Lokalne repozytoria Git** wybierz pozycję **Klonuj**.
 
-    ![Wybierz klon z lokalnej sekcji repozytoria Git](./media/open-proj-repo-local-git-repo-clone.png)
+    ![Wybierz pozycję Klonuj z sekcji Lokalne repozytoria Git](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. W polu tekstowym ***wprowadź adres URL repozytorium git do klonowania***wpisz lub wklej adres URL repozytorium, a następnie naciśnij klawisz **Enter**. (Może pojawić się monit o zalogowanie się do usługi GitHub; Jeśli tak, zrób to).
+1. W polu z ***podaniem Wprowadź adres URL repozytorium Git do klonowania***, wpisz lub wklej adres URL repozytorium, a następnie naciśnij **klawisz Enter**. (Może pojawić się monit o zalogowanie się do usługi GitHub; jeśli tak, zrób to).
 
-   Po sklonowaniu repozytorium przez program Visual Studio Team Explorer zamyka się i Eksplorator rozwiązań otwiera. Zostanie wyświetlony komunikat z informacją, że *kliknij pozycję rozwiązania i foldery powyżej, aby wyświetlić listę rozwiązań*. Wybierz **rozwiązania i foldery**.
+   Po sklonowanie repozytorium w programie Visual Studio, Eksplorator zespołu zostanie zamknięty i zostanie otwarty Eksplorator rozwiązań. Pojawi się komunikat *Click on Solutions and Folders powyżej, aby wyświetlić listę rozwiązań*. Wybierz **rozwiązania i foldery**.
 
-   ![Wybierz pozycję "rozwiązania i foldery" z Eksplorator rozwiązań](./media/open-proj-repo-github-solutions-folders.png)
+   ![Wybierz "Rozwiązania i foldery" w Eksploratorze rozwiązań](./media/open-proj-repo-github-solutions-folders.png)
 
-1. Jeśli masz dostępny plik rozwiązania, zostanie on wyświetlony w menu "roztwory i foldery". Wybierz go, a program Visual Studio otwiera Twoje rozwiązanie.
+1. Jeśli masz dostępny plik rozwiązania, pojawi się on w menu wysuwu "Rozwiązania i foldery". Wybierz go, a program Visual Studio otworzy rozwiązanie.
 
-   ![Wybierz, co chcesz otworzyć z listy rozwijanej Eksplorator rozwiązań](./media/open-proj-repo-github-solutions-folders-picker.png)
+   ![Wybierz, co chcesz otworzyć z listy rozwijanej Eksploratora rozwiązań](./media/open-proj-repo-github-solutions-folders-picker.png)
 
-   Jeśli w repozytorium nie ma pliku rozwiązania (w odniesieniu do pliku. sln), w menu rozwijanym zostanie wyświetlona informacja "nie znaleziono rozwiązań". Można jednak kliknąć dwukrotnie dowolny plik z menu folder, aby otworzyć go w edytorze kodu programu Visual Studio.
+   Jeśli nie masz pliku rozwiązania (w szczególności pliku .sln) w repozytorium, menu wysuń powie "Nie znaleziono rozwiązań". Można jednak dwukrotnie kliknąć dowolny plik z menu folderów, aby otworzyć go w edytorze kodu programu Visual Studio.
 
-### <a name="review-your-work"></a>Przejrzyj swoją służbę
+### <a name="review-your-work"></a>Przejrzyj swoją pracę
 
-Wyświetl poniższą animację, aby sprawdzić pracę zakończono w poprzedniej sekcji.
+Wyświetl następującą animację, aby sprawdzić pracę wykonany w poprzedniej sekcji.
 
-   ![Animacja otwierania projektu w repozytorium GitHub przy użyciu programu Visual Studio](./media/open-project-from-github.gif)
+   ![Animacja otwierania projektu w repozytorium Usługi GitHub przy użyciu programu Visual Studio](./media/open-project-from-github.gif)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Otwórz program Visual Studio 2019.
 
-1. W oknie uruchamiania wybierz klonowanie **lub wyewidencjonowywanie kodu**.
+1. W oknie startowym wybierz pozycję **Klonuj lub wyewidencjonuj kod**.
 
-   ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Wyświetlanie okna "Tworzenie nowego projektu"](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. Wprowadź lub wpisz lokalizację repozytorium, a następnie wybierz **klon**.
+1. Wprowadź lub wpisz lokalizację repozytorium, a następnie wybierz pozycję **Klonuj**.
 
-   ![Wyświetl okno "klonowanie lub Wyewidencjonuj kod"](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![Wyświetlanie okna "Klonuj lub kod realizacji transakcji"](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
-   Program Visual Studio otwiera projekt z repozytorium.
+   Visual Studio otwiera projekt z repozytorium.
 
-1. Jeśli masz dostępny plik rozwiązania, zostanie on wyświetlony w menu "roztwory i foldery". Wybierz go, a program Visual Studio otwiera Twoje rozwiązanie.
+1. Jeśli masz dostępny plik rozwiązania, pojawi się on w menu wysuwu "Rozwiązania i foldery". Wybierz go, a program Visual Studio otworzy rozwiązanie.
 
-   ![Wybierz, co chcesz otworzyć z listy rozwijanej Eksplorator rozwiązań](./media/open-proj-repo-github-solutions-folders-picker.png)
+   ![Wybierz, co chcesz otworzyć z listy rozwijanej Eksploratora rozwiązań](./media/open-proj-repo-github-solutions-folders-picker.png)
 
-   Jeśli w repozytorium nie ma pliku rozwiązania (w odniesieniu do pliku. sln), w menu rozwijanym zostanie wyświetlona informacja "nie znaleziono rozwiązań". Można jednak kliknąć dwukrotnie dowolny plik z menu folder, aby otworzyć go w edytorze kodu programu Visual Studio.
+   Jeśli nie masz pliku rozwiązania (w szczególności pliku .sln) w repozytorium, menu wysuń powie "Nie znaleziono rozwiązań". Można jednak dwukrotnie kliknąć dowolny plik z menu folderów, aby otworzyć go w edytorze kodu programu Visual Studio.
 
 ::: moniker-end
 
@@ -101,89 +101,89 @@ Wyświetl poniższą animację, aby sprawdzić pracę zakończono w poprzedniej 
 
 1. Otwórz program Visual Studio 2017.
 
-1. Na górnym pasku menu wybierz pozycję **plik** > **Otwórz** > **Otwórz z kontroli źródła**.
+1. Na górnym pasku menu wybierz pozycję **Otwórz plik** > **Open** > **z kontroli źródła**.
 
-   Zostanie otwarte okienko **Team Explorer-Connect** .
+   Zostanie otwarte okienko **Eksplorator zespołu — połącz.**
 
-    ![Okno Team Explorer w środowisku IDE programu Visual Studio](./media/open-proj-repo-team-explorer.png)
+    ![Okno Eksploratora zespołu w środowisku IDE programu Visual Studio](./media/open-proj-repo-team-explorer.png)
 
-1. Poniżej przedstawiono dwa sposoby nawiązywania połączenia z repozytorium usługi Azure DevOps:
+1. Oto dwa sposoby nawiązanie połączenia z repozytorium usługi Azure DevOps:
 
-      - W sekcji **dostawcy usług hostowanych** wybierz pozycję **Połącz...** .
+      - W sekcji **Hosted Service Providers (Hosted Service Providers)** wybierz pozycję **Połącz...**.
 
-        ![Sekcja dostawcy usług hostowanych okna Team Explorer w środowisku IDE programu Visual Studio](./media/open-proj-repo-azure-devops.png)
+        ![Sekcja Hosted Service Providers okna Eksploratora zespołu w środowisku IDE programu Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Z listy rozwijanej **Zarządzaj połączeniami** wybierz pozycję **Połącz z projektem...** .
+      - Z listy rozwijanej **Zarządzanie połączeniami** wybierz pozycję **Połącz z projektem...**.
 
-        ![Sekcja zarządzanie połączeniami okna Team Explorer w środowisku IDE programu Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
+        ![Sekcja Zarządzanie połączeniami okna Eksploratora zespołu w środowisku IDE programu Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. W oknie dialogowym **Połącz z projektem** wybierz repozytorium, z którym chcesz nawiązać połączenie, a następnie wybierz **klon**.
+1. W oknie **dialogowym Łączenie z projektem** wybierz repozytorium, z którego chcesz się połączyć, a następnie wybierz pozycję **Klonuj**.
 
-      ![Okno dialogowe "łączenie z projektem", które zostało wygenerowane z programu Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Okno dialogowe "Łączenie się z projektem", które jest generowane z programu Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
-    > Elementy wyświetlane w polu listy zależą od repozytoriów usługi Azure DevOps, do których masz dostęp.
+    > To, co widzisz w polu listy, zależy od repozytoriów programu Azure DevOps, do których masz dostęp.
 
-1. Po sklonowaniu repozytorium przez program Visual Studio Team Explorer zamyka się i Eksplorator rozwiązań otwiera. Zostanie wyświetlony komunikat z informacją, że *kliknij pozycję rozwiązania i foldery powyżej, aby wyświetlić listę rozwiązań*. Wybierz **rozwiązania i foldery**.
+1. Po sklonowanie repozytorium w programie Visual Studio, Eksplorator zespołu zostanie zamknięty i zostanie otwarty Eksplorator rozwiązań. Pojawi się komunikat *Click on Solutions and Folders powyżej, aby wyświetlić listę rozwiązań*. Wybierz **rozwiązania i foldery**.
 
-      ![Powiadomienie "rozwiązania i foldery" z Team Explorer w programie Visual Studio](./media/open-proj-repo-solutions-folders.png)
+      ![Powiadomienie "Rozwiązania i foldery" z Eksploratora zespołu w programie Visual Studio](./media/open-proj-repo-solutions-folders.png)
 
-   Plik rozwiązania (w specjalnym pliku. sln) pojawi się w menu rozwijanym "rozwiązania i foldery". Wybierz go, a program Visual Studio otwiera Twoje rozwiązanie.
+   Plik rozwiązania (w szczególności plik .sln), pojawi się w menu wysuwu "Rozwiązania i foldery". Wybierz go, a program Visual Studio otworzy rozwiązanie.
 
-   Jeśli w repozytorium nie ma pliku rozwiązania, w menu rozwijanym zostanie wyświetlona informacja "nie znaleziono rozwiązań". Można jednak kliknąć dwukrotnie dowolny plik z menu folder, aby otworzyć go w edytorze kodu programu Visual Studio.
+   Jeśli nie masz pliku rozwiązania w repozytorium, menu wysuń powie "Nie znaleziono rozwiązań". Można jednak dwukrotnie kliknąć dowolny plik z menu folderów, aby otworzyć go w edytorze kodu programu Visual Studio.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. Open Visual Studio 2019.
+1. Otwórz program Visual Studio 2019.
 
-1. W oknie uruchamiania wybierz klonowanie **lub wyewidencjonowywanie kodu**.
+1. W oknie startowym wybierz pozycję **Klonuj lub wyewidencjonuj kod**.
 
-   ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+   ![Wyświetlanie okna "Tworzenie nowego projektu"](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
 1. W sekcji **Przeglądaj repozytorium** wybierz pozycję **Azure DevOps**.
 
-   ![Wyświetl okno "klonowanie lub wyewidencjonowywanie kodu"](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![Wyświetl okno "Klonuj lub wyewidencjonuj kod"](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
-   Jeśli zobaczysz okno logowania, zaloguj się do swojego konta.
+   Jeśli widzisz okno logowania, zaloguj się na swoje konto.
 
-1. W oknie dialogowym **Połącz z projektem** wybierz repozytorium, z którym chcesz nawiązać połączenie, a następnie wybierz **klon**.
+1. W oknie **dialogowym Łączenie z projektem** wybierz repozytorium, z którego chcesz się połączyć, a następnie wybierz pozycję **Klonuj**.
 
-      ![Okno dialogowe "łączenie z projektem", które zostało wygenerowane z programu Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+      ![Okno dialogowe "Łączenie się z projektem", które jest generowane z programu Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
-    > Elementy wyświetlane w polu listy zależą od repozytoriów usługi Azure DevOps, do których masz dostęp.
+    > To, co widzisz w polu listy, zależy od repozytoriów programu Azure DevOps, do których masz dostęp.
 
-   Program Visual Studio otwiera **Team Explorer** i zostanie wyświetlone powiadomienie po zakończeniu klonowania.
+   Visual Studio otwiera **Eksploratora zespołu** i po zakończeniu klonowania zostanie wyświetlone powiadomienie.
 
-     ![Okno Team Explorer w programie Visual Studio po ukończeniu klonowania](./media/vs-2019/clone-complete-azure-devops.png)
+     ![Okno Eksploratora zespołu w programie Visual Studio po zakończeniu klonowania](./media/vs-2019/clone-complete-azure-devops.png)
 
-1. Aby wyświetlić foldery i pliki, wybierz łącze **Pokaż widok folderu** .
+1. Aby wyświetlić foldery i pliki, wybierz łącze **Pokaż widok folderu.**
 
-     ![Sekcja Solutions okna Team Explorer w programie Visual Studio po ukończeniu klonowania](./media/vs-2019/show-folder-view-azure-devops.png)
+     ![Sekcja Rozwiązania okna Eksploratora zespołu w programie Visual Studio po zakończeniu klonowania](./media/vs-2019/show-folder-view-azure-devops.png)
 
-     Program Visual Studio otwiera **Eksplorator rozwiązań**.
+     Program Visual Studio otwiera **Eksploratora rozwiązań**.
 
-1. Wybierz łącze **rozwiązania i foldery** , aby wyszukać plik rozwiązania (w odniesieniu do pliku. sln), aby go otworzyć.
+1. Wybierz **łącze Rozwiązania i foldery, aby wyszukać** plik rozwiązania (w szczególności plik .sln), który ma być otwarty.
 
-      ![Powiadomienie "rozwiązania i foldery" z Team Explorer w programie Visual Studio](./media/open-proj-repo-solutions-folders.png)
+      ![Powiadomienie "Rozwiązania i foldery" z Eksploratora zespołu w programie Visual Studio](./media/open-proj-repo-solutions-folders.png)
 
-   Jeśli w repozytorium nie ma pliku rozwiązania, zostanie wyświetlony komunikat "nie znaleziono rozwiązań". Można jednak kliknąć dwukrotnie dowolny plik z menu folder, aby otworzyć go w edytorze kodu programu Visual Studio.
+   Jeśli nie masz pliku rozwiązania w repozytorium, zostanie wyświetlony komunikat "Nie znaleziono rozwiązań". Można jednak dwukrotnie kliknąć dowolny plik z menu folderów, aby otworzyć go w edytorze kodu programu Visual Studio.
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli wszystko jest gotowe do kodu w programie Visual Studio, szczegółowe do dowolnego z następujących samouczków dotyczących języka:
+Jeśli chcesz zakodować program Visual Studio, zapoznaj się z dowolnym z następujących samouczków specyficznych dla języka:
 
-- [Visual Studio tutorials | **C#** ](./csharp/index.yml)
-- [Samouczki programu Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Samouczki programu Visual Studio |**C++**
-- [Samouczki programu Visual Studio | Język **Python**](/visualstudio/python/)
-- [Samouczki programu Visual Studio | **JavaScript**, **TypeScript**i **Node. js**](/visualstudio/javascript/)
+- [Samouczki programu Visual Studio | **C#**](./csharp/index.yml)
+- [Samouczki programu Visual Studio | **Visual Basic (Visual Basic)**](./visual-basic/index.yml)
+- [Samouczki programu Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
+- [Samouczki programu Visual Studio | **Python**](/visualstudio/python/)
+- [Samouczki programu Visual Studio | **JavaScript**, **TypeScript**i **Node.js**](/visualstudio/javascript/)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Azure DevOps Services: Wprowadzenie do Azure Repos i programu Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: Rozpoczynanie pracy z usługą Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Usługi Azure DevOps: wprowadzenie do usługi Azure Repos i visual studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: Wprowadzenie do usługi Azure DevOps](/learn/modules/get-started-with-devops/)

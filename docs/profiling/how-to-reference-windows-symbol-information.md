@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: odwołania do informacji o symbolach systemu Windows | Microsoft Docs'
+title: 'Jak: Odwoływanie się do informacji o symbolach systemu Windows | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,38 +15,38 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74774916"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Instrukcje: odwołania do informacji o symbolach systemu Windows
-Program Visual Studio narzędzia profilowania używać symbolu (. *PDB*) do rozpoznawania nazw symbolicznych, takich jak nazwy funkcji w plikach binarnych programu. Możesz wykonać następujące kroki, aby automatycznie pobrać i zaktualizować poprawną. pliki *PDB* dla wersji systemu Windows na komputerze lokalnym.
+# <a name="how-to-reference-windows-symbol-information"></a>Instrukcje: odwołania do informacji o symbolach w systemie Windows
+Narzędzia do profilowania programu Visual Studio używają symbolu (.* pdb)* do rozpoznawania nazw symbolicznych, takich jak nazwy funkcji w plikach binarnych programu. Możesz wykonać następujące kroki, aby automatycznie pobrać i zaktualizować poprawny plik . *pliki pdb* dla wersji systemu Windows na komputerze lokalnym.
 
 > [!NOTE]
-> To ustawienie nie ma wpływu na istniejące raporty. Tylko raporty utworzone po określeniu serwera symboli będą miały informacje o symbolach.
+> To ustawienie nie ma wpływu na istniejące raporty. Tylko raporty utworzone po określeniu serwera symboli będą miały informacje o symbolu.
 
- Aby uzyskać więcej informacji, zobacz [Określanie symbolu (. *PDB*) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+ Aby uzyskać więcej informacji, zobacz [Określanie symbolu (.* pdb*) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ### <a name="to-use-the-microsoft-symbol-server"></a>Aby użyć serwera symboli firmy Microsoft
 
-1. Utwórz folder, który będzie zawierać informacje o pliku symboli, takie jak C:\SymbolCache.
+1. Utwórz folder zawierający informacje o pliku symbolu, takie jak C:\SymbolCache.
 
-2. W menu **Narzędzia** kliknij pozycję **Opcje**.
+2. W menu **Tools** (Narzędzia) kliknij pozycję **Options** (Opcje).
 
-     Zostanie wyświetlone okno dialogowe **Opcje** .
+     Zostanie wyświetlone okno dialogowe **Opcje.**
 
-3. Rozwiń drzewo **debugowanie** , a następnie kliknij pozycję **symbole**.
+3. Rozwiń drzewo **debugowania,** a następnie kliknij pozycję **Symbole**.
 
-4. W **lokalizacjach pliku symboli (. pdb)** wybierz pozycję **serwery symboli Microsoft**
+4. W **lokalizacjach pliku symbolu (pdb)** wybierz pozycję **Serwery symboli firmy Microsoft**
 
-5. W polu **symbole pamięci podręcznej z serwera symboli do tego katalogu**wpisz ścieżkę do folderu, który został utworzony w kroku 1, na przykład:
+5. W **symbolach pamięci podręcznej z serwera symboli do tego katalogu**wpisz ścieżkę folderu utworzonego w kroku 1, na przykład:
 
-     **C:\SymbolCache**
+     **C:\Skrzynka z symbolami**
 
-     Możesz również kliknąć przycisk wielokropka ( **...** ), a następnie wybrać katalog z okna dialogowego **Przeglądaj w poszukiwaniu folderu** .
+     Można również kliknąć przycisk wielokropka (**...**), a następnie wybrać katalog z okna dialogowego **Przeglądaj folder.**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)
-- [Instrukcje: serializacja informacji o symbolach](../profiling/how-to-serialize-symbol-information.md)
+- [Jak: Serialize informacje o symbolu](../profiling/how-to-serialize-symbol-information.md)

@@ -1,6 +1,6 @@
 ---
-title: Testy jednostkowe kodu w języku Python
-description: Konfigurowanie testów jednostkowych dla kodu w języku Python w programie Visual Studio ma pełne wykorzystanie funkcji Eksploratora testów, aby odkryć, uruchamiania i debugowania testów.
+title: Kod Pythona testu jednostkowego
+description: Konfigurowanie testowania jednostkowego dla kodu języka Python w programie Visual Studio w pełni wykorzystuje funkcje Eksploratora testów do odnajdowania, uruchamiania i debugowania testów.
 ms.date: 09/18/2019
 ms.topic: include
 author: JoshuaPartlow
@@ -11,19 +11,19 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9843b47e38d5d33a25c455efe619dfcc033fb334
-ms.sourcegitcommit: 9f6f63a2d76c6e579b4b67a96ec86faba99ad1df
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "71933454"
 ---
-## <a name="discover-and-view-tests"></a>Odnajdywanie i wyświetlić testy
+## <a name="discover-and-view-tests"></a>Odnajduj i wyświetlaj testy
 
-Zgodnie z Konwencją, Visual Studio identyfikuje testów jako metody, których nazwy rozpoczynają się od `test`. Aby wyświetlić ten problem, wykonaj następujące czynności:
+Zgodnie z `test`konwencją program Visual Studio identyfikuje testy jako metody, których nazwy zaczynają się od . Aby wyświetlić to zachowanie, wykonaj następujące czynności:
 
-1. Otwórz [projektu w języku Python](../../managing-python-projects-in-visual-studio.md) załadowane w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, wybierz **Dodaj** > **nowy element**, a następnie wybierz **Test jednotky Pythonu**  następuje **Dodaj**.
+1. Otwórz [projekt języka Python](../../managing-python-projects-in-visual-studio.md) załadowany w programie Visual Studio, kliknij prawym przyciskiem myszy projekt, wybierz polecenie **Dodaj** > **nowy element,** a następnie wybierz pozycję **Python Unit Test,** a następnie **Dodaj**.
 
-1. Ta akcja powoduje utworzenie *test1.py* pliku z kodem, który importuje standard `unittest` modułu, pochodzi z klasy testowej `unittest.TestCase`i wywołuje `unittest.main()` Jeśli bezpośrednio uruchomić skrypt:
+1. Ta akcja tworzy plik *test1.py* z kodem, `unittest` który importuje moduł `unittest.TestCase`standardowy, `unittest.main()` wyprowadza klasę testu z i wywołuje po uruchomieniu skryptu bezpośrednio:
 
     ```python
 
@@ -37,53 +37,53 @@ Zgodnie z Konwencją, Visual Studio identyfikuje testów jako metody, których n
         unittest.main()
     ```
 
-1. Zapisz plik, jeśli to konieczne, a następnie otwórz **Eksplorator testów** z **testu** > **Windows** > **Eksplorator testów**polecenia menu.
+1. Zapisz plik w razie potrzeby, a następnie otwórz **Eksploratora testów** za pomocą polecenia menu **Test** > **Windows** > **Test Explorer.**
 
-1. **Eksplorator testów** wyszukuje projektu dla testów, a następnie wyświetli je, jak pokazano poniżej. Dwukrotne kliknięcie testu spowoduje otwarcie pliku źródłowego.
+1. **Eksplorator testów** przeszukuje projekt w poszukiwaniu testów i wyświetla je w sposób pokazany poniżej. Dwukrotne kliknięcie testu powoduje otwarcie pliku źródłowego.
 
-    ![Test Explorer przedstawiający domyślną test_A](../../media/unit-test-A.png)
+    ![Eksplorator testów z domyślną test_A](../../media/unit-test-A.png)
 
-1. W miarę dodawania więcej testów do projektu, możesz organizować widoku w **Eksplorator testów** przy użyciu **Grupuj według** menu na pasku narzędzi:
+1. Podczas dodawania kolejnych testów do projektu można zorganizować widok w **Eksploratorze testów** za pomocą menu **Grupuj według** na pasku narzędzi:
 
-    ![Grupy Eksploratora testów przez menu paska narzędzi](../../media/unit-test-group-menu.png)
+    ![Menu Grupy eksploratora według paska narzędzi](../../media/unit-test-group-menu.png)
 
-1. Możesz też wprowadzić tekst w **wyszukiwania** pola do filtrowania testów według nazwy.
+1. Tekst można również wprowadzać w polu **Wyszukiwanie,** aby filtrować testy według nazwy.
 
-Aby uzyskać więcej informacji na temat modułu `unittest` i pisania testów, zobacz [dokumentację języka python 2,7](https://docs.python.org/2/library/unittest.html) lub [dokumentację języka python 3,7](https://docs.python.org/3/library/unittest.html) (Python.org).
+Aby uzyskać więcej `unittest` informacji na temat modułu i pisania testów, zobacz [dokumentację języka Python 2.7](https://docs.python.org/2/library/unittest.html) lub [dokumentację języka Python 3.7](https://docs.python.org/3/library/unittest.html) (python.org).
 
 ## <a name="run-tests"></a>Uruchom testy
 
-W **Eksplorator testów** można uruchomić testy na wiele sposobów:
+W **Eksploratorze testów** można uruchamiać testy na różne sposoby:
 
-- **Uruchom wszystkie** wyraźnie uruchamia wszystkie testy pokazano (zależnie od filtry).
-- **Uruchom** menu zawiera polecenia, aby uruchomić testy zakończone niepowodzeniem, przekazany lub nie uruchomiono jako grupą.
-- Można wybrać jeden lub więcej testów, kliknij prawym przyciskiem myszy, a następnie wybierz **Uruchom wybrane testy**.
+- **Uruchom wszystkie** wyraźnie uruchamia wszystkie pokazane testy (z zastrzeżeniem filtrów).
+- Uruchom **Run** menu daje polecenia do uruchomienia nie powiodło się, przeszedł lub nie uruchomić testy jako grupa.
+- Można wybrać jeden lub więcej testów, kliknąć prawym przyciskiem myszy i wybrać **polecenie Uruchom wybrane testy**.
 
-Testy uruchamiania w tle i **Eksploratora testów** aktualizuje stan każdego testu w kończeniu:
+Testy są uruchamiane w tle, a **Eksplorator testów** aktualizuje stan każdego testu po jego zakończeniu:
 
-- Przechodzenie testów przedstawiają zielony znacznik i czas trwania testu:
+- Testy zdawające pokazują zielony znacznik i czas, który upływa do uruchomienia testu:
 
-    ![test_A przekazywane stanu](../../media/unit-test-A-pass.png)
+    ![test_A statusu](../../media/unit-test-A-pass.png)
 
-- Testy zakończone niepowodzeniem Pokaż czerwony krzyżyk z **dane wyjściowe** link, który pokazuje dane wyjściowe konsoli i `unittest` dane wyjściowe z przebiegu testu:
+- Testy nie powiodły się pokazują czerwony krzyżyk `unittest` z łączem **Wyjście,** które pokazuje dane wyjściowe i wyjściowe konsoli z przebiegu testu:
 
-    ![Stan test_A nie powiodło się](../../media/unit-test-A-fail.png)
+    ![test_A stan awarii](../../media/unit-test-A-fail.png)
 
-    ![nie powiodło się z powodu test_A](../../media/unit-test-A-fail-reason.png)
+    ![test_A nie powiodło się z powodu](../../media/unit-test-A-fail-reason.png)
 
-## <a name="debug-tests"></a>Debuguj testy
+## <a name="debug-tests"></a>Testy debugowania
 
-Ponieważ testy jednostkowe są fragmenty kodu, jest zależna od błędów, podobnie jak każdy inny kod, a od czasu do czasu należy uruchomić w debugerze. W debugerze można ustawić punktów przerwania, Sprawdź zmienne i przejść przez kod. Visual Studio udostępnia również narzędzia diagnostyczne dla testów jednostkowych.
+Ponieważ testy jednostkowe są części kodu, podlegają one błędom, podobnie jak każdy inny kod i od czasu do czasu muszą być uruchamiane w debugerze. W debugerze można ustawić punkty przerwania, zbadać zmienne i krok po kroku kodu. Visual Studio udostępnia również narzędzia diagnostyczne dla testów jednostkowych.
 
-Aby rozpocząć debugowanie, ustaw początkowy punkt przerwania w kodzie, a następnie kliknij prawym przyciskiem myszy test (lub zaznaczenie) **Eksploratora testów** i wybierz **Debuguj wybrane testy**. Program Visual Studio uruchamia debugera języka Python, jak dla kodu aplikacji.
+Aby rozpocząć debugowanie, ustaw początkowy punkt przerwania w kodzie, a następnie kliknij prawym przyciskiem myszy test (lub zaznaczenie) w **Eksploratorze testów** i wybierz opcję **Debugowanie wybranych testów**. Visual Studio uruchamia debuger języka Python, tak jak w przypadku kodu aplikacji.
 
-![Profilowanie testu](../../media/unit-test-debugging.png)
+![Debugowanie testu](../../media/unit-test-debugging.png)
 
-Można również użyć **Przeanalizuj pokrycie kodu dla wybranych testów**. Aby uzyskać więcej informacji, zobacz [użycie pokrycia kodu, aby ustalić, ile kodu jest testowana](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Można również użyć **analizy pokrycia kodu dla wybranych testów**. Aby uzyskać więcej informacji, zobacz [Użyj pokrycia kodu, aby określić, ile kodu jest testowany](../../../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ### <a name="known-issues"></a>Znane problemy
 
-- Podczas uruchamiania, debugowania, Visual Studio pojawia się, aby uruchomić i zatrzymać debugowanie, a następnie uruchom ponownie. To zachowanie jest oczekiwane.
-- Podczas debugowania wielu testów, każdej z nich jest wykonywane niezależnie, który przerwania sesji debugowania.
-- Program Visual Studio jest sporadycznie nie można uruchomić testu, podczas debugowania. Zwykle próbą debugowania test ponownie kończy się powodzeniem.
-- Podczas debugowania, istnieje możliwość kroku poza testu do `unittest` implementacji. Normalnie następnym krokiem jest uruchamiany na końcu program i zatrzymuje debugowanie.
+- Podczas uruchamiania debugowania visual studio wydaje się rozpocząć i zatrzymać debugowanie, a następnie uruchomić ponownie. Takie zachowanie jest oczekiwane.
+- Podczas debugowania wielu testów, każdy z nich jest uruchamiany niezależnie, co przerywa sesji debugowania.
+- Visual Studio sporadycznie nie można uruchomić test podczas debugowania. Zwykle próba debugowania testu powiedzie się.
+- Podczas debugowania, jest możliwe, aby wyjść `unittest` z testu do implementacji. Zwykle następny krok jest uruchamiany do końca programu i zatrzymuje debugowanie.

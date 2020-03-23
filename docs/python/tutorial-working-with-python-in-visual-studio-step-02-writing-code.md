@@ -1,7 +1,7 @@
 ---
-title: Język Python w programie Visual Studio — samouczek krok 2, pisania i uruchamiania kodu
+title: Python w programie Visual Studio samouczek krok 2, zapis i uruchamianie kodu
 titleSuffix: ''
-description: Krok 2 przewodnika podstawowe funkcje języka Python w programie Visual Studio, w tym edytowanie kodu i uruchamianie projektu.
+description: Krok 2 podstawowego przewodnika możliwości języka Python w programie Visual Studio, w tym edytowania kodu i uruchamiania projektu.
 ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,62 +12,62 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62430073"
 ---
-# <a name="step-2-write-and-run-code"></a>Krok 2. Pisanie i uruchamianie kodu
+# <a name="step-2-write-and-run-code"></a>Krok 2: Napisz i uruchom kod
 
-**Poprzedniego kroku: [Utwórz nowy projekt języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Poprzedni krok: [Tworzenie nowego projektu języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Mimo że **Eksploratora rozwiązań** zarządzają pliki projektu *edytora* okna zazwyczaj jest miejscem służącym do pracy z *zawartość* plików, takich jak kod źródłowy. Edytor jest kontekstowych typu pliku edycji, w tym języku (na podstawie rozszerzenia pliku) i oferuje funkcje odpowiednie dla danego języka, takich jak kolorowanie składni i automatycznego uzupełniania za pomocą funkcji IntelliSense.
+Chociaż **Eksplorator rozwiązań** jest, gdzie można zarządzać plikami projektu, okno *edytora* jest zazwyczaj, gdzie pracujesz z *zawartością* plików, takich jak kod źródłowy. Edytor jest kontekstowo świadomy typu edytowanego pliku, w tym języka programowania (opartego na rozszerzeniu pliku) i oferuje funkcje odpowiednie dla tego języka, takie jak kolorowanie składni i automatyczne uzupełnianie za pomocą programu IntelliSense.
 
 1. Po utworzeniu nowego projektu "Aplikacja języka Python" domyślny pusty plik o nazwie *PythonApplication1.py* jest otwarty w edytorze programu Visual Studio.
 
-1. W edytorze, zacznij pisać `print("Hello, Visual Studio")` i zwróć uwagę, jak Visual Studio technologia IntelliSense wyświetla opcje automatycznego uzupełniania po drodze. Schemat opcję na liście rozwijanej jest ukończenie domyślne, używany, gdy użytkownik naciśnie klawisz **kartę** klucza. Uzupełnianie są najbardziej przydatne w przypadku dłużej instrukcji lub identyfikatorów.
+1. W edytorze zacznij `print("Hello, Visual Studio")` wpisywać i zwróć uwagę, jak program Visual Studio IntelliSense wyświetla opcje automatycznego uzupełniania po drodze. Opisana opcja na liście rozwijanej jest domyślnym zakończeniem, które jest używane po naciśnięciu **klawisza Tab.** Uzupełnienia są najbardziej pomocne, gdy są zaangażowane dłuższe instrukcje lub identyfikatory.
 
-    ![Okno podręczne z automatycznego uzupełniania IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
+    ![Wyskakujące okienko automatycznego uzupełniania IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
-1. Funkcja IntelliSense wyświetla różne informacje w zależności od tego, czy oświadczenie, którego używasz, funkcji, które w przypadku wywoływania i tak dalej. Za pomocą `print` funkcji, wpisując `(` po `print` do wskazania funkcję wywołania Wyświetla informacje o użyciu pełnego dla tej funkcji. Wyskakujące okienko IntelliSense pokazuje również bieżącego argument pogrubioną czcionką (**wartość** jak pokazano poniżej):
+1. IntelliSense pokazuje różne informacje w zależności od instrukcji, której używasz, funkcji, którą wywołujesz i tak dalej. Za `print` pomocą funkcji `(` wpisując po, `print` aby wskazać wywołanie funkcji wyświetla pełne informacje o użyciu dla tej funkcji. Pop-up IntelliSense pokazuje również bieżący argument pogrubioną czcionką **(wartość,** jak pokazano tutaj):
 
-    ![Okno podręczne z automatycznego uzupełniania IntelliSense dla funkcji](media/vs-getting-started-python-05-IntelliSense2b.png)
+    ![Wyskakujące okienko intellisense dla funkcji](media/vs-getting-started-python-05-IntelliSense2b.png)
 
-1. Wykonaj instrukcję tak, aby odpowiadała następujące czynności:
+1. Uzupełnij instrukcję tak, aby była zgodna z następującymi zasadami:
 
     ```python
     print("Hello, Visual Studio")
     ```
 
-1. Zwróć uwagę, barwienia składni, która odróżnia instrukcji `print` w argumencie `"Hello Visual Studio"`. Ponadto tymczasowo usunąć ostatni `"` na ciąg i zwróć uwagę, jak Visual Studio Wyświetla czerwoną linią dla kodu, zawiera błędy składni. Następnie zastąp `"` aby poprawić kod.
+1. Zwróć uwagę na zabarwienie składni, które odróżnia instrukcję `print` od argumentu `"Hello Visual Studio"`. Ponadto tymczasowo usunąć ostatni `"` na ciąg i zauważyć, jak Visual Studio pokazuje czerwone podkreślenie dla kodu, który zawiera błędy składni. Następnie wymień, `"` aby poprawić kod.
 
-    ![Kolorowanie składni IntelliSense i funkcji wyróżniania błędów](media/vs-getting-started-python-06-IntelliSense3b.png)
+    ![Kolorowanie składni IntelliSense i wyróżnianie błędów](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Ponieważ w jednym środowisku programistycznym jest bardzo osobistych kwestią, Visual Studio zapewnia pełną kontrolę nad wygląd i zachowanie programu Visual Studio. Wybierz **narzędzia** > **opcje** menu poleceń i zapoznaj się z ustawieniami w obszarze **środowiska** i **edytora tekstów** karty. Domyślnie zostanie wyświetlony tylko ograniczoną liczbę opcji; Aby wyświetlić każdej opcji dla każdego języka programowania, wybierz **Pokaż wszystkie ustawienia** w dolnej części okna dialogowego.
+    > Ponieważ środowisko programistyczne jest bardzo osobistą sprawą, visual studio daje pełną kontrolę nad wyglądem i zachowaniem programu Visual Studio. Wybierz polecenie menu **Opcje narzędzi** > **Options** i zapoznaj się z ustawieniami na kartach **Środowisko** i **Edytor tekstu.** Domyślnie widzisz tylko ograniczoną liczbę opcji; aby wyświetlić każdą opcję dla każdego języka programowania, wybierz pozycję **Pokaż wszystkie ustawienia** u dołu okna dialogowego.
 
-1. Uruchamianie kodu napisanych do tego punktu, naciskając klawisz **Ctrl**+**F5** lub wybierając **debugowania** > **Uruchom bez debugowania**  elementu menu. Program Visual Studio wyświetli ostrzeżenie, jeśli nadal występują błędy w kodzie.
+1. Uruchom kod, który został zapisany w tym punkcie, naciskając **klawisz Ctrl**+**F5** lub wybierając pozycję menu **Debugowania** > **start bez debugowania.** Visual Studio ostrzega, jeśli nadal masz błędy w kodzie.
 
-1. Po uruchomieniu programu, zostanie wyświetlone okno konsoli, za pomocą wyświetlania wyników, tak, jakby należy uruchomić następujące polecenie interpreter języka Python za pomocą *PythonApplication1.py* z wiersza polecenia. Naciśnij dowolny klawisz, aby zamknąć okno i powrócić do edytora programu Visual Studio.
+1. Po uruchomieniu programu pojawi się okno konsoli wyświetlające wyniki, tak jakby można było uruchomić interpreter języka Python z *PythonApplication1.py* z wiersza polecenia. Naciśnij klawisz, aby zamknąć okno i powrócić do edytora programu Visual Studio.
 
-    ![Dane wyjściowe dla pierwszego uruchomienia programu](media/vs-getting-started-python-07-output.png)
+    ![Dane wyjściowe pierwszego uruchomienia programu](media/vs-getting-started-python-07-output.png)
 
-1. Oprócz uzupełniania instrukcji i funkcji, funkcji IntelliSense zapewniają uzupełnienia dla języka Python `import` i `from` instrukcji. Te uzupełnienia pomóc łatwo wykryć, które moduły są dostępne w Twoim środowisku oraz elementów członkowskich tych modułów. W edytorze, Usuń `print` wiersza, a następnie zacznij pisać `import`. Podczas wpisywania tekstu miejsca, zostanie wyświetlona lista modułów:
+1. Oprócz uzupełnień dla instrukcji i funkcji IntelliSense zapewniają `import` `from` uzupełnienia dla języka Python i instrukcji. Te uzupełnienia ułatwiają odnajdywanie, jakie moduły są dostępne w twoim środowisku i członków tych modułów. W edytorze usuń `print` wiersz i `import`zacznij wpisywać tekst . Po wpisaniu spacji pojawi się lista modułów:
 
-    ![Wyświetlanie dostępnych modułów dla instrukcji importowania IntellSense](media/vs-getting-started-python-08-import1.png)
+    ![IntellSense pokazuje dostępne moduły dla instrukcji importu](media/vs-getting-started-python-08-import1.png)
 
-1. Zakończ wiersz, wpisując lub wybierając `sys`.
+1. Uzupełnij wiersz, wpisując `sys`lub wybierając .
 
-1. W następnym wierszu, wpisz `from` Aby ponownie wyświetlić listę modułów:
+1. W następnym wierszu `from` wpisz ponownie listę modułów:
 
-    ![IntellSense przedstawiający dostępnych modułów dla instrukcji](media/vs-getting-started-python-09-import2.png)
+    ![IntellSense pokazuje dostępne moduły dla a z instrukcji](media/vs-getting-started-python-09-import2.png)
 
-1. Wybierz lub wpisz `math`, pracując ze spacją i `import`, który zawiera elementy członkowskie modułu:
+1. Wybierz lub `math`wpisz , a następnie `import`kontynuuj wpisywanie spacji i , która wyświetla elementy modułu:
 
-    ![Elementy członkowskie modułu przedstawiający IntellSense](media/vs-getting-started-python-10-import3.png)
+    ![IntellSense pokazuje elementy modułu](media/vs-getting-started-python-10-import3.png)
 
-1. Zakończ importując `sin`, `cos`, i `radians` członków, obserwowanie automatyczne uzupełnianie dostępne dla każdego. Gdy skończysz, Twój kod powinien wyglądać następująco:
+1. Zakończ, importując `sin` `cos`program `radians` , i elementy członkowskie, zauważając automatyczne uzupełnianie dostępne dla każdego z nich. Po zakończeniu kod powinien być wyświetlany w następujący sposób:
 
     ```python
     import sys
@@ -75,25 +75,25 @@ Mimo że **Eksploratora rozwiązań** zarządzają pliki projektu *edytora* okna
     ```
 
     > [!Tip]
-    > Uzupełnianie pracować podciągów pisania, dopasowanie części wyrazów, litery na początku słowa, a nawet pominięte znaków. Zobacz [edytowania kodu - uzupełnienia](editing-python-code-in-visual-studio.md#completions) Aby uzyskać szczegółowe informacje.
+    > Uzupełnienia działają z podciągami podczas pisania, dopasowywanie części słów, liter na początku wyrazów, a nawet pomijane znaki. Zobacz [Edytowanie kodu — uzupełnianie, aby](editing-python-code-in-visual-studio.md#completions) uzyskać szczegółowe informacje.
 
-1. Dodaj nieco więcej kodu, aby wydrukować wartości funkcji cosinus dla 360 stopni:
+1. Dodaj trochę więcej kodu, aby wydrukować wartości cosine dla 360 stopni:
 
     ```python
     for i in range(360):
         print(cos(radians(i)))
     ```
 
-1. Uruchom program ponownie, używając **Ctrl**+**F5** lub **debugowania** > **Uruchom bez debugowania**. Zamknij okno danych wyjściowych, gdy wszystko będzie gotowe.
+1. Uruchom program ponownie za pomocą **Ctrl**+**F5** lub **Debug** > **Start bez debugowania**. Zamknij okno wyjściowe po zakończeniu.
 
 ## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
-> [Użycie okna interaktywnego REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Korzystanie z interaktywnego okna REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="go-deeper"></a>Przejdź dalej
+## <a name="go-deeper"></a>Głębiej
 
-- [Edytowanie kodu](editing-python-code-in-visual-studio.md)
+- [Edytuj kod](editing-python-code-in-visual-studio.md)
 - [Formatowanie kodu](formatting-python-code.md)
-- [Refaktoryzacja kodu](refactoring-python-code.md)
-- [Użyj PyLint](linting-python-code.md)
+- [Kod refaktoryzatora](refactoring-python-code.md)
+- [Korzystanie z narzędzia PyLint](linting-python-code.md)

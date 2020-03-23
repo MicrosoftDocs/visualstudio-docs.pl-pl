@@ -1,5 +1,5 @@
 ---
-title: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów
+title: Konfigurowanie emulacji sieci przy użyciu ustawień testowych
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,81 +9,81 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589217"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Jak: Konfigurowanie emulacji sieci przy użyciu ustawień testowych w programie Visual Studio
 
-Można skonfigurować adapter danych diagnostycznych do testowania aplikacji w różnych środowiskach sieciowych w programie Visual Studio. Może być również skonfigurowane do testowania sztuczne obciążenie sieciowe lub wąskich gardeł, po uruchomieniu testów.
+Można skonfigurować kartę danych diagnostycznych, aby przetestować aplikację w różnych środowiskach sieciowych z programu Visual Studio. Można również skonfigurować do testowania sztucznego obciążenia sieci lub wąskie gardło, po uruchomieniu testów.
 
 > [!WARNING]
-> Po uruchomieniu testów w prawdziwej sieci, która jest typu wolniejszego niż sieć, którą emulujesz, testy będą nadal działać w niższej szybkości sieci. Emulacja może tylko spowolnić środowisko sieciowe, nie go przyśpieszyć.
+> Jeśli uruchomisz testy w sieci rzeczywistej, która jest wolniejszym typem niż emulująca sieć, test będzie nadal uruchamiany z mniejszą szybkością sieci. Emulacja może tylko spowolnić środowisko sieciowe, a nie przyspieszyć.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Poniższa procedura opisuje sposób konfigurowania emulacji sieci z edytora konfiguracji. Te kroki dotyczą zarówno edytora konfiguracji w programie Microsoft Test Manager i programu Visual Studio.
+W poniższej procedurze opisano sposób konfigurowania emulacji sieci z edytora konfiguracji. Te kroki dotyczą edytora konfiguracji w programie Microsoft Test Manager i Visual Studio.
 
 > [!NOTE]
-> Adapter danych diagnostycznych emulacji sieciowej ma zastosowanie tylko do ustawień testowych Visual Studio. Nie jest używana do ustawień testu w Microsoft Test Manager.
+> Karta danych diagnostycznych emulacji sieciowej ma zastosowanie tylko do ustawień testowych programu Visual Studio. Nie jest używany do ustawień testowych w programie Microsoft Test Manager.
 
-Konta mającego uprawnienia administratora może służyć do emulacji sieci. Jeśli wybrano emulację sieci dla lokalnej roli, która uruchamia testy ręcznie, należy uruchomić program Microsoft Test Manager za pomocą uprawnień administratora. Jeśli wybrano emulację sieci dla żadnych innych ról, należy sprawdzić, czy agent testowy na komputerze dla danej roli używa konta użytkownika, który jest członkiem grupy Administratorzy. Aby uzyskać więcej informacji na temat sposobu konfigurowania konta dla agenta testowego, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+Konto z uprawnieniami administratora musi być używane do emulacji sieci. Jeśli wybrano emulację sieci dla roli lokalnej, która uruchamia testy ręczne, należy uruchomić Menedżera testów firmy Microsoft przy użyciu uprawnień administratora. Jeśli wybrano emulację sieciową dla dowolnej innej roli, należy sprawdzić, czy agent testowy na komputerze dla tej roli używa konta użytkownika, który jest członkiem grupy administratorów. Aby uzyskać więcej informacji na temat konfigurowania konta agenta testowego, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
 > [!NOTE]
-> Konto Usługa sieciowa, która jest domyślnym kontem dla agenta testowego, nie jest członkiem grupy Administratorzy.
+> Konto usługi sieciowej, które jest domyślnym kontem agenta testowego, nie jest członkiem grupy administratorów.
 
-**Emulacja sieci true**
+**Prawdziwa emulacja sieci**
 
-Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu. Obejmuje to testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
+Visual Studio używa emulacji sieci true oparte na oprogramowaniu dla wszystkich typów testów. Obejmuje to testy obciążenia. Prawdziwa emulacja sieci symuluje warunki sieciowe poprzez bezpośrednią manipulację pakietami sieciowymi. Prawdziwy emulator sieci może emulować zachowanie zarówno sieci przewodowych, jak i bezprzewodowych przy użyciu niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone do emulacji sieci true:
 
-- Czas obustronnej konwersji w sieci (opóźnienie)
+- Czas podróży w obie strony w sieci (opóźnienie)
 
-- Dostępna przepustowość
+- Ilość dostępnej przepustowości
 
-- Zachowanie usługi kolejkowania wiadomości
+- Zachowanie kolejkowania
 
 - Utrata pakietów
 
-- Zmiana kolejności pakietów
+- Ponowne kolejność pakietów
 
-- Propagacje błędów.
+- Propagacja błędów.
 
-Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
+Prawdziwa emulacja sieci zapewnia również elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
 
-Emulacja sieci TRUE może służyć przez sieciowych deweloperów i testerów do emulowania pożądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu z testami sprzętu, emulacji sieci true jest rozwiązaniem znacznie tańszym i bardziej elastycznym.
+Prawdziwa emulacja sieci może być używana przez programistów i testerów opartych na sieci do emulowania żądanego środowiska testowego, oceny wydajności, przewidywania skutków zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu do łóżek testowych sprzętu, prawdziwa emulacja sieci jest znacznie tańszym i bardziej elastycznym rozwiązaniem.
 
-## <a name="configure-network-emulation-for-your-test-settings"></a>Skonfiguruj emulację sieci dla ustawień testu
+## <a name="configure-network-emulation-for-your-test-settings"></a>Konfigurowanie emulacji sieci dla ustawień testowych
 
-Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z programu Visual Studio, a następnie wybierz **dane i Diagnostyka** strony.
+Przed wykonaniem kroków w tej procedurze, należy otworzyć ustawienia testu z programu Visual Studio, a następnie wybierz **dane i diagnostyki** strony.
 
-### <a name="to-configure-network-emulation-for-your-test-settings"></a>Aby skonfigurować emulację sieci ustawień testu
+### <a name="to-configure-network-emulation-for-your-test-settings"></a>Aby skonfigurować emulację sieciową dla ustawień testowych
 
-1. Wybierz rolę Aby używać do emulowania konkretnej sieci.
+1. Wybierz rolę, która ma być używana do emulacji określonej sieci.
 
     > [!NOTE]
-    > Musisz skonfigurować kartę emulacji sieci tylko dla roli klienta lub roli serwera. Nie trzeba korzystać z karty dla obu ról. Adapter emuluje hałas sieci, który ma wpływ na komunikację między obiema rolami, tak aby nie trzeba go używać na obu. Jeśli nie jest konieczne, należy wybrać rolę klienta dla karty emulacji sieci, aby uniknąć dodatkowych obciążeń roli serwera.
+    > Należy skonfigurować kartę emulacji sieci tylko na roli klienta lub roli serwera. Nie trzeba używać karty w obu rolach. Karta emuluje szum sieciowy, który wpływa na komunikację między obiema rolami, dzięki czemu nie trzeba go używać w obu. O ile nie jest to konieczne, należy wybrać rolę klienta dla karty emulacji sieci, aby uniknąć dodatkowych narzutów na rolę serwera.
 
-2. Wybierz **emulacji sieci** , a następnie wybierz **Konfiguruj**.
+2. Wybierz **pozycję Emulacja sieci,** a następnie wybierz pozycję **Konfiguruj**.
 
-     Zostanie wyświetlone okno dialogowe konfigurowania emulacji sieci.
+     Zostanie wyświetlone okno dialogowe do konfigurowania emulacji sieci.
 
-3. Wybierz strzałkę obok **wybierz profil sieci**i wybierz typ sieci, który chcesz emulować po uruchomieniu testu (na przykład **Cable-DSL 768Kps**).
+3. Wybierz strzałkę obok **pozycji Wybierz profil sieciowy do użycia**i wybierz typ sieci, który chcesz emulować po uruchomieniu testu (na przykład **Cable-DSL 768Kps**).
 
     > [!WARNING]
-    > Po uruchomieniu testów w prawdziwej sieci, która jest typu wolniejszego niż sieć, którą emulujesz, testy będą nadal działać w niższej szybkości sieci. Emulacja może tylko spowolnić środowisko sieciowe, nie go przyśpieszyć.
+    > Jeśli uruchomisz testy w sieci rzeczywistej, która jest wolniejszym typem niż sieć, którą emulujesz, test będzie nadal uruchamiany z mniejszą szybkością sieci. Emulacja może tylko spowolnić środowisko sieciowe, a nie przyspieszyć.
 
-4. Jeśli dołączysz adapter danych diagnostycznych emulacji sieci w ustawieniach testu i zamierzasz używać go na komputerze lokalnym, następnie należy również powiązać sterownik emulacji sieci do jednej z kart sieciowych na komputerze. Sterownik emulacji sieci jest wymagana dla adaptera danych diagnostycznych emulacji sieciowej do funkcji. Sterownik emulacji sieci jest zainstalowany i powiązany z kartą sieciową na dwa sposoby:
+4. Jeśli karta danych diagnostycznych emulacji sieciowej zostanie uwzględnina w ustawieniach testowych i zamierzasz jej używać na komputerze lokalnym, należy również powiązać sterownik emulacji sieciowej z jedną z kart sieciowych komputera. Sterownik emulacji sieci jest wymagany do działania karty danych diagnostycznych emulacji sieciowej. Sterownik emulacji sieci jest zainstalowany i powiązany z kartą na dwa sposoby:
 
-    - **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Agent:** program Microsoft Visual Studio Test Agent może służyć zarówno komputerów zdalnych, jak i komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji obejmuje krok konfiguracji, który wiąże sterownik emulacji sieci z kartą sieciową. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+    - **Sterownik emulacji sieci zainstalowany z programem Microsoft Visual Studio Test Agent:** Agent testowy programu Microsoft Visual Studio może być używany zarówno na komputerach zdalnych, jak i na komputerze lokalnym. Po zainstalowaniu programu Visual Studio Test Agent, proces instalacji zawiera krok konfiguracji, który wiąże sterownik emulacji sieci do karty sieciowej. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-    - **Sterownik emulacji sieci instalowany z programu Microsoft Visual Studio Test Professional:** podczas korzystania z emulacji sieci po raz pierwszy monit powiązanie sterownika emulacji sieci z kartą sieciową.
+    - **Sterownik emulacji sieci zainstalowany w programie Microsoft Visual Studio Test Professional:** Podczas korzystania z emulacji sieci po raz pierwszy zostanie wyświetlony monit o powiązanie sterownika emulacji sieci z kartą sieciową.
 
     > [!TIP]
-    > Można również zainstalować sterownik emulacji sieci z poziomu wiersza polecenia na komputerze lokalnym bez instalowania agenta testowego programu Visual Studio za pomocą następującego polecenia: **VSTestConfig NETWORKEMULATION/Install**
+    > Sterownik emulacji sieciowej można również zainstalować z wiersza polecenia na komputerze lokalnym bez instalowania agenta testowego programu Visual Studio za pomocą następującego polecenia: **VSTestConfig NETWORKEMULATION /install**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
-- [Uruchamianie testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/run-manual-tests?view=vsts)
+- [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)
+- [Uruchamianie testów ręcznych (plany testów platformy Azure)](/azure/devops/test/run-manual-tests?view=vsts)

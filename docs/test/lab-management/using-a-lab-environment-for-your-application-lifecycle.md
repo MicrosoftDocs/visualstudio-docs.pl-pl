@@ -1,5 +1,5 @@
 ---
-title: Użyć środowiska laboratoryjnego do operacji deweloperskich
+title: Używanie środowiska laboratoryjnego dla devops
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,135 +10,135 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: b02f8bf9542b5de4737d173835c011f59c3fdc86
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75847286"
 ---
-# <a name="use-a-lab-environment-for-your-devops"></a>Użyć środowiska laboratoryjnego dla Twojego metodyki devops
+# <a name="use-a-lab-environment-for-your-devops"></a>Użyj środowiska laboratoryjnego dla devops
 
-Środowisko laboratoryjne to zbiór maszyn wirtualnych i fizycznych, które służą do tworzenia i testowania aplikacji. Środowisko laboratoryjne może zawierać wiele ról potrzebnych do testowania aplikacji wielowarstwowych, takich jak stacje robocze, serwery sieci web i serwery baz danych. Ponadto umożliwia przepływu pracy kompilacja wdrożenie test ze środowiskiem laboratoryjnym zautomatyzować proces kompilowania, wdrażania i uruchamiania testów automatycznych w swojej aplikacji.
+Środowisko laboratoryjne to zbiór maszyn wirtualnych i fizycznych, których można używać do tworzenia i testowania aplikacji. Środowisko laboratoryjne może zawierać wiele ról potrzebnych do testowania aplikacji wielowarstwowych, takich jak stacje robocze, serwery sieci web i serwery baz danych. Ponadto można użyć przepływu pracy kompilacji i wdrażania testów ze środowiskiem laboratoryjnym, aby zautomatyzować proces tworzenia, wdrażania i uruchamiania automatycznych testów w aplikacji.
 
-* **Użyj planu testów do uruchamiania testów automatycznych** — możesz uruchomić zbiór testów automatycznych, o nazwie *plan testu*i wyświetlić postęp.
+* **Użyj planu testów, aby uruchomić testy automatyczne** — można uruchomić kolekcję testów automatycznych, *nazywanych planem testów*i wyświetlić postęp.
 
-* **Używanie przepływu pracy kompilacja wdrożenie test** — przepływ pracy kompilacja wdrożenie test można użyć do automatycznego testowania aplikacji wielowarstwowych. Typowym przykładem jest przepływ pracy, który uruchamia kompilację, wdroży plików kompilacji na odpowiednich komputerach w środowisku laboratoryjnym, a następnie oblicza testów automatycznych. Ponadto można zaplanować przepływu pracy do uruchamiania w określonych odstępach czasu.
+* **Użyj przepływu pracy kompilacja-wdrażanie-test** — można użyć przepływu pracy kompilacja-wdrażanie-test do automatycznego testowania aplikacji wielowarstwowych. Typowym przykładem jest przepływ pracy, który uruchamia kompilację, wdraża pliki kompilacji na odpowiednich komputerach w środowisku laboratoryjnym, a następnie wykonuje zautomatyzowane testy. Ponadto można zaplanować przepływ pracy do uruchomienia w określonych odstępach czasu.
 
-* **Zbieranie danych diagnostycznych z wszystkich maszyn, nawet podczas testowania ręcznego** — umożliwia zbieranie danych diagnostycznych z wiele maszyn jednocześnie. Można na przykład podczas jednego przebiegu testu, zbierania IntelliTrace, test, wpływ i inne formy dane z serwera sieci web, serwer bazy danych i klienta.
+* **Zbieraj dane diagnostyczne ze wszystkich maszyn, nawet podczas testowania ręcznego** — możesz zbierać dane diagnostyczne z wielu maszyn jednocześnie. Na przykład podczas jednego przebiegu testowego można zbierać IntelliTrace, wpływ testu i inne formy danych z serwera sieci web, serwera bazy danych i klienta.
 
-Oto przykłady typowych topologii środowiska laboratorium:
+Oto przykłady typowych topologii środowiska laboratoryjnego:
 
 | Topologia | Opis |
 |---|---|
-|![Tylko topologii serwerów](../media/topology_backend.png)| To środowisko laboratoryjne ma *topologii serwerów*, która jest często używana do uruchomienia testów ręcznych w aplikacji serwerowych i pozwalający testerów można zweryfikować usterki w środowisku za pomocą ich własnych komputerów klienckich. W topologii wewnętrznej bazy danych w swoim środowisku laboratoryjnym zawiera tylko serwery. Korzystając z tego typu używanej topologii, zwykle nawiązaniu połączenia z serwerami w środowisku laboratoryjnym nie przy użyciu komputera klienta, który jest częścią środowiska.|
-|![Środowisko laboratoryjne chmury](../media/topology_cloud.png)| To środowisko laboratoryjne zapewnia podobne możliwości i funkcji jako _topologii serwerów_, ale eliminuje konieczność fizycznych lub maszyn wirtualnych działających w środowisku lokalnym; można skrócić czas instalacji, Uprość Konserwacja i zminimalizowania kosztów. Konfigurowanie wielu witryn sieci Web i maszyn wirtualnych, wraz z niestandardowych sieci jest szybkie i łatwe w środowisku chmury, takich jak Microsoft Azure.|
-|![Środowisko laboratoryjne klient serwer](../media/topology_clientserver.png)| To środowisko laboratoryjne ma *topologii klient serwer*, która jest często używana do testowania aplikacji, która ma składników serwera i klienta. W topologii klient/serwer wszystkich komputerów klienckich i serwerów, umożliwia przetestowanie aplikacji znajdują się w swoim środowisku laboratoryjnym. Gdy używasz tej topologii, możesz zebrać dane testowe z każdej maszynie, która ma wpływ na testy.|
+|![Topologia tylko serwera](../media/topology_backend.png)| To środowisko laboratoryjne ma *topologię serwera*, która jest często używana do uruchamiania testów ręcznych w aplikacjach serwerowych i która umożliwia testerom używanie własnych maszyn klienckich do weryfikacji błędów w środowisku. W topologii wewnętrznej bazy danych środowisko laboratoryjne zawiera tylko serwery. Korzystając z tego typu topologii, zazwyczaj łączysz się z serwerami w środowisku laboratoryjnym przy użyciu komputera klienckiego, który nie jest częścią środowiska.|
+|![Środowisko laboratorium w chmurze](../media/topology_cloud.png)| To środowisko laboratoryjne zapewnia podobne możliwości i funkcje jak _topologia serwera_, ale usuwa wymagania dotyczące maszyn fizycznych lub wirtualnych działających w środowisku lokalnym; co może skrócić czas instalacji, uprościć konserwację i zminimalizować koszty. Konfigurowanie wielu witryn sieci Web i maszyn wirtualnych wraz z siecią niestandardową jest szybkie i łatwe w środowisku chmury, takim jak Microsoft Azure.|
+|![Środowisko laboratoryjne klient-serwer](../media/topology_clientserver.png)| To środowisko laboratoryjne ma *topologię klient-serwer*, która jest często używana do testowania aplikacji, która ma składniki serwera i klienta. W topologii klienta/serwera wszystkie maszyny klienckie i serwerowe używane do testowania aplikacji znajdują się w środowisku laboratoryjnym. Korzystając z tej topologii, można zbierać dane testowe z każdej maszyny, która wpływa na testy.|
 
 | | |
 |---|---|
-| ![Ikona aparatu filmu wideo](../../install/media/video-icon.png) | [Obejrzyj film wideo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) na zarządzanie środowiskami laboratoryjnymi na potrzeby testowania. |
+| ![ikona kamery filmowa dla wideo](../../install/media/video-icon.png) | [Obejrzyj film na temat](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) zarządzania środowiskami laboratoryjnymi do testowania. |
 
-## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Korzystaj z chmury, za pomocą potoków usługi Azure lub kompilacji programu Team Foundation Server i wersji
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Korzystanie z chmury za pomocą potoków platformy Azure lub kompilacji i wersji serwera team foundation
 
-Można wykonać testów automatycznych i kompilacja wdrożenie test automation za pomocą [kompilowania i wydawania](/azure/devops/pipelines/index?view=vsts) funkcji w Team Foundation Server (TFS) i plany testów platformy Azure. Niektóre z korzyści to:
+Automatyzację testowania i wdrażania kompilacji i testowania można wykonywać przy użyciu funkcji [kompilacji i wersji](/azure/devops/pipelines/index?view=vsts) w team foundation server (TFS) i planach testów platformy Azure. Niektóre z korzyści są:
 
-* Nie trzeba kontrolera kompilacji lub kontrolera testów.
-* Agent testowy jest zainstalowany za pomocą zadania jako część kompilacji lub wydania.
-* To można łatwo dostosować procedury wdrażania. Nie jesteś już ograniczone do korzystania z jednego skryptu. Możesz również korzystać z zalet wiele zadań, które są dostępne w ramach produktu, a także jak Visual Studio Marketplace.
-* Nie trzeba utrzymywać zestawów testów. Można bezpośrednio uruchomić testy z plików binarnych.
-* Uzyskasz bardziej zaawansowane wbudowane, raportowanie środowisko dla testów uruchamianych w każdej kompilacji lub wydania.
-* Trwałe, które można śledzić (wydania, tworzenie elementów roboczych, zatwierdzeń) są obecnie wdrożone i przetestowane w każdym środowisku.
+* Nie potrzebujesz kontrolera kompilacji ani kontrolera testów.
+* Agent testowy jest instalowany za pośrednictwem zadania jako część kompilacji lub wydania.
+* Kroki wdrażania można łatwo dostosować. Nie masz już ograniczeń w używaniu pojedynczego skryptu. Można również skorzystać z wielu zadań, które są dostępne w produkcie, a także w programie Visual Studio Marketplace.
+* Nie musisz utrzymywać zestawów testowych. Testy można uruchamiać bezpośrednio z plików binarnych.
+* Otrzymasz bogatsze środowisko raportowania wbudowanego dla testów, które są uruchamiane w ramach każdej kompilacji lub wersji.
+* Można śledzić, które zasoby (wydanie, kompilacja, elementy robocze, zatwierdzenia) są obecnie wdrażane i testowane w każdym środowisku.
 * Można dostosować i rozszerzyć automatyzację, aby łatwo wdrożyć do wielu środowisk testowych, a nawet do środowiska produkcyjnego.
-* Można zaplanować automatyzacji, który ma być wykonywana zawsze, gdy występuje lub ewidencjonowania zatwierdzenia lub codziennie o określonej godzinie.
+* Automatyzację można zaplanować za każdym razem, gdy jest odprawa lub zatwierdzenie lub o określonej godzinie każdego dnia.
 
-Aby uzyskać więcej informacji, zobacz [zarządzania Użyj kompilacji lub wydania](use-build-or-rm-instead-of-lab-management.md).
+Aby uzyskać więcej informacji, zobacz [Używanie zarządzania kompilacją lub wydaniem](use-build-or-rm-instead-of-lab-management.md).
 
-## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Korzystanie z funkcji programu Visual Studio Lab Management programu Microsoft Test Manager
+## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Korzystanie z funkcji zarządzania laboratorium programu Visual Studio w programie Microsoft Test Manager
 
-W przypadku używania Visual Studio Enterprise Edition można tworzyć środowiska laboratoryjne i zarządzać nimi za pomocą funkcji Visual Studio Lab Management Microsoft Test Manager.
+Podczas korzystania z programu Visual Studio Enterprise edition można tworzyć środowiska laboratoryjne i zarządzać nimi za pomocą funkcji zarządzania laboratorium programu Visual Studio w programie Microsoft Test Manager.
 
-Lab Management automatycznie instaluje agentów testowych na każdym komputerze w danym środowisku.
+Lab Management automatycznie instaluje agentów testowych na każdym komputerze w twoim środowisku.
 
-Jeśli używasz programu Lab Management w połączeniu z Menedżera maszyny wirtualnej System Center (SCVMM) możesz również daje następujące korzyści za pomocą środowisk laboratoryjnych:
+Jeśli używasz zarządzania laboratorium w połączeniu z Menedżerem maszyn wirtualnych programu System Center (SCVMM), można również uzyskać następujące korzyści podczas korzystania ze środowisk laboratoryjnych:
 
-* **Szybko odtwarzać konfiguracje maszyny** — możesz przechowywać kolekcji maszyn wirtualnych, które są skonfigurowane do odtworzenia środowisk produkcji typowych. Następnie należy wykonać każdy test na nową kopię przechowywanych środowiska.
+* **Szybkie odtwarzanie konfiguracji maszyn** — można przechowywać kolekcje maszyn wirtualnych, które są skonfigurowane do odtwarzania typowych środowisk produkcyjnych. Następnie można wykonać każde uruchomienie testu na nowej kopii przechowywanego środowiska.
 
-* **Odtwórz dokładne warunki błędu** — w przypadku testu zakończy się niepowodzeniem, można przechowywać kopię stan środowiska laboratoryjnego i uzyskać do niego dostęp z wyników kompilacji lub elementu roboczego.
+* **Odtwórz dokładne warunki błędu** — gdy przebieg testu zakończy się niepowodzeniem, można przechowywać kopię stanu środowiska laboratoryjnego i uzyskać do niego dostęp z wyników kompilacji lub elementu pracy.
 
-* **Uruchamianie wielu kopii środowiska laboratoryjnego w tym samym czasie** — można uruchomić wielu kopii środowiska laboratoryjnego w tym samym czasie bez konfliktów nazw.
+* **Uruchom wiele kopii środowiska laboratoryjnego w tym samym czasie** — można uruchomić wiele kopii środowiska laboratoryjnego w tym samym czasie bez konfliktów nazewnictwa.
 
-### <a name="standard-environments-and-scvmm-environments"></a>Środowiska standardowe oraz środowiska SCVMM
+### <a name="standard-environments-and-scvmm-environments"></a>Środowiska standardowe i środowiska SCVMM
 
-Istnieją dwa rodzaje środowisk laboratoryjnych, które można utworzyć za pomocą programu Visual Studio Lab Management: **standardowych środowisk** i **środowisk SCVMM**. Jednak możliwości każdego typu środowiska są różne.
+Istnieją dwa typy środowisk laboratoryjnych, które można utworzyć za pomocą programu Visual Studio Lab Management: **środowiska standardowe** i **środowiska SCVMM.** Jednak możliwości każdego typu środowiska są różne.
 
-**Standardowych środowisk:** może zawierać zarówno maszyn wirtualnych i fizycznych. Maszyny wirtualne można również dodać do standardowego środowiska, które są zarządzane przez platformy wirtualizacji innej firmy. Oprócz standardowych środowisk nie wymagają zasobów dodatkowy serwer, taki jak serwer programu SCVMM.
+**Środowiska standardowe:** mogą zawierać kombinację maszyn wirtualnych i fizycznych. Można również dodać maszyny wirtualne do standardowego środowiska, które są zarządzane przez struktury wirtualizacji innych firm. Ponadto środowiska standardowe nie wymagają dodatkowych zasobów serwera, takich jak serwer SCVMM.
 
-**Środowisk programu SCVMM:** może zawierać tylko maszyny wirtualne, które są zarządzane przez program SCVMM (System Center Virtual Machine Manager), więc maszyn wirtualnych w środowiskach SCVMM mogą działać tylko na środowisku wirtualizacji funkcji Hyper-V. Jednak środowisk SCVMM zapewniają następujące funkcje automatyzacji i zarządzania, które nie są dostępne w standardowych środowisk:
+**Środowiska SCVMM:** mogą zawierać tylko maszyny wirtualne zarządzane przez PROGRAM SCVMM (Menedżer maszyn wirtualnych centrum systemu), więc maszyny wirtualne w środowiskach SCVMM mogą być uruchamiane tylko w ramach wirtualizacji funkcji Hyper-V. Jednak środowiska SCVMM zapewniają następujące funkcje automatyzacji i zarządzania, które nie są dostępne w środowiskach standardowych:
 
-- **Migawki środowisk:** migawki środowiska zawierają stan środowiska laboratoryjnego, dzięki czemu można szybko przywrócić czystego środowiska lub zapisywania stanu środowiska, który został zmodyfikowany. Przepływ pracy kompilacja wdrożenie test umożliwia również Automatyzowanie zapisywanie i przywracanie migawki środowiska.
+- **Migawki środowiska:** Migawki środowiska zawierają stan środowiska laboratoryjnego, dzięki czemu można szybko przywrócić czyste środowisko lub zapisać stan środowiska, które zostało zmodyfikowane. Można również użyć przepływu pracy kompilacji i wdrażania-testu, aby zautomatyzować proces zapisywania i przywracania migawek środowiska.
 
-- **Przechowywane środowisk:** przechowują kopię środowiska SCVMM, a następnie wdrożyć wiele kopii tego środowiska.
+- **Środowiska przechowywane:** Można przechowywać kopię środowiska SCVMM, a następnie wdrożyć wiele kopii tego środowiska.
 
-- **Izolacja sieci:** izolacji sieci umożliwia jednoczesne uruchamianie wielu kopii identycznych środowiska SCVMM, bez konfliktów nazw komputerów.
+- **Izolacja sieci:** Izolacja sieci umożliwia jednoczesne uruchamianie wielu identycznych kopii środowiska SCVMM bez konfliktów nazw komputerów.
 
-- **Szablony maszyn wirtualnych:** szablonu maszyny wirtualnej jest maszyny wirtualnej, który miał jego nazwy i usunąć innych identyfikatorów. Po wdrożeniu szablonu maszyny Wirtualnej w środowisku SCVMM, Microsoft Test Manager generuje nowych identyfikatorów. Dzięki temu możesz wdrożyć wiele kopii maszyny wirtualnej, w tym samym środowisku, lub do wielu środowisk, a następnie uruchom maszyn wirtualnych jednocześnie.
+- **Szablony maszyn wirtualnych:** Szablon maszyny wirtualnej to maszyna wirtualna, która usunęła swoją nazwę i inne identyfikatory. Gdy szablon maszyny Wirtualnej jest wdrażany w środowisku SCVMM, Program Microsoft Test Manager generuje nowe identyfikatory. Dzięki temu można wdrożyć wiele kopii maszyny wirtualnej w tym samym środowisku lub wielu środowiskach, a następnie uruchomić maszyny wirtualne jednocześnie.
 
-- **Przechowywane maszyny wirtualne:** maszyny wirtualnej, która jest przechowywana w bibliotece projektu i zawiera unikatowych identyfikatorów.
+- **Przechowywane maszyny wirtualne:** Maszyna wirtualna, która jest przechowywana w bibliotece projektu i zawiera unikatowe identyfikatory.
 
 > [!NOTE]
-> Lab Management nie obsługuje programie SCVMM 2016.
+> Zarządzanie laboratorium nie obsługuje programu SCVMM 2016.
 
-Aby uzyskać informacji na temat programu SCVMM, zobacz [programu Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
+Aby uzyskać informacje o SCVMM, zobacz [Menedżer maszyn wirtualnych](/azure/devops/pipelines/?view=vsts).
 
-Środowiska standardowe oraz środowiska SCVMM obsługuje wiele z tych samych funkcji. Istnieją jednak pewne ważne różnice wziąć pod uwagę. W poniższej tabeli porównano funkcje, które są dostępne dla środowiska standardowe oraz środowiska SCVMM.
+Środowiska standardowe i środowiska SCVMM obsługują wiele tych samych funkcji. Istnieją jednak pewne istotne różnice do rozważenia. W poniższej tabeli porównano funkcje, które są dostępne dla środowisk standardowych i środowisk SCVMM.
 
-|Możliwość|Środowiska SCVMM|Środowisk standardowych|
+|Możliwości|Środowiska SCVMM|Środowiska standardowe|
 |-|------------------------|-|
 |**Testowanie**|||
-|Uruchamianie testów ręcznych|Obsługiwana|Obsługiwana|
-|Uruchom kodowane interfejsu użytkownika i innych testów automatycznych|Obsługiwana|Obsługiwana|
-|Zgłaszanie poważnych usterek za pomocą adapterów diagnostycznych|Obsługiwana|Obsługiwana|
+|Uruchamianie testów ręcznych|Obsługiwane|Obsługiwane|
+|Uruchamianie kodowanych interfejsów użytkownika i innych zautomatyzowanych testów|Obsługiwane|Obsługiwane|
+|Błędy bogate w pliki przy użyciu kart diagnostycznych|Obsługiwane|Obsługiwane|
 |**Tworzenie wdrożenia**|||
-|Automatyczne przepływy pracy kompilacja wdrażanie testy|Obsługiwana|Obsługiwana|
+|Przepływy pracy automatycznego wdrażania i wdrażania podczas testów|Obsługiwane|Obsługiwane|
 |**Tworzenie środowiska i zarządzanie nimi**|||
-|Maszyny fizyczne użycie oprócz maszyn wirtualnych|Nieobsługiwane|Obsługiwana|
-|Użyj maszyn wirtualnych innych firm|Nieobsługiwane|Obsługiwana|
-|Automatycznie zainstalować agentów testowych na komputerach w środowisku laboratoryjnym|Obsługiwana|Obsługiwana|
-|Zapisz i wdróż stan środowiska laboratoryjnego, korzystanie z environment snapshots|Obsługiwana|Nieobsługiwane|
-|Tworzenie środowisk laboratoryjnych z szablonów maszyny Wirtualnej|Obsługiwana|Nieobsługiwane|
-|Start/stop/wykonaj migawkę środowiska|Obsługiwana|Nieobsługiwane|
-|Połącz ze środowiskiem za pomocą podglądu środowiska|Obsługiwana|Obsługiwana|
-|Uruchamianie wielu kopii środowiska, w tym samym czasie przy użyciu izolacji sieciowej|Obsługiwana|Nieobsługiwane|
+|Używanie maszyn fizycznych oprócz maszyn wirtualnych|Nieobsługiwane|Obsługiwane|
+|Korzystanie z maszyn wirtualnych innych firm|Nieobsługiwane|Obsługiwane|
+|Automatyczne instalowanie agentów testowych na maszynach w środowisku laboratoryjnym|Obsługiwane|Obsługiwane|
+|Zapisywanie i wdrażanie stanu środowiska laboratoryjnego przy użyciu migawek środowiska|Obsługiwane|Nieobsługiwane|
+|Tworzenie środowisk laboratoryjnych na podstawie szablonów maszyn wirtualnych|Obsługiwane|Nieobsługiwane|
+|Środowisko start/stop/migawka|Obsługiwane|Nieobsługiwane|
+|Łączenie się ze środowiskiem przy użyciu Przeglądarki środowiska|Obsługiwane|Obsługiwane|
+|Uruchamianie wielu kopii środowiska w tym samym czasie przy użyciu izolacji sieci|Obsługiwane|Nieobsługiwane|
 
-### <a name="lab-management-concepts"></a>Pojęcia dotyczące usługi Lab management
+### <a name="lab-management-concepts"></a>Koncepcje zarządzania laboratorium
 
-Poniżej przedstawiono niektóre dodatkowe pojęcia, które należy poznać przed kontynuowaniem:
+Oto kilka dodatkowych pojęć, które należy zapoznać się z przed kontynuowaniem:
 
 |Termin|Opis|
 |-|-----------------|
-|Centrum laboratoryjnego|Obszar programu Microsoft Test Manager którym tworzyć i zarządzać środowiskami laboratoryjnymi.|
-|Laboratorium projektu DevOps platformy Azure|Kolekcja środowiska laboratoryjne, które tak skonfigurowany, można połączyć z nich i uruchamianie maszyn wirtualnych.|
-|Biblioteki projektu DevOps platformy Azure|Archiwum przechowywanych maszyn wirtualnych, szablonów i środowisk laboratoryjnych przechowywanych, które zostały zaimportowane do grupy hostów projektu. Można użyć elementów w bibliotece z SCVMM environments; jednak nie możesz dodać je bezpośrednio do standardowego środowiska. Nie można uruchomić elementy w bibliotece; Zamiast tego możesz użyć je do wdrożenia nowego środowiska.|
-|Wdrożonego środowiska|Środowisko laboratoryjne, które zostaną wdrożone do środowiska laboratoryjnego projektu tak, że możesz nawiązać z nim i uruchomić swoich komputerów.|
+|Centrum laboratorium|Obszar programu Microsoft Test Manager, w którym tworzysz środowiska laboratoryjne i zarządzasz nimi.|
+|Laboratorium projektu programu Azure DevOps|Kolekcja środowisk laboratoryjnych, które zostały skonfigurowane, dzięki czemu można połączyć się z nimi i uruchomić ich maszyn wirtualnych.|
+|Biblioteka projektów programu Azure DevOps|Archiwum przechowywanych maszyn wirtualnych, szablonów i przechowywanych środowisk laboratoryjnych, które zostały zaimportowane do grupy hostów projektu. Elementy w bibliotece można używać w środowiskach SCVMM; jednak nie można dodać ich bezpośrednio do standardowego środowiska. Nie można uruchomić elementów w bibliotece; zamiast tego można ich używać do wdrażania nowego środowiska.|
+|Wdrożone środowisko|Środowisko laboratoryjne, które zostało wdrożone w laboratorium projektu, dzięki czemu można połączyć się z nim i uruchomić jego maszyny.|
 
-Aby uzyskać więcej informacji o programie lab management zobacz:
+Aby uzyskać więcej informacji na temat zarządzania laboratorium, zobacz:
 
-* [Planowanie środowiska laboratoryjnego](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
-* [Administrowanie środowiska laboratoryjnego](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
-* [Konfigurowanie na potrzeby środowisk programu SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Zarządzaj uprawnieniami](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
-* [Ustawienia zmian](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
+* [Zaplanuj swoje laboratorium](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
+* [Administrowanie laboratorium](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
+* [Konfiguracja dla środowisk SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
+* [Zarządzanie uprawnieniami](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
+* [Zmienianie konfiguracji](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
 * [Rozwiązywanie problemów](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
 
-Aby uzyskać informacji na temat konfigurowania środowiska zobacz:
+Aby uzyskać informacje na temat konfigurowania środowisk, zobacz:
 
-* [Kompilowania i wydawania środowisk w chmurze](use-build-or-rm-instead-of-lab-management.md)
+* [Tworzenie i zwalnianie środowisk w chmurze](use-build-or-rm-instead-of-lab-management.md)
 * [Standardowe środowiska laboratoryjne](https://msdn.microsoft.com/library/ee390842.aspx)
-* [Środowiska (wirtualne) SCVMM](https://msdn.microsoft.com/library/ee943322.aspx)
-* [Tworzenie i używanie izolowane środowisko sieciowe](https://msdn.microsoft.com/library/ee518924.aspx)
+* [Środowiska SCVMM (wirtualne)](https://msdn.microsoft.com/library/ee943322.aspx)
+* [Tworzenie i używanie środowiska izolowanego sieci](https://msdn.microsoft.com/library/ee518924.aspx)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Instalowanie i konfigurowanie agentów testowych](../../test/lab-management/install-configure-test-agents.md)
-* [Podręcznik programu Visual Studio Lab Management](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
-* [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/)
+* [Przewodnik po zarządzaniu laboratorium w programie Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
+* [Blog usługi Microsoft DevOps](https://devblogs.microsoft.com/devops/)

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Konfigurowanie redukcji szumu w widokach raportu | Microsoft Docs'
+title: 'Jak: Konfigurowanie redukcji szumów w widokach raportu | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,69 +16,69 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74776335"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Instrukcje: Konfigurowanie redukcji szumu w widokach raportu
-Raporty wydajności można skonfigurować pod kątem obniżenia poziomu hałasu przez ograniczenie ilości danych prezentowanych w widoku drzewa wywołań i widoku alokacji. Dzięki zmniejszeniu szumu problemy z wydajnością są bardziej widoczne. Jest to przydatne podczas analizowania raportów wydajności.
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Jak: Konfigurowanie redukcji szumów w widokach raportu
+Raporty wydajności można skonfigurować w celu redukcji szumów, ograniczając ilość danych, która jest prezentowana w widoku Drzewa wywołań i widoku Alokacja. Dzięki redukcji szumów problemy z wydajnością są bardziej widoczne. Jest to przydatne podczas analizowania raportów wydajności.
 
- Opcje konfiguracji zmniejszania szumu obejmują następujące ustawienia:
+ Opcje konfiguracji redukcji szumów obejmują następujące ustawienia:
 
-- Trwa **przycinanie** Gdy raport jest analizowany, widok pominie funkcje, które następują ustawienia wartości i progu, które zostały skonfigurowane, zgodnie z opisem w dalszej procedurze przycinania. Domyślnie przycinanie jest włączone.
+- **Przycinanie** Po przeanalizowaniu raportu widok pominie funkcje, które mieszczą się w skonfigurowanych ustawieniach wartości i progu, zgodnie z opisem w następującej procedurze przycinania. Domyślnie przycinanie jest włączone.
 
-- Składanie Po włączeniu funkcji składania, kolejne funkcje w ścieżce, która spełnia skonfigurowane ustawienia, zostaną scalone zgodnie z opisem w poniższej procedurze składania. Domyślnie funkcja składania jest domyślnie włączona.
+- **Składanie** Jeśli włączysz składanie, kolejne funkcje na ścieżce, które spełniają skonfigurowane ustawienia, zostaną scalone, zgodnie z opisem w następującej procedurze składania. Domyślnie składanie jest domyślnie włączone.
 
 ### <a name="to-configure-trimming-for-a-performance-report"></a>Aby skonfigurować przycinanie raportu wydajności
 
-1. Gdy w wygenerowanym raporcie zostanie wyświetlony widok drzewa wywołań lub Widok alokacji, w menu **deweloper** kliknij pozycję **Profiler** , a następnie kliknij pozycję **Opcje redukcji szumów**.
+1. Gdy widok drzewa wywołań lub widok alokacji jest wyświetlany w wygenerowanym raporcie, w menu **Deweloper** kliknij polecenie **Profiler,** a następnie kliknij polecenie **Opcje redukcji szumów**.
 
-     Zostanie wyświetlone okno dialogowe **redukcja szumów** .
+     Zostanie wyświetlone okno dialogowe **Redukcja** szumów.
 
-2. Aby włączyć przycinanie, wykonaj następujące kroki:
+2. Aby włączyć przycinanie, wykonaj następujące czynności:
 
-    1. Wybierz pozycję **Włącz przycinanie**. To jest ustawienie domyślne.
+    1. Wybierz **włącz przycinanie**. Jest to ustawienie domyślne.
 
         > [!NOTE]
-        > W przypadku włączenia redukcji szumu w raporcie zostanie wyświetlony pasek informacji. Aby uzyskać więcej informacji, zobacz widok [drzewa wywołań](../profiling/call-tree-view.md) i [Widok przydziałów](../profiling/dotnet-memory-allocations-view.md).
+        > Jeśli redukcja szumów jest włączona, w raporcie zostanie wyświetlony pasek informacji. Aby uzyskać więcej informacji, zobacz [Widok drzewa wywołań](../profiling/call-tree-view.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).
 
-    2. Skonfiguruj ustawienie wartości za pomocą listy rozwijanej **wartość** i wybierz odpowiednie ustawienie.
+    2. Skonfiguruj ustawienie wartości przy użyciu listy rozwijanej **Wartość** i wybierając odpowiednie ustawienie.
 
-    3. Skonfiguruj odpowiednie ustawienie progu, wpisując wartość procentową w polu tekstowym **próg** .
+    3. Skonfiguruj żądane ustawienie progu, wpisując wartość procentową w polu **tekstowym Próg.**
 
-    4. Aby włączyć ostrzeżenie o zmniejszeniu szumu w wygenerowanym raporcie, wybierz opcję **Wyświetl ostrzeżenie, gdy jest włączone zmniejszenie szumu**. To jest ustawienie domyślne.
+    4. Aby włączyć ostrzeżenie o redukcji szumów w wygenerowanym raporcie, wybierz **opcję Wyświetl ostrzeżenie, gdy włączona jest funkcja Redukcji szumów**. Jest to ustawienie domyślne.
 
-3. Aby wyłączyć przycinanie, wyczyść pole wyboru **Włącz przycinanie**.
+3. Aby wyłączyć przycinanie, **wyczyść włącz przycinanie**.
 
 4. Kliknij przycisk **OK**.
 
-### <a name="to-configure-folding-for-a-performance-report"></a>Aby skonfigurować składanie raportu wydajności
+### <a name="to-configure-folding-for-a-performance-report"></a>Aby skonfigurować składanie dla raportu wydajności
 
-1. W menu **deweloper** kliknij pozycję **Profiler** , a następnie kliknij pozycję **Opcje redukcji szumów**.
+1. W menu **Deweloper** kliknij polecenie **Profiler,** a następnie kliknij polecenie **Opcje redukcji szumów**.
 
-     Zostanie wyświetlone okno dialogowe **redukcja szumów** .
+     Zostanie wyświetlone okno dialogowe **Redukcja** szumów.
 
-2. Aby włączyć składanie, wykonaj następujące kroki:
+2. Aby włączyć składanie, wykonaj następujące czynności:
 
-    1. Wybierz pozycję **Włącz**składanie. To jest ustawienie domyślne.
+    1. Wybierz **włącz składanie**. Jest to ustawienie domyślne.
 
         > [!NOTE]
-        > W przypadku włączenia redukcji szumu w raporcie zostanie wyświetlony pasek informacji. Aby uzyskać więcej informacji, zobacz widok [drzewa wywołań](../profiling/call-tree-view.md) i [Widok przydziałów](../profiling/dotnet-memory-allocations-view.md).
+        > Jeśli redukcja szumów jest włączona, w raporcie zostanie wyświetlony pasek informacji. Aby uzyskać więcej informacji, zobacz [Widok drzewa wywołań](../profiling/call-tree-view.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).
 
-    2. Skonfiguruj ustawienie wartości za pomocą listy rozwijanej **wartość** i wybierz odpowiednie ustawienie.
+    2. Skonfiguruj ustawienie wartości, korzystając z listy rozwijanej **Wartość** i wybierając odpowiednie ustawienie.
 
-    3. Skonfiguruj odpowiednie ustawienie progu, wpisując wartość procentową w polu tekstowym **próg** .
+    3. Skonfiguruj żądane ustawienie progu, wpisując wartość procentową w polu **tekstowym Próg.**
 
-    4. Aby włączyć ostrzeżenie o zmniejszeniu szumu w wygenerowanym raporcie, wybierz opcję **Wyświetl ostrzeżenie, gdy jest włączone zmniejszenie szumu**. To jest ustawienie domyślne.
+    4. Aby włączyć ostrzeżenie o redukcji szumów w wygenerowanym raporcie, wybierz **opcję Wyświetl ostrzeżenie, gdy włączona jest funkcja Redukcji szumów**. Jest to ustawienie domyślne.
 
-3. Aby wyłączyć składanie, wyczyść pole wyboru **Włącz**składanie.
+3. Aby wyłączyć składanie, **wyczyść włącz składanie**.
 
 4. Kliknij przycisk **OK**.
 
-## <a name="see-also"></a>Zobacz także
-- [Dostosowywanie widoków raportów narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)
-- [Instrukcje: wykluczanie lub uwzględnianie krótkich funkcji z instrumentacji](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+## <a name="see-also"></a>Zobacz też
+- [Dostosowywanie widoków raportu narzędzi wydajności](../profiling/customizing-performance-tools-report-views.md)
+- [Jak: Wykluczyć lub uwzględnić krótkie funkcje z oprzyrządowania](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Widok drzewa wywołań](../profiling/call-tree-view.md)
 - [Widok alokacji](../profiling/dotnet-memory-allocations-view.md)

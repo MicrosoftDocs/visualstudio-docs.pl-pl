@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Określanie pierwszego obiektu docelowego do skompilowania | Microsoft Docs'
+title: 'Jak: Określ, który cel zbudować jako pierwszy | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,70 +13,70 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e008e3181cd7c633179f35e7639265a2495fafe2
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633801"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Instrukcje: Określanie pierwszego obiektu docelowego do skompilowania
+# <a name="how-to-specify-which-target-to-build-first"></a>Jak: Określ, który cel ma być najpierw zbudowany
 
-Plik projektu może zawierać jeden lub więcej elementów `Target`, które definiują sposób kompilowania projektu. Aparat Microsoft Build Engine (MSBuild) kompiluje pierwszy znaleziony projekt i wszelkie zależności, chyba że plik projektu zawiera atrybut `DefaultTargets`, atrybut `InitialTargets` lub element docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-Target** .
+Plik projektu może zawierać `Target` jeden lub więcej elementów, które definiują sposób budowy projektu. Aparat microsoft build engine (MSBuild) tworzy pierwszy projekt, który znajdzie, a wszelkie `DefaultTargets` zależności, `InitialTargets` chyba że plik projektu zawiera atrybut, atrybut lub obiekt docelowy jest określony w wierszu polecenia przy użyciu przełącznika **-target.**
 ## <a name="use-the-initialtargets-attribute"></a>Użyj atrybutu InitialTargets
 
- Atrybut `InitialTargets` elementu `Project` określa element docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w atrybucie `DefaultTargets`.
-Atrybut `InitialTargets` elementu `Project` określa element docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w atrybucie `DefaultTargets`.
+ Atrybut `InitialTargets` `Project` elementu określa obiekt docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli `DefaultTargets` obiekty docelowe są określone w wierszu polecenia lub w atrybucie.
+Atrybut `InitialTargets` `Project` elementu określa obiekt docelowy, który zostanie uruchomiony jako pierwszy, nawet jeśli `DefaultTargets` obiekty docelowe są określone w wierszu polecenia lub w atrybucie.
 
-#### <a name="to-specify-one-initial-target"></a>Aby określić jeden początkowy element docelowy
+#### <a name="to-specify-one-initial-target"></a>Aby określić jeden początkowy cel
 
-- Określ domyślny cel w atrybucie `InitialTargets` elementu `Project`. Na przykład:
+- Określ domyślny `InitialTargets` obiekt docelowy `Project` w atrybucie elementu. Przykład:
 
    `<Project InitialTargets="Clean">`
 
-  Można określić więcej niż jeden początkowy element docelowy w atrybucie `InitialTargets`, wymieniając elementy docelowe w kolejności i używając średnika, aby oddzielić każdy element docelowy. Elementy docelowe na liście zostaną uruchomione sekwencyjnie.
+  Można określić więcej niż jeden `InitialTargets` początkowy cel w atrybucie, wymieniając obiekty docelowe w kolejności i używając średnika do oddzielenia każdego obiektu docelowego. Obiekty docelowe na liście będą uruchamiane sekwencyjnie.
 
-#### <a name="to-specify-more-than-one-initial-target"></a>Aby określić więcej niż jeden początkowy element docelowy
+#### <a name="to-specify-more-than-one-initial-target"></a>Aby określić więcej niż jeden początkowy cel
 
-- Utwórz listę początkowych elementów docelowych rozdzielonych średnikami, w atrybucie `InitialTargets` elementu `Project`. Na przykład, aby uruchomić `Clean` cel, a następnie element docelowy `Compile`, wpisz:
+- Lista początkowych celów, oddzielone średnikami, `InitialTargets` w atrybucie `Project` elementu. Na przykład, aby `Clean` uruchomić obiekt `Compile` docelowy, a następnie miejsce docelowe, wpisz:
 
      `<Project InitialTargets="Clean;Compile">`
 
-## <a name="use-the-defaulttargets-attribute"></a>Użyj atrybutu DefaultTargets —
+## <a name="use-the-defaulttargets-attribute"></a>Używanie atrybutu DefaultTargets
 
- Atrybut `DefaultTargets` elementu `Project` określa, które elementy docelowe lub docelowe są kompilowane, jeśli element docelowy nie zostanie jawnie określony w wierszu polecenia. Jeśli obiekty docelowe są określone w atrybucie `InitialTargets` i `DefaultTargets` i nie określono elementu docelowego w wierszu polecenia, MSBuild uruchamia elementy docelowe określone w `InitialTargets` atrybutu, a następnie obiekty docelowe określone w atrybucie `DefaultTargets`.
+ Atrybut `DefaultTargets` `Project` elementu określa, który obiekt docelowy lub obiekty docelowe są budowane, jeśli obiekt docelowy nie jest wyraźnie określony w wierszu polecenia. Jeśli obiekty docelowe `InitialTargets` są `DefaultTargets` określone zarówno w i atrybuty i nie ma obiektu docelowego jest określony w wierszu polecenia, MSBuild uruchamia obiekty docelowe określone w `InitialTargets` atrybucie, a następnie cele określone w `DefaultTargets` atrybucie.
 
-#### <a name="to-specify-one-default-target"></a>Aby określić jeden domyślny obiekt docelowy
+#### <a name="to-specify-one-default-target"></a>Aby określić jeden domyślny cel
 
-- Określ domyślny cel w atrybucie `DefaultTargets` elementu `Project`. Na przykład:
+- Określ domyślny `DefaultTargets` obiekt docelowy `Project` w atrybucie elementu. Przykład:
 
    `<Project DefaultTargets="Compile">`
 
-  Można określić więcej niż jeden domyślny obiekt docelowy w atrybucie `DefaultTargets`, wymieniając elementy docelowe w kolejności i używając średnika, aby oddzielić każdy element docelowy. Elementy docelowe na liście zostaną uruchomione sekwencyjnie.
+  Można określić więcej niż jeden `DefaultTargets` domyślny cel w atrybucie, wymieniając obiekty docelowe w kolejności i używając średnika do oddzielenia każdego obiektu docelowego. Obiekty docelowe na liście będą uruchamiane sekwencyjnie.
 
-#### <a name="to-specify-more-than-one-default-target"></a>Aby określić więcej niż jeden domyślny obiekt docelowy
+#### <a name="to-specify-more-than-one-default-target"></a>Aby określić więcej niż jeden domyślny cel
 
-- Utwórz listę domyślnych obiektów docelowych oddzielonych średnikami, w atrybucie `DefaultTargets` elementu `Project`. Na przykład, aby uruchomić `Clean` cel, a następnie element docelowy `Compile`, wpisz:
+- Lista domyślnych obiektów docelowych, oddzielone `DefaultTargets` średnikami, `Project` w atrybucie elementu. Na przykład, aby `Clean` uruchomić obiekt `Compile` docelowy, a następnie miejsce docelowe, wpisz:
 
      `<Project DefaultTargets="Clean;Compile">`
 
-## <a name="use-the--target-switch"></a>Użyj przełącznika-Target
+## <a name="use-the--target-switch"></a>Korzystanie z przełącznika -target
 
- Jeśli domyślny element docelowy nie jest zdefiniowany w pliku projektu lub jeśli nie chcesz używać tego domyślnego obiektu docelowego, możesz użyć przełącznika wiersza polecenia **-Target** , aby określić inny element docelowy. Element docelowy lub docelowy określone za pomocą przełącznika **-Target** są uruchamiane zamiast obiektów docelowych określonych przez atrybut `DefaultTargets`. Elementy docelowe określone w atrybucie `InitialTargets` zawsze są uruchamiane jako pierwsze.
+ Jeśli domyślny cel nie jest zdefiniowany w pliku projektu lub jeśli nie chcesz używać tego domyślnego obiektu docelowego, możesz użyć przełącznika wiersza polecenia **-target,** aby określić inny cel. Obiekt docelowy lub obiekty docelowe określone za pomocą przełącznika `DefaultTargets` **-target** są uruchamiane zamiast obiektów docelowych określonych przez atrybut. Obiekty docelowe `InitialTargets` określone w atrybucie zawsze są uruchamiane jako pierwsze.
 
-#### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby użyć elementu docelowego innego niż domyślny obiekt docelowy
+#### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby najpierw użyć celu innego niż domyślny cel
 
-- Określ element docelowy jako pierwszy element docelowy przy użyciu przełącznika wiersza polecenia **-Target** . Na przykład:
+- Określ obiekt docelowy jako pierwszy obiekt docelowy za pomocą przełącznika **-target** wiersza polecenia. Przykład:
 
      `msbuild file.proj -target:Clean`
 
-#### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Aby użyć kilku obiektów docelowych, które są inne niż domyślne elementy docelowe
+#### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Aby najpierw użyć kilku celów innych niż domyślne cele
 
-- Utwórz listę elementów docelowych rozdzielonych średnikami lub przecinkami przy użyciu przełącznika wiersza polecenia **-Target** . Na przykład:
+- Wymień obiekty docelowe oddzielone średnikami lub przecinkami za pomocą przełącznika **-target** command line. Przykład:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
 ## <a name="see-also"></a>Zobacz też
 
-- [MSBuild](../msbuild/msbuild.md)
-- [Docelowe elementy](../msbuild/msbuild-targets.md)
-- [Instrukcje: czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)
+- [Msbuild](../msbuild/msbuild.md)
+- [Cele](../msbuild/msbuild-targets.md)
+- [Jak: Czyszczenie kompilacji](../msbuild/how-to-clean-a-build.md)

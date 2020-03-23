@@ -1,5 +1,5 @@
 ---
-title: Find — pole polecenia
+title: Pole wyszukiwania polecenia
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,47 +12,47 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591531"
 ---
 # <a name="findcommand-box"></a>Find/Command — Pole
 
-Możesz wyszukiwać tekst i uruchamiać polecenia programu Visual Studio z poziomu pola **Znajdź/polecenie** . Pole **Znajdź/polecenie** jest nadal dostępne jako kontrolka paska narzędzi, ale nie jest już widoczne domyślnie. Możesz wyświetlić okno **Znajdź/polecenie** , wybierając pozycję **Dodaj lub usuń przyciski** na pasku narzędzi **Standardowy** , a następnie wybierając pozycję **Znajdź**.
+Można wyszukiwać tekst i uruchamiać polecenia programu Visual Studio w polu **Znajdź/Polecenie.** Pole **Znajdź/Polecenie** jest nadal dostępne jako kontrolka paska narzędzi, ale nie jest już domyślnie widoczne. Okno **Znajdź/Polecenie** można wyświetlić, wybierając pozycję **Dodaj lub usuń przyciski** na pasku narzędzi **Standardowy,** a następnie wybierając polecenie **Znajdź**.
 
-Aby uruchomić polecenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], należy oznakować je znakiem większym niż ( **>** ).
+Aby uruchomić [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] polecenie, należy go poprzedzać**>** znakiem większym niż ( ).
 
-Okno **Znajdź/polecenie** zachowuje ostatnie 20 wprowadzonych elementów i wyświetla je na liście rozwijanej. Możesz przechodzić przez listę, wybierając **klawisze strzałek**.
+Pole **Znajdź/Polecenia** zachowuje ostatnie 20 wprowadzonych elementów i wyświetla je na liście rozwijanej. Możesz poruszać się po liście, wybierając **klawisze strzałek**.
 
 ![Znajdź&#47;pole polecenia](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>Wyszukiwanie tekstu
 
-Domyślnie po określeniu tekstu w polu **Znajdź/polecenie** , a następnie wybraniu klawisza **Enter** , program Visual Studio przeszukuje bieżący dokument lub okno narzędzia przy użyciu opcji określonych w oknie dialogowym **Znajdź w plikach** . Aby uzyskać więcej informacji, zobacz [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md).
+Domyślnie po określeniu tekstu w polu **Znajdź/Polecenie,** a następnie wybraniu **klawisza Enter** program Visual Studio przeszukuje bieżący dokument lub okno narzędzia przy użyciu opcji określonych w oknie dialogowym **Znajdowanie w plikach.** Aby uzyskać więcej informacji, zobacz [Znajdowanie i zamienianie tekstu](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Wprowadzanie poleceń
 
-Aby użyć pola **Znajdź/polecenie** w celu wystawienia jednego [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] polecenia lub aliasu zamiast wyszukiwania tekstu, należy poprzedzić polecenie znakiem większym niż ( **>** ). Na przykład:
+Aby użyć pola **Znajdź/Polecenia** do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wydania pojedynczego polecenia lub aliasu zamiast wyszukiwania tekstu, przedmuchuj polecenie symbolem większym niż (**>**). Przykład:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
-Alternatywnie można także użyć okna **polecenia** do wprowadzania i wykonywania pojedynczych lub wielu poleceń. Niektóre polecenia lub aliasy mogą być wprowadzane i wykonywane samodzielnie; inne osoby mają wymagane argumenty w składni. Aby zapoznać się z listą poleceń, które mają argumenty, zobacz [Visual Studio Commands](../ide/reference/visual-studio-commands.md).
+Alternatywnie można również użyć okna **Polecenia,** aby wprowadzić i wykonać pojedyncze lub wielokrotne polecenia. Niektóre polecenia lub aliasy mogą być wprowadzane i wykonywane samodzielnie; inne mają wymagane argumenty w ich składni. Aby uzyskać listę poleceń, które mają argumenty, zobacz [Polecenia programu Visual Studio](../ide/reference/visual-studio-commands.md).
 
 ## <a name="escape-characters"></a>Znaki ucieczki
 
-Znak daszka ( **^** ) w poleceniu oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Można go użyć do osadzenia prostych cudzysłowów ( **"** ), spacji, ukośników wiodących, karetki lub innych znaków literału w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład:
+Znak przesiadki (**^**) w poleceniu oznacza, że znak bezpośrednio po nim jest interpretowany dosłownie, a nie jako znak kontrolny. Może to być używane do osadzania prostych cudzysłowów (**"**), spacji, ukośników wiodących, leżanek lub innych znaków literału w parametrze lub wartości przełącznika, z wyjątkiem nazw przełączników. Przykład:
 
 ```
 >Edit.Find ^^t /regex
 ```
 
-Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany.
+Czyn y pielęgnacyjny działa tak samo, niezależnie od tego, czy znajduje się wewnątrz, czy poza cudzysłowami. Jeśli ciesza jest ostatnim znakiem w wierszu, jest ignorowana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [okno Polecenie](../ide/reference/command-window.md)
+- [Okno polecenia](../ide/reference/command-window.md)
 - [Znajdowanie i zastępowanie tekstu](../ide/finding-and-replacing-text.md)

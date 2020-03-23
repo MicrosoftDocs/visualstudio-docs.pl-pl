@@ -1,5 +1,5 @@
 ---
-title: Zmień nazwę, nazwa_pliku, aby dopasować typ
+title: Zmienianie nazwy pliku w celu dopasowania do typu
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -11,60 +11,60 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594399"
 ---
-# <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Wpisz nazwę pliku lub nazwę pliku do refaktoryzacji typu synchronizacji
+# <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Synchronizowanie typu z nazwami plików lub nazwy pliku z refaktoryzacją typu
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
-- Język C#
+- C#
 
-- Język Visual Basic
+- Visual Basic
 
-**Co:** pozwala zmienić nazwę typu, aby dopasować nazwę pliku lub zmienić nazwę pliku, który będzie pasował do typu, które zawiera.
+**Co:** Umożliwia zmianę nazwy typu w celu dopasowania nazwy pliku lub zmianę nazwy pliku w celu dopasowania go do typu.
 
-**Kiedy:** zmieniono nazwę pliku lub typ i nie zostały jeszcze zaktualizowane odpowiedniego pliku lub typ do dopasowania.
+**Kiedy:** Zmieniono nazwę pliku lub typu i nie zaktualizowano jeszcze odpowiedniego pliku lub typu, aby dopasować go.
 
-**Dlaczego:** umieszczenie typu w pliku o innej nazwie lub odwrotnie, go, które są trudne do znalezienia, czego szukasz. Zmieniając typ lub nazwa pliku, kod staje się bardziej czytelny i łatwiejszą nawigacją.
+**Dlaczego?** Umieszczenie typu w pliku o innej nazwie lub odwrotnie, trudno jest znaleźć to, czego szukasz. Zmieniając nazwę typu lub nazwy pliku, kod staje się bardziej czytelny i łatwiejszy w nawigacji.
 
 > [!NOTE]
-> Ta refaktoryzacja nie jest jeszcze dostępna dla projektów .NET Standard i .NET Core.
+> Ta refaktoryzowania nie jest jeszcze dostępna dla projektów .NET Standard i .NET Core.
 
-## <a name="how-to"></a>Instrukcje
+## <a name="how-to"></a>Porady
 
-1. Zaznacz lub umieść kursor tekst wewnątrz nazwę typu do synchronizowania:
+1. Wyróżnij lub umieść kursor tekstowy wewnątrz nazwy typu do synchronizacji:
 
    - C#:
 
-       ![Wyróżniony kod-C#](media/synctype-highlight-cs.png)
+       ![Wyróżniony kod - C #](media/synctype-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Wyróżniony kod - języka Visual Basic](media/synctype-highlight-vb.png)
+       ![Wyróżniony kod — Visual Basic](media/synctype-highlight-vb.png)
 
 2. Następnie wykonaj jedną z następujących czynności:
 
-   - **Keyboard**
-      - Naciśnij klawisz **Ctrl**+ **.** do wyzwalacza **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zmień nazwę pliku do *TypeName*.cs** z okna podręcznego okna (wersja zapoznawcza), gdzie *TypeName* to nazwa wybranego typu.
-      - Naciśnij klawisz **Ctrl**+ **.** do wyzwalacza **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zmienić nazwę typu do _Filename_**  z okna podręcznego okna (wersja zapoznawcza), gdzie *Filename* jest nazwa bieżącego pliku.
-   - **Myszy**
-      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **Zmień nazwę pliku do *TypeName*.cs** z okna podręcznego okna (wersja zapoznawcza), gdzie *TypeName* to nazwa wybranego typu.
-      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu, a następnie wybierz **zmienić nazwę typu do _Filename_**  z okna podręcznego okna (wersja zapoznawcza), gdzie  *Nazwa pliku* jest nazwa bieżącego pliku.
+   - **Klawiatura**
+      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania** i wybrać **opcję Zmień nazwę pliku na *TypeName*.cs** z okna podglądu, gdzie *Nazwa type jest* nazwą wybranego typu.
+      - Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania** i wybrać **opcję Zmień nazwę typu na Nazwa _pliku_ ** z okna podglądu , gdzie *nazwa pliku* jest nazwą bieżącego pliku.
+   - **Mysz**
+      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz **polecenie Zmień nazwę pliku na *TypeName*.cs** w oknie podglądu, gdzie *Nazwa typename* jest nazwą wybranego typu.
+      - Kliknij prawym przyciskiem myszy kod, wybierz menu **Szybkie akcje i Refaktoryzowania** i wybierz **polecenie Zmień nazwę typu Nazwa _pliku_ ** w oknie podglądu, gdzie *nazwa pliku* jest nazwą bieżącego pliku.
 
-   Typ lub pliku została zmieniona.
+   Nazwa typu lub pliku została zmieniona.
 
-   - C#: W przykładzie poniżej plik **MyClass.cs** została zmieniona na **MyNewClass.cs** Period z nazwą typu.
+   - C#: W poniższym przykładzie **nazwa pliku MyClass.cs** została zmieniona na **MyNewClass.cs,** aby dopasować nazwę typu.
 
-       ![Wynik wbudowaneC#](media/synctype-result-cs.png)
+       ![Wynik wbudowany C #](media/synctype-result-cs.png)
 
-   - Visual Basic: W przykładzie poniżej plik **Employee.vb** została zmieniona na **Person.vb** Period z nazwą typu.
+   - Visual Basic: W poniższym przykładzie plik **Employee.vb** został przemianowany na **Person.vb,** aby dopasować nazwę typu.
 
-       ![Wynik wbudowanego Visual Basic](media/synctype-result-vb.png)
+       ![Wynik wbudowany Visual Basic](media/synctype-result-vb.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie języka Python w usłudze Azure App Service (Windows)
-description: Jak zainstalować interpreter języka Python i bibliotek w usłudze Azure App Service i konfigurowanie aplikacji sieci web, aby poprawnie odwołać się do tego interpretera.
+description: Jak zainstalować interpreter języka Python i biblioteki w usłudze Azure App Service i konfigurowanie aplikacji sieci web, aby poprawnie odwoływać się do tego interpretera.
 ms.date: 01/07/2019
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -12,43 +12,43 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62535992"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service (Windows)
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko języka Python w usłudze Azure App Service (Windows)
 
 > [!Important]
-> Microsoft jest przestarzała rozszerzenia języka Python dla usługi App Service na Windows zgodnie z opisem w tym artykule na rzecz bezpośrednim wdrożeniu do [usługi App Service w systemie Linux](publishing-python-web-applications-to-azure-from-visual-studio.md).
+> Firma Microsoft przeceniła rozszerzenia języka Python dla usługi App Service w systemie Windows, zgodnie z opisem w tym artykule na rzecz bezpośredniego wdrożenia usługi App Service w [systemie Linux.](publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-[Usługa Azure App Service](https://azure.microsoft.com/services/app-service/) to oferta platformy jako usługi dla aplikacji sieci web, czy są one dostępne za pośrednictwem przeglądarki, interfejsów API REST używany przez własnych klientów lub wyzwalane przez zdarzenia przetwarzania witryn. Usługa App Service w pełni obsługuje przy użyciu języka Python do wdrożenia aplikacji.
+[Usługa Azure App Service](https://azure.microsoft.com/services/app-service/) to oferta platformy jako usługi dla aplikacji sieci web, niezależnie od tego, czy są to witryny dostępne za pośrednictwem przeglądarki, interfejsy API REST używane przez własnych klientów, czy przetwarzanie wyzwalane zdarzeniami. Usługa app service w pełni obsługuje za pomocą języka Python do implementowania aplikacji.
 
-Możliwe do dostosowania obsługi języka Python dla usługi Azure App Service jest przewidziana zbiór usługi App Service *rozszerzeń witryny* czy każdy zawiera określoną wersję środowiska uruchomieniowego Python. Następnie można zainstalować wszystkie odpowiednie pakiety bezpośrednio w środowisku, zgodnie z opisem w tym artykule. Dostosowując środowiska w samej usługi aplikacji, nie trzeba Obsługa pakietów w projektach aplikacji sieci web lub przekazać je za pomocą kodu aplikacji.
+Konfigurowalna obsługa języka Python dla usługi Azure App Service jest dostępna jako zestaw *rozszerzeń lokacji* usługi App Service, z których każda zawiera określoną wersję środowiska wykonawczego języka Python. Następnie można zainstalować wszystkie żądane pakiety bezpośrednio w tym środowisku, zgodnie z opisem w tym artykule. Dostosowując środowisko w samej usłudze app service, nie trzeba obsługiwać pakietów w projektach aplikacji sieci web ani przekazywać ich za pomocą kodu aplikacji.
 
 > [!Tip]
-> Mimo że usługi App Service domyślnie ma środowisko Python 2.7 i języka Python 3.4 zainstalowane w katalogu głównego folderów na serwerze, nie można dostosować lub instalowanie pakietów w tych środowiskach, ani nie powinna zależeć od ich obecności. Zamiast tego należy polegać na rozszerzenie witryny, które możesz kontrolować, zgodnie z opisem w tym artykule.
+> Chociaż usługa App Service domyślnie ma Python 2.7 i Python 3.4 zainstalowany w folderach głównych na serwerze, nie można dostosować lub zainstalować pakiety w tych środowiskach, ani nie należy polegać na ich obecności. Zamiast tego należy polegać na rozszerzenie witryny, które można kontrolować, zgodnie z opisem w tym artykule.
 
-## <a name="choose-a-python-version-through-the-azure-portal"></a>Wybierz wersję języka Python za pomocą witryny Azure portal
+## <a name="choose-a-python-version-through-the-azure-portal"></a>Wybieranie wersji języka Python za pośrednictwem witryny Azure portal
 
-1. Tworzenie usługi App Service dla aplikacji sieci web w witrynie Azure portal.
-1. Na stronie usługi App Service, przewiń do **narzędzia programistyczne** zaznacz **rozszerzenia**, a następnie wybierz **+ Dodaj**.
-1. Przewiń w dół na liście, aby rozszerzenia, która zawiera wersję środowiska Python, chcesz, aby:
+1. Utwórz usługę app dla aplikacji sieci web w witrynie Azure portal.
+1. Na stronie Usługi aplikacji przewiń do sekcji **Narzędzia programistyczne,** wybierz pozycję **Rozszerzenia**, a następnie wybierz pozycję **+ Dodaj**.
+1. Przewiń w dół na liście do rozszerzenia zawierającego żądaną wersję języka Python:
 
-    ![Witryny Azure portal przedstawiający rozszerzenia języka Python](media/python-on-azure-extensions.png)
+    ![Portal Azure z rozszerzeniami języka Python](media/python-on-azure-extensions.png)
 
     > [!Tip]
-    > Jeśli potrzebujesz starszej wersji środowiska Python i nie jest widoczna na liście rozszerzeń witryny, można nadal zainstalować go za pomocą usługi Azure Resource Manager zgodnie z opisem w następnej sekcji.
+    > Jeśli potrzebujesz starszej wersji języka Python i nie widzisz jej na liście w rozszerzeniach lokacji, nadal możesz zainstalować ją za pośrednictwem usługi Azure Resource Manager, zgodnie z opisem w następnej sekcji.
 
-1. Zaznacz rozszerzenie, zaakceptuj postanowienia prawne, a następnie wybierz **OK**.
-1. Po zakończeniu instalacji, w portalu pojawi się powiadomienie.
+1. Wybierz rozszerzenie, zaakceptuj warunki prawne, a następnie wybierz **przycisk OK**.
+1. Powiadomienie pojawi się w portalu po zakończeniu instalacji.
 
-## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Wybierz wersję języka Python za pomocą usługi Azure Resource Manager
+## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Wybieranie wersji języka Python za pośrednictwem usługi Azure Resource Manager
 
-Jeśli wdrażasz usługi App Service przy użyciu szablonu usługi Azure Resource Manager, należy dodać rozszerzenie witryny jako zasób. W szczególności rozszerzenie jest wyświetlane jako zasób zagnieżdżonych ( `resources` obiekt w obszarze `resources`) z typem `siteextensions` i nazwę z [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+Jeśli wdrażasz usługę app service z szablonem usługi Azure Resource Manager, dodaj rozszerzenie lokacji jako zasób. W szczególności rozszerzenie jest wyświetlane jako zagnieżdżony `resources` zasób (obiekt pod) `resources`o typie `siteextensions` i nazwie z [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
-Na przykład, po dodaniu odwołania do `python361x64` (Python 3.6.1 x 64), Twój szablon może wyglądać podobnie do następującej (niektóre właściwości pominięcia):
+Na przykład po dodaniu `python361x64` odwołania do (Python 3.6.1 x64), szablon może wyglądać następująco (niektóre właściwości pominięte):
 
 ```json
 "resources": [
@@ -74,33 +74,33 @@ Na przykład, po dodaniu odwołania do `python361x64` (Python 3.6.1 x 64), Twój
   }
 ```
 
-## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Ustaw plik web.config, aby wskazać interpreter języka Python
+## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Ustawianie pliku web.config w celu wskazanie interpretera języka Python
 
-Po zainstalowaniu rozszerzenia witryny (za pośrednictwem portalu lub szablonu usługi Azure Resource Manager), następnie punktu aplikacji *web.config* pliku do interpretera języka Python. *Web.config* pliku powoduje, że serwer sieci web usług IIS (7 i nowsze), które są uruchomiony w usłudze App Service o jak powinna obsługiwać żądania języka Python za pomocą HttpPlatform (zalecane) lub FastCGI.
+Po zainstalowaniu rozszerzenia lokacji (za pośrednictwem portalu lub szablonu usługi Azure Resource Manager) następnie należy skierować plik *web.config* aplikacji do interpretera języka Python. Plik *web.config* instruuje serwer sieci Web usług IIS (7+) uruchomiony w usłudze App Service o tym, jak powinien obsługiwać żądania języka Python za pośrednictwem protokołu HttpPlatform (zalecane) lub FastCGI.
 
-Rozpocznij, wyszukując pełną ścieżkę do rozszerzenia witryny *python.exe*, a następnie utwórz i zmodyfikuj odpowiednie *web.config* pliku.
+Rozpocznij od znalezienia pełnej ścieżki do *python.exe rozszerzenia witryny,* a następnie utwórz i zmodyfikuj odpowiedni plik *web.config.*
 
-### <a name="find-the-path-to-pythonexe"></a>Znaleźć ścieżkę do python.exe
+### <a name="find-the-path-to-pythonexe"></a>Znajdź ścieżkę do pliku python.exe
 
-Rozszerzenie witryny Python jest zainstalowany na serwerze, w obszarze *d:\home* w folderze odpowiedniej wersji środowiska Python i architektura (z wyjątkiem kilku starszych wersji). Na przykład Python 3.6.1 x64 jest zainstalowany w *d:\home\python361x64*. Pełna ścieżka do interpretera języka Python jest następnie *d:\home\python361x64\python.exe*.
+Rozszerzenie witryny Języka Python jest zainstalowane na serwerze w obszarze *d:\home* w folderze odpowiednim dla wersji i architektury języka Python (z wyjątkiem kilku starszych wersji). Na przykład Python 3.6.1 x64 jest zainstalowany w *d:\home\python361x64*. Pełna ścieżka do interpretera języka Python to *d:\home\python361x64\python.exe*.
 
-Aby wyświetlić określoną ścieżkę w usłudze App Service, wybierz **rozszerzenia** na stronie usługi App Service, następnie wybierz rozszerzenie na liście.
+Aby wyświetlić określoną ścieżkę w usłudze app service, wybierz **rozszerzenia** na stronie Usługi aplikacji, a następnie wybierz rozszerzenie na liście.
 
 ![Lista rozszerzeń w usłudze Azure App Service](media/python-on-azure-extension-list.png)
 
-Spowoduje to otwarcie strony opis rozszerzenia zawierający ścieżkę:
+Ta akcja powoduje otwarcie strony opisu rozszerzenia zawierającej ścieżkę:
 
-![Szczegóły rozszerzenia usługi Azure App Service](media/python-on-azure-extension-detail.png)
+![Szczegółowe informacje o rozszerzeniu usługi Azure App Service](media/python-on-azure-extension-detail.png)
 
-Jeśli masz problemy z wyświetlaniem ścieżki dla rozszerzenia, można znaleźć je ręcznie przy użyciu konsoli:
+Jeśli masz problemy z wyświetlaniem ścieżki rozszerzenia, możesz ją znaleźć ręcznie za pomocą konsoli:
 
-1. Na stronie usługi App Service, wybierz **narzędzia programistyczne** > **konsoli**.
-1. Wprowadź polecenie `ls ../home` lub `dir ..\home` się foldery najwyższego poziomu rozszerzeń, takich jak *Python361x64*.
-1. Wprowadź polecenie, takie jak `ls ../home/python361x64` lub `dir ..\home\python361x64` Aby sprawdzić, czy zawiera on *python.exe* i inne pliki interpretera.
+1. Na stronie Usługi aplikacji wybierz**konsolę**narzędzi **programistycznych** > .
+1. Wprowadź polecenie `ls ../home` `dir ..\home` lub zobacz foldery rozszerzeń najwyższego poziomu, takie jak *Python361x64*.
+1. Wprowadź polecenie, `ls ../home/python361x64` `dir ..\home\python361x64` takie jak lub sprawdź, czy zawiera *ono plik python.exe* i inne pliki interpretera.
 
-### <a name="configure-the-httpplatform-handler"></a>Konfigurowanie obsługi HttpPlatform
+### <a name="configure-the-httpplatform-handler"></a>Konfigurowanie programu obsługi httpplatform
 
-Moduł HttpPlatform przekazuje połączenia z gniazdami bezpośrednio do autonomicznego proces języka Python. Przekazywanego ta umożliwia uruchamianie dowolnego serwera sieci web, ale wymaga skrypt uruchamiania, który uruchamia lokalny serwer internetowy. Określ skrypt w `<httpPlatform>` elementu *web.config*, gdzie `processPath` atrybutu punkty rozszerzenia witryny interpreter języka Python i `arguments` atrybut wskazuje się skrypt i argumenty chcesz udostępnić:
+Moduł HttpPlatform przekazuje połączenia gniazda bezpośrednio do samodzielnego procesu Pythona. Ten przekaz umożliwia uruchomienie dowolnego serwera sieci web, ale wymaga skryptu startowego, który uruchamia lokalny serwer sieci Web. Skrypt można określić `<httpPlatform>` w elemencie *web.config*, gdzie `processPath` atrybut wskazuje na `arguments` interpreter Języka Python rozszerzenia witryny, a atrybut wskazuje skrypt i wszelkie argumenty, które chcesz podać:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -123,11 +123,11 @@ Moduł HttpPlatform przekazuje połączenia z gniazdami bezpośrednio do autonom
 </configuration>
 ```
 
-`HTTP_PLATFORM_PORT` Zmienna środowiskowa, pokazano poniżej zawiera port lokalny serwer powinien nasłuchiwać połączeń z hostem lokalnym. W tym przykładzie również pokazano, jak utworzyć inną zmienną środowiskową, jeśli to konieczne, w tym przypadku `SERVER_PORT`.
+Zmienna środowiskowa `HTTP_PLATFORM_PORT` pokazana w tym miejscu zawiera port, na którym serwer lokalny powinien nasłuchiwał połączeń z localhost. W tym przykładzie pokazano również, jak utworzyć inną `SERVER_PORT`zmienną środowiskową, w razie potrzeby, w tym przypadku .
 
-### <a name="configure-the-fastcgi-handler"></a>Konfigurowanie obsługi interfejsu FastCGI
+### <a name="configure-the-fastcgi-handler"></a>Konfigurowanie programu obsługi FastCGI
 
-FastCGI jest interfejsem, który działa na poziomie żądania. IIS odbiera połączenia przychodzące i przekazuje poszczególne żądania do aplikacji WSGI uruchomiony w jednej lub więcej trwały Python przetwarza. [Pakietu wfastcgi](https://pypi.io/project/wfastcgi) jest wstępnie zainstalowany i skonfigurowany przy użyciu każdego rozszerzenia witryny języka Python, dzięki czemu możesz go łatwo uaktywnić, dołączając kod w *web.config* , takich jak przedstawione poniżej dla aplikacji sieci web, w oparciu o Struktura Bottle. Należy pamiętać, że pełne ścieżki do *python.exe* i *procedurę wfastcgi.py* są umieszczane w `PythonHandler` klucza:
+FastCGI to interfejs, który działa na poziomie żądania. Usługi IIS odbierają połączenia przychodzące i przekierują każde żądanie do aplikacji WSGI działającej w co najmniej jednym trwałym procesie języka Python. [Pakiet wfastcgi](https://pypi.io/project/wfastcgi) jest wstępnie zainstalowany i skonfigurowany z każdym rozszerzeniem witryny Pythona, dzięki czemu można go łatwo włączyć, dołączając kod w *web.config,* jak pokazano poniżej dla aplikacji internetowej opartej na platformie Bottle. Należy zauważyć, że pełne ścieżki do *python.exe* i `PythonHandler` *wfastcgi.py* są umieszczane w kluczu:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -148,59 +148,59 @@ FastCGI jest interfejsem, który działa na poziomie żądania. IIS odbiera poł
 </configuration>
 ```
 
-`<appSettings>` Zdefiniowanego w tym miejscu są dostępne dla aplikacji jako zmienne środowiskowe:
+Zdefiniowane `<appSettings>` w tym miejscu są dostępne dla aplikacji jako zmienne środowiskowe:
 
-- Wartość `PYTHONPATH` może być swobodnie przedłużony, ale mogą zawierać katalogu głównego aplikacji.
-- `WSGI_HANDLER` musi wskazywać aplikacją WSGI importowane z aplikacji.
-- `WSGI_LOG` jest opcjonalne, ale zalecane do debugowania aplikacji.
+- Wartość `PYTHONPATH` może być swobodnie przedłużony, ale musi zawierać katalog główny aplikacji.
+- `WSGI_HANDLER`musi wskazywać aplikację WSGI możnącą z aplikacji.
+- `WSGI_LOG`jest opcjonalne, ale zalecane do debugowania aplikacji.
 
-Zobacz [Opublikuj na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) więcej informacji na temat *web.config* aplikacje sieci web Bottle, Flask i Django zawartości.
+Zobacz Publikowanie na [platformie Azure, aby](publishing-python-web-applications-to-azure-from-visual-studio.md) uzyskać dodatkowe informacje na temat zawartości *web.config* dla aplikacji sieci Web Bottle, Flask i Django.
 
 ## <a name="install-packages"></a>Instalowanie pakietów
 
-Interpreter języka Python zainstalowane za pomocą rozszerzenia witryny to tylko jeden fragment środowiska Python. Prawdopodobnie należy zainstalować różne pakiety w tym środowisku, jak również.
+Interpreter języka Python zainstalowany za pośrednictwem rozszerzenia lokacji jest tylko jeden kawałek środowiska Pythona. Prawdopodobnie trzeba zainstalować różne pakiety w tym środowisku, jak również.
 
-Aby zainstalować pakiety bezpośrednio w środowisku serwera, użyj jednej z następujących metod:
+Aby zainstalować pakiety bezpośrednio w środowisku serwera, należy użyć jednej z następujących metod:
 
-| Metody | Użycie |
+| Metody | Sposób użycia |
 | --- | --- |
-| [Usługa Azure Konsola Kudu usługi App Service](#azure-app-service-kudu-console) | Instaluje pakiety interaktywnie. Pakiet musi być czysty języka Python lub należy opublikować koła. |
-| [Interfejs API REST programu kudu](#kudu-rest-api) | Może służyć do automatyzacji instalacji pakietu aktualizacji.  Pakiet musi być czysty języka Python lub należy opublikować koła. |
-| Pakietu z aplikacją | Instalowanie pakietów bezpośrednio do projektu, a następnie wdrożyć je w usłudze App Service tak, jakby były częścią Twojej aplikacji. W zależności od liczby zależności są i jak często je zaktualizować, ta metoda jest najprostszym sposobem wdrożenia pracy, przechodząc. Należy pamiętać, że biblioteki musi odpowiadać wersji języka Python na serwerze, w przeciwnym razie zostaną wyświetlone błędy zasłoniętej po wdrożeniu. Inaczej mówiąc, ponieważ wersje języka Python w usłudze App Service, rozszerzenia witryny są dokładnie takie same jak dla tych wersji wydanej w dniu python.org można łatwo uzyskać zgodnej wersji dla wdrożenia lokalnego. |
-| Środowiska wirtualne | Nieobsługiwane. Zamiast tego należy użyć, tworzenie pakietów i ustawić `PYTHONPATH` zmiennej środowiskowej, aby wskazać lokalizację pakietów. |
+| [Konsola Kudu usługi Azure App Service](#azure-app-service-kudu-console) | Instaluje pakiety interaktywnie. Pakiety muszą być czystym Pythonem lub muszą publikować koła. |
+| [Kudu REST API](#kudu-rest-api) | Może służyć do automatyzacji instalacji pakietu.  Pakiety muszą być czystym Pythonem lub muszą publikować koła. |
+| Pakiet z aplikacją | Zainstaluj pakiety bezpośrednio w projekcie, a następnie wdrożyć je w usłudze App Service tak, jakby były częścią aplikacji. W zależności od liczby posiadanych zależności i częstotliwości ich aktualizowania ta metoda może być najprostszym sposobem uzyskania działającego wdrożenia. Należy pamiętać, że biblioteki muszą być zgodne z wersją języka Python na serwerze, w przeciwnym razie zobaczysz niejasne błędy po wdrożeniu. Mimo to, ponieważ wersje języka Python w rozszerzeniach witryny usługi App Service są dokładnie takie same, jak te wersje wydane na python.org, można łatwo uzyskać zgodną wersję dla rozwoju lokalnego. |
+| Środowiska wirtualne | Bez pomocy technicznej. Zamiast tego należy użyć tworzenia `PYTHONPATH` pakietów i ustawić zmienną środowiskową, aby wskazywała lokalizację pakietów. |
 
-### <a name="azure-app-service-kudu-console"></a>Usługa Azure Konsola Kudu usługi App Service
+### <a name="azure-app-service-kudu-console"></a>Konsola Kudu usługi Azure App Service
 
-[Konsoli Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) zapewnia dostęp bezpośrednie, z podwyższonym poziomem uprawnień z wiersza polecenia na serwerze usługi App Service i jego systemu plików. To jest zarówno przydatnym narzędziem debugowania i zezwala na operacje interfejsu wiersza polecenia, takie jak instalowanie pakietów.
+Konsola [Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) zapewnia bezpośredni, podwyższony poziom dostępu do wiersza polecenia do serwera usługi App Service i jego systemu plików. Jest to zarówno cenne narzędzie debugowania i umożliwia operacje interfejsu wiersza polecenia, takie jak instalowanie pakietów.
 
-1. Otwórz Kudu ze strony usługi App Service w witrynie Azure portal, wybierając pozycję **narzędzia programistyczne** > **Narzędzia zaawansowane**, a następnie wybierając pozycję **Przejdź**. Ta akcja powoduje przejście do adresu URL, który jest taka sama jak podstawowa aplikacja adres URL Twojej usługi z wyjątkiem z `.scm` wstawiony. Na przykład, jeśli podstawowy adres URL jest `https://vspython-test.azurewebsites.net/` , a następnie Kudu znajduje się na `https://vspython-test.scm.azurewebsites.net/` (który można dodać do zakładek):
+1. Otwórz kudu ze strony usługi App Service w witrynie Azure portal, wybierając pozycję **Narzędzia** > **programistyczne Zaawansowane narzędzia,** a następnie wybierając pozycję **Go**. Ta akcja przechodzi do adresu URL, który jest taki sam `.scm` jak podstawowy adres URL usługi App Service, z wyjątkiem wstawiony. Na przykład, jeśli twój `https://vspython-test.azurewebsites.net/` podstawowy adres URL `https://vspython-test.scm.azurewebsites.net/` jest wtedy Kudu jest włączony (co można zakładkę):
 
     ![Konsola Kudu dla usługi Azure App Service](media/python-on-azure-console01.png)
 
-1. Wybierz **konsoli debugowania** > **CMD** mogli otwierać konsolę, można nawigować do z instalacją języka Python i zobaczyć, jakie biblioteki już istnieje.
+1. Wybierz **polecenie Dyług konsoli** > **CMD,** aby otworzyć konsolę, w której możesz przejść do instalacji języka Python i zobaczyć, jakie biblioteki już tam są.
 
 1. Aby zainstalować pojedynczy pakiet:
 
-    a. Przejdź do folderu instalacji języka Python, w którym chcesz zainstalować pakiet, takie jak *d:\home\python361x64*.
+    a. Przejdź do folderu instalacji języka Python, w którym chcesz zainstalować pakiet, na przykład *d:\home\python361x64*.
 
-    b. Użyj `python.exe -m pip install <package_name>` do zainstalowania pakietu.
+    b. Służy `python.exe -m pip install <package_name>` do instalowania pakietu.
 
-    ![Przykład instalowania bottle za pośrednictwem konsoli Kudu dla usługi Azure App Service](media/python-on-azure-console02.png)
+    ![Przykład instalowania butelki za pośrednictwem konsoli Kudu dla usługi Azure App Service](media/python-on-azure-console02.png)
 
-1. Jeśli udało Ci się wdrożyć *requirements.txt* dla aplikacji do serwera, zainstalować te wymagania w następujący sposób:
+1. Jeśli wdrożono już na serwerze *plik requirements.txt* dla aplikacji, zainstaluj wszystkie te wymagania w następujący sposób:
 
-    a. Przejdź do folderu instalacji języka Python, w którym chcesz zainstalować pakiet, takie jak *d:\home\python361x64*.
+    a. Przejdź do folderu instalacji języka Python, w którym chcesz zainstalować pakiet, na przykład *d:\home\python361x64*.
 
     b. Uruchom polecenie `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
 
-    Za pomocą *requirements.txt* jest zalecane, ponieważ jest łatwy do odtworzenia dokładnie pakietu ustawić zarówno lokalnie, jak i na serwerze. Po prostu Pamiętaj, aby odwiedzać konsolę po wdrożeniu zmiany *requirements.txt* i ponownie uruchom polecenie.
+    Używanie *pliku requirements.txt* jest zalecane, ponieważ łatwo jest odtworzyć dokładny zestaw pakietów zarówno lokalnie, jak i na serwerze. Pamiętaj tylko, aby odwiedzić konsolę po wdrożeniu jakichkolwiek zmian *w pliku requirements.txt* i ponownie uruchomić polecenie.
 
 > [!Note]
-> Istnieje nie kompilator języka C w usłudze App Service, więc trzeba zainstalować kółka kątem ewentualnych pakietów, za pomocą modułów macierzystych rozszerzeń. Wiele popularnych pakietów zapewniają własne koła. W przypadku pakietów, które nie należy używać `pip wheel <package_name>` na lokalnym komputerze deweloperskim i przekażesz wheel do witryny. Aby uzyskać przykład, zobacz [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](managing-required-packages-with-requirements-txt.md).
+> Nie ma kompilatora C w usłudze App Service, więc należy zainstalować koło dla wszystkich pakietów z natywnymi modułami rozszerzenia. Wiele popularnych pakietów zapewnia własne koła. W przypadku pakietów, `pip wheel <package_name>` które tego nie robią, użyj na lokalnym komputerze deweloperskim, a następnie prześlij koło do witryny. Na przykład zobacz [Zarządzanie wymaganymi pakietami z plikem requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-### <a name="kudu-rest-api"></a>Interfejs API REST programu kudu
+### <a name="kudu-rest-api"></a>Kudu REST API
 
-Zamiast korzystania z konsoli Kudu za pośrednictwem witryny Azure portal możesz zdalnie uruchamiać polecenia przy użyciu interfejsu API REST programu Kudu, publikując polecenie, aby `https://yoursite.scm.azurewebsites.net/api/command`. Na przykład, aby zainstalować `bottle` pakietu, Opublikuj następujące dane JSON do `/api/command`:
+Zamiast używać konsoli Kudu za pośrednictwem witryny Azure Portal, można uruchamiać polecenia zdalnie za `https://yoursite.scm.azurewebsites.net/api/command`pośrednictwem interfejsu API Kudu REST, publikując polecenie w pliku . Na przykład, aby `bottle` zainstalować pakiet, należy `/api/command`zaksięgować następujące JSON na:
 
 ```json
 {
@@ -209,6 +209,6 @@ Zamiast korzystania z konsoli Kudu za pośrednictwem witryny Azure portal możes
 }
 ```
 
-Aby uzyskać informacje o poleceniach oraz uwierzytelniania, zobacz [dokumentacji Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
+Aby uzyskać informacje o poleceniach i uwierzytelnianiu, zobacz [dokumentację Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Można również wyświetlić przy użyciu poświadczeń `az webapp deployment list-publishing-profiles` polecenia za pomocą wiersza polecenia platformy Azure (zobacz [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles)). Biblioteka pomocnicza, umożliwiające publikowanie poleceń Kudu dostępnej w [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Poświadczenia można również zobaczyć `az webapp deployment list-publishing-profiles` za pomocą polecenia za pośrednictwem interfejsu wiersza polecenia platformy Azure (zobacz [wdrożenie az webapp](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles)). Biblioteka pomocnicza do publikowania poleceń Kudu jest dostępna na [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

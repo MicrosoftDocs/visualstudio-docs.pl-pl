@@ -1,5 +1,5 @@
 ---
-title: Obecne są liczne kategorie | Dokumentacja firmy Microsoft
+title: Istnieje wiele kategorii | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62794665"
 ---
-# <a name="multiple-categories-are-present"></a>Obecne są liczne kategorie
-Wybrano sekcji, która zawiera więcej niż jeden rodzaj działania w zakresie w danym momencie. Zwróć uwagę, że nie są wyświetlane dwa kolory, jeden w pionie skumulowany z drugiej strony. Te kolory reprezentują tylko najważniejsze dwa najczęstsze działania w danym okresie. Częstotliwości te dwa działania są wyświetlane względem siebie jako trzecie lub połowami kreska pionowa. Aby wyświetlić więcej szczegółów, spróbuj powiększyć w tej sekcji Widok wątków.
+# <a name="multiple-categories-are-present"></a>Dostępnych jest wiele kategorii
+Wybrano sekcję zawierającą więcej niż jeden rodzaj działania dla danego zakresu czasu. Należy zauważyć, że dwa kolory są wyświetlane, jeden pionowo ułożone na drugim. Te kolory reprezentują tylko dwa najczęściej spotykane działania w danym przedziale czasu. Częstotliwości tych dwóch działań są wyświetlane względem siebie jako trzecie lub połówki pionowego paska. Aby wyświetlić więcej szczegółów, spróbuj powiększyć tę sekcję widoku wątku.
 
-## <a name="see-also"></a>Zobacz także
-- [Czas wykonywania (Widok wątków)](../profiling/execution-time-threads-view.md)
-- [Czas operacji We/Wy (Widok wątków)](../profiling/i-o-time-threads-view.md)
+## <a name="see-also"></a>Zobacz też
+- [Czas wykonania (widok wątków)](../profiling/execution-time-threads-view.md)
+- [Czas we/wy (widok wątków)](../profiling/i-o-time-threads-view.md)
 - [Czas zarządzania pamięcią](../profiling/memory-management-time.md)
-- [Czas wywłaszczania](../profiling/preemption-time.md)
-- [Czas uśpienia](../profiling/sleep-time.md)
+- [Czas wywłaszczenia](../profiling/preemption-time.md)
+- [Czas snu](../profiling/sleep-time.md)
 - [Czas synchronizacji](../profiling/synchronization-time.md)
 - [Czas przetwarzania interfejsu użytkownika](../profiling/ui-processing-time.md)

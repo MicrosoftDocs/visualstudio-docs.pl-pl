@@ -1,5 +1,5 @@
 ---
-title: Flaga znaczniki | Dokumentacja firmy Microsoft
+title: Znaczniki flagi | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969970"
 ---
-# <a name="flag-markers"></a>Znaczniki typu Flaga
-Znacznik flagi reprezentuje coś, który wystąpił na moment w czasie w aplikacji. Flaga może reprezentować wiele rodzajów zdarzeń aplikacji. Na przykład flagę można pokazać, kiedy zostało zaplanowane danego elementu pracy, lub gdy wystąpił wyjątek. Środowiska uruchomieniowe, takich jak biblioteka zadań równoległych, można również wygenerować flag.
+# <a name="flag-markers"></a>Znaczniki flagi
+Znacznik flagi reprezentuje coś, co wystąpiło w jednej chwili w aplikacji. Flaga może reprezentować wiele rodzajów zdarzeń aplikacji. Na przykład flaga może pokazać, kiedy zaplanowano określony element pracy lub gdy został zgłoszony wyjątek. Środowiska wykonawcze, takie jak biblioteka równoległa zadań, mogą również generować flagi.
 
-## <a name="flag-importance"></a>Flaga znaczenie
- Flagi są wyświetlane w różnych rozmiarach, w zależności od ich znaczenia. Podobnie jak wszelkie znacznika znaczenie może być niska, normalna, wysoką lub krytyczne.  Ta ilustracja przedstawia wygląd znaczników przez poziom ważności:
+## <a name="flag-importance"></a>Znaczenie flagi
+ Flagi są wyświetlane w różnych rozmiarach w zależności od ich znaczenia. Jak każdy znacznik, znaczenie może być niskie, normalne, wysokie lub krytyczne.  Na ilustracji przedstawiono wygląd znaczników według poziomu ważności:
 
- ![Niska, normalna, o wysokiej i krytyczne znaczniki znaczenie](../profiling/media/cvmarkerimportance.png "CVMarkerImportance") znaczniki przedstawiający znaczenie flagi
+ ![Znaczniki niskiego, normalnego, wysokiego i krytycznego](../profiling/media/cvmarkerimportance.png "CvMarkerImportance") Znaczniki z ważnością flagi
 
-## <a name="flag-category"></a>Flaga kategorii
- Flaga jest wyświetlany w jednej z pięciu różnych kolorach, w zależności od jego kategorii. Kolory są używane ponownie, jeśli istnieje więcej niż pięć kategorii. Nie można wybrać kolor. Podobnie jak wszelkie znacznika kategorii może być liczbą całkowitą. Następna ilustracja przedstawia kolory dla pierwszych pięć kategorii.
+## <a name="flag-category"></a>Kategoria flagi
+ Flaga jest wyświetlana w jednym z pięciu różnych kolorów w zależności od jej kategorii. Kolory są ponownie używane, jeśli istnieje więcej niż pięć kategorii. Nie można wybrać koloru. Jak każdy znacznik, kategoria może być dowolną całkowitej liczby. Na następnej ilustracji przedstawiono kolory dla pierwszych pięciu kategorii.
 
- ![Pięć kolory znaczników kategorii](../profiling/media/cvmarkercategory.png "CVMarkerCategory") znaczniki wyświetlane kategorie
+ ![Pięć kolorów znaczników kategorii](../profiling/media/cvmarkercategory.png "Kategoria CVMarker") Znaczniki przedstawiające kategorie
 
 ## <a name="alerts"></a>Alerty
- Alert jest flagę kolorowe czerwony, która reprezentuje zdarzenie aplikacja o krytycznym znaczeniu, takich jak wyjątek.  Oto alert:
+ Alert jest flagą w kolorze czerwonym, która reprezentuje zdarzenie aplikacji krytyczne, takie jak wyjątek.  Oto alert:
 
- ![Alert znaczników narzędzia Concurrency Visualizer](../profiling/media/cvmarkeralert.png "CVMarkerAlert") znacznik alertu
+ ![Znacznik alertu wizualizatora współbieżności](../profiling/media/cvmarkeralert.png "Identyfikator CVMarkerAlert") Znacznik alertu
 
 ## <a name="aggregation-flags"></a>Flagi agregacji
- Flagi wystąpić tak blisko siebie nawzajem w Wizualizatorze współbieżności, że nie można ich indywidualnie rysowania. Jeśli ten problem wystąpi, szary *flagi agregacji* czy reprezentuje flagi podstawowej jest widoczne. Po umieszczeniu wskaźnika na jednym z tych ikon etykietka narzędzia Wyświetla liczbę podstawowych flagi, które są reprezentowane. Aby wyświetlić flagi, powiększania. Jeśli powiększyć aż, a mimo to uzyskać flagi agregacji, można wyświetlić podstawowy flagi w [raport dotyczący znaczników](../profiling/markers-report.md).
+ Czasami flagi występują tak blisko siebie w wizualizatora współbieżności, że nie można ich rysować indywidualnie. W takim przypadku wyświetlana jest *szara flaga agregacji* reprezentująca flagi źródłowe. Po umieszczeniu wskaźnika na jednej z tych ikon, etykietka narzędzia wyświetla liczbę flag źródłowych, które są reprezentowane. Aby wyświetlić flagi, powiększ. Jeśli powiększysz cały sposób i nadal otrzymujesz flagę agregacji, możesz wyświetlić flagi źródłowe w [raporcie znaczników](../profiling/markers-report.md).
 
- Flagi agregacji są rysowane w różnych rozmiarach. Rozmiar zależy od poziomu ważności najważniejszych flagi agregacji. Poniższej ilustracji przedstawiono flagi agregacji w rosnącej kolejności ważności.
+ Flagi agregacji są rysowane w różnych rozmiarach. Rozmiar zależy od poziomu ważności najważniejszej flagi w agregacji. Na poniższej ilustracji przedstawiono flagi agregacji w rosnącej kolejności ważności.
 
- ![Wartość zagregowana flagi przedstawiający cztery poziomy ważności](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") agregacji flagi przez poziom ważności
+ ![Agregowane flagi z czterema poziomami ważności](../profiling/media/cvmarkeraggregate.png "CvMarkerZagregat") Flagi agregacji według poziomu ważności
 
-## <a name="see-also"></a>Zobacz także
-- [Znaczniki CONCURRENCY Visualizer](../profiling/concurrency-visualizer-markers.md)
+## <a name="see-also"></a>Zobacz też
+- [Znaczniki wizualizatora współbieżności](../profiling/concurrency-visualizer-markers.md)
 - [Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)

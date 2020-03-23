@@ -1,5 +1,5 @@
 ---
-title: Raport dotyczący znaczników | Dokumentacja firmy Microsoft
+title: Raport znaczników | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "64808272"
 ---
 # <a name="markers-report"></a>Raport dotyczący znaczników
-Raport dotyczący znaczników Wyświetla listę znaczników w wyświetlany przedział czasu.  Przesuwanie powiększanie lub ukrywanie pasm, może spowodować znaczniki do wyświetlone lub znikają. Raport zawiera informacje o poszczególnych znaczników:
+Raport znaczników zawiera listę znaczników w wyświetlonym przedziale czasowym.  Przesuwanie, powiększanie lub ukrywanie pasów ruchu może spowodować pojawienie się lub zniknięcie znaczników. Raport zawiera te informacje o każdym znaczniku:
 
-- Czas, kiedy go już się rozpoczął, względem początku śledzenia.
+- Czas, kiedy się rozpoczął, w stosunku do początku śledzenia.
 
-- Czas jego trwania. Czas trwania jest zero dla flag i komunikatów, ponieważ stanowią one natychmiastowe.
+- Jego czas trwania. Czas trwania wynosi zero dla flag i wiadomości, ponieważ reprezentują one chwilę.
 
-- Identyfikator wątku, który ją wygenerowało.
+- Identyfikator wątku, który go wygenerował.
 
-- Dostawca zdarzeń śledzenia dla Windows (ETW), które ją wygenerowało.
+- Dostawca śledzenia zdarzeń dla systemu Windows (ETW), który go wygenerował.
 
-- Seria znacznika, w którym został zapisany.
+- Seria znaczników, z której została napisana.
 
-- Kategoria zdarzenia, dla której należy.
+- Kategoria zdarzeń, do której należy.
 
-- Jej poziom ważności.
+- Jego poziom ważności.
 
-- Jego typ (zakres, Flaga lub komunikat).
+- Jego typ (zakres, flaga lub wiadomość).
 
-- Co określa opis wysokiego poziomu
+- Opis wysokiego poziomu tego, co reprezentuje
 
-  Wybierz **wyeksportować** przycisk, aby zapisać raport dotyczący znaczników do pliku CSV. Można użyć danych w pliku CSV z innymi aplikacjami lub narzędzia.
+  Wybierz przycisk **Eksportuj,** aby zapisać raport znaczników jako plik CSV. Dane w pliku CSV można używać z innymi aplikacjami lub narzędziami.
 
 > [!NOTE]
-> Raport dotyczący znaczników można wyświetlić 1000 znaczników. Aby wyświetlić wszystkie znaczniki, należy wyeksportować pełny raport do pliku CSV.
+> Raport znaczników może wyświetlać 1000 znaczników. Aby wyświetlić wszystkie znaczniki, wyeksportuj pełny raport do pliku CSV.

@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: korzystanie z tego samego obiektu docelowego w wielu plikach projektu | Microsoft Docs'
+title: 'Jak: Użyj tego samego celu w wielu plikach projektu | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b7b36a829e2e406ecd3f10ba3a2b588c6f7df25
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633762"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Instrukcje: użycie tego samego elementu docelowego w wielu plikach projektu
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Jak: Użyj tego samego obiektu docelowego w wielu plikach projektu
 
-Jeśli użytkownik utworzył kilka plików projektu MSBuild, może wykryć, że należy użyć tych samych zadań i elementów docelowych w różnych plikach projektu. Zamiast dołączać pełny opis tych zadań lub obiektów docelowych w każdym pliku projektu, można zapisać obiekt docelowy w osobnym pliku projektu, a następnie zaimportować ten projekt do dowolnego innego projektu, który musi używać celu.
-## <a name="use-the-import-element"></a>Użyj elementu import
+Jeśli masz autorem kilku plików projektu MSBuild, być może odkryto, że trzeba użyć tych samych zadań i obiektów docelowych w różnych plikach projektu. Zamiast uwzględniać pełny opis tych zadań lub obiektów docelowych w każdym pliku projektu, można zapisać obiekt docelowy w oddzielnym pliku projektu, a następnie zaimportować ten projekt do dowolnego innego projektu, który musi użyć obiektu docelowego.
+## <a name="use-the-import-element"></a>Użyj importu elementu
 
- Element `Import` jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym plikiem projektu programu MSBuild i zawierać poprawnie sformułowany kod XML. Atrybut `Project` określa ścieżkę do zaimportowanego pliku projektu. Aby uzyskać więcej informacji na temat `Import` elementu, zobacz [Import element (MSBuild)](../msbuild/import-element-msbuild.md).
-Element `Import` jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym plikiem projektu programu MSBuild i zawierać poprawnie sformułowany kod XML. Atrybut `Project` określa ścieżkę do zaimportowanego pliku projektu. Aby uzyskać więcej informacji na temat `Import` elementu, zobacz [Import element (MSBuild)](../msbuild/import-element-msbuild.md).
+ Element `Import` jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym plikiem projektu MSBuild i zawierać dobrze sformułowany plik XML. Atrybut `Project` określa ścieżkę do importowanego pliku projektu. Aby uzyskać więcej `Import` informacji na temat elementu, zobacz [Importuj element (MSBuild)](../msbuild/import-element-msbuild.md).
+Element `Import` jest używany do wstawiania jednego pliku projektu do innego pliku projektu. Importowany plik projektu musi być prawidłowym plikiem projektu MSBuild i zawierać dobrze sformułowany plik XML. Atrybut `Project` określa ścieżkę do importowanego pliku projektu. Aby uzyskać więcej `Import` informacji na temat elementu, zobacz [Importuj element (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Aby zaimportować projekt
 
-1. Zdefiniuj w pliku projektu importowania wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w zaimportowanym projekcie.
+1. Zdefiniuj w pliku projektu importującego wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w importowanym projekcie.
 
-2. Użyj elementu `Import`, aby zaimportować projekt. Na przykład:
+2. Użyj `Import` elementu, aby zaimportować projekt. Przykład:
 
      `<Import Project="MyCommon.targets"/>`
 
-3. Po elemencie `Import` Zdefiniuj wszystkie właściwości i elementy, które muszą przesłaniać domyślne definicje właściwości i elementów w zaimportowanym projekcie.
+3. Po `Import` elemencie zdefiniuj wszystkie właściwości i elementy, które muszą zastąpić domyślne definicje właściwości i elementów w importowanym projekcie.
 
 ## <a name="order-of-evaluation"></a>Kolejność obliczeń
 
- Gdy MSBuild osiągnie element `Import`, importowany projekt jest efektywnie wstawiany do projektu importowania w lokalizacji elementu `Import`. W związku z tym lokalizacja elementu `Import` może mieć wpływ na wartości właściwości i elementów. Ważne jest zrozumienie właściwości i elementów ustawionych przez zaimportowany projekt oraz właściwości i elementów używanych przez zaimportowany projekt.
+ Gdy MSBuild osiągnie `Import` element, importowany projekt jest skutecznie wstawiany do `Import` projektu importowania w lokalizacji elementu. W związku z tym `Import` lokalizacja elementu może mieć wpływ na wartości właściwości i elementów. Ważne jest, aby zrozumieć właściwości i elementy, które są ustawiane przez importowany projekt oraz właściwości i elementy, które używa importowanego projektu.
 
- Podczas kompilacji projektu wszystkie właściwości są oceniane jako pierwsze, a następnie elementy. Na przykład poniższy kod XML definiuje zaimportowany plik projektu *. targets*:
+ Podczas tworzenia projektu wszystkie właściwości są oceniane najpierw, a następnie elementy. Na przykład następujący kod XML definiuje importowany plik projektu *MyCommon.targets:*
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -54,7 +54,7 @@ Element `Import` jest używany do wstawiania jednego pliku projektu do innego pl
 </Project>
 ```
 
- Poniższy kod XML definiuje plik *MojaApl. proj*, który importuje *wspólne elementy. targets*:
+ Następujący kod XML definiuje *plik MyApp.proj*, który importuje *plik MyCommon.targets:*
 
 ```xml
 <Project
@@ -67,25 +67,25 @@ Element `Import` jest używany do wstawiania jednego pliku projektu do innego pl
 </Project>
 ```
 
- Podczas kompilacji projektu zostanie wyświetlony następujący komunikat:
+ Podczas tworzenia projektu wyświetlany jest następujący komunikat:
 
  `Name="MyCommon"`
 
- Ponieważ projekt jest importowany po zdefiniowaniu `Name` właściwości w elemencie *MojaApl. proj*, definicja `Name` w elemencie *webcommon. targets* zastępuje definicję w programie *MojaApl. proj*. Jeśli projekt zostanie zaimportowany przed zdefiniowaniem nazwy właściwości, kompilacja wyświetli następujący komunikat:
+ Ponieważ projekt jest importowany `Name` po zdefiniowaniu właściwości w *myapp.proj,* definicja `Name` w *MyCommon.targets* zastępuje definicję w *MyApp.proj*. Jeśli projekt jest importowany przed zdefiniowaniem właściwości Name, kompilacja wyświetli następujący komunikat:
 
  `Name="MyApp"`
 
-#### <a name="use-the-following-approach-when-importing-projects"></a>Podczas importowania projektów należy stosować następujące podejście:
+#### <a name="use-the-following-approach-when-importing-projects"></a>Podczas importowania projektów należy stosować następujące podejście
 
-1. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w zaimportowanym projekcie.
+1. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które są używane jako parametry właściwości i elementów w importowanym projekcie.
 
 2. Zaimportuj projekt.
 
-3. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które muszą przesłaniać domyślne definicje właściwości i elementów w zaimportowanym projekcie.
+3. Zdefiniuj w pliku projektu wszystkie właściwości i elementy, które muszą zastąpić domyślne definicje właściwości i elementów w importowanym projekcie.
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu pokazuje plik *webcommon. Target* , który został zaimportowany przez drugi przykład kodu. Plik *. targets* szacuje właściwości z projektu importowania, aby skonfigurować kompilację.
+ Poniższy przykład kodu pokazuje *plik MyCommon.targets,* który importuje drugi przykład kodu. Plik *.targets* ocenia właściwości z projektu importowania w celu skonfigurowania kompilacji.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -104,7 +104,7 @@ Element `Import` jest używany do wstawiania jednego pliku projektu do innego pl
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład kodu importuje plik *webcommon. targets* .
+ Poniższy przykład kodu importuje plik *MyCommon.targets.*
 
 ```xml
 <Project DefaultTargets="Build"
@@ -118,5 +118,5 @@ Element `Import` jest używany do wstawiania jednego pliku projektu do innego pl
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Import — element (MSBuild)](../msbuild/import-element-msbuild.md)
-- [Docelowe elementy](../msbuild/msbuild-targets.md)
+- [Importuj element (MSBuild)](../msbuild/import-element-msbuild.md)
+- [Cele](../msbuild/msbuild-targets.md)

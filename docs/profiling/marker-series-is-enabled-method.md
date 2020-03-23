@@ -1,5 +1,5 @@
 ---
-title: Metoda marker_series::is_enabled | Dokumentacja firmy Microsoft
+title: marker_series::Metoda is_enabled | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a7baa08a29cd77506e48762179118b3bbb2d1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63002767"
 ---
-# <a name="markerseriesisenabled-method"></a>marker_series::is_enabled — metoda
-Określa, czy dowolnej sesji ma włączone dostawcy.
+# <a name="marker_seriesis_enabled-method"></a>marker_series::metoda is_enabled
+Określa, czy którakolwiek sesja włączyła dostawcę.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,16 +33,16 @@ bool is_enabled(
 ```
 
 #### <a name="parameters"></a>Parametry
- `_Importance` Poziom ważności.
+ `_Importance`Poziom ważności.
 
- `_Category` Kategoria.
+ `_Category`Kategorii.
 
 ## <a name="return-value"></a>Wartość zwracana
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkersobj.h*
 
- **Namespace:** CONCURRENCY::Diagnostic —
+ **Obszar nazw:** Współbieżność::dignostyk
 
-## <a name="see-also"></a>Zobacz także
-- [marker_series, klasa](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Zobacz też
+- [klasa marker_series](../profiling/marker-series-class.md)

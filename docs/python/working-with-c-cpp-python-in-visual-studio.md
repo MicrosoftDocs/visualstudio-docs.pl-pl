@@ -1,6 +1,6 @@
 ---
 title: Pisanie rozszerzeń języka C++ dla języka Python
-description: Przewodnik po Tworzenie rozszerzenia C++ dla języka Python za pomocą programu Visual Studio, CPython i PyBind11, włączając debugowanie w trybie mieszanym.
+description: Przewodnik tworzenia rozszerzenia Języka C++ dla języka Python przy użyciu programu Visual Studio, CPython i PyBind11, w tym debugowania w trybie mieszanym.
 ms.date: 11/19/2018
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -11,50 +11,50 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62956978"
 ---
-# <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia C++ dla języka Python
+# <a name="create-a-c-extension-for-python"></a>Tworzenie rozszerzenia języka C++ dla języka Python
 
-Modułów napisanych w języku C++ (lub C) są często używane, aby rozszerzyć możliwości interpreter języka Python, który jest również umożliwiających dostęp do funkcji niskiego poziomu systemu operacyjnego. Istnieją trzy podstawowe typy modułów:
+Moduły napisane w języku C++ (lub C) są powszechnie używane do rozszerzania możliwości interpretera języka Python, a także w celu umożliwienia dostępu do możliwości systemu operacyjnego niskiego poziomu. Istnieją trzy podstawowe typy modułów:
 
-- Moduły akceleratora: ponieważ interpretacji języka Python, pewne fragmenty kodu można napisanego w języku C++ większą wydajność.
-- Moduły otoki: ujawniają istniejące interfejsy C/C++ do kodu w języku Python i udostępnić więcej interfejsu API "Pythonic", który jest łatwy w użyciu za pomocą języka Python.
-- Moduły dostęp do niskiego poziomu systemu: utworzone w celu uzyskania dostępu do niższego poziomu funkcji środowiska uruchomieniowego języka CPython, system operacyjny lub bazowego sprzętu.
+- Moduły akceleratora: ponieważ Python jest językiem interpretowanym, niektóre fragmenty kodu mogą być zapisywane w języku C++ dla wyższej wydajności.
+- Moduły otoki: uwidaczniają istniejące interfejsy C/C++ do kodu języka Python lub udostępniają bardziej "Pythonic" API, który jest łatwy w użyciu z Języka Python.
+- Moduły dostępu do systemu niskiego poziomu: utworzone w celu uzyskania dostępu do funkcji niższego poziomu środowiska wykonawczego CPython, systemu operacyjnego lub sprzętu źródłowego.
 
-W tym artykule przedstawiono tworzenie modułu rozszerzenia języka C++ dla języka CPython, który oblicza tangens hiperboliczny i określa je z poziomu kodu Python. Procedura jest implementowany najpierw w języku Python, aby zademonstrować przyrost względnej wydajności wykonawczych taką samą procedurę w języku C++.
+W tym artykule o wiele mówi się o tworzeniu modułu rozszerzenia C++ dla CPython, który oblicza styczne hiperboliczne i wywołuje go z kodu Języka Python. Procedura jest implementowana najpierw w pythonie, aby zademonstrować względny przyrost wydajności implementowania tej samej procedury w języku C++.
 
-W tym artykule przedstawiono również udostępnić C++ języka Python na dwa sposoby:
+W tym artykule przedstawiono również dwa sposoby, aby C++ dostępne dla języka Python:
 
-- Standardowa rozszerzenia języka CPython, zgodnie z opisem w [dokumentace Pro Python](https://docs.python.org/3/c-api/)
-- [PyBind11](https://github.com/pybind/pybind11), która jest zalecana dla c ++ 11 ze względu na prostotę jej.
+- Standardowe rozszerzenia CPython opisane w [dokumentacji Języka Python](https://docs.python.org/3/c-api/)
+- [PyBind11](https://github.com/pybind/pybind11), który jest zalecany dla C++ 11 ze względu na jego prostotę.
 
-Porównanie tych i innych środków znajduje się w folderze [alternatywnych metod](#alternative-approaches) na końcu tego artykułu.
+Porównanie tych i innych środków znajduje się w ramach [alternatywnych podejść](#alternative-approaches) na końcu tego artykułu.
 
-Ukończone próbkę z tego przewodnika znajdują się na [rozszerzenie języka python — przykłady vs-cpp](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
+Wypełniony przykład z tego przewodnika można znaleźć na [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-- Visual Studio 2017 lub nowszego z programem **programowanie aplikacji klasycznych w języku C++** i **programowania w języku Python** obciążeń zainstalowany z użyciem opcji domyślnych.
-- W **programowania w języku Python** obciążenie, zaznacz także pole po prawej stronie, aby uzyskać **Python natywne narzędzia programistyczne**. Ta opcja umożliwia ustawienie większość konfiguracji opisanej w tym artykule. (Ta opcja również powoduje dołączenie obciążeniu C++ dla automatycznie.)
+- Visual Studio 2017 lub nowsze z obu **desktop development z c++** i **Python Deweloper** obciążeń zainstalowanych z opcjami domyślnymi.
+- W obciążeniu **rozwoju języka Python** wybierz również pole po prawej stronie dla **natywnych narzędzi programistycznych języka Python**. Ta opcja konfiguruje większość konfiguracji opisanych w tym artykule. (Ta opcja zawiera również obciążenie języka C++)
 
-    ![Wybranie opcji narzędzia programowania natywnego języka Python](media/cpp-install-native.png)
+    ![Wybieranie opcji natywnych narzędzi programistycznych języka Python](media/cpp-install-native.png)
 
     > [!Tip]
-    > Instalowanie **aplikacji analitycznych i naukowych opracowań danych** obejmowały obciążenie języka Python i **Python natywne narzędzia programistyczne** opcja domyślnie.
+    > Instalowanie danych **nauki i aplikacji analitycznych** obciążenia obejmuje również Python i **Python natywne narzędzia programistyczne** opcja domyślnie.
 
-Aby uzyskać więcej informacji, zobacz [Instalowanie obsługi języka Python dla programu Visual Studio](installing-python-support-in-visual-studio.md), tym o korzystaniu z innymi wersjami programu Visual Studio. Jeśli zainstalujesz środowisko Python oddzielnie, pamiętaj o wybraniu **pobrać symbole debugowania** i **pliki binarne debugowania pobierania** w obszarze **zaawansowane opcje** w Instalatorze. Ta opcja zapewnia mieć dostępne biblioteki debugowania konieczne, Jeśli postanowisz to zrobić kompilacji debugowania.
+Aby uzyskać więcej informacji, zobacz [Instalowanie obsługi języka Python dla programu Visual Studio,](installing-python-support-in-visual-studio.md)w tym przy użyciu innych wersji programu Visual Studio. Jeśli python jest instalowany oddzielnie, należy wybrać **opcję Pobierz symbole debugowania** i **Pobierz pliki binarne debugowania** w obszarze **Opcje zaawansowane** w instalatorze. Ta opcja zapewnia, że masz niezbędne biblioteki debugowania dostępne, jeśli zdecydujesz się wykonać kompilację debugowania.
 
-## <a name="create-the-python-application"></a>Tworzenie aplikacji Python
+## <a name="create-the-python-application"></a>Tworzenie aplikacji języka Python
 
-1. Utwórz nowy projekt języka Python w programie Visual Studio, wybierając **pliku** > **New** > **projektu**. Wyszukaj "Python", wybierz **aplikację w języku Python** szablonu, nadaj mu odpowiednią nazwę i lokalizację, a następnie wybierz pozycję **OK**.
+1. Utwórz nowy projekt języka Python w programie Visual Studio, wybierając **pozycję Plik** > **nowego** > **projektu**. Wyszukaj "Python", wybierz szablon **aplikacji Python,** nadaj mu odpowiednią nazwę i lokalizację, a następnie wybierz **PRZYCISK OK**.
 
-1. Pracy przy użyciu języka C++ wymaga używania 32-bitowy interpreter języka Python (Python 3.6 lub nowszej jest zalecane). W **Eksploratora rozwiązań** okna programu Visual Studio, rozwiń węzeł projektu, a następnie rozwiń węzeł **środowiska Python** węzła. Jeśli nie widzisz 32-bitowego środowiska jako domyślny (pogrubienie lub oznaczone za pomocą **domyślnie globalne**), następnie postępuj zgodnie z instrukcjami [wybierz środowisko Python w projekcie](selecting-a-python-environment-for-a-project.md). Jeśli nie masz interpreter 32-bitowych, zainstalowane, zobacz [Python Zainstaluj interpretery](installing-python-interpreters.md).
+1. Praca z c++ wymaga użycia 32-bitowego interpretera języka Python (zalecane w języku Python 3.6 lub nowszym). W oknie **Eksploratora rozwiązań** programu Visual Studio rozwiń węzeł projektu, a następnie rozwiń węzeł **Środowiska języka Python.** Jeśli nie widzisz środowiska 32-bitowego jako domyślnego (pogrubionego lub oznaczonego **domyślnie globalnym),** postępuj zgodnie z instrukcjami dotyczącymi [Wybierania środowiska języka Python dla projektu.](selecting-a-python-environment-for-a-project.md) Jeśli nie masz zainstalowanego interpretera 32-bitowego, zobacz [Instalowanie interpreterów języka Python](installing-python-interpreters.md).
 
-1. W projekcie *PY* plików, wklej następujący kod, który wzorców obliczeń tangens hiperboliczny (zaimplementowano bez użycia biblioteka funkcji matematycznych ułatwia porównanie). Możesz wprowadzić kod ręcznie zapoznać się z niektórymi z [Python funkcje edytowania](editing-python-code-in-visual-studio.md).
+1. W pliku *py* projektu wklej następujący kod, który testuje obliczenia stycznej hiperbolicznej (zaimplementowane bez użycia biblioteki matematycznej w celu łatwiejszego porównania). Możesz wprowadzić kod ręcznie, aby doświadczyć niektórych [funkcji edycji Pythona](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -91,56 +91,56 @@ Aby uzyskać więcej informacji, zobacz [Instalowanie obsługi języka Python dl
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. Uruchamianie przy użyciu programu **debugowania** > **Uruchom bez debugowania** (**Ctrl**+**F5**) aby wyświetlić wyniki. Można dostosować `COUNT` zmiennej do zmiany, jak długo trwa testów porównawczych, aby uruchomić. Na potrzeby tego przewodnika Ustaw liczbę, tak aby testu porównawczego około dwóch sekund.
+1. Uruchom program przy użyciu **debugowania** > **start bez debugowania** **(Ctrl**+**F5**), aby zobaczyć wyniki. Można dostosować `COUNT` zmienną, aby zmienić czas działania benchmarku. Na potrzeby tego przewodnika należy ustawić liczbę, tak aby wskaźnik porównawczy trwać około dwóch sekund.
 
 > [!TIP]
-> Podczas uruchamiania testów porównawczych, należy zawsze używać **debugowania** > **Uruchom bez debugowania** w celu uniknięcia koszty naliczane podczas uruchamiania kodu w debugerze programu Visual Studio.
+> Podczas uruchamiania testów porównawczych, zawsze należy użyć **debugowania** > **start bez debugowania,** aby uniknąć narzutów poniesionych podczas uruchamiania kodu w debugerze programu Visual Studio.
 
-## <a name="create-the-core-c-projects"></a>Tworzenie podstawowych projektów C++
+## <a name="create-the-core-c-projects"></a>Tworzenie podstawowych projektów języka C++
 
-Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne projekty języka C++ o nazwie "superfastcode" i "superfastcode2". Później użyjesz innego oznacza, że w każdym projekcie do udostępnienia kodu C++ do języka Python.
+Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne projekty C++ o nazwie "superfastcode" i "superfastcode2". Później użyjesz różnych środków w każdym projekcie, aby udostępnić kod C++ na język Python.
 
-1. Upewnij się, że `PYTHONHOME` zmienna środowiskowa jest ustawiona do interpretera języka Python chcesz użyć. Projekty języka C++ w programie Visual Studio zależą od tej zmiennej, aby zlokalizować pliki, takie jak *python.h*, które są używane podczas tworzenia rozszerzenie języka Python.
+1. Upewnij się, że zmienna `PYTHONHOME` środowiskowa jest ustawiona na interpreter języka Python, którego chcesz użyć. Projekty języka C++ w programie Visual Studio polegają na tej zmiennej, aby zlokalizować pliki, takie jak *python.h*, które są używane podczas tworzenia rozszerzenia języka Python.
 
-1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy projekt**. Rozwiązania programu Visual Studio może zawierać zarówno Python projektów języka C++ i razem (czyli jedną z zalet używania programu Visual Studio dla języka Python).
+1. Kliknij prawym przyciskiem myszy rozwiązanie w **Eksploratorze rozwiązań** i wybierz pozycję **Dodaj** > **nowy projekt**. Rozwiązanie programu Visual Studio może zawierać projekty języka Python i C++ razem (co jest jedną z zalet korzystania z programu Visual Studio dla języka Python).
 
-1. Wyszukiwanie w "C++" Wybierz **pusty projekt**, określ nazwę "superfastcode" ("superfastcode2" dla drugiego projektu) i wybierz **OK**.
+1. Wyszukaj w "C++", wybierz **pusty projekt,** określ nazwę "superfastcode" ("superfastcode2" dla drugiego projektu) i wybierz **PRZYCISK OK**.
 
     > [!Tip]
-    > Za pomocą **Python natywne narzędzia programistyczne** zainstalowany w programie Visual Studio, można uruchomić z **modułu rozszerzenia języka Python** szablonu zamiast tego, który ma wiele opisane poniżej już w miejscu. W ramach tego przewodnika, zaczynając od pustego projektu pokazuje tworzenia modułu rozszerzenia krok po kroku. Po zrozumieniu procesu zapisuje szablon pozwala oszczędzić czas podczas pisania własnych rozszerzeń.
+    > Z **python natywnych narzędzi programistycznych** zainstalowanych w programie Visual Studio, można rozpocząć od **szablonu moduł rozszerzenia Języka Python** zamiast tego, który ma wiele z tego, co jest opisane poniżej już w miejscu. W tym instruktażu, jednak, począwszy od pustego projektu demonstruje tworzenie modułu rozszerzenia krok po kroku. Po zrozumieniu procesu szablon pozwala zaoszczędzić czas podczas pisania własnych rozszerzeń.
 
-1. Utwórz plik języka C++ w nowym projekcie, klikając prawym przyciskiem myszy **pliki źródłowe** węzła, następnie wybierz pozycję **Dodaj** > **nowy element**, wybierz opcję **pliku C++**, nadaj jej nazwę `module.cpp`i wybierz **OK**.
+1. Utwórz plik C++ w nowym projekcie, klikając prawym przyciskiem myszy węzeł **Pliki źródłowe,** a `module.cpp`następnie wybierz polecenie **Dodaj** > nowy**element,** wybierz pozycję Plik **C++,** nazwij go i wybierz przycisk **OK**.
 
     > [!Important]
-    > Plik o *.cpp* rozszerzenie jest konieczne włączyć na stronach właściwości języka C++ w kolejnych krokach.
+    > Plik z rozszerzeniem *.cpp* jest konieczne, aby włączyć strony właściwości Języka C++ w krokach, które należy wykonać.
 
-1. Kliknij prawym przyciskiem myszy projekt C++ w **Eksploratora rozwiązań**, wybierz opcję **właściwości**.
+1. Kliknij prawym przyciskiem myszy projekt C++ w **Eksploratorze rozwiązań**, wybierz polecenie **Właściwości**.
 
-1. W górnej części **stron właściwości** wyświetlonym oknie dialogowym Ustaw **konfiguracji** do **wszystkie konfiguracje** i **platformy** do **Win32**.
+1. W górnej części wyświetlonego okna dialogowego **Strony właściwości** ustaw **konfigurację** na **Wszystkie konfiguracje** i **platformę** na **Win32**.
 
-1. Ustaw określone właściwości, zgodnie z opisem w poniższej tabeli, a następnie wybierz **OK**.
+1. Ustaw określone właściwości zgodnie z opisem w poniższej tabeli, a następnie wybierz **przycisk OK**.
 
     | Tab | Właściwość | Wartość |
     | --- | --- | --- |
-    | **Ogólne** | **Ogólne** > **Nazwa docelowej** | Określ nazwę modułu dowolną do odwoływania się do niego za pomocą języka Python w `from...import` instrukcji. Użyjesz tej samej nazwie w C++ podczas definiowania modułu dla języka Python. Jeśli chcesz użyć nazwy projektu jako nazwa modułu, pozostaw wartość domyślną **$(ProjectName)**. |
-    | | **Ogólne** > **rozszerzenie docelowe** | **.pyd** |
-    | | **Wartości domyślne projektu** > **typ konfiguracji** | **Biblioteka dynamiczna (dll)** |
-    | **C/C++** > **ogólne** | **Dodatkowe katalogi dyrektywy Include** | Język Python został dodany *obejmują* folder jako odpowiednią dla tej instalacji, na przykład `c:\Python36\include`.  |
-    | **C/C++** > **preprocesora** | **Definicje preprocesora** | **CPython tylko**: Dodaj `Py_LIMITED_API;` na początku ciągu znaków (łącznie ze średnikiem). Ta definicja ogranicza niektóre funkcje, można wywołać za pomocą języka Python i sprawia, że kod jest bardziej przenośny między różnymi wersjami języka Python. Jeśli pracujesz z PyBind11, nie dodawaj tej definicji, w przeciwnym razie zostaną wyświetlone błędy kompilacji. |
-    | **C/C++** > **generowanie kodu** | **Biblioteka środowiska uruchomieniowego** | **Wielowątkowa Biblioteka DLL (/ MD)** (zobacz poniższe ostrzeżenie) |
-    | **Konsolidator** > **ogólne** | **Dodatkowe katalogi biblioteki** | Język Python został dodany *libs* folder zawierający *.lib* pliki jako odpowiednią dla tej instalacji, na przykład `c:\Python36\libs`. (Pamiętaj wskazywał *libs* folder, który zawiera *.lib* pliki, i *nie* *Lib* folder, który zawiera *.py*  pliki.) |
+    | **Ogólne** | **Ogólna** > **nazwa docelowa** | Określ nazwę modułu, jak chcesz odwoływać `from...import` się do niego z Python w instrukcjach. Tej samej nazwy używasz w języku C++ podczas definiowania modułu dla języka Python. Jeśli chcesz użyć nazwy projektu jako nazwy modułu, pozostaw domyślną wartość **$(ProjectName).** |
+    | | **Ogólne** > **rozszerzenie celu** | **.pyd (pyd)** |
+    | | **Project Defaults** > **Typ konfiguracji** domyślne projektu | **Biblioteka dynamiczna (dll)** |
+    | **C/C++** > **Ogólne** | **Dodatkowe katalogi dołączania** | Dodaj folder *do dołączania* języka Python odpowiednio `c:\Python36\include`do instalacji, na przykład .  |
+    | **C/C++** > **Preprocesor** C/C++ | **Definicje preprocesora** | **CPython tylko** `Py_LIMITED_API;` : dodać na początku ciągu (w tym średnika). Ta definicja ogranicza niektóre funkcje, które można wywołać z języka Python i sprawia, że kod bardziej przenośny między różnymi wersjami języka Python. Jeśli pracujesz z PyBind11, nie dodawaj tej definicji, w przeciwnym razie zobaczysz błędy kompilacji. |
+    | **Generowanie kodu C/C++** > **Code Generation** | **Biblioteka środowiska uruchomieniowego** | **Wielowątkowa biblioteka DLL (/MD)** (patrz ostrzeżenie poniżej) |
+    | **Linker** > **Ogólne** | **Dodatkowe katalogi bibliotek** | Dodaj folder Języka Python *libs zawierający* pliki *lib* odpowiednie `c:\Python36\libs`dla twojej instalacji, na przykład . (Pamiętaj, aby wskazać folder *libs zawierający* pliki *lib,* a *nie* folder *Lib* zawierający pliki *py).* |
 
     > [!Tip]
-    > Jeśli nie widzisz karty C/C++ we właściwościach projektu jest to, ponieważ projekt nie zawiera wszystkie pliki, które identyfikuje go jako pliki źródłowe C/C++. Ten stan może wystąpić, jeśli utworzysz plik źródłowy bez *.c* lub *.cpp* rozszerzenia. Na przykład, jeśli przypadkowo wprowadzone `module.coo` zamiast `module.cpp` w okno dialogowe nowego elementu wcześniej, następnie programu Visual Studio tworzy plik, ale nie ustawiono typu pliku "C / C + kodu," który jest co aktywuje kartę właściwości języka C/C++. Takie misidentification pozostaje tak, nawet w przypadku zmiany nazwy pliku z `.cpp`. Aby prawidłowo ustawić typ pliku, kliknij prawym przyciskiem myszy plik w **Eksploratora rozwiązań**, wybierz opcję **właściwości**, a następnie ustaw **typ pliku** do **kodu C/C++**.
+    > Jeśli nie widzisz c/c++ kartę we właściwościach projektu, to dlatego, że projekt nie zawiera żadnych plików, które identyfikuje jako pliki źródłowe C/C++. Ten warunek może wystąpić, jeśli utworzysz plik źródłowy bez rozszerzenia *.c* lub *.cpp.* Na przykład jeśli przypadkowo `module.coo` wprowadzone zamiast `module.cpp` w oknie dialogowym nowego elementu wcześniej, a następnie Visual Studio tworzy plik, ale nie ustawia typ pliku na "Kod C/C+", który jest, co aktywuje c/c++ karty właściwości. Taka błędna identyfikacja pozostaje w przypadku, nawet `.cpp`jeśli zmienisz nazwę pliku z . Aby poprawnie ustawić typ pliku, kliknij prawym przyciskiem myszy plik w **Eksploratorze rozwiązań**, wybierz **polecenie Właściwości**, a następnie ustaw kod **Typu pliku** na **Kod C/C++.**
 
     > [!Warning]
-    > Zawsze wartość **C/C++** > **generowania kodu** > **biblioteki środowiska uruchomieniowego** opcję **Multi-threaded biblioteki DLL (/ MD)**, nawet dla konfiguracji debugowania, ponieważ jest to ustawienie, co to są tworzone za pomocą plików binarnych języka Python bez debugowania. Za pomocą języka CPython, jeśli to się zdarzyć, aby ustawić **Multi-threaded DLL debugowania (/ MDd)** opcję tworzenia **debugowania** konfiguracji powoduje błąd **C1189: Py_LIMITED_API jest niezgodna z Py_DEBUG Py_TRACE_REFS i Py_REF_DEBUG**. Ponadto jeśli usuniesz `Py_LIMITED_API` (który jest wymagany przy użyciu języka CPython, ale nie PyBind11) w celu uniknięcia błędów kompilacji, Python ulega awarii podczas próby zaimportowania modułu. (Awaria się dzieje w ramach wywołania biblioteki DLL `PyModule_Create` opisana poniżej, z komunikatu wyjściowego **błąd krytyczny Python: PyThreadState_Get: nie bieżącego wątku**.)
+    > Zawsze ustawiaj opcję**Biblioteka wykonawcza** **generowania** > kodu **C/C++** > na **wielowątkową bibliotekę DLL (/MD),** nawet dla konfiguracji debugowania, ponieważ to ustawienie jest tym, z czym są zbudowane pliki binarne języka Python bez debugowania. W przypadku CPython, jeśli zdarzy ci się ustawić opcję **wielowątkowej biblioteki DLL debugowania (/MDd),** tworzenie konfiguracji **debugowania** powoduje błąd **C1189: Py_LIMITED_API jest niezgodne z Py_DEBUG, Py_TRACE_REFS i Py_REF_DEBUG**. Ponadto w przypadku `Py_LIMITED_API` usunięcia (co jest wymagane z CPython, ale nie PyBind11), aby uniknąć błędu kompilacji, Python ulega awarii podczas próby zaimportowania modułu. (Awaria dzieje się w wywołaniu `PyModule_Create` biblioteki DLL, jak opisano później, z komunikatem wyjściowym **fatal python błąd: PyThreadState_Get: brak bieżącego wątku**.)
     >
-    > Opcja/mdd służy do tworzenia plików binarnych debugowania języka Python (takie jak *python_d.exe*), ale wybierając go z rozszerzeniem DLL nadal powoduje błąd kompilacji za pomocą `Py_LIMITED_API`.
+    > Opcja /MDd służy do tworzenia plików binarnych debugowania języka Python (takich jak *python_d.exe),* ale wybranie `Py_LIMITED_API`jej dla biblioteki DLL rozszerzenia nadal powoduje błąd kompilacji za pomocą .
 
-1. Kliknij prawym przyciskiem myszy projekt C++, a następnie wybierz pozycję **kompilacji** do testowania konfiguracji (zarówno **debugowania** i **wersji**). *.Pyd* pliki znajdują się w **rozwiązania** folderze **debugowania** i **wersji**, nie C++ projektu sam folder.
+1. Kliknij prawym przyciskiem myszy projekt C++ i wybierz polecenie **Kompilacja,** aby przetestować konfiguracje (zarówno **debugowanie,** jak i **wydanie).** Pliki *pyd* znajdują się w folderze **rozwiązania** w obszarze **Debugowanie** i **zwalnianie**, a nie w samym folderze projektu C++.
 
-1. Dodaj następujący kod do projektu C++ *module.cpp* pliku:
+1. Dodaj następujący kod do pliku *module.cpp* projektu C++:
 
     ```cpp
     #include <Windows.h>
@@ -161,21 +161,21 @@ Postępuj zgodnie z instrukcjami w tej sekcji, aby utworzyć dwa identyczne proj
     }
     ```
 
-1. Tworzenie projektu C++ ponownie, aby potwierdzić, że Twój kod jest poprawny.
+1. Skompiluj projekt C++ ponownie, aby potwierdzić, że kod jest poprawny.
 
-1. Jeśli nie zostało to jeszcze zrobione, powtórz powyższe kroki, aby utworzyć drugi projekt o nazwie "superfastcode2" z identyczną zawartość.
+1. Jeśli jeszcze tego nie zrobiono, powtórz powyższe kroki, aby utworzyć drugi projekt o nazwie "superfastcode2" o identycznej zawartości.
 
-## <a name="convert-the-c-projects-to-extensions-for-python"></a>Konwertowanie projektów w języku C++ do rozszerzenia dla języka Python
+## <a name="convert-the-c-projects-to-extensions-for-python"></a>Konwertowanie projektów języka C++ na rozszerzenia dla języka Python
 
-Aby biblioteki DLL C++ do rozszerzenia dla języka Python, po raz pierwszy zmodyfikujesz wyeksportowanego metody służące do interakcji z typów języka Python. Następnie dodaj funkcję, która eksportuje moduł oraz definicje metod modułu.
+Aby wprowadzić bibliotekę DLL języka C++ w rozszerzenie dla języka Python, należy najpierw zmodyfikować eksportowane metody do interakcji z typami języka Python. Następnie należy dodać funkcję, która eksportuje moduł, wraz z definicjami metod modułu.
 
-W kolejnych sekcjach wyjaśniono, jak wykonać te kroki przy użyciu rozszerzenia języka CPython i PyBind11.
+Sekcje, które należy wykonać wyjaśnić, jak wykonać te kroki przy użyciu rozszerzeń CPython i PyBind11.
 
-### <a name="cpython-extensions"></a>Rozszerzenia języka CPython
+### <a name="cpython-extensions"></a>Rozszerzenia CPython
 
-W tle, na które zostaną uwzględnione w tej sekcji dla języka Python 3.x, można znaleźć [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html) , a w szczególności [obiektów modułu](https://docs.python.org/3/c-api/module.html) w witrynie python.org (Pamiętaj wybrać wersję języka Python z Kontrolka listy rozwijanej w prawym górnym rogu, aby wyświetlić poprawne dokumentację).
+W tle, co jest pokazane w tej sekcji dla języka Python 3.x, zapoznaj się z [Podręcznikiem odwołania do interfejsu API języka Python/C,](https://docs.python.org/3/c-api/index.html) a zwłaszcza [obiektami modułu](https://docs.python.org/3/c-api/module.html) na python.org (pamiętaj, aby wybrać wersję języka Python z rozwijanej kontrolki w prawym górnym rogu, aby wyświetlić poprawną dokumentację).
 
-Jeśli pracujesz z języka Python 2.7 się [rozszerzenie języka Python 2.7 z C lub C++](https://docs.python.org/2.7/extending/extending.html) i [przenoszenie modułów rozszerzeń Python 3](https://docs.python.org/2.7/howto/cporting.html) (python.org).
+Jeśli pracujesz z Python 2.7, zamiast tego odnoszą się do [rozszerzania Python 2.7 z C lub C++](https://docs.python.org/2.7/extending/extending.html) i [przenoszenia modułów rozszerzeń do Pythona 3](https://docs.python.org/2.7/howto/cporting.html) (python.org).
 
 1. W górnej części *module.cpp*, obejmują *Python.h*:
 
@@ -183,7 +183,7 @@ Jeśli pracujesz z języka Python 2.7 się [rozszerzenie języka Python 2.7 z C 
     #include <Python.h>
     ```
 
-1. Modyfikowanie `tanh_impl` metodę, aby zaakceptować i zwracanych typów języka Python ( `PyOjbect*`, to znaczy):
+1. Zmodyfikuj `tanh_impl` metodę akceptowania `PyOjbect*`i zwracania typów Języka Python (a , czyli):
 
     ```cpp
     PyObject* tanh_impl(PyObject *, PyObject* o) {
@@ -193,7 +193,7 @@ Jeśli pracujesz z języka Python 2.7 się [rozszerzenie języka Python 2.7 z C 
     }
     ```
 
-1. Dodaj strukturę, która definiuje sposób C++ `tanh_impl` funkcji jest prezentowana w języku Python:
+1. Dodaj strukturę, która definiuje sposób `tanh_impl` prezentowania funkcji C++ w języku Python:
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
@@ -206,7 +206,7 @@ Jeśli pracujesz z języka Python 2.7 się [rozszerzenie języka Python 2.7 z C 
     };
     ```
 
-1. Dodaj to struktura, która definiuje moduł, w których chcesz się do niego odwoływać w kodzie języka Python, szczególnie w przypadku korzystania z `from...import` instrukcji. (To pasuje do wartości we właściwościach projektu w obszarze **właściwości konfiguracji** > **ogólne** > **Nazwa docelowego**.) W poniższym przykładzie nazwa modułu "superfastcode" oznacza, że można użyć `from superfastcode import fast_tanh` w języku Python, ponieważ `fast_tanh` jest zdefiniowana w `superfastcode_methods`. (Takich jak nazwy plików wewnętrznych do projektu C++, *module.cpp*, nie mają wpływu.)
+1. Dodaj strukturę, która definiuje moduł, jak chcesz odwoływać się do niego `from...import` w kodzie języka Python, w szczególności podczas korzystania z instrukcji. (Upewnij się, że jest to zgodne z wartością we właściwościach projektu w obszarze Nazwa ogólnego obiektu > **docelowego** > **Target Name** **właściwości konfiguracji).** W poniższym przykładzie nazwa modułu "superfastcode" oznacza, że można używać `from superfastcode import fast_tanh` w Pythonie, ponieważ `fast_tanh` jest zdefiniowany w ramach `superfastcode_methods`. (Nazwy plików wewnętrzne projektu C++, takie jak *module.cpp,* są nieistotne).
 
     ```cpp
     static PyModuleDef superfastcode_module = {
@@ -218,7 +218,7 @@ Jeśli pracujesz z języka Python 2.7 się [rozszerzenie języka Python 2.7 z C 
     };
     ```
 
-1. Dodaj metodę, która wywołuje języka Python, ładuje moduł, który musi mieć nazwę `PyInit_<module-name>`, gdzie &lt;Nazwa modułu&gt; dokładnie odpowiada projektu C++ **ogólne** > **docelowej Nazwa** właściwości (oznacza to, że jest on zgodny nazwę pliku *.pyd* skompilowany na podstawie projektu).
+1. Dodaj metodę, która wywołuje języka Python podczas ładowania `PyInit_<module-name>`modułu, który musi &lt;być nazwany , gdzie nazwa&gt; modułu dokładnie odpowiada właściwości **Ogólna** > nazwa**docelowa** projektu C++ (oznacza to, że jest zgodna z nazwą pliku *.pyd* zbudowany przez projekt).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {
@@ -226,13 +226,13 @@ Jeśli pracujesz z języka Python 2.7 się [rozszerzenie języka Python 2.7 z C 
     }
     ```
 
-1. Ustaw docelową konfigurację **wersji** i skompiluj projekt C++, ponownie, aby zweryfikować Twojego kodu. Jeśli wystąpią błędy, zobacz [Rozwiązywanie problemów](#troubleshooting) poniższej sekcji.
+1. Ustaw konfigurację docelową na **Zwolnij** i ponownie skompiluj projekt C++, aby zweryfikować kod. Jeśli wystąpią błędy, zobacz sekcję [Rozwiązywanie problemów](#troubleshooting) poniżej.
 
 ### <a name="pybind11"></a>PyBind11
 
-Jeśli wykonaniu kroków opisanych w poprzedniej sekcji, możesz bez obaw zauważyć używane mnóstwo schematyczny kod służący do tworzenia struktur niezbędny moduł dla kodu C++. PyBind11 upraszcza ten proces, za pomocą makr w pliku nagłówka C++, które osiągnąć ten sam wynik, za pomocą znacznie mniejszej ilości kodu. Aby uzyskać podstawowe informacje dotyczące przedstawionego w tej sekcji, zobacz [podstawy PyBind11](https://github.com/pybind/pybind11/blob/master/docs/basics.rst) (github.com).
+Po wykonaniu kroków w poprzedniej sekcji, z pewnością zauważyłeś, że użyto wiele kodu standardowego do utworzenia niezbędnych struktur modułu dla kodu C++. PyBind11 upraszcza proces za pośrednictwem makr w pliku nagłówka Języka C++, które osiągają ten sam wynik przy znacznie mniejszym kodzie. Aby uzyskać informacje na temat tego, co jest wyświetlane w tej sekcji, zobacz [Podstawy PyBind11](https://github.com/pybind/pybind11/blob/master/docs/basics.rst) (github.com).
 
-1. Zainstaluj PyBind11 przy użyciu narzędzia pip: `pip install pybind11` lub `py -m pip install pybind11`.
+1. Zainstaluj PyBind11 za `pip install pybind11` `py -m pip install pybind11`pomocą pip: lub .
 
 1. W górnej części *module.cpp*, obejmują *pybind11.h*:
 
@@ -240,7 +240,7 @@ Jeśli wykonaniu kroków opisanych w poprzedniej sekcji, możesz bez obaw zauwa�
     #include <pybind11/pybind11.h>
     ```
 
-1. W dolnej części *module.cpp*, użyj `PYBIND11_MODULE` makra, aby zdefiniować punkt wejścia dla funkcji języka C++:
+1. W dolnej części *module.cpp*użyj `PYBIND11_MODULE` makra, aby zdefiniować punkt wejścia do funkcji C++:
 
     ```cpp
     namespace py = pybind11;
@@ -258,37 +258,37 @@ Jeśli wykonaniu kroków opisanych w poprzedniej sekcji, możesz bez obaw zauwa�
     }
     ```
 
-1. Ustaw docelową konfigurację **wersji** i skompiluj projekt C++, aby zweryfikować Twojego kodu. Jeśli wystąpią błędy, zobacz następną sekcję na temat rozwiązywania problemów.
+1. Ustaw konfigurację docelową na **Zwolnij** i skompiluj projekt C++, aby zweryfikować kod. Jeśli wystąpią błędy, zobacz następną sekcję dotyczącą rozwiązywania problemów.
 
 ### <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-Modułu języka C++ mogą kompilacja nie powiedzie się z następujących powodów:
+Moduł C++ może nie zostać skompilowany z następujących powodów:
 
-- Nie można zlokalizować *Python.h* (**E1696: nie można otworzyć pliku źródłowego "Python.h"** i/lub **C1083: Otwórz, nie można dołączyć plik: "Python.h": Nie ma takiego pliku lub katalogu**): Upewnij się, że ścieżka w **C/C++** > **ogólne** > **dodatkowe katalogi dołączenia** w Projekt właściwości punkty z instalacją języka Python *obejmują* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
+- Nie można zlokalizować *Python.h* (**E1696: nie można otworzyć pliku źródłowego "Python.h"** i/lub **C1083: Nie można otworzyć pliku include: "Python.h": Brak takiego pliku lub katalogu**): sprawdź, czy ścieżka w **C/C++** > **Ogólne** > **dodatkowe katalogi w** właściwościach projektu wskazuje na folder *dołączany* instalacji Języka Python. Zobacz krok 6 w obszarze [Tworzenie podstawowego projektu C++](#create-the-core-c-projects).
 
-- Nie można zlokalizować biblioteki języka Python: Upewnij się, że ścieżka w **konsolidatora** > **ogólne** > **dodatkowe katalogi bibliotek** w projekcie wskazuje właściwości z instalacją języka Python *libs* folderu. Zobacz krok 6 w sekcji [Tworzenie projektu core C++](#create-the-core-c-projects).
+- Nie można zlokalizować bibliotek języka Python: sprawdź, czy ścieżka w dodatkowych**General** > **katalogach biblioteki** **linkera** > w właściwościach projektu wskazuje folder *libs* instalacji języka Python. Zobacz krok 6 w obszarze [Tworzenie podstawowego projektu C++](#create-the-core-c-projects).
 
-- Błędy konsolidatora dotyczące architektury docelowej: zmiana docelowej C++ projektu architektury, aby był zgodny z instalacją języka Python. Na przykład jeśli zostaną objęci x64 z projektu C++, ale z instalacją języka Python jest x86, należy zmienić projektu C++ pod kątem x86.
+- Błędy konsolidatora związane z architekturą docelową: zmień architekturę projektu obiektu docelowego języka C++, aby dopasować się do architektury instalacji języka Python. Na przykład jeśli kierujesz x64 z projektu C++, ale instalacja języka Python jest x86, zmień projekt C++ na docelowy x86.
 
-## <a name="test-the-code-and-compare-the-results"></a>Testowanie kodu i porównać wyniki
+## <a name="test-the-code-and-compare-the-results"></a>Przetestuj kod i porównaj wyniki
 
-Teraz, gdy masz biblioteki DLL postacią rozszerzenia języka Python, można odwoływać się do nich z projektu języka Python, zaimportuj moduły i użyć ich metod.
+Teraz, gdy masz biblioteki DLL skonstruowane jako rozszerzenia Języka Python, możesz odwoływać się do nich z projektu Pythona, importować moduły i używać ich metod.
 
-### <a name="make-the-dll-available-to-python"></a>Udostępnia bibliotekę DLL języka Python
+### <a name="make-the-dll-available-to-python"></a>Udostępnianie biblioteki DLL w języku Python
 
-Istnieją dwa sposoby, aby udostępnić biblioteki DLL języka Python.
+Istnieją dwa sposoby udostępniania biblioteki DLL w języku Python.
 
-Pierwsza metoda działa, jeśli projektu w języku Python i projektu C++ znajdują się w tym samym rozwiązaniu. Przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** węzła w projektu w języku Python, a następnie wybierz **Dodaj odwołanie**. W wyświetlonym oknie dialogowym wybierz **projektów** , a następnie wybierz oba **superfastcode** i **superfastcode2** projektów, a następnie wybierz **OK**.
+Pierwsza metoda działa, jeśli projekt języka Python i projekt C++ znajdują się w tym samym rozwiązaniu. Przejdź do **Programu Solution Explorer**, kliknij prawym przyciskiem myszy węzeł **Odwołania** w projekcie języka Python, a następnie wybierz pozycję **Dodaj odwołanie**. W wyświetlonym oknie dialogowym wybierz kartę **Projekty,** wybierz zarówno projekty **superszybkiego, jak** i **superszybkiego 2,** a następnie wybierz przycisk **OK**.
 
-![Dodawanie odwołania do projektu superfastcode](media/cpp-add-reference.png)
+![Dodawanie odwołania do projektu superszybkiego kodu](media/cpp-add-reference.png)
 
-Alternatywna metoda, opisane w poniższych krokach instaluje moduł w środowisku globalnym języka Python, udostępniając je do innych projektów języka Python. (Dlatego zwykle wymaga odświeżania bazy danych uzupełniania IntelliSense dla tego środowiska w programie Visual Studio 2017 w wersji 15.5 i starszych. Trwa odświeżanie jest również podczas usuwania modułu ze środowiska.)
+Alternatywna metoda, opisana w poniższych krokach, instaluje moduł w globalnym środowisku Pythona, udostępniając go również innym projektom języka Python. (W ten sposób zazwyczaj wymaga odświeżenia bazy danych ukończenia IntelliSense dla tego środowiska w programie Visual Studio 2017 w wersji 15.5 i wcześniejszych. Odświeżenie jest również konieczne podczas usuwania modułu ze środowiska.)
 
-1. Jeśli używasz programu Visual Studio 2017 lub później, uruchom Instalatora programu Visual Studio, wybierz **Modyfikuj**, wybierz opcję **poszczególne składniki** > **kompilatory, narzędzia do kompilacji i środowiska uruchomieniowe**   >  **Zestaw narzędzi w wersji 140 visual C++ 2015.3**. Ten krok jest niezbędny, ponieważ Python (dla Windows) jest tworzone za pomocą programu Visual Studio 2015 (wersja 14.0) i oczekuje, że te narzędzia są dostępne podczas kompilowania rozszerzenia za pomocą metody opisane w tym miejscu. (Zwróć uwagę, że może być konieczne do zainstalowania 32-bitowej wersji środowiska Python i docelowa bibliotek DLL systemu Win32 i nie x64).
+1. Jeśli używasz programu Visual Studio 2017 lub nowszego, uruchom instalator programu Visual Studio, wybierz pozycję **Modyfikuj,** wybierz pozycję **Kompilatory poszczególnych składników,** > **narzędzia kompilacji i środowiska wykonawcze** > **Visual C++ 2015.3 v140.** Ten krok jest konieczne, ponieważ Python (dla systemu Windows) jest sam zbudowany z programu Visual Studio 2015 (wersja 14.0) i oczekuje, że te narzędzia są dostępne podczas tworzenia rozszerzenia za pomocą metody opisanej tutaj. (Należy zauważyć, że może być konieczne zainstalowanie 32-bitowej wersji języka Python i kierowanie biblioteki DLL na win32, a nie x64).
 
-1. Utwórz plik o nazwie *pliku setup.py* w projekcie języka C++, klikając prawym przyciskiem myszy projekt i wybierając **Dodaj** > **nowy element**. Następnie wybierz pozycję **plik C++ (.cpp)**, nadaj plikowi nazwę `setup.py`i wybierz **OK** (plikowi z *PY* rozszerzenia sprawia, że program Visual Studio rozpoznaje je jako języka Python Pomimo przy użyciu języka C++ plik szablonu). Gdy plik zostanie wyświetlony w edytorze, wklej następujący kod do niego odpowiednie dla metody rozszerzenia:
+1. Utwórz plik o nazwie *setup.py* w projekcie C++, klikając prawym przyciskiem myszy projekt i wybierając pozycję **Dodaj** > **nowy element**. Następnie wybierz **opcję Plik C++ (.cpp)**, nazwij plik `setup.py`i wybierz PRZYCISK **OK** (nazwanie pliku rozszerzeniem *.py* sprawia, że program Visual Studio rozpoznaje go jako Python pomimo użycia szablonu pliku C++). Gdy plik pojawi się w edytorze, wklej do niego następujący kod, stosownie do metody rozszerzenia:
 
-    **Rozszerzenia języka CPython (projekt superfastcode):**
+    **Rozszerzenia CPython (projekt superszybkiego kodu):**
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -301,7 +301,7 @@ Alternatywna metoda, opisane w poniższych krokach instaluje moduł w środowisk
         )
     ```
 
-    Zobacz [rozszerzenia konstrukcyjne C i C++](https://docs.python.org/3/extending/building.html) (python.org) dokumentację dotyczącą tego skryptu.
+    Zobacz [tworzenie rozszerzeń C i C++](https://docs.python.org/3/extending/building.html) (python.org) dla dokumentacji tego skryptu.
 
     **PyBind11 (projekt superfastcode2):**
 
@@ -328,7 +328,7 @@ Alternatywna metoda, opisane w poniższych krokach instaluje moduł w środowisk
     )
     ```
 
-1. *Pliku setup.py* kodu powoduje, że języka Python w celu skompilowania rozszerzenia przy użyciu zestawu narzędzi Visual Studio 2015 C++, gdy jest używana z wiersza polecenia. Otwórz wiersz polecenia z podwyższonym poziomem uprawnień, przejdź do folderu zawierającego projekt języka C++ (czyli folderu, który zawiera *pliku setup.py*), a następnie wprowadź następujące polecenie:
+1. Kod *setup.py* nakazuje Pythonowi tworzenie rozszerzenia przy użyciu zestawu narzędzi Visual Studio 2015 C++, gdy jest używany z wiersza polecenia. Otwórz wiersz polecenia z podwyższonem poziomem uprawnień, przejdź do folderu zawierającego projekt C++ (czyli folder zawierający *setup.py)* i wprowadź następujące polecenie:
 
     ```command
     pip install .
@@ -340,11 +340,11 @@ Alternatywna metoda, opisane w poniższych krokach instaluje moduł w środowisk
     py -m pip install .
     ```
 
-### <a name="call-the-dll-from-python"></a>Wywołania biblioteki DLL za pomocą języka Python
+### <a name="call-the-dll-from-python"></a>Wywoływanie biblioteki DLL z języka Python
 
-Po utworzeniu biblioteki DLL dostępnych do języka Python zgodnie z opisem w poprzedniej sekcji, teraz można wywołać `superfastcode.fast_tanh` i `superfastcode2.fast_tanh2` funkcji za pomocą języka Python code i porównaj ich wydajności do implementacji języka Python:
+Po udostępnienie biblioteki DLL w języku Python, zgodnie z opisem `superfastcode.fast_tanh` `superfastcode2.fast_tanh2` w poprzedniej sekcji, można teraz wywołać i funkcje z kodu Języka Python i porównać ich wydajność z implementacją języka Python:
 
-1. Dodaj następujące wiersze w swojej *PY* plik, aby wywołać metody wyeksportowane z biblioteki dll i wyświetlić ich dane wyjściowe:
+1. Dodaj następujące wiersze w pliku *py,* aby wywołać metody eksportowane z bibliotek DLL i wyświetlić ich dane wyjściowe:
 
     ```python
     from superfastcode import fast_tanh
@@ -354,7 +354,7 @@ Po utworzeniu biblioteki DLL dostępnych do języka Python zgodnie z opisem w po
     test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. Uruchom Python program (**debugowania** > **Uruchom bez debugowania** lub **Ctrl**+**F5**) i Zauważ, że procedury C++ uruchomić około pięciu do dwudziestego razy szybciej niż implementacji języka Python. Typowe dane wyjściowe wyglądają następująco:
+1. Uruchom program Python **(Debug** > **Start bez debugowania** lub **Ctrl**+**F5**) i obserwować, że procedury C++ działają około pięć do dwudziestu razy szybciej niż implementacja języka Python. Typowe dane wyjściowe są następujące:
 
     ```output
     Running benchmarks with COUNT = 500000
@@ -365,51 +365,51 @@ Po utworzeniu biblioteki DLL dostępnych do języka Python zgodnie z opisem w po
     [fast_tanh2(x) for x in d] (PyBind11 C++ extension) took 0.204 seconds
     ```
 
-    Jeśli **Rozpocznij bez debugowania** polecenie jest wyłączone, kliknij prawym przyciskiem myszy projekt języka Python w **Eksploratora rozwiązań** i wybierz **Ustaw jako projekt startowy**.
+    Jeśli polecenie **Rozpocznij bez debugowania** jest wyłączone, kliknij prawym przyciskiem myszy projekt języka Python w **Eksploratorze rozwiązań** i wybierz polecenie **Ustaw jako projekt startowy**.
 
-1. Spróbuj zwiększyć `COUNT` zmiennej, dzięki czemu różnic jest bardziej widoczny. A **debugowania** kompilacji modułu języka C++ również działa wolniej niż **wersji** kompilacji, ponieważ **debugowania** kompilacji mniej jest zoptymalizowany i zawiera różne sprawdzanie błędów. Możesz przełączać się między tymi konfiguracjami dla porównania.
+1. Spróbuj zwiększyć `COUNT` zmienną, tak aby różnice były bardziej wyraźne. Kompilacja **debugowania** modułu C++ działa również wolniej niż **kompilacja release,** ponieważ kompilacja **debugowania** jest mniej zoptymalizowana i zawiera różne testy błędów. Zapraszam do przełączania się między tymi konfiguracjami dla porównania.
 
 > [!NOTE]
-> W danych wyjściowych można zobaczyć, czy rozszerzenie PyBind11 nie jest tak szybko, jak rozszerzenie języka CPython, jakby było nadal znacznie szybsze niż prosta implementacja języka Python. Różnica polega na ze względu na małą ilością obciążenie każdego wywołania PyBind11 wprowadzono w celu zapewnienia jego interfejs C++ znacznie prostsze. Ta różnica na wywołanie jest rzeczywiście dość nieznaczny: ponieważ kod testowy wywołuje funkcje rozszerzenia 500 000 razy, wyniki, zobaczysz tutaj znacznie uzupełnienie tego obciążenie! Zazwyczaj funkcji języka C++ jest dużo więcej pracy niż prosta `fast_tanh[2]` metody używane w tym miejscu, w którym to przypadku obciążenie "nieważne". Jednak w przypadku wdrażania metod, które mogą być wywoływane tysięcy razy na sekundę, przy użyciu podejścia CPython może spowodować lepszą wydajność niż PyBind11.
+> W danych wyjściowych widać, że rozszerzenie PyBind11 nie jest tak szybkie jak rozszerzenie CPython, chociaż nadal jest znacznie szybsze niż prosta implementacja języka Python. Różnica wynika z niewielkiej ilości narzutów na wywołanie, które wprowadza PyBind11, aby jego interfejs C++ znacznie prostszy. Ta różnica na wywołanie jest rzeczywiście dość nieistotne: ponieważ kod testowy wywołuje funkcje rozszerzenia 500.000 razy, wyniki widać tutaj znacznie wzmocnić, że obciążenie! Zazwyczaj funkcja C++ wykonuje znacznie więcej pracy `fast_tanh[2]` niż metody trywialne używane w tym miejscu, w którym to przypadku obciążenie jest nieistotne. Jednak jeśli implementujesz metody, które mogą być wywoływane tysiące razy na sekundę, przy użyciu CPython podejście może spowodować lepszą wydajność niż PyBind11.
 
-## <a name="debug-the-c-code"></a>Możliwe jest debugowanie kodu języka C++
+## <a name="debug-the-c-code"></a>Debugowanie kodu języka C++
 
-Program Visual Studio obsługuje debugowania kodu języka Python i C++ ze sobą. W tej sekcji przedstawiono proces, za pomocą **superfastcode** projektu; kroki są takie same dla **superfastcode2** projektu.
+Visual Studio obsługuje debugowanie kodu Python i C++ razem. W tej sekcji przechodzi przez proces przy użyciu projektu **superszybkiego;** kroki są takie same dla projektu **superfastcode2.**
 
-1. Kliknij prawym przyciskiem myszy projekt języka Python w **Eksploratora rozwiązań**, wybierz opcję **właściwości**, wybierz opcję **debugowania** , a następnie wybierz pozycję **debugowania**  >  **Włącz debugowanie kodu natywnego** opcji.
+1. Kliknij prawym przyciskiem myszy projekt języka Python w **Eksploratorze rozwiązań**, wybierz **polecenie Właściwości**, wybierz kartę **Debugowanie,** a następnie wybierz opcję **Debuguj włącz debugowanie** > **kodu natywnego.**
 
     > [!Tip]
-    > Jeśli włączone jest debugowanie kodu natywnego, w oknie danych wyjściowych języka Python może zniknąć natychmiast po zakończeniu program bez umożliwiając zwykłego **naciśnij dowolny klawisz, aby kontynuować** wstrzymania. Aby wymusić przerwie, należy dodać `-i` opcję **Uruchom** > **argumenty Interpreter** na **debugowania** kartę, gdy włączone jest debugowanie kodu natywnego . Ten argument umieszcza interpreter języka Python w trybie interaktywnym po zakończeniu wykonywania kodu, w tym momencie czeka na naciśnięcie klawisza **Ctrl**+**Z** > **Enter**  aby wyjść. (Alternatywnie Jeśli nie masz nic, modyfikowania kodu w języku Python, możesz dodać `import os` i `os.system("pause")` instrukcji pod koniec programu. Ten kod jest duplikatem oryginalnego wiersza wstrzymania.)
+    > Po włączeniu debugowania kodu macierzystego okno danych wyjściowych języka Python może zniknąć natychmiast po zakończeniu programu bez podawania zwykłego **naciśnięcia dowolnego klawisza, aby kontynuować** pauzę. Aby wymusić wstrzymanie, dodaj `-i` tę opcję do pola **Uruchom** > argumenty**interpretera** na karcie **Debugowanie** po włączeniu debugowania kodu macierzystego. Ten argument przełącza interpretera Języka Python w tryb interaktywny po zakończeniu kodu, w którym to momencie czeka na naciśnięcie **klawisza Ctrl**+**Z** > **Enter,** aby zakończyć. (Alternatywnie, jeśli nie masz nic przeciwko modyfikowaniu `import os` kodu `os.system("pause")` Języka Python, możesz dodać i instrukcje na końcu programu. Ten kod powiela oryginalny monit o wstrzymanie).)
 
-1. Wybierz **pliku** > **Zapisz** można zapisać zmiany właściwości.
+1. Wybierz **pozycję Zapisz plik,** > **Save** aby zapisać zmiany właściwości.
 
-1. Ustaw konfigurację kompilacji **debugowania** na pasku narzędzi programu Visual Studio.
+1. Ustaw konfigurację kompilacji na **Debugowanie** na pasku narzędzi programu Visual Studio.
 
-    ![Ustawienie konfiguracji kompilacji do debugowania](media/cpp-set-debug.png)
+    ![Ustawianie konfiguracji kompilacji na Debugowanie](media/cpp-set-debug.png)
 
-1. Ponieważ kod jest ogólnie dłużej do uruchamiania w debugerze, możesz chcieć zmienić `COUNT` zmienną swoje *PY* plik, aby wartość, która jest około 5 razy mniejsza (na przykład zmień go z `500000` do `100000`).
+1. Ponieważ uruchamianie kodu w debugerze trwa zwykle dłużej, można `COUNT` zmienić zmienną w pliku *py* na wartość około pięciokrotnie mniejszą (na przykład zmienić ją z `500000` na `100000`).
 
-1. W kodzie języka C++, należy ustawić punkt przerwania w pierwszym wierszu `tanh_impl` metody, a następnie uruchamiania debugera (**F5** lub **debugowania** > **Rozpocznij debugowanie**). Debuger zatrzymuje się po wywołaniu tego kodu. Jeśli nie zostanie osiągnięty punkt przerwania, sprawdź, czy konfiguracja jest ustawiona **debugowania** i zapisany projekt (co nie jest wykonywane automatycznie podczas uruchamiania debugowania).
+1. W kodzie C++ ustaw punkt przerwania w `tanh_impl` pierwszym wierszu metody, a następnie uruchom debuger (**F5** lub **Debug** > **start debugowania**). Debuger zatrzymuje się, gdy ten kod jest wywoływany. Jeśli punkt przerwania nie zostanie trafiony, sprawdź, czy konfiguracja jest ustawiona na **Debugowanie** i czy projekt został zapisany (co nie odbywa się automatycznie podczas uruchamiania debugera).
 
-    ![Zatrzymywanie w punkcie przerwania w kodzie C++](media/cpp-debugging.png)
+    ![Zatrzymywanie się w punkcie przerwania w kodzie języka C++](media/cpp-debugging.png)
 
-1. W tym momencie można przejść przez kod języka C++, Sprawdź zmienne i tak dalej. Te funkcje są szczegółowo opisane w [debugowania C++ i Python razem](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
+1. W tym momencie można przejść przez kod C++, zbadać zmienne i tak dalej. Te funkcje są szczegółowo opisane w [debugowania C++ i Python razem](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
-## <a name="alternative-approaches"></a>Alternatywnych metod
+## <a name="alternative-approaches"></a>Alternatywne podejścia
 
-Istnieją różne oznacza, że do tworzenia rozszerzenia języka Python, zgodnie z opisem w poniższej tabeli. Pierwsze dwie pozycje CPython i PyBind11 to, co została omówiona w tym artykule już.
+Istnieje wiele sposobów tworzenia rozszerzeń języka Python, zgodnie z opisem w poniższej tabeli. Pierwsze dwa wpisy dla CPython i PyBind11 są to, co zostało omówione w tym artykule już.
 
-| Podejście | Zbioru | Reprezentatywny użytkowników | Pro(s) | CON(s) |
+| Podejście | Vintage | Reprezentatywny użytkownik(-i) | Profesjonaliści | Kon(y) |
 | --- | --- | --- | --- | --- |
-| Moduły rozszerzenia języka C/C++ dla języka CPython | 1991 | Standardowa biblioteka | [Szczegółową dokumentację i samouczki](https://docs.python.org/3/c-api/). Łączna liczba kontroli. | Kompilacja, przenoszenia odwoływać się do zarządzania. Wysoka znajomość języka C. |
-| [PyBind11](https://github.com/pybind/pybind11) (zalecane dla języka C++) | 2015 |  | Lekkie, tylko nagłówek Biblioteka do tworzenia powiązań języka Python z istniejącego kodu C++. Kilka zależności. Zgodność PyPy. | Nowsze, mniej dojrzałe. Dużego wykorzystania funkcji C ++ 11. Krótką listę wymagań obsługiwane kompilatory (Visual Studio jest dołączony). |
-| Cython (zalecane dla języka C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Podobne języka Python. Wysoce dojrzała. O wysokiej wydajności. | Kompilacja, nowej składni, nowe łańcucha narzędzi. |
-| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Działa z niemal każdego kompilatora języka C++. | Pakiet biblioteki; dużych i złożonych zawiera wiele obejścia stare kompilatory. |
-| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Nie kompilacja powszechną dostępność. | Uzyskiwanie dostępu do i mutacja struktur C skomplikowana względem i podatne. |
-| SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generowanie jednocześnie powiązania dla wielu języków. | Nadmiernego obciążenia, jeśli Python jest jedynym miejscem docelowym. |
-| cffi | 2013 | [Kryptografia](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Łatwość integracji, PyPy zgodności. | Nowsze, mniej dojrzałe. |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Podobnie jak cffi przy użyciu języka C++. | Nowsze, może mieć problemy z programu VS 2017. |
+| Moduły rozszerzeń C/C++ dla CPython | 1991 | Standardowa biblioteka | [Obszerna dokumentacja i tutoriale](https://docs.python.org/3/c-api/). Całkowita kontrola. | Kompilacja, przenośność, zarządzanie odniesieniami. Wysoka wiedza C. |
+| [PyBind11](https://github.com/pybind/pybind11) (zalecane dla języka C++) | 2015 |  | Uproszczona biblioteka tylko do nagłówka do tworzenia powiązań języka Python istniejącego kodu C++. Kilka zależności. Zgodność pyPy. | Nowsze, mniej dojrzałe. Intensywne korzystanie z funkcji C++11. Krótka lista obsługiwanych kompilatorów (w zestawie jest program Visual Studio). |
+| Cython (zalecany do C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Python-like. Bardzo dojrzały. Wysoka wydajność. | Kompilacja, nowa składnia, nowy pasek narzędzi. |
+| [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Współpracuje z prawie każdym kompilatorem języka C++. | Duży i złożony pakiet bibliotek; zawiera wiele obejść starych kompilatorów. |
+| ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Brak kompilacji, szeroka dostępność. | Dostęp i mutowanie struktur C uciążliwe i podatne na błędy. |
+| Swig | 1996 | [crfsuite ( crfsuite )](http://www.chokkan.org/software/crfsuite/) | Generowanie powiązań dla wielu języków jednocześnie. | Nadmierne obciążenie, jeśli Python jest jedynym celem. |
+| cffi ( cffi ) | 2013 | [kryptografia](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Łatwość integracji, kompatybilność PyPy. | Nowsze, mniej dojrzałe. |
+| [cppyy ( cppyy )](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Podobne do cffi przy użyciu języka C++. | Nowsze, może mieć pewne problemy z VS 2017. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-Ukończone próbkę z tego przewodnika znajdują się na [rozszerzenie języka python — przykłady vs-cpp](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).
+Wypełniony przykład z tego przewodnika można znaleźć na [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).

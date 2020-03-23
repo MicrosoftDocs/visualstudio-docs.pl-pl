@@ -1,7 +1,7 @@
 ---
-title: Poznaj samouczek Django w programie Visual Studio w kroku 4, szablon projektów internetowych
+title: Dowiedz się samouczek Django w programie Visual Studio krok 4, szablon projektu sieci Web
 titleSuffix: ''
-description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcji oferowanych przez szablon projektu sieci Web Django.
+description: Przewodnik po podstawach Django w kontekście projektów programu Visual Studio, w szczególności funkcje dostarczone przez szablon Django Web Project.
 ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,82 +12,82 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62961700"
 ---
-# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4. Użyj pełnego szablonów projektów internetowych Django
+# <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Użyj pełnego szablonu Django Web Project
 
-**Poprzedniego kroku: [Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Poprzedni krok: [Obsługa plików statycznych, dodawanie stron i używanie dziedziczenia szablonów](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Teraz, gdy zostały zbadane podstawy Django, tworząc aplikację od szablonu "Pusty projekt sieci Web Django" w programie Visual Studio, może łatwo zrozumieć pełniejszego aplikacji, który jest wytwarzany przez szablon "Projekt sieci Web Django".
+Teraz, gdy już zbadać podstawy Django, tworząc aplikację na "Blank Django Web Project" szablon w Programie Visual Studio, można łatwo zrozumieć pełniejszą aplikację, która jest produkowana przez szablon "Django Web Project".
 
-W tym kroku możesz teraz:
+W tym kroku teraz:
 
 > [!div class="checklist"]
-> - Tworzenie pełniejszego aplikacji sieci web Django przy użyciu szablonu "Projekt sieci Web Django" i sprawdź struktury projektu (krok 4 - 1)
-> - Zapoznać się z widoków i szablonów strony utworzone przez szablon projektu, które składają się z trzech stron, które dziedziczą z szablonem strony podstawowej i że stosuje statycznej biblioteki JavaScript, takich jak jQuery i Bootstrap (krok 2 z 4)
-> - Omówienie routingu adresów URL podany przez szablon (krok 4-3)
+> - Tworzenie pełniejszej aplikacji internetowej Django przy użyciu szablonu "Django Web Project" i badanie struktury projektu (krok 4-1)
+> - Zrozumienie widoków i szablonów stron utworzonych przez szablon projektu, które składają się z trzech stron, które dziedziczą z szablonu strony podstawowej i które wykorzystują statyczne biblioteki JavaScript, takie jak jQuery i Bootstrap (krok 4-2)
+> - Opis routingu adresów URL dostarczonych przez szablon (krok 4-3)
 
-Szablon zawiera również uwierzytelnianie podstawowe, co zostało omówione w kroku 5.
+Szablon zapewnia również uwierzytelnianie podstawowe, które jest omówione w kroku 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 1 z 4 Tworzenie projektu z szablonu
+## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: Tworzenie projektu na podstawie szablonu
 
-1. W programie Visual Studio, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **LearningDjango** rozwiązanie utworzone we wcześniejszej części tego samouczka, a następnie wybierz pozycję **Dodaj**  >   **Nowy projekt**. (, Jeśli chcesz użyć nowego rozwiązania, wybierz **pliku** > **New** > **projektu** zamiast.)
+1. W programie Visual Studio przejdź do **programu Solution Explorer**, kliknij prawym przyciskiem myszy rozwiązanie **LearningDjango** utworzone wcześniej w tym samouczku i wybierz pozycję **Dodaj** > **nowy projekt**. (Alternatywnie, jeśli chcesz użyć nowego rozwiązania, wybierz **pozycję Plik** > **nowego** > **projektu).**
 
-1. W oknie dialogowym Nowy projekt wyszukiwanie i wybieranie **projektu sieci Web Django** szablonu, wywołaj projektu "DjangoWeb", a następnie wybierz pozycję **OK**.
+1. W nowym oknie dialogowym projektu wyszukaj i wybierz szablon **Django Web Project,** zadzwoń do projektu "DjangoWeb" i wybierz **PRZYCISK OK**.
 
-1. Ponieważ szablon ponownie zawiera *requirements.txt* plików, programu Visual Studio pyta, gdzie zainstalować te zależności. Wybierz opcję, **zainstalować w środowisku wirtualnym**, a następnie w **Dodawanie środowiska wirtualnego** okna dialogowego wybierz **Utwórz** aby zaakceptować wartości domyślne.
+1. Ponieważ szablon ponownie zawiera plik *requirements.txt,* visual studio pyta, gdzie zainstalować te zależności. Wybierz opcję **Zainstaluj w środowisku wirtualnym,** a następnie w oknie dialogowym **Dodaj środowisko wirtualne** wybierz pozycję **Utwórz,** aby zaakceptować wartości domyślne.
 
-1. Gdy program Visual Studio zakończy się skonfigurowanie środowiska wirtualnego, postępuj zgodnie z instrukcjami wyświetlonych *readme.html* utworzyć Django użytkownika administratora (administrator). Po prostu kliknij prawym przyciskiem myszy projekt programu Visual Studio i wybierz **Python** > **Django — Tworzenie administratora** polecenia, a następnie postępuj zgodnie z monitami. Upewnij się zarejestrować nazwę użytkownika i hasło, ponieważ używane podczas wykonywania funkcji uwierzytelniania aplikacji.
+1. Po zakończeniu konfigurowania środowiska wirtualnego w programie Visual Studio postępuj zgodnie z instrukcjami wyświetlanymi w pliku *readme.html,* aby utworzyć superużytnika Django (czyli administratora). Wystarczy kliknąć prawym przyciskiem myszy projekt programu Visual Studio i wybrać polecenie **Python** > **Django Create Superuser,** a następnie postępuj zgodnie z instrukcjami. Pamiętaj, aby rejestrować swoją nazwę użytkownika i hasło podczas korzystania z funkcji uwierzytelniania aplikacji.
 
-1. Ustaw **DjangoWeb** projektu jako domyślny dla rozwiązania Visual Studio przez kliknięcie prawym przyciskiem myszy tego projektu w **Eksploratora rozwiązań** i wybierając polecenie **Ustaw jako projekt startowy** . Projekt startowy, który jest pokazany w pogrubienie, to co program jest uruchamiany w przypadku, gdy uruchamiasz debuger.
+1. Ustaw projekt **DjangoWeb** jako domyślny dla rozwiązania programu Visual Studio, klikając prawym przyciskiem myszy ten projekt w **Eksploratorze rozwiązań** i wybierając **pozycję Ustaw jako projekt startowy.** Projekt uruchamiania, który jest wyświetlany pogrubioną czcionką, jest tym, co jest uruchamiane po uruchomieniu debugera.
 
-    ![Eksploratora rozwiązań przedstawiający DjangoWeb projekt jako projekt startowy](media/django/step04-second-project-in-solution-set-as-startup-project.png)
+    ![Eksplorator rozwiązań przedstawiający projekt DjangoWeb jako projekt startowy](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi, aby uruchomić serwer:
+1. Wybierz **debugowanie** > **rozpocznij debugowanie** **(F5)** lub użyj przycisku Serwera sieci **Web** na pasku narzędzi, aby uruchomić serwer:
 
-    ![Uruchamianie serwera sieci web przycisku paska narzędzi w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
+    ![Uruchamianie przycisku paska narzędzi serwera sieci Web w programie Visual Studio](media/django/run-web-server-toolbar-button.png)
 
-1. Aplikacja utworzona przez szablon ma trzy strony Strona główna o i skontaktuj się z pomocą, której możesz przechodzić między za pomocą paska nawigacji. Zająć minutę lub dwie zbadać różne części aplikacji. Do uwierzytelniania za pomocą aplikacji za pomocą **Zaloguj** poleceń, użyj utworzonych wcześniej poświadczeń administratora.
+1. Aplikacja utworzona przez szablon ma trzy strony: Strona główna, Informacje i Kontakt, które można nawigować między za pomocą paska nawigacji. Poświęć minutę lub dwie, aby zbadać różne części aplikacji. Aby uwierzytelnić się za pomocą aplikacji za pomocą polecenia **Zaloguj,** użyj poświadczeń administratora utworzonych wcześniej.
 
-    ![Widok pełnej przeglądarki aplikacji projektu sieci Web Django](media/django/step04-full-app-desktop-view.png)
+    ![Pełny widok przeglądarki aplikacji Django Web Project](media/django/step04-full-app-desktop-view.png)
 
-1. Aplikacja utworzona przez szablon "Projekt sieci Web Django" używa ładowania początkowego dla układem dynamicznym, który obsługuje urządzeń przenośnych. Aby wyświetlić ten czas reakcji, zmiana rozmiaru przeglądarki, aby wąskie tak, aby zawartość renderuje w pionie i na pasku nawigacyjnym jest przekształcany ikonę menu:
+1. Aplikacja stworzona przez szablon "Django Web Project" używa Bootstrap do elastycznego układu, który pasuje do mobilnych rozmiarów. Aby zobaczyć tę responsywność, zmienić rozmiar przeglądarki na wąski widok, tak aby zawartość była renderowana w pionie, a pasek nawigacyjny zamienia się w ikonę menu:
 
-    ![Mobile (wąskie) widok aplikacji Django Web Project](media/django/step04-full-app-mobile-view.png)
+    ![Mobilny (wąski) widok aplikacji Django Web Project](media/django/step04-full-app-mobile-view.png)
 
-1. Możesz pozostawić aplikacja uruchomiona w kolejnych sekcjach.
+1. Możesz pozostawić aplikację z uruchomiona dla sekcji, które należy wykonać.
 
-    Jeśli chcesz zatrzymać aplikację i [Zatwierdź zmiany do kontroli źródła](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control), najpierw otwórz **zmiany** strony w **Team Explorer**, kliknij prawym przyciskiem myszy folder (środowiska wirtualnego prawdopodobnie **env**) i wybierz **ignorować te elementy lokalne**.
+    Jeśli chcesz zatrzymać aplikację i [zatwierdzić zmiany w formancie źródłowym,](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)najpierw otwórz stronę **Zmiany** w **Eksploratorze zespołu,** kliknij prawym przyciskiem myszy folder środowiska wirtualnego (prawdopodobnie **env)** i wybierz pozycję **Ignoruj te elementy lokalne**.
 
-### <a name="examine-what-the-template-creates"></a>Sprawdź ten szablon tworzy
+### <a name="examine-what-the-template-creates"></a>Sprawdzanie, co tworzy szablon
 
-Na poziomie największą szablonu "Projektów internetowych Django" tworzy następującą strukturę:
+Na najszerszym poziomie szablon "Django Web Project" tworzy następującą strukturę:
 
 - Pliki w katalogu głównym projektu:
-  - *manage.PY*, narzędzia administracyjnego Django.
-  - *DB.sqlite3*, domyślna baza danych SQLite.
-  - *Plik Requirements.txt* zawierający zależności Django 1.x.
-  - *Readme.HTML*, pliku, który jest wyświetlany w programie Visual Studio po utworzeniu projektu. Jak wspomniano w poprzedniej sekcji, wykonaj poniższe instrukcje, aby utworzyć konto administratora (administrator) dla aplikacji.
-- *Aplikacji* folder zawiera wszystkie pliki aplikacji, łącznie z widoków, modele, testy, formularze, szablony i pliki statyczne (zobacz krok 4-2). Zazwyczaj zmiana nazwy tego folderu, aby użyć bardziej wyróżniające nazwy aplikacji.
-- *DjangoWeb* folder (Django projekt) zawiera typowe pliki projektu Django:  *\_ \_init\_\_.py*,  *Settings.PY*, *urls.py*, i *wsgi.py*. Za pomocą szablonu projektu *settings.py* została już skonfigurowana dla aplikacji i plik bazy danych i *urls.py* ma już skonfigurowaną trasy do wszystkich stron aplikacji, w tym formularz logowania.
+  - *manage.py*, narzędzie administracyjne Django.
+  - *db.sqlite3*, domyślna baza danych SQLite.
+  - *requirements.txt* zawierający zależność od Django 1.x.
+  - *readme.html*, plik, który jest wyświetlany w programie Visual Studio po utworzeniu projektu. Jak wspomniano w poprzedniej sekcji, postępuj zgodnie z instrukcjami tutaj, aby utworzyć konto superużyt (administrator) dla aplikacji.
+- Folder *aplikacji* zawiera wszystkie pliki aplikacji, w tym widoki, modele, testy, formularze, szablony i pliki statyczne (patrz krok 4-2). Zazwyczaj zmieniasz nazwę tego folderu, aby użyć bardziej charakterystycznej nazwy aplikacji.
+- Folder *DjangoWeb* (projekt Django) zawiera typowe pliki projektu Django: * \_ \_\_\_init .py*, *settings.py*, *urls.py*i *wsgi.py*. Korzystając z szablonu projektu, *settings.py* jest już skonfigurowany dla aplikacji i pliku bazy danych, a *urls.py* jest już skonfigurowany z trasami do wszystkich stron aplikacji, w tym formularza logowania.
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: Czy jest możliwe udostępnianie środowisku wirtualnym między projektami Visual Studio?
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pytanie: Czy można udostępniać środowisko wirtualne między projektami programu Visual Studio?
 
-Odpowiedź: Tak, ale to zrobić za pomocą świadomości, że różnych projektów, które mogą używać różnych pakietach wraz z upływem czasu, a w związku z tym udostępnione środowisko wirtualne musi zawierać wszystkie pakiety dla wszystkich projektów, które go używają.
+Odpowiedź: Tak, ale zrób to ze świadomością, że różne projekty mogą używać różnych pakietów w czasie, a zatem udostępnione środowisko wirtualne musi zawierać wszystkie pakiety dla wszystkich projektów, które go używają.
 
-Niemniej jednak aby użyć istniejącego środowiska wirtualnego, należy wykonać następujące czynności:
+Niemniej jednak, aby użyć istniejącego środowiska wirtualnego, wykonaj następujące czynności:
 
-1. Po wyświetleniu monitu, aby zainstalować zależności w programie Visual Studio, wybierz **I zainstaluje je samodzielnie** opcji.
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **środowiska Python** a następnie wybierz węzeł **Dodawanie istniejącego środowiska wirtualnego**.
-1. Przejdź do i wybierz folder zawierający środowiska wirtualnego, a następnie wybierz **OK**.
+1. Po wyświetleniu monitu o zainstalowanie zależności w programie Visual Studio wybierz opcję **Zainstaluję je samodzielnie.**
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł **Środowiska języka Python** i wybierz polecenie Dodaj istniejące środowisko **wirtualne**.
+1. Przejdź do folderu zawierającego środowisko wirtualne i wybierz go, a następnie wybierz przycisk **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 2 z 4 Widoki i szablony strony utworzone przez szablon projektu
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: Zrozumienie widoków i szablonów stron utworzonych przez szablon projektu
 
-Jak można zaobserwować, gdy uruchamiasz projekt, ta aplikacja zawiera trzy widoki: Strona główna i skontaktuj się z pomocą. Kod dla tych widoków znajduje się w *aplikacji/widoki* folderu. Każda funkcja widoku po prostu wywołuje widok `django.shortcuts.render` na ścieżkę do szablonu i obiekt słownika prostego. Na przykład na stronie informacje jest obsługiwany przez `about` funkcji:
+Jak obserwować po uruchomieniu projektu, aplikacja zawiera trzy widoki: Strona główna, Informacje i Kontakt. Kod tych widoków znajduje się w folderze *aplikacja/widoki.* Każda funkcja widoku `django.shortcuts.render` po prostu wywołuje ze ścieżką do szablonu i prostego obiektu słownika. Na przykład strona Informacje jest obsługiwana przez `about` funkcję:
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-Szablony znajdują się w aplikacji *szablony/aplikacji* folder (i zazwyczaj chcesz zmienić nazwę *aplikacji* do nazwy rzeczywistych aplikacji). Szablon podstawowy *layout.html*, jest najbardziej rozbudowanych. On odnosi się do wszystkich niezbędnych plików statycznych (JavaScript i CSS), definiuje bloku o nazwie "treści" innych stron zastąpienie i udostępnia innego bloku o nazwie "skrypty". Następujące fragmenty z z adnotacjami *layout.html* te określone obszary:
+Szablony znajdują się w *folderze szablonów/aplikacji* aplikacji (zazwyczaj chcesz zmienić nazwę *aplikacji* na nazwę prawdziwej aplikacji). Szablon podstawowy, *layout.html*, jest najbardziej obszerny. Odnosi się do wszystkich niezbędnych plików statycznych (JavaScript i CSS), definiuje blok o nazwie "zawartość", który inne strony zastępują, i udostępnia inny blok o nazwie "skrypty". Następujące fragmenty z adnotacjami z *layout.html* przedstawiają następujące konkretne obszary:
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ Szablony znajdują się w aplikacji *szablony/aplikacji* folder (i zazwyczaj chc
 </html>
 ```
 
-Szablony pojedynczej strony *about.html*, *contact.html*, i *index.html*, Rozszerz każdy szablon podstawowy *layout.html*. *About.HTML* to najprostszy i pokazuje `{% extends %}` i `{% block content %}` tagi:
+Poszczególne szablony stron, *about.html*, *contact.html*i *index.html*, każdy rozszerza szablon podstawowy *layout.html*. *about.html* jest najprostszy i `{% extends %}` `{% block content %}` pokazuje i tagi:
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,17 +159,17 @@ Szablony pojedynczej strony *about.html*, *contact.html*, i *index.html*, Rozsze
 {% endblock %}
 ```
 
-*index.HTML* i *contact.html* Użyj tej samej struktury i podaj dłuższy zawartości w bloku "treści".
+*index.html* i *contact.html* używają tej samej struktury i zapewniają dłuższą zawartość w bloku "content".
 
-W *szablony/aplikacji* folder jest również czwartej stronie *login.html*, wraz z *loginpartial.html* przenoszona do *layout.html*przy użyciu `{% include %}`. Te pliki szablonu są omówione w kroku 5 uwierzytelniania.
+W *szablonach /* folderze aplikacji jest również czwarta strona *login.html*, wraz z *loginpartial.html,* który jest wniesiona do *layout.html* za pomocą `{% include %}`. Te pliki szablonów są omówione w kroku 5 na uwierzytelnianie.
 
-### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pytanie: Może {% block %} i {% endblock %} wcięcia w szablonie strony Django?
+### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Pytanie: Czy {% bloku %} i {% bloku końcowego %} może być wcięty w szablonie strony Django?
 
-Odpowiedź: Szablony stron Django działają tak, prawidłowo, gdy wcięcie znaczników bloku, prawdopodobnie po to, aby dopasować je w ramach ich elementy nadrzędne odpowiednie. Są one wcięty szablony stron wygenerowanych przez szablon projektu Visual Studio, aby wyraźnie zobaczyć, gdzie są umieszczone.
+Odpowiedź: Tak, szablony stron Django działają dobrze, jeśli wcięcie tagów blokowych, być może, aby wyrównać je w odpowiednich elementach nadrzędnych. Nie są one wcięci w szablonach stron generowanych przez szablon projektu programu Visual Studio, dzięki czemu można wyraźnie zobaczyć, gdzie są one umieszczone.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 3 z 4 Omówienie routingu adresów URL utworzonej przez szablon
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 4-3: Zrozumienie routingu adresów URL utworzonego przez szablon
 
-Projekt Django *urls.py* pliku utworzona przez szablon "Projekt sieci Web Django" zawiera następujący kod:
+Plik *urls.py* projektu Django utworzony przez szablon "Django Web Project" zawiera następujący kod:
 
 ```python
 from datetime import datetime
@@ -204,19 +204,19 @@ urlpatterns = [
 ]
 ```
 
-Pierwsze trzy wzorce adresów URL mapować bezpośrednio do `home`, `contact`, i `about` widoków w aplikacji *views.py* pliku. Wzorce `^login/$` i `^logout$`, z drugiej strony, zamiast widoki zdefiniowane w aplikacji za pomocą wbudowanych widoków Django. Wywołania `url` metoda również zawierać dodatkowe dane w celu dostosowania wyświetlania. Krok 5 odkrywa te wywołania.
+Pierwsze trzy wzorce adresów URL `home` `contact`są `about` mapowane bezpośrednio do pliku , i widoków w pliku *views.py* aplikacji. Wzorce `^login/$` i `^logout$`, z drugiej strony, używają wbudowanych widoków Django zamiast widoków zdefiniowanych przez aplikację. Wywołania `url` metody zawierają również dodatkowe dane, aby dostosować widok. Krok 5 eksploruje te połączenia.
 
-### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pytanie: W projekcie, utworzono, dlaczego "about" wzorzec adresu URL korzysta z "^ o" zamiast "^ o$" pokazane tutaj?
+### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>Pytanie: W projekcie, który stworzyłem, dlaczego wzorzec adresu URL "o" używa '^about' zamiast '^about$', jak pokazano tutaj?
 
-Odpowiedź: Brak końcowe "$" w wyrażeniu regularnym jest proste nadzoru w wielu wersjach szablonu projektu. Wzorzec adresu URL działa dobrze dla strony o nazwie "about", ale bez końcowych "$" wzorzec adresu URL dopasowuje również adresy URL takich jak "około = django", "about09876", "aboutoflaughter", a tym samym na. Końcowe "$" jest wyświetlany w tym miejscu utworzyć wzorzec adresu URL, który jest zgodny *tylko* "about".
+Odpowiedź: Brak końcowego "$" w wyrażeniu regularnym był prostym niedopatrzeniem w wielu wersjach szablonu projektu. Wzorzec adresu URL działa idealnie dla strony o nazwie "o", ale bez końcowego "$" wzorzec adresu URL pasuje również do adresów URL takich jak "about=django", "about09876", "aboutoflaughter" i tak dalej. Końcowe "$" jest wyświetlane w tym miejscu, aby utworzyć wzorzec adresu URL, który pasuje *tylko* "o".
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
 > [Uwierzytelnianie użytkowników w Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="go-deeper"></a>Przejdź dalej
+## <a name="go-deeper"></a>Głębiej
 
-- [Wdrażanie aplikacji sieci web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- [Zapisywanie swoją pierwszą aplikację Django, część 4 — formularzy i widoków ogólny](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- [Wdrażanie aplikacji sieci Web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Pisanie pierwszej aplikacji Django, część 4 - formularze i ogólne widoki](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
+- Kod źródłowy samouczka na GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

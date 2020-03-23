@@ -1,88 +1,88 @@
 ---
-title: Korzyść środowiska IDE programu Visual Studio w Visual Studio Subscription | Microsoft Docs
+title: Visual Studio IDE Korzyści w subskrypcji programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 11/14/2019
 ms.topic: conceptual
-description: Dowiedz się, jak pobrać i zainstalować środowisko IDE programu Visual Studio zawarte w subskrypcji programu Visual Studio.
+description: Dowiedz się, jak pobrać i zainstalować ide programu Visual Studio zawarte w subskrypcji programu Visual Studio.
 ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74491588"
 ---
-# <a name="the-visual-studio-2019-benefit"></a>Korzyść dla programu Visual Studio 2019
+# <a name="the-visual-studio-2019-benefit"></a>Zaleta programu Visual Studio 2019
 
-Jako subskrybent programu Visual Studio masz dostęp do środowiska IDE programu Visual Studio.  Określona wersja będzie zależeć od poziomu subskrypcji.  Korzyść zostanie wyświetlona jako kafelek w kategorii narzędzia na stronie [korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) w portalu subskrybenta.
+Jako subskrybent programu Visual Studio masz dostęp do środowiska IDE programu Visual Studio.  Określona wersja będzie zależeć od poziomu subskrypcji.  Korzyść pojawi się jako kafelek w kategorii Narzędzia na stronie [Korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) w portalu subskrybenta.
 
 ## <a name="activation-steps"></a>Kroki aktywacji
 
-*(Visual Studio Enterprise jest używany w tym przykładzie).*
+*(W tym przykładzie jest używany program Visual Studio Enterprise).*
 
-Aby pobrać środowisko IDE:
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Znajdź kafelek środowiska IDE programu Visual Studio w sekcji Tools, a następnie kliknij link **Download (Pobierz** ) w dolnej części kafelka korzyści.  Można go również pobrać ze strony [pliki do pobrania](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) .
+Aby pobrać IDE:
+1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
+2. Znajdź kafelek IDE programu Visual Studio w sekcji Narzędzia i kliknij łącze **Pobierz** u dołu kafelka korzyści.  Można go również pobrać ze strony [Pliki do pobrania.](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise kafelka](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Kafelek programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Nastąpi przekierowanie do strony wyników pobierania dla programu Visual Studio, w której będziesz mieć możliwość pobrania środowiska IDE i uzyskania klucza produktu w celu jego aktywowania. Możesz również zatwierdzić klucz produktu, klikając niebieską pozycję **Pobierz klucz** lub poproś klucz później na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
-4. Na karcie Szczegóły strony pobieranie wyników:
+3. Zostaniesz przekierowany do strony Pobierz wyniki programu Visual Studio, gdzie będziesz mieć możliwość pobrania IDE i uzyskać klucz produktu, aby go aktywować. Możesz również ubiegać się o klucz produktu, klikając niebieskie łącze **Pobierz klucz** lub zgłaskać klucz później na stronie [Klucze produktu.](https://my.visualstudio.com/productkeys)
+4. Na karcie Szczegóły na stronie Wyniki pobierania:
    - Wybierz żądaną architekturę (x86, x64)
-   - Wybierz Preferencje językowe.
+   - Wybierz preferencje językowe.
 5. Kliknij niebieski przycisk pobierania.
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise Pobierz szczegóły](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Kliknij pobrany pakiet Instalatora.  Jeśli zostanie wyświetlony monit o zainstalowanie teraz, kliknij przycisk **Uruchom**.
-7. W oknie dialogowym Kontrola konta użytkownika kliknij przycisk **tak**.
-8. Kliknij przycisk **Kontynuuj** , aby zaakceptować postanowienia licencyjne.
-9. Po uruchomieniu Instalatora wybierz żądane obciążenia, poszczególne składniki i pakiety językowe, wybierając je na odpowiednich kartach.
+   > ![Szczegóły pobierania w programie Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
+6. Kliknij pobrany pakiet instalatora.  Jeśli zostanie wyświetlony monit o zainstalowanie teraz, kliknij przycisk **Uruchom**.
+7. W oknie dialogowym Kontrola konta użytkownika kliknij przycisk **Tak**.
+8. Kliknij **przycisk Kontynuuj,** aby zaakceptować postanowienia licencyjne.
+9. Po uruchomieniu instalatora wybierz żądane obciążenia, poszczególne składniki i pakiety językowe, wybierając je na odpowiednich kartach.
    > [!div class="mx-imgBorder"]
-   > ![Dostosowywanie Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Dostosowywanie programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. Kliknij przycisk **Instaluj**.
+10. Kliknij **pozycję Zainstaluj**.
 
-11. Po zakończeniu instalacji będzie dostępna opcja modyfikowania instalacji lub uruchamiania programu Visual Studio.  Kliknij przycisk **Uruchom** , aby rozpocząć.  Jeśli zainstalowano wiele wersji, zostaną one wyświetlone na liście.
+11. Po zakończeniu instalacji można zmodyfikować instalację lub uruchomić program Visual Studio.  Kliknij **przycisk Uruchom,** aby rozpocząć.  Jeśli masz zainstalowane wiele wersji, zostaną one wyświetlone.
     > [!div class="mx-imgBorder"]
-    > ![uruchamiania Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
+    > ![Uruchamianie programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
-12. Zaloguj się przy użyciu konta skojarzonego z subskrypcją programu Visual Studio.
+12. Zaloguj się przy pomocy konta skojarzonego z subskrypcją programu Visual Studio.
 
-13. Wybierz preferowany motyw i kliknij pozycję **Uruchom program Visual Studio**.
+13. Wybierz preferowany motyw i kliknij przycisk **Start Visual Studio**.
 
-14. Zostanie otwarty program Visual Studio. Wszystko jest gotowe do rozpoczęcia korzystania z programu Visual Studio!
+14. Zostanie otwarty program Visual Studio. Możesz rozpocząć korzystanie z programu Visual Studio!
 
     > [!div class="mx-imgBorder"]
-    > ![rozpocząć korzystanie z Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    > ![Rozpoczynanie korzystania z programu Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
 
-## <a name="eligibility"></a>Kryteria
+## <a name="eligibility"></a>Kwalifikowalności
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnej?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja | Dostępne       |  Tak          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja   | Dostępne              |  Tak          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Dostępne                                             |  Tak         |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  N/D          |
+| Visual Studio Enterprise (standardowa, miesięczna chmura)   | VL, Azure, Retail, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Enterprise z gitHub Enterprise   | Vl | Dostępne       |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | VL, Azure, Handel detaliczny                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Professional z gitHub Enterprise | Vl   | Dostępne              |  Tak          |
+| Visual Studio Test Professional (standard)                         | VL, Handel detaliczny                                              | Dostępne                                             |  Tak         |
+| Platformy MSDN (standard)                                          | VL, Handel detaliczny                                              | Niedostępne                                              |  Nie dotyczy          |
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), program Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software & Services Developer, BizSpark, Wyobraź sobie, najbardziej cenny specjalista (MVP), dyrektor regionalny (RD).  Wyklucza: MCT oprogramowania & Services.*
+<sup>1</sup>  *Obejmuje: Nie dla odsprzedaży (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Wykluczenia: MCT Software & Services.*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już rocznych subskrypcji programu Visual Studio Professional i rocznych subskrypcji programu Visual Studio Enterprise w subskrypcjach w chmurze. Nie będzie żadnych zmian w istniejącym doświadczeniu klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) aby przejść do eksplorowania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy dotyczącej środowiska IDE programu Visual Studio, zapoznaj się z następującymi zasobami:
-  - Pomoc techniczna: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+## <a name="support-resources"></a>Zasoby pomocnicze
+- Potrzebujesz pomocy w programie Visual Studio IDE, zapoznaj się z tymi zasobami:
+  - Pomocy technicznej:[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Dokumentacja](/visualstudio/)
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 
 ## <a name="next-steps"></a>Następne kroki
-Po zainstalowaniu programu Visual Studio nie zapomnij uaktywnić tych innych ważnych korzyści:
+Po zainstalowaniu programu Visual Studio nie zapomnij aktywować tych innych ważnych korzyści:
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 - [Konto dewelopera systemu Windows](vs-windows-dev.md)

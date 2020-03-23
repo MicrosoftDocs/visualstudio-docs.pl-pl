@@ -1,5 +1,5 @@
 ---
-title: Czas przetwarzania interfejsu użytkownika | Dokumentacja firmy Microsoft
+title: Czas przetwarzania interfejsu użytkownika | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 391b4582d03e32e738f0eade823326e72a662a43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "63004454"
 ---
 # <a name="ui-processing-time"></a>Czas przetwarzania interfejsu użytkownika
-Te segmenty na osi czasu są skojarzone z zablokowania prób są klasyfikowane jako przetwarzania interfejsu użytkownika. Oznacza to, że wątek jest przekazywanie komunikatów Windows lub wykonywania innych zadań interfejsu użytkownika. W tym czasie wątek został zablokowany w interfejsie API, który zlicza Concurrency Visualizer jako przetwarzania interfejsu użytkownika. Interfejsy API, takie jak `GetMessage()` i `MsgWaitForMultipleObjects()` należą do tej grupy.
+Te segmenty na osi czasu są skojarzone z czasami blokowania, które są klasyfikowane jako przetwarzanie interfejsu użytkownika. Oznacza to, że wątek pompuje komunikaty systemu Windows lub wykonuje pracę innego interfejsu użytkownika.This implies that a thread is pumping Windows messages or performing other user interface (UI) work. W tym czasie wątek został zablokowany w interfejsie API, który wizualizator współbieżności jest zliczanie jako przetwarzanie interfejsu użytkownika. Interfejsy API, `GetMessage()` `MsgWaitForMultipleObjects()` takie jak i należą do tej grupy.
 
- Jeśli zostanie zidentyfikowana żadnych wstępnie zdefiniowanych interfejsów API do blokowania, zapoznaj się z stosów wywołań i raportów profilu, aby ustalić podstawowe przyczyny opóźnienia.
+ Jeśli nie zdefiniowano wstępnie zdefiniowanego interfejsu API blokowania, przejrzyj stosy wywołań i raporty profilu, aby określić podstawowe przyczyny opóźnienia.
 
- Kategoria przetwarzania interfejsu użytkownika pomoże Ci zrozumieć, czas reakcji aplikacji GUI i jest pożądane w aplikacjach, które są zależne od czasu odpowiedzi interfejsu użytkownika. Na przykład jeśli wątek interfejsu użytkownika w aplikacji realizuje 100% czasu przetwarzania interfejsu użytkownika, jest prawdopodobnie dynamiczny. Jednak jeśli wątek interfejsu użytkownika zużywa znaczną ilość czasu w innych kategoriach, poszukaj głównych przyczyn i należy rozważyć opcje redukcji kategorii bez interfejsu użytkownika dla tego wątku.
+ Kategoria Przetwarzanie interfejsu użytkownika pomaga zrozumieć szybkość reakcji aplikacji gui i jest pożądane w aplikacjach, które zależą od reakcji interfejsu użytkownika. Na przykład jeśli wątek interfejsu użytkownika w aplikacji osiąga 100% czasu w przetwarzaniu interfejsu użytkownika, prawdopodobnie jest responsywny. Jeśli jednak wątek interfejsu użytkownika spędza dużo czasu w innych kategoriach, poszukaj przyczyn źródłowych i rozważ opcje zmniejszania kategorii innych niż interfejsu użytkownika w tym wątku.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

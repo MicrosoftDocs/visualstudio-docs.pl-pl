@@ -1,7 +1,7 @@
 ---
-title: Język Python w programie Visual Studio — samouczek krok 0, instalacji
+title: Python w programie Visual Studio krok 0, instalacja
 titleSuffix: ''
-description: Krok 0 (wymagania wstępne instalacji) core Przewodnik po pracy za pomocą języka Python w programie Visual Studio.
+description: Krok 0 (wymagania wstępne instalacji) podstawowego przewodnika pracy z pythonem w programie Visual Studio.
 ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,40 +12,40 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62431299"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalowanie obsługi języka Python w programie Visual Studio
 
 > [!Note]
-> Obsługa w języku Python jest obecnie dostępna tylko w programie Visual Studio for Windows; na komputerach Mac i Linux, Python pomoc techniczna jest dostępna za pośrednictwem [programu Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
+> Obsługa języka Python jest obecnie dostępna tylko w programie Visual Studio dla systemu Windows; na Mac i Linux, obsługa Języka Python jest dostępna za pośrednictwem [programu Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-1. Pobrać i uruchomić najnowszą wersję Instalatora programu Visual Studio Windows (Obsługa języka Python jest obecny w wersji 15.2 lub nowszy). Jeśli masz już zainstalowany program Visual Studio, uruchom Instalatora programu Visual Studio i przejdź do kroku 2.
+1. Pobierz i uruchom najnowszy instalator programu Visual Studio dla systemu Windows (obsługa języka Python jest obecna w wersji 15.2 i nowszej). Jeśli masz już zainstalowany program Visual Studio, uruchom instalator programu Visual Studio i przejdź do kroku 2.
 
     > [!div class="nextstepaction"]
-    > [Install Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Instalowanie społeczności programu Visual Studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Wersja Community to dla indywidualnych deweloperów, edukacyjne, badań akademickich i programowania typu open source. Do innych celów, należy zainstalować [programu Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) lub [programu Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > Edycja społeczności jest dla poszczególnych programistów, uczenia się w klasie, badań akademickich i rozwoju open source. Aby uzyskać inne zastosowania, zainstaluj [program Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) lub Visual Studio [Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
-1. Instalator przedstawia listy obciążeń, powiązane opcje obszary rozwoju określonych grup. Dla języka Python, wybierz **programowania w języku Python** obciążenia, a następnie wybierz pozycję **zainstalować**:
+1. Instalator przedstawia listę obciążeń, które są grupami powiązanych opcji dla określonych obszarów rozwoju. W przypadku języka Python wybierz obciążenie **programistyczne języka Python** i wybierz pozycję **Zainstaluj:**
 
-    ![Obciążenie programowania języka Python w Instalatorze programu Visual Studio](media/installation-python-workload.png)
+    ![Obciążenie programistyczne języka Python w instalatorze programu Visual Studio](media/installation-python-workload.png)
 
-1. Aby szybko przetestować, obsługa w języku Python, uruchom program Visual Studio, naciśnij klawisz **Alt**+**I** można otworzyć **Python Interactive** okna, a następnie wprowadź `2+2`. Jeśli nie widzisz dane wyjściowe **4**, sprawdź ponownie etapami.
+1. Aby szybko przetestować obsługę języka Python, uruchom program Visual Studio, `2+2`naciśnij klawisz **Alt**+**I,** aby otworzyć okno Python **Interactive** i wprowadź . Jeśli nie widzisz danych wyjściowych **4,** sprawdź ponownie swoje kroki.
 
-    ![Testowanie języka Python za pomocą okna interaktywnego](media/installation-interactive-test.png)
+    ![Testowanie pythona przez interaktywne okno](media/installation-interactive-test.png)
 
 ## <a name="next-step"></a>Następny krok
 
 > [!div class="nextstepaction"]
-> [Krok 1. Tworzenie projektu języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Krok 1: Tworzenie projektu języka Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Ręcznie Zidentyfikuj istniejące interpreter języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i starszych wersji](installing-python-support-in-visual-studio.md)
+- [Ręczne identyfikowanie istniejącego interpretera języka Python](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Instalowanie obsługi języka Python w programie Visual Studio 2015 i wcześniejszych](installing-python-support-in-visual-studio.md)
 - [Lokalizacje instalacji](installing-python-support-in-visual-studio.md#install-locations)

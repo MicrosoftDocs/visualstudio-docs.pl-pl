@@ -1,5 +1,5 @@
 ---
-title: Rozpakuj zadanie | Microsoft Docs
+title: Rozpakuj zadanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -23,37 +23,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631513"
 ---
 # <a name="unzip-task"></a>Rozpakuj zadanie
 
-Rozpakuje Archiwum *. zip* do określonej lokalizacji.
+Rozpakowywać archiwum *.zip* do określonej lokalizacji.
 
 >[!NOTE]
->Zadanie `Unzip` jest dostępne tylko w programie MSBuild 15,8 i nowszych wersjach.
+>Zadanie `Unzip` jest dostępne tylko w umi.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania `Unzip`.
+ W poniższej tabeli `Unzip` opisano parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`DestinationFolder`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr<br /><br /> Określa folder docelowy, do którego ma zostać rozpakować plik.|
-|`OverwriteReadOnlyFiles`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, zastępuje pliki tylko do odczytu. Wartość domyślna to `false`.|
-|`SkipUnchangedFiles`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, program pomija niezmienione pliki rozpakowywania. Wartość domyślna to `true`. Zadanie `Unzip` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji.|
-|`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa co najmniej jeden plik do rozpakowania. Podczas określania wielu plików, które są rozpakowane, w celu przeszukania tego samego folderu.|
+|`DestinationFolder`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr<br /><br /> Określa folder docelowy, do który ma być rozpakować plik.|
+|`OverwriteReadOnlyFiles`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`, zastępuje pliki tylko do odczytu. Wartość domyślna to `false`.|
+|`SkipUnchangedFiles`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`, pomija rozpakowywanie plików, które pozostają niezmienione. Wartość domyślna to `true`. Zadanie `Unzip` uznaje pliki za niezmienione, jeśli mają taki sam rozmiar i taki sam czas ostatniej modyfikacji.|
+|`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa jeden lub więcej plików do rozpakować. Podczas określania wielu plików są one rozpakowane w celu uzyskania tego samego folderu.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład rozpakuje archiwum i zastępuje wszystkie pliki tylko do odczytu.
+ Poniższy przykład rozpakowywanie archiwum i zastępowanie wszystkich plików tylko do odczytu.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

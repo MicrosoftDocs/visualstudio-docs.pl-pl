@@ -1,5 +1,5 @@
 ---
-title: Wyświetl numery wierszy dla kodu
+title: Wyświetlanie numerów wierszy dla kodu
 ms.date: 03/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,27 +14,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5392ad3efaee8a3c29e58bd2b75272e4206215a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569143"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Instrukcje: wyświetlanie numerów wierszy w edytorze
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Jak: Wyświetlanie numerów wierszy w edytorze
 
-Możesz wyświetlić lub ukryć numerowanie wierszy w kodzie.
+Numerowanie wierszy można wyświetlać lub ukrywać w kodzie.
 
-## <a name="display-line-numbers-in-code"></a>Wyświetl numery wierszy w kodzie
+## <a name="display-line-numbers-in-code"></a>Wyświetlanie numerów wierszy w kodzie
 
-1. Na pasku menu wybierz **narzędzia** > **opcje**. Rozwiń węzeł **Edytor tekstu** , a następnie wybierz używany język lub **wszystkie języki** , aby włączyć numery wierszy we wszystkich językach. (Lub wpisz **numer wiersza** w polu wyszukiwania i wybierz opcję **Włącz lub Wyłącz numery wierszy na** podstawie wyników).
+1. Na pasku menu wybierz pozycję**Opcje** **narzędzi** > . Rozwiń węzeł **Edytor tekstu,** a następnie wybierz język, którego używasz, lub **wszystkie języki,** aby włączyć numery wierszy we wszystkich językach. (Lub wpisz **numer wiersza** w polu wyszukiwania i wybierz **pozycję Włącz lub wyłącz numery wierszy** z wyników).
 
-2. Zaznacz pole wyboru **numery wierszy** .
+2. Zaznacz pole wyboru **Numery wierszy.**
 
-   ![Opcja wyświetlania numerów wierszy w edytorze programu VS](../../ide/reference/media/line-numbers-option.png)
+   ![Opcja wyświetlania numerów wierszy w edytorze VS](../../ide/reference/media/line-numbers-option.png)
 
 > [!TIP]
-> Numery wierszy nie są dodawane do kodu; są one przeznaczone tylko do celów informacyjnych. Jeśli chcesz wydrukować numery wierszy, w oknie dialogowym **Drukowanie** zaznacz pole wyboru **Dołącz numery wierszy** .
+> Numery wierszy nie są dodawane do kodu; są one tylko dla odniesienia. Jeśli chcesz drukować numery wierszy, w oknie dialogowym **Drukowanie** zaznacz pole wyboru **Dołącz numery wierszy.**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

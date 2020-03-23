@@ -8,216 +8,216 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75584416"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
-Jeśli chcesz użyć programu Visual Studio, aby zdalnie uruchomić testy, rozpowszechnić testy na wielu komputerach lub uruchomić testy obciążenia, należy skonfigurować kontroler testów, agentów testowych i plik ustawień testu. W tym temacie opisano sposób zarządzania kontrolerami testów i agentami testowymi po zainstalowaniu i skonfigurowaniu ich po raz pierwszy.
+Jeśli chcesz użyć programu Visual Studio do zdalnego uruchamiania testów, dystrybucji testów na wielu komputerach lub uruchamiania testów obciążenia, należy skonfigurować kontroler testów, agentów testowych i plik ustawień testowych. W tym temacie opisano sposób zarządzania kontrolerami testów i agentami testowymi po zainstalowaniu i skonfigurowaniu ich po raz pierwszy.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Jeśli używasz Microsoft Test Manager do uruchomienia testów w środowisku laboratoryjnym, możesz zarządzać kontrolerami testów i ich agentami za pomocą **Menedżera kontrolera testów** w **Centrum laboratoryjnego** dla programu Microsoft Test Manager. Ten temat dotyczy tylko wtedy, gdy używasz programu Visual Studio, aby uruchomić testy.
+Jeśli używasz Programu Microsoft Test Manager do uruchamiania testów w środowiskach laboratoryjnych, zarządzasz kontrolerami testów i ich agentami za pomocą **Menedżera kontrolerów testów** w **Centrum laboratorium** dla Menedżera testów firmy Microsoft. Ten temat ma zastosowanie tylko wtedy, gdy do uruchamiania testów jest używany program Visual Studio.
 
-Aby uzyskać informacji na temat sposobu instalowania i konfigurowanie agentów testowych i kontrolerów, aby uruchomić testy w programie Visual Studio testów, zobacz [Konfigurowanie agentów testowych i kontrolerów](../test/configure-test-agents-and-controllers-for-load-tests.md).
+Aby uzyskać informacje dotyczące instalowania i konfigurowania agentów testowych i kontrolerów testów do uruchamiania testów w programie Visual Studio, zobacz [Konfigurowanie agentów testowych i kontrolerów](../test/configure-test-agents-and-controllers-for-load-tests.md).
 
-Aby skonfigurować i monitorować kontroler testów oraz wszelkich zarejestrowanych agentów, musi mieć plik ustawień testu w projekcie testu, który zawiera testy, które chcesz uruchomić. Otwórz plik ustawień testu, wybierz polecenie **roli** i wybierz polecenie **Zarządzaj kontrolerami testów** z listy rozwijanej dla **kontrolera** pola.
+Aby skonfigurować i monitorować kontroler testów i wszystkich zarejestrowanych agentów, musisz mieć plik ustawień testu w projekcie testowym, który zawiera testy, które chcesz uruchomić. Otwórz plik ustawień testu, wybierz pozycję **Rola** i wybierz pozycję **Zarządzaj kontrolerami testów** z listy rozwijanej dla pola **Kontroler.**
 
-Dla projektu testu obciążeniowego można także **Zarządzaj kontrolerami testów** z **Test obciążenia** menu.
+W przypadku projektu testu obciążenia można również wybrać **polecenie Zarządzaj kontrolerami testów** z menu **Testuj obciążenie.**
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>Dodaj agenta testowego do kontrolera testów
+## <a name="add-a-test-agent-to-a-test-controller"></a>Dodawanie agenta testowego do kontrolera testów
 
-Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może być dodać agenta testowego do kontrolera testów, który właśnie zainstalowałeś.
+Warto dodać agenta testowego do innego kontrolera testów lub może być trzeba dodać agenta testowego do kontrolera testów, który właśnie został zainstalowany.
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Aby dodać agenta testowego do kontrolera testów
 
-1. Wybierz **Start** > **Test Agent Configuration Tool**.
+1. Wybierz **polecenie Uruchom** > **narzędzie konfiguracji agenta testowego**.
 
-     **Konfigurowanie agenta testowego** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Konfigurowanie agenta testowego.**
 
     > [!NOTE]
-    > Konieczne jest posiadanie agenta testowego już zainstalowane, aby dodać go do kontrolera testów. Aby uzyskać więcej informacji na temat instalowania agenta testowego, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+    > Aby dodać go do kontrolera testów, musi być już zainstalowany agent testowy. Aby uzyskać więcej informacji na temat instalowania agenta testowego, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-2. Pojawi się informacja o jak uruchomić agenta testowego na dwa sposoby:
+2. Zostaną wyświetlone dwie opcje uruchamiania agenta testowego:
 
-   - **Usługa**: Jeśli jest konieczne Uruchamianie testów automatycznych, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania podczas wykonywania testu, w obszarze wideo **Uruchom agenta testowego jako**, wybierz opcję **usługi**. Agent testowy zostanie uruchomiony jako usługa. Wybierz **dalej**.
+   - **Usługa**: Jeśli nie trzeba uruchamiać automatycznych testów, które współdziałają z pulpitem, takich jak kodowane testy interfejsu użytkownika lub tworzenie nagrywania wideo po uruchomieniu testu, w obszarze **Uruchom agenta testowego jako**, wybierz **usługę**. Agent testowy zostanie uruchomiony jako usługa. Wybierz pozycję **Dalej**.
 
-      Można teraz wprowadzić szczegóły na temat użytkownika, kiedy czynnik testowy startuje jako usługa.
+      Teraz można wprowadzić szczegóły dotyczące użytkownika, gdy agent testowy uruchamia się jako usługa.
 
-      1. Wprowadź nazwę w **nazwa_użytkownika**.
+      1. Wprowadź nazwę w pliku **Nazwa użytkownika**.
 
-      2. Wprowadź hasło w **hasło**.
+      2. Wprowadź hasło w pliku **Password**.
 
-        |**Informacje o koncie użytkownika ważne**|
+        |**Ważne informacje o koncie użytkownika**|
         |-|
-        |-O wartości null hasła nie są obsługiwane dla kont użytkowników.|
-        |— Jeśli chcesz użyć narzędzia zbierającego IntelliTrace lub emulacji sieci, konto użytkownika musi być członkiem grupy Administratorzy.|
-        |— Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.|
-        |-Użytkownik próbujący użyć kontrolera testu musi znajdować na koncie użytkownika kontrolera testów lub będzie mógł uruchamiać testów dla kontrolera.|
+        |- Hasła null nie są obsługiwane dla kont użytkowników.|
+        |- Jeśli chcesz użyć modułu zbierającego IntelliTrace lub emulacji sieci, konto użytkownika musi być członkiem grupy Administratorzy.|
+        |- Jeśli nazwa użytkownika agenta nie znajduje się w usłudze agenta, spróbuje ją dodać, co wymaga uprawnień do kontrolera testów.|
+        |- Użytkownik, który próbuje użyć kontrolera testów musi znajdować się na koncie Użytkowników kontrolera testów lub nie będzie mógł uruchomić testów przeciwko kontrolerowi.|
 
-   - **Proces interaktywny**: Jeśli chcesz uruchomić testy automatyczne, które muszą współdziałać z pulpitem, takich jak kodowane testy interfejsu użytkownika czy tworzenie nagrania wideo podczas wykonywania testu, wybierz **procesu interaktywnego**. Agent testowy zostanie uruchomiony jako proces interaktywny, a nie jako usługa.
+   - **Proces interaktywny:** Jeśli chcesz uruchomić zautomatyzowane testy, które muszą wchodzić w interakcje z pulpitem, takie jak kodowane testy interfejsu użytkownika lub tworzenie nagrywania wideo po uruchomieniu testu, wybierz opcję **Proces interaktywny**. Agent testowy zostanie uruchomiony jako proces interaktywny zamiast usługi.
 
-      Na następnej stronie wprowadź szczegółowe informacje o użytkowniku, gdy czynnik testowy startuje jako proces albo inne opcje.
+      Na następnej stronie wprowadź szczegóły dotyczące użytkownika, gdy agent testowy uruchamia się jako proces i inne opcje.
 
-      1. Wprowadź nazwę w **nazwa_użytkownika**.
+      1. Wprowadź nazwę w pliku **Nazwa użytkownika**.
 
-      2. Wprowadź hasło w **hasło**.
+      2. Wprowadź hasło w pliku **Password**.
 
         > [!NOTE]
-        > Jeśli skonfigurujesz agenta testowego do uruchamiania jako interaktywnego procesu z innym użytkownikiem, który nie jest aktualnie aktywnych użytkowników, należy ponownie uruchomić komputer i zalogować się jako ten inny użytkownik, aby można było uruchomić agenta. Ponadto hasła puste nie są obsługiwane dla kont użytkowników. Jeśli chcesz użyć narzędzia zbierającego IntelliTrace lub emulacji sieci, konto użytkownika musi być członkiem grupy Administratorzy.
+        > Jeśli skonfigurować agenta testowego do uruchamiania jako proces interaktywny z innym użytkownikiem, który nie jest aktualnie aktywnym użytkownikiem, należy ponownie uruchomić komputer i zalogować się jako ten inny użytkownik, aby móc uruchomić agenta. Ponadto hasła null nie są obsługiwane dla kont użytkowników. Jeśli chcesz użyć modułu zbierającego IntelliTrace lub emulacji sieci, konto użytkownika musi być członkiem grupy Administratorzy.
 
-      3. Aby upewnić się, że komputerze z agentem testowym można uruchomić testy po ponownym uruchomieniu, należy skonfigurować komputer do automatycznego logowania jako Użyj agenta testowego. Wybierz **automatycznego logowania**. Spowoduje to przechowywanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
+      3. Aby upewnić się, że komputer, który ma agenta testowego, może uruchamiać testy po ponownym uruchomieniu, można skonfigurować komputer do automatycznego logowania jako używanego przez agenta testowego. Wybierz **pozycję Zaloguj się automatycznie**. Spowoduje to zapisanie nazwy użytkownika i hasła w zaszyfrowanej formie w rejestrze.
 
-      4. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować ze zautomatyzowanymi testami, które muszą współdziałać z pulpitem, wybierz **upewnij się, że wygaszacz ekranu jest wyłączony**.
+      4. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować z automatycznymi testami, które muszą współdziałać z pulpitem, wybierz pozycję Upewnij się, że **wygaszacz ekranu jest wyłączony**.
 
         > [!WARNING]
-        > Istnieją zagrożenia bezpieczeństwa, jeśli logujesz się automatycznie lub wyłączysz wygaszacz ekranu. Po włączeniu automatycznego logowania na, umożliwiasz innym użytkownikom, aby uruchomić ten komputer, a aby można było korzystać z konta, które loguje się automatycznie. Po wyłączeniu wygaszacza ekranu komputer może nie monitować użytkownika do logowania się do odblokowania komputera. Dzięki temu każdy dostęp do komputera, jeśli mają fizyczny dostęp do komputera. Po włączeniu tych funkcji na komputerze, należy pamiętać, że te komputery są zabezpieczony fizycznie. Na przykład komputery te znajdują się w fizycznie bezpiecznych laboratorium. (Po wyczyszczeniu **upewnij się, że wygaszacz ekranu jest wyłączony**, wygaszacz ekranu nie zostanie włączony.)
+        > Istnieje ryzyko bezpieczeństwa, jeśli zalogujesz się automatycznie lub wyłączysz wygaszacz ekranu. Włączenie automatycznego logowania umożliwia innym użytkownikom uruchamianie tego komputera i korzystanie z konta, które automatycznie się loguje. Jeśli wyłączysz wygaszacz ekranu, komputer może nie monitować o zalogowanie się użytkownika w celu odblokowania komputera. Dzięki temu każdy może uzyskać dostęp do komputera, jeśli ma fizyczny dostęp do komputera. Jeśli te funkcje zostaną włączone na komputerze, upewnij się, że te komputery są fizycznie bezpieczne. Na przykład te komputery znajdują się w fizycznie bezpiecznym laboratorium. (Jeśli **wyczyszczysz wygaszacz ekranu jest wyłączony,** nie spowoduje to wygaszacz ekranu).
 
-3. Aby zarejestrować tego agenta za pomocą innego kontrolera testów, wybierz pozycję **zarejestrować za pomocą kontrolera testów.** Wpisz nazwę kontrolera testów, a następnie **:** i numer portu, którego używasz w **rejestrowaniu agenta testowego z następującym kontrolerem testów**. Na przykład wpisz **agent1: 6901**.
+3. Aby zarejestrować tego agenta z innym kontrolerem testów, wybierz zarejestruj **się za pomocą kontrolera testów.** Wpisz nazwę kontrolera testów, a **następnie:** i numer portu, którego używasz w **Zarejestruj agenta testowego z następującym kontrolerem testów**. Na przykład wpisz **agent1:6901**.
 
     > [!NOTE]
     > Domyślny numer portu to 6901.
 
-4. Aby zapisać zmiany, wybierz opcję **Zastosuj ustawienia**. Zamknij **Podsumowanie konfiguracji** okno dialogowe, a następnie Zamknij **narzędzie konfiguracji agenta testowego**.
+4. Aby zapisać zmiany, wybierz pozycję **Zastosuj ustawienia**. Zamknij okno dialogowe **Podsumowanie konfiguracji,** a następnie zamknij **narzędzie konfiguracji agenta testowego**.
 
 > [!WARNING]
 > Jeśli agent jest obecnie skonfigurowany do uruchamiania na innym kontrolerze testów, należy usunąć agenta testowego z tego kontrolera.
 
-## <a name="remove-a-test-agent-from-a-test-controller"></a>Usuń agenta testowego z kontrolera testów
+## <a name="remove-a-test-agent-from-a-test-controller"></a>Usuwanie agenta testowego z kontrolera testów
 
-Agent testowy musi być równa stanu offline, można było usunąć.
+Agent testowy musi być ustawiony na stan offline, zanim będzie można go usunąć.
 
 > [!NOTE]
-> Nie można Użyj tej procedury, aby usunąć agentów, które są zarejestrowane z kontrolerem jako część środowiska laboratoryjnego. Aby usunąć tych agentów z kontrolerem, należy usunąć środowisko przy użyciu programu Microsoft Test Manager.
+> Tej procedury nie można użyć do usuwania agentów, które są zarejestrowane w kontrolerze jako część środowiska laboratoryjnego. Aby usunąć tych agentów z kontrolera, należy usunąć środowisko za pomocą menedżera testów firmy Microsoft.
 
-### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Aby usunąć agenta testowego z kontrolerem testów
+### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Aby usunąć agenta testowego z kontrolera testów
 
 1. Jeśli kontroler testów nie jest zarejestrowany w projekcie, wykonaj następujące kroki.
 
-    1. W programie Visual Studio Otwórz plik ustawień testu dla projektu testowego, wybierz polecenie **roli** i wybierz polecenie **Zarządzaj kontrolerami testów** z listy rozwijanej dla **kontrolera** pola.
+    1. W programie Visual Studio otwórz plik ustawień testu dla projektu testowego wybierz pozycję **Rola** i wybierz pozycję **Zarządzaj kontrolerami testów** z listy rozwijanej dla pola **Kontroler.**
 
-         **Administrowanie kontrolerem testów** zostanie wyświetlone okno dialogowe.
+         Zostanie wyświetlone okno dialogowe **Administruj kontrolerem** testów.
 
-    2. W **kontrolera** listy rozwijanej liście, wpisz nazwę komputera, na którym skonfigurowano kontroler testów. Jeśli administrowano określonym kontrolerem testów wcześniej, można wybrać nazwę z listy.
+    2. Na liście rozwijanej **Kontroler** wpisz nazwę komputera, na którym skonfigurowany jest kontroler testów. Jeśli wcześniej podawano określony kontroler testów, można wybrać nazwę z listy.
 
-    3. W **agentów** okienku, wybierz nazwę agenta testowego. Jeśli agent jest nadal w trybie online, wybierz opcję **Offline.** Aby usunąć, wybierz opcję **Usuń**.
+    3. W okienku **Agenci** wybierz nazwę agenta testowego. Jeśli agent jest nadal w trybie online, wybierz pozycję **Offline.** Aby go usunąć, wybierz pozycję **Usuń**.
 
         > [!NOTE]
-        > Usuwanie agenta testowego, po prostu usunięcie go z kontrolera testów. Aby całkowicie odinstalować agenta testowego, użyj **programy i funkcje** Panelu sterowania na komputerze agenta testowego.
+        > Usunięcie agenta testowego po prostu usuwa go z kontrolera testów. Aby całkowicie odinstalować agenta testowego, użyj Panelu sterowania **programy i funkcje** na komputerze agenta testowego.
 
-2. Jeśli kontroler testów jest zarejestrowany w projekcie, Usuń agenta przy użyciu Microsoft Test Manager.
+2. Jeśli kontroler testów jest zarejestrowany w projekcie, usuń agenta przy użyciu menedżera testów firmy Microsoft.
 
-## <a name="change-the-settings-for-a-test-agent"></a>Zmień ustawienia dla agenta testowego
+## <a name="change-the-settings-for-a-test-agent"></a>Zmienianie ustawień agenta testowego
 
-Stan agenta testowego może być jednym z następujących wartości:
+Stan agenta testowego może być jedną z następujących wartości:
 
 |Stan|Opis|
 |-|-----------------|
-|Uruchamianie testu|Uruchamianie testów|
-|Gotowe|Dostępne do uruchomienia testów lub zbierania danych i informacji diagnostycznych|
-|Taśma|Dostępne do uruchomienia testów lub zbierania danych i informacji diagnostycznych|
-|Odłączony|Agent testowy nie jest uruchomiony.|
+|Test uruchomiony|Uruchamianie testów|
+|Gotowy|Dostępne do uruchamiania testów lub zbierania danych i diagnostyki|
+|W trybie offline|Niedostępne do uruchamiania testów lub zbierania danych i diagnostyki|
+|Odłączony|Agent testowy nie został uruchomiony|
 
-Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z poniższych procedur.
+Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z następujących procedur.
 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Aby zmienić ustawienia agenta testowego
 
 > [!NOTE]
-> Jeśli agent testowy jest zarejestrowany na kontrolerze testów, który jest zarejestrowany w projekcie, należy zmienić ustawienia w programie Microsoft Test Manager.
+> Jeśli agent testowy jest zarejestrowany na kontrolerze testów zarejestrowanym w projekcie, zmień ustawienia w programie Microsoft Test Manager.
 
-1. Aby skonfigurować i monitorować kontroler testów oraz wszelkich zarejestrowanych agentów dla testu obciążenia, wybierz opcję **Test obciążenia** menu w programie Visual Studio, a następnie wybierz **Zarządzaj kontrolerami testów**. Do innych testów, otwórz plik ustawień testu dla projektu testowego w programie Visual Studio, wybierz polecenie **roli** i wybierz polecenie **Zarządzaj kontrolerami testów** z listy rozwijanej dla **kontrolera**pola.
+1. Aby skonfigurować i monitorować kontroler testów i wszystkich zarejestrowanych agentów dla testu obciążenia, wybierz menu **Testuj obciążenie** w programie Visual Studio, a następnie wybierz polecenie **Zarządzaj kontrolerami testów**. W przypadku innych testów otwórz plik ustawień testu dla projektu testowego w programie Visual Studio, wybierz pozycję **Rola** i wybierz pozycję **Zarządzaj kontrolerami testów** z listy rozwijanej dla pola **Kontroler.**
 
-   **Zarządzaj kontrolerem testów** zostanie otwarte okno dialogowe.
+   Zostanie otwarte okno dialogowe **Zarządzanie kontrolerem testów.**
 
-1. Wybierz nazwę kontrolera testów, którego agentów testowych chcesz zmienić na liście kontrolera testów. Jeśli kontroler testów nie ma na liście, sprawdź, czy kontroler testów jest poprawnie zarejestrowany. Aby uzyskać więcej informacji zobacz poniższą procedurę dotyczące konfigurowania kontrolera testów.
+1. Wybierz nazwę kontrolera testów, których agentów testowych chcesz zmienić na liście kontrolera testów. Jeśli kontroler testów nie pojawia się na liście, sprawdź, czy kontroler testu jest poprawnie zarejestrowany. Aby uzyskać więcej informacji, zobacz poniższą procedurę dotyczącą konfigurowania kontrolera testów.
 
-1. (Opcjonalnie) W **agenci testowi** okienku zaznacz komputerze agenta testowego, dla którego chcesz zmienić właściwości.
+1. (Opcjonalnie) W okienku **Agenci testowania** wybierz komputer agenta testowego, dla którego chcesz zmienić właściwości.
 
-1. Wybierz **właściwości**.
+1. Wybierz pozycję **Właściwości**.
 
-1. Zmień następujące właściwości agenta badania zgodnie z wymaganiami:
+1. W razie potrzeby zmień następujące właściwości agenta testowego:
 
-|Właściwości agenta testowego|Opis|
+|Właściwość agenta testowego|Opis|
 |-|-----------------|
-|**Wagi**|Używane do dystrybucji obciążenia, podczas korzystania z agentów testowych z różnymi poziomami osiągów. Na przykład agent testowy przy zastosowaniu wagi 100 otrzymuje dwa razy obciążenia jako agent testowy przy zastosowaniu wagi 50.|
-|**Przełączanie adresów IP**|Używane do konfigurowania przełączania IP. Przełączanie IP pozwala agentowi testowemu wysyłać żądania do serwera przy użyciu zakresu adresów IP. Symuluje to wywołania, które pochodzą z różnych komputerów klienckich.<br /><br /> Przełączanie IP jest ważne, jeśli test obciążenia uzyskuje dostęp do farmy sieci web. Większość usług równoważenia obciążenia ustanawia koligację między klientem i serwerem namierzenie internetowego przy użyciu adresu IP klienta. Jeśli wszystkie żądania wydają się przychodzić od jednego klienta, moduł równoważenia obciążenia nie zrównoważy obciążenia. Aby uzyskać równowagę obciążenia w kolektywie serwerów sieci web, upewnij się, że żądania pochodzą z zakresu adresów IP. **Uwaga:** możesz określić kartę sieciową lub użyć **(wszystkie nieprzypisane)** Aby automatycznie wybrać taką, która obecnie nie jest używany. <br /><br /> Aby użyć funkcji przełączania IP, usługa Visual Studio Test Agent musi działać jako użytkownik w grupie Administratorzy dla tego komputera agenta. Ten użytkownik jest zaznaczany podczas instalacji agenta, ale może zostać zmieniona przez zmodyfikowanie właściwości usługi i ponowne jej uruchomienie.<br /><br /> Aby sprawdzić, czy przełączanie IP działa poprawnie, Włącz rejestrowanie na serwerze sieci web usług IIS, sprawdź, że żądania pochodzą z adresów IP, które skonfigurowano przy użyciu funkcji rejestrowania usług IIS.|
-|**Atrybuty**|Zestaw par nazwa/wartość, które mogą być używane podczas wybierania agenta testowego. Na przykład test może wymagać określonego systemu operacyjnego. Możesz dodać atrybuty w **role** kartę testu pliku ustawień i może służyć do wybierania agenta testowego, który ma pasujące atrybuty. Jeśli chcesz uruchomić test na wielu komputerach, Utwórz atrybut w roli ustawień testów, który jest skonfigurowany do uruchamiania testów, a następnie skonfiguruj pasujący atrybut na każdym agencie testowym, którego chcesz użyć w tej roli... **Uwaga:** to ustawienie jest dostępna tylko dla agentów testowych, które są zarejestrowane z kontrolerem testów, który nie jest zarejestrowany do projektu, ponieważ te atrybuty są używane tylko w ustawieniach testu dla programu Visual Studio.|
+|**Ważenia**|Służy do dystrybucji obciążenia podczas korzystania z agentów testowych o różnych poziomach wydajności. Na przykład agent testowy o wadze 100 otrzymuje dwa razy więcej niż jako środek testowy o wadze 50.|
+|**Przełączanie IP**|Służy do konfigurowania przełączania IP. Przełączanie adresów IP umożliwia agentowi testowe wysyłanie żądań do serwera przy użyciu zakresu adresów IP. Symuluje wywołania pochodzące z różnych komputerów klienckich.<br /><br /> Przełączanie adresów IP jest ważne, jeśli test obciążenia uzyskuje dostęp do farmy internetowej. Większość modułów równoważenia obciążenia ustanawia koligacji między klientem a określonym serwerem sieci web przy użyciu adresu IP klienta. Jeśli wszystkie żądania wydają się pochodzić z jednego klienta, moduł równoważenia obciążenia nie zrównoważy obciążenia. Aby uzyskać dobre równoważenie obciążenia w farmie sieci web, upewnij się, że żądania pochodzą z zakresu adresów IP. **Uwaga:**  Można określić kartę sieciową lub użyć **(Wszystkie nieprzypisane),** aby automatycznie wybrać kartę, która nie jest obecnie używana. <br /><br /> Aby korzystać z funkcji przełączania adresów IP, usługa programu Visual Studio Test Agent musi być uruchomiona jako użytkownik w grupie Administratorzy dla tego komputera agenta. Ten użytkownik jest wybierany podczas konfigurowania agenta, ale można go zmienić, modyfikując właściwości usługi i uruchamiając ją ponownie.<br /><br /> Aby sprawdzić, czy przełączanie adresów IP działa poprawnie, włącz rejestrowanie usług IIS na serwerze sieci web, użyj funkcji rejestrowania usług IIS, aby sprawdzić, czy żądania pochodzą ze skonfigurowanych adresów IP.|
+|**Atrybuty**|Zestaw par nazw/wartości, które mogą być używane w wyborze agenta testowego. Na przykład test może wymagać określonego systemu operacyjnego. Można dodać atrybuty na karcie **Role** pliku ustawień testu i mogą być używane do wybierania agenta testowego, który ma pasujące atrybuty. Jeśli chcesz uruchomić test na wielu komputerach, utwórz atrybut w roli ustawień testu, który jest skonfigurowany do uruchamiania testów, a następnie skonfiguruj pasujący atrybut dla każdego agenta testowego, którego chcesz użyć w tej roli.. **Uwaga:**  To ustawienie jest dostępne tylko dla agentów testowych, którzy są zarejestrowani przy użyciu kontrolera testów, który nie jest zarejestrowany w projekcie, ponieważ te atrybuty są używane tylko w ustawieniach testu programu Visual Studio.|
 
-Przetestuj agenta wagę test agent atrybutów i zmiany zaczną obowiązywać natychmiast, ale nie ma wpływu na testy, które są uruchomione. Zakres adresów IP staje się skuteczny po ponownym uruchomieniu kontrolera testów.
+Zmiany atrybutu agenta testowego i agenta testowego wchodzą w życie natychmiast, ale nie mają wpływu na uruchomione testy. Zakres adresów IP staje się skuteczny po ponownym uruchomieniu kontrolera testów.
 
-(Opcjonalnie) Aby zmienić stan agenta testowego, wybierz agenta na liście, a następnie wybierz akcję z listy dostępnych opcji na podstawie bieżącego stanu agenta.
-
-> [!NOTE]
-> Jeśli agenta testowego jest uruchomiona jako proces, można zarządzać stanem agenta testowego z to ikonę obszaru powiadomień uruchomione na komputerze, w którym zainstalowano agenta testowego. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia.
-
-## <a name="configure-a-test-controller"></a>Skonfiguruj kontroler testu
-
-Aby skonfigurować kontroler testów, należy użyć **narzędzie konfiguracji kontrolera testów zespołu**. Podczas konfigurowania kontrolera testów, możesz zarejestrować kontroler testów z innym zbiorze projektów lub wyrejestrować kontroler testów z kolekcji projektu.
-
-Jeśli chcesz zarejestrować kontroler testów z kolekcji projektów Team Foundation Server, konto, którego używasz dla usługi kontrolera testu musi być członkiem grupy kont usług testowych kolekcji projektów dla kolekcji projektu lub konto Czy używasz do uruchamiania narzędzia konfiguracji kontrolera testów musi być administratorem kolekcji projektów.
+(Opcjonalnie) Aby zmienić stan agenta testowego, wybierz agenta na liście, a następnie wybierz akcję z dostępnych wyborów na podstawie bieżącego stanu agenta.
 
 > [!NOTE]
-> Jeśli wyrejestrujesz kontroler testów z kolekcji projektu, który ma istniejące środowiska w kolekcji projektów, środowiska nadal są obsługiwane, jeśli przeniesiono tej kolekcji projektu i ponownie zarejestrować kontroler testów do tej kolekcji projektu przeniesione.
+> Jeśli agent testowy jest uruchomiony jako proces, można zarządzać stan agenta testowego z ikony obszaru powiadomień, który działa na komputerze, na którym jest zainstalowany agent testowy. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces za pomocą tego narzędzia.
 
-### <a name="to-configure-a-test-controller"></a>Aby skonfigurować kontroler testu
+## <a name="configure-a-test-controller"></a>Konfigurowanie kontrolera testów
 
-1. Aby uruchomić narzędzie, aby ponownie skonfigurować kontroler testów w dowolnym momencie, wybierz **Start** > **Test Controller Configuration Tool**.
+Aby skonfigurować kontroler testów, należy użyć **narzędzia konfiguracji kontrolera testów zespołowych**. Podczas konfigurowania kontrolera testów, można zarejestrować kontroler testów z innej kolekcji projektu lub wyrejestrować kontrolera testów z kolekcji projektu.
 
-     **Konfigurowanie kontrolera testowego** zostanie wyświetlone okno dialogowe.
+Jeśli chcesz zarejestrować kontroler testów w kolekcji projektów team foundation server, konto używane dla usługi kontrolera testów musi być członkiem grupy Konta usługi testowej kolekcji projektu dla kolekcji projektu lub konta używane do uruchamiania narzędzia konfiguracji kontrolera testów musi być administratorem kolekcji projektu.
 
-2. Wybierz użytkownika do użycia jako konto logowania usługi kontrolera testowego.
+> [!NOTE]
+> Jeśli wyrejestrujesz kontroler testów z kolekcji projektu, która ma istniejące środowiska w kolekcji projektów, środowiska są nadal obsługiwane, jeśli przeniesiono tę kolekcję projektu i ponownie zarejestrujesz kontroler testów do tej przeniesionej kolekcji projektu.
+
+### <a name="to-configure-a-test-controller"></a>Aby skonfigurować kontroler testów
+
+1. Aby uruchomić narzędzie do ponownego skonfigurowania kontrolera testów w dowolnym momencie, wybierz polecenie **Uruchom** > **narzędzie konfiguracji kontrolera testów**.
+
+     Zostanie wyświetlone okno dialogowe **Konfigurowanie kontrolera testów.**
+
+2. Wybierz użytkownika, który ma być używany jako konto logowania dla usługi kontrolera testów.
 
     > [!NOTE]
-    > Hasła puste nie są obsługiwane dla kont użytkowników.
+    > Hasła zerowe nie są obsługiwane dla kont użytkowników.
 
-4. (Opcjonalnie) Jeśli nie chcesz użyć kontrolera testu w środowisku laboratoryjnym, ale tylko do uruchomienia testów z programu Visual Studio, usuń zaznaczenie **Zarejestruj kontroler testów z kolekcji projektów zespołowych**.
+4. (Opcjonalnie) Jeśli nie chcesz używać kontrolera testów w środowisku laboratoryjnym, ale tylko do uruchamiania testów z programu Visual Studio, wyczyść **kontroler testu rejestru z team project collection.**
 
-5. (Opcjonalnie) Aby skonfigurować kontroler testu do testowania obciążenia, wybierz **Konfiguruj kontroler testów do testowania obciążenia**. Wprowadź wystąpienie programu SQL Server w ramach **wyniki testu obciążeniowego tworzenie bazy danych w następującym wystąpieniu programu SQL Server**.
+5. (Opcjonalnie) Aby skonfigurować kontroler testów do testowania obciążenia, wybierz pozycję **Konfiguruj kontroler testów do testowania obciążenia**. Wprowadź wystąpienie programu SQL Server w obszarze **Tworzenie bazy danych wyników testu obciążenia w następującym wystąpieniu programu SQL Server**.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji o kontrolerów testów rozwiązywaniu problemów, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
+> Aby uzyskać więcej informacji o rozwiązywaniu problemów dotyczących kontrolerów testów, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Zarządzanie agentów, gdy uruchamiasz testy za pomocą kontrolera testów
+## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Zarządzanie agentami po uruchomieniu testów za pomocą kontrolera testów
 
-Po dodaniu ról dla aplikacji do ustawień testu dla programu Visual Studio, można dodać właściwości agenta dla każdej z ról. Określa, które agenty testowe są dostępne dla tej roli. Po uruchomieniu testów przy użyciu tych ustawień, kontroler testów, który został wybrany do ustawień testu określa dostępność wymaganych agentów. Są to następujące sytuacje, które mogą wystąpić po określeniu dostępności agenta:
+Po dodaniu ról dla aplikacji do ustawień testu dla programu Visual Studio, można dodać właściwości agenta dla każdej z ról. Określa, które agenci testowi są dostępne dla tej roli. Po uruchomieniu testów przy użyciu tych ustawień testu, kontroler testów, który jest wybrany dla ustawień testu określa dostępność wymaganych agentów. Są to następujące sytuacje, które mogą wystąpić, gdy określa się dostępność agenta:
 
-- Brak nie jest dostępny agent dla roli, która musi uruchamiać testy. Nie można uruchomić testy. Możesz wykonać jedną z następujących czynności, a następnie ponownie uruchom testy:
+- Nie ma agenta dostępne dla roli, która musi uruchomić testy. Nie można uruchomić testów. Można wykonać jedną z następujących akcji, a następnie ponownie uruchomić testy:
 
-  - Możesz poczekać, aż agent stanie się dostępny dla tej roli uruchomić testy.
+  - Można poczekać, aż agent staną się dostępne dla tej roli do uruchomienia testów.
 
-  - Jeśli istnieją agenci, którzy są w trybie offline, może służyć do tej roli, można ponownie uruchomić agenta tak, że jest ona dostępna.
+  - Jeśli istnieją jakieś agentów, które są w trybie offline, które mogą być używane dla tej roli, można ponownie uruchomić agenta, tak aby był dostępny.
 
-  - Można dodać innego agenta o prawidłowych właściwościach dla tej roli do kontrolera testów.
+  - Można dodać innego agenta z właściwościami agenta poprawne dla tej roli do kontrolera testów.
 
-  - Można zmienić właściwości agenta dla tej roli w ustawieniach testowych, aby włączyć innych agentów, które chcesz użyć.
+  - Można zmienić właściwości agenta dla tej roli w ustawieniach testu, aby włączyć innych agentów, których chcesz użyć.
 
-- Agent nie jest dostępny dla co najmniej jedną rolę, systemem adapterów danych diagnostycznych. Testy mogą być uruchamiane, ale nie można uruchomić adaptera danych diagnostycznych. Można uruchomić testy bez karty danych diagnostycznych lub możesz wykonać jedną z następujących czynności i ponownie uruchomić testy:
+- Nie ma agenta dostępne dla jednej lub więcej ról, które uruchamiają karty danych diagnostycznych. Testy można uruchomić, ale nie można uruchomić karty danych diagnostycznych. Testy można uruchomić bez karty danych diagnostycznych lub wykonać jedną z następujących akcji i ponownie uruchomić testy:
 
   - Możesz poczekać, aż agent stanie się dostępny dla tych ról.
 
-  - Jeśli istnieją agenci, którzy są w trybie offline, który może służyć do tej roli, należy zmienić stan agenta na online za pomocą **administrowanie kontrolerem testów** na **testu** menu. Ponadto trzeba będzie ponownie uruchomić agenta, jeśli został odłączony od kontrolera.
+  - Jeśli istnieją jakieś agentów, które są w trybie offline, które mogą być używane dla tej roli, należy zmienić stan agenta w trybie online z **Administruj kontrolerem testów** w menu **testowym.** Ponadto może być konieczne ponowne uruchomienie agenta, jeśli został odłączony od kontrolera.
 
-  - Upewnij się, że żadnych agentów, które mogą wymagać dla tego przebiegu testu nie zajęty przeprowadzaniem testów. Możesz sprawdzić stan wszelkich agentów z **administrowanie kontrolerem testów** na **testu** menu.
+  - Sprawdź, czy wszystkie agentów, które mogą być potrzebne do tego uruchomienia testu nie są zajęte uruchamianie testów. Stan wszystkich agentów z **administruj kontrolerem testów** można sprawdzić w menu **Test.**
 
-  - Można dodać innego agenta o prawidłowych właściwościach dla roli do kontrolera testów.
+  - Można dodać innego agenta z właściwościami agenta poprawne dla roli do kontrolera testów.
 
   - Można zmienić właściwości agenta dla roli w ustawieniach testu, aby włączyć innych agentów, których chcesz użyć.
 
-## <a name="load-tests-from-delay-signed-assemblies"></a>Ładowanie testów z zestawów podpisanych z opóźnieniem
+## <a name="load-tests-from-delay-signed-assemblies"></a>Testy obciążenia z zestawów z opóźnieniem
 
-Agentów testowych i kontrolera testów można ładować tylko zestawy testów, które są zestawami podpisanymi, lub zestawami niepodpisanymi. Niektóre zestawy badawcze są podpisywane z opóźnieniem, ponieważ muszą mieć dostęp do zestawów produkcyjnych dla aplikacji. Jednak te zestawy nie mają silnego podpisu, ponieważ są tylko zestawami testowymi i nie są rozpowszechniane. Nie można załadować tych zestawów, ponieważ są podpisywane z opóźnieniem, więc musisz wyłączyć weryfikacją silnych nazw dla tych zestawów na wszystkich komputerach, na których zestawy będą załadowane, w tym na komputerze kontrolera testów. Aby wyłączyć weryfikację podpisu z opóźnieniem, użyj *sn.exe*. Token klucza publicznego zestawu podpisanego z opóźnieniem dla którego wymagana jest weryfikacja silnej nazwy, pominięte może również wymagać dołączenia.
+Kontroler testów i agentów testowych można załadować tylko zestawy testowe, które są silnie podpisane zestawy lub niepodpisane zestawy. Niektóre zestawy testowe są podpisane z opóźnieniem, ponieważ muszą mieć dostęp do zestawów produkcyjnych dla aplikacji. Jednak te zestawy nie są silnie podpisane, ponieważ są tylko zestawy testowe i nie są dystrybuowane. Nie można załadować tych zestawów, ponieważ są one podpisane z opóźnieniem, dlatego należy wyłączyć weryfikację silnej nazwy dla tych zestawów na wszystkich maszynach, na których zostanie załadowany zestaw, w tym na komputerze kontrolera testów. Aby wyłączyć weryfikację podpisaną z opóźnieniem, użyj *pliku sn.exe*. Może być również konieczne uwzględnienie tokenu klucza publicznego zestawu podpisanego z opóźnieniem, dla którego wymagana jest weryfikacja silnej nazwy.
 
-Użyj *Sn.exe* (narzędzie silnych nazw), aby wyłączyć weryfikację podpisu z opóźnieniem.
+Użyj *sn.exe* (narzędzie Silne imię i nazwisko), aby wyłączyć weryfikację podpisaną z opóźnieniem.
 
-Powoduje to wyłączenie Weryfikacja silnej nazwy, dla określonego zestawu, na komputerze, na którym uruchomiono polecenie. Można to zrobić tylko wtedy, gdy masz wystarczające uprawnienia.
+Spowoduje to wyłączenie weryfikacji silnej nazwy, tylko dla określonego zestawu, na komputerze, na którym uruchomisz polecenie. Można to zrobić tylko wtedy, gdy masz wystarczające uprawnienia.
 
-Po zakończeniu przebiegu testu ponownie Włącz weryfikację opóźnionego podpisywania za pomocą *SN.exe* polecenia.
+Po zakończeniu testu ponownie włącz weryfikację opóźnionego podpisywania za pomocą polecenia *SN.exe.*
 
-Zalecanym sposobem wyłączenia i ponownego włączenia weryfikacji podpisu jest użycie *SN.exe* polecenia w skryptach. Można wyłączyć weryfikację w skrypcie instalacji i ponownie Włącz weryfikację w skrypcie oczyszczania.
+Zalecanym sposobem wyłączenia i ponownego włączenia weryfikacji podpisywania jest użycie poleceń *SN.exe* w skryptach. Weryfikację można wyłączyć w skrypcie konfiguracji i ponownie włączyć weryfikację w skrypcie oczyszczania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md)

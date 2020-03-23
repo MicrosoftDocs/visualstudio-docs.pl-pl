@@ -11,22 +11,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a6f227e6ab55696250d2769f5eef2e25597e081
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72645218"
 ---
-# <a name="options-dialog-box-environment--startup"></a>Opcje — okno dialogowe: środowisko \> uruchamiania
+# <a name="options-dialog-box-environment--startup"></a>Okno dialogowe \> Opcje: Uruchamianie środowiska
 
 ::: moniker range="vs-2017"
 
-Użyj tej strony, aby dostosować stronę początkową programu Visual Studio lub ustawić inną akcję domyślną podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie uruchamiania](../../ide/customizing-the-start-page-for-visual-studio.md).
+Ta strona służy do dostosowywania strony początkowej programu Visual Studio lub ustawiania innej akcji domyślnej podczas uruchamiania programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Dostosowywanie uruchamiania](../../ide/customizing-the-start-page-for-visual-studio.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Użyj tej strony, aby ustawić inną akcję domyślną podczas uruchamiania programu Visual Studio. Na **stronie podczas uruchamiania Otwórz** listę, wybierz z **okna uruchamiania** (co pozwala otworzyć nowy lub istniejący projekt), najnowsze **rozwiązanie**lub **puste środowisko**.
+Ta strona służy do ustawiania innej akcji domyślnej podczas uruchamiania programu Visual Studio. Na **liście Przy starcie otwórz,** wybierz **okno Start** (które umożliwia otwarcie nowego lub istniejącego projektu), **Najnowsze rozwiązanie**lub Puste **środowisko**.
 
 ::: moniker-end

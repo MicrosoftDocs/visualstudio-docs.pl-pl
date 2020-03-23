@@ -1,7 +1,7 @@
 ---
-title: Dowiedz się, samouczek Django w programie Visual Studio w kroku 3, pliki statyczne i strony
+title: Dowiedz się samouczek Django w programie Visual Studio krok 3, pliki statyczne i strony
 titleSuffix: ''
-description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności pokazująca, jak obsługa plików statycznych, dodawanie stron do aplikacji i użyć szablonu dziedziczenia
+description: Przewodnik po podstawach Django w kontekście projektów programu Visual Studio, w szczególności pokazujący, jak obsługiwać pliki statyczne, dodawać strony do aplikacji i używać dziedziczenia szablonów
 ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
@@ -12,45 +12,45 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "62958255"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3. Obsługa plików statycznych, dodawanie stron i użyć szablonu dziedziczenia
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Obsługa plików statycznych, dodawanie stron i używanie dziedziczenia szablonów
 
-**Poprzedniego kroku: [Tworzenie aplikacji Django przy użyciu widoków i szablonów stron](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Poprzedni krok: [Tworzenie aplikacji Django z widokami i szablonami stron](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-W poprzednich krokach w tym samouczku wyjaśniono sposób tworzenia minimalną aplikację Django z pojedynczej strony HTML niezależna. Nowoczesne aplikacje sieci web, jednak zwykle składają się z wielu stron i wprowadzić korzystanie z zasobów udostępnionych, takich jak pliki CSS i JavaScript, aby zapewnić spójne stylów i zachowanie.
+W poprzednich krokach tego samouczka dowiesz się, jak utworzyć minimalną aplikację Django z pojedynczą stroną samodzielnego kodu HTML. Nowoczesne aplikacje internetowe składają się jednak zazwyczaj z wielu stron i korzystają z zasobów udostępnionych, takich jak pliki CSS i JavaScript, aby zapewnić spójne stylizacje i zachowanie.
 
 W tym kroku dowiesz się, jak:
 
 > [!div class="checklist"]
-> - Użyj szablony elementów Visual Studio, aby szybko dodać nowe pliki o różnych typach wygodne schematyczny kod (krok 3 - 1)
-> - Konfigurowanie projektu Django do obsługi plików statycznych (krok 2 z 3)
-> - Dodawanie dodatkowych stron do aplikacji (krok 3 z 3)
-> - Użyj szablonu dziedziczenia, aby utworzyć pasek nagłówka, jak i nawigacji, który jest używany na stronach (krok 3 – 4)
+> - Za pomocą szablonów elementów programu Visual Studio można szybko dodawać nowe pliki różnych typów za pomocą wygodnego kodu standardowego (krok 3-1)
+> - Konfigurowanie projektu Django do obsługi plików statycznych (krok 3-2)
+> - Dodawanie dodatkowych stron do aplikacji (krok 3-3)
+> - Tworzenie nagłówka i paska nawigacyjnych używanego na różnych stronach za pomocą dziedziczenia szablonów
 
-## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 1 z 3: Zapoznanie się z szablonów elementów
+## <a name="step-3-1-become-familiar-with-item-templates"></a>Krok 3-1: Zapoznaj się z szablonami przedmiotów
 
-Podczas opracowywania aplikacji Django, zazwyczaj należy dodać wiele plików więcej języka Python, HTML, CSS i JavaScript. Dla każdego typu pliku (oraz innych plików, takich jak *web.config* potrzebne do wdrożenia), program Visual Studio zapewnia wygodne [elementu szablony](python-item-templates.md) ułatwią Ci rozpoczęcie pracy.
+Podczas tworzenia aplikacji Django zazwyczaj dodajesz o wiele więcej plików Python, HTML, CSS i JavaScript. Dla każdego typu pliku (a także innych plików, takich jak *web.config,* które mogą być potrzebne do wdrożenia), visual studio zapewnia wygodne [szablony elementów,](python-item-templates.md) aby rozpocząć.
 
-Aby wyświetlić dostępne szablony, przejdź do **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy folder, w którym chcesz utworzyć element i wybierz pozycję **Dodaj** > **nowy element**:
+Aby wyświetlić dostępne szablony, przejdź do **Programu Solution Explorer**, kliknij prawym przyciskiem myszy folder, w którym chcesz utworzyć element, wybierz pozycję **Dodaj** > **nowy element:**
 
-![Dodaj okno dialogowe nowego elementu w programie Visual Studio](media/django/step03-add-new-item-dialog.png)
+![Dodawanie nowego okna dialogowego elementu w programie Visual Studio](media/django/step03-add-new-item-dialog.png)
 
-Aby użyć szablonu, wybrania odpowiedniego szablonu, określ nazwę pliku i wybierz **OK**. Dodanie elementu w ten sposób automatycznie dodaje plik do projektu programu Visual Studio i oznaczy zmiany do kontroli źródła.
+Aby użyć szablonu, wybierz żądany szablon, określ nazwę pliku i wybierz **przycisk OK**. Dodawanie elementu w ten sposób automatycznie dodaje plik do projektu programu Visual Studio i oznacza zmiany dla kontroli źródła.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: Jak Visual Studio wiesz, które element szablonów do oferty?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pytanie: Skąd program Visual Studio wie, które szablony elementów do zaoferowania?
 
-Odpowiedź: Plik projektu programu Visual Studio (*.pyproj*) zawiera identyfikator typu projektu, który oznacza je jako projektu języka Python. Visual Studio używa tego identyfikatora typu, aby pokazać tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób programu Visual Studio można podać bogatego zestawu szablonów elementów, dla typów bez konieczności sortowanie je każdym razem, gdy wiele projektów.
+Odpowiedź: Plik projektu programu Visual Studio (*.pyproj*) zawiera identyfikator typu projektu, który oznacza go jako projekt języka Python. Visual Studio używa tego identyfikatora typu, aby wyświetlić tylko te szablony elementów, które są odpowiednie dla typu projektu. W ten sposób visual studio może dostarczyć bogaty zestaw szablonów elementów dla wielu typów projektów bez pytania, aby sortować je za każdym razem.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 2 z 3: Obsługa plików statycznych z aplikacji
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3-2: Obsługa plików statycznych z aplikacji
 
-W aplikacji sieci web utworzonych za pomocą języka Python (za pomocą dowolnej platformy) pliki języka Python zawsze uruchamiane na serwerze hosta sieci web i nigdy nie są przekazywane do komputera użytkownika. Inne pliki, takie jak CSS i JavaScript, są używane wyłącznie przez przeglądarki, więc serwer hosta po prostu dostarcza je jako — jest zawsze wtedy, gdy są one wymagane. Takie pliki są określane jako "statyczne" pliki i Django może dostarczyć ją automatycznie bez konieczności pisania kodu.
+W aplikacji internetowej utworzonej za pomocą języka Python (przy użyciu dowolnej struktury) pliki Języka Python są zawsze uruchamiane na serwerze hosta internetowego i nigdy nie są przesyłane do komputera użytkownika. Inne pliki, takie jak CSS i JavaScript, są używane wyłącznie przez przeglądarkę, więc serwer hosta po prostu dostarcza je w stanie takim, w jakim są wymagane. Takie pliki są określane jako "statyczne" pliki, a Django może dostarczyć je automatycznie bez konieczności pisania kodu.
 
-Projektu Django jest domyślnie skonfigurowany do obsługi plików statycznych z poziomu aplikacji *statyczne* folderu dzięki te wiersze w projekcie Django *settings.py*:
+Projekt Django jest domyślnie skonfigurowany do obsługi plików statycznych z folderu *statycznego* aplikacji, dzięki tym liniom w *settings.py*projektu Django:
 
 ```python
 # Static files (CSS, JavaScript, Images)
@@ -61,15 +61,15 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 ```
 
-Można organizować pliki przy użyciu dowolnej struktury folderów w ramach *statyczne* , a następnie użyć ścieżek względnych w tym folderze, do odwoływania się do plików. Aby zademonstrować ten proces, poniższe kroki Dodawanie pliku CSS do aplikacji, a następnie użyj tego arkusza stylów w *index.html* szablonu:
+Można organizować pliki przy użyciu dowolnej struktury folderów w *obrębie statycznej,* która ci się podoba, a następnie używać ścieżek względnych w tym folderze, aby odwoływać się do plików. Aby zademonstrować ten proces, następujące kroki dodają plik CSS do aplikacji, a następnie użyj tego arkusza stylów w szablonie *index.html:*
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **HelloDjangoApp** folderu w projekcie programu Visual Studio, wybierz opcję **Dodaj** > **nowy folder**i nadaj folderowi `static`.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy folder **HelloDjangoApp** w `static`projekcie programu Visual Studio, wybierz pozycję **Dodaj** > nowy**folder**i nazwij folder .
 
-1. Kliknij prawym przyciskiem myszy **statyczne** i wybierz polecenie **Dodaj** > **nowy element**. W wyświetlonym oknie dialogowym wybierz **arkusza stylów** szablonu, nazwij plik `site.css`i wybierz **OK**. **Site.css** pliku pojawia się w projekcie i jest otwarty w edytorze. Twoja struktura folderów powinny wyglądać podobnie do poniższej ilustracji:
+1. Kliknij prawym przyciskiem myszy folder **statyczny** i wybierz polecenie **Dodaj** > **nowy element**. W wyświetlonym oknie dialogowym zaznacz szablon **arkusza stylów,** nazwij plik `site.css`i wybierz przycisk **OK**. Plik **site.css** pojawi się w projekcie i zostanie otwarty w edytorze. Struktura folderów powinna wyglądać podobnie do następującej ilustracji:
 
-    ![Struktura plików statycznych, jak pokazano w Eksploratorze rozwiązań](media/django/step03-static-file-structure.png)
+    ![Statyczna struktura plików, jak pokazano w Eksploratorze rozwiązań](media/django/step03-static-file-structure.png)
 
-1. Zastąp zawartość *site.css* następującym kodem i Zapisz plik:
+1. Zastąp zawartość *witryny site.css* następującym kodem i zapisz plik:
 
     ```css
     .message {
@@ -78,7 +78,7 @@ Można organizować pliki przy użyciu dowolnej struktury folderów w ramach *st
     }
     ```
 
-1. Zastąp zawartość aplikacji *templates/HelloDjangoApp/index.html* pliku następującym kodem, który zastępuje `<strong>` element używany w kroku 2 z `<span>` odwołujący się `message` stylu klasy. Za pomocą klasy stylu w ten sposób zapewnia większą elastyczność w style elementu. (Jeśli jeszcze nie został przeniesiony *index.html* do podfolderu w *szablony* podczas korzystania z programu VS 2017 w wersji 15.7 wcześniej, można znaleźć [namespacing szablonu](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) w kroku 2 – 4.)
+1. Zastąp zawartość pliku *templates/HelloDjangoApp/index.html* aplikacji następującym kodem, który `<strong>` zastępuje element używany w `<span>` kroku 2, który odwołuje się do klasy `message` stylu. Korzystanie z klasy stylu w ten sposób zapewnia znacznie większą elastyczność w stylizacji elementu. (Jeśli *index.html* nie został przeniesiony do podfolderu w *szablonach* podczas korzystania z programu VS 2017 15.7 lub wcześniejszych, zapoznaj się [z nazwami szablonów](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) w kroku 2-4).
 
     ```html
     <html>
@@ -93,32 +93,32 @@ Można organizować pliki przy użyciu dowolnej struktury folderów w ramach *st
     </html>
     ```
 
-1. Uruchom projekt, aby obserwować wyniki. Zatrzymaj serwer po zakończeniu, a następnie Zatwierdź zmiany do kontroli źródła, jeśli chcesz (jak wyjaśniono w [kroku 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
+1. Uruchom projekt, aby obserwować wyniki. Zatrzymaj serwer po zakończeniu i zaobewuj zmiany do kontroli źródła, jeśli chcesz (jak wyjaśniono w [kroku 2](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)).
 
-### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pytanie: Co to jest celem {% obciążenia, jakiego staticfiles %} tag?
+### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Pytanie: Jaki jest cel tagu {% load staticfiles %}?
 
-Odpowiedź: `{% load staticfiles %}` Wiersza jest wymagane, aby odwołujące się do plików statycznych w elementach, takich jak `<head>` i `<body>`. W przykładzie przedstawionym w tej sekcji, "staticfiles" odnosi się do niestandardowego Django szablonu tag zestaw, który jest, co pozwala na używanie `{% static %}` składni do odwoływania się do plików statycznych.  Bez `{% load staticfiles %}`, zobaczysz wyjątek po uruchomieniu aplikacji.
+Odpowiedź: `{% load staticfiles %}` Linia jest wymagana przed odwoływaniem się do `<head>` `<body>`plików statycznych w elementach takich jak i . W przykładzie pokazanym w tej sekcji "staticfiles" odnosi się do niestandardowego zestawu tagów `{% static %}` szablonu Django, który umożliwia użycie składni w odniesieniu do plików statycznych.  Bez `{% load staticfiles %}`, zobaczysz wyjątek po uruchomieniu aplikacji.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: Czy istnieją wszystkie konwencje służący do organizowania plików statycznych?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pytanie: Czy istnieją jakieś konwencje organizowania plików statycznych?
 
-Odpowiedź: Możesz dodać inne pliki CSS, JavaScript i HTML w swojej *statyczne* folderu dowolny sposób. Typowy sposób organizowania plików statycznych jest utworzenie podfoldery o nazwach odpowiadających *czcionki*, *skrypty*, i *zawartości* (dla arkuszy stylów i inne pliki). W każdym przypadku Pamiętaj, aby uwzględnić te foldery w ścieżce względnej do pliku w `{% static %}` odwołania.
+Odpowiedź: W folderze *statycznym* możesz dodawać inne pliki CSS, JavaScript i HTML. Typowym sposobem organizowania plików statycznych jest tworzenie podfolderów o nazwie *czcionki,* *skrypty*i *zawartość* (dla arkuszy stylów i innych plików). W każdym przypadku należy pamiętać o uwzględnienie tych folderów w ścieżce względnej do pliku w `{% static %}` odwołaniach.
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3 z 3: Dodaj stronę aplikacji
+## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3-3: Dodawanie strony do aplikacji
 
-Dodawanie innej strony w aplikacji oznacza, że następujące czynności:
+Dodanie kolejnej strony do aplikacji oznacza, że:
 
-- Dodaj funkcję języka Python, definiujący widok.
-- Dodaj szablon dla strony kodu znaczników.
-- Dodaj wymagane routingu do projektu Django *urls.py* pliku.
+- Dodaj funkcję Języka Python, która definiuje widok.
+- Dodaj szablon znaczników strony.
+- Dodaj niezbędną routing do pliku *urls.py* projektu Django.
 
-Poniższe kroki Dodawanie strony "About" do projektu "HelloDjangoApp" i łącza do tej strony ze strony głównej:
+Następujące kroki dodają stronę "Informacje" do projektu "HelloDjangoApp" i linki do tej strony ze strony głównej:
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **szablony/HelloDjangoApp** folderu, wybierz **Dodaj** > **nowy element**, wybierz opcję **strony HTML** szablonu elementu, określ nazwę pliku `about.html`i wybierz **OK**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy **folder templates/HelloDjangoApp,** wybierz `about.html`pozycję **Dodaj** > nowy**element**, wybierz szablon elementu strony **HTML,** nazwij plik i wybierz przycisk **OK**.
 
     > [!Tip]
-    > Jeśli **nowy element** polecenie nie pojawi się na **Dodaj** menu, upewnij się, zostało zatrzymane serwer tak, aby program Visual Studio opuszcza tryb debugowania.
+    > Jeśli polecenie **Nowy element** nie jest wyświetlane w menu **Dodaj,** upewnij się, że serwer został zatrzymany, aby program Visual Studio zakończył działanie trybu debugowania.
 
-1. Zastąp zawartość *about.html* następującym kodem (Zastąp jawne łącze do strony głównej z paska nawigacyjnego proste w kroku 3 – 4):
+1. Zastąp zawartość *about.html* następującym znacznikiem (łącze jawne do strony głównej zastępujesz prostym paskiem nawigacyjnym w kroku 3-4):
 
     ```html
     <html>
@@ -134,7 +134,7 @@ Poniższe kroki Dodawanie strony "About" do projektu "HelloDjangoApp" i łącza 
     </html>
     ```
 
-1. Otwórz aplikację *views.py* pliku i Dodaj funkcję o nazwie `about` , który używa szablonu:
+1. Otwórz plik *views.py* aplikacji i dodaj funkcję `about` o nazwie, która używa szablonu:
 
     ```python
     def about(request):
@@ -148,45 +148,45 @@ Poniższe kroki Dodawanie strony "About" do projektu "HelloDjangoApp" i łącza 
         )
     ```
 
-1. Otwórz projekt Django *urls.py* pliku i Dodaj następujący wiersz do `urlPatterns` tablicy:
+1. Otwórz plik *urls.py* projektu Django i dodaj następujący wiersz `urlPatterns` do tablicy:
 
     ```python
     url(r'^about$', HelloDjangoApp.views.about, name='about'),
     ```
 
-1. Otwórz *templates/HelloDjangoApp/index.html* pliku i Dodaj następujący wiersz poniżej `<body>` elementu, aby utworzyć łącze do strony informacje (ponownie, należy zamienić ten link paska nawigacji, w kroku 3 – 4):
+1. Otwórz plik *templates/HelloDjangoApp/index.html* i dodaj następujący wiersz `<body>` poniżej elementu, aby utworzyć łącze do strony Informacje (ponownie zastąp ten link paskiem nawigacyjnym w kroku 3-4):
 
     ```html
     <div><a href="about">About</a></div>
     ```
 
-1. Zapisz wszystkie pliki przy użyciu **pliku** > **Zapisz wszystko** polecenie menu lub po prostu naciśnij **Ctrl**+**Shift** + **S**. (Z technicznego punktu widzenia, ten krok nie jest wymagany, ponieważ uruchamiania projektu w programie Visual Studio automatycznie zapisuje pliki. Niemniej jednak to pozwala dowiedzieć!)
+1. Zapisz wszystkie pliki za pomocą polecenia menu **Zapisz** > **wszystko** lub po prostu naciśnij **klawisze Ctrl**+**Shift**+**S**. (Technicznie ten krok nie jest potrzebny, ponieważ uruchomienie projektu w programie Visual Studio automatycznie zapisuje pliki. Niemniej jednak, jest to dobra komenda, aby wiedzieć o!)
 
-1. Uruchom projekt, aby obserwować wyniki i sprawdź Nawigacja między stronami. Zamknij serwer po zakończeniu.
+1. Uruchom projekt, aby obserwować wyniki i sprawdzić nawigację między stronami. Zamknij serwer po zakończeniu.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pytanie: Podjęto, aby uzyskać link do strony głównej przy użyciu "index", ale nie sprawdził się. Dlaczego?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Pytanie: Próbowałem użyć "indeks" dla linku do strony głównej, ale to nie zadziałało. Dlaczego?
 
-Odpowiedź: Mimo że widoku działa w programach *views.py* nosi nazwę `index`, adresu URL routingu wzorców w projekcie Django *urls.py* plik nie zawiera wyrażenia regularnego, który pasuje do ciągu "index". Aby dopasować te parametry, należy dodać inny wpis dla wzorca `^index$`.
+Odpowiedź: Mimo że funkcja *views.py* widoku w views.py `index`jest nazwana, wzorce routingu adresów URL w pliku *urls.py* projektu Django nie zawierają wyrażenia regularnego, które pasuje do ciągu "index". Aby dopasować ten ciąg, należy dodać `^index$`kolejny wpis dla wzorca .
 
-Jak pokazano w następnej sekcji, to lepiej używać `{% url '<pattern_name>' %}` tagu w szablonie strony do odwoływania się do *nazwa* wzorca, w którym wielkość Django tworzy prawidłowego adresu URL. Na przykład Zastąp ciąg `<div><a href="home">Home</a></div>` w *about.html* z `<div><a href="{% url 'index' %}">Home</a></div>`. Użycie "index" działa, w tym miejscu, ponieważ pierwszy adres URL wzorca w *urls.py* w rzeczywistości o nazwie "index" (na mocy niniejszej `name='index'` argument). Umożliwia także "home" do odwoływania się do drugi wzorzec.
+Jak pokazano w następnej sekcji, o wiele `{% url '<pattern_name>' %}` lepiej jest użyć tagu w szablonie strony, aby odwołać się do *nazwy* wzoru, w którym to przypadku Django tworzy odpowiedni adres URL dla Ciebie. Na przykład `<div><a href="home">Home</a></div>` zastąp `<div><a href="{% url 'index' %}">Home</a></div>`w *pliku about.html* . Użycie "index" działa tutaj, ponieważ pierwszy wzorzec adresu URL w *urls.py* jest w rzeczywistości `name='index'` nazwany "index" (na podstawie argumentu). Możesz również użyć "home", aby odwołać się do drugiego wzoru.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3 – 4: Użyj szablonu dziedziczenia, aby utworzyć pasku nagłówka, jak i nav
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: Tworzenie nagłówka i paska nawigacyjnych za pomocą dziedziczenia szablonu
 
-Zamiast łącza nawigacji jawne na każdej stronie, nowoczesne aplikacje internetowe zazwyczaj korzystają ze znakowaniem nagłówek i pasek nawigacyjny, który zawiera najważniejsze łączy strony, menu podręczne i tak dalej. Aby upewnić się, że nagłówek i na pasku nawigacyjnym są takie same na wszystkich stronach, jednak nie chcesz powtórzyć ten sam kod w każdym szablonie strony. Zamiast tego chcesz zdefiniować typowych części wszystkich stron w jednym miejscu.
+Zamiast jawnych łączy nawigacyjnych na każdej stronie, nowoczesne aplikacje internetowe zazwyczaj używają nagłówka znakowania i paska nawigacyjnego, który zawiera najważniejsze łącza stron, menu podręczne i tak dalej. Aby upewnić się, że nagłówek i pasek nawigacyjny są takie same na wszystkich stronach, nie chcesz jednak powtarzać tego samego kodu w każdym szablonie strony. Zamiast tego chcesz zdefiniować wspólne części wszystkich stron w jednym miejscu.
 
-System szablonów firmy Django zapewnia dwa oznacza, że ponowne użycie określonych elementów w różnych szablonach: obejmuje i dziedziczenie.
+System szablonów Django zapewnia dwa sposoby ponownego użytku określonych elementów w wielu szablonach: zawiera i dziedziczenie.
 
-- *Obejmuje* są inne szablony stron, wstawiające w określonym miejscu w szablonie odwołujący się przy użyciu składni `{% include <template_path> %}`. Można również użyć zmiennej, jeśli chcesz zmienić ścieżkę dynamicznie w kodzie. Obejmuje są zazwyczaj używane w treści strony Aby pobrać szablon z określonej lokalizacji, na stronie.
+- *Zawiera* inne szablony stron wstawiane w określonym miejscu w szablonie odsyłający przy użyciu składni `{% include <template_path> %}`. Można również użyć zmiennej, jeśli chcesz dynamicznie zmienić ścieżkę w kodzie. Obejmuje są zazwyczaj używane w treści strony do ściągania w szablonie udostępnionym w określonej lokalizacji na stronie.
 
-- *Dziedziczenie* używa `{% extends <template_path> %}` na początku szablon strony, aby określić szablon podstawowy udostępnionego odwołujący się szablon tworzy następnie na podstawie. Dziedziczenie jest najczęściej używany do definiowania układu udostępnionego, pasek nawigacji, a inne struktury dla stron aplikacji tak, aby przywołujący szablony muszą tylko dodać lub zmodyfikować określonych obszarach szablon podstawowy o nazwie *bloków*.
+- *Dziedziczenie* używa `{% extends <template_path> %}` na początku szablonu strony, aby określić udostępniony szablon podstawowy, który następnie opiera się na szablonie odsyłający. Dziedziczenie jest powszechnie używane do definiowania układu udostępnionego, paska nawigacyjnyego i innych struktur dla stron aplikacji, w ten sposób, że szablony odwołujące się muszą tylko dodawać lub modyfikować określone obszary szablonu podstawowego o nazwie *bloki*.
 
-W obu przypadkach `<template_path>` względem aplikacji *szablony* folder (`../` lub `./` są również dozwolone).
+W obu `<template_path>` przypadkach jest względem folderu *szablonów* aplikacji (`../` lub `./` są również dozwolone).
 
-Szablon podstawowy wyznacza blokach, używając `{% block <block_name> %}` i `{% endblock %}` tagów. Jeśli szablon odwołujący się następnie używa tagi o takiej samej nazwie bloku, jego zawartość bloku przesłonięcia podstawowego szablonu.
+Szablon podstawowy wyznacza bloki `{% block <block_name> %}` przy `{% endblock %}` użyciu i tagi. Jeśli szablon odsyłający używa tagów o tej samej nazwie bloku, jego zawartość bloku zastępuje zawartość szablonu podstawowego.
 
-Poniższe kroki prezentują dziedziczenia:
+Następujące kroki pokazują dziedziczenie:
 
-1. W aplikacji *szablony/HelloDjangoApp* folderu, Utwórz nowy plik HTML (przy użyciu **Dodaj** > **nowy element** menu kontekstowego lub **Dodaj**  >  **Strony HTML**) o nazwie *layout.html*i zastąp jego zawartość ze znacznikami poniżej. Aby zobaczyć, że ten szablon zawiera bloku o nazwie "zawartość", to wszystko to Zastąp odwołujący się potrzeba strony:
+1. W *folderze aplikacji templates/HelloDjangoApp* utwórz nowy plik HTML (za pomocą menu**kontekstowego** **Dodaj** > nowy element lub **Dodaj** > **stronę HTML**) o nazwie *layout.html*i zastąp jego zawartość znacznikami poniżej. Widać, że ten szablon zawiera blok o nazwie "zawartość", który jest wszystkim, co strony odsyłający muszą zastąpić:
 
     ```html
     <!DOCTYPE html>
@@ -216,7 +216,7 @@ Poniższe kroki prezentują dziedziczenia:
     </html>
     ```
 
-1. Dodaj następujące style w aplikacji *static/site.css* pliku (w tym przewodniku nie podjęto próbę pokazują, w tym miejscu elastyczne; te style są po prostu wygenerować wynik interesujące):
+1. Dodaj następujące style do pliku *statycznego/site.css* aplikacji (w tym instruktażu nie próbuje się tutaj zademonstrować responsywnego projektu; te style są po prostu generują interesujące wyniki):
 
     ```css
     .navbar {
@@ -248,7 +248,7 @@ Poniższe kroki prezentują dziedziczenia:
     }
     ```
 
-1. Modyfikowanie *templates/HelloDjangoApp/index.html* do odwoływania się do szablon podstawowy i Zastąp blok zawartości. Aby zobaczyć, że za pomocą dziedziczenia, ten szablon staje się proste:
+1. Zmodyfikuj *templates/HelloDjangoApp/index.html,* aby odwoływać się do szablonu podstawowego i zastąpić blok zawartości. Widać, że za pomocą dziedziczenia ten szablon staje się prosty:
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}
@@ -257,7 +257,7 @@ Poniższe kroki prezentują dziedziczenia:
     {% endblock %}
     ```
 
-1. Modyfikowanie *templates/HelloDjangoApp/about.html* także odwoływać się do szablonu podstawowego i zastępowania bloku zawartości:
+1. Zmodyfikuj *templates/HelloDjangoApp/about.html,* aby również odwoływać się do szablonu podstawowego i zastępować blok zawartości:
 
     ```html
     {% extends "HelloDjangoApp/layout.html" %}
@@ -268,19 +268,19 @@ Poniższe kroki prezentują dziedziczenia:
 
 1. Uruchom serwer, aby obserwować wyniki. Zamknij serwer po zakończeniu.
 
-    ![Uruchomiona aplikacja wyświetlane na pasku nawigacyjnym](media/django/step03-nav-bar.png)
+    ![Uruchamianie aplikacji z pasem nawigacyjnym](media/django/step03-nav-bar.png)
 
-1. Ponieważ miał wprowadzone istotnych zmian do aplikacji, ponownie to dobry moment, aby [Zatwierdź zmiany do kontroli źródła](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control).
+1. Ponieważ wprowadzono istotne zmiany w aplikacji, znowu jest to dobry moment, aby [zatwierdzić zmiany w kontroli źródła.](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)
 
 ## <a name="next-steps"></a>Następne kroki
 
 > [!div class="nextstepaction"]
-> [Użyj pełnego szablonów projektów internetowych Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Użyj pełnego szablonu django Web Project](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="go-deeper"></a>Przejdź dalej
+## <a name="go-deeper"></a>Głębiej
 
-- [Wdrażanie aplikacji sieci web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- [Zapisywanie swoją pierwszą aplikację Django, część 3 (widoki)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
-- Aby uzyskać więcej możliwości szablonach Django, takich jak przepływ sterowania, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
-- Aby uzyskać szczegółowe informacje na temat korzystania z `{% url %}` tagów, zobacz [adresu url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) w ramach [tagi wbudowany szablon i filtry dla odwołania szablonów Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Kod źródłowy samouczek w witrynie GitHub: [Microsoft/python — przykładowe vs uczenia — django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- [Wdrażanie aplikacji sieci Web w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Pisanie pierwszej aplikacji Django, część 3 (widoki)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
+- Aby uzyskać więcej możliwości szablonów Django, takich jak przepływ sterowania, zobacz [język szablonu Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
+- Aby uzyskać szczegółowe `{% url %}` informacje na temat używania tagu, zobacz [adres URL](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) [wbudowanych tagów szablonów i filtrów dla szablonów Django (docs.djangoproject.com)](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/)
+- Kod źródłowy samouczka na GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

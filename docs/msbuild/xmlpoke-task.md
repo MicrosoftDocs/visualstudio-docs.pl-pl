@@ -1,5 +1,5 @@
 ---
-title: XmlPoke — — zadanie | Microsoft Docs
+title: XmlPoke zadanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,34 +17,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588385"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke — zadanie
 
-Ustawia wartości określone przez zapytanie XPath w pliku XML.
+Ustawia wartości określone przez kwerendę XPath w pliku XML.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania `XmlPoke`.
+ W poniższej tabeli `XmlPoke` opisano parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`Namespaces`|Opcjonalny parametr `String`.<br /><br /> Określa przestrzenie nazw dla prefiksów zapytania XPath. `Namespaces` to fragment kodu XML składający się z `Namespace` elementów z atrybutami `Prefix` i `Uri`. Atrybut `Prefix` Określa prefiks do skojarzenia z przestrzenią nazw określoną w atrybucie `Uri`. Nie należy używać pustej `Prefix`.|
-|`Query`|Opcjonalny parametr `String`.<br /><br /> Określa zapytanie XPath.|
-|`Value`|Wymagany <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Określa wartość, która ma zostać wstawiona do określonej ścieżki.|
-|`XmlInputPath`|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa dane wejściowe w formacie XML jako ścieżkę pliku.|
+|`Namespaces`|Parametr `String` opcjonalny.<br /><br /> Określa przestrzenie nazw prefiksów kwerend XPath. `Namespaces`jest fragmentem kodu XML `Namespace` składającym `Prefix` się `Uri`z elementów z atrybutami i . Atrybut `Prefix` określa prefiks do skojarzenia z obszarem nazw określonym w `Uri` atrybucie. Nie używaj `Prefix`pustego pliku .|
+|`Query`|Parametr `String` opcjonalny.<br /><br /> Określa kwerendę XPath.|
+|`Value`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa wartość, która ma zostać wstawiona do określonej ścieżki.|
+|`XmlInputPath`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> opcjonalny.<br /><br /> Określa dane wejściowe XML jako ścieżkę pliku.|
 
 ## <a name="remarks"></a>Uwagi
 
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to <xref:Microsoft.Build.Tasks.TaskExtension> zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy, która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Oto przykład. XML do zmodyfikowania:
+Oto sample.xml do zmodyfikowania:
 
 ```xml
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
@@ -55,7 +55,7 @@ Oto przykład. XML do zmodyfikowania:
 </Package>
 ```
 
-W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/PhonePublisherId`, użyj
+W tym przykładzie, jeśli `/Package/mp:PhoneIdentity/PhonePublisherId`chcesz zmodyfikować, użyj
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -77,9 +77,9 @@ W tym przykładzie, jeśli chcesz zmodyfikować `/Package/mp:PhoneIdentity/Phone
 </Project>
 ```
 
-`dn` jest używany jako prefiks sztucznej przestrzeni nazw dla domyślnej przestrzeni nazw.
+`dn`jest tutaj używany jako prefiks sztucznej przestrzeni nazw dla domyślnej przestrzeni nazw.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zadania](../msbuild/msbuild-tasks.md)
 - [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)

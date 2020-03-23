@@ -1,5 +1,5 @@
 ---
-title: Przycisk Eksportuj (Concurrency Visualizer) | Dokumentacja firmy Microsoft
+title: Przycisk Eksportuj (wizualizator współbieżności) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62969904"
 ---
-# <a name="export-button-concurrency-visualizer"></a>Przycisk Eksportuj (Concurrency Visualizer)
-**Wyeksportować** przycisk umożliwia wyeksportowanie jak stosu wywołań. *CSV* plik na użytek własny lub do użytku z innego narzędzia takiego jak program Microsoft Excel.
+# <a name="export-button-concurrency-visualizer"></a>Przycisk Eksportuj (Wizualizator współbieżności)
+Przycisk **Eksportuj** umożliwia eksportowanie stosu wywołań jako pliku . *csv* dla własnych rekordów lub do użytku z innym narzędziem, takim jak Microsoft Excel.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Concurrency Visualizer](../profiling/concurrency-visualizer.md)
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

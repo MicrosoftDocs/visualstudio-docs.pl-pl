@@ -1,5 +1,5 @@
 ---
-title: Raport dotyczący operacji (Widok wątków) na dysku | Dokumentacja firmy Microsoft
+title: Raport operacji na dysku (widok wątków) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,34 +13,34 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62970073"
 ---
 # <a name="disk-operations-report-threads-view"></a>Raport dotyczący operacji na dysku (Widok wątków)
-Raport operacji dyskowych pokazuje operacje We/Wy dysku w kanałach dysku.
+Raport operacji dysku pokazuje operacje we/wy dysku w kanałach dysków.
 
- Te informacje są zgłaszane dla każdego dostępu dysku występujący w imieniu procesu, który jest profilowany w przedziale czasowym aktualnie widoczne:
+ Dla każdego dostępu do dysku, który występuje w imieniu procesu, który jest profilowany w aktualnie widocznym oknie czasu, te informacje są zgłaszane:
 
-- Nazwa i identyfikator PID procesu, który wykonał dostępu do dysku
+- Nazwa i identyfikator PID procesu, który wykonał dostęp do dysku
 
 - Identyfikator wątku, który uzyskał dostęp do dysku
 
-- Nazwa pliku, którego uzyskano dostęp
+- Nazwa pliku, do który uzyskiwał dostęp
 
-- Liczba operacji odczytu na pliku
+- Liczba odczytów na plik
 
-- Liczba Bajty odczytane
+- Liczba odczytanych bajtów
 
-- Opóźnienie odczytu, w milisekundach
+- Opóźnienie odczytu w milisekundach
 
 - Liczba zapisów
 
-- Liczba bajtów zapisanych
+- Liczba zapisanych bajtów
 
-- Opóźnienie zapisu, w milisekundach
+- Opóźnienie zapisu w milisekundach
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok wątków](../profiling/threads-view-parallel-performance.md)

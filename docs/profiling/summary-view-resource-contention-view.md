@@ -1,5 +1,5 @@
 ---
-title: Widok podsumowania — Widok rywalizacji o zasoby | Microsoft Docs
+title: Widok podsumowania — widok rywalizacji o zasoby | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,37 +12,37 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74771451"
 ---
 # <a name="summary-view---resource-contention-view"></a>Widok podsumowania — widok rywalizacji o zasoby
-Widok podsumowania zawiera informacje o zdarzeniach w aplikacji, w których wątek lub proces został wstrzymany podczas oczekiwania na dostęp do zasobu.
+W widoku Podsumowanie są wyświetlane informacje o zdarzeniach w aplikacji, w których wątek lub proces został zawieszony podczas oczekiwania na dostęp do zasobu.
 
- Aby uzyskać więcej informacji, w tym opis linków powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
+ Aby uzyskać więcej informacji, w tym opis łączy powiadomień i list raportów, zobacz [Widok podsumowania](../profiling/summary-view.md).
 
 ## <a name="timeline-graph"></a>Wykres osi czasu
- Wykres osi czasu w widoku Podsumowanie przedstawia liczbę zdarzeń rywalizacji profilowanej aplikacji w czasie, w którym wystąpiło profilowanie. Możesz użyć wykresu osi czasu do filtrowania widoku do wybranego przedziału czasu. Aby uzyskać więcej informacji, zobacz [How to: Filter viewss Reports from a Summary oś czasu](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Wykres osi czasu w widoku Podsumowanie pokazuje liczbę zdarzeń rywalizacji profilowanych aplikacji w czasie, w którego wystąpił profilowanie. Za pomocą wykresu osi czasu można filtrować widok do wybranego przedziału czasu. Aby uzyskać więcej informacji, zobacz [Jak: Filtrowanie widoków raportu z osi czasu podsumowania](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
-## <a name="most-contended-resources"></a>Zasoby z największą rywalizacją
- **Zasoby z największą** rywalizacją zawierają listę zasobów w aplikacji, które spowodowały najwięcej zdarzeń związanych ze spisem. Możesz kliknąć nazwę zasobu, aby wyświetlić widok rywalizacji. Widok rywalizacji zawiera szczegółową oś czasu rywalizacji o zasoby według wątku.
+## <a name="most-contended-resources"></a>Większość twierdzonych zasobów
+ **Większość twierdził zasobów** wyświetla zasoby w aplikacji, która spowodowała najwięcej zdarzeń rywalizacji. Można kliknąć nazwę zasobu, aby wyświetlić widok Rywalizacje. Widok Rywalizacje zawiera szczegółową oś czasu rywalizacji zasobów według wątku.
 
- **Zasoby z największą** ilością zasobów obejmują następujące dane dla każdego zasobu.
+ **Większość twierdził zasobów** zawiera następujące dane dla każdego zasobu.
 
 |Kolumna|Opis|
 |------------|-----------------|
 |**Nazwa**|Nazwa zasobu.|
-|**Rywalizacji**|Wartość procentowa wszystkich zdarzeń rywalizacji w danych profilowania, które były rywalizacjami za ten zasób.|
+|**Rywalizacja %**|Procent wszystkich zdarzeń rywalizacji w danych profilowania, które były rywalizacji za ten zasób.|
 
-## <a name="most-contended-thread"></a>Wątek z największą rywalizacją
- **Wątki z największą** liczbą zdarzeń w programie wyświetlają wątki w aplikacji, które miały największą liczbę zdarzenia rywalizacji. Można kliknąć nazwę wątku, aby wyświetlić widok rywalizacji, który zapewnia szczegółową oś czasu rywalizacji o zasoby przez wątek.
+## <a name="most-contended-thread"></a>Najbardziej twierdził wątku
+ **Większość Twierdził wątki** wyświetla wątki w aplikacji, która miała największą liczbę zdarzeń rywalizacji. Można kliknąć nazwę wątku, aby wyświetlić widok Rywalizacje, który zawiera szczegółową oś czasu rywalizacji zasobów przez wątek.
 
- **Wątki z największą** ilością ofert obejmują następujące dane dla każdego wątku.
+ **Większość wątków contended** zawiera następujące dane dla każdego wątku.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**#C1**|Identyfikator wątku.|
+|**ID**|Identyfikator wątku.|
 |**Nazwa**|Nazwa procesu, który jest właścicielem wątku.|
-|**Rywalizacji**|Wartość procentowa wszystkich zdarzeń rywalizacji w danych profilowania, które były rywalizacjami za ten zasób.|
+|**Rywalizacja %**|Procent wszystkich zdarzeń rywalizacji w danych profilowania, które były rywalizacji za ten zasób.|
