@@ -1,5 +1,5 @@
 ---
-title: CL — zadanie | Microsoft Docs
+title: Cl Zadanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,785 +22,785 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78865339"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 
-Zawija narzędzie kompilatora firmy C++ Microsoft, *CL. exe*. Kompilator tworzy pliki wykonywalne ( *. exe*), pliki bibliotek dołączanych dynamicznie (*dll*) lub moduły kodu ( *. module*). Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options) i [Użyj MSBuild z wiersza polecenia](/cpp/build/msbuild-visual-cpp) i [Użyj zestawu narzędzi C++ firmy Microsoft z wiersza polecenia](/cpp/build/building-on-the-command-line).
+Zawija narzędzie kompilatora Microsoft C++, *cl.exe*. Kompilator tworzy pliki wykonywalne (*.exe*), pliki biblioteki dynamicznego łącza (*.dll*) lub moduł kodu (*.netmodule*). pliki. Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options) i [Użyj MSBuild z wiersza polecenia](/cpp/build/msbuild-visual-cpp) i Użyj zestawu narzędzi Microsoft [C++ z wiersza polecenia](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametry
 
- Na poniższej liście opisano parametry zadania **CL** . Większość parametrów zadań i kilku zestawów parametrów odpowiada opcji wiersza polecenia.
+ Na poniższej liście opisano parametry zadania **CL.** Większość parametrów zadania i kilka zestawów parametrów odpowiada opcji wiersza polecenia.
 
-- **AdditionalIncludeDirectories**
+- **DodatkoweInobserwająKatary**
 
-   Opcjonalny parametr String [].
+   Parametr Opcjonalny ciąg[].
 
-   Dodaje katalog do listy katalogów, które są przeszukiwane w poszukiwaniu plików dołączanych.
+   Dodaje katalog do listy katalogów, które są wyszukiwane pliki dołączania.
 
-   Aby uzyskać więcej informacji, zobacz [/i (Dodatkowe katalogi dołączane)](/cpp/build/reference/i-additional-include-directories).
+   Aby uzyskać więcej informacji, zobacz [/I (Dodatkowe katalogi dołączane)](/cpp/build/reference/i-additional-include-directories).
 
-- **AdditionalOptions**
+- **Dodatkoweopcje**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Lista opcji wiersza polecenia. Na przykład "/\<opcja1 >/\<opcja2 >/\<opcji # >". Użyj tego parametru, aby określić opcje wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania.
+   Lista opcji wiersza polecenia. Na przykład "/\<option1>\</ option2>\</ option#>". Ten parametr służy do określania opcji wiersza polecenia, które nie są reprezentowane przez żaden inny parametr zadania.
 
    Aby uzyskać więcej informacji, zobacz [Opcje kompilatora](/cpp/build/reference/compiler-options).
 
-- **AdditionalUsingDirectories**
+- **DodatkoweUżywanieKatalogi**
 
-   Opcjonalny parametr String [].
+   Parametr Opcjonalny ciąg[].
 
-   Określa katalog, który będzie przeszukiwany przez kompilator w celu rozpoznania odwołań do plików przesłanych do dyrektywy **#using** .
+   Określa katalog, który kompilator będzie przeszukiwać w celu rozpoznawania odwołań do plików przekazanych do **dyrektywy #using.**
 
-   Aby uzyskać więcej informacji, zobacz [/AI (Określ katalogi metadanych)](/cpp/build/reference/ai-specify-metadata-directories).
+   Aby uzyskać więcej informacji, zobacz [/AI (Określ katalogi metadanych).](/cpp/build/reference/ai-specify-metadata-directories)
 
-- **AlwaysAppend**
+- **ZawszePotwierdzaj**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Ciąg, który zawsze jest emitowany w wierszu polecenia. Wartość domyślna to " **/c**".
+   Ciąg, który zawsze jest emitowany w wierszu polecenia. Jego wartością domyślną jest "**/c**".
 
-- **AssemblerListingLocation**
+- **AsembleraListingLokalizacja**
 
-   Tworzy plik listy zawierający kod asemblera.
+   Tworzy plik aukcji, który zawiera kod zestawu.
 
-   Aby uzyskać więcej informacji, zobacz opcja **/Fa** w [/FA,/FA (lista plików)](/cpp/build/reference/fa-fa-listing-file).
+   Aby uzyskać więcej informacji, zobacz **/Fa** opcja w [/FA, /Fa (plik aukcji)](/cpp/build/reference/fa-fa-listing-file).
 
-- **AssemblerOutput**
+- **AkceserOutput**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Tworzy plik listy zawierający kod asemblera.
+   Tworzy plik aukcji, który zawiera kod zestawu.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Nolisting** - *nie\<brak >*
+  - **NoListing** - *\<brak>*
 
-  - **AssemblyCode** -  **/FA**
+  - **Kod zestawu****/FA**  - 
 
-  - **AssemblyAndMachineCode** -  **/FAc**
+  - **AssemblyAndMachineCode** - **/FAc**
 
-  - **AssemblyAndSourceCode** -  **/FAS**
+  - **AssemblyAndSourceCode** - **/FAs**
 
-  - **Wszystkie** -  **/FACS**
+  - **Wszystkie** - **/FAcs**
 
-    Aby uzyskać więcej informacji, zobacz Opcje **/Fa**, **/FAc**, **/FAS**i **/FACS** w [/FA,/FA (lista plików)](/cpp/build/reference/fa-fa-listing-file).
+    Aby uzyskać więcej informacji, zobacz **/FA**, **/FAc**, **/FAs**i **/FAcs** options in [/FA, /Fa (Listing file)](/cpp/build/reference/fa-fa-listing-file).
 
-- **BasicRuntimeChecks**
+- **Podstawowe czeki ścięci**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Włącza i wyłącza funkcję sprawdzania błędów czasu wykonywania w połączeniu z [runtime_checks](/cpp/preprocessor/runtime-checks) pragma.
+   Włącza i wyłącza funkcję sprawdzania błędów w czasie wykonywania w połączeniu z pragmą [runtime_checks.](/cpp/preprocessor/runtime-checks)
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Domyślne** -                           *\<brak >*
+  - **Domyślnie brak** -                          >*\<*
 
-  - **StackFrameRuntimeCheck** -  **/RTCs**
+  - **StackFrameRuntimeCheck** - **/RTC**
 
-  - **UninitializedLocalUsageCheck** -  **/RTCu**
+  - **NiezainicjowanaLokalNalokalna kontrola** - **/RTCu**
 
-  - **EnableFastChecks** -                           **/RTC1**
+  - **EnableFastChecks** -                          **/RTC1**
 
-    Aby uzyskać więcej informacji, zobacz [/RTC (sprawdzanie błędów czasu wykonywania)](/cpp/build/reference/rtc-run-time-error-checks).
+    Aby uzyskać więcej informacji, zobacz [/RTC (Sprawdzanie błędów w czasie wykonywania)](/cpp/build/reference/rtc-run-time-error-checks).
 
-- **BrowseInformation**
-
-   Opcjonalny parametr logiczny.
-
-   Jeśli `true`, program tworzy plik informacji o przeglądaniu.
-
-   Aby uzyskać więcej informacji, zobacz opcja **/fr** w [/fr,/fr (Create. sbr File)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
-
-- **BrowseInformationFile**
-
-   Opcjonalny parametr ciągu.
-
-   Określa nazwę pliku dla pliku informacji o przeglądaniu.
-
-   Aby uzyskać więcej informacji, zobacz **BrowseInformation** parametr w tej tabeli, a także zobacz [/fr,/fr (Create. sbr File)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
-
-- **BufferSecurityCheck**
+- **Przeglądajinformatację**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, program wykryje pewne przepełnienia buforów, które zastępują adres zwrotny, typową technikę wykorzystywania kodu, który nie wymusza ograniczeń rozmiaru buforu.
+   Jeśli `true`, tworzy plik informacji przeglądania.
 
-   Aby uzyskać więcej informacji, zobacz [/GS (sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check).
+   Aby uzyskać więcej informacji, zobacz **/FR** opcja w [/FR, /Fr (Create .sbr file)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
 
-- **BuildingInIDE**
+- **Przeglądajinformacyjny plik**
+
+   Opcjonalny parametr String.
+
+   Określa nazwę pliku informacji przeglądania.
+
+   Aby uzyskać więcej informacji, zobacz parametr **BrowseInformation** w tej tabeli, a także zobacz [/FR, /Fr (Create .sbr file)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
+
+- **Sprawdzanie zabezpieczeń bufora**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, wskazuje, że program **MSBuild** jest wywoływany przez IDE. W przeciwnym razie program **MSBuild** jest wywoływany w wierszu polecenia.
+   Jeśli `true`, wykrywa niektóre przepełnienia buforu, które zastępują adres zwrotny, powszechną techniką wykorzystania kodu, który nie wymusza ograniczeń rozmiaru buforu.
 
-- **CallingConvention**
+   Aby uzyskać więcej informacji, zobacz [/GS (Kontrola zabezpieczeń buforu)](/cpp/build/reference/gs-buffer-security-check).
 
-   Opcjonalny parametr ciągu.
+- **BuildingInIDE (BudynekInIDE)**
 
-   Określa konwencję wywoływania, która określa kolejność, w której argumenty funkcji są wypychane na stosie, niezależnie od tego, czy funkcja wywołująca lub wywoływana funkcja usuwa argumenty ze stosu na końcu wywołania, oraz Konwencję Name-dekorowania nazwy, która Kompilator używa do identyfikowania poszczególnych funkcji.
+   Opcjonalny parametr logiczny.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Jeśli `true`, wskazuje, że **MSBuild** jest wywoływany przez IDE. W przeciwnym razie **MSBuild** jest wywoływany w wierszu polecenia.
 
-  - **Cdecl** -  **/GD**
+- **Callingconvention**
 
-  - **FastCall** -                           **/gr**
+   Opcjonalny parametr String.
 
-  - **StdCall** -                           **/GZ**
+   Określa konwencję wywołującą, która określa kolejność, w jakiej argumenty funkcji są wypychane na stosie, czy funkcja wywołująca lub wywoływana funkcja usuwa argumenty ze stosu na końcu wywołania, oraz konwencję dekorowania nazw, która kompilator używa do identyfikowania poszczególnych funkcji.
 
-    Aby uzyskać więcej informacji, zobacz [/GD,/gr,/GV,/GZ (Konwencja wywoływania)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-- **CompileAs**
+  - **Cdecl** - **/Gd**
 
-   Opcjonalny parametr ciągu.
+  - **FastCall** -                          **/Gr**
 
-   Określa, czy plik wejściowy ma zostać skompilowany jako plik C++ C czy w pliku źródłowym.
+  - **StdCall** -                          **/Gz**
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+    Aby uzyskać więcej informacji, zobacz [/Gd, /Gr, /Gv, /Gz (konwencja wywoływania)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
-  - **Domyślne** -  *\<brak >*
+- **KompilacjeA**
 
-  - **CompileAsC** -  **/TC**
+   Opcjonalny parametr String.
 
-  - **CompileAsCpp** -  **/TP**
+   Określa, czy plik wejściowy ma być kompilowany jako plik źródłowy języka C lub C++.
 
-    Aby uzyskać więcej informacji, zobacz [/TC,/TP,/TC,/TP (Określ typ pliku źródłowego)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
+
+  - **Domyślnie brak** - >*\<*
+
+  - **CompileAsC** - **/TC**
+
+  - **CompileAsCpp** - **/TP**
+
+    Aby uzyskać więcej informacji, zobacz [/Tc, /Tp, /TC, /TP (Określ source file type)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
 
 - **CompileAsManaged**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Umożliwia aplikacjom i składnikom korzystanie z funkcji środowiska uruchomieniowego języka wspólnego (CLR).
+   Umożliwia aplikacjom i składnikom korzystanie z funkcji ze środowiska wykonawczego języka wspólnego (CLR).
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **wartość false** - *nie\<>*
+  - **false** - *none>\<*
 
-  - **prawda** -  **/CLR**
+  - **prawda** - **/clr**
 
-  - **Czysty** -  **/CLR: Pure**
+  - **Czysty** - **/clr:czysty**
 
-  - **Bezpieczny** -  **/CLR: Safe**
+  - **Bezpieczny** - **/clr:bezpieczny**
 
-  - **OldSyntax** -  **/CLR: oldSyntax**
+  - **StarySyntax** - **/clr:oldSyntax**
 
-    Aby uzyskać więcej informacji, zobacz [/CLR (Kompilacja środowiska uruchomieniowego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
+    Aby uzyskać więcej informacji, zobacz [/clr (Kompilacja środowiska wykonawczego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 - **CreateHotpatchableImage**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, nakazuje kompilatorowi przygotowanie obrazu do zastosowania *poprawek na gorąco*. Ten parametr zapewnia, że pierwsza instrukcja każdej funkcji ma dwa bajty, co jest wymagane w przypadku stosowania poprawek na gorąco.
+   Jeśli `true`, informuje kompilator, aby przygotować obraz do *hot patching*. Ten parametr zapewnia, że pierwsza instrukcja każdej funkcji jest dwa bajty, co jest wymagane do hot patching.
 
-   Aby uzyskać więcej informacji, zobacz [/hotpatch (Create możliwy do poprawiania Image)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
+   Aby uzyskać więcej informacji, zobacz [/hotpatch (Tworzenie obrazu hotpatchable)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
 - **DebugInformationFormat**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Wybiera typ informacji o debugowaniu utworzonych dla programu oraz tego, czy te informacje są przechowywane w plikach obiektu ( *. obj*), czy w bazie danych programu (PDB).
+   Wybiera typ informacji debugowania utworzonych dla programu i czy te informacje są przechowywane w plikach obiektu (*.obj*) lub w bazie danych programu (PDB).
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **OldStyle** -  **/Z7**
+  - **OldStyle** - **/Z7**
 
-  - **ProgramDatabase** -  **/Zi**
+  - **ProgramDatabase** - **/Zi**
 
-  - **EditAndContinue** -  **/Zi**
+  - **EditAndKontynuuj** - **/ZI**
 
-    Aby uzyskać więcej informacji, zobacz [/Z7,/Zi,/ZI (format informacji o debugowaniu)](/cpp/build/reference/z7-zi-zi-debug-information-format).
+    Aby uzyskać więcej informacji, zobacz [/Z7, /Zi, /ZI (format informacji debugowania).](/cpp/build/reference/z7-zi-zi-debug-information-format)
 
-- **DisableLanguageExtensions**
+- **DisableLanguageExtensions (Nie wyłączanie języka)**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli **wartość jest równa true**, instruuje kompilator, aby emituje błąd dla konstrukcji językowych, które nie są C++zgodne z ANSI C lub ANSI.
+   Jeśli **true**, informuje kompilator emitować błąd dla konstrukcji języka, które nie są zgodne z ANSI C lub ANSI C ++.
 
-   Aby uzyskać więcej informacji, zobacz opcja **/za** w [/za,/ze (Wyłącz rozszerzenia językowe)](/cpp/build/reference/za-ze-disable-language-extensions).
+   Aby uzyskać więcej informacji, zobacz **/Za** opcja w [/Za, /Ze (Wyłącz rozszerzenia języka)](/cpp/build/reference/za-ze-disable-language-extensions).
 
-- **DisableSpecificWarnings**
+- **DisableSpecificWarnings (Nie wyłączajwarczości)**
 
-   Opcjonalny parametr String [].
+   Parametr Opcjonalny ciąg[].
 
-   Wyłącza numery ostrzeżeń, które są określone na liście rozdzielanej średnikami.
+   Wyłącza numery ostrzeżeń, które są określone na liście rozdzielane średnikami.
 
-   Aby uzyskać więcej informacji, zobacz opcja `/wd` w [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](/cpp/build/reference/compiler-option-warning-level).
+   Aby uzyskać więcej `/wd` informacji, zobacz opcję w [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /wo, /wo, /Wv, /WX (poziom ostrzeżenia).](/cpp/build/reference/compiler-option-warning-level)
 
-- **EnableEnhancedInstructionSet**
+- **Zestaw EnableEnhancedInstruction**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Określa architekturę generowania kodu, który używa instrukcji Streaming SIMD Extensions (SSE) i Streaming SIMD Extensions 2 (SSE2).
+   Określa architekturę generowania kodu, która używa instrukcji rozszerzenia SIMD (SSE) i przesyłania strumieniowego rozszerzeń SIMD 2 (SSE2).
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **StreamingSIMDExtensions** -  **/arch: SSE**
+  - **StreamingSIMDExtensions** - **/arch:SSE**
 
-  - **StreamingSIMDExtensions2** -  **/arch: SSE2**
+  - **StreamingSIMDExtensions2** - **/arch:SSE2**
 
     Aby uzyskać więcej informacji, zobacz [/arch (x86)](/cpp/build/reference/arch-x86).
 
-- **EnableFiberSafeOptimizations**
+- **EnableFiberSafeOptimizations (Ekwolonalizowania)**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, obsługuj bezpieczeństwo włókna danych przydzielone przy użyciu statycznego magazynu wątków lokalnych, czyli danych przydzielone przy użyciu `__declspec(thread)`.
+   Jeśli `true`, obsługa bezpieczeństwa światłowodu dla danych przydzielonych przy użyciu statycznego wątku lokalnego magazynu, czyli dane przydzielone za pomocą . `__declspec(thread)`
 
-   Aby uzyskać więcej informacji, zobacz [/gt (Obsługa bezpiecznego włókna — magazyn lokalny)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).
+   Aby uzyskać więcej informacji, zobacz [/GT (Obsługa pamięci masowej lokalnej z włóknem bezpieczeństwa światłowodowego).](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage)
 
-- **EnablePREfast**
+- **EnablePREfast (Umożliwianie preszystyk**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, Włącz analizę kodu.
+   Jeśli `true`włącz analizę kodu.
 
-   Aby uzyskać więcej informacji, zobacz [/analyze (analiza kodu)](/cpp/build/reference/analyze-code-analysis).
+   Aby uzyskać więcej informacji, zobacz [/analizowanie (analiza kodu)](/cpp/build/reference/analyze-code-analysis).
 
-- **ErrorReporting**
+- **Raportowanie błędów**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Umożliwia dostarczenie informacji o wewnętrznym błędzie kompilatora (lodem) bezpośrednio do firmy Microsoft. Domyślnie ustawienie w obszarze kompilacje IDE jest **monitem** , a ustawienie w kompilacjach w wierszu polecenia jest **kolejką**.
+   Umożliwia podanie informacji o błędzie kompilatora wewnętrznego (ICE) bezpośrednio do firmy Microsoft. Domyślnie ustawieniem w kompilacjach IDE jest **Monit,** a ustawieniem w kompilacjach wiersza polecenia jest **Kolejka**.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Brak** -  **/errorReport: brak**
+  - **Brak** - **/errorReport:none**
 
-  - **Monituj** -  **/errorReport: Prompt**
+  - **Monituj** - **/errorReport:prompt**
 
-  - **Kolejka** -  **/errorReport: Queue**
+  - **Kolejka** - **/errorReport:queue**
 
-  - **Wyślij** -  **/errorReport: Send**
+  - **Wyślij** - **/errorReport:send**
 
-    Aby uzyskać więcej informacji, zobacz [/errorreport (zgłaszaj wewnętrzne błędy kompilatora)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
+    Aby uzyskać więcej informacji, zobacz [/errorReport (Raport błędów kompilatora wewnętrznego)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
 
-- **ExceptionHandling**
+- **Obsługa wyjątków**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
    Określa model obsługi wyjątków, który ma być używany przez kompilator.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **wartość false** - *nie\<>*
+  - **false** - *none>\<*
 
-  - **/EHa** **Async** - 
+  - **Async** - **/EHa**
 
-  - **Synchronizuj** -  **/EHsc**
+  - **Synchronizacja** - **/EHsc**
 
-  - **SyncCThrow** -  **/EHS**
+  - **SyncCThrow** - **/EHs**
 
-    Aby uzyskać więcej informacji, zobacz [/EH (model obsługi wyjątków)](/cpp/build/reference/eh-exception-handling-model).
+    Aby uzyskać więcej informacji, zobacz [/EH (Model obsługi wyjątków)](/cpp/build/reference/eh-exception-handling-model).
 
-- **ExpandAttributedSource**
-
-   Opcjonalny parametr logiczny.
-
-   Jeśli `true`, program tworzy plik listy z rozwiniętymi atrybutami, które zostały dodane do pliku źródłowego.
-
-   Aby uzyskać więcej informacji, zobacz [/FX (Scalanie wstrzykniętego kodu)](/cpp/build/reference/fx-merge-injected-code).
-
-- **FavorSizeOrSpeed**
-
-   Opcjonalny parametr ciągu.
-
-   Określa, czy ma być preferowany rozmiar kodu czy szybkość kodu.
-
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
-
-  - **Nie** -  *\<brak >*
-
-  - **Rozmiar** -  **/OS**
-
-  - **Szybkość** -  **/OT**
-
-    Aby uzyskać więcej informacji, zobacz [/OS,/OT (Preferuj mały kod, Preferuj szybki kod)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
-
-- **FloatingPointExceptions**
+- **ExpandAttributedSource (Zniewaź ze)**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, włącza niezawodny model wyjątku zmiennoprzecinkowego. Wyjątki będą wywoływane natychmiast po ich wyzwoleniu.
+   Jeśli `true`program , tworzy plik aukcji, który ma rozwinięte atrybuty wstrzyknięte do pliku źródłowego.
 
-   Aby uzyskać więcej informacji, zobacz opcję/**FP: except** w [/FP (Określ zachowanie zmiennoprzecinkowe)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Aby uzyskać więcej informacji, zobacz [/Fx (Merge injected code)](/cpp/build/reference/fx-merge-injected-code).
 
-- **FloatingPointModel**
+- **Prędkość faworyzowania**
 
-   Opcjonalny parametr ciągu.
+   Opcjonalny parametr String.
 
-   Ustawia model zmiennoprzecinkowy.
+   Określa, czy rozmiar kodu lub szybkość kodu mają być preferowane.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Precyzyjne** -  **/FP: precyzyjne**
+  - **Ani żadna** - *\<>*
 
-  - **Strict** -  **/FP: Strict**
+  - **Rozmiar** - **/Os**
 
-  - **Szybka** -  **/FP: szybka**
+  - **Prędkość** - **/Ot**
 
-    Aby uzyskać więcej informacji, zobacz [/FP (Określ zachowanie zmiennoprzecinkowe)](/cpp/build/reference/fp-specify-floating-point-behavior).
+    Aby uzyskać więcej informacji, zobacz [/Os, /Ot (Favor small code, favor fast code)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
 
-- **ForceConformanceInForLoopScope**
+- **FloatingPointExceptions (Nieokreślenia floating**
 
    Opcjonalny parametr logiczny.
 
-   Jeśli `true`, implementuje standardowe C++ zachowanie programu [dla](/cpp/cpp/for-statement-cpp) pętli, które używają rozszerzeń Microsoft ([/ze](/cpp/build/reference/za-ze-disable-language-extensions)).
+   Jeśli `true`, włącza niezawodny model wyjątku zmiennoprzecinkowego. Wyjątki zostaną podniesione natychmiast po ich wyzwoleniu.
 
-   Aby uzyskać więcej informacji, zobacz [/Zc: forScope (Wymuszaj zgodność w zakresie pętli for)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).
+   Aby uzyskać więcej informacji, zobacz /**fp:except** opcja w [/fp (Określanie zachowania zmiennoprzecinkowego)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
-- **ForcedIncludeFiles**
+- **FloatingPointModel (Pływający Program Programu**
 
-   Opcjonalny parametr `String[]`.
+   Opcjonalny parametr String.
+
+   Ustawia model zmiennoprzecinowy.
+
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
+
+  - **Precyzja** - **/fp:precyzyjna**
+
+  - **Ścisłe** - **/fp:ścisłe**
+
+  - **Szybko** - **/fp:szybko**
+
+    Aby uzyskać więcej informacji, zobacz [/fp (Określanie zachowania zmiennoprzecinkowego)](/cpp/build/reference/fp-specify-floating-point-behavior).
+
+- **ForceConformanceInForLoopScope (ForceConformanceInForLoopScope)**
+
+   Opcjonalny parametr logiczny.
+
+   Jeśli `true`, implementuje standardowe zachowanie języka C++ w [przypadku](/cpp/cpp/for-statement-cpp) pętli korzystających z rozszerzeń firmy Microsoft ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).
+
+   Aby uzyskać więcej informacji, zobacz [/Zc:forScope (Wymuś zgodność w zakresie pętli)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).
+
+- **Wymuszonewłącza pliki**
+
+   Parametr `String[]` opcjonalny.
 
    Powoduje, że preprocesor przetwarza jeden lub więcej określonych plików nagłówkowych.
 
-   Aby uzyskać więcej informacji, zobacz [/Fi (Nazwij plik z wymuszonym dołączeniem)](/cpp/build/reference/fi-name-forced-include-file).
+   Aby uzyskać więcej informacji, zobacz [/FI (Nazwa wymuszona plik dołączania)](/cpp/build/reference/fi-name-forced-include-file).
 
-- **ForcedUsingFiles**
+- **Wymuszone pouczanie plików**
 
-   Opcjonalny parametr **String []** .
+   Parametr **Opcjonalny ciąg[].**
 
-   Powoduje, że preprocesor przetwarza jeden lub więcej określonych **#using** plików.
+   Powoduje, że preprocesor przetwarzać jeden lub więcej określonych **#using** plików.
 
-   Aby uzyskać więcej informacji, zobacz [/Fu (nazwa pliku wymuszonego #using)](/cpp/build/reference/fu-name-forced-hash-using-file).
+   Aby uzyskać więcej informacji, zobacz [/FU (Nazwa wymuszona #using pliku)](/cpp/build/reference/fu-name-forced-hash-using-file).
 
-- **FunctionLevelLinking**
+- **FunctionLevelLinking (FunkcjaPoziomowanie łączące)**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, umożliwia kompilatorowi pakowanie poszczególnych funkcji w postaci spakowanych funkcji (COMDAT).
+   Jeśli `true`, umożliwia kompilator do pakowania poszczególnych funkcji w postaci funkcji pakietowych (COMDATs).
 
    Aby uzyskać więcej informacji, zobacz [/Gy (Włącz łączenie na poziomie funkcji)](/cpp/build/reference/gy-enable-function-level-linking).
 
-- **GenerateXMLDocumentationFiles**
+- **Generowanie plików dodokumentacji XML**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, powoduje, że kompilator przetwarza komentarze dokumentacji w plikach kodu źródłowego i tworzy plik *. xdc* dla każdego pliku kodu źródłowego, który zawiera komentarze dokumentacji.
+   Jeśli `true`program Kompilator powoduje, że kompilator przetwarza komentarze dokumentacji w plikach kodu źródłowego i tworzy plik *xdc* dla każdego pliku kodu źródłowego zawierającego komentarze do dokumentacji.
 
-   Aby uzyskać więcej informacji, zobacz [/doc (Przetwarzaj komentarze dokumentacji) (C++C/)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Zobacz również parametr **XMLDocumentationFileName** w tej tabeli.
+   Aby uzyskać więcej informacji, zobacz [/doc (Komentarze do dokumentacji procesu) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Zobacz także **parametr XMLDocumentationFileName** w tej tabeli.
 
 - **IgnoreStandardIncludePath**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   W przypadku `true`, uniemożliwia kompilatorowi wyszukiwanie plików dołączanych w katalogach określonych w ścieżce i zawiera zmienne środowiskowe.
+   Jeśli `true`program ,uniemożliwia kompilatorowi wyszukiwanie plików dołączanych w katalogach określonych w zmiennych środowiskowych PATH i INCLUDE.
 
-   Aby uzyskać więcej informacji, zobacz [/x (Ignoruj standardowe ścieżki dołączanych plików)](/cpp/build/reference/x-ignore-standard-include-paths).
+   Aby uzyskać więcej informacji, zobacz [/X (Ignoruj standardowe ścieżki dołączania)](/cpp/build/reference/x-ignore-standard-include-paths).
 
-- **InlineFunctionExpansion**
+- **InlineFunctionRozwińRozwiń**
 
-   Opcjonalny parametr **ciągu** .
+   Opcjonalny parametr **String.**
 
-   Określa poziom rozwinięcia funkcji wbudowanej dla kompilacji.
+   Określa poziom rozszerzenia funkcji wbudowanych dla kompilacji.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Domyślne** -  *\<brak >*
+  - **Domyślnie brak** - >*\<*
 
-  - **Wyłączone** -  **/Ob0**
+  - **Wyłączone** - **/Ob0**
 
-  - **OnlyExplicitInline** -  **/OB1**
+  - **TylkoExplicitInline** - **/Ob1**
 
-  - **AnySuitable** -  **/Ob2**
+  - **AnySuitable** - **/Ob2**
 
-    Aby uzyskać więcej informacji, zobacz [/ob (rozszerzenie funkcji wbudowanej)](/cpp/build/reference/ob-inline-function-expansion).
+    Aby uzyskać więcej informacji, zobacz [/Ob (Rozszerzenie funkcji wbudowanej)](/cpp/build/reference/ob-inline-function-expansion).
 
-- **IntrinsicFunctions**
+- **Wewnętrzne funkcje**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, zastępuje pewne wywołania funkcji z wewnętrzną lub inną specjalną formą funkcji, która ułatwia działanie aplikacji.
+   Jeśli `true`, zastępuje niektóre wywołania funkcji z wewnętrznych lub w inny sposób specjalnych form funkcji, które pomagają aplikacji działać szybciej.
 
-   Aby uzyskać więcej informacji, zobacz [/Oi (Generuj funkcje wewnętrzne)](/cpp/build/reference/oi-generate-intrinsic-functions).
+   Aby uzyskać więcej informacji, zobacz [/Oi (Generowanie funkcji wewnętrznych)](/cpp/build/reference/oi-generate-intrinsic-functions).
 
 - **MinimalRebuild**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, umożliwia minimalną ponowną kompilację C++ , która określa, czy C++ pliki źródłowe, które zawierają zmienione definicje klas (przechowywane w plikach nagłówkowych (. h)), muszą być ponownie skompilowane.
+   Jeśli `true`, umożliwia minimalne przebudowy, która określa, czy pliki źródłowe języka C++, które zawierają zmienione definicje klas C++ (przechowywane w plikach nagłówka (.h) muszą być ponownie skompilowane.
 
-   Aby uzyskać więcej informacji, zobacz [/GM (Włącz minimalną](/cpp/build/reference/gm-enable-minimal-rebuild)ponowną kompilację).
+   Aby uzyskać więcej informacji, zobacz [/Gm (Włącz minimalne przebudowy)](/cpp/build/reference/gm-enable-minimal-rebuild).
 
-- **MultiProcessorCompilation**
+- **Kompilacja wieloprocesorów**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, Użyj wielu procesorów do skompilowania. Ten parametr tworzy proces dla każdego efektywnego procesora na komputerze.
+   Jeśli `true`do kompilacji użyj wielu procesorów. Ten parametr tworzy proces dla każdego skutecznego procesora na komputerze.
 
-   Aby uzyskać więcej informacji, zobacz [/MP (kompilacja z wieloma procesami)](/cpp/build/reference/mp-build-with-multiple-processes). Zobacz również parametr **ProcessorNumber** w tej tabeli.
+   Aby uzyskać więcej informacji, zobacz [/MP (Kompilacja z wieloma procesami)](/cpp/build/reference/mp-build-with-multiple-processes). Zobacz też **ProcessorNumber** parametr w tej tabeli.
 
-- **ObjectFileName**
+- **Nazwa pliku objectfile**
 
-   Opcjonalny parametr **ciągu** .
+   Opcjonalny parametr **String.**
 
-   Określa nazwę lub katalog pliku obiektu (. obj), który ma być używany zamiast domyślnego.
+   Określa nazwę pliku lub katalog obiektu (obj), który ma być używany zamiast domyślnego.
 
-   Aby uzyskać więcej informacji, zobacz [/FO (nazwa pliku obiektu)](/cpp/build/reference/fo-object-file-name).
+   Aby uzyskać więcej informacji, zobacz [/Fo (nazwa pliku obiektu)](/cpp/build/reference/fo-object-file-name).
 
-- **ObjectFiles**
+- **Pliki obiektów**
 
-   Opcjonalny parametr **String []** .
+   Parametr **Opcjonalny ciąg[].**
 
    Lista plików obiektów.
 
-- **OmitDefaultLibName**
+- **Nazwa OmitDefaultLibName**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, pomija domyślną nazwę biblioteki wykonawczej C z pliku obiektu ( *. obj*). Domyślnie kompilator umieszcza nazwę biblioteki w pliku *. obj* , aby skierować konsolidator do odpowiedniej biblioteki.
+   Jeśli `true`, pomija domyślną nazwę biblioteki wykonywania C z pliku obiektu (*.obj*). Domyślnie kompilator umieszcza nazwę biblioteki w pliku *obj,* aby skierować konsolidator do właściwej biblioteki.
 
-   Aby uzyskać więcej informacji, zobacz [/zl (Pomiń domyślną nazwę biblioteki)](/cpp/build/reference/zl-omit-default-library-name).
+   Aby uzyskać więcej informacji, zobacz [/Zl (Pomiń domyślną nazwę biblioteki).](/cpp/build/reference/zl-omit-default-library-name)
 
-- **OmitFramePointers**
+- **OmitFramePointers (OmitFramePointers)**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, pomija tworzenie wskaźników ramek na stosie wywołań.
+   Jeśli `true`program ,pomija tworzenie wskaźników ramki na stosie wywołań.
 
-   Aby uzyskać więcej informacji, zobacz [/Oy (pominięcie wskaźnika ramki)](/cpp/build/reference/oy-frame-pointer-omission).
+   Aby uzyskać więcej informacji, zobacz [/Oy (Pominięcie wskaźnika klatki)](/cpp/build/reference/oy-frame-pointer-omission).
 
 - **OpenMPSupport**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, powoduje, że kompilator przetwarza klauzule OpenMP i dyrektywy.
+   Jeśli `true`, powoduje kompilator do przetwarzania klauzul OpenMP i dyrektyw.
 
-   Aby uzyskać więcej informacji, zobacz [/OpenMP (Włączanie obsługi openmp 2,0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).
+   Aby uzyskać więcej informacji, zobacz [/openmp (Enable OpenMP 2.0 support)](/cpp/build/reference/openmp-enable-openmp-2-0-support).
 
-- **Optymalizacja**
+- **Optymalizacji**
 
-   Opcjonalny parametr **ciągu** .
+   Opcjonalny parametr **String.**
 
    Określa różne optymalizacje kodu dla szybkości i rozmiaru.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Wyłączone** -  **/od**
+  - **Wyłączone** - **/Od**
 
-  - **MinSpace** -  **/O1**
+  - **MinSpace** - **/O1**
 
-  - **MaxSpeed** -  **/O2**
+  - **MaxSpeed** - **/O2**
 
-  - **Pełny** -  **/OX**
+  - **Pełna** - **/Wół**
 
-    Aby uzyskać więcej informacji, zobacz [/O opcje (Optymalizuj kod)](/cpp/build/reference/o-options-optimize-code).
+    Aby uzyskać więcej informacji, zobacz [/O Options (Optimize code)](/cpp/build/reference/o-options-optimize-code).
 
-- **PrecompiledHeader**
+- **Wstępnie skompilowanyheader**
 
-   Opcjonalny parametr **ciągu** .
+   Opcjonalny parametr **String.**
 
-   Podczas kompilowania Utwórz lub użyj prekompilowanego pliku nagłówkowego ( *. PCH*).
+   Utwórz lub użyj wstępnie skompilowanego pliku nagłówka (*pch*) podczas kompilacji.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **NotUsing** -  *\<brak >*
+  - **NotUj** - *\<brak>*
 
-  - **Utwórz** -  **/YC**
+  - **Tworzenie** - **/Yc**
 
-  - **Użyj** -  **/Yu**
+  - **Użyj** - **/Yu**
 
-    Aby uzyskać więcej informacji, zobacz [/YC (Create prekompilowany plik nagłówkowy)](/cpp/build/reference/yc-create-precompiled-header-file) i [/Yu (Użyj prekompilowanego pliku nagłówkowego)](/cpp/build/reference/yu-use-precompiled-header-file). Zobacz również parametry **PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** w tej tabeli.
+    Aby uzyskać więcej informacji, zobacz [/Yc (Tworzenie wstępnie skompilowanego pliku nagłówka)](/cpp/build/reference/yc-create-precompiled-header-file) i [/Yu (Użyj wstępnie skompilowanego pliku nagłówka)](/cpp/build/reference/yu-use-precompiled-header-file). Zobacz także **parametry PrecompiledHeaderFile** i **PrecompiledHeaderOutputFile** w tej tabeli.
 
-- **PrecompiledHeaderFile**
+- **Wstępnie skompilowany plikheader**
 
-   Opcjonalny parametr **ciągu** .
+   Opcjonalny parametr **String.**
 
-   Określa nazwę prekompilowanego pliku nagłówkowego do utworzenia lub użycia.
+   Określa wstępnie skompilowany plik nagłówka do utworzenia lub użycia.
 
-   Aby uzyskać więcej informacji, zobacz [/YC (Create prekompilowany plik nagłówkowy)](/cpp/build/reference/yc-create-precompiled-header-file) i [/Yu (Użyj prekompilowanego pliku nagłówkowego)](/cpp/build/reference/yu-use-precompiled-header-file).
+   Aby uzyskać więcej informacji, zobacz [/Yc (Tworzenie wstępnie skompilowanego pliku nagłówka)](/cpp/build/reference/yc-create-precompiled-header-file) i [/Yu (Użyj wstępnie skompilowanego pliku nagłówka)](/cpp/build/reference/yu-use-precompiled-header-file).
 
-- **PrecompiledHeaderOutputFile**
+- **Wstępnie skompilowany plik nagłówków**
 
-   Opcjonalny parametr **ciągu** .
+   Opcjonalny parametr **String.**
 
-   Określa nazwę ścieżki prekompilowanego nagłówka zamiast używania domyślnej nazwy ścieżki.
+   Określa nazwę ścieżki dla wstępnie skompilowanego nagłówka zamiast domyślnej nazwy ścieżki.
 
-   Aby uzyskać więcej informacji, zobacz [/FP (nazwa pliku. pch)](/cpp/build/reference/fp-name-dot-pch-file).
+   Aby uzyskać więcej informacji, zobacz [/Fp (Nazwa pliku pch)](/cpp/build/reference/fp-name-dot-pch-file).
 
-- **PreprocessKeepComments**
+- **PreprocessKeepComments (Przetwarzanie wstępne)**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, zachowuje komentarze podczas przetwarzania wstępnego.
+   Jeśli `true`, zachowuje komentarze podczas wstępnego przetwarzania.
 
-   Aby uzyskać więcej informacji, zobacz [/c (Zachowaj komentarze podczas przetwarzania wstępnego)](/cpp/build/reference/c-preserve-comments-during-preprocessing).
+   Aby uzyskać więcej informacji, zobacz [/C (Zachowywanie komentarzy podczas wstępnego przetwarzania)](/cpp/build/reference/c-preserve-comments-during-preprocessing).
 
-- **PreprocessorDefinitions**
+- **Definicje przedtwarze**
 
-   Opcjonalny parametr `String[]`.
+   Parametr `String[]` opcjonalny.
 
    Definiuje symbol przetwarzania wstępnego dla pliku źródłowego.
 
-   Aby uzyskać więcej informacji, zobacz [/d (Definicje preprocesora)](/cpp/build/reference/d-preprocessor-definitions).
+   Aby uzyskać więcej informacji, zobacz [/D (Definicje preprocesora)](/cpp/build/reference/d-preprocessor-definitions).
 
-- **PreprocessOutput**
+- **Przetwory wstępneOutput**
 
-   Opcjonalny parametr `ITaskItem[]`.
+   Parametr `ITaskItem[]` opcjonalny.
 
    Definiuje tablicę elementów wyjściowych preprocesora, które mogą być używane i emitowane przez zadania.
 
-- **PreprocessOutputPath**
+- **Ścieżka wstępnaOutputPath**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
    Określa nazwę pliku wyjściowego, do którego parametr **PreprocessToFile** zapisuje wstępnie przetworzone dane wyjściowe.
 
-   Aby uzyskać więcej informacji, zobacz [/Fi (Przetwarzaj wstępnie nazwę pliku wyjściowego)](/cpp/build/reference/fi-preprocess-output-file-name).
+   Aby uzyskać więcej informacji, zobacz [/Fi (Nazwa pliku wyjściowego przetwarzania wstępnego).](/cpp/build/reference/fi-preprocess-output-file-name)
 
-- **PreprocessSuppressLineNumbers**
+- **Numery wstępneSuppressLineNumbers**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   W przypadku `true`program wstępnie przetwarza pliki C C++ i Source oraz kopiuje wstępnie przetworzone pliki na standardowe urządzenie wyjściowe.
+   Jeśli `true`program przetworzy pliki źródłowe języka C i C++ i skopiuje wstępnie przetworzone pliki do standardowego urządzenia wyjściowego.
 
-   Aby uzyskać więcej informacji, zobacz [/EP (wstępnie przetwórz do stdout bez dyrektyw #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
+   Aby uzyskać więcej informacji, zobacz [/EP (Preprocess do stdout bez dyrektyw #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
 
-- **PreprocessToFile**
+- **Plik wstępny**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   W przypadku `true`program wstępnie przetwarza pliki C C++ i Source oraz zapisuje wstępnie przetworzone dane wyjściowe do pliku.
+   Jeśli `true`, wstępnie przetworzy pliki źródłowe C i C++ i zapisuje wstępnie przetworzone dane wyjściowe do pliku.
 
-   Aby uzyskać więcej informacji, zobacz [/p (Przetwarzaj wstępnie do pliku)](/cpp/build/reference/p-preprocess-to-a-file).
+   Aby uzyskać więcej informacji, zobacz [/P (Preprocess do pliku)](/cpp/build/reference/p-preprocess-to-a-file).
 
-- **ProcessorNumber**
+- **Numer procesora**
 
-   Opcjonalny parametr `Integer`.
+   Parametr `Integer` opcjonalny.
 
-   Określa maksymalną liczbę procesorów do użycia w kompilacji wieloprocesorowej. Tego parametru należy używać w połączeniu z parametrem **MultiProcessorCompilation** .
+   Określa maksymalną liczbę procesorów do użycia w kompilacji wieloprocesorowej. Tego parametru należy używać w połączeniu z parametrem **MultiProcessorCompilation.**
 
-- **ProgramDataBaseFileName**
+- **Nazwa pliku programuDataBaseFile**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
    Określa nazwę pliku bazy danych programu (PDB).
 
-   Aby uzyskać więcej informacji, zobacz [/FD (nazwa pliku bazy danych programu)](/cpp/build/reference/fd-program-database-file-name).
+   Aby uzyskać więcej informacji, zobacz [/Fd (Nazwa pliku bazy danych programu).](/cpp/build/reference/fd-program-database-file-name)
 
-- **RuntimeLibrary**
+- **Biblioteka uruchomieniowa**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
-   Wskazuje, czy moduł wielowątkowy jest biblioteką DLL, i wybiera wersje detaliczne lub debugowania biblioteki wykonawczej.
+   Wskazuje, czy moduł wielowątkowy jest biblioteką DLL i wybiera wersje detaliczne lub debugowania biblioteki wyłowionej.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Wielowątkowe** -  **/MT**
+  - **Wielowątkowe** - **/MT**
 
-  - **MultiThreadedDebug** -  **/MTD**
+  - **WielowątkoweDebug** - **/MTd**
 
-  - **MultiThreadedDLL** -  **/MD**
+  - **MultiThreadedDLL** - **/MD**
 
-  - **MultiThreadedDebugDLL** -  **/MDD**
+  - **MultiThreadedDebugDLL** - **/MDd**
 
-    Aby uzyskać więcej informacji, zobacz [/MD,/MT,/LD (Korzystanie z biblioteki wykonawczej)](/cpp/build/reference/md-mt-ld-use-run-time-library).
+    Aby uzyskać więcej informacji, zobacz [/MD, /MT, /LD (Użyj biblioteki czasu wykonywania)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
-- **RuntimeTypeInfo**
+- **Środowisko wykonawczeTypeInfo**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, program dodaje kod do C++ sprawdzania typów obiektów w czasie wykonywania (informacje o typie czasu wykonywania).
+   Jeśli `true`, dodaje kod, aby sprawdzić typy obiektów C++ w czasie wykonywania (informacje o typie czasu wykonywania).
 
-   Aby uzyskać więcej informacji, zobacz [/gr (Włącz informacje typu run-time)](/cpp/build/reference/gr-enable-run-time-type-information).
+   Aby uzyskać więcej informacji, zobacz [/GR (Włącz informacje o typie czasu wykonywania)](/cpp/build/reference/gr-enable-run-time-type-information).
 
-- **ShowIncludes**
+- **ShowIncludes (w tym)**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, powoduje, że kompilator wyprowadza listę plików dołączanych.
+   Jeśli `true`, powoduje, że kompilator do wysuń listę plików dołączanych.
 
-   Aby uzyskać więcej informacji, zobacz [/showIncludes (lista plików dołączanych)](/cpp/build/reference/showincludes-list-include-files).
+   Aby uzyskać więcej informacji, zobacz [/showIncludes (Lista plików dołącza)](/cpp/build/reference/showincludes-list-include-files).
 
-- **SmallerTypeCheck**
+- **Mniejszy TypCheck**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, program zgłosi błąd czasu wykonywania, jeśli wartość zostanie przypisana do mniejszego typu danych i spowoduje utratę danych.
+   Jeśli `true`raportuje błąd czasu wykonywania, jeśli wartość jest przypisana do mniejszego typu danych i powoduje utratę danych.
 
-   Aby uzyskać więcej informacji, zobacz **/RTCc** Option in [/RTC (sprawdzanie błędów czasu wykonywania)](/cpp/build/reference/rtc-run-time-error-checks).
+   Aby uzyskać więcej informacji, zobacz **/RTCc** opcja w [/RTC (Sprawdzanie błędów czasu wykonywania)](/cpp/build/reference/rtc-run-time-error-checks).
 
 - **Źródeł**
 
-   Wymagany `ITaskItem[]` parametr.
+   Wymagany parametr interfejsu `ITaskItem[]`.
 
-   Określa listę plików źródłowych rozdzielonych spacjami.
+   Określa listę plików źródłowych oddzielonych spacjami.
 
-- **StringPooling**
+- **Buforowanie ciągów**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, umożliwia kompilatorowi utworzenie jednej kopii identycznych ciągów w obrazie programu.
+   Jeśli `true`, umożliwia kompilatorowi utworzyć jedną kopię identycznych ciągów w obrazie programu.
 
-   Aby uzyskać więcej informacji, zobacz [/GF (eliminowanie ciągów zduplikowanych)](/cpp/build/reference/gf-eliminate-duplicate-strings).
+   Aby uzyskać więcej informacji, zobacz [/GF (Wyeliminuj zduplikowane ciągi)](/cpp/build/reference/gf-eliminate-duplicate-strings).
 
-- **StructMemberAlignment**
+- **Wyrównanie członków struct**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
    Określa wyrównanie bajtów dla wszystkich elementów członkowskich w strukturze.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **Domyślne** -  **/ZP1**
+  - **Domyślnie** - **/Zp1**
 
-  - **1Byte** -  **/ZP1**
+  - **1Djówka** - **/Zp1**
 
-  - **2Bytes** -  **/Zp2**
+  - **2Dejbyty** - **/Zp2**
 
-  - **4Bytes** -  **/Zp4**
+  - **4Bajty** - **/Zp4**
 
-  - **8Bytes** -  **/ZP8**
+  - **8Bajty** - **/Zp8**
 
-  - **16Bytes** -  **/Zp16**
+  - **16 Bajtów** - **/Zp16**
 
-    Aby uzyskać więcej informacji, zobacz [/ZP (wyrównanie składowej struktury)](/cpp/build/reference/zp-struct-member-alignment).
+    Aby uzyskać więcej informacji, zobacz [/Zp (Wyrównanie elementu członkowskiego struktury)](/cpp/build/reference/zp-struct-member-alignment).
 
-- **SuppressStartupBanner**
+- **SuppressStartupBanner (SuppressStartupBanner)**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, program zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji, gdy zadanie zostanie uruchomione.
+   Jeśli `true`program Zapobiega wyświetlaniu komunikatu o prawach autorskich i numerze wersji po uruchomieniu zadania.
 
-   Aby uzyskać więcej informacji, zobacz [/nologo (Pomijaj transparent startowy)C++(C/)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).
+   Aby uzyskać więcej informacji, zobacz [/nologo (Pomijanie banera startowego) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).
 
-- **Katalog trackerlogdirectory**
+- **TrackerLogDirectory (TrackerLogDirectory)**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
    Określa katalog pośredni, w którym są przechowywane dzienniki śledzenia dla tego zadania.
 
-   Aby uzyskać więcej informacji, zobacz parametry **TLogReadFiles** i **TLogWriteFiles** w tej tabeli.
+   Aby uzyskać więcej informacji, zobacz **TLogReadFiles** i **TLogWriteFiles** parametry w tej tabeli.
 
 - **TreatSpecificWarningsAsErrors**
 
-   Opcjonalny parametr **String []** .
+   Parametr **Opcjonalny ciąg[].**
 
    Traktuje określoną listę ostrzeżeń kompilatora jako błędy.
 
-   Aby uzyskać więcej informacji, zobacz opcja **/we**`n` w elemencie [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżenia)](/cpp/build/reference/compiler-option-warning-level).
+   Aby uzyskać więcej informacji, zobacz **/we** `n` option in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Poziom ostrzeżenia)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWarningAsError**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, Traktuj wszystkie ostrzeżenia kompilatora jako błędy.
+   Jeśli `true`, traktować wszystkie ostrzeżenia kompilatora jako błędy.
 
-   Aby uzyskać więcej informacji, zobacz **/WX** Option in [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](/cpp/build/reference/compiler-option-warning-level).
+   Aby uzyskać więcej informacji, zobacz **/WX** option in [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Poziom ostrzeżenia)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWChar_tAsBuiltInType**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, Traktuj typ `wchar_t` jako typ natywny.
+   Jeśli `true`, `wchar_t` potraktuj typ jako typ macierzysty.
 
-   Aby uzyskać więcej informacji, zobacz [/Zc: wchar_t (wchar_t jest typem natywnym)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).
+   Aby uzyskać więcej informacji, zobacz [/Zc:wchar_t (wchar_t jest typem macierzystym)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).
 
 - **UndefineAllPreprocessorDefinitions**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, oddefiniują symbole specyficzne dla firmy Microsoft, które definiuje kompilator.
+   Jeśli `true`, undefines specyficzne dla firmy Microsoft symbole, które kompilator definiuje.
 
-   Aby uzyskać więcej informacji, zobacz **/u** opcji w [/u,/u (Usuń definicje symboli)](/cpp/build/reference/u-u-undefine-symbols).
+   Aby uzyskać więcej informacji, zobacz **/u** opcja w [/U, /u (Symbole Undefine)](/cpp/build/reference/u-u-undefine-symbols).
 
-- **UndefinePreprocessorDefinitions**
+- **DefinePreprocessorDefinitions**
 
-   Opcjonalny parametr `String[]`.
+   Parametr `String[]` opcjonalny.
 
-   Określa listę co najmniej jednego symbolu preprocesora do usunięcia.
+   Określa listę jednego lub więcej symboli preprocesora do nieobrony.
 
-   Aby uzyskać więcej informacji, zobacz **/u** opcji w [/u,/u (Usuń definicje symboli)](/cpp/build/reference/u-u-undefine-symbols).
+   Aby uzyskać więcej informacji, zobacz **/U** option in [/U, /u (Undefine symbols)](/cpp/build/reference/u-u-undefine-symbols).
 
-- **UseFullPaths**
+- **Ścieżki UseFullPaths**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, wyświetla pełną ścieżkę do plików kodu źródłowego przekazaną do kompilatora w diagnostyce.
+   Jeśli `true`, wyświetla pełną ścieżkę plików kodu źródłowego przekazanych do kompilatora w diagnostyce.
 
    Aby uzyskać więcej informacji, zobacz [/FC (Pełna ścieżka pliku kodu źródłowego w diagnostyce)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).
 
-- **UseUnicodeForAssemblerListing**
+- **UseUnicodeForAssemblerNaświetlanie**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, powoduje utworzenie pliku wyjściowego w formacie UTF-8.
+   Jeśli `true`plik wyjściowy powoduje utworzenie pliku wyjściowego w formacie UTF-8.
 
-   Aby uzyskać więcej informacji, zobacz opcja **/FAU** w [/FA,/FA (lista plików)](/cpp/build/reference/fa-fa-listing-file).
+   Aby uzyskać więcej informacji, zobacz **/FAu** opcja w [/FA, /Fa (plik aukcji)](/cpp/build/reference/fa-fa-listing-file).
 
-- **WarningLevel**
+- **Warninglevel**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
-   Określa najwyższy poziom ostrzeżeń, który ma zostać wygenerowany przez kompilator.
+   Określa najwyższy poziom ostrzeżenia, który ma być generowany przez kompilator.
 
-   Określ jedną z następujących wartości, z których każdy odpowiada opcji wiersza polecenia.
+   Określ jedną z następujących wartości, z których każda odpowiada opcji wiersza polecenia.
 
-  - **TurnOffAllWarnings** -  **/W0**
+  - **TurnOffAllWarnings** - **/W0**
 
-  - **Level1** -  **/W1**
+  - **Poziom1** - **/W1**
 
-  - **Level2** -  **/W2**
+  - **Poziom 2** - **/W2**
 
-  - **Level3** -  **/W3**
+  - **Poziom 3** - **/W3**
 
-  - **Level4** -  **/W4**
+  - **Poziom4** - **/W4**
 
-  - **Włącz wszystkie ostrzeżenia** -  **/Wall**
+  - **EnableAllWarnings** - **/Ściana**
 
-    Aby uzyskać więcej informacji, zobacz sekcję **/w**_n_ w opcjach [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/wo,/WV,/WX (poziom ostrzeżeń)](/cpp/build/reference/compiler-option-warning-level).
+    Aby uzyskać więcej informacji, zobacz **/W**_n_ opcja w [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /wo, /wo, /Wv, /WX (poziom ostrzeżenia).](/cpp/build/reference/compiler-option-warning-level)
 
-- **WholeProgramOptimization**
+- **Cała aoptymalizacja programu**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, włącza optymalizację całego programu.
+   Jeśli `true`, umożliwia optymalizację całego programu.
 
    Aby uzyskać więcej informacji, zobacz [/GL (Optymalizacja całego programu)](/cpp/build/reference/gl-whole-program-optimization).
 
 - **XMLDocumentationFileName**
 
-   Opcjonalny parametr `String`.
+   Parametr `String` opcjonalny.
 
-   Określa nazwę wygenerowanego pliku dokumentacji XML. Ten parametr może być nazwą pliku lub katalogu.
+   Określa nazwę wygenerowanych plików dokumentacji XML. Ten parametr może być nazwą pliku lub katalogu.
 
-   Aby uzyskać więcej informacji, zobacz argument `name` w [/doc (Przetwarzaj komentarze dokumentacji) (CC++/)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Zobacz również parametr **GenerateXMLDocumentationFiles** w tej tabeli.
+   Aby uzyskać więcej `name` informacji, zobacz argument w [/doc (Komentarze dokumentacji procesu) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Zobacz też **GenerateXMLDocumentationFiles** parametr w tej tabeli.
 
 - **MinimalRebuildFromTracking**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
-   Jeśli `true`, wykonywana jest śledzona kompilacja przyrostowa; Jeśli `false`, wykonywana jest ponowna kompilacja.
+   Jeśli `true`zostanie wykonana śledzona kompilacja przyrostowa; jeśli `false`zostanie przeprowadzona przebudowa.
 
 - **TLogReadFiles**
 
-   Opcjonalny parametr `ITaskItem[]`.
+   Parametr `ITaskItem[]` opcjonalny.
 
-   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików odczytywane*.
+   Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików odczytu*.
 
-   Dziennik śledzenia plików ( *. tlog*) zawiera nazwy plików wejściowych, które są odczytywane przez zadanie i są używane przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.
+   Dziennik śledzenia plików odczytu (*.tlog*) zawiera nazwy plików wejściowych, które są odczytywane przez zadanie i jest używany przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz **Parametry TrackerLogDirectory** i **TrackFileAccess** w tej tabeli.
 
-- **TLogWriteFiles**
+- **TLogWriteFiles (Pliki TLogWriteFiles)**
 
-   Opcjonalny parametr `ITaskItem[]`.
+   Parametr `ITaskItem[]` opcjonalny.
 
    Określa tablicę elementów, które reprezentują *dzienniki śledzenia plików zapisu*.
 
-   Dziennik śledzenia plików zapisu ( *. tlog*) zawiera nazwy plików wyjściowych, które są zapisywane przez zadanie, i jest używany przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz parametry **katalog trackerlogdirectory** i **TrackFileAccess** w tej tabeli.
+   Dziennik śledzenia plików zapisu (*.tlog*) zawiera nazwy plików wyjściowych, które są zapisywane przez zadanie i jest używany przez system kompilacji projektu do obsługi kompilacji przyrostowych. Aby uzyskać więcej informacji, zobacz **Parametry TrackerLogDirectory** i **TrackFileAccess** w tej tabeli.
 
-- **TrackFileAccess**
+- **TrackFileAccess (Plik utworu)**
 
-   Opcjonalny parametr `Boolean`.
+   Parametr `Boolean` opcjonalny.
 
    Jeśli `true`, śledzi wzorce dostępu do plików.
 
-   Aby uzyskać więcej informacji, zobacz parametry **TLogReadFiles** i **TLogWriteFiles** w tej tabeli.
+   Aby uzyskać więcej informacji, zobacz **TLogReadFiles** i **TLogWriteFiles** parametry w tej tabeli.
 
 ## <a name="see-also"></a>Zobacz też
 

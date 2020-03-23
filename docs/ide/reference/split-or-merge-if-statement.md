@@ -1,59 +1,62 @@
 ---
 title: Dzielenie i scalanie instrukcji if
-ms.date: 06/12/2019
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 405ccd4bc0197ce06aa14982a16dc02f6d13a537
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160721"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093672"
 ---
 # <a name="split-or-merge-if-statements"></a>Dzielenie i scalanie instrukcji if
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
-**Co:** **Co:** Dzielenie i scalanie [Jeśli](/dotnet/csharp/language-reference/keywords/if-else) instrukcji.
+- Visual Basic
 
-**Kiedy:** Chcesz podzielić `if` instrukcję, która używa `&&` lub `||` operatorów w zagnieżdżonych `if` instrukcji lub scalania `if` instrukcji z zewnętrznym `if` instrukcji.
+**Co: Co:** **What:** Podziel lub scal [jeśli](/dotnet/csharp/language-reference/keywords/if-else) instrukcje.
 
-**Dlaczego:** Jest kwestią preferencji stylu.  
+**Kiedy:** Chcesz `if` podzielić instrukcję, która `&&` używa `||` lub operatorów `if` do instrukcji `if` zagnieżdżonej lub scalić instrukcję z zewnętrznej `if` instrukcji.
 
-## <a name="how-to"></a>Instrukcje
+**Dlaczego?** To kwestia preferencji stylu.  
 
-Jeśli chcesz podzielić `if` instrukcji:
+## <a name="how-to"></a>Porady
 
-1. Umieść kursor w `if` oświadczenie `&&` lub `||` operatora.
+Jeśli chcesz podzielić `if` instrukcję:
 
-2. Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+1. Umieść kursor w `if` instrukcji przez `&&` `||` lub operatora.
 
-    ![Podziel If — instrukcja](../media/split-if-statement.png)
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
 
-3. Wybierz **podzielić zagnieżdżonymi instrukcji**.
+    ![Instrukcja Podziel if](../media/split-if-statement.png)
 
-    ![Jeśli dzielenie pełną instrukcję](../media/split-if-statement-complete.png)
+3. Wybierz **opcję Podziel na zagnieżdżone, jeśli instrukcje**.
 
-Jeśli chcesz scalić wewnętrzny `if` instrukcję, określając zewnętrzny `if` instrukcji: 
+    ![Instrukcja Podziel, jeśli została ukończona](../media/split-if-statement-complete.png)
 
-1. Umieść kursor w wewnętrzny `if` — słowo kluczowe.
+Jeśli chcesz scalić `if` wewnętrzną `if` instrukcję z instrukcją zewnętrzną: 
 
-2. Naciśnij klawisz **Ctrl**+ **.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+1. Umieść kursor w wewnętrznym `if` słowie kluczowym.
+
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
 
     ![Scal, jeśli instrukcja](../media/merge-if-statement.png)
 
-3. Wybierz **łączyć się z zewnętrznym, jeśli instrukcja**.
+3. Wybierz **pozycję Scal z zewnętrzną instrukcją if**.
 
-    ![Scal, jeśli instrukcja ukończone](../media/merge-if-statement-complete.png)
+    ![Scal, jeśli instrukcja została ukończona](../media/merge-if-statement-complete.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

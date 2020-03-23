@@ -1,5 +1,5 @@
 ---
-title: Ustawienia przebiegu testu obciążenia z wiersza polecenia
+title: Ustawianie ustawień przebiegu testu obciążenia z wiersza polecenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,33 +10,33 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588996"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Porady: Wybierz ustawienie, aby korzystać z wiersza polecenia do uruchomienia testu obciążenia
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Jak: Wybierz ustawienie przebiegu testu obciążenia, którego chcesz użyć z wiersza polecenia
 
-Test obciążenia może obejmować *parametrów uruchomieniowych*, które są właściwościami, które mają wpływ na sposób wykonywania testu obciążeniowego. Ustawienia uruchamiania są zorganizowane według kategorii w **właściwości** okna. Po uruchomieniu testu obciążenia używa uruchomieniowy, który jest aktualnie ustawiona jako aktywna.
+Test obciążenia może zawierać *ustawienia uruchamiania,* które są właściwościami wpływającymi na sposób wykonywania testu obciążenia. Ustawienia uruchamiania są uporządkowane według kategorii w oknie **Właściwości.** Po uruchomieniu testu obciążenia używa ustawienia uruchom, który jest obecnie ustawiony jako aktywny.
 
-Jeśli test obciążeniowy zawiera tylko jedno ustawienie uruchamiania, zawsze jest aktywnym węźle. Jeśli test obciążeniowy zawiera wiele węzłów parametrów uruchomieniowych, możesz wybrać jeden do użycia podczas uruchamiania testu obciążenia z wiersza polecenia. Zobacz [porady: Dodawanie dodatkowych parametrów uruchomieniowych do testu obciążeniowego](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Jeśli test obciążenia zawiera tylko jedno ustawienie uruchamiania, jest to zawsze aktywny węzeł. Jeśli test obciążenia zawiera wiele węzłów ustawień uruchamiania, można wybrać ten, który ma być używany po uruchomieniu testu obciążenia z wiersza polecenia. Zobacz [Jak: Dodawanie dodatkowych ustawień uruchamiania do testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="to-change-the-run-setting-from-the-command-line"></a>Aby zmienić parametr uruchomieniowy, z poziomu wiersza polecenia
+## <a name="to-change-the-run-setting-from-the-command-line"></a>Aby zmienić ustawienie uruchamiania z wiersza polecenia
 
-1. Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następującego polecenia:
+1. Jeśli chcesz użyć różnych ustawień uruchamiania z wiersza polecenia, aby skorzystać ze strategii parametrów kontekstu, użyj następującego polecenia:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2. Uruchom test obciążenia przy użyciu przełącznika mstest:
+2. Uruchom test obciążenia przy użyciu mstest:
 
     `mstest /testcontainer:loadtest1.loadtest`
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
-- [Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Porady: Dodawanie dodatkowych ustawień przebiegu testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)
-- [Porady: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md)
+- [Konfigurowanie ustawień przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Określanie zestawów liczników i reguł progowych dla komputerów w teście obciążenia](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Jak: Dodawanie dodatkowych ustawień uruchamiania do testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Jak: Wybierz ustawienie aktywnego uruchamiania dla testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

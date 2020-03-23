@@ -1,5 +1,5 @@
 ---
-title: Debug.Print
+title: Debug.Drukuj
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75567843"
 ---
 # <a name="print-command"></a>Print — Polecenie
 
-Oblicza wyrażenie lub Wyświetla określony tekst.
+Oblicza wyrażenie lub wyświetla określony tekst.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,23 +35,23 @@ Oblicza wyrażenie lub Wyświetla określony tekst.
 
 `text`
 
-Wymagany. Wyrażenie, które ma zostać obliczone lub tekst do wyświetlenia.
+Wymagany. Wyrażenie do oceny lub tekst do wyświetlenia.
 
 ## <a name="remarks"></a>Uwagi
 
-Możesz użyć znaku zapytania (?) jako aliasu dla tego polecenia. Tak więc, na przykład, polecenie
+Jako alias tego polecenia można użyć znaku zapytania (?). Tak więc, na przykład, polecenie
 
 ```cmd
 >Debug.Print expA
 ```
 
-można również napisać jako
+można również zapisać jako
 
 ```cmd
 ? expA
 ```
 
-Obie wersje tego polecenia zwracają bieżącą wartość wyrażenia `expA`.
+Obie wersje tego polecenia zwracają bieżącą `expA`wartość wyrażenia .
 
 ## <a name="example"></a>Przykład
 
@@ -59,10 +59,10 @@ Obie wersje tego polecenia zwracają bieżącą wartość wyrażenia `expA`.
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Oceń instrukcję, polecenie](../../ide/reference/evaluate-statement-command.md)
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Polecenie Oceń instrukcję](../../ide/reference/evaluate-statement-command.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

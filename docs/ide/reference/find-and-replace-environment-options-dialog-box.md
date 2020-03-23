@@ -15,44 +15,44 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75569572"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 
-Ta strona okna dialogowego **Opcje** służy do kontrolowania pól komunikatów i innych aspektów operacji znajdowania i zamieniania. Możesz uzyskać dostęp do tego okna dialogowego z menu **Narzędzia** , klikając **Opcje**, rozwijając **środowisko**, a następnie klikając przycisk **Znajdź i Zamień**. Jeśli ta strona nie jest wyświetlana na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje** .
+Ta strona okna dialogowego **Opcje** służy do kontrolowania pól komunikatów i innych aspektów operacji znajdowania i zamieniania. Dostęp do tego okna dialogowego można uzyskać z menu **Narzędzia,** klikając polecenie **Opcje**, rozwiń **środowisko,** a następnie klikając polecenie **Znajdź i zamień**. Jeśli ta strona nie jest wyświetlana na liście, wybierz pozycję **Pokaż wszystkie ustawienia** w oknie dialogowym **Opcje.**
 
-## <a name="uielement-list"></a>Lista elementów interfejsu
+## <a name="uielement-list"></a>Lista elementów UI
 
-**Wyświetl komunikaty informacyjne**
+**Wyświetlanie komunikatów informacyjnych**
 
-Wybierz tę opcję, aby wyświetlić wszystkie komunikaty informacyjne Znajdź i Zastąp, które mają opcję **Zawsze pokazuj tę wiadomość** . Jeśli na przykład nie zostanie wyświetlony komunikat "Znajdź osiągnął punkt początkowy wyszukiwania", wybranie tej opcji spowoduje, że ten komunikat informacyjny będzie wyświetlany ponownie, gdy użyjesz polecenia Znajdź i Zamień.
+Wybierz tę opcję, aby wyświetlić wszystkie komunikaty informacyjne Znajdź i zamień, które mają opcję **Zawsze pokazuj tę wiadomość.** Na przykład, jeśli nie chcesz wyświetlać komunikatu "Znajdź osiągnął punkt początkowy wyszukiwania.", wybranie tej opcji spowoduje, że ten komunikat informacyjny pojawi się ponownie podczas korzystania z funkcji Znajdź i zamień.
 
-Jeśli nie chcesz wyświetlać żadnych komunikatów informacyjnych dla Znajdź i Zamień, wyczyść tę opcję.
+Jeśli nie chcesz widzieć żadnych komunikatów informacyjnych dotyczących funkcji Znajdź i zamień, wyczyść tę opcję.
 
-Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** na niektórych, ale nie wszystkich, **Znajdź i Zastąp** komunikaty informacyjne, pole wyboru **Wyświetlaj komunikaty informacyjne** wydaje się być wypełnione, ale nie zaznaczone. Aby przywrócić wszystkie opcjonalne komunikaty **Znajdź i Zamień** , usuń zaznaczenie tej opcji, a następnie wybierz ją ponownie.
+Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** w niektórych, ale nie wszystkich, Znajdź i **zamień** komunikaty informacyjne, pole wyboru **Wyświetl komunikaty informacyjne** wydaje się być wypełnione, ale nie zaznaczone. Aby przywrócić wszystkie opcjonalne **komunikaty Znajdź i zamień,** wyczyść tę opcję, a następnie wybierz ją ponownie.
 
 > [!NOTE]
-> Ta opcja nie ma wpływu na żadne komunikaty informacyjne **znajdowania i zastępowania** , które nie wyświetlają opcji **Zawsze pokazuj ten komunikat** .
+> Ta opcja nie ma wpływu na żadne komunikaty informacyjne **Znajdź i zamień,** które nie wyświetlają opcji **Zawsze pokazuj ten komunikat.**
 
 **Wyświetlanie komunikatów ostrzegawczych**
 
-Wybierz tę opcję, aby wyświetlić wszystkie ostrzeżenia dotyczące znajdowania i zamieniania, które mają opcję **Zawsze pokazuj tę wiadomość** . Jeśli na przykład nie zostanie wyświetlony komunikat **Zamień wszystkie** ostrzeżenia, który pojawia się podczas próby przeprowadzenia zamian w plikach, które nie są aktualnie otwarte do edycji, wybranie tej opcji spowoduje, że ten komunikat ostrzegawczy zostanie wyświetlony ponownie podczas próby zamiany wszystkich.
+Wybierz tę opcję, aby wyświetlić wszystkie przestrogę Znajdź i zamień wiadomości, które mają opcję **Zawsze pokazuj tę wiadomość.** Jeśli na przykład wybrano opcję niewyświetlania komunikatu **ostrzegawczego Zamień wszystko,** który pojawia się podczas próby zastąpienia plików, które nie są obecnie otwierane do edycji, wybranie tej opcji spowoduje ponowne wyświetlenie tego komunikatu ostrzegawczego podczas próby zastąpienia wszystkich.
 
-Jeśli nie chcesz wyświetlać żadnych komunikatów ostrzegawczych dotyczących znajdowania i zastępowania, usuń zaznaczenie tej opcji.
+Jeśli nie chcesz widzieć żadnych komunikatów ostrzegawczych dotyczących funkcji Znajdź i zamień, wyczyść tę opcję.
 
-Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** na niektórych, ale nie wszystkich, **Znajdź i Zamień** komunikaty ostrzegawcze, pole wyboru **Wyświetlaj komunikaty ostrzegawcze** wydaje się być wypełnione, ale nie zaznaczone. Aby przywrócić wszystkie opcjonalne komunikaty **Znajdź i Zamień** , usuń zaznaczenie tej opcji, a następnie wybierz ją ponownie.
+Po wyczyszczeniu opcji **Zawsze pokazuj ten komunikat** w niektórych, ale nie wszystkie, Znajdź i **zamień** komunikaty ostrzegawcze, pole wyboru **Wyświetl komunikaty ostrzegawcze** wydaje się być wypełnione, ale nie zaznaczone. Aby przywrócić wszystkie opcjonalne **komunikaty Znajdź i zamień,** wyczyść tę opcję, a następnie wybierz ją ponownie.
 
 > [!NOTE]
-> Ta opcja nie ma wpływu na żadne komunikaty ostrzegawcze **Znajdź i Zamień** , które nie wyświetlają opcji **Zawsze pokazuj ten komunikat** .
+> Ta opcja nie ma wpływu na żadne komunikaty ostrzegawcze **Znajdź i Zamień,** które nie wyświetlają opcji **Zawsze pokazuj ten komunikat.**
 
-**Automatycznie Wypełnij wyszukiwanie tekstu z edytora**
+**Automatyczne wypełnianie znajdź co tekstem z edytora**
 
-Zaznacz tę opcję, aby wkleić tekst po obu stronach punktu wstawiania bieżącego edytora do pola **Znajdź co** w przypadku wybrania dowolnego widoku okna **Znajdź i Zamień** w menu **Edycja** . Usuń zaznaczenie tej opcji, aby użyć ostatniego wzorca wyszukiwania z poprzedniego wyszukiwania jako **Znajdź** ciąg.
+Zaznacz tę opcję, aby wkleić tekst po obu stronach punktu wstawiania bieżącego edytora do pola **Znajdź,** gdy wybierzesz dowolny widok okna **Znajdź i zamień** z menu **Edycja.** Wyczyść tę opcję, aby użyć ostatniego wzorca wyszukiwania z poprzedniego wyszukiwania jako ciąg **znajdź, który** jest.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Znajdowanie i zastępowanie tekstu](../../ide/finding-and-replacing-text.md)

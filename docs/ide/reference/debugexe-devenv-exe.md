@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aeae28288936b6723b53e826142a4888ad0bc8b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75570144"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -32,22 +32,22 @@ devenv /DebugExe ExecutableFile
 
 ## <a name="arguments"></a>Argumenty
 
-- *ExecutableFile*
+- *Plik wykonywalny*
 
-  Wymagany. Ścieżka i nazwa pliku `.exe`. Jeśli plik `.exe` nie zostanie znaleziony lub nie istnieje, nie jest wyświetlane ostrzeżenie ani błąd, a program Visual Studio jest uruchamiany normalnie.
+  Wymagany. Ścieżka i nazwa `.exe` pliku. Jeśli `.exe` plik nie zostanie znaleziony lub nie istnieje, nie jest wyświetlane żadne ostrzeżenie ani błąd, a program Visual Studio uruchamia się normalnie.
 
 ## <a name="remarks"></a>Uwagi
 
-Wszystkie ciągi po parametrze *executablefile* są przekazane do tego pliku jako argumenty.
+Wszystkie ciągi następujące *executableFile* parametr są przekazywane do tego pliku jako argumenty.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład otwiera plik `MyApplication.exe` na potrzeby debugowania.
+Poniższy przykład otwiera `MyApplication.exe` plik do debugowania.
 
 ```shell
 devenv /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

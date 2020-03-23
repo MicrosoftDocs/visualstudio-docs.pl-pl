@@ -1,6 +1,6 @@
 ---
-title: Konwertuj instrukcję if, aby przełączyć instrukcję lub wyrażenie Switch
-ms.date: 02/12/2020
+title: Konwertowanie instrukcji if na instrukcję switch lub wyrażenie switch
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -9,32 +9,38 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb0c06fe0493f973ea9cf0a566ffda45a49eeeff
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 93ad96809c77d5644b13e6221a41f0b182fb448f
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77280783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094147"
 ---
-# <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Konwertuj instrukcję if, aby przełączyć instrukcję lub wyrażenie Switch
+# <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Konwertowanie instrukcji if na instrukcję switch lub wyrażenie switch
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
-**Co:** Przekonwertuj instrukcję if na [instrukcję Switch](/dotnet/csharp/language-reference/keywords/switch) lub C# [wyrażenie przełącznika](/dotnet/csharp/whats-new/csharp-8#switch-expressions)8,0.
+**Co:** Konwertuj instrukcję if na [instrukcję switch](/dotnet/csharp/language-reference/keywords/switch) lub na [wyrażenie przełącznika](/dotnet/csharp/whats-new/csharp-8#switch-expressions)C# 8.0 .
 
-**Kiedy:** Chcesz przekonwertować instrukcję `if` do instrukcji `switch` lub wyrażenia `switch` i na odwrót. 
+**Kiedy:** Chcesz przekonwertować instrukcję `if` na instrukcję `switch` `switch` lub wyrażenie i odwrotnie. 
 
-**Dlaczego:** Jeśli używasz instrukcji `if`, to Refaktoryzacja umożliwia łatwe przejście do `switch` instrukcji lub wyrażeń `switch`.
+**Dlaczego?** Jeśli używasz `if` instrukcji, to refaktoryzowanie `switch` umożliwia `switch` łatwe przejście do instrukcji lub wyrażeń.
 
 ## <a name="how-to"></a>Porady
 
-1. Umieść kursor w słowie kluczowym `if`.
-2. Naciśnij klawisz **Ctrl**+ **.** Aby wyzwolić menu **szybkie akcje i operacje refaktoryzacji** .
-3. Wybierz pozycję **Konwertuj na instrukcję "switch"** .
+1. Umieść kursor w `if` słowie kluczowym.
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
+3. Wybierz jedną z następujących dwóch opcji: 
 
-   ![Konwertuj instrukcję if, aby przełączyć instrukcję lub wyrażenie Switch](media/convert-if-statement-to-switch-statement-or-switch-expression.png) 
+    Wybierz **opcję Konwertuj na instrukcję "przełącz"**.
+
+   ![Konwertuj, aby instrukcja if przełączyć instrukcję](media/convert-if-to-switch-statement.png) 
+
+    Wybierz **opcję Konwertuj na wyrażenie "przełącz"**. 
+
+    ![Konwertuj, aby instrukcja if przełączyć wyrażenie](media/convert-if-to-switch-expression.png) 
 
 ## <a name="see-also"></a>Zobacz też
 

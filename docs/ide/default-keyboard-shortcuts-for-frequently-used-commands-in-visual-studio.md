@@ -8,168 +8,168 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596726"
 ---
-# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Popularne skróty klawiaturowe dla programu Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Popularne skróty klawiaturowe w programie Visual Studio
 
-Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do często używanych poleceń w Visual Studio. Aby uzyskać pełną listę poleceń, które mają domyślne skróty, zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do często używanych poleceń w Visual Studio. Aby uzyskać pełną listę poleceń, które mają skróty domyślne, zobacz [Domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Kontekst *globalny* oznacza, że skrót jest stosowany w dowolnym oknie narzędzia w programie Visual Studio.
+Kontekst *globalny* oznacza, że skrót ma zastosowanie w dowolnym oknie narzędzia w programie Visual Studio.
 
 > [!NOTE]
-> Możesz [wyszukać skrót](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) dla dowolnego polecenia, otwierając okno dialogowe **Opcje** , rozwijając węzeł **środowisko** , a następnie wybierając pozycję **Klawiatura**.
+> Skrót dowolnego polecenia można [wyszukać,](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) otwierając okno dialogowe **Opcje,** rozwijając węzeł **Środowisko,** a następnie wybierając pozycję **Klawiatura**.
 
-## <a name="build"></a>{1&gt;Kompilacja&lt;1}
+## <a name="build"></a>Kompilacja
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|Build.BuildSolution|**Ctrl + Shift + B** [globalny]|
-|Build.Cancel|**Ctrl + Break** [globalny]|
-|Build.Compile|**CTRL + F7** [globalny]|
-|Build.RunCodeAnalysisonSolution|**ALT + F11** [globalny]|
+|Build.BuildSolution|**Ctrl+Shift+B** [Globalny]|
+|Build.Cancel|**Ctrl+Break** [Globalny]|
+|Build.Compile|**Ctrl+F7** [Globalny]|
+|Build.RunCodeAnalysisonSolution|**Alt+F11** [Globalny]|
 
 ## <a name="debug"></a>Debugowanie
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|Debug.BreakatFunction|**CTRL + B** [globalny]|
-|Debug.BreakAll|**Ctrl + Alt + Break** [globalny]|
-|Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [globalny]|
-|Debug.Exceptions|**Ctrl + Alt + E** [globalny]|
-|Debug.QuickWatch|**Ctrl + Alt + Q** [globalny]<br /><br />lub **Shift + F9** [globalny]|
-|Debug.Restart|**Ctrl + Shift + F5** [globalny]|
-|Debug.RunToCursor|**CTRL + F10** [globalny]|
-|Debug.SetNextStatement|**Ctrl + Shift + F10** [globalny]|
-|Debug.Start|**F5** [globalny]|
-|Debug.StartWithoutDebugging|**CTRL + F5** [globalny]|
-|Debug.StepInto|**F11** [globalny]|
-|Debug.StepOut|**SHIFT + F11** [globalny]|
-|Debug.StepOver|**F10** [globalny]|
-|Debug.StopDebugging|**SHIFT + F5** [globalny]|
-|Debug.ToggleBreakpoint|**F9** [globalny]|
+|Debug.BreakatFunction|**Ctrl+B** [Globalny]|
+|Debug.BreakAll|**Ctrl+Alt+Break** [Globalny]|
+|Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9** [Globalny]|
+|Debug.Exceptions|**Ctrl+Alt+E** [Globalny]|
+|Debug.QuickWatch|**Ctrl+Alt+Q** [Globalny]<br /><br />lub **Shift+F9** [Globalny]|
+|Debug.Restart|**Ctrl+Shift+F5** [Globalny]|
+|Debug.RunToCursor|**Ctrl+F10** [Globalny]|
+|Debug.SetNextStatement|**Ctrl+Shift+F10** [Globalny]|
+|Debug.Start|**F5** [Globalny]|
+|Debug.StartWithoutDebugging|**Ctrl+F5** [Globalny]|
+|Debug.StepInto|**F11** [Globalny]|
+|Debug.StepOut|**Shift+F11** [Globalny]|
+|Debug.StepOver|**F10** [Globalny]|
+|Debug.StopDebugging|**Shift+F5** [Globalny]|
+|Debug.ToggleBreakpoint|**F9** [Globalny]|
 
-## <a name="edit"></a>Edytowanie
+## <a name="edit"></a>Edytuj
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|Edit.BreakLine|**Wprowadź** [Edytor tekstu, Projektant raportów, Windows Forms Designer]<br /><br />lub **Shift + Enter** [Edytor tekstu]|
-|Edit.CollapseToDefinitions|**CTRL + M**, **klawisze Ctrl + O** [Edytor tekstu]|
-|Edit.CommentSelection|**CTRL + K**, **klawisze Ctrl + C** [Edytor tekstu]|
-|Edit.CompleteWord|**Alt + Strzałka w prawo** [Edytor tekstu, Workflow Designer]<br /><br />lub **klawisze Ctrl + spacja** [Edytor tekstu, Workflow Designer]<br /><br />lub **Ctrl + K**, **W** [Workflow Designer]<br /><br />lub **Ctrl + K, Ctrl + W** [Workflow Designer]|
-|Edit.Copy|**CTRL + C** [globalny]<br /><br />lub **Ctrl + Insert** [globalny]|
-|Edit.Cut|**CTRL + X** [globalny]<br /><br />lub **Shift + Delete** [globalny]|
-|Edit.Delete|**Usuń** [globalny, Team Explorer]<br /><br />lub **Shift + Delete** [sekwencji, Diagram, Diagram aktywności UML, Diagram warstwy]<br /><br />lub **klawisze Ctrl + Delete** [Diagram klas]|
-|Edit.Find|**CTRL + F** [globalny]|
-|Edit.FindAllReferences|**SHIFT + F12** [globalny]|
-|Edit.FindinFiles|**Ctrl + Shift + F** [globalny]|
-|Edit.FindNext|**F3** [globalny]|
-|Edit.FindNextSelected|**CTRL + F3** [globalny]|
-|Edit.FormatDocument|**CTRL + K, Ctrl + D** [Edytor tekstu]|
-|Edit.FormatSelection|**CTRL + K, Ctrl + F** [Edytor tekstu]|
-|Edit.GoTo|**CTRL + G** [globalny]|
-|Edit.GoToDeclaration|**CTRL + F12** [globalny]|
+|Edit.BreakLine|**Wprowadź** [Edytor tekstu, Projektant raportów, Projektant formularzy systemu Windows]<br /><br />lub **Shift+Enter** [Edytor tekstu]|
+|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Edytor tekstu]|
+|Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Edytor tekstu]|
+|Edit.CompleteWord|**Alt+strzałka w prawo** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+Spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K**, **W** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+W** [Projektant przepływu pracy]|
+|Edit.Copy|**Ctrl+C** [Globalny]<br /><br />lub **Ctrl+Wstaw** [Globalny]|
+|Edit.Cut|**Ctrl+X** [Globalny]<br /><br />lub **Shift+Delete** [Global]|
+|Edit.Delete|**Usuń** [Globalny, Eksplorator zespołu]<br /><br />lub **Shift+Delete** [Diagram sekwencji, Diagram aktywności UML, Diagram warstw]<br /><br />lub **Ctrl+Delete** [Diagram klas]|
+|Edit.Find|**Ctrl+F** [Globalny]|
+|Edit.FindAllReferences|**Shift+F12** [Globalny]|
+|Edit.FindinFiles|**Ctrl+Shift+F** [Globalny]|
+|Edit.FindNext|**F3** [Globalny]|
+|Edit.FindNextSelected|**Ctrl+F3** [Globalny]|
+|Edit.FormatDocument|**Ctrl+K, Ctrl+D** [Edytor tekstu]|
+|Edit.FormatSelection|**Ctrl+K, Ctrl+F** [Edytor tekstu]|
+|Edit.GoTo|**Ctrl+G** [Globalny]|
+|Edit.GoToDeclaration|**Ctrl+F12** [Globalny]|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**CTRL + D** [globalny]|
-|Edit.GoToNextLocation|**F8** [globalny]|
-|Edit.InsertSnippet|**CTRL + K**, **klawisze Ctrl + X** [globalny]|
-|Edit.InsertTab|**Karta** [Report Designer, Windows Forms Designer, Edytor tekstu]|
-|Edit.LineCut|**CTRL + L** [Edytor tekstu]|
-|Edit.LineDownExtendColumn|**Shift + Alt + Strzałka w dół strzałkę** [Edytor tekstu]|
-|Edit.LineOpenAbove|**Ctrl + Enter** [Edytor tekstu]|
-|Edit.ListMembers|**CTRL + J** [Edytor tekstu, Workflow Designer]<br /><br />lub **Ctrl + K, Ctrl + L** [Workflow Designer]<br /><br />lub **Ctrl + K, L** [Workflow Designer]|
-|Edit.NavigateTo|**CTRL +** [globalny]|
-|Edit.OpenFile|**Ctrl + Shift + G** [globalny]|
-|Edit.OvertypeMode|**Wstaw** [Edytor tekstu]|
-|Edit.ParameterInfo|**Ctrl + Shift + spacja** [Edytor tekstu, Workflow Designer]<br /><br />lub **Ctrl + K, Ctrl + P** [Workflow Designer]<br /><br />lub **Ctrl + K, P** [Workflow Designer]|
-|Edit.Paste|**CTRL + V** [globalny]<br /><br />lub **Shift + Insert** [globalny]|
-|Edit.PeekDefinition|**ALT + F12** [Edytor tekstu]|
-|Edit.Redo|**CTRL + Y** [globalny]<br /><br />lub **Shift + Alt + Backspace** [globalny]<br /><br />lub **Ctrl + Shift + Z** [globalny]|
-|Edit.Replace|**CTRL + H** [globalny]|
-|Edit.SelectAll|**CTRL + A** [globalny]|
-|Edit.SelectCurrentWord|**CTRL + W** [Edytor tekstu]|
-|Edit.SelectionCancel|**ESC** [Edytor tekstu, Projektant raportów, Projektant ustawień, Windows Forms Designer, Managed Edytor zasobów]|
-|Edit.SurroundWith|**CTRL + K, Ctrl + S** [globalny]|
-|Edit.TabLeft|**Shift + Tab** [Edytor tekstu, Projektant raportów, Windows Forms Editor]|
-|Edit.ToggleAllOutlining|**CTRL + M, Ctrl + L** [Edytor tekstu]|
-|Edit.ToggleBookmark|**CTRL + K, Ctrl + K** [Edytor tekstu]|
-|Edit.ToggleCompletionMode|**Ctrl + Alt + spacja** [Edytor tekstu]|
-|Edit.ToggleOutliningExpansion|**CTRL + M, Ctrl + M** [Edytor tekstu]|
-|Edit.UncommentSelection|**CTRL + K, Ctrl + U** [Edytor tekstu]|
-|Edit.Undo|**CTRL + Z** [globalny]<br /><br />lub **klawisze Alt + Backspace** [globalny]|
-|Edit.WordDeleteToEnd|**CTRL + Delete** [Edytor tekstu]|
-|Edit.WordDeleteToStart|**Ctrl + Backspace** [Edytor tekstu]|
+|Edit.GoToFindCombo|**Ctrl+D** [Globalny]|
+|Edit.GoToNextLocation|**F8** [Globalny]|
+|Edit.InsertSnippet|**Ctrl+K**, **Ctrl+X** [Globalny]|
+|Edit.InsertTab|**Karta** [Projektant raportów, Projektant formularzy systemu Windows, Edytor tekstu]|
+|Edit.LineCut|**Ctrl+L** [Edytor tekstu]|
+|Edit.LineDownExtendColumn|**Shift+Alt+strzałka w dół** [Edytor tekstu]|
+|Edit.LineOpenAbove|**Ctrl+Enter** [Edytor tekstu]|
+|Edit.ListMembers|**Ctrl+J** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+L** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, L** [Projektant przepływu pracy]|
+|Edit.NavigateTo|**Ctrl+,** [Globalny]|
+|Edit.OpenFile|**Ctrl+Shift+G** [Globalny]|
+|Edit.OvertypeMode|**Wstawianie** [Edytor tekstu]|
+|Edit.ParameterInfo|**Ctrl+Shift+Spacja** [Edytor tekstu, Projektant przepływu pracy]<br /><br />lub **Ctrl+K, Ctrl+P** [Projektant przepływu pracy]<br /><br />lub **Ctrl+K, P** [Projektant przepływu pracy]|
+|Edit.Paste|**Ctrl+V** [Globalny]<br /><br />lub **Shift+Insert** [Globalny]|
+|Edit.PeekDefinition|**Alt+F12** [Edytor tekstu]|
+|Edit.Redo|**Ctrl+Y** [Globalny]<br /><br />lub **Shift+Alt+Backspace** [Globalny]<br /><br />lub **Ctrl+Shift+Z** [Globalny]|
+|Edit.Replace|**Ctrl+H** [Globalny]|
+|Edit.SelectAll|**Ctrl+A** [Globalny]|
+|Edit.SelectCurrentWord|**Ctrl+W** [Edytor tekstu]|
+|Edit.SelectionCancel|**Esc** [Edytor tekstu, Projektant raportów, Projektant ustawień, Projektant formularzy systemu Windows, Edytor zasobów zarządzanych]|
+|Edit.SurroundWith|**Ctrl+K, Ctrl+S** [Globalny]|
+|Edit.TabLeft|**Shift+Tab** [Edytor tekstu, Projektant raportów, Edytor formularzy systemu Windows]|
+|Edit.ToggleAllOutlining|**Ctrl+M, Ctrl+L** [Edytor tekstu]|
+|Edit.ToggleBookmark|**Ctrl+K, Ctrl+K** [Edytor tekstu]|
+|Edit.ToggleCompletionMode|**Ctrl+Alt+Spacja** [Edytor tekstu]|
+|Edit.ToggleOutliningExpansion|**Ctrl+M, Ctrl+M** [Edytor tekstu]|
+|Edit.UncommentSelection|**Ctrl+K, Ctrl+U** [Edytor tekstu]|
+|Edit.Undo|**Ctrl+Z** [Globalny]<br /><br />lub **Alt+Backspace** [Globalny]|
+|Edit.WordDeleteToEnd|**Ctrl+Delete** [Edytor tekstu]|
+|Edit.WordDeleteToStart|**Ctrl+Backspace** [Edytor tekstu]|
 
 ## <a name="file"></a>Plik
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|File.Exit|**ALT + F4** [globalny]|
-|File.NewFile|**CTRL + N** [globalny]|
-|File.NewProject|**Ctrl + Shift + N** [globalny]|
-|File.NewWebSite|**Shift + Alt + N** [globalny]|
-|File.OpenFile|**CTRL + O** [globalny]|
-|File.OpenProject|**Ctrl + Shift + O** [globalny]|
-|File.OpenWebSite|**Shift + Alt + O** [globalny]|
-|File.Rename|**F2** [Team Explorer]|
-|File.SaveAll|**Ctrl + Shift + S** [globalny]|
-|File.SaveSelectedItems|**CTRL + S** [globalny]|
-|File.ViewinBrowser|**Ctrl + Shift + W** [globalny]|
+|File.Exit|**Alt+F4** [Globalny]|
+|File.NewFile|**Ctrl+N** [Globalny]|
+|File.NewProject|**Ctrl+Shift+N** [Globalny]|
+|File.NewWebSite|**Shift+Alt+N** [Globalny]|
+|File.OpenFile|**Ctrl+O** [Globalny]|
+|File.OpenProject|**Ctrl+Shift+O** [Globalny]|
+|File.OpenWebSite|**Shift+Alt+O** [Globalny]|
+|File.Rename|**F2** [Eksplorator zespołu]|
+|File.SaveAll|**Ctrl+Shift+S** [Globalny]|
+|File.SaveSelectedItems|**Ctrl+S** [Globalny]|
+|File.ViewinBrowser|**Ctrl+Shift+W** [Globalny]|
 
-## <a name="project"></a>{1&gt;Projekt&lt;1}
+## <a name="project"></a>Project
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|Project.AddExistingItem|**Shift + Alt + A** [globalny]|
-|Project.AddNewItem|**Ctrl + Shift + A** [globalny]|
+|Project.AddExistingItem|**Shift+Alt+A** [Globalny]|
+|Project.AddNewItem|**Ctrl+Shift+A** [Globalny]|
 
 ## <a name="refactor"></a>Refaktoryzacja
 
-|Polecenie|Skrót klawiaturowy [kontekst]|
+|Polecenie|Skrót klawiaturowy [Kontekst]|
 |-------------| - |
-|Refactor.ExtractMethod|**CTRL + R, Ctrl + M** [globalny]|
+|Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Globalny]|
 
-## <a name="tools"></a>Narzędzia
+## <a name="tools"></a>narzędzia
 
-|Polecenie|Skrót klawiaturowy [kontekst]|
+|Polecenie|Skrót klawiaturowy [Kontekst]|
 |-------------| - |
-|Tools.AttachtoProcess|**Ctrl + Alt + P** [globalny]|
+|Tools.AttachtoProcess|**Ctrl+Alt+P** [Globalny]|
 
-## <a name="view"></a>Zobacz .
+## <a name="view"></a>Widok
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|View.ClassView|**Ctrl + Shift + C** [globalny]|
-|View.EditLabel|**F2** [globalny]|
-|View.ErrorList|**CTRL +\\, Ctrl + E** [globalny]<br /><br />lub **Ctrl +\\, E** [globalny]|
-|View.NavigateBackward|**CTRL +-** [globalny]|
-|View.NavigateForward|**Ctrl + Shift +-** [globalny]|
-|View.ObjectBrowser|**Ctrl + Alt + J** [globalny]|
-|View.Output|**Ctrl + Alt + O** [globalny]|
+|View.ClassView|**Ctrl+Shift+C** [Globalny]|
+|View.EditLabel|**F2** [Globalny]|
+|View.ErrorList|**Ctrl+\\, Ctrl+E** [Globalny]<br /><br />lub **Ctrl+\\, E** [Globalny]|
+|View.NavigateBackward|**Ctrl+-** [Globalny]|
+|View.NavigateForward|**Ctrl+Shift+-** [Globalny]|
+|View.ObjectBrowser|**Ctrl+Alt+J** [Globalny]|
+|View.Output|**Ctrl+Alt+O** [Globalny]|
 |View.PropertiesWindow|**F4**|
-|View.Refresh|**F5** [Team Explorer]|
-|View.ServerExplorer|**Ctrl + Alt + S** [globalny]|
-|View.ShowSmartTag|**Ctrl+.** [Globalny]<br /><br />lub **Shift + Alt + F10** [globalny, HTML Editor Design View]|
-|View.SolutionExplorer|**Ctrl + Alt + L** [globalny]|
-|View.TfsTeamExplorer|**CTRL +\\, Ctrl + M** [globalny]|
-|View.Toolbox|**Ctrl + Alt + X** [globalny]|
-|View.ViewCode|**Wprowadź** [Diagram klas]<br /><br />lub **F7** [Projektant ustawień]|
-|View.ViewDesigner|**SHIFT + F7** [widok źródła edytora HTML]|
+|View.Refresh|**F5** [Eksplorator zespołu]|
+|View.ServerExplorer|**Ctrl+Alt+S** [Globalny]|
+|View.ShowSmartTag|**Ctrl+.** [Globalny]<br /><br />lub **Shift+Alt+F10** [globalny widok projektu edytora HTML]|
+|View.SolutionExplorer|**Ctrl+Alt+L** [Globalny]|
+|View.TfsTeamExplorer|**Ctrl+\\, Ctrl+M** [Globalny]|
+|View.Toolbox|**Ctrl+Alt+X** [Globalny]|
+|View.ViewCode|**Wprowadź** [Diagram klasy]<br /><br />lub **F7** [Projektant ustawień]|
+|View.ViewDesigner|**Shift+F7** [widok źródłowy edytora HTML]|
 
 ## <a name="window"></a>Okno
 
-|Polecenia|Skróty klawiaturowe [konteksty]|
+|Polecenia|Skróty klawiaturowe [Konteksty]|
 |--------------| - |
-|Window.ActivateDocumentWindow|**ESC** [globalny]|
-|Window.CloseDocumentWindow|**CTRL + F4** [globalny]|
-|Window.NextDocumentWindow|**CTRL + F6** [globalny]|
-|Window.NextDocumentWindowNav|**Ctrl + Tab** [globalny]|
-|Window.NextSplitPane|**F6** [globalny]|
+|Window.ActivateDocumentWindow|**Esc** [Globalny]|
+|Window.CloseDocumentWindow|**Ctrl+F4** [Globalny]|
+|Window.NextDocumentWindow|**Ctrl+F6** [Globalny]|
+|Window.NextDocumentWindowNav|**Ctrl+Tab** [Globalny]|
+|Window.NextSplitPane|**F6** [Globalny]|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Identyfikowanie i Dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Identyfikowanie i dostosowywanie skrótów klawiaturowych w programie Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Wszystkie skróty klawiaturowe w programie Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

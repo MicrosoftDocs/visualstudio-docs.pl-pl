@@ -1,6 +1,6 @@
 ---
 title: Szablony aplikacji sieci Web dla języka Python
-description: Program Visual Studio udostępnia szablony dla aplikacji sieci web języka Python za pomocą platformy Bottle, Flask i Django Obsługa obejmuje konfiguracje debugowania i publikowania w usłudze Azure App Service.
+description: Visual Studio udostępnia szablony dla aplikacji sieci web języka Python przy użyciu bottle, Flask i Django frameworks; obsługa obejmuje debugowanie konfiguracji i publikowanie w usłudze Azure App Service.
 ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -11,141 +11,141 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409985"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79302757"
 ---
-# <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
+# <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci Web języka Python
 
-Język Python w programie Visual Studio obsługuje tworzenie projektów sieci web platformy Bottle, Flask i Django przy użyciu szablonów projektu i uruchamianie debugowania, które mogą być skonfigurowane do obsługi różnych platform. Te szablony zawierają plik *Requirements. txt* , aby zadeklarować wymagane zależności. Podczas tworzenia projektu z jednego z tych szablonów program Visual Studio wyświetli komunikat z prośbą o zainstalowanie tych pakietów (zobacz temat [Instalowanie wymagań projektu](#install-project-requirements) w dalszej części tego artykułu).
+Python w programie Visual Studio obsługuje tworzenie projektów sieci web w strukturach Bottle, Flask i Django za pośrednictwem szablonów projektów i uruchamiania debugowania, które można skonfigurować do obsługi różnych struktur. Szablony te zawierają plik *requirements.txt* do deklarowania niezbędnych zależności. Podczas tworzenia projektu z jednego z tych szablonów program Visual Studio monituje o zainstalowanie tych pakietów (zobacz [Instalowanie wymagań projektu](#install-project-requirements) w dalszej części tego artykułu).
 
-Szablon ogólnego **projektu sieci Web** można również użyć dla innych struktur, takich jak ostrosłupowy. W tym przypadku nie struktur są instalowane przy użyciu szablonu. Zamiast tego Zainstaluj wymagane pakiety w środowisku używanym dla projektu (zobacz [okno środowiska języka Python — karta pakiet](python-environments-window-tab-reference.md#packages-tab)).
+Można również użyć ogólnego szablonu **projektu sieci Web** dla innych struktur, takich jak Ostrosłupa. W takim przypadku nie są instalowane żadne struktury z szablonem. Zamiast tego zainstaluj niezbędne pakiety w środowisku używanym do projektu (zobacz [okno środowiska Języka Python — karta Pakiet).](python-environments-window-tab-reference.md#packages-tab)
 
-Aby uzyskać informacje na temat wdrażania aplikacji sieci Web w języku Python na platformie Azure, zobacz [Publikowanie w Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Aby uzyskać informacje na temat wdrażania aplikacji sieci Web języka Python na platformie Azure, zobacz [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
-## <a name="use-a-project-template"></a>Należy użyć szablonu projektu
+## <a name="use-a-project-template"></a>Używanie szablonu projektu
 
-Projekt można utworzyć na podstawie szablonu przy użyciu **pliku** > **nowym** > **projekcie**. Aby wyświetlić szablony dla projektów sieci Web, wybierz pozycję **Python** > **sieci Web** po lewej stronie okna dialogowego. Następnie wybierz wybrany szablon, podając nazwy projektu i rozwiązania, ustaw opcje dla katalogu rozwiązania i repozytorium git, a następnie wybierz **przycisk OK**.
+Projekt jest tworzęny na podstawie szablonu przy użyciu **pliku** > **nowego** > **projektu**. Aby wyświetlić szablony projektów internetowych, wybierz pozycję **Python** > **Web** po lewej stronie okna dialogowego. Następnie wybierz wybrany szablon, podając nazwy projektu i rozwiązania, ustaw opcje katalogu rozwiązań i repozytorium Git, a następnie wybierz **przycisk OK**.
 
-![Okno dialogowe Nowy projekt dla aplikacji sieci web](media/projects-new-project-dialog-web.png)
+![Nowe okno dialogowe projektu dla aplikacji sieci Web](media/projects-new-project-dialog-web.png)
 
-Ogólny szablon **projektu sieci Web** , wspomniany wcześniej, zawiera tylko pusty projekt programu Visual Studio bez kodu i nie ma założeń innych niż projekt języka Python. Aby uzyskać szczegółowe informacje na temat szablonu **usługi w chmurze platformy Azure** , zobacz [projekty usług w chmurze platformy Azure dla języka Python](python-azure-cloud-service-project-template.md).
+Ogólny szablon **projektu sieci Web,** o którym wspomniano wcześniej, zawiera tylko pusty projekt programu Visual Studio bez kodu i bez założeń innych niż projekt języka Python. Aby uzyskać szczegółowe informacje na temat szablonu **usługi azure cloud service,** zobacz [projekty usług w chmurze platformy Azure dla języka Python.](python-azure-cloud-service-project-template.md)
 
-Wszystkie inne szablony zależą od struktury sieci web Bottle, Flask i Django i można podzielić na trzy główne grupy, zgodnie z opisem w poniższych sekcjach. Aplikacje utworzone przez dowolnego z tych szablonów zawierają kod wystarczający do uruchamiania i debugowania aplikacji w środowisku lokalnym. Każdy z nich udostępnia również wymagany [obiekt aplikacji WSGI](https://www.python.org/dev/peps/pep-3333/) (Python.org) do użytku z serwerami produkcyjnymi sieci Web.
+Wszystkie inne szablony są oparte na platformach sieciowych Bottle, Flask lub Django i dzielą się na trzy ogólne grupy, jak opisano w poniższych sekcjach. Aplikacje utworzone przez dowolny z tych szablonów zawierają wystarczający kod do uruchamiania i debugowania aplikacji lokalnie. Każdy z nich zapewnia również niezbędny [obiekt aplikacji WSGI](https://www.python.org/dev/peps/pep-3333/) (python.org) do użytku z produkcyjnymi serwerami sieci Web.
 
 ### <a name="blank-group"></a>Pusta grupa
 
-Wszystkie **puste szablony projektu sieci Web w programie \<framework >** tworzą projekt z bardziej lub mniej minimalnym kodem i niezbędnymi zależnościami zadeklarowanymi w pliku *Requirements. txt* .
+Wszystkie ** \<puste struktury>** szablonów projektu sieci Web tworzą projekt z mniej lub bardziej minimalnym kodem współdzielczym i niezbędnymi zależnościami zadeklarowanym w pliku *requirements.txt.*
 
 | Szablon | Opis |
 | --- | --- |
-| **Pusty projekt sieci Web** | Generuje minimalną aplikację w *App.py* ze stroną główną dla `/` i stronę `/hello/<name>`, która wyświetla `<name>` przy użyciu bardzo krótkiego szablonu strony wbudowanej. |
-| **Pusty projekt sieci Web Django** | Generuje projekt Django przy użyciu struktury lokacji Django core, ale nie ma aplikacji Django. Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Pusty projekt sieci Web** | Generuje minimalną aplikację za pomocą pojedynczego "Hello World!" Strona `/`. Ta aplikacja jest podobna do wyniku wykonania szczegółowych czynności z [przewodnika Szybki Start: Użyj programu Visual Studio, aby utworzyć pierwszą aplikację sieci Web w języku Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz też [więcej informacji o kolbie krok 1](learn-flask-visual-studio-step-01-project-solution.md).
+| **Projekt sieci Web z pustą butelką** | Generuje minimalną aplikację w *app.py* ze stroną `/` główną `/hello/<name>` i stroną, która odbija `<name>` się echem przy użyciu bardzo krótkiego szablonu strony wbudowanej. |
+| **Pusty projekt internetowy Django** | Generuje projekt Django z podstawową strukturą witryny Django, ale bez aplikacji Django. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, jak Django Krok 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
+| **Pusty projekt sieci Web kolby** | Generuje minimalną aplikację z jednym "Hello World!" strona `/`dla . Ta aplikacja jest podobna do wyniku następujących szczegółowych kroków w [Przewodniku Szybki start: Użyj programu Visual Studio, aby utworzyć pierwszą aplikację internetową Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Zobacz [też: Naucz się kolby krok 1](learn-flask-visual-studio-step-01-project-solution.md).
 
-### <a name="web-group"></a>Grupa aplikacji sieci Web
+### <a name="web-group"></a>Grupa sieci Web
 
-Wszystkie szablony **projektu sieci Web platformy\<Framework >** tworzą Starter aplikacji sieci Web o identycznym projekcie niezależnie od wybranej struktury. Aplikacja ma w domu, stron o i skontaktuj się z pomocą, wraz z paska nawigacji i elastyczne środowisko za pomocą narzędzia Bootstrap. Każda aplikacja jest odpowiednio skonfigurowany do obsługi plików statycznych (CSS, JavaScript i czcionki) i używa mechanizmu szablon strony właściwe dla platformy.
-
-| Szablon | Opis |
-| --- | --- |
-| **Projekt sieci Web butelek** | Generuje aplikację, której pliki statyczne są zawarte w folderze *statycznym* i obsługiwane przez kod w *App.py*. Routing dla poszczególnych stron jest zawarty w *Routes.py*, a folder *widoki* zawiera szablony stron.|
-| **Projekt sieci Web Django** | Generuje projekt Django i aplikacji Django przy użyciu trzech stron, obsługę uwierzytelniania i bazy danych SQLite (ale nie modeli danych). Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django Step 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
-| **Przednie projektu sieci Web** | Generuje aplikację, której pliki statyczne są zawarte w folderze *statycznym* . Kod w *views.py* obsługuje routing z szablonami stron za pomocą aparatu jinja znajdującego się w folderze *templates* . Plik *runserver.py* zawiera kod uruchomienia. Zobacz [więcej informacji o kolbie krok 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
-| **Jade/projekt sieci Web** | Generuje tę samą aplikację jak dla szablonu **projektu sieci Web** , ale przy użyciu rozszerzenia Jade dla aparatu jinja tworzenia szablonów. |
-
-### <a name="polls-group"></a>Grupa sond
-
-Szablony **projektu sieci Web w programie sondy \<framework >** tworzą startową aplikację sieci Web, za pomocą której użytkownicy mogą głosować na różnych pytaniach dotyczących sondowania. Każda aplikacja tworzy na podstawie struktury szablonów projektu **sieci Web** , aby użyć bazy danych do zarządzania sondami i odpowiedziami użytkowników. Aplikacje obejmują odpowiednie modele danych i specjalną stronę aplikacji (/Seed), która ładuje sondy z pliku *Samples. JSON* .
+Wszystkie ** \<szablony programu Framework> Web Project** tworzą początkową aplikację sieci web o identycznym projekcie, niezależnie od wybranej struktury. Aplikacja ma strony Home, About i Kontakt, wraz z paskiem nawigacyjnym i responsywnym projektem za pomocą Bootstrap. Każda aplikacja jest odpowiednio skonfigurowana do obsługi plików statycznych (CSS, JavaScript i czcionek) i używa mechanizmu szablonu strony odpowiedniego dla tej struktury.
 
 | Szablon | Opis |
 | --- | --- |
-| **Projekt sieci Web w butelkach sond** | Generuje aplikację, która może być uruchamiana względem bazy danych w pamięci, MongoDB lub Table Storage platformy Azure, która jest konfigurowana przy użyciu zmiennej środowiskowej `REPOSITORY_NAME`. Modele danych i kod magazynu danych znajdują się w folderze *modele* , a plik *Settings.py* zawiera kod umożliwiający określenie, który magazyn danych jest używany. |
-| **Projekt sieci Web Django sondowań** | Generuje projekt Django i aplikacja Django z trzy strony i bazy danych SQLite. Zawiera dostosowania interfejsu administracyjnego Django, aby umożliwić administratorowi tworzenie i zarządzanie nimi sond uwierzytelnionego. Aby uzyskać więcej informacji, zobacz [Szablony Django](python-django-web-application-project-template.md) i [Naucz Django krok 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
-| **Projekt sieci Web w kolbie sondowań** | Generuje aplikację, która może być uruchamiana względem bazy danych w pamięci, MongoDB lub Table Storage platformy Azure, która jest konfigurowana przy użyciu zmiennej środowiskowej `REPOSITORY_NAME`. Modele danych i kod magazynu danych znajdują się w folderze *modele* , a plik *Settings.py* zawiera kod umożliwiający określenie, który magazyn danych jest używany. Aplikacja używa aparatu Jinja dla szablonów stron. Zobacz [więcej informacji o kolbie krok 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
-| **Sonda/projekt sieci Web Jade** | Generuje taką samą aplikację jak w przypadku szablonu **projektu sieci Web kolby sondy** , ale przy użyciu rozszerzenia Jade dla aparatu jinja tworzenia szablonów. |
+| **Projekt sieci Web butelki** | Generuje aplikację, której pliki statyczne są zawarte w folderze *statycznym* i obsługiwane za pomocą kodu w *app.py*. Routing dla poszczególnych stron jest zawarty w *routes.py,* a folder *widoków* zawiera szablony stron.|
+| **Projekt internetowy Django** | Generuje projekt Django i aplikację Django z trzema stronami, obsługą uwierzytelniania i bazą danych SQLite (ale bez modeli danych). Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, jak Django Krok 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
+| **Projekt sieci Web Kolby** | Generuje aplikację, której pliki statyczne znajdują się w folderze *statycznym.* Kod w *views.py* obsługuje routingu, z szablonami stron przy użyciu aparatu Jinja zawarte w folderze *szablonów.* Plik *runserver.py* zawiera kod startowy. Zobacz [: Learn Flask Step 4](learn-flask-visual-studio-step-04-full-flask-project-template.md). |
+| **Projekt sieciowy Flask/Jade** | Generuje tę samą aplikację, co w przypadku szablonu **flask Web Project,** ale przy użyciu rozszerzenia Jade dla silnika szablonów Jinja. |
 
-## <a name="install-project-requirements"></a>Zainstaluj wymagania projektu
+### <a name="polls-group"></a>Grupa Ankiety
 
-Podczas tworzenia projektu z szablonu określonej platformy, aby zainstalować wymagane pakiety przy użyciu narzędzia pip pojawi się okno dialogowe. Zalecamy również użycie [środowiska wirtualnego](selecting-a-python-environment-for-a-project.md#use-virtual-environments) dla projektów sieci Web, aby podczas publikowania witryny sieci Web uwzględnić odpowiednie zależności:
+**Struktura \<Sondy>** szablonów projektu sieci Web tworzą początkową aplikację sieci web, za pomocą której użytkownicy mogą głosować na różne pytania ankietowe. Każda aplikacja opiera się na strukturze szablonów projektów **sieci Web** do korzystania z bazy danych do zarządzania ankietami i odpowiedziami użytkowników. Aplikacje zawierają odpowiednie modele danych i specjalną stronę aplikacji (/seed), która ładuje ankiety z pliku *samples.json.*
 
-![Okno dialogowe, które instaluje wymagane pakiety dla szablonu projektu](media/template-web-requirements-txt-wizard.png)
+| Szablon | Opis |
+| --- | --- |
+| **Sonduje bottle Web Project** | Generuje aplikację, która może działać z bazy danych w pamięci, MongoDB lub Usługi `REPOSITORY_NAME` Azure Table Storage, który jest skonfigurowany przy użyciu zmiennej środowiskowej. Modele danych i kod magazynu danych znajdują się w folderze *modeli,* a plik *settings.py* zawiera kod, aby określić, który magazyn danych jest używany. |
+| **Sonduje projekt internetowy Django** | Generuje projekt Django i aplikację Django z trzema stronami i bazą danych SQLite. Zawiera dostosowania interfejsu administracyjnego Django, aby umożliwić uwierzytelnionemu administratorowi tworzenie ankiet i zarządzanie nimi. Aby uzyskać więcej informacji, zobacz [szablony Django](python-django-web-application-project-template.md) i [Dowiedz się, jak Django Step 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
+| **Sonduje projekt sieci Web Flask** | Generuje aplikację, która może działać z bazy danych w pamięci, MongoDB lub Usługi `REPOSITORY_NAME` Azure Table Storage, który jest skonfigurowany przy użyciu zmiennej środowiskowej. Modele danych i kod magazynu danych znajdują się w folderze *modeli,* a plik *settings.py* zawiera kod, aby określić, który magazyn danych jest używany. Aplikacja używa aparatu Jinja dla szablonów stron. Zobacz [: Learn Flask Step 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md). |
+| **Sondy Flask / Jade Web Project** | Generuje tę samą aplikację, co w przypadku szablonu **projektu sieci Web Sondy Flask,** ale przy użyciu rozszerzenia Jade dla silnika szablonów Jinja. |
 
-Jeśli używasz kontroli źródła, zazwyczaj pominięto folder środowiska wirtualnego, ponieważ to środowisko można odtworzyć tylko przy użyciu programu *Requirements. txt*. Najlepszym sposobem wykluczenia folderu jest wybranie opcji **I zainstalowanie ich samodzielnie** w pokazanym powyżej monicie, a następnie wyłączenie automatycznego zatwierdzania przed utworzeniem środowiska wirtualnego. Aby uzyskać szczegółowe informacje, zobacz [nauka samouczka Django — kroki 1-2 i 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) oraz [samouczki dotyczące kolb — kroki 1-2 i 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
+## <a name="install-project-requirements"></a>Instalowanie wymagań dotyczących projektu
 
-Podczas wdrażania programu w celu Microsoft Azure App Service wybierz wersję środowiska Python jako [rozszerzenie witryny](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) i ręcznie zainstaluj pakiety. Ponadto, ponieważ program Azure App Service **nie instaluje automatycznie pakietów** z pliku *Requirements. txt* w przypadku wdrożenia z programu Visual Studio, postępuj zgodnie ze szczegółowymi informacjami o konfiguracji w witrynie [aka.MS/PythonOnAppService](managing-python-on-azure-app-service.md).
+Podczas tworzenia projektu z szablonu specyficznego dla struktury, pojawi się okno dialogowe, aby ułatwić instalowanie niezbędnych pakietów przy użyciu pip. Zaleca się również używanie [środowiska wirtualnego](selecting-a-python-environment-for-a-project.md#use-virtual-environments) dla projektów sieci web, aby podczas publikowania witryny sieci Web uwzględniane były poprawne zależności:
 
-Microsoft Azure Cloud Services *obsługuje* plik *Requirements. txt* . Aby uzyskać szczegółowe informacje, zobacz [projekty usługi w chmurze platformy Azure](python-azure-cloud-service-project-template.md) .
+![Okno dialogowe instaluje potrzebne pakiety dla szablonu projektu](media/template-web-requirements-txt-wizard.png)
 
-## <a name="debugging"></a>Debugowanie
+Jeśli używasz formantu źródła, zazwyczaj pomijasz folder środowiska wirtualnego, ponieważ to środowisko można odtworzyć tylko przy użyciu *pliku requirements.txt*. Najlepszym sposobem, aby wykluczyć folder jest najpierw wybrać ja zainstalować je samodzielnie w pytaniu **pokazanym** powyżej, a następnie wyłączyć auto-commit przed utworzeniem środowiska wirtualnego. Aby uzyskać szczegółowe informacje, zobacz [Dowiedz się Django Tutorial - Kroki 1-2 i 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) i [Dowiedz się Kolby Tutorial - Kroki 1-2 i 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Po rozpoczęciu debugowania projektu sieci web programu Visual Studio uruchamia lokalny serwer internetowy na losowy port i otwiera domyślna przeglądarka, w tym adres i port. Aby określić dodatkowe opcje, kliknij projekt prawym przyciskiem myszy, wybierz polecenie **Właściwości**, a następnie wybierz kartę **Uruchamianie sieci Web** :
+Podczas wdrażania w usłudze Microsoft Azure App Service wybierz wersję języka Python jako [rozszerzenie witryny](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) i ręcznie zainstaluj pakiety. Ponadto ponieważ usługa Azure App Service **nie** instaluje automatycznie pakietów z pliku *requirements.txt* po wdrożeniu z programu Visual Studio, postępuj zgodnie ze szczegółami konfiguracji w [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
 
-![Właściwości uruchamiającego sieci Web dla szablonu sieci web ogólnego](media/template-web-launcher-properties.png)
+*Usługi* w chmurze platformy Microsoft Azure obsługują plik *requirements.txt.* Zobacz [projekty usług w chmurze platformy Azure, aby](python-azure-cloud-service-project-template.md) uzyskać szczegółowe informacje.
 
-W grupie **debugowania** :
+## <a name="debugging"></a>Debugging
 
-- **Ścieżki wyszukiwania**, **argumenty skryptu**, **argumenty interpretera**i **ścieżka interpretera**: te opcje są takie same jak w przypadku [normalnego debugowania](debugging-python-in-visual-studio.md).
-- **Adres URL uruchamiania**: określa adres URL, który jest otwarty w przeglądarce. Domyślna wartość `localhost`.
-- **Numer portu**: port, który ma być używany, jeśli żaden z nich nie jest określony w adresie URL (Domyślnie program Visual Studio wybierze opcję automatycznie). To ustawienie umożliwia przesłonięcie domyślnej wartości zmiennej środowiskowej `SERVER_PORT`, która jest używana przez szablony w celu skonfigurowania portu, na którym nasłuchuje lokalny serwer debugowania.
+Po uruchomieniu projektu sieci web do debugowania program Visual Studio uruchamia lokalny serwer sieci web na losowym porcie i otwiera domyślną przeglądarkę na ten adres i port. Aby określić dodatkowe opcje, kliknij projekt prawym przyciskiem myszy, wybierz polecenie **Właściwości**i wybierz kartę **Web Launcher:**
 
-Właściwości w grupach poleceń **Uruchom serwer** i **Debuguj serwer** (te ostatnie są poniżej informacji przedstawionych na obrazie) określają sposób uruchamiania serwera sieci Web. Ponieważ wiele struktur wymaga użycia skryptu poza bieżący projekt, w tym miejscu można skonfigurować skrypt i nazwa modułu uruchamiania może być przekazywany jako parametr.
+![Właściwości uruchamiania sieci Web dla ogólnego szablonu sieci Web](media/template-web-launcher-properties.png)
 
-- **Polecenie**: może to być skrypt w języku Python (plik *\*. PR* ), Nazwa modułu (jak w, `python.exe -m module_name`) lub jeden wiersz kodu (jak w, `python.exe -c "code"`). Wartość w polu listy rozwijanej wskazuje, który z tych typów jest przeznaczony.
-- **Argumenty**: te argumenty są przekazane w wierszu polecenia po poleceniu.
-- **Środowisko**: rozdzielana znakami wielowierszowa lista \<nazw > =\<wartość > par określająca zmienne środowiskowe. Te zmienne są ustawiane po wszystkich właściwości, które mogą być modyfikowane w środowisku, na przykład portu ścieżki numer i wyszukiwania, a więc może spowodować zastąpienie tych wartości.
+W grupie **debugowania:**
 
-Dowolna właściwość projektu lub zmienna środowiskowa może być określona za pomocą składni MSBuild, na przykład: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` jest ścieżką względną do pliku startowego, a `{StartupModule}` to nieportowa nazwa pliku startowego. `$(SERVER_HOST)` i `$(SERVER_PORT)` są normalnymi zmiennymi środowiskowymi, które są ustawiane przez właściwości **Uruchom adres URL** i **numer portu** , automatycznie lub przez właściwość **Environment** .
+- **Ścieżki wyszukiwania,** **argumenty skryptu,** **argumenty interpretera**i **ścieżka interpretera**: te opcje są takie same jak w przypadku [zwykłego debugowania.](debugging-python-in-visual-studio.md)
+- **Uruchom adres URL:** określa adres URL, który jest otwarty w przeglądarce. Domyślnie wartość `localhost`.
+- **Numer portu:** port do użycia, jeśli żaden nie jest określony w adresie URL (Visual Studio wybiera jeden automatycznie domyślnie). To ustawienie umożliwia zastąpienie domyślnej wartości `SERVER_PORT` zmiennej środowiskowej, która jest używana przez szablony do konfigurowania portu nasłuchiwał lokalnego serwera debugowania.
+
+Właściwości grup **Polecenia uruchamiania serwera** i polecenia serwera **debugowania** (te ostatnie znajdują się poniżej tego, co jest pokazane na obrazie) określają sposób uruchamiania serwera sieci web. Ponieważ wiele struktur wymaga użycia skryptu poza bieżącym projektem, skrypt można skonfigurować w tym miejscu, a nazwa modułu startowego może być przekazywana jako parametr.
+
+- **Polecenie**: może być skryptem Pythona ( `python.exe -m module_name` `python.exe -c "code"`*\*plik py),* nazwą modułu (jak w), lub pojedynczym wierszem kodu (jak w . ). Wartość w z listy rozwijanej wskazuje, który z tych typów jest przeznaczony.
+- **Argumenty:** te argumenty są przekazywane w wierszu polecenia po poleceniu.
+- **Środowisko:** oddzielona nowymi liniami \<lista>\<NAZWA = PARY> VALUE określające zmienne środowiskowe. Zmienne te są ustawiane po wszystkich właściwościach, które mogą modyfikować środowisko, takich jak numer portu i ścieżki wyszukiwania, a więc mogą zastąpić te wartości.
+
+Dowolną właściwość projektu lub zmienną środowiskową można określić za `$(StartupFile) --port $(SERVER_PORT)`pomocą składni MSBuild, na przykład: .
+`$(StartupFile)`jest względną ścieżką do `{StartupModule}` pliku startowego i jest importowaną nazwą pliku startowego. `$(SERVER_HOST)`i `$(SERVER_PORT)` są normalne zmienne środowiskowe, które są ustawiane przez **launch URL** i **numer portu** właściwości, automatycznie lub przez **Środowisko** właściwości.
 
 > [!Note]
-> Wartości w **poleceniu uruchamiania serwera** są używane z poleceniem **Debug** > **Start Server** lub **Ctrl**+**F5**; wartości w grupie **poleceń serwera debugowania** są używane z poleceniem **Debuguj** > **Uruchom serwer debugowania** lub **F5**.
+> Wartości w **polecenia uruchom serwer** są używane z poleceniem Uruchom**serwer** **debugowania** > lub **ctrl**+**F5**; wartości w grupie **Polecenia serwera debugowania** są używane z poleceniem **Debuguj** > **start serwera debugowania** lub **F5**.
 
-### <a name="sample-bottle-configuration"></a>Przykładowa konfiguracja Bottle
+### <a name="sample-bottle-configuration"></a>Konfiguracja butelki próbki
 
-Szablon **projektu sieci Web butelek** zawiera kod standardowy, który jest niezbędną konfiguracją. Zaimportowana aplikacja butelkowa nie może zawierać tego kodu, jednak w takim przypadku następujące ustawienia uruchamiają aplikację przy użyciu zainstalowanego modułu `bottle`:
+**Szablon Bottle Web Project** zawiera kod standardowy, który wykonuje niezbędną konfigurację. Zaimportowana aplikacja do butelek może nie zawierać tego kodu, jednak w `bottle` takim przypadku następujące ustawienia uruchamiają aplikację przy użyciu zainstalowanego modułu:
 
-- **Uruchom grupę poleceń serwera** :
-  - **Polecenie**: `bottle` (moduł)
-  - **Argumenty**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+- **Uruchom grupę poleceń serwera:**
+  - **Polecenie** `bottle` : (moduł)
+  - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-- Grupa **poleceń serwera debugowania** :
-  - **Polecenie**: `bottle` (moduł)
+- Grupa **poleceń serwera debugowania:**
+  - **Polecenie** `bottle` : (moduł)
   - **Argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-Opcja `--reload` nie jest zalecana w przypadku debugowania za pomocą programu Visual Studio.
+Ta `--reload` opcja nie jest zalecane podczas korzystania z programu Visual Studio do debugowania.
 
-### <a name="sample-pyramid-configuration"></a>Przykładowa konfiguracja ostrosłupowy
+### <a name="sample-pyramid-configuration"></a>Przykładowa konfiguracja piramidy
 
-Aplikacje ostrosłupowe są obecnie najlepiej utworzone przy użyciu narzędzia wiersza polecenia `pcreate`. Po utworzeniu aplikacji można ją zaimportować przy użyciu [**istniejącego szablonu kodu języka Python**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) . Po wykonaniu tej czynności wybierz **Ogólne dostosowanie projektu sieci Web** , aby skonfigurować opcje. W tych ustawieniach przyjęto założenie, że ostrosłup jest instalowany w środowisku wirtualnym w `..\env`.
+Aplikacje Pyramid są obecnie `pcreate` najlepiej tworzone za pomocą narzędzia wiersza polecenia. Po utworzeniu aplikacji można ją zaimportować za pomocą szablonu [**Z istniejącego kodu Języka Python.**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) Następnie wybierz dostosowanie **ogólnego projektu sieci Web,** aby skonfigurować opcje. Te ustawienia zakładają, że program `..\env`Pyramid jest instalowany w środowisku wirtualnym w pliku .
 
-- Grupa **debugowania** :
-  - **Port serwera**: 6543 (lub niezależnie od tego, czy jest skonfigurowany w plikach *. ini* )
+- Grupa **debugowania:**
+  - **Port serwera:** 6543 (lub cokolwiek jest skonfigurowane w plikach *.ini)*
 
-- **Uruchom grupę poleceń serwera** :
+- **Uruchom grupę poleceń serwera:**
   - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
-  - Argumenty: `Production.ini`
+  - Argumenty:`Production.ini`
 
-- Grupa **poleceń serwera debugowania** :
+- Grupa **poleceń serwera debugowania:**
   - Polecenie: `..\env\scripts\pserve-script.py` (skrypt)
-  - Argumenty: `Development.ini`
+  - Argumenty:`Development.ini`
 
 > [!Tip]
-> Prawdopodobnie trzeba będzie skonfigurować właściwość **katalogu roboczego** projektu, ponieważ aplikacje ostrosłupowe są zazwyczaj jednym folderem poniżej katalogu głównego projektu.
+> Prawdopodobnie trzeba skonfigurować właściwość **katalogu roboczego** projektu, ponieważ aplikacje Pyramid są zazwyczaj jeden folder poniżej katalogu głównego projektu.
 
 ### <a name="other-configurations"></a>Inne konfiguracje
 
-Jeśli masz ustawienia dla innej struktury, którą chcesz udostępnić, lub jeśli chcesz zażądać ustawień dla innej platformy, Otwórz [problem w usłudze GitHub](https://github.com/Microsoft/PTVS/issues).
+Jeśli masz ustawienia innej struktury, które chcesz udostępnić, lub jeśli chcesz poprosić o ustawienia innej struktury, otwórz [problem w GitHub](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="convert-a-project-to-azure-cloud-service"></a>Konwertuj projekt na usługi w chmurze Azure
+## <a name="convert-a-project-to-azure-cloud-service"></a>Konwertowanie projektu na usługę Azure Cloud Service
 
-Polecenie **Konwertuj do Microsoft Azure projektu usługi w chmurze** (obraz poniżej) umożliwia dodanie projektu usługi w chmurze do rozwiązania. Ten projekt zawiera ustawienia wdrażania i konfiguracji dla maszyn wirtualnych i usług, które ma być używany. Użyj polecenia **Publikuj** w projekcie w chmurze, aby wdrożyć w Cloud Services; polecenie **Publikuj** w projekcie w języku Python jest nadal wdrażane w witrynach sieci Web. Aby uzyskać więcej informacji, zobacz [projekty usług w chmurze platformy Azure](python-azure-cloud-service-project-template.md).
+Polecenie **Konwertuj na usługę w chmurze platformy Microsoft Azure** (obrazek poniżej) dodaje do rozwiązania projekt usługi w chmurze. Ten projekt zawiera ustawienia wdrażania i konfigurację maszyn wirtualnych i usług, które mają być używane. Użyj polecenia **Publikuj** w projekcie w chmurze, aby wdrożyć je w usługach w chmurze; Polecenie **Publikuj** w projekcie języka Python nadal jest wdrażane w witrynach sieci Web. Aby uzyskać więcej informacji, zobacz [Projekty usług w chmurze platformy Azure](python-azure-cloud-service-project-template.md).
 
-![Konwertuj na projekt usługi chmury Microsoft Azure — polecenie](media/template-web-convert-menu.png)
+![Konwersja na polecenie projektu usługi w chmurze platformy Microsoft Azure](media/template-web-convert-menu.png)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Dokumentacja szablonów elementów języka Python](python-item-templates.md)
+- [Odwołanie do szablonów elementów języka Python](python-item-templates.md)
 - [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

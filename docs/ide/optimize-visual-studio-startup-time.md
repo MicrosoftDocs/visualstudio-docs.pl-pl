@@ -1,5 +1,5 @@
 ---
-title: Poprawić czas uruchamiania
+title: Skrócenie czasu uruchamiania
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,61 +15,61 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4824939b4ef3ed1bc7fa48b2508fc891c984a3c5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585785"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301868"
 ---
-# <a name="optimize-visual-studio-startup-time"></a>Optymalizowanie czasu uruchamiania programu Visual Studio
+# <a name="optimize-visual-studio-startup-time"></a>Optymalizacja czasu uruchamiania programu Visual Studio
 
-Program Visual Studio jest przeznaczony do uruchamiania tak szybko i skutecznie, jak to możliwe. Jednak niektóre rozszerzenia programu Visual Studio i okien narzędzi może niekorzystnie wpłynąć na czas uruchamiania, gdy są ładowane. Można kontrolować zachowanie rozszerzeń powolne i okien narzędzi w **zarządzanie wydajnością programu Visual Studio** okno dialogowe. Aby uzyskać bardziej ogólne porady dotyczące poprawy wydajności, zobacz [i porady dotyczące wydajności programu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
+Visual Studio jest przeznaczony do uruchamiania tak szybko i wydajnie, jak to możliwe. Jednak niektóre rozszerzenia programu Visual Studio i okna narzędzi może niekorzystnie wpłynąć na czas uruchamiania podczas ich ładowania. W oknie dialogowym Zarządzanie wydajnością programu **Visual Studio** można kontrolować zachowanie wolnych rozszerzeń i okien narzędzi. Aby uzyskać bardziej ogólne wskazówki dotyczące poprawy wydajności, zobacz [Porady i wskazówki dotyczące wydajności programu Visual Studio.](../ide/visual-studio-performance-tips-and-tricks.md)
 
 ## <a name="startup-behavior"></a>Zachowanie podczas uruchamiania
 
-Aby uniknąć wydłużenia czasu uruchamiania, program Visual Studio ładuje rozszerzenia przy użyciu podejścia _na żądanie_ . To zachowanie oznacza, że rozszerzenia nie otwieraj natychmiast po uruchomieniu programu Visual Studio, ale na zgodnie z potrzebami. Ponadto ponieważ okien narzędzi pozostawione otwarte w poprzedniej sesji programu Visual Studio może zmniejszyć czas uruchamiania, Visual Studio otwiera okien narzędzi w sposób bardziej inteligentne, aby uniknąć wpływu na czas uruchamiania.
+Aby uniknąć wydłużenia czasu uruchamiania, visual studio ładuje rozszerzenia przy użyciu podejścia _na żądanie._ To zachowanie oznacza, że rozszerzenia nie otwierają się natychmiast po uruchomieniu programu Visual Studio, ale zgodnie z potrzebami. Ponadto ponieważ okna narzędzi pozostawione otwarte w poprzedniej sesji programu Visual Studio może spowolnić czas uruchamiania, Visual Studio otwiera okna narzędzi w bardziej inteligentny sposób, aby uniknąć wpływu na czas uruchamiania.
 
-Jeśli program Visual Studio wykryje powolne uruchamiania, pojawi się komunikat podręczny, wysyłać alerty o oknie rozszerzenia lub narzędzia, które jest przyczyną spowolnienia. Wiadomość z linkiem do **zarządzanie wydajnością programu Visual Studio** okno dialogowe. Można również otworzyć to okno dialogowe, wybierając **pomocy** > **zarządzanie wydajnością programu Visual Studio** z paska menu.
+Jeśli program Visual Studio wykryje powolne uruchamianie, zostanie wyświetlony komunikat wyskakujący z ostrzeżeniem o rozszerzeniu lub oknie narzędzia, które powoduje spowolnienie. Komunikat zawiera łącze do okna dialogowego **Zarządzanie wydajnością programu Visual Studio.** Dostęp do tego okna dialogowego można również uzyskać, wybierając **pozycję Pomoc w** > **zarządzaniu wydajnością programu Visual Studio** na pasku menu.
 
-![Zarządzanie wydajnością programu Visual Studio — okno podręczne odczytywanie "Zauważyliśmy tego rozszerzenia... spowalnia program Visual Studio"](../ide/media/vside_perfdialog_popup.png)
+![Zarządzanie wydajnością programu Visual Studio — wyskakujące okienko "Zauważyliśmy, że rozszerzenie ... spowalnia program Visual Studio'](../ide/media/vside_perfdialog_popup.png)
 
-Okno dialogowe wyświetla okna narzędzia i rozszerzenia, które mają wpływ na wydajność uruchamiania. Możesz zmienić narzędzia i rozszerzenia ustawień okna, aby zwiększyć wydajność uruchamiania.
+W oknie dialogowym wymieniono rozszerzenia i narzędzia systemu Windows, które mają wpływ na wydajność uruchamiania. Można zmienić ustawienia rozszerzenia i okna narzędzia, aby poprawić wydajność uruchamiania.
 
-## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Aby zmienić ustawienia rozszerzenia w celu uruchamiania, ładowanie rozwiązania i wpisując wydajności
+## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Aby zmienić ustawienia rozszerzenia w celu zwiększenia wydajności uruchamiania, ładowania rozwiązania i wpisywania tekstu
 
-1. Otwórz **zarządzanie wydajnością programu Visual Studio** okno dialogowe, wybierając **pomocy** > **zarządzanie wydajnością programu Visual Studio** z paska menu.
+1. Otwórz okno dialogowe **Zarządzanie wydajnością programu Visual Studio,** wybierając **pozycję Pomoc w** > **zarządzaniu wydajnością programu Visual Studio** na pasku menu.
 
-    Jeśli rozszerzenie spowalnia uruchamiania programu Visual Studio, ładowania, rozwiązania lub pisania, rozszerzenia pojawia się w **zarządzanie wydajnością programu Visual Studio** okno dialogowe, w obszarze **rozszerzenia**  >   **Uruchamianie** (lub **ładowania rozwiązań** lub **wpisując**).
+    Jeśli rozszerzenie spowalnia uruchamianie programu Visual Studio, ładowanie lub wpisywanie, rozszerzenie pojawi się w oknie dialogowym **Zarządzanie wydajnością programu Visual Studio** w obszarze**Uruchamianie** **rozszerzeń** > (lub **Ładowanie rozwiązania** lub **Wpisywanie**tekstu).
 
-    ![Zarządzanie wydajnością programu Visual Studio — widok rozszerzenia](../ide/media/vside_perfdialog_extensions.png)
+    ![Zarządzanie wydajnością programu Visual Studio — widok rozszerzeń](../ide/media/vside_perfdialog_extensions.png)
 
-2. Wybierz rozszerzenie, aby wyłączyć, a następnie wybierz **wyłączyć** przycisku.
+2. Wybierz rozszerzenie, które chcesz wyłączyć, a następnie wybierz przycisk **Wyłącz.**
 
-Można zawsze ponownie włączyć rozszerzenie dla przyszłych sesji przy użyciu **Menedżera rozszerzeń** lub **zarządzanie wydajnością programu Visual Studio** okno dialogowe.
+Zawsze można ponownie włączyć rozszerzenie dla przyszłych sesji przy użyciu **Menedżera rozszerzeń** lub okna dialogowego **Zarządzanie wydajnością programu Visual Studio.**
 
-## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Aby zmienić ustawienia okna narzędzia, aby poprawić czas uruchamiania
+## <a name="to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Aby zmienić ustawienia okna narzędzia w celu skrócenia czasu uruchamiania
 
-1. Otwórz **zarządzanie wydajnością programu Visual Studio** okno dialogowe, wybierając **pomocy** > **zarządzanie wydajnością programu Visual Studio** z paska menu.
+1. Otwórz okno dialogowe **Zarządzanie wydajnością programu Visual Studio,** wybierając **pozycję Pomoc w** > **zarządzaniu wydajnością programu Visual Studio** na pasku menu.
 
-    Jeśli okno narzędzia spowalnia uruchamiania programu Visual Studio, okno narzędzia pojawi się w **zarządzanie wydajnością programu Visual Studio** okno dialogowe, w obszarze **narzędzie Windows** > **uruchamiania**.
+    Jeśli okno narzędzia spowalnia uruchamianie programu Visual Studio, w oknie dialogowym **Zarządzanie wydajnością programu Visual Studio** w obszarze**Uruchamianie** **narzędzia systemu Windows** > pojawi się okno narzędzia .
 
-2. Wybierz okno narzędzia, aby zmienić zachowanie.
+2. Wybierz okno narzędzia, dla którego chcesz zmienić zachowanie.
 
 3. Wybierz jedną z następujących trzech opcji:
 
-   - **Użyj zachowania domyślnego:** domyślne zachowanie dla okna narzędzia. Utrzymywanie wybrania tej opcji nie poprawi wydajność uruchamiania.
+   - **Użyj zachowania domyślnego:** Domyślne zachowanie okna narzędzia. Utrzymanie tej opcji wybraną nie poprawi wydajności uruchamiania.
 
-   - **Nie pokazuj okna przy uruchamianiu:** oknie określonego narzędzia jest zawsze zamknięte po otwarciu programu Visual Studio, nawet wtedy, gdy zostanie on otwarty w poprzedniej sesji. Możesz otworzyć okno narzędzia menu odpowiednie, gdy będą potrzebne.
+   - **Nie pokazuj okna przy starcie:** Okno określonego narzędzia jest zawsze zamykane po otwarciu programu Visual Studio, nawet jeśli zostało ono otwarte w poprzedniej sesji. Okno narzędzia można otworzyć z odpowiedniego menu, gdy jest to potrzebne.
 
-   - **Automatycznie Ukryj okno przy uruchamianiu:** Jeśli okno narzędzia zostało pozostawione otwarte w poprzedniej sesji, ta opcja zwija grupy okna narzędzi przy uruchamianiu w celu uniknięcia Inicjowanie okna narzędzia. Ta opcja jest dobrym rozwiązaniem, jeśli często używane okna narzędzi. Okna narzędzi jest nadal dostępna, ale nie będzie miało negatywny wpływ na czas uruchamiania programu Visual Studio.
+   - **Automatyczne ukrywanie okna podczas uruchamiania:** Jeśli okno narzędzia zostało otwarte w poprzedniej sesji, ta opcja zwija grupę okna narzędzia podczas uruchamiania, aby uniknąć inicjowania okna narzędzia. Ta opcja jest dobrym wyborem, jeśli często używasz okna narzędzia. Okno narzędzia jest nadal dostępne, ale nie wpływa już negatywnie na czas uruchamiania programu Visual Studio.
 
-     ![Zarządzanie wydajnością programu Visual Studio — wyświetlanie okien narzędzi](../ide/media/vside_perfdialog_toolwindows.png)
+     ![Zarządzanie wydajnością programu Visual Studio — widok systemu windows narzędzi](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> Niektóre starsze wersje programu Visual Studio 2017 ma funkcję o nazwie **uproszczone ładowanie rozwiązań**. W bieżących wersjach, duże rozwiązania zawierające kod zarządzany znacznie szybciej niż wcześniej, nawet bez uproszczonego ładowania rozwiązania.
+> Niektóre wcześniejsze wersje programu Visual Studio 2017 miały funkcję o nazwie **lekkie obciążenie rozwiązania.** W bieżących wersjach duże rozwiązania, które zawierają zarządzany kod, ładują się znacznie szybciej niż poprzednio, nawet bez lekkiego obciążenia rozwiązania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Optymalizacja wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Porady dotyczące wydajności programu Visual Studio i wskazówki](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Blog Visual Studio — rozwiązania obciążenia szybciej za pomocą programu Visual Studio 2017 w wersji 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Optymalizowanie wydajności programu Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Porady i wskazówki dotyczące wydajności programu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Blog programu Visual Studio — szybsze ładowanie rozwiązań za pomocą programu Visual Studio 2017 w wersji 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

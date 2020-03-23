@@ -14,72 +14,72 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596934"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 
-Za pomocą okna dialogowego **Ustawienia AdvancedCompiler** **projektanta projektu** można określić zaawansowane właściwości kompilacji — konfiguracja. To okno dialogowe dotyczy tylko projektów Visual Basic.
+Użyj okna dialogowego **Zaawansowane ustawienia kompilatora** **projektanta projektu,** aby określić właściwości zaawansowanej konfiguracji kompilacji projektu. To okno dialogowe dotyczy tylko projektów języka Visual Basic.
 
 ## <a name="to-access-this-dialog-box"></a>Aby uzyskać dostęp do tego okna dialogowego
 
-1. W **Eksplorator rozwiązań**wybierz węzeł projektu (nie węzeł **rozwiązania** ).
+1. W **Eksploratorze rozwiązań**wybierz węzeł projektu (nie węzeł **Rozwiązanie).**
 
-2. W menu **projekt** kliknij polecenie **Właściwości**. Gdy pojawi się **Projektant projektu** , kliknij kartę **kompilacja** .
+2. W menu **Projekt** kliknij polecenie **Właściwości**. Po wyświetleniu **projektanta projektu** kliknij kartę **Kompilacja.**
 
-3. Na [stronie kompilacja, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)wybierz **konfigurację** i **platformę**. W uproszczonych konfiguracjach kompilacji listy **konfiguracji** i **platformy** nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [How to: Set Debug and Release Configurations](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Na [stronie Kompilacja projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)wybierz **opcję Konfiguracja** i **platforma**. W uproszczonych konfiguracjach kompilacji nie są wyświetlane listy **Konfiguracja** i **Platforma.** Aby uzyskać więcej informacji, zobacz [Jak: Ustawianie konfiguracji debugowania i zwalniania](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4. Kliknij pozycję **Zaawansowane opcje kompilacji**.
+4. Kliknij **pozycję Opcje kompilacji zaawansowanej**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="optimizations"></a>Optymalizacje
 
-Poniższe opcje określają optymalizacje, które w niektórych przypadkach sprawiają, że plik programu jest mniejszy, szybsze działanie programu lub przyspieszenie procesu kompilacji.
+Następujące opcje określają optymalizacje, które w niektórych przypadkach mogą zmniejszyć plik programu, przyspieszyć uruchamianie programu lub przyspieszyć proces kompilacji.
 
-**Usuń sprawdzanie przepełnienia liczby całkowitej**
+**Usuwanie kontroli przepełnienia liczby całkowitej**
 
-To pole wyboru jest domyślnie wyczyszczone, aby włączyć sprawdzanie przepełnienia liczby całkowitej. Zaznacz to pole wyboru, aby usunąć sprawdzanie przepełnienia liczby całkowitej. Jeśli zaznaczysz to pole wyboru, obliczenia liczby całkowitej mogą być szybsze. Jeśli jednak usuniesz sprawdzanie przeciążenia i przepełnienie pojemności typu danych, nieprawidłowe wyniki mogą być przechowywane bez zgłaszania błędu.
+To pole wyboru jest domyślnie wyczyszczone, aby włączyć sprawdzanie przepełnienia liczby całkowitej. Zaznacz to pole wyboru, aby usunąć sprawdzanie przepełnienia liczby całkowitej. Jeśli zaznaczysz to pole wyboru, obliczenia liczby całkowitej mogą być szybsze. Jednak w przypadku usunięcia kontroli przepełnienia i przepełnienie pojemności typu danych, niepoprawne wyniki mogą być przechowywane bez wywoływania błędu.
 
-Jeśli sprawdzane są warunki przepełnienia, a operacja całkowita przekracza przepływ, zostanie zgłoszony wyjątek <xref:System.OverflowException>. Jeśli warunki przepełnienia nie są zaznaczone, operacje typu Integer przekraczają wyjątek.
+Jeśli warunki przepełnienia są sprawdzane i operacja całkowita <xref:System.OverflowException> przepełnienia, wyjątek. Jeśli warunki przepełnienia nie są sprawdzane, przepełnienia operacji całkowitej nie zgłaszają wyjątku.
 
 **Włącz optymalizacje**
 
-To pole wyboru jest domyślnie wyczyszczone, aby wyłączyć optymalizacje kompilatora. Zaznacz to pole wyboru, aby włączyć optymalizacje kompilatora. Optymalizacje kompilatora sprawiają, że plik wyjściowy jest mniejszy, szybszy i bardziej wydajny. Jednakże, ponieważ optymalizacje powodują ponowne rozmieszczanie kodu w pliku wyjściowym, optymalizacje kompilatora mogą utrudniać debugowanie.
+To pole wyboru jest domyślnie wyczyszczone, aby wyłączyć optymalizacje kompilatora. Zaznacz to pole wyboru, aby włączyć optymalizacje kompilatora. Optymalizacje kompilatora sprawiają, że plik wyjściowy jest mniejszy, szybszy i wydajniejszy. Jednak ponieważ optymalizacje powodują zmianę rozmieszczenia kodu w pliku wyjściowym, optymalizacje kompilatora może utrudnić debugowanie.
 
  **Adres podstawowy biblioteki DLL**
 
-To pole tekstowe wyświetla domyślny adres bazy DLL w formacie szesnastkowym. W obszarze Biblioteka klas i projekty bibliotek formantów można użyć tego pola tekstowego, aby określić adres podstawowy, który ma być używany podczas tworzenia biblioteki DLL.
+W tym polu tekstowym jest wyświetlany domyślny adres bazowy biblioteki DLL w formacie szesnastowym. W projektach biblioteki klas i biblioteki sterowania można użyć tego pola tekstowego, aby określić adres podstawowy, który ma być używany podczas tworzenia biblioteki DLL.
 
- **Generuj informacje o debugowaniu**
+ **Generowanie informacji o debugowaniu**
 
-Z listy wybierz opcję **Brak**, **pełna**lub **PDB** . **Brak** określa, że nie są generowane żadne informacje debugowania. **Pełna** określa, że mają zostać wygenerowane pełne informacje o debugowaniu, a **PDB-tylko** określa, że powinny być generowane tylko informacje debugowania PDB. Wartość domyślna tej opcji jest **pełna**.
+Z listy wybierz **opcję Brak,** **Pełna**lub **PDB.** **Brak** określa, że nie można wygenerować żadnych informacji debugowania. **Full** określa, że pełne informacje debugowania mają być generowane, a **pdb-only** określa, że tylko informacje debugowania PDB powinny być generowane. Wartością domyślną dla tej opcji jest **Pełna**.
 
 ## <a name="compilation-constants"></a>Stałe kompilacji
 
-Stałe kompilacji warunkowej mają efekt podobny do tego w przypadku używania dyrektywy preprocesora [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) w pliku źródłowym, z wyjątkiem tego, że stałe są zdefiniowane i mają zastosowanie do wszystkich plików w projekcie. Możesz użyć stałych kompilacji warunkowej razem z [#If... Następnie... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) dyrektywa do kompilowania plików źródłowych warunkowo. Zobacz [Kompilacja warunkowa](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
+Stałe kompilacji warunkowej mają działanie podobne do tego, że przy użyciu dyrektywy preprocesora [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) w pliku źródłowym, z tą różnicą, że zdefiniowane stałe są publiczne i mają zastosowanie do wszystkich plików w projekcie. Można użyć stałych kompilacji warunkowej wraz z [#If... Następnie ... #Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) dyrektywy do kompilacji plików źródłowych warunkowo. Zobacz [Kompilacja warunkowa](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation).
 
  **Zdefiniuj stałą DEBUG**
 
-To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała debugowania.
+Domyślnie to pole wyboru jest zaznaczone, określając, że ustawiona jest stała DEBUG.
 
  **Zdefiniuj stałą TRACE**
 
-To pole wyboru jest domyślnie zaznaczone, co oznacza, że jest ustawiona stała śledzenia.
+Domyślnie to pole wyboru jest zaznaczone, określając, że ustawiono stałą TRACE.
 
  **Stałe niestandardowe**
 
-Wprowadź dowolne niestandardowe stałe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, przy użyciu tej formy: **Name1 = "wartość1", NAME2 = "wartość2", nazwa3 = "wartość3"** .
+Wprowadź wszystkie stałe niestandardowe dla aplikacji w tym polu tekstowym. Wpisy powinny być rozdzielane przecinkami, używając tego formularza: **Name1="Value1,"Name2="Value2,"Name3="Value3"**.
 
 ## <a name="other-settings"></a>Inne ustawienia
 
-**Generuj zestawy serializacji**
+**Generowanie zestawów serializacji**
 
-To ustawienie określa, czy kompilator ma tworzyć zestawy serializacji XML. Zestawy serializacji mogą zwiększyć wydajność uruchamiania <xref:System.Xml.Serialization.XmlSerializer>, jeśli użyto tej klasy do serializacji typów w kodzie. Wartość domyślna tej opcji to **Auto.** **Automatycznie** określa, że zestawy serializacji mają być generowane tylko wtedy, gdy użyto <xref:System.Xml.Serialization.XmlSerializer> do kodowania typów w kodzie do formatu XML. **Wyłączone** określa, że zestawy serializacji nigdy nie są generowane, bez względu na to, czy kod używa <xref:System.Xml.Serialization.XmlSerializer>. **Na** określa, że zestawy serializacji zawsze są generowane. Zestawy serializacji mają nazwę `TypeName`. XmlSerializers. dll.
+To ustawienie określa, czy kompilator utworzy zestawy serializacji XML. Zestawy serializacji można poprawić wydajność <xref:System.Xml.Serialization.XmlSerializer> uruchamiania, jeśli używasz tej klasy do serializacji typów w kodzie. Wartością domyślną dla tej opcji jest **Auto**. **Auto** określa, że zestawy serializacji są generowane <xref:System.Xml.Serialization.XmlSerializer> tylko wtedy, gdy użyto do kodowania typów w kodzie do XML. **Off** określa, że zestawy serializacji nigdy nie są generowane, <xref:System.Xml.Serialization.XmlSerializer>niezależnie od tego, czy używany jest kod. **Na** określa, że zestawy serializacji zawsze być generowane. Zestawy serializacji mają `TypeName`nazwy . XmlSerializers.dll.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

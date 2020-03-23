@@ -1,6 +1,6 @@
 ---
 title: Uruchamianie testu jednostkowego jako procesu 64-bitowego
-ms.date: 11/04/2016
+ms.date: 03/10/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
@@ -10,31 +10,42 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 67a614ed164b12070fe40f24cdba09a3051e36a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d6c6839f8c4702d88d1022116231c6f22b5dbf21
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75566257"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093917"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Uruchamianie testu jednostkowego jako procesu 64-bitowego
 
-W przypadku komputera 64-bitowego, można uruchomić testy jednostkowe i przechwytywanie informacji o pokryciu kodu jako procesu 64-bitowego.
+Jeśli masz komputer 64-bitowy, możesz uruchomić testy jednostkowe i przechwycić informacje o pokryciu kodu jako proces 64-bitowy.
 
-## <a name="to-run-a-unit-test-as-a-64-bit-process"></a>Do uruchomienia testu jednostkowego jako procesu 64-bitowego
+## <a name="to-run-a-unit-test-as-a-64-bit-process"></a>Aby uruchomić test jednostkowy jako proces 64-bitowy
 
-1. Jeśli kodu lub testy zostały skompilowane dla architektury 32-bitowy/x86, ale chcesz uruchamiać je jako procesu 64-bitowego, należy ponownie skompilować je jako **dowolny Procesor**, lub opcjonalnie **64-bitowych**.
+1. Jeśli kod lub testy zostały skompilowane jako 32-bitowe/x86, ale teraz chcesz uruchomić je jako proces 64-bitowy, ponownie skompiluj je jako **dowolny procesor**.
+
+   ::: moniker range="vs-2017"
+   Alternatywnie w programie Visual Studio 2017 można również skompilować projekt jako **64-bitowy.**
+   ::: moniker-end
 
     > [!TIP]
-    > Aby zapewnić maksymalną elastyczność, należy skompilować testowane projekty z **dowolny Procesor** konfiguracji. Następnie można uruchomić zarówno 32-bitowych i 64-bitowych agentów. Nie posiada zalet kompilowanie projektów testowych mających **64-bitowych** konfiguracji.
+    > Aby uzyskać maksymalną elastyczność, skompiluj projekty testowe za pomocą dowolnej konfiguracji **procesora CPU.** Następnie można uruchomić zarówno na agentach 32-bitowych, jak i 64-bitowych. Nie ma żadnych korzyści do kompilacji projektów testowych z konfiguracją **64-bitową.**
 
-2. Wybierz z menu programu Visual Studio **testu**, następnie wybierz **ustawienia**, a następnie wybierz **architektury procesora**. Wybierz **x64** do uruchamiania testów jako procesu 64-bitowego.
+2. Ustaw testy jednostkowe tak, aby działały jako proces 64-bitowy.
 
-   - lub —
+   ::: moniker range=">=vs-2019"
+   Z menu Visual Studio wybierz polecenie **Testuj**, a następnie wybierz polecenie **Architektura procesora dla projektów AnyCPU**. Wybierz **x64,** aby uruchomić testy jako proces 64-bitowy.
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Z menu Visual Studio wybierz polecenie **Testuj**, a następnie wybierz polecenie **Ustawienia testu**, a następnie wybierz polecenie **Architektura procesora**. Wybierz **x64,** aby uruchomić testy jako proces 64-bitowy.
+   ::: moniker-end
 
-   Określ `<TargetPlatform>x64</TargetPlatform>` w *.runsettings* pliku. Zaletą tej metody jest, że można określić grupy ustawień w różnych plikach i szybkie przełączanie się między różnymi ustawieniami. Ponadto można kopiować ustawienia między rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+   \-lub -
 
-## <a name="see-also"></a>Zobacz także
+   Określ `<TargetPlatform>x64</TargetPlatform>` w pliku *runsettings.* Zaletą tej metody jest to, że można określić grupy ustawień w różnych plikach i szybko przełączać się między różnymi ustawieniami. Można również kopiować ustawienia między rozwiązaniami. Aby uzyskać więcej informacji, zobacz [Konfigurowanie testów jednostkowych przy użyciu pliku runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
+
+## <a name="see-also"></a>Zobacz też
 
 - [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
+- [Jednostka przetestować swój kod](../test/unit-test-your-code.md)

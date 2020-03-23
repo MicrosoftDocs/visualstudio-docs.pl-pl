@@ -1,5 +1,5 @@
 ---
-title: Jak modelować tereny 3W
+title: 'Jak: Model 3D Terrain'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,52 +9,52 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589425"
 ---
-# <a name="how-to-model-3d-terrain"></a>Jak modelować tereny 3W
+# <a name="how-to-model-3d-terrain"></a>Jak: Model 3D terenu
 
-W tym artykule pokazano, jak za pomocą edytora modelu utworzyć model terenowy 3W.
+W tym artykule pokazano, jak za pomocą Edytora modeli do tworzenia modelu terenu 3D.
 
-## <a name="create-a-3d-terrain-model"></a>Tworzenie modelu terenowego 3W
+## <a name="create-a-3d-terrain-model"></a>Tworzenie modelu terenu 3D
 
-Można utworzyć trójwymiarowe przedzielenie płaszczyzny, aby utworzyć dodatkowe twarze, a następnie operować swoimi wierzchołkami w celu utworzenia interesujących funkcji terenu.
+Można utworzyć teren 3D, podzielając płaszczyznę, aby utworzyć dodatkowe ściany, a następnie manipulując ich wierzchołkami, aby utworzyć ciekawe obiekty terenu.
 
 Po zakończeniu model powinien wyglądać następująco:
 
-![Scena 3&#45;D, która przedstawia model terenu](../designers/media/digit-terrain-model.png)
+![3&#45;scena D, która pokazuje model terenu](../designers/media/digit-terrain-model.png)
 
-Przed rozpoczęciem upewnij się, że okno **Właściwości** i **Przybornik** są wyświetlane.
+Przed rozpoczęciem upewnij się, że są wyświetlane okna **Właściwości** i **Przybornik.**
 
-1. Utwórz model 3W, z którym chcesz korzystać. Aby uzyskać informacje o sposobach dodawania modelu do projektu, zobacz sekcję Wprowadzenie w [Edytorze modelu](../designers/model-editor.md).
+1. Utwórz model 3D, z którym ma być do pracy. Aby uzyskać informacje dotyczące dodawania modelu do projektu, zobacz sekcję Wprowadzenie w [edytorze modelu](../designers/model-editor.md).
 
-2. Dodaj płaszczyznę do sceny. W **przyborniku**, w obszarze **kształty**wybierz pozycję **płaszczyzna** i przenieś ją na powierzchnię projektu.
-
-    > [!TIP]
-    > Aby obiekt płaszczyzny był łatwiejszy do pracy, możesz go ramkować na powierzchni projektowej. W obszarze tryb **wyboru** wybierz obiekt płaszczyzny, a następnie na pasku narzędzi Edytor modelu wybierz przycisk **obiekt ramki** .
-
-3. Przejdź do trybu wyboru kroju. Na pasku narzędzi Edytor modelu wybierz **pozycję Wybierz opcję**.
-
-4. Podziel płaszczyznę. W trybie zaznaczania powierzchni wybierz płaszczyznę jednokrotną, aby ją uaktywnić do zaznaczenia, a następnie wybierz ją ponownie, aby zaznaczyć jej tylko. Na pasku narzędzi Edytor **modelu wybierz opcję**Podziel na siebie. Spowoduje to dodanie nowych wierzchołków do płaszczyzny dzielącej ją na cztery partycje o równym rozmiarze.
-
-5. Utwórz więcej podziałów. Po wybraniu nowych **twarzy** wybierz pozycję Podziel na dwie godziny. Spowoduje to utworzenie łącznej liczby 64 twarzy. Tworząc więcej podziałów, można bardziej szczegółowo udostępnić teren.
-
-6. Przejdź do trybu wyboru punktu. Na pasku narzędzi Edytor modelu wybierz pozycję **Wybierz punkt**.
-
-7. Zmodyfikuj punkt, aby utworzyć funkcję terenu. W trybie wyboru punktu wybierz jeden z punktów, a następnie na pasku narzędzi Edytor modelu wybierz narzędzie **tłumaczenie** . Pole reprezentujące punkt pojawia się na powierzchni projektowej. Użyj zieloną strzałkę, aby przenieść pole, a tym samym zmodyfikować wysokość punktu. Powtórz ten krok dla różnych punktów, aby utworzyć interesujące funkcje terenu.
+2. Dodaj płaszczyznę do sceny. W **przyborniku**w obszarze **Kształty**wybierz pozycję **Płaszczyzna** i przenieś ją na powierzchnię projektową.
 
     > [!TIP]
-    > Można wybrać kilka punktów jednocześnie, aby je zmodyfikować w jednolity sposób.
+    > Aby ułatwić pracę z obiektem płaszczyzny, można go oprawić w powierzchni projektowej. W trybie **wyboru** zaznacz obiekt płaszczyzny, a następnie na pasku narzędzi Edytor modelu wybierz przycisk **Obiekt ramki.**
 
-Model terenu został ukończony. Oto ponownie ostateczny model z zastosowanym cieniowaniem podstawowego Phong:
+3. Wprowadź tryb wyboru twarzy. Na pasku narzędzi Edytor modeli wybierz pozycję **Wybierz ścianę**.
 
-![Scena 3&#45;D, która przedstawia model terenu](../designers/media/digit-terrain-model.png)
+4. Podziel płaszczyznę. W trybie wyboru twarzy wybierz płaszczyznę raz, aby aktywować ją do wyboru, a następnie wybierz ją ponownie, aby wybrać jej jedyną ścianę. Na pasku narzędzi Edytor modeli wybierz pozycję **Podziel ścianę**. Spowoduje to dodanie nowych wierzchołków do płaszczyzny, które dzielą go na cztery partycje o jednakowym rozmiarze.
 
-Możesz użyć tego modelu terenu, aby zademonstrować efekt cieniowania gradientu, który jest opisany w [instrukcje: Tworzenie cieniowania gradientowego opartego na geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+5. Tworzenie większej liczby podpodziałów. Gdy nowe ściany są nadal zaznaczone, wybierz opcję **Podziel twarz** jeszcze dwa razy. Spowoduje to utworzenie łącznie 64 ścian. Tworząc więcej pododdziałów, można nadać terenowi jeszcze więcej szczegółów.
 
-## <a name="see-also"></a>Zobacz także
+6. Wprowadź tryb wyboru punktu. Na pasku narzędzi Edytor modeli wybierz pozycję **Wybierz punkt**.
+
+7. Zmodyfikuj punkt, aby utworzyć operację terenu. W trybie wyboru punktów wybierz jeden z punktów, a następnie na pasku narzędzi Edytor modelu wybierz narzędzie **Tłumacz.** Pole reprezentujące punkt pojawi się na powierzchni projektowej. Użyj zielonej strzałki, aby przesunąć pole, a tym samym zmodyfikować wysokość punktu. Powtórz ten krok dla różnych punktów, aby utworzyć ciekawe obiekty terenu.
+
+    > [!TIP]
+    > Można wybrać kilka punktów jednocześnie, aby zmodyfikować je w jednolity sposób.
+
+Model terenu jest kompletny. Oto ostateczny model ponownie, z Phong cieniowania stosowane:
+
+![3&#45;scena D, która pokazuje model terenu](../designers/media/digit-terrain-model.png)
+
+Za pomocą tego modelu terenu można zademonstrować wpływ modułu cieniującego gradientu opisanego w [temacie Jak: Tworzenie modułu cieniującego gradientu opartego na geometrii](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+
+## <a name="see-also"></a>Zobacz też
 
 - [Edytor modelu](../designers/model-editor.md)

@@ -14,140 +14,140 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596440"
 ---
 # <a name="toolbox-html-tab"></a>Przybornik, karta HTML
 
-Karta **HTML** przybornika zawiera składniki, które są przydatne w przypadku stron sieci Web i formularzy sieci Web. Aby wyświetlić tę kartę, najpierw Otwórz dokument do edycji w projektancie HTML. W menu **Widok** kliknij pozycję **Przybornik**, a następnie kliknij kartę **HTML** w przyborniku.
+Karta **HTML** przybornika zawiera składniki przydatne na stronach internetowych i formularzach internetowych. Aby wyświetlić tę kartę, najpierw otwórz dokument do edycji w projektancie HTML. W menu **Widok** kliknij polecenie **Przybornik**, a następnie kliknij kartę **HTML** przybornika.
 
-Aby utworzyć wystąpienie narzędzia na karcie **HTML** , kliknij dwukrotnie narzędzie, aby dodać je do dokumentu w bieżącym punkcie wstawiania, lub wybierz narzędzie i przeciągnij je do żądanej pozycji na powierzchni edycji.
+Aby utworzyć wystąpienie narzędzia na karcie **HTML,** kliknij dwukrotnie narzędzie, aby dodać je do dokumentu w bieżącym punkcie wstawiania, albo zaznacz narzędzie i przeciągnij je w żądane miejsce na powierzchni edycyjnej.
 
 ## <a name="ui-elements"></a>Elementy interfejsu użytkownika
 
-Następujące narzędzia są dostępne domyślnie na karcie HTML.
+Następujące narzędzia są domyślnie dostępne na karcie HTML.
 
-**Pointer**
+**Wskaźnik**
 
-![ASP.NET Mobile Designer — wskaźnik HTMLpage](../../ide/reference/media/vxpointer.gif)
+![ASP.NET Mobile Designer HTMLpage Wskaźnik](../../ide/reference/media/vxpointer.gif)
 
-To narzędzie jest domyślnie zaznaczone, gdy zostanie otwarta jakakolwiek karta przybornika. Nie można go usunąć. Wskaźnik umożliwia przeciąganie obiektów na widok Projekt powierzchni, zmianę ich rozmiaru i zmiana ich położenia na stronie lub w formularzu. Aby uzyskać więcej informacji, zobacz [przybornika](../../ide/reference/toolbox.md).
+To narzędzie jest zaznaczone domyślnie po otwarciu dowolnej karty Przybornik. Nie można go usunąć. Wskaźnik umożliwia przeciąganie obiektów na powierzchnię widoku Projekt, ich zmianę rozmiaru i zmianę ich położenia na stronie lub formularzu. Aby uzyskać więcej informacji, zobacz [Przybornik](../../ide/reference/toolbox.md).
 
-**Dane wejściowe (przycisk)**
+**Wejście (przycisk)**
 
-![Przycisk strony sieci Web HTML](../../ide/reference/media/vxbutton.gif)
+![Przycisk strony internetowej HTML](../../ide/reference/media/vxbutton.gif)
 
-Wstawia element `input` `type="button"`. Aby zmienić wyświetlany tekst, Edytuj Właściwość `name`. Domyślnie `id="Button1"` jest wstawiany dla pierwszego przycisku, `id="Button2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="button"`. Aby zmienić wyświetlany tekst, edytuj `name` właściwość. Domyślnie `id="Button1"` jest wstawiany dla `id="Button2"` pierwszego przycisku, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (przycisk)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **wejścia (przycisku)** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
-**Dane wejściowe (Reset)**
+**Wejście (reset)**
 
-![Zrzut ekranu HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
+![HTMLpageResetButton zrzut ekranu](../../ide/reference/media/vxreset.gif)
 
-Wstawia element `input` `type="reset"`. Aby zmienić wyświetlany tekst, Edytuj Właściwość `name`. Domyślnie `id="Reset1"` jest wstawiany dla pierwszego przycisku resetowania, `id="Reset2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="reset"`. Aby zmienić wyświetlany tekst, edytuj `name` właściwość. Domyślnie `id="Reset1"` jest wstawiany dla `id="Reset2"` pierwszego przycisku resetowania, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (Reset)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **wejścia (resetowania)** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <input id="Reset1" type="reset" value="Reset" name="Reset1">
 ```
 
-**Dane wejściowe (Prześlij)**
+**Dane wejściowe (prześlij)**
 
-![Zrzut ekranu HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
+![HTMLpageToolbarSubmitButton zrzut ekranu](../../ide/reference/media/vxsubmit.gif)
 
-Wstawia element `input` `type="submit"`. Aby zmienić wyświetlany tekst, Edytuj Właściwość `name`. Domyślnie `id="Submit1"` jest wstawiany dla pierwszego przycisku przesyłania, `id="Submit2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="submit"`. Aby zmienić wyświetlany tekst, edytuj `name` właściwość. Domyślnie `id="Submit1"` jest wstawiany dla `id="Submit2"` pierwszego przycisku przesyłania, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (submit)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **danych wejściowych (prześlij)** na powierzchnię widoku Projekt znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
 
 ```html
 <input id="Submit1" type="submit" value="Submit" name="Submit1">
 ```
 
-**Dane wejściowe (tekst)**
+**Wprowadzanie (tekst)**
 
-![Zrzut ekranu HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
+![HTMLpageToolbarTextField zrzut ekranu](../../ide/reference/media/vxtextfield.gif)
 
-Wstawia element `input` `type="text"` do dokumentu. Aby zmienić domyślny tekst, który jest wyświetlany, Edytuj atrybut `value`. Domyślnie `id="Text1"` jest wstawiany dla pierwszego pola tekstowego, `id="Text2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="text"` w dokumencie. Aby zmienić wyświetlany tekst domyślny, `value` edytuj atrybut. Domyślnie `id="Text1"` jest wstawiany dla `id="Text2"` pierwszego pola tekstowego, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (tekst)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **danych wejściowych (tekst)** na powierzchnię widoku Projekt znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
 
 ```html
 <input id="Text1" TYPE="text" value="Text Field" name="Text1">
 ```
 
 > [!IMPORTANT]
->Zalecane jest zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika w witrynach ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+>Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Sprawdzanie poprawności danych wejściowych użytkownika w witrynach ASP.NET stron sieci Web (Razor).](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)
 
 **Dane wejściowe (plik)**
 
 ![Pole pliku strony HTML](../../ide/reference/media/vxfilefield.gif)
 
-Wstawia element `input` `type="file"` do dokumentu. Domyślnie `id="File1"` jest wstawiany dla pierwszego pola pliku, `id="File2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="file"` w dokumencie. Domyślnie `id="File1"` jest wstawiany dla `id="File2"` pierwszego pola pliku, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (pliki)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **input (File)** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <input id="File1" type="file" name="File1">
 ```
 
 > [!IMPORTANT]
-> Zalecane jest zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika w witrynach ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Sprawdzanie poprawności danych wejściowych użytkownika w witrynach ASP.NET stron sieci Web (Razor).](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)
 
 **Dane wejściowe (hasło)**
 
 ![Pole hasła programu Visual Studio](../../ide/reference/media/vxpassword.gif)
 
-Wstawia element `input` `type="password"`. Domyślnie `id="Password1"` jest wstawiany dla pierwszego pola hasła, `id="Password2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="password"`. Domyślnie `id="Password1"` jest wstawiany dla `id="Password2"` pierwszego pola hasła, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (hasła)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **danych wejściowych (hasło)** na powierzchnię widoku Projekt do dokumentu wstawiano znaczniki HTML, takie jak następujące:
 
 ```html
 <input id="Password1" type="password" name="Password1">
 ```
 
 > [!IMPORTANT]
-> Jeśli aplikacja przesyła nazwy i hasła użytkowników, należy skonfigurować witrynę sieci Web tak, aby używała SSL (SSL) do szyfrowania transmisji. Aby uzyskać więcej informacji, zobacz [Zabezpieczanie połączeń](/previous-versions/tn-archive/bb418917(v=technet.10)). Ponadto zaleca się zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika w witrynach ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Jeśli aplikacja przesyła nazwy użytkowników i hasła, należy skonfigurować witrynę sieci Web tak, aby do szyfrowania transmisji używała warstwy Secure Sockets Layer (SSL). Aby uzyskać więcej informacji, zobacz [Zabezpieczanie połączeń](/previous-versions/tn-archive/bb418917(v=technet.10)). Ponadto zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Sprawdzanie poprawności danych wejściowych użytkownika w witrynach ASP.NET stron sieci Web (Razor).](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)
 
-**Dane wejściowe (pole wyboru)**
+**Wprowadzanie (pole wyboru)**
 
-![Pole wyboru przybornika strony sieci Web HTML](../../ide/reference/media/vxcheckbox.gif)
+![Opcja pola wyboru pola wyboru pola narzędziowego strony HTML](../../ide/reference/media/vxcheckbox.gif)
 
-Wstawia element `input` `type="checkbox"`. Aby zmienić wyświetlany tekst, Edytuj Właściwość `name`. Domyślnie `id="Checkbox1"` jest wstawiany dla pierwszego pola wyboru, `id="Checkbox2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="checkbox"`. Aby zmienić wyświetlany tekst, edytuj `name` właściwość. Domyślnie `id="Checkbox1"` jest wstawiany dla `id="Checkbox2"` pierwszego pola wyboru, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (pola wyboru)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **opcji Input (pole wyboru)** na powierzchnię widoku Projekt do dokumentu wstawiano znaczniki HTML, takie jak następujące:
 
 ```html
 <input id="Checkbox1" type="checkbox" name="Checkbox1">
 ```
 
-**Dane wejściowe (Radio)**
+**Wejście (radio)**
 
-![Zrzut ekranu VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
+![VisualStudioHTMLpageRadioButton zrzut ekranu](../../ide/reference/media/vxradio.gif)
 
-Wstawia element `input` `type="radio"`. Aby zmienić wyświetlany tekst, Edytuj Właściwość `name`. Domyślnie `id="Radio1"` jest wstawiany dla pierwszego przycisku radiowego, `id="Radio2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="radio"`. Aby zmienić wyświetlany tekst, edytuj `name` właściwość. Domyślnie `id="Radio1"` jest wstawiany dla `id="Radio2"` pierwszego przycisku radiowego, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (Radio)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **wejścia (radia)** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <input id="Radio1" type="radio" name="Radio1">
 ```
 
-**Dane wejściowe (ukryte)**
+**Wejście (ukryte)**
 
 ![Ukryty element strony HTML](../../ide/reference/media/vxhidden.gif)
 
-Wstawia element `input` `type="hidden"`. Domyślnie `id="Hidden1"` jest wstawiany dla pierwszego pola ukrytego, `id="Hidden2"` dla drugiego i tak dalej.
+Wstawia `input` element `type="hidden"`. Domyślnie `id="Hidden1"` jest wstawiany dla `id="Hidden2"` pierwszego ukrytego pola, dla drugiego i tak dalej.
 
-Gdy przeciągasz **dane wejściowe (ukryte)** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **input (Hidden)** na powierzchnię widoku Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
 
 ```html
 <input id="Hidden1" type="hidden" name="Hidden1">
@@ -155,64 +155,64 @@ Gdy przeciągasz **dane wejściowe (ukryte)** na powierzchnię widok Projekt, zn
 
 **Obszar tekstu**
 
-![Obszar tekstu paska narzędzi HTMLpage](../../ide/reference/media/vxtextarea.gif)
+![Obszar tekstowy paska narzędzi HTMLpage](../../ide/reference/media/vxtextarea.gif)
 
-Wstawia element `textarea`. Można zmienić rozmiar obszaru tekstowego lub użyć pasków przewijania do wyświetlania tekstu, który wykracza poza obszar wyświetlania. Aby zmienić domyślny tekst, który jest wyświetlany, Edytuj atrybut `value`. Domyślnie `id="textarea1"` jest wstawiany pierwszy obszar tekstowy, `id=" textarea 2"` dla drugiego i tak dalej.
+Wstawia `textarea` element. Można zmienić rozmiar obszaru tekstu lub użyć jego pasków przewijania, aby wyświetlić tekst wykraczający poza obszar wyświetlania. Aby zmienić wyświetlany tekst domyślny, `value` edytuj atrybut. Domyślnie `id="textarea1"` jest wstawiany pierwszy `id=" textarea 2"` obszar tekstu, dla drugiego i tak dalej.
 
-Gdy przeciągasz składnik **TextArea** na powierzchnię widok Projekt, do dokumentu zostanie wstawiony znacznik HTML podobny do następującego:
+Podczas przeciągania **obszaru tekstowego** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <textarea id=" textarea 1 name=" textarea 1" rows=2 cols=20></textarea>
 ```
 
 > [!IMPORTANT]
-> Zalecane jest zweryfikowanie wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Weryfikowanie danych wejściowych użytkownika w witrynach ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Zaleca się sprawdzenie poprawności wszystkich danych wejściowych użytkownika. Aby uzyskać więcej informacji, zobacz [Sprawdzanie poprawności danych wejściowych użytkownika w witrynach ASP.NET stron sieci Web (Razor).](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)
 
-**Tabela**
+**Tabeli**
 
-![Zrzut ekranu HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
+![HTMLpageToolbarTable zrzut ekranu](../../ide/reference/media/vxtable.gif)
 
-Wstawia element `table`.
+Wstawia `table` element.
 
-Gdy przeciągniesz **tabelę** na powierzchnię widok Projekt, do dokumentu zostanie wstawiony znacznik HTML podobny do następującego:
+Podczas przeciągania **tabeli** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>
 ```
 
-**Obraz**
+**Obrazu**
 
 ![Element obrazu strony HTML](../../ide/reference/media/vximage.gif)
 
-Wstawia element `img`. Edytuj ten element, aby określić jego `src` i jego `alt` tekst.
+Wstawia `img` element. Edytuj ten element, `src` aby `alt` określić jego i jego tekst.
 
-Gdy przeciągasz **obraz** na powierzchnię widok Projekt, do dokumentu zostanie wstawiony znacznik HTML podobny do następującego:
+Podczas przeciągania **obrazu** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <img alt="" src="">
 ```
 
-**Wybór**
+**Wybierz**
 
-![Lista rozwijana przybornika strony HTML](../../ide/reference/media/vxdropdown.gif)
+![Strona HTML Przybornik narzędzi rozwijany](../../ide/reference/media/vxdropdown.gif)
 
-Wstawia element `select` listy rozwijanej (bez atrybutu `size`). Domyślnie `id="select1"` jest wstawiany dla pierwszego pola listy, `id="select2"` dla drugiego i tak dalej.
+Wstawia element `select` rozwijany `size` (bez atrybutu). Domyślnie `id="select1"` jest wstawiany dla `id="select2"` pierwszego pola listy, dla drugiego i tak dalej.
 
-Po przeciągnięciu **zaznaczenia** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Po przeciągnięciu **opcji Zaznacz na** powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <select id="select1" name="select1"><option selected></option></select>
 ```
 
-Można utworzyć wielowierszowy element `select` przez zwiększenie wartości właściwości size.
+Można utworzyć element wielowierszowy, `select` zwiększając wartość właściwości size.
 
-**Linia pozioma**
+**Reguła horyzontalna**
 
 ![Element reguły poziomej strony HTML](../../ide/reference/media/vxhorizontal.gif)
 
-Wstawia element `hr`. Aby zwiększyć grubość linii, Edytuj atrybut `size`.
+Wstawia `hr` element. Aby zwiększyć grubość linii, `size` edytuj atrybut.
 
-Po przeciągnięciu **reguły poziomej** na powierzchnię widok projekt do dokumentu zostanie wstawiony znacznik HTML podobny do następującego:
+Podczas przeciągania **reguły poziomej** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <hr width="100%" size=1>
@@ -222,14 +222,14 @@ Po przeciągnięciu **reguły poziomej** na powierzchnię widok projekt do dokum
 
 ![Etykieta strony HTML](../../ide/reference/media/vxlabel.gif)
 
-Wstawia element `div`, który zawiera atrybut `ms_positioning="FlowLayout"`. Z wyjątkiem szerokości i wysokości ten element jest identyczny z panelem układu przepływu. Aby sformatować tekst zawarty w elemencie `div`, Dodaj atrybut `class="stylename"` do tagu otwierającego.
+Wstawia `div` element, `ms_positioning="FlowLayout"` który zawiera atrybut. Z wyjątkiem szerokości i wysokości, ten element jest identyczny z Panelem układu przepływu. Aby sformatować tekst zawarty `div` w elemencie, dodaj `class="stylename"` atrybut do znacznika otwierającego.
 
-Gdy przeciągasz element **DIV** na powierzchnię widok Projekt, znaczniki HTML, takie jak następujące, są wstawiane do dokumentu:
+Podczas przeciągania **wskaźnika Div** na powierzchnię widoku Projekt do dokumentu wstawiany jest znacznik HTML, taki jak następujący:
 
 ```html
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Przybornik](../../ide/reference/toolbox.md)

@@ -1,5 +1,5 @@
 ---
-title: Krok 4. Dodawanie metody metody CheckTheAnswer ()
+title: 'Krok 4: Dodaj metodę CheckTheAnswer()'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,51 +14,51 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579848"
 ---
-# <a name="step-4-add-the-checktheanswer-method"></a>Krok 4. Dodawanie metody metody CheckTheAnswer ()
+# <a name="step-4-add-the-checktheanswer-method"></a>Krok 4: Dodaj metodę CheckTheAnswer()
 
-W czwartej części tego samouczka napiszesz metodę `CheckTheAnswer()`, która określa, czy odpowiedzi na problemy matematyczne są poprawne. Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+W czwartej części tego samouczka napiszesz `CheckTheAnswer()`metodę, która określa, czy odpowiedzi na problemy matematyczne są poprawne. Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie quizu matematycznego z czasem](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie quizu matematycznego z czasem](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Aby sprawdzić, czy odpowiedzi są poprawne
 
 > [!NOTE]
-> Jeśli jesteś w Visual Basic, użyj słowa kluczowego `Function` zamiast zwykłego słowa kluczowego `Sub`, ponieważ ta metoda zwraca wartość. Jest to naprawdę proste: sub nie zwraca wartości, ale funkcja wykonuje.
+> Jeśli obserwujesz w języku Visual Basic, użyjesz `Function` słowa kluczowego zamiast zwykłego `Sub` słowa kluczowego, ponieważ ta metoda zwraca wartość. To naprawdę takie proste: sub nie zwraca wartości, ale funkcja nie.
 
-1. Dodaj metodę `CheckTheAnswer()`.
+1. Dodaj `CheckTheAnswer()` metodę.
 
-     Gdy ta metoda jest wywoływana, dodaje wartości addend1 i addend2 i porównuje wynik do wartości w kontrolce sumy <xref:System.Windows.Forms.NumericUpDown>. Jeśli wartości są równe, metoda zwraca wartość `true`. W przeciwnym razie metoda zwraca wartość `false`. Kod powinien wyglądać podobnie do poniższego.
+     Gdy ta metoda jest wywoływana, dodaje wartości addend1 i addend2 i porównuje <xref:System.Windows.Forms.NumericUpDown> wynik do wartości w formancie sumy. Jeśli wartości są równe, metoda zwraca `true`wartość . W przeciwnym razie metoda `false`zwraca wartość . Kod powinien wyglądać następująco.
 
      [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
      [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     Następnie sprawdź odpowiedź, aktualizując kod w metodzie dla <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń czasomierza, aby wywołać nową metodę `CheckTheAnswer()`.
+     Następnie sprawdź odpowiedź, aktualizując kod w metodzie dla programu <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń czasomierza, aby wywołać nową `CheckTheAnswer()` metodę.
 
-2. Dodaj następujący kod do instrukcji `if else`.
+2. Dodaj następujący kod `if else` do instrukcji.
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
 
-     Jeśli odpowiedź jest poprawna, `CheckTheAnswer()` zwraca `true`. Program obsługi zdarzeń zatrzyma czasomierz, wyświetli komunikat gratulacjami, a następnie ponownie udostępni przycisk **Uruchom** . W przeciwnym razie quiz kontynuuje działanie.
+     Jeśli odpowiedź jest `CheckTheAnswer()` poprawna, zwraca `true`. Program obsługi zdarzeń zatrzymuje czasomierz, pokazuje komunikat gratulacyjny, a następnie ponownie udostępnia przycisk **Start.** W przeciwnym razie quiz będzie kontynuowany.
 
-3. Zapisz swój program, uruchom go, uruchom quiz i podaj prawidłową odpowiedź na problem dodawania.
+3. Zapisz program, uruchom go, rozpocznij quiz i podaj poprawną odpowiedź na problem z dodawaniem.
 
     > [!NOTE]
-    > Po wprowadzeniu odpowiedzi musisz wybrać wartość domyślną przed rozpoczęciem wprowadzania odpowiedzi lub należy usunąć zero ręcznie. To zachowanie zostanie poprawione w dalszej części tego samouczka.
+    > Po wprowadzeniu odpowiedzi należy wybrać wartość domyślną przed rozpoczęciem wprowadzania odpowiedzi lub ręcznie usunąć wartość zero. To zachowanie zostanie poprawione w dalszej części tego samouczka.
 
-     Po podaniu prawidłowej odpowiedzi zostanie otwarte okno komunikatu, przycisk **Start** będzie dostępny i Czasomierz zostanie zatrzymany.
+     Po podaniu poprawnej odpowiedzi zostanie otwarte okno komunikatu, przycisk **Start** stanie się dostępny, a stoper zatrzyma się.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz **[krok 5. Dodawanie obsługi zdarzeń wprowadzania dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)** .
+- Aby przejść do następnego kroku samouczka, zobacz **[Krok 5: Dodawanie programów obsługi zdarzeń Enter dla formantów NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 3: Dodawanie czasomierza odliczania](../ide/step-3-add-a-countdown-timer.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 3: Dodawanie minutnika](../ide/step-3-add-a-countdown-timer.md).

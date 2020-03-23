@@ -14,63 +14,63 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75596453"
 ---
 # <a name="toolbox"></a>Przybornik
 
-**Przybornika** formantów, które można dodawać do projektów programu Visual Studio jest wyświetlana w oknie. Aby otworzyć przybornik, wybierz **przybornika** na **widoku** menu.
+Okno **Przybornik** wyświetla formanty, które można dodać do projektów programu Visual Studio. Aby otworzyć przybornik, wybierz **polecenie Przybornik** w menu **Widok.**
 
 ![Okno przybornika](media/toolbox.png)
 
-Możesz przeciągać i upuszczać inne kontrolki na powierzchnię projektanta jest używany i zmień rozmiar i położenie kontrolki.
+Można przeciągać i upuszczać różne kontrolki na powierzchnię używanego projektanta oraz zmienić rozmiar i położenie formantów.
 
-Przybornik pojawi się w połączeniu z projektanta widoków, takich jak Widok projektanta w pliku XAML. **Przybornik** wyświetla tylko te formanty, które mogą być używane w bieżącym projektancie. Możesz przeszukiwać **przybornika** Aby dodatkowo filtrować widoczne elementy.
+Przybornik jest wyświetlany w połączeniu z widokami projektanta, takimi jak widok projektanta pliku XAML. **Przybornik** wyświetla tylko te formanty, które mogą być używane w bieżącym projektancie. Można wyszukiwać w **przyborniku,** aby dodatkowo filtrować elementy, które się pojawią.
 
 > [!NOTE]
-> W przypadku niektórych typów projektu **przybornika** mogą nie być wyświetlane wszystkie elementy.
+> W przypadku niektórych typów projektów **przybornik** może nie wyświetlać żadnych elementów.
 
-Wersja platformy .NET przeznaczona dla projektu ma także wpływ na zestaw kontrolek widocznych w przyborniku. W razie potrzeby można zmienić wersję platformy docelowej ze stron właściwości projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań**, a następnie na pasku menu wybierz **projektu** > **projectname właściwości**. Na **aplikacji** kartę, należy użyć **platformę docelową** listy rozwijanej.
+Wersja .NET, która jest przeznaczona dla projektu, wpływa również na zestaw formantów widocznych w przyborniku. W razie potrzeby można zmienić docelową wersję frameworka ze stron właściwości projektu. Wybierz węzeł projektu w **Eksploratorze rozwiązań,** a następnie na pasku menu **wybierz** > polecenie**Właściwości projektu**. Na **karcie Aplikacja** użyj listy rozwijanej **Struktura docelowa.**
 
-## <a name="manage-the-toolbox-window-and-its-controls"></a>Zarządzanie okno przybornika i jego formantów
+## <a name="manage-the-toolbox-window-and-its-controls"></a>Zarządzanie oknem przybornika i jego formantami
 
-Domyślnie **przybornika** jest zwinięta z lewej strony środowiska IDE programu Visual Studio i jest wyświetlany, gdy kursor zostanie przeniesiony nad nim. Możesz przypiąć **przybornika** (klikając **numeru Pin** ikonę na jego pasku narzędzi) tak, aby zostanie zamknięte po przeniesieniu kursora. Można również oddokować **przybornika** okna i przeciągnij w dowolne miejsce na ekranie. Można zadokować, oddokować i ukrywać **przybornika** kliknij prawym przyciskiem myszy jego narzędzi i wybierając jedną z opcji.
+Domyślnie **Przybornik** jest zwinięty wzdłuż lewej strony środowiska IDE programu Visual Studio i pojawia się, gdy kursor jest przenoszony nad nim. **Przybornik** można przypiąć (klikając ikonę **Przypnij** na pasku narzędzi), aby pozostał otwarty po przesunięciu kursora. Okno **przybornika** można również oddokować i przeciągnąć je w dowolne miejsce na ekranie. **Przybornik** można dokować, oddokować i ukryć, klikając prawym przyciskiem myszy jego pasek narzędzi i wybierając jedną z opcji.
 
-Można zmienić rozmieszczenie elementów na karcie **przybornika** lub dodać niestandardowe karty i elementy przy użyciu następujących poleceń w menu po kliknięciu prawym przyciskiem myszy:
+Elementy można zmienić na karcie **Przybornik** lub dodać niestandardowe karty i elementy za pomocą następujących poleceń w menu prawym przyciskiem myszy:
 
-- **Zmień nazwę elementu** — zmienia nazwę wybranego elementu.
+- **Zmień nazwę elementu** — zmienia nazwę zaznaczonego elementu.
 
-- **Pokaż wszystkie** — pokazuje wszystkie możliwe kontrole (nie tylko tych, które są stosowane do bieżącego projektanta).
+- **Pokaż wszystko** — pokazuje wszystkie możliwe formanty (nie tylko te, które mają zastosowanie do bieżącego projektanta).
 
-- **Widok listy** — zawiera kontrolki w pionie listy. Jeśli nie jest zaznaczone, formanty są wyświetlane w poziomie.
+- **Widok listy** — pokazuje formanty na liście pionowej. Jeśli ta zaznaczona jest niezaznaczona, formanty są wyświetlane poziomo.
 
-- **Wybierz elementy** -otwiera **wybierz elementy przybornika** okno dialogowe, aby określić elementy, które pojawiają się w **przybornika**. Możesz pokazać lub ukryć element, zaznaczając lub usuwając zaznaczenie pola wyboru.
+- **Wybierz elementy** — otwiera okno dialogowe **Wybieranie elementów przybornika,** aby można było określić elementy wyświetlane w **przyborniku**. Element można wyświetlić lub ukryć, zaznaczając lub czyszcząc jego pole wyboru.
 
-- **Sortowanie elementów alfabetycznie** — Sortuje elementy według nazwy.
+- **Sortuj elementy alfabetycznie** — sortuje elementy według nazwy.
 
-- **Resetuj narzędzi** — przywraca domyślne **przybornika** ustawień i elementów.
+- **Resetuj pasek narzędzi** — przywraca domyślne ustawienia i elementy **przybornika.**
 
-- **Dodaj kartę** — dodaje nowy **przybornika** kartę.
+- **Karta Dodawanie** — dodaje nową kartę **Przybornik.**
 
-- **Przenieś w górę** -Przesuwa wybrany element w górę.
+- **Przenieś w górę** - Przesuwa zaznaczony element w górę.
 
-- **Przenieś w dół** -Przenosi zaznaczony element w dół.
+- **Przenieś w dół** - Przesuwa zaznaczony element w dół.
 
-## <a name="create-and-distribute-custom-toolbox-controls"></a>Tworzenie i rozprowadzanie formantów przybornika niestandardowego
+## <a name="create-and-distribute-custom-toolbox-controls"></a>Tworzenie i rozpowszechnianie niestandardowych kontrolek przybornika
 
-Możesz utworzyć niestandardowe **przybornika** formantów, za pomocą szablonu projektu, który jest oparty na uruchamianie [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) lub na [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Można następnie dystrybuować niestandardową kontrolkę do członków zespołu lub opublikować go w sieci web za pomocą [Instalatora kontrolki przybornika](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+Niestandardowe kontrolki **przybornika** można utworzyć, zaczynając od szablonu projektu opartego na [Fundacji prezentacji systemu Windows](../../extensibility/creating-a-wpf-toolbox-control.md) lub w [formularzach systemu Windows](../../extensibility/creating-a-windows-forms-toolbox-control.md). Następnie można rozpowszechniać formant niestandardowy do członków zespołu lub publikować go w internecie za pomocą [Instalatora kontrolek przyborów](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)narzędzi.
 
-## <a name="help-on-toolbox-tabs"></a>Pomoc na temat kart przybornika
+## <a name="help-on-toolbox-tabs"></a>Pomoc dotycząca kart Przybornika
 
-Poniższe tematy zawierają więcej informacji na temat niektórych dostępnych **przybornika** karty:
+Następujące tematy zawierają więcej informacji na temat niektórych dostępnych kart **przybornika:**
 
 - [Przybornik, karta Dane](../../ide/reference/toolbox-data-tab.md)
 - [Przybornik, karta Składniki](../../ide/reference/toolbox-components-tab.md)
 - [Przybornik, karta HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Wybierz elementy paska narzędzi, składniki WPF](choose-toolbox-items-wpf-components.md)
+- [Wybieranie elementów przybornika, składników WPF](choose-toolbox-items-wpf-components.md)

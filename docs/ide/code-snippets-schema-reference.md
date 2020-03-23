@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585434"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301840"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — informacje o schemacie
 
-Fragmenty kodu IntelliSense to wstępnie utworzone fragmenty kodu, które są gotowe do wstawienia do aplikacji przy użyciu programu Visual Studio. Umożliwiają one poprawę wydajności pracy, ponieważ zmniejszają ilość czasu spędzanego na wielokrotnym wpisywaniu tego samego kodu czy wyszukiwaniu przykładów. Schemat XML fragmentów kodu IntelliSense służy do tworzenia własnych fragmentów kodu i dodawania ich do fragmentów kodu, które zawiera już program Visual Studio.
+Urywki kodu IntelliSense są wstępnie utworami kodu, które są gotowe do wstawienia do aplikacji za pomocą programu Visual Studio. Umożliwiają one poprawę wydajności pracy, ponieważ zmniejszają ilość czasu spędzanego na wielokrotnym wpisywaniu tego samego kodu czy wyszukiwaniu przykładów. Schemat XML fragmentu kodu IntelliSense można użyć do utworzenia własnych fragmentów kodu i dodania ich do fragmentów kodu, które visual studio już zawiera.
 
-## <a name="assembly-element"></a>Element Assembly
+## <a name="assembly-element"></a>Element złożenia
 
 Określa nazwę zestawu, do którego się odwołuje fragment kodu.
 
-Wartość tekstowa elementu **zestawu** jest przyjazną nazwą tekstu zestawu, taką jak `System.dll`, lub jego silną nazwą, taką jak `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.
+Wartość tekstowa elementu **Assembly** jest przyjazną nazwą tekstową zestawu, taką jak `System.dll`, `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`lub jego silną nazwą, taką jak .
 
 ```xml
 <Assembly>
@@ -38,13 +38,13 @@ Wartość tekstowa elementu **zestawu** jest przyjazną nazwą tekstu zestawu, t
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Reference — element](../ide/code-snippets-schema-reference.md#reference-element)|Zawiera informacje o odwołaniach do zestawów wymaganych przez fragment kodu.|
+|[Element odniesienia](../ide/code-snippets-schema-reference.md#reference-element)|Zawiera informacje o odwołaniach do zestawów wymaganych przez fragment kodu.|
 
 Wartość tekstowa jest wymagana. Tekst określa zestaw, do którego odwołuje się fragment kodu.
 
-## <a name="author-element"></a>Author — element
+## <a name="author-element"></a>Element autora
 
-Określa nazwę autora fragmentu kodu. **Menedżer fragmentów kodu** wyświetla nazwę przechowywaną w `Author` elemencie fragmentu kodu.
+Określa nazwę autora fragmentu kodu. **Menedżer urywków kodu** wyświetla nazwę `Author` przechowywaną w elemencie fragmentu kodu.
 
 ```xml
 <Author>
@@ -64,35 +64,35 @@ Stanowi kontener dla krótkich bloków kodu.
 
 ### <a name="keywords"></a>Słowa kluczowe
 
-Dwa zastrzeżone słowa są dostępne do użycia w tekście elementu `Code`: `$end$` i `$selected$`. `$end$` oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu. `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu podczas jego wywoływania. Na przykład, w którym znajduje się fragment kodu zawierający:
+Dwa słowa zastrzeżone są dostępne do `Code` użycia `$end$` `$selected$`w tekście elementu: i . `$end$`oznacza lokalizację, aby umieścić kursor po wstawieniu fragmentu kodu. `$selected$`reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu podczas wywoływania. Na przykład, biorąc pod uwagę fragment kodu, który zawiera:
 
 ```
 $selected$ is a great color.
 ```
 
-Jeśli zostanie wybrany wyraz "Blue", gdy użytkownik wywoła szablon, wynikiem jest:
+Jeśli słowo "Niebieski" jest zaznaczone, gdy użytkownik wywołuje szablon, wynik jest:
 
 ```
 Blue is a great color.
 ```
 
-Nie można użyć żadnej `$end$` lub `$selected$` więcej niż raz w fragmencie kodu. W takim przypadku tylko drugie wystąpienie zostanie rozpoznane. Podano fragment kodu obejmujący:
+Nie można używać `$end$` jednego `$selected$` lub więcej lub jeden raz we urywek kodu. Jeśli to zrobisz, tylko drugie wystąpienie jest rozpoznawany. Biorąc pod uwagę fragment kodu, który zawiera:
 
 ```
 $selected$ is a great color. I love $selected$.
 ```
 
-W przypadku wybrania wyrazu "Blue" wynikiem jest:
+Jeśli wybrano słowo "Niebieski", wynik jest:
 
 ```
  is a great color. I love Blue.
 ```
 
-Początkowe miejsce jest wyświetlane ze względu na miejsce między `$selected$` i `is`.
+Początkowa przestrzeń pojawia się, `$selected$` ponieważ `is`istnieje odstęp między i .
 
-Wszystkie inne `$` słowa kluczowe są definiowane dynamicznie w tagach `<Literal>` i `<Object>`.
+Wszystkie `$` inne słowa kluczowe są `<Literal>` dynamicznie definiowane w i `<Object>` tagi.
 
-Poniżej znajduje się struktura elementu kodu:
+Poniżej przedstawiono strukturę elementu Code:
 
 ```xml
 <Code Language="Language"
@@ -102,13 +102,13 @@ Poniżej znajduje się struktura elementu kodu:
 </Code>
 ```
 
-Wartość tekstowa jest wymagana. Ten tekst Określa kod wraz z literałami i obiektami, których można użyć po wstawieniu tego fragmentu kodu do pliku kodu.
+Wartość tekstowa jest wymagana. Ten tekst określa kod, wraz z literałami i obiektami, których można użyć, gdy ten fragment kodu zostanie wstawiony do pliku kodu.
 
-### <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+### <a name="attributes"></a>Atrybuty
 
-Dla elementu Code dostępne są trzy atrybuty:
+Istnieją trzy atrybuty dostępne dla Code elementu:
 
-- **Język** - _wymaganego_ atrybutu, który określa język fragmentu kodu. Może to być jedna z następujących wartości:
+- **Wymagany język** - _atrybut,_ który określa język fragmentu kodu. Może to być jedna z następujących wartości:
 
    |Wartość|Opis|
    |-----|-----------|
@@ -117,11 +117,11 @@ Dla elementu Code dostępne są trzy atrybuty:
    |`CPP`|Identyfikuje fragment kodu języka C++.|
    |`XML`|Identyfikuje fragment kodu języka XML.|
    |`JavaScript`|Identyfikuje fragment kodu języka JavaScript.|
-   |`TypeScript`|Identyfikuje fragment kodu języka TypeScript.|
+   |`TypeScript`|Identyfikuje fragment kodu TypeScript.|
    |`SQL`|Identyfikuje fragment kodu języka SQL.|
    |`HTML`|Identyfikuje fragment kodu języka HTML.|
 
-- **Rodzajowy** - _opcjonalny_ atrybut, który określa rodzaj kodu, który zawiera fragment. Może to być jedna z następujących wartości:
+- **Rodzaj** - _Opcjonalny_ atrybut, który określa rodzaj kodu, który zawiera fragment kodu. Może to być jedna z następujących wartości:
 
    |Wartość|Opis|
    |-----|-----------|
@@ -131,15 +131,15 @@ Dla elementu Code dostępne są trzy atrybuty:
    |`file`|Określa, że fragment jest kompletnym plikiem kodu. Takie fragmenty kodu można wstawiać autonomicznie do pliku kodu albo do przestrzeni nazw.|
    |`any`|Określa, że fragment można wstawić w dowolnym miejscu. Ten tag jest używany we fragmentach kodu niezależnych od kontekstu, takich jak komentarze.|
 
-- **Ogranicznik** - _opcjonalny_ atrybut, który określa ogranicznik używany do opisywania literałów i obiektów w kodzie. Domyślnie ogranicznik jest `$`.
+- **Ogranicznik** - _Opcjonalny_ atrybut, który określa ogranicznik używany do opisywania literałów i obiektów w kodzie. Domyślnie ogranicznik `$`to .
 
 ### <a name="parent-element"></a>Element nadrzędny
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
+|[Element urywka](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
-## <a name="codesnippet-element"></a>CodeSnippet, element
+## <a name="codesnippet-element"></a>Element CodeSnippet
 
 Umożliwia określenie nagłówka oraz wielu fragmentów kodu IntelliSense, które można wstawiać do plików kodu programu Visual Studio.
 
@@ -152,20 +152,20 @@ Umożliwia określenie nagłówka oraz wielu fragmentów kodu IntelliSense, któ
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Format`|Atrybut wymagany. Określa wersję schematu fragmentu kodu. Atrybut Format musi być ciągiem tekstowym o składni x.x.x, gdzie każdy znak „x” reprezentuje wartość liczbową numeru wersji. Program Visual Studio zignoruje fragmenty kodu z atrybutami `Format`, które nie są zrozumiałe.|
+|`Format`|Atrybut wymagany. Określa wersję schematu fragmentu kodu. Atrybut Format musi być ciągiem tekstowym o składni x.x.x, gdzie każdy znak „x” reprezentuje wartość liczbową numeru wersji. Visual Studio zignoruje fragmenty kodu z `Format` atrybutami, które nie rozumieją.|
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element nagłówka](../ide/code-snippets-schema-reference.md#header-element)|Element wymagany. Zawiera ogólne informacje o fragmencie kodu. Fragment kodu musi zawierać dokładnie jeden `Header` elementu.|
-|[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet-element)|Element wymagany. Zawiera kod, który będzie wstawiany przez program Visual Studio. Fragment kodu musi zawierać dokładnie jeden `Snippet` elementu.|
+|[Element nagłówka](../ide/code-snippets-schema-reference.md#header-element)|Element wymagany. Zawiera ogólne informacje o fragmencie kodu. Musi istnieć dokładnie `Header` jeden element we fragmentie kodu.|
+|[Element urywka](../ide/code-snippets-schema-reference.md#snippet-element)|Element wymagany. Zawiera kod, który będzie wstawiany przez program Visual Studio. Musi istnieć dokładnie `Snippet` jeden element we fragmentie kodu.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[CodeSnippets, element](../ide/code-snippets-schema-reference.md#codesnippets-element)|Element główny schematu XML fragmentu kodu.|
+|[Element CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets-element)|Element główny schematu XML fragmentu kodu.|
 
-## <a name="codesnippets-element"></a>CodeSnippets, element
+## <a name="codesnippets-element"></a>Element CodeSnippets
 
-Grupuje elementy [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element) . Element `CodeSnippets` jest elementem głównym schematu XML fragmentu kodu.
+Grupuje elementy [codesnippet.](../ide/code-snippets-schema-reference.md#codesnippet-element) Element `CodeSnippets` jest elementem głównym schematu XML fragmentu kodu.
 
 ```xml
 <CodeSnippets>
@@ -175,9 +175,9 @@ Grupuje elementy [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnip
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[CodeSnippet, element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Element opcjonalny. Element nadrzędny dla wszystkich danych fragmentu kodu. Element `CodeSnippets` może mieć co najmniej zero elementów `CodeSnippet`.|
+|[Element CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Element opcjonalny. Element nadrzędny dla wszystkich danych fragmentu kodu. Może istnieć zero `CodeSnippet` lub `CodeSnippets` więcej elementów w elemencie.|
 
-## <a name="declarations-element"></a>Element deklaracji
+## <a name="declarations-element"></a>Element Deklaracje
 
 Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edytować.
 
@@ -190,12 +190,12 @@ Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edyt
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Literal — element](../ide/code-snippets-schema-reference.md#literal-element)|Element opcjonalny. Definiuje literały fragmentu kodu, które można edytować. Element `Declarations` może mieć co najmniej zero elementów `Literal`.|
-|[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Element opcjonalny. Definiuje obiekty fragmentu kodu, które można edytować. Element `Declarations` może mieć co najmniej zero elementów `Object`.|
+|[Element dosłowny](../ide/code-snippets-schema-reference.md#literal-element)|Element opcjonalny. Definiuje literały fragmentu kodu, które można edytować. Może istnieć zero `Literal` lub `Declarations` więcej elementów w elemencie.|
+|[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Element opcjonalny. Definiuje obiekty fragmentu kodu, które można edytować. Może istnieć zero `Object` lub `Declarations` więcej elementów w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
+|[Element urywka](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
 ## <a name="default-element"></a>Element domyślny
 
@@ -209,12 +209,12 @@ Określa domyślną wartość literału lub obiektu fragmentu kodu IntelliSense.
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Literal — element](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
+|[Element dosłowny](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa domyślną wartość literału lub obiektu wypełniającego pola fragment kodu, który można edytować.
 
-## <a name="description-element"></a>Description — element
+## <a name="description-element"></a>Element opisu
 
 Określa opisowe informacje o zawartości fragmentu kodu IntelliSense.
 
@@ -230,12 +230,12 @@ Określa opisowe informacje o zawartości fragmentu kodu IntelliSense.
 
 Wartość tekstowa jest wymagana. Ten tekst opisuje fragment kodu.
 
-## <a name="function-element"></a>Element Function
+## <a name="function-element"></a>Element funkcyjny
 
 Określa funkcję do wykonania, gdy w programie Visual Studio na literale lub obiekcie zostanie ustawiony fokus.
 
 > [!NOTE]
-> Element `Function` jest obsługiwany tylko w C# fragmentach kodu.
+> Element `Function` jest obsługiwany tylko w fragmentach kodu języka C#.
 
 ```xml
 <Function>
@@ -245,7 +245,7 @@ Określa funkcję do wykonania, gdy w programie Visual Studio na literale lub ob
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Literal — element](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
+|[Element dosłowny](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa funkcję do wykonania, gdy w programie Visual Studio na literale lub polu obiektu zostanie ustawiony fokus.
@@ -268,24 +268,24 @@ Zawiera ogólne informacje o fragmencie kodu IntelliSense.
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Author — element](../ide/code-snippets-schema-reference.md#author-element)|Element opcjonalny. Imię i nazwisko/nazwa osoby lub firmy, która utworzyła fragment kodu. W elemencie `Header` może się znajdować zero lub jeden `Author` elementów.|
-|[Description — element](../ide/code-snippets-schema-reference.md#description-element)|Element opcjonalny. Opis fragmentu kodu. W elemencie `Header` może się znajdować zero lub jeden `Description` elementów.|
-|[HelpUrl, element](../ide/code-snippets-schema-reference.md#helpurl-element)|Element opcjonalny. Adres URL strony zawierającej poszerzone informacje o fragmencie kodu. Element nagłówka może mieć zero lub jeden `HelpURL` elementów. **Uwaga:**  Program Visual Studio nie używa elementu `HelpUrl`. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.|
-|[Keywords — element](../ide/code-snippets-schema-reference.md#keywords-element)|Element opcjonalny. Grupuje `Keyword` elementów. W elemencie `Header` może się znajdować zero lub jeden `Keywords` elementów.|
-|[Element skrótu](../ide/code-snippets-schema-reference.md#shortcut-element)|Element opcjonalny. Określa tekst skrótu, który pozwala wstawić fragment kodu. W elemencie `Header` może się znajdować zero lub jeden `Shortcut` elementów.|
-|[SnippetTypes, element](../ide/code-snippets-schema-reference.md#snippettypes-element)|Element opcjonalny. Grupuje `SnippetType` elementów. W elemencie `Header` może się znajdować zero lub jeden `SnippetTypes` elementów. Jeśli nie ma `SnippetTypes` elementów, fragment kodu jest zawsze prawidłowy.|
-|[Title — element](../ide/code-snippets-schema-reference.md#title-element)|Element wymagany. Przyjazna nazwa fragmentu kodu. W elemencie `Header` musi znajdować się tylko jeden `Title` elementu.|
+|[Element autora](../ide/code-snippets-schema-reference.md#author-element)|Element opcjonalny. Imię i nazwisko/nazwa osoby lub firmy, która utworzyła fragment kodu. Może istnieć zero `Author` lub `Header` jeden element w elemencie.|
+|[Element opisu](../ide/code-snippets-schema-reference.md#description-element)|Element opcjonalny. Opis fragmentu kodu. Może istnieć zero `Description` lub `Header` jeden element w elemencie.|
+|[Element HelpUrl](../ide/code-snippets-schema-reference.md#helpurl-element)|Element opcjonalny. Adres URL strony zawierającej poszerzone informacje o fragmencie kodu. Może istnieć zero `HelpURL` lub jeden element w header elementu. **Uwaga:**  Visual Studio nie `HelpUrl` używa elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.|
+|[Element słowa kluczowe](../ide/code-snippets-schema-reference.md#keywords-element)|Element opcjonalny. Grupuje `Keyword` elementy. Może istnieć zero `Keywords` lub `Header` jeden element w elemencie.|
+|[Element skrótu](../ide/code-snippets-schema-reference.md#shortcut-element)|Element opcjonalny. Określa tekst skrótu, który pozwala wstawić fragment kodu. Może istnieć zero `Shortcut` lub `Header` jeden element w elemencie.|
+|[Element urywek](../ide/code-snippets-schema-reference.md#snippettypes-element)|Element opcjonalny. Grupuje `SnippetType` elementy. Może istnieć zero `SnippetTypes` lub `Header` jeden element w elemencie. Jeśli nie `SnippetTypes` ma żadnych elementów, fragment kodu jest zawsze prawidłowy.|
+|[Element tytułu](../ide/code-snippets-schema-reference.md#title-element)|Element wymagany. Przyjazna nazwa fragmentu kodu. Musi istnieć dokładnie `Title` jeden `Header` element w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[CodeSnippet, element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Element nadrzędny dla wszystkich danych fragmentu kodu.|
+|[Element CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Element nadrzędny dla wszystkich danych fragmentu kodu.|
 
-## <a name="helpurl-element"></a>HelpUrl, element
+## <a name="helpurl-element"></a>Element HelpUrl
 
 Określa adres URL strony zawierającej poszerzone informacje o fragmencie kodu.
 
 > [!NOTE]
-> Program Visual Studio nie używa elementu `HelpUrl`. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.
+> Visual Studio nie `HelpUrl` używa elementu. Element jest częścią schematu XML fragmentu kodu IntelliSense. Wszystkie fragmenty kodu zawierające element będą weryfikowane, ale wartość elementu nigdy nie jest używana.
 
 ```xml
 <HelpUrl>
@@ -299,9 +299,9 @@ Określa adres URL strony zawierającej poszerzone informacje o fragmencie kodu.
 
 Wartość tekstowa jest opcjonalna. Ten tekst określa adres URL strony, na której można znaleźć więcej informacji o fragmencie kodu.
 
-## <a name="id-element"></a>ID — element
+## <a name="id-element"></a>Element identyfikatora
 
-Określa unikatowy identyfikator elementu `Literal` lub `Object`. Żaden z dwóch literałów lub obiektów w tym samym fragmencie kodu nie może mieć tej samej wartości tekstowej w swoich elementach `ID`. Literały i obiekty nie mogą zawierać elementu `ID` o wartości end. Wartość `$end$` jest zarezerwowana i jest używana do oznaczania lokalizacji kursora po wstawieniu fragmentu kodu.
+Określa unikatowy identyfikator `Literal` elementu `Object` lub elementu. Żadne dwa literały lub obiekty w tym samym fragmentie kodu mogą `ID` mieć taką samą wartość tekstową w swoich elementach. Literały i obiekty nie `ID` mogą zawierać elementu o wartości końca. Wartość `$end$` jest zarezerwowana i służy do oznaczania lokalizacji w celu umieszczenia kursora po wstawieniu fragmentu kodu.
 
 ```xml
 <ID>
@@ -311,14 +311,14 @@ Określa unikatowy identyfikator elementu `Literal` lub `Object`. Żaden z dwóc
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Literal — element](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
+|[Element dosłowny](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa unikatowy identyfikator obiektu lub literału.
 
-## <a name="import-element"></a>Importuj element
+## <a name="import-element"></a>Element importu
 
-Określa zaimportowane przestrzenie nazw używane przez fragment kodu IntelliSense.
+Określa importowane przestrzenie nazw używane przez fragment kodu IntelliSense.
 
 ```xml
 <Import>
@@ -328,15 +328,15 @@ Określa zaimportowane przestrzenie nazw używane przez fragment kodu IntelliSen
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element Namespace](../ide/code-snippets-schema-reference.md#namespace-element)|Element wymagany. Określa przestrzeń nazw używaną przez fragment kodu. W elemencie `Import` musi znajdować się tylko jeden `Namespace` elementu.|
+|[Element obszaru nazw](../ide/code-snippets-schema-reference.md#namespace-element)|Element wymagany. Określa przestrzeń nazw używaną przez fragment kodu. Musi istnieć dokładnie `Namespace` jeden `Import` element w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Imports — element](../ide/code-snippets-schema-reference.md#imports-element)|Element grupujący dla elementów **importu** .|
+|[Element Importu](../ide/code-snippets-schema-reference.md#imports-element)|Element grupowania dla **importu** elementów.|
 
-## <a name="imports-element"></a>Imports — element
+## <a name="imports-element"></a>Element Importu
 
-Grupuje poszczególne elementy `Import`.
+Grupuje `Import` poszczególne elementy.
 
 ```xml
 <Imports>
@@ -346,13 +346,13 @@ Grupuje poszczególne elementy `Import`.
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Importuj element](../ide/code-snippets-schema-reference.md#import-element)|Element opcjonalny. Zawiera zaimportowane przestrzenie nazw fragmentu kodu. Element `Imports` może zawierać co najmniej zero elementów **importu** .|
+|[Element importu](../ide/code-snippets-schema-reference.md#import-element)|Element opcjonalny. Zawiera zaimportowane przestrzenie nazw fragmentu kodu. Może być zero **Import** lub więcej `Imports` Import elementów w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
+|[Element urywka](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
-## <a name="keyword-element"></a>Element słowo kluczowe
+## <a name="keyword-element"></a>Element słowa kluczowego
 
 Określa niestandardowe słowo kluczowe fragmentu kodu. Słowa kluczowe fragmentu kodu są wykorzystywane przez program Visual Studio. Stanowią standardowy mechanizm, przy użyciu którego dostawcy treści internetowych mogą dodawać słowa kluczowe na potrzeby wyszukiwania lub kategoryzacji.
 
@@ -364,13 +364,13 @@ Określa niestandardowe słowo kluczowe fragmentu kodu. Słowa kluczowe fragment
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Keywords — element](../ide/code-snippets-schema-reference.md#keywords-element)|Grupuje poszczególne elementy `Keyword`.|
+|[Element słowa kluczowe](../ide/code-snippets-schema-reference.md#keywords-element)|Grupuje `Keyword` poszczególne elementy.|
 
 Wartość tekstowa jest wymagana. Słowo kluczowe fragmentu kodu.
 
-## <a name="keywords-element"></a>Keywords — element
+## <a name="keywords-element"></a>Element słowa kluczowe
 
-Grupuje poszczególne elementy `Keyword`. Słowa kluczowe fragmentu kodu są wykorzystywane przez program Visual Studio. Stanowią standardowy mechanizm, przy użyciu którego dostawcy treści internetowych mogą dodawać słowa kluczowe na potrzeby wyszukiwania lub kategoryzacji.
+Grupuje `Keyword` poszczególne elementy. Słowa kluczowe fragmentu kodu są wykorzystywane przez program Visual Studio. Stanowią standardowy mechanizm, przy użyciu którego dostawcy treści internetowych mogą dodawać słowa kluczowe na potrzeby wyszukiwania lub kategoryzacji.
 
 ```xml
 <Keywords>
@@ -381,17 +381,17 @@ Grupuje poszczególne elementy `Keyword`. Słowa kluczowe fragmentu kodu są wyk
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element słowo kluczowe](../ide/code-snippets-schema-reference.md#keyword-element)|Element opcjonalny. Zawiera poszczególne słowa kluczowe fragmentu kodu. Element `Keywords` może mieć co najmniej zero elementów `Keyword`.|
+|[Element słowa kluczowego](../ide/code-snippets-schema-reference.md#keyword-element)|Element opcjonalny. Zawiera poszczególne słowa kluczowe fragmentu kodu. Może istnieć zero `Keyword` lub `Keywords` więcej elementów w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
 |[Element nagłówka](../ide/code-snippets-schema-reference.md#header-element)|Zawiera ogólne informacje o fragmencie kodu.|
 
-## <a name="literal-element"></a>Literal — element
+## <a name="literal-element"></a>Element dosłowny
 
-Definiuje literały fragmentu kodu, które można edytować. Element `Literal` jest używany do identyfikowania zastąpienia dla fragmentu kodu, który jest całkowicie zawarty w fragmencie, ale prawdopodobnie zostanie dostosowany po wstawieniu go do kodu. Jako literały należy na przykład deklarować ciągi literałowe, wartości liczbowe i nazwy niektórych zmiennych.
+Definiuje literały fragmentu kodu, które można edytować. Element `Literal` jest używany do identyfikowania zastąpienia fragmentu kodu, który jest całkowicie zawarty w urywek, ale prawdopodobnie zostaną dostosowane po wstawieniu do kodu. Jako literały należy na przykład deklarować ciągi literałowe, wartości liczbowe i nazwy niektórych zmiennych.
 
-Literały i obiekty nie mogą zawierać elementu **ID** z wartością wybraną lub końcową. Wartość `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu, gdy jest wywoływany. `$end$` oznacza lokalizację, w której ma zostać umieszczony kursor po wstawieniu fragmentu kodu.
+Literały i obiekty nie mogą zawierać elementu **identyfikatora** o wartości zaznaczonej lub końcowej. Wartość `$selected$` reprezentuje tekst zaznaczony w dokumencie, który ma zostać wstawiony do fragmentu kodu podczas wywoływania. `$end$`oznacza lokalizację, aby umieścić kursor po wstawieniu fragmentu kodu.
 
 ```xml
 <Literal Editable="true/false">
@@ -404,22 +404,22 @@ Literały i obiekty nie mogą zawierać elementu **ID** z wartością wybraną l
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Editable`|Opcjonalny `Boolean` atrybutu. Określa, czy po wstawieniu fragmentu kodu można edytować literał. Wartość domyślna tego atrybutu to `true`.|
+|`Editable`|Opcjonalny `Boolean` atrybut. Określa, czy po wstawieniu fragmentu kodu można edytować literał. Domyślną wartością tego `true`atrybutu jest .|
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element domyślny](../ide/code-snippets-schema-reference.md#default-element)|Element wymagany. Określa domyślną wartość literału po wstawieniu fragmentu kodu. W elemencie `Literal` musi znajdować się tylko jeden `Default` elementu.|
-|[Element Function](../ide/code-snippets-schema-reference.md#function-element)|Element opcjonalny. Określa funkcję do wykonania, gdy w programie Visual Studio na literale zostanie ustawiony fokus. W elemencie `Literal` może się znajdować zero lub jeden `Function` elementów.|
-|[ID — element](../ide/code-snippets-schema-reference.md#id-element)|Element wymagany. Określa unikatowy identyfikator literału. W elemencie `Literal` musi znajdować się tylko jeden `ID` elementu.|
-|[Element ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Element opcjonalny. Opisuje oczekiwaną wartość i użycie literału. Element `Literal` może zawierać co najmniej jeden element **etykietki narzędzia** .|
+|[Element domyślny](../ide/code-snippets-schema-reference.md#default-element)|Element wymagany. Określa domyślną wartość literału po wstawieniu fragmentu kodu. Musi istnieć dokładnie `Default` jeden `Literal` element w elemencie.|
+|[Element funkcyjny](../ide/code-snippets-schema-reference.md#function-element)|Element opcjonalny. Określa funkcję do wykonania, gdy w programie Visual Studio na literale zostanie ustawiony fokus. Może istnieć zero `Function` lub `Literal` jeden element w elemencie.|
+|[Element identyfikatora](../ide/code-snippets-schema-reference.md#id-element)|Element wymagany. Określa unikatowy identyfikator literału. Musi istnieć dokładnie `ID` jeden `Literal` element w elemencie.|
+|[Element Etykietki narzędzia](../ide/code-snippets-schema-reference.md#tooltip-element)|Element opcjonalny. Opisuje oczekiwaną wartość i użycie literału. Może istnieć zero lub jeden `Literal` **tooltip** elementów w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Element deklaracji](../ide/code-snippets-schema-reference.md#declarations-element)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
+|[Element Deklaracje](../ide/code-snippets-schema-reference.md#declarations-element)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
 
-## <a name="namespace-element"></a>Element Namespace
+## <a name="namespace-element"></a>Element obszaru nazw
 
-Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu został skompilowany i działał. Przestrzeń nazw określona w `Namespace` elementu jest automatycznie dodawana do dyrektywy `using` lub instrukcji `Imports` na początku kodu, jeśli jeszcze nie istnieje.
+Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu został skompilowany i działał. Obszar nazw określony `Namespace` w elemencie `using` jest `Imports` automatycznie dodawany do dyrektywy lub instrukcji na początku kodu, jeśli jeszcze nie istnieje.
 
 ```xml
 <Namespace>
@@ -429,13 +429,13 @@ Określa przestrzeń nazw, którą należy zaimportować, aby fragment kodu zost
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Importuj element](../ide/code-snippets-schema-reference.md#import-element)|Importowanie określonej przestrzeni nazw.|
+|[Element importu](../ide/code-snippets-schema-reference.md#import-element)|Importowanie określonej przestrzeni nazw.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa obszar nazw, wstawki zakłada jest importowany.
 
 ## <a name="object-element"></a>Element obiektu
 
-Definiuje obiekty fragmentu kodu, które można edytować. Element `Object` służy do identyfikowania elementu, który jest wymagany przez fragment kodu, ale prawdopodobnie zostanie zdefiniowany poza fragmentem. Na przykład formanty interfejsu Windows Forms, formanty środowiska ASP.NET, wystąpienia obiektów i wystąpienia typów powinny być deklarowane jako obiekty. Deklaracje obiektów wymagają określenia typu, który jest wykonywany przy użyciu elementu `Type`.
+Definiuje obiekty fragmentu kodu, które można edytować. Element `Object` jest używany do identyfikowania elementu, który jest wymagany przez fragment kodu, ale prawdopodobnie zostanie zdefiniowany poza samym fragmentem kodu. Na przykład formanty interfejsu Windows Forms, formanty środowiska ASP.NET, wystąpienia obiektów i wystąpienia typów powinny być deklarowane jako obiekty. Deklaracje obiektów wymagają, aby określić typ, `Type` który odbywa się z elementem.
 
 ```xml
 <Object Editable="true/false">
@@ -449,21 +449,21 @@ Definiuje obiekty fragmentu kodu, które można edytować. Element `Object` słu
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Editable`|Opcjonalny `Boolean` atrybutu. Określa, czy po wstawieniu fragmentu kodu można edytować literał. Wartość domyślna tego atrybutu to `true`.|
+|`Editable`|Opcjonalny `Boolean` atrybut. Określa, czy po wstawieniu fragmentu kodu można edytować literał. Domyślną wartością tego `true`atrybutu jest .|
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element domyślny](../ide/code-snippets-schema-reference.md#default-element)|Element wymagany. Określa domyślną wartość literału po wstawieniu fragmentu kodu. W elemencie `Literal` musi znajdować się tylko jeden `Default` elementu.|
-|[Element Function](../ide/code-snippets-schema-reference.md#function-element)|Element opcjonalny. Określa funkcję do wykonania, gdy w programie Visual Studio na literale zostanie ustawiony fokus. W elemencie `Literal` może się znajdować zero lub jeden `Function` elementów.|
-|[ID — element](../ide/code-snippets-schema-reference.md#id-element)|Element wymagany. Określa unikatowy identyfikator literału. W elemencie `Literal` musi znajdować się tylko jeden `ID` elementu.|
-|[Element ToolTip](../ide/code-snippets-schema-reference.md#tooltip-element)|Element opcjonalny. Opisuje oczekiwaną wartość i użycie literału. Element `Literal` może zawierać co najmniej jeden element **etykietki narzędzia** .|
-|[Element Type](../ide/code-snippets-schema-reference.md#type-element)|Element wymagany. Określa typ obiektu. W elemencie `Object` musi znajdować się tylko jeden `Type` elementu.|
+|[Element domyślny](../ide/code-snippets-schema-reference.md#default-element)|Element wymagany. Określa domyślną wartość literału po wstawieniu fragmentu kodu. Musi istnieć dokładnie `Default` jeden `Literal` element w elemencie.|
+|[Element funkcyjny](../ide/code-snippets-schema-reference.md#function-element)|Element opcjonalny. Określa funkcję do wykonania, gdy w programie Visual Studio na literale zostanie ustawiony fokus. Może istnieć zero `Function` lub `Literal` jeden element w elemencie.|
+|[Element identyfikatora](../ide/code-snippets-schema-reference.md#id-element)|Element wymagany. Określa unikatowy identyfikator literału. Musi istnieć dokładnie `ID` jeden `Literal` element w elemencie.|
+|[Element Etykietki narzędzia](../ide/code-snippets-schema-reference.md#tooltip-element)|Element opcjonalny. Opisuje oczekiwaną wartość i użycie literału. Może istnieć zero lub jeden `Literal` **tooltip** elementów w elemencie.|
+|[Element tekstowy](../ide/code-snippets-schema-reference.md#type-element)|Element wymagany. Określa typ obiektu. Musi istnieć dokładnie `Type` jeden `Object` element w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Element deklaracji](../ide/code-snippets-schema-reference.md#declarations-element)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
+|[Element Deklaracje](../ide/code-snippets-schema-reference.md#declarations-element)|Zawiera literały i obiekty fragmentu kodu, które można edytować.|
 
-## <a name="reference-element"></a>Reference — element
+## <a name="reference-element"></a>Element odniesienia
 
 Określa informacje o odwołaniach do zestawów wymaganych przez fragment kodu.
 
@@ -476,16 +476,16 @@ Określa informacje o odwołaniach do zestawów wymaganych przez fragment kodu.
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element Assembly](../ide/code-snippets-schema-reference.md#assembly-element)|Element wymagany. Zawiera nazwę zestawu, do którego się odwołuje fragment kodu. W elemencie `Reference` musi znajdować się tylko jeden `Assembly` elementu.|
-|[Element adresu URL](../ide/code-snippets-schema-reference.md#url-element)|Element opcjonalny. Zawiera adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie. W elemencie `Reference` może się znajdować zero lub jeden `Url` elementów.|
+|[Element złożenia](../ide/code-snippets-schema-reference.md#assembly-element)|Element wymagany. Zawiera nazwę zestawu, do którego się odwołuje fragment kodu. Musi istnieć dokładnie `Assembly` jeden `Reference` element w elemencie.|
+|[Element adresu URL](../ide/code-snippets-schema-reference.md#url-element)|Element opcjonalny. Zawiera adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie. Może istnieć zero `Url` lub `Reference` jeden element w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[References — element](../ide/code-snippets-schema-reference.md#references-element)|Element grupujący dla elementów `Reference`.|
+|[Element Odwołania](../ide/code-snippets-schema-reference.md#references-element)|Element grupowania `Reference` elementów.|
 
-## <a name="references-element"></a>References — element
+## <a name="references-element"></a>Element Odwołania
 
-Grupuje poszczególne elementy `Reference`.
+Grupuje `Reference` poszczególne elementy.
 
 ```xml
 <References>
@@ -495,18 +495,18 @@ Grupuje poszczególne elementy `Reference`.
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Reference — element](../ide/code-snippets-schema-reference.md#reference-element)|Element opcjonalny. Zawiera informacje o odwołaniach do zestawów z fragmentu kodu. Element `References` może mieć co najmniej zero elementów `Reference`.|
+|[Element odniesienia](../ide/code-snippets-schema-reference.md#reference-element)|Element opcjonalny. Zawiera informacje o odwołaniach do zestawów z fragmentu kodu. Może istnieć zero `Reference` lub `References` więcej elementów w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Element fragmentu kodu](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
+|[Element urywka](../ide/code-snippets-schema-reference.md#snippet-element)|Zawiera odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.|
 
 ## <a name="shortcut-element"></a>Element skrótu
 
-Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa elementu `Shortcut` może zawierać tylko znaki alfanumeryczne i podkreślenia (_).
+Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość tekstowa `Shortcut` elementu może zawierać tylko znaki alfanumeryczne i podkreślenia ( _ ).
 
 > [!CAUTION]
-> Znaki podkreślenia (_) nie są obsługiwane w C++ skrótach do fragmentów kodu.
+> Znak podkreślenia (_) nie jest obsługiwany w skrótach fragmentu kodu języka C++.
 
 ```xml
 <Shortcut>
@@ -520,7 +520,7 @@ Określa tekst skrótu służący do wstawiania fragmentu kodu. Wartość teksto
 
 Wartość tekstowa jest opcjonalna. Ten tekst jest używany jako skrót do wstawiania fragmentu kodu.
 
-## <a name="snippet-element"></a>Element fragmentu kodu
+## <a name="snippet-element"></a>Element urywka
 
 Określa odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.
 
@@ -535,16 +535,16 @@ Określa odwołania, definicje importu, deklaracje i kod dla fragmentu kodu.
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Element kodu](../ide/code-snippets-schema-reference.md#code-element)|Element wymagany. Określa kod, który ma zostać wstawiony do pliku dokumentacji. W elemencie `Snippet` musi znajdować się tylko jeden `Code` elementu.|
-|[Element deklaracji](../ide/code-snippets-schema-reference.md#declarations-element)|Element opcjonalny. Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edytować. W elemencie `Snippet` może się znajdować zero lub jeden `Declarations` elementów.|
-|[Imports — element](../ide/code-snippets-schema-reference.md#imports-element)|Element opcjonalny. Grupuje poszczególne elementy `Import`. W elemencie `Snippet` może się znajdować zero lub jeden `Imports` elementów.|
-|[References — element](../ide/code-snippets-schema-reference.md#references-element)|Element opcjonalny. Grupuje poszczególne elementy `Reference`. W elemencie `Snippet` może się znajdować zero lub jeden `References` elementów.|
+|[Element kodu](../ide/code-snippets-schema-reference.md#code-element)|Element wymagany. Określa kod, który ma zostać wstawiony do pliku dokumentacji. Musi istnieć dokładnie `Code` jeden `Snippet` element w elemencie.|
+|[Element Deklaracje](../ide/code-snippets-schema-reference.md#declarations-element)|Element opcjonalny. Określa literały i obiekty tworzące sekcje fragmentu kodu, które można edytować. Może istnieć zero `Declarations` lub `Snippet` jeden element w elemencie.|
+|[Element Importu](../ide/code-snippets-schema-reference.md#imports-element)|Element opcjonalny. Grupuje `Import` poszczególne elementy. Może istnieć zero `Imports` lub `Snippet` jeden element w elemencie.|
+|[Element Odwołania](../ide/code-snippets-schema-reference.md#references-element)|Element opcjonalny. Grupuje `Reference` poszczególne elementy. Może istnieć zero `References` lub `Snippet` jeden element w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[CodeSnippet, element](../ide/code-snippets-schema-reference.md#codesnippet-element)|Umożliwia określenie nagłówka oraz wielu fragmentów kodu IntelliSense, które można wstawiać do plików kodu programu Visual Studio.|
+|[Element CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet-element)|Umożliwia określenie nagłówka oraz wielu fragmentów kodu IntelliSense, które można wstawiać do plików kodu programu Visual Studio.|
 
-## <a name="snippettype-element"></a>Fragment kodu elementu
+## <a name="snippettype-element"></a>Element urywkatyp
 
 Określa, w jaki sposób program Visual Studio wstawia fragment kodu.
 
@@ -556,19 +556,19 @@ Określa, w jaki sposób program Visual Studio wstawia fragment kodu.
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[SnippetTypes, element](../ide/code-snippets-schema-reference.md#snippettypes-element)|Grupuje `SnippetType` elementów.|
+|[Element urywek](../ide/code-snippets-schema-reference.md#snippettypes-element)|Grupuje `SnippetType` elementy.|
 
 Wartość tekstowa musi być jedną z następujących:
 
-- `SurroundsWith`: umożliwia umieszczenie fragmentu kodu wokół zaznaczonego fragmentu kodu.
+- `SurroundsWith`: umożliwia umieszczenie fragmentu kodu wokół wybranego fragmentu kodu.
 
-- `Expansion`: umożliwia wstawianie fragmentu kodu do kursora.
+- `Expansion`: umożliwia wstawienie fragmentu kodu do kursora.
 
-- `Refactoring`: określa, że fragment kodu jest używany podczas C# refaktoryzacji. nie można używać `Refactoring` w niestandardowych fragmentach kodu.
+- `Refactoring`: określa, że fragment kodu jest używany podczas refaktoryzacji języka C#. `Refactoring`nie można używać w niestandardowych fragmentach kodu.
 
-## <a name="snippettypes-element"></a>SnippetTypes, element
+## <a name="snippettypes-element"></a>Element urywek
 
-Grupuje poszczególne elementy `SnippetType`. Jeśli element `SnippetTypes` nie istnieje, fragment kodu można wstawić w dowolnym miejscu w kodzie.
+Grupuje `SnippetType` poszczególne elementy. Jeśli `SnippetTypes` element nie jest obecny, fragment kodu można wstawić w dowolnym miejscu w kodzie.
 
 ```xml
 <SnippetTypes>
@@ -579,15 +579,15 @@ Grupuje poszczególne elementy `SnippetType`. Jeśli element `SnippetTypes` nie 
 
 |Element podrzędny|Opis|
 |-------------------|-----------------|
-|[Fragment kodu elementu](../ide/code-snippets-schema-reference.md#snippettype-element)|Element opcjonalny. Określa, w jaki sposób program Visual Studio wstawia fragment kodu do kodu. Element `SnippetTypes` może mieć co najmniej zero elementów `SnippetType`.|
+|[Element urywkatyp](../ide/code-snippets-schema-reference.md#snippettype-element)|Element opcjonalny. Określa, w jaki sposób program Visual Studio wstawia fragment kodu do kodu. Może istnieć zero `SnippetType` lub `SnippetTypes` więcej elementów w elemencie.|
 
 |Element nadrzędny|Opis|
 | - |-----------------|
 |[Element nagłówka](../ide/code-snippets-schema-reference.md#header-element)|Określa ogólne informacje o fragmencie kodu.|
 
-## <a name="title-element"></a>Title — element
+## <a name="title-element"></a>Element tytułu
 
-Określa tytuł fragmentu kodu. Tytuł zapisany w `Title` elemencie fragmentu kodu pojawia się w **selektorze fragmentów kodu** i w opisie fragmentu kodu w **Menedżerze fragmentów kodu**.
+Określa tytuł fragmentu kodu. Tytuł zapisany we `Title` elemencie fragmentu kodu pojawia się w **selektorze fragmentów kodu** oraz w opisie fragmentu kodu w **Menedżerze urywków kodu**.
 
 ```xml
 <Title>
@@ -601,7 +601,7 @@ Określa tytuł fragmentu kodu. Tytuł zapisany w `Title` elemencie fragmentu ko
 
 Wartość tekstowa jest wymagana. Tekst określa tytuł fragmentu kodu.
 
-## <a name="tooltip-element"></a>Element ToolTip
+## <a name="tooltip-element"></a>Element Etykietki narzędzia
 
 Opisuje oczekiwaną wartość i użycie literału lub obiektu we fragmencie kodu. Informacje te będą wyświetlane w programie Visual Studio w etykietce narzędzia po wstawieniu fragmentu kodu do projektu. Tekst etykietki narzędzia jest wyświetlany, gdy wskaźnik myszy znajdzie się nad literałem lub obiektem.
 
@@ -613,14 +613,14 @@ Opisuje oczekiwaną wartość i użycie literału lub obiektu we fragmencie kodu
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Literal — element](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
+|[Element dosłowny](../ide/code-snippets-schema-reference.md#literal-element)|Definiuje pola literałów fragmentu kodu, które można edytować.|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa opis etykietki narzędzia, który zostanie skojarzony z obiektem lub literałem we fragmencie kodu.
 
-## <a name="type-element"></a>Element Type
+## <a name="type-element"></a>Element tekstowy
 
-Określa typ obiektu. Element `Object` służy do identyfikowania elementu, który jest wymagany przez fragment kodu, ale prawdopodobnie zostanie zdefiniowany poza fragmentem. Na przykład formanty interfejsu Windows Forms, formanty środowiska ASP.NET, wystąpienia obiektów i wystąpienia typów powinny być deklarowane jako obiekty. Deklaracje obiektów wymagają określenia typu, który jest wykonywany przy użyciu elementu `Type`.
+Określa typ obiektu. Element `Object` jest używany do identyfikowania elementu, który jest wymagany przez fragment kodu, ale prawdopodobnie zostanie zdefiniowany poza samym fragmentem kodu. Na przykład formanty interfejsu Windows Forms, formanty środowiska ASP.NET, wystąpienia obiektów i wystąpienia typów powinny być deklarowane jako obiekty. Deklaracje obiektów wymagają, aby określić typ, `Type` który odbywa się z elementem.
 
 ```xml
 <Type>
@@ -632,7 +632,7 @@ Określa typ obiektu. Element `Object` służy do identyfikowania elementu, któ
 | - |-----------------|
 |[Element obiektu](../ide/code-snippets-schema-reference.md#object-element)|Definiuje pola obiektów fragmentu kodu, które można edytować.|
 
-Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Na przykład:
+Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Przykład:
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>
@@ -643,7 +643,7 @@ Wartość tekstowa jest wymagana. Ten tekst określa typ obiektu. Na przykład:
 Określa adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie.
 
 > [!NOTE]
-> Element `Url` jest obsługiwany tylko w przypadku projektów Visual Basic.
+> Element `Url` jest obsługiwany tylko dla projektów języka Visual Basic.
 
 ```xml
 <Url>
@@ -653,11 +653,11 @@ Określa adres URL strony z dodatkowymi informacjami o zestawie, do którego pro
 
 |Element nadrzędny|Opis|
 | - |-----------------|
-|[Reference — element](../ide/code-snippets-schema-reference.md#reference-element)|Określa odwołania do zestawów wymagane we fragmencie kodu.|
+|[Element odniesienia](../ide/code-snippets-schema-reference.md#reference-element)|Określa odwołania do zestawów wymagane we fragmencie kodu.|
 
 Wartość tekstowa jest wymagana. Ten tekst określa adres URL strony z dodatkowymi informacjami o zestawie, do którego prowadzi odwołanie. Ten adres URL jest wyświetlany, gdy do projektu nie można dodać odwołania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)
 - [Przewodnik: tworzenie fragmentu kodu](../ide/walkthrough-creating-a-code-snippet.md)

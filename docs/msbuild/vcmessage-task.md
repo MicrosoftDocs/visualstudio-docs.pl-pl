@@ -1,5 +1,5 @@
 ---
-title: VCMessage — — zadanie | Microsoft Docs
+title: Zadanie VCMessage | Dokumenty firmy Microsoft
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,29 +20,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631214"
 ---
 # <a name="vcmessage-task"></a>VCMessage — Zadanie
 
-Rejestruje ostrzeżenia i komunikaty o błędach podczas kompilacji.
+Rejestruje komunikaty ostrzegawcze i komunikaty o błędach podczas kompilacji.
 
 ## <a name="remarks"></a>Uwagi
 
- To zadanie ułatwia zaimplementowanie C++ programu MSBuild dla projektów i nie jest przeznaczone do wywoływania przez użytkownika. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
+ To zadanie pomaga zaimplementować MSBuild dla projektów Języka C++ i nie jest przeznaczony do wywoływania przez użytkownika. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Parametry
 
- W poniższej tabeli opisano parametry zadania **VCMessage —** .
+ W poniższej tabeli opisano parametry zadania **VCMessage.**
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**Argumenty**|Opcjonalny parametr **ciągu** .<br /><br /> Rozdzielana średnikami lista komunikatów do wyświetlenia.|
-|**Kod**|Wymagany parametr **ciągu** .<br /><br /> Numer błędu, który uprawnia do wiadomości.|
-|**Typ**|Opcjonalny parametr **ciągu** .<br /><br /> Określa rodzaj komunikatu do emisji. Określ "ostrzeżenie", aby emitować komunikat ostrzegawczy, lub "błąd", aby wyemitować komunikat o błędzie.|
+|**Argumenty**|Opcjonalny parametr **String.**<br /><br /> Lista wiadomości rozdzielanych średnikami do wyświetlenia.|
+|**Code**|Wymagany parametr **String.**<br /><br /> Numer błędu, który kwalifikuje wiadomość.|
+|**Typ**|Opcjonalny parametr **String.**<br /><br /> Określa rodzaj wiadomości do emisji. Określ "Ostrzeżenie", aby emitować komunikat ostrzegawczy lub "Błąd", aby emitować komunikat o błędzie.|
 
 ## <a name="see-also"></a>Zobacz też
 

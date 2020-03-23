@@ -1,5 +1,5 @@
 ---
-title: Wspólne widoki danych | Microsoft Docs
+title: Wspólne widoki danych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777832"
 ---
 # <a name="common-data-views"></a>Wspólne widoki danych
@@ -25,31 +25,31 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
 ## <a name="in-this-section"></a>W tej sekcji
 - [Widok podsumowania](../profiling/summary-view.md)
 
- Opisuje widok podsumowania i raport. Kolumny danych zależą od metody profilowania.
+ Zawiera opis widoku podsumowanie i raportu. Kolumny danych zależą od metody profilowania.
 
-- [Widok wywołujący/wywoływany](../profiling/caller-callee-view.md)
+- [Widok rozmówcy/wywoływania](../profiling/caller-callee-view.md)
 
- Opisuje widok drzewa wywołań i raport. Kolumny danych zależą od metody profilowania.
+ Zawiera opis widoku drzewa wywołań i raportu. Kolumny danych zależą od metody profilowania.
 
 - [Widok drzewa wywołań](../profiling/call-tree-view.md)
 
- Opisuje widok drzewa wywołań i raport. Kolumny danych zależą od metody profilowania.
+ Zawiera opis widoku drzewa wywołań i raportu. Kolumny danych zależą od metody profilowania.
 
 - [Widok modułów](../profiling/modules-view.md)
 
- Opisuje widok modułów i raport. Kolumny danych zależą od metody profilowania.
+ W tym artykule opisano widok i raport modułów. Kolumny danych zależą od metody profilowania.
 
 - [Widok funkcji](../profiling/functions-view.md)
 
- Opisuje widok i raport funkcji. Kolumny danych zależą od metody profilowania.
+ W tym artykule opisano widok i raport funkcji. Kolumny danych zależą od metody profilowania.
 
 - [Widok linii](../profiling/lines-view.md)
 
- Opisuje widok wierszy i raport. Kolumny danych zależą od metody profilowania.
+ W tym artykule opisano widok i raport Wiersze. Kolumny danych zależą od metody profilowania.
 
 - [Widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md)
 
- Opisuje widok wskaźnika instrukcji (IP) i raport. Kolumny danych zależą od metody profilowania.
+ W tym artykule opisano widok i raport wskaźnika instrukcji (IP). Kolumny danych zależą od metody profilowania.
 
 - [Widok procesu](../profiling/process-view.md)
 
@@ -59,15 +59,15 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
 
  Wyświetla listę zdarzeń ETW i próbkowania, które zostały wstawione do pliku danych profilowania.
 
-## <a name="related-sections"></a>Sekcje pokrewne
-- [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
+## <a name="related-sections"></a>Powiązane sekcje
+- [Widoki danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)
 
- Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody próbkowania.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody próbkowania.
 
 - [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)
 
- Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu metody instrumentacji.
 
 - [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
 
- Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu kolekcji pamięci platformy .NET.
+ Informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane przy użyciu kolekcji pamięci .NET.

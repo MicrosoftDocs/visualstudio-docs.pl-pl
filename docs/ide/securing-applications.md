@@ -12,37 +12,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595452"
 ---
 # <a name="secure-applications"></a>Zabezpieczanie aplikacji
 
-Należy rozważyć bezpieczeństwo we wszystkich aspektach programowania aplikacji, od projektowania do wdrożenia. Rozpocznij od uruchamianie programu Visual Studio w bezpieczny sposób. Zobacz [uprawnienia użytkownika](../ide/user-permissions-and-visual-studio.md).
+Należy rozważyć bezpieczeństwo we wszystkich aspektach programowania aplikacji, od projektowania do wdrożenia. Zacznij od uruchomienia programu Visual Studio tak bezpiecznie, jak to możliwe. Zobacz [Uprawnienia użytkownika](../ide/user-permissions-and-visual-studio.md).
 
 Aby efektywnie rozwijać bezpieczne aplikacje, powinieneś rozumieć podstawy pojęć związanych z bezpieczeństwem i funkcji zabezpieczeń platform, dla których tworzysz. Należy również mieć świadomość bezpiecznych technik kodowania.
 
-## <a name="code-for-security"></a>Kod dla zabezpieczeń
+## <a name="code-for-security"></a>Kod zabezpieczeń
 
-Większość błędów kodowania, które powodują powstanie luk w zabezpieczeniach, gdy deweloperzy wprowadzają nieprawidłowe założenia podczas pracy z danymi wejściowymi użytkownika lub nie mają w pełni zrozumienia platformy, dla której są one opracowywane.
+Większość błędów kodowania, które powodują luki w zabezpieczeniach występują, ponieważ deweloperzy popełniają nieprawidłowe założenia podczas pracy z danych wejściowych użytkownika lub ponieważ nie w pełni zrozumieć platformę, dla której są one opracowywania.
 
-- [Zasady bezpiecznego kodowania](/dotnet/standard/security/secure-coding-guidelines) — w tym artykule opisano różne metody kodu platformy .NET, które mogą być przeznaczone do pracy z systemem zabezpieczeń.
-- [Najlepsze rozwiązania w zakresie C++ zabezpieczeń](/cpp/top/security-best-practices-for-cpp) zawierają informacje o narzędziach i praktykach zabezpieczeń dla C++ deweloperów.
+- [Wskazówki dotyczące bezpiecznego kodowania](/dotnet/standard/security/secure-coding-guidelines) opisują różne sposoby, w jakie kod .NET może być zaprojektowany do pracy z systemem zabezpieczeń.
+- [Najważniejsze wskazówki dotyczące zabezpieczeń dla języka C++](/cpp/top/security-best-practices-for-cpp) zawierają informacje o narzędziach zabezpieczeń i rozwiązaniach dla deweloperów języka C++.
 
-## <a name="build-for-security"></a>Kompiluj pod kątem zabezpieczeń
+## <a name="build-for-security"></a>Kompilacja dla bezpieczeństwa
 
-Bezpieczeństwo jest również ważnym zagadnieniem w procesie kompilacji. Kilka dodatkowych kroków może zwiększyć bezpieczeństwo wdrożonej aplikacji i uniemożliwić nieautoryzowane odwrócenie, fałszowanie lub inne ataki:
+Bezpieczeństwo jest również ważnym czynnikiem w procesie kompilacji. Kilka dodatkowych kroków może poprawić bezpieczeństwo wdrożonej aplikacji i zapobiec nieautoryzowanemu inżynierii odwrotnej, fałszowaniu lub innym atakom:
 
-- [Dotfuscator](dotfuscator/index.md) jest bezpłatna i pomaga w ochronie zestawów .NET przed odtwarzaniem i nieautoryzowanym użyciem, takim jak debugowanie nieautoryzowane.
-- [Podpisywanie silnej nazwy](managing-assembly-and-manifest-signing.md) może służyć do unikatowego identyfikowania składników oprogramowania i zapobiegania fałszowaniu nazw.
+- [Dotfuscator](dotfuscator/index.md) jest wolny i pomaga chronić zestawy .NET przed inżynierii odwrotnej i nieautoryzowanego użycia, takich jak nieautoryzowane debugowanie.
+- [Podpisywanie silnej nazwy](managing-assembly-and-manifest-signing.md) może służyć do jednoznacznej identyfikacji składników oprogramowania i zapobiegania fałszowaniu nazw.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zabezpieczenia w programie .NET](/dotnet/standard/security/index)
+- [Zabezpieczenia w .NET](/dotnet/standard/security/index)
 - [Zabezpieczenia platformy Azure](/azure/security/)
 - [Przewodnik po zabezpieczeniach systemu Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Funkcje zabezpieczeń platformy Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
-- [Zabezpieczenia ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Zabezpieczenia Windows Forms](/dotnet/framework/winforms/windows-forms-security)
+- [ASP.NET Podstawowe zabezpieczenia](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Zabezpieczenia formularzy systemu Windows](/dotnet/framework/winforms/windows-forms-security)

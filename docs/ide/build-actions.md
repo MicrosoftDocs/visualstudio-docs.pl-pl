@@ -1,5 +1,5 @@
 ---
-title: Akcje kompilacji dla plików
+title: Tworzenie akcji dla plików
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -9,53 +9,53 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408808"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79301987"
 ---
 # <a name="build-actions"></a>Akcje kompilacji
 
-Wszystkie pliki w projekcie programu Visual Studio mają akcję kompilacji. Akcja kompilacji kontroluje, co się dzieje z plikiem podczas kompilowania projektu.
+Wszystkie pliki w projekcie programu Visual Studio mają akcję kompilacji. Akcja kompilacji kontroluje, co dzieje się z plikiem podczas kompilowania projektu.
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Tworzenie akcji w Visual Studio dla komputerów Mac](/visualstudio/mac/build-actions).
+> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W przypadku programu Visual Studio dla komputerów Mac zobacz [Tworzenie akcji w programie Visual Studio dla komputerów Mac](/visualstudio/mac/build-actions).
 
 ## <a name="set-a-build-action"></a>Ustawianie akcji kompilacji
 
-Aby ustawić akcję kompilacji dla pliku, Otwórz właściwości pliku w oknie **Właściwości** , wybierając plik w **Eksplorator rozwiązań** i naciśnij klawisz **Alt**+**Enter**. Lub kliknij prawym przyciskiem myszy plik w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**. W oknie **Właściwości** , w sekcji **Zaawansowane** , Użyj listy rozwijanej obok pozycji **Akcja kompilacji** , aby ustawić akcję kompilacji dla tego pliku.
+Aby ustawić akcję kompilacji dla pliku, otwórz właściwości pliku w oknie **Właściwości,** zaznaczając plik w **Eksploratorze rozwiązań** i naciskając klawisz **Alt**+**Enter**. Lub kliknij prawym przyciskiem myszy plik w **Eksploratorze rozwiązań** i wybierz polecenie **Właściwości**. W oknie Właściwości w sekcji **Zaawansowane** użyj listy rozwijanej obok pozycji **Akcja kompilacji,** aby ustawić akcję kompilacji dla pliku. **Properties**
 
 ![Akcje kompilacji dla pliku w programie Visual Studio](media/build-actions.png)
 
-## <a name="build-action-values"></a>Wartości akcji kompilacji
+## <a name="build-action-values"></a>Tworzenie wartości akcji
 
-Niektóre z bardziej typowych akcji kompilacji dla C# plików projektu i Visual Basic są następujące:
+Oto niektóre z bardziej typowych akcji kompilacji dla plików projektu Języka C# i Visual Basic:
 
 |Akcja kompilacji | Typy projektów | Opis |
 |-|-|
-| **AdditionalFiles** | C#Visual Basic | Plik tekstowy nieźródłowy, który jest przesyłany do kompilatora C# lub Visual Basic jako dane wejściowe. Ta akcja kompilacji służy głównie do zapewnienia danych wejściowych [analizatorów](../code-quality/roslyn-analyzers-overview.md) , do których odwołuje się projekt w celu sprawdzenia jakości kodu. Aby uzyskać więcej informacji, zobacz [Używanie dodatkowych plików](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
-| **ApplicationDefinition** | WPF | Plik, który definiuje aplikację. Podczas pierwszego tworzenia projektu jest to *App. XAML*. |
-| **CodeAnalysisDictionary** | .NET | Niestandardowy słownik słów używany przez analizę kodu do sprawdzania pisowni. Zobacz [jak: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
-| **Opracowania** | ile | Plik jest przesyłany do kompilatora jako plik źródłowy.|
-| **Zawartość** | .NET | Plik oznaczony jako **zawartość** można pobrać jako strumień, wywołując <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. W przypadku projektów ASP.NET te pliki są uwzględniane jako część lokacji podczas jej wdrażania.|
-| **DesignData** | WPF | Używane dla plików ViewModel języka XAML, aby umożliwić wyświetlanie kontrolek użytkownika w czasie projektowania przy użyciu fikcyjnych typów i przykładowych danych. |
-| **DesignDataWithDesignTimeCreateable** | WPF | Podobnie jak **DesignData**, ale z rzeczywistymi typami.  |
-| **Zasób osadzony** | .NET | Plik jest przesyłany do kompilatora jako zasób, który ma zostać osadzony w zestawie. Możesz wywołać <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName>, aby odczytać plik z zestawu.|
-| **EntityDeploy** | .NET | W przypadku plików Entity Framework (EF). edmx, które określają wdrożenie artefaktów EF. |
-| **Fakes** | .NET | Używane dla środowiska testowania sztucznej firmy Microsoft. Zobacz [Izolowanie testowanego kodu za pomocą](../test/isolating-code-under-test-with-microsoft-fakes.md) elementów sztucznych firmy Microsoft |
-| **Dawaj** | ile | Plik nie jest częścią kompilacji w żaden sposób. Ta wartość może być używana dla plików dokumentacji, takich jak pliki Readme, na przykład.|
-| **Stronic** | WPF | Kompiluj plik XAML do pliku typu binary. BAML w celu przyspieszenia ładowania w czasie wykonywania. |
-| **Zasób** | WPF | Określa, aby osadzić plik w pliku zasobów manifestu zestawu z rozszerzeniem *. g. resources*. |
-| **Cieniowan** | .NET | Używane dla pliku. akcesora, który zawiera listę skompilowanych nazw plików zestawu, po jednym w każdym wierszu. Dla każdego zestawu na liście Generuj klasy publiczne o nazwach `ClassName_Accessor`, które są takie same jak oryginalne, ale z metodami publicznymi, a nie metodami prywatnymi. Używany do testowania jednostkowego. |
-| **Ekran powitalny** | WPF | Określa plik obrazu, który będzie wyświetlany w czasie wykonywania podczas uruchamiania aplikacji. |
-| **XamlAppDef** | Windows Workflow Foundation | Instruuje kompilację, aby kompilować plik XAML przepływu pracy w zestawie z osadzonym przepływem pracy. |
+| **AdditionalFiles (Pliki dodatkowe)** | C#, Visual Basic | Nieskładkowy plik tekstowy, który jest przekazywany do kompilatora języka C# lub Visual Basic jako dane wejściowe. Ta akcja kompilacji jest używana głównie do dostarczania danych wejściowych do [analizatorów,](../code-quality/roslyn-analyzers-overview.md) do których odwołuje się projekt w celu zweryfikowania jakości kodu. Aby uzyskać więcej informacji, zobacz [Używanie dodatkowych plików](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
+| **Definicja aplikacji** | WPF | Plik definiujący aplikację. Przy pierwszym utworzeniu projektu jest to *app.xaml*. |
+| **KodAnalysisDictionary** | .NET | Niestandardowy słownik wyrazów używany przez analizę kodu do sprawdzania pisowni. Zobacz [jak: Dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Skompilować** | Wszelki | Plik jest przekazywany do kompilatora jako plik źródłowy.|
+| **Zawartość** | .NET | Plik oznaczony jako **Zawartość** można pobrać jako <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>strumień, wywołując . W przypadku projektów ASP.NET pliki te są uwzględniane jako część witryny po wdrożeniu.|
+| **DesignData ( DesignData )** | WPF | Używane dla plików XAML ViewModel, aby umożliwić formanty użytkownika, które mają być wyświetlane w czasie projektowania, z fikcyjnych typów i przykładowych danych. |
+| **DesignDataWithDesignTimeTworzyć** | WPF | Podobnie jak **DesignData**, ale z rzeczywistymi typami.  |
+| **Zasób osadzony** | .NET | Plik jest przekazywany do kompilatora jako zasób, który ma być osadzony w zestawie. Można wywołać, <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> aby odczytać plik z zestawu.|
+| **EntityDeploy (** | .NET | Dla entity framework (EF) .edmx plików, które określają wdrażanie artefaktów EF. |
+| **Podróbki** | .NET | Używane dla platformy testowania microsoft fakes. Zobacz [Izolowanie kodu w trakcie testu przy użyciu microsoft fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
+| **Brak** | Wszelki | Plik nie jest częścią kompilacji w żaden sposób. Ta wartość może służyć do plików dokumentacji, takich jak "ReadMe" plików, na przykład.|
+| **Strona** | WPF | Skompiluj plik XAML do binarnego pliku .baml, aby przyspieszyć ładowanie w czasie wykonywania. |
+| **Zasób** | WPF | Określa osadzanie pliku w pliku zasobu manifestu zestawu z rozszerzeniem *.g.resources*. |
+| **W tle** | .NET | Używany dla pliku .akcesora, który zawiera listę wbudowanych nazwy plików zestawu, po jednym w wierszu. Dla każdego zestawu na liście wygeneruj klasy publiczne o nazwach, `ClassName_Accessor` które są podobne do oryginałów, ale za pomocą metod publicznych zamiast metod prywatnych. Służy do testowania jednostkowego. |
+| **Ekran powitalny** | WPF | Określa plik obrazu, który ma być wyświetlany w czasie wykonywania podczas uruchamiania aplikacji. |
+| **XamlAppDef (ekw.** | Windows Workflow Foundation | Nakazuje kompilacji tworzenie pliku XAML przepływu pracy do zestawu z osadzonym przepływem pracy. |
 
 > [!NOTE]
-> Dodatkowe akcje kompilacji mogą być definiowane przez dla określonych typów projektów, więc lista akcji kompilacji zależy od typu projektu i wartości, które nie znajdują się na liście.
+> Dodatkowe akcje kompilacji mogą być definiowane przez dla określonych typów projektów, więc lista akcji kompilacji zależy od typu projektu i wartości mogą pojawić się, które nie znajdują się na tej liście.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Opcje kompilatora języka C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
-- [Opcje kompilatora Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
+- [Opcje kompilatora C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
+- [Opcje kompilatora języka Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
 - [Akcje kompilacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/build-actions)

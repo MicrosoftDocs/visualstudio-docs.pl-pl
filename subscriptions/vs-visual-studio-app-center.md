@@ -1,80 +1,80 @@
 ---
-title: Visual Studio App Center korzyść w subskrypcjach programu Visual Studio | Microsoft Docs
+title: Korzyści z centrum aplikacji programu Visual Studio w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
-description: Dowiedz się więcej o korzyściach Visual Studio App Center uwzględnionych w subskrypcjach programu Visual Studio.
+description: Dowiedz się więcej o korzyściach płynących z programu Visual Studio App Center zawartych w subskrypcjach programu Visual Studio.
 ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74161916"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcjach programu Visual Studio
 
-App Center to sterowanie misjami dla aplikacji.
+Centrum aplikacji to kontrola misji dla aplikacji.
 
-- Automatyczne Kompilowanie aplikacji, testowanie jej na rzeczywistych urządzeniach i dystrybuowanie do testerów wersji beta
-- Zbieraj raporty o awarii i analizy użytkowników, w tym zdarzenia niestandardowe.
+- Automatycznie twórz aplikację, testuj ją na prawdziwych urządzeniach i rozdzielaj ją na beta testerów
+- Zbieranie raportów o awariach i analiz użytkowników, w tym zdarzeń niestandardowych.
 - Dodawanie powiadomień wypychanych do aplikacji w ciągu kilku minut
 
 ## <a name="activation-steps"></a>Kroki aktywacji
-Wprowadzenie do Visual Studio App Center jest proste.
-1. Zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Rozpoczęcie pracy z programem Visual Studio App Center jest łatwe.
+1. Zaloguj się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)do .
 
-2. Znajdź kafelek Visual Studio App Center i kliknij pozycję **Rozpocznij**.
+2. Znajdź kafelek centrum aplikacji programu Visual Studio i kliknij pozycję **Wprowadzenie**.
     > [!div class="mx-imgBorder"]
-    > App Center kafelka ![a](_img/vs-app-center/vs-app-center-tile.png)
+    > ![Kafelek centrum aplikacji programu VS](_img/vs-app-center/vs-app-center-tile.png)
 
-3. Następnie utwórz konto.  Możesz użyć istniejących kont dla usług Microsoft, Google, GitHub lub Facebook, aby się zalogować, lub utworzyć nowe konto, podając nazwę użytkownika, adres e-mail i hasło.  Kliknij przycisk **Utwórz konto** , aby kontynuować.
+3. Następnie utwórz konto.  Możesz użyć istniejących kont microsoftu, Google, GitHub lub Facebooka, aby zalogować się lub utworzyć nowe konto, podając swoją nazwę użytkownika, adres e-mail i hasło.  Kliknij **pozycję Utwórz konto,** aby kontynuować.
     > [!div class="mx-imgBorder"]
-    > ![a App Center Utwórz konto](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![Tworzenie konta w centrum aplikacji programu VS](_img/vs-app-center/vs-app-center-create-account.png)
 
-4. To wszystko.  Po prostu kliknij pozycję **Dodaj nową organizację** lub **Dodaj nową aplikację** , aby rozpocząć pracę.
+4. To już wszystko.  Po prostu kliknij **dodaj nową organizację** lub Dodaj nową **aplikację,** aby rozpocząć!
     > [!div class="mx-imgBorder"]
-    > ![App Center portalu w programie VS](_img/vs-app-center/vs-app-center-portal.png)
+    > ![Portal centrum aplikacji programu VS](_img/vs-app-center/vs-app-center-portal.png)
 
-## <a name="eligibility"></a>Kryteria
+## <a name="eligibility"></a>Kwalifikowalności
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnej?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, NFR<sup>1</sup> | Uwzględnione       |  Tak          |
-| Visual Studio Enterprise z usługą GitHub Enterprise  | Licencja | Uwzględnione       |  Tak          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Uwzględnione                                                            |Tak |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja                                      | Uwzględnione                                                            |Tak |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Uwzględnione                                                            |Tak |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Uwzględnione                                                            |Tak |
+| Visual Studio Enterprise (standardowa, miesięczna chmura)   | VL, Azure, Handel detaliczny, NFR<sup>1</sup> | Dołączono       |  Tak          |
+| Visual Studio Enterprise z gitHub Enterprise  | Vl | Dołączono       |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | VL, Azure, Handel detaliczny                                       | Dołączono                                                            |Tak |
+| Visual Studio Professional z gitHub Enterprise | Vl                                      | Dołączono                                                            |Tak |
+| Visual Studio Test Professional (standard)                         | VL, Handel detaliczny                                              | Dołączono                                                            |Tak |
+| Platformy MSDN (standard)                                          | VL, Handel detaliczny                                              | Dołączono                                                            |Tak |
 ||
 
-<sup>1</sup>  *obejmuje: nie dotyczy odsprzedaży (NFR), pełnego etatu, programu Visual Studio Industry partner (VSIP), wyobraź sobie, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, najbardziej cennych profesjonalistów (MVP), kierownika Regionalnego (RD).*
+<sup>1</sup>  *Obejmuje: Nie dla odsprzedaży (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już rocznych subskrypcji programu Visual Studio Professional i rocznych subskrypcji programu Visual Studio Enterprise w subskrypcjach w chmurze. Nie będzie żadnych zmian w istniejącym doświadczeniu klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) aby przejść do eksplorowania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P: otrzymuję błąd, którego przeglądarka nie obsługuje.  Co jest nie tak?
-Odp.: App Center wymaga nowszych możliwości, które mogą nie być dostarczane przez niektóre starsze przeglądarki.  Jeśli przeglądarka nie jest obsługiwana, wykonaj następujące kroki:
-1. Otwórz inną przeglądarkę, taką jak Microsoft Edge lub Najnowsza wersja usługi Google Chrome lub Firefox lub Safari.
-2. Połącz się z [https://my.visualstudio.com/benefits em](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) programu Visual Studio i zaloguj się.
-3. Teraz **kliknij link wprowadzenie na** kafelku Visual Studio App Center.
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P: Pojawia się błąd, że moja przeglądarka nie jest nieobsługiwała.  Co jest nie tak?
+Odp.: Centrum aplikacji wymaga nowszych funkcji, które mogą nie być dostarczane przez niektóre starsze przeglądarki.  Jeśli twoja przeglądarka nie jest obsługiwana, wykonaj następujące czynności:
+1. Otwórz inną przeglądarkę, taką jak Microsoft Edge lub najnowsze wersje Przeglądarki Google Chrome, Firefox lub Safari.
+2. Połącz się [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) z programem Visual Studio i zaloguj się.
+3. Teraz kliknij łącze **Wprowadzenie** na kafelku Visual Studio App Center.
 
-Teraz powinno być możliwe uzyskanie dostępu do portalu App Center i utworzenie konta.
+Teraz powinieneś mieć dostęp do portalu App Center i utworzyć konto.
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy dotyczącej App Center?
-  - Uzyskaj porady i odpowiedzi z zespołu App Center w [centrum pomocy App Center](https://intercom.help/appcenter/).
-  - Zapoznaj się z pełną [dokumentacją App Center](/appcenter/)
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Zasoby wsparcia
+- Potrzebujesz pomocy w App Center?
+  - Uzyskaj porady i odpowiedzi od zespołu Centrum aplikacji w [Centrum pomocy Centrum aplikacji](https://intercom.help/appcenter/).
+  - Zapoznaj się z pełną [dokumentacją centrum aplikacji](/appcenter/)
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Pamiętaj, aby aktywować te doskonałe korzyści, aby zapewnić największą subskrypcję programu Visual Studio:
+Pamiętaj, aby aktywować te wspaniałe korzyści, aby w pełni wykorzystać subskrypcję programu Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)

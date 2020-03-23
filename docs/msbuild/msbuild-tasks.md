@@ -1,5 +1,5 @@
 ---
-title: Zadania programu MSBuild | Microsoft Docs
+title: Zadania MSBuild | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633138"
 ---
 # <a name="msbuild-tasks"></a>zadania programu MSBuild
 
-Platforma kompilacji musi mieć możliwość wykonywania dowolnej liczby akcji w procesie kompilacji. Program MSBuild używa *zadań* do wykonania tych działań. Zadanie jest jednostką kodu wykonywalnego używanego przez program MSBuild do wykonywania niepodzielnych operacji kompilacji.
+Platforma kompilacji wymaga możliwości wykonywania dowolnej liczby akcji podczas procesu kompilacji. MSBuild używa *zadań* do wykonywania tych akcji. Zadanie jest jednostką kodu wykonywalnego używanego przez MSBuild do wykonywania operacji kompilacji niepodzielnej.
 
-## <a name="task-logic"></a>Logika zadań
+## <a name="task-logic"></a>Logika zadania
 
- Format pliku projektu XML programu MSBuild nie może w pełni wykonywać operacji kompilacji, więc logika zadań musi być implementowana poza plikiem projektu.
+ Format pliku projektu MSBuild XML nie może w pełni wykonać operacji kompilacji na własną rękę, więc logika zadania musi być zaimplementowana poza plikiem projektu.
 
- Logika wykonywania zadania jest implementowana jako Klasa platformy .NET implementująca interfejs <xref:Microsoft.Build.Framework.ITask>, który jest zdefiniowany w przestrzeni nazw <xref:Microsoft.Build.Framework>.
+ Logika wykonywania zadania jest implementowana jako klasa .NET, która implementuje <xref:Microsoft.Build.Framework.ITask> <xref:Microsoft.Build.Framework> interfejs, który jest zdefiniowany w obszarze nazw.
 
- Klasa Task definiuje również parametry wejściowe i wyjściowe dostępne dla zadania w pliku projektu. Wszystkie publiczne, niestatyczne właściwości nieabstrakcyjne udostępniane przez klasę zadania mogą mieć wartości w pliku projektu przez umieszczenie odpowiedniego atrybutu o tej samej nazwie w elemencie [Task](../msbuild/task-element-msbuild.md) i ustawienie jego wartości, jak pokazano w przykładach w dalszej części tego artykułu.
+ Klasa zadań definiuje również parametry wejściowe i wyjściowe dostępne dla zadania w pliku projektu. Wszystkie publiczne settable niestatyczne właściwości nieabstrakcyjne udostępniane przez klasę zadań można podać wartości w pliku projektu, umieszczając odpowiedni atrybut o tej samej nazwie na [Task](../msbuild/task-element-msbuild.md) element i ustawienie jego wartości, jak pokazano w przykładach w dalszej części tego artykułu.
 
- Można napisać własne zadanie, tworząc zarządzaną klasę, która implementuje interfejs <xref:Microsoft.Build.Framework.ITask>. Aby uzyskać więcej informacji, zobacz [Zapisywanie zadań](../msbuild/task-writing.md).
+ Można napisać własne zadanie, tworząc klasę zarządzaną, <xref:Microsoft.Build.Framework.ITask> która implementuje interfejs. Aby uzyskać więcej informacji, zobacz [Pisanie zadań](../msbuild/task-writing.md).
 
 ## <a name="execute-a-task-from-a-project-file"></a>Wykonywanie zadania z pliku projektu
 
- Przed wykonaniem zadania w pliku projektu należy najpierw zmapować typ w zestawie, który implementuje zadanie do nazwy zadania z elementem [UsingTask](../msbuild/usingtask-element-msbuild.md) . Dzięki temu program MSBuild wie, gdzie szukać logiki wykonywania zadania po znalezieniu go w pliku projektu.
+ Przed wykonaniem zadania w pliku projektu należy najpierw zamapować typ w zestawie, który implementuje zadanie do nazwy zadania z [UsingTask](../msbuild/usingtask-element-msbuild.md) elementu. Dzięki temu MSBuild wiedzieć, gdzie szukać logiki wykonywania zadania, gdy znajdzie go w pliku projektu.
 
- Aby wykonać zadanie w pliku projektu programu MSBuild, należy utworzyć element o nazwie zadania jako element podrzędny elementu `Target`. Jeśli zadanie przyjmuje parametry, są one przenoszone jako atrybuty elementu.
+ Aby wykonać zadanie w pliku projektu MSBuild, należy utworzyć element o nazwie `Target` zadania jako element podrzędny elementu. Jeśli zadanie akceptuje parametry, są one przekazywane jako atrybuty elementu.
 
- Listy i właściwości elementów programu MSBuild mogą służyć jako parametry. Na przykład poniższy kod wywołuje zadanie `MakeDir` i ustawia wartość właściwości `Directories` obiektu `MakeDir` równą wartości właściwości `BuildDir`:
+ Listy elementów MSBuild i właściwości mogą służyć jako parametry. Na przykład następujący kod `MakeDir` wywołuje zadanie i ustawia `Directories` wartość `MakeDir` właściwości obiektu równą `BuildDir` wartości właściwości:
 
 ```xml
 <Target Name="MakeBuildDirectory">
@@ -47,7 +47,7 @@ Platforma kompilacji musi mieć możliwość wykonywania dowolnej liczby akcji w
 </Target>
 ```
 
- Zadania mogą także zwracać informacje do pliku projektu, które mogą być przechowywane w elementach lub właściwościach w celu późniejszego użycia. Na przykład poniższy kod wywołuje zadanie `Copy` i zapisuje informacje z właściwości dane wyjściowe `CopiedFiles` na liście `SuccessfullyCopiedFiles` elementów.
+ Zadania mogą również zwracać informacje do pliku projektu, które mogą być przechowywane w elementach lub właściwościach do późniejszego użycia. Na przykład następujący kod `Copy` wywołuje zadanie i przechowuje informacje z właściwości wyjściowej `CopiedFiles` na `SuccessfullyCopiedFiles` liście towarów.
 
 ```xml
 <Target Name="CopyFiles">
@@ -63,15 +63,15 @@ Platforma kompilacji musi mieć możliwość wykonywania dowolnej liczby akcji w
 
 ## <a name="included-tasks"></a>Uwzględnione zadania
 
- Program MSBuild jest dostarczany z wieloma zadaniami, takimi jak [copy](../msbuild/copy-task.md), które kopiuje pliki, [MakeDir](../msbuild/makedir-task.md), tworzące katalogi i [CSC](../msbuild/csc-task.md), które kompilują pliki kodu C# źródłowego. Aby uzyskać pełną listę dostępnych zadań i informacji o użyciu, zobacz [Dokumentacja zadania](../msbuild/msbuild-task-reference.md).
+ MSBuild jest dostarczany z wieloma zadaniami, takimi jak [Kopiuj](../msbuild/copy-task.md), który kopiuje pliki, [MakeDir](../msbuild/makedir-task.md), który tworzy katalogi, i [Csc](../msbuild/csc-task.md), który kompiluje pliki kodu źródłowego języka C#. Aby uzyskać pełną listę dostępnych zadań i informacji o użytkowaniu, zobacz [Odwołanie do zadania](../msbuild/msbuild-task-reference.md).
 
-## <a name="overridden-tasks"></a>Zastąpione zadania
+## <a name="overridden-tasks"></a>Zastępowane zadania
 
- Program MSBuild szuka zadań w kilku lokalizacjach. Pierwsza lokalizacja znajduje się w plikach z rozszerzeniem *. OverrideTasks* przechowywanych w katalogach .NET Framework. Zadania w tych plikach zastępują wszystkie inne zadania o tych samych nazwach, w tym zadania w pliku projektu. Druga lokalizacja znajduje się w plikach z rozszerzeniem *. Zadania* w katalogach .NET Framework. Jeśli zadanie nie zostanie odnalezione w żadnej z tych lokalizacji, zostanie użyte zadanie w pliku projektu.
+ MSBuild wyszukuje zadania w kilku lokalizacjach. Pierwsza lokalizacja znajduje się w plikach z rozszerzeniem *. OverrideTasks* przechowywane w katalogach .NET Framework. Zadania w tych plikach zastępują inne zadania o tych samych nazwach, w tym zadania w pliku projektu. Druga lokalizacja znajduje się w plikach z rozszerzeniem *. Zadania* w katalogach platformy .NET Framework. Jeśli zadanie nie zostanie znalezione w żadnej z tych lokalizacji, zadanie w pliku projektu jest używane.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [MSBuild](../msbuild/msbuild.md)
-- [Pisanie zadania](../msbuild/task-writing.md)
+- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Msbuild](../msbuild/msbuild.md)
+- [Pisanie zadań](../msbuild/task-writing.md)
 - [Zadania wbudowane](../msbuild/msbuild-inline-tasks.md)

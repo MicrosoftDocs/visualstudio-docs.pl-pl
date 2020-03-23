@@ -14,42 +14,42 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbf540056318e092db13521dc80478cc7eb91948
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590374"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Instrukcje: Tworzenie dziedziczenia między typami w Projektant klas
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Jak: Tworzenie dziedziczenia między typami w Projektancie klas
 
-Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klasy przy użyciu **Projektant klas**, Połącz typ podstawowy z typem pochodnym lub typami. Istnieje relacja dziedziczenia między dwiema klasami, między klasą a interfejsem lub między dwoma interfejsami.
+Aby utworzyć relację dziedziczenia między dwoma typami na diagramie klas przy użyciu **projektanta klas,** należy połączyć typ podstawowy z jego typem pochodnym lub typami. Relacja dziedziczenia między dwiema klasami, między klasą a interfejsem lub między dwoma interfejsami.
 
 ## <a name="to-create-an-inheritance-between-types"></a>Aby utworzyć dziedziczenie między typami
 
-1. Z projektu w **Eksplorator rozwiązań**Otwórz plik diagramu klasy (. CD).
+1. Z projektu w **Eksploratorze rozwiązań**otwórz plik diagramu klasy (cd).
 
-     Jeśli nie masz diagramu klas, utwórz go. Zobacz [jak: dodać diagramy klas do projektów](how-to-add-class-diagrams-to-projects.md).
+     Jeśli nie masz diagramu klas, utwórz go. Zobacz [Jak: Dodawanie diagramów klas do projektów](how-to-add-class-diagrams-to-projects.md).
 
-2. W **przyborniku**w obszarze **Projektant klas**kliknij pozycję **dziedziczenie**.
+2. W **przyborniku**w obszarze **Projektant klas**kliknij pozycję **Dziedziczenie**.
 
-3. Na diagramie klasy należy narysować linię dziedziczenia między typami, które chcesz, zaczynając od:
+3. Na diagramie klas narysuj linię dziedziczenia między typami, które chcesz, zaczynając od:
 
-    - Klasa pochodna klasy bazowej
+    - Klasa pochodna do klasy podstawowej
 
-    - Implementacja klasy do zaimplementowanego interfejsu
+    - Klasa implementująca do zaimplementowanego interfejsu
 
-    - Rozszerzanie interfejsu do rozszerzonego interfejsu
+    - Rozszerzający interfejs do rozszerzonego interfejsu
 
-4. Opcjonalnie, jeśli masz typ pochodny z typu ogólnego, kliknij linię dziedziczenia. W oknie **Właściwości** ustaw właściwość **argumenty typu** tak, aby odpowiadała typowi dla typu ogólnego.
+4. Opcjonalnie, jeśli masz typ pochodny z typu ogólnego, kliknij wiersz dziedziczenia. W oknie **Właściwości** ustaw właściwość **Typ argumenty,** aby dopasować typ, który ma dla typu ogólnego.
 
     > [!NOTE]
-    > Jeśli nadrzędna Klasa abstrakcyjna zawiera co najmniej jeden abstrakcyjny element członkowski, wszystkie abstrakcyjne składowe są implementowane jako nieabstrakcyjne klasy dziedziczenia.
+    > Jeśli nadrzędna klasa abstrakcyjna zawiera co najmniej jeden abstrakcyjny element członkowski, wszystkie abstrakcyjne elementy członkowskie są implementowane jako niesetrakcyjne klasy dziedziczenia.
     >
     >  Chociaż można wizualizować istniejące typy ogólne, nie można tworzyć nowych typów ogólnych. Nie można również zmienić parametrów typu dla istniejących typów ogólnych.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dziedziczenie](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Podstawowe informacje o dziedziczeniu](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Instrukcje: wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)
+- [Jak: Wyświetlanie dziedziczenia między typami](how-to-view-inheritance-between-types.md)
 - [Klasy Visual C++ w Projektancie klas](visual-cpp-classes.md)

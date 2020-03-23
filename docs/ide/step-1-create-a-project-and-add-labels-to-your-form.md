@@ -1,5 +1,5 @@
 ---
-title: Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza
+title: 'Krok 1: Tworzenie projektu i dodawanie etykiet do formularza'
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -11,203 +11,203 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579446"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Tworzenie projektu i Dodawanie etykiet do formularza
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Tworzenie projektu i dodawanie etykiet do formularza
 
-Pierwszym etapem tworzenia tego quizu jest utworzenie projektu i dodanie etykiet, przycisku i innych kontrolek do formularza. Należy również ustawić właściwości dla każdej dodawanej kontrolki. Projekt będzie zawierać formularz, formanty i (w dalszej części samouczka). Przycisk uruchamia quiz, etykiety pokazują problemy z quizem, a inne kontrolki wyświetlają odpowiedzi quizu i czas, który pozostanie do końca quizu.
+Jako pierwsze kroki w tworzeniu tego quizu, należy utworzyć projekt i dodać etykiety, przycisk i inne formanty do formularza. Można również ustawić właściwości dla każdego formantu, który można dodać. Projekt będzie zawierał formularz, formanty i (w dalszej części samouczka) kod. Przycisk rozpoczyna quiz, etykiety pokazują problemy z quizem, a inne elementy sterujące pokazują odpowiedzi na quiz i czas, który pozostaje do zakończenia quizu.
 
 > [!NOTE]
-> Ten temat jest częścią serii samouczków dotyczących podstawowych pojęć związanych z kodowaniem. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie quizu matematycznego z czasem](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-for-a-form"></a>Aby utworzyć projekt dla formularza
 
 ::: moniker range="vs-2017"
 
-1. Na pasku menu wybierz kolejno pozycje **plik** > **Nowy** > **projekt**.
+1. Na pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
-1. Wybierz pozycję  **C# Wizualizacja** lub **Visual Basic** po lewej stronie okna dialogowego **Nowy projekt** , a następnie wybierz pozycję **Windows Desktop**.
+1. Wybierz pozycję **Visual C#** lub **Visual Basic** po lewej stronie okna dialogowego Nowy **projekt,** a następnie wybierz pozycję **Pulpit systemu Windows**.
 
-1. Na liście szablonów wybierz szablon **aplikacja Windows Forms (.NET Framework)** , nadaj mu nazwę *MathQuiz*, a następnie wybierz przycisk **OK** .
+1. Na liście szablonów wybierz szablon **aplikacji Windows Forms App (.NET Framework),** nazwij go *MathQuiz*, a następnie wybierz przycisk **OK.**
 
-    Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1. vb* , w zależności od wybranego języka programowania.
+    Zostanie wyświetlony formularz o nazwie *Form1.cs* lub *Form1.vb,* w zależności od wybranego języka programowania.
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest widoczny, użyj Instalator programu Visual Studio, aby zainstalować obciążenie **programistyczne dla programu .NET Desktop** .<br/><br/>![obciążenie Programowanie aplikacji klasycznych platformy .NET w Instalator programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio](../install/install-visual-studio.md) .
+   > Jeśli nie widzisz szablonu **aplikacji Windows Forms App (.NET Framework),** użyj Instalatora programu Visual Studio, aby zainstalować obciążenie **programowe .NET dla deweloperów pulpitu.**<br/><br/>![Obciążenie programistyczne pulpitu .NET w Instalatorze programu Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Aby uzyskać więcej informacji, zobacz stronę [Instalowanie programu Visual Studio.](../install/install-visual-studio.md)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. W oknie uruchamiania wybierz pozycję **Utwórz nowy projekt**.
+1. W oknie początkowym wybierz pozycję **Utwórz nowy projekt**.
 
-   ![Wyświetl okno "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Wyświetlanie okna "Tworzenie nowego projektu"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. W oknie **Tworzenie nowego projektu** wprowadź lub wpisz *Windows Forms* w polu wyszukiwania. Następnie wybierz pozycję **pulpit** z listy **Typ projektu** .
+1. W oknie **Utwórz nowy projekt** wprowadź lub wpisz *formularze systemu Windows* w polu wyszukiwania. Następnie wybierz pozycję **Pulpit** z listy **Typu projektu.**
 
-   Po zastosowaniu filtru **Typ projektu** wybierz szablon **aplikacja Windows Forms (.NET Framework)** dla obu C# lub Visual Basic, a następnie wybierz przycisk **dalej**.
+   Po zastosowaniu filtru **typu projektu** wybierz szablon aplikacji Windows Forms **App (.NET Framework)** dla języka C# lub Visual Basic, a następnie wybierz pozycję **Dalej**.
 
-   ![Wybierz szablon Visual Basic C# lub dla aplikacji Windows Forms (.NET Framework).](./media/create-new-project-search-winforms-filtered.png)
+   ![Wybierz szablon C# lub Visual Basic dla aplikacji Windows Forms App (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Jeśli szablon **aplikacji Windows Forms (.NET Framework)** nie jest wyświetlany, można go zainstalować za pomocą okna **Utwórz nowy projekt** . W obszarze **nie można znaleźć tego, czego szukasz?** komunikat wybierz łącze **Zainstaluj więcej narzędzi i funkcji** .
+   > Jeśli nie jest wyświetlany szablon **aplikacji Windows Forms App (.NET Framework),** można go zainstalować w oknie **Utwórz nowy projekt.** W komunikacie **Nie znajdowanie tego, czego szukasz?** **Install more tools and features**
    >
-   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "nie można odnaleźć szukanego elementu" w oknie "Tworzenie nowego projektu"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![Link "Zainstaluj więcej narzędzi i funkcji" z komunikatu "Nie znajdując tego, czego szukasz" w oknie "Utwórz nowy projekt"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > Następnie w Instalator programu Visual Studio wybierz obciążenie **Programowanie aplikacji klasycznych platformy .NET** .
+   > Następnie w Instalatorze programu Visual Studio wybierz zadanie **tworzenia pulpitu .NET.**
    >
-   > ![Obciążenie platformy .NET core w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   > ![Obciążenie rdzenia .NET w Instalatorze programu Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Następnie wybierz przycisk **Modyfikuj** w Instalator programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; Jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj** , aby zainstalować obciążenie.
+   > Następnie wybierz przycisk **Modyfikuj** w Instalatorze programu Visual Studio. Może zostać wyświetlony monit o zapisanie pracy; jeśli tak, zrób to. Następnie wybierz pozycję **Kontynuuj,** aby zainstalować obciążenie.
 
-1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MathQuiz* w polu **Nazwa projektu** . Następnie wybierz pozycję **Utwórz**.
+1. W oknie **Konfigurowanie nowego projektu** wpisz lub wprowadź *MathQuiz* w polu **Nazwa projektu.** Następnie wybierz pozycję **Utwórz**.
 
 ::: moniker-end
 
 ## <a name="to-set-properties-for-a-form"></a>Aby ustawić właściwości formularza
 
-1. W programie Visual Studio wybierz formularz ( *Form1.cs* lub *Form1. vb*, w zależności od języka programowania), a następnie zmień jego właściwość **Text** na **Quiz matematyczny**.
+1. W programie Visual Studio wybierz formularz *(Form1.cs* lub *Form1.vb*, w zależności od języka programowania), a następnie zmień jego **właściwość Tekst** na **Quiz matematyczny.**
 
-     Okno **Właściwości** zawiera właściwości dla formularza.
+     Okno **Właściwości** zawiera właściwości formularza.
 
-1. Zmień rozmiar formularza na 500 pikseli szerokości o 400 pikseli wysokości.
+1. Zmień rozmiar formularza na 500 pikseli szerokości na 400 pikseli wysokości.
 
-     Można zmienić rozmiar formularza, przeciągając jego krawędzie do momentu pojawienia się w lewym dolnym rogu zintegrowanego środowiska programistycznego (IDE). Alternatywnie można zmienić wartości właściwości **size** .
+     Można zmienić rozmiar formularza, przeciągając jego krawędzie, aż w lewym dolnym rogu zintegrowanego środowiska programistycznego (IDE) pojawi się odpowiedni rozmiar. Alternatywnie można zmienić wartości **Size** właściwości.
 
-1. Zmień wartość właściwości **FormBorderStyle** na **Fixed3D**i ustaw właściwość **MaximizeBox** na **false**.
+1. Zmień wartość właściwości **FormBorderStyle** na **Fixed3D**i ustaw właściwość **MaximizeBox** na **False**.
 
-     Te wartości uniemożliwiają uczestnikomom quizu zmianę rozmiarów formularza.
+     Te wartości uniemożliwiają uczestnikom quizu zmiana rozmiaru formularza.
 
-## <a name="to-create-the-time-remaining-box"></a>Aby utworzyć pole pozostało czasu
+## <a name="to-create-the-time-remaining-box"></a>Aby utworzyć pole pozostały czas
 
-1. Dodaj kontrolkę <xref:System.Windows.Forms.Label> z **przybornika**, a następnie ustaw wartość właściwości **(Name)** na **timeLabel**.
+1. Dodaj <xref:System.Windows.Forms.Label> formant z **przybornika**, a następnie ustaw wartość jego **właściwości (Nazwa)** na **timeLabel**.
 
-     Ta etykieta zostanie umieszczony w prawym górnym rogu, która pokazuje liczbę sekund, które pozostaną w quizie.
+     Ta etykieta stanie się polem w prawym górnym rogu, które pokazuje liczbę sekund, które pozostały w quizie.
 
-2. Zmień właściwość **AutoSize** na **false** , aby można było zmienić rozmiar pola.
+2. Zmień właściwość **Autosize** na **False,** aby można było zmienić rozmiar tego pola.
 
-3. Zmień właściwość **BorderStyle** na **FixedSingle** , aby narysować linię wokół pola.
+3. Zmień **właściwość BorderStyle** na **FixedSingle,** aby narysować linię wokół pola.
 
-4. Ustaw właściwość **size** na **200, 30**.
+4. Ustaw **size** właściwość **na 200, 30**.
 
-5. Przenieś etykietę do prawego górnego rogu formularza, gdzie pojawią się niebieskie linie odstępu.
+5. Przenieś etykietę do prawego górnego rogu formularza, gdzie pojawią się niebieskie linie dystansowe.
 
-     Te wiersze ułatwiają wyrównywanie kontrolek w formularzu.
+     Te wiersze ułatwiają wyrównywanie formantów w formularzu.
 
-6. W oknie **Właściwości** wybierz właściwość **tekst** , a następnie wybierz klawisz **Backspace** , aby wyczyścić jego wartość.
+6. W oknie **Właściwości** wybierz właściwość **Text,** a następnie wybierz klawisz **Backspace,** aby wyczyścić jego wartość.
 
-7. Wybierz znak plusa ( **+** ) obok właściwości **Font** , a następnie zmień wartość właściwości **size** na **15,75**.
+7. Wybierz znak plus**+**( ) obok **Font** właściwości, a następnie zmień wartość **Size** właściwości na **15.75**.
 
      Można zmienić kilka właściwości czcionki, jak pokazano na poniższym zrzucie ekranu.
 
-     ![okno Właściwości pokazywanie rozmiaru czcionki](../ide/media/express_setfontsize.png)
+     ![Okno Właściwości z rozmiarem czcionki](../ide/media/express_setfontsize.png)
 
-8. Dodaj kolejną kontrolkę etykieta z **przybornika**, a następnie ustaw jej rozmiar czcionki na **15,75**.
+8. Dodaj kolejny formant Etykiety z **przybornika,** a następnie ustaw jego rozmiar czcionki na **15.75**.
 
-9. Ustaw właściwość **Text** na wartość **Time Left**.
+9. Ustaw **właściwość Tekst** na **Pozostały czas**.
 
-10. Przenieś etykietę tak, aby była wierszem po lewej stronie etykiety **timeLabel** .
+10. Przenieś etykietę tak, aby była liniami po lewej stronie etykiety **timeLabel.**
 
-### <a name="to-add-controls-for-the-addition-problems"></a>Aby dodać kontrolki dla problemów dodatkowych
+### <a name="to-add-controls-for-the-addition-problems"></a>Aby dodać kontrolki problemów z dodawaniem
 
-1. Dodaj kontrolkę etykieta z **przybornika**, a następnie ustaw jej właściwość **Text** na **?** (znak zapytania).
+1. Dodaj formant Label z **przybornika**, a następnie ustaw jego **text** **właściwości?** (znak zapytania).
 
-2. Ustaw właściwość **AutoSize** na **false**.
+2. Ustaw właściwość **AutoSize** na **False**.
 
-3. Ustaw właściwość **size** na **60, 50**.
+3. Ustaw **size** właściwość na **60, 50**.
 
 4. Ustaw rozmiar czcionki na **18**.
 
-5. Ustaw właściwość **TextAlign** na **MiddleCenter**.
+5. Ustaw **właściwość TextAlign** na **MiddleCenter**.
 
-6. Ustaw właściwość **Location** na **50, 75,** aby umieścić formant w formularzu.
+6. Ustaw **Location właściwość** **50, 75,** aby umieścić formant w formularzu.
 
-7. Ustaw właściwość **(Name)** na **plusLeftLabel**.
+7. Ustaw właściwość **(Nazwa)** na **plusLeftLabel**.
 
-8. Wybierz etykietę **plusLeftLabel** , a następnie wybierz klawisze **Ctrl**+**C** lub **Kopiuj** w menu **Edycja** .
+8. Wybierz etykietę **plusLeftLabel,** a następnie wybierz klawisze **Ctrl**+**C** lub **Kopiuj** w menu **Edycja.**
 
-9. Wklej etykietę trzy razy, wybierając klawisze **Ctrl**+**V** lub **Wklej** w menu **Edycja** .
+9. Wklej etykietę trzy razy, wybierając klawisze **Ctrl**+**V** lub **Wklej** w menu **Edycja.**
 
-10. Rozmieść trzy nowe etykiety tak, aby znajdowały się w wierszu z prawej strony etykiety **plusLeftLabel** .
+10. Rozmieść trzy nowe etykiety tak, aby były w rzędzie po prawej stronie etykiety **plusLeftLabel.**
 
-     Możesz użyć linii rozdzielacza, aby rozprzestrzeniać je na zewnątrz i wyrównać je.
+     Można użyć linii dystansowych, aby rozmieścić je i wyrównać.
 
-11. Ustaw wartość drugiej właściwości **Text** etykiety na **+** (znak plus).
+11. Ustaw wartość właściwości **Text** drugiej etykiety **+** na (znak plus).
 
-12. Ustaw wartość trzeciej etykiety **(Name)** na **plusRightLabel**.
+12. Ustaw wartość właściwości **(Name)** trzeciej etykiety na **plusRightLabel**.
 
-13. Ustaw wartość właściwości **tekst** czwartej etykiety na **=** (znak równości).
+13. Ustaw wartość właściwości **Text** czwartej etykiety **=** na (znak równości).
 
-14. Dodaj formant <xref:System.Windows.Forms.NumericUpDown> z **przybornika**, ustaw jego rozmiar czcionki na **18**i ustaw jego szerokość na **100**.
+14. Dodaj <xref:System.Windows.Forms.NumericUpDown> kontrolkę z **przybornika,** ustaw jego rozmiar czcionki na **18**i ustaw jego szerokość na **100**.
 
-     Dowiesz się więcej o tym rodzaju kontrolce później.
+     Dowiesz się więcej o tego rodzaju kontroli później.
 
-15. Wykreśl kontrolkę NumericUpDown z kontrolkami etykiet dla problemu dodawania.
+15. Ujednolić formant NumericUpDown z formantami Label dla problemu z dodawaniem.
 
-16. Zmień wartość właściwości **(Name)** dla kontrolki NumericUpDown na **sum**.
+16. Zmień wartość właściwości **(Nazwa)** formantu NumericUpDown na **sumę**.
 
      Utworzono pierwszy wiersz, jak pokazano na poniższej ilustracji.
 
-     ![Pierwszy wiersz quizu matematycznego](../ide/media/express_firstrow.png)
+     ![Pierwszy rząd quizu matematycznego](../ide/media/express_firstrow.png)
 
-## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Aby dodać kontrolki do problemów odejmowania, mnożenia i dzielenia
+## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Aby dodać formanty problemów z odejmowaniem, mnożeniem i dzieleniem
 
-1. Skopiuj wszystkie pięć formantów dla problemu dodawania (cztery kontrolki etykiet i formant NumericUpDown), a następnie wklej je.
+1. Skopiuj wszystkie pięć formantów dla problemu z dodawaniem (cztery formanty Label i Formant NumericUpDown), a następnie wklej je.
 
-     Formularz zawiera pięć nowych kontrolek, które są nadal zaznaczone.
+     Formularz zawiera pięć nowych formantów, które są nadal zaznaczone.
 
-2. Przenieś wszystkie kontrolki na miejsce, tak aby znajdowały się one poniżej formantów dodawania.
+2. Przenieś wszystkie formanty na miejsce, tak aby były one w kolejce poniżej formantów dodawania.
 
-     Możesz użyć linii rozdzielacza, aby zapewnić wystarczającą odległość między dwoma wierszami.
+     Można użyć linii dystansowych, aby zapewnić wystarczającą odległość między dwoma wierszami.
 
-3. Zmień wartość właściwości **Text** dla drugiej etykiety na **-** (znak minus).
+3. Zmień wartość **Text** właściwości dla drugiej **-** etykiety na (znak minus).
 
-4. Nadaj nazwę pierwszemu znakowi zapytania **minusLeftLabel**.
+4. Nazwij pierwszą etykietę znaku zapytania **minusLeftLabel**.
 
-5. Nadaj drugiej nazwie etykietę **minusRightLabel**.
+5. Nazwij drugą etykietę znaku zapytania **minusRightLabel**.
 
-6. Nazwij **różnicę**kontrolki NumericUpDown.
+6. Nazwij **różnicę**formantu NumericUpDown .
 
-7. Wklej pięć kontrolek dwa razy.
+7. Wklej pięć formantów jeszcze dwa razy.
 
-8. W trzecim wierszu nadaj pierwszej etykiecie **timesLeftLabel**, Zmień właściwość **tekst** drugiej etykiety na **×** (znak mnożenia), nazwij trzecią etykietę **timesRightLabel**i nazwij **produkt**Control NumericUpDown.
+8. W trzecim wierszu nazwij pierwszą etykietę **razyLeftLabel**, zmień właściwość **Text** drugiej etykiety na **×** (znak mnożenia), nazwij trzecią etykietę **timesRightLabel**i nazwij **produkt**kontrolny NumericUpDown .
 
-9. W czwartym wierszu nadaj pierwszej etykiecie **dividedLeftLabel**, Zmień właściwość **tekst** drugiej etykiety na **÷** (znak dzielenia), nadaj trzecią etykietę **dividedRightLabel**i nadaj jej nazwę **ilorazu**.
+9. W czwartym wierszu nazwij pierwszą etykietę **podzielonąLeftLabel**, zmień właściwość **Text** drugiej etykiety na **÷** (znak podziału), nazwij trzecią etykietę **podzielonąUprawna,** i nazwij **iloraz formantu**NumericUpDown .
 
     > [!NOTE]
-    > Możesz skopiować znak mnożenia × i ÷ znak dzielenia z tego samouczka i wkleić je do formularza.
+    > Możesz skopiować znak mnożenia × i znak podziału ÷ z tego samouczka i wkleić je do formularza.
 
-## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Aby dodać przycisk Start i ustawić kolejność tabulacji
+## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Aby dodać przycisk start i ustawić kolejność indeksów kart
 
-1. Dodaj kontrolkę <xref:System.Windows.Forms.Button> z **przybornika**, a następnie ustaw jej właściwość **(Name)** na **startButton**.
+1. Dodaj <xref:System.Windows.Forms.Button> formant z **przybornika**, a następnie ustaw jego **właściwość (Nazwa),** aby **uruchomićButton**.
 
-2. Ustaw właściwość **Text** , aby **uruchomić Quiz**.
+2. Ustaw **text** właściwość, aby **rozpocząć quiz**.
 
 3. Ustaw rozmiar czcionki na **14**.
 
-4. Ustaw właściwość **AutoSize** na **true**, co spowoduje, że przycisk ma automatycznie zmieniać rozmiar w celu dopasowania do tekstu.
+4. Ustaw właściwość **Autosize** na **True**, co powoduje, że rozmiar przycisku powoduje, że rozmiar jest automatycznie pasowy do tekstu.
 
-5. Wyśrodkuj przycisk w dolnej części formularza.
+5. Wyśrodkuj przycisk u dołu formularza.
 
 6. Ustaw wartość właściwości **TabIndex** dla formantu **startButton** na **1**.
 
     > [!NOTE]
-    > Właściwość **TabIndex** ustawia kolejność formantów, gdy wybierany jest klawisz **Tab** . Aby zobaczyć, jak to działa, Otwórz dowolne okno dialogowe (na przykład na pasku menu wybierz **plik** > **Otwórz**), a następnie wybierz klawisz **Tab** kilka razy. Obejrzyj, jak kursor przemieszcza się z kontrolki, aby kontrolować każde wybranie klawisza **Tab** . Programista zdecydował o kolejności podczas tworzenia tego formularza.
+    > **Właściwość TabIndex** ustawia kolejność formantów, gdy osoba biorąca quiz wybierze klawisz **Tab.** Aby zobaczyć, jak to działa, otwórz dowolne okno dialogowe (na przykład na pasku menu wybierz pozycję**Otwórz** **plik),** > a następnie wybierz klawisz **Tab** kilka razy. Obserwuj, jak kursor przechodzi od sterowania do sterowania za każdym razem, gdy wybierzesz klawisz **Tab.** Programista zdecydował kolejność podczas tworzenia tego formularza.
 
-7. Ustaw wartość właściwości **TabIndex** dla kontrolki sum NumericUpDown na **2**, dla kontrolki różnica na **3**, dla kontrolki produktu na **4**, a dla kontrolki ilorazu wartość **5**.
+7. Ustaw wartość właściwości **TabIndex** dla formantu Suma NumericUpDown na **2,** dla kontroli różnicy na **3,** dla formantu produktu na **4**i dla formantu ilorazu na **5**.
 
      Formularz powinien wyglądać podobnie do poniższego zrzutu ekranu.
 
-     ![Początkowy formularz quizu matematycznego](../ide/media/express_formlaidout.png)
+     ![Wstępny formularz quizu matematycznego](../ide/media/express_formlaidout.png)
 
-8. Aby sprawdzić, czy właściwość **TabIndex** działa zgodnie z oczekiwaniami, Zapisz i uruchom program, wybierając klawisz **F5** lub wybierając pozycję **Debuguj** > **Rozpocznij debugowanie** na pasku menu, a następnie wybierz klawisz **Tab** kilka razy.
+8. Aby sprawdzić, czy właściwość **TabIndex** działa zgodnie z oczekiwaniami, zapisz i uruchom program, wybierając klawisz **F5** lub wybierając **debugowanie** > **start debugowania** na pasku menu, a następnie wybierz klawisz **Tab** kilka razy.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz **[krok 2. Tworzenie losowego problemu z dodaniem](../ide/step-2-create-a-random-addition-problem.md)** .
+- Aby przejść do następnego kroku samouczka, zobacz **[Krok 2: Tworzenie losowego problemu z dodawaniem](../ide/step-2-create-a-random-addition-problem.md)**.
 
-- Aby powrócić do tematu przeglądu, zobacz [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Aby powrócić do tematu przeglądu, zobacz [Samouczek 2: Tworzenie quizu matematycznego z czasem](../ide/tutorial-2-create-a-timed-math-quiz.md).

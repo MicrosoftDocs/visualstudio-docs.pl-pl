@@ -1,5 +1,5 @@
 ---
-title: Elementy docelowe programu MSBuild | Microsoft Docs
+title: Cele MSBuild | Dokumenty firmy Microsoft
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 3e0693b6630f1b4c6a9494a77e223cca23c6dc10
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633190"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79093604"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 
-Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają umieszczenie procesu kompilacji w mniejszych jednostkach. Na przykład jeden obiekt docelowy może usunąć wszystkie pliki w katalogu wyjściowym, aby przygotować się do kompilacji, podczas gdy inna kompiluje dane wejściowe dla projektu i umieszcza je w pustym katalogu. Aby uzyskać więcej informacji o zadaniach, zobacz [zadania](../msbuild/msbuild-tasks.md).
+Cele grupują zadania w określonej kolejności i umożliwiają uwzględnianie procesu kompilacji w mniejszych jednostkach. Na przykład jeden obiekt docelowy może usunąć wszystkie pliki w katalogu wyjściowym, aby przygotować się do kompilacji, podczas gdy inny kompiluje dane wejściowe dla projektu i umieszcza je w pustym katalogu. Aby uzyskać więcej informacji na temat zadań, zobacz [Zadania](../msbuild/msbuild-tasks.md).
 
-## <a name="declare-targets-in-the-project-file"></a>Zadeklaruj cele w pliku projektu
+## <a name="declare-targets-in-the-project-file"></a>Deklarowanie obiektów docelowych w pliku projektu
 
- Elementy docelowe są zadeklarowane w pliku projektu z elementem [docelowym](../msbuild/target-element-msbuild.md) . Na przykład poniższy kod XML tworzy element docelowy o nazwie konstrukcja, który następnie wywołuje zadanie CSC z typem elementu kompilowania.
+ Obiekty docelowe są deklarowane w pliku projektu z elementem [target.](../msbuild/target-element-msbuild.md) Na przykład następujący kod XML tworzy obiekt docelowy o nazwie Konstruuj, który następnie wywołuje zadanie Csc z typem elementu kompilacji.
 
 ```xml
 <Target Name="Construct">
@@ -31,7 +31,7 @@ Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają
 </Target>
 ```
 
- Podobnie jak w przypadku właściwości programu MSBuild, można ponownie zdefiniować elementy docelowe. Na przykład:
+ Podobnie jak MSBuild właściwości, cele mogą być ponownie zdefiniowane. Na przykład:
 
 ```xml
 <Target Name="AfterBuild" >
@@ -42,33 +42,33 @@ Zadania grupy są obiektami docelowymi w określonej kolejności i umożliwiają
 </Target>
 ```
 
- Jeśli AfterBuild wykonuje, wyświetla tylko "drugie wystąpienie".
+ Jeśli `AfterBuild` zostanie wykonany, wyświetla tylko "Drugie wystąpienie", ponieważ druga definicja `AfterBuild` ukrywa pierwszą.
 
- MSBuild jest zależna od kolejności importu, a ostatnią definicją obiektu docelowego jest definicja użyta.
+ MSBuild jest zależny od zamówienia importu, a ostatnią definicją obiektu docelowego jest używana definicja.
 
-## <a name="target-build-order"></a>Docelowy porządek kompilacji
+## <a name="target-build-order"></a>Docelowa kolejność kompilacji
 
- Elementy docelowe muszą być uporządkowane, jeśli dane wejściowe do jednego obiektu docelowego są zależne od danych wyjściowych innego obiektu docelowego.
+ Obiekty docelowe muszą być uporządkowane, jeśli dane wejściowe do jednego obiektu docelowego zależy od danych wyjściowych innego obiektu docelowego.
  
- Istnieje kilka sposobów, aby określić kolejność, w której są uruchamiane obiekty docelowe.
+ Istnieje kilka sposobów, aby określić kolejność uruchamiania obiektów docelowych.
 
-- Początkowe elementy docelowe
+- Początkowe cele
 
-- Domyślne elementy docelowe
+- Domyślne obiekty docelowe
 
-- Pierwszy element docelowy
+- Pierwszy cel
 
 - Zależności docelowe
 
-- `BeforeTargets` i `AfterTargets` (MSBuild 4,0)
+- `BeforeTargets`oraz `AfterTargets` (MSBuild 4.0)
 
-Element docelowy nigdy nie jest uruchamiany dwukrotnie podczas pojedynczej kompilacji, nawet jeśli kolejny element docelowy w kompilacji zależy od niej. Po uruchomieniu elementu docelowego jego udział w kompilacji jest zakończony.
+Cel nigdy nie jest uruchamiany dwa razy podczas jednej kompilacji, nawet jeśli od niego zależy kolejny cel w kompilacji. Po uruchomieniu obiektu docelowego jego wkład do kompilacji jest kompletny.
 
-Aby uzyskać szczegółowe informacje i uzyskać więcej informacji na temat docelowej kolejności kompilacji, zobacz [Target Order Build](../msbuild/target-build-order.md).
+Aby uzyskać szczegółowe informacje i więcej informacji na temat docelowego zamówienia kompilacji, zobacz [Docelowe zamówienie kompilacji](../msbuild/target-build-order.md).
 
-## <a name="target-batching"></a>Przetwarzanie wsadowe docelowe
+## <a name="target-batching"></a>Wsadowanie docelowe
 
-Element docelowy może mieć atrybut `Outputs`, który określa metadane w postaci%(\<metadanych >). W takim przypadku MSBuild uruchamia element docelowy raz dla każdej unikatowej wartości metadanych, grupując lub "wsadowe" elementy, które mają tę wartość metadanych. Na przykład:
+Element docelowy może `Outputs` mieć atrybut określający metadane\<w formularzu %( Metadane>). Jeśli tak, MSBuild uruchamia obiekt docelowy raz dla każdej unikatowej wartości metadanych, grupowania lub "wsadowania" elementów, które mają tę wartość metadanych. Na przykład:
 
 ```xml
 <ItemGroup>
@@ -89,24 +89,24 @@ Element docelowy może mieć atrybut `Outputs`, który określa metadane w posta
 </Target>
 ```
 
- przetwarza elementy odniesienia według ich metadanych RequiredTargetFramework. Wynik elementu docelowego wygląda następująco:
+ partie elementów odwołania według ich metadanych RequiredTargetFramework. Dane wyjściowe obiektu docelowego wyglądają następująco:
 
 ```
 Reference: 3.5;3.5
 Reference: 4.0
 ```
 
- Przetwarzanie wsadowe docelowe jest rzadko używane w rzeczywistych kompilacjach. Tworzenie wsadowe zadań jest bardziej popularne. Aby uzyskać więcej informacji, zobacz Tworzenie [pakietów wsadowych](../msbuild/msbuild-batching.md).
+ Wsadowanie docelowe jest rzadko używane w rzeczywistych kompilacjach. Przetwarzanie wsadowe zadań jest bardziej powszechne. Aby uzyskać więcej informacji, zobacz [Batching](../msbuild/msbuild-batching.md).
 
 ## <a name="incremental-builds"></a>Kompilacje przyrostowe
 
- Kompilacje przyrostowe to kompilacje, które są zoptymalizowane tak, aby obiekty docelowe z plikami wyjściowymi, które są aktualne w odniesieniu do odpowiadających im plików wejściowych, nie są wykonywane. Element docelowy może mieć zarówno atrybuty `Inputs`, jak i `Outputs`, wskazujące, jakie elementy element docelowy oczekuje jako dane wejściowe i jakie elementy są generowane jako dane wyjściowe.
+ Kompilacje przyrostowe są kompilacje, które są zoptymalizowane tak, że obiekty docelowe z plików wyjściowych, które są aktualne w odniesieniu do ich odpowiednich plików wejściowych nie są wykonywane. Element docelowy może `Inputs` `Outputs` mieć zarówno i atrybuty, wskazując, jakie elementy docelowe oczekuje jako dane wejściowe i jakie elementy produkuje jako dane wyjściowe.
 
- Jeśli wszystkie elementy wyjściowe są aktualne, program MSBuild pomija element docelowy, co znacznie zwiększa szybkość kompilacji. Jest to nazywane kompilacją przyrostową docelowej. Jeśli tylko niektóre pliki są aktualne, program MSBuild wykonuje element docelowy bez aktualnych elementów. Ta nazwa jest nazywana częściową kompilacją przyrostową obiektu docelowego. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
+ Jeśli wszystkie elementy wyjściowe są aktualne, MSBuild pomija miejsce docelowe, co znacznie zwiększa szybkość kompilacji. Jest to nazywane przyrostową kompilacją obiektu docelowego. Jeśli tylko niektóre pliki są aktualne, MSBuild wykonuje obiekt docelowy bez elementów up-to-date. Jest to nazywane częściową kompilacją przyrostową obiektu docelowego. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md).
 
-## <a name="default-build-targets"></a>Domyślne cele kompilacji
+## <a name="default-build-targets"></a>Domyślne obiekty docelowe kompilacji
 
-Poniżej wymieniono publiczne obiekty docelowe w Microsoft. Common. CurrentVersion. targets.
+Poniżej wymieniono obiekty docelowe publiczne w witrynie Microsoft.Common.CurrentVersion.Targets.
 
 ```
 ===================================================
@@ -1014,5 +1014,5 @@ This target gathers the Redist folders from the SDKs which have been resolved.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
-- [Instrukcje: użycie tego samego elementu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
+- [Jak: Użyj tego samego obiektu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

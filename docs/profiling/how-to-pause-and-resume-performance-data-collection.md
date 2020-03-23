@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Wstrzymywanie i wznawianie zbierania danych wydajności | Microsoft Docs'
+title: 'Jak: Wstrzymanie i wznowienie zbierania danych o wydajności | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,32 +12,32 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778794"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Instrukcje: Wstrzymywanie i wznawianie zbierania danych wydajności
-W oknie strony profilowania sesji można kontrolować zbieranie danych profilowania interaktywnie.
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Instrukcje: wstrzymywanie i wznawianie zbierania danych o wydajności
+W oknie strony sesji profilowania można interaktywnie kontrolować zbieranie danych profilowania.
 
- Kontrolowanie zbierania danych umożliwia zmniejszenie rozmiaru pliku danych profilu oraz zbieranie danych tylko dla tych operacji, które Cię interesują. Można wstrzymywać i wznawiać profilowanie wielokrotnie w sesji wydajności.
+ Kontrolowanie zbierania danych umożliwia zmniejszenie rozmiaru pliku danych profilu i zbieranie danych tylko dla tych operacji, które Cię interesują. W sesji wydajności można wstrzymać i wznowić profilowanie wiele razy.
 
  ![Strona sesji profilowania](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
-> Możesz również uruchomić sesję wydajności z wstrzymanym profilem, a następnie wznowić profilowanie w późniejszym czasie w trakcie wykonywania programu. Aby rozpocząć sesję wydajności z wstrzymanym profilem, wybierz pozycję **Uruchom analizę wydajności z wstrzymanym** poleceniem profilowania w menu **debugowanie** .
+> Można również rozpocząć sesję wydajności z profilowania wstrzymane, a następnie wznowić profilowanie w późniejszym momencie wykonywania programu. Aby rozpocząć sesję wydajności z wstrzymanym profilowaniem, wybierz polecenie **Rozpocznij analizę wydajności z poleceniem Profilowanie wstrzymane** w menu **Debugowania.**
 
-### <a name="to-pause--resume-or-stop-profiling"></a>Aby wstrzymywać, wznawiać lub zatrzymywać profilowanie
+### <a name="to-pause--resume-or-stop-profiling"></a>Aby wstrzymać, wznowić lub zatrzymać profilowanie
 
-- Na stronie Sesja profilowania:
+- Na stronie sesji profilowania:
 
-  - Wybierz **Wstrzymaj kolekcję** , aby zawiesić zbieranie danych.
+  - Wybierz **pozycję Wstrzymaj zbieranie danych,** aby zawiesić zbieranie danych.
 
-  - Wybierz pozycję **Wznów zbieranie** , aby ponownie uruchomić zbieranie danych po wstrzymaniu.
+  - Wybierz **polecenie Wznów zbieranie** danych, aby ponownie uruchomić zbieranie danych po wstrzymaniu.
 
-  - Wybierz pozycję **Zatrzymaj profilowanie** , aby zakończyć sesję profilowania i wygenerować raporty.
+  - Wybierz **pozycję Zatrzymaj profilowanie,** aby zakończyć sesję profilowania i wygenerować raporty.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Sterowanie zbieraniem danych](../profiling/controlling-data-collection.md)
-- [Instrukcje: rozpoczynanie i zatrzymywanie zbierania danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Jak: Uruchamianie i kończy zbieranie danych o wydajności](../profiling/how-to-start-and-end-performance-data-collection.md)

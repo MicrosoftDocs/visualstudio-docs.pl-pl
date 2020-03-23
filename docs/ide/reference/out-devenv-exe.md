@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568014"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
-Określa plik do przechowywania i wyświetlania błędów podczas [uruchamiania](run-devenv-exe.md), [uruchamiania i kończenia](runexit-devenv-exe.md), [uaktualniania](upgrade-devenv-exe.md), [kompilowania](build-devenv-exe.md), [odbudowy](rebuild-devenv-exe.md), [czyszczenia](clean-devenv-exe.md)lub [wdrażania](deploy-devenv-exe.md) rozwiązania.
+Określa plik do przechowywania i wyświetlania błędów podczas [uruchamiania](run-devenv-exe.md), [uruchamiania i zamykania](runexit-devenv-exe.md), [uaktualniania,](upgrade-devenv-exe.md) [budowania,](build-devenv-exe.md) [przebudowy,](rebuild-devenv-exe.md) [czyszczenia](clean-devenv-exe.md)lub [wdrażania](deploy-devenv-exe.md) rozwiązania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,31 +37,31 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>Argumenty
 
-- *FileName*
+- *Pod nazwą*
 
-  Wymagany. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas kompilowania pliku wykonywalnego.
+  Wymagany. Ścieżka i nazwa pliku do odbierania danych wyjściowych podczas tworzenia pliku wykonywalnego.
 
 ## <a name="remarks"></a>Uwagi
 
-Jeśli określono nieistniejącą nazwę pliku, plik zostanie utworzony automatycznie. W przeciwnym razie plik już istnieje, a wyniki są dołączane do istniejącej zawartości pliku.
+Jeśli określono nieistniejącą nazwę pliku, plik jest tworzony automatycznie. W przeciwnym razie plik już istnieje, a wyniki są dołączane do istniejącej zawartości pliku.
 
-Błędy kompilacji w wierszu polecenia są wyświetlane w oknie **poleceń** i w widoku konstruktora rozwiązań okna **danych wyjściowych** . Ten przełącznik jest przydatny do wyświetlania wyników nienadzorowanych kompilacji.
+Błędy kompilacji wiersza polecenia są wyświetlane w oknie **Polecenia** i w widoku Konstruktora rozwiązań w oknie **Dane wyjściowe.** Ten przełącznik jest przydatny do wyświetlania wyników kompilacji nienadzorowanych.
 
 ## <a name="example"></a>Przykład
 
-W tym przykładzie uruchomiono `MySolution` i zapisuje błędy w `MyErrorLog.txt`pliku.
+W tym `MySolution` przykładzie uruchamia się `MyErrorLog.txt`i zapisuje błędy w pliku .
 
 ```shell
 devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
-- [/Run (devenv. exe)](../../ide/reference/run-devenv-exe.md)
-- [/RunExit (devenv. exe)](runexit-devenv-exe.md)
-- [/Upgrade (devenv. exe)](upgrade-devenv-exe.md)
-- [/Clean (devenv. exe)](clean-devenv-exe.md)
-- [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md)
-- [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/Deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [/RunExit (devenv.exe)](runexit-devenv-exe.md)
+- [/Upgrade (devenv.exe)](upgrade-devenv-exe.md)
+- [/Clean (devenv.exe)](clean-devenv-exe.md)
+- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/Odbuduj (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

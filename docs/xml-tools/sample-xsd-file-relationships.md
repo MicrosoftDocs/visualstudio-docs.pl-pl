@@ -1,5 +1,5 @@
 ---
-title: 'Przykładowy plik XSD: relacje'
+title: 'Przykładowy plik XSD: Relacje'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75592558"
 ---
-# <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: relacje
+# <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: Relacje
 
-Następujący plik XSD jest używany w różnych przykładach w dokumentacji projektanta schematu XSD. Ten plik jest schematem zamówienia zakupu z adnotacjami i dokumentacją.
+Poniższy plik XSD jest używany w różnych przykładach w dokumentacji XSD Schema Designer. Ten plik jest schematem zamówienia zakupu z adnotacjami i dokumentacją.
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -65,4 +65,4 @@ Następujący plik XSD jest używany w różnych przykładach w dokumentacji pro
 ```
 
 > [!NOTE]
-> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia wymienione w tym dokumencie są fikcyjne. Żaden związek z jakąkolwiek rzeczywistą firmą, organizacją, produktem, nazwą domeny, adresem e-mail, logo, osobą, miejscami lub wydarzeniami nie był zamierzony i nie należy go zakładać.
+> Przykładowe firmy, organizacje, produkty, nazwy domen, adresy e-mail, logo, osoby, miejsca i zdarzenia przedstawione w niniejszym dokumencie są fikcyjne. Żadne skojarzenia z jakąkolwiek rzeczywistą firmą, organizacją, produktem, nazwą domeny, adresem e-mail, logo, osobą, miejscami lub wydarzeniami nie są zamierzone ani nie powinny być wywnioskowane.

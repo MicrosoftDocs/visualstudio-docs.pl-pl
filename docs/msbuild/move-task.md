@@ -1,5 +1,5 @@
 ---
-title: Przenieś zadanie | Microsoft Docs
+title: Przenieś zadanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -17,35 +17,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633463"
 ---
 # <a name="move-task"></a>Move — Zadanie
 
-Przenosi pliki do nowej lokalizacji.
+Przenosi pliki w nową lokalizację.
 
 ## <a name="parameters"></a>Parametry
 
- W tabeli następujące kwestie opisano parametry zadania `Move`.
+ W tabeli folowing opisano `Move` parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`DestinationFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Określa listę plików, do których mają zostać przeniesione pliki źródłowe. Ta lista powinna być mapowaniem jeden-do-jednego do listy określonej w parametrze `SourceFiles`. Oznacza to, że pierwszy plik określony w `SourceFiles` zostanie przeniesiony do pierwszej lokalizacji określonej w `DestinationFiles`i tak dalej.|
-|`DestinationFolder`|Opcjonalny parametr <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Określa katalog, do którego chcesz przenieść pliki.|
-|`MovedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Zawiera elementy, które zostały pomyślnie przeniesione.|
-|`OverwriteReadOnlyFiles`|Opcjonalny parametr `Boolean`.<br /><br /> Jeśli `true`, zastępuje pliki, nawet jeśli są oznaczone jako pliki tylko do odczytu.|
+|`DestinationFiles`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Określa listę plików, do które mają być przesuń pliki źródłowe. Oczekuje się, że ta lista będzie mapowaniem jeden do jednego `SourceFiles` do listy, która jest określona w parametrze. Oznacza to, że pierwszy `SourceFiles` plik określony w zostaną `DestinationFiles`przeniesione do pierwszej lokalizacji określonej w , i tak dalej.|
+|`DestinationFolder`|Parametr <xref:Microsoft.Build.Framework.ITaskItem> opcjonalny.<br /><br /> Określa katalog, do którego mają zostać przeniesione pliki.|
+|`MovedFiles`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Zawiera elementy, które zostały pomyślnie przeniesione.|
+|`OverwriteReadOnlyFiles`|Parametr `Boolean` opcjonalny.<br /><br /> Jeśli `true`pliki zostaną zastąpione, nawet jeśli są one oznaczone jako pliki tylko do odczytu.|
 |`SourceFiles`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do przeniesienia.|
 
 ## <a name="remarks"></a>Uwagi
 
- Należy określić parametr `DestinationFolder` lub parametr `DestinationFiles`, ale nie oba jednocześnie. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
+ Należy określić `DestinationFolder` parametr `DestinationFiles` lub parametr, ale nie oba. W razie podania obu parametrów zadanie nie powiedzie się i zostanie zarejestrowany błąd.
 
- Zadanie `Move` tworzy foldery wymagane dla żądanych plików docelowych.
+ Zadanie `Move` tworzy foldery zgodnie z wymaganiami dla żądanych plików docelowych.
 
- Oprócz parametrów, które są wymienione w tabeli, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ Oprócz parametrów, które są wymienione w tabeli, to <xref:Microsoft.Build.Tasks.TaskExtension> zadanie dziedziczy parametry z <xref:Microsoft.Build.Utilities.Task> klasy, która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Zobacz też
 

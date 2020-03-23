@@ -1,5 +1,5 @@
 ---
-title: Zapisywanie informacji o symbolach przy użyciu plików danych o wydajności | Microsoft Docs
+title: Zapisywanie informacji o symbolach za pomocą plików danych wydajności | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,56 +12,56 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778300"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plikach danych dotyczących wydajności
 
-Jeśli używasz środowiska IDE programu Visual Studio do analizowania plików i planujesz przenieść plik VSP do innego komputera, musisz ustawić ustawienia projektu wydajności, aby zapisać lub *serializować* symbole w pliku raportu. Zwiększa to rozmiar pliku raportu. Serializacja symboli jest konieczna z dwóch powodów:
+Jeśli używasz ide programu Visual Studio do analizowania plików i planujesz przenieść plik VSP na inny komputer, należy ustawić ustawienia projektu wydajności, aby zapisać lub *serializować* symbole w pliku raportu. Zwiększa to rozmiar pliku raportu. Serializacja symboli jest konieczna z dwóch powodów:
 
-- Aby osadzić symbole kodu w raporcie wydajności przed utratą zestawów docelowych z ich lokalizacji w magazynie tymczasowym.
+- Aby osadzać symbole kodu w raporcie wydajności, zanim zestawy docelowe zostaną utracone z ich lokalizacji w magazynie tymczasowym.
 
-- Aby zachować symbole, dzięki czemu raport wydajności jest przenośny z PROFILOWANEGO komputera i wyświetla te same informacje, jeśli raport zostanie otwarty do analizy na innym komputerze, który może mieć różne symbole.
+- Aby zachować symbole, tak aby raport wydajności jest przenośny z profilowanego komputera i wyprowadza te same informacje, jeśli raport jest otwarty do analizy na innym komputerze, który może mieć różne symbole.
 
-Można serializować symbole z poziomu środowiska IDE programu Visual Studio lub z wiersza polecenia:
+Symbole można serializować z ide programu Visual Studio lub z wiersza polecenia:
 
-- Aby serializować symbole w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, wskaż **Narzędzia** na pasku menu, a następnie kliknij przycisk **Opcje**. W oknie **Opcje** wybierz pozycję **Narzędzia wydajności**, a następnie zaznacz pole wyboru **automatycznie serializować informacje o symbolach** .
+- Aby serializować symbole w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDEI, wskaż polecenie **Narzędzia** na pasku menu, a następnie kliknij przycisk **Opcje**. W oknie **Opcje** wybierz pozycję **Narzędzia wydajności**, a następnie zaznacz pole wyboru **Automatycznie serializować informacje o symbolu.**
 
-- PACKSYMBOLS jest równoważną opcją wiersza polecenia podczas zapisywania plików raportów. Aby serializować symbole, wpisz **VSPerfReport/Summary: ALL/PACKSYMBOLS filename. vsp**.
+- PACKSYMBOLS jest równoważną opcją wiersza polecenia podczas zapisywania plików raportu. Aby serializować symbole, wpisz **vsperfreport /summary:all /packsymbols filename.vsp**.
 
 ## <a name="troubleshooting-symbol-problems"></a>Rozwiązywanie problemów z symbolami
 
-Jeśli nie widzisz żadnych symboli w własnym kodzie, dostępne są niektóre popularne rozwiązania:
+Jeśli nie widzisz żadnych symboli we własnym kodzie, dostępne są niektóre typowe rozwiązania:
 
-- Uruchom VSPerfReport/debugsympath wyświetla w wierszu polecenia, aby wyświetlić pełną listę lokalizacji, w których składniki profilera ładują informacje o symbolach i czy pliki symboli, które są używane, są zgodne z plikami używanymi przez ten projekt.
+- Uruchom vsperfreport /debugsympath w wierszu polecenia, aby wyświetlić pełną listę lokalizacji, w których składniki profilera ładują informacje o symbolach i czy używane pliki symboli są zgodne z plikami używanymi w projekcie.
 
-- Upewnij się, że uruchamiasz VSPerfReport z flagą/PACKSYMBOLS lub, w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, że wybrano opcję serializowania informacji o symbolach w ogólnych opcjach Eksploratora wydajności.
+- Upewnij się, że uruchomisz vsperfreport z flagą /PACKSYMBOLS lub w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE, że masz opcję informacji o symbolu serializacji wybraną w opcjach eksploratora wydajności ogólnej.
 
-- Jeśli zebrano dane typu, Dodaj/SUMMARY: TYPE do VSPerfReport wiersza polecenia.
+- Jeśli zebrano dane tekstowe, dodaj /SUMMARY:TYPE do wiersza polecenia vsperfreport.
 
-  Jeśli nie widzisz symboli z okna lub innych programów firmy Microsoft:
+  Jeśli nie widzisz symboli z systemu Windows lub innych programów firmy Microsoft:
 
 - Upewnij się, że ustawiono ścieżkę pamięci podręcznej symboli systemu Windows. Wykonaj jedną z następujących czynności, aby ustawić ścieżkę pamięci podręcznej symboli:
 
-  - Ustaw opcję symboli > debugera w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE na poprawną ścieżkę.
+  - Ustaw debuger->symbole w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE do poprawnej ścieżki.
 
-  - Dodaj opcję-SymbolPath — do wiersza polecenia VSPerfReport, aby uwzględnić symbole.
+  - Dodaj opcję -symbolpath do wiersza polecenia VSPerfReport, aby uwzględnić symbole.
 
-- Jeśli nie widzisz żadnych symboli w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], upewnij się, że serwer symboli jest prawidłowo skonfigurowany dla serwera ASP.
+- Jeśli nie widzisz żadnych symboli w [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], upewnij się, że serwer symboli został poprawnie skonfigurowany dla serwera ASP.
 
 ## <a name="repacking-symbols"></a>Przepakowywanie symboli
 
-Jeśli chcesz ponownie spakować symbole do raportu, możesz to zrobić za pomocą narzędzia wiersza polecenia VsPerfReport. Użyj następujących wierszy poleceń:
+Jeśli chcesz przepakować symbole do raportu, możesz to zrobić za pomocą narzędzia wiersza polecenia VsPerfReport. Użyj następujących wierszy polecenia:
 
-VsPerfReport-clearpackedsymbols filename. vsp
+VsPerfReport -clearpackedsymbols nazwa pliku.vsp
 
-VsPerfReport-PACKSYMBOLS-Summary: ALL filename. vsp
+VsPerfReport -packsymbols -summary:all filename.vsp
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-[Zapisywanie i eksportowanie danych narzędzi wydajności](../profiling/saving-and-exporting-performance-tools-data.md)
-[instrukcje: odwołania do informacji o symbolach systemu Windows](../profiling/how-to-reference-windows-symbol-information.md)
-[VSPerfReport](../profiling/vsperfreport.md)
+[Zapisywanie i eksportowanie danych](../profiling/saving-and-exporting-performance-tools-data.md)
+narzędzi wydajności[Jak: Odwołanie do informacji o](../profiling/how-to-reference-windows-symbol-information.md)
+symbolu systemu Windows[VSPerfReport](../profiling/vsperfreport.md)

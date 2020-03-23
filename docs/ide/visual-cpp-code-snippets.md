@@ -1,5 +1,5 @@
 ---
-title: Fragmenty C++ kodu wizualizacji
+title: Fragmenty kodu języka Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
 author: corob-msft
@@ -10,29 +10,29 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77277831"
 ---
-# <a name="visual-c-code-snippets"></a>Fragmenty C++ kodu wizualizacji
+# <a name="visual-c-code-snippets"></a>Fragmenty kodu języka Visual C++
 
-W programie Visual Studio można użyć fragmentów kodu, aby dodać powszechnie używany kod do plików C++ kodu. Ogólnie rzecz biorąc, można użyć fragmentów kodu w taki sam sposób jak w C#, ale zestaw domyślnych fragmentów kodu jest inny.
+W programie Visual Studio można użyć fragmentów kodu, aby dodać często używany kod do plików kodu języka C++. Ogólnie rzecz biorąc można użyć fragmentów kodu w taki sam sposób, jak w języku C#, ale zestaw domyślnych fragmentów kodu jest inny.
 
-Można dodać fragment kodu w określonej lokalizacji w kodzie (wstawianie) lub otoczyć fragmentem wybranego kodu kodem.
+Można dodać fragment kodu w określonej lokalizacji w kodzie (wstawianie) lub otoczyć wybrany kod fragmentem kodu.
 
-## <a name="insert-a-code-snippet"></a>Wstaw fragment kodu
+## <a name="insert-a-code-snippet"></a>Wstawianie fragmentu kodu
 
-Aby wstawić fragment kodu, Otwórz plik C++ kodu ( *. cpp* lub *. h*), kliknij w dowolnym miejscu w pliku i wykonaj jedną z następujących czynności:
+Aby wstawić fragment kodu, otwórz plik kodu języka C++*(.cpp* lub *.h),* kliknij gdzieś wewnątrz pliku i wykonaj jedną z następujących czynności:
 
-- Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe, a następnie wybierz **Wstaw fragment kodu**
+- Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz polecenie **Wstaw fragment kodu**
 
-- W menu **Edytuj/IntelliSense** wybierz pozycję **Wstaw fragment kodu**
+- W menu **Edycja / IntelliSense** wybierz polecenie **Wstaw fragment kodu**
 
-- Użyj klawiszy skrótów: **Ctrl**+**K**+**X**
+- Korzystanie z skrótów klawiszowych: **Ctrl**+**K**+**X**
 
-Powinna zostać wyświetlona lista opcji rozpoczynających się od **#if**. Po wybraniu **#if**do pliku powinien zostać wyświetlony następujący kod:
+Powinna zostać wyświetlona lista opcji, począwszy od **#if**. Po wybraniu **#if**powinien zostać dodany następujący kod do pliku:
 
 ```cpp
 #if 0
@@ -40,17 +40,17 @@ Powinna zostać wyświetlona lista opcji rozpoczynających się od **#if**. Po w
 #endif // 0
 ```
 
-Następnie można zastąpić **0** prawidłowym warunkiem.
+Następnie można zastąpić **0** właściwym warunkiem.
 
-## <a name="use-a-code-snippet-to-surround-selected-code"></a>Używanie fragmentu kodu do otaczania zaznaczonego kodu
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Używanie fragmentu kodu do otaczania wybranego kodu
 
-Aby użyć fragmentu kodu do otaczania zaznaczonego kodu, wybierz wiersz (lub wiele wierszy) i wykonaj jedną z następujących czynności:
+Aby użyć fragmentu kodu do otoczyć wybrany kod, wybierz linię (lub wiele wierszy) i wykonaj jedną z następujących czynności:
 
-- Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe, a następnie wybierz opcję **Otocz za pomocą**
+- Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe, a następnie wybierz polecenie **Surround With**
 
-- Z menu **edytuj** > **IntelliSense** wybierz opcję **Otocz z**
+- Z menu **Edytuj** > **intellisense** wybierz polecenie **Surround with**
 
-- Korzystając z klawiatury, naciśnij klawisze: **Ctrl**+**K**+**S**
+- Za pomocą klawiatury naciśnij: **Ctrl**+**K**+**S**
 
 Wybierz **#if**. Powinny zostać wyświetlone informacje podobne do następujących:
 
@@ -60,17 +60,17 @@ Wybierz **#if**. Powinny zostać wyświetlone informacje podobne do następując
 #endif // 0
 ```
 
-Następnie można zastąpić 0 prawidłowym warunkiem.
+Następnie można zastąpić 0 właściwym warunkiem.
 
-## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Gdzie mogę znaleźć kompletną listę fragmentów C++ kodu?
+## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Gdzie można znaleźć pełną listę fragmentów kodu języka C++?
 
-Pełną C++ listę fragmentów kodu można znaleźć, przechodząc do **Menedżera fragmentów kodu** (w menu **Narzędzia** ) i ustawiając **Język** na **C++wizualizację**. W oknie poniżej rozwiń pozycję **Wizualizacja C++** . Nazwy wszystkich fragmentów C++ kodu powinny być widoczne w kolejności alfabetycznej.
+Pełną listę fragmentów kodu języka C++ można znaleźć, przechodząc do **Menedżera urywków kodu** (w menu **Narzędzia)** i ustawiając **język** na **Visual C++**. W oknie poniżej rozwiń pozycję **Visual C++**. Powinny być widoczne nazwy wszystkich fragmentów kodu Języka C++ w kolejności alfabetycznej.
 
 Nazwy większości fragmentów kodu są oczywiste, ale niektóre nazwy mogą być mylące.
 
-## <a name="class-vs-classi"></a>Klasa a identyfikator klasy
+## <a name="class-vs-classi"></a>Klasa vs. classi
 
-Fragment **klasy** zawiera definicję klasy o nazwie `MyClass`, z odpowiednim konstruktorem domyślnym i destruktorem, gdzie definicje konstruktora i destruktora znajdują się poza klasą:
+Urywek **klasy** zawiera definicję klasy `MyClass`o nazwie, z odpowiednim domyślnym konstruktorem i destruktorem, gdzie definicje konstruktora i destruktora znajdują się poza klasą:
 
 ```cpp
 class MyClass
@@ -92,7 +92,7 @@ MyClass::~MyClass()
 }
 ```
 
-Fragment kodu **identyfikatora ClassID** również zawiera definicję klasy o nazwie `MyClass`, ale Konstruktor domyślny i destruktor są zdefiniowane wewnątrz definicji klasy:
+Fragment kodu **classi** zawiera również definicję klasy `MyClass`o nazwie , ale domyślny konstruktor i destruktor są zdefiniowane wewnątrz definicji klasy:
 
 ```cpp
 class MyClass
@@ -111,11 +111,11 @@ private:
 };
 ```
 
-## <a name="for-vs-forr-vs-rfor"></a>dla programu vs. dla vs rfor
+## <a name="for-vs-forr-vs-rfor"></a>dla vs. forr vs rfor
 
-Istnieją trzy **różne fragmenty kodu** , które dostarczają różnego rodzaju pętle `for`.
+Istnieją trzy różne **dla** urywki, `for` które zapewniają różne rodzaje pętli.
 
-Fragment kodu **rfor** zawiera pętlę for (link) [opartą na zakresie](/cpp/cpp/range-based-for-statement-cpp) . Ta konstrukcja jest preferowana przez pętle `for` oparte na indeksach.
+**Urywek rfor** zapewnia [zakres oparty](/cpp/cpp/range-based-for-statement-cpp) na pętli (łącze). Ta konstrukcja jest preferowana `for` w stosunku do pętli opartych na indeksie.
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-Element **for** zawiera `for` pętlę, w której warunek jest oparty na długości (w `size_t`) obiektu.
+**Fragment for** zapewnia pętlę, `for` w której warunek jest oparty `size_t`na długości (w) obiektu.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-Fragment kodu **dla** zawiera pętlę odwrotną `for`, w której warunek jest oparty na długości (w liczbie całkowitej) obiektu.
+Fragment kodu **forr** zapewnia odwrotną `for` pętlę, w której warunek jest oparty na długości (w liczbach całkowitych) obiektu.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Fragment kodu destruktora (~)
 
-Fragment kodu destruktora ( **~** ) pokazuje inne zachowanie w różnych kontekstach. Jeśli wstawię ten fragment wewnątrz klasy, zapewnia destruktor dla tej klasy. Na przykład, mając następujący kod:
+Fragment kodu destruktora**~**( ) pokazuje różne zachowanie w różnych kontekstach. Jeśli wstawisz ten fragment kodu wewnątrz klasy, zapewnia destruktor dla tej klasy. Na przykład, biorąc pod uwagę następujący kod:
 
 ```cpp
 class SomeClass {
@@ -152,7 +152,7 @@ class SomeClass {
 };
 ```
 
-Po wstawieniu fragmentu destruktora zapewnia destruktor dla `SomeClass`:
+Jeśli wstawisz fragment destruktora, zapewnia on `SomeClass`destruktor dla:
 
 ```cpp
 class SomeClass {
@@ -163,7 +163,7 @@ class SomeClass {
 };
 ```
 
-Jeśli spróbujesz wstawić fragment destruktora poza klasą, zapewnia destruktor z nazwą symbolu zastępczego:
+Jeśli spróbujesz wstawić fragment kodu destruktora poza klasą, udostępnia destruktora z nazwą symbolu zastępczego:
 
 ```cpp
 ~TypeNamePlaceholder()

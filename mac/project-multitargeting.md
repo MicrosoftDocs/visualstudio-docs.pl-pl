@@ -1,29 +1,29 @@
 ---
-title: Projekty wieloelementowe
-description: Ten dokument zawiera omówienie sposobu konfigurowania projektów wielowymiarowych w programie Visual Studio dla komputerów Mac.
+title: Projekty wielotargowe
+description: Ten dokument zawiera omówienie sposobu konfigurowania projektów wielokierunkowych w programie Visual Studio dla komputerów Mac.
 ms.topic: overview
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 12/12/2019
 ms.assetid: 2a561af4-f1fe-493e-9a53-aa6d77d15498
 ms.openlocfilehash: 3d1372ab5bd08ce164352293ec9d341ca567e3d5
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75451441"
 ---
-# <a name="projects-with-multiple-target-frameworks"></a>Projekty z wieloma platformami docelowymi
-W Visual Studio dla komputerów Mac można skonfigurować projekt Xamarin lub .NET Core do uruchamiania w jednej z kilku wersji .NET Framework i na jednej z kilku platform systemowych. Można na przykład określić, że projekt ma być uruchamiany na obu .NET Framework 4,6 i .NET Core 3,1. 
+# <a name="projects-with-multiple-target-frameworks"></a>Projekty z wieloma strukturami docelowymi
+W programie Visual Studio dla komputerów Mac można skonfigurować projekt platformy Xamarin lub .NET Core do uruchamiania w dowolnej z kilku wersji programu .NET Framework i na dowolnej z kilku platform systemowych. Na przykład można kierować projekt do uruchomienia zarówno w programie .NET Framework 4.6 i .NET Core 3.1. 
 
-Aby uzyskać więcej informacji na temat platform docelowych, zobacz [Platformy docelowe](/dotnet/standard/frameworks).
+Aby uzyskać więcej informacji na temat struktur docelowych, zobacz [struktury docelowe](/dotnet/standard/frameworks).
 
 > [!NOTE] 
-> Ten temat ma zastosowanie do Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows Zobacz temat [Omówienie funkcji określania wartości docelowej](/visualstudio/ide/visual-studio-multi-targeting-overview).
+> W tym temacie stosuje się do programu Visual Studio dla komputerów Mac. W przypadku programu Visual Studio w systemie Windows zobacz [omówienie kierowania na ramy](/visualstudio/ide/visual-studio-multi-targeting-overview).
 
-## <a name="targeting-multiple-frameworks"></a>Kierowanie wielu struktur
+## <a name="targeting-multiple-frameworks"></a>Kierowanie na wiele struktur
 
-Platformy docelowe są określone w pliku projektu, który można edytować, klikając prawym przyciskiem myszy projekt i wybierając polecenie **narzędzia > Edytuj plik** . W przypadku określenia pojedynczej platformy docelowej należy użyć elementu TargetFramework. Poniższy plik projektu aplikacji konsolowej pokazuje, jak kierować platformą .NET Core 3,0:
+Struktury docelowe są określone w pliku projektu, który można edytować, klikając prawym przyciskiem myszy na projekcie i wybierając **polecenie Narzędzia > Edytuj plik.** Po określeniu jednej struktury docelowej należy użyć elementu TargetFramework. Następujący plik projektu aplikacji konsoli pokazuje, jak kierować .NET Core 3.0:
 
 ```XML
 <Project Sdk="Microsoft.NET.Sdk">
@@ -36,7 +36,7 @@ Platformy docelowe są określone w pliku projektu, który można edytować, kli
 </Project>
 ```
 
-Użyj elementu TargetFrameworks w liczbie mnogiej z wieloma platformami docelowymi:
+Użyj elementu wielowarstwowego TargetFrameworks z wieloma strukturami docelowymi:
 
 ```XML
 <Project Sdk="Microsoft.NET.Sdk">
@@ -46,14 +46,14 @@ Użyj elementu TargetFrameworks w liczbie mnogiej z wieloma platformami docelowy
   </PropertyGroup>
 ```
 
-Dowiedz się więcej o tym, jak dowiedzieć się, jak [kierować wiele platform](/dotnet/standard/frameworks#how-to-specify-target-frameworks).
+Dowiedz się więcej o tym, jak [kierować reklamy](/dotnet/standard/frameworks#how-to-specify-target-frameworks)na wiele struktur .
 
-## <a name="working-with-code-in-a-multi-target-project"></a>Praca z kodem w projekcie wielodostępnym
-Podczas edytowania C# pliku w projekcie z wieloma platformami docelowymi można określić platformę docelową, która ma być używana do obsługi środowiska edytora (na przykład wyświetlanie ostrzeżeń w przypadku używania interfejsu API nieobsługiwanego przez platformę). Możesz zmienić platformę docelową, używając selektora **Target Framework** w lewym górnym rogu okna edytora.
+## <a name="working-with-code-in-a-multi-target-project"></a>Praca z kodem w projekcie wielocelowym
+Podczas edytowania pliku Języka C# w projekcie z wieloma platformami docelowymi, można określić, która struktura docelowa ma być używana do kierowania edytorem (na przykład wyświetlanie ostrzeżeń, jeśli używasz interfejsu API nie obsługiwane przez tę platformę). Platformę docelową można zmienić za pomocą selektora **struktury docelowej** w lewym górnym rogu okna edytora.
 
-![Aby zmienić platformę docelową na początku okna edytora przy użyciu selektora platformy docelowej](media/project-multitargeting-framework-selector.png)
+![Używanie selektora struktury docelowej do zmiany struktury docelowej, znajdującej się w górnej części okna edytora](media/project-multitargeting-framework-selector.png)
 
-Czasami trzeba wywołać inne interfejsy API w zależności od platformy, w której aplikacja jest ukierunkowana. W tym celu można napisać kod warunkowy, aby skompilować kod dla określonej platformy:
+Czasami trzeba wywołać różne interfejsy API w zależności od platformy aplikacji jest kierowana. Aby to zrobić, można napisać kod warunkowy do kompilacji kodu dla określonej platformy:
 
 ```C#
 public class MyClass
@@ -71,11 +71,11 @@ public class MyClass
 }
 ```
 
-Podczas pisania kodu zobaczysz ostrzeżenia w sugestiach autouzupełniania IntelliSense, informując o braku określonych interfejsów API dla dowolnych platform docelowych obsługiwanych przez aplikację.
+Podczas pisania kodu zostaną wyświetlone ostrzeżenia w sugestiach automatycznego uzupełniania IntelliSense, informując o tym, czy brakuje określonych interfejsów API dla dowolnej platformy docelowej, którą obsługuje aplikacja.
 
-![Komunikat ostrzegawczy wyświetlany w IntelliSense, interfejs API nie będzie działał dla określonej platformy docelowej. Przykładowy tekst: przestrzeń nazw System. buffers, SharedUtils (Standard 2.0) — niedostępny. Możesz użyć paska nawigacyjnego, aby przełączyć kontekst.](media/project-multitargeting-intellisense-warnings.png)
+![Komunikat ostrzegawczy wyświetlany w intellisense, interfejs API nie będzie działać dla określonej struktury docelowej. Przykładowy tekst: namespace System.Buffers, SharedUtils (netstandard2.0) - Niedostępne. Za pomocą paska nawigacyjnego można przełączać kontekst.](media/project-multitargeting-intellisense-warnings.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Omówienie określania celu platformy (Windows)](/visualstudio/ide/visual-studio-multi-targeting-overview)
-- [Platformy docelowe w projektach w stylu zestawu SDK](/dotnet/standard/frameworks#how-to-specify-target-frameworks)
+- [Omówienie kierowania na platformę (Windows)](/visualstudio/ide/visual-studio-multi-targeting-overview)
+- [Struktury docelowe w projektach w stylu SDK](/dotnet/standard/frameworks#how-to-specify-target-frameworks)

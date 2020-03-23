@@ -1,51 +1,51 @@
 ---
-title: Obsługa niealokowanych licencji | Microsoft Docs
+title: Obsługa licencji z nadmierną alokacją | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 03/03/2020
 ms.topic: conceptual
-description: Dowiedz się, jak Administratorzy mogą rozwiązywać nadmiarowe subskrypcje
+description: Dowiedz się, jak administratorzy mogą rozwiązywać nadmierne subskrypcje z nadmierną alokacją
 ms.openlocfilehash: 6773196d914306b7e18fe31ce06cc0cd89783ffd
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78410277"
 ---
-# <a name="overallocated-subscriptions"></a>Naddzielono subskrypcje
-Czasami zamówienia są zmieniane po dodaniu subskrybentów, co może spowodować, że masz więcej przypisanych subskrypcji niż licencje należące do firmy. Jest to tzw. "nadmierna alokacja".  
+# <a name="overallocated-subscriptions"></a>Subskrypcje z nadmierną alokacją
+Czasami zamówienia są zmieniane po dodaniu subskrybentów, co może spowodować, że będą mieć więcej przypisanych subskrypcji niż licencje należące do firmy. To się nazywa "nadmierna alokacja".  
 
-Aby wyświetlić alokacje wyższą, kliknij górną ikonę po lewej stronie, aby otworzyć okienko alokacje.  
+Aby wyświetlić alokacje dolnego, kliknij górną ikonę po lewej stronie, aby otworzyć okienko alokacji.  
 
 > [!NOTE]
-> Nadmierne alokacje nie są dozwolone w programach licencjonowania Open.  Ponadto inne programy mogą wyświetlać te informacje w portalu inaczej.
+> Nadmierne alokacje nie są dozwolone w programach Otwartej licencji.  Ponadto inne programy mogą wyświetlać te informacje w portalu w inny sposób.
 >
 > [!div class="mx-imgBorder"]
-> ![powiadomienia o nadmiernie przejętych subskrypcjach](_img/over-claimed/over-claimed-alert.png)
+> ![Zawiadomienie o nadmiernych wnioskach o subskrypcji](_img/over-claimed/over-claimed-alert.png)
 
-Zauważ, że na ekranie jest używany skrót słupkowy, który wskazuje subskrypcje z nadmiarową alokacją.  Liczba nadmiernych alokacji we wszystkich typach subskrypcji znajduje się w sekcji Przegląd u góry, a na każdym poziomie subskrypcji jest również wyświetlany własny stan alokacji.  
+Należy zauważyć, że wyświetlacz używa paska skrótu do wskazania nadmiernej alokacji subskrypcji.  Liczba nadmiernych alokacji we wszystkich typach subskrypcji znajduje się w sekcji Przegląd u góry, a każdy poziom subskrypcji wyświetla również własny stan alokacji.  
 
-## <a name="resolve-overallocated-subscriptions"></a>Rozwiązywanie nadalokowanych subskrypcji
+## <a name="resolve-overallocated-subscriptions"></a>Rozwiązywanie problemu z nadmierną alokacją subskrypcji
 Istnieje kilka sposobów rozwiązywania nadmiernych alokacji:
-- Skontaktuj się z odsprzedawcą, aby zakupić dodatkowe subskrypcje.
-- Poczekaj, aż upłynie roczny okres działania i płatność za nadmiarowe subskrypcje w tym momencie. 
-- Usuń niektóre przypisania subskrypcji.  (Nie uniemożliwi to potrzeby płatności w rocznym wykorzystaniu subskrypcji, co ma na celu wyróżnienie w tym przypadku maksymalnej liczby przypisanych subskrypcje w dowolnym momencie w roku).
+- Skontaktuj się ze sprzedawcą, aby zakupić dodatkowe subskrypcje.
+- Poczekaj na roczny okres true-up i zapłacić za subskrypcje z nadmierną alokacją w tym momencie. 
+- Usuń niektóre przypisania subskrypcji.  (Nie zapobiegnie to konieczności płatności w rocznym true-up, ponieważ true-up opiera się na maksymalnej liczbie subskrypcji przypisanych w dowolnym momencie w ciągu roku.)
 
-## <a name="billing-and-true-up"></a>Rozliczenia i prawdziwe
-Jeśli Twoja organizacja ma Umowa Enterprise (EA), Administratorzy mogą przypisywać subskrypcje bez ich zakupu i uregulować je później za pomocą procesu uzgadniania znanego jako "true-up".  Po przeniesieniu do przydziału organizacja będzie rozliczana za maksymalną liczbę subskrypcji przypisanych do użytkowników podczas "prawdziwej konfiguracji".  Ta wartość jest prawdziwa, nawet jeśli nie masz już maksymalnej liczby subskrypcji przypisanych w czasie rzeczywistym.  Aby dowiedzieć się więcej o monitorowaniu maksymalnego użycia, przejdź do tematu [maksymalne użycie](maximum-usage.md) .
+## <a name="billing-and-true-up"></a>Rozliczenia i prawda
+Jeśli twoja organizacja ma umowę Enterprise Agreement (EA), administratorzy mogą przypisywać subskrypcje bez ich zakupu i płacić za nie później za pośrednictwem procesu uzgadniania znanego jako "true-up".  Podczas nadmiernej alokacji organizacja będzie rozliczana z maksymalnej liczby subskrypcji przypisanych do użytkowników podczas "true-up".  Jest to prawdą, nawet jeśli nie masz już maksymalną liczbę subskrypcji przypisanych w momencie true-up ma miejsce.  Aby dowiedzieć się więcej na temat monitorowania maksymalnego użycia, zapoznaj się z tematem [Maksymalne użycie.](maximum-usage.md)
 
 > [!Important]
-> Jeśli subskrypcje programu Visual Studio z usługą GitHub Enterprise są przypisane przez administratorów subskrypcji programu Visual Studio, a nigdy nie zakupionych subskrypcji, nie będą one widoczne dla administratorów przedsiębiorstwa usługi GitHub w organizacji. Aby upewnić się, że subskrypcje w witrynie GitHub są widoczne, należy dokonać zakupu, w tym **co najmniej jeden** Visual Studio Professional z usługą GitHub enterprise lub Visual Studio Enterprise z subskrypcją usługi GitHub Enterprise, przy pierwszym przypisaniu subskrypcji.
+> Jeśli subskrypcje programu Visual Studio z programem GitHub Enterprise są przypisywane przez administratorów subskrypcji programu Visual Studio i nigdy nie było zakupu tych subskrypcji, nie będą one widoczne dla administratorów usługi GitHub Enterprise w organizacji. Aby upewnić się, że subskrypcje GitHub Enterprise są widoczne, zakup obejmujący **co najmniej jeden** program Visual Studio Professional z pakietem GitHub Enterprise lub Visual Studio Enterprise z subskrypcją GitHub Enterprise powinien zostać dokonany przy pierwszym przypisaniu subskrypcji.
 >
-> Klient jest odpowiedzialny za zagwarantowanie, że dla każdej przypisanej subskrypcji usługi GitHub istnieje odpowiedni program Visual Studio z subskrypcją usługi GitHub przypisany w portalu zarządzania w celu zachowania zgodności z wymaganiami dotyczącymi licencjonowania dla tego ramach.
+> Obowiązkiem klienta jest upewnienie się, że dla każdej przypisanej subskrypcji usługi GitHub istnieje odpowiedni program Visual Studio z subskrypcją Usługi GitHub przypisany w portalu Zarządzaj, aby zachować zgodność z wymaganiami licencyjnymi dotyczącymi tego Subskrypcji.
 
 ## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Dowiedz się więcej o zarządzaniu [subskrypcjami programu Visual Studio za pomocą usługi GitHub Enterprise](assign-github.md).
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.

@@ -1,5 +1,5 @@
 ---
-title: Usuń zadanie | Microsoft Docs
+title: Usuń zadanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634282"
 ---
 # <a name="delete-task"></a>Delete — Zadanie
@@ -31,24 +31,24 @@ Usuwa określone pliki.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry zadania `Delete`.
+W poniższej tabeli `Delete` opisano parametry zadania.
 
 |Parametr|Opis|
 |---------------|-----------------|
-|`DeletedFiles`|Opcjonalny <xref:Microsoft.Build.Framework.ITaskItem>`[]` parametr wyjściowy.<br /><br /> Określa pliki, które zostały pomyślnie usunięte.|
+|`DeletedFiles`|Opcjonalny parametr wyjściowy. <xref:Microsoft.Build.Framework.ITaskItem> `[]`<br /><br /> Określa pliki, które zostały pomyślnie usunięte.|
 |`Files`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki do usunięcia.|
-|`TreatErrorsAsWarnings`|Opcjonalny parametr `Boolean`<br /><br /> Jeśli `true`, błędy są rejestrowane jako ostrzeżenia. Wartością domyślną jest `false`.|
+|`TreatErrorsAsWarnings`|Parametr `Boolean` opcjonalny<br /><br /> Jeśli `true`błędy są rejestrowane jako ostrzeżenia. Wartością domyślną jest `false`.|
 
 ## <a name="remarks"></a>Uwagi
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
-> Należy zachować ostrożność w przypadku używania symboli wieloznacznych z zadaniem `Delete`. Można łatwo usunąć niewłaściwe pliki z wyrażeniami, takimi jak `$(SomeProperty)\**\*.*` lub `$(SomeProperty)/**/*.*`, zwłaszcza jeśli właściwość zwraca pusty ciąg, w którym to przypadku parametr `Files` może zostać oceniony jako katalog główny dysku i usunąć wiele więcej niż chcesz usunąć.
+> Należy zachować ostrożność podczas korzystania `Delete` z symboli wieloznacznych z zadaniem. Można łatwo usunąć niewłaściwe pliki z `$(SomeProperty)\**\*.*` `$(SomeProperty)/**/*.*`wyrażeniami, takimi jak lub , zwłaszcza jeśli `Files` właściwość ma wartość pustego ciągu, w którym to przypadku parametr może ocenić do katalogu głównego dysku i usunąć znacznie więcej niż chcesz usunąć.
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład usuwa plik *MojaApl. pdb*.
+Poniższy przykład usuwa plik *MyApp.pdb*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

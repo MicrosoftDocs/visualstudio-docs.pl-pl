@@ -1,12 +1,12 @@
 ---
-title: Visual Studio Enterprise obciążenia i identyfikatory składników
+title: Identyfikatory obciążenia i składników programu Visual Studio Enterprise
 titleSuffix: ''
-description: Użyj obciążenia i identyfikatory składników, aby zainstalować program Visual Studio przy użyciu wiersza polecenia lub określić jako zależności w manifestu VSIX
+description: Używanie identyfikatorów obciążenia i składników do instalowania programu Visual Studio przy użyciu wiersza polecenia lub określania zależności w manifeście vsix
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: af71243b1820b1aea244b13c7980a3df603f9eda
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a122ce7ab95ff529d231d34e3cdd4852a0b49b81
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114022"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437649"
 ---
-# <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise katalog składników
+# <a name="visual-studio-enterprise-component-directory"></a>Katalog składników programu Visual Studio Enterprise
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -44,10 +44,10 @@ ms.locfileid: "76114022"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
-* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Tworzenie instalacji programu Visual Studio w trybie offline](create-an-offline-installation-of-visual-studio.md)

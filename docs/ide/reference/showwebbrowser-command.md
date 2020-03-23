@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "72747716"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser — Polecenie
 
-Wyświetla adres URL określony w oknie przeglądarki sieci Web w zintegrowanym środowisku programistycznym (IDE) lub zewnętrznym z IDE.
+Wyświetla adres URL określony w oknie przeglądarki sieci Web w zintegrowanym środowisku programistycznym (IDE) lub zewnętrznym ide.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,27 +36,27 @@ View.ShowWebBrowser URL [/new][/ext]
 Wymagany. Adres URL (Uniform Resource Locator) dla witryny sieci Web.
 
 ## <a name="switches"></a>Przełączniki
-/new
+/nowy
 
-Opcjonalny. Określa, że strona pojawia się w nowym wystąpieniu przeglądarki sieci Web.
+Element opcjonalny. Określa, że strona jest wyświetlana w nowym wystąpieniu przeglądarki sieci Web.
 
 /ext
 
-Opcjonalny. Określa, że strona jest wyświetlana w domyślnej przeglądarce sieci Web poza IDE.
+Element opcjonalny. Określa, że strona jest wyświetlana w domyślnej przeglądarce internetowej poza IDE.
 
 ## <a name="remarks"></a>Uwagi
-Alias dla polecenia **ShowWebBrowser —** to **Nawigacja** lub **Nawigacja**.
+Alias polecenia **ShowWebBrowser** to **nawigacja** lub **nawigacja**.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład przedstawia Microsoft Docs stronie głównej w przeglądarce sieci Web poza IDE. Jeśli wystąpienie przeglądarki sieci Web jest już otwarte, jest używane; w przeciwnym razie zostanie uruchomione nowe wystąpienie.
+W poniższym przykładzie jest wyświetlana strona główna Dokumentów Firmy Microsoft w przeglądarce sieci Web poza ideą. Jeśli wystąpienie przeglądarki internetowej jest już otwarte, jest używane; w przeciwnym razie zostanie uruchomione nowe wystąpienie.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
-- [Okno Polecenie](../../ide/reference/command-window.md)
-- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
-- [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio — Polecenia](../../ide/reference/visual-studio-commands.md)
+- [Okno polecenia](../../ide/reference/command-window.md)
+- [Pole Znajdź/Polecenia](../../ide/find-command-box.md)
+- [Visual Studio — Aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

@@ -43,89 +43,89 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566881"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Opcje — okno dialogowe: Edytor tekstu \> wszystkie języki
+# <a name="options-dialog-box-text-editor--all-languages"></a>Okno dialogowe Opcje: Edytor \> tekstu Wszystkie języki
 
-To okno dialogowe umożliwia zmianę domyślnego zachowania edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów w oparciu o Edytor kodu, taki jak widok źródła projektanta HTML. Aby otworzyć to okno dialogowe, wybierz **Opcje** z menu **Narzędzia** . W folderze **Edytor tekstu** rozwiń podfolder **wszystkie języki** , a następnie wybierz pozycję **Ogólne**.
+To okno dialogowe umożliwia zmianę domyślnego zachowania Edytora kodu. Te ustawienia dotyczą również innych edytorów na podstawie Edytora kodu, takich jak widok źródłowy projektanta HTML. Aby otworzyć to okno dialogowe, wybierz **polecenie Opcje** z menu **Narzędzia.** W folderze **Edytor tekstu** rozwiń podfolder **Wszystkie języki,** a następnie wybierz pozycję **Ogólne**.
 
 > [!CAUTION]
-> Ta strona służy do ustawiania opcji domyślnych dla wszystkich języków deweloperskich. Należy pamiętać, że Resetowanie opcji w tym oknie dialogowym spowoduje zresetowanie opcji ogólnych we wszystkich językach do wybranych opcji. Aby zmienić opcje edytora tekstu dla tylko jednego języka, rozwiń podfolder dla tego języka i wybierz jego strony opcji.
+> Ta strona ustawia domyślne opcje dla wszystkich języków programowania. Pamiętaj, że zresetowanie opcji w tym oknie dialogowym spowoduje zresetowanie opcji ogólnych we wszystkich językach do wyboru, niezależnie od wybranych w tym miejscu opcji. Aby zmienić opcje edytora tekstu tylko dla jednego języka, rozwiń podfolder dla tego języka i wybierz jego strony opcji.
 
-Szary znacznik wyboru jest wyświetlany po wybraniu opcji na stronach opcji ogólnych dla niektórych języków programowania, ale nie dla innych.
+Wyszarzone znacznik wyboru jest wyświetlany, gdy na stronach opcji ogólnych wybrano opcję dla niektórych języków programowania, ale nie dla innych.
 
 ## <a name="statement-completion"></a>Dokańczanie instrukcji
 
-**Autolista członków**
+**Automatyczne listy członków**
 
-Po wybraniu listy podręczne dostępne elementy członkowskie, właściwości, wartości lub metody są wyświetlane przez funkcję IntelliSense podczas wpisywania w edytorze. Wybierz dowolny element z listy podręcznej, aby wstawić element do kodu. Wybranie tej opcji powoduje włączenie opcji **Ukryj zaawansowane składowe** .
+Po wybraniu tej opcji listy podręczne dostępnych elementów członkowskich, właściwości, wartości lub metod są wyświetlane przez program IntelliSense podczas wpisywania w edytorze. Wybierz dowolny element z listy podręcznej, aby wstawić element do kodu. Wybranie tej opcji powoduje, że opcja **Ukryj elementy zaawansowane.**
 
-**Ukryj zaawansowane elementy członkowskie**
+**Ukrywanie zaawansowanych członków**
 
-Gdy jest zaznaczone, skraca listy uzupełniania wyskakujących instrukcji, wyświetlając tylko te elementy, które są najczęściej używane. Inne elementy są filtrowane z listy.
+Gdy ta opcja jest zaznaczona, skraca listy uzupełnień zestawienia wyskakującego, wyświetlając tylko te elementy najczęściej używane. Inne elementy są filtrowane z listy.
 
 **Informacje o parametrach**
 
-Po wybraniu Pełna składnia dla bieżącej deklaracji lub procedury jest wyświetlana w punkcie wstawiania w edytorze, ze wszystkimi dostępnymi parametrami. Następny parametr, który można przypisać, jest wyświetlany pogrubioną czcionką.
+Po wybraniu tej opcji pełna składnia bieżącej deklaracji lub procedury jest wyświetlana w punkcie wstawiania w edytorze ze wszystkimi dostępnymi parametrami. Następny parametr, który można przypisać, jest wyświetlany pogrubioną czcionką.
 
 ## <a name="settings"></a>Ustawienia
 
-**Włącz wirtualne miejsce**
+**Włącz przestrzeń wirtualną**
 
-Gdy ta opcja jest zaznaczona, a **Zawijanie** wierszy jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i wpisać. Ta funkcja może służyć do pozycjonowania komentarzy w spójnym punkcie obok kodu.
+Gdy ta opcja jest zaznaczona, a **zawijanie wyrazu** jest wyczyszczone, można kliknąć w dowolnym miejscu poza końcem wiersza w Edytorze kodu i wpisać. Ta funkcja może służyć do umieszczania komentarzy w spójnym punkcie obok kodu.
 
-**Zawijanie wierszy**
+**Zawijanie**
 
-Po wybraniu każda część linii, która rozszerza się w poziomie poza widoczny obszar edytora, zostanie automatycznie wyświetlona w następnym wierszu. Wybranie tej opcji powoduje włączenie opcji **Pokaż glify wizualne dla zawijania wyrazów** .
-
-> [!NOTE]
-> Funkcja **miejsce wirtualne** jest wyłączona, gdy **Zawijanie wierszy** jest włączone.
-
-**Pokaż symbole wizualne dla zawijania wierszy**
-
-Po wybraniu wskaźnik strzałki powrotu jest wyświetlany, gdy długa linia jest zawijana do drugiego wiersza.
-
-![Zrzut ekranu LineBreakSymbol](../../ide/reference/media/linebreak.gif)
-
-Usuń zaznaczenie tej opcji, jeśli wolisz nie wyświetlać tych wskaźników.
+Gdy ta opcja jest zaznaczona, w następnym wierszu automatycznie wyświetlana jest dowolna część linii, która wykracza poziomo poza widoczny obszar edytora. Wybranie tej opcji umożliwia opcję **Pokaż glify wizualne dla zawijania wyrazów.**
 
 > [!NOTE]
-> Te strzałki przypomnień nie są dodawane do kodu i nie są drukowane. Są one przeznaczone tylko do celów informacyjnych.
+> Funkcja **przestrzeń wirtualna** jest wyłączona, gdy jest włączone **zawijanie wyrazów.**
+
+**Pokaż glify wizualne dla zawijać wyrazów**
+
+Po wybraniu tej opcji wyświetlany jest wskaźnik strzałki powrotnej, w którym długa linia zawija się na drugą linię.
+
+![LineBreakSymbol zrzut ekranu](../../ide/reference/media/linebreak.gif)
+
+Wyczyść tę opcję, jeśli nie chcesz wyświetlać tych wskaźników.
+
+> [!NOTE]
+> Te strzałki przypomnienia nie są dodawane do kodu i nie są drukowane. Mają one tylko do celów informacyjnych.
 
 **Numery wierszy**
 
-Po wybraniu numer wiersza pojawia się obok każdego wiersza kodu.
+Po wybraniu tej opcji obok każdego wiersza kodu pojawia się numer wiersza.
 
 > [!NOTE]
-> Te numery wierszy nie są dodawane do kodu i nie są drukowane. Są one przeznaczone tylko do celów informacyjnych.
+> Te numery wierszy nie są dodawane do kodu i nie są drukowane. Mają one tylko do celów informacyjnych.
 
-**Włącz nawigację adresów URL jednym kliknięciem**
+**Włączanie nawigacji po adresach URL z jednym kliknięciem**
 
-Po zaznaczeniu kursor myszy zmieni się w wskazanie wskazujące adres URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić określoną stronę w przeglądarce sieci Web.
+Po wybraniu tej opcji kursor myszy zmienia się w dłoń wskazującą, gdy przechodzi przez adres URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić wskazaną stronę w przeglądarce internetowej.
 
-**Pasek nawigacji**
+**Pasek nawigacyjny**
 
-Po wybraniu Wyświetla **pasek nawigacyjny** u góry edytora kodu. Jego listy rozwijane **obiekty** i **elementy członkowskie** umożliwiają wybranie określonego obiektu w kodzie, wybranie z jego członków i przejście do deklaracji wybranego elementu członkowskiego w edytorze kodu.
+Gdy ta opcja jest zaznaczona, w górnej części edytora kodu zostanie wyświetlony **pasek nawigacyjny.** Jego listy **rozwijane obiekty** i **członkowie** umożliwiają wybranie określonego obiektu w kodzie, wybranie jego członków i przejście do deklaracji wybranego elementu członkowskiego w Edytorze kodu.
 
-**Zastosuj polecenia Wytnij lub Kopiuj do pustych wierszy, gdy nie ma zaznaczenia**
+**Stosowanie poleceń Wytnij lub Kopiuj do pustych wierszy, gdy nie ma zaznaczenia**
 
-Ta opcja ustawia zachowanie edytora po umieszczeniu punktu wstawiania w pustym wierszu, zaznacz opcję Brak, a następnie skopiuj lub Wytnij.
+Ta opcja ustawia zachowanie edytora po umieszczeniu punktu wstawiania w pustym wierszu, zaznaczeniu niczego, a następnie kopiowaniu lub wycinaniu.
 
-- Gdy ta opcja jest zaznaczona, pusty wiersz jest kopiowany lub obcinany. W przypadku wklejenia zostanie wstawiony nowy pusty wiersz.
+- Gdy ta opcja jest zaznaczona, pusta linia jest kopiowana lub wycinana. Jeśli następnie wklej, zostanie wstawiony nowy, pusty wiersz.
 
-- Gdy ta opcja jest wyczyszczona, polecenie Wytnij usuwa puste wiersze. Jednak dane w schowku są zachowywane. W związku z tym, jeśli następnie użyjesz polecenia Wklej, zawartość ostatnio skopiowana do schowka zostanie wklejona. Jeśli nic nie zostało wcześniej skopiowane, nic nie zostanie wklejone.
+- Gdy ta opcja jest wyczyszczona, polecenie Wytnij usuwa puste wiersze. Jednak dane w Schowku są zachowywane. W związku z tym jeśli następnie użyjesz polecenia Wklej, zawartość ostatnio skopiowana do Schowka zostanie wklejona. Jeśli nic nie zostało skopiowane wcześniej, nic nie jest wklejane.
 
-To ustawienie nie ma wpływu na kopiowanie lub wycinanie, gdy linia nie jest pusta. Jeśli nic nie jest zaznaczone, cała linia jest kopiowana lub obcinana. Jeśli następnie wklejasz, tekst całego wiersza i jego znaku EndLine zostaną wklejone.
+To ustawienie nie ma wpływu na kopiowanie lub wycinanie, gdy wiersz nie jest pusty. Jeśli nic nie jest zaznaczone, cała linia jest kopiowana lub wycinana. Jeśli następnie wklej, tekst całego wiersza i jego znak linii końcowej zostaną wklejone.
 
 > [!TIP]
-> Aby wyświetlić wskaźniki dla spacji, kart i punktów końcowych, a tym samym rozróżnić wcięcia wierszy od wierszy, które są całkowicie puste, wybierz opcję **Zaawansowane** z menu **Edycja** i wybierz opcję **Wyświetl biały znak**.
+> Aby wyświetlić wskaźniki spacji, kart i końców linii, a tym samym odróżnić wcięte linie od linii całkowicie pustych, wybierz polecenie **Zaawansowane** z menu **Edycja** i wybierz polecenie **Wyświetl biały spację**.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
-- [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)
+- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Korzystanie z IntelliSense](../../ide/using-intellisense.md)

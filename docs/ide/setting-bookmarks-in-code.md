@@ -1,5 +1,5 @@
 ---
-title: Ustaw kod zakładki
+title: Ustawianie zakładek kodu
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595439"
 ---
 # <a name="set-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
 
-Możesz używać zakładek, aby oznaczyć wiersze w kodzie, dzięki czemu można szybko powrócić do określonej lokalizacji lub przeskakiwać między lokalizacjami. Ikony i polecenia zakładek są dostępne w dwóch miejscach: **oknie zakładek** (**widoku** > **oknie zakładek**) i pasek narzędzi edytora tekstu.
+Zakładki umożliwiają oznaczanie wierszy w kodzie, dzięki czemu można szybko powrócić do określonej lokalizacji lub przejść między lokalizacjami. Polecenia i ikony zakładek są dostępne w dwóch miejscach: **oknie zakładki** **(Okno zakładki****widoku)** > i pasku narzędzi edytora tekstu.
 
-![Oznacz zakładką paska narzędzi](media/bookmark-toolbar.png)
+![Pasek narzędzi do zakładek](media/bookmark-toolbar.png)
 
-![Okno zakładek](media/bookmark-window.png)
+![Okno zakładki](media/bookmark-window.png)
 
 ## <a name="manage-bookmarks"></a>Zarządzanie zakładkami
 
-Aby dodać zakładkę, umieść kursor w wierszu, który chcesz utworzyć zakładkę. Wybierz **Przełącz zakładkę** przycisk lub naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**K** . Spowoduje to dodanie zakładki. Jeśli wybierzesz **Przełącz zakładkę** przycisk (lub naciśnij **Ctrl**+**K**, **Ctrl** +  **K**) ponownie, zakładka zostanie usunięta.
+Aby dodać zakładkę, umieść kursor w wierszu, który chcesz dodać do zakładki. Wybierz przycisk **Przełącz zakładkę** lub naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**K**. Spowoduje to dodanie zakładki. Jeśli ponownie wybierzesz przycisk **Przełącz zakładkę** (lub naciśnij **klawisze Ctrl**+**K**, **Ctrl**+**K),** zakładka zostanie usunięta.
 
-Aby wiedzieć, w skrócie określonej zakładki jest aby można było zmienić jego nazwę w **oknie zakładek** w menu kliknij prawym przyciskiem myszy lub kontekstu. Możesz usunąć zakładki, wybierając **Usuń** przycisku w oknie zakładek.
+Aby dowiedzieć się na pierwszy rzut oka, do czego służy określona zakładka, możesz zmienić jej nazwę w **oknie zakładki** z menu po kliknięciu prawym przyciskiem myszy lub w menu kontekstowym. Zakładki można usuwać, wybierając przycisk **Usuń** w oknie zakładki.
 
 > [!IMPORTANT]
-> Zakładka jest ustawiana na przejście do numeru wiersza, nie do kodu. Jeśli zmodyfikujesz kod, zakładka jest zachowywana w numerze wiersza, a nie przenosi się z kodem.
+> Zakładka jest ustawiona na numer wiersza, a nie na kod. Jeśli zmodyfikujesz kod, zakładka jest zachowywana pod numerem wiersza i nie jest przesuń z kodem.
 
-Możesz nawigować między zakładkami za pomocą **Następna zakładka** i **Poprzednia zakładka** przycisków w oknie zakładek.
+Między zakładkami można nawigować za pomocą przycisków **Następna zakładka** i **Poprzednia zakładka** w oknie zakładki.
 
-Możesz organizować zakładki w foldery wirtualne, wybierając **nowy Folder** w oknie zakładek, a następnie przeciągając wybrane zakładki do nowego folderu.
+Zakładki można organizować w foldery wirtualne, wybierając **pozycję Nowy folder** w oknie zakładki, a następnie przeciągając wybrane zakładki do nowego folderu.
 
-Możesz wyłączyć zakładki (bez ich usuwania), wybierając **Wyłącz wszystkie zakładki** przycisku w oknie zakładek. Można ponownie włączyć, wybierając ten sam przycisk (który jest teraz nazywana **Włącz wszystkie zakładki**).
+Zakładki można wyłączyć (bez ich usuwania), wybierając przycisk **Wyłącz wszystkie zakładki** w oknie zakładki. Można je ponownie włączyć, wybierając ten sam przycisk (który jest teraz nazywany **Włącz wszystkie zakładki).**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../ide/writing-code-in-the-code-and-text-editor.md)

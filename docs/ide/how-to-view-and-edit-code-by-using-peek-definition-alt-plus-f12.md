@@ -1,5 +1,5 @@
 ---
-title: Za pomocą definicji wglądu
+title: Korzystanie z definicji wglądu
 ms.date: 01/10/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -8,82 +8,82 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75591349"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Jak: Wyświetlanie i edytowanie kodu przy użyciu funkcji Peek Definition (Alt+F12)
 
-Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod bez przełączania kodu, który właśnie piszesz. **Zobacz definicję** i **przejdź do definicji** wyświetlane te same informacje, ale **zobacz definicję** pojawia się w oknie podręcznym, a **przejdź do definicji** pokazuje kod w oddzielnym oknie kodu. **Przejdź do definicji** powoduje, że kontekst (to znaczy aktywne okno kodu, bieżący wiersz i pozycja kursora) przełączyć się do okna kodu definicji. Za pomocą **Peek Definition**, można wyświetlać i edytować definicję i poruszać się wewnątrz pliku definicji, zachowując swoje miejsce w oryginalnym pliku kodu.
+Za pomocą polecenia **Peek Definition** można wyświetlać i edytować kod bez przełączania się od kodu, który piszesz. **Peek Definition** i **Go To Definition** wyświetlają te same informacje, ale **peek definition** pokazuje go w wyskakującym oknie, a Przejdź do **definicji** pokazuje kod w osobnym oknie kodu. **Przejdź do definicji** powoduje, że kontekst (czyli aktywne okno kodu, bieżący wiersz i położenie kursora), aby przełączyć się do okna kodu definicji. Za pomocą **funkcji Peek Definition**można wyświetlać i edytować definicję oraz poruszać się wewnątrz pliku definicji, zachowując miejsce w oryginalnym pliku kodu.
 
-Możesz użyć **Peek Definition** przy użyciu kodu C#, Visual Basic i C++. W Visual Basic funkcja **wglądu do definicji** pokazuje łącze do **Przeglądarka obiektów** dla symboli, które nie mają metadanych definicji (na przykład typów wbudowanych w programie .NET).
+Można użyć **peek definicji** z c#, Visual Basic i C++ kod. W języku Visual Basic **definicja wglądu** zawiera łącze do **przeglądarki obiektów** dla symboli, które nie mają metadanych definicji (na przykład .NET typów, które są wbudowane).
 
 ## <a name="use-peek-definition"></a>Użyj definicji wglądu
 
-### <a name="open-a-peek-definition-window"></a>Otwórz okno definicji wglądu
+### <a name="open-a-peek-definition-window"></a>Otwieranie okna Definicja wglądu
 
-1. Możesz uzyskać wgląd w definicję, wybierając pozycję Sprawdź **definicję** z menu dostępnego po kliknięciu prawym przyciskiem myszy dla typu lub elementu członkowskiego, który chcesz zbadać. Jeśli ta opcja jest włączona, można także skorzystać z klawiatury, naciskając klawisz **Ctrl** (lub inny modyfikator) i klikając nazwę elementu członkowskiego. Lub z klawiatury, naciśnij klawisz **Alt**+**F12**.
+1. Można zajrzeć do definicji, wybierając **opcję Peek Definition** z menu po kliknięciu prawym przyciskiem myszy dla typu lub elementu członkowskiego, który chcesz eksplorować. Jeśli ta opcja jest włączona, można również zapoznać się z definicją za pomocą myszy, naciskając klawisz **Ctrl** (lub inny modyfikator) i klikając nazwę elementu członkowskiego. Lub, z klawiatury, naciśnij **klawisz Alt**+**F12**.
 
-     Ta ilustracja przedstawia **Peek Definition** okna dla metody, która nosi nazwę `Print()`:
+     Na tej ilustracji przedstawiono okno **Definicja wglądu** dla metody o nazwie: `Print()`
 
-     ![Okno podglądu](../ide/media/peekwindow.png)
+     ![Okno wglądu](../ide/media/peekwindow.png)
 
-     Okno definicji jest wyświetlane poniżej `printer.Print("Hello World!")` wiersza w oryginalnym pliku. Okno nie ukrywa żadnego kodu w pliku oryginalnym. Wiersze, które następują `printer.Print("Hello World!")` są wyświetlane w oknie definicji.
+     Okno definicji pojawi `printer.Print("Hello World!")` się poniżej wiersza w oryginalnym pliku. Okno nie ukrywa żadnego kodu w pliku oryginalnym. Wiersze, `printer.Print("Hello World!")` które następują są wyświetlane w oknie definicji.
 
-1. Kursor można przenieść do innej lokalizacji w okna definicji wglądu. Możesz nadal można poruszać się w oknie oryginalnego kodu.
+1. Kursor można przenieść do różnych lokalizacji w oknie definicji wglądu. Nadal można poruszać się w oryginalnym oknie kodu.
 
 1. Można skopiować ciąg z okna definicji i wkleić go w kodzie oryginalnym. Możesz również przeciągać i upuszczać ciąg z okna definicji do oryginalnego kodu bez usuwania go z okna definicji.
 
-1. Możesz zamknąć okno definicji wybierając **Esc** klucza lub **Zamknij** przycisku na karcie okna definicji.
+1. Okno definicji można zamknąć, wybierając klawisz **Esc** lub przycisk **Zamknij** na karcie okna definicji.
 
-### <a name="open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Otwórz okno zobacz definicję z poziomu okna Zobacz definicję
+### <a name="open-a-peek-definition-window-from-within-a-peek-definition-window"></a>Otwieranie okna Definicja wglądu z poziomu okna Definicja wglądu
 
-Jeśli masz już **Peek Definition** otwarte okno, można wywołać **Peek Definition** ponownie dla kodu w tym oknie. Otwiera się inne okno definicji. Zestaw łączy do stron nadrzędnych obok karty w oknie definicji, służący do nawigacji między oknami definicji. Etykietka narzędzia na każdej kropce ukazuje nazwę pliku i ścieżkę pliku definicji, którą ta kropka reprezentuje.
+Jeśli masz już otwarte okno **definicji wglądu,** możesz ponownie wywołać **definicję wglądu** w kod w tym oknie. Otwiera się inne okno definicji. Zestaw łączy do stron nadrzędnych obok karty w oknie definicji, służący do nawigacji między oknami definicji. Etykietka narzędzia na każdej kropce ukazuje nazwę pliku i ścieżkę pliku definicji, którą ta kropka reprezentuje.
 
-   ![Okno podglądu w oknie podglądu](../ide/media/peekwithinpeek.png)
+   ![Zaglądaj do okna wglądu w okno wgląd](../ide/media/peekwithinpeek.png)
 
-### <a name="peek-definition-with-multiple-results"></a>Zobacz definicję z wieloma wynikami
+### <a name="peek-definition-with-multiple-results"></a>Peek Definition z wieloma wynikami
 
-Jeśli używasz **Peek Definition** wobec kodu, który ma więcej niż jedną definicję (na przykład klasa częściowa), lista wyników pojawi się z prawej strony widoku definicji kodu. Możesz wybrać dowolny wynik na liście, aby wyświetlić jego definicję.
+Jeśli używasz **definicji wglądu** w kod, który ma więcej niż jedną definicję (na przykład klasy częściowej), lista wyników pojawia się po prawej stronie widoku definicji kodu. Możesz wybrać dowolny wynik na liście, aby wyświetlić jego definicję.
 
-   ![Wgląd do okna z wieloma wynikami](../ide/media/peekmultiple.png)
+   ![Zaglądanie do okna z wielu wyników](../ide/media/peekmultiple.png)
 
-### <a name="edit-inside-the-peek-definition-window"></a>Edytować wewnątrz okna Zobacz definicję
+### <a name="edit-inside-the-peek-definition-window"></a>Edytowanie wewnątrz okna Definicja wglądu
 
-Podczas uruchamiania do edycji wewnątrz **Peek Definition** okna, plik, który modyfikujesz automatycznie otwiera się jako oddzielna karta w edytorze kodu i odzwierciedla wprowadzone już zmiany. Możesz wprowadzić, cofnąć i zapisać zmiany w **Peek Definition** okna, a karta nadal będzie odzwierciedlała te zmiany. Nawet po zamknięciu **Peek Definition** okna bez zapisywania zmian, można wprowadzić, cofnąć i zapisać więcej zmian na karcie Pobieranie dokładnie tam, gdzie Przerwano w **Peek Definition** okna.
+Po rozpoczęciu edycji w oknie **Definicji wglądu** plik, który modyfikujesz, zostanie automatycznie otwarty jako osobna karta w edytorze kodu i odzwierciedla wprowadzone zmiany. Możesz nadal wprowadzać, cofać i zapisywać zmiany w oknie **Definicja wglądu,** a karta będzie nadal odzwierciedlać te zmiany. Nawet jeśli zamkniesz okno **Definicja wglądu** bez zapisywania zmian, możesz wprowadzić, cofnąć i zapisać więcej zmian na karcie, podnosząc dokładnie miejsce, w którym zostało przerwane w oknie **Definicja wglądu.**
 
-   ![Edytowanie w obrębie okna podglądu](../ide/media/peekedit.png)
+   ![Edytowanie w oknie wglądu](../ide/media/peekedit.png)
 
-### <a name="to-change-options-for-peek-definition"></a>Aby zmienić opcje dla funkcji zobacz definicję
+### <a name="to-change-options-for-peek-definition"></a>Aby zmienić opcje definicji wglądu
 
-1. Przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **ogólne**.
+1. Przejdź do**Options** > **edytora tekstu** > Opcje **narzędzi** > **.**
 
-1. Wybierz opcję **Otwórz definicję w widoku podglądu**.
+1. Wybierz opcję **Otwórz definicję w widoku wglądu**.
 
-1. Kliknij przycisk **OK** zamknąć **opcje** okno dialogowe.
+1. Kliknij **przycisk OK,** aby zamknąć okno dialogowe **Opcje.**
 
-   ![Ustawianie opcji kliknięcie myszą definicji wglądu](../ide/media/editor_options_peek_view.png)
+   ![Ustawianie opcji definicji wglądu do kliknięcia myszą](../ide/media/editor_options_peek_view.png)
 
-### <a name="keyboard-shortcuts-for-peek-definition"></a>Skróty klawiaturowe dla funkcji zobacz definicję
+### <a name="keyboard-shortcuts-for-peek-definition"></a>Skróty klawiaturowe w definicji wglądu
 
-Można użyć następujących skrótów klawiaturowych z **Peek Definition** okna:
+Tych skrótów klawiaturowych można używać w oknie **Definicja wglądu:**
 
-|Funkcja|Skrót klawiaturowy|
+|Funkcjonalność|Skrót klawiaturowy|
 |-------------------|:-----------------------:|
-|Otwórz okno definicji|**ALT**+**F12**|
-|Zamknij okno definicji|**ESC**|
-|Promuj okno definicji do karty zwykłego dokumentu|**SHIFT**+**Alt**+**strona główna**|
-|Przechodzenie między oknami definicji|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+ **=**|
+|Otwórz okno definicji|**Alt**+**F12**|
+|Zamknij okno definicji|**Esc**|
+|Promuj okno definicji do karty zwykłego dokumentu|**Shift**+**Alt**+**Strona główna**|
+|Przechodzenie między oknami definicji|**Ctrl**+**Alt** + **-** i **Ctrl**+**Alt**+**=**|
 |Przechodzenie między wieloma wynikami|**F8** i **Shift**+**F8**|
-|Przełączanie się między oknem edytora kodu i oknem definicji|**SHIFT**+**Esc**|
+|Przełączanie się między oknem edytora kodu i oknem definicji|**Przesunięcie**+**Esc**|
 
 > [!NOTE]
-> Można również użyć tych samych skrótów klawiaturowych do edycji kodu w **Peek Definition** oknie używasz w innym miejscu w programie Visual Studio.
+> Można również użyć tych samych skrótów klawiaturowych do edycji kodu w oknie **definicji wglądu,** jak używasz w innym miejscu w programie Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przechodzenie do kodu](../ide/navigating-code.md)
-- [Polecenia Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)
-- [Funkcje produktywności w programie Visual Studio](../ide/productivity-features.md)
+- [Nawigowanie po kodzie](../ide/navigating-code.md)
+- [Przejdź do definicji i Zobacz definicję](../ide/go-to-and-peek-definition.md)
+- [Funkcje zwiększające produktywność w programie Visual Studio](../ide/productivity-features.md)

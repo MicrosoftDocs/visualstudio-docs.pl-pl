@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75595699"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -31,25 +31,25 @@ devenv /Edit [File1[ FileN]...]
 
 ## <a name="arguments"></a>Argumenty
 
-- *File1*
+- *Plik1*
 
-  Opcjonalny. Plik do otwarcia w istniejącym wystąpieniu programu Visual Studio. Jeśli wystąpienie programu Visual Studio nie istnieje, nowe wystąpienie jest tworzone z uproszczonym układem okna, a narzędzie otwiera *plik1* w nowym wystąpieniu.
+  Element opcjonalny. Plik do otwarcia w istniejącym wystąpieniu programu Visual Studio. Jeśli nie istnieje żadne wystąpienie programu Visual Studio, zostanie utworzone nowe wystąpienie z uproszczonym układem okna, a narzędzie otworzy *plik1* w nowym wystąpieniu.
 
-- *FileN*
+- *Plik*
 
-  Opcjonalny. Co najmniej jeden dodatkowy plik do otwarcia w istniejącym wystąpieniu programu Visual Studio.
+  Element opcjonalny. Jeden lub więcej dodatkowych plików do otwarcia w istniejącym wystąpieniu programu Visual Studio.
 
 ## <a name="remarks"></a>Uwagi
 
-Gdy nie określono pliku, istniejące wystąpienie programu Visual Studio otrzymuje fokus. Jeśli plik nie zostanie określony i żadne wystąpienie programu Visual Studio nie istnieje, narzędzie tworzy wystąpienie z uproszczonym układem okna.
+Gdy plik nie jest określony, istniejące wystąpienie programu Visual Studio odbiera fokus. Jeśli nie określono pliku i nie istnieje wystąpienie programu Visual Studio, narzędzie tworzy wystąpienie z uproszczonym układem okna.
 
-Jeśli istniejące wystąpienie programu Visual Studio jest w stanie modalnym, plik zostanie otwarty w istniejącym wystąpieniu, gdy program Visual Studio zakończy stan modalny. Na przykład taka sytuacja może wystąpić, gdy okno [dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md) jest otwarte.
+Jeśli istniejące wystąpienie programu Visual Studio jest w stanie modalnym, plik zostanie otwarty w istniejącym wystąpieniu, gdy program Visual Studio zakończy działanie stanu modalnego. Na przykład taka sytuacja może wystąpić, gdy [okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md) jest otwarte.
 
-Jeśli jest otwarte więcej niż jedno wystąpienie programu Visual Studio, plik zostanie otwarty w ostatnio otwartym wystąpieniu.
+Jeśli więcej niż jedno wystąpienie programu Visual Studio jest otwarte, plik jest otwierany w ostatnio otwartym wystąpieniu.
 
 ## <a name="example"></a>Przykład
 
-Pierwszy przykład otwiera plik `MyFile.cs` w istniejącym wystąpieniu programu Visual Studio. Jeśli wystąpienie programu Visual Studio nie istnieje, narzędzie otwiera plik w nowym wystąpieniu. Drugi przykład jest podobny, z tą różnicą, że otwiera trzy pliki zamiast tylko jednego pliku.
+Pierwszy przykład otwiera `MyFile.cs` plik w istniejącym wystąpieniu programu Visual Studio. Jeśli wystąpienie programu Visual Studio nie istnieje, narzędzie otwiera plik w nowym wystąpieniu. Drugi przykład jest podobny, z tą różnicą, że otwiera trzy pliki zamiast tylko jednego pliku.
 
 ```shell
 devenv /edit MyFile.cs
@@ -57,6 +57,6 @@ devenv /edit MyFile.cs
 devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

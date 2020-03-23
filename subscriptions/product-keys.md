@@ -1,87 +1,87 @@
 ---
-title: Korzystanie z kluczy produktów | Microsoft Docs
+title: Korzystanie z kluczy produktu | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Dowiedz się, jak uzyskiwać klucze produktów i zarządzać nimi w subskrypcjach programu Visual Studio.
+description: Dowiedz się, jak uzyskać klucze produktów i zarządzać nimi w ramach subskrypcji programu Visual Studio.
 ms.openlocfilehash: 3cd4992a89f5cdd12e85d83e3ac8b525bd2fe7d4
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78947121"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcjach programu Visual Studio
 
-Subskrypcje programu Visual Studio zapewniają dostęp do szerokiej gamy produktów firmy Microsoft do projektowania, opracowywania, testowania i demonstrowania aplikacji. Niektóre z tych produktów wymagają kluczy produktu podczas instalacji, a niektóre z nich wymagają aktywacji.
+Subskrypcje programu Visual Studio zapewniają dostęp do szerokiej gamy produktów firmy Microsoft do projektowania, tworzenia, testowania i demonstrowania aplikacji. Niektóre z tych produktów wymagają kluczy produktu podczas instalacji, a niektóre z nich wymagają aktywacji.
 
-Subskrypcje programu Visual Studio zwykle obejmują pięć kluczy produktów dla bieżących wersji systemu Windows i produktów pakietu Office oraz trzy klucze dla starszych wersji.
+Subskrypcje programu Visual Studio zazwyczaj zawierają pięć kluczy produktu dla bieżących wersji produktów Windows i pakietu Office oraz trzy klucze dla starszych wersji.
 
-Większość kluczy produktów umożliwia również wielokrotne aktywację produktu dla każdego klucza.  Wiele produktów umożliwia również Instalowanie i używanie produktu przez 30 dni lub więcej bez aktywacji.  Większość subskrybentów zapewnia więcej niż wystarczającą liczbę aktywacji, aby sprostać potrzebom.  Jeśli jednak zostały wyczerpane dostępne aktywacje dla produktu, możesz przesłać żądanie dotyczące dodatkowych kluczy za pomocą [usługi Customer subskrypcje subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+Większość kluczy produktu umożliwia również wielokrotne aktywacje produktu dla każdego klucza.  Wiele produktów pozwala również na instalację i korzystanie z produktu przez 30 dni lub dłużej bez aktywacji.  Dla większości subskrybentów zapewnia to więcej niż wystarczającą liczbę aktywacji, aby zaspokoić ich potrzeby.  Jeśli jednak wyczerpano dostępne aktywacje produktu, możesz przesłać żądanie dodatkowych kluczy za pośrednictwem [działu obsługi klienta subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 
 ## <a name="activating-a-product"></a>Aktywowanie produktu
-W przypadku niektórych produktów wymagana jest aktywacja.  Ogólnie rzecz biorąc, w subskrypcjach programu Visual Studio jest to ograniczone do systemu Windows, Windows Server, Microsoft Office aplikacji klienckich i Expression Studio. Gdy aktywacja jest wymagana, wiele produktów — w tym Windows i Office — umożliwia instalowanie i używanie produktu bez aktywacji przez 30 dni lub dłużej. W przypadku ponownego obrazu komputerów często (co najmniej raz na 30 dni) nie należy rozważyć aktywowania produktu. Klucze produktów dostarczane jako część subskrypcji programu Visual Studio nie umożliwiają nieograniczonej aktywacji produktu.
+Aktywacja jest wymagana dla niektórych produktów.  Ogólnie rzecz biorąc w subskrypcjach programu Visual Studio jest to ograniczone do systemów Windows, Windows Server, Microsoft Office aplikacji klienckich i Expression Studio. Gdy wymagana jest aktywacja, wiele produktów — w tym Windows i Office — umożliwia instalowanie i używanie produktu bez aktywacji przez co najmniej 30 dni. Jeśli często ponownie obrazujesz komputery (co najmniej raz na 30 dni), rozważ NIEaktywowanie produktu. Klucze produktu dostarczone w ramach subskrypcji programu Visual Studio nie zezwalają na nieograniczone aktywacje produktu.
 
-Jeśli zatwierdzono wszystkie dostępne klucze produktów w ramach subskrypcji i wykorzystano wszystkie dostępne aktywacje, możesz poprosić o dodatkowe klucze, kontaktując się z lokalnym Visual Studio Subscriptionm [centrum obsługi klienta](https://visualstudio.microsoft.com/subscriptions/support/). Żądania będą brane pod uwagę w zależności od wielkości liter. W przypadku zatwierdzenia klucze produktów będą dostępne w [plikach do pobrania](https://my.visualstudio.com/downloads).
+Jeśli w ramach subskrypcji odebrano wszystkie dostępne klucze produktu i zużyłeś wszystkie dostępne aktywacje, możesz poprosić o dodatkowe klucze, kontaktując się z lokalnym [Centrum Obsługi Klienta](https://visualstudio.microsoft.com/subscriptions/support/)subskrypcji programu Visual Studio. Wnioski będą rozpatrywane indywidualnie. Jeśli zostanie zatwierdzony, klucze produktu będą dostępne w [plikach do pobrania](https://my.visualstudio.com/downloads).
 
-## <a name="retail-and-volume-licensing-versions-of-products"></a>Wersje produktów detalicznych i licencjonowania zbiorowego
-Subskrypcje programu Visual Studio oferują wybór wersji detalicznych i produktów firmy Microsoft z licencją zbiorczą. Niektóre produkty są dostępne do pobrania wyłącznie w wersji handlowej lub w ich wersji z licencją zbiorczą. Niektóre są dostępne w obu wersjach. Ogólnie rzecz biorąc, produkty wymagające aktywacji, takie jak Windows, Windows Server i produkty klienckie pakietu Office, są oferowane tylko w wersji detalicznej.
+## <a name="retail-and-volume-licensing-versions-of-products"></a>Wersje produktów do licencjonowania detalicznego i licencjonowania zbiorowego
+Subskrypcje programu Visual Studio oferują wybór wersji detalicznych i licencjonowania zbiorowego produktów firmy Microsoft. Niektóre produkty są dostępne w plikach do pobrania tylko w wersji detalicznej lub tylko w wersji licencjonowania zbiorowego; niektóre są dostępne w obu wersjach. Ogólnie rzecz biorąc produkty wymagające aktywacji, takie jak Windows, Windows Server i produkty klienckie pakietu Office, są oferowane tylko w ich wersji detalicznej za pośrednictwem plików do pobrania.
 
-Klienci korzystający z licencjonowania zbiorowego mogą również pobierać oprogramowanie z centrum usługi licencjonowania zbiorowego (VLSC) w celu pobrania wersji produktów (i odpowiednich kluczy produktów).  Dostęp do VLSC jest zarządzany przez wyznaczonych administratorów w organizacji klienta.
+Klienci korzystający z licencjonowania zbiorowego mogą również pobierać oprogramowanie z Centrum usług licencjonowania zbiorowego (VLSC), aby uzyskać wersje licencjonowania zbiorowego produktów (i odpowiadające im klucze produktów).  Dostępem do usługi VLSC zarządzają wyznaczeni administratorzy w organizacji klienta.
 
-## <a name="daily-product-key-claim-limits"></a>Limity dziennych roszczeń dotyczących klucza produktu
-Firma Microsoft dokłada starań, aby chronić integralność programu Visual Studio subscriptions oraz wartość oprogramowania i korzyści, jakie mogą otrzymywać legalni Subskrybenci programu w odniesieniu do inwestycji. W ramach wsparcia tego zobowiązania firma Microsoft wdrożyła dzienne limity roszczeń dla subskrypcji programu Visual Studio. Limity dziennych roszczeń między kluczami ograniczają liczbę kluczy, które mogą być zgłaszane dziennie na subskrypcję.
+## <a name="daily-product-key-claim-limits"></a>Dzienne limity oświadczeń klucza produktu
+Firma Microsoft zobowiązuje się do ochrony integralności programu subskrypcji programu Visual Studio oraz wartości oprogramowania i korzyści, które legalni subskrybenci programu otrzymują za swoją inwestycję. Na poparcie tego zobowiązania firma Microsoft wdrożyła dzienne limity oświadczeń klucza dla subskrypcji programu Visual Studio. Dzienne limity oświadczeń klucza ograniczają liczbę kluczy, które mogą być żądane dziennie na subskrypcję.
 
-Dzienny limit liczby zgłoszeń to 10 kluczy dla wszystkich subskrypcji programu Visual Studio, w tym te oferowane przez MPN, BizSpark, MCT Software & Services i MCT, z wyjątkiem Visual Studio Professional (MPN), które mają dzienny limit roszczeń równy 7 kluczy.
+Dzienny limit oświadczeń klucza wynosi 10 kluczy dla wszystkich subskrypcji programu Visual Studio, w tym tych oferowanych za pośrednictwem mpn, BizSpark, MCT Software & Services i MCT, z wyjątkiem programu Visual Studio Professional (MPN), który ma dzienny limit oświadczeń klucza 7.
 
-Uwaga: ograniczenia dotyczące klucza mogą ulec zmianie. Sprawdź tutaj, aby uzyskać najbardziej aktualne limity.
+Uwaga: Limity roszczeń kluczy mogą ulec zmianie. Sprawdź tutaj najbardziej aktualne limity.
 
-Jeśli zatwierdzono maksymalną liczbę kluczy dostępnych dla subskrypcji w ciągu 24 godzin, zostanie wyświetlony komunikat o błędzie z informacją o tym, że limit został osiągnięty. Limit jest resetowany co 24 godziny, rozpoczynając od 12:01 czasu pacyficznego.
+Jeśli w ciągu 24 godzin odebrano maksymalną liczbę kluczy dostępnych dla subskrypcji, zostanie wyświetlony komunikat o błędzie informujący o osiągnięciu limitu. Limit resetuje się co 24 godziny, począwszy od godziny 12:01 czasu pacyficznego.
 
-Nasze badania pokazują, że większość subskrybentów jest objęta liczbą kluczy produktów uwzględnionych w ich subskrypcji. Jeśli potrzebujesz dodatkowych kluczy, możesz przesłać żądanie za pomocą Visual Studio Subscription [klienta](https://visualstudio.microsoft.com/subscriptions/support/) i będzie ono uznawane za zatwierdzenie w zależności od wielkości liter.
+Nasze badania pokazują, że większość subskrybentów jest objęta liczbą kluczy produktów zawartych w ich subskrypcji. Jeśli potrzebujesz dodatkowych kluczy, możesz przesłać żądanie za pośrednictwem [usługi klienta](https://visualstudio.microsoft.com/subscriptions/support/) subskrypcji programu Visual Studio i zostanie ono uznane za zatwierdzone indywidualnie dla każdego przypadku.
 
 ## <a name="accessing-product-keys"></a>Uzyskiwanie dostępu do kluczy produktu
-Musisz się zalogować do subskrypcji programu Visual Studio, aby wyświetlić klucze produktów. Poszczególne klucze produktu można znaleźć, wybierając niebieskie łącze **Uzyskaj klucz** dla określonego produktu na stronie [pliki do pobrania](https://my.visualstudio.com/downloads) , jak pokazano poniżej.  Jeśli istnieje wiele kluczy dla pojedynczego produktu, w kolumnie uwagi zostanie wyświetlona informacja, która ułatwia zidentyfikowanie, który klucz ma być używany.
+Aby wyświetlić klucze produktu, musisz zalogować się do subskrypcji programu Visual Studio. Poszczególne klucze produktu można znaleźć, wybierając niebieski link **Pobierz klucz** dla określonego produktu na stronie [Pliki do pobrania,](https://my.visualstudio.com/downloads) jak pokazano poniżej.  Jeśli dla pojedynczego produktu istnieje wiele kluczy, notatki będą wyświetlane w kolumnie Notatki do pobrania, aby ułatwić identyfikację klucza, który powinien być używany.
 
-Niektóre produkty łączą wiele wersji produktu w jeden plik do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
-Niektóre klucze są udostępniane automatycznie, takie jak klucze "static", których można użyć dowolną liczbę razy, ponieważ aktywacja nie jest wymagana. Inne klucze muszą zostać przejęte przez wybranie linku **Pobierz klucz** dla produktu.
+Niektóre produkty łączą wiele wersji produktu w jednym pliku do pobrania. W takich przypadkach wprowadzony klucz produktu określa, która wersja produktu jest zainstalowana.
+Niektóre klucze są dostarczane automatycznie, takie jak "statyczne" klucze, których można używać tyle razy, ile potrzeba, ponieważ aktywacja nie jest wymagana. Inne klucze należy zgłoś się, wybierając łącze **Pobierz klucz** dla produktu.
 > [!div class="mx-imgBorder"]
 > ![Pobierz klucz ze strony pobierania](_img/product-keys/download-get-key.png)
 
-Wszystkie klucze są również dostępne w agregacji na stronie [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) . Na tej stronie można znaleźć klucze statyczne, które działają dla wszystkich użytkowników produktu, uzyskać klucze niestandardowe tylko do użytku, sprawdzić stan limitów roszczeń i wyeksportować wszystkie klucze produktów. 
+Wszystkie klucze są również dostępne w zagregowane na stronie [Klucze produktu.](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) Na tej stronie można znaleźć klucze statyczne, które działają dla wszystkich użytkowników produktu, uzyskać klucze niestandardowe tylko do użytku, zobacz stan limitów oświadczeń klucza i wyeksportować wszystkie klucze produktu. 
 
 > [!div class="mx-imgBorder"]
-> ](_img/product-keys/product-keys-page.png) strony ![kluczy produktu
+> ![Strona kluczy produktu](_img/product-keys/product-keys-page.png)
 
-W zależności od produktu dostępne są różne typy kluczy.
+Dostępne są różne typy kluczy, w zależności od produktu.
 
 ### <a name="product-key-types"></a>Typy kluczy produktu
 
 |    Typ klucza           |    Opis                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest wymagany żaden klucz.                                                       |
-|    Sprzedaż detaliczna                     |    Klucze detaliczne umożliwiają używanie wielu aktywacji i są używane na potrzeby kompilacji detalicznej produktu. W wielu przypadkach dozwolone są 10 aktywacji na klucz, chociaż często są dozwolone na tym samym komputerze.                                                       |
-|    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu z tym samym kluczem. Wartości MAKs są zwykle używane z wersjami produktów licencjonowania zbiorowego. Zazwyczaj dla każdej subskrypcji jest dostarczany tylko jeden klucz MAK.    |
-|    Statyczny klucz aktywacji    |    Klucze aktywacji statycznej są udostępniane dla produktów, które nie wymagają aktywacji. Mogą one być używane dla dowolnej liczby instalacji.                                                                                                                  |
-|    Klucz niestandardowy                 |    Klucze niestandardowe udostępniają specjalne akcje lub informacje umożliwiające aktywację lub instalację produktu.                                                                                                                                                                |
-|    VA 1,0                     |    Są to wiele kluczy aktywacji, podobne do klucza MAK.                                                                                                                                                                                                 |
-|    Klucz OEM                    |    Są to oryginalne klucze producenta sprzętu, które umożliwiają wiele aktywacji.                                                                                                                                                                       |
-|    DreamSpark — klucz sprzedaży    |    Te klucze sprzedaży detalicznej są przeznaczone dla DreamSpark i umożliwiają jedną aktywację. Klucze detaliczne DreamSpark są wydawane w partiach i są przeznaczone głównie do użycia przez uczniów.                                                                                     |
-|    Klucz laboratorium DreamSpark         |    Te klucze użycia są przeznaczone dla programów DreamSpark i umożliwiają wiele aktywacji. Klucze Lab DreamSpark są przeznaczone do użytku w scenariuszach laboratorium komputerowego na Uniwersytecie.                                                                                       |
-|    Klucz MAK DreamSpark         |    Są to Klucze MAK dla klientów programu DreamSpark.                                                                                                                                                                                                  |
+|    Nie dotyczy                    |    Do zainstalowania tego produktu nie jest potrzebny żaden klucz.                                                       |
+|    Sprzedaż detaliczna                     |    Klucze sieci sprzedaży umożliwiają wiele aktywacji i są używane do kompilacji detalicznych produktu. W wielu przypadkach 10 aktywacji jest dozwolonych na klucz, ale często więcej jest dozwolonych na tym samym komputerze.                                                       |
+|    Aktywacja wielokrotna        |    Klucz aktywacji wielokrotnej (MAK) umożliwia aktywację wielu instalacji produktu za pomocą tego samego klucza. Maks są zwykle używane z wersjami licencjonowania zbiorowego produktów. Zazwyczaj tylko jeden klucz KLUCZA MAK jest dostarczany na subskrypcję.    |
+|    Statyczny klucz aktywacyjny    |    Statyczne klucze aktywacyjne są dostarczane dla produktów, które nie wymagają aktywacji. Mogą być używane do dowolnej liczby instalacji.                                                                                                                  |
+|    Klucz niestandardowy                 |    Klucze niestandardowe zapewniają specjalne akcje lub informacje, aby aktywować lub zainstalować produkt.                                                                                                                                                                |
+|    VA 1.0                     |    Są to wiele kluczy aktywacji, podobne do klucza MAK.                                                                                                                                                                                                 |
+|    Klucz OEM                    |    Są to klucze producenta oryginalnego sprzętu, które umożliwiają wielokrotne aktywacje.                                                                                                                                                                       |
+|    DreamSpark Klucz detaliczny    |    Te klucze sprzedaży detalicznej są dla DreamSpark i umożliwiają jedną aktywację. Klucze dreamspark retail są wydawane w partiach i są przeznaczone głównie do konsumpcji studentów.                                                                                     |
+|    Klucz laboratorium DreamSpark         |    Te klucze do użytku laboratoryjego są przeznaczone dla programów DreamSpark i umożliwiają wielokrotne aktywacje. DreamSpark Lab Keys są przeznaczone do użytku w scenariuszach laboratorium komputerowego uniwersytetu.                                                                                       |
+|    Klucz MAK DreamSpark         |    Są to klucze KLUCZYKÓW MAK dla klientów programu DreamSpark.                                                                                                                                                                                                  |
 |
 
-Klucz można przejąć ze strony pobierania produktu lub można wyszukać wymagany klucz na stronie [klucze produktu](https://my.visualstudio.com/productkeys) .
+Możesz ubiegać się o klucz ze strony pobierania produktu lub wyszukać klucz, którego potrzebujesz na stronie [Klucze produktu.](https://my.visualstudio.com/productkeys)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Aby zgłosić klucze, odwiedź https://my.visualstudio.com/productkeys.  
-Dowiedz się [, jak znaleźć i zgłosić klucze](find-keys.md).
-Możesz również zapoznać się z tematami dotyczącymi używania kluczy produktów do obsługi [pokazów internetowych](internet-demos.md).
+Aby odebrać klucze, odwiedź stronę https://my.visualstudio.com/productkeys.  
+Dowiedz się, jak [znaleźć i odebrać klucze](find-keys.md).
+Możesz również dowiedzieć się więcej o używaniu kluczy produktów do obsługi [pokazów internetowych.](internet-demos.md)

@@ -1,5 +1,5 @@
 ---
-title: Porównywanie plików danych wydajności | Microsoft Docs
+title: Porównywanie plików danych o wydajności | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,25 +13,25 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777860"
 ---
 # <a name="compare-performance-data-files"></a>Porównywanie plików danych dotyczących wydajności
 
-Funkcja porównywania plików danych narzędzia profilowania umożliwia wybranie dwóch plików raportu (. */or VSP* . *vsps*) pliki i generują raport pokazujący różnice, regresje wydajności i ulepszenia, które wystąpiły z jednej sesji profilowania do drugiej.
+Funkcja porównywania plików danych Narzędzi profilowania umożliwia wybranie dwóch plików raportu (.* vsp* /lub . *vsps*) i wygenerować raport, który pokazuje różnice, regresji wydajności i ulepszenia, które wystąpiły z jednej sesji profilowania do drugiej.
 
-Raport porównania plików danych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] narzędzia profilowania porównuje wyniki analizy w jednym pliku danych profilowania do wyników analizy linii bazowej w innym pliku danych. Oba pliki danych muszą zostać wygenerowane za pomocą tej samej metody profilowania. Raport porównania analizowane jest zapisywany jako. plik *vsps* .
+Raport porównawczy plików [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] danych z narzędzi profilowania porównuje wyniki analizy w jednym pliku danych profilowania z wynikami analizy linii bazowej w innym pliku danych. Oba pliki danych muszą zostać wygenerowane przy użyciu tej samej metody profilowania. Raport analizowanych porównań jest zapisywany jako plik . *vsps.*
 
-Widok raportu porównawczego przedstawia widok tabeli zmienionych danych. W tabeli przedstawiono różnice lub zmiany z linii bazowej. Różnica jest obliczana przez określenie różnicy między starą wartością, wartością bazową i wartością wyniku z nowej analizy.
+W widoku raportu porównawczego przedstawiono widok tabeli zmienionych danych. Tabela przedstawia delta lub zmiany od linii bazowej. Delta jest obliczana przez określenie różnicy między starą wartością, wartością bazową i wartością wyniku z nowej analizy.
 
-Porównania danych profilera mogą opierać się na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.
+Porównania danych profilera mogą być oparte na funkcjach w kodzie, modułach w aplikacji, wierszach, wskaźnikach instrukcji (IP) i typach.
 
-Profilowanie danych, które są dostępne do porównania, zawiera informacje, które są wyświetlane w kolumnach. Aby uzyskać definicje tych nazw kolumn, zobacz [widoki raportów wydajności](../profiling/performance-report-views.md).
+Dane profilowania, które są dostępne do porównania, obejmują informacje wyświetlane w kolumnach. Aby zapoznać się z definicjami tych nazw kolumn, zobacz [Widoki raportu wydajności](../profiling/performance-report-views.md).
 
-Próg można ustawić, aby zmniejszyć szum i odfiltrować dane w widoku tabeli porównawczej wierszy, które nie uległy zmianie o określoną wartość.
+Próg można ustawić, aby zmniejszyć hałas i odfiltrować wszystkie dane w widoku tabeli porównawczej wierszy, które nie zostały zmienione o określoną kwotę.
 
 ## <a name="in-this-section"></a>W tej sekcji
 

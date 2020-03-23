@@ -1,5 +1,5 @@
 ---
-title: Krok 2. Uruchamianie aplikacji Przeglądarka obrazów
+title: 'Krok 2: Uruchamianie aplikacji przeglądarki obrazów'
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -11,59 +11,59 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579404"
 ---
-# <a name="step-2-run-your-picture-viewer-app"></a>Krok 2. Uruchamianie aplikacji Przeglądarka obrazów
+# <a name="step-2-run-your-picture-viewer-app"></a>Krok 2: Uruchamianie aplikacji przeglądarki obrazów
 
-Podczas tworzenia projektu aplikacji Windows Forms, w rzeczywistości kompilujesz program, który jest uruchamiany. W tym samouczku aplikacja do wyświetlania obrazów nie wykonuje jeszcze&mdash;, mimo że będzie to możliwe. Na razie wyświetla puste okno, które wyświetla **formularz Form1** na pasku tytułu.
+Podczas tworzenia projektu aplikacji Windows Forms, faktycznie utworzyć program, który jest uruchamiany. W tym samouczku aplikacja do podglądu&mdash;zdjęć nie robi jeszcze wiele, chociaż tak będzie. Na razie wyświetla puste okno, które pokazuje **Form1** na pasku tytułu.
 
 Oto jak uruchomić aplikację. 
 
 1. Wybierz jedną z następujących metod:
 
-    - Wybierz klawisz **F5** .
+    - Wybierz klawisz **F5.**
 
-    - Na pasku menu wybierz **debuguj** > **Rozpocznij debugowanie**.
+    - Na pasku menu wybierz polecenie **Debugowanie** > **start debugowania**.
 
-    - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie** , który jest wyświetlany w następujący sposób:
+    - Na pasku narzędzi wybierz przycisk **Rozpocznij debugowanie,** który jest wyświetlany w następujący sposób:
 
-      przycisk paska narzędzi ![rozpoczęcia debugowania](../ide/media/express_icondebug.png)<br>
-      *Przycisk paska narzędzi* ***Rozpocznij debugowanie***
+      ![Przycisk Uruchamianie paska narzędzi Debugowania](../ide/media/express_icondebug.png)<br>
+      ***Przycisk Uruchamianie paska narzędzi Debugowania*** *toolbar button*
 
-1. Program Visual Studio uruchamia aplikację i zostanie wyświetlone okno o nazwie **Form1** . Poniższy zrzut ekranu przedstawia utworzoną aplikację. Aplikacja jest uruchomiona i wkrótce zostanie dodana do niej.
+1. Visual Studio uruchamia aplikację i pojawi się okno o nazwie **Form1.** Poniższy zrzut ekranu przedstawia aplikację, którą właśnie zbudowałeś. Aplikacja jest uruchomiona, a wkrótce dodasz do niej.
 
-     ![Windows Forms aplikacji](../ide/media/express_firstrun.png)<br>
-***Aplikacja Windows Forms*** *uruchomiona*
+     ![Aplikacja Windows Forms uruchomiona](../ide/media/express_firstrun.png)<br>
+***Aplikacja Windows Forms***, *uruchomiona*
 
-1. Wróć do zintegrowanego środowiska programistycznego (IDE) programu Visual Studio, a następnie spójrz na nowy pasek narzędzi. Po uruchomieniu aplikacji na pasku narzędzi są wyświetlane dodatkowe przyciski. Te przyciski umożliwiają wykonywanie takich czynności, jak zatrzymywanie i uruchamianie aplikacji oraz śledzenie wszelkich błędów (usterek), które może on mieć. Na potrzeby tego przykładu używamy go do uruchamiania i zatrzymywania aplikacji.
+1. Wróć do zintegrowanego środowiska programistycznego programu Visual Studio (IDE), a następnie przyjrzyj się nowemu pasku narzędzi. Dodatkowe przyciski są wyświetlane na pasku narzędzi po uruchomieniu aplikacji. Te przyciski umożliwiają takie czynności, jak zatrzymanie i uruchomienie aplikacji oraz pomoc w śledzeniu ewentualnych błędów.These buttons let you do things like stop and start your app, and help you track down any errors (bugs) it may have. W tym przykładzie używamy go do uruchamiania i zatrzymywania aplikacji.
 
-     ![pasku narzędzi debugowania](../ide/media/express_debugtoolbar.png)<br>
-*Pasek narzędzi* debugowania
+     ![Pasek narzędzi debugowania](../ide/media/express_debugtoolbar.png)<br>
+*Pasek narzędzi* ***debugowania***
 
 1. Aby zatrzymać aplikację, użyj jednej z następujących metod:
 
-    - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie** .
+    - Na pasku narzędzi wybierz przycisk **Zatrzymaj debugowanie.**
 
-    - Na pasku menu wybierz **debuguj** > **Zatrzymaj debugowanie**.
+    - Na pasku menu wybierz pozycję **Debugowanie** > **zatrzymaj debugowanie**.
 
     - Użyj klawiatury i naciśnij klawisz **Shift**+**F5**.
 
-    - Wybierz przycisk **X** w górnym rogu okna **Form1** .
+    - Wybierz przycisk **X** w górnym rogu okna **Form1.**
 
     > [!NOTE]
-    > Po uruchomieniu aplikacji z wnętrza IDE, nazywa się to debugowaniem, ponieważ zazwyczaj należy to zrobić, aby zlokalizować i naprawić usterki (błędy) w aplikacji. Mimo że ta aplikacja jest mała i jeszcze nie działa, nadal jest rzeczywistym programem. Wykonaj tę samą procedurę, aby uruchamiać i debugować inne programy. Aby dowiedzieć się więcej o debugowaniu, zobacz [pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
+    > Po uruchomieniu aplikacji z wewnątrz IDE, to się nazywa debugowanie, ponieważ zazwyczaj to zrobić, aby zlokalizować i naprawić błędy (błędy) w aplikacji. Chociaż ta aplikacja jest mała i nie robi jeszcze wiele, nadal jest to prawdziwy program. Należy wykonać tę samą procedurę, aby uruchomić i debugować inne programy. Aby dowiedzieć się więcej na temat debugowania, zobacz [Pierwsze spojrzenie na debuger](../debugger/debugger-feature-tour.md).
 
 ## <a name="next-steps"></a>Następne kroki
 
-* Aby przejść do następnego kroku samouczka, zobacz **[krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md)** .
+* Aby przejść do następnego kroku samouczka, zobacz **[Krok 3: Ustawianie właściwości formularza](../ide/step-3-set-your-form-properties.md)**.
 
-* Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 1. Tworzenie projektu aplikacji Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+* Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 1: Tworzenie projektu aplikacji Formularze systemu Windows](../ide/step-1-create-a-windows-forms-application-project.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-* [Samouczek 2: Tworzenie kwizu matematycznego z limitem czasu](tutorial-2-create-a-timed-math-quiz.md)
-* [Samouczek 3: Tworzenie gry w dopasowywanie](tutorial-3-create-a-matching-game.md)
+* [Samouczek 2: Tworzenie quizu matematycznego z czasem](tutorial-2-create-a-timed-math-quiz.md)
+* [samouczek 3: Tworzenie pasującej gry](tutorial-3-create-a-matching-game.md)

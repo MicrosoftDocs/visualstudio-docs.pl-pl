@@ -1,5 +1,5 @@
 ---
-title: Krok 6. Dodawanie czasomierza
+title: 'Krok 6: Dodaj timer'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/25/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "77579314"
 ---
-# <a name="step-6-add-a-timer"></a>Krok 6. Dodawanie czasomierza
-Następnie Dodaj kontrolkę <xref:System.Windows.Forms.Timer> do odpowiedniej gry. Czasomierz czeka określoną liczbę milisekund, a następnie uruchamia zdarzenie, nazywane *znacznikiem*. Jest to przydatne dla rozpoczęcia czynności lub regularnego powtarzania czynności. W tym przypadku, będziesz używał czasomierza, aby umożliwić graczom wybór dwóch ikon, a jeśli ikony nie będą pasowały, ukryć te dwie ikony po krótkiej chwili.
+# <a name="step-6-add-a-timer"></a>Krok 6: Dodaj timer
+Następnie należy dodać <xref:System.Windows.Forms.Timer> formant do pasującej gry. Czasomierz czeka określoną liczbę milisekund, a następnie uruchamia zdarzenie, określane jako *znacznik*. Jest to przydatne dla rozpoczęcia czynności lub regularnego powtarzania czynności. W tym przypadku, będziesz używał czasomierza, aby umożliwić graczom wybór dwóch ikon, a jeśli ikony nie będą pasowały, ukryć te dwie ikony po krótkiej chwili.
 
 ## <a name="to-add-a-timer"></a>Aby dodać czasomierz
 
-1. Z przybornika w **Projektant formularzy systemu Windows**wybierz **czasomierz** (w kategorii **składniki** ), a następnie wybierz klawisz **Enter** lub kliknij dwukrotnie czasomierz, aby dodać kontrolkę czasomierza do formularza. Ikona czasomierza o nazwie **Timer1**powinna pojawić się w miejscu poniżej formularza, jak pokazano na poniższej ilustracji.
+1. W przyborniku w **programie Windows Forms Designer**wybierz pozycję **Timer** (w kategorii **Składniki),** a następnie wybierz klawisz **Enter** lub kliknij dwukrotnie czasomierz, aby dodać kontrolkę czasomierza do formularza. Ikona timera o nazwie **Timer1**powinna pojawić się w spacji pod formularzem, jak pokazano na poniższej ilustracji.
 
      ![Czasomierz](../ide/media/express_timer.png)<br/>
 ***Czasomierz***
@@ -33,29 +33,29 @@ Następnie Dodaj kontrolkę <xref:System.Windows.Forms.Timer> do odpowiedniej gr
     > [!NOTE]
     > Jeśli przybornik jest pusty, należy wybrać Projektant formularzy, a nie kod związany z formularzem, przed otwarciem przybornika.
 
-2. Wybierz ikonę **Timer1** , aby wybrać czasomierz. W oknie **Właściwości** Przełącz się z wyświetlania zdarzeń, aby wyświetlić właściwości. Następnie ustaw właściwość **Interwał** czasomierza na **750**, ale pozostaw Właściwość **Enabled** ustawioną na **wartość false**. Właściwość **Interval** określa czasomierz czas oczekiwania między *taktami*lub wyzwala zdarzenie <xref:System.Windows.Forms.Timer.Tick>. Wartość 750 mówi czasomierzowi, aby czekał trzy czwarte sekundy (750 milisekund), zanim uruchomi zdarzenie Taktu. Wywołasz metodę <xref:System.Windows.Forms.Timer.Start>, aby uruchomić czasomierz dopiero po wybraniu drugiej etykiety przez odtwarzacz.
+2. Wybierz ikonę **Timer1,** aby wybrać czasomierz. W oknie **Właściwości** przełącz się z wyświetlania zdarzeń na wyświetlanie właściwości. Następnie ustaw właściwość **Interval czasomierza** na **750**, ale pozostaw jej właściwość **Enabled** ustawioną na **Fałsz**. **Interval** Właściwość informuje czasomierz, jak długo czekać między *znacznikami*lub kiedy wyzwala jego <xref:System.Windows.Forms.Timer.Tick> zdarzenia. Wartość 750 mówi czasomierzowi, aby czekał trzy czwarte sekundy (750 milisekund), zanim uruchomi zdarzenie Taktu. Wywołasz metodę, <xref:System.Windows.Forms.Timer.Start> aby uruchomić czasomierz tylko wtedy, gdy gracz wybierze drugą etykietę.
 
-3. Wybierz ikonę sterowania czasomierzem w **Projektant formularzy systemu Windows** a następnie wybierz klawisz **Enter** lub kliknij dwukrotnie czasomierz, aby dodać pustą procedurę obsługi zdarzeń taktu. Zastąp kod następującym kodem lub ręcznie wprowadź następujący kod do programu obsługi zdarzeń.
+3. Wybierz ikonę formantu czasomierza w **projektancie formularzy windowsowych,** a następnie wybierz klawisz **Enter** lub kliknij dwukrotnie czasomierz, aby dodać pusty program obsługi zdarzeń Tick. Zastąp kod następującym kodem lub ręcznie wprowadź następujący kod do programu obsługi zdarzeń.
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
       > [!IMPORTANT]
-      > Użyj kontrolki język programowania w prawym górnym rogu tej strony, aby wyświetlić fragment C# kodu lub Visual Basic fragment kodu.<br><br>Kontrolka języka programowania ![dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+      > Użyj formantu języka programowania w prawym górnym rogu tej strony, aby wyświetlić fragment kodu języka C# lub fragment kodu języka Visual Basic.<br><br>![Sterowanie językiem programowania dla Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-     Procedura obsługi zdarzeń taktu składa się z trzech rzeczy: najpierw sprawdza, czy czasomierz nie jest uruchomiony, wywołując metodę <xref:System.Windows.Forms.Timer.Stop>. Następnie używa dwóch zmiennych referencyjnych, `firstClicked` i `secondClicked`, aby ikony dwóch etykiet, które gracz wybrał niewidoczny. Na koniec resetuje `firstClicked` i `secondClicked` zmiennych odwołania, aby `null` w C# i `Nothing` w Visual Basic. Ten krok jest ważny, ponieważ w ten sposób program się resetuje. Teraz nie śledzi żadnych formantów <xref:System.Windows.Forms.Label> i jest gotowy do ponownego wybrania etykiety przez odtwarzacz.
+     Program obsługi zdarzeń Tick wykonuje trzy czynności: Najpierw upewnia się, <xref:System.Windows.Forms.Timer.Stop> że czasomierz nie jest uruchomiony przez wywołanie metody. Następnie używa dwóch zmiennych `firstClicked` referencyjnych i `secondClicked`, aby ikony dwóch etykiet, które gracz wybrał ponownie niewidoczne. Na koniec resetuje `firstClicked` i `secondClicked` odwołań `null` zmiennych w `Nothing` języku C# i visual basic. Ten krok jest ważny, ponieważ w ten sposób program się resetuje. Teraz nie śledzi żadnych <xref:System.Windows.Forms.Label> kontroli i jest gotowy, aby gracz ponownie wybrał etykietę.
 
     > [!NOTE]
-    > Obiekt Timer ma metodę `Start()`, która uruchamia czasomierz, i metodę `Stop()`, która go zatrzyma. Gdy właściwość **Enabled** czasomierza zostanie ustawiona na **wartość true** w oknie **Właściwości** , zaczyna się ona od razu po rozpoczęciu programu. Jednak po ustawieniu na **wartość false**nie zaczyna się taktować do momentu wywołania metody `Start()`. Zwykle czasomierz wyzwala zdarzenia taktu w czasie i ponownie za pomocą właściwości **Interval** , aby określić liczbę milisekund oczekiwania między taktami. Można zauważyć, jak Metoda `Stop()` czasomierza jest wywoływana wewnątrz zdarzenia takt. Powoduje to przełączenie czasomierza do *jednego trybu zastrzelonego*, co oznacza, że gdy metoda `Start()` jest wywoływana, czeka na określony interwał, wyzwala zdarzenie pojedynczego taktu, a następnie kończy działanie.
+    > Obiekt Timer ma `Start()` metodę, która uruchamia czasomierz i `Stop()` metodę, która go zatrzymuje. Po ustawieniu timera **Enabled** właściwość **true** w oknie **Właściwości,** zaczyna tykać natychmiast po rozpoczęciu programu. Ale po pozostawieniu go ustawionego na **False**, `Start()` nie zaczyna tykać, dopóki jego metoda nie zostanie wywołana. Zwykle czasomierz uruchamia jego Tick zdarzenia w kółko, za pomocą **Interval** właściwości, aby określić, ile milisekund czekać między znacznikami. Być może zauważyłeś, jak metoda `Stop()` czasomierza jest wywoływana wewnątrz Tick zdarzenia. To stawia timer w *trybie jednego strzału,* co oznacza, że gdy `Start()` metoda jest wywoływana, czeka na określony interwał, wyzwala pojedyncze zdarzenie Tick, a następnie zatrzymuje.
 
-4. Aby wyświetlić nowy czasomierz w akcji, przejdź do edytora kodu i Dodaj następujący kod na górze i u dołu metody obsługi zdarzeń `label_Click()`. (Dodawana jest instrukcja `if` do góry i trzy instrukcje do dołu; reszta metody pozostaje taka sama.)
+4. Aby wyświetlić nowy czasomierz w akcji, przejdź do edytora kodu i `label_Click()` dodaj następujący kod do górnej i dolnej części metody obsługi zdarzeń. (Dodajesz instrukcję `if` u góry i trzy instrukcje na dole; reszta metody pozostaje taka sama).)
 
      [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
      [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
 
-     Kod w górnej części metody sprawdza, czy czasomierz został uruchomiony, sprawdzając wartość właściwości **włączone** . Dzięki temu, jeśli gracz wybierze pierwszą i drugą kontrolkę etykieta i rozpocznie się uruchamianie czasomierza, wybranie trzeciej etykiety nie spowoduje nic więcej.
+     Kod w górnej części metody sprawdza, czy czasomierz został uruchomiony przez sprawdzenie wartości **Enabled** właściwości. W ten sposób, jeśli gracz wybierze pierwszą i drugą kontrolkę Label i rozpocznie się timer, wybranie trzeciej etykiety nic nie zrobi.
 
-     Kod w dolnej części metody ustawia zmienną odniesienia `secondClicked`, aby śledzić drugą kontrolkę etykieta, którą wybiera gracz, a następnie ustawia kolor ikony etykiety na czarny, aby był widoczny. Następnie uruchamia czasomierz w trybie jednego zadziałania, tak że czeka on 750 milisekund, a następnie uruchamia pojedyncze zdarzenie Taktu. Procedura obsługi zdarzeń taktu czasomierza ukrywa dwie ikony i resetuje `firstClicked` i `secondClicked` zmiennych odwołania, dzięki czemu formularz będzie gotowy do wybrania innej pary ikon.
+     Kod w dolnej części metody `secondClicked` ustawia zmienną odniesienia do śledzenia drugiego Label kontroli, że gracz wybrał, a następnie ustawia kolor ikony tej etykiety na czarny, aby było widoczne. Następnie uruchamia czasomierz w trybie jednego zadziałania, tak że czeka on 750 milisekund, a następnie uruchamia pojedyncze zdarzenie Taktu. Program obsługi zdarzeń tick czasomierza ukrywa dwie ikony i resetuje zmienne `firstClicked` i `secondClicked` odwołania, dzięki czemu formularz jest gotowy do odtwarzacza, aby wybrać inną parę ikon.
 
 5. Zapisz i uruchom program. Wybierz ikonę, stanie się widoczna.
 
@@ -63,6 +63,6 @@ Następnie Dodaj kontrolkę <xref:System.Windows.Forms.Timer> do odpowiedniej gr
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 
-- Aby przejść do następnego kroku samouczka, zobacz **[krok 7. Zachowaj widoczne pary](../ide/step-7-keep-pairs-visible.md)** .
+- Aby przejść do następnego kroku samouczka, zobacz **[Krok 7: Zachowaj widoczne pary](../ide/step-7-keep-pairs-visible.md)**.
 
-- Aby powrócić do poprzedniego kroku samouczka, zobacz [krok 5. Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).
+- Aby powrócić do poprzedniego kroku samouczka, zobacz [Krok 5: Dodawanie odwołań do etykiet](../ide/step-5-add-label-references.md).

@@ -1,55 +1,55 @@
 ---
-title: Korzyści z platformy Azure DevOps dla subskrybentów programu Visual Studio | Microsoft Docs
+title: Korzyści z usługi Azure DevOps dla subskrybentów programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
-description: Dowiedz się, jak korzystać z usługi Azure DevOps jako subskrybenta programu Visual Studio.
+description: Dowiedz się, jak można używać usługi Azure DevOps jako subskrybenta programu Visual Studio.
 ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408867"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "79303310"
 ---
-# <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści z platformy Azure DevOps dla subskrybentów programu Visual Studio
-Jako aktywną subskrypcję programu Visual Studio możesz korzystać z szeregu funkcji platformy Azure DevOps, które są dostępne w ramach subskrypcji jako korzyści. Będzie można korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy została utworzona organizacja, czy dodana przez kogoś innego.
+# <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści dotyczące usługi Azure DevOps dla subskrybentów programu Visual Studio
+Jako aktywny subskrybent programu Visual Studio można użyć szeregu funkcji w usłudze Azure DevOps, które są dołączone do subskrypcji jako korzyści. Te same funkcje będą mogły korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy organizacja została utworzona, czy została dodana przez inną osobę.
 
 ## <a name="sign-in"></a>Logowanie
-Gdy zalogujesz się do usługi Azure DevOps przy użyciu tożsamości użytej do aktywowania subskrypcji programu Visual Studio lub [alternatywnej tożsamości](vs-alternate-identity.md), automatycznie rozpoznajemy to.  W ten sposób można także dodać konto służbowe (używane podczas logowania do programu Visual Studio, pakietu Office 365 lub sieci firmowej), co pozwala na dostęp do usługi Azure DevOps przy użyciu konta osobistego i konta służbowego.
+Po zalogowaniu się do usługi Azure DevOps przy użyciu tożsamości, która została użyta do aktywacji subskrypcji programu Visual Studio lub [alternatywnej tożsamości,](vs-alternate-identity.md)rozpoznajemy to automatycznie.  W ten sposób można również dodać konto służbowe (którego używasz podczas logowania do programu Visual Studio, usługi Office 365 lub sieci firmowej lub szkolnej), umożliwiając dostęp do usługi Azure DevOps przy użyciu zarówno konta osobistego, jak i konta służbowego.
 
-[Zarejestruj się, aby skorzystać z bezpłatnej organizacji usługi Azure DevOps](https://visualstudio.microsoft.com/team-services/)
+[Zarejestruj się w bezpłatnej organizacji Azure DevOps](https://visualstudio.microsoft.com/team-services/)
 
-## <a name="eligibility"></a>Kryteria
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+## <a name="eligibility"></a>Kwalifikowalności
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnej?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa, miesięczna chmura)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup>  | Azure Boards & repozytoria (podstawowe), Azure Test Plans, Azure Pipelines (samodzielny)       |  Yes          |
-| Visual Studio Enterprise z usługą GitHub Enterprise   | Licencja| Azure Boards & repozytoria (podstawowe), Azure Test Plans, Azure Pipelines (samodzielny)       |  Yes          |
-| Visual Studio Professional (standardowa, miesięczna chmura) | VL, Azure, Retail                                        | Repozytoria & Azure Boards (podstawowa)                                                            |  Yes          |
-| Visual Studio Professional z usługą GitHub Enterprise | Licencja| Repozytoria & Azure Boards (podstawowa)                                                            |  Yes          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoria (podstawowe), Azure Test Plans                                              |  Yes          |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Azure Boards & repozytoria (podstawowe), Azure Test Plans                                              |  Yes          |
+| Visual Studio Enterprise (standardowa, miesięczna chmura)   | VL, Azure, Retail, wybrane NFR<sup>1</sup>  | Tablice platformy Azure & repozytorium (podstawowe), plany testów platformy Azure, potoki platformy Azure (hostowane samodzielnie)       |  Tak          |
+| Visual Studio Enterprise z gitHub Enterprise   | Vl| Tablice platformy Azure & repozytorium (podstawowe), plany testów platformy Azure, potoki platformy Azure (hostowane samodzielnie)       |  Tak          |
+| Visual Studio Professional (standardowa, miesięczna chmura) | VL, Azure, Handel detaliczny                                        | Tablice platformy Azure & repozytorium (podstawowe)                                                            |  Tak          |
+| Visual Studio Professional z gitHub Enterprise | Vl| Tablice platformy Azure & repozytorium (podstawowe)                                                            |  Tak          |
+| Visual Studio Test Professional (standard)                         | VL, Handel detaliczny                                              | Tablice platformy Azure & repo (podstawowe), plany testów platformy Azure                                              |  Tak          |
+| Platformy MSDN (standard)                                          | VL, Handel detaliczny                                              | Tablice platformy Azure & repo (podstawowe), plany testów platformy Azure                                              |  Tak          |
 ||
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), najbardziej cennych profesjonalistów (MVP), regionalnego dyrektora (RD), Visual Studio Industry partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, równoważnik. Wyklucza: MCT oprogramowania & Services, Wyobraź sobie.*
+<sup>1</sup>  *Obejmuje: Nie dla odsprzedaży (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer, FTE. Wykluczenia: MCT Software & Services, Imagine.*
 
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już rocznych subskrypcji programu Visual Studio Professional i rocznych subskrypcji programu Visual Studio Enterprise w subskrypcjach w chmurze. Nie będzie żadnych zmian w istniejącym doświadczeniu klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) aby przejść do eksplorowania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie przypisane do Ciebie subskrypcje.
-Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie przypisane do Ciebie subskrypcje.
+Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, platformy Azure DevOps lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Zasoby pomocnicze
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, usługi Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Dokumentacja usługi Azure DevOps](/azure/devops/).
 
 ## <a name="next-steps"></a>Następne kroki
-Dowiedz się więcej o funkcjach usługi Azure DevOps:
-- [Repozytoria & Azure Boards (podstawowa)](https://azure.microsoft.com/services/devops/compare-features/)
+Dowiedz się więcej o funkcjach programu Azure DevOps:
+- [Tablice platformy Azure & repozytorium (podstawowe)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-Dowiedz się, jak aktywować środki na korzystanie z [usługi Azure DevTest](vs-azure.md).
+Dowiedz się, jak aktywować [indywidualny kredyt usługi Azure DevTest.](vs-azure.md)

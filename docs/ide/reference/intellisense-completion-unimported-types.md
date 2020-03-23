@@ -1,43 +1,46 @@
 ---
-title: Uzupełnianie przez funkcję IntelliSense niezaimportowanych typów
-description: Jak używać uzupełnianie przez funkcję IntelliSense dla typów, które jeszcze nie zaimportowano jeszcze z `using` dyrektywy.
-ms.date: 06/20/2019
+title: Zakończenie intellisense dla typów nieprzekażonych
+description: Jak używać intellisense zakończenia dla typów, które nie `using` zostały jeszcze zaimportowane z dyrektywą.
+ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f313cfa8520e4c13b310be0f9223466c529ca18f
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 04ea7c94d3dd24c1a511544adca9bfac3370cd71
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67313207"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094260"
 ---
-# <a name="intellisense-completion-for-unimported-types"></a>Uzupełnianie przez funkcję IntelliSense niezaimportowanych typów
+# <a name="intellisense-completion-for-unimported-types"></a>Zakończenie intellisense dla typów nieprzekażonych
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
-**Co:** Funkcja IntelliSense podaje uzupełniania niezaimportowanych typów.
+- Visual Basic
 
-**Kiedy:** Aby dodać typ, który ma już zależności w projekcie, ale instrukcja importu nie został jeszcze dodany do pliku. 
+**Co:** IntelliSense zapewnia ukończenie dla typów nieprzekażonych.
 
-**Dlaczego:** Nie trzeba ręcznie dodaj instrukcję importu do pliku.
+**Kiedy:** Chcesz dodać typ, który ma już zależność w projekcie, ale instrukcja importu nie została jeszcze dodana do pliku. 
 
-## <a name="how-to"></a>Instrukcje
+**Dlaczego?** Nie trzeba ręcznie dodawać instrukcji importu do pliku.
 
-1. Po rozpoczęciu przy użyciu typu, który ma zależność w projekcie, IntelliSense zapewni sugestie.
-2. Naciśnij klawisz **kartę**. 
+## <a name="how-to"></a>Porady
 
-   Instrukcja importu zostaną dodane do pliku.
+1. Po uruchomieniu przy użyciu typu, który ma zależność w projekcie, IntelliSense daje sugestie.
+2. Naciśnij **klawisz Tab**. 
 
-   ![Uzupełnianie przez funkcję IntelliSense niezaimportowanych typów](media/intellisense-completion-unimported-types.png)
+   Instrukcja importu zostanie dodana do pliku.
 
-## <a name="see-also"></a>Zobacz także
+   ![Zakończenie intellisense dla typów nieprzekażonych](media/intellisense-completion-unimported-types.png)
+
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)

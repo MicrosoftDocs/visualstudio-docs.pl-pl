@@ -1,5 +1,5 @@
 ---
-title: Najlepsze rozwiązania dla programu MSBuild | Microsoft Docs
+title: MsBuild Najlepsze praktyki | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263152"
 ---
-# <a name="msbuild-best-practices"></a>Najlepsze rozwiązania w programie MSBuild
+# <a name="msbuild-best-practices"></a>MSBuild najlepsze rozwiązania
 
-Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania skryptów programu MSBuild:
+Zaleca się następujące najlepsze rozwiązania dotyczące pisania skryptów MSBuild:
 
-- Domyślne wartości właściwości są najlepiej obsługiwane przy użyciu atrybutu `Condition`, a nie poprzez deklarowanie właściwości, której wartość domyślna może zostać przesłonięta w wierszu polecenia. Na przykład użyj
+- Domyślne wartości właściwości najlepiej obsługiwać przy użyciu atrybutu, `Condition` a nie przez deklarowanie właściwości, której wartość domyślna może zostać zastąpiona w wierszu polecenia. Na przykład, użyj
 
 ```xml
 <MyProperty Condition="'$(MyProperty)' == ''">
@@ -30,7 +30,7 @@ Zalecamy stosowanie następujących najlepszych rozwiązań dotyczących pisania
 </MyProperty>
 ```
 
-- Ogólnie rzecz biorąc, Unikaj używania symboli wieloznacznych podczas zaznaczania elementów. Zamiast tego należy jawnie określić pliki. Jest to spowodowane tym, że w większości typów projektów MSBuild rozszerza symbole wieloznaczne w różnych godzinach, na przykład podczas dodawania lub usuwania elementów, co może prowadzić do nieoczekiwanego zachowania. Wyjątkiem jest w projektach w stylu zestaw .NET Core SDK, które poprawnie przetwarzają symbole wieloznaczne.
+- Ogólnie rzecz biorąc, należy unikać używania symboli wieloznacznych podczas wybierania elementów. Zamiast tego należy określić pliki jawnie. Dzieje się tak, ponieważ w większości typów projektów MSBuild rozszerza symbole wieloznaczne w różnym czasie, na przykład podczas dodawania lub usuwania elementów, co może prowadzić do nieoczekiwanego zachowania. Wyjątek od tego jest w .NET Core SDK stylu projektów, które przetwarzają symbole wieloznaczne poprawnie.
 
 ## <a name="see-also"></a>Zobacz też
 

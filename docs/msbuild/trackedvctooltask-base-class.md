@@ -1,5 +1,5 @@
 ---
-title: Klasa TrackedVCToolTask | Microsoft Docs
+title: TrackedVCToolTask Klasa | Dokumenty firmy Microsoft
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -12,43 +12,43 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75594932"
 ---
-# <a name="trackedvctooltask-base-class"></a>Klasa bazowa TrackedVCToolTask
+# <a name="trackedvctooltask-base-class"></a>TrackedVCToolTask klasa podstawowa
 
-Wiele zadań ostatecznie dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task> i klasy [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) . Ta klasa dodaje kilka parametrów do zadań, które pochodzą od [VCToolTask](../msbuild/vctooltask-base-class.md). Te parametry są wymienione w tym dokumencie.
+Wiele zadań ostatecznie <xref:Microsoft.Build.Utilities.Task> dziedziczyć z klasy i [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) klasy. Ta klasa dodaje kilka parametrów do zadań, które pochodzą z [VCToolTask](../msbuild/vctooltask-base-class.md). Te parametry są wymienione w tym dokumencie.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry klasy bazowej **TrackedVCToolTask** .
+W poniższej tabeli opisano parametry klasy podstawowej **TrackedVCToolTask.**
 
 |Parametr|Opis|
 |---------------|-----------------|
-|**DeleteOutputOnExecute**|Opcjonalny parametr **bool** .|
-|**EnableExecuteTool**|Opcjonalny parametr **bool** .|
-|**ExcludedInputPaths**|Opcjonalny parametr **ITaskItem []** .|
-|**MinimalRebuildFromTracking**|Opcjonalny parametr **bool** .|
-|**PathOverride**|Opcjonalny parametr **ciągu** .|
-|**PostBuildTrackingCleanup**|Opcjonalny parametr **bool** .|
-|**RootSource**|Opcjonalny parametr **ciągu** .|
-|**SkippedExecution**|Opcjonalny parametr wyjściowy **bool** .|
-|**SourcesCompiled**|Opcjonalny parametr wyjściowy **ITaskItem []** .|
-|**TLogCommandFile**|Opcjonalny parametr **ITaskItem** .|
-|**TLogReadFiles**|Opcjonalny parametr **ITaskItem []** .|
-|**TLogWriteFiles**|Opcjonalny parametr **ITaskItem []** .|
-|**ToolArchitecture**|Opcjonalny parametr **ciągu** .|
-|**TrackCommandLines**|Opcjonalny parametr **bool** .|
-|**TrackFileAccess**|Opcjonalny parametr **bool** .|
-|**TrackedInputFilesToIgnore**|Opcjonalny parametr **ITaskItem []** .|
-|**TrackedOutputFilesToIgnore**|Opcjonalny parametr **ITaskItem []** .|
-|**TrackerFrameworkPath**|Opcjonalny parametr **ciągu** .|
-|**TrackerSdkPath**|Opcjonalny parametr **ciągu** .|
+|**UsuńOutputOnExecute**|Opcjonalny parametr **bool.**|
+|**EnableExecuteTool (Włącz)**|Opcjonalny parametr **bool.**|
+|**ExcludedInputPaths (Ścieżki wykluczeń nieprzenikasłowych)**|Opcjonalny parametr **ITaskItem[].**|
+|**MinimalRebuildFromTracking**|Opcjonalny parametr **bool.**|
+|**ŚcieżkaOverride**|Opcjonalny parametr **ciągu.**|
+|**PostBuildTrackingCleanup**|Opcjonalny parametr **bool.**|
+|**Źródło danych RootSource**|Opcjonalny parametr **ciągu.**|
+|**PominięteWykonaczenie**|Opcjonalny parametr wyjściowy **bool.**|
+|**ŹródłaKomisowany**|Opcjonalny parametr **wyjściowy ITaskItem[].**|
+|**Plik TLogCommand**|Opcjonalny parametr **ITaskItem.**|
+|**TLogReadFiles**|Opcjonalny parametr **ITaskItem[].**|
+|**TLogWriteFiles (Pliki TLogWriteFiles)**|Opcjonalny parametr **ITaskItem[].**|
+|**ToolArchitecture (Etykieta narzędzia)**|Opcjonalny parametr **ciągu.**|
+|**TrackCommandLines (Linie śledzenia ścieżek)**|Opcjonalny parametr **bool.**|
+|**TrackFileAccess (Plik utworu)**|Opcjonalny parametr **bool.**|
+|**TrackedInputFilesToIgnore**|Opcjonalny parametr **ITaskItem[].**|
+|**TrackedOutputFilesToIgnore**|Opcjonalny parametr **ITaskItem[].**|
+|**Ścieżka trackera**|Opcjonalny parametr **ciągu.**|
+|**Ścieżka śledzenia**|Opcjonalny parametr **ciągu.**|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 [Odwołanie do zadania](../msbuild/msbuild-task-reference.md)<br/>
 [Zadania](../msbuild/msbuild-tasks.md)

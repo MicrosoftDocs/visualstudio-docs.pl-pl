@@ -1,48 +1,51 @@
 ---
-title: Kod refaktoryzacji do konwersji zapytania LINQ do instrukcji foreach
-description: Konwertuj wszystkie zapytania LINQ zapisywane w składni zapytania na instrukcję foreach.
-ms.date: 05/15/2018
+title: Refaktoryzator kodu do konwersji kwerendy LINQ do foreach instrukcji
+description: Konwertuj wszystkie kwerendy LINQ napisane w składni kwerendy do foreach instrukcji.
+ms.date: 03/10/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb2cdf96d7f7829ff6a6d1394160548da2adae7f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6e1b24cb8406ff29659eb79d1d9fa856db628b89
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595751"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094089"
 ---
-# <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoryzacja do konwersji LINQ do instrukcji foreach
+# <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refaktoryzowanie w celu konwersji LINQ na instrukcję foreach
 
-Użyj tego refaktoryzacji, aby skonwertować [składnię zapytania LINQ](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) do instrukcji [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) .
+Ta refaktoryzacja służy do konwertowania [składni kwerendy LINQ](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) na instrukcję [foreach.](/dotnet/csharp/language-reference/keywords/foreach-in)
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
-- Język C#
+- C#
 
-## <a name="how-to-use-it"></a>Jak z niej korzystać
+- Visual Basic
 
-1. Wybierz całą kwerendę LINQ rozpoczynającą się od `from`.
+## <a name="how-to-use-it"></a>Korzystanie
+
+1. Zaznacz całą kwerendę LINQ, zaczynając od `from`.
 
    > [!NOTE]
-   > Tego refaktoryzacji można użyć tylko do przekonwertowania zapytań LINQ wyrażonych za pomocą składni zapytania, a nie składni metody.
+   > Ta refaktoryzacja może służyć tylko do konwertowania zapytań LINQ wyrażonych w składni kwerendy, a nie składni metody.
 
-1. Naciśnij klawisz **Ctrl**+ **.** lub kliknij ikonę śrubokrętu ![ikonę śrubokrętu](../media/screwdriver-icon.png) na marginesie pliku kodu.
+1. Naciśnij **klawisze Ctrl**+**.** lub kliknij ikonę ![ikony](../media/screwdriver-icon.png) śrubokręta na marginesie pliku kodu.
 
-   ![Menu konwersji LINQ to foreach — szybkie akcje](media/convert-linq-to-foreach.png)
+   ![Konwertuj LINQ na menu szybkich akcji](media/convert-linq-to-foreach.png)
 
-1. Wybierz pozycję **Konwertuj na element "foreach"** . Lub wybierz pozycję **Podgląd zmian** , aby otworzyć okno dialogowe [Podgląd zmian](../../ide/preview-changes.md) , a następnie wybierz pozycję **Zastosuj**.
+1. Wybierz **opcję Konwertuj na "foreach"**. Możesz też wybrać **opcję Podgląd zmian,** aby otworzyć okno dialogowe [Podgląd zmian,](../../ide/preview-changes.md) a następnie wybierz pozycję **Zastosuj**.
 
 > [!NOTE]
-> W C#przypadku, kod generowany przez te refaktoryzacji używa typu jawnego lub [var](/dotnet/csharp/language-reference/keywords/var) dla zmiennej iteracji pętli `foreach`. Typ w wygenerowanym kodzie, jawny lub niejawny, zależy od ustawień stylu kodu, które znajdują się w zakresie. Te ustawienia stylu kodu są konfigurowane na poziomie komputera w obszarze **narzędzia** > **Opcje** > **edytorze tekstów** > **C#**  > **stylu kodu** > **Ogólne** >  **\'var "Preferences"** lub na poziomie rozwiązania w pliku [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Jeśli zmienisz ustawienie stylu kodu w **opcjach**, ponownie otwórz plik kodu, aby zmiany zaczęły obowiązywać.
+> Dla języka C#kod wygenerowany przez te refaktoryzowania [var](/dotnet/csharp/language-reference/keywords/var) używa typu jawnego lub `foreach` var dla zmiennej iteracji pętli. Typ w wygenerowanym kodzie, jawne lub niejawne, zależy od ustawień stylu kodu, które są w zakresie. Te ustawienia w stylu kodu są konfigurowane na poziomie komputera w obszarze**Opcje** >  **narzędzi** > **Edytor** > tekstu**C#** > **Code Style** > **General** > **\'var preferencje**lub na poziomie rozwiązania w pliku [EditorConfig.](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) Jeśli zmienisz ustawienie stylu kodu w **opcji,** otwórz ponownie plik kodu, aby zmiany zostały wprowadzone.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [LINQ](/dotnet/standard/using-linq)
+- [Linq](/dotnet/standard/using-linq)
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
 - [Podgląd zmian](../../ide/preview-changes.md)

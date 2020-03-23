@@ -1,12 +1,12 @@
 ---
-title: Visual Studio Build Tools obciążenia i identyfikatory składników
+title: Obciążenie i identyfikatory składników narzędzi kompilacji programu Visual Studio
 titleSuffix: ''
-description: Użyj identyfikatory obciążeń i składników programu Visual Studio do tworzenia klasycznych aplikacji opartych na Windows
+description: Tworzenie klasycznych aplikacji opartych na systemie Windows za pomocą obciążenia i identyfikatorów składników programu Visual Studio
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 26de8e2ad329d37de043431f5d655b4be8722755
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 304e8bf8a3caba5154e06e1b44b6e05dd664f9ad
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437719"
 ---
-# <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools katalog składników
+# <a name="visual-studio-build-tools-component-directory"></a>Katalog składników Narzędzia kompilacji programu Visual Studio
 
 [!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "76114095"
 
 [!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
+Aby zainstalować te składniki przy użyciu instalatora ręcznego, pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
 
 [!INCLUDE[Visual Studio Build Tools 2017](includes/vs-2017/workload-component-id-vs-build-tools.md)]
 
@@ -40,7 +40,7 @@ Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i ur
 
 [!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
+Aby zainstalować te składniki przy użyciu instalatora ręcznego, pobierz i uruchom [narzędzia kompilacji dla programu Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
 
 [!INCLUDE[Visual Studio Build Tools 2019](includes/vs-2019/workload-component-id-vs-build-tools.md)]
 
@@ -48,10 +48,10 @@ Aby zainstalować te składniki przy użyciu Instalatora ręcznego, Pobierz i ur
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 * [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
-* [Podręcznik administratora w usłudze Visual Studio](visual-studio-administrator-guide.md)
-* [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+* [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
   * [Przykładowe parametry wiersza polecenia](command-line-parameter-examples.md)
-* [Tworzenie instalacji w trybie offline programu Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Tworzenie instalacji programu Visual Studio w trybie offline](create-an-offline-installation-of-visual-studio.md)

@@ -18,39 +18,39 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75593697"
 ---
 # <a name="manage-application-resources-net"></a>Zarządzanie zasobami aplikacji (.NET)
 
-Pliki zasobów są plikami, które są częścią aplikacji, ale nie są kompilowane, na przykład pliki ikon lub pliki audio. Ponieważ te pliki nie są częścią procesu kompilacji, można je zmienić bez konieczności ponownego kompilowania plików binarnych. Jeśli planujesz lokalizowanie aplikacji, należy używać plików zasobów dla wszystkich ciągów i innych zasobów, które należy zmienić podczas lokalizowania aplikacji.
+Pliki zasobów to pliki, które są częścią aplikacji, ale nie są kompilowane, na przykład pliki ikon lub pliki audio. Ponieważ te pliki nie są częścią procesu kompilacji, można je zmienić bez konieczności ponownego kompilowania plików binarnych. Jeśli planujesz zlokalizować aplikację, należy użyć plików zasobów dla wszystkich ciągów i innych zasobów, które należy zmienić podczas lokalizowania aplikacji.
 
 > [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Aby uzyskać Visual Studio dla komputerów Mac, zobacz [Zarządzanie zasobami aplikacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-app-resources).
+> W tym temacie stosuje się do programu Visual Studio w systemie Windows. W przypadku programu Visual Studio dla komputerów Mac zobacz [Zarządzanie zasobami aplikacji (Visual Studio dla komputerów Mac).](/visualstudio/mac/managing-app-resources)
 
-Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych platformy .NET, zobacz [zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index).
+Aby uzyskać więcej informacji o zasobach w aplikacjach klasycznych platformy .NET, zobacz [Zasoby w aplikacjach klasycznych](/dotnet/framework/resources/index).
 
-## <a name="work-with-resources"></a>Pracuj z zasobami
+## <a name="work-with-resources"></a>Praca z zasobami
 
-W projekcie kodu zarządzanego Otwórz okno właściwości projektu. Aby otworzyć okno właściwości, można wykonać jedną z:
+W projekcie kodu zarządzanego otwórz okno właściwości projektu. Okno właściwości można otworzyć przez:
 
-- Kliknij prawym przyciskiem myszy węzeł projektu w **Eksplorator rozwiązań** i wybierz polecenie **Właściwości**
+- Kliknięcie prawym przyciskiem myszy węzła projektu w **Eksploratorze rozwiązań** i **wybranie opcji Właściwości**
 - Wpisywanie **właściwości projektu** w polu wyszukiwania **Ctrl**+**Q**
-- Wybieranie **Alt**+**Enter** in **Eksplorator rozwiązań**
+- Wybieranie **opcji Alt**+**Enter** w **Eksploratorze rozwiązań**
 
-Wybierz kartę **zasoby** . Plik *. resx* można dodać, jeśli projekt nie zawiera już jednego z nich, dodawać i usuwać różne rodzaje zasobów oraz modyfikować istniejące zasoby.
+Wybierz kartę **Zasoby.** Można dodać plik *.resx,* jeśli projekt nie zawiera już jednego, dodać i usunąć różne rodzaje zasobów i zmodyfikować istniejące zasoby.
 
 ## <a name="resources-in-other-project-types"></a>Zasoby w innych typach projektów
 
-Zasoby są zarządzane inaczej w projektach .NET niż w innych typach projektów. Aby uzyskać więcej informacji na temat zasobów w programie:
+Zasoby są zarządzane inaczej w projektach platformy .NET niż w innych typach projektów. Aby uzyskać więcej informacji na temat zasobów w:
 
-- Aplikacje platforma uniwersalna systemu Windows (platformy UWP), zobacz [zasoby aplikacji i system zarządzania zasobami](/windows/uwp/app-resources/)
-- C++projekty, zobacz [pracy z plikami zasobów](/cpp/windows/working-with-resource-files) i [instrukcje: Tworzenie zasobu](/cpp/windows/how-to-create-a-resource)
+- Aplikacje platformy uniwersalnej systemu Windows (UWP), zobacz [Zasoby aplikacji i system zarządzania zasobami](/windows/uwp/app-resources/)
+- Projekty języka C++, zobacz [Praca z plikami zasobów](/cpp/windows/working-with-resource-files) i [Jak: Tworzenie zasobu](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Zasoby w aplikacjach klasycznych (.NET Framework)](/dotnet/framework/resources/index)
 - [Zarządzanie zasobami aplikacji (Visual Studio dla komputerów Mac)](/visualstudio/mac/managing-app-resources)

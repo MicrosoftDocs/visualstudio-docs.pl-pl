@@ -1,5 +1,5 @@
 ---
-title: Test obciążeniowy ustawienia rejestrowania
+title: Ustawienia rejestrowania testu obciążenia
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,25 +9,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75566309"
 ---
-# <a name="modify-load-test-logging-settings"></a>Modyfikowanie ustawień rejestrowania testu obciążeniowego
+# <a name="modify-load-test-logging-settings"></a>Modyfikowanie ustawień rejestrowania testu obciążenia
 
-Wynik testu obciążenia dla ukończonego testu obciążenia zawiera próbki liczników wydajności i informacje o błędach, które zostały zebrane w dzienniku okresowo z komputerów objętych testami. Duża liczba próbek liczników wydajności może być zbierana w trakcie przebiegu testu obciążeniowego. Dane wydajności, które są zbierane zależy od długości przebiegu, interwał próbkowania, liczby komputerów w ramach testu i liczbę liczników do zbierania. Na dużym teście obciążenia ilość zebranych danych wydajności może łatwo wynieść kilka gigabajtów; w związku z tym, należy rozważyć zmodyfikowanie jak często dane są zapisywane w dzienniku. Zobacz [kontrolerów testów i agentów testowych](configure-test-agents-and-controllers-for-load-tests.md).
+Wynik testu obciążenia dla testu obciążenia zakończonego zawiera próbki licznika wydajności i informacje o błędzie, które zostały zbierane w dzienniku okresowo z komputerów pod-test. Wiele próbek licznika wydajności można zbierać w trakcie przebiegu testu obciążenia. Ilość danych wydajności, które są zbierane zależy od długości uruchomienia, interwał próbkowania, liczba komputerów w fazie testów i liczba liczników do zbierania. W przypadku testu dużego obciążenia ilość danych wydajności, które są zbierane, może być łatwo kilka gigabajtów; w związku z tym można rozważyć zmodyfikowanie, jak często dane są zapisywane w dzienniku. Zobacz [Kontrolery testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-*Kontrolera testów* buforuje wszystkie zebrane obciążenia testu przykładowe dane do dziennika bazy danych, gdy uruchomiony jest test. Dodatkowe dane, takie jak szczegółowych informacji o czasie i szczegóły błędu są ładowane do bazy danych, po zakończeniu testu.
+*Kontroler testu* buforuje wszystkie zebrane dane próbki testu obciążenia do dziennika bazy danych, gdy test jest uruchomiony. Dodatkowe dane, takie jak szczegóły chronometrażu i szczegóły błędu, są ładowane do bazy danych po zakończeniu testu.
 
 |Zadanie|Skojarzone tematy|
 |-|-----------------------|
-|**Zapisywanie dzienników, w przypadku niepowodzenia testu obciążeniowego:** można określić, jeśli chcesz zapisać dziennik testu, zawsze wtedy, gdy test obciążenia kończy się niepowodzeniem.|-   [Porady: Określanie, czy niepowodzenia testu są zapisywane do testowania dzienników](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Ustaw maksymalny rozmiar pliku dla pliku dziennika:** można edytować plik konfiguracji XML, który jest skojarzony z usługi kontrolera testów, aby określić maksymalny rozmiar pliku chcesz użyć dla pliku dziennika.|Zmodyfikuj `<add key="LogSizeLimitInMegs" value="20"/>` w pliku konfiguracyjnym XML *QTCcontroller. exe. config* .|
+|**Zapisz dzienniki, jeśli test obciążenia zakończy się niepowodzeniem:** Można określić, czy chcesz zapisać dziennik testu, gdy test obciążenia zakończy się niepowodzeniem.|-   [Jak: Określ, czy błędy testu są zapisywane w dziennikach testowych](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Ustaw maksymalny rozmiar pliku dziennika:** Można edytować plik konfiguracyjny XML skojarzony z usługą kontrolera testów, aby określić maksymalny rozmiar pliku, który ma być używany dla pliku dziennika.|Modyfikuj `<add key="LogSizeLimitInMegs" value="20"/>` plik konfiguracyjny *QTCcontroller.exe.config* XML.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Konfigurowanie ustawień testu obciążenia](../test/configure-load-test-run-settings.md)
+- [Konfigurowanie ustawień przebiegu testu obciążenia](../test/configure-load-test-run-settings.md)

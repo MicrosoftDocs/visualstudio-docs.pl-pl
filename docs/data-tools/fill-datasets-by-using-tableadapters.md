@@ -20,123 +20,123 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586630"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79302239"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnianie zestawów danych za pomocą adapterów TableAdapter
 
-Składnik TableAdapter wypełnia zestaw danych z danymi z bazy danych, na podstawie jednej lub kilku zapytań lub procedur przechowywanych, które określisz. TableAdapters może również wykonywać operacje dodawania, aktualizacji i usuwania w bazie danych, aby zachować zmiany wprowadzone w zestawie danych. Możesz również wydać polecenia globalne, które nie są powiązane z żadną określoną tabelą.
+Składnik TableAdapter wypełnia zestaw danych danymi z bazy danych na podstawie jednego lub kilku zapytań lub procedur przechowywanych, które określisz. TableAdapters można również wykonywać dodaje, aktualizacje i usuwa w bazie danych, aby utrwalić zmiany wprowadzone do zestawu danych. Można również wydawać polecenia globalne, które nie są związane z dowolną określoną tabelą.
 
 > [!NOTE]
-> TableAdapters są generowane przez projektantów programu Visual Studio. Jeśli tworzysz zestawy danych programowo, użyj elementu DataAdapter, który jest klasą platformy .NET.
+> TableAdapters są generowane przez projektantów programu Visual Studio. Jeśli tworzysz zestawy danych programowo, użyj DataAdapter, który jest klasą .NET.
 
-Aby uzyskać szczegółowe informacje o operacjach TableAdapter, możesz przejść bezpośrednio do jednego z następujących tematów:
+Aby uzyskać szczegółowe informacje na temat operacji TableAdapter, można przejść bezpośrednio do jednego z następujących tematów:
 
 |Temat|Opis|
 |-----------|-----------------|
-|[Tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Jak używać projektantów do tworzenia i konfigurowania TableAdapters|
-|[Tworzenie sparametryzowanych zapytań adaptera TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Jak umożliwić użytkownikom dostarczanie argumentów do procedur lub zapytań TableAdapter|
-|[Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Jak używać metod DBDirect TableAdapters|
-|[Wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Jak korzystać z ograniczeń klucza obcego podczas aktualizowania danych|
-|[Jak zwiększyć funkcjonalność elementu TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Jak dodać niestandardowy kod do TableAdapters|
-|[Odczytywanie danych XML do zestawu danych](../data-tools/read-xml-data-into-a-dataset.md)|Jak korzystać z XML|
+|[Tworzenie i konfigurowanie adapterów TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Jak używać projektantów do tworzenia i konfigurowania tableadapters|
+|[Tworzenie sparametryzowanych zapytań adaptera TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Jak umożliwić użytkownikom dostarczanie argumentów do procedur tableadapter lub kwerend|
+|[Bezpośredni dostęp do bazy danych za pomocą adaptera TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Jak korzystać z metod Dbdirect TableAdapters|
+|[Wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Jak pracować z ograniczeniami klucza obcego podczas aktualizowania danych|
+|[Jak rozszerzyć funkcjonalność tableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Jak dodać kod niestandardowy do TableAdapters|
+|[Odczytywanie danych XML do zestawu danych](../data-tools/read-xml-data-into-a-dataset.md)|Jak pracować z XML|
 
 <a name="tableadapter-overview"></a>
 
-## <a name="tableadapter-overview"></a>TableAdapter — Omówienie
+## <a name="tableadapter-overview"></a>Omówienie tabeliAdapter
 
-TableAdapters to składniki generowane przez projektanta, które łączą się z bazą danych, uruchamiają zapytania lub procedury składowane i wypełniają ich DataTable danymi zwracanymi. TableAdapters również wysyłać zaktualizowane dane z aplikacji z powrotem do bazy danych. Można uruchamiać dowolną liczbę zapytań na TableAdapter, o ile zwracają dane, które są zgodne ze schematem tabeli, z którym jest skojarzona TableAdapter. Na poniższym diagramie pokazano, w jaki sposób TableAdapters współdziałać z bazami danych i innymi obiektami w pamięci:
+TableAdapters są składnikami generowanymi przez projektanta, które łączą się z bazą danych, uruchamiają kwerendy lub procedury przechowywane i wypełniają ich DataTable zwróconymi danymi. TableAdapters również wysłać zaktualizowane dane z aplikacji z powrotem do bazy danych. Można uruchomić dowolną liczbę zapytań na TableAdapter tak długo, jak zwracają dane, które są zgodne ze schematem tabeli, z którą tableAdapter jest skojarzony. Na poniższym diagramie pokazano, jak TableAdapters interakcji z bazami danych i innymi obiektami w pamięci:
 
 ![Przepływ danych w aplikacji klienckiej](../data-tools/media/clientdatadiagram.gif)
 
-Chociaż TableAdapters są zaprojektowane z **Projektant obiektów DataSet**, klasy TableAdapter nie są generowane jako zagnieżdżone klasy <xref:System.Data.DataSet>. Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład jeśli masz zestaw danych o nazwie `NorthwindDataSet`, TableAdapters, które są skojarzone z <xref:System.Data.DataTable>s w `NorthwindDataSet` będzie w przestrzeni nazw `NorthwindDataSetTableAdapters`. Aby programowo uzyskać dostęp do określonego TableAdapter, należy zadeklarować nowe wystąpienie TableAdapter. Na przykład:
+Podczas gdy tableadapters są zaprojektowane z **projektantem zestawu danych,** TableAdapter <xref:System.Data.DataSet>klasy nie są generowane jako zagnieżdżone klasy . Znajdują się one w oddzielnych przestrzeniach nazw, które są specyficzne dla każdego zestawu danych. Na przykład jeśli masz zestaw `NorthwindDataSet`danych o nazwie , TableAdapters, które są skojarzone z <xref:System.Data.DataTable>s w `NorthwindDataSet` obszarze `NorthwindDataSetTableAdapters` nazw będzie w obszarze nazw. Aby uzyskać dostęp do określonego TableAdapter programowo, należy zadeklarować nowe wystąpienie TableAdapter. Przykład:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
 
-## <a name="associated-datatable-schema"></a>Skojarzony schemat DataTable
+## <a name="associated-datatable-schema"></a>Schemat Skojarzonej tabeli datatable
 
-Podczas tworzenia TableAdapter należy użyć wstępnego zapytania lub procedury składowanej w celu zdefiniowania schematu <xref:System.Data.DataTable>skojarzonego z TableAdapter. To zapytanie początkowe lub procedura składowana jest uruchamiana przez wywołanie metody `Fill` TableAdapter (która wypełnia <xref:System.Data.DataTable>skojarzonej TableAdapter). Wszelkie zmiany wprowadzone w głównym zapytaniu TableAdapter są odzwierciedlane w schemacie skojarzonej tabeli danych. Na przykład usunięcie kolumny z głównego zapytania spowoduje również usunięcie kolumny ze skojarzonej tabeli danych. Jeśli jakiekolwiek dodatkowe zapytania w TableAdapter używają instrukcji SQL, które zwracają kolumny, które nie znajdują się w głównym zapytaniu, Projektant próbuje zsynchronizować zmiany kolumny między głównym pytaniem i dodatkowymi zapytaniami.
+Podczas tworzenia tableAdapter, należy użyć kwerendy początkowej lub procedury składowanej do definiowania <xref:System.Data.DataTable>schematu TableAdapter skojarzone . Uruchom tę kwerendę początkową lub procedurę składowaną, `Fill` wywołując metodę TableAdapter (która wypełnia <xref:System.Data.DataTable>skojarzoną z tableadapter). Wszelkie zmiany wprowadzone do głównego zapytania TableAdapter są odzwierciedlane w schemacie skojarzonej tabeli danych. Na przykład usunięcie kolumny z kwerendy głównej powoduje również usunięcie kolumny ze skojarzonej tabeli danych. Jeśli wszelkie dodatkowe kwerendy na TableAdapter używać instrukcji SQL, które zwracają kolumny, które nie są w kwerendzie głównej, projektant próbuje zsynchronizować zmiany kolumny między kwerendą główną i dodatkowych zapytań.
 
-## <a name="tableadapter-update-commands"></a>Polecenia aktualizacji TableAdapter
+## <a name="tableadapter-update-commands"></a>Polecenia aktualizacji tableAdapter
 
-Funkcja aktualizacji TableAdapter zależy od ilości dostępnych informacji w głównym zapytaniu w **Kreatorze TableAdapter**. Na przykład TableAdapters, które są skonfigurowane do pobierania wartości z wielu tabel (przy użyciu `JOIN`), wartości skalarnych, widoków lub wyników funkcji agregujących, nie są początkowo tworzone z możliwością wysyłania aktualizacji z powrotem do źródłowej bazy danych. Można jednak ręcznie skonfigurować polecenia `INSERT`, `UPDATE`i `DELETE` w oknie **Właściwości** .
+Funkcja aktualizacji tableAdapter zależy od ilości informacji dostępnych w kwerendzie głównej **kreatora tableadapter**. Na przykład TableAdapters, które są skonfigurowane do pobierania `JOIN`wartości z wielu tabel (przy użyciu ), wartości skalarne, widoki lub wyniki funkcji agregujących nie są początkowo tworzone z możliwością wysyłania aktualizacji z powrotem do podstawowej bazy danych. Można jednak ręcznie `INSERT`skonfigurować `UPDATE`polecenie `DELETE` , i polecenia w oknie **Właściwości.**
 
 ## <a name="tableadapter-queries"></a>TableAdapter— Zapytania
 
 ![TableAdapter z wieloma zapytaniami](../data-tools/media/tableadapter.gif)
 
-TableAdapters może zawierać wiele zapytań do wypełnienia skojarzonych tabel danych. Można zdefiniować dowolną liczbę zapytań dla TableAdapter, gdy aplikacja wymaga, o ile każda kwerenda zwraca dane, które są zgodne z tym samym schematem, co skojarzona z nim tabela danych. Ta funkcja umożliwia TableAdapterom ładowanie różnych wyników w oparciu o różne kryteria.
+TableAdapters może zawierać wiele zapytań, aby wypełnić ich tabele skojarzonych danych. Można zdefiniować tyle zapytań dla TableAdapter, jak aplikacja wymaga, tak długo, jak każda kwerenda zwraca dane, które są zgodne z tym samym schematem, co skojarzona z nią tabela danych. Ta funkcja umożliwia TableAdapter załadować różne wyniki na podstawie różnych kryteriów.
 
-Jeśli na przykład aplikacja zawiera tabelę z nazwami klientów, można utworzyć zapytanie, które wypełnia tabelę każdą nazwą klienta rozpoczynającą się od określonej litery, a druga wypełnia tabelę wszystkimi klientami, które znajdują się w tym samym stanie. Aby wypełnić tabelę `Customers` z klientami w danym stanie, można utworzyć kwerendę `FillByState`, która przyjmuje jako parametr wartość stanu: `SELECT * FROM Customers WHERE State = @State`. Kwerendę można uruchomić, wywołując metodę `FillByState` i przekazując wartość parametru w następujący sposób: `CustomerTableAdapter.FillByState("WA")`.
+Na przykład jeśli aplikacja zawiera tabelę z nazwami klientów, można utworzyć kwerendę, która wypełnia tabelę z każdej nazwy klienta, która zaczyna się od określonej litery i inny, który wypełnia tabelę wszystkich klientów, które znajdują się w tym samym stanie. Aby wypełnić tabelę `Customers` klientami w danym `FillByState` stanie, można utworzyć kwerendę, która `SELECT * FROM Customers WHERE State = @State`przyjmuje parametr dla wartości stanu w następujący sposób: . Uruchamiasz kwerendę, `FillByState` wywołując metodę i przekazując w `CustomerTableAdapter.FillByState("WA")`wartości parametru w ten sposób: .
 
-Oprócz dodawania zapytań, które zwracają dane tego samego schematu co tabela danych TableAdapter, można dodawać zapytania, które zwracają wartości skalarne (pojedyncza). Na przykład zapytanie zwracające liczbę klientów (`SELECT Count(*) From Customers`) jest prawidłowe dla `CustomersTableAdapter,`, mimo że zwrócone dane nie są zgodne ze schematem tabeli.
+Oprócz dodawania kwerend, które zwracają dane tego samego schematu co tableadapter danych table, można dodać kwerendy, które zwracają wartości skalarne (pojedyncze). Na przykład kwerenda, która zwraca`SELECT Count(*) From Customers`liczbę klientów ( `CustomersTableAdapter,` ) jest prawidłowa dla, nawet jeśli zwracane dane nie są zgodne ze schematem tabeli.
 
-## <a name="clearbeforefill-property"></a>Właściwość ClearBeforeFill
+## <a name="clearbeforefill-property"></a>ClearBeforeFill, właściwość
 
-Domyślnie za każdym razem, gdy uruchamiasz zapytanie w celu wypełnienia tabeli danych TableAdapter, istniejące dane są czyszczone i tylko wyniki zapytania są ładowane do tabeli. Ustaw właściwość `ClearBeforeFill` TableAdapter na `false`, jeśli chcesz dodać lub scalić dane zwracane z zapytania do istniejących danych w tabeli danych. Bez względu na to, czy wyczyścisz dane, musisz jawnie wysyłać aktualizacje z powrotem do bazy danych, jeśli chcesz je zachować. Pamiętaj, aby zapisać wszelkie zmiany danych w tabeli przed uruchomieniem kolejnego zapytania, które wypełnia tabelę. Aby uzyskać więcej informacji, zobacz [Aktualizowanie danych przy użyciu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).
+Domyślnie za każdym razem, gdy uruchamiasz kwerendę w celu wypełnienia tabeli danych TableAdapter, istniejące dane są czyszczone, a tylko wyniki kwerendy są ładowane do tabeli. Ustaw TableAdapter `ClearBeforeFill` właściwości, `false` jeśli chcesz dodać lub scalić dane, które są zwracane z kwerendy do istniejących danych w tabeli danych. Niezależnie od tego, czy wyczyścisz dane, należy jawnie wysyłać aktualizacje z powrotem do bazy danych, jeśli chcesz je utrwalić. Dlatego pamiętaj, aby zapisać wszelkie zmiany w danych w tabeli przed uruchomieniem innej kwerendy, która wypełnia tabelę. Aby uzyskać więcej informacji, zobacz [Aktualizowanie danych przy użyciu tableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).
 
-## <a name="tableadapter-inheritance"></a>Dziedziczenie TableAdapter
+## <a name="tableadapter-inheritance"></a>Dziedzictwo tableAdapter
 
-TableAdapters zwiększyć funkcjonalność standardowych kart danych przez hermetyzację skonfigurowanej klasy <xref:System.Data.Common.DataAdapter>. Domyślnie TableAdapter dziedziczy z klasy <xref:System.ComponentModel.Component> i nie może być rzutowany do klasy <xref:System.Data.Common.DataAdapter>. Rzutowanie elementu TableAdapter na klasę <xref:System.Data.Common.DataAdapter> powoduje błąd <xref:System.InvalidCastException>. Aby zmienić klasę bazową elementu TableAdapter, można określić klasę, która pochodzi od <xref:System.ComponentModel.Component> we właściwości **klasy bazowej** TableAdapter w **Projektant obiektów DataSet**.
+TableAdapters rozszerzyć funkcjonalność standardowych kart danych przez hermetyzowanie <xref:System.Data.Common.DataAdapter> skonfigurowanej klasy. Domyślnie TableAdapter dziedziczy z <xref:System.ComponentModel.Component> klasy i nie można <xref:System.Data.Common.DataAdapter> rzutować do klasy. Rzutowanie TableAdapter <xref:System.Data.Common.DataAdapter> do klasy <xref:System.InvalidCastException> powoduje błąd. Aby zmienić klasę podstawową tableadapter, można określić <xref:System.ComponentModel.Component> klasę, która wywodzi się z właściwości **Klasa podstawowa** TableAdapter w **Projektancie zestawu danych**.
 
-## <a name="tableadapter-methods-and-properties"></a>TableAdapter — metody i właściwości
+## <a name="tableadapter-methods-and-properties"></a>Metody i właściwości tableAdapter
 
-Klasa TableAdapter nie jest typem platformy .NET. Oznacza to, że nie można go znaleźć w dokumentacji ani **Przeglądarka obiektów**. Jest on tworzony w czasie projektowania, gdy używasz jednego z kreatorów wymienionych wcześniej. Nazwa przypisana do TableAdapter podczas tworzenia jest oparta na nazwie tabeli, z którą pracujesz. Na przykład podczas tworzenia TableAdapter na podstawie tabeli w bazie danych o nazwie `Orders`, TableAdapter ma nazwę `OrdersTableAdapter`. Nazwę klasy TableAdapter można zmienić przy użyciu właściwości **name** w **Projektant obiektów DataSet**.
+Klasa TableAdapter nie jest typem .NET. Oznacza to, że nie można go wyszukać w dokumentacji ani w **przeglądarce obiektów.** Jest tworzony w czasie projektowania, gdy używasz jednego z kreatorów wymienionych wcześniej. Nazwa, która jest przypisana do TableAdapter podczas tworzenia jest oparta na nazwie tabeli, z którą pracujesz. Na przykład podczas tworzenia TableAdapter na podstawie tabeli `Orders`w bazie danych o `OrdersTableAdapter`nazwie , TableAdapter ma nazwę . Nazwę klasy tableAdapter można zmienić za pomocą **Name** właściwości w **Projektancie zestawu danych**.
 
-Poniżej przedstawiono najczęściej używane metody i właściwości TableAdapters:
+Poniżej znajdują się powszechnie stosowane metody i właściwości TableAdapters:
 
-|Element członkowski|Opis|
+|Członek|Opis|
 |------------|-----------------|
-|`TableAdapter.Fill`|Wypełnia tabelę danych skojarzoną z TableAdapter z wynikami polecenia `SELECT` TableAdapter.|
-|`TableAdapter.Update`|Program wysyła zmiany z powrotem do bazy danych i zwraca liczbę całkowitą, która odpowiada liczbie wierszy, na które miała wpływ aktualizacja. Aby uzyskać więcej informacji, zobacz [Aktualizowanie danych przy użyciu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
-|`TableAdapter.GetData`|Zwraca nowy <xref:System.Data.DataTable> wypełniony danymi.|
-|`TableAdapter.Insert`|Tworzy nowy wiersz w tabeli danych. Aby uzyskać więcej informacji, zobacz [wstawianie nowych rekordów do bazy danych](../data-tools/insert-new-records-into-a-database.md).|
-|`TableAdapter.ClearBeforeFill`|Określa, czy tabela danych jest opróżniana przed wywołaniem jednej z `Fill` metod.|
+|`TableAdapter.Fill`|Wypełnia table danych związanych TableAdapter z wynikami TableAdapter `SELECT` polecenia.|
+|`TableAdapter.Update`|Wysyła zmiany z powrotem do bazy danych i zwraca liczbę całkowitą, która reprezentuje liczbę wierszy, których dotyczy aktualizacja. Aby uzyskać więcej informacji, zobacz [Aktualizowanie danych przy użyciu tableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
+|`TableAdapter.GetData`|Zwraca nowy, <xref:System.Data.DataTable> który jest wypełniony danymi.|
+|`TableAdapter.Insert`|Tworzy nowy wiersz w tabeli danych. Aby uzyskać więcej informacji, zobacz [Wstawianie nowych rekordów do bazy danych](../data-tools/insert-new-records-into-a-database.md).|
+|`TableAdapter.ClearBeforeFill`|Określa, czy tabela danych jest opróżniany `Fill` przed wywołaniem jednej z metod.|
 
-## <a name="tableadapter-update-method"></a>TableAdapter — Metoda aktualizacji
+## <a name="tableadapter-update-method"></a>Metoda aktualizacji TableAdapter
 
-TableAdapters używać poleceń danych do odczytu i zapisu w bazie danych. Użyj początkowego zapytania `Fill` (głównego) TableAdapter jako podstawy do tworzenia schematu skojarzonej tabeli danych oraz poleceń `InsertCommand`, `UpdateCommand`i `DeleteCommand`, które są skojarzone z metodą `TableAdapter.Update`. Wywołanie metody `Update` TableAdapter uruchamia instrukcje, które zostały utworzone podczas pierwotnego konfigurowania TableAdapter, a nie jedno z dodatkowych zapytań, które zostały dodane za pomocą **Kreatora konfiguracji zapytania TableAdapter**.
+TableAdapters używać poleceń danych do odczytu i zapisu z bazy danych. Użyj tableAdapter początkowej `Fill` (głównej) kwerendy jako podstawy do tworzenia schematu skojarzonej tabeli `InsertCommand` `UpdateCommand`danych, `DeleteCommand` a także , i `TableAdapter.Update` polecenia, które są skojarzone z metodą. Wywołanie `Update` metody TableAdapter uruchamia instrukcje, które zostały utworzone, gdy TableAdapter został pierwotnie skonfigurowany, a nie jeden z dodatkowych zapytań dodanych za pomocą **Kreatora konfiguracji kwerendy TableAdapter**.
 
-Jeśli używasz TableAdapter, efektywnie wykonuje te same operacje z poleceniami, które zwykle wykonujesz. Na przykład po wywołaniu metody `Fill` adaptera adapter uruchamia dane w właściwości `SelectCommand` i używa czytnika danych (na przykład <xref:System.Data.SqlClient.SqlDataReader>) do załadowania zestawu wyników do tabeli danych. Podobnie, gdy wywołasz metodę `Update` karty, uruchamia odpowiednie polecenie (we właściwościach `UpdateCommand`, `InsertCommand`i `DeleteCommand`) dla każdego zmienionego rekordu w tabeli danych.
+Podczas korzystania z TableAdapter, skutecznie wykonuje te same operacje z poleceniami, które zazwyczaj wykonywane. Na przykład podczas wywoływania `Fill` metody karty, karta uruchamia polecenie `SelectCommand` danych we właściwości i używa czytnika danych (na przykład <xref:System.Data.SqlClient.SqlDataReader>), aby załadować zestaw wyników do tabeli danych. Podobnie po `Update` wywołaniu metody karty uruchamia odpowiednie polecenie (w `UpdateCommand`, `InsertCommand`i `DeleteCommand` właściwości) dla każdego zmienionego rekordu w tabeli danych.
 
 > [!NOTE]
-> Jeśli zapytanie główne zawiera wystarczającą ilość informacji, polecenia `InsertCommand`, `UpdateCommand`i `DeleteCommand` są tworzone domyślnie po wygenerowaniu TableAdapter. Jeśli główne zapytanie TableAdapter jest więcej niż jedna instrukcja `SELECT` tabeli, możliwe, że projektant nie będzie mógł generować `InsertCommand`, `UpdateCommand`i `DeleteCommand`. Jeśli te polecenia nie są generowane, podczas uruchamiania metody `TableAdapter.Update` może zostać wyświetlony komunikat o błędzie.
+> Jeśli w kwerendzie głównej jest `InsertCommand`wystarczająco `UpdateCommand`dużo `DeleteCommand` informacji, polecenia , i polecenia są tworzone domyślnie podczas generowania programu TableAdapter. Jeśli główne zapytanie TableAdapter jest więcej `SELECT` niż jedną instrukcją tabeli, możliwe, że `InsertCommand` `UpdateCommand`projektant `DeleteCommand`nie będzie mógł wygenerować , i . Jeśli te polecenia nie są generowane, może pojawić `TableAdapter.Update` się błąd podczas uruchamiania metody.
 
-## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
+## <a name="tableadapter-generatedbdirectmethods"></a>Metody generowania przez programy dbdirect
 
-Oprócz `InsertCommand`, `UpdateCommand`i `DeleteCommand`, TableAdapters są tworzone przy użyciu metod, które można uruchamiać bezpośrednio w bazie danych. Te metody (`TableAdapter.Insert`, `TableAdapter.Update`i `TableAdapter.Delete`) można wywoływać bezpośrednio w celu manipulowania danymi w bazie danych. Oznacza to, że można wywołać te pojedyncze metody z kodu zamiast wywoływania `TableAdapter.Update`, aby obsłużyć operacje wstawiania, aktualizacji i usuwania oczekujące dla skojarzonej tabeli danych.
+Oprócz `InsertCommand`, `UpdateCommand`i `DeleteCommand`, TableAdapters są tworzone za pomocą metod, które można uruchomić bezpośrednio w bazie danych. Można wywołać te`TableAdapter.Insert` `TableAdapter.Update`metody `TableAdapter.Delete`( , i ) bezpośrednio do manipulowania danymi w bazie danych. Oznacza to, że można wywołać te indywidualne `TableAdapter.Update` metody z kodu zamiast wywoływania do obsługi wstawia, aktualizacje i usuwa, które oczekują na skojarzonej tabeli danych.
 
-Jeśli nie chcesz tworzyć tych metod bezpośrednich, ustaw właściwość **GenerateDBDirectMethods** TableAdapter na `false` (w oknie **Właściwości** ). Dodatkowe zapytania dodawane do TableAdapter są zapytania autonomiczne — nie generują tych metod.
+Jeśli nie chcesz tworzyć tych metod bezpośrednich, ustaw TableAdapter **GenerateDbDirectMethods** właściwość `false` (w oknie **Właściwości).** Dodatkowe zapytania, które są dodawane do TableAdapter są autonomiczne kwerendy — nie generują tych metod.
 
-## <a name="tableadapter-support-for-nullable-types"></a>Obsługa TableAdapter dla typów dopuszczających wartości null
+## <a name="tableadapter-support-for-nullable-types"></a>Obsługa tableadapter dla typów nullable
 
-TableAdapters obsługują Typy dopuszczające wartości null `Nullable(Of T)` i `T?`. Aby uzyskać więcej informacji na temat typów dopuszczających wartości null w Visual Basic, zobacz [dopuszczanie typów wartości null](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Aby uzyskać więcej informacji na temat typów C#dopuszczających wartości null w, zobacz [używanie typów dopuszczających wartość null](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+TableAdapters obsługują `Nullable(Of T)` typy `T?`nullable i . Aby uzyskać więcej informacji na temat typów nullable w języku Visual Basic, zobacz [Typy wartości nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Aby uzyskać więcej informacji na temat typów nullable w języku C#, zobacz [Użyj typów nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 
-## <a name="tableadaptermanager-reference"></a>Odwołanie TableAdapterManager
+## <a name="tableadaptermanager-reference"></a>Odwołanie do tableadaptermanager
 
-Domyślnie Klasa TableAdapterManager jest generowana podczas tworzenia zestawu danych zawierającego powiązane tabele. Aby zapobiec wygenerowaniu klasy, Zmień wartość właściwości `Hierarchical Update` zestawu danych na FAŁSZ. Po przeciągnięciu tabeli, która zawiera relację na powierzchnię projektową formularza systemu Windows lub strony WPF, program Visual Studio deklaruje zmienną składową klasy. Jeśli nie używasz wiązania z danymi, musisz ręcznie zadeklarować zmienną.
+Domyślnie TableAdapterManager klasa generuje podczas tworzenia zestawu danych, który zawiera tabele pokrewne. Aby zapobiec generowaniu klasy, zmień wartość `Hierarchical Update` właściwości zestawu danych na false. Podczas przeciągania tabeli, która ma relację na powierzchni projektowej formularza systemu Windows lub WPF strony, Visual Studio deklaruje zmienną elementu członkowskiego klasy. Jeśli nie używasz databinding, należy ręcznie zadeklarować zmienną.
 
-Klasa TableAdapterManager nie jest typem platformy .NET. W związku z tym nie można go znaleźć w dokumentacji. Jest on tworzony w czasie projektowania jako część procesu tworzenia zestawu danych.
+Klasa TableAdapterManager nie jest typem .NET. W związku z tym nie można wyszukać go w dokumentacji. Jest tworzony w czasie projektowania w ramach procesu tworzenia zestawu danych.
 
-Poniżej przedstawiono często używane metody i właściwości klasy `TableAdapterManager`:
+Poniżej przedstawiono często używane metody i `TableAdapterManager` właściwości klasy:
 
-|Element członkowski|Opis|
+|Członek|Opis|
 |------------|-----------------|
 |Metoda `UpdateAll`|Zapisuje wszystkie dane ze wszystkich tabel danych.|
-|`BackUpDataSetBeforeUpdate` Właściwość|Określa, czy należy utworzyć kopię zapasową zestawu danych przed wykonaniem metody `TableAdapterManager.UpdateAll`. Typu.|
-|*tablename* `TableAdapter` Właściwość|Reprezentuje TableAdapter. Wygenerowany TableAdapterManager zawiera właściwość dla każdej zarządzanej `TableAdapter`. Na przykład zestaw danych z tabelą Klienci i zamówienia generuje z TableAdapterManager, który zawiera `CustomersTableAdapter` i `OrdersTableAdapter` właściwości.|
-|`UpdateOrder` Właściwość|Kontroluje kolejność poszczególnych poleceń INSERT, Update i DELETE. Ustaw tę wartość na jedną z wartości w wyliczeniu `TableAdapterManager.UpdateOrderOption`.<br /><br /> Domyślnie `UpdateOrder` jest ustawiona na **InsertUpdateDelete**. Oznacza to, że operacje INSERT, then Update, a następnie usunięć są wykonywane dla wszystkich tabel w zestawie danych.|
+|`BackUpDataSetBeforeUpdate`Właściwość|Określa, czy utworzyć kopię zapasową zestawu danych `TableAdapterManager.UpdateAll` przed wykonaniem metody. Boolean.|
+|*właściwość nazwami tableName* `TableAdapter`|Reprezentuje TableAdapter. Wygenerowany TableAdapterManager zawiera właściwość dla każdego `TableAdapter` zarządza. Na przykład zestaw danych z tabelą Klienci i zamówienia generuje z TableAdapterManager, który zawiera `CustomersTableAdapter` i `OrdersTableAdapter` właściwości.|
+|`UpdateOrder`Właściwość|Steruje kolejnością poszczególnych poleceń wstawiania, aktualizowania i usuwania. Ustaw to na jedną z `TableAdapterManager.UpdateOrderOption` wartości w wyliczeniu.<br /><br /> Domyślnie jest `UpdateOrder` ustawiona na **InsertUpdateDelete**. Oznacza to, że wstawia, a następnie aktualizacje, a następnie usuwa są wykonywane dla wszystkich tabel w zestawie danych.|
 
 ## <a name="security"></a>Zabezpieczenia
 
-W przypadku używania poleceń danych z właściwością CommandType o wartości <xref:System.Data.CommandType.Text>należy uważnie sprawdzić informacje wysyłane z klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próbować wysyłać (wstrzyknąć) zmodyfikowane lub dodatkowe instrukcje SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych programu należy zawsze sprawdzić, czy informacje są prawidłowe. Najlepszym rozwiązaniem jest zawsze używanie sparametryzowanych zapytań lub procedur składowanych, gdy jest to możliwe.
+Podczas korzystania z poleceń danych z <xref:System.Data.CommandType.Text>CommandType właściwość ustawiona na , dokładnie sprawdzić informacje, które są wysyłane z klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próbować wysłać (wstrzyknąć) zmodyfikowane lub dodatkowe instrukcje SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych należy zawsze sprawdzić, czy informacje są prawidłowe. Najlepszym rozwiązaniem jest zawsze używać sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Narzędzia do obsługi zestawów danych](../data-tools/dataset-tools-in-visual-studio.md)

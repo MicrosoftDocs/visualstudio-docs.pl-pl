@@ -1,5 +1,5 @@
 ---
-title: Widok klasy, hierarchia wywołań, Przeglądarka obiektów, okno definicji kodu
+title: Widok klasy, hierarchia połączeń, przeglądarka obiektów, okno definicji kodu
 ms.date: 09/19/2019
 ms.topic: reference
 f1_keywords:
@@ -26,203 +26,203 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78409987"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79303058"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Wyświetlanie struktury kodu przy użyciu różnych okien narzędzi
 
-Można badanie klas i ich członków w programie Visual Studio przy użyciu różnych okien narzędzi, w tym **Widok klasy**, **hierarchii wywołań**, **Przeglądarka obiektów**i **definicji kodu** (C++ tylko). Te okna narzędzi mogą przeglądać kod w projektach programu Visual Studio, składnikach .NET, składnikach COM, bibliotekach dołączanych dynamicznie (DLL) i bibliotekach typów (TLB).
+Klasy i ich elementy członkowskie można badać w programie Visual Studio przy użyciu różnych okien narzędzi, w tym **widok klasy,** **hierarchia wywołań,** **przeglądarka obiektów**i **definicja kodu** (tylko c++). Te narzędzia windows można sprawdzić kod w projektach programu Visual Studio, składniki .NET, składniki COM, biblioteki łączy dynamicznych (DLL) i biblioteki typów (TLB).
 
-Możesz również użyć **Eksplorator rozwiązań** do przeglądania typów i członków w projektach, wyszukiwania symboli, wyświetlania hierarchii wywołań metod, znajdowania odwołań do symboli i innych, bez konieczności przełączania się między wieloma oknami narzędzi.
+Za pomocą **Eksploratora rozwiązań** można również przeglądać typy i elementy członkowskie w projektach, wyszukiwać symbole, wyświetlać hierarchię wywołań metody, znajdować odniesienia do symboli i nie tylko, bez konieczności przełączania się między wieloma oknami narzędzi.
 
-Jeśli masz wersję Visual Studio Enterprise, możesz użyć *map kodu* do wizualizacji struktury kodu i jego zależności w całym rozwiązaniu. Aby uzyskać więcej informacji, zobacz [Mapowanie zależności za pomocą map kodu](../modeling/map-dependencies-across-your-solutions.md).
+Jeśli masz visual studio enterprise edition, można użyć *map kodu* do wizualizacji struktury kodu i jego zależności w całym rozwiązaniu. Aby uzyskać więcej informacji, zobacz [Zależności mapowania z mapami kodu](../modeling/map-dependencies-across-your-solutions.md).
 
 ## <a name="class-view-visual-basic-c-c"></a>Widok klasy (Visual Basic, C#, C++)
 
-**Widok klasy** jest pokazywany jako część **Eksplorator rozwiązań** i jako oddzielne okno. **Widok klasy** wyświetla elementy aplikacji. W górnym okienku są wyświetlane przestrzenie nazw, typy, interfejsy, wyliczenia i klasy, a w dolnym okienku są wyświetlane elementy członkowskie należące do typu wybranego w górnym okienku. Za pomocą tego okna można przenieść do definicji elementów członkowskich w kodzie źródłowym (lub w **Przeglądarka obiektów** , jeśli element jest zdefiniowany poza rozwiązaniem).
+**Widok klasy** jest wyświetlany jako część **Eksploratora rozwiązań** i jako oddzielne okno. **Widok klasy** wyświetla elementy aplikacji. W górnym okienku są wyświetlane przestrzenie nazw, typy, interfejsy, wyliczenia i klasy, a w dolnym okienku są wyświetlane elementy członkowskie należące do typu wybranego w górnym okienku. Za pomocą tego okna, można przejść do definicji elementów członkowskich w kodzie źródłowym (lub w **przeglądarce obiektów,** jeśli element jest zdefiniowany poza rozwiązaniem).
 
-Nie trzeba kompilować projektu, aby wyświetlić jego elementy **Widok klasy**. Okno jest odświeżane w miarę modyfikowania kodu w projekcie.
+Nie trzeba skompilować projektu, aby wyświetlić jego elementy w **widoku klasy**. Okno jest odświeżane podczas modyfikowania kodu w projekcie.
 
-Możesz dodać kod do projektu, wybierając węzeł projektu i wybierając przycisk **Dodaj** , aby otworzyć okno dialogowe **Dodaj nowy element** . Kod zostanie dodany w osobnym pliku.
+Kod można dodać do projektu, wybierając węzeł projektu i wybierając przycisk **Dodaj,** aby otworzyć okno dialogowe **Dodawanie nowego elementu.** Kod jest dodawany w osobnym pliku.
 
-Jeśli projekt jest zaewidencjonowany do kontroli kodu źródłowego, każdy element **Widok klasy** wyświetli ikonę wskazującą stan kodu źródłowego pliku. Typowe polecenia kontroli kodu źródłowego, takie jak **wyewidencjonowywanie**, **ewidencjonowanie**i **pobieranie najnowszej wersji** są również dostępne w menu skrótów dla elementu.
+Jeśli projekt jest zaewidencjonowany do kontroli kodu źródłowego, każdy element **widoku klasy** wyświetla ikonę wskazującą stan kodu źródłowego pliku. Typowe polecenia kontroli kodu źródłowego, takie jak **Wyewidencjonuj,** **Zaewidencjonuj**i **Pobierz najnowszą wersję,** są również dostępne w menu skrótów dla elementu.
 
-### <a name="class-view-toolbar"></a>Widok klasy pasek narzędzi
+### <a name="class-view-toolbar"></a>Pasek narzędzi Widok klasy
 
 Pasek narzędzi **Widok klasy** zawiera następujące polecenia:
 
 |||
 |-|-|
-|**Nowy folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować często używane elementy. Są one zapisywane w aktywnym pliku rozwiązania ( *. suo*). Po zmianie nazwy lub usunięciu elementu w kodzie może on pojawić się w folderze wirtualnym jako węzeł błędu. Aby rozwiązać ten problem, Usuń węzeł błędu. Jeśli zmieniono nazwę elementu, można go przenieść z hierarchii projektu do folderu ponownie.|
-|**Wstecz**|Przechodzi do poprzednio wybranego elementu.|
-|**Prześlą**|Przechodzi do następnego wybranego elementu.|
-|**Widok diagramu klas** (tylko projekty kodu zarządzanego)|Staną się dostępne po wybraniu przestrzeni nazw lub typu w **Widok klasy**. Po wybraniu przestrzeni nazw Diagram klas pokazuje wszystkie typy w nim. Po wybraniu typu Diagram klas pokazuje tylko ten typ.|
+|**Nowy folder**|Tworzy folder wirtualny lub podfolder, w którym można organizować często używane elementy. Są one zapisywane w aktywnym pliku rozwiązania (*.suo).* Po zmianie nazwy lub usunąć element w kodzie, może pojawić się w folderze wirtualnym jako węzeł błędu. Aby rozwiązać ten problem, usuń węzeł błędu. Jeśli nazwa elementu została zmieniona, można go ponownie przenieść z hierarchii projektów do folderu.|
+|**Back**|Przechodzi do poprzednio wybranego elementu.|
+|**do przodu**|Przechodzi do następnego zaznaczonego elementu.|
+|**Wyświetlanie diagramu klas** (tylko projekty kodu zarządzanego)|Staje się dostępna po wybraniu obszaru nazw lub typu w **widoku klasy**. Po wybraniu obszaru nazw diagram klasy pokazuje wszystkie typy w nim. Po wybraniu typu diagram klasy pokazuje tylko ten typ.|
 
-### <a name="class-view-settings"></a>Ustawienia Widok klasy
+### <a name="class-view-settings"></a>Ustawienia widoku klasy
 
-Przycisk **ustawienia widok klasy** na pasku narzędzi ma następujące ustawienia:
-
-|||
-|-|-|
-|**Pokaż typy podstawowe**|Typy podstawowe są wyświetlane.|
-|**Pokaż odwołania projektu**|Odwołania do projektu są wyświetlane.|
-|**Pokaż ukryte typy i składowe**|Ukryte typy i elementy członkowskie (nieprzeznaczone do użycia przez klientów) są wyświetlane w kolorze szarym.|
-|**Pokaż publiczne składowe**|Wyświetlane są publiczne składowe.|
-|**Pokaż chronione elementy członkowskie**|Są wyświetlane chronione elementy członkowskie.|
-|**Pokaż prywatne składowe**|Wyświetlane są prywatne składowe.|
-|**Pokaż inne elementy członkowskie**|Są wyświetlane inne rodzaje elementów członkowskich, w tym wewnętrzne (lub zaprzyjaźnione w Visual Basic) członków.|
-|**Pokaż Odziedziczone składowe**|Są wyświetlane dziedziczone elementy członkowskie.|
-
-### <a name="class-view-shortcut-menu"></a>Widok klasy menu skrótów
-
-Menu skrótów (lub kliknij prawym przyciskiem myszy) w **Widok klasy** mogą zawierać następujące polecenia, w zależności od rodzaju wybranego projektu:
+Przycisk **Ustawienia widoku klasy** na pasku narzędzi ma następujące ustawienia:
 
 |||
 |-|-|
-|**Przejdź do definicji**|Znajduje definicję elementu w kodzie źródłowym lub w **Przeglądarka obiektów**, jeśli element nie jest zdefiniowany w otwartym projekcie.|
-|**Przeglądaj definicję**|Wyświetla wybrany element w **Przeglądarka obiektów**.|
-|**Znajdź wszystkie odwołania**|Znajduje aktualnie zaznaczony element obiektu i wyświetla wyniki w oknie **Wyszukiwanie wyników** .|
-|**Filtruj do typu** (tylko kod zarządzany)|Wyświetla tylko wybrany typ lub przestrzeń nazw. Filtr można usunąć, wybierając przycisk **Wyczyść wyszukiwanie** (**X**) obok pola **Znajdź** .|
-|**Kopiuj**|Kopiuje w pełni kwalifikowaną nazwę elementu.|
-|**Sortuj alfabetycznie**|Wyświetla listę typów i składowych alfabetycznie według nazwy.|
-|**Sortuj według typu elementu członkowskiego**|Wyświetla listę typów i składowych w kolejności według typu (takie jak klasy poprzedzają interfejsy, interfejsy poprzedzają delegatów, a metody poprzedzają właściwości).|
-|**Sortuj według dostępu do składowej**|Wyświetla listę typów i elementów członkowskich w kolejności według typu dostępu, na przykład Public lub Private.|
-|**Grupuj według typu elementu członkowskiego**|Sortuje typy i składowe w grupach według typu obiektu.|
-|**Przejdź do deklaracji** (C++ tylko kod)|Wyświetla deklarację typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
-|**Przejdź do definicji**|Wyświetla definicję typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
+|**Pokaż typy podstawowe**|Wyświetlane są typy podstawowe.|
+|**Pokaż odwołania do projektu**|Wyświetlane są odwołania do projektu.|
+|**Pokaż ukryte typy i członków**|Ukryte typy i elementy członkowskie (nieprzeznaczone do użytku przez klientów) są wyświetlane w jasnoszarym tekście.|
+|**Pokaż członków publicznych**|Zostaną wyświetleni członkowie publiczni.|
+|**Pokaż chronionych członków**|Chronione elementy członkowskie są wyświetlane.|
+|**Pokaż prywatnych członków**|Zostaną wyświetleni członkowie prywatni.|
+|**Pokaż innych członków**|Inne rodzaje członków są wyświetlane, w tym wewnętrznych (lub Friend w języku Visual Basic) członków.|
+|**Pokaż odziedziczone elementy członkowskie**|Dziedziczone elementy członkowskie są wyświetlane.|
+
+### <a name="class-view-shortcut-menu"></a>Menu skrótów Widok klasy
+
+Menu skrótu (lub kliknięcie prawym przyciskiem myszy) w **widoku klasy** może zawierać następujące polecenia, w zależności od rodzaju wybranego projektu:
+
+|||
+|-|-|
+|**Przejdź do definicji**|Znajduje definicję elementu w kodzie źródłowym lub w **przeglądarce obiektów,** jeśli element nie jest zdefiniowany w otwartym projekcie.|
+|**Przeglądaj definicję**|Wyświetla zaznaczony element w **przeglądarce obiektów**.|
+|**Znajdź wszystkie odwołania**|Wyszukuje aktualnie zaznaczony element obiektu i wyświetla wyniki w oknie **Znajdź wyniki.**|
+|**Filtrowanie do typu** (tylko kod zarządzany)|Wyświetla tylko wybrany typ lub obszar nazw. Filtr można usunąć, wybierając przycisk **Wyczyść znajdź** (**X**) obok pola **Znajdź.**|
+|**Kopii**|Kopiuje w pełni kwalifikowaną nazwę towaru.|
+|**Sortowanie alfabetycznie**|Wyświetla listę typów i członków alfabetycznie według nazwy.|
+|**Sortowanie według typu elementu członkowskiego**|Listy typów i elementów członkowskich w kolejności według typu (takie, że klasy poprzedzają interfejsy, interfejsy poprzedzają delegatów, a metody poprzedzają właściwości).|
+|**Sortowanie według dostępu do elementu członkowskiego**|Wyświetla listę typów i elementów członkowskich w kolejności według typu dostępu, takich jak publiczne lub prywatne.|
+|**Grupa według typu elementu członkowskiego**|Sortuje typy i elementy członkowskie w grupy według typu obiektu.|
+|**Przejdź do deklaracji** (tylko kod C++)|Wyświetla deklarację typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępna.|
+|**Przejdź do definicji**|Wyświetla definicję typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępna.|
 |**Przejdź do odwołania**|Wyświetla odwołanie do typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
-|**Wyświetl hierarchię wywołań**|Wyświetla wybraną metodę w oknie **Hierarchia wywołań** .|
+|**Wyświetlanie hierarchii połączeń**|Wyświetla wybraną metodę w oknie **Hierarchia połączeń.**|
 
-## <a name="call-hierarchy-window-visual-basic-c-c"></a>Okno hierarchii wywołań (Visual Basic, C#, C++)
+## <a name="call-hierarchy-window-visual-basic-c-c"></a>Okno Hierarchia połączeń (Visual Basic, C#, C++)
 
-Okno **Hierarchia wywołań** pokazuje, gdzie wywoływana jest dana metoda lub właściwość. Wyświetla również metody, które są wywoływane z tej metody. Można wyświetlić wiele poziomów grafu wywołań, który pokazuje relacje wywoływane przez wywołującego między metodami w określonym zakresie.
+Okno **Hierarchia wywołań** pokazuje, gdzie wywoływana jest dana metoda lub właściwość. Zawiera również listę metod, które są wywoływane z tej metody. Można wyświetlić wiele poziomów wykresu wywołania, który pokazuje relacje wywołujący wywoływany między metodami w określonym zakresie.
 
-Możesz wyświetlić okno **Hierarchia wywołań** , wybierając metodę (lub konstruktora) w edytorze, a następnie wybierając pozycję **Wyświetl hierarchię wywołań** w menu skrótów. Ekran powinien wyglądać podobnie do poniższej ilustracji:
+Okno **Hierarchia wywołań** można wyświetlić, wybierając metodę (lub właściwość lub konstruktor) w edytorze, a następnie wybierając **polecenie Wyświetl hierarchię wywołań** w menu skrótów. Wyświetlacz powinien przypominać następujący obraz:
 
-![Okno hierarchii wywołań w programie Visual Studio](../ide/media/multiplenodes.png)
+![Okno Hierarchia połączeń w programie Visual Studio](../ide/media/multiplenodes.png)
 
 Korzystając z listy rozwijanej na pasku narzędzi, można określić zakres hierarchii: rozwiązanie, bieżący projekt lub bieżący dokument.
 
-W okienku głównym są wyświetlane wywołania do i z metody, a w okienku **Wywołaj Lokacje** zostanie wyświetlona lokalizacja wybranego wywołania. W przypadku elementów członkowskich, które są wirtualne lub abstrakcyjne, zostanie wyświetlony węzeł **Nazwa metody zastąpień** . W przypadku elementów członkowskich interfejsu pojawia się węzeł **Nazwa metody implementującej** .
+W głównym okienku są wyświetlane wywołania do i z metody, a w okienku **Witryny wywołania** jest wyświetlana lokalizacja wybranego wywołania. Dla elementów członkowskich, które są wirtualne lub abstrakcyjne, zastępuje węzeł **nazwy metody.** Dla elementów członkowskich interfejsu pojawia się węzeł **nazwa metody implementuje.**
 
-W oknie **Hierarchia wywołań** nie znajdują się odwołania do grup metod, w tym miejsca, w których metoda jest dodawana jako procedura obsługi zdarzeń lub jest przypisana do delegata. Aby znaleźć te odwołania, użyj polecenia **Znajdź wszystkie odwołania** .
+Okno **Hierarchia wywołań** nie znajduje odwołań do grup metod, które obejmują miejsca, w których metoda jest dodawana jako program obsługi zdarzeń lub jest przypisana do pełnomocnika. Aby znaleźć te odwołania, użyj polecenia **Znajdź wszystkie odwołania.**
 
-Menu skrótów w oknie **Hierarchia wywołań** zawiera następujące polecenia:
+Menu skrótów w oknie **Hierarchia połączeń** zawiera następujące polecenia:
 
 |||
 |-|-|
-|**Dodaj jako nowy element główny**|Dodaje wybrany węzeł jako nowy węzeł główny.|
-|**Usuń element główny**|Usuwa wybrany węzeł główny z okienka widoku drzewa.|
+|**Dodaj jako nowy katalog główny**|Dodaje wybrany węzeł jako nowy węzeł główny.|
+|**Usuń katalog główny**|Usuwa zaznaczony węzeł główny z okienka widoku drzewa.|
 |**Przejdź do definicji**|Przechodzi do oryginalnej definicji metody.|
 |**Znajdź wszystkie odwołania**|Znajduje w projekcie wszystkie odwołania do wybranej metody.|
-|**Kopiuj**|Kopiuje wybrany węzeł (ale nie jego węzły podrzędne).|
-|**Odowieżenie**|Odświeża informacje.|
+|**Kopii**|Kopiuje zaznaczony węzeł (ale nie jego podwęzły).|
+|**Odświeżanie**|Odświeża informacje.|
 
-## <a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
+## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a>Przeglądarka obiektów
 
-W oknie **Przeglądarka obiektów** są wyświetlane opisy kodu w projektach.
+Okno **Przeglądarka obiektów** wyświetla opisy kodu w projektach.
 
-Można filtrować składniki, które mają być wyświetlane, za pomocą listy rozwijanej w górnej części okna. Składniki niestandardowe mogą obejmować pliki wykonywalne kodu zarządzanego, zestawy bibliotek, biblioteki typów i plików *ocx* . Nie można dodać C++ składników niestandardowych.
+Komponenty, które mają być wyświetlane, można filtrować za pomocą listy rozwijanej u góry okna. Składniki niestandardowe mogą zawierać pliki wykonywalne kodu zarządzanego, zestawy bibliotek, biblioteki typów i pliki *ocx.* Nie można dodać składników niestandardowych języka C++.
 
 ::: moniker range="vs-2017"
 
-Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%AppData%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%AppData%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
 
 ::: moniker-end
 
-W lewym okienku **Przeglądarka obiektów** są wyświetlane zestawy. Można rozwinąć zestawy, aby wyświetlić zawarte w nich przestrzenie nazw, a następnie rozwinąć przestrzenie nazw, aby wyświetlić zawarte w nich typy. Po wybraniu typu, jego elementy członkowskie (takie jak właściwości i metody) są wyświetlane w okienku po prawej stronie. W dolnym okienku po prawej stronie są wyświetlane szczegółowe informacje o wybranym elemencie.
+W lewym okienku **przeglądarki obiektów** są wyświetlane zestawy. Można rozwinąć zestawy, aby wyświetlić zawarte w nich przestrzenie nazw, a następnie rozwinąć obszary nazw, aby wyświetlić typy, które zawierają. Po wybraniu typu jego elementy członkowskie (takie jak właściwości i metody) są wyświetlane w prawym okienku. W prawym dolnym okienku są wyświetlane szczegółowe informacje o wybranym elemencie.
 
-Konkretny element można wyszukać, korzystając z pola **wyszukiwania** w górnej części okna. W wyszukiwaniu nie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz przycisk **Wyczyść wyszukiwanie** (**X**) obok pola **wyszukiwania** .
+Możesz wyszukać określony element, korzystając z pola **Wyszukiwania** w górnej części okna. Wyszukiwanie jest niewrażliwe na sprawy. Wyniki wyszukiwania są wyświetlane w lewym okienku. Aby wyczyścić wyszukiwanie, wybierz przycisk **Wyczyść wyszukiwanie** (**X**) obok pola **Wyszukiwania.**
 
-**Przeglądarka obiektów** śledzi dokonane wybory i można przechodzić między wybranymi elementami przy użyciu przycisków **do przodu** i do **tyłu** na pasku narzędzi.
+**Przeglądarka obiektów** śledzi dokonane wybory i można poruszać się między wybranymi opcjami za pomocą przycisków **Prześlij dalej** i **Wstecz** na pasku narzędzi.
 
-Możesz użyć **Przeglądarka obiektów** , aby dodać odwołanie do zestawu do otwartego rozwiązania, wybierając element (zestaw, przestrzeń nazw, typ lub element członkowski) i wybierając przycisk **Dodaj odwołanie** na pasku narzędzi.
+Za pomocą **przeglądarki obiektów** można dodać odwołanie do zestawu do otwartego rozwiązania, wybierając element (zestaw, obszar nazw, typ lub element członkowski) i wybierając przycisk **Dodaj odwołanie** na pasku narzędzi.
 
-### <a name="object-browser-settings"></a>Ustawienia Przeglądarka obiektów
+### <a name="object-browser-settings"></a>Ustawienia przeglądarki obiektów
 
-Za pomocą przycisku **ustawienia Przeglądarka obiektów** na pasku narzędzi można określić jeden z następujących widoków:
+Za pomocą przycisku **Ustawienia przeglądarki obiektów** na pasku narzędzi można określić jeden z następujących widoków:
 
 |||
 |-|-|
-|**Wyświetl przestrzenie nazw**|Wyświetla przestrzenie nazw, a nie kontenery fizyczne, w okienku po lewej stronie. Obszary nazw przechowywane w wielu kontenerach fizycznych są scalane.|
-|**Wyświetl kontenery**|Wyświetla kontenery fizyczne, a nie przestrzenie nazw, w okienku po lewej stronie. **Wyświetl obszary nazw** i **kontenery widoku** są wzajemnie wykluczające się ustawienia.|
-|**Pokaż typy podstawowe**|Wyświetla typy podstawowe.|
-|**Pokaż ukryte typy i składowe**|Wyświetla ukryte typy i elementy członkowskie (nie przeznaczone do użycia przez klientów) w jasnym kolorze szarym.|
-|**Pokaż publiczne składowe**|Wyświetla publiczne elementy członkowskie.|
-|**Pokaż chronione elementy członkowskie**|Wyświetla chronione elementy członkowskie.|
-|**Pokaż prywatne składowe**|Wyświetla prywatnych członków.|
-|**Pokaż inne elementy członkowskie**|Wyświetla inne typy elementów członkowskich, w tym wewnętrzne (lub zaprzyjaźnione w Visual Basic) członków.|
-|**Pokaż Odziedziczone składowe**|Wyświetla dziedziczone elementy członkowskie.|
+|**Wyświetlanie obszarów nazw**|Wyświetla przestrzenie nazw, a nie fizyczne kontenery, w lewym okienku. Obszary nazw przechowywane w wielu kontenerach fizycznych są scalane.|
+|**Wyświetl kontenery**|Wyświetla fizyczne kontenery, a nie obszary nazw, w lewym okienku. **Wyświetl przestrzenie nazw** i **Kontenery widoku** są wzajemnie wykluczające się ustawienia.|
+|**Pokaż typy podstawowe**|Wyświetla typy bazowe.|
+|**Pokaż ukryte typy i członków**|Wyświetla ukryte typy i elementy członkowskie (nieprzeznaczone do użytku przez klientów) w jasnoszarym tekście.|
+|**Pokaż członków publicznych**|Wyświetla członków publicznych.|
+|**Pokaż chronionych członków**|Wyświetla chronione elementy członkowskie.|
+|**Pokaż prywatnych członków**|Wyświetla członków prywatnych.|
+|**Pokaż innych członków**|Wyświetla inne typy członków, w tym członków wewnętrznych (lub znajomych w języku Visual Basic).|
+|**Pokaż odziedziczone elementy członkowskie**|Wyświetla odziedziczone elementy członkowskie.|
 |**Pokaż metody rozszerzenia**|Wyświetla metody rozszerzenia.|
 
-### <a name="object-browser-shortcut-menu-commands"></a>Polecenia menu skrótów Przeglądarka obiektów
+### <a name="object-browser-shortcut-menu-commands"></a>Polecenia menu skrótów przeglądarki obiektów
 
-Menu skrótów (lub kliknij prawym przyciskiem myszy) w **Przeglądarka obiektów** mogą zawierać następujące polecenia, w zależności od rodzaju wybranego elementu:
+Menu skrótu (lub kliknięcie prawym przyciskiem myszy) w **przeglądarce obiektów** może zawierać następujące polecenia, w zależności od rodzaju wybranego elementu:
 
 |||
 |-|-|
-|**Przeglądaj definicję**|Pokazuje węzeł podstawowy wybranego elementu.|
-|**Znajdź wszystkie odwołania**|Znajduje aktualnie zaznaczony element obiektu i wyświetla wyniki w oknie **Wyszukiwanie wyników** .|
-|**Filtruj do typu**|Wyświetla tylko wybrany typ lub przestrzeń nazw. Filtr można usunąć, wybierając przycisk **Wyczyść wyszukiwanie** .|
-|**Kopiuj**|Kopiuje w pełni kwalifikowaną nazwę elementu.|
-|**Usuń**|Jeśli zakres jest zestaw składnika niestandardowego, usuwa wybrany składnik z zakresu.|
-|**Sortuj alfabetycznie**|Wyświetla listę typów i składowych alfabetycznie według nazwy.|
-|**Sortuj według typu obiektu**|Wyświetla listę typów i składowych w kolejności według typu (takie jak klasy poprzedzają interfejsy, interfejsy poprzedzają delegatów, a metody poprzedzają właściwości).|
-|**Sortuj według dostępu do obiektów**|Wyświetla listę typów i elementów członkowskich w kolejności według typu dostępu, na przykład Public lub Private.|
-|**Grupuj według typu obiektu**|Sortuje typy i składowe w grupach według typu obiektu.|
-|**Przejdź do deklaracji** (C++ tylko projekty)|Wyświetla deklarację typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
-|**Przejdź do definicji**|Wyświetla definicję typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
+|**Przeglądaj definicję**|Pokazuje węzeł podstawowy dla zaznaczonego elementu.|
+|**Znajdź wszystkie odwołania**|Wyszukuje aktualnie zaznaczony element obiektu i wyświetla wyniki w oknie **Znajdź wyniki.**|
+|**Filtruj do wpisywać**|Wyświetla tylko wybrany typ lub obszar nazw. Filtr można usunąć, wybierając przycisk **Wyczyść wyszukiwanie.**|
+|**Kopii**|Kopiuje w pełni kwalifikowaną nazwę towaru.|
+|**Usuń**|Jeśli zakres jest niestandardowym zestawem składników, usuwa wybrany składnik z zakresu.|
+|**Sortowanie alfabetycznie**|Wyświetla listę typów i członków alfabetycznie według nazwy.|
+|**Sortowanie według typu obiektu**|Listy typów i elementów członkowskich w kolejności według typu (takie, że klasy poprzedzają interfejsy, interfejsy poprzedzają delegatów, a metody poprzedzają właściwości).|
+|**Sortowanie według dostępu do obiektu**|Wyświetla listę typów i elementów członkowskich w kolejności według typu dostępu, takich jak publiczne lub prywatne.|
+|**Grupowanie według typu obiektu**|Sortuje typy i elementy członkowskie w grupy według typu obiektu.|
+|**Przejdź do deklaracji** (tylko projekty w języku C++)|Wyświetla deklarację typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępna.|
+|**Przejdź do definicji**|Wyświetla definicję typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępna.|
 |**Przejdź do odwołania**|Wyświetla odwołanie do typu lub elementu członkowskiego w kodzie źródłowym, jeśli jest dostępny.|
-|**Wyświetl hierarchię wywołań**|Wyświetla wybraną metodę w oknie **Hierarchia wywołań** .|
+|**Wyświetlanie hierarchii połączeń**|Wyświetla wybraną metodę w oknie **Hierarchia połączeń.**|
 
 ## <a name="code-definition-window-c"></a>Okno Definicja kodu (C++)
 
-W oknie **definicji kodu** zostanie wyświetlona definicja wybranego C++ typu lub elementu członkowskiego w aktywnym projekcie. Typ lub element członkowski można wybrać w edytorze kodu lub w oknie widoku kodu.
+Okno **Definicja kodu** wyświetla definicję wybranego typu języka C++ lub elementu członkowskiego w aktywnym projekcie. Typ lub element członkowski można wybrać w edytorze kodu lub w oknie widoku kodu.
 
-Mimo że to okno jest tylko do odczytu, można ustawić punkty przerwania lub zakładki. Aby zmodyfikować wyświetlaną definicję, wybierz polecenie **Edytuj definicję** w menu skrótów. Spowoduje to otwarcie pliku źródłowego w edytorze kodu i przeniesienie punktu wstawiania do wiersza, w którym rozpoczyna się definicja.
+Mimo że to okno jest tylko do odczytu, można ustawić punkty przerwania lub zakładki w nim. Aby zmodyfikować wyświetlaną definicję, wybierz polecenie **Edytuj definicję** w menu skrótów. Spowoduje to otwarcie pliku źródłowego w edytorze kodu i przeniesienie punktu wstawiania do wiersza, w którym rozpoczyna się definicja.
 
 > [!NOTE]
-> Począwszy od programu Visual Studio 2015, okno **definicji kodu** może być używane tylko z C++ kodem.
+> Począwszy od programu Visual Studio 2015, okno **definicji kodu** można używać tylko z kodem języka C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menu skrótów definicji kodu
 
-Menu skrótów (lub kliknij prawym przyciskiem myszy) w oknie **definicji kodu** mogą zawierać następujące polecenia:
+Menu skrótu (lub kliknięcie prawym przyciskiem myszy) w oknie **Definicja kodu** może zawierać następujące polecenia:
 
 |||
 |-|-|
-|**Szybkie akcje i refaktoryzacje**||
-|**Zmiana nazwy**||
-|**Generowanie grafu plików dołączanych**||
-|**Definicja wglądu**||
-|**Przejdź do definicji**|Znajduje definicję (lub definicje, dla klas częściowych) i wyświetla je w oknie **Znajdź wyniki** .|
+|**Szybkie akcje i operacje refaktoryzacji**||
+|**Zmień nazwę**||
+|**Generowanie wykresu plików dołączanych**||
+|**Podejrzyj definicję**||
+|**Przejdź do definicji**|Znajduje definicję (lub definicje dla klas częściowych) i wyświetla je w oknie **Znajdź wyniki.**|
 |**Przejdź do deklaracji**||
 |**Znajdź wszystkie odwołania**|Znajduje odwołania do typu lub elementu członkowskiego w rozwiązaniu.|
-|**Wyświetl hierarchię wywołań**|Wyświetla metodę w oknie **Hierarchia wywołań** .|
-|**Przełącz nagłówek/plik kodu**||
-|**Uruchom testy**|Jeśli w projekcie są testy jednostkowe, program uruchamia testy dla zaznaczonego kodu.|
-|**Debuguj testy**||
-|**Punkt**|Wstawia punkt przerwania (lub punkt śledzenia).|
+|**Wyświetlanie hierarchii połączeń**|Wyświetla metodę w oknie **Hierarchia wywołań.**|
+|**Przełączanie nagłówka / pliku kodu**||
+|**Uruchamianie testów**|Jeśli istnieją testy jednostkowe w projekcie, uruchamia testy dla wybranego kodu.|
+|**Testy debugowania**||
+|**Punkt przerwania**|Wstawia punkt przerwania (lub punkt śledzenia).|
 |**Uruchom do kursora**|Uruchamia program w trybie debugowania do lokalizacji kursora.|
 |**Fragment kodu**||
-|**Wytnij**, **Kopiuj**, **Wklej**||
+|**Wytnij,** **Kopiuj,** **Wklej**||
 |**Adnotacja**||
-|**Obramowanie**|Standardowe polecenia tworzenia konspektu.|
+|**Tworzenie konspektu**|Standardowe polecenia przedstawiające.|
 |**Skanuj ponownie**||
 |**Edytuj definicję**|Przenosi punkt wstawiania do definicji w oknie kodu.|
-|**Wybierz kodowanie**|Otwiera okno **kodowania** , aby można było ustawić kodowanie dla tego pliku.|
+|**Wybierz kodowanie**|Otwiera okno **Kodowanie,** dzięki czemu można ustawić kodowanie pliku.|
 
-## <a name="document-outline-window"></a>Okno konspektu dokumentu
+## <a name="document-outline-window"></a>Okno Konspekt dokumentu
 
-Możesz użyć okna **Konspekt dokumentu** w połączeniu z widokami projektanta, takimi jak projektant dla strony XAML lub Projektant formularzy systemu Windows lub za pomocą stron HTML. To okno wyświetla elementy w widoku drzewa, aby można było wyświetlić logiczną strukturę formularza lub strony i znaleźć formanty, które są głęboko osadzone lub ukryte.
+Okna **Konspektu dokumentu** można używać w połączeniu z widokami projektanta, takimi jak projektant strony XAML lub projektanta formularzy systemu Windows lub ze stronami HTML. To okno wyświetla elementy w widoku drzewa, dzięki czemu można wyświetlić strukturę logiczną formularza lub strony i znaleźć formanty, które są głęboko osadzone lub ukryte.
 
 ## <a name="see-also"></a>Zobacz też
 

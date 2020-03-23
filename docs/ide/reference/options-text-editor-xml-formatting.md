@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, XML, formatowanie
+title: Opcje, Edytor tekstu, XML, Formatowanie
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -9,28 +9,28 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568142"
 ---
-# <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, formatowanie
+# <a name="options-text-editor-xml-formatting"></a>Opcje, Edytor tekstu, XML, Formatowanie
 
-Na stronie opcje **formatowania** można określić sposób formatowania elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania XML, wybierz **narzędzia** > **Opcje** > **edytorze tekstów** > **XML**, a następnie wybierz **Formatowanie**.
+Strona Opcje **formatowania** służy do określania sposobu formatowania elementów i atrybutów w dokumentach XML. Aby uzyskać dostęp do opcji formatowania XML, wybierz pozycję**Opcje** >  **narzędzi** > **Edytor** > tekstu**XML**, a następnie wybierz pozycję **Formatowanie**.
 
-## <a name="attributes"></a>{1&gt;{2&gt;Atrybuty&lt;2}&lt;1}
+## <a name="attributes"></a>Atrybuty
 
-**Zachowaj ręczne formatowanie atrybutów**
+**Zachowywanie ręcznego formatowania atrybutów**
 
-Nie należy formatować atrybutów. To ustawienie jest ustawieniem domyślnym.
+Nie należy formatować atrybutów. Jest to ustawienie domyślne.
 
 > [!NOTE]
-> Jeśli atrybuty są w wielu wierszach, Edytor Wetnij każdy wiersz atrybutów, aby dopasować wcięcia elementu nadrzędnego.
+> Jeśli atrybuty znajdują się w wielu wierszach, edytor wcięcie każdego wiersza atrybutów, aby dopasować wcięcie elementu nadrzędnego.
 
-**Wyrównaj atrybuty każdy w osobnym wierszu**
+**Wyrównywanie atrybutów w osobnym wierszu**
 
-Wyrównaj drugą i kolejne atrybuty w pionie, aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu wyrównania atrybutów:
+Wyrównaj drugi i kolejnych atrybutów w pionie, aby dopasować wcięcie pierwszego atrybutu. Następujący tekst XML jest przykładem sposobu wyrównania atrybutów:
 
 ```xml
 <item id = "123-A"
@@ -39,23 +39,23 @@ Wyrównaj drugą i kolejne atrybuty w pionie, aby dopasować wcięcie pierwszego
 </item>
 ```
 
-## <a name="auto-reformat"></a>Autoformatowanie
+## <a name="auto-reformat"></a>Automatyczne formaterat
 
-**Przy wklejaniu ze schowka**
+**Podczas wklejania ze schowka**
 
-Umożliwia sformatowanie tekstu XML wklejonego ze schowka.
+Sformatuj tekst XML wklejony ze schowka.
 
 **Po zakończeniu tagu końcowego**
 
-Ponownie sformatuj element po zakończeniu znacznika końcowego.
+Sformatować element po zakończeniu tagu końcowego.
 
 ## <a name="mixed-content"></a>Zawartość mieszana
 
-**Domyślnie sformatuj zawartość mieszaną.**
+**Domyślnie formatuj zawartość mieszaną.**
 
-Spróbuj ponownie sformatować zawartość mieszaną, z wyjątkiem sytuacji, gdy zawartość znajduje się w zakresie `xml:space="preserve"`. To ustawienie jest ustawieniem domyślnym.
+Spróbuj sformatować zawartość mieszaną, z `xml:space="preserve"` wyjątkiem sytuacji, gdy zawartość zostanie znaleziona w zakresie. Jest to ustawienie domyślne.
 
-Jeśli element zawiera mieszankę tekstu i znaczników, zawartość jest traktowana jako zawartość mieszana. Poniżej znajduje się przykład elementu z zawartością mieszaną.
+Jeśli element zawiera kombinację tekstu i znaczników, zawartość jest uważana za zawartość mieszaną. Poniżej znajduje się przykład elementu o mieszanej zawartości.
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -64,7 +64,7 @@ Jeśli element zawiera mieszankę tekstu i znaczników, zawartość jest traktow
 </dir>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje XML — różne](options-text-editor-xml-miscellaneous.md)
-- [Narzędzia XML w programie Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
+- [Narzędzia XML w Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

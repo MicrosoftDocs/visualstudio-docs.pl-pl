@@ -1,5 +1,5 @@
 ---
-title: Definiowanie źródła danych przy użyciu pliku konfiguracji
+title: Definiowanie źródła danych za pomocą pliku konfiguracyjnego
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75776153"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: Korzystanie z pliku konfiguracji do określania źródła danych
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Przewodnik: Definiowanie źródła danych za pomocą pliku konfiguracyjnego
 
-Ten instruktaż ilustruje sposób użycia źródła danych, zdefiniowanego w *app.config* pliku dla testów jednostkowych. Przedstawiono sposób tworzenia *app.config* pliku, który definiuje źródła danych, które mogą być używane przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy. Zadania przedstawione w tym przewodniku są następujące:
+W tym przewodniku pokazano, jak używać źródła danych zdefiniowanego w pliku *app.config* do testowania jednostkowego. Dowiesz się, jak utworzyć plik *app.config,* który definiuje źródło <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> danych, które mogą być używane przez klasę. Zadania przedstawione w tym instruktażu są następujące:
 
-- Tworzenie *app.config* pliku.
+- Tworzenie pliku *app.config.*
 
-- Definiowanie sekcji niestandardowej konfiguracji.
+- Definiowanie sekcji konfiguracji niestandardowej.
 
-- Definiowanie parametrów połączenia.
+- Definiowanie ciągów połączeń.
 
 - Definiowanie źródeł danych.
 
-- Dostęp do danych ze źródłami <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> klasy.
+- Uzyskiwanie dostępu do źródeł <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> danych przy użyciu klasy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -38,52 +38,52 @@ Aby ukończyć ten przewodnik, potrzebne są:
 
 - Visual Studio Enterprise
 
-- Program Microsoft Access albo programu Microsoft Excel do dostarczania danych dla co najmniej jednej z metod testowych.
+- Program Microsoft Access lub Microsoft Excel w celu dostarczenia danych dla co najmniej jednej z metod testowych.
 
-- Rozwiązania programu Visual Studio, która zawiera projekt testowy.
+- Rozwiązanie programu Visual Studio, które zawiera projekt testowy.
 
-## <a name="add-an-appconfig-file-to-the-project"></a>Dodawanie pliku app.config w projekcie
+## <a name="add-an-appconfig-file-to-the-project"></a>Dodawanie pliku app.config do projektu
 
-1. Jeśli projekt testu już *app.config* pliku, przejdź do [zdefiniować sekcję Konfiguracja niestandardowa](#define-a-custom-configuration-section).
+1. Jeśli projekt testowy ma już plik *app.config,* przejdź do [sekcji Definiowanie konfiguracji niestandardowej](#define-a-custom-configuration-section).
 
-2. Kliknij prawym przyciskiem myszy projekt testu w **Eksploratora rozwiązań**, a następnie wybierz pozycję **Dodaj** > **nowy element**.
+2. Kliknij prawym przyciskiem myszy projekt testowy w **Eksploratorze rozwiązań,** a następnie wybierz pozycję **Dodaj** > **nowy element**.
 
-     **Dodaj nowy element** zostanie otwarte okno.
+     Zostanie otwarte okno **Dodaj nowy element.**
 
-3. Wybierz **pliku konfiguracji aplikacji** szablon i kliknij przycisk **Dodaj**.
+3. Wybierz szablon **Pliku konfiguracji aplikacji** i kliknij przycisk **Dodaj**.
 
-## <a name="define-a-custom-configuration-section"></a>Zdefiniuj sekcji niestandardowej konfiguracji
+## <a name="define-a-custom-configuration-section"></a>Definiowanie sekcji konfiguracji niestandardowej
 
-Sprawdź *app.config* pliku. Zawiera on co najmniej deklaracji XML i elementu głównego.
+Sprawdź plik *app.config.* Zawiera co najmniej deklarację XML i element główny.
 
-### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Aby dodać do pliku app.config sekcję Konfiguracja niestandardowa
+### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Aby dodać sekcję konfiguracji niestandardowej do pliku app.config
 
-1. Element główny *app.config* powinien być **konfiguracji** elementu. Tworzenie **configSections** elemencie **konfiguracji** elementu. **ConfigSections** powinien być pierwszym elementem w *app.config* pliku.
+1. Głównym elementem *app.config* powinien być element **konfiguracji.** Utwórz element **configSeks** w elemencie **konfiguracji.** **ConfigSeks** powinny być pierwszym elementem w pliku *app.config.*
 
-2. W ramach **configSections** elementu, Utwórz **sekcji** elementu.
+2. W obrębie elementu **configSections** utwórz element **przekroju.**
 
-3. W **sekcji** elementu Dodawanie atrybutu o nazwie `name` i przypisz jej wartość `microsoft.visualstudio.testtools`. Dodaj inny atrybut o nazwie `type` i przypisz jej wartość `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
+3. W elemencie **sekcji** dodaj `name` atrybut o nazwie `microsoft.visualstudio.testtools`i przypisz mu wartość . Dodaj inny atrybut `type` wywołany i `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`przypisz mu wartość .
 
-**Sekcji** element powinien wyglądać mniej więcej tak:
+Element **sekcji** powinien wyglądać podobnie do tego:
 
 ```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Nazwa zestawu musi być zgodna z używaną wersją.
+> Nazwa zestawu musi być zgodna z używana wersja.
 
-## <a name="define-connection-strings"></a>Zdefiniuj parametry połączenia
+## <a name="define-connection-strings"></a>Definiowanie ciągów połączeń
 
-Parametry połączenia definiują informacje specyficzne dla dostawcy do uzyskiwania dostępu do źródła danych. Parametry połączenia określone w plikach konfiguracji udostępnianie informacji o dostawcy danych wielokrotnego użytku w aplikacji. W tej sekcji utworzysz dwa ciągi połączeń, które będą używane przez źródła danych, które są zdefiniowane w sekcji Konfiguracja niestandardowa.
+Parametry połączenia definiują informacje specyficzne dla dostawcy w celu uzyskania dostępu do źródeł danych. Parametry połączenia zdefiniowane w plikach konfiguracyjnych zapewniają informacje o dostawcy danych wielokrotnego dostępu w aplikacji. W tej sekcji utworzysz dwa parametry połączenia, które będą używane przez źródła danych, które są zdefiniowane w sekcji Konfiguracja niestandardowa.
 
 ### <a name="to-define-connection-strings"></a>Aby zdefiniować parametry połączenia
 
-1. Po **configSections** elementu, Utwórz **connectionStrings** elementu.
+1. Po **configSections** element, utwórz **connectionStrings** element.
 
-2. W ramach **connectionStrings** elementu, utworzysz dwa **Dodaj** elementów.
+2. W ramach **connectionStrings** element, utworzyć dwa **dodać** elementy.
 
-3. W pierwszym **Dodaj** elementu, utwórz następujące atrybuty i wartości dla połączenia z bazą danych programu Microsoft Access:
+3. W pierwszym **elemencie dodawania** utwórz następujące atrybuty i wartości połączenia z bazą danych programu Microsoft Access:
 
 |Atrybut|Wartości|
 |-|------------|
@@ -91,7 +91,7 @@ Parametry połączenia definiują informacje specyficzne dla dostawcy do uzyskiw
 |`connectionString`|`"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;"`|
 |`providerName`|`"System.Data.OleDb"`|
 
-W drugim **Dodaj** elementu, utwórz następujące atrybuty i wartości dla połączenia do arkusza kalkulacyjnego programu Microsoft Excel:
+W drugim **elemencie dodawania** utwórz następujące atrybuty i wartości połączenia z arkuszem kalkulacyjnym programu Microsoft Excel:
 
 |Atrybut|Wartości|
 |-|-|
@@ -99,7 +99,7 @@ W drugim **Dodaj** elementu, utwórz następujące atrybuty i wartości dla poł
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
 |`providerName`|`"System.Data.Odbc"`|
 
-**ConnectionStrings** element powinien wyglądać mniej więcej tak:
+**ConnectionStrings** element powinien wyglądać podobnie do tego:
 
 ```xml
 <connectionStrings>
@@ -110,27 +110,27 @@ W drugim **Dodaj** elementu, utwórz następujące atrybuty i wartości dla poł
 
 ## <a name="define-data-sources"></a>Definiowanie źródeł danych
 
-Sekcja źródła danych zawiera cztery atrybuty, które są używane przez silnik testowy można pobrać danych ze źródła danych.
+Sekcja źródła danych zawiera cztery atrybuty, które są używane przez aparat testowy do pobierania danych ze źródła danych.
 
-- `name` Określa tożsamość używana przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> do określenia danych, które źródło do użycia.
+- `name`definiuje tożsamość używaną <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> przez do określenia źródła danych, którego użyć.
 
-- `connectionString` Określa parametry połączenia, utworzony w poprzedniej sekcji zdefiniować parametry połączenia.
+- `connectionString`identyfikuje parametry połączenia utworzone w poprzedniej sekcji Definiuj parametry połączenia.
 
-- `dataTableName` Definiuje tabeli lub arkusza, która przechowuje dane do użycia w teście.
+- `dataTableName`definiuje tabelę lub arkusz zawierający dane do użycia w teście.
 
-- `dataAccessMethod` Definiuje technik do uzyskania dostępu do wartości danych w źródle danych.
+- `dataAccessMethod`definiuje technikę uzyskiwania dostępu do wartości danych w źródle danych.
 
-W tej sekcji zdefiniujesz dwóch źródeł danych do użycia podczas testów jednostkowych.
+W tej sekcji zdefiniujesz dwa źródła danych do użycia w teście jednostkowym.
 
 ### <a name="to-define-data-sources"></a>Aby zdefiniować źródła danych
 
-1. Po **connectionStrings** elementu, Utwórz **microsoft.visualstudio.testtools** elementu. W tej sekcji został utworzony w Definiuj sekcji konfiguracji niestandardowych.
+1. Po **connectionStrings** element, utwórz **microsoft.visualstudio.testtools** element. Ta sekcja została utworzona w sekcji Definiuj konfigurację niestandardową.
 
-2. W ramach **microsoft.visualstudio.testtools** elementu, Utwórz **źródeł danych** elementu.
+2. W ramach **elementu microsoft.visualstudio.testtools** utwórz element **dataSources.**
 
-3. W ramach **źródeł danych** elementu, utworzysz dwa **Dodaj** elementów.
+3. W ramach **elementu dataSources** utwórz dwa **elementy dodawania.**
 
-4. W pierwszym **Dodaj** elementu, utwórz następujące atrybuty i wartości dla źródła danych Microsoft Access:
+4. W pierwszym **elemencie dodawania** utwórz następujące atrybuty i wartości dla źródła danych programu Microsoft Access:
 
 |Atrybut|Wartości|
 |-|------------|
@@ -139,7 +139,7 @@ W tej sekcji zdefiniujesz dwóch źródeł danych do użycia podczas testów jed
 |`dataTableName`|`"MyDataTable"`|
 |`dataAccessMethod`|`"Sequential"`|
 
-W drugim **Dodaj** elementu, utwórz następujące atrybuty i wartości dla źródła danych programu Microsoft Excel:
+W drugim **elemencie dodawania** utwórz następujące atrybuty i wartości źródła danych programu Microsoft Excel:
 
 |Atrybut|Wartości|
 |-|-|
@@ -148,7 +148,7 @@ W drugim **Dodaj** elementu, utwórz następujące atrybuty i wartości dla źr�
 |`dataTableName`|`"Sheet1$"`|
 |`dataAccessMethod`|`"Sequential"`|
 
-**Microsoft.visualstudio.testtools** element powinien wyglądać mniej więcej tak:
+Element **microsoft.visualstudio.testtools** powinien wyglądać podobnie do tego:
 
 ```xml
 <microsoft.visualstudio.testtools>
@@ -159,7 +159,7 @@ W drugim **Dodaj** elementu, utwórz następujące atrybuty i wartości dla źr�
 </microsoft.visualstudio.testtools>
 ```
 
-Końcowe *app.config* plik powinien wyglądać mniej więcej tak:
+Ostateczny plik *app.config* powinien wyglądać podobnie do tego:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -180,47 +180,47 @@ Końcowe *app.config* plik powinien wyglądać mniej więcej tak:
 </configuration>
 ```
 
-## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Tworzenie testu jednostkowego, który używa źródłami danych zdefiniowanymi w pliku app.config
+## <a name="create-a-unit-test-that-uses-data-sources-defined-in-appconfig"></a>Tworzenie testu jednostkowego, który używa źródeł danych zdefiniowanych w pliku app.config
 
-Teraz, gdy *app.config* pliku została zdefiniowana, utworzy test jednostkowy, który korzysta z danych znajdujących się w źródłach danych, które są zdefiniowane w *app.config* pliku. W tej sekcji obejmuje następujące czynności:
+Teraz, gdy plik *app.config* został zdefiniowany, utworzysz test jednostkowy, który używa danych znajdujących się w źródłach danych zdefiniowanych w pliku *app.config.* W tej sekcji:
 
-- Tworzenie z danych źródeł *app.config* pliku.
+- Utwórz źródła danych znalezione w pliku *app.config.*
 
-- Używanie źródeł danych, w dwie metody testowe są porównywane wartości w poszczególnych źródeł danych.
+- Użyj źródeł danych w dwóch metodach testowych, które porównują wartości w każdym źródle danych.
 
-### <a name="to-create-a-microsoft-access-data-source"></a>Aby utworzyć źródło danych Microsoft Access
+### <a name="to-create-a-microsoft-access-data-source"></a>Aby utworzyć źródło danych programu Microsoft Access
 
-1. Utwórz bazę danych Microsoft Access o nazwie *testdatasource.accdb*.
+1. Utwórz bazę danych programu Microsoft Access o nazwie *testdatasource.accdb*.
 
-2. Utwórz tabelę i nadaj mu nazwę `MyDataTable` w *testdatasource.accdb*.
+2. Utwórz tabelę `MyDataTable` i nadaj jej nazwę w *pliku testdatasource.accdb*.
 
-3. Utwórz dwa pola w `MyDataTable` o nazwie `Arg1` i `Arg2` przy użyciu `Number` typu danych.
+3. Utwórz dwa `MyDataTable` `Arg1` pola `Arg2` o `Number` nazwie i przy użyciu typu danych.
 
-4. Dodawanie pięć jednostek do `MyDataTable` z następującymi wartościami dla `Arg1` i `Arg2`odpowiednio: (10,50), (3,2) (6,0) (0,8) i (12312,1000).
+4. Dodaj pięć encji `MyDataTable` z następującymi wartościami dla `Arg1` i `Arg2`, odpowiednio: (10,50), (3,2), (6,0), (0,8) i (12312,1000).
 
-5. Zapisz i zamknij bazy danych.
+5. Zapisz i zamknij bazę danych.
 
-6. Zmień parametry połączenia, aby wskazać lokalizację bazy danych. Zmień wartość właściwości `Data Source` uwzględnienie lokalizacji bazy danych.
+6. Zmień parametry połączenia, aby wskazać lokalizację bazy danych. Zmień `Data Source` wartość, aby odzwierciedlić lokalizację bazy danych.
 
 ### <a name="to-create-a-microsoft-excel-data-source"></a>Aby utworzyć źródło danych programu Microsoft Excel
 
-1. Utwórz arkusz kalkulacyjny programu Excel o nazwie *PowerPivot.xlsx*.
+1. Tworzenie arkusza kalkulacyjnego programu Microsoft Excel o nazwie *data.xlsx*.
 
-2. Utwórz arkusz o nazwie `Sheet1` Jeśli go jeszcze nie istnieje w *PowerPivot.xlsx*.
+2. Utwórz arkusz `Sheet1` o nazwie, jeśli nie istnieje jeszcze w *pliku data.xlsx*.
 
-3. Utwórz dwa nagłówki kolumn i nazwij je `Val1` i `Val2` w `Sheet1`.
+3. Utwórz dwa nagłówki kolumn `Val1` `Val2` i `Sheet1`nazwij je i w pliku .
 
-4. Dodawanie pięć jednostek do `Sheet1` z następującymi wartościami dla `Val1` i `Val2`odpowiednio: (1,1), (2, 2,) (3,3) (4,4) i (5,0).
+4. Dodaj pięć jednostek z `Sheet1` następującymi wartościami dla `Val1` i `Val2`, odpowiednio: (1,1), (2,2), (3,3), (4,4) i (5,0).
 
-5. Zapisz i zamknij arkusza kalkulacyjnego.
+5. Zapisz i zamknij arkusz kalkulacyjny.
 
-6. Zmień parametry połączenia, aby wskazać lokalizację arkusza kalkulacyjnego. Zmień wartość właściwości `dbq` do uwzględnienia lokalizacji w arkuszu kalkulacyjnym.
+6. Zmień ciąg połączenia, aby wskazywał lokalizację arkusza kalkulacyjnego. Zmień wartość, `dbq` aby odzwierciedlić lokalizację arkusza kalkulacyjnego.
 
-### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Aby utworzyć test jednostki za pomocą źródeł danych w pliku app.config
+### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Aby utworzyć test jednostkowy przy użyciu źródeł danych app.config
 
 1. Dodaj test jednostkowy do projektu testowego.
 
-2. Zastąp zawartość automatycznego generowania testu jednostkowego z następującym kodem:
+2. Zastąp automatycznie wygenerowaną zawartość testu jednostkowego następującym kodem:
 
     ```csharp
     using System;
@@ -260,14 +260,14 @@ Teraz, gdy *app.config* pliku została zdefiniowana, utworzy test jednostkowy, k
     }
     ```
 
-3. Sprawdź atrybutów elementu DataSource. Zwróć uwagę, nazwy ustawień z *app.config* pliku.
+3. Sprawdź atrybuty DataSource. Zwróć uwagę na nazwy ustawień z pliku *app.config.*
 
-4. Skompiluj rozwiązanie i uruchomić testy MyTestMethod i MyTestMethod2.
+4. Skompiluj swoje rozwiązanie i uruchom testy MyTestMethod i MyTestMethod2.
 
 > [!IMPORTANT]
-> Wdróż elementy, takie jak źródła danych, tak aby były dostępne dla testów w katalogu wdrożenia.
+> Wdrażanie elementów, takich jak źródła danych, tak aby były dostępne dla testu w katalogu wdrażania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Kod testu jednostkowego](../test/unit-test-your-code.md)
-- [Instrukcje: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)
+- [Jednostka przetestować swój kod](../test/unit-test-your-code.md)
+- [Jak: Tworzenie testu jednostkowego opartego na danych](../test/how-to-create-a-data-driven-unit-test.md)

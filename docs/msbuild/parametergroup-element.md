@@ -1,5 +1,5 @@
 ---
-title: Element w parametrze | Microsoft Docs
+title: Element grupy parametrów | Dokumenty firmy Microsoft
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "78263085"
 ---
-# <a name="parametergroup-element"></a>ParameterGroup, element
+# <a name="parametergroup-element"></a>Element Grupy parametrów
 
-Zawiera opcjonalną listę parametrów, które będą obecne w zadaniu generowanym przez `UsingTask` `TaskFactory`. Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Zawiera opcjonalną listę parametrów, które będą obecne w `UsingTask` `TaskFactory`zadaniu generowanym przez program . Aby uzyskać więcej informacji, zobacz [UsingTask element (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project > \<UsingTask > \<parametr >
+ \<> projektu \<UsingTask> \<ParameterGroup>
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,17 +47,17 @@ Zawiera opcjonalną listę parametrów, które będą obecne w zadaniu generowan
 
 |Element|Opis|
 |-------------|-----------------|
-|[Konstruktora](../msbuild/parameter-element.md)|Zawiera informacje dotyczące konkretnego parametru zadania generowanego przez `TaskFactory``UsingTask`. Nazwa elementu jest nazwą parametru.|
+|[Parametr](../msbuild/parameter-element.md)|Zawiera informacje o określonym parametrze dla zadania `UsingTask` `TaskFactory`generowanego przez plik . Nazwa elementu jest nazwą parametru.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 | Element | Opis |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Zapewnia sposób rejestrowania zadań w programie MSBuild. W projekcie może istnieć co najmniej zero elementów `UsingTask`. |
+| [Usingtask](../msbuild/usingtask-element-msbuild.md) | Umożliwia rejestrowanie zadań w msbuild. Może istnieć zero `UsingTask` lub więcej elementów w projekcie. |
 
 ## <a name="example"></a>Przykład
 
- Poniższy przykład pokazuje, jak używać elementu `ParameterGroup`.
+ W poniższym przykładzie `ParameterGroup` pokazano, jak używać elementu.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">

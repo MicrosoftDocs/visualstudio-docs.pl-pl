@@ -1,5 +1,5 @@
 ---
-title: OnError — element (MSBuild) | Microsoft Docs
+title: Element OnError (MSBuild) | Dokumenty firmy Microsoft
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633086"
 ---
-# <a name="onerror-element-msbuild"></a>OnError — element (MSBuild)
+# <a name="onerror-element-msbuild"></a>Element OnError (MSBuild)
 
-Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut `ContinueOnError` jest `false` dla zadania zakończonego niepowodzeniem.
+Powoduje, że jeden lub więcej `ContinueOnError` obiektów `false` docelowych do wykonania, jeśli atrybut jest dla zadania nie powiodło się.
 
- \<Project > \<Target > \<OnError >
+ \<> \<docelowe>> projektu \<OnError
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,8 +46,8 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do obliczenia. Aby uzyskać więcej informacji, zobacz [warunki](../msbuild/msbuild-conditions.md).|
-|`ExecuteTargets`|Atrybut wymagany.<br /><br /> Elementy docelowe do wykonania, jeśli zadanie zakończy się niepowodzeniem. Rozdziel wiele obiektów docelowych średnikami. Wiele obiektów docelowych jest wykonywanych w określonej kolejności.|
+|`Condition`|Atrybut opcjonalny.<br /><br /> Warunek do oceny. Aby uzyskać więcej informacji, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
+|`ExecuteTargets`|Atrybut wymagany.<br /><br /> Obiekty docelowe do wykonania w przypadku niepowodzenia zadania. Oddziel wiele celów średnikami. Wiele obiektów docelowych są wykonywane w określonej kolejności.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -57,17 +57,17 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut 
 
 | Element | Opis |
 | - | - |
-| [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Element kontenera zadań programu MSBuild. |
+| [Obiekt docelowy](../msbuild/target-element-msbuild.md) | Element kontenera dla zadań MSBuild. |
 
 ## <a name="remarks"></a>Uwagi
 
- MSBuild wykonuje element `OnError`, jeśli jeden z zadań elementu `Target` nie powiedzie się z atrybutem `ContinueOnError` ustawionym na `ErrorAndStop` (lub `false`). Gdy zadanie nie powiedzie się, obiekty docelowe określone w atrybucie `ExecuteTargets` są wykonywane. Jeśli obiekt docelowy zawiera więcej niż jeden element `OnError`, elementy `OnError` są wykonywane sekwencyjnie, gdy zadanie zakończy się niepowodzeniem.
+ MSBuild wykonuje `OnError` element, jeśli `Target` jedno z zadań elementu `ContinueOnError` kończy się `ErrorAndStop` niepowodzeniem z atrybutem ustawionym na (lub `false`). Gdy zadanie zakończy się niepowodzeniem, obiekty docelowe określone w atrybucie `ExecuteTargets` są wykonywane. Jeśli istnieje więcej `OnError` niż jeden element `OnError` w docelowych, elementy są wykonywane sekwencyjnie, gdy zadanie nie powiedzie się.
 
- Aby uzyskać informacje o atrybucie `ContinueOnError`, zobacz [element Task (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o celach, zobacz [targets](../msbuild/msbuild-targets.md).
+ Aby uzyskać `ContinueOnError` informacje o tym atrybucie, zobacz [Task element (MSBuild)](../msbuild/task-element-msbuild.md). Aby uzyskać informacje o celach, zobacz [Cele](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Przykład
 
- Poniższy kod wykonuje zadania `TaskOne` i `TaskTwo`. Jeśli `TaskOne` nie powiedzie się, MSBuild ocenia element `OnError` i wykonuje element docelowy `OtherTarget`.
+ Poniższy kod wykonuje `TaskOne` `TaskTwo` i zadania. Jeśli `TaskOne` nie powiedzie się, `OnError` MSBuild `OtherTarget` ocenia element i wykonuje obiekt docelowy.
 
 ```xml
 <Target Name="ThisTarget">
@@ -82,4 +82,4 @@ Powoduje, że co najmniej jeden obiekt docelowy jest wykonywany, jeśli atrybut 
 ## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu pliku projektu](../msbuild/msbuild-project-file-schema-reference.md)
-- [Docelowe elementy](../msbuild/msbuild-targets.md)
+- [Cele](../msbuild/msbuild-targets.md)

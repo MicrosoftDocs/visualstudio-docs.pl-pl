@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f23765ac4ee58b20af26bd100a0d167b2873582
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75565737"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 
-Wyświetla okno komunikatu z listą wszystkich przełączników `devenv`, z krótkim opisem każdego przełącznika.
+Wyświetla okno komunikatu `devenv` z listą wszystkich przełączników z krótkim opisem każdego przełącznika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,6 +29,6 @@ Wyświetla okno komunikatu z listą wszystkich przełączników `devenv`, z kró
 devenv /?
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Przełączniki wiersza polecenia devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Przełączniki wiersza polecenia Devenv](../../ide/reference/devenv-command-line-switches.md)

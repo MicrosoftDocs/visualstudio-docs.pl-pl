@@ -12,59 +12,59 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77278700"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstów, C/C++, eksperymentalne
 
-Zmieniając te opcje, można zmienić zachowanie związane z technologią IntelliSense i bazą danych przeglądania podczas programowania w języku C lub C++. Te funkcje są naprawdę eksperymentalne i mogą być modyfikowane lub usuwane z programu Visual Studio w przyszłej wersji.
+Zmieniając te opcje, można zmienić zachowanie związane z IntelliSense i przeglądania bazy danych podczas programowania w języku C lub C++. Te funkcje są naprawdę eksperymentalne i mogą być modyfikowane lub usuwane z programu Visual Studio w przyszłej wersji.
 
 ::: moniker range="vs-2017"
 
-W tym artykule opisano opcje w programie Visual Studio 2017. W przypadku programu Visual Studio 2015 wybierz pozycję **2015** w selektorze powyżej spisu treści.
+W tym artykule opisano opcje w programie Visual Studio 2017. W programie Visual Studio 2015 wybierz **2015** w selektorze powyżej spisu treści.
 
 ::: moniker-end
 
-Aby uzyskać dostęp do tej strony właściwości, naciśnij klawisz **Ctrl**+**Q** , aby uaktywnić pole wyszukiwania, a następnie wpisz **eksperymentalne**. Wyszukiwanie znajduje się na stronie po kilku pierwszych literach. Możesz również uzyskać do niej dostęp, wybierając **Narzędzia** > **Opcje** i rozwinięcie **edytora tekstu**, a następnie **C/C++** , a następnie wybierając **eksperymentalne**.
+Aby uzyskać dostęp do tej strony właściwości, naciśnij **klawisz Ctrl**+**Q,** aby aktywować pole wyszukiwania, a następnie wpisz **eksperymentalne**. Wyszukiwanie znajduje stronę po pierwszych kilku literach. Można również uzyskać do niego dostęp, wybierając**opcję Opcje** **narzędzi** > i rozwiń **edytor tekstu**, następnie **C/C++,** a następnie wybierając **opcję Eksperymentalne.**
 
 Te funkcje są dostępne w instalacji programu Visual Studio.
 
 > [!NOTE]
-> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Zobacz [Personalizuj IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="enable-predictive-intellisense"></a>Włącz technologię IntelliSense predykcyjną
+## <a name="enable-predictive-intellisense"></a>Włącz predykcyjny intellisense
 
-Funkcja IntelliSense predykcyjna ogranicza liczbę wyników wyświetlanych na liście rozwijanej IntelliSense, dzięki czemu zobaczysz tylko wyniki, które są istotne w kontekście. Na przykład, jeśli wpiszesz `int x =` i wywołajesz listę rozwijaną IntelliSense, zobaczysz tylko liczby całkowite lub funkcje zwracające liczby całkowite. Funkcja IntelliSense predykcyjna jest domyślnie wyłączona.
+Predictive IntelliSense ogranicza liczbę wyników wyświetlanych na liście rozwijanej IntelliSense, dzięki czemu są wyświetlane tylko wyniki, które są istotne w kontekście. Na przykład jeśli `int x =` wpiszesz i wywołasz intellisense rozwijanej, zobaczysz tylko liczby całkowite lub funkcje, które zwracają liczby całkowite. Predictive IntelliSense jest domyślnie wyłączony.
 
 ::: moniker range="vs-2017"
 
-## <a name="enable-faster-project-load"></a>Włącz szybsze ładowanie projektu
+## <a name="enable-faster-project-load"></a>Szybsze ładowanie projektu
 
-Począwszy od programu Visual Studio 2017 w wersji 15,3, ta funkcja jest nazywana **Włącz buforowanie projektu** i została przeniesiona na stronę właściwości [Ustawienia projektu VC + +](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) .
+Od programu Visual Studio 2017 w wersji 15.3 ta funkcja nosi nazwę **Włącz buforowanie projektu** i została przeniesiona na stronę właściwości [Ustawienia projektu VC++.](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)
 
-Ta opcja umożliwia programowi Visual Studio buforowanie danych projektu w taki sposób, aby po otwarciu projektu za następnym razem można było załadować te dane w pamięci podręcznej, a nie ponownie obliczać je na podstawie plików projektu. Użycie danych w pamięci podręcznej może znacznie skrócić czas ładowania projektu.
+Ta opcja umożliwia programowi Visual Studio buforowanie danych projektu, dzięki czemu po otwarciu projektu następnym razem można załadować te dane w pamięci podręcznej, a nie ponownego obliczania go z plików projektu. Korzystanie z danych w pamięci podręcznej może znacznie przyspieszyć czas ładowania projektu.
 
 ::: moniker-end
 
-## <a name="additional-features-in-the-visual-studio-marketplace"></a>Dodatkowe funkcje w Visual Studio Marketplace
+## <a name="additional-features-in-the-visual-studio-marketplace"></a>Dodatkowe funkcje w portalu Visual Studio Marketplace
 
-W [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads)można przeglądać dodatkowe funkcje edytora tekstu. Przykładem są [ C++ szybkie poprawki](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017), które obsługują następujące rozwiązania:
+Dodatkowe funkcje edytora tekstu można przeglądać w programie [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads). Przykładem jest [C++ Quick Fixes](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017), który obsługuje następujące czynności:
 
-- **Dodaj brakujące #include** -proponuje odpowiednie #include dla nieznanych symboli w kodzie
+- **Dodaj brakujące #include** - Sugeruje odpowiednie #include dla nieznanych symboli w kodzie
 
-- **Dodaj przy użyciu przestrzeni nazw/w pełni kwalifikujących się symboli** — podobnie jak w przypadku poprzedniego elementu, ale dla przestrzeni nazw
+- **Dodaj przy użyciu obszaru nazw/W pełni kwalifikują się symbol** - Podobnie jak poprzedni element, ale dla obszarów nazw
 
-- **Dodaj brakujący średnik**
+- **Dodawanie brakującego średnika**
 
-- **Pomoc online** — wyszukiwanie w pomocy online dotyczącej komunikatów o błędach
+- **Pomoc online** - Szukaj pomocy online dla komunikatów o błędach
 
-- i więcej...
+- I więcej...
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refaktoryzacja w C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+- [Ustawianie opcji Edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refaktoryzowanie w języku C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

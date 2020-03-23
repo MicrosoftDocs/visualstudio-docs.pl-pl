@@ -1,5 +1,5 @@
 ---
-title: Widok drzewa wywołań — dane rywalizacji | Microsoft Docs
+title: Widok drzewa wywołań — dane rywalizacji | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,51 +12,51 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74779782"
 ---
 # <a name="call-tree-view---contention-data"></a>Widok drzewa wywołań — dane rywalizacji
-W widoku drzewa wywołań są wyświetlane ścieżki wykonywania funkcji, które zostały przesunięte w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich wywoływanych przez nią funkcji, liczbę przedziałów czasu, przez jaką funkcja została zablokowana i ilość czasu, przez który funkcja została zablokowana, ponieważ była dla zasobu z innymi wątkami lub procesami.
+Widok Drzewa wywołań wyświetla ścieżki wykonywania funkcji, które zostały przesuniętych w profilowanej aplikacji. Katalog główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji zawiera listę wszystkich funkcji, które wywoływał, ile razy funkcja została zablokowana i czas, przez jaki funkcja została zablokowana, ponieważ rywalizowała o zasób z innymi wątkami lub procesami.
 
- Wartości w widoku drzewa wywołań są dla wystąpień funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpienia funkcji do całkowitej liczby rywalizacji w przebiegu profilowania.
+ Wartości w widoku drzewa wywołań są dla wystąpień funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań. Wartości procentowe są obliczane przez porównanie wartości wystąpienia funkcji z całkowitą liczbą rywalizacji w przebiegu profilowania.
 
-## <a name="highlight-the-execution-hot-path"></a>Wyróżnij gorącą ścieżkę wykonywania
- Widok drzewa wywołań może rozwinąć i wyróżnić ścieżkę wykonywania procesu lub funkcji, która utworzyła najwięcej rywalizacji.
+## <a name="highlight-the-execution-hot-path"></a>Wyróżnianie ścieżki aktywnej wykonania
+ Widok drzewa wywołań można rozwinąć i wyróżnić ścieżkę wykonywania procesu lub funkcji, która utworzyła najwięcej rywalizacji.
 
-- Aby wyświetlić najbardziej aktywną ścieżkę, kliknij prawym przyciskiem myszy proces lub funkcję, a następnie kliknij przycisk **Rozwiń ścieżkę gorącą**.
+- Aby wyświetlić najbardziej aktywną ścieżkę, kliknij prawym przyciskiem myszy proces lub funkcję, a następnie kliknij polecenie **Rozwiń ścieżkę gorącą**.
 
-## <a name="set-the-call-tree-root-node"></a>Ustaw węzeł główny drzewa wywołań
- Każdy proces w przebiegu profilowania pojawia się jako węzeł główny. Aby ustawić węzeł początkowy widoku drzewa wywołań, kliknij prawym przyciskiem myszy węzeł, który chcesz ustawić jako węzeł początkowy, a następnie kliknij pozycję **Ustaw katalog główny**.
+## <a name="set-the-call-tree-root-node"></a>Ustawianie węzła głównego drzewa wywołań
+ Każdy proces w przebiegu profilowania jest wyświetlany jako węzeł główny. Aby ustawić węzeł początkowy widoku Drzewa wywołań, kliknij prawym przyciskiem myszy węzeł, który chcesz ustawić jako węzeł początkowy, a następnie kliknij polecenie **Ustaw katalog główny**.
 
- Po ustawieniu węzła głównego można wyeliminować wszystkie inne wpisy z widoku, z wyjątkiem poddrzewa wybranego węzła. Aby przywrócić węzeł główny z powrotem do oryginalnego węzła, kliknij prawym przyciskiem myszy w widoku drzewa wywołań, a następnie kliknij polecenie **Zresetuj katalog główny**.
+ Po ustawieniu węzła głównego można wyeliminować wszystkie inne wpisy z widoku, z wyjątkiem poddrzewa wybranego węzła. Aby zresetować węzeł główny z powrotem do oryginalnego węzła, kliknij prawym przyciskiem myszy widok Drzewo wywołań, a następnie kliknij polecenie **Resetuj katalog główny**.
 
 |Kolumna|Opis|
 |------------|-----------------|
-|**Wyłączny czas blokowania**|Czas blokowania wykonywania wystąpień tej funkcji w tej ścieżce wykonywania w przebiegu profilowania. Czas nie obejmuje blokowania czasu funkcji podrzędnych, które zostały wywołane przez funkcję.|
-|**% Wyłącznego czasu blokowania**|Procent całego zablokowanego czasu w przebiegu profilowania, który miał wyłączny czas zablokowany dla tej funkcji w tej ścieżce wykonania.|
-|**Rywalizacje wyłączne**|Liczba rywalizacji, które wystąpiły w wystąpieniach tej funkcji w tej ścieżce wykonania. Liczba nie obejmuje rywalizacji o funkcje podrzędne wywoływane przez funkcję.|
-|**Zawartość wyłącznych%**|Procent wszystkich rywalizacji w przebiegu profilowania, który miał wyłuskane rywalizacje wystąpień tej funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań.|
+|**Ekskluzywny zablokowany czas**|Czas, że wystąpienia tej funkcji w tej ścieżce wykonywania zostały zablokowane przed wykonywaniem w przebiegu profilowania. Czas nie obejmuje zablokowanego czasu funkcji podrzędnych, które zostały wywołane przez funkcję.|
+|**Ekskluzywny zablokowany czas %**|Procent wszystkich zablokowany czas w przebiegu profilowania, który był wyłączny zablokowany czas dla tej funkcji w tej ścieżce wykonywania.|
+|**Ekskluzywne twierdzenia**|Liczba rywalizacji, które wystąpiły w wystąpieniach tej funkcji w tej ścieżce wykonywania. Liczba nie zawiera rywalizacji funkcji podrzędnych wywoływanych przez funkcję.|
+|**Ekskluzywne rywalizacje %**|Procent wszystkich rywalizacji w przebiegu profilowania, które były wyłączne rywalizacje wystąpień tej funkcji, które zostały wywołane przez funkcję nadrzędną w drzewie wywołań.|
 |**Adres funkcji**|Adres funkcji.|
 |**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji.|
-|**Włączny czas blokowania**|Łączny czas, w którym wystąpienia tej funkcji w tej ścieżce wykonania zostały zablokowane w przebiegu profilowania. Czas obejmuje zablokowany czas funkcji podrzędnych wywoływanych przez funkcję.|
-|**% Włącznego czasu blokowania**|Wartość procentowa wszystkich zablokowanych godzin w przebiegu profilowania, która była włącznie czasowo zablokowanym dla wystąpień tej funkcji w tej ścieżce wykonania.|
-|**Rywalizacje włączne**|Całkowita liczba rywalizacji, które zablokowały wystąpienia tej funkcji w tej ścieżce wykonania. Liczba zawiera zawartość funkcji podrzędnych wywoływanych przez funkcję.|
-|**% Rywalizacji włącznych**|Wartość procentowa wszystkich rywalizacji w przebiegu profilowania, które były łącznymi rywalizacjami wystąpień tej funkcji w tej ścieżce wykonania.|
-|**Poziomie**|Poziom funkcji w drzewie wywołań. Tylko w raportach wiersza polecenia VSReport. Aby uzyskać więcej informacji, zobacz w [VSPerfReport](../profiling/vsperfreport.md).|
-|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|
+|**Włącznie zablokowany czas**|Całkowity czas, przez który wystąpienia tej funkcji w tej ścieżce wykonywania zostały zablokowane przed wykonaniem w przebiegu profilowania. Czas obejmuje zablokowany czas funkcji podrzędnych wywoływanych przez funkcję.|
+|**Włącznie zablokowany czas %**|Procent wszystkich zablokowany czas w przebiegu profilowania, który był włącznie zablokowany czas dla wystąpień tej funkcji w tej ścieżce wykonywania.|
+|**Rywalizacje włączające**|Całkowita liczba rywalizacji, które zablokowały wystąpienia tej funkcji w tej ścieżce wykonywania. Liczba zawiera rywalizacji funkcji podrzędnych wywoływanych przez funkcję.|
+|**Rywalizacja włączająca %**|Procent wszystkich rywalizacji w przebiegu profilowania, które były włącznie rywalizacji wystąpień tej funkcji w tej ścieżce wykonywania.|
+|**Poziom**|Poziom funkcji w drzewie wywołań. Tylko w raportach wiersza polecenia VSReport. Aby uzyskać więcej informacji, zobacz w [VSPerfReport](../profiling/vsperfreport.md).|
+|**Numer wiersza funkcyjnego**|Numer wiersza początku tej funkcji w pliku źródłowym.|
 |**Nazwa modułu**|Nazwa modułu, który zawiera funkcję.|
 |**Ścieżka modułu**|Ścieżka modułu, który zawiera funkcję.|
 |**Identyfikator procesu**|Identyfikator procesu (PID) przebiegu profilowania.|
-|**Nazwa procesu**|Nazwa procesu.|
-|**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla tej funkcji.|
+|**Nazwa procesu**|Nazwa procesu|
+|**Plik źródłowy**|Plik źródłowy zawierający definicję tej funkcji.|
 
-## <a name="see-also"></a>Zobacz także
-- [Instrukcje: dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
-- [Widok drzewa wywołań](../profiling/call-tree-view.md)
-- [Widok drzewa wywołań-Instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+## <a name="see-also"></a>Zobacz też
+- [Jak: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)
+- [Widok drzewa połączeń](../profiling/call-tree-view.md)
+- [Widok drzewa wywołań — instrumentacja](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Widok drzewa wywołań — próbkowanie](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-- [Widok drzewa wywołań](../profiling/call-tree-view-instrumentation-data.md)
-- [Widok drzewa wywołań](../profiling/call-tree-view-sampling-data.md)
+- [Widok drzewa połączeń](../profiling/call-tree-view-instrumentation-data.md)
+- [Widok drzewa połączeń](../profiling/call-tree-view-sampling-data.md)

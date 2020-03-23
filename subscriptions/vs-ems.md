@@ -1,54 +1,54 @@
 ---
-title: Korzyść EMS | Microsoft Docs
+title: Korzyści dla EMS | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
-description: Dowiedz się więcej o korzyściach Enterprise Mobility + Security uwzględnionych w Twojej subskrypcji programu Visual Studio.
+description: Dowiedz się więcej o korzyściach dla programu Enterprise Mobility + Security zawartych w subskrypcji programu Visual Studio.
 ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "74099546"
 ---
-# <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) w subskrypcjach programu Visual Studio
+# <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Mobilność w przedsiębiorstwie + zabezpieczenia (EMS) w subskrypcjach programu Visual Studio
 
-Visual Studio Enterprise roczne subskrypcje w chmurze i standardowej obejmują Enterprise Mobility + Security (EMS).  Zabezpiecz tożsamości, urządzenia, aplikacje i dane i zarządzaj nimi za pomocą usług EMS-Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics i Microsoft Cloud App Security. 
+Roczna subskrypcja w chmurze i standardowe programu Visual Studio Enterprise obejmuje usługę Enterprise Mobility + Security (EMS).  Zabezpiecz swoje tożsamości, urządzenia, aplikacje i dane i zarządzaj nimi za pomocą usługi EMS — usługi Azure Active Directory, usługi Microsoft Intune, usługi Azure Information Protection, Microsoft Advanced Threat Analytics i Microsoft Cloud App Security. 
 
-## <a name="who-should-install-ems"></a>Kto powinien zainstalować pakiet EMS?
-Jeśli masz już dzierżawę pakietu Office 365 Developer (E3), należy zainstalować pakiet EMS.  W przeciwnym razie należy zainstalować [Microsoft 365](vs-m365.md), która obejmuje zarówno pakiet EMS, jak i Office 365 Developer (E5), jak również:
-- Zaawansowana analiza za pomocą Power BI
-- Office 365 Advanced Threat Protection
-- Azure Active Directory tworzenia zaawansowanych rozwiązań do zarządzania tożsamościami i dostępem
+## <a name="who-should-install-ems"></a>Kto powinien zainstalować EMS?
+Jeśli masz już dzierżawę dewelopera usługi Office 365 (E3), należy zainstalować usługę EMS.  W przeciwnym razie należy zainstalować [usługę Microsoft 365](vs-m365.md), która obejmuje zarówno usługę EMS, jak i usługę Office 365 Developer (E5), a także:
+- Zaawansowana analityka za pomocą usługi Power BI
+- Zaawansowana ochrona przed zagrożeniami usługi Office 365
+- Usługa Azure Active Directory do tworzenia zaawansowanych rozwiązań do zarządzania tożsamościami i dostępem
 
-## <a name="eligibility"></a>Kryteria
+## <a name="eligibility"></a>Kwalifikowalności
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialny?    |
+| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Odnawialnej?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardowa)   | LICENCJONOWANie, Azure, sprzedaż detaliczna, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
-| Visual Studio Professional (standardowa<sup>2</sup>) | LICENCJONOWANie, Azure, sprzedaż detaliczna                                       | Dostępne                                                            |  Tak          |
-| Visual Studio Test Professional (standardowa)                         | LICENCJONOWANie detaliczne                                              | Niedostępne                                             |  Brak          |
-| Platformy MSDN (standardowa)                                          | LICENCJONOWANie detaliczne                                              | Niedostępne                                              |  Brak          |
-| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Brak |
+| Visual Studio Enterprise (standard)   | VL, Azure, Retail, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |
+| Visual Studio Professional (standard<sup>2)</sup> | VL, Azure, Handel detaliczny                                       | Dostępne                                                            |  Tak          |
+| Visual Studio Test Professional (standard)                         | VL, Handel detaliczny                                              | Niedostępne                                             |  Nie dotyczy          |
+| Platformy MSDN (standard)                                          | VL, Handel detaliczny                                              | Niedostępne                                              |  Nie dotyczy          |
+| Visual Studio Enterprise, Visual Studio Professional (chmura miesięczna) | Azure | Niedostępne | Nie dotyczy |
 
-<sup>1</sup>  *obejmuje: nie do odsprzedaży (NFR), Visual Studio Industry partner (VSIP), Microsoft Partner Network (MPN), równoważnik, MCT Software & Developer Services, BizSpark.  Wyklucza: najbardziej cenny specjalista (MVP), dyrektor regionalny (RD), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network (Professional).*
+<sup>1</sup>  *Obejmuje: Nie dla odsprzedaży (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Wykluczenia: Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
 
-<sup>2</sup> *wyklucza Microsoft Partner Network (Professional)*
+<sup>2</sup> *Z wyłączeniem sieci partnerów firmy Microsoft (Professional)*
 
 > [!NOTE]
-> Firma Microsoft nie oferuje już Visual Studio Professional rocznych subskrypcji i Visual Studio Enterprise rocznych subskrypcji w ramach subskrypcji chmury. Istnieją zmiany w istniejących klientach i możliwość odnowienia, zwiększenia, zmniejszenia lub anulowania subskrypcji. Zachęcamy nowych klientów do przechodzenia do [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) , aby poznać różne opcje zakupu programu Visual Studio.
+> Firma Microsoft nie oferuje już rocznych subskrypcji programu Visual Studio Professional i rocznych subskrypcji programu Visual Studio Enterprise w subskrypcjach w chmurze. Nie będzie żadnych zmian w istniejącym doświadczeniu klientów i możliwości odnawiania, zwiększania, zmniejszania lub anulowania subskrypcji. Zachęcamy nowych klientów, [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) aby przejść do eksplorowania różnych opcji zakupu programu Visual Studio.
 
-Nie masz pewności, której subskrypcji używasz?  Połącz się z [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) , aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, być może masz co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby zobaczyć te subskrypcje.
+Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
 
-## <a name="support-resources"></a>Zasoby pomocy technicznej
-- Potrzebujesz pomocy z pakietem EMS?  Zapoznaj się z [dokumentacją usług EMS](/enterprise-mobility-security/)w trybie online.
-- Aby uzyskać pomoc techniczną dotyczącą wszystkich składników pakietu EMS, odwiedź stronę [pomocy technicznej pakietu EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) , aby uzyskać pomoc techniczną dotyczącą danego pytania.
-- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z [pomocą techniczną subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
-- Masz pytanie dotyczące środowiska IDE programu Visual Studio, Azure DevOps Services lub innych produktów lub usług Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+## <a name="support-resources"></a>Zasoby pomocnicze
+- Potrzebujesz pomocy z EMS?  Zapoznaj się z [dokumentacją online EMS](/enterprise-mobility-security/).
+- Aby uzyskać pomoc techniczną z dowolnym elementem EMS, odwiedź [często zadawane pytania dotyczące pomocy technicznej ems,](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) aby znaleźć odpowiednie wsparcie dla twojego pytania.
+- Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
+- Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Następne kroki
-Jeśli nie aktywowano jeszcze korzyści z korzystania z usługi Azure DevTest, która jest oferowana w ramach subskrypcji, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek platformy Azure w kategorii narzędzia, aby skonfigurować subskrypcję platformy Azure i wykorzystać swoje środki na korzystanie z platformy Azure DevTest.
+Jeśli nie aktywowałeś jeszcze indywidualnej korzyści kredytowej usługi Azure DevTest, która pochodzi z subskrypcji, odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek Platformy Azure w kategorii Narzędzia, aby skonfigurować subskrypcję platformy Azure i zrealizować indywidualny kredyt usługi Azure DevTest.
 
-Zapoznaj się z pozostałymi korzyściami z subskrypcji. Odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Zapoznaj się z pozostałymi zaletami zawartymi w subskrypcji. Odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

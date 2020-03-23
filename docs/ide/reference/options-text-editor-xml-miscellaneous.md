@@ -1,5 +1,5 @@
 ---
-title: Opcje, Edytor tekstu, XML, różne
+title: Opcje, Edytor tekstu, XML, Różne
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -9,53 +9,53 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568129"
 ---
-# <a name="options-text-editor-xml-miscellaneous"></a>Opcje, Edytor tekstu, XML, różne
+# <a name="options-text-editor-xml-miscellaneous"></a>Opcje, Edytor tekstu, XML, Różne
 
-Na stronie **różne** opcje można zmienić ustawienia autouzupełniania i schematu dla edytora XML. Aby uzyskać dostęp do różnych opcji XML, wybierz **narzędzia** > **Opcje** > **edytorze tekstów** > **XML**, a następnie wybierz **różne**.
+Strona **Różne** opcje służy do zmiany ustawień autouzupełniania i schematu edytora XML. Aby uzyskać dostęp do różnych opcji XML, wybierz pozycję **Opcje** > **narzędzi** > **Edytor** > tekstu**XML**, a następnie wybierz pozycję **Różne**.
 
-## <a name="auto-insert"></a>Autowstawianie
+## <a name="auto-insert"></a>Automatyczne wstawianie
 
-**Zamknij Tagi**
+**Zamykanie tagów**
 
-Edytor tekstu dodaje tagi zamykające podczas tworzenia elementów XML. Jeśli wybrano tag początkowy elementu, Edytor wstawia pasujący tag zamykający, w tym pasujący prefiks przestrzeni nazw. To pole wyboru jest domyślnie zaznaczone.
+Edytor tekstu dodaje znaczniki zamknięcia podczas tworzenia elementów XML. Jeśli zaznaczony jest tag początkowy elementu, edytor wstawia pasujący tag zamknięcia, w tym pasujący prefiks obszaru nazw. To pole wyboru jest zaznaczone domyślnie.
 
 **Cudzysłowy atrybutów**
 
-Podczas tworzenia atrybutów XML edytor wstawia `="` i `"` znaków oraz umieszcza karetkę ( **^** ) wewnątrz znaków cudzysłowu. To pole wyboru jest domyślnie zaznaczone.
+Podczas tworzenia atrybutów XML edytor `="` wstawia znaki i `"` umieszcza**^** cieszkę ( ) wewnątrz cudzysłowów. To pole wyboru jest zaznaczone domyślnie.
 
-**Deklaracje przestrzeni nazw**
+**Deklaracje obszaru nazw**
 
-Edytor automatycznie wstawia deklaracje przestrzeni nazw wszędzie tam, gdzie są one zbędne. To pole wyboru jest domyślnie zaznaczone.
+Edytor automatycznie wstawia deklaracje obszaru nazw wszędzie tam, gdzie są potrzebne. To pole wyboru jest zaznaczone domyślnie.
 
-**Inne znaczniki (komentarze, CDATA)**
+**Inne znaczniki (Komentarze, CDATA)**
 
-Komentarze, CDATA, DOCTYPE, instrukcje przetwarzania i inne znaczniki są autouzupełniane. To pole wyboru jest domyślnie zaznaczone.
+Komentarze, CDATA, DOCTYPE, instrukcje przetwarzania i inne znaczniki są automatycznie uzupełniane. To pole wyboru jest zaznaczone domyślnie.
 
-## <a name="network"></a>Sieć
+## <a name="network"></a>Network (Sieć)
 
-**Automatycznie pobieraj definicje DTD i schematy**
+**Automatyczne pobieranie DTD i schematów**
 
-Schematy i definicje typu dokumentu (DTD) są automatycznie pobierane z lokalizacji HTTP. Ta funkcja używa System.Net z włączonym wykrywaniem serwera AutoProxy. To pole wyboru jest domyślnie zaznaczone.
+Schematy i definicje typów dokumentów (DTD) są automatycznie pobierane z lokalizacji HTTP. Ta funkcja wykorzystuje System.Net z włączonym wykrywaniem serwera autoproxy. To pole wyboru jest zaznaczone domyślnie.
 
 ## <a name="outlining"></a>Tworzenie konspektu
 
-**Wejdź do trybu konspektu przy otwieraniu plików**
+**Wprowadzanie trybu tworzenia po otwarciu plików**
 
-Włącza funkcję tworzenia konspektu, gdy plik zostanie otwarty. To pole wyboru jest domyślnie zaznaczone.
+Włącza funkcję tworzenia przekreślenia po otwarciu pliku. To pole wyboru jest zaznaczone domyślnie.
 
 ## <a name="caching"></a>Buforowanie
 
-**Punktu**
+**Schematy**
 
-Określa lokalizację pamięci podręcznej schematu. Przycisk **Przeglądaj** otwiera bieżącą lokalizację pamięci podręcznej schematu w nowym oknie. Domyślna lokalizacja to *%VsInstallDir%\xml\Schemas*.
+Określa lokalizację pamięci podręcznej schematu. Przycisk **Przeglądaj** otwiera bieżącą lokalizację pamięci podręcznej schematu w nowym oknie. Domyślną lokalizacją jest *%VsInstallDir%\xml\Schemas*.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Opcje XML — formatowanie](options-text-editor-xml-formatting.md)
-- [Narzędzia XML w programie Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
+- [Narzędzia XML w Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

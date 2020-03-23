@@ -1,5 +1,5 @@
 ---
-title: Czasomierz | Microsoft Docs
+title: Zegar | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
@@ -10,20 +10,20 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e1bed2715421948385a5b7eb1ddbbac064f3288b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778118"
 ---
 # <a name="timer"></a>Czasomierz
-Opcja **czasomierza** *VSPerfCmd. exe* ustawia zdarzenie profilowania, które jest próbkowanie do cykli zegara procesora i opcjonalnie zmienia liczbę cykli w interwale próbkowania z domyślnego 10 000 000. W przypadku procesora 1GH (jeden gigaherca) 10 000 000 cykle zegara wynosi około 100 próbek na sekundę. Minimalna liczba cykli, które można określić, to 50 000.
+Opcja **czasomierza** *programu VSPerfCmd.exe* ustawia zdarzenie profilowania, które jest próbkowany do cykli zegara procesora i opcjonalnie zmienia liczbę cykli w interwale próbkowania z domyślnego 10,000,000. Na procesorze 1GH (jeden gigaherc) 10,000,000 zegar cykle jest około 100 próbek na sekundę. Minimalna liczba cykli, które można określić jest 50,000.
 
- **Czasomierza** można używać tylko wtedy, gdy używana jest metoda profilowania próbkowania i może być używana tylko w wierszu polecenia, który zawiera również opcję **uruchamiania** lub **dołączania** .
+ **Czasomierz** może być używany tylko wtedy, gdy używasz metody profilowania próbkowania i może być używany tylko w wierszu polecenia, który zawiera również **launch** lub **dołącz** opcję.
 
- Domyślnie zdarzenie próbkowania profilera jest ustawione na cykle zegara procesora, a interwał próbkowania jest ustawiony na 10 000 000. Opcje **Timer**, **PF**, **sys**i **Counter** umożliwiają ustawienie zdarzenia próbkowania i interwału próbkowania. Opcja **GC** zbiera dane pamięci .NET dla każdego zdarzenia alokacji i wyrzucania elementów bezużytecznych. W wierszu polecenia można określić tylko jedną z tych opcji.
+ Domyślnie zdarzenie próbkowania profilera jest ustawione na cykle zegara procesora, a interwał próbkowania jest ustawiony na 10 000 000. Opcje **Timer**, **PF,** **Sys**i **Counter** umożliwiają ustawienie zdarzenia próbkowania i interwału próbkowania. Opcja **GC** zbiera dane pamięci .NET przy każdym zdarzeniu alokacji i wyrzucania elementów bezużytecznych. W wierszu polecenia można określić tylko jedną z tych opcji.
 
- Zdarzenie próbkowania i interwał próbkowania można ustawić tylko w pierwszym wierszu polecenia zawierającym opcję **uruchamiania** lub **dołączania** .
+ Zdarzenie próbkowania i interwał próbkowania można ustawić tylko w pierwszym wierszu polecenia, który zawiera opcję **Uruchom** lub **Dołącz.**
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,36 +32,36 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ```
 
 #### <a name="parameters"></a>Parametry
- `Cycles` wartość całkowitą określającą liczbę cykli zegara procesora w interwale próbkowania. Jeśli nie określono `Cycles`, interwał zostanie ustawiony na 10 000 000. Określ wartość bez przecinków.
+ `Cycles`Wartość całkowita określająca liczbę cykli zegara procesora w interwale próbkowania. Jeśli `Cycles` nie zostanie określony, interwał jest ustawiony na 10 000 000. Określ wartość bez przecinków.
 
 ## <a name="required-options"></a>Wymagane opcje
- **Czasomierz** może być określony tylko w wierszu polecenia, który zawiera jedną z następujących opcji.
+ **Czasomierz** można określić tylko w wierszu polecenia, który zawiera jedną z następujących opcji.
 
- **Uruchom:** `AppName` uruchamia Profiler i aplikację określoną przez `AppName`.
+ **Uruchom:** `AppName` Uruchamia profiler i aplikację `AppName`określoną przez .
 
- **Attach:** `PID` dołącza Profiler do procesu określonego przez identyfikator procesu (`PID`).
+ **Dołącz:** `PID` Dołącza profiler do procesu określonego przez identyfikator`PID`procesu ( ).
 
 ## <a name="invalid-options"></a>Nieprawidłowe opcje
- Nie można określić następujących opcji w tym samym wierszu polecenia co **czasomierz**.
+ W tym samym wierszu polecenia nie można określić następujących opcji co **timer**.
 
- **PF**[ **:** `Events`] ustawia zdarzenie próbkowania na błędy stron i opcjonalnie ustawia interwał próbkowania do `Events`. Domyślny interwał PF wynosi 10.
+ **PF**[**:**`Events`] Ustawia zdarzenie próbkowania na błędy `Events`strony i opcjonalnie ustawia interwał próbkowania na . Domyślny interwał PF wynosi 10.
 
- **Sys**[ **:** `Events`] ustawia zdarzenie próbkowania dla wywołań systemu operacyjnego i opcjonalnie ustawia interwał próbkowania do `Events`. Domyślny interwał sys to 10.
+ **Sys**[**:**`Events`] Ustawia zdarzenie próbkowania na wywołania `Events`systemu operacyjnego i opcjonalnie ustawia interwał próbkowania na . Domyślny interwał Sys wynosi 10.
 
- **Licznik**[ **:** `Name,Reload,FriendlyName`] ustawia zdarzenie próbkowania na licznik wydajności procesora CPU określony przez `Name` i ustawia interwał próbkowania do `Reload`.
+ **Licznik**[**:**`Name,Reload,FriendlyName`] Ustawia zdarzenie próbkowania `Name` na licznik wydajności `Reload`procesora określony przez i ustawia interwał próbkowania na .
 
- **GC**[ **:** {&#124;**okres istnienia**przydziału}] zbiera dane pamięci platformy .NET. Domyślnie (**alokacja**) dane są zbierane przy każdym zdarzeniu przydziału pamięci. Gdy określono parametr **okresu istnienia** , dane są również zbierane przy każdym zdarzeniu odzyskiwania pamięci.
+ **GC**[**:**{ Okres **istnienia****alokacji**&#124;}] Zbiera dane pamięci .NET. Domyślnie **(Alokacja**) dane są zbierane przy każdym zdarzeniu alokacji pamięci. Po określeniu **parametru Lifetime** dane są również zbierane w każdym przypadku wyrzucania elementów bezużytecznych.
 
 ## <a name="example"></a>Przykład
- Ten przykład ilustruje sposób ustawiania interwału próbkowania profilera do 1 000 000 cykli procesora.
+ W tym przykładzie pokazano, jak ustawić interwał próbkowania profilera na 1 000 000 cykli procesora.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Timer:1000000
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [VSPerfCmd](../profiling/vsperfcmd.md)
-- [Profile aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profilowanie aplikacji sieci Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
-- [Usługi profilu](../profiling/command-line-profiling-of-services.md)
+- [Aplikacje autonomiczne profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profil ASP.NET aplikacji internetowych](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

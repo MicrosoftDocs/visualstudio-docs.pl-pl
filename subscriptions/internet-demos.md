@@ -1,5 +1,5 @@
 ---
-title: Korzystanie z kluczy produktów do obsługi pokazów internetowych za pośrednictwem usług terminalowych | Microsoft Docs
+title: Używanie kluczy produktu do obsługi pokazów internetowych za pośrednictwem usług terminalowych | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
@@ -7,41 +7,41 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak używać kluczy produktów do obsługi pokazów internetowych za pośrednictwem usług terminalowych i włączania dostępu RDS
 ms.openlocfilehash: c02bce8fe098c75f0405fdd4e9ba5f0f143401fa
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937459"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Pokazy internetowe za pośrednictwem usług terminalowych
-Za pomocą subskrypcji programu Visual Studio możesz zapewnić użytkownikom końcowym dostęp do pokazów internetowych programów za pośrednictwem usług terminalowych (Windows Server 2003 lub Windows Server 2008) lub Usługi pulpitu zdalnego (system Windows Server 2008 R2 i nowsze). Do 200 anonimowych użytkowników może jednocześnie uzyskać dostęp do demonstracji w ten sposób. Demonstracja nie może korzystać z danych produkcyjnych. Subskrybenci programu Visual Studio mają licencję na prezentowanie aplikacji użytkownikom końcowym. Ta prezentacja internetowa korzystająca z usług terminalowych lub Usługi pulpitu zdalnego (RDS) jest jedynym scenariuszem, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio mogą korzystać z aplikacji demonstracyjnej, gdy oprogramowanie jest licencjonowane za pośrednictwem wizualizacji Subskrypcje Studio.
+W przypadku subskrypcji programu Visual Studio użytkownicy końcowi mogą zapewniać użytkownikom końcowym dostęp do pokazów internetowych programów za pośrednictwem usług terminalowych (Windows Server 2003 lub Windows Server 2008) lub usług pulpitu zdalnego (Windows Server 2008 R2 i nowszych). W ten sposób może jednocześnie uzyskać dostęp do demonstracji do 200 anonimowych użytkowników. Demonstracja nie może używać danych produkcyjnych. Subskrybenci programu Visual Studio mają licencję na demonstrować swoje aplikacje użytkownikom końcowym. Ta demonstracja internetowa przy użyciu usług terminalowych (TS) lub usług pulpitu zdalnego (RDS) jest jedynym scenariuszem, w którym użytkownicy końcowi bez subskrypcji programu Visual Studio mogą wchodzić w interakcje z aplikacją demonstracyjną, gdy oprogramowanie jest licencjonowane za pośrednictwem programu Visual Subskrypcje studyjne.
 
-Jest to uzupełnienie praw deweloperskich/testowych, w przypadku których Subskrybenci programu Visual Studio mogą używać jako wielu połączeń usług pulpitu zdalnego lub usług terminalowych.
+Jest to dodatek do praw deweloperskich/testowych, gdzie subskrybenci programu Visual Studio mogą używać dowolną liczbę połączeń rds lub usług TS, ile potrzeba.
 
-## <a name="enabling-rds-access"></a>Włączanie dostępu RDS
-Subskrybenci programu Visual Studio mogą zwiększyć liczbę użytkowników, którzy mogą uzyskać dostęp do systemu Windows Server za pośrednictwem usług RDS, wprowadzając klucz produktu dostarczony na karcie [klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) w [portalu subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Aby uzyskać klucz produktu, Połącz się ze stroną klucze produktu i przewiń w dół do używanej wersji systemu Windows Server. Znajdź pozycję "Windows Server < version > R2 Usługi pulpitu zdalnego < połączenia użytkowników lub urządzeń >" i kliknij link **klucz roszczeń** . Jeśli na przykład używasz usług pulpitu zdalnego w systemie Windows Server 2012 R2, a wdrożenie korzysta z licencji CAL użytkownika, wybierz pozycję "Windows Server 2012 Usługi pulpitu zdalnego połączenia użytkowników (50)".
-Dla systemu Windows Server 2008 R2 dostępne są pięć kluczy każdego typu, a każdy klucz będzie obsługiwał 20 połączeń. W przypadku systemu Windows Server 2012 R2 cztery klucze dla każdego typu są zapewniane i będą obsługiwały 50 połączeń każdego z nich.
+## <a name="enabling-rds-access"></a>Włączanie dostępu rds
+Subskrybenci programu Visual Studio mogą zwiększyć liczbę użytkowników, którzy mogą uzyskiwać dostęp do systemu Windows Server za pośrednictwem usługi RDS, wprowadzając klucz produktu podany na karcie [Klucze produktu](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) w [portalu subskrybenta](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Aby uzyskać klucz produktu, połącz się ze stroną Klucze produktu i przewiń w dół do wersji uruchomionego systemu Windows Server. Znajdź pozycję "Windows Server < version > R2 Remote Desktop Services < połączenia > użytkownika lub urządzenia" i kliknij łącze **Klucz oświadczeń.** Jeśli na przykład usługi RDS są używane w systemie Windows Server 2012 R2, a wdrożenie jest używane przy użyciu licencji CAL użytkowników, wybierz opcję "Połączenia użytkowników usług pulpitu zdalnego systemu Windows Server 2012 (50)".
+Dla systemu Windows Server 2008 R2 dostępnych jest pięć kluczy każdego typu, a każdy klucz obsługuje 20 połączeń. W systemie Windows Server 2012 R2 dostępne są cztery klucze dla każdego typu, które obsługują po 50 połączeń.
 
 ## <a name="to-enable-additional-connections-in-windows-server"></a>Aby włączyć dodatkowe połączenia w systemie Windows Server:
 1. Otwórz Menedżera serwera.
-2. Otwórz listę serwery w okienku nawigacji po lewej stronie.
-3. Kliknij prawym przyciskiem myszy serwer licencji i wybierz polecenie "Zainstaluj licencje".
-4. Postępuj zgodnie z instrukcjami wyświetlanymi w kreatorze.  Po wybraniu typu umowy wybierz pozycję "pakiet licencji (detaliczna)" i wprowadź klucz produktu uzyskany w portalu.
+2. Otwórz listę Serwery w lewym okienku nawigacyjnym.
+3. Kliknij prawym przyciskiem myszy na serwerze licencji i wybierz "Zainstaluj licencje".
+4. Postępuj zgodnie z krokami w kreatorze.  Wybierając typ umowy, wybierz opcję "Pakiet licencji (handel detaliczny)" i wprowadź klucz produktu uzyskany z portalu MY.
 
-Użytkownicy końcowi mogą łączyć się z dostępem do aplikacji za pośrednictwem usług pulpitu zdalnego, jeśli są spełnione następujące warunki:
-- Użytkownicy muszą być anonimowi (w stanie nieuwierzytelnionym).
-- Połączenia muszą należeć przez Internet.
-- W celu pokazania aplikacji można używać maksymalnie 200 połączeń użytkownika.
-- Klucze produktów umożliwiające nawiązywanie połączeń użytkowników muszą zostać uzyskane przez subskrybenta programu Visual Studio.
+Użytkownicy końcowi mogą łączyć się z aplikacjami dostępu za pośrednictwem usług RDS, jeśli spełnione są następujące warunki:
+- Użytkownicy muszą być anonimowi (w stanie nieue uwierzytelnionym).
+- Połączenia muszą być nawiązywki przez Internet.
+- Do 200 równoczesnych połączeń użytkownika mogą być używane do demonstracji aplikacji.
+- Klucze produktu, aby włączyć połączenia użytkownika muszą być uzyskane przez subskrybenta programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
-- [Zawiera systemu Windows Server](https://docs.microsoft.com/windows-server/)
+## <a name="see-also"></a>Zobacz też
+- [Documenation systemu Windows Server](https://docs.microsoft.com/windows-server/)
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Jeśli potrzebujesz wskazówek dotyczących wdrażania usług pulpitu zdalnego, zapoznaj się z wieloczęściową serią w blogu na **usługi pulpitu zdalnego wdrożenia sesji usług pulpitu zdalnego (rds 2012)** w https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
+Jeśli potrzebujesz wskazówek dotyczących wdrażania usług pulpitu zdalnego, zapoznaj się z wieloczęściową serią blogów dotyczących **wdrażania sesji usług pulpitu zdalnego (RDS) 2012** w programie https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
-Jeśli masz jakieś pytania, odwiedź [forum usług pulpit zdalny Microsoft Services](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
+Jeśli masz jakieś pytania, odwiedź [forum usług pulpitu zdalnego firmy Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).

@@ -1,5 +1,5 @@
 ---
-title: Dostosuj kompilację | Microsoft Docs
+title: Dostosowywanie kompilacji | Dokumenty firmy Microsoft
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,37 +12,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7ddf87f5fa9f937c0272e37f3a6b4aba29f2d6c
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77652797"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
-Projekty programu MSBuild korzystające ze standardowego procesu kompilacji (importowane elementy *Microsoft. Common. props* i *Microsoft. Common. targets*) mają kilka punktów zaczepienia rozszerzalności, których można użyć do dostosowania procesu kompilacji.
+Projekty MSBuild, które używają standardowego procesu kompilacji (importowanie *Microsoft.Common.props* i *Microsoft.Common.targets)* mają kilka haków rozszerzalności, których można użyć do dostosowania procesu kompilacji.
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>Dodawanie argumentów do wywołań MSBuild wiersza polecenia dla projektu
 
-Plik *Directory. Build. rsp* w katalogu źródłowym lub nowszym zostanie zastosowany do kompilacji wiersza polecenia projektu. Aby uzyskać szczegółowe informacje, zobacz [pliki odpowiedzi MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
+Plik *Directory.Build.rsp* w katalogu źródłowym lub powyżej katalogu źródłowego zostanie zastosowany do kompilacji wiersza polecenia projektu. Aby uzyskać szczegółowe informacje, zobacz [PLIKI odpowiedzi MSBuild](../msbuild/msbuild-response-files.md#directorybuildrsp).
 
-## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory. Build. props i Directory. Build. targets
+## <a name="directorybuildprops-and-directorybuildtargets"></a>Katalog.Build.props i Directory.Build.targets
 
-W wersjach wcześniejszych niż 15, jeśli chcesz udostępnić nową, niestandardową właściwość do projektów w rozwiązaniu, trzeba ręcznie dodać odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Lub trzeba zdefiniować właściwość w pliku *. props* , a następnie jawnie zaimportować plik *. props* w każdym projekcie w rozwiązaniu, między innymi.
+Przed MSBuild w wersji 15, jeśli chcesz zapewnić nową, niestandardową właściwość do projektów w rozwiązaniu, trzeba było ręcznie dodać odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Lub trzeba było zdefiniować właściwość w pliku *.props,* a następnie jawnie zaimportować plik *.props* w każdym projekcie w rozwiązaniu, między innymi.
 
-Można jednak teraz dodać nową właściwość do każdego projektu w jednym kroku, definiując ją w pojedynczym pliku o nazwie *Directory. Build. props* w folderze głównym, który zawiera źródło. Gdy program MSBuild działa, *Microsoft. Common. props* przeszukuje strukturę katalogów dla *katalogu. Build. props* plik (i *Microsoft. Common. targets* szuka *katalogu. Build. targets*). Jeśli zostanie znaleziony, zaimportuje właściwość. *Directory. Build. props* to plik zdefiniowany przez użytkownika, który udostępnia dostosowania do projektów w katalogu.
+Jednak teraz można dodać nową właściwość do każdego projektu w jednym kroku, definiując ją w jednym pliku o nazwie *Directory.Build.props* w folderze głównym, który zawiera źródło. Po uruchomieniu programu MSBuild *firma Microsoft.Common.props* przeszukuje strukturę katalogów w poszukiwaniu pliku *Directory.Build.props* (a *microsoft.common.targets* szuka *directory.build.targets).* Jeśli znajdzie jeden, importuje właściwość. *Directory.Build.props* to plik zdefiniowany przez użytkownika, który zapewnia dostosowania projektów w katalogu.
 
 > [!NOTE]
-> W systemach plików opartych na systemie Linux jest rozróżniana wielkość liter. Upewnij się, że wielkość liter w pliku Directory. Build. props pasuje do dokładnie lub nie zostanie wykryta podczas procesu kompilacji.
+> Systemy plików oparte na systemie Linux są rozróżniane. Upewnij się, że wielkość liter nazwa pliku Directory.Build.props jest dokładnie zgodna lub nie zostanie wykryta podczas procesu kompilacji.
 >
-> Aby uzyskać więcej informacji, zobacz [ten problem](https://github.com/dotnet/core/issues/1991#issue-368441031) w usłudze GitHub.
+> Zobacz [ten problem z githubem,](https://github.com/dotnet/core/issues/1991#issue-368441031) aby uzyskać więcej informacji.
 
-### <a name="directorybuildprops-example"></a>Przykład katalogu. Build. props
+### <a name="directorybuildprops-example"></a>Przykład directory.build.props
 
-Na przykład jeśli chcesz włączyć wszystkie projekty w celu uzyskania dostępu do nowej funkcji Roslyn **/Deterministic** (która jest dostępna w miejscu docelowym Roslyn `CoreCompile` przez właściwość `$(Deterministic)`), możesz wykonać następujące czynności.
+Na przykład jeśli chcesz włączyć wszystkie projekty, aby uzyskać dostęp do nowej roslyn **/deterministic** funkcji (która jest widoczna w roslyn `CoreCompile` docelowej przez właściwość), `$(Deterministic)`można wykonać następujące czynności.
 
-1. Utwórz nowy plik w katalogu głównym repozytorium o nazwie *Directory. Build. props*.
-2. Dodaj następujący kod XML do pliku.
+1. Utwórz nowy plik w katalogu repozytorium o nazwie *Directory.Build.props*.
+2. Dodaj do pliku następujący kod XML.
 
    ```xml
    <Project>
@@ -52,11 +52,11 @@ Na przykład jeśli chcesz włączyć wszystkie projekty w celu uzyskania dostę
    </Project>
    ```
 
-3. Uruchom program MSBuild. Istniejące Importy elementu *Microsoft. Common. props* i *Microsoft. Common. targets* są wyszukiwane i importowane.
+3. Uruchom msbuild. Istniejące importy programu *Microsoft.Common.props* i *Microsoft.Common.targets* znajdują plik i importują go.
 
 ### <a name="search-scope"></a>Zakres wyszukiwania
 
-Podczas wyszukiwania *katalogu. Build. props* plik, MSBuild przegląda strukturę katalogów w górę z lokalizacji projektu (`$(MSBuildProjectFullPath)`), zatrzymując po znalezieniu pliku *Directory. Build. props* . Na przykład jeśli `$(MSBuildProjectFullPath)` była *c:\users\username\code\test\case1*, program MSBuild zacznie tam przeszukiwać, a następnie przeszukać strukturę katalogów w górę do momentu zlokalizowania pliku *Directory. Build. props* , tak jak w poniższej strukturze katalogów.
+Podczas wyszukiwania pliku *Directory.Build.props,* MSBuild przechadza strukturę katalogów w górę od lokalizacji projektu (`$(MSBuildProjectFullPath)`), zatrzymując się po zlokalizowaniu pliku *Directory.Build.props.* Na przykład, `$(MSBuildProjectFullPath)` jeśli był *c:\users\username\code\test\case1*, MSBuild rozpocznie wyszukiwanie tam, a następnie przeszuka strukturę katalogów w górę, aż znajdzie plik *Directory.Build.props,* jak w poniższej strukturze katalogów.
 
 ```
 c:\users\username\code\test\case1
@@ -67,17 +67,17 @@ c:\users
 c:\
 ```
 
-Lokalizacja pliku rozwiązania nie jest istotna dla *katalogu. Build. props*.
+Lokalizacja pliku rozwiązania nie ma znaczenia dla *pliku Directory.Build.props*.
 
-### <a name="import-order"></a>Importuj zamówienie
+### <a name="import-order"></a>Zamówienie importu
 
-Plik *Directory. Build. props* jest zaimportowany bardzo wcześnie w elemencie *Microsoft. Common. props*, a właściwości zdefiniowane później są niedostępne dla tego programu. Dlatego należy unikać odwoływania się do właściwości, które nie zostały jeszcze zdefiniowane (i które zostaną oszacowane jako puste).
+*Directory.Build.props* jest importowany bardzo wcześnie w *microsoft.common.props*, a właściwości zdefiniowane później są niedostępne dla niego. Należy więc unikać odwoływania się do właściwości, które nie są jeszcze zdefiniowane (i oceni do opróżnienia).
 
-*Katalog. Build. targets* został zaimportowany z *Microsoft. Common. targets* po imporcie *. targets* Files z pakietów NuGet. W związku z tym można przesłonić właściwości i obiekty docelowe zdefiniowane w większości logiki kompilacji, ale czasami konieczne może być dostosowanie pliku projektu po ostatecznym imporcie.
+*Directory.Build.targets* jest importowany z *witryny Microsoft.Common.targets* po zaimportowaniu plików *.targets* z pakietów NuGet. Tak więc może zastąpić właściwości i obiekty docelowe zdefiniowane w większości logiki kompilacji, ale czasami może być konieczne dostosowanie pliku projektu po ostatecznym imporcie.
 
 ### <a name="use-case-multi-level-merging"></a>Przypadek użycia: scalanie wielopoziomowe
 
-Załóżmy, że masz standardową strukturę rozwiązań:
+Załóżmy, że masz tę standardową strukturę rozwiązania:
 
 ```
 \
@@ -93,93 +93,93 @@ Załóżmy, że masz standardową strukturę rozwiązań:
     \Project2Tests
 ```
 
-Może być pożądane posiadanie wspólnych właściwości dla wszystkich projektów *(1)* , wspólnych właściwości projektów *src* *(2-SRC)* i wspólnych właściwości projektów *testowych* *(2-testowe)* .
+Pożądane może być mieć wspólne właściwości dla wszystkich projektów *(1),* wspólne właściwości dla projektów *src* *(2-src)* i wspólne właściwości dla projektów *testowych* *(2-test)*.
 
-Aby program MSBuild prawidłowo scalał pliki wewnętrzne (*2-src* i *2-Test*) z plikiem zewnętrznym (*1*), należy wziąć pod uwagę, że gdy program MSBuild odnajdzie plik *Directory. Build. props* , zatrzyma dalsze skanowanie. Aby kontynuować skanowanie i scalanie w zewnętrznym pliku, Umieść ten kod w obu plikach wewnętrznych:
+Aby MSBuild poprawnie scalić "wewnętrzne" pliki *(2-src* i *2-test)* z "zewnętrznym" plikiem (*1*), należy wziąć pod uwagę, że gdy MSBuild znajdzie plik *Directory.Build.props,* zatrzymuje dalsze skanowanie. Aby kontynuować skanowanie i scalanie do pliku zewnętrznego, umieść ten kod w obu plikach wewnętrznych:
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
-Podsumowanie ogólnego podejścia programu MSBuild jest następujące:
+Podsumowanie ogólnego podejścia MSBuild jest następujące:
 
-- W przypadku dowolnego projektu MSBuild znajduje pierwszy *katalog. Build. props* w górę struktury rozwiązania, Scala go z wartościami domyślnymi i kończy skanowanie w celu uzyskania większej liczby
-- Jeśli chcesz, aby można było znaleźć i scalić wiele poziomów, [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) (pokazane powyżej) plik "zewnętrzny" z pliku "wewnętrzny"
-- Jeśli plik "zewnętrzny" nie jest również zaimportowany powyżej, a następnie trwa skanowanie
-- Aby kontrolować proces skanowania/scalania, użyj `$(DirectoryBuildPropsPath)` i `$(ImportDirectoryBuildProps)`
+- Dla danego projektu MSBuild znajduje pierwszy *Katalog.Build.props* w górę w strukturze rozwiązania, scala go z wartościami domyślnymi i zatrzymuje skanowanie w celu uzyskania więcej
+- Jeśli chcesz znaleźć i scalić wiele [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) poziomów, a następnie (pokazany powyżej) plik "zewnętrzny" z pliku "wewnętrznego"
+- Jeśli "zewnętrzny" plik nie importuje również czegoś nad nim, skanowanie zatrzymuje się tam
+- Aby kontrolować proces skanowania/scalania, `$(DirectoryBuildPropsPath)``$(ImportDirectoryBuildProps)`
 
-Lub po prostu: pierwszy *katalog. Build. props* , który nie importuje wszystkiego, jest zatrzymywany przez MSBuild.
+Albo po prostu: pierwszy *Directory.Build.props,* który nie importuje niczego jest, gdzie MSBuild zatrzymuje.
 
-### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Wybierz między dodawaniem właściwości do pliku. props lub. targets
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Wybierz między dodawaniem właściwości do pliku .props lub .targets
 
-MSBuild jest zależna od kolejności importu, a ostatnią definicją właściwości (lub `UsingTask` lub Target) jest definicja użyta.
+MSBuild jest zależny od zamówienia importu, a `UsingTask` ostatnia definicja właściwości (lub lub lub docelowej) jest używana definicja.
 
-W przypadku korzystania z jawnego importu można importować z pliku *. props* lub *. targets* w dowolnym momencie. Oto ogólnie stosowana Konwencja:
+Podczas używania jawnego importu można importować pliki *.props* lub *.targets* w dowolnym momencie. Oto powszechnie stosowana konwencja:
 
-- pliki *. props* są importowane wczesnie w kolejności importu.
+- Pliki *.props* są importowane na początku zamówienia importu.
 
-- pliki *. targets* są importowane najpóźniej w kolejności kompilacji.
+- *Pliki .targets* są importowane z opóźnieniem w kolejności kompilacji.
 
-Ta konwencja jest wymuszana przez `<Project Sdk="SdkName">` Importy (to oznacza, że import *zestawu SDK. props* staje się pierwszą, przed całą zawartością pliku, *zestaw SDK. targets* jest ostatni po całej zawartości pliku).
+Ta konwencja jest `<Project Sdk="SdkName">` wymuszana przez import (to znaczy, import *Sdk.props* jest pierwszy, przed całą zawartością pliku, a następnie *Sdk.targets* jest ostatni, po całej zawartości pliku).
 
-Podczas decydowania o miejscu, w którym należy umieścić właściwości, użyj następujących ogólnych wytycznych:
+Przy podejmowaniu decyzji, gdzie umieścić właściwości, należy użyć następujących ogólnych wytycznych:
 
-- W przypadku wielu właściwości nie ma znaczenia, gdzie są zdefiniowane, ponieważ nie są zastępowane i będą odczytywane tylko w czasie wykonywania.
+- Dla wielu właściwości nie ma znaczenia, gdzie są one zdefiniowane, ponieważ nie są zastępowane i będą odczytywane tylko w czasie wykonywania.
 
-- W przypadku zachowania, które może być dostosowane w pojedynczym projekcie, ustaw wartości domyślne w plikach *. props* .
+- W przypadku zachowania, które może być dostosowane w poszczególnych projektach, ustaw wartości domyślne w *plikach .props.*
 
-- Należy unikać ustawiania właściwości zależnych w plikach *. props* , odczytując wartość prawdopodobnie dostosowanej właściwości, ponieważ nie będzie ona miała zastosowania do momentu, gdy MSBuild odczyta projekt użytkownika.
+- Należy unikać ustawiania właściwości zależnych w *plikach .props,* odczytając wartość ewentualnie dostosowanej właściwości, ponieważ dostosowanie nie nastąpi, dopóki MSBuild nie przeczyta projektu użytkownika.
 
-- Ustaw właściwości zależne w plikach *. targets* , ponieważ będą one pobierać dostosowania z poszczególnych projektów.
+- Ustaw właściwości zależne w plikach *.targets,* ponieważ będą one odbierać dostosowania z poszczególnych projektów.
 
-- Jeśli zachodzi potrzeba zastąpienia właściwości, zrób to w pliku *. targets* , gdy wszystkie dostosowania użytkownika i projektu zaczną obowiązywać. Należy zachować ostrożność w przypadku używania właściwości pochodnych; należy również zastąpić właściwości pochodne.
+- Jeśli chcesz zastąpić właściwości, zrób to w pliku *.targets,* po wszystkich dostosowań projektu użytkownika miały szansę na zaniechanych. Należy zachować ostrożność podczas korzystania z właściwości pochodnych; właściwości pochodne mogą również wymagać zastąpienia.
 
-- Uwzględnij elementy w plikach *. props* (warunek na właściwości). Wszystkie właściwości są brane pod uwagę przed dowolnym elementem, więc dostosowania właściwości User-Project są pobierane i dają użytkownikowi możliwość `Remove` lub `Update` dowolnego elementu wprowadzonego przez import.
+- Uwzględnij elementy w *plikach .props* (uwarunkowane właściwością). Wszystkie właściwości są brane pod uwagę przed każdym elementem, więc dostosowania właściwości projektu użytkownika `Remove` są `Update` pobierane, a to daje projektowi użytkownika możliwość lub dowolny element wniesiony przez import.
 
-- Zdefiniuj elementy docelowe w plikach *. targets* . Jeśli jednak plik *targets* zostanie zaimportowany przez zestaw SDK, należy pamiętać, że w tym scenariuszu bardziej trudne jest zastępowanie obiektu docelowego, ponieważ projekt użytkownika nie ma miejsca, aby przesłonić go domyślnie.
+- Definiowanie obiektów docelowych w *plikach .targets.* Jeśli jednak plik *.targets* jest importowany przez sdk, należy pamiętać, że ten scenariusz sprawia, że zastępowanie obiektu docelowego jest trudniejsze, ponieważ projekt użytkownika nie ma miejsca na zastąpienie go domyślnie.
 
-- Jeśli to możliwe, Preferuj Dostosowywanie właściwości w czasie oceniania nad zmianami właściwości w elemencie docelowym. Te wskazówki ułatwiają załadowanie projektu i zrozumienie jego działania.
+- Jeśli to możliwe, preferuj dostosowywanie właściwości w czasie oceny nad zmianą właściwości wewnątrz obiektu docelowego. Ta wytyczna ułatwia załadowanie projektu i zrozumienie, co robi.
 
-## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
+## <a name="msbuildprojectextensionspath"></a>ŚCIEŻKA MSBuildProjectExtensionsPath
 
-Domyślnie element *Microsoft. Common. props* importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` i *Microsoft. Common. targets* Imports `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Wartość domyślna `MSBuildProjectExtensionsPath` jest `$(BaseIntermediateOutputPath)`, `obj/`. NuGet używa tego mechanizmu do odwoływania się do logiki kompilacji dostarczanej z pakietami. oznacza to, że w czasie przywracania tworzy `{project}.nuget.g.props` pliki odwołujące się do zawartości pakietu.
+Domyślnie *microsoft.common.props* importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` i *Microsoft.Common.targets* importuje `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets`. Wartością `MSBuildProjectExtensionsPath` domyślną `$(BaseIntermediateOutputPath)` `obj/`jest , . NuGet używa tego mechanizmu, aby odwołać się do logiki kompilacji dostarczane z pakietami; oznacza to, że w `{project}.nuget.g.props` czasie przywracania tworzy pliki, które odwołują się do zawartości pakietu.
 
-Można wyłączyć ten mechanizm rozszerzalności, ustawiając właściwość `ImportProjectExtensionProps` na `false` w *katalogu. Build. props* lub przed zaimportowaniem elementu *Microsoft. Common. props*.
+Ten mechanizm rozszerzalności można wyłączyć, `ImportProjectExtensionProps` ustawiając właściwość `false` w *katalogu.Build.props* lub przed zaimportowaniem *pliku Microsoft.Common.props*.
 
 > [!NOTE]
-> Wyłączenie MSBuildProjectExtensionsPath Importy uniemożliwi logikę kompilacji dostarczaną w pakietach NuGet od zastosowania do projektu. Niektóre pakiety NuGet wymagają logiki kompilacji do wykonywania ich funkcji i będą renderowane jako bezużyteczny, gdy jest to wyłączone.
+> Wyłączenie importu MSBuildProjectExtensionsPath uniemożliwi logikę kompilacji dostarczoną w pakietach NuGet do projektu. Niektóre pakiety NuGet wymagają logiki kompilacji do wykonywania ich funkcji i będą renderowane bezużyteczne, gdy jest to wyłączone.
 
-## <a name="user-file"></a>plik. User
+## <a name="user-file"></a>plik użytkownika
 
-Plik *Microsoft. Common. CurrentVersion. targets* imports `$(MSBuildProjectFullPath).user`, jeśli istnieje, więc można utworzyć w projekcie pliku obok tego dodatkowego rozszerzenia. Aby uzyskać długoterminowe zmiany, które planujesz zaewidencjonować kontrolę źródła, wolisz zmienić projekt, tak aby w przyszłości nie trzeba było wiedzieć o tym mechanizmie rozszerzenia.
+*Microsoft.Common.CurrentVersion.targets* importuje, `$(MSBuildProjectFullPath).user` jeśli istnieje, dzięki czemu można utworzyć plik obok projektu z tym dodatkowym rozszerzeniem. W przypadku długoterminowych zmian, które zamierzasz zaewidencjonować w kontroli źródła, wolisz zmienić sam projekt, aby przyszli opiekunowie nie musieli wiedzieć o tym mechanizmie rozszerzenia.
 
-## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>MSBuildExtensionsPath i MSBuildUserExtensionsPath
+## <a name="msbuildextensionspath-and-msbuilduserextensionspath"></a>Ścieżka MSBuildExtensionsPath i MSBuildUserExtensionsPath
 
 > [!WARNING]
-> Korzystanie z tych mechanizmów rozszerzeń utrudnia Kompilowanie kompilacji między maszynami. Spróbuj użyć konfiguracji, którą można sprawdzić w systemie kontroli źródła i udostępnić wszystkim deweloperom bazy kodu.
+> Korzystanie z tych mechanizmów rozszerzenia utrudnia uzyskanie powtarzalnych kompilacji na różnych komputerach. Spróbuj użyć konfiguracji, która może być zaewidencjonowana w systemie kontroli źródła i współużytkowana przez wszystkich deweloperów bazy kodu.
 
-Zgodnie z Konwencją, importuje się wiele podstawowych plików logiki kompilacji
+Zgodnie z konwencją wiele podstawowych plików logiki kompilacji importuje
 
 ```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportBefore\*.targets
 ```
 
-przed ich zawartością i
+przed ich zawartością, oraz
 
 ```xml
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-ustawiając. Ta konwencja pozwala zainstalowanym zestawom SDK na rozszerzanie logiki kompilacji wspólnych typów projektów.
+Później. Ta konwencja umożliwia zainstalowane pakiety SDK, aby rozszerzyć logikę kompilacji typowych typów projektów.
 
-Ta sama struktura katalogów jest przeszukiwana `$(MSBuildUserExtensionsPath)`, która jest folderem na użytkownika *%LocalAppData%\Microsoft\MSBuild*. Pliki umieszczone w tym folderze zostaną zaimportowane dla wszystkich kompilacji odpowiedniego typu projektu uruchamianego w ramach poświadczeń tego użytkownika. Rozszerzenia użytkownika można wyłączyć przez ustawienie właściwości nazwanych po importowaniu pliku we wzorcu `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Na przykład ustawienie `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` na `false` uniemożliwia `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`importowania.
+Ta sama struktura katalogów `$(MSBuildUserExtensionsPath)`jest przeszukiwana w programie , który jest folderem na użytkownika *%LOCALAPPDATA%\Microsoft\MSBuild*. Pliki umieszczone w tym folderze zostaną zaimportowane dla wszystkich kompilacji odpowiedniego typu projektu uruchamianych pod poświadczeniami tego użytkownika. Rozszerzenia użytkowników można wyłączyć, ustawiając właściwości nazwane po pliku `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`importowania we wzorcu . Na przykład `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` ustawienie, aby `false` `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`zapobiec importowaniu .
 
-## <a name="customize-the-solution-build"></a>Dostosuj kompilację rozwiązania
+## <a name="customize-the-solution-build"></a>Dostosowywanie kompilacji rozwiązania
 
 > [!IMPORTANT]
-> Dostosowanie kompilacji rozwiązania w ten sposób dotyczy tylko kompilacji z wiersza polecenia przy użyciu programu *MSBuild. exe*. Nie **dotyczy to** kompilacji w programie Visual Studio.
+> Dostosowywanie kompilacji rozwiązania w ten sposób dotyczy tylko kompilacji wiersza polecenia za pomocą *pliku MSBuild.exe*. Nie **ma** zastosowania do kompilacji wewnątrz programu Visual Studio.
 
-Gdy program MSBuild kompiluje plik rozwiązania, najpierw przekształci go wewnętrznie w plik projektu, a następnie kompiluje. Wygenerowany plik projektu importuje `before.{solutionname}.sln.targets` przed zdefiniowaniem dowolnych elementów docelowych i `after.{solutionname}.sln.targets` po importowaniu elementów docelowych, włącznie z elementami docelowymi zainstalowanymi w katalogach `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` i `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter`.
+Gdy MSBuild tworzy plik rozwiązania, najpierw tłumaczy go wewnętrznie do pliku projektu, a następnie tworzy go. Wygenerowany plik projektu `before.{solutionname}.sln.targets` importuje przed `after.{solutionname}.sln.targets` zdefiniowaniem dowolnych obiektów docelowych `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` i po zaimportowaniu obiektów docelowych, w tym obiektów docelowych zainstalowanych w katalogach i katalogach.
 
-Na przykład można zdefiniować nowy obiekt docelowy, aby zapisać niestandardowy komunikat dziennika po skompilowaniu *MyCustomizedSolution. sln* , tworząc plik w tym samym katalogu o nazwie *After. MyCustomizedSolution. sln. targets* , które zawierają
+Na przykład można zdefiniować nowy obiekt docelowy, aby napisać niestandardowy komunikat dziennika po utworzeniu *MyCustomizedSolution.sln,* tworząc plik w tym samym katalogu *nazwanym po. MyCustomizedSolution.sln.targets,* który zawiera
 
 ```xml
 <Project>
@@ -189,43 +189,43 @@ Na przykład można zdefiniować nowy obiekt docelowy, aby zapisać niestandardo
 </Project>
 ```
 
-## <a name="customize-all-net-builds"></a>Dostosuj wszystkie kompilacje platformy .NET
+## <a name="customize-all-net-builds"></a>Dostosowywanie wszystkich kompilacji platformy .NET
 
-W przypadku obsługi serwera kompilacji może być konieczne skonfigurowanie globalnie ustawień programu MSBuild dla wszystkich kompilacji na serwerze.  W zasadzie można modyfikować pliki globalne *Microsoft. Common. targets* lub *Microsoft. Common. props* , ale istnieje lepszy sposób. Możesz mieć wpływ na wszystkie kompilacje określonego typu projektu (na przykład wszystkie C# projekty), używając pewnych właściwości programu MSBuild i dodając niektóre `.targets` niestandardowe i `.props` pliki.
+Podczas obsługi serwera kompilacji może być konieczne skonfigurowanie ustawień MSBuild globalnie dla wszystkich kompilacji na serwerze.  Zasadniczo można zmodyfikować globalne *pliki Microsoft.Common.Targets* lub *Microsoft.Common.Props,* ale istnieje lepszy sposób. Można mieć wpływ na wszystkie kompilacje określonego typu projektu (takich jak wszystkie projekty Języka C#) przy użyciu niektórych właściwości MSBuild i dodanie niektórych niestandardowych `.targets` i `.props` plików.
 
-Aby mieć wpływ C# na wszystkie lub Visual Basic kompilacje, które podlegają instalacji programu MSBuild lub Visual Studio, Utwórz plik *niestandardowy. before. Microsoft. Common. targets* lub *Custom. After. Microsoft. Common. targets* z obiektami docelowymi, które zostaną uruchomione przed lub po pliku *Microsoft. Common. datatargets*lub Custom. *before. Microsoft. Common. props* lub *Custom. After. Microsoft. Common. props* z właściwościami, które będą przetwarzane przed lub po elemencie *Microsoft. Common.*
+Aby mieć wpływ na wszystkie kompilacje języka C# lub Visual Basic podlegające instalacji msBuild lub Visual Studio, należy utworzyć plik *Custom.Before.Microsoft.Common.Targets* lub *Custom.After.Microsoft.Common.Targets* z obiektami docelowymi, które będą uruchamiane przed lub po *programie Microsoft.Common.targets,* lub *plikiem Custom.Before.Microsoft.Common.Props* lub *Custom.After.Microsoft.Common.Props* z właściwościami, które będą przetwarzane przed lub po *microsoft.common.props.*
 
-Lokalizacje tych plików można określić przy użyciu następujących właściwości programu MSBuild:
+Lokalizacje tych plików można określić przy użyciu następujących właściwości MSBuild:
 
 - CustomBeforeMicrosoftCommonProps
 - CustomBeforeMicrosoftCommonTargets
 - CustomAfterMicrosoftCommonProps
-- CustomAfterMicrosoftCommonTargets
+- CustomAfterMicrosoftCommonTargets (CustomAfterMicrosoftCommonTargets)
 - CustomBeforeMicrosoftCSharpProps
 - CustomBeforeMicrosoftVisualBasicProps
-- CustomAfterMicrosoftCSharpProps
-- CustomAfterMicrosoftVisualBasicProps
+- Niestandardowe pomicrosoftcsharpProps
+- NiestandardowezamicrosoftvisualBasicProps
 - CustomBeforeMicrosoftCSharpTargets
 - CustomBeforeMicrosoftVisualBasicTargets
-- CustomAfterMicrosoftCSharpTargets
-- CustomAfterMicrosoftVisualBasicTargets
+- CustomAfterMicrosoftCSharpTargets (CustomAfMicrosoftCSharpTargets)
+- CustomAfterMicrosoftVisualBasicTargets (Zestawy niestandardowe)
 
-*Wspólne* wersje tych właściwości wpływają na projekty C# i Visual Basic. Te właściwości można ustawić w wierszu polecenia programu MSBuild.
+*Typowe* wersje tych właściwości wpływają zarówno na projekty języka C# i Visual Basic. Właściwości te można ustawić w wierszu polecenia MSBuild.
 
 ```cmd
 msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Microsoft.Common.Targets" MyProject.csproj
 ```
 
-Najlepsze podejście zależy od Twojego scenariusza. Jeśli masz dedykowany serwer kompilacji i chcesz się upewnić, że niektóre elementy docelowe są zawsze wykonywane na wszystkich kompilacjach odpowiedniego typu projektu, który jest wykonywany na tym serwerze, użyj globalnie niestandardowego `.targets` lub pliku `.props`.  Jeśli chcesz, aby niestandardowe elementy docelowe były wykonywane tylko wtedy, gdy są spełnione określone warunki, użyj innej lokalizacji pliku i Ustaw ścieżkę do tego pliku, ustawiając odpowiednią właściwość programu MSBuild w wierszu polecenia programu MSBuild tylko wtedy, gdy jest to konieczne.
+Najlepsze podejście zależy od scenariusza. Jeśli masz serwer kompilacji dedykowanej i chcesz upewnić się, że niektóre obiekty docelowe zawsze są wykonywane `.targets` `.props` na wszystkich kompilacjach odpowiedniego typu projektu, które są wykonywane na tym serwerze, użycie globalnego niestandardowego lub pliku ma sens.  Jeśli chcesz, aby niestandardowe obiekty docelowe były wykonywane tylko wtedy, gdy mają zastosowanie określone warunki, użyj innej lokalizacji pliku i ustaw ścieżkę do tego pliku, ustawiając odpowiednią właściwość MSBuild w wierszu polecenia MSBuild tylko wtedy, gdy jest to potrzebne.
 
 > [!WARNING]
-> Program Visual Studio używa niestandardowych `.targets` lub `.props` plików, jeśli znajdzie je w folderze programu MSBuild za każdym razem, gdy kompiluje wszystkie projekty pasującego typu. Może to mieć niezamierzone konsekwencje, a jeśli to zrobisz, program Visual Studio może wymusić kompilację na komputerze.
+> Visual Studio używa `.targets` plików `.props` niestandardowych lub plików, jeśli znajdzie je w folderze MSBuild, gdy tworzy dowolny projekt odpowiedniego typu. Może to mieć niezamierzone konsekwencje, a jeśli zostanie wykonane niepoprawnie, można wyłączyć możliwość visual studio do tworzenia na komputerze.
 
-## <a name="customize-all-c-builds"></a>Dostosuj wszystkie C++ kompilacje
+## <a name="customize-all-c-builds"></a>Dostosowywanie wszystkich kompilacji języka C++
 
-W C++ przypadku projektów wcześniej wspomniane `.targets` niestandardowe i pliki `.props` są ignorowane. W C++ przypadku projektów można utworzyć pliki `.targets` dla każdej platformy i umieścić je w odpowiednich folderach importu dla tych platform.
+W przypadku projektów języka C++ `.targets` wcześniej `.props` wymienione niestandardowe i pliki są ignorowane. W przypadku projektów języka C++ można tworzyć `.targets` pliki dla każdej platformy i umieszczać je w odpowiednich folderach importu dla tych platform.
 
-Plik `.targets` dla platformy Win32, *Microsoft. cpp. Win32. targets*, zawiera następujący element `Import`:
+Plik `.targets` platformy Win32, *Microsoft.Cpp.Win32.targets,* zawiera `Import` następujący element:
 
 ```xml
 <Import Project="$(VCTargetsPath)\Platforms\Win32\ImportBefore\*.targets"
@@ -233,7 +233,7 @@ Plik `.targets` dla platformy Win32, *Microsoft. cpp. Win32. targets*, zawiera n
 />
 ```
 
-Znajduje się podobny element blisko końca tego samego pliku:
+Istnieje podobny element na końcu tego samego pliku:
 
 ```xml
 <Import Project="$(VCTargetsPath)\Platforms\Win32\ImportAfter\*.targets"
@@ -241,22 +241,22 @@ Znajduje się podobny element blisko końca tego samego pliku:
 />
 ```
 
-Podobne elementy importowania istnieją dla innych platform docelowych w programie *%ProgramFiles32%\MSBuild\Microsoft.Cpp\v {Version} \ platform\*.
+Podobne elementy importu istnieją dla innych platform docelowych w *%ProgramFiles32%\MSBuild\Microsoft.Cpp\v{version}\Platforms\*.
 
-Po umieszczeniu pliku `.targets` w odpowiednim folderze zgodnie z platformą, MSBuild importuje plik do każdej C++ kompilacji dla tej platformy. W razie konieczności można umieścić wiele plików `.targets`.
+Po umieszczeniu `.targets` pliku w odpowiednim folderze zgodnie z platformą, MSBuild importuje plik do każdej kompilacji Języka C++ dla tej platformy. W razie `.targets` potrzeby można umieścić tam wiele plików.
 
 ### <a name="specify-a-custom-import-on-the-command-line"></a>Określanie niestandardowego importu w wierszu polecenia
 
-W przypadku niestandardowych `.targets`, które mają zostać uwzględnione dla określonej kompilacji C++ projektu, należy ustawić jedną lub obie właściwości `ForceImportBeforeCppTargets` i `ForceImportAfterCppTargets` w wierszu polecenia.
+Dla `.targets` niestandardowych, które mają być uwzględnione dla określonej kompilacji projektu C++, należy ustawić jedną lub obie właściwości `ForceImportBeforeCppTargets` i `ForceImportAfterCppTargets` w wierszu polecenia.
 
 ```cmd
 msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.Cpp.Targets" MyCppProject.vcxproj
 ```
 
-W przypadku ustawienia globalnego (aby mieć wpływ na wszystkie C++ kompilacje dla platformy na serwerze kompilacji) Istnieją dwie metody. Najpierw można ustawić te właściwości przy użyciu zmiennej środowiskowej systemu, która jest zawsze ustawiona. Dzieje się tak, ponieważ program MSBuild zawsze odczytuje środowisko i tworzy (lub przesłania) właściwości dla wszystkich zmiennych środowiskowych.
+Dla ustawienia globalnego (aby mieć wpływ, powiedzmy, wszystkie kompilacje języka C++ dla platformy na serwerze kompilacji), istnieją dwie metody. Po pierwsze można ustawić te właściwości przy użyciu zmiennej środowiskowej systemu, która jest zawsze ustawiona. Działa to, ponieważ MSBuild zawsze odczytuje środowisko i tworzy (lub zastępuje) właściwości dla wszystkich zmiennych środowiskowych.
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)
+- [Koncepcje MSBuild](../msbuild/msbuild-concepts.md)
 
-- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
+- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)

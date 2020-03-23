@@ -1,48 +1,48 @@
 ---
 title: JavaScript i TypeScript
-description: Informacje na temat pomocy technicznej dotyczącej języka JavaScript w Visual Studio dla komputerów Mac
+description: Informacje dotyczące obsługi języka JavaScript w programie Visual Studio dla komputerów Mac
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984902"
 ---
-# <a name="javascript-and-typescript-support"></a>Obsługa języków JavaScript i TypeScript
+# <a name="javascript-and-typescript-support"></a>Obsługa języka JavaScript i TypeScript
 
-Visual Studio dla komputerów Mac zapewnia obsługę języków JavaScript i TypeScript za pomocą wyróżniania składni, formatowania kodu i technologii IntelliSense.
+Program Visual Studio dla komputerów Mac zapewnia obsługę języka JavaScript i TypeScript za pomocą wyróżniania składni, formatowania kodu i intellisense.
 
-![Obsługa edytora TypeScript](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![obsługa edytora maszyn](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
 
-Aby uzyskać więcej informacji na temat pisania języka JavaScript, zobacz Pisanie przewodników po [kodzie JavaScript](/scripting/javascript/writing-javascript-code) .
+Aby uzyskać więcej informacji na temat pisania języka JavaScript, zobacz podręczniki [do pisania kodu JavaScript.](/scripting/javascript/writing-javascript-code)
 
 ## <a name="adding-a-javascript-file"></a>Dodawanie pliku JavaScript
 
-Pliki JavaScript są najczęściej dodawane do ASP.NET Core projektów za pomocą okna dialogowego **nowy plik** . Aby dodać plik JavaScript, kliknij prawym przyciskiem myszy projekt i przejdź do pozycji **dodaj > nowy plik**:
+Pliki JavaScript są najczęściej dodawane do projektów ASP.NET Core za pośrednictwem okna dialogowego **Nowy plik.** Aby dodać plik javascript, kliknij prawym przyciskiem myszy projekt i przejdź do **dodaj > nowy plik:**
 
-![Dodawanie nowych plików do projektu](media/javascript-image1.png)
+![dodawanie nowych plików do projektu](media/javascript-image1.png)
 
-W oknie dialogowym **nowy plik** wybierz pozycję **Sieć Web > pusty plik js** lub **plik TypeScript > sieci Web**. Nadaj mu nazwę, a następnie wybierz pozycję **Nowy**:
+W oknie dialogowym **Nowy plik** wybierz pozycję Web > **Empty JS file** or Web > **TypeScript .** Nadaj mu nazwę, a następnie wybierz pozycję **Nowy:**
 
-![Tworzenie nowego pliku TypeScript na podstawie szablonu](media/javascript-image2.png)
+![tworzenie nowego pliku maszynopisu z szablonu](media/javascript-image2.png)
 
 ## <a name="intellisense"></a>IntelliSense
 
-Visual Studio dla komputerów Mac używa [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) w celu udostępnienia technologii IntelliSense, co umożliwia wykonywanie inteligentnych uzupełniania kodu, informacji o parametrach i list elementów członkowskich podczas pisania kodu.
+Visual Studio dla komputerów Mac używa [usługi języka JavaScript](/visualstudio/ide/javascript-intellisense) w celu zapewnienia intelliSense, co pozwala na inteligentne uzupełnianie kodu, informacje o parametrach i listy członków podczas pisania kodu.
 
-Technologia JavaScript IntelliSense w Visual Studio dla komputerów Mac może opierać się na wnioskach o typie, JSDoc lub deklaracji języka TypeScript.
+Intellisense JavaScript w programie Visual Studio dla komputerów Mac może być oparty na wnioskowanie o typie, JSDoc lub Deklaracji TypeScript.
 
-- **Wnioskowanie o typie** — typ obiektu jest określany przez otaczający kontekst kodu. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio na [technologii IntelliSense na podstawie wnioskowania o typie](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
-- **JSDoc** — istnieją przypadki, w których wnioskowanie typu nie zapewnia prawidłowych informacji o typie. W takich przypadkach informacje o typie mogą być podawane jawnie przez adnotacje [JSDoc](https://jsdoc.app/about-getting-started.html) . Aby uzyskać więcej informacji, zobacz sekcję dotyczącą technologii IntelliSense w programie Visual Studio na [podstawie JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
-- **Pliki deklaracji TypeScript** — pliki `.d.ts` są używane do udostępniania wartości JavaScript IntelliSense. Typy zadeklarowane w tym pliku mogą być używane jako typy w komentarzach JSDoc. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio na [technologii IntelliSense w oparciu o pliki deklaracji TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
+- **Wnioskowanie o typie** — typ obiektu jest obliczany przez otaczający kontekst kodu. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio dotyczącą [programu IntelliSense na podstawie wnioskowania o typie](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
+- **JSDoc** — istnieją chwile, gdy wnioskowanie o typie nie zapewnia poprawne informacje o typie. W takich przypadkach informacje o typie mogą być dostarczane jawnie przez adnotacje [JSDoc.](https://jsdoc.app/about-getting-started.html) Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio dotyczącą [technologii IntelliSense na podstawie](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
+- **Pliki deklaracji TypeScript** — `.d.ts` pliki są używane do dostarczania wartości dla JavaScript IntelliSense. Typy zadeklarowane w tym pliku mogą być używane jako typy w komentarzach JSDoc. Aby uzyskać więcej informacji, zobacz sekcję programu Visual Studio dotyczącą [programu IntelliSense na podstawie plików deklaracji TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
-    ![Dodawanie pliku definicji TypeScript](media/javascript-image3.png)
+    ![dodawanie pliku definicji pisma maszynowego](media/javascript-image3.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [JavaScript IntelliSense (Visual Studio w systemie Windows)](/visualstudio/ide/javascript-intellisense)

@@ -14,26 +14,26 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74777466"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: średnie użycie procesora przez profilowany proces.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Średnie zużycie procesora cpu przez proces profilowany.
 
 |||
 |-|-|
-|Identyfikator zasady|DA501|
+|Identyfikator reguły|Da501|
 |Kategoria|Monitorowanie zasobów|
 |Metoda profilowania|Wszystkie|
 |Komunikat|Średnie użycie procesora przez profilowany proces|
-|Typ reguły|Informacje programu|
+|Typ reguły|Informacje|
 
- Podczas profilowania przy użyciu metod pobierania próbek, pamięci .NET lub rywalizacji o zasoby należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
+ Podczas profilowania przy użyciu próbkowania, .NET pamięci lub metody rywalizacji o zasoby, należy zebrać co najmniej 10 próbek, aby wyzwolić tę regułę.
 
 ## <a name="rule-description"></a>Opis reguły
- Ten komunikat przedstawia wartość procentową czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Raportowana wartość jest wartością średnią dla wszystkich interwałów pomiarowych, w przypadku których proces profilowany jest aktywny. Wartość może być większa niż 100% na komputerze z więcej niż jednym procesorem.
+ Ten komunikat informuje procent czasu, przez który procesor był zajęty wykonywaniem instrukcji z aplikacji. Zgłoszona wartość jest średnią we wszystkich interwałach pomiaru, w których profilowany proces był aktywny. Wartość wartości może być większa niż 100% na komputerze z więcej niż jednym procesorem.
 
-## <a name="how-to-use-rule-data"></a>Jak używać danych reguł
+## <a name="how-to-use-rule-data"></a>Jak korzystać z danych reguły
  Użyj wartości reguły, aby porównać wydajność różnych wersji lub kompilacji programu lub zrozumieć wydajność aplikacji w różnych scenariuszach testowych.

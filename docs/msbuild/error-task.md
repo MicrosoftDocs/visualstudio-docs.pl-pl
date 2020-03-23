@@ -1,5 +1,5 @@
 ---
-title: Błąd — zadanie | Microsoft Docs
+title: Zadanie błędu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,38 +19,38 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77634230"
 ---
 # <a name="error-task"></a>Error — Zadanie
 
-Kończy kompilację i rejestruje błąd na podstawie ocenianej instrukcji warunkowej.
+Zatrzymuje kompilacji i rejestruje błąd na podstawie ocenione instrukcji warunkowej.
 
 ## <a name="parameters"></a>Parametry
 
-W poniższej tabeli opisano parametry zadania `Error`.
+W poniższej tabeli `Error` opisano parametry zadania.
 
 | Parametr | Opis |
 |---------------| - |
-| `Code` | Opcjonalny parametr `String`.<br /><br /> Kod błędu, który ma zostać skojarzony z błędem. |
-| `File` | Opcjonalny parametr `String`.<br /><br /> Nazwa pliku, który zawiera błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie błędu. |
-| `HelpKeyword` | Opcjonalny parametr `String`.<br /><br /> Słowo kluczowe pomocy do skojarzenia z błędem. |
-| `Text` | Opcjonalny parametr `String`.<br /><br /> Tekst błędu, który program MSBuild rejestruje, jeśli `Condition` parametr oblicza `true`. |
+| `Code` | Parametr `String` opcjonalny.<br /><br /> Kod błędu do skojarzenia z błędem. |
+| `File` | Parametr `String` opcjonalny.<br /><br /> Nazwa pliku zawierającego błąd. Jeśli nie podano nazwy pliku, zostanie użyty plik zawierający zadanie Error. |
+| `HelpKeyword` | Parametr `String` opcjonalny.<br /><br /> Słowo kluczowe Pomoc, aby skojarzyć z błędem. |
+| `Text` | Parametr `String` opcjonalny.<br /><br /> Tekst błędu, który MSBuild `Condition` rejestruje, jeśli `true`parametr jest oceniany na . |
 
 ## <a name="remarks"></a>Uwagi
 
-Zadanie `Error` umożliwia projektom MSBuild wygenerowanie tekstu błędów w celu rejestrowania i zatrzymanie wykonywania kompilacji.
+Zadanie `Error` umożliwia msbuild projektów do wystawiania tekstu błędu do rejestratorów i zatrzymać wykonanie kompilacji.
 
-Jeśli `Condition` parametr oblicza `true`, kompilacja zostanie zatrzymana i zostanie zarejestrowany błąd. Jeśli parametr `Condition` nie istnieje, zostanie zarejestrowany błąd i zostanie zatrzymane wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
+Jeśli `Condition` parametr ocenia `true`, kompilacja jest zatrzymana i rejestrowany jest błąd. Jeśli `Condition` parametr nie istnieje, błąd jest rejestrowany i zatrzymuje wykonywanie kompilacji. Aby uzyskać więcej informacji na temat rejestrowania, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z klasy <xref:Microsoft.Build.Tasks.TaskExtension>, która sama dziedziczy z klasy <xref:Microsoft.Build.Utilities.Task>. Aby zapoznać się z listą tych dodatkowych parametrów i ich opisów, zobacz [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+Oprócz parametrów wymienionych powyżej, to zadanie dziedziczy parametry z <xref:Microsoft.Build.Tasks.TaskExtension> klasy, <xref:Microsoft.Build.Utilities.Task> która sama dziedziczy z klasy. Aby uzyskać listę tych dodatkowych parametrów i ich opisy, zobacz [TaskExtension klasy podstawowej](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Przykład
 
-Poniższy przykład kodu sprawdza, czy są ustawione wszystkie wymagane właściwości. Jeśli nie są ustawione, projekt zgłasza zdarzenie błędu i rejestruje wartość parametru `Text` zadania `Error`.
+Poniższy przykład kodu sprawdza, czy wszystkie wymagane właściwości są ustawione. Jeśli nie są ustawione, projekt wywołuje zdarzenie błędu i rejestruje `Text` wartość parametru `Error` zadania.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

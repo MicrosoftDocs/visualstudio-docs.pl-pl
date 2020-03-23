@@ -1,5 +1,5 @@
 ---
-title: Wizualizator współbieżności | Microsoft Docs
+title: Wizualizator współbieżności | Dokumenty firmy Microsoft
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,43 +16,43 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/13/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77192406"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 
 > [!NOTE]
-> Wizualizator współbieżności jest opcjonalnym rozszerzeniem programu Visual Studio. Pobierz narzędzie Concurrency Visualizer i narzędzia kolekcji Concurrency Visualizer z następujących linków:
+> Wizualizator współbieżności jest opcjonalnym rozszerzeniem programu Visual Studio. Pobierz wizualizator współbieżności i narzędzia do zbierania wizualizatorów współbieżności z następujących łączy:
 >
-> - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview) .
-> - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) .
-> - Pobierz rozszerzenie [Concurrency Visualizer dla rozszerzenia programu Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015) .
-> - Pobierz [Narzędzia do zbierania danych Concurrency Visualizer dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
+> - Pobierz rozszerzenie [Wizualizator współbieżności dla programu Visual Studio 2019.](https://marketplace.visualstudio.com/items?itemName=Diagnostics.DiagnosticsConcurrencyVisualizer2019#overview)
+> - Pobierz rozszerzenie [Wizualizator współbieżności dla programu Visual Studio 2017.](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)
+> - Pobierz rozszerzenie [Wizualizator współbieżności dla programu Visual Studio 2015.](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015)
+> - Pobierz narzędzia do [zbierania obrazów współbieżności dla programu Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
 >
-> [Narzędzie wiersza polecenia narzędzia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umożliwia zbieranie śladów z wiersza polecenia, które można wyświetlić w programie Concurrency Visualizer dla programu Visual Studio 2015. Narzędzia można używać na komputerach, na których nie zainstalowano programu Visual Studio.
+> [Narzędzie wiersza polecenia wizualizatora współbieżności (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umożliwia zbieranie śladów z wiersza polecenia, który można wyświetlić w wizualizatorze współbieżności dla programu Visual Studio 2015. Narzędzie może być używane na komputerach, na których nie zainstalowano programu Visual Studio.
 
-Możesz użyć wizualizatora współbieżności, aby zobaczyć, jak działa aplikacja wielowątkowa. Widoki w wizualizatorze współbieżności zapewniają dane graficzne, tabelaryczne i tekstowe, które pokazują relacje czasowe między wątkami w programie i systemem jako całością. Można użyć wizualizatora współbieżności do lokalizowania wąskich gardeł wydajności, niedostatecznego wykorzystania procesora, rywalizacji wątków, migracji wątków międzyrdzeniowych, opóźnień synchronizacji, aktywności DirectX, obszarów nakładających się operacji we/wy i innych informacji. Widoki zawierają dane, które można wykonywać, łącząc ich graficzne dane wyjściowe z stosami wywołań i kodem źródłowym.
+Wizualizatora współbieżności można użyć, aby zobaczyć, jak działa aplikacja wielowątkowa. Widoki w wizualizatorze współbieżności zawierają dane graficzne, tabelaryczne i tekstowe, które pokazują czasowe relacje między wątkami w programie a systemem jako całością. Wizualizator współbieżności służy do lokalizowania wąskich gardeł wydajności, niedostatecznego wykorzystania procesora CPU, rywalizacji wątków, migracji wątków międzyrdzeniowych, opóźnień synchronizacji, aktywności DirectX, obszarów nakładających się we/wy i innych informacji. Widoki zawierają dane, które można działać na łącząc jego dane wyjściowe graficzne do wywołania stosy i kod źródłowy.
 
 > [!NOTE]
 > Wizualizator współbieżności nie obsługuje projektów sieci Web.
 
-Wizualizator współbieżności korzysta z funkcji [śledzenia zdarzeń dla systemu Windows](/windows/win32/etw/event-tracing-portal) .
+Wizualizator współbieżności opiera się na śledzenie zdarzeń dla funkcji [systemu Windows.](/windows/win32/etw/event-tracing-portal)
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Widok wykorzystania](../profiling/utilization-view.md)|Opisuje sposób wyświetlania i analizowania aktywności systemu na wszystkich procesorach.|
-|[Widok wątków](../profiling/threads-view-parallel-performance.md)|Opisuje sposób analizowania interakcji między wątkami w programie.|
-|[Widok rdzeni](../profiling/cores-view.md)|Opisuje sposób analizowania migracji wątków między rdzeniami.|
-|[Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Opisuje kilka typowych wzorców i pokazuje, jak pojawiają się one w wizualizatorze współbieżności.|
-|[Programowanie równoległe w blogu programu Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Zawiera wskazówki i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|
-|[Widoki raportu wydajności](../profiling/performance-report-views.md)|Zawiera informacje referencyjne dotyczące raportów i widoków narzędzia profilowania programu Visual Studio.|
-|[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|Opisuje sposób Instrumentacji kodu źródłowego do wyświetlania dodatkowych informacji w wizualizatorze współbieżności.|
-|[Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Opisuje, jak używać narzędzia wiersza polecenia Concurrency Visualizer (CVCollectionCmd. exe) do zbierania i przetwarzania śladów na maszynach, które nie mają programu Visual Studio.|
+|[Widok wykorzystania](../profiling/utilization-view.md)|W tym artykule opisano sposób wyświetlania i analizowania aktywności systemu we wszystkich procesorach.|
+|[Widok wątków](../profiling/threads-view-parallel-performance.md)|W tym artykule opisano sposób analizowania interakcji między wątkami w programie.|
+|[Widok rdzeni](../profiling/cores-view.md)|W tym artykule opisano sposób analizowania migracji wątków między rdzeniami.|
+|[Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|W tym artykule opisano kilka typowych wzorców i pokazuje, jak pojawiają się one w wizualizatora współbieżności.|
+|[Program równoległy w programie Visual Studio w blogu](https://blogs.msdn.microsoft.com/visualizeparallel/)|Zawiera porady i najlepsze rozwiązania dotyczące wizualizatora współbieżności.|
+|[Widoki raportu wydajności](../profiling/performance-report-views.md)|Zawiera informacje referencyjne dla raportów i widoków narzędzi do profilowania programu Visual Studio.|
+|[Zestaw SDK narzędzia Concurrency Visualizer](../profiling/concurrency-visualizer-sdk.md)|W tym artykule opisano sposób instrumentacji kodu źródłowego, aby wyświetlić dodatkowe informacje w wizualizatora współbieżności.|
+|[Narzędzie wiersza polecenia wizualizatora współbieżności (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|W tym artykule opisano, jak używać narzędzia wiersza polecenia wizualizatora współbieżności (CVCollectionCmd.exe) do zbierania i przetwarzania śladów na komputerach, które nie mają programu Visual Studio.|
 
 ## <a name="see-also"></a>Zobacz też
 

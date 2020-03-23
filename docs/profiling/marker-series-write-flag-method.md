@@ -1,5 +1,5 @@
 ---
-title: Metoda marker_series::write_flag | Dokumentacja firmy Microsoft
+title: marker_series::Metoda write_flag | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62830814"
 ---
-# <a name="markerserieswriteflag-method"></a>marker_series::write_flag — metoda
-Zapisuje plik śledzenia Concurrency Visualizer flagę.
+# <a name="marker_serieswrite_flag-method"></a>marker_series::metoda write_flag
+Zapisuje flagę do pliku śledzenia wizualizatora współbieżności.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,16 +48,16 @@ void write_flag(
 ```
 
 #### <a name="parameters"></a>Parametry
- `_Format` Ciąg formatu złożonego, który zawiera tekst zmieszać z zero lub więcej elementów formatu, które odnoszą się do obiektów na liście argumentów.
+ `_Format`Ciąg formatu złożonego, który zawiera tekst połączony z elementami formatu zero lub więcej, które odpowiadają obiektom na liście argumentów.
 
- `_Importance` Poziom ważności.
+ `_Importance`Poziom ważności.
 
- `_Category` Kategoria.
+ `_Category`Kategorii.
 
 ## <a name="requirements"></a>Wymagania
  **Nagłówek:** *cvmarkersobj.h*
 
- **Namespace:** CONCURRENCY::Diagnostic —
+ **Obszar nazw:** Współbieżność::dignostyk
 
-## <a name="see-also"></a>Zobacz także
-- [marker_series, klasa](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Zobacz też
+- [klasa marker_series](../profiling/marker-series-class.md)

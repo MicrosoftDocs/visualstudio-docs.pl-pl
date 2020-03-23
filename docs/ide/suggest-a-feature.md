@@ -1,6 +1,6 @@
 ---
 title: proponowanie funkcji
-description: Zawiera opis sugestii społeczności deweloperów, sposobu tworzenia sugestii i sposobu używania sugestii przez firmę Microsoft na mapie drogowej programu Visual Studio.
+description: W tym artykule opisano, jakie sugestie znajdują się w społeczności deweloperów, jak przedstawić sugestię i jak sugestie są używane przez firmę Microsoft na mapie drogowej programu Visual Studio.
 ms.date: 12/17/2018
 ms.topic: conceptual
 author: seaniyer
@@ -9,124 +9,124 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74853519"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Zaproponuj funkcję programu Visual Studio
 
-Wprowadziliśmy nowe środowisko do sugerowania funkcji wraz z bieżącą możliwością zgłaszania problemów w [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com). Jest to nowy sposób, który może uprawniony współpracować bezpośrednio z programu Visual Studio inżynieryjnym przepływie pracy.
+Wprowadziliśmy nowe środowisko do sugerowania funkcji wraz z bieżącą możliwością zgłaszania problemów w [społeczności deweloperów programu Visual Studio.](https://developercommunity.visualstudio.com) Jest to nowy sposób, w jaki można mieć możliwość bezpośredniego zaangażowania się w przepływ pracy inżynierskiej programu Visual Studio.
 
-![Zaproponuj przycisk funkcji w społeczności deweloperów](media/suggest-a-feature/suggest-feature-button.png)
+![Zaproponuj przycisk Funkcji w społeczności deweloperów](media/suggest-a-feature/suggest-feature-button.png)
 
-Możesz również uruchomić sugestię funkcji bezpośrednio z poziomu programu Visual Studio, wybierając pozycję **Udostępnij sugestię** z ikony **Prześlij opinię** w prawym górnym rogu głównego okna programu Visual Studio:
+Sugestię funkcji można również uruchomić bezpośrednio z programu Visual Studio, wybierając pozycję **Przekaż sugestię** z ikony **Przekaż opinię** w prawym górnym rogu głównego okna programu Visual Studio:
 
-![Udostępnianie menu sugestii w programie Visual Studio](media/suggest-a-feature/provide-suggestion.png)
+![Podaj menu Sugestia w programie Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Wybranie pozycji **Podaj sugestię** spowoduje przejście do [społeczności deweloperów](https://developercommunity.visualstudio.com), w której można wprowadzić sugestię.
+Wybranie opcji **Przekaż sugestię** prowadzi do [społeczności programistów,](https://developercommunity.visualstudio.com)gdzie możesz wprowadzić swoją sugestię.
 
 ## <a name="user-voice"></a>User Voice
 
-Do tej pory użytkownicy programu Visual Studio zaproponowali nowe pomysły dotyczące funkcji na głos użytkownika. Dodając funkcję *Sugeruj funkcję* do społeczności deweloperów, cała Opinia dotycząca zespołu produktów Visual Studio znajduje się teraz w jednym miejscu.
+Do tej pory użytkownicy programu Visual Studio proponował nowe pomysły funkcji na User Voice. Dodając *zaproponuj* funkcję funkcji do społeczności deweloperów, wszystkie opinie dotyczące zespołu produktów programu Visual Studio są teraz w jednym miejscu.
 
-Witryna User Voice została udostępniona tylko do odczytu. Możesz wyszukać w razie potrzeby kontekstu, ale wszystkie nowe sugestie funkcji powinny być przesyłane do społeczności deweloperów.
+Witryna User Voice została udostępniona tylko do odczytu. Możesz spojrzeć wstecz, jak potrzebujesz kontekstu, ale wszystkie nowe sugestie funkcji powinny być przesłane w społeczności deweloperów.
 
-Przeprowadzono migrację wstępnego zestawu pomysłów z forum User Voice do społeczności deweloperów. Migracja została wykonana w zależności od wpływu społeczności opinii i priorytetów plan naszych produktów. Oczekiwana Zobacz tutaj sugestii, które mogły zostać pominięte firma Microsoft, możesz dodać go do społeczności deweloperów.
+Przenieśliśmy początkowy zestaw pomysłów z forum User Voice do społeczności programistów. Migracja została przeprowadzona w oparciu o wpływ opinii na społeczność i priorytety planu działania produktu. Jeśli spodziewasz się zobaczyć sugestię, że mogliśmy przegapić, możesz dodać ją do społeczności programistów.
 
-## <a name="votes"></a>Głosów
+## <a name="votes"></a>Głosy
 
-System głosowania w społeczności deweloperów różni się od użytkownika. Aby zachować integralność liczby głosu społeczności deweloperów i uniknąć pochylanie głosów, pokazujemy liczba głosów User Voice, zawsze jako tag obok każdego sugestii funkcji. W miarę postępu głosować w sprawie propozycji w rozszerzonej społeczności deweloperów Twojej nowej liczby głosów będą wyświetlane osobno z liczbą głosów User Voice.
+System głosowania w społeczności deweloperów różni się od user voice. Aby zachować integralność liczby głosów w społeczności deweloperów i uniknąć wypaczenia głosów, pokazujemy, że głos User Voice liczy się w widocznym miejscu jako tag obok każdej sugestii funkcji. W miarę dalszego głosowania nad sugestiami w rozszerzonej społeczności programistów liczba twoich nowych głosów będzie liczona niezależnie od liczby głosów głosów użytkownika.
 
 ## <a name="suggestion-status"></a>Stan sugestii
 
-Po przesłaniu sugestię dotyczącą funkcji stany wskazują, gdzie Twoje zgłoszenie funkcji jest etapie jej cyklu życia. Firma Microsoft uwzględnienia opinii i przenieś ją wzdłuż przepływu pracy, możemy go otagować odpowiadający mu stan. Różne stany skojarzone z sugestiami funkcji są wymienione tutaj wraz z opisem ich znaczenia i wskaźników kolorów.
+Po przesłaniu sugestii funkcji stany wskazują, gdzie przesyłanie funkcji znajduje się w cyklu życia. Gdy weźmiemy pod uwagę twoją opinię i przeniesiemy ją wzdłuż przepływu pracy, oznaczamy ją odpowiednim stanem. Różne stany związane z sugestiami funkcji są wymienione tutaj, wraz z opisem ich znaczenia i wskaźników kolorów.
 
-![Nowy stan dla sugestie społeczności deweloperów](../ide/media/SuggestStates/New.jpg)
+![Nowy stan sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/New.jpg)
 
-**Nowe** oznacza sugestię nowo zgłoszonych przez Ciebie lub kogoś innego. Nie uwzględniono w niej jeszcze. Pierwszej linii będzie wykonać niektóre wstępne kontrole w celu upewnij się, że firma Microsoft może kontynuować działania. Oczekiwać od nas w ciągu około pięciu dni roboczych za pomocą naszych następnych kroków.
-
-- - -
-
-![W obszarze Przegląd stanu sugestie społeczności deweloperów](../ide/media/SuggestStates/UnderReview.jpg)
-
-**W ramach przeglądu** wskazuje, że sugestii funkcji zostało umieszczone w kolejce dla priorytetyzacji. Znaczenie przy określaniu priorytetów funkcje, aby nasz szerszą społeczność deweloperów rozwiązań najlepszą wartością również uwzględnieniu harmonogram działania dla produktu.
-
-Nawet jeśli nie możemy wykonywać propozycji nowych funkcji natychmiast, będziemy monitorować swój pomysł na około 90 dni, pozwolić społeczności na porównać, a następnie podjęcia decyzji o kolejnych czynnościach.
+**Nowy** oznacza, że sugestia została nowo zgłoszona od Ciebie lub innej osoby. Nie podjęto jeszcze żadnych działań w tej sprawie. Linia frontu dokona wstępnych kontroli, aby upewnić się, że będziemy mogli kontynuować. Spodziewaj się usłyszeć od nas w ciągu około pięciu dni roboczych z naszymi kolejnymi krokami.
 
 - - -
 
-![Na stan plan sugestie społeczności deweloperów](../ide/media/SuggestStates/OnRoadmap.jpg)
+![W obszarze Przegląd stanu sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/UnderReview.jpg)
 
-**W planie** oznacza, że Twoja sugestia funkcji ma wpływ szerokiej społeczności i pomogą ulepszyć produkt. Firma Microsoft przydzielono czasu dla niego w naszym harmonogramie działania. Będziemy informować Cię o postępie.
+**W obszarze Przegląd** wskazuje, że sugestia funkcji została w kolejce do ustalania priorytetów. Priorytetowo traktujemy funkcje, aby zapewnić naszym szerszym społeczności programistów najlepszą wartość, również biorąc pod uwagę plan działania produktu.
 
-- - -
-
-![Potrzebujesz więcej informacji o stanie dla sugestie społeczności deweloperów](../ide/media/SuggestStates/NeedMoreInfo.jpg)
-
-Oznaczone sugestię dotyczącą funkcji **uzyskać więcej informacji na potrzeby** oznacza, że potrzebujemy więcej informacji, dlatego Twojego pomysłu można lepiej zrozumieć. Należy sprawdzić komentarze, w której poprosimy o dodatkowe informacje, aby lepiej zrozumieć zasady.
+Nawet jeśli nie będziemy w stanie natychmiast zrealizować twojej nowej sugestii dotyczącej funkcji, będziemy nadal monitorować Twój pomysł przez około 90 dni, pozwolić społeczności ważyć, a następnie podjąć decyzję w sprawie kolejnych kroków.
 
 - - -
 
-![Zamknięte — inny stan produktu dla sugestie społeczności deweloperów](../ide/media/SuggestStates/ClosedOtherProduct.jpg)
+![W sprawie stanu mapy drogowej sugestie dotyczące społeczności deweloperów](../ide/media/SuggestStates/OnRoadmap.jpg)
 
-**Zamknięte — inny produkt** oznacza, że nie możemy adresów swoje sugestie funkcji w tej chwili, ponieważ nie ma zastosowania do produktu, został zgłoszony dla. Jednak firma Microsoft udostępni szczegółowe informacje, na którym mogą udostępniać swoje nowej sugestii funkcji dla odpowiedniego produktu.
-
-- - -
-
-![Zamknięty — duplikat stan sugestie społeczności deweloperów](../ide/media/SuggestStates/ClosedDuplicate.jpg)
-
-**Zamknięty — duplikat** wskazuje, że ktoś inny już proponuje tej samej funkcji. Przejrzyj komentarze, aby znaleźć łącza do istniejącego sugestii funkcji. W oryginalnym sugestii zostały scalone głosami i komentarzami. Postępuj zgodnie z oryginalnym sugestii.
+**Na mapie drogowej** oznacza, że sugestia funkcji ma szeroki wpływ na społeczność i pomoże poprawić jakość produktu. Przeznaczyliśmy na to czas na nasz plan działania. Będziemy cię informować o postępach.
 
 - - -
 
-![Zamknięty — nie ma wystarczającej ilości informacji o stan sugestie społeczności deweloperów](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
+![Potrzebujesz więcej informacji o sugestiach dotyczących społeczności deweloperów](../ide/media/SuggestStates/NeedMoreInfo.jpg)
 
-**Zamknięte — Brak wystarczającej ilości informacji** wskazuje, że mimo kilku prób nie odebraliśmy jeszcze wystarczających informacji do w pełni zrozumieć swoje sugestie funkcji. Mamy Zamknij nowej sugestii funkcji, ponieważ nie możemy podejmować żadnych dalszych akcji na tym etapie.
-
-Znaleziono informacje, które firma Microsoft czego szukasz? Żądanie ponownego uaktywniania--ticket, jeśli masz dodatkowe informacje.
+Sugestia funkcji oznaczona **jako Need More Info** oznacza, że potrzebujemy więcej szczegółów, abyśmy mogli lepiej zrozumieć Twoją sugestię. Sprawdź komentarze, w których poprosimy o dodatkowe informacje, aby uzyskać głębsze zrozumienie.
 
 - - -
 
-![Zakończona — stan sugestie społeczności deweloperów w wersji zapoznawczej](../ide/media/SuggestStates/CompletedPreview.jpg)
+![Zamknięte — inny stan produktu dla sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/ClosedOtherProduct.jpg)
 
-**Zakończona — wersja zapoznawcza** wskazuje, że wprowadziliśmy funkcję możesz sugerowane. Możesz pobrać wersję zapoznawczą programu Visual Studio, który zawiera Twojego pomysłu, za pomocą linku podanego w komentarzach.
-
-- - -
-
-![Zakończona — wersji stan sugestie społeczności deweloperów](../ide/media/SuggestStates/CompletedRelease.jpg)
-
-**Zakończona — wersji** wskazuje że zwolniono propozycję nowej funkcji w najnowszej aktualizacji produktu. Aktualizacja programu Visual Studio można pobrać za pomocą linku podanego w komentarzach.
+**Zamknięte — inny produkt** oznacza, że nie możemy w tej chwili rozwiązać twojej sugestii funkcji, ponieważ nie dotyczy ona produktu, dla których została zgłoszona. Podamy jednak szczegółowe informacje o tym, gdzie możesz udostępnić nową propozycję funkcji dla odpowiedniego produktu.
 
 - - -
 
-## <a name="faq"></a>Najczęściej zadawane pytania
+![Zamknięte — stan duplikatów dla sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/ClosedDuplicate.jpg)
 
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Dlaczego nie widzę swój pomysł User Voice w społeczności deweloperów?
+**Zamknięte — duplikat** wskazuje, że ktoś inny już zasugerował tę samą funkcję. Przejrzyj komentarze, aby znaleźć łącze do istniejącej sugestii funkcji. Głosy i komentarze zostały połączone w pierwotnej sugestii. Postępuj zgodnie z oryginalną sugestią.
 
-Liczba nowych sugestii funkcji ze starego forum User Voice zostały zmigrowane do społeczności deweloperów, na podstawie wpływu na szerszą społeczność rozwiązań i priorytety mapy drogowej naszych produktów. Jeśli uważasz, że zostały pominięte, migracja Twojego pomysłu, należy go dodać jako nową sugestię do społeczności deweloperów.
+- - -
 
-### <a name="why-have-the-votes-not-been-carried-over-from-user-voice"></a>Dlaczego głosy nie zostały przeniesione przez usługę User Voice?
+![Zamknięte — stan za mało informacji dla sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
-Głosowania systemu w User Voice działa inaczej z systemu głosowania w społeczności deweloperów. W nowym systemie chcemy zachować integralność liczby głos i uniknąć pochylanie danych. Podjęliśmy decyzję o pokazać, że głos User Voice zawsze traktowany jako tag (zamiast głosów) dla każdego sugestii. Użytkownicy głos na sugerują zgłoszenia funkcji, za pomocą społeczności deweloperów, nowe głosów zostaną wyświetlone oddzielnie z głosami User Voice.
+**Zamknięte — za mało informacji** wskazuje, że po kilku próbach nie otrzymaliśmy wystarczającej ilości informacji, aby w pełni zrozumieć sugestię funkcji. Musimy zamknąć nową propozycję funkcji, ponieważ na tym etapie nie możemy podjąć żadnych dalszych działań.
 
-### <a name="where-can-i-see-comments-associated-with-the-suggestions-imported-from-user-voice"></a>Gdzie mogę znaleźć komentarze skojarzone z sugestiami importowane przez usługę User Voice
+Znalazłeś informacje, których szukaliśmy? Możesz poprosić o ponowne aktywowanie biletu, gdy masz dodatkowe informacje.
 
-Kliknij link, którą dołączyliśmy wróć do komentarzy User Voice sugestii, która została zmigrowana do społeczności deweloperów. Ten link, będą dostępne w okresie przejściowym łatwiejszego odwoływania Jeśli potrzebujesz więcej kontekstu.
+- - -
 
-### <a name="why-can-i-see-three-vote-counts-for-a-suggestion"></a>Dlaczego może wyświetlać trzy liczba głosów dla sugestię?
+![Ukończono — stan podglądu sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/CompletedPreview.jpg)
 
-Sugestia została zaimportowana ze User Voice, zobaczysz trzy oddzielne głos liczby. Dwa głosować liczby wyświetlane jako tagi są liczby głos, które pomysł pierwotnie odebrane w usłudze User Voice. Trzeci liczba głosów wyświetlany po lewej stronie sugestię pozwala zobaczyć, ile głosów, że sugestię niedługo się społeczność deweloperów.
+**Ukończono — podgląd** wskazuje, że zaimplementowaliśmy sugerowaną funkcję. Można pobrać wersję zapoznawczą programu Visual Studio, która zawiera sugestię przy użyciu łącza podanego w komentarzach.
 
-Głosowania systemu w User Voice działa inaczej od głosów w społeczności deweloperów. Aby zachować integralność liczby głosu społeczności deweloperów i uniknąć pochylanie dane, podjęliśmy decyzję o pokazać, że głos User Voice zawsze traktowany jako tag (zamiast głosów) dla każdego sugestii.
+- - -
 
-### <a name="how-long-can-i-expect-actions-to-take"></a>Jak długo mogę oczekiwać akcje do wykonania
+![Ukończono — stan wydania sugestii dotyczących społeczności deweloperów](../ide/media/SuggestStates/CompletedRelease.jpg)
 
-Angażujemy pełni do nasłuchiwania na swoje propozycje dotyczące funkcji i wykonanie czynności, aby zapewnić wartościowe środowiska dla naszych klientów. Akcje na sugestie są uporządkowane w oparciu o wpływie na szerszą społeczność rozwiązań typu. Nawet jeśli nie możemy osobiście co sugestią, wybierzemy się, że Twoja opinia pobiera odpowiedni zespół, a następnie jest szacowana dokładnie.
+**Ukończono — wydanie** wskazuje, że nowa sugestia funkcji została wydana w najnowszej aktualizacji produktu. Aktualizację programu Visual Studio można pobrać za pomocą łącza podanego w komentarzach.
 
-Czas odpowiedzi zależy od stanu, w której znajduje się Twoja opinia. Przejrzyj opis stany, w tym dokumencie, aby zrozumieć, czasy odpowiedzi.
+- - -
 
-## <a name="see-also"></a>Zobacz także
+## <a name="faq"></a>Często zadawane pytania
 
-- [Wprowadzenie do "sugerowania funkcji" w społeczności deweloperów (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
+### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Dlaczego nie widzę mojego pomysłu user voice w społeczności deweloperów?
+
+Nowe propozycje funkcji ze starego forum User Voice zostały przeniesione do społeczności programistów na podstawie wpływu na szerszą społeczność i priorytety naszej mapy drogowej produktów. Jeśli uważasz, że nie udało nam się przeprowadzić migracji Twojej sugestii, dodaj ją jako nową sugestię do społeczności deweloperów.
+
+### <a name="why-have-the-votes-not-been-carried-over-from-user-voice"></a>Dlaczego głosy nie zostały przeniesione z User Voice?
+
+System głosowania w User Voice działa inaczej niż system głosowania w Społeczności Deweloperów. W nowym systemie chcemy zachować integralność liczby głosów i uniknąć wypaczenia danych. Postanowiliśmy pokazać liczbę głosów użytkownika jako znacznik (zamiast głosów) dla każdej sugestii. Gdy użytkownicy głosują na sugerowanie zgłoszeń funkcji za pomocą społeczności deweloperów, nowe głosy będą wyświetlane oddzielnie od głosów głosów użytkownika.
+
+### <a name="where-can-i-see-comments-associated-with-the-suggestions-imported-from-user-voice"></a>Gdzie mogę zobaczyć komentarze związane z sugestiami zaimportowanymi z user voice?
+
+Skorzystaj z linku, który dodajemy, aby wrócić do komentarzy user voice na sugestię, która została przeniesiona do społeczności programistów. To łącze będzie dostępne w okresie przejściowym w celu łatwego odwołania, jeśli potrzebujesz więcej kontekstu.
+
+### <a name="why-can-i-see-three-vote-counts-for-a-suggestion"></a>Dlaczego mogę zobaczyć trzy liczby głosów dla sugestii?
+
+Po zaimportowaniu sugestii z user voice zobaczysz trzy oddzielne liczby głosów. Dwie liczby głosów wyświetlane jako tagi to liczba głosów, które pomysł otrzymał pierwotnie na User Voice. Trzecia liczba głosów wyświetlana po lewej stronie sugestii pozwala sprawdzić, ile głosów otrzymuje sugestia od społeczności programistów.
+
+System głosowania w User Voice działa inaczej niż głosy w Społeczności Deweloperów. Aby zachować integralność liczby głosów w społeczności deweloperów i uniknąć wypaczenia danych, postanowiliśmy pokazać liczbę głosów głosów użytkownika w widocznym miejscu jako znacznik (zamiast głosów) dla każdej sugestii.
+
+### <a name="how-long-can-i-expect-actions-to-take"></a>Jak długo mogę oczekiwać podjęcia działań?
+
+Jesteśmy w pełni zaangażowani w słuchanie sugestii funkcji i podejmowanie działań w celu zapewnienia cennych doświadczeń naszym klientom. Działania dotyczące sugestii są traktowane priorytetowo w oparciu o wpływ na szerszą społeczność. Nawet jeśli nie możemy osobiście odpowiedzieć na każdą sugestię, upewnimy się, że Twoja opinia trafi do właściwego zespołu i zostanie dokładnie oceniona.
+
+Czas odpowiedzi zależy od stanu, w który znajduje się Twoja opinia. Zapoznaj się z wyjaśnieniem stanów w tym dokumencie, aby zrozumieć czasy odpowiedzi.
+
+## <a name="see-also"></a>Zobacz też
+
+- [Wprowadzenie "Zaproponuj funkcję" w społeczności programistów (blog programu Visual Studio)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

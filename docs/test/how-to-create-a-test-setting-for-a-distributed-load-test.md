@@ -1,5 +1,5 @@
 ---
-title: Utwórz ustawienie testu dla testu obciążenia rozłożonego
+title: Tworzenie ustawienia testu dla testu obciążenia rozproszonego
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,178 +9,178 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75589154"
 ---
-# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Instrukcje: Tworzenie pliku ustawień testu dla testu obciążenia rozłożonego
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Jak: Tworzenie pliku ustawień testu dla testu obciążenia rozproszonego
 
-Konfigurowanie *ustawienia testu* dla testów obciążenia, dzięki czemu można rozprowadzić te testy na wielu komputerach przy użyciu agentów testowych i kontrolerów testów. Można również skonfigurować ustawienia testu do użycia *adapterów danych diagnostycznych*, które określają rodzaje danych, które mają być zbierane lub określają wpływ na maszyny testowe podczas uruchamiania testów obciążenia w programie Visual Studio.
+Skonfiguruj *ustawienia testów obciążenia,* aby można było rozpowszechniać te testy na wielu komputerach przy użyciu agentów testowych i kontrolerów testów. Można również skonfigurować ustawienia testowe do używania *kart danych diagnostycznych,* które określają rodzaje danych, które mają być zbierane lub jak wpływać na maszyny testowe po uruchomieniu testów obciążenia z programu Visual Studio.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Na przykład można użyć adaptera danych diagnostycznych programu ASP.NET Profiler do zbierania podział wydajność kodu. Ponadto adapterów danych diagnostycznych może służyć do symulacji wąskich gardeł na maszynie testowej lub zmniejszenie dostępnej pamięci systemowej.
+Na przykład można użyć karty danych diagnostycznych ASP.NET Profilera do zbierania podziału wydajności kodu. Ponadto karty danych diagnostycznych mogą służyć do symulowania potencjalnych wąskich gardeł na komputerze testowym lub zmniejszenia dostępnej pamięci systemowej.
 
-Ustawienia testu dla programu Visual Studio są przechowywane w pliku. Ustawienia testowe definiują następujące informacje dotyczące poszczególnych ról:
+Ustawienia testu dla programu Visual Studio są przechowywane w pliku. Ustawienia testu definiują następujące informacje o każdej roli:
 
-- Zbiór ról, które są wymagane dla badanej aplikacji
+- Zestaw ról wymaganych dla aplikacji w ramach testu
 
-- Rola służące do uruchamiania testów
+- Rola używana do uruchamiania testów
 
-- Adaptery danych diagnostycznych do użycia dla każdej roli
+- Karty danych diagnostycznych do użycia dla każdej roli
 
-Po uruchomieniu testów, możesz wybrać ustawienia testu do użycia jako ustawienia aktywnego testu w zależności od tego, czego wymagasz dla tego określonego testu. Plik ustawień testu jest przechowywana jako część rozwiązania. Nazwa pliku ma rozszerzenie *.testsettings*.
+Po uruchomieniu testów, należy wybrać ustawienia testu, aby użyć jako aktywne ustawienia testu w zależności od tego, co jest wymagane dla tego konkretnego przebiegu testu. Plik ustawień testu jest przechowywany jako część rozwiązania. Nazwa pliku ma rozszerzenie *.testsettings*.
 
-Gdy dodajesz projekt testu wydajności sieci web i obciążenia do rozwiązania, *Default.testsettings* zostanie utworzony plik. Plik jest automatycznie dodawany do rozwiązania w folderze **elementy rozwiązania** folderu. Ten plik uruchamia testy lokalnie bez żadnych adapterów danych diagnostycznych. Możesz dodać innego *.testsettings* plików lub edytować *.testsettings* plik, aby określić adaptery danych diagnostycznych i kontrolery testów.
+Po dodaniu projektu testu wydajności sieci web i ładowania do rozwiązania tworzony jest plik *Default.testsettings.* Plik zostanie automatycznie dodany do rozwiązania w folderze **Elementy rozwiązania.** Ten plik uruchamia testy lokalnie bez żadnych kart danych diagnostycznych. Można dodać inny plik *.testsettings* lub edytować plik *.testsettings,* aby określić karty danych diagnostycznych i kontrolery testów.
 
-Kontroler testów będzie miał agentów, które mogą być używane dla każdej roli w ustawieniach testu. Aby uzyskać więcej informacji na temat kontrolerów testów i agentów testowych, zobacz [zarządzać kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Kontroler testów będzie miał agentów, które mogą być używane dla każdej roli w ustawieniach testu. Aby uzyskać więcej informacji na temat kontrolerów testów i agentów testowych, zobacz [Zarządzanie kontrolerami testów i agentami testowymi za pomocą programu Visual Studio.](../test/manage-test-controllers-and-test-agents.md)
 
-Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozwiązaniu dla testów obciążenia, które mają być uruchamiane w programie Visual Studio.
+Wykonaj następujące kroki, aby utworzyć i usunąć ustawienia testu w rozwiązaniu dla testów obciążenia, które mają być uruchamiane z programu Visual Studio.
 
-## <a name="create-a-test-settings-file"></a>Utwórz plik ustawień testu
+## <a name="create-a-test-settings-file"></a>Tworzenie pliku ustawień testu
 
-1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz **nowy element**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy **pozycję Elementy rozwiązania**, wskaż polecenie **Dodaj**, a następnie wybierz polecenie Nowy **element**.
 
-     **Dodaj nowy element** pojawi się okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Dodawanie nowego elementu**.
 
-2. W **zainstalowane szablony** okienku wybierz **ustawienia testu**.
+2. W okienku **Zainstalowane szablony** wybierz pozycję **Ustawienia testu**.
 
-3. (Opcjonalnie) W **nazwa** Zmień nazwę pliku ustawień testu.
+3. (Opcjonalnie) W polu **Nazwa** zmień nazwę pliku ustawień testu.
 
-4. Wybierz **Dodaj**.
+4. Wybierz **pozycję Dodaj**.
 
-     Nowy plik ustawień testowych pojawia się w **Eksploratora rozwiązań**w obszarze **elementy rozwiązania** folderu.
+     Nowy plik ustawień testu pojawi się w **Eksploratorze rozwiązań**w folderze **Elementy rozwiązania.**
 
-5. **Ustawienia testu** zostanie wyświetlone okno dialogowe. **Ogólne** została zaznaczona strona.
+5. Zostanie wyświetlone okno dialogowe **Ustawienia testu.** Zostanie wybrana strona **Ogólne.**
 
-     Można teraz edytować i zapisać wartości ustawień testu.
+     Teraz można edytować i zapisywać wartości ustawień testu.
 
-6. W obszarze **nazwa**, wpisz nazwę ustawień testu.
+6. W obszarze **Nazwa**wpisz nazwę ustawień testu.
 
-7. (Opcjonalnie) W obszarze **opis**, wpisz opis ustawienia testu, aby inni członkowie zespołu wiedzieli, jego przeznaczenie.
+7. (Opcjonalnie) W obszarze **Opis**wpisz opis ustawienia testu, aby inni członkowie zespołu wiedzieli, do czego jest przeznaczony.
 
-8. (Opcjonalnie) Aby wybrać domyślny schemat nazewnictwa dla przebiegów testowych, wybierz **domyślny schemat nazewnictwa**. Aby zdefiniować własny schemat nazewnictwa, wybierz **schemat zdefiniowany przez użytkownika** i wpisz tekst, który ma w **tekst prefiksu**. Aby sygnatura daty i godziny należy dołączyć do nazwy testu, wybierz **Dołącz sygnaturę daty i godziny**.
+8. (Opcjonalnie) Aby wybrać domyślny schemat nazewnictwa dla przebiegów testów, wybierz **domyślny schemat nazewnictwa**. Aby zdefiniować własny schemat nazewnictwa, wybierz **schemat zdefiniowany przez użytkownika,** a następnie wpisz odpowiedni tekst w **tekście prefiksu**. Aby dołączyć datę i godzinę do nazwy przebiegu testu, wybierz pozycję **Dołącz sygnaturę daty i godziny**.
 
-9. Wybierz **role**.
+9. Wybierz **pozycję Role**.
 
-     **Role** zostanie wyświetlona strona.
+     Zostanie wyświetlona strona **Role.**
 
-     ![Rola ustawień testu](../test/media/load_testtestrole.png)
+     ![Rola ustawiania testu](../test/media/load_testtestrole.png)
 
-10. Aby zdalnie uruchomić testy, lub aby zdalnie uruchomić testy i zbierać dane, należy użyć **metoda wykonania testu** listy rozwijanej i wybierz pozycję **zdalne wykonywanie kodu**.
+10. Aby uruchomić testy zdalnie lub uruchomić testy zdalnie i zdalnie zbierać dane, użyj listy rozwijanej **Test Execution Method** i wybierz **zdalne wykonanie.**
 
-11. Użyj **kontrolera** listy rozwijanej można wybrać kontrolera testowego dla agentów testowych spośród **kontrolera** który będzie używany do uruchamiania testów lub zbierania danych.
+11. Użyj listy rozwijanej **Kontroler,** aby wybrać kontroler testów dla agentów testowych z **kontrolera,** który będzie używany do uruchamiania testów lub zbierania danych.
 
     > [!NOTE]
-    > Jeśli po raz pierwszy dodajesz kontrolera, kontrolery nie będzie wyświetlane na liście rozwijanej. Lista jest wypełniana przez wcześniejsze kontrolery, które określono w innych ustawieniach testowych. Należy wpisać nazwę kontrolera, w polu (na przykład **TestControllerMachine1**).
+    > Jeśli jest to pierwszy raz, gdy dodajesz kontroler, żadne kontrolery nie zostaną wyświetlone na liście rozwijanej. Lista jest wypełniana przez poprzednie kontrolery, które zostały określone w innych ustawieniach testu. Należy wpisać nazwę kontrolera w polu (na przykład **TestControllerMachine1**).
 
-12. Aby dodać role, które chcesz użyć do uruchamiania testów i zbieranie danych, w obszarze **role**, wybierz **Dodaj**.
+12. Aby dodać role, których chcesz użyć do uruchamiania testów i zbierania danych, w obszarze **Role**wybierz pozycję **Dodaj**.
 
-13. Wpisz nazwę roli w **nazwa** kolumny. Na przykład rola może być "Serwer sieci Web".
+13. Wpisz nazwę roli w kolumnie **Nazwa.** Na przykład rola może być "Serwer sieci Web".
 
-14. Powtórz kroki 12 i 13, aby dodać wszystkie role, których potrzebujesz.
+14. Powtórz kroki 12 i 13, aby dodać wszystkie potrzebne role.
 
      Każda rola używa agenta testowego, który jest zarządzany przez kontroler testów.
 
-15. Wybierz rolę, którą chcesz uruchomić testy, a następnie wybierz **Ustaw rolę wymaganą do uruchomienia testów**.
+15. Wybierz rolę, którą chcesz uruchomić testy, a następnie wybierz pozycję **Ustaw jako rolę do uruchamiania testów**.
 
     > [!IMPORTANT]
-    > Inne role, które umożliwiają tworzenie i definiowanie nie zostaną uruchomione testy, ale będą stosowane jedynie do zbierania danych i adapterów diagnostycznych określonych dla ról w **dane i Diagnostyka** strony.
+    > Inne role, które tworzysz i definiujesz, nie będą uruchamiać testów, ale będą używane tylko do zbierania danych zgodnie z danymi i kartami diagnostycznymi określonymi dla ról na stronie **Dane i diagnostyka.**
 
-16. Aby ograniczyć liczbę agentów, których można użyć dla roli, wybierz rolę, a następnie wybierz **Dodaj** na pasku narzędzi w ramach **atrybuty agenta dla wybranej roli**.
+16. Aby ograniczyć agentów, którzy mogą być używane dla roli, wybierz rolę, a następnie wybierz pozycję **Dodaj** na pasku narzędzi w obszarze **Atrybuty agenta dla wybranej roli**.
 
-     **Reguła wyboru agenta** zostanie wyświetlone okno dialogowe.
+     Zostanie wyświetlone okno dialogowe **Reguła wyboru** agenta.
 
-     Wpisz nazwę w **nazwa atrybutu** i wartości w **wartość atrybutu**, a następnie wybierz **OK**. Dodawanie atrybutów zgodnie w potrzebą.
+     Wpisz nazwę w polu **Nazwa atrybutu** i wartość w **polu Wartość atrybutu**, a następnie wybierz przycisk **OK**. Dodaj tyle atrybutów, ile potrzebujesz.
 
-     Na przykład można dodać atrybut o nazwie "RAM > 16GB" o wartości "True" lub "False", aby odfiltrować test agenta maszyn, które mają więcej niż 16GB pamięci. Aby zastosować ten sam atrybut do jednego lub więcej agentów testowych, należy użyć **Zarządzaj kontrolerem testów** okno dialogowe. Aby uzyskać więcej informacji, zobacz [zarządzać kontrolerami testów i agentami testowymi za pomocą programu Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+     Na przykład można dodać atrybut o nazwie "RAM > 16GB", który ma wartość "True" lub "False" do filtrowania na komputerach agenta testowego, które mają więcej niż 16 GB pamięci. Aby zastosować ten sam atrybut do jednego lub więcej agentów testowych, należy użyć okna dialogowego **Zarządzanie kontrolerem testów.** Aby uzyskać więcej informacji, zobacz [Zarządzanie kontrolerami testów i agentami testowymi za pomocą programu Visual Studio.](../test/manage-test-controllers-and-test-agents.md)
 
-17. Wybierz **dane i Diagnostyka**.
+17. Wybierz **pozycję Dane i diagnostyka**.
 
-     **Dane i Diagnostyka** zostanie wyświetlona strona.
+     Zostanie wyświetlona strona **Dane i diagnostyka.**
 
-     ![Dane ustawienia testu i Diagnostyka](../test/media/load_testtest.png)
+     ![Dane ustawień testowych i diagnostyka](../test/media/load_testtest.png)
 
-18. W **dane i Diagnostyka** strony, należy zdefiniować co dana rola będzie wykonywać wybierając *adapterów danych diagnostycznych* , którego rola będzie używać do zbierania danych. W związku z tym jeśli jeden lub więcej danych i adapterów diagnostycznych są włączone dla roli, kontroler testowy wybierze dostępną maszynę testową zbieranie danych dla określonych danych i adapterów diagnostycznych, na podstawie atrybutów, które są zdefiniowane dla roli. Aby wybrać dane i adaptery danych diagnostycznych, które mają być zbierane dla każdej roli, wybierz rolę. Dla każdej z ról wybierz adaptery danych diagnostycznych, zgodnie z potrzebami testów. Aby skonfigurować każdy adapter danych diagnostycznych, który wybrano dla każdej roli, wybierz **Konfiguruj**.
+18. Na stronie **Dane i diagnostyka** można zdefiniować, co robi rola, wybierając *karty danych diagnostycznych,* które rola będzie używać do zbierania danych. W związku z tym jeśli jeden lub więcej kart danych i diagnostyki są włączone dla roli, kontroler testów wybierze dostępny komputer agenta testowego do zbierania danych dla określonych danych i kart diagnostycznych na podstawie atrybutów zdefiniowanych dla roli. Aby wybrać karty danych i danych diagnostycznych, które chcesz zebrać dla każdej roli, wybierz rolę. Dla każdej roli wybierz karty danych diagnostycznych zgodnie z potrzebami testów. Aby skonfigurować każdą kartę danych diagnostycznych wybraną dla każdej roli, wybierz pozycję **Konfiguruj**.
 
-     **Przykład ról i adapterów danych diagnostycznych:**
+     **Przykład ról i kart danych diagnostycznych:**
 
-     Na przykład można utworzyć rolę klienta o nazwie "Klient pulpitu" z atrybutem "Używa SQL" ustawiony na "True" i rolą serwera o nazwie "SQL Server", który ma atrybut ustawiony na "RAM > 16GB". Jeśli określisz, że "Klient pulpitu" uruchomi testy wybierając **Ustaw rolę wymaganą do uruchomienia testów** w **role** strony, kontroler testowy wybierze maszyny z agentami testowymi, które zawierają atrybut "Używa SQL" ustawiony na wartość "True", na którym chcesz uruchomić testy. Kontroler testu zaznaczy także maszyny programu SQL server, które mają agentów testowych, które zawierają atrybut "RAM > 16GB" jedynie do zbierania danych, która jest zdefiniowana przez adaptory danych i adapterów diagnostycznych, które znajdują się w tej roli. Agent testów "Klienta pulpitu" może również zbierać dane dla maszyn, na których jest uruchamiany, jeśli także wybrać karty danych i diagnostyki dla tej roli.
+     Na przykład można utworzyć rolę klienta o nazwie "Klient pulpitu", który ma atrybut "Używa SQL" ustawiony na "True" i roli serwera o nazwie "SQL Server", który ma atrybut ustawiony na "RAM > 16GB". Jeśli określisz, że "Klient pulpitu" uruchomi testy, wybierając **ustaw jako rolę do uruchamiania testów** na stronie **Role,** kontroler testów wybierze maszyny, które mają agentów testowych, które zawierają atrybut "Używa SQL" ustawiony na "True", na którym mają być uruchamiane testy. Kontroler testów wybierze również komputery z serwerem SQL, które mają agentów testowych, które zawierają atrybut "RAM > 16GB" tylko do zbierania danych zdefiniowanych przez karty danych i diagnostyki, które są zawarte w roli. Agent testów "Klient pulpitu" może również zbierać dane dla komputerów, na których jest uruchamiany, jeśli wybierzesz dane i karty diagnostyczne dla tej roli.
 
-     Aby uzyskać szczegółowe informacje o każdym adapterze danych diagnostycznych i sposobu ich konfigurowania można obejrzeć skojarzony temat w poniższej tabeli.
+     Aby uzyskać szczegółowe informacje na temat każdej karty danych diagnostycznych i sposobu jej konfigurowania, można wyświetlić skojarzony temat w poniższej tabeli.
 
-     Aby uzyskać więcej informacji dotyczących adapterów danych diagnostycznych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+     Aby uzyskać więcej informacji na temat kart danych diagnostycznych, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
-     **Adaptery danych diagnostycznych dla testów obciążenia**
+     **Karty danych diagnostycznych do testów obciążenia**
 
-    |Adapter danych diagnostycznych|Używanie w testach obciążeniowych|Skojarzonego tematu|
+    |Karta danych diagnostycznych|Stosowanie w testach obciążenia|Skojarzony temat|
     |-|-------------------------|-|
-    |**Serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test:** ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma określonych specjalnych potrzeb zbierania informacji systemowych maszyny agenta testowego nie zawierają tej karty. **Uwaga:** nie zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane. <br /><br /> Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
-    |**IntelliTrace:** można skonfigurować informacji diagnostycznych śledzenia, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |**Profiler ASP.NET:** można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Dziennik zdarzeń:** można skonfigurować ustawienie testu w taki by obejmowało gromadzenie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Porady: Konfigurowanie zbierania zdarzeń dziennika przy użyciu ustawień testu](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
-    |**Emulacja sieci:** można określić, że chcesz umieścić sztuczne obciążenie sieciowe w badaniu, korzystając z ustawienia testu. Emulacja sieci ma wpływ na komunikację do i z komputera poprzez emulację szybkości połączenia określonej sieci, takich jak połączenie dodzwaniane. **Uwaga:** emulacji sieci nie można użyć do zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w mieszanym profilu sieciowym Scenariusz testów obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
-    |**Informacje o systemie:** można skonfigurować ustawienie testu do uwzględnienia informacji o systemie o maszynach, na których jest uruchamiany moduł zbierający dane diagnostyczne i informacje o systemie. Informacje o systemie jest określony w wynikach testu przy użyciu ustawień testu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno agentów obciążenia, jak i badanego systemu.|Do zebrania tych informacji jest wymagana żadna konfiguracja.|
-    |**Wpływ na testowanie:** może zbierać informacje o tym, jakie zastosowano metody kodu aplikacji po uruchomieniu przypadku testowego. Może to służyć razem ze zmianami w kodzie aplikacji poczynionymi przez deweloperów do określenia, który test miały wpływ te zmiany deweloperskie.|Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
-    |**Rejestrator wideo:** możesz utworzyć nagranie wideo swojej sesji pulpitu, po uruchomieniu automatycznych testów. Może to być pomocne przy podglądzie akcji użytkownika dla kodowanego testu interfejsu użytkownika. Nagranie wideo może pomóc innym członkom zespołu wyizolować elementy aplikacji, które są trudne do odtworzenia. **Uwaga:** podczas zdalnego wykonywania testów Rejestrator wideo nie będzie działać, chyba że agent jest uruchomiony w trybie procesu interaktywnego.|![Ikona ważnej informacji](../test/media/vc364f3.gif) **Ostrzeżenie:** nie zalecamy użycia karty Video Recorder do testów obciążenia.|[Porady: obejmują nagrań ekranu i głosu podczas testów przy użyciu ustawień testu](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**ASP.NET serwer proxy klienta dla intellitrace i wpływ testu:** Ten serwer proxy umożliwia zbieranie informacji o wywołaniach http z klienta do serwera sieci web dla kart danych diagnostycznych IntelliTrace i Test Impact.|![Ikona Informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie masz określonej potrzeby zbierania informacji o systemie dla maszyn agenta testowego, nie należy dołączać tej karty. **Uwaga:**  Nie zaleca się używania karty IntelliTrace w testach obciążenia z powodu problemów, które występują z powodu dużej ilości danych, które są zbierane. <br /><br /> Dane o wpływie testu nie są zbierane przy użyciu testów obciążenia.||
+    |**IntelliTrace:** Można skonfigurować określone informacje śledzenia diagnostycznego, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Po uruchomieniu testu i krok testu kończy się niepowodzeniem, można utworzyć błąd. Plik dziennika zawierający śledzenie diagnostyczne jest automatycznie dołączany do tego błędu. Dane, które są zbierane w pliku dziennika zwiększa wydajność debugowania, zmniejszając czas wymagany do odtworzenia i zdiagnozować błąd w kodzie. Z tego pliku dziennika można odtworzyć sesję lokalną na innym komputerze. Zmniejsza to ryzyko, że błąd nie może być powielany.<br /><br /> Aby uzyskać więcej informacji, zobacz [Zbieranie danych IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Nie zaleca się używania karty IntelliTrace w testach obciążenia z powodu problemów, które występują z powodu dużej ilości danych, które są zbierane i rejestrowane. Należy podjąć próbę użycia karty IntelliTrace tylko w testach obciążenia, które nie działają długo i nie używają wielu agentów testowych.|[Jak: Zbieranie danych IntelliTrace, aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
+    |**ASP.NET Profiler:** Można utworzyć ustawienie testowe, które obejmuje profilowanie ASP.NET, które zbiera dane o wydajności ASP.NET aplikacji sieci web.|Karta danych diagnostycznych ASP.NET profiler profiluje proces internetowych usług informacyjnych (IIS), dzięki czemu nie będzie działać na serwerze sieci Web dewelopera. Aby profilować witrynę sieci Web w teście obciążenia, należy zainstalować agenta testowego na komputerze, na którego uruchomione są usługi IIS. Agent testowy nie będzie generować obciążenia, ale będzie agentem tylko do kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Jak: Konfigurowanie ASP.NET profiler do testów obciążenia przy użyciu ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**Dziennik zdarzeń:** Można skonfigurować ustawienie testu, aby uwzględnić zbieranie dzienników zdarzeń, które zostaną uwzględnione w wynikach testu.||[Jak: Konfigurowanie kolekcji dziennika zdarzeń przy użyciu ustawień testu](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Emulacja sieci:** Można określić, że chcesz umieścić sztuczne obciążenie sieciowe na test przy użyciu ustawienia testu. Emulacja sieci wpływa na komunikację do i z komputera, emulując określoną szybkość połączenia sieciowego, taką jak dial-up. **Uwaga:**  Nie można użyć emulacji sieci w celu zwiększenia szybkości połączenia sieciowego.|Karta emulacji sieci jest ignorowana przez testy obciążenia. Zamiast tego testy obciążenia używają ustawień, które są określone w kombinacji sieciowej scenariusza testu obciążenia.<br /><br /> Aby uzyskać więcej informacji, zobacz [Określanie typów sieci wirtualnych](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
+    |**Informacje o systemie:** Ustawienie testu można skonfigurować w taki sposób, aby zawierało informacje systemowe dotyczące maszyn, na których jest uruchamiana diagnostyka informacji o systemie i moduł zbierający dane. Informacje o systemie są określone w wynikach testu przy użyciu ustawienia testu.|![Ikona Informacji](../test/media/vc364f4.gif)<br /><br /> Można zbierać informacje o systemie zarówno z agentów obciążenia, jak i z testowego systemu.|Do zbierania tych informacji nie jest wymagana żadna konfiguracja.|
+    |**Wpływ testu:** Można zbierać informacje o tym, które metody kodu aplikacji zostały użyte podczas uruchamiania przypadku testowego. Może to być używane wraz ze zmianami w kodzie aplikacji, które są wprowadzane przez deweloperów, aby określić, które testy zostały naruszone przez te zmiany rozwoju.|Dane o wpływie testu nie są zbierane za pomocą testów obciążenia.||
+    |**Rejestrator wideo:** Po uruchomieniu automatycznego testu można utworzyć nagranie wideo sesji pulpitu. Może to być przydatne do wyświetlania akcji użytkownika dla zakodowany test interfejsu użytkownika. Film może pomóc innym członkom zespołu izolować problemy z aplikacjami, które są trudne do odtworzenia. **Uwaga:**  Podczas zdalnego uruchamiania testów rejestrator wideo nie będzie działać, chyba że agent działa w trybie interakcyjnym procesu.|![Ważna](../test/media/vc364f3.gif) **ikona Ostrzeżenie:** Nie zaleca się używania karty video recorder do testów obciążenia.|[Jak: Dołączanie nagrań ekranu i głosu podczas testów przy użyciu ustawień testowych](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
-19. Wybierz **wdrożenia**.
+19. Wybierz **pozycję Wdrażanie**.
 
-     **Wdrożenia** zostanie wyświetlona strona.
+     Zostanie wyświetlona strona **Wdrażanie.**
 
-20. Aby utworzyć oddzielny katalog dla wdrożenia za każdym razem, że uruchomienia testów, wybierz **umożliwiają wdrażanie**.
-
-    > [!NOTE]
-    > Jeśli to zrobisz, można kontynuować kompilację aplikacji po uruchomieniu testów.
-
-21. Aby dodać plik do katalogu, którego używasz do przeprowadzania swoich testów, wybierz opcję **Dodaj plik**, a następnie wybierz plik, który chcesz dodać.
+20. Aby utworzyć oddzielny katalog do wdrożenia przy każdym uruchomieniu testów, wybierz włącz **wdrożenie**.
 
     > [!NOTE]
-    > Po uruchomieniu obciążenia testów, zestawy dodatków plug-in, pliki danych i przekazane pliki są automatycznie wdrażane.
+    > Jeśli to zrobisz, można kontynuować tworzenie aplikacji po uruchomieniu testów.
 
-22. Aby dodać katalog do katalogu, którego używasz do przeprowadzania swoich testów, wybierz opcję **Dodaj katalog** a następnie wybierz katalog, który chcesz dodać.
+21. Aby dodać plik do katalogu używanego do uruchamiania testów, wybierz pozycję **Dodaj plik**, a następnie wybierz plik, który chcesz dodać.
 
-23. Aby uruchomić skrypty przed i po testach, wybierz **skrypty instalacyjne i czyszczące**.
+    > [!NOTE]
+    > Po uruchomieniu testów obciążenia zestawy wtyczek, pliki danych i przekazane pliki są automatycznie wdrażane.
 
-     **Skrypty instalacyjne i czyszczące** zostanie wyświetlona strona.
+22. Aby dodać katalog do katalogu używanego do uruchamiania testów, wybierz pozycję **Dodaj katalog,** a następnie wybierz katalog, który chcesz dodać.
 
-    1. Wpisz lokalizację pliku skryptu w **skrypt instalacyjny** lub wybierz wielokropek ( **...** ), aby zlokalizować konfigurację scenariusza.
+23. Aby uruchomić skrypty przed i po testach, wybierz pozycję **Instalacja i oczyszczanie skryptów**.
 
-    2. Wpisz lokalizację pliku skryptu w **skrypt czyszczący** lub wybierz wielokropek ( **...** ), aby zlokalizować czyszczenie scenariusza.
+     Zostanie wyświetlona strona **Instalacja i oczyszczanie skryptów.**
 
-24. Aby uruchomić testy przy użyciu innego hosta, wybierz **hosty**.
+    1. Wpisz lokalizację pliku skryptu w **skrypcie Instalatora** lub wybierz wielokropek (**...**), aby zlokalizować skrypt konfiguracji.
 
-    1. W **typ hosta**, upewnij się, że **domyślne** jest zaznaczone.
+    2. Wpisz lokalizację pliku skryptu w **skrypcie Oczyszczania** lub wybierz wielokropek (**...**), aby zlokalizować skrypt oczyszczania.
+
+24. Aby uruchomić testy przy użyciu innego hosta, wybierz pozycję **Hosty**.
+
+    1. W **polu Typ hosta**sprawdź, czy zaznaczono opcję **Domyślna.**
 
         > [!NOTE]
-        > **ASP.NET** w **typ hosta** nie jest obsługiwany w badaniach obciążenia.
+        > **ASP.NET** typu **hosta** nie jest obsługiwana w testach obciążenia.
 
-    2. Użyj **Uruchom test w 32-bitową lub 64-bitowych** procesu listy rozwijanej do wybierz, czy testy wydajności i jednostki w sieci web w teście obciążenia, aby był uruchamiany jako procesy 32-bitową lub 64-bitowych.
+    2. Użyj **testu Uruchom w 32-bitowym lub 64-bitowym** procesie rozwijanej, aby wybrać, czy chcesz, aby testy wydajności sieci web i jednostki w teście obciążenia były uruchamiane jako procesy 32-bitowe czy 64-bitowe.
 
         > [!NOTE]
-        > Aby zapewnić maksymalną elastyczność, należy skompilować wydajności sieci web i obciążenia projektów testów przy użyciu **dowolny Procesor** konfiguracji. Następnie można uruchomić zarówno 32-bitowych i 64-bitowych agentów. Kompilowanie wydajności sieci web i obciążenia projekty testowe przy użyciu **64-bitowych** konfiguracja zapewnia nie posiada zalet.
+        > Aby uzyskać maksymalną elastyczność, należy skompilować wydajność sieci web i załadować projektów testowych przy użyciu dowolnej konfiguracji **procesora CPU.** Następnie można uruchomić zarówno na agentach 32-bitowych, jak i 64-bitowych. Kompilowanie projektów testów wydajności sieci web i ładowania przy użyciu konfiguracji **64-bitowej** nie oferuje żadnych korzyści.
 
-25. (Opcjonalnie) Aby ograniczyć czas dla każdego przebiegu testu i badań indywidualnych, wybierz opcję **limity czasu testu.**
+25. (Opcjonalnie) Aby ograniczyć czas dla każdego przebiegu testu i poszczególnych testów, wybierz **limity czasu testowania.**
 
-    1. Aby przerwać test Kiedy limit czasu zostanie przekroczony, wybierz **Przerwij przebieg testu, jeśli łączny czas przekroczy** , a następnie wpisz wartość dla tego ograniczenia.
+    1. Aby przerwać przebieg testu po przekroczeniu limitu czasu, wybierz **przerwij przebieg testu, jeśli całkowity czas przekracza,** a następnie wpisz wartość dla tego limitu.
 
-    2. Aby zakończyć niepowodzeniem test indywidualny, po przekroczeniu limitu czasu, wybierz **Oznacz pojedynczy test jako zakończony niepowodzeniem, jeśli czas jego wykonywania przekroczy**, a następnie wpisz wartość dla tego ograniczenia.
+    2. Aby zakończyć się niepowodzeniem testu indywidualnego po przekroczeniu limitu czasu, wybierz **opcję Oznacz pojedynczy test jako nieudany, jeśli jego czas wykonania przekracza**, i wpisz wartość dla tego limitu.
 
-26. Pomiń **testu jednostkowego**. Testy obciążeniowe nie należy używać tych ustawień.
+26. **Pomiń test jednostkowy**. Testy obciążenia nie używają tych ustawień.
 
-27. Pomiń **Web Test**. Testy obciążeniowe nie należy używać tych ustawień.
+27. Pomiń **test sieci Web**. Testy obciążenia nie używają tych ustawień.
 
-28. Aby zapisać ustawienia testu, wybierz **Zapisz jako**. Wpisz nazwę pliku, który ma w **nazwa obiektu**.
+28. Aby zapisać ustawienia testu, wybierz pozycję **Zapisz jako**. Wpisz nazwę pliku, który ma zostać wpisać w **polu Nazwa obiektu**.
 
 ## <a name="remove-a-test-settings-file-from-your-solution"></a>Usuwanie pliku ustawień testu z rozwiązania
 
-W obszarze **elementy rozwiązania** folderu w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz **Usuń**.
+W obszarze folderu **Elementy rozwiązania** w **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy ustawienia testu, które chcesz usunąć, a następnie wybierz polecenie **Usuń**.
 
-Plik ustawień testowych jest usuwany z rozwiązania.
+Plik ustawień testu zostanie usunięty z rozwiązania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Kontrolerzy testów i agenci testowi](configure-test-agents-and-controllers-for-load-tests.md)
-- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)

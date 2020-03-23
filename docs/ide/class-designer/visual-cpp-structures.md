@@ -1,5 +1,5 @@
 ---
-title: C++Struktury w Projektant klas
+title: Struktury języka C++ w projektancie klas
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75590687"
 ---
-# <a name="c-structures-in-class-designer"></a>C++struktury w Projektant klas
+# <a name="c-structures-in-class-designer"></a>Struktury języka C++ w projektancie klas
 
-**Projektant klas** obsługuje C++ struktury, które są zadeklarowane za pomocą słowa kluczowego `struct`. Oto przykład:
+**Projektant klas** obsługuje struktury języka C++, `struct`które są zadeklarowane za pomocą słowa kluczowego . Oto przykład:
 
 ```cpp
 struct MyStructure
@@ -30,16 +30,16 @@ struct MyStructure
 };
 ```
 
-Aby uzyskać więcej informacji o używaniu typu `struct`, zobacz [struct](/cpp/cpp/struct-cpp).
+Aby uzyskać więcej `struct` informacji na temat używania tego typu, zobacz [struct](/cpp/cpp/struct-cpp).
 
-Kształt C++ struktury na diagramie klas wygląda i działa jak kształt klasy, z tą różnicą, że etykieta odczytuje **strukturę** i ma kwadratowe rogi zamiast zaokrąglonych rogów.
+Kształt struktury C++ na diagramie klasy wygląda i działa jak kształt klasy, z tą różnicą, że etykieta odczytuje **Struct** i ma kwadratowe narożniki zamiast zaokrąglonych narożników.
 
-|Element Code|Widok Projektant klas|
+|Element Code|Widok projektanta klas|
 |------------------| - |
-|`struct StructureName {};`|**StructureName**<br /><br /> Struct|
+|`struct StructureName {};`|**Nazwa struktury**<br /><br /> Struct|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Praca z C++ kodem](working-with-visual-cpp-code.md)
+- [Praca z kodem C++](working-with-visual-cpp-code.md)
 - [Klasy i struktury](/cpp/cpp/classes-and-structs-cpp)
-- [struct](/cpp/cpp/struct-cpp)
+- [Struct](/cpp/cpp/struct-cpp)

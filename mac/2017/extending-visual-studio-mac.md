@@ -1,42 +1,42 @@
 ---
 title: Rozszerzanie programu Visual Studio dla komputerów Mac
-description: Funkcje i możliwości Visual Studio dla komputerów Mac można rozszerzyć za pomocą modułów o nazwie pakiety rozszerzeń. Pierwsza część tego przewodnika tworzy prosty pakiet rozszerzenia Visual Studio dla komputerów Mac, aby wstawić datę i godzinę do dokumentu. W drugiej części tego przewodnika przedstawiono podstawy systemu rozszerzenia oraz niektóre podstawowe interfejsy API, które tworzą podstawę Visual Studio dla komputerów Mac.
+description: Funkcje i funkcje programu Visual Studio for Mac można rozszerzyć o moduły o nazwie pakiety rozszerzeń. Pierwsza część tego przewodnika tworzy prosty pakiet rozszerzenia programu Visual Studio dla komputerów Mac, aby wstawić datę i godzinę do dokumentu. W drugiej części tego przewodnika przedstawiono podstawy systemu pakietów rozszerzeń i niektóre podstawowe interfejsy API, które tworzą podstawę programu Visual Studio dla komputerów Mac.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
 ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75851955"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
-Visual Studio dla komputerów Mac składa się z zestawu modułów o nazwie *pakiety rozszerzenia*. Za pomocą pakietów rozszerzeń można wprowadzać nowe funkcje do Visual Studio dla komputerów Mac, takie jak obsługa dodatkowego języka lub nowego szablonu projektu.
+Visual Studio dla komputerów Mac składa się z zestawu modułów o nazwie *Pakiety rozszerzeń*. Pakiety rozszerzeń można użyć, aby wprowadzić nowe funkcje do programu Visual Studio dla komputerów Mac, takie jak obsługa dodatkowego języka lub nowego szablonu projektu.
 
-Pakiety rozszerzeń kompilują się z punktów *rozszerzenia* innych pakietów rozszerzenia. Punkty rozszerzenia to symbole zastępcze dla obszarów, które mogą być rozwinięte, na przykład menu lub listę poleceń IDE. Pakiet rozszerzeń można skompilować z punktu rozszerzenia, rejestrując węzeł danych strukturalnych nazywany rozszerzeniem, takim jak nowy element menu lub nowe polecenie. Każdy punkt rozszerzenia akceptuje pewne typy rozszerzeń, takie jak *Command*, *pad*lub *FileTemplate*. Moduł, który zawiera punkty rozszerzenia, jest nazywany *hostem dodatku*, ponieważ może zostać rozszerzony przez inne pakiety rozszerzeń.
+Pakiety rozszerzeń kompilacji z punktów *rozszerzenia* innych pakietów rozszerzenia. Punkty rozszerzenia są symbolami zastępczymi dla obszarów, które można rozwinąć, takich jak menu lub lista poleceń IDE. Pakiet rozszerzenia można tworzyć z punktu rozszerzenia, rejestrując węzeł danych strukturalnych o nazwie rozszerzenie, takie jak nowy element menu lub nowe polecenie. Każdy punkt rozszerzenia akceptuje pewne typy rozszerzeń, takie jak *Command*, *Pad*lub *FileTemplate*. Moduł, który zawiera punkty rozszerzenia jest nazywany *hostem dodatku,* ponieważ może zostać rozszerzony o inne pakiety rozszerzeń.
 
-Aby dostosować Visual Studio dla komputerów Mac, można utworzyć pakiet rozszerzenia, który kompiluje się z punktów rozszerzenia zawartych w hostach dodatków znajdujących się w istniejących już bibliotekach w Visual Studio dla komputerów Mac, jak pokazano na poniższym diagramie:
+Aby dostosować program Visual Studio dla komputerów Mac, można utworzyć pakiet rozszerzenia, który jest kompilacji z punktów rozszerzenia zawartych w hostach dodatków w istniejących bibliotekach w programie Visual Studio dla komputerów Mac, jak pokazano na poniższym diagramie:
 
 ![Architektura dodatku](media/extending-visual-studio-mac-addin1.png)
 
-Aby pakiet rozszerzenia mógł kompilować Visual Studio dla komputerów Mac, musi mieć rozszerzenia, które kompilują ze wstępnie istniejących punktów rozszerzenia w ramach Visual Studio dla komputerów Mac IDE. Gdy pakiet rozszerzenia jest oparty na punkcie rozszerzenia zdefiniowanym w hoście dodatków, jest on uważany za _zależność_ tego pakietu rozszerzenia.
+Aby pakiet rozszerzenia do kompilacji z programu Visual Studio dla komputerów Mac, musi mieć rozszerzenia, które kompilacji z istniejących punktów rozszerzenia w programie Visual Studio dla komputerów Mac IDE. Gdy pakiet rozszerzenia opiera się na punkt rozszerzenia zdefiniowane w hosta dodatku, mówi się, że _zależność_ od tego pakietu rozszerzenia.
 
-Zaletą tego projektu modularnego jest to, że Visual Studio dla komputerów Mac jest rozszerzalna — istnieje wiele punktów rozszerzenia, które można skompilować przy użyciu niestandardowych pakietów rozszerzeń. Przykłady bieżących pakietów rozszerzeń obejmują obsługę narzędzi debugera C# i F#programu oraz szablonów projektów.
+Zaletą tej modułowej konstrukcji jest to, że visual studio dla komputerów Mac jest rozszerzalny — istnieje wiele punktów rozszerzenia, które mogą być oparte na niestandardowych pakietach rozszerzeń. Przykłady bieżących pakietów rozszerzenia obejmują obsługę języka C# i F#, narzędzia debugera i szablony projektu.
 
 > [!NOTE]
-> Jeśli masz projekt dodatku, który został utworzony przed dodatkiem Maker 1,2, należy przeprowadzić migrację projektu zgodnie z instrukcjami w [tym miejscu](https://mhut.ch/addinmaker/1.2).
+> Jeśli masz projekt programu Add-in Maker, który został utworzony przed programem Add-in Maker 1.2, musisz przeprowadzić migrację projektu zgodnie z [poniższymi](https://mhut.ch/addinmaker/1.2)krokami.
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
-Ta sekcja analizuje różne pliki wygenerowane przez twórcę dodatku oraz dane wymagane przez rozszerzenie polecenia.
+W tej sekcji omówiono różne pliki generowane przez program Add-in Maker i dane, które wymaga rozszerzenia polecenia.
 
 ## <a name="attribute-files"></a>Pliki atrybutów
 
-Pakiety rozszerzeń przechowują metadane dotyczące ich nazwy, wersji, zależności i innych informacji w C# atrybutach. Producent dodatku tworzy dwa pliki, `AddinInfo.cs` i `AssemblyInfo.cs` do przechowywania i organizowania tych informacji. Pakiety rozszerzeń muszą mieć unikatowy identyfikator i przestrzeń nazw określone w ich *atrybucie addin*:
+Pakiety rozszerzeń przechowują metadane dotyczące ich nazwy, wersji, zależności i innych informacji w atrybutach języka C#. Program Add-in Maker tworzy `AddinInfo.cs` `AssemblyInfo.cs` dwa pliki oraz przechowuje i organizuje te informacje. Pakiety rozszerzeń muszą mieć unikatowy identyfikator i obszar nazw określony w ich *atrybutie Addin:*
 
 ```csharp
 [assembly:Addin (
@@ -46,19 +46,19 @@ Pakiety rozszerzeń przechowują metadane dotyczące ich nazwy, wersji, zależno
 )]
 ```
 
-Pakiety rozszerzeń muszą również deklarować zależności w pakietach rozszerzeń, które są właścicielami punktów rozszerzenia, które są przez nich podłączane. Są one automatycznie przywoływane w czasie kompilacji.
+Pakiety rozszerzeń należy również zadeklarować zależności od pakietów rozszerzeń, które są właścicielami punktów rozszerzenia, do których są podłączane. Są one automatycznie odwoływane w czasie kompilacji.
 
-Ponadto dodatkowe odwołania można dodać za pośrednictwem węzła odwołania dodatku w konsoli rozwiązania dla projektu, jak przedstawiono na poniższej ilustracji:
+Ponadto dodatkowe odwołania można dodać za pośrednictwem węzła odwołania dodatku w konsoli rozwiązania dla projektu, jak pokazano na poniższej ilustracji:
 
-![Wstaw zrzut ekranu daty](media/extending-visual-studio-mac-addin13.png)
+![Wstaw datę zrzutu ekranu](media/extending-visual-studio-mac-addin13.png)
 
-Mają także odpowiednie atrybuty `assembly:AddinDependency` dodane w czasie kompilacji. Po umieszczeniu deklaracji metadanych i zależności można skoncentrować się na istotnych blokach konstrukcyjnych pakietu rozszerzenia.
+Mają również ich `assembly:AddinDependency` odpowiednie atrybuty dodane w czasie kompilacji. Po usunięciu metadanych i deklaracji zależności można skupić się na podstawowych blokach konstrukcyjnych pakietu rozszerzeń.
 
-## <a name="extensions-and-extension-points"></a>Rozszerzenia i punkty rozszerzenia
+## <a name="extensions-and-extension-points"></a>Rozszerzenia i punkty rozszerzeń
 
-Punkt rozszerzenia jest symbolem zastępczym, który definiuje strukturę danych (typ), podczas gdy rozszerzenie definiuje dane, które są zgodne ze strukturą określoną przez określony punkt rozszerzenia. Punkty rozszerzenia określają typ rozszerzenia, które mogą być akceptowane w swojej deklaracji. Rozszerzenia są deklarowane przy użyciu nazw typów lub ścieżek rozszerzeń. Więcej szczegółowych informacji na temat tworzenia potrzebnych punktów rozszerzenia znajduje się w [dokumentacji punktu rozszerzenia](https://github.com/mono/mono-addins/wiki/Extension-Points) .
+Punkt rozszerzenia jest symbolem zastępczym, który definiuje strukturę danych (typ), podczas gdy rozszerzenie definiuje dane, które są zgodne ze strukturą określoną przez określony punkt rozszerzenia. Punkty rozszerzeń określają, jakiego typu rozszerzenia mogą zaakceptować w swojej deklaracji. Rozszerzenia są deklarowane przy użyciu nazw typów lub ścieżek rozszerzenia. Zobacz [odwołanie do punktu rozszerzenia,](https://github.com/mono/mono-addins/wiki/Extension-Points) aby uzyskać bardziej szczegółowe wyjaśnienie dotyczące tworzenia punktu rozszerzenia, którego potrzebujesz.
 
-Architektura rozszerzenia/punktu rozszerzenia pozwala na szybkie i modularnie opracowywanie Visual Studio dla komputerów Mac.
+Architektura punktu rozszerzenia/rozszerzenia zapewnia szybki i modułowy rozwój programu Visual Studio dla komputerów Mac.
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -66,9 +66,9 @@ Architektura rozszerzenia/punktu rozszerzenia pozwala na szybkie i modularnie op
 
 <!--[Walkthrough](~/extending-visual-studio-mac-walkthrough.md) uses a Command Extension - an extension that points to methods that are called every time it is executed. -->
 
-Rozszerzenia poleceń to rozszerzenia wskazujące metody, które są wywoływane za każdym razem, gdy jest wykonywane.
+Rozszerzenia poleceń są rozszerzeniami, które wskazują na metody, które są wywoływane za każdym razem, gdy jest wykonywane.
 
-Rozszerzenia poleceń są definiowane przez dodanie wpisów do punktu rozszerzenia `/MonoDevelop/Ide/Commands`. Nasze rozszerzenie zostało zdefiniowane w `Manifest.addin.xml` przy użyciu następującego kodu:
+Rozszerzenia poleceń są definiowane przez `/MonoDevelop/Ide/Commands` dodanie wpisów do punktu rozszerzenia. Zdefiniowaliśmy nasze `Manifest.addin.xml` rozszerzenie za pomocą następującego kodu:
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
@@ -79,16 +79,16 @@ Rozszerzenia poleceń są definiowane przez dodanie wpisów do punktu rozszerzen
 </Extension>
 ```
 
-Węzeł rozszerzenia zawiera atrybut Path, który określa punkt rozszerzenia, do którego jest podłączany, w tym przypadku `/MonoDevelop/Ide/Commands/Edit`. Ponadto działa jako węzeł nadrzędny polecenia. Węzeł polecenia ma następujące atrybuty:
+Węzeł rozszerzenia zawiera atrybut ścieżki, który określa punkt rozszerzenia, do który jest `/MonoDevelop/Ide/Commands/Edit`w tym przypadku podłączany. Ponadto działa jako węzeł nadrzędny do polecenia. Węzeł Polecenia ma następujące atrybuty:
 
-* **ID** — określa identyfikator dla tego polecenia. Identyfikatory poleceń muszą być zadeklarowane jako elementy członkowskie wyliczenia i są używane do łączenia poleceń z CommandItems.
-* **_label** — tekst, który ma być wyświetlany w menu.
-* **_description** — tekst, który będzie wyświetlany jako etykietka narzędzia przycisków paska narzędzi.
-* **defaultHandler** -określa klasę `CommandHandler`, która umożliwia polecenie
+* **id** - Określa identyfikator tego polecenia. Identyfikatory poleceń muszą być zadeklarowane jako elementy członkowskie wyliczenia i są używane do łączenia poleceń z commanditems.
+* **_label** — tekst wyświetlany w menu.
+* **_description** — tekst, który ma być wyświetlany jako etykietka narzędzia dla przycisków paska narzędzi.
+* **defaultHandler** - Określa `CommandHandler` klasę, która zasila polecenie
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
-Rozszerzenie CommandItem, które jest podłączane do punktu rozszerzenia `/MonoDevelop/Ide/MainMenu/Edit`, przedstawiono w poniższym fragmencie kodu:
+Rozszerzenie CommandItem, które podłącza się do punktu `/MonoDevelop/Ide/MainMenu/Edit` rozszerzenia, jest zademonstrowane w następującym fragmentze kodu:
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
@@ -96,11 +96,11 @@ Rozszerzenie CommandItem, które jest podłączane do punktu rozszerzenia `/Mono
 </Extension>
 ```
 
-CommandItem umieszcza polecenie określone w jego atrybucie ID w menu. Ten CommandItem rozszerza punkt rozszerzenia `/MonoDevelop/Ide/MainMenu/Edit`, co sprawia, że etykieta polecenia pojawia się w **menu Edycja**. Należy zauważyć, że **Identyfikator** w CommandItem odpowiada identyfikatorowi węzła polecenia, `InsertDate`. W przypadku usunięcia CommandItem opcja **Wstaw datę** zniknie z menu Edycja.
+A CommandItem umieszcza Command określony w jego id atrybut w menu. Ten element commanditem `/MonoDevelop/Ide/MainMenu/Edit` rozszerza punkt rozszerzenia, co sprawia, że etykieta polecenia pojawia się w **menu edycji**. Należy zauważyć, że **identyfikator** w CommandItem odpowiada identyfikatorowi węzła Command, `InsertDate`. Jeśli usuniesz CommandItem, opcja **Wstaw datę** zniknie z menu edycji.
 
 ### <a name="command-handlers"></a>Programy obsługi poleceń
 
-`InsertDateHandler` jest rozszerzeniem klasy `CommandHandler`. Zastępuje dwie metody, `Update` i `Run`. Metoda `Update` jest wysyłana za każdym razem, gdy polecenie jest wyświetlane w menu lub wykonywane za pośrednictwem powiązań klucza. Zmieniając obiekt info, można wyłączyć polecenie lub uczynić go niewidocznym, wypełnić polecenia tablicowe i inne. Ta metoda `Update` wyłącza polecenie, jeśli nie może znaleźć aktywnego *dokumentu* ze *textredaktorem* , aby wstawić tekst do:
+Jest `InsertDateHandler` rozszerzeniem `CommandHandler` klasy. Zastępuje dwie metody `Update` i `Run`. Metoda `Update` jest wyszukiwana za każdym razem, gdy polecenie jest wyświetlane w menu lub wykonywane za pomocą powiązań kluczy. Zmieniając obiekt informacji, można wyłączyć polecenie lub uczynić go niewidocznym, wypełnić polecenia tablicowe i nie tylko. Ta `Update` metoda wyłącza polecenie, jeśli nie można znaleźć aktywnego *dokumentu* z *programem TextEditor,* do wstawiania tekstu do:
 
 ```csharp
 protected override void Update (CommandInfo info)
@@ -109,7 +109,7 @@ protected override void Update (CommandInfo info)
 }
 ```
 
-Należy przesłonić metodę `Update` tylko wtedy, gdy istnieje specjalna logika do włączania lub ukrywania polecenia. Metoda `Run` jest wykonywana za każdym razem, gdy użytkownik wykonuje polecenie, co w tym przypadku ma miejsce, gdy użytkownik wybierze polecenie z menu Edycja. Ta metoda wstawia datę i godzinę do karetki w edytorze tekstu:
+Wystarczy zastąpić metodę tylko `Update` wtedy, gdy masz specjalną logikę włączania lub ukrywania polecenia. Metoda `Run` jest wykonywana za każdym razem, gdy użytkownik wykonuje polecenie, które w tym przypadku występuje, gdy użytkownik wybierze polecenie z menu edycji. Ta metoda wstawia datę i godzinę w daszniku w edytorze tekstu:
 
 ```csharp
 protected override void Run ()
@@ -120,7 +120,7 @@ protected override void Run ()
 }
 ```
 
-Zadeklaruj Typ polecenia jako element członkowski wyliczenia w `DateInserterCommands`:
+Zadeklaruj typ polecenia jako `DateInserterCommands`element członkowski wyliczenia w obrębie:
 
 ```csharp
 public enum DateInserterCommands
@@ -129,41 +129,41 @@ public enum DateInserterCommands
 }
 ```
 
-Wiąże się to z poleceniem i CommandItem — CommandItem wywołuje polecenie, gdy CommandItem jest wybrane z **menu Edycja**.
+Wiąże to ze sobą Command i CommandItem - CommandItem wywołuje polecenie, gdy commanditem jest zaznaczone z **menu edycji**.
 
 ## <a name="ide-apis"></a>Interfejsy API IDE
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Aby uzyskać informacje na temat zakresu obszarów, które są dostępne do opracowania, zobacz [informacje dotyczące drzewa rozszerzeń](https://www.monodevelop.com/developers/articles/extension-tree-reference/) i [Omówienie interfejsu API](https://www.monodevelop.com/developers/articles/api-overview/). Podczas kompilowania pakietów rozszerzenia zaawansowanego należy również zapoznać się z [artykułami dla deweloperów](https://www.monodevelop.com/developers/articles/). Poniżej znajduje się częściowa lista obszarów do dostosowania:
+Aby uzyskać informacje na temat zakresu obszarów, które są dostępne do programowania, zobacz [odwołanie do drzewa rozszerzeń](https://www.monodevelop.com/developers/articles/extension-tree-reference/) i [omówienie interfejsu API](https://www.monodevelop.com/developers/articles/api-overview/). Podczas tworzenia zaawansowanych pakietów rozszerzeń, należy również zapoznać się z [artykułami deweloperów](https://www.monodevelop.com/developers/articles/). Poniżej znajduje się częściowa lista obszarów do dostosowania:
 
-* Konsol
-* Schematy powiązań kluczy
+* Klocki
+* Kluczowe schematy powiązania
 * Zasady
-* Elementy formatujące kod
+* Formaty kodu
 * Formaty plików projektu
 * Panele preferencji
 * Panele opcji
 * Protokoły debugera
 * Wizualizatory debugera
 * Układy obszarów roboczych
-* Węzły drzewa konsoli rozwiązania
-* Marginesy edytora źródła
-* Silniki testów jednostkowych
+* Węzły drzewa podkładek rozwiązania
+* Marginesy edytora źródłowego
+* Silniki testowe jednostkowe
 * Generatory kodu
 * Fragmenty kodu
 * Platformy docelowe
-* Docelowy środowisko uruchomieniowe
-* Zaplecze OBWODu
+* Docelowy czas wykonywania
+* Tylne końcówki VCS
 * Refaktoryzacja
-* Programy obsługi wykonywania
+* Programy obsługi wykonania
 * Wyróżnianie składni
 
 ## <a name="additional-information"></a>Dodatkowe informacje
 
 > [!NOTE]
-> Obecnie pracujemy nad ulepszaniem scenariuszy rozszerzalności dla Visual Studio dla komputerów Mac. Jeśli tworzysz rozszerzenia i potrzebujesz dodatkowej pomocy lub informacji lub chcesz przekazać opinię, Wypełnij formularz [Visual Studio dla komputerów Mac tworzenia rozszerzenia](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) .
+> Obecnie pracujemy nad poprawą scenariuszy rozszerzalności programu Visual Studio dla komputerów Mac. Jeśli tworzysz rozszerzenia i potrzebujesz dodatkowej pomocy lub informacji lub chcesz przekazać opinię, wypełnij formularz [tworzenia rozszerzeń programu Visual Studio dla komputerów Mac.](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Programowanie rozszerzeń programu Visual Studio (w systemie Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)
+- [Tworzenie rozszerzeń programu Visual Studio (w systemie Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

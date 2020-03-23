@@ -1,5 +1,5 @@
 ---
-title: Widok rdzeni — rdzenie logiczne | Dokumentacja firmy Microsoft
+title: Rdzenie Wyświetl rdzenie logiczne | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3544ca6c5f9dfe5326f51bb565ff012b654dc263
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "62553139"
 ---
-# <a name="cores-view-logical-cores"></a>Widok rdzeni — rdzenie logiczne
-Każda nazwa kanału reprezentuje jeden rdzenie logiczne, które istnieją w systemie profilowanych. Nazewnictwo liczy w górę od 0 do całkowitej liczby rdzeni logicznych. Na przykład system cztery procesory będą liczone od rdzeń logiczny 0 na rdzeń logiczny 3.
+# <a name="cores-view-logical-cores"></a>Rdzenie Zobacz rdzenie logiczne
+Każda nazwa kanału reprezentuje jeden z rdzeni logicznych, które istnieją w systemie profilowanym. Nazewnictwo liczy się od 0 do całkowitej liczby rdzeni logicznych. Na przykład system czterordzeniowy będzie liczyć od rdzenia logicznego 0 do rdzenia logicznego 3.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Widok rdzeni](../profiling/cores-view.md)

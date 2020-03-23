@@ -1,67 +1,67 @@
 ---
-title: Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio | Microsoft Docs
+title: Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 03/07/2020
 ms.topic: conceptual
-description: Dowiedz się, jak lokalizować i pobierać tytuły oprogramowania firmy Microsoft w subskrypcjach programu Visual Studio
+description: Dowiedz się, jak znajdować i pobierać tytuły oprogramowania firmy Microsoft w ramach subskrypcji programu Visual Studio
 ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
-ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2020
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "78937491"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Pobieranie tytułów oprogramowania w subskrypcjach programu Visual Studio
-W zależności od posiadanej subskrypcji programu Visual Studio może być dostępna szeroka gama tytułów oprogramowania firmy Microsoft.  W tym artykule przedstawiono sposób lokalizowania i pobierania oprogramowania potrzebnego do maksymalnego wykorzystania subskrypcji. 
+W zależności od posiadanej subskrypcji programu Visual Studio może być dostępna wiele różnych tytułów oprogramowania firmy Microsoft.  W tym artykule opisano, jak zlokalizować i pobrać oprogramowanie, które jest potrzebne, aby w pełni wykorzystać subskrypcję. 
 
 > [!NOTE]
-> Na stronie [pliki do pobrania](https://my.visualstudio.com/downloads/featured) są wyświetlane tylko pobrane elementy dołączone do subskrypcji.  Jeśli masz więcej niż jedną subskrypcję lub członkostwo w programie, pokazywane pliki do pobrania będą dotyczyć najwyższej wstrzymanej **subskrypcji** , nawet jeśli obecnie jest wyświetlana inna subskrypcja.  Jeśli na przykład masz subskrypcję Visual Studio Enterprise i subskrypcję Visual Studio Professional skojarzoną z tym samym IDENTYFIKATORem logowania, wyświetlone pliki do pobrania będą uwzględnione w subskrypcji przedsiębiorstwa, nawet jeśli obecnie są wyświetlane korzyści z subskrypcji dla profesjonalistów.
+> Tylko pliki do pobrania dołączone do subskrypcji są wyświetlane dla Ciebie na stronie [Pliki do pobrania.](https://my.visualstudio.com/downloads/featured)  Jeśli masz więcej niż jedną subskrypcję lub członkostwo w programie, wyświetlone pliki do pobrania będą przeznaczone dla **najwyższej posiadanych subskrypcji,** nawet jeśli aktualnie wyświetlasz inną subskrypcję.  Jeśli na przykład masz subskrypcję programu Visual Studio Enterprise i subskrypcję programu Visual Studio Professional skojarzoną z tym samym identyfikatorem logowania, wyświetlane pliki do pobrania będą uwzględniane w subskrypcji Enterprise, nawet jeśli aktualnie wyświetlasz korzyści z subskrypcji Professional.
 
 > [!NOTE]
-> Mamy świadomość problemu dotyczącego dostępności kluczy produktu pakietu Office 365.  Analizujemy przyczynę i aktualizujemy ten artykuł po rozwiązaniu problemu. 
+> Zdajemy sobie sprawę z problemu dotyczącego dostępności kluczy produktów usługi Office 365.  Badamy przyczynę i zaktualizujemy ten artykuł po rozwiązaniu problemu. 
 
-## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak mogę znaleźć pliki do pobrania w portalu subskrybenta?
-Po odwiedzeniu strony [pliki do pobrania](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) zobaczysz popularne pliki do pobrania ułożone w grupach według typu produktu.  Możesz wybrać jeden z popularnych plików do pobrania lub poszukać dowolnego produktu, korzystając z paska wyszukiwania w górnej części strony.
+## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak znaleźć pliki do pobrania w portalu subskrybenta?
+Po odwiedzeniu strony [Pliki do pobrania](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) zobaczysz popularne pliki do pobrania rozmieszczone w grupach według typu produktu.  Możesz wybrać jeden z popularnych pobrań lub wyszukać dowolny produkt za pomocą paska wyszukiwania u góry strony.
 > [!div class="mx-imgBorder"]
-> Strona pobierania ![subskrybentów](_img/subscriber-downloads/subscriber-downloads-resized.png)
+> ![Strona pobierania subskrybenta](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
-Jeśli na przykład wybierzesz pozycję **Visual studio 2019** z listy narzędzia deweloperskie, zostanie wyświetlona lista dostępnych plików do pobrania do programu visual Studio 2019.
+Jeśli na przykład z listy Narzędzia deweloperskie wybierzesz program **Visual Studio 2019,** zostanie wyświetlona lista dostępnych plików do pobrania w programie Visual Studio 2019.
 > [!div class="mx-imgBorder"]
-> ![pliki do pobrania w programie Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png)
+> ![Pliki do pobrania w programie Visual Studio 2019](_img/subscriber-downloads/vs2019-product-list.png)
 
-Możesz łatwo wybrać architekturę, język i typ pliku przy użyciu dostępnych menu rozwijanych. Wybierz preferowane opcje, a następnie kliknij pozycję **Pobierz** , aby rozpocząć pobieranie produktu.
+Możesz łatwo wybrać swoją architekturę, język i typ pliku za pomocą dostępnych menu rozwijanych. Wybierz preferowane opcje i kliknij przycisk **Pobierz,** aby rozpocząć pobieranie produktu.
 
 > [!NOTE]
 > Nie wszystkie tytuły są dostępne we wszystkich architekturach, językach lub formatach plików.  
 
 ### <a name="displaying-download-details"></a>Wyświetlanie szczegółów pobierania
-Kliknięcie nazwy produktu lub linku **informacyjnego** spowoduje wyświetlenie szczegółowych informacji dotyczących tego pobrania oraz udostępnienie informacji o wersji dla produktu.
+Kliknięcie nazwy produktu lub łącza **Informacje** spowoduje wyświetlenie szczegółów tego pobrania i udostępnienie informacji o wersji produktu.
 > [!div class="mx-imgBorder"]
 > ![Szczegóły pobierania programu Visual Studio 2019](_img/subscriber-downloads/vs2019-info.png)
 
-W okienku szczegółów można także kliknąć kartę **klucze** , aby sprawdzić stan kluczy produktów.
+W okienku szczegółów możesz również kliknąć kartę **Klucze,** aby sprawdzić stan kluczy produktu.
 > [!div class="mx-imgBorder"]
-> ![klucze produktu programu Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png)
+> ![Klucze produktów programu Visual Studio 2019](_img/subscriber-downloads/vs2019-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Uzyskiwanie kluczy produktu
-Aby uzyskać klucz produktu do pobrania, można kliknąć niebieski klucz z etykietą **Pobierz klucz** lub Jeśli oglądasz już okienko szczegółów, kliknij pozycję **klucz roszczeń** na karcie **klucze** .
+Aby uzyskać klucz produktu do pobrania, możesz kliknąć niebieski klucz oznaczony etykietą **Pobierz klucz** lub jeśli już przeglądasz okienko szczegółów, kliknij **przycisk Odnieś klucz** na karcie **Klucze.**
 > [!div class="mx-imgBorder"]
-> ![klucze produktów programu Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
+> ![Visual Studio 2019 żądać klucze produktu](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
-- [Dokumentacja Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
-Aby dowiedzieć się więcej na temat lokalizowania, zgłaszania i eksportowania kluczy produktów, zapoznaj się z dokumentacją dotyczącą kluczy produktów:
+Aby dowiedzieć się więcej o lokalizowaniu, roszczeniu i eksportowaniu kluczy produktów, zapoznaj się z dokumentacją kluczy produktów:
 - [Omówienie kluczy produktów](product-keys.md)
-- [Znajdź i przejmij klucze](find-keys.md)
+- [Lokalizowanie i odsyłanie kluczy](find-keys.md)
 
-Dowiedz się, jak korzystać z innych doskonałych korzyści, takich jak:
+Dowiedz się, jak korzystać z innych wspaniałych korzyści, takich jak:
 - [Indywidualne środki na korzystanie z usługi Azure DevTest](vs-azure.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Visual Studio IDE](vs-ide-benefit.md)

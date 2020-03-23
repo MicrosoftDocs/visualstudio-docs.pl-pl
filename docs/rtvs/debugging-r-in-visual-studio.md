@@ -1,6 +1,6 @@
 ---
 title: Debugowanie kodu R
-description: Program Visual Studio oferuje pełne środowisko debugowania dla języka R, w tym punkty przerwania, dołączania, stosu wywołań i inspekcji zmiennych.
+description: Visual Studio zapewnia pełne środowisko debugowania dla języka R, w tym punkty przerwania, dołączyć, stos wywołań i inspekcji zmiennych.
 ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
@@ -9,23 +9,23 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "73189259"
 ---
-# <a name="debug-r-in-visual-studio"></a>Debugowanie języka R w programie Visual Studio
+# <a name="debug-r-in-visual-studio"></a>Debug R w programie Visual Studio
 
-R Tools for Visual Studio (RTVS) integruje się z pełnym interfejsem debugowania programu Visual Studio (zobacz [debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md). Ta obsługa obejmuje punkty przerwania, dołączanie do uruchomionych procesów, sprawdzanie i oglądanie zmiennych oraz sprawdzanie stosu wywołań. W tym artykule omówiono te aspekty debugowania, które są unikatowe dla języka R i RTVS.
+Narzędzia R dla programu Visual Studio (RTVS) integrują się z pełnym działaniem debugowania programu Visual Studio (zobacz [Debugowanie w programie Visual Studio](../debugger/debugger-feature-tour.md). Ta obsługa obejmuje punkty przerwania, dołączanie do uruchomionych procesów, sprawdzanie i obserwowanie zmiennych oraz sprawdzanie stosu wywołań. W tym artykule, a następnie eksploruje te aspekty debugowania, które są unikatowe dla R i RTVS.
 
-Uruchamianie debugera dla pliku R Start w projekcie języka R jest takie samo jak w przypadku innych typów projektów: Użyj **debugowania** > **Rozpocznij debugowanie**, klawisz **F5** lub **źródłowy plik startowy** na pasku narzędzi debugowania:
+Uruchamianie debugera dla uruchamiania pliku R w projekcie R jest takie samo jak w przypadku innych typów projektów: użyj **debugowania** > **startowego debugowania, klucza** **F5** lub **pliku uruchamiania źródła** na pasku narzędzi debugowania:
 
-![Przycisk startowy debugera dla języka R](media/debugger-start-button.png)
+![Przycisk start debugera dla R](media/debugger-start-button.png)
 
-Aby zmienić plik startowy, kliknij prawym przyciskiem myszy plik w Eksplorator rozwiązań i wybierz polecenie **Ustaw jako startowy skrypt języka R**.
+Aby zmienić plik startowy, kliknij prawym przyciskiem myszy plik w Eksploratorze rozwiązań i wybierz polecenie **Ustaw jako skrypt R uruchamiania**.
 
-We wszystkich przypadkach uruchomienie debugera "źródła" pliku w oknie interaktywnym, co oznacza załadowanie go i uruchomienie go w sposób pokazany w danych wyjściowych okna interaktywnego:
+We wszystkich przypadkach, uruchomienie debugera "źródła" pliku w oknie interaktywnym, co oznacza ładowanie go i uruchamianie go tam, jak pokazano w interaktywnym oknie danych wyjściowych:
 
 ```output
 > rtvs::debug_source("c:/proj/rproject1/rproject1/script.R")
@@ -33,11 +33,11 @@ Sourcing: c:\proj\rproject1\rproject1\script.R
 Sourcing: c:\proj\rproject1\rproject1\Settings.R
 ```
 
-Zwróć uwagę, że funkcja `rtvs::debug_source` jest używana do źródła skryptu. Ta funkcja jest wymagana, ponieważ RTVS musi zmodyfikować kod w przygotowaniu do debugowania. W przypadku korzystania z dowolnego polecenia RTVS pozyskania i dołączenia debugera program Visual Studio automatycznie używa `rtvs::debug_source`.
+Należy zauważyć, że `rtvs::debug_source` funkcja jest używana do źródła skryptu. Ta funkcja jest wymagana, ponieważ RTVS musi zmodyfikować kod w ramach przygotowań do debugowania. W przypadku korzystania z dowolnego polecenia zaopatrzenia RTVS i dołączonego `rtvs::debug_source`debugera program Visual Studio automatycznie używa .
 
-Debuger można także ręcznie dołączyć bezpośrednio z okna interaktywnego za pomocą polecenia **R Tools** > **Session** > **Attach Debugger** , > **Debug** **dołączać do R Interactive** polecenia lub **Dołącz polecenie debugera** na pasku narzędzi okna interaktywnego. Po wykonaniu tej czynności użytkownik jest odpowiedzialny za źródło plików, które mają być debugowane. Jeśli chcesz ręcznie tworzyć pliki źródłowe, upewnij się, że używasz `rtvs::debug_source`, a nie zwykłych `source` polecenia w języku R.
+Debugera z okna interaktywnego można również dołączyć ręcznie, korzystając z polecenia**Debuger** **dołączania** >  **sesji** > R, polecenia **Debugowanie** > **Dołącz do języka R interactive** lub polecenia Dołącz **debuger** na pasku narzędzi okna interaktywnego. Po wykonaniu tej tej sprawy jest twoim obowiązkiem do źródła plików, które chcesz debugować. Jeśli chcesz ręcznie pozyskać pliki, upewnij się, że `rtvs::debug_source` `source` używasz, a nie regularne polecenie w języku R.
 
-To połączenie między debugerem a oknem interaktywnym ułatwia wykonywanie takich czynności, jak wywoływanie funkcji (i debugowanie) przy użyciu różnych wartości parametrów. Załóżmy na przykład, że masz następującą funkcję w pliku źródłowym (oznacza to, że został on załadowany do sesji):
+To połączenie między debugerem a interakcyjnym oknem ułatwia działanie takie czynności, jak wywoływanie (i debugowanie) funkcji z różnymi wartościami parametrów. Załóżmy na przykład, że w pliku źródłowym znajduje się następująca funkcja (co oznacza, że została ona załadowana do sesji):
 
 ```R
 add <- function(x, y) {
@@ -45,23 +45,23 @@ add <- function(x, y) {
 }
 ```
 
-Następnie należy ustawić punkt przerwania w instrukcji `return`. Teraz w oknie interaktywnym wprowadzanie `add(4,5)` powoduje zatrzymanie debugera w punkcie przerwania.
+Następnie należy ustawić punkt `return` przerwania na instrukcji. Teraz w oknie interaktywnym `add(4,5)` wprowadzanie zatrzymuje debugera w punkcie przerwania.
 
 ## <a name="environment-browser-in-the-interactive-window"></a>Przeglądarka środowiska w oknie interaktywnym
 
-Po zatrzymaniu w debugerze, w [oknie interaktywnym](interactive-repl-for-r-in-visual-studio.md)zostanie również zatrzymana w wierszu przeglądarki środowiska. Monit pojawia się jako `Browse[n]>` gdzie n jest liczbą.
+Po zatrzymaniu w debugerze zostanie również zatrzymany w wierszu przeglądarki środowiska w [oknie interaktywnym](interactive-repl-for-r-in-visual-studio.md). Monit jest `Browse[n]>` wyświetlany w miejscu, w którym n jest liczbą.
 
-Przeglądarka środowiskowa obsługuje kilka specjalnych poleceń:
+Przeglądarka środowiska obsługuje szereg specjalnych poleceń:
 
 | Polecenie | Opis |
 | --- | --- |
-| n | Następny: uruchamia następną instrukcję w pliku kodu (taką samą jak krok powyżej). |
-| s | Wkrocz do: uruchamia następną instrukcję w pliku kodu, przechodzenie do zakresu funkcji, jeśli Następna instrukcja jest wywołaniem funkcji. |
-| N | zakończenie: powoduje uruchomienie pozostałej części bieżącego zakresu funkcji i powrót do obiektu wywołującego (tak samo jak krok wychodzący). |
-| c, kontynuacja | Kontynuuj: uruchamia program do następnego punktu przerwania. |
-| Q | zakończenia: kończy sesję debugowania. |
-| gdzie | Pokaż stos: wyświetla stos wywołań w oknie interaktywnym. |
-| Pomoc | Pokaż Pomoc: wyświetla dostępne polecenia w oknie interaktywnym. |
-| &lt;wyrażenie&gt; | Oblicz wyrażenie w wyrażeniu *.* |
+| n | dalej: uruchamia następną instrukcję w pliku kodu (tak samo jak krok po kroku). |
+| s | krok do: uruchamia następną instrukcję w pliku kodu, krok po kroku do zakresu funkcji, jeśli następna instrukcja jest wywołaniem funkcji. |
+| k | finish: uruchamia pozostałą część bieżącego zakresu funkcji i zwraca do wywołującego (tak samo jak wyjść). |
+| c, cont | kontynuować: uruchamia program do następnego punktu przerwania. |
+| Q | kończy: kończy sesję debugowania. |
+| where | pokaż stos: wyświetla stos wywołań w oknie interaktywnym. |
+| Pomoc | pokaż pomoc: wyświetla dostępne polecenia w oknie interaktywnym. |
+| &lt;Expr&gt; | oceny wyrażenia w *expr*. |
 
 ![Przeglądarka środowiska w oknie interaktywnym](media/debugger-environment-browser.png)

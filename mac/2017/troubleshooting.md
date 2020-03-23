@@ -1,52 +1,52 @@
 ---
 title: Rozwiązywanie problemów
-description: Typowe problemy i rozwiązania dla użytkowników Visual Studio dla komputerów Mac.
+description: Typowe problemy i rozwiązania dla użytkowników programu Visual Studio dla komputerów Mac.
 ms.topic: troubleshooting
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
 ms.openlocfilehash: 6073e0bf2a601bf5183798a1df4fd835d0b93427
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74985164"
 ---
 # <a name="troubleshooting"></a>Rozwiązywanie problemów
 
-## <a name="viewing-logs-in-visual-studio-for-mac"></a>Wyświetlanie dzienników w Visual Studio dla komputerów Mac
+## <a name="viewing-logs-in-visual-studio-for-mac"></a>Wyświetlanie dzienników w programie Visual Studio dla komputerów Mac
 
-Dzienniki można znaleźć, przechodząc do menu **pomoc > Otwórz katalog dziennika** , jak pokazano poniżej:
+Dzienniki można znaleźć, przeglądając pozycję menu **Pomoc > Otwórz katalog dziennika,** jak pokazano poniżej:
 
-![Otwórz element menu katalogu dziennika](media/troubleshooting-image1.png)
+![Otwórz element menu katalogu Dziennika](media/troubleshooting-image1.png)
 
 ## <a name="viewing-exceptions"></a>Wyświetlanie wyjątków
 
-Gdy zostanie przechwycony wyjątek, pojawi się bąbelkowy wyjątek. Aby wyświetlić więcej szczegółów, wybierz przycisk **Wyświetl szczegóły** :
+Po przechowaniu wyjątku pojawia się dymek wyjątku. Aby wyświetlić więcej szczegółów, wybierz przycisk **Wyświetl szczegóły:**
 
-![Wyświetl więcej szczegółów dotyczących wyjątku](media/troubleshooting-image2.png)
+![Zobacz więcej szczegółów na temat wyjątku](media/troubleshooting-image2.png)
 
-Spowoduje to wyświetlenie okna dialogowego **Pokaż szczegóły** , w którym znajdują się więcej informacji na temat wyjątku:
+Spowoduje to wyświetlenie okna dialogowego **Pokaż szczegóły,** zawierającego więcej informacji dotyczących wyjątku:
 
-![Pokaż okno dialogowe szczegółów](media/troubleshooting-image3.png)
+![Okno dialogowe Pokaż szczegóły](media/troubleshooting-image3.png)
 
-Ważne sekcje okna dialogowego, które są ponumerowane powyżej, opisano szczegółowo poniżej:
+Ważne sekcje okna dialogowego, które są ponumerowane powyżej, są szczegółowo opisane poniżej:
 
-1. Typ wyjątku, który wyświetla pełną nazwę zaobserwowanego typu wyjątku.
-2. Komunikat o wyjątku, który pokazuje wartość właściwości Message obiektu Exception.
-3. Wewnętrzny typ wyjątku, który wyświetla pełną nazwę typu wyjątku dla aktualnie wybranego wyjątku w wewnętrznym widoku drzewa wyjątków.
-4. Komunikat o wyjątku wewnętrznym pokazuje wartość właściwości komunikat wybranego wyjątku w wewnętrznym widoku drzewa wyjątków.
-5. Widok ślad stosu. Można to zwinąć za pośrednictwem strzałki ujawniania i zawiera pozycje ramki stosu.
-6. Przykład wpisów kodu niezwiązanych z użytkownikiem.
+1. Typ wyjątku, który pokazuje pełną nazwę typu wyjątku, który jest obserwowany.
+2. Komunikat wyjątku, który pokazuje wartość Message właściwości obiektu wyjątku.
+3. Wewnętrzny typ wyjątku, który pokazuje pełną nazwę typu wyjątku dla aktualnie wybranego wyjątku w widoku drzewa wyjątków inner.
+4. Komunikat wyjątek wewnętrzny, pokazuje wartość Message właściwości wybranego wyjątku w widoku drzewa wyjątku wewnętrznego.
+5. Widok stacktrace. Może to być zwinięte za pomocą strzałki ujawnienia i zawiera wpisy ramek stosu.
+6. Przykład wpisów kodu niebędącego użytkownikiem.
 7. Przykład wpisów kodu użytkownika.
-8. Widok właściwości, w którym są wyświetlane wszystkie właściwości i pola wyjątku. Można to zwinąć za pomocą strzałki ujawniania.
-9. Wewnętrzny widok drzewa wyjątków. Wybierz wyjątki wewnętrzne w tym widoku za pomocą strzałek w górę/w dół lub z myszą lub Trackpad.
-10. Domyślnie jest to ustawienie opcja **tylko kod projektu debugowania** w ustawieniach debugera jest ustawiona na. Zaznaczenie tego pola spowoduje, że cały kod niebędący użytkownikiem będzie zwijany do jednego wiersza w ślad stosu.
-11. Przycisk kopiowania, aby skopiować dane wyjściowe `exception.ToString()` do Schowka.
+8. Widok właściwości, który pokazuje wszystkie właściwości i pola wyjątku. To może być zwinięte za pomocą strzałki ujawnienia.
+9. Wewnętrzny widok drzewa wyjątków. Wybierz wewnętrzne wyjątki w tym widoku za pomocą klawiatury w górę / w dół strzałki lub za pomocą myszy lub gładzika.
+10. Domyślnie jest to ustawione na to, co **kod projektu debugowania tylko** opcja w ustawieniach debugera jest ustawiona. Zaznaczenie tego pola spowoduje, że cały kod niebędący użytkownikiem zwinie się w jeden wiersz w stacktrace.
+11. Przycisk kopiowania, `exception.ToString()` aby skopiować dane wyjściowe do schowka.
 
-Należy zauważyć, że niektóre z tych sekcji są widoczne tylko wtedy, gdy wyjątek ma wewnętrzny wyjątek.
+Należy zauważyć, że niektóre z tych sekcji są widoczne tylko wtedy, gdy wyjątek ma wyjątek wewnętrzny.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zasoby rozwiązywania problemów z błędami IDE (Visual Studio w systemie Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)
+- [Zasoby dotyczące rozwiązywania problemów z błędami IDE (Visual Studio w systemie Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie modelu TensorFlow w chmurze
-description: Uruchamianie modelu tensorflow na maszynie wirtualnej uczenie głębokie Azure
-keywords: Maszyna wirtualna AI, Visual Studio, uczenie głębokie
+description: uruchamianie modelu tensorflow w usłudze Azure Deep Learning vm
+keywords: ai, studio wizualne, maszyna wirtualna uczenia głębokiego
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -11,29 +11,29 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "75915826"
 ---
-# <a name="train-a-tensorflow-model-in-the-cloud"></a>Uczenie modelu TensorFlow w chmurze
+# <a name="train-a-tensorflow-model-in-the-cloud"></a>Trenuj model TensorFlow w chmurze
 
-W tym samouczku będziemy przeszkolić model TensorFlow przy użyciu [zestawu danych mnist ręcznie](http://yann.lecun.com/exdb/mnist/) na maszynie wirtualnej usługi Azure [głębokiej uczenie](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) .
+W tym samouczku będziemy szkolić model TensorFlow przy użyciu [zestawu danych MNIST](http://yann.lecun.com/exdb/mnist/) na maszynie wirtualnej usługi Azure [Deep Learning.](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview)
 
-Baza danych MNIST ręcznie ma zestaw szkoleniowy 60 000 przykładów oraz zestaw testów 10 000 cyfr odręcznych.
+Baza danych MNIST ma zestaw szkoleniowy 60 000 przykładów i zestaw testów zawierający 10 000 przykładów cyfr odręcznych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Przed rozpoczęciem upewnij się, że zainstalowano i skonfigurowano następujące elementy:
+Przed rozpoczęciem upewnij się, że masz zainstalowane i skonfigurowane następujące elementy:
 
-### <a name="setup-azure-deep-learning-virtual-machine"></a>Skonfiguruj maszynę wirtualną uczenia głębokiego Azure
+### <a name="setup-azure-deep-learning-virtual-machine"></a>Konfigurowanie maszyny wirtualnej usługi Azure Deep Learning
 
 > [!NOTE]
-> Ustaw **Typ systemu operacyjnego** na Linux.
+> Ustaw **typ systemu operacyjnego** na Linuksa.
 
-Instrukcje dotyczące konfigurowania maszyny wirtualnej do uczenia głębokiego można znaleźć [tutaj](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
+Instrukcje dotyczące konfigurowania maszyny wirtualnej uczenia głębokiego można znaleźć [tutaj](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
-### <a name="remove-comment-in-parens"></a>Usuń komentarz w parens
+### <a name="remove-comment-in-parens"></a>Usuwanie komentarza w parens
 
 ```bash
 echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
@@ -41,45 +41,45 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Pobierz przykładowy kod
 
-Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierające przykłady umożliwiające wprowadzenie do uczenia głębokiego na TENSORFLOW, CNTK, Theano i innych.
+Pobierz to [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) zawierające przykłady, aby rozpocząć naukę głębinową na TensorFlow, CNTK, Theano i innych.
 
 ## <a name="open-project"></a>Otwieranie projektu
 
-- Uruchom program Visual Studio i wybierz pozycję **plik > otwórz > projektu/rozwiązania**.
+- Uruchom program Visual Studio i wybierz **opcję > otwórz > projekt/rozwiązanie**.
 
-- Wybierz folder **przykładów Tensorflow** z pobranego repozytorium Samples i Otwórz plik **TensorflowExamples. sln** .
+- Wybierz folder **Tensorflow Examples** z pobranego repozytorium próbek i otwórz plik **TensorflowExamples.sln.**
 
    ![Otwieranie projektu](media/tensorflow-local/open-project.png)
 
-   ![Otwórz rozwiązanie](media/tensorflow-local/open-solution.png)
+   ![Otwarte rozwiązanie](media/tensorflow-local/open-solution.png)
 
-## <a name="add-azure-remote-vm"></a>Dodaj zdalną maszynę wirtualną platformy Azure
+## <a name="add-azure-remote-vm"></a>Dodawanie zdalnej maszyny Wirtualnej platformy Azure
 
-W Eksplorator serwera kliknij prawym przyciskiem myszy węzeł **maszyny zdalne** w WĘŹLE narzędzia AI i wybierz polecenie "Dodaj...". Wprowadź nazwę wyświetlaną komputera zdalnego, hosta IP, port SSH, nazwę użytkownika i hasło/plik klucza.
+W Eksploratorze serwera kliknij prawym przyciskiem myszy węzeł **Maszyny zdalne** w węźle Narzędzia AI i wybierz "Dodaj...". Wprowadź nazwę wyświetlaną komputera zdalnego, hosta IP, portu SSH, nazwę użytkownika i plik hasła/klucza.
 
-![Dodaj nową maszynę zdalną](media/tensorflow-vm/add-remote-vm.png)
+![Dodawanie nowego komputera zdalnego](media/tensorflow-vm/add-remote-vm.png)
 
-## <a name="submit-job-to-azure-vm"></a>Prześlij zadanie do maszyny wirtualnej platformy Azure
-Kliknij prawym przyciskiem myszy projekt MNIST ręcznie w obszarze **Eksplorator rozwiązań** i wybierz pozycję **Prześlij zadanie**.
+## <a name="submit-job-to-azure-vm"></a>Przesyłanie zadania do maszyny Wirtualnej platformy Azure
+Kliknij prawym przyciskiem myszy projekt MNIST w **Eksploratorze rozwiązań** i wybierz pozycję **Prześlij zadanie**.
 
-![Przesyłanie zadania do maszyny zdalnej](media/tensorflow-vm/job-submission.png)
+![Przesyłanie zadań do komputera zdalnego](media/tensorflow-vm/job-submission.png)
 
-W oknie przesyłanie:
+W oknie przesyłania:
 
-- Na liście **klastrów do użycia**wybierz maszynę zdalną (z prefiksem "RM:"), do której chcesz przesłać zadanie.
+- Na liście **Cluster do użycia**wybierz komputer zdalny (z prefiksem "rm:"), do którego ma zostać przesłane zadanie.
 
 - Wprowadź **nazwę zadania**.
 
-- Kliknij przycisk **Submit** (Prześlij).
+- Kliknij **przycisk Prześlij**.
 
 ## <a name="check-status-of-job"></a>Sprawdź stan zadania
-Aby wyświetlić stan i szczegóły zadań: Rozwiń maszynę wirtualną, do której zostało przesłane zadanie, w **Eksplorator serwera**. Kliknij dwukrotnie pozycję **zadania**.
+Aby wyświetlić stan i szczegóły zadań: rozwiń maszynę wirtualną, do której przesłano zadanie w **Eksploratorze serwera**. Kliknij dwukrotnie **jobs**.
 
 ![Przeglądarka zadań](media/tensorflow-vm/job-browser.png)
 
 ## <a name="clean-up-resources"></a>Oczyszczanie zasobów
 
-Zatrzymaj maszynę wirtualną, jeśli planujesz jej używanie w najbliższej przyszłości. Jeśli skończysz korzystać z tego samouczka, uruchom następujące polecenie, aby wyczyścić zasoby:
+Zatrzymaj maszynę wirtualną, jeśli planujesz używać jej w najbliższej przyszłości. Jeśli zakończenie pracy z tym samouczkiem, uruchom następujące polecenie, aby oczyścić swoje zasoby:
 
 ```azurecli-interactive
 az group delete --name myResourceGroup

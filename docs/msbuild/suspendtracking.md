@@ -1,5 +1,5 @@
 ---
-title: SuspendTracking | Microsoft Docs
+title: WstrzymanieTracking | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 950c6a07a46f7f4b970912e576257a577021367e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77632017"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 
-Wstrzymuje śledzenie w bieżącym kontekście.
+Zawiesza śledzenie w bieżącym kontekście.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,11 +34,11 @@ HRESULT WINAPI SuspendTracking(void);
 
 ## <a name="return-value"></a>Wartość zwracana
 
- **Wynik HRESULT** z **pomyślnym** ustawieniem bitu, jeśli śledzenie zostało zawieszone.
+ **HRESULT** z **bitem SUCCEEDED** ustawiony, jeśli śledzenie zostało zawieszone.
 
 ## <a name="requirements"></a>Wymagania
 
- **Nagłówek:** *FileTracker. h*
+ **Nagłówek:** *FileTracker.h*
 
 ## <a name="see-also"></a>Zobacz też
 

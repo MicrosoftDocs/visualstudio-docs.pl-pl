@@ -13,28 +13,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75588697"
 ---
 # <a name="troubleshoot-snippets"></a>Rozwiązywanie problemów z fragmentami kodu
 
-Problemy ze fragmentami kodu IntelliSense są zwykle spowodowane przez dwa problemy: uszkodzony plik fragmentu lub zła zawartość w pliku fragmentu.
+Problemy ze fragmentami kodu IntelliSense są zazwyczaj spowodowane przez dwa problemy: uszkodzony plik fragmentu kodu lub złą zawartość w pliku urywka.
 
-## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Nie można przeciągnąć fragmentu z Eksploratora plików do pliku źródłowego programu Visual Studio
+## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Nie można przeciągnąć fragmentu kodu z Eksploratora plików do pliku źródłowego programu Visual Studio
 
-- KOD XML w pliku fragmentu kodu może być uszkodzony. **Edytor XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] może lokalizować problemy w strukturze XML.
+- Kod XML w pliku urywka może być uszkodzony. **Edytor XML** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w może zlokalizować problemy w strukturze XML.
 
-- Plik fragmentu kodu może nie być zgodny ze schematem fragmentu kodu. **Edytor XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] może lokalizować problemy w strukturze XML.
+- Plik urywka może nie być zgodny ze schematem fragmentu kodu. **Edytor XML** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] w może zlokalizować problemy w strukturze XML.
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kod zawiera błędy kompilatora, które nie są wyróżnione
 
-- Brak odwołania do projektu. Zapoznaj się z dokumentacją dotyczącą fragmentu kodu. Jeśli na komputerze nie znaleziono odwołania, należy je zainstalować. Wstawianie fragmentu kodu powinno dodać do projektu wszystkie potrzebne odwołania. Jeśli fragment kodu nie zawiera informacji referencyjnych, które mogą zostać zgłoszone do twórcy fragmentu jako błąd.
+- Może brakować odwołania do projektu. Sprawdź dokumentację dotyczącą fragmentu kodu. Jeśli odwołanie nie zostanie znalezione na komputerze, należy je zainstalować. Wstawianie fragmentu kodu należy dodać do projektu wszelkie odwołania potrzebne. Jeśli fragment kodu brakuje informacji referencyjnych, które mogą być zgłaszane do twórcy fragmentu kodu jako błąd.
 
-- Zmienna może być niezdefiniowana. Niezdefiniowane zmienne w fragmencie kodu powinny być wyróżnione. Jeśli nie, to można zgłosić do twórcy fragmentu kodu jako błąd.
+- Zmienna może być niezdefiniowana. Niezdefiniowane zmienne we urywku powinny być wyróżnione. Jeśli nie, można to zgłosić twórcy urywka jako błąd.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Fragmenty kodu](../ide/code-snippets.md)

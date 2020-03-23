@@ -1,5 +1,5 @@
 ---
-title: Tworzenie adaptera danych diagnostycznych do testowania
+title: Tworzenie karty danych diagnostycznych do testowania
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91e5f9b3cee9cdfc2ca85c39c701b87028ad949a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75585209"
 ---
-# <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Tworzenie adaptera danych diagnostycznych do zbierania danych niestandardowych lub wpływać na komputer testowy
+# <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Tworzenie karty danych diagnostycznych w celu zbierania danych niestandardowych lub wpładowynia na maszynę testową
 
-Można chcieć tworzyć własne adaptery danych diagnostycznych do zbierania danych, gdy zostanie uruchomiony test lub potrzeba wpłynąć na maszynę testową, jako część testu. Na przykład należy zebrać pliki dziennika, które są tworzone przez testowaną aplikację i dołączyć je do wyników testu lub należy uruchomić testy przy ograniczonym miejscu na dysku na komputerze. Za pomocą interfejsów API dostarczonych w ramach programu Visual Studio Enterprise, można napisać kod do wykonywania zadań w określonych punktach w przebiegu testowym. Na przykład można wykonywać zadania po rozpoczęciu przebiegu testowego, przed i po poszczególnych testach oraz po zakończeniu przebiegu testowego.
+Można chcieć tworzyć własne adaptery danych diagnostycznych do zbierania danych, gdy zostanie uruchomiony test lub potrzeba wpłynąć na maszynę testową, jako część testu. Na przykład należy zebrać pliki dziennika, które są tworzone przez testowaną aplikację i dołączyć je do wyników testu lub należy uruchomić testy przy ograniczonym miejscu na dysku na komputerze. Za pomocą interfejsów API dostarczonych w programie Visual Studio Enterprise, można napisać kod do wykonywania zadań w określonych punktach w przebiegu testu. Na przykład można wykonywać zadania po rozpoczęciu przebiegu testowego, przed i po poszczególnych testach oraz po zakończeniu przebiegu testowego.
 
-Można dostarczyć domyślne dane wejściowe do niestandardowego adaptera danych diagnostycznych przy użyciu pliku ustawień konfiguracji. Na przykład może dostarczyć informacji na temat lokalizacji pliku do zebrania i dołączenia do wyników testu lub ile miejsca ma pozostać w systemie. Dane te można skonfigurować dla wszystkich ustawień testu, które są tworzone. Mogą być wyświetlane i edytowane przy użyciu domyślnego edytora dostarczane z Microsoft Test Manager lub utworzyć własną kontrolkę użytkownika do używania jako edytora. Wszelkie zmiany wprowadzone do konfiguracji adaptera w edytorze są przechowywane z ustawieniami testu.
+Można dostarczyć domyślne dane wejściowe do niestandardowego adaptera danych diagnostycznych przy użyciu pliku ustawień konfiguracji. Na przykład może dostarczyć informacji na temat lokalizacji pliku do zebrania i dołączenia do wyników testu lub ile miejsca ma pozostać w systemie. Dane te można skonfigurować dla wszystkich ustawień testu, które są tworzone. Może być wyświetlany i edytowany za pomocą domyślnego edytora dostarczonego z Microsoft Test Manager lub można utworzyć własną kontrolę użytkownika do użycia jako edytor. Wszelkie zmiany wprowadzone do konfiguracji adaptera w edytorze są przechowywane z ustawieniami testu.
 
-Jeśli używasz testów z programu Visual Studio, musisz ustawić te ustawienia testów, aby być aktywne. Aby uzyskać więcej informacji na temat ustawień testowych, zobacz [zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
+Jeśli korzystasz z testów z programu Visual Studio, należy ustawić te ustawienia testu, aby były aktywne. Aby uzyskać więcej informacji o ustawieniach testu, zobacz [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -32,9 +32,9 @@ Użyj następujących tematów pomocnych przy tworzeniu Adapterów danych diagno
 
 |Zadania|Skojarzone tematy|
 |-|-----------------------|
-|**Tworzenie adaptera danych diagnostycznych:** tworzenie adaptera danych diagnostycznych, tworząc bibliotekę klas, a następnie zebrać informacje lub mieć wpływ na system testowy, który jest używany do uruchamiania testów za pomocą interfejsu API adaptera danych diagnostycznych.|-   [Porady: tworzenie adaptera danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Wybranie niestandardowego adaptera danych diagnostycznych do użycia gdy testy są uruchamiane:** tak, że karta jest używana podczas uruchamiania testów, można wybrać kartę danych diagnostycznych, w której do użycia w ustawieniach testu.|-   [Zbieranie danych diagnostycznych podczas testowania (planów testowych platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Zbieranie danych diagnostycznych podczas wykonywania testów ręcznych (planów testowych platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**Tworzenie karty danych diagnostycznych:** Należy utworzyć kartę danych diagnostycznych, tworząc bibliotekę klas, a następnie użyj interfejsów API karty danych diagnostycznych do zbierania informacji, które chcesz lub wpływ na system testowy, który jest używany do uruchamiania testów.|-   [Jak: Tworzenie karty danych diagnostycznych](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**Wybranie niestandardowej karty danych diagnostycznych do użycia podczas uruchamiania testów:** Można wybrać kartę danych diagnostycznych do użycia w ustawieniach testu, tak aby karta była używana podczas uruchamiania testów.|-   [Zbieranie danych diagnostycznych podczas testowania (plany testów platformy Azure)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Zbieranie danych diagnostycznych w testach ręcznych (plany testów platformy Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Zbieranie informacji diagnostycznych za pomocą ustawień testów](../test/collect-diagnostic-information-using-test-settings.md)
+- [Zbieranie informacji diagnostycznych przy użyciu ustawień testu](../test/collect-diagnostic-information-using-test-settings.md)

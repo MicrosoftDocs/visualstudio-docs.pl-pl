@@ -1,5 +1,5 @@
 ---
-title: MSBuild. targets — pliki | Microsoft Docs
+title: MSBuild .targets Pliki | Dokumenty firmy Microsoft
 ms.date: 02/24/2017
 ms.topic: reference
 dev_langs:
@@ -17,37 +17,37 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3faa9ca73592722a950f9914437884c33122070e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77633359"
 ---
-# <a name="msbuild-targets-files"></a>MSBuild. targets — pliki
+# <a name="msbuild-targets-files"></a>Pliki MSBuild .targets
 
-Program MSBuild zawiera kilka plików *. targets* , które zawierają elementy, właściwości, cele i zadania dla typowych scenariuszy. Te pliki są automatycznie importowane do większości plików projektu programu Visual Studio, aby uprościć konserwację i czytelność.
+MSBuild zawiera kilka plików *.targets,* które zawierają elementy, właściwości, obiekty docelowe i zadania dla typowych scenariuszy. Pliki te są automatycznie importowane do większości plików projektu programu Visual Studio, aby uprościć konserwację i czytelność.
 
- Projekty zwykle importują jeden lub więcej plików *. targets* , aby zdefiniować ich proces kompilacji. Na przykład C# projekt utworzony przez program Visual Studio spowoduje zaimportowanie *Microsoft. CSharp. targets* , które importuje *Microsoft. Common. targets*. Sam C# projekt zdefiniuje elementy i właściwości specyficzne dla tego projektu, ale standardowe reguły kompilacji dla C# projektu są zdefiniowane w importowanych plikach *. targets* .
+ Projekty zazwyczaj importują jeden lub więcej plików *obiektów .targets w* celu zdefiniowania procesu kompilacji. Na przykład projekt języka C# utworzony przez program Visual Studio zaimportuje *plik Microsoft.CSharp.targets,* który importuje *witrynę Microsoft.Common.targets.* Sam projekt języka C# zdefiniuje elementy i właściwości specyficzne dla tego projektu, ale standardowe reguły kompilacji dla projektu Języka C# są zdefiniowane w zaimportowanych plikach *.targets.*
 
- Wartość `$(MSBuildToolsPath)` określa ścieżkę tych wspólnych plików *targets* . Jeśli `ToolsVersion` to 4,0, pliki znajdują się w następującej lokalizacji: *\<WindowsInstallationPath > \Microsoft.NET\Framework\v4.0.30319\\*
+ Wartość `$(MSBuildToolsPath)` określa ścieżkę tych typowych plików *.targets.* Jeśli `ToolsVersion` jest 4.0, pliki znajdują się w następującej lokalizacji: * \<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\ *
 
 > [!NOTE]
-> Aby uzyskać informacje o sposobach tworzenia własnych obiektów docelowych, zobacz [targets](../msbuild/msbuild-targets.md). Aby uzyskać informacje o sposobach używania elementu `Import` do wstawiania pliku projektu do innego pliku projektu, zobacz [Importowanie elementu (MSBuild)](../msbuild/import-element-msbuild.md) i [instrukcje: Użyj tego samego elementu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
+> Aby uzyskać informacje na temat tworzenia własnych celów, zobacz [Cele](../msbuild/msbuild-targets.md). Aby uzyskać informacje dotyczące `Import` sposobu używania tego elementu do wstawiania pliku projektu do innego pliku projektu, zobacz [Importuj element (MSBuild)](../msbuild/import-element-msbuild.md) i [Jak: Użyj tego samego obiektu docelowego w wielu plikach projektu](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
 
-## <a name="common-targets-files"></a>Common. targets — pliki
+## <a name="common-targets-files"></a>Typowe pliki .targets
 
-| plik *. targets* | Opis |
+| *.targets* plik | Opis |
 |---------------------------------| - |
-| *Microsoft. Common. targets* | Definiuje kroki w standardowym procesie kompilacji dla Visual Basic i C# projektów.<br /><br /> Zaimportowany przez pliki *Microsoft. CSharp. targets* i *Microsoft. VisualBasic. targets* , które obejmują następujące instrukcje: `<Import Project="Microsoft.Common.targets" />` |
-| *Microsoft. CSharp. targets* | Definiuje kroki w standardowym procesie kompilacji dla projektów wizualnych C# .<br /><br /> Zaimportowane przez C# pliki projektu wizualnego ( *. csproj*), które zawierają następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
-| *Microsoft. VisualBasic. targets* | Definiuje kroki w standardowym procesie kompilacji dla projektów Visual Basic.<br /><br /> Zaimportowane przez Visual Basic pliki projektu ( *. vbproj*), które obejmują następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
+| *Microsoft.common.targets* | Definiuje kroki w standardowym procesie kompilacji dla projektów języka Visual Basic i C#.<br /><br /> Importowane przez *pliki Microsoft.CSharp.targets* i *Microsoft.VisualBasic.targets,* które zawierają następującą instrukcję:`<Import Project="Microsoft.Common.targets" />` |
+| *Obiekty docelowe firmy Microsoft.CSharp.targets* | Definiuje kroki w standardowym procesie kompilacji dla projektów visual c#.<br /><br /> Importowane przez pliki projektu Visual C# (*.csproj*), które zawierają następującą instrukcję:`<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Witryna Microsoft.VisualBasic.targets* | Definiuje kroki w standardowym procesie kompilacji dla projektów języka Visual Basic.<br /><br /> Importowane przez pliki projektu języka Visual Basic (*.vbproj*), które zawierają następującą instrukcję:`<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
-## <a name="directorybuildtargets"></a>Katalog. Build. targets
+## <a name="directorybuildtargets"></a>Directory.Build.targets
 
-*Katalog. Build. targets* to plik zdefiniowany przez użytkownika, który udostępnia dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft. Common. targets* , chyba że właściwość **ImportDirectoryBuildTargets** ma **wartość false**. Aby uzyskać więcej informacji, [Dostosuj kompilację](customize-your-build.md).
+*Directory.Build.targets* to plik zdefiniowany przez użytkownika, który zapewnia dostosowania projektów w katalogu. Ten plik jest automatycznie importowany z *witryny Microsoft.Common.targets,* chyba że właściwość **ImportDirectoryBuildTargets** jest **ustawiona**na false . Aby uzyskać więcej informacji, [dostosuj kompilację](customize-your-build.md).
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Import — element (MSBuild)](../msbuild/import-element-msbuild.md)
-- [Dokumentacja programu MSBuild](../msbuild/msbuild-reference.md)
-- [MSBuild](../msbuild/msbuild.md)
+- [Importuj element (MSBuild)](../msbuild/import-element-msbuild.md)
+- [Odwołanie do budynku MSBuild](../msbuild/msbuild-reference.md)
+- [Msbuild](../msbuild/msbuild.md)

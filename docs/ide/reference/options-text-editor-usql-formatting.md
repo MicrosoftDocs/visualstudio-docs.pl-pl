@@ -14,41 +14,41 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "75568272"
 ---
-# <a name="options-text-editor-u-sql-formatting"></a>Opcje, Edytor tekstu, U-SQL, formatowanie
+# <a name="options-text-editor-u-sql-formatting"></a>Opcje, Edytor tekstu, U-SQL, Formatowanie
 
-Na stronie opcje **formatowania** można ustawić opcje formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję **narzędzia** > **Opcje**. W oknie dialogowym **Opcje** wybierz pozycję **Edytor tekstu** > formatowanie **U-SQL** > .
+Strona Opcje **formatowania** służy do ustawiania opcji formatowania kodu w edytorze kodu. Aby uzyskać dostęp do tej strony opcji, wybierz pozycję**Opcje** **narzędzi** > . W oknie dialogowym **Opcje** wybierz pozycję**Formatowanie** >  **edytora tekstu****U-SQL** > .
 
-## <a name="general-page"></a>Strona Ogólne
+## <a name="general-page"></a>Strona ogólna
 
 ### <a name="general-settings"></a>Ustawienia ogólne
 
-Te ustawienia mają wpływ na to, *kiedy* Edytor kodu stosuje opcje formatowania do kodu.
+Te ustawienia mają *wpływ, gdy* edytor kodu stosuje opcje formatowania do kodu.
 
-- **Automatycznie Formatuj ukończoną instrukcję przy wprowadzaniu średnika**
+- **Automatyczne formatowanie wypełnionego zestawienia przy wprowadzaniu średnika**
 
-   Po wybraniu formatuje instrukcje w przypadku wybrania klucza średnika zgodnie z opcjami formatowania wybranymi dla edytora.
+   Po wybraniu tej opcji sformatować instrukcje podczas wybierania klucza średnika zgodnie z opcjami formatowania wybranymi dla edytora.
 
-- **Automatycznie Formatuj przy wklejaniu**
+- **Automatyczne formatowanie przy wklejać**
 
-   Gdy ta opcja jest zaznaczona, formatuje tekst wklejony do edytora, aby dopasować opcje formatowania wybrane dla edytora.
+   Gdy ta opcja jest zaznaczona, formatuje tekst wklejany do edytora w celu dopasowania do opcji formatowania wybranych dla edytora.
 
-## <a name="preview-windows"></a>Okna wersji zapoznawczej
+## <a name="preview-windows"></a>Podgląd okien
 
-Podstrony **wcięcia**, **nowe wiersze**i **odstępy** są wyświetlane u dołu okna podglądu. Okno podglądu pokazuje efekt każdej opcji. Aby użyć okna podglądu, wybierz opcję formatowania. Okno podglądu zawiera przykład wybranej opcji. Gdy zmienisz ustawienie, zaznaczając pole wyboru, okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
+**Podstrony wcięcie,** **Nowe wiersze**i **Odstępy** wyświetlają okno podglądu u dołu. Okno podglądu pokazuje efekt każdej opcji. Aby użyć okna podglądu, wybierz opcję formatowania. W oknie podglądu pokazano przykład wybranej opcji. Po zmianie ustawienia przez zaznaczenie pola wyboru okno podglądu zostanie zaktualizowane, aby pokazać efekt nowego ustawienia.
 
-### <a name="indentation-remarks"></a>Uwagi dotyczące wcięć
+### <a name="indentation-remarks"></a>Uwagi dotyczące wcięci
 
-Opcje wcięć na stronach **kart** dla każdego języka określają, gdzie Edytor kodu umieszcza kursor po naciśnięciu klawisza **Enter** na końcu wiersza. Opcje wcięć w obszarze **Formatowanie** stosuje się, gdy kod jest formatowany automatycznie, na przykład:
+Opcje wcięci na stronach **Tabulatory** dla każdego języka określają tylko miejsce, w którym edytor kodu umieszcza kursor po naciśnięciu **klawisza Enter** na końcu wiersza. Opcje wcięcie w obszarze **Formatowanie** mają zastosowanie, gdy kod jest formatowany automatycznie, na przykład:
 
-- Podczas wklejania kodu do pliku, gdy jest zaznaczone **Automatyczne formatowanie przy wklejaniu**
-- Gdy format jest formatowany ręcznie
+- Po wklejeniu kodu do pliku podczas **zaznaczania formatu automatycznie na wklejaniu**
+- Gdy sformatowany blok jest wpisywany ręcznie
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Okno dialogowe Ogólne, środowisko, opcje](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, Środowisko, Opcje, okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)

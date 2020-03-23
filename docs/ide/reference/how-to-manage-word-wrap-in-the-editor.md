@@ -12,47 +12,46 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f456a35f4a65438df5229492beb1f3e142e38f05
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75569078"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508943"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Instrukcje: Zarządzanie zawijaniem wierszy w edytorze
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Jak: Zarządzanie zawijaniem wyrazów w edytorze
 
-Możesz ustawić i wyczyścić opcję **zawijania wyrazów** . Gdy ta opcja jest ustawiona, część długiej linii, która wykracza poza bieżącą szerokość okna edytora kodu, zostanie wyświetlona w następnym wierszu. Gdy ta opcja jest wyczyszczona, na przykład w celu ułatwienia używania numeracji wierszy, można przewijać w prawo, aby zobaczyć zakończenia długich wierszy.
+Można ustawić i wyczyścić opcję **zawijania wyrazów.** Gdy ta opcja jest ustawiona, część długiej linii, która wykracza poza bieżącą szerokość okna Edytor kodu, jest wyświetlana w następnym wierszu. Gdy ta opcja jest wyczyszczona, na przykład, aby ułatwić korzystanie z numeracji linii, można przewinąć w prawo, aby zobaczyć końce długich linii.
 
 > [!NOTE]
-> Ten temat dotyczy tylko programu Visual Studio w systemie Windows. Visual Studio dla komputerów Mac obecnie nie obsługuje zawijania tekstu.
+> Ten temat dotyczy tylko programu Visual Studio w systemie Windows. Visual Studio dla komputerów Mac nie obsługuje obecnie zawijania wyrazów.
 
-## <a name="to-set-word-wrap-preferences"></a>Aby ustawić preferencje zawijania wierszy
+## <a name="to-set-word-wrap-preferences"></a>Aby ustawić preferencje zawijania wyrazów
 
 1. W menu **Tools** (Narzędzia) wybierz pozycję **Options** (Opcje).
 
-2. W folderze **Edytor tekstu** wybierz opcje **Ogólne** w podfolderze **wszystkie języki** , aby ustawić tę opcję globalnie.
+2. W folderze **Edytor tekstu** wybierz opcję **Opcje ogólne** w podfolderze **Wszystkie języki,** aby ustawić tę opcję globalnie.
 
      — lub —
 
-     Wybierz **Ogólne** opcje w podfolderze języka, w którym planujesz programowanie.
+     Wybierz opcje **ogólne** w podfolderze dla języka, w którym programujesz.
 
-3. W obszarze **Ustawienia**wybierz lub wyczyść opcję **zawijania wyrazów** .
+3. W obszarze **Ustawienia**zaznacz lub wyczyść opcję **zawijanie wyrazu.**
 
-     Gdy zaznaczona jest opcja **zawijania wyrazów** , opcja **Pokaż wizualne glify dla zawijania wyrazów** jest włączona.
+     Po **zaznaczeniu opcji Zawijanie wyrazu** włączona jest opcja **Pokaż glify wizualne dla zawijanych wyrazów.**
 
-4. Wybierz opcję **Pokaż glify wizualne dla zawijania wyrazów** , jeśli wolisz wyświetlić wskaźnik strzałki powrotu, w której długi wiersz jest zawijany do drugiego wiersza. Usuń zaznaczenie tej opcji, jeśli wolisz nie wyświetlać strzałek wskaźnika.
+4. Wybierz opcję **Pokaż glify wizualne dla otoki wyrazu,** jeśli wolisz wyświetlić wskaźnik strzałki powrotnej, w którym długa linia zawija się na drugą linię. Wyczyść tę opcję, jeśli nie chcesz wyświetlać strzałek wskaźnika.
 
     > [!NOTE]
-    > Te strzałki przypomnień nie są dodawane do kodu; są one przeznaczone tylko do wyświetlania.
+    > Te strzałki przypomnienia nie są dodawane do kodu; są one przeznaczone wyłącznie do celów wyświetlania.
 
 ## <a name="known-issues"></a>Znane problemy
 
-Jeśli znasz opcję zawijania wyrazów w Notatniku + +, tekście subwapna lub Visual Studio Code, weź pod uwagę następujące kwestie, w których program Visual Studio działa inaczej w stosunku do innych redaktorów:
+Jeśli znasz zawijanie wyrazów w Notatnik++, Tekst wysublimowany lub kod programu Visual Studio, należy pamiętać o następujących problemach, w których program Visual Studio zachowuje się inaczej niż inni redaktorzy:
 
-* [Potrójne kliknięcie nie zaznacza cały wiersz](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
-* [Polecenie Wytnij nie usuwa całego wiersza](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
-* [Naciśnięcie klawisza End dwa razy nie powoduje przeniesienia kursora do końca wiersza](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
+* [Potrójne kliknięcie nie wybiera całej linii](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [Dwukrotne naciśnięcie klawisza End nie powoduje przesuń kursora na koniec wiersza](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Funkcje edytora kodu](../../ide/writing-code-in-the-code-and-text-editor.md)

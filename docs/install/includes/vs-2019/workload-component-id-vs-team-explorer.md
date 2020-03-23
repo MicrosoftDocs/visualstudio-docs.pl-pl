@@ -1,39 +1,39 @@
 ---
-title: Pakiety i identyfikatory składników programu Visual Studio Team Explorer 2019
+title: Identyfikatory obciążenia i składników programu Visual Studio Team Explorer 2019
 titleSuffix: ''
-description: Identyfikatory obciążeń i składników programu Visual Studio umożliwia podanie zintegrowane narzędzia do testowania generalist testerów
+description: Korzystanie z obciążenia programu Visual Studio i identyfikatorów składników w celu zapewnienia zintegrowanych narzędzi testujących dla testerów ogólnych
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 6a602da63f86ee1a2a61054e5c3aa3b011541ba6
-ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.openlocfilehash: cb6e9e59ad0c45cfc92ba65ddbc594563ade91fa
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76159655"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79437554"
 ---
-## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio Core Editor (dołączony do programu Visual Studio Team Explorer 2019)
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Edytor podstawowy programu Visual Studio (dołączony do programu Visual Studio Team Explorer 2019)
 
 **Identyfikator:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Opis:** środowisko powłoki programu Visual Studio core, edytowania kodu uwzględniającej składnię, w tym kontrolą kodu źródłowego i zarządzanie elementami roboczymi.
+**Opis:** Środowisko powłoki rdzenia programu Visual Studio, w tym edycja kodu ze składni, kontrola kodu źródłowego i zarządzanie elementami roboczymi.
 
-### <a name="components-included-by-this-workload"></a>Składniki przez to obciążenie
+### <a name="components-included-by-this-workload"></a>Składniki objęte tym obciążeniem
 
 Identyfikator składnika | Nazwa | Wersja | Typ zależności
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Edytor rdzeni programu Visual Studio | 16.1.28811.260 | Wymagane
-Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Program Visual Studio uruchomić stronę dla użytkowników języka C++ | 16.0.28315.86 | Optional
+Microsoft.VisualStudio.Component.CoreEditor | Edytor podstawowy programu Visual Studio | 16.1.28811.260 | Wymagany
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Strona startowa programu Visual Studio dla użytkowników języka C++ | 16.0.28315.86 | Optional (Opcjonalność)
 
-## <a name="unaffiliated-components"></a>Składniki nie podlega
+## <a name="unaffiliated-components"></a>Składniki niepowiązane
 
-Są to składniki, które nie są uwzględniane przy użyciu dowolnego obciążenia, ale można wybrać jako poszczególnych składników.
+Są to składniki, które nie są dołączone do żadnego obciążenia, ale mogą być wybrane jako pojedynczy składnik.
 
 Identyfikator składnika | Nazwa | Wersja
 --- | --- | ---
-n/d | n/d | n/d
+Nie dotyczy | Nie dotyczy | Nie dotyczy

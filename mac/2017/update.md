@@ -1,57 +1,57 @@
 ---
-title: Aktualizowanie Visual Studio dla komputerów Mac
-description: Instrukcje dotyczące aktualizowania Visual Studio dla komputerów Mac i uzyskiwania dostępu do wersji zapoznawczych.
+title: Aktualizowanie programu Visual Studio dla komputerów Mac
+description: Instrukcje dotyczące aktualizowania programu Visual Studio dla komputerów Mac i uzyskiwania dostępu do wersji zapoznawczych.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: 6e055e02141eb2b6113e1b925cc8d7a1693a32cf
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74983535"
 ---
-# <a name="update-visual-studio-for-mac"></a>Visual Studio dla komputerów Mac aktualizacji
+# <a name="update-visual-studio-for-mac"></a>Aktualizacja programu Visual Studio dla komputerów Mac
 
-Visual Studio dla komputerów Mac dystrybuuje aktualizacje dla środowiska IDE i obsługiwane platformy w regularnych odstępach czasu. Te aktualizacje mogą mieć postać nowych funkcji, ulepszeń i poprawek błędów.
+Visual Studio dla komputerów Mac regularnie dystrybuuje aktualizacje dla IDE i obsługiwanych struktur. Te aktualizacje mogą mieć postać nowych funkcji, ulepszeń i poprawek błędów.
 
-Visual Studio dla komputerów Mac oferuje trzy kanały, aby uzyskać następujące najnowsze wersje:
+Program Visual Studio dla komputerów Mac udostępnia trzy kanały, aby uzyskać te najnowsze wersje:
 
-* **Stabilny** — zapewnia dokładnie przetestowane aktualizacje. Ten kanał jest zalecany w przypadku najlepszego środowiska programistycznego.
-* **Beta** / **Alpha** — zapewnia wczesny dostęp do aktualizacji, które są kandydatami do wydania w stabilnym kanale. Te wersje mogą nie być wiarygodne do codziennego użytku.
+* **Stabilny** — zapewnia dokładnie przetestowane aktualizacje. Ten kanał jest zalecany dla najlepszych doświadczeń programistów.
+* **Beta** / **Alpha** — zapewnia wczesny dostęp do aktualizacji, które są kandydatami do wydania w kanale stabilnym. Te wersje mogą nie być wiarygodne do codziennego użytku.
 
 ## <a name="checking-for-updates"></a>Sprawdzanie dostępności aktualizacji
 
-Możesz użyć pola **programu Visual Studio Aktualizator** , aby wyszukać nowe aktualizacje, zmienić kanały i pobrać i zainstalować aktualizacje.
+Za pomocą pola **Visual Studio Updater** można sprawdzić dostępność nowych aktualizacji, zmienić kanały oraz pobrać i zainstalować aktualizacje.
 
-Aby otworzyć **program Visual Studio Aktualizator**, przejdź do **programu Visual Studio > Sprawdź dostępność aktualizacji**:
+Aby otworzyć **program Visual Studio Updater**, przejdź do programu Visual Studio > Sprawdź dostępność **aktualizacji:**
 
 ![Sprawdź, czy opcja aktualizacji](media/update-image1.png)
 
-Spowoduje to wyświetlenie pola Aktualizator:
+Spowoduje to wyświetlenie pola aktualniejszego:
 
-![pole Aktualizator](media/update-image2.png)
+![okno aktualniejsze](media/update-image2.png)
 
-## <a name="changing-the-updater-channel"></a>Zmienianie kanału Aktualizator
+## <a name="changing-the-updater-channel"></a>Zmiana kanału updatera
 
-Aby zmienić kanał, wybierz go z listy rozwijanej kanał i naciśnij **przycisk Przełącz kanał**:
+Aby zmienić kanał, wybierz go z listy rozwijanej kanału i naciśnij **przycisk Przełącz kanał:**
 
-![Zmień listę rozwijaną kanału](media/update-image3.png)
+![Zamieść kanał rozwijany](media/update-image3.png)
 
 ## <a name="downloading-and-installing-updates"></a>Pobieranie i instalowanie aktualizacji
 
 Przełączanie kanałów automatycznie rozpoczyna proces pobierania nowych aktualizacji.
 
-Jeśli wybrano opcję **automatycznego sprawdzania**, Aktualizator zostanie wyświetlona, gdy Visual Studio dla komputerów Mac jest otwarty, aby poinformować, że nowe aktualizacje są dostępne. Udostępnia również opcję rozpoczęcia pobierania.
+Jeśli wybrano opcję **Sprawdź automatycznie,** pojawi się okno aktualizujące, gdy program Visual Studio dla komputerów Mac będzie otwarty, aby poinformować Cię, że nowe aktualizacje są dostępne. Da ci to również możliwość rozpoczęcia ich pobierania.
 
-Aby rozpocząć instalowanie aktualizacji, wybierz przycisk **Uruchom ponownie i zainstaluj aktualizacje** :
+Aby rozpocząć instalowanie aktualizacji, wybierz przycisk **Uruchom ponownie i zainstaluj aktualizacje:**
 
-![Przycisk umożliwiający rozpoczęcie instalowania aktualizacji](media/update-image4.png)
+![Przycisk, aby rozpocząć instalowanie aktualizacji](media/update-image4.png)
 
-W zależności od składników, które muszą zostać zainstalowane, może być konieczne zaakceptowanie dodatkowych licencji lub wprowadzenie nazwy użytkownika i hasła administratora maszyny.
+W zależności od składników, które muszą zostać zainstalowane, może być konieczne zaakceptowanie dodatkowych licencji lub wprowadzenie nazwy użytkownika i hasła administratora komputera.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Aktualizowanie programu Visual Studio (w systemie Windows)](/visualstudio/install/update-visual-studio)
+- [Aktualizacja programu Visual Studio (w systemie Windows)](/visualstudio/install/update-visual-studio)

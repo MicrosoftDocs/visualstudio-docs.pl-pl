@@ -1,107 +1,107 @@
 ---
 title: Debugowanie — wizualizacje danych
-description: Debugowanie jest powszechną i niezbędną częścią programowania. Visual Studio dla komputerów Mac zawiera cały zestaw funkcji, które ułatwiają debugowanie. Ten artykuł przegląda różne wizualizacje danych, które mogą być wyświetlane podczas przeprowadzania inspekcji obiektów w debugerze.
+description: Debugowanie jest wspólną i konieczną częścią programowania. Visual Studio dla komputerów Mac zawiera cały zestaw funkcji, aby debugowanie łatwe. W tym artykule omówiono różne wizualizacje danych, które można wyświetlać podczas sprawdzania obiektów w debugerze.
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2019
+ms.lasthandoff: 03/20/2020
 ms.locfileid: "74984759"
 ---
 # <a name="data-visualizations"></a>Wizualizacja danych
 
-Visual Studio dla komputerów Mac obejmuje obsługę interfejsu użytkownika dla debugera, umożliwiając wizualizacje wartości zmiennych, pól lub właściwości podczas debugowania. Te Wizualizatory danych pokazują rozszerzoną wersję danych i umożliwiają deweloperom inspekcję znanych struktur, na przykład pokazując Kolor struktury koloru.
+Visual Studio dla komputerów Mac zawiera obsługę interfejsu użytkownika dla debugera, umożliwiając wizualizacje wartości zmiennej, pola lub właściwości podczas debugowania. Te wizualizatory danych pokazują rozszerzoną wersję danych i umożliwiają deweloperom sprawdzanie znanych struktur, na przykład pokazując kolor struktury kolorów.
 
-Wizualizatory w konsoli **lokalnej** debugowania można wyświetlić, klikając ikonę podglądu wyświetlaną po prawej stronie wartości, gdy użytkownik umieści wskaźnik myszy nad wierszem:
+Wizualizatory w konsoli **lokalnej** debugowania mogą być wyświetlane, klikając ikonę podglądu, która pojawia się po prawej stronie wartości, gdy użytkownik najedzie kursorem na wiersz:
 
-![Konsola lokalna](media/data-visualizations-image9.png)
+![Podkładka lokalna](media/data-visualizations-image9.png)
 
-Poniższa lista szuka wielu nowych wizualizacji dostępnych podczas debugowania w Visual Studio dla komputerów Mac.
+Na poniższej liście znajduje się wiele nowych wizualizacji dostępnych podczas debugowania w programie Visual Studio dla komputerów Mac.
 
 ## <a name="point"></a>Punkt
-Punkt/przedstawiającą punkt, lub CGPoint w systemach iOS i Mac, będzie renderowany jako krotka pokazująca wartości X i Y w konsoli debugowania:
+Point/PointF lub CGPoint w systemach iOS i Mac będą renderowane jako krotka pokazująca wartości X i Y w konsoli debugowania:
 
-![Wizualizacja punktu](media/data-visualizations-image10.png)
+![Wizualizacja punktów](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>Rozmiar
-Wartość Size/SizeF lub CGSize w systemach iOS i Mac będzie renderowana jako prostokąt. Jest on rysowany do skalowania do momentu, aż wymiar osiągnie 250 pikseli, a następnie skaluje prostokąt o największym wymiarze 250 px:
+A Size/SizeF lub CGSize w systemach iOS i Mac będzie renderowany jako prostokąt. Jest rysowany do skalowania, aż wymiar wzrośnie przeszłości 250 px, w którym to momencie będzie skalować prostokąt o największym wymiarze jako 250 px:
 
 [Wizualizacja rozmiaru](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>Prostokąt
-Prostokąty/RectangleF lub CGRect w systemach iOS i Mac będą wyświetlać wymiary i źródło. Podobnie jak w przypadku rozmiaru, jest rysowany do skalowania do momentu, aż rozmiar osiągnie poprzedni 250 pikseli:
+Prostokąt/RectangleF lub CGRect w systemach iOS i Mac wyświetli wymiary i początek. Podobnie jak rozmiar, jest rysowany na skali, aż wymiar wzrośnie przeszłości 250 px:
 
 ![Wizualizacja prostokąta](media/data-visualizations-image12.png)
 
-## <a name="coordinate"></a>Środka
-Współrzędne są kreślone na mapie, z lokalizacją przypiętą do centrum:
+## <a name="coordinate"></a>Współrzędnych
+Współrzędne są kreślone na mapie, a lokalizacja jest przypięta do środka:
 
-[Wizualizacja współrzędnej](media/data-visualizations-image13.png)
+[Wizualizacja współrzędnych](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>Kolor
-Spowoduje to wyświetlenie właściwości UIColor, CGColor i Color, przedstawiających Podgląd kolorów, składniki RGBA, wartości jasności i nasycenie oraz wartość szesnastkową koloru:
+Spowoduje to wyświetlenie właściwości UIColor, CGColor i Color, przedstawiające podgląd kolorów, komponenty RGBA, wartości barwy-nasycenia-światłości oraz wartość szesnastkową koloru:
 
 ![Wizualizacja kolorów](media/data-visualizations-image14.png)
 
 ## <a name="images"></a>Obrazy
 
-Multimedia będą renderowane do skalowania, maksymalnie do maksymalnego wymiaru 250 pikseli i będą skalowane w celu dopasowania, gdy obraz przekroczy 250 pikseli:
+Nośnik będzie renderowany do skalowania do maksymalnego wymiaru 250 px i będzie skalowany w taki sposób, aby pasował, gdy obraz przekroczy 250 px:
 
 ![Wizualizacja obrazu](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>Krzywe Beziera
 
-Wizualizator wyświetli `NSBezierPath`:
+Wizualizator `NSBezierPath`wyświetli:
 
 ![Wizualizacja krzywej Beziera](media/data-visualizations-image16.png)
 
-## <a name="string"></a>String
+## <a name="string"></a>Ciąg
 
-Ciąg krótszy niż 100 znaków jest wyświetlany w całości bez podglądu. Dłuższe ciągi są wyświetlane w pełnej wersji zapoznawczej. Ciągi można edytować, a wizualizator towarzyszy przyciskowi edycji, co pozwala na edytowanie wartości ciągu w podglądzie lub w edytorze wartości ciągów, jak pokazano poniżej:
+Ciąg mniej niż 100 znaków jest wyświetlany w całości, bez podglądu. Dłuższe ciągi są wyświetlane w całości w podglądzie. Ciągi są edytowalne, a wizualizatorowi towarzyszy przycisk edycji, umożliwiający edycję wartości ciągu w podglądzie lub w Edytorze wartości ciągu, pokazanym poniżej:
 
 ![Wizualizacja ciągów](media/data-visualizations-image17.png)
 
-### <a name="small-strings"></a>Małe ciągi:
+### <a name="small-strings"></a>Małe struny:
 ![Wizualizacja małych ciągów](media/data-visualizations-image18.png)]
 
-### <a name="medium-length-strings"></a>Ciągi o średniej długości:
-![Wizualizacja średniej długooci](media/data-visualizations-image19.png)
+### <a name="medium-length-strings"></a>Struny średniej długości:
+![Wizualizacja średniego ciągu](media/data-visualizations-image19.png)
 
-### <a name="editor"></a>Edytor
+### <a name="editor"></a>Edytor:
 
 ![Wizualizacja edytora](media/data-visualizations-image21.png)
 
-## <a name="ienumerable"></a>IEnumerable
+## <a name="ienumerable"></a>Ienumerable
 
-Interfejs IEnumerable wylicza wszystkie wartości; wartości każdego z nich można wyświetlić, klikając przycisk **Pokaż** wartości. Opcja IEnumerable nie będzie wyświetlać wartości dla obiektów, takich jak `Array`, `ArrayList``List<>`, `Dictionary<,>`, ponieważ mają własne Wizualizatory debugera.
+IEnumerable wylicza wszystkie wartości; wartości każdego z nich można wyświetlić, klikając przycisk **Pokaż** wartości. Opcja IEnumerable nie będzie wyświetlać `Array`wartości `ArrayList` `List<>`dla `Dictionary<,>` obiektów, takich jak , , ponieważ mają one własne wizualizatory debugera.
 
-![Wizualizacja IEnumerable](media/data-visualizations-image22.png)
+![Wizualizacja ienumerable](media/data-visualizations-image22.png)
 
-## <a name="other-visualizers"></a>Inne Wizualizatory
+## <a name="other-visualizers"></a>Inne wizualizatory
 
-Poniżej znajdują się inne typy, które mają również własne Wizualizatory wbudowane:
+Niektóre inne typy, które mają również własne wizualizatory wbudowane są wymienione poniżej:
 
-![Inna Wizualizacja](media/data-visualizations-image23.png)
+![Inna wizualizacja](media/data-visualizations-image23.png)
 
 * **Typy pierwotne**
-  * Spowoduje to wyświetlenie nieprzetworzonej wartości typu pierwotnego.
-* **Enum**
-  * Spowoduje to wyświetlenie wartości pola bez kwalifikatora typu wyliczeniowego.
-* **Spoin**
+  * Spowoduje to wyświetlenia nieprzetworzonej wartości typu pierwotnego.
+* **Wyliczenie**
+  * Spowoduje to wyświetlenie wartości pola bez kwalifikatora typu wyliczenia.
+* **Krotki**
   * Wyświetlane w formacie (,)
 * **Null**
-  * Wyświetla wartość "null".
+  * Pokazuje wartość "null".
 * **Adres URL**
-  * Spowoduje to wyświetlenie hiperlinku do kliknięcia.
-* **IntPtr**
-  * Spowoduje to wyświetlenie szesnastkowej reprezentacji elementu IntPtr.
+  * Spowoduje to wyświetlenie klikliwego hiperłącza.
+* **Intptr**
+  * Spowoduje to wyświetlenie szesnastkowy reprezentacji IntPtr.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Sprawdź zmienne w oknach Autostart i lokalne (Visual Studio w systemie Windows)](/visualstudio/debugger/autos-and-locals-windows)
+- [Sprawdzanie zmiennych w oknach Autos i locals (Visual Studio w systemie Windows)](/visualstudio/debugger/autos-and-locals-windows)
 - [Wyświetlanie ciągów w wizualizatorze (Visual Studio w systemie Windows)](/visualstudio/debugger/string-visualizer-dialog-box)

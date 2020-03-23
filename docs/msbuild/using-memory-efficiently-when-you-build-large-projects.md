@@ -1,5 +1,5 @@
 ---
-title: Wydajne używanie pamięci podczas kompilowania dużych projektów | Microsoft Docs
+title: Efektywne korzystanie z pamięci podczas tworzenia dużych projektów | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f40f2713d93e4f1ad9755efaea2f8fba5f0bda94
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/26/2020
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "77631318"
 ---
-# <a name="use-memory-efficiently-when-you-build-large-projects"></a>Wydajne używanie pamięci podczas kompilowania dużych projektów
+# <a name="use-memory-efficiently-when-you-build-large-projects"></a>Efektywne korzystanie z pamięci podczas tworzenia dużych projektów
 
-Duże projekty często zawierają wiele podprojektów i innych zależności, które mogą zużywać dużą ilość pamięci systemowej w czasie kompilacji. Po zmniejszeniu dostępnej pamięci systemowej może ulec również obniżenie wydajności systemu. Starsze wersje projektów programu MSBuild pozostawały w pamięci. W wersji 3,5 usunięto starsze wersje projektów, ale zachowane wyniki kompilacji są przechowywane w pamięci podręcznej na potrzeby późniejszego pobierania.
+Duże projekty często zawierają wiele podprojektów i innych zależności, które mogą zużywać dużo pamięci systemowej w czasie kompilacji. Gdy ilość dostępnej pamięci systemowej zostanie zmniejszona, wydajność systemu również może zostać zmniejszona. Starsze wersje projektów MSBuild pozostały w pamięci. Wersja 3.5 usunęła starsze wersje projektów, ale zachowane wyniki kompilacji w pamięci podręcznej do późniejszego pobrania.
 
- Wersja 4,0 obsługuje automatyczne zarządzanie pamięcią, co pozwala na zapisywanie projektów przed użyciem takich właściwości jak `UnloadProjectsOnCompletion` i `UseResultsCache`.
+ Wersja 4.0 automatycznie obsługuje to zarządzanie pamięcią, oszczędzając projekty `UnloadProjectsOnCompletion` `UseResultsCache`przed koniecznością używania właściwości, takich jak i .
 
 ### <a name="see-also"></a>Zobacz też
 
-- [Równoległe kompilowanie wielu projektów](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
+- [Twórz wiele projektów równolegle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

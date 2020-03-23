@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: dostosowywanie kolumn widoku raportu | Microsoft Docs'
+title: 'Jak: Dostosowywanie kolumn widoku raportu | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,14 +15,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778976"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Instrukcje: dostosowywanie kolumn widoku raportu
-Narzędzia wydajności w programie Visual Studio Team System Development Edition są w pełni zintegrowane ze zintegrowanym środowiskiem programistycznym (IDE) w celu zapewnienia bezproblemowego środowiska użytkownika. Poniższa lista jest reprezentatywna dla widoków, które można dostosować przez dodanie, usunięcie i ponowne rozmieszczenie kolumn:
+# <a name="how-to-customize-report-view-columns"></a>Jak: Dostosowywanie kolumn widoku raportu
+Narzędzia wydajności w programie Visual Studio Team System Development Edition są w pełni zintegrowane ze zintegrowanym środowiskiem programistycznym (IDE), aby zapewnić bezproblemowe środowisko użytkownika. Poniższa lista jest reprezentatywna dla widoków, które można dostosować, dodając, usuwając i rozmieszczając kolumny:
 
 - [Widok modułów](../profiling/modules-view.md)
 
@@ -46,14 +46,14 @@ Narzędzia wydajności w programie Visual Studio Team System Development Edition
 
 ### <a name="to-customize-a-report-view"></a>Aby dostosować widok raportu
 
-1. Otwórz widok raport.
+1. Otwórz widok raportu.
 
 2. Kliknij prawym przyciskiem myszy powierzchnię widoku raportu, a następnie kliknij polecenie **Dodaj/Usuń kolumny**.
 
-     Zostanie wyświetlone okno dialogowe **Dodaj/Usuń kolumny** .
+     Zostanie wyświetlone okno dialogowe **Dodawanie/usuwanie kolumn.**
 
-3. Wybierz kolumny, które chcesz dodać.
+3. Zaznacz kolumny, które chcesz dodać.
 
-4. Kliknij przycisk strzałki, aby zmienić kolejność kolumn.
+4. Kliknij przycisk strzałki, aby zamiecą kolejność kolumn.
 
 5. Kliknij przycisk **OK**.

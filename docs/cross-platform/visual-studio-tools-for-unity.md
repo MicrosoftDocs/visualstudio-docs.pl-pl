@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Unity | Dokumentacja firmy Microsoft
+title: Narzędzia programu Visual Studio dla unity | Dokumenty firmy Microsoft
 ms.custom: ''
 ms.date: 10/25/2019
 ms.technology: vs-unity-tools
@@ -11,53 +11,53 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 9789c400ee01bc986bbdf72c509f7a1841c5f300
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74797141"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Narzędzia Visual Studio Tools for Unity
 
 ![Narzędzia Visual Studio Tools for Unity](media/vstu_header.png)
 
-Visual Studio Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, która zmienia program Visual Studio w zaawansowane narzędzie do tworzenia międzyplatformowych gier i aplikacji przy użyciu aparatu Unity.
+Visual Studio Tools for Unity to bezpłatne rozszerzenie programu Visual Studio, które zamienia program Visual Studio w zaawansowane narzędzie do tworzenia gier i aplikacji między platformami za pomocą unity.
 
-W trakcie idealne narzędzie do zestawiania świata gier Unity editor, nie można zapisać swój kod w nim. Program Visual Studio Tools for Unity, możesz użyć znanych kodu, edytowanie, debugowanie i wydajność funkcji programu Visual Studio do tworzenia edytora i gier skrypty dla projektu środowiska Unity za pomocą języka C# i debugować je przy użyciu programu Visual Studio w zaawansowane debugowanie możliwości.
+Chociaż edytor Unity świetnie nadaje się do układania świata gry razem, nie możesz w nim napisać kodu. Za pomocą programu Visual Studio Tools for Unity można użyć znanych funkcji edycji kodu, debugowania i produktywności programu Visual Studio do tworzenia skryptów edytora i gier dla projektu Unity przy użyciu języka C#i można je debugować przy użyciu zaawansowanych funkcji debugowania programu Visual Studio.
 
-Jednak program Visual Studio Tools for Unity jest więcej niż; Ponadto jest ściśle zintegrowana za pomocą edytora środowiska Unity, dzięki czemu spędzisz mniej czasu przełączania i z powrotem do wykonywania prostych zadań, zawiera ulepszenia dotyczące wydajności specyficzne dla aparatu Unity i umieszcza w dokumentacji platformy Unity na wyciągnięcie ręki.
+Ale Visual Studio Tools for Unity jest więcej niż to; Posiada również głęboką integrację z edytorem Unity, dzięki czemu będziesz spędzać mniej czasu na przełączaniu się tam iz powrotem, aby wykonywać proste zadania, zapewnia ulepszenia produktywności specyficzne dla unity i umieszcza dokumentację Unity na wyciągnięcie ręki.
 
 ## <a name="overview"></a>Omówienie
 
-Odwiedź stronę [tworzenia gier Unity w programie Visual Studio](https://visualstudio.microsoft.com/vs/unity-tools/) strony Przegląd zalety korzystania z programu Visual Studio do tworzenia gier Unity lub w dalszym ciągu poniżej zagłębić kluczowe funkcje programu Visual Studio Tools for Unity:
+Odwiedź [stronę Kompilacja gier Unity z programem Visual Studio,](https://visualstudio.microsoft.com/vs/unity-tools/) aby uzyskać omówienie zalet korzystania z programu Visual Studio dla tworzenia unity lub przejdź dalej, aby zagłębić się w kluczowe funkcje programu Visual Studio Tools for Unity:
 
-### <a name="compatible-with-visual-studio-community-and-bundled-with-unity"></a>Zgodny z programu Visual Studio Community i powiązane z użyciem aparatu Unity
+### <a name="compatible-with-visual-studio-community-and-bundled-with-unity"></a>Zgodność ze społecznością Visual Studio i w pakiecie z Unity
 
-[Program Visual Studio Community](https://visualstudio.microsoft.com/) jest dostępny bezpłatnie i jest umieszczany w pakietach za pomocą aparatu Unity instaluje, począwszy od 2018.1 aparatu Unity. Zobacz Visual Studio Tools for Unity [dokumentacji wprowadzającej](getting-started-with-visual-studio-tools-for-unity.md) Aby uzyskać więcej informacji.
+[Visual Studio Community](https://visualstudio.microsoft.com/) jest dostępny bezpłatnie i jest dołączony do instalacji Unity począwszy od Unity 2018.1. Aby uzyskać więcej informacji, zobacz [dokumentację wprowadzenie](getting-started-with-visual-studio-tools-for-unity.md) do narzędzi programu Visual Studio dla unity.
 
-### <a name="intellisense-for-unity-messages"></a>Funkcja IntelliSense dla komunikatów Unity
+### <a name="intellisense-for-unity-messages"></a>Komunikaty IntelliSense for Unity
 
-Uzupełniania kodu IntelliSense ułatwia szybkie i łatwe do [Implementuj komunikaty aparatu Unity API](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages) takich jak `OnCollisionEnter`, łącznie z ich parametrów.
+IntelliSense code-completion sprawia, że szybkie i `OnCollisionEnter`łatwe do [zaimplementowania komunikatów interfejsu API Unity,](using-visual-studio-tools-for-unity.md#intellisense-for-unity-api-messages) takich jak , w tym ich parametry.
 
-### <a name="superior-debugging"></a>Lepsze funkcje debugowania
+### <a name="superior-debugging"></a>Doskonałe debugowanie
 
-Visual Studio Tools for Unity obsługuje zaawansowaną [debugowania](using-visual-studio-tools-for-unity.md#unity-debugging) funkcje, których można oczekiwać od programu Visual Studio:
+Narzędzia programu Visual Studio dla unity obsługuje niezawodne funkcje [debugowania,](using-visual-studio-tools-for-unity.md#unity-debugging) których oczekujesz od programu Visual Studio:
 
 * Ustaw punkty przerwania, w tym warunkowe punkty przerwania.
-* Oceniaj złożone wyrażenia w oknie czujki.
-* Sprawdzanie i modyfikowanie wartości zmiennych i argumentów.
-* Przejść do szczegółów w złożonych obiektów i struktur danych.
+* Ocena złożonych wyrażeń w oknie Czujka.
+* Inspekcja i modyfikowanie wartości zmiennych i argumentów.
+* Przechodzenie do szczegółów w złożonych obiektach i strukturach danych.
 
-### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostyka Roslyn i szybkie poprawki dla aparatu Unity
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostyka Roslyn i szybkie poprawki dla Unity
 
-Napisz lepszy kod, który przechwytuje najlepsze rozwiązania, korzystając z dogłębnej wiedzy na temat projektów Unity w programie Visual Studio.
+Napisz lepszy kod, który przechwytuje najlepsze rozwiązania z dogłębnym zrozumieniem projektów Unity w programie Visual Studio.
 
-![Porównanie ciągów refaktoryzacji z CompareTag](media/unity-diagnostics.png)
+![Porównanie ciągów refaktoryzacji programu VS z comparetag](media/unity-diagnostics.png)
 
-### <a name="visual-studio-for-mac-tools-for-unity"></a>Program Visual Studio dla komputerów Mac Tools for Unity
+### <a name="visual-studio-for-mac-tools-for-unity"></a>Narzędzia programu Visual Studio dla komputerów Mac dla unity
 
-Program Visual Studio for Mac obsługuje również projektów aparatu Unity. Aby uzyskać więcej informacji, zobacz [programu Visual Studio dla komputerów Mac Tools for Unity dokumentacji](/visualstudio/mac/unity-tools).
+Visual Studio dla komputerów Mac obsługuje również projekty Unity. Aby uzyskać więcej informacji, zobacz [dokumentację programu Visual Studio dla komputerów Mac Tools for Unity](/visualstudio/mac/unity-tools).
 
 ## <a name="next-steps"></a>Następne kroki
 
-* [Rozpoczynanie pracy z usługą Visual Studio Tools for Unity](getting-started-with-visual-studio-tools-for-unity.md)
+* [Wprowadzenie do programu Visual Studio Tools for Unity](getting-started-with-visual-studio-tools-for-unity.md)

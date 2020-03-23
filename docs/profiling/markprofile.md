@@ -1,5 +1,5 @@
 ---
-title: MarkProfile | Microsoft Docs
+title: MarkProfile | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 03/18/2020
 ms.locfileid: "74778573"
 ---
 # <a name="markprofile"></a>MarkProfile
-Metoda `MarkProfile` Wstawia znacznik profilu w. plik *VSP* . Profilowanie wątku zawierającego funkcję `MarkProfile` musi być włączone dla znacznika, który ma zostać wstawiony.
+Metoda `MarkProfile` wstawia znacznik profilu w pliku . *vsp.* Profilowanie wątku zawierającego `MarkProfile` funkcję musi być włączone, aby znak został wstawiony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,39 +32,39 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 
  Znacznik do wstawienia. Znacznik musi być większy lub równy 0 (zero).
 
-## <a name="property-valuereturn-value"></a>Wartość właściwości/zwracana wartość
- Funkcja wskazuje powodzenie lub niepowodzenie przy użyciu wyliczenia **PROFILE_COMMAND_STATUS** . Zwracana wartość może być jedną z następujących:
+## <a name="property-valuereturn-value"></a>Wartość właściwości/wartość zwracana
+ Funkcja wskazuje sukces lub niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących wartości:
 
-|Liczeni|Opis|
+|Moduł wyliczający|Opis|
 |----------------|-----------------|
-|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejszy lub równy 0. Te wartości są zarezerwowane. Znacznik i komentarz nie są rejestrowane.|
-|MARK_ERROR_MODE_NEVER|Tryb profilowania został ustawiony tak, aby nigdy nie był wywoływany przez funkcję. Znacznik i komentarz nie są rejestrowane.|
-|MARK_ERROR_MODE_OFF|Tryb profilowania został ustawiony na OFF, gdy funkcja została wywołana. Znacznik i komentarz nie są rejestrowane.|
-|MARK_ERROR_NO_SUPPORT|Brak obsługi znacznika w tym kontekście. Znacznik i komentarz nie są rejestrowane.|
-|MARK_ERROR_OUTOFMEMORY|Pamięć nie jest dostępna do rejestrowania zdarzenia. Znacznik i komentarz nie są rejestrowane.|
-|MARK_TEXTTOOLONG|Ciąg przekracza maksymalną 256 znaków. Ciąg komentarza jest obcinany, a znacznik i komentarz są rejestrowane.|
-|MARK_OK|MARK_OK jest zwracany, aby wskazać powodzenie.|
+|MARK_ERROR_MARKER_RESERVED|Parametr jest mniejszy lub równy 0. Te wartości są zastrzeżone. Znak i komentarz nie są rejestrowane.|
+|MARK_ERROR_MODE_NEVER|Tryb profilowania został ustawiony na NIGDY, gdy funkcja została wywołana. Znak i komentarz nie są rejestrowane.|
+|MARK_ERROR_MODE_OFF|Tryb profilowania został ustawiony na OFF, gdy funkcja została wywołana. Znak i komentarz nie są rejestrowane.|
+|MARK_ERROR_NO_SUPPORT|Brak obsługi znaku w tym kontekście. Znak i komentarz nie są rejestrowane.|
+|MARK_ERROR_OUTOFMEMORY|Pamięć nie była dostępna do nagrywania zdarzenia. Znak i komentarz nie są rejestrowane.|
+|MARK_TEXTTOOLONG|Ciąg przekracza maksymalnie 256 znaków. Ciąg komentarza zostanie obcięty, a znacznik i komentarz są rejestrowane.|
+|MARK_OK|MARK_OK jest zwracany, aby wskazać sukces.|
 
 ## <a name="remarks"></a>Uwagi
- Wartość znacznika jest wstawiana do. plik *VSP* za każdym razem, gdy kod jest uruchamiany, jeśli wątek zawierający funkcję MarkProfile jest profilowany. Możesz wywoływać MarkProfile wiele razy.
+ Wartość znacznika zostanie wstawiona do pliku . *vsp* plik za każdym razem, gdy kod jest uruchamiany, jeśli wątek zawierający MarkProfile funkcji jest profilowane. MarkProfile można wywołać wiele razy.
 
- Znaczniki profilów są globalne w zakresie. Na przykład znacznik profilu wstawiony w jednym wątku może służyć do oznaczania początku lub końca segmentu danych w dowolnym wątku w. plik *VSP* .
+ Znaki profilu mają zasięg globalny. Na przykład znacznik profilu wstawiony w jednym wątku może służyć do oznaczania początku lub końca segmentu danych w dowolnym wątku w pliku . *vsp.*
 
- Stan profilowania wątku, który zawiera funkcję profilu znacznika, musi być włączony, gdy znaczniki i komentarze są wstawiane za pomocą polecenia Mark lub funkcji interfejsu API (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).
+ Stan profilowania wątku, który zawiera funkcję profilu znaczników, musi być włączony, gdy znaczniki i komentarze wstawione za pomocą polecenia Mark lub z funkcjami interfejsu API (CommentMarkAtProfile, CommentMarkProfile lub MarkProfile).
 
 > [!IMPORTANT]
-> Metoda MarkProfile powinna być używana tylko z profilowania Instrumentacji.
+> MarkProfile metoda powinna być używana tylko z profilowania instrumentacji.
 
-## <a name="net-framework-equivalent"></a>.NET Framework równoważne
- *Microsoft. VisualStudio. Profiler. dll*
+## <a name="net-framework-equivalent"></a>Odpowiednik programu .NET Framework
+ *Plik dll Microsoft.VisualStudio.Profiler.dll*
 
-## <a name="function-information"></a>Informacje o funkcji
- Nagłówek: zadeklarowany w *VSPerf. h*
+## <a name="function-information"></a>Informacje o funkcjach
+ Nagłówek: Zadeklarowany w *vsPerf.h*
 
- Biblioteka importowana: *VSPerf. lib*
+ Import biblioteki: *VSPerf.lib*
 
 ## <a name="example"></a>Przykład
- Poniższy kod ilustruje funkcję MarkProfile.
+ Poniższy kod ilustruje MarkProfile funkcji.
 
 ```cpp
 void ExerciseMarkProfile()
@@ -98,5 +98,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Dokumentacja interfejsu API programu Visual Studio profiler (natywna)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do interfejsu API profilera programu Visual Studio (natywne)](../profiling/visual-studio-profiler-api-reference-native.md)

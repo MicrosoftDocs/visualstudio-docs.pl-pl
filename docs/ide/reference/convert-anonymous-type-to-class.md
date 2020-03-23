@@ -1,44 +1,47 @@
 ---
-title: Przekonwertować typu anonimowego na klasę
-ms.date: 02/13/2019
+title: Konwertuj typ anonimowy na klasę
+ms.date: 03/10/2020
 ms.topic: reference
-author: kendrahavens
-ms.author: kehavens
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 dev_langs:
 - CSharp
+- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f29e31fb87d8b18e7f5a46d16f90217ee08d51f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
+ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968542"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79094288"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Konwertowanie typu anonimowego na klasę
 
-Ta Refaktoryzacja mają zastosowanie do:
+Ten refaktoryzator ma zastosowanie do:
 
 - C#
 
-**Co:** Do klasy, należy przekonwertować typu anonimowego.
+- Visual Basic
 
-**Kiedy:** Masz typ anonimowy, który chcesz, aby kontynuować tworzenie w klasie.
+**Co:** Konwertuj typ anonimowy na klasę.
 
-**Dlaczego:** Typy anonimowe są przydatne, jeśli tylko używasz je lokalnie. Wraz z rozwojem kodu to miły łatwy sposób podwyższenie im poziomu klasa.
+**Kiedy:** Masz typ anonimowy, który chcesz nadal kontynuować w klasie.
 
-## <a name="how-to"></a>Instrukcje
+**Dlaczego?** Typy anonimowe są przydatne, jeśli używasz ich tylko lokalnie. W miarę rozwoju kodu miło jest mieć łatwy sposób promowania ich do klasy.
 
-1. Umieść kursor w typu anonimowego.
-2. Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+## <a name="how-to"></a>Porady
 
-   ![Przekonwertować typu anonimowego na klasę](media/convert-anon-to-class.png)
+1. Umieść kursor w typie anonimowym.
+2. Naciśnij **klawisze Ctrl**+**.** , aby wyzwolić menu **Szybkie akcje i Refaktoryzowania.**
 
-2. Naciśnij klawisz **Enter** do akceptowania refaktoryzacji.
+   ![Konwertuj typ anonimowy na klasę](media/convert-anon-to-class.png)
 
-   ![Przekonwertować typu anonimowego na klasy zaakceptowane](media/convert-anon-to-class-complete.png)
+2. Naciśnij **klawisz Enter,** aby zaakceptować refaktoryzowanie.
 
-## <a name="see-also"></a>Zobacz także
+   ![Konwertuj typ anonimowy na klasę zaakceptowany](media/convert-anon-to-class-complete.png)
+
+## <a name="see-also"></a>Zobacz też
 
 - [Refaktoryzacja](../refactoring-in-visual-studio.md)
