@@ -2,7 +2,7 @@
 documentType: LandingData
 title: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio
 metadata:
-  title: Programowanie na platformie Azure z programem Visual Studio | Dokumentacja firmy Microsoft
+  title: Tworzenie aplikacji na platformie Azure przy użyciu programu Visual Studio | Microsoft Docs
   meta.description: Tutorials and conceptual articles about connecting apps and services to Azure and developing Azure services.
   author: ghogen
   manager: jillfra
@@ -15,7 +15,7 @@ sections:
   - title: Publikowanie na platformie Azure
     items:
       - type: paragraph
-        text: Wdrażanie aplikacji na platformie Azure dla środowisk przejściowych lub produkcyjnych z programem Visual Studio.
+        text: Wdróż aplikację na platformie Azure w środowisku przejściowym lub produkcyjnym przy użyciu programu Visual Studio.
       - type: list
         style: cards
         className: cardsM
@@ -34,7 +34,7 @@ sections:
   - title: Debugowanie i monitorowanie wydajności
     items:
       - type: paragraph
-        text: ' Dowiedz się, jak debugowanie aplikacji na platformie Azure w celu monitorowania wydajności.'
+        text: ' Dowiedz się, jak debugować aplikację na platformie Azure i monitorować wydajność.'
       - type: list
         style: cards
         className: cardsM
@@ -49,16 +49,16 @@ sections:
             html: <p></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: Debugować aplikację uruchomioną na maszynie wirtualnej
+            title: Debugowanie aplikacji uruchomionej na maszynie wirtualnej
           - href: vs-azure-tools-performance-profiling-cloud-services.md
             html: <p></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-performance.svg'
-            title: Zmierzyć wydajność dla usług w chmurze na platformie Azure
-  - title: Połącz swoje aplikacje na platformie Azure przy użyciu programu Visual Studio podłączone usługi
+            title: Mierzenie wydajności usług w chmurze na platformie Azure
+  - title: Łączenie aplikacji z platformą Azure przy użyciu usług połączonych programu Visual Studio
     items:
       - type: paragraph
-        text: Szybko nawiązać połączenie projektu aplikacji lub usługi różnych usług platformy Azure przy użyciu programu Visual Studio podłączonych usług do automatycznego dodawania kodu połączenia i konfiguracji.
+        text: 'Szybko połącz swoją aplikację lub projekt usługi z różnymi usługami platformy Azure przy użyciu usług połączonych programu Visual Studio, aby automatycznie dodawać konfigurację i kod połączenia.'
       - type: list
         style: icon48
         items:
@@ -70,10 +70,10 @@ sections:
               src: 'https://docs.microsoft.com/azure/media/index/ActiveDirectory.svg'
             text: Azure Active Directory
             href: /azure/active-directory/develop/vs-active-directory-add-connected-service
-  - title: Usług Azure Cloud Services
+  - title: Usługi w chmurze platformy Azure
     items:
       - type: paragraph
-        text: 'Usługi Azure Cloud Services to technologia ogólnego przeznaczenia do tworzenia ogólnego usług platformy Azure, dzięki dostępowi do usługi Azure storage i innych zasobów platformy Azure.'
+        text: Usługi w chmurze platformy Azure to technologia ogólnego przeznaczenia służąca do tworzenia ogólnych usług platformy Azure z dostępem do magazynu platformy Azure i innych zasobów platformy Azure.
       - type: list
         style: cards
         className: cardsM
@@ -85,12 +85,12 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
             title: Projekty
           - href: vs-azure-tools-debugging-cloud-services-overview.md
-            html: '<p>Debugowanie usług w chmurze, lokalnie i na platformie Azure</p>'
+            html: <p>Debugowanie usług w chmurze lokalnie i na platformie Azure</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_debug.svg'
             title: Debugowanie
           - href: vs-azure-tools-performance-profiling-cloud-services.md
-            html: <p>Użyj programu Visual Studio profiler</p>
+            html: <p>Używanie programu Visual Studio Profiler</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_code-performance.svg'
             title: Analizowanie wydajności
@@ -100,33 +100,33 @@ sections:
               src: 'https://docs.microsoft.com//media/common/i_deploy.svg'
             title: Publikowanie
           - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-            html: <p>Monitorowanie i diagnozowanie usług w chmurze i maszyn wirtualnych działających na platformie Azure</p>
+            html: <p>Monitorowanie i diagnozowanie usług w chmurze i maszyn wirtualnych uruchomionych na platformie Azure</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_load-testing.svg'
             title: Diagnostyka
   - title: Praca z zasobami platformy Azure w programie Visual Studio
     items:
       - type: paragraph
-        text: 'Eksplorator chmury w programie Visual Studio oferuje wygodny sposób dostępu do zasobów platformy Azure, takich jak konta magazynu i maszyn wirtualnych.'
+        text: 'Program Cloud Explorer w programie Visual Studio zapewnia wygodny sposób uzyskiwania dostępu do zasobów platformy Azure, takich jak konta magazynu i maszyny wirtualne.'
       - type: list
         style: cards
         className: cardsM
         columns: 3
         items:
           - href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-            html: <p>Dostęp do konta magazynu platformy Azure w programie Visual Studio</p>
+            html: <p>Uzyskiwanie dostępu do kont usługi Azure Storage w programie Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_dashboard.svg'
             title: Magazyn
           - href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-            html: <p>Dostęp do maszyn wirtualnych w programie Visual Studio</p>
+            html: <p>Uzyskiwanie dostępu do maszyn wirtualnych z programu Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
             title: Maszyny wirtualne
-  - title: Inne zasoby programowanie na platformie Azure
+  - title: Inne zasoby dotyczące programowania na platformie Azure
     items:
       - type: paragraph
-        text: 'Z obciążeniem programowanie na platformie Azure, zainstalowane, Visual Studio zapewnia szablony projektu dla odmian projektów tej Włącz, których używasz Programowanie przy użyciu określonych usług platformy Azure.'
+        text: 'Gdy na platformie Azure jest zainstalowane obciążenie programowania, program Visual Studio udostępnia szablony projektów dla różnych projektów, które umożliwiają programowanie przy użyciu określonych usług platformy Azure.'
       - type: list
         style: icon48
         items:
@@ -140,7 +140,7 @@ sections:
             href: 'https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/StreamAnalytics.svg'
-            text: Stream Analytics
+            text: Usługa Stream Analytics
             href: 'https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-vs'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Fabric.svg'

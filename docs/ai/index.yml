@@ -3,7 +3,7 @@ documentType: LandingData
 title: Narzędzia Visual Studio Tools for AI
 metadata:
   document_id: 83ceabb5-fb4f-a709-3fd2-37d024409f31
-  title: Visual Studio Tools for AI | Microsoft Docs
+  title: Narzędzia Visual Studio Tools for AI | Microsoft Docs
   ms.prod: visual-studio-windows
   ms.technology: vs-ai-tools
   author: lisawong19
@@ -12,27 +12,27 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: 'Visual Studio Tools for AI jest zintegrowane środowisko projektowe do tworzenia, testowania i wdrażania rozwiązań uczenia głębokiego. Dowiedz się, jak używać narzędzia sztucznej Inteligencji z naszych przewodników Szybki Start, samouczków i przykładów.'
+  description: 'Visual Studio Tools for AI to zintegrowane środowisko projektowe do tworzenia, testowania i wdrażania rozwiązań uczenia głębokiego. Dowiedz się, jak używać narzędzi sztucznej inteligencji, korzystając z przewodników Szybki start, samouczków i przykładów.'
 sections:
-  - title: 5-minutowe Przewodniki Szybki Start
+  - title: 5-minutowe przewodniki Szybki start
     items:
       - type: paragraph
-        text: 'Dowiedz się, jak uruchamiać rozwiązania uczenia głębokiego przy użyciu:'
+        text: 'Dowiedz się, jak uruchomić rozwiązanie uczenia głębokiego przy użyciu:'
       - type: list
         style: icon48
         items:
           - image:
               src: media/Tensorflow_logo.png
-            text: TensorFlow i Python
+            text: TensorFlow i język Python
             href: tensorflow-local.md
   - title: Samouczki krok po kroku
     items:
       - type: paragraph
-        text: 'Dowiedz się, jak tworzyć rozwiązania do uczenia głębokiego:'
+        text: 'Dowiedz się, jak utworzyć rozwiązanie uczenia głębokiego:'
       - type: list
         style: ordered
         items:
-          - html: <a href="/visualstudio/ai/tensorflow-vm">Uczenie modelu TensorFlow w chmurze</a>
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Trenowanie modelu TensorFlow w chmurze</a>
   - title: Przykłady
     items:
       - type: list

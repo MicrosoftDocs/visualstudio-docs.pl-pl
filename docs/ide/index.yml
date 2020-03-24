@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 title: Dokumentacja środowiska IDE programu Visual Studio
-summary: Zintegrowane środowisko programistyczne (IDE) to bogate w funkcje aplikacje, które mogą być używane w wielu aspektach tworzenia oprogramowania. Środowisko IDE programu Visual Studio ułatwia edytowanie, debugowanie, kompilowanie i publikowanie aplikacji.
+summary: Zintegrowane środowisko projektowe (IDE) to bogata w funkcje aplikacja, której można używać w wielu aspektach tworzenia oprogramowania. Środowisko IDE programu Visual Studio ułatwia edytowanie, debugowanie, kompilowanie i publikowanie aplikacji.
 metadata:
   title: Dokumentacja środowiska IDE programu Visual Studio
   titleSuffix: ''
-  description: Przejdź do różnych stron, które pomagają dowiedzieć się, jak używać interaktywnego środowiska programistycznego programu Visual Studio.
+  description: Przejdź do różnych stron, z których dowiesz się, jak używać interaktywnego środowiska programistycznego programu Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -12,13 +12,13 @@ metadata:
   ms.author: jillfra
   ms.date: 09/24/2019
   ms.openlocfilehash: 0db1718cbb1a43a2ebacafbdaac0ba0667b28dda
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 11/22/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74316421"
 landingContent:
-- title: Rozpoczęcie pracy
+- title: Wprowadzenie
   linkLists:
   - linkListType: download
     links:
@@ -26,27 +26,27 @@ landingContent:
       url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
   - linkListType: get-started
     links:
-    - text: Instalacja programu Visual Studio
+    - text: Instalowanie programu Visual Studio
       url: ../install/install-visual-studio.md
   - linkListType: overview
     links:
-    - text: Przegląd programu Visual Studio
+    - text: Omówienie programu Visual Studio
       url: ../get-started/visual-studio-ide.md
 - title: Korzystanie z programu Visual Studio
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Edytor kodu
+    - text: Korzystanie z edytora kodu
       url: ../get-started/tutorial-editor.md
     - text: Kompilowanie i tworzenie kompilacji
       url: ../ide/compiling-and-building-in-visual-studio.md
-    - text: Możliwe jest debugowanie kodu
+    - text: Debugowanie kodu
       url: ../debugger/debugger-feature-tour.md
-    - text: Testy zapisu
+    - text: Pisanie testów
       url: ../test/getting-started-with-unit-testing.md
-    - text: Analiza jakości kodu
+    - text: Analizowanie jakości kodu
       url: ../code-quality/roslyn-analyzers-overview.md
-    - text: Publikowanie witryny sieci Web
+    - text: Publikowanie witryny internetowej
       url: ../deployment/quickstart-deploy-to-a-web-site.md
     - text: Uzyskiwanie dostępu do danych
       url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
@@ -54,7 +54,7 @@ landingContent:
       url: ../ide/quickstart-personalize-the-ide.md
     - text: Funkcje produktywności
       url: ../ide/productivity-features.md
-- title: Programowanie w języku
+- title: Programowanie w swoim języku
   linkLists:
   - linkListType: tutorial
     links:
@@ -70,7 +70,7 @@ landingContent:
       url: /visualstudio/javascript/tutorial-nodejs
     - text: F#
       url: /dotnet/fsharp/get-started/get-started-visual-studio
-- title: Odkryj, co nowego
+- title: Odkrywanie, co nowego
   linkLists:
   - linkListType: whats-new
     links:

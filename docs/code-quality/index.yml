@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Analiza kodu w programie Visual Studio
-summary: Program Visual Studio oferuje kilka różnych narzędzi do analizowania i poprawiania jakości kodu.
+summary: Program Visual Studio zapewnia kilka różnych narzędzi do analizowania i poprawiania jakości kodu.
 metadata:
   title: Analizatory kodu
-  description: Dowiedz się, jak program Visual Studio może pomóc w analizie jakości kodu.
+  description: Dowiedz się, jak program Visual Studio może pomóc w analizowaniu jakości kodu.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -11,21 +11,21 @@ metadata:
   ms.author: jillfra
   ms.date: 10/15/2019
   ms.openlocfilehash: 45be3779e7ed8a625d9029c8eb03a69374c43ae8
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 11/22/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74316361"
 landingContent:
-- title: Analizowanie C i C++ Code
+- title: Analizowanie kodu języka C i C++
   linkLists:
   - linkListType: overview
     links:
-    - text: Analizowanie C i C++ Code
+    - text: Analizowanie kodu języka C i C++
       url: code-analysis-for-c-cpp-overview.md
   - linkListType: reference
     links:
-    - text: C++Ostrzeżenia analizy kodu
+    - text: Ostrzeżenia analizy kodu języka C++
       url: code-analysis-for-c-cpp-warnings.md
 - title: Analizowanie jakości kodu zarządzanego
   linkLists:
@@ -37,7 +37,7 @@ landingContent:
       url: static-code-analysis-for-managed-code-overview.md
   - linkListType: concept
     links:
-    - text: Często zadawane pytania
+    - text: Najczęściej zadawane pytania
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
@@ -45,7 +45,7 @@ landingContent:
       url: install-fxcop-analyzers.md
   - linkListType: reference
     links:
-    - text: Ostrzeżenia analizy kodu zarządzanego
+    - text: Ostrzeżenia analizy zarządzanego kodu
       url: code-analysis-for-managed-code-warnings.md
 - title: Analizowanie stylu kodu zarządzanego
   linkLists:

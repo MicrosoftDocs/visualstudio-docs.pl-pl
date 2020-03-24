@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Dokumentacja narzędzi XAML
-summary: Program Visual Studio udostępnia wiele narzędzi, które ułatwiają tworzenie aplikacji opartych na języku XAML. Obejmują one Edytor XAML i projektanta, a także funkcje debugowania.
+summary: Program Visual Studio udostępnia wiele narzędzi, które ułatwiają tworzenie aplikacji opartych na języku XAML. Obejmują one edytor XAML i projektanta, a także funkcje debugowania.
 metadata:
   title: Dokumentacja narzędzi XAML
-  description: Przejdź do różnych stron, które pomagają dowiedzieć się, jak korzystać z narzędzi XAML w programie Visual Studio.
+  description: Przejdź do różnych stron, z których dowiesz się, jak korzystać z narzędzi XAML w programie Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-designers
   ms.topic: landing-page
@@ -11,25 +11,25 @@ metadata:
   ms.author: jillfra
   ms.date: 10/10/2019
   ms.openlocfilehash: 45f9459ff4778b58ae3d553a03b2e5c1773614b6
-  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
   ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 11/22/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74316413"
 landingContent:
-- title: Informacje o języku XAML
+- title: Dowiedz się więcej o języku XAML
   linkLists:
   - linkListType: overview
     links:
     - text: Przegląd XAML
       url: xaml-overview.md
-- title: Użyj projektant XAML
+- title: Korzystanie z projektanta XAML
   linkLists:
   - linkListType: overview
     links:
     - text: Projektowanie XAML w programie Visual Studio i narzędziu Blend
       url: designing-xaml-in-visual-studio.md
-    - text: Informacje o projektant XAML
+    - text: Informacje o projektancie XAML
       url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
 - title: Debugowanie kodu XAML
   linkLists:
@@ -45,7 +45,7 @@ landingContent:
       url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
     - text: Debugowanie XAML w Blend
       url: debug-xaml-in-blend.md
-- title: Opracowywanie aplikacji WPF
+- title: Tworzenie aplikacji WPF
   linkLists:
   - linkListType: overview
     links:
@@ -53,15 +53,15 @@ landingContent:
       url: ../designers/introduction-to-wpf.md
   - linkListType: get-started
     links:
-    - text: Wprowadzenie do platformy WPF w programie Visual Studio
+    - text: Rozpoczynanie pracy z platformą WPF w programie Visual Studio
       url: ../designers/getting-started-with-wpf.md
 - title: Opracowywanie aplikacji platformy UWP
   linkLists:
   - linkListType: overview
     links:
-    - text: PLATFORMY UWP — Omówienie
+    - text: Omówienie platformy UWP
       url: /windows/uwp/get-started/
   - linkListType: get-started
     links:
-    - text: Wprowadzenie do platformy UWP w programie Visual Studio
+    - text: Rozpoczynanie pracy z platformą UWP w programie Visual Studio
       url: /windows/uwp/get-started/get-set-up

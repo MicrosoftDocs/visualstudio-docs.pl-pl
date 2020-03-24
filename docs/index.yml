@@ -15,10 +15,10 @@ metadata:
   monikerRange: '>=vs-2017'
   hide_bc: true
   ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
-  ms.translationtype: MT
+  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.translationtype: HT
   ms.contentlocale: pl-PL
-  ms.lasthandoff: 11/15/2019
+  ms.lasthandoff: 03/21/2020
   ms.locfileid: "74118954"
 productDirectory:
   items:
@@ -26,7 +26,7 @@ productDirectory:
     imageSrc: ./media/vs-ide-2019.svg
     links:
     - url: /visualstudio/windows?view=vs-2019
-      text: Visual Studio 2019 (bieżący)
+      text: Visual Studio 2019 (bieżąca)
     - url: /visualstudio/windows?view=vs-2017
       text: Visual Studio 2017
     - url: https://docs.microsoft.com/previous-versions/visualstudio/
@@ -39,7 +39,7 @@ productDirectory:
     imageSrc: ./media/vs-mac-2019.svg
     links:
     - url: https://docs.microsoft.com/visualstudio/mac
-      text: Visual Studio 2019 dla komputerów Mac (bieżące)
+      text: Visual Studio 2019 dla komputerów Mac (bieżąca)
     - url: https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2017
       text: Visual Studio 2017 for Mac
     - url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
@@ -68,7 +68,7 @@ productDirectory:
     - url: https://docs.microsoft.com/visualstudio/subscriptions
       text: Dokumentacja
     - url: https://visualstudio.microsoft.com/subscriptions
-      text: Informacje na temat visualstudio.com
+      text: Informacje na temat witryny visualstudio.com
     - url: https://my.visualstudio.com
       text: Portal
     - url: https://manage.visualstudio.com

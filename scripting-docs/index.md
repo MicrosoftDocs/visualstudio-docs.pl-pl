@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Tworzenie aplikacji JavaScript w programie Visual Studio | Dokumentacja firmy Microsoft
-description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji.
+title: Tworzenie aplikacji języka JavaScript w programie Visual Studio | Microsoft Docs
+description: Dowiedz się, jak tworzyć aplikacje za pomocą programu Visual Studio 2017.
 ms.topic: landing-page
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-nodejs
@@ -9,19 +9,19 @@ ms.author: mikejo
 author: mikejo5000
 manager: jillfra
 ms.openlocfilehash: baf650ba27d20424669bbdf47fffdac575f542b4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: MT
+ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 03/21/2020
 ms.locfileid: "65225638"
 ---
 # <a name="javascript-in-visual-studio"></a>Język JavaScript w programie Visual Studio
 
-Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie aplikacji przy użyciu języka JavaScript lub TypeScript.
+Program Visual Studio udostępnia kilka różnych narzędzi, które ułatwiają tworzenie aplikacji przy użyciu języka JavaScript lub TypeScript.
 
 <!-- markdownlint-disable MD033 -->
 
-<h2>Dowiedz się, jak używać języka JavaScript w programie Visual Studio z 5-minutowe Przewodniki Szybki Start</h2>
+<h2>Dowiedz się, jak używać języka JavaScript w programie Visual Studio dzięki 5-minutowym przewodnikom Szybki Start</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -35,7 +35,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie podstawowej aplikacji Node.js</h3>
+                        <h3>Tworzenie podstawowej aplikacji platformy Node.js</h3>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji Vue.js</h3>
+                        <h3>Tworzenie aplikacji platformy Vue.js</h3>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji Universal Windows (UWP)</h3>
+                        <h3>Tworzenie aplikacji uniwersalnej systemu Windows (UWP)</h3>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
     </li>
 </ul>
 
-<h2>Uzyskaj szczegółowe samouczki</h2>
+<h2>Zapoznaj się bliżej z samouczkami</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -94,7 +94,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji z platformą ASP.NET i AngularJS</h3>
+                        <h3>Tworzenie aplikacji za pomocą platformy ASP.NET i AngularJS</h3>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Tworzenie aplikacji przy użyciu Apache Cordova</h3>
+                        <h3>Tworzenie aplikacji przy użyciu platformy Apache Cordova</h3>
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Interfejsy skryptów Windows (archiwum)</h3>
+                        <h3>Interfejsy skryptów systemu Windows (archiwum)</h3>
                     </div>
                 </div>
             </div>
@@ -219,7 +219,7 @@ Visual Studio zawiera kilka różnych narzędzi, które ułatwiają tworzenie ap
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Język JScript i VBScript (archiwum)</h3>
+                        <h3>JScript i VBScript (archiwum)</h3>
                     </div>
                 </div>
             </div>
