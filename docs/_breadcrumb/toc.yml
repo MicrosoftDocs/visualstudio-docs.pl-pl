@@ -47,7 +47,7 @@
                   topicHref: /visualstudio/profiling/index
                 - name: Testowanie
                   tocHref: /visualstudio/test/
-                  topicHref: /visualstudio/test/improve-code-quality
+                  topicHref: /visualstudio/test/index
                 - name: Projektant przepływów pracy
                   tocHref: /visualstudio/workflow-designer/
                   topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
