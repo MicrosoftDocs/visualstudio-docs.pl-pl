@@ -2,7 +2,7 @@
 title: Instalowanie narzędzi kompilacji programu Visual Studio w kontenerze
 titleSuffix: ''
 description: Dowiedz się, jak zainstalować narzędzia kompilacji programu Visual Studio w kontenerze systemu Windows w celu obsługi ciągłej integracji i ciągłego dostarczania (CI/CD).
-ms.date: 07/03/2019
+ms.date: 03/25/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 53049d37f23a72adb337cdad629f4c689c83707e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114604"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273897"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalowanie narzędzi kompilacji w kontenerze
 
@@ -71,22 +71,24 @@ Zapisz poniższy przykład Dockerfile do nowego pliku na dysku. Jeśli plik nosi
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Install Build Tools excluding workloads and components with known issues.
+   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
    RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
-       --all `
+       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
        --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
-   # Start developer command prompt with any other commands specified.
-   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
-
-   # Default to PowerShell if no other command specified.
-   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   # Define the entry point for the Docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
+
+   > [!TIP]
+   > Aby uzyskać listę obciążeń i składników, zobacz [katalog składników Narzędzia kompilacji programu Visual Studio](workload-component-id-vs-build-tools.md).
+   >
 
    > [!WARNING]
    > Jeśli obraz jest podstawą bezpośrednio na microsoft/windowsservercore lub mcr.microsoft.com/windows/servercore (zobacz [katalog kontenerów syndykatów firmy Microsoft), program](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/).NET Framework może nie zostać poprawnie zainstalowany i nie zostanie wskazany błąd instalacji. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego oprzeć obraz na [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszych. Należy również pamiętać, że obrazy oznaczone w wersji 4.7.2 lub `SHELL`nowszej `RUN` mogą `ENTRYPOINT` używać programu PowerShell jako domyślnego programu PowerShell, co spowoduje niepowodzenie i instrukcje.
@@ -94,7 +96,7 @@ Zapisz poniższy przykład Dockerfile do nowego pliku na dysku. Jeśli plik nosi
    > Visual Studio 2017 w wersji 15.8 lub wcześniejszej (dowolny produkt) nie zostanie poprawnie zainstalowany w mcr.microsoft.com/windows/servercore:1809 lub nowszych. Nie jest wyświetlany żaden błąd.
    >
    > Zobacz [zgodność wersji kontenera systemu Windows,](/virtualization/windowscontainers/deploy-containers/version-compatibility) aby zobaczyć, które wersje systemu operacyjnego kontenera są obsługiwane na których wersjach systemu operacyjnego hosta i [znane problemy dla kontenerów](build-tools-container-issues.md) znanych problemów.
-
+   
    ::: moniker-end
 
    ::: moniker range="vs-2019"
@@ -111,22 +113,24 @@ Zapisz poniższy przykład Dockerfile do nowego pliku na dysku. Jeśli plik nosi
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Install Build Tools excluding workloads and components with known issues.
+   # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
    RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
        --installPath C:\BuildTools `
-       --all `
+       --add Microsoft.VisualStudio.Workload.AzureBuildTools `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
        --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
-   # Start developer command prompt with any other commands specified.
-   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
-
-   # Default to PowerShell if no other command specified.
-   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   # Define the entry point for the docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
+
+   > [!TIP]
+   > Aby uzyskać listę obciążeń i składników, zobacz [katalog składników Narzędzia kompilacji programu Visual Studio](workload-component-id-vs-build-tools.md).
+   >
 
    > [!WARNING]
    > Jeśli obraz jest podstawą bezpośrednio na microsoft/windowsservercore, program .NET Framework może nie zostać poprawnie zainstalowany i nie jest wskazany błąd instalacji. Kod zarządzany może nie działać po zakończeniu instalacji. Zamiast tego oprzeć obraz na [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) lub nowszym. Należy również pamiętać, że obrazy oznaczone w wersji 4.8 lub `SHELL`nowszej `RUN` mogą `ENTRYPOINT` używać programu PowerShell jako domyślnego , co spowoduje niepowodzenie i instrukcje.
@@ -189,6 +193,15 @@ Teraz, gdy utworzono obraz, można go uruchomić w kontenerze, aby wykonać zar�
    ::: moniker-end
 
 Aby użyć tego obrazu dla przepływu pracy ciągłej integracji/ciągłego wdrażania, można opublikować go we własnym [rejestrze kontenerów platformy Azure](https://azure.microsoft.com/services/container-registry) lub innym wewnętrznym [rejestrze platformy Docker,](https://docs.docker.com/registry/deploying) aby serwery musiały go tylko pobierać.
+
+   > [!NOTE]
+   > Jeśli uruchomienie kontenera platformy Docker nie powiedzie się, prawdopodobnie wystąpi problem z instalacją programu Visual Studio. Można zaktualizować Dockerfile, aby usunąć krok, który wywołuje polecenie wsadowe programu Visual Studio. Dzięki temu można uruchomić kontener platformy Docker i odczytać dzienniki błędów instalacji.
+   >
+   > W pliku Dockerfile usuń `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` parametry i `ENTRYPOINT` parametry z polecenia. Polecenie powinno być `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`teraz . Następnie odbuduj plik Dockerfile i wykonaj polecenie, `run` aby uzyskać dostęp do plików kontenera. Aby zlokalizować dzienniki błędów `$env:TEMP` instalacji, przejdź `dd_setup_<timestamp>_errors.log` do katalogu i znajdź plik.
+   >
+   > Po zidentyfikowaniu i rozwiązaniu problemu `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` z `&&` instalacją `ENTRYPOINT` można dodać parametry i parametry z powrotem do polecenia i odbudować plik Dockerfile.
+   >
+   > Aby uzyskać więcej informacji, zobacz [Znane problemy dla kontenerów](build-tools-container-issues.md).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

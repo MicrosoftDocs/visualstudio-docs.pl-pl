@@ -3,15 +3,16 @@ title: Problemy z logowaniem się do subskrypcji programu Visual Studio | Dokume
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o problemach, które mogą pojawić się podczas logowania się do subskrypcji programu Visual Studio
-ms.openlocfilehash: 8175a1d8d2c79aecad25952eebdf734e0a9d29d2
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: de27f64f1d5c83ed01a1e561f4921dbed53c479c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79509021"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233244"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemy z logowaniem się do subskrypcji programu Visual Studio
 Aby korzystać z subskrypcji programu Visual Studio, należy najpierw się zalogować.  W zależności od subskrypcji być może skonfigurowano ją przy określaniu tożsamości konta Microsoft (MSA) lub usługi Azure Active Directory (AAD).  W tym artykule omówiono niektóre problemy, które mogą wystąpić podczas logowania się do subskrypcji.

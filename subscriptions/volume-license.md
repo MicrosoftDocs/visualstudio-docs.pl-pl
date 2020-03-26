@@ -1,17 +1,18 @@
 ---
 title: Uzyskiwanie dostępu do portalu administracyjnego dla klientów korzystających z licencji zbiorczej | Dokumenty firmy Microsoft
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak administratorzy umów licencji zbiorczej mogą uzyskiwać dostęp do portalu administracyjnego subskrypcji programu Visual Studio
-ms.openlocfilehash: f0907d7fb6d2bf3e740efdae32c77754217f6afb
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78408906"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233141"
 ---
 # <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Uzyskiwanie dostępu do portalu administracyjnego jako administrator w umowie licencji zbiorczej
 
@@ -24,7 +25,7 @@ Po zalogowaniu się zostaniesz automatycznie skonfigurowany jako superadministra
 
 Dotyczy to wszystkich typów umów licencjonowania zbiorowego, w tym między innymi: umów Enterprise Agreement, Enterprise, Subskrypcji Enterprise, Wybierz, Wybierz Plus, Otwarte, Licencji Otwartych, Govt. i umów akademickich. 
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Zobacz też

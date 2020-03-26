@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75929238"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256195"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mierzenie użycia pamięci w programie Visual Studio
 
@@ -117,7 +117,7 @@ Aby przeanalizować użycie pamięci, kliknij jedno z łączy, które otwiera sz
 
  Górne okienko pokazuje liczbę i rozmiar typów w migawce, w tym rozmiar wszystkich obiektów, do których odwołuje się typ **(Rozmiar włącznie).**
 
- Drzewo **Ścieżki do katalogu głównego** w dolnym okienku wyświetla obiekty odwołują się do typu wybranego w górnym okienku. Moduł zbierający elementy bezużyteczne .NET Framework czyści pamięć dla obiektu tylko wtedy, gdy ostatni typ, który odwołuje się do niego został zwolniony.
+ Drzewo **Ścieżki do katalogu głównego** w dolnym okienku wyświetla obiekty odwołują się do typu wybranego w górnym okienku. Moduł odśmiecania pamięci .NET czyści pamięć dla obiektu tylko wtedy, gdy ostatni typ, który odwołuje się do niego został zwolniony.
 
  Drzewo **Obiekty odniesienia** wyświetla odwołania, które są utrzymywane przez typ wybrany w górnym okienku.
 

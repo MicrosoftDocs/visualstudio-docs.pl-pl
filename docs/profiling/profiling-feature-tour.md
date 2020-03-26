@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688a446fbbaf1c2c56b9304576224a70f71064d8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550114"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233096"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki start: pierwsze spojrzenie na narzędzia profilowania
 
@@ -74,9 +74,9 @@ Porady dotyczące programów zapewniają te same zdarzenia, które również są
 
 ## <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 
-Okno **Narzędzia diagnostyczne** umożliwia również ocenę użycia pamięci w aplikacji. Na przykład można spojrzeć na liczbę i rozmiar obiektów na stercie. Aby uzyskać bardziej szczegółowe instrukcje dotyczące analizowania pamięci, zobacz [Analizowanie użycia pamięci](../profiling/memory-usage.md).
+Okno **Narzędzia diagnostyczne** umożliwia również ocenę użycia pamięci w aplikacji za pomocą narzędzia **Użycie pamięci.** Na przykład można spojrzeć na liczbę i rozmiar obiektów na stercie. Aby uzyskać bardziej szczegółowe instrukcje dotyczące analizowania pamięci, zobacz [Analizowanie użycia pamięci](../profiling/memory-usage.md). Inne narzędzie do analizy pamięci, [narzędzie .NET Object Allocation,](../profiling/dotnet-alloc-tool.md)pomaga zidentyfikować wzorce alokacji i anomalie w kodzie platformy .NET.
 
-Aby analizować użycie pamięci podczas debugowania, należy wykonać co najmniej jedną migawkę pamięci. Często najlepszym sposobem analizowania pamięci jest podjęcie dwóch migawek; pierwsze prawo przed podejrzewanym problemem z pamięcią, a drugie migawka zaraz po wystąpieniu podejrzewanego problemu z pamięcią. Następnie można wyświetlić różnice z dwóch migawek i zobaczyć dokładnie, co się zmieniło.
+Aby przeanalizować użycie pamięci za pomocą użycia pamięci zintegrowanej z debugerem, należy wykonać co najmniej jedną migawkę pamięci. Często najlepszym sposobem analizowania pamięci jest podjęcie dwóch migawek; pierwsze prawo przed podejrzewanym problemem z pamięcią, a drugie migawka zaraz po wystąpieniu podejrzewanego problemu z pamięcią. Następnie można wyświetlić różnice z dwóch migawek i zobaczyć dokładnie, co się zmieniło.
 
 ![Tworzenie migawki w narzędziach diagnostycznych](../profiling/media/prof-tour-take-snapshots.gif "Narzędzia diagnostyczne do robienia zdjęć")
 

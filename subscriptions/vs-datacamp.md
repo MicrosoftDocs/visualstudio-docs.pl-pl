@@ -1,17 +1,18 @@
 ---
 title: Zwiększ swoje umiejętności nauki o danych już dziś dzięki korzyści DataCamp w wybranych subskrypcjach programu Visual Studio. | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/13/2019
+ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
+ms.date: 03/25/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o subskrypcji szkoleniowej DataCamp dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 0b5aa20667728847afc83c77401f8651cbad106d
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74706881"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273988"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkoleniowe DataCamp w subskrypcjach programu Visual Studio
 Kwalifikujące się subskrypcje programu Visual Studio obejmują subskrypcje usługi DataCamp.  Dzięki DataCamp możesz nauczyć się wszystkich umiejętności nauki o danych, których potrzebujesz, w zaciszu przeglądarki. Możesz wybrać, kiedy i czego się uczysz. Bez oprogramowania do zainstalowania i bez specjalnych wymagań sprzętowych, nauka nauki o danych jest łatwiejsza niż kiedykolwiek.
@@ -82,10 +83,15 @@ Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Następne kroki
 Sprawdź więcej możliwości rozwoju zawodowego w subskrypcji:
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-
 
 Jeśli nie aktywowałeś jeszcze indywidualnej korzyści kredytowej usługi Azure DevTest, która pochodzi z subskrypcji, odwiedź [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) i kliknij kafelek Platformy Azure w kategorii Narzędzia, aby skonfigurować subskrypcję platformy Azure i zrealizować indywidualny kredyt usługi Azure DevTest.

@@ -1,17 +1,18 @@
 ---
 title: Często zadawane pytania dotyczące rozliczeń dla subskrypcji w chmurze programu Visual Studio Enterprise i Visual Studio Professional
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Pytania dotyczące rozliczeń dotyczących subskrypcji w chmurze.
-ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a9845078a17425322dfd86bf417daa24238c7b0f
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75851408"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273832"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Często zadawane pytania dotyczące rozliczeń subskrypcji w chmurze programu Visual Studio
 Upewnij się, że [porównaj korzyści z subskrypcji w chmurze i ceny,](https://visualstudio.microsoft.com/vs/pricing/) aby zrozumieć zalety każdej subskrypcji programu Visual Studio, z porównaniami między subskrypcjami w chmurze i standardowymi programami Visual Studio, szczegółami dotyczącymi korzyści dla subskrybentów i nie tylko.
@@ -94,6 +95,12 @@ O: Tak, możesz, jeśli twój sprzedawca uczestniczy w programie Dostawcy rozwi�
 - [Portal administrowania subskrypcjami programu Visual Studio](https://manage.visualstudio.com/)
 - [Pomoc techniczna w ramach subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Zakup subskrypcji w chmurze programu Visual Studio dla dostawców usług skrypcyjnych](vscloud-csp.md)
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Kup subskrypcje w chmurze już teraz

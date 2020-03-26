@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 03/18/2020
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować indywidualną korzyść kredytową usługi Azure DevTest zawartą w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 8c7f8d2d79655c9bdd33827dc3ae2e48dc51b853
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 8cf79c9f4ce9230195e2fdbf551320c3532ad42d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79508969"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232034"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Korzystanie z platformy Microsoft Azure w ramach subskrypcji programu Visual Studio
 Jako subskrybent programu Visual Studio możesz bezpłatnie korzystać z platformy Microsoft Azure.  Dzięki [comiesięcznemu indywidualnej sprzece azure devtest](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)platforma Azure to twój osobisty piaskownica do tworzenia/testowania.  Można aprowizować maszyny wirtualne, usługi w chmurze i inne zasoby platformy Azure.  Kwoty kredytów różnią się w zależności od poziomu subskrypcji.
@@ -112,6 +112,12 @@ Jeśli uważasz, że otrzymałeś tę wiadomość e-mail omyłkowo, skontaktuj s
   - [Porady dotyczące platformy Azure & sztuczki](https://microsoft.github.io/AzureTipsAndTricks/ "Porady dotyczące platformy Azure & sztuczki") 
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać więcej informacji na temat narzędzi i usług firmy Microsoft, zapoznaj się z dokumentacją:

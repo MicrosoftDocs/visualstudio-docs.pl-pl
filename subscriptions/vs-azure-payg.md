@@ -1,17 +1,18 @@
 ---
 title: Korzyści dla usługi Azure PAYG
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Dowiedz się, jak skonfigurować konto usługi Azure Pay-As-You-Go.
-ms.openlocfilehash: 23ea1f76fabfa2e9240e040e879f3a497b36f4c3
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b05f8a051a47d150b1c6670c54941820fcc73c47
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79550322"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80231985"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Subskrypcje płatności zgodnie z rzeczywistymi usługami Dewelopertest platformy Azure
 Współpracuj z zespołem w chmurze.  Tworzenie wielu deweloperów i testowania subskrypcji płatności zgodnie z rzeczywistymi przyuśmiakami, umożliwiając współpracę z innymi subskrybentami, zapewniając jednocześnie izolację między zespołami i środowiskami.  Otrzymujesz ekskluzywne zniżki stawek godzinowych za prawa do tworzenia/testowania i korzystania z chmury dla oprogramowania subskrypcyjnego na platformie Azure.

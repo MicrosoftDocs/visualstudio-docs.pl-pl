@@ -3,15 +3,16 @@ title: Śledzenie przypisań użytkowników i zamówień procesowych | Visual St
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o odpowiedzialności administratorów do śledzenia przypisań użytkowników i przetwarzania zamówień.
-ms.openlocfilehash: c7dc2b55b3e9d1d1aea6b2712dbeb96316f48e7a
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78235228"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232698"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Śledzenie przymierzeń i przetwarzania zamówień użytkowników
 Oczekuje się, że administratorzy subskrypcji programu Visual Studio będą śledzić użycie programu Visual Studio i przetwarzać zamówienia pod kątem wszelkich wzrostów użycia zgodnie z harmonogramem opisanym w umowie licencjonowania zbiorowego lub umowie dotyczącej produktów i usług firmy Microsoft. Nowy portal administracji subskrypcjami programu Visual Studio ułatwił to dzięki przydatnemu modułowi śledzącemu przedstawiającemu dostępne i używane licencje.

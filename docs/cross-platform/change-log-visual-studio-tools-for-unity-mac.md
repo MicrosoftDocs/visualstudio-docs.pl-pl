@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5599153f79b273249e93c48aaa197214d92f5fe7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771546"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232916"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Dziennik zmian (narzędzia Visual Studio Tools for Unity, komputery Mac)
 
 Visual Studio Narzędzia dla dziennika zmian Unity.
+
+## <a name="2520"></a>2.5.2.0
+
+Wydano 23 marca 2020 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Debuger:**
+
+  - Poprawiono rejestrację wątków po dołączeniu.
+
+## <a name="2510"></a>2.5.1.0
+
+Wydano 3 marca 2020 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracji:**
+
+  - Dodano tłumik [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0008.md)dla . Prywatne metody używane z Invoke, InvokeRepeating, StartCoroutine lub StopCoroutine nie powinny być oznaczone jako nieużywane.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracji:**
+
+  - Poprawiono ondrawgizmos/ondrawgizmosWybrana dokumentacja
+
+- **Oceny:**
+
+  - Poprawiono kontrolę argumentów lambda.
+
+## <a name="2501"></a>2.5.0.1
+
+Wydana 19 lutego 2020 r.
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracji:**
+
+  - Poprawiono [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/UNT0006.md) sprawdzanie diagnostyczne pod kątem nieprawidłowego podpisu wiadomości. Podczas sprawdzania typów z wieloma poziomami dziedziczenia ta `warning AD0001: Analyzer 'Microsoft.Unity.Analyzers.MessageSignatureAnalyzer' threw an exception of type 'System.ArgumentException' with message 'An item with the same key has already been added`diagnostyka może zakończyć się niepowodzeniem, korzystając z następującego komunikatu: .
+
+## <a name="2500"></a>2.5.0.0
+
+Wydano 22 stycznia 2020 r.
+
+### <a name="new-features"></a>Nowe funkcje
+
+- **Integracji:**
+
+  - Dodano obsługę plików HLSL.
+  
+  - Przełączony do nowego interfejsu użytkownika okna dialogowego folderu.
+  
+  - Przełączony do nowej siatki właściwości dostępne dla ustawień.
+
+  - Dodano tłumik [`IDE0051`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0006.md)dla . Pola prywatne `SerializeField` z atrybutem nie powinny być oznaczane jako nieużywane.
+
+  - Dodano tłumik [`CS0649`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/USP0007.md)dla . Pola z `SerializeField` atrybutem nie powinny być oznaczone jako nieprzypisane.  
+
+### <a name="bug-fixes"></a>Poprawki błędów
+
+- **Integracji:**
+
+  - Stałe generowanie`GenerateTargetFrameworkMonikerAttribute` projektu (cel nie zawsze znajdował się poprawnie)
+
+- **Oceny:**
+
+  - Poprawiono ocenę ciągu (nie używanie wywołań ToString()
 
 ## <a name="2420"></a>2.4.2.0
 

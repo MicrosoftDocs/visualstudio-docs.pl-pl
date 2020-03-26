@@ -1,17 +1,18 @@
 ---
 title: Zakup subskrypcji w chmurze programu Visual Studio dla dostawców usług skrypcyjnych
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informacje dla dostawców rozwiązań w chmurze dotyczące kupowania subskrypcji w chmurze programu Visual Studio i zarządzania nimi dla klientów.
-ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75851400"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273871"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kupowanie subskrypcji w chmurze programu Visual Studio i zarządzanie nimi dla klientów
 Partnerzy programu [Dostawcy rozwiązań w chmurze (CSP)](https://partner.microsoft.com/cloud-solution-provider) mogą kupować subskrypcje w chmurze programów Visual Studio Enterprise i Visual Studio Professional dla swoich klientów.
@@ -105,3 +106,11 @@ Odp.: Nie, ceny subskrypcji programu Visual Studio są płaskie. Ta sama cena je
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Pyt.: Czy istnieją opcje cen deweloperskich/testowych platformy Azure dla dostawców usług CSP?
 O: Nie w tej chwili. Twoi klienci mogą korzystać z [cen deweloperskich/testowych platformy Azure,](https://azure.microsoft.com/pricing/dev-test/)ale nie mamy nic specjalnie dla dostawców usług CSP.
 
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Następne kroki
+Odpowiedzi na często zadawane pytania dotyczące [rozliczeń w chmurze.](vscloud-billing-faq.md)  

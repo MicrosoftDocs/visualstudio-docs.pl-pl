@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 5a1c449a77e3000205ee81f5414949743b6035c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77272262"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232944"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps z aplikacjami Unity
 
@@ -93,7 +93,7 @@ Szczególne uwagi dotyczące kontroli wersji z Unity:
 |Testowanie ręczne|Tak||
 |Menedżer testów (testy rekordów i odtwarzania)|Tylko urządzenia z systemem Windows i emulatory systemu Android||
 |Pokrycie kodu|Nie dotyczy|Nie dotyczy testowania jednostkowego w ramach unity, a nie visual studio, zobacz poniżej.|
-|[Jednostka przetestować swój kod](../test/unit-test-your-code.md)|W ramach unity, ale nie visual studio|Unity zapewnia własną strukturę testów jednostkowych jako część [narzędzi testowych Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). Wyniki testów jednostkowych są zgłaszane w ramach unity i nie zostaną przedstawione w programie Visual Studio.|
+|[Jednostka przetestować swój kod](../test/unit-test-your-code.md)|W ramach unity, ale nie visual studio|Unity zapewnia własną strukturę testów jednostkowych jako część [narzędzi testowych Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Wyniki testów jednostkowych są zgłaszane w ramach unity i nie zostaną przedstawione w programie Visual Studio.|
 |[Użyj automatyzacji interfejsu użytkownika, aby przetestować kod](../test/use-ui-automation-to-test-your-code.md)|Nie|Kodowane testy interfejsu użytkownika opierają się na czytelnych formantów w interfejsie użytkownika aplikacji; Aplikacje Unity mają charakter graficzny, a więc zawartość nie jest czytelna za pomocą narzędzi testowych kodowany interfejs użytkownika.|
 
 ## <a name="improve-code-quality"></a>Poprawa jakości kodu
@@ -124,4 +124,4 @@ Link referencyjny: ** [Monitoruj za pomocą Aplikacji HockeyApp](https://www.hoc
 
 |Funkcja|Obsługiwane przez Unity|Dodatkowe komentarze|
 |-------------|--------------------------|-------------------------|
-|Analiza awarii, telemetria i dystrybucja wersji beta|Tak|HockeyApp jest przede wszystkim przydatny do obsługi dystrybucji beta i uzyskiwania raportów o awariach.<br /><br /> W przypadku danych telemetrycznych ze skryptów języka C# można użyć dowolnej struktury analizy, pod warunkiem, że jest uruchamiana w wersji platformy .NET, która jest używana przez unity. Pozwala to jednak na analizę tylko w skryptach gry, a nie głębiej wewnątrz aparatu Unity. Obecnie nie ma wtyczki do Application Insights, ale wtyczki są dostępne dla innych rozwiązań analitycznych, takich jak [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) i [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Usługi takie jak Unity Analytics, które rozumieją charakter projektu Unity, będą oczywiście dostarczać znacznie bardziej znaczącą analizę niż ogólne struktury.|
+|Analiza awarii, telemetria i dystrybucja wersji beta|Tak|HockeyApp jest przede wszystkim przydatny do obsługi dystrybucji beta i uzyskiwania raportów o awariach.<br /><br /> W przypadku danych telemetrycznych ze skryptów języka C# można użyć dowolnej struktury analizy, pod warunkiem, że jest uruchamiana w wersji platformy .NET, która jest używana przez unity. Pozwala to jednak na analizę tylko w skryptach gry, a nie głębiej wewnątrz aparatu Unity. Obecnie nie ma wtyczki do Application Insights, ale wtyczki są dostępne dla innych rozwiązań analitycznych, takich jak [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) i [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Usługi takie jak Unity Analytics, które rozumieją charakter projektu Unity, będą oczywiście dostarczać znacznie bardziej znaczącą analizę niż ogólne struktury.|

@@ -3,15 +3,16 @@ title: Role superadministratorów i administratorów w portalu administracyjnym
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o rolach superadministratora i administratora oraz o przypisywaniu administratorów.
-ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: ce76a2aaf970926d171086e65ba2d364e1526d61
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78234836"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232751"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Super administratorzy i administratorzy umów subskrypcji programu Visual Studio
 
@@ -37,7 +38,7 @@ Aby przypisać nowych administratorów (administratorów):
 
 5. Po **kliknięciu przycisku Dodaj,** aby przypisać nowego administratora, otrzymają oni wiadomość e-mail z zaproszeniem do zalogowania się do portalu.  
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Zobacz też

@@ -3,15 +3,16 @@ title: Korzystanie z funkcji Maksymalne użycie w portalu administracyjnym
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak wyświetlić maksymalną liczbę przypisanych subskrypcji w portalu administracyjnym
-ms.openlocfilehash: 9d9aa2d83a84fcdecf1749e3730d43dabf7bd52d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 3f62c251262bc16f8f214c6f7bcc22674c7430b2
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78410311"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232271"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Funkcja maksymalnego użycia umożliwia śledzenie liczby przypisanych subskrypcji
 Nowa funkcja w portalu administracyjnym subskrypcji programu Visual Studio pomaga śledzić liczbę zakupionych i przypisanych subskrypcji oraz określa szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i w całym okresie. okresu obowiązywania umowy(-ów). 
@@ -36,7 +37,7 @@ Dla każdego poziomu subskrypcji raport zawiera datę osiągnięcia nowego maksy
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>Pyt.: Czym różnią się informacje w maksymalnym użyciu od informacji o przydziałach dostępnych w sekcji "Przegląd" po lewej stronie portalu?
 Odp.: Informacje w przeglądzie pokazują *bieżące* przypisania i dostępne subskrypcje dla każdego poziomu subskrypcji.  Może to bardzo różnić się od maksymalnej liczby subskrypcji przypisanych do umowy w bieżącym roku lub w okresie użytkowania umowy.  Funkcja maksymalnego użycia pozwala zobaczyć, kiedy osiągnięto maksymalne poziomy przydziałów i jakie były poziomy.  Jest to ważne rozróżnienie, ponieważ rozliczenia za subskrypcje w okresie true-up opiera się na maksymalnej liczbie subskrypcji przypisanych w dowolnym momencie przez cały rok. 
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Postanowienia licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)

@@ -1,17 +1,18 @@
 ---
 title: Wprowadzenie do portalu zarządzania subskrypcjami | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak rozpocząć zarządzanie subskrypcjami programu Visual Studio w organizacji za pomocą portalu administracyjnego subskrypcji.
-ms.openlocfilehash: cc8a815317f46e01260f38e3ba974f89d928e49a
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 295bcd62efde8c24689c40e39ecef895e6a082c7
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78408946"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233168"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Omówienie portalu administratora subskrypcji programu Visual Studio
 
@@ -48,7 +49,7 @@ Aby uzyskać więcej informacji na temat przeglądanych umów, wybierz drugą ik
 > [!div class="mx-imgBorder"]
 > ![Strona szczegółów portalu administracyjnego subskrypcji programu Visual Studio](_img/using-admin-portal/details-page.png)
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Oficjalny dokument dotyczący licencjonowana programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Porównanie opcji i cen subskrypcji](https://visualstudio.microsoft.com/vs/pricing)
 - [Porównanie funkcji programu Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare)

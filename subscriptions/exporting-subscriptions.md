@@ -3,15 +3,16 @@ title: Eksportowanie informacji o subskrypcji | Dokumenty firmy Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak wyeksportować listę subskrybentów i szczegóły ich przydziałów subskrypcji.
-ms.openlocfilehash: a7e6f6040daca541a689f1e4ad6297e17014dbed
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: dd24e9deb6225b3a8b88a461904fefb42ba4a912
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263226"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232499"
 ---
 # <a name="export-subscription-information"></a>Eksportowanie informacji o subskrypcji
 W [portalu administracyjnym](https://manage.visualstudio.com)subskrypcji programu Visual Studio można wyeksportować listę subskrybentów i szczegółowe informacje o ich przypisaniach. Informacje te obejmują ich nazwę, adres e-mail, alternatywny adres e-mail, poziom subskrypcji, przypisaną datę, stan aktywacji, datę wygaśnięcia, pole odwołania, czy pliki do pobrania są włączone, kraj, język, stan subskrypcji i subskrypcję Identyfikator guid.  Lista jest eksportowana jako plik CSV, który można łatwo otworzyć w programie Microsoft Excel w celu tworzenia wykresów, przestawianych i innych artefaktów.

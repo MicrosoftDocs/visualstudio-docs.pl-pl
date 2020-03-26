@@ -3,15 +3,16 @@ title: Skontaktuj się z administratorem subskrypcji z poziomu portalu subskrybe
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 03/07/2020
 ms.topic: conceptual
 description: Dowiedz się, jak skontaktować się z administratorem subskrypcji, aby uzyskać pomoc dotyczącą pytań lub problemów.
-ms.openlocfilehash: 20122b94d59b7b2c3fbe437531cd439341e6b2dd
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: b203feee61bf44af99ea802992e1fdc3c416c037
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78937539"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232635"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Uzyskaj pomoc od administratora subskrypcji
 Jeśli subskrypcja programu Visual Studio jest dostarczana przez twoją pracę lub szkołę, istnieje prawdopodobieństwo, że została przypisana przez administratora subskrypcji lub "administratora".  Administratorzy mogą przypisywać lub usuwać subskrypcje, zmieniać adresy e-mail logowania, określać, czy masz możliwość pobierania oprogramowania, oraz wykonywać inne funkcje związane z subskrypcją.
@@ -31,7 +32,7 @@ Biorąc pod uwagę rozmiar i złożoność wielu organizacji, możesz nie być �
 > [!NOTE]
 > **Super admini:**  Aby ustawić adres e-mail, na który wysyłane są żądania "Skontaktuj się z administratorem", określ ten adres w [preferencjach umowy](admin-prefs.md#contact-email-address).
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Zobacz też

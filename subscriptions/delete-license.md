@@ -3,15 +3,16 @@ title: Usuwanie przypisań subskrypcji w portalu administracyjnym subskrypcji pr
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Dowiedz się, jak administratorzy mogą usuwać przypisania subskrypcji
-ms.openlocfilehash: 6ed64f5c05f77bea7f157eee9e29bbb05aa8730d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: a884cb56b9c04558023659317ecce2d06a8ec54d
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78263252"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232540"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Usuwanie przydziałów w subskrypcjach programu Visual Studio
 Gdy subskrybent nie wymaga już subskrypcji programu Visual Studio, na przykład po opuszczeniu firmy, ukończeniu projektu lub przełączeniu się do nowej roli zadania, można usunąć ich subskrypcję i przypisać ją innej osobie. Należy pamiętać, że po ponownym przydzieleniu subskrypcji nie wszystkie korzyści dla subskrybentów zostaną zresetowane.  Nowy użytkownik będzie mógł ubiegać się o nieodebrane klucze i wyświetlać wcześniej odebrane klucze, ale limity oświadczeń **nie** są resetowane.  W przypadku organizacji, które mają umowy Enterprise Agreement (EA), wszelkie korzyści, które były używane przez pierwotnego użytkownika, takie jak szkolenie Pluralsight, zostaną zresetowane. 

@@ -1,17 +1,18 @@
 ---
 title: Jak kupić subskrypcje w chmurze programu Visual Studio
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/28/2019
+ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Wynajmij program Visual Studio Professional lub Visual Studio Enterprise z miesiąca na miesiąc lub w skali roku, bez umowy długoterminowej.
-ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: babf05c991bd323f2ebe2385085a1d9fc3b1acf8
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "71962949"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80273949"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupowanie subskrypcji w chmurze programów Visual Studio Professional i Visual Studio Enterprise
 [Subskrypcje programów Visual Studio Professional i Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) można kupić w portalu Visual Studio [Marketplace.](https://marketplace.visualstudio.com) Są one nazywane **"subskrypcjami w chmurze".**
@@ -118,6 +119,12 @@ Odp.: Mimo że nie będą mogli kupić innej rocznej subskrypcji w chmurze, istn
 - [Pomoc techniczna w ramach subskrypcji programu Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Często zadawane pytania dotyczące rozliczeń subskrypcji w chmurze programu Visual Studio](vscloud-billing-faq.md)
 - [Zakup subskrypcji w chmurze programu Visual Studio dla dostawców usług skrypcyjnych](vscloud-csp.md)
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Kupowanie subskrypcji w chmurze

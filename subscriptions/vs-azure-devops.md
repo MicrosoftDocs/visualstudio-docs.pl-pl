@@ -1,17 +1,18 @@
 ---
 title: Korzyści z usługi Azure DevOps dla subskrybentów programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 07/30/2019
+ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
+ms.date: 03/24/2020
 ms.topic: conceptual
 description: Dowiedz się, jak można używać usługi Azure DevOps jako subskrybenta programu Visual Studio.
-ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79303310"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232041"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści dotyczące usługi Azure DevOps dla subskrybentów programu Visual Studio
 Jako aktywny subskrybent programu Visual Studio można użyć szeregu funkcji w usłudze Azure DevOps, które są dołączone do subskrypcji jako korzyści. Te same funkcje będą mogły korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy organizacja została utworzona, czy została dodana przez inną osobę.
@@ -45,6 +46,12 @@ Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przyp
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, usługi Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Dokumentacja usługi Azure DevOps](/azure/devops/).
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o funkcjach programu Azure DevOps:

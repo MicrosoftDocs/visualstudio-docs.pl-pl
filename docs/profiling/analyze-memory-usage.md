@@ -8,22 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 43126f4bba8afc50fc5c1e4cf6a3b9a67c6f340c
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578162"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233061"
 ---
 # <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 
-aby znaleźć przecieki pamięci i nieefektywne użycie pamięci, można użyć narzędzi, takich jak narzędzie diagnostyczne użycia pamięci zintegrowane z debugerem lub narzędzia w programie Performance Profiler, takie jak narzędzie .NET Object Allocation i narzędzie pośmiertne Użycie pamięci. Narzędzie Użycie pamięci umożliwia podjęcie co najmniej jednej *migawki* zarządzanej i natywnej sterty pamięci. Można zbierać migawki aplikacji .NET, ASP.NET, natywnych lub mieszanych (NET i natywnych). 
+aby znaleźć przecieki pamięci i nieefektywne użycie pamięci, można użyć narzędzi, takich jak narzędzie diagnostyczne użycia pamięci zintegrowane z debugerem lub narzędzia w programie Performance Profiler, takie jak narzędzie .NET Object Allocation i narzędzie pośmiertne Użycie pamięci.
 
-Narzędzie **Użycie pamięci** można uruchomić w otwartym projekcie programu Visual Studio, w zainstalowanej aplikacji Microsoft Store lub dołączone do uruchomionej aplikacji lub procesu. Narzędzie można uruchomić na komputerach lokalnych lub zdalnych lub na symulatorze lub emulatorze. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Narzędzie Użycie pamięci umożliwia podjęcie co najmniej jednej *migawki* zarządzanej i natywnej sterty pamięci. Można zbierać migawki aplikacji .NET, ASP.NET, natywnych lub mieszanych (NET i natywnych). Narzędzie **Użycie pamięci** można uruchomić w otwartym projekcie programu Visual Studio, w zainstalowanej aplikacji Microsoft Store lub dołączone do uruchomionej aplikacji lub procesu. Narzędzie można uruchomić na komputerach lokalnych lub zdalnych lub na symulatorze lub emulatorze. Narzędzie Użycie **pamięci** można uruchomić z debugowaniem lub bez. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). W debugerze można włączać i wyłączać profilowanie pamięci i zobaczyć podział użycia pamięci na obiekt. Można wyświetlić wyniki użycia pamięci, gdy wykonanie jest wstrzymane, na przykład w punkcie przerwania.
 
-Narzędzie Użycie **pamięci** można uruchomić z debugowaniem lub bez. W debugerze można włączać i wyłączać profilowanie pamięci i zobaczyć podział użycia pamięci na obiekt. Można wyświetlić wyniki użycia pamięci, gdy wykonanie jest wstrzymane, na przykład w punkcie przerwania.
-
-Narzędzie **.NET Object Allocation** działa tylko jako narzędzie pośmiertne.
+Narzędzie **.NET Object Allocation** ułatwia identyfikowanie wzorców alokacji i anomalii w kodzie platformy .NET. To narzędzie działa tylko jako narzędzie pośmiertne.
 
 Aby uzyskać szczegółowe instrukcje opisujące sposób korzystania z narzędzi do analizy pamięci, zobacz Samouczek [Analizowanie użycia pamięci](../profiling/memory-usage.md) i [narzędzie .NET Object Allocation](../profiling/dotnet-alloc-tool.md).
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16ba88a11acd488ba70096e0b394a734e65011f5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cad3a644935e14a605dbef02bddc1f9337c1f5e9
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549908"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80233082"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku *runsettings*
 
@@ -259,6 +259,7 @@ Sekcje, które następują szczegółowo elementy pliku *runsettings.*
 |**Ścieżki testadapters**||Co najmniej jedna ścieżka do katalogu, w którym znajdują się testadapters|
 |**Maksymalna liczbacpu**|1|To ustawienie określa stopień równoległego wykonywania testu podczas uruchamiania testów jednostkowych przy użyciu dostępnych rdzeni na komputerze. Aparat wykonywania testów rozpoczyna się jako odrębny proces na każdym dostępnym rdzeniu i daje każdemu rdzeniu kontener z testami do uruchomienia. Kontener może być zestawem, biblioteką DLL lub odpowiednim artefaktem. Kontener testowy jest jednostką planowania. W każdym kontenerze testy są uruchamiane zgodnie z platformą testową. Jeśli istnieje wiele kontenerów, a następnie po zakończeniu wykonywania testów w kontenerze, są one podane następnego dostępnego kontenera.<br /><br />MaxCpuCount może być:<br /><br />n, gdzie 1 <= n <= liczba rdzeni: do n procesy są uruchamiane<br /><br />n, gdzie n = inna wartość: liczba uruchomionych procesów może wynosić do liczby dostępnych rdzeni. Na przykład ustaw n=0, aby platforma automatycznie decydowania o optymalnej liczbie procesów do uruchomienia w oparciu o środowisko.|
 |**TestSessionTimeout (Czas testowania)**||Umożliwia użytkownikom zakończenie sesji testowej, gdy przekroczy ona dany limit czasu. Ustawienie limitu czasu gwarantuje, że zasoby są dobrze zużywane, a sesje testowe są ograniczone do ustawionego czasu. To ustawienie jest dostępne w **programie Visual Studio 2017 w wersji 15.5** i nowszej.|
+|**Ścieżka DotnetHostPath**||Określ niestandardową ścieżkę do hosta dotnet, który jest używany do uruchamiania hosta testowego. Jest to przydatne podczas tworzenia własnej dotnet, na przykład podczas tworzenia repozytorium dotnet/runtime. Określenie tej opcji spowoduje pominięcie szukanetesthost.exe i zawsze będzie używać pliku testhost.dll. 
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Karty danych diagnostycznych (moduły zbierające dane)
 

@@ -3,15 +3,16 @@ title: Partnerzy zarządzający subskrypcjami programu Visual Studio dla klient�
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Dowiedz się, jak partnerzy zarządzają subskrypcjami programu Visual Studio dla swoich klientów.
-ms.openlocfilehash: 53f19b76d79bb7f2e6246c9f5b2866bbf9262dfe
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: bf1fe706a0e1ee0b027e465c0bfaa8c0d326ee99
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947078"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232296"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partnerzy zarządzający subskrypcjami w imieniu klientów
 Aby zarządzać subskrypcjami w [portalu administracyjnym subskrypcji](https://manage.visualstudio.com)programu Visual Studio, należy wykonać kilka kroków. Proces będzie:
@@ -49,8 +50,8 @@ Ten scenariusz dotyczy nowych partnerów, którzy już złożyli nowe zamówieni
 > [!NOTE]
 > Klient otrzyma wiadomość e-mail z powiadomieniem o dodaniu Partnera do licencji Otwartej. Mogą oni usunąć dostęp partnera.
 
-## <a name="resources"></a>Zasoby
-- [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+## <a name="resources"></a>Resources
+- [Oficjalny dokument dotyczący licencjonowania programu Visual Studio](https://aka.ms/vslicensing)
 - [Pomoc techniczna dotycząca subskrypcji programu Visual Studio i administrowania nim](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Warunki licencjonowania zbiorowego](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 

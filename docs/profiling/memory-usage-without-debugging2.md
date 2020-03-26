@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
+ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77578342"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80256247"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
@@ -89,13 +89,13 @@ W raporcie migawki można rozwinąć wpisy **typu obiektu,** aby wyświetlić wp
 
 Jeśli **typ obiektu** jest niebieski, można go wybrać, aby przejść do obiektu w kodzie źródłowym, w osobnym oknie.
 
-Typy, których nie można zidentyfikować lub których udział w kodzie, którego nie rozumiesz, są prawdopodobnie .NET Framework, system operacyjny lub kompilator obiektów. **Narzędzie Użycie pamięci** wyświetla te obiekty, jeśli są one zaangażowane w łańcuchy własności obiektów.
+Typy, których nie można zidentyfikować lub których udział w kodzie, którego nie rozumiesz, to prawdopodobnie obiekty .NET, systemu operacyjnego lub kompilatora. **Narzędzie Użycie pamięci** wyświetla te obiekty, jeśli są one zaangażowane w łańcuchy własności obiektów.
 
 W raporcie migawki:
 
 - Drzewo **Zarządzane sterty** pokazuje typy i wystąpienia w raporcie. Wybranie typu lub wystąpienia powoduje wyświetlenie drzewa **Ścieżki do obiektów głównych** i obiektów **odniesienia** dla zaznaczonego elementu.
 
-- Drzewa **Ścieżki do katalogu głównego** jest wyświetlany łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł zbierający elementy bezużyteczne .NET Framework czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
+- Drzewa **Ścieżki do katalogu głównego** jest wyświetlany łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł odśmiecania pamięci .NET czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
 
 - Drzewo **Typy przywołytalne** lub **Obiekty odniesienia** pokazuje obiekty, do których odwołuje się wybrany typ lub wystąpienie.
 
@@ -135,7 +135,7 @@ Oba łącza otwierają ten sam raport. Jedyną różnicą jest kolejność pocz�
 |**Moduł**|Moduł, który zawiera obiekt.|
 
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a>Ścieżki do drzewa głównego (raporty szczegółów migawki)
-**Drzewa Ścieżki do katalogu głównego** jest wyświetlany łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł zbierający elementy bezużyteczne .NET Framework czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
+**Drzewa Ścieżki do katalogu głównego** jest wyświetlany łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł odśmiecania pamięci .NET czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
 
 Dla typu w **paths to root** drzewa, liczba obiektów, które posiadają odwołania do tego typu pojawia się w licznik **odwołań** kolumny.
 
@@ -185,7 +185,7 @@ Oba łącza otwierają ten sam raport. Jedyną różnicą jest początkowa kolej
 
 ### <a name="paths-to-root-tree-snapshot-diff-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a>Ścieżki do drzewa głównego (raporty różnicowe migawki)
 
-**Drzewa Ścieżki do katalogu głównego** jest wyświetlany łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł zbierający elementy bezużyteczne .NET Framework czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
+**Drzewa Ścieżki do katalogu głównego** jest wyświetlany łańcuch obiektów, które odwołują się do typu lub wystąpienia. Moduł odśmiecania pamięci .NET czyści pamięć dla obiektu tylko wtedy, gdy wszystkie odwołania do niego zostały zwolnione.
 
 Dla typu w **paths to root** drzewa, liczba obiektów, które posiadają odwołania do tego typu pojawia się w licznik **odwołań** kolumny. Różnica w liczbie od poprzedniej migawki znajduje się w kolumnie **Diff odwołania.**
 

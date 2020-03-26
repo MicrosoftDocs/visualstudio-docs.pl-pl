@@ -3,15 +3,16 @@ title: Subskrypcje programu Visual Studio oferowane partnerom w sieci Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
+ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Szczegółowe informacje o tym, jakie subskrypcje są oferowane, jakie reguły mają zastosowanie i ile subskrypcji jest oferowanych w mpn.
-ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: c463ee24b9c145de6fdbca9b1971b0fc767df694
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "78947041"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232334"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio oferowane partnerom w sieci Microsoft Partner Network (MPN)
 
@@ -69,7 +70,7 @@ To wewnętrzne ograniczenie tylko do użytku zasadniczo oznacza, że partnerzy n
 
 W przypadku subskrypcji programu Visual Studio oferowanych za pośrednictwem nazwy MPN licencjonowany użytkownik musi zalogować się do programu Visual Studio przy użyciu tej samej tożsamości/logowania, która została użyta do aktywowania subskrypcji programu Visual Studio. Klucze produktu nie są oferowane do odblokowania produktu; logowanie jest jedyną opcją uruchamiania programu Visual Studio. Subskrybent programu Visual Studio może działać w trybie offline przez maksymalnie 30 dni, zanim program Visual Studio przestanie działać. Podczas pracy w trybie online program Visual Studio dyskretnie odświeża stan licencji użytkownika okresowo, aby upewnić się, że subskrypcja jest nadal ważna.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
 - [Przewodnik administratora programu MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) — zawiera instrukcje dotyczące przypisywania subskrypcji programu Visual Studio pracownikom usługi MPN.
 - [Przypisywanie subskrypcji programu Visual Studio do pracowników mpn](manage-mpn-subscriptions.md)

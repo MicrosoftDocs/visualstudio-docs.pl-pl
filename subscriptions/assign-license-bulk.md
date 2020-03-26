@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Dowiedz się, jak administratorzy mogą przypisywać licencje wielu subskrybentom za pomocą funkcji dodawania zbiorczego lub grup usługi Microsoft Azure Active Directory
-ms.openlocfilehash: 3a4a6c400a17d52cdd67391a45ba088cdbb7af01
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5a1327e497a48b6173afd4a7ad095dfcabacd098
+ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "79988491"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80274066"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Przypisywanie subskrypcji wielu użytkownikom
 Portal administracyjny subskrypcji umożliwia dodawanie użytkowników jeden na raz lub w dużych grupach.  Aby dodać poszczególnych użytkowników, zobacz [Dodawanie pojedynczych użytkowników](assign-license.md).
@@ -104,6 +104,10 @@ Korzystanie z tej funkcji ułatwia utrzymanie się na szczycie przypisań subskr
 7. Aby wyświetlić dodaną grupę, przewiń do dolnej części listy użytkowników.  
 
 8. Wybierz **pozycję Wyświetl subskrybentów,** aby wyświetlić członków grupy. Można wyświetlić szczegółowe informacje o subskrybentów w grupie, ale nie można wprowadzać żadnych zmian do subskrybentów lub subskrypcji, które są przypisane.    
+
+> [!NOTE]
+> Jeśli subskrypcje zostały już przypisane indywidualnie do użytkowników, którzy są następnie dodawane jako część grupy usługi Azure AD, zostaną one dodane jako część grupy i nie będą już wyświetlane indywidualnie. Jednak jeśli poszczególne subskrypcje jest dla innego poziomu subskrypcji, będą one miały dwie subskrypcje.  Przykład: Jeśli użytkownik ma indywidualną subskrypcję programu Visual Studio Professional i jest członkiem grupy, do której można przypisać subskrypcje programu Visual Studio Enterprise, będzie miał obie.  
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]
 

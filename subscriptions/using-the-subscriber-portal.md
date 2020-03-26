@@ -1,17 +1,18 @@
 ---
 title: Korzystanie z portalu subskrybenta - https://my.visualstudio.com | Dokumenty firmy Microsoft
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
+ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Dowiedz się więcej o pełnym zakresie korzyści dostępnych w portalu subskrypcji programu Visual Studio
-ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5403880dc5a2ac62cd23800cea5acacd2766bc6f
+ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "75546229"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "80232186"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Korzystanie z portalu subskrybenta - my.visualstudio.com
 
@@ -24,7 +25,7 @@ Portal jest podzielony na sześć stron.  Każda strona zapewnia dostęp do ró�
 ## <a name="benefits"></a>[Korzyści](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 Narzędzia i usługi zawarte w subskrypcji są wyświetlane jako "kafelki" na stronie Korzyści.  Nie wszystkie korzyści są uwzględnione we wszystkich subskrypcjach. Kafelki są pogrupowane w trzy kategorie: Narzędzia, Rozwój zawodowy i Wsparcie.  
 
-### <a name="tools"></a>narzędzia
+### <a name="tools"></a>Narzędzia
 W kategorii Narzędzia znajdziesz podstawowe narzędzia programistyczne, takie jak IDE programu Visual Studio, Azure DevOps, a także narzędzia dostarczane przez naszych partnerów.  Zobaczysz również usługi, takie jak Azure i Visual Studio App Center.
 
 ### <a name="professional-development"></a>Profesjonalne programowanie
@@ -51,6 +52,12 @@ Oprócz indywidualnych korzyści znalezionych w kategorii pomocy technicznej na 
 ## <a name="marketplace"></a>[Rynek](https://marketplace.visualstudio.com/)
 
 Chcesz odnowić subskrypcję w chmurze programu Visual Studio?  Chcesz pobrać najnowsze rozszerzenia dla rodziny produktów programu Visual Studio?  Portal Marketplace pomaga użytkownikom znaleźć rozszerzenia, narzędzia i usługi, które sprawiają, że usługi Azure DevOps, Azure DevOps Server i Visual Studio Code są jeszcze lepsze. Możesz nawet zostać wydawcą i publikować własne rozszerzenia w Marketplace.
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Zaloguj się do [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) portalu i sprawdź swoje korzyści.  Możesz również dowiedzieć się więcej o logowaniu się do portalu za pomocą [konta Microsoft](sign-in-msa.md) (MSA), [konta służbowego lub szkolnego,](sign-in-work.md)a nawet [konta GitHub.](sign-in-github.md) 
