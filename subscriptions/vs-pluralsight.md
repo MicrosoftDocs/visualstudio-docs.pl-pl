@@ -1,17 +1,18 @@
 ---
 title: Korzyści pluralsight w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o subskrypcji szkoleniowej Pluralsight dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 71af6f269fe84ef633215dcb526b89dffe8481a0
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "77192419"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301885"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkoleniowe pluralsight w subskrypcjach programu Visual Studio
 
@@ -96,6 +97,12 @@ O: Po zakończeniu bezpłatnej subskrypcji Pluralsight możesz kupić subskrypcj
 - [Centrum pomocy Pluralsight](https://help.pluralsight.com/help) zapewnia pomoc w kursach Pluralsight lub korzystaniu ze strony internetowej Pluralsight.
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Po utworzeniu konta możesz rozpocząć szkolenie.  Odwiedź [https://www.pluralsight.com](https://www.pluralsight.com) i naciśnij **zaloguj się w** prawym górnym rogu strony, aby rozpocząć nowy kurs lub powrócić do kursu już w toku.

@@ -1,17 +1,18 @@
 ---
 title: Korzyści ze wsparcia technicznego
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować korzyści pomocy technicznej dołączone do subskrypcji programu Visual Studio.
-ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 7fd2bd8b3e2f192f82dd2cccf89798b9b2413e62
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74706980"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301946"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Uaktywnianie i korzystanie z pomocy technicznej w ramach subskrypcji programu Visual Studio
 Korzyści pomocy technicznej w subskrypcji programu Visual Studio jest do rozwiązywania problemów rozwiązywania problemów z przerwami w **środowiskach nieprodukcyjnych** dla produktów, które są nadal w fazie podstawowej pomocy technicznej [cyklu pomocy technicznej.](https://support.microsoft.com/lifecycle/search) Standardowe i roczne subskrypcje w chmurze programu Visual Studio Enterprise otrzymują cztery zdarzenia, podczas gdy standardowe i roczne subskrypcje w chmurze programu Visual Studio Professional otrzymują dwa zdarzenia, przez okres do 1 roku od aktywacji korzyści. Aktywacja korzyści musi nastąpić, gdy subskrypcja jest aktualna.
@@ -125,6 +126,12 @@ Aby korzystać z korzyści technicznej subskrypcji programu Visual Studio w przy
 <sup>2</sup> *Zawiera: Imagine Standard.*
 
 Nie wiesz, której subskrypcji używasz?  Połącz [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) się, aby wyświetlić wszystkie subskrypcje przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przypisanych do innego adresu e-mail.  Aby wyświetlić te subskrypcje, musisz zalogować się przy tym adresie e-mail.
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Pamiętaj, aby aktywować te wspaniałe korzyści, aby w pełni wykorzystać subskrypcję programu Visual Studio:

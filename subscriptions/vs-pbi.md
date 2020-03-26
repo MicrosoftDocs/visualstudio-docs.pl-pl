@@ -1,17 +1,18 @@
 ---
 title: Usługa Power BI Pro Benefit w subskrypcjach programu Visual Studio | Dokumenty firmy Microsoft
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 11/18/2019
+ms.author: v-evwin
+manager: lank
+ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Dowiedz się więcej o subskrypcji usługi Power BI Pro dołączonej do wybranych subskrypcji programu Visual Studio.
-ms.openlocfilehash: 8e7046d8fc16868e23978203cf2bc400c70b6b8d
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 1d6288c1a3360aaf48c220e73a11f2b4251b8806
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74161950"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301926"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Subskrypcje usługi Power BI Pro w programie Visual Studio
 
@@ -111,6 +112,12 @@ Odp.: Nie.  Korzyści dla usługi Power BI Pro nie można dodać do dzierżawcó
   - Zapoznaj się z głównymi problemami, uzyskaj pomoc od społeczności lub prześlij zgłoszenie pomocy technicznej na [stronie Pomocy technicznej](https://powerbi.microsoft.com/support/).
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 - Aby aktywować korzyści związane [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)z programem Power BI Pro, odwiedź stronę .

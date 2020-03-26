@@ -1,17 +1,18 @@
 ---
 title: Parasoft Wirtualizacja / SOAtest Professional Desktop Korzyści | Dokumenty firmy Microsoft
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.date: 11/18/2019
+ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
+ms.date: 03/26/2020
 ms.topic: conceptual
 description: Dowiedz się, jak aktywować subskrypcję Parasoft Virtualize/SOA Test Professional zawartą w subskrypcji programu Visual Studio.
-ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.openlocfilehash: 5f6673ecd3721232feb727ceda2c399e2ee12348
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "74161929"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301911"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop w subskrypcjach programu Visual Studio
 
@@ -92,6 +93,12 @@ Testuj wcześniej i częściej.  Symuluj i testuj zachowanie niedostępnych rozw
   - Centrum zasobów Parasoft:https://www.parasoft.com/resources/
 - Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń za subskrypcje programu Visual Studio, skontaktuj się z [pomocą techniczną dotyczącą subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/)programu Visual Studio.
 - Masz pytanie dotyczące środowiska IDE programu Visual Studio, usług Azure DevOps lub innych produktów lub usług programu Visual Studio?  Odwiedź stronę [pomocy technicznej programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="see-also"></a>Zobacz też
+- [Dokumentacja programu Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Dokumentacja usługi Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Dokumentacja platformy Azure](https://docs.microsoft.com/azure/)
+- [Dokumentacja usługi Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Następne kroki
 Skorzystaj z własnego piaskownicy programistycznej, aktywując [indywidualny kredyt usługi Azure DevTest.](vs-azure.md) 

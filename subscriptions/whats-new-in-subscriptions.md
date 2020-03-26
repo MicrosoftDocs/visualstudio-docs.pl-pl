@@ -5,52 +5,36 @@ ms.custom: ''
 ms.date: 08/26/2019
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: lank
-ms.openlocfilehash: b78126d44922fefebbb86bad24788ba6a28e8e04
-ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
+ms.openlocfilehash: 87ac019b27561941c0d7038b6b65d692a5125652
+ms.sourcegitcommit: 104d75ade6f48538620743d1c836fb26bdd0ade5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "70060407"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80301841"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;nowości w subskrypcjach programu Visual Studio
 
 Często aktualizujemy pakiet korzyści z subskrypcji, aby był bardziej przydatny. Udostępnimy również nasze portale zarządzania subskrybentami i subskrypcjami, aby zapewnić Ci najlepsze możliwe środowisko.  Czytaj dalej, aby dowiedzieć się więcej o najnowszych funkcjach i aktualizacjach, posortowanych kwartalnie.
 
-## <a name="2019-q3-june-august"></a>2019 Q3 (czerwiec-sierpień)
+## <a name="2020-q1-january-march"></a>I kwartał 2020 r. (styczeń – marzec)
 
-### <a name="contact-my-admin-available-for-subscribers---august-2019"></a>"Skontaktuj się z moim Administratorem" dostępne dla subskrybentów - sierpień 2019
-Wielu subskrybentów programu Visual Studio otrzymuje subskrypcje za pośrednictwem swojej pracy lub szkoły, a te subskrypcje są przypisywane i zarządzane przez administratorów.  W dużych lub złożonych organizacjach subskrybentowi, który potrzebuje pomocy administratora, może być trudno, aby wiedział, z kim się skontaktować.  Aby pomóc subskrybentom, dodaliśmy nową funkcję "Skontaktuj się z moim https://my.visualstudio.com/subscriptionsadministratorem" w portalu subskrybenta pod adresem . Aby uzyskać więcej informacji, zapoznaj się z artykułem [Kontakt z administratorem.](contact-my-admin.md) 
+W pierwszym kwartale 2020 r. ukazał się nowy wygląd i https://manage.visualstudio.comkilka nowych funkcji portalu administracyjnego subskrypcji programu Visual Studio pod adresem . Zmiany w portalu obejmowały nowy schemat kolorów i zmianę układu niektórych narzędzi.  Przegląd alokacji subskrypcji, szczegóły umowy i maksymalne użycie są teraz kontrolowane przez przyciski w lewym górnym rogu.  Pomaga to zmaksymalizować dostępne miejsce na ekranie dla najczęściej wykonywanych zadań zarządzania, takich jak przypisywanie i edytowanie subskrypcji.  
 
-### <a name="agreement-preferences-available-for-super-admins---august-2019"></a>Preferencje umowy dostępne dla Superadministratorów - sierpień 2019
-Nowa funkcja w portalu administracyjnym subskrypcji umożliwia teraz superadministratorom ustawianie globalnych preferencji dla ich umów.  Dzięki temu można ustawić preferencje, które zmniejszą ilość pracy potrzebnej administratorom podczas przypisywania subskrypcji i zapewniają lepszą kontrolę nad funkcjami, takimi jak to, czy administrator może utworzyć subskrypcję dla użytkowników spoza ich organizacji.  Aby uzyskać więcej informacji, zapoznaj się z naszym artykułem [Preferencje umowy zestawu.](admin-prefs.md) 
+Połączyliśmy również opcje, aby dodać invididual abonentów i wykonać zbiorcze dodatki w menu rozwijanym **+ Dodaj.** 
 
-## <a name="2019-q2-april-june"></a>II kwartał 2019 r. (kwiecień–czerwiec)
+   > [!div class="mx-imgBorder"]
+   > ![Nowy interfejs użytkownika portalu administracji subskrypcjami](_img/whats-new/new-admin-ui.png)
 
-### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Visual Studio z subskrypcjami GitHub Enterprise
-Na konferencji //build w maju firma Microsoft ogłosiła, że klienci z umową Enterprise Agreement mogą teraz kupować subskrypcje programu Visual Studio, które obejmują usługę GitHub Enterprise.  Jest to prosty sposób na uzyskanie zarówno subskrypcji programu Visual Studio, jak i GitHub Enterprise za jedną niższą cenę.  
+### <a name="connect-emails"></a>Łączenie wiadomości e-mail
+Ułatwiliśmy dopasowywać subskrybentów korzystających z kont Microsoft (MSA) do usługi Azure Active Directory (Azure AD), dzięki czemu można szybko połączyć dwie tożsamości.  Korzystanie z tożsamości usługi Azure AD zapewnia większe bezpieczeństwo i łatwiejsze zarządzanie subskrypcjami.  Sprawdź nasz [osobisty artykuł logowania, aby](personal-email-sign-ins.md) uzyskać więcej informacji. 
 
-GitHub Enterprise jest dostępny z subskrypcjami visual studio enterprise i visual studio professional nabytymi w ramach umów Enterprise Agreement. Istnieje również oferta "step-up", która umożliwia dodawanie GitHub Enterprise, nawet jeśli umowa Enterprise nie jest spowodowana odnowieniem.
-
-Aby dowiedzieć się więcej o korzyściach, opcjach i cenach, odwiedź stronę https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
-
-Jeśli twoja organizacja ma już program Visual Studio z subskrypcjami GitHub Enterprise, możesz dowiedzieć się więcej o zarządzaniu programem Visual Studio za pomocą subskrypcji [GitHub Enterprise](assign-github.md) w naszej dokumentacji.  
-
-## <a name="2019-q1-january-march"></a>2019, KW1 (styczeń – marzec)
-
-### <a name="maximum-usage-added-to-subscriptions-administration-portal"></a>Maksymalne użycie dodane do [portalu administracji subskrypcjami](https://manage.visualstudio.com)
-Nowa funkcja w portalu administracyjnym subskrypcji programu Visual Studio pomaga śledzić liczbę zakupionych i przypisanych subskrypcji oraz określa szczytową liczbę subskrypcji każdego przypisanego poziomu, zarówno w ciągu ostatniego roku, jak i w całym okresie. okresu obowiązywania umowy(-ów). Może to pomóc w zrozumieniu bieżącego użycia subskrypcji i zaplanowaniu przyszłych zakupów. 
-
-  > [!div class="mx-imgBorder"]
-  > ![Menu maksymalne użycie](_img/maximum-usage/maximum-usage-menu.png)
-
-Możesz też wyświetlić bieżącą historię zadań, w tym zakupów i przypisań.   
-
-Aby uzyskać więcej informacji, proszę nasz maksymalny artykuł [użytkowania.](maximum-usage.md) 
-
-
-
-
+### <a name="add-subscribers-using-azure-active-directory-groups"></a>Dodawanie subskrybentów przy użyciu grup usługi Azure Active Directory
+Jeśli twoja organizacja korzysta z usługi Azure Active Directory (Azure AD), możesz teraz zarządzać subskrypcjami przy użyciu grup usługi Azure AD.  Przypisywanie subskrypcji do grup umożliwia bardzo szybkie dostarczanie subskrypcji tego samego typu wielu użytkownikom.  Gdy nowi użytkownicy są dodawane do grupy usługi Azure AD, są one automatycznie przypisywane subskrypcji.  Jeśli użytkownik zostanie usunięty z grupy usługi Azure AD, jego subskrypcja jest również usuwany.  Pomaga to organizacji zautomatyzować zarządzanie subskrypcjami, oszczędzając czas i wysiłek administratorów.  Szczegółowe informacje można znaleźć w artykule [Dodaj wielu użytkowników](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) w naszej dokumentacji. 
 
 I to na razie!
+
+## <a name="next-steps"></a>Następne kroki
+Zapoznaj się z nowym interfejsem użytkownika portalu administracji subskrypcjami z nowymi funkcjami i sprawdź tutaj najnowsze informacje na temat nowości w subskrypcjach programu Visual Studio!
