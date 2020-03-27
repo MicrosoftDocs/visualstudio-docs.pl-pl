@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: Narzędzia do testowania w programie Visual Studio
+summary: Narzędzia do testowania w programie Visual Studio mogą ułatwić Tobie i Twojemu zespołowi tworzenie i utrzymywanie wysokich standardów jakości kodu.
+metadata:
+  title: Narzędzia do testowania w programie Visual Studio
+  description: Dowiedz się, jak testować kod przy użyciu programu Visual Studio.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 03/23/2020
+  ms.openlocfilehash: cb29c5219cb3ad73cf8a3efeecaf344c7af81968
+  ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+  ms.translationtype: HT
+  ms.contentlocale: pl-PL
+  ms.lasthandoff: 03/25/2020
+  ms.locfileid: "80261574"
+landingContent:
+- title: Informacje o narzędziach do testowania
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Pierwsze spojrzenie na narzędzia do testowania
+      url: improve-code-quality.md
+    - text: Omówienie narzędzi do testów jednostkowych
+      url: unit-test-your-code.md
+    - text: Omówienie testów jednostkowych na żywo
+      url: live-unit-testing-intro.md
+- title: Testowanie jednostek
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Rozpoczynanie pracy z testami jednostkowymi
+      url: getting-started-with-unit-testing.md
+    - text: Tworzenie i uruchamianie testów jednostkowych dla kodu zarządzanego
+      url: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - text: Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
+      url: run-unit-tests-with-test-explorer.md
+    - text: Rozpoczynanie pracy z funkcją Live Unit Testing
+      url: live-unit-testing-start.md
+    - text: Generowanie testów jednostkowych (IntelliTest)
+      url: generate-unit-tests-for-your-code-with-intellitest.md
+- title: Więcej narzędzi do testowania
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Pokrycie kodu — określanie, jaka część kodu jest poddawana testom
+      url: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - text: Microsoft Fakes — izolowanie testowanego kodu
+      url: isolating-code-under-test-with-microsoft-fakes.md
+    - text: Kodowany interfejs użytkownika (przestarzałe)
+      url: use-ui-automation-to-test-your-code.md
+    - text: Testowanie obciążenia (przestarzałe)
+      url: quickstart-create-a-load-test-project.md
+- title: Powiązane narzędzia (Azure DevOps)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Testowanie eksploracyjne i ręczne (Azure Test Plans)
+      url: /azure/devops/test/overview?view=azure-devops
+    - text: Testowanie obciążenia (Azure Test Plans)
+      url: /azure/devops/test/load-test/getting-started-with-performance-testing?view=azure-devops
+    - text: Testowanie ciągłe (Azure Pipelines)
+      url: /azure/devops/pipelines/?view=azure-devops

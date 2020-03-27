@@ -1,5 +1,9 @@
 - name: Narzędzia do testowania w programie Visual Studio
-  href: improve-code-quality.md
+  href: index.yml
+- name: Omówienie
+  items:
+    - name: Pierwsze spojrzenie na narzędzia do testowania
+      href: improve-code-quality.md
 - name: Testowanie jednostek
   items:
     - name: Omówienie narzędzi do testów jednostkowych
@@ -14,14 +18,10 @@
       href: create-unit-tests-menu.md
     - name: IntelliTest
       items:
+        - name: Omówienie
+          href: intellitest-manual/index.md
         - name: 'Instrukcje: Generowanie testów jednostkowych za pomocą funkcji IntelliTest'
           href: generate-unit-tests-for-your-code-with-intellitest.md
-        - name: Omówienie
-          href: intellitest-manual/introduction.md
-        - name: Wprowadzenie
-          href: intellitest-manual/getting-started.md
-        - name: Spis sekcji
-          href: intellitest-manual/index.md
         - name: Generowanie testu
           href: intellitest-manual/test-generation.md
         - name: Dynamiczne symboliczne wykonywanie
