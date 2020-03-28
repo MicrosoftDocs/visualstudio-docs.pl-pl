@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79686132adce043b4864d545f0912564709cfe2c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
+ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631981"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "80375552"
 ---
 # <a name="target-element-msbuild"></a>Element docelowy (MSBuild)
 
@@ -59,7 +59,7 @@ Zawiera zestaw zadań dla MSBuild do wykonania sekwencyjnie.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Name`|Atrybut wymagany.<br /><br /> Nazwa elementu docelowego.|
+|`Name`|Atrybut wymagany.<br /><br /> Nazwa elementu docelowego. Nazwa docelowa może zawierać `$@()%*?.`dowolny znak z wyjątkiem .|
 |`Condition`|Atrybut opcjonalny.<br /><br /> Warunek, który ma zostać oceniony. Jeśli warunek ocenia `false`, cel nie wykona treści obiektu docelowego lub żadnych `DependsOnTargets` obiektów docelowych, które są ustawione w atrybucie. Aby uzyskać więcej informacji na temat warunków, zobacz [Warunki](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wejściowe do tego obiektu docelowego. Wiele plików jest oddzielonych średnikami. Sygnatury czasowe plików zostaną porównane z sygnaturami czasowymi plików w `Outputs` celu ustalenia, `Target` czy jest aktualna. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md), [Jak: Tworzenie przyrostowo](../msbuild/how-to-build-incrementally.md)i [Przekształca](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Atrybut opcjonalny.<br /><br /> Pliki, które tworzą dane wyjściowe do tego obiektu docelowego. Wiele plików jest oddzielonych średnikami. Sygnatury czasowe plików zostaną porównane z sygnaturami czasowymi plików w `Inputs` celu ustalenia, `Target` czy jest aktualna. Aby uzyskać więcej informacji, zobacz [Kompilacje przyrostowe](../msbuild/incremental-builds.md), [Jak: Tworzenie przyrostowo](../msbuild/how-to-build-incrementally.md)i [Przekształca](../msbuild/msbuild-transforms.md).|
