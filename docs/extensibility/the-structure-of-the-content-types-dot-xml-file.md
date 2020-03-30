@@ -1,5 +1,5 @@
 ---
-title: Struktura pliku [Content_Types]. XML | Microsoft Docs
+title: Struktura pliku [Content_types].xml | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,21 +13,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 957958cd930620734d09c592ea07bfb0919d0145
+ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983037"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80395308"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struktura pliku [Content_types].xml
-Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio używa pliku [Content_Types]. XML do zainstalowania pakietu, ale nie instaluje samego pliku.
+Zawiera informacje o rodzajach zawartości w pakiecie VSIX. Program Visual Studio używa [Content_Types].xml pliku, aby zainstalować pakiet, ale nie instaluje samego pliku.
 
 > [!NOTE]
-> Chociaż ten temat dotyczy tylko plików [Content_Type]. XML, które są używane w pakietach VSIX, typ pliku [Content_Types]. XML jest częścią standardu *Open Package Conventions (OPC)* . Aby uzyskać więcej informacji, zobacz [OPC: A New Standard for pakowanie danych](https://msdn.microsoft.com/magazine/cc163372.aspx) w witrynie MSDN w sieci Web.
+> Chociaż ten temat dotyczy tylko plików [Content_Type].xml, które są używane w pakietach VSIX, [Content_Types].xml typ pliku jest częścią *standardu Open Packaging Conventions (OPC).* Aby uzyskać więcej informacji, zobacz [OPC: A New Standard For Packaging Your Data](https://msdn.microsoft.com/magazine/cc163372.aspx) on the MSDN Web site.
 
 ## <a name="attributes-and-elements"></a>Atrybuty i elementy
- W poniższych sekcjach opisano element główny oraz jego atrybuty i elementy podrzędne.
+ W poniższych sekcjach opisano element główny i jego atrybuty i elementy podrzędne.
 
 ### <a name="root-element"></a>Element główny
 
@@ -39,20 +39,20 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Xmlns`|(Wymagane). Lokalizacja schematu używanego dla tego pliku [Content_Types]. XML.|
+|`Xmlns`|(Wymagane). Lokalizacja schematu używanego dla tego pliku [Content_Types].xml.|
 
-### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Przypisane
+### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Atrybut
 
 | Wartość | Opis |
 | - | - |
-| http://schemas.openformats.org/package/2006/content-types | Lokalizacja schematu typów zawartości. |
+| `http://schemas.openformats.org/package/2006/content-types` | Lokalizacja schematu typów zawartości. |
 
 ### <a name="child-elements"></a>Elementy podrzędne
- Element `Types` może zawierać dowolną liczbę `Default` elementów.
+ Element `Types` może zawierać dowolną `Default` liczbę elementów.
 
 |Element|Opis|
 |-------------|-----------------|
-|`Default`|Opisuje typ zawartości w pakiecie VSIX. Każdy typ pliku w pakiecie musi mieć własny `Default` elementu.|
+|`Default`|Opisuje typ zawartości w pakiecie VSIX. Każdy typ pliku w pakiecie `Default` musi mieć swój własny element.|
 
 ### <a name="attributes"></a>Atrybuty
 
@@ -61,32 +61,32 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 |`Extension`|Rozszerzenie nazwy pliku w pakiecie VSIX.|
 |`ContentType`|Opisuje rodzaj zawartości skojarzonej z rozszerzeniem nazwy pliku.|
 
-### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Przypisane
- Program Visual Studio rozpoznaje następujące wartości `ContentType` dla skojarzonych typów `Extension`.
+### <a name="attribute-name-attribute"></a>{Nazwa atrybutu} Atrybut
+ Visual Studio rozpoznaje `ContentType` następujące wartości `Extension` dla skojarzonych typów.
 
-|rozszerzenia|contentType|
+|Wewnętrzny|Contenttype|
 |---------------|-----------------|
-|zawierającego|tekst/zwykły|
-|pkgdef|tekst/zwykły|
-|dokument|tekst/XML|
-|vsixmanifest|tekst/XML|
-|htm lub HTML|tekst/HTML|
-|RTF|Aplikacja/RTF|
-|formatach|Aplikacja/plik PDF|
-|GIF|obraz/GIF|
-|jpg lub JPEG|obraz/jpg|
-|TIFF|obraz/TIFF|
-|vsix|Aplikacja/zip|
-|kodu|Aplikacja/zip|
-|bibliotece|Aplikacja/oktet — strumień|
-|wszystkie inne typy plików|Aplikacja/oktet — strumień|
+|Txt|tekst/zwykły|
+|pkgdef (własob)|tekst/zwykły|
+|xml|tekst/xml|
+|Vsixmanifest|tekst/xml|
+|htm lub html|text/html|
+|Rtf|aplikacja/rtf|
+|pdf|aplikacja/pdf|
+|Gif|obraz/gif|
+|jpg lub jpeg|obraz/jpg|
+|tiff|obraz/tiff|
+|vsix|aplikacja/zamek błyskawiczny|
+|Zip|aplikacja/zamek błyskawiczny|
+|Dll|aplikacja/oktet-strumień|
+|wszystkie inne typy plików|aplikacja/oktet-strumień|
 
 ## <a name="example"></a>Przykład
 
 ### <a name="description"></a>Opis
- Następujący plik [Content_Types]. XML opisuje typowy pakiet VSIX.
+ Poniżej [Content_Types].xml plik opisuje typowy pakiet VSIX.
 
-### <a name="code"></a>Kod
+### <a name="code"></a>Code
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -99,7 +99,7 @@ Zawiera informacje o rodzaju zawartości w pakiecie VSIX. Program Visual Studio 
 </Types>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Dokumentacja schematu rozszerzenia VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: nowy standard tworzenia pakietów danych](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [Odwołanie do schematu rozszerzenia VSIX 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [OPC: Nowy standard pakowania danych](https://msdn.microsoft.com/magazine/cc163372.aspx)
