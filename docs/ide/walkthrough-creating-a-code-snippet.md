@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0415e926bba9a1809c77f0f35b43d78263f43
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2554729be8f3b9697d1407befd68cbb21fac10dd
+ms.sourcegitcommit: 992dd075e65b5f3adefc1ff758975298c47381e7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597298"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80435037"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Przewodnik: tworzenie fragmentu kodu
 
@@ -54,7 +54,7 @@ Następujący kod XML jest podstawowym szablonem urywka:
 
 2. Wypełnij tytuł fragmentu kodu w **tytule** elementu. Użyj tytułu **Pierwiastek kwadratowy**.
 
-3. Wypełnij język fragmentu kodu w **language** **atrybutu Code** elementu. W przypadku języka C#należy użyć **programu CSharp**, a w przypadku języka Visual Basic użyj programu **VB**.
+3. Wypełnij język fragmentu kodu w **language** **atrybutu Code** elementu. W przypadku języka C#należy użyć **klawisza CSharp**, dla języka Visual Basic, użyj **VB**, a w przypadku języka C++, użyj **CPP**.
 
    > [!TIP]
    > Aby wyświetlić wszystkie dostępne wartości języka, przejrzyj [sekcję Atrybuty elementu Kod](code-snippets-schema-reference.md#attributes) na stronie [Odwołania do schematu fragmentów kodu.](code-snippets-schema-reference.md)
