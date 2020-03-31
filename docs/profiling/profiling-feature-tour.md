@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d23620a1861396971c79551088b898c9b77c86
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: b1ee476a518444bfff7a97a12c9fd814e9509239
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80233096"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412038"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki start: pierwsze spojrzenie na narzędzia profilowania
 
@@ -36,6 +36,21 @@ Podczas debugowania można użyć okna **Narzędzia diagnostyczne** do analizowa
 > [!NOTE]
 > Narzędzia pośmiertne można używać w systemie Windows 7 lub nowszych. System Windows 8 i nowsze są wymagane do uruchamiania narzędzi profilowania za pomocą debugera (okno**Narzędzia diagnostyczne).**
 
+## <a name="examine-performance-using-perftips"></a>Badanie wydajności przy użyciu porad dotyczących wydajności
+
+Często najprostszym sposobem wyświetlania informacji o wydajności jest użycie [porad dotyczących wydajności](../profiling/perftips.md). Za pomocą perfTips, można wyświetlić informacje o wydajności podczas interakcji z kodem. Można sprawdzić informacje, takie jak czas trwania zdarzenia (mierzona od kiedy debuger został ostatnio wstrzymany lub po uruchomieniu aplikacji). Na przykład jeśli krok po kroku kodu (F10, F11), PerfTips pokaż czas trwania środowiska uruchomieniowego aplikacji od operacji poprzedniego kroku do bieżącego kroku.
+
+![Profilowanie Porad dotyczących wycieczek](../profiling/media/prof-tour-perf-tips.png "Profilowanie Porad dotyczących wycieczek")
+
+Porady dotyczące obrażeń od dostępu można użyć, aby sprawdzić, jak długo trwa dla bloku kodu do wykonania lub jak długo trwa dla jednej funkcji, aby zakończyć.
+
+Porady dotyczące programów zapewniają te same zdarzenia, które również są wyświetlane w widoku **Zdarzenia** narzędzi diagnostycznych. W widoku **Zdarzenia** można wyświetlić różne zdarzenia, które występują podczas debugowania, takie jak ustawienie punktu przerwania lub operacji krokowej kodu.
+
+![Widok zdarzenia narzędzi diagnostycznych](../profiling/media/prof-tour-events.png "Narzędzia diagnostyczne Wyświetl zdarzenia")
+
+ > [!NOTE]
+ > Jeśli masz visual studio enterprise, można również zobaczyć [IntelliTrace zdarzenia](../debugger/intellitrace.md) na tej karcie.
+
 ## <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora
 
 Narzędzie Użycie procesora CPU jest dobrym miejscem do rozpoczęcia analizowania wydajności aplikacji. Poinformuje cię więcej o zasobach procesora CPU, które aplikacja zużywa. Aby uzyskać bardziej szczegółowe wskazówki dotyczące narzędzia Użycie procesora CPU, zobacz [Mierzenie wydajności aplikacji przez analizowanie użycia procesora .](../profiling/beginners-guide-to-performance-profiling.md)
@@ -53,24 +68,6 @@ Widok **Użycie procesora CPU** pokazuje listę funkcji uporządkowanych według
 Kliknij dwukrotnie funkcję, która Cię interesuje, a zobaczysz bardziej szczegółowy widok "motyla" z wybranym widokiem w środku okna, funkcją wywołującą po lewej stronie i wywoływanymi funkcjami po prawej stronie. **Treść funkcji** Sekcja pokazuje całkowitą ilość czasu (i procent czasu) spędzonego w treści funkcji z wyłączeniem czasu spędzonego podczas wywoływania i wywoływania funkcji. Te dane mogą pomóc w ocenie, czy sama funkcja jest wąskim gardłem wydajności.
 
 ![Narzędzia diagnostyczne wywoływany widok "motyl"](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Widok wywoływania wywołującego narzędzia diagnostyczne")
-
-> [!TIP]
-> Aby ułatwić analizowanie wydajności, można również użyć [porady perf,](#examine-performance-events-using-perftips) aby przejść przez kod i zidentyfikować, jak długo trwa określone funkcje lub bloki kodu, aby zakończyć.
-
-## <a name="examine-performance-events-using-perftips"></a>Badanie zdarzeń wydajności przy użyciu porad dotyczących wydajności
-
-Często najprostszym sposobem wyświetlania informacji o wydajności jest użycie [porad dotyczących wydajności](../profiling/perftips.md). Za pomocą perfTips, można wyświetlić informacje o wydajności podczas interakcji z kodem. Można sprawdzić informacje, takie jak czas trwania zdarzenia (mierzona od kiedy debuger został ostatnio wstrzymany lub po uruchomieniu aplikacji). Na przykład jeśli krok po kroku kodu (F10, F11), PerfTips pokaż czas trwania środowiska uruchomieniowego aplikacji od operacji poprzedniego kroku do bieżącego kroku.
-
-![Profilowanie Porad dotyczących wycieczek](../profiling/media/prof-tour-perf-tips.png "Profilowanie Porad dotyczących wycieczek")
-
-Porady dotyczące obrażeń od dostępu można użyć, aby sprawdzić, jak długo trwa dla bloku kodu do wykonania lub jak długo trwa dla jednej funkcji, aby zakończyć.
-
-Porady dotyczące programów zapewniają te same zdarzenia, które również są wyświetlane w widoku **Zdarzenia** narzędzi diagnostycznych. W widoku **Zdarzenia** można wyświetlić różne zdarzenia, które występują podczas debugowania, takie jak ustawienie punktu przerwania lub operacji krokowej kodu.
-
-![Widok zdarzenia narzędzi diagnostycznych](../profiling/media/prof-tour-events.png "Narzędzia diagnostyczne Wyświetl zdarzenia")
-
- > [!NOTE]
- > Jeśli masz visual studio enterprise, można również zobaczyć [IntelliTrace zdarzenia](../debugger/intellitrace.md) na tej karcie.
 
 ## <a name="analyze-memory-usage"></a>Analizowanie użycia pamięci
 

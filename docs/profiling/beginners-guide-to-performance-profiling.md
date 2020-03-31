@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d106b15a94e00915f8cd0fd2e69c2918f9fbead9
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1ac7d23c1d4cb245366ecf03c1a8a0e67b11cb55
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79549844"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412024"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mierz wydajność aplikacji, analizując użycie procesora
 
-Narzędzia do profilowania programu Visual Studio umożliwiają analizowanie problemów z wydajnością w aplikacji. W tym artykule pokazano, jak używać karty **Użycie procesora CPU** w narzędziach diagnostycznych w celu uzyskania danych o wydajności dla aplikacji, a także zawiera informacje na temat korzystania z porad dotyczących wydajności.
+Narzędzia do profilowania programu Visual Studio umożliwiają analizowanie problemów z wydajnością w aplikacji. W tym artykule pokazano, jak używać karty **Użycie procesora CPU** w narzędziach diagnostycznych w celu uzyskania danych o wydajności aplikacji.
 
 Po wstrzymaniu debugera narzędzie **Użycie procesora CPU** zbiera informacje o funkcjach wykonywanych w aplikacji. Narzędzie wyświetla listę funkcji, które wykonywały pracę i udostępnia wykres osi czasu, którego można użyć do skupienia się na określonych segmentach sesji próbkowania.
 
@@ -35,7 +35,7 @@ Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania se
 > [!Important]
 > Narzędzia diagnostyczne są obsługiwane dla rozwoju platformy .NET w programie Visual Studio, w tym ASP.NET i rozwoju macierzystego/C++.
 
-W tym artykule omówimy analizowanie użycia procesora CPU w normalnym przepływie pracy debugowania. Można również analizować użycie procesora BEZ dołączonego debugera lub kierowanie na uruchomioną aplikację — aby uzyskać więcej informacji, zobacz [Zbieranie danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchom narzędzia profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+W tym artykule omówimy analizowanie użycia procesora CPU w normalnym przepływie pracy debugowania. Można również analizować użycie procesora BEZ dołączonego debugera lub kierowanie na uruchomioną aplikację — aby uzyskać więcej informacji, zobacz [Zbieranie danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchom narzędzia profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Można również użyć innego narzędzia do profilowania, [Porady perf](../profiling/perftips.md), aby przejść przez kod i zidentyfikować, jak długo trwa określone funkcje lub bloki kodu, aby zakończyć.
 
 Narzędzia profilowania można używać bez debugera w systemie Windows 7 i nowszych. System Windows 8 i nowsze są wymagane do uruchamiania narzędzi profilowania za pomocą debugera (okno**Narzędzia diagnostyczne).**
 
@@ -77,15 +77,9 @@ W tym samouczku zostaną wykonane następujące czynności:
 
      Po **wybraniu opcji Zarejestruj profil procesora,** program Visual Studio rozpocznie rejestrowanie funkcji i czas ich wykonania. Można wyświetlić te dane zbierane tylko wtedy, gdy aplikacja jest zatrzymana w punkcie przerwania.
 
-     > [!TIP]
-     > Aby ułatwić analizowanie wydajności, można również użyć [porady perf,](../profiling/perftips.md) aby przejść przez kod i zidentyfikować, jak długo trwa określone funkcje lub bloki kodu, aby zakończyć.
-
 8. Naciśnij klawisz F5, aby uruchomić aplikację w drugim punkcie przerwania.
 
      Teraz masz teraz dane dotyczące wydajności dla aplikacji specjalnie dla regionu kodu, który działa między dwoma punktami przerwania.
-
-     >[!TIP]
-     > Po wstrzymaniu w punkcie przerwania lub operacji przechodzenia do kodu można również analizować wydajność przy użyciu [porad dotyczących wydajności](#analyze-performance-using-perftips).
 
      Profiler rozpoczyna przygotowywanie danych wątku. Poczekaj, aż się skończy.
 
@@ -163,12 +157,6 @@ Zaleca się rozpoczęcie analizowania danych przez zbadanie listy funkcji w obsz
 
     > [!NOTE]
     > Jeśli widzisz kod w drzewie wywołań oznaczony jako "uszkodzony" kod lub "unwalkable stosu", oznacza to, że zdarzenia śledzenia zdarzeń dla systemu Windows (ETW) prawdopodobnie zostały usunięte. Spróbuj zebrać ten sam ślad po raz drugi, aby rozwiązać ten problem.
-
-## <a name="analyze-performance-using-perftips"></a>Analizowanie wydajności przy użyciu porad dotyczących wydajności
-
-Podczas uruchamiania kodu w debugerze, można również użyć [Porady perf do](../profiling/perftips.md) dogłębnej analizy wydajności. Za pomocą perfTips, można wyświetlić informacje o wydajności podczas interakcji z kodem. Można sprawdzić informacje, takie jak czas trwania zdarzenia (mierzona od kiedy debuger został ostatnio wstrzymany lub po uruchomieniu aplikacji). Na przykład jeśli krok po kroku kodu (F10, F11), PerfTips pokaż czas trwania środowiska uruchomieniowego aplikacji od operacji poprzedniego kroku do bieżącego kroku.
-
-![Analizuj za pomocą porad dotyczących łat](../profiling/media/diag-tools-perftips.png "Analiza zdejmiem na wytłaczanie")
 
 ## <a name="view-external-code"></a>Wyświetl kod zewnętrzny
 

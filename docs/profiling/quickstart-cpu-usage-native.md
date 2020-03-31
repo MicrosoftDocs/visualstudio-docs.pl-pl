@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58c91590e751970f9291c8e13ccb9fc2abcc8728
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 602a185b598410de47dc9d3c98ca2b0ae3c45633
+ms.sourcegitcommit: 0ba0cbff77eac15feab1a73eeee3667006794b29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79550090"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80412007"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Szybki start: analizowanie danych użycia procesora w programie Visual Studio (C++)
 
 Visual Studio zawiera wiele zaawansowanych funkcji, które ułatwią analizowanie problemów z wydajnością w aplikacji. W tym temacie przedstawiono szybki sposób, aby dowiedzieć się niektóre z podstawowych funkcji. W tym miejscu przyjrzymy się narzędziu do identyfikacji wąskich gardeł wydajności ze względu na wysokie użycie procesora CPU. Narzędzia diagnostyczne są obsługiwane dla rozwoju platformy .NET w programie Visual Studio, w tym ASP.NET i rozwoju macierzystego/C++.
 
-Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesją diagnostyczną. Jeśli narzędzie **użycia procesora CPU** opisane w tym miejscu nie daje danych, które są potrzebne, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla Ciebie. W wielu przypadkach wąskie gardło wydajności aplikacji może być spowodowane przez coś innego niż procesor, takich jak pamięć, renderowanie interfejsu użytkownika lub czas żądania sieci. Centrum diagnostyki oferuje wiele innych opcji do rejestrowania i analizowania tego rodzaju danych.
+Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesją diagnostyczną. Jeśli narzędzie **użycia procesora CPU** opisane w tym miejscu nie daje danych, które są potrzebne, [inne narzędzia profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla Ciebie. W wielu przypadkach wąskie gardło wydajności aplikacji może być spowodowane przez coś innego niż procesor, takich jak pamięć, renderowanie interfejsu użytkownika lub czas żądania sieci. Centrum diagnostyki oferuje wiele innych opcji do rejestrowania i analizowania tego rodzaju danych. [PerfTips](../profiling/perftips.md), innego narzędzia profilowania zintegrowanego z debugerem, pozwala również na krok przez kod i zidentyfikować, jak długo trwa określone funkcje lub bloki kodu, aby zakończyć.
 
 System Windows 8 i nowsze są wymagane do uruchamiania narzędzi profilowania za pomocą debugera (okno**Narzędzia diagnostyczne).** W systemie Windows 7 lub nowszym można użyć narzędzia pośmiertnego, [profilera wydajności](../profiling/profiling-feature-tour.md).
 
@@ -143,9 +143,6 @@ System Windows 8 i nowsze są wymagane do uruchamiania narzędzi profilowania za
      ![Ustawianie punktów przerwania profilowania](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Ustawianie punktów przerwania profilowania")
 
     Ustawiając dwa punkty przerwania, można ograniczyć zbieranie danych do części kodu, które chcesz analizować.
-
-    >[!TIP]
-    > Po wstrzymaniu w punkcie przerwania lub operacji przechodzenia do kodu można również analizować wydajność przy użyciu [porad dotyczących wydajności](../profiling/perftips.md).
 
 3. Okno **Narzędzia diagnostyczne** jest już widoczne, chyba że zostało wyłączone. Aby ponownie wyświetlić okno, kliknij przycisk **Debugowanie** > **narzędzi diagnostycznych programu****Windows** > Show .
 
