@@ -1,24 +1,24 @@
 ---
 title: Konwencje formatowania .NET dla EditorConfig
-ms.date: 07/17/2019
+ms.date: 03/31/2020
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f10d4c710c0686b22e29883cabc21550ffd32f8c
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75589230"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527974"
 ---
 # <a name="formatting-conventions"></a>Konwencje formatowania
 
@@ -151,6 +151,8 @@ Reguły formatowania w tej sekcji dotyczą tylko kodu języka C#.
 - [Opcje zawijania](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
+- [Korzystanie z opcji dyrektywy](#using-directive-options) 
+  - csharp_using_directive_placement
 
 ### <a name="new-line-options"></a>Opcje nowej linii
 
@@ -1207,6 +1209,50 @@ public int Foo { get; set; }
 public int MyProperty
 {
     get; set;
+}
+```
+
+- [Korzystanie z opcji dyrektywy](#using-directive-options) 
+  - csharp_using_directive_placement
+  
+### <a name="using-directive-options"></a>Korzystanie z opcji dyrektywy
+
+Ta reguła formatowania dotyczy użycia za pomocą dyrektyw umieszczanych wewnątrz i poza obszarem nazw.
+
+Przykład *pliku .editorconfig:*
+
+```ini
+# 'using' directive preferences
+[*.cs]
+csharp_using_directive_placement = outside_namespace
+csharp_using_directive_placement = inside_namespace
+```
+
+#### <a name="csharp_using_directive_placement"></a>csharp_using_directive_placement
+
+|||
+|-|-|
+| **Nazwa reguły** | csharp_using_directive_placement |
+| **Odpowiednie języki** | C# |
+| **Wprowadzona wersja** | Visual Studio 2019 w wersji 16.1 |
+| **Wartości** | `outside_namespace`- Zostaw za pomocą dyrektyw poza obszarem nazw<br /><br />`inside_namespace`- Zostaw za pomocą dyrektyw wewnątrz obszaru nazw |
+| **Domyślna wartość programu Visual Studio** | `outside_namespace` |
+
+Przykłady kodu:
+
+```csharp
+// csharp_using_directive_placement = outside_namespace
+using System;
+
+namespace Conventions
+{
+
+}
+
+// csharp_using_directive_placement = inside_namespace
+namespace Conventions
+{
+    using System;
 }
 ```
 

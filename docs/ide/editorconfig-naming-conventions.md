@@ -1,21 +1,21 @@
 ---
 title: Konwencje nazewnictwa .NET dla plików EditorConfig
-ms.date: 08/07/2019
+ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ccf62c5ffc3f526eada85478f37480fcf5d75cba
+ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588606"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80528015"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Konwencje nazewnictwa platformy .NET dla EditorConfig
 
@@ -42,7 +42,7 @@ Aby opisać rodzaj symboli, do jakich ma być stosowana reguła nazewnictwa, nal
 Na poniższej liście przedstawiono dopuszczalne wartości i można określić wiele wartości, oddzielając je przecinkiem.
 
 - \*(Użyj tej wartości, aby określić wszystkie symbole)
-- przestrzeń nazw
+- namespace
 - class
 - struktura 
 - interface
@@ -56,6 +56,8 @@ Na poniższej liście przedstawiono dopuszczalne wartości i można określić w
 - type_parameter
 - local
 - local_function
+
+[!NOTE] Członkowie krotki nie są obecnie obsługiwane.
 
 ### <a name="accessibility-levels-of-symbols"></a>Poziomy ułatwień dostępu symboli
 
@@ -168,7 +170,7 @@ Ważność | Efekt
 brak | Reguła jest całkowicie wygaszone.
 refaktoryzowanie lub milczenie | Jeśli ten styl nie jest przestrzegany, nie pokazuj niczego użytkownikowi; jednak automatycznie wygenerowany kod jest zgodny z tym stylem.
 Sugestia | Gdy ten styl nie jest przestrzegany, pokaż go użytkownikowi jako sugestię, jako podstawowe kropki na pierwszych dwóch znakach. Nie ma wpływu w czasie kompilacji.
-ostrzeżenie | Jeśli ten styl nie jest przestrzegany, pokaż ostrzeżenie kompilatora na **liście błędów**.
+warning | Jeśli ten styl nie jest przestrzegany, pokaż ostrzeżenie kompilatora na **liście błędów**.
 error | Jeśli ten styl nie jest przestrzegany, pokaż błąd kompilatora na **liście błędów**.
 
 > [!NOTE]
