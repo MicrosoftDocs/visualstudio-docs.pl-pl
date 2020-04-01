@@ -1,5 +1,5 @@
 ---
-title: 'Krok 4: Dodaj metodę CheckTheAnswer()'
+title: Krok 4. Dodawanie metody CheckTheAnswer()
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,14 +13,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def01817fbd42a0da1a0392e00ba9ccff6876470
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579848"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472612"
 ---
-# <a name="step-4-add-the-checktheanswer-method"></a>Krok 4: Dodaj metodę CheckTheAnswer()
+# <a name="step-4-add-the-checktheanswer-method"></a>Krok 4. Dodawanie metody CheckTheAnswer()
 
 W czwartej części tego samouczka napiszesz `CheckTheAnswer()`metodę, która określa, czy odpowiedzi na problemy matematyczne są poprawne. Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby zapoznać się z omówieniem samouczka, zobacz [Samouczek 2: Tworzenie quizu matematycznego z czasem](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
@@ -32,7 +32,7 @@ W czwartej części tego samouczka napiszesz `CheckTheAnswer()`metodę, która o
 > [!NOTE]
 > Jeśli obserwujesz w języku Visual Basic, użyjesz `Function` słowa kluczowego zamiast zwykłego `Sub` słowa kluczowego, ponieważ ta metoda zwraca wartość. To naprawdę takie proste: sub nie zwraca wartości, ale funkcja nie.
 
-1. Dodaj `CheckTheAnswer()` metodę.
+1. Dodaj `CheckTheAnswer()` metodę. Ta metoda powinna być zgodna z innymi metodami, które zostały wprowadzone, takimi jak `StartTheQuiz()`.
 
      Gdy ta metoda jest wywoływana, dodaje wartości addend1 i addend2 i porównuje <xref:System.Windows.Forms.NumericUpDown> wynik do wartości w formancie sumy. Jeśli wartości są równe, metoda zwraca `true`wartość . W przeciwnym razie metoda `false`zwraca wartość . Kod powinien wyglądać następująco.
 
@@ -43,7 +43,7 @@ W czwartej części tego samouczka napiszesz `CheckTheAnswer()`metodę, która o
 
      Następnie sprawdź odpowiedź, aktualizując kod w metodzie dla programu <xref:System.Windows.Forms.Timer.Tick> obsługi zdarzeń czasomierza, aby wywołać nową `CheckTheAnswer()` metodę.
 
-2. Dodaj następujący kod `if else` do instrukcji.
+2. Dodaj następujący kod `if else` do instrukcji `Timer1_Tick()` w metodzie, tak aby czasomierz zatrzymuje się, gdy użytkownik pobiera odpowiedź prawo.
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]

@@ -9,28 +9,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3996ef0db25a6552a1a32cd121dbf2f750d460c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 84efda930066c4236fa4397fbadf287c6774fdb0
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114465"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472779"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Jak: Wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji
 
-Po utworzeniu projektu w programie Visual Studio IDE, można wyświetlić informacje o tej kompilacji w oknie **dane wyjściowe.** Korzystając z tych informacji, można na przykład rozwiązać problem z awarią kompilacji. 
+Po utworzeniu projektu w programie Visual Studio IDE, można wyświetlić informacje o tej kompilacji w oknie **dane wyjściowe.** Korzystając z tych informacji, można na przykład rozwiązać problem z awarią kompilacji.
 
-- W przypadku projektów języka C++ można również wyświetlić te same informacje w pliku *txt,* który jest tworzony i zapisywany automatycznie. 
+- W przypadku projektów języka C++ można również wyświetlić te same informacje w pliku dziennika, który jest tworzony i zapisywany podczas tworzenia projektu. 
 
-- W przypadku projektów kodu zarządzanego można kliknąć okno danych wyjściowych kompilacji i nacisnąć klawisz **Ctrl**+**S**. Program Visual Studio monituje o lokalizację, aby zapisać informacje z okna **dane wyjściowe** w pliku *txt.* 
+- W przypadku projektów kodu zarządzanego można kliknąć okno danych wyjściowych kompilacji i nacisnąć klawisz **Ctrl**+**S**. Program Visual Studio monituje o lokalizację, aby zapisać informacje z okna **dane wyjściowe** w pliku dziennika.
 
 Ide można również użyć, aby określić, jakie rodzaje informacji, które mają być wyświetlane o każdej kompilacji.
 
-Jeśli tworzysz dowolny rodzaj projektu przy użyciu MSBuild, można utworzyć plik *txt,* aby zapisać informacje o kompilacji. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
+Jeśli tworzysz dowolny rodzaj projektu przy użyciu MSBuild, można utworzyć plik dziennika, aby zapisać informacje o kompilacji. Aby uzyskać więcej informacji, zobacz [Uzyskiwanie dzienników kompilacji](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Aby wyświetlić plik dziennika kompilacji dla projektu języka C++
 
-1. W **Eksploratorze windows** lub **Eksploratorze plików**otwórz następujący plik: * \\...\Wersja \<\>programu Visual Studio \Projekty\\<ProjectName\> \\<ProjectName\>\Debug\\<ProjectName\>.txt*
+1. W **Eksploratorze Windows** lub **Eksploratorze plików**otwórz następujący plik (względem folderu głównego projektu): *Zwolnij*\\<ProjectName>\>. Dziennik* lub *Debugowanie\\<\>ProjectName .log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Aby utworzyć plik dziennika kompilacji dla projektu kodu zarządzanego
 

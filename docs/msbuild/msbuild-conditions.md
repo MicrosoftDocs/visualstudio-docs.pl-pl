@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e69e5c8fc7404c0c313774271fd07b6315e5270
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0d51aa0a5ef995abbe150160e378aa8885cc9706
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633372"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472683"
 ---
 # <a name="msbuild-conditions"></a>Warunki MSBuild
 
@@ -39,6 +39,22 @@ MSBuild obsługuje określony zestaw warunków, które mogą `Condition` być st
 |Lub|Ocenia, `true` czy co najmniej jeden z argumentów `true`ocenia .|
 |()|Mechanizm grupowania, który `true` ocenia, czy wyrażenia `true`zawarte wewnątrz oceniają do .|
 |$if$ ( %expression% ), $else$, $endif$|Sprawdza, czy `%expression%` określony odpowiada wartości ciągu przekazanego parametru szablonu niestandardowego. Jeśli `$if$` warunek ocenia `true`, a następnie jego instrukcje są uruchamiane; w przeciwnym `$else$` razie warunek jest sprawdzany. Jeśli `$else$` warunek `true`jest , a następnie jego instrukcje są uruchamiane; w przeciwnym `$endif$` razie warunek kończy ocenę wyrażenia.<br /><br /> Aby zapoznać się z przykładami użycia, zobacz [logika parametru projektu/elementu programu Visual Studio](https://stackoverflow.com/questions/6709057/visual-studio-project-item-template-parameter-logic).|
+
+Metody ciągu można użyć w warunkach, jak pokazano w <xref:System.String.TrimEnd> poniższym przykładzie, w którym funkcja jest używana do porównywania tylko odpowiedniej części ciągu, aby odróżnić .NET Framework i .NET Core framework docelowych.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;net48;netstandard2.1;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework.TrimEnd('0123456789.'))' == 'net'">
+        <!-- Properties for .NET Framework -->
+    </PropertyGroup>
+
+</Project>
+```
 
 ## <a name="see-also"></a>Zobacz też
 

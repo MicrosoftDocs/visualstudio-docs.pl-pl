@@ -33,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ed55d65555425b04749696b5510cfe799d2a1194
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568415"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472819"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Okno dialogowe Opcje: Edytor \> tekstu ogólny
 
@@ -93,6 +93,10 @@ Gdy ta opcja jest zaznaczona, wyświetla szare pole wokół linii kodu, w które
 ### <a name="show-structure-guide-lines"></a>Pokaż linie prowadzące konstrukcji
 
 Po zaznaczeniu tej opcji w edytorze pojawiają się pionowe linie, które są zgodne ze strukturalnymi blokami kodu, co umożliwia łatwą identyfikację poszczególnych bloków kodu.
+
+### <a name="show-file-health-indicator"></a>Pokaż wskaźnik kondycji pliku
+
+Po wybraniu tej opcji pasek wskaźnika kondycji pliku (błędy, ostrzeżenia) z opcjami oczyszczania kodu zostanie wyświetlony w lewym dolnym rogu edytora.
 
 ## <a name="see-also"></a>Zobacz też
 

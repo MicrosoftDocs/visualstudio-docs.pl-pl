@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 987d358abcccadf36d15593722ff55ba4b879d03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3caa8a76f461515c0d2265590383861b6e10d0a1
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "71950698"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472664"
 ---
 # <a name="container-tools-build-properties"></a>Właściwości kompilacji narzędzi kontenerowych
 
-Można dostosować jak Visual Studio tworzy projekty kontenerów, ustawiając właściwości, które MSBuild używa do tworzenia projektu. Na przykład można zmienić nazwę pliku Dockerfile, określić znaczniki i etykiety obrazów, podać dodatkowe argumenty przekazywane do poleceń platformy Docker i kontrolować, czy program Visual Studio wykonuje pewne optymalizacje wydajności, takie jak tworzenie poza środowiska kontenerowego. Można również ustawić właściwości debugowania, takie jak nazwa pliku wykonywalnego do uruchomienia i argumenty wiersza polecenia, aby zapewnić.
+Można dostosować jak Visual Studio tworzy projekty kontenerów, ustawiając właściwości, które MSBuild używa do tworzenia projektu. Na przykład można zmienić nazwę Dockerfile, określić tagi i etykiety dla obrazów, podać dodatkowe argumenty przekazywane do poleceń platformy Docker i kontrolować, czy program Visual Studio wykonuje pewne optymalizacje wydajności, takie jak tworzenie poza środowiskiem kontenera. Można również ustawić właściwości debugowania, takie jak nazwa pliku wykonywalnego do uruchomienia i argumenty wiersza polecenia, aby zapewnić.
 
 Aby ustawić wartość właściwości, edytuj plik projektu. Załóżmy na przykład, że plik dockerfile nosi nazwę *MyDockerfile*. Właściwość w `DockerfileFile` pliku projektu można ustawić w następujący sposób.
 
@@ -41,7 +41,7 @@ W poniższej tabeli przedstawiono właściwości MSBuild dostępne dla projektó
 | DockerImageLabels (DockerImageLabels) | Domyślny zestaw etykiet zastosowanych do obrazu platformy Docker. | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 lub nowszy|
 | DockerFastModeProjectMountDirectory|W **trybie szybkiego**ta właściwość określa, gdzie katalog wyjściowy projektu jest montowany na woluminie w uruchomionym kontenerze.|C:\app (Windows) lub /app (Linux)|1.9.2 lub nowsze|
 | DockerfileBuildArguments (DockerfileBuildArguments) | Dodatkowe argumenty przekazywane do polecenia kompilacji platformy Docker. | Nie dotyczy. |1.0.1872750 lub nowsza|
-| DockerfileContext (DockerfileContext) | Domyślny kontekst używany podczas tworzenia obrazu platformy Docker. | Zestaw przez program Visual Studio. |1.0.1872750 lub nowsza|
+| DockerfileContext (DockerfileContext) | Domyślny kontekst używany podczas tworzenia obrazu platformy Docker jako ścieżki względem pliku dockerfile. | Zestaw przez program Visual Studio. |1.0.1872750 lub nowsza|
 | DockerfileFastModeStage (DockerfileFastModeStage) | Etap Dockerfile (czyli cel) ma być używany podczas tworzenia obrazu w trybie debugowania. | Pierwszy etap znaleziony w pliku dockerfile (baza) |
 | Plik dockerfile | W tym artykule opisano domyślny plik dockerfile, który będzie używany do tworzenia/uruchamiania kontenera dla projektu. Może to być również ścieżka. | Plik dockerfile |1.0.1872750 lub nowsza|
 | DockerfileRunArgument (DockerfileRunArgument) | Dodatkowe argumenty przekazywane do polecenia uruchamiania platformy Docker. | Nie dotyczy. |1.0.1872750 lub nowsza|

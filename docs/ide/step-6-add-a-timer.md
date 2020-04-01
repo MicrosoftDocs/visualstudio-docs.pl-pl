@@ -1,6 +1,6 @@
 ---
-title: 'Krok 6: Dodaj timer'
-ms.date: 11/04/2016
+title: Krok 6. Dodawanie czasomierza
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d050df688d4d1efec75245e6f48d748464170c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 0473ab07155e0f132e8e6207361e409b804257f2
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579314"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472766"
 ---
-# <a name="step-6-add-a-timer"></a>Krok 6: Dodaj timer
+# <a name="step-6-add-a-timer"></a>Krok 6. Dodawanie czasomierza
 Następnie należy dodać <xref:System.Windows.Forms.Timer> formant do pasującej gry. Czasomierz czeka określoną liczbę milisekund, a następnie uruchamia zdarzenie, określane jako *znacznik*. Jest to przydatne dla rozpoczęcia czynności lub regularnego powtarzania czynności. W tym przypadku, będziesz używał czasomierza, aby umożliwić graczom wybór dwóch ikon, a jeśli ikony nie będą pasowały, ukryć te dwie ikony po krótkiej chwili.
 
 ## <a name="to-add-a-timer"></a>Aby dodać czasomierz
@@ -48,12 +48,12 @@ Następnie należy dodać <xref:System.Windows.Forms.Timer> formant do pasujące
     > [!NOTE]
     > Obiekt Timer ma `Start()` metodę, która uruchamia czasomierz i `Stop()` metodę, która go zatrzymuje. Po ustawieniu timera **Enabled** właściwość **true** w oknie **Właściwości,** zaczyna tykać natychmiast po rozpoczęciu programu. Ale po pozostawieniu go ustawionego na **False**, `Start()` nie zaczyna tykać, dopóki jego metoda nie zostanie wywołana. Zwykle czasomierz uruchamia jego Tick zdarzenia w kółko, za pomocą **Interval** właściwości, aby określić, ile milisekund czekać między znacznikami. Być może zauważyłeś, jak metoda `Stop()` czasomierza jest wywoływana wewnątrz Tick zdarzenia. To stawia timer w *trybie jednego strzału,* co oznacza, że gdy `Start()` metoda jest wywoływana, czeka na określony interwał, wyzwala pojedyncze zdarzenie Tick, a następnie zatrzymuje.
 
-4. Aby wyświetlić nowy czasomierz w akcji, przejdź do edytora kodu i `label_Click()` dodaj następujący kod do górnej i dolnej części metody obsługi zdarzeń. (Dodajesz instrukcję `if` u góry i trzy instrukcje na dole; reszta metody pozostaje taka sama).)
+4. Aby wyświetlić nowy czasomierz w akcji, przejdź do edytora kodu i `label_Click()` dodaj następujący kod do górnej i dolnej części metody obsługi zdarzeń. (Dodajesz dwie `if` instrukcje do góry i trzy instrukcje na dole; reszta metody pozostaje taka sama.)
 
      [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
      [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
 
-     Kod w górnej części metody sprawdza, czy czasomierz został uruchomiony przez sprawdzenie wartości **Enabled** właściwości. W ten sposób, jeśli gracz wybierze pierwszą i drugą kontrolkę Label i rozpocznie się timer, wybranie trzeciej etykiety nic nie zrobi.
+     Kod w górnej części metody sprawdza, czy czasomierz został uruchomiony przez sprawdzenie wartości **Enabled** właściwości. W ten sposób, jeśli gracz wybierze pierwszą i drugą kontrolkę Label i rozpocznie się timer, wybranie trzeciej etykiety nic nie zrobi. Zapobiega to również szybkiemu kliknięciu gracza po raz trzeci, zanim gra będzie gotowa na kolejne pierwsze kliknięcie. 
 
      Kod w dolnej części metody `secondClicked` ustawia zmienną odniesienia do śledzenia drugiego Label kontroli, że gracz wybrał, a następnie ustawia kolor ikony tej etykiety na czarny, aby było widoczne. Następnie uruchamia czasomierz w trybie jednego zadziałania, tak że czeka on 750 milisekund, a następnie uruchamia pojedyncze zdarzenie Taktu. Program obsługi zdarzeń tick czasomierza ukrywa dwie ikony i resetuje zmienne `firstClicked` i `secondClicked` odwołania, dzięki czemu formularz jest gotowy do odtwarzacza, aby wybrać inną parę ikon.
 

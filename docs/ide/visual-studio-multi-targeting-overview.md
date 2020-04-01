@@ -1,6 +1,6 @@
 ---
 title: Ukierunkowane struktury platformy .NET
-ms.date: 02/06/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,20 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 48d770f5d88e19c749c1a1e657c369089d4c7afb
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303422"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472736"
 ---
 # <a name="framework-targeting-overview"></a>Omówienie kierowania na ramy
 
 W programie Visual Studio można określić wersję platformy .NET, która ma być kierowana do projektu. Określanie wartości docelowych platformy pomaga zagwarantować, że aplikacja używa tylko funkcje, które są dostępne w określonej wersji framework. Dla aplikacji .NET Framework do uruchomienia na innym komputerze, wersja struktury, że obiekty docelowe aplikacji musi być zgodna z wersją struktury, która jest zainstalowana na komputerze.
 
-Rozwiązanie programu Visual Studio może zawierać projekty przeznaczone dla różnych wersji platformy .NET.
-
-Aby uzyskać więcej informacji na temat struktur docelowych, zobacz [struktury docelowe](/dotnet/standard/frameworks).
+Rozwiązanie programu Visual Studio może zawierać projekty przeznaczone dla różnych wersji platformy .NET.  Należy jednak pamiętać, że można tworzyć tylko względem jednej wersji platformy .NET przy użyciu warunków referencyjnych dla pojedynczej kompilacji lub rekursywnie budować różne pliki binarne dla każdej wersji.  Aby uzyskać więcej informacji na temat struktur docelowych, zobacz [struktury docelowe](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Można również kierować aplikacje dla różnych platform. Aby uzyskać więcej informacji, zobacz [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).

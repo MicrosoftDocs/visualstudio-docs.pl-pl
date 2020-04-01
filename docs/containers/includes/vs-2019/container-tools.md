@@ -7,12 +7,12 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bd9ac1bda9cb5f5d9cc5d84248200434426307c8
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76922998"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80501518"
 ---
 Za pomocą programu Visual Studio można łatwo tworzyć, debugować i uruchamiać konteneryzowane aplikacje .NET, ASP.NET i ASP.NET Core i publikować je w usłudze Azure Container Registry (ACR), Centrum platformy Docker, usłudze Azure App Service lub własny rejestr kontenerów. W tym artykule opublikujemy aplikację ASP.NET Core do ACR.
 
@@ -74,6 +74,9 @@ Jeśli w oknie dialogowym nowego projektu zostanie zaznaczone pole wyboru **Konf
 Wybierz pozycję **Docker** z listy rozwijanej debugowania na pasku narzędzi i rozpocznij debugowanie aplikacji. Może zostać wyświetlony komunikat z monitem o ufanie certyfikatowi; wybrać, aby zaufać certyfikatowi, aby kontynuować.
 
 Opcja **Narzędzia kontenerów** w oknie **Dane wyjściowe** pokazuje, jakie akcje mają miejsce. Po raz pierwszy pobranie obrazu bazowego może trochę potrwać, ale w kolejnych biegach jest znacznie szybsze.
+
+>[!NOTE]
+> Jeśli chcesz zmienić porty do debugowania, możesz to zrobić w pliku *launchSettings.json.* Zobacz [Ustawienia uruchamiania kontenera](../../container-launch-settings.md).
 
 ## <a name="containers-window"></a>Okno Kontenery
 

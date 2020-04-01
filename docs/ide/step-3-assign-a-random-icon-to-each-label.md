@@ -1,6 +1,6 @@
 ---
-title: 'Krok 3: Przypisz losową ikonę do każdej etykiety'
-ms.date: 11/04/2016
+title: Krok 3. Przypisywanie losowej ikony do każdej etykiety
+ms.date: 03/21/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 627b798827cd0b966d1f34336c7e1119841f9d4a
+ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579397"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80472631"
 ---
-# <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3: Przypisz losową ikonę do każdej etykiety
+# <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3. Przypisywanie losowej ikony do każdej etykiety
 
 Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie należy do szczególnie trudnych. Aby tego uniknąć, przypisz ikony losowo do formantów Label w formularzu `AssignIconsToSquares()` za pomocą metody.
 
@@ -44,7 +44,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
     > [!NOTE]
     > Używane są nazwy „iconLabel” (etykieta ikony) i „control” (formant), ponieważ są opisowe. Można zamiast nich użyć innych nazw, a kod zadziała dokładnie tak samo, o ile zmieni się nazwę w każdej instrukcji wewnątrz pętli.
 
-     Metoda `AssignIconsToSquares()` iteruje za pośrednictwem każdego formantu etykiety w TableLayoutPanel i wykonuje te same instrukcje dla każdego z nich. Te instrukcje wyciągają losową ikonę z listy dodanej w [kroku 2: Dodaj obiekt Random i listę ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (Dlatego na liście uwzględniono po dwie ikony, więc do losowych kontrolek etykiet przypisano parę ikon).
+     Metoda `AssignIconsToSquares()` iteruje za pośrednictwem każdego formantu etykiety w TableLayoutPanel i wykonuje te same instrukcje dla każdego z nich. Te instrukcje wyciągają losową ikonę z listy dodanej w [kroku 2: Dodaj obiekt Random i listę ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Przypominamy, że każda z tych ikon jest literą w czcionce Webdings, dlatego są one wyrażone jako tekst w tej metodzie. Na liście znalazły się dwie ikony, dzięki czemu do losowych kontrolek etykiet przypisano parę ikon.
 
      Przyjrzyj się bliżej kodowi, który działa wewnątrz `foreach` lub `For Each` pętli. Ten kod jest przedstawiony tutaj.
 
@@ -55,7 +55,7 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
 
      Należy pamiętać, że jeśli nie wiesz na pewno, co wykonuje jakaś część kodu, możesz umieścić wskaźnik myszy nad elementem kodu i przeczytać dymek z podpowiedzią. Możesz także przejrzeć każdy wiersz kodu, gdy program jest uruchomiony przy użyciu debugera Visual Studio. Zobacz [Jak: Krok z debugerem w programie Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx) lub [Nawiguj po kodzie z debugerem, aby](../debugger/navigating-through-code-with-the-debugger.md) uzyskać więcej informacji.
 
-3. Aby wypełnić planszę z ikonami, musisz `AssignIconsToSquares()` wywołać metodę, gdy tylko program zostanie uruchomiony. Jeśli używasz języka C#, dodaj instrukcję tuż `InitializeComponent()` poniżej wywołania do metody w_konstruktorze_ **Form1,** więc formularz wywołuje nową metodę, aby skonfigurować się przed jej pokazano. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktory (Przewodnik programowania Języka C# lub](/dotnet/csharp/programming-guide/classes-and-structs/constructors) [Użyj konstruktorów i destruktorów](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) w języku Visual Basic, aby uzyskać więcej informacji.
+3. Aby wypełnić planszę z ikonami, musisz `AssignIconsToSquares()` wywołać metodę, gdy tylko program zostanie uruchomiony. Jeśli używasz języka C#, dodaj instrukcję tuż `InitializeComponent()` poniżej wywołania do metody w _konstruktorze_ **Form1,** więc formularz wywołuje nową metodę, aby skonfigurować się przed jej pokazano. Konstruktory są wywoływane podczas tworzenia nowego obiektu, takiego jak klasa lub struktura. Zobacz [konstruktory (Przewodnik programowania Języka C# lub](/dotnet/csharp/programming-guide/classes-and-structs/constructors) [Użyj konstruktorów i destruktorów](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) w języku Visual Basic, aby uzyskać więcej informacji.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 
@@ -67,17 +67,14 @@ Jeśli ikony w każdej grze są wyświetlane w tych samych komórkach, gra nie n
     End Sub
     ```
 
-4. Zapisz program i go uruchom. Powinien się wyświetlić formularz z losowymi ikonami przypisanymi do każdej etykiety.
+4. Zapisz program i go uruchom. Powinien się wyświetlić formularz z losowymi ikonami przypisanymi do każdej etykiety. 
 
-5. Zamknij program i uruchom go ponownie. Zauważ, że różne ikony są przypisywane do każdej etykiety, jak pokazano na poniższej ilustracji.
+5. Zamknij program i uruchom go ponownie. Zauważ, że różne ikony są przypisywane do każdej etykiety, jak pokazano na poniższej ilustracji. 
 
      ![Gra w dopasowywanie z losowymi ikonami](../ide/media/express_tut4step3.png)<br/>
 *Gra w dopasowywanie z losowymi ikonami*
 
      Ikony są teraz widoczne, ponieważ nie zostały ukryte. Aby ukryć je przed odtwarzaczem, można ustawić właściwości **ForeColor** każdej etykiety na ten sam kolor, co jego właściwość **BackColor.**
-
-    > [!TIP]
-    > Innym sposobem ukrycia formantów, takich jak etykiety, jest ustawienie ich właściwości **Widoczne** na **False**.
 
 6. Aby ukryć ikony, zatrzymaj program i usuń znaczniki komentarzy `For Each` dla komentowanego wiersza kodu wewnątrz pętli.
 
