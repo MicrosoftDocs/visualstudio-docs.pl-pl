@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Dowiedz się, jak można używać usługi Azure DevOps jako subskrybenta programu Visual Studio.
-ms.openlocfilehash: 73c6ae54ed39375e695fd1d68b972edb1ec9b46c
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 11bd1262e72042b01c2514edc3bc3158325b9417
+ms.sourcegitcommit: 67dd2aedfe9752afaec9625ed3056fa03bd2699e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232041"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80607166"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści dotyczące usługi Azure DevOps dla subskrybentów programu Visual Studio
 Jako aktywny subskrybent programu Visual Studio można użyć szeregu funkcji w usłudze Azure DevOps, które są dołączone do subskrypcji jako korzyści. Te same funkcje będą mogły korzystać z tych samych funkcji w każdej organizacji usługi Azure DevOps, w której jesteś członkiem, niezależnie od tego, czy organizacja została utworzona, czy została dodana przez inną osobę.
@@ -55,7 +55,7 @@ Jeśli nie widzisz wszystkich subskrypcji, możesz mieć jeden lub więcej przyp
 
 ## <a name="next-steps"></a>Następne kroki
 Dowiedz się więcej o funkcjach programu Azure DevOps:
-- [Tablice platformy Azure & repozytorium (podstawowe)](https://azure.microsoft.com/services/devops/compare-features/)
+- [Tablice platformy Azure & repozytorium (plan podstawowy)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
