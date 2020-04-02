@@ -1,7 +1,7 @@
 ---
 title: Tworzenie instalacji sieciowej
 description: Dowiedz się, jak utworzyć punkt instalacji sieciowej do wdrażania programu Visual Studio w przedsiębiorstwie.
-ms.date: 10/29/2019
+ms.date: 03/27/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bc31b6c5286e5d02d5fd6d4da441a001f190de90
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ea7efd82aa25844e8eb33745aa53d44be1ed14f6
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303408"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544063"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Tworzenie instalacji sieciowej programu Visual Studio
 
@@ -237,8 +237,11 @@ Administratorzy mogą wdrażać program Visual Studio na klienckich stacjach rob
 
 Po zainstalowaniu z układu, zawartość, która jest instalowana jest pobierana z układu. Jeśli jednak wybierzesz składnik, który nie znajduje się w układzie, zostanie on nabyty z Internetu.  Jeśli chcesz uniemożliwić instalatorowi programu Visual Studio pobieranie zawartości, której `--noWeb` brakuje w układzie, użyj tej opcji. Jeśli `--noWeb` jest używany, a w układzie brakuje zawartości wybranej do zainstalowania, instalacja nie powiedzie się.
 
+> [!TIP]
+> Jeśli chcesz zainstalować ze źródła w trybie offline na komputerze `--noWeb` `--noUpdateInstaller` niezłączonym z Internetem, określ zarówno opcje, jak i opcje. Ten pierwszy zapobiega pobieraniu zaktualizowanych obciążeń, składników i tak dalej. Ten ostatni uniemożliwia instalatorowi samoaktualizowanie się z sieci Web.
+
 > [!IMPORTANT]
-> Ta `--noWeb` opcja nie uniemożliwia instalatorowi programu Visual Studio sprawdzania dostępności aktualizacji. Aby uzyskać więcej informacji, zobacz [aktualizacje kontroli do sieciowych wdrożeń programu Visual Studio.](controlling-updates-to-visual-studio-deployments.md)
+> Ta `--noWeb` opcja nie uniemożliwia instalacji programu Visual Studio na komputerze podłączonym do Internetu sprawdzania dostępności aktualizacji. Aby uzyskać więcej informacji, zobacz [aktualizacje kontroli do sieciowych wdrożeń programu Visual Studio.](controlling-updates-to-visual-studio-deployments.md)
 
 ### <a name="error-codes"></a>Kody błędów
 
@@ -280,17 +283,18 @@ Jeśli chcesz utworzyć układ dla starszej wersji programu [https://my.visualst
 
 Jeśli wystąpi problem z instalacją w trybie offline, chcemy o tym wiedzieć. Najlepszym sposobem, aby nam to powiedzieć, jest użycie narzędzia [Zgłoś problem.](../ide/how-to-report-a-problem-with-visual-studio.md) Korzystając z tego narzędzia, możesz wysłać nam dane telemetryczne i dzienniki, których potrzebujemy, aby pomóc nam zdiagnozować i rozwiązać problem.
 
-Oferujemy również opcję pomocy technicznej [**na czacie na żywo**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) w przypadku problemów związanych z instalacją.
+Oferujemy również opcję obsługi [**czatu instalacyjnego**](https://visualstudio.microsoft.com/vs/support/#talktous) (tylko w języku angielskim) w przypadku problemów związanych z instalacją.
 
 Mamy również inne opcje wsparcia. Aby uzyskać listę, zobacz naszą stronę [opinie.](../ide/feedback-options.md)
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Przewodnik dla administratora programu Visual Studio](visual-studio-administrator-guide.md)
+- [Podręcznik administratora programu Visual Studio](visual-studio-administrator-guide.md)
 - [Aktualizowanie instalacji sieciowej programu Visual Studio](update-a-network-installation-of-visual-studio.md)
 - [Rozwiązywanie problemów z błędami związanymi z siecią podczas instalowania lub używania programu Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Sterowanie aktualizacjami wdrożeń programu Visual Studio opartych na sieci](controlling-updates-to-visual-studio-deployments.md)
 - [Cykl życia produktu i serwis programu Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Aktualizowanie programu Visual Studio w obrębie punktu odniesienia obsługi](update-servicing-baseline.md)
-- [Instalowanie programu Visual Studio za pomocą parametrów wiersza polecenia](use-command-line-parameters-to-install-visual-studio.md)
+- [Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Identyfikatory obciążeń i składników programu Visual Studio](workload-and-component-ids.md)
+- [Instalowanie certyfikatów wymaganych do instalacji programu Visual Studio w trybie offline](/install-certificates-for-visual-studio-offline.md)

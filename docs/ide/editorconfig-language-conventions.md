@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 0c06d6c16082a8300092e36b9bbed126c66f8af4
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: a3f80eb555ef11a1e0a462e93d4508e778bd987d
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80528029"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80544011"
 ---
 # <a name="language-conventions"></a>Konwencje języka
 
@@ -108,7 +108,6 @@ Reguły stylu w tej sekcji mają zastosowanie zarówno do języka C# i Visual Ba
   - styl\_\_dotnet\_preferuje\_wywnioskowane tuple_names
   - \_styl\_dotnet\_preferuje\_\_wywnioskowane typu anonimowego\_member_names
   - styl\_\_dotnet\_\_preferuje właściwości auto
-  - \_styl\_dotnet\_\_preferuje\_\_to\_\_sprawdzanie wartości null\_w metodzie równości odwołań
   - \_Styl\_dotnet\_preferuje\_\_wyrażenie warunkowe\_niż przypisanie
   - \_styl\_dotnet\_preferuje\_\_wyrażenie warunkowe\_niż zwracanie
   - styl\_\_dotnet\_\_preferuje przypisanie złożone
@@ -1129,7 +1128,8 @@ Reguły stylu w tej sekcji mają zastosowanie tylko do języka C#.
 - [Preferencje sprawdzania wartości "Null"](#c-null-checking-preferences)
   - throw_expression w\_\_stylu csharp
   - delegate_call\_warunkowe\_\_w stylu csharp
-- [Preferencje modyfikatora](#normalize-modifiers) \_-csharp preferowane\_modifier_order
+- [Preferencje modyfikatora](#normalize-modifiers)
+  - csharp\_\_preferował modifier_order
 - [Preferencje bloków kodu](#code-block-preferences)
   - \_prefer_braces
 - [Nieużywane preferencje wartości](#unused-value-preferences)

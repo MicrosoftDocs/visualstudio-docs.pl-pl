@@ -3,12 +3,12 @@ author: John-Hart
 ms.topic: include
 ms.date: 08/14/2019
 ms.author: johnhart
-ms.openlocfilehash: 38f6de56d26cbcaf8739ea8458d846c5a2daf721
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 8bf2f79a12c606e58e60c94854d533eedbc9f395
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "69547989"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80573182"
 ---
 > [!NOTE]
-> Interesuje Cię opracowywanie rozwiązań, które zwiększają możliwości pakietu Office na [wielu platformach](https://dev.office.com/add-in-availability)? Zapoznaj się z nowym [modelem dodatków pakietu Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Dodatki pakietu Office mają niewielki wpływ w porównaniu z dodatkami i rozwiązaniami programu VSTO oraz można je kompilować przy użyciu prawie dowolnej technologii programowania sieci Web, takiej jak HTML5, JavaScript, CSS3 i XML.
+> Chcesz opracować rozwiązania rozszerzające środowisko pakietu Office na wielu platformach? Zapoznaj się z nowym [modelem dodatków pakietu Office](/office/dev/add-ins/). Dodatki pakietu Office mają niewielki rozmiar w porównaniu z dodatkami i rozwiązaniami VSTO i można je tworzyć przy użyciu prawie każdej technologii programowania sieci web, takiej jak HTML5, JavaScript, CSS3 i XML.

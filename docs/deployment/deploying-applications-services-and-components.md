@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 1a45dea4b386be418f078f6947487b42f7d968e7
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "72806917"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543957"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Pierwsze spojrzenie na wdrożenie w programie Visual Studio
 
@@ -146,7 +146,7 @@ Za pomocą usługi Azure Pipelines można włączyć ciągłe wdrażanie aplikac
 
 | Typ aplikacji | Scenariusz wdrażania | Link |
 | --- | --- | --- |
-| **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku pakietu Office](https://dev.office.com/docs/add-ins/publish/publish) |
+| **Aplikacja pakietu Office** | Dodatek dla pakietu Office można opublikować w programie Visual Studio. | [Wdrażanie i publikowanie dodatku pakietu Office](/office/dev/add-ins/publish/publish) |
 | **Usługa WCF lub OData** | Inne aplikacje mogą korzystać z usług WCF RIA, które można wdrożyć na serwerze sieci web. | [Tworzenie i wdrażanie usług danych WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch nie jest już obsługiwany począwszy od programu Visual Studio 2017, ale nadal można wdrożyć w programie Visual Studio 2015 i wcześniej. | [Wdrażanie aplikacji LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 

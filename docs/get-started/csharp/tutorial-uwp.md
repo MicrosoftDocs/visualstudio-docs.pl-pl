@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: cb559bc21b70b66d64bc44fb4269c97304dd81c3
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580003"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543932"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Samouczek: Utwórz pierwszą uniwersalną aplikację platformy systemu Windows w programie Visual Studio za pomocą&#35; XAML i C
 
@@ -42,6 +42,9 @@ Najpierw utwórz projekt platformy uniwersalnej systemu Windows. Typ projektu za
 1. Na górnym pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
 1. W lewym okienku okna dialogowego **Nowy projekt** rozwiń węzeł **Visual C#,** a następnie wybierz pozycję **System Uniwersalny systemu Windows**. W środkowym okienku wybierz pozycję **Pusta aplikacja (uniwersalny system Windows).** Następnie nazwij projekt *HelloWorld* i wybierz **PRZYCISK OK**.
+
+   > [!NOTE]
+   > Upewnij się, że lokalizacja projektu źródłowego znajduje się na dysku sformatowanym w systemie **plików NTFS (New Technology File System),** takim jak dysk systemu operacyjnego. W przeciwnym razie mogą wystąpić problemy z tworzeniem i uruchamianiem projektu. 
 
    ![Szablon projektu uniwersalnego systemu Windows w oknie dialogowym Nowy projekt w programie Visual Studio IDE](media/new-project-csharp-uwp-helloworld.png)
 

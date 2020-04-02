@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 5f1a617c5562c4f95fec94ae449f48b681fcb7ef
+ms.sourcegitcommit: 054815dc9821c3ea219ae6f31ebd9cd2dc8f6af5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984885"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80543757"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do korzystania z platformy ASP.NET Core
 
@@ -234,7 +234,7 @@ Upewnij się, że wszystkie cztery kroki zostały pomyślnie ukończone, aby upe
 
 Ten przewodnik dał wprowadzenie do ASP.NET Core. Opisano w nim, co to jest, kiedy go używać i podano informacje dotyczące używania go w programie Visual Studio dla komputerów Mac.
 Aby uzyskać więcej informacji na temat kolejnych kroków w tym miejscu, zapoznaj się z następującymi przewodnikami:
-- ASP.NET dokumenty [Core.](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc)
+- ASP.NET dokumenty [Core.](/aspnet/core/)
 - [Tworzenie usług wewnętrznej bazy danych dla natywnych aplikacji mobilnych,](/aspnet/core/mobile/native-mobile-backend)który pokazuje, jak utworzyć usługę REST przy użyciu ASP.NET Core dla aplikacji Xamarin.Forms.
 - [ASP.NET Core praktyczne laboratorium](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
