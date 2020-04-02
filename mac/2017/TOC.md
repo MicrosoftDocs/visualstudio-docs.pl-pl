@@ -52,9 +52,9 @@
 ## [Konfigurowanie repozytorium podwersji](/visualstudio/mac/set-up-subversion-repository)
 ## [Praca z podwersją](/visualstudio/mac/working-with-subversion)
 
-# [Wdrożenie aplikacji internetowej](/visualstudio/mac/web-app-deployment.md)
-## [Publikowanie w usłudze Azure App Service](/visualstudio/mac/publish-app-svc.md)
-## [Publikowanie w folderze](/visualstudio/mac/publish-folder.md)
+# [Wdrożenie aplikacji internetowej](/visualstudio/mac/web-app-deployment)
+## [Publikowanie w usłudze Azure App Service](/visualstudio/mac/publish-app-svc)
+## [Publikowanie w folderze](/visualstudio/mac/publish-folder)
 
 # [Pakiety robocze](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
