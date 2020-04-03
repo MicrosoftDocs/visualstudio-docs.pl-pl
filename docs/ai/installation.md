@@ -2,19 +2,20 @@
 title: Instalowanie narzędzi AI
 description: W tym artykule opisano sposób instalowania narzędzi AI tools dla programu Visual Studio
 keywords: ai, studio wizualne
-author: lisawong19
-ms.author: liwong
-manager: routlaw
+author: jillre
+ms.author: jillfra
+manager: jillfra
+monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a83deb968811159cfaeddaf537624e21b37e98c7
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75915812"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638578"
 ---
 # <a name="installation"></a>Instalacja
 
@@ -37,7 +38,7 @@ Narzędzia można pobrać z portalu [Visual Studio Marketplace](https://marketpl
 
 ## <a name="prepare-your-local-machine"></a>Przygotuj swoją lokalną maszynę
 
-Przed szkoleniem modeli uczenia głębokiego na komputerze lokalnym upewnij się, że masz zainstalowane odpowiednie wymagania wstępne. Obejmuje to upewnienie się, że masz najnowsze sterowniki i biblioteki dla swojego procesora graficznego NVIDIA (jeśli go masz). Upewnij się również, że zainstalowano biblioteki Pythona i Pythona, takie jak NumPy, SciPy, oraz odpowiednie struktury uczenia głębokiego, takie jak Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch i Chainer, których zamierzasz używać w Projektu.
+Przed szkoleniem modeli uczenia głębokiego na komputerze lokalnym upewnij się, że masz zainstalowane odpowiednie wymagania wstępne. Obejmuje to upewnienie się, że masz najnowsze sterowniki i biblioteki dla swojego procesora graficznego NVIDIA (jeśli go masz). Upewnij się również, że zainstalowano biblioteki Pythona i Pythona, takie jak NumPy, SciPy, oraz odpowiednie struktury uczenia głębokiego, takie jak Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch i Chainer, których zamierzasz używać w projekcie.
 
 > [!NOTE]
 > Wprowadzenie oprogramowania w następujących podsekcjach jest zaczerpnięte z ich stron internetowych.

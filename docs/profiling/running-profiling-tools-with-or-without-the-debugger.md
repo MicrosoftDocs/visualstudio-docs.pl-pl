@@ -1,6 +1,6 @@
 ---
 title: Uruchamianie narzędzi profilowania z debugerem lub bez niego | Dokumenty firmy Microsoft
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf544b3bec9b492f1d1669549ba5501a52f7d5f2
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999369"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638805"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 
@@ -33,23 +33,21 @@ Aby pomóc w podjęciu decyzji, których narzędzi i wyników użyć, należy wz
 - Debuger sam zmienia czas wydajności, jak to wymaga operacji debugera, takich jak przechwytywanie zdarzeń wyjątku i ładowania modułu.
 - Zwolnij numery wydajności kompilacji w narzędziach **profilera wydajności** są najbardziej precyzyjne i dokładne. Wyniki narzędzi zintegrowane z debugerem są najbardziej przydatne do porównania z innymi pomiarami związanymi z debugowaniem.
 
+W przypadku użycia procesora CPU narzędzie można uruchomić na komputerze zdalnym przy użyciu narzędzi wiersza polecenia.
+
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Zbieranie danych profilowania podczas debugowania
 
 Po uruchomieniu debugowania w programie Visual Studio, wybierając **debugowanie** > **start debugowania** lub naciskając **klawisz F5,** domyślnie pojawia się okno **Narzędzia diagnostyczne.** Aby otworzyć go ręcznie, wybierz pozycję **Debugowanie** > **narzędzi diagnostycznych programu****Windows** > Show . Okno **Narzędzia diagnostyczne** zawiera informacje o zdarzeniach, pamięci procesu i użyciu procesora CPU.
 
 ![Narzędzia diagnostyczne](../profiling/media/diagnostictools-update1.png "Narzędzia diagnostyczne")
 
-- Użyj **ikony Ustawienia** na pasku narzędzi, aby wybrać, czy ma być wyświetlane **użycie pamięci,** **analiza interfejsu użytkownika**i **użycie procesora.**
+- Użyj **ikony Ustawienia** na pasku narzędzi, aby wybrać, czy ma być wyświetlane **użycie pamięci,** czy **użycie procesora**.
 
 - Wybierz **pozycję Ustawienia** w menu rozwijanym **Ustawienia,** aby otworzyć **strony właściwości narzędzia diagnostyczne** z większą liczedą opcje.
 
 - Jeśli korzystasz z programu Visual Studio Enterprise, możesz włączyć lub wyłączyć funkcję IntelliTrace w obszarze**Opcje** >  **narzędzi** > programu Visual Studio**IntelliTrace**.
 
 Sesja diagnostyczna kończy się po zatrzymaniu debugowania.
-
-Można również wyświetlić **narzędzia diagnostyczne** dla zdalnego debugowania obiektów docelowych. W przypadku zdalnego debugowania i profilowania debuger zdalny programu Visual Studio musi być zainstalowany i uruchomiony na zdalnym docelowych.
-- Aby uzyskać zdalne debugowanie i profilowanie projektów aplikacji klasycznych, zobacz [Zdalne debugowanie](../debugger/remote-debugging.md).
-- Aby uzyskać zdalne debugowanie i profilowanie aplikacji platformy uniwersalnej systemu Windows, zobacz [Debugowanie aplikacji platformy uniwersalnej systemu Windows na komputerach zdalnych](../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 ### <a name="the-events-tab"></a>Karta Zdarzenia
 
@@ -69,7 +67,9 @@ Aby uzyskać więcej informacji, zobacz [Wyszukiwanie i filtrowanie na karcie Zd
 
 Aby zbierać dane dotyczące wydajności bez debugowania, można uruchomić narzędzia **profilera wydajności.** Niektóre narzędzia profilowania wymagają uprawnień administratora do uruchomienia. Program Visual Studio można otworzyć jako administrator lub uruchomić narzędzia jako administrator po uruchomieniu sesji diagnostycznej.
 
-1. Po otwarciu projektu w programie Visual Studio wybierz opcję **Debug** > **Performance Profiler**lub Naciśnij klawisz **Alt**+**F2**.
+1. Po otwarciu projektu w programie Visual Studio ustaw konfigurację rozwiązania na **Zwolnij** i wybierz **opcję Lokalny debuger systemu Windows** (lub Komputer **lokalny)** jako miejsce docelowe wdrożenia.
+
+1. Wybierz **opcję Debug** > **Performance Profiler**lub naciśnij **klawisz Alt**+**F2**.
 
 1. Na stronie uruchamiania diagnostycznego wybierz jedno lub więcej narzędzi do uruchomienia. Wyświetlane są tylko narzędzia mające zastosowanie do typu projektu, systemu operacyjnego i języka programowania. Wybierz **pozycję Pokaż wszystkie narzędzia,** aby wyświetlić również narzędzia wyłączone dla tej sesji diagnostycznej. Oto jak twoje wybory mogą wyglądać dla aplikacji platformy uniwersalnej systemu i kontroli konta:
 
@@ -103,13 +103,20 @@ Raporty można zapisać i otworzyć z listy **Ostatnio otwarte sesje** na stroni
 
 ## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Uruchamianie sesji diagnostycznych w zainstalowanych lub uruchomionych aplikacjach
 
- Oprócz uruchamiania aplikacji z projektu programu Visual Studio, można również uruchomić sesje diagnostyczne na alternatywnych obiektów docelowych. Na przykład można zdiagnozować problemy z wydajnością w aplikacji, która została zainstalowana ze sklepu Windows App Store.
+Oprócz uruchamiania aplikacji z projektu programu Visual Studio, można również uruchomić sesje diagnostyczne na alternatywnych obiektów docelowych. Na przykład można zdiagnozować problemy z wydajnością w aplikacji, która została zainstalowana ze sklepu Windows App Store. W obszarze Profiler wydajności wybierz z listy rozwijanej w obszarze **Zmień miejsce docelowe**.
 
- ![Wybieranie celu analizy narzędzi diagnostycznych](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
+![Wybieranie celu analizy narzędzi diagnostycznych](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")
 
- Można uruchomić aplikacje, które są już zainstalowane lub dołączyć narzędzia diagnostyczne do aplikacji i procesów, które są już uruchomione. Po **wybraniu opcji Uruchomiona aplikacja** lub **Zainstalowana aplikacja**wybierz aplikację z listy, która znajdzie aplikacje w określonym miejscu docelowym wdrożenia. Ten cel może być komputerem lokalnym lub zdalnym.
+Można uruchomić aplikacje, które są już zainstalowane lub dołączyć narzędzia diagnostyczne do aplikacji i procesów, które są już uruchomione.
 
- ![Wybieranie uruchomionej lub zainstalowanej aplikacji do diagnostyki](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+Jeśli jako cel analizy zostanie wybrana opcję **Wykonywalna,** możesz wprowadzić ścieżkę do *pliku .exe* na komputerze lokalnym lub zdalnym. W obu przypadkach *.exe* działa lokalnie. Jednak zaleca się profil aplikacji przez otwarcie rozwiązania w programie Visual Studio.
+
+W przypadku aplikacji platformy uniwersalnej systemu Windows po wybraniu **opcji Uruchamianie aplikacji** lub **Zainstalowana aplikacja**wybierz aplikację z listy, która znajdzie aplikacje w określonym miejscu docelowym wdrożenia. Ten cel może być komputerem lokalnym lub zdalnym. Aby profilować aplikację platformy uniwersalnej na komputerze zdalnym, należy wybrać opcję **Uniwersalny (protokół niezaszyfrowany)** w oknie dialogowym **Połączenia zdalne.**
+
+![Wybieranie uruchomionej lub zainstalowanej aplikacji do diagnostyki](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")
+
+> [!NOTE]
+> W przypadku innych scenariuszy wymagających zdalnego użycia narzędzi profilowania zobacz [Mierzenie wydajności aplikacji z wiersza polecenia](../profiling/profile-apps-from-command-line.md). Narzędzia wiersza polecenia można używać za pomocą narzędzia CPU Cpu Usage i narzędzia .NET Object Allocation.
 
 ## <a name="see-also"></a>Zobacz też
 

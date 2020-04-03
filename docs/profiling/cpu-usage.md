@@ -1,7 +1,7 @@
 ---
 title: Analiza użycia procesora | Dokumenty firmy Microsoft
 ms.custom: seodec18
-ms.date: 11/04/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 88272af1733dbbaf7f46743388a8ecb6522e9f1a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553623"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638836"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 
 Dobrym sposobem, aby rozpocząć badanie problemów z wydajnością w aplikacji jest zrozumienie jego użycia procesora CPU. Narzędzie **wydajności Użycie procesora CPU** pokazuje czas i procent spędzony na wykonywaniu kodu w językach C++, C#/Visual Basic i JavaScript.
 
-Narzędzie **Użycie procesora CPU** można uruchomić w otwartym projekcie programu Visual Studio, w zainstalowanej aplikacji Microsoft Store lub dołączone do uruchomionej aplikacji lub procesu. Narzędzie można uruchomić na komputerach lokalnych lub zdalnych lub na symulatorze lub emulatorze. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Narzędzie **Użycie procesora CPU** można uruchomić w otwartym projekcie programu Visual Studio, w zainstalowanej aplikacji Microsoft Store lub dołączone do uruchomionej aplikacji lub procesu. Aby uzyskać więcej informacji, zobacz [Uruchamianie narzędzi profilowania z debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Narzędzie użycie **procesora CPU** można uruchomić z debugowaniem lub bez. W debugerze można włączać i wyłączać profilowanie procesora CPU i wyświetlać podział użycia procesora CPU dla różnych funkcji. Można wyświetlić wyniki użycia procesora CPU, gdy wykonanie jest wstrzymane, na przykład w punkcie przerwania.
 
@@ -33,7 +33,7 @@ Zazwyczaj komputer lokalny najlepiej replikuje wykonanie zainstalowanej aplikacj
 
 ## <a name="collect-cpu-usage-data"></a>Zbieranie danych dotyczących użycia procesora
 
-1. W projekcie programu Visual Studio ustaw konfigurację rozwiązania na **Zwolnij** i wybierz **opcję Komputer lokalny** jako miejsce docelowe wdrożenia.
+1. W projekcie programu Visual Studio ustaw konfigurację rozwiązania na **Zwolnij** i wybierz **opcję Lokalny debuger systemu Windows** (lub Komputer **lokalny)** jako miejsce docelowe wdrożenia.
 
     ![Wybierz zwolnij i komputer lokalny](../profiling/media/cpuuse_selectreleaselocalmachine.png "Wybierz zwolnij i komputer lokalny")
 

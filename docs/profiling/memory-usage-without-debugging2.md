@@ -1,7 +1,7 @@
 ---
 title: Analizowanie użycia pamięci bez debugowania | Dokumenty firmy Microsoft
 ms.custom: ''
-ms.date: 11/15/2018
+ms.date: 04/02/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,28 +13,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b05787802b72eb4d14e1b2b56765bb246b9ada51
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.openlocfilehash: 5af369669245bca9c5de74566dd8594164acf8bb
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80256247"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638829"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizowanie użycia pamięci bez debugera
 
 Narzędzie **Użycie pamięci** monitoruje użycie pamięci aplikacji. Za pomocą narzędzia można zbadać efekty pamięci w czasie rzeczywistym scenariuszy, które aktywnie tworzysz w programie Visual Studio. Można zrobić szczegółowe migawki stanów pamięci aplikacji i porównać migawki, aby znaleźć główne przyczyny problemów z pamięcią.
 
-Narzędzie **Użycie pamięci** można uruchomić z debugerem lub bez niego. Poniższe instrukcje pokazują, jak używać narzędzia **Użycie pamięci** bez debugera w programie Visual Studio **Performance Profiler**.
+Narzędzie **Użycie pamięci** można uruchomić z [debugerem lub bez niego](../profiling/running-profiling-tools-with-or-without-the-debugger.md). W tym artykule pokazujemy, jak używać narzędzia **Użycie pamięci** bez debugera w programie Visual Studio **Performance Profiler**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sesje diagnostyczne użycia pamięci
 
 **Aby rozpocząć sesję diagnostyczną użycia pamięci:**
 
-1. Otwórz projekt systemu Windows uniwersalnego języka C# (UWP) w programie Visual Studio.
+1. Otwórz projekt w programie Visual Studio.
+
+   Narzędzie Użycie pamięci obsługuje aplikacje .NET, ASP.NET, natywne lub mieszane (NET i natywne).
+
+1. W menu Debugowanie ustaw konfigurację rozwiązania na **Zwolnij** i wybierz **opcję Lokalny debuger systemu Windows** (lub Komputer **lokalny)** jako miejsce docelowe wdrożenia.
 
 1. Na pasku menu wybierz pozycję **Debug** > **Performance Profiler**.
 
-1. Wybierz pozycję **Użycie pamięci**, a następnie wybierz pozycję **Start**.
+1. W obszarze **Dostępne narzędzia**wybierz pozycję **Użycie pamięci**, a następnie wybierz pozycję **Start**.
 
    ![Uruchamianie sesji diagnostycznej użycia pamięci](../profiling/media/memuse_start_diagnosticssession.png "Uruchamianie sesji diagnostycznej użycia pamięci")
 

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 18850a6e365988abd33b7e2e2a3972ba5cb0a91a
+ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77558120"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80638688"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mierzenie wydajności aplikacji z wiersza polecenia
 
@@ -29,9 +29,11 @@ W przykładzie opisanym w tym artykule można zbierać informacje o wydajności 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-* Visual Studio 2019 Wersja zapoznawcza 3 lub nowsza wersje
+* Visual Studio 2019 lub nowsze wersje
 
 * Znajomość narzędzi wiersza polecenia
+
+* Aby zebrać informacje o wydajności na komputerze zdalnym bez zainstalowanego programu Visual Studio, zainstaluj [narzędzia wydajności dla programu Visual Studio](https://visualstudio.microsoft.com/downloads#performance-tools-for-visual-studio-2019) na komputerze zdalnym. Wersja narzędzi musi być zgodna z wersją programu Visual Studio.
 
 ## <a name="collect-performance-data"></a>Zbieranie danych dotyczących wydajności
 
