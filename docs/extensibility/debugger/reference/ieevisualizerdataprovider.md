@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider | Microsoft Docs
+title: IEEVisualizerDataProvider | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 269f154083f3589e989a6ca2f9ce0835b249181a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a10f306b6c507f6db7add17931b8a38d926a37d9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350182"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718056"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs zapewnia możliwość zmiany wartość obiektu za pomocą Wizualizator typów.
+ Ten interfejs umożliwia zmianę wartości obiektu za pomocą wizualizatora typu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,31 +35,31 @@ IEEVisualizerDataProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Ewaluator wyrażeń implementuje ten interfejs do modyfikowania danych w obiekcie właściwości, za pośrednictwem Wizualizator typów.
+ Oceniający wyrażenie implementuje ten interfejs do obsługi modyfikowania danych na obiekt właściwości za pośrednictwem wizualizatora typu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Ten interfejs jest używany do tworzenia [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) obiektu za pomocą wywołania [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać więcej informacji.
+ Ten interfejs jest używany do tworzenia [obiektu IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) za pośrednictwem wywołania [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md). Aby uzyskać więcej informacji, zobacz [Wizualizacja i wyświetlanie danych.](../../../extensibility/debugger/visualizing-and-viewing-data.md)
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
 
 |Metoda|Opis|
 |------------|-----------------|
-|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|Określa, czy jest to możliwe zaktualizować obiekt (i następnie jego wartość) reprezentujących ten Wizualizator.|
-|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|Wymusza ponownej oceny obiektu dla tej wizualizatora.|
-|[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Pobiera istniejący obiekt ten Wizualizator (nie oceny odbywa się).|
-|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Aktualizuje obiekt ten Wizualizator, zmieniając wartość, która przedstawia wizualizatora.|
+|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|Określa, czy jest możliwe, aby zaktualizować obiekt (a następnie jego wartość), który reprezentuje ten wizualizator.|
+|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|Wymusza ponowną ocenę obiektu dla tego wizualizatora.|
+|[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|Pobiera istniejący obiekt dla tego wizualizatora (nie jest wykonywana żadna ocena).|
+|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|Aktualizuje obiekt dla tego wizualizatora, zmieniając w ten sposób wartość, która prezentuje wizualizator.|
 
 ## <a name="remarks"></a>Uwagi
- Usługa visualizer (reprezentowane przez [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfejs i zwrócony przez [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) przechowuje odwołania do obiektu implementującego `IEEVisualizerDataProvider` interfejsu . W rezultacie `IEEVisualizerDataProvider` interfejsu nie powinny zostać wdrożone na tym samym obiekcie, który implementuje [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Jeśli ten obiekt przechowuje odwołania do `IEEVisualizerService` obiektu: wyniki odwołanie cykliczne i Zakleszczenie występuje, gdy obiekty są niszczone. Zalecanym podejściem jest implementacja `IEEVisualizerDataProvider` na oddzielnym obiektem, do którego `IDebugProperty2` obiektu delegatów bez wywoływania `IUnknown::AddRef` na nim.
+ Usługa wizualizatora (reprezentowana przez interfejs [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) i zwrócona przez [CreateVisualizerService)](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)zachowuje odwołanie do obiektu implementującego `IEEVisualizerDataProvider` interfejs. W rezultacie `IEEVisualizerDataProvider` interfejs nie powinny być implementowane na tym samym obiekcie, który implementuje [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) jeśli ten obiekt utrzymuje odwołanie do `IEEVisualizerService` obiektu: wyniki odwołania cyklicznego i zakleszczenie występuje, gdy obiekty są niszczone. Zalecane podejście jest `IEEVisualizerDataProvider` do zaimplementowania `IDebugProperty2` na oddzielny `IUnknown::AddRef` obiekt, do którego obiekt delegatów bez wywoływania na niego.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: ee.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

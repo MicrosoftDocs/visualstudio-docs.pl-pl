@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::EnumCodeContexts | Dokumentacja firmy Microsoft
+title: IDebugDocumentContext2::EnumCodeContexts | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: caa6be915fad9e64fb065babbf218f33f2848200
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349968"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731850"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
-Pobiera listę wszystkich kontekstach kodu skojarzone z tym kontekstem dokumentu.
+Pobiera listę wszystkich kontekstów kodu skojarzonych z tym kontekstem dokumentu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,13 +43,13 @@ int EnumCodeContexts(
 `ppEnumCodeCxts`\
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Kontekst pojedynczego dokumentu można generować wielu kontekstach kodu, gdy dokument jest za pomocą szablonów lub dołączyć pliki.
+Kontekst pojedynczego dokumentu może generować wiele kontekstów kodu, gdy dokument używa szablonów lub zawiera pliki.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CDebugContext` obiekt ujawniający [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu.
+W poniższym przykładzie pokazano, jak `CDebugContext` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)
@@ -107,6 +107,6 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

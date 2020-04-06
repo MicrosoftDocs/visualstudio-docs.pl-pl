@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetData | Dokumentacja firmy Microsoft
+title: IEEDataStorage::GetData | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62a1295aeb2a6afad51dee0f1015e3ab01d13fbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319652"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718211"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Pobiera określoną liczbę bajtów z obiektu.
@@ -45,20 +45,20 @@ int GetData(
 
 ## <a name="parameters"></a>Parametry
 `dataSize`\
-[in] Liczba bajtów do pobrania ( `data` tablicy musi posiadać co najmniej tej liczby bajtów).
+[w] Liczba bajtów do pobrania `data` (tablica musi zawierać co najmniej tę liczbę bajtów).
 
 `sizeGotten`\
-[out] Zwraca liczbę bajtów, które rzeczywiście zostały pobrane.
+[na zewnątrz] Zwraca liczbę bajtów faktycznie pobranych.
 
 `data`\
-[out w] Tablica do wypełniona żądanych danych.
+[w, na zewnątrz] Tablica do wypełnienia żądanymi danymi.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zalecane użycie tej metody jest do pobrania wszystkich bajtów danych do lokalnej tablicy, ponieważ nie istnieje żaden sposób na pominięcie nad bajtów w procesie pobierania. W tym przypadku parametr `dataSize` powinien mieć wartość zwracana przez [getsize —](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) metody.
+ Zalecanym użyciem tej metody jest pobranie wszystkich bajtów danych do tablicy lokalnej, ponieważ nie ma możliwości pominięcia bajtów w procesie pobierania. W takim przypadku `dataSize` parametr powinien być wartością zwracaną przez [Metodę GetSize.](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

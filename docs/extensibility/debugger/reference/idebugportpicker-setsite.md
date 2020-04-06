@@ -1,24 +1,24 @@
 ---
-title: IDebugPortPicker::SetSite | Microsoft Docs
+title: IDebugPortPicker::SetSite | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker::SetSite
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33d6d12bd21a6ab208fed019c1e0f763bce86724
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07dac3f407b6869dad90f06d778911fdd9cfed41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340356"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724872"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Ustawia dostawcę usług.
@@ -39,13 +39,13 @@ public int SetSite(
 
 ## <a name="parameters"></a>Parametry
 `pSP`\
-[in] Odwołanie do interfejsu dostawcę usług.
+[w] Odwołanie do interfejsu usługodawcy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda zostanie wywołana przed inne metody są wywoływane.
+ Ta metoda zostanie wywołana przed innymi metodami są wywoływane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

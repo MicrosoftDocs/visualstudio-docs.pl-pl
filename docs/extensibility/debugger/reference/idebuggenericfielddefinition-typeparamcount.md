@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount | Dokumentacja firmy Microsoft
+title: IDebugGenericFieldDefinition::TypeParamCount | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - TypeParamCount
 - IDebugGenericFieldDefinition::TypeParamCount
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b753da4a418f13bb725ff5d7b0d2843fc314805b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a488bce2ad5822f875776bdfc4c4de29eee71bbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324457"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728238"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
-Pobiera liczbę parametrów typu, które są skojarzone z polem ogólnego.
+Pobiera liczbę parametrów typu skojarzonych z polem ogólnym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,13 +40,13 @@ int TypeParamCount(
 
 ## <a name="parameters"></a>Parametry
 `pcParams`\
-[out w] Liczba parametrów typu.
+[w, na zewnątrz] Liczba parametrów typu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli lista\<T >, ta metoda zwraca wartość 1 i, jeśli lista\<T1, T2 >, ta metoda zwraca wartość 2. Ta metoda zwraca wartość 0, jeśli nie ma żadnych parametrów typu.
+ Jeśli\<lista T>, ta metoda zwraca wartość 1, a jeśli lista\<T1,T2>, ta metoda zwraca wartość 2. Ta metoda zwraca wartość 0, jeśli nie ma żadnych parametrów typu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

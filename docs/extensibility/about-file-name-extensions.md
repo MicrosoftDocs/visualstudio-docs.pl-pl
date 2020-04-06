@@ -1,29 +1,29 @@
 ---
-title: Temat rozszerzeń nazw plików | Dokumentacja firmy Microsoft
+title: Rozszerzenia nazw plików – informacje | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions
 - file name extensions
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60a721581c3deb4588df59974768c634c2e9515f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313722"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740347"
 ---
-# <a name="about-file-name-extensions"></a>Temat rozszerzeń nazw plików
-Po zarejestrowaniu rozszerzenie pliku pakietu VSPackage, należy ją skojarzyć z wersją [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jest to ważne, jeśli więcej niż jedna wersja [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest zainstalowany na komputerze.
+# <a name="about-file-name-extensions"></a>Rozszerzenia nazw plików – informacje
+Podczas rejestrowania rozszerzenia pliku VSPackage, należy skojarzyć [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]go z wersją programu . Jest to ważne, jeśli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na komputerze jest zainstalowanych więcej niż jedną wersję.
 
- Rozszerzenia plików dla pakietów VSPackage są zarejestrowane w obszarze **HKEY_CLASSES_ROOT** klucza z wartością domyślną, który wskazuje na skojarzony identyfikator programowy (ProgID).
+ Rozszerzenia plików dla vspackages są rejestrowane **w** HKEY_CLASSES_ROOT klucz z wartością domyślną, która wskazuje na skojarzony identyfikator programowy (ProgID).
 
- W poniższym przykładzie przedstawiono informacje o rejestracji dla *.vcproj* rozszerzenie pliku:
+ W poniższym przykładzie przedstawiono informacje o rejestracji rozszerzenia pliku *.vcproj:*
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- Plików skojarzonych z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi mieć określonej wersji ProgID, takich jak `VisualStudio.vcproj.8.0`. Numerów wersji ProgID umożliwia instalacje side-by-side produktu do utrzymania skojarzenia rozszerzeń plików między wersji produktu. ProgID specyficzny dla wersji pozwala również na używanie zleceń standardowych, takie jak edytowanie otwarte i tak dalej, bez obawy, zastępowanie lub zastąpieniem przez inne aplikacje lub wersje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Pliki skojarzone [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z musi mieć wersjonowane `VisualStudio.vcproj.8.0`ProgID, takich jak . Wersja ProgID umożliwia instalacje obok siebie produktu w celu utrzymania skojarzeń rozszerzenia plików między wersjami produktu. ProgID specyficzny dla wersji umożliwia również używanie standardowych czasowników, takich jak otwieranie, edytowanie i tak dalej, bez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]obawy o nadpisywanie lub zastępowanie przez inne aplikacje lub wersje programu .
 
- W niektórych przypadkach także identyfikator ProgID skojarzone z rozszerzeniem pliku nie powinna być zmieniana. Na przykład identyfikatora programu *.htm* rozszerzenie pliku (progid = htmlfile) jest ustalony w wielu miejscach w systemie operacyjnym, a jest powszechnie znane i używane w połączeniu z *.htm* i *.html* plików.
+ W niektórych przypadkach nie należy zmieniać identyfikatora progid skojarzonego z rozszerzeniem pliku. Na przykład progid dla rozszerzenia pliku *.htm* (progid = htmlfile) jest zakodowany na miejscu w wielu miejscach w systemie operacyjnym i jest powszechnie znany i używany w połączeniu z *plikami .htm* i *.html.*
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Rejestrowanie rozszerzeń nazw plików dla wdrożeń side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Określanie programów obsługi plików dla rozszerzeń nazw plików](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

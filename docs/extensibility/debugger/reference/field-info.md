@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO | Microsoft Docs
+title: FIELD_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337704"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736893"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
-Ta struktura zawiera opis zmiennej lokalnej, parametr lub innego pola.
+# <a name="field_info"></a>FIELD_INFO
+Ta struktura opisuje zmienną lokalną, parametr lub inne pole.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kombinacja flag z [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) wyliczenie, które określa, które elementy członkowskie są wypełniane.
+Kombinacja flag z wyliczenia [FIELD_INFO_FIELDS,](../../../extensibility/debugger/reference/field-info-fields.md) która określa, które elementy członkowskie są wypełniane.
 
 `bstrFullName`\
 Pełna nazwa pola.
@@ -61,19 +61,19 @@ Krótka nazwa pola.
 Typ pola.
 
 `dwModifiers`\
-Kombinacja flag z [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) wyliczenie opisujące pola.
+Kombinacja flag z wyliczenia [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) opisujące pole.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metody, gdzie jest wypełnione.
+Ta struktura jest przekazywana do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugfield-getinfo.md) gdzie jest wypełniona.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: sh.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)
 - [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)

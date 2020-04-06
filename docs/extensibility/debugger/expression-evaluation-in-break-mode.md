@@ -1,5 +1,5 @@
 ---
-title: Obliczanie wyrażenia w trybie przerwania | Dokumentacja firmy Microsoft
+title: Ocena wyrażenia w trybie przerwania | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,37 +7,37 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, break mode
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af231333981697705ba58fe505b0bf55304b8287
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bc09fc43bd9f0edea4f6dc32e5f37c387c045796
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353840"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738725"
 ---
-# <a name="expression-evaluation-in-break-mode"></a>Obliczanie wyrażenia w trybie przerwania
-W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie przerwania, a także musi przeprowadzić obliczenia wyrażenia.
+# <a name="expression-evaluation-in-break-mode"></a>Ocena wyrażenia w trybie przerwania
+W poniższej sekcji opisano proces, który występuje, gdy debuger jest w trybie przerwania i musi przeprowadzić ocenę wyrażenia.
 
 ## <a name="expression-evaluation-process"></a>Proces oceny wyrażenia
- Poniżej przedstawiono podstawowe etapy obliczenia wyrażenia:
+ Poniżej przedstawiono podstawowe kroki związane z oceną wyrażenia:
 
-1. Menedżer debugowania sesji (SDM) wywołuje [IDebugStackFrame2::GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) uzyskać interfejs wyrażenia kontekstu [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).
+1. Menedżer debugowania sesji (SDM) wywołuje [IDebugStackFrame2::GetExpressionContext,](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) aby uzyskać interfejs kontekstu wyrażenia [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md).
 
-2. Następnie wywołuje SDM [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) ciąg, który ma być analizowany.
+2. SDM następnie wywołuje [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) z ciągiem do przeanalizowania.
 
-3. Jeśli ParseText nie zwraca S_OK, zwracany jest przyczyną tego błędu.
+3. Jeśli ParseText nie zwraca S_OK, powodem błędu jest zwracany.
 
-     — w przeciwnym-
+     -w przeciwnym razie-
 
-     Jeśli ParseText zwróci S_OK, SDM następnie wywołać albo [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) można pobrać jako końcowa wartość wyrażenia przeanalizowany.
+     Jeśli ParseText zwraca S_OK, SDM można następnie wywołać [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [IDebugExpression2::EvaluateAsync,](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) aby uzyskać wartość końcową z analizowanego wyrażenia.
 
-    - Korzystając z `IDebugExpression2::EvaluateSync`, interfejs wywołania zwrotnego danego komunikuje się ciągły proces oceny. Końcowa wartość jest zwracana w [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfejsu.
+    - Podczas `IDebugExpression2::EvaluateSync`korzystania, dany interfejs wywołania zwrotnego komunikuje trwający proces oceny. Wartość końcowa jest zwracana w interfejsie [IDebugProperty2.](../../extensibility/debugger/reference/idebugproperty2.md)
 
-    - Korzystając z `IDebugExpression2::EvaluateAsync`, interfejs wywołania zwrotnego danego komunikuje się ciągły proces oceny. Po zakończeniu oceny EvaluateAsync wysyła [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) interfejs za pomocą wywołania zwrotnego. Z tym interfejsem zdarzeń końcowa wartość wyniki z [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
+    - Podczas `IDebugExpression2::EvaluateAsync`korzystania, dany interfejs wywołania zwrotnego komunikuje trwający proces oceny. Po zakończeniu oceny EvaluateAsync wysyła interfejs [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) za pośrednictwem wywołania zwrotnego. Za pomocą tego interfejsu zdarzenia [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)ostateczna wartość jest owak.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Dokumentacja firmy Microsoft
+title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 322e18132050bca6803dac04a5cfbe3fd92f3106
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335583"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718104"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-Ta metoda pobiera nowego obiektu dla wizualizatora. Ta metoda zawsze spowoduje utworzenie nowego obiektu z istniejących obiektów.
+Ta metoda pobiera nowy obiekt dla wizualizatora. Ta metoda zawsze utworzy nowy obiekt z istniejącego obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>Parametry
 `ppObject`\
-[out] Nowy obiekt.
+[na zewnątrz] Nowy obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- `This method` ponownie oblicza obiektu obecnie reprezentuje i zwraca wynik w postaci nowego obiektu. Istniejący obiekt zostanie zaktualizowany w wyniku oceny.
+ `This method`ponownie ocenia obiekt, który obecnie reprezentuje i zwraca wynik jako nowy obiekt. Istniejący obiekt zostanie zaktualizowany w wyniku oceny.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

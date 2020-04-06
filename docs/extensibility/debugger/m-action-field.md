@@ -1,30 +1,30 @@
 ---
-title: Pole m_action | Dokumentacja firmy Microsoft
+title: pole m_action | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_action field, Task class [.NET Framework debug engines]
 ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33d356f606dc2622647de53b50f5c677b3c14eb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 925141733356ac7730e2708673ebdad793fd465b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330980"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738436"
 ---
-# <a name="maction-field"></a>pole m_action
-Delegat, który reprezentuje kod do wykonania w <xref:System.Threading.Tasks.Task> obiektu.
+# <a name="m_action-field"></a>Pole m_action
+Pełnomocnik, który reprezentuje kod do <xref:System.Threading.Tasks.Task> wykonania w obiekcie.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Zestaw:** mscorlib (w *mscorlib.dll*)
+ **Montaż:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,7 +33,7 @@ Delegat, który reprezentuje kod do wykonania w <xref:System.Threading.Tasks.Tas
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jest to `action` parametru w <xref:System.Threading.Tasks.Task.%23ctor%2A> konstruktora.
+ Jest to `action` parametr <xref:System.Threading.Tasks.Task.%23ctor%2A> w konstruktorze.
 
-## <a name="see-also"></a>Zobacz także
-- [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Zobacz też
+- [Klasa zadań](../../extensibility/debugger/task-class-internal-members.md)

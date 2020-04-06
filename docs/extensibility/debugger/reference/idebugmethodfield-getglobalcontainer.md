@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetGlobalContainer | Microsoft Docs
+title: IDebugMethodField::GetGlobalContainer | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::GetGlobalContainer method
 ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77f3d82beab43b227dd3beb772dd41353d89b6fe
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 37e3b26a265fe651216e46fa299bdd827416b8ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324175"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727124"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
-Pobiera kontener globalnego metody.
+Pobiera globalnego kontenera metody.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetGlobalContainer(
 
 ## <a name="parameters"></a>Parametry
 `ppClass`\
-[out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) modułu, w którym zdefiniowano tej metody reprezentująca.
+[na zewnątrz] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) reprezentujący moduł, w którym ta metoda jest zdefiniowana.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zwrócony [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentuje cały moduł i jest obiektem sztuczny, oznacza to, że moduł sam nie rzeczywista klasa ale może być reprezentowany przez `IDebugClassField` obiektu, dzięki czemu różne elementy modułu być wyliczone i odnalezione.
+ Zwrócony [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentuje cały moduł i jest obiektem sztucznym, oznacza to, że sam moduł `IDebugClassField` nie ma rzeczywistej klasy, ale może być reprezentowany przez obiekt, dzięki czemu różne elementy modułu mają być wyliczone i odnalezione.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

@@ -1,27 +1,27 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperties | Dokumentacja firmy Microsoft
+title: Właściwości IDebugProcessQueryProperties::Właściwości queryproperties | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a26cbb1781561b6fb4d54da3cfaea9a9fbae7699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311582"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723314"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Tego zapytania metody dla wartości właściwości określonego procesu debugowania.
+Ta metoda kwerendy dla określonych wartości właściwości procesu debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int QueryProperties(
 
 ## <a name="parameters"></a>Parametry
 `celt`\
-[in] Rozmiar macierzy zawierający definicje właściwości i wartości właściwości.
+[w] Rozmiar tablic zawierających definicje właściwości i wartości właściwości.
 
 `dwPropType`\
-[in] Tablica, która zawiera definicje właściwości kwerendy. Możliwe wartości to:
+[w] Tablica zawierająca definicje poszukiwanych właściwości. Możliwe wartości są następujące:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -53,13 +53,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[out] Tablica zawierająca wartości właściwości.
+[na zewnątrz] Tablica zawierająca wartości właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Ta metoda jest rzadko używana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

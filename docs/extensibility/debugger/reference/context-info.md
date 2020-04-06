@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Microsoft Docs
+title: CONTEXT_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346468"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737566"
 ---
-# <a name="contextinfo"></a>CONTEXT_INFO
-Ta struktura zawiera opis kontekście pamięci lub kontekst kodu.
+# <a name="context_info"></a>CONTEXT_INFO
+Ta struktura opisuje kontekst pamięci lub kontekst kodu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,16 +53,16 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwFields`\
-Kombinacja flag z on [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) wyliczenia, która określa pola, które są wypełnione<strong>.</strong>
+Kombinacja flag z [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) wyliczenie, które określa, które pola są wypełniane<strong>.</strong>
 
 `bstrModuleUrl`\
 Nazwa modułu, w którym znajduje się kontekst.
 
 `bstrFunction`\
-Nazwa funkcji, w którym znajduje się kontekst.
+Nazwa funkcji, w której znajduje się kontekst.
 
 `posFunctionOffset`\
-A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, która identyfikuje przesunięcie wiersza i kolumny funkcji skojarzonego z kontekstem kodu.
+Struktura [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) która identyfikuje przesunięcie linii i kolumny funkcji skojarzonej z kontekstem kodu.
 
 `bstrAddress`\
 Adres w kodzie, w którym znajduje się dany kontekst.
@@ -71,21 +71,21 @@ Adres w kodzie, w którym znajduje się dany kontekst.
 Przesunięcie adresu w kodzie, w którym znajduje się dany kontekst.
 
 `bstrAddressAbsolute`\
-Bezwzględny adres w pamięci, w którym znajduje się dany kontekst.
+Adres bezwzględny w pamięci, w którym znajduje się dany kontekst.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest zwracany z wywołania [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody.
+Ta struktura jest zwracana z wywołania [getInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody.
 
-Typowym zastosowaniem dla tej struktury jest wspierających **pamięci** okna debugowania.
+Typowym zastosowaniem dla tej struktury jest obsługa okna debugowania **pamięci.**
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)

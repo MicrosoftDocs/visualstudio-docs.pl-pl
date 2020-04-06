@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Dokumentacja firmy Microsoft
+title: IDebugEnumField::GetStringFromValue | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7466e5390cff747532dca0343680cf359db46a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345084"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730289"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Ta metoda uzyskuje nazwę danego jej wartość stałej wyliczenia.
+Ta metoda uzyskuje nazwę stałej wyliczenia, biorąc pod uwagę jego wartość.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>Parametry
 `value`\
-[in] Wartość, dla którego należy pobrać nazwę wyliczenia stałej.
+[w] Wartość, dla której ma zostać nastawiła nazwę stałej wyliczenia.
 
 `pbstrValue`\
-[out] Zwraca nazwę stała wyliczenia.
+[na zewnątrz] Zwraca nazwę stałej wyliczenia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli wartość nie ma skojarzonego nazwy lub zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym `S_FALSE` razie zwraca, jeśli wartość nie ma skojarzonej nazwy lub zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli istnieje więcej niż jedną nazwę skojarzonej z taką samą wartość, zostanie zwrócony imię zdefiniowane w wyliczeniu.
+ Jeśli istnieje więcej niż jedna nazwa skojarzona z tą samą wartością, zostanie zwrócona imię zdefiniowane w wyliczeniu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

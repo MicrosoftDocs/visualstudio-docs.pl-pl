@@ -1,24 +1,24 @@
 ---
-title: Tryby operacyjne | Dokumentacja firmy Microsoft
+title: Tryby pracy | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, modes
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81011a6962bc874188aa04b6b1bb8ea538f3db49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351536"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738277"
 ---
-# <a name="operational-modes"></a>Tryby operacyjne
-Istnieją trzy tryby, w których IDE może działać w następujący sposób:
+# <a name="operational-modes"></a>Tryby pracy
+Istnieją trzy tryby, w których IDE może działać, w następujący sposób:
 
 - [Tryb projektowania](#vsconoperationalmodesanchor1)
 
@@ -26,33 +26,33 @@ Istnieją trzy tryby, w których IDE może działać w następujący sposób:
 
 - [Tryb przerwania](#vsconoperationalmodesanchor3)
 
-  Jak Twojego niestandardowego aparatu debugowania (DE) przechodzi między tych trybów jest decyzja dotycząca implementacji wymaga należy zapoznać się z mechanizmami przejścia. DE może lub nie może bezpośrednio implementacji tych trybów. Te tryby są naprawdę debugowania pakietu tryby, które przełączyć się na podstawie akcji przez użytkownika lub zdarzenia z DE. Na przykład przejście od uruchomienia tryb na tryb przerwania jest zainicjowanego przez zdarzenie zatrzymywanie z DE. Przejście z break, aby uruchomić trybu lub krok jest zainicjowanego przez użytkownika, wykonywanie operacji, takich jak krok lub wykonania. Aby uzyskać więcej informacji na temat przejścia DE zobacz [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md).
+  Jak niestandardowe przejścia aparatu debugowania (DE) między tymi trybami jest decyzja implementacji, która wymaga zapoznania się z mechanizmami przejścia. DE może lub nie może bezpośrednio wdrożyć te tryby. Te tryby są naprawdę debugowania trybów pakietu, które przełączają się na podstawie akcji użytkownika lub zdarzeń z DE. Na przykład przejście z trybu uruchamiania do trybu przerwania jest instigated przez zatrzymanie zdarzenia z DE. Przejście z przerwy do trybu uruchamiania lub trybu kroku jest instigated przez użytkownika wykonywania operacji, takich jak Krok lub Wykonaj. Aby uzyskać więcej informacji na temat przejść DE, zobacz [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md).
 
-## <a name="vsconoperationalmodesanchor1"></a> Tryb projektowania
- Tryb projektowania jest nonrunning stan debugowania programu Visual Studio, w tym czasie można ustawić funkcji w aplikacji do debugowania.
+## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a>Tryb projektowania
+ Tryb projektowania jest stan nieruszny debugowania programu Visual Studio, w którym można ustawić funkcje debugowania w aplikacji.
 
- Kilka debugowania tylko funkcje są używane w trybie projektowania. Programista może zdecydować się do ustawiania punktów przerwania lub tworzyć wyrażenia czujki. DE nigdy nie jest załadowany lub jest wywoływana, gdy IDE jest w trybie projektowania. Interakcja z DE ma miejsce podczas tylko tryby uruchamiania i podziału.
+ Tylko kilka funkcji debugowania są używane w trybie projektowania. Deweloper może wybrać ustawienie punktów przerwania lub tworzenie wyrażeń zegarka. DE nigdy nie jest ładowany lub wywoływane, gdy IDE jest w trybie projektowania. Interakcja z DE odbywa się tylko podczas uruchamiania i przerywania trybów.
 
-## <a name="vsconoperationalmodesanchor2"></a> Tryb uruchamiania
- Tryb wykonywania występuje, gdy program zostanie uruchomiony w sesji debugowania w środowisku IDE. Aplikacja będzie działać do czasu zakończenia, dopóki nie zostanie osiągnięty punkt przerwania lub dopóki nie zostanie zgłoszony wyjątek. Gdy aplikacja będzie działać do zakończenia, DE przejścia do trybu projektowania. Gdy punkt przerwania zostaje trafiony lub zostanie zgłoszony wyjątek, DE przechodzi w tryb przerwania.
+## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a>Tryb uruchamiania
+ Tryb uruchamiania występuje, gdy program jest uruchamiany w sesji debugowania w IDE. Aplikacja jest uruchamiana do zakończenia, dopóki punkt przerwania nie zostanie trafiony lub dopóki nie zostanie zgłoszony wyjątek. Gdy aplikacja jest uruchamiana do zakończenia, DE przechodzi w tryb projektowania. Po trafieniu punktu przerwania lub wyjątek, DE przejścia do trybu przerwania.
 
-## <a name="vsconoperationalmodesanchor3"></a> Tryb przerwania
- Tryb przerwania występuje, gdy wykonywanie debugowania programu jest zawieszone. Tryb przerwania oferuje dewelopera migawki aplikacji w momencie podziału i umożliwia deweloperom analizowanie stanu aplikacji i zmienić, jak aplikacja zostanie uruchomiona. Deweloper może wyświetlić i edytowania kodu, sprawdź modyfikowanie danych, ponowne uruchomienie aplikacji, kończy wykonywanie lub kontynuować działanie z tego samego punktu.
+## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a>Tryb przerwania
+ Tryb przerwania występuje, gdy wykonanie programu debugowania jest zawieszony. Tryb przerwania oferuje deweloperowi migawkę aplikacji w momencie przerwy i umożliwia deweloperowi analizowanie stanu aplikacji i zmienianie sposobu działania aplikacji. Deweloper może wyświetlać i edytować kod, badać lub modyfikować dane, ponownie uruchamiać aplikację, kończyć wykonywanie lub kontynuować wykonywanie z tego samego punktu.
 
- Tryb przerwania jest wprowadzane podczas DE wysyła zdarzenia synchroniczne zatrzymywania. Zdarzenia synchroniczne zatrzymywania, jest określana skrótem zdarzenia zatrzymywania, powiadom Menedżer debugowania sesji (SDM) i środowisko IDE, która przestała debugowanej aplikacji podczas wykonywania kodu. [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) i [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) interfejsy są przykłady zatrzymywanie zdarzeń.
+ Tryb przerwania jest wprowadzany, gdy DE wysyła synchroniczne zatrzymanie zdarzenia. Synchroniczne zatrzymania zdarzeń, nazywanych również zdarzeniami zatrzymania, powiadamiaj menedżera debugowania sesji (SDM) i IDE, że aplikacja jest debugowana przestała wykonywać kod. Interfejsy [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) i [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) są przykładami zatrzymywania zdarzeń.
 
- Zatrzymywanie zdarzenia były obecne przez wywołanie jednej z następujących metod, których przejście do debugera w trybie przerwania, aby uruchomić lub krok trybu:
+ Zatrzymywanie zdarzeń są kontynuowane przez wywołanie jednej z następujących metod, które przerywają debuger z trybu przerwania do uruchomienia lub trybu kroku:
 
-- [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)
+- [Realizacja](../../extensibility/debugger/reference/idebugprocess3-execute.md)
 
-- [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)
+- [Krok](../../extensibility/debugger/reference/idebugprocess3-step.md)
 
-- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Kontynuować](../../extensibility/debugger/reference/idebugprocess3-continue.md)
 
-### <a name="vsconoperationalmodesanchor4"></a> Tryb kroku
- Tryb kroku występuje, gdy program kroki do następnego wiersza kodu, lub do, nad lub poza funkcją. Krok jest wykonywany przez wywołanie metody [kroku](../../extensibility/debugger/reference/idebugprocess3-step.md). Ta metoda wymaga `DWORD`s, który określa [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) i [STEPKIND](../../extensibility/debugger/reference/stepkind.md) wyliczenia jako parametry wejściowe.
+### <a name="step-mode"></a><a name="vsconoperationalmodesanchor4"></a>Tryb krokowy
+ Tryb kroku występuje, gdy program przechodzi do następnego wiersza kodu lub do, nad lub z funkcji. Krok jest wykonywany przez wywołanie metody [Step](../../extensibility/debugger/reference/idebugprocess3-step.md). Ta metoda `DWORD`wymaga s, które określają wyliczenia [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) i [STEPKIND](../../extensibility/debugger/reference/stepkind.md) jako parametry wejściowe.
 
- Gdy program pomyślnie kroki do następnego wiersza kodu lub do funkcji lub działa do kursora lub ustaw punkt przerwania, DE automatycznie przechodzi wstecz tryb przerwania.
+ Gdy program pomyślnie przechodzi do następnego wiersza kodu lub do funkcji lub biegnie do kursora lub ustawionego punktu przerwania, DE automatycznie przechodzi z powrotem do trybu przerwania.
 
-## <a name="see-also"></a>Zobacz także
-- [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md)
+## <a name="see-also"></a>Zobacz też
+- [Kontrola wykonania](../../extensibility/debugger/control-of-execution.md)

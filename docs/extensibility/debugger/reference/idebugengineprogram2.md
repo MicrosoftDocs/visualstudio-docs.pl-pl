@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2 | Dokumentacja firmy Microsoft
+title: IDebugEngineProgram2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 221ab8fd00bc7d98745fdd5cc03dd72b9919b4b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345135"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730301"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
-Ten interfejs zapewnia obsługę debugowania wielowątkowych.
+Ten interfejs zapewnia obsługę debugowania w wielu wątkach.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,29 +29,29 @@ IDebugEngineProgram2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania implementuje ten interfejs obsługuje jednoczesnego debugowania wielu wątków. Ten interfejs jest implementowany w ten sam obiekt, który implementuje [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejsu.
+ Aparat debugowania implementuje ten interfejs do obsługi jednoczesnego debugowania wielu wątków. Ten interfejs jest zaimplementowany na tym samym obiekcie, który implementuje interfejs [IDebugProgram2.](../../../extensibility/debugger/reference/idebugprogram2.md)
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Użyj [QueryInterface](/cpp/atl/queryinterface) uzyskać ten interfejs z `IDebugProgram2` interfejsu.
+ Użyj [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać `IDebugProgram2` ten interfejs z interfejsu.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugEngineProgram2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugEngineProgram2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Zatrzymuje wszystkie wątki uruchomione w tym programie.|
-|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Oczekuje na wykonanie (lub Zatrzymaj oczekiwania na wykonanie) występuje dla danego wątku.|
-|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Zezwala lub nie zezwala na Obliczanie wyrażenia wystąpić w danym wątku, nawet jeśli program został zatrzymany.|
+|[Zatrzymaj](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|Zatrzymuje wszystkie wątki uruchomione w tym programie.|
+|[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|Zegarki do wykonania (lub zatrzymać oglądanie do wykonania) występuje na danym wątku.|
+|[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|Umożliwia (lub nie zezwala) na ocenę wyrażenia w danym wątku, nawet jeśli program jest zatrzymany.|
 
 ## <a name="remarks"></a>Uwagi
- Program Visual Studio wywołuje ten interfejs w odpowiedzi na [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzenia i ustawić Stany "Obejrzyj dla wątku krok" i "Obejrzyj dla wyrażenia oceny w wątku" programu. [Zatrzymaj](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) jest wywoływana zawsze, gdy program jest zatrzymanie; ta metoda zapewnia program szansę, aby zakończyć wszystkie wątki.
+ Visual Studio wywołuje ten interfejs w odpowiedzi na [zdarzenie IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) i ustawić "Watch for Thread Step" i "Watch for Expression Evaluation on Thread" stanu programu. [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) jest wywoływana za każdym razem, gdy program ma zostać zatrzymany; ta metoda daje programowi szansę zakończenia wszystkich wątków.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

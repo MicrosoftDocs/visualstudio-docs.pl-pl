@@ -1,25 +1,25 @@
 ---
-title: Przyciski Element | Dokumentacja firmy Microsoft
+title: Element przycisków | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2150ec240880987bc63bb3c2adf33682ebf34580
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321161"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739919"
 ---
-# <a name="buttons-element"></a>Buttons, element
-Grupy [przycisk](../extensibility/button-element.md) elementy, które reprezentują poszczególne polecenia.
+# <a name="buttons-element"></a>Element przycisków
+Grupy [Button](../extensibility/button-element.md) elementy, które reprezentują poszczególne polecenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,20 +37,20 @@ Grupy [przycisk](../extensibility/button-element.md) elementy, które reprezentu
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Buttons, element](../extensibility/buttons-element.md)|Grupuje elementy przycisku.|
-|[Button, element](../extensibility/button-element.md)|Określa polecenie, które użytkownik może interakcyjnie przeprowadzić.|
+|[Element przycisków](../extensibility/buttons-element.md)|Elementy przycisku Grupy.|
+|[Element przycisku](../extensibility/button-element.md)|Definiuje polecenie, z które użytkownik może wchodzić w interakcje.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Commands, element](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi pakietu VSPackage.|
+|[Element Polecenia](../extensibility/commands-element.md)|Reprezentuje kolekcję poleceń na pasku narzędzi VSPackage.|
 
 ## <a name="example"></a>Przykład
 
@@ -66,6 +66,6 @@ Grupy [przycisk](../extensibility/button-element.md) elementy, które reprezentu
 </Buttons>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>Zobacz też
+- [Jak vspackages dodać elementy interfejsu użytkownika](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

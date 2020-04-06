@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount | Dokumentacja firmy Microsoft
+title: IDebugBoundBreakpoint2::SetPassCount | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugBoundBreakpoint2::SetPassCount method
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee0032a079ff9c67e0a2de350e0405cfa20303db
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bcc7bd57ce0c392a2874f107c6e4d8d5753399d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314509"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735432"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Ustawia lub zmienia liczba — dostęp próbny skojarzony ten powiązany punkt przerwania.
+Ustawia lub zmienia liczbę przebiegów skojarzonych z tym powiązanym punktem przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,17 +42,17 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Parametry
 `bpPassCount`\
-[in] [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która określa liczbę — dostęp próbny.
+[w] Struktura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) określająca liczbę przebiegów.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli stan obiektu powiązanego `BPS_DELETED` punktu przerwania jest ustawiony na (część wyliczenia [BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="remarks"></a>Uwagi
- Count — dostęp próbny Określa, kiedy punkt przerwania jest uruchamiany. Bieżący przebieg lub liczba trafień można uzyskać przez wywołanie metody [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) metody.
+ Liczba przebiegów określa, kiedy punkt przerwania jest uruchamiany. Bieżący przebieg lub liczba trafień można uzyskać, wywołując [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) metody.
 
- Dowolnej liczbie — dostęp próbny, który był wcześniej skojarzony z tego punktu przerwania zostaną utracone.
+ Każda liczba przebiegów, która była wcześniej skojarzona z tym punktem przerwania, jest tracona.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

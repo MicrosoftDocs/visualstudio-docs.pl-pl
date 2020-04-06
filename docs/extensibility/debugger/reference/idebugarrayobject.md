@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject | Microsoft Docs
+title: IDebugArrayObject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject method
 ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be1f65e3814cbd88d32a63169234a42f76db4e6d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 709273b89d89759163acb725220d1092d33ad72f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337586"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736217"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzane przykładowe ewaluatora wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [Ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Ten interfejs reprezentuje obiekt array.
+ Ten interfejs reprezentuje obiekt tablicy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,13 +32,13 @@ IDebugArrayObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Ewaluator wyrażeń implementuje ten interfejs reprezentujący tablicę.
+ Oceniający wyrażenie implementuje ten interfejs do reprezentowania tablicy.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfejsu można uzyskać ten interfejs, za pomocą [QueryInterface](/cpp/atl/queryinterface) Jeśli obiekt reprezentuje tablicę.
+ Interfejs [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) można uzyskać ten interfejs przy użyciu [QueryInterface,](/cpp/atl/queryinterface) jeśli obiekt reprezentuje tablicę.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- Oprócz metod na `IDebugObject` następujących metod interfejsu, są implementowane w `IDebugArrayObject` interfejsu.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ Oprócz metod w interfejsie, `IDebugObject` następujące metody są implementowane w interfejsie. `IDebugArrayObject`
 
 |Metoda|Opis|
 |------------|-----------------|
@@ -49,14 +49,14 @@ IDebugArrayObject : IDebugObject
 |[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Pobiera wymiary tablicy.|
 
 ## <a name="remarks"></a>Uwagi
- Ewaluatora wyrażeń używa tego interfejsu, który reprezentuje tablic w drzewie analizy.
+ Oceniający wyrażenie używa tego interfejsu do reprezentowania tablic w drzewie analizy.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: ee.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

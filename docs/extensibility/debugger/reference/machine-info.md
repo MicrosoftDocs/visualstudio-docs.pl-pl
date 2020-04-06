@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO | Microsoft Docs
+title: MACHINE_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e50fe4901ebcbf008bf191226502ccac8ec4cf5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad66992bd07afa2ef563c1b58fab0172e9a6121e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339227"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714544"
 ---
-# <a name="machineinfo"></a>MACHINE_INFO
-W tym artykule opisano określonego komputera.
+# <a name="machine_info"></a>MACHINE_INFO
+Opisuje określony komputer.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,25 +45,25 @@ public struct MACHINE_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `Fields`\
- Kombinacja flag z [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) wyliczenie określające, które pola struktury są inicjowane.
+ Kombinacja flag z wyliczenia [MACHINE_INFO_FIELDS,](../../../extensibility/debugger/reference/machine-info-fields.md) które określają, które pola struktury są inicjowane.
 
  `bstrName`\
- Nazwa komputera. Równoważne z wywoływaniem [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
+ Nazwa urządzenia. Odpowiednik wywołania [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md).
 
  `Flags`\
- Kombinacja flag z [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) wyliczenie opisujące atrybuty maszyny.
+ Kombinacja flag z wyliczenia [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) opisujące atrybuty maszyny.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest zwracany przez wywołanie [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metody.
+ Ta struktura jest zwracana przez wywołanie [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metody.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

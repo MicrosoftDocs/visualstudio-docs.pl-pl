@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError | Dokumentacja firmy Microsoft
+title: IDebugCoreServer3::DiagnoseWebDebuggingError | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::DiagnoseWebDebuggingError
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 52b6d634da7cda9c7b90b8cd4f7d93e7accc033d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fec5b8fbe1cae18b8221702fe14443df231d8880
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317795"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732954"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Próbuje określić, dlaczego auto-attach nie powiodło się.
+Próbuje ustalić, dlaczego automatyczne dołączanie nie powiodło się.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>Parametry
 `pszUrl`\
-[in] Obecnie nieużywane; powinny być zawsze ustawiony na wartość null.
+[w] Nie jest obecnie używany; zawsze powinna być ustawiona na wartość null.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Inne typowe kody powrotu są następujące:
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Poniżej przedstawiono inne typowe kody zwrotów:
 
-|Kod|Opis|
+|Code|Opis|
 |----------|-----------------|
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Nie można ustalić, dlaczego serwera zdalnego nie powiodło się można rozpocząć debugowania.|
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Nie można debugować na serwerze zdalnym, prawdopodobnie z powodu niewystarczających uprawnień lub ponieważ nie włączono czasownik DEBUG.|
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Serwer sieci web został zablokowany i blokuje czasownik DEBUG, który jest wymagany do włączenia debugowania.|
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Nie można ustalić, dlaczego serwer zdalny nie może uruchomić debugowania.|
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Nie można debugować na serwerze zdalnym, prawdopodobnie z powodu niewystarczających uprawnień lub ponieważ zlecenie DEBUG nie jest włączone.|
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Serwer sieci web został zablokowany i blokuje zlecenie DEBUG, które jest wymagane do włączenia debugowania.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

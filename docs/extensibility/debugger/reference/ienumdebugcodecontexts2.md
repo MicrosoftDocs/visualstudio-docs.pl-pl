@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2 | Microsoft Docs
+title: IEnumDebugCodeContexts2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dae1261adca25162b5bb81cc3ae8b006ce7ef283
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6917c44bb3ddc80513e7c45a6aa4ea0207fd46c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350885"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717273"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
-Ten interfejs wylicza kontekstów kod związany z sesji debugowania lub z określonego programu lub dokumentu.
+Ten interfejs wylicza konteksty kodu skojarzone z sesją debugowania lub z określonym programem lub dokumentem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,35 +29,35 @@ IEnumDebugCodeContexts2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Aparat debugowania (DE) implementuje ten interfejs do reprezentowania listę konteksty kodu dla określonego tekstu pozycji w programie lub Podaj listę konteksty kodu dla kontekstu określonego dokumentu.
+ Aparat debugowania (DE) implementuje ten interfejs do reprezentowania listy kontekstów kodu dla określonej pozycji tekstu w programie lub listy kontekstów kodu dla kontekstu określonego dokumentu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Wywołaj [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) uzyskać ten interfejs reprezentujący listę konteksty kodu dla pozycji określony tekst w dokumencie źródłowym programu.
+ Wywołaj [EnumCodeContexts,](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) aby uzyskać ten interfejs reprezentujący listę kontekstów kodu dla określonej pozycji tekstowej w dokumencie źródłowym programu.
 
- Wywołaj [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) uzyskać ten interfejs reprezentujący listę wszystkich kontekstach kodu w określonego dokumentu źródłowego.
+ Wywołanie [EnumCodeContexts,](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md) aby uzyskać ten interfejs reprezentujący listę wszystkich kontekstów kodu w określonym dokumencie źródłowym.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IEnumDebugCodeContexts2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IEnumDebugCodeContexts2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[Next](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Pobiera określoną liczbę kontekstów kodu w kolejności wyliczenia.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Pomija określoną liczbę kontekstów kodu w kolejności wyliczenia.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Resetuje sekwencji wyliczenia na początku.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Pobiera liczbę kontekstów kodu w moduł wyliczający.|
+|[Dalej](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|Pobiera określoną liczbę kontekstów kodu w sekwencji wyliczenia.|
+|[Pominąć](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|Pomija określoną liczbę kontekstów kodu w sekwencji wyliczenia.|
+|[Resetuj](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-reset.md)|Resetuje sekwencję wyliczenia do początku.|
+|[Klonowanie](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-clone.md)|Tworzy wyliczenia, który zawiera ten sam stan wyliczenia jako bieżącego wylicznika.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|Pobiera liczbę kontekstów kodu w wyliczacza.|
 
 ## <a name="remarks"></a>Uwagi
- Visual Studio wywołania [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) do wypełnienia listy kontekstów kod użytkownika mogą wybierać kiedy ustawienie następnej instrukcji lub wyświetlanie dezasemblacji dla pliku źródłowego. Wiele kontekstów kod może wystąpić na przykład, gdy istnieje wiele wystąpień szablonu styl C++.
+ Visual Studio wywołuje [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) wypełnić listę kontekstów kodu użytkownik może wybrać podczas ustawiania następnej instrukcji lub pokazano demontażu pliku źródłowego. Wiele kontekstów kodu może wystąpić, na przykład, gdy istnieje wiele wystąpień szablonu w stylu C ++.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)

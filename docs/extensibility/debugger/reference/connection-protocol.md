@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL | Microsoft Docs
+title: CONNECTION_PROTOCOL | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346526"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737651"
 ---
-# <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Określa protokół używany do komunikacji między serwerem debugowania i debugowanie pakietu (DE).
+# <a name="connection_protocol"></a>CONNECTION_PROTOCOL
+Wskazuje protokół używany do komunikacji między serwerem debugowania a pakietem debugowania (DE).
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,36 +53,36 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Pola
 `CONNECTION_NONE`\
-Połączenie nie zostało ustanowione do serwera.
+Nie nawiązyno połączenia z serwerem.
 
 `CONNECTION_UNKNOWN`\
-Połączenie zostało wykonane, ale jest nieznanego typu.
+Nawiązanie połączenia, ale jest typu nieznanego.
 
 `CONNECTION_LOCAL`\
-To połączenie serwera lokalnego.
+Połączenie jest z serwerem lokalnym.
 
 `CONNECTION_PIPE`\
-Połączenie jest użycie nazwanego potoku.
+Połączenie odbywa się za pośrednictwem nazwanego potoku.
 
 `CONNECTION_TCPIP`\
 Połączenie używa protokołu TCP/IP.
 
 `CONNECTION_HTTP`\
-Połączenie korzysta z protokołu HTTP (za pośrednictwem serwera sieci Web).
+Połączenie używa protokołu HTTP (za pośrednictwem serwera sieci Web).
 
 `CONNECTION_OTHER`\
-Inny rodzaj połączenie zostało ustanowione (Ta wartość nie jest obecnie używany).
+Ustanowiono inny typ połączenia (ta wartość nie jest obecnie używana).
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są zwracane z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.
+Wartości te są zwracane z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

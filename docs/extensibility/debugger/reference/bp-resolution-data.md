@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA | Dokumentacja firmy Microsoft
+title: BP_RESOLUTION_DATA | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_DATA structure
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8fcf2443cdc013e6f81968336101b78ea220784
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346544"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737839"
 ---
-# <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-W tym artykule opisano wynik powiązania punktu przerwania danych.
+# <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
+Opisuje wynik powiązania punktu przerwania danych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,28 +47,28 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>Elementy członkowskie
 `bstrDataExpr`\
-Wyrażenie danych, która została powiązana.
+Wyrażenie danych, które zostało powiązane.
 
 `bstrFunc`\
-Nazwa funkcji punktu przerwania danych została powiązana w (jeśli istnieje).
+Nazwa funkcji, do którego ma powiązany punkt przerwania danych (jeśli istnieje).
 
 `bstrImage`\
-Nazwa modułu (na przykład MyModule.dll), powiązanej w punkt przerwania danych.
+Nazwa modułu (MyModule.dll, na przykład), że punkt przerwania danych ma powiązane w.
 
 `dwFlags`\
-Wartość z zakresu od [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) wyliczenie, opisujące, jak punkt przerwania danych jest zaimplementowana.
+Wartość z [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) wyliczenia, opisujące sposób implementacji punktu przerwania danych.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest elementem członkowskim [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struktury, która jest w Włącz członkiem [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwracany przez strukturę [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metody.
+Ta struktura jest członkiem [struktury BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) która z kolei jest członkiem [struktury BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwracana przez [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetDocument | Dokumentacja firmy Microsoft
+title: IDebugDocumentPosition2::GetDocument | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetDocument
 ms.assetid: eaa172c9-5748-4ce1-a0e2-33c2063f6752
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81a394398f719e50afc178b3c57161e3ceb61ee5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f167c581ea07225774d9a34e42058d6616f0f89
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326558"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731687"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
-Pobiera dokumentu zawierającego.
+Pobiera dokument zawierający.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetDocument( 
 
 ## <a name="parameters"></a>Parametry
 `ppDoc`\
-[out] Zwraca [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) obiekt, który reprezentuje dokumentu zawierającego tej pozycji.
+[na zewnątrz] Zwraca obiekt [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) reprezentujący dokument zawierający tę pozycję.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

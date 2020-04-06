@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbols | Dokumentacja firmy Microsoft
+title: IDebugComPlusSymbolProvider::LoadSymbols | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5194b13a1e92b6d6f8ed4b688ea7956cb3ed876e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 805db1f0b0722b75e7a047d8509ed9e63e4565c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309004"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733657"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-Ładuje symbole debugowania określony w pamięci.
+Ładuje określone symbole debugowania w pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,28 +50,28 @@ int LoadSymbols(
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[in] Identyfikator domeny aplikacji.
+[w] Identyfikator domeny aplikacji.
 
 `guidModule`\
-[in] Unikatowy identyfikator mondule.
+[w] Unikatowy identyfikator mondule.
 
 `baseAddress`\
-[in] Adres podstawowy pamięci.
+[w] Adres pamięci podstawowej.
 
 `pUnkMetadataImport`\
-[in] Obiekt, który zawiera metadane symbolu.
+[w] Obiekt zawierający metadane symbolu.
 
 `bstrModuleName`\
-[in] Nazwa modułu.
+[w] Nazwa modułu.
 
 `bstrSymSearchPath`\
-[in] Ścieżka do wyszukiwania pliku symboli.
+[w] Ścieżka do wyszukiwania pliku symbolu.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbols(
@@ -86,5 +86,5 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

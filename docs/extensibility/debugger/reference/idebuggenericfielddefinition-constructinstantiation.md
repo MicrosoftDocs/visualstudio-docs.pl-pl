@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericFieldDefinition::ConstructInstantiation | Dokumentacja firmy Microsoft
+title: IDebugGenericFieldDefinition::ConstructInstantiation | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f7ecfc79cc2a4279a8ca0fccfc527ef63e603b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313215"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728263"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
-Tworzy wystąpienie pola, biorąc pod uwagę tablicę argumentów typu.
+Konstruuje wystąpienie pola, biorąc pod uwagę tablicę argumentów typu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int ConstructInstantiation(
 
 ## <a name="parameters"></a>Parametry
 `cArgs`\
-[in] Liczba argumentów w `ppArgs` tablicy.
+[w] Liczba argumentów `ppArgs` w tablicy.
 
 `ppArgs`\
-[in] Tablica, która zawiera argumenty typu. Argumenty typu muszą być zamknięte typy (Ogólne nieogólnego lub w pełni utworzona).
+[w] Tablica zawierająca argumenty typu. Argumenty typu muszą być typami zamkniętymi (niegeneralne lub w pełni skonkregnowane rodzajami ogólnymi).
 
 `ppConstructedField`\
-[out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejs, który reprezentuje nowe pole.
+[na zewnątrz] Zwraca interfejs [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący nowe pole.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
  Ograniczenia nie są sprawdzane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

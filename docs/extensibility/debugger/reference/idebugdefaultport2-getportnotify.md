@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetPortNotify | Dokumentacja firmy Microsoft
+title: IDebugDefaultPort2::GetPortNotify | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetPortNotify
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd85f76ab0c882656ca79fe02296f30bdb83f523
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 670dd128e6962c1e1d12f81eea03f9759fa56621
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351763"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732404"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
-Ta metoda pobiera [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) interfejsu dla tego portu.
+Ta metoda pobiera interfejs [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) dla tego portu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetPortNotify(
 
 ## <a name="parameters"></a>Parametry
 `ppPortNotify`\
-[out] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiektu.
+[na zewnątrz] [Obiekt IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md)
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zwykle `QueryInterface` metoda jest wywoływana w implementacji obiektu [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejs w celu uzyskania [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) interfejsu. Istnieją jednak okoliczności, w których zaimplementowano żądanego interfejsu na inny obiekt. Ta metoda polega na schowaniu tych sytuacji i zwraca `IDebugPortNotify2` interfejs z najbardziej odpowiedniego obiektu.
+ Zwykle `QueryInterface` metoda jest wywoływana na obiekcie implementującym interfejs [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) w celu uzyskania interfejsu [IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md) Istnieją jednak okoliczności, w których żądany interfejs jest implementowany na inny obiekt. Ta metoda ukrywa te okoliczności `IDebugPortNotify2` i zwraca interfejs z najbardziej odpowiedniego obiektu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

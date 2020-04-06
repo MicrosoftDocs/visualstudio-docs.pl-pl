@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2 | Microsoft Docs
+title: IDebugCustomAttributeQuery2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery interface
 - IDebugCustomAttributeQuery2 interface
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00220574ac9c16bdab9abd64adde1877ee0fd9f2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335802"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732487"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
-Określa obecność atrybutu niestandardowego dla tego pola i, jeśli istnieje, zwraca informacje o atrybutach.
+Określa istnienie atrybutu niestandardowego dla tego pola i, jeśli istnieje, zwraca informacje o atrybucie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -30,36 +30,36 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawca symboli implementuje ten interfejs dla tego samego obiektu, który implementuje [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) w celu obsługi niestandardowych atrybutów.
+ Dostawca symbolu implementuje ten interfejs na tym samym obiekcie, który implementuje [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) w celu obsługi atrybutów niestandardowych.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- Użyj [QueryInterface](/cpp/atl/queryinterface) uzyskać ten interfejs z [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.
+ Użyj [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać ten interfejs z interfejsu [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody **IDebugCustomAttributeQuery** interfejsu.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli przedstawiono metody interfejsu **IDebugCustomAttributeQuery.**
 
 |Metoda|Opis|
 |------------|-----------------|
 |[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|Określa, czy atrybut niestandardowy istnieje według nazwy.|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Pobiera informacje o atrybutach dotyczące danego atrybutu niestandardowego.|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|Pobiera informacje o atrybutach dla danego atrybutu niestandardowego.|
 
- Oprócz **IDebugCustomAttributeQuery** metod `IDebugCustomAttributeQuery2` implementuje następującą metodę:
+ Oprócz metod **IDebugCustomAttributeQuery** implementuje `IDebugCustomAttributeQuery2` następującą metodę:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Pobiera moduł wyliczający dla wszystkich atrybutów niestandardowych, dołączony do tego pola.|
+|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Pobiera wyliczenia dla wszystkich atrybutów niestandardowych dołączonych do tego pola.|
 
 ## <a name="remarks"></a>Uwagi
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) metoda może zwracać moduł wyliczający dla wszystkich atrybutów niestandardowych zdefiniowanych dla tego pola.
+ Metoda [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) może zwrócić inicjatora dla wszystkich atrybutów niestandardowych zdefiniowanych dla tego pola.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

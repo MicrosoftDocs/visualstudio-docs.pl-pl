@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPhysicalProcessId | Microsoft Docs
+title: Identyfikator IDebugProcess2::GetPhysicalProcessId | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetPhysicalProcessId
 ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c4dd794d3de4d61750813bd0e6542946120e4b6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bde46309442fceb61ed6c3482ca1f0ce2e83c725
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311706"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723946"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
-Pobiera identyfikator procesu systemu.
+Pobiera identyfikator procesu systemowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetPhysicalProcessId(
 
 ## <a name="parameters"></a>Parametry
 `pdwProcessId`\
-[out] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która jest wypełniane informacje identyfikujące procesu systemu.
+[na zewnątrz] [Struktura AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) wypełniona informacjami o identyfikatorze procesu systemowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

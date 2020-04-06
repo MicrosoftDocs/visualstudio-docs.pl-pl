@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Dokumentacja firmy Microsoft
+title: BP_ERROR_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319294"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738078"
 ---
-# <a name="bperrortype"></a>BP_ERROR_TYPE
-Określa typ błąd punktu przerwania.
+# <a name="bp_error_type"></a>BP_ERROR_TYPE
+Określa typ błędu punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -62,51 +62,51 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Pola
 `BPET_NONE`\
-Określa nie błąd punktu przerwania.
+Określa brak błędu punktu przerwania.
 
 `BPET_TYPE_WARNING`\
-Określa błąd stylu ostrzeżenie punktu przerwania.
+Określa błąd punktu przerwania w stylu ostrzeżenia.
 
 `BPET_TYPE_ERROR`\
-Określa błąd punktu przerwania stylu błędu.
+Określa błąd punktu przerwania w stylu błędu.
 
 `BPET_SEV_HIGH`\
 Określa błąd punktu przerwania o wysokiej ważności.
 
 `BPET_SEV_GENERAL`\
-Określa o średniej ważności, punkt przerwania.
+Określa błąd punktu przerwania o średniej ważności.
 
 `BPET_SEV_LOW`\
-Określa o niskiej ważności, punkt przerwania.
+Określa błąd punktu przerwania o niskiej ważności.
 
 `BPET_TYPE_MASK`\
-Określa błąd punktu przerwania stylu maski.
+Określa błąd punktu przerwania w stylu maski.
 
 `BPET_SEV_MASK`\
-Określa błąd punktu przerwania ważność maska stylu.
+Określa błąd punktu przerwania w stylu ważności maski.
 
 `BPET_GENERAL_WARNING`\
-Określa błąd punktu przerwania ogólne ostrzeżenie stylu.
+Określa błąd punktu przerwania w stylu ostrzeżenia ogólnego.
 
 `BPET_GENERAL_ERROR`\
-Określa błąd punktu przerwania stylu w przypadku błędu ogólnego.
+Określa błąd punktu przerwania w stylu błędu ogólnego.
 
 `BPET_ALL`\
-Określa wszystkie typy błąd punktu przerwania.
+Określa wszystkie typy błędów punktu przerwania.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości mogą być łączone przy użyciu bitowego operatora `OR` i jest używana do `dwType` członkiem [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury. Przekazany jako parametr do [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metody.
+Wartości te mogą być łączone z bitowym `OR` i używane dla `dwType` elementu członkowskiego [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struktury. Przekazany jako parametr do [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) metody.
 
-Typ błędu punktu przerwania składa się z typu i ważności. Oznacza, że typ błąd punktu przerwania nigdy nie tylko typem (na przykład `BPET_TYPE_ERROR`,) lub ważność (na przykład `BPET_SEV_GENERAL`) przez siebie. `BPET_GENERAL_WARNING` i `BPET_GENERAL_ERROR` zapewnia wstępnie zdefiniowane wartości dla punktów przerwania ogólne, ostrzeżeń i błędów.
+Typ błędu punktu przerwania składa się z typu i ważności. Oznacza to, że typ błędu punktu przerwania nigdy `BPET_TYPE_ERROR`nie jest tylko typem `BPET_SEV_GENERAL`(na przykład ,) lub ważnością (na przykład) sam. `BPET_GENERAL_WARNING`i `BPET_GENERAL_ERROR` podaj wstępnie zdefiniowane wartości dla ogólnych punktów przerwania ostrzeżeń i błędów.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

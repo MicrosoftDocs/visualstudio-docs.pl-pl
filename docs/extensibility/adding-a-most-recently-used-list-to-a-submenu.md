@@ -1,5 +1,5 @@
 ---
-title: Dodawanie listy ostatnio używanych elementów do podmenu | Dokumentacja firmy Microsoft
+title: Dodawanie ostatnio używanej listy do podmenu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,50 +7,50 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eb32f81947f7359f5912e8a558e8df5002a0b80
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf389c0da7ec0aafb6e47dae8f09ffdc3b1d1e4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352409"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740304"
 ---
-# <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj listy ostatnio używanych elementów do podmenu
-W tym przewodniku opiera się na pokazach w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i przedstawiono sposób dodawania listy dynamicznych elementów do podmenu. Lista dynamiczna stanowi podstawę do tworzenia list najbardziej ostatnio używanych elementów.
+# <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodawanie ostatnio używanej listy do podmenu
+Ten instruktaż opiera się na demonstracjach w [menu Dodaj podmenu i](../extensibility/adding-a-submenu-to-a-menu.md)pokazuje, jak dodać listę dynamiczną do podmenu. Lista dynamiczna stanowi podstawę do utworzenia listy ostatnio używane (MRU).
 
-Menu dynamiczne listy rozpoczyna się od symbolu zastępczego, w menu. Za każdym razem, gdy zostanie wyświetlone menu, Visual Studio zintegrowane środowisko programistyczne (IDE) pyta, czy pakietu VSPackage dla wszystkich poleceń, które mają być pokazywane na symbol zastępczy. Lista dynamiczna może występować w dowolnym miejscu w menu. Jednak listy dynamiczne są zwykle przechowywane i wyświetlane przez siebie, w podmenu lub u dołu menu. Za pomocą te wzorce projektowe, możesz włączyć dynamiczną listę poleceń, aby rozwinąć lub zwinąć bez wywierania wpływu na pozycji innych poleceń w menu. W tym przewodniku listy ostatnio używanych w dynamicznych jest wyświetlane w dolnej części istniejącego podmenu, oddzielone od reszty podmenu wiersza.
+Dynamiczna lista menu zaczyna się od symbolu zastępczego w menu. Za każdym razem, gdy menu jest wyświetlane, visual studio zintegrowane środowisko programistyczne (IDE) pyta VSPackage dla wszystkich poleceń, które powinny być wyświetlane w symbolu zastępczego. Lista dynamiczna może pojawić się w dowolnym miejscu w menu. Jednak listy dynamiczne są zazwyczaj przechowywane i wyświetlane samodzielnie na podmenu lub na dole menu. Za pomocą tych wzorców projektowych, można włączyć dynamiczną listę poleceń, aby rozwinąć i umowy bez wpływu na położenie innych poleceń w menu. W tym instruktażu dynamiczna lista MRU jest wyświetlana u dołu istniejącego podmenu, oddzielona od reszty podmenu wierszem.
 
-Technicznie rzecz biorąc lista dynamiczna może również będą stosowane do paska narzędzi. Jednak firma Microsoft zniechęcić to użycie, ponieważ pasek narzędzi powinien pozostać bez zmian, chyba że użytkownik ma specjalne kroki, aby ją zmienić.
+Technicznie lista dynamiczna może być również zastosowana do paska narzędzi. Jednak możemy zniechęcić tego użycia, ponieważ pasek narzędzi powinien pozostać niezmieniony, chyba że użytkownik podejmie określone kroki, aby go zmienić.
 
-Ten przewodnik tworzy listę MRU cztery elementy, które zmienić ich kolejność, za każdym razem, gdy wybrano że jeden z nich (Przenosi wybrany element do góry listy).
+W tym instruktażu utworzy się listę MRU czterech elementów, które zmieniają ich kolejność za każdym razem, gdy jeden z nich jest zaznaczony (wybrany element przenosi się na górę listy).
 
-Aby uzyskać więcej informacji na temat menu i *vsct* plików, zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
+Aby uzyskać więcej informacji o menu i plikach *vsct,* zobacz [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
-Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Aby wykonać ten przewodnik, należy zainstalować visual studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-an-extension"></a>Tworzenie rozszerzenia
 
-- Postępuj zgodnie z procedurami w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md) utworzyć podmenu, który jest modyfikowany w poniższych procedurach.
+- Postępuj zgodnie z [procedurami w dodawanie podmenu do menu,](../extensibility/adding-a-submenu-to-a-menu.md) aby utworzyć podmenu, który jest modyfikowany w poniższych procedurach.
 
-  W procedurach przedstawionych w tym przewodniku przyjęto założenie, że nazwa pakietu VSPackage jest `TopLevelMenu`, czyli nazwę, która jest używana w [dodać menu na pasku menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).
+  Procedury w tym instruktażu zakładają, że `TopLevelMenu`nazwa VSPackage jest , która jest nazwą, która jest używana w [Dodaj menu do paska menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).
 
-## <a name="create-a-dynamic-item-list-command"></a>Utwórz polecenie dynamicznego elementu listy
+## <a name="create-a-dynamic-item-list-command"></a>Tworzenie polecenia listy elementów dynamicznych
 
-1. Otwórz *TestCommandPackage.vsct*.
+1. Otwórz *testCommandPackage.vsct*.
 
-2. W `Symbols` sekcji w `GuidSymbol` węzeł o nazwie guidTestCommandPackageCmdSet, dodać symbol `MRUListGroup` grupy i `cmdidMRUList` polecenia w następujący sposób.
+2. W `Symbols` sekcji w `GuidSymbol` węźle o nazwie guidTestCommandPackageCmdSet `MRUListGroup` dodaj `cmdidMRUList` symbol grupy i polecenia w następujący sposób.
 
     ```csharp
     <IDSymbol name="MRUListGroup" value="0x1200"/>
     <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
-3. W `Groups` sekcji i Dodaj grupy zadeklarowanych po istniejące wpisy grupy.
+3. W `Groups` sekcji dodaj zadeklarowane grupy po istniejących wpisach grupy.
 
     ```cpp
     <Group guid="guidTestCommandPackageCmdSet" id="MRUListGroup"
@@ -60,7 +60,7 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
 
     ```
 
-4. W `Buttons` Dodaj węzeł do reprezentowania polecenie nowo zadeklarowanych po istniejącej pozycji przycisku.
+4. W `Buttons` sekcji dodaj węzeł do reprezentowania nowo zadeklarowanego polecenia, po istniejących wpisach przycisku.
 
     ```csharp
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidMRUList"
@@ -74,34 +74,34 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
     </Button>
     ```
 
-    `DynamicItemStart` Flagi włączone polecenie być generowany dynamicznie.
+    Flaga `DynamicItemStart` umożliwia dynamiczne generowanie polecenia.
 
-5. Skompilować projekt i rozpocząć debugowanie w celu przetestowania nowego polecenia.
+5. Skompiluj projekt i rozpocznij debugowanie, aby przetestować wyświetlanie nowego polecenia.
 
-    Na **TestMenu** menu, kliknij przycisk nowe podmenu **podmenu**, aby wyświetlić nowe polecenie **symbolu zastępczego MRU**. Po zaimplementowaniu dynamiczne listy ostatnio używanych poleceń w następnej procedurze tej etykiety polecenia zostanie zastąpiona przez tę listę, każdym razem, który jest otwierany w podmenu.
+    W menu **TestMenu** kliknij nowe podmenu **Podmenu**, aby wyświetlić nowe polecenie **MRU Placeholder**. Po zaimplementowaniu dynamicznej listy poleceń MRU w następnej procedurze ta etykieta polecenia zostanie zastąpiona tą listą za każdym razem, gdy podmenu jest otwierane.
 
-## <a name="filling-the-mru-list"></a>Wypełnianie listy ostatnio używanych
+## <a name="filling-the-mru-list"></a>Wypełnianie listy MRU
 
-1. W *TestCommandPackageGuids.cs*, Dodaj następujące wiersze po istniejące identyfikatory poleceń w `TestCommandPackageGuids` definicji klasy.
+1. W *TestCommandPackageGuids.cs*, dodaj następujące wiersze po istniejących identyfikatorach `TestCommandPackageGuids` poleceń w definicji klasy.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. W *TestCommand.cs* Dodaj następującą instrukcję using.
+2. W *TestCommand.cs* dodać następujące instrukcje.
 
     ```csharp
     using System.Collections;
     ```
 
-3. Dodaj następujący kod w Konstruktorze TestCommand po ostatnim wywołaniu funkcji AddCommand. `InitMRUMenu` Zostanie zdefiniowana później
+3. Dodaj następujący kod w Konstruktorze TestCommand po ostatnim wywołaniu AddCommand. Zostanie `InitMRUMenu` ono zdefiniowane później
 
     ```csharp
     this.InitMRUMenu(commandService);
     ```
 
-4. Dodaj następujący kod w klasie TestCommand. Ten kod inicjalizuje listę ciągów reprezentujących elementy, które mają być wyświetlane na liście MRU.
+4. Dodaj następujący kod w TestCommand klasy. Ten kod inicjuje listę ciągów, które reprezentują elementy, które mają być wyświetlane na liście MRU.
 
     ```csharp
     private int numMRUItems = 4;
@@ -125,7 +125,7 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
     }
     ```
 
-5. Po `InitializeMRUList` metody, Dodaj `InitMRUMenu` metody. Polecenia menu listy ostatnio używanych elementów jest inicjowana.
+5. Po `InitializeMRUList` metodzie dodaj `InitMRUMenu` metodę. Spowoduje to zainicjowanie poleceń menu listy MRU.
 
     ```csharp
     private void InitMRUMenu(OleMenuCommandService mcs)
@@ -143,9 +143,9 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
     }
     ```
 
-    Należy utworzyć obiekt polecenia menu dla każdego elementu możliwe na listę MRU. Wywołania środowiska IDE `OnMRUQueryStatus` metody dla każdego elementu na liście MRU, dopóki nie ma żadnych elementów. W kodzie zarządzanym jedynym sposobem dla środowiska IDE dowiedzieć się, że nie istnieją żadne więcej elementów jest najpierw utworzyć wszystkie możliwe elementy. Jeśli chcesz, można oznaczyć dodatkowe elementy jako nie są widoczne w najpierw za pomocą `mc.Visible = false;` po utworzeniu polecenia menu. Te elementy mogą następnie być widoczne później za pomocą `mc.Visible = true;` w `OnMRUQueryStatus` metody.
+    Należy utworzyć obiekt polecenia menu dla każdego możliwego elementu na liście MRU. IDE wywołuje `OnMRUQueryStatus` metodę dla każdego elementu na liście MRU, dopóki nie ma więcej elementów. W kodzie zarządzanym jedynym sposobem, aby IDE wiedzieć, że nie ma więcej elementów jest najpierw utworzyć wszystkie możliwe elementy. Jeśli chcesz, możesz oznaczyć dodatkowe elementy jako `mc.Visible = false;` niewidoczne na początku za pomocą polecenia menu jest tworzony. Elementy te mogą być następnie widoczne `mc.Visible = true;` później `OnMRUQueryStatus` przy użyciu metody.
 
-6. Po `InitMRUMenu` metody, Dodaj następujący kod `OnMRUQueryStatus` metody. To jest program obsługi, który ustawia tekst dla każdego elementu listy ostatnio używanych.
+6. Po `InitMRUMenu` zakończeniu metody dodaj `OnMRUQueryStatus` następującą metodę. Jest to program obsługi, który ustawia tekst dla każdego elementu MRU.
 
     ```csharp
     private void OnMRUQueryStatus(object sender, EventArgs e)
@@ -162,7 +162,7 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
     }
     ```
 
-7. Po `OnMRUQueryStatus` metody, Dodaj następujący kod `OnMRUExec` metody. To jest obsługa zaznaczenie elementu MRU. Ta metoda Przenosi wybrany element do góry listy, a następnie wyświetla wybrany element w oknie komunikatu.
+7. Po `OnMRUQueryStatus` zakończeniu metody dodaj `OnMRUExec` następującą metodę. Jest to program obsługi do wybierania elementu MRU. Ta metoda przenosi zaznaczony element na górę listy, a następnie wyświetla zaznaczony element w oknie komunikatu.
 
     ```csharp
     private void OnMRUExec(object sender, EventArgs e)
@@ -188,18 +188,18 @@ Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio 
 
     ```
 
-## <a name="testing-the-mru-list"></a>Testowanie na listę MRU
+## <a name="testing-the-mru-list"></a>Testowanie listy MRU
 
-1. Skompiluj projekt, a następnie rozpocząć debugowanie.
+1. Skompiluj projekt i rozpocznij debugowanie.
 
-2. Na **TestMenu** menu, kliknij przycisk **wywołania TestCommand**. W ten sposób Wyświetla okno komunikatu, który wskazuje, że wybrano polecenie.
+2. W menu **TestMenu** kliknij polecenie **Wywołaj polecenie TestCommand**. W ten sposób zostanie wyświetlone okno komunikatu wskazujące, że polecenie zostało wybrane.
 
     > [!NOTE]
-    > Ten krok jest wymagany, aby wymusić pakietu VSPackage, aby załadować i poprawnego wyświetlania listy ostatnio używanych. Jeśli pominiesz ten krok nie jest wyświetlana na liście MRU.
+    > Ten krok jest wymagany do wymuszenie vspackage załadować i poprawnie wyświetlić listę MRU. Jeśli pominiesz ten krok, lista MRU nie zostanie wyświetlona.
 
-3. Na **Test Menu** menu, kliknij przycisk **podmenu**. Na koniec podmenu, poniżej separator zostanie wyświetlona lista cztery elementy. Po kliknięciu **3 elementu**, okno komunikatu powinno powodować pojawiają się i wyświetlenie tekstu, **wybrany element 3**. (Jeśli nie zostanie wyświetlona lista cztery elementy, upewnij się, że zostały wykonane z instrukcjami wyświetlanymi w poprzednim kroku.)
+3. W menu **Menu testowe** kliknij polecenie **Pod menu**. Lista czterech elementów jest wyświetlana na końcu podmenu, poniżej separatora. Po **kliknięciu pozycji 3**powinno pojawić się okno komunikatu i wyświetlenie tekstu **Zaznaczony element 3**. (Jeśli lista czterech elementów nie jest wyświetlana, upewnij się, że postępowałeś zgodnie z instrukcjami we wcześniejszym kroku).
 
-4. Ponownie otworzyć podmenu. Należy zauważyć, że **3 elementu** jest teraz w górnej części listy i inne elementy zostały wypchnięte jedną pozycję w dół. Kliknij przycisk **3 elementu** ponownie i zwróć uwagę, że nadal wyświetla okno komunikatu **wybrany element 3**, co oznacza, że tekst poprawnie zostały przeniesione do nowej pozycji wraz z etykiety polecenia.
+4. Ponownie otwórz podmenu. Należy zauważyć, że **element 3** znajduje się teraz na górze listy, a pozostałe elementy zostały przesunięte w dół o jedną pozycję. Kliknij ponownie **pozycję Element 3** i zwróć uwagę, że w oknie komunikatu nadal **jest wyświetlany zaznaczony element 3**, co oznacza, że tekst został poprawnie przeniesiony do nowej pozycji wraz z etykietą polecenia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dynamiczne dodawanie elementów menu](../extensibility/dynamically-adding-menu-items.md)

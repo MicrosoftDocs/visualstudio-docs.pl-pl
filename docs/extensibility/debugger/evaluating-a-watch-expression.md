@@ -1,39 +1,39 @@
 ---
-title: Ocenianie wyrażenia kontrolnego | Dokumentacja firmy Microsoft
+title: Ocena wyrażenia zegarka | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, watch expressions
 - watch expressions
 ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50abb359095a727b56bf40ab0d2c7ab1155d0c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9a239e430338e88a0be4bc35ad1c357925f7d8f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315544"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738858"
 ---
-# <a name="evaluate-a-watch-expression"></a>Ocena wyrażenia kontrolnego
+# <a name="evaluate-a-watch-expression"></a>Ocenianie wyrażenia zegarka
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
-Gdy program Visual Studio jest gotowy wyświetlić wartość wyrażenia czujki, wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), który z kolei wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Ten proces generuje [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który zawiera wartość i typ wyrażenia.
+Gdy program Visual Studio jest gotowy do wyświetlania wartości wyrażenia zegarka, wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md), który z kolei wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Ten proces tworzy [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który zawiera wartość i typ wyrażenia.
 
-W tej implementacji `IDebugParsedExpression::EvaluateSync`, wyrażenie jest analizowany i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:
+W tej `IDebugParsedExpression::EvaluateSync`implementacji , wyrażenie jest analizowane i oceniane w tym samym czasie. Ta implementacja wykonuje następujące zadania:
 
-1. Analizuje i oblicza wyrażenie w celu wygenerowania ogólnego obiekt, który przechowuje wartości i typ. W języku C#, jest reprezentowane jako `object` znajduje się w języku C++, jest reprezentowane jako `VARIANT`.
+1. Analizuje i ocenia wyrażenie do produkcji obiektu ogólnego, który przechowuje wartość i jego typ. W języku C#jest to `object` reprezentowane jako while w języku C++, jest to reprezentowane jako `VARIANT`.
 
-2. Tworzy klasę (o nazwie `CValueProperty` w tym przykładzie), który zawiera `IDebugProperty2` interfejs i są przechowywane w klasie wartość zwracaną.
+2. Wystąpienia klasy (o `CValueProperty` nazwie w tym przykładzie), która implementuje `IDebugProperty2` interfejs i przechowuje w klasie wartość, która ma zostać zwrócona.
 
 3. Zwraca `IDebugProperty2` interfejs z `CValueProperty` obiektu.
 
 ## <a name="managed-code"></a>Kod zarządzany
-Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda pomocnika `Tokenize` analizuje wyrażenia w drzewie analizy. Funkcja Pomocnika `EvalToken` konwertuje wartość tokenu. Funkcja Pomocnika `FindTerm` rekursywnie przechodzi w drzewie analizy wywoływania `EvalToken` dla każdego węzła reprezentujący wartość i stosując wszystkie operacje (dodawania lub odejmowania) w wyrażeniu.
+Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie zarządzanym. Metoda `Tokenize` pomocnika analizuje wyrażenie w drzewie analizy. Funkcja `EvalToken` pomocnika konwertuje token na wartość. Funkcja `FindTerm` pomocnika cyklicznie przechodzi przez drzewo analizy, wywołując `EvalToken` dla każdego węzła reprezentującego wartość i stosując wszystkie operacje (dodawanie lub odejmowanie) w wyrażeniu.
 
 ```csharp
 namespace EEMC
@@ -80,7 +80,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Niezarządzany kod
-Jest to implementacja `IDebugParsedExpression::EvaluateSync` w niezarządzanym kodzie. Funkcja Pomocnika `Evaluate` analizuje i oblicza wyrażenie zwraca `VARIANT` zawierający wartość wynikową. Funkcja Pomocnika `VariantValueToProperty` pakiety `VARIANT` do `CValueProperty` obiektu.
+Jest to implementacja `IDebugParsedExpression::EvaluateSync` w kodzie niezarządzanym. Funkcja `Evaluate` pomocnika analizuje i ocenia wyrażenie, zwracając `VARIANT` przytrzymanie wartości wynikowej. Funkcja `VariantValueToProperty` pomocnika łączy go `VARIANT` w `CValueProperty` obiekt.
 
 ```cpp
 STDMETHODIMP CParsedExpression::EvaluateSync(
@@ -171,6 +171,6 @@ STDMETHODIMP CParsedExpression::EvaluateSync(
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Ocena wyrażenia okna wyrażeń kontrolnych](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [Przykład implementacji oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)
+## <a name="see-also"></a>Zobacz też
+- [Ocena wyrażenia okna zegarka](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Przykładowa implementacja oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Dokumentacja firmy Microsoft
+title: IDebugProcessEx2::AddImplicitProgramNodes | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b75ef50107b44de8de6f65c5c4c9c6827e13426e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309490"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723396"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Metoda ta umożliwia dodanie węzła dla każdego silnika debugowania (DE) określony program.
+Ta metoda dodaje węzeł programu dla każdego aparatu debugowania (DE) określony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,20 +45,20 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>Parametry
 `guidLaunchingEngine`\
-[in] `GUID` Z DE, która ma być używany do uruchamiania programów (przyjęto, że można dodać węzły swój własny program).
+[w] De, `GUID` który ma być używany do uruchamiania programów (i zakłada się, aby dodać własne węzły programu).
 
 `rgguidSpecificEngines`\
-[in] Tablica `GUID`s DEs dla programu, który zostanie dodany węzłów.
+[w] Tablica `GUID`s DEs, dla których zostaną dodane węzły programu.
 
 `celtSpecificEngines`\
-[in] Liczba `GUID`s w `rgguidSpecificEngines` tablicy.
+[w] Liczba `GUID`s w `rgguidSpecificEngines` tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-- [Program węzłów](../../../extensibility/debugger/program-nodes.md) zostanie dodana dla każdego DE wymienionych w `rgguidSpecificEngines`— z wyjątkiem uruchamiania aparatu (podany w `guidLaunchingEngine`), który zakłada się, że dodanie węzła swój własny program jest uruchamiany program.
+- [Węzły programu](../../../extensibility/debugger/program-nodes.md) zostaną dodane dla `rgguidSpecificEngines`każdego DE wymienione w —z `guidLaunchingEngine`wyłączeniem silnika uruchamiania (jak podano w ), który zakłada się, aby dodać własny węzeł programu po uruchomieniu programu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [Węzły programu](../../../extensibility/debugger/program-nodes.md)

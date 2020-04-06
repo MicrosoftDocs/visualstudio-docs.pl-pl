@@ -1,5 +1,5 @@
 ---
-title: Assembly — Element (rozszerzenie Kreatora szablonów programu Visual Studio) | Dokumentacja firmy Microsoft
+title: Element zestawu (rozszerzenie kreatora szablonów programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68fb795005f1f653893147f7013117112f803211
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 43f5adb8abc17f0509fb58263f307e5051af85dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352226"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740059"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly — element (rozszerzenie Kreatora szablonów programu Visual Studio)
-Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejsu.
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Element złożenia (rozszerzenie kreatora szablonów programu Visual Studio)
+Określa nazwę lub silną nazwę zestawu, `IWizard` który implementuje interfejs.
 
- \<VSTemplate > \<wizardextension — > \<zestawu >
+ \<> \< \<zestawu> Kreatora>>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,18 +45,18 @@ Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejs
 
 |Element|Opis|
 |-------------|-----------------|
-|[Wizardextension —](../extensibility/wizardextension-element-visual-studio-templates.md)|Zawiera elementy rejestracji dostosowywania Kreatora szablonu.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Zawiera elementy rejestracji do dostosowywania kreatora szablonów.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ten tekst Określa zestaw, który implementuje `IWizard` interfejsu. Ta nazwa zestawu należy określić nazwę pełnego zestawu. Na przykład `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
+ Ten tekst określa zestaw, który `IWizard` implementuje interfejs. Ta nazwa zestawu musi być określona jako pełna nazwa zestawu. Na przykład `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.
 
 ## <a name="remarks"></a>Uwagi
- `Assembly` jest wymaganym elementem podrzędnym elementu `WizardExtension`.
+ `Assembly`jest wymaganym elementem `WizardExtension`podrzędnym .
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon standardowy projekt [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.
+ Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] standardowego szablonu projektu dla aplikacji systemu Windows.
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"
@@ -86,8 +86,8 @@ Określa nazwę lub silna nazwa zestawu, który implementuje `IWizard` interfejs
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Instrukcje: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Jak: Używanie kreatorów z szablonami projektów](../extensibility/how-to-use-wizards-with-project-templates.md)

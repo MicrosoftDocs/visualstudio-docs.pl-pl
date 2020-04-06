@@ -1,23 +1,23 @@
 ---
-title: BuildProjectOnload, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element BuildProjectOnload (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9a9d4536c9ae7205a98ef0c79906ccbb002b5f7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321247"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739945"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload, element (szablony Visual Studio)
-Kompiluje tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe rozwiązanie nie jest wbudowane.
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Element BuildProjectOnload (szablony programu Visual Studio)
+Tworzy tylko nowe projekty podczas tworzenia i dodawania ich do rozwiązania. Całe rozwiązanie nie jest zbudowane.
 
 Hierarchia elementów:
 
@@ -46,18 +46,18 @@ Hierarchia elementów:
 
 |Element|Opis|
 |-------------|-----------------|
-|`TemplateData`|Klasyfikuje szablon i definiuje sposób wyświetlania w obu **nowy projekt** i **Dodaj nowy element** okien dialogowych.|
+|`TemplateData`|Kategoryzuje szablon i określa sposób jego wyświetlania zarówno w oknie dialogowym **Nowy projekt,** jak i **Dodaj nowy element.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false` wskazująca, czy do tworzenia nowego projektu, gdy jest tworzona z szablonu.
+ Tekst musi być `true` albo `false` lub wskazać, czy do tworzenia tylko nowy projekt, gdy jest tworzony z szablonu.
 
 ## <a name="remarks"></a>Uwagi
- `BuildProjectOnLoad` element jest opcjonalny. Wartość domyślna to `false`.
+ `BuildProjectOnLoad`jest elementem opcjonalnym. Wartością domyślną jest `false`.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadanych dla szablonu programu Visual C#.
+ Poniższy przykład ilustruje metadane dla szablonu języka Visual C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,8 +84,8 @@ Hierarchia elementów:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [BuildOnLoad atrybutu i elementu](buildonload-visual-studio-templates.md)
+- [BuildOnLoad atrybut i element](buildonload-visual-studio-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

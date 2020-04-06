@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Dokumentacja firmy Microsoft
+title: IDebugBinder3::GetTypeArgument | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d301dbb99e88ba4552ad59d9116f64dc032371
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b7667b06348c5e1b2865b24ab49095772808d6c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330741"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735700"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Ta metoda pobiera listę typów argumentów skojarzonych z tym obiektem.
@@ -47,23 +47,23 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Parametry
 `skip`\
-[in] Liczba pól, aby pominąć przed pobraniem typy argumentów.
+[w] Liczba pól do pominięcia przed uzyskaniem typów argumentów.
 
 `count`\
-[in] Liczba pól argument do zwrócenia (również określa rozmiar `ppFields` tablicy).
+[w] Liczba pól argumentów do zwrócenia (określa również `ppFields` rozmiar tablicy).
 
 `ppFields`\
-[out w] Tablica pola, które są wypełniane przy powrocie z tej metody.
+[w, na zewnątrz] Tablica pól, które zostaną wypełnione po zwrocie tej metody.
 
 `pFetched`\
-[out] \(opcjonalne) Liczba argumentów typu pola rzeczywistego zwrotu.
+[na zewnątrz] \(opcjonalnie) Liczba pól typu argumentów faktycznie zwróconych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Liczba typów argumentów można uzyskać wcześniej przy użyciu [gettypeargumentcount —](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+ Liczbę typów argumentów można uzyskać wcześniej za pomocą [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

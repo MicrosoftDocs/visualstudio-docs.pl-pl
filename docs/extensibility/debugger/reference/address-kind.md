@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND | Dokumentacja firmy Microsoft
+title: ADDRESS_KIND | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ADDRESS_KIND enumeration
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f80eb44c4f24340d26ab0b7aa1b5290760da6c77
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738149"
 ---
-# <a name="addresskind"></a>ADDRESS_KIND
-Określa typy adresów.
+# <a name="address_kind"></a>ADDRESS_KIND
+Określa rodzaje adresów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -58,43 +58,43 @@ public enum enum_ADDRESS_KIND {
 
 ## <a name="fields"></a>Pola
 `ADDRESS_KIND_NATIVE`\
-Adresu natywnego, reprezentowane przez [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) struktury.
+Adres macierzysty, reprezentowany przez [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) strukturę.
 
 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
-Adres niezarządzanych względem `this` (`Me` w języku Visual Basic) wskaźnik i są reprezentowane przez [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) struktury.
+Niezarządzany adres względem `this` `Me` (w języku Visual Basic) wskaźnik i reprezentowane przez [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) struktury.
 
 `ADDRESS_KIND_UNMANAGED_PHYSICAL`\
-Niezarządzane adres fizyczny, reprezentowane przez [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) struktury.
+Niezarządzany adres fizyczny, reprezentowany przez [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) strukturę.
 
 `ADDRESS_KIND_METHOD`\
-Metoda klasy, reprezentowane przez [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) struktury.
+Metoda klasy, reprezentowana przez [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) strukturę.
 
 `ADDRESS_KIND_FIELD`\
-To pole klasy reprezentowane przez [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) struktury.
+Pole klasy, reprezentowane przez [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) strukturę.
 
 `ADDRESS_KIND_LOCAL`\
-Adres jest zmienną lokalną i jest reprezentowany przez [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) struktury.
+Adres jest dla zmiennej lokalnej i jest reprezentowany przez [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) struktury.
 
 `ADDRESS_KIND_PARAM`\
-Parametr metody lub funkcji, reprezentowane przez [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) struktury.
+Metoda lub parametr funkcji, reprezentowany przez [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) strukturę.
 
 `ADDRESS_KIND_ARRAYELEM`\
-Do elementu tablicy, reprezentowane przez [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) struktury.
+Element tablicy, reprezentowany przez [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) strukturę.
 
 `ADDRESS_KIND_RETVAL`\
-Wartość zwracana, reprezentowane przez [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) struktury.
+Wartość zwracana, reprezentowana przez [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) strukturę.
 
 ## <a name="remarks"></a>Uwagi
-[Getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metoda zwraca [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) strukturę, która zawiera sumę możliwe struktury [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury. `dwKind` Pole `DEBUG_ADDRESS_UNION` struktury przechowują `ADDRESS_KIND` wartości, a w tym artykule opisano sposób interpretowania pól złożenia.
+[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) Metoda zwraca [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury, która zawiera jedność możliwych struktur, [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury. Pole `dwKind` `DEBUG_ADDRESS_UNION` struktury przechowuje `ADDRESS_KIND` wartość i opisuje sposób interpretowania pola unii.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: sh.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

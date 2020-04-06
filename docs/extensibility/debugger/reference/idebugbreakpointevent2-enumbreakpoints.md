@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints | Dokumentacja firmy Microsoft
+title: IDebugBreakpointEvent2::EnumBreakpoints | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a74e726951297802b2e47c3501c083ac83ffa2a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352913"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735031"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Tworzy moduł wyliczający dla wszystkich punktów przerwania, które są uruchamiane w bieżącej lokalizacji kodu.
+Tworzy wyliczenia dla wszystkich punktów przerwania, które zostały wystrzelone w bieżącej lokalizacji kodu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[out] Zwraca [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) obiekt, który wylicza wszystkie punkty przerwania skojarzony z bieżącą lokalizacją kodu.
+[na zewnątrz] Zwraca obiekt [IEnumDebugBoundBreakpoints2,](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) który wylicza wszystkie punkty przerwania skojarzone z bieżącą lokalizacją kodu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Nie wszystkie punkty przerwania w danej lokalizacji może wyzwalać w określonym czasie (na przykład punkt przerwania z warunkiem nie zostanie uruchomiony do momentu spełnienia warunku).
+ Nie wszystkie punkty przerwania w określonej lokalizacji mogą być uruchamiane w określonym czasie (na przykład punkt przerwania z warunkiem nie zostanie uruchamiany, dopóki ten warunek nie zostanie spełniony).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

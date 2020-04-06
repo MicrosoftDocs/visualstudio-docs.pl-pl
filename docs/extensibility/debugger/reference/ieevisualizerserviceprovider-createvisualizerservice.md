@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft Docs
+title: IEEVisualizerServiceProvider::CreateVisualizerService | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService method
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20a8180283e596eeb9dd4ee1391e6e8fe6666829
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310174"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717908"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Ta metoda tworzy usługę wizualizatora.
@@ -49,27 +49,27 @@ int CreateVisualizerService(
 
 ## <a name="parameters"></a>Parametry
 `binder`\
-[in] [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiekt przekazany do [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
+[w] [Obiekt IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) przeszedł do [programu EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).
 
 `pSymProv`\
-[in] [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiekt przekazany do `IDebugParsedExpression::EvaluateSync`.
+[w] [Obiekt IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) przeszedł `IDebugParsedExpression::EvaluateSync`do pliku .
 
 `pAddress`\
-[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt przekazany do `IDebugParsedExression::EvaluateSync`.
+[w] [Obiekt IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) przeszedł `IDebugParsedExression::EvaluateSync`do .
 
 `dataProvider`\
-[in] Implementowanie obiektu [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interfejsu (dostarczonych przez ewaluatora wyrażeń).
+[w] Obiekt implementujący interfejs [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) (dostarczany przez oceniającego wyrażenie).
 
 `ppService`\
-[out] Utworzono usługę.
+[na zewnątrz] Utworzona usługa.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- `binder`, `pSymProv`, I `pAddress` parametry zostały przekazane do `IDebugParsedExpression::EvaluateSync` metody. `CreateVisualizerService` jest wywoływane tylko z `IDebugParsedExpression::EvaluateSync` jako część ewaluatora wyrażeń obsługę wizualizatorów typu.
+ `pSymProv`, `binder`i `pAddress` parametry zostały przekazane `IDebugParsedExpression::EvaluateSync` do metody. `CreateVisualizerService`jest wywoływana tylko `IDebugParsedExpression::EvaluateSync` w ramach obsługi oceniającego wyrażenie dla wizualizatorów typów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

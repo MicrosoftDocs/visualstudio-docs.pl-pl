@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetScope | Dokumentacja firmy Microsoft
+title: IDebugDisassemblyStream2::GetScope | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetScope
 ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e5454880c1513f20755dd0527465f4b2f49e58e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 222a3b2c6110f1998a4848f382694b6b999cd632
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310440"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732131"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
-Pobiera zakres strumienia dezasemblacji.
+Pobiera zakres strumienia demontażu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetScope( 
 
 ## <a name="parameters"></a>Parametry
 `pdwScope`\
-[out] Zwraca wartość z zakresu od [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) wyliczenie opisujące zakres ten strumień dezasemblacji.
+[na zewnątrz] Zwraca wartość z wyliczenia [DISASSEMBLY_STREAM_SCOPE,](../../../extensibility/debugger/reference/disassembly-stream-scope.md) który opisuje zakres tego strumienia demontażu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zakres dezasemblacji może być na przykład funkcję lub całego modułu.
+ Zakres demontażu może być na przykład funkcją lub całym modułem.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)

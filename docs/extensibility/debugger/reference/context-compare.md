@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE | Dokumentacja firmy Microsoft
+title: CONTEXT_COMPARE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346399"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737601"
 ---
-# <a name="contextcompare"></a>CONTEXT_COMPARE
-Określa kryteria do porównywania dwóch kontekstów pamięci.
+# <a name="context_compare"></a>CONTEXT_COMPARE
+Określa kryteria porównywania dwóch kontekstów pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -58,44 +58,44 @@ public enum enum_CONTEXT_COMPARE {
 
 ## <a name="fields"></a>Pola
 `CONTEXT_EQUAL`\
-Znajdź pierwszy kontekstu pamięci na liście, która jest równa docelowej kontekstu pamięci.
+Znajdź pierwszy kontekst pamięci na liście, który jest równy kontekstowi pamięci docelowej.
 
 `CONTEXT_LESS_THAN`\
-Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż docelowy kontekstu pamięci.
+Znajdź pierwszy kontekst pamięci na liście, który jest mniejszy niż kontekst pamięci docelowej.
 
 `CONTEXT_GREATER_THAN`\
-Znajdź pierwszy kontekstu pamięci na liście, która jest większa niż docelowy kontekstu pamięci.
+Znajdź pierwszy kontekst pamięci na liście, który jest większy niż kontekst pamięci docelowej.
 
 `CONTEXT_LESS_THAN_OR_EQUAL`\
-Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż lub równa docelowej kontekstu pamięci.
+Znajdź pierwszy kontekst pamięci na liście, który jest mniejszy lub równy kontekstowi pamięci docelowej.
 
 `CONTEXT_GREATER_THAN_OR_EQUAL`\
-Znajdź pierwszy kontekstu pamięci na liście, która jest większa lub równa docelowej kontekstu pamięci.
+Znajdź pierwszy kontekst pamięci na liście, który jest większy lub równy kontekstowi pamięci docelowej.
 
 `CONTEXT_SAME_SCOPE`\
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w taki sam zakres jak kontekstu pamięci docelowego.
+Znajdź pierwszy kontekst pamięci na liście, który znajduje się w tym samym zakresie co kontekst pamięci docelowej.
 
 `CONTEXT_SAME_FUNCTION`\
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w taką samą funkcję jak zakres docelowy w pamięci.
+Znajdź pierwszy kontekst pamięci na liście, który znajduje się w tej samej funkcji co zakres pamięci docelowej.
 
 `CONTEXT_SAME_MODULE`\
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w tym samym modułem kontekstu pamięci docelowego.
+Znajdź pierwszy kontekst pamięci na liście, który znajduje się w tym samym module co kontekst pamięci docelowej.
 
 `CONTEXT_SAME_PROCESS`\
-Znajdź pierwszy kontekstu pamięci na liście znajduje się w tym samym procesie co kontekstu pamięci docelowego.
+Znajdź pierwszy kontekst pamięci na liście, który jest w tym samym procesie co kontekst pamięci docelowej.
 
 ## <a name="remarks"></a>Uwagi
-Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) metody.
+Przekazany jako argument do [Metody Porównania.](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
 
-Te wartości są używane do odszukać pierwszy kontekst pamięci na liście, który spełnia kryteria porównania określony. Kontekst pamięci podano listę konteksty pamięci do porównania sam względem za pośrednictwem `IDebugMemoryContext2::Compare` metody. Kontekst pamięci pierwszy na liście, dla którego operator porównania jest `true` jest zwracana.
+Wartości te są używane do znajdowania pierwszego kontekstu pamięci na liście, która spełnia określone kryteria porównania. Kontekst pamięci otrzymuje listę kontekstów pamięci, aby porównać się za pośrednictwem `IDebugMemoryContext2::Compare` metody. Pierwszy kontekst pamięci na liście, dla `true` którego jest zwracany operator porównania.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [Porównanie](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

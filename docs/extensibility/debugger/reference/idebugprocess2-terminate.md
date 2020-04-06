@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Terminate | Dokumentacja firmy Microsoft
+title: IDebugProcess2::Zakończ | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Terminate
 ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a4b44cfc9655c619089d341156328b77594dad9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8da1b2719e8b37df009e3bbef99e57c24117a963
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314147"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723817"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 Kończy proces.
@@ -38,10 +38,10 @@ int Terminate();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wszystkie programy, w ramach tego procesu są kończone, gdy proces zostanie zakończony, Brak mogą być uruchamiane więcej kodu.
+ Po zakończeniu procesu wszystkie programy w ramach tego procesu zostaną zakończone; żaden nie mogą uruchamiać więcej kodu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Dokumentacja firmy Microsoft
+title: IDebugModuleLoadEvent2::GetModule | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2::GetModule
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ee91686051440fe44efd1f4e4f9ba933f3e0c99
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323701"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726727"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-Pobiera moduł, który jest załadowany lub zwolnione.
+Pobiera moduł, który jest ładowany lub zwolniony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,17 +45,17 @@ int GetModule( 
 
 ## <a name="parameters"></a>Parametry
 `pModule`\
-[out] Zwraca [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) obiekt, który reprezentuje ładowanie lub zwalnianie modułu.
+[na zewnątrz] Zwraca obiekt [IDebugModule2,](../../../extensibility/debugger/reference/idebugmodule2.md) który reprezentuje moduł, który jest ładowanie lub zwalnianie.
 
 `pbstrDebugMessage`\
-[out w] Zwraca wartość opcjonalną wiadomość, zawierająca opis tego zdarzenia. Jeśli ten parametr ma wartość null, jest wymagany żaden komunikat.
+[w, na zewnątrz] Zwraca opcjonalny komunikat opisujący to zdarzenie. Jeśli ten parametr jest wartością null, nie jest wymagany żaden komunikat.
 
 `pbLoad`\
-[out w] Wartość różną od zera (`TRUE`) Jeśli moduł jest ładowanie i zero (`FALSE`) Jeśli Trwa zwalnianie modułu. Jeśli ten parametr ma wartość null, wymagane jest Brak stanu.
+[w, na zewnątrz] Nonzero`TRUE`( ) jeśli moduł jest`FALSE`załadunku i zero ( ) jeśli moduł jest rozładunku. Jeśli ten parametr jest wartością null, nie jest wymagany stan.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

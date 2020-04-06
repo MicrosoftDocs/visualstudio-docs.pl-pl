@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION | Dokumentacja firmy Microsoft
+title: ASSEMBLYLOCRESOLUTION | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327377"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738141"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Określa, gdzie znajduje się zestaw.
+Określa, gdzie znajduje się zespół.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,7 +48,7 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 
 ## <a name="fields"></a>Pola
 `ALR_NAME`\
-Zestaw znajduje się w bieżącej przestrzeni nazw.
+Zestaw znajduje się w bieżącym obszarze nazw.
 
 `ALR_USERDIR`\
 Zestaw znajduje się w katalogu użytkownika.
@@ -60,18 +60,18 @@ Zestaw znajduje się w katalogu udostępnionym.
 Zestaw znajduje się w katalogu zdalnym.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są zwracane przez [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) i [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metody.
+Wartości te są zwracane przez [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) i [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metody.
 
-Te wartości mogą być łączone z `OR` operacji.
+Wartości te mogą być `OR` łączone z operacją.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)
 - [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

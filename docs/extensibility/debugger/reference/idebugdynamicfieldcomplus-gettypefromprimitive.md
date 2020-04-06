@@ -1,28 +1,28 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive | Microsoft Docs
+title: IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 - GetTypeFromPrimitive
 ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a57bcdf876907884c98a29ee6723cf35b7d9806
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 89a0e559fbdf2824d334903a668bbdef8dbb6fff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351307"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731277"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-Pobiera typ danego typu pierwotnego.
+Pobiera typ, biorąc pod uwagę jego typ pierwotny.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,13 +42,13 @@ int GetTypeFromPrimitive(
 
 ## <a name="parameters"></a>Parametry
 `dwCorElementType`\
-[in] Wartość z [corelementtype — wyliczenie](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) reprezentujący typu pierwotnego.
+[w] Wartość z [wyliczenia CorElementType,](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) który reprezentuje typ pierwotny.
 
 `ppType`\
-[out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący typ.
+[na zewnątrz] Zwraca [pole IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujące typ.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

@@ -1,5 +1,5 @@
 ---
-title: Błędy punktu przerwania | Dokumentacja firmy Microsoft
+title: Błędy punktu przerwania | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,30 +7,30 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint errors
 - errors [Debugging SDK]
 ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31eabde4ae19ae7342188a5d2a16374b9c94afc0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0766792f19faf7c1933c6576ab41f65ec1b31ae9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332555"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739218"
 ---
 # <a name="breakpoint-errors"></a>Błędy punktu przerwania
-Poniżej opisano proces, gdy punkt przerwania podejmuje próbę powiązania do kodu, ale nie powiedzie się.
+Poniżej opisano proces, gdy punkt przerwania próbuje powiązać z kodem, ale kończy się niepowodzeniem.
 
-## <a name="troubleshoot-a-breakpoint-error"></a>Rozwiązywanie problemów z Błąd punktu przerwania
+## <a name="troubleshoot-a-breakpoint-error"></a>Rozwiązywanie problemów z błędem punktu przerwania
 
-1. Aparat debugowania (DE) wysyła [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) do Menedżer debugowania sesji (SDM).
+1. Aparat debugowania (DE) wysyła [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) do menedżera debugowania sesji (SDM).
 
-2. Wywołania SDM [IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 ** `ppErrorBP`) można pobrać błąd punktu przerwania.
+2. SDM wywołuje [IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2** `ppErrorBP`), aby uzyskać punkt przerwania błędu.
 
-3. Wywołania SDM [IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) można pobrać oczekujący punkt przerwania, z którego pochodzi błąd punktu przerwania.
+3. SDM wywołuje [IDebugErrorBreakpoint2::GetPendingBreakpoint,](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) aby uzyskać oczekujących breakpoint, z którego pochodzi punkt przerwania błędu.
 
-4. Wywołania SDM [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) można pobrać powód, dlaczego błąd punktu przerwania nie może utworzyć powiązania.
+4. SDM wywołuje [IDebugErrorBreakpoint2::GetBreakpointResolution,](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) aby uzyskać przyczynę, dla którego punkt przerwania błędu nie może powiązać.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

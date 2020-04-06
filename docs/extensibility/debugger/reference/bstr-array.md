@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY | Dokumentacja firmy Microsoft
+title: BSTR_ARRAY | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28b99041fd5b3804719430960b70aa347f07ddd3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350467"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737707"
 ---
-# <a name="bstrarray"></a>BSTR_ARRAY
+# <a name="bstr_array"></a>BSTR_ARRAY
 Struktura, która opisuje tablicę ciągów.
 
 ## <a name="syntax"></a>Składnia
@@ -43,7 +43,7 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwCount`\
-Liczba parametrów w `Members` tablicy.
+Liczba ciągów `Members` w tablicy.
 
 `Members`\
 Tablica ciągów.
@@ -51,15 +51,15 @@ Tablica ciągów.
 ## <a name="remarks"></a>Uwagi
 Ta struktura jest zwracana z [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) metody.
 
- [C++ tylko] Każdy ciąg pojedynczych musi zostać uwolniona za pomocą `SysFreeString`i `Members` tablicy musi być zwolniona przez `CoTaskMemFree`.
+ [Tylko C++] Każdy pojedynczy ciąg musi `SysFreeString`zostać `Members` zwolniony przy `CoTaskMemFree`użyciu , a tablica musi zostać zwolniona za pomocą programu .
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

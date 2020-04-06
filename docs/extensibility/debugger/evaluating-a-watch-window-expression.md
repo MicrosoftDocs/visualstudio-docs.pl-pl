@@ -1,5 +1,5 @@
 ---
-title: Ocenianie wyrażenia okna wyrażeń kontrolnych | Dokumentacja firmy Microsoft
+title: Ocena wyrażenia okna zegarka | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,53 +7,53 @@ helpviewer_keywords:
 - Watch window, expressions
 - expression evaluation, Watch window expressions
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe575cf0db9f6f1c2dd15da96d3d0a17648aee4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315515"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738840"
 ---
-# <a name="evaluate-a-watch-window-expression"></a>Ocena wyrażenia okna wyrażeń kontrolnych
+# <a name="evaluate-a-watch-window-expression"></a>Ocena wyrażenia okna zegarka
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Uzyskać informacji o implementowaniu ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykładowe ewaluatora wyrażeń zarządzane](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [przykład oceniającego zarządzane wyrażenia](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Podczas wykonywania jest wstrzymana, Visual Studio wywołuje aparat debugowania (DE), aby określić bieżącą wartość każde wyrażenie w swojej listy obserwowanych. DE ocenia każdy wyrażenia przy użyciu ewaluatora wyrażeń (EE) i Visual Studio wyświetla jego wartości w **Obejrzyj** okna.
+ Po wstrzymaniu wykonywania visual studio wywołuje aparat debugowania (DE), aby określić bieżącą wartość każdego wyrażenia na liście obserwowanych. DE ocenia każde wyrażenie przy użyciu ewaluatora wyrażenia (EE), a visual studio wyświetla jego wartość w **watch** okna.
 
- Poniżej przedstawiono omówienie sposobu szacowania wyrażenia kontrolnego listy:
+ Poniżej przedstawiono omówienie sposobu oceny wyrażenia listy obserwowanych:
 
-1. Program Visual Studio wywołuje DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pobrać kontekstu wyrażenia, który może służyć do oceny wyrażenia.
+1. Visual Studio wywołuje [DE GetExpressionContext,](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) aby uzyskać kontekst wyrażenia, które mogą służyć do oceny wyrażeń.
 
-2. Dla każdego wyrażenia na liście wywołań programu Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) do konwertowania tekstu wyrażenia do przeanalizowanej wyrażenia.
+2. Dla każdego wyrażenia na liście obserwowanych program Visual Studio wywołuje [ParseText,](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) aby przekonwertować tekst wyrażenia na wyrażenie analizowane.
 
-3. `IDebugExpressionContext2::ParseText` wywołania [przeanalizować](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) do wykonują rzeczywistą pracę analizy tekstu i wygenerować [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.
+3. `IDebugExpressionContext2::ParseText`wywołuje [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) do wykonywania rzeczywistej pracy analizowania tekstu i produkcji [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.
 
-4. `IDebugExpressionContext2::ParseText` Tworzy [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu i umieszcza `IDebugParsedExpression` obiektu do niego. Mam`DebugExpression2` obiekt jest następnie zwracany do programu Visual Studio.
+4. `IDebugExpressionContext2::ParseText`tworzy obiekt [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) i `IDebugParsedExpression` umieszcza w nim obiekt. Ten`DebugExpression2` obiekt I jest następnie zwracany do programu Visual Studio.
 
-5. Visual Studio wywołania [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) można obliczyć wartości wyrażenia przeanalizowany.
+5. Visual Studio wywołuje [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) do oceny wyrażenia analizowane.
 
-6. `IDebugExpression2::EvaluateSync` przekazuje wywołanie [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) oceny rzeczywiste i wygenerować [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który jest zwracany do programu Visual Studio.
+6. `IDebugExpression2::EvaluateSync`przekazuje wywołanie [evaluatesync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) do rzeczywistej oceny i produkcji [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiektu, który jest zwracany do programu Visual Studio.
 
-7. Visual Studio wywołania [getpropertyinfo —](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) do uzyskania wartości wyrażenia, które są następnie wyświetlane na liście obserwowanych.
+7. Visual Studio wywołuje [GetPropertyInfo,](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) aby uzyskać wartość wyrażenia, które jest następnie wyświetlane na liście obserwowanych.
 
-## <a name="parse-then-evaluate"></a>Analizowanie, a następnie oceny
- Ponieważ analizowania złożone wyrażenie może trwać znacznie dłużej niż jej oceny, procesu oceny wyrażenia został podzielony na dwie czynności: ((1) analizowania wyrażenia i 2) obliczenia wyrażenia przeanalizowany. W ten sposób oceny można przeprowadzić na wiele razy, ale wyrażenie musi być analizowana tylko raz. Pośredni przeanalizowany wyrażenie jest zwracana z EE w [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiekt, który z kolei jest hermetyzowany i zwrócony z DE jako [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu. `IDebugExpression` Obiekt różni się wszystkie oceny `IDebugParsedExpression` obiektu.
+## <a name="parse-then-evaluate"></a>Analizuj, a następnie oceń
+ Ponieważ analizowanie wyrażenia złożonego może trwać znacznie dłużej niż jego ocena, proces oceny wyrażenia jest podzielony na dwa kroki: 1) przeanalizowanie wyrażenia i 2) oceny wyrażenia analizowanego. W ten sposób ocena może wystąpić wiele razy, ale wyrażenie musi być analizowane tylko raz. Pośrednie analizowane wyrażenie jest zwracany z EE w [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu, który jest z kolei hermetyzowany i zwracany z DE jako [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu. Obiekt `IDebugExpression` odpiera wszystkie `IDebugParsedExpression` oceny do obiektu.
 
 > [!NOTE]
-> Nie jest konieczne EE stosować się do ten dwuetapowy proces, mimo że program Visual Studio zakłada EE można przeanalizować i oceny w tym samym kroku podczas [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) nosi nazwę (jest to przykład MyCEE działania, na przykład). Język może tworzyć złożone wyrażenia, można oddzielić kroku analizy od kroku oceny. Może to zwiększyć wydajność w debugerze programu Visual Studio, gdy wiele Obejrzyj wyrażenia są pokazywane.
+> Nie jest konieczne, aby EE stosować się do tego dwuetapowego procesu, mimo że visual studio zakłada, że to; EE może analizować i oceniać w tym samym kroku, gdy [evaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) jest wywoływana (jest to, jak działa przykład MyCEE, na przykład). Jeśli język może tworzyć złożone wyrażenia, można oddzielić krok analizy od kroku oceny. Może to zwiększyć wydajność w debugerze programu Visual Studio, gdy wiele wyrażeń zegarka są wyświetlane.
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Przykład implementacji oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) wykorzystano przykładowy MyCEE, aby przejść przez proces oceny wyrażenia.
+ [Przykładowa implementacja oceny wyrażenia](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) Używa przykładu MyCEE, aby przejść przez proces oceny wyrażenia.
 
- [Ocenianie wyrażenia kontrolnego](../../extensibility/debugger/evaluating-a-watch-expression.md) wyjaśnia, co się stanie po przeanalizowaniu pomyślne wyrażenia.
+ [Ocena wyrażenia zegarka](../../extensibility/debugger/evaluating-a-watch-expression.md) Wyjaśnia, co się dzieje po pomyślnej analizy wyrażenia.
 
-## <a name="related-sections"></a>Sekcje pokrewne
- [Kontekst oceny](../../extensibility/debugger/evaluation-context.md) zawiera argumenty, które są przekazywane, gdy aparat debugowania (DE) wywołuje Ewaluator wyrażeń (EE).
+## <a name="related-sections"></a>Powiązane sekcje
+ [Kontekst oceny](../../extensibility/debugger/evaluation-context.md) Zawiera argumenty, które są przekazywane, gdy aparat debugowania (DE) wywołuje oceniającego wyrażenie (EE).
 
-## <a name="see-also"></a>Zobacz także
- [Pisanie ewaluatora wyrażeń środowiska CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+## <a name="see-also"></a>Zobacz też
+ [Pisanie ewaluatora wyrażeń CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

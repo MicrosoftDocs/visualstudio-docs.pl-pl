@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Dokumentacja firmy Microsoft
+title: IDebugProgramNode2::GetHostMachineName_V7 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineName_V7
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03b2566d2c93181439ddecb9d87c5da59b6e6090
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351147"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722084"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.
+> Przestarzałe. NIE UŻYWAĆ.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,17 +44,17 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>Parametry
 
 `pbstrHostMachineName`\
-[out] Zwraca nazwę komputera, w którym jest uruchomiony program.
+[na zewnątrz] Zwraca nazwę komputera, na którym jest uruchomiony program.
 
 ## <a name="return-value"></a>Wartość zwracana
 
-Implementacja zawsze powinna zwrócić `E_NOTIMPL`.
+Implementacja powinna `E_NOTIMPL`zawsze zwracać .
 
 ## <a name="remarks"></a>Uwagi
 
 > [!WARNING]
-> Począwszy od programu Visual Studio 2005, ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`.
+> Od programu Visual Studio 2005 ta metoda nie `E_NOTIMPL`jest już używana i zawsze powinna zwracać .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

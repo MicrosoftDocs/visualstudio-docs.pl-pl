@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Continue | Dokumentacja firmy Microsoft
+title: IDebugProcess3::Kontynuuj | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Continue
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7d20a375644cbbac975f62db216377f271a2675
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8fa2e21e31297279a173c9c9edd087adc560903
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314046"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723779"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
-Kontynuuje, uruchomienie tego procesu w stanie zatrzymania. Dowolnego poprzedniego stanu wykonywania (np. krok) są zachowywane, a proces jest uruchamiany ponownie wykonywania.
+Kontynuuje uruchamianie tego procesu ze stanu zatrzymanego. Każdy poprzedni stan wykonywania (na przykład krok) jest zachowywany, a proces rozpoczyna wykonywanie ponownie.
 
 > [!NOTE]
 > Ta metoda powinna być używana zamiast [Kontynuuj](../../../extensibility/debugger/reference/idebugprogram2-continue.md).
@@ -44,17 +44,17 @@ int Continue(
 
 ## <a name="parameters"></a>Parametry
 `pThread`\
-[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek będzie kontynuowane.
+[w] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątek, który ma być kontynuowany.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest wywoływana na temat tego procesu, niezależnie od tego, jak wiele procesów są debugowane lub proces, który wygenerował zdarzenie zatrzymywania. Wdrożenie musi zachować poprzedni stan wykonania (np. krok) i kontynuować wykonywanie, tak, jakby nigdy nie przestała się przed wykonaniem jego wcześniejszego wykonania. Oznacza to, jeśli wątek w ten proces wykonywanych operacji przejścia i została zatrzymana z powodu jakiś inny proces jest zatrzymana, a następnie `Continue` została wywołana, określonego wątku, należy wykonać operację przejścia.
+ Ta metoda jest wywoływana w tym procesie, niezależnie od tego, ile procesów są debugowane lub który proces wygenerował zdarzenie zatrzymania. Implementacja musi zachować poprzedni stan wykonywania (na przykład krok) i kontynuować wykonywanie tak, jakby nigdy nie zatrzymał się przed zakończeniem jego wcześniejszego wykonania. Oznacza to, że jeśli wątek w tym procesie robi operację step-over `Continue` i został zatrzymany, ponieważ niektóre inne procesy zatrzymane, a następnie został wywołany, określony wątek musi zakończyć oryginalną operację step-over.
 
- **Ostrzeżenie** nie będą wysyłane zdarzenia zatrzymywania lub natychmiastowego zdarzeń (synchroniczne) [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.
+ **Ostrzeżenie** Nie wysyłaj zdarzenia zatrzymania ani natychmiastowego (synchroniczowego) zdarzenia do [zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może zawiesić.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [Wydarzenie](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

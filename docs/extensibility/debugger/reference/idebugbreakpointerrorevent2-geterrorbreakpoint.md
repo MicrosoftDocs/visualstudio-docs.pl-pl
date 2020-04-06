@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Dokumentacja firmy Microsoft
+title: IDebugBreakpointErrorEvent2::GetErrorBreakpoint | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 629dbfcd86a1401ed8d5ebf64d4e06723fa82398
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352982"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735071"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-Pobiera [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) obiekt, który opisuje powód, dlaczego nie został powiązany punkt przerwania.
+Pobiera [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) obiektu, który opisuje powód, dla którego punkt przerwania nie został powiązany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int GetErrorBreakpoint( 
 
 ## <a name="parameters"></a>Parametry
 `ppErrorBP`\
-[out] Zwraca [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) obiekt, który opisuje ostrzeżenia lub błędu.
+[na zewnątrz] Zwraca obiekt [IDebugErrorBreakpoint2,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) który opisuje ostrzeżenie lub błąd.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Po `IDebugErrorBreakpoint2` uzyskuje się interfejs, wywołaj [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) metodę, aby uzyskać [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) obiektu. A następnie [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metoda może służyć do określenia nieprawidłową lokalizację, nieprawidłowe wyrażenie lub powodów dlaczego oczekujący punkt przerwania nie został powiązany, takie jak kod, nie załadowano jeszcze i tak dalej.
+Po `IDebugErrorBreakpoint2` uzyskaniu interfejsu wywołaj [Metodę GetBreakpointResolution,](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) aby uzyskać obiekt [IDebugErrorBreakpointResolution2.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Następnie [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) metoda może służyć do określenia nieprawidłowej lokalizacji, nieprawidłowe wyrażenie lub powody, dla których oczekujące punktu przerwania nie został powiązany, takich jak kod nie załadowany jeszcze i tak dalej.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CBreakpointSetDebugEventBase** obiekt ujawniający [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CBreakpointSetDebugEventBase,** który udostępnia interfejs [IDebugBreakpointErrorEvent2.](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
 
 ```cpp
 STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
@@ -78,7 +78,7 @@ STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

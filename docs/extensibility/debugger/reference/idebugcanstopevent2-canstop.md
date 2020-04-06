@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::CanStop | Dokumentacja firmy Microsoft
+title: IDebugCanStopEvent2::CanStop | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::CanStop
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab59cf5d077c4e397373c4c86b864ed17749fc19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2915938c966bac7f842d0745c973c7d0b7033e2b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351258"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734592"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
-Powiadamia aparat debugowania (DE), czy należy zatrzymać w bieżącej lokalizacji kodu lub po prostu kontynuowanie wykonywania.
+Powiadamia aparat debugowania (DE), czy zatrzymać się w bieżącej lokalizacji kodu lub po prostu kontynuować wykonywanie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,17 +41,17 @@ int CanStop ( 
 
 ## <a name="parameters"></a>Parametry
 `fCanStop`\
-[in] Niezerowa Koniunkcja (`TRUE`) jeżeli DE powinna zostać przerwana w bieżącej lokalizacji kodu; w przeciwnym wypadku zero (`FALSE`).
+[w] Non-zero`TRUE`( ), jeśli DE powinien zatrzymać się w bieżącej lokalizacji kodu; w przeciwnym`FALSE`razie zero ( ).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Odbiornik zdarzenia zwykle nie wywoła [getreason —](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby zidentyfikować przyczynę DE chce, aby zatrzymać, a następnie wywołania `IDebugCanStopEvent2::CanStop` metody z właściwą odpowiedź.
+ Odbiornik tego zdarzenia zazwyczaj wywołuje [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metody, aby określić przyczynę DE chce `IDebugCanStopEvent2::CanStop` zatrzymać, a następnie wywołuje metodę z odpowiednią odpowiedzią.
 
- Jeśli zatrzymuje się DE wysyła zdarzenia opisujące przyczynę zatrzymywania. Zazwyczaj są dwa zdarzenia, które są wysyłane, użytkownika lub sygnał przerwania, reprezentowane przez [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) interfejsu i zdarzenie punktu przerwania reprezentowany przez [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) interfejsu.
+ Jeśli DE zatrzymuje, wysyła zdarzenie, które opisuje przyczynę zatrzymania. Zazwyczaj są dwa zdarzenia, które są wysyłane, przerwa użytkownika lub sygnału reprezentowane przez interfejs [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) i zdarzenie punktu przerwania reprezentowane przez interfejs [IDebugBreakpointEvent2.](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

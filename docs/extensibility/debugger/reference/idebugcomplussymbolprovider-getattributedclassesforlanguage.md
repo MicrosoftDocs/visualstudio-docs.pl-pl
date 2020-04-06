@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Dokumentacja firmy Microsoft
+title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4baf00c91d424282e80740bfa097957aa074997d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bbc8f377683523ecdc99213d67f95f2c9fd7035d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336887"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733962"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
-Pobiera klasy przy użyciu określonego atrybutu, które są implementowane w wybranym języku programowania.
+Pobiera klasy z określonym atrybutem, które są implementowane w określonym języku programowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int GetAttributedClassesForLanguage (
 
 ## <a name="parameters"></a>Parametry
 `guidLanguage`\
-[in] Unikatowy identyfikator dla tego języka.
+[w] Unikatowy identyfikator języka.
 
 `pstrAttribute`\
-[in] Ciąg atrybutu.
+[w] Ciąg atrybutu.
 
 `ppEnum`\
-[out] Zwraca wyliczenie klas atrybutów.
+[na zewnątrz] Zwraca wyliczenie klas atrybutów.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(
@@ -186,5 +186,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

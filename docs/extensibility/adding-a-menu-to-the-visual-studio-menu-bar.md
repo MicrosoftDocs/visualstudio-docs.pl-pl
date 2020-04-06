@@ -1,59 +1,59 @@
 ---
-title: Dodawanie Menu na pasku Menu programu Visual Studio | Dokumentacja firmy Microsoft
+title: Dodawanie menu do paska menu programu Visual Studio | Dokumenty firmy Microsoft
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a28e7f69ed8e9a76e11d8892ee677435f75c99b2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 91e5a6e1714dbb87abc67fbf722c3bbd1a194a5b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349797"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740310"
 ---
-# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu na pasku menu programu Visual Studio
+# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Dodawanie menu do paska menu programu Visual Studio
 
-W tym instruktażu przedstawiono sposób dodawania menu na pasku menu programu Visual Studio zintegrowane środowisko programistyczne (IDE). Pasek menu IDE zawiera menu Kategorie, takie jak **pliku**, **Edytuj**, **widoku**, **okna**, i **pomocy** .
+W tym przewodniku pokazano, jak dodać menu do paska menu zintegrowanego środowiska programistycznego programu Visual Studio (IDE). Pasek menu IDE zawiera kategorie menu, takie jak **Plik,** **Edycja,** **Widok,** **Okno**i **Pomoc**.
 
-Przed dodaniem nowego menu na pasku menu programu Visual Studio, należy rozważyć, czy poleceń powinny zostać umieszczone w ramach istniejącego menu. Aby uzyskać więcej informacji na temat położenie polecenia zobacz [menu i poleceń dla programu Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
+Przed dodaniem nowego menu do paska menu programu Visual Studio należy rozważyć, czy polecenia powinny być umieszczane w istniejącym menu. Aby uzyskać więcej informacji na temat umieszczania poleceń, zobacz [Menu i polecenia programu Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).
 
-Menu są deklarowane w *vsct* pliku projektu. Aby uzyskać więcej informacji na temat menu i *vsct* plików, zobacz [polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
+Menu są zadeklarowane w pliku *vsct* projektu. Aby uzyskać więcej informacji o menu i plikach *vsct,* zobacz [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md).
 
-Przez ukończenie tego instruktażu, można utworzyć menu o nazwie **TestMenu** zawierający jednego polecenia.
+Wypełniając ten instruktaż, można utworzyć menu o nazwie **TestMenu,** które zawiera jedno polecenie.
 
 > [!NOTE]
-> W VS 2019 r, najwyższego poziomu menu pochodzącego z danego rozszerzenia są umieszczane w obszarze **rozszerzenia** menu.
+> W programie VS 2019 menu najwyższego poziomu, które są dodane przez rozszerzenia, są umieszczane w menu **Rozszerzenia.**
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Utwórz projekt VSIX, zawierający szablon elementu polecenie niestandardowe
+## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Tworzenie projektu VSIX z szablonem niestandardowego elementu polecenia
 
-1. Utwórz projekt VSIX, o nazwie `TopLevelMenu`. Można znaleźć szablonu projektu VSIX w **nowy projekt** okna dialogowego, wyszukując pozycję "vsix".  Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Utwórz projekt VSIX o nazwie `TopLevelMenu`. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt,** wyszukując "vsix".  Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Po otwarciu projektu, Dodaj polecenie niestandardowe szablon elementu o nazwie **TestCommand**. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** >  **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C# / rozszerzalności** i wybierz **polecenia niestandardowego**. W **nazwa** u dołu okna, Zmień nazwę pliku polecenia, aby *TestCommand.cs*.
+2. Po otwarciu projektu dodaj niestandardowy szablon elementu polecenia o nazwie **TestCommand**. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** >  **nowy element**. W oknie dialogowym **Dodawanie nowego elementu** przejdź do pozycji Visual **C# / Extensibility** i wybierz polecenie **Niestandardowe**. W polu **Nazwa** u dołu okna zmień nazwę pliku polecenia na *TestCommand.cs*.
 
-## <a name="create-a-menu-on-the-ide-menu-bar"></a>Tworzenie menu na pasku menu środowiska IDE
+## <a name="create-a-menu-on-the-ide-menu-bar"></a>Tworzenie menu na pasku menu IDE
 
 ::: moniker range="vs-2017"
 
-1. W **Eksploratora rozwiązań**, otwórz *TestCommandPackage.vsct*.
+1. W **Eksploratorze rozwiązań**otwórz *plik TestCommandPackage.vsct*.
 
-    Na końcu pliku istnieje \<symbole > węzeł, który zawiera kilka \<GuidSymbol > węzłów. W węźle, nazwane guidTestCommandPackageCmdSet Dodaj nowy symbol w następujący sposób:
+    Na końcu pliku znajduje \<się węzeł symboli>, który \<zawiera kilka węzłów> GuidSymbol. W węźle o nazwie guidTestCommandPackageCmdSet dodaj nowy symbol w następujący sposób:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Utwórz pustą \<menu > w węźle \<polecenia > węzła, tuż przed \<grupy >. W \<menu > węzła, Dodaj \<Menu > węzła, w następujący sposób:
+2. Utwórz \<pusty węzeł menu> \<w węźle> polecenia, \<tuż przed> grup. W \<węźle Menu> dodaj \<następujący węzeł Menu>:
 
    ```xml
    <Menus>
@@ -68,13 +68,13 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
    </Menus>
    ```
 
-    `guid` i `id` wartości menu określić zestaw poleceń i menu określonych w zestaw poleceń.
+    Wartości `guid` `id` menu określają zestaw poleceń i konkretne menu w zestawie poleceń.
 
-    `guid` i `id` wartości elementu nadrzędnego pozycji menu w sekcji pasek menu programu Visual Studio, który zawiera menu Narzędzia i Add-ins.
+    I `guid` `id` wartości nadrzędnego pozycjonowania menu w sekcji paska menu programu Visual Studio, który zawiera narzędzia i dodatki menu.
 
-    Wartość `CommandName` ciąg Określa, że tekst powinien pojawić się w elemencie menu.
+    Wartość `CommandName` ciągu określa, że tekst powinien pojawić się w elemencie menu.
 
-3. W \<grupy > sekcji, Znajdź \<grupy > i zmień \<nadrzędnego > elementu, aby wskazać polecenie menu, który właśnie został dodany:
+3. W \<sekcji Grupy> znajdź \<> grupy i zmień \<element> nadrzędny, aby wskazywał menu, które właśnie dodaliśmy:
 
    ```csharp
    <Groups>
@@ -84,21 +84,21 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
        </Groups>
    ```
 
-    Dzięki temu grupy część nowego menu.
+    Dzięki temu grupa jest częścią nowego menu.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. W **Eksploratora rozwiązań**, otwórz *TopLevelMenuPackage.vsct*.
+1. W **Eksploratorze rozwiązań**otwórz *plik TopLevelMenuPackage.vsct*.
 
-    Na końcu pliku istnieje \<symbole > węzeł, który zawiera kilka \<GuidSymbol > węzłów. W węźle, nazwane guidTopLevelMenuPackageCmdSet Dodaj nowy symbol w następujący sposób:
+    Na końcu pliku znajduje \<się węzeł symboli>, który \<zawiera kilka węzłów> GuidSymbol. W węźle o nazwie guidTopLevelMenuPackageCmdSet dodaj nowy symbol w następujący sposób:
 
    ```xml
    <IDSymbol name="TopLevelMenu" value="0x1021"/>
    ```
 
-2. Utwórz pustą \<menu > w węźle \<polecenia > węzła, tuż przed \<grupy >. W \<menu > węzła, Dodaj \<Menu > węzła, w następujący sposób:
+2. Utwórz \<pusty węzeł menu> \<w węźle> polecenia, \<tuż przed> grup. W \<węźle Menu> dodaj \<następujący węzeł Menu>:
 
    ```xml
    <Menus>
@@ -113,13 +113,13 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
    </Menus>
    ```
 
-    `guid` i `id` wartości menu określić zestaw poleceń i menu określonych w zestaw poleceń.
+    Wartości `guid` `id` menu określają zestaw poleceń i konkretne menu w zestawie poleceń.
 
-    `guid` i `id` wartości elementu nadrzędnego pozycji menu w sekcji pasek menu programu Visual Studio, który zawiera menu Narzędzia i Add-ins.
+    I `guid` `id` wartości nadrzędnego pozycjonowania menu w sekcji paska menu programu Visual Studio, który zawiera narzędzia i dodatki menu.
 
-    Wartość `CommandName` ciąg Określa, że tekst powinien pojawić się w elemencie menu.
+    Wartość `CommandName` ciągu określa, że tekst powinien pojawić się w elemencie menu.
 
-3. W \<grupy > sekcji, Znajdź \<grupy > i zmień \<nadrzędnego > elementu, aby wskazać polecenie menu, który właśnie został dodany:
+3. W \<sekcji Grupy> znajdź \<> grupy i zmień \<element> nadrzędny, aby wskazywał menu, które właśnie dodaliśmy:
 
    ```csharp
    <Groups>
@@ -129,32 +129,32 @@ Począwszy od programu Visual Studio 2015, możesz nie należy instalować progr
        </Groups>
    ```
 
-    Dzięki temu grupy część nowego menu.
+    Dzięki temu grupa jest częścią nowego menu.
 
 ::: moniker-end
 
-4. Znajdź `Buttons` sekcji. Należy zauważyć, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] został wygenerowany szablon pakietu `Button` element, który ma nadrzędnego równa `MyMenuGroup`. W wyniku tego polecenia pojawi się w menu.
+4. Znajdź `Buttons` sekcję. Należy zauważyć, że [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] szablon `Button` Pakiet wygenerował element, `MyMenuGroup`który ma ustawioną wartość nadrzędną . W rezultacie to polecenie pojawi się w menu.
 
 ## <a name="build-and-test-the-extension"></a>Tworzenie i testowanie rozszerzenia
 
-1. Skompiluj projekt, a następnie rozpocząć debugowanie. Wystąpienie doświadczalne wystąpienie powinna zostać wyświetlona.
+1. Skompiluj projekt i rozpocznij debugowanie. Powinno pojawić się wystąpienie eksperymentalne.
 
 ::: moniker range="vs-2017"
 
-2. Na pasku menu w eksperymentalnym wystąpieniu powinien zawierać **TestMenu** menu.
+2. Pasek menu w wystąpieniu eksperymentalnym powinien zawierać menu **TestMenu.**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. **Rozszerzenia** menu w eksperymentalnym wystąpieniu powinien zawierać **TestMenu** menu.
+2. **Rozszerzenia** menu w wystąpieniu eksperymentalnym powinny zawierać **menu TestMenu.**
 
 ::: moniker-end
 
-3. Na **TestMenu** menu, kliknij przycisk **Wywołaj polecenie Test**.
+3. W menu **TestMenu** kliknij polecenie **Wywołaj polecenie testu**.
 
-     Okno komunikatu powinno pojawiają się i wyświetli komunikat "TestCommand pakietu wewnątrz TopLevelMenu.TestCommand.MenuItemCallback()".
+     Powinno pojawić się okno komunikatu i wyświetlić komunikat "TestCommand Package Inside TopLevelMenu.TestCommand.MenuItemCallback()".
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

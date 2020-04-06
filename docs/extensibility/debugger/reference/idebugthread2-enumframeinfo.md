@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo | Dokumentacja firmy Microsoft
+title: IDebugThread2::EnumFrameInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::EnumFrameInfo
 ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fad77ca1d649e7ffdda02c7145dc11666619f232
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320322"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718860"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Pobiera listę ramek stosu dla tego wątku.
@@ -45,21 +45,21 @@ int EnumFrameInfo ( 
 
 ## <a name="parameters"></a>Parametry
 `dwFieldSpec`\
-[in] Kombinacja flag z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) wyliczenie, które określa, które pola [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury są do wypełniania. Określ `FIF_FUNCNAME_FORMAT` flagi do formatowania nazwy funkcji w jeden ciąg.
+[w] Kombinacja flag z wyliczenia [FRAMEINFO_FLAGS,](../../../extensibility/debugger/reference/frameinfo-flags.md) która określa, które pola struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) mają być wypełnione. Określ `FIF_FUNCNAME_FORMAT` flagę, aby sformatować nazwę funkcji w jeden ciąg.
 
 `nRadix`\
-[in] Podstawy używanych w formatowaniu wartości liczbowych informacji w moduł wyliczający.
+[w] Radix używany do formatowania informacji liczbowych w wyliczaczy.
 
 `ppEnum`\
-[out] Zwraca [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) obiekt, który zawiera listę [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury opisujące ramki stosu.
+[na zewnątrz] Zwraca obiekt [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) zawierający listę struktur [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) opisujących ramkę stosu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ramki dla wątku są wyliczane w kolejności, przy użyciu bieżącej ramki wyliczane najpierw i najstarsze ramki wyliczane ostatnio.
+ Ramki wątku są wyliczone w kolejności, z bieżącą ramką wyliczoną jako pierwsza i najstarszą ramką wyliczoną jako ostatnia.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

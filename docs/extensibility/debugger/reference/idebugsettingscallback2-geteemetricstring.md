@@ -1,27 +1,27 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricString | Dokumentacja firmy Microsoft
+title: IDebugSettingsCallback2::GetEEMetricString | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricString
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd4ac00a03204ac9104ea965145874ac950f7304
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ec2d8d321045900ac208297f7b007ce5266953f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322090"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720013"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-Pobiera ciąg wartość metryki ewaluatora wyrażeń nadać jej nazwę.
+Pobiera ciąg wartości metryki oceniającego wyrażenie, biorąc pod uwagę jego nazwę.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,19 +45,19 @@ private int GetEEMetricString(
 
 ## <a name="parameters"></a>Parametry
 `guidLang`\
-[in] Unikatowy identyfikator języka programowania.
+[w] Unikatowy identyfikator języka programowania.
 
 `guidVendor`\
-[in] Unikatowy identyfikator dostawcy.
+[w] Unikatowy identyfikator dostawcy.
 
 `pszMetric`\
-[in] Nazwa metryki.
+[w] Nazwa metryki.
 
 `pbstrValue`\
-[out] Zwraca ciąg wartość metryki.
+[na zewnątrz] Zwraca ciąg wartości metryki.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

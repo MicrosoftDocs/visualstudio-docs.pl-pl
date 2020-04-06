@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2::GetEngineInterface | Dokumentacja firmy Microsoft
+title: IDebugQueryEngine2::GetEngineInterface | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c720ac348179ec979ba1ffbc1488244ca69246c4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82f3214783a35e668bf3164c8659f60f863e9a43
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339929"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720665"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
-Pobiera interfejs aparatu (DE) niestandardowe debugowania.
+Pobiera niestandardowy aparat debugowania (DE) interfejs.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,15 +41,15 @@ int GetEngineInterface( 
 
 ## <a name="parameters"></a>Parametry
 `ppUnk`\
-[out] Zwraca `IUnknown` obiekt reprezentuje aparat debugowania (DE) i może być odpytywany dla innych prawidłowe interfejsu skojarzonego z URZ (na przykład [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) lub [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
+[na zewnątrz] Zwraca `IUnknown` obiekt reprezentuje aparat debugowania (DE) i który może być wyszukiwany dla innego prawidłowego interfejsu skojarzonego z DE (na przykład [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) lub [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wynikowy interfejsu powinny stosowana z rozwagą, ponieważ wywołanie za pośrednictwem interfejsów pobierane z tej metody zmierzone przetwarzania Menedżer debugowania sesji i może spowodować SDM, jakim jest w niepoprawnym stanie lub generowanie błędów podczas debugowania.
+ Wynikowy interfejs powinien być używany z ostrożnością, ponieważ wywołanie za pośrednictwem interfejsów pobranych z tej metody omija przetwarzanie menedżera debugowania sesji i może spowodować, że moduł SDM stanie się złym stanem lub generuje błędy podczas debugowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

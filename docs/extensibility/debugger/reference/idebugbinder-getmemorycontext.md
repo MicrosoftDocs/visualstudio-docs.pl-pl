@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext | Dokumentacja firmy Microsoft
+title: IDebugBinder::GetMemoryContext | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetMemoryContext method
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9876d4e4315041f4a4212a7ef50077982f3d2df0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8d50126e26b836f7b53ee1abeb5c4988b74a2eed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327265"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735997"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-Ta metoda konwertuje lokalizacji obiektu lub adres pamięci do kontekstu pamięci.
+Ta metoda konwertuje lokalizację obiektu lub adres pamięci do kontekstu pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,18 +45,18 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Parametry
 `pField`\
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujący obiekt do zlokalizowania. Jeśli `NULL`, następnie za pomocą `dwConstant` zamiast tego.
+[w] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące obiekt do zlokalizowania. Jeśli `NULL`zamiast `dwConstant` tego użyj.
 
 `dwConstant`\
-[in] Adres pamięci stałych, takich jak 0x5000.
+[w] Stały adres pamięci, taki jak 0x5000.
 
 `ppMemCxt`\
-[out] Zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfejs, który reprezentuje adres obiektu lub adresu w pamięci.
+[na zewnątrz] Zwraca interfejs [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres obiektu lub adres w pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

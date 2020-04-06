@@ -1,65 +1,65 @@
 ---
-title: What's New in Visual Studio SDK 2019 r | Dokumentacja firmy Microsoft
+title: Co nowego w SDK programu Visual Studio 2019 | Dokumenty firmy Microsoft
 ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4be152cfb39ddea9ddaeea56464a3447be4f2c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 187d3df4b5bcefefc0135c010c7d98951e9b3af8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320609"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740401"
 ---
-# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>What's New in Visual Studio SDK 2019 r
+# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Co nowego w sdk programu Visual Studio 2019
 
-Visual Studio SDK zawiera następujące nowe i zaktualizowane funkcje dla programu Visual Studio 2019 r.
+Visual Studio SDK ma następujące nowe i zaktualizowane funkcje programu Visual Studio 2019.
 
-## <a name="synchronously-autoloaded-extensions-warning"></a>Synchronicznie rozszerzenia załadowany automatycznie ostrzeżenie
+## <a name="synchronously-autoloaded-extensions-warning"></a>Synchroniczne automatyczne ładowanie rozszerzeń ostrzeżenie
 
-Użytkownicy zobaczą teraz ostrzeżenie, jeśli ich zainstalowanych rozszerzeń są synchroniczne załadowany automatycznie podczas uruchamiania. Dowiedz się więcej o ostrzeżenie na [synchronicznie załadowany automatycznie rozszerzenia](synchronously-autoloaded-extensions.md).
+Użytkownicy zobaczą teraz ostrzeżenie, jeśli którekolwiek z zainstalowanych rozszerzeń jest synchronicznie automatycznie ładowane podczas uruchamiania. Więcej informacji na temat ostrzeżenia można uzyskać w u [synchronicznie z automatycznym ładowaniem rozszerzeń.](synchronously-autoloaded-extensions.md)
 
-## <a name="single-unified-visual-studio-sdk"></a>Pojedynczą, jednolitą programu Visual Studio SDK
+## <a name="single-unified-visual-studio-sdk"></a>Pojedynczy, ujednolicony visual studio SDK
 
-Teraz możesz uzyskać wszystkie zasoby z zestawu SDK programu Visual Studio za pośrednictwem jednego pakietu NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
+Teraz można uzyskać wszystkie zasoby zestawu SDK programu Visual Studio za pośrednictwem jednego pakietu NuGet [Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk).
 
-## <a name="editor-registration-enhancements"></a>Udoskonalenia w zakresie rejestracji edytora
+## <a name="editor-registration-enhancements"></a>Ulepszenia rejestracji edytora
 
-Od jego utworzenia programu Visual Studio ma obsługiwane rejestracji niestandardowego edytora której edytora można zadeklarować jego koligacji dla określonego rozszerzenia (na przykład .xaml i .rc) lub jest ona odpowiednia dla dowolnego rozszerzenia (. *). Począwszy od programu Visual Studio 2019 wersji 16.1, możemy rozszerzyć obsługę rejestracji edytora.
+Od momentu utworzenia programu Visual Studio obsługuje niestandardową rejestrację edytora, w której edytor może deklarować koligacji dla określonych rozszerzeń (na przykład .xaml i .rc) lub że jest odpowiedni dla dowolnego rozszerzenia (.*). Począwszy od programu Visual Studio 2019 w wersji 16.1, możemy rozszerzyć obsługę rejestracji edytora.
 
 ### <a name="filenames"></a>Nazwy plików
 
-Oprócz lub zamiast rejestrowanie pomocy technicznej dla konkretnego rozszerzenia pliku edytora można zarejestrować obsługuje określone nazwy plików, stosując nowy `ProvideEditorFilename` atrybutu do edytora pakietu.
+Oprócz lub zamiast rejestrowania obsługi dla określonego rozszerzenia pliku, edytor może zarejestrować, że obsługuje określone nazwy `ProvideEditorFilename` plików, stosując nowy atrybut do pakietu edytora.
 
-Na przykład czy zastosować Edytor który obsługuje wszystkie pliki JSON to `ProvideEditorExtension` atrybutu do pakietu:
+Na przykład edytor, który obsługuje wszystkie pliki `ProvideEditorExtension` json będzie stosować ten atrybut do swojego pakietu:
 
 ```cs
 [ProvideEditorExtension(typeof(MyEditor), ".json", MyEditor.Priority)]
 ```
 
-Począwszy 16.1, jeśli MyEditor obsługuje tylko kilka plików JSON dobrze znanego, możliwość zamiast stosowania tych `ProvideEditorFilename` atrybuty do pakietu:
+Począwszy od 16.1, jeśli MyEditor obsługuje tylko kilka dobrze znanych plików .json, może zamiast tego zastosować te `ProvideEditorFilename` atrybuty do swojego pakietu:
 
 ```cs
 [ProvideEditorFilename(typeof(MyEditor), "particular.json", MyEditor.Priority)]
 [ProvideEditorFilename(typeof(MyEditor), "special.json",    MyEditor.Priority)]
 ```
 
-### <a name="uicontexts"></a>Elementów Uicontext
+### <a name="uicontexts"></a>Konteksty interfejsu użytkownika
 
-Edytor można zarejestrować jeden lub więcej elementów Uicontext, które reprezentują, gdy jest włączone. Elementów Uicontext są rejestrowane przez zastosowanie jednego lub większej liczby wystąpień `ProvideEditorUIContextAttribute` do pakietu, który rejestruje edytora.
+Edytor może zarejestrować jeden lub więcej UIContexts, które reprezentują, gdy jest włączona. UIContexts są rejestrowane przez zastosowanie jednego `ProvideEditorUIContextAttribute` lub więcej wystąpień do pakietu, który rejestruje edytora.
 
-Jeśli Edytor ma zarejestrowanych elementów Uicontext:
+Jeśli edytor zarejestrował UIContexts:
 
-- Jeśli co najmniej jeden z jego zarejestrowanych elementów Uicontext jest aktywny, po otwarciu pliku z rozszerzeniem danego, edytora znajduje się w polu wyszukiwania edytora.
-- Jeśli żaden z zarejestrowanych elementów Uicontext nie jest aktywne, edytora jest niedostępna w wyszukiwaniu edytora.
+- Jeśli co najmniej jeden z zarejestrowanych UIContexts jest aktywny po otwarciu pliku z danym rozszerzeniem, edytor jest uwzględniony w wyszukiwarce edytora.
+- Jeśli żaden z zarejestrowanych UIContexts jest aktywny, edytor nie jest uwzględniony w wyszukiwarce edytora.
 
-Jeśli żadnych elementów Uicontext nie rejestrować się w edytorze, jest on zawsze uwzględniany w wyszukiwaniu edytora dla tego rozszerzenia.
+Jeśli edytor nie rejestruje żadnych UIContexts, zawsze jest uwzględniony w wyszukiwaniu edytora dla tego rozszerzenia.
 
-Na przykład, jeśli edytor jest dostępna tylko podczas C# projekt był otwarty, jego można zadeklarować tego koligacji, stosując `ProvideEditorUIContext` atrybutu:
+Na przykład jeśli edytor jest dostępny tylko wtedy, gdy projekt języka C# jest `ProvideEditorUIContext` otwarty, może zadeklarować tę koligacji, stosując atrybut:
 
 ```cs
 [ProvideEditorUIContext(typeof(MyEditor), KnownUIContexts.CSharpProjectContext)]

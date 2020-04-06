@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Dokumentacja firmy Microsoft
+title: IDebugSymbolProvider::GetTypeByName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetTypeByName method
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fca036da331795c0f7c17f848bbea1e682796894
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347409"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719183"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Ta metoda mapuje nazwę na symbol typ symbolu.
+Ta metoda mapuje nazwę symbolu na typ symbolu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,21 +45,21 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>Parametry
 `pszClassName`\
-[in] Nazwa symbolu.
+[w] Nazwa symbolu.
 
 `nameMatch`\
-[in] Wybiera typ dopasowania, na przykład wielkość liter. Wartość z zakresu od [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) wyliczenia.
+[w] Wybiera typ dopasowania, na przykład z uwzględnieniem wielkości liter. Wartość z [wyliczenia NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
 
 `ppField`\
-[out] Zwraca typ symbolu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.
+[na zewnątrz] Zwraca typ symbolu jako obiekt [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest ogólna wersja [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
+ Ta metoda jest ogólną wersją [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

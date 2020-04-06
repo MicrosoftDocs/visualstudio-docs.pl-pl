@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Dokumentacja firmy Microsoft
+title: IDebugBinder3::GetMemoryObject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 154873006091a213e69653d3742b3caa8c25b7e0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327045"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735717"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
-Ta metoda pobiera obiekt pamięci, który reprezentuje ten obiekt jest powiązany z pamięci.
+Ta metoda pobiera obiekt pamięci, który reprezentuje pamięć, która jest powiązana z tym obiektem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,18 +45,18 @@ int GetMemoryObject(
 
 ## <a name="parameters"></a>Parametry
 `pField`\
-[in] Określa pole, które można pobrać obiektu pamięci dla.
+[w] Określa pole, dla którego ma zostać wyjętym z obiektu pamięci.
 
 `uConstant`\
-[in] Reprezentuje adres pamięci lub wartość stałej wartości.
+[w] Reprezentuje adres pamięci lub wartość dla wartości stałej.
 
 `ppObject`\
-[out] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący pamięci, którą jest powiązany ten obiekt.
+[na zewnątrz] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący pamięć, do których jest powiązany ten obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

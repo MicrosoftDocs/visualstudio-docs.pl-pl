@@ -1,28 +1,28 @@
 ---
-title: IDebugGenericParamField::ConstraintCount | Microsoft Docs
+title: IDebugGenericParamField::ConstraintCount | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de00e38fa02447217b30e4a6801001e2663798e5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5a8f9809df0fa45021aab640bf3ff547efaa1576
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330443"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728078"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
-Zwraca liczbę ograniczenia, które są skojarzone z tym parametru ogólnego.
+Zwraca liczbę ograniczeń skojarzonych z tym parametrem ogólnym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,13 +40,13 @@ int ConstraintCount(
 
 ## <a name="parameters"></a>Parametry
 `pcConst`\
-[out w] Liczba ograniczeń, które są skojarzone z tym polem.
+[w, na zewnątrz] Liczba ograniczeń skojarzonych z tym polem.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugGenericParamFieldType,** który udostępnia interfejs [IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)
@@ -81,5 +81,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

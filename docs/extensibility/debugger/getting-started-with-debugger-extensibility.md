@@ -1,5 +1,5 @@
 ---
-title: Wprowadzenie do rozszerzalności debugera | Dokumentacja firmy Microsoft
+title: Wprowadzenie do rozszerzalności debugera | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,40 +7,40 @@ helpviewer_keywords:
 - debugging [Debugging SDK], getting started
 - Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e2dabf18d3d00034d65a94c41f2e435ad64114
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 153db8889c78890a31a2e8003e6aa95ed24a02eb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350009"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738595"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Wprowadzenie do rozszerzalności debugera
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Zawiera informacje potrzebne do tworzenia i dostosowywania składniki debugera, używane do debugowania programów z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.
+Zawiera [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] informacje, które należy utworzyć i dostosować składniki debugera używane do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania programów z poziomu środowiska.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowanie dodano ulepszenia pochodną użyteczność obszerne testy wykonywane na poprzednim [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugery. Możesz użyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania do kroku za pośrednictwem aplikacji wielojęzycznych, lub można zaimplementować na bieżąco edytowanie zmiennych podczas debugowania aplikacji i rozwiązań dla wielu języków.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]debugowanie dodał ulepszenia wynikające z szeroko zakrojonych testów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyteczności przeprowadzonych na poprzednich debugerów. Debugowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można użyć do przechodzenia przez aplikację wielojęzyczną lub można zaimplementować edycję zmiennych w locie podczas debugowania aplikacji i rozwiązań wielojęzycznych.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowanie jest wykonywany poza procesem z debugowanego i dlatego ta opcja jest mniej pożądana w przestrzeni procesu aplikacji. W związku z tym łatwiej jest zapis składników współdziałających z debugerem bez wywierania wpływu na debugowania programu.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]debugowanie jest wykonywane poza procesem z debugowanym programem i dlatego jest mniej inwazyjne w przestrzeni procesu aplikacji. W związku z tym łatwiej jest pisać składniki, które współdziałają z debugerem bez wpływu na program debugowania.
 
- Aby optymalnie wykorzystać [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], należy zapoznać się z następującymi elementami:
+ Aby najlepiej [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]użyć , należy zapoznać się z następującymi elementami:
 
-- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE)
+- Zintegrowane [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowisko programistyczne (IDE)
 
-- Język programowania w języku C++
+- Język programowania C++
 
 - ATL COM
 
 ## <a name="in-this-section"></a>W tej sekcji
- [Plan rozwoju rozszerzania debugera](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) zawiera opis procesu wdrażania, debugowanie w programie, w zależności od kompilatora i jego dane wyjściowe.
+ [Plan rozszerzenia debugera](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) Przedstawia proces implementowania debugowania w produkcie, w zależności od kompilatora i jego danych wyjściowych.
 
- [Składniki debugera](../../extensibility/debugger/debugger-components.md) zawiera omówienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowanie składników, które obejmują aparat debugowania (DE), Ewaluator wyrażeń (EE) i obsługi symboli (SH).
+ [Składniki debugera](../../extensibility/debugger/debugger-components.md) Zawiera omówienie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składników debugowania, które obejmują aparat debugowania (DE), oceniający wyrażenia (EE) i program obsługi symboli (SH).
 
- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md) opisano główne pojęcia dotyczące architektury debugowania.
+ [Pojęcia debugera](../../extensibility/debugger/debugger-concepts.md) W tym artykule opisano główne debugowanie koncepcji architektury.
 
- [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) wyjaśnia, jak aparat debugowania (DE) działa jednocześnie w kontekstach oceny kodu, dokumentację i wyrażenia. W tym artykule opisano, dla każdego z trzech kontekstów, lokalizacji, pozycja lub oceny odpowiednie do niego.
+ [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md) Wyjaśniono, jak aparat debugowania (DE) działa jednocześnie w kontekście oceny kodu, dokumentacji i wyrażenia. Opisuje, dla każdego z trzech kontekstów, lokalizacji, pozycji lub oceny istotne dla niego.
 
- [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md) zawiera łącza do różnych zadań debugowania, takich jak uruchamianie programu i wyrażeń.
+ [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md) Zawiera łącza do różnych zadań debugowania, takich jak uruchamianie programu i oceny wyrażeń.

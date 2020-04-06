@@ -1,24 +1,24 @@
 ---
-title: IDebugDynamicFieldCOMPlus | Microsoft Docs
+title: IDebugDynamicFieldCOMPlus | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDynamicFieldCOMPlus interface
 ms.assetid: c3a25f27-327a-4bdb-b026-27d436ddcd0c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824498f3d7657bcc5984d31a1abaa4e97c4a9a7d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 823057303655da59494680ce9f591b252e28f792
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330201"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731229"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
-Reprezentuje dynamiczne pole dla [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiektu.
+Reprezentuje pole dynamiczne dla obiektu [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,16 +27,16 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ```
 
 ## <a name="methods"></a>Metody
- Oprócz metod na [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) interfejsu, ten interfejs implementuje następujące metody:
+ Oprócz metod na [interfejsie IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) ten interfejs implementuje następujące metody:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Pobiera typ danego typu pierwotnego.|
-|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Pobiera typ, biorąc pod uwagę jej token.|
+|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Pobiera typ, biorąc pod uwagę jego typ pierwotny.|
+|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Pobiera typ, biorąc pod uwagę jego token.|
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

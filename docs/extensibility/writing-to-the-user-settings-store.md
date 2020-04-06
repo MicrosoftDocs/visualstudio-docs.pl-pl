@@ -1,28 +1,28 @@
 ---
-title: Zapisywanie do magazynu ustawień użytkownika | Microsoft Docs
+title: Zapisywanie do sklepu ustawień użytkownika | Dokumenty firmy Microsoft
 ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2bed721cc084042c3ebe57639af28b7e9f13d206
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647878"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740364"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
-Ustawienia użytkownika to ustawienia do zapisu, takie jak te w oknie dialogowym **Narzędzia/Opcje** , okna właściwości i niektóre inne okna dialogowe. Rozszerzenia programu Visual Studio mogą ich używać do przechowywania małych ilości danych. W tym instruktażu pokazano, jak dodać Notatnik do programu Visual Studio jako zewnętrzne narzędzie, odczytując z i zapisując do magazynu ustawień użytkownika.
+Ustawienia użytkownika są zapisywalne ustawienia, takie jak te w **narzędzia / opcje** okna, właściwości okna i niektórych innych okien dialogowych. Rozszerzenia programu Visual Studio mogą używać ich do przechowywania niewielkich ilości danych. W tym przewodniku pokazano, jak dodać Notatnik do programu Visual Studio jako narzędzie zewnętrzne, odczytując i zapisując do magazynu ustawień użytkownika.
 
 ## <a name="writing-to-the-user-settings-store"></a>Zapisywanie w magazynie ustawień użytkownika
 
-1. Utwórz projekt VSIX o nazwie UserSettingsStoreExtension, a następnie dodaj polecenie niestandardowe o nazwie UserSettingsStoreCommand. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Utwórz projekt VSIX o nazwie UserSettingsStoreExtension, a następnie dodaj niestandardowe polecenie o nazwie UserSettingsStoreCommand. Aby uzyskać więcej informacji na temat tworzenia polecenia [niestandardowego,](../extensibility/creating-an-extension-with-a-menu-command.md) zobacz Tworzenie rozszerzenia za pomocą polecenia menu
 
-2. W UserSettingsStoreCommand.cs Dodaj następujące dyrektywy using:
+2. W UserSettingsStoreCommand.cs dodaj następujące elementy za pomocą dyrektyw:
 
     ```csharp
     using System.Collections.Generic;
@@ -30,7 +30,7 @@ Ustawienia użytkownika to ustawienia do zapisu, takie jak te w oknie dialogowym
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3. W MenuItemCallback Usuń treść metody i Pobierz magazyn ustawień użytkownika w następujący sposób:
+3. W MenuItemCallback usuń treść metody i pobierz magazyn ustawień użytkownika w następujący sposób:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -40,7 +40,7 @@ Ustawienia użytkownika to ustawienia do zapisu, takie jak te w oknie dialogowym
     }
     ```
 
-4. Teraz Dowiedz się, czy Notatnik został już ustawiony jako narzędzie zewnętrzne. Należy wykonać iterację wszystkich zewnętrznych narzędzi, aby określić, czy ustawienie ToolCmd ma wartość "Notepad" w następujący sposób:
+4. Teraz dowiedz się, czy Notatnik jest już ustawiony jako narzędzie zewnętrzne. Musisz iterować za pomocą wszystkich narzędzi zewnętrznych, aby ustalić, czy toolcmd ustawienie jest "Notatnik", w następujący sposób:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ Ustawienia użytkownika to ustawienia do zapisu, takie jak te w oknie dialogowym
     }
     ```
 
-6. Przetestuj kod. Należy pamiętać, że dodaje Notatnik jako narzędzie zewnętrzne, dlatego należy wycofać rejestr przed uruchomieniem go po raz drugi.
+6. Przetestuj kod. Pamiętaj, że dodaje Notatnik jako narzędzie zewnętrzne, więc musisz wycofać rejestr przed uruchomieniem go po raz drugi.
 
-7. Skompiluj kod i Rozpocznij debugowanie.
+7. Skompiluj kod i rozpocznij debugowanie.
 
-8. W menu **Narzędzia** kliknij polecenie **Wywołaj UserSettingsStoreCommand**. Spowoduje to dodanie Notatnika do menu **Narzędzia** .
+8. W menu **Narzędzia** kliknij polecenie **Wywołaj userSettingsStoreCommand**. Spowoduje to dodanie Notatnika do menu **Narzędzia.**
 
-9. Teraz powinien zostać wyświetlony Notatnik w menu Narzędzia/Opcje, a kliknięcie przycisku **Notatnik** powinno spowodować wystąpienie Notatnika.
+9. Teraz powinieneś zobaczyć Notatnik w menu Narzędzia / Opcje, a kliknięcie **Notatnika** powinno wywołać wystąpienie Notatnika.

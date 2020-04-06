@@ -1,24 +1,24 @@
 ---
-title: IDebugStopCompleteEvent2 | Microsoft Docs
+title: IDebugStopCompleteEvent2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080b3073ffc13b90870b40a16a353634f4aa0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352013"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719443"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
-Aparat debugowania (DE) można wysłać zdarzenie to opcjonalne Menedżer debugowania sesji (SDM), po zatrzymaniu program.
+Aparat debugowania (DE) może wysłać to opcjonalne zdarzenie do menedżera debugowania sesji (SDM) po zatrzymaniu programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -28,16 +28,16 @@ IDebugStopCompleteEvent2 : IUnknown
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
 
-Ten interfejs został wprowadzony w programie Visual Studio 2005. Wcześniejsze wersje nie obsługują zatrzymywanie asynchronicznego.
+Ten interfejs został wprowadzony w programie Visual Studio 2005. Wcześniejsze wersje nie obsługiwały zatrzymania asynchronii.
 
-- [Zatrzymaj](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) jest wywoływana przez SDM w scenariuszach wieloprocesowe lub wielu programów. Gdy jeden program wysyła zdarzenia zatrzymywanie SDM, SDM żądań inne programy, aby zatrzymać zbyt.
+- [Zatrzymanie](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) jest wywoływane przez SDM w scenariuszach wieloprocesowych lub wieloprogramowych. Gdy jeden program wysyła zdarzenie zatrzymania do SDM, SDM żąda innych programów, aby zatrzymać, zbyt.
 
-Zatrzymaj jest używany do asynchronicznie powiadamia SDM, który programu została zatrzymana. Informowanie SDM przydaje się do aparatu debugowania interpreter, gdzie czasami uruchomiony żaden kod w debugowanym programu, więc [zatrzymać](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) nie może zostać ukończona synchronicznie. Jeśli aparat debugowania chce używać tego asynchronicznego powiadomienia, aplikacja musi zwracać `S_ASYNC_STOP` z [zatrzymać](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
+Stop służy do asynchronicznie poinformować SDM, że program został zatrzymany. Informowanie SDM jest przydatne dla aparatu debugowania interpretera, gdzie czasami żaden kod nie jest uruchomiony wewnątrz debugowanego programu, więc [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) nie można ukończyć synchronicznie. Jeśli aparat debugowania chce zastosować to powiadomienie asynchroniczne, musi zwrócić `S_ASYNC_STOP` z [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md).
 
 ## <a name="requirements"></a>Wymagania
 
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

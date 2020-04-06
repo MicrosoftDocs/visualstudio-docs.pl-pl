@@ -1,30 +1,30 @@
 ---
-title: Pole m_children | Dokumentacja firmy Microsoft
+title: pole m_children | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab6446b18350fe1f11e0b164d9eb4bff39035ddb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07933fd4c9f359e72714600abdf8b4ee29268f84
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330888"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738425"
 ---
-# <a name="mchildren-field"></a>m_children field
-Lista zadań podrzędnych, które zostały zarejestrowane przy użyciu tego zadania.
+# <a name="m_children-field"></a>Pole m_children
+Lista zadań podrzędnych zarejestrowanych w tym zadaniu.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Zestaw:** mscorlib (w *mscorlib.dll*)
+ **Montaż:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,9 +33,9 @@ Lista zadań podrzędnych, które zostały zarejestrowane przy użyciu tego zada
 ```
 
 ## <a name="remarks"></a>Uwagi
- Po uruchomieniu zadania tylko wątku, który wykonuje zadania powinien uzyskać dostęp do tej tablicy.
+ Gdy zadanie jest uruchomione, tylko wątek, który wykonuje zadanie należy uzyskać dostęp do tej tablicy.
 
- Jeśli zadanie zostało ukończone, inne wątki mogą uzyskać dostęp do tego pola tak długo, jak one nie nic dodawać do niego lub usunąć elementy z niego.
+ Jeśli zadanie zostało ukończone, inne wątki mogą uzyskać dostęp do tego pola, o ile nie dodają do niego niczego ani nie usuwają niczego z niego.
 
-## <a name="see-also"></a>Zobacz także
-- [ContingentProperties, klasa](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+## <a name="see-also"></a>Zobacz też
+- [Klasa Właściwości warunkowe](../../extensibility/debugger/contingentproperties-class-internal-members.md)

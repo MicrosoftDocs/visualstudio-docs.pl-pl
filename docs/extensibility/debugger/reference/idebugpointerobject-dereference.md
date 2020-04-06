@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Dokumentacja firmy Microsoft
+title: IDebugPointerObject::Dereference | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 381c6f392cccb398497204cc5772c5f9a00fd5b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331658"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725567"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Pobiera obiekt wskazywany.
+Pobiera obiekt wskazał.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>Parametry
 `dwIndex`\
-[in] Przesunięcie bajtu proste, od początku obiektu wskazywanego.
+[w] Proste przesunięcie bajtu od początku obiektu wskazywu.
 
 `ppObject`\
-[out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt reprezentujący obiekt wskazywany, a także przesunięcie, jeśli istnieje.
+[na zewnątrz] Zwraca obiekt [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący obiekt wskazywalny, plus przesunięcie, jeśli istnieje.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu. Zwraca E_FAIL, jeśli ten obiekt nie wskazuje innego obiektu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu. Zwraca E_FAIL, jeśli ten obiekt nie wskazuje na inny obiekt.
 
 ## <a name="remarks"></a>Uwagi
- Jaki wskazał obiekt może być podstawowy lub bardziej złożonych typów, takich jak klasy lub struktury.
+ Obiekt wskazany może być typem pierwotnym lub bardziej złożonym, takim jak klasa lub struktura.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

@@ -1,25 +1,25 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType | Dokumentacja firmy Microsoft
+title: IDebugTypeFieldBuilder::CreatePointerToType | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CreatePointerToType
 - IDebugTypeFieldBuilder::CreatePointerToType
 ms.assetid: 73966e8a-b643-43e0-9b4e-0aa4b402ebbe
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b8947090c56376b03da83cfd81296604b6bd642a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 871f061df1fdc60362f39fab36136eb71f5d7e50
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319904"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718428"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Tworzy wskaźnik do określonego typu.
@@ -42,13 +42,13 @@ int CreatePointerToType(
 
 ## <a name="parameters"></a>Parametry
 `pTypeField`\
-[in] Wpisz, aby wskazać. Jest reprezentowany przez [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu.
+[w] Wpisz, aby wskazać. Jest reprezentowana przez interfejs [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
 
 `pPtrToTypeField`\
-[out] Zwraca wskaźnik, reprezentowane przez nowy **IDebugField** obiektu.
+[na zewnątrz] Zwraca wskaźnik reprezentowany przez nowy obiekt **IDebugField.**
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2 | Microsoft Docs
+title: IDebugModuleLoadEvent2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModuleLoadEvent2 interface
 ms.assetid: 7d26fb23-5d49-4ba7-b7c5-3aed4d7be81e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caca1e79ef99e4bc5e7dd830ed20e717a2fa684f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 06bb96d8a02ccc9299d43f28b4fbfa3fdb39acdc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323721"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726701"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
-Ten interfejs jest wysyłane przez aparat debugowania (DE) w celu Menedżer debugowania sesji (SDM), podczas ładowania modułu lub zwolnione.
+Ten interfejs jest wysyłany przez aparat debugowania (DE) do menedżera debugowania sesji (SDM), gdy moduł jest ładowany lub zwalniany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -29,29 +29,29 @@ IDebugModuleLoadEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- DE implementuje ten interfejs do raportu, czy moduł został załadowany lub zwolnione. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu. Używa SDM [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu.
+ DE implementuje ten interfejs, aby zgłosić, że moduł został załadowany lub zwolniony. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany na tym samym obiekcie co ten interfejs. Moduł SDM używa [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać dostęp do `IDebugEvent2` interfejsu.
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- DE tworzy i wysyła tego obiektu zdarzenia do raportu, moduł został załadowany lub zwolnione. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego, która jest dostarczana przez SDM, gdy jest on dołączony do debugowanego programu.
+ DE tworzy i wysyła ten obiekt zdarzenia do raportu moduł został załadowany lub zwolniony. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2,](../../../extensibility/debugger/reference/idebugeventcallback2.md) która jest dostarczana przez SDM, gdy jest dołączony do programu jest debugowany.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugModuleLoadEvent2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugModuleLoadEvent2`przedstawiono metodę .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Pobiera moduł, który jest załadowany lub zwolnione.|
+|[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|Pobiera moduł, który jest ładowany lub zwolniony.|
 
 ## <a name="remarks"></a>Uwagi
- Program Visual Studio używa to zdarzenie, aby zachować **modułów** okna na bieżąco.
+ Visual Studio używa tego zdarzenia, aby aktualizować okno **Moduły.**
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

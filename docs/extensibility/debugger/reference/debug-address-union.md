@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS_UNION | Microsoft Docs
+title: DEBUG_ADDRESS_UNION | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dbd114fb06bfd688c720744dbbad69bd0dae6aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346284"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737524"
 ---
-# <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
-W tym artykule opisano różne rodzaje adresów.
+# <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
+Opisuje różne rodzaje adresów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -54,50 +54,50 @@ public struct DEBUG_ADDRESS_UNION {
 
 ## <a name="members"></a>Elementy członkowskie
 `dwKind`\
-Wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia, określając sposób interpretowania Unii.
+Wartość z [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) wyliczenia, określając, jak interpretować unii.
 
 `addr.addrNative`\
-[C++ tylko] Zawiera [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) struktury, jeśli `dwKind` = ADDRESS_KIND_NATIVE.
+[Tylko C++] Zawiera [strukturę NATIVE_ADDRESS,](../../../extensibility/debugger/reference/native-address.md) jeśli `dwKind` = ADDRESS_KIND_NATIVE.
 
 `addr.addrThisRel`\
-[C++ tylko] Zawiera[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) struktury, jeśli `dwKind` = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE.
+[Tylko C++] Zawiera[strukturę UNMANAGED_ADDRESS_THIS_RELATIVE,](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) `dwKind` jeśli = ADDRESS_KIND_UNMANAGED_THIS_RELATIVE.
 
 `addr.addUPhysical`\
-[C++ tylko] Zawiera[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) struktury, jeśli `dwKind` = ADDRESS_KIND_UNMANAGED_PHYSICAL.
+[Tylko C++] Zawiera[strukturę UNMANAGED_ADDRESS_PHYSICAL,](../../../extensibility/debugger/reference/unmanaged-address-physical.md) `dwKind` jeśli = ADDRESS_KIND_UNMANAGED_PHYSICAL.
 
 `addr.addrMethod`\
-[C++ tylko] Zawiera[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) struktury, jeśli `dwKind` = ADDRESS_KIND_METHOD.
+[Tylko C++] Zawiera[strukturę METADATA_ADDRESS_METHOD,](../../../extensibility/debugger/reference/metadata-address-method.md) jeśli `dwKind` = ADDRESS_KIND_METHOD.
 
 `addr.addrField`\
-[C++ tylko] Zawiera[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) struktury, jeśli `dwKind` = ADDRESS_KIND_FIELD.
+[Tylko C++] Zawiera[strukturę METADATA_ADDRESS_FIELD,](../../../extensibility/debugger/reference/metadata-address-field.md) `dwKind` jeśli = ADDRESS_KIND_FIELD.
 
 `addr.addrLocal`\
-[C++ tylko] Zawiera[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) struktury, jeśli `dwKind` = ADDRESS_KIND_LOCAL.
+[Tylko C++] Zawiera[strukturę METADATA_ADDRESS_LOCAL,](../../../extensibility/debugger/reference/metadata-address-local.md) `dwKind` jeśli = ADDRESS_KIND_LOCAL.
 
 `addr.addrParam`\
-[C++ tylko] Zawiera[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) struktury, jeśli `dwKind` = ADDRESS_KIND_PARAM.
+[Tylko C++] Zawiera[strukturę METADATA_ADDRESS_PARAM,](../../../extensibility/debugger/reference/metadata-address-param.md) `dwKind` jeśli = ADDRESS_KIND_PARAM.
 
 `addr.addrArrayElem`\
-[C++ tylko] Zawiera[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) struktury, jeśli `dwKind` = ADDRESS_KIND_ARRAYELEM.
+[Tylko C++] Zawiera[strukturę METADATA_ADDRESS_ARRAYELEM,](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) `dwKind` jeśli = ADDRESS_KIND_ARRAYELEM.
 
 `addr.addrRetVal`\
-[C++ tylko] Zawiera[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) struktury, jeśli `dwKind` = ADDRESS_KIND_RETVAL.
+[Tylko C++] Zawiera[strukturę METADATA_ADDRESS_RETVAL,](../../../extensibility/debugger/reference/metadata-address-retval.md) `dwKind` jeśli = ADDRESS_KIND_RETVAL.
 
 `addr.unused`\
-[C++ tylko] dopełnienia.
+Dopełnienie [tylko C++].
 
 `addr`\
-[C++ tylko] Nazwa Unii.
+[Tylko C++] Nazwa związku.
 
 `unionmember`\
-[C# tylko] Ta wartość musi być wprowadzane do typu odpowiednią strukturą na podstawie `dwKind`. Zobacz uwagi dla skojarzenia między `dwKind` i interpretacji Unii.
+[Tylko C#] Wartość ta musi być zorganizowana do odpowiedniego `dwKind`typu struktury na podstawie . Patrz Uwagi dotyczące związku `dwKind` i interpretacji związku.
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest częścią [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury i reprezentuje jeden z wielu różnych rodzajów adresów ( `DEBUG_ADDRESS` struktury jest wypełniane przez wywołanie [getaddress —](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metody).
+Ta struktura jest częścią [struktury DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) i reprezentuje jeden z wielu różnych `DEBUG_ADDRESS` rodzajów adresów (struktura jest wypełniona wywołaniem [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metody).
 
- [C# tylko] W poniższej tabeli przedstawiono, jak interpretować `unionmember` składowej dla każdego rodzaju adresu. W przykładzie pokazano, jak to zrobić dla jednego rodzaju adresu.
+ [Tylko C#] W poniższej tabeli `unionmember` przedstawiono sposób interpretowania elementu członkowskiego dla każdego rodzaju adresu. Przykład pokazuje, jak to zrobić dla jednego rodzaju adresu.
 
-|`dwKind`|`unionmember` interpretowane jako|
+|`dwKind`|`unionmember`interpretowane jako|
 |--------------|----------------------------------|
 |`ADDRESS_KIND_NATIVE`|[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)|
 |`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`|[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)|
@@ -110,7 +110,7 @@ Ta struktura jest częścią [DEBUG_ADDRESS](../../../extensibility/debugger/ref
 |`ADDRESS_KIND_RETVAL`|[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)|
 
 ## <a name="example"></a>Przykład
-W tym przykładzie pokazano, jak interpretować jeden rodzaj adresu (`METADATA_ADDRESS_ARRAYELEM`) z `DEBUG_ADDRESS_UNION` struktury w języku C#. Wszystkie pozostałe elementy mogą być interpretowane w taki sam sposób.
+W tym przykładzie pokazano, jak`METADATA_ADDRESS_ARRAYELEM`interpretować `DEBUG_ADDRESS_UNION` jeden rodzaj adresu ( ) struktury w języku C#. Pozostałe elementy mogą być interpretowane w dokładnie taki sam sposób.
 
 ```csharp
 using System;
@@ -137,11 +137,11 @@ namespace MyPackage
 ## <a name="requirements"></a>Wymagania
 Nagłówek: sh.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

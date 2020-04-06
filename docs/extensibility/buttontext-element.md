@@ -1,25 +1,25 @@
 ---
-title: ButtonText, Element | Dokumentacja firmy Microsoft
+title: Element ButtonText | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2440258e95ad0d61998b24dae54b731a998c47
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321215"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739907"
 ---
 # <a name="buttontext-element"></a>ButtonText, element
-To pole pozwala określić tekst, który pojawia się w różnych menu. Domyślnie `ButtonText` element jest wyświetlany w menu kontrolerów. `ButtonText` Element staje się również wartość domyślna Jeśli inne pola tekstowe są puste. `ButtonText` Element nie może być pusta, nawet jeśli inne pola tekstowe są określone.
+To pole umożliwia określenie tekstu wyświetlanego w różnych menu. Domyślnie `ButtonText` element pojawia się w kontrolerach menu. Element `ButtonText` staje się również wartością domyślną, jeśli inne pola tekstowe są puste. Element `ButtonText` nie może być pusty, nawet jeśli określono inne pola tekstowe.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,10 +40,10 @@ To pole pozwala określić tekst, który pojawia się w różnych menu. Domyśln
 
 |Element|Opis|
 |-------------|-----------------|
-|[Strings, element](../extensibility/strings-element.md)|Grupuje elementy tekstu, takie jak `ButtonText` i `CommandName`.|
+|[Element ciągów](../extensibility/strings-element.md)|Grupuje elementy tekstowe, takie jak `ButtonText` i `CommandName`.|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wartość tekstowa elementu `ButtonText` element zawiera tekst, który jest wyświetlany dla elementów menu, combos i inne elementy interfejsu użytkownika, które mają widocznego tekstu.
+ Wartość tekstowa `ButtonText` elementu zawiera tekst, który jest wyświetlany dla elementów menu, combo i innych elementów interfejsu użytkownika (UI), które mają widoczny tekst.
 
-## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz też
+- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

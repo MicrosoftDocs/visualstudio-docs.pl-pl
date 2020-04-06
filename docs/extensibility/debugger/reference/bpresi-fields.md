@@ -1,5 +1,5 @@
 ---
-title: BPRESI_FIELDS | Microsoft Docs
+title: BPRESI_FIELDS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350485"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737719"
 ---
-# <a name="bpresifields"></a>BPRESI_FIELDS
-Określa informacje, które mają zostać pobrane informacje pomyślnego rozwiązania punktu przerwania.
+# <a name="bpresi_fields"></a>BPRESI_FIELDS
+Określa informacje, które mają być pobierane o pomyślnym rozwiązaniu punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,32 +48,32 @@ public enum enum_BPRESI_FIELDS {
 
 ## <a name="fields"></a>Pola
 `BPRESI_BPRESLOCATION`\
-Inicjowanie bądź użyj `bpResLocation` pola (lokalizacji punktu przerwania rozdzielczość) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.
+Inicjowanie/używanie pola `bpResLocation` (lokalizacja rozpoznawania punktów przerwania) BP_RESOLUTION_INFO struktury. [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 
 `BPRESI_PROGRAM`\
-Inicjowanie bądź użyj `pProgram` pole `BP_RESOLUTION_INFO` struktury.
+Inicjuj/użyj `pProgram` `BP_RESOLUTION_INFO` pola konstrukcji.
 
 `BPRESI_THREAD`\
-Inicjowanie bądź użyj `pThread` pole `BP_RESOLUTION_INFO` struktury.
+Inicjuj/użyj `pThread` `BP_RESOLUTION_INFO` pola konstrukcji.
 
 `BPRESI_ALLFIELDS`\
 Określa wszystkie pola.
 
 ## <a name="remarks"></a>Uwagi
-Przekazany do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodę, aby wskazać, które pola [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury, które mają zostać zainicjowane.
+Przekazany do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metody, aby wskazać, które pola [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury mają być inicjowane.
 
-Te flagi są również używane w celu wskazania, które pola `BP_RESOLUTION_INFO` struktury są używane i ważne, gdy tej struktury jest zwracany.
+Flagi te są również używane do `BP_RESOLUTION_INFO` wskazania, które pola struktury są używane i prawidłowe, gdy ta struktura jest zwracana.
 
-Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.
+Wartości te mogą być łączone z bitowym `OR`.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

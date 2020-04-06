@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Dokumentacja firmy Microsoft
+title: IDebugCoreServer3::GetServerFriendlyName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba0675038a495a91755794d7e43ad57cfc7d438a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eec30783041a1240d8f85815c06f4ca60729a484
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326953"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732883"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
-Pobiera przyjazną nazwę dla serwera.
+Pobiera przyjazną nazwę serwera.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,19 +41,19 @@ int GetServerFriendlyName(
 
 ## <a name="parameters"></a>Parametry
 `pbstrName`\
-[out] Zwraca przyjazną nazwę dla serwera.
+[na zewnątrz] Zwraca przyjazną nazwę serwera.
 
 > [!NOTE]
-> Obiekt wywołujący jest odpowiedzialny za zwalnianie ciągu.
+> Wywołujący jest odpowiedzialny za zwalnianie ciągu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- W przypadku serwerów uruchomione przez użytkownika nazwę zwracanego przez tę metodę jest pełna nazwa serwera. Dla serwerów z uruchamiany automatycznie nazwa to, że na komputerze serwera jest uruchomiona na.
+ W przypadku serwerów uruchamianych przez użytkownika nazwa zwrócona tą metodą jest pełną nazwą serwera. W przypadku serwerów uruchamianych automatycznie nazwa to komputer, na który jest uruchomiony serwer.
 
- Dla nazwy zorientowane na komputerze, należy wywołać [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) metody.
+ Aby uzyskać nazwę zorientowaną na maszynę, wywołaj metodę [GetServerName.](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

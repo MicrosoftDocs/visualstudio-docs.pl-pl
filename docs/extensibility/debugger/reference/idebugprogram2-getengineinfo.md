@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetEngineInfo | Dokumentacja firmy Microsoft
+title: IDebugProgram2::GetEngineInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetEngineInfo
 ms.assetid: 3a4f2dc0-e082-4d8d-aeaf-463ab09d279b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6953200647278cf603491913e550722403823d45
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313823"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722832"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-Pobiera nazwę i identyfikator GUID aparat debugowania (DE), program został uruchomiony.
+Pobiera nazwę i identyfikator GUID aparatu debugowania (DE) z uruchomionym tym programem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int GetEngineInfo( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrEngine`\
-[out] Zwraca nazwę DE program został uruchomiony.
+[na zewnątrz] Zwraca nazwę de uruchomionego tego programu.
 
 `pguidEngine`\
-[out] Zwraca identyfikator GUID DE program został uruchomiony.
+[na zewnątrz] Zwraca identyfikator GUID de z uruchomionym tym programem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- DE każdy definiuje swój własny identyfikator GUID do identyfikacji.
+ Każdy DE definiuje swój własny identyfikator GUID do identyfikacji.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

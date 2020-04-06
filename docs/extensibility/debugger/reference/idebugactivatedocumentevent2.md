@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2 | Microsoft Docs
+title: IDebugActivateDocumentEvent2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4f473c7fd13e51de608684fc44466b7bdeac2b1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317968"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736617"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 Aparat debugowania (DE) używa tego interfejsu, aby zażądać dokumentu do załadowania.
@@ -29,30 +29,30 @@ IDebugActivateDocumentEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- DE implementuje ten interfejs, gdy potrzebny do otwarcia pliku źródłowego. Ten interfejs jest implementowany tylko przez silniki debugowania, które pracować, lub są częścią interpretery skryptu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfejs musi zostać wdrożone na tym samym obiekcie danego interfejsu (SDM używa [QueryInterface](/cpp/atl/queryinterface) dostęp do `IDebugEvent2` interfejsu).
+ De implementuje ten interfejs, gdy potrzebuje pliku źródłowego do otwarcia. Ten interfejs jest implementowany tylko przez aparaty debugowania, które współpracują z interpreterami skryptów lub są ich częścią. Interfejs [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musi być zaimplementowany na tym samym obiekcie co ten `IDebugEvent2` interfejs (SDM używa [QueryInterface,](/cpp/atl/queryinterface) aby uzyskać dostęp do interfejsu).
 
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania
- DE tworzy i wysyła tego obiektu zdarzenie, kiedy zachodzi potrzeba otwarty plik źródłowy. Zdarzenia są wysyłane przy użyciu [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkcji wywołania zwrotnego dostarczonych przez model SDM, gdy jest on dołączony do debugowanego programu.
+ DE tworzy i wysyła ten obiekt zdarzenia, gdy musi mieć otwarty plik źródłowy. Zdarzenie jest wysyłane przy użyciu funkcji wywołania zwrotnego [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) dostarczonej przez SDM po podłączeniu do programu, który jest debugowany.
 
-## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności
- W poniższej tabeli przedstawiono metody `IDebugActivateDocumentEvent2`.
+## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable
+ W poniższej tabeli `IDebugActivateDocumentEvent2`przedstawiono metody .
 
 |Metody|Opis|
 |-------------|-----------------|
-|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Pobiera dokument, aby aktywować.|
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Pobiera kontekst dokumentu, który opisuje sytuację, w tym dokumencie.|
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Pobiera dokument do aktywacji.|
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Pobiera kontekst dokumentu, który opisuje położenie w dokumencie.|
 
 ## <a name="remarks"></a>Uwagi
- Typowy scenariusz, w którym ten interfejs jest wykorzystywany jest, jeśli wystąpi błąd analizy w kodzie skryptu na stronie HTML, skrypt DE wysyła ten interfejs SDM wyświetlany dokument z błąd analizy.
+ Typowy scenariusz, w którym ten interfejs jest używany jest, jeśli błąd analizy występuje w kodzie skryptu na stronie HTML, skrypt DE wysyła ten interfejs do SDM, tak aby dokument z błędem analizy mogą być wyświetlane.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

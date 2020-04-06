@@ -1,28 +1,28 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Microsoft Docs
+title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 - GetSymUnmanagedReader
 ms.assetid: 8f1c1627-217f-4405-8141-7a2eb80310a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0ebb8d92e552ef9052ad4878802ded05f5bb62dc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b17479868b3f394c4e55aa9d04d92fd87e59aa3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336746"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733751"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
-Pobiera czytnika symboli, który będzie używany przez kod niezarządzany.
+Pobiera czytnik symboli, który ma być używany przez kod niezarządzany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int GetSymUnmanagedReader(
 
 ## <a name="parameters"></a>Parametry
 `ulAppDomainID`\
-[in] Identyfikator domeny aplikacji.
+[w] Identyfikator domeny aplikacji.
 
 `guidModule`\
-[in] Unikatowy identyfikator modułu.
+[w] Unikatowy identyfikator modułu.
 
 `ppSymUnmanagedReader`\
-[out] Zwraca obiekt, który reprezentuje czytnika symboli.
+[na zewnątrz] Zwraca obiekt reprezentujący czytnik symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla **obiektu CDebugSymbolProvider,** który udostępnia interfejs [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymUnmanagedReader(
@@ -81,5 +81,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

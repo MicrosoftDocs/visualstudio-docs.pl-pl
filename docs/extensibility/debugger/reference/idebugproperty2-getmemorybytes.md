@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryBytes | Dokumentacja firmy Microsoft
+title: IDebugProperty2::GetMemoryBytes | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetMemoryBytes
 ms.assetid: b32042ed-7a06-4b4a-99ef-fe03b0aa61cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6d6c689f704c91e36762db7405e3e28ee6829bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7d13fa3821a6d7bf861cd160a5588d0788b92243
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343101"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721477"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
-Pobiera bajtów pamięci, wchodzących w skład wartości właściwości.
+Pobiera bajty pamięci, które tworzą wartość właściwości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetMemoryBytes ( 
 
 ## <a name="parameters"></a>Parametry
 `ppMemoryBytes`\
-[out] Zwraca [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiekt, który może służyć do pobierania pamięci, która zawiera wartość właściwości.
+[na zewnątrz] Zwraca [obiekt IDebugMemoryBytes2,](../../../extensibility/debugger/reference/idebugmemorybytes2.md) który może służyć do pobierania pamięci zawierającej wartość właściwości.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETMEMORYBYTES_NO_MEMORY_BYTES` przypadku bajty pamięci, nie można pobrać.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca, `S_GETMEMORYBYTES_NO_MEMORY_BYTES` jeśli nie ma bajtów pamięci do pobrania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

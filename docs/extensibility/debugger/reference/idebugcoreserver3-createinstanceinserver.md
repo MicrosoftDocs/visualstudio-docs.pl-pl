@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Dokumentacja firmy Microsoft
+title: IDebugCoreServer3::CreateInstanceInServer | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::CreateInstanceInServer
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e74ea66f5b8ecd04acfbc2617f91bcaf0f7ecbd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332411"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80733016"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Tworzy wystąpienie aparatu debugowania na serwerze.
@@ -49,23 +49,23 @@ int CreateInstanceInServer(
 
 ## <a name="parameters"></a>Parametry
 `szDll`\
-[in] Ścieżka do biblioteki dll, która implementuje CLSID określone w `clsidObject` parametru. Jeśli jest to `NULL`, następnie modelu COM `CoCreateInstance` funkcja jest wywoływana.
+[w] Ścieżka do biblioteki dll, która implementuje `clsidObject` IDENTYFIKATOR CLSID określony w parametrze. Jeśli tak `NULL`jest , `CoCreateInstance` funkcja COM jest wywoływana.
 
 `wLangId`\
-[in] Ustawienia regionalne aparatu debugowania. Może to być 0, jeśli [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) nie powinna być wywoływana metoda.
+[w] Ustawienia regionalne aparatu debugowania. Może to być 0, jeśli [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) metoda nie powinna być wywoływana.
 
 `clsidObject`\
-[in] Identyfikator CLSID aparat debugowania do utworzenia.
+[w] CLSID aparatu debugowania do utworzenia.
 
 `riid`\
-[in] Identyfikator interfejsu określonego interfejsu, aby pobrać z obiektu klasy.
+[w] Identyfikator interfejsu określonego interfejsu do pobrania z obiektu klasy.
 
 `ppvObject`\
-[out] `IUnknown` interfejsu z wystąpieniami obiektu. Rzutowanie lub kierować się ten obiekt do żądanego interfejsu.
+[na zewnątrz] `IUnknown` interfejsu z wystąpienia obiektu. Rzutuj lub marshal ten obiekt do żądanego interfejsu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)
