@@ -1,24 +1,24 @@
 ---
-title: IDebugSymbolProviderDirect | Dokumentacja firmy Microsoft
+title: IDebugSymbolProviderDirect | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ad8bc95e5fe8fa49088d8c1006bc69243dd4977
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd1201007b27d3c7c51b5b0d862b36ba0549429b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320375"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718905"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
-Reprezentuje dostawcę symbol, który ma bezpośredni dostęp do metadanych i podstawowych interfejsów symboli.
+Reprezentuje dostawcę symboli, który ma bezpośredni dostęp do metadanych i interfejsów symboli podstawowych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,23 +27,23 @@ IDebugSymbolProviderDirect: IUnknown
 ```
 
 ## <a name="methods"></a>Metody
- Ten interfejs implementuje następujących metod:
+ Ten interfejs implementuje następujące metody:
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Pobiera identyfikator domeny aplikacji, mając adres debugowania.|
+|[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|Pobiera identyfikator domeny aplikacji podany adres debugowania.|
 |[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|Pobiera informacje o modułach w grupie symboli.|
-|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Pobiera informacje o grupie symbol dostawca symboli jest elementem członkowskim.|
-|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Pobiera informacje o Importowanie metadanych.|
-|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Pobiera informacje o metodzie pod adresem określonym debugowania.|
-|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Pobiera czytnik symbolu dla niezarządzanego kodu.|
+|[GetCurrentModulesState](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesstate.md)|Pobiera informacje o grupie symboli, której członkiem jest dostawca symboli.|
+|[GetMetaDataImport](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmetadataimport.md)|Pobiera informacje o imporcie metadanych.|
+|[GetMethodFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getmethodfromaddress.md)|Pobiera informacje o metodzie pod określonym adresem debugowania.|
+|[GetSymUnmanagedReader](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getsymunmanagedreader.md)|Pobiera czytnik symboli dla kodu niezarządzanego.|
 
 ## <a name="remarks"></a>Uwagi
- Ten interfejs można używać zamiast większość inne interfejsy dostawcy symboli. Zapewnia bezpośredni dostęp do metadanych i `CorSym` interfejsów.
+ Ten interfejs może być używany zamiast większości innych interfejsów dostawcy symboli. Zapewnia bezpośredni dostęp do metadanych i `CorSym` interfejsów.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

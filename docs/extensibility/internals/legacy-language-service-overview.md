@@ -1,29 +1,29 @@
 ---
-title: Omówienie starszej wersji usługi językowej | Microsoft Docs
+title: Przegląd usługi języka starszego | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726862"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707357"
 ---
 # <a name="legacy-language-service-overview"></a>Omówienie starszej wersji usługi językowej
-Usługa językowa zapewnia obsługę edytora, która umożliwia implementowanie niektórych funkcji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Klasy usługi języka Managed Package Framework (MPF) zapewniają pełną obsługę często używanych funkcji i częściową obsługę innych funkcji.
+Usługa języka zapewnia obsługę edytora, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] która umożliwia implementowanie niektórych funkcji. Klasy usługi języka managed package framework (MPF) zapewniają pełną obsługę często używanych funkcji i częściową obsługę innych funkcji.
 
-## <a name="fully-supported-features-in-the-mpf"></a>W pełni obsługiwane funkcje w MPF
- Klasy usługi językowej MPF obsługują następujące funkcje:
+## <a name="fully-supported-features-in-the-mpf"></a>W pełni obsługiwane funkcje w mpf
+ Klasy usługi języka MPF obsługują następujące funkcje:
 
-- podświetlanie składni
+- Wyróżnianie składni
 
 - Tworzenie konspektu
 
@@ -37,25 +37,25 @@ Usługa językowa zapewnia obsługę edytora, która umożliwia implementowanie 
 
 - Informacje o parametrach IntelliSense
 
-- Szybkie informacje funkcji IntelliSense
+- Szybkie informacje intellisense
 
-- Uzupełnienie elementu członkowskiego IntelliSense
+- Ukończenie członkostwa w uszczynakłam IntelliSense
 
-- Uzupełnianie wyrazów IntelliSense
+- Zakończenie słowa IntelliSense
 
-## <a name="partially-supported-features-in-the-mpf"></a>Częściowo obsługiwane funkcje w MPF
- MPF zapewnia tylko częściową pomoc techniczną dla następujących funkcji. Oznacza to, że należy zaimplementować metody, które są wywoływane przez MPF.
+## <a name="partially-supported-features-in-the-mpf"></a>Częściowo obsługiwane funkcje w mpf
+ MPF zapewnia tylko częściową obsługę następujących funkcji. Oznacza to, że należy zaimplementować metody, które są wywoływane przez MPF.
 
-- Ponowne formatowanie kodu. Należy podać kod, który implementuje ponowne formatowanie.
+- Kod do formatowania. Podać kod, który implementuje formatowanie.
 
-- Sprawdzanie poprawności punktów przerwania przez zidentyfikowanie prawidłowych zakresów kodu. Należy podać kod, który identyfikuje zakresy kodu.
+- Sprawdzanie poprawności punktów przerwania przez identyfikowanie prawidłowych zakresów kodu. Podać kod, który identyfikuje zakresy kodu.
 
-- Obsługa okna debugera **autoodtwarzania** do wyświetlania zmiennych. Należy podać kod określający, co ma być wyświetlane w oknie.
+- Obsługa okna **Autos** debugera do wyświetlania zmiennych. Podać kod, który określa, co ma być wyświetlane w oknie.
 
-- Obsługa **paska nawigacyjnego** w celu szybkiej nawigacji między typami i elementami członkowskimi. Zaimplementowanie i zwrócenie klasy pomocnika, która wypełnia listy w polach kombi na **pasku nawigacyjnym** .
+- Obsługa **paska nawigacyjnego** do szybkiej nawigacji między typami i członkami. Implementujesz i zwracasz klasę pomocnika, która wypełnia listy w polach kombi **paska nawigacyjnego.**
 
-## <a name="implementation"></a>Implementacja
- Należy wykonać kilka czynności w celu zaimplementowania samej usługi językowej i funkcji usługi językowej, które mają być obsługiwane w Twoim języku. Te kroki omówiono w następujących tematach:
+## <a name="implementation"></a>Wdrażanie
+ Należy wykonać kilka kroków, aby zaimplementować samą usługę języka i funkcje usługi języka, które mają być obsługiwane dla języka. Te kroki są omówione w następujących tematach:
 
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
@@ -89,6 +89,6 @@ Usługa językowa zapewnia obsługę edytora, która umożliwia implementowanie 
 
 - [Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Rozszerzalność starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-extensibility.md)

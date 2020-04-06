@@ -1,69 +1,69 @@
 ---
-title: Współtworzenie modelu automatyzacji | Dokumentacja firmy Microsoft
+title: Współtworzenie modelu automatyzacji | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e6686c82dcb0272fa9b3b3c4d3b7c73afe4475
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335442"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709267"
 ---
 # <a name="contribute-to-the-automation-model"></a>Współtworzenie modelu automatyzacji
-Program Visual Studio zapewnia zestaw interfejsów automatyzacji do dostosowywania środowiska. Model automatyzacji to model obiektów, który umożliwia użytkownikom końcowym Tworzenie dodatków programu Visual Studio i rozszerzenia.
+Visual Studio udostępnia zestaw interfejsów automatyzacji do dostosowywania środowiska. Model automatyzacji jest modelem obiektowym, który umożliwia użytkownikom końcowym tworzenie dodatków i rozszerzeń programu Visual Studio.
 
- Ponadto jest odpowiednie, jako deweloperów pakietu VSPackage, Współtworzenie modelu automatyzacji; Dzięki temu możesz użytkownikom końcowym z Twojego pakietu VSPackage do tworzenia dodatków i zwykle zapewniają spójny model interfejs użytkownika, korzystając z pakietu VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Ponadto jest odpowiedni dla Ciebie, jako deweloper VSPackage, aby przyczynić się do modelu automatyzacji; w ten sposób można włączyć użytkowników końcowych vsPackage do tworzenia dodatków i ogólnie zapewniają spójne środowisko [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]modelu użytkownika, gdy używają vsPackage w .
 
- Aby środowisko użytkownika końcowego spójne, możesz wykonać zestaw wytycznych w podczas projektowania usługi pakietu VSPackage, dzięki czemu model automatyzacji do Twojego pakietu VSPackage następuje pomysły w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Aby środowisko użytkownika końcowego było spójne, można postępować zgodnie z zestawem wytycznych podczas projektowania vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]tak, aby model automatyzacji dla vspackage postępował zgodnie z pomysłami w programie .
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Omówienie modelu automatyzacji](../../extensibility/internals/automation-model-overview.md)
 
- Definiuje model automatyzacji jako powiązane grupy obiektów, które kontrolują główne aspekty wspólnego środowiska. Ten zbiór obiektów jest przedstawiony na diagramie modelu automatyzacji.
+ Definiuje model automatyzacji jako powiązane grupy obiektów, które kontrolują główne aspekty wspólnego środowiska. Ten zestaw obiektów jest na zdjęciu na diagramie modelu automatyzacji.
 
-- [Zapewnianie automatyzacji pakietów VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md)
+- [Zapewnij automatyzację vspackages](../../extensibility/internals/providing-automation-for-vspackages.md)
 
- W tym artykule omówiono dwa podstawowe sposoby zapewnianie automatyzacji dla Twojego pakietu VSPackage.
+ W tym artykule omówiono dwa główne sposoby zapewnienia automatyzacji dla vspackage.
 
 - [Udostępnianie obiektów projektu](../../extensibility/internals/exposing-project-objects.md)
 
- Instrukcje krok po kroku do tworzenia obiektów specyficznych dla pakietu VSPackage.
+ Zawiera instrukcje krok po kroku dotyczące tworzenia obiektów specyficznych dla vspackage.
 
 - [Modelowanie projektu](../../extensibility/internals/project-modeling.md)
 
- Wyjaśnia obiektów standardowy projekt, które są wymagane do utworzenia automatyzacji nowego typu projektu i przedstawia ścieżką, która następuje po automatyzacji projektu. Ten temat zawiera także listy deklaracji i implementację klasy.
+ W tym artykule wyjaśniono standardowe obiekty projektu, które są wymagane do tworzenia automatyzacji dla nowego typu projektu i ilustruje ścieżkę, którą podąża automatyzacja projektu. Ten temat zawiera również listę deklaracji i implementacji dla klas.
 
-- [Udostępnianie zdarzeń](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)
+- [Ujawnianie zdarzeń](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)
 
- Instrukcje krok po kroku dotyczące tworzenia zdarzeń związanych z modelu automatyzacji.
+ Zawiera instrukcje krok po kroku dotyczące tworzenia zdarzeń dla modelu automatyzacji.
 
-- [Automatyzacja obsługi dla stron opcji](../../extensibility/internals/automation-support-for-options-pages.md)
+- [Obsługa automatyzacji stron opcji](../../extensibility/internals/automation-support-for-options-pages.md)
 
- W tym artykule opisano sposób zwracania obiekt automatyzacji dla niestandardowej obsługi właściwości pakietu VSPackage **opcje** okno dialogowe na **narzędzie** menu, rozszerzając `DTE.Properties` obiektu.
+ W tym artykule opisano sposób zwracania obiektu automatyzacji do **Options** obsługi właściwości okna dialogowego Opcje `DTE.Properties` niestandardowe VSPackage w menu **Narzędzia** przez rozszerzenie obiektu.
 
-- [Zapewnianie automatyzacji kodu](../../extensibility/internals/providing-automation-for-code.md)
+- [Zapewnij automatyzację kodu](../../extensibility/internals/providing-automation-for-code.md)
 
- Wyjaśniono, że tworzenie automatyzacji modelu kodu nie jest wymagane. Jednak łącze znajduje się w tym temacie, zapewniająca wnikliwe informacje do modele kodu.
+ W tym artykule wyjaśniono, że tworzenie modelu automatyzacji dla kodu nie jest wymagane. Jednak łącze znajduje się w tym temacie, który zawiera wnikliwe informacje do modeli kodu.
 
-- [Instrukcje: Zapewnianie automatyzacji dla Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)
+- [Jak: Zapewnienie automatyzacji dla systemu Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)
 
- Wyjaśniono, że zapewnianie automatyzacji dobrym pomysłem jest zawsze wtedy, gdy chcesz udostępnić obiektów automatyzacji w oknie, a środowisko nie zawiera już obiekt automatyzacji gotowych do użycia. W tym artykule omówiono automatyzacji dla okien narzędzi i oknami dokumentu.
+ W tym artykule wyjaśniono, że zapewnienie automatyzacji jest dobrym pomysłem, gdy chcesz udostępnić obiekty automatyzacji w oknie, a środowisko nie zapewnia już gotowego obiektu automatyzacji. W tym artykule omówiono automatyzację okien narzędzi i okien dokumentów.
 
-- [Użyj modelu automatyzacji](../../extensibility/internals/using-the-automation-model.md)
+- [Korzystanie z modelu automatyzacji](../../extensibility/internals/using-the-automation-model.md)
 
- Zawiera dwa przykłady kodu, które pokazują, jak konsumenta automatyzacji uzyskuje początkowego projektu obiektów automatyzacji.
+ Zawiera dwa przykłady kodu, które pokazują, jak konsument automatyzacji uzyskuje początkowe obiekty automatyzacji projektu.
 
-- [Automatyzacja obiektów konfiguracji i SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)
+- [Automatyzacja dla obiektów konfiguracji i selecteditem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)
 
- Zawiera informacje dotyczące automatyzacji konfiguracji i SelectedItems obiektów.
+ Zawiera informacje o automatyzacji dla konfiguracji i SelectedItems obiektów.
 
 ## <a name="reference"></a>Tematy pomocy
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Zawiera przykładowy kod, który pokazuje, jak pakietu VSPackage uczestniczy w DTE modelu obiektowego automatyzacji. Wyświetla listę parametrów, wartości zwracane i wybrane uwagi.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>Zawiera przykładowy kod, który pokazuje, jak VSPackage uczestniczy w modelu obiektów automatyzacji DTE. Wyświetla listę parametrów, zwracanych wartości i wybranych uwag.

@@ -1,5 +1,5 @@
 ---
-title: Wyraz uzupełniania w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Ukończenie programu Word w starszej usłudze językowej | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,46 +7,46 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26495f909d815b32ff8a75c2529ba30eabf3b5c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309713"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703175"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
-Uzupełnianie wyrazów wypełnia brakujących znaków na częściowo wpisane programu word. Jeśli istnieje tylko jedno możliwe ukończenie, wyraz zostało zakończone, po wprowadzeniu znaku zakończenia. Jeśli wyrazów częściowych pasuje do więcej niż jedną z możliwości, zostanie wyświetlona lista możliwych ukończenia. Znak zakończenia może być dowolny znak, który nie jest używany dla identyfikatorów.
+Uzupełnianie wyrazu wypełnia brakujące znaki w częściowo wpisanym słowie. Jeśli istnieje tylko jedno możliwe zakończenie, słowo jest wypełniane po wprowadzeniu znaku zakończenia. Jeśli słowo częściowe pasuje do więcej niż jednej możliwości, zostanie wyświetlona lista możliwych uzupełnień. Znak uzupełniania może być dowolnym znakiem, który nie jest używany dla identyfikatorów.
 
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).
+ Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [Rozszerzanie edytora i usług językowych](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
 
-## <a name="implementation-steps"></a>Kroki implementacji
+## <a name="implementation-steps"></a>Etapy wdrażania
 
-1. Gdy użytkownik wybierze **Dokończ wyraz** z **IntelliSense** menu <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> polecenia są wysyłane do usługi języka.
+1. Gdy użytkownik wybierze **opcję Zakończ program Word** z menu **IntelliSense,** <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> polecenie jest wysyłane do usługi językowej.
 
-2. <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasy przechwytuje polecenia i wywołuje <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>.
+2. Klasa <xref:Microsoft.VisualStudio.Package.ViewFilter> łapie polecenie i <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> wywołuje metodę z powodu <xref:Microsoft.VisualStudio.Package.ParseReason>analizy .
 
-3. <xref:Microsoft.VisualStudio.Package.Source> Klasę i wywołania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę, aby uzyskać listę uzupełnienia możliwe programu word, a następnie wyświetla listę słów w etykietce narzędzia, za pomocą <xref:Microsoft.VisualStudio.Package.CompletionSet> klasy.
+3. Klasa <xref:Microsoft.VisualStudio.Package.Source> następnie wywołuje <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę, aby uzyskać listę możliwych uzupełnień wyrazów, a następnie <xref:Microsoft.VisualStudio.Package.CompletionSet> wyświetla wyrazy na liście porad narzędzia przy użyciu klasy.
 
-    Jeśli istnieje tylko jedno słowo dopasowania, <xref:Microsoft.VisualStudio.Package.Source> klasy kończy wyraz.
+    Jeśli istnieje tylko jeden pasujący wyraz, <xref:Microsoft.VisualStudio.Package.Source> klasa uzupełnia wyraz.
 
-   Alternatywnie Jeśli skaner zwraca wartość wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> po wpisaniu pierwszy znak identyfikatora <xref:Microsoft.VisualStudio.Package.Source> klasy wykryje to i wywołuje <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. W takim przypadku analizator musi wykryć obecność znaku wyboru elementu członkowskiego i zawierają listę elementów członkowskich.
+   Alternatywnie, jeśli skaner zwraca <xref:Microsoft.VisualStudio.Package.TokenTriggers> wartość wyzwalacza po wpisaniu pierwszego znaku <xref:Microsoft.VisualStudio.Package.Source> identyfikatora, klasa <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> wykrywa to i wywołuje <xref:Microsoft.VisualStudio.Package.ParseReason>metodę z powodu analizy . W takim przypadku analizator musi wykryć obecność znaku wyboru elementu członkowskiego i podać listę elementów członkowskich.
 
-## <a name="enabling-support-for-the-complete-word"></a>Włączanie obsługi Dokończ wyraz
- Aby włączyć obsługę zestawu ukończenia programu word `CodeSense` o nazwie parametr przekazany do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut użytkownika skojarzonego z pakietem języka. To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.
+## <a name="enabling-support-for-the-complete-word"></a>Włączanie obsługi kompletnego programu Word
+ Aby włączyć obsługę zakończenia `CodeSense` słowa, ustawiono <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> nazwany parametr przekazany do atrybutu użytkownika skojarzonego z pakietem językowym. Spowoduje to <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences> właściwości na klasę.
 
- Twoje analizator musi zwracać listy deklaracji w odpowiedzi na wartość przyczyny analizy <xref:Microsoft.VisualStudio.Package.ParseReason>, do ukończenia programu word do działania.
+ Analizator musi zwrócić listę deklaracji w odpowiedzi na wartość <xref:Microsoft.VisualStudio.Package.ParseReason>przyczyny analizy , aby zakończyć działanie wyrazów.
 
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementowanie Dokończ wyraz w metodzie ParseSource
- Do ukończenia programu word <xref:Microsoft.VisualStudio.Package.Source> klasy wywołania <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> metody <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy, aby uzyskać listę word możliwych dopasowań. Listy należy zaimplementować w klasie, która jest pochodną <xref:Microsoft.VisualStudio.Package.Declarations> klasy. Zobacz <xref:Microsoft.VisualStudio.Package.Declarations> klasy, aby uzyskać szczegółowe informacje na temat metody, należy zaimplementować.
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implementowanie pełnego programu Word w metodzie ParseSource
+ W przypadku uzupełniania wyrazów <xref:Microsoft.VisualStudio.Package.Source> klasa wywołuje <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> metodę w klasie, <xref:Microsoft.VisualStudio.Package.AuthoringScope> aby uzyskać listę możliwych dopasowań wyrazów. Należy zaimplementować listę w klasie, <xref:Microsoft.VisualStudio.Package.Declarations> która pochodzi od klasy. Zobacz <xref:Microsoft.VisualStudio.Package.Declarations> klasy szczegółowe informacje na temat metod, które należy zaimplementować.
 
- Jeśli lista zawiera tylko jeden wyraz, a następnie <xref:Microsoft.VisualStudio.Package.Source> klasy automatycznie wstawi słowo zamiast wyrazów częściowych. Jeśli lista zawiera więcej niż jeden wyraz <xref:Microsoft.VisualStudio.Package.Source> klasa przedstawia listę Porada narzędzia, z którego użytkownik może wybrać właściwy wybór.
+ Jeśli lista zawiera tylko jedno słowo, <xref:Microsoft.VisualStudio.Package.Source> klasa automatycznie wstawia to słowo zamiast wyrazu częściowego. Jeśli lista zawiera więcej niż <xref:Microsoft.VisualStudio.Package.Source> jedno słowo, klasa przedstawia listę porad narzędzi, z których użytkownik może wybrać odpowiedni wybór.
 
- Także zapoznać się z przykładem <xref:Microsoft.VisualStudio.Package.Declarations> Implementacja klasy w [uzupełnianie składowych w starszej wersji usługi językowej](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
+ Również spojrzeć na <xref:Microsoft.VisualStudio.Package.Declarations> przykład implementacji klasy w [ukończeniu elementu członkowskiego w usłudze języka starszego](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).

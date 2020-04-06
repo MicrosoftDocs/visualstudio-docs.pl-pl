@@ -1,5 +1,5 @@
 ---
-title: VSTemplate — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element VSTemplate (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - VSTemplate element [Visual Studio project templates]
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdcbde9ab8e49d439ab909b4cd5563d6b8ec3afa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322866"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697865"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate — element (szablony Visual Studio)
-Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub starter kit.
+# <a name="vstemplate-element-visual-studio-templates"></a>Element VSTemplate (szablony programu Visual Studio)
+Zawiera wszystkie metadane dotyczące szablonu projektu, szablonu elementu lub zestawu startowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,26 +40,26 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub st
 
 | Atrybut | Opis |
 |-----------| - |
-| `Type` | Określa szablon jako szablon projektu lub szablon elementu. Ten atrybut może mieć wartość `Project` lub `Item`. |
-| `Version` | Określa numer wersji dla szablonu. Szablony w [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mają `Version` wartość atrybutu `3.0.0`. |
+| `Type` | Identyfikuje szablon jako szablon projektu lub szablon elementu. Ten atrybut może mieć `Project` wartość `Item`lub . |
+| `Version` | Określa numer wersji szablonu. Szablony [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] i [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mają `Version` wartość atrybutu `3.0.0`. |
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa dane, która klasyfikuje szablon i definiuje sposób wyświetlania w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa dane, które kategoryzują szablon i definiuje sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Określa zawartość szablonu.|
-|[Wizardextension —](../extensibility/wizardextension-element-visual-studio-templates.md)|Element opcjonalny.|
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Element opcjonalny.|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Element opcjonalny.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
  Brak.
 
 ## <a name="remarks"></a>Uwagi
- `VSTemplate` Element jest elementem głównym *.vstemplate* plików.
+ Element `VSTemplate` jest głównym elementem plików *.vstemplate.*
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -85,6 +85,6 @@ Zawiera wszystkie metadane dotyczące szablonu projektu, szablon elementu lub st
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

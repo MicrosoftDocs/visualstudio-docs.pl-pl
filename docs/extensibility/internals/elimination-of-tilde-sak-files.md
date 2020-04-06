@@ -1,5 +1,5 @@
 ---
-title: Eliminacja ~ SAK plików | Dokumentacja firmy Microsoft
+title: Eliminacja plików ~SAK | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,29 +7,29 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0294198bb1560f8df6f17170013f88d4fe11e5cf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327541"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708502"
 ---
-# <a name="elimination-of-sak-files"></a>Eliminacja ~ SAK plików
-W 1.2 interfejsu API wtyczki kontroli źródła *~ SAK* pliki zostały zastąpione przez flagi funkcji i nowych funkcji, które wykryć, czy źródło kontrolować obsługuje wtyczki *MSSCCPRJ* plików i współdzielonymi wyewidencjonowaniami.
+# <a name="elimination-of-sak-files"></a>Eliminacja plików ~SAK
+W interfejsie API 1.2 wtyczki source control 1.2 pliki *~SAK* zostały zastąpione flagami możliwości i nowymi funkcjami, które wykrywają, czy wtyczka kontroli źródła obsługuje plik *MSSCCPRJ* i udostępnione wyewidencjonowania.
 
-## <a name="sak-files"></a>~ Plików SAK
-Visual Studio .NET 2003 utworzone pliki tymczasowe z prefiksem *~ SAK*. Te pliki są używane do określenia, czy obsługuje wtyczki kontroli źródła:
+## <a name="sak-files"></a>Pliki ~SAK
+Program Visual Studio .NET 2003 utworzył pliki tymczasowe poprzedzone *programem ~SAK*. Pliki te służą do określenia, czy obsługuje wtyczkę kontroli źródła:
 
-- *MSSCCPRJ.SCC* pliku.
+- Plik *MSSCCPRJ.SCC.*
 
-- Wiele operacji wyewidencjonowania (współużytkowane).
+- Wiele (udostępnionych) transakcji.
 
-Wtyczek, które obsługują zaawansowane funkcje udostępniane w 1.2 interfejsu API wtyczki kontroli źródła IDE może wykryć tych funkcji bez tworzenia plików tymczasowych za pomocą nowych możliwości, flag i funkcje, szczegółowo opisane w poniższych sekcjach.
+W przypadku wtyczek obsługujących zaawansowane funkcje dostępne w interfejsie API 1.2 wtyczki kontroli źródła IDE może wykryć te możliwości bez tworzenia plików tymczasowych za pomocą nowych możliwości, flag i funkcji, wyszczególnionych w poniższych sekcjach.
 
 ## <a name="new-capability-flags"></a>Nowe flagi możliwości
  `SCC_CAP_SCCFILE`
@@ -41,14 +41,14 @@ Wtyczek, które obsługują zaawansowane funkcje udostępniane w 1.2 interfejsu 
 
 - [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)
 
- Jeśli wtyczka do kontroli źródła, obsługuje wielu wyewidencjonowania (współużytkowane), a następnie deklaruje `SCC_CAP_MULTICHECKOUT` możliwości i implementuje `SccIsMultiCheckOutEnabled` funkcji. Ta funkcja jest wywoływana zawsze wtedy, gdy operacja wyewidencjonowania odbywa się na żaden z projektów pod kontrolą źródła.
+ Jeśli wtyczka kontroli źródła obsługuje wiele (udostępnionych) wyewidencjonowania, deklaruje `SCC_CAP_MULTICHECKOUT` tę funkcję i implementuje `SccIsMultiCheckOutEnabled` tę funkcję. Ta funkcja jest wywoływana za każdym razem, gdy operacja wyewidencjonowania występuje w dowolnym z projektów kontrolowanych przez źródło.
 
- Jeśli wtyczka do kontroli źródła obsługuje stworzeniem i używaniem *MSSCCPRJ.SCC* pliku, a następnie deklaruje `SCC_CAP_SCCFILE` możliwości i implementuje [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Ta funkcja jest wywoływana z listą plików. Funkcja zwraca `TRUE' or 'FALSE` dla każdego pliku wskazać, czy należy używać programu Visual Studio *MSSCCPRJ.SCC* go w pliku. Jeśli wtyczka do kontroli źródła nie zdecyduje się na obsługuje te nowe możliwości i funkcje, on używać następujący klucz rejestru, aby wyłączyć tworzenie tych plików:
+ Jeśli wtyczka kontroli źródła obsługuje tworzenie i używanie pliku *MSSCCPRJ.SCC,* `SCC_CAP_SCCFILE` deklaruje tę funkcję i implementuje [plik SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md). Ta funkcja jest wywoływana z listą plików. Funkcja zwraca `TRUE' or 'FALSE` dla każdego pliku, aby wskazać, czy visual studio należy użyć pliku *MSSCCPRJ.SCC* dla niego. Jeśli wtyczka kontroli źródła nie obsługuje tych nowych funkcji i funkcji, może użyć następującego klucza rejestru, aby wyłączyć tworzenie tych plików:
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
+ **[HKEY_CURRENT_USER\Oprogramowanie\Microsoft\VisualStudio\8.0\Kontrola źródła] DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
-> Jeśli ten klucz rejestru jest ustawiony na *DWORD: 00000000*odpowiada kluczowi trwa nieistniejącej i programu Visual Studio nadal podejmuje próbę utworzenia plików tymczasowych. Jednakże jeśli klucz rejestru jest ustawiony na *DWORD: 00000001*, Visual Studio nie jest podejmowana próba tworzenia tymczasowych plików. Zamiast tego przyjęto założenie, że wtyczka do kontroli źródła nie obsługuje *MSSCCPRJ.SCC* pliku, a nie obsługuje współdzielonymi wyewidencjonowaniami.
+> Jeśli ten klucz rejestru jest ustawiony na *dword:00000000*, jest odpowiednikiem klucza, który nie istnieje, a program Visual Studio nadal próbuje utworzyć pliki tymczasowe. Jeśli jednak klucz rejestru jest ustawiony na *dword:00000001,* program Visual Studio nie próbuje utworzyć plików tymczasowych. Zamiast tego zakłada, że wtyczka kontroli źródła nie obsługuje pliku *MSSCCPRJ.SCC* i nie obsługuje wyewidencjonowania udostępnionego.
 
-## <a name="see-also"></a>Zobacz także
-- [What's new in źródła kontrolki wtyczki API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Zobacz też
+- [Co nowego w interfejsie API wtyczki kontroli źródła w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

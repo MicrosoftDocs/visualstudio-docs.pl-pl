@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::Clone | Dokumentacja firmy Microsoft
+title: IEnumDebugPropertyInfo2::Klon | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Clone
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a270f0549b24b62a41dfd08d6b3ae70fac87253f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4c98917de4bcdc7bf5ff184591b42133626a4f16
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316907"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715559"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
-Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
+Zwraca kopię bieżącego wyliczenia jako osobny obiekt.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+[na zewnątrz] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.
+ Kopia wyliczenia ma taki sam stan jak oryginał w czasie, gdy ta metoda jest wywoływana. Jednak stany kopii i oryginału są oddzielne i mogą być zmieniane indywidualnie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

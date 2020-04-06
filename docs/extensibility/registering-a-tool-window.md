@@ -1,25 +1,25 @@
 ---
-title: Rejestrowanie okna narzędzi | Microsoft Docs
+title: Rejestrowanie okna narzędzia | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering managed
 - tool windows, registering
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186266"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701601"
 ---
-# <a name="register-a-tool-window"></a>Rejestrowanie okna narzędzi
-Możesz zarejestrować swoje okna narzędzi przy użyciu <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
+# <a name="register-a-tool-window"></a>Rejestrowanie okna narzędzia
+Możesz zarejestrować okna <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> narzędzi <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>za pomocą i .
 
 ## <a name="example"></a>Przykład
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- W powyższym kodzie <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> rejestruje okna narzędzi `PersistedWindowPane` i `DynamicWindowPane` przy użyciu programu Visual Studio. Utrwalone okno narzędzi jest zadokowane i z kartami **Eksplorator rozwiązań**, a okno dynamiczne ma domyślną pozycję początkową i rozmiar. Okno dynamiczne jest wykonywane przejściowo, co oznacza, że nie jest tworzone podczas uruchamiania. Spowoduje to zapisanie wartości `DontForceCreate` w kluczu `ToolWindows` w rejestrze systemowym. Aby uzyskać więcej informacji, zobacz [Konfiguracja wyświetlania okna narzędzi](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).
+ W powyższym kodzie <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> rejestruje `PersistedWindowPane` `DynamicWindowPane` okna i narzędzia z visual studio. Utrwalone okno narzędzia jest zadokowane i z kartami za pomocą **Eksploratora rozwiązań,** a okno dynamiczne otrzymuje domyślną pozycję początkową i rozmiar. Okno dynamiczne jest przemijające, co oznacza, że nie jest tworzony podczas uruchamiania. Spowoduje to `DontForceCreate` zapisanie `ToolWindows` wartości w kluczu w rejestrze systemowym. Aby uzyskać więcej informacji, zobacz [Konfiguracja wyświetlania okna narzędzia](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

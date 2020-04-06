@@ -1,74 +1,74 @@
 ---
-title: Tworzenie widoku zakończeń, poleceń i ustawień | Dokumentacja firmy Microsoft
+title: Tworzenie ozdabiania widoku, poleceń i ustawień | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 4aab9e0ede95eebe6f8f54cc3f01e7e7d5f98d1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890587"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697644"
 ---
-# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Utwórz widok zakończeń, poleceń i ustawień (prowadnice kolumn)
-Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami i efekty widoku. W tym artykule pokazano, jak rozpocząć pracę z funkcją popularne rozszerzenie prowadnice kolumn. Prowadnice kolumn są wizualnie światła linii w widoku edytora tekstów w celu zarządzania swój kod, aby szerokości kolumn określonych. W szczególności sformatowany kod może być ważne dla przykładów dokumentów, wpisów w blogu lub raporty o błędach.
+# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: Tworzenie ozdabiania widoku, poleceń i ustawień (prowadnice kolumn)
+Edytor tekstu/kodu programu Visual Studio można rozszerzyć za pomocą poleceń i efektów widoku. W tym artykule pokazano, jak rozpocząć korzystanie z popularnej funkcji rozszerzenia, przewodników kolumn. Prowadnice kolumn są wizualnie lekkimi liniami narysowanymi w widoku edytora tekstu, które ułatwiają zarządzanie kodem do określonych szerokości kolumn. W szczególności sformatowany kod może być ważny dla przykładów, które znajdują się w dokumentach, wpisach w blogu lub raportach o błędach.
 
-W tym przewodniku możesz:
-- Create a VSIX project
-- Dodaj zakończeń widoku edytora
-- Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)
-- Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)
-- Umieść poleceń w menu Edycja i menu kontekstowe dokumentu tekstowego
-- Dodano obsługę wywoływania poleceń w oknie polecenia programu Visual Studio
+W tym instruktażu:
+- Tworzenie projektu VSIX
+- Dodawanie ozdabiania widoku edytora
+- Dodaj obsługę zapisywania i uzyskiwania ustawień (gdzie rysować prowadnice kolumn i ich kolor)
+- Dodawanie poleceń (dodawanie/usuwanie prowadnic kolumn, zmienianie ich koloru)
+- Umieszczanie poleceń w menu kontekstowym menu edycji i dokumentu tekstowego
+- Dodawanie obsługi wywoływania poleceń z okna polecenia programu Visual Studio
 
-  Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+  Możesz wypróbować wersję funkcji przewodników kolumn z tym[rozszerzeniem](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)Galerii programu Visual Studio .
 
   > [!NOTE]
-  > W tym przewodniku dużą ilość kodu Wklej kilka plików, generowane przez Szablony rozszerzenia programu Visual Studio. Ale wkrótce w tym przewodniku będzie odnosił się do ukończone rozwiązanie w witrynie GitHub wraz z innymi przykładami rozszerzenia. Kompletny kod jest nieco inne w zawierającym ikony poleceń rzeczywiste zamiast generictemplate ikony.
+  > W tym instruktażu wklejasz dużą ilość kodu do kilku plików generowanych przez szablony rozszerzeń programu Visual Studio. Ale wkrótce ten przewodnik będzie odnosić się do ukończonego rozwiązania w usłudze GitHub z innymi przykładami rozszerzenia. Ukończony kod jest nieco inny, ponieważ ma prawdziwe ikony poleceń zamiast ikon generictemplate.
 
 ## <a name="get-started"></a>Wprowadzenie
-Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="set-up-the-solution"></a>Konfigurowanie rozwiązania
-Najpierw utwórz projekt VSIX, Dodaj zakończeń widoku edytora, a następnie dodaj polecenie (które dodaje VSPackage, być właścicielem polecenie). Podstawowa architektura jest następująca:
-- Masz odbiornik tworzenia widoku tekstu, który tworzy `ColumnGuideAdornment` obiekt widoku. Ten obiekt będzie nasłuchiwać pod kątem zdarzeń o zmienianiu widoku lub zmianę ustawienia, aktualizacji lub ponownego narysowania kolumna zawiera informacje na temat zgodnie z potrzebami.
-- Brak `GuidesSettingsManager` obsługująca odczytu i zapisu z magazynu ustawień programu Visual Studio. Menedżer ustawień są również operacje aktualizowania ustawień, które obsługują polecenia użytkownika (Dodaj kolumnę, usunąć kolumny, zmienić kolor).
-- Dostępny jest pakiet VSIP, które są niezbędne, jeśli masz poleceń użytkownika, ale jest po prostu standardowy kod, który inicjuje obiekt poleceń w implementacji.
-- Brak `ColumnGuideCommands` obiekt, który użytkownik uruchamia polecenia i przechwytuje się programy obsługi poleceń dla polecenia zadeklarowanych w *vsct* pliku.
+Najpierw należy utworzyć projekt VSIX, dodać ozdoby widoku edytora, a następnie dodać polecenie (które dodaje VSPackage do posiadania polecenia). Podstawowa architektura jest następująca:
+- Masz odbiornik tworzenia widoku tekstu, `ColumnGuideAdornment` który tworzy obiekt na widok. Ten obiekt nasłuchuje zdarzeń dotyczących zmiany widoku lub zmiany ustawień, aktualizacji lub ponownego rysowania prowadnic kolumn w razie potrzeby.
+- `GuidesSettingsManager` Istnieje, który obsługuje odczytu i zapisu z magazynu ustawień programu Visual Studio. Menedżer ustawień ma również operacje aktualizacji ustawień, które obsługują polecenia użytkownika (dodaj kolumnę, usuń kolumnę, zmień kolor).
+- Istnieje pakiet VSIP, który jest niezbędny, jeśli masz polecenia użytkownika, ale jest to tylko standardowy kod, który inicjuje obiekt implementacji poleceń.
+- Istnieje `ColumnGuideCommands` obiekt, który uruchamia polecenia użytkownika i łączy programy obsługi poleceń dla poleceń zadeklarowanych w pliku *vsct.*
 
-  **VSIX**. Użyj **pliku &#124; nowy...**  polecenie, aby utworzyć projekt. Wybierz **rozszerzalności** węźle **C#** w okienku nawigacji po lewej stronie i wybierz polecenie **projekt VSIX** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuides** i wybierz polecenie **OK** do tworzenia projektu.
+  **VSIX**. Użyj **polecenia File &#124; New ...** , aby utworzyć projekt. Wybierz węzeł **rozszerzalność** w obszarze **C#** w lewym okienku nawigacji i wybierz pozycję **Projekt VSIX** w prawym okienku. Wprowadź nazwę **ColumnGuides** i wybierz **przycisk OK,** aby utworzyć projekt.
 
-  **Wyświetl zakończeń**. Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań. Wybierz **Dodaj &#124; nowy element...**  polecenie, aby dodać nowy element zakończeń widoku. Wybierz **rozszerzalności &#124; edytora** w okienku nawigacji po lewej stronie i wybierz polecenie **zakończeń okienka ekranu edytora** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideAdornment** jako element nazwę, a następnie wybierz **Dodaj** ją dodać.
+  **Wyświetl ozdoby**. Naciśnij prawy przycisk wskaźnika w węźle projektu w Eksploratorze rozwiązań. Wybierz polecenie **Dodaj &#124; Nowy element ...** , aby dodać nowy element ozdoby widoku. Wybierz **pozycję Edytor &#124; rozszerzalności** w lewym okienku nawigacji i wybierz pozycję Edytor **Adornment** w prawym okienku. Wprowadź nazwę **ColumnGuideAdornment** jako nazwę elementu i wybierz pozycję **Dodaj,** aby ją dodać.
 
-  Widać, że ten szablon elementu dodane dwa pliki do projektu (także odwołania i tak dalej): **ColumnGuideAdornment.cs** i **ColumnGuideAdornmentTextViewCreationListener.cs**. Szablony narysuj prostokąt purpurowy w widoku. W poniższej sekcji, możesz zmienić kilka wierszy w widoku odbiornika tworzenia i Zastąp zawartość **ColumnGuideAdornment.cs**.
+  Możesz zobaczyć ten szablon elementu dodał dwa pliki do projektu (a także odwołania i tak dalej): **ColumnGuideAdornment.cs** i **ColumnGuideAdornmentTextViewCreationListener.cs**. Szablony rysują fioletowy prostokąt w widoku. W poniższej sekcji można zmienić kilka wierszy w odbiorniku tworzenia widoku i zastąpić zawartość **ColumnGuideAdornment.cs**.
 
-  **Polecenia**. W **Eksploratora rozwiązań**, naciśnij przycisk prawo wskaźnika w węźle projektu. Wybierz **Dodaj &#124; nowy element...**  polecenie, aby dodać nowy element zakończeń widoku. Wybierz **rozszerzalności &#124; pakietu VSPackage** w okienku nawigacji po lewej stronie i wybierz polecenie **polecenia niestandardowego** w okienku po prawej stronie. Wprowadź nazwę **ColumnGuideCommands** jako element nazwę, a następnie wybierz **Dodaj**. Oprócz kilka odwołań, dodawanie poleceń i pakiet dodano także **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, i **ColumnGuideCommandsPackage.vsct** . W poniższej sekcji można zastąpić zawartość plików imię i nazwisko, definiować ani implementować poleceń.
+  **Polecenia**. W **Eksploratorze rozwiązań**naciśnij prawy przycisk wskaźnika w węźle projektu. Wybierz polecenie **Dodaj &#124; Nowy element ...** , aby dodać nowy element ozdoby widoku. Wybierz **pozycję Rozszerzalność &#124; programu VSPackage** w lewym okienku nawigacji i wybierz polecenie **Polecenie niestandardowe** w prawym okienku. Wprowadź nazwę **ColumnGuideCommands** jako nazwę elementu i wybierz pozycję **Dodaj**. Oprócz kilku odniesień, dodanie poleceń i pakietu dodano również **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**i **ColumnGuideCommandsPackage.vsct**. W poniższej sekcji należy zastąpić zawartość pierwszego i ostatniego pliku, aby zdefiniować i zaimplementować polecenia.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Konfigurowanie odbiornika tworzenia widoku tekstu
-Otwórz *ColumnGuideAdornmentTextViewCreationListener.cs* w edytorze. Ten kod implementuje program obsługi, aby zawsze, gdy program Visual Studio tworzy widoki tekstowe. Brak atrybutów, które kontrolują, gdy program obsługi jest wywoływana w zależności od charakterystyki widoku.
+Otwórz *ColumnGuideAdornmentTextViewCreationListener.cs* w edytorze. Ten kod implementuje program obsługi za każdym razem, gdy program Visual Studio tworzy widoki tekstu. Istnieją atrybuty, które kontrolują, gdy program obsługi jest wywoływana w zależności od cech widoku.
 
-Kod musi zadeklarować warstwy zakończeń. Gdy Edytor aktualizuje widoków, pobiera warstwy zakończeń widoku i przy jego użyciu pobiera elementy zakończeń. Można zadeklarować porządkowanie warstwą względem innych użytkowników za pomocą atrybutów. Zastąp następujący wiersz:
+Kod musi również zadeklarować warstwę ozdabiania. Gdy edytor aktualizuje widoki, pobiera warstwy ozdabiania dla widoku i od tego pobiera elementy ozdabiania. Można zadeklarować kolejność warstwy względem innych atrybutów. Zastąp następującą linię:
 
 ```csharp
 [Order(After = PredefinedAdornmentLayers.Caret)]
 ```
 
-za pomocą tych dwóch wierszy:
+z tymi dwoma liniami:
 
 ```csharp
 [Order(Before = PredefinedAdornmentLayers.Text)]
 [TextViewRole(PredefinedTextViewRoles.Document)]
 ```
 
-Wiersz, który został zastąpiony znajduje się w grupie atrybutów, które deklarują warstwy zakończeń. Pierwszy wiersz po zmianie tylko zmiany, w których występują linie prowadnic kolumny. Rysowanie linii "przed" tekst w widoku oznacza, że pojawiają się za zaporą lub pod tekstem. Drugi wiersz deklaruje, że zakończeń przewodnik kolumny mają zastosowanie do jednostek tekstu, spełniające Twoje notacji dokumentu, ale można zadeklarować zakończeń, na przykład, można używać tylko w przypadku tekst do edycji. Brak informacji [punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)
+Zastąpiony wiersz znajduje się w grupie atrybutów, które deklarują warstwę ozdabiania. Zmieniony pierwszy wiersz zmienia się tylko w miejscu, w którym pojawiają się linie pomocnicze kolumn. Rysowanie linii "przed" tekstem w widoku oznacza, że pojawiają się one za lub pod tekstem. Drugi wiersz deklaruje, że ozdoby prowadnicy kolumn mają zastosowanie do jednostek tekstowych, które pasują do pojęcia dokumentu, ale można zadeklarować ozdoby, na przykład, aby pracować tylko dla edytowalny tekst. Więcej informacji znajduje się w [punktach rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
 
-## <a name="implement-the-settings-manager"></a>Implementowanie Menedżera ustawień
-Zastąp zawartość *GuidesSettingsManager.cs* następującym kodem (opisana poniżej):
+## <a name="implement-the-settings-manager"></a>Zaimplementowanie menedżera ustawień
+Zastąp zawartość *GuidesSettingsManager.cs* następującym kodem (wyjaśnionym poniżej):
 
 ```csharp
 using Microsoft.VisualStudio.Settings;
@@ -319,32 +319,32 @@ namespace ColumnGuides
 
 ```
 
-Większość ten kod tworzy i analizuje format ustawień: "RGB (\<int >,\<int >,\<int >) \<int >, \<int >,...".  Liczby całkowite na końcu są liczonego od jednego kolumny, której chcesz prowadnice kolumn. Rozszerzenie prowadnice kolumn przechwytuje wszystkie jej ustawienia w ciągu wartości pojedynczego ustawienia.
+Większość tego kodu tworzy i analizuje format ustawień:\<"RGB( int\<>, int\<>, int \<>) int>, \<int>, ...".  Liczby całkowite na końcu to kolumny oparte na jednej kolumnie, w których mają być prowadnice kolumn. Rozszerzenie prowadnic kolumn przechwytuje wszystkie jego ustawienia w ciągu wartości pojedynczego ustawienia.
 
-Brak niektórych części kodu, które warto wyróżniania. Następujący wiersz kodu pobiera otoka zarządzana programu Visual Studio do przechowywania ustawień. W większości przypadków to przenosi w rejestrze systemu Windows, ale ten interfejs API jest niezależny od mechanizm magazynu.
+Istnieją niektóre części kodu warto wyróżnić. Poniższy wiersz kodu pobiera otokę zarządzana programu Visual Studio dla magazynu ustawień. W przeważającej części to streszczenia w rejestrze systemu Windows, ale ten interfejs API jest niezależny od mechanizmu magazynu.
 
 ```csharp
 internal static SettingsManager VsManagedSettingsManager =
     new ShellSettingsManager(ServiceProvider.GlobalProvider);
 ```
 
-Magazynu ustawienia programu Visual Studio używa identyfikatora kategorii i identyfikator ustawienia do unikatowego identyfikowania wszystkie ustawienia:
+Magazyn ustawień programu Visual Studio używa identyfikatora kategorii i identyfikatora ustawień, aby jednoznacznie zidentyfikować wszystkie ustawienia:
 
 ```csharp
 private const string _collectionSettingsName = "Text Editor";
 private const string _settingName = "Guides";
 ```
 
-Nie trzeba używać `"Text Editor"` jako nazwę kategorii. Możesz wybrać coś, czego chcesz.
+Nie trzeba używać `"Text Editor"` jako nazwy kategorii. Możesz wybrać wszystko, co chcesz.
 
-Pierwsze funkcje kilka są punkty wejścia, aby zmienić ustawienia. Wydasz ograniczeń wysokiego poziomu, takich jak maksymalna liczba przewodniki dozwolone.  Następnie wywołaj `WriteSettings`, który komponuje się ciąg ustawień i ustawia właściwość `GuideLinesConfiguration`. Ustawienie tej właściwości powoduje zapisanie wartości ustawienia z magazynu ustawień programu Visual Studio i generowane `SettingsChanged` zdarzenie, aby zaktualizować wszystkie `ColumnGuideAdornment` obiektów, każdy powiązany z widoku tekstu.
+Pierwsze kilka funkcji to punkty wejścia, aby zmienić ustawienia. Sprawdzają one ograniczenia wysokiego poziomu, takie jak maksymalna dozwolona liczba linii pomocniczych.  Następnie dzwonią `WriteSettings`, który tworzy ciąg ustawień i `GuideLinesConfiguration`ustawia właściwość . Ustawienie tej właściwości zapisuje wartość ustawień w magazynie `SettingsChanged` ustawień programu Visual `ColumnGuideAdornment` Studio i uruchamia zdarzenie, aby zaktualizować wszystkie obiekty, z których każdy jest skojarzony z widokiem tekstowym.
 
-Istnieje kilka funkcji punktu wejścia, takich jak `CanAddGuideline`, które są używane do wykonania polecenia, które zmieniają ustawienia. Gdy program Visual Studio zawiera menu, wysyła zapytanie, implementacje polecenia, aby zobaczyć, jeśli polecenie jest aktualnie włączone, co to jest jego nazwa i tak dalej.  Poniżej zobaczysz, jak można dołączyć te punkty wejścia dla implementacji polecenia. Aby uzyskać więcej informacji na temat poleceń, zobacz [rozszerzenia menu i poleceń](../extensibility/extending-menus-and-commands.md).
+Istnieje kilka funkcji punktu wejścia, `CanAddGuideline`takich jak , które są używane do implementacji poleceń, które zmieniają ustawienia. Gdy program Visual Studio pokazuje menu, wysyła kwerendy implementacji poleceń, aby sprawdzić, czy polecenie jest aktualnie włączone, jaka jest jego nazwa i tak dalej.  Poniżej zobacz jak podłączyć te punkty wejścia dla implementacji poleceń. Aby uzyskać więcej informacji na temat poleceń, zobacz [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md).
 
-## <a name="implement-the-columnguideadornment-class"></a>Implementowanie klasy ColumnGuideAdornment
-`ColumnGuideAdornment` Utworzyć wystąpienia klasy dla każdego widoku tekstu, który może mieć zakończeń. Ta klasa nasłuchuje zdarzeń o zmiany widoku lub zmianę ustawień i prowadnice kolumn aktualizacji lub odświeżanie, zgodnie z potrzebami.
+## <a name="implement-the-columnguideadornment-class"></a>Zaimplementuj klasę ColumnGuideAdornment
+Klasa `ColumnGuideAdornment` jest tworzone dla każdego widoku tekstu, który może mieć ozdoby. Ta klasa nasłuchuje zdarzeń dotyczących zmiany widoku lub zmiany ustawień oraz aktualizowania lub ponownego rysowania prowadnic kolumn w razie potrzeby.
 
-Zastąp zawartość *ColumnGuideAdornment.cs* następującym kodem (opisana poniżej):
+Zastąp zawartość *ColumnGuideAdornment.cs* następującym kodem (wyjaśnionym poniżej):
 
 ```csharp
 using System;
@@ -486,33 +486,33 @@ namespace ColumnGuides
 }
 ```
 
-Wystąpienia tej klasy przechowywania na skojarzonej <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> oraz listę `Line` obiekty rysowane w widoku.
+Wystąpienia tej klasy przytrzymują <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> skojarzone `Line` i listę obiektów narysowanych w widoku.
 
-Konstruktor (wywoływane z `ColumnGuideAdornmentTextViewCreationListener` gdy program Visual Studio tworzy nowe widoki) tworzy przewodnik kolumny `Line` obiektów.  Konstruktor również dodaje programy obsługi dla `SettingsChanged` zdarzeń (zdefiniowane w `GuidesSettingsManager`) i wyświetlanie zdarzeń `LayoutChanged` i `Closed`.
+Konstruktor (wywoływany od `ColumnGuideAdornmentTextViewCreationListener` momentu, gdy program `Line` Visual Studio tworzy nowe widoki) tworzy obiekty prowadnicy kolumn.  Konstruktor dodaje również programy `SettingsChanged` obsługi dla `GuidesSettingsManager`zdarzenia (zdefiniowane w ) i zdarzenia `LayoutChanged` widoku i `Closed`.
 
-`LayoutChanged` Zdarzenia generowane z powodu kilka rodzajów zmian w widoku, łącznie z, gdy program Visual Studio tworzy widok. `OnViewLayoutChanged` Obsługi zdarzeń wywołuje `AddGuidelinesToAdornmentLayer` do wykonania. Kod w `OnViewLayoutChanged` Określa, czy wymagane można zaktualizować pozycje wiersza w oparciu o zmiany, takie jak zmiany rozmiaru czcionki, Wyświetl odstępy, przewijanie w poziomie i tak dalej. Kod w `UpdatePositions` powoduje, że linie prowadnic narysować między znakami lub zaraz po kolumnie tekst, który znajduje się w przesunięciu określonego znaku w wierszu tekstu.
+Zdarzenie `LayoutChanged` jest uruchamiane z powodu kilku rodzajów zmian w widoku, w tym podczas tworzenia widoku przez program Visual Studio. Program `OnViewLayoutChanged` obsługi `AddGuidelinesToAdornmentLayer` wywołuje do wykonania. Kod w `OnViewLayoutChanged` określa, czy musi zaktualizować pozycje wierszy na podstawie zmian, takich jak zmiany rozmiaru czcionki, wyświetlanie marginesów, przewijanie w poziomie i tak dalej. Kod w `UpdatePositions` powoduje, że linie pomocnicze rysować między znakami lub tuż po kolumnie tekstu, który jest w określonym znaku przesunięcie w wierszu tekstu.
 
-Zawsze, gdy zmiana ustawień `SettingsChanged` funkcja po prostu odtwarza wszystkie `Line` obiektów są dowolnych nowych ustawień. Po ustawieniu pozycje wiersza, kod usuwa wszystkie poprzednie `Line` obiekty `ColumnGuideAdornment` zakończeń warstwy i dodaje nowe licencje.
+Za każdym razem, gdy ustawienia zmienić `SettingsChanged` funkcję po prostu odtwarza wszystkie `Line` obiekty z niezależnie od nowych ustawień. Po ustawieniu pozycji linii kod usuwa `Line` wszystkie poprzednie `ColumnGuideAdornment` obiekty z warstwy ozdób i dodaje nowe.
 
-## <a name="define-the-commands-menus-and-menu-placements"></a>Definiowanie polecenia menu i menu angażowania
-Może istnieć wiele deklarowanie menu i poleceń, wprowadzenie do grup poleceń lub menu na różne inne menu i Podłączanie programy obsługi poleceń. Ten przewodnik opisuje, jak działają polecenia, w tym rozszerzeniu, ale w przypadku bardziej szczegółowych informacji, zobacz [rozszerzenia menu i poleceń](../extensibility/extending-menus-and-commands.md).
+## <a name="define-the-commands-menus-and-menu-placements"></a>Definiowanie poleceń, menu i miejsc docelowych menu
+Może być wiele do deklarowania poleceń i menu, umieszczanie grup poleceń lub menu w różnych innych menu i podłączanie obsługi poleceń. W tym przewodniku przedstawiono sposób działania poleceń w tym rozszerzeniu, ale aby uzyskać więcej informacji, zobacz [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md).
 
 ### <a name="introduction-to-the-code"></a>Wprowadzenie do kodu
-Rozszerzenie prowadnice kolumn pokazuje zadeklarowanie grupy poleceń, które ze sobą należą (Dodaj kolumnę, usunąć kolumny, zmienić kolor linii) i następnie wprowadzanie do tej grupy w podmenu z menu kontekstowym edytora.  Rozszerzenie prowadnice kolumn dodaje także polecenia do głównego **Edytuj** menu ale pozostaną niewidoczne, omówiony jako wspólny wzorzec poniżej.
+Rozszerzenie Prowadnice kolumn pokazuje deklarowanie grupy poleceń, które należą do siebie (dodaj kolumnę, usuń kolumnę, zmień kolor linii), a następnie umieszczając tę grupę w podmenu menu kontekstowego edytora.  Rozszerzenie Prowadnice kolumn dodaje również polecenia do głównego menu **Edycja,** ale utrzymuje je niewidoczne, omówione jako wspólny wzorzec poniżej.
 
-Istnieją trzy części do wykonania polecenia: ColumnGuideCommandsPackage.cs ColumnGuideCommandsPackage.vsct i ColumnGuideCommands.cs. Kod wygenerowany przez Szablony umieszcza polecenie na **narzędzia** menu, które jest wyświetlane okno dialogowe jako implementacja. Możesz zapoznać się w jaki sposób jest zaimplementowana w *vsct* i *ColumnGuideCommands.cs* plików, ponieważ jest proste. Zastąp kod w tych plikach poniżej.
+Istnieją trzy części do implementacji poleceń: ColumnGuideCommandsPackage.cs, ColumnGuideCommandsPackage.vsct i ColumnGuideCommands.cs. Kod wygenerowany przez szablony umieszcza polecenie w menu **Narzędzia,** które powoduje wyświetlenie okna dialogowego jako implementacja. Można sprawdzić, jak to jest implementowane w *plikach vsct* i *ColumnGuideCommands.cs,* ponieważ jest to proste. Możesz zastąpić kod w tych plikach poniżej.
 
-Kod pakietu zawiera deklaracje standardowy wymagane dla programu Visual Studio, aby dowiedzieć się, że rozszerzenie zapewnia polecenia, a także znalezienia gdzie umieścić polecenia. Inicjuje pakietu, tworzy wystąpienie klasy wykonania polecenia. Aby uzyskać więcej informacji na temat pakietów odnoszące się do poleceń, zobacz [rozszerzenia menu i poleceń](../extensibility/extending-menus-and-commands.md).
+Kod pakietu zawiera deklaracje standardowy wymagane dla programu Visual Studio, aby odkryć, że rozszerzenie oferuje polecenia i znaleźć, gdzie umieścić polecenia. Gdy pakiet inicjuje, to wystąpienia klasy implementacji poleceń. Aby uzyskać więcej informacji o pakietach związanych z poleceniami, zobacz [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md).
 
-### <a name="a-common-commands-pattern"></a>Typowy wzorzec poleceń
-Polecenia w rozszerzeniu prowadnice kolumn są przykładem bardzo typowy wzorzec w programie Visual Studio. Umieść powiązane polecenia w grupie, i umieścić tej grupy menu głównego, często za pomocą "`<CommandFlag>CommandWellOnly</CommandFlag>`" ustawiona na ukrywanie polecenia.  Umieszczenie poleceń w menu głównych (takie jak **Edytuj**) nadaje im nazwy nieuprzywilejowany (takie jak **Edit.AddColumnGuide**), które są przydatne do znajdowania poleceń podczas ponownego przypisywania klawiszy w **narzędzia Opcje**. Jest to również przydatne w celu uzyskania uzupełniania podczas wywoływania poleceń z **okna polecenia**.
+### <a name="a-common-commands-pattern"></a>Wzorzec typowych poleceń
+Polecenia w rozszerzenie prowadnice kolumn są przykładem bardzo często wzorzec w programie Visual Studio. Pokrewne polecenia są umieszczane w grupie i umieszczane w`<CommandFlag>CommandWellOnly</CommandFlag>`menu głównym, często z " " ustawionym, aby polecenie było niewidoczne.  Umieszczanie poleceń w menu głównym (takich jak **Edycja)** nadaje im ładne nazwy (takie jak **Edit.AddColumnGuide**), które są przydatne do znajdowania poleceń podczas ponownego przypisywania powiązań klawiszy w **opcjach narzędzi.** Jest to również przydatne do uzyskiwania uzupełnienia podczas wywoływania poleceń z **okna polecenia**.
 
-Następnie dodaj grupę poleceń do menu kontekstowe lub sub menu, którego można spodziewać się użytkownika do użycia polecenia. Visual Studio traktuje `CommandWellOnly` jako flagi niewidoczności, tylko menu głównego. Po umieszczeniu tej samej grupie poleceń menu kontekstowego lub menu podrzędne polecenia są widoczne.
+Następnie należy dodać grupę poleceń do menu kontekstowych lub podmenu, w którym użytkownik oczekuje użycia poleceń. Visual Studio `CommandWellOnly` traktuje jako flagę niewidzialności tylko dla menu głównego. Po umieszczeniu tej samej grupy poleceń w menu kontekstowym lub podmenu polecenia są widoczne.
 
-W ramach wspólny wzorzec rozszerzenie prowadnice kolumn tworzy drugiej grupy, zawierający pojedynczy podmenu. Pod menu z kolei zawiera pierwszą grupę za pomocą poleceń przewodnik cztery kolumny. Drugiej grupy, który przechowuje pod menu jest wielokrotnego użytku element zawartości, który można umieścić na różnych menu kontekstowe, która umieszcza menu podrzędne na tych menu kontekstowe.
+Jako część wspólnego wzorca rozszerzenie Prowadnice kolumn tworzy drugą grupę zawierającą pojedyncze podmenu. Podmenu z kolei zawiera pierwszą grupę z poleceniami przewodnika czterokolumnowego. Druga grupa, która posiada podmenu jest zasobów wielokrotnegoużytnia, które można umieścić w różnych menu kontekstowych, który umieszcza podmenu w tych menu kontekstowych.
 
-### <a name="the-vsct-file"></a>Pliku vsct
-*Vsct* pliku deklaruje poleceń i ich gdzie, wraz z ikon i tak dalej. Zastąp zawartość *vsct* pliku następującym kodem (opisana poniżej):
+### <a name="the-vsct-file"></a>Plik .vsct
+Plik *vsct* deklaruje polecenia i dokąd idą, wraz z ikonami i tak dalej. Zastąp zawartość pliku *vsct* następującym kodem (wyjaśnionym poniżej):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -748,22 +748,22 @@ W ramach wspólny wzorzec rozszerzenie prowadnice kolumn tworzy drugiej grupy, z
 
 ```
 
-**GUIDS**. Dla programu Visual Studio można znaleźć inne programy obsługi polecenia i wywołaj je, należy upewnić się identyfikator GUID zadeklarowanych w pakietu *ColumnGuideCommandsPackage.cs* pakietu, identyfikator GUID jest zadeklarowana w pasuje do pliku (generowany na podstawie szablonu elementu projektu) *vsct* pliku (skopiowany z powyższych). Jeśli używasz ponownie tego przykładu kodu, należy się, że masz inny identyfikator GUID, tak aby nie powodują konfliktów z każdego, kto może skopiować ten kod.
+**identyfikatory GUID**. Aby program Visual Studio znaleźć programy obsługi poleceń i wywołać je, należy upewnić się, że identyfikator GUID pakietu zadeklarowany w pliku *ColumnGuideCommandsPackage.cs* (wygenerowany z szablonu elementu projektu) pasuje do identyfikatora GUID pakietu zadeklarowanego w pliku *vsct* (skopiowany z góry). Jeśli ponownie użyjesz tego przykładowego kodu, upewnij się, że masz inny identyfikator GUID, aby nie kolidować z innymi osobami, które mogły skopiować ten kod.
 
-Znajdź ten wiersz w *ColumnGuideCommandsPackage.cs* i skopiuj identyfikator GUID znajdujące znaki cudzysłowu:
+Znajdź ten wiersz w *ColumnGuideCommandsPackage.cs* i skopiuj identyfikator GUID między cudzysłowami:
 
 ```csharp
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 ```
 
-Następnie wklej identyfikator GUID w *vsct* plików mają następujący wiersz w swojej `Symbols` deklaracje:
+Następnie wklej identyfikator GUID w pliku *vsct,* aby w `Symbols` deklaracjach było następująco:
 
 ```xml
 <GuidSymbol name="guidColumnGuideCommandsPkg"
             value="{ef726849-5447-4f73-8de5-01b9e930f7cd}" />
 ```
 
-Ustaw identyfikatory GUID dla polecenia, a plik obrazu mapy bitowej powinna być unikatowa dla rozszerzeń, za:
+Identyfikatory GUID dla zestawu poleceń i pliku obrazu mapy bitowej powinny być unikatowe dla rozszerzeń:
 
 ```xml
 <GuidSymbol name="guidColumnGuidesCommandSet"
@@ -771,36 +771,36 @@ Ustaw identyfikatory GUID dla polecenia, a plik obrazu mapy bitowej powinna być
 <GuidSymbol name="guidImages" value="{2C99F852-587C-43AF-AA2D-F605DE2E46EF}">
 ```
 
-Ale nie trzeba zmienić zestaw poleceń i mapy bitowej identyfikatorów GUID obrazu w tym przewodniku można pobrać kod do działania. Zestaw poleceń, identyfikator GUID musi pasować do deklaracji w *ColumnGuideCommands.cs* plik, ale Zastąp zawartość tego pliku, zbyt; dlatego identyfikatory GUID będą zgodne.
+Ale nie trzeba zmieniać zestaw poleceń i identyfikatory GUID obrazu bitmapy w tym instruktażu, aby uzyskać kod do pracy. Identyfikator GUID zestawu poleceń musi być zgodny z deklaracją w pliku *ColumnGuideCommands.cs,* ale także zawartość tego pliku zostanie zastąpiona; w związku z tym identyfikatory GUID będą zgodne.
 
-Inne identyfikatory GUID *vsct* pliku zidentyfikować istniejącego menu, do których zostaną dodane polecenia przewodnik kolumny, więc nigdy nie ulegną zmianie.
+Inne identyfikatory GUID w pliku *vsct* identyfikują istniejące wcześniej menu, do których dodawane są polecenia przewodnika kolumn, dzięki czemu nigdy się nie zmieniają.
 
-**Sekcje pliku**. *Vsct* będzie mieć trzy sekcje zewnętrzne: poleceń, rozmieszczaniu i symbole. W sekcji polecenia zdefiniowano grup poleceń, menu, przyciski lub elementy menu i mapy bitowej dla ikony. W sekcji angażowania deklaruje, dokąd grup w menu i angażowania dodatkowych do istniejącego menu. W sekcji symbole deklaruje identyfikatory używane w innych miejscach w *vsct* pliku, który sprawia, że *vsct* kod bardziej czytelne niż w przypadku identyfikatorów GUID i wartość szesnastkową liczby wszędzie.
+**Sekcje plików**. *.vsct* ma trzy zewnętrzne sekcje: polecenia, miejsca docelowe i symbole. Sekcja Polecenia definiuje grupy poleceń, menu, przyciski lub elementy menu oraz mapy bitowe ikon. Sekcja Miejsca docelowe deklaruje, gdzie grupy przechodzą do menu lub dodatkowych miejsc docelowych w istniejących menu. Sekcja symboli deklaruje identyfikatory używane w innym miejscu w pliku *vsct,* co sprawia, że kod *.vsct* jest bardziej czytelny niż identyfikatory GUID i numery szesnastkowe wszędzie.
 
-**Sekcja polecenia, definicje grup**. Sekcja polecenia najpierw definiuje grup poleceń. Grupy poleceń są poleceniami, widoczne w menu nieznaczne wierszami szarego oddzielenie grup. Grupy mogą również wypełnić całe podmenu, jak w poniższym przykładzie, i szary, oddzielając wiersze, w tym przypadku nie są widoczne. *Vsct* pliki Zadeklaruj dwie grupy `GuidesMenuItemsGroup` który jest nadrzędny do `IDM_VS_MENU_EDIT` (główny **Edytuj** menu) i `GuidesContextMenuGroup` który jest nadrzędny do `IDM_VS_CTXT_CODEWIN` (kod menu kontekstowe edytora).
+**Sekcja Polecenia, definicje grup**. Sekcja polecenia najpierw definiuje grupy poleceń. Grupy poleceń to polecenia widoczne w menu z niewielkimi szarymi liniami oddzielającymi grupy. Grupa może również wypełnić całe podmenu, jak w tym przykładzie, a w tym przypadku nie widać szarych linii oddzielających. Pliki *.vsct* deklarują dwie `GuidesMenuItemsGroup` grupy, która jest `IDM_VS_MENU_EDIT` nadrzędna do (główne `GuidesContextMenuGroup` menu **Edycja)** `IDM_VS_CTXT_CODEWIN` i który jest nadrzędny do (menu kontekstowego edytora kodu).
 
-Deklaracja druga grupa ma `0x0600` priorytetu:
+Druga deklaracja grupy `0x0600` ma priorytet:
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesContextMenuGroup"
              priority="0x0600">
 ```
 
-Chodzi o to, aby umieścić kolumna zawiera informacje na temat podmenu na końcu dowolnego menu kontekstowego, do którego należy dodać grupy menu podrzędne. Jednak nie należy zakładać, że najlepiej i wymusić podmenu do zawsze ostatniego przy użyciu priorytet `0xFFFF`. Masz do eksperymentowania z numerem, aby zobaczyć, gdzie Twoje podmenu znajduje się w menu kontekstowe, gdzie umieścić. W tym przypadku `0x0600` jest wystarczająco wysoka, umieść go na końcu menu, jeśli chodzi o widoczne, ale pozostawia miejsce dla innych osób do projektowania ich rozszerzenia są niższe niż rozszerzenie prowadnice kolumn, jeśli jest to pożądane.
+Chodzi o to, aby umieścić podmenu prowadnic kolumn na końcu dowolnego menu kontekstowego, do którego dodasz grupę podmenu. Ale nie należy zakładać, że wiesz najlepiej i życie podmenu, `0xFFFF`aby zawsze być ostatni za pomocą priorytetu . Musisz poeksperymentować z numerem, aby zobaczyć, gdzie znajduje się twoje podmenu w menu kontekstowym, w którym go umieszczasz. W tym `0x0600` przypadku jest wystarczająco wysoki, aby umieścić go na końcu menu, o ile widać, ale pozostawia miejsce dla kogoś innego, aby zaprojektować ich rozszerzenie być niższe niż rozszerzenie prowadnic kolumn, jeśli jest to pożądane.
 
-**Polecenia menu definicji sekcji**. Następnie w sekcji polecenia zdefiniowano pod menu `GuidesSubMenu`, nadrzędnego do `GuidesContextMenuGroup`. `GuidesContextMenuGroup` Jest to grupa, możesz dodać do menu odpowiedniego kontekstu. W sekcji angażowania kod umieszcza grupy za pomocą poleceń przewodnik cztery kolumny, w tym menu podrzędne.
+**Poleceń, definicja menu**. Następnie sekcja poleceń definiuje podmenu `GuidesSubMenu`, `GuidesContextMenuGroup`nadrzędnego do . Jest `GuidesContextMenuGroup` to grupa dodana do wszystkich odpowiednich menu kontekstowych. W sekcji miejsca docelowe kod umieszcza grupę z czterokolumnowymi poleceniami przewodnika w tym podmenu.
 
-**Sekcja polecenia, przyciski definicje**. Sekcja polecenia następnie definiuje, menu i przycisków, które są poleceniami przewodniki cztery kolumny. `CommandWellOnly`, omówione powyżej, oznacza, że polecenia są niewidoczne, po umieszczeniu w menu głównym. Dwa polecenia menu przycisku deklaracje (Przewodnik Dodaj i Usuń przewodnik) również mieć `AllowParams` flagi:
+**Poleceń, definicji przycisków**. Następnie sekcja polecenia definiuje elementy menu lub przyciski, które są poleceniami linii pomocniczych czterokolumnowych. `CommandWellOnly`, omówione powyżej, oznacza, że polecenia są niewidoczne po umieszczeniu w menu głównym. Dwie deklaracje przycisków elementu menu (dodaj przewodnik i `AllowParams` usuń prowadnicę) również mają flagę:
 
 ```xml
 <CommandFlag>AllowParams</CommandFlag>
 ```
 
-Ta flaga umożliwia wraz z o rozmieszczaniu menu głównego, polecenie, aby otrzymywać argumenty, gdy program Visual Studio wywołuje program obsługi poleceń.  Jeśli użytkownik uruchamia polecenia w oknie polecenia, argument jest przekazywany do program obsługi poleceń w zdarzeniu argumentów.
+Ta flaga umożliwia, wraz z o umieszczenia menu głównego, polecenie, aby odbierać argumenty, gdy visual studio wywołuje program obsługi poleceń.  Jeśli użytkownik uruchamia polecenie z okna polecenia, argument jest przekazywany do programu obsługi poleceń w argumentach zdarzenia.
 
-**Polecenie części, definicje mapy bitowe**. Na koniec sekcji poleceń deklaruje, bitmap i ikon używanych dla poleceń. Ta sekcja dotyczy zwykłej deklaracji, która identyfikuje zasób projektu i wyświetla liczonego od jednego indeksy ikon używanych. Symbole części *vsct* pliku deklaruje wartości identyfikatory używane jako indeksy. W tym instruktażu wykorzystano paska mapy bitowej dostarczane z szablonem elementu polecenie niestandardowe, które są dodawane do projektu.
+**Sekcje poleceń, definicje map bitowych**. Wreszcie sekcja poleceń deklaruje mapy bitowe lub ikony używane dla poleceń. Ta sekcja jest prostą deklaracją, która identyfikuje zasób projektu i zawiera listę indeksów opartych na jednej ikonach używanych. Sekcja symboli pliku *vsct* deklaruje wartości identyfikatorów używanych jako indeksy. W tym instruktażu użyto paska mapy bitowej dostarczonego z szablonem elementu polecenia niestandardowego dodanym do projektu.
 
-**Sekcja angażowania**. Po poleceniach sekcja jest sekcja angażowania. Pierwsze z nich polega na tym, gdzie ten kod dodaje pierwszej grupy omówione powyżej, które zawiera przewodnik cztery kolumny polecenia do menu podrzędne gdzie są wyświetlane polecenia:
+**Sekcja Miejsca docelowe**. Po sekcji poleceń jest sekcja miejsc docelowych. Pierwszy z nich jest, gdy kod dodaje pierwszą grupę omówione powyżej, która zawiera polecenia przewodnika czterokolumnowego do podmenu, w którym pojawiają się polecenia:
 
 ```xml
 <CommandPlacement guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -809,14 +809,14 @@ Ta flaga umożliwia wraz z o rozmieszczaniu menu głównego, polecenie, aby otrz
 </CommandPlacement>
 ```
 
-Dodaj wszystkie inne angażowania `GuidesContextMenuGroup` (który zawiera `GuidesSubMenu`) do innych menu kontekstowe edytora. Kiedy kod zadeklarowana `GuidesContextMenuGroup`, został on nadrzędny do menu kontekstowego edytora kodu. Dlatego nie widzisz położenie menu kontekstowe edytora kodu.
+Wszystkie inne miejsca docelowe `GuidesContextMenuGroup` dodać (który zawiera `GuidesSubMenu`) do innych menu kontekstowych edytora. Gdy kod zadeklarowany `GuidesContextMenuGroup`, był nadrzędny do menu kontekstowego edytora kodu. Dlatego nie widzisz miejsca docelowego menu kontekstowego edytora kodu.
 
-**Symbole sekcji**. Jak już wspomniano w sekcji symbole deklaruje identyfikatory używane w innych miejscach w *vsct* pliku, który sprawia, że *vsct* kod bardziej czytelne niż w przypadku identyfikatorów GUID i wartość szesnastkową liczby wszędzie. Najważniejsze punkty w tej sekcji są na tym, że identyfikator GUID pakietu należy uzgodnić z deklaracji w klasie pakietu. I identyfikator GUID zestawu poleceń należy uzgodnić z deklaracji w klasie wykonania polecenia.
+**Sekcja Symbole**. Jak wspomniano powyżej, sekcja symboli deklaruje identyfikatory używane w innym miejscu w pliku *vsct,* co sprawia, że kod *.vsct* jest bardziej czytelny niż identyfikatory GUID i numery szesnastkowe wszędzie. Ważne punkty w tej sekcji są, że identyfikator GUID pakietu musi zgadzać się z deklaracją w klasie pakietu. I zestaw poleceń GUID musi zgadzać się z deklaracją w klasie implementacji polecenia.
 
-## <a name="implement-the-commands"></a>Implementowanie polecenia
-*ColumnGuideCommands.cs* pliku implementuje poleceń i przechwytuje się programów obsługi. Gdy program Visual Studio ładuje pakiet i inicjuje ją, pakiet z kolei wywołuje `Initialize` klasy wykonania polecenia. Inicjowanie poleceń po prostu tworzy wystąpienie klasy i konstruktora przechwytuje się wszystkie programy obsługi poleceń.
+## <a name="implement-the-commands"></a>Implementowanie poleceń
+Plik *ColumnGuideCommands.cs* implementuje polecenia i łączy programy obsługi. Gdy Visual Studio ładuje pakiet i inicjuje `Initialize` go, pakiet z kolei wywołuje klasy implementacji poleceń. Inicjowanie poleceń po prostu tworzy wystąpienia klasy, a konstruktor łączy wszystkie programy obsługi poleceń.
 
-Zastąp zawartość *ColumnGuideCommands.cs* pliku następującym kodem (opisana poniżej):
+Zastąp zawartość pliku *ColumnGuideCommands.cs* następującym kodem (wyjaśnionym poniżej):
 
 ```csharp
 using System;
@@ -1157,11 +1157,11 @@ namespace ColumnGuides
 
 ```
 
-**Napraw odwołania**. W tym momencie masz brakuje odwołania. Naciśnij przycisk prawo wskaźnika na węźle odwołania w Eksploratorze rozwiązań. Wybierz **Dodaj...**  polecenia. **Dodaj odwołanie** okno dialogowe zawiera pole wyszukiwania w prawym górnym rogu. Wprowadź "editor" (bez cudzysłowów). Wybierz **Microsoft.VisualStudio.Editor** elementu (użytkownik musi pole wyboru na lewo od elementu, a nie po prostu wybierz pozycję elementu) i wybierz polecenie **OK** można dodać odwołania.
+**Napraw odwołania**. W tym momencie brakuje ci odwołania. Naciśnij prawy przycisk wskaźnika w węźle Odwołania w Eksploratorze rozwiązań. Wybierz polecenie **Dodaj ....** Okno dialogowe **Dodaj odwołanie** ma pole wyszukiwania w prawym górnym rogu. Wpisz "editor" (bez podwójnych cudzysłowów). Wybierz element **Microsoft.VisualStudio.Editor** (należy zaznaczyć pole po lewej stronie elementu, a nie tylko zaznaczyć element) i wybierz **przycisk OK,** aby dodać odwołanie.
 
-**Inicjowanie**.  Kiedy inicjuje klasie pakietu, wywołuje `Initialize` klasy wykonania polecenia. `ColumnGuideCommands` Inicjowanie tworzy wystąpienie klasy i zapisuje wystąpienie klasy i odwołania do pakietu w składowych klasy.
+**Inicjowanie**.  Gdy klasa pakietu inicjuje, wywołuje `Initialize` na polecenia klasy implementacji. Inicjowanie `ColumnGuideCommands` wystąpienia klasy i zapisuje wystąpienie klasy i odwołanie do pakietu w członkach klasy.
 
-Przyjrzyjmy się jednej z obsługi polecenia w ups punktu zaczepienia w konstruktorze klasy:
+Przyjrzyjmy się jednej z obsługi poleceń hook-up z konstruktora klasy:
 
 ```csharp
 _addGuidelineCommand =
@@ -1172,17 +1172,17 @@ _addGuidelineCommand =
 
 ```
 
-Możesz utworzyć `OleMenuCommand`. Visual Studio używa programu Microsoft Office system polecenia. Kluczowych argumentów podczas tworzenia wystąpienia `OleMenuCommand` jest funkcją, która implementuje polecenie (`AddColumnGuideExecuted`), funkcja wywoływana, gdy program Visual Studio zawiera menu przy użyciu polecenia (`AddColumnGuideBeforeQueryStatus`), a identyfikator polecenia. Program Visual studio wywołuje funkcję stan zapytania przed pokazaniem polecenia menu, aby polecenia lub mogą być sam niewidoczne wyszarzonym dla konkretnego wyświetlanie menu (na przykład wyłączenie **kopiowania** Jeśli nie zaznaczono żadnego fragmentu), Zmień jej ikonę lub nawet zmienić jego nazwę (na przykład z dodać coś, co usunąć coś o nim) i tak dalej. Identyfikator polecenia musi odpowiadać identyfikator zadeklarowany w polecenia *vsct* pliku. Ciągi dla zestawu poleceń i prowadnice kolumn Dodaj polecenie musi odpowiadać między *vsct* pliku i *ColumnGuideCommands.cs*.
+Tworzysz `OleMenuCommand`plik . Program Visual Studio używa systemu poleceń pakietu Microsoft Office. Kluczowe argumenty podczas tworzenia `OleMenuCommand` wystąpienia jest funkcja, która`AddColumnGuideExecuted`implementuje polecenie ( ), funkcja do wywołania, gdy visual studio pokazuje menu z poleceniem (`AddColumnGuideBeforeQueryStatus`), i identyfikator polecenia. Visual Studio wywołuje funkcję stanu kwerendy przed wyświetleniem polecenia w menu, dzięki czemu polecenie może uczynić się niewidocznym lub wyszarzonym dla określonego wyświetlania menu (na przykład wyłączenie **kopiowania,** jeśli nie ma zaznaczenia), zmienić jego ikonę, a nawet zmienić jego nazwę (na przykład z Dodaj coś, aby coś usunąć) i tak dalej. Identyfikator polecenia musi być zgodny z identyfikatorem polecenia zadeklarowanym w pliku *vsct.* Ciągi dla zestawu poleceń i prowadnice kolumn dodają polecenie muszą być zgodne między plikiem *vsct* a *ColumnGuideCommands.cs*.
 
-Następujący wiersz zawiera pomoc dla, gdy użytkownicy wywołać polecenie za pośrednictwem oknie wiersza polecenia (opisana poniżej):
+Poniższy wiersz zapewnia pomoc, gdy użytkownicy wywołać polecenie za pośrednictwem okna polecenia (wyjaśnione poniżej):
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **Kwerenda o stan**. Funkcje stan zapytań `AddColumnGuideBeforeQueryStatus` i `RemoveColumnGuideBeforeQueryStatus` Sprawdź niektórych ustawień (np. Maksymalna liczba przewodniki lub kolumny max) lub jeśli jest to przewodnik kolumny do usunięcia. Umożliwiają one poleceń, jeśli warunki są odpowiednie.  Funkcje stan zapytań muszą być efektywne, ponieważ są one uruchamiane za każdym razem, gdy program Visual Studio zawiera menu i dla każdego polecenia w menu.
+ **Stan kwerendy**. Funkcje stanu `AddColumnGuideBeforeQueryStatus` `RemoveColumnGuideBeforeQueryStatus` kwerendy i sprawdź niektóre ustawienia (takie jak maksymalna liczba linii pomocniczych lub maksymalna kolumna) lub jeśli istnieje przewodnik po kolumnach do usunięcia. Włączają polecenia, jeśli warunki są odpowiednie.  Funkcje stanu kwerendy muszą być wydajne, ponieważ są uruchamiane za każdym razem, gdy program Visual Studio wyświetla menu i dla każdego polecenia w menu.
 
- **Funkcja AddColumnGuideExecuted**. Interesujących części Dodawanie przewodnika jest ustalenie bieżącej lokalizacji widoku i karetkę edytora.  Po pierwsze, ta funkcja wywołuje `GetApplicableColumn`, która sprawdza, czy istnieje argumentów dostarczone przez użytkownika w argumentach zdarzeń program obsługi poleceń, a w przypadku none, funkcja sprawdza, czy widok edytora:
+ **AddColumnGuideWyjęta funkcja**. Interesującą częścią dodawania przewodnika jest ustalenie bieżącego widoku edytora i lokalizacji opiekunki.  Najpierw ta funkcja `GetApplicableColumn`wywołuje , który sprawdza, czy istnieje argument dostarczony przez użytkownika w argumentach zdarzeń programu obsługi poleceń, a jeśli nie ma, funkcja sprawdza widok edytora:
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn` ma się z materiałami niewiele przybliżają do <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> widoku kodu.  Jeśli śledzenie za pomocą `GetActiveTextView`, `GetActiveView`, i `GetTextViewFromVsTextView`, możesz dowiedzieć się, jak to zrobić. Poniższy kod jest odpowiedni kod, wyodrębnione, począwszy od bieżącego zaznaczenia, wprowadzenie ramki wyboru, a następnie wprowadzenie DocView ramki jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, następnie konfigurowania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> z IVsTextView, a następnie wprowadzenie hostem widoku i na koniec element IWpfTextView:
+`GetCurrentEditorColumn`musi trochę kopać, aby <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> uzyskać widok kodu.  Jeśli prześledzisz , `GetActiveTextView` `GetActiveView`i `GetTextViewFromVsTextView`, możesz zobaczyć, jak to zrobić. Poniższy kod jest odpowiedni kod abstrakcyjne, począwszy od bieżącego zaznaczenia, a następnie coraz zaznaczenia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>ramki, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> a następnie coraz ramki DocView jako , a następnie coraz z IVsTextView, a następnie coraz hosta widoku, a na koniec IWpfTextView:
 
 ```csharp
    IVsMonitorSelection selection =
@@ -1257,7 +1257,7 @@ ErrorHandler.ThrowOnFailure(selection.GetCurrentElementValue(
 
 ```
 
-Gdy istnieje już element IWpfTextView, można uzyskać kolumny, w którym znajduje się daszek:
+Po uzyskaniu widoku IWpfTextView można uzyskać kolumnę, w której znajduje się karetka:
 
 ```csharp
 private static int GetCaretColumn(IWpfTextView textView)
@@ -1272,19 +1272,19 @@ private static int GetCaretColumn(IWpfTextView textView)
 
 ```
 
-Za pomocą bieżącej kolumny w kasie w przypadku, gdy użytkownik kliknie, kod po prostu wywołuje funkcję w Menedżerze ustawień, aby dodać lub usunąć tę kolumnę. Menedżer ustawień wyzwala zdarzenie, na którym wszystkie `ColumnGuideAdornment` nasłuchiwania obiektów. Gdy zdarzenie zostanie wyzwolony, te obiekty zaktualizować swoje opinie skojarzony tekst z nowymi ustawieniami przewodnik kolumny.
+Z bieżącą kolumną w ręku, w której użytkownik kliknął, kod po prostu wywołuje menedżera ustawień, aby dodać lub usunąć kolumnę. Menedżer ustawień uruchamia zdarzenie, `ColumnGuideAdornment` do którego nasłuchują wszystkie obiekty. Po uruchomieniu zdarzenia obiekty te aktualizują skojarzone widoki tekstu o nowe ustawienia przewodnika kolumn.
 
-## <a name="invoke-command-from-the-command-window"></a>Wywołaj polecenie w oknie polecenia
-Przykładowe przewodniki kolumny umożliwia użytkownikom wywoływanie dwa polecenia w oknie polecenia jako formę rozszerzalności. Jeśli używasz **widoku &#124; Windows inne &#124; okna polecenia** polecenia, okno polecenia. Możesz wchodzić w interakcje z okna poleceń, wprowadzając "Edytuj", a dzięki uzupełnianie nazw poleceń i dostarczenie argument 120, masz następujące wyniki:
+## <a name="invoke-command-from-the-command-window"></a>Wywoływanie polecenia z okna polecenia
+Przykład prowadnic kolumn umożliwia użytkownikom wywoływanie dwóch poleceń z okna polecenia jako formy rozszerzalności. Jeśli używasz polecenia Widok &#124; inne okno **polecenia systemu Windows &#124;,** możesz wyświetlić okno polecenia. Możesz wchodzić w interakcje z oknem polecenia, wprowadzając "edytuj.", a wraz z zakończeniem nazwy polecenia i dostarczeniem argumentu 120, masz następujący wynik:
 
 ```csharp
 > Edit.AddColumnGuide 120
 >
 ```
 
-Fragmenty przykładu, włączyć to zachowanie, które znajdują się w *vsct* plików deklaracji, `ColumnGuideCommands` konstruktora klasy po jej przechwytuje programy obsługi poleceń i implementacji programu obsługi poleceń, które Sprawdź, czy argumenty zdarzeń.
+Fragmenty próbki, które włączają to zachowanie znajdują się w `ColumnGuideCommands` deklaracjach plików *vsct,* konstruktorze klasy, gdy łączy programy obsługi poleceń, oraz implementacje programu obsługi poleceń, które sprawdzają argumenty zdarzeń.
 
-Pokazaliśmy, "`<CommandFlag>CommandWellOnly</CommandFlag>`" w *vsct* plik oraz angażowania w **Edytuj** nawet wtedy, gdy polecenia nie są wyświetlane w menu głównym **Edytuj** menu interfejsu użytkownika. Pozwól, aby w głównym **Edytuj** menu nadaje im nazwy, takie jak **Edit.AddColumnGuide**. Deklaracja grupy poleceń, która zawiera cztery polecenia umieszczone w grupie na **Edytuj** bezpośrednio menu:
+""`<CommandFlag>CommandWellOnly</CommandFlag>`" w pliku *vsct,* a także miejsca docelowe w menu głównym **edycja,** nawet jeśli polecenia nie są wyświetlane w interfejsie interfejsu menu **Edycja.** Mając je w głównym menu **Edycji** daje im nazwy, takie jak **Edit.AddColumnGuide**. Deklaracja grupy poleceń zawierająca cztery polecenia umieściła grupę bezpośrednio w menu **Edycja:**
 
 ```xml
 <Group guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -1294,7 +1294,7 @@ Pokazaliśmy, "`<CommandFlag>CommandWellOnly</CommandFlag>`" w *vsct* plik oraz 
 
 ```
 
-Sekcja przyciski później zadeklarowana polecenia `CommandWellOnly` zachować niewidoczne w menu głównym i zadeklarować je za pomocą `AllowParams`:
+Sekcja przycisków później zadeklarowała `CommandWellOnly` polecenia, aby były niewidoczne `AllowParams`w menu głównym i zadeklarowała je za pomocą:
 
 ```xml
 <Button guid="guidColumnGuidesCommandSet" id="cmdidAddColumnGuide"
@@ -1306,14 +1306,14 @@ Sekcja przyciski później zadeklarowana polecenia `CommandWellOnly` zachować n
 
 ```
 
-Pokazaliśmy, program obsługi poleceń podpiąć kodu w `ColumnGuideCommands` konstruktora klasy podano opis parametru dozwolonych:
+Program obsługi poleceń podłącz kod `ColumnGuideCommands` w konstruktorze klasy pod warunkiem opis dozwolonego parametru:
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 
 ```
 
-Jak działa `GetApplicableColumn` funkcji kontroli `OleMenuCmdEventArgs` wartości przed sprawdzeniem widok edytora dla bieżącej kolumny:
+Przed sprawdzeniem `GetApplicableColumn` `OleMenuCmdEventArgs` widoku edytora dla bieżącej kolumny została wyświetlona funkcja sprawdza wartość:
 
 ```csharp
 private int GetApplicableColumn(EventArgs e)
@@ -1329,20 +1329,20 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-## <a name="try-your-extension"></a>Spróbuj rozszerzenia
-Teraz można nacisnąć klawisz **F5** można wykonać rozszerzenia prowadnice kolumn. Otwórz plik tekstowy i użyj menu kontekstowego edytora Dodaj linie prowadnic, usuń je i zmienić kolor. Kliknij w tekście (nie odstępu minięto koniec wiersza) aby dodać kolumnę przewodnika lub edytorze dodaje go do ostatniej kolumny w wierszu. Jeśli korzystanie z okna polecenia i wywołują polecenia z nieprawidłowym argumentem, możesz dodać prowadnice kolumn w dowolnym miejscu.
+## <a name="try-your-extension"></a>Wypróbuj rozszerzenie
+Teraz możesz nacisnąć **klawisz F5,** aby wykonać rozszerzenie Prowadnice kolumn. Otwórz plik tekstowy i użyj menu kontekstowego edytora, aby dodać linie pomocnicze, usunąć je i zmienić ich kolor. Kliknij tekst (nie odstępy minęły koniec wiersza), aby dodać prowadnicę kolumn lub edytor dodaje go do ostatniej kolumny w wierszu. Jeśli używasz okna polecenia i wywołujesz polecenia za pomocą argumentu, możesz dodać prowadnice kolumn w dowolnym miejscu.
 
-Jeśli chcesz spróbować innego polecenia angażowania, zmienianie nazwy, zmiana ikon i tak dalej, a masz problemy z programem Visual Studio przedstawiający najnowszy kod w menu, można zresetować eksperymentalne hive, w którym jest debugowany. Wyświetlenie **Windows Start Menu** i wpisz "Resetuj". Znajdź i uruchom polecenie **resetowania dalej doświadczalne wystąpienie programu Visual Studio**. To polecenie czyści gałęzi rejestru eksperymentalne wszystkich składników rozszerzenia. Nie ma czyszczenie się ustawienia ze składników, dlatego wszystkie prowadnice miał podczas zamykania hive eksperymentalne programu Visual Studio nadal istnieją Jeśli kod odczyta magazynu ustawień przy następnym uruchomieniu.
+Jeśli chcesz wypróbować różne miejsca docelowe poleceń, zmienić nazwy, zmienić ikony i tak dalej, a masz jakiekolwiek problemy z visual studio pokazujący najnowszy kod w menu, można zresetować gałęzi eksperymentalnej, w którym są debugowania. Wyjdź z **menu Start systemu Windows** i wpisz "reset". Poszukaj i uruchom polecenie **Resetuj następne wystąpienie eksperymentalne programu Visual Studio**. To polecenie czyści eksperymentalny gałąź rejestru wszystkich składników rozszerzenia. Nie czyści ustawienia ze składników, więc wszelkie przewodniki, które miały po zamknięciu eksperymentalnego gałąź programu Visual Studio są nadal tam, gdy kod odczytuje magazynu ustawień przy następnym uruchomieniu.
 
-## <a name="finished-code-project"></a>Gotowy kod projektu
-Wkrótce będą projektu GitHub, programu Visual Studio Extensibility przykłady i ukończonych projektu zostaną wyświetlone w. W tym artykule zostanie zaktualizowany w celu wskazania istnieje, jeśli tak się stanie. Ukończone przykładowy projekt może mieć różne identyfikatory GUID i będzie mieć paska różnych map bitowych, ikon polecenia.
+## <a name="finished-code-project"></a>Gotowy projekt kodu
+Wkrótce pojawi się projekt GitHub z przykładami rozszerzalności programu Visual Studio i ukończony projekt będzie tam. Ten artykuł zostanie zaktualizowany, aby wskazać, kiedy to się stanie. Ukończony przykładowy projekt może mieć różne identyfikatory guids i będzie miał inny pasek map bitowych dla ikon poleceń.
 
-Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+Możesz wypróbować wersję funkcji przewodników kolumn z tym[rozszerzeniem](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)Galerii programu Visual Studio .
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wewnątrz edytora](../extensibility/inside-the-editor.md)
 - [Rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)
-- [Punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md)
-- [Rozszerzenie menu i poleceń](../extensibility/extending-menus-and-commands.md)
+- [Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)
+- [Rozszerzanie menu i poleceń](../extensibility/extending-menus-and-commands.md)
 - [Dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)
-- [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)

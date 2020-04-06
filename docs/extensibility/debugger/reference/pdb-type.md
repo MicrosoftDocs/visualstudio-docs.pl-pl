@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE | Dokumentacja firmy Microsoft
+title: PDB_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3121106b84111d20bf2915c0f9398fa92807cfd9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349913"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714102"
 ---
-# <a name="pdbtype"></a>PDB_TYPE
+# <a name="pdb_type"></a>PDB_TYPE
 
-Ta struktura określa informacje o typie pola z symboli PDB.
+Ta struktura określa informacje o typie pola pobranym z symbolu PDB.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,27 +47,27 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Elementy członkowskie
 
 `ulAppDomainID`\
-Identyfikator aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
+Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznej identyfikacji wystąpienia aplikacji.
 
 `guidModule`\
-Identyfikator GUID moduł, który zawiera tego pola.
+Identyfikator GUID modułu zawierającego to pole.
 
 `symid`\
-Identyfikator symbol, który odnosi się do tego pola.
+Identyfikator symbolu odpowiadający temu polu.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta struktura jest wyświetlany jako część Unii w [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury, kiedy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_PDB` (wartość z zakresu od [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Wyliczenie).
+Ta struktura pojawia się jako część unii w [strukturze TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) gdy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_PDB` (wartość z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenia).
 
 ## <a name="requirements"></a>Wymagania
 
 Nagłówek: sh.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

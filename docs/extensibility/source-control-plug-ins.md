@@ -1,55 +1,55 @@
 ---
-title: Wtyczki kontroli źródła | Dokumentacja firmy Microsoft
+title: Wtyczki kontroli źródła | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01e7a0ca8a509d430a0794a2cedb4b2e9d869585
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331828"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699889"
 ---
 # <a name="source-control-plug-ins"></a>Wtyczki kontroli źródła
-Sekcja dokumentacji zestawu SDK wtyczki kontroli źródła, zawiera specyfikację pełny interfejs, umożliwiająca systemów kontroli źródła można zintegrować z usługą [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Określa, składnia i semantyka różne typy danych i funkcje, które wtyczka do kontroli źródła musi implementować interfejsu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE).
+Sekcja referencyjna SDK wtyczki source control zawiera pełną specyfikację interfejsu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]która umożliwia zintegrowanie systemów sterowania źródłami z programem . Określa składnię i semantytykę różnych funkcji i typów danych, które wtyczka kontroli [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] źródła musi zaimplementować do interfejsu ze zintegrowanym środowiskiem programistycznym (IDE).
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md) Wyświetla listę funkcji, które muszą zostać zaimplementowane przez wtyczka do kontroli źródła aby można było zgodne z interfejsem API wtyczki kontroli źródła.
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md) Wyświetla listę funkcji, które muszą być zaimplementowane przez wtyczkę kontroli źródła w celu zapewnienia zgodności z interfejsem API wtyczki kontroli źródła.
 
-- [Wywołanie zwrotne funkcje implementowane przez środowisko IDE](../extensibility/callback-functions-implemented-by-the-ide.md) Opisuje funkcje, których wtyczka do kontroli źródła używa do przekazania informacji do środowiska IDE, podczas gdy niektóre polecenia zostaną wykonane.
+- [Funkcje wywołania zwrotnego zaimplementowane przez IDE](../extensibility/callback-functions-implemented-by-the-ide.md) W tym artykule opisano funkcje, które wtyczka kontroli źródła używa do przekazywania informacji z powrotem do IDE, podczas gdy niektóre polecenia są wykonywane.
 
-- [Moduły wyliczające](../extensibility/enumerators.md) zawiera listę typów danych modułu wyliczającego w interfejsie API wtyczki kontroli źródła wtyczka do kontroli źródła należy wiedzieć o.
+- [Wyliczacze](../extensibility/enumerators.md) Wyświetla listę typów danych modułu wyliczacza w interfejsie API dodatku Plug-in forżowania źródła, o których musi wiedzieć wtyczka kontroli źródła.
 
-- [Flagi możliwości](../extensibility/capability-flags.md) w tym artykule opisano `SCC_CAP_xxx` flagi wskazujące możliwości dostawcy.
+- [Flagi możliwości](../extensibility/capability-flags.md) W `SCC_CAP_xxx` tym artykule opisano flagi, które wskazują możliwości dostawcy.
 
-- [Flagi bitowe używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) Wyświetla listę flag, które są przydatne w kontekście określonego polecenia.
+- [Bitflags używane przez określone polecenia](../extensibility/bitflags-used-by-specific-commands.md) Wyświetla listę flag, które są przydatne w kontekście poszczególnych poleceń.
 
-- [Kody błędów](../extensibility/error-codes.md) wymieniono typowe wartości błędów zwracanych przez funkcje jako `SCCTRN`.
+- [Kody błędów](../extensibility/error-codes.md) Wyświetla listę typowych wartości `SCCTRN`błędów zwracanych przez funkcje jako .
 
-- [Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md) opisano klucze na potrzeby uzyskiwania dostępu do rejestru, aby znaleźć wtyczka do kontroli źródła.
+- [Ciągi używane jako klucze do znajdowania wtyczki kontroli źródła](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md) W tym artykule opisano klucze dostępu do rejestru w celu znalezienia wtyczki kontroli źródła.
 
-- [MSSCCPRJ. Plik SCC](../extensibility/mssccprj-scc-file.md) opis zawierający informacje nieprzezroczysta dla środowiska IDE, ale używanego przez wtyczka do kontroli źródła, aby znaleźć rozwiązania lub projektu w kontroli wersji pliku po stronie klienta.
+- [MSSCCPRJ. Plik SCC](../extensibility/mssccprj-scc-file.md) opisuje plik po stronie klienta, który zawiera informacje nieprzezroczyste dla IDE, ale który jest używany przez wtyczkę kontroli źródła, aby zlokalizować rozwiązanie lub projekt w kontroli wersji.
 
-- [Najlepsze rozwiązania dotyczące wdrażania wtyczki kontroli źródła](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md) zawiera zbiór ważne przypomnienia Technical Preview do zapamiętania, natomiast w przypadku implementowania interfejsu API wtyczki kontroli źródła.
+- [Najważniejsze wskazówki dotyczące implementowania wtyczki kontroli źródła](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md) Zawiera zbiór ważnych przypomnień technicznych do zapamiętania podczas implementowania interfejsu API wtyczki kontroli źródła.
 
-- [Ograniczenia długości ciągów](../extensibility/restrictions-on-string-lengths.md) opisano ograniczenia w interfejsie API wtyczki kontroli źródła na długości ciągów używanych w różnych funkcji.
+- [Ograniczenia dotyczące długości ciągów](../extensibility/restrictions-on-string-lengths.md) W tym artykule opisano ograniczenia w interfejsie API wtyczki kontroli źródła na długości ciągów używanych w różnych funkcjach.
 
-- [Słownik](../extensibility/source-control-plug-in-glossary.md) udostępnia przydatne warunki i ich definicje dla odczytu w dokumentacji zestawu SDK wtyczki kontroli źródła.
+- [Słowniczek](../extensibility/source-control-plug-in-glossary.md) Zawiera przydatne terminy i ich definicje do czytania dokumentacji SDK wtyczki source control.
 
-- [Instrukcje: Włącz wyłączanie ostrzeżenia dotyczącego zgodności dla wtyczek kontroli źródła](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md) zawiera opis sposobu wyłączania ostrzeżeń.
+- [Jak: Wyłącz ostrzeżenia o zgodności dla wtyczek kontroli źródła](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md) W tym artykule opisano sposób wyłączania ostrzeżeń.
 
 ## <a name="related-sections"></a>Sekcje pokrewne
-- [Przykładowe wtyczki kontroli źródła](https://www.microsoft.com/download/details.aspx?id=55984) zawiera przykładowy funkcji wtyczki kontroli źródła.
+- [Przykład wtyczki kontroli źródła](https://www.microsoft.com/download/details.aspx?id=55984) Udostępnia przykładową funkcję wtyczki kontroli źródła.
 
-- [Przewodnik wtyczki kontroli źródła testowania](../extensibility/internals/test-guide-for-source-control-plug-ins.md) opisano procedury badania dotyczące wtyczki kontroli źródła.
+- [Przewodnik po testach dla wtyczek kontroli źródła](../extensibility/internals/test-guide-for-source-control-plug-ins.md) W tym artykule opisano procedury testowania związane z wtyczką kontroli źródła.
 
-- [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md) w tym artykule omówiono sposób tworzenia wtyczki kontroli źródła dostarczającego funkcji kontroli źródła, gdy używasz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika kontroli źródła (UI).
+- [Tworzenie wtyczki kontroli źródła](../extensibility/internals/creating-a-source-control-plug-in.md) W tym artykule omówiono sposób tworzenia wtyczki kontroli źródła, która [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dostarcza funkcje kontroli źródła podczas korzystania z interfejsu użytkownika kontroli źródła (UI).
 
-- [Odwołanie do zestawu SDK programu Visual Studio](../extensibility/visual-studio-sdk-reference.md) Wyświetla listę tematów odwołań.
+- [Odwołanie do sdk programu Visual Studio](../extensibility/visual-studio-sdk-reference.md) Przedstawia listę tematów referencyjnych.

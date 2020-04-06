@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE | Microsoft Docs
+title: THREADSTATE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADSTATE enumeration
 ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727495"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713337"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Określa stan wątku.
@@ -53,7 +53,7 @@ public enum enum_THREADSTATE { 
  Wskazuje, że wątek jest uruchomiony.
 
  `THREADSTATE_STOPPED`\
- Wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.
+ Wskazuje, że wątek jest zatrzymany z powodu punktu przerwania.
 
  `THREADSTATE_FRESH`\
  Wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.
@@ -65,15 +65,15 @@ public enum enum_THREADSTATE { 
  Wskazuje, że wątek jest zablokowany (nie można wykonać wykonywania).
 
 ## <a name="remarks"></a>Uwagi
- Używane dla pola `dwThreadState` struktury [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) .
+ Używany dla `dwThreadState` pola [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) struktury.
 
 ## <a name="requirements"></a>Wymagania
- Nagłówek: Msdbg. h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft. VisualStudio. Debugger. Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
- Zestaw: Microsoft. VisualStudio. Debugger. Interop. dll
+ Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

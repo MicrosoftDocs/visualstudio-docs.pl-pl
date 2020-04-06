@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccRemove | Microsoft Docs
+title: Funkcja SccRemove | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ff7299868b96aedb7cc096b4e939a0f8015aeb8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 17889d50dbdcf68dd4cca161d6703b8b6d69ad47
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720772"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700452"
 ---
 # <a name="sccremove-function"></a>SccRemove, funkcja
 Ta funkcja usuwa pliki z systemu kontroli źródła.
@@ -39,48 +39,48 @@ SCCRTN SccRemove(
 #### <a name="parameters"></a>Parametry
  pvContext
 
-podczas Struktura kontekstu wtyczki kontroli źródła.
+[w] Struktura kontekstu wtyczki formantu źródła.
 
- Właściwość
+ Hwnd
 
-podczas Uchwyt okna środowiska IDE, który może być używany przez wtyczkę kontroli źródła jako element nadrzędny dla dowolnych okien dialogowych, które zapewnia.
+[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
 
  nFiles
 
-podczas Liczba plików określona w tablicy `lpFileNames`.
+[w] Liczba plików określonych `lpFileNames` w tablicy.
 
  lpFileNames
 
-podczas Tablica w pełni kwalifikowanych nazw ścieżek lokalnych dla plików do usunięcia.
+[w] Tablica w pełni kwalifikowanych nazw ścieżek lokalnych plików do usunięcia.
 
- lpComment
+ lpKomentuj
 
-podczas Komentarz, który ma zostać zastosowany do każdego usuniętego pliku.
+[w] Komentarz, który ma zostać zastosowany do każdego usuwanych plików.
 
- fOptions
+ Foptions
 
-podczas Flagi poleceń (nieużywane).
+[w] Flagi poleceń (nieużywane).
 
- pvOptions
+ pvOpcje
 
-podczas Opcje dotyczące wtyczki kontroli źródła.
+[w] Opcje specyficzne dla wtyczki sterowania źródłem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Usuwanie powiodło się.|
+|SCC_OK|Usunięcie zakończyło się sukcesem.|
 |SCC_E_FILENOTCONTROLLED|Wybrany plik nie znajduje się pod kontrolą źródła.|
 |SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|
-|SCC_E_ISCHECKEDOUT|Nie można usunąć pliku, ponieważ użytkownik jest aktualnie wyewidencjonowany.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem z uzyskaniem dostępu do systemu kontroli źródła prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
+|SCC_E_ISCHECKEDOUT|Nie można usunąć pliku, ponieważ użytkownik aktualnie go wyewidencjonował.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd; plik nie został usunięty.|
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|
+|SCC_E_NONSPECIFICERROR|Niespecyficzna awaria; nie został usunięty.|
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed zakończeniem.|
 
 ## <a name="remarks"></a>Uwagi
  Ta funkcja usuwa pliki z systemu kontroli źródła, ale nie usuwa ich z lokalnego dysku twardego użytkownika.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)

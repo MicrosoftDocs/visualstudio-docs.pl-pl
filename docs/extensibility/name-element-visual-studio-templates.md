@@ -1,5 +1,5 @@
 ---
-title: Nazwa — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element nazwy (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b0365740f5ea8ab20ed79d077134afd32356bcc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344722"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702455"
 ---
-# <a name="name-element-visual-studio-templates"></a>Name — element (szablony Visual Studio)
-Określa nazwę szablonu, która jest wyświetlana w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.
+# <a name="name-element-visual-studio-templates"></a>Element nazwa (szablony programu Visual Studio)
+Określa nazwę szablonu wyświetlaną w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**
 
- \<VSTemplate> \<TemplateData> \<Name>
+ \<Nazwa> \<templatedata>> \<
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,8 +42,8 @@ Określa nazwę szablonu, która jest wyświetlana w **nowy projekt** lub **Doda
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Package`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Identyfikator GUID, który określa pakietu programu Visual Studio.|
-|`ID`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Określa identyfikator zasobu. w programie Visual Studio|
+|`Package`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Identyfikator GUID określający identyfikator pakietu programu Visual Studio.|
+|`ID`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Określa identyfikator zasobu programu Visual Studio.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -52,18 +52,18 @@ Określa nazwę szablonu, która jest wyświetlana w **nowy projekt** lub **Doda
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wartość tekstowa jest wymagany, chyba że `Package` i `ID` atrybuty są używane.
+ Wartość tekstowa jest `Package` wymagana, `ID` chyba że używane są atrybuty i.
 
  Tekst zawiera nazwę szablonu.
 
 ## <a name="remarks"></a>Uwagi
- `Name` jest wymaganym elementem podrzędnym elementu `TemplateData`.
+ `Name`jest wymaganym elementem `TemplateData`podrzędnym .
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -89,6 +89,6 @@ Określa nazwę szablonu, która jest wyświetlana w **nowy projekt** lub **Doda
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

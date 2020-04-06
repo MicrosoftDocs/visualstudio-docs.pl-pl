@@ -1,42 +1,42 @@
 ---
-title: Pobieranie właściwości projektu | Microsoft Docs
+title: Uzyskiwanie właściwości projektu | Dokumenty firmy Microsoft
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cac5c55dd8fdeb1ba231d144d94c8be9b680cc6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ddfd48827bc762c9189f9b7600cfe9200e5c866
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633166"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711414"
 ---
-# <a name="get-project-properties"></a>Pobierz właściwości projektu
+# <a name="get-project-properties"></a>Uzyskaj właściwości projektu
 
-W tym instruktażu pokazano, jak wyświetlić właściwości projektu w oknie narzędzi.
+W tym przewodniku pokazano, jak wyświetlać właściwości projektu w oknie narzędzia.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visual Studio SDK z centrum pobierania. Jest ona dostępna jako opcjonalna funkcja w Instalatorze programu Visual Studio. Zestaw VS SDK można także zainstalować później. Aby uzyskać więcej informacji, zobacz [Instalowanie zestawu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Aby utworzyć projekt VSIX i dodać okno narzędzi
+### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Aby utworzyć projekt VSIX i dodać okno narzędzia
 
-1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Utwórz projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX o nazwie `ProjectPropertiesExtension`. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt** , wyszukując frazę "VSIX".
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od projektu wdrożenia VSIX, który będzie zawierał zasoby rozszerzenia. Utwórz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt VSIX o nazwie `ProjectPropertiesExtension`. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt,** wyszukując "vsix".
 
-2. Dodaj okno narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `ProjectPropertiesToolWindow`. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj**  > **nowy element**. W **oknie dialogowym Dodaj nowy element**przejdź do **pozycji elementy C# wizualne**  > **rozszerzanie** i wybierz **niestandardowe okno narzędzi**. W polu **Nazwa** w dolnej części okna dialogowego Zmień nazwę pliku na `ProjectPropertiesToolWindow.cs`. Aby uzyskać więcej informacji na temat tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia przy użyciu okna narzędzi](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Dodaj okno narzędzia, dodając szablon elementu `ProjectPropertiesToolWindow`niestandardowego okna narzędzia o nazwie . W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **nowy element**. W **oknie dialogowym Dodawanie nowego elementu**przejdź do pozycji**Rozszerzalność** **elementów** > programu Visual C# i wybierz pozycję **Okno narzędzia niestandardowego**. W polu **Nazwa** u dołu okna dialogowego `ProjectPropertiesToolWindow.cs`zmień nazwę pliku na . Aby uzyskać więcej informacji na temat tworzenia niestandardowego okna narzędzia, zobacz [Tworzenie rozszerzenia z oknem narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-3. Skompiluj rozwiązanie i sprawdź, czy jest ono kompilowane bez błędów.
+3. Skompiluj rozwiązanie i sprawdź, czy kompiluje się bez błędów.
 
-### <a name="to-display-project-properties-in-a-tool-window"></a>Aby wyświetlić właściwości projektu w oknie narzędzi
+### <a name="to-display-project-properties-in-a-tool-window"></a>Aby wyświetlić właściwości projektu w oknie narzędzia
 
-1. W pliku ProjectPropertiesToolWindowCommand.cs Dodaj następujące dyrektywy using.
+1. W pliku ProjectPropertiesToolWindowCommand.cs dodaj następujące elementy za pomocą dyrektyw.
 
     ```csharp
     using EnvDTE;
@@ -44,9 +44,9 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
 
     ```
 
-2. W *ProjectPropertiesToolWindowControl. XAML*usuń istniejący przycisk i Dodaj element TreeView z przybornika. Możesz również usunąć procedurę obsługi zdarzeń kliknięcia z pliku *ProjectPropertiesToolWindowControl.XAML.cs* .
+2. W *pliku ProjectPropertiesToolWindowControl.xaml*usuń istniejący przycisk i dodaj widok drzewa z przybornika. Można również usunąć program obsługi zdarzeń kliknięcia z pliku *ProjectPropertiesToolWindowControl.xaml.cs.*
 
-3. W *ProjectPropertiesToolWindowCommand.cs*użyj metody `ShowToolWindow()`, aby otworzyć projekt i odczytać jego właściwości, a następnie Dodaj właściwości do widoku TreeView. Kod dla ShowToolWindow powinien wyglądać następująco:
+3. W *ProjectPropertiesToolWindowCommand.cs*, użyj `ShowToolWindow()` metody, aby otworzyć projekt i odczytać jego właściwości, a następnie dodać właściwości do TreeView. Kod dla ShowToolWindow powinien wyglądać następująco:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -93,10 +93,10 @@ Począwszy od programu Visual Studio 2015, nie należy instalować zestawu Visua
     }
     ```
 
-4. Skompiluj projekt i Rozpocznij debugowanie. Powinno zostać wyświetlone wystąpienie eksperymentalne.
+4. Skompiluj projekt i rozpocznij debugowanie. Powinno pojawić się wystąpienie eksperymentalne.
 
-5. W eksperymentalnym wystąpieniu Otwórz projekt.
+5. W wystąpieniu eksperymentalnym otwórz projekt.
 
-6. W **widoku**  > **inne okna** kliknij pozycję **ProjectPropertiesToolWindow**.
+6. W **widoku** > **innego systemu Windows** kliknij pozycję **ProjectPropertiesToolWindow**.
 
-  Kontrolka drzewa powinna zostać wyświetlona w oknie narzędzia wraz z nazwą pierwszego projektu i wszystkimi jego właściwościami projektu.
+  Formant drzewa powinien zostać wyświetlony w oknie narzędzia wraz z nazwą pierwszego projektu i wszystkich jego właściwości projektu.

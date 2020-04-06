@@ -1,54 +1,54 @@
 ---
-title: Słownik wtyczki kontroli źródła | Microsoft Docs
+title: Słowniczek wtyczki source control | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 672a96c31137a52f3bd4a8c826cef1b19406790b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719585"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699910"
 ---
 # <a name="source-control-plug-in-glossary"></a>Słownik wtyczki kontroli źródła
-Poniższe pomocne warunki i definicje odnoszą się do dokumentacji zestawu SDK dodatku do kontroli źródła.
+Poniższe przydatne terminy i definicje odnoszą się do dokumentacji SDK wtyczki source control.
 
 ## <a name="definitions"></a>Definicje
- Ewidencjonowanie, gdy użytkownik wprowadza zmiany w roboczej kopii, użytkownik musi wysłać zmiany z kopii roboczej do centralnego repozytorium kontroli źródła. Spowoduje to utworzenie nowej wersji pliku, który jest dostępny dla innych użytkowników. Ten proces jest nazywany zaewidencjonowaniam.
+ Zaewidencjonuj Gdy użytkownik wprowadza zmiany w kopii roboczej, użytkownik musi wysłać zmiany z kopii roboczej do centralnego repozytorium kontroli źródła. Spowoduje to utworzenie nowej wersji pliku, która jest dostępna dla innych użytkowników. Proces ten jest nazywany odprawą.
 
- Wyewidencjonuj czynność żądania kopii roboczej z repozytorium, informując repozytorium, aby go zmodyfikować. Kopia robocza odzwierciedla stan projektu od momentu wyewidencjonowania.
+ Wyewidencjonuj Czynność żądania kopii roboczej z repozytorium, informując repozytorium o zamiarze jej modyfikacji. Kopia robocza odzwierciedla stan projektu w momencie wyewidencjonowania.
 
- Klient programu, który korzysta z systemu kontroli kodu źródłowego. Na potrzeby tej dokumentacji jest to środowisko IDE programu Visual Studio.
+ Klient Program, który używa systemu kontroli kodu źródłowego. Na potrzeby tej dokumentacji jest to ide programu Visual Studio.
 
- Dodaj komentarz do komunikatu opisującego zmiany, które użytkownik może dołączyć do poprawki w przypadku wykonania operacji kontroli źródła.
+ Komentarz Komunikat opisujący zmiany, które użytkownik może dołączyć do poprawki podczas wykonywania operacji kontroli źródła.
 
- Konflikt sytuacji, gdy dwaj użytkownicy próbują zaewidencjonować zmiany w tym samym regionie tego samego pliku. Zwykle należy wykonać scalanie.
+ Konflikt Sytuacja, gdy dwóch użytkowników próbuje zaewidencjonować zmiany w tym samym regionie tego samego pliku. Zazwyczaj należy wykonać scalanie.
 
- Katalog folder lokalny po stronie klienta jest określany jako katalog. Jest to kopia, w której użytkownik wprowadza zmiany. Może istnieć wiele kopii roboczych danego projektu; Ogólnie każdy deweloper ma własną kopię.
+ Katalog Folder lokalny po stronie klienta jest określany jako katalog. Jest to kopia, w której użytkownik faktycznie wprowadza zmiany. Może istnieć wiele kopii roboczych danego projektu; zazwyczaj każdy deweloper ma własną kopię.
 
- Pobieranie operacji get powoduje, że kopia robocza użytkownika jest aktualna przy użyciu kopii repozytorium. W przeciwieństwie do wyewidencjonowania, pobieranie jest wykonywane, gdy użytkownik po prostu potrzebuje najnowszej kopii, ale nie wprowadza żadnych zmian.
+ Operacja Get A get aktualizuje kopię roboczą użytkownika za pomocą kopii repozytorium. W przeciwieństwie do wyewidencjonowania, get jest wykonywane, gdy użytkownik po prostu potrzebuje najnowszej kopii, ale zamierza wprowadzić żadnych zmian.
 
- Historia jest zazwyczaj podsumowaniem wszystkich wyewidencjonowania, zaewidencjonowania, aktualizacji, tagów i wydań wykonanych w repozytorium kontroli źródła.
+ Historia Jest to zazwyczaj podsumowanie wszystkich wyewidencjonowania, zaewidencjonowania, aktualizacji, tagów i wydań wykonanych w repozytorium kontroli źródła.
 
- IDE ogólnie dotyczy zintegrowanego środowiska projektowego programu Visual Studio. Jednak może ona również odnosić się do innych środowisk klienckich, które uznają interfejs API wtyczki kontroli źródła.
+ IDE ogólnie odwołuje się do visual studio zintegrowane środowisko programistyczne. Jednak może również odwoływać się do innych środowisk klienta, które rozpoznają interfejs API wtyczki kontroli źródła.
 
- Scal proces, w którym są łączone co najmniej dwa pliki kodu źródłowego, aby utworzyć nowy plik, który zawiera wszystkie funkcje z poprzednich plików. Koncepcja ta jest istotna w kontroli wersji, w której co najmniej dwaj deweloperzy pracują nad plikami jednocześnie.
+ Scalanie procesu, podczas którego dwa lub więcej plików kodu źródłowego są łączone w celu utworzenia nowego pliku, który zawiera wszystkie funkcje z poprzednich plików. Ta koncepcja jest niezbędna w kontroli wersji, gdzie dwóch lub więcej programistów pracuje nad plikami jednocześnie.
 
- Projekt folder kontroli źródła jest często określany jako projekt. Nie ma żadnych relacji z projektami ani rozwiązaniami w programie Visual Studio.
+ Projekt Folder kontroli źródła jest często określany jako projekt. Nie ma żadnych relacji z projektami lub rozwiązaniami w programie Visual Studio.
 
- Wtyczka biblioteki DLL, która zapewnia funkcje kontroli źródła przez implementację interfejsu API wtyczki kontroli źródła.
+ Biblioteka DLL dodatku Plug-in, która zapewnia funkcję kontroli źródła przez implementowanie interfejsu API wtyczki kontroli źródła.
 
- Repozytorium kopii głównej, w której system kontroli źródła przechowuje pełną historię poprawek projektu. Każdy projekt ma dokładnie jedno repozytorium.
+ Repozytorium Kopia główna, w której system kontroli źródła przechowuje pełną historię wersji projektu. Każdy projekt ma dokładnie jedno repozytorium.
 
- Poprawka zatwierdzonej zmiany w historii pliku lub zestawu plików. Poprawka jest jedną migawką w stale zmienianym projekcie.
+ Wersja Zatwierdzona zmiana w historii pliku lub zestawu plików. Wersja to jedna migawka w stale zmieniającym się projekcie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)

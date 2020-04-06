@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Microsoft Docs
+title: NAME_MATCH | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09ddb4653d1f13024360daca30eab40ebf57df0f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346739"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714291"
 ---
-# <a name="namematch"></a>NAME_MATCH
-Wybierze case opcję do dopasowania nazwy.
+# <a name="name_match"></a>NAME_MATCH
+Wybiera opcję przypadku pasującego nazw.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,16 +45,16 @@ public enum NameMatchOptions { 
 
 ## <a name="fields"></a>Pola
  `nmNone`\
- Nie określono opcji.
+ Nie określono żadnych opcji.
 
  `nmCaseSensitive`\
- Wskazuje, że nazwy do dopasowania jest rozróżniana wielkość liter.
+ Wskazuje, że nazwy, które mają być dopasowane są rozróżniane.
 
  `nmCaseInsensitive`\
- Wskazuje, czy nazwy, które mają być dopasowywane nie jest rozróżniana wielkość liter.
+ Wskazuje, że nazwy, które mają być dopasowane nie są rozróżniane wielkość liter.
 
 ## <a name="remarks"></a>Uwagi
- Przekazywany jako argument do następujących metod:
+ Przekazany jako argument do następujących metod:
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -67,11 +67,11 @@ public enum NameMatchOptions { 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 - [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)

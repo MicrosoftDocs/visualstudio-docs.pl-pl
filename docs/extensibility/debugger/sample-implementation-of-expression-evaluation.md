@@ -1,5 +1,5 @@
 ---
-title: Przykładowy implementacji oceny wyrażenia | Dokumentacja firmy Microsoft
+title: Przykładowa realizacja oceny wyrażenia | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,37 +7,37 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluators
 - expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0135c8dd61ca2505c1458bc157b574e6bcbee09a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315072"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713099"
 ---
-# <a name="sample-implementation-of-expression-evaluation"></a>Przykład implementacji oceny wyrażenia
+# <a name="sample-implementation-of-expression-evaluation"></a>Przykładowa implementacja oceny wyrażenia
 > [!IMPORTANT]
-> W programie Visual Studio 2015 ten sposób implementowania ewaluatory wyrażeń jest przestarzały. Aby uzyskać informacji dotyczących implementowania ewaluatory wyrażeń CLR, zobacz [ewaluatory wyrażeń CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [zarządzany Ewaluator wyrażeń przykładowe](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> W programie Visual Studio 2015 ten sposób implementowania oceniających wyrażenia jest przestarzały. Aby uzyskać informacje na temat implementowania oceniających wyrażenia CLR, zobacz [oceniający wyrażenia CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) i [próbka ewaluatora zarządzanych wyrażeń](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Dla **Obejrzyj** wyrażenia okna wyrażeń, wywołania programu Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) do produkcji [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) obiektu. `IDebugExpressionContext2::ParseText` tworzy wystąpienie ewaluatora wyrażeń (EE) i wywołuje [przeanalizować](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) można pobrać [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.
+ W przypadku wyrażenia okna **czujki** program Visual Studio wywołuje [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) do produkcji obiektu [IDebugExpression2.](../../extensibility/debugger/reference/idebugexpression2.md) `IDebugExpressionContext2::ParseText`wystąpienia oceniającego wyrażenie (EE) i wywołuje [Parse,](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) aby uzyskać [obiekt IDebugParsedExpression.](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
- `IDebugExpressionEvaluator::Parse` Wykonuje następujące zadania:
+ Wykonuje `IDebugExpressionEvaluator::Parse` następujące zadania:
 
-1. [C++ tylko] Analizuje wyrażenia, aby wyszukać błędy.
+1. [Tylko C++] Analizuje wyrażenie, aby wyszukać błędy.
 
-2. Tworzy klasę (o nazwie `CParsedExpression` w tym przykładzie), które jest uruchamiane `IDebugParsedExpression` interfejs i są przechowywane w klasie wyrażenie które ma zostać przeanalizowany.
+2. Wystąpienia klasy (o `CParsedExpression` nazwie w tym przykładzie), który uruchamia `IDebugParsedExpression` interfejs i przechowuje w klasie wyrażenie, które mają być analizowane.
 
 3. Zwraca `IDebugParsedExpression` interfejs z `CParsedExpression` obiektu.
 
 > [!NOTE]
-> W przykładach i w przykładzie MyCEE Ewaluator wyrażeń nie należy oddzielić analizy z oceny.
+> W przykładach, które następują i w przykładzie MyCEE oceniający wyrażenie nie oddziela analizowania od oceny.
 
 ## <a name="managed-code"></a>Kod zarządzany
- Poniższy kod przedstawia implementację `IDebugExpressionEvaluator::Parse` w kodzie zarządzanym. Ta wersja metody odracza analizy do [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) jako kod do analizowania oblicza również w tym samym czasie (zobacz [oceny wyrażenia kontrolnego](../../extensibility/debugger/evaluating-a-watch-expression.md)).
+ Poniższy kod przedstawia `IDebugExpressionEvaluator::Parse` implementację w kodzie zarządzanym. Ta wersja metody odracza analizowanie do [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) jako kod do analizowania również ocenia w tym samym czasie (zobacz [Oceń wyrażenie Czujka).](../../extensibility/debugger/evaluating-a-watch-expression.md)
 
 ```csharp
 namespace EEMC
@@ -64,7 +64,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>Niezarządzany kod
-Poniższy kod jest implementacją `IDebugExpressionEvaluator::Parse` w niezarządzanym kodzie. Ta metoda wywołuje funkcję Pomocnika `Parse`, można przeanalizować wyrażenia i sprawdź błędy, ale ta metoda ignoruje wartość wynikową. Posiadanie oceny jest odroczone do [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) gdy wyrażenie jest analizowany, gdy zostanie ono ocenione (zobacz [oceny wyrażenia kontrolnego](../../extensibility/debugger/evaluating-a-watch-expression.md)).
+Poniższy kod jest `IDebugExpressionEvaluator::Parse` implementacją w kodzie niezarządzanym. Ta metoda wywołuje funkcję `Parse`pomocnika, , aby przeanalizować wyrażenie i sprawdzić, czy nie ma błędów, ale ta metoda ignoruje wynikową wartość. Ocena formalna jest odroczona do [EvaluateSync,](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) gdzie wyrażenie jest analizowane podczas jego oceny (zobacz [Oceń wyrażenie Czujka).](../../extensibility/debugger/evaluating-a-watch-expression.md)
 
 ```cpp
 STDMETHODIMP CExpressionEvaluator::Parse(
@@ -107,6 +107,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Ocena wyrażenia okna wyrażeń kontrolnych](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [Ocena wyrażenia kontrolnego](../../extensibility/debugger/evaluating-a-watch-expression.md)
+## <a name="see-also"></a>Zobacz też
+- [Ocena wyrażenia okna czujki](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
+- [Ocena wyrażenia czujki](../../extensibility/debugger/evaluating-a-watch-expression.md)

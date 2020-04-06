@@ -1,5 +1,5 @@
 ---
-title: Identyfikator GUID i identyfikatory poleceń programu Visual Studio | Microsoft Docs
+title: Identyfikatory GUID i identyfikatory poleceń programu Visual Studio | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,58 +9,58 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7670eacc875bf7c5437d9bb92cc1932753093bd
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8932f23d301eabc97414bf76453d70336e0dabae
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186635"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708253"
 ---
-# <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikator GUID i identyfikatory poleceń programu Visual Studio
-Wartości identyfikatora GUID i identyfikatora poleceń zawartych w zintegrowanym środowisku programistycznym (IDE) programu Visual Studio są zdefiniowane w plikach. vsct, które są instalowane w ramach zestawu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez środowisko IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
+# <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory poleceń programu Visual Studio
+Wartości identyfikatorów GUID i identyfikatorów poleceń zawartych w zintegrowanym środowisku programistycznym Visual Studio (IDE) są zdefiniowane w plikach vsct instalowanych jako część pakietu SDK programu Visual Studio. Aby uzyskać więcej informacji, zobacz [polecenia, menu i grupy zdefiniowane przez IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
- Aby uzyskać więcej informacji na temat sposobu pracy z obiektami IDE zdefiniowanymi w plikach *. vsct* , zobacz sekcję [rozszerzając menu i polecenia](../../extensibility/extending-menus-and-commands.md).
+ Aby uzyskać więcej informacji na temat pracy z obiektami IDE zdefiniowanymi w plikach *vsct,* zobacz [Rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md).
 
-## <a name="find-a-command-definition"></a>Znajdź definicję polecenia
- Ponieważ program Visual Studio definiuje więcej niż 1000 poleceń, nie jest praktyczne, aby wyświetlić je w tym miejscu. Zamiast tego wykonaj następujące kroki, aby zlokalizować definicję polecenia.
+## <a name="find-a-command-definition"></a>Znajdowanie definicji polecenia
+ Ponieważ visual studio definiuje więcej niż 1000 poleceń, jest niepraktyczne, aby wyświetlić je wszystkie tutaj. Zamiast tego wykonaj następujące kroki, aby zlokalizować definicję polecenia.
 
 ### <a name="to-locate-a-command-definition"></a>Aby zlokalizować definicję polecenia
 
-1. W programie Visual Studio Otwórz następujące pliki *< w ścieżce instalacji zestawu SDK programu Visual studio\>\VisualStudioIntegration\Common\Inc\\* folder: *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
+1. W programie Visual Studio otwórz następujące pliki w *<ścieżce\>instalacji programu Visual Studio\\ SDK \VisualStudioIntegration\Common\Inc* folder: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.
 
-    Większość poleceń programu Visual Studio jest zdefiniowanych w *SharedCmdDef. vsct* i *ShellCmdDef. vsct*. *VsDbgCmdUsed. vsct* definiuje polecenia, które odnoszą się do debugera, a *Venusmenu. vsct* definiuje polecenia, które są specyficzne dla programowania w sieci Web.
+    Większość poleceń programu Visual Studio jest zdefiniowana w *plikach SharedCmdDef.vsct* i *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* definiuje polecenia, które odnoszą się do debugera, a *Venusmenu.vsct* definiuje polecenia, które są specyficzne dla tworzenia sieci Web.
 
-2. Jeśli polecenie jest elementem menu, należy zwrócić uwagę na dokładny tekst elementu menu. Jeśli polecenie jest przyciskiem na pasku narzędzi, należy zwrócić uwagę na tekst etykietki narzędzia, który pojawia się po jej zatrzymaniu.
+2. Jeśli polecenie jest elementem menu, zwróć uwagę na dokładny tekst elementu menu. Jeśli polecenie jest przyciskiem na pasku narzędzi, zanotuj tekst etykietki narzędzia, który pojawia się po wstrzymaniu.
 
-3. Naciśnij klawisz **Ctrl**+**F** , aby otworzyć okno dialogowe **Znajdowanie** .
+3. Naciśnij **klawisz Ctrl**+**F,** aby otworzyć okno dialogowe **Znajdowanie.**
 
-4. W polu **Znajdź** , wpisz tekst zanotowany w kroku 2.
+4. W polu **Znajdź wpisz** tekst odnotowany w kroku 2.
 
-5. Sprawdź, czy **wszystkie otwarte dokumenty** są wyświetlane w polu **Szukaj w** .
+5. Sprawdź, czy **wszystkie otwarte dokumenty** są wyświetlane w polu **Szukaj w** polu.
 
-6. Kliknij przycisk **Znajdź następny** do momentu wybrania tekstu w sekcji `<Strings>` [elementu Button](../../extensibility/button-element.md).
+6. Kliknij przycisk **Znajdź następny,** aż tekst `<Strings>` zostanie zaznaczony w sekcji [elementu Przycisk](../../extensibility/button-element.md).
 
-    Element `<Button>`, w którym pojawia się polecenie, jest definicją polecenia.
+    Element, `<Button>` w który pojawia się polecenie, jest definicją polecenia.
 
-   Po znalezieniu definicji polecenia można umieścić kopię polecenia w innym menu lub pasku narzędzi, tworząc [element CommandPlacement](../../extensibility/commandplacement-element.md) , który ma te same `guid` i `id` wartości jako polecenie. Aby uzyskać więcej informacji, zobacz [Tworzenie grup przycisków do wielokrotnego użytku](../../extensibility/creating-reusable-groups-of-buttons.md).
+   Po znalezieniu definicji polecenia można umieścić kopię polecenia w innym menu lub na pasku narzędzi, tworząc `guid` `id` [element CommandPlacement,](../../extensibility/commandplacement-element.md) który ma takie same wartości jak polecenie. Aby uzyskać więcej informacji, zobacz [Tworzenie grup przycisków wielokrotnego użytku](../../extensibility/creating-reusable-groups-of-buttons.md).
 
 ### <a name="special-cases"></a>Specjalne przypadki
- W następujących przypadkach tekst menu lub etykietka narzędzia mogą nie być dokładnie zgodne z definicją polecenia.
+ W następujących przypadkach tekst menu lub tekst etykietki narzędzia może nie być dokładnie zgodny z tym, co znajduje się w definicji polecenia.
 
-- Elementy menu, które zawierają podkreślony znak, taki jak polecenie **Print** w menu **plik** , w którym *P* jest podkreślony.
+- Elementy menu, które zawierają podkreślony znak, takie jak polecenie **Drukuj** w menu **Plik,** w którym podkreślono *P.*
 
-     Znaki, które są poprzedzone znakiem handlowego "i" (&) w nazwach elementów menu, są wyświetlane jako podkreślone. Jednak pliki *. vsct* są napisane w języku XML, który używa znaku handlowego "i" (&), aby wskazać znaki specjalne i wymaga, aby wyświetlić znak "i", musi być wpisany jako *&amp;amp;* . W związku z tym w pliku *. vsct* polecenie **Print** pojawia się jako *&amp;amp; Drukuj*.
+     Znaki poprzedzone znakiem ampersand (&) w nazwach elementów menu są wyświetlane jako podkreślone. Jednak pliki *.vsct* są zapisywane w formacie XML, który używa znaku ampersand (&) do wskazywania znaków specjalnych i wymaga, aby znak ampersand, który ma być wyświetlany, musi być zapisany jako * &amp;wzmacniacz;*. W związku z tym w pliku *vsct* polecenie **Drukuj** jest wyświetlane jako * &amp;wzmacniacz; Drukowanie*.
 
-- Polecenia, które mają dynamiczny tekst, takie jak **zapisz** \<bieżącą nazwę pliku\>i dynamicznie generowane elementy menu, takie jak elementy na liście **ostatnie pliki** .
+- Polecenia z tekstem dynamicznym, takie jak\> **Zapisz** \<bieżącą nazwę pliku, i dynamicznie generowane elementy menu, takie jak elementy na liście Ostatnie **pliki.**
 
-     Nie istnieje niezawodny sposób wyszukiwania tekstu dynamicznego. Zamiast tego Znajdź grupę, która hostuje odpowiednie polecenie, sprawdzając identyfikatory [GUID i identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub identyfikatorów [GUID i identyfikatory pasków narzędzi programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), a następnie wyszukaj identyfikator tej grupy. Jeśli definicja polecenia nie ma grupy jako [elementu nadrzędnego](../../extensibility/parent-element.md), Wyszukaj *SharedCmdPlace. vsct* i *ShellCmdPlace. vsct* (lub *VsDbgCmdPlace. vsct* dla poleceń debugera) dla elementu `<CommandPlacement>`, który ustawia element nadrzędny dotyczące. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct*i *VsDbgCmdPlace. vsct* znajdują się *\<w ścieżce instalacji zestawu SDK programu Visual Studio\>\VisualStudioIntegration\Common\Inc\\* folder.
+     Nie ma niezawodnego sposobu wyszukiwania tekstu dynamicznego. Zamiast tego znajdź grupę, która obsługuje żądane polecenie, konsultując [identyfikatory GUID i identyfikatory menu programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [identyfikatory GUID i identyfikatory pasków narzędzi programu Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)i wyszukaj identyfikatory tej grupy. Jeśli definicja polecenia nie ma grupy jako [elementu nadrzędnego,](../../extensibility/parent-element.md)wyszukaj *sharedcmdplace.vsct* i *ShellCmdPlace.vsct* (lub *VsDbgCmdPlace.vsct* dla poleceń debugera) dla `<CommandPlacement>` elementu, który ustawia element nadrzędny polecenia. *SharedCmdPlace.vsct*, *ShellCmdPlace.vsct*i *VsDbgCmdPlace.vsct* znajdują się w * \<ścieżce\>instalacji programu Visual Studio\\ SDK \VisualStudioIntegration\Common\Inc* folder.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Pliki tabeli poleceń programu Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Dokumentacja schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+- [Pliki tabeli poleceń programu Visual Studio (vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Odwołanie do schematu XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

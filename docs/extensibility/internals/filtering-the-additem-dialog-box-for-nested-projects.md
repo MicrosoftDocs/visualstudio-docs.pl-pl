@@ -1,36 +1,36 @@
 ---
-title: Filtrowanie okna dialogowego dla zagnieżdżonych projektów | Dokumentacja firmy Microsoft
+title: Filtrowanie okna dialogowego AddItem dla projektów zagnieżdżonych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - filtering, nested projects
 - nested projects, AddItem dialog box filtering
 ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc3ff1f85e8c8c71bf8ef16e6fe0c89bf3613f4d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328950"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708383"
 ---
-# <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Filtrowanie okna dialogowego AddItem dla zagnieżdżonych projektów
-Po wyświetleniu **AddItem** okno dialogowe dla projektu zagnieżdżonego projekt nadrzędny można kontrolować, jakie mają być wyświetlane w oknie dialogowym.
+# <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Filtrowanie okna dialogowego AddItem dla projektów zagnieżdżonych
+Po wyświetleniu okna dialogowego **AddItem** dla projektu zagnieżdżonego projekt nadrzędny może kontrolować, jakie elementy są wyświetlane w oknie dialogowym.
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Interfejs umożliwia filtrowanie węzłów, które będą znajdować się w **AddItem** okno dialogowe. Jeśli projekt podrzędny Wyświetla **AddItem** okno dialogowe nadrzędny można zaimplementować `IVsFilterAddProjectItemDlg` interfejsu i filtrowanie elementów, które w przeciwnym razie będzie wyświetlana w projekcie elementu podrzędnego.
+ Interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> umożliwia filtrowanie węzłów, które będą w oknie dialogowym **AddItem.** Gdy projekt podrzędny wyświetla Okno dialogowe **AddItem,** element nadrzędny można zaimplementować `IVsFilterAddProjectItemDlg` interfejs i filtr elementów, które w przeciwnym razie byłyby wyświetlane w projekcie podrzędnym.
 
- Gdy projekty są pogrupowane według funkcji w ramach projektów konkretny nadrzędny, można zaimplementować `IVsFilterAddProjectItemDlg` gdy użytkownik wybierze **elementu Dodawanie projektu** menu skrótów w projekcie zagnieżdżonych. Implementowanie `IvsFilterAddProjectItemDlg displays` tylko projekt elementy lub pliki specyficzne dla tej grupy. Elementy projektu dla innych grup są odfiltrowywane z okno dialogowe, nawet jeśli są one przechowywane w tym samym katalogu.
+ Gdy projekty są pogrupowane według funkcji w `IVsFilterAddProjectItemDlg` ramach określonych projektów nadrzędnych, można zaimplementować, gdy użytkownik wybierze **Dodaj element projektu** w menu skrótów w projekcie zagnieżdżonego. Implementowanie `IvsFilterAddProjectItemDlg displays` tylko elementów projektu lub plików specyficznych dla tej grupy. Elementy projektu dla innych grup są filtrowane z okna dialogowego, nawet jeśli są przechowywane w tym samym katalogu.
 
- Gdy użytkownik uruchomi **AddItem** okno dialogowe podrzędnego implementacji projektu nadrzędnego `IVsFilterAddProjectItemDlg` nosi nazwę interfejsu.
+ Gdy użytkownik otworzy okno dialogowe **AddItem** dla dziecka, wywoływana `IVsFilterAddProjectItemDlg` jest implementacja interfejsu przez projekt nadrzędny.
 
- `IVsFilterAddProjectItemDlg` Interfejsu można też wdrożyć filtrowanie według kategorii. Aby uzyskać więcej informacji, zobacz [Dodawanie elementów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) i [rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
+ Interfejs `IVsFilterAddProjectItemDlg` można również zaimplementować filtrowanie według kategorii. Aby uzyskać więcej informacji, zobacz [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) i [rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [Dodawanie elementów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)
+- [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Rejestrowanie szablonów projektów i towarów](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Projekty nest](../../extensibility/internals/nesting-projects.md)

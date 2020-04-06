@@ -1,35 +1,35 @@
 ---
-title: Rozszerzenia edytora i usługi językowej | Microsoft Docs
+title: Rozszerzenia edytora i usługi językowej | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK]
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b6a64d92e26ff1714a77adbef88e02fca966f1f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7e37165dc5fe9ac010545304218e807d923b424b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186702"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712018"
 ---
 # <a name="editor-and-language-service-extensions"></a>Rozszerzenia edytora i usługi językowej
-Można zwiększyć większość funkcji edytora kodu programu Visual Studio. Edytor jest oparty na Windows Presentation Foundation (WPF) i jest zapisywana w kodzie zarządzanym. Chociaż ten projekt różni się od projektów we wcześniejszych wersjach programu Visual Studio, zapewnia większość tych samych funkcji. Aby zwiększyć Edytor, użyj Managed Extensibility Framework (MEF).
+Można rozszerzyć większość funkcji edytora kodu programu Visual Studio. Edytor jest oparty na Windows Presentation Foundation (WPF) i jest napisany w kodzie zarządzanym. Mimo że ten projekt różni się od projektów we wcześniejszych wersjach programu Visual Studio, zapewnia większość tych samych funkcji. Aby rozszerzyć edytor, należy użyć managed extensibility framework (MEF).
 
- Zestaw Visual Studio SDK zawiera karty, które są nazywane *podkładkami* do obsługi pakietów VSPackage utworzonych dla wcześniejszych wersji. Jeśli jednak masz istniejący pakietu VSPackage, Zalecamy zaktualizowanie go do nowej technologii w celu uzyskania lepszej wydajności i niezawodności.
+ Visual Studio SDK udostępnia karty znane jako *podkładki* do obsługi vsPackages, które zostały napisane dla wcześniejszych wersji. Niemniej jednak jeśli masz istniejący vsPackage, zaleca się zaktualizować go do nowej technologii w celu uzyskania lepszej wydajności i niezawodności.
 
-## <a name="related-topics"></a>Tematy pokrewne
+## <a name="related-topics"></a>Powiązane tematy
 
 |Tytuł|Opis|
 |-----------|-----------------|
 |[Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Wprowadzenie do korzystania z szablonów elementów edytora.|
-|[Poszerzanie edytora i usług językowych](../extensibility/extending-the-editor-and-language-services.md)|Łącza do dokumentów, które wprowadzają projekt i funkcje edytora podstawowego i pokazują, jak go zwiększyć.|
-|[Starsze interfejsy w edytorze](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)|Linki do dokumentów, które wyjaśniają, jak uzyskać dostęp do podstawowego edytora z istniejącego kodu.|
-|[Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)|Linki do dokumentów objaśniających sposób tworzenia edytorów niestandardowych.|
-|[Rozszerzalność starszej wersji usługi językowej](../extensibility/internals/legacy-language-service-extensibility.md)|Linki do dokumentów opisujących sposób integrowania języków programowania w programie Visual Studio.|
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Wprowadza Managed Extensibility Framework (MEF).|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Wprowadza Windows Presentation Foundation (WPF).|
+|[Rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)|Łącza do dokumentów, które wprowadzają projekt i funkcje edytora podstawowego i pokazują, jak go rozszerzyć.|
+|[Starsze interfejsy w edytorze](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)|Łącza do dokumentów, które wyjaśniają, jak uzyskać dostęp do edytora podstawowego z istniejącego kodu.|
+|[Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)|Łącza do dokumentów wyjaśniających sposób tworzenia edytorów niestandardowych.|
+|[Rozszerzalność usługi języka starszego](../extensibility/internals/legacy-language-service-extensibility.md)|Łącza do dokumentów, które opisują sposób integracji języków programowania w programie Visual Studio.|
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Wprowadza zarządzane ramy rozszerzalności (MEF).|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Przedstawia Windows Presentation Foundation (WPF).|

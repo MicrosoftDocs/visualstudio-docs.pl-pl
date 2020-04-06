@@ -1,29 +1,29 @@
 ---
-title: RequiredPlatformVersion, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Wymagany element platformformversion (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd166e41588ee440d9e0a1e90494aaa8f5091909
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701495"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion, element (szablony Visual Studio)
-Określa minimalną wersję systemu operacyjnego, który szablon projektu wymaga, aby działać poprawnie. Ten element jest używany do szablonów projektu, tworzonych [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacji.
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>Wymagany element PlatformformVersion (szablony programu Visual Studio)
+Określa minimalną wersję systemu operacyjnego, która wymaga prawidłowego działania szablonu projektu. Ten element jest używany do szablonów projektów, które tworzą [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikacje.
 
- `RequiredPlatformVersion` Wartość jest porównywana bezpośrednio z wersją systemu operacyjnego. Jeśli `RequiredPlatformVersion` jest wyższa niż wersja systemu operacyjnego nie ma szablonu **nowy projekt** okno dialogowe. Aby określić szablon dla [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszej, który jest ustawiony `RequiredPlatformVersion` do 6.2.0. Aby określić szablon dla [!INCLUDE[win81](../debugger/includes/win81_md.md)] lub nowszej, który jest ustawiony `RequiredPlatformVersion` do wersji 6.3.0.
+ Wartość `RequiredPlatformVersion` jest porównywana bezpośrednio z wersją systemu operacyjnego. Jeśli `RequiredPlatformVersion` jest wyższa niż wersja systemu operacyjnego, szablon nie pojawia się w oknie dialogowym **Nowy projekt.** Aby określić [!INCLUDE[win8](../debugger/includes/win8_md.md)] szablon dla `RequiredPlatformVersion` lub wyższy, należy ustawić na 6.2.0. Aby określić [!INCLUDE[win81](../debugger/includes/win81_md.md)] szablon dla `RequiredPlatformVersion` lub wyższy, należy ustawić na 6.3.0.
 
- Szablony, które określają `RequiredPlatformVersion`= 8 są zgodne z poprzedniego klienta [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] szablonów.
+ Szablony określające `RequiredPlatformVersion`=8 są [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] zgodne z poprzednimi szablonami klientów.
 
- VSTemplate TemplateData .....TargetPlatformName RequiredPlatformVersion
+ VsTemplate TemplateData ..... Wymagana wersja na platformie targetplatformName
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,16 +44,16 @@ Określa minimalną wersję systemu operacyjnego, który szablon projektu wymaga
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Określa platformę, że projekt jest ukierunkowany szablonu.|
+|[Nazwa templateplatformname](../extensibility/templatedata-element-visual-studio-templates.md)|Określa platformę, na którą kieruje szablon projektu.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
 ## <a name="remarks"></a>Uwagi
- Ten tekst Określa wersję minimalną wersję systemu operacyjnego wymagane przez szablon.
+ Ten tekst określa minimalną wersję systemu operacyjnego wymaganą przez szablon.
 
 ## <a name="example"></a>Przykład
- W tym przykładzie określa, że projekt jest ukierunkowany szablonu [!INCLUDE[win8](../debugger/includes/win8_md.md)] lub nowszej.
+ W tym przykładzie określono, [!INCLUDE[win8](../debugger/includes/win8_md.md)] że cele szablonu projektu lub później.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
@@ -68,7 +68,7 @@ Określa minimalną wersję systemu operacyjnego, który szablon projektu wymaga
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [TargetPlatformName, element (szablony Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
+## <a name="see-also"></a>Zobacz też
+- [Element TargetPlatformName (szablony programu Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

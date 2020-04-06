@@ -1,37 +1,37 @@
 ---
-title: Typ wizualizatora i Przeglądarka niestandardowa | Dokumentacja firmy Microsoft
+title: Wizualizator typu i przeglądarka niestandardowa | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01f058f959c9af78e196112cc49b63d293e8e31d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341262"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712464"
 ---
-# <a name="type-visualizer-and-custom-viewer"></a>Wizualizator typów i Przeglądarka niestandardowa
-Wizualizator typów jest składnikiem, który wyświetla część danych w określonym formacie. Format jest całkowicie maksymalnie visualizer, który implementuje, jest to użytkownik końcowy lub dostawcą firm wizualizatorów.
+# <a name="type-visualizer-and-custom-viewer"></a>Wizualizator typu i przeglądarka niestandardowa
+Wizualizator typu jest składnikiem, który wyświetla fragment danych w określonym formacie. Format zależy wyłącznie od tego, kto implementuje wizualizator, czy to użytkownika końcowego, czy zewnętrznego dostawcy wizualizatorów.
 
- Przeglądarka niestandardowa jest częścią ewaluatora wyrażeń niestandardowych, które wyświetla część danych w określonym formacie. Ten format jest całkowicie maksymalnie implementujący niestandardowe podglądu, co oznacza, że format jest maksymalnie implementujący programu expression evaluator (EE).
+ Przeglądarka niestandardowa jest częścią ewaluatora wyrażeń niestandardowych, która wyświetla fragment danych w określonym formacie. Ten format jest całkowicie do implementatora przeglądarki niestandardowej, co oznacza, że format jest do implementatora oceniającego wyrażenie (EE).
 
-## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Obsługa wizualizatorów typu w ewaluatora wyrażeń
- EE obsługuje wizualizatorów typu dzięki obsłudze zbiór interfejsów, które są dostępne do wizualizatorów: interfejsy, takie jak [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) i [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). Jednak nie jest odpowiedzialny za realizację Wizualizator typów, sama EE: EE jedynie zezwala na zewnętrzne wizualizatorów dostęp do informacji o typie. Takie wizualizatorów może dostarczany wraz z EE i zainstalowane w odpowiednim miejscu w programie Visual Studio, dostarczone przez innego dostawcę innych firm lub nawet przez użytkownika końcowego.
+## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>Obsługa wizualizatorów typów w oceniający wyrażenie
+ EE obsługuje wizualizatory typów, obsługując zestaw interfejsów dostępnych dla wizualizatorów: interfejsy, takie jak [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) i [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md). EE nie jest jednak odpowiedzialny za implementowanie samego wizualizatora typu: EE umożliwia jedynie zewnętrznym wizualizatorom dostęp do informacji o typie. Takie wizualizatory mogą być wysyłane wraz z EE i zainstalowane w odpowiednim miejscu w programie Visual Studio, dostarczone przez innego dostawcę innej firmy lub nawet przez użytkownika końcowego.
 
-## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Obsługa przeglądarek niestandardowych w ewaluatora wyrażeń
- EE może również obsługiwać przeglądarek niestandardowych, w których EE, sama dostarcza kod w celu wyświetlania typu danych. Przeglądarka niestandardowa implementuje [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) interfejs, który obsługuje wszystkie obowiązki wyświetlane dane w formacie, który lubisz jest pożądane; Podgląd ma pełną kontrolę nad wyświetlaniem oraz nawet można pozwolić, aby dane można modyfikować. Wszelkie przeglądarek niestandardowych dostarczonych przez EE dołączone EE, gdy produkt jest wysyłany.
+## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>Obsługa niestandardowych widzów w oceniający wyrażenie
+ EE może również obsługiwać niestandardowe przeglądarki, w których ee sam dostarcza kod do wyświetlania typu danych. Przeglądarka niestandardowa implementuje interfejs [IDebugCustomViewer,](../../extensibility/debugger/reference/idebugcustomviewer.md) który obsługuje wszystkie obowiązki wyświetlania danych w dowolnym formacie; przeglądarka ma pełną kontrolę nad wyświetlaczem, a nawet może pozwolić na modyfikację danych. Wszystkie niestandardowe przeglądarki dostarczane przez EE pochodzą z EE, gdy produkt jest dostarczany.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Składniki debugera](../../extensibility/debugger/debugger-components.md)
-- [Ewaluator wyrażeń](../../extensibility/debugger/expression-evaluator.md)
+- [Wyrażenie](../../extensibility/debugger/expression-evaluator.md)
 - [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
 - [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)
 - [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)

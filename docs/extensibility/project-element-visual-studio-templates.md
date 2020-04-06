@@ -1,5 +1,5 @@
 ---
-title: Project — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element projektu (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 843ba7935dbddb95c9a3043deff534db9157f15b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336051"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702004"
 ---
-# <a name="project-element-visual-studio-templates"></a>Project — element (szablony Visual Studio)
-Określa plików lub katalogów do dodania do projektu.
+# <a name="project-element-visual-studio-templates"></a>Element projektu (szablony programu Visual Studio)
+Określa pliki lub katalogi, które mają być dodane do projektu.
 
- \<VSTemplate> \<TemplateContent> \<Project>
+ \<>> \< \<projektu>> vsTemplate
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,17 +45,17 @@ Określa plików lub katalogów do dodania do projektu.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`File`|Atrybut wymagany.<br /><br /> Określa nazwę pliku projektu w szablonie *zip* pliku.|
-|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy plik projektu nie ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`.|
-|`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę pliku projektu, gdy projekt jest tworzony na podstawie tego szablonu.|
-|`IgnoreProjectParameter`|Atrybut opcjonalny.<br /><br /> Określa, czy projekt powinien być dodany do bieżącego rozwiązania. Jeśli wartość parametru niestandardowego, "$*myCustomParameter*$" istnieje w pliku zastępowania parametrów, projekt jest utworzony, ale nie zostały dodane jako część aktualnie otwartego rozwiązania.|
+|`File`|Atrybut wymagany.<br /><br /> Określa nazwę pliku projektu w pliku *zip* szablonu.|
+|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy plik projektu zawiera wartości parametrów, które muszą zostać zastąpione podczas tworzenia projektu na podstawie szablonu. Wartością `false`domyślną jest .|
+|`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę pliku projektu podczas tworzenia projektu na podstawie szablonu.|
+|`IgnoreProjectParameter`|Atrybut opcjonalny.<br /><br /> Określa, czy projekt ma zostać dodany do bieżącego rozwiązania. Jeśli wartość parametru niestandardowego, "$*myCustomParameter*$" istnieje w pliku zastępowania parametrów, projekt jest tworzony, ale nie dodawany jako część aktualnie otwartego rozwiązania.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|Element opcjonalny.<br /><br /> Określa folder do dodania do projektu.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Element opcjonalny.<br /><br /> Określa plik, aby dodać do projektu.|
+|[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|Element opcjonalny.<br /><br /> Określa folder, który ma być dodawany do projektu.|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Element opcjonalny.<br /><br /> Określa plik, który ma być dodawany do projektu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -64,16 +64,16 @@ Określa plików lub katalogów do dodania do projektu.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Element wymagany.|
 
 ## <a name="remarks"></a>Uwagi
- `Project` jest podrzędnym elementem opcjonalnym elementu `TemplateContent`.
+ `Project`jest opcjonalnym elementem podrzędnym . `TemplateContent`
 
- `Project` Element jest używany do określ projekt i dlatego jest prawidłowy tylko w szablonach projektu.
+ Element `Project` jest używany do specyfiy projektu, a zatem jest prawidłowy tylko w szablonach projektu.
 
- `Project` elementy mogą mieć [folderu](../extensibility/folder-element-visual-studio-project-templates.md) elementy podrzędne lub [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) elementy podrzędne, ale nie kombinację obu `Folder` i `ProjectItem` elementy podrzędne.
+ `Project`elementy mogą mieć [elementy folderu](../extensibility/folder-element-visual-studio-project-templates.md) podrzędnego lub [elementy podrzędne ProjectItem,](../extensibility/projectitem-element-visual-studio-project-templates.md) ale nie jest to mieszanina elementów podrzędnych i `Folder` `ProjectItem` podrzędnych.
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automatycznie zmienia nazwę pliku projektu opartego na nazwie wprowadzonej przez użytkownika w **nowy projekt** okno dialogowe. Użyj `TargetFileName` atrybutu, jeśli chcesz zapewnić alternatywna nazwa pliku dla plików projektu utworzonych za pomocą szablonu.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automatycznie zmienia nazwę pliku projektu na podstawie nazwy wprowadzonej przez użytkownika w oknie dialogowym **Nowy projekt.** Użyj `TargetFileName` atrybutu, jeśli chcesz podać alternatywną nazwę pliku dla plików projektu utworzonych za pomocą szablonu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -99,8 +99,8 @@ Określa plików lub katalogów do dodania do projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Projectitem — element (szablony projektu Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)
-- [Folder — element (szablony projektu Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)
+- [Element ProjectItem (szablony projektów programu Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)
+- [Element folderu (szablony projektów programu Visual Studio)](../extensibility/folder-element-visual-studio-project-templates.md)

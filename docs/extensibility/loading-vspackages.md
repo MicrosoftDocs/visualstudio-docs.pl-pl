@@ -1,34 +1,34 @@
 ---
-title: Ładowanie pakietów VSPackage | Dokumentacja firmy Microsoft
+title: Ładowanie pakietów VSPackage | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7c2a558abc928524813419df6b7848d34f0f3e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309570"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702966"
 ---
-# <a name="load-vspackages"></a>Ładowanie pakietów VSPackage
-Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład pakietu VSPackage jest ładowany, gdy program Visual Studio używa w fabryce projektu lub usługi, która implementuje pakietu VSPackage. Ta funkcja jest nazywana opóźnionego ładowania, która jest używana zawsze, gdy jest to możliwe zwiększyć wydajność.
+# <a name="load-vspackages"></a>Załaduj pakiety VSPackages
+Pakiety VSPackages są ładowane do programu Visual Studio tylko wtedy, gdy ich funkcjonalność jest wymagana. Na przykład VSPackage jest ładowany, gdy visual studio używa fabryki projektu lub usługi, które vspackage implementuje. Ta funkcja jest nazywana opóźnionym ładowaniem, który jest używany, gdy jest to możliwe, aby zwiększyć wydajność.
 
 > [!NOTE]
-> Program Visual Studio można określić pewne informacje pakietu VSPackage, takich jak polecenia, które oferuje pakietu VSPackage, bez załadowania pakietu VSPackage.
+> Visual Studio można określić niektóre informacje VSPackage, takie jak polecenia, które oferuje VSPackage, bez ładowania VSPackage.
 
- Pakietów VSPackage można ustawić na automatyczne ładowanie w kontekście interfejsu użytkownika, na przykład, gdy rozwiązanie jest otwarte. <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Atrybut ustawia w tym kontekście.
+ VSPackages można ustawić do automatycznego ładowania w kontekście interfejsu użytkownika (UI), na przykład, gdy rozwiązanie jest otwarte. Atrybut <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> ustawia ten kontekst.
 
-### <a name="autoload-a-vspackage-in-a-specific-context"></a>Załaduj VSPackage w określonym kontekście
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Automatyczne ładowanie pakietu VSPackage w określonym kontekście
 
-- Dodaj `ProvideAutoLoad` atrybutu atrybutów pakietu VSPackage:
+- Dodaj `ProvideAutoLoad` atrybut do atrybutów VSPackage:
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -39,22 +39,22 @@ Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ic
     {. . .}
     ```
 
-     Zobacz wyliczany pola <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> lista kontekstów interfejsu użytkownika i ich wartości identyfikatora GUID.
+     Zobacz wyliczone pola <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> listy kontekstów interfejsu użytkownika i ich wartości guid.
 
-- Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
+- Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> w metodzie.
 
-- Tworzenie pakietu VSPackage, a następnie rozpocząć debugowanie.
+- Tworzenie VSPackage i rozpocząć debugowanie.
 
-- Załaduj rozwiązanie lub utworzyć nowe.
+- Załaduj rozwiązanie lub utwórz je.
 
-     Pakietu VSPackage ładuje i zatrzymuje się w punkcie przerwania.
+     VSPackage ładuje i zatrzymuje się w punkcie przerwania.
 
-## <a name="force-a-vspackage-to-load"></a>Wymuś można załadować pakietu VSPackage
- W pewnych okolicznościach pakietu VSPackage może zajść potrzeba wymuszenia innego pakietu VSPackage do załadowania. Na przykład lekki pakietu VSPackage może ładować większych pakietu VSPackage w kontekście, który nie jest dostępna jako CMDUIContext.
+## <a name="force-a-vspackage-to-load"></a>Wymuszanie ładowania pakietu VSPackage
+ W pewnych okolicznościach VSPackage może być konieczności wymuszenia innego VSPackage do załadowania. Na przykład lekki VSPackage może załadować większy VSPackage w kontekście, który nie jest dostępny jako CMDUIContext.
 
- Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metodę wymuszania można załadować pakietu VSPackage.
+ Można użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> metody, aby wymusić VSPackage załadować.
 
-- Wstaw ten kod do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metoda pakietu VSPackage, który wymusza innego pakietu VSPackage załadować:
+- Wstaw ten <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> kod do metody VSPackage, która wymusza ładowanie innego vspackage:
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;
@@ -67,9 +67,9 @@ Pakietów VSPackage są ładowane do programu Visual Studio, tylko wtedy, gdy ic
 
     ```
 
-     Po zainicjowaniu pakietu VSPackage wymusi `PackageToBeLoaded` do załadowania.
+     Po zainicjowaniu VSPackage, wymusi `PackageToBeLoaded` załadować.
 
-     Ładowanie życie nie należy używać do komunikacji pakietu VSPackage. Użyj [użycia i świadczenia usług](../extensibility/using-and-providing-services.md) zamiast tego.
+     Wymuszanie ładowania nie powinny być używane do komunikacji VSPackage. Zamiast tego [użyj i dziel usługi.](../extensibility/using-and-providing-services.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Pakiety VSPackage](../extensibility/internals/vspackages.md)

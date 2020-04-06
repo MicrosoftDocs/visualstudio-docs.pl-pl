@@ -1,5 +1,5 @@
 ---
-title: PreviewImage, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element PreviewImage (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -7,22 +7,22 @@ helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed3e6f438f399547996245531c2848ac7bdb83
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336090"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702016"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage, element (szablony Visual Studio)
-Określa obraz podglądu jako nazwę pliku dla obrazu podglądu, która będzie wyświetlana w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe.
+# <a name="previewimage-element-visual-studio-templates"></a>Element PreviewImage (szablony programu Visual Studio)
+Określa obraz podglądu obrazu podglądu, który pojawi się w oknie dialogowym **Nowy projekt** lub Dodaj **nowy element.**
 
- \<VSTemplate> \<TemplateData> \<PreviewImage>
+ \<> \<> \<>>>
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ Określa obraz podglądu jako nazwę pliku dla obrazu podglądu, która będzie 
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być ciągiem, który reprezentuje nazwę pliku.
+ Tekst musi być ciągiem reprezentującym nazwę pliku.
 
 ## <a name="remarks"></a>Uwagi
- `PreviewImage` element jest opcjonalny.
+ `PreviewImage`jest elementem opcjonalnym.
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

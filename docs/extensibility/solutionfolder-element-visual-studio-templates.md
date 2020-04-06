@@ -1,5 +1,5 @@
 ---
-title: SolutionFolder, element (szablony Visual Studio) | Microsoft Docs
+title: Element Programu SolutionFolder (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <SolutionFolder> element [Visual Studio Templates]
 - SolutionFolder element [Visual Studio Templates]
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ef2e0ff20f8c9f7146e3fa71cbce07b169077f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719999"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700001"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder — Element (szablony Visual Studio)
 Grupowanie projektów w szablonach wieloprojektowych.
 
- \<VSTemplate > \<TemplateContent > \<ProjectCollection > \<SolutionFolder >
+ \<\<VsTemplate> TemplateContent> \<ProjectCollection> \<SolutionFolder>
 
 ## <a name="syntax"></a>Składnia
 
@@ -58,10 +58,10 @@ Grupowanie projektów w szablonach wieloprojektowych.
 |`SolutionFolder`|Grupowanie projektów w szablonach wieloprojektowych.|
 
 ## <a name="remarks"></a>Uwagi
- Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. Element `SolutionFolder` służy do organizowania projektów w szablonie w grupy. Foldery określone przez `SolutionFolder` elementy są tworzone jako foldery rozwiązań w projekcie w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [How to: Create Project Templates](../ide/how-to-create-multi-project-templates.md).
+ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. Element `SolutionFolder` jest używany do organizowania projektów w szablonie w grupy. Foldery określone `SolutionFolder` przez elementy są tworzone jako foldery rozwiązań w projekcie w programie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aby uzyskać więcej informacji na temat szablonów wielu projektów, zobacz [Jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Przykład
- W tym przykładzie używa elementu `SolutionFolder`, aby podzielić szablon wieloprojektowy na dwie grupy, `Math Classes` i `Graphics Classes`. Szablon zawiera cztery projekty, z których dwa są umieszczane w każdym folderze rozwiązania.
+ W tym przykładzie `SolutionFolder` użyto elementu do podzielenia `Math Classes` szablonu wielu projektów na dwie grupy i `Graphics Classes`. Szablon zawiera cztery projekty, z których dwa są umieszczane w każdym folderze rozwiązania.
 
 ```
 <VSTemplate Version="3.0.0" Type="ProjectGroup"
@@ -95,7 +95,7 @@ Grupowanie projektów w szablonach wieloprojektowych.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
 - [Instrukcje: Tworzenie szablonów obejmujących wiele projektów](../ide/how-to-create-multi-project-templates.md)

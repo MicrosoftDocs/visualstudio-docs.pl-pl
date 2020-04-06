@@ -1,37 +1,37 @@
 ---
-title: Obsługa okna zmiennych automatycznych w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
+title: Obsługa okna Autos w starszej usłudze językowej | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2842cb7a11765f0d460681dee0187c62ff31061c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309827"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80704882"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Obsługa okna zmiennych automatycznych w starszej wersji usługi językowej
-**Autos** oknie wyświetlane są wyrażenia, takie jak zmienne i parametry, które znajdują się w zakresie, gdy program debugowany jest wstrzymany, (albo z powodu punkt przerwania lub wyjątku). Wyrażenie może zawierać zmiennych lokalnych lub globalnych oraz parametry, które zostały zmienione w zakresie lokalnym. **Autos** okna może również obejmować wystąpień klasy, struktury lub innego typu. Wszystko, co może ocenić ewaluatora wyrażeń potencjalnie mogą być wyświetlane w **Autos** okna.
+Okno **Autos** wyświetla wyrażenia, takie jak zmienne i parametry, które znajdują się w zakresie, gdy program jest debugowany jest wstrzymany (z powodu punktu przerwania lub wyjątku). Wyrażenia mogą zawierać zmienne, lokalne lub globalne oraz parametry, które zostały zmienione w zakresie lokalnym. Okno **Autos** może również zawierać wystąpienia klasy, struktury lub innego typu. Wszystko, co oceniający wyrażenie może ocenić, może być potencjalnie wyświetlane w oknie **Autos.**
 
- Środowiska pakietu zarządzanego (MPF) nie zapewnia bezpośrednią obsługę **Autos** okna. Jednak Jeśli zastąpisz <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metody, można zwrócić listę wyrażeń, które mają zostać wyświetlone w **Autos** okna.
+ Struktura pakietu zarządzanego (MPF) nie zapewnia bezpośredniej obsługi okna **Autos.** Jeśli jednak zostanie zastąpiona <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metoda, można zwrócić listę wyrażeń, które mają być prezentowane w oknie **Autos.**
 
-## <a name="implementing-support-for-the-autos-window"></a>Implementowanie Obsługa okna zmiennych automatycznych
- Wszystko, czego potrzebujesz do obsługi **Autos** okna jest zaimplementowanie <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy. Należy określić implementacji podanej lokalizacji w pliku źródłowym, które wyrażeń powinny znajdować się w **Autos** okna. Metoda zwraca listę ciągów, w których każdy ciąg reprezentuje pojedyncze wyrażenie. Zwracana wartość wynosząca <xref:Microsoft.VisualStudio.VSConstants.S_OK> wskazuje, że lista zawiera wyrażenia, podczas gdy <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> wskazuje, że nie ma żadnych wyrażeń do wyświetlenia.
+## <a name="implementing-support-for-the-autos-window"></a>Implementowanie obsługi okna Autos
+ Wszystko, co musisz zrobić, aby obsługiwać <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> **autos** okna jest zaimplementowanie metody w <xref:Microsoft.VisualStudio.Package.LanguageService> klasie. Implementacja musi zdecydować, biorąc pod uwagę lokalizację w pliku źródłowym, które wyrażenia powinny pojawić się w oknie **Autos.** Metoda zwraca listę ciągów, w których każdy ciąg reprezentuje pojedyncze wyrażenie. Zwracana <xref:Microsoft.VisualStudio.VSConstants.S_OK> wartość wskazuje, że lista zawiera <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> wyrażenia, a jednocześnie wskazuje, że nie ma żadnych wyrażeń do wyświetlenia.
 
- Rzeczywiste wyrażeń, zwracane są nazwy zmiennych i parametrów, które pojawiają się w tej lokalizacji w kodzie. Te nazwy są przekazywane do ewaluatora wyrażenia, aby uzyskać wartości i typów, które następnie są wyświetlane w **Autos** okna.
+ Zwracane rzeczywiste wyrażenia to nazwy zmiennych lub parametrów, które pojawiają się w tej lokalizacji w kodzie. Nazwy te są przekazywane do oceniającego wyrażenie w celu uzyskania wartości i typów, które są następnie wyświetlane w oknie **Autos.**
 
 ### <a name="example"></a>Przykład
- W poniższym przykładzie pokazano implementację <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodę, która pobiera listę wyrażeń z <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metody przy użyciu Przyczyna analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. Każdy z wyrażeń opakowaniu jako `TestVsEnumBSTR` implementującej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> interfejsu.
+ W poniższym przykładzie <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> przedstawiono implementację metody, która <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> pobiera listę wyrażeń z metody przy użyciu przyczyny <xref:Microsoft.VisualStudio.Package.ParseReason>analizy . Każde z wyrażeń jest `TestVsEnumBSTR` zawijane <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> jako implementacji interfejsu.
 
- Należy pamiętać, że `GetAutoExpressionsCount` i `GetAutoExpression` metody są niestandardowe metody na `TestAuthoringSink` obiektu i zostały dodane do obsługi tego przykładu. Reprezentują one jednym ze sposobów w wyrażeniach, które dodano do `TestAuthoringSink` obiektu przez parser (przez wywołanie metody <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> metody) można uzyskać dostęp poza analizator.
+ Należy zauważyć, że `GetAutoExpressionsCount` i `GetAutoExpression` metody `TestAuthoringSink` są metody niestandardowe na obiekcie i zostały dodane do obsługi tego przykładu. Reprezentują one jeden sposób, w `TestAuthoringSink` którym wyrażenia dodane do obiektu <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> przez analizatora (wywołując metodę) można uzyskać dostęp poza analizatorem.
 
 ```csharp
 using Microsoft.VisualStudio;

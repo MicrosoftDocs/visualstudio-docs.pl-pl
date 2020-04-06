@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS | Microsoft Docs
+title: MODULE_FLAGS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b8080710b3225f025c329e0c5cb42331e1a059f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346805"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714257"
 ---
-# <a name="moduleflags"></a>MODULE_FLAGS
-Używane do opisywania modułu.
+# <a name="module_flags"></a>MODULE_FLAGS
+Służy do opisywania modułu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,35 +52,35 @@ public enum enum_MODULE_FLAGS { 
 
 ## <a name="fields"></a>Pola
  `MODULE_FLAG_NONE`\
- Określa nie modułu.
+ Określa brak modułu.
 
  `MODULE_FLAG_SYSTEM`\
- Określa moduł systemu.
+ Określa moduł systemowy.
 
  `MODULE_FLAG_SYMBOLS`\
- Określa moduł symboli.
+ Określa moduł symbolu.
 
  `MODULE_FLAG_64BIT`\
- Określa moduł 64-bitowych.
+ Określa moduł 64-bitowy.
 
  `MODULE_FLAG_OPTIMIZED`\
- Określa, że moduł został zoptymalizowany. Ten stan jest odzwierciedlana w **modułów** okna.
+ Określa, że moduł został zoptymalizowany. Ten stan jest odzwierciedlony w oknie **Moduły.**
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Określa, że moduł nie został zoptymalizowany. Ten stan jest odzwierciedlana w **modułów** okna. Jest to domyślny stan.
+ Określa, że moduł nie został zoptymalizowany. Ten stan jest odzwierciedlony w oknie **Moduły.** Jest to stan domyślny.
 
 ## <a name="remarks"></a>Uwagi
- Używany do `m_dwModuleFlags` członkiem [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.
+ Używany dla `m_dwModuleFlags` członka struktury [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
 
- Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.
+ Flagi te mogą być łączone z bitowym `OR`.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

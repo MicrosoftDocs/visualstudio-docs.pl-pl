@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromPosition | Dokumentacja firmy Microsoft
+title: IDebugSymbolProvider::GetAddressesFromPosition | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dcaef1e9675ae395826865604833fdb6683df944
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 27767af36093e9424775074a55bafadac9a4480d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310184"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719406"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-Ta metoda mapuje położenie dokumentu na tablicę adresów debugowania.
+Ta metoda mapuje położenie dokumentu do tablicy adresów debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,26 +47,26 @@ int GetAddressesFromPosition( 
 
 ## <a name="parameters"></a>Parametry
 `pDocPos`\
-[in] Położenie dokumentu.
+[w] Położenie dokumentu.
 
 `fStatmentOnly`\
-[in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
+[w] Jeśli true, ogranicza adresy debugowania do pojedynczej instrukcji.
 
 `ppEnumBegAddresses`\
-[out] Zwraca moduł wyliczający dla wyjścia adresów debugowania skojarzone z tym instrukcja lub wiersza.
+[na zewnątrz] Zwraca wyliczenia dla początkowych adresów debugowania skojarzonych z tą instrukcją lub wierszem.
 
 `ppEnumEndAddresses`\
-[out] Zwraca [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) modułu wyliczającego dla końcowy adresów debugowania skojarzone z tym instrukcja lub wiersza.
+[na zewnątrz] Zwraca [wyliczenia IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) dla końcowego adresów debugowania skojarzonych z tą instrukcją lub wierszem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Położenie dokumentu zazwyczaj wskazuje zakres wierszy źródłowych. Ta metoda zapewnia początkowy i końcowy adres debugowania powiązanych z tymi wierszami. W niektórych językach umożliwiają instrukcji, które rozciągają się wiele wierszy lub wiersze, które zawiera więcej niż jedną instrukcję. Ta metoda zapewnia flagi, aby ograniczyć adresy debugowania do pojedynczej instrukcji.
+ Położenie dokumentu zazwyczaj wskazuje zakres wierszy źródłowych. Ta metoda zawiera początkowe i końcowe adresy debugowania skojarzone z tymi wierszami. Niektóre języki zezwalają na instrukcje, które obejmują wiele wierszy lub wierszy, które zawierają więcej niż jedną instrukcję. Ta metoda zapewnia flagę, aby ograniczyć adresy debugowania do pojedynczej instrukcji.
 
- Istnieje możliwość dla pojedynczej instrukcji wielu adresów debugowania, tak jak w przypadku szablonów.
+ Jest możliwe dla pojedynczej instrukcji mieć wiele adresów debugowania, jak w przypadku szablonów.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

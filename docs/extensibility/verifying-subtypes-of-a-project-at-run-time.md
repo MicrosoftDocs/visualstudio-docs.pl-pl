@@ -1,29 +1,29 @@
 ---
-title: Weryfikowanie podtypów projektu w czasie wykonywania | Dokumentacja firmy Microsoft
+title: Weryfikowanie podtypów projektu w czasie wykonywania | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes
 - check subtypes
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033f2971d0b8acb0390765f240a86a5ff543c353
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f0d739a9f8734dd8941e3254d03364cbf4c77350
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310689"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698184"
 ---
-# <a name="verify-subtypes-of-a-project-at-run-time"></a>Sprawdź podtypów projektu w czasie wykonywania
-Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu powinna zawierać logikę do wyszukiwania, która podtypu tak, aby go może zakończyć się niepowodzeniem bez problemu zmieniała Jeśli podtyp nie jest obecny. Poniższa procedura pokazuje, jak sprawdzić, czy z określonym podtypem.
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>Weryfikowanie podtypów projektu w czasie wykonywania
+VSPackage, który zależy od podtypu projektu niestandardowego powinien zawierać logikę, aby wyszukać ten podtyp, tak aby można było zakończyć się niepowodzeniem bezpiecznie, jeśli podtyp nie jest obecny. Poniższa procedura pokazuje, jak sprawdzić obecność określonego podtypu.
 
-### <a name="to-verify-the-presence-of-a-subtype"></a>Aby sprawdzić obecność podtypem
+### <a name="to-verify-the-presence-of-a-subtype"></a>Aby sprawdzić obecność podtypu
 
-1. Pobrać hierarchii projektu z projektu i rozwiązania obiektów jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiektu, dodając następujący kod do Twojego pakietu VSPackage.
+1. Pobierz hierarchii projektu z projektu i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> obiektów rozwiązania jako obiekt, dodając następujący kod do VSPackage.
 
     ```csharp
     EnvDTE.DTE dte;
@@ -40,7 +40,7 @@ Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu pow
 
     ```
 
-2. Rzutowanie hierarchii, aby <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interfejsu.
+2. Rzutuj hierarchię <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> do interfejsu.
 
     ```csharp
     IVsAggregatableProjectCorrected AP;
@@ -48,14 +48,14 @@ Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu pow
 
     ```
 
-3. Pobierz listę identyfikatorów GUID. typ projektu, wywołując <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.
+3. Pobierz listę identyfikatorów GUID typu projektu, wywołując plik <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.
 
     ```csharp
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();
 
     ```
 
-4. Sprawdź listę dla identyfikatora GUID z określonym podtypem.
+4. Sprawdź listę identyfikatorów GUID określonego podtypu.
 
     ```csharp
     // Replace the string "MyGUID" with the GUID of the subtype.
@@ -66,7 +66,7 @@ Pakietu VSPackage, który jest zależny od podtypu niestandardowego projektu pow
     }
     ```
 
-## <a name="see-also"></a>Zobacz także
-- [Podtypy projektów](../extensibility/internals/project-subtypes.md)
-- [Projektowanie podtypów projektów](../extensibility/internals/project-subtypes-design.md)
-- [Właściwości i metody rozszerzane przez podtypy projektów](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+## <a name="see-also"></a>Zobacz też
+- [Podtypy projektu](../extensibility/internals/project-subtypes.md)
+- [Projekt podtypów projektu](../extensibility/internals/project-subtypes-design.md)
+- [Właściwości i metody rozszerzone o podtypy projektu](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

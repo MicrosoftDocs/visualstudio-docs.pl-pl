@@ -1,5 +1,5 @@
 ---
-title: Locationfield — Element (szablony projektu Visual Studio) | Dokumentacja firmy Microsoft
+title: Element LocationField (szablony projektów programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b440595207cee6a146e6d85ee5e9f7c492ee3eee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d993e84bec41486ef4dce6ad98c61f23ab2a46bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309168"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702887"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>Locationfield — element (szablony projektu Visual Studio)
-Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jest włączone, wyłączone lub ukryty w przypadku szablonu projektu.
+# <a name="locationfield-element-visual-studio-project-templates"></a>Element LocationField (szablony projektów programu Visual Studio)
+Określa, czy pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** jest włączone, wyłączone czy ukryte dla szablonu projektu.
 
- \<VSTemplate> \<TemplateData> \<LocationField>
+ \<> \<> Template>Data \<LocationField>
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,28 +44,28 @@ Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jes
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt**.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób jego wyświetlania w **nowym projekcie**.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst prawidłowe wartości to:
+ Prawidłowe wartości tekstowe to:
 
-- `Enabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest włączona.
+- `Enabled`, który określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest włączone.
 
-- `Disabled`, która określa, że **lokalizacji** pole **nowy projekt** okno dialogowe jest wyłączona.
+- `Disabled`, który określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest wyłączone.
 
-- `Hidden`, która określa, że **lokalizacji** pole **nowy projekt** okno zostanie ukryte.
+- `Hidden`, który określa, że pole **Lokalizacja** okna dialogowego **Nowy projekt** jest ukryte.
 
 ## <a name="remarks"></a>Uwagi
- Wartość domyślna to `Enabled`.
+ Wartością domyślną jest `Enabled`.
 
- **Lokalizacji** polu tekstowym **nowy projekt** okno dialogowe umożliwia użytkownikom zmianę domyślnego katalogu, w którym zapisywane są nowe projekty.
+ Pole tekstowe **Lokalizacja** w oknie dialogowym **Nowy projekt** umożliwia użytkownikom zmianę domyślnego katalogu, w którym są zapisywane nowe projekty.
 
- Wartość określona w `Location` element jest tylko uznawane przez okno dialogowe, jeśli podstawowy system projektu obsługuje tę funkcję.
+ Wartość określona `Location` w elemencie jest honorowana tylko przez okno dialogowe, jeśli podstawowy system projektu obsługuje go.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] szablonu.
+ Poniższy przykład ilustruje metadane szablonu. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -92,6 +92,6 @@ Określa, czy **lokalizacji** polu tekstowym **nowy projekt** okno dialogowe jes
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -1,42 +1,42 @@
 ---
-title: Atrybuty warunkowe schematu VSCT XML | Dokumentacja firmy Microsoft
+title: Atrybuty warunkowe schematu VSCT XML | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11807129c34fa613ef06b3534adc7c7ebb9865e0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322949"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697947"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu VSCT XML
-Atrybuty warunkowe można zastosować do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzenia symboli zwrócić wartość PRAWDA lub FAŁSZ. W przypadku opcji true skojarzona lista lub element znajduje się w dane wyjściowe.
+# <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu XML VSCT
+Atrybuty warunkowe można zastosować do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzające symbol oceniają wartość true lub false. Jeśli true, skojarzonej listy lub elementu jest uwzględniony w wynikowywyjąć.
 
- Możesz przetestować rozszerzenia tokenu względem innych rozszerzenia tokenu lub stałe. Funkcja `Defined()` sprawdza, czy została zdefiniowana określonej nazwie, nawet wtedy, gdy go nie ma wartości.
+ Można przetestować rozszerzenia tokenu względem innych rozszerzeń tokenu lub stałych. Funkcja `Defined()` sprawdza, czy określona nazwa została zdefiniowana, nawet jeśli nie ma wartości.
 
- Gdy warunek jest stosowany do listy, warunek jest stosowany do każdego elementu podrzędnego, na liście. Jeśli nie zawiera elementu podrzędnego samego zawiera atrybut warunku, jego stan jest łączony w za pomocą wyrażenia nadrzędnego przez operację i.
+ Gdy Condition atrybut jest stosowany do listy, warunek jest stosowany do każdego elementu podrzędnego na liście. Jeśli element podrzędny sam zawiera Condition atrybut, a następnie jego warunek jest łączony z wyrażeniem nadrzędnym przez operację AND.
 
- Wartości 1, "1" i "prawda", są oceniane jako PRAWDA, a 0, "0" i "false", które są obliczane jako wartość false.
+ Wartości 1, "1" i "true" są oceniane jako prawdziwe, a 0, "0" i "false" są oceniane jako false.
 
 ## <a name="operators"></a>Operatory
- Użyj następujących operatorów można obliczyć wartości wyrażenia warunkowe.
+ Następujące operatory służy do oceny wyrażeń warunkowych.
 
 |Operator|Definicja|
 |--------------|----------------|
 |(,)|Grupowanie|
 |!|Logiczne NOT|
-|\<, >, \<=, >=, ==, !=|Relacyjne i równości|
-|and|Boolean|
-|lub|Boolean|
+|\<, >, \<=, >=, ==, !=|Relacja i równość|
+|i|Wartość logiczna|
+|lub|Wartość logiczna|
 
 ## <a name="examples"></a>Przykłady
 
@@ -69,5 +69,5 @@ and !Defined(DEBUG)">
 </Menus>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz też
+- [Tabela poleceń programu Visual Studio (. Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

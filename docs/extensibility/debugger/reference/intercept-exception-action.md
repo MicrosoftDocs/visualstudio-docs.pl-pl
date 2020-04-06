@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION | Microsoft Docs
+title: INTERCEPT_EXCEPTION_ACTION | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 265ed30272c959b6ee812a83f748888a5af15cab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc44a4fc5264566468777749d5732662ba81ed6d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350246"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715069"
 ---
-# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
-Określa, jakie działania podejmowane w momencie przechwytuje wyjątki.
+# <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
+Określa, jakie akcje należy podjąć podczas przechwytywania wyjątków.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,18 +45,18 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>Parametry
 
 `IEA_INTERCEPT`\
-Umożliwia przechwytywanie bieżący wyjątek. Jest to jedyna wartość obsługiwana w chwili obecnej i musi być określona.
+Umożliwia przechwytywanie bieżącego wyjątku. Jest to jedyna wartość obsługiwana w chwili obecnej i musi być określona.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są przekazywane do [interceptcurrentexception —](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) metody.
+Wartości te są przekazywane do [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

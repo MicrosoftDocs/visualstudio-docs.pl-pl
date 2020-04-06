@@ -1,5 +1,5 @@
 ---
-title: Obsługa kreatora dla zagnieżdżonych projektów | Microsoft Docs
+title: Obsługa kreatora dla projektów zagnieżdżonych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,27 +7,27 @@ helpviewer_keywords:
 - nested projects, wizard support
 - New Project wizard
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e498f21499f4b07bf77bb79829fc6d92227f1f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721431"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703194"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Obsługa kreatora dla zagnieżdżonych projektów
-Środowisko IDE uruchamia dwa kreatory, które mogą implementować projekt nadrzędny dla zagnieżdżonych projektów: kreatora **nowego projektu** i kreatora **dodawania elementu** .
+IDE uruchamia dwa kreatory, które projekt nadrzędny dla projektów zagnieżdżonych można zaimplementować: Kreator **nowego projektu** i Kreator **dodaj element.**
 
- Jeśli użytkownik uruchamia kreatora **nowego projektu** , wybierając opcję **Dodaj projekt** i klikając pozycję **Nowy projekt** w menu plik lub wybierając pozycję **Dodaj** i klikając prawym przyciskiem myszy **Nowy projekt** w Eksplorator rozwiązań, środowisko IDE uruchamia obiekt **addproject** polecenie i implementacja projektu nadrzędnego polecenia **addproject** zwracają plik projektu szablonu lub plik kreatora (. vsz), który zawiera zestaw parametrów kontekstu.
+ Jeśli użytkownik uruchamia **Kreatora nowego projektu,** wybierając pozycję **Dodaj projekt** i klikając **polecenie Nowy projekt** w menu Plik lub wybierając polecenie **Dodaj** i kliknij prawym przyciskiem myszy **nowy projekt** w Eksploratorze rozwiązań, IDE uruchamia polecenie **AddProject,** a implementacja polecenia **AddProject** projektu przez projekt nadrzędny zwraca plik projektu szablonu lub plik kreatora (.vsz), który ma zestaw parametrów kontekstowych.
 
- Analogicznie, implementacja projektu nadrzędnego dla kreatorów **AddItem** zwraca plik. vsz, który ma inny zestaw parametrów kontekstu.
+ Podobnie implementacja kreatorów **AddItem** projektu nadrzędnego zwraca plik .vsz, który ma inny zestaw parametrów kontekstu.
 
- Aby uzyskać więcej informacji na temat kreatorów, zobacz [Kreator (. Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md), [Parametry kontekstu](../../extensibility/internals/context-parameters.md) i [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
+ Aby uzyskać więcej informacji o kreatorach, zobacz [Kreator (. Vsz) Plik](../../extensibility/internals/wizard-dot-vsz-file.md), [Parametry kontekstowe](../../extensibility/internals/context-parameters.md) i [rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [Zagnieżdżanie projektów](../../extensibility/internals/nesting-projects.md)

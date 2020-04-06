@@ -1,29 +1,29 @@
 ---
-title: Implementowanie starszej wersji usługi językowej1 | Dokumentacja firmy Microsoft
+title: Implementowanie usługi języka starszego1 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 626838b0e82846f66b817465fca2df353af42dd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3805e49ffa83f7dea2ee58ef36e1bc8e48b1eaa
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315647"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707699"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementowanie starszej wersji usługi językowej
-Klas środowiska pakietu zarządzanego (MPF) można użyć do wdrożenia usługi starszego języka, który obsługuje szeroką gamę funkcji, takich jak wyróżnianie składni, parowanie nawiasów klamrowych i uzupełnianie przez funkcję IntelliSense.
+Klasy w ramach pakietu zarządzanego (MPF) można użyć do zaimplementowania usługi języka starszego, który obsługuje szeroką gamę funkcji, takich jak wyróżnianie składni, dopasowywanie nawiasów klamrowych i zakończenie IntelliSense.
 
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi języka, zobacz [edytora i rozszerzenia usługi w języka](../../extensibility/editor-and-language-service-extensions.md).
+ Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi językowej, zobacz [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Omówienie starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-overview.md)
@@ -32,24 +32,24 @@ Klas środowiska pakietu zarządzanego (MPF) można użyć do wdrożenia usługi
 
 - [Implementowanie starszej wersji usługi językowej](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
- W tym artykule opisano, co jest wymagane do wdrożenia usługi językowej przy użyciu MPF.
+ W tym artykule opisano, co jest wymagane do zaimplementowania usługi języka przy użyciu mpf.
 
 - [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)
 
- W tym artykule opisano kroki, które są wymagane do zarejestrowania usługi języka opartego na MPF z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ W tym artykule opisano kroki, które są wymagane [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]do zarejestrowania usługi języka opartej na mpf w pliku .
 
 - [Analizator i skaner starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 
- W tym artykule opisano dwa analizatory składni, które są wymagane do wdrożenia wszystkich funkcji wersji usługi językowej przy użyciu MPF.
+ W tym artykule opisano dwa analizatory, które są wymagane do zaimplementowania wszystkich funkcji usługi języka przy użyciu MPF.
 
 - [Przewodnik: tworzenie starszej wersji usługi językowej](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
- Zawiera podstawowe kroki, które są wymagane do wdrożenia usługi w języka MPF w VSPackage.
+ Zawiera podstawowe kroki, które są wymagane do zaimplementowania usługi języka MPF w vsPackage.
 
 - [Przewodnik: pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
- Pokazuje technik pobieranie listy zainstalowanych fragmentów kodu.
+ Demonstruje techniki pobierania listy urywków kodu zainstalowanego.
 
 - [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
 
- Zawiera łącza do tematów w tym szczegółów, co należy zrobić, aby zaimplementować wszystkie funkcje usługi w języka przy użyciu MPF.
+ Zawiera łącza do tematów, które szczegółowo, co należy zrobić, aby zaimplementować wszystkie funkcje usługi języka przy użyciu mpf.

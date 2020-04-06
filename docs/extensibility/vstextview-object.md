@@ -1,5 +1,5 @@
 ---
-title: Obiekt VSTextView | Microsoft Docs
+title: Obiekt VSTextView | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,37 +8,37 @@ helpviewer_keywords:
 - VSTextView object, reference
 - views [Visual Studio SDK], reference
 ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 927bbee8bde62ff24396ea7b50e55e901b8cff06
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 81d5e02d6ec18f8561a83b414532a4b78def5c09
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189009"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697710"
 ---
 # <a name="vstextview-object"></a>Obiekt VSTextView
 
-Widok tekstu to okno, które umożliwia użytkownikom wyświetlanie i edytowanie tekstu w formacie Unicode w buforze tekstu. W rzeczywistości widok jest tym, czego większość użytkowników odwołuje się jako edytor. Ponieważ widok jest oddzielony od buforu przez różne warstwy tekstu (Zawijanie wierszy, tekst konspektu itd.), widok nie musi być dokładną reprezentacją tekstu w buforze. Aby uzyskać więcej informacji na temat widoku tekstu, zobacz [dostęp do widoku TheText przy użyciu starszego interfejsu API](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
+Widok tekstu jest oknem, które umożliwia użytkownikom wyświetlanie i edytowanie tekstu Unicode buforu tekstowego. Zasadniczo widok jest tym, co większość użytkowników określa jako edytor. Ponieważ widok jest oddzielony od bufora różnymi warstwami tekstu (zawijanie wyrazów, tworzenie tekstu i tak dalej), widok nie jest gwarantowany jako dokładna reprezentacja tekstu w buforze. Aby uzyskać więcej informacji na temat widoku tekstu, zobacz [Uzyskiwanie dostępu do widoku Tekst przy użyciu starszego interfejsu API](/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api?view=vs-2015).
 
-W poniższej tabeli przedstawiono interfejsy w obiekcie <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
+W poniższej tabeli przedstawiono interfejsy w <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> obiekcie.
 
 |Interface|Opis|
 |---------------|-----------------|
-|[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|Standardowy interfejs OLE.|
+|[Źródło IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|Standardowy interfejs OLE.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Standardowy interfejs OLE.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Standardowy interfejs OLE.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Standardowy interfejs OLE.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Umożliwia tworzenie akcji złożonych (czyli akcji, które są pogrupowane w jednej jednostce cofania/ponawiania).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Zapewnia podstawowe metody zarządzania widokiem i uzyskiwania do niego dostępu. `IVsTextView` nie jest bezpieczna wątkowo.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Umożliwia tworzenie akcji złożonych (czyli akcji zgrupowanych w pojedynczą jednostkę cofania/ponawiania).|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Zawiera podstawowe metody zarządzania i uzyskiwania do niego dostępu. `IVsTextView`nie jest bezpieczny gwintowany.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Tworzy okienko okna i zarządza nim.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Współdziała z warstwami tekstu.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Współdziała z warstwami tekstowymi.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Wykonuje operacje w widoku z innego wątku.|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Edycja ilustracji](https://www.microsoft.com/download/details.aspx?id=55984)
-- [Obiekt VSTextBuffer](../extensibility/vstextbuffer-object.md)
+- [Edytuj rysunki](https://www.microsoft.com/download/details.aspx?id=55984)
+- [OBIEKT VSTextBuffer](../extensibility/vstextbuffer-object.md)
