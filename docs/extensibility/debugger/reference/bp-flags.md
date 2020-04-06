@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS | Microsoft Docs
+title: BP_FLAGS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319223"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738063"
 ---
-# <a name="bpflags"></a>BP_FLAGS
-Zawiera flagi opcjonalne, które mogą być używane do określania dodatkowych informacji, gdy ustawienie punktu przerwania.
+# <a name="bp_flags"></a>BP_FLAGS
+Zawiera opcjonalne flagi, które mogą służyć do określania dodatkowych informacji podczas ustawiania punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,27 +46,27 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>Pola
 `BP_FLAG_NONE`\
-Określa flagę nie punktu przerwania.
+Określa brak flagi punktu przerwania.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Określa, że aparat debugowania (DE) powinny być mapowane punkt przerwania przy użyciu położenie dokumentu. Dotyczy tylko punkty przerwania ustawione w plikach źródłowych zorientowane na skrypt takie jak Active Server Pages (ASP).
+Określa, że aparat debugowania (DE) powinien mapować punkt przerwania przy użyciu położenia dokumentu. Dotyczy to tylko punktów przerwania ustawionych w plikach źródłowych zorientowanych na skrypty, takich jak Active Server Pages (ASP).
 
 `BP_FLAG_DONT_STOP`\
-Określa, że punkt przerwania mają być przetwarzane przez aparat debugowania, ale że aparat debugowania ostatecznie nie należy zatrzymywać istnieje (czyli [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) obiektu zdarzenia nie powinny być przesyłane). Ta flaga jest przeznaczony do służyć przede wszystkim z punktami śledzenia.
+Określa, że punkt przerwania powinny być przetwarzane przez aparat debugowania, ale aparat debugowania ostatecznie nie powinien zatrzymać tam (oznacza to, że [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) obiekt zdarzenia nie powinny być wysyłane). Ta flaga jest przeznaczona do użycia głównie z punktami śledzenia.
 
 ## <a name="remarks"></a>Uwagi
-Używany do `dwFlags` członkiem [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
+Używany dla `dwFlags` członków [struktur BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.
+Wartości te mogą być łączone z bitowym `OR`.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

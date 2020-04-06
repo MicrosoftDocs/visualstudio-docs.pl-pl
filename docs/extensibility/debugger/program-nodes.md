@@ -1,5 +1,5 @@
 ---
-title: Program węzły | Dokumentacja firmy Microsoft
+title: Węzły programu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,35 +8,35 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 084a386cc7d7f9c6d606e7015e593a4075ba53a9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2943f74c7316495be93c2f5c20998ffa685f5d01
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351423"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738216"
 ---
 # <a name="program-nodes"></a>Węzły programu
-W architekturze debugera *węzła programu*:
+W architekturze debugera *węzeł programu:*
 
-- Jest uproszczone opis programu.
+- Jest lekki opis programu.
 
-- Można zidentyfikować wraz z procesu, który jest uruchomiony w. Można dołączyć węzła programu można odłączyć od oraz opisywania aparatu debugowania (DE), której został utworzony, jeśli istnieje.
+- Może identyfikować siebie i proces, w który działa. Węzeł programu można dołączyć, być odłączone i opisać aparat debugowania (DE), który go utworzył, jeśli istnieje.
 
-- Jest reprezentowany przez [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu, zwykle tworzony przy DE lub port. Węzły programu są dodawane do portu przez wywołanie metody [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Gdy węzeł programu zostanie dodany do portu, jest dodawany do procesu, zawierające program, który reprezentuje ten węzeł programu.
+- Jest reprezentowany przez interfejs [IDebugProgramNode2,](../../extensibility/debugger/reference/idebugprogramnode2.md) zazwyczaj tworzony przez DE lub portu. Węzły programu są dodawane do portu przez wywołanie [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Po dodaniu węzła programu do portu jest on dodawany do procesu zawierającego program, który reprezentuje ten węzeł programu.
 
-  Później, po rozpoczęciu sesji debugowania, w zależności od implementacji pakietu debugowania węzły programu są używane do tworzenia odpowiednich programów. Gdy proces jest poddawany kwerendzie jego programów, te programy są wyliczane, jeden dla każdego węzła program.
+  Jakiś czas po uruchomieniu sesji debugowania, w zależności od implementacji pakietu debugowania, węzły programu są używane do tworzenia odpowiednich programów. Gdy proces jest wyszukiwany dla swoich programów, programy są wyliczone, po jednym dla każdego węzła programu.
 
-  Zanim program jest dołączony do, IDE wymaga uproszczone opis programu. Te informacje można uzyskać z poziomu węzła programu. Gdy program jest dołączony do, środowisko IDE Wyświetla szczegółowe informacje, takie jak lista wszystkie wątki uruchomione w programie. Te informacje są uzyskiwane z samego programu.
+  Przed dołączonym do programu IDE wymaga tylko lekki opis programu. Te informacje można uzyskać z węzła programu. Po dołączeniu programu IDE wyświetla bardziej szczegółowe informacje, takie jak lista wszystkich wątków uruchomionych w programie. Informacje te są uzyskiwane z samego programu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Programy](../../extensibility/debugger/programs.md)
-- [Procesy](../../extensibility/debugger/processes.md)
+- [Procesów](../../extensibility/debugger/processes.md)
 - [Aparat debugowania](../../extensibility/debugger/debug-engine.md)
-- [Pojęcia dotyczące debugera](../../extensibility/debugger/debugger-concepts.md)
+- [Pojęcia debugera](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

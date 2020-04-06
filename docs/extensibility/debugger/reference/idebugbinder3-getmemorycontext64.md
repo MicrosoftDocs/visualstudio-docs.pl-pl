@@ -1,28 +1,28 @@
 ---
-title: IDebugBinder3::GetMemoryContext64 | Dokumentacja firmy Microsoft
+title: IDebugBinder3::GetMemoryContext64 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
 ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92c589951e9b65536be5474f56eb6b959232b738
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f76d84f0403a853ae7e297084f8745d7428386a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327068"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735736"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
-Konwertuje lokalizacji obiektu lub adresów pamięci 64-bitowych w kontekście pamięci.
+Konwertuje lokalizację obiektu lub 64-bitowy adres pamięci do kontekstu pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,19 +44,19 @@ int GetMemoryContext64 (
 
 ## <a name="parameters"></a>Parametry
 `pField`\
-[in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujący obiekt do zlokalizowania. Jeśli `NULL`, następnie za pomocą `dwConstant` zamiast tego.
+[w] [IDebugField,](../../../extensibility/debugger/reference/idebugfield.md) który opisuje obiekt do zlokalizowania. Jeśli `NULL`zamiast `dwConstant` tego użyj.
 
 `uConstant`\
-[in] Adres pamięci 64-bitowych, takich jak 0x50000000.
+[w] 64-bitowy adres pamięci, taki jak 0x500000000.
 
 `ppMemCxt`\
-[out] Zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfejs, który reprezentuje adres obiektu lub adresu w pamięci.
+[na zewnątrz] Zwraca interfejs [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący adres obiektu lub adres w pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład tworzy obiekt, który implementuje [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) interfejs i korzystania z tej metody można pobrać kontekstu pamięci.
+Poniższe przykłady tworzy obiekt, który implementuje interfejs [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) i używa tej metody, aby pobrać kontekst pamięci.
 
 ```cpp
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )
@@ -129,5 +129,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

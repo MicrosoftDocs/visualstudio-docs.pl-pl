@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onInsertText | Dokumentacja firmy Microsoft
+title: Tekst IDebugDocumentEvents2::onInsertText | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0185e4f6c3accc4225dbfb9be4ce9311f8d7115
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce03984d199fd404b7430b5342a06b51801af2e4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330525"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731482"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-Powiadamia pakietu debugowania, że włożono tekstu do dokumentu.
+Powiadamia pakiet debugowania, że tekst został wstawiony do dokumentu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,14 +43,14 @@ int onInsert( 
 
 ## <a name="parameters"></a>Parametry
 `pos`\
-[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje, gdzie został wstawiony tekst.
+[w] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wskazująca miejsce wstawienia tekstu.
 
 `dwNumToInsert`\
-[in] Określa liczbę znaków tekstu, które zostały wprowadzone.
+[w] Określa liczbę znaków wstawionego tekstu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

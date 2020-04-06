@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE | Microsoft Docs
+title: DOCCONTEXT_COMPARE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 75e4453cae63f484961cb2d0f3385a703709f83b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318147"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737228"
 ---
-# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-Określa kryteria do porównywania dwóch kontekstów dokumentu.
+# <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
+Określa kryteria porównywania dwóch kontekstów dokumentu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,29 +48,29 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>Pola
 `DOCCONTEXT_EQUAL`\
-Znajdź pierwszy kontekstu dokumentu na liście, która jest równa docelowej kontekstu dokumentu.
+Znajdź pierwszy kontekst dokumentu na liście, który jest równy kontekstowi dokumentu docelowego.
 
 `DOCCONTEXT_LESS_THAN`\
-Znajdź pierwszy kontekstu dokumentu na liście, która jest mniejsza niż docelowy kontekstu dokumentu.
+Znajdź pierwszy kontekst dokumentu na liście, który jest mniejszy niż kontekst dokumentu docelowego.
 
 `DOCCONTEXT_GREATER_THAN`\
-Znajdź pierwszy kontekstu dokumentu na liście, która jest większa niż docelowy kontekstu dokumentu.
+Znajdź pierwszy kontekst dokumentu na liście, który jest większy niż kontekst dokumentu docelowego.
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-Znajdź pierwszy kontekstu dokumentu na liście znajduje się w tym samym dokumencie co kontekstu dokumentu docelowego.
+Znajdź pierwszy kontekst dokumentu na liście, który znajduje się w tym samym dokumencie co kontekst dokumentu docelowego.
 
 ## <a name="remarks"></a>Uwagi
-Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) metody.
+Przekazany jako argument do [Metody Porównania.](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
 
-Te wartości są używane do określenia kryteria porównania na potrzeby znajdowania pierwszy kontekstu dokumentu na liście. Kontekstu dokumentu znajduje się lista kontekstów dokumentu do porównania sam względem za pośrednictwem `IDebugDocumentContext2::Compare` metody. Pierwszy kontekstu dokumentu na liście, dla którego operator porównania jest `true` jest zwracana.
+Wartości te są używane do określania kryteriów porównania dla znalezienia pierwszego kontekstu dokumentu na liście. Kontekst dokumentu otrzymuje listę kontekstów dokumentu, aby porównać się z za pomocą `IDebugDocumentContext2::Compare` metody. Pierwszy kontekst dokumentu na liście, dla `true` którego jest zwracany operator porównania.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [Porównanie](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

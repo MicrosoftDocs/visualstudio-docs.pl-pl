@@ -1,5 +1,5 @@
 ---
-title: WizardExtension —, element (szablony Visual Studio) | Microsoft Docs
+title: Element WizardExtension (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748937"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80740373"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension — Element (szablony Visual Studio)
-Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
+Zawiera elementy rejestracji do dostosowywania kreatora szablonów.
 
- \<VSTemplate >... \<WizardExtension — >
+ \<VSTemplate> ... \<> WizardExtension
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,8 +45,8 @@ Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Określa nazwę lub silną nazwę zestawu, który pojawia się w globalnej pamięci podręcznej zestawów. W elemencie `WizardExtension` musi znajdować się co najmniej jeden element `Assembly`.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> W pełni kwalifikowana nazwa klasy implementującej interfejs `IWizard`. W elemencie `WizardExtension` musi znajdować się co najmniej jeden element `FullClassName`.|
+|[Zestaw](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> Określa nazwę lub silną nazwę zestawu, który pojawia się w globalnej pamięci podręcznej zestawów. Musi istnieć co `Assembly` najmniej `WizardExtension` jeden element w elemencie.|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Element wymagany.<br /><br /> W pełni kwalifikowana nazwa klasy, `IWizard` która implementuje interfejs. Musi istnieć co `FullClassName` najmniej `WizardExtension` jeden element w elemencie.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
@@ -55,10 +55,10 @@ Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Zawiera wszystkie metadane szablonu projektu, szablonu elementu lub zestawu startowego.|
 
 ## <a name="remarks"></a>Uwagi
- `WizardExtension` jest opcjonalnym elementem podrzędnym `VSTemplate`.
+ `WizardExtension`jest opcjonalnym elementem podrzędnym . `VSTemplate`
 
 ## <a name="example"></a>Przykład
- Poniższy przykład ilustruje metadane standardowego szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji systemu Windows.
+ Poniższy przykład ilustruje metadane dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] standardowego szablonu projektu dla aplikacji systemu Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -88,7 +88,7 @@ Zawiera elementy rejestracji do dostosowywania Kreatora szablonów.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)
-- [Instrukcje: korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Porady: korzystanie z kreatora z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md)

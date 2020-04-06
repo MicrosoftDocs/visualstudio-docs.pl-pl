@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO | Microsoft Docs
+title: EXCEPTION_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337793"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737019"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
-W tym artykule opisano, wystąpi wyjątek lub błąd czasu wykonywania zgłoszony przez debugowanego programu.
+# <a name="exception_info"></a>EXCEPTION_INFO
+W tym artykule opisano wyjątek lub błąd w czasie wykonywania zgłoszony przez program debugowany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,34 +51,34 @@ public struct EXCEPTION_INFO {
 
 ## <a name="members"></a>Elementy członkowskie
 `pProgram`\
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym wyjątek wystąpił.
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym wystąpił wyjątek.
 
 `bstrProgramName`\
-Nazwa programu, w którym wyjątek wystąpił.
+Nazwa programu, w którym wystąpił wyjątek.
 
 `bstrExceptionName`\
 Nazwa wyjątku.
 
 `dwCode`\
-Kod identyfikacyjny dla błędu lub wyjątku czasu wykonywania.
+Kod identyfikacyjny dla błędu wyjątku lub czasu wykonywania.
 
 `dwState`\
-Wartość z zakresu od [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) wyliczenie, które definiuje stan wyjątku.
+Wartość z [wyliczenia EXCEPTION_STATE,](../../../extensibility/debugger/reference/exception-state.md) która definiuje stan wyjątku.
 
 `guidType`\
-Identyfikator GUID języka, każdy `guidLang` lub `guidEng`.
+Identyfikator języka GUID, albo `guidLang` `guidEng`lub .
 
 ## <a name="remarks"></a>Uwagi
-Ta struktura jest przekazywany jako parametr do [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) i [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody. Ta struktura jest również przekazywany do [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metodę, aby wypełnić.
+Ta struktura jest przekazywana jako parametr do [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) i [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody. Ta struktura jest również przekazywana do [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) metody, które mają być wypełnione.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

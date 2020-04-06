@@ -1,24 +1,24 @@
 ---
-title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
+title: IDebugBreakpointChecksumRequest2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfcb7d1603160c2f857508c3dd32ce0696b6d7f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 632c3611f6c03a47a7d46e985eb6aa2685864a7f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352992"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735126"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-Reprezentuje dokument sumy kontrolnej dla żądania punktu przerwania.
+Reprezentuje sumę kontrolną dokumentu dla żądania punktu przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,19 +27,19 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Zaimplementowane przez [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pakiet debugowania i używane przez aparaty debugowania.
+ Zaimplementowane przez pakiet [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugowania i używane przez aparaty debugowania.
 
 ## <a name="methods"></a>Metody
- W poniższej tabeli przedstawiono metody `IDebugBreakpointChecksumRequest2`.
+ W poniższej tabeli `IDebugBreakpointChecksumRequest2`przedstawiono metody .
 
 |Metoda|Opis|
 |------------|-----------------|
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Pobiera suma kontrolna dokumentu żądania punktu przerwania podane Unikatowy identyfikator algorytmu sumy kontrolnej do użycia.|
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Określa, czy suma kontrolna jest włączone dla tego dokumentu.|
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Pobiera sumę kontrolną dokumentu dla żądania punktu przerwania, biorąc pod uwagę unikatowy identyfikator algorytmu sumy kontrolnej do użycia.|
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Określa, czy suma kontrolna jest włączona dla tego dokumentu.|
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll

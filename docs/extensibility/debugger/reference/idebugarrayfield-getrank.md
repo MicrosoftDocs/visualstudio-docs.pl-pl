@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank | Dokumentacja firmy Microsoft
+title: IDebugArrayField::GetRank | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetRank method
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33d5118ffa045ccc2315ccb596850be6922fc2ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 692f2f13d861d9688ba349fbc80cb1ca426582c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321691"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736308"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-Pobiera ranga lub liczba wymiarów tablicy.
+Pobiera rangi lub liczby wymiarów tablicy.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int GetRank(
 
 ## <a name="parameters"></a>Parametry
 `pdwRank`\
-[out] Zwraca rangę.
+[na zewnątrz] Zwraca rangę.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ranga tablicy odpowiada liczbę wymiarów. W języku C++ i C# są naprawdę tablice tablic wielowymiarowych tablic, a w związku z tym można uznać za Jednowymiarowa tablica (i `GetRank` metoda zawsze zwraca 1). W [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], z drugiej strony, wielowymiarowe tablice są obsługiwane inaczej i rangę tablicy takich odzwierciedla liczbę wymiarów (i `GetRank` metoda zawsze zwraca liczbę wymiarów).
+ Ranga tablicy odpowiada liczbie wymiarów. W językach C++ i C#tablice wielowymiarowe są naprawdę tablicami tablic i dlatego można `GetRank` je uznać za tylko tablicę jednowymiarową (a metoda zawsze zwraca wartość 1). Z [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]drugiej strony w tablicach wielowymiarowych są obsługiwane w różny sposób, a ranga `GetRank` takiej tablicy odzwierciedla liczbę wymiarów (a metoda zawsze zwraca liczbę wymiarów).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

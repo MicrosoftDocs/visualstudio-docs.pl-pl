@@ -1,5 +1,5 @@
 ---
-title: BP_STATE | Microsoft Docs
+title: BP_STATE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350616"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737801"
 ---
-# <a name="bpstate"></a>BP_STATE
-Określa istnienie powiązany punkt przerwania i określa, czy jest włączony.
+# <a name="bp_state"></a>BP_STATE
+Określa istnienie powiązanego punktu przerwania, a także określa, czy jest włączony.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,27 +48,27 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>Pola
 `BPS_NONE`\
-Określa, czy istnieje nie punktu przerwania.
+Określa, że nie istnieje punkt przerwania.
 
 `BPS_DELETED`\
 Określa, że punkt przerwania został usunięty.
 
 `BPS_DISABLED`\
-Określa, że punkt przerwania jest wyłączona.
+Określa, że punkt przerwania jest wyłączony.
 
 `BPS_ENABLED`\
 Określa, że punkt przerwania jest włączony.
 
 ## <a name="remarks"></a>Uwagi
-Zwrócone w wyniku [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) metody.
+Zwrócono z [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) metody.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

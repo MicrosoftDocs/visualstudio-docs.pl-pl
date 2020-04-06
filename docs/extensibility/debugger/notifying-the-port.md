@@ -1,50 +1,50 @@
 ---
-title: Powiadamianie portu | Dokumentacja firmy Microsoft
+title: Powiadamianie portu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e7ccb4ab9fc36e08f4094baaf1e6b6eee30b2f8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351505"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738326"
 ---
-# <a name="notify-the-port"></a>Powiadom portu
-Po uruchomieniu programu, numer portu musi być powiadomiony, w następujący sposób:
+# <a name="notify-the-port"></a>Powiadamianie portu
+Po uruchomieniu programu, port musi być powiadomiony, w następujący sposób:
 
-1. Gdy port otrzymuje nowy węzeł program, wysyła zdarzenie tworzenia programu do sesji debugowania. Zdarzenie niesie ze sobą interfejs, który reprezentuje program.
+1. Gdy port odbiera nowy węzeł programu, wysyła zdarzenie tworzenia programu z powrotem do sesji debugowania. Zdarzenie niesie ze sobą interfejs, który reprezentuje program.
 
-2. Program dla identyfikatora aparat debugowania (DE), który można dołączyć do wysyła zapytanie do sesji debugowania.
+2. Sesja debugowania wysyła zapytanie do programu o identyfikator aparatu debugowania (DE), do których można dołączyć.
 
-3. Sesja debugowania sprawdza, czy DE na liście dopuszczalnych DEs dla tego programu. Sesja debugowania pobiera tej listy z aktywnym programem ustawień rozwiązania pierwotnie przekazana do niej przy użyciu pakietu debugowania.
+3. Sesja debugowania sprawdza, czy DE znajduje się na liście dopuszczalnych DEs dla tego programu. Sesja debugowania pobiera tę listę z aktywnych ustawień programu rozwiązania, pierwotnie przekazanych do niej przez pakiet debugowania.
 
-    DE musi znajdować się na liście dopuszczalny rozmiar, w przeciwnym razie DE nie zostanie dołączony do programu.
+    DE musi znajdować się na liście dopuszczalnych, w przeciwnym razie DE nie zostanie dołączony do programu.
 
-   Programowo, gdy port otrzymuje najpierw nowego węzła programu, tworzy [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfejsu do reprezentowania program.
-
-> [!NOTE]
-> To nie należy mylić z `IDebugProgram2` interfejsu utworzone później przez aparat debugowania (DE).
-
- Port wysyła [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzenie tworzenia programu do Menedżer debugowania sesji (SDM) za pomocą COM `IConnectionPoint` interfejsu.
+   Programowo, gdy port po raz pierwszy odbiera nowy węzeł programu, tworzy interfejs [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) do reprezentowania programu.
 
 > [!NOTE]
-> To nie należy mylić z `IDebugProgramCreateEvent2` interfejsu, która jest wysyłana później przez DE.
+> Nie należy mylić `IDebugProgram2` tego z interfejsem utworzonym później przez aparat debugowania (DE).
 
- Wraz z samego interfejsu do zdarzenia, wysyła port [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), i [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfejsów, które reprezentują port, przetwarzania, i Program, odpowiednio. Wywołania SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) można pobrać identyfikatora GUID DE, który można debugować program. Identyfikator GUID początkowo zostały pobrane z [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu.
+ Port wysyła zdarzenie tworzenia programu [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) z powrotem do menedżera debugowania `IConnectionPoint` sesji (SDM) za pomocą interfejsu COM.
 
- SDM sprawdza, czy DE na liście dopuszczalnych DEs. SDM pobiera tej listy z aktywnym programem ustawień rozwiązania pierwotnie przekazana do niej przy użyciu pakietu debugowania. DE musi znajdować się na liście dopuszczalny rozmiar, w przeciwnym razie nie można dołączyć do programu.
+> [!NOTE]
+> Nie należy tego mylić z interfejsem, `IDebugProgramCreateEvent2` który jest wysyłany później przez DE.
 
- Tożsamość DE jest znany, SDM po chcesz dołączyć do programu.
+ Wraz z samym interfejsem zdarzenia port wysyła interfejsy [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)i [IDebugProgram2,](../../extensibility/debugger/reference/idebugprogram2.md) które reprezentują odpowiednio port, proces i program. SDM wywołuje [IDebugProgram2::GetEngineInfo,](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) aby uzyskać identyfikator GUID DE, który może debugować program. Identyfikator GUID został pierwotnie uzyskany z interfejsu [IDebugProgramNode2.](../../extensibility/debugger/reference/idebugprogramnode2.md)
 
-## <a name="see-also"></a>Zobacz także
+ SDM sprawdza, czy DE znajduje się na liście dopuszczalnych DE. SDM pobiera tę listę z aktywnych ustawień programu rozwiązania, pierwotnie przekazywane do niego przez pakiet debugowania. De musi znajdować się na liście dopuszczalnych, w przeciwnym razie nie będzie dołączony do programu.
+
+ Gdy tożsamość DE jest znana, SDM jest gotowy do dołączenia go do programu.
+
+## <a name="see-also"></a>Zobacz też
 - [Uruchamianie programu](../../extensibility/debugger/launching-a-program.md)
 - [Dołączanie po uruchomieniu](../../extensibility/debugger/attaching-after-a-launch.md)
 - [Zadania debugowania](../../extensibility/debugger/debugging-tasks.md)

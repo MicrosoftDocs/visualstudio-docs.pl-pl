@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Dokumentacja firmy Microsoft
+title: IDebugCodeContext2::GetLanguageInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08138fcd67e7d4fd5115ac13fe1b8348f76245d8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339015"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80734244"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 Pobiera informacje o języku dla tego kontekstu kodu.
@@ -43,16 +43,16 @@ int GetLanguageInfo( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrLanguage`\
-[out w] Zwraca ciąg, który zawiera nazwę języka, takie jak "C++."
+[w, na zewnątrz] Zwraca ciąg zawierający nazwę języka, na przykład "C++".
 
 `pguidLanguage`\
-[out w] Zwraca identyfikator GUID dla języka kontekst kodu, na przykład `guidCPPLang`.
+[w, na zewnątrz] Zwraca identyfikator GUID dla języka kontekstu kodu, `guidCPPLang`na przykład .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Co najmniej jeden z parametrów musi zwracać wartość inną niż null.
+ Co najmniej jeden z parametrów musi zwracać wartość niekwaśną.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

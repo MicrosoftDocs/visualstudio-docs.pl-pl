@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetEngineInfo | Dokumentacja firmy Microsoft
+title: IDebugProgramNode2::GetEngineInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d49bbaf4ca4b4d85d198eeb51b2eb4d13508d39
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351158"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722104"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Pobiera nazwę i identyfikator aparat debugowania (DE), który używa programu.
+Pobiera nazwę i identyfikator aparatu debugowania (DE) z uruchomionym programem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,13 +43,13 @@ int GetEngineInfo(
 
 ## <a name="parameters"></a>Parametry
 `pbstrEngine`\
-[out] Zwraca nazwę DE działania programu (C++-określonych: może to być wskaźnik zerowy, co oznacza, że obiekt wywołujący nie zainteresowanych nazwę aparat).
+[na zewnątrz] Zwraca nazwę DE uruchomionego programu (C++-specific: może to być wskaźnik null wskazujący, że wywołujący nie jest zainteresowany nazwą aparatu).
 
 `pguidEngine`\
-[out] Zwraca unikatowy identyfikator globalny DE działania programu (C++-określonych: może to być wskaźnik zerowy, co oznacza, że obiekt wywołujący nie zainteresowani GUID aparatu).
+[na zewnątrz] Zwraca globalnie unikatowy identyfikator de uruchomiony program (C++-specific: może to być wskaźnik null wskazujący, że wywołujący nie jest zainteresowany identyfikatorem GUID aparatu).
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

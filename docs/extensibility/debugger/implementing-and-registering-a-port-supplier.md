@@ -1,30 +1,30 @@
 ---
-title: Implementowanie i rejestrowanie dostawcy portu | Dokumentacja firmy Microsoft
+title: Wdrażanie i rejestracja dostawcy portu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26767193c4489405432054ee94beb195ce8448d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: efa9cdd8740648b66fe7190177b5fe769c4b2539
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344270"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738533"
 ---
-# <a name="implement-and-register-a-port-supplier"></a>Implementowanie i rejestrowanie dostawcy portu
-Rolą dostawcy portu jest śledzenie i podać portów, które z kolei zarządzać procesami. Gdy port musi zostać utworzona, dostawcy portu jest uruchomiony, przy użyciu CoCreate o identyfikatorze GUID dostawcy portu (Menedżer debugowania sesji [SDM] użyje dostawcy portu, który użytkownik wybrał lub dostawcę, port określony przez system projektu). Następnie wywołuje SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) aby zobaczyć, czy żadnych portów może być dodany. Jeśli port mogą być dodawane, nowy port jest wymagany przez wywołanie [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie do niej [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, który opisuje. `AddPort` Zwraca nowy port, reprezentowane przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu.
+# <a name="implement-and-register-a-port-supplier"></a>Wdrażanie i rejestrowanie dostawcy portu
+Rolą dostawcy portu jest śledzenie i dostarczanie portów, które z kolei zarządzają procesami. Gdy port musi zostać utworzony, dostawca portu jest tworzony przy użyciu coCreate z identyfikatorem GUID dostawcy portu (menedżer debugowania sesji [SDM] użyje dostawcy portu wybranego przez użytkownika lub dostawcy portu określonego przez system projektu). Następnie SDM wywołuje [CanAddPort,](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) aby sprawdzić, czy można dodać jakieś porty. Jeśli można dodać port, nowy port jest wymagany przez wywołanie [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) i przekazanie go [IDebugPortRequest2,](../../extensibility/debugger/reference/idebugportrequest2.md) który opisuje port. `AddPort`zwraca nowy port reprezentowany przez interfejs [IDebugPort2.](../../extensibility/debugger/reference/idebugport2.md)
 
-## <a name="discussion"></a>Dyskusja
- Port jest tworzony przez dostawcę portu, który jest skojarzony z serwerem maszyny lub debugowania. Serwer wylicza jej dostawcy portów za pomocą[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) metoda i dostawcy portu wylicza jego portów za pomocą [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) metody.
+## <a name="discussion"></a>Dyskusji
+ Port jest tworzony przez dostawcę portu, który jest skojarzony z serwerem komputera lub debugowania. Serwer wylicza swoich dostawców portów za pomocą[Metody EnumPortSuppliers,](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) a dostawca portu wylicza swoje porty za pomocą metody [EnumPorts.](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)
 
- Oprócz typowych rejestracji modelu COM dostawcy portu musi zarejestrować się za pomocą programu Visual Studio, umieszczając jego identyfikator klasy i nazwy w lokalizacjach określonego rejestru. Wywołana funkcja pomocnika debugowania zestawu SDK `SetMetric` obsługuje tej kwestii: jest wywoływana jeden raz dla każdego elementu, należy zarejestrować ten sposób:
+ Oprócz typowej rejestracji COM dostawca portu musi zarejestrować się w programie Visual Studio, umieszczając jego identyfikator CLSID i nazwę w określonych lokalizacjach rejestru. Funkcja pomocnika debugowania SDK `SetMetric` o nazwie obsługuje ten chore: jest wywoływana raz dla każdego elementu, które mają być zarejestrowane, w związku z tym:
 
 ```cpp
 SetMetric(metrictypePortSupplier,
@@ -41,7 +41,7 @@ SetMetric(metrictypePortSupplier,
           NULL);
 ```
 
- Dostawcy portu wyrejestrowuje przez wywołanie metody `RemoveMetric` (inną funkcję pomocnika debugowania zestawu SDK) jeden raz dla każdego elementu, który został zarejestrowany ten sposób:
+ Dostawca portu wyrejestrowuje `RemoveMetric` się, wywołując (inną funkcję pomocnika debugowania SDK) raz dla każdego elementu, który został zarejestrowany, w związku z czym:
 
 ```cpp
 RemoveMetric(metrictypePortSupplier,
@@ -55,11 +55,11 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
-> [Pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` i `RemoveMetric` są statyczne funkcje zdefiniowane w *dbgmetric.h* i kompilowanych w *ad2de.lib*. `metrictypePortSupplier`, `metricCLSID`, I `metricName` pomocników również są zdefiniowane w *dbgmetric.h*.
+> [Pomocników SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` i `RemoveMetric` są funkcje statyczne zdefiniowane w *dbgmetric.h* i skompilowany w *ad2de.lib*. `metricCLSID`W `metrictypePortSupplier`pliku `metricName` *dbgmetric.h*zdefiniowano również program , i pomocników.
 
- Dostawcy portu można podać jego nazwę i identyfikator GUID za pomocą metody [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) i [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), odpowiednio.
+ Dostawca portu może podać swoją nazwę i identyfikator GUID za pomocą metod [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) i [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), odpowiednio.
 
-## <a name="see-also"></a>Zobacz także
-- [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
-- [Pomocnicy zestawu SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+## <a name="see-also"></a>Zobacz też
+- [Wdrażanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
+- [Pomocnicy SDK do debugowania](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Dostawcy portów](../../extensibility/debugger/port-suppliers.md)

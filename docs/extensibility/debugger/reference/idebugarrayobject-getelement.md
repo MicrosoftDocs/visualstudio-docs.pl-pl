@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement | Dokumentacja firmy Microsoft
+title: IDebugArrayObject::GetElement | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322216"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736172"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Pobiera element tablicy.
@@ -43,16 +43,16 @@ int GetElement(
 
 ## <a name="parameters"></a>Parametry
 `dwIndex`\
-[in] Indeks elementu.
+[w] Indeks elementu.
 
 `ppElement`\
-[out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfejs, który reprezentuje element.
+[na zewnątrz] Zwraca interfejs [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) który reprezentuje element.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda uznaje wszystkie elementy obiektu tablicowego Jednowymiarowa tablica, nawet w przypadku obiektu tablicy wielowymiarowej. Na przykład, biorąc pod uwagę tablicy `myarray[3][2][6]` i `dwIndex` parametru 20, ta metoda zwróci element z `myarray[1][1][2]`, a `dwIndex` parametru 21 zwróci element z `myarray[1][1][3]`. Użyj [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metodę, aby określić całkowitą liczbę elementów w tablicy.
+ Ta metoda widzi wszystkie elementy obiektu tablicy jako tablicy jednowymiarowej, nawet jeśli obiekt tablicy jest wielowymiarowy. Na przykład, biorąc `myarray[3][2][6]` pod `dwIndex` uwagę tablicę i parametr 20, ta metoda zwróci element z `myarray[1][1][2]`, a `dwIndex` parametr 21 zwróci element z `myarray[1][1][3]`. Użyj [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) metody, aby określić całkowitą liczbę elementów w tablicy.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

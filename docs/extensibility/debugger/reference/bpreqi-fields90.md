@@ -1,27 +1,27 @@
 ---
-title: BPREQI_FIELDS90 | Microsoft Docs
+title: BPREQI_FIELDS90 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4d6df181ac15746202ae9f67e7b8874848e8f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350547"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737733"
 ---
-# <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Wylicza prawidłowe wartości, które określają informacje do pobrania dotyczące żądania punktu przerwania. To wyliczenie rozszerza [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) wyliczenia.
+# <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
+Wylicza prawidłowe wartości, które określają informacje, które mają być pobierane o żądaniu punktu przerwania. To wyliczenie rozszerza wyliczenie [BPREQI_FIELDS.](../../../extensibility/debugger/reference/bpreqi-fields.md)
 
 ## <a name="syntax"></a>Składnia
 
@@ -78,56 +78,56 @@ public enum enum_BPREQI_FIELDS90
 
 ## <a name="fields"></a>Pola
 `BPREQI90_BPLOCATION`\
-Inicjowanie lub użyj `bpLocation` pola (lokalizacji punktu przerwania) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) lub [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
+Zainicjować lub `bpLocation` użyć pola (lokalizacja punktu przerwania) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) lub [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.
 
 `BPREQI90_LANGUAGE`\
-Inicjowanie lub użyj `guidLanguage` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `guidLanguage` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_PROGRAM`\
-Inicjowanie lub użyj `pProgram` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `pProgram` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_PROGRAMNAME`\
-Inicjowanie lub użyj `bstrProgramName` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `bstrProgramName` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_THREAD`\
-Inicjowanie lub użyj `pThread` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `pThread` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_THREADNAME`\
-Inicjowanie lub użyj `bstrThreadName` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `bstrThreadName` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_PASSCOUNT`\
-Inicjowanie lub użyj `bpPassCount` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `bpPassCount` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_CONDITION`\
-Inicjowanie lub użyj `bpCondition` pola (warunek punktu przerwania) `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `bpCondition` użyć pola (warunek punktu `BP_REQUEST_INFO` `BP_REQUEST_INFO2` przerwania) lub struktury.
 
 `BPREQI90_FLAGS`\
-Inicjowanie lub użyj `dwFlags` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `dwFlags` użyć pola `BP_REQUEST_INFO` `BP_REQUEST_INFO2` lub struktury.
 
 `BPREQI90_ALLOLDFIELDS`\
-Inicjowanie lub użyj wszystkich pól z `BP_REQUEST_INFO` struktury.
+Zainicjować lub użyć wszystkich pól `BP_REQUEST_INFO` dla struktury.
 
 `BPREQI90_VENDOR`\
-Inicjowanie lub użyj `guidVendor` pole `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `guidVendor` użyć `BP_REQUEST_INFO2` pola struktury.
 
 `BPREQI90_CONSTRAINT`\
-Inicjowanie lub użyj `bstrConstraint` pole `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `bstrConstraint` użyć `BP_REQUEST_INFO2` pola struktury.
 
 `BPREQI90_TRACEPOINT`\
-Inicjowanie lub użyj `bstrTracepoint` pole `BP_REQUEST_INFO2` struktury.
+Zainicjować lub `bstrTracepoint` użyć `BP_REQUEST_INFO2` pola struktury.
 
 `BPREQI90_MACROTRACEPOINT`\
-Inicjowanie lub użyj `bstrMacroTracepoint` pole `BP_REQUEST_INFO2` struktury. BPREQI_ALLFIELDS nie zawiera tego pola.
+Zainicjować lub `bstrMacroTracepoint` użyć `BP_REQUEST_INFO2` pola struktury. BPREQI_ALLFIELDS nie obejmuje tego pola.
 
 `BPREQI90_ALLFIELDS`\
-Określa wszystkie pola dla `BP_REQUEST_INFO2` struktury.
+Określa wszystkie pola `BP_REQUEST_INFO2` dla struktury.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: Msdbg90.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

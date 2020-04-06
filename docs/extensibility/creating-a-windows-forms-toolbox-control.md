@@ -1,5 +1,5 @@
 ---
-title: Tworzenie Windows Forms kontrolki przybornika | Dokumentacja firmy Microsoft
+title: Tworzenie formantu zestawu narzędzi formularzy systemu Windows | Dokumenty firmy Microsoft
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,76 +7,76 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3887a2d54f2744504f587b848bc1395090c3904c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d7e7749302252c5d56f21c58de9b6ac23f898572
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345412"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739580"
 ---
-# <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
+# <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki zestawu narzędzi formularzy systemu Windows
 
-Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS), umożliwia tworzenie **przybornika** formant, który jest automatycznie dodawane, gdy rozszerzenie jest zainstalowane. W tym przewodniku pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.
+Szablon elementu formant pakietu Windows Forms Toolbox, który znajduje się w narzędziach rozszerzalności programu Visual Studio (VS SDK), umożliwia utworzenie formantu **przybornika,** który jest automatycznie dodawany po zainstalowaniu rozszerzenia. W tym przewodniku pokazano, jak użyć szablonu do utworzenia prostego formantu licznika, który można rozpowszechniać wśród innych użytkowników.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-the-toolbox-control"></a>Tworzenie kontrolki przybornika
 
-Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika niezdefiniowane i zawiera wszystkie funkcje, które jest wymagane, aby dodać formant do **przybornika**.
+Szablon Formant zestawu narzędzi formularzy systemu Windows tworzy niezdefiniowany formant użytkownika i zapewnia wszystkie funkcje wymagane do dodania formantu do **przybornika**.
 
-### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Tworzenie rozszerzenia za pomocą kontrolki przybornika Windows Forms
+### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Tworzenie rozszerzenia za pomocą kontrolki zestawu narzędzi Windows Forms
 
-1. Utwórz projekt VSIX, o nazwie `MyWinFormsControl`. Można znaleźć szablonu projektu VSIX w **nowy projekt** okno dialogowe, wyszukując pozycję "vsix".
+1. Utwórz projekt VSIX o nazwie `MyWinFormsControl`. Szablon projektu VSIX można znaleźć w oknie dialogowym **Nowy projekt,** wyszukując "vsix".
 
-2. Po otwarciu projektu, Dodaj **kontrolki formularzy Windows Forms przybornika** szablon elementu o nazwie `Counter`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **Dodaj nowy element** okno dialogowe, przejdź do **Visual C#**  > **rozszerzalności** i wybierz **kontrolki formularzy Windows Forms przybornika**
+2. Po otwarciu projektu dodaj szablon elementu **formantu zestawu narzędzi windows forms** o nazwie `Counter`. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy węzeł projektu i wybierz polecenie **Dodaj** > **nowy element**. W oknie dialogowym **Dodawanie nowego elementu** przejdź do pozycji**Rozszerzalność** **programu Visual C#** > i wybierz **pozycję Formant zestawu narzędzi formularzy systemu Windows**
 
-3. Spowoduje to dodanie kontrolkę użytkownika `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> aby umieścić kontrolkę w **przybornika**, a **Microsoft.VisualStudio.ToolboxControl** wpis zawartości w manifestu VSIX do wdrożenia.
+3. Spowoduje to dodanie formantu użytkownika, a `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> do umieszczenia formantu w **przyborniku**i **wpisu zasobu Microsoft.VisualStudio.ToolboxControl** w manifeście VSIX do wdrożenia.
 
 ### <a name="build-a-user-interface-for-the-control"></a>Tworzenie interfejsu użytkownika dla formantu
 
-`Counter` Formant wymaga dwóch kontrolek podrzędnych: <xref:System.Windows.Forms.Label> Aby wyświetlić bieżącą liczbę i <xref:System.Windows.Forms.Button> zresetować liczby 0. Brak kontrolek podrzędnych są wymagane, ponieważ obiekty wywołujące powoduje zwiększenie licznika programowo.
+Formant `Counter` wymaga dwóch elementów sterujących podrzędnych: a <xref:System.Windows.Forms.Label> do wyświetlania bieżącej liczby i a, <xref:System.Windows.Forms.Button> aby zresetować liczbę do 0. Nie są wymagane żadne inne formanty podrzędne, ponieważ wywołujący będą zwiększać licznik programowo.
 
-#### <a name="to-build-the-user-interface"></a>Tworzenie interfejsu użytkownika
+#### <a name="to-build-the-user-interface"></a>Aby utworzyć interfejs użytkownika
 
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *Counter.cs* aby go otworzyć w projektancie.
+1. W **Eksploratorze rozwiązań**kliknij dwukrotnie *Counter.cs,* aby otworzyć go w projektancie.
 
-2. Usuń **kliknij tutaj!** przycisk, który jest domyślnie podczas dodawania szablonu elementu kontrolki formularzy Windows Forms przybornika.
+2. Usuń **Kliknij tutaj!** przycisk, który jest domyślnie dołączony podczas dodawania szablonu elementu kontrolki zestawu narzędzi formularzy windows.
 
-3. Z **przybornika**, przeciągnij `Label` kontroli i następnie `Button` kontroli poniżej go do powierzchni projektowej.
+3. Z **przybornika**przeciągnij `Label` formant, a następnie formant `Button` pod nim na powierzchnię projektową.
 
-4. Zmień rozmiar ogólną kontrolkę użytkownika do 150, 50 pikseli, a następnie zmień rozmiar przycisku sterowania do 50, 20 pikseli.
+4. Zmienić rozmiar ogólnego formantu użytkownika do 150, 50 pikseli i zmienić rozmiar formantu przycisku do 50, 20 pikseli.
 
-5. W **właściwości** okna, ustaw następujące wartości dla formantów na powierzchni projektowej.
+5. W oknie **Właściwości** ustaw następujące wartości formantu na powierzchni projektowej.
 
-    |formant|Właściwość|Wartość|
+    |Kontrola|Właściwość|Wartość|
     |-------------|--------------|-----------|
-    |`Label1`|**Text**|""|
-    |`Button1`|**Nazwa**|btnReset|
-    |`Button1`|**Text**|Resetuj|
+    |`Label1`|**Tekst**|""|
+    |`Button1`|**Nazwa**|btnReset (zestaw btnReset)|
+    |`Button1`|**Tekst**|Reset|
 
-### <a name="code-the-user-control"></a>Kod kontroli użytkownika
+### <a name="code-the-user-control"></a>Kodowanie formantu użytkownika
 
-`Counter` Kontroli udostępni metodę, aby zwiększyć licznik, wystąpienie zdarzenia wywoływane, gdy licznik jest zwiększany, **resetowania** przycisk i trzy właściwości do przechowywania bieżąca liczba, tekst wyświetlany i czy ma być wyświetlana lub ukryć **resetowania** przycisku. `ProvideToolboxControl` Atrybut określa, w którym miejscu **przybornika** `Counter` pojawi się kontrolka.
+Formant `Counter` będzie uwidaczniać metodę, aby przyrost licznika, zdarzenie, które mają być wywoływane, gdy licznik jest zwiększany, **reset** przycisk i trzy właściwości do przechowywania bieżącej liczby, wyświetlany tekst i czy pokazać lub ukryć **przycisk Reset.** Atrybut `ProvideToolboxControl` określa, gdzie w **przyborniku** `Counter` pojawi się formant.
 
-#### <a name="to-code-the-user-control"></a>Do kodu kontrolki użytkownika
+#### <a name="to-code-the-user-control"></a>Aby zakodować formant użytkownika
 
-1. Kliknij dwukrotnie formularza, aby otworzyć jej obciążenia obsługi zdarzeń w oknie kodu.
+1. Kliknij dwukrotnie formularz, aby otworzyć jego program obsługi zdarzeń ładowania w oknie kodu.
 
-2. Powyżej metodę programu obsługi zdarzeń w klasie kontrolki, należy utworzyć na liczbę całkowitą określającą wartość licznika i ciągu do przechowywania tekstu wyświetlanego, jak pokazano w poniższym przykładzie.
+2. Powyżej metody obsługi zdarzeń w klasie formantu utwórz całkowitą do przechowywania wartości licznika i ciąg do przechowywania tekstu wyświetlanego, jak pokazano w poniższym przykładzie.
 
     ```csharp
     int currentValue;
     string displayText;
     ```
 
-3. Utwórz następujące deklaracje właściwości publicznej.
+3. Utwórz następujące deklaracje właściwości publicznych.
 
     ```csharp
     public int Value {
@@ -95,9 +95,9 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 
     ```
 
-    Obiekty wywołujące dostęp tych właściwości, pobieranie i ustawianie wyświetlanego tekstu licznika, jak i aby pokazać lub ukryć **resetowania** przycisku. Obiekty wywołujące można uzyskać bieżącą wartość tylko do odczytu `Value` właściwości, ale nie można ustawić wartość bezpośrednio.
+    Osoby dzwoniące mogą uzyskać dostęp do tych właściwości, aby uzyskać i ustawić wyświetlany tekst licznika oraz pokazać lub ukryć przycisk **Reset.** Obiekt wywołujący można uzyskać bieżącą `Value` wartość właściwości tylko do odczytu, ale nie można ustawić wartość bezpośrednio.
 
-4. Umieść następujący kod `Load` zdarzeń dla formantu.
+4. Umieść następujący kod `Load` w zdarzeniu dla formantu.
 
     ```csharp
     private void Counter_Load(object sender, EventArgs e)
@@ -108,9 +108,9 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 
     ```
 
-    Ustawienie **etykiety** tekstu w <xref:System.Windows.Forms.UserControl.Load> zdarzeń umożliwia właściwości obiektu docelowego załadować przed ich wartości są stosowane. Ustawienie **etykiety** tekstu w Konstruktorze mogłoby spowodować pustą **etykiety**.
+    Ustawienie **Label** tekst <xref:System.Windows.Forms.UserControl.Load> w zdarzeniu umożliwia właściwości docelowe, aby załadować przed ich wartości są stosowane. Ustawienie tekstu **etykiety** w konstruktorze spowodowałoby powstanie pustej **etykiety**.
 
-5. Utwórz następującą metodę publicznej, aby zwiększyć licznik.
+5. Utwórz następującą metodę publiczną, aby zwiększać licznik.
 
     ```csharp
     public void Increment()
@@ -122,15 +122,15 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 
     ```
 
-6. Dodaj deklarację dla `Incremented` zdarzeń do klasy formantu.
+6. Dodaj deklarację `Incremented` dla zdarzenia do klasy kontrolnej.
 
     ```csharp
     public event EventHandler Incremented;
     ```
 
-    Obiekty wywołujące można dodać procedury obsługi do tego zdarzenia, aby odpowiadanie na zmiany w wartość licznika.
+    Obiekty wywołujące można dodać programy obsługi do tego zdarzenia, aby odpowiedzieć na zmiany wartości licznika.
 
-7. Powrót do widoku projektu, a następnie kliknij dwukrotnie ikonę **resetowania** przycisk, aby wygenerować `btnReset_Click` programu obsługi zdarzeń i wypełnić ją w, jak pokazano w poniższym przykładzie.
+7. Wróć do widoku projektu i kliknij dwukrotnie `btnReset_Click` przycisk **Reset,** aby wygenerować program obsługi zdarzeń, a następnie wypełnij go, jak pokazano w poniższym przykładzie.
 
     ```csharp
     private void btnReset_Click(object sender, EventArgs e)
@@ -141,48 +141,48 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 
     ```
 
-8. Bezpośrednio nad definicji klasy w `ProvideToolboxControl` atrybutu deklaracji, zmień wartość pierwszego parametru z `"MyWinFormsControl.Counter"` do `"General"`. Spowoduje to nazwa grupy elementów, który będzie obsługiwać formant w **przybornika**.
+8. Bezpośrednio powyżej definicji klasy `ProvideToolboxControl` w deklaracji atrybutu zmień wartość `"MyWinFormsControl.Counter"` pierwszego `"General"`parametru z . Spowoduje to ustawienie nazwy grupy elementów, która będzie obsługiwać formant w **przyborniku**.
 
-    W poniższym przykładzie przedstawiono `ProvideToolboxControl` atrybut i definicji klasy dostosowane.
+    Poniższy przykład `ProvideToolboxControl` przedstawia atrybut i definicji klasy dostosowane.
 
     ```csharp
     [ProvideToolboxControl("General", false)]
     public partial class Counter : UserControl
     ```
 
-### <a name="test-the-control"></a>Przetestować formant
+### <a name="test-the-control"></a>Przetestuj formant
 
- Aby przetestować **przybornika** kontrolować, najpierw przetestować w środowisku deweloperskim i przetestować go skompilowanej aplikacji.
+ Aby przetestować formant **przybornika,** najpierw przetestuj go w środowisku programistycznym, a następnie przetestuj w skompilowaną aplikację.
 
 #### <a name="to-test-the-control"></a>Aby przetestować formant
 
-1. Naciśnij klawisz **F5** do **Rozpocznij debugowanie**.
+1. Naciśnij **klawisz F5,** aby **rozpocząć debugowanie**.
 
-    To polecenie tworzy projekt i otwiera drugie wystąpienie eksperymentalne programu Visual Studio ma kontrolę zainstalowane.
+    To polecenie tworzy projekt i otwiera drugie eksperymentalne wystąpienie programu Visual Studio, w których zainstalowano formant.
 
-2. W doświadczalnym wystąpieniu programu Visual Studio, należy utworzyć **aplikacja interfejsu Windows Forms** projektu.
+2. W eksperymentalnym wystąpieniu programu Visual Studio utwórz projekt **aplikacji formularzy systemu Windows.**
 
-3. W **Eksploratora rozwiązań**, kliknij dwukrotnie *Form1.cs* aby otworzyć go w projektancie, jeśli nie jest jeszcze otwarty.
+3. W **Eksploratorze rozwiązań**kliknij dwukrotnie *Form1.cs,* aby otworzyć go w projektancie, jeśli nie jest jeszcze otwarty.
 
-4. W **przybornika**, `Counter` powinien być wyświetlany formantu w **ogólne** sekcji.
+4. W **przyborniku**formant `Counter` powinien być wyświetlany w sekcji **Ogólne.**
 
-5. Przeciągnij `Counter` sterowania do formularza, a następnie wybierz ją. `Value`, `Message`, I `ShowReset` właściwości będą wyświetlane w **właściwości** okna wraz z właściwościami, które są dziedziczone z <xref:System.Windows.Forms.UserControl>.
+5. Przeciągnij `Counter` formant do formularza, a następnie zaznacz go. `Message` `ShowReset` Właściwości `Value`i właściwości zostaną wyświetlone w oknie **Właściwości** wraz z właściwościami dziedziczonymi po <xref:System.Windows.Forms.UserControl>.
 
-6. Ustaw `Message` właściwość `Count:`.
+6. Ustaw `Message` właściwość `Count:`na .
 
-7. Przeciągnij <xref:System.Windows.Forms.Button> sterowania do formularza, a następnie ustaw właściwości name i tekstu przycisku, aby `Test`.
+7. Przeciągnij <xref:System.Windows.Forms.Button> formant do formularza, a następnie ustaw nazwę i `Test`właściwości tekstu przycisku na .
 
-8. Kliknij dwukrotnie przycisk aby otworzyć *Form1.cs* w widok kodu i obsługi kliknij przycisk Utwórz.
+8. Kliknij dwukrotnie przycisk, aby otworzyć *Form1.cs* w widoku kodu i utworzyć program obsługi kliknięć.
 
-9. W procedurze obsługi kliknij przycisk Wywołaj `counter1.Increment()`.
+9. W programie obsługi `counter1.Increment()`kliknięć zadzwoń .
 
-10. W funkcji konstruktora, po wywołaniu `InitializeComponent`, typ `counter1``.``Incremented +=` , a następnie naciśnij klawisz **kartę** dwa razy.
+10. W funkcji konstruktora po `InitializeComponent`wywołaniu do , wpisz, `counter1``.``Incremented +=` a następnie naciśnij tab dwa razy. **Tab**
 
-    Program Visual Studio generuje procedury obsługi na poziomie formularza potrzeby `counter1.Incremented` zdarzeń.
+    Visual Studio generuje program obsługi na `counter1.Incremented` poziomie formularza dla zdarzenia.
 
-11. Wyróżnij `Throw` instrukcji w obsłudze zdarzeń typu `mbox`, a następnie naciśnij klawisz **kartę** dwa razy, aby wygenerować okno komunikatu z mbox fragmentu kodu.
+11. Wyróżnij `Throw` instrukcję w programie `mbox`obsługi zdarzeń, wpisz , a następnie naciśnij dwukrotnie **klawisz Tab,** aby wygenerować okno komunikatu z fragmentu kodu mbox.
 
-12. W następnym wierszu, Dodaj następujący kod `if` / `else` bloku, aby ustawić widoczność **resetowania** przycisku.
+12. W następnym wierszu dodaj `if` / `else` następujący blok, aby ustawić widoczność przycisku **Reset.**
 
     ```csharp
     if (counter1.Value < 5) counter1.ShowReset = false;
@@ -191,33 +191,33 @@ Szablon kontrolki Przybornika formularzy Windows tworzy kontrolkę użytkownika 
 
 13. Naciśnij klawisz **F5**.
 
-    Po otwarciu formularza. `Counter` Następujący tekst jest wyświetlany formantu.
+    Zostanie otwarty formularz. W `Counter` formancie wyświetlany jest następujący tekst.
 
     **Liczba: 0**
 
-14. Kliknij przycisk **testu**.
+14. Kliknij **przycisk Testuj**.
 
-    Zwiększa licznik i programu Visual Studio Wyświetla okno komunikatu.
+    Licznik przyrosty i Visual Studio wyświetla okno komunikatu.
 
 15. Zamknij okno komunikatu.
 
-    **Resetowania** przycisk zniknie.
+    Przycisk **Reset zniknie.**
 
-16. Kliknij przycisk **testu** do momentu osiągnięcia licznik **5** zamknięciu komunikatu pola każdorazowo.
+16. Kliknij **przycisk Testuj,** aż licznik osiągnie **5** zamykających pola wiadomości za każdym razem.
 
-    **Resetowania** pojawi się przycisk.
+    Przycisk **Resetuj** pojawi się ponownie.
 
-17. Kliknij przycisk **resetowania**.
+17. Kliknij **przycisk Resetuj**.
 
-    Resetuje licznik **0**.
+    Licznik resetuje się do **0**.
 
 ## <a name="next-steps"></a>Następne kroki
 
-Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName.vsix* w folderze \bin\debug\ projektu. Kontrolki można wdrożyć, przekazując *.vsix* plików do sieci lub do witryny sieci Web. Gdy użytkownik uruchomi *.vsix* plik, formant został zainstalowany i dodane do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać *.vsix* plik [Visual Studio Marketplace](https://marketplace.visualstudio.com/) tak, aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia**  >   **Rozszerzenia i aktualizacje** okna dialogowego.
+Podczas tworzenia formantu **przybornika** program Visual Studio tworzy plik o nazwie *ProjectName.vsix* w folderze \bin\debug\ projektu. Formant można wdrożyć, przekazując plik *vsix* do sieci lub do witryny sieci Web. Gdy użytkownik otworzy plik *vsix,* formant jest instalowany i dodawany do **zestawu narzędzi** Visual Studio na komputerze użytkownika. Alternatywnie można przekazać plik *vsix* do [programu Visual Studio Marketplace,](https://marketplace.visualstudio.com/) dzięki czemu użytkownicy mogą go znaleźć, przeglądając w oknie dialogowym**Rozszerzenia i aktualizacje** **narzędzi.** > 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Tworzenie kontrolki przybornika WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 - [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
-- [Podstawy programowania dla formantu Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [Podstawowe informacje o rozwoju formularzy systemu Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

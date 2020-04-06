@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocument | Dokumentacja firmy Microsoft
+title: IDebugActivateDocumentEvent2::GetDocument | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - GetDocument method
 - IDebugActivateDocumentEvent2::GetDocument method
 ms.assetid: b3c32f1b-f3de-409d-920d-ba7b3fa84fcd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 708ed4e42abe38baafee2eff492a64b64e297968
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8cf829b99b9013d2b1ead1da636feaeffd820909
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318053"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80736662"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
-Pobiera dokument, aby aktywować.
+Pobiera dokument do aktywacji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,11 +42,11 @@ int GetDocument ( 
 
 ## <a name="parameters"></a>Parametry
 `ppDoc`\
-[out] Zwraca [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) obiekt, który reprezentuje dokument zostanie uaktywniony.
+[na zewnątrz] Zwraca obiekt [IDebugDocument2,](../../../extensibility/debugger/reference/idebugdocument2.md) który reprezentuje dokument, który ma zostać aktywowany.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

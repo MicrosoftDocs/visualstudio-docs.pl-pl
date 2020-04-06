@@ -1,30 +1,30 @@
 ---
-title: AsyncVoidMethodBuilder. ObjectIdForDebugger — Właściwość | Microsoft Docs
+title: AsyncVoidMethodBuilder.ObjectIdForDebugger Właściwość | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc396a40dd90b33d43d5c0857213551bfe8fd242
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 96000c91d3134bc527ff5651d5a8872fd48c1a66
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727774"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80739306"
 ---
-# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder. ObjectIdForDebugger — Właściwość
-Pobiera obiekt, którego można użyć do jednoznacznego zidentyfikowania tego konstruktora w debugerze.
+# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger właściwość
+Pobiera obiekt, który może służyć do jednoznacznej identyfikacji tego konstruktora do debugera.
 
- **Przestrzeń nazw:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Obszar nazw:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Zestaw:** mscorlib (w bibliotece Mscorlib. dll)
+ **Montaż:** mscorlib (w mscorlib.dll)
 
- Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z .NET Framework, następująca składnia jest dostępna w typowym języku pośrednim (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -32,6 +32,6 @@ Pobiera obiekt, którego można użyć do jednoznacznego zidentyfikowania tego k
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Wewnętrzne rozszerzenia równoległe dla .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Wewnętrzne rozszerzenia równoległego dla programu .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

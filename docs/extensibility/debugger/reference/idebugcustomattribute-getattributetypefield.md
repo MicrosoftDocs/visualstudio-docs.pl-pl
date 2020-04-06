@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetAttributeTypeField | Dokumentacja firmy Microsoft
+title: IDebugCustomAttribute::GetAttributeTypeField | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeTypeField
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70168bb233cb061d7c01b9285c701920d54d7238
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51341b3c9b351307d2662538cc3a6797c58b62f9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315152"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732782"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Pobiera typ klasy atrybutu niestandardowego.
@@ -41,14 +41,14 @@ int GetAttributeTypeField(
 
 ## <a name="parameters"></a>Parametry
 `ppCAType`\
-[out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt, który reprezentuje klasę, którego wystąpienie jest atrybutu niestandardowego.
+[na zewnątrz] Zwraca obiekt [IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) który reprezentuje klasę, której atrybutem niestandardowym jest wystąpienie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Atrybut niestandardowy jest zawsze klasy. Ta metoda zapewnia dostęp do [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt, który opisuje tę klasę.
+ Atrybut niestandardowy jest zawsze klasą. Ta metoda zapewnia dostęp do [obiektu IDebugClassField,](../../../extensibility/debugger/reference/idebugclassfield.md) który opisuje tę klasę.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

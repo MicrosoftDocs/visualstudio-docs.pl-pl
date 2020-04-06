@@ -1,30 +1,30 @@
 ---
-title: Metoda GetTaskSchedulersForDebugger | Dokumentacja firmy Microsoft
+title: GetTaskSchedulersForDebugger Metoda | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8d038c8c67731fe1bff9ec705b5ddf416807a57
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a3b0c8c16b10a4cf2268161d8a2db96c10303b1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353718"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738646"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger, metoda
 Pobiera tablicę wszystkich <xref:System.Threading.Tasks.TaskScheduler> obiektów, które są aktualnie aktywne.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Zestaw:** mscorlib (w *mscorlib.dll*)
+ **Montaż:** mscorlib (w *mscorlib.dll*)
 
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,10 +33,10 @@ Pobiera tablicę wszystkich <xref:System.Threading.Tasks.TaskScheduler> obiektó
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Tablica wszystkich <xref:System.Threading.Tasks.TaskScheduler> obiekty, które są aktualnie aktywne, w tym <xref:System.AppDomain>.
+ Tablica wszystkich <xref:System.Threading.Tasks.TaskScheduler> obiektów, które są <xref:System.AppDomain>obecnie aktywne w tym .
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda nie jest bezpieczny dla wątków i nie należy jej używać równocześnie z innymi wystąpieniami <xref:System.Threading.Tasks.TaskScheduler>. Tę metodę można wywołać z debugera, tylko wtedy, gdy jest debugera wstrzymał inne wątki.
+ Ta metoda nie jest bezpieczna dla wątków i nie należy <xref:System.Threading.Tasks.TaskScheduler>jej używać jednocześnie z innymi wystąpieniami programu . Wywołanie tej metody z debugera tylko wtedy, gdy debuger zawiesił wszystkie inne wątki.
 
-## <a name="see-also"></a>Zobacz także
-- [TaskScheduler, klasa](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+## <a name="see-also"></a>Zobacz też
+- [Klasa TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

@@ -1,33 +1,33 @@
 ---
-title: Kontekst oceny wyrażeń | Dokumentacja firmy Microsoft
+title: Kontekst oceny wyrażeń | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efaa678b5cbee763fabc9ccaf82c9322176b9102
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e939a4fa5f4673e2f701206c96599c54bc0c3b51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315241"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80738735"
 ---
-# <a name="expression-evaluation-context"></a>Kontekst oceny wyrażeń
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania **oceny wyrażenia kontekstu**:
+# <a name="expression-evaluation-context"></a>Kontekst oceny wyrażenia
+Podczas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowania **kontekst oceny wyrażenia:**
 
-- Reprezentuje kontekst do obliczenia wyrażenia. Ogólnie rzecz biorąc kontekst oceny odpowiada zakresie leksykalnym, w którym można obliczyć wartości zmiennych, parametrów, funkcje i metody. Na przykład oceny wyrażenia kontekstu skojarzonego z ramką stosu zapewni kontekście ocenianie zmiennych lokalnych, parametrów metod i składowych klasy (jeśli dotyczy).
+- Reprezentuje kontekst do oceny wyrażenia. Ogólnie rzecz biorąc kontekst oceny odpowiada leksykalne zakres, w którym do oceny zmiennych, parametrów, funkcji i metod. Na przykład kontekst oceny wyrażenia skojarzony z ramką stosu zapewni kontekst do oceny zmiennych lokalnych, parametrów metody i elementów członkowskich klasy (jeśli dotyczy).
 
-- Występuje po zatrzymaniu w punkcie przerwania programu. Wyrażenia jest strukturą danych, reprezentujący przeanalizowany wyrażenie, które jest gotowe do powiązania i oceny w danym kontekście.
+- Istnieje, gdy program został zatrzymany w punkcie przerwania. Samo wyrażenie jest strukturą danych reprezentującą wyrażenie analizowane, które jest gotowe do powiązania i oceny w danym kontekście.
 
-     Bardziej szczegółowo wyrażenia są tworzone przy użyciu [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) metody. Gdy wyrażenie jest obliczane, generuje drukowalnych ciąg zawierający nazwę i typ zmiennej lub argumentu i jego wartość. Ten ciąg jest wyświetlany w oknie czujki lub okno zmiennych lokalnych w IDE.
+     Bardziej szczegółowo wyrażenia są tworzone przy użyciu [Metody ParseText.](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) Po obliczeniu wyrażenia generuje ciąg do wydrukowania zawierający nazwę i typ zmiennej lub argumentu oraz jego wartość. Ten ciąg jest wyświetlany w oknie czujki lub w oknie zmiennych lokalnych IDE.
 
-     Biorąc pod uwagę `BSTR` i [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfejsu, aparat debugowania (DE) można utworzyć [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interfejsu, analizując wyrażenia. Biorąc pod uwagę `IDebugExpression2` interfejsu, DE może pobrać wartość do obliczenia wyrażenia synchroniczna lub asynchroniczna. Tę wartość, wraz z nazwą i typ zmiennej lub argumentu, są wysyłane do IDE do wyświetlenia.
+     Biorąc `BSTR` pod uwagę i [interfejs IDebugExpressionContext2,](../../extensibility/debugger/reference/idebugexpressioncontext2.md) aparat debugowania (DE) można utworzyć interfejs [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) przez analizowanie wyrażenia. Biorąc `IDebugExpression2` pod uwagę interfejs, DE można uzyskać wartość za pomocą synchronicznej lub asynchronicznej oceny wyrażenia. Ta wartość, wraz z nazwą i typem zmiennej lub argumentu, jest wysyłana do IDE do wyświetlania.
 
-## <a name="see-also"></a>Zobacz także
-- [Interfejsy oceny wyrażenia](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
+## <a name="see-also"></a>Zobacz też
+- [Interfejsy oceny ekspresji](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Konteksty debugera](../../extensibility/debugger/debugger-contexts.md)

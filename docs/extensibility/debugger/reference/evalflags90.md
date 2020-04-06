@@ -1,27 +1,27 @@
 ---
-title: EVALFLAGS90 | Microsoft Docs
+title: EVALFLAGS90 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - EVALFLAGS90 enumeration
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24afc4456570ff0c3e5dc1eb56789984bf18ac58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337830"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80737103"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Wylicza prawidłowe wartości dla flagi sterujące Obliczanie wyrażenia. To wyliczenie rozszerza [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenia.
+Wylicza prawidłowe wartości dla flag, które kontrolują ocenę wyrażenia. To wyliczenie rozszerza wyliczenie [EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
 
 ## <a name="syntax"></a>Składnia
 
@@ -66,41 +66,41 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>Pola
 `EVAL90_RETURNVALUE`\
-Określa, że wartość zwracana, jeśli istnieje, można obliczyć.
+Określa, że wartość zwracana, jeśli istnieje, być oceniane.
 
 `EVAL90_NOSIDEEFFECTS`\
-Określa, że efekty uboczne niemożliwe.
+Określa, że działania niepożądane nie są dozwolone.
 
 `EVAL90_ALLOWBPS`\
 Określa zatrzymywanie punktów przerwania.
 
 `EVAL90_ALLOWERRORREPORT`\
-Określa, że raportów o błędach do hosta mają być dozwolone. Używane głównie do obliczenia wyrażenia w skrypcie w programie Internet Explorer.
+Określa, że raportowanie błędów do hosta ma być dozwolone. Używany głównie do oceny wyrażenia w skrypcie w programie Internet Explorer.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-Funkcje wymusza, aby zostały uznane za adresów, zamiast wywoływania funkcji.
+Wymusza funkcje, które mają być oceniane jako adresy, zamiast wywoływania funkcji.
 
 `EVAL90_NOFUNCEVAL`\
-Funkcja zapobiega oceniane. Na przykład, rozważmy `int` tokenu w wyrażeniu `myExpression(int) + 10`. Ta funkcja może być poprawnie określona jako adres, ale nie jako wartość.
+Zapobiega ocenie funkcji. Rozważmy na `int` przykład token `myExpression(int) + 10`w wyrażeniu . Ta funkcja może być poprawnie oceniona jako adres, ale nie jako wartość.
 
 `EVAL90_NOEVENTS`\
-Flaga wskazująca, że zdarzenia, które wystąpiły podczas obliczania wyrażenia nie powinny być wysyłane, Menedżer debugowania sesji (SDM) lub środowiska IDE.
+Flaga, aby wskazać, że zdarzenia, które występują podczas oceny wyrażenia nie powinny być wysyłane do menedżera debugowania sesji (SDM) lub ide.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
-Umożliwia obliczanie wyrażenia czasu projektowania.
+Umożliwia ocenę wyrażenia w czasie projektowania.
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-Umożliwia niejawne Tworzenie zmiennej.
+Umożliwia tworzenie niejawnej zmiennej.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-Obliczanie wymusza natychmiastowe. Jest to przydatne podczas obsługi żądania, takie jak żądania użytkownika.
+Wymusza natychmiastowe wystąpienie oceny. Jest to przydatne podczas obsługi żądania, takich jak żądanie użytkownika.
 
 ## <a name="requirements"></a>Wymagania
 Nagłówek: Msdbg90.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
