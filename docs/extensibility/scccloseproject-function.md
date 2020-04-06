@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccCloseProject | Dokumentacja firmy Microsoft
+title: Funkcja SccCloseProject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCloseProject function
 ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a5fe721a3b51f4d3f210e7f2d5450e4f4bc6f41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333935"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701050"
 ---
-# <a name="scccloseproject-function"></a>Funkcja SccCloseProject
-Ta funkcja powoduje zamknięcie projektu oznaczenia końca określonej sesji.
+# <a name="scccloseproject-function"></a>SccCloseProject, funkcja
+Ta funkcja zamyka projekt, oznaczając koniec określonej sesji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>Parametry
- pvContext strukturę context wtyczki kontroli źródła.
+ pvContext Struktura kontekstu wtyczki formantu źródła.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Projekt został pomyślnie zamknięty.|
-|SCC_E_PROJNOTOPEN|Projekt nie jest obecnie otwarty.|
+|SCC_E_PROJNOTOPEN|Żaden projekt nie jest obecnie otwarty.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|
+|SCC_E_NONSPECIFICERROR|Niespecyficzna awaria.|
 
 ## <a name="remarks"></a>Uwagi
- [SccOpenProject](../extensibility/sccopenproject-function.md) zawsze jest wywoływany przed tej funkcji. Wywołanie tej funkcji po niej wywołania `SccOpenProject` funkcji lub [SccUninitialize](../extensibility/sccuninitialize-function.md), która całkowicie zakończy połączenie do systemu kontroli źródła.
+ [SccOpenProject](../extensibility/sccopenproject-function.md) jest zawsze wywoływana przed tą funkcją. Po wywołaniu tej funkcji następuje wywołanie `SccOpenProject` funkcji lub [SccUninitialize](../extensibility/sccuninitialize-function.md), które całkowicie kończy połączenie z systemem kontroli źródła.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

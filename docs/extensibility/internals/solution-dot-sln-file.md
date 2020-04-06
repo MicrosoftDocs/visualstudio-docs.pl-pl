@@ -1,5 +1,5 @@
 ---
-title: Rozwiązanie (. Plik sln)
+title: Rozwiązanie (. Sln)
 ms.date: 03/15/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,33 +7,33 @@ helpviewer_keywords:
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b0e0b09b12dca964958d5d7b35c6b0d83906fa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f4eee1f0a5e8371d239b3c33d10e1d9d7998095
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322611"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80705331"
 ---
 # <a name="solution-sln-file"></a>Plik rozwiązania (.sln)
 
-To rozwiązanie jest strukturą służący do organizowania projektów w programie Visual Studio. Rozwiązanie przechowuje informacje o stanie dla projektów w dwóch plikach:
+Rozwiązanie to struktura organizowania projektów w programie Visual Studio. Rozwiązanie przechowuje informacje o stanie dla projektów w dwóch plikach:
 
-- Plik SLN (oparte na tekście, udostępnione)
+- .sln (tekstowy, udostępniony)
 
-- plik .suo (opcje rozwiązania binarne, specyficzne dla użytkownika)
+- .suo (binarne, specyficzne dla użytkownika opcje rozwiązania)
 
-Aby uzyskać więcej informacji na temat .suo — pliki Zobacz [opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).
+Aby uzyskać więcej informacji na temat plików .suo, zobacz [Opcje użytkownika rozwiązania (. Suo) Plik](../../extensibility/internals/solution-user-options-dot-suo-file.md).
 
-Jeśli Twoje pakietu VSPackage jest załadowana w wyniku odwołuje się w pliku .sln, środowisko wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> do odczytu w pliku .sln.
+Jeśli pakiet VSPackage jest ładowany w wyniku odwołania się do pliku <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> .sln, środowisko wywołuje odczyt w pliku .sln.
 
-Plik sln zawiera informacje oparte na tekście, używanymi środowiska, aby znaleźć i załadować parametrów nazwa wartość utrwalonych danych i projekt odwołuje się do pakietów VSPackage. Po otwarciu rozwiązania środowiska przewijać `preSolution`, `Project`, i `postSolution` informacje zawarte w pliku .sln, ładowanie rozwiązania, projekty w rozwiązaniu i wszelkie informacje utrwalonych dołączonych do rozwiązania.
+Plik .sln zawiera informacje tekstowe używane przez środowisko do znajdowania i ładowania parametrów wartości nazwy dla utrwalonych danych i projektu VSPackages odwołuje się. Gdy użytkownik otworzy rozwiązanie, środowisko przechodzi `preSolution`przez `Project`, `postSolution` i informacje w pliku .sln, aby załadować rozwiązanie, projekty w ramach rozwiązania i wszelkie utrwalone informacje dołączone do rozwiązania.
 
-Plik każdy projekt zawiera dodatkowe informacje, przeczytaj przez środowisko, aby wypełnić hierarchii z elementami tego projektu. Trwałość danych w hierarchii jest kontrolowana przez projekt. Dane nie są zwykle przechowywane w pliku .sln, mimo że można celowo zapisać informacji o projekcie do pliku .sln, jeśli zdecydujesz się to zrobić. Aby uzyskać więcej informacji na temat stanu trwałego zobacz [trwałość projektu](../../extensibility/internals/project-persistence.md) i [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).
+Plik każdego projektu zawiera dodatkowe informacje odczytywane przez środowisko w celu wypełnienia hierarchii elementami tego projektu. Trwałość danych hierarchii jest kontrolowana przez projekt. Dane zwykle nie są przechowywane w pliku .sln, chociaż w przypadku wybrania tej opcji można celowo zapisać informacje o projekcie w pliku .sln. Aby uzyskać więcej informacji na temat trwałości, zobacz [Trwałość projektu](../../extensibility/internals/project-persistence.md) oraz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).
 
 ## <a name="file-header"></a>Nagłówek pliku
 
@@ -51,16 +51,16 @@ MinimumVisualStudioVersion = 10.0.40219.1
 ### <a name="definitions"></a>Definicje
 
 `Microsoft Visual Studio Solution File, Format Version 12.00`\
-Standardowy nagłówek, który określa wersję formatu pliku.
+Standardowy nagłówek definiujący wersję formatu pliku.
 
 `# Visual Studio 15`\
-Wersja główna programu Visual Studio (ostatnio) zapisać ten plik rozwiązania. Informacje te kontrolują numer wersji w ikonie rozwiązania.
+Główna wersja programu Visual Studio, która (ostatnio) zapisała ten plik rozwiązania. Te informacje steruje numer wersji w ikonie rozwiązania.
 
 `VisualStudioVersion = 15.0.26730.15`\
-Pełną wersję programu Visual Studio (najbardziej niedawno) zapisany plik rozwiązania. Zapisanie pliku rozwiązania przy użyciu nowszej wersji programu Visual Studio, który ma taką samą wersję główną, ta wartość nie jest aktualizowana w celu zmniejszenia zmian w plikach rozwiązania.
+Pełna wersja programu Visual Studio, która (ostatnio) zapisała plik rozwiązania. Jeśli plik rozwiązania jest zapisywany przez nowszą wersję programu Visual Studio, która ma tę samą wersję główną, ta wartość nie jest aktualizowana, aby zmniejszyć zmiany w plikach rozwiązania.
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
-Minimalna wersja (najstarsze) programu Visual Studio, który można otworzyć ten plik rozwiązania.
+Minimalna (najstarsza) wersja programu Visual Studio, która może otworzyć ten plik rozwiązania.
 
 ::: moniker-end
 
@@ -76,22 +76,22 @@ MinimumVisualStudioVersion = 10.0.40219.1
 ### <a name="definitions"></a>Definicje
 
 `Microsoft Visual Studio Solution File, Format Version 12.00`\
-Standardowy nagłówek, który określa wersję formatu pliku.
+Standardowy nagłówek definiujący wersję formatu pliku.
 
 `# Visual Studio Version 16`\
-Wersja główna programu Visual Studio (ostatnio) zapisać ten plik rozwiązania. Informacje te kontrolują numer wersji w ikonie rozwiązania.
+Główna wersja programu Visual Studio, która (ostatnio) zapisała ten plik rozwiązania. Te informacje steruje numer wersji w ikonie rozwiązania.
 
 `VisualStudioVersion = 16.0.28701.123`\
-Pełną wersję programu Visual Studio (najbardziej niedawno) zapisany plik rozwiązania. Zapisanie pliku rozwiązania przy użyciu nowszej wersji programu Visual Studio, który ma taką samą wersję główną, ta wartość nie jest aktualizowana w celu zmniejszenia zmian w pliku.
+Pełna wersja programu Visual Studio, która (ostatnio) zapisała plik rozwiązania. Jeśli plik rozwiązania jest zapisywany przez nowszą wersję programu Visual Studio, która ma tę samą wersję główną, ta wartość nie jest aktualizowana, aby zmniejszyć zmiany w pliku.
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
-Minimalna wersja (najstarsze) programu Visual Studio, który można otworzyć ten plik rozwiązania.
+Minimalna (najstarsza) wersja programu Visual Studio, która może otworzyć ten plik rozwiązania.
 
 ::: moniker-end
 
 ## <a name="file-body"></a>Treść pliku
 
-Treść pliku SLN, który składa się z kilku sekcji etykietą `GlobalSection`, podobnie do następującego:
+Treść pliku .sln składa się z kilku `GlobalSection`sekcji oznaczonych etykietą , w ten sposób:
 
 ```
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1", "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"
@@ -118,9 +118,9 @@ Global
 EndGlobal
 ```
 
-Aby załadować rozwiązania, środowiska wykonuje następującą sekwencję zadań:
+Aby załadować rozwiązanie, środowisko wykonuje następującą sekwencję zadań:
 
-1. Środowisko odczytuje sekcji globalnej pliku .sln i przetwarza wszystkie sekcje oznaczone `preSolution`. W tym przykładzie pliku Brak jednej z tych instrukcji:
+1. Środowisko odczytuje sekcję Global pliku .sln i `preSolution`przetwarza wszystkie sekcje oznaczone . W tym przykładowym pliku istnieje jedna taka instrukcja:
 
    ```
    GlobalSection(SolutionConfiguration) = preSolution
@@ -128,11 +128,11 @@ Aby załadować rozwiązania, środowiska wykonuje następującą sekwencję zad
         ConfigName.1 = Release
    ```
 
-   Gdy środowisko odczytuje `GlobalSection('name')` tagu, jest on mapowany nazwę pakietu VSPackage za pomocą rejestru. Nazwa klucza powinna istnieć w kluczu rejestru [HKLM\\< katalog główny rejestru identyfikator aplikacji\>\SolutionPersistence\AggregateGUIDs]. Wartość domyślna kluczy to identyfikator GUID pakietu (REG_SZ) o pakietu VSPackage, który napisał wpisów.
+   Gdy środowisko odczytuje `GlobalSection('name')` tag, mapuje nazwę do VSPackage przy użyciu rejestru. Nazwa klucza powinna istnieć w rejestrze w obszarze [HKLM\\<Application ID Registry Root\>\SolutionPersistence\AggregateGUIDs]. Wartością domyślną kluczy jest identyfikator GUID pakietu (REG_SZ) programu VSPackage, który napisał wpisy.
 
-2. Środowisko ładuje pakietu VSPackage, wywołania `QueryInterface` na VSPackage dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfejsu i wywołania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> metody z danymi w sekcji, dzięki czemu dane można przechowywać pakietu VSPackage. Środowisko powtarza ten proces dla każdej `preSolution` sekcji.
+2. Środowisko ładuje VSPackage, `QueryInterface` wywołuje vspackage dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfejsu i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> wywołuje metodę z danymi w sekcji, dzięki czemu VSPackage można przechowywać dane. Środowisko powtarza ten proces `preSolution` dla każdej sekcji.
 
-3. Środowisko wykonuje iterację przez bloki trwałość projektu. W tym przypadku jest jeden projekt.
+3. Środowisko iteruje za pośrednictwem bloków trwałości projektu. W tym przypadku istnieje jeden projekt.
 
    ```
    Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",
@@ -140,27 +140,27 @@ Aby załadować rozwiązania, środowiska wykonuje następującą sekwencję zad
    EndProject
    ```
 
-   Ta instrukcja zawiera unikatowy identyfikator GUID projektu i identyfikator GUID typu projektu. Te informacje są używane przez środowisko, aby znaleźć pliki należące do rozwiązania lub pliku projektu i pakietu VSPackage wymagane dla każdego projektu. Projekt, identyfikator GUID jest przekazywany do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> można załadować określonego pakietu VSPackage związanych z projektem, następnie projekt jest ładowany przez pakietu VSPackage. W tym przypadku pakietu VSPackage, który jest ładowany dla tego projektu jest języka Visual Basic.
+   Ta instrukcja zawiera unikatowy identyfikator GUID projektu i identyfikator GUID typu projektu. Te informacje są używane przez środowisko, aby znaleźć plik projektu lub pliki należące do rozwiązania i VSPackage wymagane dla każdego projektu. Identyfikator GUID projektu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> jest przekazywany do załadowania określonego VSPackage związane z projektem, a następnie projekt jest ładowany przez VSPackage. W takim przypadku VSPackage, który jest ładowany dla tego projektu jest Visual Basic.
 
-   Każdy projekt można utrwalić identyfikator wystąpienia unikatowego projektu, tak aby był on dostępny w razie potrzeby przez inne projekty w rozwiązaniu. Najlepiej Jeśli rozwiązanie i projekty są pod kontrolą kodu źródłowego, ścieżka do projektu powinna być określona względem ścieżki do rozwiązania. Po pierwszym załadowaniu rozwiązania, pliki projektu nie może znajdować się na komputerze użytkownika. Problemy pliku projektu, przechowywane na serwerze względem pliku rozwiązania, jest stosunkowo prosta dla pliku projektu, aby znaleźć i kopiowane do komputera użytkownika. Następnie kopiuje i ładuje pozostałe pliki potrzebne do projektu.
+   Każdy projekt może utrwalić unikatowy identyfikator wystąpienia projektu, dzięki czemu można uzyskać do niego dostęp zgodnie z potrzebami innych projektów w rozwiązaniu. W idealnym przypadku, jeśli rozwiązanie i projekty są pod kontrolą kodu źródłowego, ścieżka do projektu powinna być względem ścieżki do rozwiązania. Po pierwszym załadowaniu rozwiązania pliki projektu nie mogą znajdować się na komputerze użytkownika. Dzięki przechowywaniu pliku projektu na serwerze względem pliku rozwiązania jest stosunkowo proste, aby plik projektu został znaleziony i skopiowany na komputer użytkownika. Następnie kopiuje i ładuje pozostałe pliki potrzebne do projektu.
 
-4. Na podstawie informacji zawartych w sekcji Projekt pliku .sln, środowiska ładuje każdego pliku projektu. Projekt, sama jest następnie odpowiedzialna za wypełnianie hierarchii projektu i ładowania jakiegokolwiek projektu zagnieżdżonego.
+4. Na podstawie informacji zawartych w sekcji projektu pliku .sln środowisko ładuje każdy plik projektu. Sam projekt jest następnie odpowiedzialny za wypełnianie hierarchii projektu i ładowanie wszystkich projektów zagnieżdżonych.
 
-5. Po przetworzeniu wszystkich sekcji pliku SLN, rozwiązanie jest wyświetlany w Eksploratorze rozwiązań i jest gotowy do modyfikacji przez użytkownika.
+5. Po przetworzeniu wszystkich sekcji pliku .sln rozwiązanie jest wyświetlane w Eksploratorze rozwiązań i jest gotowe do modyfikacji przez użytkownika.
 
-W przypadku dowolnego pakietu VSPackage, który implementuje projektu w rozwiązaniu nie można załadować, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> wywoływana jest metoda, a każdy inny projekt w rozwiązaniu otrzymuje szansę, aby zignorować zmiany mogą mieć wprowadzone podczas ładowania. Jeśli wystąpią błędy podczas analizowania, jak najwięcej informacji jest zachowywany z plików rozwiązania i środowiska Wyświetla okno dialogowe z ostrzeżeniem, że rozwiązanie jest uszkodzony.
+Jeśli wszelkie VSPackage, który implementuje projekt w <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> rozwiązaniu nie można załadować, metoda jest wywoływana i każdy inny projekt w rozwiązaniu ma szansę zignorować zmiany, które mogły zostać wprowadzone podczas ładowania. Jeśli wystąpią błędy analizy, jak najwięcej informacji, jak to możliwe jest zachowywane z plikami rozwiązania i środowisko wyświetla okno dialogowe z ostrzeżeniem użytkownika, że rozwiązanie jest uszkodzony.
 
-Gdy rozwiązanie jest zapisywany lub zamknięte, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> metoda jest nazywana i przekazywana do hierarchii, aby zobaczyć, czy wprowadzono zmiany do rozwiązania, które muszą być wprowadzane do pliku .sln. Wartość null, przekazany do `QuerySaveSolutionProps` w <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>, wskazuje on trwałość informacje dotyczące rozwiązania. Jeśli wartość nie jest null, utrwalonych informacje są przeznaczone dla określonego projektu, określane przez wskaźnik do <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu.
+Po zapisaniu lub zamknięciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> rozwiązania metoda jest wywoływana i przekazywana do hierarchii, aby sprawdzić, czy wprowadzono zmiany w rozwiązaniu, które należy wprowadzić do pliku .sln. Wartość null, przekazana `QuerySaveSolutionProps` do <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>in , wskazuje, że informacje są zachowywane dla rozwiązania. Jeśli wartość nie jest null, utrwalone informacje są dla określonego <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> projektu, określone przez wskaźnik do interfejsu.
 
-Jeśli ma informacji, które mają być zapisywane, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfejsu jest wywoływana za pomocą wskaźnika do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> Następnie wywoływana jest metoda przez środowisko, które można pobrać par nazwa wartość z `IPropertyBag` interfejs i zapisywanie informacji o pliku .sln.
+Jeśli istnieją informacje do zapisania, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfejs jest wywoływany ze wskaźnikiem do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> metody. Metoda <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> jest następnie wywoływana przez środowisko, aby pobrać `IPropertyBag` pary nazwa-wartość z interfejsu i zapisać informacje w pliku .sln.
 
-`SaveSolutionProps` i `WriteSolutionProps` obiekty są nazywane cyklicznie przez środowisko, aby pobrać informacje do zapisania z `IPropertyBag` interfejsu do momentu wszystkie zmiany zostały wprowadzone w pliku .sln. W ten sposób możesz upewnić się, że informacje zostaną utrwalone za pomocą rozwiązania i dostępne następnym otwarciu rozwiązania.
+`SaveSolutionProps`i `WriteSolutionProps` obiekty są nazywane rekursywnie przez środowisko, `IPropertyBag` aby pobrać informacje, które mają być zapisane z interfejsu, dopóki wszystkie zmiany nie zostaną wprowadzone do pliku .sln. W ten sposób można zapewnić, że informacje będą zachowywane z rozwiązaniem i dostępne przy następnym otwarciu rozwiązania.
 
-Każdy załadowanego pakietu VSPackage są wyliczane Aby sprawdzić, czy ma ona żadnych czynności, aby zapisać do pliku .sln. Jest tylko w czasie ładowania, który badane są tabele kluczy rejestru. Środowiska wie o wszystkie pakiety załadowany, ponieważ są one w pamięci w czasie, rozwiązanie jest zapisywany.
+Każdy załadowany VSPackage jest wyliczona, aby sprawdzić, czy ma coś do zapisania w pliku .sln. Jest tylko w czasie ładowania, że klucze rejestru są poszukiwane. Środowisko wie o wszystkich załadowanych pakietów, ponieważ są one w pamięci w momencie zapisywania rozwiązania.
 
-Tylko plik sln zawiera wpisy w `preSolution` i `postSolution` sekcje. Istnieją nie podobne sekcje w pliku .suo, ponieważ rozwiązanie wymaga tych informacji, aby załadować się poprawnie. Plik .suo zawiera opcje specyficzne dla użytkownika, takie jak informacje o prywatne, które nie powinny być udostępnione lub umieszczone pod kontrolą kodu źródłowego.
+Tylko plik .sln zawiera wpisy w sekcjach `preSolution` i. `postSolution` Nie ma podobnych sekcji w pliku .suo, ponieważ rozwiązanie wymaga tych informacji, aby załadować poprawnie. Plik .suo zawiera opcje specyficzne dla użytkownika, takie jak notatki prywatne, które nie są przeznaczone do udostępniania lub umieszczania pod kontrolą kodu źródłowego.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [Plik opcji użytkownika rozwiązania (Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

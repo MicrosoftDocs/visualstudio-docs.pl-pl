@@ -1,115 +1,115 @@
 ---
-title: 'Przewodnik: Wyświetlanie, dopasowywanie nawiasów klamrowych | Dokumentacja firmy Microsoft'
+title: 'Instruktaż: Wyświetlanie pasujących nawiasów klamrowych | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bbea179eb2140706ee868a8a48215e7f490f57d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 107610733ab9b5c8085b3f987fa999250b453d63
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312521"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697451"
 ---
-# <a name="walkthrough-display-matching-braces"></a>Przewodnik: Wyświetlanie parowanych nawiasów klamrowych
-Implementuje funkcje opartych na języku, np. parowanie nawiasów klamrowych, definiując nawiasy klamrowe, które chcesz dopasować i dodaniu tekstu znacznika do parowanych nawiasów klamrowych po karetce na jednym z nawiasami klamrowymi. Można zdefiniować nawiasy klamrowe w kontekście języka, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości i zastosować znaczniki do dokładnie, wpisz lub zastosować znaczniki do istniejącego typu zawartości (na przykład "text"). Następujące instruktaż przedstawia sposób zastosowania parowanie nawiasów klamrowych tagów, aby typ zawartości "text".
+# <a name="walkthrough-display-matching-braces"></a>Instruktaż: Wyświetlanie pasujących nawiasów klamrowych
+Zaimplementuj funkcje oparte na języku, takie jak dopasowywanie nawiasów klamrowych, definiując nawiasy klamrowe, które chcesz dopasować, i dodając znacznik tekstowy do pasujących nawiasów klamrowych, gdy daszkownik znajduje się na jednej z nawiasów klamrowych. Można zdefiniować nawiasy klamrowe w kontekście języka, zdefiniować własne rozszerzenie nazwy pliku i typ zawartości oraz zastosować znaczniki tylko do tego typu lub zastosować znaczniki do istniejącego typu zawartości (takiego jak "tekst"). Poniższy przewodnik pokazuje, jak zastosować tagi pasujące nawiasy klamrowe do typu zawartości "tekst".
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Począwszy od programu Visual Studio 2015, nie instaluj programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+ Począwszy od programu Visual Studio 2015, nie należy instalować visual studio SDK z centrum pobierania. Jest on dołączony jako opcjonalna funkcja w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietu SDK programu Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-a-managed-extensibility-framework-mef-project"></a>Utwórz projekt Managed Extensibility Framework (MEF)
+## <a name="create-a-managed-extensibility-framework-mef-project"></a>Tworzenie projektu managed extensibility Framework (MEF)
 
 #### <a name="to-create-a-mef-project"></a>Aby utworzyć projekt MEF
 
-1. Utwórz projekt Klasifikace edytora. Nazwij rozwiązanie `BraceMatchingTest`.
+1. Tworzenie projektu klasyfikatora edytora. Nazwij `BraceMatchingTest`rozwiązanie .
 
-2. Dodaj szablon elementu edytora klasyfikatora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Dodaj szablon elementu klasyfikatora edytora do projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia z szablonem elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3. Usuń istniejące pliki klasy.
+3. Usuń istniejące pliki klas.
 
-## <a name="implement-a-brace-matching-tagger"></a>Implementowanie dopasowania moduł tagujący nawiasu klamrowego
- Aby uzyskać nawiasu klamrowego wyróżnianie efekt, który przypomina ten, który jest używany w programie Visual Studio, można zaimplementować moduł tagujący typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Poniższy kod przedstawia sposób definiowania moduł tagujący dla par nawiasu klamrowego na każdym poziomie zagnieżdżania. W tym przykładzie pary nawiasów [] i {} są zdefiniowane w Konstruktorze moduł tagujący, ale w implementacji pełną obsługą języka lub odpowiednie nawias klamrowy pary zostaną zdefiniowane w specyfikacji języka.
+## <a name="implement-a-brace-matching-tagger"></a>Implementowanie tagera pasującego nawiasu klamrowego
+ Aby uzyskać efekt podświetlania nawiasu, który przypomina ten, który jest używany w <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>programie Visual Studio, można zaimplementować tager typu . Poniższy kod pokazuje, jak zdefiniować tager dla par nawiasów klamrowych na dowolnym poziomie zagnieżdżania. W tym przykładzie par nawiasów klamrowych [] i {} są zdefiniowane w konstruktorze tager, ale w pełnej implementacji języka odpowiednie pary nawiasów klamrowych zostaną zdefiniowane w specyfikacji języka.
 
-### <a name="to-implement-a-brace-matching-tagger"></a>Aby zaimplementować dopasowania moduł tagujący nawiasu klamrowego
+### <a name="to-implement-a-brace-matching-tagger"></a>Aby zaimplementować tager dopasowania nawiasu klamrowego
 
-1. Dodaj plik klasy i nadaj mu nazwę BraceMatching.
+1. Dodaj plik klasy i nadaj jej nazwę Nawiasy klamrowe.
 
-2. Zaimportuj następujące przestrzenie nazw.
+2. Zaimportuj następujące obszary nazw.
 
      [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]
      [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]
 
-3. Zdefiniuj klasę `BraceMatchingTagger` tej, która dziedziczy <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
+3. Zdefiniuj `BraceMatchingTagger` klasę <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> dziedziczącą z typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
 
      [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]
      [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]
 
-4. Dodaj właściwości widoku tekstu, bufor źródłowy, bieżący punkt migawki, a także zestaw par nawiasu klamrowego.
+4. Dodaj właściwości widoku tekstu, buforu źródłowego, bieżącego punktu migawki, a także zestawu par nawiasów klamrowych.
 
      [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]
      [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]
 
-5. W Konstruktorze moduł tagujący Ustaw właściwości i subskrybowanie zdarzeń zmiany widoku <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> i <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. W tym przykładzie w celach ilustracyjnych, pasujących par są także definiowane w konstruktorze.
+5. W konstruktorze znaczników ustaw właściwości i subskrybuj <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>zdarzenia zmiany widoku i . W tym przykładzie dla celów ilustracyjnych pasujące pary są również zdefiniowane w konstruktorze.
 
      [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]
      [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]
 
-6. Jako część <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementacji zadeklarować zdarzenia TagsChanged.
+6. W ramach <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementacji oświadcza zdarzenie TagsChanged.
 
      [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]
      [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]
 
-7. Programy obsługi zdarzeń aktualizacji w bieżącym położeniu karetki `CurrentChar` właściwość i zgłoś zdarzenie TagsChanged.
+7. Programy obsługi zdarzeń zaktualizować bieżącą pozycję `CurrentChar` opiekuna właściwości i podnieść TagsChanged zdarzenia.
 
      [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]
      [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]
 
-8. Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodę, aby dopasować nawiasy klamrowe albo gdy bieżący znak jest otwierający nawias klamrowy, lub gdy poprzedni znak jest bliskie nawiasu klamrowego, tak jak w programie Visual Studio. Gdy zostanie znalezione dopasowanie, ta metoda tworzy dwa tagi: jeden dla otwierający nawias klamrowy, a drugi dla Zamknij nawiasu klamrowego.
+8. Zaimplementuj <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodę dopasowania nawiasów klamrowych, gdy bieżący znak jest otwartym nawiasem klamrowym lub gdy poprzedni znak jest nawiasem klamrowym, jak w programie Visual Studio. Po znalezieniu dopasowania ta metoda powoduje wystąpienie dwóch tagów, jednego dla otwartego nawiasu klamrowego i jednego dla nawiasu klamrowego.
 
      [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]
      [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]
 
-9. Następujące metody prywatne znaleźć pasujący nawias klamrowy na każdym poziomie zagnieżdżania. Pierwsza metoda umożliwia znalezienie Zamknij znak, który pasuje do znaku Otwórz:
+9. Następujące metody prywatne znaleźć pasujące nawiasy klamrowe na dowolnym poziomie zagnieżdżania. Pierwsza metoda znajduje znak zamknięcia, który pasuje do otwartego znaku:
 
      [!code-csharp[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_8.cs)]
      [!code-vb[VSSDKBraceMatchingTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_8.vb)]
 
-10. Następującą metodę pomocnika umożliwia znalezienie Otwórz znak, który pasuje do znaku Zamknij:
+10. Następująca metoda pomocnika znajduje otwarty znak, który pasuje do bliskiego znaku:
 
      [!code-csharp[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_9.cs)]
      [!code-vb[VSSDKBraceMatchingTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_9.vb)]
 
-## <a name="implement-a-brace-matching-tagger-provider"></a>Implementowanie dostawcy moduł tagujący pasującego nawiasu klamrowego
- Oprócz wykonywania moduł tagujący, można także wdrożyć i eksportować dostawcy moduł tagujący. W takim przypadku zawartości typ dostawcy jest "text". Tak parowanie nawiasów klamrowych pojawi się na wszystkich typów plików tekstowych, ale pełniejszego implementacji stosuje parowanie nawiasów klamrowych tylko do określonego typu zawartości.
+## <a name="implement-a-brace-matching-tagger-provider"></a>Implementowanie dostawcy tagera pasującego nawiasu klamrowego
+ Oprócz implementowania tager, należy również zaimplementować i wyeksportować dostawcę tager. W takim przypadku typem zawartości dostawcy jest "tekst". Tak, dopasowywanie nawiasów klamrowych pojawi się we wszystkich typach plików tekstowych, ale pełniejsza implementacja stosuje nawias klamrowy pasujący tylko do określonego typu zawartości.
 
-### <a name="to-implement-a-brace-matching-tagger-provider"></a>Do implementowania dostawcy moduł tagujący pasującego nawiasu klamrowego
+### <a name="to-implement-a-brace-matching-tagger-provider"></a>Aby zaimplementować dostawcę tagera pasującego nawiasu
 
-1. Zadeklaruj dostawcy moduł tagujący, która dziedziczy <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, a następnie nadaj mu nazwę BraceMatchingTaggerProvider i wyeksportować je za pomocą <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> z "text" i <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> z <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.
+1. Zadeklaruj dostawcę <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>znacznika, który dziedziczy po , nazwać Go BraceMatchingTaggerProvider i wyeksportować go z <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "tekst" i . <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>
 
      [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]
      [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]
 
-2. Implementowanie <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metodę, aby utworzyć wystąpienie BraceMatchingTagger.
+2. Zaimplementuj <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metodę tworzenia wystąpienia funkcji BraceMatchingTagger.
 
      [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]
      [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]
 
 ## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu
- Aby przetestować ten kod, Kompiluj rozwiązanie BraceMatchingTest, a następnie uruchomić go w doświadczalnym wystąpieniu.
+ Aby przetestować ten kod, skompiluj rozwiązanie BraceMatchingTest i uruchom go w wystąpieniu eksperymentalnym.
 
-#### <a name="to-build-and-test-bracematchingtest-solution"></a>Aby skompilować i przetestować rozwiązanie BraceMatchingTest
+#### <a name="to-build-and-test-bracematchingtest-solution"></a>Aby utworzyć i przetestować rozwiązanie BraceMatchingTest
 
 1. Skompiluj rozwiązanie.
 
-2. Po uruchomieniu tego projektu w debugerze, drugie wystąpienie programu Visual Studio został uruchomiony.
+2. Po uruchomieniu tego projektu w debugerze zostanie uruchomione drugie wystąpienie programu Visual Studio.
 
-3. Utwórz plik tekstowy, a następnie wpisz dowolny tekst, który zawiera pasujące nawiasy klamrowe.
+3. Utwórz plik tekstowy i wpisz tekst zawierający pasujące nawiasy klamrowe.
 
     ```
     hello {
@@ -120,7 +120,7 @@ Implementuje funkcje opartych na języku, np. parowanie nawiasów klamrowych, de
     {hello}
     ```
 
-4. Po umieszczeniu karetki przed otwierający nawias klamrowy, powinien być wyróżniony tego nawiasów i zamknij nawiasów. Gdy umieścisz kursor zaraz po Zamknij nawias klamrowy, powinien być wyróżniony tego nawiasów i otwierający nawias klamrowy dopasowania.
+4. Po umieszczeniu karetki przed otwartym nawiasem klamrowym należy wyróżnić zarówno ten nawias klamrowy, jak i pasujący nawias klamrowy. Po umieszczeniu kursora tuż po zamknięciu nawiasu klamrowego należy wyróżnić zarówno ten nawias klamrowy, jak i pasujący otwarty nawias klamrowy.
 
-## <a name="see-also"></a>Zobacz także
-- [Przewodnik: Połączyć typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Zobacz też
+- [Instruktaż: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

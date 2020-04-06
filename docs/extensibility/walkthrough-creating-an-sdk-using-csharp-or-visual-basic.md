@@ -1,89 +1,89 @@
 ---
-title: 'Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Tworzenie sdk przy użyciu języka C# lub Visual Basic | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16eb20452601a65c498ff112ea996f2d93559940
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312644"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80697555"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie za pomocą zestawu SDK C# lub Visual Basic
-W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematyczne przy użyciu języka Visual C# i następnie pakietu SDK jako programu Visual Studio rozszerzenia (VSIX). Wykonasz następujące procedury:
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Instruktaż: Tworzenie sdk przy użyciu języka C# lub Visual Basic
+W tym instruktażu dowiesz się, jak utworzyć prosty pakiet SDK biblioteki matematycznej przy użyciu języka Visual C#, a następnie spakować zestawu SDK jako rozszerzenie programu Visual Studio (VSIX). Wykonasz następujące procedury:
 
-- [Aby utworzyć składnika środowiska wykonawczego Windows SimpleMath](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [Aby utworzyć składnik SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
 - [Aby utworzyć projekt rozszerzenia SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
-- [Aby utworzyć przykładową aplikację, która używa biblioteki klas](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [Aby utworzyć przykładową aplikację, która korzysta z biblioteki klas](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
- Aby skorzystać z tego przewodnika, należy zainstalować program Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [programu Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+ Aby wykonać ten przewodnik, należy zainstalować visual studio SDK. Aby uzyskać więcej informacji, zobacz [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="createClassLibrary"></a> Aby utworzyć składnika środowiska wykonawczego Windows SimpleMath
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>Aby utworzyć składnik SimpleMath Windows Runtime
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+1. Na pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
-2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, wybierz **Windows Store** węzła, a następnie wybierz **składnika środowiska wykonawczego Windows** szablonu.
+2. Na liście szablonów rozwiń węzeł **Visual C#** lub **Visual Basic**wybierz węzeł **Sklepu Windows,** a następnie wybierz szablon **składnika środowiska wykonawczego systemu Windows.**
 
-3. W **nazwa** określ **SimpleMath**, a następnie wybierz **OK** przycisku.
+3. W polu **Nazwa** określ **simplemath**, a następnie wybierz przycisk **OK.**
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **właściwości**.
+4. W **Eksploratorze rozwiązań**otwórz menu skrótów dla węzła projektu **SimpleMath,** a następnie wybierz polecenie **Właściwości**.
 
-5. Zmień nazwę **Class1.cs** do **Arithmetic.cs** i zaktualizować je, aby dopasować następujący kod:
+5. Zmień nazwę **Class1.cs,** aby **Arithmetic.cs** i zaktualizować go, aby dopasować go do następującego kodu:
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
 
-6. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "SimpleMath"** węzła, a następnie wybierz **programu Configuration Manager**.
+6. W **Eksploratorze rozwiązań**otwórz menu skrótów dla **węzła Rozwiązanie "SimpleMath",** a następnie wybierz pozycję **Menedżer konfiguracji**.
 
-    **Programu Configuration Manager** zostanie otwarte okno dialogowe.
+    Zostanie otwarte okno dialogowe **Menedżer konfiguracji.**
 
-7. W **Konfiguracja rozwiązania aktywnego** wybierz **wersji**.
+7. Na liście **Konfiguracja aktywnego rozwiązania** wybierz pozycję **Zwolnij**.
 
-8. W **konfiguracji** kolumny, upewnij się, że **SimpleMath** wiersza jest ustawiona na **wersji**, a następnie wybierz **Zamknij** przycisk, aby zaakceptować Zmiana.
+8. W kolumnie **Konfiguracja** sprawdź, czy wiersz **SimpleMath** jest ustawiony na **Zwolnij**, a następnie wybierz przycisk **Zamknij,** aby zaakceptować zmianę.
 
    > [!IMPORTANT]
-   > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacją wydania lub aplikacje korzystające [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]z tego składnika nie przejdą certyfikacji dla pliku .
 
-9. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **kompilacji**.
+9. W **Eksploratorze rozwiązań**otwórz menu skrótów dla węzła projektu **SimpleMath,** a następnie wybierz polecenie **Buduj**.
 
-## <a name="createVSIX"></a> Aby utworzyć projekt rozszerzenia SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>Aby utworzyć projekt rozszerzenia SimpleMathVSIX
 
-1. W menu skrótów dla **rozwiązania "SimpleMath"** węzła, wybierz **Dodaj** > **nowy projekt**.
+1. W menu skrótów węzła **"SimpleMath" wybierz** pozycję **Dodaj** > **nowy projekt**.
 
-2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, wybierz **rozszerzalności** węzła, a następnie wybierz **projekt VSIX** szablon.
+2. Na liście szablonów rozwiń węzeł **Visual C#** lub **Visual Basic**wybierz węzeł **Rozszerzalność,** a następnie wybierz szablon **projektu VSIX.**
 
-3. W **nazwa** określ **SimpleMathVSIX**, a następnie wybierz **OK** przycisku.
+3. W polu **Nazwa** określ **simplemathvsix**, a następnie wybierz przycisk **OK.**
 
-4. W **Eksploratora rozwiązań**, wybierz **source.extension.vsixmanifest** elementu.
+4. W **Eksploratorze rozwiązań**wybierz element **source.extension.vsixmanifest.**
 
-5. Na pasku menu wybierz **widoku** > **kodu**.
+5. Na pasku menu wybierz pozycję **Wyświetl** > **kod**.
 
-6. Zastąp istniejący kod XML następujący kod XML:
+6. Zastąp istniejący kod XML następującym kodem XML:
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7. W **Eksploratora rozwiązań**, wybierz **SimpleMathVSIX** projektu.
+7. W **Eksploratorze rozwiązań**wybierz projekt **SimpleMathVSIX.**
 
-8. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.
+8. Na pasku menu wybierz pozycję **Project** > **Add New Item**.
 
-9. Na liście **wspólne elementy**, rozwiń węzeł **danych**, a następnie wybierz **pliku XML**.
+9. Na liście **elementów wspólnych**rozwiń węzeł **Dane**, a następnie wybierz pozycję **Plik XML**.
 
-10. W **nazwa** określ `SDKManifest.xml`, a następnie wybierz **Dodaj** przycisku.
+10. W polu **Nazwa** `SDKManifest.xml`określ , a następnie wybierz przycisk **Dodaj.**
 
-11. W **Eksploratora rozwiązań**, otwórz menu skrótów dla `SDKManifest.xml`, wybierz **właściwości**, a następnie zmień wartość **Include w VSIX** właściwość **True**.
+11. W **Eksploratorze rozwiązań**otwórz menu **skrótów**dla `SDKManifest.xml`, wybierz polecenie Właściwości , a następnie zmień wartość właściwości **Uwzględnij w VSIX** na **True**.
 
-12. Zastąp zawartość pliku następujący kod XML:
+12. Zastąp zawartość pliku następującym plikiem XML:
 
     **C#**
 
@@ -111,74 +111,74 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
     </FileList>
     ```
 
-13. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMathVSIX** projektu, wybierz **Dodaj**, a następnie wybierz **nowy Folder**.
+13. W **Eksploratorze rozwiązań**otwórz menu skrótów dla projektu **SimpleMathVSIX,** wybierz pozycję **Dodaj**, a następnie wybierz pozycję **Nowy folder**.
 
-14. Zmień nazwę folderu do `references`.
+14. Zmień nazwę folderu na `references`.
 
-15. Otwórz menu skrótów dla **odwołania** folderu, wybierz **Dodaj**, a następnie wybierz **nowy Folder**.
+15. Otwórz menu **skrótów** do folderu Odwołania, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **Nowy folder**.
 
-16. Zmień nazwę podfolderu, aby `commonconfiguration`, utwórz podfolder w niej i nazwa podfolderu `neutral`.
+16. Zmień nazwę podfolderu na `commonconfiguration`, utwórz podfolder w `neutral`nim i nazwij podfolder .
 
-17. Powtórz poprzednie cztery kroki tej chwili, zmiana nazwy pierwszego folderu do `redist`.
+17. Powtórz poprzednie cztery kroki, tym razem zmieniając `redist`nazwę pierwszego folderu na .
 
-     Projekt obecnie zawiera następującą strukturę folderów:
+     Projekt zawiera teraz następującą strukturę folderów:
 
     ```xml
     references\commonconfiguration\neutral
     redist\commonconfiguration\neutral
     ```
 
-18. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** projektu, a następnie wybierz **Otwórz Folder w Eksploratorze plików**.
+18. W **Eksploratorze rozwiązań**otwórz menu skrótów dla projektu **SimpleMath,** a następnie wybierz pozycję **Otwórz folder w Eksploratorze plików**.
 
-19. W **Eksploratora plików**, przejdź do *bin\Release* folder, otwórz menu skrótów dla **SimpleMath.winmd** , a następnie wybierz **Skopiuj**.
+19. W **Eksploratorze plików**przejdź do folderu *bin\Release,* otwórz menu skrótów dla pliku **SimpleMath.winmd,** a następnie wybierz polecenie **Kopiuj**.
 
-20. W **Eksploratora rozwiązań**, wklej go do *references\commonconfiguration\neutral* folderu w **SimpleMathVSIX** projektu.
+20. W **Eksploratorze rozwiązań**wklej plik do folderu *references\commonconfiguration\neutral* w projekcie **SimpleMathVSIX.**
 
-21. Powtórz poprzedni krok, wklejając **SimpleMath.pri** mezzanine do *redist\commonconfiguration\neutral* folderu w **SimpleMathVSIX** projektu.
+21. Powtórz poprzedni krok, wklejając plik **SimpleMath.pri** do folderu *redist\commonconfiguration\neutral* w projekcie **SimpleMathVSIX.**
 
-22. W **Eksploratora rozwiązań**, wybierz **SimpleMath.winmd**.
+22. W **Eksploratorze rozwiązań**wybierz **simplemath.winmd**.
 
-23. Na pasku menu wybierz **widoku** > **właściwości** (klawiatury: Wybierz **F4** klucza).
+23. Na pasku menu wybierz pozycję **Wyświetl** > **właściwości** (klawiatura: Wybierz klawisz **F4).**
 
-24. W **właściwości** oknie zmiany **Build Action** właściwości **zawartości**, a następnie zmień **Include w VSIX** właściwości  **Wartość true,** .
+24. W oknie Właściwości zmień właściwość **Akcja kompilacji** na **Zawartość,** a następnie zmień właściwość **Properties** **Uwzględnij w vsix** na **True**.
 
-25. W **Eksploratora rozwiązań**, powtórz ten proces dla **SimpleMath.pri**.
+25. W **Eksploratorze rozwiązań**powtórz ten proces dla **SimpleMath.pri**.
 
-26. W **Eksploratora rozwiązań**, wybierz **SimpleMathVSIX** projektu.
+26. W **Eksploratorze rozwiązań**wybierz projekt **SimpleMathVSIX.**
 
-27. Na pasku menu wybierz **kompilacji** > **kompilacji SimpleMathVSIX**.
+27. Na pasku menu wybierz polecenie **Build** > **Build SimpleMathVSIX**.
 
-28. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMathVSIX** projektu, a następnie wybierz **Otwórz Folder w Eksploratorze plików**.
+28. W **Eksploratorze rozwiązań**otwórz menu skrótów dla projektu **SimpleMathVSIX,** a następnie wybierz pozycję **Otwórz folder w Eksploratorze plików**.
 
-29. W **Eksploratora plików**, przejdź do *\bin\Release* folder, a następnie uruchom *SimpleMathVSIX.vsix* go zainstalować.
+29. W **Eksploratorze plików**przejdź do *folderu \bin\Release,* a następnie uruchom *plik SimpleMathVSIX.vsix,* aby go zainstalować.
 
-30. Wybierz **zainstalować** przycisk, poczekaj na zakończenie instalacji i ponownie uruchom program Visual Studio.
+30. Wybierz przycisk **Zainstaluj,** poczekaj na zakończenie instalacji, a następnie uruchom ponownie program Visual Studio.
 
-## <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Aby utworzyć przykładową aplikację, która korzysta z biblioteki klas
 
-1. Na pasku menu wybierz **pliku** > **New** > **projektu**.
+1. Na pasku menu wybierz pozycję **Plik** > **nowego** > **projektu**.
 
-2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz **Windows Store** węzła.
+2. Na liście szablonów rozwiń węzeł **Visual C#** lub **Visual Basic**, a następnie wybierz węzeł **Sklepu Windows.**
 
-3. Wybierz **pusta aplikacja** szablonu, nazwę projektu **ArithmeticUI**, a następnie wybierz **OK** przycisku.
+3. Wybierz szablon **Pusta aplikacja,** nazwij projekt **ArithmeticUI,** a następnie wybierz przycisk **OK.**
 
-4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ArithmeticUI** projektu, a następnie wybierz **Dodaj** > **odwołania**.
+4. W **Eksploratorze rozwiązań**otwórz menu skrótów dla projektu **ArithmeticUI,** a następnie wybierz pozycję **Dodaj** > **odwołanie**.
 
-5. Na liście typów referencyjnych rozwiń **Windows**, a następnie wybierz **rozszerzenia**.
+5. Na liście typów odwołań rozwiń węzeł **Windows**, a następnie wybierz pozycję **Rozszerzenia**.
 
-6. W okienku szczegółów wybierz **biblioteka funkcji matematycznych WinRT** rozszerzenia.
+6. W okienku szczegółów wybierz rozszerzenie **Biblioteka matematyczna WinRT.**
 
-    Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** link umożliwiający otworzenie https://msdn.microsoft.com/, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.
+    Zostaną wyświetlona dodatkowe informacje o sdk. Łącze **Więcej informacji** do https://msdn.microsoft.com/otwarcia można wybrać, jak określono w pliku SDKManifest.xml wcześniej w tym instruktażu.
 
-7. W **Menadżer odwołań** okno dialogowe, wybierz opcję **biblioteka funkcji matematycznych WinRT** pole wyboru, a następnie wybierz **OK** przycisku.
+7. W oknie dialogowym **Menedżer odwołań** zaznacz pole wyboru **Biblioteka matematyczna WinRT,** a następnie wybierz przycisk **OK.**
 
-8. Na pasku menu wybierz **widoku** > **przeglądarki obiektów**.
+8. Na pasku menu wybierz pozycję **Wyświetl** > **przeglądarkę obiektów**.
 
-9. W **Przeglądaj** wybierz **proste matematyczne**.
+9. Na liście **Przeglądaj** wybierz pozycję **Prosta matematyka**.
 
-     Można teraz zbadać, co nowego w zestawie SDK.
+     Teraz możesz zbadać, co znajduje się w sdk.
 
-10. W **Eksploratora rozwiązań**, otwórz **MainPage.xaml**i zastąp jego zawartość następujących XAML:
+10. W **Eksploratorze rozwiązań**otwórz stronę **MainPage.xaml**i zastąp jego zawartość następującym kodem XAML:
 
     **C#**
 
@@ -232,20 +232,20 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
     </Page>
     ```
 
-11. Aktualizacja **MainPage.xaml.cs** aby dopasować następujący kod:
+11. Zaktualizuj **MainPage.xaml.cs,** aby dopasować go do następującego kodu:
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]
 
-12. Wybierz **F5** klawisz, aby uruchomić aplikację.
+12. Wybierz klawisz **F5,** aby uruchomić aplikację.
 
-13. W aplikacji, wprowadź dowolne dwie liczby, wybierz operację, a następnie wybierz **=** przycisku.
+13. W aplikacji wprowadź dowolne dwie liczby, wybierz operację, a następnie wybierz **=** przycisk.
 
-     Zostanie wyświetlony odpowiedni wynik.
+     Pojawi się poprawny wynik.
 
-    Pomyślnie tworzone i używane rozszerzenie SDK.
+    Pomyślnie utworzono i użyto SDK rozszerzenia.
 
-## <a name="see-also"></a>Zobacz także
-- [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
-- [Przewodnik: Tworzenie zestawu SDK przy użyciu języka JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
-- [Create a Software Development Kit](../extensibility/creating-a-software-development-kit.md)
+## <a name="see-also"></a>Zobacz też
+- [Instruktaż: Tworzenie sdk przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
+- [Instruktaż: tworzenie sdk przy użyciu języka JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
+- [Tworzenie zestawu SDK](../extensibility/creating-a-software-development-kit.md)

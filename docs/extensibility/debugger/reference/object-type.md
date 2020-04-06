@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE | Dokumentacja firmy Microsoft
+title: OBJECT_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349921"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714130"
 ---
-# <a name="objecttype"></a>OBJECT_TYPE
-Określa typ obiektu z Ewaluator wyrażeń.
+# <a name="object_type"></a>OBJECT_TYPE
+Określa typ obiektu od oceniającego wyrażenie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -70,61 +70,61 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Pola
  `OBJECT_TYPE_BOOLEAN`\
- Wskazuje, że obiekt jest wartością logiczną.
+ Wskazuje, że obiekt jest wartościowym.
 
  `OBJECT_TYPE_CHAR`\
  Wskazuje, że obiekt jest znakiem.
 
  `OBJECT_TYPE_I1`\
- Wskazuje, że obiekt jest liczba całkowita ze znakiem jednobajtowych.
+ Wskazuje, że obiekt jest jedną ą ćdemotwą podpisaną całkowitej.
 
  `OBJECT_TYPE_U1`\
- Wskazuje, że obiekt jest liczba całkowita bez znaku jednobajtowych.
+ Wskazuje, że obiekt jest jedno bajtową niepodpisaną całkowitej liczby.
 
  `OBJECT_TYPE_I2`\
- Wskazuje, że obiekt jest liczba całkowita ze znakiem dwóch bajtów.
+ Wskazuje, że obiekt jest dwu bajtową podpisaną kreśliącą.
 
  `OBJECT_TYPE_U2`\
- Wskazuje, że obiekt jest liczba całkowita bez znaku dwubajtowego.
+ Wskazuje, że obiekt jest dwu bajtową niepodpisaną całkowitej liczby.
 
  `OBJECT_TYPE_I4`\
- Wskazuje, że obiekt jest całkowita czwartego bajtu.
+ Wskazuje, że obiekt jest 4-bajtową podpisaną kreślić.
 
  `OBJECT_TYPE_U4`\
- Wskazuje, że obiekt jest liczba całkowita bez znaku czwartego bajtu.
+ Wskazuje, że obiekt jest cztero bajtową niepodpisaną całkowitej liczby.
 
  `OBJECT_TYPE_I8`\
- Wskazuje, że obiekt jest całkowita 8 bajtową.
+ Wskazuje, że obiekt jest 8-bajtową podpisaną kreśliń integer.
 
  `OBJECT_TYPE_U8`\
- Wskazuje, że obiekt jest liczbą całkowitą bez znaku ośmiu bajtów.
+ Wskazuje, że obiekt jest 8-bajtową niepodpisaną całkowitej liczby.
 
  `OBJECT_TYPE_R4`\
- Wskazuje, że obiekt jest czterobajtową liczbą zmiennoprzecinkową.
+ Wskazuje, że obiekt jest cztero bajtową liczbą zmiennoprzecinkową.
 
  `OBJECT_TYPE_R8`\
- Wskazuje, że obiekt jest 8 bajtowa liczba zmiennoprzecinkowa.
+ Wskazuje, że obiekt jest ośmioma-bajtową liczbą zmiennoprzecinkową.
 
  `OBJECT_TYPE_OBJECT`\
  Wskazuje, że obiekt jest obiektem.
 
  `OBJECT_TYPE_NULL`\
- Wskazuje, czy obiekt ma wartość NULL.
+ Wskazuje, że obiekt ma wartość NULL.
 
  `OBJECT_TYPE_CLASS`\
  Wskazuje, że obiekt jest klasą.
 
 ## <a name="remarks"></a>Uwagi
- Przekazywany jako argument do [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.
+ Przekazany jako argument do [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: ee.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)
 - [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

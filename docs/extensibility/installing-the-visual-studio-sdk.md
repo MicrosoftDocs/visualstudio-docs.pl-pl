@@ -1,40 +1,40 @@
 ---
-title: Instalowanie programu Visual Studio SDK | Dokumentacja firmy Microsoft
+title: Instalowanie zestawu SDK programu Visual Studio | Dokumenty firmy Microsoft
 ms.date: 07/12/2018
 ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4208c20cc3e7da34efaf98af16f0f41d54613824
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f391708abbd8a9b66f2dfd5aaa6559cb075910d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340757"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710346"
 ---
 # <a name="install-the-visual-studio-sdk"></a>Instalowanie zestawu Visual Studio SDK
 
-Visual Studio SDK (Software Development Kit) jest opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później.
+Zestaw SDK programu Visual Studio (Software Development Kit) jest opcjonalną funkcją w konfiguracji programu Visual Studio. Można również zainstalować vs SDK później.
 
-## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Instalowanie zestawu SDK programu Visual Studio w ramach instalacji programu Visual Studio
+## <a name="install-the-visual-studio-sdk-as-part-of-a-visual-studio-installation"></a>Instalowanie pakietu SDK programu Visual Studio w ramach instalacji programu Visual Studio
 
-Aby dołączyć zestawu SDK dla instalacji programu Visual Studio, zainstaluj **programowanie rozszerzeń programu Visual Studio** obciążenie **inne zestawy narzędzi**. To obciążenie zostanie zainstalowany, zestawu SDK programu Visual Studio i niezbędnych wymagań wstępnych. Instalacja jest dalsze dostosowywanie przez zaznaczenie lub usunięcie zaznaczenia składników z **Podsumowanie** widoku.
+Aby uwzględnić zestaw SDK programu VS w instalacji programu Visual Studio, zainstaluj obciążenie **programem Visual Studio dotyczące tworzenia rozszerzeń** w obszarze **Inne zestawy narzędzi.** To obciążenie zainstaluje visual studio SDK i niezbędne wymagania wstępne. Instalację można dodatkowo dostroić, wybierając lub odznaczając składniki w widoku **Podsumowanie.**
 
-## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalowanie zestawu SDK programu Visual Studio po zainstalowaniu programu Visual Studio
+## <a name="install-the-visual-studio-sdk-after-installing-visual-studio"></a>Instalowanie zestawu Visual Studio SDK po zainstalowaniu programu Visual Studio
 
-Aby zainstalować zestawu SDK programu Visual Studio po zakończeniu instalacji programu Visual Studio, ponownie uruchom Instalatora programu Visual Studio, a następnie wybierz **programowanie rozszerzeń programu Visual Studio** obciążenia.
+Aby zainstalować zestaw SDK programu Visual Studio po zakończeniu instalacji programu Visual Studio, uruchom ponownie instalatora programu Visual Studio i wybierz obciążenie **deweloperskie rozszerzenia programu Visual Studio.**
 
-## <a name="install-the-visual-studio-sdk-from-a-solution"></a>Instalowanie zestawu SDK programu Visual Studio za pomocą rozwiązania
+## <a name="install-the-visual-studio-sdk-from-a-solution"></a>Instalowanie pakietu SDK programu Visual Studio z rozwiązania
 
-Po otwarciu rozwiązania z projektem rozszerzalności bez instalowania najpierw oprogramowania zestawu SDK dla programu, zostanie wyświetlony monit **instalowanie brakujących funkcji** okno dialogowe, aby zainstalować **programowanie rozszerzeń programu Visual Studio** Obciążenie:
+Jeśli otworzysz rozwiązanie z projektem rozszerzalności bez uprzedniego zainstalowania zestawu SDK programu VS, zostanie wyświetlony monit o **zainstalowanie brakującego elementu** dialogowego w celu zainstalowania obciążenia **deweloperskiego rozszerzenia programu Visual Studio:**
 
-![Zainstaluj rozszerzenie rozwoju](../extensibility/media/install-extension-development.png "zainstalować programowania rozszerzeń")
+![Tworzenie rozszerzeń instalacji](../extensibility/media/install-extension-development.png "Tworzenie rozszerzeń instalacji")
 
-## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>Instalowanie zestawu SDK programu Visual Studio przy użyciu wiersza polecenia
+## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>Instalowanie pakietu SDK programu Visual Studio z wiersza polecenia
 
-Za pomocą programu Visual Studio obciążenia lub składnika, można również zainstalować **programowanie rozszerzeń programu Visual Studio** obciążenia (identyfikator: Microsoft.VisualStudio.Workload.VisualStudioExtension) z wiersza polecenia. Zobacz [użyć parametrów wiersza polecenia, aby zainstalować program Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) szczegółowe informacje dotyczące przełączników wiersza polecenia i ogólne instrukcje na temat określania identyfikatorów obciążenia lub składnika.
+Podobnie jak w przypadku dowolnego obciążenia lub składnika programu Visual Studio, można również zainstalować obciążenie **deweloperskie rozszerzenia programu Visual Studio** (identyfikator: Microsoft.VisualStudio.Workload.VisualStudioExtension) z wiersza polecenia. Zobacz [Użycie parametrów wiersza polecenia, aby zainstalować program Visual Studio, aby](../install/use-command-line-parameters-to-install-visual-studio.md) uzyskać szczegółowe informacje na temat odpowiednich przełączników wiersza polecenia i ogólnych instrukcji dotyczących określania identyfikatorów obciążenia lub składników.
 
-Należy pamiętać, że należy użyć Instalatora programu Visual Studio, która jest zgodna z zainstalowaną wersją programu Visual Studio. Na przykład, jeśli masz program Visual Studio Enterprise zainstalowana na danym komputerze, należy uruchomić Instalatora programu Visual Studio Enterprise (*vs_enterprise.exe*).
+Należy zauważyć, że należy użyć instalatora programu Visual Studio, który pasuje do zainstalowanej wersji programu Visual Studio. Na przykład jeśli na komputerze jest zainstalowany program Visual Studio Enterprise, należy uruchomić instalator programu Visual Studio Enterprise (*vs_enterprise.exe*).

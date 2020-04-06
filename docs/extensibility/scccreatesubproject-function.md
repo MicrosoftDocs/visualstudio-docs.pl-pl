@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccCreateSubProject | Dokumentacja firmy Microsoft
+title: Funkcja SccCreateSubProject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aa70f6b42a6722ac66340807503ee4494795b0d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327523"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701040"
 ---
-# <a name="scccreatesubproject-function"></a>SccCreateSubProject function
-Ta funkcja tworzy podprojekt o podanej nazwie w ramach istniejącego projektu nadrzędnej określonej przez `lpParentProjPath` argumentu.
+# <a name="scccreatesubproject-function"></a>SccCreateSubProject, funkcja
+Ta funkcja tworzy podprojekt o podanej nazwie w ramach `lpParentProjPath` istniejącego projektu nadrzędnego określonego przez argument.
 
 ## <a name="syntax"></a>Składnia
 
@@ -37,68 +37,68 @@ SCCRTN SccCreateSubProject(
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-[in] Wskaźnik kontekście wtyczki kontroli źródła.
+[w] Wskaźnik kontekstu wtyczki formantu źródła.
 
- hWnd
+ Hwnd
 
-[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
 
- lpUser
+ lpUżycie
 
-[out w] Nazwa użytkownika (maksymalnie SCC_USER_SIZE tym terminator o wartości NULL).
+[w, na zewnątrz] Nazwa użytkownika (do SCC_USER_SIZE, w tym terminator NULL).
 
  lpParentProjPath
 
-[in] Ciąg identyfikujący ścieżkę projektu nadrzędnego (maksymalnie SCC_PRJPATH_SIZE tym terminator o wartości NULL).
+[w] Ciąg identyfikujący ścieżkę projektu nadrzędnego (do SCC_PRJPATH_SIZE, w tym terminator NULL).
 
  lpSubProjName
 
-[in] Nazwa sugerowane podprojekt (maksymalnie SCC_PRJPATH_SIZE tym terminator o wartości NULL).
+[w] Sugerowana nazwa podprojektu (do SCC_PRJPATH_SIZE, w tym terminator NULL).
 
- lpAuxProjPath
+ lpAuxProjPath (lpAuxProjPath)
 
-[out w] Pomocnicze ciąg identyfikujący projekt (maksymalnie SCC_PRJPATH_SIZE tym terminator o wartości NULL).
+[w, na zewnątrz] Ciąg pomocniczy identyfikujący projekt (do SCC_PRJPATH_SIZE, w tym terminator NULL).
 
  lpSubProjPath
 
-[out w] Ciąg danych wyjściowych, który identyfikuje ścieżkę dla podprojektu (maksymalnie SCC_PRJPATH_SIZE tym terminator o wartości NULL).
+[w, na zewnątrz] Ciąg wyjściowy identyfikujący ścieżkę podprojektu (do SCC_PRJPATH_SIZE, w tym terminator NULL).
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
 |SCC_OK|Podprojekt został pomyślnie utworzony.|
 |SCC_E_INITIALIZEFAILED|Nie można zainicjować projektu nadrzędnego.|
-|SCC_E_INVALIDUSER|Użytkownik nie może zalogować do systemu kontroli źródła.|
+|SCC_E_INVALIDUSER|Użytkownik nie może zalogować się do systemu kontroli źródła.|
 |SCC_E_COULDNOTCREATEPROJECT|Nie można utworzyć podprojektu.|
-|SCC_E_PROJSYNTAXERR|Składnia nieprawidłowy projekt.|
-|SCC_E_UNKNOWNPROJECT|Projekt nadrzędny jest nieznany wtyczka do kontroli źródła.|
-|SCC_E_INVALIDFILEPATH|Ścieżka pliku nieprawidłowy lub nie do użytku.|
+|SCC_E_PROJSYNTAXERR|Nieprawidłowa składnia projektu.|
+|SCC_E_UNKNOWNPROJECT|Projekt nadrzędny jest nieznany do wtyczki kontroli źródła.|
+|SCC_E_INVALIDFILEPATH|Nieprawidłowa lub niezrozumiasowalna ścieżka pliku.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|
-|SCC_E_CONNECTIONFAILURE|Wystąpił problem podczas połączenia wtyczki kontroli źródła.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Wystąpił nieokreślony błąd.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zaleca się ponowną próbę.|
+|SCC_E_CONNECTIONFAILURE|Wystąpił problem z połączeniem wtyczki sterowania źródłem.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Niespecyficzna awaria.|
 
 ## <a name="remarks"></a>Uwagi
- Jeśli podprojekt o tej nazwie już istnieje, funkcja może zmienić domyślną nazwę utworzyć unikatowy, na przykład dodając "_\<liczba >" do niego. Obiekt wywołujący musi być gotowi do zaakceptowania zmian `lpUser`, `lpSubProjPath`, i `lpAuxProjPath`. `lpSubProjPath` i`lpAuxProjPath` argumenty są następnie używane w wywołaniu [SccOpenProject](../extensibility/sccopenproject-function.md). Nie powinny one być modyfikowane przez obiekt wywołujący po powrocie. Te ciągi umożliwiają dla dodatku typu plug-in do śledzenia informacji wymaganych do skojarzenia z projektu kontroli źródła. Obiekt wywołujący IDE nie są wyświetlane te dwa parametry po powrocie, ponieważ wtyczki mogą używać sformatowany ciąg, który może nie być przydatny do wyświetlania. Funkcja zwróci kod powodzenia lub niepowodzenia i jeśli to się powiedzie, wypełnia zmiennej `lpSubProjPath` ze ścieżką pełną projektu do nowego projektu.
+ Jeśli podprojekt o nazwie już istnieje, funkcja może zmienić nazwę domyślną, aby utworzyć unikatową, na przykład dodając do niej "_\<numer>". Rozmówca musi być przygotowany do `lpUser` `lpSubProjPath`zaakceptowania `lpAuxProjPath`zmian w , i . Argumenty `lpSubProjPath` `lpAuxProjPath` i są następnie używane w wywołaniu [SccOpenProject](../extensibility/sccopenproject-function.md). Nie powinny być modyfikowane przez rozmówcę po zwrocie. Te ciągi umożliwiają wtyczkę formantu źródła do śledzenia informacji, które musi skojarzyć z projektem. Ide wywołującego nie wyświetli tych dwóch parametrów po powrocie, ponieważ dodatek może używać sformatowanego ciągu, który może nie być odpowiedni do wyświetlania. Funkcja zwraca kod sukcesu lub niepowodzenia i, jeśli `lpSubProjPath` się powiedzie, wypełnia zmienną pełną ścieżką projektu do nowego projektu.
 
- Ta funkcja jest podobny do [SccGetProjPath](../extensibility/sccgetprojpath-function.md), chyba że dyskretnie tworzy projekt, a nie monitowania użytkownika o wybranie jednego. Gdy `SccCreateSubProject` funkcja jest wywoływana, `lpParentProjName` i `lpAuxProjPath` nie jest pusty i będą odpowiadać prawidłowym projektem. Te ciągi są zazwyczaj odbierane przez środowisko IDE z poprzedniego wywołania `SccGetProjPath` funkcji lub [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).
+ Ta funkcja jest podobna do [SccGetProjPath](../extensibility/sccgetprojpath-function.md), z tą różnicą, że dyskretnie tworzy projekt, a nie monituje użytkownika, aby wybrać jeden. Gdy `SccCreateSubProject` funkcja jest `lpParentProjName` wywoływana i `lpAuxProjPath` nie będzie pusta i będzie odpowiadać prawidłowemu projektowi. Te ciągi są zwykle odbierane przez IDE `SccGetProjPath` z poprzedniego wywołania funkcji lub [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).
 
- `lpUser` Argument jest nazwą użytkownika. IDE przejdzie w tej samej nazwy użytkownika, który poprzednio odbierał z `SccGetProjPath`, a wtyczka do kontroli źródła, należy użyć nazwy jako domyślny. Jeśli użytkownik ma już otwartego połączenia przy użyciu wtyczki, wtyczka powinna spróbuj wyeliminować żadnych monitów, aby upewnić się, że funkcja działa w trybie dyskretnym. Jednakże, jeśli logowanie nie powiedzie się, wtyczka powinien zostać wyświetlony monit użytkownika dla nazwy logowania, a po odebraniu prawidłową nazwą logowania — dostęp próbny nazwę z powrotem w `lpUser`. Ponieważ wtyczki mogą zmienić ten ciąg, IDE zawsze przydzieli bufor o rozmiarze (SCC_USER_LEN + 1 lub SCC_USER_SIZE, w tym miejsce terminator o wartości null). Jeśli ciąg zostanie zmieniona, nowy ciąg musi być prawidłową nazwą logowania (co najmniej jako prawidłowe jako stary ciąg).
+ Argument `lpUser` jest nazwą użytkownika. IDE będzie przechodzić w tej samej nazwie `SccGetProjPath`użytkownika, który wcześniej otrzymał od , a wtyczka kontroli źródła powinna używać nazwy jako domyślnej. Jeśli użytkownik ma już otwarte połączenie z wtyczką, wtyczka powinna spróbować wyeliminować wszelkie monity, aby upewnić się, że funkcja działa cicho. Jeśli jednak logowanie nie powiedzie się, wtyczka powinna monitować użytkownika o zalogowanie, a `lpUser`po otrzymaniu prawidłowego logowania przekazać nazwę z powrotem w . Ponieważ dodatek może zmienić ten ciąg, IDE zawsze przydziela bufor o rozmiarze (SCC_USER_LEN +1 lub SCC_USER_SIZE, który zawiera miejsce dla terminatora null). Jeśli ciąg zostanie zmieniony, nowy ciąg musi być prawidłową nazwą logowania (co najmniej tak samo prawidłową jak stary ciąg).
 
-## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Uwagi techniczne SccCreateSubProject i SccGetParentProjectPath
- Dodawanie rozwiązania i projekty do kontroli źródła został uproszczony w programie Visual Studio, aby zminimalizować liczbę przypadków, gdy użytkownik jest monitowany o wybierz lokalizacje w systemie kontroli źródła. Zmiany te zostaną aktywowane przez program Visual Studio, jeśli wtyczka do kontroli źródła, obsługuje zarówno z nowych funkcji `SccCreateSubProject` i `SccGetParentProjectPath`. Jednak następujący wpis rejestru można wyłączyć te zmiany i przywrócić poprzednie zachowanie programu Visual Studio (źródło sterowania wtyczki interfejsu API w wersji 1.1):
+## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Uwagi techniczne dotyczące programu SccCreateSubProject i SccGetParentProjectPath
+ Dodawanie rozwiązań i projektów do kontroli źródła zostało uproszczone w programie Visual Studio, aby zminimalizować liczbę monitów użytkownika o wybranie lokalizacji w systemie kontroli źródła. Te zmiany są aktywowane przez program Visual Studio, jeśli wtyczka `SccCreateSubProject` `SccGetParentProjectPath`formantu źródłowego obsługuje obie nowe funkcje i . Jednak następujący wpis rejestru może służyć do wyłączenia tych zmian i przywrócić do poprzedniego zachowania programu Visual Studio (Source Control Plug-in API w wersji 1.1):
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
+ **[HKEY_CURRENT_USER\Oprogramowanie\Microsoft\VisualStudio\8.0\Kontrola źródła] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**
 
- Jeśli ten wpis rejestru nie istnieje lub ma wartość DWORD: 00000000, Visual Studio próbuje użyć nowych funkcji `SccCreateSubProject` i `SccGetParentProjectPath`.
+ Jeśli ten wpis rejestru nie istnieje lub jest ustawiony na dword:00000000, `SccCreateSubProject` `SccGetParentProjectPath`program Visual Studio próbuje użyć nowych funkcji i .
 
- Jeśli wpis rejestru DWORD: 00000001 programu Visual Studio nie jest podejmowana próba użycia tych nowych funkcji, a operacje dodania do kontroli źródła działają podobnie jak w poprzednich wersjach programu Visual Studio.
+ Jeśli wpis rejestru jest ustawiony na dword:00000001, Visual Studio nie próbuje użyć tych nowych funkcji, a operacje dodawania do kontroli źródła działają tak, jak w poprzednich wersjach programu Visual Studio.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

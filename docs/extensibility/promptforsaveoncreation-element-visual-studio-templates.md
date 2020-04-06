@@ -1,5 +1,5 @@
 ---
-title: Promptforsaveoncreation — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element PromptForSaveOnCreation (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802bcd357fe82434f7cf5aaf835b2841e6dc8dc5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e6bbd62120da59da1fb26e671c1aa02f33949f4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335990"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701776"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Promptforsaveoncreation — element (szablony Visual Studio)
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Element PromptForSaveOnCreation (szablony programu Visual Studio)
 
-Określa, czy użytkownik jest monitowany o miejsce za pośrednictwem zapisania projektu **nowy projekt** okno dialogowe podczas tworzenia projektu. Jeśli ten element jest ustawiony na `true`, a następnie użytkownik jest monitowany o zapisanie lokalizacji. Jeśli `false`, a następnie nie będą monitowani (w oznacza to, jest tworzony projekt tymczasowy).
+Określa, czy użytkownik jest monitowany o lokalizację zapisywania projektu za pośrednictwem okna dialogowego **Nowy projekt** podczas tworzenia projektu. Jeśli ten element `true`jest ustawiony na , a następnie użytkownik jest monitowany o zapisz lokalizację. Jeśli `false`, to nie są monitowane (oznacza to, że tworzony jest projekt tymczasowy).
 
 ```xml
 \<VSTemplate>
@@ -50,20 +50,20 @@ Określa, czy użytkownik jest monitowany o miejsce za pośrednictwem zapisania 
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`, `true` wskazujący, że użytkownik jest monitowany o zapisanie lokalizacji podczas tworzenia nowego projektu.
+ Tekst musi być `true` albo `false` `true` albo , wskazując, że użytkownik zostanie poproszony o lokalizację zapisu podczas tworzenia nowego projektu.
 
 ## <a name="remarks"></a>Uwagi
- `PromptForSaveOnCreation` element jest opcjonalny. Wartość domyślna to `false`.
+ `PromptForSaveOnCreation`jest elementem opcjonalnym. Wartością domyślną jest `false`.
 
- Tymczasowe projekty są projektami, które można tworzyć i modyfikować bez zapisywania zawartości tego projektu na dysku.
+ Projekty tymczasowe to projekty, które można tworzyć i modyfikować bez zapisywania zawartości tego projektu na dysku.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie ustawiono wartość `PromptForSaveOnCreation` równa `false`, która określa, aby projekt mógł zostać utworzony jako projekt tymczasowy.
+ Poniższy przykład ustawia `PromptForSaveOnCreation` wartość `false`równą , która określa, aby umożliwić projekt, który ma być tworzony jako projekt tymczasowy.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,7 +90,7 @@ Określa, czy użytkownik jest monitowany o miejsce za pośrednictwem zapisania 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

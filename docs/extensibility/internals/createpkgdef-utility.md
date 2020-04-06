@@ -1,5 +1,5 @@
 ---
-title: CreatePkgDef Utility | Microsoft Docs
+title: Narzędzie CreatePkgDef | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab5866949d6ccfa9f3b1037abf7801ce40ace3d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332283"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709167"
 ---
 # <a name="createpkgdef-utility"></a>Narzędzie CreatePkgDef
-Pobiera plik .dll dla rozszerzenia programu Visual Studio, jako parametr i tworzy *.pkgdef* pliku, który towarzyszy *.dll* pliku. *.Pkgdef* plik zawiera wszystkie informacje, które w przeciwnym razie powinny być zapisane w rejestrze systemu, gdy rozszerzenie jest zainstalowane.
+Przyjmuje plik dll dla rozszerzenia programu Visual Studio jako parametr i tworzy plik *pkgdef,* który będzie towarzyszył plikowi *dll.* Plik *.pkgdef* zawiera wszystkie informacje, które w przeciwnym razie zostałyby zapisane w rejestrze systemowym po zainstalowaniu rozszerzenia.
 
 > [!NOTE]
-> Większość szablonów projektu, które są objęte zestawu SDK programu Visual Studio automatycznie utworzyć *.pkgdef* pliki jako część procesu kompilacji. Ten dokument jest przeznaczony dla osób, które chcesz ręcznie tworzyć pakiety lub konwertowania istniejących pakietów do użycia *.pkgdef* wdrożenia.
+> Większość szablonów projektu, które są zawarte w visual studio SDK automatycznie utworzyć pliki *pkgdef* jako część procesu kompilacji. Ten dokument jest przeznaczony dla tych, którzy chcą ręcznie tworzyć pakiety lub konwertować istniejące pakiety do użycia wdrożenia *pkgdef.*
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,54 +33,54 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
 ## <a name="arguments"></a>Argumenty
-**/out=&lt;FileName&gt;** \
-Wymagana. Ustawia nazwę *.pkgdef* plik wyjściowy będzie &lt;FileName&gt;.
+**/out=&lt;Nazwa pliku&gt;**\
+Wymagany. Ustawia nazwę pliku wyjściowego *pkgdef* na &lt;&gt;FileName .
 
-**/ codebase**\
-Opcjonalna. Wymusza rejestrację przy użyciu **CodeBase** narzędzia.
+**/codebase**\
+Element opcjonalny. Wymusza rejestrację za pomocą narzędzia **CodeBase.**
 
-**/ Assembly**\
-Wymusza rejestrację przy użyciu **zestawu** narzędzia.
+**/montaż**\
+Wymusza rejestrację za pomocą narzędzia **Assembly.**
 
-**&lt;AssemblyPath&gt;** \
-Ścieżka *.dll* pliku, z którego chcesz wygenerować *.pkgdef*.
+**&lt;Ścieżka zespołu&gt;**\
+Ścieżka pliku *dll,* z którego ma zostać wygenerowana *pkgdef*.
 
 ## <a name="remarks"></a>Uwagi
-Rozwój rozszerzeń przy użyciu *.pkgdef* plików zastępuje wymagania rejestru wcześniejszych wersji programu Visual Studio.
+Wdrożenie rozszerzenia przy użyciu plików *pkgdef* zastępuje wymagania rejestru wcześniejszych wersji programu Visual Studio.
 
 ::: moniker range=">=vs-2019"
 
-*.Pkgdef* pliki muszą być zainstalowane w jednym z następujących lokalizacji:
+Pliki *.pkgdef* muszą być zainstalowane w jednej z następujących lokalizacji:
 
-- *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*
+- *%localappdata%\Microsoft\Visual Studio\16.0\Rozszerzenia\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Rozszerzenia\\*
 
-Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\* , rozszerzenie jest rozpoznawany przez program Visual Studio, ale jest domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **Zarządzaj rozszerzeniami**.
+Jeśli folder instalacyjny to *%localappdata%\Microsoft\Visual Studio\16.0\Extensions\\*, rozszerzenie jest rozpoznawane przez program Visual Studio, ale jest domyślnie wyłączone. Użytkownik może włączyć rozszerzenie za pomocą **funkcji Zarządzaj rozszerzeniami**.
 
-Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\* , rozszerzenie jest domyślnie włączona.
+Jeśli folder instalacyjny to *%vsinstalldir%\Common7\IDE\Extensions\\*, rozszerzenie jest domyślnie włączone.
 
 > [!NOTE]
-> **Zarządzaj rozszerzeniami** narzędzie nie może służyć do dostępu do rozszerzenia, chyba, że jest zainstalowany jako część pakietu VSIX.
+> Narzędzia **Zarządzaj rozszerzeniami** nie można użyć do uzyskania dostępu do rozszerzenia, chyba że jest ono zainstalowane jako część pakietu VSIX.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-*.Pkgdef* pliki muszą być zainstalowane w jednym z następujących lokalizacji:
+Pliki *.pkgdef* muszą być zainstalowane w jednej z następujących lokalizacji:
 
-- *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*
+- *%localappdata%\Microsoft\Visual Studio\15.0\Rozszerzenia\\*
 
-- *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Rozszerzenia\\*
 
-Jeśli folder instalacji to *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\* , rozszerzenie jest rozpoznawany przez program Visual Studio, ale jest domyślnie wyłączona. Użytkownik może włączyć rozszerzenie za pomocą **rozszerzenia i aktualizacje**.
+Jeśli folder instalacyjny to *%localappdata%\Microsoft\Visual Studio\15.0\Extensions\\*, rozszerzenie jest rozpoznawane przez program Visual Studio, ale jest domyślnie wyłączone. Użytkownik może włączyć rozszerzenie za pomocą **rozszerzeń i aktualizacji**.
 
-Jeśli folder instalacji to *%vsinstalldir%\Common7\IDE\Extensions\\* , rozszerzenie jest domyślnie włączona.
+Jeśli folder instalacyjny to *%vsinstalldir%\Common7\IDE\Extensions\\*, rozszerzenie jest domyślnie włączone.
 
 > [!NOTE]
-> **Rozszerzenia i aktualizacje** narzędzie nie może służyć do dostępu do rozszerzenia, chyba, że jest zainstalowany jako część pakietu VSIX.
+> Narzędzia **Rozszerzenia i aktualizacje** nie można użyć do uzyskania dostępu do rozszerzenia, chyba że jest ono zainstalowane jako część pakietu VSIX.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Narzędzie CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

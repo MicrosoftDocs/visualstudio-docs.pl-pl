@@ -1,5 +1,5 @@
 ---
-title: SccDirQueryInfo Function | Microsoft Docs
+title: Funkcja SccDirQueryInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e19b65ea4b3c4cd87b1f9d6a3db9e6f8ae64d16d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332240"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700950"
 ---
-# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo function
-Ta funkcja sprawdza, czy lista katalogów w pełni kwalifikowaną ich bieżący stan.
+# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo, funkcja
+Ta funkcja sprawdza listę w pełni kwalifikowanych katalogów dla ich bieżącego stanu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,40 +34,40 @@ LPLONG  lpStatus
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-[in] Struktura kontekście wtyczki kontroli źródła.
+[w] Struktura kontekstu wtyczki formantu źródła.
 
- nDirs
+ nDirs (nDirs)
 
-[in] Liczba katalogów wybranych być badana.
+[w] Liczba katalogów wybranych do kwerendy.
 
- lpDirNames
+ lpDirNames (lpDirNames)
 
-[in] Tablica ścieżek katalogów, wysyłanie kwerend do w pełni kwalifikowanych.
+[w] Tablica w pełni kwalifikowanych ścieżek katalogów, które mają być wyszukiwane.
 
  lpStatus
 
-[out w] Struktura tablicy wtyczka do kontroli źródła do zwrócenia flagi stanu (zobacz [kod stanu katalogu](../extensibility/directory-status-code-enumerator.md) Aby uzyskać szczegółowe informacje).
+[w, na zewnątrz] Struktura tablicy dla wtyczki kontroli źródła, aby zwrócić flagi stanu (zobacz [kod stanu katalogu,](../extensibility/directory-status-code-enumerator.md) aby uzyskać szczegółowe informacje).
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Zapytanie zakończyło się pomyślnie.|
+|SCC_OK|Kwerenda zakończyła się pomyślnie.|
 |SCC_E_OPNOTSUPPORTED|System kontroli kodu źródłowego nie obsługuje tej operacji.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Wystąpił nieokreślony błąd.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zaleca się ponowną próbę.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Niespecyficzna awaria.|
 
 ## <a name="remarks"></a>Uwagi
- Funkcja wypełnia zwracana tablica z maską bitów bitów z `SCC_DIRSTATUS` rodziny (zobacz [kod stanu katalogu](../extensibility/directory-status-code-enumerator.md)), jeden wpis dla każdego katalogu, biorąc pod uwagę. Tablica stanu jest przydzielany przez obiekt wywołujący.
+ Funkcja wypełnia tablicę zwracaną maską bitową bitów z `SCC_DIRSTATUS` rodziny (zobacz kod stanu [katalogu),](../extensibility/directory-status-code-enumerator.md)po jednym wpisie dla każdego podanego katalogu. Tablica stanu jest przydzielana przez wywołującego.
 
- Tej funkcji używa środowiska IDE, zanim katalogu została zmieniona, aby sprawdzić, czy katalog znajduje się pod kontrolą źródła, badając, czy ma ona odpowiedniego projektu. Jeśli katalog nie jest pod kontrolą źródła, IDE może zapewnić odpowiednie ostrzeżenie dla użytkownika.
+ IDE używa tej funkcji przed nazwa katalogu jest zmieniana, aby sprawdzić, czy katalog jest pod kontrolą źródła, sprawdzając, czy ma odpowiedni projekt. Jeśli katalog nie jest pod kontrolą źródła, IDE może zapewnić odpowiednie ostrzeżenie dla użytkownika.
 
 > [!NOTE]
-> Jeśli wtyczka do kontroli źródła nie zaimplementować jedną lub więcej wartości stanu, niezaimplementowana bity powinny być ustawione na zero.
+> Jeśli wtyczka formantu źródła zdecyduje się nie implementować jednej lub więcej wartości stanu, niewdrożonych bitów należy ustawić na zero.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
 - [Kod stanu katalogu](../extensibility/directory-status-code-enumerator.md)

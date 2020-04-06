@@ -1,27 +1,27 @@
 ---
-title: KeyBinding, Element | Dokumentacja firmy Microsoft
+title: Element wiązania klawiszy | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309638"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703142"
 ---
-# <a name="keybinding-element"></a>KeyBinding, element
-KeyBinding, element określa skróty klawiaturowe dla poleceń.
+# <a name="keybinding-element"></a>Element wiązania klawiszy
+Element KeyBinding określa skróty klawiaturowe dla poleceń.
 
- Polecenia może mieć zarówno pojedynczych, jak i podwójną klawiszy skojarzonych z nimi. Na przykład jednego powiązanie klawiszy **Ctrl**+**S** dla **Zapisz** polecenia. Podwójna klawiszy wymaga dwóch kolejnych kombinacje klawiszy, aby wyzwolić poleceniu. Na przykład dwa powiązanie klawiszy <strong>Ctrl *+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** Aby ustawić zakładki.
+ Polecenia mogą mieć skojarzone z nimi powiązania pojedyncze i podwójne klucze. Przykładem powiązania pojedynczego klucza jest **Ctrl**+**S** dla polecenia **Zapisz.** Podwójne powiązania klawiszy wymagają dwóch kolejnych kombinacji klawiszy, aby wyzwolić polecenie. Przykładem wiązania z dwoma klawiszami jest <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K**, aby ustawić zakładkę.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,15 +36,15 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagana.|
-|identyfikator|Wymagana.|
-|edytor|Wymagana. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|
-|key1|Wymagana. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|Opcjonalna. Dowolną kombinację **Ctrl**, **Alt**, i **Shift** rozdzielone spacjami.|
-|key2|Opcjonalna. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|Opcjonalna. Dowolną kombinację **Ctrl**, **Alt**, i **Shift** rozdzielone spacjami.|
-|Emulator|Opcjonalna.|
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Identyfikator GUID|Wymagany.|
+|id|Wymagany.|
+|edytor|Wymagany. Identyfikator GUID edytora wskazuje kontekst edycji, dla którego ten skrót klawiaturowy będzie aktywny. Wartość globalnego zakresu wiązania to "guidVSStd97".|
+|key1|Wymagany. Prawidłowe wartości obejmują wszystkie typowalne wartości alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod1|Element opcjonalny. Dowolna kombinacja **klawiszy Ctrl**, **Alt**i **Shift** oddzielona spacją.|
+|key2|Element opcjonalny. Prawidłowe wartości obejmują wszystkie typowalne wartości alfanumeryczne, a także dwucyfrowe wartości szesnastkowe poprzedzone 0x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|Element opcjonalny. Dowolna kombinacja **klawiszy Ctrl**, **Alt**i **Shift** oddzielona spacją.|
+|emulator|Element opcjonalny.|
+|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
@@ -57,7 +57,7 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
 
 |Element|Opis|
 |-------------|-----------------|
-|[KeyBindings, element](../extensibility/keybindings-element.md)|Grupuje elementy powiązanie klawiszy i inne grupy powiązań klawiszy.|
+|[Element KeyBindings](../extensibility/keybindings-element.md)|Grupy KeyBinding elementów i innych grup keybindings.|
 
 ## <a name="example"></a>Przykład
 
@@ -70,6 +70,6 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [KeyBindings, element](../extensibility/keybindings-element.md)
-- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz też
+- [Element KeyBindings](../extensibility/keybindings-element.md)
+- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

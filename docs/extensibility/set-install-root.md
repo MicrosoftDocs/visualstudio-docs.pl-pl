@@ -1,46 +1,46 @@
 ---
-title: Instalowanie poza folderem rozszerzeń o rozszerzeniu VSIX v3 | Dokumentacja firmy Microsoft
+title: Instalacja poza folderem rozszerzeń za pomocą vsix v3 | Dokumenty firmy Microsoft
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: aa2c7d97dda9bba139ec613b367eedbc6307848a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852204"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700183"
 ---
 # <a name="install-outside-the-extensions-folder"></a>Instalowanie poza folderem rozszerzeń
 
-Począwszy od programu Visual Studio 2017 i rozszerzeniu VSIX v3 (wersja 3), rozszerzenie zasoby mogą być instalowane poza folderem rozszerzeń. Obecnie następujących lokalizacji są włączone jako lokalizacje prawidłowej instalacji (gdzie [INSTALLDIR] jest mapowany do katalogu instalacyjnego w wystąpieniu programu Visual Studio):
+Począwszy od programu Visual Studio 2017 i VSIX w wersji 3 (wersja 3), zasoby rozszerzeń można zainstalować poza folderem rozszerzeń. Obecnie następujące lokalizacje są włączone jako prawidłowe lokalizacje instalacji (gdzie [INSTALLDIR] jest mapowany do katalogu instalacji wystąpienia programu Visual Studio):
 
-* \MSBuild [INSTALLDIR]
-* [INSTALLDIR] \Xml\Schemas
-* \Common7\IDE\PublicAssemblies [INSTALLDIR]
-* \Licenses [INSTALLDIR]
-* \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
-* \Common7\IDE\RemoteDebugger [INSTALLDIR]
-* \Common7\IDE\VC\VCTargets [INSTALLDIR] (tylko obsługiwane w programie Visual Studio 2017; przestarzałe 2019 usługi Visual Studio lub nowszy)
+* [INSTALLDIR]\MSBuild
+* [INSTALLDIR]\Xml\Schemas
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
+* [INSTALLDIR]\Licencje
+* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets (obsługiwane tylko w programie Visual Studio 2017; przestarzałe dla programu Visual Studio 2019 i nowszych)
 
 > [!NOTE]
-> VSIX format nie zezwala na instalowanie poza strukturą folderu instalacji programu Visual Studio. 
+> Format VSIX nie zezwala na instalowanie poza strukturą folderów instalacji programu Visual Studio. 
 
-W celu obsługi instalacji tych katalogów, VSIX musi być zainstalowany "dla wystąpienia na komputerze". Tę można włączyć, zaznaczając pole wyboru "wszystkich użytkowników" w Projektancie extension.vsixmanifest:
+Aby obsługiwać instalację w tych katalogach, VSIX musi być zainstalowany "na wystąpienie na komputerze". Można to włączyć, zaznaczając pole wyboru "wszyscy użytkownicy" w projektancie extension.vsixmanifest:
 
-![Zaznacz wszystkich użytkowników](media/check-all-users.png)
+![sprawdź wszystkich użytkowników](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>Jak ustawić element InstallRoot
+## <a name="how-to-set-the-installroot"></a>Jak ustawić installroot
 
-Aby ustawić katalogi instalacyjne, można użyć **właściwości** okna w programie Visual Studio. Na przykład można ustawić `InstallRoot` właściwości odwołania projektu do jednej z powyższych lokalizacji:
+Aby ustawić katalogi instalacji, można użyć okna **Właściwości** w programie Visual Studio. Na przykład można ustawić `InstallRoot` właściwość odwołania do projektu do jednej z powyższych lokalizacji:
 
-![Zainstaluj właściwości katalogu głównego](media/install-root-properties.png)
+![instalowanie właściwości głównych](media/install-root-properties.png)
 
-Spowoduje to dodanie niektórych metadanych do odpowiednich `ProjectReference` właściwości wewnątrz pliku .csproj projekt VSIX:
+Spowoduje to dodanie niektórych `ProjectReference` metadanych do odpowiedniej właściwości wewnątrz pliku csproj projektu VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -51,15 +51,15 @@ Spowoduje to dodanie niektórych metadanych do odpowiednich `ProjectReference` w
 ```
 
 > [!NOTE]
-> Możesz bezpośrednio edytować plik .csproj, jeśli użytkownik sobie tego życzy.
+> Jeśli wolisz, możesz edytować plik csproj.
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak ustawić podrzędną w ramach InstallRoot
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak ustawić ścieżkę podrzędną w obszarze InstallRoot
 
-Jeśli chcesz zainstalować podrzędną poniżej `InstallRoot`, możesz to zrobić, ustawiając `VsixSubPath` podobnie jak właściwość `InstallRoot` właściwości. Na przykład chcemy, aby nasz odwołania projektu danych wyjściowych, aby zainstalować "[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0". Firma Microsoft może łatwo to zrobić za pomocą projektanta właściwości:
+Jeśli chcesz zainstalować na podściecie pod `InstallRoot`ścieżką pod programem `VsixSubPath` , możesz `InstallRoot` to zrobić, ustawiając właściwość tak samo jak właściwość. Załóżmy na przykład, że chcemy, aby dane wyjściowe naszego odwołania do projektu zostały zainstalowane na '[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'. Możemy to zrobić łatwo z projektantem nieruchomości:
 
-![zestaw podrzędną](media/set-subpath.png)
+![ustawianie podścieżki](media/set-subpath.png)
 
-Odpowiednie zmiany w pliku csproj będzie wyglądać następująco:
+Odpowiednie zmiany .csproj będą wyglądać następująco:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -72,4 +72,4 @@ Odpowiednie zmiany w pliku csproj będzie wyglądać następująco:
 
 ## <a name="extra-information"></a>Dodatkowe informacje
 
-Zmiany projektanta właściwości są stosowane do więcej niż tylko odwołania do projektu; Możesz ustawić `InstallRoot` metadanych dla elementów wewnątrz projektu również (przy użyciu tych samych metod opisanych powyżej).
+Zmiany projektanta właściwości dotyczą więcej niż tylko odwołań do projektu; można ustawić `InstallRoot` metadane dla elementów wewnątrz projektu, jak również (przy użyciu tych samych metod opisanych powyżej).

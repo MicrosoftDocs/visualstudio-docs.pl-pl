@@ -1,33 +1,33 @@
 ---
-title: Kończenie programu | Dokumentacja firmy Microsoft
+title: Kończenie programu | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f82a8238b542ce9aa9f5489df38553410e1326d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331359"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712519"
 ---
 # <a name="terminating-a-program"></a>Kończenie programu
-W poniższej sekcji opisano przed zakończeniem jednego programu z jednego wątku.
+W poniższej sekcji opisano zakończenie pojedynczego programu za pomocą jednego wątku.
 
-## <a name="termination-process"></a>Zakończenie procesu
+## <a name="termination-process"></a>Proces rozwiązania umowy
 
-1. Wysyła DE [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) przy użyciu prawidłowego [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).
+1. DE wysyła [IDebugThreadDestroyEvent2](../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) z prawidłowym [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md).
 
-2. Wysyła DE [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) przy użyciu prawidłowego [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).
+2. DE wysyła [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) z prawidłowym [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md).
 
-   IDE przechodzi do trybu projektowania. Aparat debugowania lub wywołania w środowisku uruchomieniowym [IDebugPortNotify2::RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) usunięcie programu z portu.
+   IDE przechodzi w tryb projektowania. Aparat debugowania lub środowisko pracy wywołuje [IDebugPortNotify2::RemoveProgramNode,](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) aby usunąć program z portu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wywoływanie zdarzeń debugera](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccDirDiff | Dokumentacja firmy Microsoft
+title: Funkcja SccDirDiff | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d207a171acba4127849cd479a1049afafa8492
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351899"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701014"
 ---
-# <a name="sccdirdiff-function"></a>Funkcja SccDirDiff
-Funkcja ta wyświetla różnice między bieżącym katalogu lokalnym na dysku klienta i odpowiedniego projektu objętego kontrolą źródła.
+# <a name="sccdirdiff-function"></a>SccDirDiff, funkcja
+Ta funkcja wyświetla różnice między bieżącym katalogiem lokalnym na dysku klienckim a odpowiednim projektem pod kontrolą źródła.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,55 +35,55 @@ SCCRTN SccDirDiff(
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-[in] Struktura kontekście wtyczki kontroli źródła.
+[w] Struktura kontekstu wtyczki formantu źródła.
 
- hWnd
+ Hwnd
 
-[in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.
+[w] Dojście do okna IDE, którego wtyczka formantu źródła może używać jako element nadrzędny dla wszystkich okien dialogowych, które udostępnia.
 
- lpDirName
+ lpDirName (nazwa lpDirName)
 
-[in] W pełni kwalifikowana ścieżka do katalogu lokalnego, dla których chcesz wyświetlić różnica visual.
+[w] W pełni kwalifikowana ścieżka do katalogu lokalnego, dla którego ma być ekwiwalnia różnicy wizualnej.
 
- Flagidw
+ Dwflags
 
-[in] Polecenie flagi (zobacz uwagi sekcji).
+[w] Flagi poleceń (patrz sekcja Uwagi).
 
- pvOptions
+ pvOpcje
 
-[in] Opcje plug-określonych kontroli źródła.
+[w] Opcje specyficzne dla wtyczki sterowania źródłem.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Katalogu na dysku jest taka sama jak projekt w kontroli kodu źródłowego.|
-|SCC_I_FILESDIFFER|Katalogu na dysku jest inny niż projekt w kontroli kodu źródłowego.|
-|SCC_I_RELOADFILE|Pliku lub projektu wymaga ponownego załadowania.|
+|SCC_OK|Katalog na dysku jest taki sam jak projekt w kontroli kodu źródłowego.|
+|SCC_I_FILESDIFFER|Katalog na dysku różni się od projektu w kontroli kodu źródłowego.|
+|SCC_I_RELOADFILE|Plik lub projekt musi zostać ponownie załadowany.|
 |SCC_E_FILENOTCONTROLLED|Katalog nie jest pod kontrolą kodu źródłowego.|
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Wystąpił nieokreślony błąd.|
+|SCC_E_ACCESSFAILURE|Wystąpił problem z dostępem do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacją. Zaleca się ponowną próbę.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Niespecyficzna awaria.|
 |SCC_E_FILENOTEXIST|Nie można odnaleźć katalogu lokalnego.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja jest używana w celu poinstruowania wtyczka do kontroli źródła aby wyświetlać użytkownikowi listę zmian w określonym katalogu. Dodatek otwiera osobnym oknie w formacie własnego wyboru, aby wyświetlić różnice w katalogu użytkownika na dysku i odpowiedniego projektu pod kontrolą wersji.
+ Ta funkcja służy do poinstruowania wtyczki formantu źródła, aby wyświetlała użytkownikowi listę zmian w określonym katalogu. Wtyczka otwiera własne okno, w wybranym formacie, aby wyświetlić różnice między katalogiem użytkownika na dysku a odpowiednim projektem pod kontrolą wersji.
 
- Jeśli wtyczka obsługuje porównania katalogów w ogóle, nawet jeśli nie są obsługiwane opcje "szybkie diff" musi obsługiwać porównania katalogów na podstawie nazwy pliku.
+ Jeśli wtyczka obsługuje porównanie katalogów w ogóle, musi obsługiwać porównanie katalogów na podstawie nazwy pliku, nawet jeśli opcje "quick-diff" nie są obsługiwane.
 
 |`dwFlags`|Interpretacja|
 |---------------|--------------------|
-|SCC_DIFF_IGNORECASE|Porównanie bez uwzględniania wielkości liter (mogą być używane do szybkiego diff lub wizualizacji).|
-|SCC_DIFF_IGNORESPACE|Ignoruje biały znak (mogą być używane do szybkiego diff lub wizualizacji).|
-|SCC_DIFF_QD_CONTENTS|Jeśli jest obsługiwany przez wtyczka do kontroli źródła, dyskretnie porównuje katalogu bajt po bajcie.|
-|SCC_DIFF_QD_CHECKSUM|Jeśli obsługiwane przez dodatek typu plug-in, dyskretnie porównuje katalogu za pomocą sumy kontrolnej lub, jeśli nie jest obsługiwane, powraca do SCC_DIFF_QD_CONTENTS.|
-|SCC_DIFF_QD_TIME|Jeśli obsługiwane przez dodatek typu plug-in, dyskretnie porównuje katalogiem, za pośrednictwem jego sygnatura czasowa lub, jeśli nie jest obsługiwane, powraca na SCC_DIFF_QD_CHECKSUM lub SCC_DIFF_QD_CONTENTS.|
+|SCC_DIFF_IGNORECASE|Porównanie bez uwzględniania wielkości liter (może być używane do szybkiego różnicy lub wizualnego).|
+|SCC_DIFF_IGNORESPACE|Ignoruje biały znak (może być używany do szybkiego różnicowania lub wizualnego).|
+|SCC_DIFF_QD_CONTENTS|Jeśli jest obsługiwana przez wtyczkę formantu źródła, dyskretnie porównuje katalog, bajt po bajcie.|
+|SCC_DIFF_QD_CHECKSUM|Jeśli jest obsługiwany przez wtyczkę, po dyskretnie porównuje katalog za pomocą sumy kontrolnej lub, jeśli nie jest obsługiwany, wraca do SCC_DIFF_QD_CONTENTS.|
+|SCC_DIFF_QD_TIME|Jeśli jest obsługiwany przez wtyczkę, po cichu porównuje katalog za pomocą sygnatury czasowej lub, jeśli nie jest obsługiwany, powraca SCC_DIFF_QD_CHECKSUM lub SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
-> Ta funkcja używa tego samego flag poleceń jako [SccDiff](../extensibility/sccdiff-function.md). Jednak nie obsługuje operacji "szybkie diff" w przypadku katalogów wybrać wtyczki kontroli źródła.
+> Ta funkcja używa tych samych flag poleceń co [SccDiff](../extensibility/sccdiff-function.md). Jednak wtyczka kontroli źródła może zdecydować się nie obsługiwać operacji "quick-diff" dla katalogów.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)

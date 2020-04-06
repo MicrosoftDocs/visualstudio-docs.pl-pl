@@ -1,45 +1,45 @@
 ---
-title: Okna dokumentów | Microsoft Docs
+title: Dokument Windows | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d29d64090320a8f62491209773145c024564efa
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 711033a4ad2e782ecbe509595266426d186bed8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186629"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708516"
 ---
 # <a name="document-windows"></a>Okna dokumentów
-W programie Visual Studio *okno dokumentu* jest oknem podrzędnym z ramkami, które jest skojarzone z oknem interfejsu wielu dokumentów (MDI). Okna dokumentów są zwykle używane do wyświetlania i modyfikacji kodu źródłowego lub tekstu, ale mogą również hostować inne typy funkcjonalne. Okna dokumentów:
+W programie Visual Studio *okno dokumentu* jest okno podrzędne w ramce, które jest skojarzone z oknem interfejsu wielu dokumentów (MDI). Okna dokumentów są zwykle używane do wyświetlania i modyfikowania kodu źródłowego lub tekstu, ale mogą również obsługiwać inne typy funkcjonalne. Okna dokumentów:
 
-- Może być zorganizowany w oddzielnych lub pionowych grupach kart w nadrzędnym pliku MDI, aby można było przeglądać wiele plików jednocześnie.
+- Można organizować w oddzielnych poziomych lub pionowych grupach kart w nadrzędnym mdi, tak aby można było wyświetlać wiele plików w tym samym czasie.
 
-- Można zadokować w dowolnej kolejności w nadrzędnym MDI.
+- Może być zadokowany w dowolnej kolejności w nadrzędnym MDI.
 
-- Mogą być swobodne.
+- Może być swobodnie pływał.
 
-- Są połączone w kolejności tabulacji z innymi oknami MDI.
+- Są połączone w zakładce, aby inne okna MDI.
 
-  Polecenia służące do grupowania, dokowania i zmiennoprzecinkowej można znaleźć w menu skrótów dla karty okna dokumentu.
+  Polecenia grupowania, dokowania i przestawne można znaleźć w menu skrótów karty okna dokumentu.
 
-  Aby uzyskać więcej informacji na temat zachowania okna w programie Visual Studio, zobacz [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md).
+  Aby uzyskać więcej informacji na temat zachowania okien w programie Visual Studio, zobacz [Dostosowywanie układów okien](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ## <a name="document-window-implementation"></a>Implementacja okna dokumentu
- Okna dokumentów są tworzone przez implementację edytora. Interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> tworzy okna dokumentów w ramach tworzenia wystąpienia edytora. Aby uzyskać więcej informacji, zobacz [starsze interfejsy w edytorze](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015).
+ Okna dokumentów są tworzone przez implementowanie edytora. Interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> tworzy okna dokumentu w ramach tworzenia wystąpienia edytora. Aby uzyskać więcej informacji, zobacz [Starsze interfejsy w edytorze](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015).
 
 > [!NOTE]
-> Aby zapewnić punkty nawigacji do tyłu i do przodu w oknie, zaimplementuj interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>. Edytor tekstu używa znaczników tekstowych do identyfikowania punktów nawigacji w dokumencie.
+> Aby zapewnić wsteczne i do przodu punkty <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> nawigacyjne w oknie, zaimplementuj interfejs. Edytor tekstu używa znaczników tekstowych do identyfikowania punktów nawigacyjnych w dokumencie.
 
-## <a name="the-running-document-table"></a>Uruchomiona tabela dokumentów
- IDE korzysta z uruchomionej tabeli dokumentu (RDT) w celu śledzenia stanu każdego okna dokumentu. RDT jest mechanizmem, za pomocą którego okna dokumentów są powiadamiane o zdarzeniach, na przykład po zamknięciu rozwiązania lub edytowaniu pliku. Aby uzyskać więcej informacji, zobacz [Uruchamianie tabeli dokumentów](../../extensibility/internals/running-document-table.md).
+## <a name="the-running-document-table"></a>Tabela Uruchomiony dokument
+ IDE używa uruchomionej tabeli dokumentów (RDT) do śledzenia stanu każdego okna dokumentu. RDT jest mechanizm, za pomocą którego okna dokumentu są powiadamiane o zdarzeniach, takich jak gdy rozwiązanie jest zamknięty lub gdy plik został edytowany. Aby uzyskać więcej informacji, zobacz [Uruchamianie tabeli dokumentów](../../extensibility/internals/running-document-table.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Opóźnione ładowanie dokumentu](../../extensibility/internals/delayed-document-loading.md)
+## <a name="see-also"></a>Zobacz też
+- [Opóźnione ładowanie dokumentów](../../extensibility/internals/delayed-document-loading.md)

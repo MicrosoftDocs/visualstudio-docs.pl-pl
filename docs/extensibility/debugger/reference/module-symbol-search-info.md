@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c521ebe321813013b83a951d4d2aa5f60fd1646d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346618"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714241"
 ---
-# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
+# <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-Zawiera informacje o stanie dotyczące ścieżki wyszukiwania symboli, które zostały przeszukiwane.
+Zawiera informacje o stanie przeszukiwanych ścieżek wyszukiwania symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Elementy członkowskie
 
 `dwValidFields`\
-Kombinacja flag z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) wyliczenie opisujące rodzaju informacje o wyszukiwaniu opisane w tej strukturze.
+Kombinacja flag z wyliczenia [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) określająca rodzaj informacji wyszukiwania opisanych w tej strukturze.
 
 `bstrVerboseSearchInfo`\
-Ścieżka wyszukiwania i wyników połączonych w jeden ciąg.
+Ścieżka wyszukiwania i wyniki połączone w jeden ciąg.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta struktura jest zwracany z wywołania [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metody.
+Ta struktura jest zwracana z wywołania [getSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metody.
 
-Jeśli `bstrVerboseSearchInfo` pole nie jest puste, a następnie zawiera listę ścieżek przeszukiwane i wyniki tego wyszukiwania. Lista jest formatowana ze ścieżką, w którym następuje wielokropek ("..."), a następnie wynik. W przypadku więcej niż jedną parę wynik ścieżki każdej pary jest oddzielony przez parę "\r\n" (powrót karetki return/wysuw wiersza). Wzorzec wygląda następująco:
+Jeśli `bstrVerboseSearchInfo` pole nie jest puste, zawiera listę przeszukiwanych ścieżek i wyniki tego wyszukiwania. Lista jest sformatowana ze ścieżką, po której następuje wielokropek ("..."), po którym następuje wynik. Jeśli istnieje więcej niż jedna para wyników ścieżki, każda para jest oddzielona parą "\r\n" (carriage-return/linefeed). Wzór wygląda następująco:
 
-\<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>
+\<ścieżka>... \<> ścieżki>\r\n...\< \<> ścieżki>\r\n...\< \<> wynik
 
-Należy pamiętać, że ostatni wpis nie ma sekwencji \r\n.
+Należy zauważyć, że ostatni wpis nie ma sekwencji \r\n.
 
-Poniżej przedstawiono możliwe `bstrVerboseSearchInfo` ciąg, który została wysłana na standardowe wyjście.
+Oto możliwy `bstrVerboseSearchInfo` ciąg, który został wysłany do standardu out.
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -71,13 +71,13 @@ Poniżej przedstawiono możliwe `bstrVerboseSearchInfo` ciąg, który została w
 
 ## <a name="requirements"></a>Wymagania
 
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

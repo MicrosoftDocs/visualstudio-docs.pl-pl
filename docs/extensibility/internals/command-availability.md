@@ -1,59 +1,59 @@
 ---
-title: Polecenie Dostępność | Dokumentacja firmy Microsoft
+title: Dostępność poleceń | Dokumenty firmy Microsoft
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
 - menu items, visibility contexts
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5087e5f7958f9abe46e0caeb2eb03e21285e4da7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dca47d9ed9968c101e3b6b859b51c1cd8d7404db
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338601"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709696"
 ---
 # <a name="command-availability"></a>Dostępność poleceń
 
-Kontekst programu Visual Studio Określa, jakie polecenia są dostępne. Kontekst można zmienić w zależności od bieżącego projektu, bieżącego edytora, pakietów VSPackage, które są ładowane i inne aspekty zintegrowanego środowiska programistycznego (IDE).
+Kontekst programu Visual Studio określa, które polecenia są dostępne. Kontekst może ulec zmianie w zależności od bieżącego projektu, bieżącego edytora, pakietów VSPackages, które są ładowane i innych aspektów zintegrowanego środowiska programistycznego (IDE).
 
-## <a name="command-contexts"></a>Konteksty polecenia
+## <a name="command-contexts"></a>Konteksty poleceń
 
-Następujących kontekstów się polecenia są najbardziej rozpowszechnione:
+Następujące konteksty polecenia są najczęściej:
 
-- IDE: Polecenia dostarczane przez środowisko IDE, są zawsze dostępne.
+- IDE: Polecenia dostarczone przez IDE są zawsze dostępne.
 
-- {1&gt;VSPackage&lt;1}. Pakietów VSPackage można zdefiniować, kiedy są polecenia mają być wyświetlane lub ukryte.
+- VSPackage: VSPackages można zdefiniować, kiedy polecenia mają być wyświetlane lub ukryte.
 
-- Projekt: Projekt polecenia pojawiają się tylko dla obecnie wybranego projektu.
+- Projekt: Polecenia projektu są wyświetlane tylko dla aktualnie wybranego projektu.
 
-- Edytor: Tylko jeden z nich może być aktywny w danym momencie. Polecenia z aktywnego edytora są dostępne. Edytor ściśle współpracuje z usługą language. Usługa językowa musi przetworzyć polecenia w kontekście skojarzonego edytora.
+- Edytor: Tylko jeden edytor może być aktywny w czasie. Dostępne są polecenia z aktywnego edytora. Edytor ściśle współpracuje z usługą językową. Usługa języka musi przetwarzać jego polecenia w kontekście skojarzonego edytora.
 
-- Typ pliku: Edytor mogą ładować więcej niż jeden typ plików. Dostępne polecenia można zmienić w zależności od typu pliku.
+- Typ pliku: edytor może załadować więcej niż jeden typ pliku. Dostępne polecenia mogą się zmieniać w zależności od typu pliku.
 
-- Aktywne okno: Ostatnie aktywne okno dokumentu ustawia kontekstu interfejsu użytkownika dla powiązań klawiszy. Jednak okna narzędzi, które ma jedną tabelę powiązanie klucza, który przypomina wewnętrznej przeglądarki sieci web można również ustawić kontekstu interfejsu użytkownika. Dla systemu windows z wieloma kartami dokumentu, takich jak edytor HTML każda karta ma innego polecenia kontekstu identyfikatora GUID. Po zarejestrowaniu okna narzędzia jest zawsze dostępne na **widoku** menu.
+- Aktywne okno: Ostatnie okno aktywnego dokumentu ustawia kontekst interfejsu użytkownika dla powiązań kluczy. Jednak okno narzędzia, które ma tabelę powiązania kluczy, która przypomina wewnętrzną przeglądarkę sieci Web, może również ustawić kontekst interfejsu użytkownika. W przypadku okien dokumentów z wieloma kartami, takich jak edytor HTML, każda karta ma inny identyfikator GUID kontekstu polecenia. Po zarejestrowaniu okna narzędzia jest ono zawsze dostępne w menu **Widok.**
 
-- Kontekst interfejsu użytkownika: Konteksty interfejsu użytkownika są identyfikowane za pomocą wartości <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> klasy, na przykład <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> podczas kompilowania rozwiązania lub <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> gdy aktywny jest debugera. Wiele kontekstów interfejsu użytkownika może być aktywne w tym samym czasie.
+- Kontekst interfejsu użytkownika: konteksty interfejsu użytkownika są <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> identyfikowane przez <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> wartości klasy, na <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> przykład, gdy rozwiązanie jest budowane lub gdy debuger jest aktywny. Wiele kontekstów interfejsu użytkownika może być aktywnych w tym samym czasie.
 
-## <a name="define-custom-context-guids"></a>Zdefiniuj kontekstowego identyfikatorów GUID
+## <a name="define-custom-context-guids"></a>Definiowanie identyfikatorów GUID kontekstu niestandardowego
 
-Jeśli kontekst odpowiednie polecenia, identyfikator GUID nie jest już zdefiniowany, możesz zdefiniować w swojej pakietu VSPackage i Zaprogramuj się być aktywne lub nieaktywne zgodnie z potrzebami można kontrolować widoczność poleceń:
+Jeśli identyfikator GUID odpowiedniego kontekstu polecenia nie jest jeszcze zdefiniowany, można zdefiniować go w programie VSPackage, a następnie zaprogramować go jako aktywny lub nieaktywny zgodnie z wymaganiami do kontrolowania widoczności poleceń:
 
-1. Rejestrowanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> metody.
+1. Zarejestruj identyfikatory GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> kontekstu, wywołując metodę.
 
-2. Pobieranie stanu kontekstu identyfikatora GUID, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metody.
+2. Pobierz stan guid kontekstu, <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> wywołując metodę.
 
-3. Włączanie i wyłączanie identyfikatorów GUID w kontekście przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> metody.
+3. Włączanie i wyłączanie identyfikatorów <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> GUID kontekstu przez wywołanie metody.
 
 > [!CAUTION]
-> Upewnij się, że Twoje pakietu VSPackage nie wpływa na wszystkich kontekstach istniejące identyfikatory GUID ponieważ innych pakietów VSPackage może zależeć od ich.
+> Upewnij się, że vsPackage nie wpływa na istniejące identyfikatory GUID kontekstu, ponieważ inne VSPackages może zależeć od nich.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)
-- [Jak dodać elementy interfejsu użytkownika w pakietach VSPackage](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Obiekty kontekstu zaznaczenia](../../extensibility/internals/selection-context-objects.md)
+- [Jak vspackages dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

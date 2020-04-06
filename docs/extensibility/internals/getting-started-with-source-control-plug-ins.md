@@ -1,46 +1,46 @@
 ---
-title: Wprowadzenie do wtyczek kontroli kodu źródłowego | Dokumentacja firmy Microsoft
+title: Wprowadzenie do wtyczek kontroli źródła | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting started
 - getting started, source control plug-ins
 ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71645c7e5334b24c294265a60581cc4a00eec8aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328945"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708346"
 ---
-# <a name="get-started-with-source-control-plug-ins"></a>Wprowadzenie do wtyczek kontroli kodu źródłowego
-Aby utworzyć kontroli źródła wtyczek, należy utworzyć bibliotekę DLL, która implementuje funkcje zdefiniowane w interfejsie API wtyczki kontroli źródła, a następnie zarejestruj plik DLL za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby stał się dostępny do użytku w kontroli wersji kodu źródłowego.
+# <a name="get-started-with-source-control-plug-ins"></a>Wprowadzenie do wtyczek kontroli źródła
+Aby utworzyć wtyczkę formantu źródła, należy utworzyć bibliotekę DLL, która implementuje funkcje zdefiniowane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsie API wtyczki kontroli źródła, a następnie zarejestrować bibliotekę DLL, aby udostępnić ją do użycia w kontroli wersji kodu źródłowego.
 
- Trzy wersje interfejsu API wtyczki kontroli źródła (w wersji 1.1 i 1.2, 1.3) są dostępne dla wtyczek kontroli kodu źródłowego. API wtyczki kontroli źródła opisane tutaj jest w wersji 1.3. Została zaprojektowana pod kątem pełnej zgodności z wtyczek kontroli kodu źródłowego obsługi wersji 1.1 i 1.2. [What's new in źródła kontrolki wtyczki interfejsu API w wersji 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) szczegółowo opisano nowe funkcje, które są obsługiwane w najnowszej wersji interfejsu API wtyczki kontroli źródła.
+ Trzy wersje interfejsu API dodatku Plug-in dodatku Source Control (wersje 1.1, 1.2 i 1.3) są dostępne dla wtyczek kontroli źródła. Udokumentowany w tym miejscu interfejs API wtyczki kontroli źródła jest w wersji 1.3. Został zaprojektowany tak, aby był w pełni kompatybilny z wtyczkami kontroli źródła obsługującymi wersje 1.1 i 1.2. Co nowego w sekcji [Wtyczka interfejsu API dodatku 1.3 wtyczki kontroli źródła w wersji 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) wyszczepuje nowe funkcje obsługiwane w najnowszej wersji interfejsu API wtyczki kontroli źródła.
 
 ## <a name="in-this-section"></a>W tej sekcji
-- [Instrukcje: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Jak: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 
- W tym artykule opisano, jak utworzyć wpisy rejestru, które są wymagane do wtyczki kontroli źródła biblioteki DLL.
+ W tym artykule opisano sposób tworzenia wpisów rejestru, które są wymagane do podłączenia biblioteki DLL formantu źródła.
 
-- [What's new in źródła kontrolki wtyczki interfejsu API w wersji 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)
+- [Co nowego w interfejsie API wtyczki kontroli źródła w wersji 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)
 
- Krótkie omówienie zmiany wprowadzone do interfejsu API wtyczki kontroli źródła w wersji 1.3.
+ Zawiera krótkie omówienie zmian wprowadzonych w interfejsie API dodatku dodatku Dodatku Kontroli źródła w wersji 1.3.
 
-- [What's new in źródła kontrolki wtyczki API wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Co nowego w interfejsie API wtyczki kontroli źródła w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
 
- Krótkie omówienie zmiany wprowadzone do interfejsu API wtyczki kontroli źródła w wersji 1.2.
+ Zawiera krótkie omówienie zmian wprowadzonych w interfejsie API dodatku dodatku Dodatku Kontroli źródła w wersji 1.2.
 
-## <a name="related-sections"></a>Sekcje pokrewne
-- [Wtyczek kontroli kodu źródłowego](../../extensibility/source-control-plug-ins.md)
+## <a name="related-sections"></a>Powiązane sekcje
+- [Wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md)
 
  Zawiera pełną listę wszystkich elementów w interfejsie API wtyczki kontroli źródła.
 
-- [Tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)
+- [Tworzenie wtyczki formantu źródła](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- Definiuje zestaw SDK wtyczki kontroli źródła i opisuje dołączone zasoby.
+ Definiuje sdk wtyczki kontroli źródła i opisuje dołączone zasoby.

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Dokumentacja firmy Microsoft
+title: IDebugSymbolProvider::GetNextAddress | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNextAddress method
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358abe84987b9c7c1a5a1df36fdf480f62ee64b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9b314ab7006d6bbe65136451aeee6c5200cf7980
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347530"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719193"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Pobiera adres debugowania, występującego z adresu podanego debugowania w metodzie.
+Pobiera adres debugowania, który następuje podany adres debugowania w metodzie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,16 +45,16 @@ int GetNextAddress( 
 
 ## <a name="parameters"></a>Parametry
 `pAddress`\
-[in] Podany adres debugowania.
+[w] Podany adres debugowania.
 
 `fStatementOnly`\
-[in] W przypadku opcji TRUE ogranicza adresy debugowania do pojedynczej instrukcji.
+[w] Jeśli true, ogranicza adresy debugowania do pojedynczej instrukcji.
 
 `ppAddress`\
-[out] Zwraca następny adres debugowania.
+[na zewnątrz] Zwraca następny adres debugowania.
 
 ## <a name="return-value"></a>Wartość zwracana
  Zwraca prawidłową `HRESULT`, zazwyczaj S_OK.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

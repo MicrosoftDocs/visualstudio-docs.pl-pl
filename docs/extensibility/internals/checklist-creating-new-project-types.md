@@ -1,63 +1,63 @@
 ---
-title: 'Lista kontrolna: tworzenie nowych typów projektów | Microsoft Docs'
+title: 'Lista kontrolna: Tworzenie nowych typów projektów | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 048f2f61e080230113cd303a202c3819d2c58710
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5963083239571af43012e1a79576ee80846d80bd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186625"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80709752"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista kontrolna: tworzenie nowych typów projektów
-Aby utworzyć nowy typ projektu, należy wykonać kilka zadań. Poniższa lista kontrolna zawiera Przewodnik po tych zadaniach:
+Aby utworzyć nowy typ projektu, należy wykonać kilka zadań. Poniższa lista kontrolna zawiera przewodnik po tych zadaniach:
 
-1. Zaprojektuj funkcjonalność dla nowego typu projektu. Aby uzyskać więcej informacji, zobacz [decyzje projektowe typu projektu](../../extensibility/internals/project-type-design-decisions.md).
+1. Zaprojektuj funkcjonalność dla nowego typu projektu. Aby uzyskać więcej informacji, zobacz [Decyzje dotyczące projektowania typu projektu](../../extensibility/internals/project-type-design-decisions.md).
 
-2. Określ, które edytory są używane do kodu i innych elementów projektu. Można korzystać z edytorów podstawowych lub standardowych lub można tworzyć i używać edytorów specyficznych dla projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych edytorów i projektantów](../../extensibility/creating-custom-editors-and-designers.md) oraz [instrukcje: otwieranie edytorów specyficznych dla projektu](../../extensibility/how-to-open-project-specific-editors.md).
+2. Określ, które edytory są używane dla kodu i innych elementów projektu. Można użyć podstawowych lub standardowych edytorów lub można tworzyć i używać edytorów specyficznych dla projektu. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych edytorów i projektantów](../../extensibility/creating-custom-editors-and-designers.md) oraz [Jak: Otwórz edytory specyficzne dla projektu](../../extensibility/how-to-open-project-specific-editors.md).
 
-3. Określ poziom uczestnictwa elementów projektu w **Widok klasy** i **Przeglądarka obiektów**. Aby uzyskać więcej informacji, zobacz [Obsługa narzędzi do przeglądania symboli](../../extensibility/internals/supporting-symbol-browsing-tools.md).
+3. Określ poziom uczestnictwa, jaki będą miały elementy projektu w **widoku klasy** i **przeglądarce obiektów**. Aby uzyskać więcej informacji, zobacz [Narzędzia do przeglądania symboli .](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
-4. Utwórz nowe klasy w oparciu o decyzje projektowe, które zostały wcześniej wykonane dla projektu i elementów projektu.
+4. Wywodź nowe klasy na podstawie decyzji projektowych, które zostały wcześniej podjęte dla elementów projektu i projektu.
 
 5. Napisz kod dla następujących składników typu projektu:
 
-    - Fabryka projektów do zarządzania tworzeniem nowych projektów i otwierania istniejących projektów. Aby uzyskać więcej informacji, zobacz [Tworzenie wystąpień projektu przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
+    - Fabryka projektów, do zarządzania tworzeniem nowych projektów i otwieraniem istniejących projektów. Aby uzyskać więcej informacji, zobacz [Tworzenie wystąpień projektu przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Obsługa poleceń i hierarchii projektu. Aby uzyskać więcej informacji, zobacz [Korzystanie z klas projektów HierUtil7 do implementowania typuC++projektu ()](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementów modelu projektu](../../extensibility/internals/elements-of-a-project-model.md), [głównych składników modelu projektu](../../extensibility/internals/project-model-core-components.md)i [MenuCommands a OleMenuCommands](/visualstudio/extensibility/menucommands-vs-olemenucommands?view=vs-2015).
+    - Hierarchia projektu i obsługa poleceń. Aby uzyskać więcej informacji, zobacz [Używanie klas projektu HierUtil7 do zaimplementowania typu projektu (C++),](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346) [elementów modelu projektu,](../../extensibility/internals/elements-of-a-project-model.md) [podstawowych składników modelu projektu](../../extensibility/internals/project-model-core-components.md)i [MenuCommands vs. OleMenuCommands](/visualstudio/extensibility/menucommands-vs-olemenucommands?view=vs-2015).
 
-    - Zarządzanie elementami projektu, w tym dodawanie projektu do okna dialogowego **Nowy projekt** . Aby uzyskać więcej informacji, zobacz [Dodawanie szablonów projektu i elementów projektu](../../extensibility/internals/adding-project-and-project-item-templates.md) oraz [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md).
+    - Zarządzanie elementami projektu, w tym dodawanie projektu do okna dialogowego **Nowy projekt.** Aby uzyskać więcej informacji, zobacz [Dodawanie szablonów elementów projektu i projektu](../../extensibility/internals/adding-project-and-project-item-templates.md) oraz [Rejestrowanie szablonów projektów i towarów](../../extensibility/internals/registering-project-and-item-templates.md).
 
-    - Trwałość stanu projektu i poszczególnych elementów. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md). Aby uzyskać informacje o trwałości informacji o rozwiązaniach, zobacz [rozwiązania](../../extensibility/internals/solutions-overview.md).
+    - Trwałość stanu projektu i poszczególnych elementów. Aby uzyskać więcej informacji, zobacz [Otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md). Aby uzyskać trwałość informacji o roztworze, zobacz [Rozwiązania](../../extensibility/internals/solutions-overview.md).
 
-    - Właściwości niezależne od konfiguracji, które mają być wyświetlane w okno Właściwości. Aby uzyskać więcej informacji, zobacz [rozszerzając właściwości](../../extensibility/internals/extending-properties.md).
+    - Właściwości niezależne od konfiguracji do wyświetlenia w oknie Właściwości. Aby uzyskać więcej informacji, zobacz [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md).
 
-    - Właściwości konfiguracji projektu zgodnie z zaimplementowanymi na stronach właściwości, aby pokazać właściwości zależne od konfiguracji. Aby uzyskać więcej informacji, zobacz [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md).
+    - Właściwości konfiguracji projektu zaimplementowane na stronach właściwości, aby wyświetlić właściwości zależne od konfiguracji. Aby uzyskać więcej informacji, zobacz [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md).
 
-    - Wyliczanie danych wyjściowych dla wdrożenia. Aby uzyskać więcej informacji, zobacz [Konfiguracja projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md).
+    - Wyliczanie danych wyjściowych do wdrożenia. Aby uzyskać więcej informacji, zobacz [Konfiguracja projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md).
 
-    - Usługi uruchomieniowe projektu. Aby uzyskać więcej informacji, zobacz [elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md) i [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md).
+    - Usługi uruchamiania projektu. Aby uzyskać więcej informacji, zobacz [Elementy modelu projektu](../../extensibility/internals/elements-of-a-project-model.md) i podstawowe składniki modelu [projektu](../../extensibility/internals/project-model-core-components.md).
 
-    - Obiekty lub klasy pochodne `IDispatch`, dostępne do automatyzacji.
+    - Obiekty lub klasy pochodzące z `IDispatch`, dostępne dla automatyzacji.
 
-    - Pliki tabeli poleceń XML ( *. vsct*). Aby uzyskać więcej informacji, zobacz [pliki tabeli poleceń programu Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - tabela poleceń XML (*.vsct*). Aby uzyskać więcej informacji, zobacz [Pliki tabeli poleceń programu Visual Studio (vsct).](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 
-6. Przetestuj, Debuguj i uruchamiaj typ projektu.
+6. Przetestuj, debuguj i uruchom typ projektu.
 
-7. Aby wyświetlić projekt na karcie **projekt** okna dialogowego **Dodaj odwołanie** , należy ustawić `VARIANT_TRUE` jako wartość dla `VSHPROPID_ShowProjInSolutionPage`. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
+7. Wyświetlanie projektu na karcie **Projekt** w oknie dialogowym Dodawanie `VSHPROPID_ShowProjInSolutionPage` **odwołania** przez ustawienie `VARIANT_TRUE` jako wartości dla programu . Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Utwórz plik Instalatora Microsoft (*MSI*) na potrzeby instalacji pakietów VSPackage. Aby uzyskać więcej informacji, zobacz [Install pakietów VSPackage with Instalator Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [register the Project Type](../../extensibility/internals/registering-a-project-type.md)and [pakietów VSPackage](../../extensibility/internals/vspackages.md).
+8. Utwórz plik Instalatora Microsoft *(msi)* do zainstalowania pakietu VSPackages. Aby uzyskać więcej informacji, zobacz [Instalowanie pakietów VSPackages w Instalatorze Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [Rejestrowanie typu projektu](../../extensibility/internals/registering-a-project-type.md)i [VSPackages](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Hierarchie w programie Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Kiedy tworzyć typy projektów](../../extensibility/internals/when-to-create-project-types.md)
 - [Tworzenie typów projektów](../../extensibility/internals/creating-project-types.md)

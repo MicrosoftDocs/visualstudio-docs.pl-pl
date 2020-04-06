@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Microsoft Docs
+title: OPTNAMECHANGEPFN | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6107f48f4680cef9cbb825f4d760f3f0bac1ec1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336228"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702250"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Jest to określone w wywołaniu do funkcji wywołania zwrotnego [SccSetOption](../extensibility/sccsetoption-function.md) (przy użyciu opcji `SCC_OPT_NAMECHANGEPFN`) i jest używany do komunikowania się nazwa zmiany wprowadzone przez kontroli źródła wtyczki powrót środowiska IDE.
+Jest to funkcja wywołania zwrotnego określona w wywołaniu `SCC_OPT_NAMECHANGEPFN` [SccSetOption](../extensibility/sccsetoption-function.md) (przy użyciu opcji) i służy do przekazywania zmian nazw wprowadzonych przez wtyczkę formantu źródła z powrotem do IDE.
 
-## <a name="signature"></a>Podpis
+## <a name="signature"></a>Sygnatura
 
 ```cpp
 typedef void (*OPTNAMECHANGEPFN)(
@@ -35,24 +35,24 @@ typedef void (*OPTNAMECHANGEPFN)(
 ## <a name="parameters"></a>Parametry
  pvCallerData
 
-[in] Wartość użytkownika określonego w poprzednie wywołanie [SccSetOption](../extensibility/sccsetoption-function.md) (przy użyciu opcji `SCC_OPT_USERDATA`).
+[w] Wartość użytkownika określona w poprzednim wywołaniu [opcji SccSetOption](../extensibility/sccsetoption-function.md) (przy użyciu opcji `SCC_OPT_USERDATA`).
 
  pszOldName
 
-[in] Oryginalna nazwa pliku.
+[w] Oryginalna nazwa pliku.
 
  pszNewName
 
-[in] Nazwa pliku została zmieniona na.
+[w] Nazwa pliku została zmieniona na.
 
 ## <a name="return-value"></a>Wartość zwracana
  Brak.
 
 ## <a name="remarks"></a>Uwagi
- Po zmianie nazwy pliku podczas operacji kontroli źródła, wtyczka do kontroli źródła może generować powiadomienia o zmianie nazwy przez to wywołanie zwrotne środowiska IDE programu.
+ Jeśli nazwa pliku zostanie zmieniona podczas operacji kontroli źródła, wtyczka kontroli źródła może powiadomić IDE o zmianie nazwy za pośrednictwem tego wywołania zwrotnego.
 
- Jeśli środowisko IDE nie obsługuje tego wywołania zwrotnego, nie będzie wywoływać [SccSetOption](../extensibility/sccsetoption-function.md) go określić. Jeśli wtyczka nie obsługuje tego wywołania zwrotnego, to zostanie zwrócona `SCC_E_OPNOTSUPPORTED` z `SccSetOption` działają w przypadku IDE podejmuje próbę ustawienia wywołania zwrotnego.
+ Jeśli IDE nie obsługuje tego wywołania zwrotnego, nie będzie wywoływać [SccSetOption,](../extensibility/sccsetoption-function.md) aby go określić. Jeśli dodatek nie obsługuje tego wywołania zwrotnego, `SCC_E_OPNOTSUPPORTED` `SccSetOption` powróci z funkcji, gdy IDE próbuje ustawić wywołanie zwrotne.
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje wywołania zwrotnego implementowane przez środowisko IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje wywołania zwrotnego zaimplementowane przez IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

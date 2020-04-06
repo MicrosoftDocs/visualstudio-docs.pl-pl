@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostId | Dokumentacja firmy Microsoft
+title: IDebugProgramHost2::GetHostId | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostId
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94ed7ae7b46fc9fbc3a37472bd3464f30c35acf8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6e02a78350fead837d4540c435b97a423dfdd471
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325194"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722321"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
-Pobiera identyfikator procesu hostingu tego programu.
+Pobiera identyfikator procesu hosting tego programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetHostId( 
 
 ## <a name="parameters"></a>Parametry
 `pdwId`\
-[out w] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która jest wypełniane informacjami identyfikator procesu.
+[w, na zewnątrz] [Struktura AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) wypełniona informacjami o identyfikatorze procesu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

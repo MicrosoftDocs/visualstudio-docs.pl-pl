@@ -1,40 +1,40 @@
 ---
-title: Struktura pakietu VSPackage (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
+title: VSPackage Structure (Kontrola źródła VSPackage) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d609efe52955dba53b8c8890a6fcb44bb7f3f352
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332754"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80703809"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (pakiet VSPackage kontroli kodu źródłowego)
 
-Zestaw SDK pakietu kontroli źródła zawiera wytyczne dotyczące tworzenia pakietu VSPackage, który zezwala na implementujący kontroli źródła zintegrować wykorzystywaniu funkcji kontroli źródła przy użyciu środowiska Visual Studio. Pakietu VSPackage jest składnik modelu COM, który zazwyczaj jest ładowany przez program Visual Studio zintegrowane środowisko programistyczne (IDE) opartych na usługach, które są anonsowane przez pakiet w swoich wpisach rejestru na żądanie. Każdego pakietu VSPackage musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Pakietu VSPackage zwykle korzysta z usług oferowanych przez środowiska IDE programu Visual Studio i proffers niektórych usług własnych.
+Pakiet pakietu kontroli źródła SDK zawiera wskazówki dotyczące tworzenia vspackage, które umożliwiają implementator kontroli źródła do integracji jego funkcji kontroli źródła ze środowiskiem programu Visual Studio. VSPackage jest składnikiem COM, który jest zazwyczaj ładowany na żądanie przez zintegrowane środowisko programistyczne programu Visual Studio (IDE) na podstawie usług, które są anonsowane przez pakiet w jego wpisów rejestru. Każdy VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>musi zaimplementować . VsPackage zazwyczaj zużywa usługi oferowane przez ide programu Visual Studio i oferuje niektóre usługi własne.
 
-Pakietu VSPackage deklaruje jego elementy menu i ustanawia domyślny stan elementu przy użyciu pliku vsct. Środowiska IDE programu Visual Studio Wyświetla elementy menu w tym stanie do momentu załadowania pakietu VSPackage. Następnie VSPackage implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda jest wywoływana, aby włączyć lub wyłączyć elementy menu.
+VsPackage deklaruje swoje elementy menu i ustanawia domyślny stan elementu za pośrednictwem pliku vsct. Ide programu Visual Studio wyświetla elementy menu w tym stanie, dopóki nie zostanie załadowany vspackage. Następnie vsPackage implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody jest wywoływana, aby włączyć lub wyłączyć elementy menu.
 
-## <a name="source-control-package-characteristics"></a>Właściwości pakietu kontroli źródła
+## <a name="source-control-package-characteristics"></a>Charakterystyka pakietu kontroli źródła
 
-Pakietu VSPackage kontroli źródła jest głęboko zintegrowana w programie Visual Studio. Semantyka pakietu VSPackage obejmują:
+Formant źródłowy VSPackage jest głęboko zintegrowany z programem Visual Studio. Semantyka VSPackage obejmuje:
 
-- Interfejs do zaimplementowania bycia pakietu VSPackage ( `IVsPackage` interfejsu)
+- Interfejs, który ma być zaimplementowany `IVsPackage` ze względu na to, że jest VSPackage (interfejs)
 
-- Implementacja poleceń interfejsu użytkownika (pliku vsct i stosowania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu)
+- Implementacja polecenia interfejsu użytkownika (plik vsct i implementacja <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu)
 
-- Rejestracja pakietu VSPackage przy użyciu programu Visual Studio.
+- Rejestracja vspackage z visual studio.
 
-Kontrola źródła pakietu VSPackage muszą komunikować się z innymi jednostkami programu Visual Studio:
+Formant źródłowy VSPackage musi komunikować się z tymi innymi encjami programu Visual Studio:
 
 - Projekty
 
@@ -44,9 +44,9 @@ Kontrola źródła pakietu VSPackage muszą komunikować się z innymi jednostka
 
 - Windows
 
-- Uruchamianie tabeli dokumentu
+- Uruchomiona tabela dokumentów
 
-### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Usługi środowiska Visual Studio, które mogą być używane
+### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Usługi środowiska programu Visual Studio, które mogą być używane
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>
 
@@ -54,7 +54,7 @@ Kontrola źródła pakietu VSPackage muszą komunikować się z innymi jednostka
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>
 
-SVsRegisterScciProvider Service
+Usługa SVsRegisterScciProvider
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>
 
@@ -62,17 +62,17 @@ SVsRegisterScciProvider Service
 
 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>
 
-### <a name="vsip-interfaces-implemented-and-called"></a>VSIP interfejsy implementowane oraz nazywany
+### <a name="vsip-interfaces-implemented-and-called"></a>Interfejsy VSIP zaimplementowane i wywoływane
 
-Pakiet kontroli źródła jest pakietu VSPackage, a w związku z tym można korzystać bezpośrednio z innych pakietów VSPackage, które są zarejestrowane w usłudze Visual Studio. W celu zapewnienia pełnego zakresu funkcji kontroli źródła, kontroli źródła pakietu VSPackage poradzenie sobie z dostarczanych przez projektów lub powłoki.
+Pakiet kontroli źródła jest VSPackage i dlatego może wchodzić w interakcje bezpośrednio z innymi VSPackages, które są zarejestrowane w programie Visual Studio. W celu zapewnienia pełnego zakresu funkcji kontroli źródła, vspackage kontroli źródła może zajmować się interfejsami dostarczonymi przez projekty lub powłoki.
 
-Każdy projekt w programie Visual Studio musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> uznawana za projektu w środowisku IDE programu Visual Studio. Jednak ten interfejs nie jest przeznaczone wystarczający do kontroli źródła. Projekty, które powinny być w obszarze źródło sterowania Implementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>. Ten interfejs jest wykorzystywany przez kontrolę źródła pakietu VSPackage, aby wyszukać projekt służący do jego zawartości, a do tego celu symbole i informacje o powiązaniu (informacje potrzebne do nawiązania połączenia między lokalizacją serwera i lokalizację dysku projektu, który znajduje się w kontroli źródła).
+Każdy projekt w programie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3> Visual Studio musi zostać zaimplementowane, aby być rozpoznawany jako projekt w programie Visual Studio IDE. Jednak ten interfejs nie jest wystarczająco wyspecjalizowane dla kontroli źródła. Projekty, które mają być pod <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>kontrolą źródła implementują . Ten interfejs jest używany przez formant źródła VSPackage do kwerendy projektu dla jego zawartości i dostarczyć go glifów i informacji wiążących (informacje potrzebne do ustanowienia połączenia między lokalizacją serwera i lokalizacji dysku projektu, który jest pod kontrolą źródła).
 
-Implementuje pakietu VSPackage kontroli źródła <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, co z kolei pozwala projektów, które rejestrują się do kontroli źródła i pobierać symbole ich stanu.
+Formant źródła VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>implementuje , co z kolei umożliwia projektom rejestrowanie się w celu kontroli źródła i pobieranie ich glifów stanu.
 
-Aby uzyskać pełną listę interfejsów, które należy wziąć pod uwagę pakietu VSPackage kontroli źródła, zobacz [powiązane usługi i interfejsy](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
+Aby uzyskać pełną listę interfejsów, które vspackage kontroli źródła należy wziąć pod uwagę, zobacz [Powiązanych usług i interfejsów](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Elementy projektu](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [Powiązane usługi i interfejsy](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

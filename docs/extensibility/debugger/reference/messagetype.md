@@ -1,5 +1,5 @@
 ---
-title: MESSAGETYPE | Dokumentacja firmy Microsoft
+title: TYP WIADOMOŚCI | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MESSAGETYPE enumeration
 ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c17860bb47f493031e6db1134aec498611b07f1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b4d0fd12495a59427500c16ef6f37d9f8b6e61f5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339194"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714501"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Określa typ komunikatu i przyczynę.
+Określa typ i przyczynę wiadomości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -52,36 +52,36 @@ public enum enum_MESSAGETYPE { 
 
 ## <a name="fields"></a>Pola
  `MT_OUTPUTSTRING`\
- Wskazuje, że w oknie danych wyjściowych powinna zostać wysłana wiadomość. To jest wzajemnie wykluczających się z `MT_MESSAGEBOX`.
+ Wskazuje, że wiadomość powinna zostać wysłana do okna danych wyjściowych. To wzajemnie się `MT_MESSAGEBOX`wyklucza z .
 
  `MT_MESSAGEBOX`\
- Wskazuje, że komunikat powinien być wyświetlany w oknie komunikatu. To jest wzajemnie wykluczających się z `MT_OUTPUTSTRING`.
+ Wskazuje, że wiadomość powinna być wyświetlana w oknie komunikatu. To wzajemnie się `MT_OUTPUTSTRING`wyklucza z .
 
  `MT_TYPE_MASK`\
- Wartość maski do izolowania miejsce docelowe dla wiadomości.
+ Wartość maski do wyizolowania miejsca docelowego dla wiadomości.
 
  `MT_REASON_EXCEPTION`\
- Wskazuje, że okno komunikatu jest pokazywane w wyniku wystąpienia wyjątku. To jest wzajemnie wykluczających się z `MT_REASON_TRACEPOINT`.
+ Wskazuje, że okno komunikatu jest wyświetlane w wyniku wyjątku. To wzajemnie się `MT_REASON_TRACEPOINT`wyklucza z .
 
  `MT_REASON_TRACEPOINT`\
- Wskazuje, że okno komunikatu jest pokazywane w wyniku osiągnięcia punkt śledzenia. To jest wzajemnie wykluczających się do `MT_REASON_EXCEPTION`.
+ Wskazuje, że okno komunikatu jest wyświetlane w wyniku trafienia w punkt śledzenia. To jest wzajemnie `MT_REASON_EXCEPTION`się wykluczają .
 
  `MT_REASON_MASK`\
- Wartość maski do izolowania Przyczyna wiadomości są wyświetlane.
+ Wartość maski do wyizolowania przyczyny wyświetlenia wiadomości.
 
 ## <a name="remarks"></a>Uwagi
  Te wartości są zwracane z [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) i [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metody.
 
- Jedna z wartości Przyczyna może być łączone z jedną z wartości docelowe danych wyjściowych za pomocą bitowej `OR`.
+ Jedną z wartości przyczyny można połączyć z jedną z `OR`wyjściowych wartości docelowych za pomocą bitowego .
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)
 - [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)

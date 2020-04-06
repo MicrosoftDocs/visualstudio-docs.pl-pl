@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccBackgroundGet | Dokumentacja firmy Microsoft
+title: Funkcja SccBackgroundGet | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0805e91f5386f101917ee988e9e0d23d066f48d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334025"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701229"
 ---
-# <a name="sccbackgroundget-function"></a>Funkcja SccBackgroundGet
-Ta funkcja pobiera z kontroli źródła każdego określonych plików bez interakcji użytkownika.
+# <a name="sccbackgroundget-function"></a>SccBackgroundGet, funkcja
+Ta funkcja pobiera ze źródła kontrolę każdego z określonych plików bez interakcji użytkownika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -35,43 +35,43 @@ SCCRTN SccBackgroundGet(
 ```
 
 ### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-[in] Wskaźnik kontekście wtyczki kontroli źródła.
+[w] Wskaźnik kontekstu wtyczki formantu źródła.
 
- Niepowodzeń
+ nFiles
 
-[in] Liczba plików określonych w `lpFileNames` tablicy.
+[w] Liczba plików określonych `lpFileNames` w tablicy.
 
  lpFileNames
 
-[out w] Tablica nazwy plików do pobrania.
+[w, na zewnątrz] Tablica nazw plików do pobrania.
 
 > [!NOTE]
-> Nazwy muszą być w pełni kwalifikowanej nazwy lokalnego.
+> Nazwy muszą być w pełni kwalifikowanymi lokalnymi nazwami plików.
 
- Flagidw
+ Dwflags
 
-[in] Polecenie flagi (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).
+[w] Flagi poleceń (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).
 
  dwBackgroundOperationID
 
-[in] Unikatowa wartość skojarzonego z tą operacją.
+[w] Unikatowa wartość skojarzona z tą operacją.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Operacja została ukończona pomyślnie.|
-|SCC_E_BACKGROUNDGETINPROGRESS|Pobieranie w tle jest już w toku (wtyczka do kontroli źródła powinna zwrócić to tylko wtedy, gdy nie obsługuje operacji wsadowych jednocześnie).|
-|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończenie.|
+|SCC_OK|Operacja została zakończona pomyślnie.|
+|SCC_E_BACKGROUNDGETINPROGRESS|Pobieranie w tle jest już w toku (wtyczka kontroli źródła powinna zwracać to tylko wtedy, gdy nie obsługuje jednoczesnych operacji wsadowych).|
+|SCC_I_OPERATIONCANCELED|Operacja została anulowana przed zakończeniem.|
 
 ## <a name="remarks"></a>Uwagi
- Ta funkcja zawsze jest wywoływana w wątku, inny niż ten, który załadowany wtyczka do kontroli źródła. Ta funkcja nie powinien zwrócić, dopóki zakończy działania; jednak może ona zostać wywołana wiele razy przy użyciu wielu list plików, wszystko w tym samym czasie.
+ Ta funkcja jest zawsze wywoływana na wątku innym niż ten, który załadował wtyczkę formantu źródła. Ta funkcja nie powinien wrócić, dopóki nie zostanie wykonana; Jednak można go nazwać wiele razy z wieloma listami plików, wszystkie w tym samym czasie.
 
- Korzystanie z `dwFlags` argument jest taka sama jak [SccGet](../extensibility/sccget-function.md).
+ Użycie argumentu `dwFlags` jest taka sama jak [SccGet](../extensibility/sccget-function.md).
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki sterowania źródłem](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

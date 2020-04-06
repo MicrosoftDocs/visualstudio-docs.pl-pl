@@ -1,5 +1,5 @@
 ---
-title: Przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage | Dokumentacja firmy Microsoft
+title: Przełączniki linii poleceń Devenv dla rozwoju VSPackage | Dokumenty firmy Microsoft
 ms.date: 12/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,43 +13,43 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289f31c503143dc2b992717483f4d8701414e09d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ad3a5125a730b9230959bbf9342b4c0a4823c4d3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348055"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712193"
 ---
-# <a name="devenv-command-line-switches-for-vspackage-development"></a>Przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage
+# <a name="devenv-command-line-switches-for-vspackage-development"></a>Przełączniki wiersza polecenia Devenv dla rozwoju VSPackage
 
-Program Visual Studio umożliwia deweloperom Automatyzowanie zadań przy użyciu wiersza polecenia podczas wykonywania `devenv.exe`, plik, który uruchamia środowiska IDE programu Visual Studio.
+Visual Studio umożliwia deweloperom zautomatyzować zadania z `devenv.exe`wiersza polecenia podczas wykonywania pliku, który uruchamia IDE programu Visual Studio.
 
  Zadania obejmują:
 
-- Wdrażanie aplikacji w wstępnie zdefiniowanych konfiguracji z poza IDE.
+- Wdrażanie aplikacji w wstępnie skonfigurowanych konfiguracjach spoza IDE.
 
-- Automatyczne kompilowanie projektów za pomocą wstępnie ustawionych ustawienia kompilacji lub konfiguracji debugowania.
+- Automatyczne tworzenie projektów przy użyciu ustawień kompilacji predefiniowanych lub konfiguracji debugowania.
 
-- Ładowanie środowiska IDE w określonej konfiguracji, wszystko poza IDE. Można również dostosować IDE po uruchomieniu.
+- Ładowanie IDE w określonych konfiguracjach, wszystkie spoza IDE. Ide można również dostosować po uruchomieniu.
 
-## <a name="guidelines-for-switches"></a>Wytyczne dotyczące przełączników
+## <a name="guidelines-for-switches"></a>Wskazówki dotyczące przełączników
 
-Dokumentacja programu Visual Studio w tym artykule opisano poziomu użytkownika `devenv` przełączniki wiersza polecenia. Aby uzyskać więcej informacji, zobacz [przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md). `devenv` Narzędzie obsługuje również dodatkowe przełączniki wiersza polecenia, które są przydatne w przypadku pakietu VSPackage programowania, wdrażania i debugowania.
+W dokumentacji programu Visual `devenv` Studio opisano przełączniki wiersza polecenia na poziomie użytkownika. Aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md). Narzędzie `devenv` obsługuje również dodatkowe przełączniki wiersza polecenia, które są przydatne w programie VSPackage rozwoju, wdrażania i debugowania.
 
 | Przełącznik wiersza polecenia | Opis |
 |---------------------| - |
-| `/ResetSkipPkgs` | Czyści wszystkie opcje ładowania Pomiń dodanych przez użytkowników, którzy pozwala uniknąć wczytywania problematyczne pakietów VSPackage, a następnie uruchamia programu Visual Studio. Obecność tagu SkipLoading powoduje wyłączenie ładowania pakietu VSPackage. Czyszczenie tagu włączające ładowania pakietu VSPackage.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów. |
-| `/RootSuffix` | Uruchamia programu Visual Studio za pomocą alternatywnej lokalizacji. Następujące polecenie jest uruchamiane przez skrót utworzony przez Instalatora programu Visual Studio SDK:<br /><br /> `devenv /RootSuffix exp`<br /><br /> W tym przypadku `exp` identyfikuje lokalizację przy użyciu określonego sufiksu (na przykład `10.0Exp` zamiast `10.0`). Wystąpienie eksperymentalne umożliwia debugowanie pakietu VSPackage niezależnie od wystąpienia programu Visual Studio, którego używasz do pisania kodu.<br /><br /> Ten przełącznik może być dowolny ciąg, który określa lokalizację, który został utworzony przy użyciu VSRegEx.exe. Aby uzyskać więcej informacji, zobacz [wystąpienie doświadczalne](../extensibility/the-experimental-instance.md). |
-| `/SafeMode` | Powoduje uruchomienie programu Visual Studio w trybie awaryjnym, ładowanie tylko domyślne środowisko IDE i usługi. `/SafeMode` Przełącznik zapobiega ładowania po uruchomieniu programu Visual Studio, zapewniając stabilne wykonanie wszystkich innych pakietów VSPackage.<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów. |
-| `/Setup` | Wymusza Visual Studio, aby scalić metadane zasobu, który opisuje menu, paski narzędzi i grup poleceń z wszystkich dostępnych pakietów VSPackage. To polecenie można uruchomić tylko z uprawnieniami administratora. <br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów. `devenv /Setup` Polecenia jest zazwyczaj podawana jako ostatni krok w procesie instalacji programu. Korzystanie z `/Setup` przełącznika nie zaczyna się IDE.|
-| `/Splash` | Pokazuje powitalny programu Visual Studio, ekranu w zwykły sposób, a następnie przedstawiono komunikat polu przed wyświetleniem głównego środowiska IDE. W oknie komunikatu umożliwia badanie ekran powitalny (na przykład, aby sprawdzić, czy ikona produktu pakietu VSPackage).<br /><br /> Ten przełącznik nie przyjmuje żadnych argumentów. |
+| `/ResetSkipPkgs` | Czyści wszystkie opcje ładowania pominąć, które zostały dodane przez użytkowników, którzy chcą uniknąć ładowania problematycznych VSPackages, a następnie uruchamia Visual Studio. Obecność SkipLoading tag wyłącza ładowanie VSPackage. Wyczyszczenie tagu ponownie umożliwia ładowanie VSPackage.<br /><br /> Ten przełącznik nie ma żadnych argumentów. |
+| `/RootSuffix` | Uruchamia program Visual Studio przy użyciu alternatywnej lokalizacji. Następujące polecenie jest uruchamiane przez skrót utworzony przez instalatora zestawów SDK programu Visual Studio:<br /><br /> `devenv /RootSuffix exp`<br /><br /> W takim `exp` przypadku identyfikuje lokalizację z określonym sufiksem (na przykład `10.0Exp` zamiast ). `10.0` Eksperymentalne wystąpienie umożliwia debugowanie VSPackage oddzielnie od wystąpienia programu Visual Studio, którego używasz do pisania kodu.<br /><br /> Ten przełącznik może przyjmować dowolny ciąg identyfikujące lokalizację utworzoną przy użyciu programu VSRegEx.exe. Aby uzyskać więcej informacji, zobacz [Wystąpienie eksperymentalne](../extensibility/the-experimental-instance.md). |
+| `/SafeMode` | Uruchamia program Visual Studio w trybie awaryjnym, ładując tylko domyślny IDE i usługi. Przełącznik `/SafeMode` zapobiega wszystkie vspackages innych firm z ładowania po uruchomieniu programu Visual Studio, zapewniając stabilne wykonanie.<br /><br /> Ten przełącznik nie ma żadnych argumentów. |
+| `/Setup` | Wymusza program Visual Studio do scalania metadanych zasobów, który opisuje menu, paski narzędzi i grupy poleceń ze wszystkich dostępnych vspackages. To polecenie można uruchomić tylko jako administrator. <br /><br /> Ten przełącznik nie ma żadnych argumentów. Polecenie `devenv /Setup` jest zazwyczaj podane jako ostatni krok procesu instalacji. Użycie przełącznika `/Setup` nie uruchamia IDE.|
+| `/Splash` | Pokazuje ekran powitalny programu Visual Studio, jak zwykle, a następnie pokazuje okno komunikatu przed wyświetleniem głównego IDE. Okno komunikatu umożliwia badanie ekranu powitalnego (na przykład, aby sprawdzić ikonę produktu VSPackage).<br /><br /> Ten przełącznik nie ma żadnych argumentów. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Dodawanie przełączników wiersza polecenia](../extensibility/adding-command-line-switches.md)
 - [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)

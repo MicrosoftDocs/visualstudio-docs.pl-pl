@@ -1,5 +1,5 @@
 ---
-title: Icon, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element ikony (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4068c192d7e01f4c9162e8006152a90b38aed05b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350145"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710532"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Icon, element (szablony Visual Studio)
-Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która pojawia się w jednym **nowy projekt** lub **Dodaj nowy element** okno dialogowe dla szablonu.
+# <a name="icon-element-visual-studio-templates"></a>Element ikony (szablony programu Visual Studio)
+Określa ścieżkę i nazwę pliku obrazu, który służy jako ikona, która pojawia się w oknie dialogowym **Nowy projekt** lub Dodaj **nowy element** dla szablonu.
 
- \<VSTemplate> \<TemplateData> \<Icon>
+ \<ikona> \<templatedata>> \<
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,8 +44,8 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która po
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Package`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Identyfikator GUID, który określa pakietu programu Visual Studio.|
-|`ID`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Określa identyfikator zasobu. w programie Visual Studio|
+|`Package`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Identyfikator GUID określający identyfikator pakietu programu Visual Studio.|
+|`ID`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Określa identyfikator zasobu programu Visual Studio.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -54,18 +54,18 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która po
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wartość tekstowa jest wymagany, chyba że `Package` i `ID` atrybuty są używane.
+ Wartość tekstowa jest `Package` wymagana, `ID` chyba że używane są atrybuty i.
 
- Tekst zawiera ścieżkę i nazwę Ikona szablonu, który będzie wyświetlany w **nowy projekt** okno dialogowe.
+ Tekst zawiera ścieżkę i nazwę pliku ikony szablonu, która pojawi się w oknie dialogowym **Nowy projekt.**
 
 ## <a name="remarks"></a>Uwagi
- `Icon` jest wymaganym elementem podrzędnym elementu `TemplateData`.
+ `Icon`jest wymaganym elementem `TemplateData`podrzędnym .
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -91,6 +91,6 @@ Określa ścieżkę i nazwę pliku obrazu, który służy jako ikonę, która po
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

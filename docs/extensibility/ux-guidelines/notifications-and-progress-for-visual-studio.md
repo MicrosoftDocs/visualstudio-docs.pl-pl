@@ -1,341 +1,341 @@
 ---
-title: Powiadomienia i postęp dla programu Visual Studio | Dokumentacja firmy Microsoft
+title: Powiadomienia i postępy programu Visual Studio | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ca3f02c37a76e31ad76f6875110487dffefd49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310883"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699882"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Powiadomienia i postęp dla programu Visual Studio
-## <a name="BKMK_NotificationSystems"></a> Systemy powiadomień
+## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a>Systemy powiadomień
 
 ### <a name="overview"></a>Omówienie
- Istnieje kilka sposobów, aby poinformować użytkownika, co dzieje się w programie Visual Studio dotyczące ich zadań rozwoju oprogramowania.
+ Istnieje kilka sposobów informowania użytkownika, co dzieje się w programie Visual Studio dotyczące ich zadań programistycznych.
 
- Podczas implementowania dowolnego rodzaju powiadomienia:
+ Podczas wdrażania wszelkiego rodzaju powiadomień:
 
-- **Zachowaj liczbę zgłoszeń do minimum** numer skuteczne. Komunikaty powiadomień powinny być stosowane dla większości użytkowników programu Visual Studio lub dla użytkowników obszaru określonych funkcji. Nadmiernego wykorzystania powiadomienia mogą być sidetrack użytkownika lub obniżyć postrzegany łatwość użycia systemu.
+- **Zachowaj liczbę powiadomień do minimalnej** liczby efektywnej. Komunikaty powiadomień powinny dotyczyć większości użytkowników programu Visual Studio lub użytkowników określonego obszaru funkcji/funkcji. Nadmierne korzystanie z powiadomień może sidetrack użytkownika lub zmniejszyć postrzeganą łatwość korzystania z systemu.
 
-- **Upewnij się, jest wyświetlana jasny, możliwością wykonywania akcji wiadomości** czy użytkownik może użyć do wywołania odpowiedniego kontekstu zapewnianiu bardziej złożonych i podjęcie dalszych akcji.
+- **Upewnij się, że są prezentujące jasne, zasłynialne wiadomości,** które użytkownik może użyć do wywołania odpowiedniego kontekstu do dokonywania bardziej złożonych wyborów i podejmowania dalszych działań.
 
-- **Przedstawia komunikaty synchroniczne i asynchroniczne odpowiednio.** Synchroniczne powiadomienia wskazać, że jakieś elementy wymagają natychmiastowej uwagi, takie jak kiedy ulega awarii usługi sieci web lub kod wyjątku. Użytkownik, powinna być powiadamiana o sytuacji razu w taki sposób, który wymaga danych wejściowych, takich jak w modalne okno dialogowe. Asynchroniczne powiadomienia są te, które użytkownik powinien wiedzieć o, ale nie wymaga się działać od razu, np. po zakończeniu operacji tworzenia lub na zakończeniu wdrożenia witryny sieci web. Te komunikaty powinien być bardziej otoczenia i przerywają pracy przepływ zadań użytkownika.
+- **Odpowiednio prezentuj komunikaty synchroniczne i asynchroniczne.** Powiadomienia synchroniczne wskazują, że coś wymaga natychmiastowej uwagi, na przykład gdy usługa sieci web ulegnie awarii lub zostanie zgłoszony wyjątek kodu. Użytkownik powinien być informowany o tych sytuacjach od razu w sposób, który wymaga ich danych wejściowych, takich jak w oknie dialogowym modalnego. Powiadomienia asynchroniczne to powiadomienia, o których użytkownik powinien wiedzieć, ale nie muszą działać natychmiast, na przykład po zakończeniu operacji kompilacji lub zakończeniu wdrażania witryny sieci Web. Te komunikaty powinny być bardziej otoczenia i nie przerywać przepływu zadań użytkownika.
 
-- **Użyj modalne okna dialogowe tylko wtedy, gdy jest to niezbędne uniemożliwić użytkownikowi korzystanie z podjęciem dalszych działań** przed potwierdzając wiadomości lub podejmowania decyzji, znajdujące się w oknie dialogowym.
+- **Modalne okna dialogowe należy używać tylko wtedy, gdy jest to konieczne, aby uniemożliwić użytkownikowi podjęcie dalszych działań** przed potwierdzeniem wiadomości lub podjęciem decyzji przedstawionej w oknie dialogowym.
 
-- **Usuń otoczenia powiadomienia, gdy nie są już prawidłowe.** Wymaga od użytkownika odrzucić powiadomienie, jeśli już jakieś działania, aby rozwiązać ten problem, który one zostali powiadomieni o.
+- **Usuń powiadomienia otoczenia, gdy nie są już prawidłowe.** Nie wymagaj od użytkownika, aby odrzucić powiadomienie, jeśli już podjął działania w celu rozwiązania problemu, o którym został powiadomiony.
 
-- **Należy pamiętać, że powiadomienia może prowadzić do korelacji wartość false.** Użytkownicy mogą uważa, że co najmniej jeden z nich działania ma wyzwalane powiadomienie, gdy w rzeczywistości nie było żadnych przyczynowego. Być jasno komunikatu powiadomienia o kontekście, wyzwalacz i źródła powiadomienia.
+- **Należy pamiętać, że powiadomienia mogą prowadzić do fałszywych korelacji.** Użytkownicy mogą uwierzyć, że co najmniej jedno z ich działań wyzwoliło powiadomienie, gdy w rzeczywistości nie było związku przyczynowego. Być jasne w komunikacie powiadomienia o kontekście, wyzwalacza i źródła powiadomienia.
 
-### <a name="choosing-the-right-method"></a>Wybór odpowiedniej metody
- Pomocne w wyborze odpowiedniej metody w celu powiadomienia użytkownika wiadomości przy użyciu tej tabeli.
+### <a name="choosing-the-right-method"></a>Wybór właściwej metody
+ Ta tabela ułatwia wybór odpowiedniej metody powiadamiania użytkownika o wiadomości.
 
-|Metoda|Zastosowanie|Nie używaj|
+|Metoda|Użycie|Nie używać|
 |------------|---------|----------------|
-|[Modalne błąd komunikatu w oknach dialogowych](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Opcja używana podczas odpowiedź użytkownika jest wymagana przed kontynuowaniem.|Należy używać, gdy nie ma potrzeby zablokować użytkownika, a także przerwań ich przepływu. Należy unikać używania modalne okna dialogowe, jeśli jest to możliwe wyświetlić komunikat w sposób inny, ta opcja jest mniej pożądana.|
-|[Pasek stanu IDE](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Użycie po otoczenia tekstową informacji dotyczących stanu procesu.|Nie używaj samodzielnie. Najlepiej używać w połączeniu z innego mechanizmu opinii.|
-|[Osadzony pasek informacyjny](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|W oknie narzędzia lub okno dokumentu używany do powiadamiania postępu, stan błędu, wyniki i/lub informacji.|Należy używać, jeśli informacje nie są odpowiednie do lokalizacji, w którym znajduje się pasek informacyjny.<br /><br /> Nie należy używać poza oknem dokumentu/narzędzia.|
-|[Zmiany kursora myszy](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|Może służyć do powiadomienia, że proces się dzieje. Umożliwia również powiadomi, że istnieje zmiana stanu mysz, takie jak podczas przeciągania i upuszczania jest w toku lub kursor myszy znajduje się w niektórych trybach, takie jak tryb rysowania.|Nie używaj w przypadku zmiany krótki postępu lub fluttering z kursora jest prawdopodobne, (na przykład, gdy powiązany z części dłużej procesu uruchomionego zamiast całego procesu).|
-|[Wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Użycie, w przypadku konieczności raportować postęp (określony lub nieokreślony). Istnieją różne typy wskaźników postępu i użycie określone dla każdego. Zobacz [wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||
-|[Visual Studio powiadomienia okna](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Okno powiadomień nie jest rozszerzalna publicznie. Służy do komunikowania się z szeregu komunikaty dotyczące programu Visual Studio, w tym krytycznych problemów z licencji i informacyjny powiadomienia o aktualizacji do programu Visual Studio lub pakietów.|Nie należy używać dla innych typów powiadomień.|
-|[Lista błędów](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Gdy problem odnosi się bezpośrednio do aktualnie otwartego rozwiązania użytkownika wystąpił problem (/ ostrzeżenia/informacje o błędzie), ich może być konieczne podejmowanie akcji na kod.<br /><br /> To dotyczy, na przykład:<br /><br /> — Komunikaty kompilatora (/ ostrzeżenia/informacje o błędzie)<br /><br /> -Code diagnostycznych analizatora komunikatów o kodzie<br /><br /> — Tworzenie wiadomości<br /><br /> Może być odpowiednie dla zagadnienia odnoszące się do plików projektu lub rozwiązania, ale najpierw należy wziąć pod uwagę wskazanie Eksploratora rozwiązań.|Nie należy używać dla elementów, które nie mają żadnych relacji kodowi otwartego rozwiązania użytkownika.|
-|Edytor powiadomienia: Żarówka|Użycie, gdy poprawka jest dostępna rozwiązać problem, który istnieje w otwartego pliku.<br /><br /> Należy zauważyć, że ikona żarówki powinien być używany do hostowania szybkie akcje, które pochodzą od użytkownika kodu na żądanie, takie jak refaktoryzacji, ale w takiej sytuacji nie będą widoczne "style powiadomień".|Nie należy używać dla elementów, które nie mają żadnych relacji do otwartego pliku.|
-|Edytor powiadomienia: Faliste linie|Użyj, aby ostrzec użytkownika wystąpił problem z określonego zakresu swój kod open (na przykład czerwona fala błędów).|Nie należy używać dla elementów, które nie odnoszą się do określonego zakresu swój kod open.|
-|[Paski stanu osadzonego](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Służy do udostępniania informacji o stanie związane z zawartością lub proces w kontekście określonego narzędzia okna, okno dokumentu lub okna dialogowego.|Nie należy używać produktu ogólne powiadomienia, procesy lub elementy, które nie mają żadnych relacji z zawartością w określonym oknie.|
-|[Windows na pasku powiadomień](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Służy do powierzchni powiadomienia dla procesów procesem lub towarzyszące aplikacje.|Nie należy używać powiadomień, które mają zastosowanie w środowisku IDE.|
-|[Bąbelki powiadomień](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Użyj, aby powiadomić zdalnego procesu lub zmienić **poza** środowiska IDE.|Nie należy używać jako środek do powiadamiania użytkownika procesów **w ramach** IDE.|
+|[Okna dialogowe komunikatu o błędzie modalnego](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ModalErrorMessageDialogs)|Użyj, gdy odpowiedź użytkownika jest wymagana przed kontynuowaniem.|Nie należy używać, gdy nie ma potrzeby blokowania użytkownika i przerywania jego przepływu. Unikaj używania modalnych okien dialogowych, jeśli jest możliwe wyświetlenie wiadomości w inny, mniej inwazyjny sposób.|
+|[Pasek stanu IDE](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_IDEStatusBar)|Użyj, gdy istnieją otaczające informacje tekstowe dotyczące stanu procesu.|Nie stosować samodzielnie. Najlepiej stosować w połączeniu z innym mechanizmem sprzężenia zwrotnego.|
+|[Osadzony pasek informacyjny](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|W oknie narzędzia lub oknie dokumentu służy do powiadamiania o postępie, stanie błędu, wynikach i/lub informacjach zasysanych.|Nie należy używać, jeśli informacje nie są istotne dla lokalizacji, w której znajduje się pasek informacyjny.<br /><br /> Nie należy używać poza oknem dokumentu/narzędzia.|
+|[Zmiany kursora myszy](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|Może służyć do powiadamiania, że proces się dzieje. Używany również do powiadamiania, że w myszy występuje zmiana stanu, na przykład gdy trwa przeciąganie/upuszczanie lub kursor myszy w określonym trybie, takim jak tryb rysowania.|Nie należy używać do krótkich zmian postępu lub jeśli trzepotanie kursora jest prawdopodobne (na przykład, gdy jest powiązany z częściami dłużej działającego procesu, a nie do całego procesu).|
+|[Wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Użyj, gdy trzeba zgłosić postęp (określony lub nieokreślony). Istnieje wiele typów wskaźników postępu i określonego użycia dla każdego. Zobacz [Wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||
+|[Okno Powiadomienia programu Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Okno Powiadomienia nie jest publicznie rozszerzalne. Jednak jest on używany do komunikowania zakresu komunikatów dotyczących programu Visual Studio, w tym krytycznych problemów z licencją i informacyjnych powiadomień o aktualizacjach programu Visual Studio lub do pakietów.|Nie używaj do innych typów powiadomień.|
+|[Lista błędów](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Gdy problem dotyczy bezpośrednio aktualnie otwartego rozwiązania użytkownika, które ma problem (błąd/ostrzeżenie/informacje), może być konieczne podjęcie działań w sprawie kodu.<br /><br /> Obejmowałoby to na przykład:<br /><br /> - Komunikaty kompilatora (błąd / ostrzeżenie / informacje)<br /><br /> - Analizator kodu/ Komunikaty diagnostyczne dotyczące kodu<br /><br /> - Tworzenie wiadomości<br /><br /> Może być odpowiednie dla problemów związanych z plikami projektu lub rozwiązania, ale należy najpierw rozważyć wskazanie Eksploratora rozwiązań.|Nie należy używać dla elementów, które nie mają żadnego związku z kodem otwartego rozwiązania użytkownika.|
+|Powiadomienia edytora: Żarówka|Użyj, gdy masz dostępne poprawki, aby rozwiązać problem, który istnieje w otwartym pliku.<br /><br /> Należy zauważyć, że żarówka powinna być również używana do hostowania szybkich akcji, które są podejmowane na kodzie użytkownika na żądanie, takich jak refaktoryzacja, ale w takim przypadku nie pojawi się "styl powiadomień".|Nie należy używać dla elementów, które nie mają żadnego związku z otwartym plikiem.|
+|Powiadomienia edytora: Squiggles|Służy do ostrzegania użytkownika o problemie z określonym zakresem ich otwartego kodu (na przykład czerwona falista dla błędów).|Nie należy używać dla towarów, które nie odnoszą się do określonego zakresu ich otwartego kodu.|
+|[Osadzone paski stanu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Służy do dostarczania stanu związanego z zawartością lub procesem w kontekście określonego okna narzędzia, okna dokumentu lub okna dialogowego.|Nie należy używać do ogólnych powiadomień o produktach, procesów ani elementów, które nie mają żadnego związku z zawartością w określonym oknie.|
+|[Powiadomienia z zasobnika systemu Windows](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Służy do wysyłek powiadomień dla procesów poza proc lub aplikacji towarzyszących.|Nie należy używać dla powiadomień, które są istotne dla IDE.|
+|[Dymki powiadomień](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Służy do powiadamiania o zdalnym procesie lub zmianie **poza** IDE.|Nie należy używać jako środek powiadamiania użytkownika o procesach **w ramach** IDE.|
 
 ### <a name="notification-methods"></a>Metody powiadamiania
 
-#### <a name="BKMK_ModalErrorMessageDialogs"></a> Modalne błąd komunikatu w oknach dialogowych
- Błąd modalne okno dialogowe wiadomości jest używany do wyświetlania komunikat o błędzie, który wymaga potwierdzenia lub akcji użytkownika.
+#### <a name="modal-error-message-dialogs"></a><a name="BKMK_ModalErrorMessageDialogs"></a>Okna dialogowe komunikatu o błędzie modalnego
+ Okno dialogowe komunikatu o błędzie modalnego służy do wyświetlania komunikatu o błędzie, który wymaga potwierdzenia lub akcji użytkownika.
 
- ![Komunikat o błędzie modalne](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901 01_ModalErrorMessage")
+ ![Komunikat o błędzie modalnego](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901-01_ModalErrorMessage")
 
- **Okno dialogowe komunikat błędu modalne alerty użytkownika nieprawidłowe parametry połączenia z bazą danych**
+ **Okno dialogowe komunikatu o błędzie modalnego informujące użytkownika o nieprawidłowym ciągu połączenia z bazą danych**
 
-#### <a name="BKMK_IDEStatusBar"></a> Pasek stanu IDE
- Jest prawdopodobieństwo, że użytkownicy zauważyć tekst paska stanu komputera wszechstronną środowiska i określonych doświadczenie z platformą Windows. Bazy klientów programu Visual Studio jest zwykle doświadczenie w obu obszarach, chociaż nawet wiedzą użytkownikom Windows pominąć zmian w pasku stanu. W związku z tym na pasku stanu najlepiej nadaje się do celów informacyjnych lub jako nadmiarowy wskaźnik dla informacje przedstawione w innym miejscu. W oknie dialogowym lub w oknie narzędzia powiadomienia, należy podać dowolny rodzaj krytyczne informacje, które użytkownik musi niezwłocznie rozwiązać.
+#### <a name="ide-status-bar"></a><a name="BKMK_IDEStatusBar"></a>Pasek stanu IDE
+ Prawdopodobieństwo, że użytkownicy zauważą tekst paska stanu, koreluje z ich wszechstronnym doświadczeniem komputera i określonym doświadczeniem z platformą Windows. Baza klientów programu Visual Studio ma tendencję do doświadczenia w obu obszarach, chociaż nawet doświadczeni użytkownicy systemu Windows mogą przegapić zmiany w pasku stanu. W związku z tym pasek stanu jest najlepiej używany do celów informacyjnych lub jako nadmiarowy sygnał dla informacji prezentowanych w innym miejscu. Wszelkiego rodzaju krytyczne informacje, które użytkownik musi natychmiast rozwiązać powinny być dostarczone w oknie dialogowym lub w oknie narzędzia powiadomienia.
 
- Na pasku stanu w programie Visual Studio umożliwia dla różnych typów informacji mają być wyświetlane. Jest ona podzielony na regiony dla opinii, projektanta, pasek postępu, animacji i klienta.
+ Pasek stanu programu Visual Studio ma na celu umożliwienie wyświetlania kilku typów informacji. Jest podzielony na regiony dla opinii, projektanta, paska postępu, animacji i klienta.
 
- Region opinii i projektanta region są zawsze widoczne. Pasek postępu i animacji regiony są zawsze dynamiczne i oparte na kontekście użytkownika. Projektanta regionu ma szerokość statyczne, określa długość ciągu, który jest pobierany z zasobem towarzyszący wiadomości tekstowych. Umożliwia to lokalizacja zmienić rozmiar szerokość bez konieczności zmiany kodu. Dla języka angielskiego szerokość ten ciąg jest około 220 pikseli. Projektanta region będzie działać prawidłowo, i regionu opinie będą absorbować ilość wolnego miejsca.
+ Region opinii i region projektanta są zawsze widoczne. Pasek postępu i regiony animacji są zawsze dynamiczne i oparte na kontekście użytkownika. Region projektanta ma szerokość statyczną określoną przez długość ciągu, który jest pobierany z towarzyszącego zasobu dla wiadomości tekstowej. Dzięki temu lokalizacja, aby zmienić rozmiar szerokości bez konieczności zmiany kodu. W języku angielskim szerokość tego ciągu wynosi około 220 pikseli. Region projektanta będzie zachowywać się normalnie, a obszar sprzężenia zwrotnego pochłonie pozostałą przestrzeń.
 
- Na pasku stanu jest także pokolorowane pozwala dodać wizualny i wartość funkcjonalności, komunikując się różne zmiany stanu IDE, np. gdy IDE jest w trybie debugowania.
+ Pasek stanu jest również pokolorowany, aby dodać zainteresowanie wizualne i wartość funkcjonalną, komunikując różne zmiany stanu IDE, takie jak gdy IDE jest w trybie debugowania.
 
- ![Pasek koloru zmiany stanu IDE](../../extensibility/ux-guidelines/media/0901-02_idestatusbar.png "0901 02_IDEStatusBar")
+ ![Zmiany koloru paska stanu IDE](../../extensibility/ux-guidelines/media/0901-02_idestatusbar.png "0901-02_IDEStatusBar")
 
  **Kolory paska stanu IDE**
 
-#### <a name="BKMK_EmbeddedInfobar"></a> Osadzony pasek informacyjny
- Pasek informacyjny może służyć w górnej części okna dokumentu lub okna narzędzi w celu poinformowania użytkownika o stanu lub warunku. On również oferować polecenia, dzięki czemu użytkownik może łatwo podjąć działania w sposób. Pasek informacyjny jest formantem standardowa powłoki. Unikaj tworzenia własnych, który będzie działać i występować niespójne z innymi osobami w środowisku IDE. Zobacz [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) szczegółów implementacji i wskazówki dotyczące użycia.
+#### <a name="embedded-infobar"></a><a name="BKMK_EmbeddedInfobar"></a>Osadzony pasek informacyjny
+ W górnej części okna dokumentu lub okna narzędzia można użyć paska informacyjnego informującego użytkownika o stanie lub stanie. Może również oferować polecenia, dzięki czemu użytkownik może mieć sposób na łatwe podjęcie działań. Pasek informacyjny jest standardową kontrolką powłoki. Należy unikać tworzenia własnych, które będą działać i pojawiają się niezgodne z innymi w IDE. Szczegółowe informacje na temat implementacji i wskazówki dotyczące użycia można znaleźć na [paskach informacyjnych.](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)
 
- ![Osadzone informacyjnym](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901 03_EmbeddedInfobar")
+ ![Osadzony pasek informacyjny](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901-03_EmbeddedInfobar")
 
- **Pasek informacyjny osadzony w oknie dokumentu alerty użytkownika, który jest w trybie debugowania historycznego IDE i edytor nie będzie odpowiadać w taki sam sposób jak w trybie standardowym debugowania.**
+ **Pasek informacji osadzony w oknie dokumentu, ostrzegający użytkownika, że IDE jest w trybie debugowania historycznego i edytor nie będzie reagować w taki sam sposób, jak w trybie standardowego debugowania.**
 
-#### <a name="BKMK_MouseCursorChanges"></a> Zmiany kursora myszy
- Po zmianie kursora myszy, należy użyć kolorów, które są powiązane z usługą VSColor i są już skojarzone z kursorem. Kursor zmiany mogą służyć do wskazywania trwającą operację, a także trafień strefy, gdy użytkownik po umieszczeniu wskaźnika nad obiektu docelowego, który można przeciągnąć, upuszczone na lub używany do wybierania obiektu.
+#### <a name="mouse-cursor-changes"></a><a name="BKMK_MouseCursorChanges"></a>Zmiany kursora myszy
+ Podczas zmiany kursora myszy należy użyć kolorów, które są powiązane z usługą VSColor i są już skojarzone z kursorem. Zmiany kursora mogą służyć do wskazywania trwającej operacji, a także stref trafień, w których użytkownik najeżdża kursor nad obiektem docelowym, który może zostać przeciągnięty, upuszczony lub użyty do zaznaczenia obiektu.
 
- Kursor myszy zajęty oczekiwania należy używać tylko wtedy, gdy cały dostępny czas procesora CPU musi być zarezerwowana dla operacji, uniemożliwiając wyrażanie wszelkich dalszych danych wejściowych użytkownika. W większości przypadków z dobrze napisane aplikacje za pomocą wielowątkowości razy, gdy użytkownicy mają zablokowaną możliwość wykonywania innych operacji powinna być rzadkie.
+ Użyj kursora myszy zajęty/czekać tylko wtedy, gdy cały dostępny czas procesora CPU musi być zarezerwowany dla operacji, uniemożliwiając użytkownikowi wyrażenie dalszych danych wejściowych. W większości przypadków z dobrze napisanych aplikacji przy użyciu wielowątkowych, czasy, gdy użytkownicy nie mogą wykonywać innych operacji powinny być rzadkie.
 
- Należy pamiętać o tym, kursor zmiany są przydatne, nadmiarowe wskazówki informacje przedstawione w innym miejscu. Nie należy polegać na zmianę kursora jako jedyny sposób komunikowania się z użytkownikiem, szczególnie w przypadku próby przekazania coś, który ma kluczowe znaczenie, czy użytkownik muszą spełnić.
+ Należy pamiętać, że zmiany kursora są przydatne jako nadmiarowy sygnał dla informacji prezentowanych w innym miejscu. Nie należy polegać na zmianie kursora jako jedyny sposób komunikowania się z użytkownikiem, zwłaszcza podczas próby przekazania coś, co jest krytyczne, że użytkownik musi adres.
 
-#### <a name="BKMK_NotSysProgressIndicators"></a> Wskaźniki postępu
- Wskaźniki postępu są ważne w przypadku wyrażanie opinii użytkownika w procesach, które przyjmują więcej niż kilka sekund. Wskaźniki postępu, które mogą być wyświetlane w miejscu (w pobliżu punkt uruchamiania działania w toku), na pasku stanu osadzony, modalne okno dialogowe lub na pasku stanu w programie Visual Studio. Postępuj zgodnie ze wskazówkami w [wskaźniki postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) dotyczące ich stosowanie i wdrożenie.
+#### <a name="progress-indicators"></a><a name="BKMK_NotSysProgressIndicators"></a>Wskaźniki postępu
+ Wskaźniki postępu są ważne dla przekazywania opinii użytkownika podczas procesów, które trwają dłużej niż kilka sekund. Wskaźniki postępu mogą być wyświetlane w miejscu (w pobliżu punktu rozpoczęcia akcji w toku), na osadzonym pasku stanu, w oknie dialogowym modalnym lub na pasku stanu programu Visual Studio. Postępuj zgodnie ze [wskaźnikami postępu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) dotyczącymi ich stosowania i wdrażania.
 
-#### <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio powiadomienia okna
- W oknie Powiadomienia usługi Visual Studio powiadamia deweloperów o tym licencjonowania, środowiska (Visual Studio), rozszerzenia i aktualizacje. Użytkownicy mogą odrzucić indywidualne powiadomienia lub zignorować określonych typów powiadomień. Listę ignorowanych powiadomień jest zarządzany w **Narzędzia > Opcje** strony.
+#### <a name="visual-studio-notifications-window"></a><a name="BKMK_VSNotificationsToolWindow"></a>Okno Powiadomienia programu Visual Studio
+ Okno Powiadomienia programu Visual Studio powiadamia deweloperów o licencjonowaniu, środowisku (Visual Studio), rozszerzeniach i aktualizacjach. Użytkownicy mogą odrzucać poszczególne powiadomienia lub ignorować określone typy powiadomień. Lista ignorowanych powiadomień jest zarządzana na stronie **Opcje > narzędzia.**
 
- Okno powiadomień nie jest obecnie rozszerzonego.
+ Okno Powiadomienia nie jest obecnie rozszerzalne.
 
- ![Visual Studio powiadomienia okna](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901 06_VSNotificationsWindow")
+ ![Okno Powiadomienia programu Visual Studio](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901-06_VSNotificationsWindow")
 
- **Okno narzędzia w usłudze Visual Studio powiadomienia**
+ **Okno narzędzia Powiadomienia programu Visual Studio**
 
-#### <a name="BKMK_ErrorList"></a> Lista błędów
- Powiadomienie w liście błędów wskazują błędy i ostrzeżenia, które wystąpiły podczas kompilacji i procesu kompilacji i umożliwia użytkownikowi nawigację w kodzie do tego określonego kodu błędu.
+#### <a name="error-list"></a><a name="BKMK_ErrorList"></a>Lista błędów
+ Powiadomienie na liście błędów wskazuje błędy i ostrzeżenia, które wystąpiły podczas kompilacji i lub procesu kompilacji i umożliwia użytkownikowi przejście w kodzie do tego błędu określonego kodu.
 
- ![Lista błędów](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901 08_ErrorList")
+ ![Lista błędów](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901-08_ErrorList")
 
  **Lista błędów w programie Visual Studio**
 
-#### <a name="BKMK_EmbeddedStatusBars"></a> Paski stanu osadzonego
- Ponieważ pasek stanu IDE jest dynamiczny, za pomocą jego kontekst regionu klienta Ustaw aktywne okno dokumentu i informacje o aktualizacji w kontekście użytkownika i/lub odpowiedzi systemu, jest trudne do utrzymania ciągłego wyświetlania informacji lub Prześlij stanu na długoterminowe Proces asynchroniczny. Na przykład na pasku stanu IDE nie jest właściwe dla powiadomień wyników przebiegu testu dla wielu uruchomień i/lub od razu wiarygodne wybrane opcje. Należy zachować takie informacje o stanie w kontekście okna dokumentu lub narzędzia, gdzie użytkownika powoduje, że zaznaczenie lub rozpoczyna się proces.
+#### <a name="embedded-status-bars"></a><a name="BKMK_EmbeddedStatusBars"></a>Osadzone paski stanu
+ Ponieważ pasek stanu IDE jest dynamiczny, a jego kontekst regionu klienta jest ustawiony na aktywne okno dokumentu i aktualizowanie informacji o kontekście użytkownika i/lub odpowiedziach systemowych, trudno jest zachować ciągłe wyświetlanie informacji lub podać stan długoterminowych procesów asynchronicznych. Na przykład pasek stanu IDE nie jest odpowiedni dla powiadomień o wynikach przebiegu testu dla wielu przebiegów i/lub natychmiast zasuwających przyborów elementów. Ważne jest, aby zachować takie informacje o stanie w kontekście okna dokumentu lub narzędzia, w którym użytkownik dokonuje wyboru lub rozpoczyna proces.
 
- ![Pasek stanu osadzone](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901 09_EmbeddedStatusBar")
+ ![Wbudowany pasek stanu](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901-09_EmbeddedStatusBar")
 
- **Pasek stanu osadzonego w programie Visual Studio**
+ **Osadzony pasek stanu w programie Visual Studio**
 
-#### <a name="BKMK_WindowsTray"></a> Windows na pasku powiadomień
- Windows, w obszarze powiadomień jest obok system zegara na pasku zadań Windows. Wiele narzędzi i składników oprogramowania zapewniają ikon, w tym obszarze, dzięki czemu użytkownik może uzyskać menu kontekstowe dla zadania systemowe, takie jak zmiana rozdzielczości ekranu lub uzyskiwanie aktualizacji oprogramowania.
+#### <a name="windows-tray-notifications"></a><a name="BKMK_WindowsTray"></a>Powiadomienia z zasobnika systemu Windows
+ Obszar powiadomień systemu Windows znajduje się obok zegara systemowego na pasku zadań systemu Windows. Wiele narzędzi i składników oprogramowania udostępnia ikony w tym obszarze, dzięki czemu użytkownik może uzyskać menu kontekstowe dla zadań ogólnosystemowych, takich jak zmiana rozdzielczości ekranu lub uzyskanie aktualizacji oprogramowania.
 
- Powiadomienia na poziomie środowiska powinien udostępniane w Centrum powiadomień usługi Visual Studio, a nie Windows obszaru powiadomień.
+ Powiadomienia na poziomie środowiska powinny być wyświetlane w centrum powiadomień programu Visual Studio, a nie w obszarze powiadomień systemu Windows.
 
-#### <a name="BKMK_NotificationBubbles"></a> Bąbelki powiadomień
- Bąbelki powiadomienia mogą być wyświetlane, informacyjny w edytorze/projektanta lub w ramach obszaru powiadomień Windows. Użytkownik uświadamia sobie, te bąbelki jako problemy, które można rozwiązać później, który jest to korzyść dla powiadomienia niekrytyczne. Bąbelków nie mają zastosowania do kluczowych informacji, które użytkownik musi następnie od razu rozwiązania. Jeśli używasz bąbelki powiadomień w programie Visual Studio, postępuj zgodnie z [pulpitu Windows wskazówki dotyczące powiadomień bąbelki](/windows/desktop/uxguide/mess-notif).
+#### <a name="notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a>Dymki powiadomień
+ Dymki powiadomień mogą być wyświetlane jako informacje w edytorze/projektancie lub jako część obszaru powiadomienia systemu Windows. Użytkownik postrzega te pęcherzyki jako problemy, które można rozwiązać później, co jest korzystne dla powiadomień niekrytycznych. Pęcherzyki są nieodpowiednie dla krytycznych informacji, które użytkownik musi rozwiązać od razu. Jeśli używasz dymków powiadomień w programie Visual Studio, postępuj zgodnie [ze wskazówkami pulpitu systemu Windows dotyczącymi dymków powiadomień](/windows/desktop/uxguide/mess-notif).
 
- ![Powiadomienie w dymku](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901 07_NotificationBubbles")
+ ![Dymek powiadomień](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901-07_NotificationBubbles")
 
- **Bąbelkowy powiadomień w obszarze powiadomień Windows używane dla programu Visual Studio**
+ **Dymek powiadomień w obszarze powiadomień systemu Windows używanym w programie Visual Studio**
 
-## <a name="BKMK_ProgressIndicators"></a> Wskaźniki postępu
+## <a name="progress-indicators"></a><a name="BKMK_ProgressIndicators"></a>Wskaźniki postępu
 
 ### <a name="overview"></a>Omówienie
- Wskaźniki postępu są ważnym elementem systemu powiadomień, do udzielania opinii użytkowników. Informują one użytkownika, gdy zostanie ukończone procesów i operacji. Typy wskaźników znanych obejmują paski postępu, kursory rotowania i ikony animowany. Typ i położenia wskaźnika postępu zależy od kontekstu, w tym, co jest raportowane i jak długo proces lub operacja spowoduje przejście do ukończenia.
+ Wskaźniki postępu są ważną częścią systemu powiadomień do przekazywania opinii użytkowników. Informują użytkownika, kiedy procesy i operacje zostaną zakończone. Znane typy wskaźników obejmują paski postępu, obracające się kursory i animowane ikony. Typ i rozmieszczenie wskaźnika postępu zależy od kontekstu, w tym od tego, co jest zgłaszane i jak długo potrwa proces lub operacja.
 
-#### <a name="factors"></a>Czynniki
- Aby ustalić, jakiego typu wskaźnika jest odpowiednia, należy określić następujące czynniki.
+#### <a name="factors"></a>Czynników
+ Aby określić, który typ wskaźnika jest odpowiedni, należy określić następujące czynniki.
 
-1. **Przedział czasowy:** czas operacji potrwa
+1. **Czas:** czas trwania operacji
 
-2. **Modalności:** tego, czy operacja jest modalnego dla środowiska (blokady interfejsu użytkownika do czasu ukończenia procesu)
+2. **Modalność:** czy operacja jest modal do środowiska (blokuje interfejsu użytkownika, dopóki proces zostanie zakończony)
 
-3. **Trwały/przejściowy:** tego, czy wynik końcowy postępu musi być zgłaszane i/lub możliwy do wyświetlenia w późniejszym czasie
+3. **Trwałe/przejściowe:** czy ostateczny wynik postępu musi być zgłoszony i/lub widoczny w późniejszym czasie
 
-4. **Określony/nieokreślone:** tego, czy można obliczyć postępu i godzina zakończenia działania
+4. **Określenie/nieokreślony:** czy można obliczyć czas zakończenia operacji i postęp
 
-5. **Grafika/Textual lokalizacji:** czy postępu lub procesu jest przechwycone w tekście, w treści wiadomości lub określonej kontrolki, na przykład kontrolki drzewa
+5. **Lokalizacja graficzna/tekstowa:** niezależnie od tego, czy postęp lub proces jest przechwytywany w tekście wiadomości, czy też w określonym formancie, takim jak formant Drzewo
 
-6. **Zbliżeniowe:** czy postępu powinien znajdować się w bliskim sąsiedztwie w interfejsie użytkownika, który jest powiązany. (Na przykład może ona znajdować się w pasku stanu, które mogą być daleko, lub czy ma znajdować się w pobliżu przycisku, który uruchomił proces?)
+6. **Bliskość:** czy postęp powinien znajdować się w pobliżu interfejsu użytkownika, z który jest powiązany. (Na przykład, może to być w pasku stanu, który może być daleko, czy musi być w pobliżu przycisku, który uruchomił proces?)
 
-#### <a name="determinate-progress"></a>Określony postępu
-
-|Typ postępu|Kiedy i jak używać|Uwagi|
-|-------------------|-------------------------|-----------|
-|Pasek postępu (określania)|Oczekiwany czas trwania > 5 sekund.<br /><br /> Może zawierać opis tekstowy szczegóły procesu.|**Nie** osadzania tekstu w animacji.|
-|Pasek informacyjny|Do obsługi komunikatów skojarzony z kontekstowych interfejsu użytkownika. Zobacz [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Może zawierać opis tekstowy szczegóły procesu.|**Nie** używać wielu infobars, gdy należy wskazać wiele procesów. Zamiast tego użyj paski postępu skumulowanego.|
-|Okno wyniku|Powiadomienie przejściowy: procesu na poziomie aplikacji danego użytkownika mają być **Przejrzyj** szczegóły po zakończeniu.|**Nie** używać, jeśli użytkownik musi odwoływać się do danych później.|
-|Plik dziennika|Sparowane intransient powiadomienie w przypadku, gdy ważne jest, aby **Zapisz** szczegóły po zakończeniu.||
-|Pasek stanu|Powiadomienie przejściowy: procesu na poziomie aplikacji danego użytkownika zostanie **nie jest konieczne** szczegóły po zakończeniu.<br /><br /> Zawiera pasek postępu osadzonych.<br /><br /> Może zawierać opis tekstowy szczegóły procesu.||
-
-#### <a name="indeterminate-progress"></a>Nieokreślonego postępu
+#### <a name="determinate-progress"></a>Określanie postępu
 
 |Typ postępu|Kiedy i jak używać|Uwagi|
 |-------------------|-------------------------|-----------|
-|Pasek postępu (nieokreślone)|Oczekiwany czas trwania > 5 sekund.<br /><br /> Może zawierać opis tekstowy szczegóły procesu.|**Nie** osadzania tekstu w animacji.|
-|Mrówki (animowany punktów w poziomie)|Obiegu do serwera.<br /><br /> Na górze kontenera nadrzędnego, należy umieścić punktu near kontekstu.|**Nie** używać, jeśli nie elementem nadrzędnym, przez cały kontener.|
-|Pokrętła (pierścień postępu)|Proces związany z kontekstowych interfejsu użytkownika lub miejsce w przypadku jest brany pod uwagę.<br /><br /> Może zawierać opis tekstowy szczegóły procesu.||
-|Pasek informacyjny|Do obsługi komunikatów skojarzony z kontekstowych interfejsu użytkownika. Zobacz [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**Nie** używać wielu infobars, gdy należy wskazać wiele procesów. Zamiast tego użyj paski postępu skumulowanego.|
-|Okno wyniku|Powiadomienie przejściowy: procesu na poziomie aplikacji użytkownik będzie chciał **Przejrzyj** szczegóły po zakończeniu.|**Nie** informacji, który ma zostać zachowany między sesjami.|
-|Plik dziennika|Sparowane intransient powiadomienie w przypadku, gdy ważne jest, aby **Zapisz** szczegóły po zakończeniu.||
-|Pasek stanu|Powiadomienie przejściowy: procesu na poziomie aplikacji danego użytkownika zostanie **nie jest konieczne** szczegóły po zakończeniu.<br /><br /> Zawiera pasek postępu osadzonych.<br /><br /> Może zawierać opis tekstowy szczegóły procesu.||
+|Pasek postępu (określony)|Przewidywany czas trwania >5 sekund.<br /><br /> Może zawierać tekstowy opis szczegółów procesu.|**NIE** osadzaj tekstu w animacji.|
+|Pasek informacyjny|Wiadomości skojarzone z kontekstowego interfejsu użytkownika. Zobacz [Paski informacyjne](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).<br /><br /> Może zawierać tekstowy opis szczegółów procesu.|**NIE używaj** wielu pasków informacyjnych, gdy trzeba wskazać wiele procesów. Zamiast tego należy użyć skumulowanych pasków postępu.|
+|Okno wyniku|Powiadomienie przejściowe: proces na poziomie aplikacji, który użytkownik chce **przejrzeć** szczegóły po zakończeniu.|**NIE używaj,** jeśli użytkownik będzie musiał odwołać się do danych później.|
+|Plik dziennika|W połączeniu z powiadomieniem nieprzejezdnym w przypadkach, gdy ważne **jest,** aby zapisać szczegóły po zakończeniu.||
+|Pasek stanu|Powiadomienie przejściowe: proces na poziomie aplikacji, którego użytkownik nie będzie **potrzebował** szczegółów po zakończeniu.<br /><br /> Zawiera osadzony pasek postępu.<br /><br /> Może zawierać tekstowy opis szczegółów procesu.||
 
-### <a name="progress-indicator-types"></a>Typy wskaźnika postępu
+#### <a name="indeterminate-progress"></a>Nieokreślony postęp
+
+|Typ postępu|Kiedy i jak używać|Uwagi|
+|-------------------|-------------------------|-----------|
+|Pasek postępu (nieokreślony)|Przewidywany czas trwania >5 sekund.<br /><br /> Może zawierać tekstowy opis szczegółów procesu.|**NIE** osadzaj tekstu w animacji.|
+|Mrówki (animowane kropki poziome)|Podróż w obie strony na serwer.<br /><br /> Umieszczony w pobliżu punktu kontekstu w górnej części kontenera nadrzędnego.|**NIE używaj,** jeśli nie jest nadrzędny przez cały kontener.|
+|Pokrętło (pierścień postępu)|Proces skojarzony z kontekstowym interfejsem użytkownika lub gdzie przestrzeń jest brana pod uwagę.<br /><br /> Może zawierać tekstowy opis szczegółów procesu.||
+|Pasek informacyjny|Wiadomości skojarzone z kontekstowego interfejsu użytkownika. Zobacz [Paski informacyjne](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).|**NIE używaj** wielu pasków informacyjnych, gdy trzeba wskazać wiele procesów. Zamiast tego należy użyć skumulowanych pasków postępu.|
+|Okno wyniku|Powiadomienie przejściowe: proces na poziomie aplikacji, który użytkownik będzie chciał **przejrzeć** szczegóły po zakończeniu.|**NIE używaj** informacji, które muszą być zachowywane w sesjach.|
+|Plik dziennika|W połączeniu z powiadomieniem nieprzejezdnym w przypadkach, gdy ważne **jest,** aby zapisać szczegóły po zakończeniu.||
+|Pasek stanu|Powiadomienie przejściowe: proces na poziomie aplikacji, którego użytkownik nie będzie **potrzebował** szczegółów po zakończeniu.<br /><br /> Zawiera osadzony pasek postępu.<br /><br /> Może zawierać tekstowy opis szczegółów procesu.||
+
+### <a name="progress-indicator-types"></a>Typy wskaźników postępu
 
 #### <a name="progress-bars"></a>Paski postępu
 
 ##### <a name="indeterminate"></a>Nieokreślony
- ![Pasek postępu indeterminate](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901 04_Indeterminate")
+ ![Nieokreślony pasek postępu](../../extensibility/ux-guidelines/media/0901-04_indeterminate.png "0901-04_Indeterminate")
 
- **Pasek postępu nieokreślony**
+ **Nieokreślony pasek postępu**
 
- "Nieokreślone" oznacza, że całkowity postęp operacji lub proces nie może być określony. Użyj pasków nieokreślonego postępu dla operacji, które wymagają niezwiązana ilość czasu, lub które mają dostęp do nieznanych liczbę obiektów. Opis tekstowy umożliwia towarzyszyć, co się dzieje. Limity czasu umożliwia oferowanie granic na podstawie czasu operacji. Paski postępu nieokreślony Użyj animacji, aby pokazać postęp odbywa się, że nie udostępniają żadnych innych informacji. Nie należy wybierać pasek postępu indeterminate oparte tylko na możliwego braku dokładność samodzielnie.
+ "Nieokreślony" oznacza, że nie można określić ogólnego postępu operacji lub procesu. Nieokreślone paski postępu należy używać dla operacji, które wymagają nieograniczonej ilości czasu lub które uzyskują dostęp do nieznanej liczby obiektów. Użyj opisu tekstowego, aby dołączyć do tego, co się dzieje. Użyj limitów czasu, aby nadać granice operacjom opartym na czasie. Nieokreślone paski postępu używają animacji, aby pokazać, że postęp jest dokonywany, ale nie zawierają żadnych innych informacji. Nie wybieraj nieokreślonego paska postępu tylko na podstawie ewentualnego braku samej dokładności.
 
-##### <a name="determinate"></a>Określony
- ![Pasek postępu określania](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901 05_Determinate")
+##### <a name="determinate"></a>Zdeterminowany
+ ![Określony pasek postępu](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
 
- **Pasek postępu określania**
+ **Określony pasek postępu**
 
- "Określony" oznacza, że operacji lub proces wymaga ograniczoną ilość czasu, nawet wtedy, gdy nie można dokładnie przewidzieć tego przedziału czasu. Jasno wskazywać ukończenia. Nie przegap pasek postępu, przejdź do 100 procent, chyba, że operacja zostanie ukończona. Animacja pasek postępu określania Przenosi od lewej do prawej z zakresu od 0 do 100%.
+ "Determinate" oznacza, że operacja lub proces wymaga ograniczonej ilości czasu, nawet jeśli nie można dokładnie przewidzieć tej ilości czasu. Wyraźnie wskazać zakończenie. Nie pozwól, aby pasek postępu przejść do 100 procent, chyba że operacja została zakończona. Określanie animacji paska postępu przesuwa się od lewej do prawej od 0 do 100%.
 
- Nigdy nie jest przenoszony do tyłu podczas operacji wskaźnik postępu. Pasek należy do przodu intensywność po rozpoczęciu operacji i dotrzeć do 100%, po jego zakończeniu. Punkt paska postępu jest przyznać użytkownikowi oszacowanie, cała operacja czas, niezależnie od tego, jak wiele kroków są zaangażowane.
+ Nigdy nie przesuwaj wskaźnika postępu do tyłu podczas operacji. Pasek powinien poruszać się do przodu stale po rozpoczęciu operacji i osiągnąć 100% po jej zakończeniu. Punkt paska postępu jest dać użytkownikowi wyobrażenie, jak długo trwa cała operacja, niezależnie od tego, ile kroków są zaangażowane.
 
-##### <a name="concurrent-reporting-stacked-progress-bars"></a>Współbieżne raportowania (paski postępu skumulowane)
- Jeśli operacja potrwa długo - prawdopodobnie kilku minut — następnie paski postępu dwóch mogą być używane, która pokazuje ogólny postęp operacji i inny wpis dla postęp bieżącego etapu. Na przykład jeśli program instalacyjny jest kopiowanie wielu plików, następnie co pasek postępu może służyć do wskazania, jak długo cały proces trwa sekundy można wskazać, jaki procent bieżącego pliku lub katalogu są kopiowane. Nie zgłaszaj więcej niż 5 współbieżnych operacji lub za pomocą paski postępu skumulowanego. Jeśli masz więcej niż 5 współbieżnych operacji lub procesów do raportu, za pomocą modalne okno dialogowe przycisk Anuluj i raport szczegóły postępu w oknie danych wyjściowych.
+##### <a name="concurrent-reporting-stacked-progress-bars"></a>Raportowanie współbieżne (skumulowane paski postępu)
+ Jeśli operacja zajmie dużo czasu - być może kilka minut - następnie można użyć dwóch pasków postępu, jeden, który pokazuje ogólny postęp dla operacji, a drugi dla postępu bieżącego kroku. Na przykład, jeśli program instalacyjny kopiuje wiele plików, jeden pasek postępu może służyć do wskazania, jak długo trwa cały proces, podczas gdy drugi może wskazać, jaki procent bieżącego pliku lub katalogu jest kopiowany. Nie należy zgłaszać więcej niż pięć równoczesnych operacji lub procesów przy użyciu skumulowanych pasków postępu. Jeśli masz więcej niż pięć równoczesnych operacji lub procesów do raportowania, użyj modalnego okna dialogowego z przyciskiem Anuluj i zgłoś szczegóły postępu do okna wyjściowego.
 
 ##### <a name="textual-descriptions"></a>Opisy tekstowe
- Użyj opis tekstowy, która ma towarzyszyć, co się dzieje i szacowany czas do ukończenia. Jeśli nie jest możliwe ustalenie, jak długo potrwa operacją, lepszym wyborem wyrażanie opinii może być animowaną ikonę zamiast pasek postępu.
+ Użyj opisu tekstowego, aby dołączyć do tego, co się dzieje i szacowanego czasu do zakończenia. Jeśli niemożliwe jest określenie, jak długo potrwa operacja, lepszym wyborem do przekazywania opinii może być animowana ikona, a nie pasek postępu.
 
- Visual Studio zawiera pasek postępu standard na pasku stanu, który mogą być używane przez dowolny produkt zintegrowane w programie Visual Studio. Opisy tekstowe co się dzieje, gdy jest animowany pasek postępu tekst na pasku stanu może być aktualizowana.
+ Visual Studio udostępnia standardowy pasek postępu na pasku stanu, który może być używany przez dowolny produkt zintegrowany z programem Visual Studio. W przypadku tekstowych opisów tego, co dzieje się podczas animowanego paska postępu, można zaktualizować tekst paska stanu.
 
 #### <a name="other-progress-indicators"></a>Inne wskaźniki postępu
 
-##### <a name="ants-animated-horizontal-dots"></a>Mrówki (animowany punktów w poziomie)
- ![Postęp Mrówki](../../extensibility/ux-guidelines/media/0903-01_ants.png "0903 01_Ants")
+##### <a name="ants-animated-horizontal-dots"></a>Mrówki (animowane kropki poziome)
+ ![Mrówki postępu](../../extensibility/ux-guidelines/media/0903-01_ants.png "0903-01_Ants")
 
- "Mrówki," animowany punktów w poziomie, stanowią wizualny materiał referencyjny dla procesu nieokreślony obustronne serwera.
+ "Mrówki", animowane poziome kropki, stanowią wizualne odniesienie do nieokreślonego procesu serwera w obie strony.
 
-##### <a name="spinner-progress-ring"></a>Pokrętła (pierścień postępu)
- ![Postęp pokrętła](../../extensibility/ux-guidelines/media/0903-02_spinner.png "0903 02_Spinner")
+##### <a name="spinner-progress-ring"></a>Pokrętło (pierścień postępu)
+ ![Pokrętło postępu](../../extensibility/ux-guidelines/media/0903-02_spinner.png "0903-02_Spinner")
 
- Pokrętła (znany także jako "pierścień postępu") jest wskaźnikiem nieokreślonego postępu używane głównie w odniesieniu do kontekstowe interfejsu użytkownika. Okrągły wskaźnik przetwarzania są wyświetlane w bliskim sąsiedztwie do jego zawartości pokrewne, takie jak nagłówek tekstową kategorii, obsługi komunikatów lub kontroli.
+ Pokrętło (znane również jako "pierścień postępu") jest nieokreślonym wskaźnikiem postępu używanym głównie w odniesieniu do kontekstowego interfejsu użytkownika. Wyświetlanie pokrętła w pobliżu powiązanej zawartości, takiej jak nagłówek kategorii tekstowej, wiadomości lub formant.
 
-##### <a name="cursor-feedback"></a>Kursor opinii
- Operacje, które zająć od 2 do 7 sekundach kursor opinii. Zazwyczaj oznacza to, za pomocą kursor oczekiwania, dostarczone przez system operacyjny. Aby uzyskać wskazówki, zobacz artykuł w witrynie MSDN [właściwość Cursors.Wait](/dotnet/api/system.windows.input.cursors.wait).
+##### <a name="cursor-feedback"></a>Informacja zwrotna kursora
+ W przypadku operacji, które trwa od 2 do 7 sekund, podaj informacje zwrotne kursora. Zazwyczaj oznacza to użycie kursora oczekiwania dostarczonego przez system operacyjny. Aby uzyskać wskazówki, zobacz artykuł MSDN [Cursors.Wait Właściwość](/dotnet/api/system.windows.input.cursors.wait).
 
-#### <a name="progress-indicator-locations"></a>Lokalizacje wskaźnik postępu
+#### <a name="progress-indicator-locations"></a>Lokalizacje wskaźników postępu
 
 ##### <a name="status-bar"></a>Pasek stanu
- Na pasku stanu zapewnia aplikacji miejsce do wyświetlenia wiadomości i przydatnych informacji do użytkownika bez przerywania pracy użytkownika. Zazwyczaj są wyświetlane w dolnej części okna, stan, postęp będzie okienko Porada narzędzi, który zawiera komunikat o miernikiem postępu w połączeniu ze wskaźnikiem pasek postępu.
+ Pasek stanu daje aplikacji miejsce do wyświetlania wiadomości i przydatnych informacji dla użytkownika bez przerywania pracy użytkownika. Zazwyczaj wyświetlany w dolnej części okna stan postępu będzie okienkiem porad narzędzi, które zawiera komunikat o miarie postępu w połączeniu ze wskaźnikiem paska postępu.
 
- ![Pasek stanu ze pasek postępu](../../extensibility/ux-guidelines/media/0903-03_statusbarprogressbar.png "0903 03_StatusBarProgressBar")
+ ![Pasek stanu z paskiem postępu](../../extensibility/ux-guidelines/media/0903-03_statusbarprogressbar.png "0903-03_StatusBarProgressBar")
 
- **Pasek stanu ze pasek postępu**
+ **Pasek stanu z paskiem postępu**
 
- ![Pasek stanu z obsługą komunikatów](../../extensibility/ux-guidelines/media/0903-04_statusbarmessage.png "0903 04_StatusBarMessage")
+ ![Pasek stanu z wiadomościami](../../extensibility/ux-guidelines/media/0903-04_statusbarmessage.png "0903-04_StatusBarMessage")
 
- **Pasek stanu ze opis tekstowy**
+ **Pasek stanu z opisem tekstowym**
 
 ##### <a name="infobar"></a>Pasek informacyjny
- Podobnie jak pasek stanu, pasek informacyjny zawiera kontekstowe powiadomienia i komunikaty, które również mogą być parowane ze wskaźnikami nieokreślonego postępu, takich jak pasek postępu lub pokrętła. Paska informacyjnego nie zawiera szczegółowego poziomu postępu lub oznaczenie określania postępu. Zobacz [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).
+ Podobnie jak pasek stanu, pasek informacji zapewnia kontekstowe powiadomienia i wiadomości, które można również sparować z nieokreślonymi wskaźnikami postępu, takimi jak pasek postępu lub pokrętło. Pasek informacji nie powinien zapewniać szczegółowego postępu poziomu ani określania wskaźnika postępu. Zobacz [Paski informacyjne](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars).
 
- ![Pasek informacyjny przy użyciu paska postępu i messaging](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903 05_InfoBar")
+ ![Pasek informacyjny z paskiem postępu i wiadomościami](../../extensibility/ux-guidelines/media/0903-05_infobar.png "0903-05_InfoBar")
 
- **Pasek informacyjny pasek postępu i opis tekstowy**
+ **Pasek informacyjny z paskiem postępu i opisem tekstowym**
 
- ![Pasek informacyjny w oknie](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903 06_InfoBarInWindow")
+ ![Pasek informacyjny wewnątrz okna](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903-06_InfoBarInWindow")
 
-##### <a name="inline"></a>wbudowane
- Wskazuje postęp wbudowane może być reprezentowany przez dowolnego typu modułu ładującego postępu. Zazwyczaj wskaźnik postępu jest sparowana z obsługą komunikatów, ale nie jest wymagane.
+##### <a name="inline"></a>Śródwierszowo
+ Wbudowane wskazanie postępu może być reprezentowane przez dowolny typ modułu ładującego postępu. Zazwyczaj wskaźnik postępu jest sparowany z wiadomością, ale nie jest to wymagane.
 
- ![Wbudowane postępu pokrętła](../../extensibility/ux-guidelines/media/0903-07_inlinespinner.png "0903 07_InlineSpinner")
+ ![Pokrętło postępu wbudowanego](../../extensibility/ux-guidelines/media/0903-07_inlinespinner.png "0903-07_InlineSpinner")
 
- **W połączeniu z opis tekstowy pokrętła**
+ **Spinner w połączeniu z opisem tekstowym**
 
- ![Wbudowane skumulowany paski postępu](../../extensibility/ux-guidelines/media/0903-08_inlinestackedprogress.png "0903 08_InlineStackedProgress")
+ ![Paski postępu skumulowane w linii](../../extensibility/ux-guidelines/media/0903-08_inlinestackedprogress.png "0903-08_InlineStackedProgress")
 
- **Paski postępu skumulowany określania**
+ **Określanie skumulowanych pasków postępu**
 
- ![Wiadomości postępu wbudowane](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903 09_InlineText")
+ ![Komunikaty o postępie wbudowanym](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903-09_InlineText")
 
- **Tekst wbudowany Eksploratora serwera: Trwa odświeżanie...**
+ **Tekst w tekście Eksploratora serwera: Odświeżanie...**
 
 ##### <a name="tool-windows"></a>Okna narzędzi
- Wskazuje postęp globalnego jest reprezentowany przez pasek postępu indeterminate umieszczony bezpośrednio poniżej paska narzędzi.
+ Globalne wskazanie postępu jest reprezentowane przez nieokreślony pasek postępu umieszczony bezpośrednio pod paskiem narzędzi.
 
- ![Pasek postępu nieokreślony globalnego](../../extensibility/ux-guidelines/media/0903-23_globalindeterminate.png "0903 23_GlobalIndeterminate")
+ ![Globalny nieokreślony pasek postępu](../../extensibility/ux-guidelines/media/0903-23_globalindeterminate.png "0903-23_GlobalIndeterminate")
 
- **Team Explorer globalnego nieokreślony ProgressBar**
+ **Pasek postępu nieokreślonego globalnego programu Team Explorer**
 
 ##### <a name="dialogs"></a>Okna dialogowe
- Okna dialogowe mogą zawierać żadnego z typów modułu ładującego postępu. Wskaźniki postępu może być sparowane z obsługą komunikatów także w połączeniu z oznaczaniem postępu reprezentują szczegółową i procesy podrzędne na wielu poziomach.
+ Okna dialogowe mogą zawierać dowolny typ modułu ładującego postępu. Wskaźniki postępu można sparować z wiadomością, a także w połączeniu z wieloma poziomami wskazywała postęp, aby reprezentować szczegółowe i podprocesy.
 
- ![Okno dialogowe z wieloma typami wskaźnika postępu](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903 11_Dialog")
+ ![Okno dialogowe z wieloma typami wskaźników postępu](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903-11_Dialog")
 
- **Visual Studio okna dialogowego przy użyciu procesów współbieżnych i wiele typów wskaźnika postępu**
+ **Okno dialogowe programu Visual Studio z równoczesnymi procesami i wieloma typami wskaźników postępu**
 
- ![Okno dialogowe z modułu ładującego postępu i komunikatów](../../extensibility/ux-guidelines/media/0903-12_dialog2.png "0903 12_Dialog2")
+ ![Okno dialogowe z modułem ładujący postępu i wiadomością](../../extensibility/ux-guidelines/media/0903-12_dialog2.png "0903-12_Dialog2")
 
- **Visual Studio okna dialogowego za pomocą modułu ładującego postępu i funkcji komunikatów w wierszu polecenia**
+ **Okno dialogowe programu Visual Studio z programem ładującym postęp i wbudowanym poleceniem obsługi wiadomości**
 
-##### <a name="document-well"></a>Dobrze dokumentu
- Dokument również można wyświetlić wiele typów modułu ładującego postęp w połączeniu z formantami.
+##### <a name="document-well"></a>Dobrze dokumentuj
+ Dokument dobrze można wyświetlić wiele typów modułu ładującego postępu w połączeniu z formantami.
 
- ![Postęp oraz obsługi komunikatów w dokumencie](../../extensibility/ux-guidelines/media/0903-13_documentwell.png "0903 13_DocumentWell")
+ ![Komunikaty o postępach w dokumencie](../../extensibility/ux-guidelines/media/0903-13_documentwell.png "0903-13_DocumentWell")
 
- **Pasek postępu indeterminate poniżej paska narzędzi**
+ **Nieokreślony pasek postępu poniżej paska narzędzi**
 
 ##### <a name="output-window"></a>Okno wyniku
- W oknie danych wyjściowych jest odpowiednia do obsługi procesu postępu i stanu aktualnych za pośrednictwem wiadomości tekstowej wbudowanego. Należy użyć na pasku stanu oraz wszelkie dane wyjściowe okna postępu raportowania.
+ Okno Dane wyjściowe jest odpowiednie do obsługi postępu procesu i bieżącego stanu postępu za pośrednictwem wbudowanej wiadomości tekstowej. Należy użyć paska stanu wraz z dowolnym raportowaniem postępu okna danych wyjściowych.
 
- ![Postęp komunikaty w oknie danych wyjściowych](../../extensibility/ux-guidelines/media/0903-14_outputwindow.png "0903 14_OutputWindow")
+ ![Komunikaty o postępie w oknie wyjściowym](../../extensibility/ux-guidelines/media/0903-14_outputwindow.png "0903-14_OutputWindow")
 
- **Okno danych wyjściowych ze stanem ciągły proces i zaczekaj, obsługi komunikatów**
+ **Okno wyjściowe z bieżącym stanem procesu i wiadomościami oczekiwania**
 
-## <a name="BKMK_Infobars"></a> Infobars
+## <a name="infobars"></a><a name="BKMK_Infobars"></a>Paski informacyjne
 
 ### <a name="overview"></a>Omówienie
- Infobars przyznać użytkownikowi wskaźnik blisko ich punktu uwagi i za pomocą kontroli udostępnionego informacyjnym zapewnia spójność wyglądu i interakcji.
+ Paski informacyjne dają użytkownikowi wskaźnik zbliżony do punktu uwagi, a użycie udostępnionego formantu paska informacyjnego zapewnia spójność wyglądu i interakcji.
 
- ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![Pasek informacyjny](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
- **Infobars w programie Visual Studio**
+ **Paski informacyjne w programie Visual Studio**
 
-#### <a name="appropriate-uses-for-an-infobar"></a>Zastosowań odpowiednie pasek informacyjny
+#### <a name="appropriate-uses-for-an-infobar"></a>Odpowiednie zastosowania paska informacyjnego
 
-- Aby przyznać użytkownikowi wiadomość bez blokowania, ale ważne istotne dla bieżącego kontekstu
+- Aby nadać użytkownikowi nieblokujące, ale ważne wiadomości istotne dla bieżącego kontekstu
 
-- Aby wskazać, że interfejs użytkownika określonego stanu lub warunek, który niesie ze sobą skutki niektórych interakcji, takich jak debugowanie historyczne
+- Aby wskazać, że interfejs użytkownika jest w określonym stanie lub stanie, który niesie ze sobą pewne implikacje interakcji, takie jak debugowanie historyczne
 
-- Powiadomienie użytkownika, że system wykrył problemy, takie jak kiedy rozszerzenie jest przyczyną problemów z wydajnością
+- Aby powiadomić użytkownika, że system wykrył problemy, takie jak gdy rozszerzenie powoduje problemy z wydajnością
 
-- Aby umożliwić użytkownikowi łatwo podjęcia działania, np. gdy Edytor wykryje, że plik zawiera różne znaki tabulacji i spacje
+- Aby zapewnić użytkownikowi sposób łatwego podejmowania działań, na przykład gdy edytor wykryje, że plik ma mieszane karty i spacje
 
-##### <a name="do"></a>Należy wykonać:
+##### <a name="do"></a>Zrobić:
 
-- Tekst komunikatu informacyjnym należy zachować krótki i na.
+- Tekst wiadomości na pasku informacyjnym jest krótki i do tego stopnia.
 
-- Zachowaj tekst na łącza i przyciski zwięzły.
+- Zachowaj tekst na łączach i przyciskach zwięzłe.
 
-- Upewnij się, że opcje "action", które zapewniają użytkownikom są minimalne, pokazujący tylko wymagane akcje.
+- Upewnij się, że opcje "akcji", które udostępniasz użytkownikom, są minimalne, pokazując tylko wymagane akcje.
 
 ##### <a name="dont"></a>Nie:
 
-- Użyj pasek informacyjny, aby oferować standardowych poleceń, które powinny zostać umieszczone na pasku narzędzi.
+- Użyj paska informacyjnego, aby oferować standardowe polecenia, które powinny być umieszczone na pasku narzędzi.
 
-- Użyj paska informacyjnego zamiast modalne okno dialogowe.
+- Zamiast modalnego okna dialogowego należy użyć paska informacyjnego.
 
-- Utwórz wiadomość zmiennoprzecinkowych poza oknem.
+- Utwórz wiadomość przestawną poza oknem.
 
-- Użyj wielu infobars w kilku lokalizacjach, w tym samym oknie.
+- Użyj wielu pasków informacyjnych w kilku lokalizacjach w tym samym oknie.
 
-#### <a name="can-multiple-infobars-show-at-the-same-time"></a>Czy wiele infobars można wyświetlić w tym samym czasie?
- Tak, wiele infobars można pokazać, w tym samym czasie. Pojawi się one w kto, obsługiwane w pierwszej kolejności za pomocą pierwszego przedstawiający na górze, a dodatkowe infobars przedstawiający poniżej paska informacyjnego.
+#### <a name="can-multiple-infobars-show-at-the-same-time"></a>Czy wiele pasków informacyjnych może być wyświetlane w tym samym czasie?
+ Tak, wiele pasków informacyjnych może być wyświetlane w tym samym czasie. Będą one wyświetlane w kolejności "kto pierwszy, ten lepszy" z pierwszym paskiem informacyjnym wyświetlanym na górze i dodatkowymi paskami informacyjnymi wyświetlanymi poniżej.
 
- Użytkownik będzie widział maksymalnie trzech infobars w czasie, po, dostępnych więcej infobars region informacyjnym staną się przewijany.
+ Użytkownik zobaczy maksymalnie trzy paski informacyjne naraz, po czym, jeśli dostępnych jest więcej pasków informacyjnych, obszar paska informacyjnego stanie się przewijany.
 
-### <a name="creating-an-infobar"></a>Tworzenie pasek informacyjny
- Pasek informacyjny zawiera cztery sekcje, od lewej do prawej:
+### <a name="creating-an-infobar"></a>Tworzenie paska informacyjnego
+ Pasek informacyjny ma cztery sekcje, od lewej do prawej:
 
-- **Ikona:** Jest to, gdzie należy dodać wszystkie ikony chcesz wyświetlić na pasku informacyjnym, takie jak ikona ostrzeżenia.
+- **Ikona:** W tym miejscu należy dodać dowolną ikonę, którą chcesz wyświetlić dla paska informacyjnego, taką jak ikona ostrzeżenia.
 
-- **Tekst:** Można dodać tekst opisujący użytkownika scenariusz/sytuacji trwa wraz z linkami do tekstu, jeśli jest to wymagane. Pamiętaj, aby tekst zwięzły.
+- **Tekst:** Można dodać tekst, aby opisać scenariusz/sytuację użytkownika jest w, wraz z łączami w tekście, jeśli jest to wymagane. Pamiętaj, aby tekst był zwięzły.
 
-- **Akcje:** W tej sekcji może zawierać łącza i przyciski dla akcji, które użytkownik może robić na Twoje informacyjnym.
+- **Działania:** Ta sekcja powinna zawierać łącza i przyciski dla działań, które użytkownik może podjąć na pasku informacyjnym.
 
-- **Przycisk zamknięcia:** Ostatnia sekcja po prawej stronie może mieć przycisk Zamknij.
+- **Przycisk Zamknij:** Ostatnia sekcja po prawej stronie może mieć przycisk zamknięcia.
 
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Tworzenie standardowego paska informacyjnego w kodzie zarządzanym
- Klasa InfoBarModel może służyć do tworzenia źródła danych dla paska informacyjnego. Użyj jednej z tych czterech konstruktorów:
+ Klasa InfoBarModel może służyć do tworzenia źródła danych dla paska informacyjnego. Użyj jednego z tych czterech konstruktorów:
 
 ```
 public InfoBarModel(IEnumerable<IVsInfoBarTextSpan> textSpans, ImageMoniker image = default(ImageMoniker), bool isCloseButtonVisible = true);
@@ -356,9 +356,9 @@ public InfoBarModel(IEnumerable<IVsInfoBarTextSpan> textSpans, IEnumerable<IVsIn
 public InfoBarModel(string text, IEnumerable<IVsInfoBarActionItem> actionItems, ImageMoniker image = default(ImageMoniker), bool isCloseButtonVisible = true);
 ```
 
- Oto przykład tworzenia InfoBarModel z tekstem hiperlinku, przycisk akcji i ikony.
+ Oto przykład, który tworzy Program InfoBarModel z tekstem z hiperłączem, przyciskiem akcji i ikoną.
 
- ![Pasek informacyjny z hiperlinkiem](../../extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904 02_InfobarHyperlink")
+ ![Pasek informacyjny z hiperłączem](../../extensibility/ux-guidelines/media/0904-02_infobarhyperlink.png "0904-02_InfobarHyperlink")
 
 ```
 var infoBar = new InfoBarModel(
@@ -377,8 +377,8 @@ var infoBar = new InfoBarModel(
 
 ```
 
-#### <a name="creating-a-standard-infobar-in-native-code"></a>Tworzenie standardowego paska informacyjnego w kodzie natywnym
- Implementuj interfejs IVsInfoBar w celu zapewnienia pasek informacyjny z kodu natywnego.
+#### <a name="creating-a-standard-infobar-in-native-code"></a>Tworzenie standardowego paska informacyjnego w kodzie macierzystym
+ Implementuj interfejs IVsInfoBar w celu zapewnienia paska informacyjnego z kodu macierzystego.
 
 ```
 public interface IVsInfoBar
@@ -391,8 +391,8 @@ public interface IVsInfoBar
 
 ```
 
-#### <a name="getting-an-infobar-uielement-from-an-infobar"></a>Pobieranie pasek informacyjny UIElement z pasek informacyjny
- Implementacja InfoBarModel lub IVsInfoBar są modeli danych, które musi być włączony w element interfejsu użytkownika, aby można było wyświetlane w interfejsie użytkownika. Element interfejsu użytkownika mogą być pobierane przy użyciu usługi elementu SVsInfoBarUIFactory/IVsInfoBarUIFactory.
+#### <a name="getting-an-infobar-uielement-from-an-infobar"></a>Uzyskiwanie uielement paska informacyjnego z paska informacyjnego
+ Implementacja Programu InfoBarModel lub IVsInfoBar to modele danych, które muszą zostać przekształcone w UIElement, aby były wyświetlane w interfejsie użytkownika. UIElement można pobrać za pomocą usługi SVsInfoBarUIFactory/IVsInfoBarUIFactory.
 
 ```
 private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiElement)
@@ -410,20 +410,20 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 ```
 
 ### <a name="placement"></a>Umieszczanie
- Infobars mogą być wyświetlane w co najmniej jeden z następujących lokalizacji:
+ Paski informacyjne mogą być wyświetlane w co najmniej jednej z następujących lokalizacji:
 
 - Okna narzędzi
 
-- W ramach karty dokumentu
+- W obrębie karty dokumentu
 
 > [!IMPORTANT]
-> Istnieje możliwość pozycji pasek informacyjny zapewnienie komunikat o kontekście globalnym. Ten pojawi się pomiędzy paskami narzędzi i dobrze dokumentu. Nie jest to zalecane, ponieważ powoduje problemy z "szybkiego dostępu i jerk" środowiska IDE i należy ich unikać, chyba że absolutnie konieczne i właściwe.
+> Możliwe jest umieszczenie paska informacyjnego, aby przekazać komunikat o kontekście globalnym. To pojawi się między paskami narzędzi a dokumentem dobrze. Nie jest to zalecane, ponieważ powoduje problemy z "skok i szarpnięcie" IDE i należy unikać, chyba że jest to absolutnie konieczne i właściwe.
 
-#### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Umieszczenie pasek informacyjny w obiektu ToolWindowPane
- Metoda ToolWindowPane.AddInfoBar(IVsInfoBar) może służyć do dodawania pasek informacyjny do okna narzędzi. Ten interfejs API albo dodać IVsInfoBar, (które InfoBarModel jest domyślna implementacja) lub elementu IVsUIElement.
+#### <a name="placing-an-infobar-in-a-toolwindowpane"></a>Umieszczanie paska informacyjnego w pokładzie narzędzia ToolWindowPane
+ Metoda ToolWindowPane.AddInfoBar(IVsInfoBar) może służyć do dodawania paska informacyjnego do okna narzędzia. Ten interfejs API można dodać IVsInfoBar (z których InfoBarModel jest domyślną implementacją) lub IVsUIElement.
 
-#### <a name="placing-an-infobar-in-a-document-or-non-toolwindowpane"></a>Umieszczenie pasek informacyjny w dokumencie lub innych obiektu ToolWindowPane
- Umieszcza pasek informacyjny w dowolnym IVsWindowFrame, należy użyć właściwości elementu vsfpropid_infobarhost zakończyło można uzyskać IVsInfoBarHost ramki, a następnie dodaj pasek informacyjny element interfejsu użytkownika.
+#### <a name="placing-an-infobar-in-a-document-or-non-toolwindowpane"></a>Umieszczanie paska informacyjnego w dokumencie lub w poprzek okna nienarzędziewadowego
+ Aby umieścić pasek informacyjny w dowolnym IVsWindowFrame, użyj właściwości VSFPROPID_InfoBarHost, aby uzyskać IVsInfoBarHost dla ramki, a następnie dodaj pasek informacyjny UIElement.
 
 ```
 private void AddInfoBar(IVsWindowFrame frame, IVsUIElement uiElement)
@@ -449,17 +449,17 @@ private bool TryGetInfoBarHost(IVsWindowFrame frame, out IVsInfoBarHost infoBarH
 
 ```
 
-#### <a name="placing-an-infobar-in-the-main-window"></a>Umieszczenie pasek informacyjny w oknie głównym
- Aby umieścić pasek informacyjny w głównym oknie, użyj VSSPROPID_MainWindowInfoBarHost usługi elementu IVsShell, aby pobrać IVsInfoBarHost okno główne, a następnie dodać pasek informacyjny UIElement do niego.
+#### <a name="placing-an-infobar-in-the-main-window"></a>Umieszczanie paska informacyjnego w oknie głównym
+ Aby umieścić pasek informacji w oknie głównym, użyj VSSPROPID_MainWindowInfoBarHost usługi IVsShell, aby uzyskać IVsInfoBarHost w oknie głównym, a następnie dodaj do niego uielement paska informacyjnego.
 
-### <a name="will-i-know-when-the-user-takes-action-in-my-infobar"></a>Mam wiedzieć, gdy użytkownik wykona akcję na Moje informacyjnym?
- Tak, możemy zwróci każdej akcji zdarzeń do autora paska informacyjnego. Następnie jest autorem informacyjnym, aby podjąć działania w środowisku IDE, w oparciu o wybór użytkownika na pasku informacyjnym. Infobars zostaną automatycznie usunięte z hosta, którego Zamknij przycisk został kliknięty, ale dodatkowa praca będzie polegała, jeśli inne potrzeby infobars ma zostać usunięta po zamknięciu. Dane telemetryczne trzeba będzie również rejestrowany niezależnie przez każdego paska informacyjnego.
+### <a name="will-i-know-when-the-user-takes-action-in-my-infobar"></a>Czy wiem, kiedy użytkownik podejmie działania na pasku informacyjnym?
+ Tak, każdą akcję wydarzenia zwrócimy autorowi paska informacyjnego. Następnie do autora paska informacyjnego do podjęcia działań w IDE na podstawie wyboru użytkownika na pasku informacyjnym. Paski informacyjne zostaną automatycznie usunięte z hosta, którego przycisk Zamknij został kliknięty, ale dodatkowa praca jest wymagana, jeśli inne paski informacyjne muszą zostać usunięte po zamknięciu. Telemetria również musi być rejestrowane niezależnie przez każdy pasek informacyjny.
 
-#### <a name="receiving-infobar-events-in-a-toolwindowpane"></a>Odbieranie zdarzeń pasek informacyjny w obiektu ToolWindowPane
- Elementu ToolWindowPane ma dwa zdarzenia dla infobars. Zdarzenie InfoBarClosed jest wywoływane, gdy pasek informacyjny w obiektu ToolWindowPane jest zamknięty. InfoBarActionItemClicked zdarzenie jest wywoływane po kliknięciu hiperlinku lub przycisk wewnątrz paska informacyjnego.
+#### <a name="receiving-infobar-events-in-a-toolwindowpane"></a>Odbieranie zdarzeń na pasku informacyjnym w posyłce ToolWindowPane
+ ToolWindowPane ma dwa zdarzenia dla pasków informacyjnych. Zdarzenie InfoBarClosed jest wywoływane po zamknięciu paska informacyjnego w platformie ToolWindowPane. Zdarzenie InfoBarActionItemClicked jest wywoływane po kliknięciu hiperłącza lub przycisku wewnątrz paska informacyjnego.
 
-#### <a name="receiving-infobar-events-directly-from-the-uielement"></a>Odbieranie zdarzeń o przerwaniu pracy bezpośrednio z element interfejsu użytkownika
- IVsInfoBarUIElement.Advise może służyć do subskrybowania zdarzenia bezpośrednio z poziomu paska informacyjnego element interfejsu użytkownika. Implementowanie IVsInfoBarUIEvents umożliwi tworzenie otrzymywać Zamknij, a następnie kliknij przycisk zdarzenia.
+#### <a name="receiving-infobar-events-directly-from-the-uielement"></a>Odbieranie zdarzeń na pasku informacyjnym bezpośrednio z UIElement
+ IVsInfoBarUIElement.Advise może służyć do subskrybowania zdarzeń bezpośrednio z uielement paska informacyjnego. Implementacja IVsInfoBarUIEvents pozwoli autorowi odbierać zdarzenia zamknięcia i kliknięcia.
 
 ```
 public interface IVsInfoBarUIEvents
@@ -470,52 +470,52 @@ public interface IVsInfoBarUIEvents
 
 ```
 
-## <a name="BKMK_ErrorValidation"></a> Błąd weryfikacji
- Gdy użytkownik wprowadzi informacje, które nie są dopuszczalne, np. gdy to pole wymagane jest pomijana, lub podczas wprowadzania danych w niepoprawnym formacie, zaleca się użycie kontroli weryfikacji lub opinie, obok kontrolki zamiast blokowania okna dialogowego błędu okna podręcznego.
+## <a name="error-validation"></a><a name="BKMK_ErrorValidation"></a>Sprawdzanie poprawności błędów
+ Gdy użytkownik wprowadza informacje, które nie są akceptowane, takie jak gdy wymagane pole jest pomijane lub gdy dane są wprowadzane w niepoprawnym formacie, lepiej jest użyć sprawdzania poprawności formantu lub opinii w pobliżu formantu zamiast używać okna dialogowego błędu wyskakujących okienek blokowania.
 
 ### <a name="field-validation"></a>Sprawdzanie poprawności pól
- Weryfikacja formularza i pola składa się z trzech składników: kontrolki, ikonę i etykietkę narzędzia. Chociaż kilka typów formantów, użyć tej funkcji, pola tekstowego będzie służyć jako przykład.
+ Sprawdzanie poprawności formularza i pola składa się z trzech składników: formantu, ikony i etykietki narzędzia. Podczas gdy kilka typów formantów można użyć tego, pole tekstowe będzie używany jako przykład.
 
- ![Weryfikacja pola &#40;puste&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")
+ ![Sprawdzanie poprawności pola &#40;puste&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905-01_FieldValidation")
 
- Jeśli pole jest wymagane, powinien istnieć limitu, podając tekstu  **\<wymagane >** i tło pola powinny być światła żółty (VSColor: `Environment.ControlEditRequiredBackground`), a kolor pierwszego planu będzie szary (VSColor: `Environment.ControlEditRequiredHintText`):
+ Jeśli pole jest wymagane, powinien być tekst znaku wodnego z ** \<napisem Wymagane>** a tło pola `Environment.ControlEditRequiredBackground`powinno być jasnożółte (VSColor: ), a pierwszy plan powinien być szary (VSColor): `Environment.ControlEditRequiredHintText`
 
- ![Weryfikacja z etykietą "Required" pola](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905 02_FieldValidationRequired")
+ ![Sprawdzanie poprawności pola z etykietą "Wymagane"](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905-02_FieldValidationRequired")
 
- Program można określić, czy kontrolka jest w stanie *Nieprawidłowa zawartość wprowadzono* gdy fokus jest przenoszony do innej kontrolki lub gdy użytkownik kliknie przycisk Zatwierdź [OK] lub po użytkownik zapisze dokument lub formularz.
+ Program może ustalić, że formant jest w stanie *nieprawidłowej zawartości wprowadzonej* podczas przenoszenia fokusu do innego formantu lub gdy użytkownik kliknie przycisk zatwierdzania [OK] lub gdy użytkownik zapisze dokument lub formularz.
 
- Gdy zostanie uznane za nieprawidłowy stan zawartości, pojawi się ikona wewnątrz formantu lub po prostu obok niej. Etykietka narzędzia zawierająca opis błędu powinna zostać wyświetlona po najechaniu wskaźnikiem ikony lub formant. Ponadto 1-pikselowe obramowanie powinna pojawić się wokół formantu, który tworzy nieprawidłowy stan.
+ Po określeniu nieprawidłowego stanu zawartości ikona pojawia się wewnątrz formantu lub tuż obok niego. Etykietka narzędzia opisująca błąd powinna pojawić się po najechaniu kursorem myszy na ikonę lub formant. Ponadto obramowanie 1 piksela powinno pojawić się wokół formantu, który tworzy nieprawidłowy stan.
 
- ![Pola specyfikacji układ weryfikacji](../../extensibility/ux-guidelines/media/0905-03_layoutspecs.png "0905 03_LayoutSpecs")
+ ![Specyfikacje układu sprawdzania poprawności pola](../../extensibility/ux-guidelines/media/0905-03_layoutspecs.png "0905-03_LayoutSpecs")
 
- **Specyfikacje układu dla sprawdzanie poprawności pól**
+ **Specyfikacje układu sprawdzania poprawności pola**
 
-#### <a name="acceptable-variations-for-icon-location"></a>Odmian dopuszczalne dla lokalizacji ikony
- Dostępne są niezliczone unikatowych przypadków, w których użytkownicy muszą być poinformowany o błędach weryfikacji. Biorąc pod uwagę — typ formantu i Konfiguracja interfejsu użytkownika wybierz odpowiednie do danej sytuacji położenie ikony.
+#### <a name="acceptable-variations-for-icon-location"></a>Dopuszczalne odmiany lokalizacji ikon
+ Istnieje wiele unikatowych przypadków, w których użytkownicy muszą być informowani o błędach sprawdzania poprawności. Biorąc pod uwagę typ formantu i konfigurację interfejsu użytkownika, wybierz położenie ikony odpowiednie dla twojej sytuacji.
 
- ![Dopuszczalne lokalizacje dla lokalizacji ikony](../../extensibility/ux-guidelines/media/0905-04_iconlocation.png "0905 04_IconLocation")
+ ![Dopuszczalne lokalizacje dla lokalizacji ikon](../../extensibility/ux-guidelines/media/0905-04_iconlocation.png "0905-04_IconLocation")
 
- **Dopuszczalne odmiany dla lokalizacji ikony sprawdzanie poprawności pól**
+ **Dopuszczalne różnice dla lokalizacji ikon sprawdzania poprawności pola**
 
-#### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>Weryfikacja wymaga rund do serwera lub połączenia sieciowego
- W niektórych przypadkach komunikacji dwustronnej z serwerem jest wymagane, aby sprawdzić zawartość, a istotne pokazać postęp zweryfikowana i stany błędu. Poniższy rysunek przedstawia przykład takim i zalecane interfejsu użytkownika.
+#### <a name="validation-requiring-a-round-trip-to-a-server-or-network-connection"></a>Sprawdzanie poprawności wymagające połączenia z serwerem lub siecią w obie strony
+ W niektórych przypadkach do weryfikacji zawartości wymagana jest podróż w obie strony do serwera i ważne byłoby wyświetlenie stanu postępu użytkownika, weryfikacji i błędów. Poniższy rysunek przedstawia przykład tego przypadku i zalecany interfejs użytkownika.
 
- ![Weryfikacja obejmująca komunikacji dwustronnej z serwerem](../../extensibility/ux-guidelines/media/0905-05_roundtrip.png "0905 05_RoundTrip")
+ ![Sprawdzanie poprawności obejmujące podróż w obie strony do serwera](../../extensibility/ux-guidelines/media/0905-05_roundtrip.png "0905-05_RoundTrip")
 
- **Weryfikacja obejmująca komunikacji dwustronnej z serwerem**
+ **Sprawdzanie poprawności obejmujące podróż w obie strony do serwera**
 
- Pamiętaj, że odpowiednie dostępnego miejsca z prawej strony formantu musi być podana w celu uwzględnienia tekst "Weryfikowanie..." i "Spróbuj ponownie".
+ Należy pamiętać, że aby uwzględnić "Weryfikację..." i "Ponów próbę".
 
 #### <a name="in-place-warning-text"></a>Tekst ostrzeżenia w miejscu
- Gdy ma miejsce dostępne do umieszczenia komunikat o błędzie blisko kontrolki w stanie błędu, zalecane jest przy użyciu samodzielnie etykietki narzędzia.
+ Gdy jest dostępna przestrzeń, aby umieścić komunikat o błędzie w pobliżu formantu w stanie błędu, jest to korzystne dla korzystania z etykietki narzędzia sam.
 
- ![W&#45;umieść ostrzeżenie](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")
+ ![W&#45;miejscu ostrzeżenie](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905-06_InPlaceWarning")
 
  **Tekst ostrzeżenia w miejscu**
 
 #### <a name="watermarks"></a>Znaki wodne
- Czasami całego kontroli lub okna jest w stanie błędu. W takiej sytuacji należy użyć znaku wodnego, aby wskazać błąd.
+ Czasami cały formant lub okno jest w stanie błędu. W tej sytuacji użyj znaku wodnego, aby wskazać błąd.
 
- ![Znak wodny](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")
+ ![Znak wodny](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")
 
- **Sprawdzanie poprawności pól znaku wodnego**
+ **Sprawdzanie poprawności pola znaku wodnego**

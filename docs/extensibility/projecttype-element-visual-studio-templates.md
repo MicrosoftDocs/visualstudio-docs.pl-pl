@@ -1,5 +1,5 @@
 ---
-title: PROJECTTYPE — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element ProjectType (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 494f8d3ab204a599e8d3708d07a56c87658b97d4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311913"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701805"
 ---
-# <a name="projecttype-element-visual-studio-templates"></a>PROJECTTYPE — element (szablony Visual Studio)
-Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej grupy w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.
+# <a name="projecttype-element-visual-studio-templates"></a>Element ProjectType (szablony programu Visual Studio)
+Kategoryzuje szablon projektu tak, aby był wyświetlany w określonej grupie w oknie dialogowym **Nowy projekt** lub Dodaj **nowy element.**
 
 > [!WARNING]
-> Szablony projektów są obsługiwane dla języka C++, począwszy od programu Visual Studio 2012. Nie są obsługiwane w języku C++ w Visual Studio 2010 i starszych wersji.
+> Szablony projektów są obsługiwane dla języka C++ począwszy od programu Visual Studio 2012. Nie są one obsługiwane dla języka C++ w programie Visual Studio 2010 i wcześniejszych wersjach.
 
- \<VSTemplate> \<TemplateData> \<ProjectType>
+ \<> \<> TemplateData> \<ProjectType>
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,28 +47,28 @@ Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej gr
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ta wartość określa typ projektu szablonu zostanie utworzona i musi zawierać jeden z następujących wartości:
+ Ta wartość określa typ projektu, który zostanie utworzony przez szablon, i musi zawierać jedną z następujących wartości:
 
-- `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu lub elementu.
+- `CSharp`: Określa, że szablon [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] tworzy projekt lub element.
 
-- `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu lub elementu.
+- `VisualBasic`: Określa, że szablon [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tworzy projekt lub element.
 
-- `Web`: Określa, że ten szablon tworzy projekt sieci Web lub elementu. Jeśli `ProjectType` element zawiera tę wartość, język projektu lub elementu jest zdefiniowany w [projectsubtype — Element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
+- `Web`: Określa, że szablon tworzy projekt lub element sieci Web. Jeśli `ProjectType` element zawiera tę wartość, język projektu lub elementu jest zdefiniowany w [ProjectSubType Element (Szablony programu Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
 
 ## <a name="remarks"></a>Uwagi
- `ProjectType` jest wymaganym elementem podrzędnym elementu `TemplateData`.
+ `ProjectType`jest wymaganym elementem `TemplateData`podrzędnym .
 
- Wartość `ProjectType` element określa, gdzie szablon znajduje się w **nowy projekt** lub **Dodaj nowy element** okno dialogowe. Na przykład szablon z `ProjectType` wartość `CSharp` pojawia się w obszarze **Visual C#** w węźle **nowy projekt** okno dialogowe.
+ Wartość `ProjectType` elementu określa, gdzie szablon znajduje się w oknie dialogowym **Nowy projekt** lub Dodaj nowy **element.** Na przykład szablon o `ProjectType` `CSharp` wartości pojawia się w węźle **Visual C#** w oknie dialogowym **Nowy projekt.**
 
- Podtyp szablonu można określić za pomocą [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elementu.
+ Podtyp szablonu można określić za pomocą [elementu ProjectSubType.](../extensibility/projectsubtype-element-visual-studio-templates.md)
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -94,7 +94,7 @@ Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej gr
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Projectsubtype — element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+- [Element ProjectSubType (szablony programu Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
