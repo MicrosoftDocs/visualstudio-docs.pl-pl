@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Clone | Dokumentacja firmy Microsoft
+title: IEnumDebugCodeContexts2::Klonowanie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Clone
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fe7a3929726b5708884f96b624aac7b453f4c8d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e860ec7f20e6578c9d43fa5483f4aea8b8867678
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331383"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80717361"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
-Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.
+Zwraca kopię bieżącego wyliczenia jako osobny obiekt.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Parametry
 `ppEnum`\
-[out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
+[na zewnątrz] Zwraca kopię tego wyliczenia jako oddzielny obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.
+ Kopia wyliczenia ma taki sam stan jak oryginał w czasie, gdy ta metoda jest wywoływana. Jednak stany kopii i oryginału są oddzielne i mogą być zmieniane indywidualnie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

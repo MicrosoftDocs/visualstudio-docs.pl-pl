@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpoint2::GetBreakpointResolution | Dokumentacja firmy Microsoft
+title: IDebugErrorBreakpoint2::GetBreakpointResolution | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2::GetBreakpointResolution
 ms.assetid: 1c2324ed-2a11-4e63-8f3a-f420c7a4018b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88109cce680852549bbbfda9c30cd0f809f9e723
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7936a130afb1b0bf1dd4d3f4cc092090fa41ee39
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344958"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730158"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
-Pobiera rozwiązanie błąd punktu przerwania, który opisuje błąd.
+Pobiera rozdzielczość błędu punktu przerwania, który opisuje błąd.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Parametry
 `ppErrorResolution`\
-[out] Zwraca [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) obiektu, który opisuje błąd.
+[na zewnątrz] Zwraca [obiekt IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) opisujący błąd.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
