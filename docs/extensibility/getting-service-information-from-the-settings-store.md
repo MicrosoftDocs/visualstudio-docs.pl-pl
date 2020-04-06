@@ -1,28 +1,28 @@
 ---
-title: Pobieranie informacji o usłudze z magazynu ustawień | Microsoft Docs
+title: Uzyskiwanie informacji o usłudze z Magazynu ustawień | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51aa0369793fe5dc4b39fe510c069a7ec93d102a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647978"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711372"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Pobierz informacje o usłudze z magazynu ustawień
-Aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest zainstalowana, można użyć magazynu ustawień. Musisz znać typ klasy usługi.
+Można użyć magazynu ustawień, aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest zainstalowana. Musisz znać typ klasy usługi.
 
 ## <a name="to-list-the-available-services"></a>Aby wyświetlić listę dostępnych usług
 
-1. Utwórz projekt VSIX o nazwie `FindServicesExtension` a następnie dodaj polecenie niestandardowe o nazwie `FindServicesCommand`. Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Utwórz projekt VSIX o nazwie, `FindServicesExtension` `FindServicesCommand`a następnie dodaj niestandardowe polecenie o nazwie . Aby uzyskać więcej informacji na temat tworzenia polecenia niestandardowego, zobacz [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. W *FindServicesCommand.cs*Dodaj następujące dyrektywy using:
+2. W *FindServicesCommand.cs*dodaj następujące elementy za pomocą dyrektyw:
 
     ```csharp
     using System.Collections.Generic;
@@ -31,7 +31,7 @@ Aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest 
     using System.Windows.Forms;
     ```
 
-3. Pobierz magazyn ustawień konfiguracji, a następnie Znajdź podkolekcję o nazwie Services. Ta kolekcja zawiera wszystkie dostępne usługi. W metodzie `MenuItemCommand` usuń istniejący kod i zastąp go następującym:
+3. Pobierz magazyn ustawień konfiguracji, a następnie znajdź podkolekcję o nazwie Usługi. Ta kolekcja zawiera wszystkie dostępne usługi. W `MenuItemCommand` metodzie usuń istniejący kod i zastąp go następującymi:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -50,18 +50,18 @@ Aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest 
     }
     ```
 
-4. Skompiluj projekt i Rozpocznij debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.
+4. Skompiluj projekt i rozpocznij debugowanie. Pojawi się eksperymentalne wystąpienie.
 
-5. W eksperymentalnym wystąpieniu, w menu **Narzędzia** kliknij polecenie **Wywołaj FindServicesCommand**.
+5. W wystąpieniu eksperymentalnym w menu **Narzędzia** kliknij polecenie **Wywołaj polecenie FindServicesCommand**.
 
-     Powinien pojawić się okno komunikatu z listą wszystkich usług.
+     Powinno zostać wyświetlenie okna komunikatu zawierającego listę wszystkich usług.
 
-     Aby sprawdzić te ustawienia, można użyć Edytora rejestru.
+     Aby zweryfikować te ustawienia, można użyć edytora rejestru.
 
-## <a name="find-a-specific-service"></a>Znajdowanie określonej usługi
- Można również użyć metody <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>, aby określić, czy dana usługa jest zainstalowana. Musisz znać typ klasy usługi.
+## <a name="find-a-specific-service"></a>Znajdź konkretną usługę
+ Można również użyć <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> metody, aby określić, czy dana usługa jest zainstalowana. Musisz znać typ klasy usługi.
 
-1. W MenuItemCallback projektu, który został utworzony w poprzedniej procedurze, Wyszukaj w magazynie ustawienia konfiguracji dla kolekcji `Services`, która ma podkolekcję o nazwie identyfikator GUID usługi. W takim przypadku będziemy szukać usługi pomocy.
+1. W MenuItemCallback projektu utworzonego w poprzedniej procedurze przeszukaj magazyn `Services` ustawień konfiguracji dla kolekcji, która ma podkolekcję nazwaną identyfikatorem GUID usługi. W takim przypadku poszukamy usługi Pomocy.
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -76,8 +76,8 @@ Aby znaleźć wszystkie dostępne usługi lub określić, czy dana usługa jest 
     }
     ```
 
-2. Skompiluj projekt i Rozpocznij debugowanie.
+2. Skompiluj projekt i rozpocznij debugowanie.
 
-3. W eksperymentalnym wystąpieniu, w menu **Narzędzia** kliknij polecenie **Wywołaj FindServicesCommand**.
+3. W wystąpieniu eksperymentalnym w menu **Narzędzia** kliknij polecenie **Wywołaj polecenie FindServicesCommand**.
 
-     Powinien zostać wyświetlony komunikat z **dostępną usługą** tekstową: po której następuje **wartość true** lub **false**. Aby sprawdzić to ustawienie, można użyć Edytora rejestru, jak pokazano w poprzednich krokach.
+     Powinna zostać wyświetlona wiadomość z tekstem **Dostępna usługa pomocy:** po której następuje **prawda** lub **fałsz**. Aby zweryfikować to ustawienie, można użyć edytora rejestru, jak pokazano we wcześniejszych krokach.

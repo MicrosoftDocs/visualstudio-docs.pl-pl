@@ -1,51 +1,51 @@
 ---
-title: Model starszej wersji usługi językowej | Microsoft Docs
+title: Model usługi języka starszego | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b87106060d3fd66b3659f5d49159ebbb9be9ef6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72726385"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707050"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model starszej wersji usługi językowej
-Usługa języka definiuje elementy i funkcje dla określonego języka i służy do udostępniania edytora informacji specyficznych dla danego języka. Na przykład edytor musi znać elementy i słowa kluczowe języka w celu obsługi kolorowania składni.
+Usługa języka definiuje elementy i funkcje dla określonego języka i jest używana do dostarczania edytorowi informacji specyficznych dla tego języka. Na przykład edytor musi znać elementy i słowa kluczowe języka w celu obsługi kolorowania składni.
 
- Usługa języka ściśle współpracuje z buforem tekstu zarządzanym przez Edytor i widokiem zawierającym Edytor. Opcja **szybkich informacji** IntelliSense firmy Microsoft jest przykładem funkcji udostępnianej przez usługę języka.
+ Usługa języka ściśle współpracuje z buforem tekstu zarządzanym przez edytora i widoku, który zawiera edytor. Opcja Microsoft IntelliSense **Quick Info** jest przykładem funkcji udostępnianej przez usługę językową.
 
-## <a name="a-minimal-language-service"></a>Minimalna usługa języka
- Najbardziej podstawowa usługa języka zawiera dwa następujące obiekty:
+## <a name="a-minimal-language-service"></a>Minimalna usługa językowa
+ Najbardziej podstawowa usługa językowa zawiera następujące dwa obiekty:
 
-- *Usługa językowa* implementuje interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>. Usługa językowa zawiera informacje o języku, w tym jego nazwę, rozszerzenia nazw plików, Menedżer okien kodu i kolorowanie.
+- *Usługa języka* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejs. Usługa języka zawiera informacje o języku, w tym jego nazwę, rozszerzenia nazw plików, menedżera okien kodu i colorizer.
 
-- *Kolor* zaimplementuje interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.
+- *Koloryzator* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfejs.
 
-  Poniższy rysunek koncepcyjny przedstawia model podstawowej usługi językowej.
+  Poniższy rysunek koncepcyjny przedstawia model usługi języka podstawowego.
 
-  ![Grafika modelu usługi językowej](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Model usługi języka Basic
+  ![Grafika przedstawiająca model usługi językowej](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Podstawowy model usługi językowej
 
-  Okno dokumentu zawiera *widok dokumentu* edytora, w tym przypadku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podstawowy edytor. Widok dokumentu i bufor tekstowy są własnością edytora. Te obiekty współpracują z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] za pomocą okna wyspecjalizowanego dokumentu o nazwie *okno kodu*. Okno kod jest zawarte w obiekcie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>, który jest tworzony i kontrolowany przez IDE.
+  Okno dokumentu obsługuje *widok dokumentu* edytora, w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tym przypadku edytora podstawowego. Widok dokumentu i bufor tekstu są własnością edytora. Obiekty te [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] działają za pośrednictwem okna dokumentu specjalistycznego o nazwie *okno kodu*. Okno kodu znajduje się <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> w obiekcie, który jest tworzony i kontrolowany przez IDE.
 
-  Po załadowaniu pliku z danym rozszerzeniem Edytor lokalizuje usługę języka skojarzoną z tym rozszerzeniem i przekazuje do niej okno kodu, wywołując metodę <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>. Usługa języka zwraca *Menedżera okien kodu*, który implementuje interfejs <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>.
+  Po załadowaniu pliku z danym rozszerzeniem edytor lokalizuje usługę języka skojarzoną z tym rozszerzeniem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> i przekazuje do niego okno kodu, wywołując metodę. Usługa języka zwraca *menedżera okien kodu*, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> który implementuje interfejs.
 
   Poniższa tabela zawiera omówienie obiektów w modelu.
 
 | Składnik | Obiekt | Funkcja |
 |------------------| - | - |
-| Bufor tekstu | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Strumień tekstowy do odczytu/zapisu w formacie Unicode. Użycie innych kodowań jest możliwe w przypadku tekstu. |
-| Okno kodu | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Okno dokumentu, które zawiera co najmniej jeden widok tekstu. Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest w trybie interfejsu wielu dokumentów (MDI), okno kod jest elementem podrzędnym MDI. |
-| Widok tekstu | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Okno, które umożliwia użytkownikowi nawigowanie i wyświetlanie tekstu przy użyciu klawiatury i myszy. Widok tekstu jest widoczny dla użytkownika jako edytor. Możesz użyć widoków tekstowych w zwykłych oknach edytora, oknie danych wyjściowych i oknie bezpośrednim. Ponadto można skonfigurować jeden lub więcej widoków tekstu w oknie kodu. |
-| Menedżer tekstu | Zarządzane przez usługę <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>, z której uzyskuje się wskaźnik <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> | Składnik, który przechowuje wspólne informacje udostępniane przez wszystkie opisane wcześniej składniki. |
-| Usługa języka | Zależne od implementacji; implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Obiekt, który zapewnia Edytor z informacjami specyficznymi dla języka, takimi jak wyróżnianie składni, uzupełnianie instrukcji i nawiasy klamrowe. |
+| Bufor tekstu | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Strumień tekstu unicode odczytu/zapisu. Tekst może używać innych kodowania. |
+| Okno Kod | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Okno dokumentu zawierające co najmniej jeden widok tekstu. Gdy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest w trybie interfejsu wielu dokumentów (MDI), okno kodu jest elementem podrzędnym MDI. |
+| Widok tekstu | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Okno, które umożliwia użytkownikowi nawigację i wyświetlanie tekstu za pomocą klawiatury i myszy. Widok tekstu jest wyświetlany użytkownikowi jako edytor. Widoki tekstu można używać w zwykłych oknach edytora, w oknie Dane wyjściowe i w oknie Natychmiastowy. Ponadto można skonfigurować jeden lub więcej widoków tekstu w oknie kodu. |
+| Menedżer tekstu | Zarządzane przez <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> usługę, z której <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> można uzyskać wskaźnik | Składnik, który przechowuje wspólne informacje współużytkowane przez wszystkie składniki opisane wcześniej. |
+| Usługa językowa | Wdrożenie zależne; Implementuje<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Obiekt, który zapewnia edytorowi informacje specyficzne dla języka, takie jak wyróżnianie składni, uzupełnianie instrukcji i dopasowywanie nawiasów klamrowych. |
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Dane dokumentu i widok dokumentu w edytorach niestandardowych](../../extensibility/document-data-and-document-view-in-custom-editors.md)

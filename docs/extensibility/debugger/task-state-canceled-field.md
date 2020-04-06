@@ -1,30 +1,30 @@
 ---
-title: Pole TASK_STATE_CANCELED | Dokumentacja firmy Microsoft
+title: pole TASK_STATE_CANCELED | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_CANCELED field, Task class [.NET Framework debug engines]
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e8b2906c2a8061a7153533036fcab7de82ca1d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d59335a418febef45ebe35d4590c72b486921639
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348406"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712746"
 ---
-# <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED field
-Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdza jej anulowania i ukończone bez wyjątku.
+# <a name="task_state_canceled-field"></a>Pole TASK_STATE_CANCELED
+Zadanie zostało anulowane przed osiągnięciem stanu uruchomionego lub potwierdziło jego anulowanie i zostało ukończone bez wyjątku.
 
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+ **Obszar nazw:**<xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Zestaw:** mscorlib (w mscorlib.dll)
+ **Montaż:** mscorlib (w mscorlib.dll)
 
- Ponieważ nie można uzyskać dostępu do tego elementu wewnętrznego z programu .NET Framework, następującej składni znajduje się w typowych Intermediate Language (CIL).
+ Ponieważ nie można uzyskać dostępu do tego wewnętrznego elementu członkowskiego z programu .NET Framework, następująca składnia znajduje się we wspólnym języku pośrednim (CIL).
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,7 +33,7 @@ Zadanie zostało anulowane przed osiągnięciem stanu uruchomienia lub potwierdz
 ```
 
 ## <a name="remarks"></a>Uwagi
- Jeśli [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) pole zawiera wartość ta <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+ Jeśli pole [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) zawiera tę wartość, <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca . <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>
 
-## <a name="see-also"></a>Zobacz także
-- [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Zobacz też
+- [Klasa zadań](../../extensibility/debugger/task-class-internal-members.md)

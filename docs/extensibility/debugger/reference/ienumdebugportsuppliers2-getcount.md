@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::GetCount | Dokumentacja firmy Microsoft
+title: IEnumDebugPortSuppliers2::GetCount | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::GetCount
 ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96aeef0316b7932b8799596f97aa260c6051fcc7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 355b7434bb6c0392b93e4395c2ae7a04e796e708
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326430"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716051"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 Zwraca liczbę elementów w wyliczeniu.
@@ -41,13 +41,13 @@ int GetCount(
 
 ## <a name="parameters"></a>Parametry
 `pcelt`\
-[out] Zwraca liczbę elementów w wyliczeniu.
+[na zewnątrz] Zwraca liczbę elementów w wyliczeniu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda nie jest częścią zwyczajowego interfejs wyliczanie modelu COM, który określa, że tylko `Next`, `Clone`, `Skip`, i `Reset` metod, które muszą zostać zaimplementowane.
+ Ta metoda nie jest częścią niestandardowego interfejsu wyliczenia COM, `Skip`który `Reset` określa, że należy zaimplementować tylko `Next` `Clone`, , i metody.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

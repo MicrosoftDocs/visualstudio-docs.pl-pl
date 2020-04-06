@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Microsoft Docs
+title: PROCESS_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f8333dd697f265480c46ed7edbfbea1a48970ae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309341"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713883"
 ---
-# <a name="processinfo"></a>PROCESS_INFO
-Zawiera informacje na temat procesu.
+# <a name="process_info"></a>PROCESS_INFO
+Zawiera informacje o procesie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -57,43 +57,43 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `Fields`\
- Kombinacja flag z [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) wyliczenie określające, które pola są wypełnione.
+ Kombinacja flag z wyliczenia [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) określająca, które pola są wypełniane.
 
  `bstrFileName`\
- Pełna nazwa ścieżki procesu. Równoważne z wywoływaniem [getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody z parametrem `GN_FILENAME`.
+ Pełna nazwa ścieżki procesu. Odpowiednik wywoływania [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody `GN_FILENAME`z parametrem .
 
  `bstrBaseName`\
- Nazwa pliku i rozszerzenie procesu. Równoważne z wywoływaniem `IDebugProcess2::Getname` metody z parametrem `GN_BASENAME`.
+ Nazwa pliku i rozszerzenie procesu. Odpowiednik wywoływania `IDebugProcess2::Getname` metody z `GN_BASENAME`parametrem .
 
  `bstrTitle`\
- Tytuł proces, jeśli taka istnieje. Równoważne z wywoływaniem `IDebugProcess2::Getname` metody z parametrem `GN_TITLE`.
+ Tytuł procesu, jeśli istnieje. Odpowiednik wywoływania `IDebugProcess2::Getname` metody z `GN_TITLE`parametrem .
 
  `ProcessId`\
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która identyfikuje proces. Równoważne z wywoływaniem [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) metody.
+ Struktura [AD_PROCESS_ID,](../../../extensibility/debugger/reference/ad-process-id.md) która identyfikuje proces. Odpowiednik wywoływania [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) metody.
 
  `dwSessionId`\
- Identyfikator ten proces jest uruchomiony w sesji debugowania.
+ Identyfikator sesji debugowania, w których jest uruchomiony ten proces.
 
  `bstrAttachedSessionName`\
- Nazwa sesji dołączone. Równoważne z wywoływaniem [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) metody.
+ Załączona nazwa sesji. Odpowiednik wywoływania [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) metody.
 
  `CreationTime`\
- Godzina utworzenia procesu.
+ Czas utworzenia procesu.
 
  `Flags`\
- Kombinacja flag z [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) wyliczenie określające właściwości procesu.
+ Kombinacja flag z wyliczenia [PROCESS_INFO_FLAGS,](../../../extensibility/debugger/reference/process-info-flags.md) które określają właściwości procesu.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metody, gdzie jest wypełnione.
+ Ta struktura jest przekazywana do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) gdzie jest wypełniona.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)

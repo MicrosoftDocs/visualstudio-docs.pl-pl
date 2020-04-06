@@ -1,5 +1,5 @@
 ---
-title: Opinia dla użytkownika | Dokumentacja firmy Microsoft
+title: Opinie dla użytkownika | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,56 +8,56 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2255a972dd7a889713e77fa686b348500c03ea7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328978"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80708413"
 ---
-# <a name="feedback-to-the-user"></a>Opinia dla użytkownika
-W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), wizualną opinię dotyczący możliwości opiera się na bieżące zaznaczenie i kontekst zaznaczenia globalnego użytkownika. W poniższej tabeli wymieniono funkcje, które są dostępne w kontekstach inną opcję.
+# <a name="feedback-to-the-user"></a>Opinie dla użytkownika
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanym środowisku programistycznym (IDE) wizualne informacje zwrotne dotyczące dostępnych funkcji są oparte na bieżącym wyborze użytkownika i kontekście wyboru globalnego. W poniższej tabeli wymieniono funkcje, które są dostępne w różnych kontekstach wyboru.
 
-|Kontekst zaznaczenia|Dostępne funkcje|
+|Kontekst selekcji|Dostępne funkcje|
 |-----------------------|-----------------------------|
-|IDE|Global|
-|Bieżący zestaw produktów|Specyficzne dla produktu|
-|Aktywnej hierarchii|Określonego typu hierarchii|
-|Element aktywnej hierarchii|Określonego typu elementu w hierarchii|
-|Aktywnego dokumentu|Określonego typu dokumentu|
-|Okno najwyższego poziomu interfejsu wielu dokumentów (MDI)|Określonego typu okno|
-|Bieżący kontekst zaznaczenia|Określone kontekst zaznaczenia|
+|IDE|Globalny|
+|Aktualny zestaw produktów|Specyficzne dla produktu|
+|Aktywna hierarchia|Specyficzne dla typu hierarchii|
+|Aktywny element hierarchii|Określony typ elementu hierarchii|
+|Aktywny dokument|Specyficzny typ dokumentu|
+|Okno Interfejs wielokadowy (MDI) topmost|Specyficzny dla typu okna|
+|Bieżący kontekst wyboru|Kontekst selekcji specyficzny dla kontekstu|
 
- Jeśli tylko urządzenia surface funkcjonalność, użytkownicy muszą i zapewnić spójne wybór i opinie kontekst środowiska można zmniejszyć złożoność w środowisku IDE. Przy każdym otwarciu okna w IDE, stosowane są następujące reguły:
+ Jeśli tylko powierzchni funkcje użytkownicy potrzebują i stale zapewniają spójne zaznaczenie i środowisko kontekstu opinii, można zmniejszyć złożoność ide. Następujące reguły mają zastosowanie za każdym razem, gdy okno jest otwierane w IDE:
 
-- Jeśli okno zmienia kontekst zaznaczenia, informacje zwrotne dotyczące wyboru jest wyraźnie wskazane w oknie i **dynamiczna Pomoc** okna, jeśli wyświetlony, jest zaktualizowana w celu odzwierciedlenia bieżącego kontekstu.
+- Jeśli okno zmieni kontekst wyboru, w oknie wyraźnie wskazywane są informacje zwrotne o wyborze, a okno **Pomoc dynamiczna,** jeśli jest wyświetlane, zostanie zaktualizowane w celu odzwierciedlenia bieżącego kontekstu.
 
-- Jeśli okno zmienia kontekst zaznaczenia globalnego, wszystkich menu kontekstowych, okna aktywnej hierarchii i na pasku tytułu aplikacji są aktualizowane, tak aby odzwierciedlić bieżący kontekst.
+- Jeśli okno zmieni kontekst zaznaczenia globalnego, wszystkie menu specyficzne dla kontekstu, aktywne okno hierarchii i pasek tytułu aplikacji zostaną zaktualizowane w celu odzwierciedlenia bieżącego kontekstu.
 
-- Okno powinno powierzchni właściwości dla bieżącego zaznaczenia w **właściwości** okna i, opcjonalnie, jeśli wyświetlony, **strony właściwości** okno dialogowe.
+- Okno powinno powierzchniować właściwości bieżącego zaznaczenia w oknie **Właściwości** i opcjonalnie, jeśli jest wyświetlane, okno dialogowe **Strony właściwości.**
 
-- Jeśli okno nie powierzchni właściwości lub zmienić kontekst zaznaczenia globalnego, informacje zwrotne dotyczące wyboru nie powinna pozostać w oknie, gdy nie jest już aktywnego okna w IDE.
+- Jeśli okno nie ma właściwości powierzchni lub zmienić kontekst zaznaczenia globalnego, sprzężenie zwrotne wyboru nie powinny pozostać w oknie, gdy nie jest już aktywne okno w IDE.
 
-- Wszystkie okna narzędzi specyficznych dla dokumentu stale powinny odzwierciedlać aktywnego dokumentu.
+- Wszystkie okna narzędzi specyficznych dla dokumentu powinny stale odzwierciedlać aktywny dokument.
 
-- Menu, paski narzędzi i paska tytułu aplikacji powinny odzwierciedlać okna klienta znajdujące się najwyżej interfejsu wielu dokumentów (MDI).
+- Menu, paski narzędzi i pasek tytułu aplikacji powinny odzwierciedlać najwyższe okno klienta interfejsu wielu dokumentów (MDI).
 
-  Na przykład, gdy kod HTML widoku **formularz sieci Web** wewnątrz aplikacji sieci Web w języku Visual Basic jest otwarty projekt, a użytkownik wybierze `<td>` tagu, informacje są przekazywane w następujący sposób:
+  Na przykład po otwarciu widoku HTML **formularza sieci Web** wewnątrz projektu aplikacji sieci `<td>` Web języka Visual Basic i wybraniu znacznika użytkownik jest dostarczany w następujący sposób:
 
-- Wybór jest wskazane w aktywnym oknie i zostaną uwzględnione w **właściwości** okna.
+- Zaznaczenie jest wskazane w aktywnym oknie i odzwierciedlone w oknie **Właściwości.**
 
-- Specyficzne dla dokumentu **przybornika** zostanie zaktualizowany w celu odzwierciedlenia aktywnego dokumentu.
+- **Zestaw narzędzi** specyficzny dla dokumentu zostanie zaktualizowany w celu odzwierciedlenia aktywnego dokumentu.
 
-- **Edytora** narzędzi i **tabeli** są wyświetlane w menu i na pasku tytułu aktualizowany w celu odzwierciedlenia okna formularza sieci Web.
+- Wyświetlany jest pasek narzędzi **Edytor** i menu **Tabela,** a pasek tytułu zostanie zaktualizowany w celu odzwierciedlenia okna formularza sieci Web.
 
-- Okno aktywnej hierarchii, które jest zazwyczaj **Eksploratora rozwiązań**i jej aktualizacji paska tytułu, aby odzwierciedlić bieżący kontekst i kontekstowej **projektu** poleceń menu teraz je zastosować do aktywnego internetowego Projekt aplikacji.
+- Aktywne okno hierarchii, które jest zazwyczaj **Eksplorator rozwiązań,** i jego aktualizacja paska tytułu, aby odzwierciedlić bieżący kontekst i kontekstowe polecenia menu **projektu** mają teraz zastosowanie do aktywnego projektu aplikacji sieci Web.
 
-## <a name="see-also"></a>Zobacz także
-- [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Wybór obiektów kontekstu](../../extensibility/internals/selection-context-objects.md)
-- [Hierarchie i zaznaczenia](../../extensibility/internals/hierarchies-and-selection.md)
+## <a name="see-also"></a>Zobacz też
+- [Wybór i waluta w IDEI](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [Obiekty kontekstu zaznaczenia](../../extensibility/internals/selection-context-objects.md)
+- [Hierarchie i wybór](../../extensibility/internals/hierarchies-and-selection.md)

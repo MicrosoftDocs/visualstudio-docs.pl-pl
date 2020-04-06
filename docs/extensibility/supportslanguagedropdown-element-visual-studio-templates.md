@@ -1,5 +1,5 @@
 ---
-title: SupportsLanguageDropDown —, element (szablony Visual Studio) | Microsoft Docs
+title: SupportsLanguageDropDown Element (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b5727bd9aa09b05fc95d8f9f9b7913a6046b81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1230b493fe746a272cf4ca4cffe9d197afd8ba1b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719415"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699470"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown — Element (szablony Visual Studio)
-Określa, czy szablon elementu sieci Web jest identyczny dla wielu języków i czy opcja **Język** jest włączona w oknie dialogowym **Dodaj nowy element** .
+Określa, czy szablon elementu sieci Web jest identyczny dla wielu języków i czy opcja **Język** jest włączona w oknie dialogowym **Dodawanie nowego elementu.**
 
- \<VSTemplate > \<TemplateData > \<SupportsLanguageDropDown >
+ \<VSTemplate> \<TemplateData> \<SupportsLanguageDropDown>
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,22 +45,22 @@ Określa, czy szablon elementu sieci Web jest identyczny dla wielu języków i c
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania w oknie dialogowym **Nowy projekt** lub **Dodaj nowy element** .|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi mieć wartość `true` lub `false`, wskazując, czy opcja **języka** jest dostępna w oknie dialogowym **Dodaj nowy element** .
+ Tekst musi być `true` albo `false`lub , wskazując, czy opcja **Język** jest dostępna w oknie dialogowym **Dodawanie nowego elementu.**
 
 ## <a name="remarks"></a>Uwagi
- `SupportsLanguageDropDown` jest elementem opcjonalnym. Wartość domyślna to `false`.
+ `SupportsLanguageDropDown`jest elementem opcjonalnym. Wartością domyślną jest `false`.
 
  Element `SupportsLanguageDropDown` jest dostępny tylko dla szablonów elementów sieci Web.
 
- Jeśli wartość dla tego elementu jest ustawiona na `true`, szablon elementu jest identyczny dla wszystkich języków programowania, a opcja **Język** jest włączona w oknie dialogowym **Dodaj nowy element** . Ta opcja umożliwia wybranie języka programowania nowego elementu, który ma zostać utworzony na podstawie szablonu.
+ Jeśli wartość tego elementu jest `true`ustawiona na wartość , szablon elementu jest identyczny dla wszystkich języków programowania, a opcja **Język** jest włączona w oknie dialogowym **Dodawanie nowego elementu.** Ta opcja umożliwia wybranie języka programowania nowego elementu, który chcesz utworzyć na podstawie szablonu.
 
 ## <a name="example"></a>Przykład
- Poniższy przykład określa, aby wyświetlić opcję Lista rozwijana **języka** .
+ Poniższy przykład określa, aby wyświetlić opcję rozwijaną **Język.**
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"
@@ -84,6 +84,6 @@ Określa, czy szablon elementu sieci Web jest identyczny dla wielu języków i c
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

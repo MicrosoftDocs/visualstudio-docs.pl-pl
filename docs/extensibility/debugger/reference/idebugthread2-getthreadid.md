@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId | Dokumentacja firmy Microsoft
+title: IDebugThread2::GetThreadId | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66ad2151f6455d758d57c51a387184a9fcce8ec7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a7788cc09d92ff4c784fbcb7004393fe0d3074c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320180"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718704"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-Pobiera identyfikator wątku systemu.
+Pobiera identyfikator wątku systemowego.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ int GetThreadId (
 
 ## <a name="parameters"></a>Parametry
 `pdwThreadId`\
-[out] Zwraca identyfikator wątku systemu.
+[na zewnątrz] Zwraca identyfikator wątku systemowego.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Identyfikator wątku jest używana do identyfikowania wątku przez wszystkie wątki w procesie.
+Identyfikator wątku służy do identyfikowania wątku wśród wszystkich innych wątków w procesie.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfejsu.
+W poniższym przykładzie pokazano, jak `CProgram` zaimplementować tę metodę dla prostego obiektu, który implementuje interfejs [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
@@ -59,5 +59,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

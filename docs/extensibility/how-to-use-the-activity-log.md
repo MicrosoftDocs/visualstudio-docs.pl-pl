@@ -1,32 +1,32 @@
 ---
-title: 'Instrukcje: Korzystanie z dziennika aktywności | Dokumentacja firmy Microsoft'
+title: 'Jak: Korzystanie z dziennika aktywności | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 64986be303370cf8c9048612ff3d44e82e96805a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309353"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710581"
 ---
-# <a name="how-to-use-the-activity-log"></a>Instrukcje: Korzystanie z dziennika aktywności
-Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funkcja jest szczególnie przydatna podczas debugowania pakietów VSPackage w środowisku handlu detalicznego.
+# <a name="how-to-use-the-activity-log"></a>Jak: Korzystanie z dziennika aktywności
+VSPackages można zapisywać wiadomości do dziennika aktywności. Ta funkcja jest szczególnie przydatna do debugowania vspackages w środowiskach sieci sprzedaży.
 
 > [!TIP]
-> Dziennik aktywności jest zawsze włączone. Visual Studio przechowuje stopniowe buforu 100 ostatnich operacji wpisy, a także 10 pierwszych zapisów, które udostępniają informacje o konfiguracji ogólnej.
+> Dziennik aktywności jest zawsze włączony. Visual Studio przechowuje bufor kroczący z ostatnich 100 wpisów, a także pierwszych 10 wpisów, które mają ogólne informacje o konfiguracji.
 
-## <a name="to-write-an-entry-to-the-activity-log"></a>Aby zapisać wpis w dzienniku aktywności
+## <a name="to-write-an-entry-to-the-activity-log"></a>Aby napisać wpis w dzienniku działań
 
-1. Wstaw ten kod w <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody lub innej metody, z wyjątkiem Konstruktor pakietu VSPackage:
+1. Wstaw ten <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> kod w metodzie lub w innej metodzie z wyjątkiem konstruktora VSPackage:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -38,33 +38,33 @@ Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funk
         "Called for: {0}", this.ToString()));
     ```
 
-     Ten kod pobiera <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> usługi i rzutuje je na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interfejsu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> zapisuje wpis informacyjny w dzienniku aktywności w kontekście bieżącej kultury.
+     Ten kod <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> pobiera usługę i rzuca <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> go do interfejsu. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>zapisuje wpis informacyjny w dzienniku działań przy użyciu bieżącego kontekstu kulturowego.
 
-2. Podczas ładowania pakietu VSPackage (zazwyczaj podczas wywoływania polecenia lub okno jest otwarty), tekst został napisany z dziennikiem aktywności.
+2. Po załadowaniu vspackage (zwykle, gdy polecenie jest wywoływane lub okno jest otwierane), tekst jest zapisywany w dzienniku działań.
 
 ## <a name="to-examine-the-activity-log"></a>Aby sprawdzić dziennik aktywności
 
-1. Uruchom program Visual Studio z [/Log](../ide/reference/log-devenv-exe.md) przełącznik wiersza polecenia, aby zapisać plik ActivityLog.xml na dysku podczas sesji.
+1. Uruchom program Visual Studio za pomocą przełącznika wiersza polecenia [/Log,](../ide/reference/log-devenv-exe.md) aby zapisać plik ActivityLog.xml na dysku podczas sesji.
 
-2. Po zamknięciu programu Visual Studio, należy znaleźć w dzienniku aktywności w podfolderze dla danych programu Visual Studio:
+2. Po zamknięciu programu Visual Studio znajdź dziennik aktywności w podfolderze danych programu Visual Studio:
 
-   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<wersja>\ActivityLog.xml*.
 
-3. Otwórz dziennik aktywności, za pomocą dowolnego edytora tekstów. Poniżej przedstawiono typowe wpis:
+3. Otwórz dziennik aktywności za pomocą dowolnego edytora tekstu. Oto typowy wpis:
 
    ```
    Called for: Company.MyApp.MyAppPackage ...
    ```
 
-## <a name="robust-programming"></a>Skuteczne programowanie
+## <a name="robust-programming"></a>Solidne programowanie
 
-Ponieważ dziennik aktywności jest usługą, dziennik aktywności jest niedostępna w Konstruktorze pakietu VSPackage.
+Ponieważ dziennik aktywności jest usługą, dziennik aktywności jest niedostępny w konstruktorze VSPackage.
 
-Dziennik aktywności powinna uzyskać tuż przed zapisu do niego. Nie w pamięci podręcznej lub dziennika aktywności do użytku w przyszłości.
+Dziennik aktywności należy uzyskać tuż przed zapisaniem do niego. Nie buforuj ani nie zapisuj dziennika aktywności do wykorzystania w przyszłości.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [/ Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [Rozwiązywanie problemów z pakietami VSPackage](../extensibility/troubleshooting-vspackages.md)

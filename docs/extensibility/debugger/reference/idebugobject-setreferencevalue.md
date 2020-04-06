@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue | Dokumentacja firmy Microsoft
+title: IDebugObject::SetReferenceValue | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaef4eb96942789bd3f574e6eeddcd3500ae6ee9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349961"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726381"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
-Ustawia wartość odwołanie do tego obiektu.
+Ustawia wartość referencyjną tego obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int SetReferenceValue(
 
 ## <a name="parameters"></a>Parametry
 `pObject`\
-[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt reprezentujący nową wartość odniesienia.
+[w] [Obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nową wartość referencyjną.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda powoduje, że to [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) odwołanie do wartości obiektu w obiekcie `pObject` parametru wyrzuca dowolnego odwołania do poprzedniego. Uwaga że `IDebugObject` obiekt już musi być typem referencyjnym.
+ Ta metoda sprawia, że ten [obiekt IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) odwołanie `pObject` do wartości obiektu podane w parametrze, wyrzucając wszelkie poprzednie odwołanie. Należy zauważyć, że ten `IDebugObject` obiekt musi być już typem odwołania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

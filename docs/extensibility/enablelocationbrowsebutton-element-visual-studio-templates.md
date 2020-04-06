@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: EnableLocationBrowseButton Element (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be2f67d08fcac39d26f9a27f76ad8aff967440b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334467"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711988"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, element (szablony Visual Studio)
-Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okno dialogowe, dzięki czemu użytkownicy mogą łatwo modyfikować domyślny katalog, w której zostanie zapisany nowy projekt.
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Element EnableLocationBrowseButton (szablony programu Visual Studio)
+Określa, czy przycisk **Przeglądaj** jest dostępny w oknie dialogowym **Nowy projekt,** dzięki czemu użytkownicy mogą łatwo modyfikować katalog domyślny, w którym jest zapisywany nowy projekt.
 
- \<VSTemplate> \<TemplateData> \<EnableLocationBrowseButton>
+ \<> \<szablon>u> \<EnableLocationBrowseButton>
 
 ## <a name="syntax"></a>Składnia
 
@@ -44,20 +44,20 @@ Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okno di
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Tekst musi być albo `true` lub `false`, wskazującą, czy mają być wyświetlane **Przeglądaj** znajdujący się na **nowy projekt** okno dialogowe.
+ Tekst musi być `true` albo `false`lub , wskazując, czy ma być wyświetlany przycisk **Przeglądaj** w oknie dialogowym **Nowy projekt.**
 
 ## <a name="remarks"></a>Uwagi
- `EnableLocationBrowseButton` element jest opcjonalny. Wartość domyślna to `true`, który wyświetla **Przeglądaj** znajdujący się w **nowy projekt** okno dialogowe.
+ `EnableLocationBrowseButton`jest elementem opcjonalnym. Wartością domyślną jest `true`, który wyświetla przycisk **Przeglądaj** w oknie dialogowym Nowy **projekt.**
 
- W **nowy projekt** okno dialogowe **lokalizacji** pola tekstowego określa katalog, w której zostanie zapisany nowy projekt. **Przeglądaj** przycisk pomoże Ci modyfikować tego katalogu, wyświetlając **lokalizacji projektu** okno dialogowe, które umożliwia łatwe przejście do innego katalogu, który jest dostępny z komputera, a następnie wybierz ją, jako katalog, w którym jest zapisywany nowy projekt.
+ W oknie dialogowym **Nowy projekt** pole tekstowe **Lokalizacja** określa katalog, w którym jest zapisywany nowy projekt. Przycisk Przeglądaj ułatwia modyfikowanie tego katalogu przez wyświetlenie okna dialogowego **Lokalizacja projektu,** które umożliwia łatwe **przechodzenie** do innego katalogu dostępnego z komputera, a następnie wybranie go jako katalogu, w którym jest zapisywany nowy projekt.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji Windows.
+ Poniższy przykład ilustruje metadane dla aplikacji [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] systemu Windows.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -84,6 +84,6 @@ Określa, czy **Przeglądaj** przycisk jest dostępny w **nowy projekt** okno di
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
+title: IEEVisualizerService::GetCustomViewerList | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350172"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718017"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-Ta metoda zwraca listę wizualizatorów typu, które obsługującemu tej usługi.
+Ta metoda zwraca listę wizualizatorów typu, o których ta usługa wie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,26 +47,26 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parametry
 `celtSkip`\
-[in] Liczba wizualizatorów można pominąć.
+[w] Liczba wizualizatorów do przeskoczyć.
 
 `celRequested`\
-[in] Liczba wizualizatorów do pobrania (również określa rozmiar `rgViewers` tablicy).
+[w] Liczba wizualizatorów do pobrania (określa `rgViewers` również rozmiar tablicy).
 
 `rgViewers`\
-[out w] Tablica [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktury do wypełnienia.
+[w, na zewnątrz] Tablica [struktur DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) do wypełnienia.
 
 `pceltFetched`\
-[out] Liczba wizualizatorów faktycznie pobrać.
+[na zewnątrz] Liczba wizualizatorów faktycznie pobranych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) przekazuje żądanie do tej metody w ramach wsparcia dla wizualizatorów typu. Jeśli Ewaluator wyrażeń dostarcza również przeglądarek niestandardowych dla tego samego typu, można go dołączyć odpowiednio wypełniony [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) struktur dla tych przeglądarek niestandardowych do listy. Upewnij się, że [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) odzwierciedla te dodatkowe osoby przeglądające.
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) przekazuje żądanie do tej metody w ramach obsługi wizualizatorów typu. Jeśli oceniający wyrażenie dostarcza również niestandardowe przeglądarki dla tego samego typu, może dołączyć odpowiednio wypełnione [struktury DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) dla tych niestandardowych widzów do listy. Upewnij się, że [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) odzwierciedla te dodatkowe przeglądarki.
 
- Zobacz [Wizualizator typów i Przeglądarka niestandardowa](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Aby uzyskać szczegółowe informacje na temat różnic między wizualizatorów, a osoby przeglądające.
+ Zobacz [Wizualizator typów i Podgląd niestandardowy, aby](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) uzyskać szczegółowe informacje na temat różnic między wizualizatorami a przeglądarkami.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

@@ -1,30 +1,30 @@
 ---
-title: Dodawanie katalogów do okna dialogowego Nowy projekt | Dokumentacja firmy Microsoft
+title: Dodawanie katalogów do okna dialogowego Nowy projekt | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
 ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e81d09c2a4e97ca5f3da112e593b04b219e6314
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328007"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710244"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Dodawanie katalogów do okna dialogowego Nowy projekt
-Podczas tworzenia nowych typów projektów, możesz także zarejestrować nowy katalog w **nowy projekt** okno dialogowe, aby wyświetlić je do użycia jako szablon. W poniższym przykładzie kodu przedstawiono metody rejestracji w nowym katalogu, znany także jako węzeł. W tym przykładzie szablony udostępnianych przez pakietu VSPackage, *CLSID_Package*, są rejestrowane. Dzięki temu usługa po lewej stronie **nowy projekt** okno dialogowe oferuje dodano węzeł o nazwie ustalany na podstawie *Folder_Label_ResID* zasobów. Ten zasób jest ładowany z pakietu VSPackage satelitarną bibliotekę DLL.
+Podczas tworzenia nowych typów projektów można również zarejestrować nowy katalog w oknie dialogowym **Nowy projekt,** aby wyświetlić go do użycia jako szablony. W poniższym przykładzie kodu wyjaśniono, jak zarejestrować nowy katalog, znany również jako węzeł. W przykładzie szablony udostępniane przez VSPackage, *CLSID_Package*, są rejestrowane. W rezultacie po lewej stronie okna dialogowego **Nowy projekt** znajduje się dodany węzeł o nazwie określonej przez *Folder_Label_ResID* zasób. Ten zasób jest ładowany z biblioteki DLL satelity VSPackage.
 
- **Folderu** wartość reprezentuje identyfikator GUID folderze *Folder_Label_ResID* węzeł jest wyświetlany. W tym przykładzie reprezentuje identyfikator GUID **inne projekty** folderu w **typów projektów** okienku **nowy projekt** okno dialogowe. Jeśli **inne projekty** wartość jest nieobecne, etykieta znajduje się na najwyższym poziomie.
+ Wartość **folderu** reprezentuje identyfikator GUID folderu, w którym wyświetlany jest *węzeł Folder_Label_ResID.* W tym przykładzie identyfikator GUID reprezentuje folder **Inne projekty** w okienku **Typy projektów** okna dialogowego Nowy **projekt.** Jeśli **wartość Inne projekty** jest nieobecna, etykieta jest pozycjonowana na najwyższym poziomie.
 
- `TemplatesDir` Wartość określa pełną ścieżkę katalogu, który zawiera szablony projektów. Te pliki mogą być albo *.vsz* pliki lub typowe szablonu można sklonować.
+ Wartość `TemplatesDir` określa pełną ścieżkę katalogu zawierającego szablony projektu. Pliki te mogą być plikami *.vsz* lub typowymi plikami szablonów, które mają zostać sklonowane.
 
- Jeśli określisz `TemplatesLocalizedSubDir`, musi być identyfikator zasobu ciągu, który nazwy podkatalogu `TemplatesDir` zawierający zlokalizowane szablony. Ponieważ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje zasobu ciągu z satelitarną bibliotekę DLL Jeśli nie masz, każdy satelitarną bibliotekę DLL mogą zawierać nazwę podkatalogu innej. `SortPriority` Wartość określa priorytet sortowania.
+ Jeśli określisz `TemplatesLocalizedSubDir`, musi to być identyfikator zasobu ciągu, `TemplatesDir` który nazywa podkatalog zawierający zlokalizowane szablony. Ponieważ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje zasób ciągu z biblioteki DLL satelity, jeśli masz jeden, każda biblioteka DLL satelity może zawierać inną nazwę podkatalogu. Wartość `SortPriority` określa priorytet sortowania.
 
 ```
 NoRemove NewProjectTemplates
@@ -45,7 +45,7 @@ NoRemove NewProjectTemplates
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Rejestrowanie szablonów projektów i elementów](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Dodawanie elementów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
-- [Dodawanie katalogów do okna dialogowego Dodaj nowy element](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+## <a name="see-also"></a>Zobacz też
+- [Rejestrowanie szablonów projektów i towarów](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Dodawanie elementów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+- [Dodawanie katalogów do okna dialogowego Dodawanie nowego elementu](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

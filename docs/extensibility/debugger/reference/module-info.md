@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO | Microsoft Docs
+title: MODULE_INFO | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db67710fd7ee71cddf1e7dbee030cb208a1de86c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339124"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714316"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
-W tym artykule opisano konkretnego modułu (DLL, EXE lub zestawu).
+# <a name="module_info"></a>MODULE_INFO
+Opisuje określony moduł (biblioteka DLL, EXE lub zespół).
 
 ## <a name="syntax"></a>Składnia
 
@@ -63,7 +63,7 @@ public struct MODULE_INFO { 
 
 ## <a name="members"></a>Elementy członkowskie
  `dwValidFields`\
- Kombinacja flag z [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) wyliczenia, która określa pola, które są wypełnione.
+ Kombinacja flag z wyliczenia [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) określająca, które pola są wypełniane.
 
  `m_bstrName`\
  Nazwa modułu.
@@ -75,13 +75,13 @@ public struct MODULE_INFO { 
  Wersja modułu.
 
  `m_bstrDebugMessage`\
- Opcjonalną wiadomość, informacje o module, na przykład "nie można załadować symboli."
+ Opcjonalny komunikat o module, na przykład "Nie można załadować symboli".
 
  `m_addrLoadAddress`\
- Adresem ładowania modułu.
+ Adres obciążenia modułu.
 
  `m_addrPreferredLoadAddress`\
- Adres preferowanego ładowania modułu.
+ Preferowany adres obciążenia modułu.
 
  `m_dwSize`\
  Rozmiar modułu.
@@ -90,27 +90,27 @@ public struct MODULE_INFO { 
  Kolejność ładowania modułu.
 
  `m_TimeStamp`\
- Czas ostatniej modyfikacji pliku symboli.
+ Czas ostatniej modyfikacji pliku symbolu.
 
  `m_bstrUrlSymbolLocation`\
- Lokalizacja pliku symboli (na przykład ".\\") określona w module. Używane jako lokalizację początkową można znaleźć symboli dla modułu.
+ Lokalizacja pliku symbolu (na przykład\\". ") określona w module. Służy jako miejsce początkowe do znajdowania symboli modułu.
 
  `m_dwModuleFlags`\
- Kombinacja flag z [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) wyliczenie opisujące modułu.
+ Kombinacja flag z wyliczenia [MODULE_FLAGS,](../../../extensibility/debugger/reference/module-flags.md) który opisuje moduł.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metody, gdzie jest wypełnione.
+ Ta struktura jest przekazywana do [Metody GetInfo,](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) gdzie jest wypełniona.
 
- Ta struktura odnosi się do każdego modułu, na liście **modułów** okna.
+ Ta struktura odpowiada każdemu modułowi wymienionemu w oknie **Moduły.**
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

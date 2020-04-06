@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach | Microsoft Docs
+title: IDebugProcess2::CanDetach | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::CanDetach
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83cb927d86604096eac89da1d0efdf7e64e209be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2bfb7b7b586f9c8b86e75d453389525c61a63bc4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353225"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724172"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-Określa, jeżeli Menedżer debugowania sesji (SDM) można odłączyć procesu.
+Określa, czy menedżer debugowania sesji (SDM) może odłączyć proces.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,8 +38,8 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK.` zwraca `S_FALSE` Jeśli debuger nie można odłączyć od procesu. W przeciwnym razie zwraca kod błędu.
+ Jeśli zakończy `S_OK.` się `S_FALSE` pomyślnie, zwraca zwraca, jeśli debuger nie może odłączyć się od procesu. W przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

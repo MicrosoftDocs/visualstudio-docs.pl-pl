@@ -1,28 +1,28 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Dokumentacja firmy Microsoft
+title: IDebugSymbolProviderDirect::GetCurrentModulesState | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetCurrentModulesState
 - IDebugSymbolProviderDirect::GetCurrentModulesState
 ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59f1917f420e4815bcd525f131e4b524e53e6b3f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c9e7cf711b5cf6823059945f85b9c3db30701ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347318"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719083"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Pobiera informacje o grupie symbol dostawca symboli jest elementem członkowskim.
+Pobiera informacje o grupie symboli, której członkiem jest dostawca symboli.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,16 +42,16 @@ int GetCurrentModulesState(
 
 ## <a name="parameters"></a>Parametry
 `pState`\
-[out] Stan grupy dostawcy symboli.
+[na zewnątrz] Stan grupy dostawców symboli.
 
 `count`\
-[out] Liczba modułów w grupie.
+[na zewnątrz] Liczba modułów w grupie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Stan jest zmieniany, gdy moduł jest dodane lub usunięte z grupy symboli. W związku z tym metoda ta może służyć do wykrywania, jeśli grupa symbol został zmodyfikowany.
+ Stan jest zmieniany za każdym razem, gdy moduł jest dodawany do grupy symboli lub z niej usuwany. W związku z tym ta metoda może służyć do wykrywania, jeśli grupa symboli została zmodyfikowana.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

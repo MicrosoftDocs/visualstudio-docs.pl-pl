@@ -1,28 +1,28 @@
 ---
-title: IDebugProgramDestroyEventFlags2::GetFlags | Dokumentacja firmy Microsoft
+title: IDebugProgramDestroyEventFlags2::GetFlags | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetFlags
 - IDebugProgramDestroyEventFlags2::GetFlags
 ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae8ff2cddad4817acbb0474cad7442c79c0994b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0a590fa78769f75fe1689f233361beb963d9ccf0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343523"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722509"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
-Pobiera program zniszczyć flag.
+Pobiera program zniszczyć flagi.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,11 +40,11 @@ public int GetFlags(
 
 ## <a name="parameters"></a>Parametry
 `pdwFlags`\
-[out] Reprezentuje program zniszczyć flag.
+[na zewnątrz] Reprezentuje program zniszczyć flagi.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)
 - [PROGRAM_DESTROY_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md)

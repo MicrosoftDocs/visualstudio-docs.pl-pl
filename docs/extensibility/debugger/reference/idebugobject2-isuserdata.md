@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Microsoft Docs
+title: IDebugObject2::IsUserData | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94c3f6adc9dd75e1ed4ecc4c5fd7f37635099566
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ce4a7035ac3786f0cc1644e2ebbb0c142167e2b0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317245"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80726089"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 Określa, czy obiekt reprezentuje dane użytkownika.
@@ -41,13 +41,13 @@ int IsUserData(
 
 ## <a name="parameters"></a>Parametry
 `pfUser`\
-[out] Zwraca wartość różną od zera (`TRUE`) obiekt reprezentuje dane użytkownika; wartość zero (`FALSE`) Jeśli nie jest.
+[na zewnątrz] Zwraca wartość niezerowa (`TRUE`), jeśli obiekt reprezentuje dane użytkownika; zero`FALSE`( ), jeśli nie.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Dane użytkownika są dowolnego obiektu, który jest częścią modułu wyznaczony jako JustMyCode (konfigurowanych przez użytkownika opcji oznaczający moduł jako kod użytkownika i dlatego są widoczne w śladzie stosu).
+ Dane użytkownika to dowolny obiekt, który jest częścią modułu oznaczonego jako JustMyCode (opcja konfigurowalna przez użytkownika, która oznacza moduł jako kod użytkownika i dlatego jest widoczna w śladzie stosu).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

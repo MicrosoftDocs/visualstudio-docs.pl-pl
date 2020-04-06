@@ -1,25 +1,25 @@
 ---
-title: IDebugGenericFieldDefinition::GetFormalTypeParams | Dokumentacja firmy Microsoft
+title: IDebugGenericFieldDefinition::GetFormalTypeParams | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetFormalTypeParams
 - IDebugGenericFieldDefinition::GetFormalTypeParams
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 164bb5c3f74dec9a56ce3146c5e7ec62d6eb46b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728245"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 Pobiera parametry typu, biorąc pod uwagę liczbę parametrów.
@@ -44,19 +44,19 @@ int GetFormalTypeParams(
 
 ## <a name="parameters"></a>Parametry
 `cParams`\
-[in] Liczba parametrów.
+[w] Liczba parametrów.
 
 `ppParams`\
-[out] Tablica parametrów typu.
+[na zewnątrz] Tablica parametrów typu.
 
 `pcParams`\
-[out w] Liczba parametrów w `ppParams` tablicy.
+[w, na zewnątrz] Liczba parametrów `ppParams` w tablicy.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zwróć parametrów typu w kolejności od lewej do prawej. Na przykład słownika\<K, V > zwraca IDebugFormalGenericParameters {K, V}.
+ Zwraca parametry typu w kolejności od lewej do prawej. Na przykład słownik\<K,V> zwraca IDebugFormalGenericParameters {K,V}.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

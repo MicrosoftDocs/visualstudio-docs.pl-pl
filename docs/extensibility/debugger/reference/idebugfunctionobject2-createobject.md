@@ -1,28 +1,28 @@
 ---
-title: IDebugFunctionObject2::CreateObject | Dokumentacja firmy Microsoft
+title: IDebugFunctionObject2::CreateObject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87d1c2cd71b57136e26a2bc30004547dc4b8dee5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6de1a30a032919a90fbb3d760837d5eeca00feaf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313426"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728476"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Tworzy obiekt, który używa konstruktora, używając podanej wartości ustawień flagi wersji ewaluacyjnej oraz wartość limitu czasu.
+Tworzy obiekt, który używa konstruktora podane ustawienia flagi oceny i wartość limitu czasu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,28 +50,28 @@ int CreateObject (
 
 ## <a name="parameters"></a>Parametry
 `pConstructor`\
-[in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt, który reprezentuje konstruktora obiektu, który ma zostać utworzony.
+[w] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiektu, który reprezentuje konstruktora obiektu, który ma zostać utworzony.
 
 `dwArgs`\
-[in] Liczba parametrów w `pArg` tablicy. Reprezentuje liczbę parametrów przekazanych do konstruktora.
+[w] Liczba parametrów w `pArg` tablicy. Reprezentuje liczbę parametrów przekazanych do konstruktora.
 
 `pArgs`\
-[in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, które reprezentują parametry przekazywane do konstruktora.
+[w] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, która reprezentuje parametry przekazywane do konstruktora.
 
 `dwEvalFlags`\
-[in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie określające sposób oceny ma zostać wykonane.
+[w] Kombinacja flag z [wyliczenia EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) które określają sposób wykonywania oceny.
 
 `dwTimeout`\
-[in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj **NIESKOŃCZONEJ** czekanie w nieskończoność.
+[w] Maksymalny czas ( w milisekundach) oczekiwania przed zwróceniem tej metody. Użyj **INFINITE** czekać przez czas nieokreślony.
 
 `ppObject`\
-[out] Zwraca **IDebugObject** reprezentujący nowo utworzony obiekt.
+[na zewnątrz] Zwraca **obiekt IDebugObject** reprezentujący nowo utworzony obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie klasy lub inne typ złożony, który wymaga konstruktora, który jest parametrem.
+ Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje wystąpienie klasy lub innego typu złożonego, który wymaga konstruktora, który jest parametrem.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

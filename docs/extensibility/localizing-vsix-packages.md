@@ -1,5 +1,5 @@
 ---
-title: Lokalizowanie pakietów VSIX | Microsoft Docs
+title: Lokalizowanie pakietów VSIX | Dokumenty firmy Microsoft
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,27 +7,27 @@ helpviewer_keywords:
 - localize extension
 - localized deployment
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 171c8635c2d6db2c346fb836701e630812ecbb28
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7d2d4222e45d56447951e86d558af9983a0d1cc9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186442"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702897"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizowanie pakietów VSIX
 
-Pakiet VSIX można zlokalizować przez utworzenie pliku *Extension. vsixlangpack* dla każdego języka docelowego, a następnie umieszczenie ich we właściwym folderze. Gdy zlokalizowany pakiet jest zainstalowany, zlokalizowana nazwa rozszerzenia jest wyświetlana wraz z zlokalizowanym opisem. Jeśli podasz zlokalizowany plik licencji lub adres URL wskazujący zlokalizowane informacje, są one również wyświetlane.
+Pakiet VSIX można zlokalizować, tworząc plik *Extension.vsixlangpack* dla każdego języka docelowego, a następnie umieszczając go w odpowiednim folderze. Po zainstalowaniu zlokalizowanego pakietu zlokalizowana nazwa rozszerzenia jest wyświetlana wraz z zlokalizowanym opisem. Jeśli podasz zlokalizowany plik licencji lub adres URL, który wskazuje zlokalizowane informacje, są one również wyświetlane.
 
-Jeśli zawartość pakietu VSIX zawiera pakietu VSPackage, który dodaje polecenia menu lub inny interfejs użytkownika, zobacz [lokalizowanie poleceń menu](../extensibility/localizing-menu-commands.md) , aby uzyskać informacje na temat lokalizowania nowych elementów interfejsu użytkownika.
+Jeśli zawartość pakietu VSIX zawiera VSPackage, który dodaje polecenia menu lub inny interfejs użytkownika, zobacz [Lokalizuj polecenia menu,](../extensibility/localizing-menu-commands.md) aby uzyskać informacje na temat lokalizacji nowych elementów interfejsu użytkownika.
 
 ## <a name="directory-structure"></a>Struktura katalogów
 
- Gdy użytkownik instaluje rozszerzenie, **rozszerzenia i aktualizacje** sprawdza najwyższy poziom pakietu VSIX dla folderu, którego nazwa pasuje do ustawień regionalnych programu Visual Studio na komputerze docelowym. Jeśli **rozszerzenia i aktualizacje** znajdą plik *. vsixlangpack* w folderze, zastępuje zlokalizowane wartości w tym pliku dla odpowiednich wartości w pliku *. vsixmanifest* . Te wartości są wyświetlane podczas instalowania rozszerzenia. W poniższym przykładzie pokazano strukturę katalogów pakietu VSIX zlokalizowanego w języku hiszpańskim (es-ES) i francuskim (fr-FR).
+ Gdy użytkownik instaluje rozszerzenie, **rozszerzenia i aktualizacje** sprawdza najwyższy poziom pakietu VSIX dla folderu, którego nazwa pasuje do ustawień regionalnych programu Visual Studio komputera docelowego. Jeśli **rozszerzenia i aktualizacje** znajdzie plik *vsixlangpack* w folderze, zastępuje zlokalizowane wartości w tym pliku dla odpowiednich wartości w pliku *vsixmanifest.* Wartości te są wyświetlane podczas instalowania rozszerzenia. W poniższym przykładzie przedstawiono strukturę katalogów pakietu VSIX, który jest zlokalizowany w języku hiszpańskim (es-ES) i francuskim (fr-FR).
 
 ```text
 .
@@ -41,29 +41,29 @@ Jeśli zawartość pakietu VSIX zawiera pakietu VSPackage, który dodaje polecen
 ```
 
 > [!NOTE]
-> Szablony projektów obsługiwane przez VSIX w [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] wygenerować manifest VSIX i nadaj mu nazwę *source. Extension. vsixmanifest*. Gdy program Visual Studio kompiluje projekt, kopiuje zawartość tego pliku do Extension. VsixManifest w pakiecie VSIX.
+> Szablony projektów obsługiwane przez usługę [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] VSIX w manifeście vsix i nazwaniu go *source.extension.vsixmanifest*. Gdy program Visual Studio tworzy projekt, kopiuje zawartość tego pliku do Extension.VsixManifest w pakiecie VSIX.
 
-## <a name="the-extensionvsixlangpack-file"></a>Plik rozszerzenia. vsixlangpack
+## <a name="the-extensionvsixlangpack-file"></a>Plik Extension.vsixlangpack
 
-Plik *Extension. vsixlangpack* jest zgodny ze [schematem pakietu Language Pack VSIX 2,0](../extensibility/vsix-language-pack-schema-2-0-reference.md). Ten schemat zawiera `PackageLanguagePackManifest`, które bezpośrednio następuje `Metadata` elementu podrzędnego. Element Metadata może zawierać maksymalnie 6 elementów podrzędnych, `DisplayName`, `Description`, `MoreInfo`, `License`, `ReleaseNotes`i `Icon`. Te elementy podrzędne odnoszą się do `DisplayName`, `Description`, `MoreInfo`, `License`, `ReleaseNotes`i `Icon` elementów podrzędnych elementu `Metadata` pliku *Extension. vsixmanifest* .
+Plik *Extension.vsixlangpack* jest zgodny ze [schematem 2.0 pakietu językowego VSIX](../extensibility/vsix-language-pack-schema-2-0-reference.md). Ten schemat ma `PackageLanguagePackManifest`, który jest `Metadata` natychmiast następuje element podrzędny. Element Metadane może zawierać maksymalnie 6 `Description` `MoreInfo`elementów podrzędnych, `License` `DisplayName`, , , `ReleaseNotes`, i `Icon`. Te elementy podrzędne `DisplayName` `Description`odpowiadają `MoreInfo` `License` `Metadata` elementom `Icon` elementu `ReleaseNotes` *Extension.vsixmanifest elementu Extension.vsixmanifest.*
 
-Podczas tworzenia pliku vsixlangpack należy ustawić właściwość `Include in Vsix` na `true`. W przeciwnym razie zlokalizowany tekst instalacji zostanie zignorowany.
+Podczas tworzenia pliku vsixlangpack należy ustawić `Include in Vsix` właściwość na `true`. W przeciwnym razie zlokalizowany tekst instalacji zostanie zignorowany.
 
-### <a name="to-set-the-include-in-vsix-property"></a>Aby ustawić właściwość include w VSIX
+### <a name="to-set-the-include-in-vsix-property"></a>Aby ustawić właściwość Uwzględnij w programie Vsix
 
-1. W **Eksplorator rozwiązań**kliknij prawym przyciskiem myszy plik Extension. vsixlangpack, a następnie kliknij polecenie **Właściwości**.
+1. W **Eksploratorze rozwiązań**kliknij prawym przyciskiem myszy plik Extension.vsixlangpack, a następnie kliknij polecenie **Właściwości**.
 
-2. W **siatce właściwości**kliknij pozycję **Dołącz w VSIX**i ustaw jej wartość na `true`.
+2. W **siatce właściwości**kliknij pozycję **Uwzględnij w programie Vsix**i ustaw jego wartość na `true`.
 
 ## <a name="example"></a>Przykład
 
 ### <a name="description"></a>Opis
 
-Poniższy przykład przedstawia istotne fragmenty pliku *Extension. vsixmanifest* . Plik zawiera również odpowiedni plik *Extension. vsixlangpack* dla języka hiszpańskiego. Wartości z pakietu językowego zastępują wartości z manifestu, jeśli ustawienia regionalne programu Visual Studio na komputerze docelowym zostały ustawione na hiszpański.
+W poniższym przykładzie przedstawiono istotne fragmenty pliku *Extension.vsixmanifest.* Plik zawiera również odpowiedni plik *Extension.vsixlangpack* dla języka hiszpańskiego. Wartości z pakietu językowego zastępują wartości z manifestu, jeśli ustawienia regionalne programu Visual Studio komputera docelowego są ustawione na hiszpański.
 
-### <a name="code"></a>Kod
+### <a name="code"></a>Code
 
-- [*Extension. vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Poniższy przykład przedstawia istotne fragmenty pliku *Extension. vsixmanifest
 </PackageManifest>
 ```
 
-- [*Extension. vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -99,10 +99,10 @@ Poniższy przykład przedstawia istotne fragmenty pliku *Extension. vsixmanifest
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Dokumentacja schematu pakietu języka VSIX 2,0](vsix-language-pack-schema-2-0-reference.md)|Pakiet językowy VSIX zawiera opis informacji o lokalizacji pliku wdrożenia. VSIX.|
-|[Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Opisuje strukturę i zawartość pakietu VSIX.|
-|[Lokalizowanie poleceń menu](../extensibility/localizing-menu-commands.md)|Pokazuje, jak lokalizować inne zasoby tekstowe w rozszerzeniu.|
+|[Odwołanie do schematu 2.0 pakietu językowego VSIX](vsix-language-pack-schema-2-0-reference.md)|Pakiet językowy VSIX opisuje informacje o lokalizacji pliku wdrażania vsix.|
+|[Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Opisuje strukturę i zawartość pakietu vsix.|
+|[Lokalizowanie poleceń menu](../extensibility/localizing-menu-commands.md)|Pokazuje, jak zlokalizować inne zasoby tekstowe w rozszerzeniu.|

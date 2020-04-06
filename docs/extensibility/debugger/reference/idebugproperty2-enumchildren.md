@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren | Dokumentacja firmy Microsoft
+title: IDebugProperty2::WyliczeniaDzieci | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::EnumChildren
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4aa7bbad1361053d86c59fabb58027c955856222
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343116"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721511"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-Pobiera listę właściwości elementy podrzędne.
+Pobiera listę korżenia obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,30 +53,30 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parametry
 `dwFields`\
-[in] Kombinacja flag z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenia, która określa pola, które w wyliczany [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur, które mają być wypełnione.
+[w] Kombinacja flag z wyliczenia [DEBUGPROP_INFO_FLAGS,](../../../extensibility/debugger/reference/debugprop-info-flags.md) która określa, które pola w wyliczonych [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur mają być wypełnione.
 
 `dwRadix`\
-[in] Określa podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.
+[w] Określa radix, który ma być używany do formatowania dowolnych informacji liczbowych.
 
 `guidFilter`\
-[in] Identyfikator GUID filtra używanego z `dwAttribFilter` i `pszNameFilter` parametry, aby wybrać opcję `DEBUG_PROPERTY_INFO` elementy podrzędne są do wyliczenia. Na przykład `guidFilterLocals` filtry dla zmiennych lokalnych.
+[w] Identyfikator GUID filtru `dwAttribFilter` używanego z parametrami i `pszNameFilter` parametrami, aby wybrać elementy podrzędne, które `DEBUG_PROPERTY_INFO` mają być wyliczone. Na przykład `guidFilterLocals` filtry dla zmiennych lokalnych.
 
 `dwAttribFilter`\
-[in] Kombinacja flag z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) wyliczenie, które określa, jakiego rodzaju obiektów do wyliczenia, na przykład `DBG_ATTRIB_METHOD` dla wszystkich metod, które mogą być elementami podrzędnymi tej właściwości. W połączeniu z `guidFilter` i `pszNameFilter` parametrów.
+[w] Kombinacja flag z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) wyliczenia, która określa, jaki typ obiektów do wyliczenia, na przykład `DBG_ATTRIB_METHOD` dla wszystkich metod, które mogą być części podrzędnych tej właściwości. Używany w połączeniu `guidFilter` `pszNameFilter` z parametrami i.
 
 `pszNameFilter`\
-[in] Nazwa filtra używanego z `guidFilter` i `dwAttribFilter` parametry, aby wybrać opcję `DEBUG_PROPERTY_INFO` elementy podrzędne są do wyliczenia. Na przykład ustawienie tego parametru do filtrów "MyX" dla wszystkich elementów podrzędnych o nazwie "MyX."
+[w] Nazwa filtru używanego `guidFilter` z `dwAttribFilter` i parametrów, aby wybrać, które `DEBUG_PROPERTY_INFO` elementy podrzędne mają być wyliczone. Na przykład ustawienie tego parametru na filtry "MyX" dla wszystkich dziewiętnastych dzieci o nazwie "MyX".
 
 `dwTimeout`\
-[in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+[w] Określa maksymalny czas oczekiwania w milisekundach przed zwróceniem z tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
 
 `ppEnum`\
-[out] Zwraca [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) obiekt, który zawiera listę właściwości podrzędnej.
+[na zewnątrz] Zwraca obiekt [IEnumDebugPropertyInfo2 zawierający](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) listę właściwości podrzędnych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

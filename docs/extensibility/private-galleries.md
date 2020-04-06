@@ -1,53 +1,53 @@
 ---
-title: Galerie prywatne | Dokumentacja firmy Microsoft
+title: Prywatne galerie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 115fa08bea2716d4d16ba1bc04ac2fafa82154ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4056e4dedf06ffe86755bf946c77032d6f6782dd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336098"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702036"
 ---
-# <a name="private-galleries"></a>Galerie prywatne
-Możesz udostępnić formanty, szablony i narzędzia, które tworzysz, publikując je do *prywatną galerię* w sieci intranet dla całej organizacji, w następujący sposób:
+# <a name="private-galleries"></a>Prywatne galerie
+Formanty, szablony i narzędzia można udostępniać, publikując je w *prywatnej galerii* w intranecie dla organizacji w następujący sposób:
 
-- Utwórz Atom () kanału informacyjnego RSS do odpowiednio skonfigurowanego centralną lokalizację (repozytorium) w sieci intranet. Aby uzyskać więcej informacji, zobacz [jak: Tworzenie źródła danych dla galerii prywatnej Atom](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
+- Utwórz kanał informacyjny Atom (RSS) w odpowiednio skonfigurowanej centralnej lokalizacji (repozytorium) w intranecie. Aby uzyskać więcej informacji, zobacz [Jak: Tworzenie kanału informacyjnego Atom dla galerii prywatnej](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md).
 
-- Dystrybucja *.pkgdef* pliku, który opisuje prywatną galerię. Firma Microsoft zaleca tej konfiguracji dla administratorów, którzy chcą nawiązać ona prywatną galerię na wielu komputerach jednocześnie.
+- Rozesłaj plik *pkgdef* opisujący galerię prywatną. Zaleca się tę konfigurację dla administratorów, którzy chcą połączyć galerię prywatną z wieloma komputerami w tym samym czasie.
 
-## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Dodawanie galerii prywatnej rozszerzenia i aktualizacje w programie Visual Studio
- Po udostępnieniu ona prywatną galerię można dodać go do **rozszerzenia i aktualizacje** w programie Visual Studio.
+## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>Dodawanie galerii prywatnej do rozszerzeń i aktualizacji w programie Visual Studio
+ Gdy galeria prywatna jest dostępna, można dodać ją do **rozszerzeń i aktualizacji** w programie Visual Studio.
 
- ![Okno dialogowe dodawania Menedżera rozszerzenia](../extensibility/media/em_adddialog.png "EM_AddDialog")
+ ![Okno dialogowe Dodawanie menedżera rozszerzeń](../extensibility/media/em_adddialog.png "EM_AddDialog")
 
-### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Aby dodać ona prywatną galerię do rozszerzenia i aktualizacje
+### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>Aby dodać galerię prywatną do rozszerzeń i aktualizacji
 
-1. Na pasku menu wybierz **narzędzia** > **opcje**.
+1. Na pasku menu wybierz pozycję**Opcje** **narzędzi** > .
 
-2. W **środowiska** węzeł **rozszerzenia i aktualizacje**.
+2. W węźle **Środowisko** wybierz pozycję **Rozszerzenia i aktualizacje**.
 
-3. Wybierz **Dodaj** przycisku.
+3. Wybierz przycisk **Dodaj**.
 
-4. W **nazwa** na przykład wprowadź nazwę dla galerii prywatnej `My Gallery`.
+4. W polu **Nazwa** wprowadź na przykład nazwę galerii `My Gallery`prywatnej .
 
-5. W **adresu URL** wprowadź adres URL strumieniowego źródła Atom lub witryny programu SharePoint, który jest hostem prywatną galerię.
+5. W polu **ADRES URL** wprowadź adres URL kanału informacyjnego Atom lub witryny programu SharePoint, w ramach których znajduje się galeria prywatna.
 
-    1. Jeśli host znajduje się źródło danych Atom łączący się z prywatną galerię, adres URL będzie przypominać ten: http://www.mywebsite/mygallery/atom.xml.  Ten adres URL może odwoływać się do pliku lub ścieżkę sieciową.
+    1. Jeśli host jest kanałem informacyjnym Atom, który łączy się z http://www.mywebsite/mygallery/atom.xmlgalerią prywatną, adres URL będzie podobny do tego: .  Ten adres URL może odnosić się do pliku lub ścieżki sieciowej.
 
-    2. Jeśli host jest witryną programu SharePoint, adres URL będzie podobny do tego: http://mysharepoint/sites/mygallery/forms/AllItems.aspx.
+    2. Jeśli host jest witryną programu SharePoint, adres http://mysharepoint/sites/mygallery/forms/AllItems.aspxURL będzie podobny do następującego: .
 
-### <a name="manage-private-galleries"></a>Zarządzanie galerie prywatne
- Administrator może udostępnić ona prywatną galerię na kilku komputerach jednocześnie przez modyfikację rejestru systemu na każdym komputerze. Aby to zrobić, należy utworzyć *.pkgdef* pliku, który opisuje nowych kluczy rejestru i ich wartości.  Format ten plik jest w następujący sposób.
+### <a name="manage-private-galleries"></a>Zarządzanie prywatnymi galeriami
+ Administrator może udostępnić prywatną galerię kilku komputerom jednocześnie, modyfikując rejestr systemowy na każdym komputerze. Aby to osiągnąć, należy utworzyć plik *pkgdef* opisujący nowe klucze rejestru i ich wartości.  Format tego pliku jest następujący.
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
@@ -61,34 +61,34 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
- Aby uzyskać więcej informacji, zobacz [jak: Zarządzanie galerią prywatnej za pomocą ustawień rejestru](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).
+ Aby uzyskać więcej informacji, zobacz [Jak: Zarządzanie galerią prywatną przy użyciu ustawień rejestru](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md).
 
-## <a name="install-extensions-from-a-private-gallery"></a>Zainstalować rozszerzenia z galerii prywatnej
- Można wyszukać i zainstalować rozszerzenia programu Visual Studio z prywatną galerię w **rozszerzenia i aktualizacje**. Użyto ona prywatną galerię o nazwie `My Gallery`.
+## <a name="install-extensions-from-a-private-gallery"></a>Instalowanie rozszerzeń z galerii prywatnej
+ Rozszerzenia programu Visual Studio można wyszukiwać i instalować z galerii prywatnej w **programie Rozszerzenia i aktualizacje**. W poniższych krokach `My Gallery`użyto galerii prywatnej o nazwie .
 
- ![Menedżer rozszerzeń instalowanie galerią prywatną](../extensibility/media/em_.png "EM_")
+ ![Menedżer rozszerzeń Instalowanie galerii prywatnej](../extensibility/media/em_.png "EM_")
 
 ### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>Aby wyszukać i zainstalować rozszerzenia z galerii prywatnej
 
-1. Na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+1. Na pasku menu wybierz pozycję**Rozszerzenia i aktualizacje** **narzędzi** > .
 
-2. W okienku po lewej stronie wybierz **rozszerzeń Online**, a następnie wybierz pozycję **Moja Galeria**.
+2. W lewym okienku wybierz pozycję **Rozszerzenia online**, a następnie wybierz pozycję **Moja galeria**.
 
-3. W okienku po prawej stronie zaznacz rozszerzenie, a następnie wybierz **Pobierz** przycisku.
+3. W prawym okienku wybierz rozszerzenie, a następnie wybierz przycisk **Pobierz.**
 
-## <a name="update-extensions-from-a-private-gallery"></a>Aktualizuj rozszerzenia z galerii prywatnej
- Jak nowe wersje rozszerzeń programu Visual Studio są ogłaszane w galerii prywatnej, należy zaktualizować rozszerzenia, które zostały zainstalowane. Użyto ona prywatną galerię o nazwie `My Repository`.
+## <a name="update-extensions-from-a-private-gallery"></a>Aktualizowanie rozszerzeń z galerii prywatnej
+ Ponieważ nowe wersje rozszerzeń programu Visual Studio są publikowane w galerii prywatnej, można zaktualizować rozszerzenia, które zostały zainstalowane. W poniższych krokach `My Repository`użyto galerii prywatnej o nazwie .
 
- ![Aktualizacja galerii prywatnej Menedżer rozszerzenia](../extensibility/media/em_update.png "EM_Update")
+ ![Aktualizacja prywatnej galerii menedżera rozszerzeń](../extensibility/media/em_update.png "EM_Update")
 
-### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Aby zaktualizować zainstalowanego rozszerzenia z galerii prywatnej
+### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>Aby zaktualizować zainstalowane rozszerzenie z galerii prywatnej
 
-1. Na pasku menu wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
+1. Na pasku menu wybierz pozycję**Rozszerzenia i aktualizacje** **narzędzi** > .
 
-2. W okienku po lewej stronie wybierz **aktualizacje**, a następnie wybierz pozycję **Moje repozytorium**.
+2. W lewym okienku wybierz pozycję **Aktualizacje**, a następnie wybierz pozycję **Moje repozytorium**.
 
-3. W okienku po prawej stronie zaznacz rozszerzenie, a następnie wybierz **aktualizacji** przycisku.
+3. W prawym okienku wybierz rozszerzenie, a następnie wybierz przycisk **Aktualizuj.**
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
-- [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
+- [Wysyłaj rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

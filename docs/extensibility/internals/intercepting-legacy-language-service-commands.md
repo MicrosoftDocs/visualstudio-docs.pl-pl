@@ -1,39 +1,39 @@
 ---
-title: Poleceń usługi w języka Legacy przechwytuje | Dokumentacja firmy Microsoft
+title: Przechwytywanie starszych poleceń usługi językowej | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, intercepting language service
 - language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3716f02b076bd5ea7ef63135133acffc823a7703
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314943"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707448"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Przechwytywanie poleceń starszej wersji usługi językowej
-Za pomocą [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], może mieć polecenia intercept usługi języka, które widoku tekstu w przeciwnym razie będzie obsługiwać. Jest to przydatne dla zachowania specyficzny dla języka, który nie zarządza widoku tekstu. Te polecenia mogą przechwycić, dodając co najmniej jeden filtr polecenia do widoku tekstu z usługi w języka.
+W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]programze można mieć polecenia przechwytywania usługi języka, które w przeciwnym razie obsłużyłyby widok tekstu. Jest to przydatne w przypadku zachowania specyficznego dla języka, które nie zarządza widokiem tekstu. Można przechwycić te polecenia, dodając jeden lub więcej filtrów poleceń do widoku tekstowego z usługi językowej.
 
-## <a name="getting-and-routing-the-command"></a>Routing poleceń i wprowadzenie
- Filtr polecenia jest <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> obiekt, który monitoruje niektórych sekwencje znaków lub klucza poleceń. Można skojarzyć więcej niż jeden filtr polecenia przy użyciu widoku w jeden tekst. Każdy widok tekstu zachowuje filtry służbowej. Po utworzeniu nowego filtru polecenia Dodaj filtr do łańcucha dla widoku odpowiedni tekst.
+## <a name="getting-and-routing-the-command"></a>Uzyskiwanie i wyznaczanie polecenia
+ Filtr poleceń <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> jest obiektem monitorujcyjne sekwencje znaków lub polecenia klawiszy. Można skojarzyć więcej niż jeden filtr poleceń z jednym widokiem tekstowym. Każdy widok tekstu zachowuje łańcuch filtrów poleceń. Po utworzeniu nowego filtru poleceń należy dodać filtr do łańcucha dla odpowiedniego widoku tekstu.
 
- Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> można dodać filtr poleceń w łańcuchu. Gdy wywołujesz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zwraca inny filtr polecenia, do którego można przekazać poleceń, które nie obsługuje polecenia filtru.
+ Wywołanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> na, aby dodać filtr poleceń do łańcucha. Po <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>wywołaniu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zwraca inny filtr poleceń, do którego można przekazać polecenia, których filtr poleceń nie obsługuje.
 
- Masz następujące opcje obsługi polecenia:
+ Dostępne są następujące opcje obsługi poleceń:
 
-- Obsługa polecenia, a następnie przekaż polecenia do następnego filtru poleceń w łańcuchu.
+- Obsłuż polecenie, a następnie przekaż polecenie do następnego filtru poleceń w łańcuchu.
 
-- Obsługa polecenia i nie są przekazywane do polecenia do następnego filtru polecenia.
+- Obsłuż polecenie i nie przekazuje polecenia do następnego filtru poleceń.
 
-- Nie obsługują polecenia, ale ona przekazać polecenie do następnego filtru polecenia.
+- Nie należy obsługiwać polecenia, ale przekazać polecenie do następnego filtru polecenia.
 
-- Ignoruj polecenia. Nie obsługują w bieżący filtr, a nie są przekazywane do następnego filtru.
+- Zignoruj polecenie. Nie należy obsługiwać go w bieżącym filtrze i nie przekazywać go do następnego filtru.
 
-  Aby uzyskać informacje dotyczące polecenia powinna obsługiwać usługi w języka, zobacz [ważne polecenia dotyczące filtrów usługi językowej](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Aby uzyskać informacje o tym, które polecenia powinna obsługiwać usługa językowa, zobacz [Ważne polecenia filtrów usług językowych](../../extensibility/internals/important-commands-for-language-service-filters.md).

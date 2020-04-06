@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode | Dokumentacja firmy Microsoft
+title: IDebugProgramPublisher2::PublishProgramNode | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgramNode
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1b0611b723b649fd8d899af427c6b41fb5db1e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343285"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721666"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-Sprawia, że węzeł program dostępne do użytku przez aparaty debugowania (DEs) i sesja debugowania manager (SDM).
+Udostępnia węzeł programu do użytku przez aparaty debugowania (DEs) i menedżera debugowania sesji (SDM).
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,17 +41,17 @@ int PublishProgramNode(
 
 ## <a name="parameters"></a>Parametry
 `pProgramNode`\
-[in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt, który reprezentuje węzeł program, aby udostępnić.
+[w] [Obiekt IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) reprezentujący węzeł programu do udostępnienia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda umożliwia programom można wykonać zapytania o informacje przed wybraniem i uruchamianie ich do debugowania.
+ Ta metoda umożliwia programy, które mają być poszukiwane w poszukiwaniu informacji przed wybraniem i uruchomieniem ich do debugowania.
 
- Aby usunąć węzeł program z dostępności, należy wywołać [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) metody.
+ Aby usunąć węzeł programu z dostępności, należy wywołać [metodę UnpublishProgramNode.](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)

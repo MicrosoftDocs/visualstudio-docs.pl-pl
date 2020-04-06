@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals | Dokumentacja firmy Microsoft
+title: IDebugMethodField::EnumLocals | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumLocals method
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd4e2ffcaa66af58d3cc7ab57420de32d77eec92
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08872160860d0d442f9807705dea70190dff9b28
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346773"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727204"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
-Tworzy moduł wyliczający wybrane zmienne lokalne, metody.
+Tworzy wyliczyć dla wybranych zmiennych lokalnych metody.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,18 +43,18 @@ int EnumLocals(
 
 ## <a name="parameters"></a>Parametry
 `pAddress`\
-[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt reprezentujący adres debugowania, który wybiera kontekst lub zakres, z którego mają zostać pobrane zmienne lokalne.
+[w] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu reprezentującego adres debugowania, który wybiera kontekst lub zakres, z którego można uzyskać lokalnych.
 
 `ppLocals`\
-[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę zmienne; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych zmiennych lokalnych.
+[na zewnątrz] Zwraca [obiekt IEnumDebugFields reprezentujący](../../../extensibility/debugger/reference/ienumdebugfields.md) listę lokalnych mieszkańców; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych lokalnych.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma żadnych zmiennych lokalnych. W przeciwnym razie zwraca kod błędu.
+Jeśli się powiedzie, zwraca S_OK lub zwraca S_FALSE, jeśli nie ma mieszkańców. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Wyliczane są tylko zmienne zdefiniowane w obrębie bloku, który zawiera adres danego debugowania. Jeśli potrzebne są wszystkie zmienne lokalne, w tym elementy lokalne generowanych przez kompilator, wywołaj [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) metody.
+Wyliczano tylko zmienne zdefiniowane w bloku zawierającym podany adres debugowania. Jeśli wszystkie lokalne, w tym dowolnego lokalnego generowanego przez kompilatora są potrzebne, wywołaj [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) metody.
 
-Metoda może zawierać wielu kontekstach lub bloków zakresu. Na przykład następującą metodę contrived zawiera trzy zakresy, dwóch bloków wewnętrzny i treści metody, sam.
+Metoda może zawierać wiele kontekstów zakresu lub bloków. Na przykład następująca wymyślona metoda zawiera trzy zakresy, dwa bloki wewnętrzne i samą treść metody.
 
 ```csharp
 public void func(int index)
@@ -74,9 +74,9 @@ public void func(int index)
 }
 ```
 
-[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentuje `func` sama metoda. Wywoływanie `EnumLocals` metody z [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) równa `Inner Scope 1` adres zwraca wyliczenie zawierający `temp1` zmiennej, na przykład.
+[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentuje `func` samą metodę. Wywołanie `EnumLocals` metody z [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) `Inner Scope 1` zestaw do adresu zwraca wyliczenie zawierające zmienną, `temp1` na przykład.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

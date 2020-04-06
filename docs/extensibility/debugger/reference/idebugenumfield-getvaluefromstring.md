@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString | Dokumentacja firmy Microsoft
+title: IDebugEnumField::GetValueFromString | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb340721c9f446b740c2723dc3f6dc05452e74de
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345121"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730261"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-Ta metoda zwraca wartość skojarzoną z nazwą stała wyliczenia.
+Ta metoda zwraca wartość skojarzoną z nazwą stałej wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,17 +43,17 @@ int GetValueFromString(
 
 ## <a name="parameters"></a>Parametry
 `pszValue`\
-[in] Ciąg określający nazwę, dla którego ma zostać pobrana wartość. Należy pamiętać, że dla języka C++, jest to ciąg znaku dwubajtowego.
+[w] Ciąg określający nazwę, dla której ma zostać określona wartość. Należy zauważyć, że w przypadku języka C++jest to ciąg znaków szeroki.
 
 `pValue`\
-[out] Zwraca wartość liczbową skojarzoną.
+[na zewnątrz] Zwraca skojarzoną wartość liczbową.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nazwa nie jest częścią wyliczenia lub kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym `S_FALSE`razie zwraca , jeśli nazwa nie jest częścią wyliczenia lub kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest rozróżniana wielkość liter. Użyj razie wyszukiwanie bez uwzględniania wielkości liter (na przykład w języku, takie jak Visual Basic, których nazwy nie są z uwzględnieniem wielkości liter) [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
+ W tej metodzie rozróżniana jest wielkość liter. Jeśli potrzebne jest wyszukiwanie bez uwzględniania wielkości liter (na przykład w języku takim jak Visual Basic, w którym nazwy nie są uwzględniane wielkość liter), należy użyć [getvaluefromstringcaseinsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)

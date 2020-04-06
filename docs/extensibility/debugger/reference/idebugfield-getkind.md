@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetKind | Dokumentacja firmy Microsoft
+title: IDebugField::GetKind | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetKind method
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99c7d1bed9f5afe844539c9a9ccab11f43a8002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333172"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728815"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-Ta metoda pobiera typ pola.
+Ta metoda pobiera rodzaj pola.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetKind(
 
 ## <a name="parameters"></a>Parametry
 `pdwKind`\
-[out] Zwraca typ pola pod postacią połączenia [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) stałe.
+[na zewnątrz] Zwraca rodzaj pola jako kombinację [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) stałych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

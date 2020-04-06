@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccGetUserOption | Microsoft Docs
+title: Funkcja SccGetUserOption | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72721437"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700686"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption, funkcja
-Ta funkcja pobiera różne opcje specyficzne dla użytkownika.
+Ta funkcja pobiera wiele opcji specyficznych dla użytkownika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,24 +33,24 @@ SCCRTN SccGetUserOption(
 ```
 
 #### <a name="parameters"></a>Parametry
- pContext
+ Pcontext
 
-podczas Wskaźnik kontekstu wtyczki kontroli źródła.
+[w] Wskaźnik kontekstu wtyczki formantu źródła.
 
- nOption
+ nOpcja
 
-podczas Opcja pobrania (Zobacz uwagi dotyczące możliwych opcji).
+[w] Opcja pobierania (zobacz Uwagi dotyczące możliwych opcji).
 
- lpVal
+ lpVal (ł.
 
-określoną Wartość skojarzona z opcją.
+[na zewnątrz] Wartość skojarzona z opcją.
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Pomyślnie pobrano opcję.|
+|SCC_OK|Opcja została pobrana pomyślnie.|
 |SCC_E_OPNOTSUPPORTED|Opcja nie jest obsługiwana.|
 |SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd.|
 
@@ -59,8 +59,8 @@ określoną Wartość skojarzona z opcją.
 
 |Opcja użytkownika|Opis|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Określa, czy użytkownik chce wyewidencjonować lokalną wersję plików. `lpVal` jest przypisany `SCC_USEROPT_COLV_YES` (użytkownik chce wyewidencjonować pliki lokalne) lub `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Określa, czy użytkownik chce wyewidencjonować lokalną wersję plików. `lpVal``SCC_USEROPT_COLV_YES` (użytkownik chce wyewidencjonować pliki `SCC_USEROPT_COLV_NO`lokalne) lub .|
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
 - [Kody błędów](../extensibility/error-codes.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Dokumentacja firmy Microsoft
+title: IDebugProperty3::GetStringChars | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348830"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721082"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Pobiera parametry skojarzone z tą właściwością i zapisuje go w buforze dostarczone przez użytkownika.
+Pobiera ciąg skojarzony z tą właściwością i przechowuje go w buforze dostarczonym przez użytkownika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,24 +45,24 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Parametry
 `buflen`\
-[in] Maksymalna liczba znaków, które może przechowywać buforu dostarczone przez użytkownika.
+[w] Maksymalna liczba znaków, które może pomieścić bufor dostarczony przez użytkownika.
 
 `rgString`\
-[out] Zwraca ciąg.
+[na zewnątrz] Zwraca ciąg.
 
- [C++ tylko], `rgString` to wskaźnik do buforu, który otrzymuje z ciągu znaków Unicode. Tego buforu musi wynosić co najmniej `buflen` rozmiar znaków (nie w bajtach).
+ [C++ tylko], `rgString` jest wskaźnikiem do buforu, który odbiera znaki Unicode ciągu. Ten bufor musi `buflen` mieć rozmiar co najmniej znaków (nie bajtów).
 
 `pceltFetched`\
-[out] Gdzie jest zwracana liczba znaków rzeczywiście jest przechowywana w buforze. (Może być `NULL` w języku C++.)
+[na zewnątrz] Gdzie zwracana jest liczba znaków faktycznie przechowywanych w buforze. (Może `NULL` być w języku C++.)
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-W języku C++, należy uważać, aby mieć pewność, że rozmiar buforu jest co najmniej `buflen` znaków Unicode. Należy pamiętać, że znak Unicode 2 bajtów.
+W języku C++, należy zwrócić uwagę, aby zapewnić, że bufor jest co `buflen` najmniej znaków Unicode długo. Należy zauważyć, że znak Unicode ma 2 bajty długości.
 
 > [!NOTE]
-> W języku C++ zwracanego ciągu nie obejmuje kończącego znaku null. Jeśli określony, `pceltFetched` określą liczbę znaków w ciągu.
+> W języku C++ zwrócony ciąg nie zawiera kończącego się znaku null. Jeśli podano, `pceltFetched` określi liczbę znaków w ciągu.
 
 ## <a name="example"></a>Przykład
 
@@ -87,7 +87,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::IsPositionInDocument | Dokumentacja firmy Microsoft
+title: IDebugDocumentPosition2::IsPositionInDocument | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::IsPositionInDocument
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab4792427a98f97fcd50d4b39c2bb332527a0942
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4d92dddda8fd9831f5d66b602cd48fdbbc3dbcf1
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333413"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731654"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
-Określa, jeśli położenie dokumentu jest zawarty w danym dokumencie.
+Określa, czy pozycja dokumentu znajduje się w danym dokumencie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int IsPositionInDocument( 
 
 ## <a name="parameters"></a>Parametry
 `pDoc`\
-[in] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) obiekt, który reprezentuje zawierającego Release candidate dokumentu.
+[w] [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) obiekt, który reprezentuje zawierającego kandydata dokumentu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest używana głównie w przypadku ustawiania punktów przerwania [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfejsów. W miarę ładowania, by określić czy dokument zawiera ta pozycja nosi nazwę położenie punktu przerwania.
+ Ta metoda jest używana głównie w ustawianiu punktów przerwania w interfejsach [IDebugDocument2.](../../../extensibility/debugger/reference/idebugdocument2.md) W miarę ładowania dokumentów pozycja punktu przerwania jest wywoływana w celu ustalenia, czy dokument zawiera tę pozycję.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

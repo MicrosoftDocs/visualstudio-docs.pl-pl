@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Dokumentacja firmy Microsoft
+title: IDebugThread2::Zawiesić | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::Suspend
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc3abcc00d99e82a4af2e3886310772e47127274
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 74a7dd5dc69effbd46986eff963de3e740d9aa8e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320012"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718638"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Wstrzymuje działanie wątku.
+Zawiesza wątek.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,16 +41,16 @@ HRESULT Suspend ( 
 
 ## <a name="parameters"></a>Parametry
 `pdwSuspendCount`\
-[out] Zwraca przez operację zawieszania wstrzymania liczenia.
+[na zewnątrz] Zwraca liczbę wstrzymań po operacji wstrzymania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Każde wywołanie tej metody zwiększa liczbę Wstrzymaj powyżej 0. Ten licznik Wstrzymaj jest wyświetlana w **wątków** okna debugowania.
+ Każde wywołanie tej metody zwiększa liczbę wstrzymania powyżej 0. Ta liczba wstrzymania jest wyświetlana w oknie debugowania **wątków.**
 
- Dla każdego wywołania tej metody musi być wywołaniem nowsze [Wznów](../../../extensibility/debugger/reference/idebugthread2-resume.md) metody.
+ Dla każdego wywołania tej metody musi być późniejsze wywołanie [metody Resume.](../../../extensibility/debugger/reference/idebugthread2-resume.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

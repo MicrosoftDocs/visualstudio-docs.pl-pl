@@ -1,27 +1,27 @@
 ---
-title: Moduł wyliczający komunikat | Dokumentacja firmy Microsoft
+title: Wyliczacz wiadomości | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a702e7eae6bc6bcdace62d61f27f78c23aeaa95f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349025"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80702505"
 ---
-# <a name="message-enumerator"></a>Moduł wyliczający komunikat
-Następujące flagi są używane do `TEXTOUTPROC` funkcji, która jest funkcją wywołania zwrotnego, która zapewnia środowisko IDE, gdy wywołuje [SccOpenProject](../extensibility/sccopenproject-function.md) (zobacz [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) szczegółowe informacje na temat wywołania zwrotnego Funkcja).
+# <a name="message-enumerator"></a>Wyliczacz wiadomości
+Następujące flagi są używane `TEXTOUTPROC` dla funkcji, która jest funkcją wywołania zwrotnego, który IDE zapewnia, gdy wywołuje [SccOpenProject](../extensibility/sccopenproject-function.md) (zobacz [LPTEXTOUTPROC,](../extensibility/lptextoutproc.md) aby uzyskać szczegółowe informacje na temat funkcji wywołania zwrotnego).
 
- Jeśli środowisko IDE jest pytanie, aby anulować proces, jego może zostać komunikatów Anuluj. W tym przypadku źródło sterowania wtyczka używa `SCC_MSG_STARTCANCEL` poprosić IDE, aby wyświetlić **anulować** przycisku. Po tym dowolny zbiór normalne komunikaty mogą być wysyłane. Jeśli dowolny z tych zwraca `SCC_MSG_RTN_CANCEL`, a następnie kończy działanie operacji i zwraca dodatku typu plug-in. Wtyczka również sonduje `SCC_MSG_DOCANCEL` okresowo, aby określić, jeśli użytkownik anulował operację. Gdy wszystkie operacje są wykonywane lub jeśli użytkownik anulował, wysyła wtyczki `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, oraz typy SCC_MSG_ERROR są używane do wiadomości, które Pobierz wyświetlane na liście przewijania wiadomości. `SCC_MSG_STATUS` to specjalny typ, który wskazuje, że tekst powinny być widoczne w pasku stanu lub obszaru tymczasowego wyświetlania. Nie ona trwale na liście.
+ Jeśli IDE zostanie poproszony o anulowanie procesu, może uzyskać jedną z wiadomości anuluj. W takim przypadku wtyczka kontroli źródła `SCC_MSG_STARTCANCEL` używa do zwrócenia się do IDE, aby wyświetlić przycisk **Anuluj.** Następnie może zostać wysłany dowolny zestaw normalnych wiadomości. Jeśli którykolwiek `SCC_MSG_RTN_CANCEL`z tych zwraca , wtyczka kończy operację i zwraca. Wtyczka również sonduje `SCC_MSG_DOCANCEL` okresowo, aby ustalić, czy użytkownik anulował operację. Po zakończeniu wszystkich operacji lub anulowaniu przez użytkownika wtyczka `SCC_MSG_STOPCANCEL`wysyła . Typy `SCC_MSG_INFO`SCC_MSG_WARNING i SCC_MSG_ERROR są używane dla wiadomości, które są wyświetlane na przewijanej liście wiadomości. `SCC_MSG_STATUS`to specjalny typ, który wskazuje, że tekst powinien być wyświetlany na pasku stanu lub w tymczasowym obszarze wyświetlania. Nie pozostaje na stałe na liście.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,24 +40,24 @@ enum { 
 ```
 
 ## <a name="members"></a>Elementy członkowskie
- SCC_MSG_RTN_CANCEL zwracanie z wywołania zwrotnego w celu wskazania, Anuluj.
+ SCC_MSG_RTN_CANCEL Powrót z wywołania zwrotnego, aby wskazać anuluj.
 
- SCC_MSG_RTN_OK powrót z wywołania zwrotnego, aby kontynuować.
+ SCC_MSG_RTN_OK Powrót z wywołania zwrotnego, aby kontynuować.
 
- Komunikat SCC_MSG_INFO ma charakter informacyjny.
+ SCC_MSG_INFO Wiadomość ma informacyjny.
 
- Komunikat SCC_MSG_WARNING jest ostrzeżenie.
+ SCC_MSG_WARNING Komunikat jest ostrzeżeniem.
 
- Komunikat SCC_MSG_ERROR, występuje błąd.
+ SCC_MSG_ERROR Komunikat jest błędem.
 
- SCC_MSG_STATUS wiadomość jest przeznaczona dla paska stanu.
+ SCC_MSG_STATUS Message jest przeznaczony dla paska stanu.
 
- Tekst nie SCC_MSG_DOCANCEL; Zwraca IDE `SCC_MSG_RTN_OK` lub `SCC_MSG_RTN_CANCEL`.
+ SCC_MSG_DOCANCEL Brak tekstu; IDE `SCC_MSG_RTN_OK` zwraca `SCC_MSG_RTN_CANCEL`lub .
 
- SCC_MSG_STARTCANCEL rozpoczyna się na anulowanie pętli.
+ SCC_MSG_STARTCANCEL Uruchamia pętlę anulowania.
 
- SCC_MSG_STOPCANCEL zatrzymuje pętli anulowania.
+ SCC_MSG_STOPCANCEL Zatrzymuje pętlę anulowania.
 
-## <a name="see-also"></a>Zobacz także
-- [Wtyczek kontroli kodu źródłowego](../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>Zobacz też
+- [Wtyczki kontroli źródła](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

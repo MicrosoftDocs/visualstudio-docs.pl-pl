@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Dokumentacja firmy Microsoft
+title: IDebugProgram2::WriteDump | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d9d680ca83967f9f651269e186670fb90a771d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343631"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722738"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-Zapisuje plik zrzutu.
+Zapisuje zrzut do pliku.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,16 +43,16 @@ int WriteDump( 
 
 ## <a name="parameters"></a>Parametry
 `DumpType`\
-[in] Wartość z zakresu od [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) wyliczenie, które określa typ zrzutu, na przykład, w skrócie lub long.
+[w] Wartość z wyliczenia [DUMPTYPE,](../../../extensibility/debugger/reference/dumptype.md) która określa typ zrzutu, na przykład krótki lub długi.
 
 `pszDumpUrl`\
-[in] Adres URL zrzutu do zapisu. Zazwyczaj jest to w formie `file://c:\path\filename.ext`, ale może być dowolny prawidłowy adres URL.
+[w] Adres URL, do który chcesz zapisać zrzut. Zazwyczaj jest to w formie `file://c:\path\filename.ext`, ale może być dowolny prawidłowy adres URL.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zrzut program zwykle obejmuje bieżącej ramki stosu, sam stos, Lista wątków, uruchomiony w programie i prawdopodobnie wszystkie pamięci, który jest właścicielem program.
+ Zrzut programu zazwyczaj obejmują bieżącą ramkę stosu, sam stos, listę wątków uruchomionych w programie i ewentualnie dowolną pamięć, która jest właścicielem programu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

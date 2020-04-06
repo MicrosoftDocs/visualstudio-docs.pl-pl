@@ -1,5 +1,5 @@
 ---
-title: PENDING_BP_STATE | Dokumentacja firmy Microsoft
+title: PENDING_BP_STATE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6707c09e409e2a04d7afec0322b575a70cea33cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713994"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
-Określa stan oczekujący punkt przerwania (punkt przerwania, która nie została jeszcze powiązana).
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
+Określa stan oczekującego punktu przerwania (punktu przerwania, który nie został jeszcze powiązany).
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,27 +48,27 @@ public enum enum_PENDING_BP_STATE { 
 
 ## <a name="fields"></a>Pola
  `PBPS_NONE`\
- Symbol zastępczy zera. Nigdy nie zostanie zwrócona ta wartość.
+ Symbol zastępczy dla zera. Ta wartość nigdy nie jest zwracana.
 
  `PBPS_DELETED`\
  Wskazuje, że oczekujący punkt przerwania został usunięty.
 
  `PBPS_DISABLED`\
- Wskazuje, czy oczekujący punkt przerwania jest wyłączona.
+ Wskazuje, że oczekujący punkt przerwania jest wyłączony.
 
  `PBPS_ENABLED`\
  Wskazuje, że oczekujący punkt przerwania jest włączony.
 
 ## <a name="remarks"></a>Uwagi
- Użyj jako `state` członkiem [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.
+ Użyj jako `state` element członkowski [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struktury.
 
 ## <a name="requirements"></a>Wymagania
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

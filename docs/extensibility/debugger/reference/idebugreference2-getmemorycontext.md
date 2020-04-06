@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetMemoryContext | Dokumentacja firmy Microsoft
+title: IDebugReference2::GetMemoryContext | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryContext
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4178b14ca128fb7b0e5511f18fd2c9a5fdb3661
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f7f49262c0efe9f856ba01a73382541067335f0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66329832"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720587"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
-Pobiera kontekst odwołania do pamięci. Zarezerwowane do użytku w przyszłości.
+Pobiera kontekst pamięci odwołania. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetMemoryContext ( 
 
 ## <a name="parameters"></a>Parametry
 `ppMemory`\
-[out] Zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który reprezentuje pamięć skojarzone z wartością odwołania.
+[na zewnątrz] Zwraca [obiekt IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) reprezentujący pamięć skojarzoną z wartością odwołania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zawsze zwraca `E_NOTIMPL`.
+ Zawsze zwraca wartość `E_NOTIMPL`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

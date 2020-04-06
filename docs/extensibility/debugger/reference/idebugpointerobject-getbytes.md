@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Dokumentacja firmy Microsoft
+title: IDebugPointerObject::GetBytes | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 247e1ff4c934ae581c7a0224c8f8cba8d4e9d946
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66308865"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725516"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Pobiera wartość wskazywana jako serię kolejnych bajtów.
+Pobiera wartość wskazywał jako serię kolejnych bajtów.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>Parametry
 `dwStart`\
-[in] Przesunięcie w bajtach od początku, jaki wskazał obiekt.
+[w] Przesunięcie w bajtach od początku obiektu wskazywowane.
 
 `dwCount`\
-[in] Liczba bajtów do pobrania.
+[w] Liczba bajtów do pobrania.
 
 `pBytes`\
-[out w] Tablica, która jest wypełniona wartością jako serię bajtów kolejnych, zaczynając od danego przesunięcia od obiektu wskazywanego.
+[w, na zewnątrz] Tablica, która jest wypełniona wartością jako seria kolejnych bajtów, zaczynając od danego odsunięcia od obiektu wskazywała.
 
 `pdwBytes`\
-[out] Zwraca liczbę bajtów, które rzeczywiście zostały pobrane.
+[na zewnątrz] Zwraca liczbę bajtów faktycznie pobranych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest używana, jeśli wskaźnik, reprezentowane przez to [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje typ pierwotny lub prostej tablicy typów pierwotnych (czyli tablicę, która może być reprezentowany za pomocą prostych sekwencji bajtów).
+ Ta metoda jest używana, jeśli wskaźnik reprezentowany przez ten [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje na typ pierwotny lub prostą tablicę typów pierwotnych (czyli tablicę, która może być reprezentowana przez prostą sekwencję bajtów).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
 - [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

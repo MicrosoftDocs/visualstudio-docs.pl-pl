@@ -1,30 +1,30 @@
 ---
-title: Identyfikatory GUID środowiska IDE | Dokumentacja firmy Microsoft
+title: Identyfikatory GUID IDE | Dokumenty firmy Microsoft
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2cdd5a292de0413845da0ce2d7e8b4678cf895
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41f9931b8e36dcb363624ecbc67e186bd3f5f71c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311174"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710485"
 ---
 # <a name="ide-guids"></a>Identyfikatory GUID środowiska IDE
 
-<xref:Microsoft.VisualStudio.VSConstants> Klasy publikuje identyfikatorów GUID niektórych części zintegrowanego środowiska programistycznego (IDE), zgodnie z opisem w poniższej tabeli.
+Klasa <xref:Microsoft.VisualStudio.VSConstants> publikuje identyfikatory GUID niektórych części zintegrowanego środowiska programistycznego (IDE) wymienione w poniższej tabeli.
 
-## <a name="core-systems"></a>Podstawowych systemach
+## <a name="core-systems"></a>Systemy podstawowe
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.HtmlEditorPackage_guid>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
@@ -35,18 +35,18 @@ ms.locfileid: "66311174"
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>Szeroko widoczne składników
+## <a name="broadly-visible-components"></a>Szeroko widoczne komponenty
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
 |Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Pliki, foldery wirtualne i fizyczne i podprojekty
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Pliki, foldery wirtualne i fizyczne oraz podprojekty
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFile_guid>|6bb5f8ee-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFolder_guid>|6bb5f8ef-4483-11d3-8bcf-00c04f8ec28c|
@@ -55,7 +55,7 @@ ms.locfileid: "66311174"
 
 ## <a name="ui-contexts"></a>Konteksty interfejsu użytkownika
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>|8fe2df1d-e0da-4ebe-9d5c-415d40e487b5|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11d1-9f4e-00a0c911004f|
@@ -69,9 +69,9 @@ ms.locfileid: "66311174"
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
-## <a name="output-pane"></a>Okienko danych wyjściowych
+## <a name="output-pane"></a>Okienko wyjścia
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.BuildOutputPane_guid>|1BD8A850-02D1-11D1-BEE7-00A0C913D1F8|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.DebugPane_guid>|FC076020-078A-11D1-A7DF-00A0C9110051|
@@ -80,22 +80,22 @@ ms.locfileid: "66311174"
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>Zestawy polecenia i właściwości
+## <a name="command-sets-and-properties"></a>Zestawy poleceń i właściwości
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
 |Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
+|<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|0000000-0000-0000-C000-00000000046|
 
 ## <a name="task-list-guids"></a>Identyfikatory GUID listy zadań
 
-|Stała|Identyfikator GUID|
+|Stały|Identyfikator GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
@@ -109,7 +109,7 @@ ms.locfileid: "66311174"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>Strona selektor składnika identyfikatorów GUID
+## <a name="component-selector-page-guids"></a>Identyfikatory GUID strony selektora składników
 
 |Stałe|Identyfikator GUID|
 |---------------|----------|
@@ -117,7 +117,7 @@ ms.locfileid: "66311174"
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>Identyfikatory GUID różne powłoki
+## <a name="miscellaneous-shell-guids"></a>Różne identyfikatory GUID powłoki
 
 |Stałe|Identyfikator GUID|
 |---------------|----------|
@@ -125,8 +125,8 @@ ms.locfileid: "66311174"
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
-- [Stałe modelu COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)
-- [Stałe środowiska IDE](../extensibility/ide-constants.md)
-- [Polecenia definiowane w środowisku IDE do rozszerzania ystems projektu s](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [Stałe COM w kodzie zarządzanym](../extensibility/com-constants-in-managed-code.md)
+- [Stałe IDE](../extensibility/ide-constants.md)
+- [Polecenia zdefiniowane przez IDE do rozszerzania ystemów projektu](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

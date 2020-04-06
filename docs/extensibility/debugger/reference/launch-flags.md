@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS | Dokumentacja firmy Microsoft
+title: LAUNCH_FLAGS | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27975f4055a433891251c675bff3aacaaa9f6bb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f18fb850641391f451f5eedb08b7130566dd4de3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339370"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714716"
 ---
-# <a name="launchflags"></a>LAUNCH_FLAGS
+# <a name="launch_flags"></a>LAUNCH_FLAGS
 Określa flagi uruchamiania debugowania.
 
 ## <a name="syntax"></a>Składnia
@@ -54,23 +54,23 @@ Uruchamia proces debugowania.
 Uruchamia proces bez debugowania go.
 
 `LAUNCH_ENABLE_ENC`\
-PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.
+PRZESTARZAŁE, NIE UŻYWAĆ.
 
 `LAUNCH_MERGE_ENV`\
-Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.
+Uruchamia proces i łączy środowisko z hostem uruchamiania.
 
 ## <a name="remarks"></a>Uwagi
-Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
+Te wartości są przekazywane jako argument [launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.
 
-Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.
+Flagi te mogą być łączone z bitowym `OR`.
 
 ## <a name="requirements"></a>Wymagania
-Header: msdbg.h
+Nagłówek: msdbg.h
 
-Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
 Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

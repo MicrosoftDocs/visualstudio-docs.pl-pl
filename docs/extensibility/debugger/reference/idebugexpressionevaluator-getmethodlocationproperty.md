@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Dokumentacja firmy Microsoft
+title: IDebugExpressionAwartuator::GetMethodLocationProperty | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty method
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: faa2767e54e9821c7b3270fa60f5be232a2c232f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325770"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729519"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-Ta metoda konwertuje metody lokalizacji i Przesunięcie adresu pamięci.
+Ta metoda konwertuje lokalizację metody i przesunięcie na adres pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,29 +49,29 @@ int GetMethodLocationProperty(
 
 ## <a name="parameters"></a>Parametry
 `upstrFullyQualifiedMethodPlusOffset`\
-[in] Metoda lokalizacji i przesunięcie, wyrażone jako ciąg.
+[w] Lokalizacja metody i przesunięcie, wyrażone jako ciąg.
 
 `pSymbolProvider`\
-[in] Dostawca symboli wyrażonej w postaci [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiektu.
+[w] Dostawca symbolu wyrażony jako obiekt [IDebugSymbolProvider.](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 
 `pAddress`\
-[in] Adres znajdujący się w metodzie, wyrażone jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.
+[w] Adres w ramach metody, wyrażone jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.
 
 `pBinder`\
-[in] Obiekt wiążący wyrażonej w postaci [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiektu.
+[w] Spinacz wyrażony jako obiekt [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
 
 `ppProperty`\
-[out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejs, który reprezentuje adres pamięci.
+[na zewnątrz] Zwraca interfejs [IDebugProperty2,](../../../extensibility/debugger/reference/idebugproperty2.md) który reprezentuje adres pamięci.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ustaw punkt przerwania, na przykład można zwróconego adresu.
+ Zwracany adres może służyć do ustawiania punktu przerwania, na przykład.
 
- Niezależnie od nazwy `upstrFullyQualifiedMethodPlusOffset`, ten parametr może być przekazywany nazwę metody częściowo kwalifikowane. W takim przypadku wybranej metody jest tą, która otacza `pAddress`. Jak ten parametr jest interpretowany zależy od implementacji ewaluatora wyrażeń i język, który ją obsługuje.
+ Pomimo nazwy, `upstrFullyQualifiedMethodPlusOffset`ten parametr może być przekazywany częściowo kwalifikowaną nazwą metody. W takim przypadku wybrana metoda jest tą, która obejmuje `pAddress`. Sposób interpretacji tego parametru zależy od implementacji oceniającego wyrażenie i języka, który obsługuje.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

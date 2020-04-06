@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetName | Dokumentacja firmy Microsoft
+title: IDebugThread2::GetName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetName
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6b57aac800027a4a591c3ea683761e19a31462c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9d4828b573585969154f2ad1d484c9fcdf767417
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320210"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80718774"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 Pobiera nazwę wątku.
@@ -41,14 +41,14 @@ int GetName ( 
 
 ## <a name="parameters"></a>Parametry
 `pbstrName`\
-[out] Zwraca nazwę wątku.
+[na zewnątrz] Zwraca nazwę wątku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Pobrana nazwa jest zawsze nazwę, która może być wyświetlany, i tę nazwę w tym artykule opisano wątku. Nazwa wątku mogą pochodzić z architektury środowiska wykonawczego, że obsługuje o nazwie wątków lub może być nazwy pochodzące z aparatu debugowania. Nazwa wątku mogą także ustawić za pomocą wywołania [setthreadname —](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) metody.
+ Pobrana nazwa jest zawsze nazwą, która może być wyświetlana i ta nazwa opisuje wątek. Nazwa wątku może pochodzić z architektury w czasie wykonywania, która obsługuje nazwane wątki lub może to być nazwa pochodząca z aparatu debugowania. Alternatywnie nazwa wątku można ustawić przez wywołanie [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) metody.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

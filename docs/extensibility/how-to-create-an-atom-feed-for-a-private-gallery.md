@@ -1,40 +1,40 @@
 ---
-title: 'Instrukcje: Utwórz Atom dla galerii prywatnej | Dokumentacja firmy Microsoft'
+title: 'Jak: Tworzenie kanału informacyjnego Atom dla galerii prywatnej | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027a7f70240695e64051ef6c16fd3e5469d75900
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c72fbf2d3973ffd84de1cf6f33788c43511c3ce4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340884"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711013"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: Tworzenie źródła danych dla galerii prywatnej Atom
-Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawiera rozszerzenia i Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatną galerię. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Jak: Tworzenie kanału informacyjnego Atom dla prywatnej galerii
+Kanał informacyjny Atom (RSS) można utworzyć w lokalizacji intranetowej zawierającej rozszerzenia i dodać go do **rozszerzenia i aktualizacji** jako galerię prywatną. Aby uzyskać więcej informacji, zobacz [Prywatne galerie](../extensibility/private-galleries.md).
 
-## <a name="create-an-atom-feed"></a>Tworzenie źródła danych Atom
- Aby utworzyć źródła danych jako prywatną galerię Atom, najpierw Zbierz rozszerzeń ( *.vsix* plików) do folderu. Możesz organizować je w podfolderach chcącym. Należy również następujące zasoby:
+## <a name="create-an-atom-feed"></a>Tworzenie kanału atomowego
+ Aby utworzyć kanał Atom jako prywatną galerię, należy najpierw zebrać rozszerzenia (pliki*vsix)* do folderu. Jeśli chcesz, możesz je uporządkować w podfoldery. Potrzebne będą również następujące zasoby:
 
-- *Atom.xml* pliku, który udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć *atom.xml* plik **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).
+- Plik *atom.xml,* który udostępnia rozszerzenia jako galerię prywatną. Aby uzyskać informacje dotyczące podłączania pliku *atom.xml* do **rozszerzeń i aktualizacji**, zobacz [Prywatne galerie](../extensibility/private-galleries.md).
 
-- Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). *Atom.xml* plik zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.
+- Folder zawierający wszystkie pliki obrazów wyodrębnione z rozszerzeń (na przykład zrzuty ekranu). Plik *atom.xml* zawiera względne łącza do tych obrazów, dzięki czemu są one dostępne w **rozszerzeniach i aktualizacjach**.
 
-  Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:
+  Załóżmy na przykład, że zebrałeś następujące dwa rozszerzenia do folderu:
 
-- *Template_Wizard_239.vsix*, który jest pusty szablon projektu VSIX.
+- *Template_Wizard_239.vsix*, który jest pustym szablonem projektu VSIX.
 
-- *SelectionHighlight.vsix*, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego programu word.
+- *SelectionHighlight.vsix*, który jest narzędziem do podświetlania wszystkich wystąpień wybranego wyrazu.
 
-  Zawartość *atom.xml* plik będzie wyglądać następująco:
+  Zawartość pliku *atom.xml* będzie przypominać następujący przykład:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,7 +70,7 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawi
 </feed>
 ```
 
- Należy zauważyć, że tagów łącza dwóch odnoszą się do zrzutów ekranu w folderze wygenerowanych obrazów.
+ Należy zauważyć, że dwa znaczniki linków odnoszą się do zrzutów ekranu w wygenerowanym folderze obrazów.
 
-## <a name="see-also"></a>Zobacz także
-- [Galerie prywatne](../extensibility/private-galleries.md)
+## <a name="see-also"></a>Zobacz też
+- [Prywatne galerie](../extensibility/private-galleries.md)

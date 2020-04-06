@@ -1,58 +1,58 @@
 ---
-title: 'Instrukcje: Otwieranie edytorów dla otwartych dokumentów | Dokumentacja firmy Microsoft'
+title: 'Jak: Otwórz edytory otwartych dokumentów | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8342947681bcd8f698c2a646e917b353ec6c9dd
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 03d0986573ac0d53427f6490370be2bfa1c4cbe7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319330"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710918"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Instrukcje: Otwieranie edytorów dla otwartych dokumentów
-Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy określić czy plik jest już otwarty w oknie dokumentu innym edytorze. Może to być plik albo otworzyć w edytorze specyficzne dla projektu lub jednego z standardowych edytorów zarejestrowane w usłudze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+# <a name="how-to-open-editors-for-open-documents"></a>Jak: Otwieranie edytorów otwartych dokumentów
+Zanim projekt otworzy okno dokumentu, projekt musi najpierw określić, czy plik jest już otwarty w oknie dokumentu dla innego edytora. Plik może być otwarty w edytorze specyficznym dla projektu lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]jeden ze standardowych edytorów zarejestrowanych w programie .
 
-## <a name="open-a-project-specific-editor"></a>Otwieranie Edytora specyficznych dla projektu
- Użyj poniższej procedury, można otworzyć edytora specyficznych dla projektu, dla pliku, który jest już otwarty.
+## <a name="open-a-project-specific-editor"></a>Otwieranie edytora specyficznego dla projektu
+ Poniższa procedura służy do otwierania edytora specyficznego dla projektu dla pliku, który jest już otwarty.
 
-### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Aby otworzyć Edytor specyficzne dla projektu, dla otwartego pliku
+### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Aby otworzyć edytor specyficzny dla projektu dla otwartego pliku
 
-1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody.
+1. Wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody.
 
-    To wywołanie zwraca wskaźników do hierarchii, element hierarchii i ramki okna dokumentu, jeśli to stosowne.
+    To wywołanie zwraca wskaźniki do hierarchii dokumentu, elementu hierarchii i ramki okna, jeśli to konieczne.
 
-2. Jeśli dokument jest otwarty, projekt musi sprawdzić, czy istnieje tylko obiekt danych dokumentów, czy obiekt widoku dokumentu również znajduje się.
+2. Jeśli dokument jest otwarty, projekt musi sprawdzić, czy istnieje tylko obiekt danych dokumentu lub czy obiekt widoku dokumentu jest również obecny.
 
-   - Jeśli istnieje obiekt widoku dokumentu, a ten widok jest w innej hierarchii lub element hierarchii, projekt używa wskaźnik do ramki okna w widoku do resurface istniejące okno.
+   - Jeśli obiekt widoku dokumentu istnieje, a ten widok jest dla innej hierarchii lub elementu hierarchii, projekt używa wskaźnika do ramki okna widoku, aby ponownie wyświetlić istniejące okno.
 
-   - Jeśli istnieje obiekt widoku dokumentu, a ten widok służy do tej samej hierarchii i element hierarchii, projektu mogą otwierać drugi widok, jeśli można dołączyć do bazowego obiektu danych dokumentu. W przeciwnym razie projektu należy za pomocą wskaźnika do ramki okna widoku resurface istniejące okno.
+   - Jeśli obiekt widoku dokumentu istnieje, a ten widok jest dla tej samej hierarchii i elementu hierarchii, projekt może otworzyć drugi widok, jeśli można dołączyć do obiektu danych dokumentu źródłowego. W przeciwnym razie projekt należy użyć wskaźnika do ramki okna widoku, aby ponownie wyświetlić istniejące okno.
 
-   - Jeśli istnieje obiekt danych dokumentu, tylko projekt należy określić, czy obiekt danych dokumentu może używać jej widoku. Jeśli obiekt danych dokumentu jest zgodny, pełną kroki omówione w [otwierania Edytora specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md).
+   - Jeśli istnieje tylko obiekt danych dokumentu, projekt powinien określić, czy może używać obiektu danych dokumentu dla swojego widoku. Jeśli obiekt danych dokumentu jest zgodny, wykonaj czynności opisane w [artykule Otwórz edytor specyficzny dla projektu](../extensibility/how-to-open-project-specific-editors.md).
 
-     Jeśli obiekt danych dokumentu nie jest zgodny, błąd powinien zostać wyświetlony do użytkownika, który wskazuje, że plik jest obecnie w użyciu. Ten błąd tylko powinna być wyświetlana w przejściowe przypadki, np. gdy plik jest kompilowany w tym samym czasie użytkownik próbuje otworzyć plik za pomocą edytora innych niż [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowy edytor tekstu. Podstawowy edytor tekstu można udostępniać obiekt danych dokumentu za pomocą kompilatora.
+     Jeśli obiekt danych dokumentu nie jest zgodny, użytkownik powinien zostać wyświetlony błąd wskazujący, że plik jest obecnie używany. Ten błąd powinien być wyświetlany tylko w przypadkach przejściowych, takich jak podczas kompilowania pliku w tym samym czasie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] użytkownik próbuje otworzyć plik przy użyciu edytora innego niż podstawowy edytor tekstu. Podstawowy edytor tekstu może udostępniać obiekt danych dokumentu z kompilatorem.
 
-3. Jeśli dokument nie jest otwarty, ponieważ nie ma obiektu danych dokumentu lub obiektu widoku dokumentu, wykonaj kroki opisane w [otwierania Edytora specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md).
+3. Jeśli dokument nie jest otwarty, ponieważ nie ma obiektu danych dokumentu ani obiektu widoku dokumentu, wykonaj kroki opisane w polu [Otwórz edytor specyficzny dla projektu](../extensibility/how-to-open-project-specific-editors.md).
 
-## <a name="open-a-standard-editor"></a>Otwórz Edytor standardowy
- Użyj poniższej procedury, aby otworzyć Edytor standardowy w pliku, który jest już Otwórz.
+## <a name="open-a-standard-editor"></a>Otwieranie standardowego edytora
+ Poniższa procedura służy do otwierania standardowego edytora pliku, który jest już otwarty.
 
-### <a name="to-open-a-standard-editor-for-an-open-file"></a>Aby otworzyć Edytor standardowy dla otwartego pliku
+### <a name="to-open-a-standard-editor-for-an-open-file"></a>Aby otworzyć standardowy edytor otwartego pliku
 
-1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Zadzwoń <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
-     Ta metoda sprawdza najpierw, że dokument nie jest już otwarty przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Jeśli dokument jest już otwarty, to resurfaced jej okna edytora.
+     Ta metoda najpierw sprawdza, czy dokument nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>jest jeszcze otwarty przez wywołanie . Jeśli dokument jest już otwarty, jego okno edytora zostanie ponownie odsłonięte.
 
-2. Jeśli dokument nie jest otwarty, wykonaj kroki [jak: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md).
+2. Jeśli dokument nie jest otwarty, wykonaj czynności opisane w [trybie : Otwórz edytory standardowe](../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Otwieranie i zapisywanie elementów projektu](../extensibility/internals/opening-and-saving-project-items.md)
-- [Instrukcje: Otwieranie edytorów specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md)
-- [Instrukcje: Otwieranie standardowych edytorów](../extensibility/how-to-open-standard-editors.md)
+- [Jak: Otwieranie edytorów specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md)
+- [Jak: Otwórz edytory standardowe](../extensibility/how-to-open-standard-editors.md)

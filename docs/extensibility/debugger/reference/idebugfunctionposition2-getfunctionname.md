@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetFunctionName | Dokumentacja firmy Microsoft
+title: IDebugFunctionPosition2::GetFunctionName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2::GetFunctionName
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3bef8ebf82786212552421ebb608e26a6708623
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 771dbe369154200805fb9d344dd5b457353e34dd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66313344"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728411"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
-Pobiera nazwę funkcji, na który wskazuje tej pozycji.
+Pobiera nazwę funkcji, do której wskazuje to stanowisko.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,10 +41,10 @@ int GetFunctionName(
 
 ## <a name="parameters"></a>Parametry
 `pbstrFunctionName`\
-[out] Zwraca nazwę funkcji.
+[na zewnątrz] Zwraca nazwę funkcji.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

@@ -1,27 +1,27 @@
 ---
-title: Description — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element opisu (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68b9df33051de1c4b4bb70321e0caff7df2e91f4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ea10b43662d2818792dbc57aeac09a056cb63ce
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348118"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80712257"
 ---
-# <a name="description-element-visual-studio-templates"></a>Description — element (szablony Visual Studio)
-Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.
+# <a name="description-element-visual-studio-templates"></a>Element opisu (szablony programu Visual Studio)
+Określa opis szablonu wyświetlany w oknie dialogowym **Nowy projekt** lub **Dodawanie nowego elementu.**
 
- \<VSTemplate> \<TemplateData> \<Description>
+ \<> \<> \<opis>>> szablonu
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,8 +42,8 @@ Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj no
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`Package`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Identyfikator GUID, który określa pakietu programu Visual Studio.|
-|`ID`|Opcjonalny atrybut, scenariusze użytkownika wersji advanced.<br /><br /> Określa identyfikator zasobu. w programie Visual Studio|
+|`Package`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Identyfikator GUID określający identyfikator pakietu programu Visual Studio.|
+|`ID`|Opcjonalny atrybut dla zaawansowanych scenariuszy użytkownika.<br /><br /> Określa identyfikator zasobu programu Visual Studio.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -52,18 +52,18 @@ Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj no
 
 |Element|Opis|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Klasyfikuje szablon i definiuje sposób wyświetlania albo **nowy projekt** lub **Dodaj nowy element** okno dialogowe.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Kategoryzuje szablon i określa sposób wyświetlania go w oknie dialogowym **Nowy projekt** lub Dodawanie **nowego elementu.**|
 
 ## <a name="text-value"></a>Wartość tekstowa
- Wartość tekstowa jest wymagany, chyba że `Package` i `ID` atrybuty są używane.
+ Wartość tekstowa jest `Package` wymagana, `ID` chyba że używane są atrybuty i.
 
  Tekst zawiera opis szablonu.
 
 ## <a name="remarks"></a>Uwagi
- `Description` jest wymaganym elementem podrzędnym elementu `TemplateData` elementu.
+ `Description`jest wymaganym elementem `TemplateData` podrzędnym elementu.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -89,6 +89,6 @@ Określa opis szablonu, jak wygląda na to, albo **nowy projekt** lub **Dodaj no
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Dokumentacja firmy Microsoft
+title: IDebugPendingBreakpoint2::SetCondition | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugPendingBreakpoint2::SetCondition method
 ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a71e22d118b64e15bb9da15b2f9152a90440f1a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4683d944f2489b8b21ff545c86e3d867283d644a
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347661"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725724"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
-Ustawia lub zmienia warunek skojarzony z Oczekujący punkt przerwania.
+Ustawia lub zmienia warunek skojarzony z oczekującym punktem przerwania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,14 +42,14 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Parametry
 `bpCondition`\
-[in] A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) strukturę, która określa warunek, którego chcesz ustawić.
+[w] Struktura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) określająca warunek do skonfigurowania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Dowolny warunek, który był wcześniej skojarzony z Oczekujący punkt przerwania zostaną utracone. Wszystkie punkty przerwania, powiązany z tym oczekujących punktów przerwania są wywoływane w celu ich warunek ustawiony na wartość określoną w `bpCondition` parametru.
+ Każdy warunek, który był wcześniej skojarzony z oczekującym punktem przerwania zostanie utracony. Wszystkie punkty przerwania powiązane z tego oczekującego punktu przerwania `bpCondition` są wywoływane, aby ustawić ich warunek na wartość określoną w parametrze.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

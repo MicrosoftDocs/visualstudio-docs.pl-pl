@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromStringCaseInsensitive | Dokumentacja firmy Microsoft
+title: IDebugEnumField::GetValueFromStringCaseInsensitive | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromStringCaseInsensitive method
 ms.assetid: ef95b38e-d9b2-4fb5-a166-7c2e14641dc7
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 72e6f79616c8c8099b938a29bc1d1809adb152a3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350067"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730252"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
-Ta metoda używa wyszukiwanie bez uwzględniania wielkości liter w celu zwrócenia wartości skojarzone z nazwą stała wyliczenia.
+Ta metoda używa wyszukiwania bez uwzględniania wielkości liter, aby zwrócić wartość skojarzoną z nazwą stałej wyliczenia.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,17 +43,17 @@ int GetValueFromStringCaseInsensitive(
 
 ## <a name="parameters"></a>Parametry
 `pszValue`\
-[in] Ciąg określający nazwę, dla którego ma zostać pobrana wartość. Należy pamiętać, że dla języka C++, jest to ciąg znaku dwubajtowego.
+[w] Ciąg określający nazwę, dla której ma zostać określona wartość. Należy zauważyć, że w przypadku języka C++jest to ciąg znaków szeroki.
 
 `pValue`\
-[out] Zwraca wartość liczbową skojarzoną.
+[na zewnątrz] Zwraca skojarzoną wartość liczbową.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nazwa nie jest częścią wyliczenia lub kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym `S_FALSE`razie zwraca , jeśli nazwa nie jest częścią wyliczenia lub kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ta metoda jest rozróżniana wielkość liter. Jeśli wyszukiwanie jest potrzebny (na przykład w języku, takich jak C++, w których jest rozróżniana wielkość liter nazwy), użyj [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
+ Ta metoda jest niewrażliwa na argumenty. Jeśli potrzebne jest wyszukiwanie z uwzględnieniem wielkości liter (na przykład w języku takim jak C++, w którym rozróżniana jest wielkość liter), należy użyć [pliku GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)

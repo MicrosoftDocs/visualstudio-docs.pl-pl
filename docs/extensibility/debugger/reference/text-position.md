@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION | Dokumentacja firmy Microsoft
+title: TEXT_POSITION | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7f53cb7a0dacc58a0d4a8109ea6dd3ca3ab710e1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66336298"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713409"
 ---
-# <a name="textposition"></a>TEXT_POSITION
-Określa lokalizację wierszy i kolumn w podanym tekście.
+# <a name="text_position"></a>TEXT_POSITION
+Opisuje położenie wiersza i kolumny w danym tekście.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,13 +47,13 @@ public struct TEXT_POSITION { 
 Indeks wiersza w pliku źródłowym.
 
 `dwColumn`\
-Przesunięcie znaku w wierszu.
+Przesunięcie znaku do linii.
 
 ## <a name="remarks"></a>Uwagi
 
-Ta struktura jest używany w [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) i [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.
+Ta struktura jest używana w [strukturach CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) i [DisassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
 
-Ta struktura jest wypełniane przez wywołanie do następujących metod:
+Ta struktura jest wypełniona wywołaniem następujących metod:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,7 +63,7 @@ Ta struktura jest wypełniane przez wywołanie do następujących metod:
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-Ta struktura jest przekazywany jako parametr do następujących metod:
+Ta struktura jest przekazywana jako parametr do następujących metod:
 
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
@@ -77,13 +77,13 @@ Ta struktura jest przekazywany jako parametr do następujących metod:
 
 ## <a name="requirements"></a>Wymagania
 
- Header: msdbg.h
+ Nagłówek: msdbg.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)

@@ -1,5 +1,5 @@
 ---
-title: Projectitem — Element (szablony projektu Visual Studio) | Dokumentacja firmy Microsoft
+title: Element ProjectItem (szablony projektów programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 11052d8e585f1d06f6d787402001cfbbe2b6810f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335955"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701838"
 ---
-# <a name="projectitem-element-visual-studio-project-templates"></a>Projectitem — element (szablony projektu Visual Studio)
+# <a name="projectitem-element-visual-studio-project-templates"></a>Element ProjectItem (szablony projektów programu Visual Studio)
 Określa plik, który znajduje się w szablonie projektu.
 
 > [!NOTE]
-> `ProjectItem` Akceptuje różnych atrybutów w zależności od tego, czy szablon projektu lub elementu. W tym temacie opisano `ProjectItem` element dla szablonów projektu. Aby uzyskać informacje o `ProjectItem` element dla szablonów elementów, zobacz [ProjectItem, Element (element szablony programu Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md).
+> Element `ProjectItem` akceptuje różne atrybuty w zależności od tego, czy szablon jest dla projektu lub elementu. W tym `ProjectItem` temacie wyjaśniono element szablonów projektów. Aby uzyskać wyjaśnienie `ProjectItem` elementu dla szablonów elementów, zobacz [ProjectItem Element (Szablony elementów programu Visual Studio).](../extensibility/projectitem-element-visual-studio-item-templates.md)
 
- \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
+ \<>> \<szablonu>>> \< \<projektu>
 
 ## <a name="syntax"></a>Składnia
 
@@ -50,12 +50,12 @@ Określa plik, który znajduje się w szablonie projektu.
 
 | Atrybut | Opis |
 |---------------------| - |
-| `TargetFileName` | Atrybut opcjonalny.<br /><br /> Określa nazwę i ścieżkę elementu projektu, gdy projekt jest tworzony na podstawie tego szablonu. Ten atrybut jest przydatne do tworzenia struktury katalogu różni się od struktury katalogów w szablonie *zip* pliku, lub za pomocą zastąpienia parametrów do utworzenia nazwy elementu. |
-| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`. |
-| `OpenInEditor` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w edytorze odpowiednich w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po utworzeniu projektu z szablonu.<br /><br /> `OpenInWebBrowser` i `OpenInHelpBrowser` atrybuty są ignorowane na element o `OpenInEditor` wartość `true`.<br /><br /> Wartość domyślna to `false`. |
-| `OpenInWebBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w przeglądarce sieci Web podczas tworzenia projektu z szablonu.<br /><br /> Tylko pliki HTML i pliki tekstowe, które są lokalne w projekcie można otworzyć w przeglądarce sieci Web. Zewnętrzne adresy URL nie można otworzyć za pomocą tego atrybutu.<br /><br /> Wartość domyślna to `false`. |
-| `OpenInHelpBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w Podglądzie pomocy, gdy projekt jest tworzony na podstawie tego szablonu.<br /><br /> Tylko pliki HTML i pliki tekstowe, które są lokalne w projekcie można otworzyć w przeglądarce pomocy. Zewnętrzne adresy URL nie można otworzyć za pomocą tego atrybutu.<br /><br /> Wartość domyślna to `false`. |
-| `OpenOrder` | Atrybut opcjonalny.<br /><br /> Określa wartość liczbowa, która reprezentuje porządek, że elementy będą otwierane w ich odpowiednich edytorów. Wszystkie wartości musi być wielokrotnością liczby 10. Elementy z wyższej `OpenOrder` wartości są najpierw otwarte. |
+| `TargetFileName` | Atrybut opcjonalny.<br /><br /> Określa nazwę i ścieżkę elementu projektu podczas tworzenia projektu na podstawie szablonu. Ten atrybut jest przydatny do tworzenia struktury katalogów innej niż struktura katalogów w pliku *.zip* szablonu lub do tworzenia nazwy elementu przy użyciu zastępowania parametrów. |
+| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać zastąpione podczas tworzenia projektu na podstawie szablonu. Wartością `false`domyślną jest . |
+| `OpenInEditor` | Atrybut opcjonalny.<br /><br /> Wartość logiczna, która określa, czy element powinien zostać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otwarty w odpowiednim edytorze podczas tworzenia projektu na podstawie szablonu.<br /><br /> `OpenInWebBrowser` Atrybuty `OpenInHelpBrowser` i atrybuty są ignorowane `true`w elemencie o `OpenInEditor` wartości .<br /><br /> Wartością domyślną jest `false`. |
+| `OpenInWebBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w przeglądarce sieci Web podczas tworzenia projektu na podstawie szablonu.<br /><br /> W przeglądarce sieci Web można otwierać tylko pliki HTML i pliki tekstowe lokalne projektu. Przy tym atrybucie nie można otworzyć zewnętrznych adresów URL.<br /><br /> Wartością domyślną jest `false`. |
+| `OpenInHelpBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w przeglądarce Pomocy podczas tworzenia projektu na podstawie szablonu.<br /><br /> W przeglądarce Pomocy można otwierać tylko pliki HTML i pliki tekstowe lokalne projektu. Przy tym atrybucie nie można otworzyć zewnętrznych adresów URL.<br /><br /> Wartością domyślną jest `false`. |
+| `OpenOrder` | Atrybut opcjonalny.<br /><br /> Określa wartość liczbową reprezentującą kolejność, wą otworzyć elementy w odpowiednich edytorach. Wszystkie wartości muszą być wielokrotności 10. Elementy o `OpenOrder` wyższych wartościach są otwierane jako pierwsze. |
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -64,52 +64,52 @@ Określa plik, który znajduje się w szablonie projektu.
 
 |Element|Opis|
 |-------------|-----------------|
-|[Project](../extensibility/project-element-visual-studio-templates.md)|Określa plików lub katalogów do dodania do projektu.|
+|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Określa pliki lub katalogi, które mają być dodane do projektu.|
 
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- A `string` reprezentujący nazwę lub ścieżkę do pliku w szablonie *zip* pliku.
+ A `string` reprezentujący nazwę lub ścieżkę do pliku w pliku *zip* szablonu.
 
 ## <a name="remarks"></a>Uwagi
- `ProjectItem` jest podrzędnym opcjonalne `Project`.
+ `ProjectItem`jest opcjonalnym `Project`dzieckiem .
 
- `TargetFileName` Atrybut może służyć do tworzenia struktury katalogów różni się od struktury katalogów w szablonie *zip* pliku. Na przykład jeśli plik *MyFile.vb* istnieje w katalogu głównym szablonu *zip* pliku, ale ma plików, które mają być umieszczone w katalogu o nazwie *CustomFiles* we wszystkich projektach tworzone na podstawie szablonu, należy użyć następujący kod XML:
+ Atrybut `TargetFileName` może służyć do tworzenia struktury katalogów różni się od struktury katalogów w pliku *zip* szablonu. Na przykład, jeśli plik *MyFile.vb* istnieje w katalogu głównym pliku *.zip* szablonu, ale chcesz, aby plik został umieszczony w katalogu o nazwie *CustomFiles* we wszystkich projektach utworzonych na podstawie szablonu, należy użyć następującego pliku XML:
 
 ```xml
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>
 ```
 
- `TargetFileName` Atrybut można również zmienić nazwy plików, które zawierają znaki międzynarodowe w nazwach swoich plików. Na przykład szablon *zip* pliku nie może zawierać nazwy plików ze znakami Unicode, więc należy można zmienić nazwy pliku przed można skompresować do *zip* pliku. `TargetFileName` Atrybut można ustawić oryginalna nazwa pliku Unicode.
+ Atrybut `TargetFileName` może również służyć do zmiany nazwy plików, które zawierają znaki międzynarodowe w ich nazwy plików. Na przykład plik *.zip* szablonu nie może zawierać nazw plików ze znakami Unicode, więc plik musi zostać zmieniony, zanim będzie można go skompresować do pliku *zip.* Atrybut `TargetFileName` może służyć do ustawiania nazwy pliku z powrotem do oryginalnej nazwy pliku Unicode.
 
- `TargetFileName` Atrybut można również zmienić nazwy plików z parametrami. Poniższa procedura wyjaśnia, jak zmienić nazwę pliku *MyFile.vb*, który istnieje w katalogu głównym szablonu *zip* plik z nazwą pliku, w oparciu o nazwę projektu.
+ Atrybut `TargetFileName` może również służyć do zmiany nazwy plików z parametrami. Poniższa procedura wyjaśnia, jak zmienić nazwę pliku *MyFile.vb*, który istnieje w katalogu głównym szablonu *.zip* pliku, do nazwy pliku na podstawie nazwy projektu.
 
-### <a name="to-rename-files-with-parameters"></a>Zmień nazwy plików z parametrami
+### <a name="to-rename-files-with-parameters"></a>Aby zmienić nazwę plików z parametrami
 
-1. Użyj następujące kodu XML w *.vstemplate* pliku:
+1. Użyj następującego pliku XML w pliku *vstemplate:*
 
    ```xml
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. Otwórz plik projektu ( *.vbproj* dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu) w edytorze tekstu lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2. Otwórz plik projektu (*.vbproj* dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]w edytorze tekstu lub .
 
-3. Znajdź wiersz w pliku projektu, który przypomina następujący kod XML:
+3. Znajdź wiersz w pliku projektu, który wygląda podobnie do następującego kodu XML:
 
    ```xml
    <Compile Include="MyFile.vb">
    ```
 
-4. Zastąp wiersz kodu następujący kod XML:
+4. Zastąp wiersz kodu następującym kodem XML:
 
    ```xml
    <Compile Include="$safeprojectname$.vb">
    ```
 
-    Gdy projekt jest tworzony za pomocą tego szablonu, nazwa pliku będzie zależeć od nazwy użytkownik wprowadzi w **nowy projekt** okno dialogowe, za pomocą wszystkich niebezpiecznych znaków i usunięte spacje. Aby uzyskać więcej informacji, zobacz [parametry szablonu](../ide/template-parameters.md).
+    Po utworzeniu projektu na podstawie tego szablonu nazwa pliku będzie oparta na nazwie wprowadzonej przez użytkownika w oknie dialogowym **Nowy projekt,** a wszystkie niebezpieczne znaki i spacje zostaną usunięte. Aby uzyskać więcej informacji, zobacz [Parametry szablonu](../ide/template-parameters.md).
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -135,8 +135,8 @@ Określa plik, który znajduje się w szablonie projektu.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
 - [Parametry szablonu](../ide/template-parameters.md)
-- [Projectitem — element (szablony elementów Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+- [Element ProjectItem (szablony elementów programu Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

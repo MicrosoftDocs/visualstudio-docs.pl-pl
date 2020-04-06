@@ -1,57 +1,57 @@
 ---
-title: Rozszerzanie edytora i usług językowych | Microsoft Docs
+title: Rozszerzanie edytora i usług językowych | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af1fa0222be9630a495a43204d7a973341190131
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 239c638ec32cc0dc2b2e275a5dbe0c4213a3423e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186668"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80711711"
 ---
-# <a name="extend-the-editor-and-language-services"></a>Poszerzanie edytora i usług językowych
-Funkcje usługi językowej (na przykład IntelliSense) można dodać do własnego edytora i rozłożyć większość funkcji edytora kodu programu Visual Studio.  Aby uzyskać pełną listę elementów, które można rozszerzać, zobacz [punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md).
+# <a name="extend-the-editor-and-language-services"></a>Rozszerzanie usług edytora i języka
+Można dodać funkcje usługi języka (takie jak IntelliSense) do własnego edytora i rozszerzyć większość funkcji edytora kodu programu Visual Studio.  Aby uzyskać pełną listę tego, co można rozszerzyć, zobacz [Usługi językowe i punkty rozszerzeń edytora](../extensibility/language-service-and-editor-extension-points.md).
 
- Większość funkcji edytora można rozłożyć przy użyciu Managed Extensibility Framework (MEF). Na przykład, jeśli funkcja edytora, która ma zostać rozszerzona, ma kolorowanie składni, można napisać *część składnika* MEF, która definiuje klasyfikacje, dla których ma być różne kolorowanie i w jaki sposób mają być obsługiwane. Edytor obsługuje również wiele rozszerzeń tej samej funkcji.
+ Rozszerzyć większość funkcji edytora przy użyciu managed extensibility framework (MEF). Na przykład, jeśli funkcją edytora, którą chcesz rozszerzyć, jest kolorowanie składni, można napisać *część komponentu* MEF, która definiuje klasyfikacje, dla których ma być różne kolorowanie i sposób ich obsługi. Edytor obsługuje również wiele rozszerzeń tej samej funkcji.
 
- Warstwa prezentacji edytora jest oparta na strukturze prezentacji systemu Windows (WPF). WPF udostępnia bibliotekę grafiki do elastycznego formatowania tekstu, a także udostępnia wizualizacje, takie jak grafika i animacje.
+ Warstwa prezentacji edytora jest oparta na programie Windows Presentation Framework (WPF). WPF WPF udostępnia bibliotekę grafiki do elastycznego formatowania tekstu, a także zapewnia wizualizacje, takie jak grafiki i animacje.
 
- Zestaw Visual Studio SDK zawiera karty, które są nazywane *podkładkami* do obsługi pakietów VSPackage utworzonych dla wcześniejszych wersji. Jeśli jednak masz istniejący pakietu VSPackage, Zalecamy zaktualizowanie go do nowej technologii w celu uzyskania lepszej wydajności i niezawodności.
+ Visual Studio SDK udostępnia karty znane jako *podkładki* do obsługi vsPackages, które zostały napisane dla wcześniejszych wersji. Niemniej jednak jeśli masz istniejący vsPackage, zaleca się zaktualizować go do nowej technologii w celu uzyskania lepszej wydajności i niezawodności.
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
 |Tytuł|Opis|
 |-----------|-----------------|
-|[Wprowadzenie do rozszerzeń usługi językowej i edytora](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|Wyjaśnia, jak utworzyć rozszerzenie dla edytora.|
-|[Wewnątrz edytora](../extensibility/inside-the-editor.md)|Zawiera opis ogólnej struktury edytora i zawiera listę jego funkcji.|
-|[Managed Extensibility Framework w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md)|Wyjaśnia, jak używać Managed Extensibility Framework (MEF) z edytorem.|
-|[Punkty rozszerzenia usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)|Wyświetla listę punktów rozszerzenia edytora. Punkty rozszerzenia reprezentują funkcje edytora, które można rozszerzyć.|
-|[Przewodnik: Tworzenie zakończenia, poleceń i ustawień widoku (prowadnice kolumn)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Instruktaże i objaśniające tworzenie zakończenia tworzenia widoku, który rysuje linie prowadnic kolumn, aby pomóc w zachowaniu kodu do określonej szerokości wyświetlania.  Pokazuje również ustawienia odczytu i zapisu, a także deklarując i implementując polecenia, które można wywołać z okna poleceń.|
-|[Importy edytora](../extensibility/editor-imports.md)|Wyświetla listę usług, które mogą importować rozszerzenia.|
-|[Dostosowanie starszego kodu do edytora](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|Wyjaśnia różne sposoby adaptacji starszego kodu (wersja wstępna programu Visual Studio 2010) w celu rozbudowania edytora.|
-|[Migrowanie starszej wersji usługi językowej](../extensibility/internals/migrating-a-legacy-language-service.md)|Wyjaśnia, w jaki sposób przeprowadzić migrację usługi językowej opartej na pakietu VSPackage.|
-|[Przewodnik: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Pokazuje, jak połączyć typ zawartości z rozszerzeniem nazwy pliku.|
-|[Przewodnik: Tworzenie symbolu marginesu](../extensibility/walkthrough-creating-a-margin-glyph.md)|Pokazuje, jak dodać ikonę do marginesu.|
-|[Wskazówki: wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)|Pokazuje, jak używać *tagów* do wyróżniania tekstu.|
-|[Przewodnik: Dodawanie konspektu](../extensibility/walkthrough-outlining.md)|Pokazuje, jak dodać konspekt dla określonych rodzajów nawiasów klamrowych.|
-|[Przewodnik: wyświetlanie pasujących nawiasów klamrowych](../extensibility/walkthrough-displaying-matching-braces.md)|Pokazuje, w jaki sposób podświetlić pasujące nawiasy klamrowe.|
-|[Przewodnik: wyświetlanie etykietek narzędzi sekcji szybkich informacji](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Pokazuje sposób wyświetlania okien podręcznych sekcji szybkich informacji, które opisują elementy kodu, takie jak właściwości, metody i zdarzenia.|
-|[Przewodnik: Wyświetlanie pomocy dotyczącej podpisu](../extensibility/walkthrough-displaying-signature-help.md)|Pokazuje, jak wyświetlić okna podręczne, które zawierają informacje o liczbie i typach parametrów w podpisie.|
-|[Przewodnik: Wyświetlanie instrukcji wyświetlania](../extensibility/walkthrough-displaying-statement-completion.md)|Pokazuje, jak zaimplementować uzupełnianie instrukcji.|
-|[Przewodnik: implementowanie fragmentów kodu](../extensibility/walkthrough-implementing-code-snippets.md)|Pokazuje, jak zaimplementować rozszerzanie fragmentów kodu.|
-|[Przewodnik: wyświetlanie sugestii żarówki](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Pokazuje, jak wyświetlić żarówki dla sugestii kodu.|
-|[Przewodnik: Używanie polecenia powłoki z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Pokazuje, jak skojarzyć polecenie menu w pakietu VSPackage ze składnikiem MEF.|
-|[Przewodnik: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Pokazuje, jak skojarzyć skrót menu w pakietu VSPackage ze składnikiem MEF.|
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Zawiera informacje o Managed Extensibility Framework (MEF).|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Zawiera informacje o Windows Presentation Foundation (WPF).|
+|[Wprowadzenie do usług językowych i rozszerzeń edytora](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|W tym artykule wyjaśniono, jak utworzyć rozszerzenie do edytora.|
+|[Wewnątrz edytora](../extensibility/inside-the-editor.md)|Opisuje ogólną strukturę edytora i wyświetla niektóre z jego funkcji.|
+|[Zarządzane ramy rozszerzalności w edytorze](../extensibility/managed-extensibility-framework-in-the-editor.md)|W tym artykule wyjaśniono, jak używać managed extensibility framework (MEF) z edytorem.|
+|[Punkty rozszerzeń usługi językowej i edytora](../extensibility/language-service-and-editor-extension-points.md)|Wyświetla listę punktów rozszerzenia edytora. Punkty rozszerzeń reprezentują funkcje edytora, które można rozszerzyć.|
+|[Przewodnik: Tworzenie ozdabiania widoku, poleceń i ustawień (prowadnice kolumn)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Przechodzi przez i wyjaśnia tworzenie ozdabiania widoku, który rysuje linie pomocnicze kolumny, aby ułatwić utrzymanie kodu do określonej szerokości wyświetlania.  Pokazuje również ustawienia odczytu i zapisu, a także deklarowanie i implementowanie poleceń, które można wywołać z okna polecenia.|
+|[Importowanie edytora](../extensibility/editor-imports.md)|Wyświetla listę usług, które rozszerzenie można zaimportować.|
+|[Dostosowywanie starszego kodu do edytora](/visualstudio/extensibility/adapting-legacy-code-to-the-editor?view=vs-2015)|W tym artykule wyjaśniono różne sposoby dostosowania starszego kodu (przed programem Visual Studio 2010), aby rozszerzyć edytor.|
+|[Migrowanie starszej usługi językowej](../extensibility/internals/migrating-a-legacy-language-service.md)|W tym artykule wyjaśniono, jak przeprowadzić migrację usługi języka opartej na pakiecie VSPackage.|
+|[Instruktaż: łączenie typu zawartości z rozszerzeniem nazwy pliku](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Pokazuje, jak połączyć typ zawartości z rozszerzeniem nazwy pliku.|
+|[Instruktaż: tworzenie glifów marginesu](../extensibility/walkthrough-creating-a-margin-glyph.md)|Pokazuje, jak dodać ikonę do marginesu.|
+|[Instruktaż: Wyróżnianie tekstu](../extensibility/walkthrough-highlighting-text.md)|Pokazuje, jak używać *znaczników* do wyróżniania tekstu.|
+|[Przewodnik: Dodawanie tworzenia](../extensibility/walkthrough-outlining.md)|Pokazuje, jak dodać tworzenie nakreślenia dla określonych rodzajów nawiasów klamrowych.|
+|[Instruktaż: Wyświetlanie pasujących nawiasów klamrowych](../extensibility/walkthrough-displaying-matching-braces.md)|Pokazuje, jak wyróżnić pasujące nawiasy klamrowe.|
+|[Instruktaż: Wyświetlanie etykietek narzędzi QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Pokazuje, jak wyświetlić wyskakujące okienka QuickInfo, które opisują elementy kodu, takie jak właściwości, metody i zdarzenia.|
+|[Instruktaż: Wyświetlanie pomocy dotycząca podpisu](../extensibility/walkthrough-displaying-signature-help.md)|Pokazuje sposób wyświetlania wyskakujących okienków, które podają informacje o liczbie i typach parametrów w podpisie.|
+|[Instruktaż: Zakończenie instrukcji wyświetlania](../extensibility/walkthrough-displaying-statement-completion.md)|Pokazuje, jak zaimplementować zakończenie instrukcji.|
+|[Instruktaż: Implementowanie fragmentów kodu](../extensibility/walkthrough-implementing-code-snippets.md)|Pokazuje, jak zaimplementować rozszerzenie fragmentu kodu.|
+|[Instruktaż: Wyświetlanie sugestii żarówki](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Pokazuje, jak wyświetlać żarówki dla sugestii kodu.|
+|[Instruktaż: używanie polecenia powłoki z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Pokazuje, jak skojarzyć polecenie menu w vspackage ze składnikiem MEF.|
+|[Instruktaż: używanie klawisza skrótu z rozszerzeniem edytora](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Pokazuje, jak skojarzyć skrót menu w vspackage ze składnikiem MEF.|
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Zawiera informacje na temat zarządzanej struktury rozszerzalności (MEF).|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Zawiera informacje o fundacji Prezentacji systemu Windows (WPF).|
 
 ## <a name="reference"></a>Tematy pomocy
  Edytor programu Visual Studio zawiera następujące przestrzenie nazw.

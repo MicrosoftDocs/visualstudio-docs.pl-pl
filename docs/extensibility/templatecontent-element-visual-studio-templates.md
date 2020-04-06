@@ -1,5 +1,5 @@
 ---
-title: TemplateContent Element (Visual Studio Templates) | Microsoft Docs
+title: Element treści szablonu (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a4ddbdeeaecdb832b2601992272de9d76f4bdcb
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 577ce71d3900947cde1de9a1e913124ab778a1ee
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160004"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80699235"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent — Element (szablony Visual Studio)
 
@@ -46,29 +46,29 @@ Hierarchia elementów:
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Określa, czy należy utworzyć rozwiązanie, gdy projekt jest tworzony na podstawie tego szablonu.|
+|[BuildOnLoad](../extensibility/buildonload-visual-studio-templates.md)|Określa, czy rozwiązanie ma być tworzone na podstawie szablonu.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
 
 |Element|Opis|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa organizację i zawartość szablonów wieloprojektowych.|
-|[Project](../extensibility/project-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa plików lub katalogów do dodania do projektu.|
-|[Odwołania](../extensibility/references-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa odwołania do zestawów wymaganych do szablon elementu.|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Element opcjonalny.<br /><br /> Określa plik zawarte w szablonie.|
-|[Customparameters —](../extensibility/customparameters-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa wszelkie parametry niestandardowe, które mają zostać użyte podczas tworzenia projektu lub elementu z szablonu.|
+|[Projekt](../extensibility/project-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa pliki lub katalogi do dodania do projektu.|
+|[Dokumentacja](../extensibility/references-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa odwołania do złożenia wymagane dla szablonu elementu.|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Element opcjonalny.<br /><br /> Określa plik zawarty w szablonie.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Element opcjonalny.<br /><br /> Określa wszystkie parametry niestandardowe, które mają być używane podczas tworzenia projektu lub elementu na podstawie szablonu.|
 
 ### <a name="parent-elements"></a>Elementy nadrzędne
 
 |Element|Opis|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Zawiera wszystkie metadane dla szablonu projektu, szablon elementu lub starter kit.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Element wymagany.<br /><br /> Zawiera wszystkie metadane szablonu projektu, szablonu elementu lub zestawu startowego.|
 
 ## <a name="remarks"></a>Uwagi
- `TemplateContent` jest wymaganym elementem.
+ `TemplateContent`jest wymaganym elementem.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
+ W poniższym przykładzie przedstawiono metadane dla szablonu projektu dla [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -94,7 +94,7 @@ Hierarchia elementów:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 
 - [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektu i elementu](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Funkcja SccUninitialize | Microsoft Docs
+title: Funkcja SccUninitialize | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccUninitialize function
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321f50173e3c1517cc6a431ff74933e1a02ef1d0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c4706ddf28949af4fe1bba01c32b2c64c9156d51
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720130"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80700230"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize, funkcja
-Ta funkcja czyści wszelkie alokacje lub otwiera połączenia utworzone przez poprzednie wywołanie do [SccInitialize](../extensibility/sccinitialize-function.md) w celu zamknięcia wtyczki kontroli źródła.
+Ta funkcja czyści wszelkie alokacje lub otwarte połączenia utworzone przez poprzednie wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) w ramach przygotowań do zamknięcia wtyczki kontroli źródła.
 
 ## <a name="syntax"></a>Składnia
 
@@ -33,18 +33,18 @@ SCCRTN SccUninitialize (
 #### <a name="parameters"></a>Parametry
  pvContext
 
-podczas Wskaźnik do struktury kontekstu wtyczki kontroli źródła utworzony w [SccInitialize](../extensibility/sccinitialize-function.md).
+[w] Wskaźnik do struktury kontekstu wtyczki formantu źródła utworzonej w [SccInitialize](../extensibility/sccinitialize-function.md).
 
 ## <a name="return-value"></a>Wartość zwracana
- Implementacja wtyczki kontroli źródła tej funkcji powinna zwracać jedną z następujących wartości:
+ Oczekuje się, że implementacja wtyczki kontroli źródła tej funkcji zwróci jedną z następujących wartości:
 
 |Wartość|Opis|
 |-----------|-----------------|
-|SCC_OK|Czyszczenie zostało ukończone pomyślnie.|
+|SCC_OK|Oczyszczanie zostało zakończone pomyślnie.|
 
 ## <a name="remarks"></a>Uwagi
- Wtyczka do kontroli źródła jest odpowiedzialna za przygotowanie się do wyłączenia i zwolnienia pamięci, którą wtyczka przydzieliła dla struktury kontekstu. Funkcja jest wywoływana jednokrotnie dla każdego danego wystąpienia wtyczki. Wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) poprzedza to wywołanie. W czasie wywołania do `SccUninitialize` nie można nadal otwierać projektów.
+ Wtyczka kontroli źródła jest odpowiedzialny za przygotowanie do zamknięcia i zwalniania pamięci, że dodatek przypisany do struktury kontekstu. Funkcja jest wywoływana raz dla każdego wystąpienia wtyczki. Wywołanie [SccInitialize](../extensibility/sccinitialize-function.md) poprzedza to wywołanie. Żadne projekty nie mogą być nadal otwarte `SccUninitialize`w momencie wezwania do .
 
-## <a name="see-also"></a>Zobacz także
-- [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Zobacz też
+- [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

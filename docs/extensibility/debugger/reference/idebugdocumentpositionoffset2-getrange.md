@@ -1,27 +1,27 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Dokumentacja firmy Microsoft
+title: IDebugDocumentPositionOffset2::GetRange | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2::GetRange
 ms.assetid: 27da7130-0932-4f97-abde-05e6fb018606
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c667ffa597481121de0467c9ab4b07e4bf4d607
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fd305b6506471a40de90fbd954e54461d2a139d0
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333388"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731629"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Pobiera zakres dla bieżącej pozycji dokumentu.
+Pobiera zakres dla bieżącego położenia dokumentu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,24 +41,24 @@ public int GetRange(
 
 ## <a name="parameters"></a>Parametry
 `pdwBegOffset`\
-[out w] Przesunięcia dla pozycja początkowa zakresu. Ustaw ten parametr ma wartość null, jeśli te informacje nie są potrzebne.
+[w, na zewnątrz] Przesunięcie dla pozycji początkowej zakresu. Ustaw ten parametr na wartość null, jeśli te informacje nie są potrzebne.
 
 `pdwEndOffset`\
-[out w] Przesunięcia dla pozycja końcowa zakresu. Ustaw ten parametr ma wartość null, jeśli te informacje nie są potrzebne.
+[w, na zewnątrz] Przesunięcie dla pozycji końcowej zakresu. Ustaw ten parametr na wartość null, jeśli te informacje nie są potrzebne.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zakres określony w pozycji dokument w lokalizacji punktu przerwania jest używany przez aparat debugowania (DE) do przodu wyszukiwania instrukcję, która faktycznie przyczynia się kod. Na przykład rozważmy następujący kod:
+ Zakres określony w pozycji dokumentu dla punktu przerwania lokalizacji jest używany przez aparat debugowania (DE) do wyszukiwania z wyprzedzeniem instrukcji, która faktycznie przyczynia się do kodu. Rozważmy na przykład następujący kod:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Wiersz 5 przyczynia się żadnego kodu do debugowanego programu. Jeśli debuger, która ustawia punkt przerwania w wierszu 5 chce DE wyszukiwania do przodu pewien dla pierwszego wiersza, która wspiera kodu, debuger określić zakres, który zawiera wiersze dodatkowe Release candidate, gdzie punkt przerwania mogą zostać prawidłowo umieszczone. DE będzie następnie wyszukuj do przodu, za pomocą tych wierszy aż do znalezienia go wiersza, który mógłby odebrać punktu przerwania.
+ Wiersz 5 nie przyczynia się do kodu do programu jest debugowany. Jeśli debuger, który ustawia punkt przerwania w wierszu 5 chce DE do wyszukiwania do przodu pewną kwotę dla pierwszego wiersza, który przyczynia się do kodu, debuger określi zakres, który zawiera dodatkowe wiersze kandydata, gdzie punkt przerwania może być poprawnie umieszczony. DE będzie następnie przeszukiwać te wiersze, dopóki nie znajdzie wiersza, który może zaakceptować punkt przerwania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

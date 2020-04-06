@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths | Dokumentacja firmy Microsoft
+title: IDebugProgram2::EnumCodePaths | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3206a9c89197ccc9415115fe9fb0995e51ede8c9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353188"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723033"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
-Pobiera listę ścieżek kodu dla danego stanowiska w pliku źródłowym.
+Pobiera listę ścieżek kodu dla danej pozycji w pliku źródłowym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,30 +51,30 @@ int EnumCodePaths( 
 
 ## <a name="parameters"></a>Parametry
 `pszHint`\
-[in] Word pod kursorem w **źródła** lub **dezasemblacji** widoku w środowisku IDE.
+[w] Wyraz pod kursorem w widoku **Źródło** lub **Demontaż** w IDE.
 
 `pStart`\
-[in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt reprezentujący bieżący kontekst kodu.
+[w] [Obiekt IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) reprezentujący bieżący kontekst kodu.
 
 `pFrame`\
-[in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt reprezentujący ramkę stosu skojarzone z bieżącym punktu przerwania.
+[w] Obiekt [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) reprezentujący ramkę stosu skojarzoną z bieżącym punktem przerwania.
 
 `fSource`\
-[in] Wartość różną od zera (`TRUE`) Jeśli w **źródła** widoku lub zero (`FALSE`) Jeśli w **dezasemblacji** widoku.
+[w] Nonzero`TRUE`( ), jeśli w widoku`FALSE` **Źródłowym** lub zero ( ), jeśli w widoku **Demontaż.**
 
 `ppEnum`\
-[out] Zwraca [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) obiekt, który zawiera listę ścieżek kodu.
+[na zewnątrz] Zwraca obiekt [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) zawierający listę ścieżek kodu.
 
 `ppSafety`\
-[out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiektów reprezentującą kontekst dodatkowy kod ma być ustawiona jako punkt przerwania, w przypadku, gdy wybrana kodu ścieżka zostanie pominięta. Może to nastąpić w przypadku zwartym wyrażenie logiczne, np.
+[na zewnątrz] Zwraca obiekt [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) reprezentujący dodatkowy kontekst kodu, który ma zostać ustawiony jako punkt przerwania w przypadku pominięcia wybranej ścieżki kodu. Może się to zdarzyć na przykład w przypadku wyrażenia logicznego zwarcia.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Ścieżka kodu w tym artykule opisano nazwę metody lub funkcji, która została wywołana, aby uzyskać dostęp do bieżącego punktu podczas wykonywania programu. Lista ścieżek kodu przedstawia stos wywołań.
+ Ścieżka kodu opisuje nazwę metody lub funkcji, która została wywołana, aby uzyskać do bieżącego punktu w wykonywaniu programu. Lista ścieżek kodu reprezentuje stos wywołań.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

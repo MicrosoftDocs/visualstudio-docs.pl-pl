@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Next | Dokumentacja firmy Microsoft
+title: IEnumDebugProcesses2::Następny | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Next
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 734be605517adf4e127a7f1f936fb799449ce467
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cbfab7f13160129249afe7139ef3c402ba9801ee
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326181"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80715826"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 Zwraca następny zestaw elementów z wyliczenia.
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>Parametry
 `celt`\
-[in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.
+[w] Liczba elementów do pobrania. Określa również maksymalny rozmiar `rgelt` tablicy.
 
 `rgelt`\
-[out w] Tablica [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) elementami do wypełnienia.
+[w, na zewnątrz] Tablica elementów [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) do wypełnienia.
 
 `pceltFetched`\
-[out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.
+[na zewnątrz] Zwraca liczbę elementów faktycznie `rgelt`zwróconych w .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca . Zwraca, `S_FALSE` jeśli mniej niż żądana liczba elementów może być zwrócona; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

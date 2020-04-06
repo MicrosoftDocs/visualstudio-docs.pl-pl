@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveAllSetExceptions | Dokumentacja firmy Microsoft
+title: IDebugEngine2::UsuńAllSetWykreślaj | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::RemoveAllSetExceptions
 ms.assetid: 165fbe89-802d-4d99-85ca-c10fd6cccc09
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17063a2c503535bc20b61ba8d9914fc54005cccc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ae5ac703f1d0bd374131a4f5de397f39cf0ba209
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352616"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731028"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Usuwa listy wyjątków, ustawionych przez środowisko IDE dla określonej architektury środowiska wykonawczego lub języka.
+Usuwa listę wyjątków, które IDE ustawił dla określonej architektury lub języka w czasie wykonywania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,17 +41,17 @@ int RemoveAllSetExceptions( 
 
 ## <a name="parameters"></a>Parametry
 `guidType`\
-[in] Identyfikator GUID dla języka lub identyfikator GUID dla aparatu debugowania, które są specyficzne dla architektury środowiska wykonawczego.
+[w] Identyfikator GUID dla języka lub identyfikator GUID dla aparatu debugowania, który jest specyficzny dla architektury w czasie wykonywania.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Usunięto przez tę metodę wyjątki były ustawione przez poprzednie wywołania do [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) metody.
+ Wyjątki usunięte przez tę metodę zostały ustawione przez wcześniejsze wywołania [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) metody.
 
- Aby usunąć określony wyjątek, należy wywołać [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody.
+ Aby usunąć określony wyjątek, wywołaj [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)

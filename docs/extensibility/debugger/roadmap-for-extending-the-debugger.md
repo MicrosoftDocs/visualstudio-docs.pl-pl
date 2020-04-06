@@ -1,53 +1,53 @@
 ---
-title: Plan rozwoju rozszerzania debugera | Dokumentacja firmy Microsoft
+title: Plan rozszerzenia debugera | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89788f97937d05a3ca4858ed35fd854593ce3357
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315891"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80713145"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Plan rozwoju rozszerzania debugera
-Ta dokumentacja zawiera przewodnik i informacje do rozszerzania [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] debugera za pomocą [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+# <a name="roadmap-for-extending-the-debugger"></a>Plan rozszerzenia debugera
+Ta dokumentacja zawiera przewodnik i [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] informacje referencyjne [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]dotyczące rozszerzania debugera za pomocą pliku .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugowanie dokumentacji zawiera przykłady, stanowią wyczerpujące Kompendium i kilka reprezentatywny scenariusze, które pokazują typowe sposoby dostosowywania debugera.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]debugowanie dokumentacji zawiera przykłady, wyczerpujące odwołanie i kilka reprezentatywnych scenariuszy, które pokazują typowe sposoby dostosowania debugera.
 
- Kompilator i jego danych wyjściowych określają, co to są wymagane do skonfigurowania debugowania w programie. Jeśli kompilator:
+ Kompilator i jego dane wyjściowe określają, co jest wymagane do skonfigurowania debugowania w produkcie. Jeśli kompilator:
 
-- Jest przeznaczony dla natywnego systemu operacyjnego Windows i zapisuje *. Plik PDB* pliku, można debugować programy przy użyciu aparatu debugowania kodu macierzystego (DE), która jest zintegrowana [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nie trzeba implementować ewaluatora DE lub wyrażenie. Ewaluator wyrażeń jest przeznaczony dla składni języka programowania C++.
+- Jest przeznaczony dla natywnego systemu operacyjnego Windows i zapisuje *plik . PDB,* można debugować programy za pomocą natywnego aparatu debugowania kodu (DE), który jest zintegrowany z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nie trzeba implementować DE lub oceniający wyrażenie. Oceniający wyrażenie jest zapisywany dla składni języka programowania C++.
 
-- Tworzy Microsoft intermediate language (MSIL). dane wyjściowe, można debugować programy przy użyciu aparatu debugowania kodu zarządzanego DE, która jest również zintegrowana [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W związku z tym należy zaimplementować tylko ewaluatora wyrażeń. Ewaluator wyrażeń próbki jest dostarczany. Więcej informacji znajduje się w następujących tematach:
+- Produkuje dane wyjściowe języka pośredniego firmy Microsoft (MSIL), można debugować programy za [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]pomocą zarządzanego aparatu debugowania kodu DE, który jest również zintegrowany z programem . W związku z tym wystarczy tylko zaimplementować oceniającego wyrażenie. Przykładowy ewaluator wyrażenia jest dla Ciebie. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
-   [Szacowanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
+   [Ocena wyrażenia](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
-   [Ocenianie wyrażeń](../../extensibility/debugger/evaluating-expressions.md)
+   [Ocena wyrażeń](../../extensibility/debugger/evaluating-expressions.md)
 
-   [Kontekst oceny wyrażeń](../../extensibility/debugger/expression-evaluation-context.md)
+   [Kontekst oceny wyrażenia](../../extensibility/debugger/expression-evaluation-context.md)
 
-   [Obliczanie wyrażenia w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+   [Ocena wyrażenia w trybie przerwania](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
-   [Pisanie ewaluatora wyrażeń środowiska uruchomieniowego wspólnego języka](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+   [Pisanie ewaluatora wyrażeń środowiska uruchomieniowego języka wspólnego](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- Obiekty docelowe w zastrzeżonej system operacyjny lub inne środowiska wykonawczego, należy napisać własne DE. Samouczek, w którym tworzy prostą DE, korzystając z modelu COM ATL jest dostępna. Więcej informacji znajduje się w następujących tematach:
+- Jest przeznaczony dla zastrzeżonego systemu operacyjnego lub innego środowiska w czasie wykonywania, musisz napisać własne DE. Dostępny jest samouczek, który tworzy prosty DE przy użyciu ATL COM. Aby uzyskać więcej informacji, zobacz następujące tematy:
 
    [Tworzenie niestandardowego aparatu debugowania](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Samouczek: Tworzenie aparatu debugowania, korzystając z modelu COM ATL](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Samouczek: Tworzenie aparatu debugowania przy użyciu ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
-   [Implementowanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
+   [Wdrażanie dostawcy portu](../../extensibility/debugger/implementing-a-port-supplier.md)
 
-   [Przykłady](../../extensibility/debugger/visual-studio-debugging-samples.md)
+   [Samples](../../extensibility/debugger/visual-studio-debugging-samples.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Wprowadzenie](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

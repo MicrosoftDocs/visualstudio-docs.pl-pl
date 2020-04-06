@@ -1,5 +1,5 @@
 ---
-title: Projecttemplatelink — Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
+title: Element ProjectTemplateLink (szablony programu Visual Studio) | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - <ProjectTemplateLink> element [Visual Studio Templates]
 - ProjectTemplateLink element [Visual Studio Templates]
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e911977156a6b750c1e15fec46ead77e1bac0204
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e6d402b6605f2e01a20d400c2c33573c686a1cdd
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335860"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80701820"
 ---
-# <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink element (Visual Studio templates)
-Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wieloprojektowym.
+# <a name="projecttemplatelink-element-visual-studio-templates"></a>Element ProjectTemplateLink (szablony programu Visual Studio)
+Określa ścieżkę do pliku *vstemplate* jednego projektu w szablonie wieloprojektowym.
 
- \<VSTemplate> \<TemplateContent> \<ProjectCollection> \<ProjectTemplateLink> -or- \<VSTemplate> \<TemplateContent> \<ProjectCollection> \<SolutionFolder> \<ProjectTemplateLink>
+ \<\<VSTemplate> TemplateContent> \<ProjectCollection> \<ProjectTemplateLink> - lub- \<VSTemplate> \<templateContent> \<ProjectCollection> \<SolutionFolder> \<ProjectTemplateLink>
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,8 +41,8 @@ Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wielopro
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|`ProjectName`|Atrybut opcjonalny.<br /><br /> Określa nazwę każdego indywidualnego projektu w szablonie wieloprojektowym. **Nowy projekt** okno dialogowe nie można przypisywać nazw poszczególnym projektom.|
-|`CopyParameters`|Umożliwia kopiowanie wszystkich zmiennych z głównego szablonu grupowego do poszczególnych połączonych szablonów.<br /><br /> Parametry w połączonych szablonach mają prefiks `"$ext_*$"`. Na przykład, jeśli w nadrzędnym szablonie grupowym parametr `$projectname$` ma wartość **ExampleProject1**, gdy połączony szablon pobiera swoją kolej, aby można było wykonywane, parametr `$ext_projectname$`, który jest kopią `$projectname$`parametr z nadrzędnym szablonie grupowym.<br /><br /> Dzięki temu połączone szablony mogą korzystać z niektórych wspólnych parametrów tworzonych wygodnie tylko w nadrzędnym szablonie grupowym.<br /><br /> Ten atrybut jest opcjonalny, a następnie automatycznie wartość domyślna to `false` gdy nie jest dołączony.<br /><br /> Wprowadzona w programie Visual Studio 2013 Update 2. Aby odwoływać się do wersji produktu jest poprawny, zobacz [odwołuje się do zestawów dostarczane w Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|
+|`ProjectName`|Atrybut opcjonalny.<br /><br /> Określa nazwę każdego indywidualnego projektu w szablonie wieloprojektowym. Okno dialogowe **Nowy projekt** nie może przypisywać nazw do poszczególnych projektów.|
+|`CopyParameters`|Umożliwia kopiowanie wszystkich zmiennych z głównego szablonu grupowego do poszczególnych połączonych szablonów.<br /><br /> Parametry w połączonych szablonach mają `"$ext_*$"`prefiks . Na przykład jeśli w szablonie `$projectname$` grupy nadrzędnej parametr ma wartość **ExampleProject1**, gdy połączony szablon `$ext_projectname$`pobiera jego kolej do `$projectname$` wykonania, uzyskuje parametr , który jest kopią parametru z szablonu grupy nadrzędnej.<br /><br /> Dzięki temu połączone szablony mogą korzystać z niektórych wspólnych parametrów tworzonych wygodnie tylko w nadrzędnym szablonie grupowym.<br /><br /> Ten atrybut jest opcjonalny i automatycznie `false` domyślnie, gdy nie jest uwzględniony.<br /><br /> Wprowadzono w programie Visual Studio 2013 Aktualizacja 2. Aby odwołać się do poprawnej wersji produktu, zobacz [Zestawy odwołań dostarczone w aktualizacji SDK programu Visual Studio 2013 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -57,13 +57,13 @@ Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wielopro
 ## <a name="text-value"></a>Wartość tekstowa
  Wartość tekstowa jest wymagana.
 
- Ten tekst Określa ścieżkę do *.vstemplate* pliku szablonu.
+ Ten tekst określa ścieżkę do pliku *vstemplate* szablonu.
 
 ## <a name="remarks"></a>Uwagi
- Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. `ProjectTemplateLink` Element jest używany do określenia lokalizacji *.vstemplate* pliku dla jednego z projektów w szablonie. *.Vstemplate* plik szablonu wieloprojektowego zawiera jeden `ProjectTemplateLink` elementu dla każdego projektu w szablonie. Aby uzyskać więcej informacji o szablonach wieloprojektowych, zobacz [jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).
+ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projektów. Element `ProjectTemplateLink` jest używany do określenia lokalizacji pliku *vstemplate* dla jednego z projektów w szablonie. Plik *vstemplate* szablonu wielu projektów zawiera `ProjectTemplateLink` jeden element dla każdego projektu w szablonie. Aby uzyskać więcej informacji na temat szablonów wielu projektów, zobacz [Jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md).
 
 ## <a name="example"></a>Przykład
- W tym przykładzie pokazano prosty główny wielu projektów *.vstemplate* pliku. W tym przykładzie szablon zawiera dwa projekty `My Windows Application` i `My Class Library`. `ProjectName` Atrybutu na `ProjectTemplateLink` element ustawia nazwę [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] przypisze temu projektowi. Jeśli `ProjectName` nie istnieje atrybut nazwy *.vstemplate* plik jest używany jako nazwa projektu.
+ W tym przykładzie pokazano prosty plik *.vstemplate* root multi-project. W tym przykładzie szablon zawiera `My Windows Application` `My Class Library`dwa projekty i . Atrybut `ProjectName` w elemencie `ProjectTemplateLink` ustawia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nazwę, aby przypisać ten projekt. Jeśli `ProjectName` atrybut nie istnieje, nazwa pliku *vstemplate* jest używana jako nazwa projektu.
 
 ```
 <VSTemplate Version="3.0.0" Type="ProjectGroup"
@@ -87,7 +87,7 @@ Określa ścieżkę do *.vstemplate* pliku jednego projektu w szablonie wielopro
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Zobacz także
-- [Odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Zobacz też
+- [Odwołanie do schematu szablonu programu Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Tworzenie szablonów projektów i elementów](../ide/creating-project-and-item-templates.md)
-- [Instrukcje: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)
+- [Jak: Tworzenie szablonów wielu projektów](../ide/how-to-create-multi-project-templates.md)

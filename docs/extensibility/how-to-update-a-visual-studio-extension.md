@@ -1,5 +1,5 @@
 ---
-title: 'Instrukcje: Aktualizowanie rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
+title: 'Jak: Aktualizowanie rozszerzenia programu Visual Studio | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,59 +7,59 @@ helpviewer_keywords:
 - update extension
 - new package version
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 237a1139a7a314cf99b5edbd8993abefe04592c8
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 266c0a49db1bca03cec0eb68301445102173df3d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710653"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>Instrukcje: Aktualizacja rozszerzenia programu Visual Studio
-Można zaktualizować rozszerzenia programu Visual Studio w systemie przy użyciu **rozszerzenia i aktualizacje** zainstalować zaktualizowaną wersję. Jeśli tworzysz zaktualizowaną wersję rozszerzenia, oznaczyć go jako zaktualizowany przez zwiększenie numeru wersji manifestu VSIX.
+# <a name="how-to-update-a-visual-studio-extension"></a>Jak: Aktualizowanie rozszerzenia programu Visual Studio
+Rozszerzenie programu Visual Studio można zaktualizować w systemie za pomocą **rozszerzeń i aktualizacji,** aby zainstalować zaktualizowaną wersję. Jeśli utworzysz zaktualizowaną wersję rozszerzenia, można oznaczyć go jako zaktualizowane przez zwiększenie numeru wersji w manifeście VSIX.
 
- Aktualizacje są instalowane podczas manifestu VSIX przychodzących rozszerzenia ma taką samą `ID` jako zainstalowaną wersją i uzyskanie lepszej `Version` numer. Jeśli `Version` numer jest taki sam lub niższy, nie można zainstalować pakietu. Jeśli `ID` wartości nie są zgodne, pakiet, który nie jest jeszcze zainstalowany jest rozpoznawana jako osobne rozszerzenie.
+ Aktualizacje są instalowane, gdy manifest VSIX rozszerzenia przychodzącego ma taką samą, `ID` jak zainstalowaną i wyższą `Version` liczbę. Jeśli `Version` numer jest taki sam lub niższy, nie można zainstalować pakietu. Jeśli `ID` wartości nie są zgodne, pakiet, który nie jest jeszcze zainstalowany, jest rozpoznawany jako oddzielne rozszerzenie.
 
- Aby uniknąć konfliktów podczas programowania, zaleca się, czy odinstalowaniu wcześniejszych wersji rozszerzenia w toku, a także Odinstaluj lub wyłącz inne rozszerzenia mogą powodować konflikt.
+ Aby zapobiec konfliktom podczas tworzenia, zaleca się odinstalowanie wcześniejszych wersji rozszerzeń w toku, a także odinstalowanie lub wyłączenie innych potencjalnie sprzecznych rozszerzeń.
 
-## <a name="to-update-an-extension-on-your-system"></a>Można zaktualizować rozszerzenia w systemie
+## <a name="to-update-an-extension-on-your-system"></a>Aby zaktualizować rozszerzenie w systemie
 
-1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.
+1. W menu **Narzędzia** kliknij pozycję **Rozszerzenia i aktualizacje**.
 
-2. W okienku po lewej stronie kliknij **aktualizacje**.
+2. W lewym okienku kliknij pozycję **Aktualizacje**.
 
-3. W środkowym okienku kliknij aktualizacji, którą chcesz zainstalować.
+3. W środkowym okienku kliknij aktualizację, którą chcesz zainstalować.
 
-     Numer wersji zaktualizowane rozszerzenie jest wyświetlana w okienku po prawej stronie, oraz inne informacje.
+     Numer wersji zaktualizowanego rozszerzenia jest wyświetlany w prawym okienku wraz z innymi informacjami.
 
-4. W dolnym okienku po prawej stronie, kliknij **aktualizacji**.
+4. U dołu prawego okienka kliknij pozycję **Aktualizuj**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Aby opublikować aktualizację rozszerzenia
 
-1. W programie Visual Studio Otwórz rozwiązanie dla rozszerzenia, które chcesz zaktualizować. Wprowadź zmiany.
+1. W programie Visual Studio otwórz rozwiązanie dla rozszerzenia, które chcesz zaktualizować. Wprowadzać zmiany.
 
     > [!IMPORTANT]
-    > Niepodpisane wszystkie rozszerzenia użytkowników nie zostaje zaktualizowana automatycznie. Należy zawsze utworzyć rozszerzeń.
+    > Niepodpisane wszystkie rozszerzenia użytkownika nie są aktualizowane automatycznie. Należy zawsze podpisać rozszerzenia.
 
-2. W **Eksploratora rozwiązań**, otwórz *source.extension.manifest*.
+2. W **Eksploratorze rozwiązań**, open *source.extension.manifest*.
 
-3. W Projektancie manifestu, należy zwiększyć wartość liczby w parametrze **wersji** pola.
+3. W projektancie manifestu zwiększ wartość liczby w polu **Wersja.**
 
-4. Zapisywanie rozwiązania i skompiluj je.
+4. Zapisz rozwiązanie i zbuduj go.
 
-5. Przekaż nowy *.vsix* pliku (w * \bin\Debug\* folder projektu) do [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) witryny sieci Web.
+5. Przekaż nowy plik *vsix* (w folderze *\bin\Debug\* projektu) do witryny sieci Web programu Visual Studio [Marketplace.](https://marketplace.visualstudio.com/vs)
 
-     Po otwarciu użytkownik, który ma wcześniejszą wersję rozszerzenia **rozszerzenia i aktualizacje**, nowa wersja pojawi się w **aktualizacje** listy, pod warunkiem, że narzędzie ma wartość automatycznie wyszukać aktualizacje.
+     Gdy użytkownik, który ma wcześniejszą wersję rozszerzenia, otworzy **rozszerzenia i aktualizacje,** nowa wersja pojawi się na liście **Aktualizacje,** pod warunkiem, że narzędzie jest ustawione na automatyczne wyszukanie aktualizacji.
 
-     Można włączyć lub wyłączyć automatyczne sprawdzanie dostępności aktualizacji w dolnej części **aktualizacje** okienko (**Włącz/Wyłącz automatyczne wykrywanie dostępnych aktualizacji**), które zmiany **Wyszukaj aktualizacje** w **narzędzia** > **opcje** > **środowiska**  >  **Rozszerzenia i aktualizacje**.
+     Automatyczne sprawdzanie aktualizacji u dołu**Options** > okienka **Aktualizacje** można włączyć lub wyłączyć automatyczne sprawdzanie dostępności (**Włącz/wyłącz automatyczne wykrywanie dostępnych aktualizacji),** które zmienia ustawienie **Sprawdź aktualizacje** w **ustawieniach Opcje** > **środowiska** > narzędzia**i aktualizacje**.
 
     > [!NOTE]
-    > Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia** > **opcje** > **środowiska**  >  **Rozszerzenia i aktualizacje**) czy będzie automatyczne aktualizacje dla rozszerzenia dla poszczególnych użytkowników, wszystkie rozszerzenia użytkowników lub obie (ustawienie domyślne).
+    > Począwszy od programu Visual Studio 2015 Update 2, można określić (w **narzędzia** > **opcje** > rozszerzenia**środowiska** > **i aktualizacje),** czy chcesz automatyczne aktualizacje dla rozszerzeń dla użytkownika, wszystkie rozszerzenia użytkownika lub obu (ustawienie domyślne).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Wyszukiwanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
+- [Znajdowanie i używanie rozszerzeń programu Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

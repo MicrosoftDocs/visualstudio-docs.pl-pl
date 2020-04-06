@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Dokumentacja firmy Microsoft
+title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e72292f403b28c66cddbcee623f27ddfcbe5c3aa
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345178"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80730360"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Zezwala lub nie zezwala na Obliczanie wyrażenia wystąpić w danym wątku, nawet jeśli zostało zatrzymane.
+Umożliwia (lub nie zezwala) na ocenę wyrażenia w danym wątku, nawet jeśli program został zatrzymany.
 
 ## <a name="syntax"></a>Składnia
 
@@ -49,29 +49,29 @@ int WatchForExpressionEvaluationOnThread( 
 
 ## <a name="parameters"></a>Parametry
 `pOriginatingProgram`\
-[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt reprezentujący program, który jest obliczenia wyrażenia.
+[w] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt reprezentujący program, który ocenia wyrażenie.
 
 `dwTid`\
-[in] Określa identyfikator wątku.
+[w] Określa identyfikator wątku.
 
 `dwEvalFlags`\
-[in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie określające sposób oceny ma zostać wykonane.
+[w] Kombinacja flag z [wyliczenia EVALFLAGS,](../../../extensibility/debugger/reference/evalflags.md) które określają sposób wykonywania oceny.
 
 `pExprCallback`\
-[in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt ma być używany do wysyłania zdarzenia debugowania, które wystąpiły podczas obliczania wyrażenia.
+[w] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który ma służyć do wysyłania zdarzeń debugowania, które występują podczas oceny wyrażenia.
 
 `fWatch`\
-[in] Jeśli wartość od zera (`TRUE`), umożliwia oceny wyrażenia w wątku identyfikowane przez `dwTid`; w przeciwnym razie zero (`FALSE`) nie zezwalają na obliczenia wyrażenia dla tego wątku.
+[w] Jeśli niezerowa`TRUE`( ), umożliwia ocenę wyrażenia `dwTid`w wątku identyfikowanym przez ; w przeciwnym`FALSE`razie zero ( ) nie zezwala na ocenę wyrażenia w tym wątku.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Gdy Menedżer debugowania sesji (SDM) prosi programu identyfikowane przez `pOriginatingProgram` parametru, aby szacować wyrażenia, powiadomi użytkownika wszystkie inne programy dołączone przez wywołanie tej metody.
+ Gdy menedżer debugowania sesji (SDM) prosi program, identyfikowany przez `pOriginatingProgram` parametr, aby ocenić wyrażenie, powiadamia wszystkie inne dołączone programy, wywołując tę metodę.
 
- Ocena wyrażeń w jeden program może spowodować, że kod uruchomiony w innym, ze względu na obliczanie funkcji lub oceny dowolnego `IDispatch` właściwości. W związku z tym ta metoda umożliwia obliczanie wyrażenia zostać uruchomione i ukończone, nawet jeśli wątek może być zatrzymana w tym programie.
+ Ocena wyrażenia w jednym programie może spowodować, że kod będzie `IDispatch` uruchamiany w innym, ze względu na ocenę funkcji lub ocenę dowolnych właściwości. Z tego powodu ta metoda umożliwia ocenę wyrażenia do uruchomienia i ukończenia, nawet jeśli wątek może zostać zatrzymany w tym programie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

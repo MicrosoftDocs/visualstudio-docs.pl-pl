@@ -1,53 +1,53 @@
 ---
-title: Starszej wersji usługi językowej2 | Dokumentacja firmy Microsoft
+title: Funkcje usługi języka starszego języka2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de7e0fa6a229929a34ed3654c3a4e03e02d1129b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33f12e816476aa54f334988b99b9e86e820784f6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333506"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80707369"
 ---
-# <a name="legacy-language-service-features"></a>Funkcje usługi starszego języka
-W poniższych sekcjach wymieniono niektóre funkcje usługi starszego języka, które można podać.
+# <a name="legacy-language-service-features"></a>Funkcje starszej wersji usługi językowej
+W poniższych tematach przedstawiono niektóre funkcje usługi języka starszego języka, które można udostępnić.
 
- Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi języka, zobacz [edytora i rozszerzenia usługi w języka](../../extensibility/editor-and-language-service-extensions.md).
+ Starsze usługi języka są implementowane jako część VSPackage, ale nowszym sposobem implementowania funkcji usługi języka jest użycie rozszerzeń MEF. Aby dowiedzieć się więcej o nowym sposobie implementacji usługi językowej, zobacz [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
-> Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.
+> Zaleca się, aby rozpocząć korzystanie z nowego interfejsu API edytora tak szybko, jak to możliwe. Poprawi to wydajność usługi językowej i umożliwi korzystanie z nowych funkcji edytora.
 
 ## <a name="in-this-section"></a>W tej sekcji
 - [Kolorowanie składni w starszej wersji usługi językowej](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Wyjaśnia sposób implementacji kolorowanie składni.
+ Wyjaśniono, jak zaimplementować kolorystykę składni.
 
 - [Formatowanie automatyczne w starszej wersji usługi językowej](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)
 
- Wyjaśnia sposób implementacji, automatycznego formatowania.
+ W tym artykule wyjaśniono, jak zaimplementować automatyczne formatowanie.
 
 - [Informacje o parametrach w starszej wersji usługi językowej](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)
 
- Wyjaśnia, jak zaimplementować etykietka informacji parametru funkcji IntelliSense.
+ W tym artykule wyjaśniono, jak zaimplementować etykietkę narzędzia Informacje o parametrach IntelliSense.
 
 - [Uzupełnianie instrukcji w starszej wersji usługi językowej](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)
 
- Wyjaśnia, jak wdrażać listy instrukcji IntelliSense i lista uzupełnianie składowych.
+ W tym artykule wyjaśniono, jak zaimplementować listę instrukcji IntelliSense i listę ukończenia elementu członkowskiego.
 
 - [Zwijanie i tekst ukryty w starszej wersji usługi językowej](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)
 
- Wyjaśnia sposób implementacji konspektu czy ukryty tekst.
+ Wyjaśniono, jak zaimplementować tekst konspektowy lub ukryty.
 
 - [Instrukcje: zapewnianie rozszerzonej obsługi zwijania w starszej wersji usługi językowej](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Wyjaśnia, niektóre kroki we wdrażaniu Obsługa debugera...
+ Wyjaśniono niektóre kroki w implementacji obsługi debugera..
 
 ## <a name="related-sections"></a>Sekcje pokrewne

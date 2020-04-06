@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::SetResponse | Dokumentacja firmy Microsoft
+title: IDebugMessageEvent2::SetResponse | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,23 +8,23 @@ helpviewer_keywords:
 - IDebugMessageEvent2::SetResponse method
 - SetResponse method
 ms.assetid: 2a5e318d-3225-4abd-83f1-28323baff6c0
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40d12bd15f496c41463aed231345a75a27301835
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cc0ca743deac3e7e635d378f8172ddb4c7e39c72
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346867"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727392"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-Ustawia odpowiedzi, jeśli występują w oknie komunikatu.
+Ustawia odpowiedź, jeśli istnieje, z okna komunikatu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -42,11 +42,11 @@ int SetResponse( 
 
 ## <a name="parameters"></a>Parametry
 `dwResponse`\
-[in] Określa odpowiedź, za pomocą Konwencji Win32 `MessageBox` funkcji. Zobacz [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) funkcji, aby uzyskać szczegółowe informacje.
+[w] Określa odpowiedź, przy użyciu konwencji funkcji Win32. `MessageBox` Szczegółowe informacje można znaleźć w funkcji [AfxMessageBox.](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
-- [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)
+- [Afxmessagebox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

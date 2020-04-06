@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetInitialData | Microsoft Docs
+title: IPropertyProxyEESide::GetInitialData | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::GetInitialData
 ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ada42317b1ddf40882b2ba0820ea4daa97c89ecc
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 650e4bc5cb88800ffd7c61693118c3c2081877c9
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353433"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714984"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
-Zwraca dane początkowe dla tego obiektu.
+Zwraca początkowe dane dla tego obiektu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,11 +41,11 @@ int GetInitialData(
 
 ## <a name="parameters"></a>Parametry
 `dataOut`\
-[out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający dane pierwotne tego obiektu.
+[na zewnątrz] Zwraca obiekt [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) zawierający początkowe dane tego obiektu.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

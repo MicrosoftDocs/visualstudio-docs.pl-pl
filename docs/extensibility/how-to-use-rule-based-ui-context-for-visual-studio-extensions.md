@@ -1,51 +1,51 @@
 ---
-title: 'Instrukcje: korzystanie z kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio | Microsoft Docs'
+title: 'Jak: Używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio | Dokumenty firmy Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2abe9938d4c3212f29b8591727d731e99e47929c
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: de1a1e0a2022482433f81b0b2810b0d201ab7b8f
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904010"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710592"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Instrukcje: używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Jak: Używanie kontekstu interfejsu użytkownika opartego na regułach dla rozszerzeń programu Visual Studio
 
-Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dobrze znanych <xref:Microsoft.VisualStudio.Shell.UIContext>s zostaną aktywowane. Jednak te konteksty interfejsu użytkownika nie są bardziej ziarniste, co pozostawia autorów rozszerzeń bez wyboru, ale do wybierania dostępnego kontekstu interfejsu użytkownika, który jest uaktywniany przed punktem, na który naprawdę chciał pakietu VSPackage. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.
+Visual Studio umożliwia ładowanie vspackages, <xref:Microsoft.VisualStudio.Shell.UIContext>gdy niektóre dobrze znane s są aktywowane. Jednak te konteksty interfejsu użytkownika nie są drobnoziarniste, co pozostawia autorów rozszerzenia nie ma wyboru, ale wybrać dostępny kontekst interfejsu użytkownika, który aktywuje przed punktem, który naprawdę chciał VSPackage załadować. Aby uzyskać listę dobrze znanych kontekstów <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>interfejsu użytkownika, zobacz .
 
-Ładowanie pakietów może mieć wpływ na wydajność i ładowanie ich wcześniej, niż jest to konieczne, nie jest najlepszym rozwiązaniem. W programie Visual Studio 2015 wprowadzono koncepcję kontekstów interfejsu użytkownika opartych na regułach, mechanizm, który umożliwia autorom rozszerzeń Definiowanie precyzyjnych warunków, w których kontekst interfejsu użytkownika jest aktywowany i są ładowane skojarzone pakietów VSPackage.
+Ładowanie pakietów może mieć wpływ na wydajność i ładowanie ich wcześniej niż jest to potrzebne nie jest najlepszym rozwiązaniem. Visual Studio 2015 wprowadzono pojęcie kontekstów interfejsu użytkownika opartych na regułach, mechanizm, który umożliwia autorom rozszerzenia do definiowania dokładnych warunków, w których kontekst interfejsu użytkownika jest aktywowany i skojarzone VSPackages są ładowane.
 
-## <a name="rule-based-ui-context"></a>Kontekst oparty na regułach interfejsu użytkownika
+## <a name="rule-based-ui-context"></a>Kontekst interfejsu użytkownika opartego na regułach
 
-"Reguła" składa się z nowym kontekście interfejsu użytkownika (GUID), a wyrażenie logiczne, które odwołuje się do co najmniej jeden "Terms" w połączeniu z logiczną "i", "or", "not" operacji. "Warunki" są oceniane dynamicznie w czasie wykonywania, a wyrażenie jest przeszacowana po każdej zmianie jego warunków. Jeśli wyrażenie ma wartość true, jest ono aktywowane skojarzonego kontekstu interfejsu użytkownika. W przeciwnym razie kontekstu interfejsu użytkownika jest wyłączony.
+"Reguła" składa się z nowego kontekstu interfejsu użytkownika (guid) i wyrażenia logicznego, które odwołuje się do jednego lub więcej "Terms" w połączeniu z logicznymi operacjami "i", "lub", "nie". "Warunki" są oceniane dynamicznie w czasie wykonywania, a wyrażenie jest ponownie oceniane za każdym razem, gdy którykolwiek z jego warunków ulegnie zmianie. Gdy wyrażenie ma wartość true, jest aktywowany skojarzony kontekst interfejsu użytkownika. W przeciwnym razie kontekst interfejsu użytkownika jest deaktywowany.
 
 Kontekst interfejsu użytkownika oparty na regułach może być używany na różne sposoby:
 
-1. Określ ograniczeń widoczność dla poleceń i okien narzędzi. Można ukryć polecenia/narzędzi systemu windows, dopóki nie zostanie spełniony reguły kontekstu interfejsu użytkownika.
+1. Określ ograniczenia widoczności dla poleceń i okien narzędzi. Można ukryć okna poleceń/narzędzi, dopóki nie zostanie spełniona reguła kontekstu interfejsu użytkownika.
 
-2. Jako ograniczenia automatyczne ładowania: automatyczne ładowanie pakietów tylko po spełnieniu reguły.
+2. Jako ograniczenia obciążenia automatycznego: automatyczne ładowanie pakietów tylko wtedy, gdy reguła jest spełniona.
 
-3. Jako zadanie opóźnione: Opóźnij ładowanie do określonego interwału, a reguła jest nadal spełniona.
+3. Jako zadanie opóźnione: opóźnij ładowanie do upływu określonego interwału, a reguła jest nadal spełniona.
 
-   Mechanizm, może być używany przez wszystkie rozszerzenia programu Visual Studio.
+   Mechanizm może być używany przez każde rozszerzenie programu Visual Studio.
 
 ## <a name="create-a-rule-based-ui-context"></a>Tworzenie kontekstu interfejsu użytkownika opartego na regułach
- Załóżmy, że masz rozszerzenie o nazwie TestPackage, które oferuje polecenie menu, które ma zastosowanie tylko do plików z rozszerzeniem *. config* . Przed VS2015, najlepszym rozwiązaniem było załadować TestPackage podczas <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> kontekstu interfejsu użytkownika został aktywowany. Ładowanie TestPackage w ten sposób nie jest wydajne, ponieważ załadowane rozwiązanie może nie zawierać nawet pliku *. config* . W tych krokach pokazano, jak kontekstu interfejsu użytkownika opartego na regułach można użyć do aktywowania kontekstu interfejsu użytkownika tylko wtedy, gdy wybrano plik z rozszerzeniem *. config* , a następnie Ładuj TestPackage podczas aktywowania kontekstu interfejsu użytkownika.
+ Załóżmy, że masz rozszerzenie o nazwie TestPackage, które oferuje polecenie menu, które ma zastosowanie tylko do plików z rozszerzeniem *.config.* Przed VS2015, najlepszym rozwiązaniem było załadować <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> TestPackage po uaktywnieniu kontekstu interfejsu użytkownika. Ładowanie TestPackage w ten sposób nie jest wydajne, ponieważ załadowane rozwiązanie może nawet nie zawierać pliku *.config.* Te kroki pokazują, jak kontekst interfejsu użytkownika oparty na regułach może służyć do aktywowania kontekstu interfejsu użytkownika tylko wtedy, gdy plik z rozszerzeniem *.config* jest zaznaczone i załadować TestPackage, gdy ten kontekst interfejsu użytkownika jest aktywowany.
 
-1. Zdefiniuj nowy identyfikator GUID UIContext i Dodaj do klasy pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.
+1. Zdefiniuj nowy identyfikator GUID UIContext <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>i dodaj go do klasy VSPackage oraz .
 
-    Załóżmy na przykład, że zostanie dodany nowy UIContext "UIContextGuid". Utworzony identyfikator GUID (można utworzyć identyfikator GUID, klikając pozycję **narzędzia** > **Utwórz GUID**) to "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Następnie należy dodać następującą deklarację wewnątrz klasy pakietu:
+    Załóżmy na przykład, że nowy UIContext "UIContextGuid" ma zostać dodany. Utworzony identyfikator GUID (można utworzyć identyfikator GUID, klikając **narzędzia** > **Tworzenie GUID)** to "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Następnie należy dodać następującą deklarację wewnątrz klasy pakietu:
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
    ```
 
-    Dla atrybutów Dodaj następujące wartości: (szczegóły tych atrybutów zostaną wyjaśnione później)
+    Dla atrybutów dodaj następujące wartości: (Szczegóły tych atrybutów zostaną wyjaśnione później)
 
    ```csharp
    [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -56,17 +56,17 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    Te metadane określają nowy identyfikator GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) i wyrażenie odnoszące się do pojedynczego termin "DotConfig". Termin "DotConfig" ma wartość true, gdy bieżący wybór w aktywnej hierarchii ma nazwę pasującą do wzorca wyrażenia regularnego "\\. config $" (kończy się rozszerzeniem *. config*). Wartość (wartość domyślna) Określa opcjonalną nazwę dla tej reguły, które są przydatne podczas debugowania.
+    Te metadane definiują nowy identyfikator GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) i wyrażenie odnoszące się do pojedynczego terminu "DotConfig". Termin "DotConfig" jest rozpoznawany jako true, gdy bieżące zaznaczenie w aktywnej\\hierarchii ma nazwę odpowiadającą wzorcowi wyrażenia regularnego " .config$" (kończy się na *.config*). Wartość (domyślna) definiuje opcjonalną nazwę reguły przydatnej do debugowania.
 
-    Wartości atrybutu są dodawane do pkgdef wygenerowane później w czasie kompilacji.
+    Wartości atrybutu są dodawane do pkgdef generowane podczas kompilacji później.
 
-2. W pliku VSCT dla poleceń TestPackage Dodaj flagę "DynamicVisibility" do odpowiednich poleceń:
+2. W pliku VSCT dla poleceń TestPackage dodaj flagę "DynamicVisibility" do odpowiednich poleceń:
 
    ```xml
    <CommandFlag>DynamicVisibility</CommandFlag>
    ```
 
-3. W sekcji widoczności VSCT powiązanie odpowiednie polecenia, aby nowe UIContext zdefiniowane w #1 identyfikator GUID:
+3. W sekcji Visibilities w vsct, powiązać odpowiednie polecenia do nowego identyfikatora GUID UIContext zdefiniowane w #1:
 
    ```xml
    <VisibilityConstraints>
@@ -74,30 +74,30 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
    </VisibilityConstraints>
    ```
 
-4. W sekcji symbole Dodaj definicję UIContext:
+4. W sekcji Symbole dodaj definicję interfejsu użytkownika:
 
    ```xml
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    Teraz polecenia menu kontekstowego dla plików *\*. config* będą widoczne tylko wtedy, gdy wybrany element w Eksploratorze rozwiązań jest plikiem *. config* , a pakiet nie zostanie załadowany do momentu wybrania jednego z tych poleceń.
+    Teraz polecenia menu kontekstowego * \** dla plików .config będą widoczne tylko wtedy, gdy wybrany element w eksploratorze rozwiązań jest plikiem *.config,* a pakiet nie zostanie załadowany, dopóki nie zostanie wybrane jedno z tych poleceń.
 
-   Następnie użyj debugera, aby potwierdzić, że pakiet ładuje się tylko wtedy, gdy oczekiwano. Aby debugować TestPackage:
+   Następnie użyj debugera, aby potwierdzić, że pakiet ładuje się tylko wtedy, gdy oczekujesz, że. Aby debugować TestPackage:
 
-5. Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
+5. Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> w metodzie.
 
-6. Twórz TestPackage i Rozpocznij debugowanie.
+6. Tworzenie TestPackage i rozpocząć debugowanie.
 
-7. Utwórz projekt lub otwórz je.
+7. Utwórz projekt lub otwórz go.
 
-8. Wybierz dowolny plik z rozszerzeniem innym niż *. config*. Punkt przerwania nie powinien być trafiony.
+8. Wybierz dowolny plik z rozszerzeniem innym niż *.config*. Punkt przerwania nie powinien zostać trafiony.
 
-9. Wybierz plik *App. config* .
+9. Wybierz plik *App.Config.*
 
    TestPackage ładuje i zatrzymuje się w punkcie przerwania.
 
-## <a name="add-more-rules-for-ui-context"></a>Dodaj więcej reguł dla kontekstu interfejsu użytkownika
- Ponieważ wyrażenia logiczne dostępne są następujące reguły kontekstu interfejsu użytkownika, możesz dodać bardziej ograniczony reguły dla kontekstu interfejsu użytkownika. Na przykład w powyższej kontekstu interfejsu użytkownika, można określić czy reguła dotyczy tylko po załadowaniu rozwiązania z projektem. W ten sposób polecenia nie będą wyświetlane, jeśli otworzysz plik *. config* jako plik autonomiczny, a nie jako część projektu.
+## <a name="add-more-rules-for-ui-context"></a>Dodawanie kolejnych reguł dla kontekstu interfejsu użytkownika
+ Ponieważ reguły kontekstu interfejsu użytkownika są wyrażeniami logicznymi, można dodać więcej reguł z ograniczeniami dla kontekstu interfejsu użytkownika. Na przykład w powyższym kontekście interfejsu użytkownika można określić, że reguła ma zastosowanie tylko wtedy, gdy rozwiązanie z projektem jest ładowane. W ten sposób polecenia nie będą wyświetlane, jeśli otworzysz plik *.config* jako plik autonomiczny, a nie jako część projektu.
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -108,12 +108,12 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
     termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]
 ```
 
- Teraz wyrażenie odwołuje się do trzech warunków. Pierwsze dwa warunki "SingleProject" i "MultipleProjects" odnoszą się do innych dobrze znanych kontekstów interfejsu użytkownika (według ich identyfikatorów GUID). Trzeci termin "DotConfig" to kontekst interfejsu użytkownika oparty na regułach zdefiniowany wcześniej w tym artykule.
+ Teraz wyrażenie odwołuje się do trzech terminów. Pierwsze dwa terminy, "SingleProject" i "MultipleProjects", odnoszą się do innych dobrze znanych kontekstów interfejsu użytkownika (przez ich identyfikatory GUID). Trzeci termin "DotConfig" jest kontekst użytkownika oparty na regułach zdefiniowany wcześniej w tym artykule.
 
 ## <a name="delayed-activation"></a>Opóźniona aktywacja
- Reguły może mieć opcjonalny "opóźnienie". Opóźnienie jest wyrażona w milisekundach. Jeśli jest obecny, opóźnienie powoduje, że aktywacja i dezaktywacja kontekstu interfejsu użytkownika reguła opóźnionych tego przedziału czasu. Jeśli zmiany reguł kopię przed interwał opóźnienia, następnie nic się nie dzieje. Mechanizm ten może służyć do "przesunąć" Inicjowanie kroki — szczególnie jednorazowe inicjowanie bez polegania na czasomierzy lub rejestrowania powiadomień bezczynności.
+ Reguły mogą mieć opcjonalne "Opóźnienie". Opóźnienie jest określone w milisekundach. Jeśli jest obecny, opóźnienie powoduje, że aktywacja lub dezaktywacja kontekstu interfejsu użytkownika reguły jest opóźniona o ten przedział czasu. Jeśli reguła zmieni się z powrotem przed interwałem opóźnienia, nic się nie dzieje. Mechanizm ten może służyć do "rozłamiania" kroki inicjowania — szczególnie jednorazowe inicjowanie bez polegania na czasomierze lub rejestrowania powiadomień bezczynnych.
 
- Na przykład można określić reguły testu obciążenia ma opóźnienie 100 milisekund:
+ Na przykład można określić regułę obciążenia testowego, aby mieć opóźnienie 100 milisekund:
 
 ```csharp
 [ProvideAutoLoad(TestPackage.UIContextGuid)]
@@ -127,33 +127,33 @@ Kontekst interfejsu użytkownika oparty na regułach może być używany na ró�
 
 ## <a name="term-types"></a>Typy terminów
 
-Poniżej przedstawiono różne typy termin, które są obsługiwane:
+Oto różne rodzaje terminów, które są obsługiwane:
 
 |Termin|Opis|
 |-|-|
-|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|Identyfikator GUID odnosi się do kontekstu interfejsu użytkownika. Termin będzie mieć wartość true, zawsze wtedy, gdy kontekstu interfejsu użytkownika jest aktywna i wartość false w przeciwnym razie.|
-|HierSingleSelectionName:\<wzorzec >|Termin będzie mieć wartość true, zawsze wtedy, gdy wybór w aktywnej hierarchii jest pojedynczy element i nazwę wybranego elementu odpowiada wyrażeniu regularnemu .net przez "wzorzec".|
-|UserSettingsStoreQuery:\<zapytanie >|"Query" reprezentuje pełną ścieżkę do magazynu ustawień użytkownika, który musi mieć wartość różną od zera. Zapytanie jest dzielony na "collection" i "propertyName" w ostatnim ukośnika.|
-|ConfigSettingsStoreQuery:\<zapytanie >|"zapytanie" reprezentuje pełną ścieżkę do magazynu ustawień konfiguracji, który musi mieć wartość różną od zera. Zapytanie jest dzielony na "collection" i "propertyName" w ostatnim ukośnika.|
-|ActiveProjectFlavor:\<projectTypeGuid >|Termin będzie znajdował się w każdym przypadku, gdy aktualnie wybranego projektu jest składni (łącznie) i ma wersję, odpowiadał typowi danego projektu identyfikatora GUID.|
-|ActiveEditorContentType:\<contentType >|Termin jest wartość true, jeśli wybrany dokument jest edytorem tekstu z danym typem zawartości. Uwaga: po zmianie nazwy wybranego dokumentu ten termin nie jest odświeżany, dopóki plik nie zostanie zamknięty i ponownie otwarty.|
-|ActiveProjectCapability:\<wyrażenia >|Warunek ma wartość true, jeśli aktywne funkcje projektu pasują do podanego wyrażenia. Wyrażenie może być takie samo jak VB &#124; CSharp.|
-|SolutionHasProjectCapability:\<wyrażenia >|Podobny do powyższego, ale termin ma wartość true, jeśli rozwiązanie ma załadowanego projektu, który pasuje do wyrażenia.|
-|SolutionHasProjectFlavor:\<projectTypeGuid >|Termin będzie mieć wartość true, zawsze wtedy, gdy to rozwiązanie ma projektu, który jest składni (łącznie), a wersja odpowiadał typowi danego projektu identyfikatora GUID.|
-|ProjectAddedItem: wzorzec\<| Termin ma wartość true, gdy plik zgodny ze specyfikatorem "wzorzec" zostanie dodany do projektu w otwartym soluion.|
-|ActiveProjectOutputType:\<outputType>|Warunek ma wartość true, jeśli typ danych wyjściowych dla aktywnego projektu jest zgodny.  Typ OutputType może być liczbą całkowitą lub <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE>.|
-|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Warunek ma wartość PRAWDA, jeśli aktywny projekt ma określoną właściwość kompilacji i wartość właściwości jest zgodna z podanym filtrem wyrażeń regularnych. Zapoznaj się z [utrwalaniem danych w plikach projektów programu MSBuild](internals/persisting-data-in-the-msbuild-project-file.md) , aby uzyskać więcej szczegółowych informacji na temat właściwości kompilacji.|
-|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Termin ma wartość true, jeśli rozwiązanie ma załadowany projekt z określoną właściwością kompilacji i wartością właściwości jest zgodny z podanym filtrem wyrażeń regularnych.|
+|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnnnnnn}|Identyfikator GUID odnosi się do kontekstu interfejsu użytkownika. Termin będzie true, gdy kontekst interfejsu użytkownika jest aktywny i false w przeciwnym razie.|
+|HierSingleSelectionName:\<wzór>|Termin będzie spełniony za każdym razem, gdy zaznaczenie w aktywnej hierarchii jest pojedynczym elementem, a nazwa wybranego elementu jest zgodna z wyrażeniem regularnym .Net podanym przez "wzorzec".|
+|UserSettingsStoreQuery:\<> zapytania|"query" reprezentuje pełną ścieżkę do magazynu ustawień użytkownika, który musi być oceniany do wartości niezerowej. Kwerenda jest podzielona na "collection" i "propertyName" w ostatnim ukośniku.|
+|ConfigSettingsStoreQuery:\<> zapytania|"query" reprezentuje pełną ścieżkę do magazynu ustawień konfiguracji, który musi być oceniany na wartość niezerową. Kwerenda jest podzielona na "collection" i "propertyName" w ostatnim ukośniku.|
+|ActiveProjectFlavor:\<projektTypeGuid>|Termin będzie true, gdy aktualnie wybrany projekt jest aromatyzowane (zagregowane) i ma smak pasujący do danego typu guid projektu.|
+|ActiveEditorContentType:\<contentType>|Termin ten będzie spełniony, gdy wybrany dokument jest edytorem tekstu o danym typie zawartości. Uwaga: po zmianie nazwy wybranego dokumentu termin ten nie jest odświeżany, dopóki plik nie zostanie zamknięty i ponownie otwarty.|
+|ActiveProjectCapability:\<wyrażenie>|Termin ten jest spełniony, gdy aktywne możliwości projektu są zgodne z podanym wyrażeniem. Wyrażenie może być coś vb &#124; CSharp.|
+|SolutionHasProjectCapability:\<wyrażenie>|Podobnie jak powyżej, ale termin jest true, gdy rozwiązanie ma dowolny załadowany projekt, który pasuje do wyrażenia.|
+|SolutionHasProjectFlavor:\<projectTypeGuid>|Termin będzie true, gdy rozwiązanie ma projekt, który jest aromatyzowane (zagregowane) i ma smak pasujący do danego typu guid projektu.|
+|ProjectAddedItem:\<wzór>| Termin jest true, gdy plik pasujący do "wzorca" jest dodawany do projektu w soluion, który jest otwarty.|
+|ActiveProjectOutputType:\<outputType>|Termin jest spełniony, gdy typ danych wyjściowych dla aktywnego projektu jest dokładnie zgodny.  Typ danych wyjściowych może być <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> całkowitej liczby lub typu.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Termin jest spełniony, gdy aktywny projekt ma określoną właściwość kompilacji i wartość właściwości pasuje do filtru regularnego pod warunkiem. Aby uzyskać więcej informacji na temat właściwości kompilacji, należy zapoznać się z informacjami dotyczącymi [utrwalania danych w plikach projektu MSBuild.](internals/persisting-data-in-the-msbuild-project-file.md)|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Termin jest spełniony, gdy rozwiązanie ma załadowany projekt z określoną właściwością kompilacji i wartością właściwości pasuje do filtru regularnego pod warunkiem.|
 
-## <a name="compatibility-with-cross-version-extension"></a>Zgodność z rozszerzeniem między wersjami
+## <a name="compatibility-with-cross-version-extension"></a>Kompatybilność z rozszerzeniem między wersjami
 
-Konteksty interfejsu użytkownika oparte na regułach to nowa funkcja w programie Visual Studio 2015 i nie można jej przenieść do wcześniejszych wersji. Nie można przenieść do wcześniejszych wersji tworzy problem z rozszerzeniami/pakietami przeznaczonymi dla wielu wersji programu Visual Studio. Te wersje będą musiały być ładowane do Visual Studio 2013 i wcześniej, ale mogą korzystać z kontekstów interfejsu użytkownika opartych na regułach, aby uniemożliwić ich ładowanie do programu Visual Studio 2015.
+Konteksty interfejsu użytkownika oparte na regułach to nowa funkcja w programie Visual Studio 2015 i nie zostaną przeniesione do wcześniejszych wersji. Nie przenoszenie do wcześniejszych wersji tworzy problem z rozszerzeniami/pakietami, które są przeznaczone dla wielu wersji programu Visual Studio. Te wersje muszą być automatycznie ładowane w programie Visual Studio 2013 i wcześniejszych, ale mogą korzystać z kontekstów interfejsu użytkownika opartych na regułach, aby zapobiec automatycznemu ładowaniu w programie Visual Studio 2015.
 
-W celu obsługi tych pakietów, AutoLoadPackages wpisów rejestru umożliwia teraz flagę w polu jego wartość w taki sposób, aby wskazać, że wpis ma być pomijana w programie Visual Studio 2015 i nowszych. Można to zrobić, dodając flagi opcję <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. Teraz można dodać pakietów VSPackage **SkipWhenUIContextRulesActive** opcji w celu ich <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atrybutu, aby wskazać, zapis mają być ignorowane w programie Visual Studio 2015 i nowszych.
+Aby obsługiwać takie pakiety, AutoLoadPackages wpisy w rejestrze można teraz podać flagę w polu wartości, aby wskazać, że wpis powinien zostać pominięty w programie Visual Studio 2015 i powyżej. Można to zrobić, dodając opcję <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>flagi do . VSPackages można teraz dodać **SkipWhenUIContextRulesActive** opcji do ich <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atrybutu, aby wskazać wpis powinien być ignorowany w programie Visual Studio 2015 i powyżej.
 ## <a name="extensible-ui-context-rules"></a>Rozszerzalne reguły kontekstu interfejsu użytkownika
 
-Czasami pakietów nie można użyć statycznej reguły kontekstu interfejsu użytkownika. Na przykład załóżmy, że masz pakiet obsługi rozszerzalność w taki sposób, że stan polecenia opiera się na typy edytora, które są obsługiwane przez zaimportowane dostawców MEF. Polecenie jest włączone, jeśli plik ma rozszerzenia obsługi bieżącego typu edycji. W takich przypadkach pakiet nie może korzystać z statycznej reguły kontekstu interfejsu użytkownika, ponieważ terminy zmieniają się w zależności od tego, które rozszerzenia MEF są dostępne.
+Czasami pakiety nie można użyć statycznych reguł kontekstu interfejsu użytkownika. Załóżmy na przykład, że masz pakiet obsługujący rozszerzalność, tak aby stan polecenia był oparty na typach edytora obsługiwanych przez importowanych dostawców MEF. Polecenie jest włączone, jeśli istnieje rozszerzenie obsługujące bieżący typ edycji. W takich przypadkach sam pakiet nie może używać statycznej reguły kontekstu interfejsu użytkownika, ponieważ warunki będą się zmieniać w zależności od dostępnych rozszerzeń MEF.
 
-Aby można było obsługiwać takie pakiety, konteksty interfejsu użytkownika oparte na regułach obsługują wyrażenie stałe "*", które wskazuje, że wszystkie poniższe warunki zostaną dołączone do lub. Dzięki temu pakiet główny może zdefiniować znany kontekst interfejsu użytkownika oparty na regułach i powiązać jego stan poleceń z tym kontekstem. Później każde rozszerzenie MEF, przeznaczony dla pakietu głównego dodać przestrzegania postanowień edytory, obsługiwane bez wpływu na inne postanowienia lub wyrażenie wzorca.
+Aby obsługiwać takie pakiety, konteksty interfejsu użytkownika oparte na regułach obsługują wyrażenie "*", które wskazuje wszystkie poniższe terminy, zostaną połączone z OR. Dzięki temu pakiet główny do definiowania znanego kontekstu interfejsu użytkownika opartego na regułach i powiązanie jego stanu polecenia z tym kontekstem. Następnie każde rozszerzenie MEF przeznaczone dla pakietu głównego można dodać jego warunki dla edytorów, które obsługuje bez wpływu na inne terminy lub wyrażenie główne.
 
-Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> dokumentacji przedstawiono składnię rozszerzalnych zasad kontekstu interfejsu użytkownika.
+Dokumentacja <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> konstruktora pokazuje składnię rozszerzalne reguły kontekstu interfejsu użytkownika.

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram | Microsoft Docs
+title: IDebugProgramPublisher2::PublishProgram | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343368"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80721687"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Ta metoda powoduje, że program jest dostępny dla silniki debugowania (DEs) i Menedżer debugowania sesji.
+Ta metoda udostępnia program dla aparatów debugowania (DEs) i menedżera debugowania sesji.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,20 +45,20 @@ int PublishProgram(
 
 ## <a name="parameters"></a>Parametry
 `Engines`\
-[in] Tablica identyfikatorów GUID do obsługi szyfrowania DEs, które można uruchomić lub dołączyć do tego programu.
+[w] Tablica identyfikatorów GUID dla DEs, które można uruchomić lub dołączyć do tego programu.
 
 `szFriendlyName`\
-[in] Przyjazna nazwa dla programu (pojawia się w menu i okien dialogowych, użytkownik widzi).
+[w] Przyjazna nazwa programu (pojawia się w menu lub oknach dialogowych prezentowanych użytkownikowi).
 
 `pDebuggeeInterface`\
-[in] `IUnknown` interfejsu programu (Ta wartość jest używana jako plik cookie do unikatowego identyfikowania program; ta sama wartość służy do "cofnąć publikację" program)
+[w] `IUnknown` interfejs dla programu (ta wartość jest używana jako plik cookie do jednoznacznej identyfikacji programu; ta sama wartość jest używana do "cofnięcia publikacji" programu)
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Aby napisać program, który nie jest już dostępna do debugowania, należy wywołać [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
+ Aby program nie był już dostępny do debugowania, zadzwoń [do programu UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

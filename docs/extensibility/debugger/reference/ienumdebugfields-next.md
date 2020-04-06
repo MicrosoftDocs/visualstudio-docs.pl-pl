@@ -1,5 +1,5 @@
 ---
-title: 'IEnumDebugFields:: Next | Microsoft Docs'
+title: IEnumDebugFields::Następny | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d82a3b4ceafca7de2277a85b65b9d9ef98c31243
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727661"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80716852"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Ta metoda zwraca następny zestaw elementów z wyliczenia.
@@ -45,17 +45,17 @@ int Next(
 
 ## <a name="parameters"></a>Parametry
 `celt`\
-podczas Liczba elementów do pobrania. Określa również maksymalny rozmiar tablicy `rgelt`.
+[w] Liczba elementów do pobrania. Określa również maksymalny rozmiar `rgelt` tablicy.
 
 `rgelt`\
-[in. out] Tablica elementów [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) do wypełnienia.
+[w, na zewnątrz] Tablica elementów [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) do wypełnienia.
 
 `pceltFetched`\
-określoną Zwraca liczbę elementów faktycznie zwracanych w `rgelt`.
+[na zewnątrz] Zwraca liczbę elementów faktycznie `rgelt`zwróconych w .
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli powiedzie się, zwraca `S_OK`. Zwraca `S_FALSE`, jeśli jest mniejsza niż wymagana liczba elementów; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca . Zwraca, `S_FALSE` jeśli mniej niż żądana liczba elementów może być zwrócona; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

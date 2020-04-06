@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE | Dokumentacja firmy Microsoft
+title: METADATA_TYPE | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746698"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80714279"
 ---
-# <a name="metadatatype"></a>METADATA_TYPE
-Ta struktura określa informacje o typie pola pobierana z metadanych.
+# <a name="metadata_type"></a>METADATA_TYPE
+Ta struktura określa informacje o typie pola pobranym z metadanych.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,29 +45,29 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>Parametry
  `ulAppDomainID`\
- Identyfikator aplikacji, z którego pochodzą symbolu. Służy do jednoznacznego identyfikowania wystąpienia aplikacji.
+ Identyfikator aplikacji, z której pochodzi symbol. Służy do jednoznacznej identyfikacji wystąpienia aplikacji.
 
  `guidModule`\
- Identyfikator GUID moduł, który zawiera tego pola.
+ Identyfikator GUID modułu zawierającego to pole.
 
  `tokClass`\
  Identyfikator tokenu metadanych tego typu.
 
- [C++] `_mdToken` jest `typedef` dla 32-bitowych `int`.
+ [C++] `_mdToken` jest `typedef` dla 32-bitowego `int`.
 
 ## <a name="remarks"></a>Uwagi
- Ta struktura jest wyświetlany jako część Unii w [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury, kiedy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_METADATA` (wartość z zakresu od [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) Wyliczenie).
+ Ta struktura pojawia się jako część unii w [strukturze TYPE_INFO,](../../../extensibility/debugger/reference/type-info.md) gdy `dwKind` pole `TYPE_INFO` struktury jest ustawiona na `TYPE_KIND_METADATA` (wartość z [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) wyliczenia).
 
- `tokClass` Wartość tokenu metadanych, który unikatowo identyfikuje typ. Aby uzyskać więcej informacji na temat sposobu interpretacji górny bity identyfikator tokenu metadanych, zobacz `CorTokenType` wyliczenia w pliku sekcję corhdr.h w .NET Framework SDK.
+ Wartość `tokClass` jest token metadanych, który jednoznacznie identyfikuje typ. Aby uzyskać szczegółowe informacje na temat interpretowania górnych bitów `CorTokenType` identyfikatora tokenu metadanych, zobacz wyliczenie w pliku corhdr.h w pliku .NET Framework SDK.
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: sh.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Struktury i związki](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Detach | Dokumentacja firmy Microsoft
+title: IDebugProgram2::Detach | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Detach
 ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3259a2b9d0f9c617aaeebaebfae0713da5d3f9f5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e177b1347981e420223ecafad18eedcf9de30234
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326873"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723056"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
-Odłącza aparatu debugowania programu.
+Odłącza aparat debugowania z programem.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,10 +38,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Odłączyć program będzie kontynuował działanie, ale nie jest już częścią sesji debugowania. Program debugowania zdarzenia nie są wysyłane po odłączeniu aparatu debugowania.
+ Odłączony program jest nadal uruchomiony, ale nie jest już częścią sesji debugowania. Nie więcej zdarzeń debugowania programu są wysyłane po odłączeniu aparatu debugowania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

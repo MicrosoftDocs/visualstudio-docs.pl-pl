@@ -1,31 +1,31 @@
 ---
-title: VisibilityItem, Element | Dokumentacja firmy Microsoft
+title: Element visibilityitem | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c817b9a004872800b02f6a7c6d0f64fd324304b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310732"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80698149"
 ---
-# <a name="visibilityitem-element"></a>VisibilityItem, element
-`VisibilityItem` Element określa statyczne widoczności poleceń i paski narzędzi. Każdy wpis identyfikuje polecenia lub menu, a także polecenia skojarzonego kontekstu interfejsu użytkownika. Program Visual Studio wykrywa polecenia, menu i paski narzędzi i ich widoczność bez ładowanie pakietów VSPackage, który definiuje je. IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodę pozwala ustalić, czy kontekst interfejsu użytkownika poleceń jest aktywny.
+# <a name="visibilityitem-element"></a>Element VisibilityItem
+Element `VisibilityItem` określa statyczną widoczność poleceń i pasków narzędzi. Każdy wpis identyfikuje polecenie lub menu, a także skojarzony kontekst interfejsu użytkownika polecenia. Visual Studio wykrywa polecenia, menu i paski narzędzi i ich widoczność, bez ładowania VSPackages, które je definiują. IDE używa metody, aby ustalić, <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> czy kontekst interfejsu użytkownika polecenia jest aktywny.
 
- Po załadowaniu pakietu VSPackage programu Visual Studio oczekuje widoczność polecenie określone przez pakietu VSPackage zamiast `VisibilityItem`. Aby ustalić widoczność dla polecenia, można zaimplementować jedną <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> programu obsługi zdarzeń lub <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody, w zależności od tego, jak zostały zaimplementowane swojej dyspozycji.
+ Po załadowaniu vspackage visual studio oczekuje, że widoczność polecenia zostanie `VisibilityItem`określona przez VSPackage, a nie . Aby określić widoczność polecenia, można zaimplementować program obsługi <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> zdarzeń lub <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodę, w zależności od sposobu zaimplementowania polecenia.
 
- Polecenie lub menu, który ma `VisibilityItem` element, który jest wyświetlany tylko wtedy, gdy aktywny jest skojarzonego kontekstu. Jednego polecenia, menu lub paska narzędzi można skojarzyć z co najmniej jeden kontekst poleceń interfejsu użytkownika, umieszczając wpis dla każdej kombinacji kontekst polecenia. Polecenie lub menu jest skojarzony z wielu kontekstach interfejs użytkownika polecenia, następnie polecenia lub menu jest widoczna gdy dowolne spośród kontekstów interfejsu użytkownika polecenie skojarzone jest aktywny.
+ Polecenie lub menu, `VisibilityItem` które ma element pojawia się tylko wtedy, gdy skojarzony kontekst jest aktywny. Jedno polecenie, menu lub pasek narzędzi można skojarzyć z co najmniej jednym kontekstem interfejsu użytkownika polecenia, dołączając wpis dla każdej kombinacji kontekstu polecenia. Jeśli polecenie lub menu jest skojarzone z kontekstami interfejsu użytkownika wielu poleceń, polecenie lub menu jest widoczne, gdy aktywny jest dowolny z skojarzonych kontekstów interfejsu użytkownika polecenia.
 
- `VisibilityItem` Elementu dotyczy tylko polecenia, menu i paski narzędzi, nie do grup. Element, który nie ma powiązanej `VisibilityItem` element jest widoczny w każdym przypadku, gdy jego nadrzędny menu jest aktywny.
+ Element `VisibilityItem` ma zastosowanie tylko do poleceń, menu i pasków narzędzi, a nie do grup. Element, który nie ma `VisibilityItem` powiązanego elementu jest widoczny, gdy jego menu nadrzędne jest aktywne.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,10 +43,10 @@ ms.locfileid: "66310732"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|
-|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|
-|kontekst|Wymagana. Kontekst interfejsu użytkownika, w którym polecenie jest widoczna.|
-|Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Identyfikator GUID|Wymagany. Identyfikator GUID identyfikatora polecenia GUID/ID.|
+|id|Wymagany. Identyfikator identyfikatora polecenia GUID/ID.|
+|kontekst|Wymagany. Kontekst interfejsu użytkownika, w którym polecenie jest widoczne.|
+|Warunek|Element opcjonalny. Zobacz [Atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak
@@ -55,10 +55,10 @@ ms.locfileid: "66310732"
 
 |Element|Opis|
 |-------------|-----------------|
-|[VisibilityConstraints, element](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Element określa statyczne widoczność grupy poleceń i paski narzędzi.|
+|[Element VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Element `VisibilityConstraints` określa statyczną widoczność grup poleceń i pasków narzędzi.|
 
 ## <a name="remarks"></a>Uwagi
- Standardowa kontekstów interfejsie użytkownika Visual Studio są zdefiniowane w *ścieżka instalacji programu Visual Studio SDK*\VisualStudioIntegration\Common\Inc\vsshlids.h pliku również jako <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> i <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy. Bardziej kompletny zestaw kontekstów interfejsu użytkownika jest zdefiniowany w <xref:Microsoft.VisualStudio.VSConstants> klasy.
+ Standardowe konteksty interfejsu użytkownika programu Visual Studio są definiowane w *ścieżce instalacji zestawów SDK programu Visual Studio*\VisualStudioIntegration\Common\Inc\vsshlids.h, a także w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> i <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasach. Bardziej kompletny zestaw kontekstów interfejsu użytkownika <xref:Microsoft.VisualStudio.VSConstants> jest zdefiniowany w klasie.
 
 ## <a name="example"></a>Przykład
 
@@ -69,11 +69,11 @@ ms.locfileid: "66310732"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
 - <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
 - <xref:Microsoft.VisualStudio.VSConstants>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>
 - <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>
-- [VisibilityConstraints, element](../extensibility/visibilityconstraints-element.md)
-- [Tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Element VisibilityConstraints](../extensibility/visibilityconstraints-element.md)
+- [Tabela poleceń programu Visual Studio (. Vsct) Pliki](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,28 +1,28 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: IDebugExpressionEvaluator2::SetCallback | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66325496"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729336"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Umożliwia Ewaluator wyrażeń (EE) określić interfejs wywołania zwrotnego, który aparat debugera (DE) będzie używany do odczytu ustawienia metryki.
+Umożliwia oceniającemu wyrażenie (EE) określenie interfejsu wywołania zwrotnego, który aparat debugera (DE) użyje do odczytu ustawień metryki.
 
 ## <a name="syntax"></a>Składnia
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>Parametry
 `pCallback`\
-[in] Interfejs na potrzeby wywołania zwrotnego ustawienia.
+[w] Interfejs do użycia dla ustawień wywołania zwrotnego.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Ta metoda zapewnia interfejs do menedżera sesji debugowania, używanego przez ewaluatora wyrażeń odczytać ustawienia metryki. Jest to przydatne podczas debugowania zdalnego odczytać metryki na [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] komputera.
+Ta metoda zapewnia interfejs do menedżera debugowania sesji, który oceniający wyrażenie może używać do odczytu ustawień metryki. Jest to przydatne w zdalnym debugowaniu [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] do odczytu metryki na komputerze.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CEE** obiekt ujawniający [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interfejsu.
+Poniższe przykłady pokazują, jak zaimplementować tę metodę dla obiektu **CEE,** który udostępnia interfejs [IDebugSettingsCallback2.](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
@@ -76,5 +76,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

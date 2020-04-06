@@ -1,27 +1,27 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Dokumentacja firmy Microsoft
+title: IDebugExpressionEvaluator3::Parse2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 308ef67bab1d91ace71a5e741a1ed998037a9868
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352745"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729128"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Konwertuje ciąg wyrażenia wyrażenie przeanalizowany podany dostawca symboli i adres oceny ramki.
+Konwertuje ciąg wyrażenia na wyrażenie analizowane, biorąc pod uwagę dostawcę symbolu i adres ramki oceniającej.
 
 ## <a name="syntax"></a>Składnia
 
@@ -53,37 +53,37 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>Parametry
 `upstrExpression`\
-[in] Wyrażenie ciąg, który ma być analizowany.
+[w] Ciąg wyrażenia, który ma być analizowany.
 
 `dwFlags`\
-[in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają, jak wyrażenie ma zostać przeanalizowany.
+[w] Kolekcja [parseflags](../../../extensibility/debugger/reference/parseflags.md) stałych, które określają, jak wyrażenie ma być analizowane.
 
 `nRadix`\
-[in] Podstawy ma być używany do interpretacji wszelkie dane liczbowe.
+[w] Radix do interpretacji wszelkich informacji liczbowych.
 
 `pSymbolProvider`\
-[in] Interfejs dostawcy symboli.
+[w] Interfejs dostawcy symbolu.
 
 `pAddress`\
-[in] Adres oceny ramki.
+[w] Adres ramki oceniającej.
 
 `pbstrError`\
-[out] Zwraca błąd jako tekst czytelny dla człowieka.
+[na zewnątrz] Zwraca błąd jako tekst czytelny dla człowieka.
 
 `pichError`\
-[out] Zwraca pozycję znaku, Start błędu, w ciągu wyrażenia.
+[na zewnątrz] Zwraca położenie znaku początku błędu w ciągu wyrażenia.
 
 `ppParsedExpression`\
-[out] Zwraca wyrażenie przeanalizowany w [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.
+[na zewnątrz] Zwraca analizowane wyrażenie w [obiekcie IDebugParsedExpression.](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
-Ta metoda tworzy wyrażenie przeanalizowany, a nie wartość rzeczywistą. Przeanalizowana wyrażenie jest gotowy do można obliczyć, oznacza to, przekonwertować na wartość.
+Ta metoda tworzy wyrażenie analizowane, a nie wartość rzeczywistą. Analizowane wyrażenie jest gotowe do oceny, czyli przekonwertowane na wartość.
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CEE** obiekt ujawniający [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interfejsu.
+W poniższym przykładzie pokazano, jak zaimplementować tę metodę dla obiektu **CEE,** który udostępnia interfejs [IDebugExpressionEvaluator3.](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
@@ -137,5 +137,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

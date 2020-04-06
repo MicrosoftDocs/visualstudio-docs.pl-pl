@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Dokumentacja firmy Microsoft
+title: IDebugPointerField::GetDereferencedField | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerField::GetDereferencedField method
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fef8ee4e584703338afd09e5303ac184f28b3a49
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331613"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725626"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Ta metoda zwraca typ obiektu, na który wskazuje ten obiekt wskaźnika.
+Ta metoda zwraca typ obiektu, do którego wskazuje ten obiekt wskaźnika.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,14 +41,14 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Parametry
 `ppField`\
-[out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące typ obiektu docelowego.
+[na zewnątrz] Zwraca [pole IDebugField](../../../extensibility/debugger/reference/idebugfield.md) opisujące typ obiektu docelowego.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Jeśli na przykład [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) obiektu wskazuje na liczbę całkowitą, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) typu zwracanego przez tę metodę zawiera opis tego typu Liczba całkowita.
+ Jeśli na przykład obiekt [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) wskazuje liczbę całkowitą, typ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zwrócony przez tę metodę opisuje ten typ liczby całkowitej.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

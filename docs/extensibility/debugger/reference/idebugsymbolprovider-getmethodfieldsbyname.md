@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Dokumentacja firmy Microsoft
+title: IDebugSymbolProvider::GetMethodFieldsByName | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetMethodFieldsByName method
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 02b6947b36439610e41ec0a9e33ebc3f599a6c92
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf123c1e7e83264a2ae4a8ef8c2b4b3207a62a5d
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347593"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719222"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-Ta metoda pobiera pole nazwy FQDN metody reprezentująca.
+Ta metoda pobiera pole reprezentujące w pełni kwalifikowaną nazwę metody.
 
 ## <a name="syntax"></a>Składnia
 
@@ -45,20 +45,20 @@ int GetMethodFieldsByName(
 
 ## <a name="parameters"></a>Parametry
 `pszFullName`\
-[in] Nazwa metody.
+[w] Nazwa metody.
 
 `nameMatch`\
-[in] Wybiera typ dopasowania, na przykład wielkość liter.
+[w] Wybiera typ dopasowania, na przykład z uwzględnieniem wielkości liter.
 
 `ppEnum`\
-[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) modułu wyliczającego dla pól skojarzone z tą metodą.
+[na zewnątrz] Zwraca [wyliczenie IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) dla pól skojarzonych z tą metodą.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Metoda może być skojarzony z wielu pól, jeśli jest przeciążona, na przykład.
+ Metoda może być skojarzona z wieloma polami, jeśli jest przeciążona, na przykład.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

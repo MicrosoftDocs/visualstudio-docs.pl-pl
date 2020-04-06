@@ -1,27 +1,27 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Dokumentacja firmy Microsoft
+title: IDebugProgram3::ExecuteOnThread | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 798a0caca394a21d6ee12a99efeacb2f27f6969c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343603"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80722662"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Wykonuje program debugera. Wątek jest zwracany do przedstawienia informacji debugera, na który wątek użytkownika jest wyświetlana podczas wykonywania programu.
+Wykonuje program debugera. Wątek jest zwracany, aby dać debugerowi informacje o tym, który wątek jest przeglądany przez użytkownika podczas wykonywania programu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,22 +38,22 @@ int ExecuteOnThread(
 
 ## <a name="parameters"></a>Parametry
 `pThread`\
-[in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiektu.
+[w] [Obiekt IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Istnieją trzy różne sposoby wznowić wykonywanie po zatrzymaniu debugera:
+ Istnieją trzy różne sposoby, które debuger można wznowić wykonywanie po zatrzymaniu:
 
-- Należy wykonać: Anuluj wszelkie poprzedniego kroku i uruchamianie aż do następnego punktu przerwania i tak dalej.
+- Wykonaj: Anuluj dowolny poprzedni krok i uruchom do następnego punktu przerwania i tak dalej.
 
-- Krok: Anuluj którykolwiek z kroków stary i uruchomić do momentu ukończenia nowy krok.
+- Krok: Anuluj dowolny stary krok i uruchom do momentu ukończenia nowego kroku.
 
-- Kontynuuj: Uruchom ponownie i pozostawianie aktywnej stare którykolwiek z kroków.
+- Kontynuuj: Uruchom ponownie i pozostaw dowolny stary krok aktywny.
 
-  Wątek jest przekazywany do `ExecuteOnThread` jest przydatne w przypadku podejmowania decyzji, który krok, aby anulować. Jeśli nie znasz wątek systemu wykonaj anuluje wszystkie kroki. Przy zachowaniu wiedzy o wątku wystarczy anulować kroku na aktywnym wątkiem.
+  Wątek `ExecuteOnThread` przekazany do jest przydatne przy podejmowaniu decyzji, który krok do anulowania. Jeśli nie znasz wątku, uruchomienie execute anuluje wszystkie kroki. Znając wątek, wystarczy anulować krok w aktywnym wątku.
 
-## <a name="see-also"></a>Zobacz także
-- [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+## <a name="see-also"></a>Zobacz też
+- [Realizacja](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
 - [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)
