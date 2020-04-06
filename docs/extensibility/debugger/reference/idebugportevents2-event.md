@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEvents2::Event | Dokumentacja firmy Microsoft
+title: IDebugPortEvents2::Wydarzenie | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEvents2::Event
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ede9055f97a796e4e007914f68e370d4ff81420
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 931be468f6321250481aec79688f7f326abcfcac
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326760"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80725248"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
-Ta metoda wysyła zdarzenia, które oznaczają tworzenia i niszczenia, procesów i programy na porcie.
+Ta metoda wysyła zdarzenia, które oznaczają tworzenie i niszczenie procesów i programów w porcie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,19 +51,19 @@ int Event(
 
 ## <a name="parameters"></a>Parametry
 `pMachine`\
-[in] [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) obiekt, który reprezentuje serwera debugowania (jest on dostępny dla każdego wystąpienia [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]), w którym wystąpiło zdarzenie.
+[w] [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) obiekt, który reprezentuje serwer debugowania (istnieje [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]jeden dla każdego wystąpienia), w którym wystąpiło zdarzenie.
 
 `pPort`\
-[in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) obiekt, który reprezentuje portu, w którym wystąpiło zdarzenie.
+[w] Obiekt [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) reprezentujący port, w którym wystąpiło zdarzenie.
 
 `pProcess`\
-[in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje proces, w którym wystąpiło zdarzenie.
+[w] [Obiekt IDebugProcess2 reprezentujący](../../../extensibility/debugger/reference/idebugprocess2.md) proces, w którym wystąpiło zdarzenie.
 
 `pProgram`\
-[in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym wystąpiło zdarzenie.
+[w] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym wystąpiło zdarzenie.
 
 `pEvent`\
-[in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) obiekt, który identyfikuje zdarzenie. Prawdopodobne zdarzenia są następujące:
+[w] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) obiekt, który identyfikuje zdarzenie. Możliwe zdarzenia są następujące:
 
 - [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)
 
@@ -74,12 +74,12 @@ int Event(
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 
 `riidEvent`\
-[in] Identyfikator GUID zdarzenia. Ponieważ zdarzenie jest rzutowany na [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) przed wywołaniem tej metody, ten identyfikator sprawia, że łatwiej ustalić, które zdarzenie jest wysyłane.
+[w] Identyfikator GUID zdarzenia. Ponieważ zdarzenie jest rzutowana na [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) przed wywołaniem tej metody, ten identyfikator ułatwia określenie, które zdarzenie jest wysyłane.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange | Dokumentacja firmy Microsoft
+title: IDebugDocumentPosition2::GetRange | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentPosition2::GetRange
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c67828e2d9e1cb0c75d272b57e7c6b610a84fdd5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a923691afdfe145931ab31d0e9bbc6142e7c8d1c
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326472"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731664"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 Pobiera zakres dla tej pozycji dokumentu.
@@ -43,24 +43,24 @@ int GetRange( 
 
 ## <a name="parameters"></a>Parametry
 `pBegPosition`\
-[out w] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która jest wypełniane pozycja początkowa. Ustaw ten argument ma wartość null, jeśli te informacje nie są potrzebne.
+[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją początkową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
 
 `pEndPosition`\
-[out w] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która jest wypełniane pozycji końcowej. Ustaw ten argument ma wartość null, jeśli te informacje nie są potrzebne.
+[w, na zewnątrz] Struktura [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) wypełniona pozycją końcową. Ustaw ten argument na wartość null, jeśli te informacje nie są potrzebne.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Zakres określony w pozycji dokument w lokalizacji punktu przerwania jest używany przez aparat debugowania (DE) do przodu wyszukiwania instrukcję, która faktycznie przyczynia się kod. Na przykład rozważmy następujący kod:
+ Zakres określony w pozycji dokumentu dla punktu przerwania lokalizacji jest używany przez aparat debugowania (DE) do wyszukiwania z wyprzedzeniem instrukcji, która faktycznie przyczynia się do kodu. Rozważmy na przykład następujący kod:
 
 ```
 Line 5: // comment
 Line 6: x = 1;
 ```
 
- Wiersz 5 przyczynia się żadnego kodu do debugowanego programu. Jeśli debuger, która ustawia punkt przerwania w wierszu 5 chce DE wyszukiwania do przodu pewien dla pierwszego wiersza, która wspiera kodu, debuger określić zakres, który zawiera dodatkowe Release candidate wiersze, gdy punkt przerwania może prawidłowo umieszczone. DE będzie następnie wyszukuj do przodu, za pomocą tych wierszy aż do znalezienia go wiersza, który mógłby odebrać punktu przerwania.
+ Wiersz 5 nie przyczynia się do kodu do programu jest debugowany. Jeśli debuger, który ustawia punkt przerwania w wierszu 5 chce DE do wyszukiwania do przodu pewną kwotę dla pierwszego wiersza, który przyczynia się do kodu, debuger określi zakres, który zawiera dodatkowe wiersze kandydata, gdzie punkt przerwania może być prawidłowo umieszczony. DE będzie następnie przeszukiwać te wiersze, dopóki nie znajdzie wiersza, który może zaakceptować punkt przerwania.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

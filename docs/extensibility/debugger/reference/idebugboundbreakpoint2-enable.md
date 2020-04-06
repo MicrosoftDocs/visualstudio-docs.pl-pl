@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Enable | Dokumentacja firmy Microsoft
+title: IDebugBoundBreakpoint2::Włącz | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Enable method
 - IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62ef11f8cdbdc106a69441bd470da1f979129456
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ed933b1abf67fbe357462e86d54b23e3b19fa548
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320584"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80735564"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Włącza lub wyłącza punkt przerwania.
@@ -42,13 +42,13 @@ int Enable( 
 
 ## <a name="parameters"></a>Parametry
 `fEnable`\
-[in] Ustawianie pozycji różna od zera (`TRUE`) Aby włączyć lub zero (`FALSE`) można wyłączyć punkt przerwania.
+[w] Ustaw na niezerowy (`TRUE`), aby`FALSE`włączyć lub zero ( ), aby wyłączyć punkt przerwania.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` wartość, jeśli stan obiektu powiązanego `BPS_DELETED` punktu przerwania jest ustawiony na (część wyliczenia [BP_STATE).](../../../extensibility/debugger/reference/bp-state.md)
 
 ## <a name="example"></a>Przykład
-Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CBoundBreakpoint` obiekt ujawniający [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interfejsu.
+W poniższym przykładzie pokazano, jak `CBoundBreakpoint` zaimplementować tę metodę dla prostego obiektu, który udostępnia interfejs [IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
@@ -97,6 +97,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

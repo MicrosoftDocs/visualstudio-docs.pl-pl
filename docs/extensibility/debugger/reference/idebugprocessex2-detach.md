@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach | Dokumentacja firmy Microsoft
+title: IDebugProcessEx2::Detach | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::Detach method
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f016c078fcf19ec244fc4c0682d2caee81a2062
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66311619"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80723360"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-Ta metoda informuje proces, czy sesja jest już debugowanie procesu.
+Ta metoda informuje proces, że sesja nie jest już debugowanie procesu.
 
 ## <a name="syntax"></a>Składnia
 
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Parametry
 `pSession`\
-[in] Wartość, która jednoznacznie identyfikuje sesję Aby odłączyć ten proces z.
+[w] Wartość, która jednoznacznie identyfikuje sesji, aby odłączyć ten proces.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Interfejs przekazanej `pSession` jest należy traktować tylko jako plik cookie, wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, który pierwotnie dołączony do tego procesu; Brak metody w interfejsie podane są funkcjonalne.
+ Interfejs przekazany `pSession` w ma być traktowany tylko jako plik cookie, wartość, która jednoznacznie identyfikuje menedżera debugowania sesji, który pierwotnie dołączony do tego procesu; żadna z metod na dostarczonym interfejsie nie jest funkcjonalna.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

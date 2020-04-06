@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Dokumentacja firmy Microsoft
+title: Tekst IDebugDocumentText2::GetText | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2906c4421c570542579d0326167cd6ecbafb395
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330649"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80731577"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Pobiera tekst z określonej pozycji w dokumencie.
+Pobiera tekst z określonego stanowiska w dokumencie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>Parametry
 `pos`\
-[in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.
+[w] Struktura [TEXT_POSITION,](../../../extensibility/debugger/reference/text-position.md) która wskazuje lokalizację tekstu do pobrania.
 
 `cMaxChars`\
-[in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.
+[w] Maksymalna liczba znaków tekstu do pobrania.
 
 `pText`\
-[out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.
+[w, na zewnątrz] Wskaźnik do buforu, który ma być wypełniony żądanym tekstem. Ten bufor musi być w `cMaxChars` stanie zawierać co najmniej liczbę znaków szerokich.
 
 `pcNumChars`\
-[out] Zwraca liczbę znaków, które faktycznie pobrane.
+[na zewnątrz] Zwraca liczbę znaków faktycznie pobranych.
 
 ## <a name="return-value"></a>Wartość zwracana
-Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="example"></a>Przykład
-Ten przykład pokazuje, jak można wywołać tej metody za pomocą języka C#.
+W tym przykładzie pokazano, jak ta metoda może być wywoływana z języka C#.
 
 ```csharp
 using System.Runtime.Interop.Services;
@@ -100,6 +100,6 @@ namespace Mynamespace
 }
 ```
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

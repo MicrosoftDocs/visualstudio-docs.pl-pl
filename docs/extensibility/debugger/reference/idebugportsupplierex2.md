@@ -1,24 +1,24 @@
 ---
-title: IDebugPortSupplierEx2 | Dokumentacja firmy Microsoft
+title: IDebugPortSupplierEx2 | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bebf232e17df54d4dae2392a40f2ccbc3fc711c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353317"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80724324"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Zapewnia obsługę dostawcy portu wybrać i interakcyjnie z instalacją server core.
+Zapewnia obsługę dostawcy portu do wyboru i interakcji z serwerem podstawowym.
 
 ## <a name="syntax"></a>Składnia
 
@@ -27,23 +27,23 @@ IDebugPortSupplierEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji
- Dostawcy niestandardowego portu implementuje ten interfejs, tak, aby go wybrać serwer podstawowy do użycia.
+ Dostawca portu niestandardowego implementuje ten interfejs, dzięki czemu można wybrać serwer podstawowy do użycia.
 
 ## <a name="methods"></a>Metody
  W poniższej tabeli przedstawiono metody **IDebugPortSupplierEx2**.
 
 |Metoda|Opis|
 |------------|-----------------|
-|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Ustawia core server dla dostawcy portu.|
+|[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Ustawia serwer podstawowy dla dostawcy portu.|
 
 ## <a name="requirements"></a>Wymagania
  Nagłówek: Portpriv.h
 
- Przestrzeń nazw: Microsoft.VisualStudio.Debugger.Interop
+ Obszar nazw: Microsoft.VisualStudio.Debugger.Interop
 
  Zestaw: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

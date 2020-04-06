@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach | Dokumentacja firmy Microsoft
+title: IDebugCoreServer3::EnableAutoAttach | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9eb8beed7f32e9c6fb64212f73a41a35544259bb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326975"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80732910"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Umożliwia automatyczne dołączanie aparatów określonego debugowania.
+Umożliwia automatyczne dołączanie dla określonych aparatów debugowania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>Parametry
 `rgguidSpecificEngines`\
-[in] Tablica identyfikatorów GUID dla każdego silnika debugowania, aby oznaczyć jako automatyczne dołączanie.
+[w] Tablica identyfikatorów GUID dla każdego aparatu debugowania, aby oznaczyć jako automatyczne dołączanie.
 
 `celtSpecificEngines`\
-[in] Liczba aparatów określone w `rgguidSpecificEngines`.
+[w] Liczba silników określona w . `rgguidSpecificEngines`
 
 `pszStartPageUrl`\
-[in] Początkowy adres URL do użycia podczas dołączania automatycznie.
+[w] Początkowy adres URL używany podczas automatycznego dołączania.
 
 `pbstrSessionID`\
-[out] Identyfikator sesji, który został dołączony do automatycznie.
+[na zewnątrz] Identyfikator sesji, która została automatycznie dołączona.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Jeden kod błędu: `E_AUTO_ATTACH_NOT_REGISTERED`, co oznacza, że fabryki klas auto-attach nie został zarejestrowany.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu. Jeden kod `E_AUTO_ATTACH_NOT_REGISTERED`błędu to , który wskazuje, że fabryka klasy automatycznego dołączania nie została zarejestrowana.
 
 ## <a name="remarks"></a>Uwagi
- Po uruchomieniu program skojarzony z określonym adresem URL, aparaty debugowania określonego są pracę i automatycznie dołączone.
+ Po uruchomieniu programu skojarzonego z określonym adresem URL określone aparaty debugowania są uruchamiane i dołączane.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

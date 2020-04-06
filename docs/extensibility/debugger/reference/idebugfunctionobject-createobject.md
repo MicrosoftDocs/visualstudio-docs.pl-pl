@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateObject | Dokumentacja firmy Microsoft
+title: IDebugFunctionObject::CreateObject | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dc0632f429a547d4b17fe57bec4582fea623ee24
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66320946"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80728597"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Tworzy obiekt przy użyciu konstruktora.
@@ -47,25 +47,25 @@ int CreateObject(
 
 ## <a name="parameters"></a>Parametry
 `pConstructor`\
-[in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt reprezentujący konstruktora obiektu, który ma zostać utworzony.
+[w] [Obiekt IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) reprezentujący konstruktor obiektu, który ma zostać utworzony.
 
 `dwArgs`\
-[in] Liczba parametrów w `pArg` tablicy. Reprezentuje liczbę parametrów przekazanych do konstruktora.
+[w] Liczba parametrów w `pArg` tablicy. Reprezentuje liczbę parametrów przekazanych do konstruktora.
 
 `pArg`\
-[in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekty reprezentujące parametry przekazywane do konstruktora.
+[w] Tablica [obiektów IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujących parametry przekazywane do konstruktora.
 
 `ppObject`\
-[out] Zwraca `IDebugObject` reprezentujący nowo utworzony obiekt.
+[na zewnątrz] Zwraca `IDebugObject` reprezentujący nowo utworzony obiekt.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK; w przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie klasy (lub inne typ złożony, który wymaga konstruktora) oznacza to parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.
+ Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje wystąpienie klasy (lub innego typu złożonego, który wymaga konstruktora), który jest parametrem funkcji, która jest reprezentowana przez interfejs [IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 
- Jeśli parametr obiektu, nie wymaga konstruktora, wywołaj [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) metody.
+ Jeśli parametr obiektu nie wymaga konstruktora, [wywołaj metodę CreateObjectNoConstructor.](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

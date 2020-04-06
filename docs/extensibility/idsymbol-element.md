@@ -1,25 +1,25 @@
 ---
-title: IDSymbol, Element | Dokumentacja firmy Microsoft
+title: Element IDSymbol | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319533"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80710376"
 ---
-# <a name="idsymbol-element"></a>IDSymbol, element
-`IDSymbol` Element zawiera identyfikator pary GUID:ID, który reprezentuje menu, grupy lub polecenia. Identyfikator GUID, który jest dostarczany z obiektu nadrzędnego `GuidSymbol` elementu. `IDSymbol` Element ma `name` atrybut, który zawiera przyjazną nazwę dla Identyfikatora, który jest zawarty w `value` atrybutu.
+# <a name="idsymbol-element"></a>IDSymbol element
+Element `IDSymbol` zawiera identyfikator pary GUID:ID, która reprezentuje menu, grupę lub polecenie. Identyfikator GUID pochodzi `GuidSymbol` z elementu nadrzędnego. Element `IDSymbol` ma `name` atrybut, który zapewnia przyjazną nazwę dla identyfikatora, `value` który jest zawarty w atrybucie.
 
 ## <a name="syntax"></a>Składnia
 
@@ -34,8 +34,8 @@ ms.locfileid: "66319533"
 
 |Atrybut|Opis|
 |---------------|-----------------|
-|nazwa|Wymagana. Nazwa symbolu identyfikator.|
-|value|Wymagana. Wartość liczbowa Identyfikatora symbolu identyfikator.|
+|name|Wymagany. Nazwa symbolu identyfikatora.|
+|value|Wymagany. Wartość identyfikatora numerycznego symbolu identyfikatora.|
 
 ### <a name="child-elements"></a>Elementy podrzędne
  Brak.
@@ -44,10 +44,10 @@ ms.locfileid: "66319533"
 
 |Element|Opis|
 |-------------|-----------------|
-|[GuidSymbol, element](../extensibility/guidsymbol-element.md)|Zawiera unikatowy identyfikator GUID pary GUID:ID, który reprezentuje menu, grupy lub polecenia. Grupy `IDSymbol` elementów.|
+|[Element GuidSymbol](../extensibility/guidsymbol-element.md)|Zawiera identyfikator GUID:ID, który reprezentuje menu, grupę lub polecenie. Grupuje `IDSymbol` elementy.|
 
 ## <a name="remarks"></a>Uwagi
- Każdy `IDSymbol` elementu w danym `GuidSymbol` element musi mieć unikatową `value`. Jednak `IDSymbol` elementy, które ma takie same wartości może znajdować się w pakiecie, tak długo, jak długo mają różne elementy nadrzędne.
+ Każdy `IDSymbol` element w `GuidSymbol` danym elemencie musi mieć unikatowy `value`element. Jednak `IDSymbol` elementy, które mają identyczne wartości mogą istnieć w pakiecie, tak długo, jak mają różne elementy podstawowe.
 
-## <a name="see-also"></a>Zobacz także
-- [Pliki tabeli (vsct) polecenia programu Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Zobacz też
+- [Pliki tabeli poleceń programu Visual Studio (vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

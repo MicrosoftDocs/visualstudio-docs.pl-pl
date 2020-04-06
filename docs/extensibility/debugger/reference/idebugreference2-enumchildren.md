@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::EnumChildren | Dokumentacja firmy Microsoft
+title: IDebugReference2::WyliczeniaDzieci | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 432a3c25722ae7adb966efa6998c42680bd60307
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335775"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80720632"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-Zostanie wyświetlona lista elementów podrzędnych wybranego odwołania. Zarezerwowane do użytku w przyszłości.
+Pobierz listę wybranych wiązek podrzędnych odniesienia. Zarezerwowane do użytku w przyszłości.
 
 ## <a name="syntax"></a>Składnia
 
@@ -51,27 +51,27 @@ int EnumChildren ( 
 
 ## <a name="parameters"></a>Parametry
 `dwFields`\
-[in] Kombinacja flag z [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) wyliczenia, która określa pola, które w wyliczany [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktur, które mają być wypełnione.
+[w] Kombinacja flag z wyliczenia [DEBUGREF_INFO_FLAGS,](../../../extensibility/debugger/reference/debugref-info-flags.md) która określa, które pola w wyliczonych [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktur mają być wypełnione.
 
 `dwRadix`\
-[in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.
+[w] Radix do wykorzystania w formatowaniu wszelkich informacji liczbowych.
 
 `dwAttribFilter`\
-[in] Kombinacja flag z [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) wyliczenia, która jest używana jako filtru w połączeniu z `pszNameFilter` parametru, aby wybrać, które struktury są do wyliczenia.
+[w] Kombinacja flag z wyliczenia [DBG_ATTRIB_FLAGS,](../../../extensibility/debugger/reference/dbg-attrib-flags.md) który jest używany jako filtr `pszNameFilter` w połączeniu z parametrem, aby wybrać struktury, które mają być wyliczone.
 
 `pszNameFilter`\
-[in] Ciąg określający filtru, takie jak "MyX" w połączeniu z `dwAttribFilter` parametru, aby wybrać struktury do wyliczenia.
+[w] Ciąg określający filtr, taki jak "MyX", używany `dwAttribFilter` w połączeniu z parametrem do wybierania struktur, które mają być wyliczone.
 
 `dwTimeout`\
-[in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.
+[w] Maksymalny czas ( w milisekundach) oczekiwania przed zwróceniem tej metody. Służy `INFINITE` do oczekiwania przez czas nieokreślony.
 
 `ppEnum`\
-[out] Zwraca [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) obiektu, który zawiera listę właściwości podrzędnej żądanej.
+[na zewnątrz] Zwraca obiekt [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) zawierający listę żądanych właściwości podrzędnych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Zawsze zwraca `E_NOTIMPL`.
+ Zawsze zwraca wartość `E_NOTIMPL`.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

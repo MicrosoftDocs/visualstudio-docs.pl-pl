@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumAllLocals | Dokumentacja firmy Microsoft
+title: IDebugMethodField::EnumAllLocals | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd0bc879cccf2bc806d73bfac47bc4795749e0cf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66346948"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80727334"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-Tworzy moduł wyliczający dla wszystkich zmiennych lokalnych, metody, włącznie z wygenerowanymi przez kompilator wewnętrznie.
+Tworzy wyliczyć dla wszystkich zmiennych lokalnych metody, w tym te generowane wewnętrznie przez kompilator.
 
 ## <a name="syntax"></a>Składnia
 
@@ -43,20 +43,20 @@ int EnumAllLocals(
 
 ## <a name="parameters"></a>Parametry
 `pAddress`\
-[in] [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiekt reprezentujący adres debugowania, w metodzie wskazujące określonym zakresie lub kontekście.
+[w] [Obiekt IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) reprezentujący adres debugowania w ramach metody, wskazując określony zakres lub kontekst.
 
 `ppLocals`\
-[out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę wszystkich zmiennych lokalnych w określonym zakresie; w przeciwnym razie zwraca wartość null wskazującą nie zmiennych lokalnych.
+[na zewnątrz] Zwraca obiekt [IEnumDebugFields reprezentujący](../../../extensibility/debugger/reference/ienumdebugfields.md) listę wszystkich mieszkańców w określonym zakresie; w przeciwnym razie zwraca wartość null wskazującą brak lokalnych.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma żadnych zmiennych lokalnych. W przeciwnym razie zwraca kod błędu.
+ Jeśli się powiedzie, zwraca S_OK lub zwraca S_FALSE, jeśli nie ma mieszkańców. W przeciwnym razie zwraca kod błędu.
 
 ## <a name="remarks"></a>Uwagi
- Wyliczane są tylko zmienne zdefiniowane w obrębie bloku, który zawiera adres danego debugowania. Ta metoda obejmuje zmienne lokalne generowanych przez kompilator. Jeśli wszystkie, które jest wymagane są lokalne jawnie zdefiniowane w źródle, wywołanie [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) metody.
+ Wyliczano tylko zmienne zdefiniowane w bloku zawierającym podany adres debugowania. Ta metoda obejmuje wszelkie lokalnych generowanych przez kompilator. Jeśli wszystko, co jest potrzebne są lokalni mieszkańcy jawnie zdefiniowane w źródle, wywołać [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) metody.
 
- Metoda może zawierać wielu kontekstach lub bloków zakresu.
+ Metoda może zawierać wiele kontekstów zakresu lub bloków.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

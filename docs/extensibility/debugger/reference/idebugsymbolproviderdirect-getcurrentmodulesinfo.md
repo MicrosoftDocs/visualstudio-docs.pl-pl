@@ -1,25 +1,25 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Dokumentacja firmy Microsoft
+title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetCurrentModulesInfo
 - GetCurrentModulesInfo
 ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67afbf985a8fb9934c1a105d1620becc80f00535
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a51a7bbbe081d323ea478b64917507ce43b45762
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347425"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80719120"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Pobiera informacje o modułach w grupie symboli.
@@ -48,22 +48,22 @@ int GetCurrentModulesInfo(
 
 ## <a name="parameters"></a>Parametry
 `pCount`\
-[in] Liczba modułów w `ppGuids` tablicy.
+[w] Liczba modułów w `ppGuids` tablicy.
 
 `ppGuids`\
-[in] Tablica, która zawiera unikatowe identyfikatory dla modułów.
+[w] Tablica zawierająca unikatowe identyfikatory modułów.
 
 `pADIds`\
-[in] Identyfikatory domen aplikacji.
+[w] Identyfikatory domen aplikacji.
 
 `pCurrentState`\
-[in] Bieżący stan grupy symboli.
+[w] Bieżący stan grupy symboli.
 
 `ppCDModItfs`\
-[out] Zwraca obiekt, który zawiera moduły w grupie symboli.
+[na zewnątrz] Zwraca obiekt zawierający moduły w grupie symboli.
 
 ## <a name="return-value"></a>Wartość zwracana
- Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli się `S_OK`powiedzie, zwraca ; w przeciwnym razie zwraca kod błędu.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

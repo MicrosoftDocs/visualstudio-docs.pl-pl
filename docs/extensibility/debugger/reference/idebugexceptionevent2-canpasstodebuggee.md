@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee | Dokumentacja firmy Microsoft
+title: IDebugExceptionEvent2::CanPassToDebuggee | Dokumenty firmy Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-author: madskristensen
-ms.author: madsk
+author: acangialosi
+ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c27ac3239fd6621a824f626a141a357241b03b1f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ab57f599214cfbd7a1f5fcca15fa104b072d1d48
+ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310576"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "80729869"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-Określa, czy aparat debugowania (DE) obsługuje możliwość przekazywania ten wyjątek do debugowanego po wznowieniu działania wykonywania.
+Określa, czy aparat debugowania (DE) obsługuje opcję przekazywania tego wyjątku do programu debugowanego po wznowieniu wykonywania.
 
 ## <a name="syntax"></a>Składnia
 
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```
 
 ## <a name="return-value"></a>Wartość zwracana
- Zwraca albo `S_OK` (wyjątek może być przekazywany do program) lub `S_FALSE` (wyjątek nie mogą być przekazywane).
+ Zwraca albo `S_OK` (wyjątek może być przekazany `S_FALSE` do programu) lub (wyjątek nie może być przekazany).
 
 ## <a name="remarks"></a>Uwagi
- DE musi mieć domyślnej akcji do przekazania do debugowany program. IDE może zostać wyświetlony [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) zdarzenia i wywołania [Kontynuuj](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metody bez wywoływania `CanPassToDebuggee` metody. W związku z tym DE powinien mieć przypadek domyślny, przekazywania wyjątek, czy nie.
+ DE musi mieć domyślną akcję przekazywania do debuggee. IDE może odbierać [zdarzenie IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) i [wywołać Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md) metody bez wywoływania `CanPassToDebuggee` metody. W związku z tym DE powinien mieć domyślny przypadek przekazywania wyjątku na lub nie.
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
-- [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+- [Kontynuować](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
